@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Adding and Customizing Elements</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Adding and Customizing Elements">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("ribbonbar/programming-radribbonbar/adding-and-customizing-elements.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/ribbonbar/programming-radribbonbar/adding-and-customizing-elements.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="adding-and-customizing-elements"><a href="#adding-and-customizing-elements">Adding and Customizing Elements</a></h1>
+
+<p>A RibbonBar group may contain button groups or elements. Button groups in turn can contain other button groups or elements. You can add, remove, and customize any of these building blocks by code.</p>
+
+<h2 id="customizing-button-groups"><a href="#customizing-button-groups">Customizing Button Groups</a></h2>
+
+<p>To customize a <strong>RadRibbonBarButtonGroup</strong> object, you can use these properties:</p>
+
+<ul>
+<li><p><strong>Orientation</strong> property can be set to <strong>System.Windows.Forms.Orientation.Horizontal</strong> or <strong>System.Windows.Forms.Orientation.Vertical</strong>. This determines how elements within the button group will be laid out. </p></li>
+<li><p><strong>ShowBorder</strong> property can be set to <strong>True</strong> or <strong>False</strong> to turn the border of the button group to on or off. </p></li>
+<li><p><strong>MinSize</strong> property determines the minimum size of the button group. </p></li>
+</ul>
+
+<p>In order to add button groups or elements to a button group, use <strong>RadRibbonBarButtonGroup.Items.Add</strong> or <strong>RadRibbonBarButtonGroup.Items.AddRange</strong> methods.</p>
+
+<h2 id="customizing-elements"><a href="#customizing-elements">Customizing Elements</a></h2>
+
+<p>You can add a variety of elements to <strong>RadRibbonBarGroup.Items</strong> or <strong>RadRibbonBarButtonGroup.Items</strong> collection:</p>
+
+<ul>
+<li><p>Button elements </p></li>
+<li><p>Check box elements </p></li>
+<li><p>Drop-down button elements </p></li>
+<li><p>Repeat button elements </p></li>
+<li><p>Split button elements </p></li>
+<li><p>Toggle button elements </p></li>
+<li><p>Image button elements </p></li>
+</ul>
+
+<h2 id="customizing-button-elements"><a href="#customizing-button-elements">Customizing Button Elements</a></h2>
+
+<p>The button element represents a simple button displaying text, an image, or both. To customize the <strong>RadButtonElement</strong>, you can use these properties:</p>
+
+<table>
+<tr><td>
+<b>DisplayStyle</b> property can be set to <b>Text</b>, <b>Image</b>, or <b>ImageAndText</b> to determine the visual appearance of the button.</td></tr>
+<tr><td>
+<b>Text</b> property sets the caption displayed on the button. </td></tr>
+<tr><td>
+
+<b>Image</b>, <b>ImageIndex</b>, and <b>ImageKey</b> properties determine the image displayed on the button. </td></tr>
+<tr><td>
+
+<b>TextImageRelation</b> property sets the relative position of the text and the image if <b>DisplayStyle</b> is set to <b>ImageAndText</b>. </td></tr>
+<tr><td>
+<b>ImageAlignment</b> property sets the alignment of the image displayed on the button. </td></tr>
+<tr><td>
+<b>TextAlignment</b> property sets the alignment of the text displayed on the button. </td></tr>
+<tr><td>
+<b>TextOrientation</b> property can be set to either to <b>Horizontal</b> or <b>Vertical</b>. </td></tr>
+</table>
+
+<h2 id="customizing-check-box-elements"><a href="#customizing-check-box-elements">Customizing Check Box Elements</a></h2>
+
+<p>The check box element represents a check box with a caption. To customize the <strong>RadCheckBoxElement</strong>, you can use these properties:</p>
+
+<ul>
+<li><p><strong>DisplayStyle</strong> property can be set to <strong>Text</strong>, <strong>Image</strong>, or <strong>ImageAndText</strong> to determine the visual appearance of the control. </p></li>
+<li><p><strong>Text</strong> property sets the caption displayed next to the check box. </p></li>
+<li><p><strong>Image</strong>, <strong>ImageIndex</strong>, and <strong>ImageKey</strong> properties set the image displayed next to the check box. </p></li>
+<li><p><strong>TextImageRelation</strong> property sets the relative position of text and the image if the <strong>DisplayStyle</strong> is set to <strong>ImageAndText</strong>. </p></li>
+<li><p><strong>ImageAlignment</strong> property sets the alignment of the image displayed in the control. </p></li>
+<li><p><strong>TextAlignment</strong> property sets the alignment of the text displayed in the control. </p></li>
+<li><p><strong>CheckAlignment</strong> property sets the alignment of the check box in the control. </p></li>
+<li><p><strong>TextOrientation</strong> property can be set to <strong>Horizontal</strong> or <strong>Vertical</strong>. </p></li>
+<li><p><strong>IsChecked</strong> property sets the initial state of the check box if the <strong>IsThreeState</strong> property is False. </p></li>
+<li><p><strong>ToggleState</strong> property sets the initial state of the check box if the <strong>IsThreeState</strong> property is True. </p></li>
+<li><p><strong>IsThreeState</strong> property controls whether the check box will display the indeterminate (gray) state. </p></li>
+</ul>
+
+<h2 id="customizing-drop-down-button-elements"><a href="#customizing-drop-down-button-elements">Customizing Drop-down Button Elements</a></h2>
+
+<p>The drop-down button element represents a button with a drop-down list of items that appear when the button is pushed. To customize the <strong>RadDropDownButtonElement</strong>, you can use these properties:</p>
+
+<ul>
+<li><p><strong>DisplayStyle</strong> property can be set to <strong>Text</strong>, <strong>Image</strong>, or <strong>ImageAndText</strong> to determine the visual appearance of the button. </p></li>
+<li><p><strong>Text</strong> property sets the caption displayed on the button. </p></li>
+<li><p><strong>Image</strong>, <strong>ImageIndex</strong>, and <strong>ImageKey</strong> properties set the image displayed on the button. </p></li>
+<li><p><strong>TextImageRelation</strong> property sets the relative position of text and image if the <strong>DisplayStyle</strong> is set to <strong>ImageAndText</strong>. </p></li>
+<li><p><strong>ImageAlignment</strong> property sets the alignment of the image displayed on the button. </p></li>
+<li><p><strong>TextAlignment</strong> property sets the alignment of the text displayed on the button. </p></li>
+<li><p><strong>TextOrientation</strong> property can be set to <strong>Horizontal</strong> or <strong>Vertical</strong>.  </p></li>
+<li><p><strong>ClickMode</strong> property specifies when the button <strong>Click</strong> event should fire. </p></li>
+<li><p><strong>Items</strong> collection contains the items to display in the drop-down list. </p></li>
+</ul>
+
+<h2 id="customizing-repeat-button-elements"><a href="#customizing-repeat-button-elements">Customizing Repeat Button Elements</a></h2>
+
+<p>The repeat button element represents a button whose <strong>Click</strong> event fires repeatedly when the button is pushed and held. To customize a <strong>RadRepeatButtonElement</strong> object, you can use these properties:</p>
+
+<ul>
+<li><p><strong>DisplayStyle</strong> property can be set to <strong>Text</strong>, <strong>Image</strong>, or <strong>ImageAndText</strong> to determine the visual appearance of the button. </p></li>
+<li><p><strong>Text</strong> property sets the caption displayed on the button. </p></li>
+<li><p><strong>Image</strong>, <strong>ImageIndex</strong>, and <strong>ImageKey</strong> properties set the image displayed on the button. </p></li>
+<li><p><strong>TextImageRelation</strong> property sets the relative position of text and the image if the <strong>DisplayStyle</strong> is set to <strong>ImageAndText</strong>. </p></li>
+<li><p><strong>ImageAlignment</strong> property sets the alignment of the image displayed on the button. </p></li>
+<li><p><strong>TextAlignment</strong> property sets the alignment of the text displayed on the button. </p></li>
+<li><p><strong>TextOrientation</strong> property can be set to either <strong>Horizontal</strong> or <strong>Vertical</strong>. </p></li>
+<li><p><strong>Delay</strong> property sets the number of milliseconds before the first <strong>Click</strong> event is fired. </p></li>
+<li><p><strong>Interval</strong> property sets the number of milliseconds between the <strong>Click</strong> events. </p></li>
+</ul>
+
+<h2 id="customizing-split-button-elements"><a href="#customizing-split-button-elements">Customizing Split Button Elements</a></h2>
+
+<p>The split button element represents a button with a menu of items that appear when the arrow of the button is clicked. To customize the <strong>RadSplitButtonElement</strong>, you can use these properties:</p>
+
+<ul>
+<li><p><strong>DisplayStyle</strong> property can be set to <strong>Text</strong>, <strong>Image</strong>, or <strong>ImageAndText</strong> to determine the visual appearance of the button. </p></li>
+<li><p><strong>Text</strong> property sets the caption displayed on the button. </p></li>
+<li><p><strong>Image</strong>, <strong>ImageIndex</strong>, and <strong>ImageKey</strong> properties set the image displayed on the button. </p></li>
+<li><p><strong>TextImageRelation</strong> property sets the relative position of text and image if the <strong>DisplayStyle</strong> is set to <strong>ImageAndText</strong>. </p></li>
+<li><p><strong>ImageAlignment</strong> property sets the alignment of the image displayed on the button. </p></li>
+<li><p><strong>TextAlignment</strong> property sets the alignment of the text displayed on the button. </p></li>
+<li><p><strong>TextOrientation</strong> property can be set to <strong>Horizontal</strong> or <strong>Vertical</strong>.  </p></li>
+<li><p><strong>ClickMode</strong> property specifies when the button <strong>Click</strong> event is fired. </p></li>
+<li><p><strong>Items</strong> collection contains the items to be displayed in the drop-down menu.  </p></li>
+</ul>
+
+<h2 id="customizing-toggle-button-elements"><a href="#customizing-toggle-button-elements">Customizing Toggle Button Elements</a></h2>
+
+<p>The toggle button element represents a button that toggles between two states. To customize the <strong>RadToggleButtonElement</strong>, you can use these properties:</p>
+
+<ul>
+<li><p><strong>DisplayStyle</strong> property can be set to <strong>Text</strong>, <strong>Image</strong>, or <strong>ImageAndText</strong> to determine the visual appearance of the button. </p></li>
+<li><p><strong>Text</strong> property sets the caption displayed on the button. </p></li>
+<li><p><strong>Image</strong>, <strong>ImageIndex</strong>, and <strong>ImageKey</strong> properties set the image displayed on the button. </p></li>
+<li><p><strong>TextImageRelation</strong> property sets the relative position of text and the image if the <strong>DisplayStyle</strong> is set to <strong>ImageAndText</strong>. </p></li>
+<li><p><strong>ImageAlignment</strong> property sets the alignment of the image displayed on the button. </p></li>
+<li><p><strong>TextAlignment</strong> property sets the alignment of the text displayed on the button. </p></li>
+<li><p><strong>TextOrientation</strong> property can be set to either <strong>Horizontal</strong> or <strong>Vertical</strong>. </p></li>
+<li><p><strong>ToggleState</strong> property sets the initial state of the button. </p></li>
+</ul>
+
+<h2 id="customizing-image-button-elements"><a href="#customizing-image-button-elements">Customizing Image Button Elements</a></h2>
+
+<p>The image button element represents a button that displays multiple images. To customize a <strong>RadImageButtonElement</strong> object, you can use these properties:</p>
+
+<ul>
+<li><p>The <strong>DisplayStyle</strong> property can be set to <strong>Text</strong>, <strong>Image</strong>, or <strong>ImageAndText</strong> to determine the visual appearance of the button. </p></li>
+<li><p>The <strong>Text</strong> property sets the caption to display on the button. </p></li>
+<li><p>The <strong>Image</strong>, <strong>ImageIndex</strong>, and <strong>ImageKey</strong> properties set the image to display on the button. </p></li>
+<li><p>The <strong>ImageClicked</strong>, <strong>ImageIndexClicked</strong>, and <strong>ImageKeyClicked</strong> properties set the image to display on the button when it is clicked. </p></li>
+<li><p>The <strong>ImageHovered</strong>, <strong>ImageIndexHovered</strong>, and <strong>ImageKeyHovered</strong> properties set the image to display on the button when the mouse is hovered over it. </p></li>
+<li><p>The <strong>TextImageRelation</strong> property sets the relative position of text and image if the <strong>DisplayStyle</strong> is set to <strong>ImageAndText</strong>. </p></li>
+<li><p>The <strong>ImageAlignment</strong> property sets the alignment of the image displayed on the button. </p></li>
+<li><p>The <strong>TextAlignment</strong> property sets the alignment of the text displayed on the button. </p></li>
+<li><p>The <strong>TextOrientation</strong> property can be set to <strong>Horizontal</strong> or <strong>Vertical</strong>. </p></li>
+</ul>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

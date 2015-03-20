@@ -1,0 +1,654 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Drag and Drop from another control</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Drag and Drop from another control">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("listview/drag-and-drop/drag-and-drop-from-another-control.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/listview/drag-and-drop/drag-and-drop-from-another-control.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="drag-and-drop-from-another-control"><a href="#drag-and-drop-from-another-control">Drag and Drop from another control</a></h1>
+
+<p><strong>RadListView</strong>  supports drag and drop functionality from another control, <br>
+        such as dragging and dropping items from a Microsoft ListBox. It is necessary to set the <strong>AllowDrop</strong> <br>
+        property to <em>true</em> for both of the controls.</p>
+
+<h2 id="drag-and-drop-from-listbox-to-radlistview-"><a href="#drag-and-drop-from-listbox-to-radlistview-">Drag and drop from ListBox to RadListView <img src="images/listview-drag-and-drop-drag-and-drop-from-another-control001.gif" alt="listview-drag-and-drop-drag-and-drop-from-another-control 001"></a></h2>
+
+<ol>
+<li>Firstly, we should start the drag and drop operation, using the ListBox.<strong>MouseMove</strong> event
+          when the left mouse button is pressed. We should keep the mouse down location in the ListBox.<strong>MouseDown</strong> event.
+          Afterwards, allow dragging over the <strong>RadListView</strong>  via the
+        <strong>Effect</strong> argument of the <strong>DragEventArgs</strong> in the RadListView.<strong>DragEnter</strong> 
+          event handler:</li>
+</ol>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        private bool isDragging;
+        private Point mouseDownPosition; 
+
+        private void listBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.mouseDownPosition = e.Location;
+        }
+
+        private void listBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+            {
+                return;
+            }
+
+            if (this.isDragging)
+            {
+                return;
+            }
+
+            if (this.ShouldBeginDrag(this.mouseDownPosition, e.Location))
+            {
+                int index = this.listBox1.IndexFromPoint(e.X, e.Y);
+                if (index &gt; -1 &amp;&amp; index &lt; this.listBox1.Items.Count)
+                {
+                    string itemText = this.listBox1.Items[index].ToString(); 
+
+                    if (itemText != string.Empty)
+                    {
+                        this.isDragging = true;
+                        //start the drag and drop operation
+                        (sender as ListBox).DoDragDrop(itemText, DragDropEffects.Copy);
+                    }
+                }
+            }
+        }
+
+        private bool ShouldBeginDrag(Point current, Point capture)
+        {
+            Size dragSize = SystemInformation.DragSize;
+            Rectangle dragRect = new Rectangle(capture.X - dragSize.Width / 2,
+                capture.Y - dragSize.Height / 2, dragSize.Width, dragSize.Height);
+            return !dragRect.Contains(current);
+        }
+
+        private void radListView1_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Private isDragging As Boolean
+    Private mouseDownPosition As Point
+
+    Private Sub listBox1_MouseDown(sender As Object, e As MouseEventArgs)
+        Me.mouseDownPosition = e.Location
+    End Sub
+
+    Private Sub listBox1_MouseMove(sender As Object, e As MouseEventArgs)
+        If e.Button &lt;&gt; MouseButtons.Left Then
+            Return
+        End If
+
+        If Me.isDragging Then
+            Return
+        End If
+
+        If Me.ShouldBeginDrag(Me.mouseDownPosition, e.Location) Then
+            Dim index As Integer = Me.ListBox1.IndexFromPoint(e.X, e.Y)
+            If index &gt; -1 AndAlso index &lt; Me.ListBox1.Items.Count Then
+                Dim itemText As String = Me.ListBox1.Items(index).ToString()
+
+                If itemText &lt;&gt; String.Empty Then
+                    Me.isDragging = True
+                    'start the drag and drop operation
+                    TryCast(sender, ListBox).DoDragDrop(itemText, DragDropEffects.Copy)
+                End If
+            End If
+        End If
+    End Sub
+
+    Private Function ShouldBeginDrag(current As Point, capture As Point) As Boolean
+        Dim dragSize As Size = SystemInformation.DragSize
+        Dim dragRect As New Rectangle(capture.X - dragSize.Width / 2, capture.Y - dragSize.Height / 2, dragSize.Width, dragSize.Height)
+        Return Not dragRect.Contains(current)
+    End Function
+
+    Private Sub radListView1_DragEnter(sender As Object, e As DragEventArgs)
+        e.Effect = DragDropEffects.Copy
+    End Sub
+
+    '#End Region
+
+    '#Region "ListBoxToListViewDragDrop"
+
+
+    Private Sub radListView1_DragDrop(sender As Object, e As DragEventArgs)
+        Dim point As Point = Me.RadListView1.PointToClient(New Point(e.X, e.Y))
+        Dim targetItem As BaseListViewVisualItem = TryCast(Me.RadListView1.ElementTree.GetElementAtPoint(point), BaseListViewVisualItem)
+        Dim draggedText As String = e.Data.GetData(GetType(String)).ToString()
+
+        'you are dropping over an item
+        If targetItem IsNot Nothing Then
+            Dim targetIndex As Integer = Me.RadListView1.Items.IndexOf(targetItem.Data)
+            Me.RadListView1.Items.Insert(targetIndex, New ListViewDataItem(draggedText))
+        Else
+            ' you are dropping over the ListViewElement
+            Me.RadListView1.Items.Add(New ListViewDataItem(draggedText))
+        End If
+        Dim indexToRemove As Integer = Me.ListBox1.Items.IndexOf(draggedText)
+        If indexToRemove &gt; -1 Then
+            Me.ListBox1.Items.RemoveAt(indexToRemove)
+        End If
+        Me.mouseDownPosition = point.Empty
+        Me.isDragging = False
+    End Sub
+
+    Private Sub listBox1_MouseUp(sender As Object, e As MouseEventArgs)
+        Me.mouseDownPosition = Point.Empty
+        Me.isDragging = False
+    End Sub
+
+    '#End Region
+
+    '#End Region
+
+    '#Region "ListViewToListBox"
+
+
+    '#Region "ListViewToListBoxStart"
+
+    Private lastMouseDownLocation As Point
+
+    Private Sub radListView1_MouseDown(sender As Object, e As MouseEventArgs)
+        Me.lastMouseDownLocation = e.Location
+    End Sub
+
+    Private Sub radListView1_MouseMove(sender As Object, e As MouseEventArgs)
+        If e.Button &lt;&gt; MouseButtons.Left Then
+            Return
+        End If
+        Dim draggedItem As BaseListViewVisualItem = TryCast(RadListView1.ElementTree.GetElementAtPoint(e.Location), BaseListViewVisualItem)
+        If draggedItem IsNot Nothing AndAlso _
+        IsRealDrag(Me.lastMouseDownLocation, e.Location) Then
+            RadListView1.Capture = False
+            RadListView1.DoDragDrop(draggedItem.Data, DragDropEffects.Move)
+        End If
+    End Sub
+
+    Private Function IsRealDrag(current As Point, capture As Point) As Boolean
+        Dim dragSize As Size = SystemInformation.DragSize
+        Dim dragRect As New Rectangle(capture.X - dragSize.Width / 2, _
+                                      capture.Y - dragSize.Height / 2, dragSize.Width, dragSize.Height)
+        Return Not dragRect.Contains(current)
+    End Function
+
+    Private Sub listBox1_DragEnter(sender As Object, e As DragEventArgs)
+        e.Effect = DragDropEffects.Move
+    End Sub
+
+    '#End Region
+
+    '#Region "ListViewToListBoxDrop"
+
+    Private Sub listBox1_DragDrop(sender As Object, e As DragEventArgs)
+        Dim draggedItem As ListViewDataItem = TryCast(e.Data.GetData(GetType(ListViewDataItem)), ListViewDataItem)
+        If draggedItem IsNot Nothing Then
+            Dim point As Point = Me.ListBox1.PointToClient(New Point(e.X, e.Y))
+            Dim targetIndex As Integer = Me.ListBox1.IndexFromPoint(point)
+            If targetIndex &gt; -1 Then
+                Me.ListBox1.Items.Insert(targetIndex, draggedItem.Text)
+            Else
+                Me.ListBox1.Items.Add(draggedItem.Text)
+            End If
+            Dim sourceIndex As Integer = Me.RadListView1.Items.IndexOf(draggedItem)
+            If sourceIndex &gt; -1 Then
+                Me.RadListView1.Items.RemoveAt(sourceIndex)
+            End If
+        End If
+        Me.lastMouseDownLocation = Point.Empty
+    End Sub
+
+    Private Sub radListView1_MouseUp(sender As Object, e As MouseEventArgs)
+        Me.lastMouseDownLocation = Point.Empty
+    End Sub
+
+    '#End Region
+
+    '#End Region
+End Class
+</code></pre>
+
+<ol>
+<li>In the RadListView.<strong>DragDrop</strong> event handler you need to get the location of the mouse and convert
+        it to a point that the <strong>RadListView</strong> can use to get the target item underneath the mouse. 
+        Afterwards, insert the dragged item at the specific position in the RadListView.<strong>Items</strong> collection 
+        and remove it from the ListBox. We should reset the stored mouse down location as well.</li>
+</ol>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        private void radListView1_DragDrop(object sender, DragEventArgs e)
+        {
+            Point point = this.radListView1.PointToClient(new Point(e.X, e.Y));
+            BaseListViewVisualItem targetItem = this.radListView1.ElementTree.GetElementAtPoint(point) as BaseListViewVisualItem;
+            string draggedText = e.Data.GetData(typeof(string)).ToString();
+
+            //you are dropping over an item
+            if (targetItem != null)
+            {
+                int targetIndex = this.radListView1.Items.IndexOf(targetItem.Data);
+                this.radListView1.Items.Insert(targetIndex, new ListViewDataItem(draggedText));
+            }
+            else // you are dropping over the ListViewElement
+            {
+                this.radListView1.Items.Add(new ListViewDataItem(draggedText));
+            }
+            int indexToRemove = this.listBox1.Items.IndexOf(draggedText);
+            if (indexToRemove &gt; -1)
+            {
+                this.listBox1.Items.RemoveAt(indexToRemove);
+            }
+            this.mouseDownPosition = Point.Empty;
+            this.isDragging = false;
+        }
+
+        private void listBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.mouseDownPosition = Point.Empty;
+            this.isDragging = false;
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Private Sub radListView1_DragDrop(sender As Object, e As DragEventArgs)
+        Dim point As Point = Me.RadListView1.PointToClient(New Point(e.X, e.Y))
+        Dim targetItem As BaseListViewVisualItem = TryCast(Me.RadListView1.ElementTree.GetElementAtPoint(point), BaseListViewVisualItem)
+        Dim draggedText As String = e.Data.GetData(GetType(String)).ToString()
+
+        'you are dropping over an item
+        If targetItem IsNot Nothing Then
+            Dim targetIndex As Integer = Me.RadListView1.Items.IndexOf(targetItem.Data)
+            Me.RadListView1.Items.Insert(targetIndex, New ListViewDataItem(draggedText))
+        Else
+            ' you are dropping over the ListViewElement
+            Me.RadListView1.Items.Add(New ListViewDataItem(draggedText))
+        End If
+        Dim indexToRemove As Integer = Me.ListBox1.Items.IndexOf(draggedText)
+        If indexToRemove &gt; -1 Then
+            Me.ListBox1.Items.RemoveAt(indexToRemove)
+        End If
+        Me.mouseDownPosition = point.Empty
+        Me.isDragging = False
+    End Sub
+
+    Private Sub listBox1_MouseUp(sender As Object, e As MouseEventArgs)
+        Me.mouseDownPosition = Point.Empty
+        Me.isDragging = False
+    End Sub
+
+    '#End Region
+
+    '#End Region
+
+    '#Region "ListViewToListBox"
+
+
+    '#Region "ListViewToListBoxStart"
+
+    Private lastMouseDownLocation As Point
+
+    Private Sub radListView1_MouseDown(sender As Object, e As MouseEventArgs)
+        Me.lastMouseDownLocation = e.Location
+    End Sub
+
+    Private Sub radListView1_MouseMove(sender As Object, e As MouseEventArgs)
+        If e.Button &lt;&gt; MouseButtons.Left Then
+            Return
+        End If
+        Dim draggedItem As BaseListViewVisualItem = TryCast(RadListView1.ElementTree.GetElementAtPoint(e.Location), BaseListViewVisualItem)
+        If draggedItem IsNot Nothing AndAlso _
+        IsRealDrag(Me.lastMouseDownLocation, e.Location) Then
+            RadListView1.Capture = False
+            RadListView1.DoDragDrop(draggedItem.Data, DragDropEffects.Move)
+        End If
+    End Sub
+
+    Private Function IsRealDrag(current As Point, capture As Point) As Boolean
+        Dim dragSize As Size = SystemInformation.DragSize
+        Dim dragRect As New Rectangle(capture.X - dragSize.Width / 2, _
+                                      capture.Y - dragSize.Height / 2, dragSize.Width, dragSize.Height)
+        Return Not dragRect.Contains(current)
+    End Function
+
+    Private Sub listBox1_DragEnter(sender As Object, e As DragEventArgs)
+        e.Effect = DragDropEffects.Move
+    End Sub
+
+    '#End Region
+
+    '#Region "ListViewToListBoxDrop"
+
+    Private Sub listBox1_DragDrop(sender As Object, e As DragEventArgs)
+        Dim draggedItem As ListViewDataItem = TryCast(e.Data.GetData(GetType(ListViewDataItem)), ListViewDataItem)
+        If draggedItem IsNot Nothing Then
+            Dim point As Point = Me.ListBox1.PointToClient(New Point(e.X, e.Y))
+            Dim targetIndex As Integer = Me.ListBox1.IndexFromPoint(point)
+            If targetIndex &gt; -1 Then
+                Me.ListBox1.Items.Insert(targetIndex, draggedItem.Text)
+            Else
+                Me.ListBox1.Items.Add(draggedItem.Text)
+            End If
+            Dim sourceIndex As Integer = Me.RadListView1.Items.IndexOf(draggedItem)
+            If sourceIndex &gt; -1 Then
+                Me.RadListView1.Items.RemoveAt(sourceIndex)
+            End If
+        End If
+        Me.lastMouseDownLocation = Point.Empty
+    End Sub
+
+    Private Sub radListView1_MouseUp(sender As Object, e As MouseEventArgs)
+        Me.lastMouseDownLocation = Point.Empty
+    End Sub
+
+    '#End Region
+
+    '#End Region
+End Class
+</code></pre>
+
+<h2 id="drag-and-drop-from-radlistview-to-listbox"><a href="#drag-and-drop-from-radlistview-to-listbox">Drag and drop from RadListView to ListBox<img src="images/listview-drag-and-drop-drag-and-drop-from-another-control002.gif" alt="listview-drag-and-drop-drag-and-drop-from-another-control 002"></a></h2>
+
+<ol>
+<li>In order to enable dragging an item from the <strong>RadListView</strong> and dropping it onto the ListBox,
+        it is necessary to use the RadListView.<strong>MouseDown</strong> and the RadListView.<strong>MouseMove</strong> events to start
+        the drag and drop operation. In the ListBox.<strong>DragOver</strong> event you should allow the drop operation:</li>
+</ol>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        private Point lastMouseDownLocation;
+
+        private void radListView1_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.lastMouseDownLocation = e.Location;
+        }
+
+        private void radListView1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+            {
+                return;
+            }
+            BaseListViewVisualItem draggedItem = radListView1.ElementTree.GetElementAtPoint(e.Location) as BaseListViewVisualItem;
+            if (draggedItem != null &amp;&amp;
+                IsRealDrag(this.lastMouseDownLocation, e.Location))
+            {
+                radListView1.Capture = false;
+                radListView1.DoDragDrop(draggedItem.Data, DragDropEffects.Move);
+            }
+        }
+
+        private bool IsRealDrag(Point current, Point capture)
+        {
+            Size dragSize = SystemInformation.DragSize;
+            Rectangle dragRect = new Rectangle(capture.X - dragSize.Width / 2,
+                capture.Y - dragSize.Height / 2, dragSize.Width, dragSize.Height);
+            return !dragRect.Contains(current);
+        }
+
+        private void listBox1_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Move;
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Private lastMouseDownLocation As Point
+
+    Private Sub radListView1_MouseDown(sender As Object, e As MouseEventArgs)
+        Me.lastMouseDownLocation = e.Location
+    End Sub
+
+    Private Sub radListView1_MouseMove(sender As Object, e As MouseEventArgs)
+        If e.Button &lt;&gt; MouseButtons.Left Then
+            Return
+        End If
+        Dim draggedItem As BaseListViewVisualItem = TryCast(RadListView1.ElementTree.GetElementAtPoint(e.Location), BaseListViewVisualItem)
+        If draggedItem IsNot Nothing AndAlso _
+        IsRealDrag(Me.lastMouseDownLocation, e.Location) Then
+            RadListView1.Capture = False
+            RadListView1.DoDragDrop(draggedItem.Data, DragDropEffects.Move)
+        End If
+    End Sub
+
+    Private Function IsRealDrag(current As Point, capture As Point) As Boolean
+        Dim dragSize As Size = SystemInformation.DragSize
+        Dim dragRect As New Rectangle(capture.X - dragSize.Width / 2, _
+                                      capture.Y - dragSize.Height / 2, dragSize.Width, dragSize.Height)
+        Return Not dragRect.Contains(current)
+    End Function
+
+    Private Sub listBox1_DragEnter(sender As Object, e As DragEventArgs)
+        e.Effect = DragDropEffects.Move
+    End Sub
+
+    '#End Region
+
+    '#Region "ListViewToListBoxDrop"
+
+    Private Sub listBox1_DragDrop(sender As Object, e As DragEventArgs)
+        Dim draggedItem As ListViewDataItem = TryCast(e.Data.GetData(GetType(ListViewDataItem)), ListViewDataItem)
+        If draggedItem IsNot Nothing Then
+            Dim point As Point = Me.ListBox1.PointToClient(New Point(e.X, e.Y))
+            Dim targetIndex As Integer = Me.ListBox1.IndexFromPoint(point)
+            If targetIndex &gt; -1 Then
+                Me.ListBox1.Items.Insert(targetIndex, draggedItem.Text)
+            Else
+                Me.ListBox1.Items.Add(draggedItem.Text)
+            End If
+            Dim sourceIndex As Integer = Me.RadListView1.Items.IndexOf(draggedItem)
+            If sourceIndex &gt; -1 Then
+                Me.RadListView1.Items.RemoveAt(sourceIndex)
+            End If
+        End If
+        Me.lastMouseDownLocation = Point.Empty
+    End Sub
+
+    Private Sub radListView1_MouseUp(sender As Object, e As MouseEventArgs)
+        Me.lastMouseDownLocation = Point.Empty
+    End Sub
+
+    '#End Region
+
+    '#End Region
+End Class
+</code></pre>
+
+<ol>
+<li>Finally, perform the exact drag and drop operation via inserting a new item in the ListBox in the <strong>DragDrop</strong> event. 
+        We should reset the stored mouse down location as well:</li>
+</ol>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        private void listBox1_DragDrop(object sender, DragEventArgs e)
+        {
+            ListViewDataItem draggedItem = e.Data.GetData(typeof(ListViewDataItem)) as ListViewDataItem;
+            if (draggedItem != null)
+            {
+                Point point = this.listBox1.PointToClient(new Point(e.X, e.Y));
+                int targetIndex = this.listBox1.IndexFromPoint(point);
+                if (targetIndex &gt; -1)
+                {
+                    this.listBox1.Items.Insert(targetIndex, draggedItem.Text);
+                }
+                else
+                {
+                    this.listBox1.Items.Add(draggedItem.Text);
+                }
+                int sourceIndex = this.radListView1.Items.IndexOf(draggedItem);
+                if (sourceIndex &gt; -1)
+                {
+                    this.radListView1.Items.RemoveAt(sourceIndex);
+                }
+            }
+            this.lastMouseDownLocation = Point.Empty;
+        }
+
+        private void radListView1_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.lastMouseDownLocation = Point.Empty;
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Private Sub listBox1_DragDrop(sender As Object, e As DragEventArgs)
+        Dim draggedItem As ListViewDataItem = TryCast(e.Data.GetData(GetType(ListViewDataItem)), ListViewDataItem)
+        If draggedItem IsNot Nothing Then
+            Dim point As Point = Me.ListBox1.PointToClient(New Point(e.X, e.Y))
+            Dim targetIndex As Integer = Me.ListBox1.IndexFromPoint(point)
+            If targetIndex &gt; -1 Then
+                Me.ListBox1.Items.Insert(targetIndex, draggedItem.Text)
+            Else
+                Me.ListBox1.Items.Add(draggedItem.Text)
+            End If
+            Dim sourceIndex As Integer = Me.RadListView1.Items.IndexOf(draggedItem)
+            If sourceIndex &gt; -1 Then
+                Me.RadListView1.Items.RemoveAt(sourceIndex)
+            End If
+        End If
+        Me.lastMouseDownLocation = Point.Empty
+    End Sub
+
+    Private Sub radListView1_MouseUp(sender As Object, e As MouseEventArgs)
+        Me.lastMouseDownLocation = Point.Empty
+    End Sub
+
+    '#End Region
+
+    '#End Region
+End Class
+</code></pre>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

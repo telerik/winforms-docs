@@ -1,0 +1,866 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>SchedulerPrintStyles</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="SchedulerPrintStyles">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("scheduler/print-support/schedulerprintstyle.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/scheduler/print-support/schedulerprintstyle.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="schedulerprintstyles"><a href="#schedulerprintstyles">SchedulerPrintStyles</a></h1>
+
+<p>Printing in RadScheduler is performed by objects of type <strong>SchedulerPrintStyle</strong>.<br>
+        SchedulerPrintStyle provides a set of options that define the date range of printing<br>
+        and the appearance of the printed pages.</p>
+
+<p>SchedulerPrintStyle is an abstract class and cannot be instantiated directly.<br>
+        You should use one of the following implementations: <strong>SchedulerDailyPrintStyle</strong>,<br>
+        <strong>SchedulerWeeklyPrintStyle</strong>, <strong>SchedulerMonthlyPrintStyle</strong>,<br>
+        <strong>SchedulerDetailsPrintStyle</strong>.</p>
+
+<p>To set a RadScheduler with a print style:</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            SchedulerPrintStyle schedulerPrintStyle = new SchedulerDailyPrintStyle();
+            this.radScheduler1.PrintStyle = schedulerPrintStyle;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Dim schedulerPrintStyle As New SchedulerDailyPrintStyle()
+        Me.RadScheduler1.PrintStyle = schedulerPrintStyle
+        '#End Region
+
+        '#Region "SpeficyDateRange"
+        schedulerPrintStyle.DateStartRange = DateTime.Today
+        schedulerPrintStyle.DateEndRange = DateTime.Today.AddDays(6)
+        '#End Region
+
+        '#Region "SpecifyTimeFrame"
+        schedulerPrintStyle.TimeStartRange = TimeSpan.FromHours(7)
+        schedulerPrintStyle.TimeEndRange = TimeSpan.FromHours(19)
+        '#End Region
+
+        '#Region "SetFonts"
+        schedulerPrintStyle.AppointmentFont = New Font("Segoe UI Light", 8, FontStyle.Regular)
+        schedulerPrintStyle.DateHeadingFont = New Font("Segoe UI Light", 12, FontStyle.Regular)
+        schedulerPrintStyle.PageHeadingFont = New Font("Segoe UI Light", 16, FontStyle.Regular)
+        '#End Region
+
+        '#Region "SpeficyVisualElements"
+        schedulerPrintStyle.DrawPageTitle = True
+        schedulerPrintStyle.DrawPageTitleCalendar = True
+        schedulerPrintStyle.ShowLinedNotesArea = True
+        schedulerPrintStyle.ShowNotesArea = True
+        '#End Region
+
+        '#Region "ModifyVisualElements"
+        schedulerPrintStyle.NotesAreaWidth = 200
+        schedulerPrintStyle.HeadingAreaHeight = 100
+        '#End Region
+
+        '#Region "DailyStyle"
+        Dim dailyStyle As New SchedulerDailyPrintStyle()
+        dailyStyle.HoursColumnWidth = 100
+        dailyStyle.MaxAllDayAreaHeight = 100
+        dailyStyle.AllDayAppointmentHeight = 20
+        dailyStyle.TwoPagesPerDay = True
+        '#End Region
+
+        '#Region "WeeklyStyle"
+        Dim weeklyStyle As New SchedulerWeeklyPrintStyle()
+        weeklyStyle.ExcludeNonWorkingDays = True
+        weeklyStyle.DaysLayout = WeeklyStyleLayout.TopToBottom
+        weeklyStyle.TwoPagesPerWeek = True
+        '#End Region
+
+        '#Region "MonthlyStyle"
+        Dim monthlyStyle As New SchedulerMonthlyPrintStyle()
+        monthlyStyle.ExcludeNonWorkingDays = True
+        monthlyStyle.TwoPagesPerMonth = True
+        monthlyStyle.PrintExactlyOneMonth = False
+        monthlyStyle.WeeksPerPage = 4
+        monthlyStyle.AppointmentHeight = 30
+        monthlyStyle.CellHeaderHeight = 30
+        monthlyStyle.VerticalHeaderWidth = 100
+        '#End Region
+
+        '#Region "DetailsStyle"
+        Dim detailsStyle As New SchedulerDetailsPrintStyle()
+        detailsStyle.AppointmentDateWidth = 200
+        detailsStyle.AppointmentTitleHeight = 30
+        detailsStyle.DayHeaderHeight = 60
+        detailsStyle.PageBreakMode = PageBreakMode.Day
+        '#End Region
+
+        '#Region "WeeklyCalendarStyle"
+        Dim weeklyCalendarStyle As New SchedulerWeeklyCalendarPrintStyle()
+        weeklyCalendarStyle.AppointmentFont = New System.Drawing.Font("Segoe UI", 12, FontStyle.Regular)
+        weeklyCalendarStyle.HeadingAreaHeight = 120
+        weeklyCalendarStyle.HoursColumnWidth = 30
+        '#End Region
+    End Sub
+
+End Class
+</code></pre>
+
+<p>SchedulerPrintStyle has the following properties:</p>
+
+<ul>
+<li>
+<strong>DateStartRange</strong> and <strong>DateEndRange</strong> - allows
+        you to specify the date range which should be printed:</li>
+</ul>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            schedulerPrintStyle.DateStartRange = DateTime.Today;
+            schedulerPrintStyle.DateEndRange = DateTime.Today.AddDays(6);
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        schedulerPrintStyle.DateStartRange = DateTime.Today
+        schedulerPrintStyle.DateEndRange = DateTime.Today.AddDays(6)
+        '#End Region
+
+        '#Region "SpecifyTimeFrame"
+        schedulerPrintStyle.TimeStartRange = TimeSpan.FromHours(7)
+        schedulerPrintStyle.TimeEndRange = TimeSpan.FromHours(19)
+        '#End Region
+
+        '#Region "SetFonts"
+        schedulerPrintStyle.AppointmentFont = New Font("Segoe UI Light", 8, FontStyle.Regular)
+        schedulerPrintStyle.DateHeadingFont = New Font("Segoe UI Light", 12, FontStyle.Regular)
+        schedulerPrintStyle.PageHeadingFont = New Font("Segoe UI Light", 16, FontStyle.Regular)
+        '#End Region
+
+        '#Region "SpeficyVisualElements"
+        schedulerPrintStyle.DrawPageTitle = True
+        schedulerPrintStyle.DrawPageTitleCalendar = True
+        schedulerPrintStyle.ShowLinedNotesArea = True
+        schedulerPrintStyle.ShowNotesArea = True
+        '#End Region
+
+        '#Region "ModifyVisualElements"
+        schedulerPrintStyle.NotesAreaWidth = 200
+        schedulerPrintStyle.HeadingAreaHeight = 100
+        '#End Region
+
+        '#Region "DailyStyle"
+        Dim dailyStyle As New SchedulerDailyPrintStyle()
+        dailyStyle.HoursColumnWidth = 100
+        dailyStyle.MaxAllDayAreaHeight = 100
+        dailyStyle.AllDayAppointmentHeight = 20
+        dailyStyle.TwoPagesPerDay = True
+        '#End Region
+
+        '#Region "WeeklyStyle"
+        Dim weeklyStyle As New SchedulerWeeklyPrintStyle()
+        weeklyStyle.ExcludeNonWorkingDays = True
+        weeklyStyle.DaysLayout = WeeklyStyleLayout.TopToBottom
+        weeklyStyle.TwoPagesPerWeek = True
+        '#End Region
+
+        '#Region "MonthlyStyle"
+        Dim monthlyStyle As New SchedulerMonthlyPrintStyle()
+        monthlyStyle.ExcludeNonWorkingDays = True
+        monthlyStyle.TwoPagesPerMonth = True
+        monthlyStyle.PrintExactlyOneMonth = False
+        monthlyStyle.WeeksPerPage = 4
+        monthlyStyle.AppointmentHeight = 30
+        monthlyStyle.CellHeaderHeight = 30
+        monthlyStyle.VerticalHeaderWidth = 100
+        '#End Region
+
+        '#Region "DetailsStyle"
+        Dim detailsStyle As New SchedulerDetailsPrintStyle()
+        detailsStyle.AppointmentDateWidth = 200
+        detailsStyle.AppointmentTitleHeight = 30
+        detailsStyle.DayHeaderHeight = 60
+        detailsStyle.PageBreakMode = PageBreakMode.Day
+        '#End Region
+
+        '#Region "WeeklyCalendarStyle"
+        Dim weeklyCalendarStyle As New SchedulerWeeklyCalendarPrintStyle()
+        weeklyCalendarStyle.AppointmentFont = New System.Drawing.Font("Segoe UI", 12, FontStyle.Regular)
+        weeklyCalendarStyle.HeadingAreaHeight = 120
+        weeklyCalendarStyle.HoursColumnWidth = 30
+        '#End Region
+    End Sub
+
+End Class
+</code></pre>
+
+<ul>
+<li>
+<strong>TimeStartRange</strong> and <strong>TimeEndRange</strong> - allows
+        you to specify the time frame which for every day in the date range - i.e. the time frame which will be
+        printed for each date in the date range period:</li>
+</ul>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            schedulerPrintStyle.TimeStartRange = TimeSpan.FromHours(7);
+            schedulerPrintStyle.TimeEndRange = TimeSpan.FromHours(19);
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        schedulerPrintStyle.TimeStartRange = TimeSpan.FromHours(7)
+        schedulerPrintStyle.TimeEndRange = TimeSpan.FromHours(19)
+        '#End Region
+
+        '#Region "SetFonts"
+        schedulerPrintStyle.AppointmentFont = New Font("Segoe UI Light", 8, FontStyle.Regular)
+        schedulerPrintStyle.DateHeadingFont = New Font("Segoe UI Light", 12, FontStyle.Regular)
+        schedulerPrintStyle.PageHeadingFont = New Font("Segoe UI Light", 16, FontStyle.Regular)
+        '#End Region
+
+        '#Region "SpeficyVisualElements"
+        schedulerPrintStyle.DrawPageTitle = True
+        schedulerPrintStyle.DrawPageTitleCalendar = True
+        schedulerPrintStyle.ShowLinedNotesArea = True
+        schedulerPrintStyle.ShowNotesArea = True
+        '#End Region
+
+        '#Region "ModifyVisualElements"
+        schedulerPrintStyle.NotesAreaWidth = 200
+        schedulerPrintStyle.HeadingAreaHeight = 100
+        '#End Region
+
+        '#Region "DailyStyle"
+        Dim dailyStyle As New SchedulerDailyPrintStyle()
+        dailyStyle.HoursColumnWidth = 100
+        dailyStyle.MaxAllDayAreaHeight = 100
+        dailyStyle.AllDayAppointmentHeight = 20
+        dailyStyle.TwoPagesPerDay = True
+        '#End Region
+
+        '#Region "WeeklyStyle"
+        Dim weeklyStyle As New SchedulerWeeklyPrintStyle()
+        weeklyStyle.ExcludeNonWorkingDays = True
+        weeklyStyle.DaysLayout = WeeklyStyleLayout.TopToBottom
+        weeklyStyle.TwoPagesPerWeek = True
+        '#End Region
+
+        '#Region "MonthlyStyle"
+        Dim monthlyStyle As New SchedulerMonthlyPrintStyle()
+        monthlyStyle.ExcludeNonWorkingDays = True
+        monthlyStyle.TwoPagesPerMonth = True
+        monthlyStyle.PrintExactlyOneMonth = False
+        monthlyStyle.WeeksPerPage = 4
+        monthlyStyle.AppointmentHeight = 30
+        monthlyStyle.CellHeaderHeight = 30
+        monthlyStyle.VerticalHeaderWidth = 100
+        '#End Region
+
+        '#Region "DetailsStyle"
+        Dim detailsStyle As New SchedulerDetailsPrintStyle()
+        detailsStyle.AppointmentDateWidth = 200
+        detailsStyle.AppointmentTitleHeight = 30
+        detailsStyle.DayHeaderHeight = 60
+        detailsStyle.PageBreakMode = PageBreakMode.Day
+        '#End Region
+
+        '#Region "WeeklyCalendarStyle"
+        Dim weeklyCalendarStyle As New SchedulerWeeklyCalendarPrintStyle()
+        weeklyCalendarStyle.AppointmentFont = New System.Drawing.Font("Segoe UI", 12, FontStyle.Regular)
+        weeklyCalendarStyle.HeadingAreaHeight = 120
+        weeklyCalendarStyle.HoursColumnWidth = 30
+        '#End Region
+    End Sub
+
+End Class
+</code></pre>
+
+<ul>
+<li>AppointmentFont, DateHeadingFont and PageHeadingFont allow you to specify the fonts for the appointments,
+        dates and page headers respectively:</li>
+</ul>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            schedulerPrintStyle.AppointmentFont = new Font("Segoe UI Light", 8, FontStyle.Regular);
+            schedulerPrintStyle.DateHeadingFont = new Font("Segoe UI Light", 12, FontStyle.Regular);
+            schedulerPrintStyle.PageHeadingFont = new Font("Segoe UI Light", 16, FontStyle.Regular);
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        schedulerPrintStyle.AppointmentFont = New Font("Segoe UI Light", 8, FontStyle.Regular)
+        schedulerPrintStyle.DateHeadingFont = New Font("Segoe UI Light", 12, FontStyle.Regular)
+        schedulerPrintStyle.PageHeadingFont = New Font("Segoe UI Light", 16, FontStyle.Regular)
+        '#End Region
+
+        '#Region "SpeficyVisualElements"
+        schedulerPrintStyle.DrawPageTitle = True
+        schedulerPrintStyle.DrawPageTitleCalendar = True
+        schedulerPrintStyle.ShowLinedNotesArea = True
+        schedulerPrintStyle.ShowNotesArea = True
+        '#End Region
+
+        '#Region "ModifyVisualElements"
+        schedulerPrintStyle.NotesAreaWidth = 200
+        schedulerPrintStyle.HeadingAreaHeight = 100
+        '#End Region
+
+        '#Region "DailyStyle"
+        Dim dailyStyle As New SchedulerDailyPrintStyle()
+        dailyStyle.HoursColumnWidth = 100
+        dailyStyle.MaxAllDayAreaHeight = 100
+        dailyStyle.AllDayAppointmentHeight = 20
+        dailyStyle.TwoPagesPerDay = True
+        '#End Region
+
+        '#Region "WeeklyStyle"
+        Dim weeklyStyle As New SchedulerWeeklyPrintStyle()
+        weeklyStyle.ExcludeNonWorkingDays = True
+        weeklyStyle.DaysLayout = WeeklyStyleLayout.TopToBottom
+        weeklyStyle.TwoPagesPerWeek = True
+        '#End Region
+
+        '#Region "MonthlyStyle"
+        Dim monthlyStyle As New SchedulerMonthlyPrintStyle()
+        monthlyStyle.ExcludeNonWorkingDays = True
+        monthlyStyle.TwoPagesPerMonth = True
+        monthlyStyle.PrintExactlyOneMonth = False
+        monthlyStyle.WeeksPerPage = 4
+        monthlyStyle.AppointmentHeight = 30
+        monthlyStyle.CellHeaderHeight = 30
+        monthlyStyle.VerticalHeaderWidth = 100
+        '#End Region
+
+        '#Region "DetailsStyle"
+        Dim detailsStyle As New SchedulerDetailsPrintStyle()
+        detailsStyle.AppointmentDateWidth = 200
+        detailsStyle.AppointmentTitleHeight = 30
+        detailsStyle.DayHeaderHeight = 60
+        detailsStyle.PageBreakMode = PageBreakMode.Day
+        '#End Region
+
+        '#Region "WeeklyCalendarStyle"
+        Dim weeklyCalendarStyle As New SchedulerWeeklyCalendarPrintStyle()
+        weeklyCalendarStyle.AppointmentFont = New System.Drawing.Font("Segoe UI", 12, FontStyle.Regular)
+        weeklyCalendarStyle.HeadingAreaHeight = 120
+        weeklyCalendarStyle.HoursColumnWidth = 30
+        '#End Region
+    End Sub
+
+End Class
+</code></pre>
+
+<ul>
+<li>You can also specify which <strong>visual parts</strong> of the page to be printed - page title, calendar in the
+        page title, notes area, etc:</li>
+</ul>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            schedulerPrintStyle.DrawPageTitle = true;
+            schedulerPrintStyle.DrawPageTitleCalendar = true;
+            schedulerPrintStyle.ShowLinedNotesArea = true;
+            schedulerPrintStyle.ShowNotesArea = true;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        schedulerPrintStyle.DrawPageTitle = True
+        schedulerPrintStyle.DrawPageTitleCalendar = True
+        schedulerPrintStyle.ShowLinedNotesArea = True
+        schedulerPrintStyle.ShowNotesArea = True
+        '#End Region
+
+        '#Region "ModifyVisualElements"
+        schedulerPrintStyle.NotesAreaWidth = 200
+        schedulerPrintStyle.HeadingAreaHeight = 100
+        '#End Region
+
+        '#Region "DailyStyle"
+        Dim dailyStyle As New SchedulerDailyPrintStyle()
+        dailyStyle.HoursColumnWidth = 100
+        dailyStyle.MaxAllDayAreaHeight = 100
+        dailyStyle.AllDayAppointmentHeight = 20
+        dailyStyle.TwoPagesPerDay = True
+        '#End Region
+
+        '#Region "WeeklyStyle"
+        Dim weeklyStyle As New SchedulerWeeklyPrintStyle()
+        weeklyStyle.ExcludeNonWorkingDays = True
+        weeklyStyle.DaysLayout = WeeklyStyleLayout.TopToBottom
+        weeklyStyle.TwoPagesPerWeek = True
+        '#End Region
+
+        '#Region "MonthlyStyle"
+        Dim monthlyStyle As New SchedulerMonthlyPrintStyle()
+        monthlyStyle.ExcludeNonWorkingDays = True
+        monthlyStyle.TwoPagesPerMonth = True
+        monthlyStyle.PrintExactlyOneMonth = False
+        monthlyStyle.WeeksPerPage = 4
+        monthlyStyle.AppointmentHeight = 30
+        monthlyStyle.CellHeaderHeight = 30
+        monthlyStyle.VerticalHeaderWidth = 100
+        '#End Region
+
+        '#Region "DetailsStyle"
+        Dim detailsStyle As New SchedulerDetailsPrintStyle()
+        detailsStyle.AppointmentDateWidth = 200
+        detailsStyle.AppointmentTitleHeight = 30
+        detailsStyle.DayHeaderHeight = 60
+        detailsStyle.PageBreakMode = PageBreakMode.Day
+        '#End Region
+
+        '#Region "WeeklyCalendarStyle"
+        Dim weeklyCalendarStyle As New SchedulerWeeklyCalendarPrintStyle()
+        weeklyCalendarStyle.AppointmentFont = New System.Drawing.Font("Segoe UI", 12, FontStyle.Regular)
+        weeklyCalendarStyle.HeadingAreaHeight = 120
+        weeklyCalendarStyle.HoursColumnWidth = 30
+        '#End Region
+    End Sub
+
+End Class
+</code></pre>
+
+<ul>
+<li>To modify the size of the visual areas use:</li>
+</ul>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            schedulerPrintStyle.NotesAreaWidth = 200;
+            schedulerPrintStyle.HeadingAreaHeight = 100;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        schedulerPrintStyle.NotesAreaWidth = 200
+        schedulerPrintStyle.HeadingAreaHeight = 100
+        '#End Region
+
+        '#Region "DailyStyle"
+        Dim dailyStyle As New SchedulerDailyPrintStyle()
+        dailyStyle.HoursColumnWidth = 100
+        dailyStyle.MaxAllDayAreaHeight = 100
+        dailyStyle.AllDayAppointmentHeight = 20
+        dailyStyle.TwoPagesPerDay = True
+        '#End Region
+
+        '#Region "WeeklyStyle"
+        Dim weeklyStyle As New SchedulerWeeklyPrintStyle()
+        weeklyStyle.ExcludeNonWorkingDays = True
+        weeklyStyle.DaysLayout = WeeklyStyleLayout.TopToBottom
+        weeklyStyle.TwoPagesPerWeek = True
+        '#End Region
+
+        '#Region "MonthlyStyle"
+        Dim monthlyStyle As New SchedulerMonthlyPrintStyle()
+        monthlyStyle.ExcludeNonWorkingDays = True
+        monthlyStyle.TwoPagesPerMonth = True
+        monthlyStyle.PrintExactlyOneMonth = False
+        monthlyStyle.WeeksPerPage = 4
+        monthlyStyle.AppointmentHeight = 30
+        monthlyStyle.CellHeaderHeight = 30
+        monthlyStyle.VerticalHeaderWidth = 100
+        '#End Region
+
+        '#Region "DetailsStyle"
+        Dim detailsStyle As New SchedulerDetailsPrintStyle()
+        detailsStyle.AppointmentDateWidth = 200
+        detailsStyle.AppointmentTitleHeight = 30
+        detailsStyle.DayHeaderHeight = 60
+        detailsStyle.PageBreakMode = PageBreakMode.Day
+        '#End Region
+
+        '#Region "WeeklyCalendarStyle"
+        Dim weeklyCalendarStyle As New SchedulerWeeklyCalendarPrintStyle()
+        weeklyCalendarStyle.AppointmentFont = New System.Drawing.Font("Segoe UI", 12, FontStyle.Regular)
+        weeklyCalendarStyle.HeadingAreaHeight = 120
+        weeklyCalendarStyle.HoursColumnWidth = 30
+        '#End Region
+    End Sub
+
+End Class
+</code></pre>
+
+<h2 id="dailystyle"><a href="#dailystyle">DailyStyle<img src="images/scheduler-print-support-schedulerprintstyle-dailystyle.png" alt="scheduler-print-support-schedulerprintstyle-dailystyle"></a></h2>
+
+<p>The SchedulerDailyPrintStyle class defines printing of RadScheduler in a daily manner.<br>
+          Each day is displayed on a separate page. The appointments are arranged in a grid similarly<br>
+          to the SchedulerDayView. The SchedulerDailyPrintStyle provides properties for changing<br>
+          the size of its specific visual parts: the hours column on the left and the area for all<br>
+          day appointments. Additionally, you can allow printing two pages per day. The second page in<br>
+          the mode is reserved for notes.</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            SchedulerDailyPrintStyle dailyStyle = new SchedulerDailyPrintStyle();
+            dailyStyle.HoursColumnWidth = 100;
+            dailyStyle.MaxAllDayAreaHeight = 100;
+            dailyStyle.AllDayAppointmentHeight = 20;
+            dailyStyle.TwoPagesPerDay = true;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Dim dailyStyle As New SchedulerDailyPrintStyle()
+        dailyStyle.HoursColumnWidth = 100
+        dailyStyle.MaxAllDayAreaHeight = 100
+        dailyStyle.AllDayAppointmentHeight = 20
+        dailyStyle.TwoPagesPerDay = True
+        '#End Region
+
+        '#Region "WeeklyStyle"
+        Dim weeklyStyle As New SchedulerWeeklyPrintStyle()
+        weeklyStyle.ExcludeNonWorkingDays = True
+        weeklyStyle.DaysLayout = WeeklyStyleLayout.TopToBottom
+        weeklyStyle.TwoPagesPerWeek = True
+        '#End Region
+
+        '#Region "MonthlyStyle"
+        Dim monthlyStyle As New SchedulerMonthlyPrintStyle()
+        monthlyStyle.ExcludeNonWorkingDays = True
+        monthlyStyle.TwoPagesPerMonth = True
+        monthlyStyle.PrintExactlyOneMonth = False
+        monthlyStyle.WeeksPerPage = 4
+        monthlyStyle.AppointmentHeight = 30
+        monthlyStyle.CellHeaderHeight = 30
+        monthlyStyle.VerticalHeaderWidth = 100
+        '#End Region
+
+        '#Region "DetailsStyle"
+        Dim detailsStyle As New SchedulerDetailsPrintStyle()
+        detailsStyle.AppointmentDateWidth = 200
+        detailsStyle.AppointmentTitleHeight = 30
+        detailsStyle.DayHeaderHeight = 60
+        detailsStyle.PageBreakMode = PageBreakMode.Day
+        '#End Region
+
+        '#Region "WeeklyCalendarStyle"
+        Dim weeklyCalendarStyle As New SchedulerWeeklyCalendarPrintStyle()
+        weeklyCalendarStyle.AppointmentFont = New System.Drawing.Font("Segoe UI", 12, FontStyle.Regular)
+        weeklyCalendarStyle.HeadingAreaHeight = 120
+        weeklyCalendarStyle.HoursColumnWidth = 30
+        '#End Region
+    End Sub
+
+End Class
+</code></pre>
+
+<h2 id="weeklycalendarstyle"><a href="#weeklycalendarstyle">WeeklyCalendarStyle<img src="images/scheduler-print-support-schedulerprintstyle001.png" alt="scheduler-print-support-schedulerprintstyle 001"></a></h2>
+
+<p>In the WeeklyCalendarPrintStyle the appointments are arranged in a grid where each column represents a day. And each row represents a specific time frame.<br>
+          This style provides properties for changing the dimensions of its visual parts and the font for the header cells.      </p>
+
+<ul>
+<li><p><strong>HeaderCellFont</strong> - Allows the font of the header row to be changed.</p></li>
+<li><p><strong>HeaderAreaHeight</strong> - Controls the height of the header row.</p></li>
+<li><p><strong>HoursColumnWidth</strong> - Controls the width of the header column.</p></li>
+<li><p><strong>AllDayAppointmentHeight</strong> - Controls the width of the all day appointments section.</p></li>
+<li><p><strong>MaxAllDayAreaHeight</strong> - Sets the maximum height all day appointments section. The default value is 180 pixels.</p></li>
+</ul>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            SchedulerWeeklyCalendarPrintStyle weeklyCalendarStyle = new SchedulerWeeklyCalendarPrintStyle();
+            weeklyCalendarStyle.AppointmentFont = new System.Drawing.Font("Segoe UI", 12, FontStyle.Regular);
+            weeklyCalendarStyle.HeadingAreaHeight = 120;
+            weeklyCalendarStyle.HoursColumnWidth = 30;           
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Dim weeklyCalendarStyle As New SchedulerWeeklyCalendarPrintStyle()
+        weeklyCalendarStyle.AppointmentFont = New System.Drawing.Font("Segoe UI", 12, FontStyle.Regular)
+        weeklyCalendarStyle.HeadingAreaHeight = 120
+        weeklyCalendarStyle.HoursColumnWidth = 30
+        '#End Region
+    End Sub
+
+End Class
+</code></pre>
+
+<h2 id="weeklystyle"><a href="#weeklystyle">WeeklyStyle<img src="images/scheduler-print-support-schedulerprintstyle-weeklystyle.png" alt="scheduler-print-support-schedulerprintstyle-weeklystyle"></a></h2>
+
+<p>The SchedulerWeeklyPrintStyle class defines printing of RadScheduler in a weekly manner.<br>
+          Each week is displayed on a separate page. The appointments are arranged in a grid in<br>
+          which each cell represents a day of the week. The SchedulerWeeklyPrint provides<br>
+          properties for changing the height of the appointments and the layout of its visual parts.</p>
+
+<ul>
+<li><p><strong>ExcludeNonWorkingDays</strong> - disables printing of non-working days</p></li>
+<li><p><strong>DaysLayout</strong> - defines the flow direction of the cells</p></li>
+<li><p><strong>TwoPagesPerWeek</strong> - allows printing a week in two pages separating the week in two</p></li>
+</ul>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            SchedulerWeeklyPrintStyle weeklyStyle = new SchedulerWeeklyPrintStyle();
+            weeklyStyle.ExcludeNonWorkingDays = true;
+            weeklyStyle.DaysLayout = WeeklyStyleLayout.TopToBottom;
+            weeklyStyle.TwoPagesPerWeek = true;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Dim weeklyStyle As New SchedulerWeeklyPrintStyle()
+        weeklyStyle.ExcludeNonWorkingDays = True
+        weeklyStyle.DaysLayout = WeeklyStyleLayout.TopToBottom
+        weeklyStyle.TwoPagesPerWeek = True
+        '#End Region
+
+        '#Region "MonthlyStyle"
+        Dim monthlyStyle As New SchedulerMonthlyPrintStyle()
+        monthlyStyle.ExcludeNonWorkingDays = True
+        monthlyStyle.TwoPagesPerMonth = True
+        monthlyStyle.PrintExactlyOneMonth = False
+        monthlyStyle.WeeksPerPage = 4
+        monthlyStyle.AppointmentHeight = 30
+        monthlyStyle.CellHeaderHeight = 30
+        monthlyStyle.VerticalHeaderWidth = 100
+        '#End Region
+
+        '#Region "DetailsStyle"
+        Dim detailsStyle As New SchedulerDetailsPrintStyle()
+        detailsStyle.AppointmentDateWidth = 200
+        detailsStyle.AppointmentTitleHeight = 30
+        detailsStyle.DayHeaderHeight = 60
+        detailsStyle.PageBreakMode = PageBreakMode.Day
+        '#End Region
+
+        '#Region "WeeklyCalendarStyle"
+        Dim weeklyCalendarStyle As New SchedulerWeeklyCalendarPrintStyle()
+        weeklyCalendarStyle.AppointmentFont = New System.Drawing.Font("Segoe UI", 12, FontStyle.Regular)
+        weeklyCalendarStyle.HeadingAreaHeight = 120
+        weeklyCalendarStyle.HoursColumnWidth = 30
+        '#End Region
+    End Sub
+
+End Class
+</code></pre>
+
+<h2 id="monthlystyle"><a href="#monthlystyle">MonthlyStyle<img src="images/scheduler-print-support-schedulerprintstyle-monthlystyle.png" alt="scheduler-print-support-schedulerprintstyle-monthlystyle"></a></h2>
+
+<p>The SchedulerMonthlyPrintStyle class defines printing of RadScheduler in a monthly manner.<br>
+          Each month is displayed on a separate page. The appointments are arranged in a grid in<br>
+          which each cell represents a day of the month.</p>
+
+<p>In this mode you can take advantage of the following properties:</p>
+
+<ul>
+<li><p><strong>ExcludeNonWorkingDays</strong> - disable printing of non-working days</p></li>
+<li><p><strong>TwoPagesPerMonth</strong> - separate the month in two pages</p></li>
+<li><p><strong>PrintExactlyOneMonth</strong> - prints one month on a page</p></li>
+<li><p><strong>WeeksPerPage</strong> - prints the number of defined weeks on a page</p></li>
+<li><p><strong>AppointmentHeight</strong> - set the appointment height</p></li>
+<li><p><strong>VerticalHeaderWidth</strong> - sets the vertical header width</p></li>
+<li><p><strong>CellHeaderHeight</strong> - sets cell header height</p></li>
+</ul>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            SchedulerMonthlyPrintStyle monthlyStyle = new SchedulerMonthlyPrintStyle();
+            monthlyStyle.ExcludeNonWorkingDays = true;
+            monthlyStyle.TwoPagesPerMonth = true;
+            monthlyStyle.PrintExactlyOneMonth = false;
+            monthlyStyle.WeeksPerPage = 4;
+            monthlyStyle.AppointmentHeight = 30;
+            monthlyStyle.CellHeaderHeight = 30;
+            monthlyStyle.VerticalHeaderWidth = 100;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Dim monthlyStyle As New SchedulerMonthlyPrintStyle()
+        monthlyStyle.ExcludeNonWorkingDays = True
+        monthlyStyle.TwoPagesPerMonth = True
+        monthlyStyle.PrintExactlyOneMonth = False
+        monthlyStyle.WeeksPerPage = 4
+        monthlyStyle.AppointmentHeight = 30
+        monthlyStyle.CellHeaderHeight = 30
+        monthlyStyle.VerticalHeaderWidth = 100
+        '#End Region
+
+        '#Region "DetailsStyle"
+        Dim detailsStyle As New SchedulerDetailsPrintStyle()
+        detailsStyle.AppointmentDateWidth = 200
+        detailsStyle.AppointmentTitleHeight = 30
+        detailsStyle.DayHeaderHeight = 60
+        detailsStyle.PageBreakMode = PageBreakMode.Day
+        '#End Region
+
+        '#Region "WeeklyCalendarStyle"
+        Dim weeklyCalendarStyle As New SchedulerWeeklyCalendarPrintStyle()
+        weeklyCalendarStyle.AppointmentFont = New System.Drawing.Font("Segoe UI", 12, FontStyle.Regular)
+        weeklyCalendarStyle.HeadingAreaHeight = 120
+        weeklyCalendarStyle.HoursColumnWidth = 30
+        '#End Region
+    End Sub
+
+End Class
+</code></pre>
+
+<h2 id="detailsstyle"><a href="#detailsstyle">DetailsStyle<img src="images/scheduler-print-support-schedulerprintstyle-detailsstyle.png" alt="scheduler-print-support-schedulerprintstyle-detailsstyle"></a></h2>
+
+<p>The SchedulerDetailsPrintStyle defines printing of RadScheduler in a continuous manner.<br>
+          Appointments are printed in ascending order of their start date. This mode does not<br>
+          provide page headers.</p>
+
+<p>Similar to the previous modes, you can set properties that define the size of specific visual parts<br>
+          of the page. You can also specify the condition under which the printing should continue on the next<br>
+          page. Four page break modes are available:</p>
+
+<ul>
+<li><p><strong>Default</strong> – the printing continues to the next page there is no space left on the current page.</p></li>
+<li><p><strong>Day</strong> – the printing continues to the next page when the next appointment has a different date or there is no space left on the current page.</p></li>
+<li><p><strong>Week</strong> – the printing continues to the next page when the next appointment is in a different week or there is no space left on the current page.</p></li>
+<li><p><strong>Month</strong> – the printing continues to the next page when the next appointment is in a different month or there is no space left on the current page.</p></li>
+</ul>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            SchedulerDetailsPrintStyle detailsStyle = new SchedulerDetailsPrintStyle();
+            detailsStyle.AppointmentDateWidth = 200;
+            detailsStyle.AppointmentTitleHeight = 30;
+            detailsStyle.DayHeaderHeight = 60;
+            detailsStyle.PageBreakMode = PageBreakMode.Day;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Dim detailsStyle As New SchedulerDetailsPrintStyle()
+        detailsStyle.AppointmentDateWidth = 200
+        detailsStyle.AppointmentTitleHeight = 30
+        detailsStyle.DayHeaderHeight = 60
+        detailsStyle.PageBreakMode = PageBreakMode.Day
+        '#End Region
+
+        '#Region "WeeklyCalendarStyle"
+        Dim weeklyCalendarStyle As New SchedulerWeeklyCalendarPrintStyle()
+        weeklyCalendarStyle.AppointmentFont = New System.Drawing.Font("Segoe UI", 12, FontStyle.Regular)
+        weeklyCalendarStyle.HeadingAreaHeight = 120
+        weeklyCalendarStyle.HoursColumnWidth = 30
+        '#End Region
+    End Sub
+
+End Class
+</code></pre>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

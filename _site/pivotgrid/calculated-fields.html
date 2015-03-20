@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Calculated fields</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Calculated fields">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("pivotgrid/calculated-fields.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/pivotgrid/calculated-fields.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="calculated-fields"><a href="#calculated-fields">Calculated fields</a></h1>
+
+<p>In this article you will find out how to extend RadPivotGrid's generated report by adding <strong>Calculated Fields</strong>.</p>
+
+<h2 id="calculated-fields-description"><a href="#calculated-fields-description">Calculated Fields Description</a></h2>
+
+<p>If your data analysis requires results that are not available using just the data source fields and RadPivotGrid's built-in calculations,<br>
+          you can insert a calculated field that uses a custom formula to derive the results you need. A calculated field is a new data field in which <br>
+          the values are the result of a custom calculation formula. You can display the calculated field along with another data field or on its own. <br>
+          A calculated field is really a custom summary calculation, so in almost all cases, the calculated field references one or more fields in the<br>
+          source data.</p>
+
+<h2 id="calculated-fields-description"><a href="#calculated-fields-description">Calculated Fields Description</a></h2>
+
+<p>All Calculated Fields that you have added to your <strong>LocalDataSourceProvider</strong> will be visible in<br>
+          <strong>RadPivotFieldList</strong>, so the user will be able to add and remove them at runtime. In order to <br>
+          add a calculated field to <strong>LocalDataSourceProvider</strong> you have to add it to its <br>
+          <strong>CalculatedFields</strong> collection. So first you have to create a concrete class that implements the abstract class <br>
+          <strong>CalculatedField</strong>. This requires the implementation of two methods - <strong>CalculatedValue</strong><br>
+          and <strong>RequiredFields</strong>. <strong>CalculateValue__is the method in which you have<br>
+          to define your calculation formula and create a new __AggregateValue__that will be shown in <br>
+          __RadPivotGrid</strong>. In common scenario a Calculated Field reference one or more fields in the data source. <br>
+          The <strong>RequiredFields__method should return __IEnumerable</strong> of the required fields. <br>
+          That's why we have added a new class called <strong>RequiredField</strong>. It's purpose is to describe a field, <br>
+          required for a calculated field. <strong>RequiredField</strong> can be created for property from the data object or for <br>
+          another calculated field. Name property of <strong>CalculatedField</strong> class identifies its unique name that will be shown in the UI.</p>
+
+<p>The first task is to decide what the calculation formula that you want to use is. For example, you can show the commission <br>
+          that will be paid to all salespeople. Commission will be paid only to those who have more sold for more than $15 000.<br>
+          The price of the sold items is kept by the <strong>ExtendedPrice</strong> property from the source. So the new class will look like this:</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>    public class CommissionCalculatedField : CalculatedField
+    {
+        private RequiredField extendPriceField;
+
+        public CommissionCalculatedField()
+        {
+            this.Name = "Commission";
+            this.extendPriceField = RequiredField.ForProperty("ExtendedPrice");
+        }
+
+        protected override IEnumerable&lt;RequiredField&gt; RequiredFields()
+        {
+            yield return this.extendPriceField;
+        }
+
+        protected override AggregateValue CalculateValue(IAggregateValues aggregateValues)
+        {
+            var aggregateValue = aggregateValues.GetAggregateValue(this.extendPriceField);
+            if (aggregateValue.IsError())
+            {
+                return aggregateValue;
+            }
+
+            double extendedPrice = aggregateValue.ConvertOrDefault&lt;double&gt;();
+            if (extendedPrice &gt; 15000)
+            {
+                return new DoubleAggregateValue(extendedPrice * 0.1);
+            }
+
+            return null;
+        }
+    }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>Public Class CommissionCalculatedField
+    Inherits CalculatedField
+    Private extendPriceField As RequiredField
+
+    Public Sub New()
+        Me.Name = "Commission"
+        Me.extendPriceField = RequiredField.ForProperty("ExtendedPrice")
+    End Sub
+
+    Protected Overrides Function RequiredFields() As IEnumerable(Of RequiredField)
+        Return New List(Of RequiredField) From {extendPriceField}
+    End Function
+
+    Protected Overrides Function CalculateValue(aggregateValues As IAggregateValues) As AggregateValue
+        Dim aggregateValue = aggregateValues.GetAggregateValue(Me.extendPriceField)
+        If aggregateValue.IsError() Then
+            Return aggregateValue
+        End If
+
+        Dim extendedPrice As Double = aggregateValue.ConvertOrDefault(Of Double)()
+        If extendedPrice &gt; 15000 Then
+            Return New DoubleAggregateValue(extendedPrice * 0.1)
+        End If
+
+        Return Nothing
+    End Function
+End Class
+'#End Region
+</code></pre>
+
+<p><img src="images/pivotgrid-calculated-fields001.png" alt="pivotgrid-calculated-fields 001"></p>
+
+<p>Now it is time to add a new instance of this class to the CalculatedFields collection of LocalDataSourceProvider: </p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>          using (radPivotGrid1.PivotGridElement.DeferRefresh())
+          {
+              CommissionCalculatedField calculatedField = new CommissionCalculatedField();
+              calculatedField.Name = "Commission";
+
+              ((LocalDataSourceProvider)this.radPivotGrid1.DataProvider).CalculatedFields.Add(calculatedField);
+          }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>        Using radPivotGrid1.PivotGridElement.DeferRefresh()
+            Dim calculatedField As New CommissionCalculatedField()
+            calculatedField.Name = "Commission"
+
+            DirectCast(Me.radPivotGrid1.DataProvider, LocalDataSourceProvider).CalculatedFields.Add(calculatedField)
+        End Using
+        '#End Region
+
+        '#Region "AddCalculatedToAggregateDescriptions"
+        Dim calculatedAggregate As New CalculatedAggregateDescription()
+        calculatedAggregate.CalculatedFieldName = "Commission"
+        DirectCast(radPivotGrid1.DataProvider, LocalDataSourceProvider).AggregateDescriptions.Add(calculatedAggregate)
+        '#End Region
+
+        FillWithData()
+    End Sub
+
+    Private Sub FillWithData()
+        Me.radPivotGrid1.RowGroupDescriptions.Add(New PropertyGroupDescription() With { _
+             .PropertyName = "Salesperson" _
+        })
+
+        Me.radPivotGrid1.ColumnGroupDescriptions.Add(New DateTimeGroupDescription() With { _
+             .PropertyName = "OrderDate", _
+             .[Step] = DateTimeStep.Quarter _
+        })
+
+        Me.radPivotGrid1.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
+             .PropertyName = "ExtendedPrice", _
+             .AggregateFunction = AggregateFunctions.Sum _
+        })
+
+        provider.ItemsSource = Invoice.GetInvoices()
+        Me.radPivotGrid1.ErrorString = "Error"
+    End Sub
+
+End Class
+
+
+'#Region CalculatedFieldClass
+Public Class CommissionCalculatedField
+    Inherits CalculatedField
+    Private extendPriceField As RequiredField
+
+    Public Sub New()
+        Me.Name = "Commission"
+        Me.extendPriceField = RequiredField.ForProperty("ExtendedPrice")
+    End Sub
+
+    Protected Overrides Function RequiredFields() As IEnumerable(Of RequiredField)
+        Return New List(Of RequiredField) From {extendPriceField}
+    End Function
+
+    Protected Overrides Function CalculateValue(aggregateValues As IAggregateValues) As AggregateValue
+        Dim aggregateValue = aggregateValues.GetAggregateValue(Me.extendPriceField)
+        If aggregateValue.IsError() Then
+            Return aggregateValue
+        End If
+
+        Dim extendedPrice As Double = aggregateValue.ConvertOrDefault(Of Double)()
+        If extendedPrice &gt; 15000 Then
+            Return New DoubleAggregateValue(extendedPrice * 0.1)
+        End If
+
+        Return Nothing
+    End Function
+End Class
+'#End Region
+</code></pre>
+
+<blockquote class="important"><p>If you add calculated fields in code behind, you have to set the <strong>ItemsSource</strong> of __LocalDataSourceProvider__after </p></blockquote>
+
+<pre><code>      you have added all calculated fields or to wrap the code between (including setting the __ItemsSource__)
+      __BeginInit() - EndInit()__methods (or inside __using DeferRefresh() { ... }__ section ). 
+      ![pivotgrid-calculated-fields 002](images/pivotgrid-calculated-fields002.png)
+</code></pre>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

@@ -1,0 +1,2068 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Load On Demand with CRUD operations</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Load On Demand with CRUD operations">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("treeview/data-binding/load-on-demand-with-crud-operations.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/treeview/data-binding/load-on-demand-with-crud-operations.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="load-on-demand-with-crud-operations"><a href="#load-on-demand-with-crud-operations">Load On Demand with CRUD operations</a></h1>
+
+<p>If you have a complex hierarchy, which includes business objects of different types,<br>
+      some of them have children and some - do not and you need to visualize it using RadTreeView while keeping the <strong>CRUD</strong> operations, then this article is for you.<img src="images/treeview-data-binding-load-on-demand-with-crud-operations001.png" alt="treeview-data-binding-load-on-demand-with-crud-operations 001"></p>
+
+<p>In this example, we will use the following scenario: A hierarchy, which has <strong>Teams</strong>, each <strong>Team</strong> has <strong>TeamMembers</strong> and <strong>Tasks</strong>, and each <strong>TeamMember</strong> has his own <strong>Tasks</strong> Every <strong>Team</strong>,<br>
+          <strong>TeamMember</strong> and <strong>Task</strong> have names which will be displayed in the <strong>RadTreeView</strong>.</p>
+
+<pre><code>      Below you can see the implementation of these types. Note that their child collections are __BindingLists__ and that every type implements __INotifyPropertyChanged__. 
+      We will use this approach so that every property change will bubble up to the top-most collection which we will monitor:
+</code></pre>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>        public class Team : INotifyPropertyChanged
+        {
+            private string teamName;
+
+            public string TeamName
+            {
+                get { return this.teamName; }
+                set
+                {
+                    this.teamName = value;
+                    this.OnPropertyChanged("TeamName");
+                }
+            }
+
+            public BindingList&lt;TeamMember&gt; TeamMembers { get; private set; }
+            public BindingList&lt;Task&gt; TeamTasks { get; private set; }
+
+            public Team(string teamName)
+            {
+                this.TeamName = teamName;
+
+                this.TeamMembers = new BindingList&lt;TeamMember&gt;();
+                this.TeamTasks = new BindingList&lt;Task&gt;();
+
+                this.TeamMembers.ListChanged += TeamMembers_ListChanged;
+                this.TeamTasks.ListChanged += TeamTasks_ListChanged;
+            }
+
+            private void TeamTasks_ListChanged(object sender, ListChangedEventArgs e)
+            {
+                this.OnPropertyChanged("TeamTasks");
+            }
+
+            private void TeamMembers_ListChanged(object sender, ListChangedEventArgs e)
+            {
+                this.OnPropertyChanged("TeamName");
+            }
+
+            public event PropertyChangedEventHandler PropertyChanged;
+
+            protected virtual void OnPropertyChanged(string propName)
+            {
+                if (this.PropertyChanged != null)
+                {
+                    this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+                }
+            }
+        }
+
+        public class TeamMember : INotifyPropertyChanged
+        {
+            private string memberName;
+
+            public string MemberName
+            {
+                get
+                {
+                    return this.memberName;
+                }
+                set
+                {
+                    this.memberName = value;
+                    this.OnPropertyChanged("MemberName");
+                }
+            }
+            public BindingList&lt;Task&gt; MemberTasks { get; private set; }
+
+            public TeamMember(string memberName)
+            {
+                this.MemberName = memberName;
+
+                this.MemberTasks = new BindingList&lt;Task&gt;();
+
+                this.MemberTasks.ListChanged += MemberTasks_ListChanged;
+            }
+
+            void MemberTasks_ListChanged(object sender, ListChangedEventArgs e)
+            {
+                this.OnPropertyChanged("MemberTasks");
+            }
+
+            public event PropertyChangedEventHandler PropertyChanged;
+
+            protected virtual void OnPropertyChanged(string propName)
+            {
+                if (this.PropertyChanged != null)
+                {
+                    this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+                }
+            }
+        }
+
+        public class Task : INotifyPropertyChanged
+        {
+            private string taskName;
+
+            public string TaskName
+            {
+                get { return this.taskName; }
+                set
+                {
+                    this.taskName = value;
+                    this.OnPropertyChanged("TaskName");
+                }
+            }
+
+            public Task(string taskName)
+            {
+                this.TaskName = taskName;
+            }
+
+            public event PropertyChangedEventHandler PropertyChanged;
+
+            protected virtual void OnPropertyChanged(string propName)
+            {
+                if (this.PropertyChanged != null)
+                {
+                    this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+                }
+            }
+        }
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>    Public Class Team
+        Implements INotifyPropertyChanged
+        Private m_teamName As String
+
+        Public Property TeamName() As String
+            Get
+                Return Me.m_teamName
+            End Get
+            Set(value As String)
+                Me.m_teamName = value
+                Me.OnPropertyChanged("TeamName")
+            End Set
+        End Property
+
+        Public Property TeamMembers() As BindingList(Of TeamMember)
+            Get
+                Return m_TeamMembers
+            End Get
+            Private Set(value As BindingList(Of TeamMember))
+                m_TeamMembers = value
+            End Set
+        End Property
+        Private m_TeamMembers As BindingList(Of TeamMember)
+        Public Property TeamTasks() As BindingList(Of Task)
+            Get
+                Return m_TeamTasks
+            End Get
+            Private Set(value As BindingList(Of Task))
+                m_TeamTasks = value
+            End Set
+        End Property
+        Private m_TeamTasks As BindingList(Of Task)
+
+        Public Sub New(teamName As String)
+            Me.TeamName = teamName
+
+            Me.TeamMembers = New BindingList(Of TeamMember)()
+            Me.TeamTasks = New BindingList(Of Task)()
+
+            AddHandler Me.TeamMembers.ListChanged, AddressOf TeamMembers_ListChanged
+            AddHandler Me.TeamTasks.ListChanged, AddressOf TeamTasks_ListChanged
+        End Sub
+
+        Private Sub TeamTasks_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("TeamTasks")
+        End Sub
+
+        Private Sub TeamMembers_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("TeamName")
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+
+    Public Class TeamMember
+        Implements INotifyPropertyChanged
+        Private m_memberName As String
+
+        Public Property MemberName() As String
+            Get
+                Return Me.m_memberName
+            End Get
+            Set(value As String)
+                Me.m_memberName = value
+                Me.OnPropertyChanged("MemberName")
+            End Set
+        End Property
+        Public Property MemberTasks() As BindingList(Of Task)
+            Get
+                Return m_MemberTasks
+            End Get
+            Private Set(value As BindingList(Of Task))
+                m_MemberTasks = value
+            End Set
+        End Property
+        Private m_MemberTasks As BindingList(Of Task)
+
+        Public Sub New(memberName As String)
+            Me.MemberName = memberName
+
+            Me.MemberTasks = New BindingList(Of Task)()
+
+            AddHandler Me.MemberTasks.ListChanged, AddressOf MemberTasks_ListChanged
+        End Sub
+
+        Private Sub MemberTasks_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("MemberTasks")
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+
+    Public Class Task
+        Implements INotifyPropertyChanged
+        Private m_taskName As String
+
+        Public Property TaskName() As String
+            Get
+                Return Me.m_taskName
+            End Get
+            Set(value As String)
+                Me.m_taskName = value
+                Me.OnPropertyChanged("TaskName")
+            End Set
+        End Property
+
+        Public Sub New(taskName As String)
+            Me.TaskName = taskName
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+#End Region
+End Class
+
+
+      Now, we need to initialize the __RadTreeView__, which will visualize our business objects:
+</code></pre>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            this.radTreeView1.Dock = DockStyle.Fill;
+            this.radTreeView1.AllowRemove = true;
+            this.radTreeView1.AllowAdd = true;
+            this.radTreeView1.LazyMode = true;
+            this.radTreeView1.AllowDefaultContextMenu = true;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Me.RadTreeView1.Dock = DockStyle.Fill
+        Me.RadTreeView1.AllowRemove = True
+        Me.RadTreeView1.AllowAdd = True
+        Me.RadTreeView1.LazyMode = True
+        Me.RadTreeView1.AllowDefaultContextMenu = True
+        '#End Region
+
+        AddHandler Me.RadTreeView1.NodesNeeded, AddressOf TreeView_NodesNeeded
+        AddHandler Me.RadTreeView1.NodeFormatting, AddressOf TreeView_NodeFormatting
+        AddHandler Me.RadTreeView1.NodeAdded, AddressOf TreeView_NodeAdded
+        AddHandler Me.RadTreeView1.NodeRemoving, AddressOf TreeView_NodeRemoving
+
+        Me.InitializeHierarchy()
+    End Sub
+
+#Region "CreateNode"
+    Private Function CreateNode(text As String, tag As Object) As RadTreeNode
+        Dim newNode As New RadTreeNode(text)
+        newNode.Tag = tag
+        Return newNode
+    End Function
+#End Region
+
+#Region "InitializeHierarchy"
+    Private Sub InitializeHierarchy()
+        'the Teams collection is a property of the Form
+        Me.Teams = New BindingList(Of Team)()
+
+        Dim winFormsTeam As New Team("WinForms")
+        Me.Teams.Add(winFormsTeam)
+
+        Dim john As New TeamMember("John")
+        winFormsTeam.TeamMembers.Add(john)
+        Dim johnsTask As New Task("Refactor RadTreeView")
+        john.MemberTasks.Add(johnsTask)
+
+        Dim alice As New TeamMember("Alice")
+        winFormsTeam.TeamMembers.Add(alice)
+        Dim aliceTask As New Task("Help John")
+        alice.MemberTasks.Add(aliceTask)
+
+        Dim winFormsUnassignedTask As New Task("Create an article regarding TreeView load on demand and CRUD operations")
+        winFormsTeam.TeamTasks.Add(winFormsUnassignedTask)
+
+        Dim wpfTeam As New Team("WPF")
+        Me.Teams.Add(wpfTeam)
+
+        Dim annie As New TeamMember("Annie")
+        wpfTeam.TeamMembers.Add(annie)
+
+        Dim annieTask As New Task("Research for control XXXXX")
+        annie.MemberTasks.Add(annieTask)
+
+        Dim unnasignedWpfTask As New Task("Help Annie")
+        wpfTeam.TeamTasks.Add(unnasignedWpfTask)
+
+        Dim secondUnnasignedWpfTask As New Task("Evaluate the research of Annie")
+        wpfTeam.TeamTasks.Add(secondUnnasignedWpfTask)
+
+        Dim memberWithoutTasks As New TeamMember("Jack")
+        wpfTeam.TeamMembers.Add(memberWithoutTasks)
+
+        For Each team As Team In Me.Teams
+            Me.RadTreeView1.Nodes.Add(Me.CreateNode(team.TeamName, team))
+        Next
+    End Sub
+#End Region
+
+#Region "NodesNeeded"
+    Private Sub TreeView_NodesNeeded(sender As Object, e As NodesNeededEventArgs)
+        If e.Parent Is Nothing OrElse e.Parent.Tag Is Nothing OrElse TypeOf e.Parent.Tag Is Task Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            For Each member As TeamMember In team.TeamMembers
+                e.Nodes.Add(Me.CreateNode(member.MemberName, member))
+            Next
+
+            For Each task As Task In team.TeamTasks
+                e.Nodes.Add(Me.CreateNode(task.TaskName, task))
+            Next
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            For Each task As Task In teamMember.MemberTasks
+                e.Nodes.Add(Me.CreateNode(task.TaskName, task))
+            Next
+        End If
+    End Sub
+#End Region
+
+#Region "NodeFormatting"
+    Private Sub TreeView_NodeFormatting(sender As Object, e As TreeNodeFormattingEventArgs)
+        Dim team As Team = TryCast(e.Node.Tag, Team)
+        Dim teamMember As TeamMember = TryCast(e.Node.Tag, TeamMember)
+        If (e.Node.Tag Is Nothing OrElse TypeOf e.Node.Tag Is Task) OrElse (team IsNot Nothing AndAlso team.TeamMembers.Count = 0 AndAlso team.TeamTasks.Count = 0) OrElse (teamMember IsNot Nothing AndAlso teamMember.MemberTasks.Count = 0) Then
+            e.NodeElement.ExpanderElement.Visibility = Telerik.WinControls.ElementVisibility.Hidden
+        Else
+            e.NodeElement.ExpanderElement.ResetValue(VisualElement.VisibilityProperty, ValueResetFlags.Local)
+        End If
+    End Sub
+#End Region
+
+#Region "NodeAddedAndNodeRemoving"
+    Private Sub TreeView_NodeAdded(sender As Object, e As RadTreeViewEventArgs)
+        If e.Node.Parent Is Nothing Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Node.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            Dim member As TeamMember = TryCast(e.Node.Tag, TeamMember)
+            If member IsNot Nothing Then
+                team.TeamMembers.Add(member)
+            End If
+
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                team.TeamTasks.Add(task)
+            End If
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Node.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                teamMember.MemberTasks.Add(task)
+            End If
+        End If
+    End Sub
+
+    Private Sub TreeView_NodeRemoving(sender As Object, e As RadTreeViewCancelEventArgs)
+        If e.Node.Parent Is Nothing Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Node.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            Dim member As TeamMember = TryCast(e.Node.Tag, TeamMember)
+            If member IsNot Nothing Then
+                team.TeamMembers.Remove(member)
+            End If
+
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                team.TeamTasks.Remove(task)
+            End If
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Node.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                teamMember.MemberTasks.Remove(task)
+            End If
+        End If
+    End Sub
+#End Region
+
+#Region "Models"
+    Public Class Team
+        Implements INotifyPropertyChanged
+        Private m_teamName As String
+
+        Public Property TeamName() As String
+            Get
+                Return Me.m_teamName
+            End Get
+            Set(value As String)
+                Me.m_teamName = value
+                Me.OnPropertyChanged("TeamName")
+            End Set
+        End Property
+
+        Public Property TeamMembers() As BindingList(Of TeamMember)
+            Get
+                Return m_TeamMembers
+            End Get
+            Private Set(value As BindingList(Of TeamMember))
+                m_TeamMembers = value
+            End Set
+        End Property
+        Private m_TeamMembers As BindingList(Of TeamMember)
+        Public Property TeamTasks() As BindingList(Of Task)
+            Get
+                Return m_TeamTasks
+            End Get
+            Private Set(value As BindingList(Of Task))
+                m_TeamTasks = value
+            End Set
+        End Property
+        Private m_TeamTasks As BindingList(Of Task)
+
+        Public Sub New(teamName As String)
+            Me.TeamName = teamName
+
+            Me.TeamMembers = New BindingList(Of TeamMember)()
+            Me.TeamTasks = New BindingList(Of Task)()
+
+            AddHandler Me.TeamMembers.ListChanged, AddressOf TeamMembers_ListChanged
+            AddHandler Me.TeamTasks.ListChanged, AddressOf TeamTasks_ListChanged
+        End Sub
+
+        Private Sub TeamTasks_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("TeamTasks")
+        End Sub
+
+        Private Sub TeamMembers_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("TeamName")
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+
+    Public Class TeamMember
+        Implements INotifyPropertyChanged
+        Private m_memberName As String
+
+        Public Property MemberName() As String
+            Get
+                Return Me.m_memberName
+            End Get
+            Set(value As String)
+                Me.m_memberName = value
+                Me.OnPropertyChanged("MemberName")
+            End Set
+        End Property
+        Public Property MemberTasks() As BindingList(Of Task)
+            Get
+                Return m_MemberTasks
+            End Get
+            Private Set(value As BindingList(Of Task))
+                m_MemberTasks = value
+            End Set
+        End Property
+        Private m_MemberTasks As BindingList(Of Task)
+
+        Public Sub New(memberName As String)
+            Me.MemberName = memberName
+
+            Me.MemberTasks = New BindingList(Of Task)()
+
+            AddHandler Me.MemberTasks.ListChanged, AddressOf MemberTasks_ListChanged
+        End Sub
+
+        Private Sub MemberTasks_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("MemberTasks")
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+
+    Public Class Task
+        Implements INotifyPropertyChanged
+        Private m_taskName As String
+
+        Public Property TaskName() As String
+            Get
+                Return Me.m_taskName
+            End Get
+            Set(value As String)
+                Me.m_taskName = value
+                Me.OnPropertyChanged("TaskName")
+            End Set
+        End Property
+
+        Public Sub New(taskName As String)
+            Me.TaskName = taskName
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+#End Region
+End Class
+
+
+      Since we will not bind our objects to __RadTreeView__, we will use the __Tag__ property to save the business object. The following method will be very helpful further in this article:
+</code></pre>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>        private RadTreeNode CreateNode(string text, object tag)
+        {
+            RadTreeNode newNode = new RadTreeNode(text);
+            newNode.Tag = tag;
+            return newNode;
+        }
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>    Private Function CreateNode(text As String, tag As Object) As RadTreeNode
+        Dim newNode As New RadTreeNode(text)
+        newNode.Tag = tag
+        Return newNode
+    End Function
+#End Region
+
+#Region "InitializeHierarchy"
+    Private Sub InitializeHierarchy()
+        'the Teams collection is a property of the Form
+        Me.Teams = New BindingList(Of Team)()
+
+        Dim winFormsTeam As New Team("WinForms")
+        Me.Teams.Add(winFormsTeam)
+
+        Dim john As New TeamMember("John")
+        winFormsTeam.TeamMembers.Add(john)
+        Dim johnsTask As New Task("Refactor RadTreeView")
+        john.MemberTasks.Add(johnsTask)
+
+        Dim alice As New TeamMember("Alice")
+        winFormsTeam.TeamMembers.Add(alice)
+        Dim aliceTask As New Task("Help John")
+        alice.MemberTasks.Add(aliceTask)
+
+        Dim winFormsUnassignedTask As New Task("Create an article regarding TreeView load on demand and CRUD operations")
+        winFormsTeam.TeamTasks.Add(winFormsUnassignedTask)
+
+        Dim wpfTeam As New Team("WPF")
+        Me.Teams.Add(wpfTeam)
+
+        Dim annie As New TeamMember("Annie")
+        wpfTeam.TeamMembers.Add(annie)
+
+        Dim annieTask As New Task("Research for control XXXXX")
+        annie.MemberTasks.Add(annieTask)
+
+        Dim unnasignedWpfTask As New Task("Help Annie")
+        wpfTeam.TeamTasks.Add(unnasignedWpfTask)
+
+        Dim secondUnnasignedWpfTask As New Task("Evaluate the research of Annie")
+        wpfTeam.TeamTasks.Add(secondUnnasignedWpfTask)
+
+        Dim memberWithoutTasks As New TeamMember("Jack")
+        wpfTeam.TeamMembers.Add(memberWithoutTasks)
+
+        For Each team As Team In Me.Teams
+            Me.RadTreeView1.Nodes.Add(Me.CreateNode(team.TeamName, team))
+        Next
+    End Sub
+#End Region
+
+#Region "NodesNeeded"
+    Private Sub TreeView_NodesNeeded(sender As Object, e As NodesNeededEventArgs)
+        If e.Parent Is Nothing OrElse e.Parent.Tag Is Nothing OrElse TypeOf e.Parent.Tag Is Task Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            For Each member As TeamMember In team.TeamMembers
+                e.Nodes.Add(Me.CreateNode(member.MemberName, member))
+            Next
+
+            For Each task As Task In team.TeamTasks
+                e.Nodes.Add(Me.CreateNode(task.TaskName, task))
+            Next
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            For Each task As Task In teamMember.MemberTasks
+                e.Nodes.Add(Me.CreateNode(task.TaskName, task))
+            Next
+        End If
+    End Sub
+#End Region
+
+#Region "NodeFormatting"
+    Private Sub TreeView_NodeFormatting(sender As Object, e As TreeNodeFormattingEventArgs)
+        Dim team As Team = TryCast(e.Node.Tag, Team)
+        Dim teamMember As TeamMember = TryCast(e.Node.Tag, TeamMember)
+        If (e.Node.Tag Is Nothing OrElse TypeOf e.Node.Tag Is Task) OrElse (team IsNot Nothing AndAlso team.TeamMembers.Count = 0 AndAlso team.TeamTasks.Count = 0) OrElse (teamMember IsNot Nothing AndAlso teamMember.MemberTasks.Count = 0) Then
+            e.NodeElement.ExpanderElement.Visibility = Telerik.WinControls.ElementVisibility.Hidden
+        Else
+            e.NodeElement.ExpanderElement.ResetValue(VisualElement.VisibilityProperty, ValueResetFlags.Local)
+        End If
+    End Sub
+#End Region
+
+#Region "NodeAddedAndNodeRemoving"
+    Private Sub TreeView_NodeAdded(sender As Object, e As RadTreeViewEventArgs)
+        If e.Node.Parent Is Nothing Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Node.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            Dim member As TeamMember = TryCast(e.Node.Tag, TeamMember)
+            If member IsNot Nothing Then
+                team.TeamMembers.Add(member)
+            End If
+
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                team.TeamTasks.Add(task)
+            End If
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Node.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                teamMember.MemberTasks.Add(task)
+            End If
+        End If
+    End Sub
+
+    Private Sub TreeView_NodeRemoving(sender As Object, e As RadTreeViewCancelEventArgs)
+        If e.Node.Parent Is Nothing Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Node.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            Dim member As TeamMember = TryCast(e.Node.Tag, TeamMember)
+            If member IsNot Nothing Then
+                team.TeamMembers.Remove(member)
+            End If
+
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                team.TeamTasks.Remove(task)
+            End If
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Node.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                teamMember.MemberTasks.Remove(task)
+            End If
+        End If
+    End Sub
+#End Region
+
+#Region "Models"
+    Public Class Team
+        Implements INotifyPropertyChanged
+        Private m_teamName As String
+
+        Public Property TeamName() As String
+            Get
+                Return Me.m_teamName
+            End Get
+            Set(value As String)
+                Me.m_teamName = value
+                Me.OnPropertyChanged("TeamName")
+            End Set
+        End Property
+
+        Public Property TeamMembers() As BindingList(Of TeamMember)
+            Get
+                Return m_TeamMembers
+            End Get
+            Private Set(value As BindingList(Of TeamMember))
+                m_TeamMembers = value
+            End Set
+        End Property
+        Private m_TeamMembers As BindingList(Of TeamMember)
+        Public Property TeamTasks() As BindingList(Of Task)
+            Get
+                Return m_TeamTasks
+            End Get
+            Private Set(value As BindingList(Of Task))
+                m_TeamTasks = value
+            End Set
+        End Property
+        Private m_TeamTasks As BindingList(Of Task)
+
+        Public Sub New(teamName As String)
+            Me.TeamName = teamName
+
+            Me.TeamMembers = New BindingList(Of TeamMember)()
+            Me.TeamTasks = New BindingList(Of Task)()
+
+            AddHandler Me.TeamMembers.ListChanged, AddressOf TeamMembers_ListChanged
+            AddHandler Me.TeamTasks.ListChanged, AddressOf TeamTasks_ListChanged
+        End Sub
+
+        Private Sub TeamTasks_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("TeamTasks")
+        End Sub
+
+        Private Sub TeamMembers_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("TeamName")
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+
+    Public Class TeamMember
+        Implements INotifyPropertyChanged
+        Private m_memberName As String
+
+        Public Property MemberName() As String
+            Get
+                Return Me.m_memberName
+            End Get
+            Set(value As String)
+                Me.m_memberName = value
+                Me.OnPropertyChanged("MemberName")
+            End Set
+        End Property
+        Public Property MemberTasks() As BindingList(Of Task)
+            Get
+                Return m_MemberTasks
+            End Get
+            Private Set(value As BindingList(Of Task))
+                m_MemberTasks = value
+            End Set
+        End Property
+        Private m_MemberTasks As BindingList(Of Task)
+
+        Public Sub New(memberName As String)
+            Me.MemberName = memberName
+
+            Me.MemberTasks = New BindingList(Of Task)()
+
+            AddHandler Me.MemberTasks.ListChanged, AddressOf MemberTasks_ListChanged
+        End Sub
+
+        Private Sub MemberTasks_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("MemberTasks")
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+
+    Public Class Task
+        Implements INotifyPropertyChanged
+        Private m_taskName As String
+
+        Public Property TaskName() As String
+            Get
+                Return Me.m_taskName
+            End Get
+            Set(value As String)
+                Me.m_taskName = value
+                Me.OnPropertyChanged("TaskName")
+            End Set
+        End Property
+
+        Public Sub New(taskName As String)
+            Me.TaskName = taskName
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+#End Region
+End Class
+</code></pre>
+
+<p>After we have this method and our tree view set up, we can actually create the hierarchy:</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>        private void InitializeHierarchy()
+        {
+            //the Teams collection is a property of the Form
+            this.Teams = new BindingList&lt;Team&gt;();
+
+            Team winFormsTeam = new Team("WinForms");
+            this.Teams.Add(winFormsTeam);
+
+            TeamMember john = new TeamMember("John");
+            winFormsTeam.TeamMembers.Add(john);
+            Task johnsTask = new Task("Refactor RadTreeView");
+            john.MemberTasks.Add(johnsTask);
+
+            TeamMember alice = new TeamMember("Alice");
+            winFormsTeam.TeamMembers.Add(alice);
+            Task aliceTask = new Task("Help John");
+            alice.MemberTasks.Add(aliceTask);
+
+            Task winFormsUnassignedTask = new Task("Create an article regarding TreeView load on demand and CRUD operations");
+            winFormsTeam.TeamTasks.Add(winFormsUnassignedTask);
+
+            Team wpfTeam = new Team("WPF");
+            this.Teams.Add(wpfTeam);
+
+            TeamMember annie = new TeamMember("Annie");
+            wpfTeam.TeamMembers.Add(annie);
+
+            Task annieTask = new Task("Research for control XXXXX");
+            annie.MemberTasks.Add(annieTask);
+
+            Task unnasignedWpfTask = new Task("Help Annie");
+            wpfTeam.TeamTasks.Add(unnasignedWpfTask);
+
+            Task secondUnnasignedWpfTask = new Task("Evaluate the research of Annie");
+            wpfTeam.TeamTasks.Add(secondUnnasignedWpfTask);
+
+            TeamMember memberWithoutTasks = new TeamMember("Jack");
+            wpfTeam.TeamMembers.Add(memberWithoutTasks);
+
+            foreach (Team team in this.Teams)
+            {
+                this.radTreeView1.Nodes.Add(this.CreateNode(team.TeamName, team));
+            }
+        }
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>    Private Sub InitializeHierarchy()
+        'the Teams collection is a property of the Form
+        Me.Teams = New BindingList(Of Team)()
+
+        Dim winFormsTeam As New Team("WinForms")
+        Me.Teams.Add(winFormsTeam)
+
+        Dim john As New TeamMember("John")
+        winFormsTeam.TeamMembers.Add(john)
+        Dim johnsTask As New Task("Refactor RadTreeView")
+        john.MemberTasks.Add(johnsTask)
+
+        Dim alice As New TeamMember("Alice")
+        winFormsTeam.TeamMembers.Add(alice)
+        Dim aliceTask As New Task("Help John")
+        alice.MemberTasks.Add(aliceTask)
+
+        Dim winFormsUnassignedTask As New Task("Create an article regarding TreeView load on demand and CRUD operations")
+        winFormsTeam.TeamTasks.Add(winFormsUnassignedTask)
+
+        Dim wpfTeam As New Team("WPF")
+        Me.Teams.Add(wpfTeam)
+
+        Dim annie As New TeamMember("Annie")
+        wpfTeam.TeamMembers.Add(annie)
+
+        Dim annieTask As New Task("Research for control XXXXX")
+        annie.MemberTasks.Add(annieTask)
+
+        Dim unnasignedWpfTask As New Task("Help Annie")
+        wpfTeam.TeamTasks.Add(unnasignedWpfTask)
+
+        Dim secondUnnasignedWpfTask As New Task("Evaluate the research of Annie")
+        wpfTeam.TeamTasks.Add(secondUnnasignedWpfTask)
+
+        Dim memberWithoutTasks As New TeamMember("Jack")
+        wpfTeam.TeamMembers.Add(memberWithoutTasks)
+
+        For Each team As Team In Me.Teams
+            Me.RadTreeView1.Nodes.Add(Me.CreateNode(team.TeamName, team))
+        Next
+    End Sub
+#End Region
+
+#Region "NodesNeeded"
+    Private Sub TreeView_NodesNeeded(sender As Object, e As NodesNeededEventArgs)
+        If e.Parent Is Nothing OrElse e.Parent.Tag Is Nothing OrElse TypeOf e.Parent.Tag Is Task Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            For Each member As TeamMember In team.TeamMembers
+                e.Nodes.Add(Me.CreateNode(member.MemberName, member))
+            Next
+
+            For Each task As Task In team.TeamTasks
+                e.Nodes.Add(Me.CreateNode(task.TaskName, task))
+            Next
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            For Each task As Task In teamMember.MemberTasks
+                e.Nodes.Add(Me.CreateNode(task.TaskName, task))
+            Next
+        End If
+    End Sub
+#End Region
+
+#Region "NodeFormatting"
+    Private Sub TreeView_NodeFormatting(sender As Object, e As TreeNodeFormattingEventArgs)
+        Dim team As Team = TryCast(e.Node.Tag, Team)
+        Dim teamMember As TeamMember = TryCast(e.Node.Tag, TeamMember)
+        If (e.Node.Tag Is Nothing OrElse TypeOf e.Node.Tag Is Task) OrElse (team IsNot Nothing AndAlso team.TeamMembers.Count = 0 AndAlso team.TeamTasks.Count = 0) OrElse (teamMember IsNot Nothing AndAlso teamMember.MemberTasks.Count = 0) Then
+            e.NodeElement.ExpanderElement.Visibility = Telerik.WinControls.ElementVisibility.Hidden
+        Else
+            e.NodeElement.ExpanderElement.ResetValue(VisualElement.VisibilityProperty, ValueResetFlags.Local)
+        End If
+    End Sub
+#End Region
+
+#Region "NodeAddedAndNodeRemoving"
+    Private Sub TreeView_NodeAdded(sender As Object, e As RadTreeViewEventArgs)
+        If e.Node.Parent Is Nothing Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Node.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            Dim member As TeamMember = TryCast(e.Node.Tag, TeamMember)
+            If member IsNot Nothing Then
+                team.TeamMembers.Add(member)
+            End If
+
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                team.TeamTasks.Add(task)
+            End If
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Node.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                teamMember.MemberTasks.Add(task)
+            End If
+        End If
+    End Sub
+
+    Private Sub TreeView_NodeRemoving(sender As Object, e As RadTreeViewCancelEventArgs)
+        If e.Node.Parent Is Nothing Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Node.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            Dim member As TeamMember = TryCast(e.Node.Tag, TeamMember)
+            If member IsNot Nothing Then
+                team.TeamMembers.Remove(member)
+            End If
+
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                team.TeamTasks.Remove(task)
+            End If
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Node.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                teamMember.MemberTasks.Remove(task)
+            End If
+        End If
+    End Sub
+#End Region
+
+#Region "Models"
+    Public Class Team
+        Implements INotifyPropertyChanged
+        Private m_teamName As String
+
+        Public Property TeamName() As String
+            Get
+                Return Me.m_teamName
+            End Get
+            Set(value As String)
+                Me.m_teamName = value
+                Me.OnPropertyChanged("TeamName")
+            End Set
+        End Property
+
+        Public Property TeamMembers() As BindingList(Of TeamMember)
+            Get
+                Return m_TeamMembers
+            End Get
+            Private Set(value As BindingList(Of TeamMember))
+                m_TeamMembers = value
+            End Set
+        End Property
+        Private m_TeamMembers As BindingList(Of TeamMember)
+        Public Property TeamTasks() As BindingList(Of Task)
+            Get
+                Return m_TeamTasks
+            End Get
+            Private Set(value As BindingList(Of Task))
+                m_TeamTasks = value
+            End Set
+        End Property
+        Private m_TeamTasks As BindingList(Of Task)
+
+        Public Sub New(teamName As String)
+            Me.TeamName = teamName
+
+            Me.TeamMembers = New BindingList(Of TeamMember)()
+            Me.TeamTasks = New BindingList(Of Task)()
+
+            AddHandler Me.TeamMembers.ListChanged, AddressOf TeamMembers_ListChanged
+            AddHandler Me.TeamTasks.ListChanged, AddressOf TeamTasks_ListChanged
+        End Sub
+
+        Private Sub TeamTasks_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("TeamTasks")
+        End Sub
+
+        Private Sub TeamMembers_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("TeamName")
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+
+    Public Class TeamMember
+        Implements INotifyPropertyChanged
+        Private m_memberName As String
+
+        Public Property MemberName() As String
+            Get
+                Return Me.m_memberName
+            End Get
+            Set(value As String)
+                Me.m_memberName = value
+                Me.OnPropertyChanged("MemberName")
+            End Set
+        End Property
+        Public Property MemberTasks() As BindingList(Of Task)
+            Get
+                Return m_MemberTasks
+            End Get
+            Private Set(value As BindingList(Of Task))
+                m_MemberTasks = value
+            End Set
+        End Property
+        Private m_MemberTasks As BindingList(Of Task)
+
+        Public Sub New(memberName As String)
+            Me.MemberName = memberName
+
+            Me.MemberTasks = New BindingList(Of Task)()
+
+            AddHandler Me.MemberTasks.ListChanged, AddressOf MemberTasks_ListChanged
+        End Sub
+
+        Private Sub MemberTasks_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("MemberTasks")
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+
+    Public Class Task
+        Implements INotifyPropertyChanged
+        Private m_taskName As String
+
+        Public Property TaskName() As String
+            Get
+                Return Me.m_taskName
+            End Get
+            Set(value As String)
+                Me.m_taskName = value
+                Me.OnPropertyChanged("TaskName")
+            End Set
+        End Property
+
+        Public Sub New(taskName As String)
+            Me.TaskName = taskName
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+#End Region
+End Class
+
+
+      You see at the bottom that we are adding the __Teams__ to the __Nodes__ collection of the __RadTreeView__. They will be our base and when expanded we will load their children.
+
+      As we speak about loading children, you need to subscribe to the __NodesNeeded__ event. 
+      In the event handler we will check for the __Tag__ of the parent node and of the current node. This will allow us to get the appropriate type and load its children. For example, If the parent is a __Team__ then we need to load this __Team’s TeamMembers__ and __Tasks__:
+</code></pre>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>        private void TreeView_NodesNeeded(object sender, NodesNeededEventArgs e)
+        {
+            if (e.Parent == null || e.Parent.Tag == null || e.Parent.Tag is Task)
+            {
+                return;
+            }
+
+            Team team = e.Parent.Tag as Team;
+            if (team != null)
+            {
+                foreach (TeamMember member in team.TeamMembers)
+                {
+                    e.Nodes.Add(this.CreateNode(member.MemberName, member));
+                }
+
+                foreach (Task task in team.TeamTasks)
+                {
+                    e.Nodes.Add(this.CreateNode(task.TaskName, task));
+                }
+            }
+
+            TeamMember teamMember = e.Parent.Tag as TeamMember;
+            if (teamMember != null)
+            {
+                foreach (Task task in teamMember.MemberTasks)
+                {
+                    e.Nodes.Add(this.CreateNode(task.TaskName, task));
+                }
+            }
+        }
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>    Private Sub TreeView_NodesNeeded(sender As Object, e As NodesNeededEventArgs)
+        If e.Parent Is Nothing OrElse e.Parent.Tag Is Nothing OrElse TypeOf e.Parent.Tag Is Task Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            For Each member As TeamMember In team.TeamMembers
+                e.Nodes.Add(Me.CreateNode(member.MemberName, member))
+            Next
+
+            For Each task As Task In team.TeamTasks
+                e.Nodes.Add(Me.CreateNode(task.TaskName, task))
+            Next
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            For Each task As Task In teamMember.MemberTasks
+                e.Nodes.Add(Me.CreateNode(task.TaskName, task))
+            Next
+        End If
+    End Sub
+#End Region
+
+#Region "NodeFormatting"
+    Private Sub TreeView_NodeFormatting(sender As Object, e As TreeNodeFormattingEventArgs)
+        Dim team As Team = TryCast(e.Node.Tag, Team)
+        Dim teamMember As TeamMember = TryCast(e.Node.Tag, TeamMember)
+        If (e.Node.Tag Is Nothing OrElse TypeOf e.Node.Tag Is Task) OrElse (team IsNot Nothing AndAlso team.TeamMembers.Count = 0 AndAlso team.TeamTasks.Count = 0) OrElse (teamMember IsNot Nothing AndAlso teamMember.MemberTasks.Count = 0) Then
+            e.NodeElement.ExpanderElement.Visibility = Telerik.WinControls.ElementVisibility.Hidden
+        Else
+            e.NodeElement.ExpanderElement.ResetValue(VisualElement.VisibilityProperty, ValueResetFlags.Local)
+        End If
+    End Sub
+#End Region
+
+#Region "NodeAddedAndNodeRemoving"
+    Private Sub TreeView_NodeAdded(sender As Object, e As RadTreeViewEventArgs)
+        If e.Node.Parent Is Nothing Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Node.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            Dim member As TeamMember = TryCast(e.Node.Tag, TeamMember)
+            If member IsNot Nothing Then
+                team.TeamMembers.Add(member)
+            End If
+
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                team.TeamTasks.Add(task)
+            End If
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Node.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                teamMember.MemberTasks.Add(task)
+            End If
+        End If
+    End Sub
+
+    Private Sub TreeView_NodeRemoving(sender As Object, e As RadTreeViewCancelEventArgs)
+        If e.Node.Parent Is Nothing Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Node.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            Dim member As TeamMember = TryCast(e.Node.Tag, TeamMember)
+            If member IsNot Nothing Then
+                team.TeamMembers.Remove(member)
+            End If
+
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                team.TeamTasks.Remove(task)
+            End If
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Node.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                teamMember.MemberTasks.Remove(task)
+            End If
+        End If
+    End Sub
+#End Region
+
+#Region "Models"
+    Public Class Team
+        Implements INotifyPropertyChanged
+        Private m_teamName As String
+
+        Public Property TeamName() As String
+            Get
+                Return Me.m_teamName
+            End Get
+            Set(value As String)
+                Me.m_teamName = value
+                Me.OnPropertyChanged("TeamName")
+            End Set
+        End Property
+
+        Public Property TeamMembers() As BindingList(Of TeamMember)
+            Get
+                Return m_TeamMembers
+            End Get
+            Private Set(value As BindingList(Of TeamMember))
+                m_TeamMembers = value
+            End Set
+        End Property
+        Private m_TeamMembers As BindingList(Of TeamMember)
+        Public Property TeamTasks() As BindingList(Of Task)
+            Get
+                Return m_TeamTasks
+            End Get
+            Private Set(value As BindingList(Of Task))
+                m_TeamTasks = value
+            End Set
+        End Property
+        Private m_TeamTasks As BindingList(Of Task)
+
+        Public Sub New(teamName As String)
+            Me.TeamName = teamName
+
+            Me.TeamMembers = New BindingList(Of TeamMember)()
+            Me.TeamTasks = New BindingList(Of Task)()
+
+            AddHandler Me.TeamMembers.ListChanged, AddressOf TeamMembers_ListChanged
+            AddHandler Me.TeamTasks.ListChanged, AddressOf TeamTasks_ListChanged
+        End Sub
+
+        Private Sub TeamTasks_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("TeamTasks")
+        End Sub
+
+        Private Sub TeamMembers_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("TeamName")
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+
+    Public Class TeamMember
+        Implements INotifyPropertyChanged
+        Private m_memberName As String
+
+        Public Property MemberName() As String
+            Get
+                Return Me.m_memberName
+            End Get
+            Set(value As String)
+                Me.m_memberName = value
+                Me.OnPropertyChanged("MemberName")
+            End Set
+        End Property
+        Public Property MemberTasks() As BindingList(Of Task)
+            Get
+                Return m_MemberTasks
+            End Get
+            Private Set(value As BindingList(Of Task))
+                m_MemberTasks = value
+            End Set
+        End Property
+        Private m_MemberTasks As BindingList(Of Task)
+
+        Public Sub New(memberName As String)
+            Me.MemberName = memberName
+
+            Me.MemberTasks = New BindingList(Of Task)()
+
+            AddHandler Me.MemberTasks.ListChanged, AddressOf MemberTasks_ListChanged
+        End Sub
+
+        Private Sub MemberTasks_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("MemberTasks")
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+
+    Public Class Task
+        Implements INotifyPropertyChanged
+        Private m_taskName As String
+
+        Public Property TaskName() As String
+            Get
+                Return Me.m_taskName
+            End Get
+            Set(value As String)
+                Me.m_taskName = value
+                Me.OnPropertyChanged("TaskName")
+            End Set
+        End Property
+
+        Public Sub New(taskName As String)
+            Me.TaskName = taskName
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+#End Region
+End Class
+</code></pre>
+
+<p><img src="images/treeview-data-binding-load-on-demand-with-crud-operations002.png" alt="treeview-data-binding-load-on-demand-with-crud-operations 002"><br>
+          If you run the application now, you will notice that the nodes are loading their children, however there is something which we do not really like. <br>
+          We know that the <strong>Tasks</strong> do not have any children, yet, they have expanders in front of them. We can easily correct that by using the <strong>NodeFormatting</strong> event. <br>
+          In the event handler we simply check if the node’s <strong>Tag</strong> is a <strong>Task</strong> and if it is <strong>TeamMember</strong>, <br>
+          whether it has any <strong>Tasks</strong>, and if it is a <strong>Team</strong>, whether it has any <br>
+          <strong>TeamMembers</strong> or <strong>Tasks</strong> and hide the expander appropriately.</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>        private void TreeView_NodeFormatting(object sender, TreeNodeFormattingEventArgs e)
+        {
+            Team team = e.Node.Tag as Team;
+            TeamMember teamMember = e.Node.Tag as TeamMember;
+            if ((e.Node.Tag == null || e.Node.Tag is Task) ||
+                (team != null &amp;&amp; team.TeamMembers.Count == 0 &amp;&amp; team.TeamTasks.Count == 0) ||
+                (teamMember != null &amp;&amp; teamMember.MemberTasks.Count == 0))
+            {
+                e.NodeElement.ExpanderElement.Visibility = Telerik.WinControls.ElementVisibility.Hidden;
+            }
+            else
+            {
+                e.NodeElement.ExpanderElement.ResetValue(VisualElement.VisibilityProperty, ValueResetFlags.Local);
+            }
+        }
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>    Private Sub TreeView_NodeFormatting(sender As Object, e As TreeNodeFormattingEventArgs)
+        Dim team As Team = TryCast(e.Node.Tag, Team)
+        Dim teamMember As TeamMember = TryCast(e.Node.Tag, TeamMember)
+        If (e.Node.Tag Is Nothing OrElse TypeOf e.Node.Tag Is Task) OrElse (team IsNot Nothing AndAlso team.TeamMembers.Count = 0 AndAlso team.TeamTasks.Count = 0) OrElse (teamMember IsNot Nothing AndAlso teamMember.MemberTasks.Count = 0) Then
+            e.NodeElement.ExpanderElement.Visibility = Telerik.WinControls.ElementVisibility.Hidden
+        Else
+            e.NodeElement.ExpanderElement.ResetValue(VisualElement.VisibilityProperty, ValueResetFlags.Local)
+        End If
+    End Sub
+#End Region
+
+#Region "NodeAddedAndNodeRemoving"
+    Private Sub TreeView_NodeAdded(sender As Object, e As RadTreeViewEventArgs)
+        If e.Node.Parent Is Nothing Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Node.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            Dim member As TeamMember = TryCast(e.Node.Tag, TeamMember)
+            If member IsNot Nothing Then
+                team.TeamMembers.Add(member)
+            End If
+
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                team.TeamTasks.Add(task)
+            End If
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Node.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                teamMember.MemberTasks.Add(task)
+            End If
+        End If
+    End Sub
+
+    Private Sub TreeView_NodeRemoving(sender As Object, e As RadTreeViewCancelEventArgs)
+        If e.Node.Parent Is Nothing Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Node.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            Dim member As TeamMember = TryCast(e.Node.Tag, TeamMember)
+            If member IsNot Nothing Then
+                team.TeamMembers.Remove(member)
+            End If
+
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                team.TeamTasks.Remove(task)
+            End If
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Node.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                teamMember.MemberTasks.Remove(task)
+            End If
+        End If
+    End Sub
+#End Region
+
+#Region "Models"
+    Public Class Team
+        Implements INotifyPropertyChanged
+        Private m_teamName As String
+
+        Public Property TeamName() As String
+            Get
+                Return Me.m_teamName
+            End Get
+            Set(value As String)
+                Me.m_teamName = value
+                Me.OnPropertyChanged("TeamName")
+            End Set
+        End Property
+
+        Public Property TeamMembers() As BindingList(Of TeamMember)
+            Get
+                Return m_TeamMembers
+            End Get
+            Private Set(value As BindingList(Of TeamMember))
+                m_TeamMembers = value
+            End Set
+        End Property
+        Private m_TeamMembers As BindingList(Of TeamMember)
+        Public Property TeamTasks() As BindingList(Of Task)
+            Get
+                Return m_TeamTasks
+            End Get
+            Private Set(value As BindingList(Of Task))
+                m_TeamTasks = value
+            End Set
+        End Property
+        Private m_TeamTasks As BindingList(Of Task)
+
+        Public Sub New(teamName As String)
+            Me.TeamName = teamName
+
+            Me.TeamMembers = New BindingList(Of TeamMember)()
+            Me.TeamTasks = New BindingList(Of Task)()
+
+            AddHandler Me.TeamMembers.ListChanged, AddressOf TeamMembers_ListChanged
+            AddHandler Me.TeamTasks.ListChanged, AddressOf TeamTasks_ListChanged
+        End Sub
+
+        Private Sub TeamTasks_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("TeamTasks")
+        End Sub
+
+        Private Sub TeamMembers_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("TeamName")
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+
+    Public Class TeamMember
+        Implements INotifyPropertyChanged
+        Private m_memberName As String
+
+        Public Property MemberName() As String
+            Get
+                Return Me.m_memberName
+            End Get
+            Set(value As String)
+                Me.m_memberName = value
+                Me.OnPropertyChanged("MemberName")
+            End Set
+        End Property
+        Public Property MemberTasks() As BindingList(Of Task)
+            Get
+                Return m_MemberTasks
+            End Get
+            Private Set(value As BindingList(Of Task))
+                m_MemberTasks = value
+            End Set
+        End Property
+        Private m_MemberTasks As BindingList(Of Task)
+
+        Public Sub New(memberName As String)
+            Me.MemberName = memberName
+
+            Me.MemberTasks = New BindingList(Of Task)()
+
+            AddHandler Me.MemberTasks.ListChanged, AddressOf MemberTasks_ListChanged
+        End Sub
+
+        Private Sub MemberTasks_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("MemberTasks")
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+
+    Public Class Task
+        Implements INotifyPropertyChanged
+        Private m_taskName As String
+
+        Public Property TaskName() As String
+            Get
+                Return Me.m_taskName
+            End Get
+            Set(value As String)
+                Me.m_taskName = value
+                Me.OnPropertyChanged("TaskName")
+            End Set
+        End Property
+
+        Public Sub New(taskName As String)
+            Me.TaskName = taskName
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+#End Region
+End Class
+
+
+      Now, our hierarchy is properly visualized, all we have left to do is to implement the CRUD 
+      operations which will keep the __RadTreeView__ and the __BindingList__ synchronized. 
+      To handle the case where a node is removed/added from/to __RadTreeView__ you will need to 
+      subscribe to the __NodeRemoving__ and __NodeAdded__ event handlers, respectively. 
+      What will happen in these event handlers is very similar to what is happening in 
+      the __NodesNeeded__ event handler from before, where we check the parent and modify its children:
+</code></pre>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>        private void TreeView_NodeAdded(object sender, RadTreeViewEventArgs e)
+        {
+            if (e.Node.Parent == null)
+            {
+                return;
+            }
+
+            Team team = e.Node.Parent.Tag as Team;
+            if (team != null)
+            {
+                TeamMember member = e.Node.Tag as TeamMember;
+                if (member != null)
+                {
+                    team.TeamMembers.Add(member);
+                }
+
+                Task task = e.Node.Tag as Task;
+                if (task != null)
+                {
+                    team.TeamTasks.Add(task);
+                }
+            }
+
+            TeamMember teamMember = e.Node.Parent.Tag as TeamMember;
+            if (teamMember != null)
+            {
+                Task task = e.Node.Tag as Task;
+                if (task != null)
+                {
+                    teamMember.MemberTasks.Add(task);
+                }
+            }
+        }
+
+        private void TreeView_NodeRemoving(object sender, RadTreeViewCancelEventArgs e)
+        {
+            if (e.Node.Parent == null)
+            {
+                return;
+            }
+
+            Team team = e.Node.Parent.Tag as Team;
+            if (team != null)
+            {
+                TeamMember member = e.Node.Tag as TeamMember;
+                if (member != null)
+                {
+                    team.TeamMembers.Remove(member);
+                }
+
+                Task task = e.Node.Tag as Task;
+                if (task != null)
+                {
+                    team.TeamTasks.Remove(task);
+                }
+            }
+
+            TeamMember teamMember = e.Node.Parent.Tag as TeamMember;
+            if (teamMember != null)
+            {
+                Task task = e.Node.Tag as Task;
+                if (task != null)
+                {
+                    teamMember.MemberTasks.Remove(task);
+                }
+            }
+        }
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>    Private Sub TreeView_NodeAdded(sender As Object, e As RadTreeViewEventArgs)
+        If e.Node.Parent Is Nothing Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Node.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            Dim member As TeamMember = TryCast(e.Node.Tag, TeamMember)
+            If member IsNot Nothing Then
+                team.TeamMembers.Add(member)
+            End If
+
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                team.TeamTasks.Add(task)
+            End If
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Node.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                teamMember.MemberTasks.Add(task)
+            End If
+        End If
+    End Sub
+
+    Private Sub TreeView_NodeRemoving(sender As Object, e As RadTreeViewCancelEventArgs)
+        If e.Node.Parent Is Nothing Then
+            Return
+        End If
+
+        Dim team As Team = TryCast(e.Node.Parent.Tag, Team)
+        If team IsNot Nothing Then
+            Dim member As TeamMember = TryCast(e.Node.Tag, TeamMember)
+            If member IsNot Nothing Then
+                team.TeamMembers.Remove(member)
+            End If
+
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                team.TeamTasks.Remove(task)
+            End If
+        End If
+
+        Dim teamMember As TeamMember = TryCast(e.Node.Parent.Tag, TeamMember)
+        If teamMember IsNot Nothing Then
+            Dim task As Task = TryCast(e.Node.Tag, Task)
+            If task IsNot Nothing Then
+                teamMember.MemberTasks.Remove(task)
+            End If
+        End If
+    End Sub
+#End Region
+
+#Region "Models"
+    Public Class Team
+        Implements INotifyPropertyChanged
+        Private m_teamName As String
+
+        Public Property TeamName() As String
+            Get
+                Return Me.m_teamName
+            End Get
+            Set(value As String)
+                Me.m_teamName = value
+                Me.OnPropertyChanged("TeamName")
+            End Set
+        End Property
+
+        Public Property TeamMembers() As BindingList(Of TeamMember)
+            Get
+                Return m_TeamMembers
+            End Get
+            Private Set(value As BindingList(Of TeamMember))
+                m_TeamMembers = value
+            End Set
+        End Property
+        Private m_TeamMembers As BindingList(Of TeamMember)
+        Public Property TeamTasks() As BindingList(Of Task)
+            Get
+                Return m_TeamTasks
+            End Get
+            Private Set(value As BindingList(Of Task))
+                m_TeamTasks = value
+            End Set
+        End Property
+        Private m_TeamTasks As BindingList(Of Task)
+
+        Public Sub New(teamName As String)
+            Me.TeamName = teamName
+
+            Me.TeamMembers = New BindingList(Of TeamMember)()
+            Me.TeamTasks = New BindingList(Of Task)()
+
+            AddHandler Me.TeamMembers.ListChanged, AddressOf TeamMembers_ListChanged
+            AddHandler Me.TeamTasks.ListChanged, AddressOf TeamTasks_ListChanged
+        End Sub
+
+        Private Sub TeamTasks_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("TeamTasks")
+        End Sub
+
+        Private Sub TeamMembers_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("TeamName")
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+
+    Public Class TeamMember
+        Implements INotifyPropertyChanged
+        Private m_memberName As String
+
+        Public Property MemberName() As String
+            Get
+                Return Me.m_memberName
+            End Get
+            Set(value As String)
+                Me.m_memberName = value
+                Me.OnPropertyChanged("MemberName")
+            End Set
+        End Property
+        Public Property MemberTasks() As BindingList(Of Task)
+            Get
+                Return m_MemberTasks
+            End Get
+            Private Set(value As BindingList(Of Task))
+                m_MemberTasks = value
+            End Set
+        End Property
+        Private m_MemberTasks As BindingList(Of Task)
+
+        Public Sub New(memberName As String)
+            Me.MemberName = memberName
+
+            Me.MemberTasks = New BindingList(Of Task)()
+
+            AddHandler Me.MemberTasks.ListChanged, AddressOf MemberTasks_ListChanged
+        End Sub
+
+        Private Sub MemberTasks_ListChanged(sender As Object, e As ListChangedEventArgs)
+            Me.OnPropertyChanged("MemberTasks")
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+
+    Public Class Task
+        Implements INotifyPropertyChanged
+        Private m_taskName As String
+
+        Public Property TaskName() As String
+            Get
+                Return Me.m_taskName
+            End Get
+            Set(value As String)
+                Me.m_taskName = value
+                Me.OnPropertyChanged("TaskName")
+            End Set
+        End Property
+
+        Public Sub New(taskName As String)
+            Me.TaskName = taskName
+        End Sub
+
+        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+        Protected Overridable Sub OnPropertyChanged(propName As String)
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
+        End Sub
+    End Class
+#End Region
+End Class
+
+
+      And to handle the case where something is modified in the data source, we will need to subscribe to the 
+      __ListChanged__ event of the __BindingList__ and rebuild the __RadTreeView__ by clearing the nodes and re-adding the
+      first level nodes.  You can optionally save the expanded node’s state as per 
+      [this article](http://www.telerik.com/help/winforms/treeview-how-to-keep-radtreeview-states-on-reset.html) .
+      This solution is implemented in the attached projects.
+</code></pre>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

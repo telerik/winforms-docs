@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Checkboxes and editors</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Checkboxes and editors">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("listview/checkboxes-and-editors.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/listview/checkboxes-and-editors.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="checkboxes-and-editors"><a href="#checkboxes-and-editors">Checkboxes and editors</a></h1>
+
+<h2 id="checkboxes"><a href="#checkboxes">Checkboxes</a></h2>
+
+<p>RadListViews' items have built-in checkboxes which can be shown by setting the<br>
+          <strong>ShowCheckBoxes</strong> property of RadListView to <em>true</em>.</p>
+
+<p>When checkboxes are enabled, you have several options to handle the checked items:</p>
+
+<ul>
+<li><p>You can check or uncheck items via the checkbox that is shown in each item</p></li>
+<li><p>You can get or set the checked state of the <strong>ListViewDataItem</strong> directly via<br>
+          its <strong>CheckedState</strong> property</p></li>
+<li><p>You can get the checked items in RadListView via its <strong>CheckedItems</strong> collection</p></li>
+<li><p>You can listen for changes in the check state of the items via the <strong>ItemCheckedChanging</strong><br>
+          and <strong>ItemCheckedChanged</strong> events.</p></li>
+</ul>
+
+<h2 id="editors"><a href="#editors">Editors</a></h2>
+
+<p>By default RadListView allows editing of items. If the <strong>AllowEditing</strong> property is<br>
+          set to <em>true</em>, the user may select a item and press <strong>F2 key</strong><br>
+          to initiate editing. By default a text editor is invoked and allows the editing of the items' label.<br>
+          When the edit process ends the entered value is assigned to the items' <strong>Value</strong> property.<br>
+          If the user cancels editing by pressing <strong>Escape key</strong> the value is not persisted.<br>
+          Editing can also be initiated and canceled programmatically.</p>
+
+<ul>
+<li><p>Use the <strong>BeginEdit()</strong> method to initiate editing on the selected item</p></li>
+<li><p>Use the <strong>EndEdit()</strong> method to end editing and save the edited value.</p></li>
+<li><p>Use the <strong>CancelEdit()</strong> method to end editing and discard the edited value.</p></li>
+</ul>
+
+<p>The sample code below shows how to start editing using the API:</p>
+
+<h4><strong>[C#] Start editing</strong></h4>
+
+<pre><code>            radListView1.AllowEdit = true;
+            // set the SelectedItem - this item will be edited  
+            // in DetailsView you might also want to set the CurrentColumn property – the value of the selected item in this column will be edited in DetailsView
+            radListView1.SelectedItem = radListView1.Items[0];
+            radListView1.CurrentColumn = radListView1.Columns[0];
+            // this will start edit on selected item
+            radListView1.BeginEdit();
+</code></pre>
+
+<h4><strong>[VB.NET] Start editing</strong></h4>
+
+<pre><code>        RadListView1.AllowEdit = True
+        ' set the SelectedItem - this node will be edited  
+        ' in DetailsView you might also want to set the CurrentColumn property – the value of the selected item in this column will be edited in DetailsView
+        RadListView1.SelectedItem = RadListView1.Items(0)
+        RadListView1.CurrentColumn = RadListView1.Columns(0)
+        ' this will start edit on selected item
+        RadListView1.BeginEdit()
+</code></pre>
+
+<h2 id="editing-lifecycle"><a href="#editing-lifecycle">Editing lifecycle</a></h2>
+
+<p>When an item is displayed in RadListView and the user presses <strong>F2 key</strong> to enter edit mode,<br>
+          the following steps are performed:</p>
+
+<ul>
+<li><p>The <strong>BeginEdit()</strong> method is called internally</p></li>
+<li><p>The <strong>ItemEditing</strong> event is fired. This event is cancelable and<br>
+          you can prevent the edit operation from continuing by setting the Cancel property from the arguments to<br>
+          <em>false</em>.</p></li>
+<li><p>.A text box editor appears in the selected item.</p></li>
+</ul>
+
+<p>When an item is brought out of edit mode, the following steps are performed:</p>
+
+<ul>
+<li><p>The editor determines if it wants to handle the keystroke - for example Esc - cancels editing, Enter ends editing and submits changes.</p></li>
+<li><p>The editor instance performs the action it has defined for the <strong>Enter</strong> key.<br>
+          Typically this indicates that edit mode should be exited and any changes made during the edit session<br>
+          should be saved.</p></li>
+<li><p>In response to the action described in the previous step the <strong>EndEdit()</strong> method is<br>
+          called internally and the <strong>ItemValidating</strong> event is fired.</p></li>
+<li><p>The <strong>ValueValidating</strong> event allows the user to hook up custom logic for verification.<br>
+          If the <strong>ValueValidating</strong> event does not succeed (<em>e.Cancel is true</em>),<br>
+          <strong>ValidationError</strong> event is fired to notify all listeners that the validation<br>
+          has failed.</p></li>
+<li><p>Follows the <strong>ItemValueChanging</strong> event via which you can cancel<br>
+          assigning a new value to the item.</p></li>
+<li><p>If the previous event was not canceled, the new value is assigned to the item<br>
+          and the <strong>ItemValueChanged</strong> event is fired.</p></li>
+</ul>
+
+<p>The Following example demonstrates the usage of <strong>ItemValidating</strong> event to edit integer values:</p>
+
+<h4><strong>[C#] Validation</strong></h4>
+
+<pre><code>        void radListView1_ItemValidating(object sender, ListViewItemValidatingEventArgs e)
+        {
+            int newInt = 0;
+            if (int.TryParse(Convert.ToString(e.NewValue), out newInt))
+            {
+                e.NewValue = newInt;
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
+
+        void radListView1_ValidationError(object sender, EventArgs e)
+        {
+            MessageBox.Show("Invalid Value");
+        }
+</code></pre>
+
+<h4><strong>[VB.NET] Validation</strong></h4>
+
+<pre><code>    Private Sub radListView1_ItemValidating(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ListViewItemValidatingEventArgs) Handles RadListView1.ItemValidating
+        Dim newInt As Integer = 0
+        If Integer.TryParse(Convert.ToString(e.NewValue), newInt) Then
+            e.NewValue = newInt
+        Else
+            e.Cancel = True
+        End If
+    End Sub
+
+    Private Sub radListView1_ValidationError(ByVal sender As Object, ByVal e As EventArgs) Handles RadListView1.ValidationError
+        MessageBox.Show("Invalid Value")
+    End Sub
+</code></pre>
+
+<h2 id="switching-editors"><a href="#switching-editors">Switching Editors</a></h2>
+
+<p>When edit operation is about to begin, the <strong>EditorRequired</strong> event is fired.<br>
+          By using this event, you can replace the default text box editor with one of the four built-in editors<br>
+          that RadListView provides: <strong>ListViewTextBoxEditor</strong>;<br>
+          <strong>ListViewDropDownListEditor</strong>; <strong>ListViewSpinEditor</strong>;<br>
+          <strong>ListViewDateTimeEditor</strong>. You can also provide a custom instance as an editor.</p>
+
+<p>The following example shows how you can use the predefined editors:</p>
+
+<h4><strong>[C#] Start editing</strong></h4>
+
+<pre><code>        void radListView1_EditorRequired(object sender, Telerik.WinControls.UI.ListViewItemEditorRequiredEventArgs e)
+        {
+            if (e.ListViewElement.CurrentColumn.FieldName == "CustomerName")
+            {
+                e.EditorType = typeof(ListViewTextBoxEditor);
+            }
+            else if (e.ListViewElement.CurrentColumn.FieldName == "ProductName")
+            {
+                ListViewDropDownListEditor editor = new ListViewDropDownListEditor();
+                (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product1");
+                (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product2");
+                (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product3");
+
+                e.Editor = editor;
+            }
+            else if (e.ListViewElement.CurrentColumn.FieldName == "Quantity")
+            {
+                e.EditorType = typeof(ListViewSpinEditor);
+            }
+            else if (e.ListViewElement.CurrentColumn.FieldName == "OrderDate")
+            {
+                e.EditorType = typeof(ListViewDateTimeEditor);
+            }
+        }
+</code></pre>
+
+<h4><strong>[VB.NET] Start editing</strong></h4>
+
+<pre><code>    Private Sub radListView1_EditorRequired(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ListViewItemEditorRequiredEventArgs)
+        If e.ListViewElement.CurrentColumn.FieldName = "CustomerName" Then
+            e.EditorType = GetType(ListViewTextBoxEditor)
+        ElseIf e.ListViewElement.CurrentColumn.FieldName = "ProductName" Then
+            Dim editor As New ListViewDropDownListEditor()
+            TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Product1")
+            TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Product2")
+            TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Product3")
+
+            e.Editor = editor
+        ElseIf e.ListViewElement.CurrentColumn.FieldName = "Quantity" Then
+            e.EditorType = GetType(ListViewSpinEditor)
+        ElseIf e.ListViewElement.CurrentColumn.FieldName = "OrderDate" Then
+            e.EditorType = GetType(ListViewDateTimeEditor)
+        End If
+    End Sub
+</code></pre>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

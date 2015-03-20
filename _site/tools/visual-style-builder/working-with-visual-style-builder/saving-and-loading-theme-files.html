@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Saving and Loading Theme Files</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Saving and Loading Theme Files">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="saving-and-loading-theme-files"><a href="#saving-and-loading-theme-files">Saving and Loading Theme Files</a></h1>
+
+<h2 id="overview"><a href="#overview">Overview</a></h2>
+
+<p>The styles for each separate control are situated in a single XML<br>
+          file, accompanied by the name of the theme to which these styles belong and some further information<br>
+          needed by the mechanism to map the styles to the corresponding control. The following code snippet<br>
+          briefly demonstrates the common structure of a XML theme file:</p>
+
+<h4>__[XML] __</h4>
+
+<p>In general, the XML theme file contains Property Setting Groups that represent the style settings, StyleSheet Relations that map the styles to an element/control, and a Theme Name attribute.<br>
+          One of the new concepts that are introduced is the Theme Repository. The idea behind it is to store common style property settings that can be easily reused throughout the whole theme. Modifying a single repository item will change the appearance of all elements/controls that use this repository item. In this way a theme can be created and modified in minutes. The repository can be reused throughout different themes. However, there can be only one repository associated with a specific theme. The association of a repository with a theme is made by giving assigning the same name to the repository and the theme.<br>
+          Each theme can have a repository containing items that can be reused throughout the theme. A theme and a repository are connected by using the same name both for the theme and for the repository. The repository is situated in a separate XML file that generally has the following structure:</p>
+
+<h4>__[XML] __</h4>
+
+<p>As you can see, the repository contains a collection of Repository Items which contain property settings. Each repository item is uniquely identified by a key and additionally described by a name which is displayed to the user. The key is important when reusing the same repository item for different elements/controls throughout the Visual Style Builder.<br>
+          The Theme Name here is ‘MyTheme’ which means that this repository is associated with all XML theme files that have the same ThemeName attribute value.</p>
+
+<h2 id="loading-themes"><a href="#loading-themes">Loading Themes</a></h2>
+
+<p>In the new version of the WinForms Visual Style Builder you can create or modify one theme at a time,<br>
+          but for all Rad Controls simultaneously. You can load a theme by choosing one of the two menu options<br>
+          available:<br>
+        <img src="images/tools-visual-style-builder-working-with-visual-style-builder-saving-and-loading-theme-files001.png" alt="tools-visual-style-builder-working-with-visual-style-builder-saving-and-loading-theme-files 001"></p>
+
+<p>The ‘Open’ option allows you to choose which theme files to load, whereas the ‘Open Directory’ option<br>
+          allows you to select a directory and load all theme files that are situated in the chosen directory.<br>
+          As already mentioned, the Visual Style Builder can load only one theme at a time. The difference<br>
+          between themes is made by the Theme Name. For example, if you have the following files:</p>
+
+<ul>
+<li><p>MyTheme_Telerik_WinControls_UI_RadButton.xml</p></li>
+<li><p>MyTheme_Telerik_WinControls_UI_RadMenu.xml</p></li>
+<li><p>AnotherTheme_Teleri_WinControls_UI_RadDropDownButton.xml</p></li>
+</ul>
+
+<p>and assume that the both</p>
+
+<ul>
+<li><p>MyTheme_Telerik_WinControls_UI_RadButton.xml</p></li>
+<li><p>MyTheme_Telerik_WinControls_UI_RadMenu.xml</p></li>
+</ul>
+
+<p>have their ThemeName attribute set to ‘MyTheme’, whereas the<br>
+          <em>AnotherTheme_Telerik_WinControls_UI_RadDropDownButton.xml</em> file defines the<br>
+          ThemeName as ‘AnotherTheme’, upon loading of all three files, the Visual Style Builder will display a<br>
+          dialog informing you that multiple themes are selected. In this dialog you can choose which of these<br>
+          themes should be actually loaded in the application:<br>
+        <img src="images/tools-visual-style-builder-working-with-visual-style-builder-saving-and-loading-theme-files002.png" alt="tools-visual-style-builder-working-with-visual-style-builder-saving-and-loading-theme-files 002"></p>
+
+<p>The upper part of the dialog contains a Grid View that displays a row for each unique theme found in the files loaded.<br>
+          The row contains information about the number of files (Registered Stylesheets) for each theme, and the name of the theme.<br>
+          The lower part of the dialog contains a Grid View which is populated with repositories found in the loaded files<br>
+          that do not match a theme from list above, i.e. have different names. If you select a repository from this list, it<br>
+          will be merged with the repository of the selected theme, whereby any key uniqueness conflicts within the source and destination<br>
+          repositories must be resolved.</p>
+
+<ul>
+<li><p>If the theme being loaded has no repository, i.e. there is no XML file with the repository structure described above, an empty repository will be created when modifying the theme. If no repository items are added in this repository in the process of modifying the theme, no separate repository file will be saved at the end.</p></li>
+<li><p>If the theme being loaded has no repository but there are other repositories (with different names) found in the list of the loaded files, selecting this repositories by using the dialog above will merge them into one repository upon saving the theme.</p></li>
+</ul>
+
+<p>After selecting a theme and pressing the Ok button,  the theme repositories found will be merged if needed and if there is already a loaded theme in the Visual Style Builder, the user will be prompted to safe their changes. After that, the old theme will be unloaded and the new theme will be loaded and applied to the controls accordingly. If the user clicks ‘Cancel’ on the save prompt, no action will be taken.</p>
+
+<h2 id="saving-themes"><a href="#saving-themes">Saving Themes</a></h2>
+
+<p>When you choose the Save option, the Visual Style Builder automatically detects whether a theme has been opened and edited. If yes, it simply overwrites the already loaded files with the new XML data. However, if you created a new theme without loading files, the Visual Style Builder will display the Save As dialog and will ask you to choose location and theme name for the newly created theme and its repository:<br>
+        <img src="images/tools-visual-style-builder-working-with-visual-style-builder-saving-and-loading-theme-files003.png" alt="tools-visual-style-builder-working-with-visual-style-builder-saving-and-loading-theme-files 003"></p>
+
+<p><strong>Save as xml files</strong></p>
+
+<p>The Save Theme dialog shows the current theme name, the destination folder where the theme will be saved, a list containing all repository items in the repository of the theme, and a list of all files that will be saved upon clicking the OK button. This list usually contains files that have been previously loaded and files that will be newly created based on the current changes made for the controls in the Visual Style Builder.</p>
+
+<p>You can change the theme name by typing in the topmost text box. When you change the name of the theme, all file names will be updated on the fly to reflect the new theme name. In general, the name of a theme file is automatically generated by using the following pattern:</p>
+
+<p><em><themename>_<controltype>.xml</controltype></themename></em></p>
+
+<p>The repository items list shows all repository items found in the repository. The repository items that are used somewhere in the currently files which are to be saved are additionally bolded. You can choose to save all repository items, only the used ones or none of them.  If you choose the last option, no repository file will be saved. In this case, when you later load the same theme, you will not be able to load the repository and thus lose any styles that come from repository items.</p>
+
+<p>In the theme files list you can choose which files to save by checking/unchecking the corresponding row. Each time you check/uncheck a file entry, the repository items list will be updated to reflect the currently used repository items.</p>
+
+<p>When you click on the OK button all selected files will be saved. The repository will be saved in a separate file that has the following name pattern:</p>
+
+<p><em><themename>_Repository.xml</themename></em></p>
+
+<blockquote>
+<p>If you chose <em>not</em> to save certain files, you should keep in mind that the Visual Style Builder does not currently keep track of changes in separate theme files and therefore if you close the Visual Style Builder after saving, any unchecked files will not be saved.</p>
+</blockquote>
+
+<p><strong>Save as a theme package</strong></p>
+
+<p>Below the grid that displays the XML files you can see a checkbox called ‘Save As Package’. This option allows you to save the theme as a zipped package encapsulating all XML files checked for saving. If you choose to save the theme as a package, a single file with a ‘.tssp’ extension will be generated and stored at the desired location. If you uncheck this option, a list of XML files will be generated. A theme package can be later loaded and used in your application by utilizing the API of the ThemeResolutionService.</p>
+
+<h2 id="loading-theme-package"><a href="#loading-theme-package">Loading theme package</a></h2>
+
+<p>ThemeResolutionService exposes two methods that allow you to load a theme package:</p>
+
+<ul>
+<li>LoadPackageResource. This method loads a theme package file that is contained in the project as an <a href="http://msdn.microsoft.com/en-us/library/0c6xyb66(VS.80).aspx">EmbeddedResource</a>. This is the preferable method for loading a theme package since the resource path to the package is not changed when the application is deployed. The path construction is <em>DefaultProjectNamespace.ThemeFolder.ThemePackageFile</em>. The <em>ThemeFolder</em> part should only be used if the package is contained in a folder under the main project directory and if the project programming language is C#. In VB.NET project you do not need to include <em>ThemeFolder</em> part even if the package file is contained in a folder.</li>
+</ul>
+
+<h4><strong>[C#] Loading package resource</strong></h4>
+
+<pre><code>            ThemeResolutionService.LoadPackageResource("SamplesCS.CustomTheme.tssp");
+</code></pre>
+
+<h4><strong>[VB.NET] Loading package resource</strong></h4>
+
+<pre><code>        ThemeResolutionService.LoadPackageResource("SamplesVB.CustomTheme.tssp")
+</code></pre>
+
+<ul>
+<li>LoadPackageFile. This method loads a file from a specified directory on the system. Depending on how the directory is defined (full or relative), the path to the package may change when the application is deployed on another machine.</li>
+</ul>
+
+<h4><strong>[C#] Loading package file</strong></h4>
+
+<pre><code>            ThemeResolutionService.LoadPackageFile(@"C:\CustomTheme.tssp");
+</code></pre>
+
+<h4><strong>[VB.NET] Loading package file</strong></h4>
+
+<pre><code>        ThemeResolutionService.LoadPackageFile("C:\CustomTheme.tssp")
+</code></pre>
+
+<h2 id="merging-repositories"><a href="#merging-repositories">Merging Repositories</a></h2>
+
+<p>When you load a theme with a repository in the Visual Style Builder, you are able to merge its repository with another one by loading the XML file representing the new repository. The merging process is performed in the following steps:</p>
+
+<ul>
+<li><p>Merge all repository items that do not have conflicting keys</p></li>
+<li><p>Identify the conflicting repository items</p></li>
+<li><p>Resolve the conflicts and commit the merge transaction</p></li>
+</ul>
+
+<p>If repository item key conflicts are discovered, the following dialog is displayed to the user:<br>
+        <img src="images/tools-visual-style-builder-working-with-visual-style-builder-saving-and-loading-theme-files004.png" alt="tools-visual-style-builder-working-with-visual-style-builder-saving-and-loading-theme-files 004"></p>
+
+<p>In the Grid View you can see the conflicting repository items both in the source and destination repositories. The left side of the Grid View (highlighted in yellow) shows the already existing repository items. The right side – highlighted with green – shows the repository items in the currently loaded repository. The conflicting keys are presented in red. By modifying the value of a conflicting key in the Grid View, you can resolve a conflict. The new key value will be assigned to the currently loaded item and it will be successfully added in the existing repository.</p>
+
+<p>There are also a few options how repositories are merged. These options are available to you as radio buttons above the Grid View on the dialog. The options are as follows:</p>
+
+<ul>
+<li><p>Do not add conflicting items in destination repository</p></li>
+<li><p>Override destination repository items (conflicts in the source repository must be resolved)</p></li>
+<li><p>Override source and destination repository items (items are overridden without conflict resolving based on the ‘last-item-wins’ principle)</p></li>
+</ul>
+
+<p>The first option instructs the Visual Style Builder to add the repository items from the source repository that do not conflict with the already existing items.</p>
+
+<p>The second option means that destination (existing) items that have the same keys as the currently loaded items will be overridden. However, if there are items with the same key within the currently loaded repository, these conflicts have to be resolved.</p>
+
+<p>The third option entirely ignores repository item conflicts. Items are overridden based on their position in the list as they are loaded from the XML file – the last item found with a conflicting key wins.</p>
+
+<blockquote>
+<p>Generally, repository item conflicts within the same repository should not happen. Since the Visual Style Builder checks for key uniqueness each time you add/edit repository items, it is not possible to save a repository that contains items with the same key.</p>
+</blockquote>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

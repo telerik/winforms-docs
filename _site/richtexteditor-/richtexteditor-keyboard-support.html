@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Keyboard Support</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Keyboard Support">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("richtexteditor-/richtexteditor-keyboard-support.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/richtexteditor-/richtexteditor-keyboard-support.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="keyboard-support"><a href="#keyboard-support">Keyboard Support</a></h1>
+
+<p>Telerik <strong>RadRichTextEditor</strong> for WinForms supports shortcuts. There are default key-bindings defined for<br>
+        the most widely used operations, namely:</p>
+
+<table> <th></th>
+<tr>
+<td>
+
+<b>Action</b>
+</td>
+<td>
+
+<b>Hotkey</b>
+</td>
+</tr>
+<tr>
+<td>
+
+Copy</td>
+<td>
+
+Ctrl+C</td>
+</tr>
+<tr>
+<td>
+
+Paste</td>
+<td>
+
+Ctrl+V</td>
+</tr>
+<tr>
+<td>
+
+Cut</td>
+<td>
+
+Ctrl+X</td>
+</tr>
+<tr>
+<td>
+
+Delete</td>
+<td>
+
+Delete</td>
+</tr>
+<tr>
+<td>
+
+Undo</td>
+<td>
+
+Ctrl+Z</td>
+</tr>
+<tr>
+<td>
+
+Redo</td>
+<td>
+
+Ctrl+Y</td>
+</tr>
+<tr>
+<td>
+
+InsertLineBreak</td>
+<td>
+
+Shift+Enter</td>
+</tr>
+<tr>
+<td>
+
+InsertPageBreak</td>
+<td>
+
+Ctrl+Enter</td>
+</tr>
+<tr>
+<td>
+
+ToggleBold</td>
+<td>
+
+Ctrl+B, Ctrl+Shift+B</td>
+</tr>
+<tr>
+<td>
+
+ToggleItalic</td>
+<td>
+
+Ctrl+I, Ctrl+Shift+I</td>
+</tr>
+<tr>
+<td>
+
+ToggleSuperscript</td>
+<td>
+
+Ctrl+'+'</td>
+</tr>
+<tr>
+<td>
+
+ToggleSubscript</td>
+<td>
+
+Ctrl+Shift+'+'</td>
+</tr>
+<tr>
+<td>
+
+ToggleUnderline</td>
+<td>
+
+Ctrl+U</td>
+</tr>
+<tr>
+<td>
+
+ClearFormatting</td>
+<td>
+
+Ctrl+Space</td>
+</tr>
+<tr>
+<td>
+
+ChangeTextAlignment with parameter RadTextAlignment.Justify</td>
+<td>
+
+Ctrl+J</td>
+</tr>
+<tr>
+<td>
+
+ChangeTextAlignment with parameter RadTextAlignment.Right</td>
+<td>
+
+Ctrl+R</td>
+</tr>
+<tr>
+<td>
+
+ChangeTextAlignment with parameter RadTextAlignment.Left</td>
+<td>
+
+Ctrl+L</td>
+</tr>
+<tr>
+<td>
+
+ChangeTextAlignment with parameter RadTextAlignment.Center</td>
+<td>
+
+Ctrl+E</td>
+</tr>
+<tr>
+<td>
+
+SelectAll</td>
+<td>
+
+Ctrl+A</td>
+</tr>
+<tr>
+<td>
+
+MoveCaret with parameter MoveCaretDirections.Previous</td>
+<td>
+
+Left Arrow</td>
+</tr>
+<tr>
+<td>
+
+MoveCaret with parameter MoveCaretDirections.Next</td>
+<td>
+
+Right Arrow</td>
+</tr>
+<tr>
+<td>
+
+MoveCaret with parameter MoveCaretDirections.PreviousWord</td>
+<td>
+
+Ctrl+Left Arrow</td>
+</tr>
+<tr>
+<td>
+
+MoveCaret with parameter MoveCaretDirections.NextWord</td>
+<td>
+
+Ctrl+Right Arrow</td>
+</tr>
+<tr>
+<td>
+
+MoveCaret with parameter MoveCaretDirections.Up</td>
+<td>
+
+Upper Arrow</td>
+</tr>
+<tr>
+<td>
+
+MoveCaret with parameter MoveCaretDirections.Down</td>
+<td>
+
+Down Arrow</td>
+</tr>
+<tr>
+<td>
+
+MoveCaret with parameter MoveCaretDirections. ParagraphStart</td>
+<td>
+
+Ctrl+Upper Arrow</td>
+</tr>
+<tr>
+<td>
+
+MoveCaret with parameter MoveCaretDirections. ParagraphEnd</td>
+<td>
+
+Ctrl+Down Arrow</td>
+</tr>
+<tr>
+<td>
+
+MoveCaret with parameter MoveCaretDirections.Home</td>
+<td>
+
+Home</td>
+</tr>
+<tr>
+<td>
+
+MoveCaret with parameter MoveCaretDirections.DocumentStart</td>
+<td>
+
+Ctrl+Home</td>
+</tr>
+<tr>
+<td>
+
+MoveCaret with parameter MoveCaretDirections.End</td>
+<td>
+
+End</td>
+</tr>
+<tr>
+<td>
+
+MoveCaret with parameter MoveCaretDirections.DocumentEnd</td>
+<td>
+
+Ctrl+End</td>
+</tr>
+<tr>
+<td>
+
+MoveCaret with parameter MoveCaretDirections.PageUp</td>
+<td>
+
+PageUp</td>
+</tr>
+<tr>
+<td>
+
+MoveCaret with parameter MoveCaretDirections.PageDown</td>
+<td>
+
+PageDown</td>
+</tr>
+<tr>
+<td>
+
+ShowFindReplaceDialog</td>
+<td>
+
+Ctrl+F</td>
+</tr>
+<tr>
+<td>
+
+ShowFontPropertiesDialog</td>
+<td>
+
+Ctrl+D</td>
+</tr>
+<tr>
+<td>
+
+ShowInsertHyperlinkDialog</td>
+<td>
+
+Ctrl+K</td>
+</tr>
+</table>
+
+<p>Now these key shortcuts can be overridden and customized to the liking of the user. This can be achieved by creating a custom<br>
+          <strong>RichTextEditorInputBehavior</strong> descendant</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>    public class MyInputBehavior : Telerik.WinForms.RichTextEditor.RichTextEditorInputBehavior
+    {
+        public MyInputBehavior(RadRichTextBox editor) : base(editor)
+        {
+        }
+        protected override void PerformCopyOperation(System.Windows.Forms.KeyEventArgs e)
+        {
+            base.PerformCutOperation(e);
+        }      
+    }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>Public Class MyInputBehavior
+    Inherits Telerik.WinForms.RichTextEditor.RichTextEditorInputBehavior
+
+    Public Sub New(ByVal editor As RadRichTextBox)
+        MyBase.New(editor)
+    End Sub
+    Protected Overrides Sub PerformCopyOperation(ByVal e As System.Windows.Forms.KeyEventArgs)
+        MyBase.PerformCutOperation(e)
+    End Sub
+End Class
+
+#End Region
+</code></pre>
+
+<p>the default behavior can be changed like this:</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>            radRichTextEditor1.InputHandler = new MyInputBehavior(radRichTextEditor1.RichTextBoxElement);
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>        radRichTextEditor1.InputHandler = New MyInputBehavior(radRichTextEditor1.RichTextBoxElement)
+
+        '#End Region
+    End Sub
+
+#Region "keyDown"
+
+    Private Sub RichTextBoxElement_PreviewEditorKeyDown(ByVal sender As Object, ByVal e As PreviewEditorKeyEventArgs)
+        If (Keyboard.IsKeyDown(Key.LeftShift) OrElse Keyboard.IsKeyDown(Key.RightShift)) Then
+            e.SuppressDefaultAction = True
+        End If
+    End Sub
+
+#End Region
+
+End Class
+
+#Region "input"
+
+Public Class MyInputBehavior
+    Inherits Telerik.WinForms.RichTextEditor.RichTextEditorInputBehavior
+
+    Public Sub New(ByVal editor As RadRichTextBox)
+        MyBase.New(editor)
+    End Sub
+    Protected Overrides Sub PerformCopyOperation(ByVal e As System.Windows.Forms.KeyEventArgs)
+        MyBase.PerformCutOperation(e)
+    End Sub
+End Class
+
+#End Region
+</code></pre>
+
+<p>Another way to customize the control behavior is to use the <strong>PreviewEditorKeyDown</strong> event. For example,<br>
+          pressing RightAlt causes Control and Alt to be sent as arguments to the PreviewKeyDown event. Thus, RightAlt+E triggers a<br>
+          formatting command for paragraph alignment instead of inputting the ę character. In that case, you can handle the PreviewEditorKeyDown <br>
+          event in the following way:</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        void RichTextBoxElement_PreviewEditorKeyDown(object sender, PreviewEditorKeyEventArgs e)
+        {
+            if ((Keyboard.IsKeyDown(Key.LeftShift) || Keyboard.IsKeyDown(Key.RightShift)))
+            {
+                e.SuppressDefaultAction = true;
+            }
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Private Sub RichTextBoxElement_PreviewEditorKeyDown(ByVal sender As Object, ByVal e As PreviewEditorKeyEventArgs)
+        If (Keyboard.IsKeyDown(Key.LeftShift) OrElse Keyboard.IsKeyDown(Key.RightShift)) Then
+            e.SuppressDefaultAction = True
+        End If
+    End Sub
+
+#End Region
+
+End Class
+
+#Region "input"
+
+Public Class MyInputBehavior
+    Inherits Telerik.WinForms.RichTextEditor.RichTextEditorInputBehavior
+
+    Public Sub New(ByVal editor As RadRichTextBox)
+        MyBase.New(editor)
+    End Sub
+    Protected Overrides Sub PerformCopyOperation(ByVal e As System.Windows.Forms.KeyEventArgs)
+        MyBase.PerformCutOperation(e)
+    End Sub
+End Class
+
+#End Region
+</code></pre>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/winforms/richtexteditor-/features/richtexteditor-clipboard-support">Clipboard Support</a></p></li>
+<li><p><a href="/devtools/winforms/richtexteditor-/getting-started/richtexteditor-formatting-api">Formatting API</a></p></li>
+</ul>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

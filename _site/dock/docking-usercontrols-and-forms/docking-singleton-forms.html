@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Docking Singleton Forms</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Docking Singleton Forms">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("dock/docking-usercontrols-and-forms/docking-singleton-forms.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/dock/docking-usercontrols-and-forms/docking-singleton-forms.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="docking-singleton-forms"><a href="#docking-singleton-forms">Docking Singleton Forms</a></h1>
+
+<p>A typical scenario for an application showing many forms is to allow the end-users to get each type of form<br>
+        displayed only once. In addition, if the end-user tries to close a form it should become hidden instead of<br>
+        really closed and disposed, because this allows the developer to easily save the state (entered data)<br>
+        of the 'closed' forms. In this article we are going to demonstrate how you can implement that type of behavior<br>
+        with forms and RadDock.</p>
+
+<blockquote>
+<p>The forms used in this article are standard forms that do not follow the real singleton pattern.<br>
+            The word 'singleton' in the approach is used only to describe the behavior of the form from the end-user's point<br>
+            of view.</p>
+</blockquote>
+
+<h2 id="docking-singleton-forms-in-raddock"><a href="#docking-singleton-forms-in-raddock">Docking 'Singleton' forms in RadDock</a></h2>
+
+<p>Let's assume that we have a RadRibbonForm with two buttons each of which opens a specific type of form<br>
+          that lies in RadDock. Let's call these forms YellowForm and GreenForm. If a form of particular type is already<br>
+          opened, clicking the button that has opened it will not open any new forms of the same type. If the end-user closes<br>
+          the form after filling-in some data, clicking the 'show' button for this form will open the form with the data filled-in.<br>
+        <img src="images/docking-usercontrols-and-forms-docking-singleton-forms001.png" alt="docking-usercontrols-and-forms-docking-singleton-forms 001"></p>
+
+<p>Here is how to do that:</p>
+
+<ol>
+<li>For each of the types of forms that we create, we should create a corresponding DocumentWindow/ToolWindow
+            that serves as a container. Initially, global variables for the DocumentWindows/ToolWindows should be
+            defined without creating new objects.</li>
+</ol>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>        DocumentWindow greenDockWindow;
+        DocumentWindow yellowDockWindow;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>    Private greenDockWindow As DocumentWindow
+    Private yellowDockWindow As DocumentWindow
+</code></pre>
+
+<ol>
+<li>Upon clicking a button for opening a specific type of form,
+            we should check if an object of the appropriate DocumentWindow exists. If it does not
+            exist, this means that a form of the type that matches the DocumentWindow has never been created, so we
+            need to create such a form together with the DocumentWindow.
+            Note that we set the CloseAction of the DocumentWindow to Hide.
+            When the end-user closes the DocumentWindow, it actually becomes hidden rather than closed and diposed. This allows
+            us to use the same instance later. After creating the form and the window, we should dock the form in the
+            window - this will allow us to control the form together with the DocumentWindow that hosts it using
+            the globally defined DocumentWindow variables. Finally, we should just Show the DocumentWindow. If the
+            DocumentWindow has already been created the previous time we pressed the 'show' button, we should just Show it:</li>
+</ol>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>        private void btnOpenGreenForm_Click(object sender, EventArgs e)
+        {
+            if (greenDockWindow == null)
+            {
+                greenDockWindow = new DocumentWindow();
+                greenDockWindow.Text = "Green Form";
+                greenDockWindow.CloseAction = DockWindowCloseAction.Hide;
+                GreenForm gForm = new GreenForm();
+                gForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                gForm.TopLevel = false;
+                gForm.Dock = DockStyle.Fill;
+                greenDockWindow.Controls.Add(gForm);
+                this.radDock1.AddDocument(greenDockWindow);
+                gForm.Show();
+            }
+            else
+            {
+                greenDockWindow.Show();
+            }
+            this.radDock1.ActiveWindow = greenDockWindow;
+        }
+
+        private void btnOpenYellowForm_Click(object sender, EventArgs e)
+        {
+            if (yellowDockWindow == null)
+            {
+                yellowDockWindow = new DocumentWindow();
+                yellowDockWindow.Text = "Yellow Form";
+                yellowDockWindow.CloseAction = DockWindowCloseAction.Hide;
+                YellowForm yForm = new YellowForm();
+                yForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                yForm.TopLevel = false;
+                yForm.Dock = DockStyle.Fill;
+                yellowDockWindow.Controls.Add(yForm);
+                this.radDock1.AddDocument(yellowDockWindow);
+                yForm.Show();
+            }
+            else
+            {
+                yellowDockWindow.Show();
+            }
+            this.radDock1.ActiveWindow = yellowDockWindow;
+        }
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>    Private Sub btnOpenGreenForm_Click(ByVal sender As Object, ByVal e As EventArgs)
+        If greenDockWindow Is Nothing Then
+            greenDockWindow = New DocumentWindow()
+            greenDockWindow.Text = "Green Form"
+            greenDockWindow.CloseAction = DockWindowCloseAction.Hide
+            Dim gForm As New GreenForm()
+            gForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+            gForm.TopLevel = False
+            gForm.Dock = DockStyle.Fill
+            greenDockWindow.Controls.Add(gForm)
+            Me.RadDock1.AddDocument(greenDockWindow)
+            gForm.Show()
+        Else
+            greenDockWindow.Show()
+        End If
+        Me.RadDock1.ActiveWindow = greenDockWindow
+    End Sub
+
+    Private Sub btnOpenYellowForm_Click(ByVal sender As Object, ByVal e As EventArgs)
+        If yellowDockWindow Is Nothing Then
+            yellowDockWindow = New DocumentWindow()
+            yellowDockWindow.Text = "Yellow Form"
+            yellowDockWindow.CloseAction = DockWindowCloseAction.Hide
+            Dim yForm As New YellowForm()
+            yForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+            yForm.TopLevel = False
+            yForm.Dock = DockStyle.Fill
+            yellowDockWindow.Controls.Add(yForm)
+            Me.RadDock1.AddDocument(yellowDockWindow)
+            yForm.Show()
+        Else
+            yellowDockWindow.Show()
+        End If
+        Me.RadDock1.ActiveWindow = yellowDockWindow
+    End Sub
+</code></pre>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

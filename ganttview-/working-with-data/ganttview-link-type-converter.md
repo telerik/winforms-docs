@@ -1,0 +1,154 @@
+---
+title: Link type converter
+page_title: Link type converter
+description: Link type converter
+slug: ganttview-working-with-data-link-type-converter
+tags: link,type,converter
+published: True
+position: 4
+---
+
+# Link type converter
+
+
+
+## 
+
+When binding RadGanttView there are a number of possible formats for storing data. For most of the standard .NET types used in gantt view 
+          (int, string, DateTime, decimal) there are built-in converters to help you when binding. For the types of the link, you have to convert your data to the
+          TasksLinkType enumeration. To help you achieve this we have provided a basic implementation to convert integer data to the enumeration. Here is the mapping:
+        
+
+* 0 translates to TasksLinkType.FinishToFinish
+            
+
+* 1 translates to TasksLinkType.FinishToStart
+            
+
+* 2 translates to TasksLinkType.StartToFinish
+            
+
+* 3 translates to TasksLinkType. StartToStart
+            
+
+This will work fine if your mapping is the same but if you store your link types in a different format or the integer values are in different 
+          order you can create your own __LinkTypeConverter__ deriving from the default one. In the following examples we will create 
+          one that will convert from/to string for the following mapping:
+        
+
+* “FF” translates to TasksLinkType.FinishToFinish
+            
+
+* “FS” translates to TasksLinkType.FinishToStart
+            
+
+* “SF” translates to TasksLinkType.StartToFinish
+            
+
+* “SS” translates to TasksLinkType. StartToStart
+            
+
+#### __[C#] __
+
+{{region CustomLinkTypeConverter}}
+	    public class MyLinkTypeConverter : LinkTypeConverter
+	    {
+	        public override TasksLinkType ConvertToLinkType(object value)
+	        {
+	            string stringVlaue = Convert.ToString(value);
+	
+	            switch (stringVlaue)
+	            {
+	                case "FF":
+	                    return TasksLinkType.FinishToFinish;
+	                case "FS":
+	                    return TasksLinkType.FinishToStart;
+	                case "SF":
+	                    return TasksLinkType.StartToFinish;
+	                case "SS":
+	                    return TasksLinkType.StartToStart;
+	            }
+	
+	            return base.ConvertToLinkType(value);
+	        }
+	
+	        public override object ConvertFromLinkType(TasksLinkType linkType)
+	        {
+	            switch (linkType)
+	            {
+	                case TasksLinkType.FinishToFinish:
+	                    return "FF";
+	                case TasksLinkType.FinishToStart:
+	                    return "FS";
+	                case TasksLinkType.StartToFinish:
+	                    return "SF";
+	                case TasksLinkType.StartToStart:
+	                    return "SS";
+	            }
+	
+	            return base.ConvertFromLinkType(linkType);
+	        }
+	    }
+	{{endregion}}
+
+
+
+#### __[VB.NET] __
+
+{{region CustomLinkTypeConverter}}
+	Public Class MyLinkTypeConverter
+	    Inherits LinkTypeConverter
+	    Public Overrides Function ConvertToLinkType(value As Object) As TasksLinkType
+	        Dim stringVlaue As String = Convert.ToString(value)
+	
+	        Select Case stringVlaue
+	            Case "FF"
+	                Return TasksLinkType.FinishToFinish
+	            Case "FS"
+	                Return TasksLinkType.FinishToStart
+	            Case "SF"
+	                Return TasksLinkType.StartToFinish
+	            Case "SS"
+	                Return TasksLinkType.StartToStart
+	        End Select
+	
+	        Return MyBase.ConvertToLinkType(value)
+	    End Function
+	
+	    Public Overrides Function ConvertFromLinkType(linkType As TasksLinkType) As Object
+	        Select Case linkType
+	            Case TasksLinkType.FinishToFinish
+	                Return "FF"
+	            Case TasksLinkType.FinishToStart
+	                Return "FS"
+	            Case TasksLinkType.StartToFinish
+	                Return "SF"
+	            Case TasksLinkType.StartToStart
+	                Return "SS"
+	        End Select
+	
+	        Return MyBase.ConvertFromLinkType(linkType)
+	    End Function
+	End Class
+	{{endregion}}
+
+
+
+Now to use the converter you should assign it to the LinkTypeConverter property of RadGanttView.
+        
+
+#### __[C#] __
+
+{{region AssignLinkTypeConverter}}
+	            this.radGanttView1.LinkTypeConverter = new MyLinkTypeConverter();
+	{{endregion}}
+
+
+
+#### __[VB.NET] __
+
+{{region AssignLinkTypeConverter}}
+	        Me.RadGanttView1.LinkTypeConverter = New MyLinkTypeConverter()
+	{{endregion}}
+
+

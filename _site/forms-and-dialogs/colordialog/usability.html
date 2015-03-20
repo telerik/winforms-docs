@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Usability</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Usability">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("forms-and-dialogs/colordialog/usability.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/forms-and-dialogs/colordialog/usability.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="usability"><a href="#usability">Usability</a></h1>
+
+<p>The <strong>Color Dialog</strong> provides multiple ways to select a color using the <strong>Basic</strong>, <strong>System</strong>, <strong>Web</strong> or <strong>Professional</strong> color tabs of the dialog. After selecting a color in the dialog, click the <strong>OK</strong> button to retain your choice or the __Cancel__button to leave the previous color.</p>
+
+<ul>
+<li><p><strong>Basic</strong> tab lets you choose one a predefined color from a honeycomb interface where you click a colored cell to choose the color. </p></li>
+<li><p><strong>System</strong> tab lets you choose one of the <strong>System.Drawing.SystemColors</strong> enumeration from a list. Each is a color of a Windows display element (i.e. ButtonShadow, ActiveCaptionText, etc). </p></li>
+<li><p><strong>Web</strong> tab lets you choose one of the named web colors from a list. </p></li>
+<li><p><strong>Professional</strong> tab provides the greatest flexibility in selecting or tailoring the exact color you require. Left click the mouse in the gradient area on the left to select a specific shade of color. Click on the rainbow bar in the middle to select a color. </p></li>
+</ul>
+
+<p>The edit areas to the top right of the rainbow bar control __H__ue, __S__aturation and __L__uminance. Hue is represented as a color selected from the rainbow bar. Saturation is the amount of color from 0 to 100 and is represented in the gradient area going from left to right. Luminance can be 0 to 100 and represents the span from black, through the chosen hue to white. </p>
+
+<p>Under Hue, Saturation and Luminance are the edits for __A__lpha, __R__ed, __G__reen and __B__lue. Alpha represents the amount of transparency the color has where a value of zero would allow anything covered by the color to show through and the maximum value, 255, would completely hide anything covered by the color. R/G/B represent the Red, Green and Blue components of the color using values from 0 to 255.</p>
+
+<table>
+<tr>
+<td>![forms-and-dialogs-colordialog-usability 001](images/forms-and-dialogs-colordialog-usability001.png)</td>
+<td>![forms-and-dialogs-colordialog-usability 002](images/forms-and-dialogs-colordialog-usability002.png)</td>
+</tr>
+<tr>
+<td>![forms-and-dialogs-colordialog-usability 003](images/forms-and-dialogs-colordialog-usability003.png)</td>
+<td>![forms-and-dialogs-colordialog-usability 004](images/forms-and-dialogs-colordialog-usability004.png)</td>
+</tr>
+</table>
+
+<p>The right side of each tab includes sample color swatches that show the <strong>Current</strong> color property when the dialog was invoked and a <strong>New</strong> color that will be used after the dialog closes. A hexidecimal entry shows the color as a numeric value that can be edited or pasted from another source.  An eye dropper control lets you pick up another color from anywhere on the screen. To use the eye dropper control, click the button and move the mouse over the screen.  Colors under the mouse are reflected in the hexidecimal value and the <strong>New</strong> color patch. Left-click the mouse to retain a color selected by the eyedropper control.</p>
+
+<p><img src="images/forms-and-dialogs-colordialog-usability005.png" alt="forms-and-dialogs-colordialog-usability 005"></p>
+
+<p>The bottom area of each tab in the <strong>Color Dialog</strong> displays a row of slots where selected colors can be saved. Use any of the tabs color selection tools to select a color, including the eye dropper, then click the <strong>Add Custom Color</strong> button. These custom colors will be retained between invocations of the color dialog.</p>
+
+<p><img src="images/forms-and-dialogs-colordialog-usability006.png" alt="forms-and-dialogs-colordialog-usability 006"></p>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

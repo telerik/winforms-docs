@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Using the XmlaDataProvider</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Using the XmlaDataProvider">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("pivotgrid/populating-with-data/using-XmlaDataProvider.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/pivotgrid/populating-with-data/using-XmlaDataProvider.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="using-the-xmladataprovider"><a href="#using-the-xmladataprovider">Using the XmlaDataProvider</a></h1>
+
+<p>In this article we will show how to set XmlaDataProvider to RadPivotGrid.</p>
+
+<h2 id="xmla-description"><a href="#xmla-description">XMLA description</a></h2>
+
+<p>Extensible Markup Language for Analysis (XMLA) is a standard that allows client applications to talk to multi-dimensional or Online Analytical Processing (OLAP) data sources. The communication of messages back and forth is done using web standards – HTTP, SOAP, and XML. The query language used is MDX, which is the most commonly used multi-dimensional expression language today. Oracle's Essbase, Microsoft's Analysis Services, and SAP's NetWeaver all support the MDX language and the XMLA spec.</p>
+
+<h2 id="xmladataprovider-properties"><a href="#xmladataprovider-properties">XmlaDataProvider Properties</a></h2>
+
+<p>RadPivotGrid provides XMLA access to OLAP data sources. You can use the XmlaDataProvider in your application to connect to your OLAP data source.</p>
+
+<blockquote>
+<p>The XmlaDataProvider is only available in the .NET 4.0 version of Telerik.WinControls.PivotGrid.dll</p>
+</blockquote>
+
+<p>XmlaDataProvider has several important properties that have to be defined: </p>
+
+<ul>
+<li><p><strong>ConnectionSettings</strong> - this property is of type XmlaConnectionSettings. It is used to define all needed connection settings through the XmlaConnectionSettings properties:</p></li>
+<li><p><strong>Cube</strong> - string property defining the exact name of the Cube.</p></li>
+<li><p><strong>Database</strong> - string property defining the exact name of the Database.</p></li>
+<li><p><strong>ServerAddress</strong> - string property defining the exact address (with protocol used) of the server.</p></li>
+<li><p><strong>Credentials</strong> - this property is of type XmlaNetworkCredential and it is used to define the authentication details for the server (if it has any kind of authentication).</p></li>
+<li><p><strong>AggregatesLevel</strong> - set the position where groups for the aggregates should be placed.</p></li>
+<li><p><strong>AggregatesPosition</strong> - defines whether the position of the Aggregates will be Columns or Rows.</p></li>
+</ul>
+
+<p>XmlaDataProvider uses three different collections to design the view of RadPivotGrid report and RadPivotFieldList: RowGroupDescription, ColumnGroupDescription,  and AggregateDescription. </p>
+
+<h2 id="defining-xmladataprovider-and-connecting-to-olap-cube"><a href="#defining-xmladataprovider-and-connecting-to-olap-cube">Defining XmlaDataProvider and connecting to OLAP Cube</a></h2>
+
+<p>To show data in RadPivotGrid and RadPivotFieldList we have to connect to OLAP Cube. For this purpose we will set the ConnectionSettings property of the XmlaDataProvider.</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>            XmlaDataProvider provider = new XmlaDataProvider();
+            XmlaConnectionSettings settings = new XmlaConnectionSettings();
+
+            settings.Cube = "Adventure Works";
+            settings.Database = "Adventure Works DW 2008R2";
+            settings.ServerAddress = "http://demos.telerik.com/olap/msmdpump.dll";
+
+            provider.ConnectionSettings = settings;
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>        Dim provider As New XmlaDataProvider()
+        Dim settings As New XmlaConnectionSettings()
+
+        settings.Cube = "Adventure Works"
+        settings.Database = "Adventure Works DW 2008R2"
+        settings.ServerAddress = "http://demos.telerik.com/olap/msmdpump.dll"
+
+        provider.ConnectionSettings = settings
+</code></pre>
+
+<p>You can set credentials if your connection requires username and password. The Credentials property of XmlaDataProvider expects object of type XmlaNetworkCredential which gives you properties for UserName, Password, SecurePassword and Domain.</p>
+
+<h2 id="defining-group-descriptions"><a href="#defining-group-descriptions">Defining Group Descriptions</a></h2>
+
+<blockquote>
+<p>When initializing the XmlaDataProvider in the code behind it is a good idea to wrap all modifications in BeginInit() - EndInit() section. This will cause only one refresh of the DataProvider and it will be when the EndInit() is reached. If you are applying only modifications (more than one) on already initialized XmlaDataProvider you should use the DeferRefresh() method which will cause delay of the Refresh and this way all your changes will be applied simultaneously. </p>
+</blockquote>
+
+<p>The XmlaDataProvider is using three collections that are reflecting the visual representation of RadPivotGrid and RadPivotFieldList:</p>
+
+<ul>
+<li><p><strong>RowGroupDescriptions</strong> - the data added to this collection will show as Row Headers in RadPivotGrid. There is only one type of description that can be added to this collection - XmlaGroupDescription.</p></li>
+<li><p><strong>ColumnGroupDescriptions</strong> - the data added to this collection will show as Column Headers in RadPivotGrid. There is only one type of description that can be added to this collection - XmlaGroupDescription</p></li>
+<li><p><strong>AggregateDescriptions</strong> - the data added to this description will be aggregated and included in RadPivotGrid as Cells. There is only one type of description that can be added to this collection - XmlaAggregateDescription.</p></li>
+</ul>
+
+<p>The XmlaGroupDescription is used to define the data that will show as Rows and Columns in RadPivotGrid. When defining XmlaGroupDescription you must set the MemberName property. The MemberName property is of type string and you should define it based on your Cube. but it should have specific syntax to access Cube's data.</p>
+
+<p>The XmlaAggregateDescription is used to define data that has to be aggregated and that will show as Cells in RadPivotGrid. You should set the MemberName property.</p>
+
+<blockquote>
+<p>The MemberName property must have the following syntax: </p>
+</blockquote>
+
+<ul>
+<li><p>For XmlaAggregateDescription: "[Measures].[MEASURE_NAME]".</p></li>
+<li><p>For XmlaGroupDescription  there are two ways (based on the data that will be used): "[DIMENSION].[HIERARCHY]" or "[SET_NAME]".<br>
+          Note that the brackets are mandatory.</p></li>
+</ul>
+
+<p>Here is how to define these decriptors:</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>            provider.BeginInit();
+
+            provider.RowGroupDescriptions.Add(new XmlaGroupDescription() { MemberName = "[Date].[Calendar Year]" });
+            provider.RowGroupDescriptions.Add(new XmlaGroupDescription() { MemberName = "[Date].[Calendar Quarter of Year]" });
+
+            provider.ColumnGroupDescriptions.Add(new XmlaGroupDescription() { MemberName = "[Promotion].[Promotion Category]" });
+            provider.ColumnGroupDescriptions.Add(new XmlaGroupDescription() { MemberName = "[Product].[Category]" });
+
+            provider.AggregateDescriptions.Add(new XmlaAggregateDescription() { MemberName = "[Measures].[Internet Order Quantity]" });
+
+            provider.EndInit();
+
+            this.radPivotGrid1.PivotGridElement.DataProvider = provider;
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>        provider.BeginInit()
+
+        provider.RowGroupDescriptions.Add(New XmlaGroupDescription() With { _
+         .MemberName = "[Date].[Calendar Year]" _
+        })
+        provider.RowGroupDescriptions.Add(New XmlaGroupDescription() With { _
+         .MemberName = "[Date].[Calendar Quarter of Year]" _
+        })
+
+        provider.ColumnGroupDescriptions.Add(New XmlaGroupDescription() With { _
+         .MemberName = "[Promotion].[Promotion Category]" _
+        })
+        provider.ColumnGroupDescriptions.Add(New XmlaGroupDescription() With { _
+         .MemberName = "[Product].[Category]" _
+        })
+
+        provider.AggregateDescriptions.Add(New XmlaAggregateDescription() With { _
+         .MemberName = "[Measures].[Internet Order Quantity]" _
+        })
+
+        provider.EndInit()
+
+        Me.RadPivotGrid1.PivotGridElement.DataProvider = provider
+</code></pre>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

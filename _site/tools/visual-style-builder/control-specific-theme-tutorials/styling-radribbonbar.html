@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Styling RadRibbonBar</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Styling RadRibbonBar">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("tools/visual-style-builder/control-specific-theme-tutorials/styling-radribbonbar.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/tools/visual-style-builder/control-specific-theme-tutorials/styling-radribbonbar.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="styling-radribbonbar"><a href="#styling-radribbonbar">Styling RadRibbonBar</a></h1>
+
+<h2 id="creating-a-custom-theme-for-the-radribbonbar-starting-from-an-existing-one"><a href="#creating-a-custom-theme-for-the-radribbonbar-starting-from-an-existing-one">Creating a custom Theme for the RadRibbonBar starting from an existing one</a></h2>
+
+<p>After introducing the new Visual Style Builder a lot of our customers asked how to open an existing theme so that it can be modified achieving a new visual style. Indeed, this is the preferred way to create a new theme if you do not want to begin from scratch by creating an entirely new repository and applying the items throughout the controls set.</p>
+
+<p>In this article we are going to demonstrate how to create a new theme for the RadRibbonBar using the Windows 7 theme as a starting point. Many of the hints and approaches used here are also applicable when styling other controls. Please note that in this example the repository of the Windows 7 theme will be modified which will surely cause other controls to change their styles as well (remember that repository items are reused among controls). </p>
+
+<p>Let’s start by opening the Visual Style Builder with the Windows 7 theme:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar001.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 001"></p>
+
+<p>After selecting the RadRibbonBar control from the tree-view on the left, you will see a preview of the control with the opened theme applied. You can explore the hierarchy of the RadRibbonBar node which contains the items that can be styled. In general this hierarchy is divided into three main subtrees:</p>
+
+<ul>
+<li><p>RibbonBarCaption</p></li>
+<li><p>RibbonTabStripElement</p></li>
+<li>
+<p>RadRibbonBarGroup</p>
+
+<pre><code>The screenshot below outlines the three categories:
+</code></pre>
+</li>
+</ul>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar002.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 002"></p>
+
+<p>These three categories contain subcategories for the corresponding elements. For instance, the RibbonBarCaption category contains ApplicationButton, QuickAccessToolbar and SystemButtons sub-nodes which can be used to style the corresponding elements.</p>
+
+<p>Let’s start with changing the styles of the RibbonBarCaption. To do so, select the RibbonBarCaption node in the Visual Style Builder. After selecting it, the stylable elements will be listed in the Elements List which is usually situated below the Preview pane. In the Elements List select the RibbonCaptionFill element and take a look at the Element States window:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar003.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 003"></p>
+
+<p>You will see that the RadRibbonBarElement and RadRibbonBarElement.IsRibbonFormActive states will have styles associated with them (there are previews generated for the corresponding states). So, we will change the styles for these two states. To do so, we need to find the repository items associated with them and modify their property settings. To do so, select the RadRibbonBarElement.IsRibbonFormActive state and take a look at the Repository window where the used repository items will be highlighted in red:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar004.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 004"></p>
+
+<blockquote>
+<p>The RadRibbonBarElement.IsRibbonFormActive state is applied to the RadRibbonBar control when it is in a RadRibbonForm and the form is active. Otherwise the RadRibbonBarElement state is applied since it is the default state.</p>
+</blockquote>
+
+<p>We see that a repository item named RibbonTitlebarFillNormal is highlighted and checked. That means that this repository item is associated with the current state. So we will need to modify this repository item to change the appearance for the RadRibbonBar when it is in this state. To do so, double-click on the repository item or click on the Edit Repository Item button. An editor will be opened in dialog mode which allows for modifying the parameters of the repository item:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar005.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 005"></p>
+
+<p>In this dialog you can change the parameters of the repository item (which is gradient type for the current element) and thus create another style for it. In our example we will add two more colors to the gradient and define its parameters so that it looks as follows:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar006.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 006"></p>
+
+<p>We will do the same for the RadRibbonBarElement state (the default state) by changing the already existing styles with similar to those we created for the Active state in pretty much the same way:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar007.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 007"></p>
+
+<p>In this way we have defined styles for the Active and Inactive states of the RibbonBar’s caption fill. You can do this for the RibbonCaptionBorder element using the same approach.</p>
+
+<p>Now we are going to change the styles of the Application Button by simply modifying the associated repository items as already shown. To do so, select the ApplicationMenuButton sub-node and after that select the OfficeButtonFill element in the Elements List. In the Element States window you will see that there are styles for the default, MouseOver.ActionPart, MouseOver.ArrowPart, Pressed and DropDownOpened states defined. Select the DropDownOpened state and find the highlighted repository item. Double-click the item to open its editor and modify the color settings as shown on the screenshot below:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar008.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 008"></p>
+
+<p>This repository item is also used for the Pressed and MouseOver states.<br>
+        Save the changes and select the RibbonBarApplicationButton state. Find the used repository item and modify it accordingly:<br>
+        <img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar009.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 009"></p>
+
+<p>To completely change the styles of the button we need to also modify the repository items defining the appearance of the button’s border. To do so, select the OfficeButtonInnerBorder element and after that the DropDownOpened state from the Element States window. Find the repository item in use and edit it as shown below:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar010.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 010"></p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar011.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 011"></p>
+
+<p>Now, select the QuickAccessToolbar node and expand its sub-tree. Select the RibbonBarButtonElement sub-node and after that the ButtonInRibbonFill element from the Elements List. You will see that this element has styles for its default, for the MouseOver and MouseDown states. We will change the styles for the MouseOver and MouseDown states. Select the MouseOver state, find the associated repository item and modify it so that it looks the following way:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar012.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 012"></p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar013.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 013"></p>
+
+<p>We will also have to modify the styles for the border of the button. To do so, we need to select the ButtonInRibbonBorder element and modify the repository items for the same states so that they look the following way:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar014.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 014"></p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar015.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 015"></p>
+
+<p>Since the repository items we have just changed are reused throughout the whole RadRibbonBar, the styles of other elements have also been changed. For instance, if you hover a button in a RadRibbonBar group, you will notice that it looks the same way as the button in the Quick Access Toolbar. In this way, by reusing repository items, we need to introduce our modifications at a single place and in order to get them applied throughout the whole control.</p>
+
+<p>After styling the QuickAccessToolbar, we will go on changing the styles of the Ribbon’s system buttons. To do so, select and expand the System Buttons node and choose the RibbonMinimizeButton. From the Elements List choose the CaptionButtonFill element and take a look at the available states:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar016.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 016"></p>
+
+<p>You will see that there are styles defined for the default, normal and maximized states of the form (these states are relevant when the RadRibbonBar is in RadRibbonForm). We will begin with the styles for the default state. So, select the RibbonMinimizeButton state and select the repository item associated with it (called: TitleBarButtonNormalFill). Open the editor and change the gradient as follows:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar017.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 017"></p>
+
+<p>For the MouseOver and MouseDown change the styles as shown below:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar018.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 018"></p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar019.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 019"></p>
+
+<p>Since the repository items are reused for the remaining states, you will see that they will also be affected.<br>
+        Do the same for the CaptionButtonBorder, so that it looks the following way for each state:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar020.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 020"></p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar021.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 021"></p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar022.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 022"></p>
+
+<p>We will leave the RibbonCloseButton as it is.</p>
+
+<p>Now select the RibbonTabStripElement node from the tree-view on the left. We are first going to change the color of the panel behind the tab items. To do so, select the TabHeadFill element from the Elements List below the preview pane and select the RadTabStripElement.IsRibbonFormActive state from the Element States list. Find the associated repository item (called RibbonTabStripHeadFill) with this state and open its editor. The style of the fill is Solid gradient. Change its parameters as shown on the picture below:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar023.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 023"></p>
+
+<p>Now, select the TabBaseFill element. This element represents the FillPrimitive behind all RadRibbonBarGroups. Find the RibbonTabBaseFill repository item, open its editor and change its parameters as follows:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar024.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 024"></p>
+
+<p>After that select the TabBaseBorder element. Find the repository item called RibbonTabBaseBorder and change its ForeColor setting to be 166, 199, 55.<br>
+        After finishing with the fill and the border of the RadRibbonBar’s groups container, select the TabItem subnode of the RibbonTabStripElement node from the tree-view on the left. This is the node which represents a RibbonTab . From the Elements List select the TabFill element and find the TabItemFillSelected repository item which is associated with the Selected, Selected.Pressed and Selected.MouseOver states of the item. Open the editor and change its appearance as follows:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar025.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 025"></p>
+
+<p>After that select the TabItemBorder element and take a look at the Element States window. You will notice that there are different styles defined for the Selected and Selected.MouseOver states. So, we are going to change the corresponding repository items for both states. First, select the TabItem.Selected state and open the editor of the highlighted repository item called RibbonTabBorderSelectedNormal. Edit its properties as shown on the screenshot below:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar026.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 026"></p>
+
+<p>Now, select the TabItem.MouseOver state and modify its property settings as follows:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar027.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 027"></p>
+
+<p>We will go on with the styles of the RadRibbonBarGroup elements which hold all elements that can be put into a RadRibbonBar control. To do so, find the RadRibbonBarGroup sub-node and select it. From the Elements List find the RibbonGroupMainFill element and select it. You will see that the element has styles for its default, MouseDown and ContainsMouse states. Since the MouseDown and ContainsMouse states reuse a single repository item, we will need to modify it in order to change the styles for both states. To do so, select one of the states, find the associated repository item (RibbonGroupFillHover) and open its editor. Change the parameters as shown on the screenshot below:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar028.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 028"></p>
+
+<p>Now, find and select the RibbonGroupOuterBorder element and find the repository item associated with its default state (called RibbonGroupOuterBorder). Open its editor and modify it accordingly:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar029.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 029"></p>
+
+<p>The next step is to change the styles of a RibbonBarButtonGroup. To do so, expand the RadRibbonBarGroup node and find the RibbonBarButtonGroup sub-node. Select it and take a look at the Elements List. Find the ButtonGroupFill element and select it. Find the repository item called ButtonGroupFill and modify its settings so that it looks as shown below:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar030.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 030"></p>
+
+<p>Do the same operation with the ButtonGroupBorder element so that it acquires the following style:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar031.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 031"></p>
+
+<p>At this point, we are almost done. We only need to style the RadCheckBoxElement and the RadGalleryElement also contains a RadRibbonBarGroup.<br>
+        Select the RibbonBarGroupGallery node and from the Elements List pick the GalleryFill element. Find the RibbonGalleryFill repository item and modify it as shown below:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar032.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 032"></p>
+
+<p>Do the same for the GalleryBorder element. The repository item associated with it is called RibbonGalleryBorder. Modify it so that it looks as follows:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar033.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 033"></p>
+
+<p>Now expand the RibbonBarGroupGallery node and find the GalleryPopupSizingGripElement. This element represents the sizing grip of the gallery’s popup which can be used to resize the popup. This element has styles for its fill and its border. We are going to modify the associated repository items accordingly. To do so, find the GripFill element from the Elements List and find the repository item Windows7GrayGradient that is associated with this element. You will notice that the repository item’s name reflects its appearance. Since we would like to preserve this repository item, we are going to create a new repository item and associate it with the GripFill element. To do so, click on the Create New Repository Item button below the Repository Items list. A dialog will open which will ask you to select the type of the repository item to create. We want to create Gradient and therefore select this option. Now set the name and the key of this repository item to GripFillNormal and change its settings to look the following way:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar034.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 034"></p>
+
+<p>We are now going to associate this repository item with the GripFill element for its default state. But before doing this, we are going to reset all previously associated repository items by clicking the Reset All Associations button on the SizeGripElement state (this is the right button). After doing this, associate the repository item in question by simply dragging and dropping it on the state. Now open the drop-down of the gallery. You will notice that the SizeGripElement does not look as expected:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar035.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 035"></p>
+
+<p>The reason for this behavior is that there is a StyleBuilder registered in the ThemeResolutionService that contains a ElementTypeDefault relation for the Telerik.WinControls.UI.SizeGripElement type. In other words, this means that each time a Telerik.WinControls.UI.SizeGripElement is found in an element tree, this style builder will be used to style the element. So, we need to remove this relation. To do so, we need to select the RadSizablePopup control from the tree-view in the Visual Style Builder, expand the node and find the SizeGripElement sub-node. In the context-menu of the node you will see an option called ”Reuse Item Styles on other Controls”. This option is checked, we need to uncheck it so that the SizeGripElement in the RibbonBarGroupGallery’s popup is styled as expected:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar036.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 036"></p>
+
+<p>After doing this, you will see that the SizeGripElement will acquire the styles defined in the new repository item we just created:</p>
+
+<p><img src="images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar037.png" alt="tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 037"></p>
+
+<p>You can now try to change the styles of the RadCheckBoxElement in the RadRibbonBarGroup accordingly.<br>
+        Finally, you will notice that the Ribbon’s Application Menu has to be styled as well. You can do this by selecting the RadApplicationMenu node from the tree-view in the VSB.</p>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

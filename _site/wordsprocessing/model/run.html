@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Run</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Run">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("wordsprocessing/model/run.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/wordsprocessing/model/run.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="run"><a href="#run">Run</a></h1>
+
+<p><strong>Run</strong> element is an inline-level flow content element intended to contain a run of formatted text.</p>
+
+<ul>
+<li><p><a href="#inserting-a-run">Inserting a Run</a></p></li>
+<li><p><a href="#modifying-a-run">Modifying a Run</a></p></li>
+</ul>
+
+<h2 id="inserting-a-run"><a href="#inserting-a-run">Inserting a Run</a></h2>
+
+<p>The following code snippet creates a <strong>Run</strong> elements and adds it to a<br>
+          <a href="/devtools/winforms/wordsprocessing/model/paragraph">Paragraph</a>.</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>            Run run = new Run(document);
+            paragraph.Inlines.Add(run);
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>            Dim run As New Run(document)
+            paragraph.Inlines.Add(run)
+
+            '#End Region
+        End Sub
+
+        Private Sub AddRunToParagraph(document As RadFlowDocument, paragraph As Paragraph)
+            '#Region "radwordsprocessing-model-run_1"
+            Dim run As New Run(document)
+            paragraph.Inlines.Insert(0, run)
+            '#End Region
+
+            '#Region "radwordsprocessing-model-run_2"
+            ' Adds an empty run.
+            Dim run1 As Run = paragraph.Inlines.AddRun()
+
+            ' Adds a run and set the text to the text property.
+            Dim run2 As Run = paragraph.Inlines.AddRun("The text.")
+            '#End Region
+        End Sub
+
+
+        Private Sub CreateRunhWithRadFlowDocumentEditor()
+            '#Region "radwordsprocessing-model-run_3"
+            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+
+            ' Adds new run to the document
+            Dim run1 As Run = editor.InsertText("First run ")
+
+            ' Adds new run and starts new paragraph
+            Dim run2 As Run = editor.InsertLine("Second run")
+            '#End Region
+        End Sub
+    End Class
+</code></pre>
+
+<blockquote class="tip"><p>The parent <strong>Paragraph</strong> should belong to the same document that is passed to the constructor of the <strong>Run</strong>.</p></blockquote>
+          
+
+<p>You can add a run at a specific index in the <strong>Inlines</strong> collection of a paragraph using the <strong>Insert()</strong><br>
+          method. Here is how to add a run at the beginning of a paragraph:</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>            Run run = new Run(document);
+            paragraph.Inlines.Insert(0, run);
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>            Dim run As New Run(document)
+            paragraph.Inlines.Insert(0, run)
+            '#End Region
+
+            '#Region "radwordsprocessing-model-run_2"
+            ' Adds an empty run.
+            Dim run1 As Run = paragraph.Inlines.AddRun()
+
+            ' Adds a run and set the text to the text property.
+            Dim run2 As Run = paragraph.Inlines.AddRun("The text.")
+            '#End Region
+        End Sub
+
+
+        Private Sub CreateRunhWithRadFlowDocumentEditor()
+            '#Region "radwordsprocessing-model-run_3"
+            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+
+            ' Adds new run to the document
+            Dim run1 As Run = editor.InsertText("First run ")
+
+            ' Adds new run and starts new paragraph
+            Dim run2 As Run = editor.InsertLine("Second run")
+            '#End Region
+        End Sub
+    End Class
+</code></pre>
+
+<p>You can also use the <strong>AddRun()</strong> method of the <strong>Inlines</strong> collection of a paragraph.<br>
+          The method creates a new <strong>Run</strong> instance, adds it to the container and returns it:</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>            // Adds an empty run.
+            Run run1 = paragraph.Inlines.AddRun();
+
+            // Adds a run and set the text to the text property.
+            Run run2 = paragraph.Inlines.AddRun("The text.");
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>            ' Adds an empty run.
+            Dim run1 As Run = paragraph.Inlines.AddRun()
+
+            ' Adds a run and set the text to the text property.
+            Dim run2 As Run = paragraph.Inlines.AddRun("The text.")
+            '#End Region
+        End Sub
+
+
+        Private Sub CreateRunhWithRadFlowDocumentEditor()
+            '#Region "radwordsprocessing-model-run_3"
+            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+
+            ' Adds new run to the document
+            Dim run1 As Run = editor.InsertText("First run ")
+
+            ' Adds new run and starts new paragraph
+            Dim run2 As Run = editor.InsertLine("Second run")
+            '#End Region
+        End Sub
+    End Class
+</code></pre>
+
+<p>Inserting text in the document can also be achieved with the <a href="6a2a5fb7-6df2-48a1-9d21-d8d25526695d"></a> class:</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+
+            // Adds new run to the document
+            Run run1 = editor.InsertText("First run ");
+
+            // Adds new run and starts new paragraph
+            Run run2 = editor.InsertLine("Second run");
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+
+            ' Adds new run to the document
+            Dim run1 As Run = editor.InsertText("First run ")
+
+            ' Adds new run and starts new paragraph
+            Dim run2 As Run = editor.InsertLine("Second run")
+            '#End Region
+        End Sub
+    End Class
+</code></pre>
+
+<h2 id="modifying-a-run"><a href="#modifying-a-run">Modifying a Run</a></h2>
+
+<p>The Run exposes several properties that allow you to customize how it is rendered and formatted.</p>
+
+<ul>
+<li><p><strong>Properties</strong>: Retrieves all <strong>CharacterProperties</strong> for this element. For more information about<br>
+          the CharacterProperties see <a href="/devtools/winforms/wordsprocessing/concepts/style-properties">this article</a>.</p></li>
+<li><p><strong>Text</strong>: Specifies the text for the run.</p></li>
+<li><p><strong>StyleId</strong>: Represents the ID of the style that is applied to this run.</p></li>
+<li><p><strong>FontFamily</strong>: Specifies the font family that is used to render the text. <em>Style property. The value is themable object.</em></p></li>
+<li><p><strong>FontSize</strong>: Specifies the size of the font. <em>Style property.</em></p></li>
+<li><p><strong>Shading</strong>: Represents the shading applied to the run. It is a composite object and is read-only.<br>
+          You can obtain the following properties from it:</p></li>
+<li><p><strong>BackgroundColor</strong>: Specifies the background color for the shading. *<br>
+                Style property. The value is<br>
+                themable object.<br>
+              *</p></li>
+<li><p><strong>PatternColor</strong>: Specifies the pattern color for the shading. *<br>
+                Style property. The value is themable<br>
+                object.<br>
+              *</p></li>
+<li><p><strong>Pattern</strong>: Specifies the pattern which is used to lay the pattern color over the background color for the shading.<br>
+              <em>Style property.</em></p></li>
+<li><p><strong>FontStyle</strong>: Specifies the font style. <em>Style property.</em></p></li>
+<li><p><strong>FontWeight</strong>:  Specifies the font weight. <em>Style property.</em></p></li>
+<li><p><strong>ForegroundColor</strong>:  Specifies the foreground color. <em>Style property. The value is themable object.</em></p></li>
+<li><p><strong>HighlightColor</strong>: Specifies the highlight color. <em>Style property.</em></p></li>
+<li><p><strong>BaselineAlignment</strong>: Specifies how the baseline is positioned on the vertical axis, relative to the established<br>
+          baseline for text. <em>Style property.</em></p></li>
+<li><p><strong>Strikethrough</strong>: Specifies if the text is stroked trough. <em>Style property.</em></p></li>
+<li><p><strong>Underline</strong>: Specifies the underline for the run. It is composite object and is read-only. You can obtain the following<br>
+          properties from it:</p></li>
+<li><p><strong>Color</strong>: Indicates the underline color. <em>Style property.</em></p></li>
+<li><p><strong>Pattern</strong>: Indicates the underline pattern. <em>Style property.</em></p></li>
+</ul>
+
+<blockquote class="tip"><p>Style properties are properties that can be inherited from a style. For more information about styles see</p></blockquote>
+
+<pre><code>        [this article](/wordsprocessing/concepts/style-properties).
+</code></pre>
+
+<blockquote class="tip"><p>Themable objects are objects that can be inherited from a theme. For more information about themes check</p></blockquote>
+
+<pre><code>        [this article](/wordsprocessing/concepts/document-themes).
+</code></pre>
+
+<h1 id="see-alsorun-api-reference"><a href="#see-alsorun-api-reference">See Also<a href="http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_run.html">Run API Reference</a></a></h1>
+
+<ul>
+<li><p><a href="/devtools/winforms/wordsprocessing/model/paragraph">Paragraph</a></p></li>
+<li><p><a href="/devtools/winforms/wordsprocessing/concepts/style-properties">Style Properties</a></p></li>
+<li><p><a href="/devtools/winforms/wordsprocessing/concepts/document-themes">Document Themes</a></p></li>
+</ul>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

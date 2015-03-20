@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Custom items</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Custom items">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("listview/custom-items.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/listview/custom-items.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="custom-items"><a href="#custom-items">Custom items</a></h1>
+
+<p><strong>RadListView</strong> allows you to create and use your own custom visual items. This article demonstrates how to achieve it.</p>
+
+<h2 id="custom-items-in-listview-viewtype"><a href="#custom-items-in-listview-viewtype">Custom items in ListView ViewType</a></h2>
+
+<p>This can be done by making use of the <strong>VisualItemCreating</strong> event. The following <br>
+            example demonstrates creating a visual item with two buttons in it.<br>
+      <img src="images/listview-custom-items001.png" alt="listview-custom-items 001"></p>
+
+<p>First let's create a custom visual item by inheriting from the <strong>SimpleListViewVisualItem</strong> class:</p>
+
+<h4><strong>[C#] Creating custom item</strong></h4>
+
+<pre><code>        public class MyCustomVisualItem : SimpleListViewVisualItem
+        {
+            private RadButtonElement buttonElement1;
+            private RadButtonElement buttonElement2;
+            private LightVisualElement contentElement;
+            private StackLayoutPanel stackLayout;
+
+            protected override void CreateChildElements()
+            {
+                base.CreateChildElements();
+
+                this.stackLayout = new StackLayoutPanel();
+                this.stackLayout.Orientation = Orientation.Horizontal;
+                this.stackLayout.EqualChildrenWidth = true;
+                this.stackLayout.ShouldHandleMouseInput = false;
+                this.stackLayout.NotifyParentOnMouseInput = true;
+
+                this.contentElement = new LightVisualElement();
+                this.contentElement.StretchHorizontally = true;
+                this.contentElement.MinSize = new Size(120, 0);
+                this.contentElement.ShouldHandleMouseInput = false;
+                this.contentElement.NotifyParentOnMouseInput = true;
+                this.stackLayout.Children.Add(this.contentElement);
+
+
+                this.buttonElement1 = new RadButtonElement();
+                this.buttonElement1.Text = "Button1";
+                this.stackLayout.Children.Add(this.buttonElement1);
+
+                this.buttonElement2 = new RadButtonElement();
+                this.buttonElement2.Text = "Button2";
+                this.stackLayout.Children.Add(this.buttonElement2);
+
+                this.Children.Add(this.stackLayout);
+            }
+
+            protected override void SynchronizeProperties()
+            {
+                base.SynchronizeProperties();
+
+                this.Text = "";
+                this.contentElement.Text = Convert.ToString(this.Data["Name"]);
+                this.buttonElement1.Text = "Call " + Convert.ToString(this.Data["Phone"]);
+                this.buttonElement2.Text = "Fax " + Convert.ToString(this.Data["Fax"]);
+            }
+
+            protected override Type ThemeEffectiveType
+            {
+                get
+                {
+                    return typeof(SimpleListViewVisualItem);
+                }
+            }
+        }
+</code></pre>
+
+<h4><strong>[VB.NET] Creating custom item</strong></h4>
+
+<pre><code>    Public Class MyCustomVisualItem
+    Inherits SimpleListViewVisualItem
+        Private buttonElement1 As RadButtonElement
+        Private buttonElement2 As RadButtonElement
+        Private contentElement As LightVisualElement
+        Private stackLayout As StackLayoutPanel
+
+        Protected Overrides Sub CreateChildElements()
+            MyBase.CreateChildElements()
+
+            Me.stackLayout = New StackLayoutPanel()
+            Me.stackLayout.Orientation = Orientation.Horizontal
+            Me.stackLayout.EqualChildrenWidth = True
+            Me.stackLayout.ShouldHandleMouseInput = False
+            Me.stackLayout.NotifyParentOnMouseInput = True
+
+            Me.contentElement = New LightVisualElement()
+            Me.contentElement.StretchHorizontally = True
+            Me.contentElement.MinSize = New Size(120, 0)
+            Me.contentElement.ShouldHandleMouseInput = False
+            Me.contentElement.NotifyParentOnMouseInput = True
+
+            Me.stackLayout.Children.Add(Me.contentElement)
+
+            Me.buttonElement1 = New RadButtonElement()
+            Me.buttonElement1.Text = "Button1"
+            Me.stackLayout.Children.Add(Me.buttonElement1)
+
+            Me.buttonElement2 = New RadButtonElement()
+            Me.buttonElement2.Text = "Button2"
+            Me.stackLayout.Children.Add(Me.buttonElement2)
+
+            Me.Children.Add(Me.stackLayout)
+        End Sub
+
+        Protected Overrides Sub SynchronizeProperties()
+            MyBase.SynchronizeProperties()
+
+            Me.Text = ""
+            Me.contentElement.Text = Convert.ToString(Me.Data("Name"))
+            Me.buttonElement1.Text = "Call " + Convert.ToString(Me.Data("Phone"))
+            Me.buttonElement2.Text = "Fax " + Convert.ToString(Me.Data("Fax"))
+        End Sub
+
+        Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
+            Get
+                Return GetType(SimpleListViewVisualItem)
+            End Get
+        End Property
+    End Class
+</code></pre>
+
+<p>To use the newly created items, you should handle the <strong>VisualItemCreating</strong> event <br>
+            as shown below:</p>
+
+<h4><strong>[C#] Use the custom item</strong></h4>
+
+<pre><code>        void radListView1_VisualItemCreating(object sender, ListViewVisualItemCreatingEventArgs e)
+        {
+            e.VisualItem = new MyCustomVisualItem();
+        }
+</code></pre>
+
+<h4><strong>[VB.NET] Use the custom item</strong></h4>
+
+<pre><code>    Private Sub radListView1_VisualItemCreating(ByVal sender As Object, ByVal e As ListViewVisualItemCreatingEventArgs)
+        e.VisualItem = New MyCustomVisualItem()
+    End Sub
+</code></pre>
+
+<h2 id="custom-items-in-detailsview-viewtype"><a href="#custom-items-in-detailsview-viewtype">Custom items in DetailsView ViewType</a></h2>
+
+<p>Since the <em>DetailsView</em> provides a grid-like interface, it displays a cell for each data field. In order to create<br>
+          custom cells you need to subscribe to the <strong>CellCreating</strong> event and replace the default <strong>DetailListViewDataCellElement</strong><br>
+          with your own cell implementation.<br>
+        <img src="images/listview-custom-items002.png" alt="listview-custom-items 002"></p>
+
+<p>First let's populate the <strong>RadListView</strong> with items and set its <strong>ViewType</strong> property to <em>DetailsView</em>: </p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            radListView1.ViewType = ListViewType.DetailsView;
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Id", typeof(int));
+            dt.Columns.Add("Name", typeof(string));
+
+            for (int i = 0; i &lt; 50; i++)
+            {
+                dt.Rows.Add(i, "Item " + i);
+            }
+
+            this.radListView1.DataSource = dt;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        RadListView1.ViewType = ListViewType.DetailsView
+        Dim dt As New DataTable()
+        dt.Columns.Add("Id", GetType(Integer))
+        dt.Columns.Add("Name", GetType(String))
+
+        For i As Integer = 0 To 49
+            dt.Rows.Add(i, "Item " &amp; i.ToString())
+        Next
+
+        Me.RadListView1.DataSource = dt
+</code></pre>
+
+<p>Now let`s create our custom cell element containing a <strong>RadButtonElement</strong>. Additionally,<br>
+          we should inherit the <strong>DetailListViewDataCellElement</strong> class:</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>        public class CustomDetailListViewDataCellElement : DetailListViewDataCellElement
+        {
+            private RadButtonElement button;
+
+            public CustomDetailListViewDataCellElement(DetailListViewVisualItem owner,
+                ListViewDetailColumn column)
+                : base(owner, column)
+            {
+            }
+
+            protected override void CreateChildElements()
+            {
+                base.CreateChildElements();
+
+                this.button = new RadButtonElement();
+                this.Children.Add(this.button);
+            }
+
+            protected override Type ThemeEffectiveType
+            {
+                get
+                {
+                    return typeof(DetailListViewHeaderCellElement);
+                }
+            }
+
+            public override void Synchronize()
+            {
+                base.Synchronize();
+                this.Text = "";
+                DataRowView rowView = this.Row.DataBoundItem as DataRowView;
+                this.button.Text = rowView.Row["Name"].ToString();
+            }
+
+            public override bool IsCompatible(ListViewDetailColumn data, object context)
+            {
+                if (data.Name != "Name")
+                {
+                    return false;
+                }
+                return base.IsCompatible(data, context);
+            }
+        }
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>    Public Class CustomDetailListViewDataCellElement
+    Inherits DetailListViewDataCellElement
+        Private button As RadButtonElement
+
+        Public Sub New(owner As DetailListViewVisualItem, column As ListViewDetailColumn)
+            MyBase.New(owner, column)
+        End Sub
+
+        Protected Overrides Sub CreateChildElements()
+            MyBase.CreateChildElements()
+
+            Me.button = New RadButtonElement()
+            Me.Children.Add(Me.button)
+        End Sub
+
+        Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
+            Get
+                Return GetType(DetailListViewHeaderCellElement)
+            End Get
+        End Property
+
+        Public Overrides Sub Synchronize()
+            MyBase.Synchronize()
+            Me.Text = ""
+            Dim rowView As DataRowView = TryCast(Me.Row.DataBoundItem, DataRowView)
+            Me.button.Text = rowView.Row("Name").ToString()
+        End Sub
+
+        Public Overrides Function IsCompatible(data As ListViewDetailColumn, context As Object) As Boolean
+            If data.Name &lt;&gt; "Name" Then
+                Return False 
+            End If
+
+            Return MyBase.IsCompatible(data, context)
+        End Function
+    End Class
+</code></pre>
+
+<p>Finally, we should handle the <strong>CellCreating</strong> event and substitute the default cell element with our own:</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>        private void radListView1_CellCreating(object sender, ListViewCellElementCreatingEventArgs e)
+        {
+            DetailListViewDataCellElement cell = e.CellElement as DetailListViewDataCellElement;
+            if (cell != null &amp;&amp; cell.Data.Name == "Name")
+            {
+                e.CellElement = new CustomDetailListViewDataCellElement(cell.RowElement, e.CellElement.Data);
+            }
+        }
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>    Private Sub radListView1_CellCreating(sender As Object, e As ListViewCellElementCreatingEventArgs)
+        Dim cell As DetailListViewDataCellElement = TryCast(e.CellElement, DetailListViewDataCellElement)
+        If cell IsNot Nothing AndAlso cell.Data.Name = "Name" Then
+            e.CellElement = New CustomDetailListViewDataCellElement(cell.RowElement, e.CellElement.Data)
+        End If
+    End Sub
+</code></pre>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Working With Repository Items</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Working With Repository Items">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="working-with-repository-items"><a href="#working-with-repository-items">Working With Repository Items</a></h1>
+
+<table>
+<tr><td>
+
+RELATED VIDEOS</td></tr>
+<tr><td>
+
+Introduction to the Visual Style Builder for
+                WinForms
+              
+
+In this recorded webinar, you will learn how
+              to build themes using the latest version of Visual Style
+              Builder. You will also learn what Theme Repositories are
+              and how they make creating themes easier. (Runtime:
+              42:56)![tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items 007](images/tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items007.png)
+
+[
+                    Introduction to the New Visual Style Builder for WinForms
+                  ](http://tv.telerik.com/winforms/visualstylebuilder/introduction-new-visual-style-builder-winforms)</td></tr>
+</table>
+
+<h2 id="overview"><a href="#overview">Overview</a></h2>
+
+<p>Repository and Repository Items are major concept in Visual Style Builder.<br>
+          These items allow you to quickly apply property settings per element<br>
+          basis and since repository items' settings are reused, the<br>
+          size of the generated XML files and the time needed to de-serialize them are<br>
+          optimized. Visual Style Builder allows for intuitive and straightforward<br>
+          Repository management through series of editors and User Experience tools such<br>
+          as drag-and-drop to an ItemState, on-the-fly drop-down of all available<br>
+          Repository Items, etc.</p>
+
+<h2 id="repository-item-types"><a href="#repository-item-types">Repository Item Types</a></h2>
+
+<p>Each repository contains items that can be reused throughout themes. The<br>
+          currently supported repository item types are as listed below:</p>
+
+<ul>
+<li><p>Fill</p></li>
+<li><p>Border</p></li>
+<li><p>Text</p></li>
+<li><p>Image</p></li>
+<li><p>Arrow</p></li>
+</ul>
+
+<p>The different repository item types are mapped to different types of<br>
+          elements. For example, Fill repository items can be only associated with<br>
+          instances of the FillPrimitive class. Following the same logic, Border<br>
+          repository items are only applicable to BorderPrimitive elements and Arrow<br>
+          repository items to ArrowPrimitive instances. Image and Text repository items<br>
+          are a bit different in terms of supported elements. For instance, Text<br>
+          repository items can applied both to TextPrimitive and VisualElement instances.<br>
+          Image repository items can be applied both to ImagePrimitive instances and<br>
+          VisualElements that support images. In general, you should not have any concern<br>
+          when applying repository items since the Visual Style Builder automatically<br>
+          filters the available repository items according to the currently styled<br>
+          elements.</p>
+
+<p>You can also create new repository items for the currently loaded<br>
+          repository. There are separate editors for each repository item type which are<br>
+          displayed accordingly. Before saving the newly created repository item, the<br>
+          Visual Style Builder checks whether its key is unique and if not, prompts you<br>
+          to change the key with a unique value.</p>
+
+<h2 id="repository-item-types-and-lightvisualelement"><a href="#repository-item-types-and-lightvisualelement">Repository Item Types and LightVisualElement</a></h2>
+
+<p>The LightVisualElement is a special type of primitive class that supports<br>
+          the functionality of all other primitives without building an element tree. In<br>
+          other words, the LightVisualElement paints its Fill, Border, Text and Image on<br>
+          its own. Therefore, the LightVisualElement is type of element that supports all<br>
+          Repository Item Types (excluding Arrow type) and thus, when editing such<br>
+          elements in the Visual Style Builder, the repository is filtered appropriately<br>
+          to display all repository items available.</p>
+
+<h2 id="associating-repository-items-with-elements-and-states"><a href="#associating-repository-items-with-elements-and-states">Associating Repository Items with Elements and States</a></h2>
+
+<p>You can easily associate a repository item with a given element for a<br>
+          specific state by dragging the repository item from the repository and dropping<br>
+          it onto the state in question:</p>
+
+<p><img src="images/tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items001.png" alt="tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items 001"></p>
+
+<p>The picture above shows how a repository item with name ButtonNormalFill is<br>
+          associated with the ButtonFill element of the RadButton control for the default<br>
+          (RadButtonElement) state.</p>
+
+<pre><code>      Another way to associate a repository item with an element for a given state is
+      to use the state’s Available Repository Items popup which is shown upon click
+      on the drop-down button on the right side of the state visual
+      representation:
+</code></pre>
+
+<p><img src="images/tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items002.png" alt="tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items 002"></p>
+
+<p>The Available Repository Items popup contains a list of repository items<br>
+          that can be associated with the selected state of the current element.<br>
+          Repository items that are associated to a Visual State are highlighted in red<br>
+          and are initially checked.</p>
+
+<h2 id="removing-repository-item-association"><a href="#removing-repository-item-association">Removing Repository Item Association</a></h2>
+
+<p>Depending on whether you want to remove all repository item associations or<br>
+          just a specific one, you can take two directions:</p>
+
+<pre><code>      • Press the ‘Remove All Repository Item Associations’ button which is
+      displayed on each state next to the drop-down button
+</code></pre>
+
+<p><img src="images/tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items003.png" alt="tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items 003"></p>
+
+<p>• Open the ‘Available Repository Items’ popup, click the Show Only Applied Repositories check box to view<br>
+          only the associates with this state repositories and uncheck the repository items to remove the association with them:</p>
+
+<p><img src="images/tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items004.png" alt="tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items 004"></p>
+
+<h2 id="editing-repository-items"><a href="#editing-repository-items">Editing Repository Items</a></h2>
+
+<p>You can easily edit a repository item by opening its editor from the ‘Edit<br>
+          Repository Item’ button for each repository item in the list as shown on the<br>
+          picture below:</p>
+
+<pre><code>       
+</code></pre>
+
+<p><img src="images/tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items005.png" alt="tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items 005"></p>
+
+<p>The ‘Edit Repository Item ‘ dialog is automatically adjusted to show<br>
+          specific controls for the specific repository item types. In general, however,<br>
+          the dialog provides you with possibility to define a key and a name for the<br>
+          repository item, as well as to define whether the repository item’s property<br>
+          settings are animated. You can also choose to modify the settings of the item<br>
+          and save a new repository item without overwriting the current one. On the<br>
+          right side of the dialog there is a property grid that displays all properties<br>
+          that can be modified for the repository item. The properties in bold have<br>
+          values defined in the repository item while the others have their default<br>
+          values:</p>
+
+<p><img src="images/tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items006.png" alt="tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items 006"></p>
+
+<blockquote>
+<p>When defining<br>
+            repository item key you should make sure that the key is unique in order to<br>
+            create/save the item.</p>
+</blockquote>
+
+<p>The Animate State Transition checkbox determines whether the repository<br>
+          item’s property values will be animated when a state of the element, to which<br>
+          the item is associated, is activated. For instance,  all color properties<br>
+          of the repository item, displayed in the dialog above, will be animated from<br>
+          the values present when the corresponding element state occurs, to the values<br>
+          defined in the property grid on the right. After editing the repository item,<br>
+          you can either cancel the modifications by pressing the "Cancel" button, save<br>
+          the modifications by pressing the "OK" button, or save a new repository item by<br>
+          pressing the "Save As New" button. The "Save As New" button is only visible<br>
+          when an already existing repository item is opened for edit.</p>
+
+<h2 id="deleting-repository-items"><a href="#deleting-repository-items">Deleting Repository Items</a></h2>
+
+<p>You can easily delete a repository item from the currently loaded repository<br>
+          by clicking on the red "Delete" button which resides next to the "Edit" button.<br>
+          You will be asked to confirm the operation and in case you do so, the<br>
+          repository item will be removed from the repository.  All references to<br>
+          this repository item will be removed also.</p>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

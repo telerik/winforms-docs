@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Format Providers Manager</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Format Providers Manager">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("spread-processing/formats-and-conversion/spreadprocessing-import-export-format-providers-manager.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/spread-processing/formats-and-conversion/spreadprocessing-import-export-format-providers-manager.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="format-providers-manager"><a href="#format-providers-manager">Format Providers Manager</a></h1>
+
+<p><strong>RadSpreadprocessing</strong>  contains a <strong>WorkbookFormatProvidersManager</strong><br><br>
+        class that allows you to specify a set of format providers and import or export files letting the manager to choose <br>
+        the appropriate format provider. The class also exposes methods that return all registered providers and supported file extensions.</p>
+
+<ul>
+<li><p><a href="#registering-unregistering-format-providers">Registering Unregistering Format Providers</a></p></li>
+<li><p><a href="#import">Import</a></p></li>
+<li><p><a href="#export">Export</a></p></li>
+<li><p><a href="#retrieve-registered-providers-and-supported-extensions">Retrieve Registered Providers and Supported Extensions</a></p></li>
+</ul>
+
+<h2 id="registering-unregistering-format-providers"><a href="#registering-unregistering-format-providers">Registering Unregistering Format Providers</a></h2>
+
+<p>The <strong>WorkbookFormatProvidersManager</strong> class contains two methods that allow you to register and unregister<br>
+        format providers respectively. The manager has the csv and txt format providers registered by default. <br>
+        The following snippet illustrates how to register the xlsx format provider.</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            WorkbookFormatProvidersManager.RegisterFormatProvider(new XlsxFormatProvider());
+</code></pre>
+
+<h4><strong>[VB]</strong></h4>
+
+<pre><code>        WorkbookFormatProvidersManager.RegisterFormatProvider(New XlsxFormatProvider())
+
+        '#End Region
+    End Sub
+
+    Private Sub UnregisterTxtFormatProvider()
+        '#Region "radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_1"
+
+        Dim provider As IWorkbookFormatProvider = WorkbookFormatProvidersManager.GetProviderByName("TxtFormatProvider")
+        If provider IsNot Nothing Then
+            WorkbookFormatProvidersManager.UnregisterFormatProvider(provider)
+        End If
+
+        '#End Region
+    End Sub
+
+    Private Sub Import()
+        '#Region "radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_2"
+
+        Dim workbook As Workbook
+        Dim openFileDialog As New OpenFileDialog()
+        If openFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Try
+                Dim extension As String = Path.GetExtension(openFileDialog.FileName)
+                Using input As Stream = openFileDialog.OpenFile()
+                    workbook = WorkbookFormatProvidersManager.Import(extension, input)
+                End Using
+            Catch ex As IOException
+                Throw New IOException("The file cannot be opened. It might be locked by another application.", ex)
+            End Try
+        End If
+
+        '#End Region
+    End Sub
+
+    Private Sub ExportCsvCustomDelimiter()
+        Dim workbook As New Workbook()
+
+        '#Region "radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_3"
+
+        Dim saveFileDialog As New SaveFileDialog()
+
+        If saveFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Dim extension As String = Path.GetExtension(saveFileDialog.FileName)
+            Using output As Stream = saveFileDialog.OpenFile()
+                WorkbookFormatProvidersManager.Export(workbook, extension, output)
+            End Using
+        End If
+
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p>You can also unregister format providers using the UnregisterFormatProvider() method. <br>
+        For example, the snippet below demonstrates how to unregister the TxtFormatProvider.</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            IWorkbookFormatProvider provider = WorkbookFormatProvidersManager.GetProviderByName("TxtFormatProvider");
+            if (provider != null)
+            {
+                WorkbookFormatProvidersManager.UnregisterFormatProvider(provider);
+            }
+</code></pre>
+
+<h4><strong>[VB]</strong></h4>
+
+<pre><code>        Dim provider As IWorkbookFormatProvider = WorkbookFormatProvidersManager.GetProviderByName("TxtFormatProvider")
+        If provider IsNot Nothing Then
+            WorkbookFormatProvidersManager.UnregisterFormatProvider(provider)
+        End If
+
+        '#End Region
+    End Sub
+
+    Private Sub Import()
+        '#Region "radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_2"
+
+        Dim workbook As Workbook
+        Dim openFileDialog As New OpenFileDialog()
+        If openFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Try
+                Dim extension As String = Path.GetExtension(openFileDialog.FileName)
+                Using input As Stream = openFileDialog.OpenFile()
+                    workbook = WorkbookFormatProvidersManager.Import(extension, input)
+                End Using
+            Catch ex As IOException
+                Throw New IOException("The file cannot be opened. It might be locked by another application.", ex)
+            End Try
+        End If
+
+        '#End Region
+    End Sub
+
+    Private Sub ExportCsvCustomDelimiter()
+        Dim workbook As New Workbook()
+
+        '#Region "radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_3"
+
+        Dim saveFileDialog As New SaveFileDialog()
+
+        If saveFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Dim extension As String = Path.GetExtension(saveFileDialog.FileName)
+            Using output As Stream = saveFileDialog.OpenFile()
+                WorkbookFormatProvidersManager.Export(workbook, extension, output)
+            End Using
+        End If
+
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h2 id="import"><a href="#import">Import</a></h2>
+
+<p>The format providers manager exposes an Import() method that takes one string argument, which specifies the extension of the file to be imported, <br>
+        and a Stream argument, which provides access to the file. The method tries to find a registered format provider that can handle the extension of the<br>
+        file you would like to import, and if such a provider is registered the file is imported. If the manager does not have an appropriate format registered,<br>
+        an <strong>UnsupportedFileFormatException</strong> is thrown.</p>
+
+<p>The following example demonstrates how to present the user with an OpenFileDialog and try to import the selected file. <br>
+        Note that you can use the <strong>GetOpenFileDialogFilter</strong> () method of the <strong>FileDialogHelper</strong> class to constructs<br>
+        the correct filter for all registered format providers.</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            Workbook workbook;
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                try
+                {
+                    string extension = Path.GetExtension(openFileDialog.FileName);
+                    using (Stream input = openFileDialog.OpenFile())
+                    {
+                        workbook = WorkbookFormatProvidersManager.Import(extension, input);
+                    }
+                }
+                catch (IOException ex)
+                {
+                    throw new IOException("The file cannot be opened. It might be locked by another application.", ex);
+                }
+            }
+</code></pre>
+
+<h4><strong>[VB]</strong></h4>
+
+<pre><code>        Dim workbook As Workbook
+        Dim openFileDialog As New OpenFileDialog()
+        If openFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Try
+                Dim extension As String = Path.GetExtension(openFileDialog.FileName)
+                Using input As Stream = openFileDialog.OpenFile()
+                    workbook = WorkbookFormatProvidersManager.Import(extension, input)
+                End Using
+            Catch ex As IOException
+                Throw New IOException("The file cannot be opened. It might be locked by another application.", ex)
+            End Try
+        End If
+
+        '#End Region
+    End Sub
+
+    Private Sub ExportCsvCustomDelimiter()
+        Dim workbook As New Workbook()
+
+        '#Region "radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_3"
+
+        Dim saveFileDialog As New SaveFileDialog()
+
+        If saveFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Dim extension As String = Path.GetExtension(saveFileDialog.FileName)
+            Using output As Stream = saveFileDialog.OpenFile()
+                WorkbookFormatProvidersManager.Export(workbook, extension, output)
+            End Using
+        End If
+
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p>You can achieve the same result through using the <strong>OpenFile</strong> command. In fact, the command executes exactly the same code as above. <br>
+          That said, make sure you register the format providers you would like to use before using the command.</p>
+
+<h2 id="export"><a href="#export">Export</a></h2>
+
+<p>The format providers manager contains an <strong>Export()</strong> method that takes three arguments: the workbook that is to be exported, <br>
+          a string that specified the extension of the saved file, and a Stream that will contain the data. The method attempts to find a provider that can<br>
+          handle a file of the specified extension and if such a provider is registered, the file is saved. If the manager does not have an appropriate <br>
+          registered provider, an <strong>UnsupportedFileFormatException</strong> is raised.     </p>
+
+<p>The next example illustrates how to use the <strong>Export()</strong> method to save a file. The sample code presents the user with <br>
+        the SaveFileDialog. Note that here again you can use the <strong>GetOpenFileDialogFilter()</strong> method of the <strong>FileDialogHelper</strong> <br>
+          class to construct the correct filter for all registered format providers.</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            SaveFileDialog saveFileDialog = new SaveFileDialog();
+
+            if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                string extension = Path.GetExtension(saveFileDialog.FileName);
+                using (Stream output = saveFileDialog.OpenFile())
+                {
+                    WorkbookFormatProvidersManager.Export(workbook, extension, output);
+                }
+            }
+</code></pre>
+
+<h4><strong>[VB]</strong></h4>
+
+<pre><code>        Dim saveFileDialog As New SaveFileDialog()
+
+        If saveFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Dim extension As String = Path.GetExtension(saveFileDialog.FileName)
+            Using output As Stream = saveFileDialog.OpenFile()
+                WorkbookFormatProvidersManager.Export(workbook, extension, output)
+            End Using
+        End If
+
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p>You can achieve the same result through using the <strong>SaveFile</strong> command. In fact, the command executes exactly the same code as above. <br>
+        That said, make sure you register the format providers you would like to use before using the command.</p>
+
+<h2 id="retrieve-registered-providers-and-supported-extensions"><a href="#retrieve-registered-providers-and-supported-extensions">Retrieve Registered Providers and Supported Extensions</a></h2>
+
+<p>The <strong>WorkbookFormatProvidersManager</strong> class offers several approaches to retrieve the registered format providers. <br>
+        The class offers the GetProviderByName() static method that searches through the registered providers to find a provider with a specific name. <br>
+        Also, the manager exposes the <strong>GetProvderByExtension</strong> extension. The class also contains a static method<br>
+          ____xGetSupportedExtensions()__ that returns an IEnumeable of the currently supported file extensions.</p>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

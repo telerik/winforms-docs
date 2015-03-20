@@ -1,0 +1,497 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Data Binding Walkthrough</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Data Binding Walkthrough">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("scheduler/data-binding/data-binding-walkthrough.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/scheduler/data-binding/data-binding-walkthrough.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="data-binding-walkthrough"><a href="#data-binding-walkthrough">Data Binding Walkthrough</a></h1>
+
+<p>This walkthrough will cover creating and binding RadScheduler to a data source in a step-by-step manner</p>
+
+<blockquote>
+<p>Another example of binding RadScheduler is available in our<br>
+          <a href="http://www.telerik.com/support/documentation-and-tutorials/step-by-step-tutorial-for-winforms.aspx">Telerik UI for WinForms Step-by-step Tutorial</a></p>
+</blockquote>
+
+<h2 id="the-database"><a href="#the-database">The database</a></h2>
+
+<p>RadScheduler has a very flexible binding system which can cover various binding scenarios.<br>
+          Most of them are covered in the next articles. Here we will cover the scenario with binding<br>
+          to a database in which appointments and resources are in a many-to-many relation.<br>
+          A sample database ships with our products and can be found under<br>
+          [Your installation directory]\Examples\QuickStart\DataSources\SchedulerData.mdb.<br>
+          By default the installation directory is <em>C:\Program Files\Telerik\UI for WinForms\Version\</em></p>
+
+<p>The following screen shot demonstrates the schema of the database.<img src="images/scheduler-data-binding-data-binding-walkthrough001.png" alt="scheduler-data-binding-data-binding-walkthrough 001"></p>
+
+<h2 id="binding-the-scheduler"><a href="#binding-the-scheduler">Binding the Scheduler</a></h2>
+
+<p>Let’s assume you have added a RadScheduler to your form and you want to bind it to a data source.<br>
+          To do so you must first create and set up a SchedulerBindingDataSource instance. SchedulerBindingDataSource<br>
+          is a component and is available in your toolbox. To setup a SchedulerBindingDataSource, follow these steps:</p>
+
+<ol>
+<li><p>Add a <strong>SchedulerBindingDataSource</strong> from the Toolbox to the form.</p></li>
+<li><p>In the Properties window, open the <strong>EventProvider</strong> property. Drop down the<br>
+          <strong>DataSource</strong> sub-property list and select <strong>Add Project DataSource...</strong><br>
+          This step will display the Data Source Configuration Wizard dialog.<br>
+        <img src="images/scheduler-data-binding-data-binding-walkthrough002.png" alt="scheduler-data-binding-data-binding-walkthrough 002"></p></li>
+<li><p>Complete this wizard by choosing <strong>Access Database File</strong> connection<br>
+          and selecting the sample database located under the \Examples\DataSources directory. This will<br>
+          create a DataSet component and add it to the component tray below the form designer.<br>
+        <img src="images/scheduler-data-binding-data-binding-walkthrough003.png" alt="scheduler-data-binding-data-binding-walkthrough 003"></p></li>
+<li><p>Click the "SchedulerDataDataSet" Smart Tag and select <strong>Edit in Dataset Designer</strong>.<br>
+          Add a relation between the Appointments and AppointmentsResources tables and name it "Appointments_AppointmentsResources".<br>
+          Make the "Key Columns" entry be "ID" from the Appointments table and set "Foreign Key Columns" from the AppointmentsResources<br>
+          table to "AppointmentID".<br>
+        <img src="images/scheduler-data-binding-data-binding-walkthrough004.png" alt="scheduler-data-binding-data-binding-walkthrough 004"></p></li>
+<li><p>When you create a dataset from the MS Access database, several properties of the auto number fields are wrongly set.<br>
+          Please, set these as in the right (correct) version below:<br>
+        <img src="images/scheduler-data-binding-data-binding-walkthrough005.png" alt="scheduler-data-binding-data-binding-walkthrough 005"></p></li>
+<li><p>Build the project. This step will create several useful adapter components that we will use later to fill the dataset.<br>
+        <img src="images/scheduler-data-binding-data-binding-walkthrough006.png" alt="scheduler-data-binding-data-binding-walkthrough 006"></p></li>
+</ol>
+
+<h2 id="mapping-the-properties"><a href="#mapping-the-properties">Mapping the properties</a></h2>
+
+<p>In order to map the fields of your data source to the correct properties of scheduler’s objects,<br>
+          you need to setup two mapping info instances: one of type AppointmentMappingInfo and one of type ResourceMappingInfo.<br>
+          You can do this either through code or in the Visual Studio designer.</p>
+
+<p>To setup appointment mapping at design time, click the Edit Appointment Mapping button in the smart tag menu<br>
+          of your SchedulerBindingDataSource instance. To edit the resource mapping, click the Edit Resource Mapping button.<br>
+        <img src="images/scheduler-data-binding-data-binding-walkthrough007.png" alt="scheduler-data-binding-data-binding-walkthrough 007"></p>
+
+<p>When you do so, a dialog will appear letting you choose the field of the data source which should be mapped<br>
+          to the corresponding appointment/resource property.</p>
+
+<blockquote>
+<p>The data source fields should be set prior editing the mapping in order to get automatically populated<br>
+            with data source fields drop downs.</p>
+
+<p>The Resources property of the AppointmentMappingInfo should be set with the name of the relation<br>
+            that connects the Appointments and the AppointmentsResources tables. The ResourceId property should<br>
+            be set with the name of the column in the AppointmentsResources table that holds the id of the resource.</p>
+</blockquote>
+
+<h2 id="programatically-mapping"><a href="#programatically-mapping">Programatically mapping</a></h2>
+
+<p>In order to programatically map the fields of your data source to the correct properties of scheduler’s objects,<br>
+          you need to setup two mapping info instances: one of type AppointmentMappingInfo and one of type ResourceMappingInfo<br>
+          and assign them to the SchedulerBindingDataSource instance as it is demonstrated below.</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            AppointmentMappingInfo appointmentMappingInfo = new AppointmentMappingInfo();
+            appointmentMappingInfo.BackgroundId = "BackgroundID";
+            appointmentMappingInfo.Description = "Description";
+            appointmentMappingInfo.End = "End";
+            appointmentMappingInfo.Location = "Location";
+            appointmentMappingInfo.MasterEventId = "ParentID";
+            appointmentMappingInfo.RecurrenceRule = "RecurrenceRule";
+            appointmentMappingInfo.ResourceId = "ResourceID";
+            appointmentMappingInfo.Resources = "AppointmentsAppointmentsResources";
+            appointmentMappingInfo.Start = "Start";
+            appointmentMappingInfo.StatusId = "StatusID";
+            appointmentMappingInfo.Summary = "Summary";
+            schedulerBindingDataSource1.EventProvider.Mapping = appointmentMappingInfo;
+
+            ResourceMappingInfo resourceMappingInfo = new ResourceMappingInfo();
+            resourceMappingInfo.Id = "ID";
+            resourceMappingInfo.Name = "ResourceName";
+            this.schedulerBindingDataSource1.ResourceProvider.Mapping = resourceMappingInfo;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Dim appointmentMappingInfo As New AppointmentMappingInfo()
+        appointmentMappingInfo.BackgroundId = "BackgroundID"
+        appointmentMappingInfo.Description = "Description"
+        appointmentMappingInfo.[End] = "End"
+        appointmentMappingInfo.Location = "Location"
+        appointmentMappingInfo.MasterEventId = "ParentID"
+        appointmentMappingInfo.RecurrenceRule = "RecurrenceRule"
+        appointmentMappingInfo.ResourceId = "ResourceID"
+        appointmentMappingInfo.Resources = "AppointmentsAppointmentsResources"
+        appointmentMappingInfo.Start = "Start"
+        appointmentMappingInfo.StatusId = "StatusID"
+        appointmentMappingInfo.Summary = "Summary"
+        SchedulerBindingDataSource1.EventProvider.Mapping = appointmentMappingInfo
+
+        Dim resourceMappingInfo As New ResourceMappingInfo()
+        resourceMappingInfo.Id = "ID"
+        resourceMappingInfo.Name = "ResourceName"
+        Me.SchedulerBindingDataSource1.ResourceProvider.Mapping = resourceMappingInfo
+</code></pre>
+
+<h2 id="retrieving-the-data"><a href="#retrieving-the-data">Retrieving the data</a></h2>
+
+<p>To retrieve the data, first we need to fill the data set:</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            this.resourcesTableAdapter.Fill(this.schedulerDataDataSet.Resources);
+            this.appointmentsResourcesTableAdapter.Fill(this.schedulerDataDataSet.AppointmentsResources);
+            this.appointmentsTableAdapter.Fill(this.schedulerDataDataSet.Appointments);
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Me.ResourcesTableAdapter.Fill(Me.SchedulerDataDataSet.Resources)
+        Me.AppointmentsResourcesTableAdapter.Fill(Me.SchedulerDataDataSet.AppointmentsResources)
+        Me.AppointmentsTableAdapter.Fill(Me.SchedulerDataDataSet.Appointments)
+</code></pre>
+
+<blockquote>
+<p>You should fill the tables in the exact same order if you have already set the DataSource property of RadScheduler.<br>
+            Alternatively, you can just call the DataBind method of RadScheduler after you fill the tables.</p>
+</blockquote>
+
+<p>Now we need to assign the Appointments and Resources tables from the data set to our SchedulerBindingDataSource<br>
+          (the following can also be set at design time through the Smart Tag of your SchedulerBindingDataSource instance<br>
+          as you can see on the previous image):</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            schedulerBindingDataSource1.ResourceProvider.DataSource = schedulerDataDataSet.Resources;
+            schedulerBindingDataSource1.EventProvider.DataSource = schedulerDataDataSet.Appointments;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        SchedulerBindingDataSource1.ResourceProvider.DataSource = SchedulerDataDataSet.Resources
+        SchedulerBindingDataSource1.EventProvider.DataSource = SchedulerDataDataSet.Appointments
+</code></pre>
+
+<p>Finally, we assign our SchedulerBindingDataSource instance to RadScheduler as its DataSource.<br>
+          This can be achieved either through the Smart Tag of RadScheduler or via code:<br>
+        <img src="images/scheduler-data-binding-data-binding-walkthrough008.png" alt="scheduler-data-binding-data-binding-walkthrough 008"></p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            radScheduler1.DataSource = schedulerBindingDataSource1;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        RadScheduler1.DataSource = SchedulerBindingDataSource1
+</code></pre>
+
+<blockquote>
+<p>If the above steps are not performed in the same order, RadScheduler might not display the appointments.<br>
+            In this case you can try calling the DataBind method of RadScheduler or the Rebind method of SchedulerBindingDataSource.</p>
+</blockquote>
+
+<h2 id="updating-the-database"><a href="#updating-the-database">Updating the database</a></h2>
+
+<p>Add the following code to the Click event handler for an "Update" button, which will update the data source.<br>
+          (for more information on saving data, see MSDN:<br>
+          <a href="http://msdn.microsoft.com/en-us/library/ms171933.aspx">How to: Update Data by Using a TableAdapter</a><br>
+          ).Note that we need to update the added, modified and deleted records in a certain order because of the relations between our tables.<br>
+          We also need to use the two dictionaries to keep track of the automatically generated IDs before and after calling Update.<br>
+          This is due to a synchronization problem between the database and the dataset, where the data adapter could not update correctly<br>
+          the ID of the added row. This happens because the IDs generated locally might differ from the IDs generated from the database<br>
+          (for example when multiple users work simultaneously) and we use this IDs to store the relation between appointments and resources.<br>
+          (Here is an MSDN article which describes this limitation:<br>
+          <a href="http://msdn.microsoft.com/en-us/library/ks9f57t0%28VS.71%29.aspx">Retrieving Identity or Autonumber Values</a><br>
+          )</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            appointmentsResourcesTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+
+            SchedulerDataDataSet.AppointmentsResourcesDataTable deletedRelationRecords =
+                            this.schedulerDataDataSet.AppointmentsResources.GetChanges(DataRowState.Deleted)
+                            as SchedulerDataDataSet.AppointmentsResourcesDataTable;
+
+            SchedulerDataDataSet.AppointmentsResourcesDataTable newRelationRecords =
+                            this.schedulerDataDataSet.AppointmentsResources.GetChanges(DataRowState.Added)
+                            as SchedulerDataDataSet.AppointmentsResourcesDataTable;
+
+            SchedulerDataDataSet.AppointmentsResourcesDataTable modifiedRelationRecords =
+                            this.schedulerDataDataSet.AppointmentsResources.GetChanges(DataRowState.Modified)
+                            as SchedulerDataDataSet.AppointmentsResourcesDataTable;
+
+            SchedulerDataDataSet.AppointmentsDataTable newAppointmentRecords =
+                this.schedulerDataDataSet.Appointments.GetChanges(DataRowState.Added) as SchedulerDataDataSet.AppointmentsDataTable;
+
+            SchedulerDataDataSet.AppointmentsDataTable deletedAppointmentRecords =
+                this.schedulerDataDataSet.Appointments.GetChanges(DataRowState.Deleted) as SchedulerDataDataSet.AppointmentsDataTable;
+
+            SchedulerDataDataSet.AppointmentsDataTable modifiedAppointmentRecords =
+                this.schedulerDataDataSet.Appointments.GetChanges(DataRowState.Modified) as SchedulerDataDataSet.AppointmentsDataTable;
+
+            try
+            {
+                if (newAppointmentRecords != null)
+                {
+                    Dictionary&lt;int, int&gt; newAppointmentIds = new Dictionary&lt;int, int&gt;();
+                    Dictionary&lt;object, int&gt; oldAppointmentIds = new Dictionary&lt;object, int&gt;();
+
+                    for (int i = 0; i &lt; newAppointmentRecords.Count; i++)
+                    {
+                        oldAppointmentIds.Add(newAppointmentRecords[i], newAppointmentRecords[i].ID);
+                    }
+
+                    appointmentsTableAdapter.Update(newAppointmentRecords);
+
+                    for (int i = 0; i &lt; newAppointmentRecords.Count; i++)
+                    {
+                        newAppointmentIds.Add(oldAppointmentIds[newAppointmentRecords[i]], newAppointmentRecords[i].ID);
+                    }
+
+                    if (newRelationRecords!=null)
+                    {
+                        for (int i = 0; i &lt; newRelationRecords.Count; i++)
+                        {
+                        newRelationRecords[i].AppointmentID = newAppointmentIds[newRelationRecords[i].AppointmentID];
+                        }
+                    }
+                }
+
+                if (deletedRelationRecords != null)
+                {
+                    appointmentsResourcesTableAdapter.Update(deletedRelationRecords);
+                }
+
+                if (deletedAppointmentRecords != null)
+                {
+                    appointmentsTableAdapter.Update(deletedAppointmentRecords);
+                }
+                if (modifiedAppointmentRecords != null)
+                {
+                    appointmentsTableAdapter.Update(modifiedAppointmentRecords);
+                }
+
+                if (newRelationRecords != null)
+                {
+                    appointmentsResourcesTableAdapter.Update(newRelationRecords);
+                }
+                if (modifiedRelationRecords != null)
+                {
+                    appointmentsResourcesTableAdapter.Update(modifiedRelationRecords);
+                }
+
+                this.schedulerDataDataSet.AcceptChanges();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(string.Format("An error occurred during the update process:\n{0}", ex.Message));
+            }
+            finally
+            {
+                if (deletedRelationRecords != null)
+                {
+                    deletedRelationRecords.Dispose();
+                }
+                if (newRelationRecords != null)
+                {
+                    newRelationRecords.Dispose();
+                }
+                if (modifiedRelationRecords != null)
+                {
+                    modifiedRelationRecords.Dispose();
+                }
+            }
+
+            lblStatus.Text = "Updated scheduler at " + DateTime.Now.ToString();
+        }
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>    Private Sub btnUpdate_Click(ByVal sender As Object, ByVal e As EventArgs)
+        AppointmentsResourcesTableAdapter.Adapter.AcceptChangesDuringUpdate = False
+
+        Dim deletedRelationRecords As SchedulerDataDataSet.AppointmentsResourcesDataTable = TryCast(Me.SchedulerDataDataSet.AppointmentsResources.GetChanges(DataRowState.Deleted), SchedulerDataDataSet.AppointmentsResourcesDataTable)
+        Dim newRelationRecords As SchedulerDataDataSet.AppointmentsResourcesDataTable = TryCast(Me.SchedulerDataDataSet.AppointmentsResources.GetChanges(DataRowState.Added), SchedulerDataDataSet.AppointmentsResourcesDataTable)
+        Dim modifiedRelationRecords As SchedulerDataDataSet.AppointmentsResourcesDataTable = TryCast(Me.SchedulerDataDataSet.AppointmentsResources.GetChanges(DataRowState.Modified), SchedulerDataDataSet.AppointmentsResourcesDataTable)
+
+        Dim newAppointmentRecords As SchedulerDataDataSet.AppointmentsDataTable = TryCast(Me.SchedulerDataDataSet.Appointments.GetChanges(DataRowState.Added), SchedulerDataDataSet.AppointmentsDataTable)
+        Dim deletedAppointmentRecords As SchedulerDataDataSet.AppointmentsDataTable = TryCast(Me.SchedulerDataDataSet.Appointments.GetChanges(DataRowState.Deleted), SchedulerDataDataSet.AppointmentsDataTable)
+        Dim modifiedAppointmentRecords As SchedulerDataDataSet.AppointmentsDataTable = TryCast(Me.SchedulerDataDataSet.Appointments.GetChanges(DataRowState.Modified), SchedulerDataDataSet.AppointmentsDataTable)
+
+        Try
+            If newAppointmentRecords IsNot Nothing Then
+                Dim newAppointmentIds As New Dictionary(Of Integer, Integer)()
+                Dim oldAppointmentIds As New Dictionary(Of Object, Integer)()
+
+                For i As Integer = 0 To newAppointmentRecords.Count - 1
+                    oldAppointmentIds.Add(newAppointmentRecords(i), newAppointmentRecords(i).ID)
+                Next
+
+                AppointmentsTableAdapter.Update(newAppointmentRecords)
+
+                For i As Integer = 0 To newAppointmentRecords.Count - 1
+                    newAppointmentIds.Add(oldAppointmentIds(newAppointmentRecords(i)), newAppointmentRecords(i).ID)
+                Next
+
+                If newRelationRecords IsNot Nothing Then
+                    For i As Integer = 0 To newRelationRecords.Count - 1
+                        newRelationRecords(i).AppointmentID = newAppointmentIds(newRelationRecords(i).AppointmentID)
+                    Next
+                End If
+            End If
+
+            If deletedRelationRecords IsNot Nothing Then
+                AppointmentsResourcesTableAdapter.Update(deletedRelationRecords)
+            End If
+
+            If deletedAppointmentRecords IsNot Nothing Then
+                AppointmentsTableAdapter.Update(deletedAppointmentRecords)
+            End If
+            If modifiedAppointmentRecords IsNot Nothing Then
+                AppointmentsTableAdapter.Update(modifiedAppointmentRecords)
+            End If
+
+            If newRelationRecords IsNot Nothing Then
+                AppointmentsResourcesTableAdapter.Update(newRelationRecords)
+            End If
+            If modifiedRelationRecords IsNot Nothing Then
+                AppointmentsResourcesTableAdapter.Update(modifiedRelationRecords)
+            End If
+
+            Me.SchedulerDataDataSet.AcceptChanges()
+        Catch ex As Exception
+            MessageBox.Show(String.Format("An error occurred during the update process:" &amp; vbLf &amp; "{0}", ex.Message))
+        Finally
+            If deletedRelationRecords IsNot Nothing Then
+                deletedRelationRecords.Dispose()
+            End If
+            If newRelationRecords IsNot Nothing Then
+                newRelationRecords.Dispose()
+            End If
+            If modifiedRelationRecords IsNot Nothing Then
+                modifiedRelationRecords.Dispose()
+            End If
+        End Try
+
+        lblStatus.Text = "Updated scheduler at " + DateTime.Now.ToString()
+    End Sub
+</code></pre>
+
+<p><img src="images/scheduler-data-binding-data-binding-walkthrough009.png" alt="scheduler-data-binding-data-binding-walkthrough 009"></p>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

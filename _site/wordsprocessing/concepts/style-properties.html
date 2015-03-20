@@ -1,0 +1,1269 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Style Properties</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Style Properties">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("wordsprocessing/concepts/style-properties.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/wordsprocessing/concepts/style-properties.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="style-properties"><a href="#style-properties">Style Properties</a></h1>
+
+<p><strong>Style property</strong> is part of the style system, used to hold information about a formatting value of the document elements. It<br>
+        can be used to check if the value is local or it is inherited from base style. Information about how the style system works and how values are<br>
+        inherited from base styles can be found in the Style Evaluation and Inheritance section of the <a href="/devtools/winforms/wordsprocessing/concepts/styles">Styles</a><br>
+        article.</p>
+
+<ul>
+<li><p><a href="#style-property-implementation-overview">Style Property Implementation Overview</a></p></li>
+<li><p><a href="#style-property-definitions">Style Property Definitions</a></p></li>
+<li><p><a href="#using-style-properties">Using Style Properties</a></p></li>
+<li><p><a href="#style-properties-default-values">Style Properties Default Values</a></p></li>
+</ul>
+
+<h2 id="style-property-implementation-overview"><a href="#style-property-implementation-overview">Style Property Implementation Overview</a></h2>
+
+<p>Style properties are exposed through<br>
+          <a href="http://www.telerik.com/help/winforms/t_telerik_windows_documents_flow_model_styles_core_istyleproperty.html">IStyleProperty<t></t></a><br>
+          interface, which contains the following properties and methods:</p>
+
+<ul>
+<li><p><strong>LocalValue</strong>: Used to get or set the local value. If it is not set, the value is <strong>null</strong>.</p></li>
+<li><p><strong>HasLocalValue</strong>: Returns value indicating whether the style property has local value.</p></li>
+<li><p><strong>GetActualValue()</strong>: Returns the actual value of the property. This value is evaluated on every call by the style system<br>
+          using the evaluation rules described <a href="/devtools/winforms/wordsprocessing/concepts/styles">Styles</a>.</p></li>
+<li><p><strong>ClearValue()</strong>: Clears the local value.</p></li>
+<li><p><strong>PropertyDefinition</strong>: The <a href="#style-property-definitions">property definition</a> is exposed through the<br>
+          <a href="http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html">IStylePropertyDefinition</a><br>
+          interface and specifies some details for the style property as:</p></li>
+<li><p><strong>PropertyName</strong>: Returns the name of the style property.</p></li>
+<li><p><strong>StylePropertyType</strong>: Returns the type of the style property.</p></li>
+<li><p><strong>Validation</strong>: Used to determine if a value is valid for this style property.</p></li>
+<li><p><strong>GetDefaultValueAsObject()</strong>: This method returns the default value as object.</p></li>
+</ul>
+
+<p>Some of the style properties always contain local value and are normally referred to as local style properties. They are used only by the document<br>
+          elements and their values are not respected by styles and style inheritance .</p>
+
+<h2 id="style-property-definitions"><a href="#style-property-definitions">Style Property Definitions</a></h2>
+
+<p>Style property definition is represented from the <strong>StylePropertyDefinition<t></t></strong> class and can be accessed from the style<br>
+          property itself (through its base interface <strong>IStylePropertyDefinition</strong>) or as a static member of<br>
+          <a href="/devtools/winforms/wordsprocessing/model/run">Run</a>, <a href="/devtools/winforms/wordsprocessing/model/paragraph">Paragraph</a>,<br>
+          <a href="/devtools/winforms/wordsprocessing/model/table">Table</a>, <a href="/devtools/winforms/wordsprocessing/model/tablerow">TableRow</a> and<br>
+          <a href="/devtools/winforms/wordsprocessing/model/tablecell">TableCell</a> document elements. Style property definitions specify the following details of the style<br>
+          property:</p>
+
+<ul>
+<li><p><strong>PropertyName</strong>: Specifies the name of the style property.</p></li>
+<li><p><strong>efaultValue</strong>: Specifies the default value of the style property.</p></li>
+<li><p><strong>StylePropertyType</strong>: Specifies the type of the style property as<br>
+          <a href="http://www.telerik.com/help/winforms/t_telerik_windows_documents_flow_model_styles_core_stylepropertytype.html">StylePropertyType</a><br>
+          enumeration.</p></li>
+<li><p><strong>Validation</strong>: Used to determine if a value is valid for the style property associated with this style property definition.</p></li>
+</ul>
+
+<h2 id="using-style-properties"><a href="#using-style-properties">Using Style Properties</a></h2>
+
+<h3 id="using-style-properties-Style"><a href="#using-style-properties-Style">Style properties in document elements</a></h3>
+
+<p>Document elements expose sets of style properties through the <strong>Properties</strong> property. For convenience style properties can<br>
+              be also used through CLR shorthand properties exposed directly from the document elements. Shorthand property getter gets the<br>
+              <em>actual value</em> of the property, while property setter sets the <em>local</em> value of the property.</p>
+
+<p>Here is example for equivalent getting of a value with CLR property and style property:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>            bool keepOnOnePageActualValueShorthand = paragraph.KeepOnOnePage;
+            bool keepOnOnePageActualValue = paragraph.Properties.KeepOnOnePage.GetActualValue().Value;
+</code></pre>
+
+<h4><strong>VB NET</strong></h4>
+
+<pre><code>            Dim keepOnOnePageActualValueShorthand As Boolean = paragraph.KeepOnOnePage
+            Dim keepOnOnePageActualValue As Boolean = paragraph.Properties.KeepOnOnePage.GetActualValue().Value
+            '#End Region
+        End Sub
+
+        Private Sub SetParagraphProperties(paragraph As Paragraph)
+            '#Region "radwordsprocessing-concepts-style-properties_1"
+            paragraph.KeepOnOnePage = True
+            paragraph.Properties.KeepOnOnePage.LocalValue = True
+            '#End Region
+        End Sub
+
+        Private Sub GetLocalProperties(style As Style)
+            '#Region "radwordsprocessing-concepts-style-properties_2"
+            Dim keepOnOnePage As System.Nullable(Of Boolean) = style.ParagraphProperties.KeepOnOnePage.LocalValue
+            '#End Region
+        End Sub
+
+        Private Sub GetActualProperties(style As Style)
+            '#Region "radwordsprocessing-concepts-style-properties_3"
+            Dim keepOnOnePage As Boolean = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value
+            '#End Region
+        End Sub
+
+        Private Sub GetDefaultvalueOfProperty()
+            '#Region "radwordsprocessing-concepts-style-properties_4"
+            Dim keepOnOnePageDefaultValue As Boolean = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value
+            '#End Region
+        End Sub
+    End Class
+</code></pre>
+
+<p>Here is example for equivalent setting of a value with CLR property and style property:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>            paragraph.KeepOnOnePage = true;
+            paragraph.Properties.KeepOnOnePage.LocalValue = true;
+</code></pre>
+
+<h4><strong>VB NET</strong></h4>
+
+<pre><code>            paragraph.KeepOnOnePage = True
+            paragraph.Properties.KeepOnOnePage.LocalValue = True
+            '#End Region
+        End Sub
+
+        Private Sub GetLocalProperties(style As Style)
+            '#Region "radwordsprocessing-concepts-style-properties_2"
+            Dim keepOnOnePage As System.Nullable(Of Boolean) = style.ParagraphProperties.KeepOnOnePage.LocalValue
+            '#End Region
+        End Sub
+
+        Private Sub GetActualProperties(style As Style)
+            '#Region "radwordsprocessing-concepts-style-properties_3"
+            Dim keepOnOnePage As Boolean = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value
+            '#End Region
+        End Sub
+
+        Private Sub GetDefaultvalueOfProperty()
+            '#Region "radwordsprocessing-concepts-style-properties_4"
+            Dim keepOnOnePageDefaultValue As Boolean = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value
+            '#End Region
+        End Sub
+    End Class
+</code></pre>
+
+<h3 id="using-style-properties-Style"><a href="#using-style-properties-Style">Style properties in styles</a></h3>
+
+<p>The style properties in a style are accessible through the following property sets: <strong>CharacterProperties</strong>,<br>
+              <strong>ParagraphProperties</strong>, <strong>TableProperties</strong>, <strong>TableRowProperties</strong> and<br>
+              <strong>TableCellProperties</strong>.</p>
+
+<p>Here is a code snippet illustrating how to get the local value of a style property in style:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>            bool? keepOnOnePage = style.ParagraphProperties.KeepOnOnePage.LocalValue;
+</code></pre>
+
+<h4><strong>VB NET</strong></h4>
+
+<pre><code>            Dim keepOnOnePage As System.Nullable(Of Boolean) = style.ParagraphProperties.KeepOnOnePage.LocalValue
+            '#End Region
+        End Sub
+
+        Private Sub GetActualProperties(style As Style)
+            '#Region "radwordsprocessing-concepts-style-properties_3"
+            Dim keepOnOnePage As Boolean = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value
+            '#End Region
+        End Sub
+
+        Private Sub GetDefaultvalueOfProperty()
+            '#Region "radwordsprocessing-concepts-style-properties_4"
+            Dim keepOnOnePageDefaultValue As Boolean = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value
+            '#End Region
+        End Sub
+    End Class
+</code></pre>
+
+<p>Here is a code snippet illustrating how to get the actual value of style property in style:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>            bool keepOnOnePage = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value;
+</code></pre>
+
+<h4><strong>VB NET</strong></h4>
+
+<pre><code>            Dim keepOnOnePage As Boolean = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value
+            '#End Region
+        End Sub
+
+        Private Sub GetDefaultvalueOfProperty()
+            '#Region "radwordsprocessing-concepts-style-properties_4"
+            Dim keepOnOnePageDefaultValue As Boolean = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value
+            '#End Region
+        End Sub
+    End Class
+</code></pre>
+
+<h2 id="style-properties-default-values"><a href="#style-properties-default-values">Style Properties Default Values</a></h2>
+
+<p>The default values of all style properties are available in their <a href="Style_Property_Definitions">StylePropertyDefinitions</a> and<br>
+          cannot be changed. To set the default values of properties for particular document you can change the default styles for the document.</p>
+
+<p>The following code snippet illustrates how to get the default value for a style property:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>            bool keepOnOnePageDefaultValue = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value;
+</code></pre>
+
+<h4><strong>VB NET</strong></h4>
+
+<pre><code>            Dim keepOnOnePageDefaultValue As Boolean = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value
+            '#End Region
+        End Sub
+    End Class
+</code></pre>
+
+<p>Following is a list of all available style properties and their default values:</p>
+
+<table>
+<th></th>
+<tr>
+<td>
+
+Name</td>
+<td>
+
+Description</td>
+<td>
+
+Default Value</td>
+</tr>
+<tr>
+<td>
+
+<b>CharacterProperties</b>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+
+FontFamily</td>
+<td>
+
+The font family.</td>
+<td>
+
+Verdana</td>
+</tr>
+<tr>
+<td>
+
+FontSize</td>
+<td>
+
+The size of the font.</td>
+<td>
+
+13.3333333333333</td>
+</tr>
+<tr>
+<td>
+
+FontStyle</td>
+<td>
+
+The font style.</td>
+<td>
+
+Normal</td>
+</tr>
+<tr>
+<td>
+
+FontWeight</td>
+<td>
+
+The font weight.</td>
+<td>
+
+Normal</td>
+</tr>
+<tr>
+<td>
+
+ForegroundColor</td>
+<td>
+
+The foreground color.</td>
+<td>
+
+Black</td>
+</tr>
+<tr>
+<td>
+
+HighlightColor</td>
+<td>
+
+The color of the highlight.</td>
+<td>
+
+Transparent</td>
+</tr>
+<tr>
+<td>
+
+BaselineAlignment</td>
+<td>
+
+The baseline alignment.</td>
+<td>
+
+Baseline</td>
+</tr>
+<tr>
+<td>
+
+Strikethrough</td>
+<td>
+
+The strikethrough.</td>
+<td>
+
+False</td>
+</tr>
+<tr>
+<td>
+
+BackgroundColor</td>
+<td>
+
+The color of the background.</td>
+<td>
+
+Transparent</td>
+</tr>
+<tr>
+<td>
+
+ShadingPatternColor</td>
+<td>
+
+A value indicating the color for any foreground pattern used in this shading.</td>
+<td>
+
+Transparent</td>
+</tr>
+<tr>
+<td>
+
+ShadingPattern</td>
+<td>
+
+A value indicating the pattern which shall be used to lay the pattern color over the background color for this shading.</td>
+<td>
+
+Clear</td>
+</tr>
+<tr>
+<td>
+
+UnderlineColor</td>
+<td>
+
+The color for the underlining.</td>
+<td>
+
+Transparent</td>
+</tr>
+<tr>
+<td>
+
+UnderlinePattern</td>
+<td>
+
+A value indicating the pattern which shall be used to create the underlining applied beneath the text.</td>
+<td>
+
+None</td>
+</tr>
+<tr>
+<td>
+
+<b>ParagraphProperties</b>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+
+FlowDirection</td>
+<td>
+
+The flow direction.</td>
+<td>
+
+LeftToRight</td>
+</tr>
+<tr>
+<td>
+
+TextAlignment</td>
+<td>
+
+The paragraph text alignment.</td>
+<td>
+
+Left</td>
+</tr>
+<tr>
+<td>
+
+SpacingBefore</td>
+<td>
+
+The spacing that should be added above the first line in a paragraph.</td>
+<td>
+
+0</td>
+</tr>
+<tr>
+<td>
+
+AutomaticSpacingBefore</td>
+<td>
+
+A value indicating whether a consumer shall automatically determine the spacing
+                before the paragraph based on its contents the automatic spacing after.
+              </td>
+<td>
+
+False</td>
+</tr>
+<tr>
+<td>
+
+SpacingAfter</td>
+<td>
+
+The spacing that should be added after the last line in a paragraph.</td>
+<td>
+
+0</td>
+</tr>
+<tr>
+<td>
+
+AutomaticSpacingAfter</td>
+<td>
+
+A value indicating whether a consumer shall automatically determine the spacing
+                after the paragraph based on its contents the automatic spacing after.
+              </td>
+<td>
+
+False</td>
+</tr>
+<tr>
+<td>
+
+LineSpacing</td>
+<td>
+
+The value indicating the amount of vertical spacing between lines of text within a paragraph.</td>
+<td>
+
+1.15</td>
+</tr>
+<tr>
+<td>
+
+LineSpacingType</td>
+<td>
+
+The value indicating how the spacing between lines is calculated.</td>
+<td>
+
+Auto</td>
+</tr>
+<tr>
+<td>
+
+KeepOnOnePage</td>
+<td>
+
+A value indicating if this paragraph should be rendered on one page when the document is shown in page view mode.</td>
+<td>
+
+False</td>
+</tr>
+<tr>
+<td>
+
+KeepWithNextParagraph</td>
+<td>
+
+A value indicating if this paragraph should be rendered at least partly on the one page with
+                the following paragraph when this is possible and when the document is shown in page view mode.
+              </td>
+<td>
+
+False</td>
+</tr>
+<tr>
+<td>
+
+OutlineLevel</td>
+<td>
+
+A value indicating the outline level. The outline level defines the level of this paragraph in TOC field.</td>
+<td>
+
+None</td>
+</tr>
+<tr>
+<td>
+
+ApplyEastAsianLineBreakingRules</td>
+<td>
+
+A value indicating whether East-Asian line breaking rules are applied to this paragraph.</td>
+<td>
+
+True</td>
+</tr>
+<tr>
+<td>
+
+PageBreakBefore</td>
+<td>
+
+A value indicating if this paragraph should be rendered on new page when the document is shown in page view mode.</td>
+<td>
+
+False</td>
+</tr>
+<tr>
+<td>
+
+Borders</td>
+<td>
+
+The paragraph borders.</td>
+<td>
+
+None</td>
+</tr>
+<tr>
+<td>
+
+ContextualSpacing</td>
+<td>
+
+A value indicating whether spacing before/after are ignored
+                when preceding/following paragraph has same paragraph style.
+              </td>
+<td>
+
+False</td>
+</tr>
+<tr>
+<td>
+
+MirrorIndents</td>
+<td>
+
+A value indicating whether left and right indents should be swapped on odd pages.</td>
+<td>
+
+False</td>
+</tr>
+<tr>
+<td>
+
+BackgroundColor</td>
+<td>
+
+The color of the background.</td>
+<td>
+
+Transparent</td>
+</tr>
+<tr>
+<td>
+
+ShadingPatternColor</td>
+<td>
+
+A value indicating the color for any foreground pattern used in this shading.</td>
+<td>
+
+Transparent</td>
+</tr>
+<tr>
+<td>
+
+ShadingPattern</td>
+<td>
+
+A value indicating the pattern which shall be used to lay the pattern color over the background color for this shading.</td>
+<td>
+
+Clear</td>
+</tr>
+<tr>
+<td>
+
+FirstLineIndent</td>
+<td>
+
+A value indicating the additional indentation which shall be applied to the first line of the paragraph.</td>
+<td>
+
+0</td>
+</tr>
+<tr>
+<td>
+
+HangingIndent</td>
+<td>
+
+A value which shall be removed from the indentation of the first line of the paragraph,
+                by moving the indentation on the first line back towards the beginning of the direction of text flow.
+              </td>
+<td>
+
+0</td>
+</tr>
+<tr>
+<td>
+
+LeftIndent</td>
+<td>
+
+A value indicating the indentation which shall be applied to the left side of the whole paragraph.</td>
+<td>
+
+0</td>
+</tr>
+<tr>
+<td>
+
+RightIndent</td>
+<td>
+
+A value indicating the indentation which shall be applied to the right side of the whole paragraph.</td>
+<td>
+
+0</td>
+</tr>
+<tr>
+<td>
+
+AllowOverflowPunctuation</td>
+<td>
+
+A value indicating whether the last punctuation character on a line can overflow in paragraph margin/indent.</td>
+<td>
+
+True</td>
+</tr>
+<tr>
+<td>
+
+<b>TableProperties</b>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+
+Alignment</td>
+<td>
+
+The alignment of the table.</td>
+<td>
+
+Left</td>
+</tr>
+<tr>
+<td>
+
+BackgroundColor</td>
+<td>
+
+The color of the background.</td>
+<td>
+
+Transparent</td>
+</tr>
+<tr>
+<td>
+
+ShadingPatternColor</td>
+<td>
+
+A value indicating the color for any foreground pattern used in this shading.</td>
+<td>
+
+Transparent</td>
+</tr>
+<tr>
+<td>
+
+ShadingPattern</td>
+<td>
+
+A value indicating the pattern which shall be used to lay the pattern color over the background color for this shading.</td>
+<td>
+
+Clear</td>
+</tr>
+<tr>
+<td>
+
+Borders</td>
+<td>
+
+The top border.</td>
+<td>
+
+None</td>
+</tr>
+<tr>
+<td>
+
+TableCellPadding</td>
+<td>
+
+Default padding of the cells inside the table.</td>
+<td>
+
+0, 0, 0, 0</td>
+</tr>
+<tr>
+<td>
+
+TableCellSpacing</td>
+<td>
+
+A value indicating the spacing between adjacent cells and the edges of the table.</td>
+<td>
+
+0</td>
+</tr>
+<tr>
+<td>
+
+Indent</td>
+<td>
+
+A value which shall be added before the leading edge of the table.</td>
+<td>
+
+0</td>
+</tr>
+<tr>
+<td>
+
+RowBanding</td>
+<td>
+
+The number of banded rows.</td>
+<td>
+
+0</td>
+</tr>
+<tr>
+<td>
+
+ColumnBanding</td>
+<td>
+
+The number of banded columns.</td>
+<td>
+
+0</td>
+</tr>
+<tr>
+<td>
+
+FlowDirection</td>
+<td>
+
+The flow direction of cells inside the table.</td>
+<td>
+
+LeftToRight</td>
+</tr>
+<tr>
+<td>
+
+PreferredWidth</td>
+<td>
+
+The preferred width.</td>
+<td>
+
+Auto</td>
+</tr>
+<tr>
+<td>
+
+Looks</td>
+<td>
+
+The value indicating which components of the conditional style should be applied if such exists.</td>
+<td>
+
+BandedRows, BandedColumns</td>
+</tr>
+<tr>
+<td>
+
+LayoutType</td>
+<td>
+
+A value indicating which algorithm shall be used to lay out the content of the table.</td>
+<td>
+
+AutoFit</td>
+</tr>
+<tr>
+<td>
+
+Overlap</td>
+<td>
+
+A value indicating whether this floating table shall allow other floating tables to overlap its extents.</td>
+<td>
+
+True</td>
+</tr>
+<tr>
+<td>
+
+<b>TableRowProperties</b>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+
+TableCellSpacing</td>
+<td>
+
+A value indicating the spacing between adjacent cells and the edges of the table.</td>
+<td>
+
+0</td>
+</tr>
+<tr>
+<td>
+
+RepeatOnEveryPage</td>
+<td>
+
+A value indicating whether this row should be repeated on every new page.</td>
+<td>
+
+False</td>
+</tr>
+<tr>
+<td>
+
+CanSplit</td>
+<td>
+
+A value indicating whether the content of the row can be split across multiple pages.</td>
+<td>
+
+True</td>
+</tr>
+<tr>
+<td>
+
+Height</td>
+<td>
+
+The height.</td>
+<td>
+
+Auto</td>
+</tr>
+<tr>
+<td>
+
+<b>TableCellProperties</b>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+
+Borders</td>
+<td>
+
+The borders.</td>
+<td>
+
+None</td>
+</tr>
+<tr>
+<td>
+
+BackgroundColor</td>
+<td>
+
+The color of the background.</td>
+<td>
+
+Transparent</td>
+</tr>
+<tr>
+<td>
+
+ShadingPatternColor</td>
+<td>
+
+A value indicating the color for any foreground pattern used in this shading.</td>
+<td>
+
+Transparent</td>
+</tr>
+<tr>
+<td>
+
+ShadingPattern</td>
+<td>
+
+A value indicating the pattern which shall be used to lay the pattern color over the background color for this shading.</td>
+<td>
+
+Clear</td>
+</tr>
+<tr>
+<td>
+
+Padding</td>
+<td>
+
+The padding.</td>
+<td>
+
+0, 0, 0, 0</td>
+</tr>
+<tr>
+<td>
+
+ColumnSpan</td>
+<td>
+
+The column span.</td>
+<td>
+
+1</td>
+</tr>
+<tr>
+<td>
+
+RowSpan</td>
+<td>
+
+The row span.</td>
+<td>
+
+1</td>
+</tr>
+<tr>
+<td>
+
+IgnoreCellMarkerInRowHeightCalculation</td>
+<td>
+
+A value indicating whether cell marker will be ignored when row height is calculated.</td>
+<td>
+
+False</td>
+</tr>
+<tr>
+<td>
+
+CanWrapContent</td>
+<td>
+
+A value indicating whether the content can be wrapped during the table layout.</td>
+<td>
+
+True</td>
+</tr>
+<tr>
+<td>
+
+PreferredWidth</td>
+<td>
+
+The preferred width.</td>
+<td>
+
+Auto</td>
+</tr>
+<tr>
+<td>
+
+VerticalAlignment</td>
+<td>
+
+The vertical alignment.</td>
+<td>
+
+Top</td>
+</tr>
+<tr>
+<td>
+
+<b>SectionProperties</b>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+
+HasDifferentFirstPageHeaderFooter</td>
+<td>
+
+Has different first page header footer.</td>
+<td>
+
+False</td>
+</tr>
+<tr>
+<td>
+
+PageOrientation</td>
+<td>
+
+Page orientation property.</td>
+<td>
+
+Portrait</td>
+</tr>
+<tr>
+<td>
+
+PageSize</td>
+<td>
+
+Page size property.</td>
+<td>
+
+816,1056</td>
+</tr>
+<tr>
+<td>
+
+PageMargins</td>
+<td>
+
+Page margins property.</td>
+<td>
+
+96, 96, 96, 96</td>
+</tr>
+<tr>
+<td>
+
+HeaderTopMargin</td>
+<td>
+
+Header top margin property.</td>
+<td>
+
+48</td>
+</tr>
+<tr>
+<td>
+
+FooterBottomMargin</td>
+<td>
+
+Footer bottom margin property.</td>
+<td>
+
+48</td>
+</tr>
+<tr>
+<td>
+
+SectionType</td>
+<td>
+
+Section type property.</td>
+<td>
+
+NextPage</td>
+</tr>
+<tr>
+<td>
+
+<b>DocumentProperties</b>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+
+HasDifferentEvenOddPageHeadersFooters</td>
+<td>
+
+A value indicating whether pages in this document will have different headers and footers for even and odd pages.</td>
+<td>
+
+False</td>
+</tr>
+<tr>
+<td>
+
+ViewType</td>
+<td>
+
+A value indicating the view type of the document.</td>
+<td>
+
+PrintLayout</td>
+</tr>
+</table>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li>
+<a href="/devtools/winforms/wordsprocessing/concepts/styles">Styles</a><a href="http://www.telerik.com/help/winforms/t_telerik_windows_documents_flow_model_styles_core_istyleproperty.html">IStyleProperty<t> API Reference</t></a><a href="http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html">IStylePropertyDefinition API Reference</a>
+</li>
+</ul>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

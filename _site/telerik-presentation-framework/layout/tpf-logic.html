@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Layout Logic</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Layout Logic">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("telerik-presentation-framework/layout/tpf-logic.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/telerik-presentation-framework/layout/tpf-logic.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="layout-logic"><a href="#layout-logic">Layout Logic</a></h1>
+
+<p>Layout of elements proceed in two stages: the measure stage that reserves size to accommodate element contents and the arrange stage that arranges elements in the <br>
+      container. The order of execution is the following:</p>
+
+<ul>
+<li><p>All children are measured, recursively through the hierarchy, calling their implementations of <strong>Measure()</strong>, <br>
+    <strong>MeasureCore()</strong>, <strong>MeasureOverride()</strong>.</p></li>
+<li><p>All children are arranged in the <strong>Arrange()</strong>,  <strong>ArrangeCore()</strong>, and <strong>ArrangeOverride()</strong> methods.</p></li>
+<li><p>In case the size returned by the <strong>ArrangeOverride()</strong> method differs from the size it was invoked with, the Measure stage is invoked again,<br>
+        due to the change in the size required for layout. The measure stage is followed by a second call to Arrange, which arranges the children taking into account the new measures<br>
+        of the children.</p></li>
+</ul>
+
+<h2 id="measure-stage"><a href="#measure-stage">Measure Stage</a></h2>
+
+<p>The measure stage calculates the RadElement <strong>DesiredSize</strong> property. <strong>DesiredSize</strong> is the minimum size that ensures <br>
+        that element content will not be clipped.</p>
+
+<blockquote>
+<p><strong>DesiredSize</strong></p>
+</blockquote>
+
+<ul>
+<li><p>By default <a href="/devtools/winforms/telerik-presentation-framework/primitives/tpf-fillprimitive">FillPrimitive</a> can be drawn without<br>
+              clipping even with empty size. DesiredSize for FillPrimitive is (0, 0) by default.</p></li>
+<li><p>The DesiredSize for a <a href="E5579056-3A2D-43BA-A62E-D16F47051B66">HostItem</a> (and indirectly<br>
+              for RadTextBoxElement) is determined by the size of the hosted control. By default the DesiredSize of a RadTextBoxElement is determined by the default size of the<br>
+              hosted TextBox.</p></li>
+<li><p>The DesiredSize of RadLabel is determined by the Font and the Text property.   </p></li>
+</ul>
+
+<p>The measure stage recurses over the element hierarchy calling three functions: <strong>Measure()</strong>, <strong>MeasureCore()</strong> and <br>
+        <strong>MeasureOverride()</strong>. An element's <strong>Measure()</strong> method calls <strong>MeasureCore()</strong>, which in turn calls <br>
+          <strong>MeasureOverride()</strong>. <strong>MeasureOverride()</strong> calls the <strong>Measure()</strong> method of all element children.<img src="images/tpf-layout-logic001.png" alt="tpf-layout-logic 001"></p>
+
+<h2 id="measure"><a href="#measure">Measure()</a></h2>
+
+<p>The <strong>Measure()</strong> function manages the progression of states in the layout mechanism, e.g. adding and removing the element from the "measure queue".</p>
+
+<h2 id="measurecore"><a href="#measurecore">MeasureCore()</a></h2>
+
+<p><strong>MeasureCore()</strong> ensures transparency for logic that calculates the desired size in <strong>MeasureOverride()</strong>. MeasureCore() tasks <br>
+          are:</p>
+
+<ul>
+<li><p>Transform the size parameter passed to MeasureOverride() so that <strong>Margins</strong>, <strong>Scale</strong> and <br>
+      <strong>AngleTransform</strong> are taken into account. The meaning of this parameter is "the size provided by the parent in which the desired size must fit".  </p></li>
+<li><p>Transform the MeasureOverride() return value, again taking <strong>Margins</strong>, <strong>Scale</strong> and <br>
+      <strong>AngleTransform</strong> into account. <strong>DesiredSize</strong> is assigned the result of this transformation. <br>
+        <img src="images/tpf-layout-logic002.png" alt="tpf-layout-logic 002"></p></li>
+</ul>
+
+<p>Padding is handled differently for each custom layout and so is not considered in the base MeasureCore() method. Padding should be handled in the<br>
+        MeasureOverride() method.</p>
+
+<h2 id="measureoverride"><a href="#measureoverride">MeasureOverride()</a></h2>
+
+<p>This method receives a parameter containing the size available for its children after transformations are applied (margin, rotation, scaling). <br>
+        MeasureOverride() returns the minimum size of the area in which all child elements can be positioned according to their <strong>DesiredSizes</strong><br>
+          and any other logic implemented. The default implementation returns the maximum dimension values of the child elements.</p>
+
+<p>MeasureOverride() should call the Measure() method for any children. The Measure() method takes a single SizeF "availableSize" parameter. DesiredSize is <br>
+        assigned availableSize or the MeasureOverride() return value, whichever is less. The diagram below shows how the size available to children is determined after <br>
+        applying margin, padding and rotation transformations to the size available for the parent element.<img src="images/tpf-layout-logic003.png" alt="tpf-layout-logic 003"></p>
+
+<h2 id="arrange-stage"><a href="#arrange-stage">Arrange Stage</a></h2>
+
+<p>After the measuring stage of the layout process completes, the arrange stage is invoked to position child elements within the allocated area. The arrange stage<br>
+        calculates the size available to children, taking into account margins, transformations, alignment and stretching. The process is analogous to the measure stage. The methods <br>
+        are <strong>Arrange()</strong>, <strong>ArrangeCore()</strong> and <strong>ArrangeOverride()</strong>.</p>
+
+<h2 id="arrangeoverride"><a href="#arrangeoverride">ArrangeOverride()</a></h2>
+
+<p>This method receives a parameter containing the available size for children to be arranged in. Child elements must have their <strong>Arrange()</strong><br>
+        method called to have their bounds set. The rectangle that is fed to each child <strong>Arrange()</strong> call is the area where the child can position itself. <br>
+        The child can be stretched within the available area or aligned within the area using the <strong>Alignment</strong> property.</p>
+
+<p>The DesiredSize of every child is valid in the parent's ArrangeOverride() method and may be used in the <br>
+          calculations.</p>
+
+<p>The rectangles allocated by ArrangeOverride() do not need to be next to each other or ordered in any particular fashion. The example below shows a <br>
+        scenario where children are arranged with a size greater they request. The first child is aligned in the bottom-right corner of the size it has received <br>
+        for layout, while the second child is stretched horizontally and aligned in the center.<img src="images/tpf-layout-logic004.png" alt="tpf-layout-logic 004"></p>
+
+<h2 id="implementation-details"><a href="#implementation-details">Implementation Details</a></h2>
+
+<p>There are two static queues for the two layout stages: <strong>MeasureQueue</strong> and <strong>ArrangeQueue</strong>. The layout consists<br>
+        of two cycles that loop through the elements in the queues. The first cycle is the measure cycle which loops over the measure queue and exits when the measure queue <br>
+        is empty. The second cycle loops over the arrange queue and exits when the arrange queue is empty. During these two cycles, elements can be added to the two queues. <br>
+        There is a cycle that encloses the two aforementioned cycles, which runs until the two queues are empties empty.</p>
+
+<p>The measure cycle calls its Measure() method for each element in the measure queue. The Measure() method deletes the element from the queue if the Measure stage <br>
+        is finished for the element. The arrange cycle calls the Arrange() method of each element in the arrange queue in a similar way. Each time the measure or arrange stage<br>
+        of an element is invalidated, the element is added to the appropriate layout queue. Then the layout cycle enclosing the measure and arrange loops is called asynchronously.</p>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

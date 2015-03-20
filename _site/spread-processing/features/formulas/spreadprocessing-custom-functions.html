@@ -1,0 +1,2005 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Custom Functions</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Custom Functions">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("spread-processing/features/formulas/spreadprocessing-custom-functions.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/spread-processing/features/formulas/spreadprocessing-custom-functions.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="custom-functions"><a href="#custom-functions">Custom Functions</a></h1>
+
+<p>This article provides information about the possible approaches for creating a custom function. It contains the following sections:</p>
+
+<ul>
+<li><p><a href="#inheriting-functionbase-abstract-class"><br>
+          Inheriting FunctionBase Abstract Class<br>
+        </a></p></li>
+<li><p><a href="#functions-inheritance-tree"><br>
+          Functions Inheritance Tree<br>
+        </a></p></li>
+<li><p><a href="#argumentconversionrules"><br>
+          ArgumentConversionRules<br>
+        </a></p></li>
+<li><p><a href="#functioninfo"><br>
+          FunctionInfo<br>
+        </a></p></li>
+<li><p><a href="#custom-function-examples"><br>
+          Custom Function Examples<br>
+        </a></p></li>
+</ul>
+
+<h2 id="inheriting-functionbase-abstract-class"><a href="#inheriting-functionbase-abstract-class">Inheriting FunctionBase abstract class</a></h2>
+
+<p>The document model provides powerful API for creating custom functions. All functions must inherit from the abstract <strong>FunctionBase</strong> class, providing basic methods and properties for each function instance.</p>
+
+<p>These are the basic <strong>FunctionBase</strong> members:</p>
+
+<ul>
+<li><p><strong>Name</strong>: Property of type String, defining the name of the function. The property is used for registering the function, so the name of the function must be unique (case insensitive). If a function with repeating name is registered, it overrides the previous function registered with this name.</p></li>
+<li><p><strong>FunctionInfo</strong>: Property of type FunctionInfo providing description of the function and its arguments. For more detailed description of this class you may follow <a href="#functioninfo">this</a> link.</p></li>
+<li><p><strong>ArgumentConversionRules</strong>: Property describing the way different argument types are interpreted. The functions API works with 5 argument types (Logical, Number, Text, Reference and Array) and each function may interpret each of this argument types differently. For more information you may follow <a href="#argumentconversionrules">this</a> link.</p></li>
+<li><p><strong>Evaluate</strong> and <strong>EvaluateOverride methods</strong>: The methods where the function calculations take place. In order to define custom function you need to override the <strong>EvaluateOverride</strong> method so that later you may obtain function calculations value through the <strong>Evaluate</strong> method.</p></li>
+</ul>
+
+<p>Additionally each custom function needs to be registered through the <strong>FunctionManager</strong> class. This is easily done by passing an instance of the function class to the static <strong>Register()</strong> method.</p>
+
+<p><strong>Example 1</strong> shows how to register a function class ArgumentsFunction, inheritor of FunctionBase.</p>
+
+<h4><strong>[C#] Example 1: Register custom function</strong></h4>
+
+<pre><code>            FunctionManager.RegisterFunction(new ArgumentsFunction());
+</code></pre>
+
+<h4><strong>[VB] Example 1: Register custom function</strong></h4>
+
+<pre><code>        FunctionManager.RegisterFunction(New ArgumentsFunction())
+        '#End Region
+    End Sub
+
+#Region "radspreadprocessing-features-formulas-custom-functions_1"
+    Public Shared ReadOnly BoolFunctionConversion As New ArgumentConversionRules(emptyIndirectArgument:=ArgumentInterpretation.Ignore, textNumberDirectArgument:=ArgumentInterpretation.TreatAsError, textNumberIndirectArgument:=ArgumentInterpretation.Ignore, nonTextNumberDirectArgument:=ArgumentInterpretation.TreatAsError, nonTextNumberIndirectArgument:=ArgumentInterpretation.Ignore, arrayArgument:=ArrayArgumentInterpretation.UseAllElements)
+#End Region
+
+    Public Sub FunctionInfo()
+        '#Region "radspreadprocessing-features-formulas-custom-functions_2"
+        Dim functionName As String = "ADD"
+
+        Dim description As String = "Adds all the numbers in range of cells."
+
+        Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+        Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+        Dim sumFunctionInfo As New FunctionInfo(functionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, _
+            True)
+
+        '#End Region
+    End Sub
+
+    Private Class ArgumentsFunction
+        Inherits FunctionBase
+        Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
+            ' TODO: Implement this method
+            Throw New NotImplementedException()
+        End Function
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                ' TODO: Implement this property getter
+                Throw New NotImplementedException()
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                ' TODO: Implement this property getter
+                Throw New NotImplementedException()
+            End Get
+        End Property
+    End Class
+
+#Region "radspreadprocessing-features-formulas-custom-functions_3"
+
+    Public Class Arguments
+        Inherits FunctionBase
+        Public Shared ReadOnly FunctionName As String = "ARGUMENTS"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns number of used arguments."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("First", "First argument.", ArgumentType.Any), New ArgumentInfo("Second", "Second argument.", ArgumentType.Any), New ArgumentInfo("Third", "Third argument.", ArgumentType.Any)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("First", "First argument.", ArgumentType.Any), New ArgumentInfo("Second", "Second argument.", ArgumentType.Any), New ArgumentInfo("Third", "Third argument.", ArgumentType.Any)}
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount:=3)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
+            Return New NumberExpression(arguments.Length)
+        End Function
+    End Class
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_4"
+    Public Class E
+        Inherits FunctionBase
+        Public Shared ReadOnly FunctionName As String = "E"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the Napier's constant."
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
+            Return NumberExpression.E
+        End Function
+    End Class
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_5"
+    Public Class RepeatString
+        Inherits FunctionWithArguments
+        Public Shared ReadOnly FunctionName As String = "REPEAT.STRING"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Text", "Text is the text you want to repeat.", ArgumentType.Text)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("NumberTimes", "NumberTimes is a positive number specifying the number of times to repeat text.", ArgumentType.Number)}
+
+            Dim description As String = "REPEAT.STRING repeats some text a desired number of times."
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments, optionalArguments, 1, _
+                False)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Object()) As RadExpression
+            Dim text As String = arguments(0).ToString()
+
+            Dim numberTimes As Double = 1
+            If arguments.Length &gt; 1 Then
+                numberTimes = CDbl(arguments(1))
+            End If
+            Dim builder As New StringBuilder()
+
+            If numberTimes &lt; 0 Then
+                Return ErrorExpressions.ValueError
+            End If
+
+            For i As Integer = 0 To numberTimes - 1
+                builder.Append(text)
+            Next
+
+            Return New StringExpression(builder.ToString())
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_6"
+    Public Class Add
+        Inherits NumbersInFunction
+        Public Shared ReadOnly FunctionName As String = "ADD"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property ArgumentConversionRules() As ArgumentConversionRules
+            Get
+                Return ArgumentConversionRules.NaryIgnoreIndirectNumberFunctionConversion
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            '#Region "FunctionInfo"
+
+            Dim description As String = "Adds all the numbers in range of cells."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+
+            '#End Region
+            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, _
+                True)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Double()) As Telerik.Windows.Documents.Spreadsheet.Expressions.RadExpression
+            Dim result As Double = 0
+
+            For i As Integer = 0 To arguments.Length - 1
+                result += arguments(i)
+            Next
+
+            If Double.IsInfinity(result) Then
+                Return ErrorExpressions.NumberError
+            End If
+
+            Return New NumberExpression(result)
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_7"
+    Private Class GeoMean
+        Inherits NumbersInFunction
+        Public Shared ReadOnly FunctionName As String = "GEOMEAN"
+        Private Shared ReadOnly info As FunctionInfo
+        Private Shared ReadOnly conversionRules As New ArgumentConversionRules(nonTextNumberDirectArgument:=ArgumentInterpretation.TreatAsError, nonTextNumberIndirectArgument:=ArgumentInterpretation.TreatAsError, emptyIndirectArgument:=ArgumentInterpretation.Ignore, emptyDirectArgument:=ArgumentInterpretation.Ignore, arrayArgument:=ArrayArgumentInterpretation.UseAllElements)
+
+        Public Overrides ReadOnly Property ArgumentConversionRules() As ArgumentConversionRules
+            Get
+                Return GeoMean.conversionRules
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the geometric mean of a sequance of numbers."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "Positive number", ArgumentType.Number)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "Positive number", ArgumentType.Number)}
+
+            info = New FunctionInfo(FunctionName, FunctionCategory.Statistical, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount:=255)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Double()) As RadExpression
+            Dim product As Double = 1
+
+            For Each argument As Double In arguments
+                If argument &lt;= 0 Then
+                    Return ErrorExpressions.NumberError
+                End If
+
+                product *= argument
+            Next
+
+            Dim result As Double = Math.Pow(product, 1.0 / arguments.Length)
+
+            Return New NumberExpression(result)
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_8"
+
+    Public Class Nand
+        Inherits BooleansInFunction
+        Public Shared ReadOnly FunctionName As String = "NAND"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the Sheffer stroke (or also known as the NAND operator) of two booleans."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Logical", "The first logical argument.", ArgumentType.Logical), New ArgumentInfo("Logical", "The second logical argument.", ArgumentType.Logical)}
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Boolean()) As RadExpression
+            Dim result As Boolean = Not (arguments(0) And arguments(1))
+
+            Return If(result, BooleanExpression.[True], BooleanExpression.[False])
+        End Function
+    End Class
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_9"
+
+    Public Class Upper
+        Inherits StringsInFunction
+        Public Shared ReadOnly FunctionName As String = "UPPER"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Converts text to uppercase."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Text", "Text is the text you want converted to uppercase. Text can be a reference or text string.", ArgumentType.Text)}
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As String()) As RadExpression
+            Dim text As String = arguments(0)
+
+            Dim builder As New StringBuilder()
+
+            For i As Integer = 0 To text.Length - 1
+                Dim c As Char = Char.ToUpperInvariant(text(i))
+                builder.Append(c)
+            Next
+
+            Return New StringExpression(builder.ToString())
+        End Function
+    End Class
+#End Region
+End Class
+</code></pre>
+
+<h2 id="functions-inheritance-tree"><a href="#functions-inheritance-tree">Functions Inheritance Tree</a></h2>
+
+<p>The document model provides an inheritance tree of classes providing ready to use functionalities for different function types depending on the function arguments and the desired result.</p>
+
+<p><strong>Figure 1</strong> the base abstract function classes.</p>
+
+<p>Figure 1: Functiona Inheritance<img src="images/spreadprocessing-features-formulas-custom-functions001.png" alt="spreadprocessing-features-formulas-custom-functions 001"></p>
+
+<ul>
+<li><p><strong>FunctionBase</strong>: Provides the base functions properties (<strong>Name, FunctionInfo, ArgumentConvertionRules</strong>). Also provides the logic of the <strong>IsArgumentNumberValid()</strong> method which handles the logic when invalid arguments count is inputted by the user. By inheriting <strong>FunctionBase</strong> you must override the <strong>EvaluateOverride(RadExpression[] arguments)</strong> method, so you need to handle the whole logic of converting <strong>RadExpression</strong> arguments to function arguments.</p></li>
+<li><p><strong>FunctionWithArguments</strong>: Handles the basic logic of converting <strong>RadExpression</strong>'s value to some other value type corresponding to the ArgumentType defined in FunctionInfo property. By inheriting from this class you need to override the <strong>EvaluateOverride(object[] arguments)</strong> method and handle and array of already converted function argument values.</p></li>
+<li><p><strong>FunctionWithSameTypeArguments<t></t></strong>: By inheriting this class you need to override <strong>EvaluateOverride(T[] arguments)</strong> method and handle an array of arguments with same type T.</p></li>
+<li><p><strong>StringInFunctions, NumbersInFunction, BooleansInFunction</strong>: These classes inherit directly from <strong>FunctionWithSameTypeArguments<string>, FunctionWithSameTypeArguments<double> and FunctionWithSameTypeArguments<bool></bool></double></string></strong>. Using them is appropriate in cases when the function the respective argument type - String, double or Boolean.</p></li>
+</ul>
+
+<h2 id="argumentconversionrules"><a href="#argumentconversionrules">ArgumentConversionRules</a></h2>
+
+<p>The <strong>ArgumentConversionRules</strong> class provides properties describing the way different function argument types are interpreted. The functions API works with 5 argument types (Logical, Number, Text, Reference and Array) and each function may interpret each of these argument types differently. Additionally RadSpreadsheet allows to be made difference between <strong>direct arguments</strong> (value passed directly into the formula) and <strong>indirect arguments</strong> (values that depending on some other cells referencing).</p>
+
+<p>ArgumentConversionRules has the following properties:</p>
+
+<ul>
+<li><p><strong>EmptyDirectArgument</strong>: The ArgumentInterpretation of an Empty cell value, passed as direct argument.</p></li>
+<li><p><strong>NumberDirectArgument</strong>: The ArgumentInterpretation of a Number cell value, passed as direct argument.</p></li>
+<li><p><strong>BoolDirectArgument</strong>: The ArgumentInterpretation of a Boolean cell value, passed as direct argument.</p></li>
+<li><p><strong>TextNumberDirectArgument</strong>: The ArgumentInterpretation of a String cell value that may successfully be parsed to a number, passed as direct argument.</p></li>
+<li><p><strong>NonTextNumberDirectArgument</strong>: The ArgumentInterpretation of a String cell value that cannot be parsed to a number, passed as direct argument.</p></li>
+<li><p><strong>EmptyIndirectArgument</strong>: The ArgumentInterpretation of an Empty cell value, passed as indirect argument.</p></li>
+<li><p><strong>NumberIndirectArgument</strong>: The ArgumentInterpretation of a Number cell value, passed as direct argument.</p></li>
+<li><p><strong>BoolIndirectArgument</strong>: The ArgumentInterpretation of a Boolean cell value, passed as indirect argument.</p></li>
+<li><p><strong>TextNumberIndirectArgument</strong>: The ArgumentInterpretation of a String cell value that may successfully be parsed to a number, passed as indirect argument.</p></li>
+<li><p><strong>NonTextNumberIndirectArgument</strong>: The ArgumentInterpretation of a String cell value that cannot be parsed to a number, passed as indirect argument.</p></li>
+<li><p><strong>ArrayArgument</strong>: The ArrayArgumentInterpretaion.</p></li>
+</ul>
+
+<p>The value of these properties are from the enumerations<br>
+          <a href="http://www.telerik.com/help/winforms/t_telerik_windows_documents_spreadsheet_expressions_functions_argumentinterpretation.html">ArgumentInterpretation</a><br>
+          and<br>
+          <a href="http://www.telerik.com/help/winforms/t_telerik_windows_documents_spreadsheet_expressions_functions_arrayargumentinterpretation.html">ArrayArgumentInterpretation</a><br>
+          and they are set through the constructor of <strong>ArgumentConversionRules</strong>. The default values of these interpretations in the constructor are accordingly <strong>ArgumentInterpretation.UseAsIs</strong> and <strong>ArrayArgumentInterpretation.UseFirstElement</strong>.</p>
+
+<p><strong>Example 2</strong> creates an instance of ArgumentConversionRules:</p>
+
+<h4><strong>[C#] Example 2: Create ArgumentConversionRules</strong></h4>
+
+<pre><code>        public static readonly ArgumentConversionRules BoolFunctionConversion = new ArgumentConversionRules(
+                    emptyIndirectArgument: ArgumentInterpretation.Ignore,
+                    textNumberDirectArgument: ArgumentInterpretation.TreatAsError,
+                    textNumberIndirectArgument: ArgumentInterpretation.Ignore,
+                    nonTextNumberDirectArgument: ArgumentInterpretation.TreatAsError,
+                    nonTextNumberIndirectArgument: ArgumentInterpretation.Ignore,
+                    arrayArgument: ArrayArgumentInterpretation.UseAllElements);
+</code></pre>
+
+<h4><strong>[VB] Example 2: Create ArgumentConversionRules</strong></h4>
+
+<pre><code>    Public Shared ReadOnly BoolFunctionConversion As New ArgumentConversionRules(emptyIndirectArgument:=ArgumentInterpretation.Ignore, textNumberDirectArgument:=ArgumentInterpretation.TreatAsError, textNumberIndirectArgument:=ArgumentInterpretation.Ignore, nonTextNumberDirectArgument:=ArgumentInterpretation.TreatAsError, nonTextNumberIndirectArgument:=ArgumentInterpretation.Ignore, arrayArgument:=ArrayArgumentInterpretation.UseAllElements)
+#End Region
+
+    Public Sub FunctionInfo()
+        '#Region "radspreadprocessing-features-formulas-custom-functions_2"
+        Dim functionName As String = "ADD"
+
+        Dim description As String = "Adds all the numbers in range of cells."
+
+        Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+        Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+        Dim sumFunctionInfo As New FunctionInfo(functionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, _
+            True)
+
+        '#End Region
+    End Sub
+
+    Private Class ArgumentsFunction
+        Inherits FunctionBase
+        Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
+            ' TODO: Implement this method
+            Throw New NotImplementedException()
+        End Function
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                ' TODO: Implement this property getter
+                Throw New NotImplementedException()
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                ' TODO: Implement this property getter
+                Throw New NotImplementedException()
+            End Get
+        End Property
+    End Class
+
+#Region "radspreadprocessing-features-formulas-custom-functions_3"
+
+    Public Class Arguments
+        Inherits FunctionBase
+        Public Shared ReadOnly FunctionName As String = "ARGUMENTS"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns number of used arguments."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("First", "First argument.", ArgumentType.Any), New ArgumentInfo("Second", "Second argument.", ArgumentType.Any), New ArgumentInfo("Third", "Third argument.", ArgumentType.Any)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("First", "First argument.", ArgumentType.Any), New ArgumentInfo("Second", "Second argument.", ArgumentType.Any), New ArgumentInfo("Third", "Third argument.", ArgumentType.Any)}
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount:=3)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
+            Return New NumberExpression(arguments.Length)
+        End Function
+    End Class
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_4"
+    Public Class E
+        Inherits FunctionBase
+        Public Shared ReadOnly FunctionName As String = "E"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the Napier's constant."
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
+            Return NumberExpression.E
+        End Function
+    End Class
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_5"
+    Public Class RepeatString
+        Inherits FunctionWithArguments
+        Public Shared ReadOnly FunctionName As String = "REPEAT.STRING"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Text", "Text is the text you want to repeat.", ArgumentType.Text)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("NumberTimes", "NumberTimes is a positive number specifying the number of times to repeat text.", ArgumentType.Number)}
+
+            Dim description As String = "REPEAT.STRING repeats some text a desired number of times."
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments, optionalArguments, 1, _
+                False)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Object()) As RadExpression
+            Dim text As String = arguments(0).ToString()
+
+            Dim numberTimes As Double = 1
+            If arguments.Length &gt; 1 Then
+                numberTimes = CDbl(arguments(1))
+            End If
+            Dim builder As New StringBuilder()
+
+            If numberTimes &lt; 0 Then
+                Return ErrorExpressions.ValueError
+            End If
+
+            For i As Integer = 0 To numberTimes - 1
+                builder.Append(text)
+            Next
+
+            Return New StringExpression(builder.ToString())
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_6"
+    Public Class Add
+        Inherits NumbersInFunction
+        Public Shared ReadOnly FunctionName As String = "ADD"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property ArgumentConversionRules() As ArgumentConversionRules
+            Get
+                Return ArgumentConversionRules.NaryIgnoreIndirectNumberFunctionConversion
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            '#Region "FunctionInfo"
+
+            Dim description As String = "Adds all the numbers in range of cells."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+
+            '#End Region
+            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, _
+                True)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Double()) As Telerik.Windows.Documents.Spreadsheet.Expressions.RadExpression
+            Dim result As Double = 0
+
+            For i As Integer = 0 To arguments.Length - 1
+                result += arguments(i)
+            Next
+
+            If Double.IsInfinity(result) Then
+                Return ErrorExpressions.NumberError
+            End If
+
+            Return New NumberExpression(result)
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_7"
+    Private Class GeoMean
+        Inherits NumbersInFunction
+        Public Shared ReadOnly FunctionName As String = "GEOMEAN"
+        Private Shared ReadOnly info As FunctionInfo
+        Private Shared ReadOnly conversionRules As New ArgumentConversionRules(nonTextNumberDirectArgument:=ArgumentInterpretation.TreatAsError, nonTextNumberIndirectArgument:=ArgumentInterpretation.TreatAsError, emptyIndirectArgument:=ArgumentInterpretation.Ignore, emptyDirectArgument:=ArgumentInterpretation.Ignore, arrayArgument:=ArrayArgumentInterpretation.UseAllElements)
+
+        Public Overrides ReadOnly Property ArgumentConversionRules() As ArgumentConversionRules
+            Get
+                Return GeoMean.conversionRules
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the geometric mean of a sequance of numbers."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "Positive number", ArgumentType.Number)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "Positive number", ArgumentType.Number)}
+
+            info = New FunctionInfo(FunctionName, FunctionCategory.Statistical, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount:=255)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Double()) As RadExpression
+            Dim product As Double = 1
+
+            For Each argument As Double In arguments
+                If argument &lt;= 0 Then
+                    Return ErrorExpressions.NumberError
+                End If
+
+                product *= argument
+            Next
+
+            Dim result As Double = Math.Pow(product, 1.0 / arguments.Length)
+
+            Return New NumberExpression(result)
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_8"
+
+    Public Class Nand
+        Inherits BooleansInFunction
+        Public Shared ReadOnly FunctionName As String = "NAND"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the Sheffer stroke (or also known as the NAND operator) of two booleans."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Logical", "The first logical argument.", ArgumentType.Logical), New ArgumentInfo("Logical", "The second logical argument.", ArgumentType.Logical)}
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Boolean()) As RadExpression
+            Dim result As Boolean = Not (arguments(0) And arguments(1))
+
+            Return If(result, BooleanExpression.[True], BooleanExpression.[False])
+        End Function
+    End Class
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_9"
+
+    Public Class Upper
+        Inherits StringsInFunction
+        Public Shared ReadOnly FunctionName As String = "UPPER"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Converts text to uppercase."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Text", "Text is the text you want converted to uppercase. Text can be a reference or text string.", ArgumentType.Text)}
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As String()) As RadExpression
+            Dim text As String = arguments(0)
+
+            Dim builder As New StringBuilder()
+
+            For i As Integer = 0 To text.Length - 1
+                Dim c As Char = Char.ToUpperInvariant(text(i))
+                builder.Append(c)
+            Next
+
+            Return New StringExpression(builder.ToString())
+        End Function
+    End Class
+#End Region
+End Class
+</code></pre>
+
+<h2 id="functioninfo"><a href="#functioninfo">FunctionInfo</a></h2>
+
+<p>The <strong>FunctionInfo</strong> class provides properties describing the purpose of the function and each of its arguments.</p>
+
+<p><strong>FunctionInfo</strong> has the following properties:</p>
+
+<ul>
+<li><p><strong>Category</strong>: The FunctionCategory to which the function belongs.</p></li>
+<li><p><strong>Description</strong>: Description of the function as string value.</p></li>
+<li><p><strong>RequiredArgumentsCount</strong>: Returns the number of required arguments of the function. If the user inputs less arguments than the RequiredArgumentsCount an error is raised.</p></li>
+<li><p><strong>OptionalArgumentsCount</strong>: Returns the count of the optional arguments group.</p></li>
+<li><p><strong>OptionalArgumentsRepetitionCount</strong>: Returns the number of repetitions of the optional group. The valid count of all arguments depends on this value by satisfying the following conditions:</p></li>
+<li><p>When <strong>OptionalArgumentsRepetionCount &lt;= 1:</strong></p></li>
+<li><p><strong>ValidArgumentsCount &gt;= RequiredArgumentsCount</strong></p></li>
+<li><p><strong>ValidArgumentsCount &lt;= RequiredArgumentsCount + OptionalArgumentsCount</strong></p></li>
+<li><p>When <strong>OptionalArgumentsRepetitionsCount &gt; 1:</strong></p></li>
+<li><p><strong>ValidArgumentsCount = RequiredArgumentsCount + i * OptionalArgumentsCount</strong></p></li>
+<li><p><strong>i &gt;= 0</strong></p></li>
+<li><p><strong>i &lt;= OptionalArgumentsRepetitionsCount</strong></p></li>
+<li><p><strong>i is integer number</strong></p></li>
+<li><p><strong>IsDefaultValueFunction</strong>: Returns Boolean indicating whether the function is default value function.</p></li>
+<li><p>When <strong>true</strong> – the function returns some default value when <strong>all inputted values</strong> have <strong>ArgumentInterpretation.Ignore</strong> in ArgumentConversionRules of the function.</p></li>
+<li><p>When <strong>false</strong> – the function returns ErrorExpressions.ValueError when <strong>all inputted values</strong> are invalid even if they have <strong>ArgumentInterpretation.Ignore</strong> in ArgumentConversionRules of the function.</p></li>
+<li><p><strong>Format</strong>: Returns the CellValueFormat of the function result, if the result needs specific formatting (for example DateTime or Currency).</p></li>
+</ul>
+
+<p><strong>Example 3</strong> shows how to create an instance of FunctionInfo class.</p>
+
+<h4><strong>[C#] Example 3: Create FunctionInfo</strong></h4>
+
+<pre><code>            string functionName = "ADD";
+
+            string description = "Adds all the numbers in range of cells.";
+
+            IEnumerable&lt;ArgumentInfo&gt; requiredArguments = new ArgumentInfo[]
+            {
+                new ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number),
+            };
+
+            IEnumerable&lt;ArgumentInfo&gt; optionalArguments = new ArgumentInfo[]
+            {
+                new ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number),
+            };
+
+            FunctionInfo sumFunctionInfo = new FunctionInfo(functionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, true);
+</code></pre>
+
+<h4><strong>[VB] Example 3: Create FunctionInfo</strong></h4>
+
+<pre><code>        Dim functionName As String = "ADD"
+
+        Dim description As String = "Adds all the numbers in range of cells."
+
+        Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+        Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+        Dim sumFunctionInfo As New FunctionInfo(functionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, _
+            True)
+
+        '#End Region
+    End Sub
+
+    Private Class ArgumentsFunction
+        Inherits FunctionBase
+        Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
+            ' TODO: Implement this method
+            Throw New NotImplementedException()
+        End Function
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                ' TODO: Implement this property getter
+                Throw New NotImplementedException()
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                ' TODO: Implement this property getter
+                Throw New NotImplementedException()
+            End Get
+        End Property
+    End Class
+
+#Region "radspreadprocessing-features-formulas-custom-functions_3"
+
+    Public Class Arguments
+        Inherits FunctionBase
+        Public Shared ReadOnly FunctionName As String = "ARGUMENTS"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns number of used arguments."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("First", "First argument.", ArgumentType.Any), New ArgumentInfo("Second", "Second argument.", ArgumentType.Any), New ArgumentInfo("Third", "Third argument.", ArgumentType.Any)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("First", "First argument.", ArgumentType.Any), New ArgumentInfo("Second", "Second argument.", ArgumentType.Any), New ArgumentInfo("Third", "Third argument.", ArgumentType.Any)}
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount:=3)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
+            Return New NumberExpression(arguments.Length)
+        End Function
+    End Class
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_4"
+    Public Class E
+        Inherits FunctionBase
+        Public Shared ReadOnly FunctionName As String = "E"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the Napier's constant."
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
+            Return NumberExpression.E
+        End Function
+    End Class
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_5"
+    Public Class RepeatString
+        Inherits FunctionWithArguments
+        Public Shared ReadOnly FunctionName As String = "REPEAT.STRING"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Text", "Text is the text you want to repeat.", ArgumentType.Text)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("NumberTimes", "NumberTimes is a positive number specifying the number of times to repeat text.", ArgumentType.Number)}
+
+            Dim description As String = "REPEAT.STRING repeats some text a desired number of times."
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments, optionalArguments, 1, _
+                False)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Object()) As RadExpression
+            Dim text As String = arguments(0).ToString()
+
+            Dim numberTimes As Double = 1
+            If arguments.Length &gt; 1 Then
+                numberTimes = CDbl(arguments(1))
+            End If
+            Dim builder As New StringBuilder()
+
+            If numberTimes &lt; 0 Then
+                Return ErrorExpressions.ValueError
+            End If
+
+            For i As Integer = 0 To numberTimes - 1
+                builder.Append(text)
+            Next
+
+            Return New StringExpression(builder.ToString())
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_6"
+    Public Class Add
+        Inherits NumbersInFunction
+        Public Shared ReadOnly FunctionName As String = "ADD"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property ArgumentConversionRules() As ArgumentConversionRules
+            Get
+                Return ArgumentConversionRules.NaryIgnoreIndirectNumberFunctionConversion
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            '#Region "FunctionInfo"
+
+            Dim description As String = "Adds all the numbers in range of cells."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+
+            '#End Region
+            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, _
+                True)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Double()) As Telerik.Windows.Documents.Spreadsheet.Expressions.RadExpression
+            Dim result As Double = 0
+
+            For i As Integer = 0 To arguments.Length - 1
+                result += arguments(i)
+            Next
+
+            If Double.IsInfinity(result) Then
+                Return ErrorExpressions.NumberError
+            End If
+
+            Return New NumberExpression(result)
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_7"
+    Private Class GeoMean
+        Inherits NumbersInFunction
+        Public Shared ReadOnly FunctionName As String = "GEOMEAN"
+        Private Shared ReadOnly info As FunctionInfo
+        Private Shared ReadOnly conversionRules As New ArgumentConversionRules(nonTextNumberDirectArgument:=ArgumentInterpretation.TreatAsError, nonTextNumberIndirectArgument:=ArgumentInterpretation.TreatAsError, emptyIndirectArgument:=ArgumentInterpretation.Ignore, emptyDirectArgument:=ArgumentInterpretation.Ignore, arrayArgument:=ArrayArgumentInterpretation.UseAllElements)
+
+        Public Overrides ReadOnly Property ArgumentConversionRules() As ArgumentConversionRules
+            Get
+                Return GeoMean.conversionRules
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the geometric mean of a sequance of numbers."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "Positive number", ArgumentType.Number)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "Positive number", ArgumentType.Number)}
+
+            info = New FunctionInfo(FunctionName, FunctionCategory.Statistical, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount:=255)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Double()) As RadExpression
+            Dim product As Double = 1
+
+            For Each argument As Double In arguments
+                If argument &lt;= 0 Then
+                    Return ErrorExpressions.NumberError
+                End If
+
+                product *= argument
+            Next
+
+            Dim result As Double = Math.Pow(product, 1.0 / arguments.Length)
+
+            Return New NumberExpression(result)
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_8"
+
+    Public Class Nand
+        Inherits BooleansInFunction
+        Public Shared ReadOnly FunctionName As String = "NAND"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the Sheffer stroke (or also known as the NAND operator) of two booleans."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Logical", "The first logical argument.", ArgumentType.Logical), New ArgumentInfo("Logical", "The second logical argument.", ArgumentType.Logical)}
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Boolean()) As RadExpression
+            Dim result As Boolean = Not (arguments(0) And arguments(1))
+
+            Return If(result, BooleanExpression.[True], BooleanExpression.[False])
+        End Function
+    End Class
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_9"
+
+    Public Class Upper
+        Inherits StringsInFunction
+        Public Shared ReadOnly FunctionName As String = "UPPER"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Converts text to uppercase."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Text", "Text is the text you want converted to uppercase. Text can be a reference or text string.", ArgumentType.Text)}
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As String()) As RadExpression
+            Dim text As String = arguments(0)
+
+            Dim builder As New StringBuilder()
+
+            For i As Integer = 0 To text.Length - 1
+                Dim c As Char = Char.ToUpperInvariant(text(i))
+                builder.Append(c)
+            Next
+
+            Return New StringExpression(builder.ToString())
+        End Function
+    End Class
+#End Region
+End Class
+</code></pre>
+
+<h2 id="custom-function-examples"><a href="#custom-function-examples">Custom Function Examples</a></h2>
+
+<p>The next example is of a custom function named <strong>"ARGUMENTS"</strong> inheriting from the <strong>FunctionBase</strong> class. In the <strong>FunctionInfo</strong> definition you can see that the function has three required arguments and three optional arguments with <strong>optionalArgumentsRepeatsCount</strong> equal to 3.</p>
+
+<p>The result of the function's calculations is the number of arguments passed to the function, as you can see in the EvaluateOverride() method.</p>
+
+<p><strong>Example 4</strong> shows how to create the 'ARGUMENTS' function.</p>
+
+<h4><strong>[C#] Example 4: Create ARGUMENTS function</strong></h4>
+
+<pre><code>        public class Arguments : FunctionBase
+        {
+            public static readonly string FunctionName = "ARGUMENTS";
+            private static readonly FunctionInfo Info;
+
+            public override string Name
+            {
+                get
+                {
+                    return FunctionName;
+                }
+            }
+
+            public override FunctionInfo FunctionInfo
+            {
+                get
+                {
+                    return Info;
+                }
+            }
+
+            static Arguments()
+            {
+                string description = "Returns number of used arguments.";
+
+                IEnumerable&lt;ArgumentInfo&gt; requiredArguments = new ArgumentInfo[]
+        {
+            new ArgumentInfo("First", "First argument.", ArgumentType.Any),
+            new ArgumentInfo("Second", "Second argument.", ArgumentType.Any),
+            new ArgumentInfo("Third", "Third argument.", ArgumentType.Any),
+        };
+
+                IEnumerable&lt;ArgumentInfo&gt; optionalArguments = new ArgumentInfo[]
+        {
+            new ArgumentInfo("First", "First argument.", ArgumentType.Any),
+            new ArgumentInfo("Second", "Second argument.", ArgumentType.Any),
+            new ArgumentInfo("Third", "Third argument.", ArgumentType.Any),
+        };
+
+                Info = new FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount: 3);
+            }
+
+            protected override RadExpression EvaluateOverride(RadExpression[] arguments)
+            {
+                return new NumberExpression(arguments.Length);
+            }
+        }
+</code></pre>
+
+<h4><strong>[VB] Example 4: Create ARGUMENTS function</strong></h4>
+
+<pre><code>    Public Class Arguments
+        Inherits FunctionBase
+        Public Shared ReadOnly FunctionName As String = "ARGUMENTS"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns number of used arguments."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("First", "First argument.", ArgumentType.Any), New ArgumentInfo("Second", "Second argument.", ArgumentType.Any), New ArgumentInfo("Third", "Third argument.", ArgumentType.Any)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("First", "First argument.", ArgumentType.Any), New ArgumentInfo("Second", "Second argument.", ArgumentType.Any), New ArgumentInfo("Third", "Third argument.", ArgumentType.Any)}
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount:=3)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
+            Return New NumberExpression(arguments.Length)
+        End Function
+    End Class
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_4"
+    Public Class E
+        Inherits FunctionBase
+        Public Shared ReadOnly FunctionName As String = "E"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the Napier's constant."
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
+            Return NumberExpression.E
+        End Function
+    End Class
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_5"
+    Public Class RepeatString
+        Inherits FunctionWithArguments
+        Public Shared ReadOnly FunctionName As String = "REPEAT.STRING"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Text", "Text is the text you want to repeat.", ArgumentType.Text)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("NumberTimes", "NumberTimes is a positive number specifying the number of times to repeat text.", ArgumentType.Number)}
+
+            Dim description As String = "REPEAT.STRING repeats some text a desired number of times."
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments, optionalArguments, 1, _
+                False)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Object()) As RadExpression
+            Dim text As String = arguments(0).ToString()
+
+            Dim numberTimes As Double = 1
+            If arguments.Length &gt; 1 Then
+                numberTimes = CDbl(arguments(1))
+            End If
+            Dim builder As New StringBuilder()
+
+            If numberTimes &lt; 0 Then
+                Return ErrorExpressions.ValueError
+            End If
+
+            For i As Integer = 0 To numberTimes - 1
+                builder.Append(text)
+            Next
+
+            Return New StringExpression(builder.ToString())
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_6"
+    Public Class Add
+        Inherits NumbersInFunction
+        Public Shared ReadOnly FunctionName As String = "ADD"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property ArgumentConversionRules() As ArgumentConversionRules
+            Get
+                Return ArgumentConversionRules.NaryIgnoreIndirectNumberFunctionConversion
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            '#Region "FunctionInfo"
+
+            Dim description As String = "Adds all the numbers in range of cells."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+
+            '#End Region
+            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, _
+                True)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Double()) As Telerik.Windows.Documents.Spreadsheet.Expressions.RadExpression
+            Dim result As Double = 0
+
+            For i As Integer = 0 To arguments.Length - 1
+                result += arguments(i)
+            Next
+
+            If Double.IsInfinity(result) Then
+                Return ErrorExpressions.NumberError
+            End If
+
+            Return New NumberExpression(result)
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_7"
+    Private Class GeoMean
+        Inherits NumbersInFunction
+        Public Shared ReadOnly FunctionName As String = "GEOMEAN"
+        Private Shared ReadOnly info As FunctionInfo
+        Private Shared ReadOnly conversionRules As New ArgumentConversionRules(nonTextNumberDirectArgument:=ArgumentInterpretation.TreatAsError, nonTextNumberIndirectArgument:=ArgumentInterpretation.TreatAsError, emptyIndirectArgument:=ArgumentInterpretation.Ignore, emptyDirectArgument:=ArgumentInterpretation.Ignore, arrayArgument:=ArrayArgumentInterpretation.UseAllElements)
+
+        Public Overrides ReadOnly Property ArgumentConversionRules() As ArgumentConversionRules
+            Get
+                Return GeoMean.conversionRules
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the geometric mean of a sequance of numbers."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "Positive number", ArgumentType.Number)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "Positive number", ArgumentType.Number)}
+
+            info = New FunctionInfo(FunctionName, FunctionCategory.Statistical, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount:=255)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Double()) As RadExpression
+            Dim product As Double = 1
+
+            For Each argument As Double In arguments
+                If argument &lt;= 0 Then
+                    Return ErrorExpressions.NumberError
+                End If
+
+                product *= argument
+            Next
+
+            Dim result As Double = Math.Pow(product, 1.0 / arguments.Length)
+
+            Return New NumberExpression(result)
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_8"
+
+    Public Class Nand
+        Inherits BooleansInFunction
+        Public Shared ReadOnly FunctionName As String = "NAND"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the Sheffer stroke (or also known as the NAND operator) of two booleans."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Logical", "The first logical argument.", ArgumentType.Logical), New ArgumentInfo("Logical", "The second logical argument.", ArgumentType.Logical)}
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Boolean()) As RadExpression
+            Dim result As Boolean = Not (arguments(0) And arguments(1))
+
+            Return If(result, BooleanExpression.[True], BooleanExpression.[False])
+        End Function
+    End Class
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_9"
+
+    Public Class Upper
+        Inherits StringsInFunction
+        Public Shared ReadOnly FunctionName As String = "UPPER"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Converts text to uppercase."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Text", "Text is the text you want converted to uppercase. Text can be a reference or text string.", ArgumentType.Text)}
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As String()) As RadExpression
+            Dim text As String = arguments(0)
+
+            Dim builder As New StringBuilder()
+
+            For i As Integer = 0 To text.Length - 1
+                Dim c As Char = Char.ToUpperInvariant(text(i))
+                builder.Append(c)
+            Next
+
+            Return New StringExpression(builder.ToString())
+        End Function
+    End Class
+#End Region
+End Class
+</code></pre>
+
+<p>The next example is of a custom function named "E" that inherits from the <strong>FunctionBase</strong> class. The function takes no arguments and it always returns the Napier's constant.</p>
+
+<p><strong>Example 5</strong> shows how to create the 'E' function.</p>
+
+<h4><strong>[C#] Example 5: Create E function</strong></h4>
+
+<pre><code>        public class E : FunctionBase
+        {
+            public static readonly string FunctionName = "E";
+            private static readonly FunctionInfo Info;
+
+            public override string Name
+            {
+                get
+                {
+                    return FunctionName;
+                }
+            }
+
+            public override FunctionInfo FunctionInfo
+            {
+                get
+                {
+                    return Info;
+                }
+            }
+
+            static E()
+            {
+                string description = "Returns the Napier's constant.";
+
+                Info = new FunctionInfo(FunctionName, FunctionCategory.MathTrig, description);
+            }
+
+            protected override RadExpression EvaluateOverride(RadExpression[] arguments)
+            {
+                return NumberExpression.E;
+            }
+        }
+</code></pre>
+
+<h4><strong>[VB] Example 5: Create E function</strong></h4>
+
+<pre><code>    Public Class E
+        Inherits FunctionBase
+        Public Shared ReadOnly FunctionName As String = "E"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the Napier's constant."
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
+            Return NumberExpression.E
+        End Function
+    End Class
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_5"
+    Public Class RepeatString
+        Inherits FunctionWithArguments
+        Public Shared ReadOnly FunctionName As String = "REPEAT.STRING"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Text", "Text is the text you want to repeat.", ArgumentType.Text)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("NumberTimes", "NumberTimes is a positive number specifying the number of times to repeat text.", ArgumentType.Number)}
+
+            Dim description As String = "REPEAT.STRING repeats some text a desired number of times."
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments, optionalArguments, 1, _
+                False)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Object()) As RadExpression
+            Dim text As String = arguments(0).ToString()
+
+            Dim numberTimes As Double = 1
+            If arguments.Length &gt; 1 Then
+                numberTimes = CDbl(arguments(1))
+            End If
+            Dim builder As New StringBuilder()
+
+            If numberTimes &lt; 0 Then
+                Return ErrorExpressions.ValueError
+            End If
+
+            For i As Integer = 0 To numberTimes - 1
+                builder.Append(text)
+            Next
+
+            Return New StringExpression(builder.ToString())
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_6"
+    Public Class Add
+        Inherits NumbersInFunction
+        Public Shared ReadOnly FunctionName As String = "ADD"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property ArgumentConversionRules() As ArgumentConversionRules
+            Get
+                Return ArgumentConversionRules.NaryIgnoreIndirectNumberFunctionConversion
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            '#Region "FunctionInfo"
+
+            Dim description As String = "Adds all the numbers in range of cells."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+
+
+            '#End Region
+            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, _
+                True)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Double()) As Telerik.Windows.Documents.Spreadsheet.Expressions.RadExpression
+            Dim result As Double = 0
+
+            For i As Integer = 0 To arguments.Length - 1
+                result += arguments(i)
+            Next
+
+            If Double.IsInfinity(result) Then
+                Return ErrorExpressions.NumberError
+            End If
+
+            Return New NumberExpression(result)
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_7"
+    Private Class GeoMean
+        Inherits NumbersInFunction
+        Public Shared ReadOnly FunctionName As String = "GEOMEAN"
+        Private Shared ReadOnly info As FunctionInfo
+        Private Shared ReadOnly conversionRules As New ArgumentConversionRules(nonTextNumberDirectArgument:=ArgumentInterpretation.TreatAsError, nonTextNumberIndirectArgument:=ArgumentInterpretation.TreatAsError, emptyIndirectArgument:=ArgumentInterpretation.Ignore, emptyDirectArgument:=ArgumentInterpretation.Ignore, arrayArgument:=ArrayArgumentInterpretation.UseAllElements)
+
+        Public Overrides ReadOnly Property ArgumentConversionRules() As ArgumentConversionRules
+            Get
+                Return GeoMean.conversionRules
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the geometric mean of a sequance of numbers."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "Positive number", ArgumentType.Number)}
+
+            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "Positive number", ArgumentType.Number)}
+
+            info = New FunctionInfo(FunctionName, FunctionCategory.Statistical, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount:=255)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Double()) As RadExpression
+            Dim product As Double = 1
+
+            For Each argument As Double In arguments
+                If argument &lt;= 0 Then
+                    Return ErrorExpressions.NumberError
+                End If
+
+                product *= argument
+            Next
+
+            Dim result As Double = Math.Pow(product, 1.0 / arguments.Length)
+
+            Return New NumberExpression(result)
+        End Function
+    End Class
+
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_8"
+
+    Public Class Nand
+        Inherits BooleansInFunction
+        Public Shared ReadOnly FunctionName As String = "NAND"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Returns the Sheffer stroke (or also known as the NAND operator) of two booleans."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Logical", "The first logical argument.", ArgumentType.Logical), New ArgumentInfo("Logical", "The second logical argument.", ArgumentType.Logical)}
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As Boolean()) As RadExpression
+            Dim result As Boolean = Not (arguments(0) And arguments(1))
+
+            Return If(result, BooleanExpression.[True], BooleanExpression.[False])
+        End Function
+    End Class
+#End Region
+
+#Region "radspreadprocessing-features-formulas-custom-functions_9"
+
+    Public Class Upper
+        Inherits StringsInFunction
+        Public Shared ReadOnly FunctionName As String = "UPPER"
+        Private Shared ReadOnly Info As FunctionInfo
+
+        Public Overrides ReadOnly Property Name() As String
+            Get
+                Return FunctionName
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+            Get
+                Return Info
+            End Get
+        End Property
+
+        Shared Sub New()
+            Dim description As String = "Converts text to uppercase."
+
+            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Text", "Text is the text you want converted to uppercase. Text can be a reference or text string.", ArgumentType.Text)}
+
+            Info = New FunctionInfo(FunctionName, FunctionCategory.Text, description, requiredArguments)
+        End Sub
+
+        Protected Overrides Function EvaluateOverride(arguments As String()) As RadExpression
+            Dim text As String = arguments(0)
+
+            Dim builder As New StringBuilder()
+
+            For i As Integer = 0 To text.Length - 1
+                Dim c As Char = Char.ToUpperInvariant(text(i))
+                builder.Append(c)
+            Next
+
+            Return New StringExpression(builder.ToString())
+        End Function
+    End Class
+#End Region
+End Class
+</code></pre>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li>
+<a href="/devtools/winforms/spread-processing/working-with-cells/spreadprocessing-cell-value-types">Cell Value Types</a><a href="http://www.telerik.com/help/winforms/t_telerik_windows_documents_spreadsheet_expressions_functions_argumentinterpretation.html">ArgumentInterpretation</a><a href="http://www.telerik.com/help/winforms/t_telerik_windows_documents_spreadsheet_expressions_functions_arrayargumentinterpretation.html">ArrayArgumentInterpretation</a>
+</li>
+</ul>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

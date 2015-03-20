@@ -1,0 +1,496 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Data Biniding</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Data Biniding">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("checkedlistbox/data-binding.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/checkedlistbox/data-binding.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="data-biniding"><a href="#data-biniding">Data Biniding</a></h1>
+
+<h2 id="supported-bindable-types"><a href="#supported-bindable-types">Supported Bindable Types</a></h2>
+
+<p>As an inheritor of <strong>RadListView</strong>, <strong>RadCheckedListBox</strong> extends its functionality and provides a way to bind your<br>
+        <strong>RadCheckedListBox</strong> check boxes to a data source. There are several types of data that <strong>CheckedMember</strong> can be bound to:</p>
+
+<ul>
+<li><p><strong>Boolean</strong> – True represents ToggleState.On and False – ToggleState.Off.</p></li>
+<li><p><strong>Numeric</strong> – 0 represents ToggleState.Off, any other value is calculated as ToggleState.On.</p></li>
+<li><p><strong>ToggleState</strong> enumeration.</p></li>
+<li><p><strong>CheckState</strong> enumeration.</p></li>
+<li><p><strong>String</strong> – representing CheckBox ToggleState.On state with values<br>
+          like: "True", "On" and "T", ToggleState.Indeterminate state with value "indeterminate", ToggleState.Off state with any other value.</p></li>
+</ul>
+
+<blockquote>
+<p>Information about <strong>RadListView</strong> data binding is available here: <a href="/devtools/winforms/listview/databinding">RadListView Data Binding</a>.</p>
+</blockquote>
+
+<h2 id="design-time"><a href="#design-time">Design Time</a></h2>
+
+<p>To data bind the checkboxes of <strong>RadCheckedListBox</strong> you need to set <strong>CheckedMember</strong> using<br>
+          the smart tag or the properties window.<br>
+        <img src="images/checkedlistbox-data-binding001.png" alt="checkedlistbox-data-binding 001"></p>
+
+<p>The result is data bound <strong>CheckedListBox</strong><img src="images/checkedlistbox-data-binding002.png" alt="checkedlistbox-data-binding 002"></p>
+
+<h2 id="binding-programmatically"><a href="#binding-programmatically">Binding Programmatically</a></h2>
+
+<p>The following example demonstrates how you can bind the control by using the <strong>CheckedMember</strong> property. <br>
+            This example uses the <strong>CheckState</strong> property of the business object.</p>
+
+<p>Initially let’s create collection of objects.</p>
+
+<h4><strong>[C#] SimpleObject class.</strong></h4>
+
+<pre><code>    public class SimpleObject
+    {
+        public int Id { get; set; }
+
+        public string Name { get; set; }
+
+        public CheckState CheckState { get; set; }
+    }
+</code></pre>
+
+<h4><strong>[VB.NET] SimpleObject class.</strong></h4>
+
+<pre><code>Public Class SimpleObject
+    Public Property Id() As Integer
+        Get
+            Return m_Id
+        End Get
+        Set(value As Integer)
+            m_Id = value
+        End Set
+    End Property
+    Private m_Id As Integer
+
+    Public Property Name() As String
+        Get
+            Return m_Name
+        End Get
+        Set(value As String)
+            m_Name = value
+        End Set
+    End Property
+    Private m_Name As String
+
+    Public Property CheckState() As CheckState
+        Get
+            Return m_CheckState
+        End Get
+        Set(value As CheckState)
+            m_CheckState = value
+        End Set
+    End Property
+    Private m_CheckState As CheckState
+End Class
+'#End Region
+</code></pre>
+
+<h4><strong>[C#] Create Simple Objects collection.</strong></h4>
+
+<pre><code>        private IEnumerable&lt;SimpleObject&gt; CreateSimpleObjects()
+        {
+            List&lt;SimpleObject&gt; data = new List&lt;SimpleObject&gt;()
+                {
+                    new SimpleObject() { Id = 1, Name = "Item1", CheckState = CheckState.Unchecked },
+                    new SimpleObject() { Id = 2, Name = "Item2", CheckState = CheckState.Checked },
+                    new SimpleObject() { Id = 3, Name = "Item3", CheckState = CheckState.Indeterminate },
+                    new SimpleObject() { Id = 4, Name = "Item4", CheckState = CheckState.Unchecked },
+                    new SimpleObject() { Id = 5, Name = "Item5", CheckState = CheckState.Unchecked },
+                    new SimpleObject() { Id = 6, Name = "Item6", CheckState = CheckState.Checked }
+                };
+
+            return data;
+        }
+</code></pre>
+
+<h4><strong>[VB.NET] Create Simple Objects collection.</strong></h4>
+
+<pre><code>    Private Function CreateSimpleObjects() As IEnumerable(Of SimpleObject)
+        Dim data As New List(Of SimpleObject)() From { _
+            New SimpleObject() With { _
+                .Id = 1, _
+                .Name = "Item1", _
+                .CheckState = CheckState.Unchecked _
+            }, _
+            New SimpleObject() With { _
+                .Id = 2, _
+                .Name = "Item2", _
+                .CheckState = CheckState.Checked _
+            }, _
+            New SimpleObject() With { _
+                .Id = 3, _
+                .Name = "Item3", _
+                .CheckState = CheckState.Indeterminate _
+            }, _
+            New SimpleObject() With { _
+                .Id = 4, _
+                .Name = "Item4", _
+                .CheckState = CheckState.Unchecked _
+            }, _
+            New SimpleObject() With { _
+                .Id = 5, _
+                .Name = "Item5", _
+                .CheckState = CheckState.Unchecked _
+            }, _
+            New SimpleObject() With { _
+                .Id = 6, _
+                .Name = "Item6", _
+                .CheckState = CheckState.Checked _
+            } _
+        }
+
+        Return data
+    End Function
+    '#End Region
+End Class
+
+'#Region "SimpleObject"
+Public Class SimpleObject
+    Public Property Id() As Integer
+        Get
+            Return m_Id
+        End Get
+        Set(value As Integer)
+            m_Id = value
+        End Set
+    End Property
+    Private m_Id As Integer
+
+    Public Property Name() As String
+        Get
+            Return m_Name
+        End Get
+        Set(value As String)
+            m_Name = value
+        End Set
+    End Property
+    Private m_Name As String
+
+    Public Property CheckState() As CheckState
+        Get
+            Return m_CheckState
+        End Get
+        Set(value As CheckState)
+            m_CheckState = value
+        End Set
+    End Property
+    Private m_CheckState As CheckState
+End Class
+'#End Region
+</code></pre>
+
+<p>To support three state check boxes we need to set the <strong>ThreeStateMode</strong> property:</p>
+
+<h4><strong>[C#] ThreeStateMode.</strong></h4>
+
+<pre><code>            this.radCheckedListBox1.ThreeStateMode = true;
+</code></pre>
+
+<h4><strong>[VB.NET] ThreeStateMode.</strong></h4>
+
+<pre><code>        Me.RadCheckedListBox1.ThreeStateMode = True
+        '#End Region
+
+        '#Region "ProgramaticallyDatabind"
+        Me.RadCheckedListBox1.DataSource = Me.CreateSimpleObjects()
+        Me.RadCheckedListBox1.DisplayMember = "Name"
+        Me.RadCheckedListBox1.ValueMember = "Id"
+        Me.RadCheckedListBox1.CheckedMember = "CheckState"
+        '#End Region
+    End Sub
+
+    '#Region "CreateSimpleObjects"
+    Private Function CreateSimpleObjects() As IEnumerable(Of SimpleObject)
+        Dim data As New List(Of SimpleObject)() From { _
+            New SimpleObject() With { _
+                .Id = 1, _
+                .Name = "Item1", _
+                .CheckState = CheckState.Unchecked _
+            }, _
+            New SimpleObject() With { _
+                .Id = 2, _
+                .Name = "Item2", _
+                .CheckState = CheckState.Checked _
+            }, _
+            New SimpleObject() With { _
+                .Id = 3, _
+                .Name = "Item3", _
+                .CheckState = CheckState.Indeterminate _
+            }, _
+            New SimpleObject() With { _
+                .Id = 4, _
+                .Name = "Item4", _
+                .CheckState = CheckState.Unchecked _
+            }, _
+            New SimpleObject() With { _
+                .Id = 5, _
+                .Name = "Item5", _
+                .CheckState = CheckState.Unchecked _
+            }, _
+            New SimpleObject() With { _
+                .Id = 6, _
+                .Name = "Item6", _
+                .CheckState = CheckState.Checked _
+            } _
+        }
+
+        Return data
+    End Function
+    '#End Region
+End Class
+
+'#Region "SimpleObject"
+Public Class SimpleObject
+    Public Property Id() As Integer
+        Get
+            Return m_Id
+        End Get
+        Set(value As Integer)
+            m_Id = value
+        End Set
+    End Property
+    Private m_Id As Integer
+
+    Public Property Name() As String
+        Get
+            Return m_Name
+        End Get
+        Set(value As String)
+            m_Name = value
+        End Set
+    End Property
+    Private m_Name As String
+
+    Public Property CheckState() As CheckState
+        Get
+            Return m_CheckState
+        End Get
+        Set(value As CheckState)
+            m_CheckState = value
+        End Set
+    End Property
+    Private m_CheckState As CheckState
+End Class
+'#End Region
+</code></pre>
+
+<p>And finally set programmatically the <strong>DataSource</strong>, <strong>DisplayMember</strong>, <br>
+          <strong>ValueMember</strong> and <strong>CheckedMember</strong> properties.</p>
+
+<h4><strong>[C#] Programmatically data bind.</strong></h4>
+
+<pre><code>            this.radCheckedListBox1.DataSource = this.CreateSimpleObjects();
+            this.radCheckedListBox1.DisplayMember = "Name";
+            this.radCheckedListBox1.ValueMember = "Id";
+            this.radCheckedListBox1.CheckedMember = "CheckState";
+</code></pre>
+
+<h4><strong>[VB.NET] Programmatically data bind.</strong></h4>
+
+<pre><code>        Me.RadCheckedListBox1.DataSource = Me.CreateSimpleObjects()
+        Me.RadCheckedListBox1.DisplayMember = "Name"
+        Me.RadCheckedListBox1.ValueMember = "Id"
+        Me.RadCheckedListBox1.CheckedMember = "CheckState"
+        '#End Region
+    End Sub
+
+    '#Region "CreateSimpleObjects"
+    Private Function CreateSimpleObjects() As IEnumerable(Of SimpleObject)
+        Dim data As New List(Of SimpleObject)() From { _
+            New SimpleObject() With { _
+                .Id = 1, _
+                .Name = "Item1", _
+                .CheckState = CheckState.Unchecked _
+            }, _
+            New SimpleObject() With { _
+                .Id = 2, _
+                .Name = "Item2", _
+                .CheckState = CheckState.Checked _
+            }, _
+            New SimpleObject() With { _
+                .Id = 3, _
+                .Name = "Item3", _
+                .CheckState = CheckState.Indeterminate _
+            }, _
+            New SimpleObject() With { _
+                .Id = 4, _
+                .Name = "Item4", _
+                .CheckState = CheckState.Unchecked _
+            }, _
+            New SimpleObject() With { _
+                .Id = 5, _
+                .Name = "Item5", _
+                .CheckState = CheckState.Unchecked _
+            }, _
+            New SimpleObject() With { _
+                .Id = 6, _
+                .Name = "Item6", _
+                .CheckState = CheckState.Checked _
+            } _
+        }
+
+        Return data
+    End Function
+    '#End Region
+End Class
+
+'#Region "SimpleObject"
+Public Class SimpleObject
+    Public Property Id() As Integer
+        Get
+            Return m_Id
+        End Get
+        Set(value As Integer)
+            m_Id = value
+        End Set
+    End Property
+    Private m_Id As Integer
+
+    Public Property Name() As String
+        Get
+            Return m_Name
+        End Get
+        Set(value As String)
+            m_Name = value
+        End Set
+    End Property
+    Private m_Name As String
+
+    Public Property CheckState() As CheckState
+        Get
+            Return m_CheckState
+        End Get
+        Set(value As CheckState)
+            m_CheckState = value
+        End Set
+    End Property
+    Private m_CheckState As CheckState
+End Class
+'#End Region
+</code></pre>
+
+<p><img src="images/checkedlistbox-data-binding003.png" alt="checkedlistbox-data-binding 003"></p>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

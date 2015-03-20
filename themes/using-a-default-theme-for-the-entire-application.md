@@ -1,0 +1,81 @@
+---
+title: Using a default theme for the entire application
+page_title: Using a default theme for the entire application
+description: Using a default theme for the entire application
+slug: themes-using-a-default-theme-for-the-entire-application
+tags: using,a,default,theme,for,the,entire,application
+published: True
+position: 2
+---
+
+# Using a default theme for the entire application
+
+
+
+## 
+
+When your application has many and different controls, you may find it inconvenient to go through all the controls in order to set their __ThemeName__ property.
+        
+
+In the form constructor set the static __ThemeResolutionService.ApplicationThemeName__ property to a theme name:
+        
+
+You can watch the video
+          [Telerik UI for WinForms Theme](http://tv.telerik.com/winforms/themes/radcontrols-winforms-theme)
+          regarding the usage of theme components and __ApplicationThemeName__ property.
+        
+
+#### __[C#] Setting a theme for the entire application__
+
+{{region setAThemeForEntireApplication}}
+	            ThemeResolutionService.ApplicationThemeName = "Office2007Black";
+	{{endregion}}
+
+
+
+#### __[VB.NET] Setting a theme for the entire application__
+
+{{region setAThemeForEntireApplication}}
+	        ThemeResolutionService.ApplicationThemeName = "Office2007Black"
+	{{endregion}}
+
+
+
+>You still have to drop the theme component on the form (e.g. *Office2007Black* in the code samples above) or create an instance of the desired theme programatically.
+          
+
+All your controls will use that specified theme which has precedence over the theme set locally to the control using __ThemeName__ property.
+        
+
+## Enable/Disable the globally set theme for a specific control
+
+This section describes how you can change the theme for the entire application and leave the default one (or use another) for one or
+          several controls. This can be achieved by using the __EnableApplicationThemeName__ property.
+        
+
+This property indicates how the theme will be set to the control. If it is set to true (the default value) the control will have the theme
+          that is globally set (with the __ApplicationThemeName__ property). If it is set to false, the theme, set with the ThemeName property will be respected.
+          For example you can set the theme for the entire application except for one RadGridView control as follows:
+        
+
+#### __[C#] __
+
+{{region setThemeForSpesificControl}}
+	            ThemeResolutionService.ApplicationThemeName = "Office2010Blue";
+	
+	            radGridView1.ElementTree.EnableApplicationThemeName = false;
+	            radGridView1.ThemeName = "Office2010Silver";
+	{{endregion}}
+
+
+
+#### __[VB.NET] __
+
+{{region setThemeForSpesificControl}}
+	        ThemeResolutionService.ApplicationThemeName = "Office2010Blue"
+	
+	        RadGridView1.ElementTree.EnableApplicationThemeName = False
+	        RadGridView1.ThemeName = "Office2010Silver"
+	{{endregion}}
+
+![themes-using-a-default-theme-for-the-entire-application 001](images/themes-using-a-default-theme-for-the-entire-application001.png)

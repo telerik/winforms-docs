@@ -1,0 +1,697 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>RadFixedDocumentEditor</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="RadFixedDocumentEditor">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("pdfprocessing/editing/radfixeddocumenteditor.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/pdfprocessing/editing/radfixeddocumenteditor.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="radfixeddocumenteditor"><a href="#radfixeddocumenteditor">RadFixedDocumentEditor</a></h1>
+
+<p><strong>RadFixedDocumentEditor</strong> is a utility class aiming to allow the creation of <a href="/devtools/winforms/pdfprocessing/model/radfixeddocument">RadFixedDocument</a> in a flow-like manner. The editor provides methods that enable the generation of documents which automatically flows to pages.</p>
+
+<ul>
+<li><p><a href="#creating-radfixeddocumenteditor">Creating RadFixedDocumentEditor</a></p></li>
+<li><p><a href="#sections">Sections</a></p></li>
+<li><p><a href="#starting-new-section">Starting New Section</a></p></li>
+<li><p><a href="#paragraphs">Paragraphs</a></p></li>
+<li><p><a href="#inlines">Inlines</a></p></li>
+<li><p><a href="#tables">Tables</a></p></li>
+<li><p><a href="#%0A--------lists%0A------">Lists</a></p></li>
+</ul>
+
+<h2 id="creating-radfixeddocumenteditor"><a href="#creating-radfixeddocumenteditor">Creating RadFixedDocumentEditor</a></h2>
+
+<p><strong>Example 1</strong> demonstrates how a RadFixedDocumentEditor instance can be created.</p>
+
+<h4><strong>[C#] Create RadFixedDocumentEditor</strong></h4>
+
+<pre><code>            RadFixedDocumentEditor editor = new RadFixedDocumentEditor(radFixedDocument);
+</code></pre>
+
+<h4><strong>[VB.NET] Create RadFixedDocumentEditor</strong></h4>
+
+<pre><code>        Dim editor As New RadFixedDocumentEditor(radFixedDocument)
+        '#End Region
+
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_1"
+        editor.InsertSectionBreak()
+        '#End Region
+    End Sub
+
+    Private Sub InsertParagraphAndInlines(editor As RadFixedDocumentEditor, fontFamily As System.Windows.Media.FontFamily)
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_2"
+        editor.InsertParagraph()
+        '#End Region
+
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_3"
+        editor.InsertRun("text")
+        editor.InsertRun(fontFamily, "text")
+        '#End Region
+
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_4"
+        editor.InsertLine("Line of text")
+        '#End Region
+    End Sub
+
+    Private Sub InsertTable(editor As RadFixedDocumentEditor, table As Table)
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_5"
+        editor.InsertTable(table)
+        '#End Region
+    End Sub
+    Private Sub InsertBlock(ByVal editor As RadFixedDocumentEditor, ByVal blockElement As Block)
+        '#Region "block"
+        editor.InsertBlock(blockElement)
+        '#End Region
+    End Sub
+    Private Sub InsertPageBreak(ByVal editor As RadFixedDocumentEditor)
+        '#Region "PageBreak"
+        editor.InsertPageBreak()
+        '#End Region
+    End Sub
+    Private Sub Image(ByVal editor As RadFixedDocumentEditor, ByVal imageSource As Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource, ByVal size As System.Windows.Size)
+        '#Region "Image"
+        editor.InsertImageInline(imageSource)
+        editor.InsertImageInline(imageSource, size)
+        '#End Region 
+    End Sub
+    Public Sub List(ByVal editor As RadFixedDocumentEditor)
+        '#Region "Lists"
+
+        Dim myList As Telerik.Windows.Documents.Fixed.Model.Editing.Lists.List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
+        editor.ParagraphProperties.ListId = myList.Id
+        editor.ParagraphProperties.ListLevel = 0
+        editor.InsertParagraph()
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<blockquote>
+<p><strong>RadFixedDocumentEditor</strong> inherits from <strong>IDisposable</strong> so it should be properly disposed when the document is created. Otherwise, some of the content may not be finished, i.e. it might not appear on the PDF document.</p>
+</blockquote>
+
+<h2 id="sections"><a href="#sections">Sections</a></h2>
+
+<p><strong>Section</strong> is a sequence of <a href="/devtools/winforms/pdfprocessing/model/radfixedpage">RadFixedPages</a> with the same properties.</p>
+
+<h3 id="sectionproperties"><a href="#sectionproperties">SectionProperties</a></h3>
+
+<p>The section properties are responsible for the page size, margins and orientation of <strong>RadFixedPages</strong> in a section. Below is the complete list of section properties.</p>
+
+<ul>
+<li><p><strong>PageSize</strong>: The size of the pages that are part of the section.</p></li>
+<li><p><strong>PageMargins</strong>: The page margins of a page.</p></li>
+<li><p><strong>PageRotation</strong>: The page rotation. This is enum that can take one of the following values.</p></li>
+<li><p><strong>Rotate0</strong>: The page is not rotated. This is the default value.</p></li>
+<li><p><strong>Rotate90</strong>: The page is rotated to 90°.</p></li>
+<li><p><strong>Rotate180</strong>: The page is rotated to 180°.</p></li>
+<li><p><strong>Rotate270</strong>: The page is rotated to 270°.</p></li>
+</ul>
+
+<h3 id="starting-new-section"><a href="#starting-new-section">Starting New Section</a></h3>
+
+<p>The first section in a document starts as soon as a content is inserted to the editor. You can change the Section properties before inserting any content and they will be applied to the section that is automatically created.</p>
+
+<p>Adding an additional section is achieved with the <strong>InsertSectionBreak()</strong> method as demonstrated in <strong>Example 2</strong>.</p>
+
+<h4><strong>[C#] Example 2: Start a Section</strong></h4>
+
+<pre><code>            editor.InsertSectionBreak();
+</code></pre>
+
+<h4><strong>[VB.NET] Example 2: Start a Section</strong></h4>
+
+<pre><code>        editor.InsertSectionBreak()
+        '#End Region
+    End Sub
+
+    Private Sub InsertParagraphAndInlines(editor As RadFixedDocumentEditor, fontFamily As System.Windows.Media.FontFamily)
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_2"
+        editor.InsertParagraph()
+        '#End Region
+
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_3"
+        editor.InsertRun("text")
+        editor.InsertRun(fontFamily, "text")
+        '#End Region
+
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_4"
+        editor.InsertLine("Line of text")
+        '#End Region
+    End Sub
+
+    Private Sub InsertTable(editor As RadFixedDocumentEditor, table As Table)
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_5"
+        editor.InsertTable(table)
+        '#End Region
+    End Sub
+    Private Sub InsertBlock(ByVal editor As RadFixedDocumentEditor, ByVal blockElement As Block)
+        '#Region "block"
+        editor.InsertBlock(blockElement)
+        '#End Region
+    End Sub
+    Private Sub InsertPageBreak(ByVal editor As RadFixedDocumentEditor)
+        '#Region "PageBreak"
+        editor.InsertPageBreak()
+        '#End Region
+    End Sub
+    Private Sub Image(ByVal editor As RadFixedDocumentEditor, ByVal imageSource As Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource, ByVal size As System.Windows.Size)
+        '#Region "Image"
+        editor.InsertImageInline(imageSource)
+        editor.InsertImageInline(imageSource, size)
+        '#End Region 
+    End Sub
+    Public Sub List(ByVal editor As RadFixedDocumentEditor)
+        '#Region "Lists"
+
+        Dim myList As Telerik.Windows.Documents.Fixed.Model.Editing.Lists.List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
+        editor.ParagraphProperties.ListId = myList.Id
+        editor.ParagraphProperties.ListLevel = 0
+        editor.InsertParagraph()
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p>If you want to change the properties of the next section, make sure to do it <strong>before</strong> you insert the section break. New properties are only used for newly created sections.</p>
+
+<p>All pages that have the same <strong>SectionProperties</strong> are part of the current section. To start a new page you can use the following code:</p>
+
+<h4><strong>[C#] Example 3: Start new Page</strong></h4>
+
+<pre><code>            editor.InsertPageBreak();
+</code></pre>
+
+<h4><strong>[VB.NET] Example 3: Start new Page</strong></h4>
+
+<pre><code>        editor.InsertPageBreak()
+        '#End Region
+    End Sub
+    Private Sub Image(ByVal editor As RadFixedDocumentEditor, ByVal imageSource As Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource, ByVal size As System.Windows.Size)
+        '#Region "Image"
+        editor.InsertImageInline(imageSource)
+        editor.InsertImageInline(imageSource, size)
+        '#End Region 
+    End Sub
+    Public Sub List(ByVal editor As RadFixedDocumentEditor)
+        '#Region "Lists"
+
+        Dim myList As Telerik.Windows.Documents.Fixed.Model.Editing.Lists.List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
+        editor.ParagraphProperties.ListId = myList.Id
+        editor.ParagraphProperties.ListLevel = 0
+        editor.InsertParagraph()
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h2 id="paragraphs"><a href="#paragraphs">Paragraphs</a></h2>
+
+<p><strong>Paragraphs</strong> are blocks of flowing inlines - images and text.</p>
+
+<h3 id="paragraphproperties"><a href="#paragraphproperties">ParagraphProperties</a></h3>
+
+<p>Similar to the section properties, paragraph has its own properties that are responsible for the way it looks.</p>
+
+<ul>
+<li><p><strong>SpacingBefore</strong>: Represent the spacing before.</p></li>
+<li><p><strong>SpacingAfter</strong>: Represents the spacing after.</p></li>
+<li><p><strong>LineSpacing</strong>: The spacing between the lines.</p></li>
+<li><p><strong>LineSpacingType</strong>: Specifies how to interpret the line spacing.</p></li>
+<li><p><strong>FirstLineIndent</strong>: The indent for the first line.</p></li>
+<li><p><strong>LeftIndent</strong>: The left indent.</p></li>
+<li><p><strong>RightIndent</strong>: The right indent.</p></li>
+<li><p><strong>BackgroundColor</strong>: The background color.</p></li>
+<li><p><strong>HorizontalAlignment</strong>: The horizontal alignment of the content.</p></li>
+<li><p><strong>ListId</strong>: The id of the list the paragraph belongs to. If null, then the paragraph belongs to no list.</p></li>
+<li><p><strong>ListLevel</strong>: The list level the paragraph belongs to.</p></li>
+</ul>
+
+<h3 id="starting-new-paragraph"><a href="#starting-new-paragraph">Starting New Paragraph</a></h3>
+
+<p>The first paragraph is created as soon as content is inserted in the editor. You can change paragraph properties before inserting content and when the first paragraph is created automatically, it will use the desired properties.</p>
+
+<p>In order to start a new paragraph use the code in <strong>Example 4</strong>.</p>
+
+<h4><strong>[C#] Start a Paragraph</strong></h4>
+
+<pre><code>            editor.InsertParagraph();
+</code></pre>
+
+<h4><strong>[VB.NET] Start a Paragraph</strong></h4>
+
+<pre><code>        editor.InsertParagraph()
+        '#End Region
+
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_3"
+        editor.InsertRun("text")
+        editor.InsertRun(fontFamily, "text")
+        '#End Region
+
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_4"
+        editor.InsertLine("Line of text")
+        '#End Region
+    End Sub
+
+    Private Sub InsertTable(editor As RadFixedDocumentEditor, table As Table)
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_5"
+        editor.InsertTable(table)
+        '#End Region
+    End Sub
+    Private Sub InsertBlock(ByVal editor As RadFixedDocumentEditor, ByVal blockElement As Block)
+        '#Region "block"
+        editor.InsertBlock(blockElement)
+        '#End Region
+    End Sub
+    Private Sub InsertPageBreak(ByVal editor As RadFixedDocumentEditor)
+        '#Region "PageBreak"
+        editor.InsertPageBreak()
+        '#End Region
+    End Sub
+    Private Sub Image(ByVal editor As RadFixedDocumentEditor, ByVal imageSource As Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource, ByVal size As System.Windows.Size)
+        '#Region "Image"
+        editor.InsertImageInline(imageSource)
+        editor.InsertImageInline(imageSource, size)
+        '#End Region 
+    End Sub
+    Public Sub List(ByVal editor As RadFixedDocumentEditor)
+        '#Region "Lists"
+
+        Dim myList As Telerik.Windows.Documents.Fixed.Model.Editing.Lists.List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
+        editor.ParagraphProperties.ListId = myList.Id
+        editor.ParagraphProperties.ListLevel = 0
+        editor.InsertParagraph()
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p>The result of this method is that new paragraph is started and it uses the current paragraph properties. Until a new paragraph is started, changes in the paragraph properties are not applied.</p>
+
+<h3 id="inlines"><a href="#inlines">Inlines</a></h3>
+
+<p>A Paragraph is built of two types of inlines - runs and images.</p>
+
+<h3 id="runs"><a href="#runs">Runs</a></h3>
+
+<p><strong>Run</strong> represents a collection of characters that have the same properties.</p>
+
+<p><strong>CharacterProperties</strong></p>
+
+<p>The character properties that are responsible for the look of the runs are listed below.</p>
+
+<ul>
+<li><p><strong>FontSize</strong>: The font size.</p></li>
+<li><p><strong>Font</strong>: The font.</p></li>
+<li><p><strong>ForegroundColor</strong>: The foreground color.</p></li>
+<li><p><strong>HighlightColor</strong>: The highlight color.</p></li>
+<li><p><strong>BaselineAlignment</strong>: Describes how the baseline for a text-based element is positioned on the vertical axis, relative to the established baseline for text.</p></li>
+<li><p><strong>Baseline</strong>: A baseline that is aligned at the actual baseline of the containing box.</p></li>
+<li><p><strong>Subscript</strong>: A baseline that is aligned at the subscript position of the containing box.</p></li>
+<li><p><strong>Superscript</strong>: A baseline that is aligned at the superscript position of the containing box.</p></li>
+<li><p><strong>UnderlinePattern</strong>: Тhe underline pattern. Two patterns are supported.</p></li>
+<li><p><strong>None</strong>: There is no underline. This is the default value.</p></li>
+<li><p><strong>Single</strong>: The underline is a single line.</p></li>
+<li><p><strong>UnderlineColor</strong>: The color of the underline.</p></li>
+</ul>
+
+<p><strong>Inserting a Run</strong></p>
+
+<p>There are a number of overloads that insert a run. The code snippet in <strong>Example 5</strong> inserts a a couple of new runs with specific font family, style and weight.</p>
+
+<h4><strong>[C#] Insert Run</strong></h4>
+
+<pre><code>            editor.InsertRun("text");
+            editor.InsertRun(fontFamily, "text");
+</code></pre>
+
+<h4><strong>[VB.NET] Insert Run</strong></h4>
+
+<pre><code>        editor.InsertRun("text")
+        editor.InsertRun(fontFamily, "text")
+        '#End Region
+
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_4"
+        editor.InsertLine("Line of text")
+        '#End Region
+    End Sub
+
+    Private Sub InsertTable(editor As RadFixedDocumentEditor, table As Table)
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_5"
+        editor.InsertTable(table)
+        '#End Region
+    End Sub
+    Private Sub InsertBlock(ByVal editor As RadFixedDocumentEditor, ByVal blockElement As Block)
+        '#Region "block"
+        editor.InsertBlock(blockElement)
+        '#End Region
+    End Sub
+    Private Sub InsertPageBreak(ByVal editor As RadFixedDocumentEditor)
+        '#Region "PageBreak"
+        editor.InsertPageBreak()
+        '#End Region
+    End Sub
+    Private Sub Image(ByVal editor As RadFixedDocumentEditor, ByVal imageSource As Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource, ByVal size As System.Windows.Size)
+        '#Region "Image"
+        editor.InsertImageInline(imageSource)
+        editor.InsertImageInline(imageSource, size)
+        '#End Region 
+    End Sub
+    Public Sub List(ByVal editor As RadFixedDocumentEditor)
+        '#Region "Lists"
+
+        Dim myList As Telerik.Windows.Documents.Fixed.Model.Editing.Lists.List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
+        editor.ParagraphProperties.ListId = myList.Id
+        editor.ParagraphProperties.ListLevel = 0
+        editor.InsertParagraph()
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p>There are a number of overloads that insert a run. The code snippet in <strong>Example 5</strong> inserts a a couple of new runs, one of which with a specific font family.</p>
+
+<p>The code in <strong>Example 6</strong> inserts a new run and a line break after it.</p>
+
+<h4><strong>[C#] Insert Run and Break Line</strong></h4>
+
+<pre><code>            editor.InsertLine("Line of text");
+</code></pre>
+
+<h4><strong>[VB.NET] Insert Run and Break Line</strong></h4>
+
+<pre><code>        editor.InsertLine("Line of text")
+        '#End Region
+    End Sub
+
+    Private Sub InsertTable(editor As RadFixedDocumentEditor, table As Table)
+        '#Region "radpdfprocessing-editing-radfixeddocumenteditor_5"
+        editor.InsertTable(table)
+        '#End Region
+    End Sub
+    Private Sub InsertBlock(ByVal editor As RadFixedDocumentEditor, ByVal blockElement As Block)
+        '#Region "block"
+        editor.InsertBlock(blockElement)
+        '#End Region
+    End Sub
+    Private Sub InsertPageBreak(ByVal editor As RadFixedDocumentEditor)
+        '#Region "PageBreak"
+        editor.InsertPageBreak()
+        '#End Region
+    End Sub
+    Private Sub Image(ByVal editor As RadFixedDocumentEditor, ByVal imageSource As Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource, ByVal size As System.Windows.Size)
+        '#Region "Image"
+        editor.InsertImageInline(imageSource)
+        editor.InsertImageInline(imageSource, size)
+        '#End Region 
+    End Sub
+    Public Sub List(ByVal editor As RadFixedDocumentEditor)
+        '#Region "Lists"
+
+        Dim myList As Telerik.Windows.Documents.Fixed.Model.Editing.Lists.List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
+        editor.ParagraphProperties.ListId = myList.Id
+        editor.ParagraphProperties.ListLevel = 0
+        editor.InsertParagraph()
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h3 id="images"><a href="#images">Images</a></h3>
+
+<p>Image inline is a combination of an <a href="/devtools/winforms/pdfprocessing/model/imagesource">ImageSource</a> object and its desired size.</p>
+
+<p><strong>Inserting an Image</strong></p>
+
+<p>You can insert image inline using one of the following methods:</p>
+
+<h4><strong>[C#] Example 7: Insert ImageInline</strong></h4>
+
+<pre><code>            editor.InsertImageInline(imageSource);
+            editor.InsertImageInline(imageSource, size);
+</code></pre>
+
+<h4><strong>[VB.NET] Example 7: Insert ImageInline</strong></h4>
+
+<pre><code>        editor.InsertImageInline(imageSource)
+        editor.InsertImageInline(imageSource, size)
+        '#End Region 
+    End Sub
+    Public Sub List(ByVal editor As RadFixedDocumentEditor)
+        '#Region "Lists"
+
+        Dim myList As Telerik.Windows.Documents.Fixed.Model.Editing.Lists.List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
+        editor.ParagraphProperties.ListId = myList.Id
+        editor.ParagraphProperties.ListLevel = 0
+        editor.InsertParagraph()
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h2 id="tables"><a href="#tables">Tables</a></h2>
+
+<p>The <strong>Table</strong> class implements the <strong>IBlockElement</strong> interface and an instance of this class can be <br>
+          easily inserted as a new block in the document. You could insert the table using the <strong>InsertTable()</strong> method like illustrated in <br>
+          <strong>Example 8</strong>. <strong>RadFixedDocumentEditor</strong> takes care for positioning, measuring and splitting the table onto pages.</p>
+
+<h4><strong>[C#] Insert Table</strong></h4>
+
+<pre><code>            editor.InsertTable(table);
+</code></pre>
+
+<h4><strong>[VB.NET] Insert Table</strong></h4>
+
+<pre><code>        editor.InsertTable(table)
+        '#End Region
+    End Sub
+    Private Sub InsertBlock(ByVal editor As RadFixedDocumentEditor, ByVal blockElement As Block)
+        '#Region "block"
+        editor.InsertBlock(blockElement)
+        '#End Region
+    End Sub
+    Private Sub InsertPageBreak(ByVal editor As RadFixedDocumentEditor)
+        '#Region "PageBreak"
+        editor.InsertPageBreak()
+        '#End Region
+    End Sub
+    Private Sub Image(ByVal editor As RadFixedDocumentEditor, ByVal imageSource As Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource, ByVal size As System.Windows.Size)
+        '#Region "Image"
+        editor.InsertImageInline(imageSource)
+        editor.InsertImageInline(imageSource, size)
+        '#End Region 
+    End Sub
+    Public Sub List(ByVal editor As RadFixedDocumentEditor)
+        '#Region "Lists"
+
+        Dim myList As Telerik.Windows.Documents.Fixed.Model.Editing.Lists.List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
+        editor.ParagraphProperties.ListId = myList.Id
+        editor.ParagraphProperties.ListLevel = 0
+        editor.InsertParagraph()
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p>For more detailed information on tables follow this link to <a href="/devtools/winforms/pdfprocessing/editing/table">Table</a> documentation article.</p>
+
+<h2 id="block-elements"><a href="#block-elements">Block Elements</a></h2>
+
+<p>The <strong>IBlockElement</strong> interface allows you to easily draw and split some block content onto pages.<br>
+          The interface is implemented by <a href="/devtools/winforms/pdfprocessing/editing/radblock">Block</a> and <br>
+          <a href="/devtools/winforms/pdfprocessing/editing/table">Table</a> classes.<br>
+        You can easily add some block element instance with RadFixedDocumentEditor using InsertBlock() method like illustrated the following example.</p>
+
+<h4><strong>[C#] Insert Block Element</strong></h4>
+
+<pre><code>            editor.InsertBlock(blockElement);
+</code></pre>
+
+<h4><strong>[VB.NET] Insert Block Element</strong></h4>
+
+<pre><code>        editor.InsertBlock(blockElement)
+        '#End Region
+    End Sub
+    Private Sub InsertPageBreak(ByVal editor As RadFixedDocumentEditor)
+        '#Region "PageBreak"
+        editor.InsertPageBreak()
+        '#End Region
+    End Sub
+    Private Sub Image(ByVal editor As RadFixedDocumentEditor, ByVal imageSource As Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource, ByVal size As System.Windows.Size)
+        '#Region "Image"
+        editor.InsertImageInline(imageSource)
+        editor.InsertImageInline(imageSource, size)
+        '#End Region 
+    End Sub
+    Public Sub List(ByVal editor As RadFixedDocumentEditor)
+        '#Region "Lists"
+
+        Dim myList As Telerik.Windows.Documents.Fixed.Model.Editing.Lists.List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
+        editor.ParagraphProperties.ListId = myList.Id
+        editor.ParagraphProperties.ListLevel = 0
+        editor.InsertParagraph()
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<pre><code>    Lists
+</code></pre>
+
+<p>You can easily insert list items with <strong>RadFixedDocumentEditor</strong>. The first thing you have to do is add a <strong>List</strong> in <br>
+        editor’s <strong>ListCollection</strong> by using the <strong>Lists</strong> property. Then each time you want to add list item you have to set the<br>
+        appropriate <strong>ListId</strong> and <strong>ListLevel</strong> property values through <strong>RadFixedDocumentEditor</strong>’s <br>
+        <strong>ParagraphProperties</strong>. Inserting a new paragraph will result in adding a new list item.<br>
+The following code snippet shows how to add new list to <strong>RadFixedDocumentEditor’s ListCollection</strong> and after that insert a paragraph <br>
+with the corresponding list properties:</p>
+
+<h4><strong>[C#] Insert Block Element</strong></h4>
+
+<pre><code>            Telerik.Windows.Documents.Fixed.Model.Editing.Lists.List list = editor.Lists.AddList(ListTemplateType.NumberedDefault);
+            editor.ParagraphProperties.ListId = list.Id;
+            editor.ParagraphProperties.ListLevel = 0;
+            editor.InsertParagraph();
+</code></pre>
+
+<h4><strong>[VB.NET] Insert Block Element</strong></h4>
+
+<pre><code>        Dim myList As Telerik.Windows.Documents.Fixed.Model.Editing.Lists.List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
+        editor.ParagraphProperties.ListId = myList.Id
+        editor.ParagraphProperties.ListLevel = 0
+        editor.InsertParagraph()
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p>For more information about lists you can follow this link to <a href="/devtools/winforms/pdfprocessing/editing/radlist">List documetation article </a> .</p>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/winforms/pdfprocessing/model/radfixeddocument">RadFixedDocument</a></p></li>
+<li><p><a href="/devtools/winforms/pdfprocessing/model/radfixedpage">RadFixedPage</a></p></li>
+<li><p><a href="/devtools/winforms/pdfprocessing/model/imagesource">ImageSource</a></p></li>
+<li><p><a href="/devtools/winforms/pdfprocessing/editing/table">Table</a></p></li>
+</ul>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

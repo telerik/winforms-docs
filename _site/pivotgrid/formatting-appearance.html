@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Formatting appearance</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Formatting appearance">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("pivotgrid/formatting-appearance.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/pivotgrid/formatting-appearance.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="formatting-appearance"><a href="#formatting-appearance">Formatting appearance</a></h1>
+
+<p>This article shows how you can change the appearance of specific cells.</p>
+
+<h2 id="cellformatting"><a href="#cellformatting">CellFormatting</a></h2>
+
+<p>Using the CellFormatting event you can also set various properties of the PivotGridCellElement to modify its appearance. The following example<br>
+          colors the cells in August in Lime color and those in November in Yellow color:</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        void radPivotGrid1_CellFormatting(object sender, PivotCellEventArgs e)
+        {
+            if (e.CellElement.Row.Name == "August" &amp;&amp; !e.CellElement.IsInGrandTotalColumn)
+            {
+                e.CellElement.BackColor = Color.Lime;
+                e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+            }
+            else if (e.CellElement.Row.Name == "November" &amp;&amp; !e.CellElement.IsInGrandTotalColumn)
+            {
+                e.CellElement.BackColor = Color.Yellow;
+                e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+            }
+            else
+            {
+                e.CellElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
+                e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, Telerik.WinControls.ValueResetFlags.Local);
+            }
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Private Sub radPivotGrid1_CellFormatting(sender As Object, e As PivotCellEventArgs)
+        If e.CellElement.Row.Name = "August" AndAlso Not e.CellElement.IsInGrandTotalColumn Then
+            e.CellElement.BackColor = Color.Lime
+            e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+        ElseIf e.CellElement.Row.Name = "November" AndAlso Not e.CellElement.IsInGrandTotalColumn Then
+            e.CellElement.BackColor = Color.Yellow
+            e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+        Else
+            e.CellElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
+            e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, Telerik.WinControls.ValueResetFlags.Local)
+        End If
+    End Sub
+</code></pre>
+
+<p><img src="images/pivotgrid-formatting-appearance001.png" alt="pivotgrid-formatting-appearance 001"></p>
+
+<h2 id="groupelementformatting"><a href="#groupelementformatting">GroupElementFormatting</a></h2>
+
+<p>The GroupElementFormatting event can be used for styling the group cells:</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        void PivotGridElement_GroupElementFormatting(object sender, PivotGroupElementEventArgs e)
+        {
+            if (e.GroupElement.Data.Name == "1994")
+            {
+                e.GroupElement.BackColor = Color.Lime;
+            }
+            else if (e.GroupElement.Data.Name == "1995")
+            {
+                e.GroupElement.BackColor = Color.Yellow;
+            }
+            else if (e.GroupElement.Data.Name.Contains("Total"))
+            {
+                e.GroupElement.ForeColor = Color.DarkRed;
+                e.GroupElement.BackColor = Color.White;
+            }
+            else
+            {
+                e.GroupElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
+                e.GroupElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
+            }
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Private Sub PivotGridElement_GroupElementFormatting(ByVal sender As Object, ByVal e As PivotGroupElementEventArgs)
+        If e.GroupElement.Data.Name = "1994" Then
+            e.GroupElement.BackColor = Color.Lime
+        ElseIf e.GroupElement.Data.Name = "1995" Then
+            e.GroupElement.BackColor = Color.Yellow
+        ElseIf e.GroupElement.Data.Name.Contains("Total") Then
+            e.GroupElement.ForeColor = Color.DarkRed
+            e.GroupElement.BackColor = Color.White
+        Else
+            e.GroupElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
+            e.GroupElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
+        End If
+    End Sub
+    '#End Region
+End Class
+</code></pre>
+
+<p><img src="images/pivotgrid-formatting-appearance002.png" alt="pivotgrid-formatting-appearance 002"></p>
+
+<h2 id="errorstring-and-empltyvaluestring"><a href="#errorstring-and-empltyvaluestring">ErrorString and EmpltyValueString</a></h2>
+
+<p>Using the <strong>ErrorString</strong> and <strong>EmpltyValueString</strong> properties of RadPivotGrid,<br>
+          you can set the strings that will appears correspondingly if an error occurs during the calculation of a cell value or if<br>
+          there is no data for a given cell. An error can occur for example if you try to sum a text column.</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>            this.radPivotGrid1.ErrorString = "Error";
+            this.radPivotGrid1.EmptyValueString = "No Data";
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>        Me.RadPivotGrid1.ErrorString = "Error"
+        Me.RadPivotGrid1.EmptyValueString = "No Data"
+</code></pre>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

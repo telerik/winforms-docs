@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>RadDocumentEditor</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="RadDocumentEditor">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("richtexteditor-/features/richtexteditor-raddocumenteditor.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/richtexteditor-/features/richtexteditor-raddocumenteditor.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="raddocumenteditor"><a href="#raddocumenteditor">RadDocumentEditor</a></h1>
+
+<p><strong>RadDocument</strong> has API of its own, but using it has a set of limitations. First of all, adding and removing Blocks and<br>
+        Inlines from the document can be done only before the document has been measured – a procedure that calculates the desired size of the spans,<br>
+        paragraphs and the document altogether in order to calculate its layout. These operations are usually invoked by the framework when the<br>
+        document in shown in a <strong>RadRichTextEditor</strong>. However, some of the methods of <strong>RadDocument</strong> and<br>
+        <strong>RadRichTextEditor</strong> require that the document be measured before their execution, so if such a method is invoked, the<br>
+        document will be measured. Then, adding Paragraphs, Tables, Sections and Spans will break the structure of the document.</p>
+
+<p>Another issue that the use of the methods of <strong>RadDocument</strong> causes is due to the fact that they are not registered in<br>
+        the undo/redo stack. Thus, once such a method is used, the history stack is cleared and users will no longer be able to undo and redo their<br>
+        previous changes.</p>
+
+<h2 id="what-is-raddocumenteditor"><a href="#what-is-raddocumenteditor">What is RadDocumentEditor</a></h2>
+
+<p>On the other hand, <strong>RadRichTextEditor</strong> provides a much richer API for editing the <strong>RadDocument</strong><br>
+          instance in it. All respective methods from that API are located in the <strong>IDocumentEditor</strong> interface which defines<br>
+          all method that edit fields, annotation ranges, document elements, history, headers and footers and so on and is inherited from<br>
+          <strong>RadRichTextEditor</strong>. In that regard, if you are modifying the document in a class that knows of the existence of<br>
+          <strong>RadRichTextEditor</strong>, you can use the methods of <strong>RadRichTextEditor</strong> in order to manipulate the<br>
+          document in a way transparent to the end user.</p>
+
+<p>The appropriate API, however, should be available in cases when you want to modify a document from code without having a<br>
+          <strong>RadRichTextEditor</strong>. For this purpose, a <strong>RadDocumentEditor</strong> class has been introduced. It also<br>
+          implements the <strong>IDocumentEditor</strong> interface and includes all relevant methods of <strong>RadRichTextEditor</strong><br>
+          for manipulating the document programmatically.</p>
+
+<h2 id="how-to-use-raddocumenteditor"><a href="#how-to-use-raddocumenteditor">How to use RadDocumentEditor</a></h2>
+
+<p>When a <strong>RadDocument</strong> instance was for some reason created from code – built using the elements hierarchy or imported,<br>
+          it can be passed to a <strong>RadDocumentEditor</strong> like this:</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>            RadDocumentEditor documentEditor = new RadDocumentEditor(this.radRichTextEditor1.Document);
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>        Dim documentEditor As New RadDocumentEditor(Me.radRichTextEditor1.Document)
+
+        '#End Region
+
+        '#Region "insert"
+
+        documentEditor.BeginUndoGroup()
+
+        If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
+            documentEditor.InsertTableRow()
+            documentEditor.InsertTableRow()
+            documentEditor.InsertTableRow()
+            documentEditor.Document.Selection.Clear()
+        End If
+
+        documentEditor.EndUndoGroup("Insert three table rows")
+
+        '#End Region
+
+        '#Region "cancel"
+
+        documentEditor.BeginUndoGroup()
+
+        If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
+            documentEditor.InsertTableRow()
+            documentEditor.InsertTableRow()
+            documentEditor.InsertTableRow()
+            documentEditor.Document.Selection.Clear()
+        End If
+
+        documentEditor.CancelUndoGroup()
+
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p>The newly created <em>documentEditor</em> instance now provides all capabilities that a<br>
+          <strong>RadRichTextEditor</strong> provides. Moreover, you can group several methods so that they are added to the Undo/Redo stack<br>
+          as a single item. This can be achieved like this:</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>            documentEditor.BeginUndoGroup();
+
+            if (documentEditor.Document.CaretPosition.IsPositionInsideTable)
+            {
+                documentEditor.InsertTableRow();
+                documentEditor.InsertTableRow();
+                documentEditor.InsertTableRow();
+                documentEditor.Document.Selection.Clear();
+            }
+
+            documentEditor.EndUndoGroup("Insert three table rows");
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>        documentEditor.BeginUndoGroup()
+
+        If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
+            documentEditor.InsertTableRow()
+            documentEditor.InsertTableRow()
+            documentEditor.InsertTableRow()
+            documentEditor.Document.Selection.Clear()
+        End If
+
+        documentEditor.EndUndoGroup("Insert three table rows")
+
+        '#End Region
+
+        '#Region "cancel"
+
+        documentEditor.BeginUndoGroup()
+
+        If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
+            documentEditor.InsertTableRow()
+            documentEditor.InsertTableRow()
+            documentEditor.InsertTableRow()
+            documentEditor.Document.Selection.Clear()
+        End If
+
+        documentEditor.CancelUndoGroup()
+
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p>You can also cancel the execution of the undo group, and it won't be recorded in the history:</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>            documentEditor.BeginUndoGroup();
+
+            if (documentEditor.Document.CaretPosition.IsPositionInsideTable)
+            {
+                documentEditor.InsertTableRow();
+                documentEditor.InsertTableRow();
+                documentEditor.InsertTableRow();
+                documentEditor.Document.Selection.Clear();
+            }
+
+            documentEditor.CancelUndoGroup();
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>        documentEditor.BeginUndoGroup()
+
+        If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
+            documentEditor.InsertTableRow()
+            documentEditor.InsertTableRow()
+            documentEditor.InsertTableRow()
+            documentEditor.Document.Selection.Clear()
+        End If
+
+        documentEditor.CancelUndoGroup()
+
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p>One thing to note here is that it is not possible to remove some actions from the undo history altogether, i.e. you cannot perform an<br>
+          action without it getting registered in the Undo/Redo stack. In most cases, however, this is sufficient, as you can group the operations<br>
+          that you do not want to name and show explicitly to the end user with the ones that have been user-initiated and are expected by the person<br>
+          modifying the content of <strong>RadRichTextEditor</strong>.</p>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/winforms/richtexteditor-/features/richtexteditor-history">History</a></p></li>
+<li><p><a href="/devtools/winforms/richtexteditor-/getting-started/richtexteditor-formatting-api">Using RadRichTextEditor's formatting API </a></p></li>
+</ul>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Parsing Dates</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Parsing Dates">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("editors/maskededitbox/parsing-dates.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/editors/maskededitbox/parsing-dates.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="parsing-dates"><a href="#parsing-dates">Parsing Dates</a></h1>
+
+<p>When <strong>RadMaskedEditBox</strong> is with <strong>MaksType</strong> FreeFormDateTime the control tries to recognize a free-form string and convert it to a valid date.<br>
+        In this article you can find information about the algorithms that are using and what they are able to parse.</p>
+
+<p>The input string can contain a date and time part. Entries are always interpreted left to right and date matching is attempted before time parsing.</p>
+
+<h2 id="date-building-blocks"><a href="#date-building-blocks">Date building blocks</a></h2>
+
+<p>A date is composed of different words or blocks of text. The first stage of date parsing is to split the input string in various "atoms" that are used <br>
+          to determine the actual date. <strong>RadMaskedEditBox</strong> recognizes the following.</p>
+
+<ul>
+<li><p><strong>Numbers:</strong> integer values that are interpreted as decimal numbers.</p></li>
+<li><p><strong>Month names:</strong> both normal and abbreviated month names are recognized. The names will be different for each culture.</p></li>
+<li><p><strong>Time separators:</strong> a culture specific setting (a colon (":") symbol for the American English culture).</p></li>
+<li><p><strong>AM/PM designator:</strong> a culture-specific setting.</p></li>
+<li><p><strong>Week day names:</strong> both normal and abbreviated. These are also culture specific.</p></li>
+</ul>
+
+<pre><code>    Date grouping and structure
+</code></pre>
+
+<p>Date parts are grouped into known date entries that can be evaluated. The result contains a date and time part. The date part can be:</p>
+
+<ul>
+<li><p>A month/day/year triplet: a month can be either a numeric value or a month name. The order of the parts in the triplet is culture specific.</p></li>
+<li><p>A month/day or day/year pair: again, months can be both specified with a number or a name.</p></li>
+<li><p>If a DateFormat string without "d"(day part) is provided the value could be entered as month/year or year/month</p></li>
+<li><p>A single entry of a day, week day, month, or year.</p></li>
+</ul>
+
+<p>The time part is simpler: it is always composed of one to three numbers and an optional AM/PM designator.</p>
+
+<p>An important thing to note here is the way <strong>RadMaskedEditBox</strong> determines the end of the date part and the start of the time one. <br>
+        The parser has two modes of operation: DateTime and TimeOnly. The mode is determined by the <strong>DateFormat</strong> property value: if the date format<br>
+        does not contain any date-formatting instructions, then the control switches to TimeOnly mode. Both modes have different behavior with regard to time parsing:</p>
+
+<ul>
+<li><p>DateTime: An entry of "2 Jan 07 5 20" is interpreted as January 2, 2007 5:20 because the parser found a triplet that gives complete information about the date.<br>
+          Once it has matched the date, it treats the rest of the input as a time entry. Not supplying a full triplet can cause some of the time values <br>
+          to be interpreted as date numbers: e.g. "2 Jan 5 20" is interpreted as January 2, 2005 20:00 (8 PM). To give the control a hint that you are supplying a time<br>
+          value, separate the time values with the time separator. The above entry can be changed to "2 Jan 5:20" and <strong>RadMaskedEditBox</strong> will correctly interpret it as <br>
+          January 2 5:20.</p></li>
+<li><p>TimeOnly: Having a TimeOnly mode means that we do not have to care about the date part and we can relax the time separator requirement. <br>
+          In this mode "4 15 30 pm" will be interpreted as 4:15:30 PM or 16:15:30.</p></li>
+</ul>
+
+<h2 id="date-evaluation"><a href="#date-evaluation">Date evaluation</a></h2>
+
+<p>The last step in date parsing is to take the entry and turn it into a real date. There are several rules that the control obeys.</p>
+
+<ul>
+<li><p>Incomplete dates are always evaluated taking the current date as a basis. For example, "January 2" means January 2 this year. <br>
+          If the current month is April, an entry of "10" is interpreted as April 10, this year.</p></li>
+<li><p>Numbers greater than 31 are always be interpreted as year values if possible (if within the <strong>MinDate/MaxDate</strong> range).</p></li>
+<li><p>Two digit years are interpreted as a year in the <strong>ShortDateCenturyStart-ShortDateCenturyEnd</strong> range. "89" means 1989, and 15 -- "2015".</p></li>
+<li><p>Week days are interpreted as a "move to the next available day" operation. Thus an entry of "Monday"<br>
+          moves to the next Monday and sets it as the selected date. Week day names are ignored if a fully specified date (a date triplet) is already entered.</p></li>
+<li><p>Single month names are interpreted as changing the month for the current date. If the current date is April 10, an entry of "Oct" will evaluate to October 10.</p></li>
+</ul>
+
+<pre><code>    Dates without separators
+</code></pre>
+
+<p>Besides the regular date parsing rules and heuristics described above, <strong>RadMaskedEditBox</strong> can successfully parse 6-digit and 8-digit date formats that <br>
+          have no separators e.g. MMddyy or MMddyyyy. Note, however, that the support provided for these formats relies heavily on the currently set culture for <br>
+          the input control. For example <strong>RadMaskedEditBox</strong> with an en-US culture set will use the short date format to interpret an entry as month-day-year.<br>
+          Here are a few sample entries for the <strong>en-US</strong> culture:</p>
+
+<ul>
+<li><p>"050707" - <strong>OK</strong>, parsed as May 7th, 2007 (the control is trying to parse 05-07-07)</p></li>
+<li><p>"05072007" - <strong>OK</strong>, parsed as May 7th, 2007 (the control is trying to parse 05-07-2007 -- note that the digits are split like this based on the <br>
+          culture-specific slot distribution month, date, year i.e. in a 8-digit format where year should be last the last 4 digits of the representation)</p></li>
+<li><p>"070507" - <strong>OK</strong>, parsed as July 5th, 2007 (the control is trying to parse 07-05-07)</p></li>
+<li><p>"20070507" - <strong>NOT OK</strong>. In the en-US culture, this parses to 20-07-0507, which is evaluated as July 20th, 507. As this value is usually outside the range <br>
+          set by the <strong>MinDate</strong> property, this date would be out of the valid range. To interpret this string as it was probably meant <br>
+          (with a 4-digit year in the first slot), the <strong>RadMaskedEditBox</strong> control would need a different <strong>Culture</strong> setting.</p></li>
+<li><p>"012010" - <strong>OK</strong>. Parsed as January 20th 2010. However, if both numbers are less than 12, the format will be considered during the parsing.<br>
+          For example if the current culture has format like "MM/YY", "5 9"" will be parsed as "5 2009". And if the current culture has format "YY/MM" the<br>
+          same input will be parsed as "2009 5". If one of the numbers is greater than 12, it will be considered as year, and the other one as month. <br>
+          If the both are greater than 12, the <strong>RadMaskedEditBox</strong> will fail to parse the input string.</p></li>
+</ul>
+
+<blockquote>
+<p>If the current culture was <strong>fr-CA</strong> (with short date format "yyyy-MM-dd" where the year slot is first) the input entry "20070507" would be evaluated properly<br>
+            as May 7th, 2007.</p>
+</blockquote>
+
+<ul>
+<li><p>•   "moh-CA" culture has ‘’:" symbols in the MonthNames and DayNames which is used also as time separator symbol, which leads to incorrect parsing.</p></li>
+<li><p>•   "gd-GB", "vi-VN", "so-SO" cultures have " "(white space) symbols in the MonthNames collection which is recognized as separator from parse<br>
+            logic and month cannot be found correctly in some cases.</p></li>
+<li><p>•   "ja-JP","ko-KR","mn-MN"," ug-CN"," zh-CN"- in these cultures the MonthNames  or AbbreviatedMonthNames represent combination from digits and chars for example:"1月". <br>
+            The parse logic recognize this as two tokens which leads to incorrect result.</p></li>
+<li><p>•   These cultures "as-IN","bn-BD","bn-IN","bo-CN","dv-MV","hi-IN","km-KH","kh-IN","kn-IN","kok-IN","lo-LA","ml-IN", "mr-IN", "my-MM","ne-IN","ne-NP","nqo-GN",<br>
+            "or-IN","pa-IN","qut-GT","sa-IN","si-LK", "ta-IN","ta-LK","te-IN", "tzm-Tfng-MA" , "zgh-Tfng-MA" - have unsupported chars.</p></li>
+<li><p>•   "br-FR" - has " ' " symbols in the MonthNames  which is not supported from parsing logic.</p></li>
+<li><p>•   "fy-NL" - in this culture for MonthNames  for March and May are "maa***" and "maa***", AbbreviatedMonthNames for May is "maa", when the date is enter with "maa",the parse <br>
+            logic searching first into long names and return March but the user want May and typed it in AbbreviatedMonthNames format which is not correct parsing.</p></li>
+</ul>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

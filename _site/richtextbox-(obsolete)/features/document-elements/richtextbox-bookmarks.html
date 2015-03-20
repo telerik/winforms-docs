@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Bookmarks</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Bookmarks">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("richtextbox-(obsolete)/features/document-elements/richtextbox-bookmarks.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/richtextbox-(obsolete)/features/document-elements/richtextbox-bookmarks.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="bookmarks"><a href="#bookmarks">Bookmarks</a></h1>
+
+<p>__Bookmarks__are a powerful tool for marking parts of the document,<br>
+        which can be later retrieved and reviewed. They can be added to the document both <br>
+        programmatically and via the UI.</p>
+
+<pre><code>    You can also have [hyperlinks](/richtextbox-(obsolete)/features/document-elements/richtextbox-hyperlink) pointing to the annotations in the document. 
+    This is very convenient, as it provides the means for easier navigation in the document and enables features like table of contents.
+</code></pre>
+
+<h2 id="adding-bookmarks-via-the-ui"><a href="#adding-bookmarks-via-the-ui">Adding Bookmarks via the UI</a></h2>
+
+<p><strong>Bookmarks__can be inserted in the document and removed through the <br>
+          __ManageBookmarksDialog</strong> of RadRichTextBox.<img src="images/richtextbox-features-document-elements-bookmarks001.png" alt="richtextbox-features-document-elements-bookmarks 001"></p>
+
+<h2 id="using-bookmarks-programmatically"><a href="#using-bookmarks-programmatically">Using Bookmarks Programmatically</a></h2>
+
+<p>The document elements that encapsulate the bookmarks functionality are <strong>BookmarkRangeStart__and __BookMarkRangeEnd</strong>, which are placed at the start and the end of the bookmark respectively. Some of the useful methods that RadRichTextBox and RadDocument expose are:</p>
+
+<ul>
+<li><p>this.editor.<strong>InsertBookmark</strong>(string bookmarkName) – inserts a Bookmark with the name specified. If there is selection in the document, the BookmarkRangeStart will be inserted just before the first selected element and the BookmarkRangeEnd will be added at the end of the first selection range.</p></li>
+<li><p>this.editor.Document.<strong>GoToBookmark</strong>(<strong>string__bookmarkName)<br>
+this.editor.Document.__GoToBookmark</strong>(__BookmarkRangeStart__bookmarkStart)<br>
+Both methods move the caret to the bookmark specified. As bookmarks with the same name cannot be inserted in the same document, the name of the bookmark can be used as an identifier.</p></li>
+<li><p>this.editor.Document.Selection.<strong>SelectAnnotationRange</strong>(<strong>AnnotationRangeStart</strong> annotationStart) – selects the annotation passed as parameter. Particularly useful, as most methods of RadRichTextBox and RadDocument operate on the selection. For example, if you invoke this.editor.Delete(false), the text of the Bookmark along with the Bookmark itself will be erased.</p></li>
+<li><p>this.editor.<strong>DeleteBookmark</strong>(<strong>string</strong> bookmarkName)<br>
+this.editor.<strong>DeleteBookmark</strong>(<strong>BookmarkRangeStart</strong> bookmarkRangeStart) <br>
+These two methods remove the bookmark. The text in the document between the BookmarkRangeStart and BookmarkRangeEnd is __not__deleted.</p></li>
+<li><p>this.editor.Document.<strong>GetAllBookmarks</strong>() – returns an IEnumerable<bookmarkrangestart> containing all BookmarkRangeStarts.</bookmarkrangestart></p></li>
+<li><p>this.editor.Document.<strong>EnumerateChildrenOfType</strong>&lt;<strong>BookmarkRangeStart</strong>&gt;() – returns all Bookmarks in the document. This method can be used on document elements other than RadDocument, in case you want to detect all bookmarks in a limited part of the document, e.g. a Paragraph or a Table.</p></li>
+</ul>
+
+<p>You can also add Bookmarks in a document you are creating manually. As both <strong>BookmarkRangeStart__and __BookMarkRangeEnd__inherit from __Inline</strong>, they can be added to the Inlines property of a Paragraph, just like any other Inline. You can also have document positions go to the start or end of the Bookmark and perform non-standard operations. </p>
+
+<p>For example, you can keep a Dictionary<string string> mapping each bookmark name to another string and substitute a bookmark with the corresponding text using the following method:</string></p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>        Dictionary&lt;string, string&gt; bookmarksToContent = new Dictionary&lt;string, string&gt;();
+        private void ReplaceContentOfBookmark(string bookmarkName)
+        {
+            BookmarkRangeStart bookmark = this.radRichTextBox1.Document.GetBookmarkByName(bookmarkName);
+            this.radRichTextBox1.Document.Selection.SelectAnnotationRange(bookmark);
+            this.radRichTextBox1.Document.Delete(false);
+            this.radRichTextBox1.Insert(bookmarksToContent[bookmarkName]);
+        }
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>    Private bookmarksToContent As New Dictionary(Of String, String)()
+    Private Sub ReplaceContentOfBookmark(bookmarkName As String)
+        Dim bookmark As BookmarkRangeStart = Me.RadRichTextBox1.Document.GetBookmarkByName(bookmarkName)
+        Me.RadRichTextBox1.Document.Selection.SelectAnnotationRange(bookmark)
+        Me.RadRichTextBox1.Document.Delete(False)
+        Me.RadRichTextBox1.Insert(bookmarksToContent(bookmarkName))
+    End Sub
+#End Region
+
+#Region "ChangeAllBookmarks"
+    Private Sub ChangeAllBookmarks(radRichTextBox As RadRichTextBox)
+        Dim bookmarks As BookmarkRangeStart() = radRichTextBox.Document.GetAllBookmarks().ToArray()
+        Dim start As New DocumentPosition(radRichTextBox.Document)
+        Dim [end] As New DocumentPosition(radRichTextBox.Document)
+        For Each item As BookmarkRangeStart In bookmarks
+            radRichTextBox.Document.GoToBookmark(item)
+
+            start.MoveToInline(TryCast(item.FirstLayoutBox, InlineLayoutBox), 0)
+            [end].MoveToInline(TryCast(item.[End].FirstLayoutBox, InlineLayoutBox), 0)
+            start.MoveToNextInline()
+            radRichTextBox.Document.Selection.SetSelectionStart(start)
+            radRichTextBox.Document.Selection.AddSelectionEnd([end])
+
+            radRichTextBox.Delete(False)
+
+            radRichTextBox.Insert(bookmarksToContent(item.Name))
+        Next
+    End Sub
+#End Region
+
+End Class
+</code></pre>
+
+<p>If you want to preserve the bookmarks in the document and only change the text between the BookmarkRangeStart and BookmarkRangeEnd document elements, you can do so like this:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>        private void ChangeAllBookmarks(RadRichTextBox radRichTextBox)
+        {
+            BookmarkRangeStart[] bookmarks = radRichTextBox.Document.GetAllBookmarks().ToArray&lt;BookmarkRangeStart&gt;();
+            DocumentPosition start = new DocumentPosition(radRichTextBox.Document);
+            DocumentPosition end = new DocumentPosition(radRichTextBox.Document);
+            foreach (BookmarkRangeStart item in bookmarks)
+            {
+                radRichTextBox.Document.GoToBookmark(item);
+
+                start.MoveToInline(item.FirstLayoutBox as InlineLayoutBox, 0);
+                end.MoveToInline(item.End.FirstLayoutBox as InlineLayoutBox, 0);
+                start.MoveToNextInline();
+                radRichTextBox.Document.Selection.SetSelectionStart(start);
+                radRichTextBox.Document.Selection.AddSelectionEnd(end);
+
+                radRichTextBox.Delete(false);
+
+                radRichTextBox.Insert(bookmarksToContent[item.Name]);
+            }
+        }
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>    Private Sub ChangeAllBookmarks(radRichTextBox As RadRichTextBox)
+        Dim bookmarks As BookmarkRangeStart() = radRichTextBox.Document.GetAllBookmarks().ToArray()
+        Dim start As New DocumentPosition(radRichTextBox.Document)
+        Dim [end] As New DocumentPosition(radRichTextBox.Document)
+        For Each item As BookmarkRangeStart In bookmarks
+            radRichTextBox.Document.GoToBookmark(item)
+
+            start.MoveToInline(TryCast(item.FirstLayoutBox, InlineLayoutBox), 0)
+            [end].MoveToInline(TryCast(item.[End].FirstLayoutBox, InlineLayoutBox), 0)
+            start.MoveToNextInline()
+            radRichTextBox.Document.Selection.SetSelectionStart(start)
+            radRichTextBox.Document.Selection.AddSelectionEnd([end])
+
+            radRichTextBox.Delete(False)
+
+            radRichTextBox.Insert(bookmarksToContent(item.Name))
+        Next
+    End Sub
+#End Region
+
+End Class
+</code></pre>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

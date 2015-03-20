@@ -1,0 +1,1154 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Month View</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Month View">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("scheduler/views/month-view.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/scheduler/views/month-view.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="month-view"><a href="#month-view">Month View</a></h1>
+
+<h2 id="month-view-overview"><a href="#month-view-overview">Month View Overview</a></h2>
+
+<p>The Month view shows one month at a time, or a preset number of weeks. To move to the next day or previous month, you can use the back and forward keyboard arrows, or the <a href="/devtools/winforms/scheduler/scheduler-navigator/overview">SchedulerNavigator</a> control.</p>
+
+<h2 id="structure-of-month-view"><a href="#structure-of-month-view">Structure of Month View</a></h2>
+
+<p>The <a href="/devtools/winforms/scheduler/views/month-view">Month View</a> of the scheduler simply has a <strong>Header</strong>, <strong>Month Cells</strong> for every day in the month and zero or more <strong>Appointment Cells</strong> in each month cell.</p>
+
+<p><img src="images/scheduler-views-month-view008.png" alt="scheduler-views-month-view 008"></p>
+
+<h2 id="setting-the-month-view"><a href="#setting-the-month-view">Setting the Month View</a></h2>
+
+<p>The Week View can be set it to be the default view which the user sees:</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            this.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Month;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Month
+        '           #End Region
+
+        '#Region getMonthView
+        Dim monthView As SchedulerMonthView = Me.RadScheduler1.GetMonthView()
+        '           #End Region
+
+        '#Region activeView
+        If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Month Then
+            Dim activeMonthView As SchedulerMonthView = CType(Me.RadScheduler1.ActiveView, SchedulerMonthView)
+        End If
+        '#End Region
+
+        '#Region showWeekend
+        monthView.ShowWeekend = False
+        '           #End Region
+
+        '#Region weekCount
+        monthView.WeekCount = 5
+        '#End Region
+
+        '#Region "workDays"
+        monthView.WorkWeekStart = DayOfWeek.Wednesday
+        monthView.WorkWeekEnd = DayOfWeek.Saturday
+
+        '#End Region
+
+        '#Region "weekDaysCount"
+        Dim weekDaysCount As Integer = monthView.WeekDaysCount
+        '#End Region
+
+        '#Region "showVerticalNavigator"
+        monthView.ShowVerticalNavigator = False
+        '#End Region
+
+        '#Region "verticalNavigatorRange"
+
+        monthView.RangeStartDate = New DateTime(2014, 6, 10)
+        monthView.RangeEndDate = New DateTime(2014, 7, 20)
+
+        '#End Region
+
+        '#Region "ShowFullMonth"
+        monthView.ShowFullMonth = True
+        '#End Region
+
+
+        '#Region showWeeksHeader
+        monthView.ShowWeeksHeader = True
+        monthView.EnableWeeksHeader = True
+        '#End Region
+
+        '#Region headerFormat
+        RadScheduler1.HeaderFormat = "MMMM dd"
+        '#End Region
+
+        '#Region workWeek
+        monthView.WorkWeekStart = DayOfWeek.Tuesday
+        monthView.WorkWeekEnd = DayOfWeek.Thursday
+        '#End Region
+
+        '#Region showFullMonth
+        monthView.ShowFullMonth = True
+        '#End Region
+
+        '#Region verticalScrolling
+        monthView.ShowVerticalNavigator = True
+        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+        monthView.RangeEndDate = DateTime.Today.AddYears(1)
+        '#End Region
+
+        '#Region overflow
+        monthView.EnableCellOverflowButton = True
+        monthView.EnableAppointmentsScrolling = True
+        '#End Region
+
+        '#Region columnRowResize
+        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h2 id="getting-month-view"><a href="#getting-month-view">Getting Month View</a></h2>
+
+<p>To get the instance to the SchedulerMonthView from the RadScheduler object:</p>
+
+<ul>
+<li>use the <strong>GetMonthView</strong> method:</li>
+</ul>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            SchedulerMonthView monthView = this.radScheduler1.GetMonthView();
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Dim monthView As SchedulerMonthView = Me.RadScheduler1.GetMonthView()
+        '           #End Region
+
+        '#Region activeView
+        If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Month Then
+            Dim activeMonthView As SchedulerMonthView = CType(Me.RadScheduler1.ActiveView, SchedulerMonthView)
+        End If
+        '#End Region
+
+        '#Region showWeekend
+        monthView.ShowWeekend = False
+        '           #End Region
+
+        '#Region weekCount
+        monthView.WeekCount = 5
+        '#End Region
+
+        '#Region "workDays"
+        monthView.WorkWeekStart = DayOfWeek.Wednesday
+        monthView.WorkWeekEnd = DayOfWeek.Saturday
+
+        '#End Region
+
+        '#Region "weekDaysCount"
+        Dim weekDaysCount As Integer = monthView.WeekDaysCount
+        '#End Region
+
+        '#Region "showVerticalNavigator"
+        monthView.ShowVerticalNavigator = False
+        '#End Region
+
+        '#Region "verticalNavigatorRange"
+
+        monthView.RangeStartDate = New DateTime(2014, 6, 10)
+        monthView.RangeEndDate = New DateTime(2014, 7, 20)
+
+        '#End Region
+
+        '#Region "ShowFullMonth"
+        monthView.ShowFullMonth = True
+        '#End Region
+
+
+        '#Region showWeeksHeader
+        monthView.ShowWeeksHeader = True
+        monthView.EnableWeeksHeader = True
+        '#End Region
+
+        '#Region headerFormat
+        RadScheduler1.HeaderFormat = "MMMM dd"
+        '#End Region
+
+        '#Region workWeek
+        monthView.WorkWeekStart = DayOfWeek.Tuesday
+        monthView.WorkWeekEnd = DayOfWeek.Thursday
+        '#End Region
+
+        '#Region showFullMonth
+        monthView.ShowFullMonth = True
+        '#End Region
+
+        '#Region verticalScrolling
+        monthView.ShowVerticalNavigator = True
+        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+        monthView.RangeEndDate = DateTime.Today.AddYears(1)
+        '#End Region
+
+        '#Region overflow
+        monthView.EnableCellOverflowButton = True
+        monthView.EnableAppointmentsScrolling = True
+        '#End Region
+
+        '#Region columnRowResize
+        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h2 id="showinghiding-the-weekend"><a href="#showinghiding-the-weekend">Showing/hiding the weekend</a></h2>
+
+<p>By default the weekends are shown, but you can hide them by using the <strong>ShowWeekend</strong> property: </p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            monthView.ShowWeekend = false;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        monthView.ShowWeekend = False
+        '           #End Region
+
+        '#Region weekCount
+        monthView.WeekCount = 5
+        '#End Region
+
+        '#Region "workDays"
+        monthView.WorkWeekStart = DayOfWeek.Wednesday
+        monthView.WorkWeekEnd = DayOfWeek.Saturday
+
+        '#End Region
+
+        '#Region "weekDaysCount"
+        Dim weekDaysCount As Integer = monthView.WeekDaysCount
+        '#End Region
+
+        '#Region "showVerticalNavigator"
+        monthView.ShowVerticalNavigator = False
+        '#End Region
+
+        '#Region "verticalNavigatorRange"
+
+        monthView.RangeStartDate = New DateTime(2014, 6, 10)
+        monthView.RangeEndDate = New DateTime(2014, 7, 20)
+
+        '#End Region
+
+        '#Region "ShowFullMonth"
+        monthView.ShowFullMonth = True
+        '#End Region
+
+
+        '#Region showWeeksHeader
+        monthView.ShowWeeksHeader = True
+        monthView.EnableWeeksHeader = True
+        '#End Region
+
+        '#Region headerFormat
+        RadScheduler1.HeaderFormat = "MMMM dd"
+        '#End Region
+
+        '#Region workWeek
+        monthView.WorkWeekStart = DayOfWeek.Tuesday
+        monthView.WorkWeekEnd = DayOfWeek.Thursday
+        '#End Region
+
+        '#Region showFullMonth
+        monthView.ShowFullMonth = True
+        '#End Region
+
+        '#Region verticalScrolling
+        monthView.ShowVerticalNavigator = True
+        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+        monthView.RangeEndDate = DateTime.Today.AddYears(1)
+        '#End Region
+
+        '#Region overflow
+        monthView.EnableCellOverflowButton = True
+        monthView.EnableAppointmentsScrolling = True
+        '#End Region
+
+        '#Region columnRowResize
+        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p>You can also specify which days to be considered weekends. The WorkWeekStart and WorkWeekEnd properties allow you to achieve this:</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            monthView.WorkWeekStart = DayOfWeek.Tuesday;
+            monthView.WorkWeekEnd = DayOfWeek.Thursday;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        monthView.WorkWeekStart = DayOfWeek.Tuesday
+        monthView.WorkWeekEnd = DayOfWeek.Thursday
+        '#End Region
+
+        '#Region showFullMonth
+        monthView.ShowFullMonth = True
+        '#End Region
+
+        '#Region verticalScrolling
+        monthView.ShowVerticalNavigator = True
+        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+        monthView.RangeEndDate = DateTime.Today.AddYears(1)
+        '#End Region
+
+        '#Region overflow
+        monthView.EnableCellOverflowButton = True
+        monthView.EnableAppointmentsScrolling = True
+        '#End Region
+
+        '#Region columnRowResize
+        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h2 id="changing-the-startend-work-days"><a href="#changing-the-startend-work-days">Changing the start/end work days</a></h2>
+
+<p>The work days determine the start and end days for the work week. All days outside the work days range are part of the weekend.</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            monthView.WorkWeekStart = DayOfWeek.Wednesday;
+            monthView.WorkWeekEnd = DayOfWeek.Saturday;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        monthView.WorkWeekStart = DayOfWeek.Wednesday
+        monthView.WorkWeekEnd = DayOfWeek.Saturday
+
+        '#End Region
+
+        '#Region "weekDaysCount"
+        Dim weekDaysCount As Integer = monthView.WeekDaysCount
+        '#End Region
+
+        '#Region "showVerticalNavigator"
+        monthView.ShowVerticalNavigator = False
+        '#End Region
+
+        '#Region "verticalNavigatorRange"
+
+        monthView.RangeStartDate = New DateTime(2014, 6, 10)
+        monthView.RangeEndDate = New DateTime(2014, 7, 20)
+
+        '#End Region
+
+        '#Region "ShowFullMonth"
+        monthView.ShowFullMonth = True
+        '#End Region
+
+
+        '#Region showWeeksHeader
+        monthView.ShowWeeksHeader = True
+        monthView.EnableWeeksHeader = True
+        '#End Region
+
+        '#Region headerFormat
+        RadScheduler1.HeaderFormat = "MMMM dd"
+        '#End Region
+
+        '#Region workWeek
+        monthView.WorkWeekStart = DayOfWeek.Tuesday
+        monthView.WorkWeekEnd = DayOfWeek.Thursday
+        '#End Region
+
+        '#Region showFullMonth
+        monthView.ShowFullMonth = True
+        '#End Region
+
+        '#Region verticalScrolling
+        monthView.ShowVerticalNavigator = True
+        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+        monthView.RangeEndDate = DateTime.Today.AddYears(1)
+        '#End Region
+
+        '#Region overflow
+        monthView.EnableCellOverflowButton = True
+        monthView.EnableAppointmentsScrolling = True
+        '#End Region
+
+        '#Region columnRowResize
+        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p><img src="images/scheduler-views-month-view001.png" alt="scheduler-views-month-view 001"><img src="images/scheduler-views-month-view002.png" alt="scheduler-views-month-view 002"></p>
+
+<h2 id="setting-the-number-of-weeks"><a href="#setting-the-number-of-weeks">Setting the number of weeks</a></h2>
+
+<p>By default the Month view shows 3 weeks at a time, but this can be changed by using the <strong>WeekCount</strong> property (the minimum value is 1 week): </p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            monthView.WeekCount = 5;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        monthView.WeekCount = 5
+        '#End Region
+
+        '#Region "workDays"
+        monthView.WorkWeekStart = DayOfWeek.Wednesday
+        monthView.WorkWeekEnd = DayOfWeek.Saturday
+
+        '#End Region
+
+        '#Region "weekDaysCount"
+        Dim weekDaysCount As Integer = monthView.WeekDaysCount
+        '#End Region
+
+        '#Region "showVerticalNavigator"
+        monthView.ShowVerticalNavigator = False
+        '#End Region
+
+        '#Region "verticalNavigatorRange"
+
+        monthView.RangeStartDate = New DateTime(2014, 6, 10)
+        monthView.RangeEndDate = New DateTime(2014, 7, 20)
+
+        '#End Region
+
+        '#Region "ShowFullMonth"
+        monthView.ShowFullMonth = True
+        '#End Region
+
+
+        '#Region showWeeksHeader
+        monthView.ShowWeeksHeader = True
+        monthView.EnableWeeksHeader = True
+        '#End Region
+
+        '#Region headerFormat
+        RadScheduler1.HeaderFormat = "MMMM dd"
+        '#End Region
+
+        '#Region workWeek
+        monthView.WorkWeekStart = DayOfWeek.Tuesday
+        monthView.WorkWeekEnd = DayOfWeek.Thursday
+        '#End Region
+
+        '#Region showFullMonth
+        monthView.ShowFullMonth = True
+        '#End Region
+
+        '#Region verticalScrolling
+        monthView.ShowVerticalNavigator = True
+        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+        monthView.RangeEndDate = DateTime.Today.AddYears(1)
+        '#End Region
+
+        '#Region overflow
+        monthView.EnableCellOverflowButton = True
+        monthView.EnableAppointmentsScrolling = True
+        '#End Region
+
+        '#Region columnRowResize
+        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h2 id="getting-the-week-days-displayed"><a href="#getting-the-week-days-displayed">Getting the week days displayed</a></h2>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            int weekDaysCount = monthView.WeekDaysCount;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Dim weekDaysCount As Integer = monthView.WeekDaysCount
+        '#End Region
+
+        '#Region "showVerticalNavigator"
+        monthView.ShowVerticalNavigator = False
+        '#End Region
+
+        '#Region "verticalNavigatorRange"
+
+        monthView.RangeStartDate = New DateTime(2014, 6, 10)
+        monthView.RangeEndDate = New DateTime(2014, 7, 20)
+
+        '#End Region
+
+        '#Region "ShowFullMonth"
+        monthView.ShowFullMonth = True
+        '#End Region
+
+
+        '#Region showWeeksHeader
+        monthView.ShowWeeksHeader = True
+        monthView.EnableWeeksHeader = True
+        '#End Region
+
+        '#Region headerFormat
+        RadScheduler1.HeaderFormat = "MMMM dd"
+        '#End Region
+
+        '#Region workWeek
+        monthView.WorkWeekStart = DayOfWeek.Tuesday
+        monthView.WorkWeekEnd = DayOfWeek.Thursday
+        '#End Region
+
+        '#Region showFullMonth
+        monthView.ShowFullMonth = True
+        '#End Region
+
+        '#Region verticalScrolling
+        monthView.ShowVerticalNavigator = True
+        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+        monthView.RangeEndDate = DateTime.Today.AddYears(1)
+        '#End Region
+
+        '#Region overflow
+        monthView.EnableCellOverflowButton = True
+        monthView.EnableAppointmentsScrolling = True
+        '#End Region
+
+        '#Region columnRowResize
+        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h2 id="showing-full-month"><a href="#showing-full-month">Showing full month</a></h2>
+
+<p>It is possible to indicate whether the month view should always display exactly one month with the respective number of weeks.</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            monthView.ShowFullMonth = true;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        monthView.ShowFullMonth = True
+        '#End Region
+
+        '#Region verticalScrolling
+        monthView.ShowVerticalNavigator = True
+        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+        monthView.RangeEndDate = DateTime.Today.AddYears(1)
+        '#End Region
+
+        '#Region overflow
+        monthView.EnableCellOverflowButton = True
+        monthView.EnableAppointmentsScrolling = True
+        '#End Region
+
+        '#Region columnRowResize
+        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p><img src="images/scheduler-views-month-view003.png" alt="scheduler-views-month-view 003"></p>
+
+<h2 id="showinghiding-the-vertical-navigator"><a href="#showinghiding-the-vertical-navigator">Showing/hiding the vertical navigator</a></h2>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            monthView.ShowVerticalNavigator = false;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        monthView.ShowVerticalNavigator = False
+        '#End Region
+
+        '#Region "verticalNavigatorRange"
+
+        monthView.RangeStartDate = New DateTime(2014, 6, 10)
+        monthView.RangeEndDate = New DateTime(2014, 7, 20)
+
+        '#End Region
+
+        '#Region "ShowFullMonth"
+        monthView.ShowFullMonth = True
+        '#End Region
+
+
+        '#Region showWeeksHeader
+        monthView.ShowWeeksHeader = True
+        monthView.EnableWeeksHeader = True
+        '#End Region
+
+        '#Region headerFormat
+        RadScheduler1.HeaderFormat = "MMMM dd"
+        '#End Region
+
+        '#Region workWeek
+        monthView.WorkWeekStart = DayOfWeek.Tuesday
+        monthView.WorkWeekEnd = DayOfWeek.Thursday
+        '#End Region
+
+        '#Region showFullMonth
+        monthView.ShowFullMonth = True
+        '#End Region
+
+        '#Region verticalScrolling
+        monthView.ShowVerticalNavigator = True
+        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+        monthView.RangeEndDate = DateTime.Today.AddYears(1)
+        '#End Region
+
+        '#Region overflow
+        monthView.EnableCellOverflowButton = True
+        monthView.EnableAppointmentsScrolling = True
+        '#End Region
+
+        '#Region columnRowResize
+        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h2 id="setting-the-vertical-navigator-range"><a href="#setting-the-vertical-navigator-range">Setting the vertical navigator range</a></h2>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            monthView.RangeStartDate = new DateTime(2014, 6, 10);
+            monthView.RangeEndDate = new DateTime(2014, 7, 20);
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        monthView.RangeStartDate = New DateTime(2014, 6, 10)
+        monthView.RangeEndDate = New DateTime(2014, 7, 20)
+
+        '#End Region
+
+        '#Region "ShowFullMonth"
+        monthView.ShowFullMonth = True
+        '#End Region
+
+
+        '#Region showWeeksHeader
+        monthView.ShowWeeksHeader = True
+        monthView.EnableWeeksHeader = True
+        '#End Region
+
+        '#Region headerFormat
+        RadScheduler1.HeaderFormat = "MMMM dd"
+        '#End Region
+
+        '#Region workWeek
+        monthView.WorkWeekStart = DayOfWeek.Tuesday
+        monthView.WorkWeekEnd = DayOfWeek.Thursday
+        '#End Region
+
+        '#Region showFullMonth
+        monthView.ShowFullMonth = True
+        '#End Region
+
+        '#Region verticalScrolling
+        monthView.ShowVerticalNavigator = True
+        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+        monthView.RangeEndDate = DateTime.Today.AddYears(1)
+        '#End Region
+
+        '#Region overflow
+        monthView.EnableCellOverflowButton = True
+        monthView.EnableAppointmentsScrolling = True
+        '#End Region
+
+        '#Region columnRowResize
+        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p><img src="images/scheduler-views-month-view004.gif" alt="scheduler-views-month-view 004"></p>
+
+<h2 id="showing-and-hiding-the-week-row-headers"><a href="#showing-and-hiding-the-week-row-headers">Showing and hiding the week (row) headers</a></h2>
+
+<p>The week (row) headers display the date range presented by the respective row.<br>
+          By clicking on them, the user can navigate to WeekView with the specified range. Showing/hiding the week (row) headers<br>
+          is done through the <strong>ShowWeeksHeader</strong> property (the default setting is True). To allow or disallow navigating to WeekView<br>
+          on click, you can set the <strong>EnableWeeksHeader</strong> property (which also defaults to True)</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            monthView.ShowWeeksHeader = true;
+            monthView.EnableWeeksHeader = false;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        monthView.ShowWeeksHeader = True
+        monthView.EnableWeeksHeader = True
+        '#End Region
+
+        '#Region headerFormat
+        RadScheduler1.HeaderFormat = "MMMM dd"
+        '#End Region
+
+        '#Region workWeek
+        monthView.WorkWeekStart = DayOfWeek.Tuesday
+        monthView.WorkWeekEnd = DayOfWeek.Thursday
+        '#End Region
+
+        '#Region showFullMonth
+        monthView.ShowFullMonth = True
+        '#End Region
+
+        '#Region verticalScrolling
+        monthView.ShowVerticalNavigator = True
+        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+        monthView.RangeEndDate = DateTime.Today.AddYears(1)
+        '#End Region
+
+        '#Region overflow
+        monthView.EnableCellOverflowButton = True
+        monthView.EnableAppointmentsScrolling = True
+        '#End Region
+
+        '#Region columnRowResize
+        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h2 id="customizing-the-week-row-header-format"><a href="#customizing-the-week-row-header-format">Customizing the week (row) header format</a></h2>
+
+<p>RadScheduler uses the <a href="http://msdn.microsoft.com/en-us/library/az4se3k1(VS.71).aspx">.NET Standard DateTime Format Strings</a>, which can be set through the HeaderFormat property (either in design time or through code). The default value is "MMMM dd":</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            radScheduler1.HeaderFormat = "MMMM dd";
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        RadScheduler1.HeaderFormat = "MMMM dd"
+        '#End Region
+
+        '#Region workWeek
+        monthView.WorkWeekStart = DayOfWeek.Tuesday
+        monthView.WorkWeekEnd = DayOfWeek.Thursday
+        '#End Region
+
+        '#Region showFullMonth
+        monthView.ShowFullMonth = True
+        '#End Region
+
+        '#Region verticalScrolling
+        monthView.ShowVerticalNavigator = True
+        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+        monthView.RangeEndDate = DateTime.Today.AddYears(1)
+        '#End Region
+
+        '#Region overflow
+        monthView.EnableCellOverflowButton = True
+        monthView.EnableAppointmentsScrolling = True
+        '#End Region
+
+        '#Region columnRowResize
+        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h2 id="showing-an-exact-month"><a href="#showing-an-exact-month">Showing an exact month</a></h2>
+
+<p>You can set the <strong>ShowFullMonth</strong> property to force the <strong>SchedulerMonthView</strong> to always display exactly<br>
+          one month no matter how many weeks it contains. When this property is enabled, the view will<br>
+          always navigate to the beginning of the previous/next month and the WeekCount will automatically be updated according to the number of weeks in the target month.</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            monthView.ShowFullMonth = true;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        monthView.ShowFullMonth = True
+        '#End Region
+
+        '#Region verticalScrolling
+        monthView.ShowVerticalNavigator = True
+        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+        monthView.RangeEndDate = DateTime.Today.AddYears(1)
+        '#End Region
+
+        '#Region overflow
+        monthView.EnableCellOverflowButton = True
+        monthView.EnableAppointmentsScrolling = True
+        '#End Region
+
+        '#Region columnRowResize
+        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h2 id="vertical-scrolling"><a href="#vertical-scrolling">Vertical Scrolling</a></h2>
+
+<p>The vertical scrollbar in MonthView allows for quick navigation in large date ranges.<br>
+          To show or hide the vertical scrollbar you can use the <strong>ShowVerticalNavigator</strong> property.<br>
+          When the vertical scrollbar is displayed it can navigate through the date range defined by the <strong>RangeStartDate</strong> and <strong>RangeEndDate</strong> properties.<br>
+          These properties do not limit keyboard navigation outside this range but only stand for specifying the range of the vertical scrollbar.</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            monthView.ShowVerticalNavigator = true;
+            monthView.RangeStartDate = DateTime.Today.AddYears(-1);
+            monthView.RangeEndDate = DateTime.Today.AddYears(1);
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        monthView.ShowVerticalNavigator = True
+        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+        monthView.RangeEndDate = DateTime.Today.AddYears(1)
+        '#End Region
+
+        '#Region overflow
+        monthView.EnableCellOverflowButton = True
+        monthView.EnableAppointmentsScrolling = True
+        '#End Region
+
+        '#Region columnRowResize
+        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h2 id="handling-overflown-cells"><a href="#handling-overflown-cells">Handling overflown cells</a></h2>
+
+<p>RadScheduler handles the overflown cells in month view in two ways. The first one is by displaying a cell<br>
+          overflow button at the bottom of each cell that has more appointments than it can display. Clicking on this<br>
+          button opens a DayView set to the same date the cell represents. This way the user can scroll through and preview<br>
+          all appointments. The second way to handle overflown cells is by displaying a scrollbar at the end of each row if this<br>
+          row contains overflown cells. Using the scrollbar the end user can scroll directly through the appointments. Both of these<br>
+          features can be disabled or enabled using the following properties:</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            SchedulerMonthViewElement monthViewElement = (SchedulerMonthViewElement)this.radScheduler1.ViewElement;
+            monthViewElement.SetRowHeight(1, 2);
+            monthViewElement.SetColumnWidth(1, 2);
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p><img src="images/scheduler-views-month-view005.png" alt="scheduler-views-month-view 005"></p>
+
+<h2 id="modifying-the-size-of-rows-and-columns-in-monthview"><a href="#modifying-the-size-of-rows-and-columns-in-monthview">Modifying the size of rows and columns in MonthView</a></h2>
+
+<p>The <strong>SchedulerMonthViewElement</strong> allows you to specify different size for the different<br>
+          columns. To manipulate the size of the columns, you can use the <strong>SetColumnWidth</strong>, <strong>GetColumnWidth</strong>,<br>
+          <strong>SetRowHeight</strong>, <strong>GetRowHeight</strong> methods. The values passed to the SetColumnWidth and SetRowHeight methods<br>
+          are proportional and the actual width of the columns is calculated based on them.<br>
+          By default all columns have a value of 1 and therefore if you set a value of 2 to any column, it will stay twice as bigger compared to the others.</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            SchedulerMonthViewElement monthViewElement = (SchedulerMonthViewElement)this.radScheduler1.ViewElement;
+            monthViewElement.SetRowHeight(1, 2);
+            monthViewElement.SetColumnWidth(1, 2);
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+        monthViewElement.SetRowHeight(1, 2)
+        monthViewElement.SetColumnWidth(1, 2)
+        '#End Region
+
+        '#Region headerResize
+        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p><img src="images/scheduler-views-month-view006.png" alt="scheduler-views-month-view 006"></p>
+
+<h2 id="modifying-the-size-of-the-headers-in-monthview"><a href="#modifying-the-size-of-the-headers-in-monthview">Modifying the size of the headers in MonthView</a></h2>
+
+<p>The month view of RadScheduler contains two headers – the horizontal <strong>MonthViewHeader</strong>,<br>
+          which displays the weekdays on top of the columns, and the vertical <strong>MonthViewVerticalHeader</strong>,<br>
+          which displays the date ranges for each row. You can modify the size of these headers by accessing the respective element and its properties:</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            monthViewElement.VerticalHeader.HeaderWidth = 50;
+            monthViewElement.Header.HeaderHeight = 50;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        monthViewElement.VerticalHeader.HeaderWidth = 50
+        monthViewElement.Header.HeaderHeight = 50
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p><img src="images/scheduler-views-month-view007.png" alt="scheduler-views-month-view 007"></p>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

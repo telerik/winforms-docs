@@ -1,0 +1,1086 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Custom Fields</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Custom Fields">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("richtexteditor-/features/fields-and-document-variables/richtexteditor-custom-fields.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/richtexteditor-/features/fields-and-document-variables/richtexteditor-custom-fields.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="custom-fields"><a href="#custom-fields">Custom Fields</a></h1>
+
+<p>Fields are a convenient way to show non-static data in the document. In this way, you could present different data to the end-user without actually changing the<br>
+        document content.</p>
+
+<p>For a description of the supported out of the box field types, please refer to <a href="/devtools/winforms/richtexteditor-/features/fields-and-document-variables/richtexteditor-fields">this article</a>.</p>
+
+<p>This topic will explain how custom fields can be created in order to suit application-specific purposes. It contains the following sections:</p>
+
+<ul>
+<li><p><a href="#create-custom-field">Creating a Custom Field</a></p></li>
+<li><p><a href="#adding-properties">Adding Properties</a></p></li>
+</ul>
+
+<h2 id="create-custom-field"><a href="#create-custom-field">Create Custom Field</a></h2>
+
+<p>In some cases, it is convenient to extend the currently available fields to suit application-specific scenarios. This can be done by inheriting from<br>
+          <strong>CodeBasedField</strong> or<br>
+          (if the functionality of the new field will be closely connected to Mail Merge) from <strong>MergeField</strong>.</p>
+
+<p>This topic will list the steps for creating such a custom field.</p>
+
+<ol>
+<li>Have your class inherit from MergeField or CodeBasedField:</li>
+</ol>
+
+<h4>__[C#] __</h4>
+
+<pre><code>    public class CustomField : CodeBasedField
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>Public Class CustomField
+Inherits CodeBasedField
+
+    '#End Region
+
+    '#Region "TypeName"
+
+    Private Shared ReadOnly FieldType As String = "CUSTOMFIELD"
+
+    Public Overrides ReadOnly Property FieldTypeName() As String
+        Get
+            Return CustomField.FieldType
+        End Get
+    End Property
+
+    '#End Region
+
+    '#Region "ctor"
+
+    Shared Sub New()
+        CodeBasedFieldFactory.RegisterFieldType(CustomField.FieldType, Function() New CustomField())
+    End Sub
+
+    '#End Region
+
+    '#Region "create"
+
+    Public Overrides Function CreateInstance() As Field
+        Return New CustomField()
+    End Function
+
+    '#End Region
+
+    ' #Region "field"
+
+
+    Private ReadOnly _myProperty As FieldProperty
+
+    '#End Region
+
+    ' #Region "property"
+
+    &lt;XamlSerializable&gt;
+    Public Property MyProperty() As String
+        Get
+            Return Me._myProperty.GetValue()
+        End Get
+        Set(ByVal value As String)
+            If (Not Me._myProperty.IsNestedField) AndAlso Me._myProperty.GetValue() = value Then
+                Return
+            End If
+
+            Me._myProperty.SetValue(value)
+            Me.InvalidateCode()
+        End Set
+    End Property
+
+    '#End Region
+
+    '#Region "static"
+
+    Public Shared ReadOnly MyPropertyProperty As New FieldPropertyDefinition("MyProperty")
+
+    '#End Region
+
+    '#Region "ctor2"
+
+    Public Sub New()
+        Me._myProperty = New FieldProperty(Me, CustomField.MyPropertyProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "codeExpression"
+
+    Protected Overrides Sub CopyPropertiesFromCodeExpression(ByVal fieldCodeExpression As FieldCodeExpression)
+        MyBase.CopyPropertiesFromCodeExpression(fieldCodeExpression)
+        Me._myProperty.SetValue(fieldCodeExpression.FieldArgumentNode)
+    End Sub
+
+    '#End Region
+
+    '#Region "build"
+
+    Protected Overrides Sub BuildCodeOverride()
+        MyBase.BuildCodeOverride()
+        Me.CodeBuilder.SetFieldArgument(Me._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "copy"
+
+    Public Overrides Sub CopyPropertiesFrom(ByVal fromField As Field)
+        MyBase.CopyPropertiesFrom(fromField)
+
+        Dim _customField As CustomField = CType(fromField, CustomField)
+        Me._myProperty.CopyPropertiesFrom(_customField._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "fragment"
+
+    Protected Overrides Function GetResultFragment() As DocumentFragment
+        Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))
+    End Function
+
+    '#End Region
+End Class
+</code></pre>
+
+<ol>
+<li>Give a FieldTypeName to instances of your field:</li>
+</ol>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        private static readonly string FieldType = "CUSTOMFIELD";
+
+        public override string FieldTypeName
+        {
+            get
+            {
+                return CustomField.FieldType;
+            }
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Private Shared ReadOnly FieldType As String = "CUSTOMFIELD"
+
+    Public Overrides ReadOnly Property FieldTypeName() As String
+        Get
+            Return CustomField.FieldType
+        End Get
+    End Property
+
+    '#End Region
+
+    '#Region "ctor"
+
+    Shared Sub New()
+        CodeBasedFieldFactory.RegisterFieldType(CustomField.FieldType, Function() New CustomField())
+    End Sub
+
+    '#End Region
+
+    '#Region "create"
+
+    Public Overrides Function CreateInstance() As Field
+        Return New CustomField()
+    End Function
+
+    '#End Region
+
+    ' #Region "field"
+
+
+    Private ReadOnly _myProperty As FieldProperty
+
+    '#End Region
+
+    ' #Region "property"
+
+    &lt;XamlSerializable&gt;
+    Public Property MyProperty() As String
+        Get
+            Return Me._myProperty.GetValue()
+        End Get
+        Set(ByVal value As String)
+            If (Not Me._myProperty.IsNestedField) AndAlso Me._myProperty.GetValue() = value Then
+                Return
+            End If
+
+            Me._myProperty.SetValue(value)
+            Me.InvalidateCode()
+        End Set
+    End Property
+
+    '#End Region
+
+    '#Region "static"
+
+    Public Shared ReadOnly MyPropertyProperty As New FieldPropertyDefinition("MyProperty")
+
+    '#End Region
+
+    '#Region "ctor2"
+
+    Public Sub New()
+        Me._myProperty = New FieldProperty(Me, CustomField.MyPropertyProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "codeExpression"
+
+    Protected Overrides Sub CopyPropertiesFromCodeExpression(ByVal fieldCodeExpression As FieldCodeExpression)
+        MyBase.CopyPropertiesFromCodeExpression(fieldCodeExpression)
+        Me._myProperty.SetValue(fieldCodeExpression.FieldArgumentNode)
+    End Sub
+
+    '#End Region
+
+    '#Region "build"
+
+    Protected Overrides Sub BuildCodeOverride()
+        MyBase.BuildCodeOverride()
+        Me.CodeBuilder.SetFieldArgument(Me._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "copy"
+
+    Public Overrides Sub CopyPropertiesFrom(ByVal fromField As Field)
+        MyBase.CopyPropertiesFrom(fromField)
+
+        Dim _customField As CustomField = CType(fromField, CustomField)
+        Me._myProperty.CopyPropertiesFrom(_customField._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "fragment"
+
+    Protected Overrides Function GetResultFragment() As DocumentFragment
+        Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))
+    End Function
+
+    '#End Region
+End Class
+</code></pre>
+
+<p>The field type is shown when the field is in code mode, just after the opening curly bracket. If you toggle the field to Code mode and modify<br>
+              this first word, the type of the field will also change. That is why it is important to give a meaningful name to the field.</p>
+
+<ol>
+<li>Register your custom field type in the factory that RadDocument uses. It is convenient to use the static constructor of the class for that
+          purpose:</li>
+</ol>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        static CustomField()
+        {
+            CodeBasedFieldFactory.RegisterFieldType(CustomField.FieldType, () =&gt; new CustomField());
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Shared Sub New()
+        CodeBasedFieldFactory.RegisterFieldType(CustomField.FieldType, Function() New CustomField())
+    End Sub
+
+    '#End Region
+
+    '#Region "create"
+
+    Public Overrides Function CreateInstance() As Field
+        Return New CustomField()
+    End Function
+
+    '#End Region
+
+    ' #Region "field"
+
+
+    Private ReadOnly _myProperty As FieldProperty
+
+    '#End Region
+
+    ' #Region "property"
+
+    &lt;XamlSerializable&gt;
+    Public Property MyProperty() As String
+        Get
+            Return Me._myProperty.GetValue()
+        End Get
+        Set(ByVal value As String)
+            If (Not Me._myProperty.IsNestedField) AndAlso Me._myProperty.GetValue() = value Then
+                Return
+            End If
+
+            Me._myProperty.SetValue(value)
+            Me.InvalidateCode()
+        End Set
+    End Property
+
+    '#End Region
+
+    '#Region "static"
+
+    Public Shared ReadOnly MyPropertyProperty As New FieldPropertyDefinition("MyProperty")
+
+    '#End Region
+
+    '#Region "ctor2"
+
+    Public Sub New()
+        Me._myProperty = New FieldProperty(Me, CustomField.MyPropertyProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "codeExpression"
+
+    Protected Overrides Sub CopyPropertiesFromCodeExpression(ByVal fieldCodeExpression As FieldCodeExpression)
+        MyBase.CopyPropertiesFromCodeExpression(fieldCodeExpression)
+        Me._myProperty.SetValue(fieldCodeExpression.FieldArgumentNode)
+    End Sub
+
+    '#End Region
+
+    '#Region "build"
+
+    Protected Overrides Sub BuildCodeOverride()
+        MyBase.BuildCodeOverride()
+        Me.CodeBuilder.SetFieldArgument(Me._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "copy"
+
+    Public Overrides Sub CopyPropertiesFrom(ByVal fromField As Field)
+        MyBase.CopyPropertiesFrom(fromField)
+
+        Dim _customField As CustomField = CType(fromField, CustomField)
+        Me._myProperty.CopyPropertiesFrom(_customField._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "fragment"
+
+    Protected Overrides Function GetResultFragment() As DocumentFragment
+        Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))
+    End Function
+
+    '#End Region
+End Class
+</code></pre>
+
+<p>The function passed as a second parameter essentially tells the document how it could create a new instance of the field. This is required<br>
+              because fields have to be created internally when you copy/paste or even when you toggle field modes.</p>
+
+<ol>
+<li>Override the CreateInstance() method to return a new instance of your custom field:</li>
+</ol>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        public override Field CreateInstance()
+        {
+            return new CustomField();
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Public Overrides Function CreateInstance() As Field
+        Return New CustomField()
+    End Function
+
+    '#End Region
+
+    ' #Region "field"
+
+
+    Private ReadOnly _myProperty As FieldProperty
+
+    '#End Region
+
+    ' #Region "property"
+
+    &lt;XamlSerializable&gt;
+    Public Property MyProperty() As String
+        Get
+            Return Me._myProperty.GetValue()
+        End Get
+        Set(ByVal value As String)
+            If (Not Me._myProperty.IsNestedField) AndAlso Me._myProperty.GetValue() = value Then
+                Return
+            End If
+
+            Me._myProperty.SetValue(value)
+            Me.InvalidateCode()
+        End Set
+    End Property
+
+    '#End Region
+
+    '#Region "static"
+
+    Public Shared ReadOnly MyPropertyProperty As New FieldPropertyDefinition("MyProperty")
+
+    '#End Region
+
+    '#Region "ctor2"
+
+    Public Sub New()
+        Me._myProperty = New FieldProperty(Me, CustomField.MyPropertyProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "codeExpression"
+
+    Protected Overrides Sub CopyPropertiesFromCodeExpression(ByVal fieldCodeExpression As FieldCodeExpression)
+        MyBase.CopyPropertiesFromCodeExpression(fieldCodeExpression)
+        Me._myProperty.SetValue(fieldCodeExpression.FieldArgumentNode)
+    End Sub
+
+    '#End Region
+
+    '#Region "build"
+
+    Protected Overrides Sub BuildCodeOverride()
+        MyBase.BuildCodeOverride()
+        Me.CodeBuilder.SetFieldArgument(Me._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "copy"
+
+    Public Overrides Sub CopyPropertiesFrom(ByVal fromField As Field)
+        MyBase.CopyPropertiesFrom(fromField)
+
+        Dim _customField As CustomField = CType(fromField, CustomField)
+        Me._myProperty.CopyPropertiesFrom(_customField._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "fragment"
+
+    Protected Overrides Function GetResultFragment() As DocumentFragment
+        Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))
+    End Function
+
+    '#End Region
+End Class
+</code></pre>
+
+<ol>
+<li>If you have inherited from CodeBasedField or you would like to customize the way the field appears in the document in ResultMode, override <strong>GetResultFragment</strong> method. In short, it will return a DocumentFragment with the content that should be shown when the field is updated and its
+          mode is changed to Result.</li>
+</ol>
+
+<p>That is all that needs to be done in order to be able to get your custom field working, insert it in documents, serialize and deserialize it.</p>
+
+<h2 id="adding-properties"><a href="#adding-properties">Adding Properties</a></h2>
+
+<p>If you would like to add some properties to this field, similar to the PropertyPath field of MergeFields, you can do so following the steps bellow:</p>
+
+<ol>
+<li>Create a readonly FieldProperty:</li>
+</ol>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        private readonly FieldProperty myProperty;
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Private ReadOnly _myProperty As FieldProperty
+
+    '#End Region
+
+    ' #Region "property"
+
+    &lt;XamlSerializable&gt;
+    Public Property MyProperty() As String
+        Get
+            Return Me._myProperty.GetValue()
+        End Get
+        Set(ByVal value As String)
+            If (Not Me._myProperty.IsNestedField) AndAlso Me._myProperty.GetValue() = value Then
+                Return
+            End If
+
+            Me._myProperty.SetValue(value)
+            Me.InvalidateCode()
+        End Set
+    End Property
+
+    '#End Region
+
+    '#Region "static"
+
+    Public Shared ReadOnly MyPropertyProperty As New FieldPropertyDefinition("MyProperty")
+
+    '#End Region
+
+    '#Region "ctor2"
+
+    Public Sub New()
+        Me._myProperty = New FieldProperty(Me, CustomField.MyPropertyProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "codeExpression"
+
+    Protected Overrides Sub CopyPropertiesFromCodeExpression(ByVal fieldCodeExpression As FieldCodeExpression)
+        MyBase.CopyPropertiesFromCodeExpression(fieldCodeExpression)
+        Me._myProperty.SetValue(fieldCodeExpression.FieldArgumentNode)
+    End Sub
+
+    '#End Region
+
+    '#Region "build"
+
+    Protected Overrides Sub BuildCodeOverride()
+        MyBase.BuildCodeOverride()
+        Me.CodeBuilder.SetFieldArgument(Me._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "copy"
+
+    Public Overrides Sub CopyPropertiesFrom(ByVal fromField As Field)
+        MyBase.CopyPropertiesFrom(fromField)
+
+        Dim _customField As CustomField = CType(fromField, CustomField)
+        Me._myProperty.CopyPropertiesFrom(_customField._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "fragment"
+
+    Protected Overrides Function GetResultFragment() As DocumentFragment
+        Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))
+    End Function
+
+    '#End Region
+End Class
+</code></pre>
+
+<ol>
+<li>Add a public CLR property. Properties of type string can be set and retrieved from the FieldProperty directly. No other types are accepted,
+          as it would not be possible to convert them correctly to text for the purpose of field evaluation when inserted in the document. Therefore, if you
+          would like to have non-string properties, you would have to make the conversion to/from string yourself:</li>
+</ol>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        [XamlSerializable]
+        public string MyProperty
+        {
+            get
+            {
+                return this.myProperty.GetValue();
+            }
+            set
+            {
+                if (!this.myProperty.IsNestedField &amp;&amp; this.myProperty.GetValue() == value)
+                {
+                    return;
+                }
+
+                this.myProperty.SetValue(value);
+                this.InvalidateCode();
+            }
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    &lt;XamlSerializable&gt;
+    Public Property MyProperty() As String
+        Get
+            Return Me._myProperty.GetValue()
+        End Get
+        Set(ByVal value As String)
+            If (Not Me._myProperty.IsNestedField) AndAlso Me._myProperty.GetValue() = value Then
+                Return
+            End If
+
+            Me._myProperty.SetValue(value)
+            Me.InvalidateCode()
+        End Set
+    End Property
+
+    '#End Region
+
+    '#Region "static"
+
+    Public Shared ReadOnly MyPropertyProperty As New FieldPropertyDefinition("MyProperty")
+
+    '#End Region
+
+    '#Region "ctor2"
+
+    Public Sub New()
+        Me._myProperty = New FieldProperty(Me, CustomField.MyPropertyProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "codeExpression"
+
+    Protected Overrides Sub CopyPropertiesFromCodeExpression(ByVal fieldCodeExpression As FieldCodeExpression)
+        MyBase.CopyPropertiesFromCodeExpression(fieldCodeExpression)
+        Me._myProperty.SetValue(fieldCodeExpression.FieldArgumentNode)
+    End Sub
+
+    '#End Region
+
+    '#Region "build"
+
+    Protected Overrides Sub BuildCodeOverride()
+        MyBase.BuildCodeOverride()
+        Me.CodeBuilder.SetFieldArgument(Me._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "copy"
+
+    Public Overrides Sub CopyPropertiesFrom(ByVal fromField As Field)
+        MyBase.CopyPropertiesFrom(fromField)
+
+        Dim _customField As CustomField = CType(fromField, CustomField)
+        Me._myProperty.CopyPropertiesFrom(_customField._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "fragment"
+
+    Protected Overrides Function GetResultFragment() As DocumentFragment
+        Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))
+    End Function
+
+    '#End Region
+End Class
+</code></pre>
+
+<p>The XamlSerializable attribute ensures that this property will be exported and imported to/from XAML when XamlFormatProvider is used. The<br>
+              other part of the code ensures that the field will be reset only if the new value is different and that the code will be invalidated, so as to be<br>
+              correctly updated on the next pass.</p>
+
+<ol>
+<li>Declare a static FieldPropertyDefinition wired to your property:</li>
+</ol>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        public static readonly FieldPropertyDefinition MyPropertyProperty = new FieldPropertyDefinition("MyProperty");
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Public Shared ReadOnly MyPropertyProperty As New FieldPropertyDefinition("MyProperty")
+
+    '#End Region
+
+    '#Region "ctor2"
+
+    Public Sub New()
+        Me._myProperty = New FieldProperty(Me, CustomField.MyPropertyProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "codeExpression"
+
+    Protected Overrides Sub CopyPropertiesFromCodeExpression(ByVal fieldCodeExpression As FieldCodeExpression)
+        MyBase.CopyPropertiesFromCodeExpression(fieldCodeExpression)
+        Me._myProperty.SetValue(fieldCodeExpression.FieldArgumentNode)
+    End Sub
+
+    '#End Region
+
+    '#Region "build"
+
+    Protected Overrides Sub BuildCodeOverride()
+        MyBase.BuildCodeOverride()
+        Me.CodeBuilder.SetFieldArgument(Me._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "copy"
+
+    Public Overrides Sub CopyPropertiesFrom(ByVal fromField As Field)
+        MyBase.CopyPropertiesFrom(fromField)
+
+        Dim _customField As CustomField = CType(fromField, CustomField)
+        Me._myProperty.CopyPropertiesFrom(_customField._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "fragment"
+
+    Protected Overrides Function GetResultFragment() As DocumentFragment
+        Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))
+    End Function
+
+    '#End Region
+End Class
+</code></pre>
+
+<ol>
+<li>Make sure to initialize the FieldProperty in the constructor of your field:</li>
+</ol>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        public CustomField()
+        {
+            this.myProperty = new FieldProperty(this, CustomField.MyPropertyProperty);
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Public Sub New()
+        Me._myProperty = New FieldProperty(Me, CustomField.MyPropertyProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "codeExpression"
+
+    Protected Overrides Sub CopyPropertiesFromCodeExpression(ByVal fieldCodeExpression As FieldCodeExpression)
+        MyBase.CopyPropertiesFromCodeExpression(fieldCodeExpression)
+        Me._myProperty.SetValue(fieldCodeExpression.FieldArgumentNode)
+    End Sub
+
+    '#End Region
+
+    '#Region "build"
+
+    Protected Overrides Sub BuildCodeOverride()
+        MyBase.BuildCodeOverride()
+        Me.CodeBuilder.SetFieldArgument(Me._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "copy"
+
+    Public Overrides Sub CopyPropertiesFrom(ByVal fromField As Field)
+        MyBase.CopyPropertiesFrom(fromField)
+
+        Dim _customField As CustomField = CType(fromField, CustomField)
+        Me._myProperty.CopyPropertiesFrom(_customField._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "fragment"
+
+    Protected Overrides Function GetResultFragment() As DocumentFragment
+        Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))
+    End Function
+
+    '#End Region
+End Class
+</code></pre>
+
+<ol>
+<li>Ensure that your custom property is copied along with the other field properties:</li>
+</ol>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        protected override void CopyPropertiesFromCodeExpression(FieldCodeExpression fieldCodeExpression)
+        {
+            base.CopyPropertiesFromCodeExpression(fieldCodeExpression);
+            this.myProperty.SetValue(fieldCodeExpression.FieldArgumentNode);
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Protected Overrides Sub CopyPropertiesFromCodeExpression(ByVal fieldCodeExpression As FieldCodeExpression)
+        MyBase.CopyPropertiesFromCodeExpression(fieldCodeExpression)
+        Me._myProperty.SetValue(fieldCodeExpression.FieldArgumentNode)
+    End Sub
+
+    '#End Region
+
+    '#Region "build"
+
+    Protected Overrides Sub BuildCodeOverride()
+        MyBase.BuildCodeOverride()
+        Me.CodeBuilder.SetFieldArgument(Me._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "copy"
+
+    Public Overrides Sub CopyPropertiesFrom(ByVal fromField As Field)
+        MyBase.CopyPropertiesFrom(fromField)
+
+        Dim _customField As CustomField = CType(fromField, CustomField)
+        Me._myProperty.CopyPropertiesFrom(_customField._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "fragment"
+
+    Protected Overrides Function GetResultFragment() As DocumentFragment
+        Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))
+    End Function
+
+    '#End Region
+End Class
+</code></pre>
+
+<p>This method is used when a field is created from field fragment.  This happens when you update a field and is what enables changing the<br>
+              property path of a merge field by typing in the editor or even changing a PageField to a DateField. As the type of the new field is inferred<br>
+              from the text in the document, it is required that the field be created anew and the respective properties must be copied as well.</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        protected override void BuildCodeOverride()
+        {
+            base.BuildCodeOverride();
+            this.CodeBuilder.SetFieldArgument(this.myProperty);
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Protected Overrides Sub BuildCodeOverride()
+        MyBase.BuildCodeOverride()
+        Me.CodeBuilder.SetFieldArgument(Me._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "copy"
+
+    Public Overrides Sub CopyPropertiesFrom(ByVal fromField As Field)
+        MyBase.CopyPropertiesFrom(fromField)
+
+        Dim _customField As CustomField = CType(fromField, CustomField)
+        Me._myProperty.CopyPropertiesFrom(_customField._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "fragment"
+
+    Protected Overrides Function GetResultFragment() As DocumentFragment
+        Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))
+    End Function
+
+    '#End Region
+End Class
+</code></pre>
+
+<p>This method is invoked when the CodeFragment of the field is requested. In it, the field arguments and switches must be added, so that<br>
+              they are properly included in the field.</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        public override void CopyPropertiesFrom(Field fromField)
+        {
+            base.CopyPropertiesFrom(fromField);
+            CustomField customField = (CustomField)fromField;
+            this.myProperty.CopyPropertiesFrom(customField.myProperty);
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Public Overrides Sub CopyPropertiesFrom(ByVal fromField As Field)
+        MyBase.CopyPropertiesFrom(fromField)
+
+        Dim _customField As CustomField = CType(fromField, CustomField)
+        Me._myProperty.CopyPropertiesFrom(_customField._myProperty)
+    End Sub
+
+    '#End Region
+
+    '#Region "fragment"
+
+    Protected Overrides Function GetResultFragment() As DocumentFragment
+        Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))
+    End Function
+
+    '#End Region
+End Class
+</code></pre>
+
+<p>As field ranges are copyable, this method must be overridden in order to ensure that the added properties will also be copied.</p>
+
+<ol>
+<li>If you like, you can also customize the fragment that is returned when the ResultFragment is requested. This is done by overriding the
+          GetResultFragment method. Here is an example:</li>
+</ol>
+
+<h4>__[C#] __</h4>
+
+<pre><code>        protected override DocumentFragment GetResultFragment()
+        {
+            return DocumentFragment.CreateFromInline(new Span(this.MyProperty));
+        }
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>    Protected Overrides Function GetResultFragment() As DocumentFragment
+        Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))
+    End Function
+
+    '#End Region
+End Class
+</code></pre>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

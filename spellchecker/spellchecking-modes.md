@@ -1,0 +1,105 @@
+---
+title: SpellChecking Modes
+page_title: SpellChecking Modes
+description: SpellChecking Modes
+slug: spellchecker-spellchecking-modes
+tags: spellchecking,modes
+published: True
+position: 1
+---
+
+# SpellChecking Modes
+
+
+
+## 
+
+RadSpellChecker allows you to choose between two spellchecking modes:
+
+
+
+* 
+
+Check Word By Word
+
+* 
+
+Check All Words At Once
+
+
+
+__Check Word By Word__
+        
+        To do this kind of check, you should set the __SpellCheckMode__
+        property to *WordByWord*:
+        
+
+
+
+#### __[C#]__
+
+{{region wordByWord}}
+	            this.radSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordByWord;
+	{{endregion}}
+
+
+
+#### __[VB.NET]__
+
+{{region wordByWord}}
+	        Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordByWord
+	{{endregion}}
+
+
+      	
+      	
+      	When using this mode RadSpellChecker will check every word in a separate window, which looks like this:
+      	
+      	![spellchecker-spellchecking-modes 001](images/spellchecker-spellchecking-modes001.png)
+        
+        You are presented with a list of all possible suggestions, from which you can choose a word to replace the wrong one. Alternatively you can ignore the word or add it to a custom dictionary.
+        
+
+
+>
+
+This dialog will be called on every word considered wrong.
+
+>
+
+WordByWord is the default value of SpellCheckMode so unless you have a complex scenario
+	  where you need to go from WordByWord to AllAtOnce an back, you do not need to set the property.
+
+__Check All Words at Once__
+        
+         To do this kind of check, you should set the __SpellCheckMode__
+        property to *AllAtOnce*:
+        
+
+
+
+#### __[C#]__
+
+{{region allAtOnce}}
+	            this.radSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.AllAtOnce;
+	{{endregion}}
+
+
+
+#### __[VB.NET]__
+
+{{region allAtOnce}}
+	        Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.AllAtOnce
+	{{endregion}}
+
+
+    	
+    	
+    	When using AllAtOnce mode, RadSpellChecker loads the entire content of the control being spellchecked in a window looking like this:
+    	
+ 		![spellchecker-spellchecking-modes 002](images/spellchecker-spellchecking-modes002.png)
+    	
+    	You are presented with the same options as the WordByWord mode. The difference is that the entire spellchecking is executed in this window and only after that the content is transferred to the original control being spellchecked.
+        
+        
+        

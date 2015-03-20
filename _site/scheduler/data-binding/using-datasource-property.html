@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Using DataSource property</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Using DataSource property">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("scheduler/data-binding/using-datasource-property.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/scheduler/data-binding/using-datasource-property.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="using-datasource-property"><a href="#using-datasource-property">Using DataSource property</a></h1>
+
+<p>RadScheduler's <strong>DataSource</strong> property lets you bind to objects that inherit the base abstract <strong>SchedulerDataSource</strong> class. The <strong>SchedulerBindingDataSource</strong> implementation of SchedulerdataSource binds traditional data stores like lists of business objects and database tables. You can find the SchedulerBindingDataSource component in the Toolbox.</p>
+
+<p>The <strong>SchedulerBindingDataSource</strong> class has two properties: <strong>EventProvider</strong> and <strong>ResourceProvider</strong> that correspond to the provider instances of type <strong>EventBindingProvider</strong> and <strong>ResourceBindingProvider</strong>. The <strong>EventBindingProvider</strong> class is used to handle CRUD operations against an events data store, while <strong>ResourceBindingProvider</strong> class is used to handle the same against a resources data store. Both provider implementations are nested types to the SchedulerBindingDataSource class and are public. Also the base abstract class for binding providers - the <strong>BindingProviderBase<t></t></strong> is available (public) as well, so it can aid the process of creating scheduler data sources. There are also two methods that return base type implementations of the providers: <strong>ISchedulerProvider<ievent> GetEventProvider()</ievent></strong> and <strong>ISchedulerProvider<iresource> GetResourceProvider()</iresource></strong>.</p>
+
+<p>An integral and vital part of the providers logic is the <strong>Mapping</strong> property that requires instance implementing IMappingInfo interface. The <strong>IMappingInfo</strong> handles the property mappings. Property names from the data store are mapped to corresponding property names of the classes that RadScheduler uses to operate internally. For example a database field name from the table that handles the appointments information is mapped to the corresponding property of a object representing appointment inside the scheduler.</p>
+
+<p>To have the data source make any sense to the SchedulerBindingDataSource you also need to define mappings that link the expected information to columns in a database table or business object. There are two mapping objects that need to be loaded up and assigned, the <strong>AppointmentMappingInfo</strong> and <strong>ResourceMappingInfo</strong>. AppointmentMappingInfo has a series of string properties that point to all appointment related data such as start date/time, end date/time, a description, etc. The ResourcesMappingInfo object has a Name and Image.</p>
+
+<p>Here's a dataset design view for the SchedulerData.mdf database file that ships with Telerik UI for WinForms. You can see all the fields that can be defined for appointments and resources. Also notice a "join table" named "TransientAppointmentsResources" that assigns a particular resource to an appointment.</p>
+
+<blockquote>
+<p>Notice that while the database structure allows for multiple resources, the built-in scheduler dialog only allows a single resource to be selected at a time.<img src="images/scheduler-data-binding-using-datasource-property001.png" alt="scheduler-data-binding-using-datasource-property 001"></p>
+</blockquote>
+
+<p>The foreign key relationship between "TransientAppointmentsResources" and the "Appointments" table will also be defined in the AppointmentMappingInfo object.<img src="images/scheduler-data-binding-using-datasource-property002.png" alt="scheduler-data-binding-using-datasource-property 002"></p>
+
+<blockquote>
+<p>You can find SchedulerData.mdb (Access) in the installation directory under \Examples\QuickStart\DataSources.<br>
+            You can find SchedulerData.mdf (MS SQL database file)<br>
+            <a href="http://www.telerik.com/docs/default-source/ui-for-winforms/schedulerdatasql.zip">here</a></p>
+</blockquote>
+
+<p>Here's some example code that demonstrates loading the AppointmentMappingInfo fields with column names in a database table. The <strong>Resources</strong> property is assigned the name of the foreign key that joins the Appointments and the "join table' that sits between the appointments and resources table. The <strong>ResourceID</strong> property is assigned to the column in the "join table" of a unique resource identifier.</p>
+
+<p>RadScheduler works from a provider model so that in the future, custom appointment and resource providers can be plugged in to replace the built-in providers. The AppointmentMappingInfo is assigned to the <strong>Mapping</strong> property of the schedulers datasource event provider. Review the code below to see how this is done when binding to a database tables.</p>
+
+<blockquote>
+<p>The <strong>Exceptions</strong> and <strong>Resources</strong> properties in the <strong>AppointmentMappingInfo</strong> should be set to the names of the relations that are represented in the dataset.</p>
+</blockquote>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            AppointmentMappingInfo appointmentMappingInfo = new AppointmentMappingInfo();
+            appointmentMappingInfo.Start = "Start";
+            appointmentMappingInfo.End = "End";
+            appointmentMappingInfo.Summary = "Summary";
+            appointmentMappingInfo.Description = "Description";
+            appointmentMappingInfo.Location = "Location";
+            appointmentMappingInfo.BackgroundId = "BackgroundID";
+            appointmentMappingInfo.StatusId = "StatusID";
+            appointmentMappingInfo.RecurrenceRule = "RecurrenceRule";
+            appointmentMappingInfo.Resources = "Appointments_AppointmentsResources";
+            appointmentMappingInfo.ResourceId = "ResourceID";
+            appointmentMappingInfo.Exceptions = "Appointments_Appointments";
+            appointmentMappingInfo.MasterEventId = "ParentID";
+            schedulerBindingDataSource1.EventProvider.Mapping = appointmentMappingInfo;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Dim appointmentMappingInfo As New AppointmentMappingInfo()
+        appointmentMappingInfo.Start = "Start"
+        appointmentMappingInfo.End = "End"
+        appointmentMappingInfo.Summary = "Summary"
+        appointmentMappingInfo.Description = "Description"
+        appointmentMappingInfo.Location = "Location"
+        appointmentMappingInfo.BackgroundId = "BackgroundID"
+        appointmentMappingInfo.StatusId = "StatusID"
+        appointmentMappingInfo.RecurrenceRule = "RecurrenceRule"
+        appointmentMappingInfo.Resources = "Appointments_AppointmentsResources"
+        appointmentMappingInfo.ResourceId = "ResourceID"
+        appointmentMappingInfo.Exceptions = "Appointments_Appointments"
+        appointmentMappingInfo.MasterEventId = "ParentID"
+        SchedulerBindingDataSource1.EventProvider.Mapping = appointmentMappingInfo
+</code></pre>
+
+<p>The resource mapping has fewer columns and doesn't need any information about joining to the appointments table.</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            ResourceMappingInfo resourceMappingInfo = new ResourceMappingInfo();
+            resourceMappingInfo.Id = "ID";
+            resourceMappingInfo.Name = "ResourceName";
+            schedulerBindingDataSource1.ResourceProvider.Mapping = resourceMappingInfo;
+            schedulerBindingDataSource1.EventProvider.DataSource = this.schedulerDataDataSet.Appointments;
+            schedulerBindingDataSource1.ResourceProvider.DataSource = this.schedulerDataDataSet.Resources;
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Dim resourceMappingInfo As New ResourceMappingInfo()
+        resourceMappingInfo.Id = "ID"
+        resourceMappingInfo.Name = "ResourceName"
+        SchedulerBindingDataSource1.ResourceProvider.Mapping = resourceMappingInfo
+        SchedulerBindingDataSource1.EventProvider.DataSource = Me.schedulerDataDataSet.Appointments
+        SchedulerBindingDataSource1.ResourceProvider.DataSource = Me.schedulerDataDataSet.Resources
+</code></pre>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

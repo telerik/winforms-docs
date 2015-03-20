@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Fields</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Fields">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("richtexteditor-/features/fields-and-document-variables/richtexteditor-fields.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/richtexteditor-/features/fields-and-document-variables/richtexteditor-fields.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="fields"><a href="#fields">Fields</a></h1>
+
+<p>Fields are a convenient way to show non-static data in the document. In this way, you could present different data to the end-user without actually changing<br>
+        the document content.</p>
+
+<p>This topic contains the following sections:</p>
+
+<ul>
+<li><p><a href="#field-types">Field Types</a></p></li>
+<li><p><a href="#display-modes">Display Modes</a></p></li>
+<li><p><a href="#inserting-a-field">Inserting a Field</a></p></li>
+<li><p><a href="#fields-update-priority">Fields Update Priority</a></p></li>
+</ul>
+
+<h2 id="field-types"><a href="#field-types">Field Types</a></h2>
+
+<p>In RadDocument the base class for all fields is <strong>CodeBasedField</strong>. It is an abstract class that can be inherited from. Some of the<br>
+          implemented and ready-to-use field types are:</p>
+
+<ul>
+<li><p><strong>DateField</strong>: Inserts the current date in one of the specified formats.</p></li>
+<li><p><strong>PageField</strong>: Shows the current page number.</p></li>
+<li><p><strong>NumPagesField</strong>: Shows the number of pages in the document.</p></li>
+<li><p><strong>MergeField</strong>: Used in mail-merge scenarios. You can read more here: <a href="/devtools/winforms/richtexteditor-/features/richtexteditor-mail-merge">Mail Merge</a>.</p></li>
+<li><p><strong>IncludePictureField</strong>: Specifies the URI from which an image must be retrieved.</p></li>
+<li><p><strong>DocumentVariableField</strong> А field which uses DocumentVariables. More information can be found here:<br>
+          <a href="/devtools/winforms/richtexteditor-/features/fields-and-document-variables/richtexteditor-document-variables">Document Variables</a>.</p></li>
+<li><p><strong>SequentialField</strong>: Tracks the number of tables and figures inserted in the document before a place in the document,<br>
+          so that the <strong>InsertCaption()</strong> method would use the correct number. Find more here:<br>
+          <a href="/devtools/winforms/richtexteditor-/features/references/richtexteditor-caption-for-tables-and-figures">Captions for tables and Figures</a>.</p></li>
+<li><p><strong>StyleReferenceField</strong>: The type of field that a reference field refers to when a cross-reference to a Heading style is inserted.</p></li>
+<li><p><strong>ReferenceField</strong>: Used to refer to a bookmark or other type of field. It is inserted when a cross-reference to a table or<br>
+          figure caption is added to the document. Find more here: <a href="/devtools/winforms/richtexteditor-/features/references/richtexteditor-cross-reference">Cross Reference</a>.</p></li>
+<li><p><strong>PageReferenceField</strong>: Used in table of contents in order to be able to navigate to the respective page on Ctrl+Click.</p></li>
+<li><p><strong>HyperlinkField</strong>: Inserted in hyperlinks to store information about the navigation URI.</p></li>
+<li><p><strong>TCField</strong>: Used in table of contents to describe one entry. They include the text of the entry and the page reference field.</p></li>
+<li><p><strong>AuthorField</strong>: The type of field is related to track changes, specifies the name of the user that has modified the document part.<br>
+          Read more here: <a href="/devtools/winforms/richtexteditor-/features/richtexteditor-track-changes">Track Changes</a>.</p></li>
+<li><p><strong>CitationField</strong>: Inserted when you add a citation to the document.</p></li>
+<li><p><strong>BibliographyField</strong>: Inserted in the document when you want to add information about the bibliographic sources used in the document.<br>
+          Read more here: <a href="/devtools/winforms/richtexteditor-/features/references/richtexteditor-biliographic-references">Bibliographic References</a>.</p></li>
+</ul>
+
+<h2 id="display-modes"><a href="#display-modes">Display Modes</a></h2>
+
+<p>Fields normally have two modes – <strong>Code</strong> and <strong>Result</strong>. When in code mode, they appear<br>
+          as {<fieldtypename> [<field parameter>] [<switch> <switch parameter>]*}.</switch></switch></field></fieldtypename></p>
+
+<p>For instance, Page Fields appear as { PAGE }, Merge Fields as { MERGEFIELD FirstName }<br>
+          or { MERGEFIELD FirstName \b "text that will appear before the merge field if it is not empty" }.</p>
+
+<p>In result mode, all fields get evaluated depending on some conditions – the place in the document where they appear in the case of page fields,<br>
+          the current mail merge record for merge fields, etc.</p>
+
+<p><strong>MergeFields</strong> have one additional mode – <strong>DisplayName</strong> that shows the property path they use in brackets<br>
+          of the type &lt;&lt;[PropertyPathHere]&gt;&gt;. Furthermore, there are specific methods and commands of the editor that change<br>
+          the display mode of merge fields or even remove them from the document altogether, replacing them with the ResultFragment. More information on this topic<br>
+          can be found in the <a href="/devtools/winforms/richtexteditor-/features/richtexteditor-mail-merge">Mail Merge</a> article.</p>
+
+<h2 id="inserting-a-field"><a href="#inserting-a-field">Inserting a Field</a></h2>
+
+<p>Inserting any type of field in the document of an editor can be done with the <strong>InsertField()</strong> method.</p>
+
+<p>Insert a page field:</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>            this.radRichTextEditor1.InsertField(new PageField());
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>        Me.radRichTextEditor1.InsertField(New PageField())
+        '#End Region
+
+        '#Region "update"
+        Me.radRichTextEditor1.UpdateField(New FieldRangeStart())
+        '#End Region
+
+        '#Region "register"
+        FieldsUpdateManager.RegisterFieldUpdatePriority(GetType(ReferenceField), 1000)
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p>Update of a field can be triggered from the context menu or using the <strong>UpdateField()</strong> method of RadRichTextEditor by passing the<br>
+          FieldRangeStart of the field as a parameter.</p>
+
+<p>Update a field:</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>            this.radRichTextEditor1.UpdateField(new FieldRangeStart());
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>        Me.radRichTextEditor1.UpdateField(New FieldRangeStart())
+        '#End Region
+
+        '#Region "register"
+        FieldsUpdateManager.RegisterFieldUpdatePriority(GetType(ReferenceField), 1000)
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<p>You can also update all fields in the current document with the <strong>UpdateAllFields()</strong> method of RadRichTextEditor.</p>
+
+<h2 id="fields-update-priority"><a href="#fields-update-priority">Fields Update Priority</a></h2>
+
+<p>All field types in the context of RadDocument have update priority which determines when they should be updated when the<br>
+          <strong>UpdateAllFields()</strong> method is invoked. Most fields have the default value 0. Changing it is needed in case a field depends on the<br>
+          evaluated value of another field to be properly evaluated.</p>
+
+<p>Priority can specified through the <strong>FieldsUpdateManager</strong> static class. The following code snippet shows how to set higher priority<br>
+          for a specific field type, causing all fields of this type to be updated before the rest of the field when calling UpdateAllField():</p>
+
+<h4>__[C#] __</h4>
+
+<pre><code>            FieldsUpdateManager.RegisterFieldUpdatePriority(typeof(ReferenceField), 1000);
+</code></pre>
+
+<h4>__[VB.NET] __</h4>
+
+<pre><code>        FieldsUpdateManager.RegisterFieldUpdatePriority(GetType(ReferenceField), 1000)
+        '#End Region
+    End Sub
+End Class
+</code></pre>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/winforms/richtexteditor-/features/fields-and-document-variables/richtexteditor-custom-fields">Custom Fields</a></p></li>
+<li><p><a href="/devtools/winforms/richtexteditor-/features/richtexteditor-mail-merge">Mail Merge</a></p></li>
+</ul>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

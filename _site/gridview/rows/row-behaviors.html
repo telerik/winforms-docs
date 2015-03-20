@@ -1,0 +1,663 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Row behaviors</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Row behaviors">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("gridview/rows/row-behaviors.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/gridview/rows/row-behaviors.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="row-behaviors"><a href="#row-behaviors">Row behaviors</a></h1>
+
+<p><strong>RadGridView</strong> manages user <em>mouse</em> and <em>keyboard</em> input over its rows by <strong>GridRowBehavior</strong>. <br>
+        Depending on the row type, <strong>RadGridView</strong> introduces different behaviors, listed on the table below: </p>
+
+<table>
+<th></th>
+<tr>
+<td>
+
+Row behavior</td>
+<td>
+
+Row type</td>
+</tr>
+<tr>
+<td>
+
+GridDataRowBehavior</td>
+<td>
+
+GridViewDataRowInfo</td>
+</tr>
+<tr>
+<td>
+
+GridHierarchyRowBehavior</td>
+<td>
+
+GridViewHierarchyRowInfo</td>
+</tr>
+<tr>
+<td>
+
+GridNewRowBehavior</td>
+<td>
+
+GridViewNewRowInfo</td>
+</tr>
+<tr>
+<td>
+
+GridGroupRowBehavior</td>
+<td>
+
+GridViewGroupRowInfo</td>
+</tr>
+<tr>
+<td>
+
+GridFilterRowBehavior</td>
+<td>
+
+GridViewFilteringRowInfo</td>
+</tr>
+<tr>
+<td>
+
+GridHeaderRowBehavior</td>
+<td>
+
+GridViewTableHeaderRowInfo</td>
+</tr>
+<tr>
+<td>
+
+GridDetailViewRowBehavior</td>
+<td>
+
+GridViewDetailsRowInfo</td>
+</tr>
+</table>
+
+<p>By implementing a specific custom row behavior, developers can change the default row functionality or supplement the existing one. </p>
+
+<p>Let’s start with constructing a hierarchical <strong>RadGridView</strong> and populate it with data.</p>
+
+<h4><strong>[C#] Fill RadGridView with hierarchical data</strong></h4>
+
+<pre><code>        public RowBehaviorsForm()
+        {
+            InitializeComponent();
+
+            //Fill data
+            DataTable items = new DataTable("Items");
+            items.Columns.Add("Id", typeof(int));
+            items.Columns.Add("Title", typeof(string));
+            items.Columns.Add("IsActive", typeof(bool));
+
+            DataTable subItems = new DataTable("SubItems");
+            subItems.Columns.Add("Id", typeof(int));
+            subItems.Columns.Add("Name", typeof(string));
+            subItems.Columns.Add("ItemId", typeof(int));
+
+            for (int i = 1; i &lt;= 3; i++)
+            {
+                items.Rows.Add(i, "Item" + i, i % 2 == 0);
+
+                for (int j = 1000; j &lt;= 1005; j++)
+                {
+                    subItems.Rows.Add(j, "SubItem" + j, i);
+                }
+            }
+
+            //Set up grid hierarchy
+            radGridView1.DataSource = items;
+            radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill;
+
+            GridViewTemplate template = new GridViewTemplate();
+            template.ReadOnly = true;
+            template.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill;
+
+            GridViewRelation relation = new GridViewRelation(radGridView1.MasterTemplate, template);
+            relation.ParentColumnNames.Add("Id");
+            relation.ChildColumnNames.Add("ItemId");
+            radGridView1.MasterTemplate.Templates.Add(template);
+            radGridView1.Relations.Add(relation);
+            template.ReadOnly = false;
+            template.DataSource = subItems;
+        }
+</code></pre>
+
+<h4><strong>[VB.NET] Fill RadGridView with hierarchical data</strong></h4>
+
+<pre><code>    Sub New()
+        InitializeComponent()
+
+        'Fill data
+        Dim items As New DataTable("Items")
+        items.Columns.Add("Id", GetType(Integer))
+        items.Columns.Add("Title", GetType(String))
+        items.Columns.Add("IsActive", GetType(Boolean))
+
+        Dim subItems As New DataTable("SubItems")
+        subItems.Columns.Add("Id", GetType(Integer))
+        subItems.Columns.Add("Name", GetType(String))
+        subItems.Columns.Add("ItemId", GetType(Integer))
+
+        For i As Integer = 1 To 3
+            items.Rows.Add(i, "Item" &amp; i, i Mod 2 = 0)
+
+            For j As Integer = 1000 To 1005
+                subItems.Rows.Add(j, "SubItem" &amp; j, i)
+            Next
+        Next
+
+        'Set up grid hierarchy
+        RadGridView1.DataSource = items
+        RadGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
+
+        Dim template As New GridViewTemplate()
+        template.[ReadOnly] = True
+        template.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
+
+        Dim relation As New GridViewRelation(RadGridView1.MasterTemplate, template)
+        relation.ParentColumnNames.Add("Id")
+        relation.ChildColumnNames.Add("ItemId")
+        RadGridView1.MasterTemplate.Templates.Add(template)
+        RadGridView1.Relations.Add(relation)
+        template.[ReadOnly] = False
+        template.DataSource = subItems
+    End Sub
+    '#End Region
+
+    Protected Overrides Sub OnLoad(e As EventArgs)
+        MyBase.OnLoad(e)
+
+        '#Region "RegisterBehavior"
+
+        'register the custom row  behavior
+        Dim gridBehavior As BaseGridBehavior = TryCast(RadGridView1.GridBehavior, BaseGridBehavior)
+        gridBehavior.UnregisterBehavior(GetType(GridViewHierarchyRowInfo))
+        gridBehavior.RegisterBehavior(GetType(GridViewHierarchyRowInfo), New CustomGridHierarchyRowBehavior())
+
+        '#End Region
+    End Sub
+
+    '#Region "ProcessDeleteKey"
+
+    Public Class CustomGridHierarchyRowBehavior
+    Inherits GridHierarchyRowBehavior
+        Protected Overrides Function ProcessDeleteKey(keys As KeyEventArgs) As Boolean
+            If Me.GridControl.CurrentRow.ChildRows.Count &gt; 0 Then
+                Dim result As DialogResult = MessageBox.Show("The current row has child rows." &amp; "Are you sure you want to delete the selected row?", "Confirmation", MessageBoxButtons.YesNo)
+                If result = DialogResult.No Then
+                    Return True
+                End If
+            End If
+
+            Return MyBase.ProcessDeleteKey(keys)
+        End Function
+
+    End Class
+
+    '#End Region
+
+    Public Class DummyBehavior
+    Inherits GridHierarchyRowBehavior
+        '#Region "MouseDownLeft"
+
+        Protected Overrides Function OnMouseDownLeft(e As MouseEventArgs) As Boolean
+            Dim cellElement As GridCellElement = Me.GetCellAtPoint(e.Location)
+            If cellElement IsNot Nothing AndAlso TypeOf cellElement Is GridCheckBoxCellElement Then
+                Dim rowElement As GridRowElement = cellElement.RowElement
+                Me.Navigator.BeginSelection(Me.GetMouseNavigationContext(e))
+                Me.Navigator.[Select](rowElement.RowInfo, cellElement.ColumnInfo)
+                Me.Navigator.EndSelection()
+
+                If Not cellElement.IsInValidState(True) Then
+                    cellElement = Me.GetCellAtPoint(e.Location)
+                End If
+                If cellElement IsNot Nothing Then
+                    GridViewElement.ContextMenuManager.ShowContextMenu(cellElement)
+                End If
+                Return True
+            End If
+
+            Return MyBase.OnMouseDownLeft(e)
+        End Function
+
+        '#End Region
+
+        '#Region "ProcessKey"
+
+        Public Overrides Function ProcessKey(keys__1 As KeyEventArgs) As Boolean
+            If keys__1.KeyCode = Keys.Up OrElse keys__1.KeyCode = Keys.Down Then
+                Dim rowView As DataRowView = TryCast(Me.GridControl.CurrentRow.DataBoundItem, DataRowView)
+                If rowView IsNot Nothing AndAlso Me.GridControl.CurrentRow.ViewTemplate.Equals(Me.MasterTemplate) Then
+                    If CBool(rowView.Row("IsActive")) = False Then
+                        Return True
+                    End If
+                End If
+            End If
+            Return MyBase.ProcessKey(keys__1)
+        End Function
+
+        '#End Region
+    End Class
+End Class
+</code></pre>
+
+<p>By default, when the user hits the <strong>Delete</strong> key over a certain row, the row is deleted. We will extend this functionality by notifying the user <br>
+        when he tries to delete a parent row, which <strong>ChildRows</strong> collection is not empty. For this purpose, it is necessary to create a custom grid behavior.<br>
+        To do this, create a new class named <strong>CustomGridHierarchyRowBehavior</strong>. As we are currently using a hierarchical grid, our class should inherit<br>
+        the <strong>GridHierarchyRowBehavior</strong>. Override the <strong>ProcessDeleteKey</strong> method in order to display a MessageBox and proceed with the delete operation after confirmation only:<img src="images/gridview-rows-row-behaviors001.gif" alt="gridview-rows-row-behaviors 001"></p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>        public class CustomGridHierarchyRowBehavior : GridHierarchyRowBehavior
+        {
+            protected override bool ProcessDeleteKey(KeyEventArgs keys)
+            {
+                if (this.GridControl.CurrentRow.ChildRows.Count &gt; 0)
+                {
+                    DialogResult result = MessageBox.Show("The current row has child rows." +
+                                                          "Are you sure you want to delete the selected row?", "Confirmation", MessageBoxButtons.YesNo);
+                    if (result == DialogResult.No)
+                    {
+                        return true;
+                    }
+                }
+
+                return base.ProcessDeleteKey(keys);
+            }
+        }
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>    Public Class CustomGridHierarchyRowBehavior
+    Inherits GridHierarchyRowBehavior
+        Protected Overrides Function ProcessDeleteKey(keys As KeyEventArgs) As Boolean
+            If Me.GridControl.CurrentRow.ChildRows.Count &gt; 0 Then
+                Dim result As DialogResult = MessageBox.Show("The current row has child rows." &amp; "Are you sure you want to delete the selected row?", "Confirmation", MessageBoxButtons.YesNo)
+                If result = DialogResult.No Then
+                    Return True
+                End If
+            End If
+
+            Return MyBase.ProcessDeleteKey(keys)
+        End Function
+
+    End Class
+
+    '#End Region
+
+    Public Class DummyBehavior
+    Inherits GridHierarchyRowBehavior
+        '#Region "MouseDownLeft"
+
+        Protected Overrides Function OnMouseDownLeft(e As MouseEventArgs) As Boolean
+            Dim cellElement As GridCellElement = Me.GetCellAtPoint(e.Location)
+            If cellElement IsNot Nothing AndAlso TypeOf cellElement Is GridCheckBoxCellElement Then
+                Dim rowElement As GridRowElement = cellElement.RowElement
+                Me.Navigator.BeginSelection(Me.GetMouseNavigationContext(e))
+                Me.Navigator.[Select](rowElement.RowInfo, cellElement.ColumnInfo)
+                Me.Navigator.EndSelection()
+
+                If Not cellElement.IsInValidState(True) Then
+                    cellElement = Me.GetCellAtPoint(e.Location)
+                End If
+                If cellElement IsNot Nothing Then
+                    GridViewElement.ContextMenuManager.ShowContextMenu(cellElement)
+                End If
+                Return True
+            End If
+
+            Return MyBase.OnMouseDownLeft(e)
+        End Function
+
+        '#End Region
+
+        '#Region "ProcessKey"
+
+        Public Overrides Function ProcessKey(keys__1 As KeyEventArgs) As Boolean
+            If keys__1.KeyCode = Keys.Up OrElse keys__1.KeyCode = Keys.Down Then
+                Dim rowView As DataRowView = TryCast(Me.GridControl.CurrentRow.DataBoundItem, DataRowView)
+                If rowView IsNot Nothing AndAlso Me.GridControl.CurrentRow.ViewTemplate.Equals(Me.MasterTemplate) Then
+                    If CBool(rowView.Row("IsActive")) = False Then
+                        Return True
+                    End If
+                End If
+            End If
+            Return MyBase.ProcessKey(keys__1)
+        End Function
+
+        '#End Region
+    End Class
+End Class
+</code></pre>
+
+<p>Next we will register this behavior in our grid. Add the following code after populating the grid with data:</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            //register the custom row  behavior
+            BaseGridBehavior gridBehavior = radGridView1.GridBehavior as BaseGridBehavior;
+            gridBehavior.UnregisterBehavior(typeof(GridViewHierarchyRowInfo));
+            gridBehavior.RegisterBehavior(typeof(GridViewHierarchyRowInfo), new CustomGridHierarchyRowBehavior());
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        'register the custom row  behavior
+        Dim gridBehavior As BaseGridBehavior = TryCast(RadGridView1.GridBehavior, BaseGridBehavior)
+        gridBehavior.UnregisterBehavior(GetType(GridViewHierarchyRowInfo))
+        gridBehavior.RegisterBehavior(GetType(GridViewHierarchyRowInfo), New CustomGridHierarchyRowBehavior())
+
+        '#End Region
+    End Sub
+
+    '#Region "ProcessDeleteKey"
+
+    Public Class CustomGridHierarchyRowBehavior
+    Inherits GridHierarchyRowBehavior
+        Protected Overrides Function ProcessDeleteKey(keys As KeyEventArgs) As Boolean
+            If Me.GridControl.CurrentRow.ChildRows.Count &gt; 0 Then
+                Dim result As DialogResult = MessageBox.Show("The current row has child rows." &amp; "Are you sure you want to delete the selected row?", "Confirmation", MessageBoxButtons.YesNo)
+                If result = DialogResult.No Then
+                    Return True
+                End If
+            End If
+
+            Return MyBase.ProcessDeleteKey(keys)
+        End Function
+
+    End Class
+
+    '#End Region
+
+    Public Class DummyBehavior
+    Inherits GridHierarchyRowBehavior
+        '#Region "MouseDownLeft"
+
+        Protected Overrides Function OnMouseDownLeft(e As MouseEventArgs) As Boolean
+            Dim cellElement As GridCellElement = Me.GetCellAtPoint(e.Location)
+            If cellElement IsNot Nothing AndAlso TypeOf cellElement Is GridCheckBoxCellElement Then
+                Dim rowElement As GridRowElement = cellElement.RowElement
+                Me.Navigator.BeginSelection(Me.GetMouseNavigationContext(e))
+                Me.Navigator.[Select](rowElement.RowInfo, cellElement.ColumnInfo)
+                Me.Navigator.EndSelection()
+
+                If Not cellElement.IsInValidState(True) Then
+                    cellElement = Me.GetCellAtPoint(e.Location)
+                End If
+                If cellElement IsNot Nothing Then
+                    GridViewElement.ContextMenuManager.ShowContextMenu(cellElement)
+                End If
+                Return True
+            End If
+
+            Return MyBase.OnMouseDownLeft(e)
+        End Function
+
+        '#End Region
+
+        '#Region "ProcessKey"
+
+        Public Overrides Function ProcessKey(keys__1 As KeyEventArgs) As Boolean
+            If keys__1.KeyCode = Keys.Up OrElse keys__1.KeyCode = Keys.Down Then
+                Dim rowView As DataRowView = TryCast(Me.GridControl.CurrentRow.DataBoundItem, DataRowView)
+                If rowView IsNot Nothing AndAlso Me.GridControl.CurrentRow.ViewTemplate.Equals(Me.MasterTemplate) Then
+                    If CBool(rowView.Row("IsActive")) = False Then
+                        Return True
+                    End If
+                End If
+            End If
+            Return MyBase.ProcessKey(keys__1)
+        End Function
+
+        '#End Region
+    End Class
+End Class
+</code></pre>
+
+<p>The next modification we are going to introduce is to override the <strong>OnMouseDownLeft</strong> method and show the context menu for the <br>
+        <strong>GridCheckBoxCellElement</strong>, associated with the mouse location. First, it is necessary to use the grid navigator to process selection<br>
+        of the cell element, positioned at the mouse location. Afterwards, show the context menu for the specific cell:</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            protected override bool OnMouseDownLeft(MouseEventArgs e)
+            {
+                GridCellElement cellElement = this.GetCellAtPoint(e.Location);
+                if (cellElement != null &amp;&amp; cellElement is GridCheckBoxCellElement)
+                {
+                    GridRowElement rowElement = cellElement.RowElement;
+                    this.Navigator.BeginSelection(this.GetMouseNavigationContext(e));
+                    this.Navigator.Select(rowElement.RowInfo, cellElement.ColumnInfo);
+                    this.Navigator.EndSelection();
+
+                    if (!cellElement.IsInValidState(true))
+                    {
+                        cellElement = this.GetCellAtPoint(e.Location);
+                    }
+                    if (cellElement != null)
+                    {
+                        GridViewElement.ContextMenuManager.ShowContextMenu(cellElement);
+                    }
+                    return true;
+                }
+
+                return base.OnMouseDownLeft(e);
+            }
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Protected Overrides Function OnMouseDownLeft(e As MouseEventArgs) As Boolean
+            Dim cellElement As GridCellElement = Me.GetCellAtPoint(e.Location)
+            If cellElement IsNot Nothing AndAlso TypeOf cellElement Is GridCheckBoxCellElement Then
+                Dim rowElement As GridRowElement = cellElement.RowElement
+                Me.Navigator.BeginSelection(Me.GetMouseNavigationContext(e))
+                Me.Navigator.[Select](rowElement.RowInfo, cellElement.ColumnInfo)
+                Me.Navigator.EndSelection()
+
+                If Not cellElement.IsInValidState(True) Then
+                    cellElement = Me.GetCellAtPoint(e.Location)
+                End If
+                If cellElement IsNot Nothing Then
+                    GridViewElement.ContextMenuManager.ShowContextMenu(cellElement)
+                End If
+                Return True
+            End If
+
+            Return MyBase.OnMouseDownLeft(e)
+        End Function
+
+        '#End Region
+
+        '#Region "ProcessKey"
+
+        Public Overrides Function ProcessKey(keys__1 As KeyEventArgs) As Boolean
+            If keys__1.KeyCode = Keys.Up OrElse keys__1.KeyCode = Keys.Down Then
+                Dim rowView As DataRowView = TryCast(Me.GridControl.CurrentRow.DataBoundItem, DataRowView)
+                If rowView IsNot Nothing AndAlso Me.GridControl.CurrentRow.ViewTemplate.Equals(Me.MasterTemplate) Then
+                    If CBool(rowView.Row("IsActive")) = False Then
+                        Return True
+                    End If
+                End If
+            End If
+            Return MyBase.ProcessKey(keys__1)
+        End Function
+
+        '#End Region
+    End Class
+End Class
+</code></pre>
+
+<p><img src="images/gridview-rows-row-behaviors002.png" alt="gridview-rows-row-behaviors 002"></p>
+
+<p><strong>RadGridView</strong> supports rows/cells navigation by default, using the arrow keys. It is possible to customize this behavior as well.<br>
+        In the <strong>CustomGridHierarchyRowBehavior</strong> class override the <strong>ProcessKey</strong> method and stop the base grid logic for navigation upwards/downwards<br>
+        if the current row belongs to the <strong>MasterTemplate</strong> and its <em>“IsActive”</em> cell value is set to <em>false</em>:</p>
+
+<h4><strong>[C#]</strong></h4>
+
+<pre><code>            public override bool ProcessKey(KeyEventArgs keys)
+            {
+                if (keys.KeyCode == Keys.Up || keys.KeyCode == Keys.Down)
+                {
+                    DataRowView rowView = this.GridControl.CurrentRow.DataBoundItem as DataRowView;
+                    if (rowView != null &amp;&amp; this.GridControl.CurrentRow.ViewTemplate == this.MasterTemplate)
+                    {
+                        if ((bool)rowView.Row["IsActive"] == false)
+                        {
+                            return true;
+                        }
+                    }
+                }
+                return base.ProcessKey(keys);
+            }
+</code></pre>
+
+<h4><strong>[VB.NET]</strong></h4>
+
+<pre><code>        Public Overrides Function ProcessKey(keys__1 As KeyEventArgs) As Boolean
+            If keys__1.KeyCode = Keys.Up OrElse keys__1.KeyCode = Keys.Down Then
+                Dim rowView As DataRowView = TryCast(Me.GridControl.CurrentRow.DataBoundItem, DataRowView)
+                If rowView IsNot Nothing AndAlso Me.GridControl.CurrentRow.ViewTemplate.Equals(Me.MasterTemplate) Then
+                    If CBool(rowView.Row("IsActive")) = False Then
+                        Return True
+                    End If
+                End If
+            End If
+            Return MyBase.ProcessKey(keys__1)
+        End Function
+
+        '#End Region
+    End Class
+End Class
+</code></pre>
+
+<p>Following the demonstrated approach, developers can customize not only the hierarchy rows, but the new row for example,<br>
+        implementing a custom <strong>GridNewRowBehavior</strong> and registering it for the <strong>GridViewNewRowInfo</strong>.</p>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

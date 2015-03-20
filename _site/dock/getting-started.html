@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Getting Started</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Getting Started">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("dock/getting-started.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/dock/getting-started.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="getting-started"><a href="#getting-started">Getting Started</a></h1>
+
+<p>This tutorial creates a shell for a report viewer/explorer. A <strong>ToolWindow</strong><br>
+        on the left represents a list of reports. The right side of the form in<br>
+        <strong>RadDock</strong> contains three <strong>DocumentWindows</strong>,<br>
+        each representing a report. This tutorial demonstrates the layout of <strong>ToolWindow</strong><br>
+        and <strong>DocumentWindows</strong>.<br>
+        It also demonstrates adding a RadTreeView control to one of the created windows and synchronizing<br>
+        the active DockWindow with the selection in the RadTreeView instance.<br>
+      <img src="images/dock-getting-started003.png" alt="dock-getting-started 003"></p>
+
+<h2 id="configure-the-raddock"><a href="#configure-the-raddock">Configure the RadDock</a></h2>
+
+<ol>
+<li><p>Drop a <strong>RadDock</strong> control on the form.</p></li>
+<li><p>Set the <strong>RadDock Dock</strong> property to <strong>Fill.</strong></p></li>
+<li><p>Open the <strong>RadDock</strong> Smart Tag and select <strong>Show Advanced Layout Designer.</strong><br>
+          This step will display the <strong>RadDock Advanced Layout Designer</strong> dialog.</p></li>
+<li><p>In the RadRibbonBar on top, click the left green arrow to dock a new <strong>ToolWindow</strong> to the left.<br>
+        <img src="images/dock-getting-started001.png" alt="dock-getting-started 001"></p></li>
+</ol>
+
+<blockquote>
+<p>The list on the left side of the preview displays all created windows. From this list you can set the visibility of the ToolWindows to false,<br>
+                if you do not need some of them visible at runtime initially. </p>
+</blockquote>
+
+<ol>
+<li><p>Again from the RadRibbonBar, click on the <strong>Add DocumentWindow</strong> button three times to add three <strong>DocumentWindows</strong> instances.</p></li>
+<li><p>Click <strong>Save and Close</strong> button to close the dialog and save the layout to the <strong>RadDock</strong>.<br>
+        <img src="images/dock-getting-started002.png" alt="dock-getting-started 002">For more complex scenarios RadDock advanced layout designer provides full drag and drop and user interaction support in the preview RadDock control.<br>
+          This allows you to the dock a ToolWindow to bottom-right, to set a ToolWindow in AutoHide mode or even to float a ToolWindow.</p></li>
+<li><p>In the designer select the <strong>ToolWindow</strong> on the left. You can verify this by checking that the currently selected<br>
+          component in the Properties Window of Visual Studio is <strong>ToolWindow</strong>.</p></li>
+<li><p>Set the <strong>ToolWindow Text</strong> property to "Reports".</p></li>
+<li><p>Select one of the <strong>DocumentWindows</strong>. To do this in the designer, select the tab (i.e. on "Document1"), then<br>
+          click inside the client area. Check the Properties Window that you have selected a <strong>DocumentWindow</strong>.</p></li>
+<li><p>Set the <strong>DocumentWindow Name</strong> property to "dwProductListing" and <strong>Text</strong> property to "Product Listing".</p></li>
+<li><p>Select the next <strong>DocumentWindow,</strong> set the <strong>Name</strong> property to "dwProductByCategory" and the<br>
+          <strong>Text</strong> property to "Product By Category".</p></li>
+<li><p>Select the last <strong>DocumentWindow,</strong> set the<br>
+          <strong>Name</strong> property to "dwTop10Customers" and <strong>Text</strong><br>
+          property to "Top 10 Customers".</p></li>
+<li><p>Drop a <strong>RadTreeView</strong> control to the "Reports" <strong>ToolWindow</strong>, set the control's <strong>Dock</strong> property<br>
+          to <strong>Fill.</strong></p></li>
+<li><p>Make sure that you have the <strong>Telerik.Wincontrols.UI</strong> and <strong>Telerik.Wincontrols.UI.Docking</strong> in the "using" (C#) or "Imports" (VB) section of the code.</p></li>
+</ol>
+
+<h4><strong>[C#] Include namespaces</strong></h4>
+
+<pre><code>using Telerik.WinControls.UI;
+using Telerik.WinControls.UI.Docking;
+</code></pre>
+
+<h4><strong>[VB.NET] Include namespaces</strong></h4>
+
+<pre><code>Imports Telerik.WinControls.UI
+Imports Telerik.WinControls.UI.Docking
+</code></pre>
+
+<ol>
+<li>Create a <strong>Form Load</strong> event handler and copy the code below to it. This code builds the <strong>TreeView</strong> node
+          structure and links the <strong>Name__of each __DocumentWindow</strong> to the corresponding <strong>Node Tag</strong> property.
+          Each dockable object has a <strong>Name__property, a __String__that uniquely identifies it. Later we use the
+          __Name__to locate the __DocumentWindow</strong> and activate it.</li>
+</ol>
+
+<h4><strong>[C#] Initializing RadTreeView</strong></h4>
+
+<pre><code>        void Form1_Load(object sender, EventArgs e)
+        {
+            RadTreeNode productNode = radTreeView1.Nodes.Add("Product Reports");
+            RadTreeNode customerNode = radTreeView1.Nodes.Add("Customer Reports");
+            RadTreeNode productListingNode = new RadTreeNode("Product Listing");
+            productListingNode.Tag = dwProductListing.Name;
+            RadTreeNode productCategoryNode = new RadTreeNode("Product By Category");
+            productCategoryNode.Tag = dwProductByCategory.Name;
+            RadTreeNode top10CustomerNode = new RadTreeNode("Top 10 Customers");
+            top10CustomerNode.Tag = dwTop10Customers.Name;
+            productNode.Nodes.Add(productListingNode);
+            productNode.Nodes.Add(productCategoryNode);
+            customerNode.Nodes.Add(top10CustomerNode);
+            radTreeView1.ExpandAll();
+        }
+</code></pre>
+
+<h4><strong>[VB.NET] Initializing RadTreeView</strong></h4>
+
+<pre><code>    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Dim productNode As RadTreeNode = RadTreeView1.Nodes.Add("Product Reports")
+        Dim customerNode As RadTreeNode = RadTreeView1.Nodes.Add("Customer Reports")
+        Dim productListingNode As New RadTreeNode("Product Listing")
+        productListingNode.Tag = dwProductListing.Name
+        Dim productCategoryNode As New RadTreeNode("Product By Category")
+        productCategoryNode.Tag = dwProductByCategory.Name
+        Dim top10CustomerNode As New RadTreeNode("Top 10 Customers")
+        top10CustomerNode.Tag = dwTop10Customers.Name
+        productNode.Nodes.Add(productListingNode)
+        productNode.Nodes.Add(productCategoryNode)
+        customerNode.Nodes.Add(top10CustomerNode)
+        RadTreeView1.ExpandAll()
+    End Sub
+</code></pre>
+
+<ol>
+<li>Create an <strong>SelectedNodeChanged</strong> event handler and add the following code to it. The code for this
+          event handler verifies that the Tag of the selected node has a value. Further, if this value corresponds to the name of an existing window in RadDock,
+          the appropriate DocumentWindow gets activated.</li>
+</ol>
+
+<h4><strong>[C#] Handling the RadTreeView SelectedNodeChanged event</strong></h4>
+
+<pre><code>        void radTreeView1_SelectedNodeChanged(object sender, RadTreeViewEventArgs e)
+        {            
+            if (e.Node.Tag != null)
+            {
+                DockWindow dw = this.radDock1[e.Node.Tag.ToString()];
+                if (dw != null)
+                {
+                    this.radDock1.ActiveWindow = dw;
+                }
+            }
+        }
+</code></pre>
+
+<h4><strong>[VB.NET] Handling the RadTreeView SelectedNodeChanged event</strong></h4>
+
+<pre><code>    Private Sub RadTreeView1_SelectedNodeChanged(ByVal sender As Object, ByVal e As RadTreeViewEventArgs)
+        If Not e.Node.Tag Is Nothing Then
+            Dim dw As DockWindow = Me.RadDock1(e.Node.Tag.ToString())
+            If Not dw Is Nothing Then
+                Me.RadDock1.ActiveWindow = dw
+            End If
+        End If
+    End Sub
+</code></pre>
+
+<p>Press <strong>F5</strong> to run the application. Try experimenting with...</p>
+
+<ul>
+<li><p>Dragging the panel and document tabs</p></li>
+<li><p>Right-clicking document and panel tabs.</p></li>
+<li><p>Pressing <strong>Ctrl-Tab</strong> to invoke the<br>
+          <a href="/devtools/winforms/dock/architecture-and-features/quick-navigator">Quick Navigator</a>.</p></li>
+<li><p>Pinning and un-pinning the <strong>DockWindow</strong>.</p></li>
+<li><p>Using the <strong>ToolWindow</strong> and <strong>DocumentWindow</strong> menus by clicking the downward arrows.</p></li>
+</ul>
+
+<table>
+<th></th>
+<tr>
+<td>
+
+RELATED VIDEOS
+                </td>
+<td></td>
+</tr>
+<tr>
+<td>
+
+The new and
+                improved RadDock for WinForms has landed and this is your
+                opportunity to get a first look. Join Developer Evangelist John
+                Kellar as he shows you how quickly you can get up and running
+                with the new version of RadDock. John will cover the new
+                features so you know what to expect and how you can use RadDock
+                in your applications once it is officially released. (Runtime:
+                32:54)
+              
+
+[
+                    Introducing the new RadDock for WinForms
+                  ](http://tv.telerik.com/winforms/raddock/introducing-new-raddock-winforms)![dock-getting-started 004](images/dock-getting-started004.png)</td>
+<td>
+
+In this
+                video, you will learn how to get started with the run-time and
+                design-time features in the new RadDock for WinForms. You will
+                see the rich RadDock run-time features in action and you will
+                see how easy it is to get started with RadDock in Visual
+                Studio. You will also be introduced to the new Advanced Layout
+                Designer for RadDock, a design-time tool that makes it easy to
+                customize yoru RadDock layouts. (Runtime: 09:42)
+              
+
+[
+                    Getting Started with RadDock for WinForms
+                  ](http://tv.telerik.com/winforms/raddock/getting-started-with-raddock-winforms)![dock-getting-started 005](images/dock-getting-started005.png)</td>
+</tr>
+</table>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

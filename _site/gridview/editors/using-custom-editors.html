@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Using custom editors</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Using custom editors">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("gridview/editors/using-custom-editors.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/gridview/editors/using-custom-editors.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="using-custom-editors"><a href="#using-custom-editors">Using custom editors</a></h1>
+
+<p>This following snippet demonstrates how to replace the standard spin editor with a track bar.</p>
+
+<p>All grid editors inherit from <strong>BaseGridEditor</strong>. So, you have to inherit from this class and override several methods:</p>
+
+<h4><strong>[C#] Creating the custom editor</strong></h4>
+
+<pre><code>    public class TrackBarEditor : BaseGridEditor
+    {
+        public override object Value
+        {
+            get
+            {
+                TrackBarEditorElement editor = (TrackBarEditorElement)this.EditorElement;
+                return editor.Value;
+            }
+            set
+            {
+                TrackBarEditorElement editor = (TrackBarEditorElement)this.EditorElement;
+                if (value != null &amp;&amp; value != DBNull.Value)
+                {
+                    editor.Value = Convert.ToInt32(value);
+                }
+                else
+                {
+                    editor.Value = 0;
+                }
+            }
+        }
+        public override void BeginEdit()
+        {
+            base.BeginEdit();
+            this.EditorElement.Focus();
+            ((TrackBarEditorElement)this.EditorElement).TrackPositionChanged += new EventHandler(TrackBarEditor_TrackPositionChanged);
+        }
+        public override bool EndEdit()
+        {
+            ((TrackBarEditorElement)this.EditorElement).TrackPositionChanged -= new EventHandler(TrackBarEditor_TrackPositionChanged);
+            return base.EndEdit();
+        }
+        void TrackBarEditor_TrackPositionChanged(object sender, EventArgs e)
+        {
+            OnValueChanged();
+        }
+        protected override RadElement CreateEditorElement()
+        {
+            return new TrackBarEditorElement();
+        }
+    }
+</code></pre>
+
+<h4><strong>[VB.NET] Creating the custom editor</strong></h4>
+
+<pre><code>Public Class TrackBarEditor
+    Inherits BaseGridEditor
+    Public Overrides Property Value() As Object
+        Get
+            Dim editor As TrackBarEditorElement = CType(Me.EditorElement, TrackBarEditorElement)
+            Return editor.Value
+        End Get
+        Set(ByVal value As Object)
+            Dim editor As TrackBarEditorElement = CType(Me.EditorElement, TrackBarEditorElement)
+            If value IsNot Nothing AndAlso value IsNot DBNull.Value Then
+                editor.Value = Convert.ToInt32(value)
+            Else
+                editor.Value = 0
+            End If
+        End Set
+    End Property
+    Public Overrides Sub BeginEdit()
+        MyBase.BeginEdit()
+        Me.EditorElement.Focus()
+        AddHandler (CType(EditorElement, TrackBarEditorElement)).TrackPositionChanged, AddressOf TrackBarEditor_TrackPositionChanged
+    End Sub
+    Public Overrides Function EndEdit() As Boolean
+        RemoveHandler (CType(EditorElement, TrackBarEditorElement)).TrackPositionChanged, AddressOf TrackBarEditor_TrackPositionChanged
+        Return MyBase.EndEdit()
+    End Function
+    Private Sub TrackBarEditor_TrackPositionChanged(ByVal sender As Object, ByVal e As EventArgs)
+        OnValueChanged()
+    End Sub
+    Protected Overrides Function CreateEditorElement() As RadElement
+        Return New TrackBarEditorElement()
+    End Function
+End Class
+</code></pre>
+
+<p>We use the standard <strong>RadTrackBar</strong> element in this example with some modification to enable keyboard navigation:</p>
+
+<h4><strong>[C#] Creating the custom editor element</strong></h4>
+
+<pre><code>    public class TrackBarEditorElement : RadTrackBarElement
+    {
+        public TrackBarEditorElement()
+        {
+            this.CanFocus = true;
+        }
+        public event EventHandler TrackPositionChanged;
+        protected override Type ThemeEffectiveType
+        {
+            get
+            {
+                return typeof(RadTrackBarElement);
+            }
+        }
+        protected override SizeF MeasureOverride(SizeF availableSize)
+        {
+            int desiredHeight = 30;
+            foreach (RadElement element in this.Children)
+            {
+                element.Measure(new SizeF(availableSize.Width, desiredHeight));
+            }
+            return new SizeF(1, desiredHeight);
+        }
+        protected override void OnPropertyChanged(RadPropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (e.Property == RadTrackBarItem.ValueProperty
+                &amp;&amp; this.Parent != null
+                &amp;&amp; this.TrackPositionChanged != null)
+            {
+                this.TrackPositionChanged(this, EventArgs.Empty);
+            }
+        }
+    }
+</code></pre>
+
+<h4><strong>[VB.NET] Creating the custom editor element</strong></h4>
+
+<pre><code>Public Class TrackBarEditorElement
+    Inherits RadTrackBarElement
+    Public Sub New()
+        Me.CanFocus = True
+    End Sub
+    Public Event TrackPositionChanged As EventHandler
+    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
+        Get
+            Return GetType(RadTrackBarElement)
+        End Get
+    End Property
+    Protected Overrides Function MeasureOverride(ByVal availableSize As System.Drawing.SizeF) As System.Drawing.SizeF
+        Dim desiredHeight As Integer = 30
+        For Each element As RadElement In Me.Children
+            element.Measure(New System.Drawing.SizeF(availableSize.Width, desiredHeight))
+        Next element
+        Return New System.Drawing.SizeF(1, desiredHeight)
+    End Function
+    Protected Overrides Sub OnPropertyChanged(ByVal e As RadPropertyChangedEventArgs)
+        MyBase.OnPropertyChanged(e)
+        If e.Property Is RadTrackBarItem.ValueProperty AndAlso Me.Parent IsNot Nothing AndAlso Me.TrackPositionChangedEvent IsNot Nothing Then
+            RaiseEvent TrackPositionChanged(Me, EventArgs.Empty)
+        End If
+    End Sub
+End Class
+</code></pre>
+
+<p>The <strong>EditorRequired</strong> event is the correct place to replace the default editor:</p>
+
+<h4><strong>[C#] Changing the current editor</strong></h4>
+
+<pre><code>        void radGridView1_EditorRequired(object sender, EditorRequiredEventArgs e)
+        {
+            if (e.EditorType == typeof(GridSpinEditor))
+            {
+                e.EditorType = typeof(TrackBarEditor);
+            }
+        }
+</code></pre>
+
+<h4><strong>[VB.NET] Changing the current editor</strong></h4>
+
+<pre><code>    Private Sub RadGridView1_EditorRequired(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.EditorRequiredEventArgs) Handles RadGridView1.EditorRequired
+        If e.EditorType Is GetType(GridSpinEditor) Then
+            e.EditorType = GetType(TrackBarEditor)
+        End If
+    End Sub
+</code></pre>
+
+<blockquote>
+</blockquote>
+
+<p>You can find a working version of this sample in our Demo application (<em>GridView -&gt; Custom Editors</em>)</p>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

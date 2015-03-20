@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>Settings</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="Settings">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("wordsprocessing/formats-and-conversion/html/settings.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/wordsprocessing/formats-and-conversion/html/settings.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="settings"><a href="#settings">Settings</a></h1>
+
+<p><strong>HtmlFormatProvider</strong> allows for import of HTML documents and respectively export of RadFlowDocument to HTML. Additionally, the import/export settings provide modification options. This article outlines the available settings.</p>
+
+<h2 id="import-settings"><a href="#import-settings">Import Settings</a></h2>
+
+<p>The import settings are represented by the <strong>HtmlImportSettings</strong> class. The options which you can specify are as follows:</p>
+
+<h3 id="defaultstylesheet"><a href="#defaultstylesheet">DefaultStyleSheet</a></h3>
+
+<p>The property specifies the default style sheet which should be used. This is equivalent to the browser's "user agents style defaults", and specifies the formatting that should be applied by default to the elements (before all styles explicitly defined in the document).</p>
+
+<p>The default value, for example, specifies that "b" elements should be imported with "font-weight: bold".</p>
+
+<p>You can set the value of the property to any valid CSS document.</p>
+
+<h3 id="genericfonts"><a href="#genericfonts">GenericFonts</a></h3>
+
+<p>Contains an instance of <strong>GenericHtmlFonts</strong> class, which specifies the ThemableFontFamily objects that should be used when importing the 5 generic CSS font families: serif, sans-serif, monospace, cursive and fantasy. By default, these fonts are Times New Roman, Arial, Courier New, Comic Sans MS and Algerian, respectively.</p>
+
+<h3 id="loadfromuri"><a href="#loadfromuri">LoadFromUri</a></h3>
+
+<p>The event can be used to override the process of loading of external resources – like external images and external CSS files. When handling the event, you gain access to the <strong>LoadFromUriEventArgs</strong> instance exposing the following members:</p>
+
+<ul>
+<li><p><strong>Uri</strong>: The URI originally specified in the imported HTML file.</p></li>
+<li><p><strong>SetData()</strong>: Can be used to set the data (in the form of byte array) that will be loaded.</p></li>
+</ul>
+
+<p><strong>Example 1</strong> shows how you can create and apply specific import settings.</p>
+
+<h4><strong>[C#] Example 1: Create HtmlImportSettings</strong></h4>
+
+<pre><code>            HtmlFormatProvider provider = new HtmlFormatProvider();
+            HtmlImportSettings importSettings = new HtmlImportSettings();
+
+            importSettings.GenericFonts.Serif = new ThemableFontFamily("Baskerville");
+
+            byte[] data = this.GetImageData();
+            provider.ImportSettings.LoadFromUri += (s, e) =&gt;
+            {
+                if (e.Uri == "test.jpg")
+                {
+                    e.SetData(data);
+                }
+            };
+
+            provider.ImportSettings = importSettings;
+</code></pre>
+
+<h4><strong>[VB.NET] Example 1: Create HtmlImportSettings</strong></h4>
+
+<pre><code>            Dim provider As New HtmlFormatProvider()
+            Dim importSettings As New HtmlImportSettings()
+
+            importSettings.GenericFonts.Serif = New ThemableFontFamily("Baskerville")
+
+            Dim data As Byte() = Me.GetImageData()
+        AddHandler provider.ImportSettings.LoadFromUri, Sub(s, e)
+                                                            e.SetData(data)
+                                                            If e.Uri = "test.jpg" Then
+                                                            End If
+
+                                                        End Sub
+
+            provider.ImportSettings = importSettings
+
+            '#End Region
+        End Sub
+
+        Private Function GetImageData() As Byte()
+            Throw New NotImplementedException()
+        End Function
+
+        Private Sub ApplyExportSettings()
+            '#Region "radwordsprocessing-formats-and-conversion-html-settings_1"
+            Dim provider As New HtmlFormatProvider()
+            Dim exportSettings As New HtmlExportSettings()
+
+            Dim data As Byte() = Nothing
+            exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment
+            exportSettings.IndentDocument = True
+        AddHandler exportSettings.ImageExporting, Sub(s, e)
+                                                      e.Source = "test.jpg"
+                                                      data = e.Image.ImageSource.Data
+                                                      e.Handled = True
+
+                                                  End Sub
+
+            provider.ExportSettings = exportSettings
+            '#End Region
+        End Sub
+    End Class
+</code></pre>
+
+<h2 id="export-settings"><a href="#export-settings">Export Settings</a></h2>
+
+<p>The export settings are represented by the <strong>HtmlExportSettings</strong> class. The settings which you can specify are as follows:</p>
+
+<h3 id="bordersminimalthickness"><a href="#bordersminimalthickness">BordersMinimalThickness</a></h3>
+
+<p>Specifies the minimal exported thickness of the borders of tables and table cells. This could be useful as some browsers cannot properly visualize thin borders (below 1px or similar). The default value is 0, equivalent to exporting all borders with their actual thickness.</p>
+
+<h3 id="documentexportlevel"><a href="#documentexportlevel">DocumentExportLevel</a></h3>
+
+<p>Specifies the export level of the document using the <strong>DocumentExportLevel</strong> enumeration:</p>
+
+<ul>
+<li><p><strong>Document</strong>: Exports full HTML document. This is the default value of the property.</p></li>
+<li><p><strong>Fragment</strong>: Exports a fragment of the HTML document – only the 'body' tag.</p></li>
+</ul>
+
+<h3 id="indentdocument"><a href="#indentdocument">IndentDocument</a></h3>
+
+<p>Specifies whether the exported document should be indented (formatted with spaces). The default value is <strong>false</strong>, as this ensures minimum size as opposed to human-readability.</p>
+
+<h3 id="imageexportmode"><a href="#imageexportmode">ImageExportMode</a></h3>
+
+<p>This property is used to control how images are exported. The available options are as external file or as embedded images.</p>
+
+<h3 id="imagesfolderpath"><a href="#imagesfolderpath">ImagesFolderPath</a></h3>
+
+<p>This property is used to specify the folder path where external images should be exported. This property is used only when <strong>ImageExportMode</strong> is set to <strong>External</strong>.</p>
+
+<h3 id="imagessourcebasepath"><a href="#imagessourcebasepath">ImagesSourceBasePath</a></h3>
+
+<p>Specifies the base path for the "src" attribute of the exported image tags. This property is used only when the <strong>ImageExportMode</strong> is set to <strong>External</strong>.</p>
+
+<h3 id="imageexporting"><a href="#imageexporting">ImageExporting</a></h3>
+
+<p>The event is raised for every image in the document. The event argument exposes the following options:</p>
+
+<ul>
+<li><p><strong>AlternativeText</strong>: Can be used to specify the content of the 'alt' attribute of the image. It is null by default and the attribute is not exported.</p></li>
+<li><p><strong>Handled</strong>: Marks the event as handled. If <strong>ImagesExportMode</strong> is set to <strong>External</strong> and the event is marked as handled, the format provider does not attempt to export the image to external image file.</p></li>
+<li><p><strong>Image</strong>: Can be used to obtain the original Image object, from where you can access image name, image data and image extension.</p></li>
+<li><p><strong>Source</strong>: Can be used to specify the value of the 'src' attribute of the 'image' element. If <strong>ImagesExportMode</strong> is set to <strong>External</strong>, tthe source can be set to absolute or relative path pointing to the image file.</p></li>
+</ul>
+
+<h3 id="stylesexportmode"><a href="#stylesexportmode">StylesExportMode</a></h3>
+
+<p>Specifies the export mode for the <a href="/devtools/winforms/wordsprocessing/concepts/styles">styles in RadFlowdDocument's StyleRepository</a>, using the <strong>StylesExportMode</strong> enumeration:</p>
+
+<ul>
+<li><p><strong>Embedded</strong>: RadFlowDocument styles are exported as internal CSS – selectors embedded into the HTML in 'style' element in the 'head' section. This is the default value of the property.</p></li>
+<li><p><strong>External</strong>: RadFlowDocument styles are exported as CSS selectors in external CSS file. You have two options:</p></li>
+<li><p>Set <strong>StylesFilePath</strong> and <strong>StylesSourcePath</strong> properties, which should be used to export the external file.</p></li>
+<li><p>Handle <strong>ExportStylesToExternalSource</strong> event, specifying the output stream and reference Uri to be exported.</p></li>
+<li><p><strong>Inline</strong>: RadFlowDocument styles are exported as CSS properties in the 'style' attribute of the HTML elements. This ensures maximum compatibility with some applications that don't support external or embedded CSS, for example some email clients.</p></li>
+<li><p><strong>None</strong>: RadFlowDocument styles are not exported. Note that the local values of <a href="/devtools/winforms/wordsprocessing/concepts/style-properties">style properties</a> of the DocumentElements are still exported as CSS properties in the 'style' attribute of the HTML elements.</p></li>
+</ul>
+
+<h3 id="stylesfilepath"><a href="#stylesfilepath">StylesFilePath</a></h3>
+
+<p>This property is used to specify the file path where the external styles should be exported.</p>
+
+<h3 id="stylessourcepath"><a href="#stylessourcepath">StylesSourcePath</a></h3>
+
+<p>The property specifies the base path for the "href" attribute of the "link" element pointing to the file containing the external styles.</p>
+
+<h3 id="externalstylesexporting"><a href="#externalstylesexporting">ExternalStylesExporting</a></h3>
+
+<p>The event is only raised when the <strong>StylesExportMode</strong> property is set to <strong>External</strong>. The event argument exposes the following properties:</p>
+
+<ul>
+<li><p><strong>Css</strong>: String containing the actual CSS that will be exported.</p></li>
+<li><p><strong>Handled</strong>: Marks the event as handled. If the event is marked as handled, the format provider does not attempt to export the CSS file.</p></li>
+<li><p><strong>Reference</strong>: The value that will be set to the "href" attribute of the "link" element tag. In the general case, this should be set to the absolute or relative path pointing to the file containing the CSS styles.</p></li>
+</ul>
+
+<p><strong>Example 2</strong> demonstrates how you can create export settings.</p>
+
+<h4><strong>[C#] Example 2: Create HtmlExportSettings</strong></h4>
+
+<pre><code>            HtmlFormatProvider provider = new HtmlFormatProvider();
+            HtmlExportSettings exportSettings = new HtmlExportSettings();
+
+            byte[] data = null;
+            exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment;
+            exportSettings.IndentDocument = true;
+            exportSettings.ImageExporting += (s, e) =&gt;
+            {
+                e.Source = "test.jpg";
+                data = e.Image.ImageSource.Data;
+                e.Handled = true;
+            };
+
+            provider.ExportSettings = exportSettings;
+</code></pre>
+
+<h4><strong>[VB.NET] Example 2: Create HtmlExportSettings</strong></h4>
+
+<pre><code>            Dim provider As New HtmlFormatProvider()
+            Dim exportSettings As New HtmlExportSettings()
+
+            Dim data As Byte() = Nothing
+            exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment
+            exportSettings.IndentDocument = True
+        AddHandler exportSettings.ImageExporting, Sub(s, e)
+                                                      e.Source = "test.jpg"
+                                                      data = e.Image.ImageSource.Data
+                                                      e.Handled = True
+
+                                                  End Sub
+
+            provider.ExportSettings = exportSettings
+            '#End Region
+        End Sub
+    End Class
+</code></pre>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/winforms/wordsprocessing/concepts/styles">Styles</a></p></li>
+<li><p><a href="/devtools/winforms/wordsprocessing/concepts/style-properties">Style Properties</a></p></li>
+</ul>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

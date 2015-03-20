@@ -1,0 +1,211 @@
+---
+title: Customize Presentation through UI Layers
+page_title: Customize Presentation through UI Layers
+description: Customize Presentation through UI Layers
+slug: richtexteditor-how-to-customize-presentation-trought-ui-layers
+tags: customize,presentation,through,ui,layers
+published: True
+position: 0
+---
+
+# Customize Presentation through UI Layers
+
+
+
+__UILayers__ provide an extensible approach to showing different parts of __RadRichTextEditor__ Document.
+        For example, there are separate layers showing the comments, the selection, the table borders, etc.
+      
+
+The existing layers can be removed and additional ones can be defined to customize the presentation of different parts of the document.
+      
+
+## 
+
+All UILayers implement the __IUILayer__ interface. There is an abstract class, which implements this interface -
+          __DecorationUILayerBase__, and by inheriting it, you can easily define a new layer for custom representations of your
+          document’s layout. The main method to put your logic in is:
+        
+
+#### __[C#] __
+
+{{region override}}
+	        public override void UpdateUIViewPortOverride(UILayerUpdateContext context)
+	{{endregion}}
+
+
+
+#### __[VB.NET] __
+
+{{region override}}
+	    Public Overrides Sub UpdateUIViewPortOverride(ByVal context As UILayerUpdateContext)
+	        '#End Region
+	
+	    End Sub
+	    '#Region "name"
+	    Public Overrides ReadOnly Property Name() As String
+	        Get
+	            Return Me.customLayerName
+	        End Get
+	    End Property
+	    '#End Region
+	    Private customLayerName As String
+	End Class
+	'#Region "builder"
+	Public Class CustomLayersBuilder
+	    Inherits UILayersBuilder
+	    '#End Region
+	    '#Region "build"
+	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
+	        uiLayerContainer.UILayers.AddAfter(DefaultUILayers.HighlightDecoration, New CustomDecorationUILayerBase())
+	    End Sub
+	    '#End Region
+		End Class
+	
+
+
+
+You can use the context which is passed as a parameter to the method to get all visible layout boxes and perform your decorations and customizations on them.
+          You can also use the __Document__ property that your decoration layer inherits from __DecorationUILayerBase__
+          and everything that comes with it (like the current CaretPosition).
+        
+
+Last but not least, you should not forget to override the Name property of the layer like this:
+
+#### __[C#] __
+
+{{region name}}
+	        public override string Name
+	        {
+	            get
+	            {
+	                return this.customLayerName;
+	            }
+	        }
+	{{endregion}}
+
+
+
+#### __[VB.NET] __
+
+{{region name}}
+	    Public Overrides ReadOnly Property Name() As String
+	        Get
+	            Return Me.customLayerName
+	        End Get
+	    End Property
+	    '#End Region
+	    Private customLayerName As String
+	End Class
+	'#Region "builder"
+	Public Class CustomLayersBuilder
+	    Inherits UILayersBuilder
+	    '#End Region
+	    '#Region "build"
+	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
+	        uiLayerContainer.UILayers.AddAfter(DefaultUILayers.HighlightDecoration, New CustomDecorationUILayerBase())
+	    End Sub
+	    '#End Region
+		End Class
+	
+
+
+
+After having implemented the logic of your custom UI layer, you can plug it in the editor by creating a __CustomUILayerBuilder__
+
+#### __[C#] __
+
+{{region builder}}
+	    public class CustomLayersBuilder : UILayersBuilder
+	{{endregion}}
+
+
+
+#### __[VB.NET] __
+
+{{region builder}}
+	Public Class CustomLayersBuilder
+	    Inherits UILayersBuilder
+	    '#End Region
+	    '#Region "build"
+	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
+	        uiLayerContainer.UILayers.AddAfter(DefaultUILayers.HighlightDecoration, New CustomDecorationUILayerBase())
+	    End Sub
+	    '#End Region
+		End Class
+	
+
+
+
+You can assign the new builder to specific instance of RadRichTextEditor like this:
+        
+
+#### __[C#] __
+
+{{region change}}
+	            this.radRichTextEditor1.RichTextBoxElement.UILayersBuilder = new CustomLayersBuilder();
+	{{endregion}}
+
+
+
+#### __[VB.NET] __
+
+{{region change}}
+	        Me.radRichTextEditor1.RichTextBoxElement.UILayersBuilder = New CustomLayersBuilder()
+	        '#End Region
+	    End Sub
+	End Class
+	Public Class CustomDecorationUILayerBase
+	    Inherits DecorationUILayerBase
+	
+	    '#Region "override"
+	    Public Overrides Sub UpdateUIViewPortOverride(ByVal context As UILayerUpdateContext)
+	        '#End Region
+	
+	    End Sub
+	    '#Region "name"
+	    Public Overrides ReadOnly Property Name() As String
+	        Get
+	            Return Me.customLayerName
+	        End Get
+	    End Property
+	    '#End Region
+	    Private customLayerName As String
+	End Class
+	'#Region "builder"
+	Public Class CustomLayersBuilder
+	    Inherits UILayersBuilder
+	    '#End Region
+	    '#Region "build"
+	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
+	        uiLayerContainer.UILayers.AddAfter(DefaultUILayers.HighlightDecoration, New CustomDecorationUILayerBase())
+	    End Sub
+	    '#End Region
+		End Class
+	
+
+
+
+All that is left is to specify the place of your layer, i.e. which layers should be shown above and which - below your layer. This is done in the
+          __BuildUILayersOverride__ method. For example, a layer can be shown under the selection, after the highlighting layer in the
+          following way:
+        
+
+#### __[C#] __
+
+{{region build}}
+	    public class CustomLayersBuilder : UILayersBuilder
+	{{endregion}}
+
+
+
+#### __[VB.NET] __
+
+{{region build}}
+	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
+	        uiLayerContainer.UILayers.AddAfter(DefaultUILayers.HighlightDecoration, New CustomDecorationUILayerBase())
+	    End Sub
+	    '#End Region
+		End Class
+	
+
+
