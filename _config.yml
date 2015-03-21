@@ -5,11 +5,166 @@ site_name: WinForms
 exclude: [README.md,Gemfile,Gemfile.lock]
 navigation:
 ## List your directory names and order here, like this:
-    overview:
-        position: 1
-        title: Overview
-    "*foo":
-        title: Foo
+    installation,-deployment-and-distribution:
+        title: Installation, Deployment and Distribution
+        position: 4
+    licensing:
+        title: Licensing
+        position: 5
+    buttons:
+        title: Buttons
+        position: 6
+    bindingnavigator:
+        title: BindingNavigator
+        position: 7
+    calendar:
+        title: Calendar
+        position: 8
+    carousel:
+        title: Carousel
+        position: 9
+    chart:
+        title: Chart (obsolete)
+        position: 10
+    chartview:
+        title: ChartView
+        position: 11
+    checkedlistbox:
+        title: ChekedListBox
+        position: 12
+    clock:
+        title: Clock
+        position: 13
+    commandbar:
+        title: CommandBar
+        position: 14
+    dataentry:
+        title: DataEntry
+        position: 15
+    diagram:
+        title: Diagram(beta)
+        position: 16
+    dock:
+        title: Dock
+        position: 17
+    desktopalert:
+        title: DesktopAlert
+        position: 18
+    dropdown-and-listcontrol:
+        title: DropDown and ListControl
+        position: 19
+    editors:
+        title: Editors
+        position: 20
+    forms-and-dialogs:
+        title: Forms and Dialogs
+        position: 21
+    ganttview:
+        title: GanttView
+        position: 22
+    gauges:
+        title: Gauges
+        position: 23
+    gridview:
+        title: GridView
+        position: 24
+    listview:
+        title: ListView
+        position: 25
+    menus:
+        title: Menus
+        position: 26
+    multicolumncombobox:
+        title: MultiColumnComboBox
+        position: 27
+    pageview:
+        title: PageView
+        position: 28
+    panels-and-labels:
+        title: Panels and Labels
+        position: 29
+    panorama:
+        title: Panorama
+        position: 30
+    pdfprocessing:
+        title: PdfProcessing 
+        position: 31
+    pdfviewer:
+        title: PdfViewer
+        position: 32
+    pivotgrid:
+        title: PivotGrid 
+        position: 33
+    propertygrid:
+        title: PropertyGrid
+        position: 34
+    rangeselector:
+        title: RangeSelector
+        position: 35
+    ribbonbar:
+        title: RibbonBar
+        position: 36
+    richtextbox:
+        title: RichTextBox (obsolote)
+        position: 37
+    richtexteditor:
+        title: RichTextEditor
+        position: 38
+    rotator:
+        title: Rotator
+        position: 39
+    scheduler:
+        title: Scheduler
+        position: 40
+    shortcuts:
+        title: Shortcuts
+        position: 41
+    spellchecker:
+        title: SpellChecker
+        position: 42
+    splitcontainer:
+        title: SplitContainer
+        position: 43
+    spread-processing:
+        title: SpreadProcessing
+        position: 44
+    track-and-status-controls:
+        title: Track and Status controls
+        position: 45
+    treeview:
+        title: TreeView
+        position: 46
+    wizard:
+        title: Wizzard
+        position: 47
+    wordsprocessing:
+        title: WordsProcessing
+        position: 48
+    ziplibrary:
+        title: ZipLibrary
+        position: 49
+    telerik-cab-enabling-kit:
+        title: Telerik Cab Enabling Kit
+        position: 50
+    codedui:
+        title: CodedUI 
+        position: 52
+    telerik-presentation-framework:
+        title: Telerik Presentation Framework
+        position: 53
+    themes:
+        title: Themes
+        position: 54
+    tools:
+        title: Tools
+        position: 55
+    telerik-analytics-integration:
+        title: Telerik Analytics Intergration
+        position: 56
+    for-more-help:
+        title: For More Help
+        position: 57
+    
 ## Api Reference End
 ## The application virtual path
 baseurl: "/devtools/winforms"

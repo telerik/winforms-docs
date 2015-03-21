@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>RichTextEditor</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="RichTextEditor">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("richtexteditor/RichTextEditor.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/richtexteditor/RichTextEditor.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="richtexteditor"><a href="#richtexteditor">RichTextEditor</a></h1>
+
+<p>Thank you for choosing Telerik <strong>RadRichTextEditor</strong>!</p>
+
+<p><strong>RadRichTextEditor</strong> is a control that is able to display and edit rich-text content including formatted text arranged in pages,<br>
+          paragraphs, spans (runs), tables, etc.<br>
+        <img src="images/richtexteditor001.png" alt="richtexteditor 001"></p>
+
+<ul>
+<li><p><strong>Rich Text Formatting</strong> - Telerik <strong>RadRichTextEditor</strong> control allows you to edit text and <br>
+        apply rich formatting options, like:</p></li>
+<li><p>Bold, Italic</p></li>
+<li><p>Underline, Strike Through, Superscript and Subscript</p></li>
+<li><p>Usage of all available system fonts </p></li>
+<li><p>Text color and background</p></li>
+<li><p>Bullet and numbered lists</p></li>
+<li><p>Paragraph alignment and indentation</p></li>
+<li><p>Show/Hide formatting symbols</p></li>
+<li><p>Clear Formatting </p></li>
+<li><p><strong>Inserting pictures/symbols/hyperlinks</strong> -<br>
+          <a href="/devtools/winforms/richtexteditor/document-elements/richtexteditor-inline-image">Read more</a></p></li>
+<li><p><strong>Table support</strong> – including nested tables, merging cells, setting different <strong>RowSpan</strong> and<br>
+          <strong>ColumnSpan</strong>, tables with auto width and more. <a href="/devtools/winforms/richtexteditor/document-elements/richtexteditor-table">Read more</a></p></li>
+<li><p><strong>ContextMenu</strong> - a standard one is provided out of the box, but it can be easily customized or substituted for a<br>
+          user-defined one. <a href="/devtools/winforms/richtexteditor/ui-for-applying-rich-text-formatting/richtexteditor-ribbon-ui-context-menu">Read more</a></p></li>
+<li><p><strong>SelectionMiniToolbar</strong> - very similar to the one in MS Word, but can also be replaced with another.<br>
+          <a href="/devtools/winforms/richtexteditor/ui-for-applying-rich-text-formatting/richtexteditor-ribbon-ui-selection-mini-toolbar">Read more</a></p></li>
+<li><p><strong>SpellChecker</strong> - extensible spell checking for different languages, using built-in or custom dictionaries.<br>
+          <a href="/devtools/winforms/richtexteditor/features/richtexteditor-spellcheck">Read more</a></p></li>
+<li><p><strong>Printing</strong> supports printing out of the box.<br><br>
+          <a href="/devtools/winforms/richtexteditor/richtexteditor-printing">Read more</a></p></li>
+<li><p><strong>Multi-level Undo/Redo Support</strong> - Telerik <strong>RadRichTextEditor</strong> provides desktop-like usability and control<br>
+          thanks to its multilevel Undo/Redo feature. It allows past actions to be reviewed and reversed, just like in Microsoft Word.<br>
+          <a href="/devtools/winforms/richtexteditor/features/richtexteditor-history">Read more</a></p></li>
+<li><p><strong>Three types of layout</strong> – Paged, Flow (as text in an HTML page viewed in a browser) and FlowNoWrap.<br>
+          <a href="/devtools/winforms/richtexteditor/getting-started/richtexteditor-layout-modes">Read more</a></p></li>
+<li><p><strong>Multi-region selection</strong> - the built-in multi-region support enables you to perform various operations for more than one<br>
+          selection simultaneously. <a href="/devtools/winforms/richtexteditor/features/richtexteditor-selection">Read more</a></p></li>
+<li><p><strong>Rich-text clipboard –</strong> allows rich text copy/paste from Word, OpenOffice etc.;<br><br>
+          <a href="0696ADDB-DD5A-484D-B5C9-A8C90F6DA93D">Read more</a></p></li>
+<li><p><strong>Import/export</strong> - with Telerik <strong>RadRichTextEditor</strong> control you can load XAML, HTML, RTF, DocX<br>
+          (rich-text) or TXT (plain text) into the control, you can format and edit it and then export it back to any of the above formats or PDF.<br>
+          <a href="/devtools/winforms/richtexteditor/richtexteditor-import-export">Read more</a></p></li>
+<li><p><strong>Headers and Footers</strong> - <strong>RadRichTextEditor</strong> supports headers and footers in its document.<br>
+          <a href="/devtools/winforms/richtexteditor/features/richtexteditor-headers-and-footers">Read more</a></p></li>
+<li><p><strong>Track changes</strong> - adding and removing of text, images, hyperlinks, tables, etc. and formatting changes of these elements can<br>
+          be tracked by different users. <a href="/devtools/winforms/richtexteditor/features/richtexteditor-track-changes">Read more</a></p></li>
+<li><p><strong>Bookmarks</strong> - provide easy retrieval of previously marked parts of the document.<br>
+          <a href="/devtools/winforms/richtexteditor/features/richtexteditor-bookmarks">Read more</a></p></li>
+<li><p><strong>Comments</strong> - offer the ability to add text to the document which is not inserted directly in the page.<br>
+          <a href="/devtools/winforms/richtexteditor/features/richtexteditor-comments">Read more</a></p></li>
+<li><p><strong>Document protection</strong> - allows editing restrictions in the document for a set of users and groups.<br>
+          <a href="/devtools/winforms/richtexteditor/features/richtexteditor-document-protection">Read more</a></p></li>
+<li><p><strong>Mail merge</strong> - makes populating a template document with data easy.<br>
+          <a href="/devtools/winforms/richtexteditor/features/richtexteditor-mail-merge">Read more</a></p></li>
+<li><p><strong>Custom annotations</strong> - enables you to extend the document model in order to serve specific needs.<br>
+          <a href="/devtools/winforms/richtexteditor/document-elements/annotations/richtexteditor-custom-annotations">Read more</a></p></li>
+<li><p><strong>Footnotes and Endnotes</strong> - usually used to show the source of a material or add an explanation.<br>
+          <a href="/devtools/winforms/richtexteditor/features/references/richtexteditor-footnotes-and-endnotes">Read more</a></p></li>
+<li><p><strong>Bibliographic references</strong> - can be used for referencing a source in the form of text or pointing the source of a citation.<br>
+          <a href="/devtools/winforms/richtexteditor/features/references/richtexteditor-biliographic-references">Read more</a></p></li>
+<li><p><strong>Cross-references</strong> - references to a Heading, Caption or Bookmark can now change along with their source.<br>
+          <a href="/devtools/winforms/richtexteditor/features/references/richtexteditor-cross-reference">Read more</a></p></li>
+<li><p><strong>Captions for tables and figures</strong> - images, tables, etc. can now be easily labeled.<br>
+          <a href="/devtools/winforms/richtexteditor/features/references/richtexteditor-caption-for-tables-and-figures">Read more</a></p></li>
+<li><p><strong>Document variables</strong> - a mechanism used for storing information in the document.<br>
+          <a href="/devtools/winforms/richtexteditor/features/fields-and-document-variables/richtexteditor-document-variables">Read more</a></p></li>
+<li><p><strong>Code blocks</strong> - provide the ability to add source code fragments in a document.<br>
+          <a href="/devtools/winforms/richtexteditor/features/richtexteditor-code-block">Read more</a></p></li>
+<li><p><strong>IME support</strong> - RadRichTextEditor supports IME out the box.        </p></li>
+</ul>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/winforms/richtexteditor/richtexteditor-getting-started">Getting Started</a></p></li>
+<li><p><a href="/devtools/winforms/richtexteditor/richtexteditor-events">Events</a></p></li>
+<li><p><a href="">Styles and Templates</a></p></li>
+</ul>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+
