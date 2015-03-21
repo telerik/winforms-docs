@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <title>ChartView</title>
+		
+        <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
+		
+        <meta name="description" content="ChartView">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/branding-fafb6ed99bf90d251675534381e6f139.css">
+        <link rel="stylesheet" href="/devtools/winforms/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/app-6da8e8e1ef6e19ee4a020ec34f48078c.js"></script>
+		<script src="/devtools/winforms/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/winforms/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+		<script src="/devtools/winforms/assets/feedback-76cd418a099f8d21592f412fb4a31191.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
+            
+
+
+<div id="page-search">
+	<script>
+  (function() {
+    var cx = '001595215763381649090:jt1stbj813w';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+
+
+</div>
+
+
+
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "/devtools/winforms/default.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("/devtools/winforms/"),
+				dataBound: expandNavigation("chartview-/chartview-overview.html")
+			});
+        </script>
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="/devtools/winforms/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
+    </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/chartview-/chartview-overview.md">Edit this page</a>
+    <div id="page-article">       
+        <article>
+            <h1 id="chartview"><a href="#chartview">ChartView</a></h1>
+
+<table>
+<th></th>
+<tr>
+<td>
+
+RELATED VIDEOS</td>
+<td></td>
+</tr>
+<tr>
+<td>
+
+[What is new in Q3 2012 Telerik UI for WinForms](http://tv.telerik.com/watch/radcontrols-for-winforms/what-is-new-in-q3-2012-radcontrols-for-winforms)
+
+This webinar examines the new features found in Telerik UI for WinForms. Included in the Q3 2012 release is RadPivotGrid (Beta), Coded UI Testing Support, touch, legend and financial charts for RadChartView, Visual Studio 2012 compliance and much much more. See what's new in the design-time capabilities of RadChartView. (19:12 - 24:12)
+              </td>
+<td>![webinar Q 32012](images/webinarQ32012.png)</td>
+</tr>
+<tr>
+<td>
+
+[Getting Started with RadChartView for WinForms](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-radchartview-for-winforms)
+
+Telerik ChartView control facilitates data visualization, achieving stunning visual effects. This chart component sets no limits on your data visualization needs. It can easily turn into Bar, Pie, Line, Area, Polar, Radar and Scatter with only a few clicks at design time. The input data is contained in a set of series classes. Each series have a collection of data points, that is, a data source which it displays according to the series’ type.
+              </td>
+<td>![chartview-overview 002](images/chartview-overview002.png)</td>
+</tr>
+</table>
+
+<p><strong>1. Overview</strong></p>
+
+<p>RadChartView is a versatile charting component that offers drawing capabilities, user interaction and real-time updates.<br>
+          Its intuitive object model and public API allow complex charts to be easily setup either in design-time or through code.<br>
+          The control is completely data aware and may work in bound or unbound mode, depending on the requirements. Chart types<br>
+          (or series) are organized in hierarchies, depending on the coordinate system, used to plot data points – for example<br>
+          we have CartesianArea (using Cartesian coordinate system) and PieArea (using radial coordinate system).</p>
+
+<blockquote>
+<p>The following references are required in order to use RadChartView:</p>
+</blockquote>
+
+<ul>
+<li><p><strong>Telerik.WinControls.ChartView.dll</strong></p></li>
+<li><p><strong>Telerik.WinControls.dll</strong></p></li>
+<li><p><strong>TelerikCommon.dll</strong></p></li>
+</ul>
+
+<p><strong>2. Architecture</strong></p>
+
+<p>A charting component in general is used to visualize (or plot) some data in a human-readable way<br>
+          through different representations like lines, areas, bars pies, etc. Each series has a collection<br>
+          of data points – the data equivalent of a 2D point – and knows how to visualize them. Different<br>
+          series types may process certain types of data points – for example categorical series may<br>
+          contain categorical data points. Data points may be added directly to series or a data<br>
+          binding mechanism may be used to create the appropriate data points from the raw data.</p>
+
+<p>RadChartView works with three area types - Cartesian, Polar and Pie</p>
+
+<p><strong>2.1. CartesianArea</strong></p>
+
+<p>As the name hints, this concrete chart uses the Cartesian coordinate system to plot the data points<br>
+          in its chart series. The X and Y axes define how each point’s coordinates in the plot area are calculated.</p>
+
+<p><strong>2.1.1.  Axes</strong></p>
+
+<p>Available are the following axes:</p>
+
+<p><strong>2.1.1.1. Categorical</strong> - Arranges the plotted data points in categories where<br>
+          the key of each category is the point’s value (if available) for that axis or its index within the points<br>
+          collection. The point’s coordinate, specified by this axis is discrete and is calculated depending on the<br>
+          size of the category slot where the point resides.</p>
+
+<p><strong>2.1.1.2. Date-time Categorical</strong> - Special categorical axis that expects each data point<br>
+          to provide a System.DateTime structure as its value for this axis. The points are grouped by a user-defined<br>
+          date-time component (Year, Month, Day, etc.) and then the groups are sorted chronologically.</p>
+
+<p><strong>2.1.1.3. Linear</strong> - Calculates the coordinate of each data point, depending on the actual<br>
+          numerical value this point provides for the axis. Exposes Minimum and Maximum properties to allow for explicit<br>
+          definition of the range of values visible on this axis. If these properties are not specified, the axis will<br>
+          automatically calculate the range, depending on the minimum and maximum data point values.</p>
+
+<p><strong>2.1.1.4. Logarithmic</strong> - Special linear axis that will transform each data point value<br>
+          using the logarithm function. Allows numerical data with huge delta between the minimum and the maximum to be<br>
+          visualized in a readable way.</p>
+
+<p><strong>2.1.1.5. Date-time Continuous</strong> - Special axis that expects each data point to provide<br>
+          a System.DateTime structure as its value for this axis. May be thought of as a timeline where the coordinate<br>
+          of each data point is calculated depending on the position of its associated DateTime on the timeline.<br>
+          The base unit (or the timeline step) of the axis is calculated depending on the smallest difference between any two dates.</p>
+
+<p><strong>2.1.1.6. Polar Axis</strong> - Special axis which is a fixed line in a system of polar coordinates<br>
+          from which the polar angle, θ, is measured anticlockwise. You may read more about it in Polar Axis topic. </p>
+
+<p><strong>2.1.1.7. Radial Axis</strong> - Special axis used by the PolarArea Radar Series.</p>
+
+<ul>
+<li>
+<strong>Categorical</strong> - positions catgories/labels around the circumference of the circle.</li>
+</ul>
+
+<p><strong>2.1.2.  Series</strong> - The currently implemented chart series are categorical – they accept CategoricalDataPoint<br>
+          and expect a categorical axis to be specified in order to be properly visualized. Following is a list with all the available series:</p>
+
+<p><strong>2.1.2.1. Area</strong> - Data points and the corresponding coordinate axis enclose an area that may be optionally stroked and/or filled.</p>
+
+<ul>
+<li>
+<strong>Stack100</strong> - It shows the combined contribution of values as percentages where
+          the combined total for each category is 100 percent. It's good to use it when the relationship between values in a category is more
+          significant than the amounts.</li>
+</ul>
+
+<p><strong>2.1.2.2. SplineArea</strong> - An area, which points are connected with smooth rather than straight segments.</p>
+
+<ul>
+<li>
+<strong>Stack100</strong> - It shows the combined contribution of values as percentages where
+          the combined total for each category is 100 percent. It's good to use it when the relationship between values in a category is more
+          significant than the amounts.</li>
+</ul>
+
+<p><strong>2.1.2.3. Bar</strong> - Data points are represented by a box where the height (width) of the box is<br>
+          the distance between the point’s numerical value and the categorical axis that plots the point. Bars may be either “horizontal”<br>
+          or “vertical” depending on whether the categorical axis is specified as an “X-axis” or as a “Y-axis”.</p>
+
+<ul>
+<li>
+<strong>Stack100</strong> - It shows the combined contribution of values as percentages where
+          the combined total for each category is 100 percent. It's good to use it when the relationship between values in a category is more
+          significant than the amounts.</li>
+</ul>
+
+<p><strong>2.1.2.4. Line</strong> - Data points are connected with straight line segments.</p>
+
+<ul>
+<li>
+<strong>Stack100</strong> - It shows the combined contribution of values as percentages where
+          the combined total for each category is 100 percent. It's good to use it when the relationship between values in a category is more
+          significant than the amounts.</li>
+</ul>
+
+<p><strong>2.1.2.5. Spline</strong> - Data points are connected with smooth rather than straight line segments.</p>
+
+<p><strong>2.1.2.6. Scatter Point</strong> - Data points are simply plotted in the chart plot area with nothing connecting them.<br>
+          Each scatter data point has X and Y values which make the position of the data point in the data source and its location on the plot<br>
+          area unrelated. For example the third data point in the data source may appear before the first data point when plotted. There are<br>
+          also scatter line and scatter area series which behave in the exact same way with the only (visual)difference that the points define<br>
+          a line and area respectively.</p>
+
+<p><strong>2.1.2.7. Combined series</strong> - Each of the above series of same type may be combined in either stacks or clusters.<br>
+          Combinations are formed when more than one data point from different series falls within a same category. The “Cluster” combine mode<br>
+          will position such points next to each other while the “Stack” one will arrange such points in a stack-like structure. When stacks are formed,<br>
+          the numerical axis (if present) will consider each stack as a single entity and its sum will be the actual value used rather than each point’s one.<br>
+          For more information - refer to Chart Series. </p>
+
+<p><strong>2.1.3. Chart Grid</strong> - The chart may be optionally decorated with grid-like visuals which support horizontal and<br>
+          vertical lines, associated with axis ticks and horizontal and vertical stripes – the area between two adjacent ticks. Such visuals are<br>
+          available for both Cartesian and Polar coordinates via Cartesian Grid and Polar Grid respectively.</p>
+
+<p><strong>2.1.3.1  Cartesian Grid</strong> - You may refer to <strong>Create Chart With Static Data</strong><br>
+          for more information on how to toggle GridLines and Stripes inside Cartesian Grid.</p>
+
+<p><strong>2.1.3.2  Polar Grid</strong> - You may refer to <strong>Radar Series</strong> for more information<br>
+          on how to toggle GridLines and Stripes inside Polar Grid.</p>
+
+<p><strong>2.2. Pie area</strong> - This concrete chart control visualizes its data points using radial coordinate system. Each point is<br>
+          represented as an arc segment where the arc’s length is actually the percentage this point’s value is from the total sum.</p>
+
+<p><strong>2.3. Polar area</strong> - RadPolarChart inherits from RadChart and has a PolarAxis and a RadialAxis. It accepts only PolarSeries<br>
+          objects and plots data points in the polar coordinate system.</p>
+
+<p><strong>2.4. Controllers</strong> - Both chart types (pie and cartesian) have a controllers collection that accepts ChartViewController objects.<br>
+          Each object represents a special interaction behavior such as <strong>Scroll and Zoom</strong> or <strong>TrackBall</strong>.</p>
+        </article>
+    </div>	
+</div>
+
+<footer>	
+    <p><a onclick="javascript:SubmitFeedback('documentation@telerik.com','Telerik UI for WinForms','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback'); return false;" href="javascript:;" id="send-feedback">Send Feedback</a> Copyright &copy; 2002-<span id="toYear"></span> Telerik. All rights reserved.</p>
+</footer>
+
+    </body>
+</html>
+

@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=9">
-        <title>RadRichTextEditorRuler</title>
+        <title>Spread Processing</title>
 		
         <link href="/devtools/winforms/favicon.ico?Version=2014" rel="shortcut icon" />
 		
-        <meta name="description" content="RadRichTextEditorRuler">
+        <meta name="description" content="Spread Processing">
         <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="/devtools/winforms/assets/styles-0b5a71aa940403cb3ac60d7e91e25e1d.css">
         <link rel="stylesheet" href="/devtools/winforms/assets/theme-52ac78f88dc084a004a9f7d63a3c4245.css">
@@ -98,7 +98,7 @@
 				},
 				select: preventParentSelection,
 				template: navigationTemplate("/devtools/winforms/"),
-				dataBound: expandNavigation("richtexteditor-/richtexteditor-richtexteditorruler.html")
+				dataBound: expandNavigation("spread-processing/spreadprocessing-overview.html")
 			});
         </script>
 		<div id="page-api" class="k-treeview">
@@ -112,68 +112,21 @@
 			</ul>
 		</div>			
     </div>
-	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/richtexteditor-/richtexteditor-richtexteditorruler.md">Edit this page</a>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master/spread-processing/spreadprocessing-overview.md">Edit this page</a>
     <div id="page-article">       
         <article>
-            <h1 id="radrichtexteditorruler"><a href="#radrichtexteditorruler">RadRichTextEditorRuler</a></h1>
+            <h1 id="spread-processing"><a href="#spread-processing">Spread Processing</a></h1>
 
-<p><strong>RadRichTextEditorRuler</strong> is a control providing ruler functionality to <br>
-        <a href="/devtools/winforms/richtexteditor-/RichTextEditor">RadRichTextEditor</a>. <br>
-        The rulers allow you to change the paragraph, page margins or align the paragraphs in the document.<img src="images/richtexteditor-richtexteditorruler001.png" alt="richtexteditor-richtexteditorruler 001"></p>
+<p><strong>RadSpreadProcessing</strong> is a document processing library that enables your applications to easily import and export files to and from the most common spreadsheet file formats.<br>
+        <img src="images/spreadprocessing-overview001.png" alt="spreadprocessing-overview 001"></p>
 
-<blockquote>
-<p>Rulers only apply to the <a href="/devtools/winforms/richtexteditor-/document-elements/richtexteditor-raddocument">Paged</a> document layout mode of the <br>
-        <strong>RadRichtextEditor.</strong></p>
-</blockquote>
+<p>Some of the features which you can use are:</p>
 
-<h2 id="using-the-radrichtexteditorruler-at-design-time"><a href="#using-the-radrichtexteditorruler-at-design-time">Using the RadRichTextEditorRuler at design time</a></h2>
-
-<p>Since <strong>RadRichTextEditorRuler</strong> is a separate control it is available in the toolbox. Here is how to put it in <br>
-        action:</p>
-
-<ol>
-<li><p>Drag and drop <strong>RadRichTextEditorRuler</strong> on the form.</p></li>
-<li><p>Drag and drop <strong>RadRichTextEditor</strong> inside the <strong>RadRichTextEditorRuler.</strong>.</p></li>
-<li><p>Set the <strong>AssociatedRichTextBox</strong> property in the properties window.<img src="images/richtexteditor-richtexteditorruler002.png" alt="richtexteditor-richtexteditorruler 002"></p></li>
-<li><p>Set the LayoutMode of the <strong>RadRichTextEditor</strong> to <br>
-        <a href="/devtools/winforms/richtexteditor-/document-elements/richtexteditor-raddocument">Paged</a>.</p></li>
-</ol>
-
-<h2 id="using-the-radrichtexteditorruler-programmatically"><a href="#using-the-radrichtexteditorruler-programmatically">Using the RadRichTextEditorRuler programmatically.</a></h2>
-
-<p>You can add the control in code as well. The following snippet demonstrates how to add<br>
-        <strong>RadRichTextEditorRuler</strong> and <strong>RadRichTextEditor</strong> to a form:</p>
-
-<h4>__[C#] __</h4>
-
-<pre><code>        void RadRichTextEditorRuler_Load(object sender, EventArgs e)
-        {
-            RadRichTextEditor radRichTextEditor1 = new RadRichTextEditor();
-            radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged;
-
-            RadRichTextEditorRuler documentRuler1 = new Telerik.WinControls.UI.RadRichTextEditorRuler();
-            documentRuler1.AssociatedRichTextBox = radRichTextEditor1;
-            documentRuler1.Dock = System.Windows.Forms.DockStyle.Fill;
-            documentRuler1.Controls.Add(radRichTextEditor1);
-            this.Controls.Add(documentRuler1);
-        }
-</code></pre>
-
-<h4>__[VB.NET] __</h4>
-
-<pre><code>    Private Sub RadRichTextEditorRuler_Load(ByVal sender As Object, ByVal e As EventArgs)
-        Dim radRichTextEditor1 As New RadRichTextEditor()
-        radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged
-
-        Dim documentRuler1 As RadRichTextEditorRuler = New Telerik.WinControls.UI.RadRichTextEditorRuler()
-        documentRuler1.AssociatedRichTextBox = radRichTextEditor1
-        documentRuler1.Dock = System.Windows.Forms.DockStyle.Fill
-        documentRuler1.Controls.Add(radRichTextEditor1)
-        Me.Controls.Add(documentRuler1)
-    End Sub
-#End Region
-End Class
-</code></pre>
+<ul>
+<li><p>Import/export to different spreadsheet formats.</p></li>
+<li><p>More than 100 built-in formulas.</p></li>
+<li><p>Powerful and easy-to-use API.</p></li>
+</ul>
         </article>
     </div>	
 </div>
