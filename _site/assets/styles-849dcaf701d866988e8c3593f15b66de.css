@@ -55,10 +55,10 @@ a img {
 #logo-bar a,
 #logo-bar-sl a {
 	display: inline-block;
-	background: url('../images/telerik_logo_wpf.png') 0 center no-repeat;
+	background: url('../images/telerik_logo_winforms.png') 0 center no-repeat;
 	height: 33px;
 	color: #fff;
-	width: 236px;
+	width: 238px;
 }
 
 #logo-bar span {
