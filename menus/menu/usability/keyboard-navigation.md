@@ -26,7 +26,7 @@ You can assign mnemonics to menu items. For example, you can use the __N__key to
 
 #### __[C#]__
 
-{{region mnemonics}}
+{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=mnemonics}}
 	            radMenuItem1.Text = "&New";
 	{{endregion}}
 
@@ -34,7 +34,7 @@ You can assign mnemonics to menu items. For example, you can use the __N__key to
 
 #### __[VB.NET]__
 
-{{region mnemonics}}
+{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=mnemonics}}
 	        radMenuItem1.Text = "&New"
 	{{endregion}}
 

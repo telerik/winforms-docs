@@ -46,7 +46,7 @@ Use one of many overloads to build a new Appointment instance. The example below
 
 #### __[C#] Adding a new appointment__
 
-{{region creatingAppointment}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=creatingAppointment}}
 	            Appointment appointment = new Appointment(DateTime.Now, TimeSpan.FromMinutes(30), "Summary", "Description");
 	            appointment.StatusId = 2;
 	            appointment.BackgroundId = 6;
@@ -57,7 +57,7 @@ Use one of many overloads to build a new Appointment instance. The example below
 
 #### __[VB.NET] Adding a new appointment__
 
-{{region creatingAppointment}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=creatingAppointment}}
 	        Dim appointment As New Appointment(Date.Now, TimeSpan.FromMinutes(30), "Summary", "Description")
 	        appointment.StatusId = 2
 	        appointment.BackgroundId = 6
@@ -106,7 +106,7 @@ Use one of many overloads to build a new Appointment instance. The example below
 
 #### __[C#] Using the AppointmentStatusInfo class__
 
-{{region addStatus}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=addStatus}}
 	            this.radScheduler1.Statuses.Add(new AppointmentStatusInfo(5, "test", Color.Purple, Color.Purple, AppointmentStatusFillType.Solid));
 	{{endregion}}
 
@@ -114,7 +114,7 @@ Use one of many overloads to build a new Appointment instance. The example below
 
 #### __[VB.NET] Using the AppointmentStatusInfo class__
 
-{{region addStatus}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=addStatus}}
 	        Me.RadScheduler1.Statuses.Add(New AppointmentStatusInfo(5, "test", Color.Purple, Color.Purple, AppointmentStatusFillType.Solid))
 	        '#End Region
 	
@@ -166,7 +166,7 @@ Use one of many overloads to build a new Appointment instance. The example below
 
 #### __[C#] Using the AppointmentBackgroundInfo class__
 
-{{region addBackground}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=addBackground}}
 	            this.radScheduler1.Backgrounds.Add(new AppointmentBackgroundInfo(12, "test", Color.Purple));
 	{{endregion}}
 
@@ -174,7 +174,7 @@ Use one of many overloads to build a new Appointment instance. The example below
 
 #### __[VB.NET] Using the AppointmentBackgroundInfo class__
 
-{{region addBackground}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=addBackground}}
 	        Me.RadScheduler1.Backgrounds.Add(New AppointmentBackgroundInfo(12, "test", Color.Purple))
 	        '#End Region
 	
@@ -207,7 +207,7 @@ Use one of many overloads to build a new Appointment instance. The example below
 
 #### __[C#] Using the AppointmentTitleFormat property__
 
-{{region appointmentFormat}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=appointmentFormat}}
 	            this.radScheduler1.AppointmentTitleFormat = "{0} to {1}, {2} ({3})";
 	{{endregion}}
 
@@ -215,7 +215,7 @@ Use one of many overloads to build a new Appointment instance. The example below
 
 #### __[VB.NET] Using the AppointmentTitleFormat property__
 
-{{region appointmentFormat}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=appointmentFormat}}
 	        Me.RadScheduler1.AppointmentTitleFormat = "{0} to {1}, {2} ({3})"
 	        '#End Region
 	
@@ -254,7 +254,7 @@ Here is a list with the different elements and their content:
 
 #### __[C#] Using the ToolTipText property__
 
-{{region toolTipText}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=toolTipText}}
 	            appointment.ToolTipText = "Some text";
 	{{endregion}}
 
@@ -262,7 +262,7 @@ Here is a list with the different elements and their content:
 
 #### __[VB.NET] Using the ToolTipText property__
 
-{{region toolTipText}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=toolTipText}}
 	        appointment.ToolTipText = "Some text"
 	        '#End Region
 	    End Sub

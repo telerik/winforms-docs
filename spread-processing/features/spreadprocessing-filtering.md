@@ -126,7 +126,7 @@ __Example 1__ shows how to create a __ValuesCollectionFilter__.
 
 #### __[C#] Example 1: Create ValuesCollectionFilter__
 
-{{region radspreadprocessing-features-filtering_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.cs region=radspreadprocessing-features-filtering_0}}
 	            IEnumerable<string> stringItems = new List<string>() { "test", "1%", "1.0" };
 	            IEnumerable<DateGroupItem> dateItems = new List<DateGroupItem>()
 	            {
@@ -141,7 +141,7 @@ __Example 1__ shows how to create a __ValuesCollectionFilter__.
 
 #### __[VB] Example 1: Create ValuesCollectionFilter__
 
-{{region radspreadprocessing-features-filtering_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_0}}
 	        Dim stringItems As IEnumerable(Of String) = New List(Of String)() From {"test", "1%", "1.0"}
 	        Dim dateItems As IEnumerable(Of DateGroupItem) = New List(Of DateGroupItem)() From { New DateGroupItem(2013), New DateGroupItem(2014, 3)}
 	        Dim filter As New ValuesCollectionFilter(0, stringItems, dateItems, True)
@@ -268,7 +268,7 @@ __Example 2__ shows how to create a custom filter.
 
 #### __[C#] Example 2: Create CustomFilter__
 
-{{region radspreadprocessing-features-filtering_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.cs region=radspreadprocessing-features-filtering_1}}
 	            CustomFilterCriteria critera1 = new CustomFilterCriteria(ComparisonOperator.EqualsTo, "Test string");
 	            CustomFilterCriteria critera2 = new CustomFilterCriteria(ComparisonOperator.GreaterThan, "-5");
 	            CustomFilter filter = new CustomFilter(0, critera1, LogicalOperator.Or, critera2);
@@ -278,7 +278,7 @@ __Example 2__ shows how to create a custom filter.
 
 #### __[VB] Example 2: Create CustomFilter__
 
-{{region radspreadprocessing-features-filtering_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_1}}
 	        Dim critera1 As New CustomFilterCriteria(ComparisonOperator.EqualsTo, "Test string")
 	        Dim critera2 As New CustomFilterCriteria(ComparisonOperator.GreaterThan, "-5")
 	        Dim filter As New CustomFilter(0, critera1, LogicalOperator.[Or], critera2)
@@ -379,7 +379,7 @@ __Example 3__ shows how to create a top filter.
 
 #### __[C#] Example 3: Create TopFilter__
 
-{{region radspreadprocessing-features-filtering_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.cs region=radspreadprocessing-features-filtering_2}}
 	            TopFilter filter = new TopFilter(0, TopFilterType.BottomPercent, 30);
 	{{endregion}}
 
@@ -387,7 +387,7 @@ __Example 3__ shows how to create a top filter.
 
 #### __[VB] Example 3: Create TopFilter__
 
-{{region radspreadprocessing-features-filtering_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_2}}
 	        Dim filter As New TopFilter(0, TopFilterType.BottomPercent, 30)
 	        '#End Region
 	    End Sub
@@ -467,7 +467,7 @@ __Example 4__ demonstrates how to create a dynamic filter.
 
 #### __[C#] Example 4: Create DynamicFilter__
 
-{{region radspreadprocessing-features-filtering_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.cs region=radspreadprocessing-features-filtering_3}}
 	            DynamicFilter filter = new DynamicFilter(0, DynamicFilterType.LastWeek);
 	{{endregion}}
 
@@ -475,7 +475,7 @@ __Example 4__ demonstrates how to create a dynamic filter.
 
 #### __[VB] Example 4: Create DynamicFilter__
 
-{{region radspreadprocessing-features-filtering_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_3}}
 	        Dim filter As New DynamicFilter(0, DynamicFilterType.LastWeek)
 	        '#End Region
 	    End Sub
@@ -547,7 +547,7 @@ __Example 5__ demonstrates how to create a fore color filter.
 
 #### __[C#] Example 5: Create ForeColorFilter__
 
-{{region radspreadprocessing-features-filtering_4}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.cs region=radspreadprocessing-features-filtering_4}}
 	            ThemableColor color = new ThemableColor(Colors.Red);
 	            ForeColorFilter filter = new ForeColorFilter(0, color);
 	{{endregion}}
@@ -556,7 +556,7 @@ __Example 5__ demonstrates how to create a fore color filter.
 
 #### __[VB] Example 5: Create ForeColorFilter__
 
-{{region radspreadprocessing-features-filtering_4}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_4}}
 	        Dim color As New ThemableColor(Colors.Red)
 	        Dim filter As New ForeColorFilter(0, color)
 	        '#End Region
@@ -622,7 +622,7 @@ __Example 6__ shows hot to create a fill color filter.
 
 #### __[C#] Example 6: Create FillColorFilter__
 
-{{region radspreadprocessing-features-filtering_5}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.cs region=radspreadprocessing-features-filtering_5}}
 	            IFill fill = new PatternFill(PatternType.Solid, Colors.Red, Colors.Red);
 	            FillColorFilter filter = new FillColorFilter(0, fill);
 	{{endregion}}
@@ -631,7 +631,7 @@ __Example 6__ shows hot to create a fill color filter.
 
 #### __[VB] Example 6: Create FillColorFilter__
 
-{{region radspreadprocessing-features-filtering_5}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_5}}
 	        Dim fill As IFill = New PatternFill(PatternType.Solid, Colors.Red, Colors.Red)
 	        Dim filter As New FillColorFilter(0, fill)
 	        '#End Region
@@ -684,7 +684,7 @@ In order to set a filter on a range, you need to follow the steps below:
 
 #### __[C#] Example 7: Set FilterRange__
 
-{{region radspreadprocessing-features-filtering_6}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.cs region=radspreadprocessing-features-filtering_6}}
 	            Worksheet worksheet = workbook.ActiveWorksheet;
 	
 	            CellRange filterRange = new CellRange(0, 1, 5, 2);
@@ -695,7 +695,7 @@ In order to set a filter on a range, you need to follow the steps below:
 
 #### __[VB] Example 7: Set FilterRange__
 
-{{region radspreadprocessing-features-filtering_6}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_6}}
 	        Dim worksheet As Worksheet = workbook.ActiveWorksheet
 	
 	        Dim filterRange As New CellRange(0, 1, 5, 2)
@@ -733,7 +733,7 @@ In order to set a filter on a range, you need to follow the steps below:
 
 #### __[C#] Example 8: Create DynamicFilter__
 
-{{region radspreadprocessing-features-filtering_7}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.cs region=radspreadprocessing-features-filtering_7}}
 	            DynamicFilter filter = new DynamicFilter(1, DynamicFilterType.AboveAverage);
 	{{endregion}}
 
@@ -741,7 +741,7 @@ In order to set a filter on a range, you need to follow the steps below:
 
 #### __[VB] Example 8: Create DynamicFilter__
 
-{{region radspreadprocessing-features-filtering_7}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_7}}
 	        Dim filter As New DynamicFilter(1, DynamicFilterType.AboveAverage)
 	        '#End Region
 	
@@ -773,7 +773,7 @@ The relative index specified in the constructor is 1, which means that the filte
 
 #### __[C#] Example 9: Set Filter__
 
-{{region radspreadprocessing-features-filtering_8}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.cs region=radspreadprocessing-features-filtering_8}}
 	            worksheet.Filter.SetFilter(filter);
 	{{endregion}}
 
@@ -781,7 +781,7 @@ The relative index specified in the constructor is 1, which means that the filte
 
 #### __[VB] Example 9: Set Filter__
 
-{{region radspreadprocessing-features-filtering_8}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_8}}
 	        worksheet.Filter.SetFilter(filter)
 	        '#End Region
 	
@@ -808,7 +808,7 @@ Alternatively, you can set the filter through the cell selection like in __Examp
 
 #### __[C#] Example 10: Set Filter through Selection__
 
-{{region radspreadprocessing-features-filtering_9}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.cs region=radspreadprocessing-features-filtering_9}}
 	            worksheet.Cells[filterRange].Filter(filter);
 	{{endregion}}
 
@@ -816,7 +816,7 @@ Alternatively, you can set the filter through the cell selection like in __Examp
 
 #### __[VB] Example 10: Set Filter through Selection__
 
-{{region radspreadprocessing-features-filtering_9}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_9}}
 	        worksheet.Cells(filterRange).Filter(filter)
 	        '#End Region
 	
@@ -847,7 +847,7 @@ When a filter is set it is automatically applied. The application of a filter ha
 
 #### __[C#] Example 11: Set FilterRange__
 
-{{region radspreadprocessing-features-filtering_10}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.cs region=radspreadprocessing-features-filtering_10}}
 	            worksheet.Filter.ReapplyFilter(1);
 	{{endregion}}
 
@@ -855,7 +855,7 @@ When a filter is set it is automatically applied. The application of a filter ha
 
 #### __[VB] Example 11: Set FilterRange__
 
-{{region radspreadprocessing-features-filtering_10}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_10}}
 	        worksheet.Filter.ReapplyFilter(1)
 	        '#End Region
 	    End Sub
@@ -891,7 +891,7 @@ As is the case with the __ReapplyFilter()__ method, you can remove a filter by i
 
 #### __[C#] Example 12: Remove Filter__
 
-{{region radspreadprocessing-features-filtering_11}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.cs region=radspreadprocessing-features-filtering_11}}
 	            bool success = worksheet.Filter.RemoveFilter(1);
 	{{endregion}}
 
@@ -899,7 +899,7 @@ As is the case with the __ReapplyFilter()__ method, you can remove a filter by i
 
 #### __[VB] Example 12: Remove Filter__
 
-{{region radspreadprocessing-features-filtering_11}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_11}}
 	        Dim success As Boolean = worksheet.Filter.RemoveFilter(1)
 	        '#End Region
 	    End Sub

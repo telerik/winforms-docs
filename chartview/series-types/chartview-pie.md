@@ -5,7 +5,7 @@ description: Pie
 slug: chartview-series-types-pie
 tags: pie
 published: True
-position: 8
+position: 9
 ---
 
 # Pie
@@ -23,7 +23,7 @@ Unlike all other series, __PieSeries__ do not require axes. They visualize each 
 
 #### __[C#] __
 
-{{region pie}}
+{{source=..\SamplesCS\ChartView\Series\PieSeriesForm.cs region=pie}}
 	            this.radChartView1.AreaType = ChartAreaType.Pie;
 	            PieSeries series = new PieSeries();
 	            series.DataPoints.Add(new PieDataPoint(50, "Germany"));
@@ -38,7 +38,7 @@ Unlike all other series, __PieSeries__ do not require axes. They visualize each 
 
 #### __[VB.NET] __
 
-{{region pie}}
+{{source=..\SamplesVB\ChartView\Series\PieSeriesForm.vb region=pie}}
 	        Me.RadChartView1.AreaType = ChartAreaType.Pie
 	        Dim series As New PieSeries()
 	        series.DataPoints.Add(New PieDataPoint(50, "Germany"))
@@ -62,7 +62,7 @@ __PieSeries__ can be customized using the following properties:
 
 #### __[C#] __
 
-{{region angleRange}}
+{{source=..\SamplesCS\ChartView\Series\PieSeriesForm.cs region=angleRange}}
 	            AngleRange range = new AngleRange(270, 300);
 	            series.Range = range;
 	{{endregion}}
@@ -71,7 +71,7 @@ __PieSeries__ can be customized using the following properties:
 
 #### __[VB.NET] __
 
-{{region angleRange}}
+{{source=..\SamplesVB\ChartView\Series\PieSeriesForm.vb region=angleRange}}
 	        Dim range As New AngleRange(270, 300)
 	        series.Range = range
 	{{endregion}}
@@ -96,7 +96,7 @@ __PieSeries__ can be customized using the following properties:
 
 #### __[C#] __
 
-{{region offset}}
+{{source=..\SamplesCS\ChartView\Series\PieSeriesForm.cs region=offset}}
 	            PieDataPoint point = series.DataPoints[3] as PieDataPoint;
 	            if (point != null)
 	            {
@@ -108,7 +108,7 @@ __PieSeries__ can be customized using the following properties:
 
 #### __[VB.NET] __
 
-{{region offset}}
+{{source=..\SamplesVB\ChartView\Series\PieSeriesForm.vb region=offset}}
 	        Dim point As PieDataPoint = TryCast(series.DataPoints(3), PieDataPoint)
 	        If point IsNot Nothing Then
 	            point.OffsetFromCenter = 0.1

@@ -137,7 +137,7 @@ The following example will show you how to make a simple image gallery with thre
 
 #### __[C#] Creating a simple control with LightVisualElements__
 
-{{region MyLightVisualElement}}
+{{source=..\SamplesCS\TPF\Primitives\LightVisualElement1\MyLightVisualElement.cs region=MyLightVisualElement}}
 	    public class MyLightVisualElement : RadElement
 	    {
 	        private DockLayoutPanel mainPanel;
@@ -211,7 +211,7 @@ The following example will show you how to make a simple image gallery with thre
 
 #### __[VB.NET] Creating a simple control with LightVisualElements__
 
-{{region MyLightVisualElement}}
+{{source=..\SamplesVB\TPF\Primitives\LightVisualElement1\MyLightVisualElement.vb region=MyLightVisualElement}}
 	Public Class MyLightVisualElement
 	    Inherits RadElement
 	    Private mainPanel As DockLayoutPanel

@@ -23,7 +23,7 @@ RadItem allows you to add shortcuts which will generate a Click event for that i
 
 #### __[C#]__
 
-{{region customProvider}}
+{{source=..\SamplesCS\Shortcuts\MyShortcutProvider.cs region=customProvider}}
 	    public class MyShortcutProvider : IShortcutProvider
 	    {
 	        private RadShortcutCollection shortcuts;
@@ -89,7 +89,7 @@ RadItem allows you to add shortcuts which will generate a Click event for that i
 
 #### __[VB.NET]__
 
-{{region customProvider}}
+{{source=..\SamplesVB\Shortcuts\MyShortcutProvider.vb region=customProvider}}
 	Public Class MyShortcutProvider
 	    Implements IShortcutProvider
 	    Private shortcuts_Renamed As RadShortcutCollection
@@ -145,7 +145,7 @@ RadItem allows you to add shortcuts which will generate a Click event for that i
 
 #### __[C#]__
 
-{{region globalShortcut}}
+{{source=..\SamplesCS\Shortcuts\Form2.cs region=globalShortcut}}
 	        MyShortcutProvider provider;
 	
 	        public Form2()
@@ -161,7 +161,7 @@ RadItem allows you to add shortcuts which will generate a Click event for that i
 
 #### __[VB.NET]__
 
-{{region globalShortcut}}
+{{source=..\SamplesVB\Shortcuts\Form2.vb region=globalShortcut}}
 	    Private provider As MyShortcutProvider
 	
 	    Public Sub New()

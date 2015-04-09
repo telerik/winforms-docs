@@ -20,7 +20,7 @@ __RadScheduler__ allows you to save and load the reminders set for appointments.
 
 #### __[C#]__
 
-{{region SaveReminders}}
+{{source=..\SamplesCS\Scheduler\Reminders\SaveLoadReminders.cs region=SaveReminders}}
 	            this.radScheduler1.SaveReminders(filePath);
 	{{endregion}}
 
@@ -28,7 +28,7 @@ __RadScheduler__ allows you to save and load the reminders set for appointments.
 
 #### __[VB.NET]__
 
-{{region SaveReminders}}
+{{source=..\SamplesVB\Scheduler\Reminders\SaveLoadReminders.vb region=SaveReminders}}
 	        Me.radScheduler1.SaveReminders(filePath)
 	{{endregion}}
 
@@ -38,7 +38,7 @@ You can load saved reminders into RadScheduler is by calling the LoadReminders m
 
 #### __[C#]__
 
-{{region LoadReminders}}
+{{source=..\SamplesCS\Scheduler\Reminders\SaveLoadReminders.cs region=LoadReminders}}
 	            this.radScheduler1.LoadReminders(filePath);
 	{{endregion}}
 
@@ -46,7 +46,7 @@ You can load saved reminders into RadScheduler is by calling the LoadReminders m
 
 #### __[VB.NET]__
 
-{{region LoadReminders}}
+{{source=..\SamplesVB\Scheduler\Reminders\SaveLoadReminders.vb region=LoadReminders}}
 	        Me.radScheduler1.LoadReminders(filePath)
 	{{endregion}}
 
@@ -58,7 +58,7 @@ __SchedulerSaveLoadRemindersBehavior__ is the class that handles the saving and 
 
 #### __[C#]__
 
-{{region CustomSaveLoadRemindersBehavior}}
+{{source=..\SamplesCS\Scheduler\Reminders\SaveLoadReminders.cs region=CustomSaveLoadRemindersBehavior}}
 	    public class CustomSaveLoadRemindersBehavior : SchedulerSaveLoadRemindersBehavior
 	    {
 	        public CustomSaveLoadRemindersBehavior(RadScheduler scheduler)
@@ -81,7 +81,7 @@ __SchedulerSaveLoadRemindersBehavior__ is the class that handles the saving and 
 
 #### __[C#]__
 
-{{region SetRemindersBehavior}}
+{{source=..\SamplesCS\Scheduler\Reminders\SaveLoadReminders.cs region=SetRemindersBehavior}}
 	            this.radScheduler1.SaveLoadRemindersBehavior = new CustomSaveLoadRemindersBehavior(this.radScheduler1);
 	{{endregion}}
 
@@ -89,7 +89,7 @@ __SchedulerSaveLoadRemindersBehavior__ is the class that handles the saving and 
 
 #### __[VB.NET]__
 
-{{region CustomSaveLoadRemindersBehavior}}
+{{source=..\SamplesVB\Scheduler\Reminders\SaveLoadReminders.vb region=CustomSaveLoadRemindersBehavior}}
 	Public Class CustomSaveLoadRemindersBehavior
 	    Inherits SchedulerSaveLoadRemindersBehavior
 	
@@ -112,7 +112,7 @@ __SchedulerSaveLoadRemindersBehavior__ is the class that handles the saving and 
 
 #### __[VB.NET]__
 
-{{region SetRemindersBehavior}}
+{{source=..\SamplesVB\Scheduler\Reminders\SaveLoadReminders.vb region=SetRemindersBehavior}}
 	        Me.radScheduler1.SaveLoadRemindersBehavior = New CustomSaveLoadRemindersBehavior(Me.radScheduler1)
 	{{endregion}}
 

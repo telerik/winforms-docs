@@ -30,7 +30,7 @@ __Example 1__ shows how to import a txt file using a FileStream. The sample inst
 
 #### __[C#] Example 1: Import TXT File__
 
-{{region radspreadprocessing-formats-and-conversion-txt-txtformatprovider_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingUsingTxtFormatProvider.cs region=radspreadprocessing-formats-and-conversion-txt-txtformatprovider_0}}
 	            Workbook workbook;
 	            IWorkbookFormatProvider formatProvider = new TxtFormatProvider();
 	
@@ -44,7 +44,7 @@ __Example 1__ shows how to import a txt file using a FileStream. The sample inst
 
 #### __[VB NET] Example 1: Import TXT File__
 
-{{region radspreadsheet-model-import-export-txtformatprovider-wpf_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingUsingTxtFormatProvider.vb region=radspreadsheet-model-import-export-txtformatprovider-wpf_0}}
 	        Dim fileName As String = "SampleFile.txt"
 	        If Not File.Exists(fileName) Then
 	            Throw New FileNotFoundException([String].Format("File {0} was not found!", fileName))
@@ -84,7 +84,7 @@ __Example 2__ demonstrates how to export an existing Workbook to a TXT file. The
 
 #### __[C#] Example 1: Export TXT File__
 
-{{region radspreadprocessing-formats-and-conversion-txt-txtformatprovider_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingUsingTxtFormatProvider.cs region=radspreadprocessing-formats-and-conversion-txt-txtformatprovider_1}}
 	            Workbook workbook = new Workbook();
 	            workbook.Worksheets.Add();
 	
@@ -101,7 +101,7 @@ __Example 2__ demonstrates how to export an existing Workbook to a TXT file. The
 
 #### __[VB NET] Example 1: Export TXT File__
 
-{{region radspreadsheet-model-import-export-txtformatprovider-wpf_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingUsingTxtFormatProvider.vb region=radspreadsheet-model-import-export-txtformatprovider-wpf_1}}
 	        Dim workbook As New Workbook()
 	        workbook.Worksheets.Add()
 	

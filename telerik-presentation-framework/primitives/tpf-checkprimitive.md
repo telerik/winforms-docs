@@ -20,7 +20,7 @@ The __CheckPrimitive__ is painted as three sets of angled lines and is colored u
 
 #### __[C#] Creating a CheckPrimitive__
 
-{{region myCheckPrimitiveElement}}
+{{source=..\SamplesCS\TPF\Primitives\CheckPrimitive1\MyCheckPrimitiveElement.cs region=myCheckPrimitiveElement}}
 	    public class MyCheckPrimitiveElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -49,7 +49,7 @@ The __CheckPrimitive__ is painted as three sets of angled lines and is colored u
 
 #### __[VB.NET] Creating a CheckPrimitive__
 
-{{region myCheckPrimitiveElement}}
+{{source=..\SamplesVB\TPF\Primitives\CheckPrimitive1\MyCheckPrimitiveElement.vb region=myCheckPrimitiveElement}}
 	Public Class MyCheckPrimitiveElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

@@ -20,7 +20,7 @@ Here is a sample demonstrating how you can implement a *Save Layout* button even
 
 #### __[C#] Save layout__
 
-{{region saveLayout}}
+{{source=..\SamplesCS\GridView\SaveLoadLayout\SaveLoadLayoutOverview.cs region=saveLayout}}
 	        private void SaveButton_Click(object sender, EventArgs e)
 	        {
 	            string s = "default.xml";
@@ -39,7 +39,7 @@ Here is a sample demonstrating how you can implement a *Save Layout* button even
 
 #### __[VB.NET] Save layout__
 
-{{region saveLayout}}
+{{source=..\SamplesVB\GridView\SaveLoadLayout\SaveLoadLayoutOverview.vb region=saveLayout}}
 	    Private Sub SaveButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
 	        Dim s As String = "default.xml"
 	        Dim dialog As New SaveFileDialog()
@@ -58,7 +58,7 @@ The code snippets below demonstrates how you can implement a *Load Layout* butto
 
 #### __[C#] Load layout__
 
-{{region loadLayout}}
+{{source=..\SamplesCS\GridView\SaveLoadLayout\SaveLoadLayoutOverview.cs region=loadLayout}}
 	        private void LoadButton_Click(object sender, EventArgs e)
 	        {
 	            string s = "default.xml";
@@ -77,7 +77,7 @@ The code snippets below demonstrates how you can implement a *Load Layout* butto
 
 #### __[VB.NET] Load layout__
 
-{{region loadLayout}}
+{{source=..\SamplesVB\GridView\SaveLoadLayout\SaveLoadLayoutOverview.vb region=loadLayout}}
 	    Private Sub LoadButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton2.Click
 	        Dim s As String = "default.xml"
 	        Dim dialog As New OpenFileDialog()

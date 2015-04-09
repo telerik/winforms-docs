@@ -49,7 +49,7 @@ RadGridView has two public methods available for printing - __Print()__ and
 
 #### __[C#]__
 
-{{region print}}
+{{source=..\SamplesCS\GridView\Printing support\PrintingSupport.cs region=print}}
 	            this.radGridView1.Print();
 	
 	            this.radGridView1.Print(true);
@@ -59,7 +59,7 @@ RadGridView has two public methods available for printing - __Print()__ and
 
 #### __[VB.NET]__
 
-{{region print}}
+{{source=..\SamplesVB\GridView\Printing support\PrintingSupport.vb region=print}}
 	        Me.RadGridView1.Print()
 	
 	        Me.RadGridView1.Print(True)
@@ -74,7 +74,7 @@ The other available method is __PrintPreview())__, which opens
 
 #### __[C#]__
 
-{{region PrintPreview}}
+{{source=..\SamplesCS\GridView\Printing support\PrintingSupport.cs region=PrintPreview}}
 	            this.radGridView1.PrintPreview();
 	{{endregion}}
 
@@ -82,7 +82,7 @@ The other available method is __PrintPreview())__, which opens
 
 #### __[VB.NET]__
 
-{{region PrintPreview}}
+{{source=..\SamplesVB\GridView\Printing support\PrintingSupport.vb region=PrintPreview}}
 	        Me.RadGridView1.PrintPreview()
 	{{endregion}}
 

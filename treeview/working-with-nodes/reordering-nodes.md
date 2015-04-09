@@ -25,7 +25,7 @@ Use the __Insert()__and __Add()__methods of the RadTreeView Nodes collection to 
 
 #### __[C#]__
 
-{{region reordering}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=reordering}}
 	            // Create two parent nodes
 	            RadTreeNode parentNode1 = new RadTreeNode("First Parent");
 	            RadTreeNode parentNode2 = new RadTreeNode("Second Parent");
@@ -45,7 +45,7 @@ Use the __Insert()__and __Add()__methods of the RadTreeView Nodes collection to 
 
 #### __[VB.NET]__
 
-{{region reordering}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=reordering}}
 	        ' Create two parent nodes
 	        Dim parentNode1 As New RadTreeNode("First Parent")
 	        Dim parentNode2 As New RadTreeNode("Second Parent")
@@ -112,7 +112,7 @@ In the sample code below, two parent nodes are created, a single node is added t
 
 #### __[C#]__
 
-{{region insertingNodes}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=insertingNodes}}
 	            // Create two parent nodes
 	            RadTreeNode parentNode1 = new RadTreeNode("First Parent");
 	            RadTreeNode parentNode2 = new RadTreeNode("Second Parent");
@@ -140,7 +140,7 @@ In the sample code below, two parent nodes are created, a single node is added t
 
 #### __[VB.NET]__
 
-{{region insertingNodes}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=insertingNodes}}
 	        ' Create two parent nodes
 	        Dim parentNode1 As New RadTreeNode("First Parent")
 	        Dim parentNode2 As New RadTreeNode("Second Parent")

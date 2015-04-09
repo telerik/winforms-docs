@@ -16,7 +16,7 @@ You can iterate through grid rows using the __Rows__ collection of __GridViewRow
 
 #### __[C#] Iterating RadGridView rows__
 
-{{region iteratingRows}}
+{{source=..\SamplesCS\GridView\Rows\IteratingRows.cs region=iteratingRows}}
 	            GridViewRowInfo lastRow1 = radGridView1.Rows[radGridView1.Rows.Count - 1];
 	            lastRow1.IsSelected = true;
 	
@@ -33,7 +33,7 @@ You can iterate through grid rows using the __Rows__ collection of __GridViewRow
 
 #### __[VB.NET] Iterating RadGridView rows__
 
-{{region iteratingRows}}
+{{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=iteratingRows}}
 	        Dim lastRow As GridViewRowInfo = RadGridView1.Rows(RadGridView1.Rows.Count - 1)
 	        lastRow.IsSelected = True
 	        For Each rowInfo As GridViewRowInfo In RadGridView1.Rows
@@ -56,7 +56,7 @@ You could search for specific value in __RadGridView__by iterating through the r
 
 #### __[C#] Fill RadGridView with hierarchical data__
 
-{{region findAGridRowByCellValue}}
+{{source=..\SamplesCS\GridView\Rows\IteratingRows.cs region=findAGridRowByCellValue}}
 	            string searchedStr = "Picture 2";
 	            for (int r = 0; r < radGridView1.RowCount; r++)
 	            {
@@ -72,7 +72,7 @@ You could search for specific value in __RadGridView__by iterating through the r
 
 #### __[VB.NET] Fill RadGridView with hierarchical data__
 
-{{region findAGridRowByCellValue}}
+{{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=findAGridRowByCellValue}}
 	        Dim searchedStr As String = "Picture 2"
 	        For row As Integer = 0 To RadGridView1.RowCount - 1
 	            If RadGridView1.Rows(row).Cells("Picture Name").Value.ToString().ToUpper().Equals(searchedStr.ToUpper()) Then
@@ -92,7 +92,7 @@ When you have a hierarchical grid with many templates you can use a recursive me
 
 #### __[C#]__
 
-{{region hierarchy}}
+{{source=..\SamplesCS\GridView\Rows\IteratingRows.cs region=hierarchy}}
 	        public void IterateAllRows(IEnumerable<GridViewRowInfo> rowsCollection)
 	        {
 	            foreach (GridViewDataRowInfo row in rowsCollection)
@@ -112,7 +112,7 @@ When you have a hierarchical grid with many templates you can use a recursive me
 
 #### __[VB.NET]__
 
-{{region hierarchy}}
+{{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=hierarchy}}
 	    Public Sub IterateAllRows(rowsCollection As IEnumerable(Of GridViewRowInfo))
 	        For Each row As GridViewDataRowInfo In rowsCollection
 	            Debug.WriteLine(row.Cells(0).Value)

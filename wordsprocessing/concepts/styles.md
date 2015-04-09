@@ -115,7 +115,7 @@ A style should be added to __RadFlowDocument__'s style repository in order to be
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-styles_0}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingStyles.cs region=radwordsprocessing-concepts-styles_0}}
 	            Style tableStyle = new Style("TableStyle", StyleType.Table);
 	            tableStyle.Name = "Table Style";
 	            tableStyle.TableProperties.Borders.LocalValue = new TableBorders(new Border(1, Telerik.Windows.Documents.Flow.Model.Styles.BorderStyle.Single, new ThemableColor(Colors.Blue)));
@@ -128,7 +128,7 @@ A style should be added to __RadFlowDocument__'s style repository in order to be
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-styles_0}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyles.vb region=radwordsprocessing-concepts-styles_0}}
 	            Dim tableStyle As New Style("TableStyle", StyleType.Table)
 	            tableStyle.Name = "Table Style"
 	            tableStyle.TableProperties.Borders.LocalValue = New TableBorders(New Border(1, Telerik.Windows.Documents.Flow.Model.Styles.BorderStyle.[Single], New ThemableColor(Colors.Blue)))
@@ -182,7 +182,7 @@ Built-in styles are commonly used styles which are predefined for convenience. T
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-styles_1}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingStyles.cs region=radwordsprocessing-concepts-styles_1}}
 	            string heading1StyleId = BuiltInStyleNames.GetHeadingStyleIdByIndex(1);
 	            Style heading1Style = document.StyleRepository.AddBuiltInStyle(heading1StyleId);
 	{{endregion}}
@@ -191,7 +191,7 @@ Built-in styles are commonly used styles which are predefined for convenience. T
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-styles_1}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyles.vb region=radwordsprocessing-concepts-styles_1}}
 	            Dim heading1StyleId As String = BuiltInStyleNames.GetHeadingStyleIdByIndex(1)
 	            Dim heading1Style As Style = document.StyleRepository.AddBuiltInStyle(heading1StyleId)
 	            '#End Region

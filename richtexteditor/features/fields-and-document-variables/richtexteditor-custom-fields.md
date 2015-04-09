@@ -38,7 +38,7 @@ This topic will list the steps for creating such a custom field.
 
 #### __[C#] __
 
-{{region define}}
+{{source=..\SamplesCS\RichTextEditor\Features\CustomFields.cs region=define}}
 	
 	    public class CustomField : CodeBasedField
 	    
@@ -48,7 +48,7 @@ This topic will list the steps for creating such a custom field.
 
 #### __[VB.NET] __
 
-{{region define}}
+{{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=define}}
 	
 	Public Class CustomField
 	Inherits CodeBasedField
@@ -167,7 +167,7 @@ This topic will list the steps for creating such a custom field.
 
 #### __[C#] __
 
-{{region TypeName}}
+{{source=..\SamplesCS\RichTextEditor\Features\CustomFields.cs region=TypeName}}
 	        
 	        private static readonly string FieldType = "CUSTOMFIELD";
 	            
@@ -185,7 +185,7 @@ This topic will list the steps for creating such a custom field.
 
 #### __[VB.NET] __
 
-{{region TypeName}}
+{{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=TypeName}}
 	
 	    Private Shared ReadOnly FieldType As String = "CUSTOMFIELD"
 	
@@ -301,7 +301,7 @@ The field type is shown when the field is in code mode, just after the opening c
 
 #### __[C#] __
 
-{{region ctor}}
+{{source=..\SamplesCS\RichTextEditor\Features\CustomFields.cs region=ctor}}
 	            
 	        static CustomField()
 	        {
@@ -314,7 +314,7 @@ The field type is shown when the field is in code mode, just after the opening c
 
 #### __[VB.NET] __
 
-{{region ctor}}
+{{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=ctor}}
 	
 	    Shared Sub New()
 	        CodeBasedFieldFactory.RegisterFieldType(CustomField.FieldType, Function() New CustomField())
@@ -416,7 +416,7 @@ The function passed as a second parameter essentially tells the document how it 
 
 #### __[C#] __
 
-{{region create}}
+{{source=..\SamplesCS\RichTextEditor\Features\CustomFields.cs region=create}}
 	            
 	        public override Field CreateInstance()
 	        {
@@ -429,7 +429,7 @@ The function passed as a second parameter essentially tells the document how it 
 
 #### __[VB.NET] __
 
-{{region create}}
+{{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=create}}
 	
 	    Public Overrides Function CreateInstance() As Field
 	        Return New CustomField()
@@ -531,7 +531,7 @@ If you would like to add some properties to this field, similar to the PropertyP
 
 #### __[C#] __
 
-{{region field}}
+{{source=..\SamplesCS\RichTextEditor\Features\CustomFields.cs region=field}}
 	        
 	        private readonly FieldProperty myProperty;
 	        
@@ -541,7 +541,7 @@ If you would like to add some properties to this field, similar to the PropertyP
 
 #### __[VB.NET] __
 
-{{region field}}
+{{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=field}}
 	
 	
 	    Private ReadOnly _myProperty As FieldProperty
@@ -628,7 +628,7 @@ If you would like to add some properties to this field, similar to the PropertyP
 
 #### __[C#] __
 
-{{region property}}
+{{source=..\SamplesCS\RichTextEditor\Features\CustomFields.cs region=property}}
 	        
 	        [XamlSerializable]
 	        public string MyProperty
@@ -655,7 +655,7 @@ If you would like to add some properties to this field, similar to the PropertyP
 
 #### __[VB.NET] __
 
-{{region property}}
+{{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=property}}
 	
 	    <XamlSerializable>
 	    Public Property MyProperty() As String
@@ -735,7 +735,7 @@ The XamlSerializable attribute ensures that this property will be exported and i
 
 #### __[C#] __
 
-{{region static}}
+{{source=..\SamplesCS\RichTextEditor\Features\CustomFields.cs region=static}}
 	        
 	        public static readonly FieldPropertyDefinition MyPropertyProperty = new FieldPropertyDefinition("MyProperty");
 	        
@@ -745,7 +745,7 @@ The XamlSerializable attribute ensures that this property will be exported and i
 
 #### __[VB.NET] __
 
-{{region static}}
+{{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=static}}
 	
 	    Public Shared ReadOnly MyPropertyProperty As New FieldPropertyDefinition("MyProperty")
 	
@@ -803,7 +803,7 @@ The XamlSerializable attribute ensures that this property will be exported and i
 
 #### __[C#] __
 
-{{region ctor2}}
+{{source=..\SamplesCS\RichTextEditor\Features\CustomFields.cs region=ctor2}}
 	            
 	        public CustomField()
 	        {
@@ -816,7 +816,7 @@ The XamlSerializable attribute ensures that this property will be exported and i
 
 #### __[VB.NET] __
 
-{{region ctor2}}
+{{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=ctor2}}
 	
 	    Public Sub New()
 	        Me._myProperty = New FieldProperty(Me, CustomField.MyPropertyProperty)
@@ -868,7 +868,7 @@ The XamlSerializable attribute ensures that this property will be exported and i
 
 #### __[C#] __
 
-{{region codeExpression}}
+{{source=..\SamplesCS\RichTextEditor\Features\CustomFields.cs region=codeExpression}}
 	            
 	        protected override void CopyPropertiesFromCodeExpression(FieldCodeExpression fieldCodeExpression)
 	        {
@@ -882,7 +882,7 @@ The XamlSerializable attribute ensures that this property will be exported and i
 
 #### __[VB.NET] __
 
-{{region codeExpression}}
+{{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=codeExpression}}
 	
 	    Protected Overrides Sub CopyPropertiesFromCodeExpression(ByVal fieldCodeExpression As FieldCodeExpression)
 	        MyBase.CopyPropertiesFromCodeExpression(fieldCodeExpression)
@@ -927,7 +927,7 @@ This method is used when a field is created from field fragment.  This happens w
 
 #### __[C#] __
 
-{{region build}}
+{{source=..\SamplesCS\RichTextEditor\Features\CustomFields.cs region=build}}
 	            
 	        protected override void BuildCodeOverride()
 	        {
@@ -941,7 +941,7 @@ This method is used when a field is created from field fragment.  This happens w
 
 #### __[VB.NET] __
 
-{{region build}}
+{{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=build}}
 	
 	    Protected Overrides Sub BuildCodeOverride()
 	        MyBase.BuildCodeOverride()
@@ -976,7 +976,7 @@ This method is invoked when the CodeFragment of the field is requested. In it, t
 
 #### __[C#] __
 
-{{region copy}}
+{{source=..\SamplesCS\RichTextEditor\Features\CustomFields.cs region=copy}}
 	            
 	        public override void CopyPropertiesFrom(Field fromField)
 	        {
@@ -991,7 +991,7 @@ This method is invoked when the CodeFragment of the field is requested. In it, t
 
 #### __[VB.NET] __
 
-{{region copy}}
+{{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=copy}}
 	
 	    Public Overrides Sub CopyPropertiesFrom(ByVal fromField As Field)
 	        MyBase.CopyPropertiesFrom(fromField)
@@ -1019,7 +1019,7 @@ As field ranges are copyable, this method must be overridden in order to ensure 
 
 #### __[C#] __
 
-{{region fragment}}
+{{source=..\SamplesCS\RichTextEditor\Features\CustomFields.cs region=fragment}}
 	            
 	        protected override DocumentFragment GetResultFragment()
 	        {
@@ -1032,7 +1032,7 @@ As field ranges are copyable, this method must be overridden in order to ensure 
 
 #### __[VB.NET] __
 
-{{region fragment}}
+{{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=fragment}}
 	
 	    Protected Overrides Function GetResultFragment() As DocumentFragment
 	        Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))

@@ -21,7 +21,7 @@ RadTrackBar introduces TickFormatting and LableFormatting events in order to fac
 
 #### __[C#]__
 
-{{region calendarExample}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarCustomization.cs region=calendarExample}}
 	        public TrackBarCustomization()
 	        {
 	            InitializeComponent();
@@ -85,7 +85,7 @@ RadTrackBar introduces TickFormatting and LableFormatting events in order to fac
 
 #### __[VB.NET]__
 
-{{region calendarExample}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarCustomization.vb region=calendarExample}}
 	    Public Sub New()
 	        InitializeComponent()
 	

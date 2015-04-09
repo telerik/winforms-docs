@@ -145,7 +145,7 @@ Image</td></tr></table>
 
 #### __[HTML] Bold, italic, underline__
 
-{{region boldItalic}}
+{{source=..\SamplesCS\TPF\HTMLFormatting.xml region=boldItalic}}
 	  <html>
 	    <b>some <i> text </i></b><u> some text </u>
 	  </html>
@@ -157,7 +157,7 @@ Image</td></tr></table>
 
 #### __[HTML] Paragraphs__
 
-{{region paragraphs}}
+{{source=..\SamplesCS\TPF\HTMLFormatting.xml region=paragraphs}}
 	  <html>
 	    <p>First paragraph</p>
 	    <p>Second paragraph</p>
@@ -171,7 +171,7 @@ Image</td></tr></table>
 
 #### __[HTML] Font color__
 
-{{region fontColor}}
+{{source=..\SamplesCS\TPF\HTMLFormatting.xml region=fontColor}}
 	  <html>
 	    <span style="color:red">font color (color name) </span>
 	    <span style="color:#0000FF">font color (hex color) </span>
@@ -188,7 +188,7 @@ Image</td></tr></table>
 
 #### __[HTML] Font size__
 
-{{region fontSize}}
+{{source=..\SamplesCS\TPF\HTMLFormatting.xml region=fontSize}}
 	  <html>
 	    <span style="font-size:large">font size(absolute) </span>
 	    <span style="font-size:12">font size in pt(s) (absolute) </span>
@@ -202,7 +202,7 @@ Image</td></tr></table>
 
 #### __[HTML] Highlighted text__
 
-{{region highText}}
+{{source=..\SamplesCS\TPF\HTMLFormatting.xml region=highText}}
 	<html><span style="background-color:red">Highlighted Text</span></html>
 	{{endregion}}
 
@@ -212,7 +212,7 @@ Image</td></tr></table>
 
 #### __[HTML] Font family__
 
-{{region fontFamily}}
+{{source=..\SamplesCS\TPF\HTMLFormatting.xml region=fontFamily}}
 	<html><span style="font-family:georgia">Font Family</span></html>
 	{{endregion}}
 
@@ -222,7 +222,7 @@ Image</td></tr></table>
 
 #### __[HTML] Striked text__
 
-{{region strikedText}}
+{{source=..\SamplesCS\TPF\HTMLFormatting.xml region=strikedText}}
 	<html><strike> Some text </strike></html>
 	{{endregion}}
 
@@ -232,7 +232,7 @@ Image</td></tr></table>
 
 #### __[HTML] Links__
 
-{{region links}}
+{{source=..\SamplesCS\TPF\HTMLFormatting.xml region=links}}
 	<html><a href="<externalLink><linkText>www.telerik.com</linkText><linkUri>http://www.telerik.com</linkUri></externalLink>"> Telerik Corporation</a></html>
 	{{endregion}}
 
@@ -242,7 +242,7 @@ Image</td></tr></table>
 
 #### __[HTML] Images (path)__
 
-{{region imagepath}}
+{{source=..\SamplesCS\TPF\HTMLFormatting.xml region=imagepath}}
 	<html><img src="ImagePath"></html>
 	{{endregion}}
 
@@ -251,7 +251,7 @@ The image path can be a resource or file on the disk.To specify a resource, you 
 
 #### __[HTML] Images (resource)__
 
-{{region imageresource}}
+{{source=..\SamplesCS\TPF\HTMLFormatting.xml region=imageresource}}
 	<img src="res:Telerik.Examples.WinControls.SomeImage.jpg">
 	{{endregion}}
 
@@ -278,7 +278,7 @@ The following code snippet will produce the result shown in the screen-shot belo
 
 #### __[C#]__
 
-{{region labelFormatting}}
+{{source=..\SamplesCS\TPF\HTMLFormatting.cs region=labelFormatting}}
 	            
 	            this.radLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text";
 	
@@ -288,7 +288,7 @@ The following code snippet will produce the result shown in the screen-shot belo
 
 #### __[VB.NET]__
 
-{{region labelFormatting}}
+{{source=..\SamplesVB\TPF\HTMLFormatting.vb region=labelFormatting}}
 	        Me.RadLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text"
 	{{endregion}}
 
@@ -300,7 +300,7 @@ By using the HTML-like text formatting functionality, the __RadLabel__ can displ
 
 #### __[C#]__
 
-{{region Hyperlinks}}
+{{source=..\SamplesCS\TPF\HTMLFormatting.cs region=Hyperlinks}}
 	                                  
 	            this.radLabel1.Text = "<html><size=12><a href=www.telerik.com>Telerik</a>" + Environment.NewLine +
 	                                  "<a href=www.telerik.com/help/winforms>Documentation</a> " + Environment.NewLine +
@@ -312,7 +312,7 @@ By using the HTML-like text formatting functionality, the __RadLabel__ can displ
 
 #### __[VB.NET]__
 
-{{region Hyperlinks}}
+{{source=..\SamplesVB\TPF\HTMLFormatting.vb region=Hyperlinks}}
 	        Me.RadLabel1.Text = "<html><size=12><a href=www.telerik.com>Telerik</a>" & Environment.NewLine & _
 	        "<a href=www.telerik.com/help/winforms>Documentation</a> " & Environment.NewLine & _
 	        "<a href=www.telerik.com/forums/winforms>Forum</a> "
@@ -363,7 +363,7 @@ It is possible to detect which link among several ones is clicked within the __R
 
 #### __[C#]__
 
-{{region MouseDown}}
+{{source=..\SamplesCS\TPF\HTMLFormatting.cs region=MouseDown}}
 	        
 	        private void RadLabel1_MouseDown(object sender, MouseEventArgs e)
 	        {
@@ -404,7 +404,7 @@ It is possible to detect which link among several ones is clicked within the __R
 
 #### __[VB.NET]__
 
-{{region MouseDown}}
+{{source=..\SamplesVB\TPF\HTMLFormatting.vb region=MouseDown}}
 	
 	    Private Sub RadLabel1_MouseDown(sender As Object, e As MouseEventArgs)
 	        Dim text As TextPrimitiveHtmlImpl = TryCast(Me.RadLabel1.LabelElement.LabelText.Impl, TextPrimitiveHtmlImpl)

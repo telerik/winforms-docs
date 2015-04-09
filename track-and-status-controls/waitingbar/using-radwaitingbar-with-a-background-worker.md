@@ -41,7 +41,7 @@ When the form is loaded the BackgroundWorker instance should be initialized. Add
 
 #### __[C#]__
 
-{{region initialization}}
+{{source=..\SamplesCS\TrackAndStatus\WaitingBar\BGWorkerForm.cs region=initialization}}
 	        private void Form1_Load(object sender, EventArgs e)
 	        {
 	            myBackgroundWorker = new BackgroundWorker();
@@ -56,7 +56,7 @@ When the form is loaded the BackgroundWorker instance should be initialized. Add
 
 #### __[VB.NET]__
 
-{{region initialization}}
+{{source=..\SamplesVB\TrackAndStatus\WaitingBar\BGWorkerForm.vb region=initialization}}
 	    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 	        myBackgroundWorker = New BackgroundWorker()
 	        myBackgroundWorker.WorkerReportsProgress = True
@@ -98,7 +98,7 @@ When the user clicks the Start RadButton, you should run the BackgroundWorker th
 
 #### __[C#]__
 
-{{region startingWorker}}
+{{source=..\SamplesCS\TrackAndStatus\WaitingBar\BGWorkerForm.cs region=startingWorker}}
 	        private void radButton1_Click(object sender, EventArgs e)
 	        {
 	            if (!myBackgroundWorker.IsBusy)
@@ -117,7 +117,7 @@ When the user clicks the Start RadButton, you should run the BackgroundWorker th
 
 #### __[VB.NET]__
 
-{{region startingWorker}}
+{{source=..\SamplesVB\TrackAndStatus\WaitingBar\BGWorkerForm.vb region=startingWorker}}
 	    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        If Not myBackgroundWorker.IsBusy Then
 	            myBackgroundWorker.RunWorkerAsync(radSpinEditor1.Value)
@@ -142,7 +142,7 @@ In the DoWork event handler you should execute the time-consuming operation, i.e
 
 #### __[C#]__
 
-{{region working}}
+{{source=..\SamplesCS\TrackAndStatus\WaitingBar\BGWorkerForm.cs region=working}}
 	        void myBackgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
 	        {
 	            BackgroundWorker worker = sender as BackgroundWorker;
@@ -172,7 +172,7 @@ In the DoWork event handler you should execute the time-consuming operation, i.e
 
 #### __[VB.NET]__
 
-{{region working}}
+{{source=..\SamplesVB\TrackAndStatus\WaitingBar\BGWorkerForm.vb region=working}}
 	    Private Sub myBackgroundWorker1_DoWork(ByVal sender As Object, ByVal e As DoWorkEventArgs)
 	        Dim worker As BackgroundWorker = TryCast(sender, BackgroundWorker)
 	        Dim n As Integer = Convert.ToInt32(e.Argument)
@@ -205,7 +205,7 @@ When the long-running operation has completed, you should stop the RadWaitingBar
 
 #### __[C#]__
 
-{{region workCompleted}}
+{{source=..\SamplesCS\TrackAndStatus\WaitingBar\BGWorkerForm.cs region=workCompleted}}
 	        void myBackgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
 	        {
 	            this.radWaitingBar1.StopWaiting();
@@ -237,7 +237,7 @@ When the long-running operation has completed, you should stop the RadWaitingBar
 
 #### __[VB.NET]__
 
-{{region workCompleted}}
+{{source=..\SamplesVB\TrackAndStatus\WaitingBar\BGWorkerForm.vb region=workCompleted}}
 	    Private Sub myBackgroundWorker1_RunWorkerCompleted(ByVal sender As Object, ByVal e As RunWorkerCompletedEventArgs)
 	        Me.radWaitingBar1.StopWaiting()
 	        Me.radWaitingBar1.ResetWaiting()

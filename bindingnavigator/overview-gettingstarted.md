@@ -80,7 +80,7 @@ Adding a __RadBindingNavigator__ control to a form and binding it to a data sour
 
 #### __[C#] __
 
-{{region radBindingNavigator1}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadBindingNavigatorForm.cs region=radBindingNavigator1}}
 	            this.bindingSource1.DataSource = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8 };
 	            this.radBindingNavigator1.BindingSource = this.bindingSource1;
 	{{endregion}}
@@ -89,7 +89,7 @@ Adding a __RadBindingNavigator__ control to a form and binding it to a data sour
 
 #### __[VB.NET] __
 
-{{region radBindingNavigator1}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadBindingNavigatorForm.vb region=radBindingNavigator1}}
 	            Me.bindingSource1.DataSource = New List(Of Integer)() From { _
 	             1, _
 	             2, _

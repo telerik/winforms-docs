@@ -34,7 +34,7 @@ The following example, demonstrates how to access the __RadMenuItems__ of the
 
 #### __[C#] Customize overflow button drop down menu__
 
-{{region HideMenuItems}}
+{{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=HideMenuItems}}
 	            //Change the font of the AddRemoveButtonMenuItem
 	            radCommandBarStripElement1.OverflowButton.AddRemoveButtonsMenuItem.Font = new System.Drawing.Font("Arial", 12f);
 	
@@ -56,7 +56,7 @@ The following example, demonstrates how to access the __RadMenuItems__ of the
 
 #### __[VB.NET] Customize overflow button drop down menu__
 
-{{region HideMenuItems}}
+{{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=HideMenuItems}}
 	        'Change the font of the AddRemoveButtonMenuItem
 	        CommandBarStripElement1.OverflowButton.AddRemoveButtonsMenuItem.Font = New System.Drawing.Font("Arial", 12.0F)
 	
@@ -94,7 +94,7 @@ Alternatively, if you need to hide the whole __Overflow__ button, simply set
 
 #### __[C#] Hide the overflow button__
 
-{{region HideTheOverFlowButton}}
+{{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=HideTheOverFlowButton}}
 	            radCommandBarStripElement1.OverflowButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
 	{{endregion}}
 
@@ -102,7 +102,7 @@ Alternatively, if you need to hide the whole __Overflow__ button, simply set
 
 #### __[VB.NET] Hide the overflow button__
 
-{{region HideTheOverFlowButton}}
+{{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=HideTheOverFlowButton}}
 	        CommandBarStripElement1.OverflowButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
 	{{endregion}}
 

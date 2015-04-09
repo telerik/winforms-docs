@@ -52,7 +52,7 @@ __Example 1__ sets the Value of cell A1 to "Total":
 
 #### __[C#] Example 1: Set string value__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_16}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_16}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -63,7 +63,7 @@ __Example 1__ sets the Value of cell A1 to "Total":
 
 #### __[VB.NET] Example 1: Set string value__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_16}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_16}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -118,6 +118,24 @@ __Example 1__ sets the Value of cell A1 to "Total":
 	        worksheet.Cells(cellIndex).SetValue(cellValue)
 	        '#End Region
 	    End Sub
+	    Public Sub example2()
+	        '#Region "example12"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
+	        '#End Region
+	    End Sub
 	End Class
 
 
@@ -130,7 +148,7 @@ __Example 2__ creates a NumberCellValue with value 3.14 and assigns it to cell A
 
 #### __[C#] Example 2: Create NumberCellValue__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_5}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_5}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -142,7 +160,7 @@ __Example 2__ creates a NumberCellValue with value 3.14 and assigns it to cell A
 
 #### __[VB.NET] Example 2: Create NumberCellValue__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_5}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_5}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -285,6 +303,24 @@ __Example 2__ creates a NumberCellValue with value 3.14 and assigns it to cell A
 	        worksheet.Cells(cellIndex).SetValue(cellValue)
 	        '#End Region
 	    End Sub
+	    Public Sub example2()
+	        '#Region "example12"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
+	        '#End Region
+	    End Sub
 	End Class
 
 
@@ -297,7 +333,7 @@ __Example 3__ retrieves the value created in Example 2.
 
 #### __[C#] Example 3: Retrieve cell value__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_17}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_17}}
 	            RangePropertyValue<ICellValue> rangeValue = worksheet.Cells[0, 0].GetValue();
 	            ICellValue value = rangeValue.Value;
 	{{endregion}}
@@ -306,7 +342,7 @@ __Example 3__ retrieves the value created in Example 2.
 
 #### __[VB.NET] Example 3: Retrieve cell value__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_17}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_17}}
 	        Dim rangeValue As RangePropertyValue(Of ICellValue) = worksheet.Cells(0, 0).GetValue()
 	        Dim value As ICellValue = rangeValue.Value
 	        '#End Region
@@ -352,6 +388,24 @@ __Example 3__ retrieves the value created in Example 2.
 	        Dim newFormatValue As CellValueFormat
 	        CellValueFactory.Create("=1 + 2", worksheet, cellIndex, New CellValueFormat("@"), cellValue, newFormatValue)
 	        worksheet.Cells(cellIndex).SetValue(cellValue)
+	        '#End Region
+	    End Sub
+	    Public Sub example2()
+	        '#Region "example12"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
 	        '#End Region
 	    End Sub
 	End Class
@@ -381,7 +435,7 @@ __Example 4__ clears the value of cell A1:
 
 #### __[C#] Example 4: Clear value__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_1}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            worksheet.Cells[0, 0].ClearValue();
@@ -391,7 +445,7 @@ __Example 4__ clears the value of cell A1:
 
 #### __[VB.NET] Example 4: Clear value__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_1}}
 	        Dim rangeValue As RangePropertyValue(Of ICellValue) = worksheet.Cells(0, 0).GetValue()
 	        Dim value As ICellValue = rangeValue.Value
 	        '#End Region
@@ -439,6 +493,24 @@ __Example 4__ clears the value of cell A1:
 	        worksheet.Cells(cellIndex).SetValue(cellValue)
 	        '#End Region
 	    End Sub
+	    Public Sub example2()
+	        '#Region "example12"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
+	        '#End Region
+	    End Sub
 	End Class
 
 
@@ -453,7 +525,7 @@ __Example 5__ sets the values of cells A1 and B1 to true and false BooleanCellVa
 
 #### __[C#] Example 5: Set boolean value__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_2}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            worksheet.Cells[0, 0].SetValue(true);
@@ -464,7 +536,7 @@ __Example 5__ sets the values of cells A1 and B1 to true and false BooleanCellVa
 
 #### __[VB.NET] Example 5: Set boolean value__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_2}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        worksheet.Cells(0, 0).SetValue(True)
@@ -635,6 +707,24 @@ __Example 5__ sets the values of cells A1 and B1 to true and false BooleanCellVa
 	        worksheet.Cells(cellIndex).SetValue(cellValue)
 	        '#End Region
 	    End Sub
+	    Public Sub example2()
+	        '#Region "example12"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
+	        '#End Region
+	    End Sub
 	End Class
 
 
@@ -647,7 +737,7 @@ __Example 6__ illustrates how to create a BooleanCellValue using the CellValueFa
 
 #### __[C#] Example 6: Create a BooleanCellValue using CellValueFactory__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_3}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            ICellValue booleanCellValueTrue = CellValueFactory.Create(true);
@@ -660,7 +750,7 @@ __Example 6__ illustrates how to create a BooleanCellValue using the CellValueFa
 
 #### __[VB.NET] Example 6: Create a BooleanCellValue using CellValueFactory__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_3}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        Dim booleanCellValueTrue As ICellValue = CellValueFactory.Create(True)
@@ -822,6 +912,24 @@ __Example 6__ illustrates how to create a BooleanCellValue using the CellValueFa
 	        worksheet.Cells(cellIndex).SetValue(cellValue)
 	        '#End Region
 	    End Sub
+	    Public Sub example2()
+	        '#Region "example12"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
+	        '#End Region
+	    End Sub
 	End Class
 
 
@@ -847,7 +955,7 @@ __Example 7__ shows how to set the value of cell A1 to 1.23.
 
 #### __[C#] Example 7: Set number cell value__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_4}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_4}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            worksheet.Cells[0, 0].SetValue("1.23");
@@ -857,7 +965,7 @@ __Example 7__ shows how to set the value of cell A1 to 1.23.
 
 #### __[VB.NET] Example 7: Set number cell value__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_4}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_4}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        worksheet.Cells(0, 0).SetValue("1.23")
@@ -1008,6 +1116,24 @@ __Example 7__ shows how to set the value of cell A1 to 1.23.
 	        worksheet.Cells(cellIndex).SetValue(cellValue)
 	        '#End Region
 	    End Sub
+	    Public Sub example2()
+	        '#Region "example12"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
+	        '#End Region
+	    End Sub
 	End Class
 
 
@@ -1020,7 +1146,7 @@ __Example 8__ sets the value of cell A1 to 6 October 1987 (in culture "en-US"). 
 
 #### __[C#] Example 8: Set date as number cell value__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_8}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_8}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            worksheet.Cells[0, 0].SetValue("10/06/1987");
@@ -1030,7 +1156,7 @@ __Example 8__ sets the value of cell A1 to 6 October 1987 (in culture "en-US"). 
 
 #### __[VB.NET] Example 8: Set date as number cell value__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_8}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_8}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        worksheet.Cells(0, 0).SetValue("10/06/1987")
@@ -1147,6 +1273,24 @@ __Example 8__ sets the value of cell A1 to 6 October 1987 (in culture "en-US"). 
 	        worksheet.Cells(cellIndex).SetValue(cellValue)
 	        '#End Region
 	    End Sub
+	    Public Sub example2()
+	        '#Region "example12"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
+	        '#End Region
+	    End Sub
 	End Class
 
 
@@ -1178,7 +1322,7 @@ __Example 9__ shows how you can create a formula that refers to another cell.
 
 #### __[C#] Example 9: Create formula referring to another cell__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_13}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_13}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            worksheet.Cells[0, 0].SetValue("=A2");
@@ -1188,7 +1332,7 @@ __Example 9__ shows how you can create a formula that refers to another cell.
 
 #### __[VB.NET] Example 9: Create formula referring to another cell__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_13}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_13}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        worksheet.Cells(0, 0).SetValue("=A2")
@@ -1265,6 +1409,24 @@ __Example 9__ shows how you can create a formula that refers to another cell.
 	        worksheet.Cells(cellIndex).SetValue(cellValue)
 	        '#End Region
 	    End Sub
+	    Public Sub example2()
+	        '#Region "example12"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
+	        '#End Region
+	    End Sub
 	End Class
 
 
@@ -1282,7 +1444,7 @@ __Example 10__ illustrates the use of the SUM built-in function.
 
 #### __[C#] Example 10: Use built-in function__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_14}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_14}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            worksheet.Cells[0, 0].SetValue("=SUM(A2, 3)");
@@ -1292,7 +1454,7 @@ __Example 10__ illustrates the use of the SUM built-in function.
 
 #### __[VB.NET] Example 10: Use built-in function__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_14}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_14}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        worksheet.Cells(0, 0).SetValue("=SUM(A2, 3)")
@@ -1361,6 +1523,24 @@ __Example 10__ illustrates the use of the SUM built-in function.
 	        worksheet.Cells(cellIndex).SetValue(cellValue)
 	        '#End Region
 	    End Sub
+	    Public Sub example2()
+	        '#Region "example12"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
+	        '#End Region
+	    End Sub
 	End Class
 
 
@@ -1373,7 +1553,7 @@ __Example 11__ creates a FormulaCellValue using the CellValueFactory class.
 
 #### __[C#] Example 11: Create FormulaCellValue__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_18}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_18}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            CellIndex cellIndex = new CellIndex(0, 0);
@@ -1388,7 +1568,7 @@ __Example 11__ creates a FormulaCellValue using the CellValueFactory class.
 
 #### __[VB.NET] Example 11: Create FormulaCellValue__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_18}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_18}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        Dim cellIndex As New CellIndex(0, 0)
@@ -1429,6 +1609,63 @@ __Example 11__ creates a FormulaCellValue using the CellValueFactory class.
 	        worksheet.Cells(cellIndex).SetValue(cellValue)
 	        '#End Region
 	    End Sub
+	    Public Sub example2()
+	        '#Region "example12"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
+	        '#End Region
+	    End Sub
+	End Class
+
+
+
+Using the __SetValue()__ method executes internal checks for the current cell value type using the current format and other conditions.
+          If you are sure that the passed value is a formula, you can use the __SetValueAsFormula(string text)__ method directly which will improve the performance.
+        
+
+#### __[C#] Example 12 shows how you can use the method__
+
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=example12}}
+	            Workbook workbook = new Workbook();	
+	            Worksheet worksheet = workbook.Worksheets.Add();
+		        CellIndex cellIndex = new CellIndex(0, 0);
+	
+	            worksheet.Cells[cellIndex].SetValueAsFormula("=B1+B2");
+	{{endregion}}
+
+
+
+#### __[VB.NET] Example 12 shows how you can use the method__
+
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=example12}}
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
+	        '#End Region
+	    End Sub
 	End Class
 
 
@@ -1444,9 +1681,9 @@ You can set a TextCellValue using the __SetValue(string)__ method. Note that bef
 __Example 12__ sets the value of cell A1 to the string "some test":
         
 
-#### __[C#] Example 12: Set TextCellValue__
+#### __[C#] Example 13: Set TextCellValue__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_19}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_19}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            worksheet.Cells[0, 0].SetValue("some text");
@@ -1454,9 +1691,9 @@ __Example 12__ sets the value of cell A1 to the string "some test":
 
 
 
-#### __[VB.NET] Example 12: Set TextCellValue__
+#### __[VB.NET] Example 13: Set TextCellValue__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_19}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_19}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        worksheet.Cells(0, 0).SetValue("some text")
@@ -1484,6 +1721,24 @@ __Example 12__ sets the value of cell A1 to the string "some test":
 	        worksheet.Cells(cellIndex).SetValue(cellValue)
 	        '#End Region
 	    End Sub
+	    Public Sub example2()
+	        '#Region "example12"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
+	        '#End Region
+	    End Sub
 	End Class
 
 
@@ -1494,9 +1749,9 @@ If you would like to avoid the default parsing of the input string and always pr
 __Example 13__ enters the string "=1+2" into a cell, however, because of the applied cell value format, the cell is assigned a TextCellValue instead of a FormulaCellValue.
         
 
-#### __[C#] Example 13: Explicitly apply text value type__
+#### __[C#] Example 14: Explicitly apply text value type__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_20}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_20}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            worksheet.Cells[0, 0].SetFormat(new CellValueFormat("@"));
@@ -1505,9 +1760,9 @@ __Example 13__ enters the string "=1+2" into a cell, however, because of the app
 
 
 
-#### __[VB.NET] Example 13: Explicitly apply text value type__
+#### __[VB.NET] Example 14: Explicitly apply text value type__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_20}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_20}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        worksheet.Cells(0, 0).SetFormat(New CellValueFormat("@"))
@@ -1527,6 +1782,24 @@ __Example 13__ enters the string "=1+2" into a cell, however, because of the app
 	        worksheet.Cells(cellIndex).SetValue(cellValue)
 	        '#End Region
 	    End Sub
+	    Public Sub example2()
+	        '#Region "example12"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
+	        '#End Region
+	    End Sub
 	End Class
 
 
@@ -1537,9 +1810,9 @@ The same result could be achieved using the __Create()__ method of the __CellVal
 __Example 14__ enters the string "=1+2" into a cell and applies cell value format.
         
 
-#### __[C#] Example 14: Creates TextCellValue__
+#### __[C#] Example 15: Creates TextCellValue__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_21}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_21}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            CellIndex cellIndex = new CellIndex(0, 0);
@@ -1552,9 +1825,9 @@ __Example 14__ enters the string "=1+2" into a cell and applies cell value forma
 
 
 
-#### __[VB.NET] Example 14: Creates TextCellValue__
+#### __[VB.NET] Example 15: Creates TextCellValue__
 
-{{region radspreadprocessing-working-with-cells-cell-value-types_21}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_21}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        Dim cellIndex As New CellIndex(0, 0)
@@ -1563,6 +1836,54 @@ __Example 14__ enters the string "=1+2" into a cell and applies cell value forma
 	        Dim newFormatValue As CellValueFormat
 	        CellValueFactory.Create("=1 + 2", worksheet, cellIndex, New CellValueFormat("@"), cellValue, newFormatValue)
 	        worksheet.Cells(cellIndex).SetValue(cellValue)
+	        '#End Region
+	    End Sub
+	    Public Sub example2()
+	        '#Region "example12"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
+	        '#End Region
+	    End Sub
+	    Public Sub example16()
+	        '#Region "example16"
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
+	        '#End Region
+	    End Sub
+	End Class
+
+
+
+If you are sure that the value is a string and need to create a text cell value, you can use the __SetValueAsText(string text)__ method directly. 
+          This would avoid the internal checks and parsing that are usually executed and improve the performance.
+        
+
+#### __[C#] Example 16 shows how to utilize the SetValueAsText() method.__
+
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=example16}}
+	            Workbook workbook = new Workbook();
+	        	Worksheet worksheet = workbook.Worksheets.Add();
+	        	CellIndex cellIndex = new CellIndex(0, 0);
+	        	
+	        	worksheet.Cells[cellIndex].SetValueAsText("This is most certainly a text.");
+	{{endregion}}
+
+
+
+#### __[VB.NET] Example 16 shows how to utilize the SetValueAsText() method.__
+
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=example16}}
+	        Dim workbook As New Workbook()
+	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+	        Dim cellIndex As New CellIndex(0, 0)
+	
+	        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
 	        '#End Region
 	    End Sub
 	End Class

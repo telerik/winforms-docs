@@ -35,7 +35,7 @@ Below is a sample implementation of a custom localization provider, which return
 
 #### __[C#] Localizing RadColorDialog strings__
 
-{{region localization1}}
+{{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=localization1}}
 	        public class CustomColorDialogLocalizationProvider : ColorDialogLocalizationProvider
 	        {
 	            public override string GetLocalizedString(string id)
@@ -68,7 +68,7 @@ Below is a sample implementation of a custom localization provider, which return
 
 #### __[VB.NET] Localizing RadColorDialog strings__
 
-{{region localization1}}
+{{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=localization1}}
 	    Public Class CustomColorDialogLocalizationProvider
 	        Inherits ColorDialogLocalizationProvider
 	        Public Overrides Function GetLocalizedString(id As String) As String
@@ -115,7 +115,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[C#] Using the custom localization provider__
 
-{{region localization2}}
+{{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=localization2}}
 	            ColorDialogLocalizationProvider.CurrentProvider = new CustomColorDialogLocalizationProvider();
 	{{endregion}}
 
@@ -123,7 +123,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[VB.NET] Using the custom localization provider__
 
-{{region localization2}}
+{{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=localization2}}
 	        ColorDialogLocalizationProvider.CurrentProvider = New CustomColorDialogLocalizationProvider()
 	{{endregion}}
 

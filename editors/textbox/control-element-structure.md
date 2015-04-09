@@ -43,7 +43,7 @@ You can use the following code snippet to access RadTextBoxItem and subscribe to
 
 #### __[C#] Subscribing for the click event of the RadTextBoxItem__
 
-{{region subscribeForTextBoxItemClickEvent}}
+{{source=..\SamplesCS\Editors\TextBox1.cs region=subscribeForTextBoxItemClickEvent}}
 	            this.radTextBox1.TextBoxElement.TextBoxItem.Click += new EventHandler(TextBoxItem_Click);
 	{{endregion}}
 
@@ -51,7 +51,7 @@ You can use the following code snippet to access RadTextBoxItem and subscribe to
 
 #### __[VB.NET] Subscribing for the click event of the RadTextBoxItem__
 
-{{region subscribeForTextBoxItemClickEvent}}
+{{source=..\SamplesVB\Editors\TextBox1.vb region=subscribeForTextBoxItemClickEvent}}
 	        AddHandler RadTextBox1.TextBoxElement.TextBoxItem.Click, AddressOf TextBoxItem_Click
 	{{endregion}}
 

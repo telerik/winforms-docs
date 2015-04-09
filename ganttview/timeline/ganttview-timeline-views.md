@@ -27,7 +27,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[C#]__
 
-{{region TimeRangeWeek}}
+{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeWeek}}
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Week;
 	{{endregion}}
 
@@ -35,7 +35,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[VB.NET]__
 
-{{region TimeRangeWeek}}
+{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeWeek}}
 	        Me.RadGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Week
 	{{endregion}}
 
@@ -45,7 +45,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[C#]__
 
-{{region TimeRangeMonth}}
+{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeMonth}}
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Month;
 	{{endregion}}
 
@@ -53,7 +53,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[VB.NET]__
 
-{{region TimeRangeMonth}}
+{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeMonth}}
 	        Me.RadGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Month
 	{{endregion}}
 
@@ -64,7 +64,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[C#]__
 
-{{region TimeRangeYear}}
+{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeYear}}
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Year;
 	{{endregion}}
 
@@ -72,7 +72,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[VB.NET]__
 
-{{region TimeRangeYear}}
+{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeYear}}
 	        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Year
 	{{endregion}}
 
@@ -83,7 +83,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[C#]__
 
-{{region TimeRangeYearHalves}}
+{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeYearHalves}}
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.YearHalves;
 	{{endregion}}
 
@@ -91,7 +91,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[VB.NET]__
 
-{{region TimeRangeYearHalves}}
+{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeYearHalves}}
 	        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.YearHalves
 	{{endregion}}
 
@@ -102,7 +102,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[C#]__
 
-{{region TimeRangeYearQuarters}}
+{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeYearQuarters}}
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.YearQuarters;
 	{{endregion}}
 
@@ -110,7 +110,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[VB.NET]__
 
-{{region TimeRangeYearQuarters}}
+{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeYearQuarters}}
 	        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.YearQuarters
 	{{endregion}}
 
@@ -121,7 +121,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[C#]__
 
-{{region TimeRangeDay}}
+{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeDay}}
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Day;
 	{{endregion}}
 
@@ -129,7 +129,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[VB.NET]__
 
-{{region TimeRangeDay}}
+{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeDay}}
 	        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Day
 	{{endregion}}
 
@@ -140,7 +140,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[C#]__
 
-{{region TimeRangeDayHalfHours}}
+{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeDayHalfHours}}
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.DayHalfHours;
 	{{endregion}}
 
@@ -148,7 +148,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[VB.NET]__
 
-{{region TimeRangeDayHalfHours}}
+{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeDayHalfHours}}
 	        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.DayHalfHours
 	{{endregion}}
 
@@ -159,7 +159,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[C#]__
 
-{{region TimeRangeDayQuarterHours}}
+{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeDayQuarterHours}}
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.DayQuarterHours;
 	{{endregion}}
 
@@ -167,7 +167,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[VB.NET]__
 
-{{region TimeRangeDayQuarterHours}}
+{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeDayQuarterHours}}
 	        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.DayQuarterHours
 	{{endregion}}
 
@@ -178,7 +178,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[C#]__
 
-{{region TimeRangeHour}}
+{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeHour}}
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Hour;
 	{{endregion}}
 
@@ -186,7 +186,7 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 #### __[VB.NET]__
 
-{{region TimeRangeHour}}
+{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeHour}}
 	        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Hour
 	{{endregion}}
 

@@ -22,7 +22,7 @@ As stated in the [Overview]({%slug shortcuts-overview%})
 
 #### __[C#]__
 
-{{region buttonsShortcuts}}
+{{source=..\SamplesCS\Shortcuts\Form2.cs region=buttonsShortcuts}}
 	            this.radButton1.ButtonElement.Shortcuts.Add(new RadShortcut(Keys.Control, Keys.B));
 	            this.radRadioButton1.ButtonElement.Shortcuts.Add(new RadShortcut(Keys.Control, Keys.R));
 	            this.radSplitButton1.DropDownButtonElement.Shortcuts.Add(new RadShortcut(Keys.Control, Keys.S));
@@ -33,7 +33,7 @@ As stated in the [Overview]({%slug shortcuts-overview%})
 
 #### __[VB.NET]__
 
-{{region buttonsShortcuts}}
+{{source=..\SamplesVB\Shortcuts\Form2.vb region=buttonsShortcuts}}
 	        Me.RadButton1.ButtonElement.Shortcuts.Add(New RadShortcut(Keys.Control, Keys.B))
 	        Me.RadRadioButton1.ButtonElement.Shortcuts.Add(New RadShortcut(Keys.Control, Keys.R))
 	        Me.RadSplitButton1.DropDownButtonElement.Shortcuts.Add(New RadShortcut(Keys.Control, Keys.S))

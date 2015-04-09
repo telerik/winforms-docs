@@ -23,7 +23,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[C#] __
 
-{{region bind1}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}}
 	            this.radDataEntry1.DataSource = new Employee() 
 	            { 
 	                FirstName = "Sarah",
@@ -39,7 +39,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[VB.NET] __
 
-{{region bind1}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}}
 	            Me.radDataEntry1.DataSource = New Employee() With { _
 	              .FirstName = "Sarah", _
 	              .LastName = "Blake", _
@@ -61,7 +61,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[C#] __
 
-{{region NumberOfColumns}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=NumberOfColumns}}
 	            this.radDataEntry1.ColumnCount = 2;
 	{{endregion}}
 
@@ -69,7 +69,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[VB.NET] __
 
-{{region NumberOfColumns}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=NumberOfColumns}}
 	            Me.radDataEntry1.ColumnCount = 2
 	            '#End Region
 	        End Sub
@@ -84,7 +84,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[C#] __
 
-{{region FitToParentWidth}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=FitToParentWidth}}
 	            this.radDataEntry1.FitToParentWidth = true;
 	{{endregion}}
 
@@ -92,7 +92,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[VB.NET] __
 
-{{region FitToParentWidth}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=FitToParentWidth}}
 	            Me.radDataEntry1.FitToParentWidth = True
 	            '#End Region
 	        End Sub
@@ -113,7 +113,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[C#] __
 
-{{region ShowValidationPanel}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=ShowValidationPanel}}
 	
 	            this.radDataEntry1.ShowValidationPanel = true;
 	
@@ -131,7 +131,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[VB.NET] __
 
-{{region ShowValidationPanel}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ShowValidationPanel}}
 	
 	            Me.radDataEntry1.ShowValidationPanel = True
 	
@@ -168,7 +168,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[C#] __
 
-{{region FillingOrder1}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=FillingOrder1}}
 	            this.radDataEntry1.ColumnCount = 2;
 	            this.radDataEntry1.FlowDirection = FlowDirection.TopDown;
 	{{endregion}}
@@ -177,7 +177,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[VB.NET] __
 
-{{region FillingOrder1}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=FillingOrder1}}
 	            Me.radDataEntry1.ColumnCount = 2
 	            Me.radDataEntry1.FlowDirection = FlowDirection.TopDown
 	            '#End Region
@@ -227,7 +227,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[C#] __
 
-{{region ItemSpace}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=ItemSpace}}
 	            this.radDataEntry1.ItemSpace = 10;
 	{{endregion}}
 
@@ -235,7 +235,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[VB.NET] __
 
-{{region ItemSpace}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ItemSpace}}
 	            Me.radDataEntry1.ItemSpace = 10
 	            '#End Region
 	        End Sub
@@ -298,7 +298,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[C#] __
 
-{{region ItemDefaultSize}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=ItemDefaultSize}}
 	            this.radDataEntry1.ItemDefaultSize = new Size(300, 30);
 	{{endregion}}
 
@@ -306,7 +306,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[VB.NET] __
 
-{{region ItemDefaultSize}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ItemDefaultSize}}
 	            Me.radDataEntry1.ItemDefaultSize = New Size(300, 30)
 	            '#End Region
 	
@@ -376,7 +376,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[C#] __
 
-{{region ResizeLabels}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=ResizeLabels}}
 	            this.radDataEntry1.AutoSizeLabels = false;
 	{{endregion}}
 
@@ -384,7 +384,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### __[VB.NET] __
 
-{{region ResizeLabels}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ResizeLabels}}
 	            Me.radDataEntry1.AutoSizeLabels = False
 	            '#End Region
 	        End Sub
@@ -493,7 +493,7 @@ With the __Browsable__ attribute users can easily control which properties shoul
 
 #### __[C#] __
 
-{{region Browsable}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=Browsable}}
 	            [Browsable(false)]
 	            public string PhoneNumber
 	            {
@@ -506,7 +506,7 @@ With the __Browsable__ attribute users can easily control which properties shoul
 
 #### __[VB.NET] __
 
-{{region Browsable}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=Browsable}}
 	            <Browsable(False)> _
 	            Public Property PhoneNumber() As String
 	                Get
@@ -692,7 +692,7 @@ The __DisplayName__ attribute defines what text should be displayed in the label
 
 #### __[C#] __
 
-{{region DisplayName}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=DisplayName}}
 	            //[DisplayName("family name")]
 	            public string LastName
 	            {
@@ -705,7 +705,7 @@ The __DisplayName__ attribute defines what text should be displayed in the label
 
 #### __[VB.NET] __
 
-{{region DisplayName}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=DisplayName}}
 	            <DisplayName("family name")> _
 	            Public Property LastName() As String
 	                Get
@@ -878,7 +878,7 @@ With __RadRangeAttribute__ attribute users can define range that can be used int
 
 #### __[C#] __
 
-{{region RadRange}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=RadRange}}
 	            [RadRange(1500,2000)]
 	            public int Salary
 	            {
@@ -891,7 +891,7 @@ With __RadRangeAttribute__ attribute users can define range that can be used int
 
 #### __[VB.NET] __
 
-{{region RadRange}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=RadRange}}
 	            <RadRange(1500, 2000)> _
 	            Public Property Salary() As Integer
 	                Get

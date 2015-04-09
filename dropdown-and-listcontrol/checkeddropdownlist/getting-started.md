@@ -35,7 +35,7 @@ Adding items at runtime is quite similar to the design-time prodcedure. Below yo
 
 #### __[C#] Add items__
 
-{{region AddItems}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\GettingStarted1.cs region=AddItems}}
 	            for (int i = 0; i < 10; i++)
 	            {
 	                this.radCheckedDropDownList1.Items.Add(new RadCheckedListDataItem("Item " + i, i % 2 == 0));
@@ -46,7 +46,7 @@ Adding items at runtime is quite similar to the design-time prodcedure. Below yo
 
 #### __[VB.NET] Add items__
 
-{{region AddItems}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\GettingStarted1.vb region=AddItems}}
 	        For i As Integer = 0 To 9
 	            Me.RadCheckedDropDownList1.Items.Add(New RadCheckedListDataItem("Item " + i, i Mod 2 = 0))
 	        Next

@@ -31,7 +31,7 @@ The following example demonstrates how to change the __ForeColor__
 
 #### __[C#]__
 
-{{region colorBoxValueChanged}}
+{{source=..\SamplesCS\Editors\ColorBox1.cs region=colorBoxValueChanged}}
 	        private void radColorBox1_ValueChanged(object sender, EventArgs e)
 	        {
 	            this.radLabel1.ForeColor = this.radColorBox1.Value;
@@ -42,7 +42,7 @@ The following example demonstrates how to change the __ForeColor__
 
 #### __[VB.NET]__
 
-{{region colorBoxValueChanged}}
+{{source=..\SamplesVB\Editors\ColorBox1.vb region=colorBoxValueChanged}}
 	    Private Sub RadColorBox1_ValueChanged(sender As Object, e As EventArgs)
 	        Me.RadLabel1.ForeColor = Me.RadColorBox1.Value
 	    End Sub

@@ -25,53 +25,53 @@ First let's create a custom visual item by inheriting from the __SimpleListViewV
 
 #### __[C#] Creating custom item__
 
-{{region CustomItem}}
+{{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=CustomItem}}
+	            
 	        public class MyCustomVisualItem : SimpleListViewVisualItem
 	        {
 	            private RadButtonElement buttonElement1;
 	            private RadButtonElement buttonElement2;
 	            private LightVisualElement contentElement;
 	            private StackLayoutPanel stackLayout;
-	
+	                
 	            protected override void CreateChildElements()
 	            {
 	                base.CreateChildElements();
-	
+	                
 	                this.stackLayout = new StackLayoutPanel();
 	                this.stackLayout.Orientation = Orientation.Horizontal;
 	                this.stackLayout.EqualChildrenWidth = true;
 	                this.stackLayout.ShouldHandleMouseInput = false;
 	                this.stackLayout.NotifyParentOnMouseInput = true;
-	
+	                
 	                this.contentElement = new LightVisualElement();
 	                this.contentElement.StretchHorizontally = true;
 	                this.contentElement.MinSize = new Size(120, 0);
 	                this.contentElement.ShouldHandleMouseInput = false;
 	                this.contentElement.NotifyParentOnMouseInput = true;
 	                this.stackLayout.Children.Add(this.contentElement);
-	
-	
+	                
 	                this.buttonElement1 = new RadButtonElement();
 	                this.buttonElement1.Text = "Button1";
 	                this.stackLayout.Children.Add(this.buttonElement1);
-	
+	                
 	                this.buttonElement2 = new RadButtonElement();
 	                this.buttonElement2.Text = "Button2";
 	                this.stackLayout.Children.Add(this.buttonElement2);
-	
+	            
 	                this.Children.Add(this.stackLayout);
 	            }
-	
+	                
 	            protected override void SynchronizeProperties()
 	            {
 	                base.SynchronizeProperties();
-	
+	            
 	                this.Text = "";
 	                this.contentElement.Text = Convert.ToString(this.Data["Name"]);
 	                this.buttonElement1.Text = "Call " + Convert.ToString(this.Data["Phone"]);
 	                this.buttonElement2.Text = "Fax " + Convert.ToString(this.Data["Fax"]);
 	            }
-	
+	                    
 	            protected override Type ThemeEffectiveType
 	            {
 	                get
@@ -80,13 +80,14 @@ First let's create a custom visual item by inheriting from the __SimpleListViewV
 	                }
 	            }
 	        }
+	        
 	{{endregion}}
 
 
 
 #### __[VB.NET] Creating custom item__
 
-{{region CustomItem}}
+{{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=CustomItem}}
 	    
 	    Public Class MyCustomVisualItem
 	    Inherits SimpleListViewVisualItem
@@ -148,22 +149,169 @@ To use the newly created items, you should handle the __VisualItemCreating__ eve
 
 #### __[C#] Use the custom item__
 
-{{region UseCustomItem}}
+{{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=UseCustomItem}}
+	        
 	        void radListView1_VisualItemCreating(object sender, ListViewVisualItemCreatingEventArgs e)
 	        {
-	            e.VisualItem = new MyCustomVisualItem();
+	            if (this.radListView1.ViewType == ListViewType.ListView)
+	            {
+	                e.VisualItem = new MyCustomVisualItem();
+	            }
 	        }
+	        
 	{{endregion}}
 
 
 
 #### __[VB.NET] Use the custom item__
 
-{{region UseCustomItem}}
+{{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=UseCustomItem}}
 	    Private Sub radListView1_VisualItemCreating(ByVal sender As Object, ByVal e As ListViewVisualItemCreatingEventArgs)
-	        e.VisualItem = New MyCustomVisualItem()
+	        If Me.RadListView1.ViewType = ListViewType.ListView Then
+	            e.VisualItem = New MyCustomVisualItem()
+	        End If
 	    End Sub
 	{{endregion}}
+
+
+
+## Custom items in IconsView ViewType![listview-custom-items 003](images/listview-custom-items003.png)
+
+We should create a custom visual item inheriting the __IconListViewVisualItem__. The following example demonstrates how to 
+          add custom elements to the IconListViewVisualItem.__Children__ collection:
+        
+
+#### __[C#] Creating custom item__
+
+{{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=CustomIconListViewVisualItem}}
+	                
+	        public class MyCustomIconListViewVisualItem :IconListViewVisualItem       
+	        {
+	            protected override Type ThemeEffectiveType     
+	            { 
+	                get    
+	                { 
+	                    return typeof(IconListViewVisualItem);     
+	                }
+	            }
+	            
+	            LightVisualElement imageElement = new LightVisualElement();
+	            RadButtonElement buttonElement = new RadButtonElement();
+	            StackLayoutElement stack = new StackLayoutElement();
+	                
+	            protected override void CreateChildElements()
+	            {
+	                base.CreateChildElements();
+	                
+	                stack.Orientation = Orientation.Vertical;
+	                imageElement.Image = Image.FromFile(@"..\..\Resources\email.png");
+	                buttonElement.Image = Image.FromFile(@"..\..\Resources\file.png");
+	                buttonElement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+	            
+	                stack.Children.Add(imageElement);
+	                stack.Children.Add(buttonElement);
+	                this.Children.Add(stack);
+	            }
+	            
+	            protected override void SynchronizeProperties()
+	            {
+	                base.SynchronizeProperties();
+	                this.Text = string.Empty;
+	                this.buttonElement.Text = this.Data.Text;
+	            }
+	        }
+	        
+	{{endregion}}
+
+
+
+#### __[VB.NET] Creating custom item__
+
+{{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=CustomIconListViewVisualItem}}
+	
+	    Public Class MyCustomIconListViewVisualItem
+	    Inherits IconListViewVisualItem
+	        Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
+	            Get
+	                Return GetType(IconListViewVisualItem)
+	            End Get
+	        End Property
+	
+	        Private imageElement As LightVisualElement
+	        Private buttonElement As RadButtonElement
+	        Private stack As StackLayoutElement
+	
+	        Protected Overrides Sub CreateChildElements()
+	            MyBase.CreateChildElements()
+	
+	            stack = New StackLayoutElement()
+	            imageElement = New LightVisualElement()
+	            buttonElement = New RadButtonElement()
+	            stack.Orientation = Orientation.Vertical
+	            imageElement.Image = Image.FromFile("..\..\Resources\email.png")
+	            buttonElement.Image = Image.FromFile("..\..\Resources\file.png")
+	            buttonElement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+	
+	            stack.Children.Add(imageElement)
+	            stack.Children.Add(buttonElement)
+	            Me.Children.Add(stack)
+	        End Sub
+	
+	        Protected Overrides Sub SynchronizeProperties()
+	            MyBase.SynchronizeProperties()
+	            Me.Text = String.Empty
+	            Me.buttonElement.Text = Me.Data.Text
+	        End Sub
+	    End Class
+	
+	    '#End Region
+	
+	    '#Region "UseCustomIconItem"
+	
+	    Private Sub VisualItemCreating(sender As Object, e As ListViewVisualItemCreatingEventArgs)
+	        If Me.RadListView1.ViewType = ListViewType.IconsView Then
+	            e.VisualItem = New MyCustomIconListViewVisualItem()
+	        End If
+	    End Sub
+	
+	    '#End Region
+	
+	End Class
+
+
+
+To use the newly created item, you should subscribe to the __VisualItemCreating__ event 
+			    and replace the default item with your custom one: 
+
+#### __[C#]__
+
+{{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=UseCustomIconItem}}
+	        
+	        void VisualItemCreating(object sender, ListViewVisualItemCreatingEventArgs e)
+	        {
+	            if (this.radListView1.ViewType == ListViewType.IconsView)
+	            {
+	                e.VisualItem = new MyCustomIconListViewVisualItem();
+	            }
+	        }
+	        
+	{{endregion}}
+
+
+
+#### __[VB.NET]__
+
+{{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=UseCustomIconItem}}
+	
+	    Private Sub VisualItemCreating(sender As Object, e As ListViewVisualItemCreatingEventArgs)
+	        If Me.RadListView1.ViewType = ListViewType.IconsView Then
+	            e.VisualItem = New MyCustomIconListViewVisualItem()
+	        End If
+	    End Sub
+	
+	    '#End Region
+	
+	End Class
 
 
 
@@ -179,7 +327,7 @@ First let's populate the __RadListView__ with items and set its __ViewType__ pro
 
 #### __[C#]__
 
-{{region FillData}}
+{{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=FillData}}
 	
 	            radListView1.ViewType = ListViewType.DetailsView;
 	            DataTable dt = new DataTable();
@@ -192,13 +340,14 @@ First let's populate the __RadListView__ with items and set its __ViewType__ pro
 	            }
 	
 	            this.radListView1.DataSource = dt;
+	            
 	{{endregion}}
 
 
 
 #### __[VB.NET]__
 
-{{region FillData}}
+{{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=FillData}}
 	        RadListView1.ViewType = ListViewType.DetailsView
 	        Dim dt As New DataTable()
 	        dt.Columns.Add("Id", GetType(Integer))
@@ -219,25 +368,25 @@ Now let`s create our custom cell element containing a __RadButtonElement__. Addi
 
 #### __[C#]__
 
-{{region CustomCell}}
+{{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=CustomCell}}
+	            
 	        public class CustomDetailListViewDataCellElement : DetailListViewDataCellElement
 	        {
 	            private RadButtonElement button;
-	
+	            
 	            public CustomDetailListViewDataCellElement(DetailListViewVisualItem owner,
-	                ListViewDetailColumn column)
-	                : base(owner, column)
+	                ListViewDetailColumn column) : base(owner, column)
 	            {
 	            }
-	
+	                
 	            protected override void CreateChildElements()
 	            {
 	                base.CreateChildElements();
-	
+	            
 	                this.button = new RadButtonElement();
 	                this.Children.Add(this.button);
 	            }
-	
+	                
 	            protected override Type ThemeEffectiveType
 	            {
 	                get
@@ -245,7 +394,7 @@ Now let`s create our custom cell element containing a __RadButtonElement__. Addi
 	                    return typeof(DetailListViewHeaderCellElement);
 	                }
 	            }
-	
+	                
 	            public override void Synchronize()
 	            {
 	                base.Synchronize();
@@ -253,7 +402,7 @@ Now let`s create our custom cell element containing a __RadButtonElement__. Addi
 	                DataRowView rowView = this.Row.DataBoundItem as DataRowView;
 	                this.button.Text = rowView.Row["Name"].ToString();
 	            }
-	
+	                
 	            public override bool IsCompatible(ListViewDetailColumn data, object context)
 	            {
 	                if (data.Name != "Name")
@@ -263,13 +412,14 @@ Now let`s create our custom cell element containing a __RadButtonElement__. Addi
 	                return base.IsCompatible(data, context);
 	            }
 	        }
+	        
 	{{endregion}}
 
 
 
 #### __[VB.NET]__
 
-{{region CustomCell}}
+{{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=CustomCell}}
 	    
 	    Public Class CustomDetailListViewDataCellElement
 	    Inherits DetailListViewDataCellElement
@@ -316,7 +466,8 @@ Finally, we should handle the __CellCreating__ event and substitute the default 
 
 #### __[C#]__
 
-{{region ReplaceCell}}
+{{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=ReplaceCell}}
+	        
 	        private void radListView1_CellCreating(object sender, ListViewCellElementCreatingEventArgs e)
 	        {
 	            DetailListViewDataCellElement cell = e.CellElement as DetailListViewDataCellElement;
@@ -325,13 +476,14 @@ Finally, we should handle the __CellCreating__ event and substitute the default 
 	                e.CellElement = new CustomDetailListViewDataCellElement(cell.RowElement, e.CellElement.Data);
 	            }
 	        }
+	
 	{{endregion}}
 
 
 
 #### __[VB.NET]__
 
-{{region ReplaceCell}}
+{{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=ReplaceCell}}
 	    Private Sub radListView1_CellCreating(sender As Object, e As ListViewCellElementCreatingEventArgs)
 	        Dim cell As DetailListViewDataCellElement = TryCast(e.CellElement, DetailListViewDataCellElement)
 	        If cell IsNot Nothing AndAlso cell.Data.Name = "Name" Then

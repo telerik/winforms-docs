@@ -28,7 +28,7 @@ By default RadGridView allows the user to select only one row. In this case the 
 
 #### __[C#]__
 
-{{region basicRowSelection}}
+{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=basicRowSelection}}
 	            radGridView1.MultiSelect = false;
 	            radGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect;
 	{{endregion}}
@@ -37,7 +37,7 @@ By default RadGridView allows the user to select only one row. In this case the 
 
 #### __[VB.NET]__
 
-{{region basicRowSelection}}
+{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=basicRowSelection}}
 	        RadGridView1.MultiSelect = False
 	        RadGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect
 	        '#End Region
@@ -82,7 +82,7 @@ You can modify RadGridView to select single cells instead of rows by setting its
 
 #### __[C#]__
 
-{{region basicCellSelection}}
+{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=basicCellSelection}}
 	            radGridView1.MultiSelect = false;
 	            radGridView1.SelectionMode = GridViewSelectionMode.CellSelect;
 	{{endregion}}
@@ -91,7 +91,7 @@ You can modify RadGridView to select single cells instead of rows by setting its
 
 #### __[VB.NET]__
 
-{{region basicCellSelection}}
+{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=basicCellSelection}}
 	        RadGridView1.MultiSelect = False
 	        RadGridView1.SelectionMode = GridViewSelectionMode.CellSelect
 	        '#End Region
@@ -131,7 +131,7 @@ Once an item is selected (row or cell), you can find this item in the SelectedRo
 
 #### __[C#]__
 
-{{region collections}}
+{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=collections}}
 	            GridViewSelectedRowsCollection selectedRows = radGridView1.SelectedRows;
 	            GridViewSelectedCellsCollection selectedCells = radGridView1.SelectedCells;
 	{{endregion}}
@@ -140,7 +140,7 @@ Once an item is selected (row or cell), you can find this item in the SelectedRo
 
 #### __[VB.NET]__
 
-{{region collections}}
+{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=collections}}
 	        Dim selectedRows As GridViewSelectedRowsCollection = RadGridView1.SelectedRows
 	        Dim selectedCells As GridViewSelectedCellsCollection = RadGridView1.SelectedCells
 	        '#End Region
@@ -181,7 +181,7 @@ Once an item is selected, it automatically becomes current (when basic selection
 
 #### __[C#]__
 
-{{region currentRowCell}}
+{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=currentRowCell}}
 	            //gets an instance of the current row
 	            GridViewRowInfo row = radGridView1.CurrentRow;
 	            //gets an instance of the current cell
@@ -194,7 +194,7 @@ Once an item is selected, it automatically becomes current (when basic selection
 
 #### __[VB.NET]__
 
-{{region currentRowCell}}
+{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=currentRowCell}}
 	        'gets an instance of the current row
 	        Dim row As GridViewRowInfo = RadGridView1.CurrentRow
 	        'gets an instance of the current cell

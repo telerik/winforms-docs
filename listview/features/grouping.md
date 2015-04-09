@@ -23,7 +23,7 @@ RadListView supports both custom grouping and automatic grouping based on a cert
 
 #### __[C#] Group by value__
 
-{{region groupByValue}}
+{{source=..\SamplesCS\ListView\Features\ListViewGrouping.cs region=groupByValue}}
 	            radListView1.EnableGrouping = true;
 	            radListView1.ShowGroups = true;
 	            GroupDescriptor groupByValue = new GroupDescriptor(new SortDescriptor[] { new SortDescriptor("Value", ListSortDirection.Descending) });
@@ -34,7 +34,7 @@ RadListView supports both custom grouping and automatic grouping based on a cert
 
 #### __[VB.NET] Group by value__
 
-{{region groupByValue}}
+{{source=..\SamplesVB\ListView\Features\ListViewGrouping.vb region=groupByValue}}
 	        RadListView1.EnableGrouping = True
 	        RadListView1.ShowGroups = True
 	        Dim groupByValue As New GroupDescriptor(New SortDescriptor() {New SortDescriptor("Value", ListSortDirection.Descending)})
@@ -78,7 +78,7 @@ And here is how you can group by a certain column when __DetailsView__ is used:
 
 #### __[C#] Group by column__
 
-{{region groupByColumn}}
+{{source=..\SamplesCS\ListView\Features\ListViewGrouping.cs region=groupByColumn}}
 	            radListView1.EnableGrouping = true;
 	            radListView1.ShowGroups = true;
 	            GroupDescriptor groupByType = new GroupDescriptor(new SortDescriptor[] 
@@ -92,7 +92,7 @@ And here is how you can group by a certain column when __DetailsView__ is used:
 
 #### __[VB.NET] Group by column__
 
-{{region groupByColumn}}
+{{source=..\SamplesVB\ListView\Features\ListViewGrouping.vb region=groupByColumn}}
 	        RadListView1.EnableGrouping = True
 	        RadListView1.ShowGroups = True
 	        Dim groupByType As New GroupDescriptor(New SortDescriptor() {New SortDescriptor("Type", ListSortDirection.Descending)})
@@ -131,7 +131,7 @@ To take advantage of the custom grouping feature of RadListView, just enable the
 
 #### __[C#] Custom grouping__
 
-{{region customGrouping}}
+{{source=..\SamplesCS\ListView\Features\ListViewGrouping.cs region=customGrouping}}
 	            radListView1.EnableCustomGrouping = true;
 	            radListView1.ShowGroups = true;
 	            ListViewDataItemGroup docGroup = new ListViewDataItemGroup("Documents");
@@ -155,7 +155,7 @@ To take advantage of the custom grouping feature of RadListView, just enable the
 
 #### __[VB.NET] Custom grouping__
 
-{{region customGrouping}}
+{{source=..\SamplesVB\ListView\Features\ListViewGrouping.vb region=customGrouping}}
 	        RadListView1.EnableCustomGrouping = True
 	        RadListView1.ShowGroups = True
 	        Dim docGroup As New ListViewDataItemGroup("Documents")
@@ -189,7 +189,7 @@ When grouping is enabled you have the option to quickly expand or collapse all g
 
 #### __[C#] Expand and collapse all groups__
 
-{{region ExpandCollapseAll}}
+{{source=..\SamplesCS\ListView\Features\ListViewGrouping.cs region=ExpandCollapseAll}}
 	            this.radListView1.ExpandAll();
 	            this.radListView1.CollapseAll();
 	{{endregion}}
@@ -198,7 +198,7 @@ When grouping is enabled you have the option to quickly expand or collapse all g
 
 #### __[VB.NET] Expand and collapse all groups__
 
-{{region ExpandCollapseAll}}
+{{source=..\SamplesVB\ListView\Features\ListViewGrouping.vb region=ExpandCollapseAll}}
 	        Me.RadListView1.ExpandAll()
 	        Me.RadListView1.CollapseAll()
 	{{endregion}}

@@ -27,7 +27,7 @@ The following example demonstrates how to add nodes using code:
 
 #### __[C#]__
 
-{{region addNodes}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=addNodes}}
 	        private void AddNodes()
 	        {
 	            RadTreeNode Node1 = new RadTreeNode("Node1");
@@ -52,7 +52,7 @@ The following example demonstrates how to add nodes using code:
 
 #### __[VB.NET]__
 
-{{region addNodes}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=addNodes}}
 	    Private Sub AddNodes()
 	        Dim Node1 As New RadTreeNode("Node1")
 	        Node1.Tag = 1234
@@ -91,7 +91,7 @@ Just before a node is added, the  __NodeAdding__ event is fired. The event argum
 
 #### __[C#]__
 
-{{region NodeAdding}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=NodeAdding}}
 	
 	        void radTreeView1_NodeAdding(object sender, RadTreeViewCancelEventArgs e)
 	        {
@@ -112,7 +112,7 @@ Just before a node is added, the  __NodeAdding__ event is fired. The event argum
 
 #### __[VB.NET]__
 
-{{region NodeAdding}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=NodeAdding}}
 	
 	    Private Sub RadTreeView1_NodeAdding(sender As Object, e As RadTreeViewCancelEventArgs) Handles RadTreeView1.NodeAdding
 	        If e.Node.Text.Contains("Non-insertable") Then
@@ -229,7 +229,7 @@ To remove a single node use the __Remove()__ method of the node. To remove *all 
 
 #### __[C#]__
 
-{{region removeNodes}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=removeNodes}}
 	        private void RemoveNodes()
 	        {
 	            //Remove a single node
@@ -243,7 +243,7 @@ To remove a single node use the __Remove()__ method of the node. To remove *all 
 
 #### __[VB.NET]__
 
-{{region removeNodes}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=removeNodes}}
 	    Private Sub RemoveNodes()
 	        'Remove a single node
 	        RadTreeView1.Nodes(0).Remove()
@@ -262,7 +262,7 @@ Just before a node is removed, the __NodeRemoving__ event is fired. The event ar
 
 #### __[C#]__
 
-{{region NodeRemoving}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=NodeRemoving}}
 	
 	        void radTreeView1_NodeRemoving(object sender, RadTreeViewCancelEventArgs e)
 	        {
@@ -283,7 +283,7 @@ Just before a node is removed, the __NodeRemoving__ event is fired. The event ar
 
 #### __[VB.NET]__
 
-{{region NodeRemoving}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=NodeRemoving}}
 	
 	    Private Sub RadTreeView1_NodeRemoving(sender As Object, e As RadTreeViewCancelEventArgs) Handles RadTreeView1.NodeRemoving
 	        If e.Node.Text.Contains("Unremovable") Then

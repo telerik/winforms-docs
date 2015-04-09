@@ -44,7 +44,7 @@ __DockTo(DockWindow window, DockPosition dockPosition):__ Docks a window with an
 
 #### __[C#] Using DockTo()__
 
-{{region usingDockTo}}
+{{source=..\SamplesCS\Dock\CreatingWindows.cs region=usingDockTo}}
 	            toolWindow2.DockTo(toolWindow1, DockPosition.Fill);
 	{{endregion}}
 
@@ -52,7 +52,7 @@ __DockTo(DockWindow window, DockPosition dockPosition):__ Docks a window with an
 
 #### __[VB.NET] Using DockTo()__
 
-{{region usingDockTo}}
+{{source=..\SamplesVB\Dock\CreatingWindows.vb region=usingDockTo}}
 	        toolWindow2.DockTo(ToolWindow1, DockPosition.Fill)
 	{{endregion}}
 

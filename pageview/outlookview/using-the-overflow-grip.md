@@ -27,7 +27,7 @@ As well as from the UI, the overflow grip can be used programmatically. To do so
 
 #### __[C#]__
 
-{{region programmingGrip}}
+{{source=..\SamplesCS\PageView\OutlookView.cs region=programmingGrip}}
 	
 	            RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
 	            //Drags the sizing grip one item down.
@@ -41,7 +41,7 @@ As well as from the UI, the overflow grip can be used programmatically. To do so
 
 #### __[VB.NET]__
 
-{{region programmingGrip}}
+{{source=..\SamplesVB\PageView\OutlookView.vb region=programmingGrip}}
 	
 	        Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
 	        'Drags the sizing grip one item down.
@@ -57,7 +57,7 @@ You can also use the HideItems/ShowItems methods to specify how many items will 
 
 #### __[C#]__
 
-{{region programmingItems}}
+{{source=..\SamplesCS\PageView\OutlookView.cs region=programmingItems}}
 	
 	            RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
 	            //Drags the sizing grip three items down.
@@ -71,7 +71,7 @@ You can also use the HideItems/ShowItems methods to specify how many items will 
 
 #### __[VB.NET]__
 
-{{region programmingGrip}}
+{{source=..\SamplesVB\PageView\OutlookView.vb region=programmingGrip}}
 	
 	        Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
 	        'Drags the sizing grip one item down.

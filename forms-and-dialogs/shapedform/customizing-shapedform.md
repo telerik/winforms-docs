@@ -29,7 +29,7 @@ Almost all properties of Shaped form are the same as a standard Windows Form. Yo
 
 #### __[C#] Setting a theme to a ShapedForm__
 
-{{region ThemeName}}
+{{source=..\SamplesCS\Forms and Dialogs\ShapedForm1.cs region=ThemeName}}
 	            this.ThemeName = "Breeze";
 	{{endregion}}
 
@@ -37,7 +37,7 @@ Almost all properties of Shaped form are the same as a standard Windows Form. Yo
 
 #### __[VB.NET] Setting a theme to a ShapedForm__
 
-{{region ThemeName}}
+{{source=..\SamplesVB\Forms and Dialogs\ShapedForm1.vb region=ThemeName}}
 	        Me.ThemeName = "Breeze"
 	{{endregion}}
 

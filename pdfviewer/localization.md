@@ -30,7 +30,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[C#] __
 
-{{region localization}}
+{{source=..\SamplesCS\PdfViewer\PdfLocalization.cs region=localization}}
 	    public class MyLocalizationProvider : PdfViewerLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -102,7 +102,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[VB.NET] __
 
-{{region localization}}
+{{source=..\SamplesVB\PdfViewer\PdfLocalization.vb region=localization}}
 	Public Class MyLocalizationProvider
 	    Inherits PdfViewerLocalizationProvider
 	
@@ -177,7 +177,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[C#] __
 
-{{region change}}
+{{source=..\SamplesCS\PdfViewer\PdfLocalization.cs region=change}}
 	            PdfViewerLocalizationProvider.CurrentProvider = new MyLocalizationProvider();
 	{{endregion}}
 
@@ -185,7 +185,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[VB.NET] __
 
-{{region change}}
+{{source=..\SamplesVB\PdfViewer\PdfLocalization.vb region=change}}
 	        PdfViewerLocalizationProvider.CurrentProvider = New MyLocalizationProvider()
 	        '#End Region
 	    End Sub

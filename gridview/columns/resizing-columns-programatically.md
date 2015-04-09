@@ -27,7 +27,7 @@ There are two ways to disable the resizing of columns in the user interface:
 
 #### __[C#] Disable resizing__
 
-{{region AllowColumnResize}}
+{{source=..\SamplesCS\GridView\Columns\ResizingColumns.cs region=AllowColumnResize}}
 	            this.radGridView1.AllowColumnResize = false;
 	{{endregion}}
 
@@ -35,7 +35,7 @@ There are two ways to disable the resizing of columns in the user interface:
 
 #### __[VB.NET] Disable resizing__
 
-{{region AllowColumnResize}}
+{{source=..\SamplesVB\GridView\Columns\ResizingColumns.vb region=AllowColumnResize}}
 	        Me.RadGridView1.AllowColumnResize = False
 	{{endregion}}
 
@@ -47,7 +47,7 @@ There are two ways to disable the resizing of columns in the user interface:
 
 #### __[C#] Disable resizing for a specified column__
 
-{{region AllowResize}}
+{{source=..\SamplesCS\GridView\Columns\ResizingColumns.cs region=AllowResize}}
 	            this.radGridView1.Columns["Photo"].AllowResize = false;
 	{{endregion}}
 
@@ -55,7 +55,7 @@ There are two ways to disable the resizing of columns in the user interface:
 
 #### __[VB.NET] Disable resizing for a specified column__
 
-{{region AllowResize}}
+{{source=..\SamplesVB\GridView\Columns\ResizingColumns.vb region=AllowResize}}
 	        Me.RadGridView1.Columns("Photo").AllowResize = False
 	{{endregion}}
 
@@ -69,7 +69,7 @@ The width of columns can be set individually, per column. Note that the visible 
 
 #### __[C#] Rezise a column programatically__
 
-{{region resizingColumn}}
+{{source=..\SamplesCS\GridView\Columns\ResizingColumns.cs region=resizingColumn}}
 	            this.radGridView1.Columns["Photo"].Width = 100;
 	{{endregion}}
 
@@ -77,7 +77,7 @@ The width of columns can be set individually, per column. Note that the visible 
 
 #### __[VB.NET] Rezise a column programatically__
 
-{{region resizingColumn}}
+{{source=..\SamplesVB\GridView\Columns\ResizingColumns.vb region=resizingColumn}}
 	        Me.RadGridView1.Columns("Photo").Width = 100
 	{{endregion}}
 

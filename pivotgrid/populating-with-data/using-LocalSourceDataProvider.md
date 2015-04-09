@@ -22,7 +22,7 @@ You can create an object of type LocalDataSourceProvider and assign it to RadPiv
 
 #### __[C#] __
 
-{{region InitializeProvider}}
+{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=InitializeProvider}}
 	            LocalDataSourceProvider dataProvider = new LocalDataSourceProvider();
 	            dataProvider.ItemsSource = dataset.Orders;
 	{{endregion}}
@@ -31,7 +31,7 @@ You can create an object of type LocalDataSourceProvider and assign it to RadPiv
 
 #### __[VB.NET] __
 
-{{region InitializeProvider}}
+{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=InitializeProvider}}
 	        Dim dataProvider As New LocalDataSourceProvider()
 	        dataProvider.ItemsSource = dataset.Orders
 	{{endregion}}
@@ -54,7 +54,7 @@ The LocalDataSourceProvider is using four different collections for the data tha
 
 #### __[C#] __
 
-{{region RowGroupDescriptions}}
+{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=RowGroupDescriptions}}
 	            dataProvider.BeginInit();
 	            dataProvider.RowGroupDescriptions.Add(new DateTimeGroupDescription() { PropertyName = "OrderDate", Step = DateTimeStep.Year, GroupComparer = new GroupNameComparer() });
 	            dataProvider.RowGroupDescriptions.Add(new DateTimeGroupDescription() { PropertyName = "OrderDate", Step = DateTimeStep.Quarter, GroupComparer = new GroupNameComparer() });
@@ -66,7 +66,7 @@ The LocalDataSourceProvider is using four different collections for the data tha
 
 #### __[VB.NET] __
 
-{{region RowGroupDescriptions}}
+{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=RowGroupDescriptions}}
 	        dataProvider.BeginInit()
 	        dataProvider.RowGroupDescriptions.Add(New DateTimeGroupDescription() With { _
 	         .PropertyName = "OrderDate", _
@@ -93,7 +93,7 @@ The LocalDataSourceProvider is using four different collections for the data tha
 
 #### __[C#] __
 
-{{region ColumnGroupDescriptions}}
+{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=ColumnGroupDescriptions}}
 	            dataProvider.ColumnGroupDescriptions.Add(new PropertyGroupDescription() { PropertyName = "EmployeeID", GroupComparer = new GrandTotalComparer() });
 	{{endregion}}
 
@@ -101,7 +101,7 @@ The LocalDataSourceProvider is using four different collections for the data tha
 
 #### __[VB.NET] __
 
-{{region ColumnGroupDescriptions}}
+{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=ColumnGroupDescriptions}}
 	        dataProvider.ColumnGroupDescriptions.Add(New PropertyGroupDescription() With { _
 	         .PropertyName = "EmployeeID", _
 	         .GroupComparer = New GrandTotalComparer() _
@@ -116,7 +116,7 @@ The LocalDataSourceProvider is using four different collections for the data tha
 
 #### __[C#] __
 
-{{region AggregateDescriptions}}
+{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=AggregateDescriptions}}
 	            dataProvider.BeginInit();
 	            dataProvider.AggregateDescriptions.Add(new PropertyAggregateDescription() { PropertyName = "Freight", AggregateFunction = AggregateFunctions.Sum });
 	            dataProvider.AggregateDescriptions.Add(new PropertyAggregateDescription() { PropertyName = "Freight", AggregateFunction = AggregateFunctions.Average });
@@ -127,7 +127,7 @@ The LocalDataSourceProvider is using four different collections for the data tha
 
 #### __[VB.NET] __
 
-{{region AggregateDescriptions}}
+{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=AggregateDescriptions}}
 	        dataProvider.BeginInit()
 	        dataProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
 	         .PropertyName = "Freight", _
@@ -147,7 +147,7 @@ The LocalDataSourceProvider is using four different collections for the data tha
 
 #### __[C#] __
 
-{{region FilterDescriptions}}
+{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=FilterDescriptions}}
 	            dataProvider.FilterDescriptions.Add(new PropertyFilterDescription() { PropertyName = "ShipCountry", CustomName = "Country" });
 	{{endregion}}
 
@@ -155,7 +155,7 @@ The LocalDataSourceProvider is using four different collections for the data tha
 
 #### __[VB.NET] __
 
-{{region FilterDescriptions}}
+{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=FilterDescriptions}}
 	
 	        dataProvider.FilterDescriptions.Add(New PropertyFilterDescription() With { _
 	         .PropertyName = "ShipCountry", _
@@ -201,7 +201,7 @@ To apply the already defined data provider, use the following property:
 
 #### __[C#] __
 
-{{region ApplyingDataProvider}}
+{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=ApplyingDataProvider}}
 	            this.radPivotGrid1.DataProvider = dataProvider;
 	{{endregion}}
 
@@ -209,7 +209,7 @@ To apply the already defined data provider, use the following property:
 
 #### __[VB.NET] __
 
-{{region ApplyingDataProvider}}
+{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=ApplyingDataProvider}}
 	        Me.RadPivotGrid1.DataProvider = dataProvider
 	{{endregion}}
 
@@ -226,7 +226,7 @@ The groups formed by the DateTimeGroupDescription as well as the number format o
 
 #### __[C#] __
 
-{{region culture}}
+{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=culture}}
 	            dataProvider.Culture = new System.Globalization.CultureInfo("de-DE");
 	{{endregion}}
 
@@ -234,7 +234,7 @@ The groups formed by the DateTimeGroupDescription as well as the number format o
 
 #### __[VB.NET] __
 
-{{region culture}}
+{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=culture}}
 	        dataProvider.Culture = New System.Globalization.CultureInfo("de-DE")
 	{{endregion}}
 

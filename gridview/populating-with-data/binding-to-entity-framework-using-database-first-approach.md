@@ -56,7 +56,7 @@ Now our Models should be generated.
 
 #### __[C#]__
 
-{{region addDbContext}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.cs region=addDbContext}}
 	        NorthwindEntities dbContext = new NorthwindEntities();
 	{{endregion}}
 
@@ -64,7 +64,7 @@ Now our Models should be generated.
 
 #### __[VB]__
 
-{{region addDbContext}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=addDbContext}}
 	    Dim dbContext As New NorthwindEntities
 	{{endregion}}
 
@@ -78,7 +78,7 @@ Now our Models should be generated.
 
 #### __[C#]__
 
-{{region addDataSource}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.cs region=addDataSource}}
 	            dbContext.Customers.Load();
 	            this.radGridView1.DataSource = this.dbContext.Customers.Local.ToBindingList();
 	{{endregion}}
@@ -87,7 +87,7 @@ Now our Models should be generated.
 
 #### __[VB]__
 
-{{region addDataSource}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=addDataSource}}
 	        dbContext.Customers.Load()
 	        Me.radGridView1.DataSource = Me.dbContext.Customers.Local.ToBindingList()
 	{{endregion}}
@@ -104,7 +104,7 @@ These extension methods are located in the System.Data.Entity namespace. As the 
 
 #### __[C#]__
 
-{{region addRelation}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.cs region=addRelation}}
 	            dbContext.Orders.Load();
 	
 	            GridViewTemplate template = new GridViewTemplate();
@@ -123,7 +123,7 @@ These extension methods are located in the System.Data.Entity namespace. As the 
 
 #### __[VB]__
 
-{{region addRelation}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=addRelation}}
 	        dbContext.Orders.Load()
 	
 	        Dim template As New GridViewTemplate()
@@ -145,7 +145,7 @@ These extension methods are located in the System.Data.Entity namespace. As the 
 
 #### __[C#]__
 
-{{region saveChanges}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.cs region=saveChanges}}
 	            this.dbContext.SaveChanges();
 	{{endregion}}
 
@@ -153,7 +153,7 @@ These extension methods are located in the System.Data.Entity namespace. As the 
 
 #### __[VB]__
 
-{{region saveChanges}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=saveChanges}}
 	        Me.dbContext.SaveChanges()
 	{{endregion}}
 

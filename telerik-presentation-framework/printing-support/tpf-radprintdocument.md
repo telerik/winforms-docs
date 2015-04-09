@@ -27,7 +27,7 @@ RadPrintDocument is used to send output to a printer. The RadPrintDocument can b
 
 #### __[C#]__
 
-{{region print}}
+{{source=..\SamplesCS\TPF\Printing support\RadPrintDocument1.cs region=print}}
 	            RadPrintDocument document = new RadPrintDocument();
 	
 	            document.DefaultPageSettings.Landscape = true;
@@ -42,7 +42,7 @@ RadPrintDocument is used to send output to a printer. The RadPrintDocument can b
 
 #### __[VB.NET]__
 
-{{region print}}
+{{source=..\SamplesVB\TPF\Printing support\RadPrintDocument1.vb region=print}}
 	        Dim document As New RadPrintDocument()
 	
 	        document.DefaultPageSettings.Landscape = True

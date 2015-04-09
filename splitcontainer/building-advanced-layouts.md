@@ -29,7 +29,7 @@ In order to achieve the layout on the top screen, refer to the code snippet
 
 #### __[C#]__
 
-{{region advancedLayout}}
+{{source=..\SamplesCS\SplitContainer\BuildingLayout.cs region=advancedLayout}}
 	        private void CreateGrid(RadSplitContainer container, int cols, int rows, Orientation orientation, bool centerFill)
 	        {
 	            container.Orientation = orientation;
@@ -71,7 +71,7 @@ In order to achieve the layout on the top screen, refer to the code snippet
 
 #### __[VB.NET]__
 
-{{region advancedLayout}}
+{{source=..\SamplesVB\SplitContainer\BuildingLayout.vb region=advancedLayout}}
 	    Private Sub CreateGrid(ByVal container As RadSplitContainer, ByVal cols As Integer, ByVal rows As Integer, ByVal orientation As Orientation, ByVal centerFill As Boolean)
 	        container.Orientation = orientation
 	
@@ -132,7 +132,7 @@ Each SplitPanelSizeInfo instance has MinimumSize and MaximumSize members,
 
 #### __[C#]__
 
-{{region panelRestrictions}}
+{{source=..\SamplesCS\SplitContainer\BuildingLayout.cs region=panelRestrictions}}
 	        private void ApplyPanelRestrictions(SplitPanel panel, Size minSize, Size maxSize)
 	        {
 	            SplitPanelSizeInfo sizeInfo = panel.SizeInfo;
@@ -145,7 +145,7 @@ Each SplitPanelSizeInfo instance has MinimumSize and MaximumSize members,
 
 #### __[VB.NET]__
 
-{{region panelRestrictions}}
+{{source=..\SamplesVB\SplitContainer\BuildingLayout.vb region=panelRestrictions}}
 	    Private Sub ApplyPanelRestrictions(ByVal panel As SplitPanel, ByVal minSize As Size, ByVal maxSize As Size)
 	        Dim sizeInfo As SplitPanelSizeInfo = panel.SizeInfo
 	        sizeInfo.MinimumSize = minSize

@@ -21,7 +21,7 @@ The RadAutoCompleteBox allows appearance customization of each instance of
 
 #### __[C#]__
 
-{{region formatting}}
+{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=formatting}}
 	        void radAutoCompleteBox1_TextBlockFormatting(object sender, TextBlockFormattingEventArgs e)
 	        {
 	            TokenizedTextBlockElement token = e.TextBlock as TokenizedTextBlockElement;
@@ -37,7 +37,7 @@ The RadAutoCompleteBox allows appearance customization of each instance of
 
 #### __[VB.NET]__
 
-{{region formatting}}
+{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=formatting}}
 	    Private Sub radAutoCompleteBox1_TextBlockFormatting(sender As Object, e As TextBlockFormattingEventArgs)
 	        Dim token As TokenizedTextBlockElement = TryCast(e.TextBlock, TokenizedTextBlockElement)
 	        If token IsNot Nothing Then

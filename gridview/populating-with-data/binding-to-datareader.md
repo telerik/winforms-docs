@@ -18,7 +18,7 @@ To extract values from a data source using a __DataReader,__use the GridViewTemp
 
 #### __[C#] Using a DataReader__
 
-{{region usingADataReader}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToDataReader.cs region=usingADataReader}}
 	            OleDbConnection conn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\DataSources\\Nwind.mdb");
 	            conn.Open();
 	            OleDbCommand cmd = new OleDbCommand("Select TOP 5 * FROM Customers", conn);
@@ -30,7 +30,7 @@ To extract values from a data source using a __DataReader,__use the GridViewTemp
 
 #### __[VB.NET] Using a DataReader__
 
-{{region usingADataReader}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToDataReader.vb region=usingADataReader}}
 	        Dim conn As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\DataSources\\Nwind.mdb")
 	        conn.Open()
 	        Dim cmd As New OleDbCommand("Select TOP 5 * FROM Customers", conn)

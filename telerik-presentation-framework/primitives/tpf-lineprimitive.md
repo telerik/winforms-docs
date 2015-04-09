@@ -29,7 +29,7 @@ __LinePrimitive__ is actually a variation of a filled rectangle.
 
 #### __[C#] Creating a LinePrimitive__
 
-{{region myLinePrimitiveElement}}
+{{source=..\SamplesCS\TPF\Primitives\LinePrimitive1\MyLinePrimitiveElement.cs region=myLinePrimitiveElement}}
 	    public class MyLinePrimitiveElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -72,7 +72,7 @@ __LinePrimitive__ is actually a variation of a filled rectangle.
 
 #### __[VB.NET] Creating a LinePrimitive__
 
-{{region myLinePrimitiveElement}}
+{{source=..\SamplesVB\TPF\Primitives\LinePrimitive1\MyLinePrimitiveElement.vb region=myLinePrimitiveElement}}
 	Public Class MyLinePrimitiveElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

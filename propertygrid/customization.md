@@ -30,7 +30,7 @@ Here is an example on how you can change the back color of the subitems and also
 
 #### __[C#] Customizing items__
 
-{{region itemFormatting}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridCustomization.cs region=itemFormatting}}
 	        void radPropertyGrid1_ItemFormatting(object sender, PropertyGridItemFormattingEventArgs e)
 	        {
 	            //set the back color of all child items to yellow
@@ -67,7 +67,7 @@ Here is an example on how you can change the back color of the subitems and also
 
 #### __[VB.NET] Customizing items__
 
-{{region itemFormatting}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridCustomization.vb region=itemFormatting}}
 	    Private Sub radPropertyGrid1_ItemFormatting(ByVal sender As Object, ByVal e As PropertyGridItemFormattingEventArgs)
 	        'set the back color of all child items to yellow
 	        If e.Item.Level > 0 Then

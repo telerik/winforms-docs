@@ -28,7 +28,7 @@ Once the chart is created, the critical steps are creating the [ChartSeries]({%
 
 #### __[C#] Required namespaces__
 
-{{region namespace}}
+{{source=..\SamplesCS\Chart\CreatingRadChartProgrammaticaly.cs region=namespace}}
 	using Telerik.WinControls.UI;
 	using Telerik.Charting;
 	{{endregion}}
@@ -37,7 +37,7 @@ Once the chart is created, the critical steps are creating the [ChartSeries]({%
 
 #### __[VB.NET] Required namespaces__
 
-{{region namespace}}
+{{source=..\SamplesVB\Chart\CreatingRadChartProgrammaticaly.vb region=namespace}}
 	Imports Telerik.WinControls.UI
 	Imports Telerik.Charting
 	{{endregion}}
@@ -50,7 +50,7 @@ Once the chart is created, the critical steps are creating the [ChartSeries]({%
 
 #### __[C#] Instantiate RadChart and set its Text__
 
-{{region createAndSetText}}
+{{source=..\SamplesCS\Chart\CreatingRadChartProgrammaticaly.cs region=createAndSetText}}
 	            RadChart radChart = new RadChart();
 	            radChart.ChartTitle.TextBlock.Text = "My RadChart";
 	            this.Controls.Add(radChart);
@@ -60,7 +60,7 @@ Once the chart is created, the critical steps are creating the [ChartSeries]({%
 
 #### __[VB.NET] Instantiate RadChart and set its Text__
 
-{{region createAndSetText}}
+{{source=..\SamplesVB\Chart\CreatingRadChartProgrammaticaly.vb region=createAndSetText}}
 	        Dim RadChart1 As New RadChart()
 	        RadChart1.ChartTitle.TextBlock.Text = "My RadChart"
 	        Me.Controls.Add(RadChart1)
@@ -74,7 +74,7 @@ Once the chart is created, the critical steps are creating the [ChartSeries]({%
 
 #### __[C#] Create Series__
 
-{{region createChartSeries}}
+{{source=..\SamplesCS\Chart\CreatingRadChartProgrammaticaly.cs region=createChartSeries}}
 	            // Create a ChartSeries and assign its name and chart type
 	            Telerik.Charting.ChartSeries chartSeries = new Telerik.Charting.ChartSeries();
 	            chartSeries.Name = "Sales";
@@ -90,7 +90,7 @@ Once the chart is created, the critical steps are creating the [ChartSeries]({%
 
 #### __[VB.NET] Create Series__
 
-{{region createChartSeries}}
+{{source=..\SamplesVB\Chart\CreatingRadChartProgrammaticaly.vb region=createChartSeries}}
 	        ' Create a ChartSeries and assign its name and chart type
 	        Dim chartSeries As New Telerik.Charting.ChartSeries()
 	        chartSeries.Name = "Sales"
@@ -109,7 +109,7 @@ Once the chart is created, the critical steps are creating the [ChartSeries]({%
 
 #### __[C#] Adding Series to RadChart__
 
-{{region addSeriesToChart}}
+{{source=..\SamplesCS\Chart\CreatingRadChartProgrammaticaly.cs region=addSeriesToChart}}
 	            radChart.Series.Add(chartSeries);
 	{{endregion}}
 
@@ -117,7 +117,7 @@ Once the chart is created, the critical steps are creating the [ChartSeries]({%
 
 #### __[VB.NET] Adding Series to RadChart__
 
-{{region addSeriesToChart}}
+{{source=..\SamplesVB\Chart\CreatingRadChartProgrammaticaly.vb region=addSeriesToChart}}
 	        ' add the series to the RadChart Series collection
 	        RadChart1.Series.Add(chartSeries)
 	{{endregion}}
@@ -136,7 +136,7 @@ The alternative to using the [ChartSeries]({%slug chart-undestanding-radchart-el
 
 #### __[C#] Using the CreateSeries method__
 
-{{region usingCreateSeries}}
+{{source=..\SamplesCS\Chart\CreatingRadChartProgrammaticaly.cs region=usingCreateSeries}}
 	            Telerik.Charting.ChartSeries chartSeries1 = radChart.CreateSeries("Sales", System.Drawing.Color.RoyalBlue, System.Drawing.Color.LightSteelBlue, ChartSeriesType.Bar);
 	{{endregion}}
 
@@ -144,7 +144,7 @@ The alternative to using the [ChartSeries]({%slug chart-undestanding-radchart-el
 
 #### __[VB.NET] Using the CreateSeries method__
 
-{{region usingCreateSeries}}
+{{source=..\SamplesVB\Chart\CreatingRadChartProgrammaticaly.vb region=usingCreateSeries}}
 	        Dim chartSeries1 As Telerik.Charting.ChartSeries = RadChart1.CreateSeries("Sales", System.Drawing.Color.RoyalBlue, System.Drawing.Color.LightSteelBlue, ChartSeriesType.Bar)
 	{{endregion}}
 

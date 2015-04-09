@@ -20,7 +20,7 @@ In order to do this, you should first subscribe to the ActiveWindowChanged event
 
 #### __[C#]__
 
-{{region handlingActiveWindowChanged}}
+{{source=..\SamplesCS\Dock\DockingForms.cs region=handlingActiveWindowChanged}}
 	        void radDock1_ActiveWindowChanged(object sender, Telerik.WinControls.UI.Docking.DockWindowEventArgs e)
 	        {
 	            HostWindow hostWin = e.DockWindow as HostWindow;
@@ -38,7 +38,7 @@ In order to do this, you should first subscribe to the ActiveWindowChanged event
 
 #### __[VB.NET]__
 
-{{region handlingActiveWindowChanged}}
+{{source=..\SamplesVB\Dock\DockingForms.vb region=handlingActiveWindowChanged}}
 	    Private Sub radDock1_ActiveWindowChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Docking.DockWindowEventArgs)
 	        Dim hostWin As HostWindow = TryCast(e.DockWindow, HostWindow)
 	        If Not hostWin Is Nothing Then
@@ -61,7 +61,7 @@ In order to get a HostWindow that hosts a particular form/user control instance,
 
 #### __[C#]__
 
-{{region gettingWindow}}
+{{source=..\SamplesCS\Dock\DockingForms.cs region=gettingWindow}}
 	            HostWindow vegetablesWindow = this.radDock1.GetHostWindow(vegetablesForm);
 	{{endregion}}
 
@@ -69,7 +69,7 @@ In order to get a HostWindow that hosts a particular form/user control instance,
 
 #### __[VB.NET]__
 
-{{region gettingWindow}}
+{{source=..\SamplesVB\Dock\DockingForms.vb region=gettingWindow}}
 	        Dim vegetablesWindow As HostWindow = Me.RadDock1.GetHostWindow(VegetablesForm)
 	{{endregion}}
 

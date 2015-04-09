@@ -5,39 +5,36 @@ description: Funnel
 slug: chartview-series-types-funnel
 tags: funnel
 published: True
-position: 15
+position: 16
 ---
 
 # Funnel
 
 
 
-A Funnel chart displays a single series of data in progressively decreasing or increasing proportions,
+A funnel chart displays a single series of data in progressively decreasing or increasing proportions,
         organized in segments, where each segment represents the value for the particular item from the series.
         The items' values can also influence the height and the shape of the corresponding segments.
       ![chartview-series-types-funnel 001](images/chartview-series-types-funnel001.png)
 
 ## 
 
-The Funnel series has several properties that control the way a chart's segments are rendered.
+The funnel series has several properties that control the way a chart's segments are rendered.
 
-* __SegmentSpacing__ - The property specifies the space between the different segments of the funnel chart in pixels.
+* __SegmentSpacing:__ Specifies the space between the different segments of the funnel chart in pixels.
             
 
-* __DynamicHeight__ - A Boolean property that indicates whether all the segments will share the same size
-              (when DynamicHeightEnabled="false") or the height of
-              each segment is determined according to its value (when DynamicHeightEnabled="true"). Default value is true.
+* __DynamicHeight:__ A Boolean property that indicates whether all the segments will share the same size
+              (when DynamicHeightEnabled=*false*) or the height of
+              each segment is determined according to its value (when DynamicHeightEnabled=*true*). Default value is *true*.
             
 
-* __NeckRatio__ - The property specifies the ratio between the top and the bottom bases of the whole funnel series.
-              The property can take effect only if the DynamicSlopeEnabled property is set to "false" (see the next line).
+* __DynamicSlope:__ A Boolean property that indicates whether the form of each segment will be
+              based on the ratio between the value from the current and the next segment. Default value is *false*.
             
 
-* __DynamicSlope__ - A Boolean property that indicates whether the form of each segment will be
-              based on the ratio between the value from the current and the next segment. Default value is false.
-            
-
->If the __DynamicSlope__ property is set to true, __NeckRatio__ property is neglected.
+* __NeckRatio:__ The property specifies the ratio between the top and the bottom bases of the whole funnel series.
+              The property can take effect only if the __DynamicSlope__ property is set to *false*.
             
 
 The following example shows how you can add funnel series in code.
@@ -45,7 +42,7 @@ The following example shows how you can add funnel series in code.
 
 #### __[C#] __
 
-{{region funnel}}
+{{source=..\SamplesCS\ChartView\Series\FunnelSeriesCode.cs region=funnel}}
 	            radChartView1.AreaType = Telerik.WinControls.UI.ChartAreaType.Funnel;
 	            FunnelSeries funnelSeries = new FunnelSeries();
 	
@@ -64,7 +61,7 @@ The following example shows how you can add funnel series in code.
 
 #### __[VB.NET] __
 
-{{region funnel}}
+{{source=..\SamplesVB\ChartView\Series\FunnelSeriesCode.vb region=funnel}}
 	        radChartView1.AreaType = Telerik.WinControls.UI.ChartAreaType.Funnel
 	        Dim funnelSeries As New FunnelSeries()
 	

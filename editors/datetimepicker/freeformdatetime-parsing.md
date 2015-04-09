@@ -25,7 +25,7 @@ From Q2 2014 we introduced new MaskType of RadMaskedEditBox that is designed to 
 
 #### __[C#] Setting the value of RadDateTimePicker__
 
-{{region FreeFormDateTimeDateTimePicker}}
+{{source=..\SamplesCS\Editors\DateTimePicker2.cs region=FreeFormDateTimeDateTimePicker}}
 	
 	            this.radDateTimePicker1.DateTimePickerElement.TextBoxElement.MaskType = MaskType.FreeFormDateTime;
 	
@@ -35,7 +35,7 @@ From Q2 2014 we introduced new MaskType of RadMaskedEditBox that is designed to 
 
 #### __[VB.NET] Setting the value of RadDateTimePicker__
 
-{{region FreeFormDateTimeDateTimePicker}}
+{{source=..\SamplesVB\Editors\DateTimePicker2.vb region=FreeFormDateTimeDateTimePicker}}
 	
 	        Me.radDateTimePicker1.DateTimePickerElement.TextBoxElement.MaskType = MaskType.FreeFormDateTime
 	

@@ -22,7 +22,7 @@ This article will guide you through the process of achieving drag and drop funct
 
 #### __[C#] __
 
-{{region PopulateWithData}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropRadDragDropService.cs region=PopulateWithData}}
 	        
 	        DataTable gridViewDataTable = new DataTable();
 	        
@@ -64,7 +64,7 @@ This article will guide you through the process of achieving drag and drop funct
 
 #### __[VB.NET] __
 
-{{region PopulateWithData}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropRadDragDropService.vb region=PopulateWithData}}
 	    Private gridViewDataTable As New DataTable()
 	    Sub New()
 	
@@ -235,7 +235,7 @@ This article will guide you through the process of achieving drag and drop funct
 
 #### __[C#] __
 
-{{region RowBehavior}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropRadDragDropService.cs region=RowBehavior}}
 	        
 	        //initiates drag and drop service for clicked rows
 	        public class CustomRowGridBehavior : GridDataRowBehavior
@@ -258,7 +258,7 @@ This article will guide you through the process of achieving drag and drop funct
 
 #### __[VB.NET] __
 
-{{region RowBehavior}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropRadDragDropService.vb region=RowBehavior}}
 	
 	    'initiates drag and drop service for clicked rows
 	
@@ -315,7 +315,7 @@ This article will guide you through the process of achieving drag and drop funct
 
 #### __[C#] __
 
-{{region RegisterRowBehavior}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropRadDragDropService.cs region=RegisterRowBehavior}}
 	            
 	            //register the custom row behavior
 	            BaseGridBehavior gridBehavior = this.radGridView1.GridBehavior as BaseGridBehavior;
@@ -328,7 +328,7 @@ This article will guide you through the process of achieving drag and drop funct
 
 #### __[VB.NET] __
 
-{{region RegisterRowBehavior}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropRadDragDropService.vb region=RegisterRowBehavior}}
 	
 	        'register the custom row behavior
 	        Dim gridBehavior As BaseGridBehavior = TryCast(Me.RadGridView1.GridBehavior, BaseGridBehavior)
@@ -370,7 +370,7 @@ This article will guide you through the process of achieving drag and drop funct
 
 #### __[C#] __
 
-{{region GridViewToListView}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropRadDragDropService.cs region=GridViewToListView}}
 	        
 	        private void svc_PreviewDragStart(object sender, PreviewDragStartEventArgs e)
 	        {
@@ -424,7 +424,7 @@ This article will guide you through the process of achieving drag and drop funct
 
 #### __[VB.NET] __
 
-{{region GridViewToListView}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropRadDragDropService.vb region=GridViewToListView}}
 	
 	    Private Sub svc_PreviewDragStart(sender As Object, e As PreviewDragStartEventArgs)
 	        e.CanStart = True
@@ -530,7 +530,7 @@ This article will guide you through the process of achieving drag and drop funct
 
 #### __[C#] __
 
-{{region ListViewToGridView}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropRadDragDropService.cs region=ListViewToGridView}}
 	        
 	        private void DragDropService_PreviewDragOver(object sender, RadDragOverEventArgs e)
 	        {
@@ -576,7 +576,7 @@ This article will guide you through the process of achieving drag and drop funct
 
 #### __[VB.NET] __
 
-{{region ListViewToGridView}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropRadDragDropService.vb region=ListViewToGridView}}
 	
 	    Private Sub DragDropService_PreviewDragOver(sender As Object, e As RadDragOverEventArgs)
 	        e.CanDrop = TypeOf e.HitTarget Is GridTableElement OrElse TypeOf e.HitTarget Is GridDataRowElement

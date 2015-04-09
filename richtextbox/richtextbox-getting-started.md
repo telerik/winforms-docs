@@ -70,7 +70,7 @@ As you can see the text is still editable. To make it read only you have to set 
 
 #### __[C#] Read only mode__
 
-{{region ReadOnly}}
+{{source=..\SamplesCS\RichTextBox\RichTextBoxGettingStarted.cs region=ReadOnly}}
 	            radRichTextBox1.IsReadOnly = true;
 	{{endregion}}
 
@@ -78,7 +78,7 @@ As you can see the text is still editable. To make it read only you have to set 
 
 #### __[VB.NET] Read only mode__
 
-{{region ReadOnly}}
+{{source=..\SamplesVB\RichTextBox\RichTextBoxGettingStarted.vb region=ReadOnly}}
 	        RadRichTextBox1.IsReadOnly = True
 	{{endregion}}
 
@@ -94,7 +94,7 @@ If you want to allow the user to edit and format the content of the RadRichTextB
 
 #### __[C#] Bold, Italic, Underline__
 
-{{region BoldItalicUnderline}}
+{{source=..\SamplesCS\RichTextBox\RichTextBoxGettingStarted.cs region=BoldItalicUnderline}}
 	        private void boldButton_Click(object sender, EventArgs e)
 	        {
 	            this.radRichTextBox1.ToggleBold();
@@ -115,7 +115,7 @@ If you want to allow the user to edit and format the content of the RadRichTextB
 
 #### __[VB.NET] Bold, Italic, Underline__
 
-{{region BoldItalicUnderline}}
+{{source=..\SamplesVB\RichTextBox\RichTextBoxGettingStarted.vb region=BoldItalicUnderline}}
 	    Private Sub boldButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles boldButton.Click
 	        Me.RadRichTextBox1.ToggleBold()
 	    End Sub
@@ -149,7 +149,7 @@ The UI should also response, when the caret is on a position where the text is m
 
 #### __[C#] CurrentSpanStyleChanged and CurrentParagraphStyleChanged event handling__
 
-{{region CurrentSpanStyleChanged}}
+{{source=..\SamplesCS\RichTextBox\RichTextBoxGettingStarted.cs region=CurrentSpanStyleChanged}}
 	        void radRichTextBox1_CurrentSpanStyleChanged(object sender, EventArgs e)
 	        {
 	            StyleDefinition style = this.radRichTextBox1.CurrentEditingStyle;
@@ -165,7 +165,7 @@ The UI should also response, when the caret is on a position where the text is m
 
 #### __[VB.NET] CurrentSpanStyleChanged and CurrentParagraphStyleChanged event handling__
 
-{{region CurrentSpanStyleChanged}}
+{{source=..\SamplesVB\RichTextBox\RichTextBoxGettingStarted.vb region=CurrentSpanStyleChanged}}
 	    Private Sub radRichTextBox1_CurrentSpanStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
 	        Dim style As StyleDefinition = Me.RadRichTextBox1.CurrentEditingStyle
 	        Dim fontStyle As TextStyle = DirectCast(style.GetPropertyValue(Span.FontStyleProperty), TextStyle)

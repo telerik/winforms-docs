@@ -73,7 +73,7 @@ The example below detects when a value in the second column
 
 #### __[C#] Rule based formatting objects__
 
-{{region conditionalFormattingCells}}
+{{source=..\SamplesCS\GridView\Cells\ConditionalFormattingCells.cs region=conditionalFormattingCells}}
 	            ConditionalFormattingObject obj = new ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", false);
 	            obj.CellBackColor = Color.SkyBlue;
 	            obj.CellForeColor = Color.Red;
@@ -85,7 +85,7 @@ The example below detects when a value in the second column
 
 #### __[VB.NET] Rule based formatting objects__
 
-{{region conditionalFormattingCells}}
+{{source=..\SamplesVB\GridView\Cells\ConditionalFormattingCells.vb region=conditionalFormattingCells}}
 	        Dim obj As New ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", False)
 	        obj.CellBackColor = Color.SkyBlue
 	        obj.CellForeColor = Color.Red
@@ -109,7 +109,7 @@ The example below detects when a value in the second column "*UnitPrice*"
 
 #### __[C#] Expression based formatting objects__
 
-{{region expression}}
+{{source=..\SamplesCS\GridView\Cells\ConditionalFormattingCells.cs region=expression}}
 	            ExpressionFormattingObject obj = new ExpressionFormattingObject("MyCondition", "UnitPrice > 30", false);
 	            obj.CellBackColor = Color.SkyBlue;
 	            obj.CellForeColor = Color.Red;
@@ -120,7 +120,7 @@ The example below detects when a value in the second column "*UnitPrice*"
 
 #### __[VB.NET] Expression based formatting objects__
 
-{{region expression}}
+{{source=..\SamplesVB\GridView\Cells\ConditionalFormattingCells.vb region=expression}}
 	        Dim obj As New ExpressionFormattingObject("MyCondition", "UnitPrice > 30", False)
 	        obj.CellBackColor = Color.SkyBlue
 	        obj.CellForeColor = Color.Red
@@ -139,7 +139,7 @@ To access and customize the dialog, you can use the  __ConditionalFormattingForm
 
 #### __[C#] Expression based formatting objects__
 
-{{region expression}}
+{{source=..\SamplesCS\GridView\Cells\ConditionalFormattingCells.cs region=expression}}
 	            ExpressionFormattingObject obj = new ExpressionFormattingObject("MyCondition", "UnitPrice > 30", false);
 	            obj.CellBackColor = Color.SkyBlue;
 	            obj.CellForeColor = Color.Red;
@@ -150,7 +150,7 @@ To access and customize the dialog, you can use the  __ConditionalFormattingForm
 
 #### __[VB.NET] Expression based formatting objects__
 
-{{region expression}}
+{{source=..\SamplesVB\GridView\Cells\ConditionalFormattingCells.vb region=expression}}
 	        Dim obj As New ExpressionFormattingObject("MyCondition", "UnitPrice > 30", False)
 	        obj.CellBackColor = Color.SkyBlue
 	        obj.CellForeColor = Color.Red

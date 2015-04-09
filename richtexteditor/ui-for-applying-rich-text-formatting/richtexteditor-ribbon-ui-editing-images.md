@@ -44,7 +44,7 @@ To remove the image adorner from your application you can create a new __UILayer
 
 #### __[C#] __
 
-{{region layer}}
+{{source=..\SamplesCS\RichTextEditor\UI\EditingImages.cs region=layer}}
 	        public class CustomLayersBuilder : UILayersBuilder
 	        {
 	            protected override void BuildUILayersOverride(IUILayerContainer uiLayerContainer)
@@ -58,7 +58,7 @@ To remove the image adorner from your application you can create a new __UILayer
 
 #### __[VB.NET] __
 
-{{region layer}}
+{{source=..\SamplesVB\RichTextEditor\UI\EditingImages.vb region=layer}}
 	    Public Class CustomLayersBuilder
 	        Inherits UILayersBuilder
 	
@@ -80,7 +80,7 @@ Alternatively, you can disable the capabilities of the image adorner by accessin
 
 #### __[C#] __
 
-{{region disable}}
+{{source=..\SamplesCS\RichTextEditor\UI\EditingImages.cs region=disable}}
 	            this.radRichTextEditor1.ImageSelectionAdornerSettings.CanDrag = false;
 	            this.radRichTextEditor1.ImageSelectionAdornerSettings.CanResize = false;
 	            this.radRichTextEditor1.ImageSelectionAdornerSettings.CanRotate = false;
@@ -90,7 +90,7 @@ Alternatively, you can disable the capabilities of the image adorner by accessin
 
 #### __[VB.NET] __
 
-{{region disable}}
+{{source=..\SamplesVB\RichTextEditor\UI\EditingImages.vb region=disable}}
 	        Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanDrag = False
 	        Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanResize = False
 	        Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanRotate = False

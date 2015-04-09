@@ -20,7 +20,7 @@ The RadDropDownList __DropDownStyle__ property determines if the text area at th
 
 #### __[C#] Setting DropDownStyle__
 
-{{region dropDownStyle}}
+{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=dropDownStyle}}
 	            this.radDropDownList1.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDown;
 	            this.radDropDownList1.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
 	{{endregion}}
@@ -29,7 +29,7 @@ The RadDropDownList __DropDownStyle__ property determines if the text area at th
 
 #### __[VB.NET] Setting DropDownStyle__
 
-{{region dropDownStyle}}
+{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=dropDownStyle}}
 	        Me.radDropDownList1.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDown
 	        Me.radDropDownList1.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
 	{{endregion}}

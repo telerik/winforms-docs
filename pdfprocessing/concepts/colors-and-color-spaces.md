@@ -44,7 +44,7 @@ __Example 1__ demonstrates how you can create an RgbColor and assign it as Fill 
 
 #### __[C#] Example 1: Create RgbColor__
 
-{{region radpdfprocessing-concepts-colors-and-color-spaces_0}}
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.cs region=radpdfprocessing-concepts-colors-and-color-spaces_0}}
 	            
 	            RgbColor magenta = new RgbColor(255, 0, 255);
 	            Path path = new Path();
@@ -56,7 +56,7 @@ __Example 1__ demonstrates how you can create an RgbColor and assign it as Fill 
 
 #### __[VB.NET] Example 1: Create RgbColor__
 
-{{region radpdfprocessing-concepts-colors-and-color-spaces_0}}
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.vb region=radpdfprocessing-concepts-colors-and-color-spaces_0}}
 	        Dim magenta As RgbColor = New RgbColor(255, 0, 255)
 	        Dim path As Path = New Path()
 	        path.Fill = magenta
@@ -146,7 +146,7 @@ __Example 2__ shows hot to create a LinearGradient and assign it as the FillColo
 
 #### __[C#] Example 2: Create LinearGradient__
 
-{{region radpdfprocessing-concepts-colors-and-color-spaces_1}}
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.cs region=radpdfprocessing-concepts-colors-and-color-spaces_1}}
 	            
 	            FixedContentEditor containerEditor = new FixedContentEditor(container);
 	            
@@ -163,7 +163,7 @@ __Example 2__ shows hot to create a LinearGradient and assign it as the FillColo
 
 #### __[VB.NET] Example 2: Create LinearGradient__
 
-{{region radpdfprocessing-concepts-colors-and-color-spaces_1}}
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.vb region=radpdfprocessing-concepts-colors-and-color-spaces_1}}
 	
 	        Dim containerEditor As New FixedContentEditor(container)
 	
@@ -251,7 +251,7 @@ Since the __TilingBase__ class implements the __IContentRootElement__ interface 
 
 #### __[C#] Example 3: Create Tiling__
 
-{{region radpdfprocessing-concepts-colors-and-color-spaces_2}}
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.cs region=radpdfprocessing-concepts-colors-and-color-spaces_2}}
 	            
 	            FixedContentEditor containerEditor = new FixedContentEditor(container);
 	            
@@ -270,7 +270,7 @@ Since the __TilingBase__ class implements the __IContentRootElement__ interface 
 
 #### __[VB.NET] Example 3: Create Tiling__
 
-{{region radpdfprocessing-concepts-colors-and-color-spaces_2}}
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.vb region=radpdfprocessing-concepts-colors-and-color-spaces_2}}
 	        Dim containerEditor As FixedContentEditor = New FixedContentEditor(container)
 	
 	        Dim tiling As Tiling = New Tiling(New Rect(0, 0, 10, 10))

@@ -27,7 +27,7 @@ In order to apply custom logic for filtering, you have to create a
 
 #### __[C#] Creating predicate__
 
-{{region CustomFiltering2}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\TreeCustomFiltering.cs region=CustomFiltering2}}
 	        private bool FilterNode(RadTreeNode node)
 	        {
 	            if (node.Text.Length > 1)
@@ -43,7 +43,7 @@ In order to apply custom logic for filtering, you have to create a
 
 #### __[VB.NET] Creating predicate__
 
-{{region CustomFiltering2}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\TreeCustomFiltering.vb region=CustomFiltering2}}
 	    Private Function FilterNode(node As RadTreeNode) As Boolean
 	        If node.Text.Length > 1 Then
 	            Return True
@@ -63,7 +63,7 @@ To set the __Predicate__ to RadTreeView, use the
 
 #### __[C#] Applying predicate__
 
-{{region CustomFiltering1}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\TreeCustomFiltering.cs region=CustomFiltering1}}
 	            radTreeView1.TreeViewElement.FilterPredicate = FilterNode;
 	{{endregion}}
 
@@ -71,7 +71,7 @@ To set the __Predicate__ to RadTreeView, use the
 
 #### __[VB.NET] Applying predicate__
 
-{{region CustomFiltering1}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\TreeCustomFiltering.vb region=CustomFiltering1}}
 	        RadTreeView1.TreeViewElement.FilterPredicate = AddressOf FilterNode
 	{{endregion}}
 
@@ -85,7 +85,7 @@ At the end, in order to apply the filter to the control, just set the __Filter__
 
 #### __[C#] Invoke filtering__
 
-{{region CustomFiltering3}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\TreeCustomFiltering.cs region=CustomFiltering3}}
 	        private void radButton1_Click(object sender, EventArgs e)
 	        {
 	            this.radTreeView1.Filter = "Custom";
@@ -96,7 +96,7 @@ At the end, in order to apply the filter to the control, just set the __Filter__
 
 #### __[VB.NET] Invoke filtering__
 
-{{region CustomFiltering3}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\TreeCustomFiltering.vb region=CustomFiltering3}}
 	    Private Sub RadButton1_Click(sender As System.Object, e As System.EventArgs) Handles RadButton1.Click
 	        Me.RadTreeView1.Filter = "Custom"
 	    End Sub

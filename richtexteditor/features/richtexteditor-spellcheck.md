@@ -58,7 +58,7 @@ Here is an example of a __RadDictionary__ loaded from a TDF file.
 
 #### __[C#] __
 
-{{region load}}
+{{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=load}}
 	            
 	        private void LoadDictionary(Stream tdfFileStream)
 	        {
@@ -73,7 +73,7 @@ Here is an example of a __RadDictionary__ loaded from a TDF file.
 
 #### __[VB.NET] __
 
-{{region load}}
+{{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=load}}
 	
 	    Private Sub LoadDictionary1(ByVal tdfFileStream As Stream)
 	        Dim dictionary As New RadDictionary()
@@ -112,7 +112,7 @@ Here is an example of a such dictionary which adds the words in the "CustomDicti
 
 #### __[C#] __
 
-{{region custom}}
+{{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=custom}}
 	        
 	        private void CreateCustomDictionary()
 	        {
@@ -127,7 +127,7 @@ Here is an example of a such dictionary which adds the words in the "CustomDicti
 
 #### __[VB.NET] __
 
-{{region custom}}
+{{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=custom}}
 	
 	    Private Sub CreateCustomDictionary()
 	        Dim dictionary As New RadIsolatedStorageCustomDictionary(IsolatedStorageScope.Site, "CustomDictionary.txt")
@@ -172,7 +172,7 @@ Here is an example.
 
 #### __[C#] __
 
-{{region addword}}
+{{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=addword}}
 	            
 	            this.radRichTextEditor1.SpellChecker.AddWord("RadRichTextEditor", CultureInfo.InvariantCulture);
 	
@@ -182,7 +182,7 @@ Here is an example.
 
 #### __[VB.NET] __
 
-{{region addword}}
+{{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=addword}}
 	
 	        Me.radRichTextEditor1.SpellChecker.AddWord("RadRichTextEditor", CultureInfo.InvariantCulture)
 	
@@ -235,7 +235,7 @@ Here is an example.
 
 #### __[C#] __
 
-{{region load}}
+{{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=load}}
 	            
 	        private void LoadDictionary(Stream tdfFileStream)
 	        {
@@ -250,7 +250,7 @@ Here is an example.
 
 #### __[VB.NET] __
 
-{{region load}}
+{{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=load}}
 	
 	    Private Sub LoadDictionary1(ByVal tdfFileStream As Stream)
 	        Dim dictionary As New RadDictionary()

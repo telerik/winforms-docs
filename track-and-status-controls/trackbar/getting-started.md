@@ -40,7 +40,7 @@ This tutorial demonstrates connecting a RadTrackBar to a RadTextBox control. Se
 
 #### __[C#]__
 
-{{region valueChanged}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackGettingStarted.cs region=valueChanged}}
 	        void radTrackBar1_ValueChanged(object sender, EventArgs e)
 	        {
 	            this.radTextBox1.Text = radTrackBar1.Value.ToString();
@@ -51,7 +51,7 @@ This tutorial demonstrates connecting a RadTrackBar to a RadTextBox control. Se
 
 #### __[VB.NET]__
 
-{{region valueChanged}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackGettingStarted.vb region=valueChanged}}
 	    Private Sub radTrackBar1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
 	        Me.radTextBox1.Text = radTrackBar1.Value.ToString()
 	    End Sub

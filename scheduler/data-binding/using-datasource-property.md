@@ -47,7 +47,7 @@ RadScheduler works from a provider model so that in the future, custom appointme
 
 #### __[C#]__
 
-{{region creatingAppointment}}
+{{source=..\SamplesCS\Scheduler\DataBinding\UsingDataSourceProperty.cs region=creatingAppointment}}
 	            AppointmentMappingInfo appointmentMappingInfo = new AppointmentMappingInfo();
 	            appointmentMappingInfo.Start = "Start";
 	            appointmentMappingInfo.End = "End";
@@ -68,7 +68,7 @@ RadScheduler works from a provider model so that in the future, custom appointme
 
 #### __[VB.NET]__
 
-{{region creatingAppointment}}
+{{source=..\SamplesVB\Scheduler\DataBinding\UsingDataSourceProperty.vb region=creatingAppointment}}
 	        Dim appointmentMappingInfo As New AppointmentMappingInfo()
 	        appointmentMappingInfo.Start = "Start"
 	        appointmentMappingInfo.End = "End"
@@ -91,7 +91,7 @@ The resource mapping has fewer columns and doesn't need any information about jo
 
 #### __[C#]__
 
-{{region creatingResource}}
+{{source=..\SamplesCS\Scheduler\DataBinding\UsingDataSourceProperty.cs region=creatingResource}}
 	            ResourceMappingInfo resourceMappingInfo = new ResourceMappingInfo();
 	            resourceMappingInfo.Id = "ID";
 	            resourceMappingInfo.Name = "ResourceName";
@@ -104,7 +104,7 @@ The resource mapping has fewer columns and doesn't need any information about jo
 
 #### __[VB.NET]__
 
-{{region creatingResource}}
+{{source=..\SamplesVB\Scheduler\DataBinding\UsingDataSourceProperty.vb region=creatingResource}}
 	        Dim resourceMappingInfo As New ResourceMappingInfo()
 	        resourceMappingInfo.Id = "ID"
 	        resourceMappingInfo.Name = "ResourceName"

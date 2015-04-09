@@ -27,7 +27,7 @@ Here is an example of how to add an __InlineImage__ element in the code behind.
 
 #### __[C#] __
 
-{{region image}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\InlineImageCode.cs region=image}}
 	            
 	            Section section = new Section();
 	            Paragraph paragraph = new Paragraph();
@@ -49,7 +49,7 @@ Here is an example of how to add an __InlineImage__ element in the code behind.
 
 #### __[VB.NET] __
 
-{{region image}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\InlineImageCode.vb region=image}}
 	
 	        Dim section As New Section()
 	        Dim paragraph As New Paragraph()
@@ -99,7 +99,7 @@ Here is an example of how to allow the user to select an image and add it to the
 
 #### __[C#] __
 
-{{region insert}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\InlineImageCode.cs region=insert}}
 	        
 	        private void ImageButton_Click(object sender, RoutedEventArgs e)
 	        {
@@ -122,7 +122,7 @@ Here is an example of how to allow the user to select an image and add it to the
 
 #### __[VB.NET] __
 
-{{region insert}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\InlineImageCode.vb region=insert}}
 	
 	    Private Sub ImageButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	        Dim openDialog As New OpenFileDialog()

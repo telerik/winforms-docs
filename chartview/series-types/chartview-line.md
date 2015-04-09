@@ -20,7 +20,7 @@ __LineSeries__ plot their Categorical data points on Cartesian Area using one ca
 
 #### __[C#]__
 
-{{region line}}
+{{source=..\SamplesCS\ChartView\Series\LineSeriesForm.cs region=line}}
 	            LineSeries lineSeries = new LineSeries();
 	            lineSeries.DataPoints.Add(new CategoricalDataPoint(20, "Jan"));
 	            lineSeries.DataPoints.Add(new CategoricalDataPoint(22, "Apr"));
@@ -40,7 +40,7 @@ __LineSeries__ plot their Categorical data points on Cartesian Area using one ca
 
 #### __[VB.NET]__
 
-{{region line}}
+{{source=..\SamplesVB\ChartView\Series\LineSeriesForm.vb region=line}}
 	        Dim lineSeries As New LineSeries()
 	        lineSeries.DataPoints.Add(New CategoricalDataPoint(20, "Jan"))
 	        lineSeries.DataPoints.Add(New CategoricalDataPoint(22, "Apr"))

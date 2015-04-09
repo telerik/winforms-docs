@@ -20,7 +20,7 @@ There are two events that are raised, when the data in the RadGridView is groupe
 
 #### __[C#]__
 
-{{region subscribeToEvents}}
+{{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=subscribeToEvents}}
 	            radGridView1.GroupByChanging += new Telerik.WinControls.UI.GridViewCollectionChangingEventHandler(radGridView1_GroupByChanging);
 	            radGridView1.GroupByChanged += new Telerik.WinControls.UI.GridViewCollectionChangedEventHandler(radGridView1_GroupByChanged);
 	{{endregion}}
@@ -29,7 +29,7 @@ There are two events that are raised, when the data in the RadGridView is groupe
 
 #### __[C#]__
 
-{{region eventHandlers}}
+{{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=eventHandlers}}
 	        void radGridView1_GroupByChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
 	        {
 	            
@@ -45,7 +45,7 @@ There are two events that are raised, when the data in the RadGridView is groupe
 
 #### __[VB.NET]__
 
-{{region eventHandlers}}
+{{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=eventHandlers}}
 	    Private Sub RadGridView1_GroupByChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles RadGridView1.GroupByChanged
 	
 	    End Sub
@@ -73,7 +73,7 @@ You are also able to cancel the grouping operation by setting the __Cancel__ pro
 
 #### __[C#]__
 
-{{region cancelGrouping}}
+{{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=cancelGrouping}}
 	        void radGridView1_GroupByChanging1(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
 	        {
 	            e.Cancel = true;
@@ -84,7 +84,7 @@ You are also able to cancel the grouping operation by setting the __Cancel__ pro
 
 #### __[VB.NET]__
 
-{{region cancelGrouping}}
+{{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=cancelGrouping}}
 	    Private Sub RadGridView1_GroupByChanging1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.GroupByChanging
 	        e.Cancel = True
 	    End Sub
@@ -98,7 +98,7 @@ Since the __GroupDescriptors__ collection implements the __INotifyPropertyChange
 
 #### __[C#]__
 
-{{region subscribeToCollectionChanged}}
+{{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=subscribeToCollectionChanged}}
 	            radGridView1.GroupDescriptors.CollectionChanged += new Telerik.WinControls.Data.NotifyCollectionChangedEventHandler(GroupDescriptors_CollectionChanged);
 	{{endregion}}
 
@@ -106,7 +106,7 @@ Since the __GroupDescriptors__ collection implements the __INotifyPropertyChange
 
 #### __[C#]__
 
-{{region CollectionChangedHandler}}
+{{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=CollectionChangedHandler}}
 	        void GroupDescriptors_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
 	        {
 	
@@ -117,7 +117,7 @@ Since the __GroupDescriptors__ collection implements the __INotifyPropertyChange
 
 #### __[VB.NET]__
 
-{{region subscribeToCollectionChanged}}
+{{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=subscribeToCollectionChanged}}
 	        AddHandler Me.RadGridView1.GroupDescriptors.CollectionChanged, AddressOf GroupDescriptors_CollectionChanged
 	{{endregion}}
 
@@ -125,7 +125,7 @@ Since the __GroupDescriptors__ collection implements the __INotifyPropertyChange
 
 #### __[VB.NET]__
 
-{{region CollectionChangedHandler}}
+{{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=CollectionChangedHandler}}
 	    Private Sub GroupDescriptors_CollectionChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
 	
 	    End Sub

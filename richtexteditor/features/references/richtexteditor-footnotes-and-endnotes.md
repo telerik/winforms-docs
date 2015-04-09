@@ -88,7 +88,7 @@ Footnotes and endnotes all contain the __Note__ class which defines the note bod
 
 #### __[C#] __
 
-{{region insert}}
+{{source=..\SamplesCS\RichTextEditor\Features\FootnotesAndEndnotes.cs region=insert}}
 	
 	            radRichTextEditor1.InsertFootnote();
 	            radRichTextEditor1.InsertFootnote(new Note());
@@ -101,7 +101,7 @@ Footnotes and endnotes all contain the __Note__ class which defines the note bod
 
 #### __[VB.NET] __
 
-{{region insert}}
+{{source=..\SamplesVB\RichTextEditor\Features\FootnotesAndEndnotes.vb region=insert}}
 	
 	        radRichTextEditor1.InsertFootnote()
 	        radRichTextEditor1.InsertFootnote(New Note())
@@ -157,7 +157,7 @@ There is a set of document
 
 #### __[C#] __
 
-{{region static}}
+{{source=..\SamplesCS\RichTextEditor\Features\FootnotesAndEndnotes.cs region=static}}
 	
 	            Note note = Note.CreateCustomMarkFootnote("symbol");
 	            note = Note.CreateCustomMarkEndnote("symbol", new FontFamily("Arial"));
@@ -170,7 +170,7 @@ There is a set of document
 
 #### __[VB.NET] __
 
-{{region static}}
+{{source=..\SamplesVB\RichTextEditor\Features\FootnotesAndEndnotes.vb region=static}}
 	
 	        Dim note As Note = note.CreateCustomMarkFootnote("symbol")
 	        note = note.CreateCustomMarkEndnote("symbol", New FontFamily("Arial"))
@@ -213,7 +213,7 @@ Here is for example how to insert a footnote with a custom mark – dollar sign 
 
 #### __[C#] __
 
-{{region add}}
+{{source=..\SamplesCS\RichTextEditor\Features\FootnotesAndEndnotes.cs region=add}}
 	
 	            Note note1 = Note.CreateCustomMarkFootnote("$", new FontFamily("Calibri"));
 	            this.radRichTextEditor1.InsertFootnote(note1);
@@ -224,7 +224,7 @@ Here is for example how to insert a footnote with a custom mark – dollar sign 
 
 #### __[VB.NET] __
 
-{{region add}}
+{{source=..\SamplesVB\RichTextEditor\Features\FootnotesAndEndnotes.vb region=add}}
 	
 	        Dim note1 As Note = note.CreateCustomMarkFootnote("$", New FontFamily("Calibri"))
 	        Me.radRichTextEditor1.InsertFootnote(note1)
@@ -262,7 +262,7 @@ You can programmatically navigate the document caret position through the notes 
 
 #### __[C#] __
 
-{{region move}}
+{{source=..\SamplesCS\RichTextEditor\Features\FootnotesAndEndnotes.cs region=move}}
 	            
 	            radRichTextEditor1.GoToNextFootnote();
 	            radRichTextEditor1.GoToPreviousFootnote();
@@ -275,7 +275,7 @@ You can programmatically navigate the document caret position through the notes 
 
 #### __[VB.NET] __
 
-{{region move}}
+{{source=..\SamplesVB\RichTextEditor\Features\FootnotesAndEndnotes.vb region=move}}
 	
 	        radRichTextEditor1.GoToNextFootnote()
 	        radRichTextEditor1.GoToPreviousFootnote()
@@ -306,7 +306,7 @@ You can use the __ScrollToNote()__ method to scroll the viewport so that a note 
 
 #### __[C#] __
 
-{{region range}}
+{{source=..\SamplesCS\RichTextEditor\Features\FootnotesAndEndnotes.cs region=range}}
 	
 	            EndnoteRangeStart noteRangeStart = this.radRichTextEditor1.Document.EnumerateChildrenOfType<EndnoteRangeStart>().FirstOrDefault();
 	            
@@ -321,7 +321,7 @@ You can use the __ScrollToNote()__ method to scroll the viewport so that a note 
 
 #### __[VB.NET] __
 
-{{region range}}
+{{source=..\SamplesVB\RichTextEditor\Features\FootnotesAndEndnotes.vb region=range}}
 	
 	        Dim noteRangeStart As EndnoteRangeStart = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of EndnoteRangeStart)().FirstOrDefault()
 	

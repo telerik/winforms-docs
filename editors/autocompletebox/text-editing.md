@@ -26,7 +26,7 @@ You can insert text programmatically at concrete position by using the
 
 #### __[C#] __
 
-{{region insert}}
+{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=insert}}
 	        private void Insert()
 	        {
 	            this.radAutoCompleteBox1.Text = "USA;";
@@ -39,7 +39,7 @@ You can insert text programmatically at concrete position by using the
 
 #### __[VB.NET] __
 
-{{region insert}}
+{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=insert}}
 	    Private Sub Insert()
 	        Me.RadAutoCompleteBox1.Text = "USA;"
 	        Me.RadAutoCompleteBox1.CaretIndex = 0
@@ -129,7 +129,7 @@ Alternatively, you can insert text at the end of the RadAutoCompleteBox content
 
 #### __[C#] __
 
-{{region Append}}
+{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=Append}}
 	        private void Append()
 	        {
 	            this.radAutoCompleteBox1.Text = "IT Department;";
@@ -141,7 +141,7 @@ Alternatively, you can insert text at the end of the RadAutoCompleteBox content
 
 #### __[VB.NET] __
 
-{{region Append}}
+{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=Append}}
 	    Private Sub Append()
 	        Me.RadAutoCompleteBox1.Text = "IT Department;"
 	        Me.RadAutoCompleteBox1.AppendText("Marketing Team;")
@@ -223,7 +223,7 @@ You can delete the selected text or character at the caret position by using the
 
 #### __[C#] __
 
-{{region Delete}}
+{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=Delete}}
 	        private void DeleteText()
 	        {
 	            this.radAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;";
@@ -236,7 +236,7 @@ You can delete the selected text or character at the caret position by using the
 
 #### __[VB.NET] __
 
-{{region Delete}}
+{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=Delete}}
 	    Private Sub DeleteText()
 	        Me.RadAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;"
 	        Me.RadAutoCompleteBox1.[Select](0, 8)
@@ -312,7 +312,7 @@ Each editing operation raises the __TextChanging__ and
 
 #### __[C#] __
 
-{{region PreventDeleteOfTokens}}
+{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=PreventDeleteOfTokens}}
 	        void radAutoCompleteBox1_TextChanging(object sender, Telerik.WinControls.TextChangingEventArgs e)
 	        {
 	            e.Cancel = string.IsNullOrEmpty(e.NewValue) && e.OldValue.Contains(this.radAutoCompleteBox1.Delimiter.ToString());
@@ -323,7 +323,7 @@ Each editing operation raises the __TextChanging__ and
 
 #### __[VB.NET] __
 
-{{region PreventDeleteOfTokens}}
+{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=PreventDeleteOfTokens}}
 	    Private Sub radAutoCompleteBox1_TextChanging(sender As Object, e As Telerik.WinControls.TextChangingEventArgs)
 	        e.Cancel = String.IsNullOrEmpty(e.NewValue) AndAlso e.OldValue.Contains(Me.RadAutoCompleteBox1.Delimiter.ToString())
 	    End Sub

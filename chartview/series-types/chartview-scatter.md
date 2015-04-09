@@ -24,7 +24,7 @@ Unlike Categorical series, __ScatterSeries__ plots its data upon two numerical a
 
 #### __[C#] __
 
-{{region scatter}}
+{{source=..\SamplesCS\ChartView\Series\ScatterSeriesForm.cs region=scatter}}
 	            ScatterSeries scatterSeries = new ScatterSeries();
 	            scatterSeries.Name = "";
 	            scatterSeries.DataPoints.Add(new ScatterDataPoint(15, 19));
@@ -50,7 +50,7 @@ Unlike Categorical series, __ScatterSeries__ plots its data upon two numerical a
 
 #### __[VB.NET] __
 
-{{region scatter}}
+{{source=..\SamplesVB\ChartView\Series\ScatterSeriesForm.vb region=scatter}}
 	        Dim scatterSeries As New ScatterSeries()
 	        scatterSeries.Name = ""
 	        scatterSeries.DataPoints.Add(New ScatterDataPoint(15, 19))
@@ -91,7 +91,7 @@ __ScatterSeries__ have few important properties:
 
 #### __[C#] __
 
-{{region shape}}
+{{source=..\SamplesCS\ChartView\Series\ScatterSeriesForm.cs region=shape}}
 	            RoundRectShape shape = new RoundRectShape(0);
 	            scatterSeries2.Shape = shape;
 	{{endregion}}
@@ -100,7 +100,7 @@ __ScatterSeries__ have few important properties:
 
 #### __[VB.NET] __
 
-{{region shape}}
+{{source=..\SamplesVB\ChartView\Series\ScatterSeriesForm.vb region=shape}}
 	        Dim shape As New RoundRectShape(0)
 	        scatterSeries2.Shape = shape
 	{{endregion}}

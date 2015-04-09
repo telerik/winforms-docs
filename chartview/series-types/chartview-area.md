@@ -21,7 +21,7 @@ As a derivative of Categorical series, AreaSeries plot their data points using c
 
 #### __[C#] __
 
-{{region area}}
+{{source=..\SamplesCS\ChartView\Series\AreaSeriesForm.cs region=area}}
 	            AreaSeries areaSeries = new AreaSeries();
 	            areaSeries.DataPoints.Add(new CategoricalDataPoint(13, "Jan"));
 	            areaSeries.DataPoints.Add(new CategoricalDataPoint(20, "Apr"));
@@ -41,7 +41,7 @@ As a derivative of Categorical series, AreaSeries plot their data points using c
 
 #### __[VB.NET] __
 
-{{region area}}
+{{source=..\SamplesVB\ChartView\Series\AreaSeriesForm.vb region=area}}
 	        Dim series As New AreaSeries()
 	        series.DataPoints.Add(New CategoricalDataPoint(13, "Jan"))
 	        series.DataPoints.Add(New CategoricalDataPoint(20, "Apr"))

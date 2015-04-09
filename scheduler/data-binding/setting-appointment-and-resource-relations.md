@@ -30,7 +30,7 @@ Additionally, since the type of the ResourceId property in the Appointment class
 
 #### __[C#]__
 
-{{region sample}}
+{{source=..\SamplesCS\Scheduler\DataBinding\SettingAppointmentAndResourceRelations.cs region=sample}}
 	        private void SettingAppointmentAndResourceRelations_Load(object sender, EventArgs e)
 	        {
 	            // TODO: This line of code loads data into the 'schedulerDataOneToManyDataSet.Resources' table. You can move, or remove it, as needed.
@@ -89,7 +89,7 @@ Additionally, since the type of the ResourceId property in the Appointment class
 
 #### __[VB.NET]__
 
-{{region sample}}
+{{source=..\SamplesVB\Scheduler\DataBinding\SettingAppointmentAndResourceRelations.vb region=sample}}
 	    Private Sub SettingAppointmentAndResourceRelations_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 	        'TODO: This line of code loads data into the 'SchedulerDataOneToManyDataSet.Resources' table. You can move, or remove it, as needed.
 	        Me.ResourcesTableAdapter.Fill(Me.SchedulerDataOneToManyDataSet.Resources)

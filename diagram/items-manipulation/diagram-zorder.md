@@ -16,13 +16,13 @@ __RadDiagram__ gives you the ability to control the Z-Order of shapes and connec
         by using their __ZIndex__ property. You can also use __RadDiagramCommands__ 
         in order to increase/decrease __ZIndex__ of the selected __RadDiagramItems__ simultaneously.
 
-## Using ZIndex property
+## Using the ZIndex property
 
 Consider the following code:
 
 #### __[C#] __
 
-{{region ZOrder}}
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=ZOrder}}
 	                
 	            RadDiagramShape shape1 = new RadDiagramShape()
 	            {
@@ -60,7 +60,7 @@ Consider the following code:
 
 #### __[VB.NET] __
 
-{{region ZOrder}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=ZOrder}}
 	
 	        Dim shape1 As New RadDiagramShape() With { _
 	            .ShapeText = "shape1", _
@@ -159,6 +159,21 @@ Consider the following code:
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 
@@ -173,7 +188,7 @@ __RadDiagram__ provides a set of predefined commands for manipulating the select
 
 #### __[C#] __
 
-{{region CommandZIndex}}
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=CommandZIndex}}
 	                
 	            RadDiagramShape shape1 = new RadDiagramShape()
 	            {
@@ -205,7 +220,7 @@ __RadDiagram__ provides a set of predefined commands for manipulating the select
 	            shape3.Position = new Telerik.Windows.Diagrams.Core.Point(60, 80);
 	            radDiagram1.AddShape(shape3);
 	            
-	            RadDiagramConnection connection1 = new RadDiagramConnection() { Name = "aaaa" };
+	            RadDiagramConnection connection1 = new RadDiagramConnection() { Name = "connection1" };
 	            connection1.Source = shape1; 
 	            connection1.Target = shape2;
 	            connection1.ZIndex = 2;
@@ -216,7 +231,7 @@ __RadDiagram__ provides a set of predefined commands for manipulating the select
 	            
 	            RadDiagramConnection connection2 = new RadDiagramConnection()
 	            {
-	                Name = "bbbb"
+	                Name = "connection2"
 	            };
 	            connection2.Source = shape1;
 	            connection2.Target = shape3;
@@ -231,7 +246,7 @@ __RadDiagram__ provides a set of predefined commands for manipulating the select
 
 #### __[VB.NET] __
 
-{{region CommandZIndex}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=CommandZIndex}}
 	
 	        Dim shape1 As New RadDiagramShape() With { _
 	            .ShapeText = "shape1", _
@@ -297,6 +312,21 @@ __RadDiagram__ provides a set of predefined commands for manipulating the select
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 
@@ -307,7 +337,7 @@ Here is the result of selecting the first shape and executing the DiagramCommand
 
 #### __[C#] __
 
-{{region BringToFront}}
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=BringToFront}}
 	            
 	            this.radDiagram1.SelectedItem = shape1;
 	            this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.BringToFront, "");
@@ -318,7 +348,7 @@ Here is the result of selecting the first shape and executing the DiagramCommand
 
 #### __[VB.NET] __
 
-{{region BringToFront}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=BringToFront}}
 	
 	        Me.RadDiagram1.SelectedItem = shape1
 	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.BringToFront, "")
@@ -332,6 +362,21 @@ Here is the result of selecting the first shape and executing the DiagramCommand
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 
@@ -341,24 +386,39 @@ Here is the result of selecting the third shape and executing the DiagramCommand
 
 #### __[C#] __
 
-{{region SendToBack}}
-	
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=SendToBack}}
+	        
 	            this.radDiagram1.SelectedItem = shape3;
 	            this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.SendToBack, "");
-	
+	            
 	{{endregion}}
 
 
 
 #### __[VB.NET] __
 
-{{region SendToBack}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=SendToBack}}
 	
 	        Me.RadDiagram1.SelectedItem = shape3
 	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.SendToBack, "")
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 

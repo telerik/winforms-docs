@@ -16,7 +16,7 @@ position: 0
 
 #### __[C#]__
 
-{{region dropDownHeight}}
+{{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=dropDownHeight}}
 	            
 	            this.radMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownWidth = 500;
 	            
@@ -26,7 +26,7 @@ position: 0
 
 #### __[VB.NET]__
 
-{{region dropDownHeight}}
+{{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=dropDownHeight}}
 	        Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownWidth = 500
 	{{endregion}}
 
@@ -36,7 +36,7 @@ position: 0
 
 #### __[C#]__
 
-{{region dropDownWidth}}
+{{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=dropDownWidth}}
 	            
 	            this.radMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownHeight = 500;
 	
@@ -46,7 +46,7 @@ position: 0
 
 #### __[VB.NET]__
 
-{{region dropDownWidth}}
+{{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=dropDownWidth}}
 	        Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownHeight = 500
 	{{endregion}}
 

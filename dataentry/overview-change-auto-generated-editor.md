@@ -28,7 +28,7 @@ In the following example it will be demonstrated how to change default editor wi
 
 #### __[C#] __
 
-{{region empl1}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}}
 	        private class Employee
 	        {
 	            public string FirstName
@@ -79,7 +79,7 @@ In the following example it will be demonstrated how to change default editor wi
 
 #### __[VB.NET] __
 
-{{region empl1}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}}
 	        Private Class Employee
 	            Public Property FirstName() As String
 	                Get
@@ -174,7 +174,7 @@ In the following example it will be demonstrated how to change default editor wi
 
 #### __[C#] __
 
-{{region bind1}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}}
 	            this.radDataEntry1.DataSource = new Employee() 
 	            { 
 	                FirstName = "Sarah",
@@ -190,7 +190,7 @@ In the following example it will be demonstrated how to change default editor wi
 
 #### __[VB.NET] __
 
-{{region bind1}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}}
 	            Me.radDataEntry1.DataSource = New Employee() With { _
 	              .FirstName = "Sarah", _
 	              .LastName = "Blake", _
@@ -213,7 +213,7 @@ In the following example it will be demonstrated how to change default editor wi
 
 #### __[C#] __
 
-{{region EditorInitializing}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=EditorInitializing}}
 	        void radDataEntry1_EditorInitializing(object sender, Telerik.WinControls.UI.EditorInitializingEventArgs e)
 	        {
 	            if (e.Property.Name == "Salary")
@@ -231,7 +231,7 @@ In the following example it will be demonstrated how to change default editor wi
 
 #### __[VB.NET] __
 
-{{region EditorInitializing}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=EditorInitializing}}
 	        Private Sub radDataEntry1_EditorInitializing(sender As Object, e As Telerik.WinControls.UI.EditorInitializingEventArgs)
 	            If e.[Property].Name = "Salary" Then
 	                Dim radMaskedEditBox As New RadMaskedEditBox()
@@ -291,7 +291,7 @@ In the following example it will be demonstrated how to change default editor wi
 
 #### __[C#] __
 
-{{region BindingCreated}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=BindingCreated}}
 	        void radDataEntry1_BindingCreated(object sender, BindingCreatedEventArgs e)
 	        {
 	            if (e.DataMember == "Salary")
@@ -312,7 +312,7 @@ In the following example it will be demonstrated how to change default editor wi
 
 #### __[VB.NET] __
 
-{{region BindingCreated}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=BindingCreated}}
 	        Private Sub radDataEntry1_BindingCreated(sender As Object, e As BindingCreatedEventArgs)
 	            If e.DataMember = "Salary" Then
 	                AddHandler e.Binding.Parse, AddressOf Binding_Parse

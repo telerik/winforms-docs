@@ -62,7 +62,7 @@ Is an example demonstrating how to customize the header and footer:
 
 #### __[C#]__
 
-{{region HeaderAndFooter}}
+{{source=..\SamplesCS\TPF\Printing support\RadPrintDocument1.cs region=HeaderAndFooter}}
 	            RadPrintDocument document = new RadPrintDocument();
 	
 	            document.HeaderHeight = 30;
@@ -90,7 +90,7 @@ Is an example demonstrating how to customize the header and footer:
 
 #### __[VB.NET]__
 
-{{region HeaderAndFooter}}
+{{source=..\SamplesVB\TPF\Printing support\RadPrintDocument1.vb region=HeaderAndFooter}}
 	        Dim document As New RadPrintDocument()
 	
 	        document.HeaderHeight = 30
@@ -138,7 +138,7 @@ Here is a sample:
 
 #### __[C#]__
 
-{{region SpecialStrings}}
+{{source=..\SamplesCS\TPF\Printing support\RadPrintDocument1.cs region=SpecialStrings}}
 	            RadPrintDocument document = new RadPrintDocument();
 	            document.MiddleHeader = "Page [Page #] of [Total Pages]. Printed on [Date Printed] [Time Printed].";
 	{{endregion}}
@@ -147,7 +147,7 @@ Here is a sample:
 
 #### __[VB.NET]__
 
-{{region SpecialStrings}}
+{{source=..\SamplesVB\TPF\Printing support\RadPrintDocument1.vb region=SpecialStrings}}
 	        Dim document As New RadPrintDocument()
 	        document.MiddleHeader = "Page [Page #] of [Total Pages]. Printed on [Date Printed] [Time Printed]."
 	{{endregion}}

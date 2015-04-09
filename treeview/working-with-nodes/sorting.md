@@ -35,7 +35,7 @@ For example, if we have this RadTreeView instance:
 
 #### __[C#]__
 
-{{region sort}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=sort}}
 	            this.radTreeView1.SortOrder = SortOrder.Ascending;
 	{{endregion}}
 
@@ -43,7 +43,7 @@ For example, if we have this RadTreeView instance:
 
 #### __[VB.NET]__
 
-{{region sort}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=sort}}
 	        Me.RadTreeView1.SortOrder = SortOrder.Ascending
 	{{endregion}}
 

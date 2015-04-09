@@ -78,7 +78,7 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__
 
 #### __[C#] Include namespaces__
 
-{{region namespace}}
+{{source=..\SamplesCS\Dock\GettingStarted.cs region=namespace}}
 	using Telerik.WinControls.UI;
 	using Telerik.WinControls.UI.Docking;
 	{{endregion}}
@@ -87,7 +87,7 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__
 
 #### __[VB.NET] Include namespaces__
 
-{{region namespace}}
+{{source=..\SamplesVB\Dock\GettingStarted.vb region=namespace}}
 	Imports Telerik.WinControls.UI
 	Imports Telerik.WinControls.UI.Docking
 	{{endregion}}
@@ -102,7 +102,7 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__
 
 #### __[C#] Initializing RadTreeView__
 
-{{region settingUpTree}}
+{{source=..\SamplesCS\Dock\GettingStarted.cs region=settingUpTree}}
 	        void Form1_Load(object sender, EventArgs e)
 	        {
 	            RadTreeNode productNode = radTreeView1.Nodes.Add("Product Reports");
@@ -124,7 +124,7 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__
 
 #### __[VB.NET] Initializing RadTreeView__
 
-{{region settingUpTree}}
+{{source=..\SamplesVB\Dock\GettingStarted.vb region=settingUpTree}}
 	    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        Dim productNode As RadTreeNode = RadTreeView1.Nodes.Add("Product Reports")
 	        Dim customerNode As RadTreeNode = RadTreeView1.Nodes.Add("Customer Reports")
@@ -150,7 +150,7 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__
 
 #### __[C#] Handling the RadTreeView SelectedNodeChanged event__
 
-{{region handlingSelectedNodeChanged}}
+{{source=..\SamplesCS\Dock\GettingStarted.cs region=handlingSelectedNodeChanged}}
 	        void radTreeView1_SelectedNodeChanged(object sender, RadTreeViewEventArgs e)
 	        {            
 	            if (e.Node.Tag != null)
@@ -168,7 +168,7 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__
 
 #### __[VB.NET] Handling the RadTreeView SelectedNodeChanged event__
 
-{{region handlingSelectedNodeChanged}}
+{{source=..\SamplesVB\Dock\GettingStarted.vb region=handlingSelectedNodeChanged}}
 	    Private Sub RadTreeView1_SelectedNodeChanged(ByVal sender As Object, ByVal e As RadTreeViewEventArgs)
 	        If Not e.Node.Tag Is Nothing Then
 	            Dim dw As DockWindow = Me.RadDock1(e.Node.Tag.ToString())

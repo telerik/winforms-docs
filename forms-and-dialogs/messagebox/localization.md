@@ -27,7 +27,7 @@ RadMessageLocalizationProvider:
 
 #### __[C#] Creating a custom localization provider__
 
-{{region LocalizationProvider}}
+{{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=LocalizationProvider}}
 	    public class MyRadMessageLocalizationProvider : RadMessageLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -52,7 +52,7 @@ RadMessageLocalizationProvider:
 
 #### __[VB.NET] Creating a custom localization provider__
 
-{{region LocalizationProvider}}
+{{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=LocalizationProvider}}
 	Public Class MyRadMessageLocalizationProvider
 	    Inherits RadMessageLocalizationProvider
 	
@@ -87,7 +87,7 @@ RadMessageLocalizationProvider:
 
 #### __[C#] Setting the custom localization provider to RadMessageBox__
 
-{{region settingTheLocalizationProvider}}
+{{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=settingTheLocalizationProvider}}
 	            RadMessageLocalizationProvider.CurrentProvider = new MyRadMessageLocalizationProvider();
 	{{endregion}}
 
@@ -95,7 +95,7 @@ RadMessageLocalizationProvider:
 
 #### __[VB.NET] Setting the custom localization provider to RadMessageBox__
 
-{{region settingTheLocalizationProvider}}
+{{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=settingTheLocalizationProvider}}
 	        RadMessageLocalizationProvider.CurrentProvider = New MyRadMessageLocalizationProvider()
 	{{endregion}}
 

@@ -49,7 +49,7 @@ The most common scenarios for the use of custom annotations is for associating s
 
 #### __[C#] __
 
-{{region create}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=create}}
 	        
 	        protected override DocumentElement CreateNewElementInstance()
 	        {
@@ -66,7 +66,7 @@ The most common scenarios for the use of custom annotations is for associating s
 
 #### __[VB.NET] __
 
-{{region create}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=create}}
 	
 	    Protected Overrides Function CreateNewElementInstance() As DocumentElement
 	        Return New CustomAnnotationRangeStart()
@@ -171,7 +171,7 @@ The most common scenarios for the use of custom annotations is for associating s
 
 #### __[C#] __
 
-{{region instance}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=instance}}
 	        protected override AnnotationRangeStart CreateRangeStartInstance()
 	        {
 	            return new CustomAnnotationRangeStart();
@@ -182,7 +182,7 @@ The most common scenarios for the use of custom annotations is for associating s
 
 #### __[VB.NET] __
 
-{{region instance}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=instance}}
 	    Protected Overrides Function CreateRangeStartInstance() As AnnotationRangeStart
 	        Return New CustomAnnotationRangeStart()
 	    End Function
@@ -239,7 +239,7 @@ The behavior of the annotations when edited, copied and deleted is determined by
 
 #### __[C#] __
 
-{{region copy}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=copy}}
 	
 	        protected override void CopyPropertiesFromOverride(DocumentElement fromElement)
 	        {
@@ -253,7 +253,7 @@ The behavior of the annotations when edited, copied and deleted is determined by
 
 #### __[VB.NET] __
 
-{{region copy}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=copy}}
 	
 	    Protected Overrides Sub CopyPropertiesFromOverride(ByVal fromElement As DocumentElement)
 	        MyBase.CopyPropertiesFromOverride(fromElement)
@@ -361,7 +361,7 @@ The behavior of the annotations when edited, copied and deleted is determined by
 
 #### __[C#] __
 
-{{region delete}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=delete}}
 	                
 	        public override AnnotationMarkerDeleteBehavior DeleteBehavior
 	        {
@@ -393,7 +393,7 @@ The behavior of the annotations when edited, copied and deleted is determined by
 
 #### __[VB.NET] __
 
-{{region delete}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=delete}}
 	
 	    Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
 	        Get
@@ -476,7 +476,7 @@ HyperlinkRangeEnd:
 
 #### __[C#] __
 
-{{region delete2}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=delete2}}
 	        
 	        public override AnnotationMarkerDeleteBehavior DeleteBehavior
 	        {
@@ -508,7 +508,7 @@ HyperlinkRangeEnd:
 
 #### __[VB.NET] __
 
-{{region delete2}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=delete2}}
 	
 	    Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
 	        Get
@@ -539,7 +539,7 @@ HyperlinkRangeEnd:
 
 #### __[C#] __
 
-{{region name}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=name}}
 	            
 	        [XamlSerializable]
 	        public string Name { get; set; }
@@ -550,7 +550,7 @@ HyperlinkRangeEnd:
 
 #### __[VB.NET] __
 
-{{region name}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=name}}
 	
 	    <XamlSerializable>
 	    Public Property Name() As String

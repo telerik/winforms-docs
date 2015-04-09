@@ -26,7 +26,7 @@ __RadListView__  supports drag and drop functionality from another control,
 
 #### __[C#] __
 
-{{region ListBoxToListViewStart}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropFromAnotherControl.cs region=ListBoxToListViewStart}}
 	
 	        private bool isDragging;
 	        private Point mouseDownPosition; 
@@ -84,7 +84,7 @@ __RadListView__  supports drag and drop functionality from another control,
 
 #### __[VB.NET] __
 
-{{region ListBoxToListViewStart}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropFromAnotherControl.vb region=ListBoxToListViewStart}}
 	
 	    Private isDragging As Boolean
 	    Private mouseDownPosition As Point
@@ -235,7 +235,7 @@ __RadListView__  supports drag and drop functionality from another control,
 
 #### __[C#] __
 
-{{region ListBoxToListViewDragDrop}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropFromAnotherControl.cs region=ListBoxToListViewDragDrop}}
 	        
 	        private void radListView1_DragDrop(object sender, DragEventArgs e)
 	        {
@@ -274,7 +274,7 @@ __RadListView__  supports drag and drop functionality from another control,
 
 #### __[VB.NET] __
 
-{{region ListBoxToListViewDragDrop}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropFromAnotherControl.vb region=ListBoxToListViewDragDrop}}
 	
 	
 	    Private Sub radListView1_DragDrop(sender As Object, e As DragEventArgs)
@@ -382,7 +382,7 @@ __RadListView__  supports drag and drop functionality from another control,
 
 #### __[C#] __
 
-{{region ListViewToListBoxStart}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropFromAnotherControl.cs region=ListViewToListBoxStart}}
 	
 	        private Point lastMouseDownLocation;
 	
@@ -425,7 +425,7 @@ __RadListView__  supports drag and drop functionality from another control,
 
 #### __[VB.NET] __
 
-{{region ListViewToListBoxStart}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropFromAnotherControl.vb region=ListViewToListBoxStart}}
 	
 	    Private lastMouseDownLocation As Point
 	
@@ -494,7 +494,7 @@ __RadListView__  supports drag and drop functionality from another control,
 
 #### __[C#] __
 
-{{region ListViewToListBoxDrop}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropFromAnotherControl.cs region=ListViewToListBoxDrop}}
 	
 	        private void listBox1_DragDrop(object sender, DragEventArgs e)
 	        {
@@ -531,7 +531,7 @@ __RadListView__  supports drag and drop functionality from another control,
 
 #### __[VB.NET] __
 
-{{region ListViewToListBoxDrop}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropFromAnotherControl.vb region=ListViewToListBoxDrop}}
 	
 	    Private Sub listBox1_DragDrop(sender As Object, e As DragEventArgs)
 	        Dim draggedItem As ListViewDataItem = TryCast(e.Data.GetData(GetType(ListViewDataItem)), ListViewDataItem)

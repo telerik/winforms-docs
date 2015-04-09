@@ -37,7 +37,7 @@ You can add any element that derives from the RadElement class inside the __RadE
 
 #### __C#__
 
-{{region add}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\UIContainerCode.cs region=add}}
 	            
 	            RadButtonElement button = new RadButtonElement();
 	            button.Text = "My Button";
@@ -59,7 +59,7 @@ You can add any element that derives from the RadElement class inside the __RadE
 
 #### __VB.NET__
 
-{{region add}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\UIContainerCode.vb region=add}}
 	
 	        Dim button As New RadButtonElement()
 	        button.Text = "My Button"

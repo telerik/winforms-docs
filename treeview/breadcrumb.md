@@ -26,7 +26,7 @@ Use __DefaultTreeView__ property of __RadBreadCrumb__ to associate the bread cr
 
 #### __[C#] __
 
-{{region defaultTreeView}}
+{{source=..\SamplesCS\TreeView\BreadCrumb.cs region=defaultTreeView}}
 	            radBreadCrumb1.DefaultTreeView = radTreeView1;
 	{{endregion}}
 
@@ -34,7 +34,7 @@ Use __DefaultTreeView__ property of __RadBreadCrumb__ to associate the bread cr
 
 #### __[VB.NET] __
 
-{{region defaultTreeView}}
+{{source=..\SamplesVB\TreeView\BreadCrumb.vb region=defaultTreeView}}
 	        RadBreadCrumb1.DefaultTreeView = RadTreeView1
 	{{endregion}}
 

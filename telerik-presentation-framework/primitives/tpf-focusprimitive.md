@@ -20,7 +20,7 @@ FocusPrimitive supplies user interface cues that an element has received focus. 
 
 #### __[C#] Creating a FocusPrimitive__
 
-{{region myFocusPrimitiveElement}}
+{{source=..\SamplesCS\TPF\Primitives\FocusPrimitive1\MyFocusPrimitiveElement.cs region=myFocusPrimitiveElement}}
 	    public class MyFocusPrimitiveElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -43,7 +43,7 @@ FocusPrimitive supplies user interface cues that an element has received focus. 
 
 #### __[VB.NET] Creating a FocusPrimitive__
 
-{{region myFocusPrimitiveElement}}
+{{source=..\SamplesVB\TPF\Primitives\FocusPrimitive1\MyFocusPrimitiveElement.vb region=myFocusPrimitiveElement}}
 	Public Class MyFocusPrimitiveElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

@@ -66,7 +66,7 @@ with __MockIntegerDataSource__ (the implementation of this data source can be fo
 
 #### __[C#]  Implementing the Virtual Mode__
 
-{{region virtualMode}}
+{{source=..\SamplesCS\GridView\VirtualMode\VirtualMode1.cs region=virtualMode}}
 	        public VirtualMode1()
 	        {
 	            InitializeComponent();
@@ -104,7 +104,7 @@ with __MockIntegerDataSource__ (the implementation of this data source can be fo
 
 #### __[VB.NET]  Implementing the Virtual Mode__
 
-{{region virtualMode}}
+{{source=..\SamplesVB\GridView\VirtualMode\VirtualMode1.vb region=virtualMode}}
 	    Public Sub New()
 	        InitializeComponent()
 	        Me.RadGridView1.EnableSorting = False

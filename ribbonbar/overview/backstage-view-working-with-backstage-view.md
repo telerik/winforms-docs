@@ -18,7 +18,7 @@ To enable the Backstage View in RadRibbonBar change the __ApplicationMenuStyle__
 
 #### __[C#] Enabling Backstage view mode__
 
-{{region ApplicationMenuStyle}}
+{{source=..\SamplesCS\RibbonBar\BackstageView\RibbonBackstageView.cs region=ApplicationMenuStyle}}
 	            radRibbonBar1.ApplicationMenuStyle = Telerik.WinControls.UI.ApplicationMenuStyle.BackstageView;
 	{{endregion}}
 
@@ -26,7 +26,7 @@ To enable the Backstage View in RadRibbonBar change the __ApplicationMenuStyle__
 
 #### __[VB.NET] Enabling Backstage view mode__
 
-{{region ApplicationMenuStyle}}
+{{source=..\SamplesVB\RibbonBar\BackstageView\RibbonBackstageView.vb region=ApplicationMenuStyle}}
 	        RadRibbonBar1.ApplicationMenuStyle = Telerik.WinControls.UI.ApplicationMenuStyle.BackstageView
 	{{endregion}}
 
@@ -63,7 +63,7 @@ You can also add these items as well as any other RadItem to the backstageviewâ€
 
 #### __[C#] Adding items programatically__
 
-{{region addingItems}}
+{{source=..\SamplesCS\RibbonBar\BackstageView\RibbonBackstageView.cs region=addingItems}}
 	            radRibbonBarBackstageView1.Items.Add(new BackstageButtonItem("ButtonItem"));
 	            radRibbonBarBackstageView1.Items.Add(new RadButtonElement("ButtonElement"));
 	            radRibbonBarBackstageView1.Items.Add(new RadDropDownListElement());
@@ -73,7 +73,7 @@ You can also add these items as well as any other RadItem to the backstageviewâ€
 
 #### __[VB.NET] Adding items programatically__
 
-{{region addingItems}}
+{{source=..\SamplesVB\RibbonBar\BackstageView\RibbonBackstageView.vb region=addingItems}}
 	        RadRibbonBarBackstageView1.Items.Add(New BackstageButtonItem("ButtonItem"))
 	        RadRibbonBarBackstageView1.Items.Add(New RadButtonElement("ButtonElement"))
 	        RadRibbonBarBackstageView1.Items.Add(New RadDropDownListElement())

@@ -28,7 +28,7 @@ You have to create a DataSet instance from the xml file. For the sample xml fil
 
 #### __[C#] Binding to XML__
 
-{{region bindingToXML}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToXml.cs region=bindingToXML}}
 	            DataSet xmlDataSet = new DataSet();
 	            xmlDataSet.ReadXml("..\\..\\GridView\\PopulatingWithData\\gridXml.xml");
 	            this.radGridView1.DataSource = xmlDataSet.Tables[0];
@@ -38,7 +38,7 @@ You have to create a DataSet instance from the xml file. For the sample xml fil
 
 #### __[VB.NET] Binding to XML__
 
-{{region bindingToXML}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToXml.vb region=bindingToXML}}
 	        Dim xmlDataSet As New DataSet()
 	        xmlDataSet.ReadXml("..\\..\\GridView\\PopulatingWithData\\gridXml.xml")
 	        Me.RadGridView1.DataSource = xmlDataSet.Tables(0)

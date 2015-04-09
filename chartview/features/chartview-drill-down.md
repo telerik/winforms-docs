@@ -30,7 +30,7 @@ To support this functionality a __DrillDownControler__ should be used:
 
 #### __[C#]__
 
-{{region DrillControler}}
+{{source=..\SamplesCS\ChartView\Features\ChartDrillDown.cs region=DrillControler}}
 	            DrillDownController drillControler = new DrillDownController();
 	            this.radChartView1.Controllers.Add(drillControler);
 	{{endregion}}
@@ -39,7 +39,7 @@ To support this functionality a __DrillDownControler__ should be used:
 
 #### __[VB.NET]__
 
-{{region DrillControler}}
+{{source=..\SamplesVB\ChartView\Features\ChartDrillDown.vb region=DrillControler}}
 	            Dim drillControler As New DrillDownController()
 	            Me.radChartView1.Controllers.Add(drillControler)
 	            '#End Region
@@ -292,7 +292,7 @@ Then, you will need to add as many __ChartViews__ as you need. Each __ChartView_
 
 #### __[C#]__
 
-{{region AddNewView}}
+{{source=..\SamplesCS\ChartView\Features\ChartDrillDown.cs region=AddNewView}}
 	            radChartView1.Views.AddNew("Revenue by Month");
 	            radChartView1.Views.AddNew("Revenue by Day");
 	{{endregion}}
@@ -301,7 +301,7 @@ Then, you will need to add as many __ChartViews__ as you need. Each __ChartView_
 
 #### __[VB.NET]__
 
-{{region AddNewView}}
+{{source=..\SamplesVB\ChartView\Features\ChartDrillDown.vb region=AddNewView}}
 	            radChartView1.Views.AddNew("Revenue by Month")
 	            radChartView1.Views.AddNew("Revenue by Day")
 	            '#End Region
@@ -549,7 +549,7 @@ To handle the different levels, the __Drill__ event should be used. Depending on
 
 #### __[C#]__
 
-{{region DrillEvent}}
+{{source=..\SamplesCS\ChartView\Features\ChartDrillDown.cs region=DrillEvent}}
 	
 	        int year, month;
 	
@@ -586,7 +586,7 @@ To handle the different levels, the __Drill__ event should be used. Depending on
 
 #### __[VB.NET]__
 
-{{region DrillEvent}}
+{{source=..\SamplesVB\ChartView\Features\ChartDrillDown.vb region=DrillEvent}}
 	
 	        Private year As Integer, month As Integer
 	
@@ -807,7 +807,7 @@ To make the example complete you should make few more steps:
 
 #### __[C#]__
 
-{{region DrillDownDataInfo}}
+{{source=..\SamplesCS\ChartView\Features\ChartDrillDown.cs region=DrillDownDataInfo}}
 	    public class DrillDownDataInfo : INotifyPropertyChanged
 	    {
 	        double value;
@@ -862,7 +862,7 @@ To make the example complete you should make few more steps:
 
 #### __[VB.NET]__
 
-{{region DrillDownDataInfo}}
+{{source=..\SamplesVB\ChartView\Features\ChartDrillDown.vb region=DrillDownDataInfo}}
 	    Public Class DrillDownDataInfo
 	        Implements INotifyPropertyChanged
 	        Private m_value As Double
@@ -914,7 +914,7 @@ To make the example complete you should make few more steps:
 
 #### __[C#]__
 
-{{region LoadData}}
+{{source=..\SamplesCS\ChartView\Features\ChartDrillDown.cs region=LoadData}}
 	        private BindingList<DrillDownDataInfo> LoadDataByYears()
 	        {
 	            Stream stream = System.Reflection.Assembly.GetAssembly(this.GetType()).GetManifestResourceStream("SamplesCS.ChartView.Features.DJIA.csv");
@@ -1012,7 +1012,7 @@ To make the example complete you should make few more steps:
 
 #### __[VB.NET]__
 
-{{region LoadData}}
+{{source=..\SamplesVB\ChartView\Features\ChartDrillDown.vb region=LoadData}}
 	        Private Function LoadDataByYears() As BindingList(Of DrillDownDataInfo)
 	            Dim stream As Stream = System.Reflection.Assembly.GetAssembly(Me.[GetType]()).GetManifestResourceStream("SamplesCS.ChartView.Features.DJIA.csv")
 	            Dim chartData As New BindingList(Of DrillDownDataInfo)()
@@ -1160,7 +1160,7 @@ To make the example complete you should make few more steps:
 
 #### __[C#]__
 
-{{region DataByYears}}
+{{source=..\SamplesCS\ChartView\Features\ChartDrillDown.cs region=DataByYears}}
 	            BarSeries barSeries = new BarSeries();
 	            barSeries.ValueMember = "Value";
 	            barSeries.CategoryMember = "Date";
@@ -1184,7 +1184,7 @@ To make the example complete you should make few more steps:
 
 #### __[VB.NET]__
 
-{{region DataByYears}}
+{{source=..\SamplesVB\ChartView\Features\ChartDrillDown.vb region=DataByYears}}
 	            Dim barSeries As New BarSeries()
 	            barSeries.ValueMember = "Value"
 	            barSeries.CategoryMember = "Date"

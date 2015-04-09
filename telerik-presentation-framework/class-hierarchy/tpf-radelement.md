@@ -63,7 +63,7 @@ Behaviors are a mechanism that trigger actions when specific properties are chan
 
 #### __[C#]__
 
-{{region PropertyChangeBehavior}}
+{{source=..\SamplesCS\TPF\ClassHierarchy\RadElementForm.cs region=PropertyChangeBehavior}}
 	        
 	        public class ItemSelectedBehavior : PropertyChangeBehavior
 	        {
@@ -91,7 +91,7 @@ Behaviors are a mechanism that trigger actions when specific properties are chan
 
 #### __[VB.NET]__
 
-{{region PropertyChangeBehavior}}
+{{source=..\SamplesVB\TPF\ClassHierarchy\RadElementForm.vb region=PropertyChangeBehavior}}
 	    Public Class ItemSelectedBehavior
 	        Inherits PropertyChangeBehavior
 	        Private pageViewItem As RadPageViewItem

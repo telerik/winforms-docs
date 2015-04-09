@@ -21,7 +21,7 @@ Similarly to other WinForms data controls, RadPivotGrid can be populated with da
 
 #### __[C#] __
 
-{{region FillWithData}}
+{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheDataSourceProperty.cs region=FillWithData}}
 	            this.radPivotGrid1.RowGroupDescriptions.Add(new DateTimeGroupDescription() { PropertyName = "OrderDate", Step = DateTimeStep.Year, GroupComparer = new GroupNameComparer() });
 	            this.radPivotGrid1.RowGroupDescriptions.Add(new DateTimeGroupDescription() { PropertyName = "OrderDate", Step = DateTimeStep.Quarter, GroupComparer = new GroupNameComparer() });
 	            this.radPivotGrid1.RowGroupDescriptions.Add(new DateTimeGroupDescription() { PropertyName = "OrderDate", Step = DateTimeStep.Month, GroupComparer = new GroupNameComparer() });
@@ -45,7 +45,7 @@ Similarly to other WinForms data controls, RadPivotGrid can be populated with da
 
 #### __[VB.NET] __
 
-{{region FillWithData}}
+{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheDataSourceProperty.vb region=FillWithData}}
 	        Me.RadPivotGrid1.RowGroupDescriptions.Add(New DateTimeGroupDescription() With { _
 	         .PropertyName = "OrderDate", _
 	         .[Step] = DateTimeStep.Year, _

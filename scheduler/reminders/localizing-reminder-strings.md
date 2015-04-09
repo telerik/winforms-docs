@@ -29,7 +29,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[C#] Localizing RadReminder Strings__
 
-{{region englishLocalizationProvider}}
+{{source=..\SamplesCS\Scheduler\Reminders\EnglishReminderLocalizationProvider.cs region=englishLocalizationProvider}}
 	    public class EnglishReminderLocalizationProvider : RadReminderLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id) 
@@ -119,7 +119,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[VB.NET] Localizing RadReminder Strings__
 
-{{region englishLocalizationProvider}}
+{{source=..\SamplesVB\Scheduler\Reminders\EnglishReminderLocalizationProvider.vb region=englishLocalizationProvider}}
 	Public Class EnglishReminderLocalizationProvider
 	    Inherits RadReminderLocalizationProvider
 	
@@ -207,7 +207,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[C#] Assigning the Current Localization Provider__
 
-{{region usingReminderLocalization}}
+{{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=usingReminderLocalization}}
 	            RadReminderLocalizationProvider.CurrentProvider = new EnglishReminderLocalizationProvider();
 	{{endregion}}
 
@@ -215,7 +215,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[VB.NET] Assigning the Current Localization Provider__
 
-{{region usingReminderLocalization}}
+{{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=usingReminderLocalization}}
 	        RadReminderLocalizationProvider.CurrentProvider = New EnglishReminderLocalizationProvider()
 	{{endregion}}
 

@@ -28,7 +28,7 @@ __Example 1__ sets the __IsLocked__ property of cell A1 to false and protects th
 
 #### __[C#] Example 1: Protect a Worksheet__
 
-{{region radspreadprocessing-features-protection-worksheet_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.cs region=radspreadprocessing-features-protection-worksheet_0}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -41,7 +41,7 @@ __Example 1__ sets the __IsLocked__ property of cell A1 to false and protects th
 
 #### __[VB] Example 1: Protect a Worksheet__
 
-{{region radspreadprocessing-features-protection-worksheet_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.vb region=radspreadprocessing-features-protection-worksheet_0}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -81,7 +81,7 @@ __Example 2__ demonstrates how to unprotect a worksheet:
 
 #### __[C#] Example 2: Unprotect a Worksheet__
 
-{{region radspreadprocessing-features-protection-worksheet_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.cs region=radspreadprocessing-features-protection-worksheet_1}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            worksheet.Protect("telerik", WorksheetProtectionOptions.Default);
@@ -93,7 +93,7 @@ __Example 2__ demonstrates how to unprotect a worksheet:
 
 #### __[VB] Example 2: Unprotect a Worksheet__
 
-{{region radspreadprocessing-features-protection-worksheet_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.vb region=radspreadprocessing-features-protection-worksheet_1}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        worksheet.Protect("telerik", WorksheetProtectionOptions.[Default])
@@ -127,7 +127,7 @@ __Example 3__ demonstrates how to protect a worksheet using WorksheetProtectionO
 
 #### __[C#] Example 3: Protect Worksheet with WorksheetProtectionOptions__
 
-{{region radspreadprocessing-features-protection-worksheet_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.cs region=radspreadprocessing-features-protection-worksheet_2}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            WorksheetProtectionOptions options = new WorksheetProtectionOptions(allowInsertRows: true, allowDeleteRows: true);
@@ -138,7 +138,7 @@ __Example 3__ demonstrates how to protect a worksheet using WorksheetProtectionO
 
 #### __[VB] Example 3: Protect Worksheet with WorksheetProtectionOptions__
 
-{{region radspreadprocessing-features-protection-worksheet_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.vb region=radspreadprocessing-features-protection-worksheet_2}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        Dim options As New WorksheetProtectionOptions(allowInsertRows:=True, allowDeleteRows:=True)

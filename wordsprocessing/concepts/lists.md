@@ -117,7 +117,7 @@ __Example 1__ adds a default bulleted list to a predefined RadFlowDocument.
 
 #### __[C#] Example 1: Add List Template__
 
-{{region radwordsprocessing-concepts-lists_0}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_0}}
 	            List list = document.Lists.Add(ListTemplateType.BulletDefault);
 	{{endregion}}
 
@@ -125,7 +125,7 @@ __Example 1__ adds a default bulleted list to a predefined RadFlowDocument.
 
 #### __[VB NET] Example 1: Add List Template__
 
-{{region radwordsprocessing-concepts-lists_0}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_0}}
 	            Dim list As List = document.Lists.Add(ListTemplateType.BulletDefault)
 	            '#End Region
 	        End Sub
@@ -180,7 +180,7 @@ The next tutorial will get you through the creation of a list.
 
 #### __[C#] Step 1: Create RadFlowDocument__
 
-{{region radwordsprocessing-concepts-lists_1}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_1}}
 	            RadFlowDocument document = new RadFlowDocument();
 	            Section section = document.Sections.AddSection();
 	{{endregion}}
@@ -189,7 +189,7 @@ The next tutorial will get you through the creation of a list.
 
 #### __[VB NET] Step 1: Create RadFlowDocument__
 
-{{region radwordsprocessing-concepts-lists_1}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_1}}
 	            Dim document As New RadFlowDocument()
 	            Dim section As Section = document.Sections.AddSection()
 	            '#End Region
@@ -233,7 +233,7 @@ The next tutorial will get you through the creation of a list.
 
 #### __[C#] Step 2: Create List__
 
-{{region radwordsprocessing-concepts-lists_2}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_2}}
 	            List list = new List();
 	            document.Lists.Add(list); // Adding the list in the document.
 	{{endregion}}
@@ -242,7 +242,7 @@ The next tutorial will get you through the creation of a list.
 
 #### __[VB NET] Step 2: Create List__
 
-{{region radwordsprocessing-concepts-lists_2}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_2}}
 	        Dim list As New List()
 	            document.Lists.Add(list)
 	            ' Adding the list in the document.
@@ -282,7 +282,7 @@ In this case the default __HybridMultilevel__ type of list would be created.
 
 #### __[C#] Step 3: Iterate Levels__
 
-{{region radwordsprocessing-concepts-lists_3}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_3}}
 	            for (int level = 0; level < list.Levels.Count; ++level)
 	{{endregion}}
 
@@ -290,7 +290,7 @@ In this case the default __HybridMultilevel__ type of list would be created.
 
 #### __[VB NET] Step 3: Iterate Levels__
 
-{{region radwordsprocessing-concepts-lists_3}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_3}}
 	            For level As Integer = 0 To list.Levels.Count - 1
 	                '#End Region
 	                '#Region "radwordsprocessing-concepts-lists_4"
@@ -324,7 +324,7 @@ In this case the default __HybridMultilevel__ type of list would be created.
 
 #### __[C#] Step 4: Customize ListLevels__
 
-{{region radwordsprocessing-concepts-lists_4}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_4}}
 	                bool isEven = (level % 2) == 0;
 	
 	                list.Levels[level].StartIndex = 1;
@@ -340,7 +340,7 @@ In this case the default __HybridMultilevel__ type of list would be created.
 
 #### __[VB NET] Step 4: Customize ListLevels__
 
-{{region radwordsprocessing-concepts-lists_4}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_4}}
 	                Dim isEven As Boolean = (level Mod 2) = 0
 	
 	                list.Levels(level).StartIndex = 1
@@ -379,7 +379,7 @@ __Example 2__ demonstrates how you can apply the list created in Steps 1-4 above
 
 #### __[C#] Example 2: Apply List__
 
-{{region radwordsprocessing-concepts-lists_5}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_5}}
 	            for (int level = 0; level < list.Levels.Count; level++)
 	            {
 	                Paragraph paragrah = section.Blocks.AddParagraph();
@@ -393,7 +393,7 @@ __Example 2__ demonstrates how you can apply the list created in Steps 1-4 above
 
 #### __[VB NET] Example 2: Apply List__
 
-{{region radwordsprocessing-concepts-lists_5}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_5}}
 	            For level As Integer = 0 To list.Levels.Count - 1
 	                Dim paragrah As Paragraph = section.Blocks.AddParagraph()
 	                paragrah.Inlines.AddRun(String.Format("ListLevel: {0}", level + 1))

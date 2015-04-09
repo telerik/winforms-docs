@@ -18,7 +18,7 @@ The scroll bar alignment is controlled by the __ScrollBarAlignment__ property:
 
 #### __[C#] Set scroll bar alignment__
 
-{{region ScrollBarAlignment}}
+{{source=..\SamplesCS\Panorama\PanoramaGettingStarted.cs region=ScrollBarAlignment}}
 	            this.radPanorama1.ScrollBarAlignment = HorizontalScrollAlignment.Bottom;
 	{{endregion}}
 
@@ -26,7 +26,7 @@ The scroll bar alignment is controlled by the __ScrollBarAlignment__ property:
 
 #### __[VB.NET] Set scroll bar alignment__
 
-{{region ScrollBarAlignment}}
+{{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=ScrollBarAlignment}}
 	        Me.RadPanorama1.ScrollBarAlignment = HorizontalScrollAlignment.Bottom
 	{{endregion}}
 
@@ -36,7 +36,7 @@ The thickness of the scroll bar can be changed by modifying the __ScrollBarThick
 
 #### __[C#] Modify scroll bar thickness__
 
-{{region ScrollThickness}}
+{{source=..\SamplesCS\Panorama\PanoramaGettingStarted.cs region=ScrollThickness}}
 	            this.radPanorama1.ScrollBarThickness = 16;
 	{{endregion}}
 
@@ -44,7 +44,7 @@ The thickness of the scroll bar can be changed by modifying the __ScrollBarThick
 
 #### __[VB.NET] Modify scroll bar thickness__
 
-{{region ScrollThickness}}
+{{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=ScrollThickness}}
 	        Me.RadPanorama1.ScrollBarThickness = 16
 	{{endregion}}
 
@@ -60,7 +60,7 @@ To change the background image of the view, set the __PanelImage__ property with
 
 #### __[C#] Set tiling backgroung image__
 
-{{region SetTilingBackground}}
+{{source=..\SamplesCS\Panorama\PanoramaGettingStarted.cs region=SetTilingBackground}}
 	        void PanoramaGettingStarted_Load(object sender, EventArgs e)
 	        {
 	            radPanorama1.ScrollingBackground = true;
@@ -100,7 +100,7 @@ To change the background image of the view, set the __PanelImage__ property with
 
 #### __[VB.NET] Set tiling backgroung image__
 
-{{region SetTilingBackground}}
+{{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=SetTilingBackground}}
 	    Private Sub PanoramaGettingStarted_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 	        RadPanorama1.ScrollingBackground = True
 	        Me.RadPanorama1.PanelImage = My.Resources.bg_pattern

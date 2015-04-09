@@ -33,7 +33,7 @@ The figure above shows a running example that starts with a default __RadChart__
 
 #### __[C#] Binding to data base__
 
-{{region bindToDataBase}}
+{{source=..\SamplesCS\Chart\DataBindingToDataBaseObject.cs region=bindToDataBase}}
 	        RadChart radChart1 = new RadChart();
 	        public DataBindingToDataBaseObject()
 	        {
@@ -65,7 +65,7 @@ The figure above shows a running example that starts with a default __RadChart__
 
 #### __[VB.NET] Binding to data base__
 
-{{region bindToDataBase}}
+{{source=..\SamplesVB\Chart\DataBindingToDataBaseObject.vb region=bindToDataBase}}
 	    Dim RadChart1 As New RadChart
 	    Public Sub New()
 	        InitializeComponent()

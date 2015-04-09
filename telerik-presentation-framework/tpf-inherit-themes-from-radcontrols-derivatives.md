@@ -18,7 +18,7 @@ When you inherit from a __RadControl__ (or any __RadControl__ descendant), the o
         are not automatically inherited. The good thing is that this behavior can be overridden very easily by overriding the __ThemeClassName__ 
           property of the descendant of __RadControl__: 
 
-{{region RadCustomButton}}
+{{source=..\SamplesCS\TPF\InheritThemes.cs region=RadCustomButton}}
 	        
 	        public class RadCustomButton : RadButton  
 	        { 
@@ -35,7 +35,7 @@ When you inherit from a __RadControl__ (or any __RadControl__ descendant), the o
 
 
 
-{{region RadCustomButton}}
+{{source=..\SamplesVB\TPF\InheritThemes.vb region=RadCustomButton}}
 	
 	    Public Class RadCustomButton
 	        Inherits RadButton
@@ -76,7 +76,7 @@ The example above uses __RadButton__ as a base class. Since the themes depend on
 When you inherit from a __RadElement__ descendant (for example __RadButtonElement__), you need to override the
       __ThemeEffectiveType__ property. This will allow you to have the styling applied to the instance of your custom element class:
 
-{{region MyRadButtonElement}}
+{{source=..\SamplesCS\TPF\InheritThemes.cs region=MyRadButtonElement}}
 	        
 	        public class MyRadButtonElement : RadButtonElement     
 	        { 
@@ -93,7 +93,7 @@ When you inherit from a __RadElement__ descendant (for example __RadButtonElemen
 
 
 
-{{region MyRadButtonElement}}
+{{source=..\SamplesVB\TPF\InheritThemes.vb region=MyRadButtonElement}}
 	
 	    Public Class MyRadButtonElement
 	    Inherits RadButtonElement

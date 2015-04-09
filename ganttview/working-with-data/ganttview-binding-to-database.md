@@ -54,7 +54,7 @@ RadGanttView supports binding to Database data. Levels are created using the Par
 
 #### __[C#] __
 
-{{region BindingToDatabase}}
+{{source=..\SamplesCS\GanttView\WorkingWithData\BindingToDatabase.cs region=BindingToDatabase}}
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineStart = new DateTime(2006, 8, 2);
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineEnd = new DateTime(2007, 4, 2);
 	{{endregion}}
@@ -63,7 +63,7 @@ RadGanttView supports binding to Database data. Levels are created using the Par
 
 #### __[VB.NET] __
 
-{{region BindingToDatabase}}
+{{source=..\SamplesVB\GanttView\WorkingWithData\BindingToDatabase.vb region=BindingToDatabase}}
 	        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineStart = New DateTime(2006, 8, 2)
 	        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineEnd = New DateTime(2007, 4, 2)
 	{{endregion}}

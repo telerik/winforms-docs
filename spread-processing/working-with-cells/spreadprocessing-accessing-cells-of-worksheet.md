@@ -33,7 +33,7 @@ The document model offers multiple ways to create a __CellSelection__ object. Th
 
 #### __C# Example 1__
 
-{{region radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingAccessingCellsOfAWorksheet.cs region=radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_0}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -45,7 +45,7 @@ The document model offers multiple ways to create a __CellSelection__ object. Th
 
 #### __VB Example 1__
 
-{{region radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingAccessingCellsOfAWorksheet.vb region=radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_0}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -114,7 +114,7 @@ The document model offers multiple ways to create a __CellSelection__ object. Th
 
 #### __C# Example 2__
 
-{{region radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingAccessingCellsOfAWorksheet.cs region=radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_1}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -126,7 +126,7 @@ The document model offers multiple ways to create a __CellSelection__ object. Th
 
 #### __VB Example 2__
 
-{{region radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingAccessingCellsOfAWorksheet.vb region=radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_1}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -185,7 +185,7 @@ The document model offers multiple ways to create a __CellSelection__ object. Th
 
 #### __C# Example 3__
 
-{{region radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingAccessingCellsOfAWorksheet.cs region=radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_2}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -199,7 +199,7 @@ The document model offers multiple ways to create a __CellSelection__ object. Th
 
 #### __VB Example 3__
 
-{{region radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingAccessingCellsOfAWorksheet.vb region=radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_2}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -248,7 +248,7 @@ The document model offers multiple ways to create a __CellSelection__ object. Th
 
 #### __C# Example 4__
 
-{{region radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingAccessingCellsOfAWorksheet.cs region=radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_3}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -261,7 +261,7 @@ The document model offers multiple ways to create a __CellSelection__ object. Th
 
 #### __VB Example 4__
 
-{{region radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingAccessingCellsOfAWorksheet.vb region=radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_3}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -298,7 +298,7 @@ The document model offers multiple ways to create a __CellSelection__ object. Th
 
 #### __C# Example 5__
 
-{{region radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_4}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingAccessingCellsOfAWorksheet.cs region=radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_4}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -309,7 +309,7 @@ The document model offers multiple ways to create a __CellSelection__ object. Th
 
 #### __VB Example 5__
 
-{{region radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_4}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingAccessingCellsOfAWorksheet.vb region=radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_4}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -335,7 +335,7 @@ The document model offers multiple ways to create a __CellSelection__ object. Th
 
 #### __C# Example 6__
 
-{{region radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_5}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingAccessingCellsOfAWorksheet.cs region=radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_5}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -346,7 +346,7 @@ The document model offers multiple ways to create a __CellSelection__ object. Th
 
 #### __VB Example 6__
 
-{{region radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_5}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingAccessingCellsOfAWorksheet.vb region=radspreadprocessing-working-with-cells-accessing-cells-of-worksheet_5}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	

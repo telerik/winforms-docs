@@ -45,7 +45,7 @@ To enable or disable a gesture,
 
 #### __[C#] Cascade layout example__
 
-{{region callingMethods}}
+{{source=..\SamplesCS\TPF\Touch\TouchGesturesForm.cs region=callingMethods}}
 	            this.radButton1.EnableGesture(GestureType.All);
 	            this.radButton1.DisableGesture(GestureType.Zoom);
 	{{endregion}}
@@ -54,7 +54,7 @@ To enable or disable a gesture,
 
 #### __[VB.NET] Cascade layout example__
 
-{{region callingMethods}}
+{{source=..\SamplesVB\TPF\Touch\TouchGesturesForm.vb region=callingMethods}}
 	        Me.radButton1.EnableGesture(GestureType.All)
 	        Me.radButton1.DisableGesture(GestureType.Zoom)
 	        '#End Region
@@ -133,7 +133,7 @@ The following example will demonstrate how we can use this functionality to drag
 
 #### __[C#]__
 
-{{region touchPanel}}
+{{source=..\SamplesCS\TPF\Touch\CustomPanel.cs region=touchPanel}}
 	    public class CustomPanel : RadControl
 	    {
 	        public class CustomPanelLayout : Telerik.WinControls.Layouts.LayoutPanel
@@ -189,7 +189,7 @@ The following example will demonstrate how we can use this functionality to drag
 
 #### __[VB.NET]__
 
-{{region touchPanel}}
+{{source=..\SamplesVB\TPF\Touch\CustomPanel.vb region=touchPanel}}
 	Public Class CustomPanel
 	    Inherits RadControl
 	    Public Class CustomPanelLayout

@@ -50,12 +50,12 @@ The following example demonstrates how you can bind the control by using the __C
             This example uses the __CheckState__ property of the business object.
           
 
-Initially let’s create collection of objects.
-        
+1. Initially let’s create collection of objects.
+            
 
 #### __[C#] SimpleObject class.__
 
-{{region SimpleObject}}
+{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=SimpleObject}}
 	    public class SimpleObject
 	    {
 	        public int Id { get; set; }
@@ -70,7 +70,7 @@ Initially let’s create collection of objects.
 
 #### __[VB.NET] SimpleObject class.__
 
-{{region SimpleObject}}
+{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=SimpleObject}}
 	Public Class SimpleObject
 	    Public Property Id() As Integer
 	        Get
@@ -108,7 +108,7 @@ Initially let’s create collection of objects.
 
 #### __[C#] Create Simple Objects collection.__
 
-{{region CreateSimpleObjects}}
+{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=CreateSimpleObjects}}
 	        private IEnumerable<SimpleObject> CreateSimpleObjects()
 	        {
 	            List<SimpleObject> data = new List<SimpleObject>()
@@ -129,7 +129,7 @@ Initially let’s create collection of objects.
 
 #### __[VB.NET] Create Simple Objects collection.__
 
-{{region CreateSimpleObjects}}
+{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=CreateSimpleObjects}}
 	    Private Function CreateSimpleObjects() As IEnumerable(Of SimpleObject)
 	        Dim data As New List(Of SimpleObject)() From { _
 	            New SimpleObject() With { _
@@ -205,12 +205,12 @@ Initially let’s create collection of objects.
 
 
 
-To support three state check boxes we need to set the __ThreeStateMode__ property:
-        
+1. To support three state check boxes we need to set the __ThreeStateMode__ property:
+            
 
 #### __[C#] ThreeStateMode.__
 
-{{region ThreeStateMode}}
+{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=ThreeStateMode}}
 	            this.radCheckedListBox1.ThreeStateMode = true;
 	{{endregion}}
 
@@ -218,7 +218,7 @@ To support three state check boxes we need to set the __ThreeStateMode__ propert
 
 #### __[VB.NET] ThreeStateMode.__
 
-{{region ThreeStateMode}}
+{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=ThreeStateMode}}
 	        Me.RadCheckedListBox1.ThreeStateMode = True
 	        '#End Region
 	
@@ -306,13 +306,13 @@ To support three state check boxes we need to set the __ThreeStateMode__ propert
 
 
 
-And finally set programmatically the __DataSource__, __DisplayMember__, 
-          __ValueMember__ and __CheckedMember__ properties.
-        
+1. And finally set programmatically the __DataSource__, __DisplayMember__,
+              __ValueMember__ and __CheckedMember__ properties.
+            
 
 #### __[C#] Programmatically data bind.__
 
-{{region ProgramaticallyDatabind}}
+{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=ProgramaticallyDatabind}}
 	            this.radCheckedListBox1.DataSource = this.CreateSimpleObjects();
 	            this.radCheckedListBox1.DisplayMember = "Name";
 	            this.radCheckedListBox1.ValueMember = "Id";
@@ -323,7 +323,7 @@ And finally set programmatically the __DataSource__, __DisplayMember__,
 
 #### __[VB.NET] Programmatically data bind.__
 
-{{region ProgramaticallyDatabind}}
+{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=ProgramaticallyDatabind}}
 	        Me.RadCheckedListBox1.DataSource = Me.CreateSimpleObjects()
 	        Me.RadCheckedListBox1.DisplayMember = "Name"
 	        Me.RadCheckedListBox1.ValueMember = "Id"

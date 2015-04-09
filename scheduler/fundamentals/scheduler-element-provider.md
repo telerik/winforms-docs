@@ -23,7 +23,7 @@ If you need to customize any of the  __RadSheduler__ elements you can use the __
 
 #### __[C#] __
 
-{{region SchedulerElementProvider}}
+{{source=..\SamplesCS\Scheduler\Fundamentals\SchedulerElementProviderSample.cs region=SchedulerElementProvider}}
 	    public class MyElementProvider : SchedulerElementProvider
 	    {
 	        public MyElementProvider(RadScheduler scheduler)
@@ -56,7 +56,7 @@ If you need to customize any of the  __RadSheduler__ elements you can use the __
 
 #### __[VB.NET] __
 
-{{region SchedulerElementProvider}}
+{{source=..\SamplesVB\Scheduler\Fundamentals\SchedulerElementProviderSample.vb region=SchedulerElementProvider}}
 	Public Class MyElementProvider
 	    Inherits SchedulerElementProvider
 	    Public Sub New(scheduler As RadScheduler)
@@ -88,7 +88,7 @@ Your custom elements should be ancestors of the default ones. For example, you c
 
 #### __[C#] __
 
-{{region elements}}
+{{source=..\SamplesCS\Scheduler\Fundamentals\SchedulerElementProviderSample.cs region=elements}}
 	    public class MySchedulerCellElement : SchedulerCellElement
 	    {
 	        public MySchedulerCellElement(RadScheduler scheduler, SchedulerView view)
@@ -138,7 +138,7 @@ Your custom elements should be ancestors of the default ones. For example, you c
 
 #### __[VB.NET] __
 
-{{region elements}}
+{{source=..\SamplesVB\Scheduler\Fundamentals\SchedulerElementProviderSample.vb region=elements}}
 	Public Class MySchedulerCellElement
 	    Inherits SchedulerCellElement
 	    Public Sub New(scheduler As RadScheduler, view As SchedulerView)

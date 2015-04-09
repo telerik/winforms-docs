@@ -20,7 +20,7 @@ The following example demonstrates how you can use the __PrintContext__ property
 
 #### __[C#]__
 
-{{region PrintFormatting}}
+{{source=..\SamplesCS\GanttView\PrintingEvents\PrintingEvents.cs region=PrintFormatting}}
 	
 	        private void radGanttView1_PrintElementFormatting(object sender, GanttViewPrintElementFormattingEventArgs e)
 	        {
@@ -56,7 +56,7 @@ The following example demonstrates how you can use the __PrintContext__ property
 
 #### __[VB.NET]__
 
-{{region PrintFormatting}}
+{{source=..\SamplesVB\GanttView\PrintingEvents\PrintingEvents.vb region=PrintFormatting}}
 	    Private Sub GanttViewPrintElementFormattingEventArgs(sender As Object, e As GanttViewPrintElementFormattingEventArgs)
 	        Select Case e.PrintContext
 	            Case GanttViewPrintElementContext.HeaderCell
@@ -93,7 +93,7 @@ This example demonstrates how you can paint the text of summary items next to th
 
 #### __[C#]__
 
-{{region PrintPaint}}
+{{source=..\SamplesCS\GanttView\PrintingEvents\PrintingEvents.cs region=PrintPaint}}
 	
 	        private void radGanttView1_PrintElementPaint(object sender, GanttViewPrintElementPaintEventArgs e)
 	        {
@@ -114,7 +114,7 @@ This example demonstrates how you can paint the text of summary items next to th
 
 #### __[VB.NET]__
 
-{{region PrintPaint}}
+{{source=..\SamplesVB\GanttView\PrintingEvents\PrintingEvents.vb region=PrintPaint}}
 	    Private Sub radGanttView1_PrintElementPaint(sender As Object, e As GanttViewPrintElementPaintEventArgs)
 	        If e.PrintContext = GanttViewPrintElementContext.SummaryTaskElement Then
 	            Dim dataItem As GanttViewDataItem = TryCast(e.DataContext, GanttViewDataItem)

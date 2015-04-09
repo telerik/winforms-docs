@@ -42,7 +42,7 @@ In order to incorporate __RadSchedulerReminder__ in your application, please
 
 #### __[C#]__
 
-{{region creating}}
+{{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=creating}}
 	            RadSchedulerReminder schedulerReminder = new RadSchedulerReminder();
 	{{endregion}}
 
@@ -50,7 +50,7 @@ In order to incorporate __RadSchedulerReminder__ in your application, please
 
 #### __[VB.NET]__
 
-{{region creating}}
+{{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=creating}}
 	        Dim schedulerReminder As New RadSchedulerReminder()
 	        '			#End Region
 	
@@ -79,7 +79,7 @@ In order to incorporate __RadSchedulerReminder__ in your application, please
 
 #### __[C#]__
 
-{{region associatedScheduler}}
+{{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=associatedScheduler}}
 	            schedulerReminder.AssociatedScheduler = this.radScheduler1;
 	{{endregion}}
 
@@ -87,7 +87,7 @@ In order to incorporate __RadSchedulerReminder__ in your application, please
 
 #### __[VB.NET]__
 
-{{region associatedScheduler}}
+{{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=associatedScheduler}}
 	        schedulerReminder.AssociatedScheduler = Me.RadScheduler1
 	        '			#End Region
 	
@@ -111,7 +111,7 @@ In order to incorporate __RadSchedulerReminder__ in your application, please
 
 #### __[C#]__
 
-{{region interval}}
+{{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=interval}}
 	            schedulerReminder.StartReminderInterval = DateTime.Now;
 	            schedulerReminder.EndReminderInterval = DateTime.Now.AddDays(1);
 	{{endregion}}
@@ -120,7 +120,7 @@ In order to incorporate __RadSchedulerReminder__ in your application, please
 
 #### __[VB.NET]__
 
-{{region interval}}
+{{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=interval}}
 	        schedulerReminder.StartReminderInterval = Date.Now
 	        schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
 	        '			#End Region
@@ -142,7 +142,7 @@ In order to incorporate __RadSchedulerReminder__ in your application, please
 
 #### __[C#]__
 
-{{region reminder}}
+{{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=reminder}}
 	
 	            DateTime dtStart = DateTime.Now.AddMinutes(1);
 	            DateTime dtEnd = dtStart.AddHours(1);
@@ -156,7 +156,7 @@ In order to incorporate __RadSchedulerReminder__ in your application, please
 
 #### __[VB.NET]__
 
-{{region reminder}}
+{{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=reminder}}
 	
 	        Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
 	        Dim dtEnd As DateTime = dtStart.AddHours(1)

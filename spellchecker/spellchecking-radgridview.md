@@ -35,7 +35,7 @@ Supposing that we have a RadGridView filled with data and a RadSpellChecker on t
 
 #### __[C#]__
 
-{{region validating}}
+{{source=..\SamplesCS\SpellChecker\SpChWithRadGridView.cs region=validating}}
 	        string correctedValue = String.Empty;
 	
 	        void radGridView1_CellValidating(object sender, Telerik.WinControls.UI.CellValidatingEventArgs e)
@@ -54,7 +54,7 @@ Supposing that we have a RadGridView filled with data and a RadSpellChecker on t
 
 #### __[VB.NET]__
 
-{{region validating}}
+{{source=..\SamplesVB\SpellChecker\SpChWithRadGridView.vb region=validating}}
 	    Dim correctedValue As String = String.Empty
 	
 	    Private Sub RadGridView1_CellValidating(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellValidatingEventArgs) Handles RadGridView1.CellValidating
@@ -78,7 +78,7 @@ Please note that the editor sets the corrected value to the opened editor,
 
 #### __[C#]__
 
-{{region cellEndEdit}}
+{{source=..\SamplesCS\SpellChecker\SpChWithRadGridView.cs region=cellEndEdit}}
 	        void radGridView1_CellEndEdit(object sender, GridViewCellEventArgs e)
 	        {
 	            this.radGridView1.CurrentCell.Value = correctedValue;
@@ -89,7 +89,7 @@ Please note that the editor sets the corrected value to the opened editor,
 
 #### __[VB.NET]__
 
-{{region cellEndEdit}}
+{{source=..\SamplesVB\SpellChecker\SpChWithRadGridView.vb region=cellEndEdit}}
 	    Private Sub RadGridView1_CellEndEdit(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs) Handles RadGridView1.CellEndEdit
 	        Me.RadGridView1.CurrentCell.Value = correctedValue
 	    End Sub

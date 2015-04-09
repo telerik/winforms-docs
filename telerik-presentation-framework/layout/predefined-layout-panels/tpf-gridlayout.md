@@ -41,7 +41,7 @@ Here is a sample:
 
 #### __[C#] Using WrapLayoutPanel__
 
-{{region GridLayout}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyGridLayoutPanelElement.cs region=GridLayout}}
 	    public class MyGridLayoutControl : RadControl
 	    {
 	        protected override void CreateChildItems(RadElement parent)
@@ -106,7 +106,7 @@ Here is a sample:
 
 #### __[VB.NET] Using WrapLayoutPanel__
 
-{{region GridLayout}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyGridLayoutPanelElement.vb region=GridLayout}}
 	Public Class MyGridLayoutControl
 	    Inherits RadControl
 	

@@ -16,7 +16,7 @@ You can merge RadMenuItems by using the MergeMenu method of RadMenu. The param
 
 #### __[C#]__
 
-{{region Merge}}
+{{source=..\SamplesCS\Menus\Menu\MenuMerge.cs region=Merge}}
 	            radMenu1.MergeMenu(srcRadMenu2);
 	{{endregion}}
 
@@ -24,7 +24,7 @@ You can merge RadMenuItems by using the MergeMenu method of RadMenu. The param
 
 #### __[VB]__
 
-{{region Merge}}
+{{source=..\SamplesVB\Menus\Menu\MenuMerge.vb region=Merge}}
 	        radMenu1.MergeMenu(srcRadMenu2)
 	{{endregion}}
 

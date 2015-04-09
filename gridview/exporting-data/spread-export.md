@@ -37,7 +37,7 @@ To use the spread export functionality, an instance of the __SpreadExport__ obje
 
 #### __[C#]  __
 
-{{region Export}}
+{{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=Export}}
 	
 	            SpreadExport spreadExporter = new SpreadExport(radGridView1);
 	            spreadExporter.RunExport("D:\\exportedFile.xlsx");
@@ -48,7 +48,7 @@ To use the spread export functionality, an instance of the __SpreadExport__ obje
 
 #### __[VB.NET]  __
 
-{{region Export}}
+{{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=Export}}
 	
 				Dim spreadExporter As SpreadExport = New SpreadExport(radGridView1)
 				spreadExporter.RunExport("D:\exportedFile.xlsx")
@@ -247,7 +247,7 @@ Here is an example of formatting the exported grid:
 
 #### __[C#]  __
 
-{{region CellFormatting}}
+{{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=CellFormatting}}
 	
 	        void spreadExporter_CellFormatting(object sender, Telerik.WinControls.UI.Export.SpreadExport.CellFormattingEventArgs e)
 	        {
@@ -287,7 +287,7 @@ Here is an example of formatting the exported grid:
 
 #### __[VB.NET]  __
 
-{{region CellFormatting}}
+{{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=CellFormatting}}
 	
 			Private Sub spreadExporter_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.SpreadExport.CellFormattingEventArgs)
 				If e.GridRowInfoType Is GetType(GridViewTableHeaderRowInfo) Then
@@ -320,14 +320,14 @@ Here is an example of formatting the exported grid:
 ![gridview-exporting-data-spread-export 003](images/gridview-exporting-data-spread-export003.png)
 
 __WorkbookCreated__ - this event is triggered when the workbook is ready to be exported. Allows to introduce
-          final customizations. More information on how to work with Workbook is available here: [Working with Workbooks](76c31a52-0999-4bfb-bc1d-ee0e6f56b6c0).
+          final customizations (for example you can add [header and footer]({%slug radgridview-exporting-data-how-to-add-header-and-footer%})). More information on how to work with Workbook is available here: [Working with Workbooks](76c31a52-0999-4bfb-bc1d-ee0e6f56b6c0).
           
           Here is for example how to best fit all columns:
         
 
 #### __[C#]  __
 
-{{region WorbookCreated}}
+{{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=WorbookCreated}}
 	
 	        void spreadExporter_WorkbookCreated(object sender, WorkbookCreatedEventArgs e)
 	        {
@@ -341,7 +341,7 @@ __WorkbookCreated__ - this event is triggered when the workbook is ready to be e
 
 #### __[VB.NET]  __
 
-{{region WorbookCreated}}
+{{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=WorbookCreated}}
 	
 			Private Sub spreadExporter_WorkbookCreated(ByVal sender As Object, ByVal e As WorkbookCreatedEventArgs)
 				Dim worksheet As Worksheet = CType(e.Workbook.Sheets(0), Worksheet)

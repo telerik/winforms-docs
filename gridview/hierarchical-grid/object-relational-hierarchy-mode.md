@@ -33,7 +33,7 @@ Here is an example with an entity model using the Northwind database:![](images/
 
 #### __[C#] Example of automatically generating hierarchy mode__
 
-{{region AutoGenerateObjectRelationHierarchyMode}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\AutoGenerateObjectRelationHierarchyMode.cs region=AutoGenerateObjectRelationHierarchyMode}}
 	        private void AutoGenerateObjectRelationHierarchyMode_Load(object sender, EventArgs e)
 	        {
 	            NorthwindEntities entities = new NorthwindEntities();
@@ -48,7 +48,7 @@ Here is an example with an entity model using the Northwind database:![](images/
 
 #### __[VB.NET] Example of automatically generating hierarchy mode__
 
-{{region AutoGenerateObjectRelationHierarchyMode}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\AutoGenerateObjectRelationHierarchyMode.vb region=AutoGenerateObjectRelationHierarchyMode}}
 	    Private Sub AutoGenerateObjectRelationHierarchyMode_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 	        Dim entities As New NorthwindEntities()
 	        Dim query = From suppliers In entities.Suppliers Select suppliers
@@ -70,7 +70,7 @@ The following example demonstrates how you can manually build an Object-Relation
 
 #### __[C#] Example of manually generating hierarchy mode__
 
-{{region ManualGenerateObjectRelationalMode}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\ManualGenerateObjectRelationalMode.cs region=ManualGenerateObjectRelationalMode}}
 	        void ManualGenerateObjectRelationalMode_Load(object sender, EventArgs e)
 	        {
 	            NorthwindEntities entities = new NorthwindEntities();
@@ -111,7 +111,7 @@ The following example demonstrates how you can manually build an Object-Relation
 
 #### __[VB.NET] Example of manually generating hierarchy mode__
 
-{{region ManualGenerateObjectRelationalMode}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\ManualGenerateObjectRelationalMode.vb region=ManualGenerateObjectRelationalMode}}
 	    Private Sub ManualGenerateObjectRelationalMode_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 	        Dim entities As New NorthwindEntities()
 	        Dim query = From customers In entities.Customers Select customers

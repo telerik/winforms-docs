@@ -27,7 +27,7 @@ RadChartView provides zoom and scroll interactivity with the
 
 #### __[C#] __
 
-{{region controller}}
+{{source=..\SamplesCS\ChartView\Features\ScrollAndZoom.cs region=controller}}
 	            ChartPanZoomController panZoomController = new ChartPanZoomController();
 	            panZoomController.PanZoomMode = ChartPanZoomMode.Horizontal;
 	            radChartView1.Controllers.Add(panZoomController);
@@ -37,7 +37,7 @@ RadChartView provides zoom and scroll interactivity with the
 
 #### __[VB.NET] __
 
-{{region controller}}
+{{source=..\SamplesVB\ChartView\Features\ScrollAndZoom.vb region=controller}}
 	        Dim panZoomController As New ChartPanZoomController()
 	        panZoomController.PanZoomMode = ChartPanZoomMode.Horizontal
 	        RadChartView1.Controllers.Add(panZoomController)
@@ -51,7 +51,7 @@ The ChartPanAndZoomController will be added automatically if the __ShowPanZoom__
 
 #### __[C#] __
 
-{{region showPanZoom}}
+{{source=..\SamplesCS\ChartView\Features\ScrollAndZoom.cs region=showPanZoom}}
 	            radChartView1.ShowPanZoom = true;
 	{{endregion}}
 
@@ -59,7 +59,7 @@ The ChartPanAndZoomController will be added automatically if the __ShowPanZoom__
 
 #### __[VB.NET] __
 
-{{region showPanZoom}}
+{{source=..\SamplesVB\ChartView\Features\ScrollAndZoom.vb region=showPanZoom}}
 	        RadChartView1.ShowPanZoom = True
 	{{endregion}}
 
@@ -84,7 +84,7 @@ Zooming:
 
 #### __[C#] __
 
-{{region Zoom}}
+{{source=..\SamplesCS\ChartView\Features\ScrollAndZoom.cs region=Zoom}}
 	            radChartView1.Zoom(3, 1);
 	{{endregion}}
 
@@ -92,7 +92,7 @@ Zooming:
 
 #### __[VB.NET] __
 
-{{region Zoom}}
+{{source=..\SamplesVB\ChartView\Features\ScrollAndZoom.vb region=Zoom}}
 	        RadChartView1.Zoom(3, 1)
 	{{endregion}}
 
@@ -102,7 +102,7 @@ Panning with 300 pixels:
 
 #### __[C#] __
 
-{{region pan}}
+{{source=..\SamplesCS\ChartView\Features\ScrollAndZoom.cs region=pan}}
 	            radChartView1.Pan(-300, 0);
 	{{endregion}}
 
@@ -110,7 +110,7 @@ Panning with 300 pixels:
 
 #### __[VB.NET] __
 
-{{region pan}}
+{{source=..\SamplesVB\ChartView\Features\ScrollAndZoom.vb region=pan}}
 	        RadChartView1.Pan(-300, 0)
 	{{endregion}}
 

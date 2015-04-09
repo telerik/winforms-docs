@@ -25,7 +25,7 @@ ProgressBarPrimitive is a specialized descendant of [FillPrimitive]({%slug tpf-p
 
 #### __[C#] Creating a ProgressBarPrimitive__
 
-{{region myProgressBarPrimitiveElement}}
+{{source=..\SamplesCS\TPF\Primitives\ProgressBarPrimitive1\MyProgressBarPrimitiveElement.cs region=myProgressBarPrimitiveElement}}
 	    public class MyProgressBarPrimitiveElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -59,7 +59,7 @@ ProgressBarPrimitive is a specialized descendant of [FillPrimitive]({%slug tpf-p
 
 #### __[VB.NET] Creating a ProgressBarPrimitive__
 
-{{region myProgressBarPrimitiveElement}}
+{{source=..\SamplesVB\TPF\Primitives\ProgressBarPrimitive1\MyProgressBarPrimitiveElement.vb region=myProgressBarPrimitiveElement}}
 	Public Class MyProgressBarPrimitiveElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

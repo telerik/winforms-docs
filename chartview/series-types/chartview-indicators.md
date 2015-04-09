@@ -5,7 +5,7 @@ description: Indicators
 slug: chartview-series-types-indicators
 tags: indicators
 published: True
-position: 17
+position: 18
 ---
 
 # Indicators
@@ -27,7 +27,7 @@ Let's start with creating some meaningful data that will be used by both indicat
 
 #### __[C#] __
 
-{{region IndicatorsCommonData}}
+{{source=..\SamplesCS\ChartView\Series\Indicators\IndicatorsOverviewForm.cs region=IndicatorsCommonData}}
 	            //Create data
 	            BindingList<OhlcObject> dataSource = new BindingList<OhlcObject>();
 	            dataSource.Add(new OhlcObject(7, 8, 2, 4, DateTime.Now));
@@ -45,7 +45,7 @@ Let's start with creating some meaningful data that will be used by both indicat
 
 #### __[VB.NET] __
 
-{{region IndicatorsCommonData}}
+{{source=..\SamplesVB\ChartView\Series\Indicators\IndicatorsOverviewForm.vb region=IndicatorsCommonData}}
 	        'Create data
 	        Dim dataSource As New BindingList(Of OhlcObject)()
 	        dataSource.Add(New OhlcObject(7, 8, 2, 4, DateTime.Now))
@@ -69,7 +69,7 @@ Each value of MA is the average of past __n__ days, where __n__ is a parameter
 
 #### __[C#] __
 
-{{region ma}}
+{{source=..\SamplesCS\ChartView\Series\Indicators\IndicatorsOverviewForm.cs region=ma}}
 	            //Create and add Moving Average indicator
 	            MovingAverageIndicator maIndicator = new MovingAverageIndicator();
 	            maIndicator.ValueMember = "Close";
@@ -96,7 +96,7 @@ Each value of MA is the average of past __n__ days, where __n__ is a parameter
 
 #### __[VB.NET] __
 
-{{region ma}}
+{{source=..\SamplesVB\ChartView\Series\Indicators\IndicatorsOverviewForm.vb region=ma}}
 	        'Create and add Moving Average indicator
 	        Dim maIndicator As New MovingAverageIndicator()
 	        maIndicator.ValueMember = "Close"
@@ -142,7 +142,7 @@ The indicator consists of two bands that aim to provide a relative definition of
 
 #### __[C#] __
 
-{{region Bands}}
+{{source=..\SamplesCS\ChartView\Series\Indicators\IndicatorsOverviewForm.cs region=Bands}}
 	            //Create and add Bollinger Bands indicator
 	            BollingerBandsIndicator bollIndicator = new BollingerBandsIndicator();
 	            bollIndicator.ValueMember = "Close";
@@ -171,7 +171,7 @@ The indicator consists of two bands that aim to provide a relative definition of
 
 #### __[VB.NET] __
 
-{{region Bands}}
+{{source=..\SamplesVB\ChartView\Series\Indicators\IndicatorsOverviewForm.vb region=Bands}}
 	        'Create and add Bollinger Bands indicator
 	        Dim bollIndicator As New BollingerBandsIndicator()
 	        bollIndicator.ValueMember = "Close"

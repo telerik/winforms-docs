@@ -26,7 +26,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[C#] Localizing RadTimePicker Strings__
 
-{{region LocalizationProvider}}
+{{source=..\SamplesCS\Editors\TimePicker1.cs region=LocalizationProvider}}
 	        class MyTimePickerLocalizationProvider : RadTimePickerLocalizationProvider
 	        {
 	            public override string GetLocalizedString(string id)
@@ -46,7 +46,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[VB.NET] Localizing RadTimePicker Strings__
 
-{{region LocalizationProvider}}
+{{source=..\SamplesVB\Editors\TimePicker1.vb region=LocalizationProvider}}
 	    Class MyTimePickerLocalizationProvider
 	        Inherits RadTimePickerLocalizationProvider
 	
@@ -72,7 +72,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[C#] Assigning the Current Localization Provider__
 
-{{region settingTheLocalizationProvider}}
+{{source=..\SamplesCS\Editors\TimePicker1.cs region=settingTheLocalizationProvider}}
 	            RadTimePickerLocalizationProvider.CurrentProvider = new MyTimePickerLocalizationProvider();
 	{{endregion}}
 
@@ -80,7 +80,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[VB.NET] Assigning the Current Localization Provider__
 
-{{region settingTheLocalizationProvider}}
+{{source=..\SamplesVB\Editors\TimePicker1.vb region=settingTheLocalizationProvider}}
 	        RadTimePickerLocalizationProvider.CurrentProvider = New MyTimePickerLocalizationProvider()
 	{{endregion}}
 

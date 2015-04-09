@@ -89,7 +89,7 @@ __Example 1__ demonstrates how to add and use defined names. The code creates a 
 
 #### __[C#] Example 1: Add and use names__
 
-{{region radspreadprocessing-features-named-ranges_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingNamedRanges.cs region=radspreadprocessing-features-named-ranges_0}}
 	            Workbook workbook = new Workbook();
 	            Worksheet sheet1 = workbook.Worksheets.Add();
 	
@@ -110,7 +110,7 @@ __Example 1__ demonstrates how to add and use defined names. The code creates a 
 
 #### __VB__
 
-{{region radspreadprocessing-features-named-ranges_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingNamedRanges.vb region=radspreadprocessing-features-named-ranges_0}}
 	        Dim workbook As New Workbook()
 	        Dim sheet1 As Worksheet = workbook.Worksheets.Add()
 	
@@ -146,7 +146,7 @@ __Example 2__ shows how to remove one of the names added in __Example 1__.
 
 #### __[C#] Example 2: Remove name__
 
-{{region radspreadprocessing-features-named-ranges_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingNamedRanges.cs region=radspreadprocessing-features-named-ranges_1}}
 	            workbook.Names.Remove("CorporateTax");
 	            sheet1.Names.Remove("GrossProfit");
 	{{endregion}}
@@ -155,7 +155,7 @@ __Example 2__ shows how to remove one of the names added in __Example 1__.
 
 #### __VB__
 
-{{region radspreadprocessing-features-named-ranges_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingNamedRanges.vb region=radspreadprocessing-features-named-ranges_1}}
 	        workbook.Names.Remove("CorporateTax")
 	        sheet1.Names.Remove("GrossProfit")
 	        '#End Region

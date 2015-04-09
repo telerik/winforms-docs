@@ -34,7 +34,7 @@ Other Gantt chart issues:
 
 #### __[C#] Setting the value format__
 
-{{region valueFormat}}
+{{source=..\SamplesCS\Chart\GanttChart.cs region=valueFormat}}
 	            radChart1.PlotArea.YAxis.Appearance.ValueFormat = Telerik.Charting.Styles.ChartValueFormat.ShortDate;
 	{{endregion}}
 
@@ -42,7 +42,7 @@ Other Gantt chart issues:
 
 #### __[VB.NET] Setting the value format__
 
-{{region valueFormat}}
+{{source=..\SamplesVB\Chart\GanttChart.vb region=valueFormat}}
 	        RadChart1.PlotArea.YAxis.Appearance.ValueFormat = Telerik.Charting.Styles.ChartValueFormat.ShortDate
 	{{endregion}}
 

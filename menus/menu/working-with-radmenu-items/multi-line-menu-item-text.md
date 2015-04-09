@@ -25,7 +25,7 @@ In code use __Environment.NewLine__ to separate strings:
 
 #### __[C#]__
 
-{{region multiline}}
+{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=multiline}}
 	            radMenuItem1.Text = "Bar Chart - " +
 	             Environment.NewLine +
 	             "Compare multiple series of data";
@@ -35,7 +35,7 @@ In code use __Environment.NewLine__ to separate strings:
 
 #### __[VB.NET]__
 
-{{region multiline}}
+{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=multiline}}
 	        radMenuItem1.Text = "Bar Chart - " & Environment.NewLine & "Compare multiple series of data"
 	{{endregion}}
 
@@ -48,7 +48,7 @@ The __AllItemsEqualHeight__ property controls whether the RadMenu allows some me
 
 #### __[C#]__
 
-{{region Height}}
+{{source=..\SamplesCS\Menus\Menu\WorkingWithRadMenuItems\MultilineMenuItemText.cs region=Height}}
 	            radMenu1.AllItemsEqualHeight = true;
 	{{endregion}}
 
@@ -56,7 +56,7 @@ The __AllItemsEqualHeight__ property controls whether the RadMenu allows some me
 
 #### __[VB.NET]__
 
-{{region Height}}
+{{source=..\SamplesVB\Menus\Menu\WorkingWithRadMenuItems\MultilineMenuItemText.vb region=Height}}
 	        radMenu1.AllItemsEqualHeight = True
 	{{endregion}}
 

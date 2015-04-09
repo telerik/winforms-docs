@@ -22,7 +22,7 @@ Using the CellFormatting event you can also set various properties of the PivotG
 
 #### __[C#] __
 
-{{region CellFormatting}}
+{{source=..\SamplesCS\PivotGrid\PivotGridFormattingAppearance.cs region=CellFormatting}}
 	        void radPivotGrid1_CellFormatting(object sender, PivotCellEventArgs e)
 	        {
 	            if (e.CellElement.Row.Name == "August" && !e.CellElement.IsInGrandTotalColumn)
@@ -47,7 +47,7 @@ Using the CellFormatting event you can also set various properties of the PivotG
 
 #### __[VB.NET] __
 
-{{region CellFormatting}}
+{{source=..\SamplesVB\PivotGrid\PivotGridFormattingAppearance.vb region=CellFormatting}}
 	    Private Sub radPivotGrid1_CellFormatting(sender As Object, e As PivotCellEventArgs)
 	        If e.CellElement.Row.Name = "August" AndAlso Not e.CellElement.IsInGrandTotalColumn Then
 	            e.CellElement.BackColor = Color.Lime
@@ -71,7 +71,7 @@ The GroupElementFormatting event can be used for styling the group cells:
 
 #### __[C#] __
 
-{{region Group}}
+{{source=..\SamplesCS\PivotGrid\PivotGridFormattingAppearance.cs region=Group}}
 	        void PivotGridElement_GroupElementFormatting(object sender, PivotGroupElementEventArgs e)
 	        {
 	            if (e.GroupElement.Data.Name == "1994")
@@ -99,7 +99,7 @@ The GroupElementFormatting event can be used for styling the group cells:
 
 #### __[VB.NET] __
 
-{{region Group}}
+{{source=..\SamplesVB\PivotGrid\PivotGridFormattingAppearance.vb region=Group}}
 	    Private Sub PivotGridElement_GroupElementFormatting(ByVal sender As Object, ByVal e As PivotGroupElementEventArgs)
 	        If e.GroupElement.Data.Name = "1994" Then
 	            e.GroupElement.BackColor = Color.Lime
@@ -127,7 +127,7 @@ Using the __ErrorString__ and __EmpltyValueString__ properties of RadPivotGrid,
 
 #### __[C#] __
 
-{{region SetFormatStrings}}
+{{source=..\SamplesCS\PivotGrid\PivotGridFormattingAppearance.cs region=SetFormatStrings}}
 	            this.radPivotGrid1.ErrorString = "Error";
 	            this.radPivotGrid1.EmptyValueString = "No Data";
 	{{endregion}}
@@ -136,7 +136,7 @@ Using the __ErrorString__ and __EmpltyValueString__ properties of RadPivotGrid,
 
 #### __[VB.NET] __
 
-{{region SetFormatStrings}}
+{{source=..\SamplesVB\PivotGrid\PivotGridFormattingAppearance.vb region=SetFormatStrings}}
 	        Me.RadPivotGrid1.ErrorString = "Error"
 	        Me.RadPivotGrid1.EmptyValueString = "No Data"
 	{{endregion}}

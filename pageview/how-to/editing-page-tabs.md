@@ -29,7 +29,7 @@ The sample code demonstrates how to start editing:
 
 #### __[C#]__
 
-{{region EnableEditing}}
+{{source=..\SamplesCS\PageView\EditingRadPageViewElement\EditingRadPageViewElement.cs region=EnableEditing}}
 	            
 	            radPageView1.ViewElement.AllowEdit = true;
 	            // set the SelectedPage - this page tab will be edited  
@@ -43,7 +43,7 @@ The sample code demonstrates how to start editing:
 
 #### __[VB.NET]__
 
-{{region EnableEditing}}
+{{source=..\SamplesVB\PageView\EditingRadPageViewElement\EditingRadPageViewElement.vb region=EnableEditing}}
 	
 	        RadPageView1.ViewElement.AllowEdit = True
 	        'set the SelectedPage - this page tab will be edited 
@@ -111,7 +111,7 @@ The sample code below demonstrates how to forbid the user to clear the text in t
 
 #### __[C#]__
 
-{{region Edit}}
+{{source=..\SamplesCS\PageView\EditingRadPageViewElement\EditingRadPageViewElement.cs region=Edit}}
 	            
 	            radPageView1.ViewElement.AllowEdit = true;
 	            radPageView1.ViewElement.EditorInitialized += ViewElement_EditorInitialized;
@@ -122,7 +122,7 @@ The sample code below demonstrates how to forbid the user to clear the text in t
 
 #### __[VB.NET]__
 
-{{region Edit}}
+{{source=..\SamplesVB\PageView\EditingRadPageViewElement\EditingRadPageViewElement.vb region=Edit}}
 	        RadPageView1.ViewElement.AllowEdit = True
 	        AddHandler RadPageView1.ViewElement.EditorInitialized, AddressOf ViewElement_EditorInitialized
 	        '#End Region
@@ -157,7 +157,7 @@ The sample code below demonstrates how to forbid the user to clear the text in t
 
 #### __[C#]__
 
-{{region EditContinuation}}
+{{source=..\SamplesCS\PageView\EditingRadPageViewElement\EditingRadPageViewElement.cs region=EditContinuation}}
 	        string text;
 	        private void ViewElement_EditorInitialized(object sender, RadPageViewEditorEventArgs e)
 	        {
@@ -191,7 +191,7 @@ The sample code below demonstrates how to forbid the user to clear the text in t
 
 #### __[VB.NET]__
 
-{{region EditContinuation}}
+{{source=..\SamplesVB\PageView\EditingRadPageViewElement\EditingRadPageViewElement.vb region=EditContinuation}}
 	    Private pageText As String
 	    Private Sub ViewElement_EditorInitialized(ByVal sender As Object, ByVal e As RadPageViewEditorEventArgs)
 	        AddHandler radPageView1.ViewElement.ActiveEditor.Validating, AddressOf ActiveEditor_Validating

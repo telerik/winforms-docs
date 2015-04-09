@@ -37,7 +37,7 @@ However, if you wish to prevent the creation of a column for it, use the __Syste
 
 #### __[C#] Automatic column generation__
 
-{{region autoGenerateColumns}}
+{{source=..\SamplesCS\GridView\Columns\GeneratingColumns.cs region=autoGenerateColumns}}
 	        public GeneratingColumns()
 	        {
 	            InitializeComponent();
@@ -74,7 +74,7 @@ However, if you wish to prevent the creation of a column for it, use the __Syste
 
 #### __[VB.NET] Automatic column generation__
 
-{{region autoGenerateColumns}}
+{{source=..\SamplesVB\GridView\Columns\GeneratingColumns.vb region=autoGenerateColumns}}
 	    Public Sub New()
 	        InitializeComponent()
 	
@@ -152,7 +152,7 @@ Setting the __AutoGenerateColumns__ property to *false* allows the developer to 
 
 #### __[C#] Adding Columns in Code at Run Time__
 
-{{region manualColumnGeneration}}
+{{source=..\SamplesCS\GridView\Columns\GeneratingColumns2.cs region=manualColumnGeneration}}
 	            radGridView1.AutoGenerateColumns = false;
 	            radGridView1.DataSource = categoriesBindingSource;
 	            
@@ -179,7 +179,7 @@ Setting the __AutoGenerateColumns__ property to *false* allows the developer to 
 
 #### __[VB.NET] Adding Columns in Code at Run Time__
 
-{{region manualColumnGeneration}}
+{{source=..\SamplesVB\GridView\Columns\GeneratingColumns2.vb region=manualColumnGeneration}}
 	        RadGridView1.AutoGenerateColumns = False
 	        RadGridView1.DataSource = CategoriesBindingSource
 	

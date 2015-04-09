@@ -23,7 +23,7 @@ The sorting capabilities can be controlled either by using the predefined sortin
 
 #### __[C#] Default sorting__
 
-{{region Sorting}}
+{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridSorting.cs region=Sorting}}
 	            radPropertyGrid1.PropertySort = PropertySort.Alphabetical;
 	            radPropertyGrid1.SortOrder = SortOrder.Descending;
 	{{endregion}}
@@ -32,7 +32,7 @@ The sorting capabilities can be controlled either by using the predefined sortin
 
 #### __[VB.NET] Default sorting__
 
-{{region Sorting}}
+{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridSorting.vb region=Sorting}}
 	        RadPropertyGrid1.PropertySort = PropertySort.Alphabetical
 	        RadPropertyGrid1.SortOrder = SortOrder.Descending
 	{{endregion}}
@@ -66,7 +66,7 @@ Here is an example of sorting the items by their value in ascending order:
 
 #### __[C#] Sorting with SortDescriptors__
 
-{{region SortDescriptor}}
+{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridSorting.cs region=SortDescriptor}}
 	            radPropertyGrid1.EnableSorting = true;
 	            SortDescriptor sort = new SortDescriptor("FormattedValue", ListSortDirection.Ascending);
 	            radPropertyGrid1.SortDescriptors.Add(sort);
@@ -76,7 +76,7 @@ Here is an example of sorting the items by their value in ascending order:
 
 #### __[VB.NET] Sorting with SortDescriptors__
 
-{{region SortDescriptor}}
+{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridSorting.vb region=SortDescriptor}}
 	        RadPropertyGrid1.EnableSorting = True
 	        Dim sort = New SortDescriptor("FormattedValue", ListSortDirection.Ascending)
 	        RadPropertyGrid1.SortDescriptors.Add(sort)

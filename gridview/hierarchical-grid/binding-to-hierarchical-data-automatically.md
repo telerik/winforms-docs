@@ -35,7 +35,7 @@ The run-time code fills the categories and products data tables, sets the __Auto
 
 #### __[C#] Generating Hierarchy From a DataSet__
 
-{{region BindingToHierarchicalGridAutomatically}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\BindingToHierarchicalGridAutomatically.cs region=BindingToHierarchicalGridAutomatically}}
 	        
 	        private void BindingToHierarchicalGridAutomatically_Load(object sender, EventArgs e)
 	        {
@@ -52,7 +52,7 @@ The run-time code fills the categories and products data tables, sets the __Auto
 
 #### __[VB.NET] Generating Hierarchy From a DataSet__
 
-{{region BindingToHierarchicalGridAutomatically}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\BindingToHierarchicalGridAutomatically.vb region=BindingToHierarchicalGridAutomatically}}
 	    Private Sub BindingToHierarchicalGridAutomatically_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        'TODO: This line of code loads data into the 'NwindDataSet.Order_Details' table. You can move, or remove it, as needed.
 	        Me.Order_DetailsTableAdapter.Fill(Me.NwindDataSet.Order_Details)
@@ -75,7 +75,7 @@ It is possible to auto generate Multi-level hierarchy as well. You should again 
 
 #### __[C#] Generating Three-Level Hierarchy From a DataSet__
 
-{{region BindingToMultiLevelHierarchicalGridAutomatically}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\BindingToHierarchicalGridAutomatically.cs region=BindingToMultiLevelHierarchicalGridAutomatically}}
 	        
 	        public void Dummy()
 	        { 
@@ -93,7 +93,7 @@ It is possible to auto generate Multi-level hierarchy as well. You should again 
 
 #### __[VB.NET] Generating Three-Level Hierarchy From a DataSet__
 
-{{region BindingToMultiLevelHierarchicalGridAutomatically}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\BindingToHierarchicalGridAutomatically.vb region=BindingToMultiLevelHierarchicalGridAutomatically}}
 	
 	    Public Sub Dummy()
 	        Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)

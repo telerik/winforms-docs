@@ -29,7 +29,7 @@ __Example 1__ shows how to initialize an Image object and add it to a previously
 
 #### __[C#] Example 1: Create Image__
 
-{{region radpdfprocessing-model-image_0}}
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelImage.cs region=radpdfprocessing-model-image_0}}
 	            Telerik.Windows.Documents.Fixed.Model.Objects.Image image = new Telerik.Windows.Documents.Fixed.Model.Objects.Image();
 	            container.Content.Add(image);
 	{{endregion}}
@@ -38,7 +38,7 @@ __Example 1__ shows how to initialize an Image object and add it to a previously
 
 #### __[VB.NET] Example 1: Create Image__
 
-{{region radpdfprocessing-model-image_0}}
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImage.vb region=radpdfprocessing-model-image_0}}
 	        Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = New Telerik.Windows.Documents.Fixed.Model.Objects.Image()
 	        container.Content.Add(image)
 	        '	 #End Region
@@ -60,7 +60,7 @@ __Example 2__ demonstrates how to use one of the factory methods of the __Conten
 
 #### __[C#] Example 2: Add Image to container__
 
-{{region radpdfprocessing-model-image_1}}
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelImage.cs region=radpdfprocessing-model-image_1}}
 	            Telerik.Windows.Documents.Fixed.Model.Objects.Image image = container.Content.AddImage();
 	            Telerik.Windows.Documents.Fixed.Model.Objects.Image imageWithSource = container.Content.AddImage(imageSource);
 	{{endregion}}
@@ -69,7 +69,7 @@ __Example 2__ demonstrates how to use one of the factory methods of the __Conten
 
 #### __[VB.NET] Example 2: Add Image to container__
 
-{{region radpdfprocessing-model-image_1}}
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImage.vb region=radpdfprocessing-model-image_1}}
 	        Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage()
 	        Dim imageWithSource As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage(imageSource)
 	        '	 #End Region

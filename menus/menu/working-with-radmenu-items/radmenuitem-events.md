@@ -32,7 +32,7 @@ The key event for the __RadMenuItem__ object is the
 
 #### __[C#] Handling the ToggleStateChanging event__
 
-{{region toggleStateChanging}}
+{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=toggleStateChanging}}
 	        void radMenuItem2_ToggleStateChanging(object sender, StateChangingEventArgs args)
 	        {
 	            if (args.NewValue == Telerik.WinControls.Enumerations.ToggleState.Indeterminate)
@@ -46,7 +46,7 @@ The key event for the __RadMenuItem__ object is the
 
 #### __[VB.NET] Handling the ToggleStateChanging event__
 
-{{region toggleStateChanging}}
+{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=toggleStateChanging}}
 	    Private Sub radMenuItem2_ToggleStateChanging(ByVal sender As Object, ByVal args As StateChangingEventArgs)
 	        If args.NewValue = Telerik.WinControls.Enumerations.ToggleState.Indeterminate Then
 	            args.Cancel = True
@@ -65,7 +65,7 @@ The key event for the __RadMenuItem__ object is the
 
 #### __[C#] Handling the ToggleStateChanged event__
 
-{{region toggleStateChanged}}
+{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=toggleStateChanged}}
 	        void radMenuItem2_ToggleStateChanged(object sender, StateChangedEventArgs args)
 	        {
 	            MessageBox.Show(args.ToggleState.ToString());
@@ -76,7 +76,7 @@ The key event for the __RadMenuItem__ object is the
 
 #### __[VB.NET] Handling the ToggleStateChanged event__
 
-{{region toggleStateChanged}}
+{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=toggleStateChanged}}
 	    Private Sub radMenuItem2_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
 	        MessageBox.Show(args.ToggleState.ToString())
 	    End Sub
@@ -90,7 +90,7 @@ For the __RadMenuComboItem__, you will probably want to work with the events of 
 
 #### __[C#] Handling the SelectedIndexChanged event of RadMenuComboItem__
 
-{{region comboEvent}}
+{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=comboEvent}}
 	        void Form1_Load(object sender, EventArgs e)
 	        {
 	            radMenuComboItem1.ComboBoxElement.SelectedIndexChanged += new Telerik.WinControls.UI.Data.PositionChangedEventHandler(ComboBoxElement_SelectedIndexChanged);
@@ -107,7 +107,7 @@ For the __RadMenuComboItem__, you will probably want to work with the events of 
 
 #### __[VB.NET] Handling the SelectedIndexChanged event of RadMenuComboItem__
 
-{{region comboEvent}}
+{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=comboEvent}}
 	    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 	        AddHandler radMenuComboItem1.ComboBoxElement.SelectedIndexChanged, AddressOf ComboBoxElement_SelectedIndexChanged
 	    End Sub
@@ -126,7 +126,7 @@ Handle the events for the control assigned to __RadMenuContentItem ContentElemen
 
 #### __[C#] Handling events for controls embedded in RadMenuContentItem__
 
-{{region contentItem}}
+{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=contentItem}}
 	            RadMenuContentItem buttonItem = new RadMenuContentItem();
 	            RadButtonElement button = new RadButtonElement();
 	            button.Text = "OK";
@@ -139,7 +139,7 @@ Handle the events for the control assigned to __RadMenuContentItem ContentElemen
 
 #### __[VB.NET] Handling events for controls embedded in RadMenuContentItem__
 
-{{region contentItem}}
+{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=contentItem}}
 	        Dim buttonItem As New RadMenuContentItem()
 	        Dim button As New RadButtonElement()
 	        button.Text = "OK"

@@ -22,7 +22,7 @@ __RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a
 
 #### __[C#] __
 
-{{region CreateToolTip}}
+{{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=CreateToolTip}}
 	            RadToolTip toolTip = new RadToolTip();
 	{{endregion}}
 
@@ -30,7 +30,7 @@ __RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a
 
 #### __[VB] __
 
-{{region CreateToolTip}}
+{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=CreateToolTip}}
 	        Dim toolTip As New RadToolTip()
 	{{endregion}}
 
@@ -41,7 +41,7 @@ __RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a
 
 #### __[C#] __
 
-{{region ShowText}}
+{{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=ShowText}}
 	            toolTip.Show("Tooltip text");
 	{{endregion}}
 
@@ -49,7 +49,7 @@ __RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a
 
 #### __[VB] __
 
-{{region ShowText}}
+{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=ShowText}}
 	        toolTip.Show("Tooltip text")
 	{{endregion}}
 
@@ -60,7 +60,7 @@ __RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a
 
 #### __[C#] __
 
-{{region ShowTextDuration}}
+{{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=ShowTextDuration}}
 	            toolTip.Show("Tooltip text", 2000);
 	{{endregion}}
 
@@ -68,7 +68,7 @@ __RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a
 
 #### __[VB] __
 
-{{region ShowTextDuration}}
+{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=ShowTextDuration}}
 	        toolTip.Show("Tooltip text", 2000)
 	{{endregion}}
 
@@ -79,7 +79,7 @@ __RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a
 
 #### __[C#] __
 
-{{region ShowTextPoint}}
+{{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=ShowTextPoint}}
 	            toolTip.Show("Tooltip text", Cursor.Position);
 	{{endregion}}
 
@@ -87,7 +87,7 @@ __RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a
 
 #### __[VB] __
 
-{{region ShowTextPoint}}
+{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=ShowTextPoint}}
 	        toolTip.Show("Tooltip text", Windows.Forms.Cursor.Position)
 	{{endregion}}
 
@@ -98,7 +98,7 @@ __RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a
 
 #### __[C#] __
 
-{{region ShowTextXY}}
+{{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=ShowTextXY}}
 	            toolTip.Show("Tooltip text", 500, 500);
 	{{endregion}}
 
@@ -106,7 +106,7 @@ __RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a
 
 #### __[VB] __
 
-{{region ShowTextXY}}
+{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=ShowTextXY}}
 	        toolTip.Show("Tooltip text", 500, 500)
 	{{endregion}}
 
@@ -117,7 +117,7 @@ __RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a
 
 #### __[C#] __
 
-{{region ShowTextXYDuration}}
+{{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=ShowTextXYDuration}}
 	            toolTip.Show("Tooltip text", 500, 500, 2000);
 	{{endregion}}
 
@@ -125,7 +125,7 @@ __RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a
 
 #### __[VB] __
 
-{{region ShowTextXYDuration}}
+{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=ShowTextXYDuration}}
 	        toolTip.Show("Tooltip text", 500, 500, 2000)
 	{{endregion}}
 
@@ -136,7 +136,7 @@ __RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a
 
 #### __[C#] __
 
-{{region ShowTextPointDuration}}
+{{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=ShowTextPointDuration}}
 	            toolTip.Show("Tooltip text", new Point(500,500), 2000);
 	{{endregion}}
 
@@ -144,7 +144,7 @@ __RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a
 
 #### __[VB] __
 
-{{region ShowTextPointDuration}}
+{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=ShowTextPointDuration}}
 	        toolTip.Show("Tooltip text", New Point(500, 500), 2000)
 	{{endregion}}
 
@@ -163,7 +163,7 @@ Create a new RadForm and in the code behind subscribe to its Click event. Replac
 
 #### __[C#] __
 
-{{region ClickHandler}}
+{{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=ClickHandler}}
 	        void RadToolTipExample_Click(object sender, EventArgs e)
 	        {
 	            RadToolTip newToolTip = new RadToolTip();
@@ -175,7 +175,7 @@ Create a new RadForm and in the code behind subscribe to its Click event. Replac
 
 #### __[VB] __
 
-{{region ClickHandler}}
+{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=ClickHandler}}
 	Private Sub RadToolTipExample_Click(sender As Object, e As EventArgs)
 	    Dim newToolTip As New RadToolTip()
 	    newToolTip.Show("A tooltip which appears at mouse position", 2000)

@@ -24,7 +24,7 @@ To set the location of a tile, set its __Column__ and __Row__ properties either 
 
 #### __[C#] Set tile position__
 
-{{region SetTilePosition}}
+{{source=..\SamplesCS\Panorama\PanoramaGettingStarted.cs region=SetTilePosition}}
 	            this.radTileElement1.Row = 1;
 	            this.radTileElement1.Column = 0;
 	{{endregion}}
@@ -33,7 +33,7 @@ To set the location of a tile, set its __Column__ and __Row__ properties either 
 
 #### __[VB.NET] Set tile position__
 
-{{region SetTilePosition}}
+{{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=SetTilePosition}}
 	        Me.RadTileElement1.Row = 1
 	        Me.RadTileElement1.Column = 0
 	{{endregion}}
@@ -56,7 +56,7 @@ The __CellPadding__ property specifies the offset of the tile according to the b
 
 #### __[C#] __
 
-{{region Padding}}
+{{source=..\SamplesCS\Panorama\PanoramaGettingStarted.cs region=Padding}}
 	            this.radTileElement1.RowSpan = 2;
 	            this.radTileElement1.CellPadding = new Padding(5);
 	
@@ -73,7 +73,7 @@ The __CellPadding__ property specifies the offset of the tile according to the b
 
 #### __[VB.NET] __
 
-{{region Padding}}
+{{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=Padding}}
 	        Me.RadTileElement1.RowSpan = 2
 	        Me.RadTileElement1.CellPadding = New Padding(5)
 	
@@ -133,7 +133,7 @@ To change the content element, you can edit the contents of the tilesҠ__Items__
 
 #### __[C#] Add live tiles__
 
-{{region LiveTiles}}
+{{source=..\SamplesCS\Panorama\PanoramaGettingStarted.cs region=LiveTiles}}
 	            radLiveTileElement1.Items.Add(new LightVisualElement()
 	            {
 	                Text = "Movie Idea: Pirates of the Carribean"
@@ -156,7 +156,7 @@ To change the content element, you can edit the contents of the tilesҠ__Items__
 
 #### __[VB.NET] Add live tiles__
 
-{{region LiveTiles}}
+{{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=LiveTiles}}
 	        RadLiveTileElement1.Items.Add(New LightVisualElement() With { _
 	         .Text = "Movie Idea: Pirates of the Carribean" _
 	        })
@@ -194,7 +194,7 @@ The following properties are responsible for controlling the behavior of the tra
 
 #### __[C#] Customize animation__
 
-{{region AnimationProperties}}
+{{source=..\SamplesCS\Panorama\PanoramaGettingStarted.cs region=AnimationProperties}}
 	            this.radLiveTileElement1.AnimationFrames = 15; //sets the number of frames in a transition
 	            this.radLiveTileElement1.AnimationInterval = 30; //sets the interval between each frame in the transition in miliseconds
 	            this.radLiveTileElement1.ContentChangeInterval = 7000; //sets the interval between each content change
@@ -205,7 +205,7 @@ The following properties are responsible for controlling the behavior of the tra
 
 #### __[VB.NET] Customize animation__
 
-{{region AnimationProperties}}
+{{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=AnimationProperties}}
 	        Me.RadLiveTileElement1.AnimationFrames = 15 'sets the number of frames in a transition
 	        Me.RadLiveTileElement1.AnimationInterval = 30 'sets the interval between each frame in the transition in miliseconds
 	        Me.RadLiveTileElement1.ContentChangeInterval = 7000 'sets the interval between each content change

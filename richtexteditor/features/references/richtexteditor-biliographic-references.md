@@ -92,7 +92,7 @@ This is how you can add a new source:
 
 #### __[C#] __
 
-{{region init}}
+{{source=..\SamplesCS\RichTextEditor\Features\BibliographicReferences.cs region=init}}
 	            BibliographicSource bibliographicSource = new BibliographicSource("test");
 	            bibliographicSource.Author = "authorTest";
 	            bibliographicSource.Title = "titleTest";
@@ -105,7 +105,7 @@ This is how you can add a new source:
 
 #### __[VB.NET] __
 
-{{region init}}
+{{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=init}}
 	        Dim bibliographicSource As New BibliographicSource("test")
 	        bibliographicSource.Author = "authorTest"
 	        bibliographicSource.Title = "titleTest"
@@ -151,7 +151,7 @@ To create a custom __BibliographicStyle__ you have to derive from __Bibliographi
 
 #### __[C#] __
 
-{{region add}}
+{{source=..\SamplesCS\RichTextEditor\Features\BibliographicReferences.cs region=add}}
 	            APAFifthEditionStyle APAFifthEdition = new APAFifthEditionStyle();
 	            this.radRichTextEditor1.Document.BibliographicStyles.Add(APAFifthEdition.Key, APAFifthEdition);
 	
@@ -168,7 +168,7 @@ To create a custom __BibliographicStyle__ you have to derive from __Bibliographi
 
 #### __[VB.NET] __
 
-{{region add}}
+{{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=add}}
 	        Dim APAFifthEdition As New APAFifthEditionStyle()
 	        Me.radRichTextEditor1.Document.BibliographicStyles.Add(APAFifthEdition.Key, APAFifthEdition)
 	
@@ -204,7 +204,7 @@ The Citation field is a field not different from every other field. You can use 
 
 #### __[C#] __
 
-{{region citation}}
+{{source=..\SamplesCS\RichTextEditor\Features\BibliographicReferences.cs region=citation}}
 	            CitationField citationField = new CitationField();
 	            citationField.SourceName = "test";
 	            this.radRichTextEditor1.Document.InsertField(citationField, FieldDisplayMode.Result);
@@ -214,7 +214,7 @@ The Citation field is a field not different from every other field. You can use 
 
 #### __[VB.NET] __
 
-{{region citation}}
+{{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=citation}}
 	        Dim citationField As New CitationField()
 	        citationField.SourceName = "test"
 	        Me.radRichTextEditor1.Document.InsertField(citationField, FieldDisplayMode.Result)
@@ -239,7 +239,7 @@ The Bibliography field is a field not different from every other field. You can 
 
 #### __[C#] __
 
-{{region bibliography}}
+{{source=..\SamplesCS\RichTextEditor\Features\BibliographicReferences.cs region=bibliography}}
 	            BibliographyField bibliographyField = new BibliographyField();
 	            this.radRichTextEditor1.Document.InsertField(bibliographyField, FieldDisplayMode.Result);
 	{{endregion}}
@@ -248,7 +248,7 @@ The Bibliography field is a field not different from every other field. You can 
 
 #### __[VB.NET] __
 
-{{region bibliography}}
+{{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=bibliography}}
 	        Dim bibliographyField As New BibliographyField()
 	        Me.radRichTextEditor1.Document.InsertField(bibliographyField, FieldDisplayMode.Result)
 	        '#End Region
@@ -267,7 +267,7 @@ There is a method called __ChangeBibliographicStyle()__ on __RadRichTextEditor__
 
 #### __[C#] __
 
-{{region style}}
+{{source=..\SamplesCS\RichTextEditor\Features\BibliographicReferences.cs region=style}}
 	            this.radRichTextEditor1.ChangeBibliographicStyle(new HarvardAnglia2008Style());
 	{{endregion}}
 
@@ -275,7 +275,7 @@ There is a method called __ChangeBibliographicStyle()__ on __RadRichTextEditor__
 
 #### __[VB.NET] __
 
-{{region style}}
+{{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=style}}
 	        Me.radRichTextEditor1.ChangeBibliographicStyle(New HarvardAnglia2008Style())
 	        '#End Region
 	    End Sub

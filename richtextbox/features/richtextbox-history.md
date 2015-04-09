@@ -24,7 +24,7 @@ You can enable or disable the history for the __RadDocument__ via the
 
 #### __[C#] Enable history__
 
-{{region Enable}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxHistory.cs region=Enable}}
 	            this.radRichTextBox1.Document.History.Enabled = true;
 	{{endregion}}
 
@@ -32,7 +32,7 @@ You can enable or disable the history for the __RadDocument__ via the
 
 #### __[VB.NET] Enable history__
 
-{{region Enable}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxHistory.vb region=Enable}}
 	        Me.RadRichTextBox1.Document.History.Enabled = False
 	{{endregion}}
 
@@ -45,7 +45,7 @@ To clear the history you just have to call the __Clear()__ method of the __Docum
 
 #### __[C#] Clear history__
 
-{{region Clear}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxHistory.cs region=Clear}}
 	            this.radRichTextBox1.Document.History.Clear();
 	{{endregion}}
 
@@ -53,7 +53,7 @@ To clear the history you just have to call the __Clear()__ method of the __Docum
 
 #### __[VB.NET] Clear history__
 
-{{region Clear}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxHistory.vb region=Clear}}
 	        Me.RadRichTextBox1.Document.History.Clear()
 	{{endregion}}
 
@@ -66,7 +66,7 @@ To undo and redo some actions, you can call the __Undo()__ and __Redo()__ method
 
 #### __[C#] Undo/Redo history__
 
-{{region UndoRedo}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxHistory.cs region=UndoRedo}}
 	            this.radRichTextBox1.Undo();
 	
 	            this.radRichTextBox1.Redo();
@@ -76,7 +76,7 @@ To undo and redo some actions, you can call the __Undo()__ and __Redo()__ method
 
 #### __[VB.NET] Undo/Redo history__
 
-{{region UndoRedo}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxHistory.vb region=UndoRedo}}
 	        Me.RadRichTextBox1.Undo()
 	
 	        Me.RadRichTextBox1.Redo()
@@ -92,7 +92,7 @@ To change the history capacity you have to set the desired value of the __Depth_
 
 #### __[C#] History depth__
 
-{{region Depth}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxHistory.cs region=Depth}}
 	            this.radRichTextBox1.Document.History.Depth = 500;
 	{{endregion}}
 
@@ -100,7 +100,7 @@ To change the history capacity you have to set the desired value of the __Depth_
 
 #### __[VB.NET] History depth__
 
-{{region Depth}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxHistory.vb region=Depth}}
 	        Me.RadRichTextBox1.Document.History.Depth = 500
 	{{endregion}}
 

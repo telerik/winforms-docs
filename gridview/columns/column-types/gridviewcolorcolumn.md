@@ -22,7 +22,7 @@ __GridViewColorColumn__ is auto-generated for __Color fields__ in the RadGridVie
 
 #### __[C#] __
 
-{{region addColorColumn}}
+{{source=..\SamplesCS\GridView\Columns\GridViewColorColumn1.cs region=addColorColumn}}
 	            GridViewColorColumn column = new GridViewColorColumn("Color column");
 	            this.radGridView1.Columns.Add(column);
 	
@@ -39,7 +39,7 @@ __GridViewColorColumn__ is auto-generated for __Color fields__ in the RadGridVie
 
 #### __[VB.NET] __
 
-{{region addColorColumn}}
+{{source=..\SamplesVB\GridView\Columns\GridViewColorColumn1.vb region=addColorColumn}}
 	        Dim column As New GridViewColorColumn("Color column")
 	        Me.radGridView1.Columns.Add(column)
 	

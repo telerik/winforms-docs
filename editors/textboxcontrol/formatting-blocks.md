@@ -21,7 +21,7 @@ The RadTextBoxControl allow appearance customization of each instance of
 
 #### __[C#]__
 
-{{region Formatting1}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=Formatting1}}
 	            this.radTextBoxControl1.TextBlockFormatting += this.OnTextBlockFormatting;
 	            this.radTextBoxControl1.Text = "This is important text.";
 	{{endregion}}
@@ -30,7 +30,7 @@ The RadTextBoxControl allow appearance customization of each instance of
 
 #### __[C#]__
 
-{{region formatting2}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=formatting2}}
 	        private void OnTextBlockFormatting(object sender, Telerik.WinControls.UI.TextBlockFormattingEventArgs e)
 	        {
 	            TextBlockElement textBlock = e.TextBlock as TextBlockElement;
@@ -46,7 +46,7 @@ The RadTextBoxControl allow appearance customization of each instance of
 
 #### __[VB.NET]__
 
-{{region Formatting1}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Formatting1}}
 	        AddHandler Me.RadTextBoxControl1.TextBlockFormatting, AddressOf Me.OnTextBlockFormatting
 	        Me.RadTextBoxControl1.Text = "This is important text."
 	        '#End Region
@@ -183,7 +183,7 @@ The RadTextBoxControl allow appearance customization of each instance of
 
 #### __[VB.NET]__
 
-{{region formatting2}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=formatting2}}
 	    Private Sub OnTextBlockFormatting(sender As Object, e As Telerik.WinControls.UI.TextBlockFormattingEventArgs)
 	        Dim textBlock As TextBlockElement = TryCast(e.TextBlock, TextBlockElement)
 	

@@ -30,7 +30,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[C#]__
 
-{{region Localization}}
+{{source=..\SamplesCS\Calendar\Localization\LocalizationProvider.cs region=Localization}}
 	    public class MyEnglishCalendarLocalizationProvider : CalendarLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -52,7 +52,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[VB]__
 
-{{region Localization}}
+{{source=..\SamplesVB\Calendar\Localization\LocalizationProvider.vb region=Localization}}
 	Public Class MyEnglishCalendarLocalizationProvider
 	    Inherits CalendarLocalizationProvider
 	    Public Overrides Function GetLocalizedString(id As String) As String
@@ -74,7 +74,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[C#]__
 
-{{region Usage}}
+{{source=..\SamplesCS\Calendar\Localization\LocalizationProvider.cs region=Usage}}
 	            CalendarLocalizationProvider.CurrentProvider = new MyEnglishCalendarLocalizationProvider();
 	{{endregion}}
 
@@ -82,7 +82,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[VB]__
 
-{{region Usage}}
+{{source=..\SamplesVB\Calendar\Localization\LocalizationProvider.vb region=Usage}}
 	        CalendarLocalizationProvider.CurrentProvider = New MyEnglishCalendarLocalizationProvider()
 	{{endregion}}
 

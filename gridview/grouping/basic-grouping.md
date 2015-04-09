@@ -32,7 +32,7 @@ The example below allows GroupDescriptors to be added programmatically, but doe
 
 #### __[C#] Setting grouping properties__
 
-{{region settingGroupingProperties}}
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=settingGroupingProperties}}
 	            this.radGridView1.MasterTemplate.EnableGrouping = true;
 	            this.radGridView1.MasterTemplate.AllowDragToGroup = false;
 	            this.radGridView1.MasterTemplate.AutoExpandGroups = true;
@@ -42,7 +42,7 @@ The example below allows GroupDescriptors to be added programmatically, but doe
 
 #### __[VB.NET] Setting grouping properties__
 
-{{region settingGroupingProperties}}
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=settingGroupingProperties}}
 	        Me.RadGridView1.MasterTemplate.EnableGrouping = True
 	        Me.RadGridView1.MasterTemplate.AllowDragToGroup = False
 	        Me.RadGridView1.MasterTemplate.AutoExpandGroups = True
@@ -56,7 +56,7 @@ You can hide the GroupPanel using the following code:
 
 #### __[C#] Hide the group panel__
 
-{{region hideTheGroupPanel}}
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=hideTheGroupPanel}}
 	            this.radGridView1.ShowGroupPanel = false;
 	{{endregion}}
 
@@ -64,7 +64,7 @@ You can hide the GroupPanel using the following code:
 
 #### __[VB.NET] Hide the group panel__
 
-{{region hideTheGroupPanel}}
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=hideTheGroupPanel}}
 	        Me.RadGridView1.ShowGroupPanel = False
 	{{endregion}}
 

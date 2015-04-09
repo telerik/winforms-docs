@@ -38,7 +38,7 @@ Building the user interface of the RadRichTextBox-enabled is pretty simple. You 
 
 #### __[C#]__
 
-{{region ribbonui}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxRibbonUI.cs region=ribbonui}}
 	        public RichTextBoxRibbonUI()
 	        {
 	            InitializeComponent();
@@ -69,7 +69,7 @@ Building the user interface of the RadRichTextBox-enabled is pretty simple. You 
 
 #### __[VB.NET]__
 
-{{region ribbonui}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxRibbonUI.vb region=ribbonui}}
 	    Public Sub New()
 	        InitializeComponent()
 	

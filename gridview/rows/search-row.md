@@ -19,7 +19,7 @@ __RadGridView__ offers a build-in search functionality available for both end us
 
 #### __[C#]__
 
-{{region AllowSearchRow}}
+{{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=AllowSearchRow}}
 	            this.radGridView1.AllowSearchRow = true;
 	{{endregion}}
 
@@ -27,7 +27,7 @@ __RadGridView__ offers a build-in search functionality available for both end us
 
 #### __[VB.NET]__
 
-{{region AllowSearchRow}}
+{{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=AllowSearchRow}}
 	        Me.RadGridView1.AllowSearchRow = True
 	{{endregion}}
 
@@ -59,7 +59,7 @@ To change the highlight color you should use the __HighlightColor__ property of 
 
 #### __[C#]__
 
-{{region ChangeHighlightColor}}
+{{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=ChangeHighlightColor}}
 	            radGridView1.TableElement.SearchHighlightColor = Color.LightBlue;
 	{{endregion}}
 
@@ -67,7 +67,7 @@ To change the highlight color you should use the __HighlightColor__ property of 
 
 #### __[VB.NET]__
 
-{{region ChangeHighlightColor}}
+{{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=ChangeHighlightColor}}
 	        RadGridView1.TableElement.SearchHighlightColor = Color.LightBlue
 	{{endregion}}
 
@@ -78,7 +78,7 @@ You can also use the search functionality programmatically without showing the s
 
 #### __[C#]__
 
-{{region GetSearchRow}}
+{{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=GetSearchRow}}
 	            GridViewSearchRowInfo searchRow = this.radGridView1.MasterView.TableSearchRow;
 	{{endregion}}
 
@@ -86,7 +86,7 @@ You can also use the search functionality programmatically without showing the s
 
 #### __[VB.NET]__
 
-{{region GetSearchRow}}
+{{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=GetSearchRow}}
 	        Dim searchRow As GridViewSearchRowInfo = Me.RadGridView1.MasterView.TableSearchRow
 	{{endregion}}
 

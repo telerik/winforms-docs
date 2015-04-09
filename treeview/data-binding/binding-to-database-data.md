@@ -81,7 +81,7 @@ The purpose of this example is to demonstrate how to bind to database data.
 
 #### __[C#]__
 
-{{region database}}
+{{source=..\SamplesCS\TreeView\DataBinding\BindingToDatabaseData.cs region=database}}
 	            this.radTreeView1.DataSource = this.artistsBindingSource;
 	            this.radTreeView1.DisplayMember = "ArtistName";
 	            this.radTreeView1.ValueMember = "ArtistID";
@@ -93,7 +93,7 @@ The purpose of this example is to demonstrate how to bind to database data.
 
 #### __[VB.NET]__
 
-{{region database}}
+{{source=..\SamplesVB\TreeView\DataBinding\BindingToDatabaseData.vb region=database}}
 	        Me.RadTreeView1.DataSource = Me.ArtistsBindingSource
 	        Me.RadTreeView1.DisplayMember = "ArtistName"
 	        Me.RadTreeView1.ValueMember = "ArtistID"

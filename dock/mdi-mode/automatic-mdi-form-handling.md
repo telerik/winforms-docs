@@ -24,7 +24,7 @@ To configure your MDI application to use this feature:
 
 #### __[C#] Configuring the Parent Form__
 
-{{region initialization}}
+{{source=..\SamplesCS\Dock\MDIHandling1.cs region=initialization}}
 	        private void Form1_Load(object sender, EventArgs e)
 	        {
 	            this.IsMdiContainer = true;
@@ -36,7 +36,7 @@ To configure your MDI application to use this feature:
 
 #### __[VB.NET] Configuring the Parent Form__
 
-{{region initialization}}
+{{source=..\SamplesVB\Dock\MDIHandling1.vb region=initialization}}
 	    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        Me.IsMdiContainer = True
 	        Me.RadDock1.AutoDetectMdiChildren = True
@@ -51,7 +51,7 @@ To configure your MDI application to use this feature:
 
 #### __[C#]__
 
-{{region creatingChildForm}}
+{{source=..\SamplesCS\Dock\MDIHandling1.cs region=creatingChildForm}}
 	        private void radMenuItem1_Click(object sender, EventArgs e)
 	        {
 	            Form childForm = new Form();
@@ -65,7 +65,7 @@ To configure your MDI application to use this feature:
 
 #### __[VB.NET]__
 
-{{region creatingChildForm}}
+{{source=..\SamplesVB\Dock\MDIHandling1.vb region=creatingChildForm}}
 	    Private Sub RadMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadMenuItem1.Click
 	        Dim childForm As New Form()
 	        childForm.Text = "MDI Child " & DateTime.Now.ToShortTimeString()
@@ -90,7 +90,7 @@ However, you can set the default type to ToolWindow:
 
 #### __[C#] Setting the default DockWindow type for MDI children forms__
 
-{{region mdiChildrenDockType}}
+{{source=..\SamplesCS\Dock\MDIHandling1.cs region=mdiChildrenDockType}}
 	            this.radDock1.MdiChildrenDockType = DockType.ToolWindow;
 	{{endregion}}
 
@@ -98,7 +98,7 @@ However, you can set the default type to ToolWindow:
 
 #### __[VB.NET] Setting the default DockWindow type for MDI children forms__
 
-{{region mdiChildrenDockType}}
+{{source=..\SamplesVB\Dock\MDIHandling1.vb region=mdiChildrenDockType}}
 	        Me.RadDock1.MdiChildrenDockType = DockType.ToolWindow
 	{{endregion}}
 
@@ -141,7 +141,7 @@ The __CloseAllWindows__ returns bool value which indicates if the operation is s
 
 #### __[C#]__
 
-{{region closing}}
+{{source=..\SamplesCS\Dock\MDIHandling1.cs region=closing}}
 	        protected override void OnClosing(CancelEventArgs e)
 	        {
 	            bool canClose = radDock1.CloseAllWindows();
@@ -156,7 +156,7 @@ The __CloseAllWindows__ returns bool value which indicates if the operation is s
 
 #### __[VB.NET]__
 
-{{region closing}}
+{{source=..\SamplesVB\Dock\MDIHandling1.vb region=closing}}
 	    Protected Overrides Sub OnClosing(ByVal e As CancelEventArgs)
 	        Dim canClose As Boolean = RadDock1.CloseAllWindows()
 	        e.Cancel = Not canClose

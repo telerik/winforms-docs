@@ -30,7 +30,7 @@ This example will create a single appointment, then define a recurrence
 
 #### __[C#] Adding and traversing appointment recurrences__
 
-{{region addingAndTraversing}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\RecurrenceRuleWalkthrough.cs region=addingAndTraversing}}
 	            DateTime startDate = new DateTime(2008, 10, 1, 3, 30, 0);
 	            // Create a sample appointment that starts at 10/1/2008 3:30 AM and lasts half an hour.
 	            Appointment recurringAppointment = new Appointment(startDate,
@@ -68,7 +68,7 @@ This example will create a single appointment, then define a recurrence
 
 #### __[VB.NET] Adding and traversing appointment recurrences__
 
-{{region addingAndTraversing}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurrenceRuleWalkthrough.vb region=addingAndTraversing}}
 	        Dim startDate As New Date(2008, 10, 1, 3, 30, 0)
 	        ' Create a sample appointment that starts at 10/1/2008 3:30 AM and lasts half an hour.
 	        Dim recurringAppointment As New Appointment(startDate, TimeSpan.FromHours(1.0), "Appointment Subject")

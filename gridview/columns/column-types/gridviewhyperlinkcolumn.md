@@ -23,7 +23,7 @@ Here is how to create and populate __GridViewHyperlinkColumn__
 
 #### __[C#] Adding and populating GridViewHyperlinkColumn__
 
-{{region addHyperlinkColumn}}
+{{source=..\SamplesCS\GridView\Columns\GridViewHyperlinkColumn1.cs region=addHyperlinkColumn}}
 	            GridViewHyperlinkColumn column = new GridViewHyperlinkColumn("Hyperlink column");
 	            this.radGridView1.Columns.Add(column);
 	            
@@ -40,7 +40,7 @@ Here is how to create and populate __GridViewHyperlinkColumn__
 
 #### __[VB.NET] Adding and populating GridViewHyperlinkColumn__
 
-{{region addHyperlinkColumn}}
+{{source=..\SamplesVB\GridView\Columns\GridViewHyperlinkColumn1.vb region=addHyperlinkColumn}}
 	        Dim column As New GridViewHyperlinkColumn("Hyperlink column")
 	        Me.radGridView1.Columns.Add(column)
 	

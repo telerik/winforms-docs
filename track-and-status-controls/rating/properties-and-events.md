@@ -21,7 +21,7 @@ position: 3
 
 #### __[C#]__
 
-{{region ShowItemToolTips}}
+{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=ShowItemToolTips}}
 	
 	            this.radRating1.ShowItemToolTips = false;
 	            
@@ -31,7 +31,7 @@ position: 3
 
 #### __[VB.NET]__
 
-{{region ShowItemToolTips}}
+{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=ShowItemToolTips}}
 	        Me.RadRating1.ShowItemToolTips = False
 	        ' #End Region
 	
@@ -156,7 +156,7 @@ position: 3
 
 #### __[C#]__
 
-{{region RightToLeft}}
+{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=RightToLeft}}
 	            
 	            this.radRating1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 	            
@@ -166,7 +166,7 @@ position: 3
 
 #### __[VB.NET]__
 
-{{region RightToLeft}}
+{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=RightToLeft}}
 	
 	        Me.RadRating1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 	        ' #End Region
@@ -286,7 +286,7 @@ position: 3
 
 #### __[C#]__
 
-{{region Direction}}
+{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Direction}}
 	            
 	            this.radRating1.Direction = RatingDirection.Reversed;
 	        
@@ -296,7 +296,7 @@ position: 3
 
 #### __[VB.NET]__
 
-{{region Direction}}
+{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Direction}}
 	        Me.RadRating1.Direction = RatingDirection.Reversed
 	        ' #End Region
 	
@@ -412,7 +412,7 @@ position: 3
 
 #### __[C#]__
 
-{{region Orientation}}
+{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Orientation}}
 	            
 	            this.radRating1.Orientation = Orientation.Vertical;
 	            this.radRating1.AutoSize = true;
@@ -423,7 +423,7 @@ position: 3
 
 #### __[VB.NET]__
 
-{{region Orientation}}
+{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Orientation}}
 	
 	        Me.RadRating1.Orientation = Orientation.Vertical
 	        Me.RadRating1.AutoSize = True
@@ -534,7 +534,7 @@ position: 3
 
 #### __[C#]__
 
-{{region Captions}}
+{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Captions}}
 	            
 	            this.radRating1.Caption = "Rate the movie";
 	            this.radRating1.Description = "Description";
@@ -546,7 +546,7 @@ position: 3
 
 #### __[VB.NET]__
 
-{{region Captions}}
+{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Captions}}
 	        Me.RadRating1.Caption = "Rate the movie"
 	        Me.RadRating1.Description = "Description"
 	        Me.RadRating1.Subcaption = "SubCaption"
@@ -650,7 +650,7 @@ position: 3
 
 #### __[C#]__
 
-{{region SelectionPrecise}}
+{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=SelectionPrecise}}
 	            
 	            this.radRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.Precise;
 	            
@@ -660,7 +660,7 @@ position: 3
 
 #### __[VB.NET]__
 
-{{region SelectionPrecise}}
+{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=SelectionPrecise}}
 	
 	        Me.RadRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.Precise
 	
@@ -756,7 +756,7 @@ position: 3
 
 #### __[C#]__
 
-{{region SelectionHalfItem}}
+{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=SelectionHalfItem}}
 	
 	            this.radRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.HalfItem;
 	
@@ -766,7 +766,7 @@ position: 3
 
 #### __[VB.NET]__
 
-{{region SelectionHalfItem}}
+{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=SelectionHalfItem}}
 	
 	        Me.RadRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.HalfItem
 	
@@ -856,7 +856,7 @@ position: 3
 
 #### __[C#]__
 
-{{region SelectionFullItem}}
+{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=SelectionFullItem}}
 	
 	            this.radRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.FullItem;
 	
@@ -866,7 +866,7 @@ position: 3
 
 #### __[VB.NET]__
 
-{{region SelectionFullItem}}
+{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=SelectionFullItem}}
 	
 	        Me.RadRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.FullItem
 	
@@ -952,7 +952,7 @@ position: 3
 
 #### __[C#]__
 
-{{region Ranges}}
+{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Ranges}}
 	            
 	            this.radRating1.Minimum = 10;
 	            this.radRating1.Maximum = 40;
@@ -963,7 +963,7 @@ position: 3
 
 #### __[VB.NET]__
 
-{{region Ranges}}
+{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Ranges}}
 	        Me.RadRating1.Minimum = 10
 	        Me.RadRating1.Maximum = 40
 	        ' #End Region
@@ -1043,7 +1043,7 @@ position: 3
 
 #### __[C#]__
 
-{{region Value}}
+{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Value}}
 	
 	            this.radRating1.Value = 43.4;
 	
@@ -1053,7 +1053,7 @@ position: 3
 
 #### __[VB.NET]__
 
-{{region Value}}
+{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Value}}
 	
 	        Me.RadRating1.Value = 43.4
 	        ' #End Region

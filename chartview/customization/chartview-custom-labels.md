@@ -34,7 +34,7 @@ __RadChartView__ allows you to easily change the axes labels text by using a cus
 
 #### __[C#] __
 
-{{region FormatProvider}}
+{{source=..\SamplesCS\ChartView\Customization\CustomLabels.cs region=FormatProvider}}
 	
 	    public class MyFormatProvider : IFormatProvider, ICustomFormatter
 	    {
@@ -67,7 +67,7 @@ __RadChartView__ allows you to easily change the axes labels text by using a cus
 
 #### __[VB.NET] __
 
-{{region FormatProvider}}
+{{source=..\SamplesVB\ChartView\Customization\CustomLabels.vb region=FormatProvider}}
 	
 	Class MyFormatProvider
 	    Implements IFormatProvider
@@ -102,7 +102,7 @@ Then you can just change the horizontal axis __LabelFormatProvider__ by using th
 
 #### __[C#] __
 
-{{region propertyChange}}
+{{source=..\SamplesCS\ChartView\Customization\CustomLabels.cs region=propertyChange}}
 	            LinearAxis horizontalAxis = radChartView1.Axes.Get<LinearAxis>(0);
 	            horizontalAxis.LabelFormatProvider = new MyFormatProvider();
 	{{endregion}}
@@ -111,7 +111,7 @@ Then you can just change the horizontal axis __LabelFormatProvider__ by using th
 
 #### __[VB.NET] __
 
-{{region propertyChange}}
+{{source=..\SamplesVB\ChartView\Customization\CustomLabels.vb region=propertyChange}}
 	        Dim horizontalAxis As LinearAxis = RadChartView1.Axes.[Get](Of LinearAxis)(0)
 	        horizontalAxis.LabelFormatProvider = New MyFormatProvider()
 	{{endregion}}
@@ -124,7 +124,7 @@ Then you can just change the horizontal axis __LabelFormatProvider__ by using th
 
 #### __[C#] __
 
-{{region FormatProvider2}}
+{{source=..\SamplesCS\ChartView\Customization\CustomLabels.cs region=FormatProvider2}}
 	
 	    public class DateTimeFormatProvider : IFormatProvider, ICustomFormatter
 	    {
@@ -154,7 +154,7 @@ Then you can just change the horizontal axis __LabelFormatProvider__ by using th
 
 #### __[VB.NET] __
 
-{{region FormatProvider2}}
+{{source=..\SamplesVB\ChartView\Customization\CustomLabels.vb region=FormatProvider2}}
 	
 	Class DateTimeFormatProvider
 	    Implements IFormatProvider
@@ -182,7 +182,7 @@ Again you can just change the horizontal axis __LabelFormatProvider__ by using t
 
 #### __[C#] __
 
-{{region PropertyChange2}}
+{{source=..\SamplesCS\ChartView\Customization\CustomLabels.cs region=PropertyChange2}}
 	            DateTimeContinuousAxis dateTimeAxis = new DateTimeContinuousAxis();
 	            dateTimeAxis.LabelFormatProvider = new DateTimeFormatProvider();
 	{{endregion}}
@@ -191,7 +191,7 @@ Again you can just change the horizontal axis __LabelFormatProvider__ by using t
 
 #### __[VB.NET] __
 
-{{region PropertyChange2}}
+{{source=..\SamplesVB\ChartView\Customization\CustomLabels.vb region=PropertyChange2}}
 	        Dim dateTimeAxis As New DateTimeContinuousAxis()
 	        dateTimeAxis.LabelFormatProvider = New DateTimeFormatProvider()
 	{{endregion}}

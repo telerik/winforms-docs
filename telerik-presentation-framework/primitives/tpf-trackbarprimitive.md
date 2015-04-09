@@ -22,7 +22,7 @@ TrackBarPrimitive provides the basic visual layout of a trackbar background.
 
 #### __[C#] Creating a TrackBarPrimitive__
 
-{{region myTrackBarPrimitiveElement}}
+{{source=..\SamplesCS\TPF\Primitives\TrackBarPrimitive1\MyTrackBarPrimitiveElement.cs region=myTrackBarPrimitiveElement}}
 	    public class MyTrackBarPrimitiveElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -45,7 +45,7 @@ TrackBarPrimitive provides the basic visual layout of a trackbar background.
 
 #### __[VB.NET] Creating a TrackBarPrimitive__
 
-{{region myTrackBarPrimitiveElement}}
+{{source=..\SamplesVB\TPF\Primitives\TrackBarPrimitive1\MyTrackBarPrimitiveElement.vb region=myTrackBarPrimitiveElement}}
 	Public Class MyTrackBarPrimitiveElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

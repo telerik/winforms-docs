@@ -40,7 +40,7 @@ You can add the control in code as well. The following snippet demonstrates how 
 
 #### __[C#] __
 
-{{region ruler}}
+{{source=..\SamplesCS\RichTextEditor\RadRichTextEditorRulerCode.cs region=ruler}}
 	        void RadRichTextEditorRuler_Load(object sender, EventArgs e)
 	        {
 	            RadRichTextEditor radRichTextEditor1 = new RadRichTextEditor();
@@ -58,7 +58,7 @@ You can add the control in code as well. The following snippet demonstrates how 
 
 #### __[VB.NET] __
 
-{{region ruler}}
+{{source=..\SamplesVB\RichTextEditor\RadRichTextEditorRulerCode.vb region=ruler}}
 	    Private Sub RadRichTextEditorRuler_Load(ByVal sender As Object, ByVal e As EventArgs)
 	        Dim radRichTextEditor1 As New RadRichTextEditor()
 	        radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged

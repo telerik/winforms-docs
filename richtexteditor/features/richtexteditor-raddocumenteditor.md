@@ -49,7 +49,7 @@ When a __RadDocument__ instance was for some reason created from code – built 
 
 #### __[C#] __
 
-{{region init}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentEditorCode.cs region=init}}
 	            
 	            RadDocumentEditor documentEditor = new RadDocumentEditor(this.radRichTextEditor1.Document);
 	            
@@ -59,7 +59,7 @@ When a __RadDocument__ instance was for some reason created from code – built 
 
 #### __[VB.NET] __
 
-{{region init}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentEditorCode.vb region=init}}
 	
 	        Dim documentEditor As New RadDocumentEditor(Me.radRichTextEditor1.Document)
 	
@@ -106,7 +106,7 @@ The newly created *documentEditor* instance now provides all capabilities that a
 
 #### __[C#] __
 
-{{region insert}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentEditorCode.cs region=insert}}
 	                
 	            documentEditor.BeginUndoGroup();
 	                
@@ -126,7 +126,7 @@ The newly created *documentEditor* instance now provides all capabilities that a
 
 #### __[VB.NET] __
 
-{{region insert}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentEditorCode.vb region=insert}}
 	
 	        documentEditor.BeginUndoGroup()
 	
@@ -164,7 +164,7 @@ You can also cancel the execution of the undo group, and it won't be recorded in
 
 #### __[C#] __
 
-{{region cancel}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentEditorCode.cs region=cancel}}
 	                
 	            documentEditor.BeginUndoGroup();
 	
@@ -184,7 +184,7 @@ You can also cancel the execution of the undo group, and it won't be recorded in
 
 #### __[VB.NET] __
 
-{{region cancel}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentEditorCode.vb region=cancel}}
 	
 	        documentEditor.BeginUndoGroup()
 	

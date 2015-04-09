@@ -27,7 +27,7 @@ Of course, there are cases where immediate value submission is needed. In this c
 
 #### __[C#] __
 
-{{region ValueChanged}}
+{{source=..\SamplesCS\GridView\Editors\How-To\CheckBoxEditorSubmitValueChange.cs region=ValueChanged}}
 	        private void RadGridView1_ValueChanged(object sender, EventArgs e)
 	        {
 	            if (radGridView1.CurrentColumn.Name == "MyCheckBoxColumnName")
@@ -41,7 +41,7 @@ Of course, there are cases where immediate value submission is needed. In this c
 
 #### __[VB.NET] __
 
-{{region ValueChanged}}
+{{source=..\SamplesVB\GridView\Editors\How-To\CheckBoxEditorSubmitValueChange.vb region=ValueChanged}}
 	    Private Sub RadGridView1_ValueChanged(sender As Object, e As EventArgs) Handles RadGridView1.ValueChanged
 	        If RadGridView1.CurrentColumn.Name = "MyCheckBoxColumnName" Then
 	            RadGridView1.EndEdit()

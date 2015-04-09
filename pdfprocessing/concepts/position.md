@@ -70,7 +70,7 @@ __Example 1__ shows how transformations can be appended.
 
 #### __[C#] Example 1: Trasform MatrixPosition__
 
-{{region radpdfprocessing-concepts-position_0}}
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsPosition.cs region=radpdfprocessing-concepts-position_0}}
 	            MatrixPosition matrixPosition = new MatrixPosition();
 	            matrixPosition.Translate(20, 20); // Translates the position by (20, 20)
 	            matrixPosition.Translate(30, 30); // Translates the position by (30, 30).
@@ -80,7 +80,7 @@ __Example 1__ shows how transformations can be appended.
 
 #### __[VB.NET] Example 1: Trasform MatrixPosition__
 
-{{region radpdfprocessing-concepts-position_0}}
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsPosition.vb region=radpdfprocessing-concepts-position_0}}
 	        Dim matrixPosition As MatrixPosition = New MatrixPosition()
 	        matrixPosition.Translate(20, 20) ' Translates the position by (20, 20)
 	        matrixPosition.Translate(30, 30) ' Translates the position by (30, 30).
@@ -125,7 +125,7 @@ __Example 2__ shows how transformations overwrite the previous transformations o
 
 #### __[C#] Example 2: Trasform SimplePosition__
 
-{{region radpdfprocessing-concepts-position_1}}
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsPosition.cs region=radpdfprocessing-concepts-position_1}}
 	            SimplePosition simplePosition = new SimplePosition();
 	            simplePosition.Translate(20, 20); // Translates the position by (30, 30).
 	            simplePosition.Translate(30, 30); // Translates the position by (20, 20) overwriting the previous translations.
@@ -135,7 +135,7 @@ __Example 2__ shows how transformations overwrite the previous transformations o
 
 #### __[VB.NET] Example 2: Trasform SimplePosition__
 
-{{region radpdfprocessing-concepts-position_1}}
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsPosition.vb region=radpdfprocessing-concepts-position_1}}
 	        Dim simplePosition As SimplePosition = New SimplePosition()
 	        simplePosition.Translate(20, 20) ' Translates the position by (30, 30).
 	        simplePosition.Translate(30, 30) ' Translates the position by (20, 20) overwriting the previous translations.

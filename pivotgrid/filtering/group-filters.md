@@ -25,7 +25,7 @@ Group filtering is enabled by default. To enable or disable it use the following
 
 #### __[C#] __
 
-{{region AllowGroupFiltering}}
+{{source=..\SamplesCS\PivotGrid\Filtering\PivotGridGroupFiltering.cs region=AllowGroupFiltering}}
 	            this.radPivotGrid1.AllowGroupFiltering = true;
 	{{endregion}}
 
@@ -33,7 +33,7 @@ Group filtering is enabled by default. To enable or disable it use the following
 
 #### __[VB.NET] __
 
-{{region AllowGroupFiltering}}
+{{source=..\SamplesVB\PivotGrid\Filtering\PivotGridGroupFiltering.vb region=AllowGroupFiltering}}
 	        Me.radPivotGrid1.AllowGroupFiltering = True
 	        '#End Region
 	
@@ -74,7 +74,7 @@ Group filters can be applied to group descriptions by using their __GroupFilter_
 
 #### __[C#] __
 
-{{region PropertyGroupDescription}}
+{{source=..\SamplesCS\PivotGrid\Filtering\PivotGridGroupFiltering.cs region=PropertyGroupDescription}}
 	            PropertyGroupDescriptionBase description = (PropertyGroupDescriptionBase)this.radPivotGrid1.RowGroupDescriptions[0];
 	            LabelGroupFilter filter = new LabelGroupFilter();
 	            ComparisonCondition condition = new ComparisonCondition();
@@ -90,7 +90,7 @@ Group filters can be applied to group descriptions by using their __GroupFilter_
 
 #### __[VB.NET] __
 
-{{region PropertyGroupDescription}}
+{{source=..\SamplesVB\PivotGrid\Filtering\PivotGridGroupFiltering.vb region=PropertyGroupDescription}}
 	        Dim description As PropertyGroupDescriptionBase = Me.radPivotGrid1.RowGroupDescriptions(0)
 	        Dim filter As New LabelGroupFilter()
 	        Dim condition As New ComparisonCondition()

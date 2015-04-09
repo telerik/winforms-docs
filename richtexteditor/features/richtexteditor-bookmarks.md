@@ -73,7 +73,7 @@ For example, you can keep a Dictionary<string, string> mapping each bookmark nam
 
 #### __[C#] __
 
-{{region replace}}
+{{source=..\SamplesCS\RichTextEditor\Features\Bookmarks.cs region=replace}}
 	        
 	        private void ReplaceContentOfBookmark(string bookmarkName)
 	        {
@@ -89,7 +89,7 @@ For example, you can keep a Dictionary<string, string> mapping each bookmark nam
 
 #### __[VB.NET] __
 
-{{region replace}}
+{{source=..\SamplesVB\RichTextEditor\Features\Bookmarks.vb region=replace}}
 	
 	    Private Sub ReplaceContentOfBookmark(ByVal bookmarkName As String)
 	        Dim bookmark As BookmarkRangeStart = Me.radRichTextEditor1.Document.GetBookmarkByName(bookmarkName)
@@ -132,7 +132,7 @@ If you want to preserve the bookmarks in the document and only change the text b
 
 #### __[C#] __
 
-{{region change}}
+{{source=..\SamplesCS\RichTextEditor\Features\Bookmarks.cs region=change}}
 	        
 	        private void ChangeAllBookmarks(RadRichTextEditor radRichTextEditor)
 	        {
@@ -161,7 +161,7 @@ If you want to preserve the bookmarks in the document and only change the text b
 
 #### __[VB.NET] __
 
-{{region change}}
+{{source=..\SamplesVB\RichTextEditor\Features\Bookmarks.vb region=change}}
 	
 	    Private Sub ChangeAllBookmarks(ByVal radRichTextEditor As RadRichTextEditor)
 	        Dim bookmarks() As BookmarkRangeStart = radRichTextEditor.Document.GetAllBookmarks().ToArray()

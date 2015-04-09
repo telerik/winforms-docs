@@ -30,7 +30,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[C#] Localizing RadTreeView Strings__
 
-{{region provider}}
+{{source=..\SamplesCS\TreeView\MyEnglishTreeViewLocalizationProvider.cs region=provider}}
 	    public class MyEnglishTreeViewLocalizationProvider : TreeViewLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -58,7 +58,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[VB.NET] Localizing RadTreeView Strings__
 
-{{region provider}}
+{{source=..\SamplesVB\TreeView\MyEnglishTreeViewLocalizationProvider.vb region=provider}}
 	    Public Overrides Function GetLocalizedString(ByVal id As String) As String
 	        Select Case id
 	            Case TreeViewStringId.ContextMenuCollapse
@@ -83,7 +83,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[C#] Assigning the Current Localization Provider__
 
-{{region localization}}
+{{source=..\SamplesCS\TreeView\TreeLocalization.cs region=localization}}
 	            TreeViewLocalizationProvider.CurrentProvider = new MyEnglishTreeViewLocalizationProvider();
 	{{endregion}}
 
@@ -91,7 +91,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[VB.NET] Assigning the Current Localization Provider__
 
-{{region localization}}
+{{source=..\SamplesVB\TreeView\TreeLocalization.vb region=localization}}
 	        TreeViewLocalizationProvider.CurrentProvider = New MyEnglishTreeViewLocalizationProvider()
 	{{endregion}}
 

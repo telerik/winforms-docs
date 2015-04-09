@@ -39,7 +39,7 @@ For setting the hierarchy, you will need the special
 
 #### __[C#] Setting the hierarchical grid in bound mode__
 
-{{region BindingToHierarchicalGridProgramatically}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\BindingToHierarchicalGridProgramatically.cs region=BindingToHierarchicalGridProgramatically}}
 	        
 	        private void BindingToHierarchicalGridProgramatically_Load(object sender, EventArgs e)
 	        {
@@ -66,7 +66,7 @@ For setting the hierarchy, you will need the special
 
 #### __[VB.NET] Setting the hierarchical grid in bound mode__
 
-{{region BindingToHierarchicalGridProgramatically}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\BindingToHierarchicalGridProgramatically.vb region=BindingToHierarchicalGridProgramatically}}
 	    Private Sub BindingToHierarchicalGridProgramatically_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        Me.SuppliersTableAdapter.Fill(Me.NwindDataSet.Suppliers)
 	        Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
@@ -100,7 +100,7 @@ It is possible to manually set up the child templates and the relations between 
 
 #### __[C#] Creating Three-level hierarchical grid in bound mode__
 
-{{region creatingMultiLevelHierarchicalGridInUnboundMode}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\BindingToHierarchicalGridProgramatically.cs region=creatingMultiLevelHierarchicalGridInUnboundMode}}
 	        
 	        private void BindingToMultiLevelHierarchicalGridInBoundMode_Load(object sender, EventArgs e)
 	        {
@@ -139,7 +139,7 @@ It is possible to manually set up the child templates and the relations between 
 
 #### __[VB.NET] Creating Three-level hierarchical grid in bound mode__
 
-{{region creatingMultiLevelHierarchicalGridInUnboundMode}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\BindingToHierarchicalGridProgramatically.vb region=creatingMultiLevelHierarchicalGridInUnboundMode}}
 	
 	    Private Sub BindingToMultiLevelHierarchicalGridInBoundMode_Load(sender As Object, e As EventArgs)
 	        Me.Order_DetailsTableAdapter.Fill(Me.NwindDataSet.Order_Details)
@@ -190,7 +190,7 @@ Setting the hierarchical grid in unbound mode is quite similar to that for the b
 
 #### __[C#] Creating hierarchical grid in unbound mode__
 
-{{region creatingHierarchicalGridInUnboundMode}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\UnboundMode.cs region=creatingHierarchicalGridInUnboundMode}}
 	            
 	        public void creatingHierarchicalGridInUnboundMode()
 	        {
@@ -289,7 +289,7 @@ Setting the hierarchical grid in unbound mode is quite similar to that for the b
 
 #### __[VB.NET] Creating hierarchical grid in unbound mode__
 
-{{region creatingHierarchicalGridInUnboundMode}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\UnboundMode.vb region=creatingHierarchicalGridInUnboundMode}}
 	    Public Sub creatingHierarchicalGridInUnboundMode()
 	        'setup the master template
 	        Dim column As New GridViewImageColumn("Photo")
@@ -392,7 +392,7 @@ Following the introduced approach in the previous section, the three-level hiera
 
 #### __[C#] Creating Three-level hierarchical grid in unbound mode__
 
-{{region creatingMultiLevelHierarchicalGridInUnboundMode}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\UnboundMode.cs region=creatingMultiLevelHierarchicalGridInUnboundMode}}
 	            
 	        public void CreatingMultiLevelHierarchicalGridInUnboundMode()
 	        { 
@@ -473,7 +473,7 @@ Following the introduced approach in the previous section, the three-level hiera
 
 #### __[VB.NET] Creating Three-level hierarchical grid in unbound mode__
 
-{{region creatingMultiLevelHierarchicalGridInUnboundMode}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\UnboundMode.vb region=creatingMultiLevelHierarchicalGridInUnboundMode}}
 	
 	    Public Sub CreatingMultiLevelHierarchicalGridInUnboundMode()
 	        Me.Order_DetailsTableAdapter.Fill(Me.NwindDataSet.Order_Details)

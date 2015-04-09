@@ -48,7 +48,7 @@ Get the SelectedColor or SelectedHlsColor, check the returned DialogResult :
 
 #### __[C#] Check the selected values in RadColorDialog__
 
-{{region getTheSelectedColors}}
+{{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=getTheSelectedColors}}
 	            if (radColorDialog1.ShowDialog() == DialogResult.OK)
 	            {
 	                Color color = radColorDialog1.SelectedColor;
@@ -60,7 +60,7 @@ Get the SelectedColor or SelectedHlsColor, check the returned DialogResult :
 
 #### __[VB.NET] Check the selected values in RadColorDialog__
 
-{{region getTheSelectedColors}}
+{{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=getTheSelectedColors}}
 	        If RadColorDialog1.ShowDialog() = DialogResult.OK Then
 	            Dim color As Color = RadColorDialog1.SelectedColor
 	            Dim hslColor As Telerik.WinControls.HslColor = RadColorDialog1.SelectedHslColor

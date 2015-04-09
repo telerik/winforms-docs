@@ -22,7 +22,7 @@ First let’s start by adding some data points to the __RadChartView__ and __Las
 
 #### __[C#] __
 
-{{region AddController}}
+{{source=..\SamplesCS\ChartView\Features\LassoSelection.cs region=AddController}}
 	        
 	        public LassoSelection()
 	        {
@@ -54,7 +54,7 @@ First let’s start by adding some data points to the __RadChartView__ and __Las
 
 #### __[VB.NET] __
 
-{{region AddController}}
+{{source=..\SamplesVB\ChartView\Features\LassoSelection.vb region=AddController}}
 	    Public Sub New()
 	
 	        InitializeComponent()
@@ -102,7 +102,7 @@ __LassoZoomController__ supports zoom and pan functionality programmatically via
 
 #### __[C#] __
 
-{{region ZoomFirst}}
+{{source=..\SamplesCS\ChartView\Features\LassoSelection.cs region=ZoomFirst}}
 	        
 	        private void LassoSelection_Load(object sender, EventArgs e)
 	        {
@@ -119,7 +119,7 @@ __LassoZoomController__ supports zoom and pan functionality programmatically via
 
 #### __[VB.NET] __
 
-{{region ZoomFirst}}
+{{source=..\SamplesVB\ChartView\Features\LassoSelection.vb region=ZoomFirst}}
 	    Private Sub LassoSelection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 	        Dim lassoZoomController As LassoZoomController = TryCast(RadChartView1.Controllers(1), LassoZoomController)
 	        If lassoZoomController IsNot Nothing Then

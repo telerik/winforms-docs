@@ -45,7 +45,7 @@ Let's now analyze how this property works in the context of several popular mask
 
 #### __[C#]__
 
-{{region phoneMask}}
+{{source=..\SamplesCS\Editors\MaskEditBox1.cs region=phoneMask}}
 	            
 	            this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard;
 	            this.radMaskedEditBox1.Mask = "(000) 000-0000";
@@ -57,7 +57,7 @@ Let's now analyze how this property works in the context of several popular mask
 
 #### __[VB.NET]__
 
-{{region phoneMask}}
+{{source=..\SamplesVB\Editors\MaskEditBox1.vb region=phoneMask}}
 	        Me.RadMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard
 	        Me.RadMaskedEditBox1.Mask = "(000) 000-0000"
 	        Me.RadMaskedEditBox1.PromptChar = "_"
@@ -101,7 +101,7 @@ And here is what the __Value__ property of RadMaskedEditBox will return dependin
 
 #### __[C#]__
 
-{{region currencyMask}}
+{{source=..\SamplesCS\Editors\MaskEditBox1.cs region=currencyMask}}
 	            
 	            this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
 	            this.radMaskedEditBox1.Mask = "C2";
@@ -112,7 +112,7 @@ And here is what the __Value__ property of RadMaskedEditBox will return dependin
 
 #### __[VB.NET]__
 
-{{region currencyMask}}
+{{source=..\SamplesVB\Editors\MaskEditBox1.vb region=currencyMask}}
 	        Me.RadMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Numeric
 	        Me.RadMaskedEditBox1.Mask = "C2"
 	{{endregion}}

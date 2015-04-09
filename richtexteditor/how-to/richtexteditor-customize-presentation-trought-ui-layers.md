@@ -28,7 +28,7 @@ All UILayers implement the __IUILayer__ interface. There is an abstract class, w
 
 #### __[C#] __
 
-{{region override}}
+{{source=..\SamplesCS\RichTextEditor\HowTo\UILayers.cs region=override}}
 	        public override void UpdateUIViewPortOverride(UILayerUpdateContext context)
 	{{endregion}}
 
@@ -36,7 +36,7 @@ All UILayers implement the __IUILayer__ interface. There is an abstract class, w
 
 #### __[VB.NET] __
 
-{{region override}}
+{{source=..\SamplesVB\RichTextEditor\HowTo\UILayers.vb region=override}}
 	    Public Overrides Sub UpdateUIViewPortOverride(ByVal context As UILayerUpdateContext)
 	        '#End Region
 	
@@ -73,7 +73,7 @@ Last but not least, you should not forget to override the Name property of the l
 
 #### __[C#] __
 
-{{region name}}
+{{source=..\SamplesCS\RichTextEditor\HowTo\UILayers.cs region=name}}
 	        public override string Name
 	        {
 	            get
@@ -87,7 +87,7 @@ Last but not least, you should not forget to override the Name property of the l
 
 #### __[VB.NET] __
 
-{{region name}}
+{{source=..\SamplesVB\RichTextEditor\HowTo\UILayers.vb region=name}}
 	    Public Overrides ReadOnly Property Name() As String
 	        Get
 	            Return Me.customLayerName
@@ -114,7 +114,7 @@ After having implemented the logic of your custom UI layer, you can plug it in t
 
 #### __[C#] __
 
-{{region builder}}
+{{source=..\SamplesCS\RichTextEditor\HowTo\UILayers.cs region=builder}}
 	    public class CustomLayersBuilder : UILayersBuilder
 	{{endregion}}
 
@@ -122,7 +122,7 @@ After having implemented the logic of your custom UI layer, you can plug it in t
 
 #### __[VB.NET] __
 
-{{region builder}}
+{{source=..\SamplesVB\RichTextEditor\HowTo\UILayers.vb region=builder}}
 	Public Class CustomLayersBuilder
 	    Inherits UILayersBuilder
 	    '#End Region
@@ -141,7 +141,7 @@ You can assign the new builder to specific instance of RadRichTextEditor like th
 
 #### __[C#] __
 
-{{region change}}
+{{source=..\SamplesCS\RichTextEditor\HowTo\UILayers.cs region=change}}
 	            this.radRichTextEditor1.RichTextBoxElement.UILayersBuilder = new CustomLayersBuilder();
 	{{endregion}}
 
@@ -149,7 +149,7 @@ You can assign the new builder to specific instance of RadRichTextEditor like th
 
 #### __[VB.NET] __
 
-{{region change}}
+{{source=..\SamplesVB\RichTextEditor\HowTo\UILayers.vb region=change}}
 	        Me.radRichTextEditor1.RichTextBoxElement.UILayersBuilder = New CustomLayersBuilder()
 	        '#End Region
 	    End Sub
@@ -192,7 +192,7 @@ All that is left is to specify the place of your layer, i.e. which layers should
 
 #### __[C#] __
 
-{{region build}}
+{{source=..\SamplesCS\RichTextEditor\HowTo\UILayers.cs region=build}}
 	    public class CustomLayersBuilder : UILayersBuilder
 	{{endregion}}
 
@@ -200,7 +200,7 @@ All that is left is to specify the place of your layer, i.e. which layers should
 
 #### __[VB.NET] __
 
-{{region build}}
+{{source=..\SamplesVB\RichTextEditor\HowTo\UILayers.vb region=build}}
 	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
 	        uiLayerContainer.UILayers.AddAfter(DefaultUILayers.HighlightDecoration, New CustomDecorationUILayerBase())
 	    End Sub

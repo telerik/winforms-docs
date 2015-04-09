@@ -38,7 +38,7 @@ The following tutorial demonstrates programmatically loading images from your "M
 
 #### __[C#] Inherit from RadForm__
 
-{{region inheritFromRadForm}}
+{{source=..\SamplesCS\Rotator\TutorialCreatingASlideViewerWithRadRotator.cs region=inheritFromRadForm}}
 	    public partial class TutorialCreatingASlideViewerWithRadRotator : RadForm
 	{{endregion}}
 
@@ -59,7 +59,7 @@ The following tutorial demonstrates programmatically loading images from your "M
 
 #### __[VB.NET] Inherit from RadForm__
 
-{{region inheritFromRadForm}}
+{{source=..\SamplesVB\Rotator\TutorialCreatingASlideViewerWithRadRotator.Designer.vb region=inheritFromRadForm}}
 	Partial Class TutorialCreatingASlideViewerWithRadRotator
 	    Inherits Telerik.WinControls.UI.RadForm
 	{{endregion}}
@@ -77,7 +77,7 @@ The following tutorial demonstrates programmatically loading images from your "M
 
 #### __[C#] Rotator example__
 
-{{region rotatorExample}}
+{{source=..\SamplesCS\Rotator\TutorialCreatingASlideViewerWithRadRotator.cs region=rotatorExample}}
 	        public TutorialCreatingASlideViewerWithRadRotator()
 	        {
 	            InitializeComponent();
@@ -128,7 +128,7 @@ The following tutorial demonstrates programmatically loading images from your "M
 
 #### __[VB.NET] Rotator example__
 
-{{region rotatorExample}}
+{{source=..\SamplesVB\Rotator\TutorialCreatingASlideViewerWithRadRotator.vb region=rotatorExample}}
 	    Private Sub TutorialCreatingASlideViewerWithRadRotator_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.Load
 	        Dim myPicturesPath As String = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures)
 	        For Each fileName As String In Directory.GetFiles(myPicturesPath, "*.jpg")

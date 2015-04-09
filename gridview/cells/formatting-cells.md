@@ -46,7 +46,7 @@ __CellFormatting__ event is used to add formatting to grid *data* cells includin
 
 #### __[C#] Formatting cells fore color__
 
-{{region cellFormattingExample1}}
+{{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=cellFormattingExample1}}
 	        void radGridView1_CellFormatting1(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
 	        {
 	            if (e.CellElement.ColumnInfo.Name == "KBytes")
@@ -64,7 +64,7 @@ __CellFormatting__ event is used to add formatting to grid *data* cells includin
 
 #### __[VB.NET] Formatting cells fore color__
 
-{{region cellFormattingExample1}}
+{{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=cellFormattingExample1}}
 	    Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
 	        If e.CellElement.ColumnInfo.Name = "KBytes" Then
 	            e.CellElement.ForeColor = Color.Red
@@ -89,7 +89,7 @@ This is an advanced example of using *CellFormatting* event to highlight certain
 
 #### __[C#] Formatting cells__
 
-{{region cellFormattingExample2}}
+{{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=cellFormattingExample2}}
 	        void radGridView1_CellFormatting2(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
 	        {
 	            if (e.CellElement.ColumnInfo.HeaderText == "Id")
@@ -126,7 +126,7 @@ This is an advanced example of using *CellFormatting* event to highlight certain
 
 #### __[VB.NET] Formatting cells__
 
-{{region cellFormattingExample2}}
+{{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=cellFormattingExample2}}
 	    Private Sub RadGridView1_CellFormatting2(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
 	        If e.CellElement.ColumnInfo.HeaderText = "Id" Then
 	            If e.CellElement.RowInfo.Cells("BMP").Value IsNot Nothing Then
@@ -167,7 +167,7 @@ For example, to change the font of the header cells and the group cells use th
 
 #### __[C#] Formatting non-data rows__
 
-{{region viewCellFormatting1}}
+{{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=viewCellFormatting1}}
 	        Font newFont = new Font("Arial", 12f, FontStyle.Bold);
 	        void radGridView1_ViewCellFormatting1(object sender, CellFormattingEventArgs e)
 	        {
@@ -196,7 +196,7 @@ For example, to change the font of the header cells and the group cells use th
 
 #### __[VB.NET] Formatting non-data rows__
 
-{{region viewCellFormatting1}}
+{{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=viewCellFormatting1}}
 	    Dim newFont = New Font("Arial", 12.0F, FontStyle.Bold)
 	    Private Sub RadGridView1_ViewCellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.ViewCellFormatting
 	        If TypeOf e.CellElement Is GridHeaderCellElement OrElse TypeOf e.CellElement Is GridGroupContentCellElement Then
@@ -225,7 +225,7 @@ To modify the text alignment and the back color in the group rows use the follo
 
 #### __[C#] Formatting non-data rows__
 
-{{region viewCellFormatting2}}
+{{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=viewCellFormatting2}}
 	        void radGridView1_ViewCellFormatting2(object sender, CellFormattingEventArgs e)
 	        {
 	            if (e.CellElement.RowInfo is GridViewGroupRowInfo)
@@ -249,7 +249,7 @@ To modify the text alignment and the back color in the group rows use the follo
 
 #### __[VB.NET] Formatting non-data rows__
 
-{{region viewCellFormatting2}}
+{{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=viewCellFormatting2}}
 	    Private Sub RadGridView1_ViewCellFormatting2(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.ViewCellFormatting
 	        If TypeOf e.CellElement.RowInfo Is GridViewGroupRowInfo Then
 	            e.CellElement.DrawFill = True
@@ -292,7 +292,7 @@ Let's say that you have a number of employees. Only one employee is Vice Preside
 
 #### __[C#]__
 
-{{region buttonCell}}
+{{source=..\SamplesCS\GridView\Cells\FormattingCellsButtons.cs region=buttonCell}}
 	        void radGridView1_CellFormatting(object sender, CellFormattingEventArgs e)
 	        {
 	            if (e.CellElement.ColumnInfo is GridViewCommandColumn)
@@ -320,7 +320,7 @@ Let's say that you have a number of employees. Only one employee is Vice Preside
 
 #### __[VB.NET]__
 
-{{region buttonCell}}
+{{source=..\SamplesVB\GridView\Cells\FormattingCellsButtons.vb region=buttonCell}}
 	    Private Sub radGridView1_CellFormatting(ByVal sender As Object, ByVal e As CellFormattingEventArgs) Handles RadGridView1.CellFormatting
 	        If TypeOf e.CellElement.ColumnInfo Is GridViewCommandColumn Then
 	            'This is how we get the RadButtonElement instance from the cell
@@ -363,7 +363,7 @@ When __RadGridView__ displays hierarchical data, you expand/collapse child level
 
 #### __[C#]__
 
-{{region HideTabs}}
+{{source=..\SamplesCS\GridView\Cells\HideChildTabs.cs region=HideTabs}}
 	        private void radGridView1_ViewCellFormatting(object sender, CellFormattingEventArgs e)
 	        {
 	            GridDetailViewCellElement cell = e.CellElement as GridDetailViewCellElement;
@@ -422,7 +422,7 @@ When __RadGridView__ displays hierarchical data, you expand/collapse child level
 
 #### __[VB.NET]__
 
-{{region HideTabs}}
+{{source=..\SamplesVB\GridView\Cells\HideChildTabs.vb region=HideTabs}}
 	    Private Sub radGridView1_ViewCellFormatting(sender As Object, e As CellFormattingEventArgs)
 	        Dim cell As GridDetailViewCellElement = TryCast(e.CellElement, GridDetailViewCellElement)
 	        Dim expanderCell As GridGroupExpanderCellElement = TryCast(e.CellElement, GridGroupExpanderCellElement)
@@ -585,7 +585,7 @@ Sometimes you may need to format the cells on a specific user action, for exampl
 
 #### __[C#]__
 
-{{region cellFormatting}}
+{{source=..\SamplesCS\GridView\Cells\FormattingCellsOnDemand.cs region=cellFormatting}}
 	        void radGridView1_CellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
 	        {
 	            if (e.CellElement.Text == this.radTextBox1.Text)
@@ -607,7 +607,7 @@ Sometimes you may need to format the cells on a specific user action, for exampl
 
 #### __[VB.NET]__
 
-{{region cellFormatting}}
+{{source=..\SamplesVB\GridView\Cells\FormattingCellsOnDemand.vb region=cellFormatting}}
 	    Private Sub RadGridView1_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
 	        If e.CellElement.Text = Me.RadTextBox1.Text Then
 	            e.CellElement.DrawFill = True
@@ -630,7 +630,7 @@ Sometimes you may need to format the cells on a specific user action, for exampl
 
 #### __[C#]__
 
-{{region buttonClick}}
+{{source=..\SamplesCS\GridView\Cells\FormattingCellsOnDemand.cs region=buttonClick}}
 	        void searchButton_Click(object sender, EventArgs e)
 	        {
 	            this.radGridView1.TableElement.Update(GridUINotifyAction.StateChanged);
@@ -641,7 +641,7 @@ Sometimes you may need to format the cells on a specific user action, for exampl
 
 #### __[VB.NET]__
 
-{{region buttonClick}}
+{{source=..\SamplesVB\GridView\Cells\FormattingCellsOnDemand.vb region=buttonClick}}
 	    Private Sub searchButton_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles searchButton.Click
 	        Me.RadGridView1.TableElement.Update(GridUINotifyAction.StateChanged)
 	    End Sub
@@ -689,7 +689,7 @@ The example below shows how to customize the __Font__ and
 
 #### __[C#] Formatting cells vie Style property__
 
-{{region CellStyleMethod}}
+{{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=CellStyleMethod}}
 	        Font myFont = new Font(new FontFamily("Calibri"), 12.0F, FontStyle.Bold);
 	
 	        private void StyleCell(GridViewCellInfo cell)
@@ -705,7 +705,7 @@ The example below shows how to customize the __Font__ and
 
 #### __[VB.NET] Formatting cells vie Style property__
 
-{{region CellStyleMethod}}
+{{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=CellStyleMethod}}
 	        Me.StyleCell(Me.RadGridView1.Rows(1).Cells(1))
 	{{endregion}}
 
@@ -715,7 +715,7 @@ Here is how to call this method of a certain cell:
 
 #### __[C#] Call StyleCell method__
 
-{{region CellStyleMethodCall}}
+{{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=CellStyleMethodCall}}
 	            this.StyleCell(this.radGridView1.Rows[1].Cells[1]);
 	{{endregion}}
 
@@ -723,7 +723,7 @@ Here is how to call this method of a certain cell:
 
 #### __[VB.NET] Call StyleCell method__
 
-{{region CellStyleMethodCall}}
+{{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=CellStyleMethodCall}}
 	        Me.StyleCell(Me.RadGridView1.Rows(1).Cells(1))
 	{{endregion}}
 

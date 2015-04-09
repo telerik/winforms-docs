@@ -33,7 +33,7 @@ __Example 1__ enables the history of a workbook.
 
 #### __[C#] Example 1: Enable history__
 
-{{region radspreadprocessing-features-history_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingHistory.cs region=radspreadprocessing-features-history_2}}
 	            Workbook workbook = new Workbook();
 	            workbook.History.IsEnabled = false;
 	{{endregion}}
@@ -42,7 +42,7 @@ __Example 1__ enables the history of a workbook.
 
 #### __VB__
 
-{{region radspreadprocessing-features-history_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHistory.vb region=radspreadprocessing-features-history_2}}
 	        Dim workbook As New Workbook()
 	        workbook.History.IsEnabled = False
 	        '#End Region
@@ -69,7 +69,7 @@ __Example 2__ creates a new workbook with a single worksheet and sets the value 
 
 #### __[C#] Example 2: Perform undo and redo__
 
-{{region radspreadprocessing-features-history_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingHistory.cs region=radspreadprocessing-features-history_0}}
 	            Workbook workbook = new Workbook();        
 	            Worksheet worksheet = workbook.Worksheets.Add(); 
 	            workbook.History.IsEnabled = true;
@@ -85,7 +85,7 @@ __Example 2__ creates a new workbook with a single worksheet and sets the value 
 
 #### __VB__
 
-{{region radspreadprocessing-features-history_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHistory.vb region=radspreadprocessing-features-history_0}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        workbook.History.IsEnabled = True
@@ -144,7 +144,7 @@ __Example 3__ demonstrates how to create an undo group:
 
 #### __[C#] Example 3: Create undo group__
 
-{{region radspreadprocessing-features-history_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingHistory.cs region=radspreadprocessing-features-history_1}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            workbook.History.IsEnabled = true;
@@ -164,7 +164,7 @@ __Example 3__ demonstrates how to create an undo group:
 
 #### __VB__
 
-{{region radspreadprocessing-features-history_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHistory.vb region=radspreadprocessing-features-history_1}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        workbook.History.IsEnabled = True
@@ -209,7 +209,7 @@ __Example 4__ clears the history of a workbook.
 
 #### __[C#] Example 4: Clear history. __
 
-{{region radspreadprocessing-features-history_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingHistory.cs region=radspreadprocessing-features-history_3}}
 	            Workbook workbook = new Workbook();
 	            workbook.History.Clear();
 	{{endregion}}
@@ -218,7 +218,7 @@ __Example 4__ clears the history of a workbook.
 
 #### __VB__
 
-{{region radspreadprocessing-features-history_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHistory.vb region=radspreadprocessing-features-history_3}}
 	        Dim workbook As New Workbook()
 	        workbook.History.Clear()
 	        '#End Region

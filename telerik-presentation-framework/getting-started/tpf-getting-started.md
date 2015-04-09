@@ -47,7 +47,7 @@ The example control will contain a filled area and a centered text primitive. 
 
 #### __[C#] Creating MyPanelElement__
 
-{{region myPanelElement}}
+{{source=..\SamplesCS\TPF\GettingStarted\MyPanelElement.cs region=myPanelElement}}
 	    public class MyPanelElement : RadElement
 	    {
 	        TextPrimitive text;
@@ -111,7 +111,7 @@ The example control will contain a filled area and a centered text primitive. 
 
 #### __[VB.NET] Creating MyPanelElement__
 
-{{region myPanelElement}}
+{{source=..\SamplesVB\TPF\GettingStarted\MyPanelElement.vb region=myPanelElement}}
 	Public Class MyPanelElement
 	    Inherits RadItem
 	    Private text_ As TextPrimitive
@@ -180,7 +180,7 @@ The example control will contain a filled area and a centered text primitive. 
 
 #### __[C#] Creating MyPanel control__
 
-{{region myPanel}}
+{{source=..\SamplesCS\TPF\GettingStarted\MyPanel.cs region=myPanel}}
 	    [ToolboxItem(true)]
 	    public class MyPanel : RadControl
 	    {
@@ -232,7 +232,7 @@ The example control will contain a filled area and a centered text primitive. 
 
 #### __[VB.NET] Using MyPanel control__
 
-{{region myPanel}}
+{{source=..\SamplesVB\TPF\GettingStarted\MyPanel.vb region=myPanel}}
 	<ToolboxItem(True)> _
 	Public Class MyPanel
 	    Inherits RadControl

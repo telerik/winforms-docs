@@ -112,7 +112,7 @@ Insert a page field:
 
 #### __[C#] __
 
-{{region insert}}
+{{source=..\SamplesCS\RichTextEditor\Features\Fields.cs region=insert}}
 	            this.radRichTextEditor1.InsertField(new PageField());
 	{{endregion}}
 
@@ -120,7 +120,7 @@ Insert a page field:
 
 #### __[VB.NET] __
 
-{{region insert}}
+{{source=..\SamplesVB\RichTextEditor\Features\Fields.vb region=insert}}
 	        Me.radRichTextEditor1.InsertField(New PageField())
 	        '#End Region
 	
@@ -144,7 +144,7 @@ Update a field:
 
 #### __[C#] __
 
-{{region update}}
+{{source=..\SamplesCS\RichTextEditor\Features\Fields.cs region=update}}
 	            this.radRichTextEditor1.UpdateField(new FieldRangeStart());
 	{{endregion}}
 
@@ -152,7 +152,7 @@ Update a field:
 
 #### __[VB.NET] __
 
-{{region update}}
+{{source=..\SamplesVB\RichTextEditor\Features\Fields.vb region=update}}
 	        Me.radRichTextEditor1.UpdateField(New FieldRangeStart())
 	        '#End Region
 	
@@ -180,7 +180,7 @@ Priority can specified through the __FieldsUpdateManager__ static class. The fol
 
 #### __[C#] __
 
-{{region register}}
+{{source=..\SamplesCS\RichTextEditor\Features\Fields.cs region=register}}
 	            FieldsUpdateManager.RegisterFieldUpdatePriority(typeof(ReferenceField), 1000);
 	{{endregion}}
 
@@ -188,7 +188,7 @@ Priority can specified through the __FieldsUpdateManager__ static class. The fol
 
 #### __[VB.NET] __
 
-{{region register}}
+{{source=..\SamplesVB\RichTextEditor\Features\Fields.vb region=register}}
 	        FieldsUpdateManager.RegisterFieldUpdatePriority(GetType(ReferenceField), 1000)
 	        '#End Region
 	    End Sub

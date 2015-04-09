@@ -23,7 +23,7 @@ First, we will need to create a custom GridViewListSource:
 
 #### __[C#] Creating sample class __
 
-{{region GridCode}}
+{{source=..\SamplesCS\GridView\PopulatingwithData\BindingToCollectionOfInterfaces.cs region=GridCode}}
 	        public class MyGrid : RadGridView
 	        {
 	            protected override RadGridViewElement CreateGridViewElement()
@@ -86,7 +86,7 @@ First, we will need to create a custom GridViewListSource:
 
 #### __[VB.NET] Creating sample class__
 
-{{region GridCode}}
+{{source=..\SamplesVB\GridView\PopulatingwithData\BindingToCollectionOfInterfaces.vb region=GridCode}}
 	    Public Class MyGrid
 	        Inherits RadGridView
 	        Protected Overrides Function CreateGridViewElement() As RadGridViewElement
@@ -143,7 +143,7 @@ The GridObj type is a type, which inherits from the interface, which you have bo
 
 #### __[C#] Creating sample class __
 
-{{region ExampleCode}}
+{{source=..\SamplesCS\GridView\PopulatingwithData\BindingToCollectionOfInterfaces.cs region=ExampleCode}}
 	        public BindingToCollectionOfInterfaces()
 	        {
 	            InitializeComponent();
@@ -178,7 +178,7 @@ The GridObj type is a type, which inherits from the interface, which you have bo
 
 #### __[VB.NET] Creating sample class__
 
-{{region ExampleCode}}
+{{source=..\SamplesVB\GridView\PopulatingwithData\BindingToCollectionOfInterfaces.vb region=ExampleCode}}
 	    Public Sub New()
 	        InitializeComponent()
 	

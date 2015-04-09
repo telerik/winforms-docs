@@ -31,7 +31,7 @@ Inserting [TextFragments]({%slug pdfprocessing-model-textfragment%}) is achieved
 
 #### __[C#] Example 1: Insert Text__
 
-{{region radpdfprocessing-editing-block_0}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Block1.cs region=radpdfprocessing-editing-block_0}}
 	            Block block = new Block();
 	            block.InsertText("Text");
 	{{endregion}}
@@ -40,7 +40,7 @@ Inserting [TextFragments]({%slug pdfprocessing-model-textfragment%}) is achieved
 
 #### __[VB.NET] Example 1: Insert Text__
 
-{{region radpdfprocessing-editing-block_0}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_0}}
 	            Dim block As New Block()
 	            block.InsertText("Text")
 	            '#End Region
@@ -96,7 +96,7 @@ __Example 2__ demonstrates how to insert text with a specific font family.
 
 #### __[C#] Example 2: Insert Text with Arial FontFamily__
 
-{{region radpdfprocessing-editing-block_1}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Block1.cs region=radpdfprocessing-editing-block_1}}
 	            block.InsertText(new System.Windows.Media.FontFamily("Arial"), "Text");
 	{{endregion}}
 
@@ -104,7 +104,7 @@ __Example 2__ demonstrates how to insert text with a specific font family.
 
 #### __[VB.NET] Example 2: Insert Text with Arial FontFamily__
 
-{{region radpdfprocessing-editing-block_1}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_1}}
 	            block.InsertText(New System.Windows.Media.FontFamily("Arial"), "Text")
 	            '#End Region
 	
@@ -158,7 +158,7 @@ Inserting a line break results in the next element starting on a new line. The a
 
 #### __[C#] Example 3: Break the Line__
 
-{{region radpdfprocessing-editing-block_3}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Block1.cs region=radpdfprocessing-editing-block_3}}
 	            block.InsertLineBreak();
 	{{endregion}}
 
@@ -166,7 +166,7 @@ Inserting a line break results in the next element starting on a new line. The a
 
 #### __[VB.NET] Example 3: Break the Line__
 
-{{region radpdfprocessing-editing-block_3}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_3}}
 	            block.InsertLineBreak()
 	            '#End Region
 	        End Sub
@@ -334,7 +334,7 @@ __Example 4__ demonstrates how to draw a block.
 
 #### __[C#] Example 4: Draw Block__
 
-{{region radpdfprocessing-editing-block_4}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Block1.cs region=radpdfprocessing-editing-block_4}}
 	            System.Windows.Rect boundingRect = new System.Windows.Rect(new System.Windows.Point(0, 0), new System.Windows.Size(200, 300));
 	            block.Draw(fixedContentEditor, boundingRect);
 	{{endregion}}
@@ -343,7 +343,7 @@ __Example 4__ demonstrates how to draw a block.
 
 #### __[VB.NET] Example 4: Draw Block__
 
-{{region radpdfprocessing-editing-block_4}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_4}}
 	            Dim boundingRect As New System.Windows.Rect(New System.Windows.Point(0, 0), New System.Windows.Size(200, 300))
 	            block.Draw(fixedContentEditor, boundingRect)
 	            '#End Region
@@ -392,7 +392,7 @@ __Example 5__ creates a Block with text "Hello RadPdfProcessing!" and measures i
 
 #### __[C#] Example 5: Measure Block__
 
-{{region radpdfprocessing-editing-block_5}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Block1.cs region=radpdfprocessing-editing-block_5}}
 	            Block block = new Block();
 	            block.InsertText("Hello RadPdfProcessing!");
 	            System.Windows.Size size = block.Measure();
@@ -402,7 +402,7 @@ __Example 5__ creates a Block with text "Hello RadPdfProcessing!" and measures i
 
 #### __[VB.NET] Example 5: Measure Block__
 
-{{region radpdfprocessing-editing-block_5}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_5}}
 	            Dim block As New Block()
 	            block.InsertText("Hello RadPdfProcessing!")
 	            Dim size As System.Windows.Size = block.Measure()

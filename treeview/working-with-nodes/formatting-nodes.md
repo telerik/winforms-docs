@@ -41,7 +41,7 @@ The purpose of the example that follows is to demonstrate how you can show diffe
 
 #### __[C#]__
 
-{{region nodeFormatting}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\NodeFormatting.cs region=nodeFormatting}}
 	        Bitmap folderOpen = SamplesCS.Properties.Resources.folder_open;
 	        Bitmap folderClose = SamplesCS.Properties.Resources.folder_close;
 	        Bitmap file = SamplesCS.Properties.Resources.file;
@@ -70,7 +70,7 @@ The purpose of the example that follows is to demonstrate how you can show diffe
 
 #### __[VB.NET]__
 
-{{region nodeFormatting}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\NodeFormatting.vb region=nodeFormatting}}
 	    Private folderOpen As Bitmap = My.Resources.folder_open
 	    Private folderClose As Bitmap = My.Resources.folder_close
 	    Private file As Bitmap = My.Resources.file

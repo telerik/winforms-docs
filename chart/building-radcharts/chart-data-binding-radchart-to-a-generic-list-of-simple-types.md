@@ -21,7 +21,7 @@ The example below is the result of binding a [generic List<>](http://msdn2.micro
 
 #### __[C#] Binding to generic list of simple types__
 
-{{region bindToGenericListOfSimpleTypes}}
+{{source=..\SamplesCS\Chart\DataBindingToGenericListOfSimpleTypes.cs region=bindToGenericListOfSimpleTypes}}
 	            List<double> chartData = new List<double>();
 	            chartData.Add(34);
 	            chartData.Add(45);
@@ -35,7 +35,7 @@ The example below is the result of binding a [generic List<>](http://msdn2.micro
 
 #### __[VB.NET] Binding to generic list of simple types__
 
-{{region bindToGenericListOfSimpleTypes}}
+{{source=..\SamplesVB\Chart\DataBindingToGenericListOfSimpleTypes.vb region=bindToGenericListOfSimpleTypes}}
 	        Dim chartData As New List(Of Double)()
 	        chartData.Add(34)
 	        chartData.Add(45)

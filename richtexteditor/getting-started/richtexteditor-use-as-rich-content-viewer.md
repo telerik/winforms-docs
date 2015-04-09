@@ -20,7 +20,7 @@ To use __RadRichTextEditor__ as a rich content viewer you have to disable the us
 
 #### __[C#] __
 
-{{region readonly}}
+{{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=readonly}}
 	            
 	            this.radRichTextEditor.IsReadOnly = true;
 	        
@@ -30,7 +30,7 @@ To use __RadRichTextEditor__ as a rich content viewer you have to disable the us
 
 #### __[VB.NET] __
 
-{{region readonly}}
+{{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=readonly}}
 	
 	        Me.radRichTextEditor.IsReadOnly = True
 	

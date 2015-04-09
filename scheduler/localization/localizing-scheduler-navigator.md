@@ -21,7 +21,7 @@ The __RadSchedulerNavigator__ control uses the __SchedulerNavigatorLocalizationP
 
 #### __[C#]__
 
-{{region navigatorProvider}}
+{{source=..\SamplesCS\Scheduler\Localization\CustomNavigatorLocalizationProvider.cs region=navigatorProvider}}
 	    public class CustomSchedulerNavigatorLocalizationProvider : SchedulerNavigatorLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -71,7 +71,7 @@ The __RadSchedulerNavigator__ control uses the __SchedulerNavigatorLocalizationP
 
 #### __[VB.NET]__
 
-{{region navigatorProvider}}
+{{source=..\SamplesVB\Scheduler\Localization\CustomNavigatorLocalizationProvider.vb region=navigatorProvider}}
 	Public Class CustomSchedulerNavigatorLocalizationProvider
 	    Inherits SchedulerNavigatorLocalizationProvider
 	    Public Overrides Function GetLocalizedString(ByVal id As String) As String
@@ -107,7 +107,7 @@ In order to utilize the new Localization Provider, you should create an instance
 
 #### __[C#]__
 
-{{region assignNavigatorProvider}}
+{{source=..\SamplesCS\Scheduler\Localization\AssignProviders.cs region=assignNavigatorProvider}}
 	            SchedulerNavigatorLocalizationProvider.CurrentProvider = new CustomSchedulerNavigatorLocalizationProvider();
 	{{endregion}}
 
@@ -115,7 +115,7 @@ In order to utilize the new Localization Provider, you should create an instance
 
 #### __[VB.NET]__
 
-{{region assignNavigatorProvider}}
+{{source=..\SamplesVB\Scheduler\Localization\AssignProviders.vb region=assignNavigatorProvider}}
 	        SchedulerNavigatorLocalizationProvider.CurrentProvider = New CustomSchedulerNavigatorLocalizationProvider()
 	        '#End Region
 	    End Sub

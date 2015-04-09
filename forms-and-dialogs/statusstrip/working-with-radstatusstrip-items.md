@@ -54,7 +54,7 @@ Add items at runtime by creating __RadElement__ instances and adding them to the
 
 #### __[C#] Adding elements to RadStatusStrip__
 
-{{region addingElementsToRadStatusStrip}}
+{{source=..\SamplesCS\Forms and Dialogs\StatusStrip1.cs region=addingElementsToRadStatusStrip}}
 	        private void StatusStrip1_Load(object sender, EventArgs e)
 	        {
 	            RadLabelElement labelElement = new RadLabelElement();
@@ -84,7 +84,7 @@ Add items at runtime by creating __RadElement__ instances and adding them to the
 
 #### __[VB.NET] Adding elements to RadStatusStrip__
 
-{{region addingElementsToRadStatusStrip}}
+{{source=..\SamplesVB\Forms and Dialogs\StatusStrip1.vb region=addingElementsToRadStatusStrip}}
 	    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        Dim labelElement As New RadLabelElement()
 	        labelElement.Text = "My LabelElement"

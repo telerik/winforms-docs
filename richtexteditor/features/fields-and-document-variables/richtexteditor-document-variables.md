@@ -24,7 +24,7 @@ Each RadDocument instance has a dictionary of variables exposed by the __Documen
 
 #### __[C#] __
 
-{{region get}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentVariables.cs region=get}}
 	            
 	            Telerik.WinForms.Documents.Model.DocumentVariableCollection variables = this.radRichTextEditor1.Document.DocumentVariables;
 	            
@@ -34,7 +34,7 @@ Each RadDocument instance has a dictionary of variables exposed by the __Documen
 
 #### __[VB.NET] __
 
-{{region get}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentVariables.vb region=get}}
 	
 	        Dim variables As Telerik.WinForms.Documents.Model.DocumentVariableCollection = Me.radRichTextEditor1.Document.DocumentVariables
 	
@@ -71,7 +71,7 @@ This collection maps string keys to object values (most often strings). The valu
 
 #### __[C#] __
 
-{{region add}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentVariables.cs region=add}}
 	
 	            this.radRichTextEditor1.Document.DocumentVariables.Add("Name", "Andrew Fuller");
 	            this.radRichTextEditor1.Document.DocumentVariables["Job"] = "Software Engineer";
@@ -82,7 +82,7 @@ This collection maps string keys to object values (most often strings). The valu
 
 #### __[VB.NET] __
 
-{{region add}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentVariables.vb region=add}}
 	
 	        Me.radRichTextEditor1.Document.DocumentVariables.Add("Name", "Andrew Fuller")
 	        Me.radRichTextEditor1.Document.DocumentVariables("Job") = "Software Engineer"
@@ -114,7 +114,7 @@ Removing variables from the collection can be done like this:
 
 #### __[C#] __
 
-{{region remove}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentVariables.cs region=remove}}
 	            
 	            this.radRichTextEditor1.Document.DocumentVariables.Remove("Name");
 	        
@@ -124,7 +124,7 @@ Removing variables from the collection can be done like this:
 
 #### __[VB.NET] __
 
-{{region remove}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentVariables.vb region=remove}}
 	
 	        Me.radRichTextEditor1.Document.DocumentVariables.Remove("Name")
 	
@@ -147,7 +147,7 @@ Document variables can be inserted in the document using DocumentVariableField. 
 
 #### __[C#] __
 
-{{region field}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentVariables.cs region=field}}
 	
 	            Telerik.WinForms.Documents.Model.DocumentVariableField docVariable = new Telerik.WinForms.Documents.Model.DocumentVariableField() { VariableName = "Name" };
 	            this.radRichTextEditor1.InsertField(docVariable);
@@ -158,7 +158,7 @@ Document variables can be inserted in the document using DocumentVariableField. 
 
 #### __[VB.NET] __
 
-{{region field}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentVariables.vb region=field}}
 	
 	        Dim docVariable As New Telerik.WinForms.Documents.Model.DocumentVariableField() With {.VariableName = "Name"}
 	        Me.radRichTextEditor1.InsertField(docVariable)

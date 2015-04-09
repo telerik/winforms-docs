@@ -116,7 +116,7 @@ Every bookmark has a unique name. So in order to insert a reference to a bookmar
 
 #### __[C#] __
 
-{{region bookmark}}
+{{source=..\SamplesCS\RichTextEditor\Features\CrossReference.cs region=bookmark}}
 	            radRichTextEditor1.InsertCrossReferenceToBookmark("Bookmark Name", ReferenceContentType.EntireContent, false);
 	{{endregion}}
 
@@ -124,7 +124,7 @@ Every bookmark has a unique name. So in order to insert a reference to a bookmar
 
 #### __[VB.NET] __
 
-{{region bookmark}}
+{{source=..\SamplesVB\RichTextEditor\Features\CrossReference.vb region=bookmark}}
 	        radRichTextEditor1.InsertCrossReferenceToBookmark("Bookmark Name", ReferenceContentType.EntireContent, False)
 	        '#End Region
 	        Dim headingParagraph As New Paragraph()
@@ -150,7 +150,7 @@ You have to pass the paragraph (with heading style applied, of course) that you 
 
 #### __[C#] __
 
-{{region heading}}
+{{source=..\SamplesCS\RichTextEditor\Features\CrossReference.cs region=heading}}
 	            radRichTextEditor1.InsertCrossReferenceToHeading(headingParagraph, ReferenceContentType.OnlyCaption, true);
 	{{endregion}}
 
@@ -168,7 +168,7 @@ The method signature is:
 
 #### __[C#] __
 
-{{region caption}}
+{{source=..\SamplesCS\RichTextEditor\Features\CrossReference.cs region=caption}}
 	            radRichTextEditor1.InsertCrossReferenceToCaption(captionParagraph, ReferenceContentType.OnlyLabelAndNumber,false);
 	{{endregion}}
 
@@ -176,7 +176,7 @@ The method signature is:
 
 #### __[VB.NET] __
 
-{{region caption}}
+{{source=..\SamplesVB\RichTextEditor\Features\CrossReference.vb region=caption}}
 	        radRichTextEditor1.InsertCrossReferenceToCaption(captionParagraph, ReferenceContentType.OnlyLabelAndNumber, False)
 	        '#End Region
 	    End Sub

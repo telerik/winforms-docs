@@ -30,7 +30,7 @@ With this example we create a RadElement which contains a StackLayoutPanel. The 
 
 #### __[C#] Using StackLayoutPanel__
 
-{{region myStackLayoutPanelElement}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyStackLayoutPanelElement.cs region=myStackLayoutPanelElement}}
 	    public class MyStackLayoutPanelElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -63,7 +63,7 @@ With this example we create a RadElement which contains a StackLayoutPanel. The 
 
 #### __[VB.NET] Using StackLayoutPanel__
 
-{{region myStackLayoutPanelElement}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyStackLayoutPanelElement.vb region=myStackLayoutPanelElement}}
 	Public Class MyStackLayoutPanelElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

@@ -28,7 +28,7 @@ Another option for you is to set a custom size for a child GridViewInfo programm
 
 #### __[C#] Setting a custom size for a child GridViewInfo by passing a specific value__
 
-{{region setChildRowHeight}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\CreatingHierarchyUsingXmlDataSource.cs region=setChildRowHeight}}
 	        void radGridView1_ChildViewExpanded(object sender, ChildViewExpandedEventArgs e)
 	        {
 	            e.ChildRow.Height = 300;
@@ -39,7 +39,7 @@ Another option for you is to set a custom size for a child GridViewInfo programm
 
 #### __[VB.NET] Setting a custom size for a child GridViewInfo by passing a specific value__
 
-{{region setChildRowHeight}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\CreatingHierarchyUsingXmlDataSource.vb region=setChildRowHeight}}
 	    Private Sub RadGridView1_ChildViewExpanded(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ChildViewExpandedEventArgs) Handles RadGridView1.ChildViewExpanded
 	        e.ChildRow.Height = 300
 	    End Sub

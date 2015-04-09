@@ -29,7 +29,7 @@ __Example 1__ shows how you can create a Path, using a predefined Geometry to it
 
 #### __[C#] Example 1: Create Path and add it to container.__
 
-{{region radpdfprocessing-model-path_0}}
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelPath.cs region=radpdfprocessing-model-path_0}}
 	            Path path = new Path();
 	            path.Geometry = geometry;
 	            container.Content.Add(path);
@@ -39,7 +39,7 @@ __Example 1__ shows how you can create a Path, using a predefined Geometry to it
 
 #### __[VB.NET] Example 1: Create Path and add it to container.__
 
-{{region radpdfprocessing-model-path_0}}
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelPath.vb region=radpdfprocessing-model-path_0}}
 	        Dim path As Path = New Path()
 	        path.Geometry = geometry
 	        container.Content.Add(path)
@@ -62,7 +62,7 @@ __Example 2__ demonstrates how to use one of the factory methods of the __Conten
 
 #### __[C#] Example 2: Add Path to container.__
 
-{{region radpdfprocessing-model-path_1}}
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelPath.cs region=radpdfprocessing-model-path_1}}
 	            Path path = container.Content.AddPath();
 	            path.Geometry = geometry;
 	{{endregion}}
@@ -71,7 +71,7 @@ __Example 2__ demonstrates how to use one of the factory methods of the __Conten
 
 #### __[VB.NET] Example 2: Add Path to container.__
 
-{{region radpdfprocessing-model-path_1}}
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelPath.vb region=radpdfprocessing-model-path_1}}
 	        Dim path As Path = container.Content.AddPath()
 	        path.Geometry = geometry
 	        '	#End Region

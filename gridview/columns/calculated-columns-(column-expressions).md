@@ -18,7 +18,7 @@ The following code snippet demonstrates how the standard deviation of the *Con
 
 #### __[C#] Creating a calculated column__
 
-{{region calculatedColumn}}
+{{source=..\SamplesCS\GridView\Columns\CalculatedColumn.cs region=calculatedColumn}}
 	            GridViewDecimalColumn col = new GridViewDecimalColumn();
 	            col.Name = "Calculated Column";
 	            col.HeaderText = "Order value";
@@ -30,7 +30,7 @@ The following code snippet demonstrates how the standard deviation of the *Con
 
 #### __[VB.NET] Creating a calculated column__
 
-{{region calculatedColumn}}
+{{source=..\SamplesVB\GridView\Columns\CalculatedColumn.vb region=calculatedColumn}}
 	        Dim col = New GridViewDecimalColumn()
 	        col.Name = "Calculated Column"
 	        col.HeaderText = "Order value"

@@ -25,7 +25,7 @@ The example below demonstrates how you can change the group header text of each 
 
 #### __[C#] Change group header text__
 
-{{region groupHeaderText}}
+{{source=..\SamplesCS\GridView\Grouping\FormattingGroupHeaderRow.cs region=groupHeaderText}}
 	        void radGridView1_GroupSummaryEvaluate(object sender, Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs e)
 	        {
 	            if (e.SummaryItem.Name == "Country")
@@ -39,7 +39,7 @@ The example below demonstrates how you can change the group header text of each 
 
 #### __[VB.NET] Change group header text__
 
-{{region groupHeaderText}}
+{{source=..\SamplesVB\GridView\Grouping\FormattingGroupHeaderRow.vb region=groupHeaderText}}
 	    Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
 	        If e.SummaryItem.Name = "Country" Then
 	            e.FormatString = [String].Format("Group by country: {0}", e.Value)
@@ -53,7 +53,7 @@ The following example demonstrates formatting of group header which uses data fr
 
 #### __[C#] Formatting group header by using data grom data rows__
 
-{{region formatGroupHeaderWhichUsersDataFromGroupRows}}
+{{source=..\SamplesCS\GridView\Grouping\FormattingGroupHeaderRow.cs region=formatGroupHeaderWhichUsersDataFromGroupRows}}
 	        void radGridView1_GroupSummaryEvaluate1(object sender, Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs e)
 	        {
 	            if (e.SummaryItem.Name == "ContactTitle")
@@ -76,7 +76,7 @@ The following example demonstrates formatting of group header which uses data fr
 
 #### __[VB.NET] Formatting group header by using data grom data rows__
 
-{{region formatGroupHeaderWhichUsersDataFromGroupRows}}
+{{source=..\SamplesVB\GridView\Grouping\FormattingGroupHeaderRow.vb region=formatGroupHeaderWhichUsersDataFromGroupRows}}
 	    Private Sub RadGridView1_GroupSummaryEvaluate1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
 	        If e.SummaryItem.Name = "ContactTitle" Then
 	            Dim contactsCount As Integer = e.Group.ItemCount

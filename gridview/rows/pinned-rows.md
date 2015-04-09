@@ -20,7 +20,7 @@ RadGridView rows can be pinned so that the rows appear anchored to the top or bo
 
 #### __[C#]__
 
-{{region pinnedRows}}
+{{source=..\SamplesCS\GridView\Rows\PinnedRows.cs region=pinnedRows}}
 	            radGridView1.Rows[0].PinPosition = PinnedRowPosition.Bottom;
 	            radGridView1.Rows[4].PinPosition = PinnedRowPosition.Top;
 	{{endregion}}
@@ -29,7 +29,7 @@ RadGridView rows can be pinned so that the rows appear anchored to the top or bo
 
 #### __[VB.NET]__
 
-{{region pinnedRows}}
+{{source=..\SamplesVB\GridView\Rows\PinnedRows.vb region=pinnedRows}}
 	        RadGridView1.Rows(0).PinPosition = PinnedRowPosition.Bottom
 	        RadGridView1.Rows(4).PinPosition = PinnedRowPosition.Top
 	{{endregion}}
@@ -45,7 +45,7 @@ Another way of pinning a row is to set directly the IsPinned property of a Rows 
 
 #### __[C#]__
 
-{{region isPinned}}
+{{source=..\SamplesCS\GridView\Rows\PinnedRows.cs region=isPinned}}
 	            radGridView1.Rows[3].IsPinned = true;
 	{{endregion}}
 
@@ -53,7 +53,7 @@ Another way of pinning a row is to set directly the IsPinned property of a Rows 
 
 #### __[VB.NET]__
 
-{{region isPinned}}
+{{source=..\SamplesVB\GridView\Rows\PinnedRows.vb region=isPinned}}
 	        RadGridView1.Rows(3).IsPinned = True
 	{{endregion}}
 
@@ -64,7 +64,7 @@ The example below shows pinning all selected rows in the grid:
 
 #### __[C#]__
 
-{{region pinAllRows}}
+{{source=..\SamplesCS\GridView\Rows\PinnedRows.cs region=pinAllRows}}
 	            foreach (GridViewRowInfo row in radGridView1.SelectedRows)
 	            {
 	                row.PinPosition = PinnedRowPosition.Bottom;
@@ -75,7 +75,7 @@ The example below shows pinning all selected rows in the grid:
 
 #### __[VB.NET]__
 
-{{region pinAllRows}}
+{{source=..\SamplesVB\GridView\Rows\PinnedRows.vb region=pinAllRows}}
 	        For Each row In RadGridView1.SelectedRows
 	            row.PinPosition = PinnedRowPosition.Bottom
 	        Next

@@ -12,19 +12,19 @@ position: 1
 
 
 
-This tutorial will walk you through the functionality and the main features of the __RadDiagramConnection__.
+This tutorial will walk you through the functionality and the main features of __RadDiagramConnection__.
 
-## 
+## RadDiagramConnection
 
-The __RadDiagramConnection__ is basically an object that connects zero, one or two shapes:![diagram-diagram-items-connections 001](images/diagram-diagram-items-connections001.png)
+__RadDiagramConnection__ is basically an object that connects zero, one or two shapes:![diagram-diagram-items-connections 001](images/diagram-diagram-items-connections001.png)
 
 You can use its extensive API to configure its source and target points or shapes. You can also control the connection path by
         using the __ConnectionPoints__ collection.
 
-You can configure the source and the target of a connection as a point or as a shape. The __RadDiagramConnection__
+The __RadDiagramConnection__
         class exposes the following properties that allow you to control the start and end points of a connection:
 
-* __StartPoint/EndPoint__ - these properties are of type *Point* and they set or get the start/end point of a connection.
+* __StartPoint/EndPoint__ - these properties are of type Telerik.Windows.Diagrams.Core.*Point* and they set or get the start/end point of a connection.
             
 
 * __Source/Target__ - these properties get or set the source/target __RadDiagramShape__ of a connection.
@@ -51,7 +51,7 @@ You can configure the source and the target of a connection as a point or as a s
                 
 
 * __Bottom__ - use it to define the bottom connector of a shape as the source/target point of the connection
-                
+                ![diagram-diagram-items-connections 009](images/diagram-diagram-items-connections009.png)
 
 * __ConnectionPoints__ - if you want to change the route of the connection, you can add connection points 
               in code-behind through the RadDiagramConnection.__ConnectionPoints__ property. 
@@ -60,9 +60,9 @@ You can configure the source and the target of a connection as a point or as a s
 
 #### __[C#] __
 
-{{region AddConnection}}
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=AddConnection}}
 	            
-	            RadDiagramConnection connection1 = new RadDiagramConnection() { Name = "aaaa" };
+	            RadDiagramConnection connection1 = new RadDiagramConnection() { Name = "connection1" };
 	            
 	            connection1.Source = shape1;
 	            connection1.Target = starShape;
@@ -75,9 +75,9 @@ You can configure the source and the target of a connection as a point or as a s
 
 #### __[VB.NET] __
 
-{{region AddConnection}}
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=AddConnection}}
 	        Dim connection1 As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        connection1.Source = shape1
@@ -108,7 +108,7 @@ You can configure the source and the target of a connection as a point or as a s
 	        RadDiagram1.Items.Add(targetShape)
 	
 	        Dim polylineConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        polylineConnection.Source = sourceShape
@@ -129,7 +129,7 @@ You can configure the source and the target of a connection as a point or as a s
 	
 	
 	        Dim bezierConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        bezierConnection.Source = sourceShape
@@ -143,7 +143,7 @@ You can configure the source and the target of a connection as a point or as a s
 	        '#Region "SplineConnection"
 	
 	        Dim splineConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        splineConnection.Source = sourceShape
@@ -185,7 +185,7 @@ You can configure the source and the target of a connection as a point or as a s
 
 #### __[C#] __
 
-{{region PolylineConnection}}
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=PolylineConnection}}
 	            
 	            RadDiagramShape sourceShape = new RadDiagramShape()
 	            {
@@ -207,7 +207,7 @@ You can configure the source and the target of a connection as a point or as a s
 	            targetShape.Position = new Telerik.Windows.Diagrams.Core.Point(400, 300);
 	            radDiagram1.Items.Add(targetShape);
 	            
-	            RadDiagramConnection polylineConnection = new RadDiagramConnection() { Name = "aaaa" };
+	            RadDiagramConnection polylineConnection = new RadDiagramConnection() { Name = "connection1" };
 	            
 	            polylineConnection.Source = sourceShape;
 	            polylineConnection.Target = targetShape;
@@ -220,7 +220,7 @@ You can configure the source and the target of a connection as a point or as a s
 
 #### __[VB.NET] __
 
-{{region PolylineConnection}}
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=PolylineConnection}}
 	
 	        Dim sourceShape As New RadDiagramShape() With { _
 	            .ShapeText = "source", _
@@ -241,7 +241,7 @@ You can configure the source and the target of a connection as a point or as a s
 	        RadDiagram1.Items.Add(targetShape)
 	
 	        Dim polylineConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        polylineConnection.Source = sourceShape
@@ -262,7 +262,7 @@ You can configure the source and the target of a connection as a point or as a s
 	
 	
 	        Dim bezierConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        bezierConnection.Source = sourceShape
@@ -276,7 +276,7 @@ You can configure the source and the target of a connection as a point or as a s
 	        '#Region "SplineConnection"
 	
 	        Dim splineConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        splineConnection.Source = sourceShape
@@ -311,7 +311,7 @@ If you want to change the route of the connection, you can add connection points
 
 #### __[C#] __
 
-{{region ConnectionPolylineWithPoints}}
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=ConnectionPolylineWithPoints}}
 	            
 	            polylineConnection.ConnectionPoints.Add(new Point(300, 140));
 	            polylineConnection.ConnectionPoints.Add(new Point(330, 280));
@@ -322,7 +322,7 @@ If you want to change the route of the connection, you can add connection points
 
 #### __[VB.NET] __
 
-{{region ConnectionPolylineWithPoints}}
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=ConnectionPolylineWithPoints}}
 	
 	        polylineConnection.ConnectionPoints.Add(New Point(300, 140))
 	        polylineConnection.ConnectionPoints.Add(New Point(330, 280))
@@ -333,7 +333,7 @@ If you want to change the route of the connection, you can add connection points
 	
 	
 	        Dim bezierConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        bezierConnection.Source = sourceShape
@@ -347,7 +347,7 @@ If you want to change the route of the connection, you can add connection points
 	        '#Region "SplineConnection"
 	
 	        Dim splineConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        splineConnection.Source = sourceShape
@@ -383,13 +383,13 @@ Sample of a curved Polyline connection:![diagram-diagram-items-connections 004](
                   connection and two handle points (h1 and h2) and a tension parameter. The curve begins at p1 and ends at p2 and it doesn't 
                   pass through the handle points, but the handle points act as magnets, pulling the curve in certain directions and influencing
                   the way the curve bends. The following illustration shows a Bézier RadDiagramConnection along with its endpoints and handle points.
-                Illustration of a Bezier connection definition points:![diagram-diagram-items-connections 005](images/diagram-diagram-items-connections005.png)The RadDiagramConnection.__BezierTension__ parameter defines the curve that will
+                ![diagram-diagram-items-connections 005](images/diagram-diagram-items-connections005.png)The RadDiagramConnection.__BezierTension__ parameter defines the curve that will
                 be produced for a given set of end and handle points. The following illustration shows a Bezier connection:![diagram-diagram-items-connections 006](images/diagram-diagram-items-connections006.png)
 
 #### __[C#] __
 
-{{region BezierConnection}}
-	            RadDiagramConnection bezierConnection = new RadDiagramConnection() { Name = "aaaa" };
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=BezierConnection}}
+	            RadDiagramConnection bezierConnection = new RadDiagramConnection() { Name = "connection1" };
 	            
 	            bezierConnection.Source = sourceShape;
 	            bezierConnection.Target = targetShape;
@@ -403,11 +403,11 @@ Sample of a curved Polyline connection:![diagram-diagram-items-connections 004](
 
 #### __[VB.NET] __
 
-{{region BezierConnection}}
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=BezierConnection}}
 	
 	
 	        Dim bezierConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        bezierConnection.Source = sourceShape
@@ -421,7 +421,7 @@ Sample of a curved Polyline connection:![diagram-diagram-items-connections 004](
 	        '#Region "SplineConnection"
 	
 	        Dim splineConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        splineConnection.Source = sourceShape
@@ -470,9 +470,9 @@ By default, when you create a Bezier connection and attach its endpoints to __Ra
 
 #### __[C#] __
 
-{{region SplineConnection}}
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=SplineConnection}}
 	            
-	            RadDiagramConnection splineConnection = new RadDiagramConnection() { Name = "aaaa" };
+	            RadDiagramConnection splineConnection = new RadDiagramConnection() { Name = "connection1" };
 	            
 	            splineConnection.Source = sourceShape;
 	            splineConnection.Target = targetShape;            
@@ -488,10 +488,10 @@ By default, when you create a Bezier connection and attach its endpoints to __Ra
 
 #### __[VB.NET] __
 
-{{region SplineConnection}}
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=SplineConnection}}
 	
 	        Dim splineConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        splineConnection.Source = sourceShape

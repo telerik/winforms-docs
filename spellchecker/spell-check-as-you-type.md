@@ -25,7 +25,7 @@ In order to enable this functionality you should set the __AutoSpellCheckControl
 
 #### __[C#] __
 
-{{region AutoSpellCheckControl}}
+{{source=..\SamplesCS\SpellChecker\SpellCheckAsYouType.cs region=AutoSpellCheckControl}}
 	            this.radSpellChecker1.AutoSpellCheckControl = this.textBox1;
 	            this.radSpellChecker2.AutoSpellCheckControl = this.radTextBox1;
 	            this.radSpellChecker3.AutoSpellCheckControl = this.radTextBoxControl1;
@@ -35,7 +35,7 @@ In order to enable this functionality you should set the __AutoSpellCheckControl
 
 #### __[VB.NET] __
 
-{{region AutoSpellCheckControl}}
+{{source=..\SamplesVB\SpellChecker\SpellCheckAsYouType.vb region=AutoSpellCheckControl}}
 	        Me.RadSpellChecker1.AutoSpellCheckControl = Me.TextBox1
 	        Me.RadSpellChecker2.AutoSpellCheckControl = Me.RadTextBox1
 	        Me.RadSpellChecker3.AutoSpellCheckControl = Me.RadTextBoxControl1

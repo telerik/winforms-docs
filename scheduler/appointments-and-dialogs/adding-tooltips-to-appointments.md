@@ -20,7 +20,7 @@ You can create and associate a tooltip to an appointment in RadScheduler by sett
 
 #### __[C#]__
 
-{{region toolTips}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=toolTips}}
 	            Appointment myAppointment = new Appointment(DateTime.Now, TimeSpan.FromMinutes(30), "Summary", "Description");
 	            myAppointment.ToolTipText = "Custom Tooltip";
 	            this.radScheduler1.Appointments.Add(myAppointment);
@@ -30,7 +30,7 @@ You can create and associate a tooltip to an appointment in RadScheduler by sett
 
 #### __[VB.NET]__
 
-{{region toolTips}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=toolTips}}
 	        Dim myAppointment As New Appointment(Date.Now, TimeSpan.FromMinutes(30), "Summary", "Description")
 	        myAppointment.ToolTipText = "Custom Tooltip"
 	        Me.RadScheduler1.Appointments.Add(myAppointment)

@@ -53,7 +53,7 @@ The default context menu is not enabled by default and if you
 
 #### __[C#]__
 
-{{region defaultMenu}}
+{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=defaultMenu}}
 	            this.radTreeView1.AllowDefaultContextMenu = true;
 	{{endregion}}
 
@@ -61,7 +61,7 @@ The default context menu is not enabled by default and if you
 
 #### __[VB.NET]__
 
-{{region defaultMenu}}
+{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=defaultMenu}}
 	        Me.RadTreeView1.AllowDefaultContextMenu = True
 	        '#End Region
 	
@@ -152,7 +152,7 @@ This will display only a small subset of all available menu items. Please note t
 
 #### __[C#]__
 
-{{region allowAdd}}
+{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=allowAdd}}
 	            this.radTreeView1.AllowAdd = true;
 	{{endregion}}
 
@@ -160,7 +160,7 @@ This will display only a small subset of all available menu items. Please note t
 
 #### __[VB.NET]__
 
-{{region allowAdd}}
+{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowAdd}}
 	        Me.RadTreeView1.AllowAdd = True
 	        '#End Region
 	
@@ -243,7 +243,7 @@ __Enabling the Edit item__
 
 #### __[C#]__
 
-{{region allowEdit}}
+{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=allowEdit}}
 	            this.radTreeView1.AllowEdit = true;
 	{{endregion}}
 
@@ -251,7 +251,7 @@ __Enabling the Edit item__
 
 #### __[VB.NET]__
 
-{{region allowEdit}}
+{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowEdit}}
 	        Me.RadTreeView1.AllowEdit = True
 	        '#End Region    
 	
@@ -326,7 +326,7 @@ __Enabling the Delete item__
 
 #### __[C#]__
 
-{{region allowRemove}}
+{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=allowRemove}}
 	            this.radTreeView1.AllowRemove = true;
 	{{endregion}}
 
@@ -334,7 +334,7 @@ __Enabling the Delete item__
 
 #### __[VB.NET]__
 
-{{region allowRemove}}
+{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowRemove}}
 	        Me.RadTreeView1.AllowRemove = True
 	        '#End Region
 	

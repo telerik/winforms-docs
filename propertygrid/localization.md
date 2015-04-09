@@ -33,7 +33,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[C#] Creating English localization provider__
 
-{{region localizationProvider}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridLocalization.cs region=localizationProvider}}
 	    public class MyEnglishPropertyGridLocalizationProvider : PropertyGridLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -63,7 +63,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[VB.NET] Creating English localization provider__
 
-{{region localizationProvider}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridLocalization.vb region=localizationProvider}}
 	Public Class MyEnglishPropertyGridLocalizationProvider
 	    Inherits PropertyGridLocalizationProvider
 	    Public Overrides Function GetLocalizedString(ByVal id As String) As String
@@ -104,7 +104,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[C#] Changing the localization provider__
 
-{{region changeLocalization}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridLocalization.cs region=changeLocalization}}
 	            PropertyGridLocalizationProvider.CurrentProvider = new MyEnglishPropertyGridLocalizationProvider();
 	{{endregion}}
 
@@ -112,7 +112,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[VB.NET] Changing the localization provider__
 
-{{region changeLocalization}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridLocalization.vb region=changeLocalization}}
 	        PropertyGridLocalizationProvider.CurrentProvider = New MyEnglishPropertyGridLocalizationProvider()
 	{{endregion}}
 

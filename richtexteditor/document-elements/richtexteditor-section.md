@@ -36,7 +36,7 @@ For example, you can build a RadDocument from scratch and add Sections to it in 
 
 #### __[C#] __
 
-{{region init}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=init}}
 	            
 	            Telerik.WinForms.Documents.Model.Section section = new Telerik.WinForms.Documents.Model.Section();
 	            this.radRichTextEditor1.Document.Sections.Add(section);
@@ -47,7 +47,7 @@ For example, you can build a RadDocument from scratch and add Sections to it in 
 
 #### __[VB.NET] __
 
-{{region init}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=init}}
 	
 	        Dim section As New Telerik.WinForms.Documents.Model.Section()
 	        Me.radRichTextEditor1.Document.Sections.Add(section)
@@ -136,7 +136,7 @@ Splitting an already measured document into two sections at the current caret po
 
 #### __[C#] __
 
-{{region break}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=break}}
 	            
 	            this.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage);
 	            
@@ -146,7 +146,7 @@ Splitting an already measured document into two sections at the current caret po
 
 #### __[VB.NET] __
 
-{{region break}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=break}}
 	
 	        Me.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage)
 	
@@ -251,7 +251,7 @@ Here is a list of these properties:
 
 #### __[C#] __
 
-{{region margin}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=margin}}
 	            
 	            section.PageMargin = new Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30);
 	            
@@ -264,7 +264,7 @@ Here is a list of these properties:
 
 #### __[VB.NET] __
 
-{{region margin}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=margin}}
 	
 	        section.PageMargin = New Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30)
 	
@@ -334,7 +334,7 @@ Here is a list of these properties:
 
 #### __[C#] __
 
-{{region orientation}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=orientation}}
 	            
 	            //When creating a Section programmatically
 	            section.PageOrientation = PageOrientation.Landscape;
@@ -348,7 +348,7 @@ Here is a list of these properties:
 
 #### __[VB.NET] __
 
-{{region orientation}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=orientation}}
 	
 	        'When creating a Section programmatically
 	        section.PageOrientation = PageOrientation.Landscape
@@ -409,7 +409,7 @@ Here is a list of these properties:
 
 #### __[C#] __
 
-{{region page}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=page}}
 	            
 	            //When creating a Section programmatically
 	            section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4);
@@ -423,7 +423,7 @@ Here is a list of these properties:
 
 #### __[VB.NET] __
 
-{{region page}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=page}}
 	
 	        'When creating a Section programmatically
 	        section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4)
@@ -475,7 +475,7 @@ Here is a list of these properties:
 
 #### __[C#] __
 
-{{region body}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=body}}
 	
 	            Telerik.WinForms.Documents.Model.Header header = new Telerik.WinForms.Documents.Model.Header() { Body = radDocument, IsLinkedToPrevious = false };
 	
@@ -485,7 +485,7 @@ Here is a list of these properties:
 
 #### __[VB.NET] __
 
-{{region body}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=body}}
 	
 	        Dim header As New Telerik.WinForms.Documents.Model.Header() With {.Body = radDocument, .IsLinkedToPrevious = False}
 	
@@ -523,7 +523,7 @@ All header/footer types are set identically.
 
 #### __[C#] __
 
-{{region header1}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=header1}}
 	
 	            section.Headers.First = header;
 	
@@ -533,7 +533,7 @@ All header/footer types are set identically.
 
 #### __[VB.NET] __
 
-{{region header1}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=header1}}
 	
 	        section.Headers.First = header
 	
@@ -565,7 +565,7 @@ All header/footer types are set identically.
 
 #### __[C#] __
 
-{{region header2}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=header2}}
 	            this.radRichTextEditor1.UpdateHeader(this.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header);
 	{{endregion}}
 
@@ -573,7 +573,7 @@ All header/footer types are set identically.
 
 #### __[VB.NET] __
 
-{{region header2}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=header2}}
 	
 	        Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header)
 	
@@ -603,7 +603,7 @@ In a non-measured document:
 
 #### __[C#] __
 
-{{region add1}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=add1}}
 	            
 	            Section section1 = new Section();
 	            Paragraph paragraph = new Paragraph();
@@ -615,7 +615,7 @@ In a non-measured document:
 
 #### __[VB.NET] __
 
-{{region add1}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=add1}}
 	
 	        Dim section1 As New Section()
 	        Dim paragraph As New Paragraph()
@@ -635,7 +635,7 @@ In a measured document:
 
 #### __[C#] __
 
-{{region add2}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=add2}}
 	            this.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER);
 	{{endregion}}
 
@@ -643,7 +643,7 @@ In a measured document:
 
 #### __[VB.NET] __
 
-{{region add2}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=add2}}
 	        Me.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER)
 	        '#End Region
 	    End Sub

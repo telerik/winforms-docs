@@ -48,7 +48,7 @@ The following example demonstrates how to handle the __CustomSorting__ event sor
 
 #### __[C#]__
 
-{{region usingCustomSorting}}
+{{source=..\SamplesCS\GridView\Sorting\CustomSorting.cs region=usingCustomSorting}}
 	            this.radGridView1.EnableCustomSorting = true;
 	            this.radGridView1.CustomSorting += new GridViewCustomSortingEventHandler(radGridView1_CustomSorting);
 	
@@ -59,7 +59,7 @@ The following example demonstrates how to handle the __CustomSorting__ event sor
 
 #### __[C#]__
 
-{{region usingCustomSorting1}}
+{{source=..\SamplesCS\GridView\Sorting\CustomSorting.cs region=usingCustomSorting1}}
 	        private void radGridView1_CustomSorting(object sender, GridViewCustomSortingEventArgs e)
 	        {
 	            decimal row1Freight = (decimal)e.Row1.Cells["Freight"].Value;
@@ -83,7 +83,7 @@ The following example demonstrates how to handle the __CustomSorting__ event sor
 
 #### __[VB.NET]__
 
-{{region usingCustomSorting}}
+{{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingCustomSorting}}
 	        Me.RadGridView1.EnableCustomSorting = True
 	        Me.RadGridView1.Columns("Freight").SortOrder = RadSortOrder.Ascending
 	{{endregion}}
@@ -92,7 +92,7 @@ The following example demonstrates how to handle the __CustomSorting__ event sor
 
 #### __[VB.NET]__
 
-{{region usingCustomSorting1}}
+{{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingCustomSorting1}}
 	    Private Sub RadGridView1_CustomSorting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCustomSortingEventArgs) Handles RadGridView1.CustomSorting
 	        Dim row1Freight As Decimal = CDec(e.Row1.Cells("Freight").Value)
 	        Dim row2Freight As Decimal = CDec(e.Row2.Cells("Freight").Value)
@@ -117,7 +117,7 @@ The following example demonstrates the usage of the __Handled__ property of the 
 
 #### __[C#]__
 
-{{region usingCustomSortingPlusHandled}}
+{{source=..\SamplesCS\GridView\Sorting\CustomSorting1.cs region=usingCustomSortingPlusHandled}}
 	            this.radGridView1.EnableCustomSorting = true;
 	            this.radGridView1.CustomSorting += new GridViewCustomSortingEventHandler(radGridView1_CustomSorting);
 	
@@ -129,7 +129,7 @@ The following example demonstrates the usage of the __Handled__ property of the 
 
 #### __[C#]__
 
-{{region usingCustomSortingPlusHandled1}}
+{{source=..\SamplesCS\GridView\Sorting\CustomSorting1.cs region=usingCustomSortingPlusHandled1}}
 	        private void radGridView1_CustomSorting(object sender, GridViewCustomSortingEventArgs e)
 	        {
 	            decimal row1Freight = (decimal)e.Row1.Cells["Freight"].Value;
@@ -160,7 +160,7 @@ The following example demonstrates the usage of the __Handled__ property of the 
 
 #### __[VB.NET]__
 
-{{region usingCustomSortingPlusHandled}}
+{{source=..\SamplesVB\GridView\Sorting\CustomSorting1.vb region=usingCustomSortingPlusHandled}}
 	        Me.RadGridView1.EnableCustomSorting = True
 	
 	        Dim sortDescriptor As New SortDescriptor("Freight", ListSortDirection.Descending)
@@ -171,7 +171,7 @@ The following example demonstrates the usage of the __Handled__ property of the 
 
 #### __[VB.NET]__
 
-{{region usingCustomSortingPlusHandled1}}
+{{source=..\SamplesVB\GridView\Sorting\CustomSorting1.vb region=usingCustomSortingPlusHandled1}}
 	    Private Sub RadGridView1_CustomSorting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCustomSortingEventArgs) Handles RadGridView1.CustomSorting
 	        Dim row1Freight As Decimal = CDec(e.Row1.Cells("Freight").Value)
 	        Dim row2Freight As Decimal = CDec(e.Row2.Cells("Freight").Value)
@@ -205,7 +205,7 @@ The following example demonstrates how to use a custom sorting mechanism in RadG
 
 #### __[C#]__
 
-{{region usingSortComparer}}
+{{source=..\SamplesCS\GridView\Sorting\CustomSorting.cs region=usingSortComparer}}
 	            this.radGridView1.Columns["ShipCity"].SortOrder = RadSortOrder.Ascending;
 	
 	            this.radGridView1.MasterTemplate.SortComparer = new CustomComparer();
@@ -215,7 +215,7 @@ The following example demonstrates how to use a custom sorting mechanism in RadG
 
 #### __[C#]__
 
-{{region usingSortComparer1}}
+{{source=..\SamplesCS\GridView\Sorting\CustomSorting.cs region=usingSortComparer1}}
 	        public class CustomComparer : IComparer<GridViewRowInfo>
 	        {
 	            public int Compare(GridViewRowInfo x, GridViewRowInfo y)
@@ -242,7 +242,7 @@ The following example demonstrates how to use a custom sorting mechanism in RadG
 
 #### __[VB.NET]__
 
-{{region usingSortComparer}}
+{{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingSortComparer}}
 	        Me.RadGridView1.Columns("ShipCity").SortOrder = RadSortOrder.Ascending
 	
 	        Me.RadGridView1.MasterTemplate.SortComparer = New CustomComparer()
@@ -252,7 +252,7 @@ The following example demonstrates how to use a custom sorting mechanism in RadG
 
 #### __[VB.NET]__
 
-{{region usingSortComparer1}}
+{{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingSortComparer1}}
 	    Public Class CustomComparer
 	        Implements IComparer(Of GridViewRowInfo)
 	
@@ -288,7 +288,7 @@ You can use the custom sorting functionality to change the default sorting behav
 
 #### __[C#]__
 
-{{region SortByCustomCriteria}}
+{{source=..\SamplesCS\GridView\Sorting\CustomSorting2.cs region=SortByCustomCriteria}}
 	        void radGridView1_CustomSorting(object sender, Telerik.WinControls.UI.GridViewCustomSortingEventArgs e)
 	        {   
 	            int descriptorIndex = -1;
@@ -329,7 +329,7 @@ You can use the custom sorting functionality to change the default sorting behav
 
 #### __[VB.NET]__
 
-{{region SortByCustomCriteria}}
+{{source=..\SamplesVB\GridView\Sorting\CustomSorting2.vb region=SortByCustomCriteria}}
 	  Private Sub radGridView1_CustomSorting(sender As Object, e As Telerik.WinControls.UI.GridViewCustomSortingEventArgs)
 	        Dim descriptorIndex As Integer = -1
 	

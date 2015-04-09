@@ -55,7 +55,7 @@ By handling the __ColumnCreating__ event you can manipulate the size, the visibi
 
 #### __[C#] Column creating__
 
-{{region ColumnCreating}}
+{{source=..\SamplesCS\ListView\ListViewDataBinding.cs region=ColumnCreating}}
 	        void radListView1_ColumnCreating(object sender, Telerik.WinControls.UI.ListViewColumnCreatingEventArgs e)
 	        {
 	            if (e.Column.FieldName == "CustomerID" || e.Column.FieldName == "ParentID")
@@ -79,7 +79,7 @@ By handling the __ColumnCreating__ event you can manipulate the size, the visibi
 
 #### __[VB.NET] Column creating__
 
-{{region ColumnCreating}}
+{{source=..\SamplesVB\ListView\ListViewDataBinding.vb region=ColumnCreating}}
 	    Private Sub RadListView1_ColumnCreating(ByVal sender As Object, ByVal e As ListViewColumnCreatingEventArgs) Handles RadListView1.ColumnCreating
 	        If e.Column.FieldName = "CustomerID" OrElse e.Column.FieldName = "ParentID" Then
 	            e.Column.Visible = False
@@ -106,7 +106,7 @@ First let's create our business object. Note that it is important that our custo
 
 #### __[C#] Person class__
 
-{{region person}}
+{{source=..\SamplesCS\ListView\ListViewDataBinding.cs region=person}}
 	    public class Person : INotifyPropertyChanged
 	    {
 	        private int _id;
@@ -220,7 +220,7 @@ First let's create our business object. Note that it is important that our custo
 
 #### __[VB.NET] Person class__
 
-{{region person}}
+{{source=..\SamplesVB\ListView\ListViewDataBinding.vb region=person}}
 	    Public Class Person
 	        Private _id As Integer
 	        Private _name As String
@@ -313,7 +313,7 @@ Then we create a collection of our objects. The collection should implement IBin
 
 #### __[C#] Create a collection or person objects__
 
-{{region fillDataSource}}
+{{source=..\SamplesCS\ListView\ListViewDataBinding.cs region=fillDataSource}}
 	            BindingList<Person> dataSource = new BindingList<Person>()
 	            {
 	                new Person(1, "Nancy Davolio","507 - 20th Ave. E.Apt. 2A", DateTime.Parse("12/8/1948"),  Resources.nancy),
@@ -328,7 +328,7 @@ Then we create a collection of our objects. The collection should implement IBin
 
 #### __[VB.NET] Create a collection or person objects__
 
-{{region fillDataSource}}
+{{source=..\SamplesVB\ListView\ListViewDataBinding.vb region=fillDataSource}}
 	        Dim dataSource As New BindingList(Of Person)()
 	        dataSource.Add(New Person(1, "Nancy Davolio", "507 - 20th Ave. E.Apt. 2A", DateTime.Parse("12/8/1948"), My.Resources.nancy))
 	        dataSource.Add(New Person(2, "Andrew Fuller", "908 W. Capital Way", DateTime.Parse("2/19/1952"), My.Resources.Andrew))
@@ -344,7 +344,7 @@ To bind our RadListView to this collection, simply set its __DataSource__,
 
 #### __[C#] Bind to the collection of custom objects__
 
-{{region binding}}
+{{source=..\SamplesCS\ListView\ListViewDataBinding.cs region=binding}}
 	            this.radListView1.DataSource = dataSource;
 	            this.radListView1.DisplayMember = "Name";
 	            this.radListView1.ValueMember = "ID";
@@ -354,7 +354,7 @@ To bind our RadListView to this collection, simply set its __DataSource__,
 
 #### __[VB.NET] Bind to the collection of custom objects__
 
-{{region binding}}
+{{source=..\SamplesVB\ListView\ListViewDataBinding.vb region=binding}}
 	        Me.RadListView1.DataSource = dataSource
 	        Me.RadListView1.DisplayMember = "Name"
 	        Me.RadListView1.ValueMember = "ID"
@@ -375,7 +375,7 @@ We can extend this example by handling the __ItemDataBound__ event, which is fir
 
 #### __[C#] Assign an image to the item__
 
-{{region ItemDataBound}}
+{{source=..\SamplesCS\ListView\ListViewDataBinding.cs region=ItemDataBound}}
 	        void radListView1_ItemDataBound(object sender, Telerik.WinControls.UI.ListViewItemEventArgs e)
 	        {
 	            {
@@ -391,7 +391,7 @@ We can extend this example by handling the __ItemDataBound__ event, which is fir
 
 #### __[VB.NET] Assign an image to the item__
 
-{{region ItemDataBound}}
+{{source=..\SamplesVB\ListView\ListViewDataBinding.vb region=ItemDataBound}}
 	    Private Sub RadListView1_ItemDataBound(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ListViewItemEventArgs)
 	        e.Item.Image = DirectCast(e.Item.DataBoundItem, Person).Picture
 	    End Sub

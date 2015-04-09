@@ -29,7 +29,7 @@ __Example 1__ shows how to import a CSV file using a __FileStream__. The code as
 
 #### __[C#] Example 1: Import CSV File__
 
-{{region radspreadprocessing-formats-and-conversion-csv-csvformatprovider_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingUsingCsvFormatProvider.cs region=radspreadprocessing-formats-and-conversion-csv-csvformatprovider_0}}
 	                string fileName = "FileName.csv";
 	                if (!File.Exists(fileName))
 	                {
@@ -49,7 +49,7 @@ __Example 1__ shows how to import a CSV file using a __FileStream__. The code as
 
 #### __[VB NET] Example 1: Import CSV File__
 
-{{region radspreadprocessing-formats-and-conversion-csv-csvformatprovider_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingUsingCsvFormatProvider.vb region=radspreadprocessing-formats-and-conversion-csv-csvformatprovider_0}}
 	            Dim fileName As String = "FileName.csv"
 	            If Not File.Exists(fileName) Then
 	                Throw New FileNotFoundException([String].Format("File {0} was not found!", fileName))
@@ -90,7 +90,7 @@ __Example 2__ demonstrates how to export an existing Workbook to a CSV file. The
 
 #### __[C#] Example 1: Import CSV File__
 
-{{region radspreadprocessing-formats-and-conversion-csv-csvformatprovider_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingUsingCsvFormatProvider.cs region=radspreadprocessing-formats-and-conversion-csv-csvformatprovider_1}}
 	                Workbook workbook = new Workbook();
 	                workbook.Worksheets.Add();
 	
@@ -107,7 +107,7 @@ __Example 2__ demonstrates how to export an existing Workbook to a CSV file. The
 
 #### __[VB NET] Example 1: Import CSV File__
 
-{{region radspreadprocessing-formats-and-conversion-csv-csvformatprovider_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingUsingCsvFormatProvider.vb region=radspreadprocessing-formats-and-conversion-csv-csvformatprovider_1}}
 	            Dim workbook As New Workbook()
 	            workbook.Worksheets.Add()
 	

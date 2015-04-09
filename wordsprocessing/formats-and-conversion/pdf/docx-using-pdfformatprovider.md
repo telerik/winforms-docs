@@ -42,15 +42,15 @@ In order to export a document to PDF you need to use the __Export()__ method of 
 The code snippet in __Example 1__ shows how to create a __PdfFormatProvider__ instance and use it to export __RadFlowDocument__ to a file.
       
 
-#### __[C#] Example 1:__
+#### __[C#] Example 1: Export to PDF File__
 
 
 
 
 
-#### __[VB] Example 1:__
+#### __[VB] Example 1: Export to PDF File__
 
-{{region radwordsprocessing-formats-and-conversion-pdf-pdfformatprovider_0}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingUsingPdfFormatProvider.vb region=radwordsprocessing-formats-and-conversion-pdf-pdfformatprovider_0}}
 	
 	        Dim provider As New Telerik.Windows.Documents.Flow.FormatProviders.Pdf.PdfFormatProvider()
 	        Using output As Stream = File.OpenWrite("sample.pdf")
@@ -60,6 +60,14 @@ The code snippet in __Example 1__ shows how to create a __PdfFormatProvider__ in
 	
 	        '#End Region
 	    End Sub
+	    Private Sub example2()
+	        '#Region "example2"
+	        Dim document As RadFlowDocument = CreateRadFlowDocument()
+	
+	        Dim provider As New PdfFormatProvider()
+	        Dim fixedDocument As RadFixedDocument = provider.ExportToFixedDocument(document)
+	        '#End Region
+	    End Sub
 	
 	    Private Function CreateRadFlowDocument() As Telerik.Windows.Documents.Flow.Model.RadFlowDocument
 	        Return New Telerik.Windows.Documents.Flow.Model.RadFlowDocument()
@@ -67,6 +75,40 @@ The code snippet in __Example 1__ shows how to create a __PdfFormatProvider__ in
 	End Class
 
 
+
+The result from the method is a document that can be opened in any application that supports PDF documents.
+      
+
+#### __[C#] Example 2: Export to RadFixedDocument__
+
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingUsingPdfFormatProvider.cs region=example2}}
+	            RadFlowDocument document = CreateRadFlowDocument();
+	            
+	            PdfFormatProvider provider = new PdfFormatProvider();
+	            Telerik.Windows.Documents.Fixed.Model.RadFixedDocument fixedDocument = provider.ExportToFixedDocument(document);
+	{{endregion}}
+
+
+
+#### __[VB] Example 2: Export to RadFixedDocument__
+
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingUsingPdfFormatProvider.vb region=example2}}
+	        Dim document As RadFlowDocument = CreateRadFlowDocument()
+	
+	        Dim provider As New PdfFormatProvider()
+	        Dim fixedDocument As RadFixedDocument = provider.ExportToFixedDocument(document)
+	        '#End Region
+	    End Sub
+	
+	    Private Function CreateRadFlowDocument() As Telerik.Windows.Documents.Flow.Model.RadFlowDocument
+	        Return New Telerik.Windows.Documents.Flow.Model.RadFlowDocument()
+	    End Function
+	End Class
+
+
+
+>tip__RadFixedDocument__ is the base class of the __RadPdfProcessing__ library. 
+          Additional information on the library and its functionality can be found [here]({%slug pdfprocessing-overview%})
 
 # See Also
 

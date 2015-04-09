@@ -39,7 +39,7 @@ The __SelectionLength__ property is a numeric value that sets the
 
 #### __[C#]__
 
-{{region SetSelection}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetSelection}}
 	        private void SetSelection()
 	        {
 	            this.radTextBoxControl1.Text = "Hello, John Green";
@@ -52,7 +52,7 @@ The __SelectionLength__ property is a numeric value that sets the
 
 #### __[VB.NET]__
 
-{{region SetSelection}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetSelection}}
 	    Private Sub SetSelection()
 	        Me.RadTextBoxControl1.Text = "Hello, John Green"
 	        Me.RadTextBoxControl1.SelectionStart = 7
@@ -254,7 +254,7 @@ Alternatively, you can use the Select method to select the same part of the text
 
 #### __[C#]__
 
-{{region Select}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=Select}}
 	        private void SelectText()
 	        {
 	            this.radTextBoxControl1.Text = "Hello, John Green";
@@ -266,7 +266,7 @@ Alternatively, you can use the Select method to select the same part of the text
 
 #### __[VB.NET]__
 
-{{region Select}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Select}}
 	    Private Sub SelectText()
 	        Me.RadTextBoxControl1.Text = "Hello, John Green"
 	        Me.RadTextBoxControl1.[Select](7, 4)

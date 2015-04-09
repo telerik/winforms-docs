@@ -39,7 +39,7 @@ The following example demonstrates how to handle the __CustomGrouping__ event to
 
 #### __[C#] Custom grouping__
 
-{{region CustomGrouping}}
+{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridCustomGrouping.cs region=CustomGrouping}}
 	        public PropertyGridCustomGrouping()
 	        {
 	            InitializeComponent();
@@ -84,7 +84,7 @@ The following example demonstrates how to handle the __CustomGrouping__ event to
 
 #### __[VB.NET] Custom grouping__
 
-{{region CustomGrouping}}
+{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridCustomGrouping.vb region=CustomGrouping}}
 	    Public Sub New()
 	        InitializeComponent()
 	

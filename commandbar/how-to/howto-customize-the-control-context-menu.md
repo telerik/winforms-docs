@@ -23,7 +23,7 @@ When the RadCommandBar control is right clicked, a context menu enlisting the st
 
 #### __[C#] Subscribe to the context menu opening event__
 
-{{region subscribeToContextMenuOpening}}
+{{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=subscribeToContextMenuOpening}}
 	            radCommandBar1.CustomizeContextMenu.DropDownOpening += new CancelEventHandler(CustomizeContextMenu_DropDownOpening);
 	{{endregion}}
 
@@ -31,7 +31,7 @@ When the RadCommandBar control is right clicked, a context menu enlisting the st
 
 #### __[C#] Customize drop down menu__
 
-{{region CustomizeTheContextMenu}}
+{{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=CustomizeTheContextMenu}}
 	        void CustomizeContextMenu_DropDownOpening(object sender, CancelEventArgs e)
 	        {
 	            //add custom item
@@ -53,7 +53,7 @@ When the RadCommandBar control is right clicked, a context menu enlisting the st
 
 #### __[VB.NET] Subscribe to the context menu opening event__
 
-{{region subscribeToContextMenuOpening}}
+{{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=subscribeToContextMenuOpening}}
 	        AddHandler RadCommandBar1.CustomizeContextMenu.DropDownOpening, AddressOf CustomizeContextMenu_DropDownOpening
 	{{endregion}}
 
@@ -61,7 +61,7 @@ When the RadCommandBar control is right clicked, a context menu enlisting the st
 
 #### __[VB.NET] Customize drop down menu__
 
-{{region CustomizeTheContextMenu}}
+{{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=CustomizeTheContextMenu}}
 	    Private Sub CustomizeContextMenu_DropDownOpening(sender As Object, e As System.ComponentModel.CancelEventArgs)
 	        'add custom item
 	        Dim myItem As New RadMenuItem("MyItem")

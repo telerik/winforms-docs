@@ -19,7 +19,7 @@ To create a new __ToolWindow__, construct a __ToolWindow__ instance, set proper
 
 #### __[C#] Creating a ToolWindow__
 
-{{region creatingToolWindow}}
+{{source=..\SamplesCS\Dock\CreatingWindows.cs region=creatingToolWindow}}
 	            ToolWindow windowTop = new ToolWindow();
 	            windowTop.Text = "Window Top";
 	            this.radDock1.DockWindow(windowTop, DockPosition.Top);
@@ -29,7 +29,7 @@ To create a new __ToolWindow__, construct a __ToolWindow__ instance, set proper
 
 #### __[VB.NET]  Creating a ToolWindow__
 
-{{region creatingToolWindow}}
+{{source=..\SamplesVB\Dock\CreatingWindows.vb region=creatingToolWindow}}
 	        Dim windowTop As ToolWindow = New ToolWindow()
 	        windowTop.Text = "Window Top"
 	        Me.RadDock1.DockWindow(windowTop, DockPosition.Top)
@@ -44,7 +44,7 @@ To create a __DocumentWindow__, construct an instance of __DocumentWindow__, ass
 
 #### __[C#] Creating a DocumentWindow__
 
-{{region creatingDocumentWindow}}
+{{source=..\SamplesCS\Dock\CreatingWindows.cs region=creatingDocumentWindow}}
 	            DocumentWindow documentTop = new DocumentWindow();
 	            documentTop.Text = "New Document";
 	            this.radDock1.AddDocument(documentTop);
@@ -54,7 +54,7 @@ To create a __DocumentWindow__, construct an instance of __DocumentWindow__, ass
 
 #### __[VB.NET] Creating a DocumentWindow__
 
-{{region creatingDocumentWindow}}
+{{source=..\SamplesVB\Dock\CreatingWindows.vb region=creatingDocumentWindow}}
 	        Dim documentTop As DocumentWindow = New DocumentWindow()
 	        documentTop.Text = "New Document"
 	        Me.RadDock1.AddDocument(documentTop)
@@ -68,7 +68,7 @@ The following example creates multiple panels and document panes at runtime.![do
 
 #### __[C#] Creating ToolWindows and DocumentWindows__
 
-{{region winInitialization}}
+{{source=..\SamplesCS\Dock\CreatingWindows.cs region=winInitialization}}
 	            ToolWindow windowLeft = new ToolWindow();
 	            windowLeft.Text = "Window Left";
 	            this.radDock1.DockWindow(windowLeft, DockPosition.Left);
@@ -93,7 +93,7 @@ The following example creates multiple panels and document panes at runtime.![do
 
 #### __[VB.NET] Creating ToolWindows and DocumentWindows__
 
-{{region winInitialization}}
+{{source=..\SamplesVB\Dock\CreatingWindows.vb region=winInitialization}}
 	        Dim windowLeft As ToolWindow = New ToolWindow()
 	        windowLeft.Text = "Window Left"
 	        Me.RadDock1.DockWindow(windowLeft, DockPosition.Top)
@@ -127,7 +127,7 @@ At first, let’s try a solution that seems to be the easiest one:
 
 #### __[C#]__
 
-{{region wrongApproach}}
+{{source=..\SamplesCS\Dock\How-To\DockingWindowsToRight.cs region=wrongApproach}}
 	        private void menuItemTeamExplorer_Click1(object sender, EventArgs e)
 	        {
 	            TeamExplorerUserControl teuc = new TeamExplorerUserControl();
@@ -157,7 +157,7 @@ At first, let’s try a solution that seems to be the easiest one:
 
 #### __[VB.NET]__
 
-{{region wrongApproach}}
+{{source=..\SamplesVB\Dock\How-To\DockingWindowsToRight.vb region=wrongApproach}}
 	    Private Sub menuItemTeamExplorer_Click1(ByVal sender As Object, ByVal e As EventArgs)
 	        Dim teuc As New TeamExplorerUserControl()
 	        Dim dockTo As DockPosition = DockPosition.Right
@@ -190,7 +190,7 @@ So, we need to follow another approach. What we need to do is to globally define
 
 #### __[C#]__
 
-{{region menuItemsClick}}
+{{source=..\SamplesCS\Dock\How-To\DockingWindowsToRight.cs region=menuItemsClick}}
 	        ToolTabStrip rightHandStrip = null;
 	
 	        private void menuItemTeamExplorer_Click(object sender, EventArgs e)
@@ -249,7 +249,7 @@ So, we need to follow another approach. What we need to do is to globally define
 
 #### __[VB.NET]__
 
-{{region menuItemsClick}}
+{{source=..\SamplesVB\Dock\How-To\DockingWindowsToRight.vb region=menuItemsClick}}
 	    Private rightHandStrip As ToolTabStrip = Nothing
 	
 	    Private Sub menuItemTeamExplorer_Click(ByVal sender As Object, ByVal e As EventArgs)

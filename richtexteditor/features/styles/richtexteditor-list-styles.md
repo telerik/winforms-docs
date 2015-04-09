@@ -82,7 +82,7 @@ Here as an example of creating a __ListStyle__ and a __DocumentList__ programmat
 
 #### __[C#] __
 
-{{region listStyle}}
+{{source=..\SamplesCS\RichTextEditor\Features\ListStyles.cs region=listStyle}}
 	            ListStyle upperRomanHierarchical = new ListStyle();
 	            upperRomanHierarchical.StyleLink = "Style1";
 	
@@ -108,7 +108,7 @@ Here as an example of creating a __ListStyle__ and a __DocumentList__ programmat
 
 #### __[VB.NET] __
 
-{{region listStyle}}
+{{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=listStyle}}
 	        Dim upperRomanHierarchical As New ListStyle()
 	        upperRomanHierarchical.StyleLink = "Style1"
 	
@@ -154,7 +154,7 @@ If you want to apply a style to a paragraph using the user interface you would m
 
 #### __[C#] __
 
-{{region paragraph}}
+{{source=..\SamplesCS\RichTextEditor\Features\ListStyles.cs region=paragraph}}
 	            Paragraph paragraph = this.radRichTextEditor1.Document.CaretPosition.GetCurrentParagraphBox().AssociatedParagraph;
 	{{endregion}}
 
@@ -162,7 +162,7 @@ If you want to apply a style to a paragraph using the user interface you would m
 
 #### __[VB.NET] __
 
-{{region paragraph}}
+{{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=paragraph}}
 	        Dim paragraph As Paragraph = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentParagraphBox().AssociatedParagraph
 	        '#End Region
 	
@@ -191,7 +191,7 @@ As the logic of creating a custom list style is rather complex, the method __Add
 
 #### __[C#] __
 
-{{region newStyle}}
+{{source=..\SamplesCS\RichTextEditor\Features\ListStyles.cs region=newStyle}}
 	            ListStyle newListStyle = this.radRichTextEditor1.Document.AddCustomListStyle(upperRomanHierarchical);
 	            DocumentList documentList = new DocumentList(newListStyle, this.radRichTextEditor1.Document);
 	{{endregion}}
@@ -200,7 +200,7 @@ As the logic of creating a custom list style is rather complex, the method __Add
 
 #### __[VB.NET] __
 
-{{region newStyle}}
+{{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=newStyle}}
 	        Dim newListStyle As ListStyle = Me.radRichTextEditor1.Document.AddCustomListStyle(upperRomanHierarchical)
 	        Dim documentList As New DocumentList(newListStyle, Me.radRichTextEditor1.Document)
 	        '#End Region
@@ -219,7 +219,7 @@ Having the new __DocumentList__ all you have to do in order the paragraph to be 
 
 #### __[C#] __
 
-{{region assing}}
+{{source=..\SamplesCS\RichTextEditor\Features\ListStyles.cs region=assing}}
 	            paragraph.ListId = documentList.ID;
 	{{endregion}}
 
@@ -227,7 +227,7 @@ Having the new __DocumentList__ all you have to do in order the paragraph to be 
 
 #### __[VB.NET] __
 
-{{region assing}}
+{{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=assing}}
 	        paragraph.ListId = documentList.ID
 	        '#End Region
 	    End Sub

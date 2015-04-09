@@ -189,7 +189,7 @@ As mentioned at the beginning of the article, ImageAndTextLayoutPanel defines th
 
 #### __[C#]__
 
-{{region imageAndTextElement}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\ImageAndTextLayoutPanelElement.cs region=imageAndTextElement}}
 	    public class ImageAndTextLayoutPanelElement : RadElement
 	    {
 	        TextPrimitive textPrim;
@@ -249,7 +249,7 @@ As mentioned at the beginning of the article, ImageAndTextLayoutPanel defines th
 
 #### __[VB.NET]__
 
-{{region imageAndTextElement}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\ImageAndTextLayoutPanelElement.vb region=imageAndTextElement}}
 	Public Class ImageAndTextLayoutPanelElement
 	    Inherits RadElement
 	    Private textPrim As TextPrimitive
@@ -306,7 +306,7 @@ As mentioned at the beginning of the article, ImageAndTextLayoutPanel defines th
 
 #### __[C#]__
 
-{{region imageAndTextControl}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\ImageAndTextLayoutPanelElement.cs region=imageAndTextControl}}
 	    [ToolboxItem(true)]
 	    public class ImageAndTextLayoutPanelControl : RadControl
 	    {
@@ -346,7 +346,7 @@ As mentioned at the beginning of the article, ImageAndTextLayoutPanel defines th
 
 #### __[VB.NET]__
 
-{{region imageAndTextControl}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\ImageAndTextLayoutPanelElement.vb region=imageAndTextControl}}
 	<ToolboxItem(True)>
 	Public Class ImageAndTextLayoutPanelControl
 	    Inherits RadControl

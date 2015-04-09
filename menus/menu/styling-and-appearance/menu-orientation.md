@@ -20,7 +20,7 @@ The __RadMenu__ default settings are: __Orientation__ = Horizontal, __TextOrient
 
 #### __[C#] Default orientation__
 
-{{region default}}
+{{source=..\SamplesCS\Menus\Menu\MenuOrientation.cs region=default}}
 	            radMenu1.Orientation = System.Windows.Forms.Orientation.Horizontal;
 	            radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Horizontal;
 	            radMenuItemFile.FlipText = false;
@@ -36,7 +36,7 @@ The __RadMenu__ default settings are: __Orientation__ = Horizontal, __TextOrient
 
 #### __[VB.NET] Default orientation__
 
-{{region default}}
+{{source=..\SamplesVB\Menus\Menu\MenuOrientation.vb region=default}}
 	        radMenu1.Orientation = System.Windows.Forms.Orientation.Horizontal
 	        radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Horizontal
 	        radMenuItemFile.FlipText = False
@@ -56,7 +56,7 @@ The menu can be oriented horizontally with menu items arranged vertically:![menu
 
 #### __[C#] Vertical text orientation__
 
-{{region textVertical}}
+{{source=..\SamplesCS\Menus\Menu\MenuOrientation.cs region=textVertical}}
 	            radMenu1.Orientation = System.Windows.Forms.Orientation.Horizontal;
 	            radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Vertical;
 	            radMenuItemFile.FlipText = false;
@@ -72,7 +72,7 @@ The menu can be oriented horizontally with menu items arranged vertically:![menu
 
 #### __[VB.NET] Vertical text orientation__
 
-{{region textVertical}}
+{{source=..\SamplesVB\Menus\Menu\MenuOrientation.vb region=textVertical}}
 	        radMenu1.Orientation = System.Windows.Forms.Orientation.Horizontal
 	        radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Vertical
 	        radMenuItemFile.FlipText = False
@@ -92,7 +92,7 @@ The menu can be oriented vertically with menu items arranged horizontally to cre
 
 #### __[C#] Vertical menu with horizontal text__
 
-{{region menuVertical}}
+{{source=..\SamplesCS\Menus\Menu\MenuOrientation.cs region=menuVertical}}
 	            radMenu1.Orientation = System.Windows.Forms.Orientation.Vertical;
 	            radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Horizontal;
 	            radMenuItemFile.FlipText = false;
@@ -108,7 +108,7 @@ The menu can be oriented vertically with menu items arranged horizontally to cre
 
 #### __[VB.NET] Vertical menu with horizontal text__
 
-{{region menuVertical}}
+{{source=..\SamplesVB\Menus\Menu\MenuOrientation.vb region=menuVertical}}
 	        radMenu1.Orientation = System.Windows.Forms.Orientation.Vertical
 	        radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Horizontal
 	        radMenuItemFile.FlipText = False
@@ -128,7 +128,7 @@ __Stacked Vertical Menu__![menus-menu-styling-and-appearance-menu-orientation 00
 
 #### __[C#] Vertical menu with vertical text__
 
-{{region menuVertical}}
+{{source=..\SamplesCS\Menus\Menu\MenuOrientation.cs region=menuVertical}}
 	            radMenu1.Orientation = System.Windows.Forms.Orientation.Vertical;
 	            radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Horizontal;
 	            radMenuItemFile.FlipText = false;
@@ -144,7 +144,7 @@ __Stacked Vertical Menu__![menus-menu-styling-and-appearance-menu-orientation 00
 
 #### __[VB.NET] vertical menu with vertical text__
 
-{{region menuVertical}}
+{{source=..\SamplesVB\Menus\Menu\MenuOrientation.vb region=menuVertical}}
 	        radMenu1.Orientation = System.Windows.Forms.Orientation.Vertical
 	        radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Horizontal
 	        radMenuItemFile.FlipText = False

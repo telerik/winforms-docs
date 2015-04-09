@@ -37,7 +37,7 @@ Before using the following code snippets, please make sure that you have added t
 
 #### __[C#] Setting a default theme for the entire application__
 
-{{region usingDefaultThemes}}
+{{source=..\SamplesCS\Themes\UsingDefaultThemes.cs region=usingDefaultThemes}}
 	        protected override void OnLoad(EventArgs e)
 	        {
 	            base.OnLoad(e);
@@ -51,7 +51,7 @@ Before using the following code snippets, please make sure that you have added t
 
 #### __[VB.NET] Setting a default theme for the entire application__
 
-{{region usingDefaultThemes}}
+{{source=..\SamplesVB\Themes\UsingDefaultThemes.vb region=usingDefaultThemes}}
 	    Protected Overrides Sub OnLoad(e As EventArgs)
 	        MyBase.OnLoad(e)
 	

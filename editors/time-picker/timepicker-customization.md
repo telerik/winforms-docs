@@ -28,7 +28,7 @@ For example the editable area of the control consist of RadTextBoxItem hosted in
 
 #### __[C#]__
 
-{{region CustomizeTextBox}}
+{{source=..\SamplesCS\Editors\TimePicker1.cs region=CustomizeTextBox}}
 	            radTimePicker1.TimePickerElement.MaskedEditBox.Fill.BackColor = Color.Red;
 	            radTimePicker1.TimePickerElement.MaskedEditBox.TextBoxItem.BackColor = Color.Red;
 	{{endregion}}
@@ -37,7 +37,7 @@ For example the editable area of the control consist of RadTextBoxItem hosted in
 
 #### __[VB.NET]__
 
-{{region CustomizeTextBox}}
+{{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeTextBox}}
 	        RadTimePicker1.TimePickerElement.MaskedEditBox.Fill.BackColor = Color.Red
 	        RadTimePicker1.TimePickerElement.MaskedEditBox.TextBoxItem.BackColor = Color.Red
 	        '#End Region
@@ -106,7 +106,7 @@ Here is how you can set some left and right padding of the drop down button:
 
 #### __[C#]__
 
-{{region CustomizeDropDownButton}}
+{{source=..\SamplesCS\Editors\TimePicker1.cs region=CustomizeDropDownButton}}
 	            radTimePicker1.TimePickerElement.DropDownButton.Padding = new Padding(10,0,10,0);
 	{{endregion}}
 
@@ -114,7 +114,7 @@ Here is how you can set some left and right padding of the drop down button:
 
 #### __[VB.NET]__
 
-{{region CustomizeDropDownButton}}
+{{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeDropDownButton}}
 	        RadTimePicker1.TimePickerElement.DropDownButton.Padding = New Windows.Forms.Padding(10, 0, 10, 0)
 	        '#End Region
 	
@@ -178,7 +178,7 @@ Here is how to access and set the border color of the arrow buttons:
 
 #### __[C#]__
 
-{{region CustomizeArrowButtons}}
+{{source=..\SamplesCS\Editors\TimePicker1.cs region=CustomizeArrowButtons}}
 	            radTimePicker1.TimePickerElement.UpButton.Border.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
 	            radTimePicker1.TimePickerElement.UpButton.Border.ForeColor = Color.Blue;
 	            radTimePicker1.TimePickerElement.DownButton.Border.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
@@ -189,7 +189,7 @@ Here is how to access and set the border color of the arrow buttons:
 
 #### __[VB.NET]__
 
-{{region CustomizeArrowButtons}}
+{{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeArrowButtons}}
 	        RadTimePicker1.TimePickerElement.UpButton.Border.GradientStyle = Telerik.WinControls.GradientStyles.Solid
 	        RadTimePicker1.TimePickerElement.UpButton.Border.ForeColor = Color.Blue
 	        RadTimePicker1.TimePickerElement.DownButton.Border.GradientStyle = Telerik.WinControls.GradientStyles.Solid
@@ -249,7 +249,7 @@ Here is how to change the clock header background and font and also how to hide 
 
 #### __[C#]__
 
-{{region CustomizeClock}}
+{{source=..\SamplesCS\Editors\TimePicker1.cs region=CustomizeClock}}
 	            //customize header
 	            radTimePicker1.TimePickerElement.PopupContentElement.ClockHeaderElement.Font = new System.Drawing.Font("Arial", 22);
 	            radTimePicker1.TimePickerElement.PopupContentElement.ClockHeaderElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
@@ -262,7 +262,7 @@ Here is how to change the clock header background and font and also how to hide 
 
 #### __[VB.NET]__
 
-{{region CustomizeClock}}
+{{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeClock}}
 	        'customize header
 	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockHeaderElement.Font = New System.Drawing.Font("Arial", 22)
 	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockHeaderElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
@@ -315,7 +315,7 @@ This code snippet demonstrates how to change the hours header back color and the
 
 #### __[C#]__
 
-{{region CustomizeHoursAndMinutesHeaders}}
+{{source=..\SamplesCS\Editors\TimePicker1.cs region=CustomizeHoursAndMinutesHeaders}}
 	            //hours header
 	            radTimePicker1.TimePickerElement.PopupContentElement.HoursTable.TableHeader.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
 	            radTimePicker1.TimePickerElement.PopupContentElement.HoursTable.TableHeader.BackColor = Color.Yellow;
@@ -330,7 +330,7 @@ This code snippet demonstrates how to change the hours header back color and the
 
 #### __[VB.NET]__
 
-{{region CustomizeHoursAndMinutesHeaders}}
+{{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeHoursAndMinutesHeaders}}
 	        'hours header
 	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.TableHeader.GradientStyle = Telerik.WinControls.GradientStyles.Solid
 	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.TableHeader.BackColor = Color.Yellow
@@ -374,7 +374,7 @@ The cells in both minutes and hours tables are placed in a GridLayout. To custom
 
 #### __[C#]__
 
-{{region CellFormatting}}
+{{source=..\SamplesCS\Editors\TimePicker1.cs region=CellFormatting}}
 	        void radTimePicker1_TimeCellFormatting(object sender, Telerik.WinControls.UI.TimeCellFormattingEventArgs e)
 	        {
 	            e.Element.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
@@ -397,7 +397,7 @@ The cells in both minutes and hours tables are placed in a GridLayout. To custom
 
 #### __[VB.NET]__
 
-{{region CellFormatting}}
+{{source=..\SamplesVB\Editors\TimePicker1.vb region=CellFormatting}}
 	    Private Sub radTimePicker1_TimeCellFormatting(sender As Object, e As Telerik.WinControls.UI.TimeCellFormattingEventArgs)
 	        e.Element.GradientStyle = Telerik.WinControls.GradientStyles.Solid
 	        e.Element.Margin = New Windows.Forms.Padding(2)
@@ -443,7 +443,7 @@ This is how you can set the hours and minutes tables background color:
 
 #### __[C#]__
 
-{{region CustomizeHoursAndMinutesTables}}
+{{source=..\SamplesCS\Editors\TimePicker1.cs region=CustomizeHoursAndMinutesTables}}
 	            //hours table
 	            radTimePicker1.TimePickerElement.PopupContentElement.HoursTable.DrawFill = true;
 	            radTimePicker1.TimePickerElement.PopupContentElement.HoursTable.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
@@ -458,7 +458,7 @@ This is how you can set the hours and minutes tables background color:
 
 #### __[VB.NET]__
 
-{{region CustomizeHoursAndMinutesTables}}
+{{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeHoursAndMinutesTables}}
 	        'hours table
 	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.DrawFill = True
 	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.GradientStyle = Telerik.WinControls.GradientStyles.Solid
@@ -491,7 +491,7 @@ Here is how to change the BackColor of the FooterPanel:
 
 #### __[C#]__
 
-{{region CustomizeFooterPanel}}
+{{source=..\SamplesCS\Editors\TimePicker1.cs region=CustomizeFooterPanel}}
 	            radTimePicker1.TimePickerElement.PopupContentElement.FooterPanel.BackColor = Color.BlanchedAlmond;
 	{{endregion}}
 
@@ -499,7 +499,7 @@ Here is how to change the BackColor of the FooterPanel:
 
 #### __[VB.NET]__
 
-{{region CustomizeFooterPanel}}
+{{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeFooterPanel}}
 	        RadTimePicker1.TimePickerElement.PopupContentElement.FooterPanel.BackColor = Color.BlanchedAlmond
 	        '#End Region
 	

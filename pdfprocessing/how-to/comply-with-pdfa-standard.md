@@ -88,7 +88,7 @@ To comply with one of the versions of the standard you need to specify __Complia
 
 #### __[C#] Example 1__
 
-{{region radpdfprocessing-complianceLevel}}
+{{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-complianceLevel}}
 	            PdfFormatProvider provider = new PdfFormatProvider();
 	            PdfExportSettings settings = new PdfExportSettings();
 	            settings.ComplianceLevel = PdfComplianceLevel.PdfA2B;
@@ -100,7 +100,7 @@ To comply with one of the versions of the standard you need to specify __Complia
 
 #### __[VB.NET] Example 1__
 
-{{region radpdfprocessing-complianceLevel}}
+{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-complianceLevel}}
 	        Dim provider As PdfFormatProvider = New PdfFormatProvider()
 	        Dim settings As PdfExportSettings = New PdfExportSettings()
 	        settings.ComplianceLevel = PdfComplianceLevel.PdfA2B

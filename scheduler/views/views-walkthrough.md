@@ -76,7 +76,7 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 #### __[C#]__
 
-{{region addingValues}}
+{{source=..\SamplesCS\Scheduler\Views\ViewsWalkthrough.cs region=addingValues}}
 	            foreach (SchedulerViewType viewType in Enum.GetValues(typeof(SchedulerViewType)))
 	            {
 	                RadListDataItem item = new RadListDataItem();
@@ -104,7 +104,7 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 #### __[VB.NET]__
 
-{{region addingValues}}
+{{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=addingValues}}
 	        For Each viewType As SchedulerViewType In System.Enum.GetValues(GetType(SchedulerViewType))
 	            Dim item As New RadListDataItem()
 	            item.Text = viewType.ToString()
@@ -133,7 +133,7 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 #### __[C#] Set the current ActiveViewType__
 
-{{region selectedIndexChanged}}
+{{source=..\SamplesCS\Scheduler\Views\ViewsWalkthrough.cs region=selectedIndexChanged}}
 	        void ddlActiveViewType_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
 	        {
 	            RadDropDownListElement dropDownList = sender as RadDropDownListElement;
@@ -145,7 +145,7 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 #### __[VB.NET] Set the current ActiveViewType__
 
-{{region selectedIndexChanged}}
+{{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=selectedIndexChanged}}
 	    Private Sub ddlActiveViewType_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
 	        Dim dropDownList As RadDropDownListElement = TryCast(sender, RadDropDownListElement)
 	        RadScheduler1.ActiveViewType = CType(dropDownList.SelectedValue, SchedulerViewType)
@@ -160,7 +160,7 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 #### __[C#] Set the RangeFactor__
 
-{{region rangeChanged}}
+{{source=..\SamplesCS\Scheduler\Views\ViewsWalkthrough.cs region=rangeChanged}}
 	        void ddlRange_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
 	        {
 	            RadDropDownListElement dropDownList = sender as RadDropDownListElement;
@@ -186,7 +186,7 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 #### __[VB.NET] Set the RangeFactor__
 
-{{region rangeChanged}}
+{{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=rangeChanged}}
 	    Private Sub ddlRange_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
 	        Dim dropDownList As RadDropDownListElement = TryCast(sender, RadDropDownListElement)
 	        Dim range As ScaleRange = CType(dropDownList.SelectedValue, ScaleRange)
@@ -210,7 +210,7 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 #### __[C#] Set the DayCount or WeekCount__
 
-{{region countChanged}}
+{{source=..\SamplesCS\Scheduler\Views\ViewsWalkthrough.cs region=countChanged}}
 	        void ddlCount_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
 	        {
 	            RadDropDownListElement dropDownList = sender as RadDropDownListElement;
@@ -235,7 +235,7 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 #### __[VB.NET] Set the DayCount or WeekCount__
 
-{{region countChanged}}
+{{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=countChanged}}
 	    Private Sub ddlCount_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
 	        Dim dropDownList As RadDropDownListElement = TryCast(sender, RadDropDownListElement)
 	        Dim count As Integer = CInt(Fix(dropDownList.SelectedValue))
@@ -260,7 +260,7 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 #### __[C#] Handling the ActiveViewChanging event__
 
-{{region activeViewChanging}}
+{{source=..\SamplesCS\Scheduler\Views\ViewsWalkthrough.cs region=activeViewChanging}}
 	        void radScheduler1_ActiveViewChanging(object sender, SchedulerViewChangingEventArgs e)
 	        {
 	            lblStatus.Text = String.Format("Old: {0} New: {1}",
@@ -272,7 +272,7 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 #### __[VB.NET] Handling the ActiveViewChanging event__
 
-{{region activeViewChanging}}
+{{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=activeViewChanging}}
 	    Private Sub radScheduler1_ActiveViewChanging(ByVal sender As Object, ByVal e As SchedulerViewChangingEventArgs)
 	        lblStatus.Text = String.Format("Old: {0} New: {1}", e.OldView.ViewType.ToString(), e.NewView.ViewType.ToString())
 	    End Sub

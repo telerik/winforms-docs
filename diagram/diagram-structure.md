@@ -12,7 +12,7 @@ position: 0
 
 
 
-## 
+## Diagram structure
 
 __RadDiagram__ allows you to create various kinds of diagrams like Organizational, Class and Flow as well as many others.
           This section defines terms and concepts used in the scope of __RadDiagram__ you have to get familiar with prior to

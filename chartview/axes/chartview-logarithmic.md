@@ -53,7 +53,7 @@ Logarithmic axis is not added by default to Cartesian series. For this reason yo
 
 #### __[C#] __
 
-{{region axis}}
+{{source=..\SamplesCS\ChartView\Axes\LogarithmicAxisForm.cs region=axis}}
 	            BarSeries series = new BarSeries();
 	            series.DataPoints.Add(new CategoricalDataPoint(10000, "Category 1"));
 	            series.DataPoints.Add(new CategoricalDataPoint(100, "Category 2"));
@@ -73,7 +73,7 @@ Logarithmic axis is not added by default to Cartesian series. For this reason yo
 
 #### __[VB.NET] __
 
-{{region axis}}
+{{source=..\SamplesVB\ChartView\Axes\LogarithmicAxisForm.vb region=axis}}
 	       Dim series As New BarSeries()
 	        series.DataPoints.Add(New CategoricalDataPoint(10000, "Category 1"))
 	        series.DataPoints.Add(New CategoricalDataPoint(100, "Category 2"))

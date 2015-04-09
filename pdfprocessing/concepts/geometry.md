@@ -47,7 +47,7 @@ __Example 1__ shows hot to create a RectangleGeometry.
 
 #### __[C#] Example 1: Create RectangleGeometry__
 
-{{region radpdfprocessing-concepts-geometry_0}}
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsGeometry.cs region=radpdfprocessing-concepts-geometry_0}}
 	            RectangleGeometry rectangleGeometry = new RectangleGeometry();
 	            rectangleGeometry.Rect = new Rect(10, 5, 400, 300);
 	{{endregion}}
@@ -56,7 +56,7 @@ __Example 1__ shows hot to create a RectangleGeometry.
 
 #### __[VB.NET] Example 1: Create RectangleGeometry__
 
-{{region radpdfprocessing-concepts-geometry_0}}
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsGeometry.vb region=radpdfprocessing-concepts-geometry_0}}
 	        Dim rectangleGeometry As RectangleGeometry = New RectangleGeometry()
 	        rectangleGeometry.Rect = New Rect(10, 5, 400, 300)
 	        '	#End Region
@@ -103,7 +103,7 @@ __Example 2__ shows how to create a PathGeometry which consists of line segments
 
 #### __[C#] Example 2: Create PathGeometry__
 
-{{region radpdfprocessing-concepts-geometry_1}}
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsGeometry.cs region=radpdfprocessing-concepts-geometry_1}}
 	            PathGeometry pathGeometry = new PathGeometry();
 	            PathFigure pathFigure = pathGeometry.Figures.AddPathFigure();
 	            pathFigure.StartPoint = new Point(5, 5);
@@ -120,7 +120,7 @@ __Example 2__ shows how to create a PathGeometry which consists of line segments
 
 #### __[VB.NET] Example 2: Create PathGeometry__
 
-{{region radpdfprocessing-concepts-geometry_1}}
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsGeometry.vb region=radpdfprocessing-concepts-geometry_1}}
 	        Dim pathGeometry As PathGeometry = New PathGeometry()
 	        Dim pathFigure As PathFigure = pathGeometry.Figures.AddPathFigure()
 	        pathFigure.StartPoint = New Point(5, 5)

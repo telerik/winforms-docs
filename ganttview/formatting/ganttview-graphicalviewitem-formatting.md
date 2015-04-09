@@ -21,7 +21,7 @@ The __GraphicalViewItemFormatting__ event allows you to change the style and loo
 
 #### __[C#] __
 
-{{region GraphicalViewItemFormatting}}
+{{source=..\SamplesCS\GanttView\Formatting\GraphicalViewItemFormatting.cs region=GraphicalViewItemFormatting}}
 	        private void radGanttView1_GraphicalViewItemFormatting(object sender, GanttViewGraphicalViewItemFormattingEventArgs e)
 	        {
 	            if (e.Item.Title.StartsWith("Select"))
@@ -41,7 +41,7 @@ The __GraphicalViewItemFormatting__ event allows you to change the style and loo
 
 #### __[VB.NET] __
 
-{{region GraphicalViewItemFormatting}}
+{{source=..\SamplesVB\GanttView\Formatting\GraphicalViewItemFormatting.vb region=GraphicalViewItemFormatting}}
 	    Private Sub radGanttView1_GraphicalViewItemFormatting(sender As Object, e As GanttViewGraphicalViewItemFormattingEventArgs)
 	        If (e.Item.Title.StartsWith("Select")) Then
 	            e.ItemElement.TaskElement.BackColor = Color.Lime

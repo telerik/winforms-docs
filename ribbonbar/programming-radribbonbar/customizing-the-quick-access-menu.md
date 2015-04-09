@@ -26,7 +26,7 @@ In order to capture the click event of the items, add an event handler for anoth
 
 #### __[C#] Adding items to QuickAccessToolbar__
 
-{{region addingItemsToQuickAccessToolBar}}
+{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheQuickAccessMenu.cs region=addingItemsToQuickAccessToolBar}}
 	            RadMenuItem mnuQANew = new RadMenuItem();
 	            mnuQANew.Click += new EventHandler(NewFile);
 	            mnuQANew.Text = "Menu item: New File";
@@ -42,7 +42,7 @@ In order to capture the click event of the items, add an event handler for anoth
 
 #### __[VB.NET] Adding items to QuickAccessToolbar__
 
-{{region addingItemsToQuickAccessToolBar}}
+{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheQuickAccessMenu.vb region=addingItemsToQuickAccessToolBar}}
 	        Dim mnuQANew As New RadMenuItem
 	        AddHandler mnuQANew.Click, AddressOf NewFile
 	        mnuQANew.Text = "Menu item: New File"

@@ -53,7 +53,7 @@ Headers of all __HeaderFooterType__ types can be created using the following cod
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-headers-footers_0}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingHeadersAndFooters.cs region=radwordsprocessing-model-headers-footers_0}}
 	            RadFlowDocument document = new RadFlowDocument();
 	            document.Sections.AddSection();
 	
@@ -66,7 +66,7 @@ Headers of all __HeaderFooterType__ types can be created using the following cod
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-headers-footers_0}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingHeadersAndFooters.vb region=radwordsprocessing-model-headers-footers_0}}
 	            Dim document As New RadFlowDocument()
 	            document.Sections.AddSection()
 	
@@ -125,7 +125,7 @@ Footers can be created using the code snippet below:
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-headers-footers_1}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingHeadersAndFooters.cs region=radwordsprocessing-model-headers-footers_1}}
 	            RadFlowDocument document = new RadFlowDocument();
 	            document.Sections.AddSection();
 	
@@ -138,7 +138,7 @@ Footers can be created using the code snippet below:
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-headers-footers_1}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingHeadersAndFooters.vb region=radwordsprocessing-model-headers-footers_1}}
 	            Dim document As New RadFlowDocument()
 	            document.Sections.AddSection()
 	
@@ -193,7 +193,7 @@ You can obtain the Headers and Footers in a Section through the __Default__, __E
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-headers-footers_2}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingHeadersAndFooters.cs region=radwordsprocessing-model-headers-footers_2}}
 	            Header defaultHeader = section.Headers.Default;
 	{{endregion}}
 
@@ -201,7 +201,7 @@ You can obtain the Headers and Footers in a Section through the __Default__, __E
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-headers-footers_2}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingHeadersAndFooters.vb region=radwordsprocessing-model-headers-footers_2}}
 	            Dim defaultHeader As Header = section.Headers.[Default]
 	            '#End Region
 	
@@ -236,7 +236,7 @@ Similarly to the Header, the Footer element can be obtained as follows:
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-headers-footers_3}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingHeadersAndFooters.cs region=radwordsprocessing-model-headers-footers_3}}
 	            Footer defaultFooter = section.Footers.Default;
 	{{endregion}}
 
@@ -244,7 +244,7 @@ Similarly to the Header, the Footer element can be obtained as follows:
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-headers-footers_3}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingHeadersAndFooters.vb region=radwordsprocessing-model-headers-footers_3}}
 	            Dim defaultFooter As Footer = section.Footers.[Default]
 	            '#End Region
 	        End Sub
@@ -278,7 +278,7 @@ The following code snippet demonstrates how to add different headers for odd and
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-headers-footers_4}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingHeadersAndFooters.cs region=radwordsprocessing-model-headers-footers_4}}
 	            RadFlowDocument document = new RadFlowDocument();
 	            document.Sections.AddSection();
 	            document.HasDifferentEvenOddPageHeadersFooters = true;
@@ -298,7 +298,7 @@ The following code snippet demonstrates how to add different headers for odd and
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-headers-footers_4}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingHeadersAndFooters.vb region=radwordsprocessing-model-headers-footers_4}}
 	            Dim document As New RadFlowDocument()
 	            document.Sections.AddSection()
 	            document.HasDifferentEvenOddPageHeadersFooters = True

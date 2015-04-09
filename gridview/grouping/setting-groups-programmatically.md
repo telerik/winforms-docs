@@ -26,7 +26,7 @@ As this is a collection, you are able not only to add, but to remove or clear th
 
 #### __[C#] Using simple group descriptor__
 
-{{region usingSimpleGroupDescriptor}}
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=usingSimpleGroupDescriptor}}
 	            GroupDescriptor descriptor = new GroupDescriptor();
 	            descriptor.GroupNames.Add("Country", ListSortDirection.Ascending);
 	            this.radGridView1.GroupDescriptors.Add(descriptor);
@@ -36,7 +36,7 @@ As this is a collection, you are able not only to add, but to remove or clear th
 
 #### __[VB.NET] Using simple group descriptor__
 
-{{region usingSimpleGroupDescriptor}}
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=usingSimpleGroupDescriptor}}
 	        Dim descriptor As New GroupDescriptor()
 	        descriptor.GroupNames.Add("Country", ListSortDirection.Ascending)
 	        Me.RadGridView1.GroupDescriptors.Add(descriptor)
@@ -54,7 +54,7 @@ RadGridView supports grouping using one or more property names. The following ex
 
 #### __[C#] Grouping by more than one column name__
 
-{{region groupingByMoreThanOneColumnName}}
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=groupingByMoreThanOneColumnName}}
 	            GroupDescriptor descriptor1 = new GroupDescriptor();
 	            descriptor1.GroupNames.Add("Country", ListSortDirection.Ascending);
 	            descriptor1.GroupNames.Add("ContactTitle", ListSortDirection.Descending);
@@ -65,7 +65,7 @@ RadGridView supports grouping using one or more property names. The following ex
 
 #### __[VB.NET] Grouping by more than one column name__
 
-{{region groupingByMoreThanOneColumnName}}
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=groupingByMoreThanOneColumnName}}
 	        Dim descriptor1 As New GroupDescriptor()
 	        descriptor1.GroupNames.Add("Country", ListSortDirection.Ascending)
 	        descriptor1.GroupNames.Add("ContactTitle", ListSortDirection.Descending)
@@ -80,7 +80,7 @@ RadGridView supports grouping on one or more levels. The following example demon
 
 #### __[C#] Grouping on one or more levels__
 
-{{region groupingOnOneOrMoreLevels}}
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=groupingOnOneOrMoreLevels}}
 	            GroupDescriptor descriptor2 = new GroupDescriptor();
 	            descriptor2.GroupNames.Add("Country", ListSortDirection.Ascending);
 	            GroupDescriptor descriptor3 = new GroupDescriptor();
@@ -93,7 +93,7 @@ RadGridView supports grouping on one or more levels. The following example demon
 
 #### __[VB.NET] Grouping on one or more levels__
 
-{{region groupingOnOneOrMoreLevels}}
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=groupingOnOneOrMoreLevels}}
 	        Dim descriptor2 As New GroupDescriptor()
 	        descriptor2.GroupNames.Add("Country", ListSortDirection.Ascending)
 	        Dim descriptor3 As New GroupDescriptor()

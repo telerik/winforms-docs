@@ -173,7 +173,7 @@ Now these key shortcuts can be overridden and customized to the liking of the us
 
 #### __[C#] __
 
-{{region input}}
+{{source=..\SamplesCS\RichTextEditor\KeyboardSupport.cs region=input}}
 	        
 	    public class MyInputBehavior : Telerik.WinForms.RichTextEditor.RichTextEditorInputBehavior
 	    {
@@ -192,7 +192,7 @@ Now these key shortcuts can be overridden and customized to the liking of the us
 
 #### __[VB.NET] __
 
-{{region input}}
+{{source=..\SamplesVB\RichTextEditor\KeyboardSupport.vb region=input}}
 	
 	Public Class MyInputBehavior
 	    Inherits Telerik.WinForms.RichTextEditor.RichTextEditorInputBehavior
@@ -214,7 +214,7 @@ the default behavior can be changed like this:
 
 #### __[C#] __
 
-{{region change}}
+{{source=..\SamplesCS\RichTextEditor\KeyboardSupport.cs region=change}}
 	            
 	            radRichTextEditor1.InputHandler = new MyInputBehavior(radRichTextEditor1.RichTextBoxElement);
 	        
@@ -224,7 +224,7 @@ the default behavior can be changed like this:
 
 #### __[VB.NET] __
 
-{{region change}}
+{{source=..\SamplesVB\RichTextEditor\KeyboardSupport.vb region=change}}
 	
 	        radRichTextEditor1.InputHandler = New MyInputBehavior(radRichTextEditor1.RichTextBoxElement)
 	
@@ -269,7 +269,7 @@ Another way to customize the control behavior is to use the __PreviewEditorKeyDo
 
 #### __[C#] __
 
-{{region keyDown}}
+{{source=..\SamplesCS\RichTextEditor\KeyboardSupport.cs region=keyDown}}
 	            
 	        void RichTextBoxElement_PreviewEditorKeyDown(object sender, PreviewEditorKeyEventArgs e)
 	        {
@@ -285,7 +285,7 @@ Another way to customize the control behavior is to use the __PreviewEditorKeyDo
 
 #### __[VB.NET] __
 
-{{region keyDown}}
+{{source=..\SamplesVB\RichTextEditor\KeyboardSupport.vb region=keyDown}}
 	
 	    Private Sub RichTextBoxElement_PreviewEditorKeyDown(ByVal sender As Object, ByVal e As PreviewEditorKeyEventArgs)
 	        If (Keyboard.IsKeyDown(Key.LeftShift) OrElse Keyboard.IsKeyDown(Key.RightShift)) Then

@@ -22,7 +22,7 @@ The static RadProperty __Register()__ method creates an instance of a RadPropert
 
 #### __[C#]__
 
-{{region RadProperty}}
+{{source=..\SamplesCS\TPF\ClassHierarchy\RadPropertyForm.cs region=RadProperty}}
 	        public static RadProperty PhoneProperty = RadProperty.Register(
 	            "Phone",
 	            typeof(string),
@@ -46,7 +46,7 @@ The static RadProperty __Register()__ method creates an instance of a RadPropert
 
 #### __[VB]__
 
-{{region RadProperty}}
+{{source=..\SamplesVB\TPF\ClassHierarchy\RadPropertyForm.vb region=RadProperty}}
 	    Public Shared PhoneProperty As RadProperty = RadProperty.Register("Phone", GetType(String), GetType(BusinessCardElement), New RadElementPropertyMetadata("", ElementPropertyOptions.None))
 	
 	    Public Property Phone() As String

@@ -24,7 +24,7 @@ To associate a field with a different type then the scheduler type, for example,
 
 #### __[C#]__
 
-{{region backgroundCallback}}
+{{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=backgroundCallback}}
 	        object ConvertBackgrounIdToScheduler(object obj)
 	        {
 	            if (!(obj is DBNull))
@@ -69,7 +69,7 @@ To associate a field with a different type then the scheduler type, for example,
 
 #### __[VB.NET]__
 
-{{region backgroundCallback}}
+{{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=backgroundCallback}}
 	    Private Function ConvertBackgrounIdToScheduler(ByVal obj As Object) As Object
 	        If Not (TypeOf obj Is DBNull) Then
 	            Dim appointmentBackground As String = CStr(obj)
@@ -111,7 +111,7 @@ To associate a field with a different type then the scheduler type, for example,
 
 #### __[C#]__
 
-{{region background}}
+{{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=background}}
 	            SchedulerMapping backgroundIdSchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("BackgroundId");
 	            backgroundIdSchedulerMapping.ConvertToScheduler = new ConvertCallback(this.ConvertBackgrounIdToScheduler);
 	            backgroundIdSchedulerMapping.ConvertToDataSource = new ConvertCallback(this.ConvertBackgrounIdToDataSource);
@@ -121,7 +121,7 @@ To associate a field with a different type then the scheduler type, for example,
 
 #### __[VB.NET]__
 
-{{region background}}
+{{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=background}}
 	        Dim backgroundIdSchedulerMapping As SchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("BackgroundId")
 	        backgroundIdSchedulerMapping.ConvertToScheduler = New ConvertCallback(AddressOf Me.ConvertBackgrounIdToScheduler)
 	        backgroundIdSchedulerMapping.ConvertToDataSource = New ConvertCallback(AddressOf Me.ConvertBackgrounIdToDataSource)
@@ -140,7 +140,7 @@ If the database has fields that can be Null then you need to add converters for 
 
 #### __[C#]__
 
-{{region locationCallback}}
+{{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=locationCallback}}
 	        object ConvertLocationToScheduler(object obj)
 	        {
 	            if (obj is DBNull)
@@ -155,7 +155,7 @@ If the database has fields that can be Null then you need to add converters for 
 
 #### __[VB.NET]__
 
-{{region locationCallback}}
+{{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=locationCallback}}
 	    Private Function ConvertLocationToScheduler(ByVal obj As Object) As Object
 	        If TypeOf obj Is DBNull Then
 	            Return Nothing
@@ -170,7 +170,7 @@ If the database has fields that can be Null then you need to add converters for 
 
 #### __[C#]__
 
-{{region location}}
+{{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=location}}
 	            AppointmentMappingInfo appointmentMappingInfo = new AppointmentMappingInfo();
 	            appointmentMappingInfo.Location = "Location";
 	            SchedulerMapping locationSchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("Location");
@@ -181,7 +181,7 @@ If the database has fields that can be Null then you need to add converters for 
 
 #### __[VB.NET]__
 
-{{region location}}
+{{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=location}}
 	        Dim appointmentMappingInfo As New AppointmentMappingInfo()
 	        appointmentMappingInfo.Location = "Location"
 	        Dim locationSchedulerMapping As SchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("Location")
@@ -205,7 +205,7 @@ If Id is read only in the data set, then the Scheduler will rely on the way the 
 
 #### __[C#]__
 
-{{region NullFieldsInTheDataBase}}
+{{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=NullFieldsInTheDataBase}}
 	        object ConvertUniqueIdToScheduler(object obj)
 	        {
 	            return new EventId(obj);
@@ -228,7 +228,7 @@ If Id is read only in the data set, then the Scheduler will rely on the way the 
 
 #### __[VB.NET]__
 
-{{region NullFieldsInTheDataBase}}
+{{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=NullFieldsInTheDataBase}}
 	    Private Function ConvertUniqueIdToScheduler(ByVal obj As Object) As Object
 	        Return New EventId(obj)
 	    End Function
@@ -250,7 +250,7 @@ If Id is read only in the data set, then the Scheduler will rely on the way the 
 
 #### __[C#]__
 
-{{region ApplyUniqueId}}
+{{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=ApplyUniqueId}}
 	            SchedulerMapping uniqueIdSchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("UniqueId");
 	            uniqueIdSchedulerMapping.ConvertToScheduler = new ConvertCallback(this.ConvertUniqueIdToScheduler);
 	            uniqueIdSchedulerMapping.ConvertToDataSource = new ConvertCallback(this.ConvertUniqueIdToDataSource);
@@ -260,7 +260,7 @@ If Id is read only in the data set, then the Scheduler will rely on the way the 
 
 #### __[VB.NET]__
 
-{{region ApplyUniqueId}}
+{{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=ApplyUniqueId}}
 	        Dim uniqueIdSchedulerMapping As SchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("UniqueId")
 	        uniqueIdSchedulerMapping.ConvertToScheduler = New ConvertCallback(AddressOf Me.ConvertUniqueIdToScheduler)
 	        uniqueIdSchedulerMapping.ConvertToDataSource = New ConvertCallback(AddressOf Me.ConvertUniqueIdToDataSource)

@@ -26,7 +26,7 @@ Below are the basic steps needed to get started with __RadRating__ control in Vi
 
 #### __[C#]__
 
-{{region GettingStarted}}
+{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=GettingStarted}}
 	        
 	        double averageRating = 0;
 	        int numberOfChanges = 0;
@@ -59,7 +59,7 @@ Below are the basic steps needed to get started with __RadRating__ control in Vi
 
 #### __[VB.NET]__
 
-{{region GettingStarted}}
+{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=GettingStarted}}
 	
 	    Private averageRating As Double = 0
 	    Private numberOfChanges As Integer = 0

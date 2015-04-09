@@ -31,7 +31,7 @@ You can activate change tracking through the __IsTrackChangesEnabled__ property 
 
 #### __[C#] __
 
-{{region enable}}
+{{source=..\SamplesCS\RichTextEditor\Features\TrackChanges.cs region=enable}}
 	
 	            this.radRichTextEditor1.IsTrackChangesEnabled = true;
 	
@@ -41,7 +41,7 @@ You can activate change tracking through the __IsTrackChangesEnabled__ property 
 
 #### __[VB.NET] __
 
-{{region enable}}
+{{source=..\SamplesVB\RichTextEditor\Features\TrackChanges.vb region=enable}}
 	
 	        Me.radRichTextEditor1.IsTrackChangesEnabled = True
 	
@@ -98,7 +98,7 @@ As you can see tracked changes are visualized inside the rich text box with diff
 
 #### __[C#] __
 
-{{region options}}
+{{source=..\SamplesCS\RichTextEditor\Features\TrackChanges.cs region=options}}
 	
 	            this.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Insert.Decoration = RevisionDecoration.ColorOnly;
 	            this.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Insert.ColorOptions = new RevisionColor(Color.Green);
@@ -112,7 +112,7 @@ As you can see tracked changes are visualized inside the rich text box with diff
 
 #### __[VB.NET] __
 
-{{region options}}
+{{source=..\SamplesVB\RichTextEditor\Features\TrackChanges.vb region=options}}
 	
 	        Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Insert.Decoration = RevisionDecoration.ColorOnly
 	        Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Insert.ColorOptions = New RevisionColor(Color.Green)
@@ -155,7 +155,7 @@ All changes made while track changes are enabled are made on behalf of the curre
 
 #### __[C#] __
 
-{{region user}}
+{{source=..\SamplesCS\RichTextEditor\Features\TrackChanges.cs region=user}}
 	
 	            this.radRichTextEditor1.CurrentUser = new UserInfo("Group", "Boby", "Boby", "bobby@telerik.com");
 	
@@ -165,7 +165,7 @@ All changes made while track changes are enabled are made on behalf of the curre
 
 #### __[VB.NET] __
 
-{{region user}}
+{{source=..\SamplesVB\RichTextEditor\Features\TrackChanges.vb region=user}}
 	
 	        Me.radRichTextEditor1.CurrentUser = New UserInfo("Group", "Boby", "Boby", "bobby@telerik.com")
 	
@@ -212,7 +212,7 @@ All revision have a RevisionInfo object associated to them, which contains infor
 
 #### __[C#] __
 
-{{region revision}}
+{{source=..\SamplesCS\RichTextEditor\Features\TrackChanges.cs region=revision}}
 	
 	            Revision prev = document.GoToPreviousRevision();
 	            Revision next = document.GoToNextRevision();
@@ -227,7 +227,7 @@ All revision have a RevisionInfo object associated to them, which contains infor
 
 #### __[VB.NET] __
 
-{{region revision}}
+{{source=..\SamplesVB\RichTextEditor\Features\TrackChanges.vb region=revision}}
 	
 	        Dim prev As Revision = document.GoToPreviousRevision()
 	        Dim [next] As Revision = document.GoToNextRevision()

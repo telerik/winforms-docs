@@ -22,7 +22,7 @@ RadListDataItem initially has the most basic visual properties required which ar
 
 #### __[C#]__
 
-{{region customDataItem}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=customDataItem}}
 	    public class CustomDataItem : RadListDataItem
 	    {
 	        public static readonly RadProperty AvailableProperty = RadProperty.Register("Available", typeof(bool), typeof(CustomDataItem), new RadElementPropertyMetadata(false));
@@ -44,7 +44,7 @@ RadListDataItem initially has the most basic visual properties required which ar
 
 #### __[VB.NET]__
 
-{{region customDataItem}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=customDataItem}}
 	Public Class CustomDataItem
 	    Inherits RadListDataItem
 	    Public Shared ReadOnly AvailableProperty As RadProperty = RadProperty.Register("Available", GetType(Boolean), GetType(CustomDataItem), New RadElementPropertyMetadata(False))
@@ -67,7 +67,7 @@ Once we have the custom data item with the additional information we can convinc
 
 #### __[C#]__
 
-{{region itemDataBinding}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=itemDataBinding}}
 	        void radListControl1_ItemDataBinding(object sender, ListItemDataBindingEventArgs args)
 	        {
 	            args.NewItem = new CustomDataItem();
@@ -78,7 +78,7 @@ Once we have the custom data item with the additional information we can convinc
 
 #### __[VB.NET]__
 
-{{region itemDataBinding}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=itemDataBinding}}
 	    Private Sub radListControl1_ItemDataBinding(ByVal sender As Object, ByVal args As ListItemDataBindingEventArgs)
 	        args.NewItem = New CustomDataItem()
 	    End Sub

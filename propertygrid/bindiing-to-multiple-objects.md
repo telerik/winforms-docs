@@ -26,7 +26,7 @@ Here is how to use this feature:
 
 #### __[C#] Binding to multiple objects__
 
-{{region BindToMultipleObjects}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridBindingToMultipleObjects.cs region=BindToMultipleObjects}}
 	            object[] objects = new object[] { this.radButton1, this.radTextBox1, this.radLabel1 };
 	            this.radPropertyGrid1.SelectedObjects = objects;
 	{{endregion}}
@@ -35,7 +35,7 @@ Here is how to use this feature:
 
 #### __[VB.NET] Binding to multiple objects__
 
-{{region BindToMultipleObjects}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridBindingToMultipleObjects.vb region=BindToMultipleObjects}}
 	        Dim objects As Object() = New Object() {Me.RadButton1, Me.RadTextBox1, Me.RadLabel1}
 	        Me.RadPropertyGrid1.SelectedObjects = objects
 	{{endregion}}

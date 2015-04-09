@@ -29,7 +29,7 @@ The code snippet in __Example 1__ shows how to initialize a RadFlodDocumentEdito
 
 #### __C#__
 
-{{region mailmerge1}}
+{{source=..\SamplesCS\WordsProcessing\Editing\MailMerge.cs region=mailmerge1}}
 	            
 	            RadFlowDocument document = new RadFlowDocument();
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
@@ -41,7 +41,7 @@ The code snippet in __Example 1__ shows how to initialize a RadFlodDocumentEdito
 
 #### __VB__
 
-{{region mailmerge1}}
+{{source=..\SamplesVB\WordsProcessing\Editing\MailMerge.vb region=mailmerge1}}
 	
 	        Dim document As New RadFlowDocument()
 	        Dim editor As New RadFlowDocumentEditor(document)
@@ -95,7 +95,7 @@ Additionally, a field can be added to a Paragraph manually by creating a __Field
 
 #### __C#__
 
-{{region mailmerge2}}
+{{source=..\SamplesCS\WordsProcessing\Editing\MailMerge.cs region=mailmerge2}}
 	            
 	            FieldInfo field = new FieldInfo(document);
 	            
@@ -111,7 +111,7 @@ Additionally, a field can be added to a Paragraph manually by creating a __Field
 
 #### __VB__
 
-{{region mailmerge2}}
+{{source=..\SamplesVB\WordsProcessing\Editing\MailMerge.vb region=mailmerge2}}
 	
 	        Dim field As New FieldInfo(document)
 	
@@ -165,7 +165,7 @@ Example 3 shows a simple example data source.
 
 #### __C#__
 
-{{region mailmerge3}}
+{{source=..\SamplesCS\WordsProcessing\Editing\MailMerge.cs region=mailmerge3}}
 	                
 	            List<MailMergeRecord> mailMergeDataSource = new List<MailMergeRecord>()
 	            {
@@ -187,7 +187,7 @@ Example 3 shows a simple example data source.
 
 #### __VB__
 
-{{region mailmerge3}}
+{{source=..\SamplesVB\WordsProcessing\Editing\MailMerge.vb region=mailmerge3}}
 	
 	        Dim mailMergeDataSource As New List(Of MailMergeRecord)() From {
 	            New MailMergeRecord() With {.FirstName = "Andrew", .LastName = "Fuller"},
@@ -219,7 +219,7 @@ __Example 4__ performs the mail merge operation over a previously defined templa
 
 #### __C#__
 
-{{region mailmerge4}}
+{{source=..\SamplesCS\WordsProcessing\Editing\MailMerge.cs region=mailmerge4}}
 	        
 	            RadFlowDocument mailMergeResult = document.MailMerge(mailMergeDataSource);
 	
@@ -229,7 +229,7 @@ __Example 4__ performs the mail merge operation over a previously defined templa
 
 #### __VB__
 
-{{region mailmerge4}}
+{{source=..\SamplesVB\WordsProcessing\Editing\MailMerge.vb region=mailmerge4}}
 	
 	        Dim mailMergeResult As RadFlowDocument = document.MailMerge(mailMergeDataSource)
 	

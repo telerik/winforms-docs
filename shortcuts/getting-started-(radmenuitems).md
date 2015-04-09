@@ -29,7 +29,7 @@ position: 0
 
 #### __[C#]__
 
-{{region handlingClickEvent}}
+{{source=..\SamplesCS\Shortcuts\Form2.cs region=handlingClickEvent}}
 	        void radMenuItem1_Click(object sender, EventArgs e)
 	        {
 	            MessageBox.Show("New");
@@ -45,7 +45,7 @@ position: 0
 
 #### __[VB.NET]__
 
-{{region handlingClickEvent}}
+{{source=..\SamplesVB\Shortcuts\Form2.vb region=handlingClickEvent}}
 	    Private Sub radMenuItem1_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        MessageBox.Show("New")
 	    End Sub
@@ -62,7 +62,7 @@ position: 0
 
 #### __[C#]__
 
-{{region menuShortcuts}}
+{{source=..\SamplesCS\Shortcuts\Form2.cs region=menuShortcuts}}
 	            this.radMenuItem1.Shortcuts.Add(new RadShortcut(Keys.Control, Keys.N));
 	            this.radMenuItem2.Shortcuts.Add(new RadShortcut(Keys.Shift, Keys.F, Keys.K));
 	{{endregion}}
@@ -71,7 +71,7 @@ position: 0
 
 #### __[VB.NET]__
 
-{{region menuShortcuts}}
+{{source=..\SamplesVB\Shortcuts\Form2.vb region=menuShortcuts}}
 	        Me.RadMenuItem1.Shortcuts.Add(New RadShortcut(Keys.Control, Keys.N))
 	        Me.RadMenuItem2.Shortcuts.Add(New RadShortcut(Keys.Shift, Keys.F, Keys.K))
 	{{endregion}}
@@ -87,7 +87,7 @@ Interesting functionality to mention is the ability to set your own custom text 
 
 #### __[C#]__
 
-{{region SetHintText}}
+{{source=..\SamplesCS\Shortcuts\Form2.cs region=SetHintText}}
 	            radMenuItem2.HintText = "Custom Text";
 	{{endregion}}
 
@@ -95,7 +95,7 @@ Interesting functionality to mention is the ability to set your own custom text 
 
 #### __[VB.NET]__
 
-{{region SetHintText}}
+{{source=..\SamplesVB\Shortcuts\Form2.vb region=SetHintText}}
 	        RadMenuItem2.HintText = "Custom Text"
 	{{endregion}}
 

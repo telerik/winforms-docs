@@ -26,7 +26,7 @@ This article will demonstrate how you can replace the default __FindAndRepacle__
 
 #### __[C#] __
 
-{{region search}}
+{{source=..\SamplesCS\RichTextEditor\HowTo\FindAllDialog.cs region=search}}
 	            
 	        private void radButton1_Click(object sender, EventArgs e)
 	        {
@@ -54,7 +54,7 @@ This article will demonstrate how you can replace the default __FindAndRepacle__
 
 #### __[VB.NET] __
 
-{{region search}}
+{{source=..\SamplesVB\RichTextEditor\HowTo\FindAllDialog.vb region=search}}
 	    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        Dim textToFind As String = radTextBox1.Text
 	        SelectAllMatches(textToFind)
@@ -113,7 +113,7 @@ This article will demonstrate how you can replace the default __FindAndRepacle__
 
 #### __[C#] __
 
-{{region declare}}
+{{source=..\SamplesCS\RichTextEditor\HowTo\FindAllDialog.cs region=declare}}
 	    
 	    public partial class FindAllDialog : RadForm, IFindReplaceDialog
 	    
@@ -123,7 +123,7 @@ This article will demonstrate how you can replace the default __FindAndRepacle__
 
 #### __[VB.NET] __
 
-{{region declare}}
+{{source=..\SamplesVB\RichTextEditor\HowTo\FindAllDialog.vb region=declare}}
 	Partial Public Class FindAllDialog
 	    Inherits RadForm
 	    Implements IFindReplaceDialog
@@ -189,7 +189,7 @@ Now you are ready to add the required fields, property and methods:
 
 #### __[C#] __
 
-{{region interface}}
+{{source=..\SamplesCS\RichTextEditor\HowTo\FindAllDialog.cs region=interface}}
 	        
 	        RadRichTextBox richTextBox;
 	        bool isOpen;
@@ -227,7 +227,7 @@ Now you are ready to add the required fields, property and methods:
 
 #### __[VB.NET] __
 
-{{region interface}}
+{{source=..\SamplesVB\RichTextEditor\HowTo\FindAllDialog.vb region=interface}}
 	    Private richTextBox As RadRichTextBox
 	    Private _isOpen As Boolean
 	
@@ -266,7 +266,7 @@ Now you are ready to add the required fields, property and methods:
 
 #### __[C#] __
 
-{{region assign}}
+{{source=..\SamplesCS\RichTextEditor\HowTo\ChangeDefaultDialogs.cs region=assign}}
 	            radRichTextEditor1.RichTextBoxElement.FindReplaceDialog = new FindAllDialog();
 	{{endregion}}
 
@@ -274,7 +274,7 @@ Now you are ready to add the required fields, property and methods:
 
 #### __[VB.NET] __
 
-{{region assign}}
+{{source=..\SamplesVB\RichTextEditor\HowTo\ChangeDefaultDialogs.vb region=assign}}
 	        radRichTextEditor1.RichTextBoxElement.FindReplaceDialog = New FindAllDialog()
 	        '#End Region
 	    End Sub

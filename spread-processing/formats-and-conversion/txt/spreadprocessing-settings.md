@@ -37,7 +37,7 @@ __Example 1__ shows how to create and specify particular setting to a TxtFormatP
 
 #### __[C#] Example 1: Use TxtSettings__
 
-{{region radspreadprocessing-formats-and-conversion-Txt-settings_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingTxtSettings.cs region=radspreadprocessing-formats-and-conversion-Txt-settings_0}}
 	                TxtFormatProvider provider = new TxtFormatProvider();
 	                provider.Settings.Delimiter = ';';
 	                provider.Settings.Quote = '^';
@@ -48,7 +48,7 @@ __Example 1__ shows how to create and specify particular setting to a TxtFormatP
 
 #### __[VB NET] Example 1: Use TxtSettings__
 
-{{region radspreadprocessing-formats-and-conversion-Txt-settings_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingTxtSettings.vb region=radspreadprocessing-formats-and-conversion-Txt-settings_0}}
 	            Dim provider As New TxtFormatProvider()
 	            provider.Settings.Delimiter = ";"c
 	            provider.Settings.Quote = "^"c

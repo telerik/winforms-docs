@@ -62,7 +62,7 @@ DateTimeCategorical axis is not added by default to Cartesian series. For this r
 
 #### __[C#] __
 
-{{region dateTimeCategoricalAxis}}
+{{source=..\SamplesCS\ChartView\Axes\DateTimeAxisForm.cs region=dateTimeCategoricalAxis}}
 	            LineSeries series = new LineSeries();
 	            series.DataPoints.Add(new CategoricalDataPoint(6, DateTime.Now));
 	            series.DataPoints.Add(new CategoricalDataPoint(4, DateTime.Now.AddDays(1)));
@@ -83,7 +83,7 @@ DateTimeCategorical axis is not added by default to Cartesian series. For this r
 
 #### __[VB.NET] __
 
-{{region dateTimeCategoricalAxis}}
+{{source=..\SamplesVB\ChartView\Axes\DateTimeAxisForm.vb region=dateTimeCategoricalAxis}}
 	        Dim series As New LineSeries()
 	        series.DataPoints.Add(New CategoricalDataPoint(6, DateTime.Now))
 	        series.DataPoints.Add(New CategoricalDataPoint(4, DateTime.Now.AddDays(1)))
@@ -150,7 +150,7 @@ DateTimeContinuous axis is not added by default to Cartesian series. For this re
 
 #### __[C#] __
 
-{{region dateTimeContinuousAxis}}
+{{source=..\SamplesCS\ChartView\Axes\DateTimeAxisForm.cs region=dateTimeContinuousAxis}}
 	            LineSeries lineSeries = new LineSeries();
 	            lineSeries.DataPoints.Add(new CategoricalDataPoint(6, DateTime.Now));
 	            lineSeries.DataPoints.Add(new CategoricalDataPoint(4, DateTime.Now.AddDays(1)));
@@ -170,7 +170,7 @@ DateTimeContinuous axis is not added by default to Cartesian series. For this re
 
 #### __[VB.NET] __
 
-{{region dateTimeContinuousAxis}}
+{{source=..\SamplesVB\ChartView\Axes\DateTimeAxisForm.vb region=dateTimeContinuousAxis}}
 	        Dim lineSeries As New LineSeries()
 	        lineSeries.DataPoints.Add(New CategoricalDataPoint(6, DateTime.Now))
 	        lineSeries.DataPoints.Add(New CategoricalDataPoint(4, DateTime.Now.AddDays(1)))

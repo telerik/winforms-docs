@@ -22,7 +22,7 @@ __GridViewCalculatorColumn__ is never auto-generated. The following code snippet
 
 #### __[C#] __
 
-{{region addCalculatorColumn}}
+{{source=..\SamplesCS\GridView\Columns\GridViewCalculatorColumn1.cs region=addCalculatorColumn}}
 	            GridViewCalculatorColumn column = new GridViewCalculatorColumn("Calculator column");
 	            this.radGridView1.Columns.Add(column);
 	
@@ -39,7 +39,7 @@ __GridViewCalculatorColumn__ is never auto-generated. The following code snippet
 
 #### __[VB.NET] __
 
-{{region addCalculatorColumn}}
+{{source=..\SamplesVB\GridView\Columns\GridViewCalculatorColumn1.vb region=addCalculatorColumn}}
 	        Dim column As New GridViewCalculatorColumn("Calculator column")
 	        Me.radGridView1.Columns.Add(column)
 	

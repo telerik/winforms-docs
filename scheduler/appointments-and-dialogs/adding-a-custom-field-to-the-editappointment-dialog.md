@@ -55,7 +55,7 @@ Here is a step by step guide how to achieve that:
 
 #### __[VB.NET] Inherit the form in VB.NET__
 
-{{region inheritsInVB}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.Designer.vb region=inheritsInVB}}
 	<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 	Partial Class CustomAppointmentEditForm
 	    Inherits Telerik.WinControls.UI.Scheduler.Dialogs.EditAppointmentDialog
@@ -70,7 +70,7 @@ Here is a step by step guide how to achieve that:
 
 #### __[C#] Extending the EditAppointmentDialog__
 
-{{region customAppEditForm}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.cs region=customAppEditForm}}
 	    public partial class CustomAppointmentEditForm : EditAppointmentDialog
 	    {
 	        public CustomAppointmentEditForm()
@@ -110,7 +110,7 @@ Here is a step by step guide how to achieve that:
 
 #### __[VB.NET] Extending the EditAppointmentDialog__
 
-{{region customAppEditForm}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.vb region=customAppEditForm}}
 	Public Class CustomAppointmentEditForm
 	    Public Sub New()
 	        InitializeComponent()
@@ -145,7 +145,7 @@ Here is a step by step guide how to achieve that:
 
 #### __[C#] Extending the Appointment class__
 
-{{region appWithMail}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.cs region=appWithMail}}
 	    public class AppointmentWithEmail : Appointment
 	    {
 	        public AppointmentWithEmail()
@@ -175,7 +175,7 @@ Here is a step by step guide how to achieve that:
 
 #### __[VB.NET] Extending the Appointment class__
 
-{{region appWithMail}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.vb region=appWithMail}}
 	Public Class AppointmentWithEmail
 	    Inherits Appointment
 	    Public Sub New()
@@ -203,7 +203,7 @@ Here is a step by step guide how to achieve that:
 
 #### __[C#]__
 
-{{region customAppFactory}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.cs region=customAppFactory}}
 	    public class CustomAppointmentFactory : IAppointmentFactory
 	    {
 	        #region IAppointmentFactory Members
@@ -217,7 +217,7 @@ Here is a step by step guide how to achieve that:
 
 #### __[VB.NET]__
 
-{{region customAppFactory}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.vb region=customAppFactory}}
 	Public Class CustomAppointmentFactory
 	    Implements IAppointmentFactory
 	#Region "IAppointmentFactory Members"
@@ -236,7 +236,7 @@ Here is a step by step guide how to achieve that:
 
 #### __[C#] Associating new EditAppointment dialog__
 
-{{region showing}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomField.cs region=showing}}
 	        CustomAppointmentEditForm appointmentDialog = null;
 	
 	        void radScheduler1_AppointmentEditDialogShowing(object sender, AppointmentEditDialogShowingEventArgs e)
@@ -253,7 +253,7 @@ Here is a step by step guide how to achieve that:
 
 #### __[VB.NET] Associating new EditAppointment dialog__
 
-{{region showing}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomField.vb region=showing}}
 	    Private appointmentDialog As CustomAppointmentEditForm = Nothing
 	
 	    Private Sub radScheduler1_AppointmentEditDialogShowing(ByVal sender As Object, ByVal e As AppointmentEditDialogShowingEventArgs)
@@ -272,7 +272,7 @@ Here is a step by step guide how to achieve that:
 
 #### __[C#] Extending the EditAppointmentDialog__
 
-{{region settingFactory}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomField.cs region=settingFactory}}
 	            this.radScheduler1.AppointmentFactory = new CustomAppointmentFactory();
 	{{endregion}}
 
@@ -280,7 +280,7 @@ Here is a step by step guide how to achieve that:
 
 #### __[VB.NET] Extending the EditAppointmentDialog__
 
-{{region settingFactory}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomField.vb region=settingFactory}}
 	        Me.RadScheduler1.AppointmentFactory = New CustomAppointmentFactory()
 	{{endregion}}
 

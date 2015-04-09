@@ -43,7 +43,7 @@ And this is how it will look if the panel is expanded
 
 #### __[C#]__
 
-{{region ExpandCollapseHandlers}}
+{{source=..\SamplesCS\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.cs region=ExpandCollapseHandlers}}
 	
 	        void radCollapsiblePanel1_Collapsed(object sender, EventArgs e)
 	        {
@@ -61,7 +61,7 @@ And this is how it will look if the panel is expanded
 
 #### __[VB]__
 
-{{region ExpandCollapseHandlers}}
+{{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ExpandCollapseHandlers}}
 	    Private Sub radCollapsiblePanel1_Collapsed(sender As Object, e As EventArgs)
 	        Me.RadCollapsiblePanel1.HeaderText = "Show Grid"
 	    End Sub

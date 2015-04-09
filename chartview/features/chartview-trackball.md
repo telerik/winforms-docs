@@ -32,7 +32,7 @@ In order to utilize this behavior users simply have to
 
 #### __[C#] __
 
-{{region controller}}
+{{source=..\SamplesCS\ChartView\Features\Trackball.cs region=controller}}
 	            radChartView1.Controllers.Add(new ChartTrackballController());
 	{{endregion}}
 
@@ -40,7 +40,7 @@ In order to utilize this behavior users simply have to
 
 #### __[VB.NET] __
 
-{{region controller}}
+{{source=..\SamplesVB\ChartView\Features\Trackball.vb region=controller}}
 	        RadChartView1.Controllers.Add(New ChartTrackballController())
 	{{endregion}}
 
@@ -52,7 +52,7 @@ The ChartTrackballController will be added automatically if the __ShowTrackBall_
 
 #### __[C#] __
 
-{{region showTrackBall}}
+{{source=..\SamplesCS\ChartView\Features\Trackball.cs region=showTrackBall}}
 	            radChartView1.ShowTrackBall = true;
 	{{endregion}}
 
@@ -60,7 +60,7 @@ The ChartTrackballController will be added automatically if the __ShowTrackBall_
 
 #### __[VB.NET] __
 
-{{region showTrackBall}}
+{{source=..\SamplesVB\ChartView\Features\Trackball.vb region=showTrackBall}}
 	        RadChartView1.ShowTrackBall = True
 	{{endregion}}
 
@@ -71,7 +71,7 @@ A sample is shown below:
 
 #### __[C#] __
 
-{{region example}}
+{{source=..\SamplesCS\ChartView\Features\Trackball.cs region=example}}
 	            radChartView1.AreaType = ChartAreaType.Cartesian;
 	            LineSeries lineSeries1 = new LineSeries();
 	            lineSeries1.Name = "X";
@@ -110,7 +110,7 @@ A sample is shown below:
 
 #### __[VB.NET] __
 
-{{region example}}
+{{source=..\SamplesVB\ChartView\Features\Trackball.vb region=example}}
 	        RadChartView1.AreaType = ChartAreaType.Cartesian
 	        Dim lineSeries1 As New LineSeries
 	        lineSeries1.Name = "X"

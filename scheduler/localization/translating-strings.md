@@ -32,7 +32,7 @@ Below is a sample implementation of a custom localization provider: 
 
 #### __[C#]__
 
-{{region schedulerProvider}}
+{{source=..\SamplesCS\Scheduler\Localization\CustomSchedulerLocalizationProvider.cs region=schedulerProvider}}
 	    public class CustomSchedulerLocalizationProvider : RadSchedulerLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -235,7 +235,7 @@ Below is a sample implementation of a custom localization provider: 
 
 #### __[VB.NET]__
 
-{{region schedulerProvider}}
+{{source=..\SamplesVB\Scheduler\Localization\CustomSchedulerLocalizationProvider.vb region=schedulerProvider}}
 	Public Class CustomSchedulerLocalizationProvider
 	    Inherits RadSchedulerLocalizationProvider
 	 
@@ -608,7 +608,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[C#]__
 
-{{region assignSchedulerProvider}}
+{{source=..\SamplesCS\Scheduler\Localization\AssignProviders.cs region=assignSchedulerProvider}}
 	            RadSchedulerLocalizationProvider.CurrentProvider = new CustomSchedulerLocalizationProvider();
 	{{endregion}}
 
@@ -616,7 +616,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[VB.NET]__
 
-{{region assignSchedulerProvider}}
+{{source=..\SamplesVB\Scheduler\Localization\AssignProviders.vb region=assignSchedulerProvider}}
 	        RadSchedulerLocalizationProvider.CurrentProvider = New CustomSchedulerLocalizationProvider()
 	        '#End Region
 	

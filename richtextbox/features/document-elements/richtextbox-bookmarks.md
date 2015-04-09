@@ -53,7 +53,7 @@ For example, you can keep a Dictionary<string, string> mapping each bookmark nam
 
 #### __C#__
 
-{{region ReplaceContentOfBookmark}}
+{{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxBookmarks.cs region=ReplaceContentOfBookmark}}
 	        Dictionary<string, string> bookmarksToContent = new Dictionary<string, string>();
 	        private void ReplaceContentOfBookmark(string bookmarkName)
 	        {
@@ -68,7 +68,7 @@ For example, you can keep a Dictionary<string, string> mapping each bookmark nam
 
 #### __VB.NET__
 
-{{region ReplaceContentOfBookmark}}
+{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxBookmarks.vb region=ReplaceContentOfBookmark}}
 	    Private bookmarksToContent As New Dictionary(Of String, String)()
 	    Private Sub ReplaceContentOfBookmark(bookmarkName As String)
 	        Dim bookmark As BookmarkRangeStart = Me.RadRichTextBox1.Document.GetBookmarkByName(bookmarkName)
@@ -107,7 +107,7 @@ If you want to preserve the bookmarks in the document and only change the text b
 
 #### __C#__
 
-{{region ChangeAllBookmarks}}
+{{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxBookmarks.cs region=ChangeAllBookmarks}}
 	        private void ChangeAllBookmarks(RadRichTextBox radRichTextBox)
 	        {
 	            BookmarkRangeStart[] bookmarks = radRichTextBox.Document.GetAllBookmarks().ToArray<BookmarkRangeStart>();
@@ -134,7 +134,7 @@ If you want to preserve the bookmarks in the document and only change the text b
 
 #### __VB.NET__
 
-{{region ChangeAllBookmarks}}
+{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxBookmarks.vb region=ChangeAllBookmarks}}
 	    Private Sub ChangeAllBookmarks(radRichTextBox As RadRichTextBox)
 	        Dim bookmarks As BookmarkRangeStart() = radRichTextBox.Document.GetAllBookmarks().ToArray()
 	        Dim start As New DocumentPosition(radRichTextBox.Document)

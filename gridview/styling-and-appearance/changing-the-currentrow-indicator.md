@@ -28,7 +28,7 @@ You can change the images using the properties shown below:
 
 #### __[C#] Changing the current row image__
 
-{{region changeTheCurrentRowImage}}
+{{source=..\SamplesCS\GridView\StylingAndAppearance\ChangingTheCurrentRowIndicator.cs region=changeTheCurrentRowImage}}
 	            ((GridTableElement)this.radGridView1.TableElement).CurrentRowHeaderImage = Image.FromFile("..\\..\\DataSources\\separator.gif");
 	            ((GridTableElement)this.radGridView1.TableElement).EditRowHeaderImage = Image.FromFile("..\\..\\DataSources\\edit.png");
 	            ((GridTableElement)this.radGridView1.TableElement).ErrorRowHeaderImage = Image.FromFile("..\\..\\DataSources\\error.png");
@@ -39,7 +39,7 @@ You can change the images using the properties shown below:
 
 #### __[VB.NET] Changing the current row image__
 
-{{region changeTheCurrentRowImage}}
+{{source=..\SamplesVB\GridView\StylingAndAppearance\ChangingTheCurrentRowIndicator.vb region=changeTheCurrentRowImage}}
 	        DirectCast(Me.RadGridView1.TableElement, GridTableElement).CurrentRowHeaderImage = Image.FromFile("..\\..\\DataSources\\separator.gif")
 	        DirectCast(Me.RadGridView1.TableElement, GridTableElement).EditRowHeaderImage = Image.FromFile("..\\..\\DataSources\\edit.png")
 	        DirectCast(Me.RadGridView1.TableElement, GridTableElement).ErrorRowHeaderImage = Image.FromFile("..\\..\\DataSources\\error.png")
@@ -56,7 +56,7 @@ The following code snippet demonstrates how to set an image for a certain column
 
 #### __[C#] Set an image in a column header__
 
-{{region setColumnHeaderImage}}
+{{source=..\SamplesCS\GridView\StylingAndAppearance\ChangingTheCurrentRowIndicator.cs region=setColumnHeaderImage}}
 	            radGridView1.Columns["Date"].HeaderImage = Image.FromFile("..\\..\\DataSources\\star.png");
 	            radGridView1.Columns["Date"].TextImageRelation = TextImageRelation.ImageAboveText;
 	{{endregion}}
@@ -65,7 +65,7 @@ The following code snippet demonstrates how to set an image for a certain column
 
 #### __[VB.NET] Set an image in a column header__
 
-{{region setColumnHeaderImage}}
+{{source=..\SamplesVB\GridView\StylingAndAppearance\ChangingTheCurrentRowIndicator.vb region=setColumnHeaderImage}}
 	        RadGridView1.Columns("Picture Name").HeaderImage = Image.FromFile("..\\..\\DataSources\\star.png")
 	        RadGridView1.Columns("Picture Name").TextImageRelation = TextImageRelation.ImageAboveText
 	{{endregion}}

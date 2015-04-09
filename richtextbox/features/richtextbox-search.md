@@ -27,7 +27,7 @@ The simplest scenario – finding a string in the content of the document can be
 
 #### __[C#] Select all matches__
 
-{{region SelectAllMatches}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSearch.cs region=SelectAllMatches}}
 	        private void SelectAllMatches(string toSearch)
 	        {
 	            this.radRichTextBox1.Document.Selection.Clear(); // this clears the selection before processing
@@ -44,7 +44,7 @@ The simplest scenario – finding a string in the content of the document can be
 
 #### __[VB.NET] Select all matches__
 
-{{region SelectAllMatches}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSearch.vb region=SelectAllMatches}}
 	    Private Sub SelectAllMatches(ByVal toSearch As String)
 	        Me.RadRichTextBox1.Document.Selection.Clear() ' this clears the selection before processing
 	        Dim search As New DocumentTextSearch(Me.RadRichTextBox1.Document)
@@ -75,7 +75,7 @@ You can use all kind of regular expressions, such as “__(asp|silverlight)\s*co
 
 #### __[C#] Escape string__
 
-{{region escape}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSearch.cs region=escape}}
 	            toSearch = Regex.Escape(toSearch);
 	{{endregion}}
 
@@ -83,7 +83,7 @@ You can use all kind of regular expressions, such as “__(asp|silverlight)\s*co
 
 #### __[VB.NET] Escape string__
 
-{{region escape}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSearch.vb region=escape}}
 	        toSearch = Regex.Escape(toSearch)
 	{{endregion}}
 
@@ -96,7 +96,7 @@ Selecting the results of the search is particularly useful, as most formatting c
 
 #### __[C#] Customize selection__
 
-{{region modifySelection}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSearch.cs region=modifySelection}}
 	            this.radRichTextBox1.ChangeTextHighlightColor(Color.LightGray);  // will highlight all selected words in LightGray
 	            this.radRichTextBox1.ChangeFontSize(Unit.PointToDip(32));   // will increase the font size of the words to 30 DIP
 	            this.radRichTextBox1.ChangeFontFamily("Comic Sans MS"); // will change the font family of the spans, containing these words.
@@ -106,7 +106,7 @@ Selecting the results of the search is particularly useful, as most formatting c
 
 #### __[VB.NET] Customize selection__
 
-{{region modifySelection}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSearch.vb region=modifySelection}}
 	        Me.RadRichTextBox1.ChangeTextHighlightColor(Color.LightGray) ' will highlight all selected words in LightGray
 	        Me.RadRichTextBox1.ChangeFontSize(Unit.PointToDip(32)) ' will increase the font size of the words to 30 DIP
 	        Me.RadRichTextBox1.ChangeFontFamily("Comic Sans MS") ' will change the font family of the spans, containing these words.
@@ -120,7 +120,7 @@ Most of the time, you would like to remove the selection at the end of the opera
 
 #### __[C#] Clear selection__
 
-{{region clearSelection}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSearch.cs region=clearSelection}}
 	            this.radRichTextBox1.Document.Selection.Clear();
 	{{endregion}}
 
@@ -128,7 +128,7 @@ Most of the time, you would like to remove the selection at the end of the opera
 
 #### __[VB.NET] Clear selection__
 
-{{region clearSelection}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSearch.vb region=clearSelection}}
 	        Me.RadRichTextBox1.Document.Selection.Clear()
 	{{endregion}}
 
@@ -140,7 +140,7 @@ On a side note, the find and select functionality can be extended in order to im
 
 #### __[C#] Replace all matches__
 
-{{region ReplaceAllMatches}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSearch.cs region=ReplaceAllMatches}}
 	        private void ReplaceAllMatches(string toSearch, string toReplaceWith)
 	        {
 	            this.radRichTextBox1.Document.Selection.Clear(); // this clears the selection before processing
@@ -166,7 +166,7 @@ On a side note, the find and select functionality can be extended in order to im
 
 #### __[VB.NET] Replace all matches__
 
-{{region ReplaceAllMatches}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSearch.vb region=ReplaceAllMatches}}
 	    Private Sub ReplaceAllMatches(ByVal toSearch As String, ByVal toReplaceWith As String)
 	        Me.RadRichTextBox1.Document.Selection.Clear() ' this clears the selection before processing
 	        Dim search As New DocumentTextSearch(Me.RadRichTextBox1.Document)

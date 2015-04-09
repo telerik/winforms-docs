@@ -26,7 +26,7 @@ The solution is to:
 
 #### __[C#]__
 
-{{region propertyChanged}}
+{{source=..\SamplesCS\Scheduler\HowTo\LoadingData.cs region=propertyChanged}}
 	        public LoadingData()
 	        {
 	            InitializeComponent();
@@ -47,7 +47,7 @@ The solution is to:
 
 #### __[VB.NET]__
 
-{{region propertyChanged}}
+{{source=..\SamplesVB\Scheduler\HowTo\LoadingData.vb region=propertyChanged}}
 	    Public Sub New()
 	        InitializeComponent()
 	

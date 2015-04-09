@@ -28,7 +28,7 @@ The fact that the document model of __RadSpreadsheet__ is completely decoupled f
 
 #### __[C#] Example 1: Create a workbook and add a worksheet to it__
 
-{{region radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithWorkbooks\RadSpreadProcessingCreateOpenAndSaveWorkbooks.cs region=radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_0}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	{{endregion}}
@@ -37,7 +37,7 @@ The fact that the document model of __RadSpreadsheet__ is completely decoupled f
 
 #### __[VB.NET] Example 1: Create a workbook and add a worksheet to it__
 
-{{region radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorkbooks\RadSpreadProcessingCreateOpenAndSaveWorkbooks.vb region=radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_0}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        '#End Region
@@ -98,7 +98,7 @@ __RadSpreadsheet__ document model allows you to easily import a workbook from a 
 
 #### __[C#] Example 2: Download and import xlsx file__
 
-{{region radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithWorkbooks\RadSpreadProcessingCreateOpenAndSaveWorkbooks.cs region=radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_1}}
 	            const string FilePath = @"http://localhost:54352/Resourses/SampleFile.xlsx";
 	            WebClient webClient = new WebClient();
 	
@@ -115,7 +115,7 @@ __RadSpreadsheet__ document model allows you to easily import a workbook from a 
 
 #### __[VB.NET] Example 2: Download and import xlsx file__
 
-{{region radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorkbooks\RadSpreadProcessingCreateOpenAndSaveWorkbooks.vb region=radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_1}}
 	        Const FilePath As String = "http://localhost:54352/Resourses/SampleFile.xlsx"
 	        Dim webClient As New WebClient()
 	
@@ -174,7 +174,7 @@ __RadSpreadsheet__ also allows you to save a workbook into a csv, txt and xlsx f
 
 #### __[C#] Example 3: Save csv file__
 
-{{region radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithWorkbooks\RadSpreadProcessingCreateOpenAndSaveWorkbooks.cs region=radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_3}}
 	            Workbook workbook = new Workbook();
 	            workbook.Worksheets.Add();
 	
@@ -191,7 +191,7 @@ __RadSpreadsheet__ also allows you to save a workbook into a csv, txt and xlsx f
 
 #### __[VB.NET] Example 3: Save csv file__
 
-{{region radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorkbooks\RadSpreadProcessingCreateOpenAndSaveWorkbooks.vb region=radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_3}}
 	        Dim workbook As New Workbook()
 	        workbook.Worksheets.Add()
 	

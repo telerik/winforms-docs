@@ -26,7 +26,7 @@ In order to remove an item, you need to make a loop iterating the __e.ContextMen
 
 #### __[C#] Removing context menu items__
 
-{{region removeContextMenuItem}}
+{{source=..\SamplesCS\GridView\ContextMenus\ModifingTheDefaultContextMenu.cs region=removeContextMenuItem}}
 	        void radGridView1_ContextMenuOpening(object sender, Telerik.WinControls.UI.ContextMenuOpeningEventArgs e)
 	        {
 	            for (int i = 0; i < e.ContextMenu.Items.Count; i++)
@@ -46,7 +46,7 @@ In order to remove an item, you need to make a loop iterating the __e.ContextMen
 
 #### __[VB.NET] Removing context menu items__
 
-{{region removeContextMenuItem}}
+{{source=..\SamplesVB\GridView\ContextMenus\ModifingTheDefaultContextMenu.vb region=removeContextMenuItem}}
 	    Private Sub RadGridView1_ContextMenuOpening(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ContextMenuOpeningEventArgs) Handles RadGridView1.ContextMenuOpening
 	        Dim i As Integer = 0
 	        Do While i < e.ContextMenu.Items.Count
@@ -73,7 +73,7 @@ In order to add custom menu items to the default context menu, *you should creat
 
 #### __[C#] Adding context menu items__
 
-{{region addContextMenuOption}}
+{{source=..\SamplesCS\GridView\ContextMenus\ModifingTheDefaultContextMenu.cs region=addContextMenuOption}}
 	        void radGridView1_ContextMenuOpening1(object sender, Telerik.WinControls.UI.ContextMenuOpeningEventArgs e)
 	        {
 	            RadMenuItem customMenuItem = new RadMenuItem();
@@ -88,7 +88,7 @@ In order to add custom menu items to the default context menu, *you should creat
 
 #### __[VB.NET] Adding context menu items__
 
-{{region addContextMenuOption}}
+{{source=..\SamplesVB\GridView\ContextMenus\ModifingTheDefaultContextMenu.vb region=addContextMenuOption}}
 	    Private Sub RadGridView1_ContextMenuOpening1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ContextMenuOpeningEventArgs) Handles RadGridView1.ContextMenuOpening
 	        Dim customMenuItem As RadMenuItem = New RadMenuItem()
 	        customMenuItem.Text = "Custom Data Operation"

@@ -25,7 +25,7 @@ The sample code below shows how to start editing using the API:
 
 #### __[C#]__
 
-{{region editing}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=editing}}
 	            radTreeView1.AllowEdit = true;
 	            // set the SelectedNode - this node will be edited  
 	            radTreeView1.SelectedNode = radTreeView1.Nodes[0];
@@ -37,7 +37,7 @@ The sample code below shows how to start editing using the API:
 
 #### __[VB.NET]__
 
-{{region editing}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=editing}}
 	        RadTreeView1.AllowEdit = True
 	        ' set the SelectedNode - this node will be edited  
 	        RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)

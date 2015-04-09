@@ -30,7 +30,7 @@ To select a single calendar day assign __RadCalendar SelectedDate__ a __DateTim
 
 #### __[C#] Selecting dates__
 
-{{region selectingDates}}
+{{source=..\SamplesCS\Calendar\Calendar1.cs region=selectingDates}}
 	            radCalendar1.AllowMultipleSelect = true;
 	            radCalendar1.SelectedDates.Add(new DateTime(2006, 10, 20, 0, 0, 0, 0));
 	            radCalendar1.SelectedDates.Add(new DateTime(2006, 10, 19, 0, 0, 0, 0));
@@ -41,7 +41,7 @@ To select a single calendar day assign __RadCalendar SelectedDate__ a __DateTim
 
 #### __[VB.NET] Selecting dates__
 
-{{region selectingDates}}
+{{source=..\SamplesVB\Calendar\Calendar1.vb region=selectingDates}}
 	        RadCalendar1.AllowMultipleSelect = True
 	        RadCalendar1.SelectedDates.Add(New DateTime(2006, 10, 20, 0, 0, 0, 0))
 	        RadCalendar1.SelectedDates.Add(New DateTime(2006, 10, 19, 0, 0, 0, 0))
@@ -54,7 +54,7 @@ You may also use the SelectedDates.AddRange() method to add an array of DateTime
 
 #### __[C#] Using SelectedDates.AddRange()__
 
-{{region usingAddRange}}
+{{source=..\SamplesCS\Calendar\Calendar1.cs region=usingAddRange}}
 	            radCalendar1.SelectedDate = new System.DateTime(2007, 9, 17, 0, 0, 0, 0);
 	            radCalendar1.SelectedDates.AddRange(new DateTime[] { new DateTime(2007, 9, 17, 0, 0, 0, 0) });
 	{{endregion}}
@@ -63,7 +63,7 @@ You may also use the SelectedDates.AddRange() method to add an array of DateTime
 
 #### __[VB.NET] Using SelectedDates.AddRange()__
 
-{{region usingAddRange}}
+{{source=..\SamplesVB\Calendar\Calendar1.vb region=usingAddRange}}
 	        RadCalendar1.SelectedDate = New Date(2007, 9, 17, 0, 0, 0, 0)
 	        RadCalendar1.SelectedDates.AddRange(New Date() {New Date(2007, 9, 17, 0, 0, 0, 0)})
 	{{endregion}}

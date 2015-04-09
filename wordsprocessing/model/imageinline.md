@@ -26,7 +26,7 @@ You can use the following code snippet to create an ImageInline and add it to a 
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-imageinline_0}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingImageInline.cs region=radwordsprocessing-model-imageinline_0}}
 	            ImageInline imageInline = new ImageInline(document);
 	            paragraph.Inlines.Add(imageInline);
 	{{endregion}}
@@ -35,7 +35,7 @@ You can use the following code snippet to create an ImageInline and add it to a 
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-imageinline_0}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_0}}
 	            Dim imageInline As New ImageInline(document)
 	            paragraph.Inlines.Add(imageInline)
 	            '#End Region
@@ -80,7 +80,7 @@ You can add an image at a specific index in the __Inlines__ collection of a para
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-imageinline_1}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingImageInline.cs region=radwordsprocessing-model-imageinline_1}}
 	            ImageInline imageInline = new ImageInline(document);
 	            paragraph.Inlines.Insert(0, imageInline);
 	{{endregion}}
@@ -89,7 +89,7 @@ You can add an image at a specific index in the __Inlines__ collection of a para
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-imageinline_1}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_1}}
 	            Dim imageInline As New ImageInline(document)
 	            paragraph.Inlines.Insert(0, imageInline)
 	            '#End Region
@@ -124,7 +124,7 @@ You can also use the __AddImageInline()__ method of the __Inlines__ collection o
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-imageinline_2}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingImageInline.cs region=radwordsprocessing-model-imageinline_2}}
 	            ImageInline imageInline = paragraph.Inlines.AddImageInline();
 	{{endregion}}
 
@@ -132,7 +132,7 @@ You can also use the __AddImageInline()__ method of the __Inlines__ collection o
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-imageinline_2}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_2}}
 	            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
 	            '#End Region
 	        End Sub
@@ -160,7 +160,7 @@ Inserting __ImageInline__ element in RadFlowDocument can also be achieved with
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-imageinline_3}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingImageInline.cs region=radwordsprocessing-model-imageinline_3}}
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
 	
 	            using (Stream stream = this.GetResourceStream("Telerik_logo.png"))
@@ -173,7 +173,7 @@ Inserting __ImageInline__ element in RadFlowDocument can also be achieved with
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-imageinline_3}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_3}}
 	            Dim editor As New RadFlowDocumentEditor(document)
 	
 	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")

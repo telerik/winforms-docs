@@ -22,7 +22,7 @@ For example, the code snippet below sets the width of an image column named "Pic
 
 #### __[C#] Accessing RadGridView columns__
 
-{{region accessingColumns}}
+{{source=..\SamplesCS\GridView\Columns\AccessingAndIteratingThroughColumns.cs region=accessingColumns}}
 	            ((GridViewImageColumn)this.radGridView1.Columns["Picture"]).Width = 110;
 	{{endregion}}
 
@@ -30,7 +30,7 @@ For example, the code snippet below sets the width of an image column named "Pic
 
 #### __[VB.NET] Accessing RadGridView columns__
 
-{{region accessingColumns}}
+{{source=..\SamplesVB\GridView\Columns\AccessingAndIteratingThroughColumns.vb region=accessingColumns}}
 	        DirectCast(Me.RadGridView1.Columns("Picture"), GridViewImageColumn).Width = 110
 	{{endregion}}
 
@@ -45,7 +45,7 @@ You can iterate through grid columns by using the __Columns__ collection of Grid
 
 #### __[C#] Iterating through RadGridView columns__
 
-{{region iteratingColumns}}
+{{source=..\SamplesCS\GridView\Columns\AccessingAndIteratingThroughColumns.cs region=iteratingColumns}}
 	            int i = 0;
 	            foreach (GridViewColumn column in radGridView1.Columns)
 	            {
@@ -66,7 +66,7 @@ You can iterate through grid columns by using the __Columns__ collection of Grid
 
 #### __[VB.NET] Iterating through RadGridView columns__
 
-{{region iteratingColumns}}
+{{source=..\SamplesVB\GridView\Columns\AccessingAndIteratingThroughColumns.vb region=iteratingColumns}}
 	        Dim i As Integer = 0
 	        For Each column As GridViewColumn In RadGridView1.Columns
 	            If TypeOf column Is GridViewDataColumn Then
@@ -90,7 +90,7 @@ Iterating through hierarchical RadGridView is possible by iterating through the 
 
 #### __[C#] Iterating through hierarchical RadGridView columns__
 
-{{region iterateColumnsInHierarchy}}
+{{source=..\SamplesCS\GridView\Columns\AccessingAndIteratingThroughColumns2.cs region=iterateColumnsInHierarchy}}
 	        private void AccessingAndIteratingThroughColumns2_Load(object sender, EventArgs e)
 	        {
 	            this.order_DetailsTableAdapter.Fill(this.nwindDataSet.Order_Details);
@@ -129,7 +129,7 @@ Iterating through hierarchical RadGridView is possible by iterating through the 
 
 #### __[VB.NET] Iterating through hierarchical RadGridView columns__
 
-{{region iterateColumnsInHierarchy}}
+{{source=..\SamplesVB\GridView\Columns\AccessingAndIteratingThroughColumns2.vb region=iterateColumnsInHierarchy}}
 	    Private Sub AccessingAndIteratingThroughColumns2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        Me.Order_DetailsTableAdapter.Fill(Me.NwindDataSet.Order_Details)
 	        Me.OrdersTableAdapter.Fill(Me.NwindDataSet.Orders)

@@ -102,7 +102,7 @@ Gets or sets the text associated with Today button.
 
 #### __[C#] Assigning the TodayButton Text__
 
-{{region localizingText}}
+{{source=..\SamplesCS\Calendar\Calendar1.cs region=localizingText}}
 	            this.radCalendar1.TodayButton.Text = "Aujourd'hui";
 	{{endregion}}
 
@@ -110,7 +110,7 @@ Gets or sets the text associated with Today button.
 
 #### __[VB.NET] Assigning the TodayButton Text__
 
-{{region localizingText}}
+{{source=..\SamplesVB\Calendar\Calendar1.vb region=localizingText}}
 	        Me.RadCalendar1.TodayButton.Text = "Aujourd'hui"
 	{{endregion}}
 

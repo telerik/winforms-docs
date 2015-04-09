@@ -22,7 +22,7 @@ This article demonstrates how to customize the trackball labels text and styles.
 
 #### __[C#] __
 
-{{region Trackball}}
+{{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=Trackball}}
 	            ChartTrackballController controler = new ChartTrackballController();
 	            controler.TextNeeded += controler_TextNeeded;
 	
@@ -33,7 +33,7 @@ This article demonstrates how to customize the trackball labels text and styles.
 
 #### __[VB.NET] __
 
-{{region Trackball}}
+{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=Trackball}}
 	        Dim controler As New ChartTrackballController()
 	        AddHandler controler.TextNeeded, AddressOf controler_TextNeeded
 	
@@ -47,7 +47,7 @@ This article demonstrates how to customize the trackball labels text and styles.
 
 #### __[C#] __
 
-{{region TextNeeded}}
+{{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=TextNeeded}}
 	
 	        private Font font = new Font("Segoe Script", 12, FontStyle.Regular);
 	
@@ -71,7 +71,7 @@ This article demonstrates how to customize the trackball labels text and styles.
 
 #### __[VB.NET] __
 
-{{region TextNeeded}}
+{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=TextNeeded}}
 	    Private font As New Font("Segoe Script", 12, FontStyle.Regular)
 	
 	    Private Sub controler_TextNeeded(sender As Object, e As TextNeededEventArgs)

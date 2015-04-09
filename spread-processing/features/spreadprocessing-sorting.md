@@ -112,7 +112,7 @@ __Example 1__ shows how to create a __ValuesSortCondition__.
 
 #### __[C#] Example 1: Create ValuesSortCondition__
 
-{{region radspreadprocessing-features-sorting_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingSorting.cs region=radspreadprocessing-features-sorting_0}}
 	            ValuesSortCondition condition = new ValuesSortCondition(0, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
 	{{endregion}}
 
@@ -120,7 +120,7 @@ __Example 1__ shows how to create a __ValuesSortCondition__.
 
 #### __[VB] Example 1: Create ValuesSortCondition__
 
-{{region radspreadprocessing-features-sorting_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_0}}
 	        Dim condition As New ValuesSortCondition(0, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
 	        '#End Region
 	    End Sub
@@ -186,7 +186,7 @@ __Example 2__ shows how to create a CustomValuesSortCondition.
 
 #### __[C#] Example 2: Create CustomValuesSortCondition__
 
-{{region radspreadprocessing-features-sorting_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingSorting.cs region=radspreadprocessing-features-sorting_1}}
 	            CustomValuesSortCondition condition = new CustomValuesSortCondition(0, new string[] { "regular", "1 day", "2 days", "express" }, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
 	{{endregion}}
 
@@ -194,7 +194,7 @@ __Example 2__ shows how to create a CustomValuesSortCondition.
 
 #### __[VB] Example 2: Create CustomValuesSortCondition__
 
-{{region radspreadprocessing-features-sorting_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_1}}
 	        Dim condition As New CustomValuesSortCondition(0, New String() {"regular", "1 day", "2 days", "express"}, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
 	        '#End Region
 	    End Sub
@@ -250,7 +250,7 @@ __Example 3__ demonstrates how to create a __ForeColorSortCondition__. This cond
 
 #### __[C#] Example 3: Create ForeColorSortCondition__
 
-{{region radspreadprocessing-features-sorting_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingSorting.cs region=radspreadprocessing-features-sorting_2}}
 	            ForeColorSortCondition condition = new ForeColorSortCondition(0, new ThemableColor(Colors.Red), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
 	{{endregion}}
 
@@ -258,7 +258,7 @@ __Example 3__ demonstrates how to create a __ForeColorSortCondition__. This cond
 
 #### __[VB] Example 3: Create ForeColorSortCondition__
 
-{{region radspreadprocessing-features-sorting_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_2}}
 	        Dim condition As New ForeColorSortCondition(0, New ThemableColor(Colors.Red), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
 	        '#End Region
 	    End Sub
@@ -306,7 +306,7 @@ __Example 4__ shows how to create a __FillColorSortCondition__.
 
 #### __[C#] Example 4: Create FillColorSortCondition__
 
-{{region radspreadprocessing-features-sorting_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingSorting.cs region=radspreadprocessing-features-sorting_3}}
 	            FillColorSortCondition condition = new FillColorSortCondition(0, PatternFill.CreateSolidFill(Color.FromRgb(181, 18, 27)), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
 	{{endregion}}
 
@@ -314,7 +314,7 @@ __Example 4__ shows how to create a __FillColorSortCondition__.
 
 #### __[VB] Example 4: Create FillColorSortCondition__
 
-{{region radspreadprocessing-features-sorting_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_3}}
 	        Dim condition As New FillColorSortCondition(0, PatternFill.CreateSolidFill(Color.FromRgb(181, 18, 27)), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
 	        '#End Region
 	    End Sub
@@ -366,7 +366,7 @@ __Example 5__ shows how to create three sorting conditions.
 
 #### __[C#] Example 5: Create Conditions__
 
-{{region radspreadprocessing-features-sorting_4}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingSorting.cs region=radspreadprocessing-features-sorting_4}}
 	            Worksheet worksheet = workbook.ActiveWorksheet;
 	
 	            CustomValuesSortCondition condition1 = new CustomValuesSortCondition(5, new string[] { "regular", "1 day", "2 days", "express" }, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
@@ -378,7 +378,7 @@ __Example 5__ shows how to create three sorting conditions.
 
 #### __[VB] Example 5: Create Conditions__
 
-{{region radspreadprocessing-features-sorting_4}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_4}}
 	        Dim worksheet As Worksheet = workbook.ActiveWorksheet
 	
 	        Dim condition1 As New CustomValuesSortCondition(5, New String() {"regular", "1 day", "2 days", "express"}, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
@@ -409,7 +409,7 @@ Further, __Example 6__ shows how to apply the sorting conditions through the __S
 
 #### __[C#] Example 6: Set Conditions Through SortState__
 
-{{region radspreadprocessing-features-sorting_5}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingSorting.cs region=radspreadprocessing-features-sorting_5}}
 	            worksheet.SortState.Set(new CellRange(3, 0, 17, 7), condition1, condition2, condition3);
 	{{endregion}}
 
@@ -417,7 +417,7 @@ Further, __Example 6__ shows how to apply the sorting conditions through the __S
 
 #### __[VB] Example 6: Set Conditions Through SortState__
 
-{{region radspreadprocessing-features-sorting_5}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_5}}
 	        worksheet.SortState.[Set](New CellRange(3, 0, 17, 7), condition1, condition2, condition3)
 	        '#End Region
 	
@@ -440,7 +440,7 @@ Alternatively, __Example 7__ shows how to apply the sorting conditions through t
 
 #### __[C#] Example 7: Set Conditions Through Selection__
 
-{{region radspreadprocessing-features-sorting_6}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingSorting.cs region=radspreadprocessing-features-sorting_6}}
 	            worksheet.Cells[3, 0, 17, 7].Sort(condition1, condition2, condition3);
 	{{endregion}}
 
@@ -448,7 +448,7 @@ Alternatively, __Example 7__ shows how to apply the sorting conditions through t
 
 #### __[VB] Example 7: Set Conditions Through Selection__
 
-{{region radspreadprocessing-features-sorting_6}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_6}}
 	        worksheet.Cells(3, 0, 17, 7).Sort(condition1, condition2, condition3)
 	        '#End Region
 	    End Sub
@@ -477,7 +477,7 @@ __Example 8__ shows how to celar the sorting.
 
 #### __[C#] Example 8: Clear Sorting__
 
-{{region radspreadprocessing-features-sorting_7}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingSorting.cs region=radspreadprocessing-features-sorting_7}}
 	            worksheet.SortState.Clear();
 	{{endregion}}
 
@@ -485,7 +485,7 @@ __Example 8__ shows how to celar the sorting.
 
 #### __[VB] Example 8: Clear Sorting__
 
-{{region radspreadprocessing-features-sorting_7}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_7}}
 	        worksheet.SortState.Clear()
 	        '#End Region
 	    End Sub

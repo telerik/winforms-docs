@@ -51,7 +51,7 @@ Here is how to create a [RadFlowDocument]({%slug wordsprocessing-model-radflowdo
 
 #### __[C#] __
 
-{{region radwordsprocessing-getting-started_0}}
+{{source=..\SamplesCS\WordsProcessing\WordsProcessingGettingStarted.cs region=radwordsprocessing-getting-started_0}}
 	            RadFlowDocument document = new RadFlowDocument();
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
 	            editor.InsertText("Hello world!");
@@ -61,7 +61,7 @@ Here is how to create a [RadFlowDocument]({%slug wordsprocessing-model-radflowdo
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-getting-started_0}}
+{{source=..\SamplesVB\WordsProcessing\WordsProcessingGettingStarted.vb region=radwordsprocessing-getting-started_0}}
 	            Dim document As New RadFlowDocument()
 	            Dim editor As New RadFlowDocumentEditor(document)
 	            editor.InsertText("Hello world!")
@@ -97,7 +97,7 @@ Exporting the document to Docx file can be achieved with the [DocxFormatProvider
 
 #### __[C#] __
 
-{{region radwordsprocessing-getting-started_1}}
+{{source=..\SamplesCS\WordsProcessing\WordsProcessingGettingStarted.cs region=radwordsprocessing-getting-started_1}}
 	            using (Stream output = new FileStream("output.docx", FileMode.OpenOrCreate))
 	            {
 	                DocxFormatProvider provider = new DocxFormatProvider();
@@ -109,7 +109,7 @@ Exporting the document to Docx file can be achieved with the [DocxFormatProvider
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-getting-started_1}}
+{{source=..\SamplesVB\WordsProcessing\WordsProcessingGettingStarted.vb region=radwordsprocessing-getting-started_1}}
 	            Using output As Stream = New FileStream("output.docx", FileMode.OpenOrCreate)
 	                Dim provider As New DocxFormatProvider()
 	                provider.Export(document, output)

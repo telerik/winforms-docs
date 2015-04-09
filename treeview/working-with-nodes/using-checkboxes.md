@@ -40,7 +40,7 @@ __RadTreeView__ the supports option trees that allows radio buttons and
 
 #### __[C#]__
 
-{{region optionList}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=optionList}}
 	            RadTreeNode Node1 = new RadTreeNode("Node1");
 	            Node1.Expanded = true;
 	            Node1.CheckType = CheckType.RadioButton;
@@ -57,7 +57,7 @@ __RadTreeView__ the supports option trees that allows radio buttons and
 
 #### __[VB.NET]__
 
-{{region optionList}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=optionList}}
 	        Dim Node1 As New RadTreeNode("Node1")
 	        Node1.Expanded = True
 	        Node1.CheckType = ChildListType.OptionList

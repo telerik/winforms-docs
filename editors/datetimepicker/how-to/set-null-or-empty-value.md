@@ -22,7 +22,7 @@ __RadDateTimePicker__ now has __NullableValue__ property which supports *null* v
 
 #### __[C#] Set to null__
 
-{{region SetToNullValue}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=SetToNullValue}}
 	            this.radDateTimePicker1.NullableValue = null;
 	            this.radDateTimePicker1.SetToNullValue();
 	{{endregion}}
@@ -31,7 +31,7 @@ __RadDateTimePicker__ now has __NullableValue__ property which supports *null* v
 
 #### __[VB.NET] Set to null__
 
-{{region SetToNullValue}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=SetToNullValue}}
 	        Me.RadDateTimePicker1.NullableValue = Nothing
 	        Me.RadDateTimePicker1.DateTimePickerElement.SetToNullValue()
 	{{endregion}}
@@ -44,7 +44,7 @@ If you set the __NullText__ property, you can conditionally display a text based
 
 #### __[C#] Setting the NullText property of RadDateTimePicker__
 
-{{region NullText}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=NullText}}
 	            this.radDateTimePicker1.NullText = "No date selected";
 	{{endregion}}
 
@@ -52,7 +52,7 @@ If you set the __NullText__ property, you can conditionally display a text based
 
 #### __[VB.NET] Setting the NullText property of RadDateTimePicker__
 
-{{region NullText}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=NullText}}
 	        Me.RadDateTimePicker1.NullText = "No date selected"
 	{{endregion}}
 
@@ -65,7 +65,7 @@ When the__NullDate__ property value is equal to the control value no text will b
 
 #### __[C#] Setting the NullDate property of RadDateTimePicker__
 
-{{region NullDate}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=NullDate}}
 	            this.radDateTimePicker1.DateTimePickerElement.NullDate = new DateTime(2000, 01, 01);
 	{{endregion}}
 
@@ -73,7 +73,7 @@ When the__NullDate__ property value is equal to the control value no text will b
 
 #### __[VB.NET] Setting the NullDate property of RadDateTimePicker__
 
-{{region NullDate}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=NullDate}}
 	        Me.RadDateTimePicker1.DateTimePickerElement.NullDate = New DateTime(2000, 1, 1)
 	{{endregion}}
 

@@ -26,7 +26,7 @@ The example below creates an __ArrayList__ of generic objects initialized with f
 
 #### __[C#] Simple array class__
 
-{{region bindingToSimpleArrayClass}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=bindingToSimpleArrayClass}}
 	        public class ValueType<T>
 	        {
 	            T item;
@@ -50,7 +50,7 @@ The example below creates an __ArrayList__ of generic objects initialized with f
 
 #### __[VB.NET] Simple array class__
 
-{{region bindingToSimpleArrayClass}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToSimpleArrayClass}}
 	    Public Class ValueType(Of T)
 	        Private item As T
 	        Public Sub New()
@@ -73,7 +73,7 @@ The example below creates an __ArrayList__ of generic objects initialized with f
 
 #### __[C#] Binding to simple array__
 
-{{region bindingToSimpleArray}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=bindingToSimpleArray}}
 	            ArrayList list = new ArrayList();
 	            for (int i = 0; i < 5; i++)
 	            {
@@ -87,7 +87,7 @@ The example below creates an __ArrayList__ of generic objects initialized with f
 
 #### __[VB.NET] Binding to simple array__
 
-{{region bindingToSimpleArray}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToSimpleArray}}
 	        Dim list As New ArrayList()
 	        Dim i As Integer = 0
 	        While i < 5
@@ -114,7 +114,7 @@ The example below defines a "MyObject" class containing one integer and one stri
 
 #### __[C#] Simple object class__
 
-{{region bindingToArrayOfObjectsClass}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=bindingToArrayOfObjectsClass}}
 	        public class MyObject
 	        {
 	            public MyObject(int myInt, string myString)
@@ -141,7 +141,7 @@ The example below defines a "MyObject" class containing one integer and one stri
 
 #### __[VB.NET] Simple object class__
 
-{{region bindingToArrayOfObjectsClass}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToArrayOfObjectsClass}}
 	    Public Class MyObject
 	        Public Sub New(ByVal myInt As Integer, ByVal myString As String)
 	            _myInt = myInt
@@ -172,7 +172,7 @@ The example below defines a "MyObject" class containing one integer and one stri
 
 #### __[C#] Binding to object array__
 
-{{region bindingToArrayOfObjects}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=bindingToArrayOfObjects}}
 	            MyObject[] myArray = new MyObject[2] {new MyObject(1, "object one"), new MyObject(2, "object two") };
 	            radGridView1.DataSource = myArray;
 	{{endregion}}
@@ -181,7 +181,7 @@ The example below defines a "MyObject" class containing one integer and one stri
 
 #### __[VB.NET] Binding to object array__
 
-{{region bindingToArrayOfObjects}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToArrayOfObjects}}
 	        Dim myArray As MyObject() = New MyObject(1) {New MyObject(1, "object one"), New MyObject(2, "object two")}
 	        RadGridView1.DataSource = myArray
 	{{endregion}}
@@ -195,7 +195,7 @@ The code below demonstrates how to use an __ArrayList__ for RadGridView structur
 
 #### __[C#] Binding to array list__
 
-{{region BindingToArrayList}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=BindingToArrayList}}
 			    ArrayList arrayList = new System.Collections.ArrayList();
 	            arrayList.Add(new MyObject(1, "Object one") );
 	            arrayList.Add(new MyObject(2, "Object two") );
@@ -207,7 +207,7 @@ The code below demonstrates how to use an __ArrayList__ for RadGridView structur
 
 #### __[VB.NET] Binding to array list__
 
-{{region BindingToArrayList}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=BindingToArrayList}}
 	        Dim arrayList As New System.Collections.ArrayList()
 	        arrayList.Add(New MyObject(1, "Object one"))
 	        arrayList.Add(New MyObject(2, "Object two"))

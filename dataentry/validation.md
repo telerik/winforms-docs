@@ -26,7 +26,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 
 #### __[C#] __
 
-{{region empl1}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}}
 	        private class Employee
 	        {
 	            public string FirstName
@@ -77,7 +77,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 
 #### __[VB.NET] __
 
-{{region empl1}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}}
 	        Private Class Employee
 	            Public Property FirstName() As String
 	                Get
@@ -172,7 +172,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 
 #### __[C#] __
 
-{{region bind1}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}}
 	            this.radDataEntry1.DataSource = new Employee() 
 	            { 
 	                FirstName = "Sarah",
@@ -188,7 +188,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 
 #### __[VB.NET] __
 
-{{region bind1}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}}
 	            Me.radDataEntry1.DataSource = New Employee() With { _
 	              .FirstName = "Sarah", _
 	              .LastName = "Blake", _
@@ -210,7 +210,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 
 #### __[C#] __
 
-{{region ShowValidationPanel2}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=ShowValidationPanel2}}
 	            this.radDataEntry1.ShowValidationPanel = true;
 	{{endregion}}
 
@@ -218,7 +218,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 
 #### __[VB.NET] __
 
-{{region ShowValidationPanel2}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=ShowValidationPanel2}}
 	            Me.radDataEntry1.ShowValidationPanel = True
 	            '#End Region
 	
@@ -348,7 +348,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 
 #### __[C#] __
 
-{{region ItemValidated}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=ItemValidated}}
 	
 	        void radDataEntry1_ItemValidated(object sender, ItemValidatedEventArgs e)
 	        {
@@ -433,7 +433,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 
 #### __[VB.NET] __
 
-{{region ItemValidated}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=ItemValidated}}
 	
 	        Private Sub radDataEntry1_ItemValidated(sender As Object, e As ItemValidatedEventArgs)
 	            Dim employee As Employee = TryCast(Me.radDataEntry1.CurrentObject, Employee)

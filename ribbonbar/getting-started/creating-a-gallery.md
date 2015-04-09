@@ -55,7 +55,7 @@ Alternatively, you can add the items at run-time. Here is a sample snippet:
 
 #### __[C#] __
 
-{{region snippet1}}
+{{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingAGallery.cs region=snippet1}}
 	            RadGalleryItem blueItem1 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery001);
 	            RadGalleryItem blueItem2 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery002);
 	            RadGalleryItem blueItem3 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery003);
@@ -80,7 +80,7 @@ Alternatively, you can add the items at run-time. Here is a sample snippet:
 
 #### __[VB.NET] __
 
-{{region snippet1}}
+{{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingAGallery.vb region=snippet1}}
 	        Dim blueItem1 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery001)
 	        Dim blueItem2 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery002)
 	        Dim blueItem3 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery003)
@@ -135,7 +135,7 @@ Alternatively, you can add the items at run-time. Here is a sample snippet:
 
 #### __[C#] __
 
-{{region snippet2}}
+{{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingAGallery.cs region=snippet2}}
 	            RadGalleryGroupItem blueGroup = new RadGalleryGroupItem();
 	            blueGroup.Text = "Blue Items Group";
 	            blueGroup.Items.AddRange(blueItem1, blueItem2, blueItem3, blueItem4);
@@ -156,7 +156,7 @@ Alternatively, you can add the items at run-time. Here is a sample snippet:
 
 #### __[VB.NET] __
 
-{{region snippet2}}
+{{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingAGallery.vb region=snippet2}}
 	        Dim blueGroup As New RadGalleryGroupItem()
 	        blueGroup.Text = "Blue Items Group"
 	        blueGroup.Items.AddRange(blueItem1, blueItem2, blueItem3, blueItem4)
@@ -216,7 +216,7 @@ Alternatively, you can create a filter at run-time. Here is a sample snippet:
 
 #### __[C#] __
 
-{{region snippet3}}
+{{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingAGallery.cs region=snippet3}}
 	            RadGalleryGroupFilter all = new RadGalleryGroupFilter();
 	            all.Text = "All Groups";
 	            all.Items.AddRange(blueGroup, greenGroup, purpleGroup);
@@ -239,7 +239,7 @@ Alternatively, you can create a filter at run-time. Here is a sample snippet:
 
 #### __[VB.NET] __
 
-{{region snippet3}}
+{{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingAGallery.vb region=snippet3}}
 	        Dim all As New RadGalleryGroupFilter()
 	        all.Text = "All Groups"
 	        all.Items.AddRange(blueGroup, greenGroup, purpleGroup)
@@ -281,7 +281,7 @@ You can also create tools at run-time. Here is a sample snippet:
 
 #### __[C#] __
 
-{{region snippet4}}
+{{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingAGallery.cs region=snippet4}}
 	            RadMenuButtonItem buttonItem = new RadMenuButtonItem("Click me!");
 	            this.radGalleryElement1.Tools.Add(buttonItem);
 	{{endregion}}
@@ -290,7 +290,7 @@ You can also create tools at run-time. Here is a sample snippet:
 
 #### __[VB.NET] __
 
-{{region snippet4}}
+{{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingAGallery.vb region=snippet4}}
 	        Dim buttonItem As New RadMenuButtonItem("Click me!")
 	        Me.RadGalleryElement1.Tools.Add(buttonItem)
 	{{endregion}}

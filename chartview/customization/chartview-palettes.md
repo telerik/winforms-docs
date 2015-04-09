@@ -24,7 +24,7 @@ To apply one of these predefined palettes all you have to do is execute the foll
 
 #### __[C#]__
 
-{{region palette}}
+{{source=..\SamplesCS\ChartView\Customization\ChartViewPalettes.cs region=palette}}
 	                this.radChartView1.Area.View.Palette = KnownPalette.Metro;
 	{{endregion}}
 
@@ -32,7 +32,7 @@ To apply one of these predefined palettes all you have to do is execute the foll
 
 #### __[VB.NET]__
 
-{{region palette}}
+{{source=..\SamplesVB\ChartView\Customization\ChartViewPalettes.vb region=palette}}
 	        Me.RadChartView1.Area.View.Palette = KnownPalette.Metro
 	        '#End Region
 	
@@ -102,7 +102,7 @@ The predefined palettes consist of 8 palette entries which are applied to the se
 
 #### __[C#]__
 
-{{region sample}}
+{{source=..\SamplesCS\ChartView\Customization\ChartViewPalettes.cs region=sample}}
 	                lineSeria.Palette = KnownPalette.Flower.GlobalEntries[0];
 	                lineSeria.Palette = new PaletteEntry(Color.Yellow, Color.Red);
 	{{endregion}}
@@ -111,7 +111,7 @@ The predefined palettes consist of 8 palette entries which are applied to the se
 
 #### __[VB.NET]__
 
-{{region sample}}
+{{source=..\SamplesVB\ChartView\Customization\ChartViewPalettes.vb region=sample}}
 	            lineSeria.Palette = KnownPalette.Flower.GlobalEntries(0)
 	            lineSeria.Palette = New PaletteEntry(Color.Yellow, Color.Red)
 	            '#End Region
@@ -140,7 +140,7 @@ Predefined palettes cannot be edited , however, you can define your own palettes
 
 #### __[C#]__
 
-{{region customPalette}}
+{{source=..\SamplesCS\ChartView\Customization\ChartViewPalettes.cs region=customPalette}}
 	    public class CustomPalette : ChartPalette
 	    {
 	        public CustomPalette()
@@ -155,7 +155,7 @@ Predefined palettes cannot be edited , however, you can define your own palettes
 
 #### __[VB.NET]__
 
-{{region customPalette}}
+{{source=..\SamplesVB\ChartView\Customization\ChartViewPalettes.vb region=customPalette}}
 	    Public Class CustomPalette
 	        Inherits ChartPalette
 	        Public Sub New()
@@ -172,7 +172,7 @@ and here is how to set the custom palette:
 
 #### __[C#]__
 
-{{region setCustomPalette}}
+{{source=..\SamplesCS\ChartView\Customization\ChartViewPalettes.cs region=setCustomPalette}}
 	           this.radChartView1.Area.View.Palette = new CustomPalette();
 	{{endregion}}
 
@@ -180,7 +180,7 @@ and here is how to set the custom palette:
 
 #### __[VB.NET]__
 
-{{region setCustomPalette}}
+{{source=..\SamplesVB\ChartView\Customization\ChartViewPalettes.vb region=setCustomPalette}}
 	        Me.RadChartView1.Area.View.Palette = New CustomPalette()
 	        '#End Region
 	

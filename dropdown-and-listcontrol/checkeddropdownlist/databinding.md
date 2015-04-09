@@ -26,7 +26,7 @@ First, our model. It must implement the __INotifyPropertyChanged__ interface, so
 
 #### __[C#] Model__
 
-{{region Model}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\DataBinding1.cs region=Model}}
 	        class Model : INotifyPropertyChanged
 	        {
 	            private int id;
@@ -67,7 +67,7 @@ First, our model. It must implement the __INotifyPropertyChanged__ interface, so
 
 #### __[VB.NET] Model__
 
-{{region Model}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\DataBinding1.vb region=Model}}
 	    Private Class Model
 	        Implements INotifyPropertyChanged
 	        Private m_id As Integer
@@ -121,7 +121,7 @@ Now drag a __RadCheckedDropDownList__ to the form and a __RadButton__. The butto
 
 #### __[C#] Model__
 
-{{region DataAndBinding}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\DataBinding1.cs region=DataAndBinding}}
 	        private BindingList<Model> dataSource = new BindingList<Model>();
 	        private Random rnd = new Random();
 	
@@ -160,7 +160,7 @@ Now drag a __RadCheckedDropDownList__ to the form and a __RadButton__. The butto
 
 #### __[VB.NET] Model__
 
-{{region DataAndBinding}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\DataBinding1.vb region=DataAndBinding}}
 	    Private dataSource As New BindingList(Of Model)()
 	    Private rnd As New Random()
 	

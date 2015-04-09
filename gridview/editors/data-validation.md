@@ -32,7 +32,7 @@ The code snippet below demonstrates simple data validation scenario. It is enabl
 
 #### __[C#] Cell validation__
 
-{{region dataValidation}}
+{{source=..\SamplesCS\GridView\Editors\DataValidation1.cs region=dataValidation}}
 	        void radGridView1_CellValidating(object sender, Telerik.WinControls.UI.CellValidatingEventArgs e)
 	        {
 	            GridViewDataColumn column = e.Column as GridViewDataColumn;
@@ -55,7 +55,7 @@ The code snippet below demonstrates simple data validation scenario. It is enabl
 
 #### __[VB.NET] Cell validation__
 
-{{region dataValidation}}
+{{source=..\SamplesVB\GridView\Editors\DataValidation1.vb region=dataValidation}}
 	    Private Sub RadGridView1_CellValidating(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellValidatingEventArgs) Handles RadGridView1.CellValidating
 	        Dim column As GridViewDataColumn = TryCast(e.Column, GridViewDataColumn)
 	        If TypeOf e.Row Is GridViewDataRowInfo AndAlso column IsNot Nothing AndAlso column.Name = "CategoryName" Then

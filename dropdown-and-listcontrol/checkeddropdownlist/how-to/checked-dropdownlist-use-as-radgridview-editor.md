@@ -26,7 +26,7 @@ Add a __RadGridView__ to a Form and add a regular text box column which will use
 
 #### __[C#] Initialize__
 
-{{region InitGrid}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\How-To\UseAsRadGridViewEditor1.cs region=InitGrid}}
 	        
 	        BindingList<MyPart> columnData;
 	        BindingList<MyPart> datasource;
@@ -65,7 +65,7 @@ Add a __RadGridView__ to a Form and add a regular text box column which will use
 
 #### __[VB.NET] Initialize__
 
-{{region InitGrid}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\UseAsRadGridViewEditor1.vb region=InitGrid}}
 	
 	    Private columnData As BindingList(Of MyPart)
 	    Private datasource As BindingList(Of MyPart)
@@ -144,7 +144,7 @@ The next step is to replace the editor the default editor. This can be achieved 
 
 #### __[C#] Change Editor__
 
-{{region Required}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\How-To\UseAsRadGridViewEditor1.cs region=Required}}
 	            
 	        void radGridView1_EditorRequired(object sender, EditorRequiredEventArgs e)
 	        {
@@ -163,7 +163,7 @@ The next step is to replace the editor the default editor. This can be achieved 
 
 #### __[VB.NET] Change Editor__
 
-{{region Required}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\UseAsRadGridViewEditor1.vb region=Required}}
 	
 	    Private Sub radGridView1_EditorRequired(ByVal sender As Object, ByVal e As EditorRequiredEventArgs)
 	        If Me.radGridView1.CurrentColumn.Index = 0 Then
@@ -210,7 +210,7 @@ The final step is the creating of the editor. This can be achieved by creating a
 
 #### __[C#] Editor__
 
-{{region Editor}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\How-To\UseAsRadGridViewEditor1.cs region=Editor}}
 	            
 	    public class GridViewCheckedDropDownListEditor : RadCheckedDropDownListElement
 	    {
@@ -233,7 +233,7 @@ The final step is the creating of the editor. This can be achieved by creating a
 
 #### __[VB.NET] Editor__
 
-{{region Editor}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\UseAsRadGridViewEditor1.vb region=Editor}}
 	
 	Public Class GridViewCheckedDropDownListEditor
 	    Inherits RadCheckedDropDownListElement

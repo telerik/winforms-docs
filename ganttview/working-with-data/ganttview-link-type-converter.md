@@ -50,7 +50,7 @@ This will work fine if your mapping is the same but if you store your link types
 
 #### __[C#] __
 
-{{region CustomLinkTypeConverter}}
+{{source=..\SamplesCS\GanttView\WorkingWithData\LinkTypeConverterExample.cs region=CustomLinkTypeConverter}}
 	    public class MyLinkTypeConverter : LinkTypeConverter
 	    {
 	        public override TasksLinkType ConvertToLinkType(object value)
@@ -95,7 +95,7 @@ This will work fine if your mapping is the same but if you store your link types
 
 #### __[VB.NET] __
 
-{{region CustomLinkTypeConverter}}
+{{source=..\SamplesVB\GanttView\WorkingWithData\LinkTypeConverterExample.vb region=CustomLinkTypeConverter}}
 	Public Class MyLinkTypeConverter
 	    Inherits LinkTypeConverter
 	    Public Overrides Function ConvertToLinkType(value As Object) As TasksLinkType
@@ -139,7 +139,7 @@ Now to use the converter you should assign it to the LinkTypeConverter property 
 
 #### __[C#] __
 
-{{region AssignLinkTypeConverter}}
+{{source=..\SamplesCS\GanttView\WorkingWithData\LinkTypeConverterExample.cs region=AssignLinkTypeConverter}}
 	            this.radGanttView1.LinkTypeConverter = new MyLinkTypeConverter();
 	{{endregion}}
 
@@ -147,7 +147,7 @@ Now to use the converter you should assign it to the LinkTypeConverter property 
 
 #### __[VB.NET] __
 
-{{region AssignLinkTypeConverter}}
+{{source=..\SamplesVB\GanttView\WorkingWithData\LinkTypeConverterExample.vb region=AssignLinkTypeConverter}}
 	        Me.RadGanttView1.LinkTypeConverter = New MyLinkTypeConverter()
 	{{endregion}}
 

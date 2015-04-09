@@ -30,7 +30,7 @@ The RadPivotGrid has two public methods available for printing – __Print()__ a
 
 #### __[C#] __
 
-{{region Print}}
+{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=Print}}
 	            this.radPivotGrid1.Print();
 	            this.radPivotGrid1.Print(true);
 	{{endregion}}
@@ -39,7 +39,7 @@ The RadPivotGrid has two public methods available for printing – __Print()__ a
 
 #### __[VB.NET] __
 
-{{region Print}}
+{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=Print}}
 	        Me.radPivotGrid1.Print()
 	        Me.radPivotGrid1.Print(True)
 	        '#End Region
@@ -130,7 +130,7 @@ The other available method is __PrintPreview()__. It opens a new RadPrintPreview
 
 #### __[C#] __
 
-{{region PrintPreview}}
+{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=PrintPreview}}
 	            this.radPivotGrid1.PrintPreview();
 	{{endregion}}
 
@@ -138,7 +138,7 @@ The other available method is __PrintPreview()__. It opens a new RadPrintPreview
 
 #### __[VB.NET] __
 
-{{region PrintPreview}}
+{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=PrintPreview}}
 	        Me.radPivotGrid1.PrintPreview()
 	        '#End Region
 	    End Sub

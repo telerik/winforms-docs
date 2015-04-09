@@ -52,7 +52,7 @@ Here is how to set properties of the LinearAxes:
 
 #### __[C#] __
 
-{{region axis}}
+{{source=..\SamplesCS\ChartView\Axes\LinearAxisForm.cs region=axis}}
 	            ScatterSeries series = new ScatterSeries();
 	            series.DataPoints.Add(new ScatterDataPoint(5, 5));
 	            series.DataPoints.Add(new ScatterDataPoint(4, 2));
@@ -78,7 +78,7 @@ Here is how to set properties of the LinearAxes:
 
 #### __[VB.NET] __
 
-{{region axis}}
+{{source=..\SamplesVB\ChartView\Axes\LinearAxisForm.vb region=axis}}
 	        Dim series As New ScatterSeries()
 	        series.DataPoints.Add(New ScatterDataPoint(5, 5))
 	        series.DataPoints.Add(New ScatterDataPoint(4, 2))

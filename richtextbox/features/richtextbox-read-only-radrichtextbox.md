@@ -18,7 +18,7 @@ To make the RadRichTextBox read only, you have to set its __IsReadOnly__ propert
 
 #### __[C#] Read only mode__
 
-{{region ReadOnly}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxReadOnly.cs region=ReadOnly}}
 	            radRichTextBox1.IsReadOnly = true;
 	{{endregion}}
 
@@ -26,7 +26,7 @@ To make the RadRichTextBox read only, you have to set its __IsReadOnly__ propert
 
 #### __[VB.NET] Read only mode__
 
-{{region ReadOnly}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxReadOnly.vb region=ReadOnly}}
 	        RadRichTextBox1.IsReadOnly = True
 	{{endregion}}
 

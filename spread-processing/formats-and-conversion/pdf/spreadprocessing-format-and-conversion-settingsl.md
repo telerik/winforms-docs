@@ -34,7 +34,7 @@ The following example shows how to export the Entire Workbook without ignoring t
 
 #### __[C#] Example 1: Export Entire Workbook__
 
-{{region radspreadprocessing-formats-and-conversion-pdf-settings_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingPdfSettings.cs region=radspreadprocessing-formats-and-conversion-pdf-settings_0}}
 	                PdfFormatProvider provider = new PdfFormatProvider();
 	                provider.ExportSettings = new PdfExportSettings(ExportWhat.EntireWorkbook, false);
 	{{endregion}}
@@ -43,7 +43,7 @@ The following example shows how to export the Entire Workbook without ignoring t
 
 #### __[VB NET] Example 1: Export Entire Workbook__
 
-{{region radspreadprocessing-formats-and-conversion-pdf-settings_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingPdfSettings.vb region=radspreadprocessing-formats-and-conversion-pdf-settings_0}}
 	            Dim provider As New PdfFormatProvider()
 	            provider.ExportSettings = New PdfExportSettings(ExportWhat.EntireWorkbook, False)
 	            '#End Region
@@ -67,7 +67,7 @@ The following example shows how to export only two selected ranges from the acti
 
 #### __[C#] Example 1: Export Entire Workbook__
 
-{{region radspreadprocessing-formats-and-conversion-pdf-settings_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingPdfSettings.cs region=radspreadprocessing-formats-and-conversion-pdf-settings_1}}
 	                CellRange[] rangesToExport = new CellRange[]
 	                {
 	                    new CellRange(2, 3, 10, 15),
@@ -82,7 +82,7 @@ The following example shows how to export only two selected ranges from the acti
 
 #### __[VB NET] Example 1: Export Entire Workbook__
 
-{{region radspreadprocessing-formats-and-conversion-pdf-settings_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingPdfSettings.vb region=radspreadprocessing-formats-and-conversion-pdf-settings_1}}
 	            Dim rangesToExport As CellRange() = New CellRange() {New CellRange(2, 3, 10, 15), New CellRange(4, 5, 8, 20)}
 	
 	            Dim provider As New PdfFormatProvider()

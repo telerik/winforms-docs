@@ -37,7 +37,7 @@ __Example 1__ shows how to create and specify particular setting to a CsvFormatP
 
 #### __[C#] Example 1: Use CsvSettings__
 
-{{region radspreadprocessing-formats-and-conversion-csv-settings_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingCsvSettings.cs region=radspreadprocessing-formats-and-conversion-csv-settings_0}}
 	                CsvFormatProvider provider = new CsvFormatProvider();
 	                provider.Settings.Delimiter = ';';
 	                provider.Settings.Quote = '^';
@@ -49,7 +49,7 @@ __Example 1__ shows how to create and specify particular setting to a CsvFormatP
 
 #### __[VB NET] Example 1: Use CsvSettings__
 
-{{region radspreadprocessing-formats-and-conversion-csv-settings_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingCsvSettings.vb region=radspreadprocessing-formats-and-conversion-csv-settings_0}}
 	        Dim provider As New CsvFormatProvider()
 	        provider.Settings.Delimiter = ";"c
 	        provider.Settings.Quote = "^"c

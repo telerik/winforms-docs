@@ -36,7 +36,7 @@ You can also add __RadDropDownButton__ items in code at Run Time. The following
 
 #### __[C#] Adding RadDropDownButton items__
 
-{{region creatingMenuItem}}
+{{source=..\SamplesCS\Buttons\DropDownButton.cs region=creatingMenuItem}}
 	
 	        void Form1_Load(object sender, EventArgs e)
 	        {
@@ -58,7 +58,7 @@ You can also add __RadDropDownButton__ items in code at Run Time. The following
 
 #### __[VB.NET] Adding RadDropDownButton items__
 
-{{region creatingMenuItem}}
+{{source=..\SamplesVB\Buttons\DropDownButton.vb region=creatingMenuItem}}
 	
 	    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        Dim myRadMenuItem As New RadMenuItem()
@@ -79,7 +79,7 @@ Similarly, you can create item hierarchies in code by adding new __RadMenuItem__
 
 #### __[C#] Adding sub items__
 
-{{region itemsHierarchy}}
+{{source=..\SamplesCS\Buttons\DropDownButton1.cs region=itemsHierarchy}}
 	
 	using Telerik.WinControls.UI;
 	
@@ -109,7 +109,7 @@ Similarly, you can create item hierarchies in code by adding new __RadMenuItem__
 
 #### __[VB.NET] Adding sub items__
 
-{{region itemsHierarchy}}
+{{source=..\SamplesVB\Buttons\DropDownButton1.vb region=itemsHierarchy}}
 	
 	Imports System.Windows.Forms
 	

@@ -26,7 +26,7 @@ You can handle the __ToggleStateChanged__ event of __RadToggleButton__to take ac
 
 #### __[C#] Handling the ToggleStateChanged event__
 
-{{region handlingToggleStateChanged}}
+{{source=..\SamplesCS\Buttons\ToggleButton.cs region=handlingToggleStateChanged}}
 	
 	        void radToggleButton1_ToggleStateChanged(object sender, StateChangedEventArgs args)
 	        {
@@ -39,7 +39,7 @@ You can handle the __ToggleStateChanged__ event of __RadToggleButton__to take ac
 
 #### __[VB.NET] Handling the ToggleStateChanged event__
 
-{{region handlingToggleStateChanged}}
+{{source=..\SamplesVB\Buttons\ToggleButton.vb region=handlingToggleStateChanged}}
 	
 	    Private Sub radToggleButton1_ToggleStateChanged(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.StateChangedEventArgs)
 	        MessageBox.Show(args.ToggleState.ToString())
@@ -73,7 +73,7 @@ The example below allows a __RadToggleButton__to toggle only
 
 #### __[C#] Handling the ToggleStateChanging event__
 
-{{region handlingToggleStateChanging}}
+{{source=..\SamplesCS\Buttons\ToggleButton.cs region=handlingToggleStateChanging}}
 	
 	        private void radToggleButton2_ToggleStateChanging(object sender,
 	           Telerik.WinControls.UI.StateChangingEventArgs args)
@@ -95,7 +95,7 @@ The example below allows a __RadToggleButton__to toggle only
 
 #### __[VB.NET] Handling the ToggleStateChanging event__
 
-{{region handlingToggleStateChanging}}
+{{source=..\SamplesVB\Buttons\ToggleButton.vb region=handlingToggleStateChanging}}
 	
 	    Private Sub radToggleButton2_ToggleStateChanging(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.StateChangingEventArgs)
 	        args.Cancel = True

@@ -14,14 +14,12 @@ position: 3
 
 __RadDiagram__ gives you the ability to Cut, Copy and Paste __RadDiagramItems__ within an application.
 
-## AllowCopy, AllowCut, AllowPaste
-
-By default, the __AllowCopy__, __AllowCut__ and __AllowPaste__ 
-        properties are set to *True*  but you can set then to False in order to disable these Clipboard operations.
-
 ## Cut, Copy, Paste with keyboard
 
-In order to Cut, Copy or Paste particular __RadDiagramItems__  you have to select them and use the standard keyboard combinations:
+By default, the __AllowCopy__, __AllowCut__ and __AllowPaste__ 
+        properties are set to *true*  but you can set then to *false* in order to disable these Clipboard operations.
+
+In order to cut, copy or paste particular __RadDiagramItems__  you have to select them and use the standard keyboard combinations:
 
 * __(Ctrl + C)__ - copies the selected items.
             
@@ -40,7 +38,7 @@ You can use the __DiagramCommands__ "Cut", "Copy" and "Paste" in order to perfor
 
 #### __[C#] __
 
-{{region ClipboardCommands}}
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=ClipboardCommands}}
 	            
 	            this.radDiagram1.SelectedItem = shape1;
 	            this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Copy, "");
@@ -55,7 +53,7 @@ You can use the __DiagramCommands__ "Cut", "Copy" and "Paste" in order to perfor
 
 #### __[VB.NET] __
 
-{{region ClipboardCommands}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=ClipboardCommands}}
 	        Me.RadDiagram1.SelectedItem = shape1
 	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Copy, "")
 	        Me.RadDiagram2.DiagramElement.TryExecuteCommand(DiagramCommands.Paste, "")
@@ -214,6 +212,21 @@ You can use the __DiagramCommands__ "Cut", "Copy" and "Paste" in order to perfor
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 

@@ -64,7 +64,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[C#]__
 
-{{region student}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\Student.cs region=student}}
 	    public class Student
 	    {
 	        int m_id;
@@ -120,7 +120,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[VB.NET]__
 
-{{region student}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\Student.vb region=student}}
 	Public Class Student
 	    Private m_id As Integer
 	    Private m_name As String
@@ -171,7 +171,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[C#]__
 
-{{region list}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=list}}
 	        List<Student> collectionOfStudents = new List<Student>();
 	
 	        protected override void OnLoad(EventArgs e)
@@ -191,7 +191,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[VB.NET]__
 
-{{region list}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=list}}
 	    Private collectionOfStudents As New List(Of Student)()
 	
 	    Protected Overrides Sub OnLoad(ByVal e As EventArgs)
@@ -251,7 +251,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[C#]__
 
-{{region buttonRemove}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=buttonRemove}}
 	        private void btnDeleteRecord_Click(object sender, EventArgs e)
 	        {
 	            collectionOfStudents.RemoveAt(0);
@@ -262,7 +262,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[VB.NET]__
 
-{{region buttonRemove}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=buttonRemove}}
 	    Private Sub btnDeleteRecord_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        collectionOfStudents.RemoveAt(0)
 	    End Sub
@@ -334,7 +334,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[C#]__
 
-{{region bindingList}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=bindingList}}
 	        BindingList<Student> collectionOfStudents = new BindingList<Student>();
 	
 	        protected override void OnLoad(EventArgs e)
@@ -354,7 +354,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[VB.NET]__
 
-{{region bindingList}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=bindingList}}
 	        Private collectionOfStudents As New BindingList(Of Student)()
 	
 	        Protected Overrides Sub OnLoad(ByVal e As EventArgs)
@@ -381,7 +381,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[C#]__
 
-{{region buttonRemove}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=buttonRemove}}
 	        private void btnDeleteRecord_Click(object sender, EventArgs e)
 	        {
 	            collectionOfStudents.RemoveAt(0);
@@ -392,7 +392,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[VB.NET]__
 
-{{region buttonRemove}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=buttonRemove}}
 	    Private Sub btnDeleteRecord_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        collectionOfStudents.RemoveAt(0)
 	    End Sub
@@ -437,7 +437,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[C#]__
 
-{{region setGrade}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=setGrade}}
 	        private void btnSetGrade_Click(object sender, EventArgs e)
 	        {
 	            collectionOfStudents[collectionOfStudents.Count - 1].Grade = "F";
@@ -448,7 +448,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[VB.NET]__
 
-{{region setGrade}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=setGrade}}
 	    Private Sub btnSetGrade_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        collectionOfStudents(collectionOfStudents.Count - 1).Grade = "F"
 	    End Sub
@@ -516,7 +516,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[C#]__
 
-{{region student}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\StudentDynamic.cs region=student}}
 	    public class Student : System.ComponentModel.INotifyPropertyChanged
 	    {
 	        int m_id;
@@ -594,7 +594,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[VB.NET]__
 
-{{region student}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\StudentDynamic.vb region=student}}
 	    Public Class Student
 	        Implements System.ComponentModel.INotifyPropertyChanged
 	        Private m_id As Integer
@@ -661,7 +661,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[C#]__
 
-{{region bindingList}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=bindingList}}
 	        BindingList<Student> collectionOfStudents = new BindingList<Student>();
 	
 	        protected override void OnLoad(EventArgs e)
@@ -681,7 +681,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[VB.NET]__
 
-{{region bindingList}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=bindingList}}
 	        Private collectionOfStudents As New BindingList(Of Student)()
 	
 	        Protected Overrides Sub OnLoad(ByVal e As EventArgs)
@@ -708,7 +708,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[C#]__
 
-{{region buttonRemove}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=buttonRemove}}
 	        private void btnDeleteRecord_Click(object sender, EventArgs e)
 	        {
 	            collectionOfStudents.RemoveAt(0);
@@ -719,7 +719,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[VB.NET]__
 
-{{region buttonRemove}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=buttonRemove}}
 	    Private Sub btnDeleteRecord_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        collectionOfStudents.RemoveAt(0)
 	    End Sub
@@ -764,7 +764,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[C#]__
 
-{{region setGrade}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=setGrade}}
 	        private void btnSetGrade_Click(object sender, EventArgs e)
 	        {
 	            collectionOfStudents[collectionOfStudents.Count - 1].Grade = "F";
@@ -775,7 +775,7 @@ RadGridView is capable of fetching bindable properties and data.
 
 #### __[VB.NET]__
 
-{{region setGrade}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=setGrade}}
 	    Private Sub btnSetGrade_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        collectionOfStudents(collectionOfStudents.Count - 1).Grade = "F"
 	    End Sub

@@ -64,7 +64,7 @@ __Example 1__ demonstrates how you can use the RegisterFont() method.
 
 #### __[C#] Example 1: Register font__
 
-{{region radpdfprocessing-concepts-fonts_0}}
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsFonts.cs region=radpdfprocessing-concepts-fonts_0}}
 	            FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data);
 	{{endregion}}
 
@@ -72,7 +72,7 @@ __Example 1__ demonstrates how you can use the RegisterFont() method.
 
 #### __[VB.NET] Example 1: Register font__
 
-{{region radpdfprocessing-concepts-fonts_0}}
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsFonts.vb region=radpdfprocessing-concepts-fonts_0}}
 	        FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data)
 	        '	#End Region
 	
@@ -95,7 +95,7 @@ __Example 2__ shows how to create a font using the FontsRepository.
 
 #### __[C#] Example 2: Create FontBase__
 
-{{region radpdfprocessing-concepts-fonts_1}}
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsFonts.cs region=radpdfprocessing-concepts-fonts_1}}
 	            FontBase font;
 	            bool success = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, out font);
 	{{endregion}}
@@ -104,7 +104,7 @@ __Example 2__ shows how to create a font using the FontsRepository.
 
 #### __[VB.NET] Example 2: Create FontBase__
 
-{{region radpdfprocessing-concepts-fonts_1}}
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsFonts.vb region=radpdfprocessing-concepts-fonts_1}}
 	        Dim font As FontBase
 	        Dim success As Boolean = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, font)
 	        '	#End Region

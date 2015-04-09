@@ -35,7 +35,7 @@ The first step would be to just create the custom class
 
 #### __[C#]__
 
-{{region class}}
+{{source=..\SamplesCS\TPF\Printing support\CreatePrintablePanel.cs region=class}}
 	    
 	    public class PrintablePanel : RadPanel, IPrintable
 	    
@@ -45,7 +45,7 @@ The first step would be to just create the custom class
 
 #### __[VB.NET]__
 
-{{region class}}
+{{source=..\SamplesVB\TPF\Printing support\CreatePrintablePanel.vb region=class}}
 	
 	Public Class PrintablePanel
 	    Inherits RadPanel
@@ -119,7 +119,7 @@ For the current example the __BeginPrint__ and __EndPrint__ methods should just 
 
 #### __[C#]__
 
-{{region beginEnd}}
+{{source=..\SamplesCS\TPF\Printing support\CreatePrintablePanel.cs region=beginEnd}}
 	            
 	        public int BeginPrint(RadPrintDocument sender, PrintEventArgs args)
 	        {
@@ -137,7 +137,7 @@ For the current example the __BeginPrint__ and __EndPrint__ methods should just 
 
 #### __[VB.NET]__
 
-{{region beginEnd}}
+{{source=..\SamplesVB\TPF\Printing support\CreatePrintablePanel.vb region=beginEnd}}
 	
 	    Public Function BeginPrint(sender As RadPrintDocument, args As PrintEventArgs) As Integer Implements IPrintable.BeginPrint
 	
@@ -202,7 +202,7 @@ In the __GetSettingsDialog__ method you should just return an new settings dialo
 
 #### __[C#]__
 
-{{region dialog}}
+{{source=..\SamplesCS\TPF\Printing support\CreatePrintablePanel.cs region=dialog}}
 	
 	        public Form GetSettingsDialog(RadPrintDocument document)
 	        {
@@ -215,7 +215,7 @@ In the __GetSettingsDialog__ method you should just return an new settings dialo
 
 #### __[VB.NET]__
 
-{{region dialog}}
+{{source=..\SamplesVB\TPF\Printing support\CreatePrintablePanel.vb region=dialog}}
 	
 	    Public Function GetSettingsDialog(document As RadPrintDocument) As Form Implements IPrintable.GetSettingsDialog
 	        Return New PrintSettingsDialog(document)
@@ -256,7 +256,7 @@ The __PrintPage__ method is the place where the panel actual would be converted 
 
 #### __[C#]__
 
-{{region page}}
+{{source=..\SamplesCS\TPF\Printing support\CreatePrintablePanel.cs region=page}}
 	            
 	        public bool PrintPage(int pageNumber, RadPrintDocument sender, PrintPageEventArgs args)
 	        {
@@ -272,7 +272,7 @@ The __PrintPage__ method is the place where the panel actual would be converted 
 
 #### __[VB.NET]__
 
-{{region page}}
+{{source=..\SamplesVB\TPF\Printing support\CreatePrintablePanel.vb region=page}}
 	
 	    Public Function PrintPage(pageNumber As Integer, sender As RadPrintDocument, args As PrintPageEventArgs) As Boolean Implements IPrintable.PrintPage
 	        Dim bmp As New Bitmap(Me.Width, Me.Height)
@@ -324,7 +324,7 @@ Besides the interface methods implementation you can create the __Print__ and __
 
 #### __[C#]__
 
-{{region print}}
+{{source=..\SamplesCS\TPF\Printing support\CreatePrintablePanel.cs region=print}}
 	            
 	        public void Print()
 	        {
@@ -346,7 +346,7 @@ Besides the interface methods implementation you can create the __Print__ and __
 
 #### __[VB.NET]__
 
-{{region print}}
+{{source=..\SamplesVB\TPF\Printing support\CreatePrintablePanel.vb region=print}}
 	
 	    Public Sub Print()
 	        Dim doc As RadPrintDocument = Me.CreatePrintDocument()
@@ -379,7 +379,7 @@ The final method left is the __CreatePrintDocument__. It returns a new RadPrintD
 
 #### __[C#]__
 
-{{region create}}
+{{source=..\SamplesCS\TPF\Printing support\CreatePrintablePanel.cs region=create}}
 	
 	        private RadPrintDocument CreatePrintDocument()
 	        {
@@ -394,7 +394,7 @@ The final method left is the __CreatePrintDocument__. It returns a new RadPrintD
 
 #### __[VB.NET]__
 
-{{region create}}
+{{source=..\SamplesVB\TPF\Printing support\CreatePrintablePanel.vb region=create}}
 	
 	    Private Function CreatePrintDocument() As RadPrintDocument
 	        Dim doc As New RadPrintDocument()

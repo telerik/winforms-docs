@@ -27,7 +27,7 @@ The report filters are displayed as descriptor elements in the report filters ar
 
 #### __[C#] __
 
-{{region ShowFilterArea}}
+{{source=..\SamplesCS\PivotGrid\Filtering\PivotGridReportFiltering.cs region=ShowFilterArea}}
 	            this.radPivotGrid1.ShowFilterArea = true;
 	{{endregion}}
 
@@ -35,7 +35,7 @@ The report filters are displayed as descriptor elements in the report filters ar
 
 #### __[VB.NET] __
 
-{{region ShowFilterArea}}
+{{source=..\SamplesVB\PivotGrid\Filtering\PivotGridReportFiltering.vb region=ShowFilterArea}}
 	        Me.radPivotGrid1.ShowFilterArea = True
 	        '#End Region
 	
@@ -99,7 +99,7 @@ The contents of the FilterDescriptions collection can also be edited at runtime 
 
 #### __[C#] __
 
-{{region PropertyFilterDescription}}
+{{source=..\SamplesCS\PivotGrid\Filtering\PivotGridReportFiltering.cs region=PropertyFilterDescription}}
 	            PropertyFilterDescription description = new PropertyFilterDescription(); 
 	            ComparisonCondition condition = new ComparisonCondition();
 	
@@ -117,7 +117,7 @@ The contents of the FilterDescriptions collection can also be edited at runtime 
 
 #### __[VB.NET] __
 
-{{region PropertyFilterDescription}}
+{{source=..\SamplesVB\PivotGrid\Filtering\PivotGridReportFiltering.vb region=PropertyFilterDescription}}
 	        Dim description As New PropertyFilterDescription()
 	        Dim condition As New ComparisonCondition()
 	
@@ -164,7 +164,7 @@ The __Condition__ property of the __PropertyFilterDescription__ holds the
 
 #### __[C#] __
 
-{{region SetCondition}}
+{{source=..\SamplesCS\PivotGrid\Filtering\PivotGridReportFiltering.cs region=SetCondition}}
 	            SetCondition setCondition = new SetCondition();
 	
 	            setCondition.Comparison = SetComparison.Includes;
@@ -177,7 +177,7 @@ The __Condition__ property of the __PropertyFilterDescription__ holds the
 
 #### __[VB.NET] __
 
-{{region SetCondition}}
+{{source=..\SamplesVB\PivotGrid\Filtering\PivotGridReportFiltering.vb region=SetCondition}}
 	        Dim setCondition As New SetCondition()
 	
 	        setCondition.Comparison = SetComparison.Includes

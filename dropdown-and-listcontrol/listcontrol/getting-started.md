@@ -59,7 +59,7 @@ how to react to a user choice in code.
 
 #### __[C#] Handling the SelectedIndexChanged event__
 
-{{region handlingSelectedIndexChanged}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=handlingSelectedIndexChanged}}
 	        void radListControl1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
 	        {
 	            RadListDataItem item = this.radListControl1.SelectedItem as RadListDataItem;
@@ -71,7 +71,7 @@ how to react to a user choice in code.
 
 #### __[VB.NET] Handling the SelectedIndexChanged event__
 
-{{region handlingSelectedIndexChanged}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=handlingSelectedIndexChanged}}
 	    Private Sub radListControl1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
 	        Dim item As RadListDataItem = TryCast(Me.radListControl1.SelectedItem, RadListDataItem)
 	        radLabel1.Text = "Selected control: " & item.Text

@@ -52,7 +52,7 @@ Additionally, you can enable the display of line numbers and the alternating lin
 
 #### __[C#] __
 
-{{region insert}}
+{{source=..\SamplesCS\RichTextEditor\Features\CodeBlock.cs region=insert}}
 	            
 	            string code = "this.IsCodeBlock = true;\nthis.IsCodeBlock = false;\nthis.IsCodeBlock = true;";
 	            CodeFormattingSettings formattingSettings = new CodeFormattingSettings(CodeLanguages.CSharp);
@@ -67,7 +67,7 @@ Additionally, you can enable the display of line numbers and the alternating lin
 
 #### __[VB.NET] __
 
-{{region insert}}
+{{source=..\SamplesVB\RichTextEditor\Features\CodeBlock.vb region=insert}}
 	
 	        Dim code As String = "this.IsCodeBlock = true;" & ControlChars.Lf & "this.IsCodeBlock = false;" & ControlChars.Lf & "this.IsCodeBlock = true;"
 	        Dim formattingSettings As New CodeFormattingSettings(CodeLanguages.CSharp)
@@ -113,7 +113,7 @@ To remove the code block you can use the __DeleteCodeBlock()__ method of
 
 #### __[C#] __
 
-{{region delete}}
+{{source=..\SamplesCS\RichTextEditor\Features\CodeBlock.cs region=delete}}
 	            
 	            IEnumerable<CodeAnnotationRangeStart> markers = this.radRichTextEditor1.Document.GetAnnotationMarkersOfType<CodeAnnotationRangeStart>();
 	            this.radRichTextEditor1.DeleteCodeBlock(markers.First());
@@ -124,7 +124,7 @@ To remove the code block you can use the __DeleteCodeBlock()__ method of
 
 #### __[VB.NET] __
 
-{{region delete}}
+{{source=..\SamplesVB\RichTextEditor\Features\CodeBlock.vb region=delete}}
 	
 	        Dim markers As IEnumerable(Of CodeAnnotationRangeStart) = Me.radRichTextEditor1.Document.GetAnnotationMarkersOfType(Of CodeAnnotationRangeStart)()
 	        Me.radRichTextEditor1.DeleteCodeBlock(markers.First())
@@ -174,7 +174,7 @@ You can also register or change which style will be used for which classificatio
 
 #### __[C#] __
 
-{{region js}}
+{{source=..\SamplesCS\RichTextEditor\Features\CodeBlock.cs region=js}}
 	            
 	            StyleDefinition commentJS = new StyleDefinition("CommentJS", StyleType.Character);
 	            commentJS.SpanProperties.ForeColor = Colors.Gray;
@@ -189,7 +189,7 @@ You can also register or change which style will be used for which classificatio
 
 #### __[VB.NET] __
 
-{{region js}}
+{{source=..\SamplesVB\RichTextEditor\Features\CodeBlock.vb region=js}}
 	
 	        Dim commentJS As New StyleDefinition("CommentJS", StyleType.Character)
 	        commentJS.SpanProperties.ForeColor = Colors.Gray

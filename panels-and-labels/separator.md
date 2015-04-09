@@ -31,7 +31,7 @@ Follows a small sample, which demonstrates how to take advantage of the function
 
 #### __[C#] Customize RadSeparator__
 
-{{region separatorExample}}
+{{source=..\SamplesCS\PanelsAndLabels\Separator\Separator.cs region=separatorExample}}
 	            radSeparator1.ShadowOffset = new Point(10, 0);
 	            radSeparator1.SeparatorElement.Line1.LineWidth = 5;
 	            radSeparator1.SeparatorElement.Line2.LineWidth = 5;
@@ -57,7 +57,7 @@ Follows a small sample, which demonstrates how to take advantage of the function
 
 #### __[VB.NET] Customize RadSeparator__
 
-{{region separatorExample}}
+{{source=..\SamplesVB\PanelsAndLabels\Separator\Separator.vb region=separatorExample}}
 	        RadSeparator1.ShadowOffset = New Point(10, 0)
 	        RadSeparator1.SeparatorElement.Line1.LineWidth = 5
 	        RadSeparator1.SeparatorElement.Line2.LineWidth = 5

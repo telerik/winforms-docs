@@ -38,7 +38,7 @@ __Check Word By Word__
 
 #### __[C#]__
 
-{{region wordByWord}}
+{{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=wordByWord}}
 	            this.radSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordByWord;
 	{{endregion}}
 
@@ -46,7 +46,7 @@ __Check Word By Word__
 
 #### __[VB.NET]__
 
-{{region wordByWord}}
+{{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=wordByWord}}
 	        Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordByWord
 	{{endregion}}
 
@@ -80,7 +80,7 @@ __Check All Words at Once__
 
 #### __[C#]__
 
-{{region allAtOnce}}
+{{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=allAtOnce}}
 	            this.radSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.AllAtOnce;
 	{{endregion}}
 
@@ -88,7 +88,7 @@ __Check All Words at Once__
 
 #### __[VB.NET]__
 
-{{region allAtOnce}}
+{{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=allAtOnce}}
 	        Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.AllAtOnce
 	{{endregion}}
 

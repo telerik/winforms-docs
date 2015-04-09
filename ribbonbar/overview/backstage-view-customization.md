@@ -39,7 +39,7 @@ Follows code snippet demonstrates how you can access the most used items in the 
 
 #### __[C#] Accessing BackstageView elements__
 
-{{region accessElements}}
+{{source=..\SamplesCS\RibbonBar\BackstageView\RibbonBackstageView.cs region=accessElements}}
 	            BackstageViewElement backstageViewElemet = radRibbonBarBackstageView1.BackstageElement;
 	            
 	            BackstageItemsPanelElement itemsPanel = backstageViewElemet.ItemsPanelElement;
@@ -51,7 +51,7 @@ Follows code snippet demonstrates how you can access the most used items in the 
 
 #### __[VB.NET] Accessing BackstageView elements__
 
-{{region accessElements}}
+{{source=..\SamplesVB\RibbonBar\BackstageView\RibbonBackstageView.vb region=accessElements}}
 	        Dim backstageViewElemet = CType(RadRibbonBarBackstageView1.BackstageElement, BackstageViewElement)
 	
 	        Dim itemsPanel = CType(backstageViewElemet.ItemsPanelElement, BackstageItemsPanelElement)
@@ -66,7 +66,7 @@ By accessing these elements, you can customize BackstageView. Here is an example
 
 #### __[C#] Customizing the content area__
 
-{{region changeContentAreaImage}}
+{{source=..\SamplesCS\RibbonBar\BackstageView\RibbonBackstageView.cs region=changeContentAreaImage}}
 	            RadImageShape imageShape = new RadImageShape();
 	            imageShape.Image = Image.FromFile(@"C:\MyFile.png");
 	            //the next line of code defines how to strech the image (if necessary)
@@ -78,7 +78,7 @@ By accessing these elements, you can customize BackstageView. Here is an example
 
 #### __[VB.NET] Customizing the content area__
 
-{{region changeContentAreaImage}}
+{{source=..\SamplesVB\RibbonBar\BackstageView\RibbonBackstageView.vb region=changeContentAreaImage}}
 	        Dim imageShape As New RadImageShape()
 	        imageShape.Image = Image.FromFile("C:\MyFile.png")
 	        'the next line of code defines how to strech the image (if necessary)

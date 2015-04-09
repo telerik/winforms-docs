@@ -41,7 +41,7 @@ There is also a set of predefined textual watermarks - the most commonly used on
 
 #### __[C#] __
 
-{{region set}}
+{{source=..\SamplesCS\RichTextEditor\Features\Watermark.cs region=set}}
 	            this.radRichTextEditor1.SetWatermark(PredefinedWatermarkType.Confidential);
 	{{endregion}}
 
@@ -49,7 +49,7 @@ There is also a set of predefined textual watermarks - the most commonly used on
 
 #### __[VB.NET] __
 
-{{region set}}
+{{source=..\SamplesVB\RichTextEditor\Features\Watermark.vb region=set}}
 	        Me.radRichTextEditor1.SetWatermark(PredefinedWatermarkType.Confidential)
 	        '#End Region
 	
@@ -84,7 +84,7 @@ The following example demonstrates how to crate a text watermark and apply it to
 
 #### __[C#] __
 
-{{region settings}}
+{{source=..\SamplesCS\RichTextEditor\Features\Watermark.cs region=settings}}
 	            WatermarkTextSettings textSettings = new WatermarkTextSettings();
 	            textSettings.Text = "Purple Watermark";
 	            textSettings.RotateAngle = 30;
@@ -98,7 +98,7 @@ The following example demonstrates how to crate a text watermark and apply it to
 
 #### __[VB.NET] __
 
-{{region settings}}
+{{source=..\SamplesVB\RichTextEditor\Features\Watermark.vb region=settings}}
 	        Dim textSettings As New WatermarkTextSettings()
 	        textSettings.Text = "Purple Watermark"
 	        textSettings.RotateAngle = 30
@@ -124,7 +124,7 @@ And this is how you create an image watermark and apply it:
 
 #### __[C#] __
 
-{{region image}}
+{{source=..\SamplesCS\RichTextEditor\Features\Watermark.cs region=image}}
 	            WatermarkImageSettings imageSettings = new WatermarkImageSettings();
 	            imageSettings.UriSource = uri;
 	            imageSettings.Size = new Size(500, 665);
@@ -136,7 +136,7 @@ And this is how you create an image watermark and apply it:
 
 #### __[VB.NET] __
 
-{{region image}}
+{{source=..\SamplesVB\RichTextEditor\Features\Watermark.vb region=image}}
 	        Dim imageSettings As New WatermarkImageSettings()
 	        imageSettings.UriSource = uri
 	        imageSettings.Size = New Size(500, 665)

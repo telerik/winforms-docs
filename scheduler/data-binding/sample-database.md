@@ -37,7 +37,7 @@ You can use schema script to automatically add the Scheduler data tables to an e
 
 #### __[SQL] AppointmentsResources table__
 
-{{region ar}}
+{{source=..\SamplesCS\DataSources\AppointmentsResources.sql region=ar}}
 	
 	USE [SchedulerData]
 	
@@ -102,7 +102,7 @@ Here is the script that creates the __Resources__ data table:
 
 #### __[SQL] Resources table__
 
-{{region r}}
+{{source=..\SamplesCS\DataSources\Resources.sql region=r}}
 	
 	USE [SchedulerData]
 	
@@ -155,7 +155,7 @@ Here is the script that creates the __Appointments__ data table:
 
 #### __[SQL] Appointments table__
 
-{{region a}}
+{{source=..\SamplesCS\DataSources\Appointments.sql region=a}}
 	
 	USE [SchedulerData]
 	

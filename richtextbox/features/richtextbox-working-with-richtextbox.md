@@ -46,7 +46,7 @@ For example, you have a button that makes the text bold:
 
 #### __[C#] Bold text__
 
-{{region boldText}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxWorkingWithRichTextBox.cs region=boldText}}
 	        private void boldButton_Click(object sender, EventArgs e)
 	        {
 	            radRichTextBox1.ToggleBold();
@@ -57,7 +57,7 @@ For example, you have a button that makes the text bold:
 
 #### __[VB.NET] Bold text__
 
-{{region boldText}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxWorkingWithRichTextBox.vb region=boldText}}
 	    Private Sub boldButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles boldButton.Click
 	        RadRichTextBox1.ToggleBold()
 	    End Sub
@@ -70,7 +70,7 @@ In the event handler for the __CurrentSpanStyleChanged__ you can do the followin
 
 #### __[C#] Bold text__
 
-{{region CurrentSpanStyleChanged}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxWorkingWithRichTextBox.cs region=CurrentSpanStyleChanged}}
 	        void radRichTextBox1_CurrentSpanStyleChanged(object sender, EventArgs e)
 	        {
 	            StyleDefinition style = this.radRichTextBox1.CurrentEditingStyle;
@@ -83,7 +83,7 @@ In the event handler for the __CurrentSpanStyleChanged__ you can do the followin
 
 #### __[VB.NET] Bold text__
 
-{{region CurrentSpanStyleChanged}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxWorkingWithRichTextBox.vb region=CurrentSpanStyleChanged}}
 	    Private Sub radRichTextBox1_CurrentSpanStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
 	        Dim style As StyleDefinition = Me.RadRichTextBox1.CurrentEditingStyle
 	        Dim fontWeight As TextStyle = DirectCast(style.GetPropertyValue(Span.FontStyleProperty), TextStyle)

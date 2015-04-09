@@ -37,7 +37,7 @@ RadSpellChecker comes with one predefined dictionary which checks the English la
 
 #### __[C#]__
 
-{{region germanDictionary}}
+{{source=..\SamplesCS\SpellChecker\GermanDictionary.cs region=germanDictionary}}
 	    public class GermanDictionary : WordDictionary
 	    {
 	        protected override void EnsureDictionaryLoadedOverride()
@@ -54,7 +54,7 @@ RadSpellChecker comes with one predefined dictionary which checks the English la
 
 #### __[VB.NET]__
 
-{{region germanDictionary}}
+{{source=..\SamplesVB\SpellChecker\GermanDictionary.vb region=germanDictionary}}
 	Public Class GermanDictionary
 	    Inherits WordDictionary
 	    Protected Overrides Sub EnsureDictionaryLoadedOverride()
@@ -78,7 +78,7 @@ RadSpellChecker comes with one predefined dictionary which checks the English la
 
 #### __[C#] Defining a culture__
 
-{{region defineCulture}}
+{{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=defineCulture}}
 	        private static readonly CultureInfo GermanCulture = CultureInfo.GetCultureInfo("de-DE");
 	{{endregion}}
 
@@ -86,7 +86,7 @@ RadSpellChecker comes with one predefined dictionary which checks the English la
 
 #### __[VB.NET] Defining a culture__
 
-{{region defineCulture}}
+{{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=defineCulture}}
 	    Friend Shared GermanCulture As CultureInfo = CultureInfo.GetCultureInfo("de-DE")
 	{{endregion}}
 
@@ -94,7 +94,7 @@ RadSpellChecker comes with one predefined dictionary which checks the English la
 
 #### __[C#] Adding a dictionary__
 
-{{region addingDictionary}}
+{{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=addingDictionary}}
 	            IControlSpellChecker textBoxControlSpellChecker = this.radSpellChecker1.GetControlSpellChecker(typeof(RadTextBox));
 	            DocumentSpellChecker documentSpellChecker = textBoxControlSpellChecker.SpellChecker as DocumentSpellChecker;
 	            documentSpellChecker.AddDictionary(new GermanDictionary(), GermanCulture);
@@ -104,7 +104,7 @@ RadSpellChecker comes with one predefined dictionary which checks the English la
 
 #### __[VB.NET] Adding a dictionary__
 
-{{region addingDictionary}}
+{{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=addingDictionary}}
 	        Dim textBoxControlSpellChecker As IControlSpellChecker = Me.radSpellChecker1.GetControlSpellChecker(GetType(RadTextBox))
 	        Dim documentSpellChecker As DocumentSpellChecker = TryCast(textBoxControlSpellChecker.SpellChecker, DocumentSpellChecker)
 	        documentSpellChecker.AddDictionary(New GermanDictionary(), GermanCulture)
@@ -118,7 +118,7 @@ RadSpellChecker comes with one predefined dictionary which checks the English la
 
 #### __[C#] Setting the culture__
 
-{{region settingCulture}}
+{{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=settingCulture}}
 	            documentSpellChecker.SpellCheckingCulture = GermanCulture;
 	{{endregion}}
 
@@ -126,7 +126,7 @@ RadSpellChecker comes with one predefined dictionary which checks the English la
 
 #### __[VB.NET] Setting the culture__
 
-{{region settingCulture}}
+{{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=settingCulture}}
 	        documentSpellChecker.SpellCheckingCulture = GermanCulture
 	{{endregion}}
 

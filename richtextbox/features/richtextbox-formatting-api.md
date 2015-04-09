@@ -30,7 +30,7 @@ Here is an example of a toggle button that upon checking should make the selecti
 
 #### __[C#] Toggle bold__
 
-{{region toggleBold}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxFormattingAPI.cs region=toggleBold}}
 	        private void boldButton_Click(object sender, EventArgs e)
 	        {
 	            radRichTextBox1.ToggleBold();
@@ -41,7 +41,7 @@ Here is an example of a toggle button that upon checking should make the selecti
 
 #### __[VB.NET] Toggle bold__
 
-{{region toggleBold}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxFormattingAPI.vb region=toggleBold}}
 	    Private Sub boldButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles boldButton.Click
 	        RadRichTextBox1.ToggleBold()
 	    End Sub

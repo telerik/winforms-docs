@@ -69,7 +69,7 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 
 #### __[C#]__
 
-{{region editorViewModeEditor}}
+{{source=..\SamplesCS\Scheduler\EndUserFunctionality\EditingAppointments.cs region=editorViewModeEditor}}
 	            this.radScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.Editor;
 	{{endregion}}
 
@@ -77,7 +77,7 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 
 #### __[VB.NET]__
 
-{{region editorViewModeEditor}}
+{{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorViewModeEditor}}
 	        Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.Editor
 	        '#End Region
 	
@@ -107,7 +107,7 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 
 #### __[C#]__
 
-{{region editorViewModeEditorDialog}}
+{{source=..\SamplesCS\Scheduler\EndUserFunctionality\EditingAppointments.cs region=editorViewModeEditorDialog}}
 	            this.radScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.EditorDialog;
 	{{endregion}}
 
@@ -115,7 +115,7 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 
 #### __[VB.NET]__
 
-{{region editorViewModeEditorDialog}}
+{{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorViewModeEditorDialog}}
 	        Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.EditorDialog
 	        '#End Region
 	
@@ -139,7 +139,7 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 
 #### __[C#]__
 
-{{region editorViewModeEditorNone}}
+{{source=..\SamplesCS\Scheduler\EndUserFunctionality\EditingAppointments.cs region=editorViewModeEditorNone}}
 	            this.radScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.None;
 	{{endregion}}
 
@@ -147,7 +147,7 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 
 #### __[VB.NET]__
 
-{{region editorViewModeEditorNone}}
+{{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorViewModeEditorNone}}
 	        Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.None
 	        '#End Region
 	
@@ -174,7 +174,7 @@ You are able to change the default editors in the EditorRequired event of the Ra
 
 #### __[C#]__
 
-{{region customSchedulerTextBoxEditor}}
+{{source=..\SamplesCS\Scheduler\EndUserFunctionality\CustomSchedulerTextBoxEditor.cs region=customSchedulerTextBoxEditor}}
 	    public class CustomSchedulerTextBoxEditor : RadSchedulerTextBoxEditor
 	    {
 	        public override void BeginEditorEdit(IEditorManager editorManager, IEvent appointment)
@@ -206,7 +206,7 @@ You are able to change the default editors in the EditorRequired event of the Ra
 
 #### __[VB.NET]__
 
-{{region customSchedulerTextBoxEditor}}
+{{source=..\SamplesVB\Scheduler\EndUserFunctionality\CustomSchedulerTextBoxEditor.vb region=customSchedulerTextBoxEditor}}
 	Public Class CustomSchedulerTextBoxEditor
 	    Inherits RadSchedulerTextBoxEditor
 	    Public Overrides Sub BeginEditorEdit(ByVal editorManager As IEditorManager, ByVal appointment As IEvent)
@@ -238,7 +238,7 @@ After creating the custom editor that edits Description property of the appointm
 
 #### __[C#]__
 
-{{region editorRequired}}
+{{source=..\SamplesCS\Scheduler\EndUserFunctionality\EditingAppointments.cs region=editorRequired}}
 	        void radScheduler1_EditorRequired(object sender, SchedulerEditorRequiredArgs e)
 	        {
 	            e.Editor = new CustomSchedulerTextBoxEditor();
@@ -249,7 +249,7 @@ After creating the custom editor that edits Description property of the appointm
 
 #### __[VB.NET]__
 
-{{region editorRequired}}
+{{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorRequired}}
 	    Private Sub radScheduler1_EditorRequired(ByVal sender As Object, ByVal e As SchedulerEditorRequiredArgs)
 	        e.Editor = New CustomSchedulerTextBoxEditor()
 	    End Sub

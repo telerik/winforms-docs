@@ -54,7 +54,9 @@ The following image shows the smart tag of the gauge control when the needle is 
 * __DrawValue__ – specifies if the label should be drawn.
             
 
-* __LengthPerecentage__ – controls the length of the entire needle.
+* __LengthPerecentage__ – controls the length of the entire needle. 
+              The element is sized according to its center which means that if the value of this property is set to 50 the needle length will
+              equal the control width or height.
             
 
 * __Direction__ – specifies the needles direction.

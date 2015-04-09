@@ -66,7 +66,7 @@ Here is how to insert __PAGE__ field representing the current page number in the
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-customcodefield_0}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_0}}
 	            editor.InsertField("PAGE  \\* ROMAN", "VII");
 	{{endregion}}
 
@@ -74,7 +74,7 @@ Here is how to insert __PAGE__ field representing the current page number in the
 
 #### __VB NET__
 
-{{region radwordsprocessing-concepts-customcodefield_0}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_0}}
 	        editor.InsertField("PAGE \* ROMAN", "VII")
 	        '#End Region
 	
@@ -113,7 +113,7 @@ Here is how a combination of __PAGE__ and __NUMPAGES__ fields can be inserted to
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-customcodefield_1}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_1}}
 	            editor.InsertText("Page ");
 	            editor.InsertField("PAGE", "3");
 	            editor.InsertText(" of ");
@@ -124,7 +124,7 @@ Here is how a combination of __PAGE__ and __NUMPAGES__ fields can be inserted to
 
 #### __VB NET__
 
-{{region radwordsprocessing-concepts-customcodefield_1}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_1}}
 	        editor.InsertText("Page ")
 	        editor.InsertField("PAGE", "3")
 	        editor.InsertText(" of ")
@@ -155,7 +155,7 @@ Here is how to insert __AUTHOR__ field showing the name of the author of the doc
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-customcodefield_3}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_3}}
 	            editor.InsertField("AUTHOR  \\* Upper", "JOHN DOE");
 	{{endregion}}
 
@@ -163,7 +163,7 @@ Here is how to insert __AUTHOR__ field showing the name of the author of the doc
 
 #### __VB NET__
 
-{{region radwordsprocessing-concepts-customcodefield_3}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_3}}
 	        editor.InsertField("AUTHOR \* Upper", "JOHN DOE")
 	        '#End Region
 	
@@ -186,7 +186,7 @@ Here is how to insert table of contents (TOC) field:
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-customcodefield_4}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_4}}
 	            FieldInfo tocField = editor.InsertField("TOC \\o \"1-3\" \\h \\z \\u", "result");
 	            tocField.IsDirty = true;
 	{{endregion}}
@@ -195,7 +195,7 @@ Here is how to insert table of contents (TOC) field:
 
 #### __VB NET__
 
-{{region radwordsprocessing-concepts-customcodefield_4}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_4}}
 	        Dim tocField As FieldInfo = editor.InsertField("TOC \o ""1-3"" \h \z \u", "result")
 	        '#End Region
 	        tocField.IsDirty = True

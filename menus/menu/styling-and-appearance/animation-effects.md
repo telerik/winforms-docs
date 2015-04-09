@@ -46,7 +46,7 @@ To load the __RadDropDownList__with members of the __RadEasingType__ enumeration
 
 #### __[C#]__
 
-{{region easingTypes}}
+{{source=..\SamplesCS\Menus\Menu\AnimationEffects.cs region=easingTypes}}
 	            foreach (RadEasingType ret in Enum.GetValues(typeof(RadEasingType)))
 	            {
 	                RadListDataItem item = new RadListDataItem();
@@ -61,7 +61,7 @@ To load the __RadDropDownList__with members of the __RadEasingType__ enumeration
 
 #### __[VB.NET]__
 
-{{region easingTypes}}
+{{source=..\SamplesVB\Menus\Menu\AnimationEffects.vb region=easingTypes}}
 	        For Each ret As RadEasingType In System.Enum.GetValues(GetType(RadEasingType))
 	            Dim item As New RadListDataItem()
 	            item.Text = ret.ToString("f")
@@ -87,7 +87,7 @@ When the __RadDropDownList__ selection changes the __RadEasingType__ enumeration
 
 #### __[C#]__
 
-{{region eventHandlers}}
+{{source=..\SamplesCS\Menus\Menu\AnimationEffects.cs region=eventHandlers}}
 	        void ddlAnimation_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
 	        {
 	            RadListDataItem item = (sender as RadDropDownListElement).SelectedItem as RadListDataItem;
@@ -111,7 +111,7 @@ When the __RadDropDownList__ selection changes the __RadEasingType__ enumeration
 
 #### __[VB.NET]__
 
-{{region eventHandlers}}
+{{source=..\SamplesVB\Menus\Menu\AnimationEffects.vb region=eventHandlers}}
 	    Private Sub ddlAnimation_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
 	        Dim item As RadListDataItem = TryCast((TryCast(sender, RadDropDownListElement)).SelectedItem, RadListDataItem)
 	        RadMenu1.DropDownAnimationEasing = CType(item.Value, RadEasingType)

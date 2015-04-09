@@ -38,7 +38,7 @@ The example below creates a RadCalendarDay and assigns the __Date__. The __Recur
 
 #### __[C#] Configuring a recurring event__
 
-{{region calendarDays}}
+{{source=..\SamplesCS\Calendar\Calendar1.cs region=calendarDays}}
 	            RadCalendarDay day = new RadCalendarDay();
 	            day.Date = new DateTime(2011, 2, 5, 0, 0, 0, 0);
 	            day.Recurring = RecurringEvents.DayInMonth;
@@ -50,7 +50,7 @@ The example below creates a RadCalendarDay and assigns the __Date__. The __Recur
 
 #### __[VB.NET] Configuring a recurring event__
 
-{{region calendarDays}}
+{{source=..\SamplesVB\Calendar\Calendar1.vb region=calendarDays}}
 	        Dim day As New RadCalendarDay()
 	        day.Date = New DateTime(2011, 2, 5, 0, 0, 0, 0)
 	        day.Recurring = RecurringEvents.DayInMonth

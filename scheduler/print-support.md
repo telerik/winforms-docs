@@ -50,7 +50,7 @@ The RadScheduler has two public methods available for printing – __Print()__ a
 
 #### __[C#]__
 
-{{region print}}
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintSupport.cs region=print}}
 	            this.radScheduler1.Print();
 	
 	            this.radScheduler1.Print(true);
@@ -60,7 +60,7 @@ The RadScheduler has two public methods available for printing – __Print()__ a
 
 #### __[VB.NET]__
 
-{{region print}}
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintSupport.vb region=print}}
 	        Me.RadScheduler1.Print()
 	
 	        Me.RadScheduler1.Print(True)
@@ -74,7 +74,7 @@ The other available method is __PrintPreview()__. It opens a new
 
 #### __[C#]__
 
-{{region PrintPreview}}
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintSupport.cs region=PrintPreview}}
 	            this.radScheduler1.PrintPreview();
 	{{endregion}}
 
@@ -82,7 +82,7 @@ The other available method is __PrintPreview()__. It opens a new
 
 #### __[VB.NET]__
 
-{{region PrintPreview}}
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintSupport.vb region=PrintPreview}}
 	        Me.RadScheduler1.PrintPreview()
 	{{endregion}}
 

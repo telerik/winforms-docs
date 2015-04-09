@@ -20,7 +20,7 @@ To add a button to a RibbonBar group of __RadRibbonBar__, create a new __RadButt
 
 #### __[C#] Add a button to RadRibbonBarGroup__
 
-{{region addingAButton}}
+{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.cs region=addingAButton}}
 	            RadButtonElement radButtonElement1 = new RadButtonElement();
 	            radButtonElement1.Text = "Button";
 	            radRibbonBarGroup1.Items.Add(radButtonElement1);
@@ -30,7 +30,7 @@ To add a button to a RibbonBar group of __RadRibbonBar__, create a new __RadButt
 
 #### __[VB.NET] Add a button to RadRibbonBarGroup__
 
-{{region addingAButton}}
+{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.vb region=addingAButton}}
 	        Dim RadButtonElement1 As RadButtonElement = New RadButtonElement()
 	        RadButtonElement1.Text = "Button"
 	        RadRibbonBarGroup1.Items.Add(RadButtonElement1)
@@ -44,7 +44,7 @@ Like the other collections, you can add multiple buttons in a single operation b
 
 #### __[C#] Add multiple buttons to RadRibbonBarGroup__
 
-{{region addMultipleButtons}}
+{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.cs region=addMultipleButtons}}
 	            RadButtonElement radButtonElement2 = new RadButtonElement();
 	            RadButtonElement radButtonElement3 = new RadButtonElement();
 	            radButtonElement2.Text = "Second Button";
@@ -56,7 +56,7 @@ Like the other collections, you can add multiple buttons in a single operation b
 
 #### __[VB.NET] Add multiple buttons to RadRibbonBarGroup__
 
-{{region addMultipleButtons}}
+{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.vb region=addMultipleButtons}}
 	        Dim RadButtonElement2 As RadButtonElement = New RadButtonElement()
 	        Dim RadButtonElement3 As RadButtonElement = New RadButtonElement()
 	        RadButtonElement2.Text = "Second Button"
@@ -72,7 +72,7 @@ To remove a button, call the __Remove__ method of __RadRibbonBarGroup.Items__ co
 
 #### __[C#] Remove a button from RadRibbonBarGroup__
 
-{{region removeAButton}}
+{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.cs region=removeAButton}}
 	            RadButtonElement elementToRemove = (RadItem)radRibbonBarGroup1.Items[1] as RadButtonElement;
 	            radRibbonBarGroup1.Items.Remove(elementToRemove);
 	{{endregion}}
@@ -81,7 +81,7 @@ To remove a button, call the __Remove__ method of __RadRibbonBarGroup.Items__ co
 
 #### __[VB.NET] Remove a button from RadRibbonBarGroup__
 
-{{region removeAButton}}
+{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.vb region=removeAButton}}
 	        Dim elementToRemove As RadButtonElement = RadRibbonBarGroup1.Items(1)
 	        RadRibbonBarGroup1.Items.Remove(elementToRemove)
 	{{endregion}}
@@ -92,7 +92,7 @@ To remove a button by index, you can use the __RemoveAt__ method:
 
 #### __[C#] Remove a button from RadRibbonBarGroup by index__
 
-{{region removeAButtonByIndex}}
+{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.cs region=removeAButtonByIndex}}
 	            radRibbonBarGroup1.Items.RemoveAt(1);
 	{{endregion}}
 
@@ -100,7 +100,7 @@ To remove a button by index, you can use the __RemoveAt__ method:
 
 #### __[VB.NET] Remove a button from RadRibbonBarGroup by index__
 
-{{region removeAButtonByIndex}}
+{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.vb region=removeAButtonByIndex}}
 	        RadRibbonBarGroup1.Items.RemoveAt(1)
 	{{endregion}}
 
@@ -123,7 +123,7 @@ To add a new button group with buttons to a RibbonBar group of __RadRibbonBar__,
 
 #### __[C#] Add button group with buttons__
 
-{{region addingButtonGroupWithButtons}}
+{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.cs region=addingButtonGroupWithButtons}}
 	            RadRibbonBarButtonGroup radRibbonBarButtonGroup1 = new RadRibbonBarButtonGroup();
 	            radRibbonBarButtonGroup1.Orientation = System.Windows.Forms.Orientation.Horizontal;
 	            radRibbonBarButtonGroup1.MinSize = new System.Drawing.Size(22, 22);
@@ -140,7 +140,7 @@ To add a new button group with buttons to a RibbonBar group of __RadRibbonBar__,
 
 #### __[VB.NET] Add button group with buttons__
 
-{{region addingButtonGroupWithButtons}}
+{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.vb region=addingButtonGroupWithButtons}}
 	        Dim RadRibbonBarButtonGroup1 As RadRibbonBarButtonGroup = New RadRibbonBarButtonGroup()
 	        RadRibbonBarButtonGroup1.Orientation = System.Windows.Forms.Orientation.Horizontal
 	        RadRibbonBarButtonGroup1.MinSize = New System.Drawing.Size(22, 22)

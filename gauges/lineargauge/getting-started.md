@@ -31,7 +31,7 @@ This example demonstrates how to programmatically setup a linear gauge.
 
 #### __[C#] __
 
-{{region add}}
+{{source=..\SamplesCS\Gauges\LinearGauge\LinearGuageGettingStarted.cs region=add}}
 	            RadLinearGauge radLinearGauge1 = new RadLinearGauge();
 	            radLinearGauge1.Location = new Point(20, 20);
 	            radLinearGauge1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
@@ -84,7 +84,7 @@ This example demonstrates how to programmatically setup a linear gauge.
 
 #### __[VB.NET] __
 
-{{region add}}
+{{source=..\SamplesVB\Gauges\LinearGauge\LinearGuageGettingStarted.vb region=add}}
 	        Dim radLinearGauge1 As New RadLinearGauge()
 	        radLinearGauge1.Location = New System.Drawing.Point(20, 20)
 	        radLinearGauge1.Padding = New System.Windows.Forms.Padding(0, 10, 0, 10)

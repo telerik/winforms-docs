@@ -31,7 +31,7 @@ You can use the following code snippet to create a __TableCell__ and add it in a
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-tablecell_0}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableCell.cs region=radwordsprocessing-model-tablecell_0}}
 	            TableCell cell = new TableCell(document);
 	            row.Cells.Add(cell);
 	{{endregion}}
@@ -40,7 +40,7 @@ You can use the following code snippet to create a __TableCell__ and add it in a
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-tablecell_0}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_0}}
 	            Dim cell As New TableCell(document)
 	            row.Cells.Add(cell)
 	            '#End Region
@@ -68,7 +68,7 @@ To create a __TableCell__ and add it in the document tree in the same time, you 
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-tablecell_1}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableCell.cs region=radwordsprocessing-model-tablecell_1}}
 	            TableRow row = table.Rows.AddTableRow();
 	            TableCell cell = row.Cells.AddTableCell();
 	{{endregion}}
@@ -77,7 +77,7 @@ To create a __TableCell__ and add it in the document tree in the same time, you 
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-tablecell_1}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_1}}
 	            Dim row As TableRow = table.Rows.AddTableRow()
 	            Dim cell As TableCell = row.Cells.AddTableCell()
 	            '#End Region
@@ -173,7 +173,7 @@ The following code snippet demonstrates how to add a __Paragraph__ to a __TableC
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-tablecell_2}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableCell.cs region=radwordsprocessing-model-tablecell_2}}
 	            Paragraph paragraph = cell.Blocks.AddParagraph();
 	{{endregion}}
 
@@ -181,7 +181,7 @@ The following code snippet demonstrates how to add a __Paragraph__ to a __TableC
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-tablecell_2}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_2}}
 	            Dim paragraph As Paragraph = cell.Blocks.AddParagraph()
 	            '#End Region
 	        End Sub

@@ -86,7 +86,7 @@ The following code snippet will produce the result shown in the screen-shot belo
 
 #### __[C#] Setting HTML-like text__
 
-{{region htmltextrendering}}
+{{source=..\SamplesCS\Buttons\Button.cs region=htmltextrendering}}
 	
 	            this.radButton1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text";
 	
@@ -96,7 +96,7 @@ The following code snippet will produce the result shown in the screen-shot belo
 
 #### __[VB.NET] Setting HTML-like text__
 
-{{region htmltextrendering}}
+{{source=..\SamplesVB\Buttons\Button.vb region=htmltextrendering}}
 	
 	        Me.radButton1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text"
 	

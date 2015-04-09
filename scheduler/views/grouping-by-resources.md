@@ -47,7 +47,7 @@ If you want to group RadScheduler by resources you can use the GroupType proper
 
 #### __[C#]__
 
-{{region groupType}}
+{{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=groupType}}
 	            this.radScheduler1.GroupType = GroupType.Resource;
 	{{endregion}}
 
@@ -55,7 +55,7 @@ If you want to group RadScheduler by resources you can use the GroupType proper
 
 #### __[VB.NET]__
 
-{{region groupType}}
+{{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=groupType}}
 	        Me.RadScheduler1.GroupType = GroupType.Resource
 	        '#End Region
 	
@@ -114,7 +114,7 @@ You can add/remove resources using the RadScheduler’s Resources collection. Th
 
 #### __[C#]__
 
-{{region addingResources}}
+{{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=addingResources}}
 	            Color[] colors = new Color[]{Color.LightBlue, Color.LightGreen, Color.LightYellow,
 	               Color.Red, Color.Orange, Color.Pink, Color.Purple, Color.Peru, Color.PowderBlue};
 	
@@ -137,7 +137,7 @@ You can add/remove resources using the RadScheduler’s Resources collection. Th
 
 #### __[VB.NET]__
 
-{{region addingResources}}
+{{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=addingResources}}
 	        Dim colors() As Color = {Color.LightBlue, Color.LightGreen, Color.LightYellow, Color.Red, Color.Orange, Color.Pink, Color.Purple, Color.Peru, Color.PowderBlue}
 	
 	        Dim names() As String = {"Alan Smith", "Anne Dodsworth", "Boyan Mastoni", "Richard Duncan", "Maria Shnaider"}
@@ -194,7 +194,7 @@ You can use the SchedulerView’s ResourcesPerView property to change the number
 
 #### __[C#]__
 
-{{region getDayView}}
+{{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=getDayView}}
 	            this.radScheduler1.ActiveView.ResourcesPerView = 2;
 	{{endregion}}
 
@@ -202,7 +202,7 @@ You can use the SchedulerView’s ResourcesPerView property to change the number
 
 #### __[VB.NET]__
 
-{{region getDayView}}
+{{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=getDayView}}
 	        Me.RadScheduler1.ActiveView.ResourcesPerView = 2
 	        '#End Region
 	
@@ -245,7 +245,7 @@ Navigating through resources
 
 #### __[C#]__
 
-{{region resourceNavigation}}
+{{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=resourceNavigation}}
 	            ((SchedulerViewGroupedByResourceElementBase)this.radScheduler1.ViewElement).ResourceStartIndex = 2;
 	{{endregion}}
 
@@ -253,7 +253,7 @@ Navigating through resources
 
 #### __[VB.NET]__
 
-{{region resourceNavigation}}
+{{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceNavigation}}
 	    Private Sub radScheduler1_ResourceStartIndexChanging(sender As Object, e As ResourceIndexChangingEventArgs)
 	        If e.NewStartIndex > 5 Then
 	            e.Cancel = True
@@ -274,7 +274,7 @@ To track when the resource index is changed, you can use the ResourceStartIndexC
 
 #### __[C#]__
 
-{{region resourceNavigationEvents}}
+{{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=resourceNavigationEvents}}
 	            this.radScheduler1.ResourceStartIndexChanging += radScheduler1_ResourceStartIndexChanging;
 	            this.radScheduler1.ResourceStartIndexChanged += radScheduler1_ResourceStartIndexChanged;
 	{{endregion}}
@@ -283,7 +283,7 @@ To track when the resource index is changed, you can use the ResourceStartIndexC
 
 #### __[VB.NET]__
 
-{{region resourceNavigationEvents}}
+{{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceNavigationEvents}}
 	        AddHandler Me.RadScheduler1.ResourceStartIndexChanging, AddressOf radScheduler1_ResourceStartIndexChanging
 	        AddHandler Me.RadScheduler1.ResourceStartIndexChanged, AddressOf radScheduler1_ResourceStartIndexChanged
 	        '#End Region
@@ -312,7 +312,7 @@ To track when the resource index is changed, you can use the ResourceStartIndexC
 
 #### __[C#]__
 
-{{region resourceNavigationHandlers}}
+{{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=resourceNavigationHandlers}}
 	        void radScheduler1_ResourceStartIndexChanging(object sender, ResourceIndexChangingEventArgs e)
 	        {
 	            if (e.NewStartIndex > 5)
@@ -331,7 +331,7 @@ To track when the resource index is changed, you can use the ResourceStartIndexC
 
 #### __[VB.NET]__
 
-{{region resourceNavigationHandlers}}
+{{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceNavigationHandlers}}
 	    Private Sub radScheduler1_ResourceStartIndexChanging(sender As Object, e As ResourceIndexChangingEventArgs)
 	        If e.NewStartIndex > 5 Then
 	            e.Cancel = True
@@ -353,7 +353,7 @@ RadScheduler allows you to specify different size for the different resources. T
 
 #### __[C#]__
 
-{{region resourceResizing}}
+{{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=resourceResizing}}
 	            ((SchedulerViewGroupedByResourceElementBase)this.radScheduler1.ViewElement).SetResourceSize(1, 2);
 	{{endregion}}
 
@@ -361,7 +361,7 @@ RadScheduler allows you to specify different size for the different resources. T
 
 #### __[VB.NET]__
 
-{{region resourceResizing}}
+{{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceResizing}}
 	        CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).SetResourceSize(1, 2)
 	        '#End Region
 	

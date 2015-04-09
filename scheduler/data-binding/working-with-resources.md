@@ -37,7 +37,7 @@ To add resources to RadScheduler's Resource drop down (visible in the appointmen
 
 #### __[C#]__
 
-{{region loadResources}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithResources.cs region=loadResources}}
 	        private void LoadResources()
 	        {
 	            string[] descriptions = { "Conference Room 112", "Conference Room 113", "Meeting Hall A2" };
@@ -53,7 +53,7 @@ To add resources to RadScheduler's Resource drop down (visible in the appointmen
 
 #### __[VB.NET]__
 
-{{region loadResources}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithResources.vb region=loadResources}}
 	    Private Sub LoadResources()
 	        Dim descriptions() As String = {"Conference Room 112", "Conference Room 113", "Meeting Hall A2"}
 	        Dim count As Integer = 1

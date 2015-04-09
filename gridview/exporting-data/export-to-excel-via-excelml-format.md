@@ -36,7 +36,7 @@ Before running export to ExcelML, you have to initialize the ExportToExcelML cla
 
 #### __[C#]  ExportToExcelIML initialization__
 
-{{region ExportToExcelMLInitialization}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=ExportToExcelMLInitialization}}
 	            ExportToExcelML exporter = new ExportToExcelML(this.radGridView1);
 	{{endregion}}
 
@@ -44,7 +44,7 @@ Before running export to ExcelML, you have to initialize the ExportToExcelML cla
 
 #### __[VB.NET]  ExportToExcelIML initialization__
 
-{{region ExportToExcelMLInitialization}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=ExportToExcelMLInitialization}}
 	        Dim exporter As ExportToExcelML = New ExportToExcelML(Me.RadGridView1)
 	{{endregion}}
 
@@ -69,7 +69,7 @@ MS Excel does not support other ways of hiding a column different from setting i
 
 #### __[C#]  Setting the hidden column option__
 
-{{region settingTheHiddenColumnOption}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=settingTheHiddenColumnOption}}
 	            exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;
 	{{endregion}}
 
@@ -77,7 +77,7 @@ MS Excel does not support other ways of hiding a column different from setting i
 
 #### __[VB.NET]  Setting the hidden column option__
 
-{{region settingTheHiddenColumnOption}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingTheHiddenColumnOption}}
 	        exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
 	{{endregion}}
 
@@ -96,7 +96,7 @@ You can enable exporting visual settings through the ExportVisualSettings proper
 
 #### __[C#] Setting ExportVisualSettings__
 
-{{region exportVisualSettings}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=exportVisualSettings}}
 	            exporter.ExportVisualSettings = true;
 	{{endregion}}
 
@@ -104,7 +104,7 @@ You can enable exporting visual settings through the ExportVisualSettings proper
 
 #### __[VB.NET] Setting ExportVisualSettings__
 
-{{region exportVisualSettings}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=exportVisualSettings}}
 	        exporter.ExportVisualSettings = True
 	{{endregion}}
 
@@ -120,7 +120,7 @@ RadGridView splits data on separate sheets if the number of rows is greater tha
 
 #### __[C#] Setting Maximum Number of Rows__
 
-{{region settingMaximumNumberOfRows}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=settingMaximumNumberOfRows}}
 	            exporter.SheetMaxRows = ExcelMaxRows._1048576;
 	{{endregion}}
 
@@ -128,7 +128,7 @@ RadGridView splits data on separate sheets if the number of rows is greater tha
 
 #### __[VB.NET] Setting Maximum Number of Rows__
 
-{{region settingMaximumNumberOfRows}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingMaximumNumberOfRows}}
 	        exporter.SheetMaxRows = ExcelMaxRows._1048576
 	{{endregion}}
 
@@ -140,7 +140,7 @@ __MS Excel Sheet Name__
 
 #### __[C#] Setting the SheetName__
 
-{{region settingTheSheetName}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=settingTheSheetName}}
 	            exporter.SheetName = "Sheet";
 	{{endregion}}
 
@@ -148,7 +148,7 @@ __MS Excel Sheet Name__
 
 #### __[VB.NET] Setting the SheetName__
 
-{{region settingTheSheetName}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingTheSheetName}}
 	        exporter.SheetName = "Sheet"
 	{{endregion}}
 
@@ -169,7 +169,7 @@ You can use __SummariesExportOption__ property to specify how to export summary 
 
 #### __[C#] Setting SummariesExportOption__
 
-{{region settingSumariesExportOption}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=settingSumariesExportOption}}
 	            exporter.SummariesExportOption = SummariesOption.DoNotExport; 
 	{{endregion}}
 
@@ -177,7 +177,7 @@ You can use __SummariesExportOption__ property to specify how to export summary 
 
 #### __[VB.NET] Setting SummariesExportOption__
 
-{{region settingSumariesExportOption}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingSumariesExportOption}}
 	        exporter.SummariesExportOption = SummariesOption.DoNotExport
 	{{endregion}}
 
@@ -195,7 +195,7 @@ Consider the code sample below:
 
 #### __[C#] Export to Excel in ExcelML format__
 
-{{region runExport}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=runExport}}
 	            string fileName = "C:\\ExportedData123.xls";
 	            exporter.RunExport(fileName);
 	{{endregion}}
@@ -204,7 +204,7 @@ Consider the code sample below:
 
 #### __[VB.NET] Export to Excel in ExcelML format__
 
-{{region runExport}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=runExport}}
 	        Dim fileName As String = "C:\\ExportedData.xls"
 	        exporter.RunExport(fileName)
 	{{endregion}}
@@ -223,7 +223,7 @@ Here is an example for a date time formatting:
 
 #### __[C#] Fomatting dates__
 
-{{region formattingCodes}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=formattingCodes}}
 	            this.radGridView1.Columns["Date"].ExcelExportType = DisplayFormatType.Custom;
 	            this.radGridView1.Columns["Date"].ExcelExportFormatString = "yyyy.MMMM.dd hh:mm:ss AM/PM";
 	{{endregion}}
@@ -232,7 +232,7 @@ Here is an example for a date time formatting:
 
 #### __[VB.NET] Fomatting dates__
 
-{{region formattingCodes}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=formattingCodes}}
 	        Me.RadGridView1.Columns("Date").ExcelExportType = DisplayFormatType.Custom
 	        Me.RadGridView1.Columns("Date").ExcelExportFormatString = " yyyy.MMMM.dd hh:mm:ss AM/PM "
 	{{endregion}}
@@ -250,7 +250,7 @@ It gives an access to a single cell’s  __SingleStyleElement__ that allows you 
 
 #### __[C#]  Handling the ExcelCellFormatting event__
 
-{{region ExcelCellFormatting}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=ExcelCellFormatting}}
 	        void exporter_ExcelCellFormatting(object sender, Telerik.WinControls.UI.Export.ExcelML.ExcelCellFormattingEventArgs e)
 	        {
 	            if (e.GridRowInfoType == typeof(GridViewTableHeaderRowInfo))
@@ -274,7 +274,7 @@ It gives an access to a single cell’s  __SingleStyleElement__ that allows you 
 
 #### __[VB.NET]  Handling the ExcelCellFormatting event__
 
-{{region ExcelCellFormatting}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=ExcelCellFormatting}}
 	    Private Sub exporter_ExcelCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.ExcelML.ExcelCellFormattingEventArgs)
 	        If e.GridRowInfoType Is GetType(GridViewTableHeaderRowInfo) Then
 	            Dim border As BorderStyles = New BorderStyles()
@@ -302,7 +302,7 @@ ____
 
 #### __[C#]  Handling the ExcelTableCreated event__
 
-{{region ExcelTableCreated}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=ExcelTableCreated}}
 	        void exporter_ExcelTableCreated(object sender, ExcelTableCreatedEventArgs e)
 	        {
 	            string headerText = "Custom added header text.";
@@ -321,7 +321,7 @@ ____
 
 #### __[VB.NET]  Handling the ExcelTableCreated event__
 
-{{region ExcelTableCreated}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=ExcelTableCreated}}
 	    Private Sub exporter_ExcelTableCreated(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.ExcelML.ExcelTableCreatedEventArgs)
 	        Dim headerText As String = "Custom added header text."
 	        Dim style As SingleStyleElement = (CType(sender, ExportToExcelML)).AddCustomExcelRow(e.ExcelTableElement, 50, headerText)

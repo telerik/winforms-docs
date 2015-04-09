@@ -27,7 +27,7 @@ The Week View can be set it to be the default view which the user sees:
 
 #### __[C#]__
 
-{{region activeViewType}}
+{{source=..\SamplesCS\Scheduler\Views\WorkWeekView.cs region=activeViewType}}
 	            this.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.WorkWeek;
 	{{endregion}}
 
@@ -35,7 +35,7 @@ The Week View can be set it to be the default view which the user sees:
 
 #### __[VB.NET]__
 
-{{region activeViewType}}
+{{source=..\SamplesVB\Scheduler\Views\WorkWeekView.vb region=activeViewType}}
 	        Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.WorkWeek
 	        '#End Region
 	
@@ -103,7 +103,7 @@ To get the instance to the SchedulerWeekView from the RadScheduler object,either
 
 #### __[C#]__
 
-{{region getWeekView}}
+{{source=..\SamplesCS\Scheduler\Views\WorkWeekView.cs region=getWeekView}}
 	            SchedulerWeekView weekView = this.radScheduler1.GetWeekView();
 	{{endregion}}
 
@@ -111,7 +111,7 @@ To get the instance to the SchedulerWeekView from the RadScheduler object,either
 
 #### __[VB.NET]__
 
-{{region getWeekView}}
+{{source=..\SamplesVB\Scheduler\Views\WorkWeekView.vb region=getWeekView}}
 	        Dim weekView As SchedulerWeekView = Me.RadScheduler1.GetWeekView()
 	        '#End Region
 	
@@ -177,7 +177,7 @@ To get the instance to the SchedulerWeekView from the RadScheduler object,either
 
 #### __[C#]__
 
-{{region getWeekView}}
+{{source=..\SamplesCS\Scheduler\Views\WorkWeekView.cs region=getWeekView}}
 	            SchedulerWeekView weekView = this.radScheduler1.GetWeekView();
 	{{endregion}}
 
@@ -185,7 +185,7 @@ To get the instance to the SchedulerWeekView from the RadScheduler object,either
 
 #### __[VB.NET]__
 
-{{region getWeekView}}
+{{source=..\SamplesVB\Scheduler\Views\WorkWeekView.vb region=getWeekView}}
 	        Dim weekView As SchedulerWeekView = Me.RadScheduler1.GetWeekView()
 	        '#End Region
 	

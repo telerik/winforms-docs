@@ -5,7 +5,7 @@ description: Ohlc and Candlestick
 slug: chartview-series-types-ohlc-and-candlestick
 tags: ohlc,and,candlestick
 published: True
-position: 12
+position: 13
 ---
 
 # Ohlc and Candlestick
@@ -33,7 +33,7 @@ Here is how to setup Ohlc series:
 
 #### __[C#] __
 
-{{region ohlc}}
+{{source=..\SamplesCS\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.cs region=ohlc}}
 	            OhlcSeries ohlcSeries = new OhlcSeries();
 	            ohlcSeries.DataPoints.Add(new OhlcDataPoint(10, 11, 7, 8, DateTime.Now));
 	            ohlcSeries.DataPoints.Add(new OhlcDataPoint(8, 9, 5, 9, DateTime.Now.AddDays(1)));
@@ -46,7 +46,7 @@ Here is how to setup Ohlc series:
 
 #### __[VB.NET] __
 
-{{region ohlc}}
+{{source=..\SamplesVB\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.vb region=ohlc}}
 	        Dim ohlcSeries As New OhlcSeries()
 	        ohlcSeries.DataPoints.Add(New OhlcDataPoint(10, 11, 7, 8, DateTime.Now))
 	        ohlcSeries.DataPoints.Add(New OhlcDataPoint(8, 9, 5, 9, DateTime.Now.AddDays(1)))
@@ -61,7 +61,7 @@ Here is how to setup Candlestick series:
 
 #### __[C#] __
 
-{{region candlestick}}
+{{source=..\SamplesCS\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.cs region=candlestick}}
 	            CandlestickSeries candlestickSeries = new CandlestickSeries();
 	            candlestickSeries.DataPoints.Add(new OhlcDataPoint(10, 11, 7, 8, DateTime.Now));
 	            candlestickSeries.DataPoints.Add(new OhlcDataPoint(8, 9, 5, 9, DateTime.Now.AddDays(1)));
@@ -74,7 +74,7 @@ Here is how to setup Candlestick series:
 
 #### __[VB.NET] __
 
-{{region candlestick}}
+{{source=..\SamplesVB\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.vb region=candlestick}}
 	        Dim candlestickSeries As New CandlestickSeries()
 	        candlestickSeries.DataPoints.Add(New OhlcDataPoint(10, 11, 7, 8, DateTime.Now))
 	        candlestickSeries.DataPoints.Add(New OhlcDataPoint(8, 9, 5, 9, DateTime.Now.AddDays(1)))

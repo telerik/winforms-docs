@@ -24,7 +24,7 @@ Use the __ShowTranslucentSelectionRecatangle__ of the __GridTableElement__ to en
 
 #### __[C#] Disabling the selection rectangle__
 
-{{region selectionRectangle}}
+{{source=..\SamplesCS\GridView\Rows\SelectionRectangle.cs region=selectionRectangle}}
 	            ((GridTableElement)this.radGridView1.TableElement).ShowTranslucentSelectionRectangle = false;
 	{{endregion}}
 
@@ -32,7 +32,7 @@ Use the __ShowTranslucentSelectionRecatangle__ of the __GridTableElement__ to en
 
 #### __[VB.NET] Disabling the selection rectangle__
 
-{{region selectionRectangle}}
+{{source=..\SamplesVB\GridView\Rows\SelectionRectangle.vb region=selectionRectangle}}
 	        DirectCast(Me.RadGridView1.TableElement, GridTableElement).ShowTranslucentSelectionRectangle = False
 	{{endregion}}
 

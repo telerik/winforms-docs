@@ -17,7 +17,7 @@ __GridViewDecimalColumn__ allows decimal data to be displayed and edited. __Grid
 
 #### __[C#] Adding GridViewDecimalColumn__
 
-{{region addingDecimalColumn}}
+{{source=..\SamplesCS\GridView\Columns\GridViewDecimalColumn1.cs region=addingDecimalColumn}}
 	            GridViewDecimalColumn decimalColumn = new GridViewDecimalColumn();
 	            decimalColumn.Name = "DecimalColumn";
 	            decimalColumn.HeaderText = "Unit Price";
@@ -30,7 +30,7 @@ __GridViewDecimalColumn__ allows decimal data to be displayed and edited. __Grid
 
 #### __[VB.NET] Adding GridViewDecimalColumn__
 
-{{region addingDecimalColumn}}
+{{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=addingDecimalColumn}}
 	        Dim decimalColumn As New GridViewDecimalColumn()
 	        decimalColumn.Name = "DecimalColumn"
 	        decimalColumn.HeaderText = "Unit Price"
@@ -47,7 +47,7 @@ You may provide a default value using the following code:
 
 #### __[C#] Setting the default value for empty cells__
 
-{{region settingTheDefaultValue}}
+{{source=..\SamplesCS\GridView\Columns\GridViewDecimalColumn1.cs region=settingTheDefaultValue}}
 	        void radGridView1_CellEditorInitialized(object sender, GridViewCellEventArgs e)
 	        {
 	            GridSpinEditor spinEditor = this.radGridView1.ActiveEditor as GridSpinEditor;
@@ -65,7 +65,7 @@ You may provide a default value using the following code:
 
 #### __[VB.NET] Setting the default value for empty cells__
 
-{{region settingTheDefaultValue}}
+{{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=settingTheDefaultValue}}
 	    Private Sub RadGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs)
 	        Dim spinEditor As GridSpinEditor = TryCast(Me.RadGridView1.ActiveEditor, GridSpinEditor)
 	
@@ -83,7 +83,7 @@ The code below demonstrates how you can disable the up and down arrow buttons. U
 
 #### __[C#] Disable up and down arrow buttons__
 
-{{region ShowUpDownButtons}}
+{{source=..\SamplesCS\GridView\Columns\GridViewDecimalColumn1.cs region=ShowUpDownButtons}}
 	        void radGridView1_CellEditorInitialized1(object sender, GridViewCellEventArgs e)
 	        {
 	            GridSpinEditor spinEditor = this.radGridView1.ActiveEditor as GridSpinEditor;
@@ -96,7 +96,7 @@ The code below demonstrates how you can disable the up and down arrow buttons. U
 
 #### __[VB.NET] Disable up and down arrow buttons__
 
-{{region ShowUpDownButtons}}
+{{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=ShowUpDownButtons}}
 	    Private Sub RadGridView1_CellEditorInitialized1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs)
 	        Dim spinEditor As GridSpinEditor = TryCast(Me.RadGridView1.ActiveEditor, GridSpinEditor)
 	        If spinEditor IsNot Nothing Then
@@ -122,7 +122,7 @@ You can define how many places after the decimal point the value in the spin edi
 
 #### __[C#]__
 
-{{region decimalPlacesEditor}}
+{{source=..\SamplesCS\GridView\Columns\GridViewDecimalColumn1.cs region=decimalPlacesEditor}}
 	            decimalColumn.DecimalPlaces = 3;
 	{{endregion}}
 
@@ -130,7 +130,7 @@ You can define how many places after the decimal point the value in the spin edi
 
 #### __[VB.NET]__
 
-{{region decimalPlacesEditor}}
+{{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=decimalPlacesEditor}}
 	        decimalColumn.DecimalPlaces = 3
 	{{endregion}}
 
@@ -145,7 +145,7 @@ In order to define how the values should be displayed by the cells
 
 #### __[C#]__
 
-{{region decimalPlacesCell}}
+{{source=..\SamplesCS\GridView\Columns\GridViewDecimalColumn1.cs region=decimalPlacesCell}}
 	            decimalColumn.FormatString = "{0:N2}";
 	{{endregion}}
 
@@ -153,7 +153,7 @@ In order to define how the values should be displayed by the cells
 
 #### __[VB.NET]__
 
-{{region decimalPlacesCell}}
+{{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=decimalPlacesCell}}
 	        decimalColumn.FormatString = "{0:N2}"
 	{{endregion}}
 

@@ -35,7 +35,7 @@ The following example animates the __Opacity__ property of the RadButton's fill 
 
 #### __[C#] Animate button's Opacity property__
 
-{{region AnimateOpacity}}
+{{source=..\SamplesCS\TPF\Animations.cs region=AnimateOpacity}}
 	        private void btnAnimateOpacity_Click(object sender, EventArgs e)
 	        {
 	            if (btnAnimateOpacity.ButtonElement.ButtonFillElement.Opacity == 0)
@@ -55,7 +55,7 @@ The following example animates the __Opacity__ property of the RadButton's fill 
 
 #### __[VB.NET] Animate button's Opacity property__
 
-{{region AnimateOpacity}}
+{{source=..\SamplesVB\TPF\Animations.vb region=AnimateOpacity}}
 	    Private Sub btnAnimateOpacity_Click(sender As System.Object, e As System.EventArgs) Handles btnAnimateOpacity.Click
 	        If btnAnimateOpacity.ButtonElement.ButtonFillElement.Opacity = 0 Then
 	            Dim setting As New AnimatedPropertySetting(FillPrimitive.OpacityProperty, 0.0, 1.0, 20, 20)
@@ -77,7 +77,7 @@ Here is how to animate the __Margin__ property of the RadButton's fill primitive
 
 #### __[C#] Animate button's Margin property__
 
-{{region AnimateMargin}}
+{{source=..\SamplesCS\TPF\Animations.cs region=AnimateMargin}}
 	        private void btnAnimateMargin_Click(object sender, EventArgs e)
 	        {
 	            AnimatedPropertySetting setting2 = new AnimatedPropertySetting();
@@ -94,7 +94,7 @@ Here is how to animate the __Margin__ property of the RadButton's fill primitive
 
 #### __[VB.NET] Animate button's Margin property__
 
-{{region AnimateMargin}}
+{{source=..\SamplesVB\TPF\Animations.vb region=AnimateMargin}}
 	    Private Sub btnAnimateMargin_Click(sender As System.Object, e As System.EventArgs) Handles btnAnimateMargin.Click
 	        Dim setting2 As New AnimatedPropertySetting()
 	        setting2.Property = RadElement.MarginProperty
@@ -115,7 +115,7 @@ You can also animate the __Bounds__ property of a control. Here is how to create
 
 #### __[C#] Animate button's Bounds property__
 
-{{region AnimateBounds}}
+{{source=..\SamplesCS\TPF\Animations.cs region=AnimateBounds}}
 	        private void radButton1_Click(object sender, EventArgs e)
 	        {
 	            RadPanel panel = new RadPanel();
@@ -142,7 +142,7 @@ You can also animate the __Bounds__ property of a control. Here is how to create
 
 #### __[VB.NET] Animate button's Bounds property__
 
-{{region AnimateBounds}}
+{{source=..\SamplesVB\TPF\Animations.vb region=AnimateBounds}}
 	    Private Sub RadButton1_Click(sender As System.Object, e As System.EventArgs) Handles RadButton1.Click
 	        Dim panel As New RadPanel()
 	        panel.BackColor = Color.Yellow

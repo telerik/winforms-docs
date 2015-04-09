@@ -30,7 +30,7 @@ To create a custom layout class, create a __LayoutPanel__ descendant class and o
 
 #### __[C#] Cascade layout example__
 
-{{region cascadeLayoutPanel}}
+{{source=..\SamplesCS\TPF\Layouts\CascadeLayoutPanel.cs region=cascadeLayoutPanel}}
 	    public class CascadeLayoutPanel : LayoutPanel
 	    {
 	        protected override SizeF MeasureOverride(SizeF availableSize)
@@ -72,7 +72,7 @@ To create a custom layout class, create a __LayoutPanel__ descendant class and o
 
 #### __[VB.NET] Cascade layout example__
 
-{{region cascadeLayoutPanel}}
+{{source=..\SamplesVB\TPF\Layouts\CascadeLayoutPanel.vb region=cascadeLayoutPanel}}
 	Public Class CascadeLayoutPanel
 	    Inherits LayoutPanel
 	    Protected Overrides Function MeasureOverride(ByVal availableSize As SizeF) As SizeF

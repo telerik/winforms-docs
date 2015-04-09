@@ -20,7 +20,7 @@ To select a node use the __Selected__
 
 #### __[C#]__
 
-{{region selectedNode}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=selectedNode}}
 	            radTreeView1.SelectedNode = radTreeView1.Nodes[0];
 	{{endregion}}
 
@@ -28,7 +28,7 @@ To select a node use the __Selected__
 
 #### __[VB.NET]__
 
-{{region selectedNode}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=selectedNode}}
 	        RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
 	        '#End Region
 	
@@ -73,7 +73,7 @@ To select multiple nodes through the API, just set the Selected property of the 
 
 #### __[C#]__
 
-{{region selectMultiNodes}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=selectMultiNodes}}
 	            radTreeView1.MultiSelect = true;
 	            RadTreeNode Node1 = new RadTreeNode("Inbox");
 	            RadTreeNode Node2 = new RadTreeNode("Deleted Items");
@@ -91,7 +91,7 @@ To select multiple nodes through the API, just set the Selected property of the 
 
 #### __[VB.NET]__
 
-{{region selectMultiNodes}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=selectMultiNodes}}
 	        RadTreeView1.MultiSelect = True
 	        Dim Node1 As New RadTreeNode("Inbox")
 	        Dim Node2 As New RadTreeNode("Deleted Items")

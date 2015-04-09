@@ -24,7 +24,7 @@ Consider the __RadGridView__ is populated with data form Northwind.Products tabl
 
 #### __[C#]__
 
-{{region PopulateData}}
+{{source=..\SamplesCS\GridView\Rows\CreateCustomNewRow.cs region=PopulateData}}
 	        public static object DataSource;
 	
 	        private void CreateCustomNewRow_Load(object sender, EventArgs e)
@@ -43,7 +43,7 @@ Consider the __RadGridView__ is populated with data form Northwind.Products tabl
 
 #### __[VB.NET]__
 
-{{region PopulateData}}
+{{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=PopulateData}}
 	    Public Shared DataSource As Object
 	    Private Sub CreateCustomNewRow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 	        Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
@@ -136,7 +136,7 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 
 #### __[C#]__
 
-{{region RowElement}}
+{{source=..\SamplesCS\GridView\Rows\CreateCustomNewRow.cs region=RowElement}}
 	
 	        public class CustomGridRowElement : GridRowElement
 	        {
@@ -183,7 +183,7 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 
 #### __[VB.NET]__
 
-{{region RowElement}}
+{{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=RowElement}}
 	
 	    Public Class CustomGridRowElement
 	        Inherits GridRowElement
@@ -258,7 +258,7 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 
 #### __[C#]__
 
-{{region RowInfo}}
+{{source=..\SamplesCS\GridView\Rows\CreateCustomNewRow.cs region=RowInfo}}
 	            
 	        public class CustomGridViewRowInfo : GridViewNewRowInfo
 	        {
@@ -281,7 +281,7 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 
 #### __[VB.NET]__
 
-{{region RowInfo}}
+{{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=RowInfo}}
 	
 	    Public Class CustomGridViewRowInfo
 	        Inherits GridViewNewRowInfo
@@ -317,7 +317,7 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 
 #### __[C#]__
 
-{{region ReplaceRow}}
+{{source=..\SamplesCS\GridView\Rows\CreateCustomNewRow.cs region=ReplaceRow}}
 	                
 	        private void radGridView1_CreateRowInfo(object sender, GridViewCreateRowInfoEventArgs e)
 	        {
@@ -333,7 +333,7 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 
 #### __[VB.NET]__
 
-{{region ReplaceRow}}
+{{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=ReplaceRow}}
 	
 	    Private Sub radGridView1_CreateRowInfo(sender As Object, e As GridViewCreateRowInfoEventArgs) Handles RadGridView1.CreateRowInfo
 	        If TypeOf e.RowInfo Is GridViewNewRowInfo Then

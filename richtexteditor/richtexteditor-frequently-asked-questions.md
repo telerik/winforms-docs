@@ -42,7 +42,7 @@ You can set these properties in code behind:
 
 #### __[C#] __
 
-{{region properties}}
+{{source=..\SamplesCS\RichTextEditor\FAQ.cs region=properties}}
 	        
 	        public void SetDefaultFontPropertiesToEditor(RadRichTextEditor editor)
 	        {
@@ -60,7 +60,7 @@ You can set these properties in code behind:
 
 #### __[VB.NET] __
 
-{{region properties}}
+{{source=..\SamplesVB\RichTextEditor\FAQ.vb region=properties}}
 	    Public Sub SetDefaultFontPropertiesToEditor(ByVal editor As RadRichTextEditor)
 	        editor.RichTextBoxElement.ChangeFontFamily(New Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS"))
 	        editor.RichTextBoxElement.ChangeFontSize(Unit.PointToDip(12))
@@ -118,7 +118,7 @@ You can read more about the use of format providers [here]({%slug richtexteditor
 
 #### __[C#] __
 
-{{region xaml}}
+{{source=..\SamplesCS\RichTextEditor\FAQ.cs region=xaml}}
 	        
 	        public string GetXAML(RadDocument document)
 	        {
@@ -132,7 +132,7 @@ You can read more about the use of format providers [here]({%slug richtexteditor
 
 #### __[VB.NET] __
 
-{{region xaml}}
+{{source=..\SamplesVB\RichTextEditor\FAQ.vb region=xaml}}
 	    Public Function GetXAML(ByVal document As RadDocument) As String
 	        Dim provider As New XamlFormatProvider()
 	        Return provider.Export(document)
@@ -155,7 +155,7 @@ To get the text stripped of all formatting, you can use __TxtFormatProvider__. S
 
 #### __[C#] __
 
-{{region html}}
+{{source=..\SamplesCS\RichTextEditor\FAQ.cs region=html}}
 	        
 	        public RadDocument ImportHtml(string content)
 	        {
@@ -169,7 +169,7 @@ To get the text stripped of all formatting, you can use __TxtFormatProvider__. S
 
 #### __[VB.NET] __
 
-{{region html}}
+{{source=..\SamplesVB\RichTextEditor\FAQ.vb region=html}}
 	    Public Function ImportHtml(ByVal content As String) As RadDocument
 	        Dim provider As New HtmlFormatProvider()
 	        Return provider.Import(content)
@@ -188,7 +188,7 @@ Inserting text in __RadRichTextEditor__  at caret position:
 
 #### __[C#] __
 
-{{region text}}
+{{source=..\SamplesCS\RichTextEditor\FAQ.cs region=text}}
 	            
 	            this.radRichTextEditor1.Insert(textToInsert);
 	
@@ -198,7 +198,7 @@ Inserting text in __RadRichTextEditor__  at caret position:
 
 #### __[VB.NET] __
 
-{{region text}}
+{{source=..\SamplesVB\RichTextEditor\FAQ.vb region=text}}
 	        Me.radRichTextEditor1.Insert(textToInsert)
 	        '#End Region
 	        '#Region "padding"
@@ -251,7 +251,7 @@ If you are using a document in flow layout mode, the document respects the value
 
 #### __[C#] __
 
-{{region padding}}
+{{source=..\SamplesCS\RichTextEditor\FAQ.cs region=padding}}
 	            
 	            this.radRichTextEditor1.Padding = new Telerik.WinControls.RichTextEditor.UI.Thickness(0, 20, 100, 60);
 	            
@@ -261,7 +261,7 @@ If you are using a document in flow layout mode, the document respects the value
 
 #### __[VB.NET] __
 
-{{region padding}}
+{{source=..\SamplesVB\RichTextEditor\FAQ.vb region=padding}}
 	        Me.radRichTextEditor1.Padding = New Telerik.WinControls.RichTextEditor.UI.Thickness(0, 20, 100, 60)
 	
 	        '#End Region
@@ -305,7 +305,7 @@ With paged layout mode, you can set the margin of the document like this
 
 #### __[C#] __
 
-{{region margin}}
+{{source=..\SamplesCS\RichTextEditor\FAQ.cs region=margin}}
 	            
 	            this.radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged;
 	            this.radRichTextEditor1.Document.SectionDefaultPageMargin = new Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60);
@@ -316,7 +316,7 @@ With paged layout mode, you can set the margin of the document like this
 
 #### __[VB.NET] __
 
-{{region margin}}
+{{source=..\SamplesVB\RichTextEditor\FAQ.vb region=margin}}
 	        Me.radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged
 	        Me.radRichTextEditor1.Document.SectionDefaultPageMargin = New Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60)
 	        '#End Region

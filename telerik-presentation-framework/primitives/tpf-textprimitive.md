@@ -39,7 +39,7 @@ Use the __TextPrimitive__ class whenever you need to display text as part of ren
 
 #### __[C#] Creating a TextPrimitive__
 
-{{region myTextPrimitiveElement}}
+{{source=..\SamplesCS\TPF\Primitives\TextPrimitive1\MyTextPrimitiveElement.cs region=myTextPrimitiveElement}}
 	    public class MyTextPrimitiveElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -64,7 +64,7 @@ Use the __TextPrimitive__ class whenever you need to display text as part of ren
 
 #### __[VB.NET] Creating a TextPrimitive__
 
-{{region myTextPrimitiveElement}}
+{{source=..\SamplesVB\TPF\Primitives\TextPrimitive1\MyTextPrimitiveElement.vb region=myTextPrimitiveElement}}
 	Public Class MyTextPrimitiveElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

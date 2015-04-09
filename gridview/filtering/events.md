@@ -21,7 +21,7 @@ There are two events that are raised  when the data in the RadGridView is filter
 
 #### __[C#]__
 
-{{region events}}
+{{source=..\SamplesCS\GridView\Filtering\Filtering Events.cs region=events}}
 	            radGridView1.FilterChanging += new Telerik.WinControls.UI.GridViewCollectionChangingEventHandler(radGridView1_FilterChanging);
 	            radGridView1.FilterChanged += new Telerik.WinControls.UI.GridViewCollectionChangedEventHandler(radGridView1_FilterChanged);
 	{{endregion}}
@@ -30,7 +30,7 @@ There are two events that are raised  when the data in the RadGridView is filter
 
 #### __[C#]__
 
-{{region events1}}
+{{source=..\SamplesCS\GridView\Filtering\Filtering Events.cs region=events1}}
 	        void radGridView1_FilterChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
 	        {
 	            
@@ -46,7 +46,7 @@ There are two events that are raised  when the data in the RadGridView is filter
 
 #### __[VB.NET]__
 
-{{region events}}
+{{source=..\SamplesVB\GridView\Filtering\Filtering Events.vb region=events}}
 	    Private Sub RadGridView1_FilterChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.FilterChanging
 	
 	    End Sub
@@ -76,7 +76,7 @@ You are also able to cancel the filtering operation by setting the __Cancel__ pr
 
 #### __[C#]__
 
-{{region cancelFilteringEvent}}
+{{source=..\SamplesCS\GridView\Filtering\Filtering Events.cs region=cancelFilteringEvent}}
 	        void radGridView1_FilterChanging1(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
 	        {
 	            e.Cancel = true;
@@ -87,7 +87,7 @@ You are also able to cancel the filtering operation by setting the __Cancel__ pr
 
 #### __[VB.NET]__
 
-{{region cancelFilteringEvent}}
+{{source=..\SamplesVB\GridView\Filtering\Filtering Events.vb region=cancelFilteringEvent}}
 	    Private Sub RadGridView1_FilterChanging1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.FilterChanging
 	        e.Cancel = True
 	    End Sub
@@ -101,7 +101,7 @@ Since the __FilterDescriptors__ collection implements the __INotifyCollectionCha
 
 #### __[C#]__
 
-{{region collectionChanged}}
+{{source=..\SamplesCS\GridView\Filtering\Filtering Events.cs region=collectionChanged}}
 	            this.radGridView1.FilterDescriptors.CollectionChanged += new Telerik.WinControls.Data.NotifyCollectionChangedEventHandler(FilterDescriptors_CollectionChanged);
 	{{endregion}}
 
@@ -109,7 +109,7 @@ Since the __FilterDescriptors__ collection implements the __INotifyCollectionCha
 
 #### __[C#]__
 
-{{region collectionChanged1}}
+{{source=..\SamplesCS\GridView\Filtering\Filtering Events.cs region=collectionChanged1}}
 	        void FilterDescriptors_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
 	        {
 	            
@@ -120,7 +120,7 @@ Since the __FilterDescriptors__ collection implements the __INotifyCollectionCha
 
 #### __[VB.NET]__
 
-{{region collectionChanged}}
+{{source=..\SamplesVB\GridView\Filtering\Filtering Events.vb region=collectionChanged}}
 	        AddHandler Me.RadGridView1.FilterDescriptors.CollectionChanged, AddressOf FilterDescriptors_CollectionChanged
 	{{endregion}}
 
@@ -128,7 +128,7 @@ Since the __FilterDescriptors__ collection implements the __INotifyCollectionCha
 
 #### __[VB.NET]__
 
-{{region collectionChanged1}}
+{{source=..\SamplesVB\GridView\Filtering\Filtering Events.vb region=collectionChanged1}}
 	    Private Sub FilterDescriptors_CollectionChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
 	        Throw New NotImplementedException
 	    End Sub

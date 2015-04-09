@@ -31,7 +31,7 @@ This tutorial demonstrates how to use __RadRangeSelector__ to get a fine grain v
 
 #### __[C#] __
 
-{{region set associatedControl}}
+{{source=..\SamplesCS\RangeSelector\RangeSelectorGettingStarted.cs region=set associatedControl}}
 	
 	            this.radRangeSelector1.AssociatedControl = this.radChartView1;
 	
@@ -41,7 +41,7 @@ This tutorial demonstrates how to use __RadRangeSelector__ to get a fine grain v
 
 #### __[VB.NET] __
 
-{{region set associatedControl}}
+{{source=..\SamplesVB\RangeSelector\RangeSelectorGettingStarted.vb region=set associatedControl}}
 	            Me.radRangeSelector1.AssociatedControl = Me.radChartView1
 	{{endregion}}
 

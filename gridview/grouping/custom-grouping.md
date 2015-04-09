@@ -58,7 +58,7 @@ The following example demonstrates how to handle the __CustomGrouping__ event to
 
 #### __[C#]__
 
-{{region usingCustomGrouping}}
+{{source=..\SamplesCS\GridView\Grouping\CustomGrouping.cs region=usingCustomGrouping}}
 	            this.radGridView1.EnableCustomGrouping = true;
 	            this.radGridView1.CustomGrouping += new GridViewCustomGroupingEventHandler(radGridView1_CustomGrouping);
 	
@@ -72,7 +72,7 @@ The following example demonstrates how to handle the __CustomGrouping__ event to
 
 #### __[C#]__
 
-{{region usingCustomGrouping1}}
+{{source=..\SamplesCS\GridView\Grouping\CustomGrouping.cs region=usingCustomGrouping1}}
 	        private void radGridView1_CustomGrouping(object sender, GridViewCustomGroupingEventArgs e)
 	        {
 	            string country = e.Row.Cells["Country"].Value.ToString();
@@ -106,7 +106,7 @@ The following example demonstrates how to handle the __CustomGrouping__ event to
 
 #### __[VB.NET]__
 
-{{region usingCustomGrouping}}
+{{source=..\SamplesVB\GridView\Grouping\CustomGrouping.vb region=usingCustomGrouping}}
 	        Me.RadGridView1.EnableCustomGrouping = True
 	
 	        Dim descriptor As New GroupDescriptor("Country")
@@ -117,7 +117,7 @@ The following example demonstrates how to handle the __CustomGrouping__ event to
 
 #### __[VB.NET]__
 
-{{region usingCustomGrouping1}}
+{{source=..\SamplesVB\GridView\Grouping\CustomGrouping.vb region=usingCustomGrouping1}}
 	    Private Sub RadGridView1_CustomGrouping(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCustomGroupingEventArgs) Handles RadGridView1.CustomGrouping
 	        Dim country As String = e.Row.Cells("Country").Value.ToString()
 	        Select Case country
@@ -157,7 +157,7 @@ The following example demonstrates how to use a custom grouping mechanism in Rad
 
 #### __[C#]__
 
-{{region usingGroupPredicate}}
+{{source=..\SamplesCS\GridView\Grouping\CustomGrouping1.cs region=usingGroupPredicate}}
 	            GroupDescriptor descriptor = new GroupDescriptor("ContactTitle");
 	            this.radGridView1.GroupDescriptors.Add(descriptor);
 	
@@ -169,7 +169,7 @@ The following example demonstrates how to use a custom grouping mechanism in Rad
 
 #### __[C#]__
 
-{{region usingGroupPredicate1}}
+{{source=..\SamplesCS\GridView\Grouping\CustomGrouping1.cs region=usingGroupPredicate1}}
 	        private object PerformGrouping(GridViewRowInfo row, int level)
 	        {
 	            string title = row.Cells["ContactTitle"].Value.ToString();
@@ -207,7 +207,7 @@ The following example demonstrates how to use a custom grouping mechanism in Rad
 
 #### __[VB.NET]__
 
-{{region usingGroupPredicate}}
+{{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=usingGroupPredicate}}
 	        Dim descriptor As New GroupDescriptor("ContactTitle")
 	        Me.RadGridView1.GroupDescriptors.Add(descriptor)
 	        Me.RadGridView1.MasterTemplate.GroupPredicate = New GroupPredicate(Of GridViewRowInfo)(AddressOf PerformGrouping)
@@ -217,7 +217,7 @@ The following example demonstrates how to use a custom grouping mechanism in Rad
 
 #### __[VB.NET]__
 
-{{region usingGroupPredicate1}}
+{{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=usingGroupPredicate1}}
 	    Private Function PerformGrouping(ByVal row As GridViewRowInfo, ByVal level As Integer) As Object
 	        Dim title As String = row.Cells("ContactTitle").Value.ToString()
 	        Dim groupKey As String

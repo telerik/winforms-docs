@@ -30,7 +30,7 @@ Follows the implementation of the Person and the Car classes:
 
 #### __[C#] Defining the Class and Sub Class__
 
-{{region classes}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToSubObjects.cs region=classes}}
 	        public class Person
 	        {
 	            public string _name = "";
@@ -110,7 +110,7 @@ Follows the implementation of the Person and the Car classes:
 
 #### __[VB.NET] Defining the Class and Sub Class__
 
-{{region classes}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToSubObjects.vb region=classes}}
 	    Public Class Person
 	        Public _name As String = ""
 	        Public _city As String = ""
@@ -182,7 +182,7 @@ Binding RadGridView to "Person" automatically creates three columns for all prop
 
 #### __[C#] Binding RadGridView__
 
-{{region bind radgridview}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToSubObjects.cs region=bind radgridview}}
 	            BindingList<Person> list = new BindingList<Person>();
 	            list.Add(new Person("Jessy Jones", "New York", new Car("BMW", 2011)));
 	            list.Add(new Person("Allan Trenton", "Las Vegas", new Car("Mercedes", 2011)));
@@ -197,7 +197,7 @@ Binding RadGridView to "Person" automatically creates three columns for all prop
 
 #### __[VB.NET] Binding RadGridView__
 
-{{region bind radgridview}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToSubObjects.vb region=bind radgridview}}
 	        Dim list As New BindingList(Of Person)
 	        list.Add(New Person("Jessy Jones", "New York", New Car("BMW", 2011)))
 	        list.Add(New Person("Allan Trenton", "Las Vegas", New Car("Mercedes", 2011)))
@@ -220,7 +220,7 @@ Now to setup the sub-property binding of the Car column, all you have to do is t
 
 #### __[C#] Binding to Objects with Sub Objects__
 
-{{region add sub property binding}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToSubObjects.cs region=add sub property binding}}
 	            radGridView1.Columns[2].FieldName = "Car.Model";
 	{{endregion}}
 
@@ -228,7 +228,7 @@ Now to setup the sub-property binding of the Car column, all you have to do is t
 
 #### __[VB.NET] Binding to Objects with Sub Objects__
 
-{{region add sub property binding}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToSubObjects.vb region=add sub property binding}}
 	        RadGridView1.Columns(2).FieldName = "Car.Model"
 	{{endregion}}
 

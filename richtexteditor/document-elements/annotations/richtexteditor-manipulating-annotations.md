@@ -39,7 +39,7 @@ By default all annotations are markup-only in the sense that they do not have an
 
 #### __[C#] __
 
-{{region contains}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=contains}}
 	
 	            bool containsBookamrks = this.radRichTextEditor1.Document.ContainsAnnotationMarkersOfType<BookmarkRangeStart>();
 	
@@ -51,7 +51,7 @@ By default all annotations are markup-only in the sense that they do not have an
 
 #### __[VB.NET] __
 
-{{region contains}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=contains}}
 	
 	        Dim containsBookamrks As Boolean = Me.radRichTextEditor1.Document.ContainsAnnotationMarkersOfType(Of BookmarkRangeStart)()
 	
@@ -123,7 +123,7 @@ By default all annotations are markup-only in the sense that they do not have an
 
 #### __[C#] __
 
-{{region inline}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=inline}}
 	
 	            Inline currentInline = this.radRichTextEditor1.Document.CaretPosition.GetCurrentInline();
 	
@@ -133,7 +133,7 @@ By default all annotations are markup-only in the sense that they do not have an
 
 #### __[VB.NET] __
 
-{{region inline}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=inline}}
 	
 	        Dim currentInline As Inline = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentInline()
 	
@@ -208,7 +208,7 @@ and then, check if this inline is contained in a range using one of the methods 
 
 #### __[C#] __
 
-{{region inRange}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=inRange}}
 	
 	            bool isInRange = this.radRichTextEditor1.Document.IsInAnnotationRange<BookmarkRangeStart>(inline);
 	
@@ -220,7 +220,7 @@ and then, check if this inline is contained in a range using one of the methods 
 
 #### __[VB.NET] __
 
-{{region inRange}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=inRange}}
 	
 	        Dim isInRange As Boolean = Me.radRichTextEditor1.Document.IsInAnnotationRange(Of BookmarkRangeStart)(inline)
 	
@@ -280,7 +280,7 @@ and then, check if this inline is contained in a range using one of the methods 
 
 #### __[C#] __
 
-{{region inRange1}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=inRange1}}
 	
 	            bool isInRange1 = this.radRichTextEditor1.Document.IsInAnnotationRange<BookmarkRangeStart>(inline, Filter, true);
 	
@@ -292,7 +292,7 @@ and then, check if this inline is contained in a range using one of the methods 
 
 #### __[VB.NET] __
 
-{{region inRange1}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=inRange1}}
 	
 	        Dim isInRange1 As Boolean = Me.radRichTextEditor1.Document.IsInAnnotationRange(Of BookmarkRangeStart)(inline, AddressOf Filter, True)
 	
@@ -346,7 +346,7 @@ Annotations can be inserted in the document using the following method of [RadDo
 
 #### __[C#] __
 
-{{region insert}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=insert}}
 	
 	            documentEditor.InsertAnnotationRange(new BookmarkRangeStart(), new BookmarkRangeEnd());
 	
@@ -356,7 +356,7 @@ Annotations can be inserted in the document using the following method of [RadDo
 
 #### __[VB.NET] __
 
-{{region insert}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=insert}}
 	
 	        documentEditor.InsertAnnotationRange(New BookmarkRangeStart(), New BookmarkRangeEnd())
 	
@@ -402,7 +402,7 @@ In order to delete an annotation, you need to obtain a reference to its range st
 
 #### __[C#] __
 
-{{region delete}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=delete}}
 	
 	            documentEditor.DeleteAnnotationRange(start);
 	
@@ -412,7 +412,7 @@ In order to delete an annotation, you need to obtain a reference to its range st
 
 #### __[VB.NET] __
 
-{{region delete}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=delete}}
 	
 	        documentEditor.DeleteAnnotationRange(start)
 	
@@ -446,7 +446,7 @@ Note that this method will remove the annotation, but will keep its contents. In
 
 #### __[C#] __
 
-{{region delete1}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=delete1}}
 	
 	            documentEditor.Document.Selection.SelectAnnotationRange(start);
 	            documentEditor.Delete(false);
@@ -457,7 +457,7 @@ Note that this method will remove the annotation, but will keep its contents. In
 
 #### __[VB.NET] __
 
-{{region delete1}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=delete1}}
 	
 	        documentEditor.Document.Selection.SelectAnnotationRange(start)
 	        documentEditor.Delete(False)
@@ -490,7 +490,7 @@ Some user scenarios require that there would be an easy way to split annotation 
 
 #### __[C#] __
 
-{{region split}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=split}}
 	
 	            documentEditor.SplitAnnotationRange(start);
 	            //or
@@ -502,7 +502,7 @@ Some user scenarios require that there would be an easy way to split annotation 
 
 #### __[VB.NET] __
 
-{{region split}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=split}}
 	
 	        documentEditor.SplitAnnotationRange(start)
 	        'or

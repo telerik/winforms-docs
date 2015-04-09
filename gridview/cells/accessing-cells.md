@@ -31,7 +31,7 @@ The example below modifies the second cell of the first row and sets a value gre
 
 #### __[C#] Accessing cells by index__
 
-{{region accessingCellsByIndex}}
+{{source=..\SamplesCS\GridView\Cells\AccessingCells.cs region=accessingCellsByIndex}}
 	            if ((decimal)radGridView1.Rows[0].Cells[5].Value > 10)
 	                radGridView1.Rows[0].Cells[5].Value = 10;
 	{{endregion}}
@@ -40,7 +40,7 @@ The example below modifies the second cell of the first row and sets a value gre
 
 #### __[VB.NET] Accessing cells by index__
 
-{{region accessingCellsByIndex}}
+{{source=..\SamplesVB\GridView\Cells\AccessingCells.vb region=accessingCellsByIndex}}
 	        If DirectCast(RadGridView1.Rows(0).Cells(5).Value, Decimal) > 10 Then
 	            RadGridView1.Rows(0).Cells(5).Value = 10
 	        End If
@@ -56,7 +56,7 @@ In this example we will change a cell value to 10 if it is greater than 10. In t
 
 #### __[C#] Accessing cells by column name__
 
-{{region accessingCellsByColumnName}}
+{{source=..\SamplesCS\GridView\Cells\AccessingCells.cs region=accessingCellsByColumnName}}
 	            if ((decimal)radGridView1.Rows[0].Cells["UnitPrice"].Value > 10)
 	                radGridView1.Rows[0].Cells["UnitPrice"].Value = 10;
 	{{endregion}}
@@ -65,7 +65,7 @@ In this example we will change a cell value to 10 if it is greater than 10. In t
 
 #### __[VB.NET] Accessing cells by column name__
 
-{{region accessingCellsByColumnName}}
+{{source=..\SamplesVB\GridView\Cells\AccessingCells.vb region=accessingCellsByColumnName}}
 	        If DirectCast(RadGridView1.Rows(0).Cells("UnitPrice").Value, Decimal) > 10 Then
 	            RadGridView1.Rows(0).Cells("UnitPrice").Value = 10
 	        End If
@@ -92,7 +92,7 @@ When assigning values to several cells subsequently, the RadGridView should be p
 
 #### __[C#] Updating cells__
 
-{{region updateCells}}
+{{source=..\SamplesCS\GridView\Cells\AccessingCells.cs region=updateCells}}
 	            radGridView1.TableElement.BeginUpdate();
 	            radGridView1.Rows[0].Cells["UnitPrice"].Value = 10;
 	            radGridView1.Rows[1].Cells["UnitPrice"].Value = 20;
@@ -106,7 +106,7 @@ When assigning values to several cells subsequently, the RadGridView should be p
 
 #### __[VB.NET] Updating cells__
 
-{{region updateCells}}
+{{source=..\SamplesVB\GridView\Cells\AccessingCells.vb region=updateCells}}
 	        Me.RadGridView1.TableElement.BeginUpdate()
 	        RadGridView1.Rows(0).Cells("UnitPrice").Value = 10
 	        RadGridView1.Rows(1).Cells("UnitPrice").Value = 20

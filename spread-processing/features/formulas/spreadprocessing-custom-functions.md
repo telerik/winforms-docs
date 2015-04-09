@@ -63,7 +63,7 @@ __Example 1__ shows how to register a function class ArgumentsFunction, inherito
 
 #### __[C#] Example 1: Register custom function__
 
-{{region radspreadprocessing-features-formulas-custom-functions_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.cs region=radspreadprocessing-features-formulas-custom-functions_0}}
 	            FunctionManager.RegisterFunction(new ArgumentsFunction());
 	{{endregion}}
 
@@ -71,7 +71,7 @@ __Example 1__ shows how to register a function class ArgumentsFunction, inherito
 
 #### __[VB] Example 1: Register custom function__
 
-{{region radspreadprocessing-features-formulas-custom-functions_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_0}}
 	        FunctionManager.RegisterFunction(New ArgumentsFunction())
 	        '#End Region
 	    End Sub
@@ -500,7 +500,7 @@ __Example 2__ creates an instance of ArgumentConversionRules:
 
 #### __[C#] Example 2: Create ArgumentConversionRules__
 
-{{region radspreadprocessing-features-formulas-custom-functions_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.cs region=radspreadprocessing-features-formulas-custom-functions_1}}
 	        public static readonly ArgumentConversionRules BoolFunctionConversion = new ArgumentConversionRules(
 	                    emptyIndirectArgument: ArgumentInterpretation.Ignore,
 	                    textNumberDirectArgument: ArgumentInterpretation.TreatAsError,
@@ -514,7 +514,7 @@ __Example 2__ creates an instance of ArgumentConversionRules:
 
 #### __[VB] Example 2: Create ArgumentConversionRules__
 
-{{region radspreadprocessing-features-formulas-custom-functions_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_1}}
 	    Public Shared ReadOnly BoolFunctionConversion As New ArgumentConversionRules(emptyIndirectArgument:=ArgumentInterpretation.Ignore, textNumberDirectArgument:=ArgumentInterpretation.TreatAsError, textNumberIndirectArgument:=ArgumentInterpretation.Ignore, nonTextNumberDirectArgument:=ArgumentInterpretation.TreatAsError, nonTextNumberIndirectArgument:=ArgumentInterpretation.Ignore, arrayArgument:=ArrayArgumentInterpretation.UseAllElements)
 	#End Region
 	
@@ -919,7 +919,7 @@ __Example 3__ shows how to create an instance of FunctionInfo class.
 
 #### __[C#] Example 3: Create FunctionInfo__
 
-{{region radspreadprocessing-features-formulas-custom-functions_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.cs region=radspreadprocessing-features-formulas-custom-functions_2}}
 	            string functionName = "ADD";
 	
 	            string description = "Adds all the numbers in range of cells.";
@@ -942,7 +942,7 @@ __Example 3__ shows how to create an instance of FunctionInfo class.
 
 #### __[VB] Example 3: Create FunctionInfo__
 
-{{region radspreadprocessing-features-formulas-custom-functions_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_2}}
 	        Dim functionName As String = "ADD"
 	
 	        Dim description As String = "Adds all the numbers in range of cells."
@@ -1299,7 +1299,7 @@ __Example 4__ shows how to create the 'ARGUMENTS' function.
 
 #### __[C#] Example 4: Create ARGUMENTS function__
 
-{{region radspreadprocessing-features-formulas-custom-functions_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.cs region=radspreadprocessing-features-formulas-custom-functions_3}}
 	
 	        public class Arguments : FunctionBase
 	        {
@@ -1354,7 +1354,7 @@ __Example 4__ shows how to create the 'ARGUMENTS' function.
 
 #### __[VB] Example 4: Create ARGUMENTS function__
 
-{{region radspreadprocessing-features-formulas-custom-functions_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_3}}
 	
 	    Public Class Arguments
 	        Inherits FunctionBase
@@ -1669,7 +1669,7 @@ __Example 5__ shows how to create the 'E' function.
 
 #### __[C#] Example 5: Create E function__
 
-{{region radspreadprocessing-features-formulas-custom-functions_4}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.cs region=radspreadprocessing-features-formulas-custom-functions_4}}
 	        public class E : FunctionBase
 	        {
 	            public static readonly string FunctionName = "E";
@@ -1709,7 +1709,7 @@ __Example 5__ shows how to create the 'E' function.
 
 #### __[VB] Example 5: Create E function__
 
-{{region radspreadprocessing-features-formulas-custom-functions_4}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_4}}
 	    Public Class E
 	        Inherits FunctionBase
 	        Public Shared ReadOnly FunctionName As String = "E"

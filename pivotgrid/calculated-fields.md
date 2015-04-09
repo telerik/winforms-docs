@@ -47,7 +47,7 @@ The first task is to decide what the calculation formula that you want to use is
 
 #### __[C#] __
 
-{{region CalculatedFieldClass}}
+{{source=..\SamplesCS\PivotGrid\PivotGridCalculatedFields.cs region=CalculatedFieldClass}}
 	
 	    public class CommissionCalculatedField : CalculatedField
 	    {
@@ -88,7 +88,7 @@ The first task is to decide what the calculation formula that you want to use is
 
 #### __[VB.NET] __
 
-{{region CalculatedFieldClass}}
+{{source=..\SamplesVB\PivotGrid\PivotGridCalculatedFields.vb region=CalculatedFieldClass}}
 	Public Class CommissionCalculatedField
 	    Inherits CalculatedField
 	    Private extendPriceField As RequiredField
@@ -125,7 +125,7 @@ Now it is time to add a new instance of this class to the CalculatedFields colle
 
 #### __[C#] __
 
-{{region AddCalculatedField}}
+{{source=..\SamplesCS\PivotGrid\PivotGridCalculatedFields.cs region=AddCalculatedField}}
 	          using (radPivotGrid1.PivotGridElement.DeferRefresh())
 	          {
 	              CommissionCalculatedField calculatedField = new CommissionCalculatedField();
@@ -139,7 +139,7 @@ Now it is time to add a new instance of this class to the CalculatedFields colle
 
 #### __[VB.NET] __
 
-{{region AddCalculatedField}}
+{{source=..\SamplesVB\PivotGrid\PivotGridCalculatedFields.vb region=AddCalculatedField}}
 	        Using radPivotGrid1.PivotGridElement.DeferRefresh()
 	            Dim calculatedField As New CommissionCalculatedField()
 	            calculatedField.Name = "Commission"

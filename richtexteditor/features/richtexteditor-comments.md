@@ -97,7 +97,7 @@ You can customize the looks of the comments by attaching to the __CommentShowing
 
 #### __[C#] __
 
-{{region event}}
+{{source=..\SamplesCS\RichTextEditor\Features\Comments.cs region=event}}
 	        
 	        private void radRichTextEditor1_CommentShowing(object sender, Telerik.WinForms.Documents.UI.CommentShowingEventArgs e)
 	        {
@@ -121,7 +121,7 @@ You can customize the looks of the comments by attaching to the __CommentShowing
 
 #### __[VB.NET] __
 
-{{region event}}
+{{source=..\SamplesVB\RichTextEditor\Features\Comments.vb region=event}}
 	
 	    Private Sub radRichTextEditor1_CommentShowing(ByVal sender As Object, ByVal e As Telerik.WinForms.Documents.UI.CommentShowingEventArgs)
 	        If e.Comment.Author = "Boss" Then

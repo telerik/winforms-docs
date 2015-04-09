@@ -27,6 +27,8 @@ __RadSpreadProcessing__ allows you to prepare and modify tabular data. Even thou
 * [Avoid Using the Additional Calculations Options
             Provided by the Shapes and Images](#avoid-using-the-additional-calculations-options-provided-by-the-shapes-and-images)
 
+* [Avoid Cell Value Type Parsing](#avoid-cell-value-type-parsing)
+
 ## Reduce Layout Updates Frequency
 
 Calculating the layout is an operation computing the width of each column and the height of each row, the size of the text contained in the cells and many
@@ -40,7 +42,7 @@ Internally there are many mechanisms used to lower the number of calculations, b
 
 #### __[C#] Example 1: Suspend Layout Updates__
 
-{{region radspreadprocessing-performance_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\SpreadProcessingPerformance.cs region=radspreadprocessing-performance_0}}
 	            
 	            Workbook workbook = new Workbook();
 	            workbook.SuspendLayoutUpdate();
@@ -53,7 +55,7 @@ Internally there are many mechanisms used to lower the number of calculations, b
 
 #### __[VB] Example 1: Suspend Layout Updates__
 
-{{region radspreadprocessing-performance_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\SpreadProcessingPerformance.vb region=radspreadprocessing-performance_0}}
 	
 	        Dim workbook As New Workbook()
 	        workbook.SuspendLayoutUpdate()
@@ -134,7 +136,7 @@ Note that if an exception is thrown between the two method calls, the resuming o
 
 #### __[C#] Example 2: Suspend Layout Updates in UndoScope__
 
-{{region radspreadprocessing-performance_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\SpreadProcessingPerformance.cs region=radspreadprocessing-performance_1}}
 	            
 	            Workbook workbook = new Workbook();
 	            using (new UpdateScope(workbook.SuspendLayoutUpdate, workbook.ResumeLayoutUpdate))
@@ -148,7 +150,7 @@ Note that if an exception is thrown between the two method calls, the resuming o
 
 #### __[VB] Example 2: Suspend Layout Updates in UndoScope__
 
-{{region radspreadprocessing-performance_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\SpreadProcessingPerformance.vb region=radspreadprocessing-performance_1}}
 	
 	        Dim workbook As New Workbook()
 	
@@ -223,7 +225,7 @@ Preserving information about the steps in the undo stack is usually not a time c
 
 #### __[C#] Example 3: Combine Steps In Undo Group__
 
-{{region radspreadprocessing-performance_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\SpreadProcessingPerformance.cs region=radspreadprocessing-performance_2}}
 	            
 	            Workbook workbook = new Workbook();
 	            workbook.History.BeginUndoGroup();
@@ -236,7 +238,7 @@ Preserving information about the steps in the undo stack is usually not a time c
 
 #### __[VB] Example 3: Combine Steps In Undo Group__
 
-{{region radspreadprocessing-performance_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\SpreadProcessingPerformance.vb region=radspreadprocessing-performance_2}}
 	
 	        Dim workbook As New Workbook()
 	        workbook.History.BeginUndoGroup()
@@ -294,7 +296,7 @@ Note that if an exception is thrown between the two method calls, the ending of 
 
 #### __[C#] Example 4: Combine Steps In Undo Group Using UndoScope__
 
-{{region radspreadprocessing-performance_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\SpreadProcessingPerformance.cs region=radspreadprocessing-performance_3}}
 	        
 	            Workbook workbook = new Workbook();
 	            using (new UpdateScope(workbook.History.BeginUndoGroup, workbook.History.EndUndoGroup))
@@ -308,7 +310,7 @@ Note that if an exception is thrown between the two method calls, the ending of 
 
 #### __[VB] Example 4: Combine Steps In Undo Group Using UndoScope__
 
-{{region radspreadprocessing-performance_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\SpreadProcessingPerformance.vb region=radspreadprocessing-performance_3}}
 	
 	        Dim workbook As New Workbook()
 	        Dim updateScope = New UpdateScope(AddressOf workbook.History.BeginUndoGroup, AddressOf workbook.History.EndUndoGroup)
@@ -357,7 +359,7 @@ As you already know from the [Reduce the Number of Undo Steps section](#reduce-t
 
 #### __[C#] Example 5: Disable History__
 
-{{region radspreadprocessing-performance_4}}
+{{source=..\SamplesCS\RadSpreadProcessing\SpreadProcessingPerformance.cs region=radspreadprocessing-performance_4}}
 	            
 	            workbook.History.IsEnabled = false;
 	            // The code which generates the document
@@ -369,7 +371,7 @@ As you already know from the [Reduce the Number of Undo Steps section](#reduce-t
 
 #### __[VB] Example 5: Disable History__
 
-{{region radspreadprocessing-performance_4}}
+{{source=..\SamplesVB\RadSpreadProcessing\SpreadProcessingPerformance.vb region=radspreadprocessing-performance_4}}
 	
 	        workbook.History.IsEnabled = False
 	        ' The code which generates the document
@@ -403,7 +405,7 @@ If an exception is thrown before enabling the history, it will not be enabled an
 
 #### __[C#] Example 6: Disable and Enable History Using UndoScope__
 
-{{region radspreadprocessing-performance_5}}
+{{source=..\SamplesCS\RadSpreadProcessing\SpreadProcessingPerformance.cs region=radspreadprocessing-performance_5}}
 	
 	            using (new UpdateScope(
 	                () => { workbook.History.IsEnabled = false; },
@@ -418,7 +420,7 @@ If an exception is thrown before enabling the history, it will not be enabled an
 
 #### __[VB] Example 6: Disable and Enable History Using UndoScope__
 
-{{region radspreadprocessing-performance_5}}
+{{source=..\SamplesVB\RadSpreadProcessing\SpreadProcessingPerformance.vb region=radspreadprocessing-performance_5}}
 	
 	        Using New UpdateScope(Function()
 	                                  workbook.History.IsEnabled = False
@@ -467,10 +469,26 @@ You should avoid using the methods for setting the same properties with the __ad
 
 * SetRotationAngle()
 
+## Avoid Cell Value Type Parsing
+
+When setting values to cells, the cell value type is determined by an internal parsing mechanism. If you are sure what cell value type should
+          be produced by the passed value, set it specifically. This will bypass the parsing and increase the performance of the application.
+        
+
+The easiest way to achieve this is by using the __SetValue()__ overload with the respective CLR type 
+          (DateTime, Double, etc.) or in the case of formula value type and text value type - 
+          the __SetValueAsFormula()__ and __SetValueAsText()__ methods respectively.
+        
+
+More information regarding cell value types is available in the  [Cell Value Types]({%slug spreadprocessing-working-with-cells-cell-value-types%}) articles.
+        
+
 # See Also
 
- * [History]({%slug spreadprocessing-features-history%})
+ * [Cell Value Types]({%slug spreadprocessing-working-with-cells-cell-value-types%})
 
  * [Get, Set and Clear Cell Properties]({%slug spreadprocessing-working-with-cells-get-set-clear-properties%})
 
  * [Shapes and Images]({%slug spreadprocessing-features-shapes-and-images%})
+
+ * [History]({%slug spreadprocessing-features-history%})

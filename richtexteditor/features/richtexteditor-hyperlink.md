@@ -46,7 +46,7 @@ For example, a link to our site can be inserted in the document programmatically
 
 #### __[C#] __
 
-{{region insert}}
+{{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=insert}}
 	
 	            HyperlinkInfo info = new HyperlinkInfo()
 	            {
@@ -62,7 +62,7 @@ For example, a link to our site can be inserted in the document programmatically
 
 #### __[VB.NET] __
 
-{{region insert}}
+{{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=insert}}
 	
 	        Dim info As New HyperlinkInfo() With {.NavigateUri = "http://www.telerik.com", .Target = HyperlinkTargets.Blank, .IsAnchor = False}
 	        Me.radRichTextEditor1.InsertHyperlink(info, "RichTextBox demo")
@@ -137,7 +137,7 @@ A link to a bookmark is inserted by specifying the bookmark's name as NavigateUr
 
 #### __[C#] __
 
-{{region remove}}
+{{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=remove}}
 	
 	            this.radRichTextEditor1.RemoveHyperlink();
 	
@@ -147,7 +147,7 @@ A link to a bookmark is inserted by specifying the bookmark's name as NavigateUr
 
 #### __[VB.NET] __
 
-{{region remove}}
+{{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=remove}}
 	
 	        Me.radRichTextEditor1.RemoveHyperlink()
 	
@@ -234,7 +234,7 @@ Removing a hyperlink (and keeping the part of the document that the hyperlink sp
 
 #### __[C#] __
 
-{{region remove}}
+{{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=remove}}
 	
 	            this.radRichTextEditor1.RemoveHyperlink();
 	
@@ -244,7 +244,7 @@ Removing a hyperlink (and keeping the part of the document that the hyperlink sp
 
 #### __[VB.NET] __
 
-{{region remove}}
+{{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=remove}}
 	
 	        Me.radRichTextEditor1.RemoveHyperlink()
 	
@@ -320,7 +320,7 @@ Here is an example that creates a document with a hyperlink spanning several par
 
 #### __[C#] __
 
-{{region startend}}
+{{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=startend}}
 	
 	            HyperlinkRangeStart hyperlinkStart = new HyperlinkRangeStart();
 	            HyperlinkRangeEnd hyperlinkEnd = new HyperlinkRangeEnd();
@@ -356,7 +356,7 @@ Here is an example that creates a document with a hyperlink spanning several par
 
 #### __[VB.NET] __
 
-{{region startend}}
+{{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=startend}}
 	
 	        Dim hyperlinkStart As New HyperlinkRangeStart()
 	        Dim hyperlinkEnd As New HyperlinkRangeEnd()
@@ -417,7 +417,7 @@ For instance, here is how you can delete all hyperlinks in the document and repl
 
 #### __[C#] __
 
-{{region delete}}
+{{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=delete}}
 	            IEnumerable<HyperlinkRangeStart> links = this.radRichTextEditor1.Document.EnumerateChildrenOfType<HyperlinkRangeStart>();
 	            foreach (HyperlinkRangeStart link in links)
 	            {
@@ -432,7 +432,7 @@ For instance, here is how you can delete all hyperlinks in the document and repl
 
 #### __[VB.NET] __
 
-{{region delete}}
+{{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=delete}}
 	        Dim links As IEnumerable(Of HyperlinkRangeStart) = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of HyperlinkRangeStart)()
 	        For Each link As HyperlinkRangeStart In links
 	            Me.radRichTextEditor1.Document.CaretPosition.MoveToInline(TryCast(link.FirstLayoutBox, Telerik.WinForms.Documents.Layout.InlineLayoutBox), 0)

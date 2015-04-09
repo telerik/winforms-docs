@@ -41,7 +41,7 @@ The example below demonstrates [creating an elliptical path]({%slug carousel-usi
 
 #### __[C#] Defining the Path and Populating the Carousel Items__
 
-{{region carouselGettingStarted}}
+{{source=..\SamplesCS\Carousel\CarouselGettingStarted.cs region=carouselGettingStarted}}
 	        private void CarouselGettingStarted_Load(object sender, EventArgs e)
 	        {
 	             // define an elliptical path
@@ -69,7 +69,7 @@ The example below demonstrates [creating an elliptical path]({%slug carousel-usi
 
 #### __[VB.NET] Defining the Path and Populating the Carousel Items__
 
-{{region carouselGettingStarted}}
+{{source=..\SamplesVB\Carousel\CarouselGettingStarted.vb region=carouselGettingStarted}}
 	    Private Sub CarouselGettingStarted_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        ' define an elliptical path
 	        Dim path As New CarouselEllipsePath()

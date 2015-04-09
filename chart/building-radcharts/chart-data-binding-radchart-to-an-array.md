@@ -25,7 +25,7 @@ To bind a __RadChart__ to an
 
 #### __[C#] Binding to array__
 
-{{region bindToArray}}
+{{source=..\SamplesCS\Chart\DataBindingToArray.cs region=bindToArray}}
 	            int[] intArray = new int[4] { 10, 12, 13, 5 };
 	            radChart1.DataSource = intArray;
 	{{endregion}}
@@ -34,7 +34,7 @@ To bind a __RadChart__ to an
 
 #### __[VB.NET] Binding to array__
 
-{{region bindToArray}}
+{{source=..\SamplesVB\Chart\DataBindingToArray.vb region=bindToArray}}
 	        RadChart1.DataSource = New Double() {1.4, 1.9, 3.6, 3.6, 4.1}
 	        RadChart1.ChartTitle.TextBlock.Text = "Units Purchased (Thousands)"
 	{{endregion}}

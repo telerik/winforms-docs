@@ -39,7 +39,7 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 
 #### __[C#] Loading package resource__
 
-{{region LoadPackageResource}}
+{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=LoadPackageResource}}
 	            ThemeResolutionService.LoadPackageResource("SamplesCS.CustomTheme.tssp");
 	{{endregion}}
 
@@ -47,7 +47,7 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 
 #### __[VB.NET] Loading package resource__
 
-{{region LoadPackageResource}}
+{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=LoadPackageResource}}
 	        ThemeResolutionService.LoadPackageResource("SamplesVB.CustomTheme.tssp")
 	{{endregion}}
 
@@ -57,7 +57,7 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 
 #### __[C#] Loading package file__
 
-{{region LoadPackageFile}}
+{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=LoadPackageFile}}
 	            ThemeResolutionService.LoadPackageFile(@"C:\CustomTheme.tssp");
 	{{endregion}}
 
@@ -65,7 +65,7 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 
 #### __[VB.NET] Loading package file__
 
-{{region LoadPackageFile}}
+{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=LoadPackageFile}}
 	        ThemeResolutionService.LoadPackageFile("C:\CustomTheme.tssp")
 	{{endregion}}
 
@@ -79,7 +79,7 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 
 #### __[C#] __
 
-{{region setting a theme for the whole application}}
+{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=setting a theme for the whole application}}
 	            ThemeResolutionService.ApplicationThemeName = "CustomTheme";
 	{{endregion}}
 
@@ -87,7 +87,7 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 
 #### __[VB.NET] __
 
-{{region setting a theme for the whole application}}
+{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=setting a theme for the whole application}}
 	        ThemeResolutionService.ApplicationThemeName = "CustomTheme"
 	{{endregion}}
 
@@ -97,7 +97,7 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 
 #### __[C#] __
 
-{{region setting a theme to single control instance}}
+{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=setting a theme to single control instance}}
 	            radButton1.ThemeName = "CustomTheme";
 	{{endregion}}
 
@@ -105,7 +105,7 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 
 #### __[VB.NET] __
 
-{{region setting a theme to single control instance}}
+{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=setting a theme to single control instance}}
 	        radButton1.ThemeName = "CustomTheme"
 	{{endregion}}
 
@@ -115,7 +115,7 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 
 #### __[C#] __
 
-{{region setting a theme to all controls from the same kind in a form}}
+{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=setting a theme to all controls from the same kind in a form}}
 	            foreach (Control control in this.Controls)
 	            {
 	                RadButton button = control as RadButton;
@@ -130,7 +130,7 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 
 #### __[VB.NET] __
 
-{{region setting a theme to all controls from the same kind in a form}}
+{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=setting a theme to all controls from the same kind in a form}}
 	        For Each button As RadButton In Me.Controls
 	            If button IsNot Nothing Then
 	                button.ThemeName = "CustomTheme"

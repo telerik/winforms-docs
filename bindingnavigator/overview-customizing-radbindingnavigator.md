@@ -21,7 +21,7 @@ Each of the control's elements can be accessed and customized. Once you access t
 
 #### __[C#] __
 
-{{region custradBindingNavigator1}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadBindingNavigatorForm.cs region=custradBindingNavigator1}}
 	
 	            CommandBarButton newButton = new CommandBarButton();
 	            newButton.Image = Properties.Resources.details_icon;
@@ -36,7 +36,7 @@ Each of the control's elements can be accessed and customized. Once you access t
 
 #### __[VB.NET] __
 
-{{region custradBindingNavigator1}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadBindingNavigatorForm.vb region=custradBindingNavigator1}}
 	
 	            Dim newButton As New CommandBarButton()
 	            newButton.Image = My.Resources.details_icon

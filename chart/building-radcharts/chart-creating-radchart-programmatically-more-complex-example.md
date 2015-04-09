@@ -34,7 +34,7 @@ The figure above shows a more complex chart than the [minimal example of program
 
 #### __[C#] Extended example__
 
-{{region extendedExample}}
+{{source=..\SamplesCS\Chart\CreatingRadChartProgrammaticaly2.cs region=extendedExample}}
 	            // Define chart and title
 	            RadChart radChart = new RadChart();
 	            radChart.ChartTitle.TextBlock.Text = "My RadChart";
@@ -107,7 +107,7 @@ The figure above shows a more complex chart than the [minimal example of program
 
 #### __[VB.NET] Extended example__
 
-{{region extendedExample}}
+{{source=..\SamplesVB\Chart\CreatingRadChartProgrammaticaly2.vb region=extendedExample}}
 	        ' Define chart and title
 	        Dim radChart As New RadChart()
 	        radChart.ChartTitle.TextBlock.Text = "My RadChart"

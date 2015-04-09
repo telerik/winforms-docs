@@ -25,12 +25,12 @@ __Section__ is a BlockContainer element which can contain other block elements. 
 ## Inserting a Section
 
 You can use the following code snippet to create a __Section__ element and add it to a
-          [](dd4dbe18-3a7a-4b31-a1e4-2b2ff6fba91e):
+          [RadFlowDocument]({%slug wordsprocessing-model-radflowdocument%}):
         
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-section_0}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingSection.cs region=radwordsprocessing-model-section_0}}
 	            Telerik.Windows.Documents.Flow.Model.Section section = new Telerik.Windows.Documents.Flow.Model.Section(document);
 	            document.Sections.Add(section);
 	{{endregion}}
@@ -39,7 +39,7 @@ You can use the following code snippet to create a __Section__ element and add i
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-section_0}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_0}}
 	            Dim section As New Telerik.Windows.Documents.Flow.Model.Section(document)
 	            document.Sections.Add(section)
 	            '#End Region
@@ -79,7 +79,12 @@ You can use the following code snippet to create a __Section__ element and add i
 	            Dim paragraph As Telerik.Windows.Documents.Flow.Model.Paragraph = section.Blocks.AddParagraph()
 	            Dim table As Telerik.Windows.Documents.Flow.Model.Table = section.Blocks.AddTable()
 	            '#End Region
-	        End Sub
+	    End Sub
+	    Private Sub Rotate(ByVal section As Telerik.Windows.Documents.Flow.Model.Section)
+	        '#Region "radwordsprocessing-model-section_7"
+	        section.Rotate(PageOrientation.Landscape)
+	        '#End Region
+	    End Sub
 	    End Class
 
 
@@ -90,7 +95,7 @@ You can also use the __AddSection()__ method of the __Sections__ collection of a
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-section_1}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingSection.cs region=radwordsprocessing-model-section_1}}
 	            Telerik.Windows.Documents.Flow.Model.Section section = document.Sections.AddSection();
 	{{endregion}}
 
@@ -98,7 +103,7 @@ You can also use the __AddSection()__ method of the __Sections__ collection of a
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-section_1}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_1}}
 	            Dim section As Telerik.Windows.Documents.Flow.Model.Section = document.Sections.AddSection()
 	            '#End Region
 	        End Sub
@@ -131,7 +136,12 @@ You can also use the __AddSection()__ method of the __Sections__ collection of a
 	            Dim paragraph As Telerik.Windows.Documents.Flow.Model.Paragraph = section.Blocks.AddParagraph()
 	            Dim table As Telerik.Windows.Documents.Flow.Model.Table = section.Blocks.AddTable()
 	            '#End Region
-	        End Sub
+	    End Sub
+	    Private Sub Rotate(ByVal section As Telerik.Windows.Documents.Flow.Model.Section)
+	        '#Region "radwordsprocessing-model-section_7"
+	        section.Rotate(PageOrientation.Landscape)
+	        '#End Region
+	    End Sub
 	    End Class
 
 
@@ -146,7 +156,7 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-section_2}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingSection.cs region=radwordsprocessing-model-section_2}}
 	            section.PageMargins = new Telerik.Windows.Documents.Primitives.Padding(10, 10, 5, 5);
 	{{endregion}}
 
@@ -154,7 +164,7 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-section_2}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_2}}
 	            section.PageMargins = New Telerik.Windows.Documents.Primitives.Padding(10, 10, 5, 5)
 	            '#End Region
 	
@@ -181,17 +191,26 @@ The __Section__ exposes several properties that allow you to customize the layou
 	            Dim paragraph As Telerik.Windows.Documents.Flow.Model.Paragraph = section.Blocks.AddParagraph()
 	            Dim table As Telerik.Windows.Documents.Flow.Model.Table = section.Blocks.AddTable()
 	            '#End Region
-	        End Sub
+	    End Sub
+	    Private Sub Rotate(ByVal section As Telerik.Windows.Documents.Flow.Model.Section)
+	        '#Region "radwordsprocessing-model-section_7"
+	        section.Rotate(PageOrientation.Landscape)
+	        '#End Region
+	    End Sub
 	    End Class
 
 
 
 * __PageOrientation__: Specifies if the pages in the section should be in Portrait or in Landscape orientation.
+              This property is used to determine the actual size of the paper to use on the printer and does not reflect the document's visualization.
+              In order to show the document in different mode you can use the [Rotate](#
+--------rotating-a-section
+------) method.
             
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-section_3}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingSection.cs region=radwordsprocessing-model-section_3}}
 	            section.PageOrientation = PageOrientation.Landscape;
 	{{endregion}}
 
@@ -199,7 +218,7 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-section_3}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_3}}
 	            section.PageOrientation = PageOrientation.Landscape
 	            '#End Region
 	
@@ -222,7 +241,12 @@ The __Section__ exposes several properties that allow you to customize the layou
 	            Dim paragraph As Telerik.Windows.Documents.Flow.Model.Paragraph = section.Blocks.AddParagraph()
 	            Dim table As Telerik.Windows.Documents.Flow.Model.Table = section.Blocks.AddTable()
 	            '#End Region
-	        End Sub
+	    End Sub
+	    Private Sub Rotate(ByVal section As Telerik.Windows.Documents.Flow.Model.Section)
+	        '#Region "radwordsprocessing-model-section_7"
+	        section.Rotate(PageOrientation.Landscape)
+	        '#End Region
+	    End Sub
 	    End Class
 
 
@@ -234,7 +258,7 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-section_4}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingSection.cs region=radwordsprocessing-model-section_4}}
 	            section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4);
 	{{endregion}}
 
@@ -242,7 +266,7 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-section_4}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_4}}
 	            section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4)
 	            '#End Region
 	        End Sub
@@ -261,7 +285,12 @@ The __Section__ exposes several properties that allow you to customize the layou
 	            Dim paragraph As Telerik.Windows.Documents.Flow.Model.Paragraph = section.Blocks.AddParagraph()
 	            Dim table As Telerik.Windows.Documents.Flow.Model.Table = section.Blocks.AddTable()
 	            '#End Region
-	        End Sub
+	    End Sub
+	    Private Sub Rotate(ByVal section As Telerik.Windows.Documents.Flow.Model.Section)
+	        '#Region "radwordsprocessing-model-section_7"
+	        section.Rotate(PageOrientation.Landscape)
+	        '#End Region
+	    End Sub
 	    End Class
 
 
@@ -275,7 +304,7 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-section_5}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingSection.cs region=radwordsprocessing-model-section_5}}
 	            Telerik.Windows.Documents.Flow.Model.Header header = section.Headers.Add();
 	            Telerik.Windows.Documents.Flow.Model.Paragraph paragraph = header.Blocks.AddParagraph();
 	            paragraph.TextAlignment = Alignment.Right;
@@ -286,7 +315,7 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-section_5}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_5}}
 	            Dim header As Telerik.Windows.Documents.Flow.Model.Header = section.Headers.Add()
 	            Dim paragraph As Telerik.Windows.Documents.Flow.Model.Paragraph = header.Blocks.AddParagraph()
 	            paragraph.TextAlignment = Alignment.Right
@@ -299,7 +328,12 @@ The __Section__ exposes several properties that allow you to customize the layou
 	            Dim paragraph As Telerik.Windows.Documents.Flow.Model.Paragraph = section.Blocks.AddParagraph()
 	            Dim table As Telerik.Windows.Documents.Flow.Model.Table = section.Blocks.AddTable()
 	            '#End Region
-	        End Sub
+	    End Sub
+	    Private Sub Rotate(ByVal section As Telerik.Windows.Documents.Flow.Model.Section)
+	        '#Region "radwordsprocessing-model-section_7"
+	        section.Rotate(PageOrientation.Landscape)
+	        '#End Region
+	    End Sub
 	    End Class
 
 
@@ -370,7 +404,7 @@ Section derives
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-section_6}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingSection.cs region=radwordsprocessing-model-section_6}}
 	            Telerik.Windows.Documents.Flow.Model.Paragraph paragraph = section.Blocks.AddParagraph();
 	            Telerik.Windows.Documents.Flow.Model.Table table = section.Blocks.AddTable();
 	{{endregion}}
@@ -379,11 +413,41 @@ Section derives
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-section_6}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_6}}
 	            Dim paragraph As Telerik.Windows.Documents.Flow.Model.Paragraph = section.Blocks.AddParagraph()
 	            Dim table As Telerik.Windows.Documents.Flow.Model.Table = section.Blocks.AddTable()
 	            '#End Region
-	        End Sub
+	    End Sub
+	    Private Sub Rotate(ByVal section As Telerik.Windows.Documents.Flow.Model.Section)
+	        '#Region "radwordsprocessing-model-section_7"
+	        section.Rotate(PageOrientation.Landscape)
+	        '#End Region
+	    End Sub
+	    End Class
+
+
+
+## 
+        Rotating a Section
+      
+
+The __Section__ can be rotated in order to visualize its pages in Portrait or Landscape mode:
+        
+
+#### __[C#] __
+
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingSection.cs region=radwordsprocessing-model-section_7}}
+	            section.Rotate(PageOrientation.Landscape);
+	{{endregion}}
+
+
+
+#### __[VB.NET] __
+
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_7}}
+	        section.Rotate(PageOrientation.Landscape)
+	        '#End Region
+	    End Sub
 	    End Class
 
 

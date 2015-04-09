@@ -25,7 +25,7 @@ In order to enable multiple row selection, after setting the
 
 #### __[C#]__
 
-{{region multipleRowSelection}}
+{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=multipleRowSelection}}
 	            radGridView1.MultiSelect = true;
 	            radGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect;
 	{{endregion}}
@@ -34,7 +34,7 @@ In order to enable multiple row selection, after setting the
 
 #### __[VB.NET]__
 
-{{region multipleRowSelection}}
+{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=multipleRowSelection}}
 	        RadGridView1.MultiSelect = True
 	        RadGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect
 	{{endregion}}
@@ -62,7 +62,7 @@ In order to enable multiple cell selection, after setting the MultiSelect proper
 
 #### __[C#]__
 
-{{region multipleCellSelection}}
+{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=multipleCellSelection}}
 	            radGridView1.MultiSelect = true;
 	            radGridView1.SelectionMode = GridViewSelectionMode.CellSelect;
 	{{endregion}}
@@ -71,7 +71,7 @@ In order to enable multiple cell selection, after setting the MultiSelect proper
 
 #### __[VB.NET]__
 
-{{region multipleCellSelection}}
+{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=multipleCellSelection}}
 	        RadGridView1.MultiSelect = True
 	        RadGridView1.SelectionMode = GridViewSelectionMode.CellSelect
 	{{endregion}}
@@ -104,7 +104,7 @@ In case you do not want to see the TranslucentRectangle
 
 #### __[C#]__
 
-{{region transRectangle}}
+{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=transRectangle}}
 	            radGridView1.TableElement.ShowTranslucentSelectionRectangle = false;
 	{{endregion}}
 
@@ -112,7 +112,7 @@ In case you do not want to see the TranslucentRectangle
 
 #### __[VB.NET]__
 
-{{region transRectangle}}
+{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=transRectangle}}
 	        RadGridView1.TableElement.ShowTranslucentSelectionRectangle = False
 	{{endregion}}
 

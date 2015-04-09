@@ -36,7 +36,7 @@ Polar axis is created by default when you add Polar or Radar series to the Polar
 
 #### __[C#] __
 
-{{region axis}}
+{{source=..\SamplesCS\ChartView\Axes\PolarAxisForm.cs region=axis}}
 	            PolarAreaSeries series = new PolarAreaSeries();
 	
 	            PolarDataPoint pt = new PolarDataPoint();
@@ -66,7 +66,7 @@ Polar axis is created by default when you add Polar or Radar series to the Polar
 
 #### __[VB.NET] __
 
-{{region axis}}
+{{source=..\SamplesVB\ChartView\Axes\PolarAxisForm.vb region=axis}}
 	        Dim series As New PolarAreaSeries()
 	
 	        Dim pt As New PolarDataPoint()

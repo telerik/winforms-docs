@@ -48,7 +48,7 @@ You can customize the settings of the grid print job by setting the __PrintStyle
 
 #### __[C#]__
 
-{{region PrintStyle}}
+{{source=..\SamplesCS\GridView\Printing support\GridPrintStyle1.cs region=PrintStyle}}
 	            GridPrintStyle style = new GridPrintStyle();
 	
 	            style.FitWidthMode = PrintFitWidthMode.FitPageWidth;
@@ -66,7 +66,7 @@ You can customize the settings of the grid print job by setting the __PrintStyle
 
 #### __[VB.NET]__
 
-{{region PrintStyle}}
+{{source=..\SamplesVB\GridView\Printing support\GridPrintStyle1.vb region=PrintStyle}}
 	        Dim style As New GridPrintStyle()
 	
 	        style.FitWidthMode = PrintFitWidthMode.FitPageWidth
@@ -89,7 +89,7 @@ Multi-page printing is supported for grids with ViewDefinition set to TableViewD
 
 #### __[C#]__
 
-{{region MultiPagePrintingPrintStyle}}
+{{source=..\SamplesCS\GridView\Printing support\GridPrintStyle1.cs region=MultiPagePrintingPrintStyle}}
 	            GridPrintStyle printStyle = new GridPrintStyle(this.radGridView1);
 	            TableViewDefinitionPrintRenderer renderer = new TableViewDefinitionPrintRenderer(this.radGridView1);
 	            renderer.PrintPages.Add(this.radGridView1.Columns[0], this.radGridView1.Columns[2], this.radGridView1.Columns[5]);
@@ -105,7 +105,7 @@ Multi-page printing is supported for grids with ViewDefinition set to TableViewD
 
 #### __[VB]__
 
-{{region MultiPagePrintingPrintStyle}}
+{{source=..\SamplesVB\GridView\Printing support\GridPrintStyle1.vb region=MultiPagePrintingPrintStyle}}
 	        Dim printStyle As GridPrintStyle = New GridPrintStyle(RadGridView1)
 	        Dim renderer As TableViewDefinitionPrintRenderer = New TableViewDefinitionPrintRenderer(RadGridView1)
 	        renderer.PrintPages.Add(RadGridView1.Columns(0), RadGridView1.Columns(2), RadGridView1.Columns(5))

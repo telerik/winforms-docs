@@ -18,7 +18,7 @@ In order to customize RadCalendar in RadDateTimePicker, you should first take th
 
 #### __[C#] Changing the font of RadCalendar navigation title__
 
-{{region customizeRadCalendarProgramatically}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=customizeRadCalendarProgramatically}}
 	            Font headerFont = new Font("Arial", 9.0f, FontStyle.Bold);
 	            Font datesFont = new Font("Arial", 9.0f, FontStyle.Italic);
 	            RadDateTimePickerCalendar calendarBehavior = this.radDateTimePicker1.DateTimePickerElement.GetCurrentBehavior() as RadDateTimePickerCalendar;
@@ -42,7 +42,7 @@ In order to customize RadCalendar in RadDateTimePicker, you should first take th
 
 #### __[VB.NET] Changing the font of RadCalendar navigation title__
 
-{{region customizeRadCalendarProgramatically}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=customizeRadCalendarProgramatically}}
 	        Dim headerFont As Font = New Font("Arial", 9.0F, FontStyle.Bold)
 	        Dim datesFont As Font = New Font("Arial", 9.0F, FontStyle.Italic)
 	        Dim calendarBehavior As RadDateTimePickerCalendar = TryCast(Me.RadDateTimePicker1.DateTimePickerElement.GetCurrentBehavior(), RadDateTimePickerCalendar)

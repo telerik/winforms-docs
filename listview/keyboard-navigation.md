@@ -27,7 +27,7 @@ To enable this functionality a single property setting is needed:
 
 #### __[C#] __
 
-{{region KeyboardSearchEnabled}}
+{{source=..\SamplesCS\ListView\ListViewKeyboardNavigation.cs region=KeyboardSearchEnabled}}
 	            radListView1.KeyboardSearchEnabled = true;
 	            //#End Region
 	
@@ -39,7 +39,7 @@ To enable this functionality a single property setting is needed:
 
 #### __[VB.NET] __
 
-{{region KeyboardSearchEnabled}}
+{{source=..\SamplesVB\ListView\ListViewKeyboardNavigation.vb region=KeyboardSearchEnabled}}
 	        RadListView1.KeyboardSearchEnabled = True
 	        '#End Region
 	
@@ -56,7 +56,7 @@ Another property of interest is the __KeyboardSearchResetInterval__. It is used 
 
 #### __[C#] __
 
-{{region KeyboardSearchResetInterval}}
+{{source=..\SamplesCS\ListView\ListViewKeyboardNavigation.cs region=KeyboardSearchResetInterval}}
 	            radListView1.KeyboardSearchResetInterval = 200;
 	{{endregion}}
 
@@ -64,7 +64,7 @@ Another property of interest is the __KeyboardSearchResetInterval__. It is used 
 
 #### __[VB.NET] __
 
-{{region KeyboardSearchResetInterval}}
+{{source=..\SamplesVB\ListView\ListViewKeyboardNavigation.vb region=KeyboardSearchResetInterval}}
 	        RadListView1.KeyboardSearchResetInterval = 200
 	{{endregion}}
 

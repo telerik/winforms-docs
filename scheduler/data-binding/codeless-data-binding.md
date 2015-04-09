@@ -152,7 +152,7 @@ This tutorial will show you how to bind RadScheduler from the Visual Studio desi
 
 #### __[C#] __
 
-{{region codelessDatabinding}}
+{{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=codelessDatabinding}}
 	            AppointmentsTableAdapter appointmentsAdapter = new AppointmentsTableAdapter();
 	            appointmentsAdapter.Fill(this.schedulerDataDataSet.Appointments);
 	            ResourcesTableAdapter resourcesAdapter = new ResourcesTableAdapter();
@@ -165,7 +165,7 @@ This tutorial will show you how to bind RadScheduler from the Visual Studio desi
 
 #### __[VB.NET] __
 
-{{region codelessDatabinding}}
+{{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=codelessDatabinding}}
 	        Dim appointmentsAdapter As New AppointmentsTableAdapter()
 	        appointmentsAdapter.Fill(Me.SchedulerDataDataSet.Appointments)
 	        Dim resourcesAdapter As New ResourcesTableAdapter()
@@ -181,7 +181,7 @@ This tutorial will show you how to bind RadScheduler from the Visual Studio desi
 
 #### __[C#] __
 
-{{region Rebind}}
+{{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=Rebind}}
 	            schedulerBindingDataSource1.Rebind();
 	{{endregion}}
 
@@ -189,7 +189,7 @@ This tutorial will show you how to bind RadScheduler from the Visual Studio desi
 
 #### __[VB.NET] __
 
-{{region Rebind}}
+{{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=Rebind}}
 	        SchedulerBindingDataSource1.Rebind()
 	{{endregion}}
 

@@ -24,7 +24,7 @@ __RadRichTextEditor's__ API exposes a method and a command for each of the three
 
 #### __[C#] __
 
-{{region clipboard}}
+{{source=..\SamplesCS\RichTextEditor\Features\ClipboardSupport.cs region=clipboard}}
 	            
 	            this.radRichTextEditor1.Copy();
 	            this.radRichTextEditor1.Cut();
@@ -36,7 +36,7 @@ __RadRichTextEditor's__ API exposes a method and a command for each of the three
 
 #### __[VB.NET] __
 
-{{region clipboard}}
+{{source=..\SamplesVB\RichTextEditor\Features\ClipboardSupport.vb region=clipboard}}
 	
 	        Me.radRichTextEditor1.Copy()
 	        Me.radRichTextEditor1.Cut()
@@ -90,7 +90,7 @@ For instance, here is how you can clear the default clipboard handlers and add o
 
 #### __[C#] __
 
-{{region ex}}
+{{source=..\SamplesCS\RichTextEditor\Features\ClipboardSupport.cs region=ex}}
 	            
 	            ClipboardEx.ClipboardHandlers.Clear();
 	
@@ -106,7 +106,7 @@ For instance, here is how you can clear the default clipboard handlers and add o
 
 #### __[VB.NET] __
 
-{{region ex}}
+{{source=..\SamplesVB\RichTextEditor\Features\ClipboardSupport.vb region=ex}}
 	
 	        ClipboardEx.ClipboardHandlers.Clear()
 	

@@ -22,7 +22,7 @@ Missing item in a column 4.
 
 #### __[C#] __
 
-{{region NULLVALUES}}
+{{source=..\SamplesCS\ChartView\Features\NullValues.cs region=NULLVALUES}}
 	            
 	            barSeries.ShowLabels = true;
 	            barSeries.PointSize = new SizeF(15, 15);
@@ -40,7 +40,7 @@ Missing item in a column 4.
 
 #### __[VB.NET] __
 
-{{region NULLVALUES}}
+{{source=..\SamplesVB\ChartView\Features\NullValues.vb region=NULLVALUES}}
 	
 	        barSeries.ShowLabels = True
 	        barSeries.PointSize = New SizeF(15, 15)

@@ -24,7 +24,7 @@ The code sample below shows how multiple views can be configured and positioned.
 
 #### __[C#] Configuring multiple views__
 
-{{region multiView}}
+{{source=..\SamplesCS\Calendar\MultiViewCalendar.cs region=multiView}}
 	            radCalendar1.AllowMultipleView = true;
 	            radCalendar1.MultiViewColumns = 3;
 	            radCalendar1.MultiViewRows = 3;
@@ -36,7 +36,7 @@ The code sample below shows how multiple views can be configured and positioned.
 
 #### __[VB.NET] Configuring multiple views__
 
-{{region multiView}}
+{{source=..\SamplesVB\Calendar\MultiViewCalendar.vb region=multiView}}
 	        RadCalendar1.AllowMultipleView = True
 	        RadCalendar1.MultiViewColumns = 3
 	        RadCalendar1.MultiViewRows = 3

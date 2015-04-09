@@ -46,7 +46,7 @@ __Example 1__ shows how you can create a new __RadFixedDocument__ instance.
 
 #### __[C#] Example 1: Create RadFixedDocument__
 
-{{region radpdfprocessing-model-radfixeddocument_0}}
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=radpdfprocessing-model-radfixeddocument_0}}
 	            RadFixedDocument document = new RadFixedDocument();
 	{{endregion}}
 
@@ -54,7 +54,7 @@ __Example 1__ shows how you can create a new __RadFixedDocument__ instance.
 
 #### __[VB.NET] Example 1: Create RadFixedDocument__
 
-{{region radpdfprocessing-model-radfixeddocument_0}}
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_0}}
 	        Dim document As RadFixedDocument = New RadFixedDocument()
 	        '#End Region
 	    End Sub
@@ -92,7 +92,7 @@ __Example 2__ adds a page to the document created in __Example 1__.
 
 #### __[C#] Example 2: Add page to RadFixedDocument__
 
-{{region radpdfprocessing-model-radfixeddocument_1}}
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=radpdfprocessing-model-radfixeddocument_1}}
 	            RadFixedPage page = document.Pages.AddPage();
 	{{endregion}}
 
@@ -100,7 +100,7 @@ __Example 2__ adds a page to the document created in __Example 1__.
 
 #### __[VB.NET] Example 2: Add page to RadFixedDocument__
 
-{{region radpdfprocessing-model-radfixeddocument_1}}
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_1}}
 	        Dim page As RadFixedPage = document.Pages.AddPage()
 	        '#End Region
 	    End Sub
@@ -130,7 +130,7 @@ __Example 3__ creates a page and adds it to the document created in __Example 1_
 
 #### __[C#] Example 3: Create and add a page to RadFixedDocument__
 
-{{region radpdfprocessing-model-radfixeddocument_2}}
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=radpdfprocessing-model-radfixeddocument_2}}
 	            RadFixedPage page = new RadFixedPage();
 	            document.Pages.Add(page);
 	{{endregion}}
@@ -139,7 +139,7 @@ __Example 3__ creates a page and adds it to the document created in __Example 1_
 
 #### __[VB.NET] Example 3: Create and add a page to RadFixedDocument__
 
-{{region radpdfprocessing-model-radfixeddocument_2}}
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_2}}
 	        Dim page As RadFixedPage = New RadFixedPage()
 	        document.Pages.Add(page)
 	        '#End Region
@@ -172,7 +172,7 @@ __RadFixedDocument__ exposes a __DocumentInfo__ property of type __RadFixedDocum
 
 #### __[C#] Example 4: Set DocumentInfo__
 
-{{region DocInfo}}
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=DocInfo}}
 	            document.DocumentInfo.Author = "Jane Doe";
 	            document.DocumentInfo.Title = "RadFixedDocument";
 	            document.DocumentInfo.Description = "This document is intended to explain the RadFixedDocument class from the RadPdfProcessing library";
@@ -182,7 +182,7 @@ __RadFixedDocument__ exposes a __DocumentInfo__ property of type __RadFixedDocum
 
 #### __[VB.NET] Example 4: Set DocumentInfo__
 
-{{region DocInfo}}
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=DocInfo}}
 	        document.DocumentInfo.Author = "Jane Doe"
 	        document.DocumentInfo.Title = "RadFixedDocument"
 	        document.DocumentInfo.Description = "This document is intended to explain the RadFixedDocument class from the RadPdfProcessing library"

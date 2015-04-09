@@ -24,7 +24,7 @@ For example, the following code snippet will result in the screenshot shown belo
 
 #### __[C#] Docking a Form__
 
-{{region dockingForm}}
+{{source=..\SamplesCS\Dock\DockingForms.cs region=dockingForm}}
 	            Form form = new Form();
 	            form.BackColor = Color.Pink;
 	            form.Text = "My Form";
@@ -36,7 +36,7 @@ For example, the following code snippet will result in the screenshot shown belo
 
 #### __[VB.NET] Docking a Form__
 
-{{region dockingForm}}
+{{source=..\SamplesVB\Dock\DockingForms.vb region=dockingForm}}
 	        Dim form As Form = New Form()
 	        form.BackColor = Color.Pink
 	        form.Text = "My Form"

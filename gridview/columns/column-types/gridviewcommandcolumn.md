@@ -20,7 +20,7 @@ The example below creates two __GridViewCommandColumns__. The first has __UseDe
 
 #### __[C#] Adding GridViewCommandColumn__
 
-{{region addCommandColumn}}
+{{source=..\SamplesCS\GridView\Columns\GridViewCommandColumn1.cs region=addCommandColumn}}
 	        public GridViewCommandColumn1()
 	        {
 	            InitializeComponent();
@@ -53,7 +53,7 @@ The example below creates two __GridViewCommandColumns__. The first has __UseDe
 
 #### __[VB.NET] Adding GridViewCommandColumn__
 
-{{region addCommandColumn}}
+{{source=..\SamplesVB\GridView\Columns\GridViewCommandColumn1.vb region=addCommandColumn}}
 	    Public Sub New()
 	        InitializeComponent()
 	

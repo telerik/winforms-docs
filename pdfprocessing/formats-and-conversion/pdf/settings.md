@@ -30,7 +30,7 @@ __Example 1__ shows how you can create a __PdfImportSettings__ object and assign
 
 #### __[C#] Example 1: Import Settings__
 
-{{region radpdfprocessing-formats-and-conversion-pdf-settings_0}}
+{{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_0}}
 	            PdfFormatProvider provider = new PdfFormatProvider();
 	            PdfImportSettings settings = new PdfImportSettings();
 	            settings.UserPasswordNeeded += new EventHandler<PasswordNeededEventArgs>(settings_UserPasswordNeeded);
@@ -41,7 +41,7 @@ __Example 1__ shows how you can create a __PdfImportSettings__ object and assign
 
 #### __[C#] Example 1: Import Settings Event Handler__
 
-{{region radpdfprocessing-formats-and-conversion-pdf-settings_0Handler}}
+{{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_0Handler}}
 	        private void settings_UserPasswordNeeded(object sender, PasswordNeededEventArgs e)
 	        {
 	            e.Password = "D0cum3ntP4ssw0rd";
@@ -52,7 +52,7 @@ __Example 1__ shows how you can create a __PdfImportSettings__ object and assign
 
 #### __[VB.NET] Example 1: Import Settings__
 
-{{region radpdfprocessing-formats-and-conversion-pdf-settings_0}}
+{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_0}}
 	    Private Sub UserPasswordNeeded_EventHandler(sender As Object, e As PasswordNeededEventArgs)
 	        e.Password = "D0cum3ntP4ssw0rd"
 	    End Sub
@@ -86,7 +86,7 @@ __Example 1__ shows how you can create a __PdfImportSettings__ object and assign
 
 #### __[VB.NET] Example 1: Import Settings Event Handler__
 
-{{region radpdfprocessing-formats-and-conversion-pdf-settings_0Handler}}
+{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_0Handler}}
 	    Private Sub UserPasswordNeeded_EventHandler(sender As Object, e As PasswordNeededEventArgs)
 	        e.Password = "D0cum3ntP4ssw0rd"
 	    End Sub
@@ -168,7 +168,7 @@ __Example 2__ shows ow you can create a __PdfExportSettings__ object and assign 
 
 #### __[C#] Example 2: Export Settings__
 
-{{region radpdfprocessing-formats-and-conversion-pdf-settings_1}}
+{{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_1}}
 	            PdfFormatProvider provider = new PdfFormatProvider();
 	            PdfExportSettings settings = new PdfExportSettings();
 	            settings.IsEncrypted = true;
@@ -183,7 +183,7 @@ __Example 2__ shows ow you can create a __PdfExportSettings__ object and assign 
 
 #### __[VB.NET] Example 2: Export Settings__
 
-{{region radpdfprocessing-formats-and-conversion-pdf-settings_1}}
+{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_1}}
 	        Dim provider As PdfFormatProvider = New PdfFormatProvider()
 	        Dim settings As PdfExportSettings = New PdfExportSettings()
 	        settings.IsEncrypted = True

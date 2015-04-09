@@ -27,7 +27,7 @@ First, you should create a button that implements __ITextBlock__ interface:
 
 #### __[C#]__
 
-{{region customTextBlock}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=customTextBlock}}
 	        public class ButtonTextBlock : RadButtonElement, ITextBlock
 	        {
 	            private int index;
@@ -97,7 +97,7 @@ First, you should create a button that implements __ITextBlock__ interface:
 
 #### __[VB.NET]__
 
-{{region customTextBlock}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=customTextBlock}}
 	    Public Class ButtonTextBlock
 	        Inherits RadButtonElement
 	        Implements ITextBlock
@@ -202,7 +202,7 @@ Then you should subscribe to the __CreateTextBlock__ event
 
 #### __[C#]__
 
-{{region applyCustomTextBlock1}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=applyCustomTextBlock1}}
 	            radTextBoxControl1.CreateTextBlock += new CreateTextBlockEventHandler(radTextBoxControl1_CreateTextBlock);
 	{{endregion}}
 
@@ -210,7 +210,7 @@ Then you should subscribe to the __CreateTextBlock__ event
 
 #### __[C#]__
 
-{{region applyCustomTextBlock2}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=applyCustomTextBlock2}}
 	        void radTextBoxControl1_CreateTextBlock(object sender, CreateTextBlockEventArgs e)
 	        {
 	            if (e.Text == "here")
@@ -224,7 +224,7 @@ Then you should subscribe to the __CreateTextBlock__ event
 
 #### __[VB.NET]__
 
-{{region applyCustomTextBlock1}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=applyCustomTextBlock1}}
 	        AddHandler RadTextBoxControl1.CreateTextBlock, AddressOf radTextBoxControl1_CreateTextBlock
 	        '#End Region
 	    End Sub
@@ -344,7 +344,7 @@ Then you should subscribe to the __CreateTextBlock__ event
 
 #### __[VB.NET]__
 
-{{region applyCustomTextBlock2}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=applyCustomTextBlock2}}
 	    Private Sub radTextBoxControl1_CreateTextBlock(sender As Object, e As CreateTextBlockEventArgs)
 	        If e.Text = "here" Then
 	            e.TextBlock = New ButtonTextBlock()
@@ -461,7 +461,7 @@ Finally, the text property should be set:
 
 #### __[C#]__
 
-{{region applyCustomTextBlock3}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=applyCustomTextBlock3}}
 	            this.radTextBoxControl1.Text = "Please, click here";
 	{{endregion}}
 
@@ -469,7 +469,7 @@ Finally, the text property should be set:
 
 #### __[VB.NET]__
 
-{{region applyCustomTextBlock3}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=applyCustomTextBlock3}}
 	        Me.RadTextBoxControl1.Text = "Please, click here"
 	        '#End Region
 	    End Sub

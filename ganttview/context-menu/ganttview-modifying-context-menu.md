@@ -34,7 +34,7 @@ Here is an example which demonstrates how to change the progress step of the def
 
 #### __[C#] __
 
-{{region ModifyingContextMenu}}
+{{source=..\SamplesCS\GanttView\ContextMenus\ModifyingContextMenu.cs region=ModifyingContextMenu}}
 	        private void radGanttView1_ContextMenuOpening(object sender, GanttViewContextMenuOpeningEventArgs e)
 	        {
 	            GanttViewDefaultContextMenu menu = e.Menu as GanttViewDefaultContextMenu;
@@ -50,7 +50,7 @@ Here is an example which demonstrates how to change the progress step of the def
 
 #### __[VB.NET] __
 
-{{region ModifyingContextMenu}}
+{{source=..\SamplesVB\GanttView\ContextMenus\ModifyingContextMenu.vb region=ModifyingContextMenu}}
 	    Private Sub radGanttView1_ContextMenuOpening(sender As Object, e As GanttViewContextMenuOpeningEventArgs)
 	        Dim menu As GanttViewDefaultContextMenu = TryCast(e.Menu, GanttViewDefaultContextMenu)
 	

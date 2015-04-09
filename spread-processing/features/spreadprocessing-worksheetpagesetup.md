@@ -71,7 +71,7 @@ In order to fit the print content better we use the Worksheet's page setup and c
 
 #### __[C#] Example 1: Use WorksheetPageSetup__
 
-{{region radspreadprocessing-features-worksheetpagesetup_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.cs region=radspreadprocessing-features-worksheetpagesetup_0}}
 	            WorksheetPageSetup pageSetup = workbook.ActiveWorksheet.WorksheetPageSetup;
 	            
 	            pageSetup.PaperType = PaperTypes.A4;
@@ -84,7 +84,7 @@ In order to fit the print content better we use the Worksheet's page setup and c
 
 #### __[VB] Example 1: Use WorksheetPageSetup__
 
-{{region radspreadprocessing-features-worksheetpagesetup_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.vb region=radspreadprocessing-features-worksheetpagesetup_0}}
 	        Dim pageSetup As WorksheetPageSetup = workbook.ActiveWorksheet.WorksheetPageSetup
 	
 	        pageSetup.PaperType = PaperTypes.A4
@@ -149,7 +149,7 @@ The example shown in __Figures 3__ demonstrates how to use Worksheet's print are
 
 #### __[C#] Example 2: Set PrintArea__
 
-{{region radspreadprocessing-features-worksheetpagesetup_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.cs region=radspreadprocessing-features-worksheetpagesetup_1}}
 	            PrintArea printArea = workbook.ActiveWorksheet.WorksheetPageSetup.PrintArea;
 	
 	            printArea.SetPrintArea(new CellRange[]
@@ -163,7 +163,7 @@ The example shown in __Figures 3__ demonstrates how to use Worksheet's print are
 
 #### __[VB] Example 2: Set PrintArea__
 
-{{region radspreadprocessing-features-worksheetpagesetup_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.vb region=radspreadprocessing-features-worksheetpagesetup_1}}
 	        Dim printArea As PrintArea = workbook.ActiveWorksheet.WorksheetPageSetup.PrintArea
 	
 	        printArea.SetPrintArea(New CellRange() {New CellRange(0, 0, 4, 8), New CellRange(1, 1, 25, 3)})
@@ -231,7 +231,7 @@ In order to separate semantically-correct the print data onto several pages we a
 
 #### __[C#] Example 3: Insert PageBreaks__
 
-{{region radspreadprocessing-features-worksheetpagesetup_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.cs region=radspreadprocessing-features-worksheetpagesetup_2}}
 	            PageBreaks pageBreaks = workbook.ActiveWorksheet.WorksheetPageSetup.PageBreaks;
 	
 	            pageBreaks.TryInsertHorizontalPageBreak(5, 0);
@@ -247,7 +247,7 @@ In order to separate semantically-correct the print data onto several pages we a
 
 #### __[VB] Example 3: Insert PageBreaks__
 
-{{region radspreadprocessing-features-worksheetpagesetup_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.vb region=radspreadprocessing-features-worksheetpagesetup_2}}
 	        Dim pageBreaks As PageBreaks = workbook.ActiveWorksheet.WorksheetPageSetup.PageBreaks
 	
 	        pageBreaks.TryInsertHorizontalPageBreak(5, 0)

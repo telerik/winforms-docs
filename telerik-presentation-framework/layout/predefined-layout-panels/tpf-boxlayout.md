@@ -39,7 +39,7 @@ Here is how to create a element with BoxLayout and set the Proportion
 
 #### __[C#] Creating box layout panel element__
 
-{{region myBoxLayoutPanelElement}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.cs region=myBoxLayoutPanelElement}}
 	    public class MyBoxLayoutPanelElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -63,7 +63,7 @@ Here is how to create a element with BoxLayout and set the Proportion
 
 #### __[VB.NET] Creating box layout panel element__
 
-{{region myBoxLayoutPanelElement}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.vb region=myBoxLayoutPanelElement}}
 	Public Class MyBoxLayoutPanelElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()
@@ -88,7 +88,7 @@ And here is how to embed this element in a class
 
 #### __[C#] Using the element in a control__
 
-{{region boxLayoutClass}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.cs region=boxLayoutClass}}
 	    public class MyBoxLayoutPanelControl : RadControl
 	    {
 	        protected override void CreateChildItems(RadElement parent)
@@ -103,7 +103,7 @@ And here is how to embed this element in a class
 
 #### __[VB.NET] Using the element in a control__
 
-{{region boxLayoutClass}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.vb region=boxLayoutClass}}
 	Class MyBoxLayoutPanelControl
 	    Inherits RadControl
 	
@@ -128,7 +128,7 @@ To arrange the elements in the panel vertically set the __Orientation__ of the B
 
 #### __[C#] Set orientation__
 
-{{region orientation}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.cs region=orientation}}
 	            boxPanel.Orientation = Orientation.Vertical;
 	{{endregion}}
 
@@ -136,7 +136,7 @@ To arrange the elements in the panel vertically set the __Orientation__ of the B
 
 #### __[VB.NET] Set orientation__
 
-{{region orientation}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.vb region=orientation}}
 	        boxPanel.Orientation = Orientation.Vertical
 	{{endregion}}
 
@@ -158,7 +158,7 @@ For example, two if RadButtonElements, one *First* and the other
 
 #### __[C#] Set position__
 
-{{region position1}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.cs region=position1}}
 	            BoxLayout boxPanel = new BoxLayout();
 	
 	            RadButtonElement button1 = new RadButtonElement("left");
@@ -180,7 +180,7 @@ For example, two if RadButtonElements, one *First* and the other
 
 #### __[VB.NET] Set position__
 
-{{region position1}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.vb region=position1}}
 	
 	        Dim boxPanel As New BoxLayout()
 	

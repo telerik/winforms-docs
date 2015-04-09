@@ -38,7 +38,7 @@ The two steps that must be done are these:
 
 #### __[C#]__
 
-{{region customers}}
+{{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=customers}}
 	            
 	            IEnumerable<Customer> customers = context.GetTable<Customer>().ToList();       
 	            this.radTreeView1.DataSource = customers;
@@ -49,7 +49,7 @@ The two steps that must be done are these:
 
 #### __[VB.NET]__
 
-{{region customers}}
+{{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=customers}}
 	        Dim customers As IEnumerable(Of Customer) = context.GetTable(Of Customer)().ToList()
 	        Me.RadTreeView1.DataSource = customers
 	        '#End Region
@@ -68,7 +68,7 @@ The two steps that must be done are these:
 
 #### __[C#]__
 
-{{region relationClasses}}
+{{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=relationClasses}}
 	            
 	            this.radTreeView1.DisplayMember = "ContactName\\ShipName\\UnitPrice";
 	            this.radTreeView1.ChildMember = "Customers\\Orders\\Order_Details";
@@ -79,7 +79,7 @@ The two steps that must be done are these:
 
 #### __[VB.NET]__
 
-{{region relationClasses}}
+{{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=relationClasses}}
 	        Me.RadTreeView1.DisplayMember = "ContactName\ShipName\UnitPrice"
 	        Me.RadTreeView1.ChildMember = "Customers\Orders\Order_Details"
 	{{endregion}}
@@ -102,7 +102,7 @@ Note that the *IsActive* and the *Status* properties represent boolean data.
 
 #### __[C#]__
 
-{{region DataClasses}}
+{{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=DataClasses}}
 	            
 	        public class Parent 
 	        {
@@ -148,7 +148,7 @@ Note that the *IsActive* and the *Status* properties represent boolean data.
 
 #### __[VB.NET]__
 
-{{region DataClasses}}
+{{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=DataClasses}}
 	
 	    Public Class Parent
 	        Public Property ParentId() As String
@@ -288,7 +288,7 @@ The code snippet below illustrates how to bind the check-boxes coming from the d
 
 #### __[C#]__
 
-{{region CheckedMember}}
+{{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=CheckedMember}}
 	            
 	            List<Parent> dataItems = new List<Parent>();
 	            Parent currentParent;
@@ -323,7 +323,7 @@ The code snippet below illustrates how to bind the check-boxes coming from the d
 
 #### __[VB.NET]__
 
-{{region CheckedMember}}
+{{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=CheckedMember}}
 	
 	        Dim dataItems As New List(Of Parent)()
 	        Dim currentParent As Parent

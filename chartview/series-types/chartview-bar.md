@@ -21,7 +21,7 @@ BarSeries are used to visualize data points as bar blocks where the height of ea
 
 #### __[C#] __
 
-{{region bar}}
+{{source=..\SamplesCS\ChartView\Series\BarSeriesForm.cs region=bar}}
 	            BarSeries barSeries = new BarSeries("Performance", "RepresentativeName");
 	            barSeries.Name = "Q1";
 	            barSeries.DataPoints.Add(new CategoricalDataPoint(177, "Harley"));
@@ -45,7 +45,7 @@ BarSeries are used to visualize data points as bar blocks where the height of ea
 
 #### __[VB.NET] __
 
-{{region bar}}
+{{source=..\SamplesVB\ChartView\Series\BarSeriesForm.vb region=bar}}
 	        Dim barSeries As New Telerik.WinControls.UI.BarSeries("Performance", "RepresentativeName")
 	        barSeries.Name = "Q1"
 	        barSeries.DataPoints.Add(New CategoricalDataPoint(177, "Harley"))
@@ -99,7 +99,7 @@ BarSeries could be customized using the following properties:
 
 #### __[C#] __
 
-{{region gapLength}}
+{{source=..\SamplesCS\ChartView\Series\BarSeriesForm.cs region=gapLength}}
 	            (barSeries.HorizontalAxis as CategoricalAxis).GapLength = 0.75;
 	{{endregion}}
 
@@ -107,7 +107,7 @@ BarSeries could be customized using the following properties:
 
 #### __[VB.NET] __
 
-{{region gapLength}}
+{{source=..\SamplesVB\ChartView\Series\BarSeriesForm.vb region=gapLength}}
 	        TryCast(barSeries.HorizontalAxis, CategoricalAxis).GapLength = 0.75
 	{{endregion}}
 

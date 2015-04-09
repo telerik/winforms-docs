@@ -24,7 +24,7 @@ RadPivotGrid exposes two events which you can use to format the appearance and a
 
 #### __[C#] __
 
-{{region Formatting}}
+{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=Formatting}}
 	        private void radPivotGrid1_PrintElementFormatting(object sender, Telerik.WinControls.UI.PrintElementEventArgs e)
 	        {
 	            PivotCellPrintElement cell = e.PrintElement as PivotCellPrintElement;
@@ -54,7 +54,7 @@ RadPivotGrid exposes two events which you can use to format the appearance and a
 
 #### __[VB.NET] __
 
-{{region Formatting}}
+{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=Formatting}}
 	    Private Sub radPivotGrid1_PrintElementFormatting(sender As Object, e As Telerik.WinControls.UI.PrintElementEventArgs)
 	        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
 	        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) < 100 Then

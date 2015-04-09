@@ -47,7 +47,7 @@ __Modifying sorting behavior__
 
 #### __[C#]__
 
-{{region sortChanging}}
+{{source=..\SamplesCS\GridView\EndUserCapabilities\EUCapabilitiesSorting.cs region=sortChanging}}
 	        void radGridView1_SortChanging(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
 	        {
 	            if (e.NewItems.Count > 0)
@@ -67,7 +67,7 @@ __Modifying sorting behavior__
 
 #### __[VB.NET]__
 
-{{region sortChanging}}
+{{source=..\SamplesVB\GridView\EndUserCapabilities\EUCapabilitiesSorting.vb region=sortChanging}}
 	    Private Sub radGridView1_SortChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.SortChanging
 	        If e.NewItems.Count > 0 Then
 	            Dim sort As Telerik.WinControls.Data.SortDescriptor = CType(e.NewItems(0), Telerik.WinControls.Data.SortDescriptor)

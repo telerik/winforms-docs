@@ -35,7 +35,7 @@ The following example creates a CategoricalAxis and assigns it to a BarSeries be
 
 #### __[C#] __
 
-{{region axis}}
+{{source=..\SamplesCS\ChartView\Axes\PlotModeForm.cs region=axis}}
 	            CategoricalAxis horizontalAxis = new CategoricalAxis();
 	            horizontalAxis.PlotMode = AxisPlotMode.BetweenTicks;
 	            horizontalAxis.GapLength = 0.3;
@@ -54,7 +54,7 @@ The following example creates a CategoricalAxis and assigns it to a BarSeries be
 
 #### __[VB.NET] __
 
-{{region axis}}
+{{source=..\SamplesVB\ChartView\Axes\PlotModeForm.vb region=axis}}
 	        Dim horizontalAxis As New CategoricalAxis()
 	        horizontalAxis.PlotMode = AxisPlotMode.BetweenTicks
 	        horizontalAxis.GapLength = 0.3
@@ -76,7 +76,7 @@ You can always change the PlotMode property, even if the CategoricalAxis was aut
 
 #### __[C#] __
 
-{{region axis2}}
+{{source=..\SamplesCS\ChartView\Axes\PlotModeForm.cs region=axis2}}
 	            CategoricalAxis axis = radChartView1.Axes.Get<CategoricalAxis>(0);
 	            axis.PlotMode = AxisPlotMode.OnTicksPadded;
 	{{endregion}}
@@ -85,7 +85,7 @@ You can always change the PlotMode property, even if the CategoricalAxis was aut
 
 #### __[VB.NET] __
 
-{{region axis2}}
+{{source=..\SamplesVB\ChartView\Axes\PlotModeForm.vb region=axis2}}
 	        Dim axis As CategoricalAxis = RadChartView1.Axes.[Get](Of CategoricalAxis)(0)
 	        axis.PlotMode = AxisPlotMode.OnTicksPadded
 	{{endregion}}
@@ -97,7 +97,7 @@ Using the aforementioned approach you can set the PlotMode property to OnTicksPa
 
 #### __[C#] __
 
-{{region axis3}}
+{{source=..\SamplesCS\ChartView\Axes\PlotModeForm.cs region=axis3}}
 	            axis.PlotMode = AxisPlotMode.OnTicksPadded;
 	{{endregion}}
 
@@ -105,7 +105,7 @@ Using the aforementioned approach you can set the PlotMode property to OnTicksPa
 
 #### __[VB.NET] __
 
-{{region axis3}}
+{{source=..\SamplesVB\ChartView\Axes\PlotModeForm.vb region=axis3}}
 	        axis.PlotMode = AxisPlotMode.OnTicksPadded
 	{{endregion}}
 

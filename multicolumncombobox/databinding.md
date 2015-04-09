@@ -34,7 +34,7 @@ You can bind the combobox control programmatically in your application code. The
 
 #### __[C#]__
 
-{{region setUp}}
+{{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=setUp}}
 	            
 	        protected override void OnLoad(EventArgs e)
 	        {
@@ -68,7 +68,7 @@ You can bind the combobox control programmatically in your application code. The
 
 #### __[VB.NET]__
 
-{{region setUp}}
+{{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=setUp}}
 	    Protected Overrides Sub OnLoad(ByVal e As EventArgs)
 	        MyBase.OnLoad(e)
 	

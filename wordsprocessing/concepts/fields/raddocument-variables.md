@@ -26,7 +26,7 @@ Document variables provide a mechanism to store information in the document in a
 
 #### __C#__
 
-{{region document}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingDocumentVariables.cs region=document}}
 	            RadFlowDocument document = new RadFlowDocument();
 	            document.DocumentVariables["Job"] = "Software Engineer";
 	            document.DocumentVariables.Add("Name", "Nancy Davolio");
@@ -36,7 +36,7 @@ Document variables provide a mechanism to store information in the document in a
 
 #### __VB__
 
-{{region document}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentVariables.vb region=document}}
 	        Dim document As New RadFlowDocument()
 	        document.DocumentVariables("Job") = "Software Engineer"
 	        document.DocumentVariables.Add("Name", "Nancy Davolio")
@@ -67,7 +67,7 @@ Removing defined variables can be achieved by using the __Remove()__ method of t
 
 #### __C#__
 
-{{region remove}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingDocumentVariables.cs region=remove}}
 	            document.DocumentVariables.Remove("Job");
 	{{endregion}}
 
@@ -75,7 +75,7 @@ Removing defined variables can be achieved by using the __Remove()__ method of t
 
 #### __VB__
 
-{{region remove}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentVariables.vb region=remove}}
 	        document.DocumentVariables.Remove("Job")
 	        '#End Region
 	        Dim editor As New RadFlowDocumentEditor(document)
@@ -103,7 +103,7 @@ A __DocumentVariable__ field can be inserted through [RadFlowDocumentEditor]({%s
 
 #### __C#__
 
-{{region insert}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingDocumentVariables.cs region=insert}}
 	            editor.InsertField("DOCVARIABLE Name", "Nancy Davolio");
 	{{endregion}}
 

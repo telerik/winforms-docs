@@ -42,7 +42,7 @@ Here is how to do that:
 
 #### __[C#]__
 
-{{region fields}}
+{{source=..\SamplesCS\Dock\SingletonForms.cs region=fields}}
 	        DocumentWindow greenDockWindow;
 	        DocumentWindow yellowDockWindow;
 	{{endregion}}
@@ -51,7 +51,7 @@ Here is how to do that:
 
 #### __[VB.NET]__
 
-{{region fields}}
+{{source=..\SamplesVB\Dock\SingletonForms.vb region=fields}}
 	    Private greenDockWindow As DocumentWindow
 	    Private yellowDockWindow As DocumentWindow
 	{{endregion}}
@@ -72,7 +72,7 @@ Here is how to do that:
 
 #### __[C#]__
 
-{{region clickHandlers}}
+{{source=..\SamplesCS\Dock\SingletonForms.cs region=clickHandlers}}
 	        private void btnOpenGreenForm_Click(object sender, EventArgs e)
 	        {
 	            if (greenDockWindow == null)
@@ -122,7 +122,7 @@ Here is how to do that:
 
 #### __[VB.NET]__
 
-{{region clickHandlers}}
+{{source=..\SamplesVB\Dock\SingletonForms.vb region=clickHandlers}}
 	    Private Sub btnOpenGreenForm_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        If greenDockWindow Is Nothing Then
 	            greenDockWindow = New DocumentWindow()

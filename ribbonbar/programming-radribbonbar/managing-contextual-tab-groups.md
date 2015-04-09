@@ -34,7 +34,7 @@ The following code snippet shows how to add contextual tab groups and assign ta
 
 #### __[C#] Creating ContextualTabGroups__
 
-{{region managingContextualTabGroups}}
+{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\ManagingContextualTabGroups.cs region=managingContextualTabGroups}}
 	        private Telerik.WinControls.UI.RibbonTab ribbonTab1;
 	        private Telerik.WinControls.UI.RibbonTab ribbonTab2;
 	        private Telerik.WinControls.UI.RibbonTab ribbonTab3;
@@ -85,7 +85,7 @@ The following code snippet shows how to add contextual tab groups and assign ta
 
 #### __[VB.NET] Creating ContextualTabGroups__
 
-{{region managingContextualTabGroups}}
+{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\ManagingContextualTabGroups.vb region=managingContextualTabGroups}}
 	    ' The "Me" variable refers to the form that contains the RibbonBar
 	    ' Declare variables for tabs and contextual tab groups
 	    Private RibbonTab1 As New Telerik.WinControls.UI.RibbonTab()

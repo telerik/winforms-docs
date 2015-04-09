@@ -90,7 +90,7 @@ Following our requirements, we prepare the this implementation:
 
 #### __[C#]__
 
-{{region removingItems}}
+{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=removingItems}}
 	        void radTreeView1_ContextMenuOpening1(object sender, Telerik.WinControls.UI.TreeViewContextMenuOpeningEventArgs e)
 	        {
 	            DataRowView rowView = (DataRowView)e.Node.DataBoundItem;
@@ -121,7 +121,7 @@ Following our requirements, we prepare the this implementation:
 
 #### __[VB.NET]__
 
-{{region removingItems}}
+{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=removingItems}}
 	    Private Sub radTreeView1_ContextMenuOpening1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.TreeViewContextMenuOpeningEventArgs)
 	        Dim rowView As DataRowView = CType(e.Node.DataBoundItem, DataRowView)
 	        Dim row As DataRow = rowView.Row

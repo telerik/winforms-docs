@@ -42,7 +42,7 @@ There are some events that provide you with control over the floating/docking pr
 
 #### __[C#]__
 
-{{region floatingStripCreating}}
+{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripCreating}}
 	        void radCommandBar1_FloatingStripCreating(object sender, CancelEventArgs e)
 	        {
 	            if ((sender as CommandBarStripElement).Name == "OptionsStrip")
@@ -56,7 +56,7 @@ There are some events that provide you with control over the floating/docking pr
 
 #### __[VB.NET]__
 
-{{region floatingStripCreating}}
+{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripCreating}}
 	    Private Sub radCommandBar1_FloatingStripCreating(ByVal sender As Object, ByVal e As CancelEventArgs)
 	        If TryCast(sender, CommandBarStripElement).Name = "OptionsStrip" Then
 	            e.Cancel = True
@@ -71,7 +71,7 @@ There are some events that provide you with control over the floating/docking pr
 
 #### __[C#]__
 
-{{region floatingStripCreated}}
+{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripCreated}}
 	        void radCommandBar1_FloatingStripCreated(object sender, EventArgs e)
 	        {
 	            (sender as CommandBarStripElement).FloatingForm.Text = "Just a floating form";
@@ -82,7 +82,7 @@ There are some events that provide you with control over the floating/docking pr
 
 #### __[VB.NET]__
 
-{{region floatingStripCreated}}
+{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripCreated}}
 	    Private Sub radCommandBar1_FloatingStripCreated(ByVal sender As Object, ByVal e As EventArgs)
 	        TryCast(sender, CommandBarStripElement).FloatingForm.Text = "Just a floating form"
 	    End Sub
@@ -95,7 +95,7 @@ The following example shows how to prevent the strip with name â€œOptionsStripâ€
 
 #### __[C#]__
 
-{{region floatingStripDocking}}
+{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripDocking}}
 	        void radCommandBar1_FloatingStripDocking(object sender, CancelEventArgs e)
 	        {
 	            if ((sender as CommandBarStripElement).Name == "OptionsStrip")
@@ -109,7 +109,7 @@ The following example shows how to prevent the strip with name â€œOptionsStripâ€
 
 #### __[VB.NET]__
 
-{{region floatingStripDocking}}
+{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripDocking}}
 	    Private Sub radCommandBar1_FloatingStripDocking(ByVal sender As Object, ByVal e As CancelEventArgs)
 	        If TryCast(sender, CommandBarStripElement).Name = "OptionsStrip" Then
 	            e.Cancel = True
@@ -125,7 +125,7 @@ The following example shows how to prevent the strip with name â€œOptionsStripâ€
 
 #### __[C#]__
 
-{{region floatingStripDocked}}
+{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripDocked}}
 	        void radCommandBar1_FloatingStripDocked(object sender, EventArgs e)
 	        {
 	            CommandBarStripElement dockedStrip = sender as CommandBarStripElement;
@@ -140,7 +140,7 @@ The following example shows how to prevent the strip with name â€œOptionsStripâ€
 
 #### __[VB.NET]__
 
-{{region floatingStripDocked}}
+{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripDocked}}
 	    Private Sub radCommandBar1_FloatingStripDocked(ByVal sender As Object, ByVal e As EventArgs)
 	        Dim dockedStrip As CommandBarStripElement = TryCast(sender, CommandBarStripElement)
 	        If dockedStrip IsNot Nothing Then

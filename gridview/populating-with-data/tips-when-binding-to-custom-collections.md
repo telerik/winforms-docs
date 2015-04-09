@@ -39,7 +39,7 @@ These features are not tightly coupled with the column declarations of the gr
 
 #### __[C#] Adding to the Columns Collection__
 
-{{region addingColumnsToTheColumnsCollection}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\TipsWhenBindingToCustomCollections.cs region=addingColumnsToTheColumnsCollection}}
 	            radGridView1.MasterTemplate.AutoGenerateColumns = false;
 	            radGridView1.MasterTemplate.Columns.Add(new GridViewTextBoxColumn("Name"));
 	            radGridView1.MasterTemplate.Columns.Add(new GridViewTextBoxColumn("Attributes"));
@@ -54,7 +54,7 @@ These features are not tightly coupled with the column declarations of the gr
 
 #### __[VB.NET] Adding to the Columns Collection__
 
-{{region addingColumnsToTheColumnsCollection}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\TipsWhenBindingToCustomCollections.vb region=addingColumnsToTheColumnsCollection}}
 	        RadGridView1.MasterTemplate.AutoGenerateColumns = False
 	        RadGridView1.MasterTemplate.Columns.Add(New GridViewTextBoxColumn("Name"))
 	        RadGridView1.MasterTemplate.Columns.Add(New GridViewTextBoxColumn("Attributes"))

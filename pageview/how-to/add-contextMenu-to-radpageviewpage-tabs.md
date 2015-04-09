@@ -22,7 +22,7 @@ To create your custom __RadContextMenu__, add its' __RadMenuItems__, set their p
 
 #### __[C#]__
 
-{{region createContextMenu}}
+{{source=..\SamplesCS\PageView\HowTo.cs region=createContextMenu}}
 	
 	        private void CreateContextMenu()
 	        {
@@ -52,7 +52,7 @@ To create your custom __RadContextMenu__, add its' __RadMenuItems__, set their p
 
 #### __[VB.NET]__
 
-{{region createContextMenu}}
+{{source=..\SamplesVB\PageView\HowTo.vb region=createContextMenu}}
 	
 	    Private Sub CreateContextMenu()
 	        Dim addNewTabMenuItem As New RadMenuItem()
@@ -121,7 +121,7 @@ In the following code snippet you can observe, how to add the most common items 
 
 #### __[C#]__
 
-{{region eventHandlerImpl}}
+{{source=..\SamplesCS\PageView\HowTo.cs region=eventHandlerImpl}}
 	
 	        void addNewTabMenuItem_Click(object sender, EventArgs e)
 	        {
@@ -157,7 +157,7 @@ In the following code snippet you can observe, how to add the most common items 
 
 #### __[VB.NET]__
 
-{{region eventHandlerImpl}}
+{{source=..\SamplesVB\PageView\HowTo.vb region=eventHandlerImpl}}
 	
 	    Private Sub addNewTabMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        Dim newPage As New RadPageViewPage()
@@ -201,7 +201,7 @@ After the context menu is created it have to be associated with __RadPageViewP
 
 #### __[C#]__
 
-{{region mouseClick}}
+{{source=..\SamplesCS\PageView\HowTo.cs region=mouseClick}}
 	
 	        void radPageView1_MouseClick(object sender, MouseEventArgs e)
 	        {
@@ -218,7 +218,7 @@ After the context menu is created it have to be associated with __RadPageViewP
 
 #### __[VB.NET]__
 
-{{region mouseClick}}
+{{source=..\SamplesVB\PageView\HowTo.vb region=mouseClick}}
 	
 	    Private Sub radPageView1_MouseClick(ByVal sender As Object, ByVal e As MouseEventArgs)
 	        Dim hitItem As RadPageViewItem = Me.radPageView1.ViewElement.ItemFromPoint(e.Location)

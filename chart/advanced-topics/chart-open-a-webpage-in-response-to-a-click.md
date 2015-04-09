@@ -18,7 +18,7 @@ To open a web page in response to a click of an item, you can use the [ActiveReg
 
 #### __[C#] Open a web page in responce to a click__
 
-{{region openAWebPage}}
+{{source=..\SamplesCS\Chart\OpenAWebPageInResponceToAClick.cs region=openAWebPage}}
 	        void radChart1_Click(object sender, Telerik.Charting.ChartClickEventArgs args)
 	        {
 	            if (args.SeriesItem.Index == 2)
@@ -32,7 +32,7 @@ To open a web page in response to a click of an item, you can use the [ActiveReg
 
 #### __[VB.NET] Open a web page in responce to a click__
 
-{{region openAWebPage}}
+{{source=..\SamplesVB\Chart\OpenAWebPageInResponceToAClick.vb region=openAWebPage}}
 	    Private Sub radChart1_Click(ByVal sender As Object, ByVal args As Telerik.Charting.ChartClickEventArgs)
 	        If args.SeriesItem.Index = 2 Then
 	            Process.Start(args.SeriesItem.ActiveRegion.Url)

@@ -22,7 +22,7 @@ You can also directly access the two indicators:
 
 #### __[C#]__
 
-{{region IndicatorsAccess}}
+{{source=..\SamplesCS\GanttView\TodayIndicator\TodayIndicator.cs region=IndicatorsAccess}}
 	            GanttViewTodayIndicatorElement todayIndicator = this.radGanttView1.GanttViewElement.GraphicalViewElement.TodayIndicatorElement;
 	            todayIndicator.BackColor = Color.Red;
 	            todayIndicator.BackColor2 = Color.Red;
@@ -35,7 +35,7 @@ You can also directly access the two indicators:
 
 #### __[VB.NET]__
 
-{{region IndicatorsAccess}}
+{{source=..\SamplesVB\GanttView\TodayIndicator\TodayIndicator.vb region=IndicatorsAccess}}
 	        Dim todayIndicator As GanttViewTodayIndicatorElement = Me.radGanttView1.GanttViewElement.GraphicalViewElement.TodayIndicatorElement
 	        todayIndicator.BackColor = Color.Red
 	        todayIndicator.BackColor2 = Color.Red

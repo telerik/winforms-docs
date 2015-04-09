@@ -42,7 +42,7 @@ Here is an example of how to select the current word.
 
 #### __[C#] Select the current word__
 
-{{region selection}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSelection.cs region=selection}}
 	            DocumentPosition startPosition = this.radRichTextBox1.Document.CaretPosition; //new DocumentPosition( this.radRichTextBox.Document );
 	            DocumentPosition endPosition = new DocumentPosition(startPosition);
 	            startPosition.MoveToCurrentWordStart();
@@ -55,7 +55,7 @@ Here is an example of how to select the current word.
 
 #### __[VB.NET] Select the current word__
 
-{{region selection}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSelection.vb region=selection}}
 	        Dim startPosition As DocumentPosition = Me.RadRichTextBox1.Document.CaretPosition
 	        'new DocumentPosition( this.radRichTextBox.Document );
 	        Dim endPosition As New DocumentPosition(startPosition)
@@ -77,7 +77,7 @@ Here is an example of selecting each "RadRichTextBox" word in the text. This exa
 
 #### __[C#] Multi selection__
 
-{{region MultiSelection}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSelection.cs region=MultiSelection}}
 	            DocumentPosition position = new DocumentPosition( this.radRichTextBox1.Document );
 	            do
 	            {
@@ -98,7 +98,7 @@ Here is an example of selecting each "RadRichTextBox" word in the text. This exa
 
 #### __[VB.NET] Multi selection__
 
-{{region MultiSelection}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSelection.vb region=MultiSelection}}
 	        Dim position As New DocumentPosition(Me.RadRichTextBox1.Document)
 	        Do
 	            'GetCurrentSpan().Text returns the word at the position

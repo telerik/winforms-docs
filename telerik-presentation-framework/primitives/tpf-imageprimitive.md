@@ -38,7 +38,7 @@ The example below loads a series of images from a directory and creates an Image
 
 #### __[C#] Creating an ImagePrimitive__
 
-{{region myImagePrimitiveElement}}
+{{source=..\SamplesCS\TPF\Primitives\ImagePrimitive1\MyImagePrimitiveElement.cs region=myImagePrimitiveElement}}
 	    public class MyImagePrimitiveElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -74,7 +74,7 @@ The example below loads a series of images from a directory and creates an Image
 
 #### __[VB.NET] Creating an ImagePrimitive__
 
-{{region myImagePrimitiveElement}}
+{{source=..\SamplesVB\TPF\Primitives\ImagePrimitive1\MyImagePrimitiveElement.vb region=myImagePrimitiveElement}}
 	Public Class MyImagePrimitiveElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

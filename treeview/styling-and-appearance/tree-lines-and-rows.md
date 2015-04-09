@@ -22,7 +22,7 @@ To display lines connecting nodes in RadTreeView set the __ShowLines__property t
 
 #### __[C#] __
 
-{{region lines}}
+{{source=..\SamplesCS\TreeView\GettingStarted.cs region=lines}}
 	            
 	            radTreeView1.ShowLines = true;
 	            radTreeView1.LineStyle = TreeLineStyle.DashDot;
@@ -33,7 +33,7 @@ To display lines connecting nodes in RadTreeView set the __ShowLines__property t
 
 #### __[VB.NET] __
 
-{{region lines}}
+{{source=..\SamplesVB\TreeView\TreeViewGettingStarted.vb region=lines}}
 	        RadTreeView1.ShowLines = True
 	        RadTreeView1.LineStyle = TreeLineStyle.DashDot
 	{{endregion}}
@@ -47,7 +47,7 @@ To select rows spanning the entire width of RadTreeView (rather than just the no
 
 #### __[C#] __
 
-{{region AlternatingRowColor}}
+{{source=..\SamplesCS\TreeView\GettingStarted.cs region=AlternatingRowColor}}
 	        
 	            radTreeView1.TreeViewElement.AllowAlternatingRowColor = true;
 	            radTreeView1.TreeViewElement.AlternatingRowColor = Color.LightBlue;
@@ -58,7 +58,7 @@ To select rows spanning the entire width of RadTreeView (rather than just the no
 
 #### __[VB.NET] __
 
-{{region AlternatingRowColor}}
+{{source=..\SamplesVB\TreeView\TreeViewGettingStarted.vb region=AlternatingRowColor}}
 	        RadTreeView1.TreeViewElement.AllowAlternatingRowColor = True
 	        RadTreeView1.TreeViewElement.AlternatingRowColor = Color.LightBlue
 	{{endregion}}

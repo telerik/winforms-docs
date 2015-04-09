@@ -21,7 +21,7 @@ RadChartView areas, which support axes, can render a grid that facilitate the pr
 
 #### __[C#] __
 
-{{region cartesian}}
+{{source=..\SamplesCS\ChartView\ChartGrid.cs region=cartesian}}
 	            //add sample data
 	            LineSeries series = new LineSeries();
 	            series.DataPoints.Add(new CategoricalDataPoint(500, "Jan"));
@@ -43,7 +43,7 @@ RadChartView areas, which support axes, can render a grid that facilitate the pr
 
 #### __[VB.NET] __
 
-{{region cartesian}}
+{{source=..\SamplesVB\ChartView\ChartGrid.vb region=cartesian}}
 	        Me.RadChartView1.AreaType = ChartAreaType.Cartesian
 	        Dim area As CartesianArea = Me.RadChartView1.GetArea(Of CartesianArea)()
 	        Dim grid As CartesianGrid = area.GetGrid(Of CartesianGrid)()
@@ -128,7 +128,7 @@ The essential properties of CartesianGrid are the following:
 
 #### __[C#] __
 
-{{region polar}}
+{{source=..\SamplesCS\ChartView\ChartGrid.cs region=polar}}
 	            //add sample data
 	            this.radChartView1.AreaType = ChartAreaType.Polar;
 	            
@@ -156,7 +156,7 @@ The essential properties of CartesianGrid are the following:
 
 #### __[VB.NET] __
 
-{{region polar}}
+{{source=..\SamplesVB\ChartView\ChartGrid.vb region=polar}}
 	        Me.RadChartView1.AreaType = ChartAreaType.Polar
 	        Dim area As PolarArea = Me.RadChartView1.GetArea(Of PolarArea)()
 	        Dim grid As PolarGrid = area.GetGrid(Of PolarGrid)()

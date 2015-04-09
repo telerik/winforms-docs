@@ -22,7 +22,7 @@ You can set the __AutoCompleteMode__ as follows:
 
 #### __[C#] Set AutoCompleteMode__
 
-{{region SetMode}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.cs region=SetMode}}
 	            this.radCheckedDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 	{{endregion}}
 
@@ -30,7 +30,7 @@ You can set the __AutoCompleteMode__ as follows:
 
 #### __[VB.NET] Set AutoCompleteMode__
 
-{{region SetMode}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SetMode}}
 	        Me.RadCheckedDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
 	        '#End Region
 	
@@ -64,7 +64,7 @@ Changing the filter for the __AutoCompleteSuggest__ is as easy as setting the __
 
 #### __[C#] Set AutoCompleteMode__
 
-{{region SuggestMode}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.cs region=SuggestMode}}
 	            this.radCheckedDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains;
 	{{endregion}}
 
@@ -72,7 +72,7 @@ Changing the filter for the __AutoCompleteSuggest__ is as easy as setting the __
 
 #### __[VB.NET] Set AutoCompleteMode__
 
-{{region SuggestMode}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SuggestMode}}
 	        Me.RadCheckedDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains
 	        '#End Region
 	
@@ -102,7 +102,7 @@ In order to customize the __AutoCompleteAppendHelper__ you need to create a desc
 
 #### __[C#] Set CustomHelper__
 
-{{region CustomHelper}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.cs region=CustomHelper}}
 	        class MyAutoCompleteAppendHelper : AutoCompleteAppendHelper
 	        {
 	            public MyAutoCompleteAppendHelper(RadDropDownListElement ddList)
@@ -121,7 +121,7 @@ In order to customize the __AutoCompleteAppendHelper__ you need to create a desc
 
 #### __[VB.NET] Set CustomHelper__
 
-{{region CustomHelper}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=CustomHelper}}
 	    Private Class MyAutoCompleteAppendHelper
 	        Inherits AutoCompleteAppendHelper
 	        Public Sub New(ddList As RadDropDownListElement)
@@ -139,7 +139,7 @@ In order to customize the __AutoCompleteAppendHelper__ you need to create a desc
 
 #### __[C#] Set SetAppendHelper__
 
-{{region SetAppendHelper}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.cs region=SetAppendHelper}}
 	            this.radCheckedDropDownList1.DropDownListElement.AutoCompleteAppend = new MyAutoCompleteAppendHelper(this.radCheckedDropDownList1.DropDownListElement);
 	{{endregion}}
 
@@ -147,7 +147,7 @@ In order to customize the __AutoCompleteAppendHelper__ you need to create a desc
 
 #### __[VB.NET] Set SetAppendHelper__
 
-{{region SetAppendHelper}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SetAppendHelper}}
 	        Me.RadCheckedDropDownList1.DropDownListElement.AutoCompleteAppend = New MyAutoCompleteAppendHelper(Me.RadCheckedDropDownList1.DropDownListElement)
 	        '#End Region
 	    End Sub

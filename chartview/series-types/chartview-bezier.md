@@ -5,7 +5,7 @@ description: Bezier
 slug: chartview-series-types-bezier
 tags: bezier
 published: True
-position: 6
+position: 7
 ---
 
 # Bezier
@@ -21,7 +21,7 @@ The Bezier chart displays a series of points on a curved line.  Two "control poi
 
 #### __[C#] __
 
-{{region Bezier}}
+{{source=..\SamplesCS\ChartView\Series\BezierSeriesForm.cs region=Bezier}}
 	            BezierSeries bezier = new BezierSeries();   
 	            bezier.DataPoints.Add(new BezierDataPoint(45, 30, 0, 0, 120, 140)); 
 	            bezier.DataPoints.Add(new BezierDataPoint(5, 23, 0, 0, 95, 110)); 
@@ -42,7 +42,7 @@ The Bezier chart displays a series of points on a curved line.  Two "control poi
 
 #### __[VB.NET] __
 
-{{region Bezier}}
+{{source=..\SamplesVB\ChartView\Series\BezierSeriesForm.vb region=Bezier}}
 	        Dim bezier As New BezierSeries()
 	        bezier.DataPoints.Add(New BezierDataPoint(45, 30, 0, 0, 120, 140))
 	        bezier.DataPoints.Add(New BezierDataPoint(5, 23, 0, 0, 95, 110))

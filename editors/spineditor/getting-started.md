@@ -35,7 +35,7 @@ __RadSpinEditor__.
 
 #### __[C#]__
 
-{{region spinEditorAndTrackBar}}
+{{source=..\SamplesCS\Editors\SpinEditor1.cs region=spinEditorAndTrackBar}}
 	        void radSpinEditor1_ValueChanged(object sender, EventArgs e)
 	        {
 	            this.radTrackBar1.Value = Convert.ToInt32(radSpinEditor1.Value);
@@ -46,7 +46,7 @@ __RadSpinEditor__.
 
 #### __[VB.NET]__
 
-{{region spinEditorAndTrackBar}}
+{{source=..\SamplesVB\Editors\SpinEditor1.vb region=spinEditorAndTrackBar}}
 	    Private Sub RadSpinEditor1_ValueChanged1(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadSpinEditor1.ValueChanged
 	        Me.RadTrackBar1.Value = Convert.ToInt32(RadSpinEditor1.Value)
 	    End Sub

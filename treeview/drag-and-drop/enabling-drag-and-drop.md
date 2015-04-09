@@ -66,7 +66,7 @@ To implement this functionality:
 
 #### __[C#]__
 
-{{region dragDrop}}
+{{source=..\SamplesCS\TreeView\DragAndDrop\EnablingDragAndDrop.cs region=dragDrop}}
 	        public EnablingDragAndDrop()
 	        {
 	            InitializeComponent();
@@ -113,7 +113,7 @@ To implement this functionality:
 
 #### __[VB.NET]__
 
-{{region dragDrop}}
+{{source=..\SamplesVB\TreeView\DragAndDrop\EnablingDragAndDrop.vb region=dragDrop}}
 	    Public Sub New()
 	        InitializeComponent()
 	

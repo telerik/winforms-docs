@@ -30,7 +30,7 @@ To add labels along an Axis programmatically:
 
 #### __[C#] Add Axis labels__
 
-{{region addAxisLabels}}
+{{source=..\SamplesCS\Chart\AddAxisLabelsProgrammaticaly.cs region=addAxisLabels}}
 	            radChart1.PlotArea.XAxis.AutoScale = false;
 	            radChart1.PlotArea.XAxis.AddRange(1, 7, 1);
 	            radChart1.PlotArea.XAxis[0].TextBlock.Text = "Mon";
@@ -46,7 +46,7 @@ To add labels along an Axis programmatically:
 
 #### __[VB.NET] Add Axis labels__
 
-{{region addAxisLabels}}
+{{source=..\SamplesVB\Chart\AddAxisLabelsProgrammaticaly.vb region=addAxisLabels}}
 	        radChart1.PlotArea.XAxis.AutoScale = False
 	        radChart1.PlotArea.XAxis.AddRange(1, 7, 1)
 	        radChart1.PlotArea.XAxis(0).TextBlock.Text = "Mon"

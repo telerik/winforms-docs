@@ -27,7 +27,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[C#] Localizing RadPivotGrid Strings__
 
-{{region CustomProvider}}
+{{source=..\SamplesCS\PivotGrid\Localization\Localization1.cs region=CustomProvider}}
 	    class MyEnglishPivotGridLoclizationProvider : PivotGridLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -250,7 +250,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[VB.NET] Localizing RadPivotGrid Strings__
 
-{{region CustomProvider}}
+{{source=..\SamplesVB\PivotGrid\Localization\PivotGridLocalization.vb region=CustomProvider}}
 	Class MyEnglishPivotGridLoclizationProvider
 	    Inherits PivotGridLocalizationProvider
 	    Public Overrides Function GetLocalizedString(id As String) As String
@@ -657,7 +657,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[C#] Assigning the Current Localization Provider__
 
-{{region LocalizePivot}}
+{{source=..\SamplesCS\PivotGrid\Localization\Localization1.cs region=LocalizePivot}}
 	            PivotGridLocalizationProvider.CurrentProvider = new MyEnglishPivotGridLoclizationProvider();
 	{{endregion}}
 
@@ -665,7 +665,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[VB.NET] Assigning the Current Localization Provider__
 
-{{region LocalizePivot}}
+{{source=..\SamplesVB\PivotGrid\Localization\PivotGridLocalization.vb region=LocalizePivot}}
 	        PivotGridLocalizationProvider.CurrentProvider = New MyEnglishPivotGridLoclizationProvider()
 	{{endregion}}
 

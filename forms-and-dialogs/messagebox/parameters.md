@@ -20,7 +20,7 @@ You can easily set the ThemeName of the RadMessageBox by calling the SetThemeNam
 
 #### __[C#] Setting a theme in RadMessageBox__
 
-{{region SetThemeName}}
+{{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=SetThemeName}}
 	            RadMessageBox.SetThemeName("Desert");
 	{{endregion}}
 
@@ -28,7 +28,7 @@ You can easily set the ThemeName of the RadMessageBox by calling the SetThemeNam
 
 #### __[VB.NET] Setting a theme in RadMessageBox__
 
-{{region SetThemeName}}
+{{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=SetThemeName}}
 	        RadMessageBox.SetThemeName("Desert")
 	{{endregion}}
 
@@ -104,7 +104,7 @@ As of Q2 2014 __RadMessageBox__ supports details section. This section can be sh
 
 #### __[C#]__
 
-{{region details}}
+{{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=details}}
 	            RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore, "Details Text");
 	{{endregion}}
 
@@ -112,7 +112,7 @@ As of Q2 2014 __RadMessageBox__ supports details section. This section can be sh
 
 #### __[VB.NET]__
 
-{{region details}}
+{{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=details}}
 	        RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore, "Details Text")
 	        '#End Region
 	    End Sub

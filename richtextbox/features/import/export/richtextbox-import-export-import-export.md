@@ -52,7 +52,7 @@ __Export to String__
 
 #### __[C#] Export to String__
 
-{{region ExportToXAML}}
+{{source=..\SamplesCS\RichTextBox\Features\ImportExport\RichTextBoxImportExport.cs region=ExportToXAML}}
 	        public string ExportToXAML(RadDocument document)
 	        {
 	            XamlFormatProvider provider = new XamlFormatProvider();
@@ -64,7 +64,7 @@ __Export to String__
 
 #### __[VB.NET] Export to String__
 
-{{region ExportToXAML}}
+{{source=..\SamplesVB\RichTextBox\Features\ImportExport\RichTextBoxImportExport.vb region=ExportToXAML}}
 	    Public Function ExportToXAML(ByVal document As RadDocument) As String
 	        Dim provider As New XamlFormatProvider()
 	        Return provider.Export(document)
@@ -144,7 +144,7 @@ __Export to File__
 
 #### __[C#] Export to File__
 
-{{region ExportToDocx}}
+{{source=..\SamplesCS\RichTextBox\Features\ImportExport\RichTextBoxImportExport.cs region=ExportToDocx}}
 	        public void ExportToDocx(RadDocument document)
 	        {
 	            DocxFormatProvider provider = new DocxFormatProvider();
@@ -167,7 +167,7 @@ __Export to File__
 
 #### __[VB.NET] Export to File__
 
-{{region ExportToDocx}}
+{{source=..\SamplesVB\RichTextBox\Features\ImportExport\RichTextBoxImportExport.vb region=ExportToDocx}}
 	    Public Sub ExportToDocx(ByVal document As RadDocument)
 	        Dim provider As New DocxFormatProvider()
 	        Dim saveDialog As New SaveFileDialog()
@@ -240,7 +240,7 @@ __Import from String__
 
 #### __[C#] Import from String__
 
-{{region ImportXaml}}
+{{source=..\SamplesCS\RichTextBox\Features\ImportExport\RichTextBoxImportExport.cs region=ImportXaml}}
 	        public RadDocument ImportXaml(string content)
 	        {
 	            XamlFormatProvider provider = new XamlFormatProvider();
@@ -252,7 +252,7 @@ __Import from String__
 
 #### __[VB.NET] Import from String__
 
-{{region ImportXaml}}
+{{source=..\SamplesVB\RichTextBox\Features\ImportExport\RichTextBoxImportExport.vb region=ImportXaml}}
 	    Public Function ImportXaml(ByVal content As String) As RadDocument
 	        Dim provider As New XamlFormatProvider()
 	        Return provider.Import(content)
@@ -309,7 +309,7 @@ __Import from File__
 
 #### __[C#] Import from File__
 
-{{region ImportDocx}}
+{{source=..\SamplesCS\RichTextBox\Features\ImportExport\RichTextBoxImportExport.cs region=ImportDocx}}
 	        public RadDocument ImportDocx()
 	        {
 	            RadDocument document = null;
@@ -333,7 +333,7 @@ __Import from File__
 
 #### __[VB.NET] Import from File__
 
-{{region ImportDocx}}
+{{source=..\SamplesVB\RichTextBox\Features\ImportExport\RichTextBoxImportExport.vb region=ImportDocx}}
 	    Public Function ImportDocx() As RadDocument
 	        Dim document As RadDocument = Nothing
 	        Dim provider As IDocumentFormatProvider = New DocxFormatProvider()

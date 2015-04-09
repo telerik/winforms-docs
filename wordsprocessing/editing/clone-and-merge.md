@@ -27,7 +27,7 @@ __RadWordsProcessing__ allows you to merge two __RadFlowDocument__ instance usin
 
 #### __C#__
 
-{{region radwordsprocessing-editing-clone-and-merge_0}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingCloneAndMerge.cs region=radwordsprocessing-editing-clone-and-merge_0}}
 	            RadFlowDocument target = new RadFlowDocument();
 	            RadFlowDocument source = new RadFlowDocument();
 	            //...
@@ -39,7 +39,7 @@ __RadWordsProcessing__ allows you to merge two __RadFlowDocument__ instance usin
 
 #### __VB NET__
 
-{{region radwordsprocessing-editing-clone-and-merge_0}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingCloneAndMerge.vb region=radwordsprocessing-editing-clone-and-merge_0}}
 	            Dim target As New RadFlowDocument()
 	            Dim source As New RadFlowDocument()
 	            '...
@@ -105,7 +105,7 @@ The following snippet shows how to merge documents by specifying the used __Merg
 
 #### __C#__
 
-{{region radwordsprocessing-editing-clone-and-merge_1}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingCloneAndMerge.cs region=radwordsprocessing-editing-clone-and-merge_1}}
 	            RadFlowDocument target = new RadFlowDocument();
 	            RadFlowDocument source = new RadFlowDocument();
 	            //...
@@ -120,7 +120,7 @@ The following snippet shows how to merge documents by specifying the used __Merg
 
 #### __VB NET__
 
-{{region radwordsprocessing-editing-clone-and-merge_1}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingCloneAndMerge.vb region=radwordsprocessing-editing-clone-and-merge_1}}
 	            Dim target As New RadFlowDocument()
 	            Dim source As New RadFlowDocument()
 	            '...
@@ -154,7 +154,7 @@ __RadFlowDocument__ provides __Clone()__ method, which creates deep copy of the 
 
 #### __C#__
 
-{{region radwordsprocessing-editing-clone-and-merge_2}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingCloneAndMerge.cs region=radwordsprocessing-editing-clone-and-merge_2}}
 	            RadFlowDocument clonedDocument = document.Clone();
 	{{endregion}}
 
@@ -162,7 +162,7 @@ __RadFlowDocument__ provides __Clone()__ method, which creates deep copy of the 
 
 #### __VB NET__
 
-{{region radwordsprocessing-editing-clone-and-merge_2}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingCloneAndMerge.vb region=radwordsprocessing-editing-clone-and-merge_2}}
 	            Dim clonedDocument As RadFlowDocument = document.Clone()
 	            '#End Region
 	        End Sub
@@ -213,7 +213,7 @@ __Clone()__ method has two overloads:
 
 #### __C#__
 
-{{region radwordsprocessing-editing-clone-and-merge_3}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingCloneAndMerge.cs region=radwordsprocessing-editing-clone-and-merge_3}}
 	            Section clonedSection = section.Clone(radFlowDocument);
 	{{endregion}}
 
@@ -221,7 +221,7 @@ __Clone()__ method has two overloads:
 
 #### __VB NET__
 
-{{region radwordsprocessing-editing-clone-and-merge_3}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingCloneAndMerge.vb region=radwordsprocessing-editing-clone-and-merge_3}}
 	            Dim clonedSection As Section = section.Clone(radFlowDocument)
 	            '#End Region
 	        End Sub

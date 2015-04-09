@@ -32,7 +32,7 @@ As a quick example, let’s say that we want to convert char values Y and N to T
 
 #### __[C#] ToggleState converter__
 
-{{region convertTypes}}
+{{source=..\SamplesCS\GridView\Columns\ConvertingDataTypes.cs region=convertTypes}}
 	        public class ToggleStateConverter : TypeConverter
 	        {
 	            public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
@@ -85,7 +85,7 @@ As a quick example, let’s say that we want to convert char values Y and N to T
 
 #### __[VB.NET] ToggleState converter__
 
-{{region convertTypes}}
+{{source=..\SamplesVB\GridView\Columns\ConvertingDataTypes.vb region=convertTypes}}
 	    Public Class ToggleStateConverter
 	        Inherits TypeConverter
 	        Public Overrides Function CanConvertTo(ByVal context As ITypeDescriptorContext, ByVal destinationType As Type) As Boolean
@@ -140,7 +140,7 @@ The first approach to apply type converters is to create the desired column and 
 
 #### __[C#] Applying TypeConverter__
 
-{{region applyingTypeConverters}}
+{{source=..\SamplesCS\GridView\Columns\ConvertingDataTypes.cs region=applyingTypeConverters}}
 	        private void ConvertingDataTypes_Load(object sender, EventArgs e)
 	        {
 	            GridViewCheckBoxColumn checkBox = new GridViewCheckBoxColumn("Organic", "IsOrganic");
@@ -153,7 +153,7 @@ The first approach to apply type converters is to create the desired column and 
 
 #### __[VB.NET] Applying TypeConverter__
 
-{{region applyingTypeConverters}}
+{{source=..\SamplesVB\GridView\Columns\ConvertingDataTypes.vb region=applyingTypeConverters}}
 	
 	    Private Sub ConvertingDataTypes_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
 	        Dim checkBox As New GridViewCheckBoxColumn("Organic", "IsOrganic")
@@ -170,7 +170,7 @@ The second way to add type converters is to use the TypeConverterAttribute, whic
 
 #### __[C#] Custom class with TypeConverter attribute__
 
-{{region classProduct}}
+{{source=..\SamplesCS\GridView\Columns\ConvertingDataTypes.cs region=classProduct}}
 	        public class Product
 	        {
 	            public int ProductID { get; set; }
@@ -190,7 +190,7 @@ The second way to add type converters is to use the TypeConverterAttribute, whic
 
 #### __[VB.NET] Custom class with TypeConverter attribute__
 
-{{region classProduct}}
+{{source=..\SamplesVB\GridView\Columns\ConvertingDataTypes.vb region=classProduct}}
 	    Public Class Product
 	        Public Property ProductID() As Integer
 	            Get
@@ -274,7 +274,7 @@ The RadGridView’s conversation layer can handle null values. You can specify t
 
 #### __[C#] Handling null values__
 
-{{region handlingNullValues}}
+{{source=..\SamplesCS\GridView\Columns\ConvertingDataTypes.cs region=handlingNullValues}}
 	            this.radGridView1.Columns["ProductName"].DataSourceNullValue = "ENTER PRODUCT NAME";
 	{{endregion}}
 
@@ -282,7 +282,7 @@ The RadGridView’s conversation layer can handle null values. You can specify t
 
 #### __[VB.NET] Handling null values__
 
-{{region handlingNullValues}}
+{{source=..\SamplesVB\GridView\Columns\ConvertingDataTypes.vb region=handlingNullValues}}
 	        Me.RadGridView1.Columns("ProductName").DataSourceNullValue = "ENTER PRODUCT NAME"
 	{{endregion}}
 

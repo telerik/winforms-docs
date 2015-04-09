@@ -30,7 +30,7 @@ The following example demonstrates how to bind RadTreeView to a self referencing
 
 #### __[C#]__
 
-{{region selfRef}}
+{{source=..\SamplesCS\TreeView\DataBinding\BindingToSelfRefData.cs region=selfRef}}
 	        
 	        public BindingToSelfRefData()
 	        {
@@ -112,7 +112,7 @@ The following example demonstrates how to bind RadTreeView to a self referencing
 
 #### __[VB.NET]__
 
-{{region selfRef}}
+{{source=..\SamplesVB\TreeView\DataBinding\BindingToSelfRefData.vb region=selfRef}}
 	    Public Sub New()
 	        InitializeComponent()
 	
@@ -199,7 +199,7 @@ Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a
 
 #### __[C#]__
 
-{{region CheckedMember}}
+{{source=..\SamplesCS\TreeView\DataBinding\BindingToSelfRefData.cs region=CheckedMember}}
 	            
 	            DataTable dt = new DataTable();
 	            dt.Columns.Add("Id", typeof(string));
@@ -234,7 +234,7 @@ Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a
 
 #### __[VB.NET]__
 
-{{region CheckedMember}}
+{{source=..\SamplesVB\TreeView\DataBinding\BindingToSelfRefData.vb region=CheckedMember}}
 	
 	        Dim dt As New DataTable()
 	        dt.Columns.Add("Id", GetType(String))

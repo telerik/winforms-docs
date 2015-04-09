@@ -23,7 +23,7 @@ The __ArrowPrimitive__ draws a filled triangular polygon. Orientation is control
 
 #### __[C#] Creating an ArrowPrimitive__
 
-{{region myArrowPrimitiveElement}}
+{{source=..\SamplesCS\TPF\Primitives\ArrowPrimitive1\MyArrowPrimitiveElement.cs region=myArrowPrimitiveElement}}
 	    public class MyArrowPrimitiveElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -52,7 +52,7 @@ The __ArrowPrimitive__ draws a filled triangular polygon. Orientation is control
 
 #### __[VB.NET] Creating an ArrowPrimitive__
 
-{{region myArrowPrimitiveElement}}
+{{source=..\SamplesVB\TPF\Primitives\ArrowPrimitive1\MyArrowPrimitiveElement.vb region=myArrowPrimitiveElement}}
 	Public Class MyArrowPrimitiveElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

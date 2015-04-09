@@ -38,7 +38,7 @@ The code snippet below demonstrates simple data validation scenario. It is perfo
 
 #### __[C#] Property validation__
 
-{{region PropertyValidating}}
+{{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridValidation.cs region=PropertyValidating}}
 	        void radPropertyGrid1_PropertyValidating(object sender, PropertyValidatingEventArgs e)
 	        {
 	            PropertyGridItem item = e.Item as PropertyGridItem;
@@ -64,7 +64,7 @@ The code snippet below demonstrates simple data validation scenario. It is perfo
 
 #### __[VB.NET] Property validation__
 
-{{region PropertyValidating}}
+{{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridValidation.vb region=PropertyValidating}}
 	    Private Sub radPropertyGrid1_PropertyValidating(ByVal sender As Object, ByVal e As PropertyValidatingEventArgs)
 	        Dim item As PropertyGridItem = TryCast(e.Item, PropertyGridItem)
 	

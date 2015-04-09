@@ -33,7 +33,7 @@ The __RowSelection__ class exposes __CanInsert()__ and __Insert()__ methods that
 
 #### __[C#] Example 1: Insert rows__
 
-{{region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingInsertAndRemoveRowsAndColumns.cs region=radspreadprocessing-working-with-rows-and-columns-insert-and-remove_0}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -51,7 +51,7 @@ The __RowSelection__ class exposes __CanInsert()__ and __Insert()__ methods that
 
 #### __[VB.NET] Example 1: Insert rows__
 
-{{region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingInsertAndRemoveRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-insert-and-remove_0}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -119,7 +119,7 @@ The __RowSelection__ class exposes a __Remove()__ method that performs the remov
 
 #### __[C#] Example 2: Remove rows__
 
-{{region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingInsertAndRemoveRowsAndColumns.cs region=radspreadprocessing-working-with-rows-and-columns-insert-and-remove_1}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -134,7 +134,7 @@ The __RowSelection__ class exposes a __Remove()__ method that performs the remov
 
 #### __[VB.NET] Example 2: Remove rows__
 
-{{region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingInsertAndRemoveRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-insert-and-remove_1}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -187,7 +187,7 @@ The __ColumnSelection__ class exposes __CanInsert()__ and __Insert()__ methods t
 
 #### __[C#] Example 3: Insert columns__
 
-{{region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingInsertAndRemoveRowsAndColumns.cs region=radspreadprocessing-working-with-rows-and-columns-insert-and-remove_2}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -205,7 +205,7 @@ The __ColumnSelection__ class exposes __CanInsert()__ and __Insert()__ methods t
 
 #### __[VB.NET] Example 3: Insert columns__
 
-{{region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingInsertAndRemoveRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-insert-and-remove_2}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -245,7 +245,7 @@ The __ColumnSelection__ class exposes a __Remove()__ method that executes the re
 
 #### __[C#] Example 4: Remove columns__
 
-{{region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingInsertAndRemoveRowsAndColumns.cs region=radspreadprocessing-working-with-rows-and-columns-insert-and-remove_3}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -260,7 +260,7 @@ The __ColumnSelection__ class exposes a __Remove()__ method that executes the re
 
 #### __[VB.NET] Example 4: Remove columns__
 
-{{region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingInsertAndRemoveRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-insert-and-remove_3}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	

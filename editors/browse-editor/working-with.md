@@ -39,7 +39,7 @@ __ValueChanging__: This event fires before the value changes
 
 #### __[C#] Cancel changing the value__
 
-{{region browseEditorValueChanging}}
+{{source=..\SamplesCS\Editors\BrowseEditor1.cs region=browseEditorValueChanging}}
 	        private void radBrowseEditor1_ValueChanging(object sender, ValueChangingEventArgs e)
 	        {
 	            e.Cancel = !File.Exists(e.NewValue.ToString());
@@ -50,7 +50,7 @@ __ValueChanging__: This event fires before the value changes
 
 #### __[VB.NET] Cancel changing the value__
 
-{{region browseEditorValueChanging}}
+{{source=..\SamplesVB\Editors\BrowseEditor1.vb region=browseEditorValueChanging}}
 	    Private Sub RadBrowseEditor1_ValueChanging(sender As Object, e As Telerik.WinControls.UI.ValueChangingEventArgs)
 	        e.Cancel = Not System.IO.File.Exists(e.NewValue.ToString())
 	    End Sub

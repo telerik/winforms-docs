@@ -58,7 +58,7 @@ Replace the automatically-generated event handler with this code:
 
 #### __[C#]__
 
-{{region click}}
+{{source=..\SamplesCS\TrackAndStatus\WaitingBar\WaitingGettingStarted.cs region=click}}
 	        private void radButton1_Click(object sender, EventArgs e)
 	        {
 	            if (radWaitingBar1.IsWaiting)
@@ -78,7 +78,7 @@ Replace the automatically-generated event handler with this code:
 
 #### __[VB.NET]__
 
-{{region click}}
+{{source=..\SamplesVB\TrackAndStatus\WaitingBar\WaitingGettingStarted.vb region=click}}
 	    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        If RadWaitingBar1.IsWaiting Then
 	            RadWaitingBar1.StopWaiting()

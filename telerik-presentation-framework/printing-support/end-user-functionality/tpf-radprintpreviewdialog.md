@@ -22,7 +22,7 @@ By using RadPrintPreviewDialog you can preview how the RadPrintDocument will app
 
 #### __[C#]__
 
-{{region CreateAndShow1}}
+{{source=..\SamplesCS\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.cs region=CreateAndShow1}}
 	            RadPrintPreviewDialog dialog = new RadPrintPreviewDialog();
 	            dialog.Document = this.radPrintDocument1;
 	            dialog.ShowDialog();
@@ -32,7 +32,7 @@ By using RadPrintPreviewDialog you can preview how the RadPrintDocument will app
 
 #### __[VB.NET]__
 
-{{region CreateAndShow1}}
+{{source=..\SamplesVB\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.vb region=CreateAndShow1}}
 	        Dim dialog As New RadPrintPreviewDialog
 	        dialog.Document = Me.RadPrintDocument1
 	        dialog.ShowDialog()
@@ -44,7 +44,7 @@ You can also pass the RadPrintDocument to the RadPrintPreviewDialog via its cons
 
 #### __[C#]__
 
-{{region CreateAndShow2}}
+{{source=..\SamplesCS\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.cs region=CreateAndShow2}}
 	            RadPrintPreviewDialog printPreviewDialog = new RadPrintPreviewDialog(this.radPrintDocument1);
 	            printPreviewDialog.ShowDialog();
 	{{endregion}}
@@ -53,7 +53,7 @@ You can also pass the RadPrintDocument to the RadPrintPreviewDialog via its cons
 
 #### __[VB.NET]__
 
-{{region CreateAndShow2}}
+{{source=..\SamplesVB\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.vb region=CreateAndShow2}}
 	        Dim printPreviewDialog As New RadPrintPreviewDialog(Me.RadPrintDocument1)
 	        printPreviewDialog.ShowDialog()
 	{{endregion}}
@@ -68,7 +68,7 @@ The User Interface of RadPrintPreviewDialog is built on top of RadMenu and RadCo
 
 #### __[C#]__
 
-{{region ShowHideMenuAndCommandBar}}
+{{source=..\SamplesCS\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.cs region=ShowHideMenuAndCommandBar}}
 	            dialog.ToolMenu.Visible = true;
 	            dialog.ToolCommandBar.Visible = false;
 	{{endregion}}
@@ -77,7 +77,7 @@ The User Interface of RadPrintPreviewDialog is built on top of RadMenu and RadCo
 
 #### __[VB.NET]__
 
-{{region ShowHideMenuAndCommandBar}}
+{{source=..\SamplesVB\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.vb region=ShowHideMenuAndCommandBar}}
 	        dialog.ToolMenu.Visible = True
 	        dialog.ToolCommandBar.Visible = False
 	{{endregion}}

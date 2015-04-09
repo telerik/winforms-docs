@@ -44,7 +44,7 @@ You can filter by the following criteria’s:
 
 #### __[C#] Adding a filter descriptor__
 
-{{region Filtering}}
+{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridFiltering.cs region=Filtering}}
 	            FilterDescriptor filter = new FilterDescriptor("Name", FilterOperator.Contains, "size");
 	            radPropertyGrid1.FilterDescriptors.Add(filter);
 	{{endregion}}
@@ -53,7 +53,7 @@ You can filter by the following criteria’s:
 
 #### __[VB.NET] Adding a filter descriptor__
 
-{{region Filtering}}
+{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridFiltering.vb region=Filtering}}
 	        Dim filter = New FilterDescriptor("Name", FilterOperator.Contains, "size")
 	        RadPropertyGrid1.FilterDescriptors.Add(filter)
 	{{endregion}}

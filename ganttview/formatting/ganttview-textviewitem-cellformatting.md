@@ -24,7 +24,7 @@ Here is an example demonstrating how to use the event to make all summary items 
 
 #### __[C#] __
 
-{{region TextViewItemFormatting}}
+{{source=..\SamplesCS\GanttView\Formatting\TextViewItemCellFormatting.cs region=TextViewItemFormatting}}
 	        private void radGanttView1_TextViewItemFormatting(object sender, GanttViewTextViewItemFormattingEventArgs e)
 	        {
 	            if (e.Item.Items.Count > 0)
@@ -52,7 +52,7 @@ Here is an example demonstrating how to use the event to make all summary items 
 
 #### __[VB.NET] __
 
-{{region TextViewItemFormatting}}
+{{source=..\SamplesVB\GanttView\Formatting\TextViewItemCellFormatting.vb region=TextViewItemFormatting}}
 	    Private Sub radGanttView1_TextViewItemFormatting(sender As Object, e As GanttViewTextViewItemFormattingEventArgs)
 	        If (e.Item.Items.Count > 0) Then
 	            e.ItemElement.DrawFill = True
@@ -77,7 +77,7 @@ Another example showing how to change the fore color of the cells in the Title c
 
 #### __[C#] __
 
-{{region TextViewCellFormatting}}
+{{source=..\SamplesCS\GanttView\Formatting\TextViewItemCellFormatting.cs region=TextViewCellFormatting}}
 	        private void radGanttView1_TextViewCellFormatting(object sender, GanttViewTextViewCellFormattingEventArgs e)
 	        {
 	            if (e.Item.Start.Day % 2 == 0 && e.Column.Name == "Title")
@@ -95,7 +95,7 @@ Another example showing how to change the fore color of the cells in the Title c
 
 #### __[VB.NET] __
 
-{{region TextViewCellFormatting}}
+{{source=..\SamplesVB\GanttView\Formatting\TextViewItemCellFormatting.vb region=TextViewCellFormatting}}
 	    Private Sub radGanttView1_TextViewCellFormatting(sender As Object, e As GanttViewTextViewCellFormattingEventArgs)
 	        If (e.Item.Start.Day Mod 2 = 0 AndAlso e.Column.Name = "Title") Then
 	            e.CellElement.ForeColor = Color.Red

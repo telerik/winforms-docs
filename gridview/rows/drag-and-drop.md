@@ -33,7 +33,7 @@ To get started:
 
 #### __[C#] __
 
-{{region Definition}}
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=Definition}}
 	public class DragAndDropRadGrid : RadGridView
 	{{endregion}}
 
@@ -41,7 +41,7 @@ To get started:
 
 #### __[VB.NET] __
 
-{{region Definition}}
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=Definition}}
 	Public Class DragAndDropRadGrid
 	    Inherits RadGridView
 	{{endregion}}
@@ -55,7 +55,7 @@ The drag and drop functionality is made easy using the built-in RadGridViewDragD
 
 #### __[C#] __
 
-{{region Constructor}}
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=Constructor}}
 	    public DragAndDropRadGrid() 
 	    {  
 	        this.MultiSelect = true;                       
@@ -79,7 +79,7 @@ The drag and drop functionality is made easy using the built-in RadGridViewDragD
 
 #### __[VB.NET] __
 
-{{region Constructor}}
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=Constructor}}
 	    Public Sub New()
 	        Me.MultiSelect = True
 	
@@ -234,7 +234,7 @@ In order to start the drag and drop service when the user clicks on a row with t
 
 #### __[C#] __
 
-{{region GridBehavior}}
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=GridBehavior}}
 	//initiates drag and drop service for clicked rows
 	public class RowSelectionGridBehavior : GridDataRowBehavior
 	{
@@ -257,7 +257,7 @@ In order to start the drag and drop service when the user clicks on a row with t
 
 #### __[VB.NET] __
 
-{{region GridBehavior}}
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=GridBehavior}}
 	'initiates drag and drop service for clicked rows
 	Public Class RowSelectionGridBehavior
 	    Inherits GridDataRowBehavior
@@ -284,7 +284,7 @@ The PreviewDragStart event is fired once the Drag and Drop service on the grid i
 
 #### __[C#] __
 
-{{region PreviewDragStart}}
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=PreviewDragStart}}
 	    //required to initiate drag and drop when grid is in bound mode
 	    private void svc_PreviewDragStart(object sender, PreviewDragStartEventArgs e)
 	    {
@@ -296,7 +296,7 @@ The PreviewDragStart event is fired once the Drag and Drop service on the grid i
 
 #### __[VB.NET] __
 
-{{region PreviewDragStart}}
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=PreviewDragStart}}
 	    'required to initiate drag and drop when grid is in bound mode
 	    Private Sub svc_PreviewDragStart(ByVal sender As Object, ByVal e As PreviewDragStartEventArgs)
 	        e.CanStart = True
@@ -428,7 +428,7 @@ The next event we will handle is the PreviewDragOver event. This event allows yo
 
 #### __[C#] __
 
-{{region PreviewDragOver}}
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=PreviewDragOver}}
 	    private void svc_PreviewDragOver(object sender, RadDragOverEventArgs e)
 	    {
 	        if (e.DragInstance is GridDataRowElement)
@@ -444,7 +444,7 @@ The next event we will handle is the PreviewDragOver event. This event allows yo
 
 #### __[VB.NET] __
 
-{{region PreviewDragOver}}
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=PreviewDragOver}}
 	    Private Sub svc_PreviewDragOver(ByVal sender As Object, ByVal e As RadDragOverEventArgs)
 	        If TypeOf e.DragInstance Is GridDataRowElement Then
 	            e.CanDrop = TypeOf e.HitTarget Is GridDataRowElement OrElse
@@ -530,7 +530,7 @@ The last event we want to handle in our implementation is the PreviewDragDrop ev
 
 #### __[C#] __
 
-{{region PreviewDragDrop}}
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=PreviewDragDrop}}
 	    //gather drag/source grid and target/destination information and initiate the move of selected rows
 	    private void svc_PreviewDragDrop(object sender, RadDropEventArgs e)
 	    {
@@ -574,7 +574,7 @@ The last event we want to handle in our implementation is the PreviewDragDrop ev
 
 #### __[VB.NET] __
 
-{{region PreviewDragDrop}}
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=PreviewDragDrop}}
 	    'gather drag/source grid and target/destination information and initiate the move of selected rows
 	    Private Sub svc_PreviewDragDrop(ByVal sender As Object, ByVal e As RadDropEventArgs)
 	        Dim rowElement = TryCast(e.DragInstance, GridDataRowElement)
@@ -709,7 +709,7 @@ It is in the MoveRows method where the physical moving of the data happens. Basi
 
 #### __[C#] __
 
-{{region MoveRows}}
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=MoveRows}}
 	    private void MoveRows(RadGridView targetGrid, RadGridView dragGrid, 
 	                            IList<GridViewRowInfo> dragRows, int index) 
 	    { 
@@ -777,7 +777,7 @@ It is in the MoveRows method where the physical moving of the data happens. Basi
 
 #### __[VB.NET] __
 
-{{region MoveRows}}
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=MoveRows}}
 	    Private Sub MoveRows(ByVal targetGrid As RadGridView, ByVal dragGrid As RadGridView, ByVal dragRows As IList(Of GridViewRowInfo), ByVal index As Integer)
 	        dragGrid.BeginUpdate()
 	        targetGrid.BeginUpdate()
@@ -857,7 +857,7 @@ Initialize some settings of the grids in the default constructor of the form as 
 
 #### __[C#] __
 
-{{region Form1}}
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGridForm1.cs region=Form1}}
 	        public DragAndDropRadGridForm1()
 	        {
 	            InitializeComponent();
@@ -884,7 +884,7 @@ Initialize some settings of the grids in the default constructor of the form as 
 
 #### __[VB.NET] __
 
-{{region Form1}}
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGridForm1.vb region=Form1}}
 	        Public Sub New()
 	            InitializeComponent()
 	            leftGrid.ShowGroupPanel = False
@@ -1026,7 +1026,7 @@ First we will implement the usage of our custom grid in an unbound scenario. To 
 
 #### __[C#] __
 
-{{region Unbound}}
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGridForm1.cs region=Unbound}}
 	        private void btnUnbound_Click(object sender, EventArgs e)
 	        {
 	            ResetGrids();
@@ -1057,7 +1057,7 @@ First we will implement the usage of our custom grid in an unbound scenario. To 
 
 #### __[VB.NET] __
 
-{{region Unbound}}
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGridForm1.vb region=Unbound}}
 	        Private Sub btnUnbound_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnUnbound.Click
 	            ResetGrids()
 	
@@ -1178,7 +1178,7 @@ Next we will implement the usage of our grid when it is bound to a BindingList. 
 
 #### __[C#] __
 
-{{region BoundObjects}}
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGridForm1.cs region=BoundObjects}}
 	        private void btnBoundObjects_Click(object sender, EventArgs e)
 	        {
 	            ResetGrids();
@@ -1201,7 +1201,7 @@ Next we will implement the usage of our grid when it is bound to a BindingList. 
 
 #### __[VB.NET] __
 
-{{region BoundObjects}}
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGridForm1.vb region=BoundObjects}}
 	        Private Sub btnBoundObjects_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnBoundObjects.Click
 	            ResetGrids()
 	
@@ -1297,7 +1297,7 @@ Add a Player class to the Form1.cs source file to support this scenario defined 
 
 #### __[C#] __
 
-{{region Player}}
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGridForm1.cs region=Player}}
 	    public class Player
 	    {
 	        public string FirstName { get; set; }
@@ -1309,7 +1309,7 @@ Add a Player class to the Form1.cs source file to support this scenario defined 
 
 #### __[VB.NET] __
 
-{{region Player}}
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGridForm1.vb region=Player}}
 	    Public Class Player
 	        Public Property FirstName() As String
 	            Get
@@ -1338,7 +1338,7 @@ Lastly we will implement the scenario of when the grids are bound to a DataSet. 
 
 #### __[C#] __
 
-{{region DataSet}}
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGridForm1.cs region=DataSet}}
 	        private void btnBoundDataSet_Click(object sender, EventArgs e)
 	        {
 	            ResetGrids();
@@ -1372,7 +1372,7 @@ Lastly we will implement the scenario of when the grids are bound to a DataSet. 
 
 #### __[VB.NET] __
 
-{{region DataSet}}
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGridForm1.vb region=DataSet}}
 	        Private Sub btnBoundDataSet_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnBoundDataSet.Click
 	            ResetGrids()
 	

@@ -18,7 +18,7 @@ position: 0
 
 #### __[C#] OnMouseEnter__
 
-{{region onMouseEnter}}
+{{source=..\SamplesCS\TPF\Events.cs region=onMouseEnter}}
 	        protected override void OnMouseEnter(EventArgs e)
 	        {
 	            if (!DisableMouseEvents)
@@ -34,7 +34,7 @@ position: 0
 
 #### __[VB.NET] OnMouseEnter__
 
-{{region onMouseEnter}}
+{{source=..\SamplesVB\TPF\Events.vb region=onMouseEnter}}
 	    Protected Overrides Sub OnMouseEnter(ByVal e As EventArgs)
 	        If Not DisableMouseEvents Then
 	            Me.RootElement.IsMouseOver = True

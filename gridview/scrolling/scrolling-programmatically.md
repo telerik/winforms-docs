@@ -20,7 +20,7 @@ You can scroll programmatically using the following functions:
 
 #### __[C#] ScrollTo__
 
-{{region ScrollTo}}
+{{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=ScrollTo}}
 	            this.radGridView1.TableElement.ScrollTo(5, 4);
 	{{endregion}}
 
@@ -28,7 +28,7 @@ You can scroll programmatically using the following functions:
 
 #### __[VB.NET] ScrollTo__
 
-{{region ScrollTo}}
+{{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=ScrollTo}}
 	        Me.RadGridView1.TableElement.ScrollTo(5, 4)
 	        '#End Region
 	
@@ -51,7 +51,7 @@ You can scroll programmatically using the following functions:
 
 #### __[C#] ScrollToColumn__
 
-{{region Column}}
+{{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=Column}}
 	            radGridView1.TableElement.ScrollToColumn(3);
 	{{endregion}}
 
@@ -59,7 +59,7 @@ You can scroll programmatically using the following functions:
 
 #### __[VB.NET] ScrollToColumn__
 
-{{region Column}}
+{{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=Column}}
 	        RadGridView1.TableElement.ScrollToColumn(3)
 	        '#End Region
 	
@@ -78,7 +78,7 @@ You can scroll programmatically using the following functions:
 
 #### __[C#] ScrollToRow__
 
-{{region Row}}
+{{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=Row}}
 	            radGridView1.TableElement.ScrollToRow(100);
 	{{endregion}}
 
@@ -86,7 +86,7 @@ You can scroll programmatically using the following functions:
 
 #### __[VB.NET] ScrollToRow__
 
-{{region Row}}
+{{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=Row}}
 	        RadGridView1.TableElement.ScrollToRow(100)
 	        '#End Region
 	    End Sub

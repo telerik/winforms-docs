@@ -64,7 +64,7 @@ __Example 1__ demonstrates how to create a __ThemeColorScheme__ object. Note tha
 
 #### __[C#] Example 1: __
 
-{{region radspreadprocessing-features-styling-document-themes_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.cs region=radspreadprocessing-features-styling-document-themes_0}}
 	            ThemeColorScheme colorScheme = new ThemeColorScheme(
 	                "Mine",
 	                Colors.Black,     // background 1
@@ -85,7 +85,7 @@ __Example 1__ demonstrates how to create a __ThemeColorScheme__ object. Note tha
 
 #### __VB__
 
-{{region radspreadprocessing-features-styling-document-themes_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_0}}
 	
 	        Dim colorScheme As New ThemeColorScheme("Mine", Colors.Black, _
 	                                                        Colors.Blue, _
@@ -170,7 +170,7 @@ __Example 2__ shows how you can create a ThemableColor:
 
 #### __[C#] Example 2: Create ThemableColor__
 
-{{region radspreadprocessing-features-styling-document-themes_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.cs region=radspreadprocessing-features-styling-document-themes_1}}
 	            ThemableColor themableColor = new ThemableColor(ThemeColorType.Accent1);
 	{{endregion}}
 
@@ -178,7 +178,7 @@ __Example 2__ shows how you can create a ThemableColor:
 
 #### __VB__
 
-{{region radspreadprocessing-features-styling-document-themes_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_1}}
 	        Dim themableColor As New ThemableColor(ThemeColorType.Accent1)
 	        '#End Region
 	
@@ -238,7 +238,7 @@ __Example 3__ illustrates how to create a __ThemeFontScheme__ object.
 
 #### __[C#] Example 3: Create ThemeFontScheme__
 
-{{region radspreadprocessing-features-styling-document-themes_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.cs region=radspreadprocessing-features-styling-document-themes_2}}
 	            ThemeFontScheme fontScheme = new ThemeFontScheme(
 	                "Mine",
 	                "Times New Roman",  // latinMajor
@@ -249,7 +249,7 @@ __Example 3__ illustrates how to create a __ThemeFontScheme__ object.
 
 #### __VB__
 
-{{region radspreadprocessing-features-styling-document-themes_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_2}}
 	        ' latinMajor
 	        Dim fontScheme As New ThemeFontScheme("Mine", "Times New Roman", "Arial")
 	        ' latinMinor
@@ -305,7 +305,7 @@ __Example 4__ shows how to create a ThemableFontFamily.
 
 #### __[C#] Example 4: Create ThemableFontFamily__
 
-{{region radspreadprocessing-features-styling-document-themes_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.cs region=radspreadprocessing-features-styling-document-themes_3}}
 	            ThemableFontFamily themableFont = new ThemableFontFamily(ThemeFontType.Major);
 	{{endregion}}
 
@@ -313,7 +313,7 @@ __Example 4__ shows how to create a ThemableFontFamily.
 
 #### __VB__
 
-{{region radspreadprocessing-features-styling-document-themes_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_3}}
 	        Dim themableFont As New ThemableFontFamily(ThemeFontType.Major)
 	        '#End Region
 	
@@ -356,7 +356,7 @@ __Example 5__ demonstrates how to use create a DocumentTheme using the color sch
 
 #### __[C#] Example 5: Create DocumentTheme__
 
-{{region radspreadprocessing-features-styling-document-themes_4}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.cs region=radspreadprocessing-features-styling-document-themes_4}}
 	            DocumentTheme theme = new DocumentTheme("Mine", colorScheme, fontScheme);
 	{{endregion}}
 
@@ -364,7 +364,7 @@ __Example 5__ demonstrates how to use create a DocumentTheme using the color sch
 
 #### __VB__
 
-{{region radspreadprocessing-features-styling-document-themes_4}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_4}}
 	        Dim theme As New DocumentTheme("Mine", colorScheme, fontScheme)
 	        '#End Region
 	
@@ -401,7 +401,7 @@ __Example 6__ shows how you can create a document theme using the predefined col
 
 #### __[C#] Example 6: Create DocumentTheme from predefined schemes__
 
-{{region radspreadprocessing-features-styling-document-themes_5}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.cs region=radspreadprocessing-features-styling-document-themes_5}}
 	            DocumentTheme theme = new DocumentTheme("From predefined schemes", PredefinedThemeSchemes.ColorSchemes[0], PredefinedThemeSchemes.FontSchemes[5]);
 	{{endregion}}
 
@@ -409,7 +409,7 @@ __Example 6__ shows how you can create a document theme using the predefined col
 
 #### __VB__
 
-{{region radspreadprocessing-features-styling-document-themes_5}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_5}}
 	        Dim theme1 As New DocumentTheme("From Predefined schemes", PredefinedThemeSchemes.ColorSchemes(0), PredefinedThemeSchemes.FontSchemes(5))
 	        '#End Region
 	
@@ -442,7 +442,7 @@ __Example 7__ changes the theme of a newly created workbook.
 
 #### __[C#] Example 7: Change DocumentTheme.__
 
-{{region radspreadprocessing-features-styling-document-themes_6}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.cs region=radspreadprocessing-features-styling-document-themes_6}}
 	            Workbook workbook = new Workbook();
 	            workbook.Worksheets.Add();
 	            workbook.Theme = theme;
@@ -452,7 +452,7 @@ __Example 7__ changes the theme of a newly created workbook.
 
 #### __VB__
 
-{{region radspreadprocessing-features-styling-document-themes_6}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_6}}
 	        Dim workbook As New Workbook()
 	        workbook.Worksheets.Add()
 	        workbook.Theme = theme
@@ -480,7 +480,7 @@ In order to get the actual value from __ThemableColor__ or __ThemableFontFamily_
 
 #### __[C#] Example 8: Get actual color__
 
-{{region radspreadprocessing-features-styling-document-themes_7}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.cs region=radspreadprocessing-features-styling-document-themes_7}}
 	            Color actualColor = themableColor.GetActualValue(theme);
 	            // the actual color is the same as Accent1 color of the colorScheme
 	{{endregion}}
@@ -489,7 +489,7 @@ In order to get the actual value from __ThemableColor__ or __ThemableFontFamily_
 
 #### __VB__
 
-{{region radspreadprocessing-features-styling-document-themes_7}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_7}}
 	        Dim actualColor As Color = themableColor.GetActualValue(theme)
 	        ' the actual color is the same as Accent1 color of the colorScheme
 	        '#End Region
@@ -506,7 +506,7 @@ In order to get the actual value from __ThemableColor__ or __ThemableFontFamily_
 
 #### __[C#] Example 9: Get actual font__
 
-{{region radspreadprocessing-features-styling-document-themes_8}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.cs region=radspreadprocessing-features-styling-document-themes_8}}
 	            var actualFont = themableFont.GetActualValue(theme);
 	            // the actualFont is the same as the Major font of the fontScheme
 	{{endregion}}
@@ -515,7 +515,7 @@ In order to get the actual value from __ThemableColor__ or __ThemableFontFamily_
 
 #### __VB__
 
-{{region radspreadprocessing-features-styling-document-themes_8}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_8}}
 	        Dim actualFont = themableFont.GetActualValue(theme)
 	        ' the actualFont is the same as the Major font of the fontScheme
 	        '#End Region

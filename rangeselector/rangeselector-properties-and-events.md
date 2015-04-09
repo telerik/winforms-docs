@@ -24,7 +24,7 @@ Here are the most important properties for changing the control appearance and b
 
 #### __[C#] __
 
-{{region StartEnd}}
+{{source=..\SamplesCS\RangeSelector\RangeSelectorPropertiesAndEvents.cs region=StartEnd}}
 	
 	            this.radRangeSelector1.StartRange = 20;
 	            this.radRangeSelector1.EndRange = 50;
@@ -35,7 +35,7 @@ Here are the most important properties for changing the control appearance and b
 
 #### __[VB.NET] __
 
-{{region StartEnd}}
+{{source=..\SamplesVB\RangeSelector\RangeSelectorPropertiesAndEvents.vb region=StartEnd}}
 	
 	            Me.radRangeSelector1.StartRange = 20
 	            Me.radRangeSelector1.EndRange = 50
@@ -91,7 +91,7 @@ Here are the most important properties for changing the control appearance and b
 
 #### __[C#] __
 
-{{region StartZoomEndZoom}}
+{{source=..\SamplesCS\RangeSelector\RangeSelectorPropertiesAndEvents.cs region=StartZoomEndZoom}}
 	
 	            this.radRangeSelector1.RangeSelectorViewZoomStart = 20;
 	            this.radRangeSelector1.RangeSelectorViewZoomEnd = 50;
@@ -102,7 +102,7 @@ Here are the most important properties for changing the control appearance and b
 
 #### __[VB.NET] __
 
-{{region StartZoomEndZoom}}
+{{source=..\SamplesVB\RangeSelector\RangeSelectorPropertiesAndEvents.vb region=StartZoomEndZoom}}
 	
 	            Me.radRangeSelector1.RangeSelectorViewZoomStart = 20
 	            Me.radRangeSelector1.RangeSelectorViewZoomEnd = 50
@@ -148,7 +148,7 @@ Here are the most important properties for changing the control appearance and b
 
 #### __[C#] __
 
-{{region hideButtons}}
+{{source=..\SamplesCS\RangeSelector\RangeSelectorPropertiesAndEvents.cs region=hideButtons}}
 	
 	            this.radRangeSelector1.ShowButtons = false;
 	
@@ -158,7 +158,7 @@ Here are the most important properties for changing the control appearance and b
 
 #### __[VB.NET] __
 
-{{region hideButtons}}
+{{source=..\SamplesVB\RangeSelector\RangeSelectorPropertiesAndEvents.vb region=hideButtons}}
 	
 	            Me.radRangeSelector1.ShowButtons = False
 	
@@ -198,7 +198,7 @@ Here are the most important properties for changing the control appearance and b
 
 #### __[C#] __
 
-{{region set associatedControl}}
+{{source=..\SamplesCS\RangeSelector\RangeSelectorGettingStarted.cs region=set associatedControl}}
 	
 	            this.radRangeSelector1.AssociatedControl = this.radChartView1;
 	
@@ -208,7 +208,7 @@ Here are the most important properties for changing the control appearance and b
 
 #### __[VB.NET] __
 
-{{region set associatedControl}}
+{{source=..\SamplesVB\RangeSelector\RangeSelectorGettingStarted.vb region=set associatedControl}}
 	            Me.radRangeSelector1.AssociatedControl = Me.radChartView1
 	{{endregion}}
 
@@ -222,7 +222,7 @@ Here are the most important properties for changing the control appearance and b
 
 #### __[C#] __
 
-{{region set associatedElement}}
+{{source=..\SamplesCS\RangeSelector\RangeSelectorPropertiesAndEvents.cs region=set associatedElement}}
 	
 	            this.radRangeSelector1.RangeSelectorElement.AssociatedElement = new RangeSelectorViewElement(new RadChartElement());
 	
@@ -232,7 +232,7 @@ Here are the most important properties for changing the control appearance and b
 
 #### __[VB.NET] __
 
-{{region set associatedElement}}
+{{source=..\SamplesVB\RangeSelector\RangeSelectorPropertiesAndEvents.vb region=set associatedElement}}
 	
 	            Me.radRangeSelector1.RangeSelectorElement.AssociatedElement = New RangeSelectorViewElement(New RadChartElement())
 	
@@ -290,7 +290,7 @@ There are several events that you will find useful in the context of RadRangeSel
 
 #### __[C#] __
 
-{{region ScaleInitializing}}
+{{source=..\SamplesCS\RangeSelector\RangeSelectorPropertiesAndEvents.cs region=ScaleInitializing}}
 	
 	        void radRangeSelector1_ScaleInitializing(object sender, ScaleInitializingEventArgs e)
 	        {
@@ -316,7 +316,7 @@ There are several events that you will find useful in the context of RadRangeSel
 
 #### __[VB.NET] __
 
-{{region ScaleInitializing}}
+{{source=..\SamplesVB\RangeSelector\RangeSelectorPropertiesAndEvents.vb region=ScaleInitializing}}
 	
 	        Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
 	            Dim scaleElement As RangeSelectorChartScaleContainerElement = TryCast(e.ScaleElement, RangeSelectorChartScaleContainerElement)

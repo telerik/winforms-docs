@@ -20,7 +20,7 @@ You can show or hide the thumbnails programmatically with following methods Show
 
 #### __[C#] __
 
-{{region ShowHideThumbnails}}
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ShowHideThumbnails}}
 	            this.radPdfViewer1.ShowThubnails();
 	
 	            this.radPdfViewer1.HideThumbnails();
@@ -30,7 +30,7 @@ You can show or hide the thumbnails programmatically with following methods Show
 
 #### __[VB.NET] __
 
-{{region ShowHideThumbnails}}
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ShowHideThumbnails}}
 	        Me.radPdfViewer1.ShowThubnails()
 	
 	        Me.radPdfViewer1.HideThumbnails()
@@ -42,7 +42,7 @@ You can customize the size of the thumbnails with __ThumbnailsScaleFactor__ prop
 
 #### __[C#] __
 
-{{region ThumbnailsScaleFactor}}
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ThumbnailsScaleFactor}}
 	            this.radPdfViewer1.ThumbnailsScaleFactor = 0.11f;
 	{{endregion}}
 
@@ -50,7 +50,7 @@ You can customize the size of the thumbnails with __ThumbnailsScaleFactor__ prop
 
 #### __[VB.NET] __
 
-{{region ThumbnailsScaleFactor}}
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ThumbnailsScaleFactor}}
 	        Me.radPdfViewer1.ThumbnailsScaleFactor = 0.11F
 	{{endregion}}
 
@@ -60,7 +60,7 @@ You can customize the width of the thumbnails list with the __ThumbnailListWidth
 
 #### __[C#] __
 
-{{region ThumbnailsScaleFactor}}
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ThumbnailsScaleFactor}}
 	            this.radPdfViewer1.ThumbnailsScaleFactor = 0.11f;
 	{{endregion}}
 
@@ -68,7 +68,7 @@ You can customize the width of the thumbnails list with the __ThumbnailListWidth
 
 #### __[VB.NET] __
 
-{{region ThumbnailsScaleFactor}}
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ThumbnailsScaleFactor}}
 	        Me.radPdfViewer1.ThumbnailsScaleFactor = 0.11F
 	{{endregion}}
 

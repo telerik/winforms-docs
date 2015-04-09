@@ -19,7 +19,7 @@ __RadRating__ introduces an easy way to customize the item’s BackColor when ho
 
 #### __[C#]__
 
-{{region Background}}
+{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Background}}
 	            
 	            foreach (RatingStarVisualElement item in this.radRating1.Items)
 	            {
@@ -40,7 +40,7 @@ __RadRating__ introduces an easy way to customize the item’s BackColor when ho
 
 #### __[VB.NET]__
 
-{{region Background}}
+{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Background}}
 	
 	        For Each item As RatingStarVisualElement In Me.RadRating1.Items
 	            item.Fill.BackColor = Color.LightBlue
@@ -114,7 +114,7 @@ By default __RadRating__ supports three main element shapes: Stars, Diamonds and
 
 #### __[C#]__
 
-{{region CustomShape}}
+{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=CustomShape}}
 	            
 	            for (int i = 0; i < 5; i++)
 	            {
@@ -137,7 +137,7 @@ By default __RadRating__ supports three main element shapes: Stars, Diamonds and
 
 #### __[VB.NET]__
 
-{{region CustomShape}}
+{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=CustomShape}}
 	
 	        For i As Integer = 0 To 4
 	            Dim myShape As New CustomShapeElement()
@@ -188,7 +188,7 @@ By default __RadRating__ supports three main element shapes: Stars, Diamonds and
 
 #### __[C#]__
 
-{{region CustomShapeClasses}}
+{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=CustomShapeClasses}}
 	        
 	    public class CustomShapeElement : RatingVisualElement
 	    {
@@ -223,7 +223,7 @@ By default __RadRating__ supports three main element shapes: Stars, Diamonds and
 
 #### __[VB.NET]__
 
-{{region CustomShapeClasses}}
+{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=CustomShapeClasses}}
 	
 	    Public Class CustomShapeElement
 	        Inherits RatingVisualElement

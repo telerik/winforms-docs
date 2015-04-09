@@ -30,7 +30,7 @@ The following tutorial will show you a simple usage of RadMessageBox
 
 #### __[C#] Adding namespace__
 
-{{region namespace}}
+{{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=namespace}}
 	using Telerik.WinControls;
 	{{endregion}}
 
@@ -38,7 +38,7 @@ The following tutorial will show you a simple usage of RadMessageBox
 
 #### __[VB.NET] Adding namespace__
 
-{{region namespace}}
+{{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=namespace}}
 	Imports Telerik.WinControls
 	{{endregion}}
 
@@ -52,7 +52,7 @@ The following tutorial will show you a simple usage of RadMessageBox
 
 #### __[C#] Setting a theme and showing RadMessageBox__
 
-{{region workingWithRadMessageBox}}
+{{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=workingWithRadMessageBox}}
 	        private void radButton1_Click(object sender, EventArgs e)
 	        {
 	            RadMessageBox.SetThemeName("Desert");
@@ -66,7 +66,7 @@ The following tutorial will show you a simple usage of RadMessageBox
 
 #### __[VB.NET] Setting a theme and showing RadMessageBox__
 
-{{region workingWithRadMessageBox}}
+{{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=workingWithRadMessageBox}}
 	    Private Sub RadButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
 	        RadMessageBox.SetThemeName("Desert")
 	

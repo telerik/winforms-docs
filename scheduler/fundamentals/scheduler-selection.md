@@ -124,7 +124,7 @@ The default behavior of the
 
 #### __[C#] __
 
-{{region SchedulerSelectionBehavior}}
+{{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=SchedulerSelectionBehavior}}
 	        
 	        public class CustomSchedulerSelectionBehavior : SchedulerSelectionBehavior
 	        {
@@ -139,7 +139,7 @@ The default behavior of the
 
 #### __[VB.NET] __
 
-{{region SchedulerSelectionBehavior}}
+{{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=SchedulerSelectionBehavior}}
 	
 	    Public Class CustomSchedulerSelectionBehavior
 	    Inherits SchedulerSelectionBehavior
@@ -178,7 +178,7 @@ The default behavior of the
 
 #### __[C#] __
 
-{{region SelectAppointment}}
+{{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=SelectAppointment}}
 	            
 	            public override void SelectAppointment(IEvent appointment, bool extend)
 	            {
@@ -197,7 +197,7 @@ The default behavior of the
 
 #### __[VB.NET] __
 
-{{region SelectAppointment}}
+{{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=SelectAppointment}}
 	
 	        Public Overrides Sub SelectAppointment(appointment As IEvent, extend As Boolean)
 	            Dim dayView As SchedulerDayView = Me.Scheduler.GetDayView()
@@ -219,7 +219,7 @@ The default behavior of the
 
 #### __[C#] __
 
-{{region ReplaceSelectionBehavior}}
+{{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=ReplaceSelectionBehavior}}
 	            
 	            this.radScheduler1.SelectionBehavior = new CustomSchedulerSelectionBehavior(this.radScheduler1);
 	        
@@ -229,7 +229,7 @@ The default behavior of the
 
 #### __[VB.NET] __
 
-{{region ReplaceSelectionBehavior}}
+{{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=ReplaceSelectionBehavior}}
 	
 	        Me.RadScheduler1.SelectionBehavior = New CustomSchedulerSelectionBehavior(Me.RadScheduler1)
 	

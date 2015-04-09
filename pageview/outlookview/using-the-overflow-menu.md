@@ -28,7 +28,7 @@ As well as from the UI, you can check/uncheck items by using the RadPageViewOutl
 
 #### __[C#]__
 
-{{region programmingOverflow}}
+{{source=..\SamplesCS\PageView\OutlookView.cs region=programmingOverflow}}
 	
 	            RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
 	            //Hide the first item
@@ -42,7 +42,7 @@ As well as from the UI, you can check/uncheck items by using the RadPageViewOutl
 
 #### __[VB.NET]__
 
-{{region programmingGrip}}
+{{source=..\SamplesVB\PageView\OutlookView.vb region=programmingGrip}}
 	
 	        Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
 	        'Drags the sizing grip one item down.

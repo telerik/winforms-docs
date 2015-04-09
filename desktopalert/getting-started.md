@@ -33,7 +33,7 @@ In this video, you will learn how to get started with RadDesktopAlert.
 
 #### __[C#] Setting up RadDesktopAlert__
 
-{{region showingAlert}}
+{{source=..\SamplesCS\DesktopAlert\DesktopAlert1.cs region=showingAlert}}
 	        void radButton1_Click(object sender, EventArgs e)
 	        {
 	           // this.radDesktopAlert1.ContentImage = envelopeImage;
@@ -49,7 +49,7 @@ In this video, you will learn how to get started with RadDesktopAlert.
 
 #### __[VB.NET]Setting up RadDesktopAlert__
 
-{{region showingAlert}}
+{{source=..\SamplesVB\DesktopAlert\DesktopAlert1.vb region=showingAlert}}
 	    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        Me.radDesktopAlert1.ContentImage = envelopeImage
 	        Me.radDesktopAlert1.CaptionText = "New E-mail Notification"

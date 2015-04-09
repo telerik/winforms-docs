@@ -2,25 +2,26 @@
 title: Annotations and Destinations
 page_title: Annotations and Destinations
 description: Annotations and Destinations
-slug: pdfprocessing-model-annotations-and-destinations
+slug: radpdfprocessing-model-annotations-and-destinations
 tags: annotations,and,destinations
 published: True
 position: 7
 ---
 
-#  Annotations and Destinations
+# Annotations and Destinations
 
-The abstract __Annotation__ element associates an object with a location on a [RadFixedPage]({%slug pdfprocessing-model-radfixedpage%}). Annotation exposes the following properties:
+
+
+The abstract __Annotation__ element associates an object with a location on a [RadFixedPage]({%slug radpdfprocessing-model-radfixedpage%}). Annotation exposes the following properties:
       
 
 * __Rect__: The rectangle which defines the location of the annotation on the page.
           
 
-* __Type__: Property of type which determines the type of the annotation. The only supported type is __Link__.
+* __Type__: Property of type [AnnotationType](http://www.telerik.com/help/wpf/t_telerik_windows_Documents_fixed_model_annotations_annotationtype.html) which determines the type of the annotation. The only supported type is __Link__.
           
 
 This article will get you familiar with the following concepts:
-      
 
 * [Link](#link)
 
@@ -46,7 +47,7 @@ __Link__ exposes the following properties:
 
 #### __[C#] Example 1: Add Link to Destination__
 
-{{region radpdfprocessing-model-annotations-and-destinations_0}}
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelAnnotationsAndDestinations.cs region=radpdfprocessing-model-annotations-and-destinations_0}}
 	            Link linkWithDestination = new Link(destination);
 	            page.Annotations.Add(linkWithDestination);
 	{{endregion}}
@@ -55,7 +56,7 @@ __Link__ exposes the following properties:
 
 #### __[VB.NET] Example 1: Add Link to Destination__
 
-{{region radpdfprocessing-model-annotations-and-destinations_0}}
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelAnnotationsAndDestinations.vb region=radpdfprocessing-model-annotations-and-destinations_0}}
 	        Dim linkWithDestination As Link = New Link(destination)
 	        page.Annotations.Add(linkWithDestination)
 	        '	#End Region
@@ -107,7 +108,7 @@ __Link__ exposes the following properties:
 
 #### __[C#] Example 2: Add Link with Action__
 
-{{region radpdfprocessing-model-annotations-and-destinations_1}}
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelAnnotationsAndDestinations.cs region=radpdfprocessing-model-annotations-and-destinations_1}}
 	            Link linkWithAction = new Link(action);
 	            page.Annotations.Add(linkWithAction);
 	{{endregion}}
@@ -116,7 +117,7 @@ __Link__ exposes the following properties:
 
 #### __[VB.NET] Example 2: Add Link with Action__
 
-{{region radpdfprocessing-model-annotations-and-destinations_1}}
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelAnnotationsAndDestinations.vb region=radpdfprocessing-model-annotations-and-destinations_1}}
 	        Dim linkWithAction As Link = New Link(action)
 	        page.Annotations.Add(linkWithAction)
 	        '	#End Region
@@ -204,7 +205,7 @@ __Example 3__ shows how you can create a Location object, associate it with a Li
 
 #### __[C#] Example 3: Add Link with Location__
 
-{{region radpdfprocessing-model-annotations-and-destinations_2}}
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelAnnotationsAndDestinations.cs region=radpdfprocessing-model-annotations-and-destinations_2}}
 	            Location location = new Location();
 	            location.Left = 225;
 	            location.Top = 500;
@@ -219,7 +220,7 @@ __Example 3__ shows how you can create a Location object, associate it with a Li
 
 #### __[VB.NET] Example 3: Add Link with Location__
 
-{{region radpdfprocessing-model-annotations-and-destinations_2}}
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelAnnotationsAndDestinations.vb region=radpdfprocessing-model-annotations-and-destinations_2}}
 	        Dim location As Location = New Location()
 	        location.Left = 225
 	        location.Top = 500
@@ -276,7 +277,7 @@ __Example 4__ demonstrates how to create an action of type __GoToAction__, assoc
 
 #### __[C#] Example 4: Add Link with Action__
 
-{{region radpdfprocessing-model-annotations-and-destinations_3}}
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelAnnotationsAndDestinations.cs region=radpdfprocessing-model-annotations-and-destinations_3}}
 	            GoToAction goToAction = new GoToAction();
 	            goToAction.Destination = location;
 	
@@ -294,7 +295,7 @@ __Example 4__ demonstrates how to create an action of type __GoToAction__, assoc
 
 #### __[VB.NET] Example 4: Add Link with Action__
 
-{{region radpdfprocessing-model-annotations-and-destinations_3}}
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelAnnotationsAndDestinations.vb region=radpdfprocessing-model-annotations-and-destinations_3}}
 	        Dim goToAction As GoToAction = New GoToAction()
 	        goToAction.Destination = location
 	
@@ -311,3 +312,12 @@ __Example 4__ demonstrates how to create an action of type __GoToAction__, assoc
 	
 	End Class
 
+
+
+# See Also
+
+ * [RadFixedPage]({%slug pdfprocessing-model-radfixedpage%})[AnnotationType API Reference](
+          http://www.telerik.com/help/winforms/t_telerik_windows_Documents_fixed_model_annotations_annotationtype.html
+        )[Link API Reference](
+          http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_fixed_model_annotations_link.html
+        )

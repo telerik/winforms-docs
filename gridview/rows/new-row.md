@@ -26,7 +26,7 @@ By default, the new row is visible to the end-user. You can explicitly set it to
 
 #### __[C#]__
 
-{{region enablingNewRow}}
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=enablingNewRow}}
 	            this.radGridView1.AllowAddNewRow = true;
 	{{endregion}}
 
@@ -34,7 +34,7 @@ By default, the new row is visible to the end-user. You can explicitly set it to
 
 #### __[VB.NET]__
 
-{{region enablingNewRow}}
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=enablingNewRow}}
 	        Me.RadGridView1.AllowAddNewRow = True
 	{{endregion}}
 
@@ -46,7 +46,7 @@ If you want to hide the new row, just set the __AllowAddNewRow__ to *false*
 
 #### __[C#]__
 
-{{region disablingNewRow}}
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=disablingNewRow}}
 	            this.radGridView1.AllowAddNewRow = false;
 	{{endregion}}
 
@@ -54,7 +54,7 @@ If you want to hide the new row, just set the __AllowAddNewRow__ to *false*
 
 #### __[VB.NET]__
 
-{{region disablingNewRow}}
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=disablingNewRow}}
 	        Me.RadGridView1.AllowAddNewRow = False
 	{{endregion}}
 
@@ -67,7 +67,7 @@ For the text displayed in the new row of __RadGridView__ you have the option to 
 
 #### __[C#] Change the new row text__
 
-{{region TemplateNewRowText}}
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=TemplateNewRowText}}
 	            this.radGridView1.MasterTemplate.NewRowText = "Click here to add a new category";
 	            this.radGridView1.MasterTemplate.Templates[0].NewRowText = "Click here to add a new product";
 	{{endregion}}
@@ -76,7 +76,7 @@ For the text displayed in the new row of __RadGridView__ you have the option to 
 
 #### __[VB.NET] Change the new row text__
 
-{{region TemplateNewRowText}}
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=TemplateNewRowText}}
 	        Me.RadGridView1.MasterTemplate.NewRowText = "Click here to add a new category"
 	        Me.RadGridView1.MasterTemplate.Templates(0).NewRowText = "Click here to add a new product"
 	{{endregion}}
@@ -91,7 +91,7 @@ The new row can be pinned to top or bottom. By default, the new row is pinned to
 
 #### __[C#]__
 
-{{region positionTop}}
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=positionTop}}
 	            this.radGridView1.AddNewRowPosition = SystemRowPosition.Top;
 	{{endregion}}
 
@@ -99,7 +99,7 @@ The new row can be pinned to top or bottom. By default, the new row is pinned to
 
 #### __[VB.NET]__
 
-{{region positionTop}}
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=positionTop}}
 	        Me.RadGridView1.AddNewRowPosition = SystemRowPosition.Top
 	{{endregion}}
 
@@ -110,7 +110,7 @@ In order to pin the new row to bottom, you should set the __AddNewRowPosition__ 
 
 #### __[C#]__
 
-{{region positionBottom}}
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=positionBottom}}
 	            this.radGridView1.AddNewRowPosition = SystemRowPosition.Bottom;
 	{{endregion}}
 
@@ -118,7 +118,7 @@ In order to pin the new row to bottom, you should set the __AddNewRowPosition__ 
 
 #### __[VB.NET]__
 
-{{region positionBottom}}
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=positionBottom}}
 	        Me.RadGridView1.AddNewRowPosition = SystemRowPosition.Bottom
 	{{endregion}}
 
@@ -133,7 +133,7 @@ If you, for some reason, want to access the New Row, you can do it by getting th
 
 #### __[C#]__
 
-{{region makingNewRowCurrent}}
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=makingNewRowCurrent}}
 	            this.radGridView1.CurrentRow = this.radGridView1.MasterView.TableAddNewRow;
 	{{endregion}}
 
@@ -141,7 +141,7 @@ If you, for some reason, want to access the New Row, you can do it by getting th
 
 #### __[VB.NET]__
 
-{{region makingNewRowCurrent}}
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=makingNewRowCurrent}}
 	        Me.RadGridView1.CurrentRow = Me.RadGridView1.MasterView.TableAddNewRow
 	{{endregion}}
 
@@ -171,7 +171,7 @@ Let's have a RadGridView instance bound to the Employees table of the Northwind 
 
 #### __[C#]__
 
-{{region defaultValuesNeeded}}
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=defaultValuesNeeded}}
 	        void radGridView1_DefaultValuesNeeded(object sender, GridViewRowEventArgs e)
 	        {
 	            e.Row.Cells["Title"].Value = "Sales Representative";
@@ -183,7 +183,7 @@ Let's have a RadGridView instance bound to the Employees table of the Northwind 
 
 #### __[VB.NET]__
 
-{{region defaultValuesNeeded}}
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=defaultValuesNeeded}}
 	    Private Sub RadGridView1_DefaultValuesNeeded(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewRowEventArgs) Handles RadGridView1.DefaultValuesNeeded
 	        e.Row.Cells("Title").Value = "Sales Representative"
 	        e.Row.Cells("City").Value = "London"
@@ -207,7 +207,7 @@ In some cases, you may need RadGridView to create a record in the underlying dat
 
 #### __[C#]__
 
-{{region addNewBoundRowBeforeEdit}}
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=addNewBoundRowBeforeEdit}}
 	            this.radGridView1.MasterTemplate.AddNewBoundRowBeforeEdit = true;
 	{{endregion}}
 
@@ -215,7 +215,7 @@ In some cases, you may need RadGridView to create a record in the underlying dat
 
 #### __[VB.NET]__
 
-{{region addNewBoundRowBeforeEdit}}
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=addNewBoundRowBeforeEdit}}
 	        Me.RadGridView1.MasterTemplate.AddNewBoundRowBeforeEdit = True
 	{{endregion}}
 
@@ -243,7 +243,7 @@ The Enter key may behave differently in the new row depending on the value of th
 
 #### __[C#]__
 
-{{region enterMovesToNextRow}}
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=enterMovesToNextRow}}
 	            this.radGridView1.NewRowEnterKeyMode = RadGridViewNewRowEnterKeyMode.EnterMovesToNextRow;
 	{{endregion}}
 
@@ -251,7 +251,7 @@ The Enter key may behave differently in the new row depending on the value of th
 
 #### __[VB.NET]__
 
-{{region enterMovesToNextRow}}
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=enterMovesToNextRow}}
 	        Me.RadGridView1.NewRowEnterKeyMode = RadGridViewNewRowEnterKeyMode.EnterMovesToNextRow
 	{{endregion}}
 
@@ -301,7 +301,7 @@ __UserAddingRow__
 
 #### __[C#]__
 
-{{region userAddingRow}}
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=userAddingRow}}
 	        void radGridView1_UserAddingRow(object sender, GridViewRowCancelEventArgs e)
 	        {
 	            if (e.Rows[0].Cells["Address"].Value != null)
@@ -319,7 +319,7 @@ __UserAddingRow__
 
 #### __[VB.NET]__
 
-{{region userAddingRow}}
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=userAddingRow}}
 	    Private Sub RadGridView1_UserAddingRow(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewRowCancelEventArgs) Handles RadGridView1.UserAddingRow
 	        If e.Rows(0).Cells("Address").Value IsNot Nothing Then
 	            If e.Rows(0).Cells("Address").Value.ToString().Length > 30 Then
@@ -342,7 +342,7 @@ __UserAddedRow__
 
 #### __[C#]__
 
-{{region userAddedRow}}
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=userAddedRow}}
 	        void radGridView1_UserAddedRow(object sender, GridViewRowEventArgs e)
 	        {
 	            DataRow[] rows = new DataRow[e.Rows.Length];
@@ -363,7 +363,7 @@ __UserAddedRow__
 
 #### __[VB.NET]__
 
-{{region userAddedRow}}
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=userAddedRow}}
 	    Private Sub RadGridView1_UserAddedRow(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewRowEventArgs) Handles RadGridView1.UserAddedRow
 	        Dim rows(e.Rows.Length - 1) As DataRow
 	        For i As Integer = 0 To e.Rows.Length - 1

@@ -26,7 +26,7 @@ You can insert text programmatically at concrete position by using the __Insert_
 
 #### __[C#]__
 
-{{region Insert}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=Insert}}
 	        private void Insert()
 	        {
 	            this.radTextBoxControl1.Text = "Green";
@@ -39,7 +39,7 @@ You can insert text programmatically at concrete position by using the __Insert_
 
 #### __[VB.NET]__
 
-{{region Insert}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Insert}}
 	    Private Sub Insert()
 	        Me.RadTextBoxControl1.Text = "Green"
 	        Me.RadTextBoxControl1.CaretIndex = 0
@@ -230,7 +230,7 @@ Alternatively, you can insert text at the end of the RadTextBoxControl
 
 #### __[C#]__
 
-{{region AppendText}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=AppendText}}
 	        private void AppendText()
 	        {
 	            this.radTextBoxControl1.Text = "Samuel";
@@ -242,7 +242,7 @@ Alternatively, you can insert text at the end of the RadTextBoxControl
 
 #### __[VB.NET]__
 
-{{region AppendText}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=AppendText}}
 	    Private Sub AppendText()
 	        Me.RadTextBoxControl1.Text = "Samuel"
 	        Me.RadTextBoxControl1.AppendText(" Jackson")
@@ -424,7 +424,7 @@ You can delete the selected text or character at the caret position by using the
 
 #### __[C#]__
 
-{{region Delete}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=Delete}}
 	        private void DeleteSelection()
 	        {
 	            this.radTextBoxControl1.Text = "John Green";
@@ -437,7 +437,7 @@ You can delete the selected text or character at the caret position by using the
 
 #### __[VB.NET]__
 
-{{region Delete}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Delete}}
 	    Private Sub DeleteSelection()
 	        Me.RadTextBoxControl1.Text = "John Green"
 	        Me.RadTextBoxControl1.[Select](0, 4)
@@ -614,7 +614,7 @@ Each editing operation raises the __TextChanging__ and
 
 #### __[C#]__
 
-{{region TextChanging}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=TextChanging}}
 	        private void radTextBoxControl1_TextChanging(object sender, Telerik.WinControls.TextChangingEventArgs e)
 	        {
 	            e.Cancel = string.IsNullOrEmpty(e.NewValue);
@@ -625,7 +625,7 @@ Each editing operation raises the __TextChanging__ and
 
 #### __[VB.NET]__
 
-{{region TextChanging}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=TextChanging}}
 	    Private Sub radTextBoxControl1_TextChanging(sender As Object, e As Telerik.WinControls.TextChangingEventArgs)
 	        e.Cancel = String.IsNullOrEmpty(e.NewValue)
 	    End Sub

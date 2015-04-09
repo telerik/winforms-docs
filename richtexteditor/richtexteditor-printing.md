@@ -36,7 +36,7 @@ Additionally to using the UI, you can print by taking advantage of the __Print()
 
 #### __[C#] __
 
-{{region print}}
+{{source=..\SamplesCS\RichTextEditor\Print.cs region=print}}
 	            this.radRichTextEditor1.Print();
 	            //or
 	            this.radRichTextEditor1.PrintPreview();
@@ -46,7 +46,7 @@ Additionally to using the UI, you can print by taking advantage of the __Print()
 
 #### __[VB.NET] __
 
-{{region print}}
+{{source=..\SamplesVB\RichTextEditor\Print.vb region=print}}
 	        Me.radRichTextEditor1.Print()
 	        'or
 	        Me.radRichTextEditor1.PrintPreview()

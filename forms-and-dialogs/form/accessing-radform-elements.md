@@ -20,7 +20,7 @@ The __RadFormTitleBarElement__ is positioned on the top of the form and its defa
 
 #### __[C#] Accessing RadForm elements__
 
-{{region accessingRadFormElements}}
+{{source=..\SamplesCS\Forms and Dialogs\Form1.cs region=accessingRadFormElements}}
 	        void Form1_Shown(object sender, EventArgs e)
 	        {
 	            this.FormElement.TitleBar.MaximizeButton.Enabled = false;
@@ -32,7 +32,7 @@ The __RadFormTitleBarElement__ is positioned on the top of the form and its defa
 
 #### __[VB.NET] Accessing RadForm elements__
 
-{{region accessingRadFormElements}}
+{{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=accessingRadFormElements}}
 	    Private Sub Form1_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
 	        Me.FormElement.TitleBar.MaximizeButton.Enabled = False
 	        Me.FormElement.TitleBar.MinimizeButton.Enabled = False
@@ -47,7 +47,7 @@ You can easily extend the __RadFormTitleBarElement__'s functionality by adding n
 
 #### __[C#] Adding new button to the title bar__
 
-{{region addingNewButtonToTheTitleBar}}
+{{source=..\SamplesCS\Forms and Dialogs\Form1.cs region=addingNewButtonToTheTitleBar}}
 	        void Form1_Load(object sender, EventArgs e)
 	        {
 	            RadButtonElement buttonElement = new RadButtonElement();
@@ -60,7 +60,7 @@ You can easily extend the __RadFormTitleBarElement__'s functionality by adding n
 
 #### __[VB.NET] Adding new button to the title bar__
 
-{{region addingNewButtonToTheTitleBar}}
+{{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=addingNewButtonToTheTitleBar}}
 	    Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 	        Dim buttonElement As New RadButtonElement()
 	        buttonElement.Text = "TitleBar Button"
@@ -80,7 +80,7 @@ The __FormBorderPrimitive__represents the outer thin border that surrounds a __R
 
 #### __[C#] Accessing the FormBorderPrimitive__
 
-{{region accessingTheFormBorderPrimitive}}
+{{source=..\SamplesCS\Forms and Dialogs\Form1.cs region=accessingTheFormBorderPrimitive}}
 	            this.FormElement.Border.ForeColor = System.Drawing.Color.Green;
 	{{endregion}}
 
@@ -88,7 +88,7 @@ The __FormBorderPrimitive__represents the outer thin border that surrounds a __R
 
 #### __[VB.NET] Accessing the FormBorderPrimitive__
 
-{{region accessingTheFormBorderPrimitive}}
+{{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=accessingTheFormBorderPrimitive}}
 	        Me.FormElement.Border.ForeColor = System.Drawing.Color.Green
 	{{endregion}}
 
@@ -104,7 +104,7 @@ The following code snippet demonstrates how to set the __BackColor__of the __For
 
 #### __[C#] Accessing the FormImageBorderPrimitive__
 
-{{region accessingTheFormImageBorderPrimitive}}
+{{source=..\SamplesCS\Forms and Dialogs\Form1.cs region=accessingTheFormImageBorderPrimitive}}
 	            this.FormElement.ImageBorder.BackColor = Color.Lime;
 	{{endregion}}
 
@@ -112,7 +112,7 @@ The following code snippet demonstrates how to set the __BackColor__of the __For
 
 #### __[VB.NET] Accessing the FormImageBorderPrimitive__
 
-{{region accessingTheFormImageBorderPrimitive}}
+{{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=accessingTheFormImageBorderPrimitive}}
 	        Me.FormElement.ImageBorder.BackColor = Color.Lime
 	{{endregion}}
 

@@ -27,7 +27,7 @@ The first thing you need to do is assign a value to the __ItemsSource__ property
 
 #### __[C#] __
 
-{{region data}}
+{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=data}}
 	            
 	    public class ExamplesDataContext
 	    {
@@ -83,7 +83,7 @@ The first thing you need to do is assign a value to the __ItemsSource__ property
 
 #### __[VB.NET] __
 
-{{region data}}
+{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=data}}
 	
 	Public Class ExamplesDataContext
 	
@@ -117,7 +117,7 @@ All that is left is to add the following line:
 
 #### __[C#] __
 
-{{region source}}
+{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=source}}
 	            
 	            this.radRichTextEditor1.Document.MailMergeDataSource.ItemsSource = new ExamplesDataContext().Employees;
 	            
@@ -127,7 +127,7 @@ All that is left is to add the following line:
 
 #### __[VB.NET] __
 
-{{region source}}
+{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=source}}
 	
 	        Me.radRichTextEditor1.Document.MailMergeDataSource.ItemsSource = (New ExamplesDataContext()).Employees
 	
@@ -267,7 +267,7 @@ This same scenario can be carried out programmatically just as easily. The metho
 
 #### __[C#] __
 
-{{region field}}
+{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=field}}
 	            
 	            MergeField field = new MergeField() { PropertyPath = "FirstName" };
 	
@@ -277,7 +277,7 @@ This same scenario can be carried out programmatically just as easily. The metho
 
 #### __[VB.NET] __
 
-{{region field}}
+{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=field}}
 	
 	        Dim field As New MergeField() With {.PropertyPath = "FirstName"}
 	
@@ -377,7 +377,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 #### __[C#] __
 
-{{region mode}}
+{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=mode}}
 	
 	            field.DisplayMode = FieldDisplayMode.Result;
 	
@@ -395,7 +395,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 #### __[VB.NET] __
 
-{{region mode}}
+{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=mode}}
 	
 	        field.DisplayMode = FieldDisplayMode.Result
 	
@@ -487,7 +487,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 #### __[C#] __
 
-{{region insert}}
+{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=insert}}
 	
 	            this.radRichTextEditor1.InsertField(field);
 	
@@ -499,7 +499,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 #### __[VB.NET] __
 
-{{region insert}}
+{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=insert}}
 	
 	        Me.radRichTextEditor1.InsertField(field)
 	
@@ -577,7 +577,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 #### __[C#] __
 
-{{region preview}}
+{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=preview}}
 	            
 	            this.radRichTextEditor1.PreviewFirstMailMergeDataRecord();
 	            
@@ -595,7 +595,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 #### __[VB.NET] __
 
-{{region preview}}
+{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=preview}}
 	
 	        Me.radRichTextEditor1.PreviewFirstMailMergeDataRecord()
 	
@@ -665,7 +665,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 #### __[C#] __
 
-{{region perform}}
+{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=perform}}
 	            
 	            this.radRichTextEditor1.MailMergeCurrentRecord(); // returns a RadDocument that is the result of substituting the merge fields with the data from the current record. The current record can be specified through the MailMergeSource API:</para>
 	    
@@ -687,7 +687,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 #### __[VB.NET] __
 
-{{region perform}}
+{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=perform}}
 	
 	        Me.radRichTextEditor1.MailMergeCurrentRecord() ' returns a RadDocument that is the result of substituting the merge fields with the data from the current record. The current record can be specified through the MailMergeSource API:</para>
 	

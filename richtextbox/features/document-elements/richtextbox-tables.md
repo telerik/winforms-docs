@@ -30,7 +30,7 @@ Here is a simple example.
 
 #### __C#__
 
-{{region AddTable}}
+{{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxTables.cs region=AddTable}}
 	            Section section = new Section();
 	            Table table = new Table();
 	
@@ -70,7 +70,7 @@ Here is a simple example.
 
 #### __VB.NET__
 
-{{region AddTable}}
+{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxTables.vb region=AddTable}}
 	        Dim _section As New Section()
 	        Dim _table As New Table()
 	        Dim row1 As New TableRow()

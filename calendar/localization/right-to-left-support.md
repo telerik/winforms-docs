@@ -18,7 +18,7 @@ RadCalendar fully supports right-to-left (RTL) language locales. You can enable/
 
 #### __[C#] Assigning RightToLeft__
 
-{{region rtl}}
+{{source=..\SamplesCS\Calendar\ColumnRowHeaders.cs region=rtl}}
 	            radCalendar1.RightToLeft = RightToLeft.Yes;
 	{{endregion}}
 
@@ -26,7 +26,7 @@ RadCalendar fully supports right-to-left (RTL) language locales. You can enable/
 
 #### __[VB.NET] CAssigning RightToLeft__
 
-{{region rtl}}
+{{source=..\SamplesVB\Calendar\ColumnRowHeaders.vb region=rtl}}
 	        RadCalendar1.RightToLeft = RightToLeft.Yes
 	{{endregion}}
 

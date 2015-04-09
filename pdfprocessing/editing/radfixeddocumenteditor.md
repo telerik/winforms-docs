@@ -38,7 +38,7 @@ __Example 1__ demonstrates how a RadFixedDocumentEditor instance can be created.
 
 #### __[C#] Create RadFixedDocumentEditor__
 
-{{region radpdfprocessing-editing-radfixeddocumenteditor_0}}
+{{source=..\SamplesCS\PdfProcessing\Editing\RadFixedDocumentEditor1.cs region=radpdfprocessing-editing-radfixeddocumenteditor_0}}
 	            RadFixedDocumentEditor editor = new RadFixedDocumentEditor(radFixedDocument);
 	{{endregion}}
 
@@ -46,7 +46,7 @@ __Example 1__ demonstrates how a RadFixedDocumentEditor instance can be created.
 
 #### __[VB.NET] Create RadFixedDocumentEditor__
 
-{{region radpdfprocessing-editing-radfixeddocumenteditor_0}}
+{{source=..\SamplesVB\PdfProcessing\Editing\RadFixedDocumentEditor1.vb region=radpdfprocessing-editing-radfixeddocumenteditor_0}}
 	        Dim editor As New RadFixedDocumentEditor(radFixedDocument)
 	        '#End Region
 	
@@ -148,7 +148,7 @@ Adding an additional section is achieved with the __InsertSectionBreak()__ metho
 
 #### __[C#] Example 2: Start a Section__
 
-{{region radpdfprocessing-editing-radfixeddocumenteditor_1}}
+{{source=..\SamplesCS\PdfProcessing\Editing\RadFixedDocumentEditor1.cs region=radpdfprocessing-editing-radfixeddocumenteditor_1}}
 	            editor.InsertSectionBreak();
 	{{endregion}}
 
@@ -156,7 +156,7 @@ Adding an additional section is achieved with the __InsertSectionBreak()__ metho
 
 #### __[VB.NET] Example 2: Start a Section__
 
-{{region radpdfprocessing-editing-radfixeddocumenteditor_1}}
+{{source=..\SamplesVB\PdfProcessing\Editing\RadFixedDocumentEditor1.vb region=radpdfprocessing-editing-radfixeddocumenteditor_1}}
 	        editor.InsertSectionBreak()
 	        '#End Region
 	    End Sub
@@ -218,7 +218,7 @@ All pages that have the same __SectionProperties__ are part of the current secti
 
 #### __[C#] Example 3: Start new Page__
 
-{{region PageBreak}}
+{{source=..\SamplesCS\PdfProcessing\Editing\RadFixedDocumentEditor1.cs region=PageBreak}}
 	            editor.InsertPageBreak();
 	{{endregion}}
 
@@ -226,7 +226,7 @@ All pages that have the same __SectionProperties__ are part of the current secti
 
 #### __[VB.NET] Example 3: Start new Page__
 
-{{region PageBreak}}
+{{source=..\SamplesVB\PdfProcessing\Editing\RadFixedDocumentEditor1.vb region=PageBreak}}
 	        editor.InsertPageBreak()
 	        '#End Region
 	    End Sub
@@ -302,7 +302,7 @@ In order to start a new paragraph use the code in __Example 4__.
 
 #### __[C#] Start a Paragraph__
 
-{{region radpdfprocessing-editing-radfixeddocumenteditor_2}}
+{{source=..\SamplesCS\PdfProcessing\Editing\RadFixedDocumentEditor1.cs region=radpdfprocessing-editing-radfixeddocumenteditor_2}}
 	            editor.InsertParagraph();
 	{{endregion}}
 
@@ -310,7 +310,7 @@ In order to start a new paragraph use the code in __Example 4__.
 
 #### __[VB.NET] Start a Paragraph__
 
-{{region radpdfprocessing-editing-radfixeddocumenteditor_2}}
+{{source=..\SamplesVB\PdfProcessing\Editing\RadFixedDocumentEditor1.vb region=radpdfprocessing-editing-radfixeddocumenteditor_2}}
 	        editor.InsertParagraph()
 	        '#End Region
 	
@@ -419,7 +419,7 @@ There are a number of overloads that insert a run. The code snippet in __Example
 
 #### __[C#] Insert Run__
 
-{{region radpdfprocessing-editing-radfixeddocumenteditor_3}}
+{{source=..\SamplesCS\PdfProcessing\Editing\RadFixedDocumentEditor1.cs region=radpdfprocessing-editing-radfixeddocumenteditor_3}}
 	            editor.InsertRun("text");
 	            editor.InsertRun(fontFamily, "text");
 	{{endregion}}
@@ -428,7 +428,7 @@ There are a number of overloads that insert a run. The code snippet in __Example
 
 #### __[VB.NET] Insert Run__
 
-{{region radpdfprocessing-editing-radfixeddocumenteditor_3}}
+{{source=..\SamplesVB\PdfProcessing\Editing\RadFixedDocumentEditor1.vb region=radpdfprocessing-editing-radfixeddocumenteditor_3}}
 	        editor.InsertRun("text")
 	        editor.InsertRun(fontFamily, "text")
 	        '#End Region
@@ -480,7 +480,7 @@ The code in __Example 6__ inserts a new run and a line break after it.
 
 #### __[C#] Insert Run and Break Line__
 
-{{region radpdfprocessing-editing-radfixeddocumenteditor_4}}
+{{source=..\SamplesCS\PdfProcessing\Editing\RadFixedDocumentEditor1.cs region=radpdfprocessing-editing-radfixeddocumenteditor_4}}
 	            editor.InsertLine("Line of text");
 	{{endregion}}
 
@@ -488,7 +488,7 @@ The code in __Example 6__ inserts a new run and a line break after it.
 
 #### __[VB.NET] Insert Run and Break Line__
 
-{{region radpdfprocessing-editing-radfixeddocumenteditor_4}}
+{{source=..\SamplesVB\PdfProcessing\Editing\RadFixedDocumentEditor1.vb region=radpdfprocessing-editing-radfixeddocumenteditor_4}}
 	        editor.InsertLine("Line of text")
 	        '#End Region
 	    End Sub
@@ -539,7 +539,7 @@ You can insert image inline using one of the following methods:
 
 #### __[C#] Example 7: Insert ImageInline__
 
-{{region Image}}
+{{source=..\SamplesCS\PdfProcessing\Editing\RadFixedDocumentEditor1.cs region=Image}}
 	            editor.InsertImageInline(imageSource);
 	            editor.InsertImageInline(imageSource, size);
 	{{endregion}}
@@ -548,7 +548,7 @@ You can insert image inline using one of the following methods:
 
 #### __[VB.NET] Example 7: Insert ImageInline__
 
-{{region Image}}
+{{source=..\SamplesVB\PdfProcessing\Editing\RadFixedDocumentEditor1.vb region=Image}}
 	        editor.InsertImageInline(imageSource)
 	        editor.InsertImageInline(imageSource, size)
 	        '#End Region 
@@ -575,7 +575,7 @@ The __Table__ class implements the __IBlockElement__ interface and an instance o
 
 #### __[C#] Insert Table__
 
-{{region radpdfprocessing-editing-radfixeddocumenteditor_5}}
+{{source=..\SamplesCS\PdfProcessing\Editing\RadFixedDocumentEditor1.cs region=radpdfprocessing-editing-radfixeddocumenteditor_5}}
 	            editor.InsertTable(table);
 	{{endregion}}
 
@@ -583,7 +583,7 @@ The __Table__ class implements the __IBlockElement__ interface and an instance o
 
 #### __[VB.NET] Insert Table__
 
-{{region radpdfprocessing-editing-radfixeddocumenteditor_5}}
+{{source=..\SamplesVB\PdfProcessing\Editing\RadFixedDocumentEditor1.vb region=radpdfprocessing-editing-radfixeddocumenteditor_5}}
 	        editor.InsertTable(table)
 	        '#End Region
 	    End Sub
@@ -629,7 +629,7 @@ The __IBlockElement__ interface allows you to easily draw and split some block c
 
 #### __[C#] Insert Block Element__
 
-{{region block}}
+{{source=..\SamplesCS\PdfProcessing\Editing\RadFixedDocumentEditor1.cs region=block}}
 	            editor.InsertBlock(blockElement);
 	{{endregion}}
 
@@ -637,7 +637,7 @@ The __IBlockElement__ interface allows you to easily draw and split some block c
 
 #### __[VB.NET] Insert Block Element__
 
-{{region block}}
+{{source=..\SamplesVB\PdfProcessing\Editing\RadFixedDocumentEditor1.vb region=block}}
 	        editor.InsertBlock(blockElement)
 	        '#End Region
 	    End Sub
@@ -679,7 +679,7 @@ with the corresponding list properties:
 
 #### __[C#] Insert Block Element__
 
-{{region Lists}}
+{{source=..\SamplesCS\PdfProcessing\Editing\RadFixedDocumentEditor1.cs region=Lists}}
 	            Telerik.Windows.Documents.Fixed.Model.Editing.Lists.List list = editor.Lists.AddList(ListTemplateType.NumberedDefault);
 	            editor.ParagraphProperties.ListId = list.Id;
 	            editor.ParagraphProperties.ListLevel = 0;
@@ -690,7 +690,7 @@ with the corresponding list properties:
 
 #### __[VB.NET] Insert Block Element__
 
-{{region Lists}}
+{{source=..\SamplesVB\PdfProcessing\Editing\RadFixedDocumentEditor1.vb region=Lists}}
 	
 	        Dim myList As Telerik.Windows.Documents.Fixed.Model.Editing.Lists.List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
 	        editor.ParagraphProperties.ListId = myList.Id

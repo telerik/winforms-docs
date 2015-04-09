@@ -20,7 +20,7 @@ The __RadMenuContentItem__ is a container control that allows you to build up cu
 
 #### __[C#] Adding content items__
 
-{{region nestingControls}}
+{{source=..\SamplesCS\Menus\Menu\NestingControls.cs region=nestingControls}}
 	        void Form1_Load(object sender, EventArgs e)
 	        {
 	            RadTextBoxElement textBox = new RadTextBoxElement();
@@ -45,7 +45,7 @@ The __RadMenuContentItem__ is a container control that allows you to build up cu
 
 #### __[VB.NET]  Adding content items__
 
-{{region nestingControls}}
+{{source=..\SamplesVB\Menus\Menu\NestingControls.vb region=nestingControls}}
 	    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 	        Dim textBox As New RadTextBoxElement()
 	        textBox.Text = "Enter text here"

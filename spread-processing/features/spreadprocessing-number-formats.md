@@ -89,7 +89,7 @@ __Exam0ple 1__ demonstrates how to apply scientific format to cell *A1* and perc
 
 #### __[C#] Example 1: Apply format__
 
-{{region radspreadprocessing-features-number-formats_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingNumberFormatting.cs region=radspreadprocessing-features-number-formats_0}}
 	        public void ApplyFormat()
 	        {
 	            Workbook workbook = new Workbook();
@@ -109,7 +109,7 @@ __Exam0ple 1__ demonstrates how to apply scientific format to cell *A1* and perc
 
 #### __VB__
 
-{{region radspreadprocessing-features-number-formats_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingNumberFormatting.vb region=radspreadprocessing-features-number-formats_0}}
 	    Public Sub ApplyFormat()
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -157,7 +157,7 @@ __Example 2__ demonstrates how to get the __Number__ format of cell *A1* and cel
 
 #### __[C#] Example 2: Get Number format__
 
-{{region radspreadprocessing-features-number-formats_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingNumberFormatting.cs region=radspreadprocessing-features-number-formats_1}}
 	        public void GetFormat()
 	        {
 	            Workbook workbook = new Workbook();
@@ -175,7 +175,7 @@ __Example 2__ demonstrates how to get the __Number__ format of cell *A1* and cel
 
 #### __VB__
 
-{{region radspreadprocessing-features-number-formats_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingNumberFormatting.vb region=radspreadprocessing-features-number-formats_1}}
 	    Public Sub GetFormat()
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()

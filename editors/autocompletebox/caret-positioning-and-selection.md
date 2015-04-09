@@ -38,7 +38,7 @@ Setting the __SelectionLength__ to a number greater than 0 causes that number
 
 #### __[C#] __
 
-{{region SetSelection}}
+{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=SetSelection}}
 	        private void SetSelection()
 	        {
 	            this.radAutoCompleteBox1.Text = "Pepsi; Sprite; Coca-Cola;";
@@ -51,7 +51,7 @@ Setting the __SelectionLength__ to a number greater than 0 causes that number
 
 #### __[VB.NET] __
 
-{{region SetSelection}}
+{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=SetSelection}}
 	    Private Sub SetSelection()
 	        Me.RadAutoCompleteBox1.Text = "Pepsi; Sprite; Coca-Cola;"
 	        Me.RadAutoCompleteBox1.SelectionStart = 6
@@ -153,7 +153,7 @@ Alternatively, you can use the __Select__ method to select the same part of the 
 
 #### __[C#] __
 
-{{region SetSelectionRange}}
+{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=SetSelectionRange}}
 	        private void SetSelectionRange()
 	        {
 	            this.radAutoCompleteBox1.Text = "Pepsi;Sprite;Coca-Cola";
@@ -165,7 +165,7 @@ Alternatively, you can use the __Select__ method to select the same part of the 
 
 #### __[VB.NET] __
 
-{{region SetSelectionRange}}
+{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=SetSelectionRange}}
 	    Private Sub SetSelectionRange()
 	        Me.RadAutoCompleteBox1.Text = "Pepsi;Sprite;Coca-Cola"
 	        Me.RadAutoCompleteBox1.[Select](6, 7)

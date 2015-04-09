@@ -33,7 +33,7 @@ With __RadPivotGrid__ you are able to create different Groups that will be shown
 
 #### __[C#] __
 
-{{region CalculatedItemClasses}}
+{{source=..\SamplesCS\PivotGrid\PivotGridCalculatedItems.cs region=CalculatedItemClasses}}
 	    public class MenAverageSales : CalculatedItem
 	    {
 	        protected override AggregateValue GetValue(IAggregateSummaryValues aggregateSummaryValues)
@@ -60,7 +60,7 @@ With __RadPivotGrid__ you are able to create different Groups that will be shown
 
 #### __[VB.NET] __
 
-{{region CalculatedItemClasses}}
+{{source=..\SamplesVB\PivotGrid\PivotGridCalculatedItems.vb region=CalculatedItemClasses}}
 	Public Class MenAverageSales
 	    Inherits CalculatedItem
 	    Protected Overrides Function GetValue(aggregateSummaryValues As IAggregateSummaryValues) As AggregateValue
@@ -100,7 +100,7 @@ As you can see the Calculated Item will show the average sales of four people. N
 
 #### __[C#] __
 
-{{region AddCalcItemWithoutSortOrder}}
+{{source=..\SamplesCS\PivotGrid\PivotGridCalculatedItems.cs region=AddCalcItemWithoutSortOrder}}
 	            PropertyGroupDescription salesPersonGroupDescription = new PropertyGroupDescription();
 	            salesPersonGroupDescription.PropertyName = "Salesperson";
 	
@@ -114,7 +114,7 @@ As you can see the Calculated Item will show the average sales of four people. N
 
 #### __[VB.NET] __
 
-{{region AddCalcItemWithoutSortOrder}}
+{{source=..\SamplesVB\PivotGrid\PivotGridCalculatedItems.vb region=AddCalcItemWithoutSortOrder}}
 	        Dim salesPersonGroupDescription As New PropertyGroupDescription()
 	        salesPersonGroupDescription.PropertyName = "Salesperson"
 	
@@ -231,7 +231,7 @@ Calculated items can be added only to Group Descriptions. If you are using __Rad
 
 #### __[C#] __
 
-{{region localProvider_PrepareDescriptionForField}}
+{{source=..\SamplesCS\PivotGrid\PivotGridCalculatedItems.cs region=localProvider_PrepareDescriptionForField}}
 	        void localProvider_PrepareDescriptionForField(object sender, PrepareDescriptionForFieldEventArgs e)
 	        {
 	            if (e.DescriptionType == DataProviderDescriptionType.Group && e.FieldInfo.DisplayName == "Salesperson")
@@ -252,7 +252,7 @@ Calculated items can be added only to Group Descriptions. If you are using __Rad
 
 #### __[VB.NET] __
 
-{{region localProvider_PrepareDescriptionForField}}
+{{source=..\SamplesVB\PivotGrid\PivotGridCalculatedItems.vb region=localProvider_PrepareDescriptionForField}}
 	    Private Sub localProvider_PrepareDescriptionForField(sender As Object, e As PrepareDescriptionForFieldEventArgs)
 	        If e.DescriptionType = DataProviderDescriptionType.Group AndAlso e.FieldInfo.DisplayName = "Salesperson" Then
 	            Dim description = TryCast(e.Description, Telerik.Pivot.Core.PropertyGroupDescription)
@@ -309,7 +309,7 @@ If you have calculated items in both rows and columns group descriptions, you ha
 
 #### __[C#] __
 
-{{region AddCalcItemWithSortOrder}}
+{{source=..\SamplesCS\PivotGrid\PivotGridCalculatedItems.cs region=AddCalcItemWithSortOrder}}
 	            PropertyGroupDescription salesPersonGroupDescription = new PropertyGroupDescription();
 	            salesPersonGroupDescription.PropertyName = "Salesperson";
 	
@@ -334,7 +334,7 @@ If you have calculated items in both rows and columns group descriptions, you ha
 
 #### __[VB.NET] __
 
-{{region AddCalcItemWithSortOrder}}
+{{source=..\SamplesVB\PivotGrid\PivotGridCalculatedItems.vb region=AddCalcItemWithSortOrder}}
 	        Dim salesPersonGroupDescription As New PropertyGroupDescription()
 	        salesPersonGroupDescription.PropertyName = "Salesperson"
 	

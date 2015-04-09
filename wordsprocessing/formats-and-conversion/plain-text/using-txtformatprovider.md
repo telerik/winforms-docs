@@ -35,7 +35,7 @@ The following code snippet shows how to use __TxtFormatProvider__ to import a do
 
 #### __[C#] __
 
-{{region radwordsprocessing-formats-and-conversion-txt-txtformatprovider_0}}
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.cs region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_0}}
 	            TxtFormatProvider provider = new TxtFormatProvider();
 	            using (Stream input = File.OpenRead("Sample.txt"))
 	            {
@@ -47,7 +47,7 @@ The following code snippet shows how to use __TxtFormatProvider__ to import a do
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-formats-and-conversion-txt-txtformatprovider_0}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.vb region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_0}}
 	            Dim provider As New TxtFormatProvider()
 	            Using input As Stream = File.OpenRead("Sample.txt")
 	                Dim document As RadFlowDocument = provider.Import(input)
@@ -92,7 +92,7 @@ And here is how you can import a document from string:
 
 #### __[C#] __
 
-{{region radwordsprocessing-formats-and-conversion-txt-txtformatprovider_1}}
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.cs region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_1}}
 	            TxtFormatProvider provider = new TxtFormatProvider();
 	            RadFlowDocument document = provider.Import(input);
 	{{endregion}}
@@ -101,7 +101,7 @@ And here is how you can import a document from string:
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-formats-and-conversion-txt-txtformatprovider_1}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.vb region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_1}}
 	            Dim provider As New TxtFormatProvider()
 	            Dim document As RadFlowDocument = provider.Import(input)
 	            '#End Region
@@ -145,7 +145,7 @@ The following snippet shows how to use __TxtFormatProvider__ to export __RadFlow
 
 #### __[C#] __
 
-{{region radwordsprocessing-formats-and-conversion-txt-txtformatprovider_2}}
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.cs region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_2}}
 	            TxtFormatProvider provider = new TxtFormatProvider();
 	            using (Stream output = File.OpenWrite("sample.txt"))
 	            {
@@ -158,7 +158,7 @@ The following snippet shows how to use __TxtFormatProvider__ to export __RadFlow
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-formats-and-conversion-txt-txtformatprovider_2}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.vb region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_2}}
 	            Dim provider As New TxtFormatProvider()
 	            Using output As Stream = File.OpenWrite("sample.txt")
 	                Dim document As RadFlowDocument = CreateRadFlowDocument()
@@ -187,7 +187,7 @@ You can also export the document to a string and preserve it in a database.
 
 #### __[C#] __
 
-{{region radwordsprocessing-formats-and-conversion-txt-txtformatprovider_3}}
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.cs region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_3}}
 	            TxtFormatProvider provider = new TxtFormatProvider();
 	            RadFlowDocument document = CreateRadFlowDocument();
 	            string output = provider.Export(document);
@@ -197,7 +197,7 @@ You can also export the document to a string and preserve it in a database.
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-formats-and-conversion-txt-txtformatprovider_3}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.vb region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_3}}
 	            Dim provider As New TxtFormatProvider()
 	            Dim document As RadFlowDocument = CreateRadFlowDocument()
 	            Dim output As String = provider.Export(document)

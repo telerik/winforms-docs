@@ -31,7 +31,7 @@ RadTreeView supports filtering of its nodes according to their __Text__ property
 
 #### __[C#]__
 
-{{region filter}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=filter}}
 	            this.radTreeView1.Filter = "new";
 	{{endregion}}
 
@@ -39,7 +39,7 @@ RadTreeView supports filtering of its nodes according to their __Text__ property
 
 #### __[VB.NET]__
 
-{{region filter}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=filter}}
 	        Me.RadTreeView1.Filter = "new"
 	{{endregion}}
 

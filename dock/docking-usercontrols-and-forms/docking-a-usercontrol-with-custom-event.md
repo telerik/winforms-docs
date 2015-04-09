@@ -40,7 +40,7 @@ In our particular case we dock a user control instance in a RadDock instance. Th
 
 #### __[C#] Setting up DateChanged Event__
 
-{{region definingDelegates}}
+{{source=..\SamplesCS\Dock\CalendarPanel.cs region=definingDelegates}}
 	        public delegate void DateChangedHandler(DateTime date);
 	        public event DateChangedHandler DateChanged;
 	{{endregion}}
@@ -49,7 +49,7 @@ In our particular case we dock a user control instance in a RadDock instance. Th
 
 #### __[VB.NET] Setting up DateChanged Event__
 
-{{region definingDelegates}}
+{{source=..\SamplesVB\Dock\CalendarPanel.vb region=definingDelegates}}
 	    Public Delegate Sub DateChangedHandler(ByVal [date] As DateTime)
 	    Public Event DateChanged As DateChangedHandler
 	{{endregion}}
@@ -58,7 +58,7 @@ In the __SelectionChanged__ event handler add the following code:
 
 #### __[C#] Handling the RadCalendar SelectionChanged event__
 
-{{region handlingSelectionChanged}}
+{{source=..\SamplesCS\Dock\CalendarPanel.cs region=handlingSelectionChanged}}
 	        private void radCalendar1_SelectionChanged(object sender, EventArgs e)
 	        {
 	            if (DateChanged != null)
@@ -72,7 +72,7 @@ In the __SelectionChanged__ event handler add the following code:
 
 #### __[VB.NET] Handling the RadCalendar SelectionChanged event__
 
-{{region handlingSelectionChanged}}
+{{source=..\SamplesVB\Dock\CalendarPanel.vb region=handlingSelectionChanged}}
 	    Private Sub RadCalendar1_SelectionChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadCalendar1.SelectionChanged
 	        RaiseEvent DateChanged((TryCast(sender, RadCalendar)).SelectedDate)
 	    End Sub
@@ -88,7 +88,7 @@ In the __SelectionChanged__ event handler add the following code:
 
 #### __[C#] Docking CalendarPanel user control in RadDock__
 
-{{region creatingCalendarPanel}}
+{{source=..\SamplesCS\Dock\DockingForms.cs region=creatingCalendarPanel}}
 	            CalendarPanel calendarPanel = new CalendarPanel();
 	            HostWindow host = this.radDock1.DockControl(calendarPanel, Telerik.WinControls.UI.Docking.DockPosition.Left);
 	            host.Text = "Calendar";
@@ -99,7 +99,7 @@ In the __SelectionChanged__ event handler add the following code:
 
 #### __[VB.NET] Docking CalendarPanel user control in RadDock__
 
-{{region creatingCalendarPanel}}
+{{source=..\SamplesVB\Dock\DockingForms.vb region=creatingCalendarPanel}}
 	        Dim calendarPanel As New CalendarPanel()
 	        Dim host As HostWindow = Me.RadDock1.DockControl(calendarPanel, Telerik.WinControls.UI.Docking.DockPosition.Left)
 	        host.Text = "Calendar"
@@ -112,7 +112,7 @@ In the __SelectionChanged__ event handler add the following code:
 
 #### __[C#] Handling the Custom DateChanged event__
 
-{{region handlingDateChanged}}
+{{source=..\SamplesCS\Dock\DockingForms.cs region=handlingDateChanged}}
 	        void calendarPanel_DateChanged(DateTime date)
 	        {
 	            RadMessageBox.Show("Selected date is: " + date.ToShortDateString());
@@ -123,7 +123,7 @@ In the __SelectionChanged__ event handler add the following code:
 
 #### __[VB.NET] Handling the Custom DateChanged event__
 
-{{region handlingDateChanged}}
+{{source=..\SamplesVB\Dock\DockingForms.vb region=handlingDateChanged}}
 	    Sub calendarPanel_DateChanged(ByVal [date] As DateTime)
 	        RadMessageBox.Show("Selected date is: " + [date].ToShortDateString())
 	    End Sub

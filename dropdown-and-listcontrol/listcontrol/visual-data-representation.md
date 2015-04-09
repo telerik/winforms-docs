@@ -27,7 +27,7 @@ Here is how our visual item class could look like:
 
 #### __[C#]__
 
-{{region customVisualItem}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=customVisualItem}}
 	    public class CustomVisualItem : RadListVisualItem
 	    {
 	        private RadCheckBoxElement checkBox = null;
@@ -56,7 +56,7 @@ Here is how our visual item class could look like:
 
 #### __[VB.NET]__
 
-{{region customVisualItem}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=customVisualItem}}
 	Public Class CustomVisualItem
 	    Inherits RadListVisualItem
 	    Private checkBox As RadCheckBoxElement = Nothing
@@ -89,7 +89,7 @@ Once we have created a custom visual item, we need to subscribe to the CreatingV
 
 #### __[C#]__
 
-{{region creatingVisualListItem}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=creatingVisualListItem}}
 	        void radListControl1_CreatingVisualListItem(object sender, CreatingVisualListItemEventArgs args)
 	        {
 	            args.VisualItem = new CustomVisualItem();
@@ -100,7 +100,7 @@ Once we have created a custom visual item, we need to subscribe to the CreatingV
 
 #### __[VB.NET]__
 
-{{region creatingVisualListItem}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=creatingVisualListItem}}
 	    Private Sub radListControl1_CreatingVisualListItem(ByVal sender As Object, ByVal args As CreatingVisualListItemEventArgs)
 	        args.VisualItem = New CustomVisualItem()
 	    End Sub

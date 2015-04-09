@@ -28,7 +28,7 @@ This example shows how to bind RadScheduler to a collection of custom objects th
 
 #### __[C#]__
 
-{{region myAppointment}}
+{{source=..\SamplesCS\Scheduler\DataBinding\MyAppointment.cs region=myAppointment}}
 	    public class MyAppointment : INotifyPropertyChanged
 	    {
 	        private DateTime start = DateTime.Now;
@@ -163,7 +163,7 @@ This example shows how to bind RadScheduler to a collection of custom objects th
 
 #### __[VB.NET]__
 
-{{region myAppointment}}
+{{source=..\SamplesVB\Scheduler\DataBinding\MyAppointment.vb region=myAppointment}}
 	Public Class MyAppointment
 	    Implements INotifyPropertyChanged
 	
@@ -275,7 +275,7 @@ We will use a list to store our appointment data. For the purpose of this exampl
 
 #### __[C#]__
 
-{{region creatingAppointment}}
+{{source=..\SamplesCS\Scheduler\DataBinding\UsingDataProvider.cs region=creatingAppointment}}
 	        private List<MyAppointment> appointments = new List<MyAppointment>();
 	
 	        protected override void OnLoad(EventArgs e)
@@ -304,7 +304,7 @@ We will use a list to store our appointment data. For the purpose of this exampl
 
 #### __[VB.NET]__
 
-{{region creatingAppointment}}
+{{source=..\SamplesVB\Scheduler\DataBinding\UsingDataProvider.vb region=creatingAppointment}}
 	    Private appointments As New List(Of MyAppointment)()
 	
 	    Protected Overrides Sub OnLoad(ByVal e As EventArgs)
@@ -355,7 +355,7 @@ And finally we will bind our RadScheduler instance to tha collection in the Clic
 
 #### __[C#]__
 
-{{region bindClick}}
+{{source=..\SamplesCS\Scheduler\DataBinding\UsingDataProvider.cs region=bindClick}}
 	        private void btnBind_Click(object sender, EventArgs e)
 	        {
 	            SchedulerBindingDataSource dataSource = new SchedulerBindingDataSource();
@@ -383,7 +383,7 @@ And finally we will bind our RadScheduler instance to tha collection in the Clic
 
 #### __[VB.NET]__
 
-{{region bindClick}}
+{{source=..\SamplesVB\Scheduler\DataBinding\UsingDataProvider.vb region=bindClick}}
 	    Private Sub btnBind_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        Dim dataSource As New SchedulerBindingDataSource()
 	

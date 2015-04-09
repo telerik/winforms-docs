@@ -33,7 +33,7 @@ __FixedContentEditor__ is always associated to a single __IContentRootElement__ 
 
 #### __[C#] Example 1: Create FixedContentEditor__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_0}}
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_0}}
 	            
 	            FixedContentEditor editor = new FixedContentEditor(contentRootElement);
 	        
@@ -43,7 +43,7 @@ __FixedContentEditor__ is always associated to a single __IContentRootElement__ 
 
 #### __[VB.NET] Example 1: Create FixedContentEditor__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_0}}
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_0}}
 	        Dim editor As FixedContentEditor = New FixedContentEditor(contentRootElement)
 	        '	 #End Region
 	    End Sub
@@ -150,7 +150,7 @@ __Example 2__ demonstrates how you can create а FixedContentEditor with specifi
 
 #### __[C#] Example 2: Create FixedContentEditor with Specific IPosition__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_1}}
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_1}}
 	        
 	            FixedContentEditor editor = new FixedContentEditor(contentRootElement, initialPosition);
 	        
@@ -160,7 +160,7 @@ __Example 2__ demonstrates how you can create а FixedContentEditor with specifi
 
 #### __[VB.NET] Example 2: Create FixedContentEditor with Specific IPosition__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_1}}
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_1}}
 	        Dim editor As FixedContentEditor = New FixedContentEditor(contentRootElement, initialPosition)
 	        '	 #End Region
 	    End Sub
@@ -265,7 +265,7 @@ Inserting а [TextFragment]({%slug pdfprocessing-model-textfragment%}) can be do
 
 #### __[C#] Example 3: Insert TextFragment__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_2}}
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_2}}
 	            
 	            editor.DrawText("First text fragment.");
 	            
@@ -275,7 +275,7 @@ Inserting а [TextFragment]({%slug pdfprocessing-model-textfragment%}) can be do
 
 #### __[VB.NET] Example 3: Insert TextFragment__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_2}}
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_2}}
 	        editor.DrawText("First text fragment.")
 	        '	 #End Region
 	
@@ -374,7 +374,7 @@ __Example 4__ shows how you can use the __Block__ object to draw a paragraph.
 
 #### __[C#] Example 4: Insert Paragraph__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_3}}
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_3}}
 	            
 	            Block block = new Block();
 	            block.InsertText("First sentence.");
@@ -387,7 +387,7 @@ __Example 4__ shows how you can use the __Block__ object to draw a paragraph.
 
 #### __[VB.NET] Example 4: Insert Paragraph__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_3}}
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_3}}
 	        Dim block As New Block()
 	        block.InsertText("First sentence.")
 	        block.InsertText("Second sentence.")
@@ -500,7 +500,7 @@ __Example 5__ shows how you can add an image created from a Stream.
 
 #### __[C#] Example 5: Insert Image__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_4}}
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_4}}
 	
 	            using (Stream stream = this.GetResourceStream("Telerik_logo.jpg"))
 	            {
@@ -513,7 +513,7 @@ __Example 5__ shows how you can add an image created from a Stream.
 
 #### __[VB.NET] Example 5: Insert Image__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_4}}
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_4}}
 	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
 	            editor.DrawImage(stream, New Size(118, 28))
 	        End Using
@@ -614,7 +614,7 @@ __Example 6__ shows how you can add an ellipse using one of FixedContentEditor's
 
 #### __[C#] Example 6: Insert Ellipse__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_5}}
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_5}}
 	            
 	            editor.DrawEllipse(new Point(250, 70), 136, 48);
 	            
@@ -624,7 +624,7 @@ __Example 6__ shows how you can add an ellipse using one of FixedContentEditor's
 
 #### __[VB.NET] Example 6: Insert Ellipse__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_5}}
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_5}}
 	        editor.DrawEllipse(New Point(250, 70), 136, 48)
 	        '	 #End Region
 	    End Sub
@@ -712,7 +712,7 @@ When a new clipping is pushed, it is set as a clipping to the current clipping i
 
 #### __[C#] Example 7: Push Clipping__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_6}}
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_6}}
 	            
 	            string visibleText = "The last word in this text is";
 	            string text = string.Format("{0} clipped.", visibleText); //The last word in this text is clipped.
@@ -731,7 +731,7 @@ When a new clipping is pushed, it is set as a clipping to the current clipping i
 
 #### __[VB.NET] Example 7: Push Clipping__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_6}}
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_6}}
 	        Dim visibleText As String = "The last word in this text is"
 	        Dim text As String = String.Format("{0} clipped.", visibleText)
 	        'The last word in this text is clipped.
@@ -806,7 +806,7 @@ The code in __Example 8__ shows how to manipulate the position of the inserted c
 
 #### __[C#] Example 8: Scale and Rotate Content__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_7}}
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_7}}
 	        
 	            editor.Position.Scale(1.5, 0.5);
 	            editor.Position.Rotate(10);
@@ -823,7 +823,7 @@ The code in __Example 8__ shows how to manipulate the position of the inserted c
 
 #### __[VB.NET] Example 8: Scale and Rotate Content__
 
-{{region radpdfprocessing-editing-fixedcontenteditor_7}}
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_7}}
 	        editor.Position.Scale(1.5, 0.5)
 	        editor.Position.Rotate(10)
 	        editor.DrawText("Image:")

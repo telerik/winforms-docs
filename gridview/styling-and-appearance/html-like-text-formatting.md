@@ -20,7 +20,7 @@ Tags are only parsed if DisableHTMLRendering is set to __false__. If you skip th
 
 #### __[C#] HTML-like text formatting__
 
-{{region htmlLikeTextFormatting}}
+{{source=..\SamplesCS\GridView\StylingAndAppearance\HtmlLikeTextFormatting.cs region=htmlLikeTextFormatting}}
 	            DataTable t = new DataTable();
 	            t.Columns.Add("A");
 	            t.Rows.Add("<html> ID: <color= 0, 0, 255> 1");
@@ -34,7 +34,7 @@ Tags are only parsed if DisableHTMLRendering is set to __false__. If you skip th
 
 #### __[VB.NET] HTML-like text formatting__
 
-{{region htmlLikeTextFormatting}}
+{{source=..\SamplesVB\GridView\StylingAndAppearance\HtmlLikeTextFormatting.vb region=htmlLikeTextFormatting}}
 	        Dim t As New DataTable()
 	        t.Columns.Add("A")
 	        t.Rows.Add("<html> ID: <color= 0, 0, 255> 1")

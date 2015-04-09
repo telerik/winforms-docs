@@ -26,7 +26,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[C#] Localizing RadSpellChecker Strings__
 
-{{region myEnglishLocalizationProvider}}
+{{source=..\SamplesCS\SpellChecker\SpellCheckerLocalization.cs region=myEnglishLocalizationProvider}}
 	    class MyEnglishSpellCheckerLocalizationProvider : RadSpellCheckerLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -66,7 +66,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[VB.NET] Localizing RadSpellChecker Strings__
 
-{{region myEnglishLocalizationProvider}}
+{{source=..\SamplesVB\SpellChecker\SpellCheckerLocalization.vb region=myEnglishLocalizationProvider}}
 	Class MyEnglishSpellCheckerLocalizationProvider
 	    Inherits RadSpellCheckerLocalizationProvider
 	    Public Overrides Function GetLocalizedString(id As String) As String
@@ -106,7 +106,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[C#] Assigning the Current Localization Provider__
 
-{{region localizeSpellChecker}}
+{{source=..\SamplesCS\SpellChecker\SpellCheckerLocalization.cs region=localizeSpellChecker}}
 	            RadSpellCheckerLocalizationProvider.CurrentProvider = new MyEnglishSpellCheckerLocalizationProvider();
 	{{endregion}}
 
@@ -114,7 +114,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[VB.NET] Assigning the Current Localization Provider__
 
-{{region localizeSpellChecker}}
+{{source=..\SamplesVB\SpellChecker\SpellCheckerLocalization.vb region=localizeSpellChecker}}
 	        RadSpellCheckerLocalizationProvider.CurrentProvider = New MyEnglishSpellCheckerLocalizationProvider()
 	        '#End Region
 	

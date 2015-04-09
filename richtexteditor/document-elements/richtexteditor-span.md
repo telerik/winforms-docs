@@ -33,7 +33,7 @@ The __Spans__can be used only in the context of the [Paragraph](4A8EFD5F-9604-49
 
 #### __[C#] __
 
-{{region span}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\SpanCode.cs region=span}}
 	            
 	            Section section = new Section();
 	            Paragraph paragraph = new Paragraph();
@@ -48,7 +48,7 @@ The __Spans__can be used only in the context of the [Paragraph](4A8EFD5F-9604-49
 
 #### __[VB.NET] __
 
-{{region span}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\SpanCode.vb region=span}}
 	
 	        Dim section As New Section()
 	        Dim paragraph As New Paragraph()
@@ -77,7 +77,7 @@ To specify the text in the __Span__ you can use its __Text__ property.
 
 #### __[C#] __
 
-{{region span}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\SpanCode.cs region=span}}
 	            
 	            Section section = new Section();
 	            Paragraph paragraph = new Paragraph();
@@ -92,7 +92,7 @@ To specify the text in the __Span__ you can use its __Text__ property.
 
 #### __[VB.NET] __
 
-{{region span}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\SpanCode.vb region=span}}
 	
 	        Dim section As New Section()
 	        Dim paragraph As New Paragraph()

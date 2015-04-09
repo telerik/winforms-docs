@@ -19,7 +19,7 @@ In order to expand all rows in __RadGridView__ you have to iterate through them 
 
 #### __[C#] Expanding all rows of RadGridView__
 
-{{region expandAllRows}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=expandAllRows}}
 	        void ExpandAllRows(GridViewTemplate template, bool expanded)
 	        {
 	            foreach (GridViewRowInfo row in template.Rows)
@@ -40,7 +40,7 @@ In order to expand all rows in __RadGridView__ you have to iterate through them 
 
 #### __[VB.NET] Expanding all rows of RadGridView__
 
-{{region expandAllRows}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=expandAllRows}}
 	    Private Sub ExpandAllRows(ByVal template As GridViewTemplate, ByVal expanded As Boolean)
 	        For Each row As GridViewRowInfo In template.Rows
 	            row.IsExpanded = True

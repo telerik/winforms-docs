@@ -38,7 +38,7 @@ The following code snippet shows how to use __DocxFormatProvider__ to import a d
 
 #### __[C#] Example 1:__
 
-{{region radwordsprocessing-formats-and-conversion-docx-docxformatprovider_0}}
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.cs region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_0}}
 	            
 	            DocxFormatProvider provider = new DocxFormatProvider();
 	            using (Stream input = File.OpenRead("Sample.docx"))
@@ -52,7 +52,7 @@ The following code snippet shows how to use __DocxFormatProvider__ to import a d
 
 #### __[VB] Example 1:__
 
-{{region radwordsprocessing-formats-and-conversion-docx-docxformatprovider_0}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.vb region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_0}}
 	        Dim provider As New DocxFormatProvider()
 	        Using input As Stream = File.OpenRead("Sample.docx")
 	            Dim document As RadFlowDocument = provider.Import(input)
@@ -104,7 +104,7 @@ And here is how you can import a document from byte array containing the docx do
 
 #### __[VB] Example 2:__
 
-{{region radwordsprocessing-formats-and-conversion-docx-docxformatprovider_1}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.vb region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_1}}
 	        Dim provider As New DocxFormatProvider()
 	        Dim document As RadFlowDocument = provider.Import(input)
 	        '#End Region
@@ -155,7 +155,7 @@ The following snippet shows how to use __DocxFormatProvider__ to export __RadFlo
 
 #### __[VB] Example 3:__
 
-{{region radwordsprocessing-formats-and-conversion-docx-docxformatprovider_2}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.vb region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_2}}
 	        Dim provider As New DocxFormatProvider()
 	        Using output As Stream = File.OpenWrite("Sample.docx")
 	            Dim document As RadFlowDocument = CreateRadFlowDocument()
@@ -191,7 +191,7 @@ You can also export the document to a byte array and preserve it in a database.
 
 #### __[VB] Example 4:__
 
-{{region radwordsprocessing-formats-and-conversion-docx-docxformatprovider_3}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.vb region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_3}}
 	        Dim provider As New DocxFormatProvider()
 	
 	        Dim document As RadFlowDocument = CreateRadFlowDocument()

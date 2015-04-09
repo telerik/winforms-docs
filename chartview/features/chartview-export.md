@@ -31,7 +31,7 @@ You can export the __RadChartVew__ content by using one of the following
 
 #### __[C#]__
 
-{{region ExportToImage}}
+{{source=..\SamplesCS\ChartView\ChartViewExport.cs region=ExportToImage}}
 	            
 	            string filePath = @"..\..\..\exprtedChart.png";
 	            this.radChartView1.ExportToImage(filePath, this.radChartView1.Size, System.Drawing.Imaging.ImageFormat.Png);
@@ -42,7 +42,7 @@ You can export the __RadChartVew__ content by using one of the following
 
 #### __[VB.NET]__
 
-{{region ExportToImage}}
+{{source=..\SamplesVB\ChartView\ChartViewExport.vb region=ExportToImage}}
 	
 	        Dim filePath As String = "..\..\..\exprtedChart.png"
 	        Me.RadChartView1.ExportToImage(filePath, Me.RadChartView1.Size, System.Drawing.Imaging.ImageFormat.Png)

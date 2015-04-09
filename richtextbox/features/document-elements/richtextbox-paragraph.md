@@ -36,7 +36,7 @@ The __Paragraph__ can be used only in the context of a
 
 #### __C#__
 
-{{region UseParagraphs}}
+{{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxParagraph.cs region=UseParagraphs}}
 	            Section section = new Section();
 	            Paragraph paragraph = new Paragraph();
 	            section.Blocks.Add(paragraph);
@@ -47,7 +47,7 @@ The __Paragraph__ can be used only in the context of a
 
 #### __VB.NET__
 
-{{region UseParagraphs}}
+{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxParagraph.vb region=UseParagraphs}}
 	        Dim section As New Section()
 	        Dim paragraph As New Paragraph()
 	        section.Blocks.Add(paragraph)
@@ -63,7 +63,7 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 
 #### __C#__
 
-{{region AddInlineElementsToParagraph}}
+{{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxParagraph.cs region=AddInlineElementsToParagraph}}
 	            Section sect = new Section();
 	            Paragraph para = new Paragraph();
 	            Span span = new Span("Span declared in code-behind");
@@ -76,7 +76,7 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 
 #### __VB.NET__
 
-{{region AddInlineElementsToParagraph}}
+{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxParagraph.vb region=AddInlineElementsToParagraph}}
 	        Dim sect As New Section()
 	        Dim para As New Paragraph()
 	        Dim span As New Span("Span declared in code-behind")

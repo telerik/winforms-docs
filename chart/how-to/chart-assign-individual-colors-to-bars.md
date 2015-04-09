@@ -24,7 +24,7 @@ By default __RadChart__ is designed so that all bars from a series have the same
 
 #### __[C#] Assigning colors to bars__
 
-{{region assignColors}}
+{{source=..\SamplesCS\Chart\AddIndividualColorsToBars.cs region=assignColors}}
 	        void Form1_Load(object sender, EventArgs e)
 	        {
 	            Color[] barColors = new Color[8]{
@@ -53,7 +53,7 @@ By default __RadChart__ is designed so that all bars from a series have the same
 
 #### __[VB.NET] Assigning colors to bars__
 
-{{region assignColors}}
+{{source=..\SamplesVB\Chart\AddIndividualColorsToBars.vb region=assignColors}}
 	    Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 	        Dim barColors As Color()
 	        barColors = New Color() {Color.Purple, Color.SteelBlue, Color.Aqua, Color.Yellow, Color.Navy, Color.Green, Color.Blue, Color.Red}

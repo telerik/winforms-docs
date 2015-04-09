@@ -21,7 +21,7 @@ Before running export to ExcelML, you have to initialize the PivotExportToExcelM
 
 #### __[C#]__
 
-{{region ExportToExcelIMLInitialization}}
+{{source=..\SamplesCS\PivotGrid\PivotGridExport.cs region=ExportToExcelIMLInitialization}}
 	            PivotExportToExcelML exporter = new PivotExportToExcelML(this.radPivotGrid1);
 	{{endregion}}
 
@@ -29,7 +29,7 @@ Before running export to ExcelML, you have to initialize the PivotExportToExcelM
 
 #### __[VB]__
 
-{{region ExportToExcelIMLInitialization}}
+{{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=ExportToExcelIMLInitialization}}
 	        Dim exporter As PivotExportToExcelML = New PivotExportToExcelML(Me.radPivotGrid1)
 	{{endregion}}
 
@@ -43,7 +43,7 @@ Using the PivotExcelML method allows you to export the visual settings (themes) 
 
 #### __[C#]__
 
-{{region SettingExportVisualSettings}}
+{{source=..\SamplesCS\PivotGrid\PivotGridExport.cs region=SettingExportVisualSettings}}
 	            exporter.ExportVisualSettings = true;
 	{{endregion}}
 
@@ -51,7 +51,7 @@ Using the PivotExcelML method allows you to export the visual settings (themes) 
 
 #### __[VB]__
 
-{{region SettingExportVisualSettings}}
+{{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=SettingExportVisualSettings}}
 	        exporter.ExportVisualSettings = True
 	{{endregion}}
 
@@ -64,7 +64,7 @@ You can specify the sheet name through __SheetName__ property. If your data is l
 
 #### __[C#]__
 
-{{region SettingTheSheetName}}
+{{source=..\SamplesCS\PivotGrid\PivotGridExport.cs region=SettingTheSheetName}}
 	            exporter.SheetName = "Sheet";
 	{{endregion}}
 
@@ -72,7 +72,7 @@ You can specify the sheet name through __SheetName__ property. If your data is l
 
 #### __[VB]__
 
-{{region SettingTheSheetName}}
+{{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=SettingTheSheetName}}
 	        exporter.SheetName = "Sheet"
 	{{endregion}}
 
@@ -85,7 +85,7 @@ Exporting data to Excel is done through the __RunExport__ method of  __PivotExpo
 
 #### __[C#]__
 
-{{region ExportToExcelInExcelMLFormat}}
+{{source=..\SamplesCS\PivotGrid\PivotGridExport.cs region=ExportToExcelInExcelMLFormat}}
 	            string fileName = "c:\\Sheet1.xls";
 	            exporter.RunExport(fileName);
 	{{endregion}}
@@ -94,7 +94,7 @@ Exporting data to Excel is done through the __RunExport__ method of  __PivotExpo
 
 #### __[VB]__
 
-{{region ExportToExcelInExcelMLFormat}}
+{{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=ExportToExcelInExcelMLFormat}}
 	        Dim fileName As String = "c:\Sheet1.xls"
 	        exporter.RunExport(fileName)
 	{{endregion}}
@@ -109,7 +109,7 @@ __ExcelCellFormating__ event:
 
 #### __[C#]__
 
-{{region ExcelCellFormating}}
+{{source=..\SamplesCS\PivotGrid\PivotGridExport.cs region=ExcelCellFormating}}
 	        void exporter_PivotExcelCellFormatting(object sender, Telerik.WinControls.UI.Export.ExcelPivotCellExportingEventArgs e)  
 	        {   
 	            if (e.ColumnIndex == 1 || e.ColumnIndex==2)//format the header columns
@@ -127,7 +127,7 @@ __ExcelCellFormating__ event:
 
 #### __[VB]__
 
-{{region ExcelCellFormating}}
+{{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=ExcelCellFormating}}
 	    Private Sub exporter_PivotExcelCellFormatting(sender As Object, e As Telerik.WinControls.UI.Export.ExcelPivotCellExportingEventArgs)
 	        If e.ColumnIndex = 1 OrElse e.ColumnIndex = 2 Then
 	            'format the header columns

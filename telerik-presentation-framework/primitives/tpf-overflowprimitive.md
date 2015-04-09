@@ -22,7 +22,7 @@ The OverflowPrimitive is a visual indicator and button that more choices are av
 
 #### __[C#] Creating an OverflowPrimitive__
 
-{{region myOverflowPrimitiveElement}}
+{{source=..\SamplesCS\TPF\Primitives\OverflowPrimitive1\MyOverflowPrimitiveElement.cs region=myOverflowPrimitiveElement}}
 	    public class MyOverflowPrimitiveElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -40,7 +40,7 @@ The OverflowPrimitive is a visual indicator and button that more choices are av
 
 #### __[VB.NET] Creating an OverflowPrimitive__
 
-{{region myOverflowPrimitiveElement}}
+{{source=..\SamplesVB\TPF\Primitives\OverflowPrimitive1\MyOverflowPrimitiveElement.vb region=myOverflowPrimitiveElement}}
 	Public Class MyOverflowPrimitiveElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

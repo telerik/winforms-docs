@@ -19,7 +19,7 @@ __RadRadioButtonlElement__ contains the logic and user interface for a single Ra
 
 #### __[C#]__
 
-{{region myRadioButtonControl}}
+{{source=..\SamplesCS\TPF\Elements\MyRadioButtonControl.cs region=myRadioButtonControl}}
 	    public class MyRadioButtonControl : RadControl
 	    {
 	        protected override void CreateChildItems(RadElement parent)
@@ -37,7 +37,7 @@ __RadRadioButtonlElement__ contains the logic and user interface for a single Ra
 
 #### __[VB.NET]__
 
-{{region myRadioButtonControl}}
+{{source=..\SamplesVB\TPF\Elements\MyRadioButtonControl.vb region=myRadioButtonControl}}
 	Public Class MyRadioButtonControl
 	    Inherits RadControl
 	    Protected Overrides Sub CreateChildItems(ByVal parent As RadElement)

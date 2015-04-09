@@ -27,7 +27,7 @@ symbols greater than 10 characters long:
 
 #### __[C#] Handling the value changed event__
 
-{{region handlingValueChangingEvent}}
+{{source=..\SamplesCS\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.cs region=handlingValueChangingEvent}}
 	        void radGridView1_ValueChanging(object sender, Telerik.WinControls.UI.ValueChangingEventArgs e)
 	        {
 	            if (e.NewValue.GetType() == typeof(string))
@@ -46,7 +46,7 @@ symbols greater than 10 characters long:
 
 #### __[VB.NET] Handling the value changed event__
 
-{{region handlingValueChangingEvent}}
+{{source=..\SamplesVB\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.vb region=handlingValueChangingEvent}}
 	    Private Sub RadGridView1_ValueChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ValueChangingEventArgs) Handles RadGridView1.ValueChanging
 	        If e.NewValue.GetType() Is GetType(String) Then
 	            If e.NewValue.ToString().Length > 10 Then

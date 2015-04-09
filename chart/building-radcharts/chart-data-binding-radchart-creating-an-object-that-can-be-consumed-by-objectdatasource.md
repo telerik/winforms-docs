@@ -18,7 +18,7 @@ See the code below for an example object that can be consumed by [ObjectDataSour
 
 #### __[C#] Creating an object that can be consumed by object data source__
 
-{{region createObject}}
+{{source=..\SamplesCS\Chart\CreatingAnObjectThatCanBeConsumedByObjectDataSource.cs region=createObject}}
 	    [DataObjectAttribute]
 	    public class ProductsBO
 	    {
@@ -40,7 +40,7 @@ See the code below for an example object that can be consumed by [ObjectDataSour
 
 #### __[VB.NET] Creating an object that can be consumed by object data source__
 
-{{region createObject}}
+{{source=..\SamplesVB\Chart\CreatingAnObjectThatCanBeConsumedByObjectDataSource.vb region=createObject}}
 	    <DataObjectAttribute()> _
 	    Public Class ProductsBO
 	        <DataObjectMethodAttribute(DataObjectMethodType.[Select], True)> _

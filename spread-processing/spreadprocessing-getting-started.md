@@ -43,6 +43,9 @@ The following assemblies are required in order to be able to export to Xlsx and 
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
             
 
+* Telerik.Windows.Documents.Fixed.dll 
+            
+
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
             
 
@@ -70,7 +73,7 @@ __Example 1__ shows how you can create a workbook and add a new worksheet to it.
 
 #### __[C#] Example 1: Create Workbook__
 
-{{region radspreadprocessing-getting-started_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\RadSpreadProcessingGettingStarted.cs region=radspreadprocessing-getting-started_0}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	{{endregion}}
@@ -79,7 +82,7 @@ __Example 1__ shows how you can create a workbook and add a new worksheet to it.
 
 #### __[VB.NET] Example 1: Create Workbook__
 
-{{region radspreadprocessing-getting-started_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\RadSpreadProcessingGettingStarted.vb region=radspreadprocessing-getting-started_0}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        '#End Region
@@ -108,7 +111,7 @@ You can then create a [CellSelection]({%slug spreadprocessing-working-with-cells
 
 #### __[C#] Example 2: Set Value of Cell__
 
-{{region radspreadprocessing-getting-started_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\RadSpreadProcessingGettingStarted.cs region=radspreadprocessing-getting-started_1}}
 	            CellSelection selection = worksheet.Cells[1, 1]; //B2 cell
 	            selection.SetValue("Hello RadSpreadProcessing");
 	{{endregion}}
@@ -117,7 +120,7 @@ You can then create a [CellSelection]({%slug spreadprocessing-working-with-cells
 
 #### __[VB.NET] Example 2: Set Value of Cell__
 
-{{region radspreadprocessing-getting-started_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\RadSpreadProcessingGettingStarted.vb region=radspreadprocessing-getting-started_1}}
 	        Dim selection As CellSelection = worksheet.Cells(1, 1) 'B2 cell
 	        selection.SetValue("Hello RadSpreadProcessing")
 	        '#End Region
@@ -143,7 +146,7 @@ The __RadSpreadProcessing__ library supports a variety of formats to which you c
 
 #### __[C#] Example 3: Export to Xlsx__
 
-{{region radspreadprocessing-getting-started_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\RadSpreadProcessingGettingStarted.cs region=radspreadprocessing-getting-started_2}}
 	            string fileName = "Hello.xlsx";
 	            IWorkbookFormatProvider formatProvider = new XlsxFormatProvider();
 	
@@ -157,7 +160,7 @@ The __RadSpreadProcessing__ library supports a variety of formats to which you c
 
 #### __[VB.NET] Example 3: Export to Xlsx__
 
-{{region radspreadprocessing-getting-started_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\RadSpreadProcessingGettingStarted.vb region=radspreadprocessing-getting-started_2}}
 	        Dim fileName As String = "Hello.xlsx"
 	        Dim formatProvider As IWorkbookFormatProvider = New XlsxFormatProvider()
 	

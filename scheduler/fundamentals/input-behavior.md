@@ -49,7 +49,7 @@ Every one of these methods can be overridden and the instance of the __Scheduler
 
 #### __[C#] __
 
-{{region Behavior}}
+{{source=..\SamplesCS\Scheduler\Fundamentals\InputBehavior.cs region=Behavior}}
 	    public class MySchedulerInputBehavior : SchedulerInputBehavior
 	    {
 	        public MySchedulerInputBehavior(RadScheduler scheduler)
@@ -84,7 +84,7 @@ Every one of these methods can be overridden and the instance of the __Scheduler
 
 #### __[VB.NET] __
 
-{{region Behavior}}
+{{source=..\SamplesVB\Scheduler\Fundamentals\InputBehavior.vb region=Behavior}}
 	Public Class MySchedulerInputBehavior
 	    Inherits SchedulerInputBehavior
 	    Public Sub New(scheduler As RadScheduler)
@@ -116,7 +116,7 @@ Now we need to assign this new input behavior to the __SchedulerInputBehavior__ 
 
 #### __[C#] __
 
-{{region SetBehavior}}
+{{source=..\SamplesCS\Scheduler\Fundamentals\InputBehavior.cs region=SetBehavior}}
 	            scheduler.SchedulerInputBehavior = new MySchedulerInputBehavior(scheduler);
 	{{endregion}}
 
@@ -124,7 +124,7 @@ Now we need to assign this new input behavior to the __SchedulerInputBehavior__ 
 
 #### __[VB.NET] __
 
-{{region SetBehavior}}
+{{source=..\SamplesVB\Scheduler\Fundamentals\InputBehavior.vb region=SetBehavior}}
 	        scheduler.SchedulerInputBehavior = New MySchedulerInputBehavior(scheduler)
 	{{endregion}}
 

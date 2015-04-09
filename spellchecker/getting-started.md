@@ -34,7 +34,7 @@ The following tutorial demonstrates how you can make RadSpellChecker
 
 #### __[C#]__
 
-{{region settingText}}
+{{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=settingText}}
 	            this.radTextBox1.Text = "The quik broun foxx jumpd ovur lasy dog";
 	{{endregion}}
 
@@ -42,7 +42,7 @@ The following tutorial demonstrates how you can make RadSpellChecker
 
 #### __[VB.NET]__
 
-{{region settingText}}
+{{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=settingText}}
 	        Me.RadTextBox1.Text = "The quik broun foxx jumpd ovur lasy dog"
 	{{endregion}}
 
@@ -54,7 +54,7 @@ The following tutorial demonstrates how you can make RadSpellChecker
 
 #### __[C#]__
 
-{{region callingCheck}}
+{{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=callingCheck}}
 	        private void radButton1_Click(object sender, EventArgs e)
 	        {
 	            this.radSpellChecker1.Check(this.radTextBox1);
@@ -65,7 +65,7 @@ The following tutorial demonstrates how you can make RadSpellChecker
 
 #### __[VB.NET]__
 
-{{region callingCheck}}
+{{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=callingCheck}}
 	    Private Sub RadButton1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadButton1.Click
 	        Me.RadSpellChecker1.Check(Me.RadTextBox1)
 	    End Sub

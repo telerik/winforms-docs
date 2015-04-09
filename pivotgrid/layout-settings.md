@@ -24,7 +24,7 @@ You can control the layout type of the column and row headers via the following 
 
 #### __[C#] __
 
-{{region LayoutType}}
+{{source=..\SamplesCS\PivotGrid\PivotGridLayoutSettings.cs region=LayoutType}}
 	            this.radPivotGrid1.ColumnHeadersLayout = Telerik.WinControls.UI.PivotLayout.Tabular;
 	            this.radPivotGrid1.RowHeadersLayout = Telerik.WinControls.UI.PivotLayout.Compact;
 	{{endregion}}
@@ -33,7 +33,7 @@ You can control the layout type of the column and row headers via the following 
 
 #### __[VB.NET] __
 
-{{region LayoutType}}
+{{source=..\SamplesVB\PivotGrid\PivotGridLayoutSettings.vb region=LayoutType}}
 	        Me.RadPivotGrid1.ColumnHeadersLayout = Telerik.WinControls.UI.PivotLayout.Tabular
 	        Me.RadPivotGrid1.RowHeadersLayout = Telerik.WinControls.UI.PivotLayout.Compact
 	        '#End Region
@@ -122,7 +122,7 @@ You can also control where SubTotals and GrandTotals are displayed:
 
 #### __[C#] __
 
-{{region Totals}}
+{{source=..\SamplesCS\PivotGrid\PivotGridLayoutSettings.cs region=Totals}}
 	            this.radPivotGrid1.ColumnGrandTotalsPosition = Telerik.WinControls.UI.TotalsPos.First;
 	            this.radPivotGrid1.RowGrandTotalsPosition = Telerik.WinControls.UI.TotalsPos.Last;
 	            this.radPivotGrid1.ColumnsSubTotalsPosition = Telerik.WinControls.UI.TotalsPos.First;
@@ -133,7 +133,7 @@ You can also control where SubTotals and GrandTotals are displayed:
 
 #### __[VB.NET] __
 
-{{region Totals}}
+{{source=..\SamplesVB\PivotGrid\PivotGridLayoutSettings.vb region=Totals}}
 	        Me.RadPivotGrid1.ColumnGrandTotalsPosition = Telerik.WinControls.UI.TotalsPos.First
 	        Me.RadPivotGrid1.RowGrandTotalsPosition = Telerik.WinControls.UI.TotalsPos.Last
 	        Me.RadPivotGrid1.ColumnsSubTotalsPosition = Telerik.WinControls.UI.TotalsPos.First
@@ -217,7 +217,7 @@ When you have added more than one aggregate description, there are special heade
 
 #### __[C#] __
 
-{{region Aggregates}}
+{{source=..\SamplesCS\PivotGrid\PivotGridLayoutSettings.cs region=Aggregates}}
 	            this.radPivotGrid1.AggregatesPosition = Telerik.Pivot.Core.PivotAxis.Columns;
 	            this.radPivotGrid1.AggregatesLevel = 1;
 	{{endregion}}
@@ -226,7 +226,7 @@ When you have added more than one aggregate description, there are special heade
 
 #### __[VB.NET] __
 
-{{region Aggregates}}
+{{source=..\SamplesVB\PivotGrid\PivotGridLayoutSettings.vb region=Aggregates}}
 	        Me.RadPivotGrid1.AggregatesPosition = Telerik.Pivot.Core.PivotAxis.Columns
 	        Me.RadPivotGrid1.AggregatesLevel = 1
 	        '#End Region

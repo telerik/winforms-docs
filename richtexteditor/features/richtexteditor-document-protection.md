@@ -38,7 +38,7 @@ The users that will be able to edit the document and the groups they are in can 
 
 #### __[C#] __
 
-{{region users}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=users}}
 	            
 	            this.radRichTextEditor1.Users = new PermissionInfoCollection()
 	            {
@@ -55,7 +55,7 @@ The users that will be able to edit the document and the groups they are in can 
 
 #### __[VB.NET] __
 
-{{region users}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=users}}
 	
 	        Me.radRichTextEditor1.Users = New PermissionInfoCollection() From {PermissionInfo.CreateEveryonePermissionInfo(), New PermissionInfo("jmiller", PermissionType.Individual, "James Miller"), New PermissionInfo("jsmith", PermissionType.Individual, "John Smith"), New PermissionInfo("rbrown", PermissionType.Individual, "Robert Brown"), New PermissionInfo("Administrators", PermissionType.Group, "Administrators")}
 	
@@ -144,7 +144,7 @@ The current user of the document is set using the __CurrentUser__ property of th
 
 #### __[C#] __
 
-{{region current}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=current}}
 	            
 	            this.radRichTextEditor1.CurrentUser = new UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com");
 	                
@@ -154,7 +154,7 @@ The current user of the document is set using the __CurrentUser__ property of th
 
 #### __[VB.NET] __
 
-{{region current}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=current}}
 	
 	        Me.radRichTextEditor1.CurrentUser = New UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com")
 	
@@ -226,7 +226,7 @@ You can also create a collection with the UserInfos that will be interracting wi
 
 #### __[C#] __
 
-{{region usersList}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=usersList}}
 	            
 	            List<UserInfo> CurrentUsers = new List<UserInfo>()
 	            {
@@ -241,7 +241,7 @@ You can also create a collection with the UserInfos that will be interracting wi
 
 #### __[VB.NET] __
 
-{{region usersList}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=usersList}}
 	
 	        Dim CurrentUsers As New List(Of UserInfo)() From {
 	            New UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com"),
@@ -305,7 +305,7 @@ you can declare a RadDropDownList which will be used to change the current user 
 
 #### __[C#] __
 
-{{region combo1}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=combo1}}
 	            
 	            RadDropDownList dropdown1 = new RadDropDownList();
 	            dropdown1.Location = new Point(10, 10);
@@ -318,7 +318,7 @@ you can declare a RadDropDownList which will be used to change the current user 
 
 #### __[VB.NET] __
 
-{{region combo1}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=combo1}}
 	
 	        Dim dropdown1 As New RadDropDownList()
 	        dropdown1.Location = New Point(10, 10)
@@ -366,7 +366,7 @@ and populate it like this:
 
 #### __[C#] __
 
-{{region combo2}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=combo2}}
 	            
 	            dropdown1.DataSource = CurrentUsers;
 	            dropdown1.DisplayMember = "Username";
@@ -377,7 +377,7 @@ and populate it like this:
 
 #### __[VB.NET] __
 
-{{region combo2}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=combo2}}
 	
 	        dropdown1.DataSource = CurrentUsers
 	        dropdown1.DisplayMember = "Username"
@@ -416,7 +416,7 @@ Then, when the selected item of the combo changes, the CurrentUser of the editor
 
 #### __[C#] __
 
-{{region combo3}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=combo3}}
 	
 	        private void dropdown1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
 	        {
@@ -429,7 +429,7 @@ Then, when the selected item of the combo changes, the CurrentUser of the editor
 
 #### __[VB.NET] __
 
-{{region combo3}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=combo3}}
 	
 	    Private Sub dropdown1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
 	        Me.radRichTextEditor1.CurrentUser = TryCast(DirectCast(sender, RadDropDownList).SelectedValue, UserInfo)
@@ -457,7 +457,7 @@ It is also possible to toggle document protection in code-behind, without showin
 
 #### __[C#] __
 
-{{region password}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=password}}
 	            
 	            this.radRichTextEditor1.Document.ProtectDocument(DocumentProtectionMode.ReadOnly, "password");
 	            
@@ -467,7 +467,7 @@ It is also possible to toggle document protection in code-behind, without showin
 
 #### __[VB.NET] __
 
-{{region password}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=password}}
 	
 	        Me.radRichTextEditor1.Document.ProtectDocument(DocumentProtectionMode.ReadOnly, "password")
 	
@@ -521,7 +521,7 @@ The reverse operations can be executed like this:
 
 #### __[C#] __
 
-{{region unprotect}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=unprotect}}
 	        
 	            this.radRichTextEditor1.Document.UnprotectDocument("password");
 	    
@@ -531,7 +531,7 @@ The reverse operations can be executed like this:
 
 #### __[VB.NET] __
 
-{{region unprotect}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=unprotect}}
 	
 	        Me.radRichTextEditor1.Document.UnprotectDocument("password")
 	
@@ -572,7 +572,7 @@ Here is an example:
 
 #### __[C#] __
 
-{{region permissions}}
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=permissions}}
 	
 	            PermissionRangeInfo info = new PermissionRangeInfo();
 	            info.Type = PermissionType.Individual;
@@ -586,7 +586,7 @@ Here is an example:
 
 #### __[VB.NET] __
 
-{{region permissions}}
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=permissions}}
 	
 	        Dim info As New PermissionRangeInfo()
 	        info.Type = PermissionType.Individual

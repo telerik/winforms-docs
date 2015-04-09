@@ -29,7 +29,7 @@ First we can set up the grid with some columns and rows, this will allow us to o
 
 #### __[C#] __
 
-{{region FormLoad}}
+{{source=..\SamplesCS\GridView\Editors\How-To\ChangeTheActiveEditorDependingOnTheCellValueType.cs region=FormLoad}}
 	        private void ChangeTheActiveEditorDependingOnTheCellValueType_Load(object sender, EventArgs e)
 	        {
 	            GridViewTextBoxColumn gridViewTextBoxColumn1 = new GridViewTextBoxColumn();
@@ -60,7 +60,7 @@ First we can set up the grid with some columns and rows, this will allow us to o
 
 #### __[VB.NET] __
 
-{{region FormLoad}}
+{{source=..\SamplesVB\GridView\Editors\How-To\ChangeTheActiveEditorDependingOnTheCellValueType.vb region=FormLoad}}
 	    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 	
 	        Dim gridViewTextBoxColumn1 As New GridViewTextBoxColumn()
@@ -91,7 +91,7 @@ Now we just need to match the value with the appropriate type and show the corre
 
 #### __[C#] __
 
-{{region EditorRequired}}
+{{source=..\SamplesCS\GridView\Editors\How-To\ChangeTheActiveEditorDependingOnTheCellValueType.cs region=EditorRequired}}
 	        void radGridView1_EditorRequired(object sender, EditorRequiredEventArgs e)
 	        {
 	            DateTime date;
@@ -120,7 +120,7 @@ Now we just need to match the value with the appropriate type and show the corre
 
 #### __[VB.NET] __
 
-{{region EditorRequired}}
+{{source=..\SamplesVB\GridView\Editors\How-To\ChangeTheActiveEditorDependingOnTheCellValueType.vb region=EditorRequired}}
 	    Private Sub radGridView1_EditorRequired(sender As Object, e As EditorRequiredEventArgs)
 	
 	        Dim [date] As DateTime

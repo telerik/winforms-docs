@@ -20,7 +20,7 @@ This article will guide you through the process of creating a month-year picker.
 
 #### __[C#]__
 
-{{region monthYearPicker}}
+{{source=..\SamplesCS\Calendar\Calendar1.cs region=monthYearPicker}}
 	
 	            this.radCalendar1.HeaderNavigationMode = HeaderNavigationMode.Zoom;
 	            this.radCalendar1.ZoomLevel = ZoomLevel.Months;
@@ -33,7 +33,7 @@ This article will guide you through the process of creating a month-year picker.
 
 #### __[VB.NET]__
 
-{{region monthYearPicker}}
+{{source=..\SamplesVB\Calendar\Calendar1.vb region=monthYearPicker}}
 	
 	    Private Sub radCalendar1_ZoomChanging(sender As Object, e As CalendarZoomChangingEventArgs)
 	        If Me.RadCalendar1.ZoomLevel = ZoomLevel.Years AndAlso e.Direction = DrillDirection.Up Then
@@ -63,7 +63,7 @@ In addition, you should subscribe to the __ZoomChanging__ event and stop navigat
 
 #### __[C#]__
 
-{{region monthYearPickerEvent}}
+{{source=..\SamplesCS\Calendar\Calendar1.cs region=monthYearPickerEvent}}
 	
 	        void radCalendar1_ZoomChanging(object sender, CalendarZoomChangingEventArgs e)
 	        {
@@ -82,7 +82,7 @@ In addition, you should subscribe to the __ZoomChanging__ event and stop navigat
 
 #### __[VB.NET]__
 
-{{region monthYearPickerEvent}}
+{{source=..\SamplesVB\Calendar\Calendar1.vb region=monthYearPickerEvent}}
 	
 	    Private Sub radCalendar1_ZoomChanging(sender As Object, e As CalendarZoomChangingEventArgs)
 	        If Me.RadCalendar1.ZoomLevel = ZoomLevel.Years AndAlso e.Direction = DrillDirection.Up Then

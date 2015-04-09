@@ -36,7 +36,7 @@ __Example 1__ shows how to use PdfFormatProvider to import a PDF document form a
 
 #### __[C#] Example 1: Import PDF File__
 
-{{region radpdfprocessing-formats-and-conversion-pdf-pdfformatprovider_0}}
+{{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfUsingPdfFormatProvider.cs region=radpdfprocessing-formats-and-conversion-pdf-pdfformatprovider_0}}
 	            PdfFormatProvider provider = new PdfFormatProvider();
 	            using (Stream input = File.OpenRead("Sample.pdf"))
 	            {
@@ -48,7 +48,7 @@ __Example 1__ shows how to use PdfFormatProvider to import a PDF document form a
 
 #### __[VB.NET] Example 1: Import PDF File__
 
-{{region radpdfprocessing-formats-and-conversion-pdf-pdfformatprovider_0}}
+{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfUsingPdfFormatProvider.vb region=radpdfprocessing-formats-and-conversion-pdf-pdfformatprovider_0}}
 	        Dim provider As PdfFormatProvider = New PdfFormatProvider()
 	        Using input As Stream = File.OpenRead("Sample.pdf")
 	            Dim document As RadFixedDocument = provider.Import(input)
@@ -87,7 +87,7 @@ __Example 2__ shows how to use the __Export()__ method of PdfFormatProvider to e
 
 #### __[C#] Example 2: Export PDF File__
 
-{{region radpdfprocessing-formats-and-conversion-pdf-pdfformatprovider_1}}
+{{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfUsingPdfFormatProvider.cs region=radpdfprocessing-formats-and-conversion-pdf-pdfformatprovider_1}}
 	            PdfFormatProvider provider = new PdfFormatProvider();
 	            using (Stream output = File.OpenWrite("sample.pdf"))
 	            {
@@ -100,7 +100,7 @@ __Example 2__ shows how to use the __Export()__ method of PdfFormatProvider to e
 
 #### __[VB.NET] Example 2: Export PDF File__
 
-{{region radpdfprocessing-formats-and-conversion-pdf-pdfformatprovider_1}}
+{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfUsingPdfFormatProvider.vb region=radpdfprocessing-formats-and-conversion-pdf-pdfformatprovider_1}}
 	        Dim provider As PdfFormatProvider = New PdfFormatProvider()
 	        Using output As Stream = File.OpenWrite("sample.pdf")
 	            Dim document As RadFixedDocument = CreateRadFixedDocument()

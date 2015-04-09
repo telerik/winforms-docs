@@ -46,7 +46,7 @@ This is all that is necessary to start monitoring your application. By default t
 
 #### __[C#] __
 
-{{region disable}}
+{{source=..\SamplesCS\Eqatec\Eqatec.cs region=disable}}
 	            this.radButton1.EnableAnalytics = false;
 	{{endregion}}
 
@@ -54,7 +54,7 @@ This is all that is necessary to start monitoring your application. By default t
 
 #### __[VB.NET] __
 
-{{region disable}}
+{{source=..\SamplesVB\Eqatec\Eqatec.vb region=disable}}
 	        Me.RadButton1.EnableAnalytics = False
 	{{endregion}}
 

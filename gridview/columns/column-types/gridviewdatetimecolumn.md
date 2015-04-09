@@ -22,7 +22,7 @@ __GridViewDateTimeColumn__ provides date entry and formatting for
 
 #### __[C#] Instantiate GridViewDateTimeColumn__
 
-{{region addDateTimeColumn}}
+{{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn1.cs region=addDateTimeColumn}}
 	            GridViewDateTimeColumn dateTimeColumn = new GridViewDateTimeColumn();
 	            dateTimeColumn.Name = "DateTimeColumn";
 	            dateTimeColumn.HeaderText = "Order date";
@@ -34,7 +34,7 @@ __GridViewDateTimeColumn__ provides date entry and formatting for
 
 #### __[VB.NET] Instantiate GridViewDateTimeColumn__
 
-{{region addDateTimeColumn}}
+{{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn1.vb region=addDateTimeColumn}}
 	        Dim dateTimeColumn As New GridViewDateTimeColumn()
 	        dateTimeColumn.Name = "DateTimeColumn"
 	        dateTimeColumn.HeaderText = "Order date"
@@ -50,7 +50,7 @@ The formatting for date and time values also responds to globalization settings 
 
 #### __[C#] Set the CurrentCulture__
 
-{{region settingCurrentCulture}}
+{{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn2.cs region=settingCurrentCulture}}
 	            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("fr-BE");
 	            GridViewDateTimeColumn dateTimeColumn = new GridViewDateTimeColumn();
 	            dateTimeColumn.Name = "DateTimeColumn";
@@ -64,7 +64,7 @@ The formatting for date and time values also responds to globalization settings 
 
 #### __[VB.NET] Set the CurrentCulture__
 
-{{region settingCurrentCulture}}
+{{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn2.vb region=settingCurrentCulture}}
 	        System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("fr-BE")
 	        Dim dateTimeColumn As New GridViewDateTimeColumn()
 	        dateTimeColumn.Name = "DateTimeColumn"
@@ -86,7 +86,7 @@ The code below demonstrates how to change date formatting in edit mode (while th
 
 #### __[C#] Change the editor date format__
 
-{{region changeEditorDateFormat}}
+{{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn1.cs region=changeEditorDateFormat}}
 	            GridViewDateTimeColumn dateTimeColumn1 = new GridViewDateTimeColumn();
 	            dateTimeColumn1.Name = "DateTimeColumn";
 	            dateTimeColumn1.HeaderText = "Order date";
@@ -99,7 +99,7 @@ The code below demonstrates how to change date formatting in edit mode (while th
 
 #### __[VB.NET] Change the editor date format__
 
-{{region changeEditorDateFormat}}
+{{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn1.vb region=changeEditorDateFormat}}
 	        Dim dateTimeColumn1 As New GridViewDateTimeColumn()
 	        dateTimeColumn1.Name = "DateTimeColumn"
 	        dateTimeColumn1.HeaderText = "Order date"
@@ -112,7 +112,7 @@ The code below demonstrates how to change date formatting in edit mode (while th
 
 #### __[C#] Change the editor format__
 
-{{region changeEditorDateFormat1}}
+{{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn1.cs region=changeEditorDateFormat1}}
 	        void radGridView1_CellEditorInitialized(object sender, GridViewCellEventArgs e)
 	        {
 	            RadDateTimeEditor editor = this.radGridView1.ActiveEditor as RadDateTimeEditor;
@@ -131,7 +131,7 @@ The code below demonstrates how to change date formatting in edit mode (while th
 
 #### __[VB.NET] Change the editor format__
 
-{{region changeEditorDateFormat1}}
+{{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn1.vb region=changeEditorDateFormat1}}
 	    Private Sub radGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As GridViewCellEventArgs)
 	        Dim editor As RadDateTimeEditor = TryCast(Me.RadGridView1.ActiveEditor, RadDateTimeEditor)
 	        If editor IsNot Nothing Then
@@ -153,7 +153,7 @@ You can also change the way the dates in the column are filtered. This is how th
 
 #### __[C#] Change the filtering mode__
 
-{{region changeFilteringMode}}
+{{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn1.cs region=changeFilteringMode}}
 	            dateTimeColumn1.FilteringMode = GridViewTimeFilteringMode.Date;
 	{{endregion}}
 
@@ -161,7 +161,7 @@ You can also change the way the dates in the column are filtered. This is how th
 
 #### __[VB.NET] Change the filtering mode__
 
-{{region changeFilteringMode}}
+{{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn1.vb region=changeFilteringMode}}
 	        dateTimeColumn1.FilteringMode = GridViewTimeFilteringMode.Date
 	{{endregion}}
 

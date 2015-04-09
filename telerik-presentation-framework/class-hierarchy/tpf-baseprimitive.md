@@ -18,7 +18,7 @@ BasePrimitive is a [VisualElement]({%slug tpf-class-hierarchy-visualelement%}) d
 
 #### __[C#]__
 
-{{region Paint}}
+{{source=..\SamplesCS\TPF\ClassHierarchy\BasePrimitiveForm.cs region=Paint}}
 	            
 	            public override void PaintPrimitive(IGraphics graphics, float angle, SizeF scale)
 	            {
@@ -34,7 +34,7 @@ BasePrimitive is a [VisualElement]({%slug tpf-class-hierarchy-visualelement%}) d
 
 #### __[VB.NET]__
 
-{{region Paint}}
+{{source=..\SamplesVB\TPF\ClassHierarchy\BasePrimitiveForm.vb region=Paint}}
 	
 	        Public Overrides Sub PaintPrimitive(graphics As IGraphics, angle As Single, scale As SizeF)
 	            Dim rect As Rectangle = Me.BoundingRectangle

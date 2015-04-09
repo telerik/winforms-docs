@@ -22,7 +22,7 @@ Let’s start by specifying the RadPropertyGrid.__SelectedObject__ property, so 
 
 #### __[C#]__
 
-{{region ClassItem}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=ClassItem}}
 	        
 	        public class Item
 	        {
@@ -52,7 +52,7 @@ Let’s start by specifying the RadPropertyGrid.__SelectedObject__ property, so 
 
 #### __[VB.NET]__
 
-{{region ClassItem}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=ClassItem}}
 	
 	    Public Class Item
 	        Public Property Id() As Integer
@@ -107,7 +107,7 @@ Next, we should create a custom __PropertyGridValueElement__ which is purposed t
 
 #### __[C#]__
 
-{{region PropertyGridValueElement}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=PropertyGridValueElement}}
 	        
 	        public class CustomPropertyGridValueElement : PropertyGridValueElement
 	        {
@@ -159,7 +159,7 @@ Next, we should create a custom __PropertyGridValueElement__ which is purposed t
 
 #### __[VB.NET]__
 
-{{region PropertyGridValueElement}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=PropertyGridValueElement}}
 	
 	    Public Class CustomPropertyGridValueElement
 	    Inherits PropertyGridValueElement
@@ -272,7 +272,7 @@ To put this value element in action, we will create a descendant of __PropertyGr
 
 #### __[C#]__
 
-{{region PropertyGridItemElement}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=PropertyGridItemElement}}
 	        
 	        public class CustomItemElement : PropertyGridItemElement
 	        {
@@ -296,7 +296,7 @@ To put this value element in action, we will create a descendant of __PropertyGr
 
 #### __[VB.NET]__
 
-{{region PropertyGridItemElement}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=PropertyGridItemElement}}
 	
 	    Public Class CustomItemElement
 	    Inherits PropertyGridItemElement
@@ -368,7 +368,7 @@ Back to the control, let’s subscribe to the RadPropertyGrid.__CreateItemElemen
 
 #### __[C#]__
 
-{{region CreateItemElement}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=CreateItemElement}}
 	        
 	        private void radPropertyGrid1_CreateItemElement(object sender,
 	            CreatePropertyGridItemElementEventArgs e)
@@ -385,7 +385,7 @@ Back to the control, let’s subscribe to the RadPropertyGrid.__CreateItemElemen
 
 #### __[VB.NET]__
 
-{{region CreateItemElement}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=CreateItemElement}}
 	
 	    Private Sub radPropertyGrid1_CreateItemElement(sender As Object, e As CreatePropertyGridItemElementEventArgs)
 	        If e.Item.Name = "DeliveryType" Then
@@ -508,7 +508,7 @@ The next thing we need to do is to stop entering edit mode when clicking over on
 
 #### __[C#]__
 
-{{region Editing}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=Editing}}
 	        
 	        private void radPropertyGrid1_Editing(object sender,
 	            PropertyGridItemEditingEventArgs e)
@@ -525,7 +525,7 @@ The next thing we need to do is to stop entering edit mode when clicking over on
 
 #### __[VB.NET]__
 
-{{region Editing}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=Editing}}
 	
 	    Private Sub radPropertyGrid1_Editing(sender As Object, e As PropertyGridItemEditingEventArgs)
 	        If e.Item.Name = "DeliveryType" Then
@@ -657,7 +657,7 @@ The last thing we should update is to adjust the PropertyGridElement.PropertyTab
 
 #### __[C#]__
 
-{{region ItemHeight}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=ItemHeight}}
 	            
 	            this.radPropertyGrid1.PropertyGridElement.PropertyTableElement.ItemHeight = Enum.GetValues(typeof(DeliveryType)).Length * 20;
 	            
@@ -667,7 +667,7 @@ The last thing we should update is to adjust the PropertyGridElement.PropertyTab
 
 #### __[VB.NET]__
 
-{{region ItemHeight}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=ItemHeight}}
 	
 	        Me.radPropertyGrid1.PropertyGridElement.PropertyTableElement.ItemHeight = [Enum].GetValues(GetType(DeliveryType)).Length * 20
 	        '#End Region

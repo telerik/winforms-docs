@@ -17,7 +17,7 @@ __SteplineSeries__ plot their Categorical data points on Cartesian Area using on
 
 #### __[C#]__
 
-{{region Initialize}}
+{{source=..\SamplesCS\ChartView\Series\SteplineSeriesForm.cs region=Initialize}}
 	            SteplineSeries lineSeries = new SteplineSeries();
 	            lineSeries.DataPoints.Add(new CategoricalDataPoint(20, "Jan"));
 	            lineSeries.DataPoints.Add(new CategoricalDataPoint(22, "Apr"));
@@ -37,7 +37,7 @@ __SteplineSeries__ plot their Categorical data points on Cartesian Area using on
 
 #### __[VB]__
 
-{{region Initialize}}
+{{source=..\SamplesVB\ChartView\Series\SteplineSeriesForm.vb region=Initialize}}
 	        Dim lineSeries As New SteplineSeries()
 	        lineSeries.DataPoints.Add(New CategoricalDataPoint(20, "Jan"))
 	        lineSeries.DataPoints.Add(New CategoricalDataPoint(22, "Apr"))

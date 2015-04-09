@@ -77,7 +77,7 @@ The example below iterates the GradientStyles enumeration and creates a FillPrim
 
 #### __[C#] Creating a FillPrimitive__
 
-{{region myFillPrimitiveElement}}
+{{source=..\SamplesCS\TPF\Primitives\FillPrimitive1\MyFillPrimitiveElement.cs region=myFillPrimitiveElement}}
 	    public class MyFillPrimitiveElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -121,7 +121,7 @@ The example below iterates the GradientStyles enumeration and creates a FillPrim
 
 #### __[VB.NET] Creating a FillPrimitive__
 
-{{region myFillPrimitiveElement}}
+{{source=..\SamplesVB\TPF\Primitives\FillPrimitive1\MyFillPrimitiveElement.vb region=myFillPrimitiveElement}}
 	Public Class MyFillPrimitiveElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

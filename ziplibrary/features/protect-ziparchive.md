@@ -40,7 +40,7 @@ __Example 1__: Create a password-protected ZIP archive:
 
 #### __[C#] __
 
-{{region stream}}
+{{source=..\SamplesCS\ZipLibrary\ProtectArchive.cs region=stream}}
 	            
 	            using (Stream stream = File.Open("test.zip", FileMode.Create))
 	            {
@@ -63,7 +63,7 @@ __Example 1__: Create a password-protected ZIP archive:
 
 #### __[VB.NET] __
 
-{{region stream}}
+{{source=..\SamplesVB\ZipLibrary\ProtectArchive.vb region=stream}}
 	        Using stream As Stream = File.Open("test.zip", FileMode.Create)
 	            Dim encryptionSettings As New DefaultEncryptionSettings()
 	            encryptionSettings.Password = "password"
@@ -107,7 +107,7 @@ __Example 2__: Open and read a password-protected ZIP archive.
 
 #### __[C#] __
 
-{{region read}}
+{{source=..\SamplesCS\ZipLibrary\ProtectArchive.cs region=read}}
 	                
 	            using (Stream stream = File.Open("test.zip", FileMode.Open))
 	            {
@@ -127,7 +127,7 @@ __Example 2__: Open and read a password-protected ZIP archive.
 
 #### __[VB.NET] __
 
-{{region read}}
+{{source=..\SamplesVB\ZipLibrary\ProtectArchive.vb region=read}}
 	        Using stream As Stream = File.Open("test.zip", FileMode.Open)
 	            Dim encryptionSettings As New DefaultEncryptionSettings()
 	            encryptionSettings.Password = "password"

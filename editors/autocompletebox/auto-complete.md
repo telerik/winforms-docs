@@ -89,7 +89,7 @@ To use auto-completion without specifying a data source, you need to populate
 
 #### __[C#]__
 
-{{region addItems}}
+{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=addItems}}
 	        private void AddAutoCompleteItems()
 	        {
 	            RadListDataItemCollection items = this.radAutoCompleteBox1.AutoCompleteItems;
@@ -116,7 +116,7 @@ To use auto-completion without specifying a data source, you need to populate
 
 #### __[VB.NET]__
 
-{{region addItems}}
+{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=addItems}}
 	    Private Sub AddAutoCompleteItems()
 	        Dim items As RadListDataItemCollection = Me.RadAutoCompleteBox1.AutoCompleteItems
 	

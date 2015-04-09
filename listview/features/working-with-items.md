@@ -25,7 +25,7 @@ Multiple items can be selected in code as well. This can be achieved by using th
 
 #### __[C#] Programmatically select items__
 
-{{region itemSelect}}
+{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=itemSelect}}
 	            ListViewDataItem[] itemsToSlelct = new ListViewDataItem[3];
 	
 	            itemsToSlelct[0] = radListView1.Items[1];
@@ -40,7 +40,7 @@ Multiple items can be selected in code as well. This can be achieved by using th
 
 #### __[VB.NET] Programmatically select items__
 
-{{region itemSelect}}
+{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=itemSelect}}
 	        Dim itemsToSlelct(2) As ListViewDataItem
 	
 	        itemsToSlelct(0) = RadListView1.Items(1)
@@ -62,7 +62,7 @@ In __DetailsView__ this property sets only the __Height__ of the
 
 #### __[C#] Item sizing__
 
-{{region itemSizing}}
+{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=itemSizing}}
 	            radListView1.ItemSize = new Size(0, 50);
 	            radListView1.Columns[0].Width = 50;
 	            radListView1.Columns[1].Width = 75;
@@ -73,7 +73,7 @@ In __DetailsView__ this property sets only the __Height__ of the
 
 #### __[VB.NET] Item sizing__
 
-{{region itemSizing}}
+{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=itemSizing}}
 	        RadListView1.ItemSize = New Drawing.Size(0, 50)
 	        RadListView1.Columns(0).Width = 50
 	        RadListView1.Columns(1).Width = 75
@@ -88,7 +88,7 @@ In __ViewType.ListView__, when __FullRowSelect__ is set to
 
 #### __[C#] Item sizing__
 
-{{region fullRowSelect}}
+{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=fullRowSelect}}
 	            radListView1.FullRowSelect = false;
 	            radListView1.ItemSize = new Size(180, 35);
 	{{endregion}}
@@ -97,7 +97,7 @@ In __ViewType.ListView__, when __FullRowSelect__ is set to
 
 #### __[VB.NET] Item sizing__
 
-{{region fullRowSelect}}
+{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=fullRowSelect}}
 	        RadListView1.FullRowSelect = False
 	        RadListView1.ItemSize = New Drawing.Size(180, 35)
 	{{endregion}}
@@ -112,7 +112,7 @@ There are	two more properties that provide additional customization options for 
 
 #### __[C#] Item sizing__
 
-{{region arbitrarySizes}}
+{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=arbitrarySizes}}
 	            radListView1.ItemSize = new Size(160, 80);
 	            radListView1.AllowArbitraryItemHeight = false;
 	            radListView1.AllowArbitraryItemWidth = false;
@@ -122,7 +122,7 @@ There are	two more properties that provide additional customization options for 
 
 #### __[VB.NET] Item sizing__
 
-{{region arbitrarySizes}}
+{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=arbitrarySizes}}
 	        RadListView1.ItemSize = New Drawing.Size(160, 80)
 	        RadListView1.AllowArbitraryItemHeight = False
 	        RadListView1.AllowArbitraryItemWidth = False

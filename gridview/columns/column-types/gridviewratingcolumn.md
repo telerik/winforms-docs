@@ -22,7 +22,7 @@ The following code snippet demonstrates how to create and add GridViewRatingColu
 
 #### ____
 
-{{region RatingColumn}}
+{{source=..\SamplesCS\GridView\Columns\GridViewRatingColumn1.cs region=RatingColumn}}
 	
 	            GridViewRatingColumn column = new GridViewRatingColumn("Rating Column");
 	            radGridView1.Columns.Add(column);

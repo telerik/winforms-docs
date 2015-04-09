@@ -23,7 +23,7 @@ All property grid editors inherit from __BaseInputEditor__. So, you have to inhe
 
 #### __[C#] Creating custom editor__
 
-{{region CustomEditor}}
+{{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridUsingCustomEditor.cs region=CustomEditor}}
 	    public class PropertyGridTrackBarEditor : BaseInputEditor
 	    {
 	        public override object Value
@@ -82,7 +82,7 @@ All property grid editors inherit from __BaseInputEditor__. So, you have to inhe
 
 #### __[VB.NET] Creating custom editor__
 
-{{region CustomEditor}}
+{{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridUsingCustomEditor.vb region=CustomEditor}}
 	Public Class PropertyGridTrackBarEditor
 	    Inherits BaseInputEditor
 	    Public Overrides Property Value() As Object
@@ -134,7 +134,7 @@ The __EditorRequired__ event is the correct place to replace the default editor:
 
 #### __[C#] Replace editor__
 
-{{region replaceEditor}}
+{{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridUsingCustomEditor.cs region=replaceEditor}}
 	        void radPropertyGrid1_EditorRequired(object sender, PropertyGridEditorRequiredEventArgs e)
 	        {
 	            if (e.EditorType == typeof(PropertyGridSpinEditor))
@@ -149,7 +149,7 @@ The __EditorRequired__ event is the correct place to replace the default editor:
 
 #### __[VB.NET] Replace editor__
 
-{{region replaceEditor}}
+{{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridUsingCustomEditor.vb region=replaceEditor}}
 	    Private Sub radPropertyGrid1_EditorRequired(ByVal sender As Object, ByVal e As PropertyGridEditorRequiredEventArgs)
 	        If e.EditorType Is GetType(PropertyGridSpinEditor) Then
 	            e.EditorType = GetType(PropertyGridTrackBarEditor)

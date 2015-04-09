@@ -28,7 +28,7 @@ The example code below shows a __RightToLeft__ dependency property with the __Af
 
 #### __[C#] Adding metadata__
 
-{{region addingMetadata}}
+{{source=..\SamplesCS\TPF\Layouts\CascadeLayoutPanel.cs region=addingMetadata}}
 	        public static RadProperty RTLProperty = RadProperty.Register(
 	            "RTL", typeof(bool), typeof(BoxLayout), new RadElementPropertyMetadata(
 	            false, ElementPropertyOptions.AffectsLayout | ElementPropertyOptions.InvalidatesLayout));
@@ -38,7 +38,7 @@ The example code below shows a __RightToLeft__ dependency property with the __Af
 
 #### __[VB.NET] Adding metadata__
 
-{{region addingMetadata}}
+{{source=..\SamplesVB\TPF\Layouts\CascadeLayoutPanel.vb region=addingMetadata}}
 	    Public Shared RTLProperty As RadProperty = RadProperty.Register("RTL", GetType(Boolean), GetType(BoxLayout), New RadElementPropertyMetadata(False, ElementPropertyOptions.AffectsLayout Or ElementPropertyOptions.InvalidatesLayout))
 	{{endregion}}
 

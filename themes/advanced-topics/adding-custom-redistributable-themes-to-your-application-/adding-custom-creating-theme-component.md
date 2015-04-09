@@ -30,7 +30,7 @@ This article demonstrates how to isolate a theme in a separate class library pro
 
 #### __[C#] Creating custom theme component__
 
-{{region creatingThemeComponent}}
+{{source=..\SamplesCS\Themes\AdvancedTopics\AddingCustomRedistributableThemesToYourApplication\CustomTheme.cs region=creatingThemeComponent}}
 	    public class CustomTheme : RadThemeComponentBase
 	    {
 	        static bool loaded;
@@ -61,7 +61,7 @@ This article demonstrates how to isolate a theme in a separate class library pro
 
 #### __[VB.NET] Creating custom theme component__
 
-{{region creatingThemeComponent}}
+{{source=..\SamplesVB\Themes\AdvancedTopics\AddingCustomRedistributableThemesToYourApplication\CustomTheme.vb region=creatingThemeComponent}}
 	Public Class CustomTheme
 	    Inherits RadThemeComponentBase
 	

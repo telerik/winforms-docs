@@ -44,7 +44,7 @@ This tutorial will demonstrate adding selected and special days to the calendar 
 
 #### __[C#] Iterating the SelectedDates and SpecialDates collections__
 
-{{region iteratingSpecialSelected}}
+{{source=..\SamplesCS\Calendar\Calendar1.cs region=iteratingSpecialSelected}}
 	        private void radButton1_Click(object sender, EventArgs e)
 	        {
 	            foreach (DateTime dateTime in radCalendar1.SelectedDates)
@@ -64,7 +64,7 @@ This tutorial will demonstrate adding selected and special days to the calendar 
 
 #### __[VB.NET] Iterating the SelectedDates and SpecialDates collections__
 
-{{region iteratingSpecialSelected}}
+{{source=..\SamplesVB\Calendar\Calendar1.vb region=iteratingSpecialSelected}}
 	    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        For Each dateTime As DateTime In RadCalendar1.SelectedDates
 	            RadListControl1.Items.Add(New RadListDataItem("Selected: " + dateTime.ToShortDateString()))

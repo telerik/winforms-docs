@@ -28,7 +28,7 @@ To apply your own logic for sorting, you have to create a class which inherits f
 
 #### __[C#] Creating custom comparer__
 
-{{region CustomSorting3}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\TreeCustomSorting.cs region=CustomSorting3}}
 	    class MyComparer : TreeNodeComparer
 	    {
 	        public MyComparer(RadTreeViewElement treeView)
@@ -53,7 +53,7 @@ To apply your own logic for sorting, you have to create a class which inherits f
 
 #### __[VB.NET] Creating custom comparer__
 
-{{region CustomSorting3}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\TreeCustomSorting.vb region=CustomSorting3}}
 	    Class MyComparer
 	        Inherits TreeNodeComparer
 	        Public Sub New(treeView As RadTreeViewElement)
@@ -79,7 +79,7 @@ Once the comparer is created we have to assign it to the RadTreeView control:
 
 #### __[C#] Assign the custom comparer__
 
-{{region CustomSorting1}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\TreeCustomSorting.cs region=CustomSorting1}}
 	            radTreeView1.TreeViewElement.Comparer = new MyComparer(this.radTreeView1.TreeViewElement);
 	{{endregion}}
 
@@ -87,7 +87,7 @@ Once the comparer is created we have to assign it to the RadTreeView control:
 
 #### __[VB.NET] Assign the custom comparer__
 
-{{region CustomSorting1}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\TreeCustomSorting.vb region=CustomSorting1}}
 	        RadTreeView1.TreeViewElement.Comparer = New MyComparer(Me.RadTreeView1.TreeViewElement)
 	{{endregion}}
 
@@ -102,7 +102,7 @@ That is all that you have to do. To test this scenario, you can add a button and
 
 #### __[C#]__
 
-{{region CustomSorting2}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\TreeCustomSorting.cs region=CustomSorting2}}
 	        private void radButton1_Click(object sender, EventArgs e)
 	        {
 	            if (radTreeView1.SortOrder == SortOrder.None)
@@ -127,7 +127,7 @@ That is all that you have to do. To test this scenario, you can add a button and
 
 #### __[VB.NET]__
 
-{{region CustomSorting2}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\TreeCustomSorting.vb region=CustomSorting2}}
 	    Private Sub RadButton1_Click(sender As System.Object, e As System.EventArgs)
 	        If RadTreeView1.SortOrder = SortOrder.None Then
 	            RadTreeView1.SortOrder = SortOrder.Ascending

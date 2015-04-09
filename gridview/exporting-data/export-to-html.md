@@ -39,7 +39,7 @@ Before running export to HTML, you have to initialize the ExportToHTML class. Th
 
 #### __[C#]  ExportToHTML initialization__
 
-{{region exportToHtmlInitialization}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=exportToHtmlInitialization}}
 	            ExportToHTML exporter = new ExportToHTML(this.radGridView1);
 	{{endregion}}
 
@@ -47,7 +47,7 @@ Before running export to HTML, you have to initialize the ExportToHTML class. Th
 
 #### __[VB.NET]  ExportToHTML initialization__
 
-{{region exportToHtmlInitialization}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=exportToHtmlInitialization}}
 	        Dim exporter As ExportToHTML = New ExportToHTML(Me.RadGridView1)
 	{{endregion}}
 
@@ -58,7 +58,7 @@ __File extension__
 
 #### __[C#]  Setting the file extension__
 
-{{region settingTheFileExtention}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingTheFileExtention}}
 	            exporter.FileExtension = "";
 	{{endregion}}
 
@@ -66,7 +66,7 @@ __File extension__
 
 #### __[VB.NET]  Setting the file extension__
 
-{{region settingTheFileExtention}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingTheFileExtention}}
 	        exporter.FileExtension = ""
 	{{endregion}}
 
@@ -89,7 +89,7 @@ Please note that some browsers do not support hidden columns and if you open exp
 
 #### __[C#]  Setting the HiddenColumnOption__
 
-{{region settingTheHiddenColumnOption}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingTheHiddenColumnOption}}
 	            exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;    
 	{{endregion}}
 
@@ -97,7 +97,7 @@ Please note that some browsers do not support hidden columns and if you open exp
 
 #### __[VB.NET]  Setting the HiddenColumnOption__
 
-{{region settingTheHiddenColumnOption}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingTheHiddenColumnOption}}
 	        exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
 	{{endregion}}
 
@@ -114,7 +114,7 @@ __Columns Width options__
 
 #### __[C#] Setting FitWidthSize__
 
-{{region settingFixedColumnsWidth}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingFixedColumnsWidth}}
 	            exporter.FitWidthSize = 1000;
 	{{endregion}}
 
@@ -122,7 +122,7 @@ __Columns Width options__
 
 #### __[VB.NET] Setting FitWidthSize__
 
-{{region settingFixedColumnsWidth}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingFixedColumnsWidth}}
 	        exporter.FitWidthSize = 1000
 	{{endregion}}
 
@@ -134,7 +134,7 @@ The third option is to set the column widths to be auto calculated depending on 
 
 #### __[C#] Setting AutoSizeColumns__
 
-{{region settingAutoSizeColumns}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingAutoSizeColumns}}
 	            exporter.AutoSizeColumns = true;
 	{{endregion}}
 
@@ -142,7 +142,7 @@ The third option is to set the column widths to be auto calculated depending on 
 
 #### __[VB.NET] Setting AutoSizeColumns__
 
-{{region settingAutoSizeColumns}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingAutoSizeColumns}}
 	        exporter.AutoSizeColumns = True
 	{{endregion}}
 
@@ -171,7 +171,7 @@ Using the ExportToHTML class allows you to export the visual settings (themes) t
 
 #### __[C#]  Setting ExportVisualSettings__
 
-{{region settingExportVisualSettings}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingExportVisualSettings}}
 	            exporter.ExportVisualSettings = true;
 	{{endregion}}
 
@@ -179,7 +179,7 @@ Using the ExportToHTML class allows you to export the visual settings (themes) t
 
 #### __[VB.NET]  Setting ExportVisualSettings__
 
-{{region settingExportVisualSettings}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingExportVisualSettings}}
 	        exporter.ExportVisualSettings = True
 	{{endregion}}
 
@@ -191,7 +191,7 @@ __HTML Table Caption__
 
 #### __[C#]  Setting the SheetName__
 
-{{region settingTheSheetName}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingTheSheetName}}
 	            exporter.TableCaption = "Table";
 	{{endregion}}
 
@@ -199,7 +199,7 @@ __HTML Table Caption__
 
 #### __[VB.NET]  Setting the SheetName__
 
-{{region settingTheSheetName}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingTheSheetName}}
 	        exporter.TableCaption = "Table"
 	{{endregion}}
 
@@ -220,7 +220,7 @@ __Summaries export option__
 
 #### __[C#]  Setting the SummariesExportOption__
 
-{{region settingSummariesExportOptions}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingSummariesExportOptions}}
 	            exporter.SummariesExportOption = SummariesOption.DoNotExport;
 	{{endregion}}
 
@@ -228,7 +228,7 @@ __Summaries export option__
 
 #### __[VB.NET]  Setting the SummariesExportOption__
 
-{{region settingSummariesExportOptions}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingSummariesExportOptions}}
 	        exporter.SummariesExportOption = SummariesOption.DoNotExport
 	{{endregion}}
 
@@ -244,7 +244,7 @@ Consider the code sample below:
 
 #### __[C#]  Export to HTML format__
 
-{{region exportToHtmlFormat}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=exportToHtmlFormat}}
 	            string fileName = "c:\\ExportedData.htm";
 	            exporter.RunExport(fileName);
 	{{endregion}}
@@ -253,7 +253,7 @@ Consider the code sample below:
 
 #### __[VB.NET]  Export to HTML format__
 
-{{region exportToHtmlFormat}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=exportToHtmlFormat}}
 	        Dim fileName As String = "c:\\ExportedData.htm"
 	        exporter.RunExport(fileName)
 	{{endregion}}
@@ -271,7 +271,7 @@ __HTMLCellFormating event__
 
 #### __[C#]  Handling the HTMLCellFormatting event__
 
-{{region handlingHtmlCellFormattingEvent}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=handlingHtmlCellFormattingEvent}}
 	        void exporter_HTMLCellFormatting(object sender, Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs e)
 	        {
 	            if (e.GridColumnIndex == 1 && e.GridRowInfoType == typeof(GridViewDataRowInfo))
@@ -286,7 +286,7 @@ __HTMLCellFormating event__
 
 #### __[VB.NET]  Handling the HTMLCellFormatting event__
 
-{{region handlingHtmlCellFormattingEvent}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=handlingHtmlCellFormattingEvent}}
 	    Private Sub exporter_HTMLCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs)
 	        If e.GridColumnIndex = 1 AndAlso e.GridRowInfoType.Equals(GetType(GridViewDataRowInfo)) Then
 	            e.HTMLCellElement.Value = "Test value"
@@ -302,7 +302,7 @@ __HTMLTableCaptionFormatting event__
 
 #### __[C#]  Handling the HTMLTableCaptionFormatting event__
 
-{{region handlingHtmlTableCaptionFormattingEvent}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=handlingHtmlTableCaptionFormattingEvent}}
 	        void exporter_HTMLTableCaptionFormatting(object sender, Telerik.WinControls.UI.Export.HTML.HTMLTableCaptionFormattingEventArgs e)
 	        {
 	            e.TableCaptionElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Red));
@@ -317,7 +317,7 @@ __HTMLTableCaptionFormatting event__
 
 #### __[VB.NET]  Handling the HTMLTableCaptionFormatting event__
 
-{{region handlingHtmlTableCaptionFormattingEvent}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=handlingHtmlTableCaptionFormattingEvent}}
 	    Private Sub exporter_HTMLTableCaptionFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.HTML.HTMLTableCaptionFormattingEventArgs)
 	        e.TableCaptionElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Red))
 	        e.TableCaptionElement.Styles.Add("font-size", "200%")

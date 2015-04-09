@@ -81,7 +81,7 @@ Here are some examples on how to export and import.
 
 #### __[C#] __
 
-{{region xaml}}
+{{source=..\SamplesCS\RichTextEditor\ImportExport\ImportExportMain.cs region=xaml}}
 	        public string ExportToXAML(RadDocument document)
 	        {
 	            XamlFormatProvider provider = new XamlFormatProvider();
@@ -93,7 +93,7 @@ Here are some examples on how to export and import.
 
 #### __[VB.NET] __
 
-{{region xaml}}
+{{source=..\SamplesVB\RichTextEditor\ImportExport\ImportExportMain.vb region=xaml}}
 	    Public Function ExportToXAML(ByVal document As RadDocument) As String
 	        Dim provider As New XamlFormatProvider()
 	        Return provider.Export(document)
@@ -146,7 +146,7 @@ Here are some examples on how to export and import.
 
 #### __[C#] __
 
-{{region docx}}
+{{source=..\SamplesCS\RichTextEditor\ImportExport\ImportExportMain.cs region=docx}}
 	        public void ExportToDocx(RadDocument document)
 	        {
 	            DocxFormatProvider provider = new DocxFormatProvider();
@@ -169,7 +169,7 @@ Here are some examples on how to export and import.
 
 #### __[VB.NET] __
 
-{{region docx}}
+{{source=..\SamplesVB\RichTextEditor\ImportExport\ImportExportMain.vb region=docx}}
 	    Public Sub ExportToDocx(ByVal document As RadDocument)
 	        Dim provider As New DocxFormatProvider()
 	        Dim saveDialog As New SaveFileDialog()
@@ -216,7 +216,7 @@ Here are some examples on how to export and import.
 
 #### __[C#] __
 
-{{region importXAML}}
+{{source=..\SamplesCS\RichTextEditor\ImportExport\ImportExportMain.cs region=importXAML}}
 	        public RadDocument ImportXaml(string content)
 	        {
 	            XamlFormatProvider provider = new XamlFormatProvider();
@@ -228,7 +228,7 @@ Here are some examples on how to export and import.
 
 #### __[VB.NET] __
 
-{{region importXAML}}
+{{source=..\SamplesVB\RichTextEditor\ImportExport\ImportExportMain.vb region=importXAML}}
 	    Public Function ImportXaml(ByVal content As String) As RadDocument
 	        Dim provider As New XamlFormatProvider()
 	        Return provider.Import(content)
@@ -259,7 +259,7 @@ Here are some examples on how to export and import.
 
 #### __[C#] __
 
-{{region importDocx}}
+{{source=..\SamplesCS\RichTextEditor\ImportExport\ImportExportMain.cs region=importDocx}}
 	        public RadDocument ImportDocx()
 	        {
 	            RadDocument document = null;
@@ -283,7 +283,7 @@ Here are some examples on how to export and import.
 
 #### __[VB.NET] __
 
-{{region importDocx}}
+{{source=..\SamplesVB\RichTextEditor\ImportExport\ImportExportMain.vb region=importDocx}}
 	    Public Function ImportDocx() As RadDocument
 	        Dim document As RadDocument = Nothing
 	        Dim provider As IDocumentFormatProvider = New DocxFormatProvider()

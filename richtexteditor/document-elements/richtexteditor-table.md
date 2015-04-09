@@ -39,7 +39,7 @@ Here is an example done in the code-behind.
 
 #### __[C#] __
 
-{{region add}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\TableCode.cs region=add}}
 	            
 	            RadDocument document = new RadDocument();
 	            Section section = new Section();
@@ -91,7 +91,7 @@ Here is an example done in the code-behind.
 
 #### __[VB.NET] __
 
-{{region add}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\TableCode.vb region=add}}
 	
 	        Dim document As New RadDocument()
 	        Dim section As New Section()

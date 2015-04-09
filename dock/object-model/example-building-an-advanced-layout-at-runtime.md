@@ -30,7 +30,7 @@ So, let's start building the layout:
 
 #### __[C#] Docking two ToolWindows__
 
-{{region dockingTwoToolWindows}}
+{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=dockingTwoToolWindows}}
 	            ToolWindow window1 = new ToolWindow();
 	            window1.Name = "window1";
 	            this.radDock1.DockWindow(window1, DockPosition.Left);
@@ -43,7 +43,7 @@ So, let's start building the layout:
 
 #### __[VB.NET] Docking two ToolWindows__
 
-{{region dockingTwoToolWindows}}
+{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=dockingTwoToolWindows}}
 	        Dim window1 As ToolWindow = New ToolWindow()
 	        window1.Name = "window1"
 	        Me.RadDock1.DockWindow(window1, DockPosition.Left)
@@ -58,7 +58,7 @@ So, let's start building the layout:
 
 #### __[C#] Setting relative size__
 
-{{region settingRelativeSize}}
+{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=settingRelativeSize}}
 	            window2.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Relative;
 	            window2.TabStrip.SizeInfo.RelativeRatio = new SizeF(0, 0.33f);
 	{{endregion}}
@@ -67,7 +67,7 @@ So, let's start building the layout:
 
 #### __[VB.NET] Setting relative size__
 
-{{region settingRelativeSize}}
+{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=settingRelativeSize}}
 	        window2.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Relative
 	        window2.TabStrip.SizeInfo.RelativeRatio = New System.Drawing.SizeF(0, 0.33F)
 	{{endregion}}
@@ -84,7 +84,7 @@ Now if we decide to resize the form, the ration of the TabStrips' Height will be
 
 #### __[C#] Setting absolute size__
 
-{{region settingAbsoliteSize}}
+{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=settingAbsoliteSize}}
 	            ToolWindow window3 = new ToolWindow();
 	            window3.Name = "window3";
 	            this.radDock1.DockWindow(window3, DockPosition.Bottom);
@@ -99,7 +99,7 @@ Now if we decide to resize the form, the ration of the TabStrips' Height will be
 
 #### __[VB.NET] Setting absolute size__
 
-{{region settingAbsoliteSize}}
+{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=settingAbsoliteSize}}
 	        Dim window3 As ToolWindow = New ToolWindow()
 	        window3.Name = "window3"
 	        Me.RadDock1.DockWindow(window3, DockPosition.Bottom)
@@ -118,7 +118,7 @@ This time we set to Width of the window4's TabStrip to an absolute value of 150 
 
 #### __[C#] Floating ToolWindows__
 
-{{region floatingWindows}}
+{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=floatingWindows}}
 	            ToolWindow window5 = new ToolWindow();
 	            window5.Name = "window5";
 	            this.radDock1.FloatWindow(window5, new Rectangle(250, 250, 300, 150));
@@ -131,7 +131,7 @@ This time we set to Width of the window4's TabStrip to an absolute value of 150 
 
 #### __[VB.NET] Floating ToolWindows__
 
-{{region floatingWindows}}
+{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=floatingWindows}}
 	        Dim window5 As ToolWindow = New ToolWindow()
 	        window5.Name = "window5"
 	        Me.RadDock1.FloatWindow(window5, New Rectangle(250, 250, 300, 150))
@@ -148,7 +148,7 @@ This time we set to Width of the window4's TabStrip to an absolute value of 150 
 
 #### __[C#] Setting the AutoHidePosition and AutoHideSize properties__
 
-{{region autoHide}}
+{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=autoHide}}
 	            ToolWindow window7 = new ToolWindow();
 	            window7.Name = "window7";
 	            window7.AutoHideSize = new Size(100, 100);
@@ -160,7 +160,7 @@ This time we set to Width of the window4's TabStrip to an absolute value of 150 
 
 #### __[VB.NET] Setting the AutoHidePosition and AutoHideSize properties__
 
-{{region autoHide}}
+{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=autoHide}}
 	        Dim window7 As ToolWindow = New ToolWindow()
 	        window7.Name = "window7"
 	        window7.AutoHideSize = New Drawing.Size(100, 100)
@@ -180,7 +180,7 @@ If the user clicks the 'pin' button of window7, window7 will become auto-hidden 
 
 #### __[C#] Adding DocumentWindows__
 
-{{region addingDocumentWindows}}
+{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=addingDocumentWindows}}
 	            DocumentWindow document1 = new DocumentWindow();
 	            document1.Name = "document1";
 	            this.radDock1.AddDocument(document1);
@@ -193,7 +193,7 @@ If the user clicks the 'pin' button of window7, window7 will become auto-hidden 
 
 #### __[VB.NET] Adding DocumentWindows__
 
-{{region addingDocumentWindows}}
+{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=addingDocumentWindows}}
 	        Dim document1 As DocumentWindow = New DocumentWindow()
 	        document1.Name = "document1"
 	        Me.RadDock1.AddDocument(document1)
@@ -208,7 +208,7 @@ However, you may not want to have any documents. In this can set the __MainDocum
 
 #### __[C#] Hiding the main DocumentContainer__
 
-{{region dockContainerVisible}}
+{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=dockContainerVisible}}
 	            this.radDock1.MainDocumentContainerVisible = false;
 	{{endregion}}
 
@@ -216,7 +216,7 @@ However, you may not want to have any documents. In this can set the __MainDocum
 
 #### __[VB.NET] Hiding the main DocumentContainer__
 
-{{region dockContainerVisible}}
+{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=dockContainerVisible}}
 	        Me.RadDock1.MainDocumentContainerVisible = False
 	{{endregion}}
 

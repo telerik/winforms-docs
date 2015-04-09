@@ -18,7 +18,7 @@ In cases where you have a treeview with many nodes and limited space on the fo
 
 #### __[C#]__
 
-{{region bringIntoView}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=bringIntoView}}
 	            RadTreeNode lastRootNode = radTreeView1.Nodes[radTreeView1.Nodes.Count - 1];
 	            radTreeView1.BringIntoView(lastRootNode.Nodes[lastRootNode.Nodes.Count - 1]);
 	{{endregion}}
@@ -27,7 +27,7 @@ In cases where you have a treeview with many nodes and limited space on the fo
 
 #### __[VB.NET]__
 
-{{region bringIntoView}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=bringIntoView}}
 	        Dim lastRootNode As RadTreeNode = RadTreeView1.Nodes(RadTreeView1.Nodes.Count - 1)
 	        RadTreeView1.BringIntoView(lastRootNode.Nodes(lastRootNode.Nodes.Count - 1))
 	        '#End Region

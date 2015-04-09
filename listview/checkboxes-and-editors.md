@@ -56,7 +56,7 @@ The sample code below shows how to start editing using the API:
 
 #### __[C#] Start editing__
 
-{{region startEdit}}
+{{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=startEdit}}
 	            radListView1.AllowEdit = true;
 	            // set the SelectedItem - this item will be edited  
 	            // in DetailsView you might also want to set the CurrentColumn property – the value of the selected item in this column will be edited in DetailsView
@@ -70,7 +70,7 @@ The sample code below shows how to start editing using the API:
 
 #### __[VB.NET] Start editing__
 
-{{region startEdit}}
+{{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=startEdit}}
 	        RadListView1.AllowEdit = True
 	        ' set the SelectedItem - this node will be edited  
 	        ' in DetailsView you might also want to set the CurrentColumn property – the value of the selected item in this column will be edited in DetailsView
@@ -130,7 +130,7 @@ The Following example demonstrates the usage of __ItemValidating__ event to edit
 
 #### __[C#] Validation__
 
-{{region ItemValidating}}
+{{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=ItemValidating}}
 	        void radListView1_ItemValidating(object sender, ListViewItemValidatingEventArgs e)
 	        {
 	            int newInt = 0;
@@ -154,7 +154,7 @@ The Following example demonstrates the usage of __ItemValidating__ event to edit
 
 #### __[VB.NET] Validation__
 
-{{region ItemValidating}}
+{{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=ItemValidating}}
 	    Private Sub radListView1_ItemValidating(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ListViewItemValidatingEventArgs) Handles RadListView1.ItemValidating
 	        Dim newInt As Integer = 0
 	        If Integer.TryParse(Convert.ToString(e.NewValue), newInt) Then
@@ -184,7 +184,7 @@ The following example shows how you can use the predefined editors:
 
 #### __[C#] Start editing__
 
-{{region usePredefinedEditors}}
+{{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=usePredefinedEditors}}
 	        void radListView1_EditorRequired(object sender, Telerik.WinControls.UI.ListViewItemEditorRequiredEventArgs e)
 	        {
 	            if (e.ListViewElement.CurrentColumn.FieldName == "CustomerName")
@@ -215,7 +215,7 @@ The following example shows how you can use the predefined editors:
 
 #### __[VB.NET] Start editing__
 
-{{region usePredefinedEditors}}
+{{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=usePredefinedEditors}}
 	    Private Sub radListView1_EditorRequired(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ListViewItemEditorRequiredEventArgs)
 	        If e.ListViewElement.CurrentColumn.FieldName = "CustomerName" Then
 	            e.EditorType = GetType(ListViewTextBoxEditor)

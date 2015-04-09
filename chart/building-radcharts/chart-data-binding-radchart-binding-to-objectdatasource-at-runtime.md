@@ -29,7 +29,7 @@ The code below demonstrates binding to an [ObjectDataSource](http://msdn2.micros
 
 #### __[C#] Binding to ObjectDataSource__
 
-{{region BindingToObjectDataSource}}
+{{source=..\SamplesCS\Chart\BindingToObjectDataSourceAtRunTime.cs region=BindingToObjectDataSource}}
 	            ObjectDataSource ods = new ObjectDataSource();
 	            ods.SelectMethod = "GetProducts";
 	            ods.TypeName = "RadChartBinding.ProductsBO";
@@ -45,7 +45,7 @@ The code below demonstrates binding to an [ObjectDataSource](http://msdn2.micros
 
 #### __[VB] Binding to ObjectDataSource__
 
-{{region BindingToObjectDataSource}}
+{{source=..\SamplesVB\Chart\BindingToObjectDataSourceAtRunTime.vb region=BindingToObjectDataSource}}
 	        Dim ods As New ObjectDataSource()
 	        ods.SelectMethod = "GetProducts"
 	        ods.TypeName = "RadChartBinding.ProductsBO"

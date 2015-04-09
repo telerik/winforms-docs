@@ -22,7 +22,7 @@ With the editor attribute you can specify __UITypeEditor__ as well as __BaseInpu
 
 #### __[C#]__
 
-{{region EditorAttribute}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=EditorAttribute}}
 	        [Editor(typeof(PropertyGridBrowseEditor), typeof(BaseInputEditor))] 
 	        public string FileLocation { get; set; }
 	{{endregion}}
@@ -31,7 +31,7 @@ With the editor attribute you can specify __UITypeEditor__ as well as __BaseInpu
 
 #### __[VB.NET]__
 
-{{region EditorAttribute}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=EditorAttribute}}
 	    <Editor(GetType(PropertyGridBrowseEditor), GetType(BaseInputEditor))> _
 	    Public Property FileLocation() As String
 	        Get
@@ -236,7 +236,7 @@ The range attribute allows you to set a minimum and maximum value to be used for
 
 #### __[C#]__
 
-{{region RadRangeAttribute}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=RadRangeAttribute}}
 	        [RadRange(1, 5)]
 	        public byte DoorsCount { get; set; }
 	{{endregion}}
@@ -245,7 +245,7 @@ The range attribute allows you to set a minimum and maximum value to be used for
 
 #### __[VB.NET]__
 
-{{region RadRangeAttribute}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=RadRangeAttribute}}
 	    <RadRange(1, 5)> _
 	    Public Property DoorsCount() As Byte
 	        Get
@@ -435,7 +435,7 @@ Determines whether the property will be included in the collection of properties
 
 #### __[C#]__
 
-{{region BrowsableAttribute}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=BrowsableAttribute}}
 	        [Browsable(false)]
 	        public int MyHiddenProperty { get; set; }
 	        public int MyBrowsableProperty { get; set; }
@@ -445,7 +445,7 @@ Determines whether the property will be included in the collection of properties
 
 #### __[VB.NET]__
 
-{{region BrowsableAttribute}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=BrowsableAttribute}}
 	    <Browsable(False)> _
 	    Public Property MyHiddenProperty() As Integer
 	        Get
@@ -620,7 +620,7 @@ Determines whether a property can be edited in RadPropertyGrid or not.
 
 #### __[C#]__
 
-{{region ReadOnlyAttribute}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=ReadOnlyAttribute}}
 	        [ReadOnly(true)]
 	        public int Count { get; set; }
 	{{endregion}}
@@ -629,7 +629,7 @@ Determines whether a property can be edited in RadPropertyGrid or not.
 
 #### __[VB.NET]__
 
-{{region ReadOnlyAttribute}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=ReadOnlyAttribute}}
 	    <[ReadOnly](True)> _
 	    Public Property Count() As Integer
 	        Get
@@ -780,7 +780,7 @@ Determines the text that will be show for a given property. You can also alter t
 
 #### __[C#]__
 
-{{region DisplayNameAttribute}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=DisplayNameAttribute}}
 	        [DisplayName("PropertyNameInGerman")]
 	        public double PropertyName { get; set; }
 	{{endregion}}
@@ -789,7 +789,7 @@ Determines the text that will be show for a given property. You can also alter t
 
 #### __[VB.NET]__
 
-{{region DisplayNameAttribute}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=DisplayNameAttribute}}
 	    <DisplayName("PropertyNameInGerman")> _
 	    Public Property PropertyName() As Double
 	        Get
@@ -925,7 +925,7 @@ Defines the text that is displayed for a given property in the help bar of RadPr
 
 #### __[C#]__
 
-{{region DescriptionAttribute}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=DescriptionAttribute}}
 	        [Description("The manufacturer of the item")] 
 	        public string Manufacturer { get; set; }
 	{{endregion}}
@@ -934,7 +934,7 @@ Defines the text that is displayed for a given property in the help bar of RadPr
 
 #### __[VB.NET]__
 
-{{region DescriptionAttribute}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=DescriptionAttribute}}
 	    <Description("The manufacturer of the item")> _
 	    Public Property Manufacturer() As String
 	        Get
@@ -1055,7 +1055,7 @@ Determines whether a text property will be edited as a password.
 
 #### __[C#]__
 
-{{region PasswordPropertyTextAttribute}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=PasswordPropertyTextAttribute}}
 	        public string Username { get; set; }
 	        [PasswordPropertyText(true)]
 	        public string Password { get; set; }
@@ -1065,7 +1065,7 @@ Determines whether a text property will be edited as a password.
 
 #### __[VB.NET]__
 
-{{region PasswordPropertyTextAttribute}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=PasswordPropertyTextAttribute}}
 	    Public Property Username() As String
 	        Get
 	            Return m_Username
@@ -1172,7 +1172,7 @@ Defines the default value to which the property will reset. When the property va
 
 #### __[C#]__
 
-{{region DefaultValueAttribute}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=DefaultValueAttribute}}
 	        [DefaultValue(1.35)]
 	        public double Length { get; set; }
 	{{endregion}}
@@ -1181,7 +1181,7 @@ Defines the default value to which the property will reset. When the property va
 
 #### __[VB.NET]__
 
-{{region DefaultValueAttribute}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=DefaultValueAttribute}}
 	    <DefaultValue(1.35)> _
 	    Public Property Length() As Decimal
 	        Get
@@ -1264,7 +1264,7 @@ Defines the category to which the property will be grouped when properties are s
 
 #### __[C#]__
 
-{{region CategoryAttribute}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=CategoryAttribute}}
 	        [Category("CategoryName")]
 	        public string CategorizedProperty { get; set; }
 	        public string UncategorizedProperty { get; set; }
@@ -1274,7 +1274,7 @@ Defines the category to which the property will be grouped when properties are s
 
 #### __[VB.NET]__
 
-{{region CategoryAttribute}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=CategoryAttribute}}
 	    <Category("CategoryName")> _
 	    Public Property CategorizedProperty() As String
 	        Get
@@ -1343,7 +1343,7 @@ Defines the order in which items would be ordered when no other ordering is appl
 
 #### __[C#]__
 
-{{region RadSortOrderAttribute}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=RadSortOrderAttribute}}
 	        [RadSortOrder(2)]
 	        public string AProperty { get; set; }
 	        [RadSortOrder(1)]
@@ -1356,7 +1356,7 @@ Defines the order in which items would be ordered when no other ordering is appl
 
 #### __[VB.NET]__
 
-{{region RadSortOrderAttribute}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=RadSortOrderAttribute}}
 	    <RadSortOrder(2)> _
 	    Public Property AProperty() As String
 	        Get

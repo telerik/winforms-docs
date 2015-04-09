@@ -36,7 +36,7 @@ The __Spans__can be used only in the context of the
 
 #### __C#__
 
-{{region UseSpans}}
+{{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxSpan.cs region=UseSpans}}
 	            Section section = new Section();
 	            Paragraph paragraph = new Paragraph();
 	            Span span = new Span("Span declared in code-behind");
@@ -49,7 +49,7 @@ The __Spans__can be used only in the context of the
 
 #### __VB.NET__
 
-{{region UseSpans}}
+{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxSpan.vb region=UseSpans}}
 	        Dim section As New Section()
 	        Dim paragraph As New Paragraph()
 	        Dim span As New Span("Span declared in code-behind")
@@ -67,7 +67,7 @@ To specify the text in the __Span__ you can use its __Text__ property.
 
 #### __C#__
 
-{{region AddTextToSpan}}
+{{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxSpan.cs region=AddTextToSpan}}
 	            Span mySpan = new Span();
 	            mySpan.Text = "Thank you for choosing Telerik RadRichTextBox!";
 	{{endregion}}
@@ -76,7 +76,7 @@ To specify the text in the __Span__ you can use its __Text__ property.
 
 #### __VB.NET__
 
-{{region AddTextToSpan}}
+{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxSpan.vb region=AddTextToSpan}}
 	        Dim mySpan As New Span()
 	        mySpan.Text = "Thank you for choosing Telerik RadRichTextBox!"
 	{{endregion}}

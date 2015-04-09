@@ -35,7 +35,7 @@ The example creates an ObservableCollection of Person, initializes the collectio
 
 #### __[C#] Creating sample class __
 
-{{region SampleClass}}
+{{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=SampleClass}}
 	    public class Person
 	    {
 	        public string FirstName { get; set; }
@@ -57,7 +57,7 @@ The example creates an ObservableCollection of Person, initializes the collectio
 
 #### __[VB.NET] Creating sample class__
 
-{{region SampleClass}}
+{{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=SampleClass}}
 	Public Class Person
 	    Public Property FirstName() As String
 	        Get
@@ -104,7 +104,7 @@ The example creates an ObservableCollection of Person, initializes the collectio
 
 #### __[C#] Defining the collection__
 
-{{region Collection}}
+{{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Collection}}
 	        private  System.Collections.ObjectModel.ObservableCollection<Person> people = new  System.Collections.ObjectModel.ObservableCollection<Person>();
 	
 	        private void IntilalizeCollection()
@@ -121,7 +121,7 @@ The example creates an ObservableCollection of Person, initializes the collectio
 
 #### __[VB.NET] Defining the collection__
 
-{{region Collection}}
+{{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Collection}}
 	    Private people As New System.Collections.ObjectModel.ObservableCollection(Of Person)()
 	
 	    Private Sub IntilalizeCollection()
@@ -140,7 +140,7 @@ The example creates an ObservableCollection of Person, initializes the collectio
 
 #### __[C#] Add new record to the collection__
 
-{{region Add}}
+{{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Add}}
 	        private void Add_Click(object sender, EventArgs e)
 	        {
 	            people.Add(new Person("Damion", "Dagley", 51));
@@ -151,7 +151,7 @@ The example creates an ObservableCollection of Person, initializes the collectio
 
 #### __[VB.NET] Add new record to the collection__
 
-{{region Add}}
+{{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Add}}
 	    Private Sub Add_Click(sender As Object, e As EventArgs)
 	        people.Add(New Person("Damion", "Dagley", 51))
 	    End Sub
@@ -161,7 +161,7 @@ The example creates an ObservableCollection of Person, initializes the collectio
 
 #### __[C#] Remove a record from the collection__
 
-{{region Remove}}
+{{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Remove}}
 	        private void Remove_Click(object sender, EventArgs e)
 	        {
 	            if (people.Count > 0)
@@ -175,7 +175,7 @@ The example creates an ObservableCollection of Person, initializes the collectio
 
 #### __[VB.NET] Remove a record from the collection__
 
-{{region Remove}}
+{{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Remove}}
 	    Private Sub Remove_Click(sender As Object, e As EventArgs)
 	        If people.Count > 0 Then
 	            people.RemoveAt(0)
@@ -187,7 +187,7 @@ The example creates an ObservableCollection of Person, initializes the collectio
 
 #### __[C#] Change a record position__
 
-{{region Move}}
+{{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Move}}
 	        private void Move_Click(object sender, EventArgs e)
 	        {
 	            people.Move(people.Count - 1, 0);
@@ -198,7 +198,7 @@ The example creates an ObservableCollection of Person, initializes the collectio
 
 #### __[VB.NET] Change a record position__
 
-{{region Move}}
+{{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Move}}
 	    Private Sub Move_Click(sender As Object, e As EventArgs)
 	        people.Move(people.Count - 1, 0)
 	    End Sub
@@ -211,7 +211,7 @@ The example creates an ObservableCollection of Person, initializes the collectio
 
 #### __[C#] Binding to the collection__
 
-{{region Binding}}
+{{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Binding}}
 	        private void BindingToObservableCollection_Load(object sender, EventArgs e)
 	        {
 	            IntilalizeCollection();
@@ -223,7 +223,7 @@ The example creates an ObservableCollection of Person, initializes the collectio
 
 #### __[VB.NET] Binding to the collection__
 
-{{region Binding}}
+{{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Binding}}
 	    Private Sub BindingToObservableCollection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 	        IntilalizeCollection()
 	        Me.radGridView1.DataSource = people

@@ -23,7 +23,7 @@ Here is how you can make the middle columns three times bigger:
 
 #### __[C#]__
 
-{{region DayView}}
+{{source=..\SamplesCS\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.cs region=DayView}}
 	            scheduler.ActiveViewType = SchedulerViewType.Day; // this can be changed to either Week or WorkWeek, the ViewElement is always SchedulerDayViewElement
 	            (scheduler.ViewElement as SchedulerDayViewElement).SetColumnWidth(1, 3);
 	{{endregion}}
@@ -32,7 +32,7 @@ Here is how you can make the middle columns three times bigger:
 
 #### __[VB.NET]__
 
-{{region DayView}}
+{{source=..\SamplesVB\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.vb region=DayView}}
 	        scheduler.ActiveViewType = SchedulerViewType.Day
 	        ' this can be changed to either Week or WorkWeek, the ViewElement is always SchedulerDayViewElement
 	        TryCast(scheduler.ViewElement, SchedulerDayViewElement).SetColumnWidth(1, 3)
@@ -53,7 +53,7 @@ The approach for this view is similar:
 
 #### __[C#]__
 
-{{region MonthView}}
+{{source=..\SamplesCS\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.cs region=MonthView}}
 	            scheduler.ActiveViewType = SchedulerViewType.Month;
 	            (scheduler.ViewElement as SchedulerMonthViewElement).SetColumnWidth(1, 2.5f);
 	            (scheduler.ViewElement as SchedulerMonthViewElement).SetRowHeight(1, 2.5f);
@@ -63,7 +63,7 @@ The approach for this view is similar:
 
 #### __[VB.NET]__
 
-{{region MonthView}}
+{{source=..\SamplesVB\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.vb region=MonthView}}
 	        scheduler.ActiveViewType = SchedulerViewType.Month
 	        TryCast(scheduler.ViewElement, SchedulerMonthViewElement).SetColumnWidth(1, 2.5F)
 	        TryCast(scheduler.ViewElement, SchedulerMonthViewElement).SetRowHeight(1, 2.5F)
@@ -78,7 +78,7 @@ Here we see the columns named as 19-25 may. The same approach can be applied her
 
 #### __[C#]__
 
-{{region TimelineView}}
+{{source=..\SamplesCS\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.cs region=TimelineView}}
 	            scheduler.ActiveViewType = SchedulerViewType.Timeline;
 	            (scheduler.ViewElement as SchedulerTimelineViewElement).SetColumnWidth(1, 3f);
 	{{endregion}}
@@ -87,7 +87,7 @@ Here we see the columns named as 19-25 may. The same approach can be applied her
 
 #### __[VB.NET]__
 
-{{region TimelineView}}
+{{source=..\SamplesVB\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.vb region=TimelineView}}
 	        scheduler.ActiveViewType = SchedulerViewType.Timeline
 	        TryCast(scheduler.ViewElement, SchedulerTimelineViewElement).SetColumnWidth(1, 3.0F)
 	{{endregion}}
@@ -101,7 +101,7 @@ Here we see the resources - *"Conference Room 112/113"*. Resizing them can happe
 
 #### __[C#]__
 
-{{region ResourceView}}
+{{source=..\SamplesCS\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.cs region=ResourceView}}
 	            scheduler.GroupType = GroupType.Resource;
 	            scheduler.ActiveViewType = SchedulerViewType.Day;
 	            (scheduler.ViewElement as SchedulerDayViewGroupedByResourceElement).SetResourceSize(0, 0.25f);
@@ -111,7 +111,7 @@ Here we see the resources - *"Conference Room 112/113"*. Resizing them can happe
 
 #### __[VB.NET]__
 
-{{region ResourceView}}
+{{source=..\SamplesVB\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.vb region=ResourceView}}
 	        scheduler.GroupType = GroupType.Resource
 	        scheduler.ActiveViewType = SchedulerViewType.Day
 	        TryCast(scheduler.ViewElement, SchedulerDayViewGroupedByResourceElement).SetResourceSize(0, 0.25F)

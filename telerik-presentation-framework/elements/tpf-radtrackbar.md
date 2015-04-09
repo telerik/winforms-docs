@@ -18,7 +18,7 @@ RadTrackBarElement contains the logic and user interface for RadTrackBar. ![tpf-
 
 #### __[C#]__
 
-{{region myTrackBarControl}}
+{{source=..\SamplesCS\TPF\Elements\MyTrackBarControl.cs region=myTrackBarControl}}
 	    public class MyTrackBarControl : RadControl
 	    {
 	        protected override void CreateChildItems(RadElement parent)
@@ -41,7 +41,7 @@ RadTrackBarElement contains the logic and user interface for RadTrackBar. ![tpf-
 
 #### __[VB.NET]__
 
-{{region myTrackBarControl}}
+{{source=..\SamplesVB\TPF\Elements\MyTrackBarControl.vb region=myTrackBarControl}}
 	Public Class MyTrackBarControl
 	    Inherits RadControl
 	    Protected Overrides Sub CreateChildItems(ByVal parent As RadElement)

@@ -27,7 +27,7 @@ The following example demonstrates how to create a top
 
 #### __[C#]__
 
-{{region addingSummaryRow}}
+{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=addingSummaryRow}}
 	            GridViewSummaryItem summaryItem = new GridViewSummaryItem();
 	            summaryItem.Name = "ShipName";
 	            summaryItem.Aggregate = GridAggregateFunction.Count;
@@ -43,7 +43,7 @@ The following example demonstrates how to create a top
 
 #### __[VB.NET]__
 
-{{region addingSummaryRow}}
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=addingSummaryRow}}
 	        Dim summaryItem As New GridViewSummaryItem()
 	        summaryItem.Name = "ShipName"
 	        summaryItem.Aggregate = GridAggregateFunction.Count
@@ -198,7 +198,7 @@ The following example demonstrates how to add several summary
 
 #### __[C#]__
 
-{{region formatString}}
+{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=formatString}}
 	            GridViewSummaryItem summaryItemShipName = new GridViewSummaryItem("ShipName", "{0}", GridAggregateFunction.Last);
 	            GridViewSummaryItem summaryItemFreight = new GridViewSummaryItem("Freight", "Max Freight = {0}", GridAggregateFunction.Max);
 	
@@ -212,7 +212,7 @@ The following example demonstrates how to add several summary
 
 #### __[VB.NET]__
 
-{{region formatString}}
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=formatString}}
 	        Dim summaryItemShipName As New GridViewSummaryItem("ShipName", "{0}", GridAggregateFunction.Last)
 	        Dim summaryItemFreight As New GridViewSummaryItem("Freight", "Max Freight = {0}", GridAggregateFunction.Max)
 	
@@ -315,7 +315,7 @@ The next example demonstrates how to use AggregateExpression to
 
 #### __[C#]__
 
-{{region aggregateExpression}}
+{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=aggregateExpression}}
 	            GridViewSummaryItem summaryItem = new GridViewSummaryItem();
 	            summaryItem.Name = "Freight";
 	            summaryItem.AggregateExpression = "(Sum(Freight) - Max(Freight) - Min(Freight)) / Count(Freight)";
@@ -329,7 +329,7 @@ The next example demonstrates how to use AggregateExpression to
 
 #### __[VB.NET]__
 
-{{region aggregateExpression}}
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=aggregateExpression}}
 	        Dim summaryItem As New GridViewSummaryItem()
 	        summaryItem.Name = "Freight"
 	        summaryItem.AggregateExpression = "(Sum(Freight) - Max(Freight) - Min(Freight)) / Count(Freight)"
@@ -428,7 +428,7 @@ The next example demonstrates how to use summary rows in grouping:
 
 #### __[C#]__
 
-{{region grouping}}
+{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=grouping}}
 	            this.radGridView1.MasterTemplate.ShowTotals = true;
 	
 	            GridViewSummaryItem summaryItem = new GridViewSummaryItem("Freight", "{0}", GridAggregateFunction.Max);
@@ -442,7 +442,7 @@ The next example demonstrates how to use summary rows in grouping:
 
 #### __[VB.NET]__
 
-{{region grouping}}
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=grouping}}
 	        Me.RadGridView1.MasterTemplate.ShowTotals = True
 	
 	        Dim summaryItem As New GridViewSummaryItem("Freight", "{0}", GridAggregateFunction.Max)
@@ -526,7 +526,7 @@ The following example demonstrates how to add a summary row to the
 
 #### __[C#]__
 
-{{region hierarchy}}
+{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=hierarchy}}
 	            GridViewSummaryItem summaryItem = new GridViewSummaryItem("Quantity", "Max quantity = {0}", GridAggregateFunction.Max);
 	            GridViewSummaryRowItem summaryRowItem = new GridViewSummaryRowItem();
 	            summaryRowItem.Add(summaryItem);
@@ -538,7 +538,7 @@ The following example demonstrates how to add a summary row to the
 
 #### __[VB.NET]__
 
-{{region hierarchy}}
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=hierarchy}}
 	        Dim summaryItem As New GridViewSummaryItem("Quantity", "Max quantity = {0}", GridAggregateFunction.Max)
 	        Dim summaryRowItem As New GridViewSummaryRowItem()
 	        summaryRowItem.Add(summaryItem)

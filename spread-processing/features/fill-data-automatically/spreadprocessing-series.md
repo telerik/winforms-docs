@@ -49,7 +49,7 @@ __Example 1__ creates a new worksheet that has the value *1* in cell *A1* and *3
 
 #### __[C#] Example 1: Fill Linear Series__
 
-{{region radspreadprocessing-features-fill-data-automatically-series_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.cs region=radspreadprocessing-features-fill-data-automatically-series_0}}
 	
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
@@ -66,7 +66,7 @@ __Example 1__ creates a new worksheet that has the value *1* in cell *A1* and *3
 
 #### __VB__
 
-{{region radspreadprocessing-features-fill-data-automatically-series_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_0}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -190,7 +190,7 @@ __Example 2__ shows how to use __FillDataSeriesLinearTrend()__ to continue serie
 
 #### __[C#] Example 2: Fill Linear Trend Series__
 
-{{region radspreadprocessing-features-fill-data-automatically-series_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.cs region=radspreadprocessing-features-fill-data-automatically-series_1}}
 	
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
@@ -210,7 +210,7 @@ __Example 2__ shows how to use __FillDataSeriesLinearTrend()__ to continue serie
 
 #### __VB__
 
-{{region radspreadprocessing-features-fill-data-automatically-series_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_1}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -324,7 +324,7 @@ __Example 3__ shows how to use the __FillDataSeriesExponential()__ method to con
 
 #### __[C#] Example 3: Fill Exponential Series__
 
-{{region radspreadprocessing-features-fill-data-automatically-series_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.cs region=radspreadprocessing-features-fill-data-automatically-series_2}}
 	
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
@@ -341,7 +341,7 @@ __Example 3__ shows how to use the __FillDataSeriesExponential()__ method to con
 
 #### __VB__
 
-{{region radspreadprocessing-features-fill-data-automatically-series_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_2}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -432,7 +432,7 @@ __Example 4__ shows how to use the __FillDataSeriesLinearTrend()__ method to con
 
 #### __[C#] Example 4: Exponential Trend Series__
 
-{{region radspreadprocessing-features-fill-data-automatically-series_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.cs region=radspreadprocessing-features-fill-data-automatically-series_3}}
 	
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
@@ -451,7 +451,7 @@ __Example 4__ shows how to use the __FillDataSeriesLinearTrend()__ method to con
 
 #### __VB__
 
-{{region radspreadprocessing-features-fill-data-automatically-series_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_3}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -532,7 +532,7 @@ __Example 5__ shows how to construct series that use *5/28/2013* as a starting p
 
 #### __[C#] Example 5: Fill Date Series__
 
-{{region radspreadprocessing-features-fill-data-automatically-series_4}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.cs region=radspreadprocessing-features-fill-data-automatically-series_4}}
 	
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
@@ -548,7 +548,7 @@ __Example 5__ shows how to construct series that use *5/28/2013* as a starting p
 
 #### __VB__
 
-{{region radspreadprocessing-features-fill-data-automatically-series_4}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_4}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -669,7 +669,7 @@ __Example 6__ shows how to use the __FillDataSeriesAuto()__ method for initial v
 
 #### __[C#] Example 6: Auto Fill__
 
-{{region radspreadprocessing-features-fill-data-automatically-series_5}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.cs region=radspreadprocessing-features-fill-data-automatically-series_5}}
 	
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
@@ -685,7 +685,7 @@ __Example 6__ shows how to use the __FillDataSeriesAuto()__ method for initial v
 
 #### __VB__
 
-{{region radspreadprocessing-features-fill-data-automatically-series_5}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_5}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -725,7 +725,7 @@ __Example 7__ that demonstrates the behavior of the __FillDataSeriesAuto()__ met
 
 #### __[C#] Example 7: Auto Fill Reversed Direction__
 
-{{region radspreadprocessing-features-fill-data-automatically-series_6}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.cs region=radspreadprocessing-features-fill-data-automatically-series_6}}
 	
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
@@ -741,7 +741,7 @@ __Example 7__ that demonstrates the behavior of the __FillDataSeriesAuto()__ met
 
 #### __VB__
 
-{{region radspreadprocessing-features-fill-data-automatically-series_6}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_6}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()

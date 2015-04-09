@@ -44,7 +44,7 @@ In order to achieve the look of the RadGridView from the screenshot above, we
 
 #### __[C#]__
 
-{{region fileSystemItem}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\FileSystemItem.cs region=fileSystemItem}}
 	    public class FileSystemItem
 	    {
 	        int id;
@@ -128,7 +128,7 @@ In order to achieve the look of the RadGridView from the screenshot above, we
 
 #### __[VB.NET]__
 
-{{region fileSystemItem}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\FileSystemItem.vb region=fileSystemItem}}
 	Public Class FileSystemItem
 	    Private id_Renamed As Integer
 	    Private name_Renamed As String
@@ -200,7 +200,7 @@ In order to achieve the look of the RadGridView from the screenshot above, we
 
 #### __[C#]__
 
-{{region fillingList}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\SelfReferencingHierarchy.cs region=fillingList}}
 	        BindingList<FileSystemItem> list = new BindingList<FileSystemItem>();
 	        int fileFolderIndex = 0;
 	
@@ -228,7 +228,7 @@ In order to achieve the look of the RadGridView from the screenshot above, we
 
 #### __[VB.NET]__
 
-{{region fillingList}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=fillingList}}
 	    Private list As New BindingList(Of FileSystemItem)()
 	    Private fileFolderIndex As Integer = 0
 	
@@ -259,7 +259,7 @@ In order to achieve the look of the RadGridView from the screenshot above, we
 
 #### __[C#]__
 
-{{region addSelfReference}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\SelfReferencingHierarchy.cs region=addSelfReference}}
 	            this.radGridView1.Relations.AddSelfReference(this.radGridView1.MasterTemplate, "Id", "ParentFolderId");
 	            this.radGridView1.DataSource = list;
 	{{endregion}}
@@ -268,7 +268,7 @@ In order to achieve the look of the RadGridView from the screenshot above, we
 
 #### __[VB.NET]__
 
-{{region addSelfReference}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=addSelfReference}}
 	        Me.RadGridView1.Relations.AddSelfReference(Me.RadGridView1.MasterTemplate, "Id", "ParentFolderId")
 	        Me.RadGridView1.DataSource = list
 	{{endregion}}
@@ -281,7 +281,7 @@ In order to achieve the look of the RadGridView from the screenshot above, we
 
 #### __[C#]__
 
-{{region hideColumns}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\SelfReferencingHierarchy.cs region=hideColumns}}
 	            this.radGridView1.Columns["Id"].IsVisible = false;
 	            this.radGridView1.Columns["ParentFolderId"].IsVisible = false;
 	            this.radGridView1.Columns["FileSystemInfoType"].IsVisible = false;
@@ -291,7 +291,7 @@ In order to achieve the look of the RadGridView from the screenshot above, we
 
 #### __[VB.NET]__
 
-{{region hideColumns}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=hideColumns}}
 	        Me.RadGridView1.Columns("Id").IsVisible = False
 	        Me.RadGridView1.Columns("ParentFolderId").IsVisible = False
 	        Me.RadGridView1.Columns("FileSystemInfoType").IsVisible = False
@@ -307,7 +307,7 @@ In order to achieve the look of the RadGridView from the screenshot above, we
 
 #### __[C#]__
 
-{{region settingImagesToCells}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\SelfReferencingHierarchy.cs region=settingImagesToCells}}
 	
 	        // Getting the images from the resources of the project
 	        Image documentImage = SamplesCS.Properties.Resources.Document;
@@ -352,7 +352,7 @@ In order to achieve the look of the RadGridView from the screenshot above, we
 
 #### __[VB.NET]__
 
-{{region settingImagesToCells}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=settingImagesToCells}}
 	
 	    ' Getting the images from the resources of the project
 	    Private documentImage As Image = SamplesVB.My.Resources.Document

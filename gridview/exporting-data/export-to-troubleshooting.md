@@ -30,7 +30,7 @@ Since ExportToExcelML iterates through the grid elements, it does not export an
 
 #### __[C#] __
 
-{{region inCaseOfBlankExcelDocument}}
+{{source=..\SamplesCS\GridView\ExportingData\Troubleshooting.cs region=inCaseOfBlankExcelDocument}}
 	            this.radGridView1.LoadElementTree();
 	{{endregion}}
 
@@ -38,7 +38,7 @@ Since ExportToExcelML iterates through the grid elements, it does not export an
 
 #### __[VB.NET] __
 
-{{region inCaseOfBlankExcelDocument}}
+{{source=..\SamplesVB\GridView\ExportingData\Troubleshooting.vb region=inCaseOfBlankExcelDocument}}
 	        Me.RadGridView1.LoadElementTree()
 	{{endregion}}
 
@@ -56,7 +56,7 @@ The ExportToExcelML class does not support opening the excel file directly. Howe
 
 #### __[C#]__
 
-{{region openTheFileAfterExport}}
+{{source=..\SamplesCS\GridView\ExportingData\Troubleshooting.cs region=openTheFileAfterExport}}
 	            ExportToExcelML exporter = new ExportToExcelML(this.radGridView1);
 	            exporter.RunExport(@"C:\Test.xls");
 	            System.Diagnostics.Process.Start(@"C:\Test.xls");
@@ -66,7 +66,7 @@ The ExportToExcelML class does not support opening the excel file directly. Howe
 
 #### __[VB.NET]__
 
-{{region openTheFileAfterExport}}
+{{source=..\SamplesVB\GridView\ExportingData\Troubleshooting.vb region=openTheFileAfterExport}}
 	        Dim exporter As ExportToExcelML = New ExportToExcelML(Me.RadGridView1)
 	        exporter.RunExport("C:\Test.xls")
 	        System.Diagnostics.Process.Start("C:\Test.xls")

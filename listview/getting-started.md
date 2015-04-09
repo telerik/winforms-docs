@@ -100,7 +100,7 @@ Now let continue with setting the control __DataSource__, allow edit and remove
 
 #### __[C#] Initial settings__
 
-{{region initialSettings}}
+{{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=initialSettings}}
 	            this.radListView1.ItemDataBound += new Telerik.WinControls.UI.ListViewItemEventHandler(radListView1_ItemDataBound);
 	            this.radListView1.VisualItemFormatting += new Telerik.WinControls.UI.ListViewVisualItemEventHandler(radListView1_VisualItemFormatting);
 	            this.radListView1.CellFormatting += new Telerik.WinControls.UI.ListViewCellFormattingEventHandler(radListView1_CellFormatting);
@@ -120,7 +120,7 @@ Now let continue with setting the control __DataSource__, allow edit and remove
 
 #### __[VB.NET] Initial settings__
 
-{{region initialSettings}}
+{{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=initialSettings}}
 	        AddHandler Me.RadListView1.ItemDataBound, AddressOf radListView1_ItemDataBound
 	        AddHandler Me.RadListView1.VisualItemFormatting, AddressOf radListView1_VisualItemFormatting
 	        AddHandler Me.RadListView1.ViewTypeChanged, AddressOf radListView1_ViewTypeChanged
@@ -181,7 +181,7 @@ Now, lets handle those events. In the event handler for the __ItemDataBound__ ev
 
 #### __[C#] Set the item image to the data item__
 
-{{region ItemDataBound}}
+{{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=ItemDataBound}}
 	        void radListView1_ItemDataBound(object sender, Telerik.WinControls.UI.ListViewItemEventArgs e)
 	        {
 	            DataRowView row = e.Item.DataBoundItem as DataRowView;
@@ -194,7 +194,7 @@ Now, lets handle those events. In the event handler for the __ItemDataBound__ ev
 
 #### __[VB.NET] Set the item image to the data item__
 
-{{region ItemDataBound}}
+{{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=ItemDataBound}}
 	    Private Sub radListView1_ItemDataBound(sender As Object, e As Telerik.WinControls.UI.ListViewItemEventArgs)
 	        Dim row As DataRowView = TryCast(e.Item.DataBoundItem, DataRowView)
 	        Dim songRow As MusicCollectionDataSet.SongsDataTableRow = TryCast(row.Row, MusicCollectionDataSet.SongsDataTableRow)
@@ -211,7 +211,7 @@ Next lets hand the __VisualItemFormatting__ event, where we will set the visual 
 
 #### __[C#] Customize visual item__
 
-{{region VisualItemFormatting}}
+{{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=VisualItemFormatting}}
 	        void radListView1_VisualItemFormatting(object sender, Telerik.WinControls.UI.ListViewVisualItemEventArgs e)
 	        {
 	            if (e.VisualItem.Data.Image != null)
@@ -234,7 +234,7 @@ Next lets hand the __VisualItemFormatting__ event, where we will set the visual 
 
 #### __[VB.NET] Customize visual item__
 
-{{region VisualItemFormatting}}
+{{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=VisualItemFormatting}}
 	    Private Sub radListView1_VisualItemFormatting(sender As Object, e As Telerik.WinControls.UI.ListViewVisualItemEventArgs)
 	        If e.VisualItem.Data.Image IsNot Nothing Then
 	            e.VisualItem.Image = e.VisualItem.Data.Image.GetThumbnailImage(32, 32, Nothing, IntPtr.Zero)
@@ -258,7 +258,7 @@ The __CellFormatting__ event is handled in order to customize the appearance
 
 #### __[C#] Set the cell image__
 
-{{region CellFormatting}}
+{{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=CellFormatting}}
 	        void radListView1_CellFormatting(object sender, ListViewCellFormattingEventArgs e)
 	        {
 	            if (e.CellElement.Image != null)
@@ -272,7 +272,7 @@ The __CellFormatting__ event is handled in order to customize the appearance
 
 #### __[VB.NET] Set the cell image__
 
-{{region CellFormatting}}
+{{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=CellFormatting}}
 	    Private Sub radListView1_CellFormatting(sender As Object, e As ListViewCellFormattingEventArgs)
 	        If e.CellElement.Image IsNot Nothing Then
 	            e.CellElement.Image = e.CellElement.Image.GetThumbnailImage(32, 32, Nothing, IntPtr.Zero)
@@ -288,7 +288,7 @@ The __ColumnCreating__ event is fired when a column is being created. This is co
 
 #### __[C#] Customize columns__
 
-{{region ColumnCreating}}
+{{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=ColumnCreating}}
 	        void radListView1_ColumnCreating(object sender, ListViewColumnCreatingEventArgs e)
 	        {
 	            if (e.Column.FieldName == "SongID" || e.Column.FieldName == "Image")
@@ -317,7 +317,7 @@ The __ColumnCreating__ event is fired when a column is being created. This is co
 
 #### __[VB.NET] Customize columns__
 
-{{region ColumnCreating}}
+{{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=ColumnCreating}}
 	    Private Sub radListView1_ColumnCreating(sender As Object, e As ListViewColumnCreatingEventArgs)
 	        If e.Column.FieldName = "SongID" OrElse e.Column.FieldName = "Image" Then
 	            e.Column.Visible = False
@@ -361,7 +361,7 @@ In the ViewTypeChanged event handler, we will simply check which is the new view
 
 #### __[C#] Handling view type changes__
 
-{{region ViewTypeChanged}}
+{{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=ViewTypeChanged}}
 	        private void SetupDetailsView()
 	        {
 	            this.radListView1.AllowArbitraryItemHeight = true;
@@ -400,7 +400,7 @@ In the ViewTypeChanged event handler, we will simply check which is the new view
 
 #### __[VB.NET] Handling view type changes__
 
-{{region ViewTypeChanged}}
+{{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=ViewTypeChanged}}
 	    Private Sub SetupDetailsView()
 	        Me.RadListView1.AllowArbitraryItemHeight = True
 	    End Sub
@@ -441,7 +441,7 @@ Now we only need to fill up the __RadCommandBar__ elements functionality.
 
 #### __[C#] Handle the toggle buttons__
 
-{{region toggleButtons}}
+{{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=toggleButtons}}
 	        private bool updatingToggleState = false;
 	
 	        private void ViewToggleButton_ToggleStateChanged(object sender, StateChangedEventArgs args)
@@ -499,7 +499,7 @@ Now we only need to fill up the __RadCommandBar__ elements functionality.
 
 #### __[VB.NET] Handle the toggle buttons__
 
-{{region toggleButtons}}
+{{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=toggleButtons}}
 	    Private updatingToggleState As Boolean = False
 	
 	    Private Sub ViewToggleButton_ToggleStateChanged(sender As Object, args As StateChangedEventArgs) Handles commandBarToggleButtonTiles.ToggleStateChanged, commandBarToggleButtonList.ToggleStateChanged, commandBarToggleButtonDetails.ToggleStateChanged
@@ -554,7 +554,7 @@ Next, subscribe to the __SelectedIndexChanged__ event of
 
 #### __[C#] Handle sorting functionality__
 
-{{region sort}}
+{{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=sort}}
 	        private void commandBarDropDownSort_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
 	        {
 	            this.radListView1.SortDescriptors.Clear();
@@ -580,7 +580,7 @@ Next, subscribe to the __SelectedIndexChanged__ event of
 
 #### __[VB.NET] Handle sorting functionality__
 
-{{region sort}}
+{{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=sort}}
 	    Private Sub commandBarDropDownSort_SelectedIndexChanged(sender As Object, e As Telerik.WinControls.UI.Data.PositionChangedEventArgs) Handles commandBarDropDownSort.SelectedIndexChanged
 	        Me.RadListView1.SortDescriptors.Clear()
 	        Select Case Me.commandBarDropDownSort.Text
@@ -609,7 +609,7 @@ To add the grouping functionality, subscribe to the __SelectedIndexChanged__ eve
 
 #### __[C#] Handle grouping functionality__
 
-{{region group}}
+{{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=group}}
 	        private void commandBarDropDownGroup_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
 	        {
 	            this.radListView1.GroupDescriptors.Clear();
@@ -639,7 +639,7 @@ To add the grouping functionality, subscribe to the __SelectedIndexChanged__ eve
 
 #### __[VB.NET] Handle grouping functionality__
 
-{{region group}}
+{{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=group}}
 	    Private Sub commandBarDropDownGroup_SelectedIndexChanged(sender As Object, e As Telerik.WinControls.UI.Data.PositionChangedEventArgs) Handles commandBarDropDownGroup.SelectedIndexChanged
 	        Me.RadListView1.GroupDescriptors.Clear()
 	        Select Case Me.commandBarDropDownGroup.Text
@@ -670,7 +670,7 @@ Lastly, lets subscribe ot the __TextChanged__ event of
 
 #### __[C#] Handle filtering functionality__
 
-{{region filter}}
+{{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=filter}}
 	        private void commandBarTextBoxFilter_TextChanged(object sender, EventArgs e)
 	        {
 	            this.radListView1.FilterDescriptors.Clear();
@@ -694,7 +694,7 @@ Lastly, lets subscribe ot the __TextChanged__ event of
 
 #### __[VB.NET] Handle filtering functionality__
 
-{{region filter}}
+{{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=filter}}
 	    Private Sub commandBarTextBoxFilter_TextChanged(sender As Object, e As EventArgs) Handles commandBarTextBoxFilter.TextChanged
 	        Me.RadListView1.FilterDescriptors.Clear()
 	

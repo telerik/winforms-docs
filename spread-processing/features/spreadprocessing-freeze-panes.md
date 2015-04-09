@@ -85,7 +85,7 @@ In order to describe fully the state of the frozen panes the following need to b
 
 #### __[C#]__
 
-{{region FreezingPanes}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.cs region=FreezingPanes}}
 	            
 	            CellIndex fixedPaneTopLeftCellIndex = new CellIndex(2, 2);
 	            CellIndex scrollableTopLeftCellIndex = new CellIndex(5, 8);
@@ -97,7 +97,7 @@ In order to describe fully the state of the frozen panes the following need to b
 
 #### __[VB]__
 
-{{region FreezingPanes}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.vb region=FreezingPanes}}
 	        Dim fixedPaneTopLeftCellIndex As New CellIndex(2, 2)
 	        Dim scrollableTopLeftCellIndex As New CellIndex(5, 8)
 	        workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 1, 4, scrollableTopLeftCellIndex)
@@ -151,7 +151,7 @@ In order to describe fully the state of the frozen panes the following need to b
 
 #### __[C#]__
 
-{{region HorizontalVerticalSplit}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.cs region=HorizontalVerticalSplit}}
 	            
 	            CellIndex fixedPaneTopLeftCellIndex = new CellIndex(2, 2);
 	            workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 0, 4);
@@ -162,7 +162,7 @@ In order to describe fully the state of the frozen panes the following need to b
 
 #### __[VB]__
 
-{{region HorizontalVerticalSplit}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.vb region=HorizontalVerticalSplit}}
 	
 	        Dim fixedPaneTopLeftCellIndex As New CellIndex(2, 2)
 	        workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 0, 4)
@@ -224,7 +224,7 @@ This code will result in the following:![spreadprocessing-features-freeze-panes 
 
 #### __[C#]__
 
-{{region Pane}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.cs region=Pane}}
 	            
 	            CellIndex scrollableTopLeftCellIndex = new CellIndex(5, 8);
 	            Pane pane = new Pane(scrollableTopLeftCellIndex, 4, 1, ViewportPaneType.Scrollable);
@@ -236,7 +236,7 @@ This code will result in the following:![spreadprocessing-features-freeze-panes 
 
 #### __[VB]__
 
-{{region Pane}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.vb region=Pane}}
 	
 	        Dim scrollableTopLeftCellIndex As New CellIndex(5, 8)
 	        Dim pane As New Pane(scrollableTopLeftCellIndex, 4, 1, ViewportPaneType.Scrollable)
@@ -271,7 +271,7 @@ In order to unfreeze the panes of the worksheet you need to use the same methods
 
 #### __[C#]__
 
-{{region UnfreezingPanes}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.cs region=UnfreezingPanes}}
 	        
 	            workbook.ActiveWorksheet.ViewState.FreezePanes(0, 0);
 	
@@ -281,7 +281,7 @@ In order to unfreeze the panes of the worksheet you need to use the same methods
 
 #### __[VB]__
 
-{{region UnfreezingPanes}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.vb region=UnfreezingPanes}}
 	
 	        workbook.ActiveWorksheet.ViewState.FreezePanes(0, 0)
 	
@@ -301,7 +301,7 @@ Another option is to set the Pane property of the ViewState to null.
 
 #### __[C#]__
 
-{{region AlternativeUnfreezingPanes}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.cs region=AlternativeUnfreezingPanes}}
 	        
 	            workbook.ActiveWorksheet.ViewState.Pane = null;
 	
@@ -311,7 +311,7 @@ Another option is to set the Pane property of the ViewState to null.
 
 #### __[VB]__
 
-{{region AlternativeUnfreezingPanes}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.vb region=AlternativeUnfreezingPanes}}
 	
 	        workbook.ActiveWorksheet.ViewState.Pane = Nothing
 	

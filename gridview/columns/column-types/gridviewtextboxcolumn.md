@@ -22,7 +22,7 @@ When a user begins editing a cell, a textbox editor is provided to handle the us
 
 #### __[C#] Adding GridViewTextBoxColumn__
 
-{{region addTextBoxColumn}}
+{{source=..\SamplesCS\GridView\Columns\GridViewTextBoxColumn1.cs region=addTextBoxColumn}}
 	            GridViewTextBoxColumn textBoxColumn = new GridViewTextBoxColumn();
 	            textBoxColumn.Name = "TextBoxColumn";
 	            textBoxColumn.HeaderText = "Product Name";
@@ -36,7 +36,7 @@ When a user begins editing a cell, a textbox editor is provided to handle the us
 
 #### __[VB.NET] Adding GridViewTextBoxColumn__
 
-{{region addTextBoxColumn}}
+{{source=..\SamplesVB\GridView\Columns\GridViewTextBoxColumn1.vb region=addTextBoxColumn}}
 	        Dim textBoxColumn As New GridViewTextBoxColumn()
 	        textBoxColumn.Name = "TextBoxColumn"
 	        textBoxColumn.HeaderText = "Product Name"
@@ -54,7 +54,7 @@ GridViewTextBoxColumn editor - *RadTextBoxEditor - *supports character casing. T
 
 #### __[C#] Character casting in GridViewTextBoxColumn__
 
-{{region characterCasting}}
+{{source=..\SamplesCS\GridView\Columns\GridViewTextBoxColumn1.cs region=characterCasting}}
 	            ((GridViewTextBoxColumn)this.radGridView1.Columns[0]).ColumnCharacterCasing = CharacterCasing.Upper;
 	{{endregion}}
 
@@ -62,7 +62,7 @@ GridViewTextBoxColumn editor - *RadTextBoxEditor - *supports character casing. T
 
 #### __[VB.NET] Character casting in GridViewTextBoxColumn__
 
-{{region characterCasting}}
+{{source=..\SamplesVB\GridView\Columns\GridViewTextBoxColumn1.vb region=characterCasting}}
 	        DirectCast(Me.RadGridView1.Columns(0), GridViewTextBoxColumn).ColumnCharacterCasing = CharacterCasing.Upper
 	{{endregion}}
 

@@ -40,7 +40,7 @@ __Example 1__ creates a selection for cells in the range A1:F6.
 
 #### __[C#] Example 1: Create CellSelection A1:F6__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_0}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            CellSelection selection = worksheet.Cells[0, 0, 5, 5];
@@ -50,7 +50,7 @@ __Example 1__ creates a selection for cells in the range A1:F6.
 
 #### __[VB NET] Example 1: Create CellSelection A1:F6__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_0}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        Dim selection As CellSelection = worksheet.Cells(0, 0, 5, 5)
@@ -248,7 +248,7 @@ __Example 2__ illustrates how to use these methods on the region A1:F6:
 
 #### __[C#] Example 2: Use GetIsBold(), SetIsBold() and ClearIsBold() methods__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_1}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            CellSelection selection = worksheet.Cells[0, 0, 5, 5];
@@ -262,7 +262,7 @@ __Example 2__ illustrates how to use these methods on the region A1:F6:
 
 #### __{VB NET] Example 2: Use GetIsBold(), SetIsBold() and ClearIsBold() methods__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_1}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        Dim selection As CellSelection = worksheet.Cells(0, 0, 5, 5)
@@ -408,7 +408,7 @@ __Example 3__ illustrates who to retrieve the value of cell B2:
 
 #### __[C#] Example 3: Retrieve value of cell__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_7}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_7}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            CellSelection selection = worksheet.Cells[1, 1];
@@ -420,7 +420,7 @@ __Example 3__ illustrates who to retrieve the value of cell B2:
 
 #### __[VB NET] Example 3: Retrieve value of cell__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_7}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_7}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        Dim selection As CellSelection = worksheet.Cells(1, 1)
@@ -541,7 +541,7 @@ __Example 4__ demonstrates how to set the value of a given selection.
 
 #### __[C#] Example 4: Set value of CellSelection__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_2}}
 	            // set DateTime value
 	            selection.SetValue(DateTime.Now);
 	
@@ -563,7 +563,7 @@ __Example 4__ demonstrates how to set the value of a given selection.
 
 #### __[VB NET] Example 4: Set value of CellSelection__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_2}}
 	        ' set DateTime value
 	        selection.SetValue(DateTime.Now)
 	
@@ -678,7 +678,7 @@ __Example 5__ demonstrates how to set the value of the Borders of the regions B2
 
 #### __[C#] Example 5: Set value of Borders__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_3}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            ThemableColor purple = new ThemableColor(Color.FromRgb(155, 89, 182));
@@ -704,7 +704,7 @@ __Example 5__ demonstrates how to set the value of the Borders of the regions B2
 
 #### __[VB NET] Example 5: Set value of Borders__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_3}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        Dim purple As New ThemableColor(Color.FromRgb(155, 89, 182))
@@ -809,7 +809,7 @@ __Example 6__ creates two PatternFill objects with a DiagonalStripe and Solid Pa
 
 #### __[C#] Example 6: Create and set PatternFill__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_4}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_4}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -824,7 +824,7 @@ __Example 6__ creates two PatternFill objects with a DiagonalStripe and Solid Pa
 
 #### __[VB NET] Example 6: Create and set PatternFill__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_4}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_4}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -897,7 +897,7 @@ __Example 7__ assigns the region A1:F1 a smooth horizontal green gradient.
 
 #### __[C#] Example 7: Create and set GradientFill__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_5}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_5}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            worksheet.Rows[0].SetHeight(new RowHeight(50, true));
@@ -910,7 +910,7 @@ __Example 7__ assigns the region A1:F1 a smooth horizontal green gradient.
 
 #### __[VB NET] Example 7: Create and set GradientFill__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_5}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_5}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        worksheet.Rows(0).SetHeight(New RowHeight(50, True))
@@ -972,7 +972,7 @@ __Example 8__ snippet shows how to use those methods:
 
 #### __[C#] Example 8: Increase and decrease indent__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_6}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_6}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            CellSelection selection = worksheet.Cells[0, 0, 5, 5];
@@ -985,7 +985,7 @@ __Example 8__ snippet shows how to use those methods:
 
 #### __[VB NET] Example 8: Increase and decrease indent__
 
-{{region radspreadprocessing-working-with-cells-get-set-clear-properties_6}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_6}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        Dim selection As CellSelection = worksheet.Cells(0, 0, 5, 5)

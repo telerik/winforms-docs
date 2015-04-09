@@ -50,7 +50,7 @@ The code sample below access the *FillPrimitive* of the header, changes the firs
 
 #### __[C#] Change the GroupBox header color__
 
-{{region changeTheHeaderColor}}
+{{source=..\SamplesCS\PanelsAndLabels\GroupBox\Advanced\TPFStructure.cs region=changeTheHeaderColor}}
 	            ((FillPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[0]).BackColor = Color.Red;
 	            ((FillPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[0]).BackColor2 = Color.Yellow;
 	            ((FillPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[0]).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
@@ -60,7 +60,7 @@ The code sample below access the *FillPrimitive* of the header, changes the firs
 
 #### __[VB.NET] Change the GroupBox header color__
 
-{{region changeTheHeaderColor}}
+{{source=..\SamplesVB\PanelsAndLabels\GroupBox\Advanced\TPFStructure.vb region=changeTheHeaderColor}}
 	        DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(0), FillPrimitive).BackColor = Color.Red
 	        DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(0), FillPrimitive).BackColor2 = Color.Yellow
 	        DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(0), FillPrimitive).GradientStyle = Telerik.WinControls.GradientStyles.Linear
@@ -74,7 +74,7 @@ The code snippet below makes the *BorderPrimitive* of the Header invisible:
 
 #### __[C#] Change the GroupBox header border__
 
-{{region changeTheHeaderBorder}}
+{{source=..\SamplesCS\PanelsAndLabels\GroupBox\Advanced\TPFStructure.cs region=changeTheHeaderBorder}}
 	            ((BorderPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[1]).Visibility = Telerik.WinControls.ElementVisibility.Hidden;
 	{{endregion}}
 
@@ -82,7 +82,7 @@ The code snippet below makes the *BorderPrimitive* of the Header invisible:
 
 #### __[VB.NET] Change the GroupBox header border__
 
-{{region changeTheHeaderBorder}}
+{{source=..\SamplesVB\PanelsAndLabels\GroupBox\Advanced\TPFStructure.vb region=changeTheHeaderBorder}}
 	        DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(1), BorderPrimitive).Visibility = Telerik.WinControls.ElementVisibility.Hidden
 	{{endregion}}
 

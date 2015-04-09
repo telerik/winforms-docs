@@ -18,7 +18,7 @@ __SelectedIndexChanged__ event fires when the index of the current list item cha
 
 #### __[C#]__
 
-{{region selectedIndexChanged}}
+{{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=selectedIndexChanged}}
 	            
 	        void radMultiColumnComboBox1_SelectedIndexChanged(object sender, EventArgs e)
 	        {
@@ -33,7 +33,7 @@ __SelectedIndexChanged__ event fires when the index of the current list item cha
 
 #### __[VB.NET]__
 
-{{region selectedIndexChanged}}
+{{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=selectedIndexChanged}}
 	    Private Sub radMultiColumnComboBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
 	        Dim text As String
 	        text = String.Format("Row changed, current Name = {0}", RadMultiColumnComboBox1.EditorControl.Rows(RadMultiColumnComboBox1.SelectedIndex).Cells("ContactName").Value)

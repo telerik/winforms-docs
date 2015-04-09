@@ -22,7 +22,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region minMax}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=minMax}}
 	            this.radTrackBar1.Minimum = 10;
 	            this.radTrackBar1.Maximum = 120;
 	{{endregion}}
@@ -31,7 +31,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region minMax}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=minMax}}
 	        Me.RadTrackBar1.Minimum = 10
 	        Me.RadTrackBar1.Maximum = 120
 	        '#End Region
@@ -181,7 +181,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region Value}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=Value}}
 	            this.radTrackBar1.Value = 5;
 	{{endregion}}
 
@@ -189,7 +189,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region Value}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=Value}}
 	        Me.RadTrackBar1.Value = 5
 	        '#End Region
 	
@@ -306,7 +306,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region tickStyleNone}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=tickStyleNone}}
 	            this.radTrackBar1.TickStyle = Telerik.WinControls.Enumerations.TickStyles.None;
 	{{endregion}}
 
@@ -314,7 +314,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region tickStyleNone}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=tickStyleNone}}
 	        Me.RadTrackBar1.TickStyle = Telerik.WinControls.Enumerations.TickStyles.None
 	        '#End Region
 	
@@ -435,7 +435,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region tickStyleBoth}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=tickStyleBoth}}
 	            this.radTrackBar1.TickStyle = Telerik.WinControls.Enumerations.TickStyles.Both;
 	{{endregion}}
 
@@ -443,7 +443,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region tickStyleBoth}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=tickStyleBoth}}
 	        Me.RadTrackBar1.TickStyle = Telerik.WinControls.Enumerations.TickStyles.Both
 	        '#End Region
 	
@@ -561,7 +561,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region tickStyleTop}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=tickStyleTop}}
 	            this.radTrackBar1.TickStyle = Telerik.WinControls.Enumerations.TickStyles.TopLeft;
 	{{endregion}}
 
@@ -569,7 +569,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region tickStyleTop}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=tickStyleTop}}
 	        Me.RadTrackBar1.TickStyle = Telerik.WinControls.Enumerations.TickStyles.TopLeft
 	        '#End Region
 	
@@ -700,7 +700,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region tickStyleBottom}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=tickStyleBottom}}
 	            this.radTrackBar1.TickStyle = Telerik.WinControls.Enumerations.TickStyles.BottomRight;
 	{{endregion}}
 
@@ -708,7 +708,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region tickStyleBottom}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=tickStyleBottom}}
 	        Me.RadTrackBar1.TickStyle = Telerik.WinControls.Enumerations.TickStyles.BottomRight
 	        '#End Region
 	
@@ -835,7 +835,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region orientationVertical}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=orientationVertical}}
 	            this.radTrackBar1.Orientation = Orientation.Vertical;
 	{{endregion}}
 
@@ -843,7 +843,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region orientationVertical}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=orientationVertical}}
 	        Me.RadTrackBar1.Orientation = Orientation.Vertical
 	        '#End Region
 	
@@ -988,7 +988,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region largeChange}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=largeChange}}
 	            this.radTrackBar1.LargeChange = 5;
 	{{endregion}}
 
@@ -996,7 +996,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region largeChange}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=largeChange}}
 	        Me.RadTrackBar1.LargeChange = 5
 	        '#End Region
 	
@@ -1151,7 +1151,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region textorientation}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=textorientation}}
 	            this.radTrackBar1.TextOrientation = Orientation.Vertical;
 	{{endregion}}
 
@@ -1159,7 +1159,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region textorientation}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=textorientation}}
 	        Me.RadTrackBar1.TextOrientation = Orientation.Vertical
 	        '#End Region
 	
@@ -1271,7 +1271,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region labelsStyleBoth}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=labelsStyleBoth}}
 	            this.radTrackBar1.LabelStyle = Telerik.WinControls.UI.TrackBarLabelStyle.Both;
 	{{endregion}}
 
@@ -1279,7 +1279,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region labelsStyleBoth}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=labelsStyleBoth}}
 	        Me.RadTrackBar1.LabelStyle = Telerik.WinControls.UI.TrackBarLabelStyle.Both
 	        '#End Region
 	
@@ -1381,7 +1381,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region labelsStyleTopLeft}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=labelsStyleTopLeft}}
 	            this.radTrackBar1.LabelStyle = Telerik.WinControls.UI.TrackBarLabelStyle.TopLeft;
 	{{endregion}}
 
@@ -1389,7 +1389,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region labelsStyleTopLeft}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=labelsStyleTopLeft}}
 	        Me.RadTrackBar1.LabelStyle = Telerik.WinControls.UI.TrackBarLabelStyle.TopLeft
 	        '#End Region
 	
@@ -1487,7 +1487,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region labelsStyleBottomRight}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=labelsStyleBottomRight}}
 	            this.radTrackBar1.LabelStyle = Telerik.WinControls.UI.TrackBarLabelStyle.BottomRight;
 	{{endregion}}
 
@@ -1495,7 +1495,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region labelsStyleBottomRight}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=labelsStyleBottomRight}}
 	        Me.RadTrackBar1.LabelStyle = Telerik.WinControls.UI.TrackBarLabelStyle.BottomRight
 	        '#End Region
 	
@@ -1589,7 +1589,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region ShowButtons}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=ShowButtons}}
 	            this.radTrackBar1.ShowButtons = true;
 	{{endregion}}
 
@@ -1597,7 +1597,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region ShowButtons}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=ShowButtons}}
 	        Me.RadTrackBar1.ShowButtons = True
 	        '#End Region
 	
@@ -1686,7 +1686,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region LargeTickFrequency}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=LargeTickFrequency}}
 	            this.radTrackBar1.LargeTickFrequency = 10;
 	{{endregion}}
 
@@ -1694,7 +1694,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region LargeTickFrequency}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=LargeTickFrequency}}
 	        Me.RadTrackBar1.LargeTickFrequency = 10
 	        '#End Region
 	
@@ -1779,7 +1779,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region SmallTickFrequency}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=SmallTickFrequency}}
 	            this.radTrackBar1.SmallTickFrequency = 2;
 	{{endregion}}
 
@@ -1787,7 +1787,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region SmallTickFrequency}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=SmallTickFrequency}}
 	        Me.RadTrackBar1.SmallTickFrequency = 2
 	        '#End Region
 	
@@ -1871,7 +1871,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region TrackBarModeSingleThumb}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=TrackBarModeSingleThumb}}
 	            this.radTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.SingleThumb;
 	{{endregion}}
 
@@ -1879,7 +1879,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region TrackBarModeSingleThumb}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=TrackBarModeSingleThumb}}
 	        Me.RadTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.SingleThumb
 	        '#End Region
 	
@@ -1953,7 +1953,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region TrackBarModeStartFromTheBeginning}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=TrackBarModeStartFromTheBeginning}}
 	            this.radTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.StartFromTheBeginning;
 	            this.radTrackBar1.Ranges.Add(new TrackBarRange(0, 5, "MyRange1"));
 	            this.radTrackBar1.Ranges.Add(new TrackBarRange(0, 15, "MyRange2"));
@@ -1963,7 +1963,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region TrackBarModeStartFromTheBeginning}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=TrackBarModeStartFromTheBeginning}}
 	        Me.RadTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.StartFromTheBeginning
 	        Me.RadTrackBar1.Ranges.Add(New TrackBarRange(0, 5, "MyRange1"))
 	        Me.RadTrackBar1.Ranges.Add(New TrackBarRange(0, 15, "MyRange2"))
@@ -2033,7 +2033,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region TrackBarModeRange}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=TrackBarModeRange}}
 	            this.radTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.Range;
 	            this.radTrackBar1.Ranges[0].Start = 2;
 	            this.radTrackBar1.Ranges[0].End = 5;
@@ -2044,7 +2044,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region TrackBarModeRange}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=TrackBarModeRange}}
 	        Me.RadTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.Range
 	        Me.RadTrackBar1.Ranges(0).Start = 2
 	        Me.RadTrackBar1.Ranges(0).[End] = 5
@@ -2111,7 +2111,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region SnapModeOff}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=SnapModeOff}}
 	            this.radTrackBar1.SnapMode = TrackBarSnapModes.SnapToTicks;
 	{{endregion}}
 
@@ -2119,7 +2119,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region SnapModeOff}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=SnapModeOff}}
 	        Me.RadTrackBar1.SnapMode = TrackBarSnapModes.SnapToTicks
 	        '#End Region
 	
@@ -2177,7 +2177,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region ThumbSize}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=ThumbSize}}
 	            this.radTrackBar1.ThumbSize = new Size(16, 18);
 	{{endregion}}
 
@@ -2185,7 +2185,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region ThumbSize}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=ThumbSize}}
 	        Me.RadTrackBar1.ThumbSize = New Size(16, 18)
 	        '#End Region
 	
@@ -2241,7 +2241,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[C#]__
 
-{{region showSlideAreaFalse}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=showSlideAreaFalse}}
 	            this.radTrackBar1.ShowSlideArea = false;
 	{{endregion}}
 
@@ -2249,7 +2249,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 #### __[VB.NET]__
 
-{{region showSlideAreaFalse}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=showSlideAreaFalse}}
 	        Me.RadTrackBar1.ShowSlideArea = False
 	        '#End Region
 	
@@ -2420,7 +2420,7 @@ There are several events that you will find useful in the context of RadTrackBar
 
 #### __[C#]__
 
-{{region TickFormattingEvent}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=TickFormattingEvent}}
 	        void radTrackBar1_TickFormatting(object sender, TickFormattingEventArgs e)
 	        {
 	            e.TickElement.Line1.BackColor = Color.Red;
@@ -2431,7 +2431,7 @@ There are several events that you will find useful in the context of RadTrackBar
 
 #### __[VB.NET]__
 
-{{region TickFormattingEvent}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=TickFormattingEvent}}
 	    Private Sub radTrackBar1_TickFormatting(sender As Object, e As TickFormattingEventArgs)
 	        e.TickElement.Line1.BackColor = Color.Red
 	    End Sub
@@ -2452,7 +2452,7 @@ There are several events that you will find useful in the context of RadTrackBar
 
 #### __[C#]__
 
-{{region LabelFormattingEvent}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=LabelFormattingEvent}}
 	        void radTrackBar1_LabelFormatting(object sender, LabelFormattingEventArgs e)
 	        {
 	            e.LabelElement.ForeColor = Color.Red;
@@ -2463,7 +2463,7 @@ There are several events that you will find useful in the context of RadTrackBar
 
 #### __[VB.NET]__
 
-{{region LabelFormattingEvent}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=LabelFormattingEvent}}
 	    Private Sub radTrackBar1_LabelFormatting(sender As Object, e As LabelFormattingEventArgs)
 	        e.LabelElement.ForeColor = Color.Red
 	    End Sub

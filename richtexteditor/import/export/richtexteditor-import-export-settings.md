@@ -80,7 +80,7 @@ __HtmlExportSettings__ provide the following options:
 
 #### __[C#] __
 
-{{region html}}
+{{source=..\SamplesCS\RichTextEditor\ImportExport\Settings.cs region=html}}
 	            
 	            HtmlExportSettings htmlExportSettings = new HtmlExportSettings();
 	            htmlExportSettings.PropertiesToIgnore["span"].Add("color");
@@ -121,7 +121,7 @@ __HtmlExportSettings__ provide the following options:
 
 #### __[VB.NET] __
 
-{{region html}}
+{{source=..\SamplesVB\RichTextEditor\ImportExport\Settings.vb region=html}}
 	
 	        Dim htmlExportSettings As New HtmlExportSettings()
 	        htmlExportSettings.PropertiesToIgnore("span").Add("color")
@@ -224,7 +224,7 @@ Here are some examples for using the settings in code-behind:
 
 #### __[C#] __
 
-{{region setup}}
+{{source=..\SamplesCS\RichTextEditor\ImportExport\Settings.cs region=setup}}
 	
 	        public void SetupDefaultHtmlFormatProvider()
 	        {
@@ -246,7 +246,7 @@ Here are some examples for using the settings in code-behind:
 
 #### __[VB.NET] __
 
-{{region setup}}
+{{source=..\SamplesVB\RichTextEditor\ImportExport\Settings.vb region=setup}}
 	
 	    Public Sub SetupDefaultHtmlFormatProvider()
 	        'Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
@@ -339,7 +339,7 @@ __RtfFormatProvider__ has __ImportSettings__, which provide an event - __FontSub
 
 #### __[C#] __
 
-{{region rtf}}
+{{source=..\SamplesCS\RichTextEditor\ImportExport\Settings.cs region=rtf}}
 	        void Settings_Load(object sender, EventArgs e)
 	        {
 	            RtfFormatProvider rtfFormatProvider = DocumentFormatProvidersManager.GetProviderByExtension("rtf") as RtfFormatProvider;
@@ -361,7 +361,7 @@ __RtfFormatProvider__ has __ImportSettings__, which provide an event - __FontSub
 
 #### __[VB.NET] __
 
-{{region rtf}}
+{{source=..\SamplesVB\RichTextEditor\ImportExport\Settings.vb region=rtf}}
 	    Private Sub Settings_Load(ByVal sender As Object, ByVal e As EventArgs)
 	        Dim rtfFormatProvider As RtfFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("rtf"), RtfFormatProvider)
 	        Dim rtfImportSettings As New RtfImportSettings()
@@ -421,7 +421,7 @@ Here is an example how you can get a reference to the format provider used by th
 
 #### __[C#] __
 
-{{region docx}}
+{{source=..\SamplesCS\RichTextEditor\ImportExport\Settings.cs region=docx}}
 	        public void SetupDefaultDocxFormatProvider()
 	        {
 	            //Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
@@ -437,7 +437,7 @@ Here is an example how you can get a reference to the format provider used by th
 
 #### __[VB.NET] __
 
-{{region docx}}
+{{source=..\SamplesVB\RichTextEditor\ImportExport\Settings.vb region=docx}}
 	    Public Sub SetupDefaultDocxFormatProvider()
 	        'Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
 	        Dim docxFormatProvider As DocxFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("docx"), DocxFormatProvider)

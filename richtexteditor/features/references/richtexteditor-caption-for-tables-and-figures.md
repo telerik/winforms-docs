@@ -83,7 +83,7 @@ The __CaptionDefinition__ class contains viable information for the creation of 
 
 #### __[C#] __
 
-{{region insert1}}
+{{source=..\SamplesCS\RichTextEditor\Features\Caption.cs region=insert1}}
 	            CaptionDefinition captionDefinition = new CaptionDefinition();
 	            captionDefinition.Label = "testLabel";
 	            captionDefinition.NumberingFormat = NumberingFormat.Arabic;
@@ -95,7 +95,7 @@ The __CaptionDefinition__ class contains viable information for the creation of 
 
 #### __[VB.NET] __
 
-{{region insert1}}
+{{source=..\SamplesVB\RichTextEditor\Features\Caption.vb region=insert1}}
 	        Dim captionDefinition As New CaptionDefinition()
 	        captionDefinition.Label = "testLabel"
 	        captionDefinition.NumberingFormat = NumberingFormat.Arabic
@@ -116,7 +116,7 @@ The __RadDocument__ contains the two default __CaptionDefinitions__ by default. 
 
 #### __[C#] __
 
-{{region insert2}}
+{{source=..\SamplesCS\RichTextEditor\Features\Caption.cs region=insert2}}
 	            this.radRichTextEditor1.InsertCaption(this.radRichTextEditor1.Document.CaptionDefinitions["Table"], "captionText", true, true);
 	{{endregion}}
 
@@ -124,7 +124,7 @@ The __RadDocument__ contains the two default __CaptionDefinitions__ by default. 
 
 #### __[VB.NET] __
 
-{{region insert2}}
+{{source=..\SamplesVB\RichTextEditor\Features\Caption.vb region=insert2}}
 	        Me.radRichTextEditor1.InsertCaption(Me.radRichTextEditor1.Document.CaptionDefinitions("Table"), "captionText", True, True)
 	        '#End Region
 	    End Sub

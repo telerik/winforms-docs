@@ -46,7 +46,7 @@ Here is an example of how to select the current word.
 
 #### __[C#] __
 
-{{region position}}
+{{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=position}}
 	            
 	            DocumentPosition startPosition = this.radRichTextEditor1.Document.CaretPosition; //new DocumentPosition( this.radRichTextBox.Document );
 	            DocumentPosition endPosition = new DocumentPosition(startPosition);
@@ -61,7 +61,7 @@ Here is an example of how to select the current word.
 
 #### __[VB.NET] __
 
-{{region position}}
+{{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=position}}
 	
 	
 	        Dim _startPosition As DocumentPosition = Me.radRichTextEditor1.Document.CaretPosition 'new DocumentPosition( this.radRichTextBox.Document );
@@ -103,7 +103,7 @@ Here is an example of selecting each "RadRichTextEditor" word in the text. This 
 
 #### __[C#] __
 
-{{region multiselect}}
+{{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=multiselect}}
 	                
 	            DocumentPosition position = new DocumentPosition(this.radRichTextEditor1.Document);
 	            do
@@ -126,7 +126,7 @@ Here is an example of selecting each "RadRichTextEditor" word in the text. This 
 
 #### __[VB.NET] __
 
-{{region multiselect}}
+{{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=multiselect}}
 	
 	        Dim position As New DocumentPosition(Me.radRichTextEditor1.Document)
 	        Do

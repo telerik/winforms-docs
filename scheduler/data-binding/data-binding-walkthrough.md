@@ -94,7 +94,7 @@ In order to programatically map the fields of your data source to the correct pr
 
 #### __[C#]__
 
-{{region creatingMappings}}
+{{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=creatingMappings}}
 	            AppointmentMappingInfo appointmentMappingInfo = new AppointmentMappingInfo();
 	            appointmentMappingInfo.BackgroundId = "BackgroundID";
 	            appointmentMappingInfo.Description = "Description";
@@ -119,7 +119,7 @@ In order to programatically map the fields of your data source to the correct pr
 
 #### __[VB.NET]__
 
-{{region creatingMappings}}
+{{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=creatingMappings}}
 	        Dim appointmentMappingInfo As New AppointmentMappingInfo()
 	        appointmentMappingInfo.BackgroundId = "BackgroundID"
 	        appointmentMappingInfo.Description = "Description"
@@ -148,7 +148,7 @@ To retrieve the data, first we need to fill the data set:
 
 #### __[C#]__
 
-{{region fillingAdapters}}
+{{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=fillingAdapters}}
 	            this.resourcesTableAdapter.Fill(this.schedulerDataDataSet.Resources);
 	            this.appointmentsResourcesTableAdapter.Fill(this.schedulerDataDataSet.AppointmentsResources);
 	            this.appointmentsTableAdapter.Fill(this.schedulerDataDataSet.Appointments);
@@ -158,7 +158,7 @@ To retrieve the data, first we need to fill the data set:
 
 #### __[VB.NET]__
 
-{{region fillingAdapters}}
+{{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=fillingAdapters}}
 	        Me.ResourcesTableAdapter.Fill(Me.SchedulerDataDataSet.Resources)
 	        Me.AppointmentsResourcesTableAdapter.Fill(Me.SchedulerDataDataSet.AppointmentsResources)
 	        Me.AppointmentsTableAdapter.Fill(Me.SchedulerDataDataSet.Appointments)
@@ -177,7 +177,7 @@ Now we need to assign the Appointments and Resources tables from the data set to
 
 #### __[C#]__
 
-{{region AssignAppointmentsAndResources}}
+{{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=AssignAppointmentsAndResources}}
 	            schedulerBindingDataSource1.ResourceProvider.DataSource = schedulerDataDataSet.Resources;
 	            schedulerBindingDataSource1.EventProvider.DataSource = schedulerDataDataSet.Appointments;
 	{{endregion}}
@@ -186,7 +186,7 @@ Now we need to assign the Appointments and Resources tables from the data set to
 
 #### __[VB.NET]__
 
-{{region AssignAppointmentsAndResources}}
+{{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=AssignAppointmentsAndResources}}
 	        SchedulerBindingDataSource1.ResourceProvider.DataSource = SchedulerDataDataSet.Resources
 	        SchedulerBindingDataSource1.EventProvider.DataSource = SchedulerDataDataSet.Appointments
 	{{endregion}}
@@ -199,7 +199,7 @@ Finally, we assign our SchedulerBindingDataSource instance to RadScheduler as it
 
 #### __[C#]__
 
-{{region dataSource}}
+{{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=dataSource}}
 	            radScheduler1.DataSource = schedulerBindingDataSource1;
 	{{endregion}}
 
@@ -207,7 +207,7 @@ Finally, we assign our SchedulerBindingDataSource instance to RadScheduler as it
 
 #### __[VB.NET]__
 
-{{region dataSource}}
+{{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=dataSource}}
 	        RadScheduler1.DataSource = SchedulerBindingDataSource1
 	{{endregion}}
 
@@ -234,7 +234,7 @@ Add the following code to the Click event handler for an "Update" button, which 
 
 #### __[C#]__
 
-{{region update}}
+{{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=update}}
 	        private void btnUpdate_Click(object sender, EventArgs e)
 	        {
 	            appointmentsResourcesTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
@@ -341,7 +341,7 @@ Add the following code to the Click event handler for an "Update" button, which 
 
 #### __[VB.NET]__
 
-{{region update}}
+{{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=update}}
 	    Private Sub btnUpdate_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        AppointmentsResourcesTableAdapter.Adapter.AcceptChangesDuringUpdate = False
 	

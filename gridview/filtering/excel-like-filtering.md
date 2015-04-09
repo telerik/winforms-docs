@@ -25,7 +25,7 @@ Enabling the excel-like filtering is quite easy. You have to set the grid’s pr
 
 #### __[C#] Enabling Excel-like filtering__
 
-{{region excel-like filtering}}
+{{source=..\SamplesCS\GridView\Filtering\Excel-like Filtering.cs region=excel-like filtering}}
 	            this.radGridView1.EnableFiltering = true;
 	            this.radGridView1.MasterTemplate.ShowHeaderCellButtons = true;
 	            this.radGridView1.MasterTemplate.ShowFilteringRow = false;
@@ -35,7 +35,7 @@ Enabling the excel-like filtering is quite easy. You have to set the grid’s pr
 
 #### __[VB.NET] Enabling Excel-like filtering__
 
-{{region excel-like filtering}}
+{{source=..\SamplesVB\GridView\Filtering\Excel-like Filtering.vb region=excel-like filtering}}
 	        Me.RadGridView1.EnableFiltering = True
 	        Me.RadGridView1.MasterTemplate.ShowHeaderCellButtons = True
 	        Me.RadGridView1.MasterTemplate.ShowFilteringRow = False
@@ -56,7 +56,7 @@ After enabling the Excel-like filtering feature, you may decide that you do not
 
 #### __[C#]__
 
-{{region allowFiltering}}
+{{source=..\SamplesCS\GridView\Filtering\Excel-like Filtering.cs region=allowFiltering}}
 	            this.radGridView1.Columns["ContactName"].AllowFiltering = false;
 	{{endregion}}
 
@@ -64,7 +64,7 @@ After enabling the Excel-like filtering feature, you may decide that you do not
 
 #### __[VB.NET]__
 
-{{region allowFiltering}}
+{{source=..\SamplesVB\GridView\Filtering\Excel-like Filtering.vb region=allowFiltering}}
 	        Me.RadGridView1.Columns("ContactName").AllowFiltering = False
 	{{endregion}}
 
@@ -91,7 +91,7 @@ The following code demonstrates how to clear the default custom items, and how t
 
 #### __[C#]__
 
-{{region CalendarFilterPopup}}
+{{source=..\SamplesCS\GridView\Filtering\Excel-like Filtering2.cs region=CalendarFilterPopup}}
 	        void radGridView1_FilterPopupRequired(object sender, Telerik.WinControls.UI.FilterPopupRequiredEventArgs e)
 	        {
 	            if (e.FilterPopup is RadDateFilterPopup)
@@ -109,7 +109,7 @@ The following code demonstrates how to clear the default custom items, and how t
 
 #### __[VB.NET]__
 
-{{region CalendarFilterPopup}}
+{{source=..\SamplesVB\GridView\Filtering\Excel-like Filtering2.vb region=CalendarFilterPopup}}
 	    Private Sub radGridView1_FilterPopupRequired(sender As Object, e As Telerik.WinControls.UI.FilterPopupRequiredEventArgs) Handles RadGridView1.FilterPopupRequired
 	        If TypeOf e.FilterPopup Is RadDateFilterPopup Then
 	            Dim popup As RadDateFilterPopup = DirectCast(e.FilterPopup, RadDateFilterPopup)
@@ -130,7 +130,7 @@ This popup allows easy and fast filtering based on simple list and one-click fil
 
 #### __[C#]__
 
-{{region SimpleListPopup}}
+{{source=..\SamplesCS\GridView\Filtering\Excel-like Filtering2.cs region=SimpleListPopup}}
 	        void radGridView1_FilterPopupRequired1(object sender, Telerik.WinControls.UI.FilterPopupRequiredEventArgs e)
 	        {
 	            if (e.Column.Name == "ShipCountry")
@@ -144,7 +144,7 @@ This popup allows easy and fast filtering based on simple list and one-click fil
 
 #### __[VB.NET]__
 
-{{region SimpleListPopup}}
+{{source=..\SamplesVB\GridView\Filtering\Excel-like Filtering2.vb region=SimpleListPopup}}
 	    Private Sub radGridView1_FilterPopupRequired1(sender As Object, e As Telerik.WinControls.UI.FilterPopupRequiredEventArgs) Handles RadGridView1.FilterPopupRequired
 	        If e.Column.Name = "ShipCountry" Then
 	            e.FilterPopup = New RadSimpleListFilterPopup(e.Column)
@@ -165,7 +165,7 @@ This pop allows representation of date values grouped by year and month in a lis
 
 #### __[C#]__
 
-{{region GroupedDatesPopup}}
+{{source=..\SamplesCS\GridView\Filtering\Excel-like Filtering2.cs region=GroupedDatesPopup}}
 	        void radGridView1_FilterPopupRequired2(object sender, Telerik.WinControls.UI.FilterPopupRequiredEventArgs e)
 	        {
 	            if (e.Column.Name == "OrderDate")
@@ -179,7 +179,7 @@ This pop allows representation of date values grouped by year and month in a lis
 
 #### __[VB.NET]__
 
-{{region GroupedDatesPopup}}
+{{source=..\SamplesVB\GridView\Filtering\Excel-like Filtering2.vb region=GroupedDatesPopup}}
 	    Private Sub radGridView1_FilterPopupRequired2(sender As Object, e As Telerik.WinControls.UI.FilterPopupRequiredEventArgs) Handles RadGridView1.FilterPopupRequired
 	        If e.Column.Name = "OrderDate" Then
 	            e.FilterPopup = New RadListFilterPopup(e.Column, True)

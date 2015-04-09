@@ -26,7 +26,7 @@ To explicitly set the Work Week to be the default view which the user sees on 
 
 #### __[C#]__
 
-{{region activeViewType}}
+{{source=..\SamplesCS\Scheduler\Views\WeekView.cs region=activeViewType}}
 	            this.radScheduler1.ActiveViewType = SchedulerViewType.Week;
 	{{endregion}}
 
@@ -34,7 +34,7 @@ To explicitly set the Work Week to be the default view which the user sees on 
 
 #### __[VB.NET]__
 
-{{region activeViewType}}
+{{source=..\SamplesVB\Scheduler\Views\WeekView.vb region=activeViewType}}
 	        Me.RadScheduler1.ActiveViewType = SchedulerViewType.Week
 	        '#End Region
 	
@@ -132,7 +132,7 @@ To get the instance to the SchedulerWeek view from the RadScheduler object, eith
 
 #### __[C#]__
 
-{{region weekView}}
+{{source=..\SamplesCS\Scheduler\Views\WeekView.cs region=weekView}}
 	            SchedulerWeekView weekView = this.radScheduler1.GetWeekView();
 	{{endregion}}
 
@@ -140,7 +140,7 @@ To get the instance to the SchedulerWeek view from the RadScheduler object, eith
 
 #### __[VB.NET]__
 
-{{region weekView}}
+{{source=..\SamplesVB\Scheduler\Views\WeekView.vb region=weekView}}
 	        Dim weekView As SchedulerWeekView = Me.RadScheduler1.GetWeekView()
 	        '			#End Region
 	
@@ -230,7 +230,7 @@ To get the instance to the SchedulerWeek view from the RadScheduler object, eith
 
 #### __[C#]__
 
-{{region activeView}}
+{{source=..\SamplesCS\Scheduler\Views\WeekView.cs region=activeView}}
 	            this.radScheduler1.ActiveViewType = SchedulerViewType.Week;
 	{{endregion}}
 
@@ -238,7 +238,7 @@ To get the instance to the SchedulerWeek view from the RadScheduler object, eith
 
 #### __[VB.NET]__
 
-{{region activeView}}
+{{source=..\SamplesVB\Scheduler\Views\WeekView.vb region=activeView}}
 	        If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Week Then
 	            Dim activeWeekView As SchedulerWeekView = CType(Me.RadScheduler1.ActiveView, SchedulerWeekView)
 	        End If
@@ -324,7 +324,7 @@ By default the weekends are shown, but you can hide them by using the __ShowWee
 
 #### __[C#]__
 
-{{region showWeekend}}
+{{source=..\SamplesCS\Scheduler\Views\WeekView.cs region=showWeekend}}
 	            weekView.ShowWeekend = false;
 	{{endregion}}
 
@@ -332,7 +332,7 @@ By default the weekends are shown, but you can hide them by using the __ShowWee
 
 #### __[VB.NET]__
 
-{{region showWeekend}}
+{{source=..\SamplesVB\Scheduler\Views\WeekView.vb region=showWeekend}}
 	        weekView.ShowWeekend = False
 	        '#End Region
 	

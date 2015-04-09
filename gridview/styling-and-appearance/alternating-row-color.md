@@ -22,7 +22,7 @@ In order to enable the feature, you should set the EnableAlternatingRowColor pro
 
 #### __[C#] Enable alternating row color__
 
-{{region alternatingColor}}
+{{source=..\SamplesCS\GridView\StylingAndAppearance\AlternatingRowColor1.cs region=alternatingColor}}
 	            this.radGridView1.EnableAlternatingRowColor = true;
 	{{endregion}}
 
@@ -30,7 +30,7 @@ In order to enable the feature, you should set the EnableAlternatingRowColor pro
 
 #### __[VB.NET] Enable alternating row color__
 
-{{region alternatingColor}}
+{{source=..\SamplesVB\GridView\StylingAndAppearance\AlternatingRowColor1.vb region=alternatingColor}}
 	        Me.RadGridView1.EnableAlternatingRowColor = True
 	{{endregion}}
 
@@ -40,7 +40,7 @@ In order to change the default alternating row color, set the AlternatingRowColo
 
 #### __[C#] Changing the alternating row color__
 
-{{region changeAlternatingRow}}
+{{source=..\SamplesCS\GridView\StylingAndAppearance\AlternatingRowColor1.cs region=changeAlternatingRow}}
 	            ((GridTableElement)this.radGridView1.TableElement).AlternatingRowColor = Color.Yellow;
 	{{endregion}}
 
@@ -48,7 +48,7 @@ In order to change the default alternating row color, set the AlternatingRowColo
 
 #### __[VB.NET] Changing the alternating row color__
 
-{{region changeAlternatingRow}}
+{{source=..\SamplesVB\GridView\StylingAndAppearance\AlternatingRowColor1.vb region=changeAlternatingRow}}
 	        CType(Me.RadGridView1.TableElement, GridTableElement).AlternatingRowColor = Color.Yellow
 	{{endregion}}
 

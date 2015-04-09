@@ -5,7 +5,7 @@ description: Hlc
 slug: chartview-series-types-hlc
 tags: hlc
 published: True
-position: 13
+position: 14
 ---
 
 # Hlc
@@ -29,7 +29,7 @@ Here is how to setup the __Hlc__ series:
 
 #### __[C#] __
 
-{{region hlc}}
+{{source=..\SamplesCS\ChartView\Series\HlcSeriesForm.cs region=hlc}}
 	             HlcSeries hlcSeries = new HlcSeries();
 	             hlcSeries.DataPoints.Add(new HlcDataPoint(11, 7, 8, DateTime.Now));
 	             hlcSeries.DataPoints.Add(new HlcDataPoint(9, 5, 9, DateTime.Now.AddDays(1)));
@@ -42,7 +42,7 @@ Here is how to setup the __Hlc__ series:
 
 #### __[VB.NET] __
 
-{{region hlc}}
+{{source=..\SamplesVB\ChartView\Series\HlcSeriesForm.vb region=hlc}}
 	        Dim hlcSeries As New HlcSeries()
 	        hlcSeries.DataPoints.Add(New HlcDataPoint(11, 7, 8, DateTime.Now))
 	        hlcSeries.DataPoints.Add(New HlcDataPoint(9, 5, 9, DateTime.Now.AddDays(1)))

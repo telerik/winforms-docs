@@ -27,7 +27,7 @@ Initially the layout looks like this:![command-bar-save-and-load-layout 001](ima
 
 #### __[C#] Save RadCommandBar layout__
 
-{{region saveLayout}}
+{{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=saveLayout}}
 	        private void radButton1_Click(object sender, EventArgs e)
 	        {
 	            string s = "default.xml";
@@ -48,7 +48,7 @@ Initially the layout looks like this:![command-bar-save-and-load-layout 001](ima
 
 #### __[VB.NET] Save RadCommandBar layout__
 
-{{region saveLayout}}
+{{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=saveLayout}}
 	    Private Sub RadButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
 	        Dim s As String = "default.xml"
 	        Dim dialog As New SaveFileDialog()
@@ -70,7 +70,7 @@ The code snippets below demonstrate how you can implement a *Load Layout* button
 
 #### __[C#] Load RadCommandBar layout__
 
-{{region loadLayout}}
+{{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=loadLayout}}
 	        private void radButton2_Click(object sender, EventArgs e)
 	        {
 	            string s = "default.xml";
@@ -91,7 +91,7 @@ The code snippets below demonstrate how you can implement a *Load Layout* button
 
 #### __[VB.NET] Load RadCommandBar layout__
 
-{{region loadLayout}}
+{{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=loadLayout}}
 	    Private Sub RadButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton2.Click
 	        Dim s As String = "default.xml"
 	        Dim dialog As New OpenFileDialog()
@@ -121,7 +121,7 @@ The following example demonstrates how you can save the layout settings of a Rad
 
 #### __[C#] Example scenario__
 
-{{region autoLoadLayoutOnFormLoad}}
+{{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=autoLoadLayoutOnFormLoad}}
 	        private void SaveAndLoadLayout1_Load(object sender, EventArgs e)
 	        {
 	            if (File.Exists("MyLayout.xml"))
@@ -135,7 +135,7 @@ The following example demonstrates how you can save the layout settings of a Rad
 
 #### __[VB.NET] Example scenario__
 
-{{region autoLoadLayoutOnFormLoad}}
+{{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=autoLoadLayoutOnFormLoad}}
 	    Private Sub SaveAndLoadLayout_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        If File.Exists("MyLayout.xml") Then
 	            Me.RadCommandBar1.CommandBarElement.LoadLayout("MyLayout.xml")

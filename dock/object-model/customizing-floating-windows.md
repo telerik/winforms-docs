@@ -33,7 +33,7 @@ In order to enable the Maximize and Minimize buttons for a FloatingWindow,
 
 #### __[C#]__
 
-{{region buttons}}
+{{source=..\SamplesCS\Dock\CustomizingFloatingWindows.cs region=buttons}}
 	        void radDock1_FloatingWindowCreated1(object sender, Telerik.WinControls.UI.Docking.FloatingWindowEventArgs e)
 	        {
 	            e.Window.MaximizeBox = true;
@@ -46,7 +46,7 @@ In order to enable the Maximize and Minimize buttons for a FloatingWindow,
 
 #### __[VB.NET]__
 
-{{region buttons}}
+{{source=..\SamplesVB\Dock\CustomizingFloatingWindows.vb region=buttons}}
 	    Private Sub radDock1_FloatingWindowCreated1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Docking.FloatingWindowEventArgs)
 	        e.Window.MaximizeBox = True
 	        e.Window.MinimizeBox = True
@@ -88,7 +88,7 @@ Sometimes, you may want to prevent the FloatingWindow from being always on top
 
 #### __[C#]__
 
-{{region customFloatingWindow}}
+{{source=..\SamplesCS\Dock\CustomFloatingWindow.cs region=customFloatingWindow}}
 	    public class CustomFloatingWindow : FloatingWindow
 	    {
 	        public CustomFloatingWindow(RadDock dockManager)
@@ -113,7 +113,7 @@ Sometimes, you may want to prevent the FloatingWindow from being always on top
 
 #### __[VB.NET]__
 
-{{region customFloatingWindow}}
+{{source=..\SamplesVB\Dock\CustomFloatingWindow.vb region=customFloatingWindow}}
 	Public Class CustomFloatingWindow
 	    Inherits FloatingWindow
 	    Public Sub New(ByVal dockManager As RadDock)
@@ -139,7 +139,7 @@ Finally, we have to pass an instance of the custom FloatingWindow to the event a
 
 #### __[C#]__
 
-{{region showBehind}}
+{{source=..\SamplesCS\Dock\CustomizingFloatingWindows.cs region=showBehind}}
 	        void radDock1_FloatingWindowCreated2(object sender, Telerik.WinControls.UI.Docking.FloatingWindowEventArgs e)
 	        {
 	            CustomFloatingWindow customWindow = new CustomFloatingWindow(this.radDock1);
@@ -151,7 +151,7 @@ Finally, we have to pass an instance of the custom FloatingWindow to the event a
 
 #### __[VB.NET]__
 
-{{region showBehind}}
+{{source=..\SamplesVB\Dock\CustomizingFloatingWindows.vb region=showBehind}}
 	    Private Sub radDock1_FloatingWindowCreated2(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Docking.FloatingWindowEventArgs)
 	        Dim customWindow As New CustomFloatingWindow(Me.RadDock1)
 	        e.Window = customWindow
@@ -182,7 +182,7 @@ FloatingWindow is a descendant class of RadForm. As such, FloatingWindow has the
 
 #### __[C#]__
 
-{{region themeName}}
+{{source=..\SamplesCS\Dock\CustomizingFloatingWindows.cs region=themeName}}
 	        void radDock1_FloatingWindowCreated3(object sender, Telerik.WinControls.UI.Docking.FloatingWindowEventArgs e)
 	        {
 	            e.Window.ThemeName = "TelerikMetroBlue";
@@ -193,7 +193,7 @@ FloatingWindow is a descendant class of RadForm. As such, FloatingWindow has the
 
 #### __[VB.NET]__
 
-{{region themeName}}
+{{source=..\SamplesVB\Dock\CustomizingFloatingWindows.vb region=themeName}}
 	    Private Sub radDock1_FloatingWindowCreated3(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Docking.FloatingWindowEventArgs)
 	        e.Window.ThemeName = "TelerikMetroBlue"
 	    End Sub

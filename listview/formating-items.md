@@ -27,7 +27,7 @@ Items appearance in __RadListView__ can be customized by making use of the
 
 #### __[C#] Customizing items__
 
-{{region VisualItemFormatting}}
+{{source=..\SamplesCS\ListView\ListViewFormattingItems.cs region=VisualItemFormatting}}
 	        
 	        Font font = new Font("Consolas", 14, FontStyle.Bold);
 	        
@@ -57,7 +57,7 @@ Items appearance in __RadListView__ can be customized by making use of the
 
 #### __[VB.NET] Customizing items__
 
-{{region VisualItemFormatting}}
+{{source=..\SamplesVB\ListView\ListViewFormattingItems.vb region=VisualItemFormatting}}
 	    Private font As New Font("Consolas", 14, FontStyle.Bold)
 	    Private Sub radListView1_VisualItemFormatting(sender As Object, e As Telerik.WinControls.UI.ListViewVisualItemEventArgs)
 	        If e.VisualItem.Selected Then
@@ -93,7 +93,7 @@ Let’s assume that the __RadListView__ is bound to the *Products* table from th
 
 #### __[C#] Customizing cells__
 
-{{region CellFormatting}}
+{{source=..\SamplesCS\ListView\ListViewFormattingItems.cs region=CellFormatting}}
 	        
 	        private void ListViewFormattingItems_Load(object sender, EventArgs e)
 	        {
@@ -136,7 +136,7 @@ Let’s assume that the __RadListView__ is bound to the *Products* table from th
 
 #### __[VB.NET] Customizing cells__
 
-{{region CellFormatting}}
+{{source=..\SamplesVB\ListView\ListViewFormattingItems.vb region=CellFormatting}}
 	    Private Sub FormattingItems_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 	        Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
 	        Me.RadListView1.DataSource = Me.ProductsBindingSource

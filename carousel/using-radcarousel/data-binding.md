@@ -31,7 +31,7 @@ The example below creates a generic list of an object called "Feature". "Feature
 
 #### __[C#] The Features Object__
 
-{{region createGenericListClass}}
+{{source=..\SamplesCS\Carousel\CarouselDataBinding.cs region=createGenericListClass}}
 	    public class Features
 	    {
 	        public Features(int id, string name)
@@ -58,7 +58,7 @@ The example below creates a generic list of an object called "Feature". "Feature
 
 #### __[VB.NET] The Features Object__
 
-{{region createGenericListClass}}
+{{source=..\SamplesVB\Carousel\CarouselDataBinding.vb region=createGenericListClass}}
 	Public Class Features
 	    Public Sub New(ByVal id As Integer, ByVal name As String)
 	        _id = id
@@ -88,7 +88,7 @@ The example below creates a generic list of an object called "Feature". "Feature
 
 #### __[C#] Binding RadCarousel to Generic List__
 
-{{region bindingCarousel}}
+{{source=..\SamplesCS\Carousel\CarouselDataBinding.cs region=bindingCarousel}}
 	        private void CarouselDataBinding_Load(object sender, EventArgs e)
 	        {
 	            // Describe the carousel path
@@ -143,7 +143,7 @@ The example below creates a generic list of an object called "Feature". "Feature
 
 #### __[VB.NET] Binding RadCarousel to Generic List__
 
-{{region bindingCarousel}}
+{{source=..\SamplesVB\Carousel\CarouselDataBinding.vb region=bindingCarousel}}
 	    Private Sub CarouselDataBinding_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.Load
 	        ' Describe the carousel path
 	        Dim CarouselBezierPath1 As Telerik.WinControls.UI.CarouselBezierPath = New Telerik.WinControls.UI.CarouselBezierPath

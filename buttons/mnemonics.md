@@ -20,7 +20,7 @@ All you need to do is to specify the character that will be used for a given co
 
 #### __[C#]__
 
-{{region mnemonics}}
+{{source=..\SamplesCS\Buttons\Button.cs region=mnemonics}}
 	
 	            this.radButton1.Text = "&radButton1";
 	
@@ -30,7 +30,7 @@ All you need to do is to specify the character that will be used for a given co
 
 #### __[VB.NET]__
 
-{{region mnemonics}}
+{{source=..\SamplesVB\Buttons\Button.vb region=mnemonics}}
 	        Me.radButton1.Text = "&radButton1"
 	{{endregion}}
 

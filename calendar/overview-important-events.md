@@ -50,7 +50,7 @@ This event is fired when a day, week, month or year is changed.
 
 #### __[C#] Responding to SelectionChanged__
 
-{{region respondingToEvents}}
+{{source=..\SamplesCS\Calendar\Calendar1.cs region=respondingToEvents}}
 	        void radCalendar1_SelectionChanged(object sender, EventArgs e)
 	        {
 	            radListControl1.Items.Add(new RadListDataItem(radCalendar1.SelectedDate.ToShortDateString().ToString()));
@@ -61,7 +61,7 @@ This event is fired when a day, week, month or year is changed.
 
 #### __[VB.NET] Responding to SelectionChanged__
 
-{{region respondingToEvents}}
+{{source=..\SamplesVB\Calendar\Calendar1.vb region=respondingToEvents}}
 	    Private Sub radCalendar1_SelectionChanged(ByVal sender As Object, ByVal e As EventArgs)
 	        RadListControl1.Items.Add(New RadListDataItem(RadCalendar1.SelectedDate.ToShortDateString().ToString()))
 	    End Sub

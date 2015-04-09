@@ -23,7 +23,7 @@ For this purpose __RadCheckedDropDownList__ has the __TokenValidating__ event. I
 
 #### __[C#] Subscibe for TokenValidating__
 
-{{region Subscribe}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.cs region=Subscribe}}
 	            this.radCheckedDropDownList1.TokenValidating += radCheckedDropDownList1_TokenValidating;
 	{{endregion}}
 
@@ -31,7 +31,7 @@ For this purpose __RadCheckedDropDownList__ has the __TokenValidating__ event. I
 
 #### __[VB.NET] Subscibe for TokenValidating__
 
-{{region Subscribe}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.vb region=Subscribe}}
 	        AddHandler Me.RadCheckedDropDownList1.TokenValidating, AddressOf radCheckedDropDownList1_TokenValidating
 	        '#End Region
 	    End Sub
@@ -53,7 +53,7 @@ For this purpose __RadCheckedDropDownList__ has the __TokenValidating__ event. I
 
 #### __[C#] Add non-existing items__
 
-{{region Handler}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.cs region=Handler}}
 	        void radCheckedDropDownList1_TokenValidating(object sender, TokenValidatingEventArgs e)
 	        {
 	            if (!e.IsValidToken)
@@ -72,7 +72,7 @@ For this purpose __RadCheckedDropDownList__ has the __TokenValidating__ event. I
 
 #### __[VB.NET] Add non-existing items__
 
-{{region Handler}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.vb region=Handler}}
 	    Private Sub radCheckedDropDownList1_TokenValidating(sender As Object, e As TokenValidatingEventArgs)
 	        If Not e.IsValidToken Then
 	            Dim textBox As AutoCompleteBoxViewElement = TryCast(sender, AutoCompleteBoxViewElement)

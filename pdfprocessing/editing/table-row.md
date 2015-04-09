@@ -30,7 +30,7 @@ The code snippet in __Example 1__ shows how to create a table and add a single r
 
 #### __[C#] Example 1: Create TableRow__
 
-{{region radpdfprocessing-editing-tablerow_0}}
+{{source=..\SamplesCS\PdfProcessing\Editing\TableRow1.cs region=radpdfprocessing-editing-tablerow_0}}
 	            Table table = new Table();
 	            TableRow tableRow = table.Rows.AddTableRow();
 	{{endregion}}
@@ -39,7 +39,7 @@ The code snippet in __Example 1__ shows how to create a table and add a single r
 
 #### __[VB.NET] Example 1: Create TableRow__
 
-{{region radpdfprocessing-editing-tablerow_0}}
+{{source=..\SamplesVB\PdfProcessing\Editing\TableRow1.vb region=radpdfprocessing-editing-tablerow_0}}
 	        Dim table As New Table()
 	        Dim tableRow As TableRow = table.Rows.AddTableRow()
 	        '#End Region
@@ -64,7 +64,7 @@ __Example 2__ shows how to add two cells in a row and get the cells count.
 
 #### __[C#] Example 2: Access Cells in a TableRow__
 
-{{region radpdfprocessing-editing-tablerow_1}}
+{{source=..\SamplesCS\PdfProcessing\Editing\TableRow1.cs region=radpdfprocessing-editing-tablerow_1}}
 	            TableCell firstCell = tableRow.Cells.AddTableCell();
 	            TableCell secondCell = tableRow.Cells.AddTableCell();
 	            int cellsInRowCount = tableRow.Cells.Count;
@@ -74,7 +74,7 @@ __Example 2__ shows how to add two cells in a row and get the cells count.
 
 #### __[VB.NET] Example 2: Access Cells in a TableRow__
 
-{{region radpdfprocessing-editing-tablerow_1}}
+{{source=..\SamplesVB\PdfProcessing\Editing\TableRow1.vb region=radpdfprocessing-editing-tablerow_1}}
 	        Dim firstCell As TableCell = tableRow.Cells.AddTableCell()
 	        Dim secondCell As TableCell = tableRow.Cells.AddTableCell()
 	        Dim cellsInRowCount As Integer = tableRow.Cells.Count

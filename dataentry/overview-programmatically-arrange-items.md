@@ -27,7 +27,7 @@ Items in __RadDataEntry__ can be arranged both at design time and run time. At d
 
 #### __[C#] __
 
-{{region empl1}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}}
 	        private class Employee
 	        {
 	            public string FirstName
@@ -78,7 +78,7 @@ Items in __RadDataEntry__ can be arranged both at design time and run time. At d
 
 #### __[VB.NET] __
 
-{{region empl1}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}}
 	        Private Class Employee
 	            Public Property FirstName() As String
 	                Get
@@ -173,7 +173,7 @@ Items in __RadDataEntry__ can be arranged both at design time and run time. At d
 
 #### __[C#] __
 
-{{region bind1}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}}
 	            this.radDataEntry1.DataSource = new Employee() 
 	            { 
 	                FirstName = "Sarah",
@@ -189,7 +189,7 @@ Items in __RadDataEntry__ can be arranged both at design time and run time. At d
 
 #### __[VB.NET] __
 
-{{region bind1}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}}
 	            Me.radDataEntry1.DataSource = New Employee() With { _
 	              .FirstName = "Sarah", _
 	              .LastName = "Blake", _
@@ -212,7 +212,7 @@ Items in __RadDataEntry__ can be arranged both at design time and run time. At d
 
 #### __[C#] __
 
-{{region ItemInitialized}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=ItemInitialized}}
 	        void radDataEntry1_ItemInitialized(object sender, Telerik.WinControls.UI.ItemInitializedEventArgs e)
 	        {
 	            if (e.Panel.Controls[1].Text == "FirstName")
@@ -237,7 +237,7 @@ Items in __RadDataEntry__ can be arranged both at design time and run time. At d
 
 #### __[VB.NET] __
 
-{{region ItemInitialized}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=ItemInitialized}}
 	        Private Sub radDataEntry1_ItemInitialized(sender As Object, e As Telerik.WinControls.UI.ItemInitializedEventArgs)
 	            If e.Panel.Controls(1).Text = "FirstName" Then
 	                e.Panel.Size = New Size(150, 25)

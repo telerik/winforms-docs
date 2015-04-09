@@ -20,7 +20,7 @@ The RadGanttView __TimelineItemFormatting__event allows you to format the style 
 
 #### __[C#] __
 
-{{region TimelineItemFormatting}}
+{{source=..\SamplesCS\GanttView\Formatting\TimelineItemFormatting.cs region=TimelineItemFormatting}}
 	        private void radGanttView1_TimelineItemFormatting(object sender, GanttViewTimelineItemFormattingEventArgs e)
 	        {
 	            CultureInfo currentCulture = CultureInfo.CurrentCulture;
@@ -54,7 +54,7 @@ The RadGanttView __TimelineItemFormatting__event allows you to format the style 
 
 #### __[VB.NET] __
 
-{{region TimelineItemFormatting}}
+{{source=..\SamplesVB\GanttView\Formatting\TimelineItemFormatting.vb region=TimelineItemFormatting}}
 	    Private Sub radGanttView1_TimelineItemFormatting(sender As Object, e As GanttViewTimelineItemFormattingEventArgs)
 	        Dim currentCulture As CultureInfo = CultureInfo.CurrentCulture
 	        Dim weekNo As Integer = currentCulture.Calendar.GetWeekOfYear(e.Item.Start, currentCulture.DateTimeFormat.CalendarWeekRule, currentCulture.DateTimeFormat.FirstDayOfWeek)

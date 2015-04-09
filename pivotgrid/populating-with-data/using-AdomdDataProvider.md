@@ -65,7 +65,7 @@ To show data in RadPivotGrid and RadPivotFieldList we have to connect to OLAP Cu
 
 #### __[C#] __
 
-{{region DefininingAdomdDataProvider}}
+{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingAdomdDataProvider.cs region=DefininingAdomdDataProvider}}
 	            AdomdDataProvider provider = new AdomdDataProvider();
 	            AdomdConnectionSettings settings = new AdomdConnectionSettings();
 	
@@ -80,7 +80,7 @@ To show data in RadPivotGrid and RadPivotFieldList we have to connect to OLAP Cu
 
 #### __[VB.NET] __
 
-{{region DefininingAdomdDataProvider}}
+{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingAdomdDataProvider.vb region=DefininingAdomdDataProvider}}
 	        Dim provider As New AdomdDataProvider()
 	        Dim settings As New AdomdConnectionSettings()
 	
@@ -126,7 +126,7 @@ The AdomdAggregateDescription is used to define data that has to be aggregated a
 
 #### __[C#] __
 
-{{region DefiningDescriptors}}
+{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingAdomdDataProvider.cs region=DefiningDescriptors}}
 	            provider.BeginInit();
 	
 	            provider.RowGroupDescriptions.Add(new AdomdGroupDescription() { MemberName = "[Date].[Calendar Year]" });
@@ -146,7 +146,7 @@ The AdomdAggregateDescription is used to define data that has to be aggregated a
 
 #### __[VB.NET] __
 
-{{region DefiningDescriptors}}
+{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingAdomdDataProvider.vb region=DefiningDescriptors}}
 	        provider.BeginInit()
 	
 	        provider.RowGroupDescriptions.Add(New AdomdGroupDescription() With { _

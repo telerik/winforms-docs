@@ -23,7 +23,7 @@ The watermark preview dialog allows the user to set up the watermark of the asso
 
 #### __[C#]__
 
-{{region WaterMark}}
+{{source=..\SamplesCS\TPF\Printing support\End-user functionality\WatermarkPreviewDialog1.cs region=WaterMark}}
 	            RadPrintDocument document = new RadPrintDocument();
 	            document.AssociatedObject = this.radGridView1;
 	
@@ -35,7 +35,7 @@ The watermark preview dialog allows the user to set up the watermark of the asso
 
 #### __[VB.NET]__
 
-{{region WaterMark}}
+{{source=..\SamplesVB\TPF\Printing support\End-user functionality\WatermarkPreviewDialog1.vb region=WaterMark}}
 	        Dim document As New RadPrintDocument()
 	        document.AssociatedObject = Me.RadGridView1
 	

@@ -25,7 +25,7 @@ __RadRibbonBar.StartButtonImage__ property defines the image used in the Applica
 
 #### __[C#] Assign image to start button__
 
-{{region assignImageToStartButton}}
+{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.cs region=assignImageToStartButton}}
 	            radRibbonBar1.StartButtonImage = new Bitmap("..\\..\\DataSources\\star.png");
 	{{endregion}}
 
@@ -33,7 +33,7 @@ __RadRibbonBar.StartButtonImage__ property defines the image used in the Applica
 
 #### __[VB.NET] Assign image to start button__
 
-{{region assignImageToStartButton}}
+{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=assignImageToStartButton}}
 	        RadRibbonBar1.StartButtonImage = New Bitmap("..\\..\\DataSources\\star.png")
 	{{endregion}}
 
@@ -50,7 +50,7 @@ For example to create a new RadMenuItem and add it to the application menu use t
 
 #### __[C#] Creating and add new menu item__
 
-{{region addingItemsToTheApplicationMenu1}}
+{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.cs region=addingItemsToTheApplicationMenu1}}
 	            RadMenuItem mnuNew = new RadMenuItem("New File");
 	            mnuNew.Click += new EventHandler(NewFile);
 	            radRibbonBar1.StartMenuItems.Add(mnuNew);
@@ -60,7 +60,7 @@ For example to create a new RadMenuItem and add it to the application menu use t
 
 #### __[VB.NET] Creating and add new menu item__
 
-{{region addingItemsToTheApplicationMenu1}}
+{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=addingItemsToTheApplicationMenu1}}
 	        Dim mnuNew As New RadMenuItem("New File")
 	        AddHandler mnuNew.Click, AddressOf NewFile
 	        RadRibbonBar1.StartMenuItems.Add(mnuNew)
@@ -74,7 +74,7 @@ For example to create a new RadMenuItem and add it to the application menu use t
 
 #### __[C#] Handle the menu item click event__
 
-{{region addingItemsToTheApplicationMenu2}}
+{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.cs region=addingItemsToTheApplicationMenu2}}
 	        void NewFile(object sender, EventArgs e)
 	        {
 	            MessageBox.Show("New File code goes here"); 
@@ -85,7 +85,7 @@ For example to create a new RadMenuItem and add it to the application menu use t
 
 #### __[VB.NET] Handle the menu item click event__
 
-{{region addingItemsToTheApplicationMenu2}}
+{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=addingItemsToTheApplicationMenu2}}
 	    Private Sub NewFile(sender As Object, e As EventArgs)
 	        MessageBox.Show("New File code goes here")
 	    End Sub
@@ -100,7 +100,7 @@ To place items in the right column of the Application Menu use __RadRibbonBar.St
 
 #### __[C#] Adding items to the right column__
 
-{{region addingItemsToTheRightColumn}}
+{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.cs region=addingItemsToTheRightColumn}}
 	            RadMenuItem mnuRecentDocs = new RadMenuItem("Recent Documents");
 	            mnuRecentDocs.Enabled = false;
 	            radRibbonBar1.StartMenuRightColumnItems.Add(mnuRecentDocs);   
@@ -110,7 +110,7 @@ To place items in the right column of the Application Menu use __RadRibbonBar.St
 
 #### __[VB.NET] Adding items to the right column__
 
-{{region addingItemsToTheRightColumn}}
+{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=addingItemsToTheRightColumn}}
 	        Dim mnuRecentDocs As New RadMenuItem("Recent Documents")
 	        mnuRecentDocs.Enabled = False
 	        RadRibbonBar1.StartMenuRightColumnItems.Add(mnuRecentDocs)
@@ -128,7 +128,7 @@ This code adds a new __RadMenuItem__, __mnuPrint__, to the Start Menu. Then an
 
 #### __[C#] Adding menu items with sub items__
 
-{{region addingItemsWithSubItems}}
+{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.cs region=addingItemsWithSubItems}}
 	            RadMenuItem mnuPrint = new RadMenuItem("Print");
 	            //add Print menu item to the Start Menu 
 	            radRibbonBar1.StartMenuItems.Add(mnuPrint);
@@ -149,7 +149,7 @@ This code adds a new __RadMenuItem__, __mnuPrint__, to the Start Menu. Then an
 
 #### __[VB.NET] Adding menu items with sub items__
 
-{{region addingItemsWithSubItems}}
+{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=addingItemsWithSubItems}}
 	        Dim mnuPrint As New RadMenuItem("Print")
 	        'add Print menu item to the Start Menu 
 	        RadRibbonBar1.StartMenuItems.Add(mnuPrint)
@@ -183,7 +183,7 @@ The ApplicationMenu of RadRibbonBar supports wrapping of the
 
 #### __[C#]__
 
-{{region menuItemsTexts}}
+{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.cs region=menuItemsTexts}}
 	            this.LongNameFileMenuItem.Text = "This is a file with a veeeeeeeery veeeeery long name.png";
 	
 	            this.UntitledFileMenuItem.DescriptionText = "C:\\Program Files (x86)\\Telerik\\RadControls for WinForms Q3 2012\\Resources\\Untitled.png";
@@ -194,7 +194,7 @@ The ApplicationMenu of RadRibbonBar supports wrapping of the
 
 #### __[VB.NET]__
 
-{{region menuItemsTexts}}
+{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=menuItemsTexts}}
 	        Me.LongNameFileMenuItem.Text = "This is a file with a veeeeeeeery veeeeery long name.png"
 	
 	        Me.UntitledFileMenuItem.DescriptionText = "C:\\Program Files (x86)\\Telerik\\RadControls for WinForms Q3 2012\\Resources\\Untitled.png"
@@ -210,7 +210,7 @@ So, as mentioned above, we should set the TextWrap and MaxSize properties of the
 
 #### __[C#]__
 
-{{region settingUpSizes}}
+{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.cs region=settingUpSizes}}
 	            this.radRibbonBar1.RibbonBarElement.ApplicationMenuRightColumnWidth = 180;
 	
 	            this.LongNameFileMenuItem.Layout.Text.TextWrap = true;
@@ -224,7 +224,7 @@ So, as mentioned above, we should set the TextWrap and MaxSize properties of the
 
 #### __[VB.NET]__
 
-{{region settingUpSizes}}
+{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=settingUpSizes}}
 	        Me.RadRibbonBar1.RibbonBarElement.ApplicationMenuRightColumnWidth = 180
 	
 	        Me.LongNameFileMenuItem.Layout.Text.TextWrap = True

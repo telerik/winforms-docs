@@ -29,7 +29,7 @@ Sorting in RadListControl is controlled via the __SortStyle__ property. It suppo
 
 #### __[C#] Sorting__
 
-{{region sorting}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=sorting}}
 	            radListControl1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending;
 	{{endregion}}
 
@@ -37,7 +37,7 @@ Sorting in RadListControl is controlled via the __SortStyle__ property. It suppo
 
 #### __[VB.NET] Sorting__
 
-{{region sorting}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=sorting}}
 	        radListControl1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending
 	{{endregion}}
 
@@ -58,7 +58,7 @@ RadListControl can filter which items are currently visible by using the __Filte
 
 #### __[C#] Filtering method body__
 
-{{region filteringMethod}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=filteringMethod}}
 	        private bool FilterMethod(RadListDataItem itemToFilter)
 	        {
 	            return itemToFilter.Text.EndsWith("SomeString");
@@ -69,7 +69,7 @@ RadListControl can filter which items are currently visible by using the __Filte
 
 #### __[VB.NET] Filtering method body__
 
-{{region filteringMethod}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=filteringMethod}}
 	    Private Function FilterMethod(ByVal itemToFilter As RadListDataItem) As Boolean
 	        Return itemToFilter.Text.EndsWith("SomeString")
 	    End Function
@@ -79,7 +79,7 @@ RadListControl can filter which items are currently visible by using the __Filte
 
 #### __[C#] Setting the Filter property__
 
-{{region filtering}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=filtering}}
 	            radListControl1.Filter = FilterMethod;
 	{{endregion}}
 
@@ -87,7 +87,7 @@ RadListControl can filter which items are currently visible by using the __Filte
 
 #### __[VB.NET] Setting the Filter property__
 
-{{region filtering}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=filtering}}
 	        radListControl1.Filter = AddressOf FilterMethod
 	{{endregion}}
 
@@ -109,7 +109,7 @@ RadListControl can search for an item with the FindString() and FindStringExact(
 
 #### __[C#] Searching__
 
-{{region searching}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=searching}}
 	            int index = radListControl1.FindString("someitem");
 	{{endregion}}
 
@@ -117,7 +117,7 @@ RadListControl can search for an item with the FindString() and FindStringExact(
 
 #### __[VB.NET] Searching__
 
-{{region searching}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=searching}}
 	        Dim index As Integer = radListControl1.FindString("someitem")
 	{{endregion}}
 
@@ -129,7 +129,7 @@ This method call will return the index of the first item with "someitem" as its 
 
 #### __[C#] Searching__
 
-{{region index}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=index}}
 	            int index = radListControl1.FindString("someitem", 5);
 	{{endregion}}
 
@@ -137,7 +137,7 @@ This method call will return the index of the first item with "someitem" as its 
 
 #### __[VB.NET] Searching__
 
-{{region index}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=index}}
 	        Dim index As Integer = radListControl1.FindString("someitem", 5)
 	{{endregion}}
 
@@ -200,7 +200,7 @@ __RadListControl__ supports alternating item color which can be easily enabled b
 
 #### __[C#]__
 
-{{region alternating}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=alternating}}
 	            radListControl1.EnableAlternatingItemColor = true;
 	            radListControl1.ListElement.AlternatingItemColor = Color.Red;
 	{{endregion}}
@@ -209,7 +209,7 @@ __RadListControl__ supports alternating item color which can be easily enabled b
 
 #### __[VB.NET]__
 
-{{region alternating}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=alternating}}
 	        radListControl1.EnableAlternatingItemColor = True
 	        radListControl1.ListElement.AlternatingItemColor = Color.Red
 	        '#End Region

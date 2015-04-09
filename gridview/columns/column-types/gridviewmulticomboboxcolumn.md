@@ -29,7 +29,7 @@ First of
 
 #### __[C#] Creating and setting up GridViewMultiComboBoxColumn__
 
-{{region addColumn}}
+{{source=..\SamplesCS\GridView\Columns\GridViewMultiComboBoxColumn1.cs region=addColumn}}
 	            GridViewMultiComboBoxColumn col = new GridViewMultiComboBoxColumn();
 	            col.DataSource = orderDetailsBindingSource;
 	            col.DisplayMember = "Quantity";
@@ -44,7 +44,7 @@ First of
 
 #### __[VB.NET] Creating and setting up GridViewMultiComboBoxColumn__
 
-{{region addColumn}}
+{{source=..\SamplesVB\GridView\Columns\GridViewMultiComboBoxColumn1.vb region=addColumn}}
 	        Dim col As GridViewMultiComboBoxColumn = New GridViewMultiComboBoxColumn()
 	        col.DataSource = orderDetailsBindingSource
 	        col.DisplayMember = "Quantity"
@@ -61,7 +61,7 @@ Then, we make the necessary implementation in the CellBeginEdit event handler:
 
 #### __[C#] Setup the editor__
 
-{{region setupTheEditor}}
+{{source=..\SamplesCS\GridView\Columns\GridViewMultiComboBoxColumn1.cs region=setupTheEditor}}
 	        bool isColumnAdded;
 	        void radGridView1_CellBeginEdit(object sender, GridViewCellCancelEventArgs e)
 	        {
@@ -84,7 +84,7 @@ Then, we make the necessary implementation in the CellBeginEdit event handler:
 
 #### __[VB.NET] Setup the editor__
 
-{{region setupTheEditor}}
+{{source=..\SamplesVB\GridView\Columns\GridViewMultiComboBoxColumn1.vb region=setupTheEditor}}
 	    Private isColumnAdded As Boolean
 	    Private Sub radGridView1_CellBeginEdit(ByVal sender As Object, ByVal e As GridViewCellCancelEventArgs)
 	        If TypeOf Me.radGridView1.CurrentColumn Is GridViewMultiComboBoxColumn Then

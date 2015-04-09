@@ -21,7 +21,7 @@ The columns of RadListView are stored in a collection that is accessible through
 
 #### __[C#] Adding items__
 
-{{region addItems}}
+{{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=addItems}}
 	            this.radListView1.Items.Add(new ListViewDataItem("Item 1"));
 	            this.radListView1.Items.Add("Item 2");
 	{{endregion}}
@@ -30,7 +30,7 @@ The columns of RadListView are stored in a collection that is accessible through
 
 #### __[VB.NET] Adding items__
 
-{{region addItems}}
+{{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=addItems}}
 	        Me.RadListView1.Items.Add(New ListViewDataItem("Item 1"))
 	        Me.RadListView1.Items.Add("Item 2")
 	{{endregion}}
@@ -47,7 +47,7 @@ The columns of RadListView are stored in a collection that is accessible through
 
 #### __[C#] Adding columns__
 
-{{region addColumns}}
+{{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=addColumns}}
 	            this.radListView1.Columns.Add("Column1");
 	            this.radListView1.Columns.Add("Column2", "Column2Header");
 	            this.radListView1.Columns.Add(new ListViewDetailColumn("Column3", "Column3Header"));
@@ -57,7 +57,7 @@ The columns of RadListView are stored in a collection that is accessible through
 
 #### __[VB.NET] Adding columns__
 
-{{region addColumns}}
+{{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=addColumns}}
 	        Me.RadListView1.Columns.Add("Column1")
 	        Me.RadListView1.Columns.Add("Column2", "Column2Header")
 	        Me.RadListView1.Columns.Add(New ListViewDetailColumn("Column3", "Column3Header"))
@@ -72,7 +72,7 @@ The columns are visualized when RadListView is in __DetailView__ mode. You can
 
 #### __[C#] Populating cells__
 
-{{region populateCells}}
+{{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=populateCells}}
 	            ListViewDataItem item = this.radListView1.Items[0];
 	            //it is important that you add the item to the control prior assigning its cell's values, so it will have its cells schema
 	            radListView1.Items.Add(item);
@@ -86,7 +86,7 @@ The columns are visualized when RadListView is in __DetailView__ mode. You can
 
 #### __[VB.NET] Populating cells__
 
-{{region populateCells}}
+{{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=populateCells}}
 	        Dim item As ListViewDataItem = Me.RadListView1.Items(0)
 	        'it is important that you add the item to the control prior assigning its cell's values, so it will have its cells schema
 	        RadListView1.Items.Add(item)
@@ -110,7 +110,7 @@ Aside from using __GroupDescriptors__, custom groups can also be added to RadLis
 
 #### __[C#] Adding groups__
 
-{{region addGroups}}
+{{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=addGroups}}
 	            this.radListView1.Groups.Add(new ListViewDataItemGroup("First Group"));
 	            this.radListView1.Groups.Add(new ListViewDataItemGroup("Second Group"));
 	{{endregion}}
@@ -119,7 +119,7 @@ Aside from using __GroupDescriptors__, custom groups can also be added to RadLis
 
 #### __[VB.NET] Adding groups__
 
-{{region addGroups}}
+{{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=addGroups}}
 	        Me.RadListView1.Groups.Add(New ListViewDataItemGroup("First Group"))
 	        Me.RadListView1.Groups.Add(New ListViewDataItemGroup("Second Group"))
 	{{endregion}}
@@ -130,7 +130,7 @@ In order to assign an item to a group, you should set the item’s __Group__ pro
 
 #### __[C#] Assign item to a group__
 
-{{region assignItemToAGroup}}
+{{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=assignItemToAGroup}}
 	            this.radListView1.Items[0].Group = this.radListView1.Groups[0];
 	            this.radListView1.Items[1].Group = this.radListView1.Groups[0];
 	            this.radListView1.Items[2].Group = this.radListView1.Groups[1];
@@ -141,7 +141,7 @@ In order to assign an item to a group, you should set the item’s __Group__ pro
 
 #### __[VB.NET] Assign item to a group__
 
-{{region assignItemToAGroup}}
+{{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=assignItemToAGroup}}
 	        Me.RadListView1.Items(0).Group = Me.RadListView1.Groups(0)
 	        Me.RadListView1.Items(1).Group = Me.RadListView1.Groups(0)
 	        Me.RadListView1.Items(2).Group = Me.RadListView1.Groups(1)

@@ -22,7 +22,7 @@ In order to customize the editable area you must subscribe to the __TextBlockFor
 
 #### __[C#] Subscribe to TextBlockFormatting__
 
-{{region TextBlockFormattingSubscribe}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\Customization1.cs region=TextBlockFormattingSubscribe}}
 	            this.radCheckedDropDownList1.TextBlockFormatting += radCheckedDropDownList1_TextBlockFormatting;
 	{{endregion}}
 
@@ -30,7 +30,7 @@ In order to customize the editable area you must subscribe to the __TextBlockFor
 
 #### __[VB.NET] Subscribe to TextBlockFormatting__
 
-{{region TextBlockFormattingSubscribe}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=TextBlockFormattingSubscribe}}
 	        AddHandler Me.RadCheckedDropDownList1.TextBlockFormatting, AddressOf radCheckedDropDownList1_TextBlockFormatting
 	        '#End Region
 	
@@ -67,7 +67,7 @@ In order to customize the editable area you must subscribe to the __TextBlockFor
 
 #### __[C#] Modify properties__
 
-{{region TextBlockFormattingHandler}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\Customization1.cs region=TextBlockFormattingHandler}}
 	        void radCheckedDropDownList1_TextBlockFormatting(object sender, TextBlockFormattingEventArgs e)
 	        {
 	            TokenizedTextBlockElement token = e.TextBlock as TokenizedTextBlockElement;
@@ -85,7 +85,7 @@ In order to customize the editable area you must subscribe to the __TextBlockFor
 
 #### __[VB.NET] Modify properties__
 
-{{region TextBlockFormattingHandler}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=TextBlockFormattingHandler}}
 	    Private Sub radCheckedDropDownList1_TextBlockFormatting(sender As Object, e As TextBlockFormattingEventArgs)
 	        Dim token As TokenizedTextBlockElement = TryCast(e.TextBlock, TokenizedTextBlockElement)
 	        If token IsNot Nothing Then
@@ -118,7 +118,7 @@ Customizing the drop down items is similar. Subscribe to the __VisualListItemFor
 
 #### __[C#] Subscribe to VisualListItemFormatting__
 
-{{region VisualListItemFormattingSubscribe}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\Customization1.cs region=VisualListItemFormattingSubscribe}}
 	            this.radCheckedDropDownList1.VisualListItemFormatting += radCheckedDropDownList1_VisualListItemFormatting;
 	{{endregion}}
 
@@ -126,7 +126,7 @@ Customizing the drop down items is similar. Subscribe to the __VisualListItemFor
 
 #### __[VB.NET] Subscribe to VisualListItemFormatting__
 
-{{region VisualListItemFormattingSubscribe}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=VisualListItemFormattingSubscribe}}
 	        AddHandler Me.RadCheckedDropDownList1.VisualListItemFormatting, AddressOf radCheckedDropDownList1_VisualListItemFormatting
 	        '#End Region
 	    End Sub
@@ -159,7 +159,7 @@ Customizing the drop down items is similar. Subscribe to the __VisualListItemFor
 
 #### __[C#] Modify properties__
 
-{{region VisualListItemFormattingHandler}}
+{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\Customization1.cs region=VisualListItemFormattingHandler}}
 	        void radCheckedDropDownList1_VisualListItemFormatting(object sender, VisualItemFormattingEventArgs args)
 	        {
 	            bool itemChecked = ((RadCheckedListDataItem)args.VisualItem.Data).Checked;
@@ -178,7 +178,7 @@ Customizing the drop down items is similar. Subscribe to the __VisualListItemFor
 
 #### __[VB.NET] Modify properties__
 
-{{region VisualListItemFormattingHandler}}
+{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=VisualListItemFormattingHandler}}
 	    Private Sub radCheckedDropDownList1_VisualListItemFormatting(sender As Object, args As VisualItemFormattingEventArgs)
 	        Dim itemChecked As Boolean = DirectCast(args.VisualItem.Data, RadCheckedListDataItem).Checked
 	        If itemChecked Then

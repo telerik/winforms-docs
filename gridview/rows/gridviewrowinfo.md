@@ -46,7 +46,7 @@ The example below demonstrates the behavior of several of these properties:![gri
 
 #### __[C#] Using GridViewRowInfo__
 
-{{region GridViewRowInfo}}
+{{source=..\SamplesCS\GridView\Rows\GridViewRowInfo1.cs region=GridViewRowInfo}}
 	            GridViewRowInfo lastRow = radGridView1.Rows[radGridView1.Rows.Count - 1];
 	            lastRow.EnsureVisible();
 	            lastRow.IsSelected = true;
@@ -58,7 +58,7 @@ The example below demonstrates the behavior of several of these properties:![gri
 
 #### __[VB.NET] Using GridViewRowInfo__
 
-{{region GridViewRowInfo}}
+{{source=..\SamplesVB\GridView\Rows\GridViewRowInfo1.vb region=GridViewRowInfo}}
 	        Dim lastRow As GridViewRowInfo = RadGridView1.Rows(RadGridView1.Rows.Count - 1)
 	        lastRow.EnsureVisible()
 	        lastRow.IsSelected = True

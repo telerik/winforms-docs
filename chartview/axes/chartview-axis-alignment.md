@@ -31,7 +31,7 @@ This example sets offset of the horizontal axis along the vertical axis.
 
 #### __[C#] __
 
-{{region one-axis-offset}}
+{{source=..\SamplesCS\ChartView\Axes\AxisAlignmentForm.cs region=one-axis-offset}}
 	                LineSeries tempSeries = new LineSeries();
 	                tempSeries.DataPoints.Add(new CategoricalDataPoint(-3, "Jan"));
 	                tempSeries.DataPoints.Add(new CategoricalDataPoint(-2, "Feb"));
@@ -60,7 +60,7 @@ This example sets offset of the horizontal axis along the vertical axis.
 
 #### __[VB] __
 
-{{region one-axis-offset}}
+{{source=..\SamplesVB\ChartView\Axes\AxisAlignmentForm.vb region=one-axis-offset}}
 	            Dim tempSeries As New LineSeries()
 	            tempSeries.DataPoints.Add(New CategoricalDataPoint(-3, "Jan"))
 	            tempSeries.DataPoints.Add(New CategoricalDataPoint(-2, "Feb"))
@@ -93,7 +93,7 @@ This example sets offset offset of the two axes of the __RadChartView__.
 
 #### __[C#] __
 
-{{region two-axes-offset}}
+{{source=..\SamplesCS\ChartView\Axes\AxisAlignmentForm.cs region=two-axes-offset}}
 	                LineSeries cubicSeries = new LineSeries();
 	                cubicSeries.DataPoints.Add(new CategoricalDataPoint(-27, -3));
 	                cubicSeries.DataPoints.Add(new CategoricalDataPoint(-8, -2));
@@ -117,7 +117,7 @@ This example sets offset offset of the two axes of the __RadChartView__.
 
 #### __[VB] __
 
-{{region two-axes-offset}}
+{{source=..\SamplesVB\ChartView\Axes\AxisAlignmentForm.vb region=two-axes-offset}}
 	            Dim cubicSeries As New LineSeries()
 	            cubicSeries.DataPoints.Add(New CategoricalDataPoint(-27, -3))
 	            cubicSeries.DataPoints.Add(New CategoricalDataPoint(-8, -2))

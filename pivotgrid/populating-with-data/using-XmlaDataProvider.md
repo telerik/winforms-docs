@@ -58,7 +58,7 @@ To show data in RadPivotGrid and RadPivotFieldList we have to connect to OLAP Cu
 
 #### __[C#] __
 
-{{region DefininingXmlaDataProvider}}
+{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingXmlaDataProvider.cs region=DefininingXmlaDataProvider}}
 	            XmlaDataProvider provider = new XmlaDataProvider();
 	            XmlaConnectionSettings settings = new XmlaConnectionSettings();
 	
@@ -73,7 +73,7 @@ To show data in RadPivotGrid and RadPivotFieldList we have to connect to OLAP Cu
 
 #### __[VB.NET] __
 
-{{region DefininingXmlaDataProvider}}
+{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingXmlaDataProvider.vb region=DefininingXmlaDataProvider}}
 	        Dim provider As New XmlaDataProvider()
 	        Dim settings As New XmlaConnectionSettings()
 	
@@ -124,7 +124,7 @@ Here is how to define these decriptors:
 
 #### __[C#] __
 
-{{region DefiningDescriptors}}
+{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingXmlaDataProvider.cs region=DefiningDescriptors}}
 	            provider.BeginInit();
 	
 	            provider.RowGroupDescriptions.Add(new XmlaGroupDescription() { MemberName = "[Date].[Calendar Year]" });
@@ -144,7 +144,7 @@ Here is how to define these decriptors:
 
 #### __[VB.NET] __
 
-{{region DefiningDescriptors}}
+{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingXmlaDataProvider.vb region=DefiningDescriptors}}
 	        provider.BeginInit()
 	
 	        provider.RowGroupDescriptions.Add(New XmlaGroupDescription() With { _

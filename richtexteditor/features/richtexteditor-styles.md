@@ -99,7 +99,7 @@ This is how a Character style can be defined and registered:
 
 #### __[C#] __
 
-{{region style}}
+{{source=..\SamplesCS\RichTextEditor\Features\Styles.cs region=style}}
 	            
 	            StyleDefinition charStyle = new StyleDefinition();
 	            charStyle.Type = StyleType.Character;
@@ -117,7 +117,7 @@ This is how a Character style can be defined and registered:
 
 #### __[VB.NET] __
 
-{{region style}}
+{{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=style}}
 	
 	        Dim charStyle As New StyleDefinition()
 	        charStyle.Type = StyleType.Character
@@ -200,7 +200,7 @@ A paragraph style can be defined as follows:
 
 #### __[C#] __
 
-{{region paragraph}}
+{{source=..\SamplesCS\RichTextEditor\Features\Styles.cs region=paragraph}}
 	
 	            paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1);
 	
@@ -210,7 +210,7 @@ A paragraph style can be defined as follows:
 
 #### __[VB.NET] __
 
-{{region paragraph}}
+{{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=paragraph}}
 	
 	        paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1)
 	
@@ -228,7 +228,7 @@ Linked styles should be used when both properties of Paragraph and Span should b
 
 #### __[C#] __
 
-{{region linked}}
+{{source=..\SamplesCS\RichTextEditor\Features\Styles.cs region=linked}}
 	            
 	            StyleDefinition linkedParagraphStyle = new StyleDefinition();
 	            linkedParagraphStyle.Type = StyleType.Paragraph;
@@ -254,7 +254,7 @@ Linked styles should be used when both properties of Paragraph and Span should b
 
 #### __[VB.NET] __
 
-{{region linked}}
+{{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=linked}}
 	
 	        Dim linkedParagraphStyle As New StyleDefinition()
 	        linkedParagraphStyle.Type = StyleType.Paragraph
@@ -322,7 +322,7 @@ For example, the following line will apply the "linkedParagraphStyle" to the cur
 
 #### __[C#] __
 
-{{region ChangeStyleName}}
+{{source=..\SamplesCS\RichTextEditor\Features\Styles.cs region=ChangeStyleName}}
 	            
 	            this.radRichTextEditor1.RichTextBoxElement.ChangeStyleName("linkedParagraphStyle");
 	            
@@ -332,7 +332,7 @@ For example, the following line will apply the "linkedParagraphStyle" to the cur
 
 #### __[VB.NET] __
 
-{{region ChangeStyleName}}
+{{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=ChangeStyleName}}
 	
 	        Me.radRichTextEditor1.RichTextBoxElement.ChangeStyleName("linkedParagraphStyle")
 	
@@ -386,7 +386,7 @@ For example the __TableGrid__ style can be applied to a table as follows:
 
 #### __[C#] __
 
-{{region table}}
+{{source=..\SamplesCS\RichTextEditor\Features\Styles.cs region=table}}
 	
 	            table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName;
 	
@@ -396,7 +396,7 @@ For example the __TableGrid__ style can be applied to a table as follows:
 
 #### __[VB.NET] __
 
-{{region table}}
+{{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=table}}
 	
 	        table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName
 	
@@ -419,7 +419,7 @@ And a paragraph can have __Heading 1__ style applied to it like this:
 
 #### __[C#] __
 
-{{region paragraph}}
+{{source=..\SamplesCS\RichTextEditor\Features\Styles.cs region=paragraph}}
 	
 	            paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1);
 	
@@ -429,7 +429,7 @@ And a paragraph can have __Heading 1__ style applied to it like this:
 
 #### __[VB.NET] __
 
-{{region paragraph}}
+{{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=paragraph}}
 	
 	        paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1)
 	

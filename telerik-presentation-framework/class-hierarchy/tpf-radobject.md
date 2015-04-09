@@ -30,7 +30,7 @@ __GetValue__and __SetValue__methods are used for getting and setting *local *val
 
 #### __[C#]__
 
-{{region MyRadObject}}
+{{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=MyRadObject}}
 	    internal class MyRadObject : RadObject
 	    {
 	        public static readonly RadProperty HeightProperty =
@@ -57,7 +57,7 @@ __GetValue__and __SetValue__methods are used for getting and setting *local *val
 
 #### __[VB]__
 
-{{region MyRadObject}}
+{{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=MyRadObject}}
 	    Friend Class MyRadObject
 	        Inherits RadObject
 	        Public Shared ReadOnly HeightProperty As RadProperty = RadProperty.Register("Height", GetType(Integer), GetType(MyRadObject), New RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange Or ElementPropertyOptions.AffectsMeasure))
@@ -188,7 +188,7 @@ The code snippet below reset the value of the *HeightProperty *declared in *MyRa
 
 #### __[C#]__
 
-{{region ResetValue}}
+{{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=ResetValue}}
 	            radObject.ResetValue(MyRadObject.HeightProperty);
 	{{endregion}}
 
@@ -196,7 +196,7 @@ The code snippet below reset the value of the *HeightProperty *declared in *MyRa
 
 #### __[VB]__
 
-{{region ResetValue}}
+{{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=ResetValue}}
 	            radObject.ResetValue(MyRadObject.HeightProperty)
 	            '#End Region
 	
@@ -340,7 +340,7 @@ You can pass a second parameter to the __ResetValue__method to specify a reset f
 
 #### __[C#]__
 
-{{region ValueResetFlags}}
+{{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=ValueResetFlags}}
 	    [Flags]
 	    public enum ValueResetFlags
 	    {
@@ -360,7 +360,7 @@ You can pass a second parameter to the __ResetValue__method to specify a reset f
 
 #### __[VB]__
 
-{{region ValueResetFlags}}
+{{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=ValueResetFlags}}
 	    <Flags> _
 	    Public Enum ValueResetFlags
 	        None = 0
@@ -425,7 +425,7 @@ Re-evaluates the property specified as a parameter. In the example below, the He
 
 #### __[C#]__
 
-{{region UpdateValue}}
+{{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=UpdateValue}}
 	            radObject.UpdateValue(MyRadObject.HeightProperty);
 	{{endregion}}
 
@@ -433,7 +433,7 @@ Re-evaluates the property specified as a parameter. In the example below, the He
 
 #### __[VB]__
 
-{{region UpdateValue}}
+{{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=UpdateValue}}
 	            radObject.UpdateValue(MyRadObject.HeightProperty)
 	            '#End Region
 	
@@ -575,7 +575,7 @@ The value source is the reason for the current value. __GetValueSource__method r
 
 #### __[C#]__
 
-{{region ValueSource}}
+{{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=ValueSource}}
 	    public enum ValueSource : short
 	    {
 	        /// <summary>
@@ -621,7 +621,7 @@ The value source is the reason for the current value. __GetValueSource__method r
 
 #### __[VB]__
 
-{{region ValueSource}}
+{{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=ValueSource}}
 	    Public Enum ValueSource As Short
 	        ''' <summary>
 	        ''' Indicates that the reason is unknown.
@@ -671,7 +671,7 @@ Properties can be bound to other properties either one-way or two-way. The code 
 
 #### __[C#]__
 
-{{region BindingProperties}}
+{{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=BindingProperties}}
 	            MyRadObject radObject1 = new MyRadObject();
 	            MyRadObject radObject2 = new MyRadObject();
 	            radObject2.BindProperty(MyRadObject.HeightProperty, radObject1,
@@ -682,7 +682,7 @@ Properties can be bound to other properties either one-way or two-way. The code 
 
 #### __[VB]__
 
-{{region BindingProperties}}
+{{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=BindingProperties}}
 	            Dim radObject1 As New MyRadObject()
 	            Dim radObject2 As New MyRadObject()
 	            radObject2.BindProperty(MyRadObject.HeightProperty, radObject1, MyRadObject.HeightProperty, PropertyBindingOptions.OneWay)
@@ -850,7 +850,7 @@ You need to override *CoerceValue *method:
 
 #### __[C#]__
 
-{{region Coercion}}
+{{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=Coercion}}
 	        protected override object CoerceValue(RadPropertyValue propVal, object baseValue)
 	        {
 	            if (useCoercion && propVal.Property == MyRadObject.HeightProperty)
@@ -866,7 +866,7 @@ You need to override *CoerceValue *method:
 
 #### __[VB]__
 
-{{region Coercion}}
+{{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=Coercion}}
 	        Protected Overrides Function CoerceValue(propVal As RadPropertyValue, baseValue As Object) As Object
 	            If useCoercion AndAlso propVal.Property.Equals(MyRadObject.HeightProperty) Then
 	                'coerce value which for the example sake is integer
@@ -981,7 +981,7 @@ Local values are set and get using __SetValue__and __GetValue__methods:
 
 #### __[C#]__
 
-{{region MyRadObject}}
+{{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=MyRadObject}}
 	    internal class MyRadObject : RadObject
 	    {
 	        public static readonly RadProperty HeightProperty =
@@ -1008,7 +1008,7 @@ Local values are set and get using __SetValue__and __GetValue__methods:
 
 #### __[VB]__
 
-{{region MyRadObject}}
+{{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=MyRadObject}}
 	    Friend Class MyRadObject
 	        Inherits RadObject
 	        Public Shared ReadOnly HeightProperty As RadProperty = RadProperty.Register("Height", GetType(Integer), GetType(MyRadObject), New RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange Or ElementPropertyOptions.AffectsMeasure))
@@ -1136,7 +1136,7 @@ When you define a dependency property, you create a RadElementPropertyMetadata w
 
 #### __[C#]__
 
-{{region DefaultValueProp}}
+{{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=DefaultValueProp}}
 	        public static readonly RadProperty HeightProperty =
 	            RadProperty.Register("Height",
 	            typeof(int),
@@ -1148,7 +1148,7 @@ When you define a dependency property, you create a RadElementPropertyMetadata w
 
 #### __[VB]__
 
-{{region DefaultValueProp}}
+{{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=DefaultValueProp}}
 	        Public Shared ReadOnly HeightProperty As RadProperty = RadProperty.Register("Height", GetType(Integer), GetType(MyRadObject), New RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange Or ElementPropertyOptions.AffectsMeasure))
 	#End Region
 	
@@ -1228,7 +1228,7 @@ In some rare cases, you might want to override the __GetDefaultValue__and specif
 
 #### __[C#]__
 
-{{region DefaultValueMethod}}
+{{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=DefaultValueMethod}}
 	        protected override object GetDefaultValue(RadPropertyValue propVal, object baseDefaultValue)
 	        {
 	            if (propVal.Property == MyRadObject.HeightProperty)
@@ -1244,7 +1244,7 @@ In some rare cases, you might want to override the __GetDefaultValue__and specif
 
 #### __[VB]__
 
-{{region DefaultValueMethod}}
+{{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=DefaultValueMethod}}
 	        Protected Overrides Function GetDefaultValue(propVal As RadPropertyValue, baseDefaultValue As Object) As Object
 	            If propVal.Property.Equals(MyRadObject.HeightProperty) Then
 	                Return 2

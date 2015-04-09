@@ -40,7 +40,7 @@ Now, you need to create a form and add a RadScheduler, in this tutorial it is na
 
 #### __[C#] __
 
-{{region DbContext}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=DbContext}}
 	        private SchedulerDataEntities1 dbContext = new SchedulerDataEntities1();
 	{{endregion}}
 
@@ -48,7 +48,7 @@ Now, you need to create a form and add a RadScheduler, in this tutorial it is na
 
 #### __[VB.NET] __
 
-{{region DbContext}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=DbContext}}
 	    Private dbContext As New SchedulerDataEntities1()
 	#End Region
 	
@@ -144,7 +144,7 @@ Then, we will need a __SchedulerBindingDataSource__, __AppointmentMappingInfo__ 
 
 #### __[C#] __
 
-{{region Mappings}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=Mappings}}
 	            SchedulerBindingDataSource schedulerBindingSource = new SchedulerBindingDataSource();
 	            AppointmentMappingInfo appointmentMappingInfo = new AppointmentMappingInfo();
 	            ResourceMappingInfo resourceMappingInfo = new ResourceMappingInfo();
@@ -154,7 +154,7 @@ Then, we will need a __SchedulerBindingDataSource__, __AppointmentMappingInfo__ 
 
 #### __[VB.NET] __
 
-{{region Mappings}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=Mappings}}
 	        Dim schedulerBindingSource As New SchedulerBindingDataSource()
 	        Dim appointmentMappingInfo As New AppointmentMappingInfo()
 	        Dim resourceMappingInfo As New ResourceMappingInfo()
@@ -242,7 +242,7 @@ Below you can see the code you need to use with *Entity Framework*:
 
 #### __[C#] __
 
-{{region EFCode}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=EFCode}}
 	            dbContext.Appointments.Load();
 	            dbContext.Resources.Load();
 	
@@ -276,7 +276,7 @@ Below you can see the code you need to use with *Entity Framework*:
 
 #### __[VB.NET] __
 
-{{region EFCode}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=EFCode}}
 	        dbContext.Appointments.Load()
 	        dbContext.Resources.Load()
 	
@@ -358,7 +358,7 @@ And the following code needs to be used with *Telerik Data Access*:
 
 #### __[C#] __
 
-{{region TDACode}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=TDACode}}
 	            appointmentMappingInfo.BackgroundId = "BackgroundID";
 	            appointmentMappingInfo.Description = "Description";
 	            appointmentMappingInfo.End = "End";
@@ -387,7 +387,7 @@ And the following code needs to be used with *Telerik Data Access*:
 
 #### __[VB.NET] __
 
-{{region TDACode}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=TDACode}}
 	        appointmentMappingInfo.BackgroundId = "BackgroundID"
 	        appointmentMappingInfo.Description = "Description"
 	        appointmentMappingInfo.[End] = "End"
@@ -434,7 +434,7 @@ The last step that you need to take in order to complete the binding process is 
 
 #### __[C#] __
 
-{{region DataSourceAndGroup}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=DataSourceAndGroup}}
 	            this.scheduler.DataSource = schedulerBindingSource;
 	            this.scheduler.GroupType = GroupType.Resource;
 	{{endregion}}
@@ -443,7 +443,7 @@ The last step that you need to take in order to complete the binding process is 
 
 #### __[VB.NET] __
 
-{{region DataSourceAndGroup}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=DataSourceAndGroup}}
 	        Me.scheduler.DataSource = schedulerBindingSource
 	        '#End Region
 	        Me.scheduler.GroupType = GroupType.Resource
@@ -464,7 +464,7 @@ Saving changes to the database happens when the __SaveChanges__ method of the Db
 
 #### __[C#] __
 
-{{region Closing}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=Closing}}
 	        protected override void OnClosing(CancelEventArgs e)
 	        {
 	            this.dbContext.SaveChanges();
@@ -476,7 +476,7 @@ Saving changes to the database happens when the __SaveChanges__ method of the Db
 
 #### __[VB.NET] __
 
-{{region Closing}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=Closing}}
 	    Protected Overrides Sub OnClosing(e As CancelEventArgs)
 	        Me.dbContext.SaveChanges()
 	        MyBase.OnClosing(e)

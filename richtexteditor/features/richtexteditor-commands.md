@@ -24,7 +24,7 @@ Here is an example with a __RadToggleButton__control.
 
 #### __[C#] __
 
-{{region init}}
+{{source=..\SamplesCS\RichTextEditor\Features\Commands.cs region=init}}
 	        
 	        private RadToggleButton boldButton;
 	        
@@ -49,7 +49,7 @@ Here is an example with a __RadToggleButton__control.
 
 #### __[VB.NET] __
 
-{{region init}}
+{{source=..\SamplesVB\RichTextEditor\Features\Commands.vb region=init}}
 	
 	    Private boldButton As RadToggleButton
 	
@@ -93,7 +93,7 @@ Now every time the button is clicked it will toggle the boldness of the current 
 
 #### __[C#] __
 
-{{region event}}
+{{source=..\SamplesCS\RichTextEditor\Features\Commands.cs region=event}}
 	            
 	        private void Commands_Load(object sender, EventArgs e)
 	        {
@@ -111,7 +111,7 @@ Now every time the button is clicked it will toggle the boldness of the current 
 
 #### __[VB.NET] __
 
-{{region event}}
+{{source=..\SamplesVB\RichTextEditor\Features\Commands.vb region=event}}
 	
 	    Private Sub Commands_Load(ByVal sender As Object, ByVal e As EventArgs)
 	        AddHandler Me.radRichTextEditor1.Commands.ToggleBoldCommand.ToggleStateChanged, AddressOf Me.ToggleBoldCommand_ToggleStateChanged

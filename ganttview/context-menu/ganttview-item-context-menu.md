@@ -21,7 +21,7 @@ RadGanttView allows you to assign an individual context menu on each data item. 
 
 #### __[C#] __
 
-{{region ItemContextMenu}}
+{{source=..\SamplesCS\GanttView\ContextMenus\ItemContextMenu.cs region=ItemContextMenu}}
 	            RadContextMenu contextMenu1 = new RadContextMenu();
 	            contextMenu1.Items.Add(new GanttViewMenuItem("complete", "Mark as complete"));
 	            contextMenu1.Items.Add(new GanttViewMenuItem("started", "Mark as started"));
@@ -40,7 +40,7 @@ RadGanttView allows you to assign an individual context menu on each data item. 
 
 #### __[VB.NET] __
 
-{{region ItemContextMenu}}
+{{source=..\SamplesVB\GanttView\ContextMenus\ItemContextMenu.vb region=ItemContextMenu}}
 	        Dim ContextMenu1 As RadContextMenu = New RadContextMenu()
 	        ContextMenu1.Items.Add(New GanttViewMenuItem("complete", "Mark as complete"))
 	        ContextMenu1.Items.Add(New GanttViewMenuItem("started", "Mark as started"))

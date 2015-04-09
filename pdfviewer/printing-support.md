@@ -28,7 +28,7 @@ RadPdfViewer also exposes the two known methods which allow you to easily print 
 
 #### __[C#] __
 
-{{region PrintMethods}}
+{{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=PrintMethods}}
 	
 	            this.radPdfViewer1.Print();
 	            this.radPdfViewer1.PrintPreview();
@@ -39,7 +39,7 @@ RadPdfViewer also exposes the two known methods which allow you to easily print 
 
 #### __[VB.NET] __
 
-{{region PrintMethods}}
+{{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=PrintMethods}}
 	
 	        Me.RadPdfViewer1.Print()
 	        Me.RadPdfViewer1.PrintPreview()

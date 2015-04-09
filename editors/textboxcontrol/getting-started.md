@@ -31,7 +31,7 @@ The code below sets text in the control at run time:
 
 #### __[C#] __
 
-{{region SetText}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetText}}
 	        private void SetDefaultText()
 	        {
 	            this.radTextBoxControl1.Text = "Type your name here.";
@@ -42,7 +42,7 @@ The code below sets text in the control at run time:
 
 #### __[VB.NET] __
 
-{{region SetText}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetText}}
 	    Private Sub SetDefaultText()
 	        Me.RadTextBoxControl1.Text = "Type your name here."
 	    End Sub
@@ -269,7 +269,7 @@ You can also define the lines in the text box at run time:
 
 #### __[C#] __
 
-{{region Lines}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=Lines}}
 	        private void SetLines()
 	        {
 	            string[] lines = new string[]
@@ -286,7 +286,7 @@ You can also define the lines in the text box at run time:
 
 #### __[VB.NET] __
 
-{{region Lines}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Lines}}
 	    Private Sub SetLines()
 	        Dim lines As String() = New String() {"Dear Sir or Madam,", "I writing to you regarding your publication in Daily Mail.", "Could you give me the resources that you have used?"}
 	        Me.RadTextBoxControl1.Lines = lines
@@ -509,7 +509,7 @@ By setting the __NullText__ property, the control will display a custom
 
 #### __[C#] __
 
-{{region SetNullText}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetNullText}}
 	        private void SetNullText()
 	        {
 	            this.radTextBoxControl1.NullText = "Type your name...";
@@ -520,7 +520,7 @@ By setting the __NullText__ property, the control will display a custom
 
 #### __[VB.NET] __
 
-{{region SetNullText}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetNullText}}
 	    Private Sub SetNullText()
 	        Me.RadTextBoxControl1.NullText = "Type your name..."
 	    End Sub
@@ -735,7 +735,7 @@ Based on the value set to the __TextAlign__ property, the control will display i
 
 #### __[C#] __
 
-{{region SetTextAlign}}
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetTextAlign}}
 	        public void SetTextAlign()
 	        {
 	            this.radTextBoxControl1.TextAlign = HorizontalAlignment.Left;
@@ -746,7 +746,7 @@ Based on the value set to the __TextAlign__ property, the control will display i
 
 #### __[VB.NET] __
 
-{{region SetTextAlign}}
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetTextAlign}}
 	    Private Sub SetTextAlign()
 	        Me.RadTextBoxControl1.TextAlign = HorizontalAlignment.Left
 	    End Sub

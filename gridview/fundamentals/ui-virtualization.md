@@ -37,7 +37,7 @@ Here is a quick sample:
 
 #### __[C#]__
 
-{{region uiVirtualization}}
+{{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=uiVirtualization}}
 	        void radGridView1_CellFormatting3(object sender, CellFormattingEventArgs e)
 	        {
 	            if (e.CellElement.ColumnInfo.Name == "Picture Name")
@@ -76,7 +76,7 @@ Here is a quick sample:
 
 #### __[VB.NET]__
 
-{{region uiVirtualization}}
+{{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=uiVirtualization}}
 	    Private Sub radGridView1_CellFormatting3(ByVal sender As Object, ByVal e As CellFormattingEventArgs) Handles RadGridView1.CellFormatting
 	        If e.CellElement.ColumnInfo.Name = "Picture Name" Then
 	            If e.CellElement.RowInfo.Cells("KBytes").Value IsNot Nothing Then
@@ -134,7 +134,7 @@ Here is a quick sample:
 
 #### __[C#]__
 
-{{region uiVirtStyle}}
+{{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=uiVirtStyle}}
 	            for (int i = 0; i < this.radGridView1.Rows.Count; i++)
 	            {
 	                if (this.radGridView1.Rows[i].Cells["KBytes"].Value != null)
@@ -155,7 +155,7 @@ Here is a quick sample:
 
 #### __[VB.NET]__
 
-{{region uiVirtStyle}}
+{{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=uiVirtStyle}}
 	        For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
 	            If Me.radGridView1.Rows(i).Cells("KBytes").Value IsNot Nothing Then
 	                If CDec(Me.radGridView1.Rows(i).Cells("KBytes").Value) > 30 Then
@@ -183,7 +183,7 @@ Here is a quick sample of how conditional formatting can be set by code:
 
 #### __[C#]__
 
-{{region conditionalFormattingCells}}
+{{source=..\SamplesCS\GridView\Cells\ConditionalFormattingCells.cs region=conditionalFormattingCells}}
 	            ConditionalFormattingObject obj = new ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", false);
 	            obj.CellBackColor = Color.SkyBlue;
 	            obj.CellForeColor = Color.Red;
@@ -195,7 +195,7 @@ Here is a quick sample of how conditional formatting can be set by code:
 
 #### __[VB.NET]__
 
-{{region conditionalFormattingCells}}
+{{source=..\SamplesVB\GridView\Cells\ConditionalFormattingCells.vb region=conditionalFormattingCells}}
 	        Dim obj As New ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", False)
 	        obj.CellBackColor = Color.SkyBlue
 	        obj.CellForeColor = Color.Red

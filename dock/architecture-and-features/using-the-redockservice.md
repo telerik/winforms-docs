@@ -56,7 +56,7 @@ The end-user decides to float some of the ToolWindows:
 
 #### __[C#]__
 
-{{region redockService}}
+{{source=..\SamplesCS\Dock\UsingTheRedockService.cs region=redockService}}
 	        void radButton1_Click(object sender, EventArgs e)
 	        {
 	            RedockService service = this.radDock1.GetService<RedockService>();
@@ -74,7 +74,7 @@ The end-user decides to float some of the ToolWindows:
 
 #### __[VB.NET]__
 
-{{region redockService}}
+{{source=..\SamplesVB\Dock\UsingTheRedockService.vb region=redockService}}
 	    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        Dim service As RedockService = Me.RadDock1.GetService(Of RedockService)()
 	        For Each window As DockWindow In Me.RadDock1.DockWindows

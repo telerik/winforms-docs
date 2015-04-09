@@ -39,7 +39,7 @@ __Example 1__ demonstrates how to create DeflateSettings.
 
 #### __[C#] __
 
-{{region default}}
+{{source=..\SamplesCS\ZipLibrary\CompressionSettings.cs region=default}}
 	            DeflateSettings compressionSettings = new DeflateSettings();
 	            compressionSettings.CompressionLevel = CompressionLevel.Best;
 	            compressionSettings.HeaderType = CompressedStreamHeader.ZLib;
@@ -49,7 +49,7 @@ __Example 1__ demonstrates how to create DeflateSettings.
 
 #### __[VB.NET] __
 
-{{region default}}
+{{source=..\SamplesVB\ZipLibrary\CompressionSettings.vb region=default}}
 	        Dim compressionSettings As New DeflateSettings()
 	        compressionSettings.CompressionLevel = CompressionLevel.Best
 	        compressionSettings.HeaderType = CompressedStreamHeader.ZLib
@@ -106,7 +106,7 @@ The configurable parameters of the __LzmaSettings__ class are as follows:
 
 #### __[C#] __
 
-{{region lzma}}
+{{source=..\SamplesCS\ZipLibrary\CompressionSettings.cs region=lzma}}
 	            LzmaSettings compressionSettings1 = new LzmaSettings();
 	            compressionSettings1.DictionarySize = 23;
 	            compressionSettings1.FastBytes = 32;
@@ -120,7 +120,7 @@ The configurable parameters of the __LzmaSettings__ class are as follows:
 
 #### __[VB.NET] __
 
-{{region lzma}}
+{{source=..\SamplesVB\ZipLibrary\CompressionSettings.vb region=lzma}}
 	        Dim compressionSettings1 As New LzmaSettings()
 	        compressionSettings1.DictionarySize = 23
 	        compressionSettings1.FastBytes = 32
@@ -145,7 +145,7 @@ Store settings are used to just store the data using no compression.
 
 #### __[C#] __
 
-{{region settings}}
+{{source=..\SamplesCS\ZipLibrary\CompressionSettings.cs region=settings}}
 	            StoreSettings compressionSettings2 = new StoreSettings();
 	{{endregion}}
 
@@ -153,7 +153,7 @@ Store settings are used to just store the data using no compression.
 
 #### __[VB.NET] __
 
-{{region settings}}
+{{source=..\SamplesVB\ZipLibrary\CompressionSettings.vb region=settings}}
 	        Dim compressionSettings2 As New StoreSettings()
 	        '#End Region
 	    End Sub

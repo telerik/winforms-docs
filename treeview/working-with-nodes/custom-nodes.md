@@ -24,7 +24,7 @@ With __RadTreeView__ you can create custom nodes and display them instead of the
 
 #### __[C#]__
 
-{{region CustomContentElement}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\CustomNodes.cs region=CustomContentElement}}
 	        
 	    class CustomContentElement : TreeNodeContentElement
 	    {
@@ -150,7 +150,7 @@ With __RadTreeView__ you can create custom nodes and display them instead of the
 
 #### __[VB.NET]__
 
-{{region CustomContentElement}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\CustomNodes.vb region=CustomContentElement}}
 	
 	Class CustomContentElement
 	    Inherits TreeNodeContentElement
@@ -263,7 +263,7 @@ With __RadTreeView__ you can create custom nodes and display them instead of the
 
 #### __[C#]__
 
-{{region CustomTreeNodeElement}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\CustomNodes.cs region=CustomTreeNodeElement}}
 	        
 	    public class CustomTreeNodeElement : TreeNodeElement
 	    {
@@ -304,7 +304,7 @@ With __RadTreeView__ you can create custom nodes and display them instead of the
 
 #### __[VB.NET]__
 
-{{region CustomTreeNodeElement}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\CustomNodes.vb region=CustomTreeNodeElement}}
 	
 	Public Class CustomTreeNodeElement
 	    Inherits TreeNodeElement
@@ -341,7 +341,7 @@ With __RadTreeView__ you can create custom nodes and display them instead of the
 
 #### __[C#]__
 
-{{region CustomNodesLoad}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\CustomNodes.cs region=CustomNodesLoad}}
 	        
 	        private void CustomNodes_Load(object sender, EventArgs e)
 	        {
@@ -382,7 +382,7 @@ With __RadTreeView__ you can create custom nodes and display them instead of the
 
 #### __[VB.NET]__
 
-{{region CustomNodesLoad}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\CustomNodes.vb region=CustomNodesLoad}}
 	
 	    Private Sub CustomNodes_Load(sender As Object, e As EventArgs) Handles Me.Load
 	        Me.ArtistsTableAdapter.Fill(Me.MusicCollectionDataSet.Artists)

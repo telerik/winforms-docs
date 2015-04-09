@@ -24,7 +24,7 @@ Let’s assume that our __RadListView__ is in bound mode and its __ViewType__ pr
 
 #### __[C#] __
 
-{{region PopulateWithData}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropListViewListControl.cs region=PopulateWithData}}
 	            
 	            BindingList<string> items = new BindingList<string>();
 	            for (int i = 0; i < 10; i++)
@@ -45,7 +45,7 @@ Let’s assume that our __RadListView__ is in bound mode and its __ViewType__ pr
 
 #### __[VB.NET] __
 
-{{region PopulateWithData}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropListViewListControl.vb region=PopulateWithData}}
 	
 	        Dim items As New BindingList(Of String)()
 	        For i As Integer = 0 To 9
@@ -198,7 +198,7 @@ To implement drag and drop functionality for this scenario, we will use the List
 
 #### __[C#] __
 
-{{region ListViewToListControl}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropListViewListControl.cs region=ListViewToListControl}}
 	        
 	        private void DragDropService_PreviewDragOver(object sender, Telerik.WinControls.RadDragOverEventArgs e)
 	        {
@@ -238,7 +238,7 @@ To implement drag and drop functionality for this scenario, we will use the List
 
 #### __[VB.NET] __
 
-{{region ListViewToListControl}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropListViewListControl.vb region=ListViewToListControl}}
 	
 	    Private Sub DragDropService_PreviewDragOver(sender As Object, e As Telerik.WinControls.RadDragOverEventArgs)
 	        e.CanDrop = TypeOf e.HitTarget Is RadListElement
@@ -282,7 +282,7 @@ To implement drag and drop functionality for this scenario, we will use the List
 
 #### __[C#] __
 
-{{region ListControlToListViewStart}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropListViewListControl.cs region=ListControlToListViewStart}}
 	        
 	        private Point mouseDownPosition;
 	        private bool isDragging;
@@ -336,7 +336,7 @@ To implement drag and drop functionality for this scenario, we will use the List
 
 #### __[VB.NET] __
 
-{{region ListControlToListViewStart}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropListViewListControl.vb region=ListControlToListViewStart}}
 	
 	    Private mouseDownPosition As Point
 	    Private isDragging As Boolean
@@ -455,7 +455,7 @@ To implement drag and drop functionality for this scenario, we will use the List
 
 #### __[C#] __
 
-{{region ListControlToListViewDragDrop}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropListViewListControl.cs region=ListControlToListViewDragDrop}}
 	        
 	        private void radListView1_DragDrop(object sender, DragEventArgs e)
 	        {
@@ -501,7 +501,7 @@ To implement drag and drop functionality for this scenario, we will use the List
 
 #### __[VB.NET] __
 
-{{region ListControlToListViewDragDrop}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropListViewListControl.vb region=ListControlToListViewDragDrop}}
 	
 	    Private Sub radListView1_DragDrop(sender As Object, e As DragEventArgs)
 	        Dim listView As RadListView = TryCast(sender, RadListView)

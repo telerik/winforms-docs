@@ -27,7 +27,7 @@ For example, you may need to set specific text in the editor when the user press
 
 #### __[C#] How to handle events__
 
-{{region handlingEvents}}
+{{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridHandlingEditorsEvents.cs region=handlingEvents}}
 	        public PropertyGridHandlingEditorsEvents()
 	        {
 	            InitializeComponent();
@@ -68,7 +68,7 @@ For example, you may need to set specific text in the editor when the user press
 
 #### __[VB.NET] How to handle events__
 
-{{region handlingEvents}}
+{{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridHandlingEditorsEvents.vb region=handlingEvents}}
 	    Public Sub New()
 	        InitializeComponent()
 	        AddHandler RadPropertyGrid1.EditorInitialized, AddressOf radPropertyGrid1_EditorInitialized

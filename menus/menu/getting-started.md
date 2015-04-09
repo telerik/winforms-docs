@@ -106,7 +106,7 @@ The following tutorial demonstrates creating a RadMenu with standard menu items 
 
 #### __[C#]__
 
-{{region shortcut}}
+{{source=..\SamplesCS\Menus\Menu\MenuGettingStarted.cs region=shortcut}}
 	            radMenuItem3.Shortcuts.Add(new Telerik.WinControls.RadShortcut(Keys.Control, Keys.N));
 	{{endregion}}
 
@@ -114,7 +114,7 @@ The following tutorial demonstrates creating a RadMenu with standard menu items 
 
 #### __[VB.NET]__
 
-{{region shortcut}}
+{{source=..\SamplesVB\Menus\Menu\MenuGettingStarted.vb region=shortcut}}
 	        RadMenuItem3.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.N))
 	{{endregion}}
 
@@ -134,7 +134,7 @@ The following tutorial demonstrates creating a RadMenu with standard menu items 
 
 #### __[C#]__
 
-{{region clickHandler}}
+{{source=..\SamplesCS\Menus\Menu\MenuGettingStarted.cs region=clickHandler}}
 	        private void radMenuItem3_Click(object sender, EventArgs e)
 	        {
 	            MessageBox.Show("New File");
@@ -145,7 +145,7 @@ The following tutorial demonstrates creating a RadMenu with standard menu items 
 
 #### __[VB.NET]__
 
-{{region clickHandler}}
+{{source=..\SamplesVB\Menus\Menu\MenuGettingStarted.vb region=clickHandler}}
 	    Private Sub RadMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadMenuItem3.Click
 	        MessageBox.Show("New File")
 	    End Sub

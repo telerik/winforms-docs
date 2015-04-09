@@ -86,7 +86,7 @@ Let's now format some data cells. We will make red the SchedulerCellElements
 
 #### __[C#]__
 
-{{region settingRedColor}}
+{{source=..\SamplesCS\Scheduler\Views\FormattingSchedulerCells.cs region=settingRedColor}}
 	        void radScheduler1_CellFormatting1(object sender, Telerik.WinControls.UI.SchedulerCellEventArgs e)
 	        {
 	            if (e.CellElement.Date.Month == 4 && e.CellElement.Date.Day == 13)
@@ -103,7 +103,7 @@ Let's now format some data cells. We will make red the SchedulerCellElements
 
 #### __[VB.NET]__
 
-{{region settingRedColor}}
+{{source=..\SamplesVB\Scheduler\Views\FormattingSchedulerCells.vb region=settingRedColor}}
 	    Private Sub radScheduler1_CellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.SchedulerCellEventArgs)
 	        If e.CellElement.Date.Month = 4 AndAlso e.CellElement.Date.Day = 13 Then
 	            If Not (TypeOf e.CellElement Is SchedulerHeaderCellElement) Then
@@ -165,7 +165,7 @@ As you can see, undesired cells become red as well. RadScheduler is using elemen
 
 #### __[C#]__
 
-{{region resettingRedColor}}
+{{source=..\SamplesCS\Scheduler\Views\FormattingSchedulerCells.cs region=resettingRedColor}}
 	        void radScheduler1_CellFormatting2(object sender, Telerik.WinControls.UI.SchedulerCellEventArgs e)
 	        {
 	            if (e.CellElement.Date.Month == 4 && e.CellElement.Date.Day == 13)
@@ -189,7 +189,7 @@ As you can see, undesired cells become red as well. RadScheduler is using elemen
 
 #### __[VB.NET]__
 
-{{region resettingRedColor}}
+{{source=..\SamplesVB\Scheduler\Views\FormattingSchedulerCells.vb region=resettingRedColor}}
 	    Private Sub radScheduler1_CellFormatting2(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.SchedulerCellEventArgs)
 	        If e.CellElement.Date.Month = 4 AndAlso e.CellElement.Date.Day = 13 Then
 	            If Not (TypeOf e.CellElement Is SchedulerHeaderCellElement) Then
@@ -242,7 +242,7 @@ We are going to make the header cells that displays the text orange, while
 
 #### __[C#]__
 
-{{region headerCellFormatting}}
+{{source=..\SamplesCS\Scheduler\Views\FormattingSchedulerCells.cs region=headerCellFormatting}}
 	        void radScheduler1_CellFormatting3(object sender, Telerik.WinControls.UI.SchedulerCellEventArgs e)
 	        {
 	            if (e.CellElement is SchedulerHeaderCellElement)
@@ -276,7 +276,7 @@ We are going to make the header cells that displays the text orange, while
 
 #### __[VB.NET]__
 
-{{region headerCellFormatting}}
+{{source=..\SamplesVB\Scheduler\Views\FormattingSchedulerCells.vb region=headerCellFormatting}}
 	    Private Sub radScheduler1_CellFormatting3(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.SchedulerCellEventArgs)
 	        If TypeOf e.CellElement Is SchedulerHeaderCellElement Then
 	            If e.CellElement.[Date].Month = DateTime.Now.Month AndAlso e.CellElement.[Date].Day = DateTime.Now.Day Then

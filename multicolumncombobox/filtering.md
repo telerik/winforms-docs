@@ -21,7 +21,7 @@ Filtering operation in __RadMultiColumnComboBox__is controlled by the boolean 
 
 #### __[C#]__
 
-{{region filtering}}
+{{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=filtering}}
 	            
 	            this.radMultiColumnComboBox1.AutoFilter = true;
 	            this.radMultiColumnComboBox1.DisplayMember = "ContactName";
@@ -36,7 +36,7 @@ Filtering operation in __RadMultiColumnComboBox__is controlled by the boolean 
 
 #### __[VB.NET]__
 
-{{region filtering}}
+{{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=filtering}}
 	        Me.RadMultiColumnComboBox1.AutoFilter = True
 	        Me.RadMultiColumnComboBox1.DisplayMember = "ContactName"
 	        Dim filter As New FilterDescriptor()
@@ -58,7 +58,7 @@ You can filter data records by multiple values. For this purpose you have to use
 
 #### __[C#]__
 
-{{region CompositeFilters}}
+{{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=CompositeFilters}}
 	            this.radMultiColumnComboBox1.AutoFilter = true;
 	            CompositeFilterDescriptor compositeFilter = new CompositeFilterDescriptor();           
 	            FilterDescriptor prodName = new FilterDescriptor("ProductName", FilterOperator.Contains, "");
@@ -75,7 +75,7 @@ You can filter data records by multiple values. For this purpose you have to use
 
 #### __[VB.NET]__
 
-{{region CompositeFilters}}
+{{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=CompositeFilters}}
 	
 	        Me.radMultiColumnComboBox1.AutoFilter = True
 	        Dim compositeFilter As New CompositeFilterDescriptor()

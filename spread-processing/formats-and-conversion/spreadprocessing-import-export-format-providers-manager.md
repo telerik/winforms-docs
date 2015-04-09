@@ -32,7 +32,7 @@ The __WorkbookFormatProvidersManager__ class contains two methods that allow you
 
 #### __[C#]__
 
-{{region radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.cs region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_0}}
 	            
 	            WorkbookFormatProvidersManager.RegisterFormatProvider(new XlsxFormatProvider());
 	        
@@ -42,7 +42,7 @@ The __WorkbookFormatProvidersManager__ class contains two methods that allow you
 
 #### __[VB]__
 
-{{region radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.vb region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_0}}
 	
 	        WorkbookFormatProvidersManager.RegisterFormatProvider(New XlsxFormatProvider())
 	
@@ -104,7 +104,7 @@ You can also unregister format providers using the UnregisterFormatProvider() me
 
 #### __[C#]__
 
-{{region radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.cs region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_1}}
 	            
 	            IWorkbookFormatProvider provider = WorkbookFormatProvidersManager.GetProviderByName("TxtFormatProvider");
 	            if (provider != null)
@@ -118,7 +118,7 @@ You can also unregister format providers using the UnregisterFormatProvider() me
 
 #### __[VB]__
 
-{{region radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.vb region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_1}}
 	
 	        Dim provider As IWorkbookFormatProvider = WorkbookFormatProvidersManager.GetProviderByName("TxtFormatProvider")
 	        If provider IsNot Nothing Then
@@ -180,7 +180,7 @@ The following example demonstrates how to present the user with an OpenFileDialo
 
 #### __[C#]__
 
-{{region radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.cs region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_2}}
 	                
 	            Workbook workbook;
 	            OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -206,7 +206,7 @@ The following example demonstrates how to present the user with an OpenFileDialo
 
 #### __[VB]__
 
-{{region radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.vb region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_2}}
 	
 	        Dim workbook As Workbook
 	        Dim openFileDialog As New OpenFileDialog()
@@ -262,7 +262,7 @@ The next example illustrates how to use the __Export()__ method to save a file. 
 
 #### __[C#]__
 
-{{region radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.cs region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_3}}
 	                
 	            SaveFileDialog saveFileDialog = new SaveFileDialog();
 	                    
@@ -281,7 +281,7 @@ The next example illustrates how to use the __Export()__ method to save a file. 
 
 #### __[VB]__
 
-{{region radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.vb region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_3}}
 	
 	        Dim saveFileDialog As New SaveFileDialog()
 	

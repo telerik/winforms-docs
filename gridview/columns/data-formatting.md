@@ -38,7 +38,7 @@ Here is a sample covering these properties:
 
 #### __[C#] Formatting data__
 
-{{region dataFormatting}}
+{{source=..\SamplesCS\GridView\Columns\DataFormatting1.cs region=dataFormatting}}
 	            GridViewDecimalColumn unitPriceColumn = this.radGridView1.Columns["UnitPrice"] as GridViewDecimalColumn;
 	            unitPriceColumn.FormatString = "Price: {0:C}";
 	            unitPriceColumn.FormatInfo = CultureInfo.CreateSpecificCulture("en-GB");
@@ -49,7 +49,7 @@ Here is a sample covering these properties:
 
 #### __[VB.NET] Formatting data__
 
-{{region dataFormatting}}
+{{source=..\SamplesVB\GridView\Columns\DataFormatting1.vb region=dataFormatting}}
 	        Dim unitPriceColumn As GridViewDecimalColumn = TryCast(Me.RadGridView1.Columns("UnitPrice"), GridViewDecimalColumn)
 	        unitPriceColumn.FormatString = "Price: {0:C}"
 	        unitPriceColumn.FormatInfo = CultureInfo.CreateSpecificCulture("en-GB")
@@ -70,7 +70,7 @@ The __TextAlignment__ property defines the text alignment for the column.
 
 #### __[C#] Using the column text properties__
 
-{{region textProperties}}
+{{source=..\SamplesCS\GridView\Columns\DataFormatting1.cs region=textProperties}}
 	            GridViewDataColumn productNameColumn = this.radGridView1.Columns["ProductName"];
 	            productNameColumn.WrapText = true;
 	            productNameColumn.TextAlignment = ContentAlignment.BottomRight;
@@ -80,7 +80,7 @@ The __TextAlignment__ property defines the text alignment for the column.
 
 #### __[VB.NET] Using the column text properties__
 
-{{region textProperties}}
+{{source=..\SamplesVB\GridView\Columns\DataFormatting1.vb region=textProperties}}
 	        Dim productNameColumn = Me.RadGridView1.Columns("ProductName")
 	        productNameColumn.WrapText = True
 	        productNameColumn.TextAlignment = ContentAlignment.BottomRight

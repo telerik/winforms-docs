@@ -45,7 +45,7 @@ Here is an example how you can create a Header:
 
 #### __[C#] __
 
-{{region header}}
+{{source=..\SamplesCS\RichTextEditor\Features\HeadersAndFooters.cs region=header}}
 	
 	            Header header = new Header() { Body = radDocument, IsLinkedToPrevious = false }; //radDocument is an instance of RadDocument, representing the content of a Header, 
 	            //typically contains a few paragraphs
@@ -56,7 +56,7 @@ Here is an example how you can create a Header:
 
 #### __[VB.NET] __
 
-{{region header}}
+{{source=..\SamplesVB\RichTextEditor\Features\HeadersAndFooters.vb region=header}}
 	
 	        Dim header As New Header() With {.Body = radDocument, .IsLinkedToPrevious = False} 'radDocument is an instance of RadDocument, representing the content of a Header,
 	        'typically contains a few paragraphs
@@ -134,7 +134,7 @@ When it comes to using a Header created in this manner, this depends on the stat
 
 #### __[C#] __
 
-{{region section}}
+{{source=..\SamplesCS\RichTextEditor\Features\HeadersAndFooters.cs region=section}}
 	
 	            section.Headers.Default = header;
 	
@@ -144,7 +144,7 @@ When it comes to using a Header created in this manner, this depends on the stat
 
 #### __[VB.NET] __
 
-{{region section}}
+{{source=..\SamplesVB\RichTextEditor\Features\HeadersAndFooters.vb region=section}}
 	
 	        section.Headers.Default = header
 	
@@ -211,7 +211,7 @@ When it comes to using a Header created in this manner, this depends on the stat
 
 #### __[C#] __
 
-{{region editor}}
+{{source=..\SamplesCS\RichTextEditor\Features\HeadersAndFooters.cs region=editor}}
 	
 	            this.radRichTextEditor1.UpdateHeader(this.radRichTextEditor1.Document.Sections.First, HeaderFooterType.Default, header);
 	
@@ -221,7 +221,7 @@ When it comes to using a Header created in this manner, this depends on the stat
 
 #### __[VB.NET] __
 
-{{region editor}}
+{{source=..\SamplesVB\RichTextEditor\Features\HeadersAndFooters.vb region=editor}}
 	
 	        Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, HeaderFooterType.Default, header)
 	
@@ -284,7 +284,7 @@ All header/footer types - Default, First and Even are set identically. The only 
 
 #### __[C#] __
 
-{{region first}}
+{{source=..\SamplesCS\RichTextEditor\Features\HeadersAndFooters.cs region=first}}
 	
 	            this.radRichTextEditor1.Document.Sections.First.HasDifferentFirstPageHeaderFooter = true;
 	            //or
@@ -296,7 +296,7 @@ All header/footer types - Default, First and Even are set identically. The only 
 
 #### __[VB.NET] __
 
-{{region first}}
+{{source=..\SamplesVB\RichTextEditor\Features\HeadersAndFooters.vb region=first}}
 	
 	        Me.radRichTextEditor1.Document.Sections.First.HasDifferentFirstPageHeaderFooter = True
 	        'or
@@ -355,7 +355,7 @@ Setting the Footers can be done in the same way.
 
 #### __[C#] __
 
-{{region footer}}
+{{source=..\SamplesCS\RichTextEditor\Features\HeadersAndFooters.cs region=footer}}
 	
 	            Footer footer = new Footer() { Body = radDocument, IsLinkedToPrevious = false }; //radDocument is an instance of RadDocument, representing the content of the footer
 	
@@ -365,7 +365,7 @@ Setting the Footers can be done in the same way.
 
 #### __[VB.NET] __
 
-{{region footer}}
+{{source=..\SamplesVB\RichTextEditor\Features\HeadersAndFooters.vb region=footer}}
 	
 	        Dim footer As New Footer() With {.Body = radDocument, .IsLinkedToPrevious = False} 'radDocument is an instance of RadDocument, representing the content of the footer
 	
@@ -414,7 +414,7 @@ Setting the Footers can be done in the same way.
 
 #### __[C#] __
 
-{{region footersection}}
+{{source=..\SamplesCS\RichTextEditor\Features\HeadersAndFooters.cs region=footersection}}
 	
 	            section.Footers.Default = footer;
 	
@@ -424,7 +424,7 @@ Setting the Footers can be done in the same way.
 
 #### __[VB.NET] __
 
-{{region footersection}}
+{{source=..\SamplesVB\RichTextEditor\Features\HeadersAndFooters.vb region=footersection}}
 	
 	        section.Footers.Default = footer
 	
@@ -465,7 +465,7 @@ Setting the Footers can be done in the same way.
 
 #### __[C#] __
 
-{{region update}}
+{{source=..\SamplesCS\RichTextEditor\Features\HeadersAndFooters.cs region=update}}
 	
 	            this.radRichTextEditor1.UpdateFooter(this.radRichTextEditor1.Document.Sections.First, HeaderFooterType.Default, footer);
 	
@@ -475,7 +475,7 @@ Setting the Footers can be done in the same way.
 
 #### __[VB.NET] __
 
-{{region update}}
+{{source=..\SamplesVB\RichTextEditor\Features\HeadersAndFooters.vb region=update}}
 	
 	        Me.radRichTextEditor1.UpdateFooter(Me.radRichTextEditor1.Document.Sections.First, HeaderFooterType.Default, footer)
 	
@@ -512,7 +512,7 @@ As for setting different footers for the first page or the even page, this is do
 
 #### __[C#] __
 
-{{region even}}
+{{source=..\SamplesCS\RichTextEditor\Features\HeadersAndFooters.cs region=even}}
 	
 	            this.radRichTextEditor1.Document.Sections.First.HasDifferentFirstPageHeaderFooter = true;
 	            //or
@@ -524,7 +524,7 @@ As for setting different footers for the first page or the even page, this is do
 
 #### __[VB.NET] __
 
-{{region even}}
+{{source=..\SamplesVB\RichTextEditor\Features\HeadersAndFooters.vb region=even}}
 	
 	        Me.radRichTextEditor1.Document.Sections.First.HasDifferentFirstPageHeaderFooter = True
 	        'or
@@ -561,7 +561,7 @@ Headers and footers are only present in Paged layout mode, so the easiest way to
 
 #### __[C#] __
 
-{{region custom}}
+{{source=..\SamplesCS\RichTextEditor\Features\HeadersAndFooters.cs region=custom}}
 	
 	    class CustomUILayerBuilder : UILayersBuilder
 	    {
@@ -578,7 +578,7 @@ Headers and footers are only present in Paged layout mode, so the easiest way to
 
 #### __[VB.NET] __
 
-{{region custom}}
+{{source=..\SamplesVB\RichTextEditor\Features\HeadersAndFooters.vb region=custom}}
 	
 	Friend Class CustomUILayerBuilder
 	    Inherits UILayersBuilder

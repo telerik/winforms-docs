@@ -31,7 +31,7 @@ The __InitializeCells__ and __InitializeAppointments__ methods are used to refre
 
 #### __[C#]__
 
-{{region initializeSchedulerChildren}}
+{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=initializeSchedulerChildren}}
 	            DayViewAppointmentsTable table = ((SchedulerDayViewElement)this.radScheduler1.ViewElement).DataAreaElement.Table;
 	            table.CellsRefreshed +=table_CellsRefreshed;
 	            table.AppointmentsRefreshed +=table_AppointmentsRefreshed;
@@ -46,7 +46,7 @@ The __InitializeCells__ and __InitializeAppointments__ methods are used to refre
 
 #### __[VB.NET]__
 
-{{region initializeSchedulerChildren}}
+{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=initializeSchedulerChildren}}
 	        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
 	        AddHandler table.CellsRefreshed, AddressOf table_CellsRefreshed
 	        AddHandler table.AppointmentsRefreshed, AddressOf table_AppointmentsRefreshed
@@ -119,7 +119,7 @@ The __InitializeCells__ and __InitializeAppointments__ methods are used to refre
 
 #### __[C#]__
 
-{{region cellContainerEvents}}
+{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=cellContainerEvents}}
 	
 	        void table_AppointmentsRefreshed(object sender, EventArgs e)
 	        {
@@ -137,7 +137,7 @@ The __InitializeCells__ and __InitializeAppointments__ methods are used to refre
 
 #### __[VB.NET]__
 
-{{region cellContainerEvents}}
+{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=cellContainerEvents}}
 	
 	    Private Sub table_AppointmentsRefreshed(sender As Object, e As EventArgs)
 	        RadMessageBox.Show("Appointments were refreshed")
@@ -207,7 +207,7 @@ The __UpdateCells__ and __UpdateAppointments__ are called to synchronize the exi
 
 #### __[C#]__
 
-{{region updateSchedulerChildren}}
+{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=updateSchedulerChildren}}
 	            DayViewAppointmentsTable table = ((SchedulerDayViewElement)this.radScheduler1.ViewElement).DataAreaElement.Table;
 	            table.UpdateCells();
 	            table.UpdateAppointments();
@@ -217,7 +217,7 @@ The __UpdateCells__ and __UpdateAppointments__ are called to synchronize the exi
 
 #### __[VB.NET]__
 
-{{region updateSchedulerChildren}}
+{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=updateSchedulerChildren}}
 	        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
 	        table.UpdateCells()
 	        table.UpdateAppointments()
@@ -270,7 +270,7 @@ You can access the cell element and the appointment elements from a SchedulerCel
 
 #### __[C#]__
 
-{{region cellContainerGetElements}}
+{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=cellContainerGetElements}}
 	            DayViewAppointmentsTable table = ((SchedulerDayViewElement)this.radScheduler1.ViewElement).DataAreaElement.Table;
 	            foreach (SchedulerCellElement cellElement in table.CellElements)
 	            {
@@ -287,7 +287,7 @@ You can access the cell element and the appointment elements from a SchedulerCel
 
 #### __[VB.NET]__
 
-{{region cellContainerGetElements}}
+{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=cellContainerGetElements}}
 	        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
 	        For Each cellElement As SchedulerCellElement In table.CellElements
 	            cellElement.BackColor = Color.Red
@@ -332,7 +332,7 @@ The __SchedulerViewElement__ base type provides means for accessing the containe
 
 #### __[C#]__
 
-{{region viewElementUpdateCells}}
+{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=viewElementUpdateCells}}
 	            foreach (SchedulerCellContainer cellContainer in this.radScheduler1.ViewElement.GetCellContainers())
 	            {
 	                cellContainer.UpdateCells();
@@ -343,7 +343,7 @@ The __SchedulerViewElement__ base type provides means for accessing the containe
 
 #### __[VB.NET]__
 
-{{region viewElementUpdateCells}}
+{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=viewElementUpdateCells}}
 	        Me.radScheduler1.ViewElement.UpdateCells()
 	        Me.radScheduler1.ViewElement.UpdateAppointmentElements()
 	        '#End Region
@@ -368,7 +368,7 @@ For your convenience, there are the __InitializeCells__, __UpdateCells__,
 
 #### __[C#]__
 
-{{region viewElementUpdateCellsDirect}}
+{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=viewElementUpdateCellsDirect}}
 	            this.radScheduler1.ViewElement.UpdateCells();
 	            this.radScheduler1.ViewElement.UpdateAppointmentElements();
 	{{endregion}}
@@ -377,7 +377,7 @@ For your convenience, there are the __InitializeCells__, __UpdateCells__,
 
 #### __[VB.NET]__
 
-{{region viewElementUpdateCellsDirect}}
+{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=viewElementUpdateCellsDirect}}
 	        Me.radScheduler1.ViewElement.UpdateCells()
 	        Me.radScheduler1.ViewElement.UpdateAppointmentElements()
 	        '#End Region
@@ -401,7 +401,7 @@ Additionally, there are the __GetCellEments__ and the __GetAppointmentElements__
 
 #### __[C#]__
 
-{{region viewElementGetAllElements}}
+{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=viewElementGetAllElements}}
 	            foreach (SchedulerCellElement cellElement in this.radScheduler1.ViewElement.GetCellElements())
 	            {
 	                cellElement.BackColor = Color.Red;
@@ -417,7 +417,7 @@ Additionally, there are the __GetCellEments__ and the __GetAppointmentElements__
 
 #### __[VB.NET]__
 
-{{region viewElementGetAllElements}}
+{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=viewElementGetAllElements}}
 	        For Each cellElement As SchedulerCellElement In Me.radScheduler1.ViewElement.GetCellElements()
 	            cellElement.BackColor = Color.Red
 	        Next

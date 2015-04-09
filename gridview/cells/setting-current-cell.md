@@ -18,7 +18,7 @@ In order to set the current cell of RadGridView, set the CurrentRow and CurrentC
 
 #### __[C#] Setting the current cell__
 
-{{region settingTheCurrentCell}}
+{{source=..\SamplesCS\GridView\Cells\SetttingCurrentCell.cs region=settingTheCurrentCell}}
 	            this.radGridView1.CurrentRow = this.radGridView1.Rows[1];
 	            this.radGridView1.CurrentColumn = this.radGridView1.Columns[1];
 	            this.Text = this.radGridView1.CurrentCell.Value.ToString();
@@ -28,7 +28,7 @@ In order to set the current cell of RadGridView, set the CurrentRow and CurrentC
 
 #### __[VB.NET] Setting the current cell__
 
-{{region settingTheCurrentCell}}
+{{source=..\SamplesVB\GridView\Cells\SettingCurrentCell.vb region=settingTheCurrentCell}}
 	        Me.RadGridView1.CurrentRow = Me.RadGridView1.Rows(1)
 	        Me.RadGridView1.CurrentColumn = Me.RadGridView1.Columns(1)
 	        Me.Text = Me.RadGridView1.CurrentCell.Value.ToString()
@@ -44,7 +44,7 @@ To get an instance of the current cell simply create a variable of type GridData
 
 #### __[C#] Accessing the current cell__
 
-{{region readingTheCurrentCell}}
+{{source=..\SamplesCS\GridView\Cells\SetttingCurrentCell.cs region=readingTheCurrentCell}}
 	            GridDataCellElement cell = radGridView1.CurrentCell;
 	{{endregion}}
 
@@ -52,7 +52,7 @@ To get an instance of the current cell simply create a variable of type GridData
 
 #### __[VB.NET] Accessing the current cell__
 
-{{region readingTheCurrentCell}}
+{{source=..\SamplesVB\GridView\Cells\SettingCurrentCell.vb region=readingTheCurrentCell}}
 	        Dim cell As GridDataCellElement = Me.RadGridView1.CurrentCell
 	{{endregion}}
 

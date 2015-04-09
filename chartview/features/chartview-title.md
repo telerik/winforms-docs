@@ -20,7 +20,7 @@ To show the title in RadChartView you need to set the __ShowTitle__ property to 
 
 #### __[C#] __
 
-{{region ShowTitle}}
+{{source=..\SamplesCS\ChartView\Features\ChartViewTitle.cs region=ShowTitle}}
 	            this.radChartView1.Title = "OS Platform statistics Q1";
 	            this.radChartView1.ShowTitle = true;
 	{{endregion}}
@@ -29,7 +29,7 @@ To show the title in RadChartView you need to set the __ShowTitle__ property to 
 
 #### __[VB.NET] __
 
-{{region ShowTitle}}
+{{source=..\SamplesVB\ChartView\Features\ChartViewTitle.vb region=ShowTitle}}
 	        Me.RadChartView1.Title = "OS Platform statistics Q1"
 	        Me.RadChartView1.ShowTitle = True
 	{{endregion}}
@@ -42,7 +42,7 @@ The title can be moved to all four sides of the chart using the __TitleLocation_
 
 #### __[C#] __
 
-{{region CustomizeTitle}}
+{{source=..\SamplesCS\ChartView\Features\ChartViewTitle.cs region=CustomizeTitle}}
 	            this.radChartView1.ChartElement.TitleElement.TextOrientation = Orientation.Vertical;
 	            this.radChartView1.ChartElement.TitlePosition = TitlePosition.Left;
 	            this.radChartView1.ChartElement.TitleElement.FlipText = true;
@@ -52,7 +52,7 @@ The title can be moved to all four sides of the chart using the __TitleLocation_
 
 #### __[VB.NET] __
 
-{{region CustomizeTitle}}
+{{source=..\SamplesVB\ChartView\Features\ChartViewTitle.vb region=CustomizeTitle}}
 	        Me.RadChartView1.ChartElement.TitleElement.TextOrientation = Orientation.Vertical
 	        Me.RadChartView1.ChartElement.TitlePosition = TitlePosition.Left
 	        Me.RadChartView1.ChartElement.TitleElement.FlipText = True

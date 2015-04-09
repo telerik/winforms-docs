@@ -28,7 +28,7 @@ By default the footer contains a string showing the current date and time and tw
 
 #### __[C#] Using the Today button__
 
-{{region usingTodayButton}}
+{{source=..\SamplesCS\Calendar\Calendar1.cs region=usingTodayButton}}
 	            radCalendar1.TodayButton.Text = "Go to Today";
 	            radCalendar1.TodayButton.Image = imageList1.Images[0];
 	{{endregion}}
@@ -37,7 +37,7 @@ By default the footer contains a string showing the current date and time and tw
 
 #### __[VB.NET] Using the Today button__
 
-{{region usingTodayButton}}
+{{source=..\SamplesVB\Calendar\Calendar1.vb region=usingTodayButton}}
 	        RadCalendar1.TodayButton.Text = "Go to Today"
 	        RadCalendar1.TodayButton.Image = ImageList1.Images(0)
 	{{endregion}}

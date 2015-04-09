@@ -27,7 +27,7 @@ You can watch the video
 
 #### __[C#] Setting a theme for the entire application__
 
-{{region setAThemeForEntireApplication}}
+{{source=..\SamplesCS\Themes\UsingADefaultThemeForEntireApplication.cs region=setAThemeForEntireApplication}}
 	            ThemeResolutionService.ApplicationThemeName = "Office2007Black";
 	{{endregion}}
 
@@ -35,7 +35,7 @@ You can watch the video
 
 #### __[VB.NET] Setting a theme for the entire application__
 
-{{region setAThemeForEntireApplication}}
+{{source=..\SamplesVB\Themes\UsingADefaultThemeForEntireApplication.vb region=setAThemeForEntireApplication}}
 	        ThemeResolutionService.ApplicationThemeName = "Office2007Black"
 	{{endregion}}
 
@@ -60,7 +60,7 @@ This property indicates how the theme will be set to the control. If it is set t
 
 #### __[C#] __
 
-{{region setThemeForSpesificControl}}
+{{source=..\SamplesCS\Themes\UsingADefaultThemeForEntireApplication.cs region=setThemeForSpesificControl}}
 	            ThemeResolutionService.ApplicationThemeName = "Office2010Blue";
 	
 	            radGridView1.ElementTree.EnableApplicationThemeName = false;
@@ -71,7 +71,7 @@ This property indicates how the theme will be set to the control. If it is set t
 
 #### __[VB.NET] __
 
-{{region setThemeForSpesificControl}}
+{{source=..\SamplesVB\Themes\UsingADefaultThemeForEntireApplication.vb region=setThemeForSpesificControl}}
 	        ThemeResolutionService.ApplicationThemeName = "Office2010Blue"
 	
 	        RadGridView1.ElementTree.EnableApplicationThemeName = False

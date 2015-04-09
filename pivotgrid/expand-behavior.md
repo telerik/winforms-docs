@@ -51,7 +51,7 @@ __RadPivotGrid__ has two properties to control the expand behavior -
 
 #### __C#__
 
-{{region expand}}
+{{source=..\SamplesCS\PivotGrid\ExpandBehavior.cs region=expand}}
 	            
 	            RadPivotGrid pivot = new RadPivotGrid();
 	            pivot.RowGroupsExpandBehavior = new GroupsExpandBehavior()
@@ -67,7 +67,7 @@ __RadPivotGrid__ has two properties to control the expand behavior -
 
 #### __VB.NET__
 
-{{region expand}}
+{{source=..\SamplesVB\PivotGrid\ExpandBehavior.vb region=expand}}
 	
 	        Dim pivot As New RadPivotGrid()
 	        pivot.RowGroupsExpandBehavior = New GroupsExpandBehavior() With {.Expanded = False, .UpToLevel = 2}
@@ -110,7 +110,7 @@ If you want to collapse all groups in __RadPivotGrid__ you can change the behavi
 
 #### __C#__
 
-{{region click}}
+{{source=..\SamplesCS\PivotGrid\ExpandBehavior.cs region=click}}
 	        
 	        public void ExpandGroupsButton_Click(object sender, RoutedEventArgs e)
 	        {
@@ -132,7 +132,7 @@ If you want to collapse all groups in __RadPivotGrid__ you can change the behavi
 
 #### __VB.NET__
 
-{{region click}}
+{{source=..\SamplesVB\PivotGrid\ExpandBehavior.vb region=click}}
 	
 	    Public Sub ExpandGroupsButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	        TryCast(Me.pivot.RowGroupsExpandBehavior, GroupsExpandBehavior).Expanded = True

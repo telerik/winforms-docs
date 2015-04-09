@@ -36,7 +36,7 @@ You can easily show the NewItem by setting the __NewItemVisibility__ property of
 
 #### __[C#]__
 
-{{region settingNewItemVisibility}}
+{{source=..\SamplesCS\PageView\NewItem.cs region=settingNewItemVisibility}}
 	            RadPageViewStripElement stripElement = this.radPageView1.ViewElement as RadPageViewStripElement;
 	            stripElement.NewItemVisibility = StripViewNewItemVisibility.End;
 	{{endregion}}
@@ -45,7 +45,7 @@ You can easily show the NewItem by setting the __NewItemVisibility__ property of
 
 #### __[VB.NET]__
 
-{{region settingNewItemVisibility}}
+{{source=..\SamplesVB\PageView\NewItem.vb region=settingNewItemVisibility}}
 	        Dim stripElement As RadPageViewStripElement = TryCast(Me.RadPageView1.ViewElement, RadPageViewStripElement)
 	        stripElement.NewItemVisibility = StripViewNewItemVisibility.End
 	        '#EndRegion
@@ -83,7 +83,7 @@ When the NewItem is clicked by the end-user, RadPageView throws an event called 
 
 #### __[C#]__
 
-{{region newPageRequested}}
+{{source=..\SamplesCS\PageView\NewItem.cs region=newPageRequested}}
 	        void radPageView1_NewPageRequested(object sender, EventArgs e)
 	        {
 	            RadPageView pageView = sender as RadPageView;
@@ -102,7 +102,7 @@ When the NewItem is clicked by the end-user, RadPageView throws an event called 
 
 #### __[VB.NET]__
 
-{{region newPageRequested}}
+{{source=..\SamplesVB\PageView\NewItem.vb region=newPageRequested}}
 	    Private Sub radPageView1_NewPageRequested(ByVal sender As Object, ByVal e As EventArgs)
 	        Dim pageView As RadPageView = TryCast(sender, RadPageView)
 	        Dim stripElement As RadPageViewStripElement = TryCast(pageView.ViewElement, RadPageViewStripElement)

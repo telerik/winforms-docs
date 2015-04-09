@@ -5,7 +5,7 @@ description: Radar
 slug: chartview-series-types-radar
 tags: radar
 published: True
-position: 11
+position: 12
 ---
 
 # Radar
@@ -22,7 +22,7 @@ The radar chart is a two-dimensional chart of three or more quantitative variabl
 
 #### __[C#] RadarPointSeries__
 
-{{region radarPointSeries}}
+{{source=..\SamplesCS\ChartView\Series\RadarSeriesForm.cs region=radarPointSeries}}
 	            this.radChartView1.AreaType = ChartAreaType.Polar;
 	            RadarPointSeries radarPointSeries = new RadarPointSeries();
 	            radarPointSeries.DataPoints.Add(new CategoricalDataPoint(3.8d, "Oranges"));
@@ -41,7 +41,7 @@ The radar chart is a two-dimensional chart of three or more quantitative variabl
 
 #### __[VB.NET] RadarPointSeries__
 
-{{region radarPointSeries}}
+{{source=..\SamplesVB\ChartView\Series\RadarSeriesForm.vb region=radarPointSeries}}
 	        Me.RadChartView1.AreaType = ChartAreaType.Polar
 	        Dim radarPointSeries As New RadarPointSeries()
 	        radarPointSeries.DataPoints.Add(New CategoricalDataPoint(3.8D, "Oranges"))
@@ -60,7 +60,7 @@ The radar chart is a two-dimensional chart of three or more quantitative variabl
 
 #### __[C#] RadarLineSeries__
 
-{{region radarLineSeries}}
+{{source=..\SamplesCS\ChartView\Series\RadarSeriesForm.cs region=radarLineSeries}}
 	            this.radChartView1.AreaType = ChartAreaType.Polar;
 	            RadarLineSeries radarLineSeries = new RadarLineSeries();
 	            radarLineSeries.DataPoints.Add(new CategoricalDataPoint(3.8d, "Oranges"));
@@ -79,7 +79,7 @@ The radar chart is a two-dimensional chart of three or more quantitative variabl
 
 #### __[VB.NET] RadarLineSeries__
 
-{{region radarLineSeries}}
+{{source=..\SamplesVB\ChartView\Series\RadarSeriesForm.vb region=radarLineSeries}}
 	        Me.RadChartView1.AreaType = ChartAreaType.Polar
 	        Dim radarLineSeries As New RadarLineSeries()
 	        radarLineSeries.DataPoints.Add(New CategoricalDataPoint(3.8D, "Oranges"))
@@ -98,7 +98,7 @@ The radar chart is a two-dimensional chart of three or more quantitative variabl
 
 #### __[C#] RadarAreaSeries__
 
-{{region radarAreaSeries}}
+{{source=..\SamplesCS\ChartView\Series\RadarSeriesForm.cs region=radarAreaSeries}}
 	            this.radChartView1.AreaType = ChartAreaType.Polar;
 	            RadarAreaSeries radarAreaSeries = new RadarAreaSeries();
 	            radarAreaSeries.BackColor = Color.FromArgb(100, 142, 196, 65);
@@ -121,7 +121,7 @@ The radar chart is a two-dimensional chart of three or more quantitative variabl
 
 #### __[VB.NET] RadarAreaSeries__
 
-{{region radarAreaSeries}}
+{{source=..\SamplesVB\ChartView\Series\RadarSeriesForm.vb region=radarAreaSeries}}
 	        Me.RadChartView1.AreaType = ChartAreaType.Polar
 	        Dim radarAreaSeries As New RadarAreaSeries()
 	        radarAreaSeries.BackColor = Color.FromArgb(100, 142, 196, 65)
@@ -165,7 +165,7 @@ When you have __RadarLineSeries__ or __RadarAreaSeries__ you can set the Spline 
 
 #### __[C#] RadarAreaSeries__
 
-{{region spline}}
+{{source=..\SamplesCS\ChartView\Series\RadarSeriesForm.cs region=spline}}
 	
 	            this.radChartView1.AreaType = ChartAreaType.Polar;
 	            RadarLineSeries radarLineSeries = new RadarLineSeries();
@@ -195,7 +195,7 @@ When you have __RadarLineSeries__ or __RadarAreaSeries__ you can set the Spline 
 
 #### __[VB.NET] RadarAreaSeries__
 
-{{region spline}}
+{{source=..\SamplesVB\ChartView\Series\RadarSeriesForm.vb region=spline}}
 	        Me.RadChartView1.AreaType = ChartAreaType.Polar
 	        Dim radarLineSeries As New RadarLineSeries()
 	        radarLineSeries.DataPoints.Add(New CategoricalDataPoint(3.8, "Oranges"))

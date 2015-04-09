@@ -18,7 +18,7 @@ The following example, demonstrates how to detect when the user drags the title 
 
 #### __[C#] Detecting when the TitleBar is dragged__
 
-{{region detectTitleBarDragging}}
+{{source=..\SamplesCS\Forms and Dialogs\ShapedForm1.cs region=detectTitleBarDragging}}
 	        public const int WM_WINDOWPOSCHANGED = 0x47;
 	        protected override void WndProc(ref Message m)
 	        {
@@ -34,7 +34,7 @@ The following example, demonstrates how to detect when the user drags the title 
 
 #### __[VB.NET] Detecting when the TitleBar is dragged__
 
-{{region detectTitleBarDragging}}
+{{source=..\SamplesVB\Forms and Dialogs\ShapedForm1.vb region=detectTitleBarDragging}}
 	    Public Const WM_WINDOWPOSCHANGED As Integer = 71
 	    Protected Overloads Overrides Sub WndProc(ByRef m As Message)
 	        If m.Msg = WM_WINDOWPOSCHANGED Then

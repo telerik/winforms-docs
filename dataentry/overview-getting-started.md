@@ -25,7 +25,7 @@ This tutorial demonstrates how bind __RadDataEntry__ to business object and to a
 
 #### __[C#] __
 
-{{region empl1}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}}
 	        private class Employee
 	        {
 	            public string FirstName
@@ -76,7 +76,7 @@ This tutorial demonstrates how bind __RadDataEntry__ to business object and to a
 
 #### __[VB.NET] __
 
-{{region empl1}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}}
 	        Private Class Employee
 	            Public Property FirstName() As String
 	                Get
@@ -174,7 +174,7 @@ This tutorial demonstrates how bind __RadDataEntry__ to business object and to a
 
 #### __[C#] __
 
-{{region bind1}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}}
 	            this.radDataEntry1.DataSource = new Employee() 
 	            { 
 	                FirstName = "Sarah",
@@ -190,7 +190,7 @@ This tutorial demonstrates how bind __RadDataEntry__ to business object and to a
 
 #### __[VB.NET] __
 
-{{region bind1}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}}
 	            Me.radDataEntry1.DataSource = New Employee() With { _
 	              .FirstName = "Sarah", _
 	              .LastName = "Blake", _
@@ -235,7 +235,7 @@ The following tutorial will demonstrate how to bind __RadDataEntry__ to a collec
 
 #### __[C#] __
 
-{{region bind2}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted2.cs region=bind2}}
 	
 	            List<Employee> employees = new List<Employee>();
 	            employees.Add(new Employee() { FirstName = "Sarah", LastName = "Blake", Occupation = "Supplied Manager", StartingDate = new DateTime(2005, 04, 12), IsMarried = true, Salary = 3500, Gender = Gender.Female });
@@ -251,7 +251,7 @@ The following tutorial will demonstrate how to bind __RadDataEntry__ to a collec
 
 #### __[VB.NET] __
 
-{{region bind2}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted2.vb region=bind2}}
 	
 	            Dim employees As New List(Of Employee)()
 	            employees.Add(New Employee() With { _
@@ -313,7 +313,7 @@ The following tutorial will demonstrate how to bind __RadDataEntry__ to a collec
 
 #### __[C#] __
 
-{{region bind3}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted2.cs region=bind3}}
 	
 	            this.radDataEntry1.DataSource = this.bindingSource1;
 	            this.radBindingNavigator1.BindingSource = this.bindingSource1;
@@ -324,7 +324,7 @@ The following tutorial will demonstrate how to bind __RadDataEntry__ to a collec
 
 #### __[VB.NET] __
 
-{{region bind3}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted2.vb region=bind3}}
 	
 	            Me.radDataEntry1.DataSource = Me.bindingSource1
 	            Me.radBindingNavigator1.BindingSource = Me.bindingSource1

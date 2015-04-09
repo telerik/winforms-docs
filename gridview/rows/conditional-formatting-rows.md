@@ -52,7 +52,7 @@ This example looks for the same condition as the [cell formatting example]({%slu
 
 #### __[C#] Conditional formatting rows__
 
-{{region conditionalFormatting}}
+{{source=..\SamplesCS\GridView\Rows\ConditionalFormattingRows.cs region=conditionalFormatting}}
 	            ConditionalFormattingObject obj = new ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", true);
 	            obj.CellForeColor = Color.Red;
 	            obj.RowBackColor = Color.SkyBlue;
@@ -63,7 +63,7 @@ This example looks for the same condition as the [cell formatting example]({%slu
 
 #### __[VB.NET] Conditional formatting rows__
 
-{{region conditionalFormatting}}
+{{source=..\SamplesVB\GridView\Rows\ConditionalFormattingRows.vb region=conditionalFormatting}}
 	        Dim obj = New ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", True)
 	        obj.CellForeColor = Color.Red
 	        obj.RowBackColor = Color.SkyBlue

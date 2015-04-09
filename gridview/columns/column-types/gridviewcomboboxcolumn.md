@@ -53,7 +53,7 @@ __GridViewComboBoxColumn__ inherits from __GridViewDataColumn.__![gridview-colum
 
 #### __[C#] Adding and binding GridViewComboBoxColumn__
 
-{{region addComboBoxColumn}}
+{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn1.cs region=addComboBoxColumn}}
 	            GridViewComboBoxColumn supplierColumn = new GridViewComboBoxColumn();
 	            supplierColumn.Name = "SupplierColumn";
 	            supplierColumn.HeaderText = "Supplier";
@@ -69,7 +69,7 @@ __GridViewComboBoxColumn__ inherits from __GridViewDataColumn.__![gridview-colum
 
 #### __[VB.NET] Adding and binding GridViewComboBoxColumn__
 
-{{region addComboBoxColumn}}
+{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn1.vb region=addComboBoxColumn}}
 	        Dim supplierColumn As GridViewComboBoxColumn = New GridViewComboBoxColumn
 	        supplierColumn.Name = "SupplierColumn"
 	        supplierColumn.HeaderText = "Supplier"
@@ -98,7 +98,7 @@ In order to access the __RadDropDownListEditor__, you should subscribe to the
 
 #### __[C#] Modify the DropDownList editor__
 
-{{region modifyTheComboBoxEditor}}
+{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn1.cs region=modifyTheComboBoxEditor}}
 	        void radGridView1_CellEditorInitialized(object sender, GridViewCellEventArgs e)
 	        {
 	            RadDropDownListEditor editor = this.radGridView1.ActiveEditor as RadDropDownListEditor;
@@ -113,7 +113,7 @@ In order to access the __RadDropDownListEditor__, you should subscribe to the
 
 #### __[VB.NET] Modify the DropDownList editor__
 
-{{region modifyTheComboBoxEditor}}
+{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn1.vb region=modifyTheComboBoxEditor}}
 	    Private Sub RadGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs) Handles RadGridView1.CellEditorInitialized
 	        Dim editor As RadDropDownListEditor = TryCast(Me.RadGridView1.ActiveEditor, RadDropDownListEditor)
 	        If Not editor Is Nothing Then
@@ -134,7 +134,7 @@ The following example demonstrates a case where the combo box is bound to a colu
 
 #### __[C#] Bind to array of string__
 
-{{region BindToArray}}
+{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn1.cs region=BindToArray}}
 	            //Create the data source and fill some data
 	            DataTable table = new DataTable();
 	            table.Columns.Add("Phone", typeof(string));
@@ -165,7 +165,7 @@ The following example demonstrates a case where the combo box is bound to a colu
 
 #### __[VB.NET] Bind to array of string__
 
-{{region BindToArray}}
+{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn1.vb region=BindToArray}}
 	        'Create the data source and fill some data
 	        Dim table As New DataTable()
 	        table.Columns.Add("Phone", GetType(String))
@@ -215,7 +215,7 @@ The example below extends the previous sample, where we bound the combo column t
 
 #### __[C#] Binding to collection of custom object__
 
-{{region BindToObject}}
+{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn2.cs region=BindToObject}}
 	    public partial class GridViewComboBoxColumn2 : Form
 	    {
 	        public GridViewComboBoxColumn2()
@@ -286,7 +286,7 @@ The example below extends the previous sample, where we bound the combo column t
 
 #### __[VB.NET] Binding to collection of custom object__
 
-{{region BindToObject}}
+{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn2.vb region=BindToObject}}
 	Public Class GridViewComboBoxColumn2
 	    Public Sub New()
 	        InitializeComponent()
@@ -366,7 +366,7 @@ You have to handle the EditorRequired event. This event is fired every time when
 
 #### __[C#] Customize the DropDownListEditor in GridViewComboBoxColumn__
 
-{{region customizeDropDownListEditor}}
+{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn3.cs region=customizeDropDownListEditor}}
 	        public GridViewComboBoxColumn3()
 	        {
 	            InitializeComponent();
@@ -450,7 +450,7 @@ You have to handle the EditorRequired event. This event is fired every time when
 
 #### __[VB.NET] Customize the DropDownListEditor in GridViewComboBoxColumn__
 
-{{region customizeDropDownListEditor}}
+{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn3.vb region=customizeDropDownListEditor}}
 	Public Class GridViewComboBoxColumn3
 	    Public Sub New()
 	        InitializeComponent()

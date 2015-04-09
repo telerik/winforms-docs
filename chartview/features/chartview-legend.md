@@ -26,7 +26,7 @@ The __ShowLegend__ property of RadChartView controls whether the legend is visib
 
 #### __[C#] __
 
-{{region ShowLegend}}
+{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=ShowLegend}}
 	            this.radChartView1.ShowLegend = true;
 	            this.radChartView1.LegendTitle = "Legend";
 	{{endregion}}
@@ -35,7 +35,7 @@ The __ShowLegend__ property of RadChartView controls whether the legend is visib
 
 #### __[VB.NET] __
 
-{{region ShowLegend}}
+{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=ShowLegend}}
 	        Me.RadChartView1.ShowLegend = True
 	        Me.RadChartView1.LegendTitle = "Legend"
 	{{endregion}}
@@ -52,7 +52,7 @@ The location of the title can be modified by the __TitlePosition__ property. Add
 
 #### __[C#] __
 
-{{region CustomizeLegendTitle}}
+{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=CustomizeLegendTitle}}
 	            this.radChartView1.ChartElement.LegendElement.TitlePosition = TitlePosition.Bottom;
 	            this.radChartView1.ChartElement.LegendElement.TitleElement.Font = new Font("Arial", 12, FontStyle.Italic);
 	            this.radChartView1.ChartElement.LegendElement.TitleElement.ForeColor = Color.Red;
@@ -62,7 +62,7 @@ The location of the title can be modified by the __TitlePosition__ property. Add
 
 #### __[VB.NET] __
 
-{{region CustomizeLegendTitle}}
+{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=CustomizeLegendTitle}}
 	        Me.RadChartView1.ChartElement.LegendElement.TitlePosition = TitlePosition.Bottom
 	        Me.RadChartView1.ChartElement.LegendElement.TitleElement.Font = New Drawing.Font("Arial", 12, Drawing.FontStyle.Italic)
 	        Me.RadChartView1.ChartElement.LegendElement.TitleElement.ForeColor = Drawing.Color.Red
@@ -74,7 +74,7 @@ You can dock the legend to each of the four sides of the control by setting the 
 
 #### __[C#] __
 
-{{region LegendPositionBottom}}
+{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=LegendPositionBottom}}
 	            this.radChartView1.ChartElement.LegendPosition = LegendPosition.Bottom;
 	{{endregion}}
 
@@ -82,7 +82,7 @@ You can dock the legend to each of the four sides of the control by setting the 
 
 #### __[VB.NET] __
 
-{{region LegendPositionBottom}}
+{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=LegendPositionBottom}}
 	        Me.RadChartView1.ChartElement.LegendPosition = LegendPosition.Bottom
 	{{endregion}}
 
@@ -98,7 +98,7 @@ Alternatively, you can set it to float over the chart view. Here is how to set t
 
 #### __[C#] __
 
-{{region LegendPositionFloat}}
+{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=LegendPositionFloat}}
 	            this.radChartView1.ChartElement.LegendPosition = LegendPosition.Float;
 	            this.radChartView1.ChartElement.LegendOffset = new Point(200, 0);
 	{{endregion}}
@@ -107,7 +107,7 @@ Alternatively, you can set it to float over the chart view. Here is how to set t
 
 #### __[VB.NET] __
 
-{{region LegendPositionFloat}}
+{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=LegendPositionFloat}}
 	        Me.RadChartView1.ChartElement.LegendPosition = LegendPosition.Float
 	        Me.RadChartView1.ChartElement.LegendOffset = New Point(200, 0)
 	{{endregion}}
@@ -126,7 +126,7 @@ The elements that provide legend items in the case of the Pie chart are the indi
 
 #### __[C#] __
 
-{{region LegendProperties}}
+{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=LegendProperties}}
 	            LineSeries line = new LineSeries();
 	            line.IsVisibleInLegend = true;
 	            line.LegendTitle = "Windows 8";
@@ -136,7 +136,7 @@ The elements that provide legend items in the case of the Pie chart are the indi
 
 #### __[VB.NET] __
 
-{{region LegendProperties}}
+{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=LegendProperties}}
 	        Dim line As New LineSeries()
 	        line.IsVisibleInLegend = True
 	        line.LegendTitle = "Windows 8"
@@ -158,7 +158,7 @@ You have access to the items displayed in the legend through the __Items__ prope
 
 #### __[C#] __
 
-{{region ChangeLegendItemText}}
+{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=ChangeLegendItemText}}
 	            this.radChartView1.ChartElement.LegendElement.Items[0].Title = "Linux";
 	{{endregion}}
 
@@ -166,7 +166,7 @@ You have access to the items displayed in the legend through the __Items__ prope
 
 #### __[VB.NET] __
 
-{{region ChangeLegendItemText}}
+{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=ChangeLegendItemText}}
 	        Me.RadChartView1.ChartElement.LegendElement.Items(0).Title = "Linux"
 	{{endregion}}
 
@@ -183,7 +183,7 @@ You can add and remove items from the legend through the __Items__ collection. Y
 
 #### __[C#] __
 
-{{region AddLegendItem}}
+{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=AddLegendItem}}
 	            LegendItem item = new LegendItem();
 	            item.Element.BorderColor = Color.Black;
 	            item.Element.BackColor = Color.Yellow;
@@ -195,7 +195,7 @@ You can add and remove items from the legend through the __Items__ collection. Y
 
 #### __[VB.NET] __
 
-{{region AddLegendItem}}
+{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=AddLegendItem}}
 	        Dim item As New LegendItem()
 	        item.Element.BorderColor = Color.Black
 	        item.Element.BackColor = Color.Yellow
@@ -215,7 +215,7 @@ You can use your own legend item elements by handling the __VisualItemCreating__
 
 #### __[C#] __
 
-{{region CustomLegendItem1}}
+{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=CustomLegendItem1}}
 	            this.radChartView1.ChartElement.LegendElement.VisualItemCreating +=new LegendItemElementCreatingEventHandler(LegendElement_VisualItemCreating);
 	{{endregion}}
 
@@ -223,7 +223,7 @@ You can use your own legend item elements by handling the __VisualItemCreating__
 
 #### __[C#] __
 
-{{region CustomLegendItem2}}
+{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=CustomLegendItem2}}
 	        public class CustomLegendItemElement : LegendItemElement
 	        {
 	            public CustomLegendItemElement(LegendItem item)
@@ -252,7 +252,7 @@ You can use your own legend item elements by handling the __VisualItemCreating__
 
 #### __[VB.NET] __
 
-{{region CustomLegendItem1}}
+{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=CustomLegendItem1}}
 	        AddHandler Me.RadChartView1.ChartElement.LegendElement.VisualItemCreating, AddressOf LegendElement_VisualItemCreating
 	{{endregion}}
 
@@ -260,7 +260,7 @@ You can use your own legend item elements by handling the __VisualItemCreating__
 
 #### __[VB.NET] __
 
-{{region CustomLegendItem2}}
+{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=CustomLegendItem2}}
 	    Public Class CustomLegendItemElement
 	        Inherits LegendItemElement
 	

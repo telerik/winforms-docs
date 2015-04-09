@@ -26,7 +26,7 @@ You can save/load the layout in code as well.
 
 #### __[C#] __
 
-{{region code}}
+{{source=..\SamplesCS\Gauges\LinearGauge\LinearGuageGettingStarted.cs region=code}}
 	            radLinearGauge1.SaveLayout("Layout.xml");
 	            radLinearGauge1.LoadLayout("Layout.xml");
 	{{endregion}}
@@ -35,7 +35,7 @@ You can save/load the layout in code as well.
 
 #### __[VB.NET] __
 
-{{region code}}
+{{source=..\SamplesVB\Gauges\LinearGauge\LinearGuageGettingStarted.vb region=code}}
 	        radLinearGauge1.SaveLayout("Layout.xml")
 	        radLinearGauge1.LoadLayout("Layout.xml")
 	        '#End Region

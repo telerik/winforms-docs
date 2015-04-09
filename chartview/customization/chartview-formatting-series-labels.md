@@ -22,7 +22,7 @@ This article demonstrates how to change the labels styles and text. The series l
 
 #### __[C#] __
 
-{{region ShowLabels}}
+{{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=ShowLabels}}
 	            foreach (var series in radChartView1.Series)
 	            {
 	                series.ShowLabels = true;
@@ -33,7 +33,7 @@ This article demonstrates how to change the labels styles and text. The series l
 
 #### __[VB.NET] __
 
-{{region ShowLabels}}
+{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=ShowLabels}}
 	        For Each series In RadChartView1.Series
 	
 	            series.ShowLabels = True
@@ -46,7 +46,7 @@ This article demonstrates how to change the labels styles and text. The series l
 
 #### __[C#] __
 
-{{region LabelFormatting}}
+{{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=LabelFormatting}}
 	
 	        private Font font1 = new Font("Segoe Script", 12, FontStyle.Regular);
 	
@@ -68,7 +68,7 @@ This article demonstrates how to change the labels styles and text. The series l
 
 #### __[VB.NET] __
 
-{{region LabelFormatting}}
+{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=LabelFormatting}}
 	    Private font1 As New Font("Segoe Script", 12, FontStyle.Regular)
 	
 	    Private Sub radChartView1_LabelFormatting(sender As Object, e As ChartViewLabelFormattingEventArgs)

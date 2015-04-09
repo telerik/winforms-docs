@@ -27,7 +27,7 @@ The following code snippet shows how you can create a new __RadFlowDocument__:
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-radflowdocument_0}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingRadFlowDocument.cs region=radwordsprocessing-model-radflowdocument_0}}
 	            RadFlowDocument document = new RadFlowDocument();
 	{{endregion}}
 
@@ -35,7 +35,7 @@ The following code snippet shows how you can create a new __RadFlowDocument__:
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-radflowdocument_0}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_0}}
 	        Dim document As New RadFlowDocument()
 	        '#End Region
 	    End Sub
@@ -117,7 +117,7 @@ You can create a __RadFlowDocument__ from scratch and add Sections to it as foll
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-radflowdocument_1}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingRadFlowDocument.cs region=radwordsprocessing-model-radflowdocument_1}}
 	            RadFlowDocument document = new RadFlowDocument();
 	            document.Sections.AddSection();
 	{{endregion}}
@@ -126,7 +126,7 @@ You can create a __RadFlowDocument__ from scratch and add Sections to it as foll
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-radflowdocument_1}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_1}}
 	        Dim document As New RadFlowDocument()
 	        document.Sections.AddSection()
 	        '#End Region
@@ -166,7 +166,7 @@ Alternatively, you could create a section by passing to its constructor the docu
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-radflowdocument_2}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingRadFlowDocument.cs region=radwordsprocessing-model-radflowdocument_2}}
 	            Section section = new Section(document);
 	{{endregion}}
 
@@ -174,7 +174,7 @@ Alternatively, you could create a section by passing to its constructor the docu
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-radflowdocument_2}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_2}}
 	        Dim section As New Section(document)
 	        '#End Region
 	    End Sub
@@ -209,7 +209,7 @@ You can merge a __RadFlowDocument__ within another document by using the __Merge
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-radflowdocument_3}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingRadFlowDocument.cs region=radwordsprocessing-model-radflowdocument_3}}
 	            document.Merge(sourceDocument);
 	{{endregion}}
 
@@ -217,7 +217,7 @@ You can merge a __RadFlowDocument__ within another document by using the __Merge
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-radflowdocument_3}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_3}}
 	        document.Merge(sourceDocument)
 	        '#End Region
 	
@@ -255,7 +255,7 @@ Additionally, you have the opportunity to specify the __MergeOptions__ which con
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-radflowdocument_4}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingRadFlowDocument.cs region=radwordsprocessing-model-radflowdocument_4}}
 	            MergeOptions mergeOptions = new MergeOptions();
 	            mergeOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle;
 	
@@ -266,7 +266,7 @@ Additionally, you have the opportunity to specify the __MergeOptions__ which con
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-radflowdocument_4}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_4}}
 	        Dim mergeOptions As New MergeOptions()
 	        mergeOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle
 	
@@ -293,7 +293,7 @@ The next snippet shows how all fields in a document can be updated simultaneousl
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-radflowdocument_5}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingRadFlowDocument.cs region=radwordsprocessing-model-radflowdocument_5}}
 	            document.UpdateFields();
 	{{endregion}}
 
@@ -301,7 +301,7 @@ The next snippet shows how all fields in a document can be updated simultaneousl
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-radflowdocument_5}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_5}}
 	        document.UpdateFields()
 	        '#End Region
 	    End Sub

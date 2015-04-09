@@ -21,7 +21,7 @@ BindingList is a generic list type, that provides additional control over list i
 
 #### __[C#]__
 
-{{region binding}}
+{{source=..\SamplesCS\ChartView\DataBinding\ChartViewDataBindingToBindingList.cs region=binding}}
 	        BindingList<MyCustomObject> myList;
 	
 	        protected override void OnLoad(EventArgs e)
@@ -50,7 +50,7 @@ BindingList is a generic list type, that provides additional control over list i
 
 #### __[VB.NET]__
 
-{{region binding}}
+{{source=..\SamplesVB\ChartView\DataBinding\ChartViewDataBindingToBindingList.vb region=binding}}
 	    Private myList As BindingList(Of MyCustomObject)
 	
 	    Public Sub New()
@@ -131,7 +131,7 @@ In order to allow RadChartView to automatically reflect changes in the DataSourc
 
 #### __[C#]__
 
-{{region customClass}}
+{{source=..\SamplesCS\ChartView\DataBinding\ChartViewDataBindingToBindingList.cs region=customClass}}
 	    public class MyCustomObject : INotifyPropertyChanged
 	    {
 	        private int _myInt;
@@ -179,7 +179,7 @@ In order to allow RadChartView to automatically reflect changes in the DataSourc
 
 #### __[VB.NET]__
 
-{{region customClass}}
+{{source=..\SamplesVB\ChartView\DataBinding\ChartViewDataBindingToBindingList.vb region=customClass}}
 	Public Class MyCustomObject
 	    Implements INotifyPropertyChanged
 	    Private _myInt As Integer
@@ -226,7 +226,7 @@ Once the interface is implemented and your collection implement IBindingList, ju
 
 #### __[C#]__
 
-{{region addingNewRecord}}
+{{source=..\SamplesCS\ChartView\DataBinding\ChartViewDataBindingToBindingList.cs region=addingNewRecord}}
 	        private void radButton1_Click(object sender, EventArgs e)
 	        {
 	            myList.Add(new MyCustomObject(10, "Plants"));
@@ -237,7 +237,7 @@ Once the interface is implemented and your collection implement IBindingList, ju
 
 #### __[VB.NET]__
 
-{{region addingNewRecord}}
+{{source=..\SamplesVB\ChartView\DataBinding\ChartViewDataBindingToBindingList.vb region=addingNewRecord}}
 	    Private Sub RadButton1_Click(sender As System.Object, e As System.EventArgs) Handles RadButton1.Click
 	
 	        myList.Add(New MyCustomObject(10, "Plants"))

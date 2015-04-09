@@ -31,7 +31,7 @@ In order to add paragraphs you have to use the __Paragraphs__ collection of the 
 
 #### __C#__
 
-{{region AddSection}}
+{{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxSection.cs region=AddSection}}
 	            Section section = new Section();
 	            Paragraph paragraph = new Paragraph();
 	            section.Blocks.Add(paragraph);
@@ -42,7 +42,7 @@ In order to add paragraphs you have to use the __Paragraphs__ collection of the 
 
 #### __VB.NET__
 
-{{region AddSection}}
+{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxSection.vb region=AddSection}}
 	        Dim section As New Section()
 	        Dim paragraph As New Paragraph()
 	        section.Blocks.Add(paragraph)

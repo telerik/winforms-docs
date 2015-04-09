@@ -25,7 +25,7 @@ For example if you are in GridViewTextBoxColumn, the editor for the cells in thi
 
 #### __[C#] Handling editors events__
 
-{{region HandlingEditorsEvents}}
+{{source=..\SamplesCS\GridView\Editors\HandlingEditorsEvents.cs region=HandlingEditorsEvents}}
 	        public HandlingEditorsEvents()
 	        {
 	            InitializeComponent();
@@ -64,7 +64,7 @@ For example if you are in GridViewTextBoxColumn, the editor for the cells in thi
 
 #### __[VB.NET] Handling editors events__
 
-{{region HandlingEditorsEvents}}
+{{source=..\SamplesVB\GridView\Editors\HandlingEditorsEvents.vb region=HandlingEditorsEvents}}
 	    Public Sub New()
 	        InitializeComponent()
 	

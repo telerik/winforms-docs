@@ -26,7 +26,7 @@ The following code snippet creates a FloatingImage and adds it to a [Paragraph](
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-floatingimage_0}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingFloatingImage.cs region=radwordsprocessing-model-floatingimage_0}}
 	            FloatingImage floatingImage = new FloatingImage(document);
 	            paragraph.Inlines.Add(floatingImage);
 	{{endregion}}
@@ -35,7 +35,7 @@ The following code snippet creates a FloatingImage and adds it to a [Paragraph](
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-floatingimage_0}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_0}}
 	            Dim floatingImage As New FloatingImage(document)
 	            paragraph.Inlines.Add(floatingImage)
 	            '#End Region
@@ -80,7 +80,7 @@ You can add an image at a specific index in the __Inlines__ collection of a para
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-floatingimage_1}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingFloatingImage.cs region=radwordsprocessing-model-floatingimage_1}}
 	            FloatingImage floatingImage = new FloatingImage(document);
 	            paragraph.Inlines.Insert(0, floatingImage);
 	{{endregion}}
@@ -89,7 +89,7 @@ You can add an image at a specific index in the __Inlines__ collection of a para
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-floatingimage_1}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_1}}
 	            Dim floatingImage As New FloatingImage(document)
 	            paragraph.Inlines.Insert(0, floatingImage)
 	            '#End Region
@@ -124,7 +124,7 @@ You can also use the __AddFloatingImage()__ method of the __Inlines__ collection
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-floatingimage_2}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingFloatingImage.cs region=radwordsprocessing-model-floatingimage_2}}
 	            FloatingImage floatingImage = paragraph.Inlines.AddFloatingImage();
 	{{endregion}}
 
@@ -132,7 +132,7 @@ You can also use the __AddFloatingImage()__ method of the __Inlines__ collection
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-floatingimage_2}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_2}}
 	            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
 	            '#End Region
 	        End Sub
@@ -160,7 +160,7 @@ Inserting __FloatingImage__ element in RadFlowDocument can also be achieved with
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-floatingimage_3}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingFloatingImage.cs region=radwordsprocessing-model-floatingimage_3}}
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
 	
 	            using (Stream stream = this.GetResourceStream("Telerik_logo.png"))
@@ -173,7 +173,7 @@ Inserting __FloatingImage__ element in RadFlowDocument can also be achieved with
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-floatingimage_3}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_3}}
 	            Dim editor As New RadFlowDocumentEditor(document)
 	
 	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")

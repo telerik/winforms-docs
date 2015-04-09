@@ -22,7 +22,7 @@ By default, RadDock uses the VS2010 template. In order to use the VS2008 templat
 
 #### __[C#] __
 
-{{region VS2008}}
+{{source=..\SamplesCS\Dock\dock-architecture-and-features-docking-guides-template.cs region=VS2008}}
 	            
 	            this.radDock1.DockingGuidesTemplate = PredefinedDockingGuidesTemplate.VS2008;
 	            
@@ -32,7 +32,7 @@ By default, RadDock uses the VS2010 template. In order to use the VS2008 templat
 
 #### __[VB.NET] __
 
-{{region VS2008}}
+{{source=..\SamplesVB\Dock\dock-architecture-and-features-docking-guides-template.vb region=VS2008}}
 	
 	        Me.RadDock1.DockingGuidesTemplate = PredefinedDockingGuidesTemplate.VS2008
 	
@@ -78,7 +78,7 @@ We should first create a DockingGuidesTemplate object and then set the images an
 
 #### __[C#] __
 
-{{region Template}}
+{{source=..\SamplesCS\Dock\dock-architecture-and-features-docking-guides-template.cs region=Template}}
 	
 	        DockingGuidesTemplate template;
 	       
@@ -118,7 +118,7 @@ We should first create a DockingGuidesTemplate object and then set the images an
 
 #### __[VB.NET] __
 
-{{region Template}}
+{{source=..\SamplesVB\Dock\dock-architecture-and-features-docking-guides-template.vb region=Template}}
 	    Private template As DockingGuidesTemplate
 	
 	    Private Sub Form1_Load(sender As Object, e As EventArgs)

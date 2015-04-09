@@ -21,7 +21,7 @@ RadPropertyGrid offers a help bar which reads and displays the name and content 
 
 #### __[C#] Enabling the help bar__
 
-{{region helpVisible}}
+{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridHelpBar.cs region=helpVisible}}
 	            radPropertyGrid1.HelpVisible = true;
 	{{endregion}}
 
@@ -29,7 +29,7 @@ RadPropertyGrid offers a help bar which reads and displays the name and content 
 
 #### __[VB.NET] Enabling the help bar__
 
-{{region helpVisible}}
+{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridHelpBar.vb region=helpVisible}}
 	        RadPropertyGrid1.HelpVisible = True
 	{{endregion}}
 

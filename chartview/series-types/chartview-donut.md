@@ -5,7 +5,7 @@ description: Donut
 slug: chartview-series-types-donut
 tags: donut
 published: True
-position: 9
+position: 10
 ---
 
 # Donut
@@ -22,7 +22,7 @@ Similarly to Pie series, Donut series do not use axes. They visualize each data 
 
 #### __[C#] __
 
-{{region donut}}
+{{source=..\SamplesCS\ChartView\Series\DonutSeriesForm.cs region=donut}}
 	            this.radChartView1.AreaType = ChartAreaType.Pie;
 	            DonutSeries series = new DonutSeries();
 	            series.DataPoints.Add(new PieDataPoint(50, "Germany"));
@@ -37,7 +37,7 @@ Similarly to Pie series, Donut series do not use axes. They visualize each data 
 
 #### __[VB.NET] __
 
-{{region donut}}
+{{source=..\SamplesVB\ChartView\Series\DonutSeriesForm.vb region=donut}}
 	        Me.RadChartView1.AreaType = ChartAreaType.Pie
 	        Dim series As New DonutSeries()
 	        series.DataPoints.Add(New PieDataPoint(50, "Germany"))
@@ -61,7 +61,7 @@ DonutSeries can be customized using the following properties:
 
 #### __[C#] __
 
-{{region donutAngleRange}}
+{{source=..\SamplesCS\ChartView\Series\DonutSeriesForm.cs region=donutAngleRange}}
 	            AngleRange range = new AngleRange(270, 300);
 	            series.Range = range;
 	{{endregion}}
@@ -70,7 +70,7 @@ DonutSeries can be customized using the following properties:
 
 #### __[VB.NET] __
 
-{{region donutAngleRange}}
+{{source=..\SamplesVB\ChartView\Series\DonutSeriesForm.vb region=donutAngleRange}}
 	        Dim range As New AngleRange(270, 300)
 	        series.Range = range
 	{{endregion}}
@@ -97,7 +97,7 @@ Additionally, DonutSeries allows offsetting a pie segment from the rest of the s
 
 #### __[C#] __
 
-{{region donutOffset}}
+{{source=..\SamplesCS\ChartView\Series\DonutSeriesForm.cs region=donutOffset}}
 	            PieDataPoint point = series.DataPoints[3] as PieDataPoint;
 	            if (point != null)
 	            {
@@ -109,7 +109,7 @@ Additionally, DonutSeries allows offsetting a pie segment from the rest of the s
 
 #### __[VB.NET] __
 
-{{region donutOffset}}
+{{source=..\SamplesVB\ChartView\Series\DonutSeriesForm.vb region=donutOffset}}
 	        Dim point As PieDataPoint = TryCast(series.DataPoints(3), PieDataPoint)
 	        If point IsNot Nothing Then
 	            point.OffsetFromCenter = 0.1

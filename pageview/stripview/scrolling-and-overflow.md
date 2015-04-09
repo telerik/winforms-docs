@@ -22,7 +22,7 @@ The __StripButtons__ property of RadPageView in Strip View mode allows the user 
 
 #### __[C#] Accessing the StripButtons property__
 
-{{region scrollingAndOverflow}}
+{{source=..\SamplesCS\PageView\StripView.cs region=scrollingAndOverflow}}
 	
 	            RadPageViewStripElement stripElement = (RadPageViewStripElement)this.radPageView1.ViewElement;
 	            stripElement.StripButtons = StripViewButtons.All;
@@ -33,7 +33,7 @@ The __StripButtons__ property of RadPageView in Strip View mode allows the user 
 
 #### __[VB.NET] Accessing the StripButtons property__
 
-{{region scrollingAndOverflow}}
+{{source=..\SamplesVB\PageView\StripView.vb region=scrollingAndOverflow}}
 	
 	        Dim stripElement As RadPageViewStripElement = DirectCast(Me.radPageView1.ViewElement, RadPageViewStripElement)
 	        stripElement.StripButtons = StripViewButtons.All

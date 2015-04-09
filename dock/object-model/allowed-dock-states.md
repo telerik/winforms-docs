@@ -18,7 +18,7 @@ __AllowedDockState__ property gives you the ability to determine the available d
 
 #### __[C#] Setting AllowedDockState property__
 
-{{region allowedDockState}}
+{{source=..\SamplesCS\Dock\CreatingRadDock.cs region=allowedDockState}}
 	            toolWindow1.AllowedDockState = AllowedDockState.Docked | AllowedDockState.Floating;
 	{{endregion}}
 
@@ -26,7 +26,7 @@ __AllowedDockState__ property gives you the ability to determine the available d
 
 #### __[VB.NET] Setting AllowedDockState property__
 
-{{region allowedDockState}}
+{{source=..\SamplesVB\Dock\CreatingRadDock.vb region=allowedDockState}}
 	        toolWindow1.AllowedDockState = AllowedDockState.Docked Or AllowedDockState.Floating
 	{{endregion}}
 
@@ -38,7 +38,7 @@ The following setting will disable the Floating option:
 
 #### __[C#] Setting the AllowedDockState property__
 
-{{region notFloating}}
+{{source=..\SamplesCS\Dock\CreatingRadDock.cs region=notFloating}}
 	            toolWindow1.AllowedDockState = ~AllowedDockState.Floating; 
 	{{endregion}}
 
@@ -46,7 +46,7 @@ The following setting will disable the Floating option:
 
 #### __[VB.NET] Setting the AllowedDockState property__
 
-{{region notFloating}}
+{{source=..\SamplesVB\Dock\CreatingRadDock.vb region=notFloating}}
 	        toolWindow1.AllowedDockState = Not AllowedDockState.Floating
 	{{endregion}}
 

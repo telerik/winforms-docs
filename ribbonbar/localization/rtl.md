@@ -19,7 +19,7 @@ You can present the content of your ribbonbar instance in a right-to-left direct
 
 #### __[C#]__
 
-{{region rtl}}
+{{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=rtl}}
 	
 	            this.radRibbonBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 	
@@ -29,7 +29,7 @@ You can present the content of your ribbonbar instance in a right-to-left direct
 
 #### __[VB.NET]__
 
-{{region rtl}}
+{{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=rtl}}
 	        Me.RadRibbonBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 	{{endregion}}
 

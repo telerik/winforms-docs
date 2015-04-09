@@ -33,7 +33,7 @@ The RadGridView control includes FilterDescriptors property of the GridViewTempl
 
 #### __[C#] Using simple filter descriptor__
 
-{{region usingSimpleFilterDescriptor}}
+{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=usingSimpleFilterDescriptor}}
 	            FilterDescriptor filter = new FilterDescriptor();
 	            filter.PropertyName = "ProductName";
 	            filter.Operator = FilterOperator.Contains;
@@ -46,7 +46,7 @@ The RadGridView control includes FilterDescriptors property of the GridViewTempl
 
 #### __[VB.NET] Using simple filter descriptor__
 
-{{region usingSimpleFilterDescriptor}}
+{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=usingSimpleFilterDescriptor}}
 	        Dim filter As New FilterDescriptor()
 	        filter.PropertyName = "ProductName"
 	        filter.[Operator] = FilterOperator.Contains
@@ -83,7 +83,7 @@ Each data column (represented by [GridViewDataColumn](http://www.telerik.com/hel
 
 #### __[C#] Assigning a filter descriptor object__
 
-{{region assingingAFilterDescriptorObject}}
+{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=assingingAFilterDescriptorObject}}
 	            FilterDescriptor filter1 = new FilterDescriptor();
 	            filter1.Operator = FilterOperator.Contains;
 	            filter1.Value = "Qu";
@@ -95,7 +95,7 @@ Each data column (represented by [GridViewDataColumn](http://www.telerik.com/hel
 
 #### __[VB.NET] Assigning a filter descriptor object__
 
-{{region assingingAFilterDescriptorObject}}
+{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=assingingAFilterDescriptorObject}}
 	        Dim filter1 As New FilterDescriptor()
 	        filter1.[Operator] = FilterOperator.Contains
 	        filter1.Value = "Qu"
@@ -111,7 +111,7 @@ You can add filters to multiple columns by adding a FilterDescriptor for each on
 
 #### __[C#] Setting multiple filters__
 
-{{region settingMultipleFilters}}
+{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=settingMultipleFilters}}
 	            FilterDescriptor filterUnitsInStock = new FilterDescriptor();
 	            filterUnitsInStock.PropertyName = "UnitsInStock";
 	            filterUnitsInStock.Operator = FilterOperator.IsGreaterThan;
@@ -130,7 +130,7 @@ You can add filters to multiple columns by adding a FilterDescriptor for each on
 
 #### __[VB.NET] Setting multiple filters__
 
-{{region settingMultipleFilters}}
+{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=settingMultipleFilters}}
 	        Dim filterUnitsInStock As New FilterDescriptor()
 	        filterUnitsInStock.PropertyName = "UnitsInStock"
 	        filterUnitsInStock.[Operator] = FilterOperator.IsGreaterThan

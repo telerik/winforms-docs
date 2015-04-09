@@ -28,7 +28,7 @@ To assign chart types to a series at run-time programmatically you can pass the 
 
 #### __[C#] Setting chart types__
 
-{{region settingChartTypes}}
+{{source=..\SamplesCS\Chart\MultipleChartTypes.cs region=settingChartTypes}}
 	            Telerik.Charting.ChartSeries chartSeriesA = new Telerik.Charting.ChartSeries("Average Temperatures", ChartSeriesType.Bar);
 	            Telerik.Charting.ChartSeries chartSeriesB = new Telerik.Charting.ChartSeries("Maximum Temperatures", ChartSeriesType.Line);
 	            Telerik.Charting.ChartSeries chartSeriesC = new Telerik.Charting.ChartSeries("Minimum Temperatures", ChartSeriesType.Bubble);
@@ -38,7 +38,7 @@ To assign chart types to a series at run-time programmatically you can pass the 
 
 #### __[VB.NET] Setting chart types__
 
-{{region settingChartTypes}}
+{{source=..\SamplesVB\Chart\MultipleChartTypes.vb region=settingChartTypes}}
 	        Dim chartSeriesA As New Telerik.Charting.ChartSeries("Average Temperatures", ChartSeriesType.Bar)
 	        Dim chartSeriesB As New Telerik.Charting.ChartSeries("Maximum Temperatures", ChartSeriesType.Line)
 	        Dim chartSeriesC As New Telerik.Charting.ChartSeries("Minimum Temperatures", ChartSeriesType.Bubble)
@@ -56,7 +56,7 @@ Use the Axis.Range property to set minimum values, maximum values and step amou
 
 #### __[C#] Using different chart types__
 
-{{region differentChartSeries}}
+{{source=..\SamplesCS\Chart\MultipleChartTypes.cs region=differentChartSeries}}
 	            RadChart radChart = new RadChart();
 	            radChart.PlotArea.Appearance.Dimensions.Margins.Right = Telerik.Charting.Styles.Unit.Percentage(10);
 	            radChart.Legend.Appearance.Position.Auto = false;
@@ -146,7 +146,7 @@ Use the Axis.Range property to set minimum values, maximum values and step amou
 
 #### __[VB.NET] Using different chart types__
 
-{{region differentChartSeries}}
+{{source=..\SamplesVB\Chart\MultipleChartTypes.vb region=differentChartSeries}}
 	        Dim radChart As New RadChart()
 	        radChart.PlotArea.Appearance.Dimensions.Margins.Right = Telerik.Charting.Styles.Unit.Percentage(10)
 	        radChart.Legend.Appearance.Position.Auto = False

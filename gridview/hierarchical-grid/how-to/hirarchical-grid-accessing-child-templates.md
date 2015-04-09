@@ -18,7 +18,7 @@ You can programmatically access your child templates using __RadGridView.MasterG
 
 #### __[C#] Accessing child templates__
 
-{{region AccessingChildTemplates}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=AccessingChildTemplates}}
 	            this.radGridView1.MasterTemplate.Templates[0].AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
 	{{endregion}}
 
@@ -26,7 +26,7 @@ You can programmatically access your child templates using __RadGridView.MasterG
 
 #### __[VB.NET] Accessing child templates__
 
-{{region AccessingChildTemplates}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=AccessingChildTemplates}}
 	        Me.RadGridView1.MasterTemplate.Templates(0).AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill
 	{{endregion}}
 

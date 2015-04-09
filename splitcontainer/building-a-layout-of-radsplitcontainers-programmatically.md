@@ -18,7 +18,7 @@ You can programmatically build a layout of panels using RadSplitContainer. To d
 
 #### __[C#]__
 
-{{region basicLayout}}
+{{source=..\SamplesCS\SplitContainer\BuildingLayout.cs region=basicLayout}}
 	            RadSplitContainer container = new RadSplitContainer();
 	            container.Dock = DockStyle.Fill;
 	            //left panel, sized absolutely   
@@ -62,7 +62,7 @@ You can programmatically build a layout of panels using RadSplitContainer. To d
 
 #### __[VB.NET]__
 
-{{region basicLayout}}
+{{source=..\SamplesVB\SplitContainer\BuildingLayout.vb region=basicLayout}}
 	        Dim container As RadSplitContainer = New RadSplitContainer()
 	        container.Dock = DockStyle.Fill
 	        'left panel, sized absolutely

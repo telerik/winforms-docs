@@ -81,7 +81,7 @@ This tutorial is in three parts. First, you will create a Quick Access Toolbar 
 
 #### __[C#] Open a text file and make its text bold__
 
-{{region OpenFileAndMakeTextBold}}
+{{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingStartMenuQATAndShortcuts.cs region=OpenFileAndMakeTextBold}}
 	        private void radButtonElement1_Click(object sender, EventArgs e)
 	        {
 	             OpenFileDialog dlg = new OpenFileDialog();
@@ -125,7 +125,7 @@ This tutorial is in three parts. First, you will create a Quick Access Toolbar 
 
 #### __[VB.NET] Open a text file and make its text bold__
 
-{{region OpenFileAndMakeTextBold}}
+{{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingStartMenuQATAndShortcuts.vb region=OpenFileAndMakeTextBold}}
 	    Private Sub RadButtonElement1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButtonElement1.Click
 	        Dim dlg As New OpenFileDialog
 	        dlg.Filter = "*.txt,*.rtf|*.txt;*.rtf"
@@ -252,7 +252,7 @@ If you would like to learn more about Application Settings, follow the __Learn m
 
 #### __[C#] Modify the OpenFile method__
 
-{{region modifiedOpenFile}}
+{{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingStartMenuQATAndShortcuts.cs region=modifiedOpenFile}}
 	        private void ModifiedOpenFile(string fname)
 	        {
 	            if (fname.EndsWith("txt"))
@@ -275,7 +275,7 @@ If you would like to learn more about Application Settings, follow the __Learn m
 
 #### __[VB.NET] Modify the OpenFile method__
 
-{{region modifiedOpenFile}}
+{{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingStartMenuQATAndShortcuts.vb region=modifiedOpenFile}}
 	    Private Sub ModifiedOpenFile(ByVal fname As String)
 	        If fname.EndsWith("txt") Then
 	            RichTextBox1.LoadFile(fname, RichTextBoxStreamType.PlainText)
@@ -310,7 +310,7 @@ Note that __OpenfromMRU__ method will respond to the user clicking any of the th
 
 #### __[C#] Add most recent files functionality__
 
-{{region addMostRecentOpenedFiles}}
+{{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingStartMenuQATAndShortcuts.cs region=addMostRecentOpenedFiles}}
 	        private void AddNewMostRecentFile(string newFile)
 	        {
 	            //last three files are stored in appliation settings: "File1","File2","File3" with File1 being the newest
@@ -354,7 +354,7 @@ Note that __OpenfromMRU__ method will respond to the user clicking any of the th
 
 #### __[VB.NET] Add most recent files functionality__
 
-{{region addMostRecentOpenedFiles}}
+{{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingStartMenuQATAndShortcuts.vb region=addMostRecentOpenedFiles}}
 	    Private Sub AddNewMostRecentFile(ByVal newFile As String)
 	        'last three files are stored in appliation settings: "File1","File2","File3" with File1 being the newest
 	        'replace 3 with 2 and 2 with 1 and then add new to 1
@@ -417,7 +417,7 @@ The shorcut assignments is pretty simple. Just switch to the Code View of the fo
 
 #### __[C#] Add most recent files functionality__
 
-{{region shortcuts}}
+{{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingStartMenuQATAndShortcuts.cs region=shortcuts}}
 	            radMenuItem1.Shortcuts.Add(new Telerik.WinControls.RadShortcut(Keys.Control, Keys.O));
 	            radMenuItem2.Shortcuts.Add(new Telerik.WinControls.RadShortcut(Keys.Control, Keys.B));
 	{{endregion}}
@@ -426,7 +426,7 @@ The shorcut assignments is pretty simple. Just switch to the Code View of the fo
 
 #### __[VB.NET] Add most recent files functionality__
 
-{{region shortcuts}}
+{{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingStartMenuQATAndShortcuts.vb region=shortcuts}}
 	        RadMenuItem1.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.O))
 	        RadMenuItem2.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.B))
 	{{endregion}}

@@ -22,7 +22,7 @@ In order to import/export the scheduler appointments to a custom file you should
 
 #### __[C#]__
 
-{{region importExport}}
+{{source=..\SamplesCS\Scheduler\ImportExport\CustomImporterExporter.cs region=importExport}}
 	    public class CustomImporter : ISchedulerImporter
 	    {
 	        public void Import(ISchedulerData data, string stringData)
@@ -59,7 +59,7 @@ In order to import/export the scheduler appointments to a custom file you should
 
 #### __[VB.NET]__
 
-{{region importExport}}
+{{source=..\SamplesVB\Scheduler\ImportExport\CustomImporterExporter.vb region=importExport}}
 	Public Class CustomImporter
 	    Implements ISchedulerImporter
 	
@@ -100,7 +100,7 @@ In order to import/export the scheduler appointments to a custom file you should
 
 #### __[C#]__
 
-{{region imEx}}
+{{source=..\SamplesCS\Scheduler\ImportExport\ImEx.cs region=imEx}}
 	            //Import
 	            using (FileStream fileStream = File.Create("file name"))
 	            {
@@ -117,7 +117,7 @@ In order to import/export the scheduler appointments to a custom file you should
 
 #### __[VB.NET]__
 
-{{region imEx}}
+{{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=imEx}}
 	        'Import
 	        Using fileStream As FileStream = File.Create("file name")
 	            Me.RadScheduler1.Import(fileStream, New CustomImporter())

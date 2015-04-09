@@ -52,7 +52,7 @@ There are also properties for the above settings which you can set in your code:
 
 #### __[C#] __
 
-{{region Modes}}
+{{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=Modes}}
 	
 	            this.radPdfViewer1.ReadingMode = ReadingMode.OnDemand;
 	            this.radPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection;
@@ -63,7 +63,7 @@ There are also properties for the above settings which you can set in your code:
 
 #### __[VB.NET] __
 
-{{region Modes}}
+{{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Modes}}
 	
 	        Me.RadPdfViewer1.ReadingMode = ReadingMode.OnDemand
 	        Me.RadPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection
@@ -109,7 +109,7 @@ Loading a PDF document is done via the __LoadDocument__ method. It accepts eithe
 
 #### __[C#] __
 
-{{region Loading}}
+{{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=Loading}}
 	
 	            this.radPdfViewer1.LoadDocument(Application.StartupPath + "\\PdfViewer\\Sample.pdf");
 	
@@ -119,7 +119,7 @@ Loading a PDF document is done via the __LoadDocument__ method. It accepts eithe
 
 #### __[VB.NET] __
 
-{{region Loading}}
+{{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Loading}}
 	
 	        Me.RadPdfViewer1.LoadDocument(Application.StartupPath & "\PdfViewer\Sample.pdf")
 	
@@ -158,7 +158,7 @@ The calls above will start to load the specified document asynchronously. When t
 
 #### __[C#] __
 
-{{region DocumentLoaded}}
+{{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=DocumentLoaded}}
 	
 	        void radPdfViewer1_DocumentLoaded(object sender, EventArgs e)
 	        {
@@ -171,7 +171,7 @@ The calls above will start to load the specified document asynchronously. When t
 
 #### __[VB.NET] __
 
-{{region DocumentLoaded}}
+{{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=DocumentLoaded}}
 	
 	    Private Sub radPdfViewer1_DocumentLoaded(sender As Object, e As EventArgs)
 	        RadMessageBox.Show("The document was loaded.")
@@ -196,7 +196,7 @@ Respectively, to unload a document, you can use the __UnloadDocument__ method
 
 #### __[C#] __
 
-{{region Unloading}}
+{{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=Unloading}}
 	
 	            this.radPdfViewer1.UnloadDocument();
 	
@@ -206,7 +206,7 @@ Respectively, to unload a document, you can use the __UnloadDocument__ method
 
 #### __[VB.NET] __
 
-{{region Unloading}}
+{{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Unloading}}
 	
 	        Me.RadPdfViewer1.UnloadDocument()
 	
@@ -223,7 +223,7 @@ You can also set this in your code by using the __AssociatedPdfViewer__ property
 
 #### __[C#] __
 
-{{region Navigator}}
+{{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=Navigator}}
 	
 	            this.radPdfViewerNavigator1.AssociatedViewer = this.radPdfViewer1;
 	
@@ -233,7 +233,7 @@ You can also set this in your code by using the __AssociatedPdfViewer__ property
 
 #### __[VB.NET] __
 
-{{region Navigator}}
+{{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Navigator}}
 	
 	        Me.RadPdfViewerNavigator1.AssociatedViewer = Me.RadPdfViewer1
 	

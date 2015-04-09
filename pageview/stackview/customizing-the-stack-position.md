@@ -37,7 +37,7 @@ Regardless the stack position, the content of the selected item is displayed at 
 
 #### __[C#]__
 
-{{region stackPosition}}
+{{source=..\SamplesCS\PageView\StackView.cs region=stackPosition}}
 	
 	            RadPageViewStackElement stackElement = this.radPageView1.ViewElement as RadPageViewStackElement;
 	            stackElement.StackPosition = StackViewPosition.Right;
@@ -48,7 +48,7 @@ Regardless the stack position, the content of the selected item is displayed at 
 
 #### __[VB.NET]__
 
-{{region stackPosition}}
+{{source=..\SamplesVB\PageView\StackView.vb region=stackPosition}}
 	
 	        Dim stackElement As RadPageViewStackElement = TryCast(Me.radPageView1.ViewElement, RadPageViewStackElement)
 	        stackElement.StackPosition = StackViewPosition.Right

@@ -40,7 +40,7 @@ The suggested way to insert hyperlink is by using [RadFlowDocumentEditor]({%slug
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-hyperlinks_0}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingHyperlinks.cs region=radwordsprocessing-concepts-hyperlinks_0}}
 	            editor.InsertHyperlink("telerik", "http://www.telerik.com", false, "Telerik site");
 	{{endregion}}
 
@@ -48,7 +48,7 @@ The suggested way to insert hyperlink is by using [RadFlowDocumentEditor]({%slug
 
 #### __VB NET__
 
-{{region radwordsprocessing-concepts-hyperlinks_0}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingHyperlink.vb region=radwordsprocessing-concepts-hyperlinks_0}}
 	        editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
 	        '#End Region
 	    End Sub
@@ -81,7 +81,7 @@ Hyperlinks can also point to a [Boomark]({%slug wordsprocessing-model-bookmark%}
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-hyperlinks_1}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingHyperlinks.cs region=radwordsprocessing-concepts-hyperlinks_1}}
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
 	
 	            // Insert bookmark.
@@ -96,7 +96,7 @@ Hyperlinks can also point to a [Boomark]({%slug wordsprocessing-model-bookmark%}
 
 #### __VB NET__
 
-{{region radwordsprocessing-concepts-hyperlinks_1}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingHyperlink.vb region=radwordsprocessing-concepts-hyperlinks_1}}
 	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	
 	        ' Insert bookmark.

@@ -50,7 +50,7 @@ Steps to create a Load-On-Demand hierarchy mode:
 
 #### __[C#] Defining the child template__
 
-{{region bindingRadGridView}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\LoadOnDemandHierarchy.cs region=bindingRadGridView}}
 	            this.radGridView1.DataSource = productModelBindingSource;
 	            this.radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill;
 	{{endregion}}
@@ -59,7 +59,7 @@ Steps to create a Load-On-Demand hierarchy mode:
 
 #### __[VB.NET] Defining the child template__
 
-{{region bindingRadGridView}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\LoadOnDemandHierarchy.vb region=bindingRadGridView}}
 	        Me.RadGridView1.DataSource = ProductModelBindingSource
 	        Me.RadGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
 	{{endregion}}
@@ -70,7 +70,7 @@ Steps to create a Load-On-Demand hierarchy mode:
 
 #### __[C#] Defining the child template__
 
-{{region childTemplate}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\LoadOnDemandHierarchy.cs region=childTemplate}}
 	        private GridViewTemplate CreateChildTemplate()
 	        {
 	            GridViewTemplate template = new GridViewTemplate();
@@ -99,7 +99,7 @@ Steps to create a Load-On-Demand hierarchy mode:
 
 #### __[VB.NET] Defining the child template__
 
-{{region childTemplate}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\LoadOnDemandHierarchy.vb region=childTemplate}}
 	    Private Function CreateChildTemplate() As GridViewTemplate
 	        Dim template As New GridViewTemplate()
 	        template.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
@@ -123,7 +123,7 @@ Steps to create a Load-On-Demand hierarchy mode:
 
 #### __[C#] Setting up the load-on-demand mode__
 
-{{region loadOnDemandMode}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\LoadOnDemandHierarchy.cs region=loadOnDemandMode}}
 	        void Form1_Load(object sender, EventArgs e)
 	        {
 	            this.productModelTableAdapter.Fill(this.adventureLT2008DataSet.ProductModel);
@@ -141,7 +141,7 @@ Steps to create a Load-On-Demand hierarchy mode:
 
 #### __[VB.NET] Setting up the load-on-demand mode__
 
-{{region loadOnDemandMode}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\LoadOnDemandHierarchy.vb region=loadOnDemandMode}}
 	    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        Me.ProductModelTableAdapter.Fill(Me.AdventureLT2008DataSet.ProductModel)
 	        Me.ProductTableAdapter.Fill(Me.AdventureLT2008DataSet.Product)
@@ -164,7 +164,7 @@ Steps to create a Load-On-Demand hierarchy mode:
 
 #### __[C#] Handling RowSourceNeeded event__
 
-{{region handlingRowSourceNeeded}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\LoadOnDemandHierarchy.cs region=handlingRowSourceNeeded}}
 	        void radGridView1_RowSourceNeeded(object sender, GridViewRowSourceNeededEventArgs e)
 	        {
 	            DataRowView rowView = e.ParentRow.DataBoundItem as DataRowView;
@@ -190,7 +190,7 @@ Steps to create a Load-On-Demand hierarchy mode:
 
 #### __[VB.NET] Handling RowSourceNeeded event__
 
-{{region handlingRowSourceNeeded}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\LoadOnDemandHierarchy.vb region=handlingRowSourceNeeded}}
 	    Private Sub radGridView1_RowSourceNeeded(ByVal sender As Object, ByVal e As GridViewRowSourceNeededEventArgs)
 	        Dim rowView As DataRowView = TryCast(e.ParentRow.DataBoundItem, DataRowView)
 	        Dim rows() As DataRow = rowView.Row.GetChildRows("ProductModel_Product")

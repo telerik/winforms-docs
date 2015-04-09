@@ -28,7 +28,7 @@ The following code demonstrates how to create a grid with two columns and ten ro
 
 #### __[C#] Creating empty grid__
 
-{{region creatingEmptyGrid}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\UnboundMode.cs region=creatingEmptyGrid}}
 	            
 	            this.radGridView1.RowCount = 10;
 	            this.radGridView1.Columns.Add(new GridViewTextBoxColumn("A"));
@@ -41,7 +41,7 @@ The following code demonstrates how to create a grid with two columns and ten ro
 
 #### __[VB.NET] Creating empty grid__
 
-{{region creatingEmptyGrid}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\UnboundMode.vb region=creatingEmptyGrid}}
 	        Me.RadGridView1.RowCount = 10
 	        Me.RadGridView1.Columns.Add(New GridViewTextBoxColumn("A"))
 	        Me.RadGridView1.Columns.Add(New GridViewTextBoxColumn("B"))
@@ -60,7 +60,7 @@ In this scenario, you should add the data for each cell in the row, specifying t
 
 #### __[C#] Adding rows through Cells collection__
 
-{{region addingRowsThroughCellsCollection}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\UnboundMode.cs region=addingRowsThroughCellsCollection}}
 	            
 	            this.radGridView1.Columns.Add(new GridViewTextBoxColumn("A"));
 	            this.radGridView1.Columns.Add(new GridViewTextBoxColumn("B"));
@@ -77,7 +77,7 @@ In this scenario, you should add the data for each cell in the row, specifying t
 
 #### __[VB.NET] Adding rows through Cells collection__
 
-{{region addingRowsThroughCellsCollection}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\UnboundMode.vb region=addingRowsThroughCellsCollection}}
 	    Public Sub Form1_Load1(sender As Object, e As EventArgs)
 	        Me.RadGridView1.Columns.Add(New GridViewTextBoxColumn("A"))
 	        Me.RadGridView1.Columns.Add(New GridViewTextBoxColumn("B"))
@@ -106,7 +106,7 @@ You can have the same result as the picture above by adding the rows data using 
 
 #### __[C#] Adding data through Rows collection__
 
-{{region addingRowsThroughRowsCollection}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\UnboundMode.cs region=addingRowsThroughRowsCollection}}
 	            
 	            this.radGridView1.Columns.Add(new GridViewTextBoxColumn("A"));
 	            this.radGridView1.Columns.Add(new GridViewTextBoxColumn("B"));
@@ -119,7 +119,7 @@ You can have the same result as the picture above by adding the rows data using 
 
 #### __[VB.NET] Adding data through Rows collection__
 
-{{region addingRowsThroughRowsCollection}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\UnboundMode.vb region=addingRowsThroughRowsCollection}}
 	    Public Sub Form1_Load2(sender As Object, e As EventArgs)
 	        Me.RadGridView1.Columns.Add(New GridViewTextBoxColumn("A"))
 	        Me.RadGridView1.Columns.Add(New GridViewTextBoxColumn("B"))
@@ -137,7 +137,7 @@ Setting the hierarchical grid in unbound mode is quite similar to that for the b
 
 #### __[C#] Creating hierarchical grid in unbound mode__
 
-{{region creatingHierarchicalGridInUnboundMode}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\UnboundMode.cs region=creatingHierarchicalGridInUnboundMode}}
 	            
 	        public void creatingHierarchicalGridInUnboundMode()
 	        {
@@ -236,7 +236,7 @@ Setting the hierarchical grid in unbound mode is quite similar to that for the b
 
 #### __[VB.NET] Creating hierarchical grid in unbound mode__
 
-{{region creatingHierarchicalGridInUnboundMode}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\UnboundMode.vb region=creatingHierarchicalGridInUnboundMode}}
 	    Public Sub creatingHierarchicalGridInUnboundMode()
 	        'setup the master template
 	        Dim column As New GridViewImageColumn("Photo")

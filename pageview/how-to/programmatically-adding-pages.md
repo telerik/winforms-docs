@@ -21,7 +21,7 @@ This help article will demonstrate __RadPageViewPages__can be added to __RadPage
 
 #### __[C#] Adding pages__
 
-{{region addingPages}}
+{{source=..\SamplesCS\PageView\HowTo.cs region=addingPages}}
 	
 	            RadPageViewPage pageOne = new RadPageViewPage();
 	            pageOne.Text = "First Page";
@@ -37,7 +37,7 @@ This help article will demonstrate __RadPageViewPages__can be added to __RadPage
 
 #### __[VB.NET] Adding pages__
 
-{{region addingPages}}
+{{source=..\SamplesVB\PageView\HowTo.vb region=addingPages}}
 	
 	        Dim pageOne As New RadPageViewPage()
 	        pageOne.Text = "First Page"
@@ -58,7 +58,7 @@ Additionally adding other controls to a specified __RadPageViewPage__ programma
 
 #### __[C#] Adding controls__
 
-{{region addingControls}}
+{{source=..\SamplesCS\PageView\HowTo.cs region=addingControls}}
 	
 	            RadButton button = new RadButton();
 	            button.Text = "My Button";
@@ -70,7 +70,7 @@ Additionally adding other controls to a specified __RadPageViewPage__ programma
 
 #### __[VB.NET] Adding controls__
 
-{{region addingControls}}
+{{source=..\SamplesVB\PageView\HowTo.vb region=addingControls}}
 	
 	        Dim button As New RadButton()
 	        button.Text = "My Button"

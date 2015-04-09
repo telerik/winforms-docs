@@ -28,7 +28,7 @@ If the Item which needs a ScreenTip is a TreeNodeElement, you set the necessary 
 
 #### __[C#]__
 
-{{region screenTip}}
+{{source=..\SamplesCS\TreeView\HowTo\TreeScreenTips.cs region=screenTip}}
 	        RadOffice2007ScreenTipElement screenTip = new RadOffice2007ScreenTipElement();
 	        Size size = new Size(120, 70);
 	        Padding pad = new Padding(2);
@@ -57,7 +57,7 @@ If the Item which needs a ScreenTip is a TreeNodeElement, you set the necessary 
 
 #### __[VB.NET]__
 
-{{region screenTip}}
+{{source=..\SamplesVB\TreeView\HowTo\TreeScreenTips.vb region=screenTip}}
 	    Private screenTip As New RadOffice2007ScreenTipElement()
 	    Private Shadows size As New Size(120, 70)
 	    Private pad As New Padding(2)

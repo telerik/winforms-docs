@@ -37,7 +37,7 @@ __Example 1__ illustrates how the contents of column *A* can be copied to the re
 
 #### __[C#] Example 1: Fill Right__
 
-{{region radspreadprocessing-features-fill-data-automatically-repeat-values_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingRepeatValues.cs region=radspreadprocessing-features-fill-data-automatically-repeat-values_0}}
 	            Workbook workbook = new Workbook();
 	            workbook.Worksheets.Add();
 	            Worksheet activeWorksheet = workbook.ActiveWorksheet;
@@ -55,7 +55,7 @@ __Example 1__ illustrates how the contents of column *A* can be copied to the re
 
 #### __VB__
 
-{{region radspreadprocessing-features-fill-data-automatically-repeat-values_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingRepeatValues.vb region=radspreadprocessing-features-fill-data-automatically-repeat-values_0}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -99,7 +99,7 @@ __Example 2__ invokes the __FillData()__ method with __FillDirection Down__ for 
 
 #### __[C#] Example 2: Fill Down__
 
-{{region radspreadprocessing-features-fill-data-automatically-repeat-values_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingRepeatValues.cs region=radspreadprocessing-features-fill-data-automatically-repeat-values_1}}
 	            Workbook workbook = new Workbook();
 	            workbook.Worksheets.Add();
 	            Worksheet activeWorksheet = workbook.ActiveWorksheet;
@@ -116,7 +116,7 @@ __Example 2__ invokes the __FillData()__ method with __FillDirection Down__ for 
 
 #### __VB__
 
-{{region radspreadprocessing-features-fill-data-automatically-repeat-values_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingRepeatValues.vb region=radspreadprocessing-features-fill-data-automatically-repeat-values_1}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	

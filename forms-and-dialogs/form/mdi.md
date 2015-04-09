@@ -22,7 +22,7 @@ The following code snippet adds three __RadForm__instances to a MDI container an
 
 #### __[C#] Adding RadForm MDI children to RadForm __
 
-{{region addingMDIChildFormsToAForm}}
+{{source=..\SamplesCS\Forms and Dialogs\Form1.cs region=addingMDIChildFormsToAForm}}
 	            this.IsMdiContainer = true;
 	             
 	            RadForm form = new RadForm();
@@ -48,7 +48,7 @@ The following code snippet adds three __RadForm__instances to a MDI container an
 
 #### __[VB.NET] Adding RadForm MDI children to RadForm__
 
-{{region addingMDIChildFormsToAForm}}
+{{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=addingMDIChildFormsToAForm}}
 	        Me.IsMdiContainer = True
 	
 	        Dim form As New RadForm()

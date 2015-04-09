@@ -18,7 +18,7 @@ Enabling the RightToLeft mode of RadScheduler is achieved by setting the __Right
 
 #### __[C#] Setting RadScheduler in RighToLeft__
 
-{{region RTL}}
+{{source=..\SamplesCS\Scheduler\Localization\SchedulerRightToLeft.cs region=RTL}}
 	            radScheduler1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 	{{endregion}}
 
@@ -26,7 +26,7 @@ Enabling the RightToLeft mode of RadScheduler is achieved by setting the __Right
 
 #### __[VB.NET] Setting RadScheduler in RighToLeft__
 
-{{region RTL}}
+{{source=..\SamplesVB\Scheduler\Localization\SchedulerRightToLeft.vb region=RTL}}
 	        RadScheduler1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 	{{endregion}}
 

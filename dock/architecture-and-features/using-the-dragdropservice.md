@@ -22,7 +22,7 @@ A running drag-and-drop operation (DDO) may be easily canceled by either pressin
 
 #### __[C#] Canceling Drag-and-drop operation__
 
-{{region cancellingService}}
+{{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=cancellingService}}
 	            DragDropService service = this.radDock1.GetService<DragDropService>();
 	            service.Stop(false);
 	{{endregion}}
@@ -31,7 +31,7 @@ A running drag-and-drop operation (DDO) may be easily canceled by either pressin
 
 #### __[VB.NET] Canceling Drag-and-drop operation__
 
-{{region cancellingService}}
+{{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=cancellingService}}
 	        Dim service As DragDropService = Me.RadDock1.GetService(Of DragDropService)()
 	        service.Stop(False)
 	{{endregion}}
@@ -52,7 +52,7 @@ You can switch between *Preview* and *Immediate* modes by setting the __DragDro
 
 #### __[C#] Setting DragDropMode__
 
-{{region dragDropMode}}
+{{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=dragDropMode}}
 	            this.radDock1.DragDropMode = DragDropMode.Preview;
 	{{endregion}}
 
@@ -60,7 +60,7 @@ You can switch between *Preview* and *Immediate* modes by setting the __DragDro
 
 #### __[VB.NET] Setting DragDropMode__
 
-{{region dragDropMode}}
+{{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=dragDropMode}}
 	        Me.RadDock1.DragDropMode = DragDropMode.Preview
 	{{endregion}}
 
@@ -72,7 +72,7 @@ The service may be told which dock states are allowed to be hit-tested. For exam
 
 #### __[C#] Setting AllowedStates__
 
-{{region dragDropAllowedStates}}
+{{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=dragDropAllowedStates}}
 	            DragDropService service = this.radDock1.GetService<DragDropService>();
 	            service.AllowedStates &= ~AllowedDockState.Floating;
 	{{endregion}}
@@ -81,7 +81,7 @@ The service may be told which dock states are allowed to be hit-tested. For exam
 
 #### __[VB.NET] Setting AllowedStates__
 
-{{region dragDropAllowedStates}}
+{{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=dragDropAllowedStates}}
 	        Dim service As DragDropService = Me.RadDock1.GetService(Of DragDropService)()
 	        service.AllowedStates = service.AllowedStates And Not AllowedDockState.Floating
 	{{endregion}}
@@ -116,7 +116,7 @@ The following example demonstrates how to allow only DockPosition.Bottom for the
 
 #### __[C#] Handling DragDropService events__
 
-{{region initDragDropEvents}}
+{{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=initDragDropEvents}}
 	        private void InitDragDropEvents()
 	        {
 	            DragDropService service = this.radDock1.GetService<DragDropService>();
@@ -136,7 +136,7 @@ The following example demonstrates how to allow only DockPosition.Bottom for the
 
 #### __[VB.NET] Handling DragDropService events__
 
-{{region initDragDropEvents}}
+{{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=initDragDropEvents}}
 	    Private Sub InitDragDropEvents()
 	        Dim service As DragDropService = Me.RadDock1.GetService(Of DragDropService)()
 	        AddHandler service.PreviewDockPosition, AddressOf service_PreviewDockPosition
@@ -163,7 +163,7 @@ The service may be told which edges of the owning RadDock instance are allowed f
 
 #### __[C#] Setting AllowedDockManagerEdges__
 
-{{region initDragDropProperties}}
+{{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=initDragDropProperties}}
 	        private void InitDragDropProperties()
 	        {
 	            DragDropService service = this.radDock1.GetService<DragDropService>();
@@ -175,7 +175,7 @@ The service may be told which edges of the owning RadDock instance are allowed f
 
 #### __[VB.NET] Setting AllowedDockManagerEdges__
 
-{{region initDragDropProperties}}
+{{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=initDragDropProperties}}
 	    Private Sub InitDragDropProperties()
 	        Dim service As DragDropService = Me.RadDock1.GetService(Of DragDropService)()
 	        service.AllowedDockManagerEdges = AllowedDockPosition.Left Or AllowedDockPosition.Right

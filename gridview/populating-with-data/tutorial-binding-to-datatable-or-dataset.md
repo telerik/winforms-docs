@@ -45,7 +45,7 @@ The following tutorial demonstrates binding to a single database table. For info
 
 #### __[C#] Best fit columns__
 
-{{region bestFitColumns}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\TutorialBindingToDataTableOrDataSet.cs region=bestFitColumns}}
 	        private void TutorialBindingToDataTableOrDataSet_Load(object sender, EventArgs e)
 	        {
 	            this.categoriesTableAdapter.Fill(this.nwindDataSet.Categories);
@@ -60,7 +60,7 @@ The following tutorial demonstrates binding to a single database table. For info
 
 #### __[VB.NET] Best fit columns__
 
-{{region bestFitColumns}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\TutorialBindingToDataTableOrDataSet.vb region=bestFitColumns}}
 	    Private Sub TutorialBindingToDataTableOrDataSet_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        Me.CategoriesTableAdapter.Fill(Me.NwindDataSet.Categories)
 	        For Each column As GridViewDataColumn In RadGridView1.Columns

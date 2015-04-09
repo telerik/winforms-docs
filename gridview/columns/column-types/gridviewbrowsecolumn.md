@@ -22,7 +22,7 @@ __GridViewBrowseColumn__ is never auto-generated. The following code snippet
 
 #### __[C#] __
 
-{{region addBrowseColumn}}
+{{source=..\SamplesCS\GridView\Columns\GridViewBrowseColumn1.cs region=addBrowseColumn}}
 	            GridViewBrowseColumn column = new GridViewBrowseColumn("Browse column");
 	            this.radGridView1.Columns.Add(column);
 	
@@ -39,7 +39,7 @@ __GridViewBrowseColumn__ is never auto-generated. The following code snippet
 
 #### __[VB.NET] __
 
-{{region addBrowseColumn}}
+{{source=..\SamplesVB\GridView\Columns\GridViewBrowseColumn1.vb region=addBrowseColumn}}
 	        Dim column As New GridViewBrowseColumn("Browse column")
 	        Me.radGridView1.Columns.Add(column)
 	

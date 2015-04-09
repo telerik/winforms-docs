@@ -31,7 +31,7 @@ In the __EditorElement__ we will add a __RadDropDownListElement__. The DropDownL
 
 #### __[C#] __
 
-{{region CustomTreeViewEditorElement}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\EditingNodes.cs region=CustomTreeViewEditorElement}}
 	    public class CustomRadTreeViewEditorElement : BaseTextBoxEditorElement
 	    {
 	        private RadDropDownListElement dropDownList;
@@ -71,7 +71,7 @@ In the __EditorElement__ we will add a __RadDropDownListElement__. The DropDownL
 
 #### __[VB] __
 
-{{region CustomTreeViewEditorElement}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\EditingNodes.vb region=CustomTreeViewEditorElement}}
 	Public Class CustomRadTreeViewEditorElement
 	    Inherits BaseTextBoxEditorElement
 	    Private m_dropDownList As RadDropDownListElement
@@ -113,7 +113,7 @@ The __EditorElement__ encapsulates the visual appearance of the element, we will
 
 #### __[C#] __
 
-{{region CustomTreeViewEditor}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\EditingNodes.cs region=CustomTreeViewEditor}}
 	    public class CustomRadTreeViewEditor : BaseTextBoxEditor
 	    {
 	        protected override RadElement CreateEditorElement()
@@ -162,7 +162,7 @@ The __EditorElement__ encapsulates the visual appearance of the element, we will
 
 #### __[VB] __
 
-{{region CustomTreeViewEditor}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\EditingNodes.vb region=CustomTreeViewEditor}}
 	Public Class CustomRadTreeViewEditor
 	    Inherits BaseTextBoxEditor
 	    Protected Overrides Function CreateEditorElement() As RadElement
@@ -211,7 +211,7 @@ Now all that is left is to drag a RadTreeView to a form, populate it with data a
 
 #### __[C#] __
 
-{{region Initialization}}
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\EditingNodes.cs region=Initialization}}
 	        public EditingNodes()
 	        {
 	            InitializeComponent();
@@ -247,7 +247,7 @@ Now all that is left is to drag a RadTreeView to a form, populate it with data a
 
 #### __[VB] __
 
-{{region Initialization}}
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\EditingNodes.vb region=Initialization}}
 	    Public Sub New()
 	        InitializeComponent()
 	

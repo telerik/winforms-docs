@@ -25,7 +25,7 @@ __Example 1__ creates a new workbook from scratch and subscribes to its __Active
 
 #### __[C#] Example 1: Change active sheet__
 
-{{region radspreadprocessing-working-with-worksheets-activate-worksheet_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingActivateAWorksheet.cs region=radspreadprocessing-working-with-worksheets-activate-worksheet_0}}
 	        public void ActivateWorksheetDemo()
 	        {
 	            Workbook workbook = new Workbook();
@@ -48,7 +48,7 @@ __Example 1__ creates a new workbook from scratch and subscribes to its __Active
 
 #### __[VB.NET] Example 1: Change active sheet__
 
-{{region radspreadprocessing-working-with-worksheets-activate-worksheet_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingActivateAWorksheet.vb region=radspreadprocessing-working-with-worksheets-activate-worksheet_0}}
 	    Public Sub ActivateWorksheetDemo()
 	        Dim workbook As New Workbook()
 	

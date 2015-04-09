@@ -24,7 +24,7 @@ The code snippet below demonstrates how you can assign a tooltip to a data cell 
 
 #### __[C#] __
 
-{{region CellFormatting}}
+{{source=..\SamplesCS\GridView\Cells\ToolTips1.cs region=CellFormatting}}
 	        void radGridView1_CellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
 	        {
 	            if (e.Row is GridViewDataRowInfo)
@@ -38,7 +38,7 @@ The code snippet below demonstrates how you can assign a tooltip to a data cell 
 
 #### __[VB.NET] __
 
-{{region CellFormatting}}
+{{source=..\SamplesVB\GridView\Cells\ToolTips1.vb region=CellFormatting}}
 	    Private Sub RadGridView1_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
 	        If TypeOf e.Row Is GridViewDataRowInfo Then
 	            e.CellElement.ToolTipText = "Tooltip: " & e.CellElement.Text
@@ -54,7 +54,7 @@ The code snippet below demonstrates how you can use ToolTipTextNeeded event hand
 
 #### __[C#] __
 
-{{region ToolTipTextNeeded}}
+{{source=..\SamplesCS\GridView\Cells\ToolTips1.cs region=ToolTipTextNeeded}}
 	        private void radGridView1_ToolTipTextNeeded(object sender, Telerik.WinControls.ToolTipTextNeededEventArgs e)
 	        {
 	            GridDataCellElement cell = sender as GridDataCellElement;
@@ -70,7 +70,7 @@ The code snippet below demonstrates how you can use ToolTipTextNeeded event hand
 
 #### __[VB.NET] __
 
-{{region ToolTipTextNeeded}}
+{{source=..\SamplesVB\GridView\Cells\ToolTips1.vb region=ToolTipTextNeeded}}
 	    Private Sub RadGridView1_ToolTipTextNeeded(sender As Object, e As Telerik.WinControls.ToolTipTextNeededEventArgs) Handles RadGridView1.ToolTipTextNeeded
 	        Dim cell As GridDataCellElement = TryCast(sender, GridDataCellElement)
 	

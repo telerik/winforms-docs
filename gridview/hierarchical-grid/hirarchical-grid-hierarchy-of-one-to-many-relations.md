@@ -29,7 +29,7 @@ __4.__ Run the project.
 
 #### __[C#] Hierarchy of one to many relation__
 
-{{region HierarchyOfOneToManyRelation}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\HierarchyOfOneToManyRelation.cs region=HierarchyOfOneToManyRelation}}
 	        private void HierarchyOfOneToManyRelation_Load(object sender, EventArgs e)
 	        {
 	            this.songsTableAdapter.Fill(this.musicCollectionDataSet.Songs);
@@ -71,7 +71,7 @@ __4.__ Run the project.
 
 #### __[VB.NET] Hierarchy of one to many relation__
 
-{{region HierarchyOfOneToManyRelation}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\HierarchyOfOneToManyRelation.vb region=HierarchyOfOneToManyRelation}}
 	    Private Sub HierarchyOfOneToManyRelation_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        Me.SongsTableAdapter.Fill(Me.MusicCollectionDataSet.Songs)
 	        Me.ArtistsTableAdapter.Fill(Me.MusicCollectionDataSet.Artists)
@@ -132,7 +132,7 @@ In some cases you may want to set custom text to the tabs of the child views dif
 
 #### __[C#]__
 
-{{region formattingTabs}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\HierarchyOfOneToManyRelation.cs region=formattingTabs}}
 	        void radGridView1_ViewCellFormatting(object sender, CellFormattingEventArgs e)
 	        {
 	            GridDetailViewCellElement detailCell = e.CellElement as GridDetailViewCellElement;
@@ -153,7 +153,7 @@ In some cases you may want to set custom text to the tabs of the child views dif
 
 #### __[VB.NET]__
 
-{{region formattingTabs}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\HierarchyOfOneToManyRelation.vb region=formattingTabs}}
 	    Private Sub RadGridView1_ViewCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.ViewCellFormatting
 	        Dim detailCell As GridDetailViewCellElement = TryCast(e.CellElement, GridDetailViewCellElement)
 	        If detailCell IsNot Nothing Then

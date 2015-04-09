@@ -32,7 +32,7 @@ __Example 1__ creates a workbook from scratch and adds a single worksheet to it.
 
 #### __[C#] Example 1: Create a workbook and add a worksheet to it__
 
-{{region radspreadprocessing-working-with-worksheets-add-remove-worksheets_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingAddAndRemoveWorksheets.cs region=radspreadprocessing-working-with-worksheets-add-remove-worksheets_0}}
 	            Workbook workbook = new Workbook();
 	            Worksheet newWorksheet = workbook.Worksheets.Add();
 	{{endregion}}
@@ -41,7 +41,7 @@ __Example 1__ creates a workbook from scratch and adds a single worksheet to it.
 
 #### __[VB.NET] Example 1: Create a workbook and add a worksheet to it__
 
-{{region radspreadprocessing-working-with-worksheets-add-remove-worksheets_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingAddAndRemoveWorksheets.vb region=radspreadprocessing-working-with-worksheets-add-remove-worksheets_0}}
 	        Dim workbook As New Workbook()
 	        Dim newWorksheet As Worksheet = workbook.Worksheets.Add()
 	        '#End Region
@@ -76,7 +76,7 @@ __Example 2__ creates a workbook and adds four worksheets. All worksheets are wi
 
 #### __[C#] Example 2: Add and remove worksheets__
 
-{{region radspreadprocessing-working-with-worksheets-add-remove-worksheets_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingAddAndRemoveWorksheets.cs region=radspreadprocessing-working-with-worksheets-add-remove-worksheets_1}}
 	            Workbook workbook = new Workbook();
 	            workbook.Worksheets.Add(); // Sheet1
 	            Worksheet secondWorksheet = workbook.Worksheets.Add(); // Sheet2
@@ -93,7 +93,7 @@ __Example 2__ creates a workbook and adds four worksheets. All worksheets are wi
 
 #### __[VB.NET] Example 2: Add and remove worksheets__
 
-{{region radspreadprocessing-working-with-worksheets-add-remove-worksheets_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingAddAndRemoveWorksheets.vb region=radspreadprocessing-working-with-worksheets-add-remove-worksheets_1}}
 	        Dim workbook As New Workbook()
 	        workbook.Worksheets.Add() ' Sheet1
 	        Dim secondWorksheet As Worksheet = workbook.Worksheets.Add() ' Sheet2

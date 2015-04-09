@@ -40,20 +40,22 @@ __Example 1__ shows how to use __PdfFormatProvider__ to export a Workbook to a f
 
 #### __[C#] Example 1: PdfFormatProvider Export Example__
 
-{{region radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingUsingPdfFormatProvider.cs region=radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider_0}}
+	                
 	                PdfFormatProvider pdfFormatProvider = new PdfFormatProvider();
 	                using (Stream output = GetFileStream())
 	                {
 	                    Workbook workbook = CreateSampleWorkbook();
 	                    pdfFormatProvider.Export(workbook, output);
 	                }
+	            
 	{{endregion}}
 
 
 
 #### __[VB NET] Example 1: PdfFormatProvider Export Example__
 
-{{region radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingUsingPdfFormatProvider.vb region=radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider_0}}
 	            Dim pdfFormatProvider As New PdfFormatProvider()
 	            Using output As Stream = GetFileStream()
 	                Dim workbook As Workbook = CreateSampleWorkbook()
@@ -61,7 +63,14 @@ __Example 1__ shows how to use __PdfFormatProvider__ to export a Workbook to a f
 	            End Using
 	            '#End Region
 	        End Sub
+	        Private Sub Example2()
+	            '#Region "example2 "
+	            Dim workbook As Workbook = CreateSampleWorkbook()
 	
+	            Dim provider As New PdfFormatProvider()
+	            Dim fixedDocument As RadFixedDocument = provider.ExportToFixedDocument(workbook)
+	            '#End Region
+	        End Sub
 	        Private Function GetFileStream() As Stream
 	            Throw New NotImplementedException()
 	        End Function
@@ -76,3 +85,22 @@ __Example 1__ shows how to use __PdfFormatProvider__ to export a Workbook to a f
 
 The result from the export method is a document that can be opened in any application that supports PDF documents.
         
+
+#### __[C#] Example 2: Export to RadFixedDocument__
+
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingUsingPdfFormatProvider.cs region=example2}}
+	                Workbook workbook = CreateSampleWorkbook();
+	                
+	                PdfFormatProvider provider = new PdfFormatProvider();
+	                Telerik.Windows.Documents.Fixed.Model.RadFixedDocument fixedDocument = provider.ExportToFixedDocument(workbook);
+	{{endregion}}
+
+
+
+#### __[VB NET] Example 2: Export to RadFixedDocument__
+
+
+
+
+
+>tip__RadFixedDocument__ is the base class of the __RadPdfProcessing__ library. Additional information on the library and its functionality can be found [here]({%slug pdfprocessing-overview%})

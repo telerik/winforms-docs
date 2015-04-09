@@ -35,7 +35,7 @@ __Example 1__ shows how to import an xlsx file using a FileStream. The code assu
 
 #### __[C#] Example 1: Import Xlsx File__
 
-{{region radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Xlsx\RadSpreadProcessingUsingXlsxFormatProvider.cs region=radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_0}}
 	            string fileName = "SampleFile.xlsx";
 	            if (!File.Exists(fileName))
 	            {
@@ -55,7 +55,7 @@ __Example 1__ shows how to import an xlsx file using a FileStream. The code assu
 
 #### __[VB.NET] Example 1: Import Xlsx File__
 
-{{region radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Xlsx\RadSpreadProcessingUsingXlsxFormatProvider.vb region=radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_0}}
 	        Dim fileName As String = "SampleFile.xlsx"
 	        If Not File.Exists(fileName) Then
 	            Throw New FileNotFoundException([String].Format("File {0} was not found!", fileName))
@@ -78,7 +78,7 @@ __Example 2__ demonstrates how to export an existing Workbook to an xlsx file. T
 
 #### __[C#] Example 2: Export Xlsx File__
 
-{{region radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Xlsx\RadSpreadProcessingUsingXlsxFormatProvider.cs region=radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_1}}
 	            Workbook workbook = new Workbook();
 	            workbook.Worksheets.Add();
 	            string fileName = "SampleFile.xlsx";
@@ -95,7 +95,7 @@ __Example 2__ demonstrates how to export an existing Workbook to an xlsx file. T
 
 #### __[VB.NET] Example 1: Import Xlsx File__
 
-{{region radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Xlsx\RadSpreadProcessingUsingXlsxFormatProvider.vb region=radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_1}}
 	        Dim workbook As New Workbook()
 	        workbook.Worksheets.Add()
 	        Dim fileName As String = "SampleFile.xlsx"

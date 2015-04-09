@@ -36,7 +36,7 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
 
 #### __[C#] __
 
-{{region add}}
+{{source=..\SamplesCS\RichTextEditor\Features\StyleSheets.cs region=add}}
 	            
 	            OpenFileDialog ofd = new OpenFileDialog();
 	            ofd.Filter = "Xaml Files|*.xaml";
@@ -55,7 +55,7 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
 
 #### __[VB.NET] __
 
-{{region add}}
+{{source=..\SamplesVB\RichTextEditor\Features\StyleSheets.vb region=add}}
 	
 	        Dim ofd As New OpenFileDialog()
 	        ofd.Filter = "Xaml Files|*.xaml"
@@ -91,7 +91,7 @@ This is how you can save a style sheet with the __SaveStyleSheet__ method of __X
 
 #### __[C#] __
 
-{{region save}}
+{{source=..\SamplesCS\RichTextEditor\Features\StyleSheets.cs region=save}}
 	                
 	            SaveFileDialog sfd = new SaveFileDialog();
 	            sfd.Filter = "Xaml Files|*.xaml";
@@ -111,7 +111,7 @@ This is how you can save a style sheet with the __SaveStyleSheet__ method of __X
 
 #### __[VB.NET] __
 
-{{region save}}
+{{source=..\SamplesVB\RichTextEditor\Features\StyleSheets.vb region=save}}
 	
 	        Dim sfd As New SaveFileDialog()
 	        sfd.Filter = "Xaml Files|*.xaml"

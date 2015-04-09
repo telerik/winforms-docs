@@ -20,7 +20,7 @@ To add top level "main" menu items use the __RadMenu Items__collection and the _
 
 #### __[C#] Constructing and adding menu items__
 
-{{region menuItems}}
+{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=menuItems}}
 	            RadMenuItem cdItem = new RadMenuItem();
 	            cdItem.Text = "CDs";
 	            radMenu1.Items.Add(cdItem);
@@ -34,7 +34,7 @@ To add top level "main" menu items use the __RadMenu Items__collection and the _
 
 #### __[VB.NET] Constructing and adding menu items__
 
-{{region menuItems}}
+{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=menuItems}}
 	        Dim cdItem As New RadMenuItem()
 	        cdItem.Text = "CDs"
 	        RadMenu1.Items.Add(cdItem)
@@ -54,7 +54,7 @@ Adding sub menu items plays by the same rules as adding items to the __RadMenu__
 
 #### __[C#] Adding menu sub items__
 
-{{region subItems}}
+{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=subItems}}
 	        void Form1_Load(object sender, EventArgs e)
 	        {
 	            radMenu1.Items.Add(new RadMenuItem("Books"));
@@ -77,7 +77,7 @@ Adding sub menu items plays by the same rules as adding items to the __RadMenu__
 
 #### __[VB.NET] Adding menu sub items__
 
-{{region subItems}}
+{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=subItems}}
 	    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 	        RadMenu1.Items.Add(New RadMenuItem("Books"))
 	        Dim item As RadMenuItem = TryCast(RadMenu1.Items(0), RadMenuItem)
@@ -104,7 +104,7 @@ RadMenuComboItems are constructed with no parameters and then the ComboBoxElemen
 
 #### __[C#] Adding sub items__
 
-{{region comboItem}}
+{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=comboItem}}
 	            RadMenuItem bargainItem = new RadMenuItem("Bargains");
 	            RadMenuComboItem comboItem = new RadMenuComboItem();
 	            comboItem.ComboBoxElement.Items.Add(new RadListDataItem("$5 - $10"));
@@ -118,7 +118,7 @@ RadMenuComboItems are constructed with no parameters and then the ComboBoxElemen
 
 #### __[VB.NET] Adding sub items__
 
-{{region comboItem}}
+{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=comboItem}}
 	        Dim bargainItem As New RadMenuItem("Bargains")
 	        Dim comboItem As New RadMenuComboItem()
 	        comboItem.ComboBoxElement.Items.Add(New RadListDataItem("$5 - $10"))
@@ -136,7 +136,7 @@ For best performance when performing long running operations, such as loading a 
 
 #### __[C#] Suspending the layout__
 
-{{region performance}}
+{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=performance}}
 	            radMenu1.BeginInit();
 	            // ... perform operations
 	            radMenu1.EndInit();
@@ -146,7 +146,7 @@ For best performance when performing long running operations, such as loading a 
 
 #### __[VB.NET] Suspending the layout__
 
-{{region performance}}
+{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=performance}}
 	        RadMenu1.BeginInit()
 	        ' ... perform operations
 	        RadMenu1.EndInit()
@@ -160,7 +160,7 @@ Remove items from the items collection using __Remove()__ or __RemoveAt()__ meth
 
 #### __[C#] Removing items__
 
-{{region removingItems}}
+{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=removingItems}}
 	            // remove second item in collection
 	            radMenu1.Items.RemoveAt(1);
 	            // Remove the zero-ith ite
@@ -171,7 +171,7 @@ Remove items from the items collection using __Remove()__ or __RemoveAt()__ meth
 
 #### __[VB.NET] Removing items__
 
-{{region removingItems}}
+{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=removingItems}}
 	        ' remove second item in collection
 	        RadMenu1.Items.RemoveAt(1)
 	        ' Remove the zero-ith ite

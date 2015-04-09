@@ -34,7 +34,7 @@ You may easily specify custom shortcut for any of the predefined commands like t
 
 #### __[C#] __
 
-{{region Shortcut}}
+{{source=..\SamplesCS\Dock\UsingCommandManager.cs region=Shortcut}}
 	        private void ChangeNextDocumentShortcut()
 	        {
 	            RadDockCommand command = this.radDock1.CommandManager.FindCommandByName(PredefinedCommandNames.NextDocument);
@@ -47,7 +47,7 @@ You may easily specify custom shortcut for any of the predefined commands like t
 
 #### __[VB.NET] __
 
-{{region Shortcut}}
+{{source=..\SamplesVB\Dock\UsingCommandManager.vb region=Shortcut}}
 	    Private Sub ChangeNextDocumentShortcut()
 	        Dim command As RadDockCommand = Me.radDock1.CommandManager.FindCommandByName(PredefinedCommandNames.NextDocument)
 	        command.Shortcuts.Clear()
@@ -65,7 +65,7 @@ The completely transparent object model of the command manager allows you to cre
 
 #### __[C#] Define the custom command class__
 
-{{region RadDockCommand}}
+{{source=..\SamplesCS\Dock\UsingCommandManager.cs region=RadDockCommand}}
 	    public class FloatWindowCommand : RadDockCommand
 	    {
 	        public FloatWindowCommand()
@@ -102,7 +102,7 @@ The completely transparent object model of the command manager allows you to cre
 
 #### __[VB.NET] Define the custom command class__
 
-{{region RadDockCommand}}
+{{source=..\SamplesVB\Dock\UsingCommandManager.vb region=RadDockCommand}}
 	Public Class FloatWindowCommand
 	    Inherits RadDockCommand
 	    Public Sub New()
@@ -134,7 +134,7 @@ The completely transparent object model of the command manager allows you to cre
 
 #### __[C#] Register the custom command__
 
-{{region RegisterCustomCommand}}
+{{source=..\SamplesCS\Dock\UsingCommandManager.cs region=RegisterCustomCommand}}
 	        private void RegisterCustomCommand()
 	        {
 	            this.radDock1.CommandManager.RegisterCommand(new FloatWindowCommand());
@@ -145,7 +145,7 @@ The completely transparent object model of the command manager allows you to cre
 
 #### __[VB.NET] Register the custom command__
 
-{{region RegisterCustomCommand}}
+{{source=..\SamplesVB\Dock\UsingCommandManager.vb region=RegisterCustomCommand}}
 	    Private Sub RegisterCustomCommand()
 	        Me.radDock1.CommandManager.RegisterCommand(New FloatWindowCommand())
 	    End Sub

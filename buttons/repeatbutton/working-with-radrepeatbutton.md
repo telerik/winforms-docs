@@ -25,7 +25,7 @@ The following code illustrates the use of a __RadRepeatButton__ to manipulate a 
 
 #### __[C#]__
 
-{{region handlingClickEvent}}
+{{source=..\SamplesCS\Buttons\RepeatButton.cs region=handlingClickEvent}}
 	
 	        void radRepeatButton1_Click(object sender, EventArgs e)
 	        {
@@ -45,7 +45,7 @@ The following code illustrates the use of a __RadRepeatButton__ to manipulate a 
 
 #### __[VB.NET]__
 
-{{region handlingClickEvent}}
+{{source=..\SamplesVB\Buttons\RepeatButton.vb region=handlingClickEvent}}
 	
 	    Private Sub radRepeatButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        If radProgressBar1.Value1 < radProgressBar1.Maximum Then

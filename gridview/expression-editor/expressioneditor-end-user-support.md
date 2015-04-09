@@ -26,7 +26,7 @@ End-users can open the editor by navigating to a built-in menu item
 
 #### __[C#]__
 
-{{region enableExpressionEditor}}
+{{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=enableExpressionEditor}}
 	            GridViewTextBoxColumn col = new GridViewTextBoxColumn();
 	            col.Name = "expression";
 	            col.HeaderText = "My Expression";
@@ -39,7 +39,7 @@ End-users can open the editor by navigating to a built-in menu item
 
 #### __[VB.NET]__
 
-{{region enableExpressionEditor}}
+{{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=enableExpressionEditor}}
 	        Dim col As GridViewTextBoxColumn = New GridViewTextBoxColumn()
 	        col.Name = "expression"
 	        col.HeaderText = "My Expression"
@@ -60,7 +60,7 @@ The developer can show RadExpressionEditor on a custom user action,
 
 #### __[C#]__
 
-{{region expressionFormShow}}
+{{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=expressionFormShow}}
 	            RadExpressionEditorForm.Show(this.radGridView1, this.radGridView1.Columns["expression"]);
 	{{endregion}}
 
@@ -68,7 +68,7 @@ The developer can show RadExpressionEditor on a custom user action,
 
 #### __[VB.NET]__
 
-{{region expressionFormShow}}
+{{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=expressionFormShow}}
 	        RadExpressionEditorForm.Show(Me.RadGridView1, Me.RadGridView1.Columns("expression"))
 	{{endregion}}
 

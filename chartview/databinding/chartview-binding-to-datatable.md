@@ -24,7 +24,7 @@ Here is a sample demonstrating how to bind [LineSeries]({%slug chartview-series-
 
 #### __[C#]__
 
-{{region binding}}
+{{source=..\SamplesCS\ChartView\DataBinding\ChartViewDataBindingToDataTable.cs region=binding}}
 	        DataTable table;
 	
 	        protected override void OnLoad(EventArgs e)
@@ -53,7 +53,7 @@ Here is a sample demonstrating how to bind [LineSeries]({%slug chartview-series-
 
 #### __[VB.NET]__
 
-{{region binding}}
+{{source=..\SamplesVB\ChartView\DataBinding\ChartViewDataBindingToDataTable.vb region=binding}}
 	    Private table As DataTable
 	
 	    Protected Overrides Sub OnLoad(e As EventArgs)

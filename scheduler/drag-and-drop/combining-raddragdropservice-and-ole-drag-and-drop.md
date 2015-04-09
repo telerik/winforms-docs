@@ -28,7 +28,7 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 
 #### __[C#]__
 
-{{region RadSchedulerToRadListControl}}
+{{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToListControl.cs region=RadSchedulerToRadListControl}}
 	        
 	        private void DragDropBehavior_PreviewDragOver(object sender, Telerik.WinControls.RadDragOverEventArgs e)
 	        {
@@ -125,7 +125,7 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 
 #### __[VB.NET]__
 
-{{region RadSchedulerToRadListControl}}
+{{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToListControl.vb region=RadSchedulerToRadListControl}}
 	
 	    Private Sub DragDropBehavior_PreviewDragOver(sender As Object, e As Telerik.WinControls.RadDragOverEventArgs)
 	        e.CanDrop = TypeOf e.HitTarget Is RadListElement
@@ -376,7 +376,7 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 
 #### __[C#]__
 
-{{region StartDragDrop}}
+{{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToListControl.cs region=StartDragDrop}}
 	        
 	        private Point mouseDownPosition;
 	        private bool isDragging;
@@ -427,7 +427,7 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 
 #### __[VB.NET]__
 
-{{region StartDragDrop}}
+{{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToListControl.vb region=StartDragDrop}}
 	
 	    Private mouseDownPosition As Point
 	    Private isDragging As Boolean
@@ -606,7 +606,7 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 
 #### __[C#]__
 
-{{region DoDragDrop}}
+{{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToListControl.cs region=DoDragDrop}}
 	        
 	        private void radScheduler1_DragDrop(object sender, DragEventArgs e)
 	        {
@@ -641,7 +641,7 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 
 #### __[VB.NET]__
 
-{{region DoDragDrop}}
+{{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToListControl.vb region=DoDragDrop}}
 	
 	    Private Sub radScheduler1_DragDrop(sender As Object, e As DragEventArgs)
 	        Dim point__1 As Point = Me.RadScheduler1.PointToClient(New Point(e.X, e.Y))
@@ -778,7 +778,7 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 
 #### __[C#]__
 
-{{region DragHelper}}
+{{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToListControl.cs region=DragHelper}}
 	            
 	        private Appointment CreateAppointment(DateTime currentDate, DragObject dragObject)
 	        {
@@ -855,7 +855,7 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 
 #### __[VB.NET]__
 
-{{region DragHelper}}
+{{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToListControl.vb region=DragHelper}}
 	
 	    Private Function CreateAppointment(currentDate As DateTime, dragObject As DragObject) As Appointment
 	        Dim appointment As New Appointment()

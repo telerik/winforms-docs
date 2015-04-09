@@ -38,7 +38,7 @@ The following tutorial demonstrates creating two groups of radio buttons that ac
 
 #### __[C#] Handling the ToggleStateChanged Event__
 
-{{region handlingToggleStateChanged}}
+{{source=..\SamplesCS\Buttons\RadioButton.cs region=handlingToggleStateChanged}}
 	
 	        void radRadioButton1_ToggleStateChanged(object sender, StateChangedEventArgs args)
 	        {
@@ -51,7 +51,7 @@ The following tutorial demonstrates creating two groups of radio buttons that ac
 
 #### __[VB.NET] Handling the ToggleStateChanged Event__
 
-{{region handlingToggleStateChanged}}
+{{source=..\SamplesVB\Buttons\RadioButton.vb region=handlingToggleStateChanged}}
 	
 	    Private Sub radRadioButton1_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
 	        lblStatus.Text = (TryCast(sender, RadRadioButton)).Text + " is selected"

@@ -33,7 +33,7 @@ Now let's create a simple application. Add four RadClocks to your RadForm and on
 
 #### __[C#] __
 
-{{region gettingStarted}}
+{{source=..\SamplesCS\Clock\ClockGettingStarted.cs region=gettingStarted}}
 	            sofiaClock.ShowSystemTime = true;
 	            londonClock.Offset = new TimeSpan(-2,0,0);
 	            newYorkClock.Offset = new TimeSpan(-6,0,0);
@@ -44,7 +44,7 @@ Now let's create a simple application. Add four RadClocks to your RadForm and on
 
 #### __[VB.NET] __
 
-{{region gettingStarted}}
+{{source=..\SamplesVB\Clock\ClockGettingStarted.vb region=gettingStarted}}
 	        sofiaClock.ShowSystemTime = True
 	        londonClock.Offset = New TimeSpan(-2, 0, 0)
 	        newYorkClock.Offset = New TimeSpan(7, 0, 0)

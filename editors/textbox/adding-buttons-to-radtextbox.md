@@ -31,7 +31,7 @@ In this particular case we are going to add three buttons to RadTextBox:
 
 #### __[C#]__
 
-{{region creatingButtons}}
+{{source=..\SamplesCS\Editors\TextBoxWithButtons.cs region=creatingButtons}}
 	            RadButtonElement button = new RadButtonElement();
 	            button.Click += new EventHandler(button_Click);
 	            button.Padding = new Padding(2, 0, 2, -2);
@@ -62,7 +62,7 @@ In this particular case we are going to add three buttons to RadTextBox:
 
 #### __[VB.NET]__
 
-{{region creatingButtons}}
+{{source=..\SamplesVB\Editors\TextBoxWithButtons.vb region=creatingButtons}}
 	        Dim button As New RadButtonElement()
 	        AddHandler button.Click, AddressOf button_Click
 	        button.Padding = New Padding(2, 0, 2, -2)
@@ -127,7 +127,7 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 
 #### __[C#]__
 
-{{region dockLayoutPanel}}
+{{source=..\SamplesCS\Editors\TextBoxWithButtons.cs region=dockLayoutPanel}}
 	            RadTextBoxItem tbItem = this.radTextBox1.TextBoxElement.TextBoxItem;
 	            this.radTextBox1.TextBoxElement.Children.Remove(tbItem);
 	
@@ -143,7 +143,7 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 
 #### __[VB.NET]__
 
-{{region dockLayoutPanel}}
+{{source=..\SamplesVB\Editors\TextBoxWithButtons.vb region=dockLayoutPanel}}
 	        Dim tbItem As RadTextBoxItem = Me.RadTextBox1.TextBoxElement.TextBoxItem
 	        Me.RadTextBox1.TextBoxElement.Children.Remove(tbItem)
 	
@@ -177,7 +177,7 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 
 #### __[C#]__
 
-{{region finalPadding}}
+{{source=..\SamplesCS\Editors\TextBoxWithButtons.cs region=finalPadding}}
 	            this.radTextBox1.TextBoxElement.Padding = new Padding(1, 1, 1, 1);
 	            tbItem.Margin = new Padding(0, 1, 0, 0);
 	{{endregion}}
@@ -186,7 +186,7 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 
 #### __[VB.NET]__
 
-{{region finalPadding}}
+{{source=..\SamplesVB\Editors\TextBoxWithButtons.vb region=finalPadding}}
 	        Me.RadTextBox1.TextBoxElement.Padding = New Padding(1, 1, 1, 1)
 	        tbItem.Margin = New Padding(0, 1, 0, 0)
 	        '#End Region
@@ -207,7 +207,7 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 
 #### __[C#]__
 
-{{region clickHandler}}
+{{source=..\SamplesCS\Editors\TextBoxWithButtons.cs region=clickHandler}}
 	        void button_Click(object sender, EventArgs e)
 	        {
 	            RadButtonElement button = sender as RadButtonElement;
@@ -219,7 +219,7 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 
 #### __[VB.NET]__
 
-{{region clickHandler}}
+{{source=..\SamplesVB\Editors\TextBoxWithButtons.vb region=clickHandler}}
 	    Private Sub button_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        Dim button As RadButtonElement = TryCast(sender, RadButtonElement)
 	        RadMessageBox.Show("Clicked! " & button.Text)

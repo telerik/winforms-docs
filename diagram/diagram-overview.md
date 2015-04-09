@@ -15,17 +15,17 @@ position: 16
 __RadDiagram__ offers flexible and interactive diagramming layouts for your rich data-visualization applications.
         The framework tool set enables you to:
 
-* design work-flows in which case shapes and connections are tightly bound to an underlying API
+* Design work-flows in which case shapes and connections are tightly bound to an underlying API
 
-* simulate processes and represent data logic
+* Simulate processes and represent data logic
 
-* architect data-visualization and data analysis diagramming structures
+* Architect data-visualization and data analysis diagramming structures
 
-* further enhance and customize your geographic maps solutions![diagram-overview 001](images/diagram-overview001.png)![diagram-overview 002](images/diagram-overview002.png)
+* Further enhance and customize your geographic maps solutions![diagram-overview 001](images/diagram-overview001.png)![diagram-overview 002](images/diagram-overview002.png)
 
-## 
+## Diagram features
 
-This is a list with short descriptions of the top-of-the-line features of __RadDiagram__:
+Here is a list with short descriptions of the top-of-the-line features of __RadDiagram__:
 
 * __Extensive set of diagramming shapes__ - __RadDiagram__ exposes a set of predefined diagramming shapes.
             

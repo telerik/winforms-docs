@@ -24,7 +24,7 @@ RadGanttview supports unbound mode as well, which means that you can manually po
 
 #### __[C#]__
 
-{{region PopulateData}}
+{{source=..\SamplesCS\GanttView\WorkingWithData\PopulatingWithDataProgrammatically.cs region=PopulateData}}
 	            
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineStart = new DateTime(2010, 10, 9);
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineEnd = new DateTime(2010, 12, 10);
@@ -109,7 +109,7 @@ RadGanttview supports unbound mode as well, which means that you can manually po
 
 #### __[VB.NET]__
 
-{{region PopulateData}}
+{{source=..\SamplesVB\GanttView\WorkingWithData\PopulatingWithDataProgrammatically.vb region=PopulateData}}
 	
 	        Me.RadGanttView1.GanttViewElement.GraphicalViewElement.TimelineStart = New DateTime(2010, 10, 9)
 	        Me.RadGanttView1.GanttViewElement.GraphicalViewElement.TimelineEnd = New DateTime(2010, 12, 10)
@@ -198,7 +198,7 @@ Now we can just add the desired columns to be displayed in GanttViewTextViewElem
 
 #### __[C#]__
 
-{{region AddColumns}}
+{{source=..\SamplesCS\GanttView\WorkingWithData\PopulatingWithDataProgrammatically.cs region=AddColumns}}
 	            
 	            GanttViewTextViewColumn titleColumn = new GanttViewTextViewColumn("Title");
 	            GanttViewTextViewColumn startColumn = new GanttViewTextViewColumn("Start");
@@ -214,7 +214,7 @@ Now we can just add the desired columns to be displayed in GanttViewTextViewElem
 
 #### __[VB.NET]__
 
-{{region AddColumns}}
+{{source=..\SamplesVB\GanttView\WorkingWithData\PopulatingWithDataProgrammatically.vb region=AddColumns}}
 	
 	        Dim titleColumn As New GanttViewTextViewColumn("Title")
 	        Dim startColumn As New GanttViewTextViewColumn("Start")

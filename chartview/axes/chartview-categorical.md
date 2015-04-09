@@ -49,7 +49,7 @@ RadChartView uses Categorical axes to plot data that contains categorical values
 
 #### __[C#] __
 
-{{region catAxis}}
+{{source=..\SamplesCS\ChartView\Axes\CategoricalAxisForm.cs region=catAxis}}
 	            LineSeries series = new LineSeries();
 	            series.DataPoints.Add(new CategoricalDataPoint(20, "Jackets and Flackets"));
 	            series.DataPoints.Add(new CategoricalDataPoint(40, "Accessories and Watches"));
@@ -70,7 +70,7 @@ RadChartView uses Categorical axes to plot data that contains categorical values
 
 #### __[VB.NET] __
 
-{{region catAxis}}
+{{source=..\SamplesVB\ChartView\Axes\CategoricalAxisForm.vb region=catAxis}}
 	        Dim series As New LineSeries()
 	        series.DataPoints.Add(New CategoricalDataPoint(20, "Jackets and Flackets"))
 	        series.DataPoints.Add(New CategoricalDataPoint(40, "Accessories and Watches"))

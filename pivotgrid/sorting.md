@@ -40,7 +40,7 @@ The sorting can be applied in the code behind or at runtime with the help of Rad
 
 #### __[C#] __
 
-{{region SortByGroupName}}
+{{source=..\SamplesCS\PivotGrid\PivotGridSorting.cs region=SortByGroupName}}
 	            PropertyGroupDescription propGroupDescription = (PropertyGroupDescription)this.radPivotGrid1.RowGroupDescriptions[0];
 	            propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
 	            this.radPivotGrid1.ReloadData();
@@ -50,7 +50,7 @@ The sorting can be applied in the code behind or at runtime with the help of Rad
 
 #### __[VB.NET] __
 
-{{region SortByGroupName}}
+{{source=..\SamplesVB\PivotGrid\PivotGridSorting.vb region=SortByGroupName}}
 	        Dim propGroupDescription As PropertyGroupDescription = DirectCast(Me.radPivotGrid1.RowGroupDescriptions(0), PropertyGroupDescription)
 	        propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
 	        Me.radPivotGrid1.ReloadData()
@@ -63,7 +63,7 @@ The sorting can be applied in the code behind or at runtime with the help of Rad
 
 #### __[C#] __
 
-{{region SortGrandTotals}}
+{{source=..\SamplesCS\PivotGrid\PivotGridSorting.cs region=SortGrandTotals}}
 	            PropertyGroupDescription propGroupDescription = (PropertyGroupDescription)this.radPivotGrid1.RowGroupDescriptions[0];
 	            propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
 	            propGroupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 0 };
@@ -74,7 +74,7 @@ The sorting can be applied in the code behind or at runtime with the help of Rad
 
 #### __[VB.NET] __
 
-{{region SortGrandTotals}}
+{{source=..\SamplesVB\PivotGrid\PivotGridSorting.vb region=SortGrandTotals}}
 	        Dim propGroupDescription As PropertyGroupDescription = DirectCast(Me.radPivotGrid1.RowGroupDescriptions(0), PropertyGroupDescription)
 	        propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
 	        propGroupDescription.GroupComparer = New GrandTotalComparer() With { _

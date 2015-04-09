@@ -23,7 +23,7 @@ Sometimes you may need to export just the data in a group in a grouped RadGridVi
 
 #### __[C#]__
 
-{{region createContextMenuAndGetTheGroupChildRows}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportDataInAGroupToExcel.cs region=createContextMenuAndGetTheGroupChildRows}}
 	
 	        GridViewChildRowCollection childRowsForExport;
 	
@@ -72,7 +72,7 @@ Sometimes you may need to export just the data in a group in a grouped RadGridVi
 
 #### __[VB.NET]__
 
-{{region createContextMenuAndGetTheGroupChildRows}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportDataInAGroupToExcel.vb region=createContextMenuAndGetTheGroupChildRows}}
 	
 	    Private childRowsForExport As GridViewChildRowCollection
 	
@@ -125,7 +125,7 @@ Sometimes you may need to export just the data in a group in a grouped RadGridVi
 
 #### __[C#]__
 
-{{region markTheUnnesseceryRowsAndExportTheRestOfThem}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportDataInAGroupToExcel.cs region=markTheUnnesseceryRowsAndExportTheRestOfThem}}
 	        void contextMenuItem_Click(object sender, EventArgs e)
 	        {
 	            if (this.childRowsForExport != null && this.childRowsForExport.Count > 0)
@@ -174,7 +174,7 @@ Sometimes you may need to export just the data in a group in a grouped RadGridVi
 
 #### __[VB.NET]__
 
-{{region markTheUnnesseceryRowsAndExportTheRestOfThem}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportDataInAGroupToExcel.vb region=markTheUnnesseceryRowsAndExportTheRestOfThem}}
 	    Private Sub contextMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        If Me.childRowsForExport IsNot Nothing AndAlso Me.childRowsForExport.Count > 0 Then
 	            Dim dialog As New SaveFileDialog()
@@ -218,7 +218,7 @@ Sometimes you may need to export just the data in a group in a grouped RadGridVi
 
 #### __[C#]__
 
-{{region getTheGroupLineText}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportDataInAGroupToExcel.cs region=getTheGroupLineText}}
 	        private string GetGroupLineHeaderText(GridGroupHeaderRowElement headerRowElement)
 	        {
 	            string headerText = headerRowElement.RowInfo.Group.GroupRow.HeaderText;
@@ -230,7 +230,7 @@ Sometimes you may need to export just the data in a group in a grouped RadGridVi
 
 #### __[VB.NET]__
 
-{{region getTheGroupLineText}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportDataInAGroupToExcel.vb region=getTheGroupLineText}}
 	    Private Function GetGroupLineHeaderText(ByVal headerRowElement As GridGroupHeaderRowElement) As String
 	        Dim headerText As String = headerRowElement.RowInfo.Group.GroupRow.HeaderText
 	        Return headerText

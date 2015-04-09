@@ -43,7 +43,7 @@ One of several constructor overloads lets you set the start time, duration and n
 
 #### __[C#] Adding a RecurrenceRule__
 
-{{region addingRecRule}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\RecurringAppointments.cs region=addingRecRule}}
 	            radScheduler1.Appointments[0].RecurrenceRule = new HourlyRecurrenceRule(DateTime.Now, 2, 10);
 	{{endregion}}
 
@@ -51,7 +51,7 @@ One of several constructor overloads lets you set the start time, duration and n
 
 #### __[VB.NET] Adding a RecurrenceRule__
 
-{{region addingRecRule}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=addingRecRule}}
 	        RadScheduler1.Appointments(0).RecurrenceRule = New HourlyRecurrenceRule(Date.Now, 2, 10)
 	{{endregion}}
 
@@ -63,7 +63,7 @@ The Appointment __Occurrences__ property lets you iterate a list of __IEvent__ i
 
 #### __[C#] Iterating occurrences__
 
-{{region iterating}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\RecurringAppointments.cs region=iterating}}
 	            // iterate all appointment occurrances
 	            foreach (IEvent ev in recurringAppointment.Occurrences)
 	            {
@@ -83,7 +83,7 @@ The Appointment __Occurrences__ property lets you iterate a list of __IEvent__ i
 
 #### __[VB.NET] Iterating occurrences__
 
-{{region iterating}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=iterating}}
 	        ' iterate all appointment occurrances
 	        For Each ev As IEvent In recurringAppointment.Occurrences
 	            '...
@@ -105,7 +105,7 @@ When the user changes a specific occurrence and not the entire series, an "Excep
 
 #### __[C#] Adding rule exceptions__
 
-{{region addingExceptions}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\RecurringAppointments.cs region=addingExceptions}}
 	            myEvent.BackgroundId = (int)AppointmentBackground.Important;
 	            myEvent.StatusId = (int)AppointmentStatus.Tentative;
 	            myEvent.MasterEvent.Exceptions.Add(myEvent);
@@ -115,7 +115,7 @@ When the user changes a specific occurrence and not the entire series, an "Excep
 
 #### __[VB.NET] Adding rule exceptions__
 
-{{region addingExceptions}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=addingExceptions}}
 	        myEvent.BackgroundId = CInt(Fix(AppointmentBackground.Important))
 	        myEvent.StatusId = CInt(Fix(AppointmentStatus.Tentative))
 	        myEvent.MasterEvent.Exceptions.Add(myEvent)
@@ -129,7 +129,7 @@ Here is an example using the __HourlyRecurrenceRule__ class:
 
 #### __[C#]__
 
-{{region console}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\RecurringAppointments.cs region=console}}
 	            // Create a sample appointment that starts at 10/1/2008 3:30 AM and lasts half an hour.
 	            Appointment recurringAppointment = new Appointment(new DateTime(2008, 10, 1, 3, 30, 0),
 	                  TimeSpan.FromHours(1.0), "Appointment Subject");
@@ -160,7 +160,7 @@ Here is an example using the __HourlyRecurrenceRule__ class:
 
 #### __[VB.NET]__
 
-{{region console}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=console}}
 	        ' Create a sample appointment that starts at 10/1/2008 3:30 AM and lasts half an hour.
 	        Dim recurringAppointment As New Appointment(New Date(2008, 10, 1, 3, 30, 0), TimeSpan.FromHours(1.0), "Appointment Subject")
 	

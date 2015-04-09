@@ -25,7 +25,7 @@ RadScheduler has full support for binding to custom fields i.e. RadScheduler can
 
 #### __[C#]__
 
-{{region appWithMail}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.cs region=appWithMail}}
 	    public class AppointmentWithEmail : Appointment
 	    {
 	        public AppointmentWithEmail()
@@ -55,7 +55,7 @@ RadScheduler has full support for binding to custom fields i.e. RadScheduler can
 
 #### __[VB.NET]__
 
-{{region appWithMail}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.vb region=appWithMail}}
 	Public Class AppointmentWithEmail
 	    Inherits Appointment
 	    Public Sub New()
@@ -85,7 +85,7 @@ RadScheduler has full support for binding to custom fields i.e. RadScheduler can
 
 #### __[C#]__
 
-{{region customAppFactory}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.cs region=customAppFactory}}
 	    public class CustomAppointmentFactory : IAppointmentFactory
 	    {
 	        #region IAppointmentFactory Members
@@ -99,7 +99,7 @@ RadScheduler has full support for binding to custom fields i.e. RadScheduler can
 
 #### __[VB.NET]__
 
-{{region customAppFactory}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.vb region=customAppFactory}}
 	Public Class CustomAppointmentFactory
 	    Implements IAppointmentFactory
 	#Region "IAppointmentFactory Members"
@@ -114,7 +114,7 @@ RadScheduler has full support for binding to custom fields i.e. RadScheduler can
 
 #### __[C#]__
 
-{{region customAppEditForm}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.cs region=customAppEditForm}}
 	    public partial class CustomAppointmentEditForm : EditAppointmentDialog
 	    {
 	        public CustomAppointmentEditForm()
@@ -154,7 +154,7 @@ RadScheduler has full support for binding to custom fields i.e. RadScheduler can
 
 #### __[VB.NET]__
 
-{{region customAppEditForm}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.vb region=customAppEditForm}}
 	Public Class CustomAppointmentEditForm
 	    Public Sub New()
 	        InitializeComponent()
@@ -187,7 +187,7 @@ Note that the inherits clause in VB is in the form designer
 
 #### __[VB.NET]__
 
-{{region inheritsInVB}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.Designer.vb region=inheritsInVB}}
 	<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 	Partial Class CustomAppointmentEditForm
 	    Inherits Telerik.WinControls.UI.Scheduler.Dialogs.EditAppointmentDialog
@@ -200,7 +200,7 @@ Note that the inherits clause in VB is in the form designer
 
 #### __[C#]__
 
-{{region customFactory}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=customFactory}}
 	            this.radScheduler1.AppointmentFactory = new CustomAppointmentFactory();
 	{{endregion}}
 
@@ -208,7 +208,7 @@ Note that the inherits clause in VB is in the form designer
 
 #### __[VB.NET]__
 
-{{region customFactory}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=customFactory}}
 	        Me.RadScheduler1.AppointmentFactory = New CustomAppointmentFactory()
 	{{endregion}}
 
@@ -220,7 +220,7 @@ Note that the inherits clause in VB is in the form designer
 
 #### __[C#]__
 
-{{region loadAndShowing}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=loadAndShowing}}
 	        private IEditAppointmentDialog appointmentDialog = null;  
 	
 	        protected override void OnLoad(EventArgs e)
@@ -244,7 +244,7 @@ Note that the inherits clause in VB is in the form designer
 
 #### __[VB.NET]__
 
-{{region loadAndShowing}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=loadAndShowing}}
 	    Private appointmentDialog As IEditAppointmentDialog = Nothing
 	
 	    Protected Overrides Sub OnLoad(ByVal e As EventArgs)
@@ -268,7 +268,7 @@ Note that the inherits clause in VB is in the form designer
 
 #### __[C#]__
 
-{{region mappings}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=mappings}}
 	            SchedulerBindingDataSource dataSource = new SchedulerBindingDataSource(); 
 	            dataSource.EventProvider.AppointmentFactory = this.radScheduler1.AppointmentFactory;
 	            AppointmentMappingInfo appointmentMappingInfo = (AppointmentMappingInfo)dataSource.EventProvider.Mapping;
@@ -279,7 +279,7 @@ Note that the inherits clause in VB is in the form designer
 
 #### __[VB.NET]__
 
-{{region mappings}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=mappings}}
 	        Dim dataSource As New SchedulerBindingDataSource()
 	        dataSource.EventProvider.AppointmentFactory = Me.RadScheduler1.AppointmentFactory
 	        Dim appointmentMappingInfo As AppointmentMappingInfo = DirectCast(dataSource.EventProvider.Mapping, AppointmentMappingInfo)

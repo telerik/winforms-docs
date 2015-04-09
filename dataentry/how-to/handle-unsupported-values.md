@@ -33,7 +33,7 @@ The following example demonstrates how to do that:
 
 #### __[C#] __
 
-{{region BindingCreating}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.cs region=BindingCreating}}
 	        void radDataEntry1_BindingCreating(object sender, BindingCreatingEventArgs e)
 	        {
 	            if (e.DataMember == "DateTime")
@@ -47,7 +47,7 @@ The following example demonstrates how to do that:
 
 #### __[VB.NET] __
 
-{{region BindingCreating}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=BindingCreating}}
 	    Private Sub radDataEntry1_BindingCreating(sender As Object, e As BindingCreatingEventArgs)
 	        If e.DataMember = "DateTime" Then
 	            e.PropertyName = "NullableValue"
@@ -62,7 +62,7 @@ The following example demonstrates how to do that:
 
 #### __[C#] __
 
-{{region BindingCreated}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.cs region=BindingCreated}}
 	        void radDataEntry1_BindingCreated(object sender, BindingCreatedEventArgs e)
 	        {
 	            if (e.DataMember == "DateTime")
@@ -77,7 +77,7 @@ The following example demonstrates how to do that:
 
 #### __[VB.NET] __
 
-{{region BindingCreated}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=BindingCreated}}
 	    Private Sub radDataEntry1_BindingCreated(sender As Object, e As BindingCreatedEventArgs)
 	        If e.DataMember = "DateTime" Then
 	            e.Binding.FormattingEnabled = True
@@ -93,7 +93,7 @@ The following example demonstrates how to do that:
 
 #### __[C#] __
 
-{{region Format}}
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.cs region=Format}}
 	        void Binding_Format(object sender, ConvertEventArgs e)
 	        {
 	            if (e.Value.Equals(DBNull.Value))
@@ -107,7 +107,7 @@ The following example demonstrates how to do that:
 
 #### __[VB.NET] __
 
-{{region Format}}
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=Format}}
 	    Private Sub Binding_Format(sender As Object, e As ConvertEventArgs)
 	        If e.Value.Equals(DBNull.Value) Then
 	            e.Value = Nothing

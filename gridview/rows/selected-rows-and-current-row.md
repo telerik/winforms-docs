@@ -18,7 +18,7 @@ The property __IsSelected__determines whether a row is selected. For example, to
 
 #### __[C#] Selecting a row__
 
-{{region selectingARow}}
+{{source=..\SamplesCS\GridView\Rows\SelectedRowAndCurrentRow.cs region=selectingARow}}
 	            rowToSelect.IsSelected = true;
 	{{endregion}}
 
@@ -26,7 +26,7 @@ The property __IsSelected__determines whether a row is selected. For example, to
 
 #### __[VB.NET] Selecting a row__
 
-{{region selectingARow}}
+{{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=selectingARow}}
 	        rowToSelect.IsSelected = True
 	{{endregion}}
 
@@ -36,7 +36,7 @@ All *currently* selected rows are included in the __SelectedRows__ collection. I
 
 #### __[C#] Clearing the selected rows__
 
-{{region unselectAllRows}}
+{{source=..\SamplesCS\GridView\Rows\SelectedRowAndCurrentRow.cs region=unselectAllRows}}
 	            radGridView1.ClearSelection();
 	{{endregion}}
 
@@ -44,7 +44,7 @@ All *currently* selected rows are included in the __SelectedRows__ collection. I
 
 #### __[VB.NET] Clearing the selected rows__
 
-{{region unselectAllRows}}
+{{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=unselectAllRows}}
 	        Me.RadGridView1.ClearSelection()
 	{{endregion}}
 
@@ -60,7 +60,7 @@ Use the following code snippet to remove the current row:
 
 #### __[C#] Clearing the current row__
 
-{{region currentRow}}
+{{source=..\SamplesCS\GridView\Rows\SelectedRowAndCurrentRow.cs region=currentRow}}
 	            this.radGridView1.CurrentRow = null;
 	{{endregion}}
 
@@ -68,7 +68,7 @@ Use the following code snippet to remove the current row:
 
 #### __[VB.NET] Clearing the current row__
 
-{{region currentRow}}
+{{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=currentRow}}
 	        Me.RadGridView1.CurrentRow = Nothing
 	{{endregion}}
 

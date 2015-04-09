@@ -37,7 +37,7 @@ Consider the __RadPropertyGrid__ is populated with a __Patient__ object contacti
 
 #### __[C#]__
 
-{{region PopulateData}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridTypeConverters.cs region=PopulateData}}
 	        
 	        public PropertyGridTypeConverters()
 	        {
@@ -88,7 +88,7 @@ Consider the __RadPropertyGrid__ is populated with a __Patient__ object contacti
 
 #### __[VB.NET]__
 
-{{region PopulateData}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridTypeConverters.vb region=PopulateData}}
 	
 	    Public Sub New()
 	        InitializeComponent()
@@ -439,7 +439,7 @@ As the __BodyTemperature__ property is of complex type composed of two propertie
 
 #### __[C#]__
 
-{{region TemperatureTypeConverter}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridTypeConverters.cs region=TemperatureTypeConverter}}
 	        
 	        public class TemperatureTypeConverter : ExpandableObjectConverter
 	        {
@@ -547,7 +547,7 @@ As the __BodyTemperature__ property is of complex type composed of two propertie
 
 #### __[VB.NET]__
 
-{{region TemperatureTypeConverter}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridTypeConverters.vb region=TemperatureTypeConverter}}
 	
 	    Public Class TemperatureTypeConverter
 	        Inherits ExpandableObjectConverter
@@ -784,7 +784,7 @@ Apply a __TypeConverterAttribute__ that indicates the type of your type converte
 
 #### __[C#]__
 
-{{region ApplyTemparatureAttribute}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridTypeConverters.cs region=ApplyTemparatureAttribute}}
 	                         
 	            [Description("This is a property with a TypeConverter (TemperatureTypeConverter) set to the class defining the type of the property." +
 	                         "The converter allows the property to be expanded and individual properties of the class to be edited. " +
@@ -798,7 +798,7 @@ Apply a __TypeConverterAttribute__ that indicates the type of your type converte
 
 #### __[VB.NET]__
 
-{{region ApplyTemparatureAttribute}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridTypeConverters.vb region=ApplyTemparatureAttribute}}
 	
 	        <Description("This is a property with a TypeConverter (TemperatureTypeConverter) set to the class defining the type of the property." + "The converter allows the property to be expanded and individual properties of the class to be edited. " + "Additionally the convert allows users to input temperature as string in Kelvin, Celsius and Fahrenheit.")> _
 	        <TypeConverter(GetType(TemperatureTypeConverter))> _
@@ -877,7 +877,7 @@ The __BloodType__ property is a string property which allows entering any string
 
 #### __[C#]__
 
-{{region BloodTypeConverter}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridTypeConverters.cs region=BloodTypeConverter}}
 	        
 	        public class BloodTypeConverter : TypeConverter
 	        {
@@ -903,7 +903,7 @@ The __BloodType__ property is a string property which allows entering any string
 
 #### __[VB.NET]__
 
-{{region BloodTypeConverter}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridTypeConverters.vb region=BloodTypeConverter}}
 	
 	    Public Class BloodTypeConverter
 	        Inherits TypeConverter
@@ -1057,7 +1057,7 @@ After applying the __TypeConverterAttribute__, when you try to modify the __Bloo
 
 #### __[C#]__
 
-{{region ApplyBloodTypeAttribute}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridTypeConverters.cs region=ApplyBloodTypeAttribute}}
 	            
 	            [TypeConverter(typeof(BloodTypeConverter)),
 	            Description("This is a string property which has a standard values collection defined in its TypeConverter (BloodTypeConverter)." +
@@ -1070,7 +1070,7 @@ After applying the __TypeConverterAttribute__, when you try to modify the __Bloo
 
 #### __[VB.NET]__
 
-{{region ApplyBloodTypeAttribute}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridTypeConverters.vb region=ApplyBloodTypeAttribute}}
 	
 	        <TypeConverter(GetType(BloodTypeConverter)), Description("This is a string property which has a standard values collection defined in its TypeConverter (BloodTypeConverter)." + " The property grid uses this collection to build a list and provide it to the user for selection.")> _
 	        Public Property BloodType() As String
@@ -1130,7 +1130,7 @@ This example demonstrates how to apply a culture aware __TypeConverter__ to the 
 
 #### __[C#]__
 
-{{region VolumeTypeConverter}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridTypeConverters.cs region=VolumeTypeConverter}}
 	        
 	        public class VolumeTypeConverter : TypeConverter
 	        {
@@ -1209,7 +1209,7 @@ This example demonstrates how to apply a culture aware __TypeConverter__ to the 
 
 #### __[VB.NET]__
 
-{{region VolumeTypeConverter}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridTypeConverters.vb region=VolumeTypeConverter}}
 	
 	    Public Class VolumeTypeConverter
 	        Inherits TypeConverter
@@ -1343,7 +1343,7 @@ Do not forget to apply the __TypeConverterAttribute__. Additionally, we will spe
 
 #### __[C#]__
 
-{{region ApplyVolumeTypeAttribute}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridTypeConverters.cs region=ApplyVolumeTypeAttribute}}
 	            
 	            [TypeConverter(typeof(VolumeTypeConverter)),
 	            Editor(typeof(PropertyGridTextBoxEditor), typeof(BaseInputEditor)),
@@ -1358,7 +1358,7 @@ Do not forget to apply the __TypeConverterAttribute__. Additionally, we will spe
 
 #### __[VB.NET]__
 
-{{region ApplyVolumeTypeAttribute}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridTypeConverters.vb region=ApplyVolumeTypeAttribute}}
 	
 	        <TypeConverter(GetType(VolumeTypeConverter)), Editor(GetType(PropertyGridTextBoxEditor), GetType(BaseInputEditor)), Description("This property has a culture aware TypeConverter (VolumeTypeConverter) which can convert input from Cubic Inches and" + "Cubic Centimeters but when converting data for display it uses the current culture to determine" + "which system of measurement to use (Imperial or Metric). Values is stored in Cubic Centimeters")> _
 	        Public Property TotalLungCapacity() As Double

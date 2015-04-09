@@ -47,7 +47,7 @@ Let's assume that:
 
 #### __[C#]__
 
-{{region comboColumn}}
+{{source=..\SamplesCS\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.cs region=comboColumn}}
 	            GridViewComboBoxColumn categoriesColumn = new GridViewComboBoxColumn();
 	            categoriesColumn.DisplayMember = "CategoryName";
 	            categoriesColumn.ValueMember = "CategoryID";
@@ -63,7 +63,7 @@ Let's assume that:
 
 #### __[VB.NET]__
 
-{{region comboColumn}}
+{{source=..\SamplesVB\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.vb region=comboColumn}}
 	        Dim categoriesColumn As New GridViewComboBoxColumn()
 	        categoriesColumn.DisplayMember = "CategoryName"
 	        categoriesColumn.ValueMember = "CategoryID"
@@ -135,7 +135,7 @@ Let's assume that:
 
 #### __[C#]__
 
-{{region properties}}
+{{source=..\SamplesCS\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.cs region=properties}}
 	        public NwindDataSet DataSet
 	        {
 	            get
@@ -157,7 +157,7 @@ Let's assume that:
 
 #### __[VB.NET]__
 
-{{region properties}}
+{{source=..\SamplesVB\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.vb region=properties}}
 	    Public ReadOnly Property DataSet() As NwindDataSet
 	        Get
 	            Return Me.NwindDataSet
@@ -218,7 +218,7 @@ We are going to replace the "TO DO" comment with the code snippets provided at 4
 
 #### __[C#]__
 
-{{region checkValue}}
+{{source=..\SamplesCS\GridView\Editors\How-To\CustomDropDownEditor.cs region=checkValue}}
 	            GridComboBoxCellElement cellElement = this.OwnerElement as GridComboBoxCellElement;
 	
 	            RadGridView grid = cellElement.GridControl;
@@ -239,7 +239,7 @@ We are going to replace the "TO DO" comment with the code snippets provided at 4
 
 #### __[VB.NET]__
 
-{{region checkValue}}
+{{source=..\SamplesVB\GridView\Editors\How-To\CustomDropDownEditor.vb region=checkValue}}
 	        Dim cellElement As GridComboBoxCellElement = TryCast(Me.OwnerElement, GridComboBoxCellElement)
 	
 	        Dim grid As RadGridView = cellElement.GridControl
@@ -291,7 +291,7 @@ We are going to replace the "TO DO" comment with the code snippets provided at 4
 
 #### __[C#]__
 
-{{region addValue}}
+{{source=..\SamplesCS\GridView\Editors\How-To\CustomDropDownEditor.cs region=addValue}}
 	            // An example of what we can do when we enter the custom text.
 	            // In this case we are adding a new data row in the underlying datasource of 
 	            // the combobox column and then in the CellEndEdit we are setting
@@ -313,7 +313,7 @@ We are going to replace the "TO DO" comment with the code snippets provided at 4
 
 #### __[VB.NET]__
 
-{{region addValue}}
+{{source=..\SamplesVB\GridView\Editors\How-To\CustomDropDownEditor.vb region=addValue}}
 	        ' An example of what we can do when we enter the custom text.
 	        ' In this case we are adding a new data row in the underlying datasource of 
 	        ' the combobox column and then in the CellEndEdit we are setting
@@ -351,7 +351,7 @@ We are going to replace the "TO DO" comment with the code snippets provided at 4
 
 #### __[C#]__
 
-{{region cellEndEdit}}
+{{source=..\SamplesCS\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.cs region=cellEndEdit}}
 	        void radGridView1_CellEndEdit(object sender, GridViewCellEventArgs e)
 	        {
 	            if (this.radGridView1.CurrentCell.Tag != null)
@@ -366,7 +366,7 @@ We are going to replace the "TO DO" comment with the code snippets provided at 4
 
 #### __[VB.NET]__
 
-{{region cellEndEdit}}
+{{source=..\SamplesVB\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.vb region=cellEndEdit}}
 	    Private Sub radGridView1_CellEndEdit(ByVal sender As Object, ByVal e As GridViewCellEventArgs)
 	        If Me.RadGridView1.CurrentCell.Tag IsNot Nothing Then
 	            Me.RadGridView1.CurrentCell.Value = Me.RadGridView1.CurrentCell.Tag
@@ -392,7 +392,7 @@ We are going to replace the "TO DO" comment with the code snippets provided at 4
 
 #### __[C#]__
 
-{{region editorRequired}}
+{{source=..\SamplesCS\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.cs region=editorRequired}}
 	        void radGridView1_EditorRequired(object sender, EditorRequiredEventArgs e)
 	        {
 	            if (e.EditorType == typeof(RadDropDownListEditor))
@@ -406,7 +406,7 @@ We are going to replace the "TO DO" comment with the code snippets provided at 4
 
 #### __[VB.NET]__
 
-{{region editorRequired}}
+{{source=..\SamplesVB\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.vb region=editorRequired}}
 	    Private Sub radGridView1_EditorRequired(ByVal sender As Object, ByVal e As EditorRequiredEventArgs)
 	        If e.EditorType Is GetType(RadDropDownListEditor) Then
 	            e.Editor = New CustomDropDownEditor()

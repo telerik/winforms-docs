@@ -26,7 +26,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[C#] Localizing RadWizard Strings__
 
-{{region CustomLocalizationProvider}}
+{{source=..\SamplesCS\Wizard\WizardLocalization.cs region=CustomLocalizationProvider}}
 	        class MyWizardLocalizationProvider : RadWizardLocalizationProvider
 	        {
 	            public override string GetLocalizedString(string id)
@@ -48,7 +48,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[VB.NET] Localizing RadWizard Strings__
 
-{{region CustomLocalizationProvider}}
+{{source=..\SamplesVB\Wizard\WizardLocalization.vb region=CustomLocalizationProvider}}
 	    Class MyWizardLocalizationProvider
 	        Inherits RadWizardLocalizationProvider
 	
@@ -78,7 +78,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[C#] Assigning the Current Localization Provider__
 
-{{region settingTheProvider}}
+{{source=..\SamplesCS\Wizard\WizardLocalization.cs region=settingTheProvider}}
 	            RadWizardLocalizationProvider.CurrentProvider = new MyWizardLocalizationProvider();
 	{{endregion}}
 
@@ -86,7 +86,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[VB.NET] Assigning the Current Localization Provider__
 
-{{region settingTheProvider}}
+{{source=..\SamplesVB\Wizard\WizardLocalization.vb region=settingTheProvider}}
 	        RadWizardLocalizationProvider.CurrentProvider = New MyWizardLocalizationProvider()
 	{{endregion}}
 

@@ -22,7 +22,7 @@ The code below is an example appointment. Keep in mind that the particular const
 
 #### __[C#] Sample appointment class__
 
-{{region customAppointment}}
+{{source=..\SamplesCS\Scheduler\DataBinding\CustomAppointment.cs region=customAppointment}}
 	    public class CustomAppointment : INotifyPropertyChanged
 	    {
 	        private DateTime start = DateTime.Now;
@@ -173,7 +173,7 @@ The code below is an example appointment. Keep in mind that the particular const
 
 #### __[VB.NET] Sample appointment class__
 
-{{region customAppointment}}
+{{source=..\SamplesVB\Scheduler\DataBinding\CustomAppointment.vb region=customAppointment}}
 	Public Class CustomAppointment
 	    Implements INotifyPropertyChanged
 	
@@ -296,7 +296,7 @@ To use your custom object, create CustomAppointment instances and place them in 
 
 #### __[C#] Binding to a list of business objects__
 
-{{region bindingToList}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=bindingToList}}
 	            // create a list of CustomAppointment objects
 	            BindingList<CustomAppointment> appointments = new BindingList<CustomAppointment>();
 	            for (int i = 0; i < 10; i++)
@@ -336,7 +336,7 @@ To use your custom object, create CustomAppointment instances and place them in 
 
 #### __[VB.NET] Binding to a list of business objects__
 
-{{region bindingToList}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=bindingToList}}
 	        ' create a list of CustomAppointment objects
 	        Dim appointments As New BindingList(Of CustomAppointment)()
 	        For i As Integer = 0 To 9
@@ -468,7 +468,7 @@ To use grouping by resource in this scenario, first you will need to create the 
 
 #### __[C#] Create the resource object__
 
-{{region create the resource object}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=create the resource object}}
 	        public class CustomResource : INotifyPropertyChanged
 	        {
 	            private int id;
@@ -521,7 +521,7 @@ To use grouping by resource in this scenario, first you will need to create the 
 
 #### __[VB.NET] Create the resource object__
 
-{{region create the resource object}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=create the resource object}}
 	Public Class CustomResource
 	    Implements INotifyPropertyChanged
 	    Private m_id As Integer
@@ -564,7 +564,7 @@ Now we need to bind the __ResourceProvider__ of __SchedulerBindingDataSource__ t
 
 #### __[C#] Bind the ResourceProvider__
 
-{{region bind the resource provider}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=bind the resource provider}}
 	            BindingList<CustomResource> resources = new BindingList<CustomResource>();
 	            for (int i = 0; i < 5; i++)
 	            {
@@ -585,7 +585,7 @@ Now we need to bind the __ResourceProvider__ of __SchedulerBindingDataSource__ t
 
 #### __[VB.NET] Bind the ResourceProvider__
 
-{{region bind the resource provider}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=bind the resource provider}}
 	        Dim resources As New BindingList(Of CustomResource)()
 	        For i As Integer = 0 To 4
 	            Dim resource As New CustomResource()
@@ -687,7 +687,7 @@ To create a one-to-many relation between appointments and resources we need to a
 
 #### __[C#] Additional field and property to the CustomAppointment class__
 
-{{region CustomAppointment with one-to-many relation}}
+{{source=..\SamplesCS\Scheduler\DataBinding\CustomAppointment.cs region=CustomAppointment with one-to-many relation}}
 	        //other fields…
 	        private EventId resourceId;
 	
@@ -714,7 +714,7 @@ To create a one-to-many relation between appointments and resources we need to a
 
 #### __[VB.NET] Additional field and property to the CustomAppointment class__
 
-{{region CustomAppointment with one-to-many relation}}
+{{source=..\SamplesVB\Scheduler\DataBinding\CustomAppointment.vb region=CustomAppointment with one-to-many relation}}
 	    'other fields…
 	    Private _resourceId As EventId
 	
@@ -738,7 +738,7 @@ To map the new property, add the following setting to your __AppointmentMappingI
 
 #### __[C#] __
 
-{{region OneToMany1}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=OneToMany1}}
 	            appointmentMappingInfo.ResourceId = "ResourceId";
 	{{endregion}}
 
@@ -746,7 +746,7 @@ To map the new property, add the following setting to your __AppointmentMappingI
 
 #### __[VB.NET] __
 
-{{region OneToMany1}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=OneToMany1}}
 	        appointmentMappingInfo.ResourceId = "ResourceId"
 	        '#End Region
 	        dataSource.EventProvider.Mapping = appointmentMappingInfo
@@ -801,7 +801,7 @@ To map the new property, add the following setting to your __AppointmentMappingI
 
 #### __[C#] __
 
-{{region OneToMany2}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=OneToMany2}}
 	                    CustomAppointment myAppointment =
 	                    new CustomAppointment(
 	                    DateTime.Now.AddHours(appointmentNumber),
@@ -818,7 +818,7 @@ To map the new property, add the following setting to your __AppointmentMappingI
 
 #### __[VB.NET] __
 
-{{region OneToMany2}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=OneToMany2}}
 	                Dim myAppointment As New CustomAppointment(DateTime.Now.AddHours(appointmentNumber), DateTime.Now.AddHours(appointmentNumber + 2), "Appointment " + appointmentNumber.ToString(), "Description for Appointment " + appointmentNumber.ToString(), "Conference room " + appointmentNumber.ToString())
 	                appointments.Add(myAppointment)
 	                'set the resource id
@@ -892,7 +892,7 @@ To test this scenario, assign each appointment with a __ResourceId__ and enable 
 
 #### __[C#] __
 
-{{region OneToMany3}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=OneToMany3}}
 	            this.radScheduler1.GroupType = GroupType.Resource;
 	{{endregion}}
 
@@ -900,7 +900,7 @@ To test this scenario, assign each appointment with a __ResourceId__ and enable 
 
 #### __[VB.NET] __
 
-{{region OneToMany3}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=OneToMany3}}
 	        Me.radScheduler1.GroupType = GroupType.Resource
 	        '#End Region
 	    End Sub
@@ -935,7 +935,7 @@ This scenario can be implemented similarly to the previous one. Instead of the _
 
 #### __[C#] Additional field and property to the CustomAppointment class__
 
-{{region CustomAppointment with many-to-many relation}}
+{{source=..\SamplesCS\Scheduler\DataBinding\CustomAppointment.cs region=CustomAppointment with many-to-many relation}}
 	        //other fields…
 	        private List<EventId> resources = new List<EventId>();
 	
@@ -961,7 +961,7 @@ This scenario can be implemented similarly to the previous one. Instead of the _
 
 #### __[VB.NET] Additional field and property to the CustomAppointment class__
 
-{{region CustomAppointment with many-to-many relation}}
+{{source=..\SamplesVB\Scheduler\DataBinding\CustomAppointment.vb region=CustomAppointment with many-to-many relation}}
 	    'other fields…
 	    Private _resources As New List(Of EventId)
 	
@@ -985,7 +985,7 @@ In the __AppointmentMappingInfo__ settings the __ResourceId__ property should be
 
 #### __[C#] __
 
-{{region ManyToMany1}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=ManyToMany1}}
 	            appointmentMappingInfo.Resources = "Resources";
 	{{endregion}}
 
@@ -993,7 +993,7 @@ In the __AppointmentMappingInfo__ settings the __ResourceId__ property should be
 
 #### __[VB.NET] __
 
-{{region ManyToMany1}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=ManyToMany1}}
 	        appointmentMappingInfo.Resources = "Resources"
 	{{endregion}}
 
@@ -1003,7 +1003,7 @@ Now we can add a resource to an appointment by adding its id in the __Resources_
 
 #### __[C#] __
 
-{{region ManyToMany2}}
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=ManyToMany2}}
 	                    myAppointment.Resources.Add(new EventId(resources[i%3].Id));
 	{{endregion}}
 
@@ -1011,7 +1011,7 @@ Now we can add a resource to an appointment by adding its id in the __Resources_
 
 #### __[VB.NET] __
 
-{{region ManyToMany2}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=ManyToMany2}}
 	                myAppointment.Resources.Add(New EventId(resources(i Mod 3).Id))
 	{{endregion}}
 

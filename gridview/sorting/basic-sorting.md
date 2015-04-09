@@ -18,7 +18,7 @@ RadGridView supports data sorting. Set RadGridView.__EnableSorting__ or __GridVi
 
 #### __[C#] Enabling the user sorting__
 
-{{region enableSorting}}
+{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=enableSorting}}
 	            this.radGridView1.MasterTemplate.EnableSorting = true;
 	{{endregion}}
 
@@ -26,7 +26,7 @@ RadGridView supports data sorting. Set RadGridView.__EnableSorting__ or __GridVi
 
 #### __[VB.NET] Enabling the user sorting__
 
-{{region enableSorting}}
+{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=enableSorting}}
 	        Me.RadGridView1.MasterTemplate.EnableSorting = True
 	{{endregion}}
 

@@ -25,7 +25,7 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 
 #### __[C#]__
 
-{{region SelfRefData}}
+{{source=..\SamplesCS\TreeView\DragAndDrop\DragAndDropInBoundMode.cs region=SelfRefData}}
 	        
 	        protected void BindRadTreeView()
 	        {
@@ -59,7 +59,7 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 
 #### __[VB.NET]__
 
-{{region SelfRefData}}
+{{source=..\SamplesVB\TreeView\DragAndDrop\DragAndDropInBoundMode.vb region=SelfRefData}}
 	
 	    Protected Sub BindRadTreeView()
 	        Dim dt As New DataTable()
@@ -277,7 +277,7 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 
 #### __[C#]__
 
-{{region CustomService}}
+{{source=..\SamplesCS\TreeView\DragAndDrop\DragAndDropInBoundMode.cs region=CustomService}}
 	        
 	        class CustomDragDropService : TreeViewDragDropService
 	        {
@@ -447,7 +447,7 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 
 #### __[VB.NET]__
 
-{{region CustomService}}
+{{source=..\SamplesVB\TreeView\DragAndDrop\DragAndDropInBoundMode.vb region=CustomService}}
 	
 	    Private Class CustomDragDropService
 	        Inherits TreeViewDragDropService
@@ -634,7 +634,7 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 
 #### __[C#]__
 
-{{region CustomTreeViewElement}}
+{{source=..\SamplesCS\TreeView\DragAndDrop\DragAndDropInBoundMode.cs region=CustomTreeViewElement}}
 	        
 	        class CustomTreeViewElement : RadTreeViewElement
 	        {
@@ -658,7 +658,7 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 
 #### __[VB.NET]__
 
-{{region CustomTreeViewElement}}
+{{source=..\SamplesVB\TreeView\DragAndDrop\DragAndDropInBoundMode.vb region=CustomTreeViewElement}}
 	
 	    Private Class CustomTreeViewElement
 	        Inherits RadTreeViewElement
@@ -703,7 +703,7 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 
 #### __[C#]__
 
-{{region TreeView}}
+{{source=..\SamplesCS\TreeView\DragAndDrop\DragAndDropInBoundMode.cs region=TreeView}}
 	        
 	        class CustomTreeView : RadTreeView
 	        {
@@ -731,7 +731,7 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 
 #### __[VB.NET]__
 
-{{region TreeView}}
+{{source=..\SamplesVB\TreeView\DragAndDrop\DragAndDropInBoundMode.vb region=TreeView}}
 	
 	    Private Class CustomTreeView
 	        Inherits RadTreeView

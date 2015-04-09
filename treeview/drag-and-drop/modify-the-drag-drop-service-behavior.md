@@ -28,7 +28,7 @@ Next we need to override the OnPreviewDragOver method, where we will specify upo
 
 #### __[C#] __
 
-{{region CustomDragDropService}}
+{{source=..\SamplesCS\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\CustomDragDropService.cs region=CustomDragDropService}}
 	    class CustomDragDropService : TreeViewDragDropService
 	    {
 	        RadTreeViewElement owner;
@@ -122,7 +122,7 @@ Next we need to override the OnPreviewDragOver method, where we will specify upo
 
 #### __[VB.NET] __
 
-{{region CustomDragDropService}}
+{{source=..\SamplesVB\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\CustomDragDropService.vb region=CustomDragDropService}}
 	    Class CustomDragDropService
 	        Inherits TreeViewDragDropService
 	        Private owner As RadTreeViewElement
@@ -211,7 +211,7 @@ After the custom drag and drop behavior is created, we need to replace the defau
 
 #### __[C#] __
 
-{{region CustomTreeViewElement}}
+{{source=..\SamplesCS\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\CustomTreeViewElement.cs region=CustomTreeViewElement}}
 	    class CustomTreeViewElement : RadTreeViewElement
 	    {
 	        //Enable themeing for the element
@@ -235,7 +235,7 @@ After the custom drag and drop behavior is created, we need to replace the defau
 
 #### __[VB.NET] __
 
-{{region CustomTreeViewElement}}
+{{source=..\SamplesVB\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\CustomTreeViewElement.vb region=CustomTreeViewElement}}
 	    Class CustomTreeViewElement
 	        Inherits RadTreeViewElement
 	        'Enable themeing for the element
@@ -258,7 +258,7 @@ Now we need to use this CustomTreeViewElement in the tree. To do that we need to
 
 #### __[C#] __
 
-{{region CustomTreeView}}
+{{source=..\SamplesCS\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\CustomTreeView.cs region=CustomTreeView}}
 	    class CustomTreeView : RadTreeView
 	    {
 	        //Replace the default element with the custom one
@@ -282,7 +282,7 @@ Now we need to use this CustomTreeViewElement in the tree. To do that we need to
 
 #### __[VB.NET] __
 
-{{region CustomTreeView}}
+{{source=..\SamplesVB\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\CustomTreeView.vb region=CustomTreeView}}
 	    Class CustomTreeView
 	        Inherits RadTreeView
 	        'Replace the default element with the custom one
@@ -309,7 +309,7 @@ Finally, lets populate the tree and test the new behavior:
 
 #### __[C#] __
 
-{{region PopulateTheTree}}
+{{source=..\SamplesCS\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\ModifyTheDragDropServiceBehavior.cs region=PopulateTheTree}}
 	            customTreeView1.AllowDragDrop = true;
 	            customTreeView1.MultiSelect = true;
 	
@@ -327,7 +327,7 @@ Finally, lets populate the tree and test the new behavior:
 
 #### __[VB.NET] __
 
-{{region PopulateTheTree}}
+{{source=..\SamplesVB\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\ModifyTheDragDropServiceBehavior.vb region=PopulateTheTree}}
 	        CustomTreeView1.AllowDragDrop = True
 	        CustomTreeView1.MultiSelect = True
 	

@@ -36,7 +36,7 @@ Let's get the ContextMenuService and subscribe to its ContextMenuDisplaying eve
 
 #### __[C#] Getting the ContextMenuService__
 
-{{region gettingContextMenuService}}
+{{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=gettingContextMenuService}}
 	            ContextMenuService menuService = this.radDock1.GetService<ContextMenuService>();
 	            menuService.ContextMenuDisplaying += menuService_ContextMenuDisplaying;
 	{{endregion}}
@@ -45,7 +45,7 @@ Let's get the ContextMenuService and subscribe to its ContextMenuDisplaying eve
 
 #### __[VB.NET] Getting the ContextMenuService__
 
-{{region gettingContextMenuService}}
+{{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=gettingContextMenuService}}
 	        Dim menuService As ContextMenuService = Me.RadDock1.GetService(Of ContextMenuService)()
 	        AddHandler menuService.ContextMenuDisplaying, AddressOf menuService_ContextMenuDisplaying
 	{{endregion}}
@@ -58,7 +58,7 @@ Then, hide the 'close' options in the ContextMenuDisplaying event handler:
 
 #### __[C#] Hiding the 'close' menu items__
 
-{{region handlingContextMenuDisplaying}}
+{{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=handlingContextMenuDisplaying}}
 	        private void menuService_ContextMenuDisplaying(object sender, ContextMenuDisplayingEventArgs e)
 	        {
 	            //the menu request is associated with a valid DockWindow instance, which resides within a DocumentTabStrip
@@ -87,7 +87,7 @@ Then, hide the 'close' options in the ContextMenuDisplaying event handler:
 
 #### __[VB.NET] Hiding the 'close' menu items__
 
-{{region handlingContextMenuDisplaying}}
+{{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=handlingContextMenuDisplaying}}
 	    Private Sub menuService_ContextMenuDisplaying(ByVal sender As Object, ByVal e As ContextMenuDisplayingEventArgs)
 	        'the menu request is associated with a valid DockWindow instance, which resides within a DocumentTabStrip
 	        If e.MenuType = ContextMenuType.DockWindow AndAlso TypeOf e.DockWindow.DockTabStrip Is DocumentTabStrip Then

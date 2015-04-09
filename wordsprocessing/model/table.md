@@ -36,7 +36,7 @@ The following code snippet creates and inserts a Table to a Section.
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-table_0}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTable.cs region=radwordsprocessing-model-table_0}}
 	            Table emptyTable = new Table(document); // Table object with 0 rows and 0 columns.
 	            section.Blocks.Add(emptyTable);
 	
@@ -49,7 +49,7 @@ The following code snippet creates and inserts a Table to a Section.
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-table_0}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_0}}
 	            Dim emptyTable As New Table(document)
 	            ' Table object with 0 rows and 0 columns.
 	            section.Blocks.Add(emptyTable)
@@ -117,7 +117,7 @@ You can add a table at a specific index in the __Blocks__ collection of a __Bloc
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-table_1}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTable.cs region=radwordsprocessing-model-table_1}}
 	            Table table = new Table(document, 10, 5);
 	            section.Blocks.Insert(0, table);
 	{{endregion}}
@@ -126,7 +126,7 @@ You can add a table at a specific index in the __Blocks__ collection of a __Bloc
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-table_1}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_1}}
 	            Dim table As New Table(document, 10, 5)
 	            section.Blocks.Insert(0, table)
 	            '#End Region
@@ -177,7 +177,7 @@ You can also use the __AddTable()__ method of the __Blocks__ collection of a __B
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-table_2}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTable.cs region=radwordsprocessing-model-table_2}}
 	            Table table = section.Blocks.AddTable();
 	{{endregion}}
 
@@ -185,7 +185,7 @@ You can also use the __AddTable()__ method of the __Blocks__ collection of a __B
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-table_2}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_2}}
 	            Dim table As Table = section.Blocks.AddTable()
 	            '#End Region
 	        End Sub
@@ -228,7 +228,7 @@ Inserting a new Table in the document can also be achieved with the [RadFlowDocu
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-table_3}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTable.cs region=radwordsprocessing-model-table_3}}
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
 	            Table table = editor.InsertTable(5, 3);
 	{{endregion}}
@@ -237,7 +237,7 @@ Inserting a new Table in the document can also be achieved with the [RadFlowDocu
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-table_3}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_3}}
 	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	            Dim table As Table = editor.InsertTable(5, 3)
 	            '#End Region
@@ -354,7 +354,7 @@ The following code snippet demonstrates how to add a __Table__ with 5 rows and 1
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-table_4}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTable.cs region=radwordsprocessing-model-table_4}}
 	            RadFlowDocument document = new RadFlowDocument();
 	
 	            Table table = document.Sections.AddSection().Blocks.AddTable();
@@ -381,7 +381,7 @@ The following code snippet demonstrates how to add a __Table__ with 5 rows and 1
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-table_4}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_4}}
 	            Dim document As New RadFlowDocument()
 	
 	            Dim table As Table = document.Sections.AddSection().Blocks.AddTable()

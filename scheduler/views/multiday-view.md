@@ -30,7 +30,7 @@ MultidayView shows multiple date-time intervals with appointments arranged one 
 
 #### __[C#] Setting the current view to MultiDayView__
 
-{{region multiDay}}
+{{source=..\SamplesCS\Scheduler\Views\MultiDayView.cs region=multiDay}}
 	            this.radScheduler1.ActiveViewType = SchedulerViewType.MultiDay;
 	            //or
 	            SchedulerMultiDayView multiDayView = new SchedulerMultiDayView();
@@ -44,7 +44,7 @@ MultidayView shows multiple date-time intervals with appointments arranged one 
 
 #### __[VB.NET] Setting the current view to MultiDayView__
 
-{{region multiDay}}
+{{source=..\SamplesVB\Scheduler\Views\MultiDayView.vb region=multiDay}}
 	        Me.RadScheduler1.ActiveViewType = SchedulerViewType.MultiDay
 	        'or
 	        Dim multiDayView As New SchedulerMultiDayView()
@@ -135,7 +135,7 @@ MultidayView shows multiple date-time intervals with appointments arranged one 
 
 #### __[C#] Getting all appointments in a particular interval__
 
-{{region interval}}
+{{source=..\SamplesCS\Scheduler\Views\MultiDayView.cs region=interval}}
 	            DateTimeInterval interval = new DateTimeInterval();
 	            interval.Duration = new TimeSpan(20, 5, 25);
 	            multiDayView.GetAppointmentsInInterval(interval);
@@ -145,7 +145,7 @@ MultidayView shows multiple date-time intervals with appointments arranged one 
 
 #### __[VB.NET] Getting all appointments in a particular interval__
 
-{{region interval}}
+{{source=..\SamplesVB\Scheduler\Views\MultiDayView.vb region=interval}}
 	        Dim interval As New DateTimeInterval()
 	        interval.Duration = New TimeSpan(20, 5, 25)
 	        multiDayView.GetAppointmentsInInterval(interval)

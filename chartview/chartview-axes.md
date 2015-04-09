@@ -73,7 +73,7 @@ The following example demonstrates how some of the above properties are set:
 
 #### __[C#] __
 
-{{region axis}}
+{{source=..\SamplesCS\ChartView\Axes\AxisForm.cs region=axis}}
 	            BarSeries series = new BarSeries();
 	            series.DataPoints.Add(new CategoricalDataPoint(10, "First"));
 	            series.DataPoints.Add(new CategoricalDataPoint(30, "Second"));
@@ -102,7 +102,7 @@ The following example demonstrates how some of the above properties are set:
 
 #### __[VB.NET] __
 
-{{region axis}}
+{{source=..\SamplesVB\ChartView\Axes\AxisForm.vb region=axis}}
 	        Dim series As New BarSeries()
 	        series.DataPoints.Add(New CategoricalDataPoint(10, "First"))
 	        series.DataPoints.Add(New CategoricalDataPoint(30, "Second"))

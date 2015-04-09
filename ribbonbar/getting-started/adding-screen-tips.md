@@ -51,7 +51,7 @@ To completely customize the screen tips appearance, its size, text wrapping, etc
 
 #### __[C#] Adding screen tips programatically__
 
-{{region addingScreenTips}}
+{{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=addingScreenTips}}
 	
 	        RadOffice2007ScreenTipElement screenTip = new RadOffice2007ScreenTipElement();
 	
@@ -77,7 +77,7 @@ To completely customize the screen tips appearance, its size, text wrapping, etc
 
 #### __[VB.NET] Adding screen tips programatically__
 
-{{region addingScreenTips}}
+{{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=addingScreenTips}}
 	    Dim screenTip As New RadOffice2007ScreenTipElement
 	    Private Sub RadGridView1_ScreenTipNeeded(ByVal sender As Object, ByVal e As Telerik.WinControls.ScreenTipNeededEventArgs) Handles RadGridView1.ScreenTipNeeded
 	        Dim cell As GridDataCellElement = TryCast(e.Item, GridDataCellElement)
@@ -100,7 +100,7 @@ To completely customize the screen tips appearance, its size, text wrapping, etc
 
 #### __[C#] Modifing screen tips__
 
-{{region usingScreenTipEventExample2}}
+{{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=usingScreenTipEventExample2}}
 	
 	        private void radGridView1_ScreenTipNeeded2(object sender, Telerik.WinControls.ScreenTipNeededEventArgs e)
 	        {
@@ -128,7 +128,7 @@ To completely customize the screen tips appearance, its size, text wrapping, etc
 
 #### __[VB.NET] Modifing screen tips__
 
-{{region usingScreenTipEventExample2}}
+{{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=usingScreenTipEventExample2}}
 	    Sub radRibbonBar1_ScreenTipNeeded2(ByVal sender As Object, ByVal e As ScreenTipNeededEventArgs) Handles RadGridView1.ScreenTipNeeded
 	        Dim screenTip As RadOffice2007ScreenTipElement = TryCast(e.Item.ScreenTip, RadOffice2007ScreenTipElement)
 	        If screenTip IsNot Nothing Then
@@ -152,7 +152,7 @@ The code sample below adds screen tips to two button elements in the __RadRibbo
 
 #### __[C#] Adding screen tips to button elements__
 
-{{region addScreenTipsToButtonElements}}
+{{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=addScreenTipsToButtonElements}}
 	
 	            RadOffice2007ScreenTipElement tip1 = new RadOffice2007ScreenTipElement();
 	            tip1.CaptionLabel.Text = "Button1";
@@ -169,7 +169,7 @@ The code sample below adds screen tips to two button elements in the __RadRibbo
 
 #### __[VB.NET] Adding screen tips to button elements__
 
-{{region addScreenTipsToButtonElements}}
+{{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=addScreenTipsToButtonElements}}
 	        Dim tip1 As New RadOffice2007ScreenTipElement()
 	        tip1.CaptionLabel.Text = "Button1"
 	        tip1.MainTextLabel.Text = "My Text"

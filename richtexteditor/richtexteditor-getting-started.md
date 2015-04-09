@@ -29,7 +29,7 @@ You can declare a new __RadRichTextEditor__ as any normal WinForms control.
 
 #### __[C#] __
 
-{{region declare}}
+{{source=..\SamplesCS\RichTextEditor\GettingStarted\Main.cs region=declare}}
 	        
 	        private RadRichTextEditor radRichTextEditor1 = new RadRichTextEditor();
 	        
@@ -39,7 +39,7 @@ You can declare a new __RadRichTextEditor__ as any normal WinForms control.
 
 #### __[VB.NET] __
 
-{{region declare}}
+{{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=declare}}
 	
 	    Private radRichTextEditor1 As New RadRichTextEditor()
 	
@@ -181,7 +181,7 @@ If you want to allow the user to edit and format the content of __RadRichTextEdi
 
 #### __[C#] __
 
-{{region API}}
+{{source=..\SamplesCS\RichTextEditor\GettingStarted\Main.cs region=API}}
 	        
 	        private void BoldButton_Click(object sender, RoutedEventArgs e)
 	        {
@@ -207,7 +207,7 @@ If you want to allow the user to edit and format the content of __RadRichTextEdi
 
 #### __[VB.NET] __
 
-{{region API}}
+{{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=API}}
 	
 	    Private Sub BoldButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	        Me.radRichTextEditor1.ToggleBold()
@@ -304,7 +304,7 @@ The UI should also respond when the caret is on a document position where the te
 
 #### __[C#] __
 
-{{region commands}}
+{{source=..\SamplesCS\RichTextEditor\GettingStarted\Main.cs region=commands}}
 	        
 	        void Main_Load(object sender, EventArgs e)
 	        {
@@ -334,7 +334,7 @@ The UI should also respond when the caret is on a document position where the te
 
 #### __[VB.NET] __
 
-{{region commands}}
+{{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=commands}}
 	    Private Sub Main_Load(ByVal sender As Object, ByVal e As EventArgs)
 	        AddHandler radRichTextEditor1.Commands.ToggleBoldCommand.ToggleStateChanged, AddressOf ToggleBoldCommand_ToggleStateChanged
 	        AddHandler radRichTextEditor1.Commands.ToggleItalicCommand.ToggleStateChanged, AddressOf ToggleItalicCommand_ToggleStateChanged
@@ -470,7 +470,7 @@ Here is an example of a document created from code-behind
 
 #### __[C#] __
 
-{{region code}}
+{{source=..\SamplesCS\RichTextEditor\GettingStarted\Main.cs region=code}}
 	
 	            RadDocument document = new RadDocument();
 	            Section section = new Section();
@@ -542,7 +542,7 @@ Here is an example of a document created from code-behind
 
 #### __[VB.NET] __
 
-{{region code}}
+{{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=code}}
 	
 	        Dim document As New RadDocument()
 	        Dim section As New Section()

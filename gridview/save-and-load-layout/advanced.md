@@ -33,7 +33,7 @@ Here is a snippet which prepares the SerializationMedata for customization:
 
 #### __[C#]__
 
-{{region preparation}}
+{{source=..\SamplesCS\GridView\SaveLoadLayout\Advanced.cs region=preparation}}
 	            this.radGridView1.XmlSerializationInfo.DisregardOriginalSerializationVisibility = true;
 	            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Clear();
 	{{endregion}}
@@ -42,7 +42,7 @@ Here is a snippet which prepares the SerializationMedata for customization:
 
 #### __[VB.NET]__
 
-{{region preparation}}
+{{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=preparation}}
 	        Me.RadGridView1.XmlSerializationInfo.DisregardOriginalSerializationVisibility = True
 	        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Clear()
 	{{endregion}}
@@ -53,7 +53,7 @@ The first property to add for serialization is the MasterGridViewTemplate, which
 
 #### __[C#]__
 
-{{region SerializationMetadataRadGridView}}
+{{source=..\SamplesCS\GridView\SaveLoadLayout\Advanced.cs region=SerializationMetadataRadGridView}}
 	            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(RadGridView),"MasterTemplate",DesignerSerializationVisibilityAttribute.Content);
 	{{endregion}}
 
@@ -61,7 +61,7 @@ The first property to add for serialization is the MasterGridViewTemplate, which
 
 #### __[VB.NET]__
 
-{{region SerializationMetadataRadGridView}}
+{{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=SerializationMetadataRadGridView}}
 	        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(RadGridView), "MasterTemplate", DesignerSerializationVisibilityAttribute.Content)
 	{{endregion}}
 
@@ -71,7 +71,7 @@ You can use the same approach to add the child templates. Additionally, you may 
 
 #### __[C#]__
 
-{{region SerializationMetadataChildTemplates}}
+{{source=..\SamplesCS\GridView\SaveLoadLayout\Advanced.cs region=SerializationMetadataChildTemplates}}
 	            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "Templates", DesignerSerializationVisibilityAttribute.Content);
 	            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "Caption", DesignerSerializationVisibilityAttribute.Visible);
 	{{endregion}}
@@ -80,7 +80,7 @@ You can use the same approach to add the child templates. Additionally, you may 
 
 #### __[VB.NET]__
 
-{{region SerializationMetadataChildTemplates}}
+{{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=SerializationMetadataChildTemplates}}
 	        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "Templates", DesignerSerializationVisibilityAttribute.Content)
 	        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "Caption", DesignerSerializationVisibilityAttribute.Visible)
 	{{endregion}}
@@ -91,7 +91,7 @@ Since the Columns property points to a complex object, you should set the Design
 
 #### __[C#]__
 
-{{region SerializationMetadataGridViewDataColumn}}
+{{source=..\SamplesCS\GridView\SaveLoadLayout\Advanced.cs region=SerializationMetadataGridViewDataColumn}}
 	            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "Columns", DesignerSerializationVisibilityAttribute.Content);
 	            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewDataColumn), "Name", DesignerSerializationVisibilityAttribute.Visible);
 	            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewDataColumn), "Width", DesignerSerializationVisibilityAttribute.Visible);
@@ -101,7 +101,7 @@ Since the Columns property points to a complex object, you should set the Design
 
 #### __[VB.NET]__
 
-{{region SerializationMetadataGridViewDataColumn}}
+{{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=SerializationMetadataGridViewDataColumn}}
 	        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "Columns", DesignerSerializationVisibilityAttribute.Content)
 	        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewDataColumn), "Name", DesignerSerializationVisibilityAttribute.Visible)
 	        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewDataColumn), "Width", DesignerSerializationVisibilityAttribute.Visible)
@@ -113,7 +113,7 @@ Further, you may want to save information concerning grouping, sorting, filterin
 
 #### __[C#]__
 
-{{region SerializationMetadataOperations}}
+{{source=..\SamplesCS\GridView\SaveLoadLayout\Advanced.cs region=SerializationMetadataOperations}}
 	            //Groups Descriptors	            
 	            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "GroupDescriptors", DesignerSerializationVisibilityAttribute.Content);
 	            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GroupDescriptor), "GroupNames", DesignerSerializationVisibilityAttribute.Content);
@@ -133,7 +133,7 @@ Further, you may want to save information concerning grouping, sorting, filterin
 
 #### __[VB.NET]__
 
-{{region SerializationMetadataOperations}}
+{{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=SerializationMetadataOperations}}
 	        'Groups Descriptors
 	        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "GroupDescriptors", DesignerSerializationVisibilityAttribute.Content)
 	        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GroupDescriptor), "GroupNames", DesignerSerializationVisibilityAttribute.Content)

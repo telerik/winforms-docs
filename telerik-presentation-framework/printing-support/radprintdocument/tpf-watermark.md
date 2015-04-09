@@ -24,7 +24,7 @@ To get the watermark to show you have to set it up using the __Watermark__ prope
 
 #### __[C#]__
 
-{{region Watermark}}
+{{source=..\SamplesCS\TPF\Printing support\RadPrintDocument1.cs region=Watermark}}
 	            RadPrintDocument document = new RadPrintDocument();
 	            document.Watermark.Text = "Watermark";
 	            document.Watermark.TextHOffset = 0;
@@ -36,7 +36,7 @@ To get the watermark to show you have to set it up using the __Watermark__ prope
 
 #### __[VB.NET]__
 
-{{region Watermark}}
+{{source=..\SamplesVB\TPF\Printing support\RadPrintDocument1.vb region=Watermark}}
 	        Dim document As New RadPrintDocument()
 	        document.Watermark.Text = "Watermark"
 	        document.Watermark.TextHOffset = 0

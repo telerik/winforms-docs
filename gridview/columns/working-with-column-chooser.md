@@ -23,7 +23,7 @@ __AllowColumnChooser__ - this property determines whether the Column Chooser is 
 
 #### __[C#] Enable or Disable ColumnChooser__
 
-{{region AllowColumnChooser}}
+{{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=AllowColumnChooser}}
 	            radGridView1.MasterTemplate.AllowColumnChooser = false;
 	{{endregion}}
 
@@ -31,7 +31,7 @@ __AllowColumnChooser__ - this property determines whether the Column Chooser is 
 
 #### __[VB.NET] Enable or Disable ColumnChooser__
 
-{{region AllowColumnChooser}}
+{{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=AllowColumnChooser}}
 	        RadGridView1.MasterTemplate.AllowColumnChooser = False
 	{{endregion}}
 
@@ -43,7 +43,7 @@ __AllowHide__ – this property determines whether the column is allowed to be m
 
 #### __[C#] Determines if the specified column is allowed to be dragged to the column chooser dialog__
 
-{{region AllowHide}}
+{{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=AllowHide}}
 	            radGridView1.Columns["CategoryName"].AllowHide = false;
 	{{endregion}}
 
@@ -51,7 +51,7 @@ __AllowHide__ – this property determines whether the column is allowed to be m
 
 #### __[VB.NET] Determines if the specified column is allowed to be dragged to the column chooser dialog__
 
-{{region AllowHide}}
+{{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=AllowHide}}
 	        RadGridView1.Columns("CategoryName").AllowHide = False
 	{{endregion}}
 
@@ -63,7 +63,7 @@ __VisibleInColumnChooser__ – by setting this property for each column you dete
 
 #### __[C#] Determines if the specified column is going to be visible in the column chooser dialog__
 
-{{region VisibleInColumnChooser}}
+{{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=VisibleInColumnChooser}}
 	            radGridView1.Columns["Picture"].VisibleInColumnChooser = false;
 	{{endregion}}
 
@@ -71,7 +71,7 @@ __VisibleInColumnChooser__ – by setting this property for each column you dete
 
 #### __[VB.NET] Determines if the specified column is going to be visible in the column chooser dialog__
 
-{{region VisibleInColumnChooser}}
+{{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=VisibleInColumnChooser}}
 	        RadGridView1.Columns("Picture").VisibleInColumnChooser = False
 	{{endregion}}
 
@@ -82,7 +82,7 @@ In order to customize the Column Chooser you can access it directly from the ins
 
 #### __[C#] Accessing and customizing the column chooser__
 
-{{region customizeColumnChooser}}
+{{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=customizeColumnChooser}}
 	            radGridView1.ColumnChooser.DesktopLocation = new Point(100,100);
 	            radGridView1.ColumnChooser.Font = new Font("Segoe", 15, FontStyle.Bold);
 	{{endregion}}
@@ -91,7 +91,7 @@ In order to customize the Column Chooser you can access it directly from the ins
 
 #### __[VB.NET] Accessing and customizing the column chooser__
 
-{{region customizeColumnChooser}}
+{{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=customizeColumnChooser}}
 	        RadGridView1.ColumnChooser.DesktopLocation = New Point(100, 100)
 	        RadGridView1.ColumnChooser.Font = New Font("Segoe", 15, FontStyle.Bold)
 	{{endregion}}

@@ -38,7 +38,7 @@ The DockWindows property returns an array of all DockWindow in a RadDock
 
 #### __[C#]__
 
-{{region gettingHiddenWindows}}
+{{source=..\SamplesCS\Dock\CreatingWindows.cs region=gettingHiddenWindows}}
 	            DockWindow[] hiddenWindows = radDock1.DockWindows.GetWindows(DockState.Hidden);
 	{{endregion}}
 
@@ -46,7 +46,7 @@ The DockWindows property returns an array of all DockWindow in a RadDock
 
 #### __[VB.NET]__
 
-{{region gettingHiddenWindows}}
+{{source=..\SamplesVB\Dock\CreatingWindows.vb region=gettingHiddenWindows}}
 	        Dim hiddenWindows As DockWindow() = Me.RadDock1.DockWindows.GetWindows(DockState.Hidden)
 	{{endregion}}
 
@@ -58,7 +58,7 @@ You can get a desired ToolWindow\DocumentWindow by specifying its
 
 #### __[C#]__
 
-{{region gettingWindowByName}}
+{{source=..\SamplesCS\Dock\CreatingWindows.cs region=gettingWindowByName}}
 	            DockWindow window1 = this.radDock1.DockWindows["Form1"];
 	            // or simply
 	            DockWindow window2 = this.radDock1["Form1"];
@@ -68,7 +68,7 @@ You can get a desired ToolWindow\DocumentWindow by specifying its
 
 #### __[VB.NET]__
 
-{{region gettingWindowByName}}
+{{source=..\SamplesVB\Dock\CreatingWindows.vb region=gettingWindowByName}}
 	        Dim window1 As DockWindow = Me.RadDock1.DockWindows("Form1")
 	        ' or simply
 	        Dim window2 As DockWindow = Me.RadDock1("Form1")

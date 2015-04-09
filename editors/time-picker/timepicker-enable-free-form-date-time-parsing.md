@@ -21,7 +21,7 @@ The embedded text editor of RadTimePicker is RadMaskedEditBox. So if you want to
 
 #### __[C#]__
 
-{{region FreeFormDateTimeTimePicker}}
+{{source=..\SamplesCS\Editors\TimePicker1.cs region=FreeFormDateTimeTimePicker}}
 	            
 	            this.radTimePicker1.TimePickerElement.MaskedEditBox.MaskType = MaskType.FreeFormDateTime;
 	
@@ -31,7 +31,7 @@ The embedded text editor of RadTimePicker is RadMaskedEditBox. So if you want to
 
 #### __[VB.NET]__
 
-{{region FreeFormDateTimeTimePicker}}
+{{source=..\SamplesVB\Editors\TimePicker1.vb region=FreeFormDateTimeTimePicker}}
 	
 	        Me.RadTimePicker1.TimePickerElement.MaskedEditBox.MaskType = MaskType.FreeFormDateTime
 	

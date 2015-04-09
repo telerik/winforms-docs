@@ -29,7 +29,7 @@ __RadDropDownList__ provides flexible auto-completion options that suggest and
 
 #### __[C#] AutoCompleteMode.None__
 
-{{region autoCNone}}
+{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=autoCNone}}
 	            this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.None;
 	{{endregion}}
 
@@ -37,7 +37,7 @@ __RadDropDownList__ provides flexible auto-completion options that suggest and
 
 #### __[VB.NET] AutoCompleteMode.None__
 
-{{region autoCNone}}
+{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=autoCNone}}
 	        Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.None
 	{{endregion}}
 
@@ -50,7 +50,7 @@ __RadDropDownList__ provides flexible auto-completion options that suggest and
 
 #### __[C#] AutoCompleteMode.Suggest__
 
-{{region autoCSuggest}}
+{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=autoCSuggest}}
 	            this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Suggest;
 	{{endregion}}
 
@@ -58,7 +58,7 @@ __RadDropDownList__ provides flexible auto-completion options that suggest and
 
 #### __[VB.NET] AutoCompleteMode.Suggest__
 
-{{region autoCSuggest}}
+{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=autoCSuggest}}
 	        Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Suggest
 	{{endregion}}
 
@@ -73,7 +73,7 @@ __RadDropDownList__ provides flexible auto-completion options that suggest and
 
 #### __[C#] AutoCompleteMode.Append__
 
-{{region autoCAppend}}
+{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=autoCAppend}}
 	            this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Append;
 	{{endregion}}
 
@@ -81,7 +81,7 @@ __RadDropDownList__ provides flexible auto-completion options that suggest and
 
 #### __[VB.NET] AutoCompleteMode.Append__
 
-{{region autoCAppend}}
+{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=autoCAppend}}
 	        Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Append
 	{{endregion}}
 
@@ -94,7 +94,7 @@ __RadDropDownList__ provides flexible auto-completion options that suggest and
 
 #### __[C#] AutoCompleteMode.SuggestAppend__
 
-{{region autoCSuggestAppend}}
+{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=autoCSuggestAppend}}
 	            this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 	{{endregion}}
 
@@ -102,7 +102,7 @@ __RadDropDownList__ provides flexible auto-completion options that suggest and
 
 #### __[VB.NET] AutoCompleteMode.SuggestAppend__
 
-{{region autoCSuggestAppend}}
+{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=autoCSuggestAppend}}
 	        Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
 	{{endregion}}
 

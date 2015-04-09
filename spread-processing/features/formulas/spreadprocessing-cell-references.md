@@ -28,7 +28,7 @@ __Example 1__ creates a workbook with a single worksheet before setting the valu
 
 #### __[C#] Example 1: Set reference value__
 
-{{region radspreadprocessing-features-formulas-cell-references_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCellReferences.cs region=radspreadprocessing-features-formulas-cell-references_0}}
 	            Workbook workbook = new Workbook();
 	            workbook.Worksheets.Add();
 	            workbook.ActiveWorksheet.Cells[0, 2].SetValue("=A1+B1");
@@ -38,7 +38,7 @@ __Example 1__ creates a workbook with a single worksheet before setting the valu
 
 #### __VB__
 
-{{region radspreadprocessing-features-formulas-cell-references_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCellReferences.vb region=radspreadprocessing-features-formulas-cell-references_0}}
 	        Dim workbook As New Workbook()
 	        workbook.Worksheets.Add()
 	        workbook.ActiveWorksheet.Cells(0, 2).SetValue("=A1+B1")
@@ -72,7 +72,7 @@ __Example 2__ adds a worksheet to the workbook and renames the newly created ins
 
 #### __[C#] Example 2: Set reference value from another sheet__
 
-{{region radspreadprocessing-features-formulas-cell-references_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCellReferences.cs region=radspreadprocessing-features-formulas-cell-references_1}}
 	            workbook.Worksheets.Add();
 	            Worksheet sheet1 = workbook.Worksheets[0];
 	            Worksheet samsWorksheet = workbook.Worksheets[1];
@@ -85,7 +85,7 @@ __Example 2__ adds a worksheet to the workbook and renames the newly created ins
 
 #### __VB__
 
-{{region radspreadprocessing-features-formulas-cell-references_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCellReferences.vb region=radspreadprocessing-features-formulas-cell-references_1}}
 	        workbook.Worksheets.Add()
 	        Dim sheet1 As Worksheet = workbook.Worksheets(0)
 	        Dim samsWorksheet As Worksheet = workbook.Worksheets(1)
@@ -113,7 +113,7 @@ __Example 3__ demonstrates how to add a reference to a whole cell range.
 
 #### __[C#] Example 3: Set reference to cell range__
 
-{{region radspreadprocessing-features-formulas-cell-references_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCellReferences.cs region=radspreadprocessing-features-formulas-cell-references_2}}
 	            sheet1.Cells[2, 2].SetValue("=SUM(A1:B2)");
 	            samsWorksheet.Cells[0, 0].SetValue("=PRODUCT(D3:F5)");
 	{{endregion}}
@@ -122,7 +122,7 @@ __Example 3__ demonstrates how to add a reference to a whole cell range.
 
 #### __VB__
 
-{{region radspreadprocessing-features-formulas-cell-references_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCellReferences.vb region=radspreadprocessing-features-formulas-cell-references_2}}
 	       sheet1.Cells(2, 2).SetValue("=SUM(A1:B2)")
 	        samsWorksheet.Cells(0, 0).SetValue("=PRODUCT(D3:F5)")
 	        '#End Region

@@ -22,7 +22,7 @@ This tutorial will demonstrate localizing the RadChart title, series name and 
 
 #### __[C#] Create RadChart and add items__
 
-{{region createChart}}
+{{source=..\SamplesCS\Chart\LocalizationExample.cs region=createChart}}
 	            RadChart radChart = new RadChart();
 	            radChart.PlotArea.XAxis.MaxValue = 3;
 	            radChart.PlotArea.XAxis.MinValue = 1;
@@ -42,7 +42,7 @@ This tutorial will demonstrate localizing the RadChart title, series name and 
 
 #### __[VB.NET] Create RadChart and add items__
 
-{{region createChart}}
+{{source=..\SamplesVB\Chart\LocalizationExample.vb region=createChart}}
 	        Dim radChart As New RadChart()
 	        radChart.PlotArea.XAxis.MaxValue = 3
 	        radChart.PlotArea.XAxis.MinValue = 1
@@ -80,7 +80,7 @@ This tutorial will demonstrate localizing the RadChart title, series name and 
 
 #### __[C#] Setting the TextBlock text__
 
-{{region settingTheTextBlockText}}
+{{source=..\SamplesCS\Chart\LocalizationExample.cs region=settingTheTextBlockText}}
 	            radChart.ChartTitle.TextBlock.Text = SamplesCS.Chart.LocalizationResource.RadChartChartTitleTextBlockText;
 	{{endregion}}
 
@@ -88,7 +88,7 @@ This tutorial will demonstrate localizing the RadChart title, series name and 
 
 #### __[VB.NET] Setting the TextBlock text__
 
-{{region settingTheTextBlockText}}
+{{source=..\SamplesVB\Chart\LocalizationExample.vb region=settingTheTextBlockText}}
 	        radChart.ChartTitle.TextBlock.Text = Resource.RadChart1ChartTitleTextBlockText
 	
 	{{endregion}}
@@ -116,7 +116,7 @@ This tutorial will demonstrate localizing the RadChart title, series name and 
 
 #### __[C#] Changing the Localization__
 
-{{region setLocalization}}
+{{source=..\SamplesCS\Chart\LocalizationExample.cs region=setLocalization}}
 	            //this line goes in the Main method of the application, before the Application.Run method
 	            Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
 	{{endregion}}
@@ -125,7 +125,7 @@ This tutorial will demonstrate localizing the RadChart title, series name and 
 
 #### __[VB.NET] Changing the Localization__
 
-{{region setLocalization}}
+{{source=..\SamplesVB\Chart\LocalizationExample.vb region=setLocalization}}
 	        'this line of code goes before the code added in step 5 (setting the chart title text), so it can be localized too
 	        Thread.CurrentThread.CurrentUICulture = New CultureInfo("fr-FR")
 	{{endregion}}
@@ -149,7 +149,7 @@ This tutorial will demonstrate localizing the RadChart title, series name and 
 
 #### __[C#] Setting the Series name__
 
-{{region setSeriesName}}
+{{source=..\SamplesCS\Chart\LocalizationExample.cs region=setSeriesName}}
 	            radChart.Series[0].Name = SamplesCS.Chart.LocalizationResource.RadChartSeries1Name;
 	{{endregion}}
 
@@ -157,7 +157,7 @@ This tutorial will demonstrate localizing the RadChart title, series name and 
 
 #### __[VB.NET] Setting the Series name__
 
-{{region setSeriesName}}
+{{source=..\SamplesVB\Chart\LocalizationExample.vb region=setSeriesName}}
 	        radChart.Series(0).Name = Resource.RadChart1Series1Name
 	{{endregion}}
 
@@ -172,7 +172,7 @@ This tutorial will demonstrate localizing the RadChart title, series name and 
 
 #### __[C#] Localizing the items__
 
-{{region addMoreItems}}
+{{source=..\SamplesCS\Chart\LocalizationExample.cs region=addMoreItems}}
 	            chartSeries.Items[0].Label.TextBlock.Text = SamplesCS.Chart.LocalizationResource.RadChartSeries1Element1LabelTextBlockText;
 	            chartSeries.Items[1].Label.TextBlock.Text = SamplesCS.Chart.LocalizationResource.RadChartSeries1Element2LabelTextBlockText;
 	            chartSeries.Items[2].Label.TextBlock.Text = SamplesCS.Chart.LocalizationResource.RadChartSeries1Element3LabelTextBlockText;
@@ -182,7 +182,7 @@ This tutorial will demonstrate localizing the RadChart title, series name and 
 
 #### __[VB.NET] Localizing the items__
 
-{{region addMoreItems}}
+{{source=..\SamplesVB\Chart\LocalizationExample.vb region=addMoreItems}}
 	        chartSeries.Items(0).Label.TextBlock.Text = Resource.RadChart1Series1Element1LabelTextBlockText
 	        chartSeries.Items(1).Label.TextBlock.Text = Resource.RadChart1Series1Element2LabelTextBlockText
 	        chartSeries.Items(2).Label.TextBlock.Text = Resource.RadChart1Series1Element3LabelTextBlockText

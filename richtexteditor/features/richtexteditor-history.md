@@ -38,7 +38,7 @@ You can enable or disable the history for the __RadDocument__ via the __Enabled_
 
 #### __[C#] __
 
-{{region enabled}}
+{{source=..\SamplesCS\RichTextEditor\Features\HistoryCode.cs region=enabled}}
 	            
 	            this.radRichTextEditor1.Document.History.IsEnabled = false;
 	            
@@ -48,7 +48,7 @@ You can enable or disable the history for the __RadDocument__ via the __Enabled_
 
 #### __[VB.NET] __
 
-{{region enabled}}
+{{source=..\SamplesVB\RichTextEditor\Features\HistoryCode.vb region=enabled}}
 	
 	        Me.radRichTextEditor1.Document.History.IsEnabled = False
 	
@@ -89,7 +89,7 @@ To clear the history you just have to call the __Clear()__ method of the __Docum
 
 #### __[C#] __
 
-{{region clear}}
+{{source=..\SamplesCS\RichTextEditor\Features\HistoryCode.cs region=clear}}
 	            
 	            this.radRichTextEditor1.Document.History.Clear();
 	        
@@ -99,7 +99,7 @@ To clear the history you just have to call the __Clear()__ method of the __Docum
 
 #### __[VB.NET] __
 
-{{region clear}}
+{{source=..\SamplesVB\RichTextEditor\Features\HistoryCode.vb region=clear}}
 	
 	        Me.radRichTextEditor1.Document.History.Clear()
 	
@@ -135,7 +135,7 @@ To undo and redo some actions, you can call the __Undo()__ and __Redo()__ method
 
 #### __[C#] __
 
-{{region undo}}
+{{source=..\SamplesCS\RichTextEditor\Features\HistoryCode.cs region=undo}}
 	        
 	        private void UndoAction()
 	        {
@@ -153,7 +153,7 @@ To undo and redo some actions, you can call the __Undo()__ and __Redo()__ method
 
 #### __[VB.NET] __
 
-{{region undo}}
+{{source=..\SamplesVB\RichTextEditor\Features\HistoryCode.vb region=undo}}
 	
 	    Private Sub UndoAction()
 	        Me.radRichTextEditor1.Undo()
@@ -176,7 +176,7 @@ To change the history capacity you have to set the desired value of the __Depth_
 
 #### __[C#] __
 
-{{region depth}}
+{{source=..\SamplesCS\RichTextEditor\Features\HistoryCode.cs region=depth}}
 	        
 	            this.radRichTextEditor1.Document.History.Depth = 500;
 	        
@@ -186,7 +186,7 @@ To change the history capacity you have to set the desired value of the __Depth_
 
 #### __[VB.NET] __
 
-{{region depth}}
+{{source=..\SamplesVB\RichTextEditor\Features\HistoryCode.vb region=depth}}
 	
 	        Me.radRichTextEditor1.Document.History.Depth = 500
 	

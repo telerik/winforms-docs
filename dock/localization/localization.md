@@ -26,7 +26,7 @@ Below is a sample implementation of a custom localization provider, which return
 
 #### __[C#] Localizing RadDock Strings__
 
-{{region customProvider}}
+{{source=..\SamplesCS\Dock\CustomDockProvider.cs region=customProvider}}
 	    public class EnglishDockLocalizationProvider : RadDockLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -80,7 +80,7 @@ Below is a sample implementation of a custom localization provider, which return
 
 #### __[VB.NET] Localizing RadDock Strings__
 
-{{region customProvider}}
+{{source=..\SamplesVB\Dock\CustomDockProvider.vb region=customProvider}}
 	Public Class EnglishDockLocalizationProvider
 	    Inherits RadDockLocalizationProvider
 	    Public Overrides Function GetLocalizedString(ByVal id As String) As String
@@ -136,7 +136,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[C#] Localizing RadDock Strings__
 
-{{region settingCustomProvider}}
+{{source=..\SamplesCS\Dock\CustomDockProvider.cs region=settingCustomProvider}}
 	            RadDockLocalizationProvider.CurrentProvider = new EnglishDockLocalizationProvider();
 	{{endregion}}
 
@@ -144,7 +144,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[VB.NET] Localizing RadDock Strings__
 
-{{region settingCustomProvider}}
+{{source=..\SamplesVB\Dock\CustomDockProvider.vb region=settingCustomProvider}}
 	        RadDockLocalizationProvider.CurrentProvider = New EnglishDockLocalizationProvider()
 	{{endregion}}
 

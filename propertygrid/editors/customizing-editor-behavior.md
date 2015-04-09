@@ -24,7 +24,7 @@ The following sample demonstrates how to change the default font of __PropertyGr
 
 #### __[C#] Customize editor__
 
-{{region CustomizeEditor}}
+{{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridCustomizingEditorBehavior.cs region=CustomizeEditor}}
 	        void radPropertyGrid1_EditorInitialized(object sender, Telerik.WinControls.UI.PropertyGridItemEditorInitializedEventArgs e)
 	        {
 	            PropertyGridTextBoxEditor editor = e.Editor as PropertyGridTextBoxEditor;
@@ -41,7 +41,7 @@ The following sample demonstrates how to change the default font of __PropertyGr
 
 #### __[VB.NET] Customize editor__
 
-{{region CustomizeEditor}}
+{{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridCustomizingEditorBehavior.vb region=CustomizeEditor}}
 	    Private Sub radPropertyGrid1_EditorInitialized(ByVal sender As Object, ByVal e As PropertyGridItemEditorInitializedEventArgs)
 	        Dim editor As PropertyGridTextBoxEditor = TryCast(e.Editor, PropertyGridTextBoxEditor)
 	

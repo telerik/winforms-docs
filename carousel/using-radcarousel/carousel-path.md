@@ -28,7 +28,7 @@ CarouselEllipsePath is a CarouselParameterPath descendant that defines a three d
 
 #### __[C#] Defining ellipse path__
 
-{{region definingEllipsePath}}
+{{source=..\SamplesCS\Carousel\CarouselPath.cs region=definingEllipsePath}}
 	            CarouselEllipsePath ellipsePath = new CarouselEllipsePath();
 	            ellipsePath.Center = new Telerik.WinControls.UI.Point3D(50, 50, 0);
 	            ellipsePath.FinalAngle = -100;
@@ -43,7 +43,7 @@ CarouselEllipsePath is a CarouselParameterPath descendant that defines a three d
 
 #### __[VB.NET] Defining ellipse path__
 
-{{region definingEllipsePath}}
+{{source=..\SamplesVB\Carousel\CarouselPath.vb region=definingEllipsePath}}
 	        Dim ellipsePath As CarouselEllipsePath = New CarouselEllipsePath
 	        ellipsePath.Center = New Telerik.WinControls.UI.Point3D(50, 50, 0)
 	        ellipsePath.FinalAngle = 360
@@ -83,7 +83,7 @@ __CarouselBezierPath__ describes two end points and two "control" points in thr
 
 #### __[C#] Defining bezier path__
 
-{{region definingBezierPath}}
+{{source=..\SamplesCS\Carousel\CarouselPath.cs region=definingBezierPath}}
 	            CarouselBezierPath bezierPath = new CarouselBezierPath();
 	            bezierPath.FirstPoint = new Point3D(10, 20, 0);
 	            bezierPath.CtrlPoint1 = new Point3D(14, 76, 70);
@@ -96,7 +96,7 @@ __CarouselBezierPath__ describes two end points and two "control" points in thr
 
 #### __[VB.NET] Defining bezier path__
 
-{{region definingBezierPath}}
+{{source=..\SamplesVB\Carousel\CarouselPath.vb region=definingBezierPath}}
 	        Dim bezierPath As New CarouselBezierPath()
 	        bezierPath.FirstPoint = New Point3D(10, 20, 0)
 	        bezierPath.CtrlPoint1 = New Point3D(14, 76, 70)

@@ -34,7 +34,7 @@ The first one involves subscribing to the __Showing__ event of the default __Con
 
 #### __[C#] __
 
-{{region example}}
+{{source=..\SamplesCS\RichTextEditor\UI\ContextMenuCode.cs region=example}}
 	        public ContextMenuCode()
 	        {
 	            InitializeComponent();
@@ -71,7 +71,7 @@ The first one involves subscribing to the __Showing__ event of the default __Con
 
 #### __[VB.NET] __
 
-{{region example}}
+{{source=..\SamplesVB\RichTextEditor\UI\ContextMenuCode.vb region=example}}
 	    Public Sub New()
 	        InitializeComponent()
 	
@@ -132,7 +132,7 @@ Now you can simply assign the instance of your class to the __ContentBuilder__ p
 
 #### __[C#] __
 
-{{region create}}
+{{source=..\SamplesCS\RichTextEditor\UI\ContextMenuCode.cs region=create}}
 	            Telerik.WinControls.RichTextEditor.UI.ContextMenu contextMenu = (Telerik.WinControls.RichTextEditor.UI.ContextMenu)this.radRichTextEditor1.RichTextBoxElement.ContextMenu;
 	            contextMenu.ContentBuilder = new CustomContextMenuContentBuilder(this.radRichTextEditor1);
 	{{endregion}}
@@ -141,7 +141,7 @@ Now you can simply assign the instance of your class to the __ContentBuilder__ p
 
 #### __[VB.NET] __
 
-{{region create}}
+{{source=..\SamplesVB\RichTextEditor\UI\ContextMenuCode.vb region=create}}
 	
 	        Dim contextMenu1 As Telerik.WinControls.RichTextEditor.UI.ContextMenu = CType(Me.radRichTextEditor1.RichTextBoxElement.ContextMenu, Telerik.WinControls.RichTextEditor.UI.ContextMenu)
 	        contextMenu1.ContentBuilder = New CustomContextMenuContentBuilder(Me.radRichTextEditor1)

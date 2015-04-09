@@ -49,7 +49,7 @@ The following example shows how to create a chart with two series sharing their 
 
 #### __[C#] __
 
-{{region SetupOneCommonAxis}}
+{{source=..\SamplesCS\ChartView\Axes\MultiAxes.cs region=SetupOneCommonAxis}}
 	
 	            DateTimeContinuousAxis horizontalAxis = new DateTimeContinuousAxis();
 	            horizontalAxis.MajorStepUnit = Telerik.Charting.TimeInterval.Day;
@@ -90,7 +90,7 @@ The following example shows how to create a chart with two series sharing their 
 
 #### __[VB.NET] __
 
-{{region SetupOneCommonAxis}}
+{{source=..\SamplesVB\ChartView\Axes\MultiAxes.vb region=SetupOneCommonAxis}}
 	
 	        Dim horizontalAxis As New DateTimeContinuousAxis()
 	        horizontalAxis.MajorStepUnit = Telerik.Charting.TimeInterval.Day
@@ -136,7 +136,7 @@ If you need series to have different axes but still plot them on one chart view 
 
 #### __[C#] __
 
-{{region SetupTwoSeriesFourAxes}}
+{{source=..\SamplesCS\ChartView\Axes\MultiAxes.cs region=SetupTwoSeriesFourAxes}}
 	
 	            CategoricalAxis horizontalAxis1 = new CategoricalAxis();
 	            CategoricalAxis horizontalAxis2 = new CategoricalAxis();
@@ -176,7 +176,7 @@ If you need series to have different axes but still plot them on one chart view 
 
 #### __[VB.NET] __
 
-{{region SetupTwoSeriesFourAxes}}
+{{source=..\SamplesVB\ChartView\Axes\MultiAxes.vb region=SetupTwoSeriesFourAxes}}
 	
 	        Dim horizontalAxis1 As New CategoricalAxis()
 	        Dim horizontalAxis2 As New CategoricalAxis()
@@ -220,7 +220,7 @@ Mixing the above two modes:![chartview-axes-multiple-axes 003](images/chartview-
 
 #### __[C#] __
 
-{{region SetupMixed}}
+{{source=..\SamplesCS\ChartView\Axes\MultiAxes.cs region=SetupMixed}}
 	
 	            CategoricalAxis horizontalAxis1 = new CategoricalAxis();
 	            CategoricalAxis horizontalAxis2 = new CategoricalAxis();
@@ -271,7 +271,7 @@ Mixing the above two modes:![chartview-axes-multiple-axes 003](images/chartview-
 
 #### __[VB.NET] __
 
-{{region SetupMixed}}
+{{source=..\SamplesVB\ChartView\Axes\MultiAxes.vb region=SetupMixed}}
 	
 	        Dim horizontalAxis1 As New CategoricalAxis()
 	        Dim horizontalAxis2 As New CategoricalAxis()

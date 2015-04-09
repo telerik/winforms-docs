@@ -21,7 +21,7 @@ RadGanttView allows you to replace the standard editors with a custom editors. T
 
 #### __[C#] __
 
-{{region CustomTrackBarEditor}}
+{{source=..\SamplesCS\GanttView\Editing\CustomEditor.cs region=CustomTrackBarEditor}}
 	    public class GanttViewTrackBarEditor : BaseInputEditor
 	    {
 	        public override object Value
@@ -87,7 +87,7 @@ RadGanttView allows you to replace the standard editors with a custom editors. T
 
 #### __[VB.NET] __
 
-{{region CustomTrackBarEditor}}
+{{source=..\SamplesVB\GanttView\Editing\CustomEditor.vb region=CustomTrackBarEditor}}
 	Public Class GanttViewTrackBarEditor
 	    Inherits BaseInputEditor
 	    Public Overrides Property Value() As Object
@@ -147,7 +147,7 @@ In the __EditorRequired__ event we replace the default editor:
 
 #### __[C#] __
 
-{{region CustomEditorReplace}}
+{{source=..\SamplesCS\GanttView\Editing\CustomEditor.cs region=CustomEditorReplace}}
 	        private void GanttViewElement_EditorRequired(object sender, GanttViewEditorRequiredEventArgs e)
 	        {
 	            if (e.EditorType == typeof(BaseSpinEditor))
@@ -161,7 +161,7 @@ In the __EditorRequired__ event we replace the default editor:
 
 #### __[VB.NET] __
 
-{{region CustomEditorReplace}}
+{{source=..\SamplesVB\GanttView\Editing\CustomEditor.vb region=CustomEditorReplace}}
 	    Private Sub GanttViewElement_EditorRequired(sender As Object, e As GanttViewEditorRequiredEventArgs)
 	        If (e.EditorType = GetType(BaseSpinEditor)) Then
 	            e.EditorType = GetType(GanttViewTrackBarEditor)

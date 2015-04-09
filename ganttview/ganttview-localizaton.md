@@ -30,7 +30,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[C#] __
 
-{{region LocalizationProvider}}
+{{source=..\SamplesCS\GanttView\Localization\LocalizationProvider.cs region=LocalizationProvider}}
 	    public class MyEnglishGanttViewLocalizationProvider : GanttViewLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -60,7 +60,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[VB.NET] __
 
-{{region LocalizationProvider}}
+{{source=..\SamplesVB\GanttView\Localization\LocalizationProvider.vb region=LocalizationProvider}}
 	Public Class MyEnglishGanttViewLocalizationProvider
 	    Inherits GanttViewLocalizationProvider
 	    Public Overrides Function GetLocalizedString(id As String) As String
@@ -90,7 +90,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[C#] __
 
-{{region ApplyLocalizationProvider}}
+{{source=..\SamplesCS\GanttView\Localization\LocalizationProvider.cs region=ApplyLocalizationProvider}}
 	            GanttViewLocalizationProvider.CurrentProvider = new MyEnglishGanttViewLocalizationProvider();
 	{{endregion}}
 
@@ -98,7 +98,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### __[VB.NET] __
 
-{{region ApplyLocalizationProvider}}
+{{source=..\SamplesVB\GanttView\Localization\LocalizationProvider.vb region=ApplyLocalizationProvider}}
 	        GanttViewLocalizationProvider.CurrentProvider = New MyEnglishGanttViewLocalizationProvider()
 	{{endregion}}
 

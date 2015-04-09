@@ -39,7 +39,7 @@ A __CartesianMarkedZoneAnnotation__ is defined like this:
 
 #### __[C#] __
 
-{{region CartesianMarkedZone}}
+{{source=..\SamplesCS\ChartView\Annotations\MarkedZones.cs region=CartesianMarkedZone}}
 	            CartesianMarkedZoneAnnotation annotation1 = new CartesianMarkedZoneAnnotation();
 	            annotation1.HorizontalFrom = 0;
 	            annotation1.HorizontalTo = 0.5;
@@ -64,7 +64,7 @@ A __CartesianMarkedZoneAnnotation__ is defined like this:
 
 #### __[VB] __
 
-{{region CartesianMarkedZone}}
+{{source=..\SamplesVB\ChartView\Annotations\MarkedZones.vb region=CartesianMarkedZone}}
 	        Dim annotation1 As New CartesianMarkedZoneAnnotation()
 	        annotation1.HorizontalFrom = 0
 	        annotation1.HorizontalTo = 0.5
@@ -166,7 +166,7 @@ Here is the previous example with some of the settings commented
 
 #### __[C#] __
 
-{{region CartesianMarkedZone2}}
+{{source=..\SamplesCS\ChartView\Annotations\MarkedZones.cs region=CartesianMarkedZone2}}
 	            CartesianMarkedZoneAnnotation annotation1 = new CartesianMarkedZoneAnnotation();
 	            annotation1.HorizontalFrom = 0;
 	            //annotation1.HorizontalTo = 0.5;
@@ -191,7 +191,7 @@ Here is the previous example with some of the settings commented
 
 #### __[VB] __
 
-{{region CartesianMarkedZone2}}
+{{source=..\SamplesVB\ChartView\Annotations\MarkedZones.vb region=CartesianMarkedZone2}}
 	        Dim annotation1 As New CartesianMarkedZoneAnnotation()
 	        annotation1.HorizontalFrom = 0
 	        'annotation1.HorizontalTo = 0.5;

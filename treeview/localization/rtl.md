@@ -20,7 +20,7 @@ You can present the content of your treeview instance in a right-to-left directi
 
 #### __[C#]__
 
-{{region rtl}}
+{{source=..\SamplesCS\TreeView\TreeLocalization.cs region=rtl}}
 	            this.radTreeView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 	{{endregion}}
 
@@ -28,7 +28,7 @@ You can present the content of your treeview instance in a right-to-left directi
 
 #### __[VB.NET]__
 
-{{region rtl}}
+{{source=..\SamplesVB\TreeView\TreeLocalization.vb region=rtl}}
 	        Me.RadTreeView1.RightToLeft = Windows.Forms.RightToLeft.Yes
 	{{endregion}}
 

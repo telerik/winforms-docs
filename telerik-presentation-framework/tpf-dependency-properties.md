@@ -32,7 +32,7 @@ The example below registers a new IsDefaultButtonProperty, wraps the dependency 
 
 #### __[C#] __
 
-{{region property}}
+{{source=..\SamplesCS\TPF\DependencyProperties.cs region=property}}
 	    public class MyButtonElement : RadButtonElement
 	    {
 	        public static RadProperty IsDefaultButtonProperty;
@@ -75,7 +75,7 @@ The example below registers a new IsDefaultButtonProperty, wraps the dependency 
 
 #### __[VB.NET] __
 
-{{region property}}
+{{source=..\SamplesVB\TPF\DependencyProperties.vb region=property}}
 	    Public Class MyButtonElement
 	        Inherits RadButtonElement
 	        Public Shared IsDefaultButtonProperty As RadProperty

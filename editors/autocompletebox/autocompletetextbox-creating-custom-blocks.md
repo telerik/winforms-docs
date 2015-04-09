@@ -28,7 +28,7 @@ You should create a custom text block that inherits from __ITextBlock__
 
 #### __[C#]__
 
-{{region customTokens}}
+{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=customTokens}}
 	    public class MyTokenizedTextBlockElement : TokenizedTextBlockElement
 	    {
 	        private RadCheckBoxElement checkBox;
@@ -58,7 +58,7 @@ You should create a custom text block that inherits from __ITextBlock__
 
 #### __[VB.NET]__
 
-{{region customTokens}}
+{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=customTokens}}
 	    Public Class MyTokenizedTextBlockElement
 	        Inherits TokenizedTextBlockElement
 	        Private checkBox As RadCheckBoxElement
@@ -90,7 +90,7 @@ Then you should replace the default text block in the __CreateTextBlock__
 
 #### __[C#]__
 
-{{region replaceTokens}}
+{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=replaceTokens}}
 	        private void radAutoCompleteBox1_CreateTextBlock(object sender, CreateTextBlockEventArgs e)
 	        {
 	            if (e.TextBlock is TokenizedTextBlockElement)
@@ -104,7 +104,7 @@ Then you should replace the default text block in the __CreateTextBlock__
 
 #### __[VB.NET]__
 
-{{region replaceTokens}}
+{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=replaceTokens}}
 	    Private Sub radAutoCompleteBox1_CreateTextBlock(sender As Object, e As CreateTextBlockEventArgs)
 	        If TypeOf e.TextBlock Is TokenizedTextBlockElement Then
 	            e.TextBlock = New MyTokenizedTextBlockElement()
@@ -146,7 +146,7 @@ Finally, the text property should be set:
 
 #### __[C#]__
 
-{{region subscribeToFormatting}}
+{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=subscribeToFormatting}}
 	            radAutoCompleteBox1.TextBlockFormatting += new TextBlockFormattingEventHandler(radAutoCompleteBox1_TextBlockFormatting);
 	            this.radAutoCompleteBox1.Text = "Euro;USD;GBP;";
 	{{endregion}}
@@ -155,7 +155,7 @@ Finally, the text property should be set:
 
 #### __[C#]__
 
-{{region formatting}}
+{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=formatting}}
 	        void radAutoCompleteBox1_TextBlockFormatting(object sender, TextBlockFormattingEventArgs e)
 	        {
 	            TokenizedTextBlockElement token = e.TextBlock as TokenizedTextBlockElement;
@@ -171,7 +171,7 @@ Finally, the text property should be set:
 
 #### __[VB.NET]__
 
-{{region subscribeToFormatting}}
+{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=subscribeToFormatting}}
 	        AddHandler RadAutoCompleteBox1.TextBlockFormatting, AddressOf radAutoCompleteBox1_TextBlockFormatting
 	        Me.RadAutoCompleteBox1.Text = "Euro;USD;GBP;"
 	        '#End Region
@@ -314,7 +314,7 @@ Finally, the text property should be set:
 
 #### __[VB.NET]__
 
-{{region formatting}}
+{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=formatting}}
 	    Private Sub radAutoCompleteBox1_TextBlockFormatting(sender As Object, e As TextBlockFormattingEventArgs)
 	        Dim token As TokenizedTextBlockElement = TryCast(e.TextBlock, TokenizedTextBlockElement)
 	        If token IsNot Nothing Then

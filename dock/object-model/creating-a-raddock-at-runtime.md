@@ -18,7 +18,7 @@ To create a __RadDock__in code, construct a __RadDock__, set properties and add 
 
 #### __[C#] Creating a simple RadDock instance__
 
-{{region creatingDock}}
+{{source=..\SamplesCS\Dock\CreatingRadDock.cs region=creatingDock}}
 	            RadDock radDock1 = new RadDock();
 	            radDock1.Dock = DockStyle.Fill;
 	            this.Controls.Add(radDock1);
@@ -31,7 +31,7 @@ To create a __RadDock__in code, construct a __RadDock__, set properties and add 
 
 #### __[VB.NET] Creating a simple RadDock instance__
 
-{{region creatingDock}}
+{{source=..\SamplesVB\Dock\CreatingRadDock.vb region=creatingDock}}
 	        Dim radDock1 As RadDock = New RadDock()
 	        radDock1.Dock = DockStyle.Fill
 	        Me.Controls.Add(radDock1)

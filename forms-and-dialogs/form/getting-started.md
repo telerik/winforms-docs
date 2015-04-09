@@ -38,7 +38,7 @@ Changing the base class of a standard Windows Form to RadForm in C#:
 
 #### __[C#] Changing WinForms form to Telerik RadForm__
 
-{{region radForm}}
+{{source=..\SamplesCS\Forms and Dialogs\Form1.Designer.cs region=radForm}}
 	    partial class Form1 : Telerik.WinControls.UI.RadForm
 	{{endregion}}
 
@@ -60,7 +60,7 @@ Changing the base class of a standard Windows Form to RadForm in VB.NET:
 
 #### __[VB.NET] Changing WinForms form to Telerik RadForm__
 
-{{region radForm}}
+{{source=..\SamplesVB\Forms and Dialogs\Form1.Designer.vb region=radForm}}
 	Partial Class Form1
 	    Inherits Telerik.WinControls.UI.RadForm
 	{{endregion}}

@@ -24,7 +24,7 @@ RadTreeView can consume XML data both by directly loading it
 
 #### __[XML]__
 
-{{region sampleToc}}
+{{source=..\SamplesCS\TreeView\DataBinding\toc.xml region=sampleToc}}
 	<Toc>
 	  <Node>
 	    <Title>Main Title</Title>
@@ -52,7 +52,7 @@ Assuming that "toc.xml" is in the TreeView\DataBinding directory which is relati
 
 #### __[C#]__
 
-{{region toc}}
+{{source=..\SamplesCS\TreeView\DataBinding\BindingToXmlData.cs region=toc}}
 	            DataSet tocDataSet = new DataSet("Toc");
 	            tocDataSet.ReadXml("TreeView\\DataBinding\\toc.xml");
 	            this.radTreeView1.DataMember = "Node";
@@ -66,7 +66,7 @@ Assuming that "toc.xml" is in the TreeView\DataBinding directory which is relati
 
 #### __[VB.NET]__
 
-{{region toc}}
+{{source=..\SamplesVB\TreeView\DataBinding\BindingToXmlData.vb region=toc}}
 	        Dim tocDataSet As DataSet = New DataSet("Toc")
 	        tocDataSet.ReadXml("TreeView\DataBinding\toc.xml")
 	        Me.RadTreeView1.DataMember = "Node"

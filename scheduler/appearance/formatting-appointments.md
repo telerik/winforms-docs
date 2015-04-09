@@ -20,7 +20,7 @@ The code snippet below demonstrates how to change the font, fore color, border c
 
 #### __[C#] __
 
-{{region AppointmentFormatting}}
+{{source=..\SamplesCS\Scheduler\Appearance\FormattingAppointments.cs region=AppointmentFormatting}}
 	        
 	        Font font = new Font("Verdana", 10f, FontStyle.Bold);
 	            
@@ -54,7 +54,7 @@ The code snippet below demonstrates how to change the font, fore color, border c
 
 #### __[VB.NET] __
 
-{{region AppointmentFormatting}}
+{{source=..\SamplesVB\Scheduler\Appearance\FormattingAppointments.vb region=AppointmentFormatting}}
 	
 	    Private font As New Font("Verdana", 10.0F, FontStyle.Bold)
 	
@@ -87,7 +87,7 @@ It is possible to change the appointments’ shape setting the SchedulerElement.
 
 #### __[C#] __
 
-{{region AppointmentShape}}
+{{source=..\SamplesCS\Scheduler\Appearance\FormattingAppointments.cs region=AppointmentShape}}
 	            
 	             this.radScheduler1.SchedulerElement.AppointmentShape = new HeartShape();
 	
@@ -97,7 +97,7 @@ It is possible to change the appointments’ shape setting the SchedulerElement.
 
 #### __[VB.NET] __
 
-{{region AppointmentShape}}
+{{source=..\SamplesVB\Scheduler\Appearance\FormattingAppointments.vb region=AppointmentShape}}
 	        Me.RadScheduler1.SchedulerElement.AppointmentShape = New HeartShape()
 	        '#End Region
 	    End Sub

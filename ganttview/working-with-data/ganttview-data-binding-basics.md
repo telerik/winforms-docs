@@ -63,7 +63,7 @@ The following example demonstrates a sample data with all the code needed to bin
 
 #### __[C#] __
 
-{{region DataSchema}}
+{{source=..\SamplesCS\GanttView\WorkingWithData\DataBindingBasics.cs region=DataSchema}}
 	            DataTable tasks = new DataTable("Tasks");
 	            tasks.Columns.Add("Id", typeof(int));
 	            tasks.Columns.Add("ParentId", typeof(int));
@@ -86,7 +86,7 @@ The following example demonstrates a sample data with all the code needed to bin
 
 #### __[VB.NET] __
 
-{{region DataSchema}}
+{{source=..\SamplesVB\GanttView\WorkingWithData\DataBindingBasics.vb region=DataSchema}}
 	        Dim tasks As New DataTable("Tasks")
 	        tasks.Columns.Add("Id", GetType(Integer))
 	        tasks.Columns.Add("ParentId", GetType(Integer))
@@ -112,7 +112,7 @@ The following example demonstrates a sample data with all the code needed to bin
 
 #### __[C#] __
 
-{{region SampleData}}
+{{source=..\SamplesCS\GanttView\WorkingWithData\DataBindingBasics.cs region=SampleData}}
 	            tasks.Rows.Add(1, 0, "Summary task title", new DateTime(2010, 10, 10), new DateTime(2010, 10, 15), 30m);
 	            tasks.Rows.Add(2, 1, "First child task title", new DateTime(2010, 10, 10), new DateTime(2010, 10, 12), 10);
 	            tasks.Rows.Add(3, 1, "Second child task title", new DateTime(2010, 10, 12), new DateTime(2010, 10, 15), 20m);
@@ -126,7 +126,7 @@ The following example demonstrates a sample data with all the code needed to bin
 
 #### __[VB.NET] __
 
-{{region SampleData}}
+{{source=..\SamplesVB\GanttView\WorkingWithData\DataBindingBasics.vb region=SampleData}}
 	        tasks.Rows.Add(1, 0, "Summary task title", New DateTime(2010, 10, 10), New DateTime(2010, 10, 15), 30D)
 	        tasks.Rows.Add(2, 1, "First child task title", New DateTime(2010, 10, 10), New DateTime(2010, 10, 12), 10)
 	        tasks.Rows.Add(3, 1, "Second child task title", New DateTime(2010, 10, 12), New DateTime(2010, 10, 15), 20D)
@@ -143,7 +143,7 @@ The following example demonstrates a sample data with all the code needed to bin
 
 #### __[C#] __
 
-{{region SetupAndBinding}}
+{{source=..\SamplesCS\GanttView\WorkingWithData\DataBindingBasics.cs region=SetupAndBinding}}
 	            this.radGanttView1.GanttViewElement.TaskDataMember = "Tasks";
 	            this.radGanttView1.GanttViewElement.ChildMember = "Id";
 	            this.radGanttView1.GanttViewElement.ParentMember = "ParentId";
@@ -166,7 +166,7 @@ The following example demonstrates a sample data with all the code needed to bin
 
 #### __[VB.NET] __
 
-{{region SetupAndBinding}}
+{{source=..\SamplesVB\GanttView\WorkingWithData\DataBindingBasics.vb region=SetupAndBinding}}
 	        Me.RadGanttView1.GanttViewElement.TaskDataMember = "Tasks"
 	        Me.RadGanttView1.GanttViewElement.ChildMember = "Id"
 	        Me.RadGanttView1.GanttViewElement.ParentMember = "ParentId"

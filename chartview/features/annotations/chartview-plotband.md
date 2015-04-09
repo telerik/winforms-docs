@@ -25,7 +25,7 @@ Here is what __CartesianPlotBandAnnotation__ looks like:
 
 #### __[C#] __
 
-{{region CartesianPlotBand}}
+{{source=..\SamplesCS\ChartView\Annotations\PlotBand.cs region=CartesianPlotBand}}
 	            CartesianPlotBandAnnotation annotation1 = new CartesianPlotBandAnnotation();
 	            annotation1.Axis = this.radChartView1.Axes[0] as CartesianAxis;
 	            annotation1.From = 0.5;
@@ -49,7 +49,7 @@ Here is what __CartesianPlotBandAnnotation__ looks like:
 
 #### __[VB] __
 
-{{region CartesianPlotBand}}
+{{source=..\SamplesVB\ChartView\Annotations\PlotBand.vb region=CartesianPlotBand}}
 	        Dim annotation1 As New CartesianPlotBandAnnotation()
 	        annotation1.Axis = TryCast(Me.radChartView1.Axes(0), CartesianAxis)
 	        annotation1.From = 0.5
@@ -145,7 +145,7 @@ Here is what __PolarAxisPlotBandAnnotation__ looks like:
 
 #### __[C#] __
 
-{{region PolarPlotBand}}
+{{source=..\SamplesCS\ChartView\Annotations\PlotBand.cs region=PolarPlotBand}}
 	            PolarAxisPlotBandAnnotation annotation1 = new PolarAxisPlotBandAnnotation();
 	            annotation1.From = 6;
 	            annotation1.To = 8;
@@ -160,7 +160,7 @@ Here is what __PolarAxisPlotBandAnnotation__ looks like:
 
 #### __[VB] __
 
-{{region PolarPlotBand}}
+{{source=..\SamplesVB\ChartView\Annotations\PlotBand.vb region=PolarPlotBand}}
 	        Dim annotation1 As New PolarAxisPlotBandAnnotation()
 	        annotation1.From = 6
 	        annotation1.[To] = 8
@@ -224,7 +224,7 @@ A plotband starting from *180* degrees and ending in *270* degrees will look lik
 
 #### __[C#] __
 
-{{region RadialPlotBand1}}
+{{source=..\SamplesCS\ChartView\Annotations\PlotBand.cs region=RadialPlotBand1}}
 	            RadialAxisPlotBandAnnotation annotation1 = new RadialAxisPlotBandAnnotation();
 	            annotation1.From = 180;
 	            annotation1.To = 270;
@@ -235,7 +235,7 @@ A plotband starting from *180* degrees and ending in *270* degrees will look lik
 
 #### __[VB] __
 
-{{region RadialPlotBand1}}
+{{source=..\SamplesVB\ChartView\Annotations\PlotBand.vb region=RadialPlotBand1}}
 	        Dim annotation1 As New RadialAxisPlotBandAnnotation()
 	        annotation1.From = 180
 	        annotation1.[To] = 270
@@ -271,7 +271,7 @@ If you wonder how to annotate the bigger segment from the image above, then you 
 
 #### __[C#] __
 
-{{region RadialPlotBand2}}
+{{source=..\SamplesCS\ChartView\Annotations\PlotBand.cs region=RadialPlotBand2}}
 	            RadialAxisPlotBandAnnotation annotation1 = new RadialAxisPlotBandAnnotation();
 	            annotation1.From = 270;
 	            annotation1.To = 180;
@@ -282,7 +282,7 @@ If you wonder how to annotate the bigger segment from the image above, then you 
 
 #### __[VB] __
 
-{{region RadialPlotBand2}}
+{{source=..\SamplesVB\ChartView\Annotations\PlotBand.vb region=RadialPlotBand2}}
 	        Dim annotation1 As New RadialAxisPlotBandAnnotation()
 	        annotation1.From = 270
 	        annotation1.[To] = 180

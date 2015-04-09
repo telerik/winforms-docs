@@ -31,7 +31,7 @@ CategoricalRadial axis is added automatically when you add RadarPoint, RadarLine
 
 #### __[C#] __
 
-{{region radialCategoricalAxis}}
+{{source=..\SamplesCS\ChartView\Axes\RadialAxisForm.cs region=radialCategoricalAxis}}
 	            RadarAreaSeries areaSeries = new RadarAreaSeries();
 	            areaSeries.DataPoints.Add(new CategoricalDataPoint(4, "Bread"));
 	            areaSeries.DataPoints.Add(new CategoricalDataPoint(7, "Fruit"));
@@ -51,7 +51,7 @@ CategoricalRadial axis is added automatically when you add RadarPoint, RadarLine
 
 #### __[VB.NET] __
 
-{{region radialCategoricalAxis}}
+{{source=..\SamplesVB\ChartView\Axes\RadialAxisForm.vb region=radialCategoricalAxis}}
 	        Dim areaSeries As New RadarAreaSeries()
 	        areaSeries.DataPoints.Add(New CategoricalDataPoint(4, "Bread"))
 	        areaSeries.DataPoints.Add(New CategoricalDataPoint(7, "Fruit"))
@@ -90,7 +90,7 @@ NumericRadial axis is added automatically when you add PolarPoint, PolarLine or 
 
 #### __[C#] __
 
-{{region radialNumericalAxis}}
+{{source=..\SamplesCS\ChartView\Axes\RadialAxisForm.cs region=radialNumericalAxis}}
 	            PolarAreaSeries series = new PolarAreaSeries();
 	            PolarDataPoint pt = new PolarDataPoint();
 	            pt.Angle = 30;
@@ -122,7 +122,7 @@ NumericRadial axis is added automatically when you add PolarPoint, PolarLine or 
 
 #### __[VB.NET] __
 
-{{region radialNumericalAxis}}
+{{source=..\SamplesVB\ChartView\Axes\RadialAxisForm.vb region=radialNumericalAxis}}
 	        Dim series As New PolarAreaSeries()
 	        Dim pt As New PolarDataPoint()
 	        pt.Angle = 30

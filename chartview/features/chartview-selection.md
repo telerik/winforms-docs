@@ -24,7 +24,7 @@ In order to utilize this behavior users simply have to add it to the
 
 #### __[C#] __
 
-{{region controller}}
+{{source=..\SamplesCS\ChartView\Features\ChartSelection.cs region=controller}}
 	            radChartView1.Controllers.Add(new ChartSelectionController());
 	            radChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint;
 	            radChartView1.SelectedPointChanged += new ChartViewSelectedChangedEventHandler(radChartView1_SelectedPointChanged);
@@ -34,7 +34,7 @@ In order to utilize this behavior users simply have to add it to the
 
 #### __[VB.NET] __
 
-{{region controller}}
+{{source=..\SamplesVB\ChartView\Features\ChartSelection.vb region=controller}}
 	        RadChartView1.Controllers.Add(New ChartSelectionController())
 	        RadChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint
 	        AddHandler RadChartView1.SelectedPointChanged, AddressOf RadChartView1_SelectedPointChanged
@@ -57,7 +57,7 @@ The ChartSelectionController will be added automatically if the
 
 #### __[C#] __
 
-{{region selectionMode}}
+{{source=..\SamplesCS\ChartView\Features\ChartSelection.cs region=selectionMode}}
 	            radChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint;
 	            radChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints;
 	{{endregion}}
@@ -66,7 +66,7 @@ The ChartSelectionController will be added automatically if the
 
 #### __[VB.NET] __
 
-{{region selectionMode}}
+{{source=..\SamplesVB\ChartView\Features\ChartSelection.vb region=selectionMode}}
 	        radChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint
 	        radChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints
 	        '#End Region
@@ -81,7 +81,7 @@ Here is a sample using PieSeries and multiple selection. When a slice is selecte
 
 #### __[C#] __
 
-{{region example}}
+{{source=..\SamplesCS\ChartView\Features\ChartSelection.cs region=example}}
 	        public ChartSelection()
 	        {
 	            InitializeComponent();
@@ -136,7 +136,7 @@ Here is a sample using PieSeries and multiple selection. When a slice is selecte
 
 #### __[VB.NET] __
 
-{{region example}}
+{{source=..\SamplesVB\ChartView\Features\ChartSelection.vb region=example}}
 	    Public Sub New()
 	        InitializeComponent()
 	

@@ -29,7 +29,7 @@ To enable sorting you need to set the EnableSorting property of the desired temp
 
 #### __[C#] Enable sorting__
 
-{{region enableSorting}}
+{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=enableSorting}}
 	            this.radGridView1.MasterTemplate.EnableSorting = true;
 	{{endregion}}
 
@@ -37,7 +37,7 @@ To enable sorting you need to set the EnableSorting property of the desired temp
 
 #### __[VB.NET] Enable sorting__
 
-{{region enableSorting}}
+{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=enableSorting}}
 	        Me.RadGridView1.MasterTemplate.EnableSorting = True
 	{{endregion}}
 
@@ -47,7 +47,7 @@ Here is how to create and add new SortDescriptor
 
 #### __[C#] Using SortDescriptor__
 
-{{region usingSortDescriptor}}
+{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=usingSortDescriptor}}
 	            SortDescriptor descriptor = new SortDescriptor();
 	            descriptor.PropertyName = "ShipCountry";
 	            descriptor.Direction = ListSortDirection.Ascending;
@@ -58,7 +58,7 @@ Here is how to create and add new SortDescriptor
 
 #### __[Vb.NET] Using SortDescriptor__
 
-{{region usingSortDescriptor}}
+{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=usingSortDescriptor}}
 	        Dim descriptor As New SortDescriptor()
 	        descriptor.PropertyName = "ShipCountry"
 	        descriptor.Direction = ListSortDirection.Ascending
@@ -79,7 +79,7 @@ RadGridView supports sorting by one or more columns. Example of sorting by 2 col
 
 #### __[C#] Sorting by two columns__
 
-{{region sortingByTwoOrMoreColumns}}
+{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=sortingByTwoOrMoreColumns}}
 	            SortDescriptor descriptorShipName = new SortDescriptor();
 	            descriptorShipName.PropertyName = "ShipName";
 	            descriptorShipName.Direction = ListSortDirection.Ascending;
@@ -94,7 +94,7 @@ RadGridView supports sorting by one or more columns. Example of sorting by 2 col
 
 #### __[VB.NET] Sorting by two columns__
 
-{{region sortingByTwoOrMoreColumns}}
+{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=sortingByTwoOrMoreColumns}}
 	        Dim descriptorShipName As New SortDescriptor()
 	        descriptorShipName.PropertyName = "ShipName"
 	        descriptorShipName.Direction = ListSortDirection.Ascending

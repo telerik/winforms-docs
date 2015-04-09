@@ -35,7 +35,7 @@ The text of RadWaitingBar is not displayed by default. To show the text, set the
 
 #### __[C#]__
 
-{{region text}}
+{{source=..\SamplesCS\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.cs region=text}}
 	            this.radWaitingBar1.ShowText = true;
 	            this.radWaitingBar1.Text = "Waiting...";
 	            this.radWaitingBar1.WaitingBarElement.TextElement.AngleTransform = 180;
@@ -46,7 +46,7 @@ The text of RadWaitingBar is not displayed by default. To show the text, set the
 
 #### __[VB.NET]__
 
-{{region text}}
+{{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=text}}
 	        Me.RadWaitingBar1.ShowText = True
 	        Me.RadWaitingBar1.Text = "Waiting..."
 	        Me.RadWaitingBar1.WaitingBarElement.TextElement.AngleTransform = 180
@@ -119,7 +119,7 @@ To set the RadWaitingBar in dash style set the __WaitingStyle__
 
 #### __[C#]__
 
-{{region dash}}
+{{source=..\SamplesCS\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.cs region=dash}}
 	            this.radWaitingBar1.WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.Dash;
 	            WaitingBarSeparatorElement dash = this.radWaitingBar1.WaitingBarElement.SeparatorElement;
 	            dash.NumberOfColors = 2;
@@ -135,7 +135,7 @@ To set the RadWaitingBar in dash style set the __WaitingStyle__
 
 #### __[VB.NET]__
 
-{{region dash}}
+{{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=dash}}
 	        Me.RadWaitingBar1.WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.Dash
 	        Dim dash As WaitingBarSeparatorElement = Me.RadWaitingBar1.WaitingBarElement.SeparatorElement
 	        dash.NumberOfColors = 2
@@ -200,7 +200,7 @@ The waiting indicators also support dash style. To customize the appearance of
 
 #### __[C#]__
 
-{{region waitingIndicators}}
+{{source=..\SamplesCS\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.cs region=waitingIndicators}}
 	            this.radWaitingBar1.WaitingBarElement.Indicators[0].BackColor = Color.LightGreen;
 	            this.radWaitingBar1.WaitingBarElement.Indicators[0].NumberOfColors = 1;
 	            this.radWaitingBar1.WaitingBarElement.Indicators[1].BackColor = Color.LightGreen;
@@ -232,7 +232,7 @@ The waiting indicators also support dash style. To customize the appearance of
 
 #### __[VB.NET]__
 
-{{region waitingIndicators}}
+{{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=waitingIndicators}}
 	        Me.RadWaitingBar1.WaitingBarElement.Indicators(0).BackColor = Color.LightGreen
 	        Me.RadWaitingBar1.WaitingBarElement.Indicators(0).NumberOfColors = 1
 	        Me.RadWaitingBar1.WaitingBarElement.Indicators(1).BackColor = Color.LightGreen
@@ -285,7 +285,7 @@ Different shapes can be applied to both the WaitingBarElement and
 
 #### __[C#]__
 
-{{region shape}}
+{{source=..\SamplesCS\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.cs region=shape}}
 	            Telerik.WinControls.EllipseShape shape = new Telerik.WinControls.EllipseShape();
 	            this.radWaitingBar1.WaitingBarElement.Shape = shape;
 	            this.radWaitingBar1.WaitingBarElement.ContentElement.Shape = shape;
@@ -297,7 +297,7 @@ Different shapes can be applied to both the WaitingBarElement and
 
 #### __[VB.NET]__
 
-{{region shape}}
+{{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=shape}}
 	        Dim shape As New Telerik.WinControls.EllipseShape()
 	        Me.RadWaitingBar1.WaitingBarElement.Shape = shape
 	        Me.RadWaitingBar1.WaitingBarElement.ContentElement.Shape = shape

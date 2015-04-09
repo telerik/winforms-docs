@@ -32,7 +32,7 @@ __RadFlowDocumentEditor__ is always associated to a single document which it tak
 
 #### __C#__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_0}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_0}}
 	            RadFlowDocument document = new RadFlowDocument();
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
 	{{endregion}}
@@ -41,7 +41,7 @@ __RadFlowDocumentEditor__ is always associated to a single document which it tak
 
 #### __VB NET__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_0}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_0}}
 	            Dim document As New RadFlowDocument()
 	            Dim editor As New RadFlowDocumentEditor(document)
 	            '#End Region
@@ -173,7 +173,7 @@ The editor maintains an internal position inside the document. This position poi
 
 #### __C#__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_1}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_1}}
 	            public void MoveToInlineStart(InlineBase inline);
 	            public void MoveToInlineEnd(InlineBase inline);
 	            public void MoveToParagraphStart(Paragraph paragraph);
@@ -184,7 +184,7 @@ The editor maintains an internal position inside the document. This position poi
 
 #### __VB NET__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_1}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_1}}
 	        Public Sub MoveToInlineStart(inline As InlineBase)
 	        End Sub
 	        Public Sub MoveToInlineEnd(inline As InlineBase)
@@ -308,7 +308,7 @@ Here is an example of how to position the editor after the second inline in the 
 
 #### __C#__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_2}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_2}}
 	            Paragraph firstParagraph = document.EnumerateChildrenOfType<Paragraph>().First();
 	            editor.MoveToInlineEnd(firstParagraph.Inlines[1]);
 	{{endregion}}
@@ -317,7 +317,7 @@ Here is an example of how to position the editor after the second inline in the 
 
 #### __VB NET__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_2}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_2}}
 	            Dim firstParagraph As Paragraph = document.EnumerateChildrenOfType(Of Paragraph)().First()
 	            editor.MoveToInlineEnd(firstParagraph.Inlines(1))
 	            '#End Region
@@ -430,7 +430,7 @@ Note that it is possible to create a __RadFlowDocumentEditor__ for an empty docu
 
 #### __C#__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_3}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_3}}
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
 	            editor.InsertText("Hello word!");
 	            return editor.Document;
@@ -440,7 +440,7 @@ Note that it is possible to create a __RadFlowDocumentEditor__ for an empty docu
 
 #### __VB NET__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_3}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_3}}
 	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	            editor.InsertText("Hello word!")
 	            Return editor.Document
@@ -567,7 +567,7 @@ The next snippet insert a run containing a new line:
 
 #### __C#__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_4}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_4}}
 	            editor.InsertText("First" + Environment.NewLine + "Second");
 	{{endregion}}
 
@@ -575,7 +575,7 @@ The next snippet insert a run containing a new line:
 
 #### __VB NET__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_4}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_4}}
 	            editor.InsertText("First" + Environment.NewLine + "Second")
 	            '#End Region
 	        End Sub
@@ -681,7 +681,7 @@ You can start a new [Paragraph]({%slug wordsprocessing-model-paragraph%}) with t
 
 #### __C#__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_5}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_5}}
 	            editor.InsertText("First paragraph");
 	            editor.InsertParagraph();
 	            editor.InsertText("Second paragraph");
@@ -691,7 +691,7 @@ You can start a new [Paragraph]({%slug wordsprocessing-model-paragraph%}) with t
 
 #### __ VB NET__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_5}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_5}}
 	            editor.InsertText("First paragraph")
 	            editor.InsertParagraph()
 	            editor.InsertText("Second paragraph")
@@ -793,7 +793,7 @@ Inserting [Section]({%slug wordsprocessing-model-section%}) elements can be achi
 
 #### __C#__
 
-{{region section}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=section}}
 	            editor.InsertSection();
 	{{endregion}}
 
@@ -801,7 +801,7 @@ Inserting [Section]({%slug wordsprocessing-model-section%}) elements can be achi
 
 #### __ VB NET__
 
-{{region section}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=section}}
 	        editor.InsertSection()
 	        '#End Region
 	    End Sub
@@ -831,7 +831,7 @@ It automatically applies "Hyperlink" built-in style to the inserted hyperlink if
 
 #### __C#__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_6}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_6}}
 	            editor.InsertHyperlink("telerik", "http://www.telerik.com", false, "Telerik site");
 	{{endregion}}
 
@@ -839,7 +839,7 @@ It automatically applies "Hyperlink" built-in style to the inserted hyperlink if
 
 #### __ VB NET__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_6}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_6}}
 	            editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
 	            '#End Region
 	        End Sub
@@ -928,7 +928,7 @@ Here is how to add page numbering in the header of document:
 
 #### __C#__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_7}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_7}}
 	            // Create header and move the editor
 	            Header header = document.Sections[0].Headers.Add();
 	            editor.MoveToParagraphStart(header.Blocks.AddParagraph());
@@ -943,7 +943,7 @@ Here is how to add page numbering in the header of document:
 
 #### __VB NET__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_7}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_7}}
 	            ' Create header and move the editor
 	            Dim header As Header = document.Sections(0).Headers.Add()
 	            editor.MoveToParagraphStart(header.Blocks.AddParagraph())
@@ -1035,7 +1035,7 @@ __RadFlowDocumentEditor__ provides several methods for inserting [ImageInline]({
 
 #### __C#__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_8}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_8}}
 	        public ImageInline InsertImageInline(ImageSource source, Size size);
 	        public ImageInline InsertImageInline(Stream stream, string extension, Size size);
 	        public FloatingImage InsertFloatingImage(ImageSource source, Size size);
@@ -1046,7 +1046,7 @@ __RadFlowDocumentEditor__ provides several methods for inserting [ImageInline]({
 
 #### __VB NET__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_8}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_8}}
 	        Public Function InsertImageInline(source As ImageSource, size As Size) As ImageInline
 	        End Function
 	        Public Function InsertImageInline(stream As Stream, extension As String, size As Size) As ImageInline
@@ -1109,7 +1109,7 @@ Here is how an image can be inserted using a stream:
 
 #### __C#__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_9}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_9}}
 	            editor.InsertText("Image:");
 	            using (Stream stream = this.GetResourceStream("Telerik_logo.png"))
 	            {
@@ -1121,7 +1121,7 @@ Here is how an image can be inserted using a stream:
 
 #### __VB NET__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_9}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_9}}
 	            editor.InsertText("Image:")
 	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
 	                editor.InsertImageInline(stream, "png", New Size(118, 28))
@@ -1190,7 +1190,7 @@ Here is how to insert a table with the "TableGrid" built-in style:
 
 #### __C#__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_10}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_10}}
 	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId);
 	            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId;
 	
@@ -1203,7 +1203,7 @@ Here is how to insert a table with the "TableGrid" built-in style:
 
 #### __VB NET__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_10}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_10}}
 	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
 	            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId
 	
@@ -1259,7 +1259,7 @@ Formatting options are most useful when inserting multiple elements that should 
 
 #### __C#__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_11}}
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_11}}
 	            // Set code block formatting
 	            var codeFont = new ThemableFontFamily(new FontFamily("Consolas"));
 	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont;
@@ -1275,7 +1275,7 @@ Formatting options are most useful when inserting multiple elements that should 
 
 #### __VB NET__
 
-{{region radwordsprocessing-editing-radflowdocumenteditor_11}}
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_11}}
 	            ' Set code block formatting
 	            Dim codeFont = New ThemableFontFamily(New FontFamily("Consolas"))
 	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont

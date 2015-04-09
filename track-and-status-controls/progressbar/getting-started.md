@@ -36,7 +36,7 @@ Timer control.
 
 #### __[C#] Handling the Timer Tick event__
 
-{{region tick}}
+{{source=..\SamplesCS\TrackAndStatus\ProgressBar\ProgressGettingStarted.cs region=tick}}
 	        int ticks = 0;
 	        private void timer1_Tick(object sender, EventArgs e)
 	        {
@@ -54,7 +54,7 @@ Timer control.
 
 #### __[VB.NET] Handling the Timer Tick event__
 
-{{region tick}}
+{{source=..\SamplesVB\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=tick}}
 	    Private ticks As Integer = 0
 	    Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs)
 	        ticks += 1
@@ -87,7 +87,7 @@ Timer control.
 
 #### __[C#]__
 
-{{region click}}
+{{source=..\SamplesCS\TrackAndStatus\ProgressBar\ProgressGettingStarted.cs region=click}}
 	        void radButton1_Click(object sender, EventArgs e)
 	        {
 	            timer1.Enabled = true;
@@ -98,7 +98,7 @@ Timer control.
 
 #### __[VB.NET]__
 
-{{region click}}
+{{source=..\SamplesVB\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=click}}
 	    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        Timer1.Enabled = True
 	    End Sub

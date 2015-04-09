@@ -26,7 +26,7 @@ RadChartView provides a tooltip interactivity  with the
 
 #### __[C#] __
 
-{{region controller}}
+{{source=..\SamplesCS\ChartView\Features\ChartTooltip.cs region=controller}}
 	            radChartView1.Controllers.Add(new ChartTooltipController());
 	{{endregion}}
 
@@ -34,7 +34,7 @@ RadChartView provides a tooltip interactivity  with the
 
 #### __[VB.NET] __
 
-{{region controller}}
+{{source=..\SamplesVB\ChartView\Features\ChartTooltip.vb region=controller}}
 	        radChartView1.Controllers.Add(New ChartTooltipController())
 	{{endregion}}
 
@@ -46,7 +46,7 @@ The ChartTooltipController will be added automatically if
 
 #### __[C#] __
 
-{{region showToolTip}}
+{{source=..\SamplesCS\ChartView\Features\ChartTooltip.cs region=showToolTip}}
 	            radChartView1.ShowToolTip = true;
 	{{endregion}}
 
@@ -54,7 +54,7 @@ The ChartTooltipController will be added automatically if
 
 #### __[VB.NET] __
 
-{{region showToolTip}}
+{{source=..\SamplesVB\ChartView\Features\ChartTooltip.vb region=showToolTip}}
 	        radChartView1.ShowToolTip = True
 	{{endregion}}
 
@@ -65,7 +65,7 @@ A sample is shown below:
 
 #### __[C#] __
 
-{{region example}}
+{{source=..\SamplesCS\ChartView\Features\ChartTooltip.cs region=example}}
 	            radChartView1.AreaType = ChartAreaType.Cartesian;
 	            BarSeries barSeries1 = new BarSeries();
 	            barSeries1.DataPoints.Add(new CategoricalDataPoint(10, "1"));
@@ -100,7 +100,7 @@ A sample is shown below:
 
 #### __[VB.NET] __
 
-{{region example}}
+{{source=..\SamplesVB\ChartView\Features\ChartTooltip.vb region=example}}
 	        radChartView1.AreaType = ChartAreaType.Cartesian
 	        Dim barSeries1 As New BarSeries
 	        barSeries1.DataPoints.Add(New CategoricalDataPoint(10, "1"))

@@ -18,7 +18,7 @@ You can change __RadGridView__ visual appearance and behavior by using a view 
 
 #### __[C#] Assign ViewDefinition__
 
-{{region ViewDefinition}}
+{{source=..\SamplesCS\GridView\ViewDefinitions\Overview.cs region=ViewDefinition}}
 	            this.radGridView1.ViewDefinition = myDefinition;
 	{{endregion}}
 
@@ -26,7 +26,7 @@ You can change __RadGridView__ visual appearance and behavior by using a view 
 
 #### __[VB.NET] Assign ViewDefinition__
 
-{{region ViewDefinition}}
+{{source=..\SamplesVB\GridView\ViewDefinitions\Overview.vb region=ViewDefinition}}
 	        Me.RadGridView1.ViewDefinition = myDefinition
 	{{endregion}}
 

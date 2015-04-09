@@ -26,7 +26,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[C#] Localizing RadCommandBar Strings__
 
-{{region provider}}
+{{source=..\SamplesCS\CommandBar\MyEnglishCommandBarLocalizationProvider.cs region=provider}}
 	    public class MyEnglishCommandBarLocalizationProvider : CommandBarLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -54,7 +54,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[VB.NET] Localizing RadCommandBar Strings__
 
-{{region provider}}
+{{source=..\SamplesVB\CommandBar\MyEnglishCommandBarLocalizationProvider.vb region=provider}}
 	Public Class MyEnglishCommandBarLocalizationProvider
 	    Inherits CommandBarLocalizationProvider
 	    Public Overrides Function GetLocalizedString(ByVal id As String) As String
@@ -85,7 +85,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[C#] Assigning the Current Localization Provider__
 
-{{region usingProvider}}
+{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=usingProvider}}
 	            CommandBarLocalizationProvider.CurrentProvider = new MyEnglishCommandBarLocalizationProvider();
 	{{endregion}}
 
@@ -93,7 +93,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[VB.NET] Assigning the Current Localization Provider__
 
-{{region usingProvider}}
+{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=usingProvider}}
 	        CommandBarLocalizationProvider.CurrentProvider = New MyEnglishCommandBarLocalizationProvider()
 	{{endregion}}
 

@@ -26,7 +26,7 @@ In the example below a __PictureBox__control is created and assigned an image fr
 
 #### __[C#] Assigning a TemplateItem__
 
-{{region templateItem}}
+{{source=..\SamplesCS\Calendar\Calendar1.cs region=templateItem}}
 	            PictureBox pictureBox = new PictureBox();
 	            pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
 	            pictureBox.Image = imageList1.Images[0];
@@ -38,7 +38,7 @@ In the example below a __PictureBox__control is created and assigned an image fr
 
 #### __[VB.NET] Assigning a TemplateItem__
 
-{{region templateItem}}
+{{source=..\SamplesVB\Calendar\Calendar1.vb region=templateItem}}
 	        Dim pictureBox As New PictureBox()
 	        pictureBox.SizeMode = PictureBoxSizeMode.StretchImage
 	        pictureBox.Image = ImageList1.Images(0)

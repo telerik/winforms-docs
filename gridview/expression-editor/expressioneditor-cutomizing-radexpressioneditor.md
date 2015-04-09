@@ -24,7 +24,7 @@ Although Telerik provides a great number of predefined functions, there could be
 
 #### __[C#]__
 
-{{region customFunction}}
+{{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=customFunction}}
 	    public class CustomExpressionContext : Telerik.Data.Expressions.ExpressionContext
 	    {
 	        /// <summary>
@@ -42,7 +42,7 @@ Although Telerik provides a great number of predefined functions, there could be
 
 #### __[VB.NET]__
 
-{{region customFunction}}
+{{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=customFunction}}
 	Public Class CustomExpressionContext
 	    Inherits Telerik.Data.Expressions.ExpressionContext
 	    ''' <summary>
@@ -63,7 +63,7 @@ Once implemented, the new custom ExpressionContext class,
 
 #### __[C#]__
 
-{{region settingCustom}}
+{{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=settingCustom}}
 	            Telerik.Data.Expressions.ExpressionContext.Context = new CustomExpressionContext();
 	{{endregion}}
 
@@ -71,7 +71,7 @@ Once implemented, the new custom ExpressionContext class,
 
 #### __[VB.NET]__
 
-{{region settingCustom}}
+{{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=settingCustom}}
 	        Telerik.Data.Expressions.ExpressionContext.Context = New CustomExpressionContext()
 	{{endregion}}
 
@@ -83,7 +83,7 @@ Than the new expression method can be used:
 
 #### __[C#]__
 
-{{region settingExpression}}
+{{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=settingExpression}}
 	            this.radGridView1.Columns["expression"].Expression = "PI()";
 	{{endregion}}
 
@@ -91,7 +91,7 @@ Than the new expression method can be used:
 
 #### __[VB.NET]__
 
-{{region settingExpression}}
+{{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=settingExpression}}
 	        Me.RadGridView1.Columns("expression").Expression = "PI()"
 	{{endregion}}
 
@@ -108,7 +108,7 @@ RadExpressionEditor supports loading functions, operators and
 
 #### __[XML]__
 
-{{region customExpressions}}
+{{source=..\SamplesCS\GridView\ExpressionEditor\ExpressionItemsListData.xml region=customExpressions}}
 	<?xml version="1.0" encoding="utf-8" ?>
 	<ExpressionItemsList>
 	  <!-- Custom functions -->
@@ -134,7 +134,7 @@ To load prepared xml source file LoadFromXML method should be used as shown bell
 
 #### __[C#]__
 
-{{region loadingXML}}
+{{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=loadingXML}}
 	            string path = "Telerik.Examples.WinControls.GridView.Expressions.ExpressionItemsListData.xml";
 	            Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path);
 	            RadExpressionEditorForm.ExpressionItemsList.LoadFromXML(stream);
@@ -144,7 +144,7 @@ To load prepared xml source file LoadFromXML method should be used as shown bell
 
 #### __[VB.NET]__
 
-{{region loadingXML}}
+{{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=loadingXML}}
 	        Dim path As String = "Telerik.Examples.WinControls.GridView.Expressions.ExpressionItemsListData.xml"
 	        Dim stream_ As Stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path)
 	        RadExpressionEditorForm.ExpressionItemsList.LoadFromXML(stream_)

@@ -21,7 +21,7 @@ RadCalendar provides built in internationalization support to build world-ready 
 
 #### __[C#]__
 
-{{region culture}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=culture}}
 	            this.radDateTimePicker1.Culture = new System.Globalization.CultureInfo("de-DE");
 	{{endregion}}
 
@@ -29,7 +29,7 @@ RadCalendar provides built in internationalization support to build world-ready 
 
 #### __[VB.NET]__
 
-{{region culture}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=culture}}
 	        Me.RadDateTimePicker1.Culture = New System.Globalization.CultureInfo("de-DE")
 	        '#End Region
 	
@@ -132,7 +132,7 @@ RadCalendar provides built in internationalization support to build world-ready 
 
 #### __[C#]__
 
-{{region rightNo}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=rightNo}}
 	            this.radDateTimePicker1.RightToLeft = RightToLeft.No;
 	{{endregion}}
 
@@ -140,7 +140,7 @@ RadCalendar provides built in internationalization support to build world-ready 
 
 #### __[VB.NET]__
 
-{{region rightNo}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=rightNo}}
 	        Me.RadDateTimePicker1.RightToLeft = RightToLeft.No
 	        '#End Region
 	
@@ -236,7 +236,7 @@ RadCalendar provides built in internationalization support to build world-ready 
 
 #### __[C#]__
 
-{{region rightYes}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=rightYes}}
 	            this.radDateTimePicker1.RightToLeft = RightToLeft.Yes;
 	{{endregion}}
 
@@ -244,7 +244,7 @@ RadCalendar provides built in internationalization support to build world-ready 
 
 #### __[VB.NET]__
 
-{{region rightYes}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=rightYes}}
 	        Me.RadDateTimePicker1.RightToLeft = RightToLeft.Yes
 	        '#End Region
 	
@@ -335,7 +335,7 @@ RadCalendar provides built in internationalization support to build world-ready 
 
 #### __[C#]__
 
-{{region customFormat}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=customFormat}}
 	            this.radDateTimePicker1.Format = DateTimePickerFormat.Custom;
 	            this.radDateTimePicker1.CustomFormat = "MMM - dd - yyyy";
 	{{endregion}}
@@ -344,7 +344,7 @@ RadCalendar provides built in internationalization support to build world-ready 
 
 #### __[VB.NET]__
 
-{{region customFormat}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=customFormat}}
 	        Me.RadDateTimePicker1.Format = DateTimePickerFormat.Custom
 	        Me.RadDateTimePicker1.CustomFormat = "MMM - dd - yyyy"
 	        '#End Region

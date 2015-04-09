@@ -48,7 +48,7 @@ The __ValueChanged__ event fires when the value is modified. You can perform cha
 
 #### __[C#]__
 
-{{region ValueChanged}}
+{{source=..\SamplesCS\Gauges\RadialGauge\RadialGaugePropertiesAndEvents.cs region=ValueChanged}}
 	        
 	        Timer timer1 = new Timer();
 	        float step = 0f; 
@@ -98,7 +98,7 @@ The __ValueChanged__ event fires when the value is modified. You can perform cha
 
 #### __[VB.NET]__
 
-{{region ValueChanged}}
+{{source=..\SamplesVB\Gauges\RadialGauge\RadialGaugePropertiesAndEvents.vb region=ValueChanged}}
 	
 	    Private timer1 As New Timer()
 	    Private [step] As Single = 0.0F

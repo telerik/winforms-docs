@@ -51,7 +51,7 @@ The event arguments of the NodesNeeded event contain
 
 #### __[C#]__
 
-{{region nodesNodes}}
+{{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemand.cs region=nodesNodes}}
 	        void radTreeView1_NodesNeeded(object sender, NodesNeededEventArgs e)
 	        {
 	            if (e.Parent == null)
@@ -88,7 +88,7 @@ The event arguments of the NodesNeeded event contain
 
 #### __[VB.NET]__
 
-{{region nodesNodes}}
+{{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemand.vb region=nodesNodes}}
 	    Private Sub radTreeView1_NodesNeeded(ByVal sender As Object, ByVal e As NodesNeededEventArgs)
 	        If e.Parent Is Nothing Then
 	            LoadRootNodes(e.Nodes)

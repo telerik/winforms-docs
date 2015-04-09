@@ -21,7 +21,7 @@ WrapLayoutPanel is a panel that handles the layout of elements in a vertical or 
 
 #### __[C#] Using WrapLayoutPanel__
 
-{{region myWrapLayoutPanelElement}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyWrapLayoutPanelElement.cs region=myWrapLayoutPanelElement}}
 	    public class MyWrapLayoutPanelElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -54,7 +54,7 @@ WrapLayoutPanel is a panel that handles the layout of elements in a vertical or 
 
 #### __[VB.NET] Using WrapLayoutPanel__
 
-{{region myWrapLayoutPanelElement}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyWrapLayoutPanelElement.vb region=myWrapLayoutPanelElement}}
 	Public Class MyWrapLayoutPanelElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

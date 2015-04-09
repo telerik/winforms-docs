@@ -34,7 +34,7 @@ The Dock of each element is set through the static method of DockLayoutPanel __S
 
 #### __[C#] __
 
-{{region snippet1}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.cs region=snippet1}}
 	            RadButtonElement button = new RadButtonElement("button1");
 	            DockLayoutPanel.SetDock(button, Telerik.WinControls.Layouts.Dock.Left);
 	{{endregion}}
@@ -43,7 +43,7 @@ The Dock of each element is set through the static method of DockLayoutPanel __S
 
 #### __[VB.NET] __
 
-{{region snippet1}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.vb region=snippet1}}
 	        Dim button As New RadButtonElement("button1")
 	        DockLayoutPanel.SetDock(button, Telerik.WinControls.Layouts.Dock.Left)
 	        '#End Region
@@ -106,7 +106,7 @@ Essential for the final layout of the DockLayoutPanel is the sequence in which e
 
 #### __[C#] __
 
-{{region snippet2}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.cs region=snippet2}}
 	            RadButtonElement button1 = new RadButtonElement("button1");
 	            DockLayoutPanel.SetDock(button1, Telerik.WinControls.Layouts.Dock.Left);
 	
@@ -124,7 +124,7 @@ Essential for the final layout of the DockLayoutPanel is the sequence in which e
 
 #### __[VB.NET] __
 
-{{region snippet2}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.vb region=snippet2}}
 	        Dim button1 As New RadButtonElement("button1")
 	        DockLayoutPanel.SetDock(button1, Telerik.WinControls.Layouts.Dock.Left)
 	
@@ -181,7 +181,7 @@ Adding the above in the following order results in the layout below:
 
 #### __[C#] __
 
-{{region snippet3}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.cs region=snippet3}}
 	            DockLayoutPanel dockPanel = new DockLayoutPanel();
 	            dockPanel.Children.Add(button1);
 	            dockPanel.Children.Add(button2);
@@ -193,7 +193,7 @@ Adding the above in the following order results in the layout below:
 
 #### __[VB.NET] __
 
-{{region snippet3}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.vb region=snippet3}}
 	        Dim dockPanel As New DockLayoutPanel()
 	        dockPanel.Children.Add(button1)
 	        dockPanel.Children.Add(button2)
@@ -238,7 +238,7 @@ However, if the same elements are added in a reversed order, the outcome will be
 
 #### __[C#] __
 
-{{region snippet4}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.cs region=snippet4}}
 	            DockLayoutPanel dockPanel = new DockLayoutPanel();
 	            dockPanel.Children.Add(button4);
 	            dockPanel.Children.Add(button3);
@@ -250,7 +250,7 @@ However, if the same elements are added in a reversed order, the outcome will be
 
 #### __[VB.NET] __
 
-{{region snippet4}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.vb region=snippet4}}
 	        Dim dockPanel As New DockLayoutPanel()
 	        dockPanel.Children.Add(button4)
 	        dockPanel.Children.Add(button3)
@@ -290,7 +290,7 @@ Here is an example of creating a control holding custom DockPanelElement:
 
 #### __[C#] __
 
-{{region dockLayoutClass}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.cs region=dockLayoutClass}}
 	    class MyDockLayoutPanelControl : RadControl
 	    {
 	        protected override void CreateChildItems(RadElement parent)
@@ -305,7 +305,7 @@ Here is an example of creating a control holding custom DockPanelElement:
 
 #### __[VB.NET] __
 
-{{region dockLayoutClass}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.vb region=dockLayoutClass}}
 	Public Class MyDockLayoutPanelControl
 	    Inherits RadControl
 	
@@ -322,7 +322,7 @@ And here is the element itself:
 
 #### __[C#] __
 
-{{region myDockLayoutPanelElement}}
+{{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.cs region=myDockLayoutPanelElement}}
 	    public class MyDockLayoutPanelElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -351,7 +351,7 @@ And here is the element itself:
 
 #### __[VB.NET] __
 
-{{region myDockLayoutPanelElement}}
+{{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.vb region=myDockLayoutPanelElement}}
 	Public Class MyDockLayoutPanelElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

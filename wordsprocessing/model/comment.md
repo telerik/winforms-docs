@@ -28,7 +28,7 @@ __Example 1__ shows how to create a __Comment__ and add its CommentRangeStart an
 
 #### __[C#] Example 1: Add Comment to Paragraph__
 
-{{region radwordsprocessing-model-comment_0}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingComment.cs region=radwordsprocessing-model-comment_0}}
 	            Comment comment = document.Comments.AddComment();
 	            paragraph.Inlines.Add(comment.CommentRangeStart);
 	            paragraph.Inlines.AddRun("text");
@@ -39,7 +39,7 @@ __Example 1__ shows how to create a __Comment__ and add its CommentRangeStart an
 
 #### __[VB.NET] Example 1: Add Comment to Paragraph__
 
-{{region radwordsprocessing-model-comment_0}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingComment.vb region=radwordsprocessing-model-comment_0}}
 	            Dim comment As Comment = document.Comments.AddComment()
 	            paragraph.Inlines.Add(comment.CommentRangeStart)
 	            paragraph.Inlines.AddRun("text")
@@ -81,7 +81,7 @@ __Example 2__ showsh ow you can insert a previously created __Comment__ object i
 
 #### __[C#] Example 2: Insert previously created Comment__
 
-{{region radwordsprocessing-model-comment_1}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingComment.cs region=radwordsprocessing-model-comment_1}}
 	            editor.InsertComment(comment);
 	{{endregion}}
 
@@ -89,7 +89,7 @@ __Example 2__ showsh ow you can insert a previously created __Comment__ object i
 
 #### __[VB.NET] Example 2: Insert previously created Comment__
 
-{{region radwordsprocessing-model-comment_1}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingComment.vb region=radwordsprocessing-model-comment_1}}
 	            editor.InsertComment(comment)
 	            '#End Region
 	
@@ -119,7 +119,7 @@ __Example 3__ demonstrates how you can use another overload of __RadFlowDocument
 
 #### __[C#] Example 3: Insert Comment around Run__
 
-{{region radwordsprocessing-model-comment_2}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingComment.cs region=radwordsprocessing-model-comment_2}}
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
 	
 	            Run run = editor.InsertText("text");
@@ -130,7 +130,7 @@ __Example 3__ demonstrates how you can use another overload of __RadFlowDocument
 
 #### __[VB.NET] Example 3: Insert Comment around Run__
 
-{{region radwordsprocessing-model-comment_2}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingComment.vb region=radwordsprocessing-model-comment_2}}
 	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	
 	            Dim run As Run = editor.InsertText("text")
@@ -174,7 +174,7 @@ __Example 4__ shows how you can add a Table to a Comment.
 
 #### __[C#] Example 4: Add Blocks to a Comment__
 
-{{region radwordsprocessing-model-comment_3}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingComment.cs region=radwordsprocessing-model-comment_3}}
 	            Paragraph paragraph = comment.Blocks.AddParagraph();
 	            Table table = comment.Blocks.AddTable();
 	{{endregion}}
@@ -183,7 +183,7 @@ __Example 4__ shows how you can add a Table to a Comment.
 
 #### __[VB.NET] Example 4: Add Blocks to a Comment__
 
-{{region radwordsprocessing-model-comment_3}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingComment.vb region=radwordsprocessing-model-comment_3}}
 	            Dim paragraph As Paragraph = comment.Blocks.AddParagraph()
 	            Dim table As Table = comment.Blocks.AddTable()
 	            '#End Region

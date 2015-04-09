@@ -25,7 +25,7 @@ The following code snippet opens a ZIP archive in update mode using __ZipArchive
 
 #### __[C#] __
 
-{{region stream}}
+{{source=..\SamplesCS\ZipLibrary\UpdateZipArchive.cs region=stream}}
 	            
 	            using (Stream stream = File.Open("test.zip", FileMode.Open))
 	            {
@@ -41,7 +41,7 @@ The following code snippet opens a ZIP archive in update mode using __ZipArchive
 
 #### __[VB.NET] __
 
-{{region stream}}
+{{source=..\SamplesVB\ZipLibrary\UpdateZipArchive.vb region=stream}}
 	        Using stream As Stream = File.Open("test.zip", FileMode.Open)
 	            archive = New ZipArchive(stream, ZipArchiveMode.Update, False, Nothing)
 	            Using archive
@@ -103,7 +103,7 @@ In order to add a new entry into the ZIP archive you should perform the followin
 
 #### __[C#] __
 
-{{region flush}}
+{{source=..\SamplesCS\ZipLibrary\UpdateZipArchive.cs region=flush}}
 	                
 	            using (ZipArchiveEntry entry = archive.CreateEntry("text.txt"))
 	            {
@@ -118,7 +118,7 @@ In order to add a new entry into the ZIP archive you should perform the followin
 
 #### __[VB.NET] __
 
-{{region flush}}
+{{source=..\SamplesVB\ZipLibrary\UpdateZipArchive.vb region=flush}}
 	        Using entry As ZipArchiveEntry = archive.CreateEntry("text.txt")
 	            Dim writer As New StreamWriter(entry.Open())
 	            writer.WriteLine("Hello world!")
@@ -162,7 +162,7 @@ The following code snippet obtains an entry and deletes it from the ZIP archive 
 
 #### __[C#] __
 
-{{region delete}}
+{{source=..\SamplesCS\ZipLibrary\UpdateZipArchive.cs region=delete}}
 	            
 	            ZipArchiveEntry entry2 = archive.GetEntry("text.txt");
 	            if (entry2 != null)
@@ -176,7 +176,7 @@ The following code snippet obtains an entry and deletes it from the ZIP archive 
 
 #### __[VB.NET] __
 
-{{region delete}}
+{{source=..\SamplesVB\ZipLibrary\UpdateZipArchive.vb region=delete}}
 	        Dim entry2 As ZipArchiveEntry = archive.GetEntry("text.txt")
 	        If entry2 IsNot Nothing Then
 	            entry2.Delete()
@@ -222,7 +222,7 @@ In order to update an existing entry in the ZIP archive you should perform the f
 
 #### __[C#] __
 
-{{region entry}}
+{{source=..\SamplesCS\ZipLibrary\UpdateZipArchive.cs region=entry}}
 	                
 	            ZipArchiveEntry entry1 = archive.GetEntry("text.txt");
 	            if (entry1 != null)
@@ -243,7 +243,7 @@ In order to update an existing entry in the ZIP archive you should perform the f
 
 #### __[VB.NET] __
 
-{{region entry}}
+{{source=..\SamplesVB\ZipLibrary\UpdateZipArchive.vb region=entry}}
 	        Dim entry1 As ZipArchiveEntry = archive.GetEntry("text.txt")
 	        If entry1 IsNot Nothing Then
 	            Dim entryStream As Stream = entry1.Open()

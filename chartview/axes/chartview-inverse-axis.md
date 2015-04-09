@@ -23,7 +23,7 @@ This example will demosntrate the depths of crude oil wells in the period betwee
 
 #### __[C#] __
 
-{{region inverse-axis}}
+{{source=..\SamplesCS\ChartView\Axes\InverseAxisForm.cs region=inverse-axis}}
 	            DataTable tableDryHoles = new DataTable("CrudeOil");
 	            tableDryHoles.Columns.Add("Time", typeof(DateTime));
 	            tableDryHoles.Columns.Add("Depth", typeof(double));
@@ -85,7 +85,7 @@ This example will demosntrate the depths of crude oil wells in the period betwee
 
 #### __[VB] __
 
-{{region inverse-axis}}
+{{source=..\SamplesVB\ChartView\Axes\InverseAxisForm.vb region=inverse-axis}}
 	        Dim tableDryHoles As New DataTable("CrudeOil")
 	        tableDryHoles.Columns.Add("Time", GetType(DateTime))
 	        tableDryHoles.Columns.Add("Depth", GetType(Double))

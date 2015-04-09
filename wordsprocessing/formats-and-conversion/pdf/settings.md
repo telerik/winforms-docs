@@ -29,7 +29,7 @@ __Example 1__ demonstrates how to export a __RadFlowDocument__ instance to PDF a
 
 #### __[C#] Example 1: Export PDF/A Compliant Document__
 
-{{region radwordsprocessing-formats-and-conversion-pdf-settings_0}}
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingPdfSettings.cs region=radwordsprocessing-formats-and-conversion-pdf-settings_0}}
 	
 	            Telerik.Windows.Documents.Flow.FormatProviders.Pdf.PdfFormatProvider provider = new Telerik.Windows.Documents.Flow.FormatProviders.Pdf.PdfFormatProvider();
 	            Telerik.Windows.Documents.Flow.FormatProviders.Pdf.Export.PdfExportSettings settings = new Telerik.Windows.Documents.Flow.FormatProviders.Pdf.Export.PdfExportSettings();
@@ -48,7 +48,7 @@ __Example 1__ demonstrates how to export a __RadFlowDocument__ instance to PDF a
 
 #### __[VB] Example 1: Export PDF/A Compliant Document__
 
-{{region radwordsprocessing-formats-and-conversion-pdf-settings_0}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingPdfSettings.vb region=radwordsprocessing-formats-and-conversion-pdf-settings_0}}
 	
 	        Dim provider As New Telerik.Windows.Documents.Flow.FormatProviders.Pdf.PdfFormatProvider()
 	        Dim settings As New Telerik.Windows.Documents.Flow.FormatProviders.Pdf.Export.PdfExportSettings()
@@ -99,7 +99,7 @@ __Example 2__ shows how to register a custom *ChineseCountingConverter* class in
 
 #### __[C#] Example 2: Register Numbering Style Converter__
 
-{{region radwordsprocessing-formats-and-conversion-pdf-settings_1}}
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingPdfSettings.cs region=radwordsprocessing-formats-and-conversion-pdf-settings_1}}
 	            provider.ExportSettings.ExtensibilityManager.RegisterNumberingStyleConverter(Telerik.Windows.Documents.Flow.Model.Lists.NumberingStyle.ChineseCounting, new ChineseCountingConverter());
 	{{endregion}}
 
@@ -107,7 +107,7 @@ __Example 2__ shows how to register a custom *ChineseCountingConverter* class in
 
 #### __[VB] Example 2: Register Numbering Style Converter__
 
-{{region radwordsprocessing-formats-and-conversion-pdf-settings_1}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingPdfSettings.vb region=radwordsprocessing-formats-and-conversion-pdf-settings_1}}
 	        provider.ExportSettings.ExtensibilityManager.RegisterNumberingStyleConverter(Telerik.Windows.Documents.Flow.Model.Lists.NumberingStyle.ChineseCounting, New ChineseCountingConverter())
 	        '#End Region
 	

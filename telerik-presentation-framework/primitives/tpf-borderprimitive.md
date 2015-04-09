@@ -28,7 +28,7 @@ All four sides of the border are drawn with the same properties except color. Co
 
 #### __[C#] Creating a BorderPrimitive with SingleBorder__
 
-{{region myBorderPrimitiveSElement}}
+{{source=..\SamplesCS\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveSElement.cs region=myBorderPrimitiveSElement}}
 	    public class MyBorderPrimitiveSElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -49,7 +49,7 @@ All four sides of the border are drawn with the same properties except color. Co
 
 #### __[VB.NET] Creating a BorderPrimitive with SingleBorder__
 
-{{region myBorderPrimitiveSElement}}
+{{source=..\SamplesVB\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveSElement.vb region=myBorderPrimitiveSElement}}
 	Public Class MyBorderPrimitiveSElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()
@@ -78,7 +78,7 @@ Each side of the border can be tailored individually.  <b>ForeColor</b>, <b>Wid
 
 #### __[C#] Creating a BorderPrimitive with FourBorders__
 
-{{region myBorderPrimitiveFBElement}}
+{{source=..\SamplesCS\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveFBElement.cs region=myBorderPrimitiveFBElement}}
 	    public class MyBorderPrimitiveFBElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -104,7 +104,7 @@ Each side of the border can be tailored individually.  <b>ForeColor</b>, <b>Wid
 
 #### __[VB.NET] Creating a BorderPrimitive with FourBorders__
 
-{{region myBorderPrimitiveFBElement}}
+{{source=..\SamplesVB\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveFBElement.vb region=myBorderPrimitiveFBElement}}
 	Public Class MyBorderPrimitiveFBElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()
@@ -138,7 +138,7 @@ Inner and outer colors can be specified using the <b>ForeColor</b> and <b>InnerC
 
 #### __[C#] Creating a BorderPrimitive with OuterInnerBorders__
 
-{{region myBorderPrimitiveOIElement}}
+{{source=..\SamplesCS\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveOIElement.cs region=myBorderPrimitiveOIElement}}
 	    public class MyBorderPrimitiveOIElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -166,7 +166,7 @@ Inner and outer colors can be specified using the <b>ForeColor</b> and <b>InnerC
 
 #### __[VB.NET] Creating a BorderPrimitive with OuterInnerBorders__
 
-{{region myBorderPrimitiveOIElement}}
+{{source=..\SamplesVB\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveOIElement.vb region=myBorderPrimitiveOIElement}}
 	Public Class MyBorderPrimitiveOIElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

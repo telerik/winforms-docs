@@ -5,7 +5,7 @@ description: Custom shapes
 slug: diagram-custom-shapes
 tags: custom,shapes
 published: True
-position: 7
+position: 8
 ---
 
 # Custom shapes
@@ -14,9 +14,9 @@ position: 7
 
 This tutorial will guide you through the task of creating a custom shape.
 
-## 
+## Creating custom shapes programmatically
 
-In order to create a custom shape control, you need to define a custom shape deriving from the __ElementShape__
+In order to create a custom shape, you need to define a custom shape class deriving from the __ElementShape__
         class. Overriding its __CreatePath__ method you can define
           the desired shape. Afterwards, you need to apply your shape implementation to the RadDiagramShape.__ElementShape__
           property:
@@ -24,7 +24,7 @@ In order to create a custom shape control, you need to define a custom shape der
 
 #### __[C#] __
 
-{{region MyShape}}
+{{source=..\SamplesCS\Diagram\DiagramCustomShapes.cs region=MyShape}}
 	            
 	        public class MyShape : ElementShape
 	        {
@@ -42,7 +42,7 @@ In order to create a custom shape control, you need to define a custom shape der
 
 #### __[VB.NET] __
 
-{{region MyShape}}
+{{source=..\SamplesVB\Diagram\DiagramCustomShapes.vb region=MyShape}}
 	
 	    Public Class MyShape
 	    Inherits ElementShape
@@ -60,7 +60,7 @@ In order to create a custom shape control, you need to define a custom shape der
 
 #### __[C#] __
 
-{{region ApplyCustomShape}}
+{{source=..\SamplesCS\Diagram\DiagramCustomShapes.cs region=ApplyCustomShape}}
 	            
 	            RadDiagramShape shape1 = new RadDiagramShape()
 	            {
@@ -77,7 +77,7 @@ In order to create a custom shape control, you need to define a custom shape der
 
 #### __[VB.NET] __
 
-{{region ApplyCustomShape}}
+{{source=..\SamplesVB\Diagram\DiagramCustomShapes.vb region=ApplyCustomShape}}
 	
 	        Dim shape1 As New RadDiagramShape() With { _
 	            .ShapeText = "", _
@@ -106,3 +106,13 @@ In order to create a custom shape control, you need to define a custom shape der
 	End Class
 
 ![diagram-custom-shapes 001](images/diagram-custom-shapes001.png)
+
+## Creating custom shapes by the Custom Shape Editor
+
+When you open the RadDiagram Property Builder from the Smart Tag and drag a shape from the toolbox you can customize the default shape 
+          by editing the __ElementShape__ property and selecting the *Create new custom shape ...*
+          option from the list:
+        ![diagram-custom-shapes 002](images/diagram-custom-shapes002.png)
+
+This will display the [Custom Shape Editor]({%slug tools-shapeeditor-using-the-custom-shape-editor-lunching-the-shape-editor%}).
+        ![diagram-custom-shapes 003](images/diagram-custom-shapes003.png)

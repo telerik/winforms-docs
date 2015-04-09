@@ -52,7 +52,7 @@ __Example 1__ shows how you can create and apply specific import settings.
 
 #### __[C#] Example 1: Create HtmlImportSettings__
 
-{{region radwordsprocessing-formats-and-conversion-html-settings_0}}
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Html\WordsProcessingSettings.cs region=radwordsprocessing-formats-and-conversion-html-settings_0}}
 	            HtmlFormatProvider provider = new HtmlFormatProvider();
 	            HtmlImportSettings importSettings = new HtmlImportSettings();
 	
@@ -75,7 +75,7 @@ __Example 1__ shows how you can create and apply specific import settings.
 
 #### __[VB.NET] Example 1: Create HtmlImportSettings__
 
-{{region radwordsprocessing-formats-and-conversion-html-settings_0}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-html-settings_0}}
 	            Dim provider As New HtmlFormatProvider()
 	            Dim importSettings As New HtmlImportSettings()
 	
@@ -230,7 +230,7 @@ __Example 2__ demonstrates how you can create export settings.
 
 #### __[C#] Example 2: Create HtmlExportSettings__
 
-{{region radwordsprocessing-formats-and-conversion-html-settings_1}}
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Html\WordsProcessingSettings.cs region=radwordsprocessing-formats-and-conversion-html-settings_1}}
 	            HtmlFormatProvider provider = new HtmlFormatProvider();
 	            HtmlExportSettings exportSettings = new HtmlExportSettings();
 	
@@ -251,7 +251,7 @@ __Example 2__ demonstrates how you can create export settings.
 
 #### __[VB.NET] Example 2: Create HtmlExportSettings__
 
-{{region radwordsprocessing-formats-and-conversion-html-settings_1}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-html-settings_1}}
 	            Dim provider As New HtmlFormatProvider()
 	            Dim exportSettings As New HtmlExportSettings()
 	

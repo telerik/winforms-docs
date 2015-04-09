@@ -23,7 +23,7 @@ The __RadWizard__ control also supports __RightToLeft__ alignment of its element
 
 #### __[C#] Setting Right-to-Left mode__
 
-{{region RTL}}
+{{source=..\SamplesCS\Wizard\WizardStructure.cs region=RTL}}
 	            this.radWizard1.RightToLeft = RightToLeft.Yes;
 	
 	            this.radLabel1.RightToLeft = RightToLeft.Yes;
@@ -34,7 +34,7 @@ The __RadWizard__ control also supports __RightToLeft__ alignment of its element
 
 #### __[VB.NET] Setting Right-to-Left mode__
 
-{{region RTL}}
+{{source=..\SamplesVB\Wizard\WizardStructure.vb region=RTL}}
 	        RadWizard1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 	
 	        RadLabel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes

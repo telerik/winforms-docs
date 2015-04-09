@@ -28,7 +28,7 @@ As stated in [this documentation article]({%slug dock-loading-and-saving-layouts
 
 #### __[C#]__
 
-{{region paths}}
+{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=paths}}
 	        private string dockLayoutPath = Application.StartupPath + "\\dock.xml";
 	{{endregion}}
 
@@ -36,7 +36,7 @@ As stated in [this documentation article]({%slug dock-loading-and-saving-layouts
 
 #### __[VB.NET]__
 
-{{region paths}}
+{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=paths}}
 	    Private dockLayoutPath As String = Application.StartupPath & "\dock.xml"
 	    '#End Region
 	
@@ -125,7 +125,7 @@ As stated in [this documentation article]({%slug dock-loading-and-saving-layouts
 
 #### __[C#]__
 
-{{region formLoad}}
+{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=formLoad}}
 	        private void MainForm_Load(object sender, EventArgs e)
 	        {
 	            if (!File.Exists(dockLayoutPath))
@@ -156,7 +156,7 @@ As stated in [this documentation article]({%slug dock-loading-and-saving-layouts
 
 #### __[VB.NET]__
 
-{{region formLoad}}
+{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=formLoad}}
 	    Private Sub MainForm_Load(ByVal sender As Object, ByVal e As EventArgs)
 	        If Not File.Exists(dockLayoutPath) Then
 	            InitializeLayout()
@@ -229,7 +229,7 @@ Please note that the names of the types of the UserControls are important, becau
 
 #### __[C#]__
 
-{{region formClosing}}
+{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=formClosing}}
 	        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
 	        {
 	            this.radDock1.SaveToXml(dockLayoutPath);
@@ -240,7 +240,7 @@ Please note that the names of the types of the UserControls are important, becau
 
 #### __[VB.NET]__
 
-{{region formClosing}}
+{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=formClosing}}
 	    Private Sub MainForm_FormClosing(ByVal sender As Object, ByVal e As FormClosingEventArgs)
 	        Me.RadDock1.SaveToXml(dockLayoutPath)
 	    End Sub
@@ -293,7 +293,7 @@ Please note that the names of the types of the UserControls are important, becau
 
 #### __[C#]__
 
-{{region loadContent}}
+{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=loadContent}}
 	        private void LoadContent()
 	        {
 	            for (int i = 0; i < this.radDock1.DockWindows.Count; i++)
@@ -327,7 +327,7 @@ Please note that the names of the types of the UserControls are important, becau
 
 #### __[VB.NET]__
 
-{{region loadContent}}
+{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=loadContent}}
 	    Private Sub LoadContent()
 	        For i As Integer = 0 To Me.RadDock1.DockWindows.Count - 1
 	            Dim hw As HostWindow = TryCast(Me.RadDock1.DockWindows(i), HostWindow)

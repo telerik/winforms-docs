@@ -30,7 +30,7 @@ The following example demonstrates how to draw an image which appears exactly 12
 
 #### __[C#] __
 
-{{region FormattingEventSubscribe1}}
+{{source=..\SamplesCS\GanttView\Formatting\CustomPainting.cs region=FormattingEventSubscribe1}}
 	            this.radGanttView1.EnableCustomPainting = true;
 	            this.radGanttView1.ItemPaint += radGanttView1_ItemPaint1;
 	{{endregion}}
@@ -39,7 +39,7 @@ The following example demonstrates how to draw an image which appears exactly 12
 
 #### __[C#] __
 
-{{region FormattingPaintEvent1}}
+{{source=..\SamplesCS\GanttView\Formatting\CustomPainting.cs region=FormattingPaintEvent1}}
 	        private void radGanttView1_ItemPaint1(object sender, GanttViewItemPaintEventArgs e)
 	        {
 	            if (e.Element.Data.Items.Count == 0 && e.Element.Data.End - e.Element.Data.Start > new TimeSpan(12, 0, 0))
@@ -55,7 +55,7 @@ The following example demonstrates how to draw an image which appears exactly 12
 
 #### __[VB.NET] __
 
-{{region FormattingEventSubscribe1}}
+{{source=..\SamplesVB\GanttView\Formatting\CustomPainting.vb region=FormattingEventSubscribe1}}
 	        Me.radGanttView1.EnableCustomPainting = True
 	        AddHandler Me.radGanttView1.ItemPaint, AddressOf radGanttView1_ItemPaint1
 	{{endregion}}
@@ -64,7 +64,7 @@ The following example demonstrates how to draw an image which appears exactly 12
 
 #### __[VB.NET] __
 
-{{region FormattingPaintEvent1}}
+{{source=..\SamplesVB\GanttView\Formatting\CustomPainting.vb region=FormattingPaintEvent1}}
 	    Private Sub radGanttView1_ItemPaint1(sender As Object, e As GanttViewItemPaintEventArgs)
 	        If (e.Element.Data.Items.Count = 0 AndAlso e.Element.Data.End - e.Element.Data.Start > New TimeSpan(12, 0, 0)) Then
 	
@@ -83,7 +83,7 @@ Another example demonstrating how to draw a colored rectangle which would be 10 
 
 #### __[C#] __
 
-{{region FormattingEventSubscribe2}}
+{{source=..\SamplesCS\GanttView\Formatting\CustomPainting.cs region=FormattingEventSubscribe2}}
 	            this.radGanttView1.ItemPaint += radGanttView1_ItemPaint2;
 	{{endregion}}
 
@@ -91,7 +91,7 @@ Another example demonstrating how to draw a colored rectangle which would be 10 
 
 #### __[C#] __
 
-{{region FormattingPaintEvent2}}
+{{source=..\SamplesCS\GanttView\Formatting\CustomPainting.cs region=FormattingPaintEvent2}}
 	        private void radGanttView1_ItemPaint2(object sender, GanttViewItemPaintEventArgs e)
 	        {
 	            if (e.Element.Data.Items.Count > 0)
@@ -107,7 +107,7 @@ Another example demonstrating how to draw a colored rectangle which would be 10 
 
 #### __[VB.NET] __
 
-{{region FormattingEventSubscribe2}}
+{{source=..\SamplesVB\GanttView\Formatting\CustomPainting.vb region=FormattingEventSubscribe2}}
 	        AddHandler Me.radGanttView1.ItemPaint, AddressOf radGanttView1_ItemPaint2
 	{{endregion}}
 
@@ -115,7 +115,7 @@ Another example demonstrating how to draw a colored rectangle which would be 10 
 
 #### __[VB.NET] __
 
-{{region FormattingPaintEvent2}}
+{{source=..\SamplesVB\GanttView\Formatting\CustomPainting.vb region=FormattingPaintEvent2}}
 	    Private Sub radGanttView1_ItemPaint2(sender As Object, e As GanttViewItemPaintEventArgs)
 	        If (e.Element.Data.Items.Count > 0) Then
 	            Dim start As DateTime = e.Element.Data.Start.AddHours(-18)

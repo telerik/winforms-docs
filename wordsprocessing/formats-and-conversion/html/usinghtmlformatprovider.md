@@ -31,7 +31,7 @@ __Example 1__ shows how to use HtmlFormatProvider to import an HTML document fro
 
 #### __[C#] Example 1: Import HTML File __
 
-{{region radwordsprocessing-formats-and-conversion-html-htmlformatprovider_0}}
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.cs region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_0}}
 	            using (Stream input = File.Create(@"Sample.html"))
 	            {
 	                HtmlFormatProvider provider = new HtmlFormatProvider();
@@ -43,7 +43,7 @@ __Example 1__ shows how to use HtmlFormatProvider to import an HTML document fro
 
 #### __[VB.NET] Example 1: Import HTML File __
 
-{{region radwordsprocessing-formats-and-conversion-html-htmlformatprovider_0}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.vb region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_0}}
 	            Using input As Stream = File.Create("Sample.html")
 	                Dim provider As New HtmlFormatProvider()
 	                Dim document As RadFlowDocument = provider.Import(input)
@@ -89,7 +89,7 @@ __Example 2__ shows how you can import an HTML string.
 
 #### __[C#] Example 2: Import HTML String__
 
-{{region radwordsprocessing-formats-and-conversion-html-htmlformatprovider_1}}
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.cs region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_1}}
 	            string html = "<p>hello world!</p>";
 	            HtmlFormatProvider provider = new HtmlFormatProvider();
 	            RadFlowDocument document = provider.Import(html);
@@ -99,7 +99,7 @@ __Example 2__ shows how you can import an HTML string.
 
 #### __[VB.NET] Example 2: Import HTML String__
 
-{{region radwordsprocessing-formats-and-conversion-html-htmlformatprovider_1}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.vb region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_1}}
 	            Dim html As String = "<p>hello world!</p>"
 	            Dim provider As New HtmlFormatProvider()
 	            Dim document As RadFlowDocument = provider.Import(html)
@@ -144,7 +144,7 @@ __Example 3__ shows how to use the HtmlFormatProvider to export an instance of R
 
 #### __[C#] Example 3: Export HTML to File__
 
-{{region radwordsprocessing-formats-and-conversion-html-htmlformatprovider_2}}
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.cs region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_2}}
 	            HtmlFormatProvider provider = new HtmlFormatProvider();
 	            using (Stream output = File.Create("Sample.html"))
 	            {
@@ -157,7 +157,7 @@ __Example 3__ shows how to use the HtmlFormatProvider to export an instance of R
 
 #### __[VB.NET] Example 3: Export HTML to File__
 
-{{region radwordsprocessing-formats-and-conversion-html-htmlformatprovider_2}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.vb region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_2}}
 	            Dim provider As New HtmlFormatProvider()
 	            Using output As Stream = File.Create("Sample.html")
 	                Dim document As RadFlowDocument = CreateRadFlowDocument()
@@ -186,7 +186,7 @@ You can also export the document to a string variable like shown in __Example 4_
 
 #### __[C#] Example 4: Export HTML to String__
 
-{{region radwordsprocessing-formats-and-conversion-html-htmlformatprovider_3}}
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.cs region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_3}}
 	            RadFlowDocument document = CreateRadFlowDocument();
 	            HtmlFormatProvider provider = new HtmlFormatProvider();
 	            string html = provider.Export(document);
@@ -196,7 +196,7 @@ You can also export the document to a string variable like shown in __Example 4_
 
 #### __[VB.NET] Example 4: Export HTML to String__
 
-{{region radwordsprocessing-formats-and-conversion-html-htmlformatprovider_3}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.vb region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_3}}
 	            Dim document As RadFlowDocument = CreateRadFlowDocument()
 	            Dim provider As New HtmlFormatProvider()
 	            Dim html As String = provider.Export(document)

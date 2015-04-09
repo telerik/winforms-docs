@@ -36,7 +36,7 @@ Margin is the area outside an element. Margin affects the spacing between eleme
 
 #### __[C#] Two elements with margins__
 
-{{region layoutStructure}}
+{{source=..\SamplesCS\TPF\Layouts\LayoutStructure.cs region=layoutStructure}}
 	    public class LayoutStructure : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -68,7 +68,7 @@ Margin is the area outside an element. Margin affects the spacing between eleme
 
 #### __[VB.NET] Two elements with margins__
 
-{{region layoutStructure}}
+{{source=..\SamplesVB\TPF\Layouts\LayoutStructure.vb region=layoutStructure}}
 	Public Class LayoutStructure
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

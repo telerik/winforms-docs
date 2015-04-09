@@ -5,7 +5,7 @@ description: ScatterLine
 slug: chartview-series-types-scatterline
 tags: scatterline
 published: True
-position: 5
+position: 6
 ---
 
 # ScatterLine
@@ -21,7 +21,7 @@ __ScatterLineSeries__ allow data represented as a line to be plotted against two
 
 #### __[C#]__
 
-{{region scatterLineSetup}}
+{{source=..\SamplesCS\ChartView\Series\ScatterLineSeriesForm.cs region=scatterLineSetup}}
 	            ScatterLineSeries scatterSeries = new ScatterLineSeries();
 	            scatterSeries.DataPoints.Add(new ScatterDataPoint(15, 19));
 	            scatterSeries.DataPoints.Add(new ScatterDataPoint(18, 10));
@@ -46,7 +46,7 @@ __ScatterLineSeries__ allow data represented as a line to be plotted against two
 
 #### __[VB.NET]__
 
-{{region scatterLineSetup}}
+{{source=..\SamplesVB\ChartView\Series\ScatterLineSeriesForm.vb region=scatterLineSetup}}
 	        Dim scatterSeries As New ScatterLineSeries()
 	        scatterSeries.DataPoints.Add(New ScatterDataPoint(15, 19))
 	        scatterSeries.DataPoints.Add(New ScatterDataPoint(18, 10))
@@ -80,7 +80,7 @@ __ScatterLineSeries__ inherit from __ScatterSeries__ thus all important properti
 
 #### __[C#]__
 
-{{region scatterLineSpline}}
+{{source=..\SamplesCS\ChartView\Series\ScatterLineSeriesForm.cs region=scatterLineSpline}}
 	            scatterSeries.Spline = true;
 	            scatterSeries.SplineTension = 0.8f;
 	{{endregion}}
@@ -89,7 +89,7 @@ __ScatterLineSeries__ inherit from __ScatterSeries__ thus all important properti
 
 #### __[VB.NET]__
 
-{{region scatterLineSpline}}
+{{source=..\SamplesVB\ChartView\Series\ScatterLineSeriesForm.vb region=scatterLineSpline}}
 	        scatterLine.Spline = True
 	        scatterLine.SplineTension = 0.8F
 	{{endregion}}

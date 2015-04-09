@@ -40,7 +40,7 @@ Here is an example. The comments are inline:
 
 #### __[C#]__
 
-{{region Customize}}
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerEventsAndCustomization.cs region=Customize}}
 	        void radScheduler1_CellPrintElementPaint(object sender, PrintSchedulerCellPaintEventArgs e)
 	        {
 	            //draw a hatch in the cell if it is 12 o'clock (lunch break)
@@ -116,7 +116,7 @@ Here is an example. The comments are inline:
 
 #### __[VB.NET]__
 
-{{region Customize}}
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerEventsAndCustomization.vb region=Customize}}
 	    Private Sub radScheduler1_CellPrintElementPaint(sender As Object, e As PrintSchedulerCellPaintEventArgs)
 	        'draw a hatch in the cell if it is 12 o'clock (lunch break)
 	        If e.CellElement.[Date].Hour = 12 Then

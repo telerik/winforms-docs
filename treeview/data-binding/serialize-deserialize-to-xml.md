@@ -20,7 +20,7 @@ RadTreeView methods __LoadXML()__ and __SaveXML()__ serialize the contents and
 
 #### __[XML]__
 
-{{region layout}}
+{{source=..\SamplesCS\TreeView\DataBinding\mytreeview.xml region=layout}}
 	
 	{{endregion}}
 

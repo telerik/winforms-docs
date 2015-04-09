@@ -151,7 +151,7 @@ __Example 1__ shows hot to create any value validation rule and set it to a cell
 
 #### __[C#] Example 1: Apply Any Value Rule__
 
-{{region radspreadprocessing-features-data-validation_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_0}}
 	            AnyValueDataValidationRuleContext context = new AnyValueDataValidationRuleContext();
 	            context.InputMessageContent = "Sample input message content";
 	            context.InputMessageTitle = "Sample input message title";
@@ -164,7 +164,7 @@ __Example 1__ shows hot to create any value validation rule and set it to a cell
 
 #### __[VB] Example 1: Apply Any Value Rule__
 
-{{region radspreadprocessing-features-data-validation_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_0}}
 	        Dim context As New AnyValueDataValidationRuleContext()
 	        context.InputMessageContent = "Sample input message content"
 	        context.InputMessageTitle = "Sample input message title"
@@ -381,7 +381,7 @@ The code snippet in __Example 2__ shows how to create a whole number data valida
 
 #### __[C#] Example 2: Apply Whole Number Rule with Two Arguments__
 
-{{region radspreadprocessing-features-data-validation_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_1}}
 	            CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
 	
 	            NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
@@ -404,7 +404,7 @@ The code snippet in __Example 2__ shows how to create a whole number data valida
 
 #### __[VB] Example 2: Apply Whole Number Rule with Two Arguments__
 
-{{region radspreadprocessing-features-data-validation_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_1}}
 	        Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
 	
 	        Dim context As New NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
@@ -610,7 +610,7 @@ The code snippet in __Example 3__ shows how to create a whole number data valida
 
 #### __[C#] Example 3: Apply Whole Number Rule with One Argument__
 
-{{region radspreadprocessing-features-data-validation_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_2}}
 	            CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
 	
 	            NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
@@ -631,7 +631,7 @@ The code snippet in __Example 3__ shows how to create a whole number data valida
 
 #### __[VB] Example 3: Apply Whole Number Rule with One Argument__
 
-{{region radspreadprocessing-features-data-validation_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_2}}
 	        Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
 	
 	        Dim context As New NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
@@ -806,7 +806,7 @@ You are allowed to enter any valid [formula]({%slug spreadprocessing-features-fo
 
 #### __[C#] Example 4: Apply Whole Number Rule with Formula__
 
-{{region radspreadprocessing-features-data-validation_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_3}}
 	            // The value of A1
 	            worksheet.Cells[0, 0].SetValue(60);
 	            // The value of B1
@@ -832,7 +832,7 @@ You are allowed to enter any valid [formula]({%slug spreadprocessing-features-fo
 
 #### __[VB] Example 4: Apply Whole Number Rule with Formula__
 
-{{region radspreadprocessing-features-data-validation_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_3}}
 	        ' The value of A1
 	        worksheet.Cells(0, 0).SetValue(60)
 	        ' The value of B1
@@ -998,7 +998,7 @@ __Example 5__ demonstrates how to create a decimal data validation rule that res
 
 #### __[C#] Example 5: Apply Decimal Rule__
 
-{{region radspreadprocessing-features-data-validation_4}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_4}}
 	            CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
 	
 	            NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(this.worksheet, dataValidationRuleCellIndex);
@@ -1020,7 +1020,7 @@ __Example 5__ demonstrates how to create a decimal data validation rule that res
 
 #### __[VB] Example 5: Apply Decimal Rule__
 
-{{region radspreadprocessing-features-data-validation_4}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_4}}
 	        Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
 	
 	        Dim context As New NumberDataValidationRuleContext(Me.worksheet, dataValidationRuleCellIndex)
@@ -1157,7 +1157,7 @@ __Example 6__ shows the creation of a list data validation rule that restricts t
 
 #### __[C#] Example 6: Apply List Rule__
 
-{{region radspreadprocessing-features-data-validation_5}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_5}}
 	            CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
 	
 	            ListDataValidationRuleContext context = new ListDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
@@ -1178,7 +1178,7 @@ __Example 6__ shows the creation of a list data validation rule that restricts t
 
 #### __[VB] Example 6: Apply List Rule__
 
-{{region radspreadprocessing-features-data-validation_5}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_5}}
 	        Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
 	
 	        Dim context As New ListDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
@@ -1300,7 +1300,7 @@ __Example 7__ shows how to restrict the user input to the dates in the range bet
 
 #### __[C#] Example 7: Apply List Rule__
 
-{{region radspreadprocessing-features-data-validation_6}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_6}}
 	            CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
 	
 	            NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
@@ -1322,7 +1322,7 @@ __Example 7__ shows how to restrict the user input to the dates in the range bet
 
 #### __[VB] Example 7: Apply List Rule__
 
-{{region radspreadprocessing-features-data-validation_6}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_6}}
 	        Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
 	
 	        Dim context As New NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
@@ -1420,7 +1420,7 @@ The code snippet in __Example 8__ shows how to restrict the user input to the ra
 
 #### __[C#] Example 8: Apply Time Rule__
 
-{{region radspreadprocessing-features-data-validation_7}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_7}}
 	            CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
 	
 	            NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(this.worksheet, dataValidationRuleCellIndex);
@@ -1442,7 +1442,7 @@ The code snippet in __Example 8__ shows how to restrict the user input to the ra
 
 #### __[VB] Example 8: Apply Time Rule__
 
-{{region radspreadprocessing-features-data-validation_7}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_7}}
 	        Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
 	
 	        Dim context As New NumberDataValidationRuleContext(Me.worksheet, dataValidationRuleCellIndex)
@@ -1520,7 +1520,7 @@ __Example 9__ shows how to restrict the user input to text with length between 5
 
 #### __[C#] Example 9: Apply Text Length Rule__
 
-{{region radspreadprocessing-features-data-validation_8}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_8}}
 	            CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
 	
 	            NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
@@ -1542,7 +1542,7 @@ __Example 9__ shows how to restrict the user input to text with length between 5
 
 #### __[VB] Example 9: Apply Text Length Rule__
 
-{{region radspreadprocessing-features-data-validation_8}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_8}}
 	        Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
 	
 	        Dim context As New NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
@@ -1600,7 +1600,7 @@ The code snippet in __Example 10__ shows how to restrict the user input to value
 
 #### __[C#] Example 10: Apply Custom Rule__
 
-{{region radspreadprocessing-features-data-validation_9}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_9}}
 	            CellIndex dataValidationRuleCellIndex = new CellIndex(1, 0);
 	
 	            SingleArgumentDataValidationRuleContext context = new SingleArgumentDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
@@ -1620,7 +1620,7 @@ The code snippet in __Example 10__ shows how to restrict the user input to value
 
 #### __[VB] Example 10: Apply Custom Rule__
 
-{{region radspreadprocessing-features-data-validation_9}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_9}}
 	        Dim dataValidationRuleCellIndex As New CellIndex(1, 0)
 	
 	        Dim context As New SingleArgumentDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
@@ -1658,7 +1658,7 @@ __Example 11__ demonstrates how to evaluate a rule using the __Evaluate()__ meth
 
 #### __[C#] Example 11: Evaluate Rule__
 
-{{region radspreadprocessing-features-data-validation_10}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_10}}
 	            IEnumerable<string> stringItems = new List<string>() { "test", "1%", "1.0" };
 	            IEnumerable<DateGroupItem> dateItems = new List<DateGroupItem>()
 	            { 
@@ -1673,7 +1673,7 @@ __Example 11__ demonstrates how to evaluate a rule using the __Evaluate()__ meth
 
 #### __[VB] Example 11: Evaluate Rule__
 
-{{region radspreadprocessing-features-data-validation_10}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_10}}
 	        Dim stringItems As IEnumerable(Of String) = New List(Of String)() From {"test", "1%", "1.0"}
 	        Dim dateItems As IEnumerable(Of DateGroupItem) = New List(Of DateGroupItem)() From {New DateGroupItem(2013), New DateGroupItem(2014, 3)}
 	        Dim filter As New ValuesCollectionFilter(0, stringItems, dateItems, True)

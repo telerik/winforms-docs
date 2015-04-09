@@ -24,7 +24,7 @@ The Product object is defined with a constructor that passes both Name and Quant
 
 #### __[C#] The Product class__
 
-{{region product}}
+{{source=..\SamplesCS\Chart\DataBindingToGenericListOfObject.cs region=product}}
 	    public class Product
 	    {
 	        public Product(string name, int quantityInStock)
@@ -51,7 +51,7 @@ The Product object is defined with a constructor that passes both Name and Quant
 
 #### __[VB.NET] The Product class__
 
-{{region product}}
+{{source=..\SamplesVB\Chart\DataBindingToGenericListOfObject.vb region=product}}
 	    Public Class Product
 	        Public Sub New(ByVal name As String, ByVal quantityInStock As Integer)
 	            _name = name
@@ -95,7 +95,7 @@ After the Product object is defined the following steps configure and bind to th
 
 #### __[C#] Binding to object__
 
-{{region bindingToObject}}
+{{source=..\SamplesCS\Chart\DataBindingToGenericListOfObject.cs region=bindingToObject}}
 	        RadChart radChart1;
 	        public DataBindingToGenericListOfObject()
 	        {
@@ -125,7 +125,7 @@ After the Product object is defined the following steps configure and bind to th
 
 #### __[VB.NET] Binding to object__
 
-{{region bindingToObject}}
+{{source=..\SamplesVB\Chart\DataBindingToGenericListOfObject.vb region=bindingToObject}}
 	        Dim RadChart1 As New RadChart
 	        Public Sub New()
 	            InitializeComponent()

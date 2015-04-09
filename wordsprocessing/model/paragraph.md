@@ -37,7 +37,7 @@ The following code snippet creates and inserts a Paragraph to a Section.
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-paragraph_0}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_0}}
 	            Paragraph paragraph = new Paragraph(document);
 	            section.Blocks.Add(paragraph);
 	{{endregion}}
@@ -46,7 +46,7 @@ The following code snippet creates and inserts a Paragraph to a Section.
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-paragraph_0}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_0}}
 	            Dim paragraph As New Paragraph(document)
 	            section.Blocks.Add(paragraph)
 	            '#End Region
@@ -99,7 +99,7 @@ You can add a paragraph at a specific index in the __Blocks__ collection of a __
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-paragraph_1}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_1}}
 	            Paragraph paragraph = new Paragraph(document);
 	            section.Blocks.Insert(0, paragraph);
 	{{endregion}}
@@ -108,7 +108,7 @@ You can add a paragraph at a specific index in the __Blocks__ collection of a __
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-paragraph_1}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_1}}
 	            Dim paragraph As New Paragraph(document)
 	            section.Blocks.Insert(0, paragraph)
 	            '#End Region
@@ -150,7 +150,7 @@ You can also use the __AddParagraph()__ method of the __Blocks__ collection of a
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-paragraph_2}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_2}}
 	            Paragraph paragraph = section.Blocks.AddParagraph();
 	{{endregion}}
 
@@ -158,7 +158,7 @@ You can also use the __AddParagraph()__ method of the __Blocks__ collection of a
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-paragraph_2}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_2}}
 	            Dim paragraph As Paragraph = section.Blocks.AddParagraph()
 	            '#End Region
 	        End Sub
@@ -192,7 +192,7 @@ Inserting a new Paragraph in the document can also be achieved with the [RadFlow
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-paragraph_3}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_3}}
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
 	            Paragraph paragraph = editor.InsertParagraph();
 	{{endregion}}
@@ -201,7 +201,7 @@ Inserting a new Paragraph in the document can also be achieved with the [RadFlow
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-paragraph_3}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_3}}
 	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	            Dim paragraph As Paragraph = editor.InsertParagraph()
 	            '#End Region
@@ -320,7 +320,7 @@ The following code snippet adds a run to an existing paragraph:
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-paragraph_4}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_4}}
 	            Run run = paragraph.Inlines.AddRun();
 	{{endregion}}
 
@@ -328,7 +328,7 @@ The following code snippet adds a run to an existing paragraph:
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-paragraph_4}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_4}}
 	            Dim run As Run = paragraph.Inlines.AddRun()
 	            '#End Region
 	
@@ -354,7 +354,7 @@ The following code snippet adds an inline image to an existing paragraph:
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-paragraph_5}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_5}}
 	            ImageInline imageInline = paragraph.Inlines.AddImageInline();
 	{{endregion}}
 
@@ -362,7 +362,7 @@ The following code snippet adds an inline image to an existing paragraph:
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-paragraph_5}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_5}}
 	            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
 	            '#End Region
 	
@@ -384,7 +384,7 @@ The following code snippet adds a floating image to an existing paragraph:
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-paragraph_6}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_6}}
 	            FloatingImage floatingImage = paragraph.Inlines.AddFloatingImage();
 	{{endregion}}
 
@@ -392,7 +392,7 @@ The following code snippet adds a floating image to an existing paragraph:
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-paragraph_6}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_6}}
 	            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
 	            '#End Region
 	        End Sub

@@ -28,7 +28,7 @@ Use the __TextImageRelation__ property to align the image with text. Note that t
 
 #### __[C#]__
 
-{{region alignments}}
+{{source=..\SamplesCS\Buttons\RadioButtonDesigning.cs region=alignments}}
 	            this.radRadioButton10.RadioCheckAlignment = ContentAlignment.MiddleRight;
 	            this.radRadioButton10.TextImageRelation = TextImageRelation.TextBeforeImage;
 	{{endregion}}
@@ -37,7 +37,7 @@ Use the __TextImageRelation__ property to align the image with text. Note that t
 
 #### __[VB.NET]__
 
-{{region alignments}}
+{{source=..\SamplesVB\Buttons\RadioButtonDesigning.vb region=alignments}}
 	        Me.radRadioButton10.RadioCheckAlignment = ContentAlignment.MiddleRight
 	        Me.radRadioButton10.TextImageRelation = TextImageRelation.TextBeforeImage
 	{{endregion}}
@@ -50,7 +50,7 @@ To add multiple lines to radio button text in code use the newline "\n" characte
 
 #### __[C#] Adding multiple lines__
 
-{{region settingText}}
+{{source=..\SamplesCS\Buttons\RadioButtonDesigning.cs region=settingText}}
 	            radRadioButton1.Text = "One line" + System.Environment.NewLine + "Another line";
 	{{endregion}}
 
@@ -58,7 +58,7 @@ To add multiple lines to radio button text in code use the newline "\n" characte
 
 #### __[VB.NET]  Adding multiple lines__
 
-{{region settingText}}
+{{source=..\SamplesVB\Buttons\RadioButtonDesigning.vb region=settingText}}
 	        RadRadioButton1.Text = "One line" + System.Environment.NewLine + "Another line"
 	{{endregion}}
 

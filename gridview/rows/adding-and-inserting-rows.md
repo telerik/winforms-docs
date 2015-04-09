@@ -27,7 +27,7 @@ __RadGridView.Rows.AddNew()__ adds an empty row and allows the user to enter a v
 
 #### __[C#]__
 
-{{region addNewRow}}
+{{source=..\SamplesCS\GridView\Rows\AddingAndInsertingRows.cs region=addNewRow}}
 	            radGridView1.Rows.AddNew();
 	{{endregion}}
 
@@ -35,7 +35,7 @@ __RadGridView.Rows.AddNew()__ adds an empty row and allows the user to enter a v
 
 #### __[VB.NET]__
 
-{{region addNewRow}}
+{{source=..\SamplesVB\GridView\Rows\AddingAndInsertingRows.vb region=addNewRow}}
 	        RadGridView1.Rows.AddNew()
 	{{endregion}}
 
@@ -47,7 +47,7 @@ __RadGridView.Rows.Add(value_for_first_column, value_for_second_column, value_fo
 
 #### __[C#]__
 
-{{region addRow}}
+{{source=..\SamplesCS\GridView\Rows\AddingAndInsertingRows.cs region=addRow}}
 	            radGridView1.Rows.Add("Adding New Row", 12.5, DateTime.Now, true);
 	{{endregion}}
 
@@ -55,7 +55,7 @@ __RadGridView.Rows.Add(value_for_first_column, value_for_second_column, value_fo
 
 #### __[VB.NET]__
 
-{{region addRow}}
+{{source=..\SamplesVB\GridView\Rows\AddingAndInsertingRows.vb region=addRow}}
 	        RadGridView1.Rows.Add("Adding New Row", 12.5, DateTime.Now, True)
 	{{endregion}}
 
@@ -67,7 +67,7 @@ You can also add rows by creating an instance of __GridViewDataRowInfo__ and add
 
 #### __[C#]__
 
-{{region addRowWithRowInfo}}
+{{source=..\SamplesCS\GridView\Rows\AddingAndInsertingRows.cs region=addRowWithRowInfo}}
 	            GridViewDataRowInfo rowInfo = new GridViewDataRowInfo(this.radGridView1.MasterView);
 	            rowInfo.Cells[0].Value = "GridViewDataRowInfo";
 	            rowInfo.Cells[1].Value = 11.4;
@@ -80,7 +80,7 @@ You can also add rows by creating an instance of __GridViewDataRowInfo__ and add
 
 #### __[VB.NET]__
 
-{{region addRowWithRowInfo}}
+{{source=..\SamplesVB\GridView\Rows\AddingAndInsertingRows.vb region=addRowWithRowInfo}}
 	        Dim rowInfo As New GridViewDataRowInfo(Me.RadGridView1.MasterView)
 	        rowInfo.Cells(0).Value = "GridViewDataRowInfo"
 	        rowInfo.Cells(1).Value = 11.4
@@ -99,7 +99,7 @@ Rows can be inserted at a specified position by using the __Insert__ method of t
 
 #### __[C#]__
 
-{{region insertRow}}
+{{source=..\SamplesCS\GridView\Rows\AddingAndInsertingRows.cs region=insertRow}}
 	            GridViewDataRowInfo dataRowInfo = new GridViewDataRowInfo(this.radGridView1.MasterView);
 	            dataRowInfo.Cells[0].Value = "Inserted Row";
 	            dataRowInfo.Cells[1].Value = 1156.54;
@@ -111,7 +111,7 @@ Rows can be inserted at a specified position by using the __Insert__ method of t
 
 #### __[VB.NET]__
 
-{{region insertRow}}
+{{source=..\SamplesVB\GridView\Rows\AddingAndInsertingRows.vb region=insertRow}}
 	        Dim dataRowInfo As New GridViewDataRowInfo(Me.RadGridView1.MasterView)
 	        rowInfo.Cells(0).Value = "Inserted Row"
 	        rowInfo.Cells(1).Value = 1154.54

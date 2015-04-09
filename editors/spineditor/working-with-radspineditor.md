@@ -28,7 +28,7 @@ __ThousandsSeparator__: This property when true displays a thousands separator.
 
 #### __[C#] Setting the Thousands separator__
 
-{{region thousandsSeparator}}
+{{source=..\SamplesCS\Editors\SpinEditor1.cs region=thousandsSeparator}}
 	        void Form1_Load(object sender, EventArgs e)
 	        {
 	            Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
@@ -41,7 +41,7 @@ __ThousandsSeparator__: This property when true displays a thousands separator.
 
 #### __[VB.NET] Setting the Thousands separator__
 
-{{region thousandsSeparator}}
+{{source=..\SamplesVB\Editors\SpinEditor1.vb region=thousandsSeparator}}
 	    Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 	        Thread.CurrentThread.CurrentCulture = New CultureInfo("de-DE")
 	        RadSpinEditor1.DecimalPlaces = 2
@@ -57,7 +57,7 @@ __ValueChanging__: This event fires before the value has changed and allows you
 
 #### __[C#] Cancel changing the value__
 
-{{region cancelChanging}}
+{{source=..\SamplesCS\Editors\SpinEditor1.cs region=cancelChanging}}
 	        void radSpinEditor1_ValueChanging(object sender, Telerik.WinControls.UI.ValueChangingEventArgs e)
 	        {
 	            e.Cancel = Convert.ToDecimal(e.NewValue) * 2 > Convert.ToDecimal(e.OldValue);
@@ -68,7 +68,7 @@ __ValueChanging__: This event fires before the value has changed and allows you
 
 #### __[VB.NET] Cancel changing the value__
 
-{{region cancelChanging}}
+{{source=..\SamplesVB\Editors\SpinEditor1.vb region=cancelChanging}}
 	    Private Sub RadSpinEditor1_ValueChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ValueChangingEventArgs) Handles RadSpinEditor1.ValueChanging
 	        e.Cancel = Convert.ToDecimal(e.NewValue) * 2 > Convert.ToDecimal(e.OldValue)
 	    End Sub

@@ -19,7 +19,7 @@ To filter a single data field by multiple values, you have to use the __Composit
 
 #### __[C#] Setting composite filter descriptors__
 
-{{region settingCompositeFilterDescriptors}}
+{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=settingCompositeFilterDescriptors}}
 	            CompositeFilterDescriptor compositeFilter = new CompositeFilterDescriptor();
 	            compositeFilter.FilterDescriptors.Add(new FilterDescriptor("UnitsInStock", FilterOperator.IsGreaterThan, 100));
 	            compositeFilter.FilterDescriptors.Add(new FilterDescriptor("ProductName", FilterOperator.StartsWith, "G"));
@@ -31,7 +31,7 @@ To filter a single data field by multiple values, you have to use the __Composit
 
 #### __[VB.NET] Setting composite filter descriptors__
 
-{{region settingCompositeFilterDescriptors}}
+{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=settingCompositeFilterDescriptors}}
 	        Dim compositeFilter As New CompositeFilterDescriptor()
 	        compositeFilter.FilterDescriptors.Add(New FilterDescriptor("UnitsInStock", FilterOperator.IsGreaterThan, 100))
 	        compositeFilter.FilterDescriptors.Add(New FilterDescriptor("ProductName", FilterOperator.StartsWith, "G"))
@@ -56,7 +56,7 @@ The composite filters allow you to create more complex filtering expressions. Su
 
 #### __[C#] Setting complex composite filter descriptors__
 
-{{region settingComplexCompositeFilterDescriptors}}
+{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=settingComplexCompositeFilterDescriptors}}
 	            CompositeFilterDescriptor compositeFilter1 = new CompositeFilterDescriptor();
 	            compositeFilter1.FilterDescriptors.Add(new FilterDescriptor("UnitsInStock", FilterOperator.IsGreaterThan, 100));
 	            compositeFilter1.FilterDescriptors.Add(new FilterDescriptor("ProductName", FilterOperator.StartsWith, "G"));
@@ -73,7 +73,7 @@ The composite filters allow you to create more complex filtering expressions. Su
 
 #### __[VB.NET] Setting complex composite filter descriptors__
 
-{{region settingComplexCompositeFilterDescriptors}}
+{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=settingComplexCompositeFilterDescriptors}}
 	        Dim compositeFilter1 As New CompositeFilterDescriptor()
 	        compositeFilter1.FilterDescriptors.Add(New FilterDescriptor("UnitsInStock", FilterOperator.IsGreaterThan, 100))
 	        compositeFilter1.FilterDescriptors.Add(New FilterDescriptor("ProductName", FilterOperator.StartsWith, "G"))

@@ -5,7 +5,7 @@ description: Range and RangeBar
 slug: chartview-series-types-range
 tags: range,and,rangebar
 published: True
-position: 14
+position: 15
 ---
 
 # Range and RangeBar
@@ -14,14 +14,14 @@ position: 14
 
 ## Range series
 
-The __Range__ series allows you to a define range with each data point. 
+The __Range__ series allows you to define range with each data point. 
         ![chartview-series-types-range 001](images/chartview-series-types-range001.png)
 
 You can use the following code to display a simple RangeSeries
 
 #### __[C#] __
 
-{{region Range}}
+{{source=..\SamplesCS\ChartView\Series\RangeAndRangeBarSeries.cs region=Range}}
 	            RangeSeries rangeSeries = new RangeSeries();
 	            rangeSeries.DataPoints.Add(new RangeDataPoint(9, 5, "January"));
 	            rangeSeries.DataPoints.Add(new RangeDataPoint(7, 2, "February"));
@@ -37,7 +37,7 @@ You can use the following code to display a simple RangeSeries
 
 #### __[VB.NET] __
 
-{{region Range}}
+{{source=..\SamplesVB\ChartView\Series\RangeAndRangeBarSeries.vb region=Range}}
 	        Dim rangeSeries As New RangeSeries()
 	        rangeSeries.DataPoints.Add(New RangeDataPoint(5, 9, "January"))
 	        rangeSeries.DataPoints.Add(New RangeDataPoint(7, 2, "February"))
@@ -75,7 +75,7 @@ You can use the following code to display a simple RangeBarSeries
 
 #### __[C#] __
 
-{{region Bar}}
+{{source=..\SamplesCS\ChartView\Series\RangeAndRangeBarSeries.cs region=Bar}}
 	            RangeBarSeries rangeBarSeries = new RangeBarSeries();
 	            rangeBarSeries.DataPoints.Add(new RangeDataPoint(7, 5, "January"));
 	            rangeBarSeries.DataPoints.Add(new RangeDataPoint(4, 2, "February"));
@@ -91,7 +91,7 @@ You can use the following code to display a simple RangeBarSeries
 
 #### __[VB.NET] __
 
-{{region Bar}}
+{{source=..\SamplesVB\ChartView\Series\RangeAndRangeBarSeries.vb region=Bar}}
 	        Dim rangeBarSeries As New RangeBarSeries()
 	        rangeBarSeries.DataPoints.Add(New RangeDataPoint(7, 5, "January"))
 	        rangeBarSeries.DataPoints.Add(New RangeDataPoint(4, 2, "February"))

@@ -30,7 +30,7 @@ RadDock exposes several properties which allow you to have full control over the
 
 #### __[C#] Setting DocumentTabsAlignment to Left__
 
-{{region documentTabsAlignment}}
+{{source=..\SamplesCS\Dock\TabsAndCaptions.cs region=documentTabsAlignment}}
 	            this.radDock1.DocumentTabsAlignment = TabStripAlignment.Left;
 	{{endregion}}
 
@@ -38,7 +38,7 @@ RadDock exposes several properties which allow you to have full control over the
 
 #### __[VB.NET] Setting DocumentTabsAlignment to Left__
 
-{{region documentTabsAlignment}}
+{{source=..\SamplesVB\Dock\TabsAndCaptions.vb region=documentTabsAlignment}}
 	        Me.RadDock1.DocumentTabsAlignment = TabStripAlignment.Left
 	{{endregion}}
 
@@ -49,7 +49,7 @@ RadDock exposes several properties which allow you to have full control over the
 
 #### __[C#] Hiding the document tabs__
 
-{{region documentTabsVisible}}
+{{source=..\SamplesCS\Dock\TabsAndCaptions.cs region=documentTabsVisible}}
 	            this.radDock1.DocumentTabsVisible = false;
 	{{endregion}}
 
@@ -57,7 +57,7 @@ RadDock exposes several properties which allow you to have full control over the
 
 #### __[VB.NET] Hiding the document tabs__
 
-{{region documentTabsVisible}}
+{{source=..\SamplesVB\Dock\TabsAndCaptions.vb region=documentTabsVisible}}
 	        Me.RadDock1.DocumentTabsVisible = False
 	{{endregion}}
 
@@ -68,7 +68,7 @@ RadDock exposes several properties which allow you to have full control over the
 
 #### __[C#] Setting the ToolTabsAlignment to Right__
 
-{{region toolTabsAlignment}}
+{{source=..\SamplesCS\Dock\TabsAndCaptions.cs region=toolTabsAlignment}}
 	            this.radDock1.ToolTabsAlignment = TabStripAlignment.Right;
 	{{endregion}}
 
@@ -76,7 +76,7 @@ RadDock exposes several properties which allow you to have full control over the
 
 #### __[VB.NET] Setting the ToolTabsAlignment to Right__
 
-{{region toolTabsAlignment}}
+{{source=..\SamplesVB\Dock\TabsAndCaptions.vb region=toolTabsAlignment}}
 	        Me.RadDock1.ToolTabsAlignment = TabStripAlignment.Right
 	{{endregion}}
 
@@ -86,7 +86,7 @@ RadDock exposes several properties which allow you to have full control over the
 
 #### __[C#] Hiding the tool tabs__
 
-{{region toolTabsVisible}}
+{{source=..\SamplesCS\Dock\TabsAndCaptions.cs region=toolTabsVisible}}
 	            this.radDock1.ToolTabsVisible = false;
 	{{endregion}}
 
@@ -94,7 +94,7 @@ RadDock exposes several properties which allow you to have full control over the
 
 #### __[VB.NET] Hiding the tool tabs__
 
-{{region toolTabsVisible}}
+{{source=..\SamplesVB\Dock\TabsAndCaptions.vb region=toolTabsVisible}}
 	        Me.RadDock1.ToolTabsVisible = False
 	{{endregion}}
 
@@ -105,7 +105,7 @@ RadDock exposes several properties which allow you to have full control over the
 
 #### __[C#] Hiding the caption of ToolTabStrip__
 
-{{region captionVisible}}
+{{source=..\SamplesCS\Dock\TabsAndCaptions.cs region=captionVisible}}
 	            this.toolTabStrip1.CaptionVisible = false;
 	{{endregion}}
 
@@ -113,7 +113,7 @@ RadDock exposes several properties which allow you to have full control over the
 
 #### __[VB.NET] Hiding the caption of ToolTabStrip__
 
-{{region captionVisible}}
+{{source=..\SamplesVB\Dock\TabsAndCaptions.vb region=captionVisible}}
 	        Me.ToolTabStrip1.CaptionVisible = False
 	{{endregion}}
 
@@ -124,7 +124,7 @@ RadDock exposes several properties which allow you to have full control over the
 
 #### __[C#] Showing close buttons__
 
-{{region showToolCloseButton}}
+{{source=..\SamplesCS\Dock\TabsAndCaptions.cs region=showToolCloseButton}}
 	            this.radDock1.ShowToolCloseButton = true;
 	            this.radDock1.ShowDocumentCloseButton = true;
 	{{endregion}}
@@ -133,7 +133,7 @@ RadDock exposes several properties which allow you to have full control over the
 
 #### __[VB.NET] Showing close buttons__
 
-{{region showToolCloseButton}}
+{{source=..\SamplesVB\Dock\TabsAndCaptions.vb region=showToolCloseButton}}
 	        Me.RadDock1.ShowToolCloseButton = True
 	        Me.RadDock1.ShowDocumentCloseButton = True
 	{{endregion}}

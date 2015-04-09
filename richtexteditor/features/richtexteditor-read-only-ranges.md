@@ -49,7 +49,7 @@ When the document is measured (for example, shown in a __RadRichTextEditor__), y
 
 #### __[C#] __
 
-{{region insert}}
+{{source=..\SamplesCS\RichTextEditor\Features\ReadOnlyRanges.cs region=insert}}
 	            
 	            this.radRichTextEditor1.InsertReadOnlyRange();
 	            
@@ -59,7 +59,7 @@ When the document is measured (for example, shown in a __RadRichTextEditor__), y
 
 #### __[VB.NET] __
 
-{{region insert}}
+{{source=..\SamplesVB\RichTextEditor\Features\ReadOnlyRanges.vb region=insert}}
 	
 	        Me.radRichTextEditor1.InsertReadOnlyRange()
 	
@@ -120,7 +120,7 @@ As opposed to when inserting with one of the methods of __RadRichTextEditor__, w
 
 #### __[C#] __
 
-{{region add}}
+{{source=..\SamplesCS\RichTextEditor\Features\ReadOnlyRanges.cs region=add}}
 	            
 	            RadDocument document = new RadDocument();
 	            Section section = new Section();
@@ -148,7 +148,7 @@ As opposed to when inserting with one of the methods of __RadRichTextEditor__, w
 
 #### __[VB.NET] __
 
-{{region add}}
+{{source=..\SamplesVB\RichTextEditor\Features\ReadOnlyRanges.vb region=add}}
 	
 	        Dim document As New RadDocument()
 	        Dim section As New Section()
@@ -199,7 +199,7 @@ In order to remove a read only range, you should simply call the __DeleteReadOnl
 
 #### __[C#] __
 
-{{region delete}}
+{{source=..\SamplesCS\RichTextEditor\Features\ReadOnlyRanges.cs region=delete}}
 	            
 	            this.radRichTextEditor1.DeleteReadOnlyRange();
 	            
@@ -209,7 +209,7 @@ In order to remove a read only range, you should simply call the __DeleteReadOnl
 
 #### __[VB.NET] __
 
-{{region delete}}
+{{source=..\SamplesVB\RichTextEditor\Features\ReadOnlyRanges.vb region=delete}}
 	
 	        Me.radRichTextEditor1.DeleteReadOnlyRange()
 	
@@ -238,7 +238,7 @@ Additionally, if you can obtain a reference to a particular __ReadOnlyRangeStart
 
 #### __[C#] __
 
-{{region start}}
+{{source=..\SamplesCS\RichTextEditor\Features\ReadOnlyRanges.cs region=start}}
 	            
 	            ReadOnlyRangeStart start = this.radRichTextEditor1.Document.EnumerateChildrenOfType<ReadOnlyRangeStart>().Where(x => x.Tag == "ReadOnly").FirstOrDefault();
 	            if (start != null)
@@ -252,7 +252,7 @@ Additionally, if you can obtain a reference to a particular __ReadOnlyRangeStart
 
 #### __[VB.NET] __
 
-{{region start}}
+{{source=..\SamplesVB\RichTextEditor\Features\ReadOnlyRanges.vb region=start}}
 	
 	        Dim start As ReadOnlyRangeStart = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of ReadOnlyRangeStart)().Where(Function(x) x.Tag = "ReadOnly").FirstOrDefault()
 	        If start IsNot Nothing Then

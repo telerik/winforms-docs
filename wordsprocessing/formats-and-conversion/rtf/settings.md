@@ -31,7 +31,7 @@ The following code snippet shows how you can create and specify particular expor
 
 #### __C#__
 
-{{region radwordsprocessing-formats-and-conversion-rtf-settings_0}}
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingSettings.cs region=radwordsprocessing-formats-and-conversion-rtf-settings_0}}
 	            RtfFormatProvider provider = new RtfFormatProvider();
 	            RtfExportSettings exportSettings = new RtfExportSettings();
 	            exportSettings.ExportImagesInCompatibilityMode = true;
@@ -42,7 +42,7 @@ The following code snippet shows how you can create and specify particular expor
 
 #### __VB__
 
-{{region radwordsprocessing-formats-and-conversion-rtf-settings_0}}
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-rtf-settings_0}}
 	            Dim provider As New RtfFormatProvider()
 	            Dim exportSettings As New RtfExportSettings()
 	            exportSettings.ExportImagesInCompatibilityMode = True

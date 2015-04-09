@@ -53,7 +53,7 @@ Now that we have all variables from the formula above, let us start constructing
 
 #### __[C#] __
 
-{{region DIIndicator}}
+{{source=..\SamplesCS\ChartView\Series\Indicators\CustomIndicatorsDIForm.cs region=DIIndicator}}
 	    public class DisparityIndexIndicator: ExponentialMovingAverageIndicator
 	    {
 	        public override double GetProcessedValue(int currentIndex)
@@ -72,7 +72,7 @@ Now that we have all variables from the formula above, let us start constructing
 
 #### __[VB.NET] __
 
-{{region DIIndicator}}
+{{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsDIForm.vb region=DIIndicator}}
 	Public Class DisparityIndexIndicator
 	    Inherits ExponentialMovingAverageIndicator
 	    Public Overrides Function GetProcessedValue(currentIndex As Integer) As Double
@@ -97,7 +97,7 @@ Now let’s a new __DI__ indicator instance and add it to our __RadChartView__.
 
 #### __[C#] __
 
-{{region CustomObject}}
+{{source=..\SamplesCS\ChartView\Series\Indicators\CustomIndicatorsDIForm.cs region=CustomObject}}
 	    public class ClosingPriceObject : INotifyPropertyChanged
 	    {
 	        private double close;
@@ -151,7 +151,7 @@ Now let’s a new __DI__ indicator instance and add it to our __RadChartView__.
 
 #### __[C#] __
 
-{{region CreateData}}
+{{source=..\SamplesCS\ChartView\Series\Indicators\CustomIndicatorsDIForm.cs region=CreateData}}
 	            BindingList<ClosingPriceObject> dataSource = new BindingList<ClosingPriceObject>();
 	            dataSource.Add(new ClosingPriceObject(4, DateTime.Now));
 	            dataSource.Add(new ClosingPriceObject(7, DateTime.Now.AddDays(1)));
@@ -168,7 +168,7 @@ Now let’s a new __DI__ indicator instance and add it to our __RadChartView__.
 
 #### __[C#] __
 
-{{region SetupDIIndicator}}
+{{source=..\SamplesCS\ChartView\Series\Indicators\CustomIndicatorsDIForm.cs region=SetupDIIndicator}}
 	            DisparityIndexIndicator indicator = new DisparityIndexIndicator();
 	            indicator.ValueMember = "Close";
 	            indicator.CategoryMember = "Date";
@@ -183,7 +183,7 @@ Now let’s a new __DI__ indicator instance and add it to our __RadChartView__.
 
 #### __[VB.NET] __
 
-{{region CustomObject}}
+{{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsDIForm.vb region=CustomObject}}
 	Public Class ClosingPriceObject
 	    Implements INotifyPropertyChanged
 	
@@ -226,7 +226,7 @@ Now let’s a new __DI__ indicator instance and add it to our __RadChartView__.
 
 #### __[VB.NET] __
 
-{{region CreateData}}
+{{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsDIForm.vb region=CreateData}}
 	        Dim dataSource As New BindingList(Of ClosingPriceObject)()
 	        dataSource.Add(New ClosingPriceObject(4, DateTime.Now))
 	        dataSource.Add(New ClosingPriceObject(7, DateTime.Now.AddDays(1)))
@@ -243,7 +243,7 @@ Now let’s a new __DI__ indicator instance and add it to our __RadChartView__.
 
 #### __[VB.NET] __
 
-{{region SetupDIIndicator}}
+{{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsDIForm.vb region=SetupDIIndicator}}
 	        Dim indicator As New DisparityIndexIndicator
 	        indicator.Period = 5
 	        indicator.ValueMember = "Close"
@@ -283,7 +283,7 @@ Because __Moving Average Envelopes__ requires a property that sets the bands per
 
 #### __[C#] __
 
-{{region MAEBase}}
+{{source=..\SamplesCS\ChartView\Series\Indicators\CustomIndicatorsMAForm.cs region=MAEBase}}
 	    public class MovingAverageEnvelopeBase : MovingAverageIndicator
 	    {
 	        public static readonly RadProperty PercentProperty = RadProperty.Register("Percent", typeof(double), typeof(MovingAverageEnvelopeBase), new RadPropertyMetadata(0d));
@@ -306,7 +306,7 @@ Because __Moving Average Envelopes__ requires a property that sets the bands per
 
 #### __[VB.NET] __
 
-{{region MAEBase}}
+{{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsMAForm.vb region=MAEBase}}
 	Public Class MovingAverageEnvelopeBase
 	    Inherits MovingAverageIndicator
 	    Public Shared ReadOnly PercentProperty As RadProperty = RadProperty.Register("Percent", GetType(Double), GetType(MovingAverageEnvelopeBase), New RadPropertyMetadata(0.0))
@@ -336,7 +336,7 @@ Let’s now create two classes: __MovingAverageEnvelopeChild__, containing the l
 
 #### __[C#] __
 
-{{region MAEChild}}
+{{source=..\SamplesCS\ChartView\Series\Indicators\CustomIndicatorsMAForm.cs region=MAEChild}}
 	    public class MovingAverageEnvelopeChild : MovingAverageEnvelopeBase, IChildIndicator
 	    {
 	        MovingAverageEnvelopeIndicator owner;
@@ -365,7 +365,7 @@ Let’s now create two classes: __MovingAverageEnvelopeChild__, containing the l
 
 #### __[VB.NET] __
 
-{{region MAEChild}}
+{{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsMAForm.vb region=MAEChild}}
 	Public Class MovingAverageEnvelopeChild
 	    Inherits MovingAverageEnvelopeBase
 	    Implements IChildIndicator
@@ -406,7 +406,7 @@ The __MovingAverageEnvelopeIndicator__ class requires a bit more steps that the 
 
 #### __[C#] __
 
-{{region MAEIndicator}}
+{{source=..\SamplesCS\ChartView\Series\Indicators\CustomIndicatorsMAForm.cs region=MAEIndicator}}
 	    public class MovingAverageEnvelopeIndicator : MovingAverageEnvelopeBase, IParentIndicator
 	    {
 	        MovingAverageEnvelopeChild childIndicator;
@@ -473,7 +473,7 @@ The __MovingAverageEnvelopeIndicator__ class requires a bit more steps that the 
 
 #### __[VB.NET] __
 
-{{region MAEIndicator}}
+{{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsMAForm.vb region=MAEIndicator}}
 	Public Class MovingAverageEnvelopeIndicator
 	    Inherits MovingAverageEnvelopeBase
 	    Implements IParentIndicator
@@ -539,7 +539,7 @@ Now that we have the __MovingAverageEnvelopeIndicator__ ready, let us set up som
 
 #### __[C#] __
 
-{{region CustomObject}}
+{{source=..\SamplesCS\ChartView\Series\Indicators\IndicatorsOverViewForm.cs region=CustomObject}}
 	    public class OhlcObject : INotifyPropertyChanged
 	    {
 	        private double open;
@@ -636,7 +636,7 @@ Now that we have the __MovingAverageEnvelopeIndicator__ ready, let us set up som
 
 #### __[C#] __
 
-{{region CreateDataAndSetupIndicator}}
+{{source=..\SamplesCS\ChartView\Series\Indicators\CustomIndicatorsMAForm.cs region=CreateDataAndSetupIndicator}}
 	            BindingList<OhlcObject> dataSource = new BindingList<OhlcObject>();
 	            dataSource.Add(new OhlcObject(17, 18, 12, 14, DateTime.Now));
 	            dataSource.Add(new OhlcObject(16, 17, 11, 17, DateTime.Now.AddDays(1)));
@@ -691,7 +691,7 @@ Now that we have the __MovingAverageEnvelopeIndicator__ ready, let us set up som
 
 #### __[VB.NET] __
 
-{{region CustomObject}}
+{{source=..\SamplesVB\ChartView\Series\Indicators\IndicatorsOverViewForm.vb region=CustomObject}}
 	Public Class OhlcObject
 	    Implements INotifyPropertyChanged
 	
@@ -769,7 +769,7 @@ Now that we have the __MovingAverageEnvelopeIndicator__ ready, let us set up som
 
 #### __[VB.NET] __
 
-{{region CreateDataAndSetupIndicator}}
+{{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsMAForm.vb region=CreateDataAndSetupIndicator}}
 	        Dim dataSource As New BindingList(Of OhlcObject)()
 	        dataSource.Add(New OhlcObject(17, 18, 12, 14, DateTime.Now))
 	        dataSource.Add(New OhlcObject(16, 17, 11, 17, DateTime.Now.AddDays(1)))

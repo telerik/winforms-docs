@@ -20,7 +20,7 @@ To iterate thought the cells in __RadPivotGrid__ you should first retrieve all r
 
 #### __C#__
 
-{{region IterateCells}}
+{{source=..\SamplesCS\PivotGrid\IteratingCells.cs region=IterateCells}}
 	            
 	            var rowGroups = radPivotGrid1.PivotGridElement.GetRowGroups();
 	            var colGroups = radPivotGrid1.PivotGridElement.GetColumnGroups();
@@ -42,7 +42,7 @@ To iterate thought the cells in __RadPivotGrid__ you should first retrieve all r
 
 #### __VB.NET__
 
-{{region IterateCells}}
+{{source=..\SamplesVB\PivotGrid\PivotIteratingCells.vb region=IterateCells}}
 	
 	        Dim rowGroups = radPivotGrid1.PivotGridElement.GetRowGroups()
 	        Dim colGroups = radPivotGrid1.PivotGridElement.GetColumnGroups()
@@ -86,7 +86,7 @@ Using the above approach you can determine if a cell is selected or programmatic
 
 #### __C#__
 
-{{region select}}
+{{source=..\SamplesCS\PivotGrid\IteratingCells.cs region=select}}
 	                        
 	                        // Print the values of the selected cells.
 	                        if (radPivotGrid1.PivotGridElement.IsCellSelected(row, col))
@@ -104,7 +104,7 @@ Using the above approach you can determine if a cell is selected or programmatic
 
 #### __VB.NET__
 
-{{region select}}
+{{source=..\SamplesVB\PivotGrid\PivotIteratingCells.vb region=select}}
 	
 	                    ' Print the values of the selected cells.
 	                    If radPivotGrid1.PivotGridElement.IsCellSelected(row, col) Then

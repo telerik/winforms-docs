@@ -25,7 +25,7 @@ Here is what __CartesianGridLineAnnotation__ looks like:
 
 #### __[C#] __
 
-{{region CartesianGridLine}}
+{{source=..\SamplesCS\ChartView\Annotations\GridLine.cs region=CartesianGridLine}}
 	            CartesianGridLineAnnotation annotation1 = new CartesianGridLineAnnotation();
 	            annotation1.Axis = this.radChartView1.Axes[1] as CartesianAxis;
 	            annotation1.Value = 5.8;
@@ -47,7 +47,7 @@ Here is what __CartesianGridLineAnnotation__ looks like:
 
 #### __[VB] __
 
-{{region CartesianGridLine}}
+{{source=..\SamplesVB\ChartView\Annotations\GridLine.vb region=CartesianGridLine}}
 	        Dim annotation1 As New CartesianGridLineAnnotation()
 	        annotation1.Axis = TryCast(Me.radChartView1.Axes(1), CartesianAxis)
 	        annotation1.Value = 5.8
@@ -150,7 +150,7 @@ Here is what __PolarAxisGridLineAnnotation__ looks like:
 
 #### __[C#] __
 
-{{region PolarGridLine}}
+{{source=..\SamplesCS\ChartView\Annotations\GridLine.cs region=PolarGridLine}}
 	            PolarAxisGridLineAnnotation annotation1 = new PolarAxisGridLineAnnotation();
 	            annotation1.Value = 2;
 	            annotation1.BorderColor = Color.Red;
@@ -177,7 +177,7 @@ Here is what __PolarAxisGridLineAnnotation__ looks like:
 
 #### __[VB] __
 
-{{region PolarGridLine}}
+{{source=..\SamplesVB\ChartView\Annotations\GridLine.vb region=PolarGridLine}}
 	        Dim annotation1 As New PolarAxisGridLineAnnotation()
 	        annotation1.Value = 2
 	        annotation1.BorderColor = Color.Red
@@ -250,7 +250,7 @@ Here is what __RadialAxisGridLineAnnotation__ looks like:
 
 #### __[C#] __
 
-{{region RadialGridLine}}
+{{source=..\SamplesCS\ChartView\Annotations\GridLine.cs region=RadialGridLine}}
 	            RadialAxisGridLineAnnotation annotation1 = new RadialAxisGridLineAnnotation();            
 	            annotation1.Value = 30;
 	            annotation1.BorderColor = Color.Red;
@@ -277,7 +277,7 @@ Here is what __RadialAxisGridLineAnnotation__ looks like:
 
 #### __[VB] __
 
-{{region RadialGridLine}}
+{{source=..\SamplesVB\ChartView\Annotations\GridLine.vb region=RadialGridLine}}
 	        Dim annotation1 As New RadialAxisGridLineAnnotation()
 	        annotation1.Value = 30
 	        annotation1.BorderColor = Color.Red

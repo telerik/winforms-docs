@@ -23,7 +23,7 @@ Columns in RadGridView can be pinned which will result in the pinned columns bei
 
 #### __[C#] Pinning a single columns__
 
-{{region pinningColumns}}
+{{source=..\SamplesCS\GridView\Columns\PinningAndUnpinningColumns.cs region=pinningColumns}}
 	            radGridView1.Columns[2].IsPinned = true;
 	            radGridView1.Columns["FirstName"].IsPinned = true;
 	{{endregion}}
@@ -32,7 +32,7 @@ Columns in RadGridView can be pinned which will result in the pinned columns bei
 
 #### __[VB.NET] Pinning a single columns__
 
-{{region pinningColumns}}
+{{source=..\SamplesVB\GridView\Columns\PinningAndUnpinningColumns.vb region=pinningColumns}}
 	        Me.RadGridView1.Columns(2).IsPinned = True
 	        'or you can use
 	        Me.RadGridView1.Columns("FirstName").IsPinned = True
@@ -51,7 +51,7 @@ Multiple column pinning is also possible. Simply set either the __IsPinned__ pro
 
 #### __[C#] Pinning multiple columns__
 
-{{region pinMultipleColumns}}
+{{source=..\SamplesCS\GridView\Columns\PinningAndUnpinningColumns.cs region=pinMultipleColumns}}
 	            radGridView1.Columns["Photo"].PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left;
 	            radGridView1.Columns["FirstName"].PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left;
 	            radGridView1.Columns["LastName"].PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left;
@@ -61,7 +61,7 @@ Multiple column pinning is also possible. Simply set either the __IsPinned__ pro
 
 #### __[VB.NET] Pinning multiple columns__
 
-{{region pinMultipleColumns}}
+{{source=..\SamplesVB\GridView\Columns\PinningAndUnpinningColumns.vb region=pinMultipleColumns}}
 	        Me.RadGridView1.Columns("Photo").PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left
 	        Me.RadGridView1.Columns("FirstName").PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left
 	        Me.RadGridView1.Columns("LastName").PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left

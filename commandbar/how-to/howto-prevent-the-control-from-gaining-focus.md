@@ -26,7 +26,7 @@ Currently, RadCommandBar receives the focus. One can easily override this behavi
 
 #### __[C#] __
 
-{{region ForbidFocus}}
+{{source=..\SamplesCS\CommandBar\HowTo\MakeRadCommandBarUnfocusable.cs region=ForbidFocus}}
 	    class MyCommandBar : RadCommandBar
 	    {
 	        public override string ThemeClassName
@@ -48,7 +48,7 @@ Currently, RadCommandBar receives the focus. One can easily override this behavi
 
 #### __[VB.NET] __
 
-{{region ForbidFocus}}
+{{source=..\SamplesVB\CommandBar\HowTo\MakeRadCommandBarUnfocusable.vb region=ForbidFocus}}
 	Class MyCommandBar
 	    Inherits RadCommandBar
 	    Public Overrides Property ThemeClassName() As String

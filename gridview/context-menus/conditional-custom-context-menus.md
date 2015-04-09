@@ -24,7 +24,7 @@ Start by creating the context menus, initializing its items, and subscribing to 
 
 #### __[C#] Creating and assigning conditional context menu__
 
-{{region creatingAndChangingContextMenus}}
+{{source=..\SamplesCS\GridView\ContextMenus\ConditionalCustomContextMenus.cs region=creatingAndChangingContextMenus}}
 	        private RadContextMenu firstContextMenu = new RadContextMenu();
 	        private RadContextMenu secondContextMenu = new RadContextMenu();    
 	        void Form1_Load(object sender, EventArgs e)
@@ -70,7 +70,7 @@ Start by creating the context menus, initializing its items, and subscribing to 
 
 #### __[VB.NET] Creating and assigning conditional context menu__
 
-{{region creatingAndChangingContextMenus}}
+{{source=..\SamplesVB\GridView\ContextMenus\ConditionalCustomContextMenus.vb region=creatingAndChangingContextMenus}}
 	    Private firstContextMenu As New RadContextMenu()
 	    Private secondContextMenu As New RadContextMenu()
 	    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load

@@ -21,7 +21,7 @@ To use an html view we should instantiate HtmlViewDefinition and add the desired
 
 #### __[C#] Add rows and cells__
 
-{{region addRowsAndCells}}
+{{source=..\SamplesCS\GridView\ViewDefinitions\HTMLView1.cs region=addRowsAndCells}}
 	            HtmlViewDefinition view = new HtmlViewDefinition();
 	
 	            view.RowTemplate.Rows.Add(new RowDefinition());
@@ -37,7 +37,7 @@ To use an html view we should instantiate HtmlViewDefinition and add the desired
 
 #### __[VB.NET] Add rows and cells__
 
-{{region addRowsAndCells}}
+{{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=addRowsAndCells}}
 	        Dim view As New HtmlViewDefinition()
 	
 	        view.RowTemplate.Rows.Add(New RowDefinition())
@@ -58,7 +58,7 @@ The __HtmlViewDefinition__ adds row and column spanning feature like in html tab
 
 #### __[C#] Set column spans__
 
-{{region setColSpan}}
+{{source=..\SamplesCS\GridView\ViewDefinitions\HTMLView1.cs region=setColSpan}}
 	            view.RowTemplate.Rows[1].Cells[0].ColSpan = 2;
 	{{endregion}}
 
@@ -66,7 +66,7 @@ The __HtmlViewDefinition__ adds row and column spanning feature like in html tab
 
 #### __[VB.NET] Set column spans__
 
-{{region setColSpan}}
+{{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=setColSpan}}
 	        view.RowTemplate.Rows(1).Cells(0).ColSpan = 2
 	{{endregion}}
 
@@ -77,7 +77,7 @@ The __RowSpan__ property sets the row spanning:
 
 #### __[C#] Set row spans__
 
-{{region setRowSpan}}
+{{source=..\SamplesCS\GridView\ViewDefinitions\HTMLView1.cs region=setRowSpan}}
 	            view.RowTemplate.Rows[0].Cells[2].RowSpan = 2;
 	            view.RowTemplate.Rows[0].Cells[3].RowSpan = 2;
 	{{endregion}}
@@ -86,7 +86,7 @@ The __RowSpan__ property sets the row spanning:
 
 #### __[VB.NET] Set row spans__
 
-{{region setRowSpan}}
+{{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=setRowSpan}}
 	        view.RowTemplate.Rows(0).Cells(2).RowSpan = 2
 	        view.RowTemplate.Rows(0).Cells(3).RowSpan = 2
 	{{endregion}}
@@ -98,7 +98,7 @@ You have to set the __Height__ property of the __RowDefinition__ to change the r
 
 #### __[C#] Set row height__
 
-{{region setRowHeight}}
+{{source=..\SamplesCS\GridView\ViewDefinitions\HTMLView1.cs region=setRowHeight}}
 	            view.RowTemplate.Rows[0].Height = 40;
 	{{endregion}}
 
@@ -106,7 +106,7 @@ You have to set the __Height__ property of the __RowDefinition__ to change the r
 
 #### __[VB.NET] Set row height__
 
-{{region setRowHeight}}
+{{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=setRowHeight}}
 	        view.RowTemplate.Rows(0).Height = 40
 	{{endregion}}
 
@@ -124,7 +124,7 @@ Use the following code to load the definition:
 
 #### __[C#] Use html template__
 
-{{region useHtmlTemplate}}
+{{source=..\SamplesCS\GridView\ViewDefinitions\HTMLView1.cs region=useHtmlTemplate}}
 	            view.RowTemplate.ReadXml(@"..\..\GridView\ViewDefinitions\myViewDefinition.htm");
 	{{endregion}}
 
@@ -132,7 +132,7 @@ Use the following code to load the definition:
 
 #### __[VB.NET] Use html template__
 
-{{region useHtmlTemplate}}
+{{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=useHtmlTemplate}}
 	        view.RowTemplate.ReadXml("..\..\GridView\ViewDefinitions\myViewDefinition.htm")
 	{{endregion}}
 
@@ -142,7 +142,7 @@ At the end simply set the ViewDefinitions property of RadGridView to the newly c
 
 #### __[C#] Set the ViewDefinition property of RadGridView__
 
-{{region setTheViewDefinition}}
+{{source=..\SamplesCS\GridView\ViewDefinitions\HTMLView1.cs region=setTheViewDefinition}}
 	            radGridView1.ViewDefinition = view;
 	{{endregion}}
 
@@ -150,7 +150,7 @@ At the end simply set the ViewDefinitions property of RadGridView to the newly c
 
 #### __[VB.NET] Set the ViewDefinition property of RadGridView__
 
-{{region setTheViewDefinition}}
+{{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=setTheViewDefinition}}
 	        RadGridView1.ViewDefinition = view
 	{{endregion}}
 
@@ -160,7 +160,7 @@ Now load the data in the RadGridView
 
 #### __[C#] Load the data__
 
-{{region loadTheData}}
+{{source=..\SamplesCS\GridView\ViewDefinitions\HTMLView1.cs region=loadTheData}}
 	        private void HTMLView_Load(object sender, EventArgs e)
 	        {
 	            this.customersTableAdapter.Fill(this.nwindDataSet.Customers);
@@ -171,7 +171,7 @@ Now load the data in the RadGridView
 
 #### __[VB.NET] Load the data__
 
-{{region loadTheData}}
+{{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=loadTheData}}
 	    Private Sub HTMLView1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        Me.CustomersTableAdapter.Fill(Me.NwindDataSet.Customers)
 	    End Sub

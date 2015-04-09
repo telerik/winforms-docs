@@ -32,7 +32,7 @@ You can define the format of the group header row by using the __GroupDescriptor
 
 #### __[C#]__
 
-{{region GroupAggregates}}
+{{source=..\SamplesCS\GridView\Grouping\GroupAggregates.cs region=GroupAggregates}}
 	            GroupDescriptor descriptor = new GroupDescriptor();
 	            descriptor.GroupNames.Add("Country", ListSortDirection.Ascending);
 	            descriptor.Aggregates.Add("Count(Country)");
@@ -45,7 +45,7 @@ You can define the format of the group header row by using the __GroupDescriptor
 
 #### __[VB.NET]__
 
-{{region GroupAggregates}}
+{{source=..\SamplesVB\GridView\Grouping\GroupAggregates.vb region=GroupAggregates}}
 	        Dim descriptor As New GroupDescriptor()
 	        descriptor.GroupNames.Add("Country", ListSortDirection.Ascending)
 	        descriptor.Aggregates.Add("Count(Country)")
@@ -58,7 +58,7 @@ You can define the format of the group header row by using the __GroupDescriptor
 
 #### __[C#]__
 
-{{region GroupAggregates1}}
+{{source=..\SamplesCS\GridView\Grouping\GroupAggregates1.cs region=GroupAggregates1}}
 	            GroupDescriptor descriptor = new GroupDescriptor();
 	            descriptor.GroupNames.Add("ShipName", ListSortDirection.Ascending);
 	            descriptor.Aggregates.Add("Count(ShipName)");
@@ -73,7 +73,7 @@ You can define the format of the group header row by using the __GroupDescriptor
 
 #### __[VB.NET]__
 
-{{region GroupAggregates1}}
+{{source=..\SamplesVB\GridView\Grouping\GroupAggregates1.vb region=GroupAggregates1}}
 	        Dim descriptor As New GroupDescriptor()
 	        descriptor.GroupNames.Add("ShipName", ListSortDirection.Ascending)
 	        descriptor.Aggregates.Add("Count(ShipName)")

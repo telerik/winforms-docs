@@ -36,7 +36,7 @@ You can also add items to RadSplitButton in code at run time. The following exam
 
 #### __[C#] Adding a RadMenuItem__
 
-{{region items}}
+{{source=..\SamplesCS\Buttons\SplitButton.cs region=items}}
 	
 	        private void Form1_Load(object sender, EventArgs e)
 	        {
@@ -57,7 +57,7 @@ You can also add items to RadSplitButton in code at run time. The following exam
 
 #### __[VB.NET] Adding a RadMenuItem__
 
-{{region items}}
+{{source=..\SamplesVB\Buttons\SplitButton.vb region=items}}
 	
 	    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        Dim myRadMenuItem As New RadMenuItem()
@@ -78,7 +78,7 @@ Create item hierarchies in code by adding new __RadMenuItem__ objects to the __I
 
 #### __[C#] Adding a sub item__
 
-{{region subitems}}
+{{source=..\SamplesCS\Buttons\SplitButton1.cs region=subitems}}
 	
 	        private void Form1_Load(object sender, EventArgs e)
 	        {
@@ -102,7 +102,7 @@ Create item hierarchies in code by adding new __RadMenuItem__ objects to the __I
 
 #### __[VB.NET] Adding a sub item__
 
-{{region subitems}}
+{{source=..\SamplesVB\Buttons\SplitButton1.vb region=subitems}}
 	
 	    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        Dim mySubMenuItem As New RadMenuItem()
@@ -138,7 +138,7 @@ The default item is the item whose __Click__ event is triggered by the user pres
 
 #### __[C#] Assigning the default item__
 
-{{region mainItem}}
+{{source=..\SamplesCS\Buttons\SplitButton1.cs region=mainItem}}
 	
 	            radSplitButton1.DefaultItem = mainItem;
 	
@@ -148,7 +148,7 @@ The default item is the item whose __Click__ event is triggered by the user pres
 
 #### __[VB.NET] Assigning the default item__
 
-{{region mainItem}}
+{{source=..\SamplesVB\Buttons\SplitButton1.vb region=mainItem}}
 	
 	        radSplitButton1.DefaultItem = mainItem
 	

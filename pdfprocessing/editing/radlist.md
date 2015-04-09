@@ -41,7 +41,7 @@ The code snippet from __Example 1__ shows how to create a list with NumberedPare
 
 #### __[C#] Example 1: Create Numbered Parentheses List Template Type __
 
-{{region create}}
+{{source=..\SamplesCS\PdfProcessing\Editing\EditingList.cs region=create}}
 	            
 	            List numberedParenthesesList = new List(ListTemplateType.NumberedParentheses);
 	            
@@ -51,7 +51,7 @@ The code snippet from __Example 1__ shows how to create a list with NumberedPare
 
 #### __[VB.NET] Example 1: Create Numbered Parentheses List Template Type__
 
-{{region create}}
+{{source=..\SamplesVB\PdfProcessing\Editing\EditingList.vb region=create}}
 	
 	        Dim numberedParenthesesList As New List(ListTemplateType.NumberedParentheses)
 	
@@ -164,7 +164,7 @@ __Example 2__ shows how to create an empty list and add two custom list levels t
 
 #### __[C#] Example 2: Create Custom List Levels__
 
-{{region levels}}
+{{source=..\SamplesCS\PdfProcessing\Editing\EditingList.cs region=levels}}
 	            
 	            List list = new List();
 	            ListLevel levelZero = list.Levels.AddListLevel();
@@ -185,7 +185,7 @@ __Example 2__ shows how to create an empty list and add two custom list levels t
 
 #### __[VB.NET] Example 2: Create Custom List Levels__
 
-{{region levels}}
+{{source=..\SamplesVB\PdfProcessing\Editing\EditingList.vb region=levels}}
 	
 	        Dim list As New List()
 	        Dim levelZero As ListLevel = list.Levels.AddListLevel()
@@ -276,7 +276,7 @@ The following code snippet shows how to create the bullets of a numbered hierarc
 
 #### __[C#] Example 3: Create Custom Text Numbering Bullet__
 
-{{region bullet}}
+{{source=..\SamplesCS\PdfProcessing\Editing\EditingList.cs region=bullet}}
 	
 	            List list = new List();
 	            
@@ -306,7 +306,7 @@ The following code snippet shows how to create the bullets of a numbered hierarc
 
 #### __[VB.NET] Example 3: Create Custom Text Numbering Bullet__
 
-{{region bullet}}
+{{source=..\SamplesVB\PdfProcessing\Editing\EditingList.vb region=bullet}}
 	
 	        Dim list As New List()
 	
@@ -373,7 +373,7 @@ __Example 4__ shows how to create a list with __RadFixedDocumentEditor__ and ins
 
 #### __[C#] Example 4: Using Lists with RadFixedDocumentEditor__
 
-{{region editor}}
+{{source=..\SamplesCS\PdfProcessing\Editing\EditingList.cs region=editor}}
 	                
 	            using (RadFixedDocumentEditor editor = new RadFixedDocumentEditor(document))
 	            {            
@@ -394,7 +394,7 @@ __Example 4__ shows how to create a list with __RadFixedDocumentEditor__ and ins
 
 #### __[VB.NET] Example 4: Using Lists with RadFixedDocumentEditor__
 
-{{region editor}}
+{{source=..\SamplesVB\PdfProcessing\Editing\EditingList.vb region=editor}}
 	
 	        Using editor As New RadFixedDocumentEditor(New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument())
 	            Dim list As List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
@@ -437,7 +437,7 @@ As the __Block__ class has __Bullet__ and __IndentAfterBullet__ properties you c
 
 #### __[C#] Example 5: Using Lists with Block class__
 
-{{region block}}
+{{source=..\SamplesCS\PdfProcessing\Editing\EditingList.cs region=block}}
 	            List list = new List(ListTemplateType.BulletDefault);
 	            Block block = new Block();
 	            block.SetBullet(list, 0);
@@ -448,7 +448,7 @@ As the __Block__ class has __Bullet__ and __IndentAfterBullet__ properties you c
 
 #### __[VB.NET] Example 5: Using Lists with Block class__
 
-{{region block}}
+{{source=..\SamplesVB\PdfProcessing\Editing\EditingList.vb region=block}}
 	        Dim list As New List(ListTemplateType.BulletDefault)
 	        Dim block As New Block()
 	        block.SetBullet(list, 0)

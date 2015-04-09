@@ -29,7 +29,7 @@ The aim of this article is to demonstrate how you can achieve to look shown belo
 
 #### __[C#] Handling the ItemDataBound event__
 
-{{region itemDataBound}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\CustomizingItems.cs region=itemDataBound}}
 	        void radListControl1_ItemDataBound(object sender, ListItemDataBoundEventArgs args)
 	        {
 	            DataRowView view = (DataRowView)args.NewItem.DataBoundItem;
@@ -46,7 +46,7 @@ The aim of this article is to demonstrate how you can achieve to look shown belo
 
 #### __[VB.NET] Handling the ItemDataBound event__
 
-{{region itemDataBound}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\CustomizingItems.vb region=itemDataBound}}
 	    Private Sub radListControl1_ItemDataBound(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.ListItemDataBoundEventArgs)
 	        Dim view As DataRowView = CType(args.NewItem.DataBoundItem, DataRowView)
 	        args.NewItem.Text = "<html><b>" & view("TitleOfCourtesy") & "</b>" & " " & view("FirstName") & " " & view("LastName") & "<br><i>" & view("Title")
@@ -59,7 +59,7 @@ The aim of this article is to demonstrate how you can achieve to look shown belo
 
 #### __[C#] Image helper method__
 
-{{region getImageData}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\CustomizingItems.cs region=getImageData}}
 	        private bool HasOleContainerHeader(byte[] imageByteArray)
 	        {
 	            const byte OleByte0 = 21;
@@ -87,7 +87,7 @@ The aim of this article is to demonstrate how you can achieve to look shown belo
 
 #### __[VB.NET] Image helper method__
 
-{{region getImageData}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\CustomizingItems.vb region=getImageData}}
 	    Private Function HasOleContainerHeader(ByVal imageByteArray As Byte()) As Boolean
 	        Const OleByte0 As Byte = 21
 	        Const OleByte1 As Byte = 28
@@ -114,7 +114,7 @@ The aim of this article is to demonstrate how you can achieve to look shown belo
 
 #### __[C#] Setting AutoSizeItems__
 
-{{region autoSizeItems}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\CustomizingItems.cs region=autoSizeItems}}
 	            this.radListControl1.AutoSizeItems = true;
 	{{endregion}}
 
@@ -122,7 +122,7 @@ The aim of this article is to demonstrate how you can achieve to look shown belo
 
 #### __[VB.NET] Setting AutoSizeItems__
 
-{{region autoSizeItems}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\CustomizingItems.vb region=autoSizeItems}}
 	        Me.radListControl1.AutoSizeItems = True
 	{{endregion}}
 
@@ -133,7 +133,7 @@ The aim of this article is to demonstrate how you can achieve to look shown belo
 
 #### __[C#] Applying Padding to the visual list items__
 
-{{region creatingVisualListItem}}
+{{source=..\SamplesCS\DropDownListControl\ListControl\CustomizingItems.cs region=creatingVisualListItem}}
 	        void radListControl1_CreatingVisualListItem(object sender, CreatingVisualListItemEventArgs args)
 	        {
 	            RadListVisualItem visualItem = new RadListVisualItem();
@@ -146,7 +146,7 @@ The aim of this article is to demonstrate how you can achieve to look shown belo
 
 #### __[VB.NET] Applying Padding to the visual list items__
 
-{{region creatingVisualListItem}}
+{{source=..\SamplesVB\DropDownListControl\ListControl\CustomizingItems.vb region=creatingVisualListItem}}
 	    Private Sub radListControl1_CreatingVisualListItem(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.CreatingVisualListItemEventArgs)
 	        Dim visualItem As RadListVisualItem = New RadListVisualItem()
 	        visualItem.Padding = New Padding(5, 5, 0, 5)

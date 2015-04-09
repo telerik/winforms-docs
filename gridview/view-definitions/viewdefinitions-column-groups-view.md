@@ -20,7 +20,7 @@ Just as its name says, this view enables grouping of columns. Every column group
 
 #### __[C#] Create groups__
 
-{{region createGroups}}
+{{source=..\SamplesCS\GridView\ViewDefinitions\ColumnGroupsView.cs region=createGroups}}
 	            ColumnGroupsViewDefinition view = new ColumnGroupsViewDefinition();
 	            view.ColumnGroups.Add(new GridViewColumnGroup("Customer Contact"));
 	            view.ColumnGroups.Add(new GridViewColumnGroup("Details"));
@@ -32,7 +32,7 @@ Just as its name says, this view enables grouping of columns. Every column group
 
 #### __[VB.NET] Create groups__
 
-{{region createGroups}}
+{{source=..\SamplesVB\GridView\ViewDefinitions\ColumnGroupsView.vb region=createGroups}}
 	        Dim view As New ColumnGroupsViewDefinition()
 	        view.ColumnGroups.Add(New GridViewColumnGroup("Customer Contact"))
 	        view.ColumnGroups.Add(New GridViewColumnGroup("Details"))
@@ -46,7 +46,7 @@ Then add at least one row. This row will contain the desired columns:
 
 #### __[C#] Add rows to groups__
 
-{{region addRows}}
+{{source=..\SamplesCS\GridView\ViewDefinitions\ColumnGroupsView.cs region=addRows}}
 	            view.ColumnGroups[0].Rows.Add(new GridViewColumnGroupRow());
 	            view.ColumnGroups[0].Rows[0].Columns.Add(this.radGridView1.Columns["CompanyName"]);
 	            view.ColumnGroups[0].Rows[0].Columns.Add(this.radGridView1.Columns["ContactName"]);
@@ -66,7 +66,7 @@ Then add at least one row. This row will contain the desired columns:
 
 #### __[VB.NET] Add rows to groups__
 
-{{region addRows}}
+{{source=..\SamplesVB\GridView\ViewDefinitions\ColumnGroupsView.vb region=addRows}}
 	        view.ColumnGroups(0).Rows.Add(New GridViewColumnGroupRow())
 	        view.ColumnGroups(0).Rows(0).Columns.Add(Me.RadGridView1.Columns("CompanyName"))
 	        view.ColumnGroups(0).Rows(0).Columns.Add(Me.RadGridView1.Columns("ContactName"))
@@ -88,7 +88,7 @@ At the end simply set the ViewDefinitions property of RadGridView to the newly c
 
 #### __[C#] Set the ViewDefinition property of RadGridView__
 
-{{region setTheViewDefinition}}
+{{source=..\SamplesCS\GridView\ViewDefinitions\ColumnGroupsView.cs region=setTheViewDefinition}}
 	            radGridView1.ViewDefinition = view;
 	{{endregion}}
 
@@ -96,7 +96,7 @@ At the end simply set the ViewDefinitions property of RadGridView to the newly c
 
 #### __[VB.NET] Set the ViewDefinition property of RadGridView__
 
-{{region setTheViewDefinition}}
+{{source=..\SamplesVB\GridView\ViewDefinitions\ColumnGroupsView.vb region=setTheViewDefinition}}
 	        RadGridView1.ViewDefinition = view
 	{{endregion}}
 

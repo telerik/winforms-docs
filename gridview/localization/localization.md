@@ -33,7 +33,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[C#] Localizing RadGridView Strings__
 
-{{region myEnglishLocalizationProvider}}
+{{source=..\SamplesCS\GridView\Localization\MyEnglishRadGridLocalizationProvider.cs region=myEnglishLocalizationProvider}}
 	    public class MyEnglishRadGridLocalizationProvider : RadGridLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -254,7 +254,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[VB.NET] Localizing RadGridView Strings__
 
-{{region myEnglishLocalizationProvider}}
+{{source=..\SamplesVB\GridView\Localization\MyEnglishRadGridLocalizationProvider.vb region=myEnglishLocalizationProvider}}
 	Public Class MyEnglishRadGridLocalizationProvider
 	    Inherits RadGridLocalizationProvider
 	 
@@ -670,7 +670,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[C#] Assigning the Current Localization Provider__
 
-{{region localizeGrid}}
+{{source=..\SamplesCS\GridView\Localization\Localization1.cs region=localizeGrid}}
 	            RadGridLocalizationProvider.CurrentProvider = new MyEnglishRadGridLocalizationProvider();
 	{{endregion}}
 
@@ -678,7 +678,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[VB.NET] Assigning the Current Localization Provider__
 
-{{region localizeGrid}}
+{{source=..\SamplesVB\GridView\Localization\Localization1.vb region=localizeGrid}}
 	        RadGridLocalizationProvider.CurrentProvider = New MyEnglishRadGridLocalizationProvider()
 	{{endregion}}
 

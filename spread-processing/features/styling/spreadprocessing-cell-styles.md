@@ -102,7 +102,7 @@ __Example 1__ shows what including the __Number__ group looks like.
 
 #### __[C#] Example 1: Include Number group in CellStyle__
 
-{{region radspreadprocessing-features-styling-cell-styles_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.cs region=radspreadprocessing-features-styling-cell-styles_0}}
 	            Workbook workbook = new Workbook();
 	            CellStyle tempStyle = workbook.Styles["Bad"];
 	            tempStyle.IncludeNumber = true;
@@ -112,7 +112,7 @@ __Example 1__ shows what including the __Number__ group looks like.
 
 #### __VB__
 
-{{region radspreadprocessing-features-styling-cell-styles_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.vb region=radspreadprocessing-features-styling-cell-styles_0}}
 	        Dim workbook As New Workbook()
 	        Dim tempStyle As CellStyle = workbook.Styles("Bad")
 	        tempStyle.IncludeNumber = True
@@ -198,7 +198,7 @@ __Example 2__ creates a new style and applies it to cell *A1*.
 
 #### __[C#] Example 2: Create a style__
 
-{{region radspreadprocessing-features-styling-cell-styles_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.cs region=radspreadprocessing-features-styling-cell-styles_1}}
 	            Workbook workbook = new Workbook();
 	            workbook.Worksheets.Add();
 	
@@ -229,7 +229,7 @@ __Example 2__ creates a new style and applies it to cell *A1*.
 
 #### __VB__
 
-{{region radspreadprocessing-features-styling-cell-styles_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.vb region=radspreadprocessing-features-styling-cell-styles_1}}
 	        Dim workbook As New Workbook()
 	        workbook.Worksheets.Add()
 	
@@ -304,7 +304,7 @@ __Example 3__ obtains the Bad style from the styles collection of a workbook and
 
 #### __[C#] Example 3: Modify a style__
 
-{{region radspreadprocessing-features-styling-cell-styles_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.cs region=radspreadprocessing-features-styling-cell-styles_2}}
 	            Workbook workbook = new Workbook();
 	            workbook.Worksheets.Add();
 	
@@ -323,7 +323,7 @@ __Example 3__ obtains the Bad style from the styles collection of a workbook and
 
 #### __VB__
 
-{{region radspreadprocessing-features-styling-cell-styles_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.vb region=radspreadprocessing-features-styling-cell-styles_2}}
 	        Dim workbook As New Workbook()
 	        workbook.Worksheets.Add()
 	
@@ -364,7 +364,7 @@ __Example 4__
 
 #### __[C#] Example 4: Remove a style__
 
-{{region radspreadprocessing-features-styling-cell-styles_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.cs region=radspreadprocessing-features-styling-cell-styles_3}}
 	            Workbook workbook = new Workbook();
 	            workbook.Worksheets.Add();
 	

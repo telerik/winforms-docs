@@ -22,7 +22,7 @@ Start by creating the context menu, initializing its items, and subscribing for 
 
 #### __[C#] Creating the custom context menu__
 
-{{region creatingContextMenu}}
+{{source=..\SamplesCS\GridView\ContextMenus\CustomContextMenus.cs region=creatingContextMenu}}
 	        private RadContextMenu contextMenu;
 	        private void Form1_Load(object sender, EventArgs e)
 	        {
@@ -41,7 +41,7 @@ Start by creating the context menu, initializing its items, and subscribing for 
 
 #### __[VB.NET] Creating the custom context menu__
 
-{{region creatingContextMenu}}
+{{source=..\SamplesVB\GridView\ContextMenus\CustomContextMenus.vb region=creatingContextMenu}}
 	    Private contextMenu1 As RadContextMenu
 	    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        contextMenu1 = New RadContextMenu()
@@ -61,7 +61,7 @@ Once the menu object has been initialized and populated with menu items, it is r
 
 #### __[C#] Changing the default context menu__
 
-{{region changeTheContextMenu}}
+{{source=..\SamplesCS\GridView\ContextMenus\CustomContextMenus.cs region=changeTheContextMenu}}
 	        void radGridView1_ContextMenuOpening(object sender, ContextMenuOpeningEventArgs e)
 	        {
 	            e.ContextMenu = contextMenu.DropDown;
@@ -72,7 +72,7 @@ Once the menu object has been initialized and populated with menu items, it is r
 
 #### __[VB.NET] Changing the default context menu__
 
-{{region changeTheContextMenu}}
+{{source=..\SamplesVB\GridView\ContextMenus\CustomContextMenus.vb region=changeTheContextMenu}}
 	    Private Sub RadGridView1_ContextMenuOpening(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ContextMenuOpeningEventArgs) Handles RadGridView1.ContextMenuOpening
 	        e.ContextMenu = contextMenu1.DropDown
 	    End Sub

@@ -18,7 +18,7 @@ In order to implement keyboard navigation for rotating and selecting the carouse
 
 #### __[C#] Keyboard Navigation__
 
-{{region keyboardNavigation}}
+{{source=..\SamplesCS\Carousel\CarouselImplementKeyboardNavigation.cs region=keyboardNavigation}}
 	        public CarouselImplementKeyboardNavigation()
 	        {
 	            InitializeComponent();
@@ -49,7 +49,7 @@ In order to implement keyboard navigation for rotating and selecting the carouse
 
 #### __[VB.NET] Keyboard Navigation__
 
-{{region keyboardNavigation}}
+{{source=..\SamplesVB\Carousel\CarouselImplementKeyboardNavigation.vb region=keyboardNavigation}}
 	    Public Sub New()
 	        InitializeComponent()
 	        AddHandler Me.RadCarousel1.KeyUp, AddressOf radCarousel1_KeyUp

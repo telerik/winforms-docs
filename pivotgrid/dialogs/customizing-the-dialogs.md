@@ -20,7 +20,7 @@ To customize the dialogs in RadPivotGrid/RadPivotFieldList, you can either inher
 
 #### __[C#] __
 
-{{region MyAggregateOptionsDialog}}
+{{source=..\SamplesCS\PivotGrid\PivotGridDialogs.cs region=MyAggregateOptionsDialog}}
 	    class MyAggregateOptionsDialog : AggregateOptionsDialog
 	    {
 	        public override void LoadSettings(Telerik.Pivot.Core.PropertyAggregateDescriptionBase aggregateDescription)
@@ -35,7 +35,7 @@ To customize the dialogs in RadPivotGrid/RadPivotFieldList, you can either inher
 
 #### __[VB.NET] __
 
-{{region MyAggregateOptionsDialog}}
+{{source=..\SamplesVB\PivotGrid\PivotGridDialogs.vb region=MyAggregateOptionsDialog}}
 	Class MyAggregateOptionsDialog
 	    Inherits AggregateOptionsDialog
 	    Public Overrides Sub LoadSettings(aggregateDescription As Telerik.Pivot.Core.PropertyAggregateDescriptionBase)
@@ -63,7 +63,7 @@ When RadPivotGrid and RadPivotFieldList need a dialog, they use the __PivotGridD
 
 #### __[C#] __
 
-{{region MyDialogsFactory}}
+{{source=..\SamplesCS\PivotGrid\PivotGridDialogs.cs region=MyDialogsFactory}}
 	    class MyDialogsFactory : PivotGridDialogsFactory
 	    {
 	        public override IAggregateOptionsDialog CreateAggregateOptionsDialog()
@@ -77,7 +77,7 @@ When RadPivotGrid and RadPivotFieldList need a dialog, they use the __PivotGridD
 
 #### __[VB.NET] __
 
-{{region MyDialogsFactory}}
+{{source=..\SamplesVB\PivotGrid\PivotGridDialogs.vb region=MyDialogsFactory}}
 	Class MyDialogsFactory
 	    Inherits PivotGridDialogsFactory
 	    Public Overrides Function CreateAggregateOptionsDialog() As IAggregateOptionsDialog
@@ -92,7 +92,7 @@ Then, you need to assign it to RadPivotGrid and RadPivotFieldList:
 
 #### __[C#] __
 
-{{region SetFactories}}
+{{source=..\SamplesCS\PivotGrid\PivotGridDialogs.cs region=SetFactories}}
 	            this.radPivotGrid1.DialogsFactory = new MyDialogsFactory();
 	            this.radPivotFieldList1.DialogsFactory = new MyDialogsFactory();
 	{{endregion}}
@@ -101,7 +101,7 @@ Then, you need to assign it to RadPivotGrid and RadPivotFieldList:
 
 #### __[VB.NET] __
 
-{{region SetFactories}}
+{{source=..\SamplesVB\PivotGrid\PivotGridDialogs.vb region=SetFactories}}
 	        Me.radPivotGrid1.DialogsFactory = New MyDialogsFactory()
 	        Me.radPivotFieldList1.DialogsFactory = New MyDialogsFactory()
 	        '#End Region

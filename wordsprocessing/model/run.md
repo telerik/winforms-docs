@@ -27,7 +27,7 @@ The following code snippet creates a __Run__ elements and adds it to a
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-run_0}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingRun.cs region=radwordsprocessing-model-run_0}}
 	            Run run = new Run(document);
 	            paragraph.Inlines.Add(run);
 	
@@ -37,7 +37,7 @@ The following code snippet creates a __Run__ elements and adds it to a
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-run_0}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRun.vb region=radwordsprocessing-model-run_0}}
 	            Dim run As New Run(document)
 	            paragraph.Inlines.Add(run)
 	
@@ -84,7 +84,7 @@ You can add a run at a specific index in the __Inlines__ collection of a paragra
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-run_1}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingRun.cs region=radwordsprocessing-model-run_1}}
 	            Run run = new Run(document);
 	            paragraph.Inlines.Insert(0, run);
 	{{endregion}}
@@ -93,7 +93,7 @@ You can add a run at a specific index in the __Inlines__ collection of a paragra
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-run_1}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRun.vb region=radwordsprocessing-model-run_1}}
 	            Dim run As New Run(document)
 	            paragraph.Inlines.Insert(0, run)
 	            '#End Region
@@ -129,7 +129,7 @@ You can also use the __AddRun()__ method of the __Inlines__ collection of a para
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-run_2}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingRun.cs region=radwordsprocessing-model-run_2}}
 	            // Adds an empty run.
 	            Run run1 = paragraph.Inlines.AddRun();
 	
@@ -141,7 +141,7 @@ You can also use the __AddRun()__ method of the __Inlines__ collection of a para
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-run_2}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRun.vb region=radwordsprocessing-model-run_2}}
 	            ' Adds an empty run.
 	            Dim run1 As Run = paragraph.Inlines.AddRun()
 	
@@ -171,7 +171,7 @@ Inserting text in the document can also be achieved with the [](6a2a5fb7-6df2-48
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-run_3}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingRun.cs region=radwordsprocessing-model-run_3}}
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
 	
 	            // Adds new run to the document
@@ -185,7 +185,7 @@ Inserting text in the document can also be achieved with the [](6a2a5fb7-6df2-48
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-run_3}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRun.vb region=radwordsprocessing-model-run_3}}
 	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	
 	            ' Adds new run to the document

@@ -26,7 +26,7 @@ Firstly, we should start the drag and drop operation using the ListBox.__MouseMo
 
 #### __[C#]__
 
-{{region ListBoxToSchedulerStart}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\DragDropFromControl.cs region=ListBoxToSchedulerStart}}
 	                
 	        void listBox1_MouseMove(object sender, MouseEventArgs e)
 	        {
@@ -71,7 +71,7 @@ Firstly, we should start the drag and drop operation using the ListBox.__MouseMo
 
 #### __[VB.NET]__
 
-{{region ListBoxToSchedulerStart}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\DragDropFromControl.vb region=ListBoxToSchedulerStart}}
 	
 	    Private Sub listBox1_MouseMove(sender As Object, e As MouseEventArgs)
 	        If e.Button <> MouseButtons.Left Then
@@ -192,7 +192,7 @@ In the RadScheduler __DragDrop__ event handler you need to get the location of t
 
 #### __[C#] Drop to the month cell element__
 
-{{region dropToCell}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\DragDropFromControl.cs region=dropToCell}}
 	        
 	        private Point mouseDownPosition;
 	        private bool isDragging;
@@ -224,7 +224,7 @@ In the RadScheduler __DragDrop__ event handler you need to get the location of t
 
 #### __[VB.NET] Drop to the month cell element__
 
-{{region dropToCell}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\DragDropFromControl.vb region=dropToCell}}
 	
 	    Private mouseDownPosition As Point
 	    Private isDragging As Boolean
@@ -366,7 +366,7 @@ The helper method __CreateAppointment()__ creates an appontment starting at the 
 
 #### __[C#] Creating an appointment__
 
-{{region createAppointment}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\DragDropFromControl.cs region=createAppointment}}
 	            
 	        private Appointment CreateAppointment(DateTime currentDate, DragObject dragObject)
 	        {
@@ -405,7 +405,7 @@ The helper method __CreateAppointment()__ creates an appontment starting at the 
 
 #### __[VB.NET] Creating an appointment__
 
-{{region createAppointment}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\DragDropFromControl.vb region=createAppointment}}
 	
 	    Private Function CreateAppointment(currentDate As DateTime, dragObject As DragObject) As Appointment
 	        Dim appointment As New Appointment()
@@ -487,7 +487,7 @@ In order to enable dragging an appointment from __RadScheduler__ and dropping it
 
 #### __[C#]__
 
-{{region SchedulerToListBoxStart}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\DragDropFromControl.cs region=SchedulerToListBoxStart}}
 	            
 	        private void radScheduler1_MouseMove(object sender, MouseEventArgs e)
 	        {
@@ -524,7 +524,7 @@ In order to enable dragging an appointment from __RadScheduler__ and dropping it
 
 #### __[VB.NET]__
 
-{{region SchedulerToListBoxStart}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\DragDropFromControl.vb region=SchedulerToListBoxStart}}
 	
 	    Private Sub radScheduler1_MouseMove(sender As Object, e As MouseEventArgs)
 	        If e.Button <> MouseButtons.Left Then
@@ -721,7 +721,7 @@ Finally, perform the exact drag and drop operation via inserting a new item in t
 
 #### __[C#]__
 
-{{region SchedulerToListBoxDrop}}
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\DragDropFromControl.cs region=SchedulerToListBoxDrop}}
 	        private void listBox1_DragDrop(object sender, DragEventArgs e)
 	        {
 	            Point point = this.listBox1.PointToClient(new Point(e.X, e.Y));
@@ -751,7 +751,7 @@ Finally, perform the exact drag and drop operation via inserting a new item in t
 
 #### __[VB.NET]__
 
-{{region SchedulerToListBoxDrop}}
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\DragDropFromControl.vb region=SchedulerToListBoxDrop}}
 	    Private Sub listBox1_DragDrop(sender As Object, e As DragEventArgs)
 	        Dim point As Point = Me.ListBox1.PointToClient(New Point(e.X, e.Y))
 	        Dim dragObject As DragObject = TryCast(e.Data.GetData(GetType(DragObject)), DragObject)

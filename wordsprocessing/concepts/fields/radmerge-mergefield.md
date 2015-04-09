@@ -35,7 +35,7 @@ __Example 1__ demonstrates how you can insert a merge field.
 
 #### __C#__
 
-{{region editor}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingMergeField.cs region=editor}}
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
 	            editor.InsertField("MERGEFIELD First_Name", "Nancy Davolio");
 	{{endregion}}
@@ -44,7 +44,7 @@ __Example 1__ demonstrates how you can insert a merge field.
 
 #### __VB__
 
-{{region editor}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingMergeField.vb region=editor}}
 	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	        editor.InsertField("MERGEFIELD First_Name", "Nancy Davolio")
 	        '#End Region
@@ -76,7 +76,7 @@ __Example 2__ shows a possible use of merge field's switches.
 
 #### __C#__
 
-{{region insert}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingMergeField.cs region=insert}}
 	            editor.InsertField("MERGEFIELD First_Name \\b \"Mr. \" \\f \". \"", "");
 	{{endregion}}
 
@@ -84,7 +84,7 @@ __Example 2__ shows a possible use of merge field's switches.
 
 #### __VB__
 
-{{region insert}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingMergeField.vb region=insert}}
 	        editor.InsertField("MERGEFIELD First_Name \b ""Mr. "" \f "". """, "")
 	        '#End Region
 	    End Sub

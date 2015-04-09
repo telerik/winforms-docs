@@ -15,20 +15,20 @@ position: 4
 __RadDiagram__ gives you the ability to remove __RadDiagramItems__ interactively, 
         programmatically or with __DiagramCommands__.
 
-## Removing Items interactively
+## Removing Items Interactively
 
 You can remove the selected __RadDiagramItems__ by pressing the Delete Key.
 
 Below you can see the result of delete operation over the selected __RadDiagramItems__:![diagram-items-manipulation-removing-items 001](images/diagram-items-manipulation-removing-items001.gif)
 
-## Removing items in code behind
+## Removing Items in code behind
 
 You can remove __RadDiagramItems__ in code behind by using the RadDiagram.__Items__ 
         collection and its __Remove()__ or __RemoveAt()__ methods:
 
 #### __[C#] __
 
-{{region RemoveItems}}
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=RemoveItems}}
 	            
 	            this.radDiagram1.Items.RemoveAt(2);
 	            this.radDiagram1.Items.Remove(shape1);
@@ -39,7 +39,7 @@ You can remove __RadDiagramItems__ in code behind by using the RadDiagram.__Item
 
 #### __[VB.NET] __
 
-{{region RemoveItems}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=RemoveItems}}
 	        Me.RadDiagram1.Items.RemoveAt(2)
 	        Me.RadDiagram1.Items.Remove(shape1)
 	        '#End Region
@@ -189,6 +189,21 @@ You can remove __RadDiagramItems__ in code behind by using the RadDiagram.__Item
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 
@@ -199,7 +214,7 @@ You can use the __DiagramCommand__ "Delete" in order to remove the selected __Ra
 
 #### __[C#] __
 
-{{region DeleteCommands}}
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=DeleteCommands}}
 	            
 	            this.radDiagram1.SelectedItem = shape1;
 	            this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Delete, "");
@@ -210,7 +225,7 @@ You can use the __DiagramCommand__ "Delete" in order to remove the selected __Ra
 
 #### __[VB.NET] __
 
-{{region DeleteCommands}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=DeleteCommands}}
 	
 	        Me.RadDiagram1.SelectedItem = shape1
 	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Delete, "")
@@ -355,6 +370,21 @@ You can use the __DiagramCommand__ "Delete" in order to remove the selected __Ra
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 

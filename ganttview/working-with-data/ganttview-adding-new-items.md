@@ -26,7 +26,7 @@ Here is an example of how to provide ids using the __ItemChildIdNeeded__ event. 
 
 #### __[C#] __
 
-{{region AddingNewItems}}
+{{source=..\SamplesCS\GanttView\WorkingWithData\AddingNewItems.cs region=AddingNewItems}}
 	        int integerIdCounter = 100;
 	
 	        private void radGanttView1_ItemChildIdNeeded(object sender, GanttViewItemChildIdNeededEventArgs e)
@@ -39,7 +39,7 @@ Here is an example of how to provide ids using the __ItemChildIdNeeded__ event. 
 
 #### __[VB.NET] __
 
-{{region AddingNewItems}}
+{{source=..\SamplesVB\GanttView\WorkingWithData\AddingNewItems.vb region=AddingNewItems}}
 	    Dim integerIdCounter As Integer = 100
 	
 	    Private Sub radGanttView1_ItemChildIdNeeded(sender As Object, e As GanttViewItemChildIdNeededEventArgs)

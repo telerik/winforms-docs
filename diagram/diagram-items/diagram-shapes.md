@@ -12,17 +12,17 @@ position: 0
 
 
 
-This tutorial will walk you through the functionality and the main features of the __RadDiagramShape__.
+This tutorial will walk you through the functionality and the main features of __RadDiagramShape__.
 
-## 
+## RadDiagramShape
 
-The __RadDiagramShape__ is an object that describes the nodes of the diagram.
+__RadDiagramShape__ is an object that describes the nodes of the diagram.
           You can configure its form using the __ElementShape__ property as it allows you to define a custom shape:
         ![diagram-diagram-items-shapes 001](images/diagram-diagram-items-shapes001.png)
 
 #### __[C#] __
 
-{{region SetAShape}}
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=SetAShape}}
 	            
 	            RadDiagramShape shape1 = new RadDiagramShape()
 	            {
@@ -39,7 +39,7 @@ The __RadDiagramShape__ is an object that describes the nodes of the diagram.
 
 #### __[VB.NET] __
 
-{{region SetAShape}}
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=SetAShape}}
 	
 	        Dim shape1 As New RadDiagramShape() With { _
 	            .ShapeText = "", _
@@ -64,7 +64,7 @@ The __RadDiagramShape__ is an object that describes the nodes of the diagram.
 	
 	        '#Region "AddConnection"
 	        Dim connection1 As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        connection1.Source = shape1
@@ -95,7 +95,7 @@ The __RadDiagramShape__ is an object that describes the nodes of the diagram.
 	        RadDiagram1.Items.Add(targetShape)
 	
 	        Dim polylineConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        polylineConnection.Source = sourceShape
@@ -116,7 +116,7 @@ The __RadDiagramShape__ is an object that describes the nodes of the diagram.
 	
 	
 	        Dim bezierConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        bezierConnection.Source = sourceShape
@@ -130,7 +130,7 @@ The __RadDiagramShape__ is an object that describes the nodes of the diagram.
 	        '#Region "SplineConnection"
 	
 	        Dim splineConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        splineConnection.Source = sourceShape
@@ -163,7 +163,7 @@ The __RadDiagramShape__ is an object that describes the nodes of the diagram.
 
 #### __[C#] __
 
-{{region AShape}}
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=AShape}}
 	        
 	        public class AShape : ElementShape
 	        { 
@@ -181,7 +181,7 @@ The __RadDiagramShape__ is an object that describes the nodes of the diagram.
 
 #### __[VB.NET] __
 
-{{region AShape}}
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=AShape}}
 	
 	    Public Class AShape
 	    Inherits ElementShape
@@ -201,7 +201,7 @@ or to use one of the predefined shapes:![diagram-diagram-items-shapes 002](image
 
 #### __[C#] __
 
-{{region StarShape}}
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=StarShape}}
 	            
 	            RadDiagramShape starShape = new RadDiagramShape()
 	            {
@@ -218,7 +218,7 @@ or to use one of the predefined shapes:![diagram-diagram-items-shapes 002](image
 
 #### __[VB.NET] __
 
-{{region StarShape}}
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=StarShape}}
 	
 	        Dim starShape As New RadDiagramShape() With { _
 	            .ShapeText = "", _
@@ -232,7 +232,7 @@ or to use one of the predefined shapes:![diagram-diagram-items-shapes 002](image
 	
 	        '#Region "AddConnection"
 	        Dim connection1 As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        connection1.Source = shape1
@@ -263,7 +263,7 @@ or to use one of the predefined shapes:![diagram-diagram-items-shapes 002](image
 	        RadDiagram1.Items.Add(targetShape)
 	
 	        Dim polylineConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        polylineConnection.Source = sourceShape
@@ -284,7 +284,7 @@ or to use one of the predefined shapes:![diagram-diagram-items-shapes 002](image
 	
 	
 	        Dim bezierConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        bezierConnection.Source = sourceShape
@@ -298,7 +298,7 @@ or to use one of the predefined shapes:![diagram-diagram-items-shapes 002](image
 	        '#Region "SplineConnection"
 	
 	        Dim splineConnection As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
+	            .Name = "connection1" _
 	        }
 	
 	        splineConnection.Source = sourceShape

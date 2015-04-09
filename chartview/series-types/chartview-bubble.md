@@ -5,7 +5,7 @@ description: Bubble
 slug: chartview-series-types-bubble
 tags: bubble
 published: True
-position: 7
+position: 8
 ---
 
 # Bubble
@@ -19,7 +19,7 @@ __BubbleSeries__ are used to visualize data points as points with coordinates an
 
 #### __[C#] __
 
-{{region Bubble}}
+{{source=..\SamplesCS\ChartView\Series\BubbleSeriesForm.cs region=Bubble}}
 	            
 	            BubbleSeries bubbleSeries = new BubbleSeries();
 	            bubbleSeries.Name = "Q1";
@@ -45,7 +45,7 @@ __BubbleSeries__ are used to visualize data points as points with coordinates an
 
 #### __[VB.NET] __
 
-{{region Bubble}}
+{{source=..\SamplesVB\ChartView\Series\BubbleSeriesForm.vb region=Bubble}}
 	
 	        Dim bubbleSeries As New BubbleSeries()
 	        bubbleSeries.Name = "Q1"

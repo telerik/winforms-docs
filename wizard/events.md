@@ -54,7 +54,7 @@ Below is an example of using the __Next__ event of __RadWizard__ to choose the p
 
 #### __[C#] Subscribe to the Next event__
 
-{{region subscribeToTheEvent}}
+{{source=..\SamplesCS\Wizard\Events.cs region=subscribeToTheEvent}}
 	            this.radWizard1.Next += new WizardCancelEventHandler(radWizard1_Next);
 	{{endregion}}
 
@@ -62,7 +62,7 @@ Below is an example of using the __Next__ event of __RadWizard__ to choose the p
 
 #### __[C#] Handle the Next event__
 
-{{region nextEvent}}
+{{source=..\SamplesCS\Wizard\Events.cs region=nextEvent}}
 	        private void radWizard1_Next(object sender, WizardCancelEventArgs e)
 	        {
 	            if (this.radWizard1.SelectedPage == this.radWizard1.Pages[1])
@@ -77,7 +77,7 @@ Below is an example of using the __Next__ event of __RadWizard__ to choose the p
 
 #### __[VB.NET] Handle the Next event__
 
-{{region nextEvent}}
+{{source=..\SamplesVB\Wizard\EventsForm.vb region=nextEvent}}
 	    Private Sub RadWizard1_Next(ByVal sender As Object, ByVal e As WizardCancelEventArgs) Handles RadWizard1.Next
 	        If (Me.RadWizard1.SelectedPage Is Me.RadWizard1.Pages(1)) Then
 	            e.Cancel = True

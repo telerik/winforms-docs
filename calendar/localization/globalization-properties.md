@@ -18,7 +18,7 @@ The __Culture__ property can be set using the drop down list in the Properties 
 
 #### __[C#] Setting CultureInfo in code__
 
-{{region globalization}}
+{{source=..\SamplesCS\Calendar\ColumnRowHeaders.cs region=globalization}}
 	            radCalendar1.Culture = CultureInfo.GetCultureInfo("fr-FR");
 	{{endregion}}
 
@@ -26,7 +26,7 @@ The __Culture__ property can be set using the drop down list in the Properties 
 
 #### __[VB.NET] Setting CultureInfo in code__
 
-{{region globalization}}
+{{source=..\SamplesVB\Calendar\ColumnRowHeaders.vb region=globalization}}
 	        RadCalendar1.Culture = CultureInfo.GetCultureInfo("fr-FR")
 	{{endregion}}
 

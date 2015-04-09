@@ -20,7 +20,7 @@ __RadScheduler__ has a built-in LocalizationProvider. You can use it in order to
 
 #### __[C#]__
 
-{{region localizeDialog}}
+{{source=..\SamplesCS\Scheduler\Localization\LocAppointmentEditForm.cs region=localizeDialog}}
 	    public class LocAppointmentEditForm : EditAppointmentDialog
 	    {
 	        protected override void LocalizeDialog(RadSchedulerLocalizationProvider localizationProvider)
@@ -47,7 +47,7 @@ __RadScheduler__ has a built-in LocalizationProvider. You can use it in order to
 
 #### __[VB.NET]__
 
-{{region localizeDialog}}
+{{source=..\SamplesVB\Scheduler\Localization\LocAppointmentEditForm.vb region=localizeDialog}}
 	Public Class LocAppointmentEditForm
 	    Inherits EditAppointmentDialog
 	    Protected Overloads Overrides Sub LocalizeDialog(ByVal localizationProvider As RadSchedulerLocalizationProvider)

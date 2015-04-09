@@ -19,7 +19,7 @@ __RadGanttView__ allows formatting of individual links through the __GraphicalVi
 
 #### __[C#] __
 
-{{region GraphicalViewLinkItemFormatting}}
+{{source=..\SamplesCS\GanttView\Formatting\GraphicalViewLinkItemFormatting.cs region=GraphicalViewLinkItemFormatting}}
 	        private void radGanttView1_GraphicalViewLinkItemFormatting(object sender, GanttViewLinkItemFormattingEventArgs e)
 	        {
 	            Color color = Color.Black;
@@ -59,7 +59,7 @@ __RadGanttView__ allows formatting of individual links through the __GraphicalVi
 
 #### __[VB] __
 
-{{region GraphicalViewLinkItemFormatting}}
+{{source=..\SamplesVB\GanttView\Formatting\GraphicalViewLinkItemFormatting.vb region=GraphicalViewLinkItemFormatting}}
 	    Private Sub RadGanttView1_GraphicalViewLinkItemFormatting(sender As Object, e As Telerik.WinControls.UI.GanttViewLinkItemFormattingEventArgs)
 	        Dim penColor As Color = Color.Black
 	        Dim dash As DashStyle = DashStyle.Solid

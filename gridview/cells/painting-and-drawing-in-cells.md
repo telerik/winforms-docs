@@ -28,7 +28,7 @@ The following example demonstrates how to use the __CellPaint__ event to change 
 
 #### __[C#] Painting and drawing in cells__
 
-{{region paintingAndDrawingInCells}}
+{{source=..\SamplesCS\GridView\Cells\PaintingAndDrawingInCells.cs region=paintingAndDrawingInCells}}
 	        void radGridView1_CellPaint(object sender, Telerik.WinControls.UI.GridViewCellPaintEventArgs e)
 	        {
 	            GridDataCellElement dataCell = e.Cell as GridDataCellElement;
@@ -56,7 +56,7 @@ The following example demonstrates how to use the __CellPaint__ event to change 
 
 #### __[VB.NET] Painting and drawing in cells__
 
-{{region paintingAndDrawingInCells}}
+{{source=..\SamplesVB\GridView\Cells\PaintingAndDrawingInCells.vb region=paintingAndDrawingInCells}}
 	    Private Sub RadGridView1_CellPaint(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellPaintEventArgs) Handles RadGridView1.CellPaint
 	        Dim dataCell As GridDataCellElement = TryCast(e.Cell, GridDataCellElement)
 	

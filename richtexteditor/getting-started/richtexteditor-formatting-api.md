@@ -30,7 +30,7 @@ Here is an example of a toggle button that upon checking should make the selecti
 
 #### __[C#] __
 
-{{region bold}}
+{{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=bold}}
 	        
 	        private void togglebutton_Click(object sender, EventArgs e)
 	        {
@@ -43,7 +43,7 @@ Here is an example of a toggle button that upon checking should make the selecti
 
 #### __[VB.NET] __
 
-{{region bold}}
+{{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=bold}}
 	
 	    Private Sub togglebutton_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        Me.radRichTextEditor.ToggleBold()
@@ -70,7 +70,7 @@ The following example inserts the word "text" at the CaretPosition.
 
 #### __[C#] __
 
-{{region insert}}
+{{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=insert}}
 	            
 	            this.radRichTextEditor.Insert("text");
 	            
@@ -80,7 +80,7 @@ The following example inserts the word "text" at the CaretPosition.
 
 #### __[VB.NET] __
 
-{{region insert}}
+{{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=insert}}
 	
 	        Me.radRichTextEditor.Insert("text")
 	
@@ -143,7 +143,7 @@ Both approaches can be used to insert content at the caret position with the __I
 
 #### __[C#] __
 
-{{region fragment}}
+{{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=fragment}}
 	            
 	            this.radRichTextEditor.InsertFragment(fragment);
 	            
@@ -153,7 +153,7 @@ Both approaches can be used to insert content at the caret position with the __I
 
 #### __[VB.NET] __
 
-{{region fragment}}
+{{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=fragment}}
 	
 	        Me.radRichTextEditor.InsertFragment(fragment)
 	
@@ -195,7 +195,7 @@ If you create a fragment in this way, it will end with a new paragraph. This is 
 
 #### __[C#] __
 
-{{region insert1}}
+{{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=insert1}}
 	
 	            DocumentFragment fragmentFromDocument = new DocumentFragment(this.radRichTextEditor.Document);
 	
@@ -205,7 +205,7 @@ If you create a fragment in this way, it will end with a new paragraph. This is 
 
 #### __[VB.NET] __
 
-{{region insert1}}
+{{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=insert1}}
 	
 	        Dim fragmentFromDocument As New DocumentFragment(Me.radRichTextEditor.Document)
 	
@@ -243,7 +243,7 @@ If you choose to use the document selection when creating a __DocumentFragment__
 
 #### __[C#] __
 
-{{region selection}}
+{{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=selection}}
 	
 	            DocumentFragment fragmentFromSelection = this.radRichTextEditor.Document.Selection.CopySelectedDocumentElements();
 	    
@@ -253,7 +253,7 @@ If you choose to use the document selection when creating a __DocumentFragment__
 
 #### __[VB.NET] __
 
-{{region selection}}
+{{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=selection}}
 	
 	        Dim fragmentFromSelection As DocumentFragment = Me.radRichTextEditor.Document.Selection.CopySelectedDocumentElements()
 	

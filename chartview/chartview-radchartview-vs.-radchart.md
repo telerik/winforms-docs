@@ -59,7 +59,7 @@ yes</td></tr><tr><td>
 
 Tooltip</td><td>
 
-no*</td><td>
+yes*</td><td>
 
 yes</td></tr><tr><td>
 
@@ -89,7 +89,7 @@ yes</td></tr><tr><td>
 
 Empty (missing) values support</td><td>
 
-no**</td><td>
+yes</td><td>
 
 yes</td></tr><tr><td>
 
@@ -113,13 +113,13 @@ yes, y-axis</td></tr><tr><td>
 
 Annotations</td><td>
 
-no****</td><td>
+yes</td><td>
 
 yes, marked zone</td></tr><tr><td>
 
 Scale breaks</td><td>
 
-no</td><td>
+yes</td><td>
 
 yes</td></tr><tr><td>
 
@@ -149,7 +149,7 @@ yes</td></tr><tr><td>
 
 Export</td><td>
 
-no*****</td><td>
+yes</td><td>
 
 yes</td></tr><tr><td>
 
@@ -173,15 +173,7 @@ yes</td></tr></table>
 
 Notes:
 
-* * RadChartView currently supports only standard Tooltips that cannot be modified. The functionality will be available in a future release.
-
-* ** Even though our API suggests that we have null value support, currently we do not. The functionality will be available in a future release.
-
-* *** RadChart supports only 1 additional y axis. RadChartView on the other side supports unlimited number of multiple Y and X axes.
-
-* **** Annotations will be provided in a future release.
-
-* ***** RadChartView does not support exporting.
+* RadChartView currently supports only standard Tooltips that cannot be modified. The functionality will be available in a future release.
 
 Below you may find the full list of series types available at present (Q3 2012):
 <table><th><tr><td>
@@ -236,7 +228,7 @@ no</td></tr><tr><td>
 
 Scatter Area</td><td>
 
-no</td><td>
+yes</td><td>
 
 no</td></tr><tr><td>
 
@@ -278,7 +270,7 @@ yes</td></tr><tr><td>
 
 Bubble</td><td>
 
-no</td><td>
+yes</td><td>
 
 yes</td></tr><tr><td>
 
@@ -296,13 +288,13 @@ yes</td></tr><tr><td>
 
 Gantt</td><td>
 
-no</td><td>
+no*</td><td>
 
 yes</td></tr><tr><td>
 
 Bezier</td><td>
 
-no</td><td>
+yes</td><td>
 
 yes</td></tr><tr><td>
 
@@ -346,4 +338,32 @@ Radar Area</td><td>
 
 yes</td><td>
 
+no</td></tr><tr><td>
+
+Waterfall</td><td>
+
+yes</td><td>
+
+no</td></tr><tr><td>
+
+Funnel</td><td>
+
+yes</td><td>
+
+no</td></tr><tr><td>
+
+Range</td><td>
+
+yes</td><td>
+
+no</td></tr><tr><td>
+
+Range Bar</td><td>
+
+yes</td><td>
+
 no</td></tr></table>
+
+Notes:
+
+* You can use RangeBar series instead of Gantt series or you can use [RadGanttView]({%slug ganttview-overview%})

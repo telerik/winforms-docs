@@ -56,7 +56,7 @@ The following tutorial demonstrates how to add items and images to a RadDropDown
 
 #### __[C#] Handling the SelectedIndexChanged event__
 
-{{region handlingSelectedIndexChanged}}
+{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=handlingSelectedIndexChanged}}
 	        void radDropDownList1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
 	        {
 	            if (this.radDropDownList1.SelectedIndex > -1)
@@ -71,7 +71,7 @@ The following tutorial demonstrates how to add items and images to a RadDropDown
 
 #### __[VB.NET] Handling the SelectedIndexChanged event__
 
-{{region handlingSelectedIndexChanged}}
+{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=handlingSelectedIndexChanged}}
 	    Private Sub radDropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
 	        If Me.radDropDownList1.SelectedIndex > -1 Then
 	            radLabelElement1.Text = Me.radDropDownList1.SelectedItem.Text

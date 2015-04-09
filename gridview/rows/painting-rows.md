@@ -21,7 +21,7 @@ __RowPaint__ event occurs when a row needs to be painted. If you want to allow t
 
 #### __[C#]__
 
-{{region enableCustomDrawing}}
+{{source=..\SamplesCS\GridView\Rows\RowPainting.cs region=enableCustomDrawing}}
 	            radGridView1.EnableCustomDrawing = true;
 	{{endregion}}
 
@@ -29,7 +29,7 @@ __RowPaint__ event occurs when a row needs to be painted. If you want to allow t
 
 #### __[VB.NET]__
 
-{{region enableCustomDrawing}}
+{{source=..\SamplesVB\GridView\Rows\RowPainting.vb region=enableCustomDrawing}}
 	        RadGridView1.EnableCustomDrawing = True
 	{{endregion}}
 
@@ -45,7 +45,7 @@ The following code demonstrates how to use the __RowPaint__ event to set up the 
 
 #### __[C#]__
 
-{{region handlingRowPaint}}
+{{source=..\SamplesCS\GridView\Rows\RowPainting.cs region=handlingRowPaint}}
 	        private void radGridView1_RowPaint(object sender, GridViewRowPaintEventArgs e)
 	        {
 	            GridDataRowElement dataRow = e.Row as GridDataRowElement;
@@ -72,7 +72,7 @@ The following code demonstrates how to use the __RowPaint__ event to set up the 
 
 #### __[VB.NET]__
 
-{{region handlingRowPaint}}
+{{source=..\SamplesVB\GridView\Rows\RowPainting.vb region=handlingRowPaint}}
 	    Private Sub radGridView1_RowPaint(ByVal sender As Object, ByVal e As GridViewRowPaintEventArgs) Handles RadGridView1.RowPaint
 	        Dim dataRow As GridDataRowElement = TryCast(e.Row, GridDataRowElement)
 	

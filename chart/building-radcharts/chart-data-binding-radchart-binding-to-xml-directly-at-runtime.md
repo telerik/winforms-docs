@@ -18,7 +18,7 @@ The example below demonstrates binding RadChart to an XML file:
 
 #### __[C#] Binding to XML__
 
-{{region bindingToXML}}
+{{source=..\SamplesCS\Chart\DataBindingToXMLAtRunTime.cs region=bindingToXML}}
 	        RadChart radChart1 = new RadChart();
 	        public DataBindingToXMLAtRunTime()
 	        {
@@ -45,7 +45,7 @@ The example below demonstrates binding RadChart to an XML file:
 
 #### __[VB.NET] Binding to XML__
 
-{{region bindingToXML}}
+{{source=..\SamplesVB\Chart\DataBindingToXMLAtRunTime.vb region=bindingToXML}}
 	    Private radChart1 As New RadChart()
 	    Public Sub New()
 	        Me.Controls.Add(radChart1)

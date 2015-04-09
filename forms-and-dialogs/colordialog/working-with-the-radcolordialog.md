@@ -40,7 +40,7 @@ __CustomColors[]:__ This is a read-only array of Color objects.  You can query 
 
 #### __[C#] Enlist the current custom colors in RadColorDialog__
 
-{{region enlistTheCustomColors}}
+{{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=enlistTheCustomColors}}
 	        private void radButton1_Click(object sender, EventArgs e)
 	        {
 	            StringBuilder sb = new StringBuilder();
@@ -58,7 +58,7 @@ __CustomColors[]:__ This is a read-only array of Color objects.  You can query 
 
 #### __[VB.NET] Enlist the current custom colors in RadColorDialog__
 
-{{region enlistTheCustomColors}}
+{{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=enlistTheCustomColors}}
 	    Private Sub RadButton1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
 	        Dim sb As New StringBuilder()
 	        For Each color As Color In RadColorDialog1.CustomColors
@@ -79,7 +79,7 @@ In order go get the SelectedColor or the SelectedHlsColor you can use the follow
 
 #### __[C#] Enlist the current custom colors in RadColorDialog__
 
-{{region getTheSelectedColors}}
+{{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=getTheSelectedColors}}
 	            if (radColorDialog1.ShowDialog() == DialogResult.OK)
 	            {
 	                Color color = radColorDialog1.SelectedColor;
@@ -91,7 +91,7 @@ In order go get the SelectedColor or the SelectedHlsColor you can use the follow
 
 #### __[VB.NET] Enlist the current custom colors in RadColorDialog__
 
-{{region getTheSelectedColors}}
+{{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=getTheSelectedColors}}
 	        If RadColorDialog1.ShowDialog() = DialogResult.OK Then
 	            Dim color As Color = RadColorDialog1.SelectedColor
 	            Dim hslColor As Telerik.WinControls.HslColor = RadColorDialog1.SelectedHslColor

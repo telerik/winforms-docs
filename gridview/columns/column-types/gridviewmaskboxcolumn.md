@@ -27,7 +27,7 @@ You can set a *mask* to GridViewMaskBoxColumn using its __Mask__and
 
 #### __[C#] Adding GridViewMaskBoxColumn__
 
-{{region addMaskBoxColumn}}
+{{source=..\SamplesCS\GridView\Columns\GridViewMaskBoxColumn1.cs region=addMaskBoxColumn}}
 	            GridViewMaskBoxColumn maskBoxColumn = new GridViewMaskBoxColumn();
 	            maskBoxColumn.Name = "Price";
 	            maskBoxColumn.FieldName = "UnitPrice";
@@ -44,7 +44,7 @@ You can set a *mask* to GridViewMaskBoxColumn using its __Mask__and
 
 #### __[VB.NET] Adding GridViewMaskBoxColumn__
 
-{{region addMaskBoxColumn}}
+{{source=..\SamplesVB\GridView\Columns\GridViewMaskBoxColumn1.vb region=addMaskBoxColumn}}
 	        Dim maskBoxColumn As New GridViewMaskBoxColumn()
 	        maskBoxColumn.Name = "Price"
 	        maskBoxColumn.FieldName = "UnitPrice"

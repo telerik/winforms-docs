@@ -36,7 +36,7 @@ The DataSet created by ReadXml method for the *given xml above* contains 3 tabl
 
 #### __[C#] Hierarchical binding RadGridView to XML data__
 
-{{region CreatingHierarchyUsingXmlDataSource}}
+{{source=..\SamplesCS\GridView\HierarchicalGrid\CreatingHierarchyUsingXmlDataSource.cs region=CreatingHierarchyUsingXmlDataSource}}
 	        void CreatingHierarchyUsingXmlDataSource_Load(object sender, EventArgs e)
 	        {
 	            DataSet xmlDataSet = new DataSet();
@@ -60,7 +60,7 @@ The DataSet created by ReadXml method for the *given xml above* contains 3 tabl
 
 #### __[VB.NET] Hierarchical binding RadGridView to XML data__
 
-{{region CreatingHierarchyUsingXmlDataSource}}
+{{source=..\SamplesVB\GridView\HierarchicalGrid\CreatingHierarchyUsingXmlDataSource.vb region=CreatingHierarchyUsingXmlDataSource}}
 	    Private Sub CreatingHierarchyUsingXmlDataSource_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        Dim xmlDataSet As New DataSet()
 	        xmlDataSet.ReadXml("..\..\GridView\HierarchicalGrid\hierarchicalGridXml.xml")

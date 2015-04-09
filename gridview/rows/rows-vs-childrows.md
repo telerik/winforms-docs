@@ -57,7 +57,7 @@ __ChildRows__. This collection returns the data rows that are currently
 
 #### __[C#]__
 
-{{region addingColumn}}
+{{source=..\SamplesCS\GridView\Rows\RowsChildRows.cs region=addingColumn}}
 	            GridViewTextBoxColumn rowsIDColumn = new GridViewTextBoxColumn();
 	            rowsIDColumn.HeaderText = "Rows IDs";
 	            rowsIDColumn.Name = "RowsIDs";
@@ -73,7 +73,7 @@ __ChildRows__. This collection returns the data rows that are currently
 
 #### __[VB.NET]__
 
-{{region addingColumn}}
+{{source=..\SamplesVB\GridView\Rows\RowsChildRows.vb region=addingColumn}}
 	        Dim rowsIDColumn As New GridViewTextBoxColumn()
 	        rowsIDColumn.HeaderText = "Rows IDs"
 	        rowsIDColumn.Name = "RowsIDs"
@@ -176,7 +176,7 @@ __ChildRows__. This collection returns the data rows that are currently
 
 #### __[C#]__
 
-{{region fillingColumns}}
+{{source=..\SamplesCS\GridView\Rows\RowsChildRows.cs region=fillingColumns}}
 	        private void radButton1_Click(object sender, EventArgs e)
 	        {
 	            SetIDs();
@@ -200,7 +200,7 @@ __ChildRows__. This collection returns the data rows that are currently
 
 #### __[VB.NET]__
 
-{{region fillingColumns}}
+{{source=..\SamplesVB\GridView\Rows\RowsChildRows.vb region=fillingColumns}}
 	    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        SetIDs()
 	    End Sub
@@ -261,7 +261,7 @@ __ChildRows__. This collection returns the data rows that are currently
 
 #### __[C#]__
 
-{{region filterChanged}}
+{{source=..\SamplesCS\GridView\Rows\RowsChildRows.cs region=filterChanged}}
 	        void radGridView1_FilterChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
 	        {
 	            SetIDs();
@@ -272,7 +272,7 @@ __ChildRows__. This collection returns the data rows that are currently
 
 #### __[VB.NET]__
 
-{{region filterChanged}}
+{{source=..\SamplesVB\GridView\Rows\RowsChildRows.vb region=filterChanged}}
 	    Private Sub radGridView1_FilterChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
 	        SetIDs()
 	    End Sub
@@ -343,7 +343,7 @@ __ChildRows__. This collection returns the data rows that are currently
 
 #### __[C#]__
 
-{{region sortChanged}}
+{{source=..\SamplesCS\GridView\Rows\RowsChildRows.cs region=sortChanged}}
 	        void radGridView1_SortChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
 	        {
 	            SetIDs();
@@ -354,7 +354,7 @@ __ChildRows__. This collection returns the data rows that are currently
 
 #### __[VB.NET]__
 
-{{region sortChanged}}
+{{source=..\SamplesVB\GridView\Rows\RowsChildRows.vb region=sortChanged}}
 	    Private Sub radGridView1_SortChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
 	        SetIDs()
 	    End Sub
@@ -430,7 +430,7 @@ __ChildRows__. This collection returns the data rows that are currently
 
 #### __[C#]__
 
-{{region groupByChanged}}
+{{source=..\SamplesCS\GridView\Rows\RowsChildRows.cs region=groupByChanged}}
 	        void radGridView1_GroupByChanged(object sender, GridViewCollectionChangedEventArgs e)
 	        {
 	            SetIDs();
@@ -441,7 +441,7 @@ __ChildRows__. This collection returns the data rows that are currently
 
 #### __[VB.NET]__
 
-{{region groupByChanged}}
+{{source=..\SamplesVB\GridView\Rows\RowsChildRows.vb region=groupByChanged}}
 	    Private Sub radGridView1_GroupByChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
 	        SetIDs()
 	    End Sub
@@ -518,7 +518,7 @@ __ChildRows__. This collection returns the data rows that are currently
 
 #### __[C#]__
 
-{{region updatedSet}}
+{{source=..\SamplesCS\GridView\Rows\RowsChildRows.cs region=updatedSet}}
 	            private void SetIDs()
 	            {
 	                for (int i = 0; i < this.radGridView1.Rows.Count; i++)
@@ -548,7 +548,7 @@ __ChildRows__. This collection returns the data rows that are currently
 
 #### __[VB.NET]__
 
-{{region updatedSet}}
+{{source=..\SamplesVB\GridView\Rows\RowsChildRows.vb region=updatedSet}}
 	        Private Sub SetIDs()
 	
 	            For i As Integer = 0 To Me.radGridView1.Rows.Count - 1

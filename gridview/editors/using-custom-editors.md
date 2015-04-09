@@ -22,7 +22,7 @@ All grid editors inherit from __BaseGridEditor__. So, you have to inherit from t
 
 #### __[C#] Creating the custom editor__
 
-{{region trackBarEditor}}
+{{source=..\SamplesCS\GridView\Editors\UsingCustomEditors.cs region=trackBarEditor}}
 	    public class TrackBarEditor : BaseGridEditor
 	    {
 	        public override object Value
@@ -71,7 +71,7 @@ All grid editors inherit from __BaseGridEditor__. So, you have to inherit from t
 
 #### __[VB.NET] Creating the custom editor__
 
-{{region trackBarEditor}}
+{{source=..\SamplesVB\GridView\Editors\UsingCustomEditors.vb region=trackBarEditor}}
 	Public Class TrackBarEditor
 	    Inherits BaseGridEditor
 	    Public Overrides Property Value() As Object
@@ -116,7 +116,7 @@ We use the standard __RadTrackBar__ element in this example with some modificati
 
 #### __[C#] Creating the custom editor element__
 
-{{region trackBarEditorElement}}
+{{source=..\SamplesCS\GridView\Editors\UsingCustomEditors.cs region=trackBarEditorElement}}
 	    public class TrackBarEditorElement : RadTrackBarElement
 	    {
 	        public TrackBarEditorElement()
@@ -157,7 +157,7 @@ We use the standard __RadTrackBar__ element in this example with some modificati
 
 #### __[VB.NET] Creating the custom editor element__
 
-{{region trackBarEditorElement}}
+{{source=..\SamplesVB\GridView\Editors\UsingCustomEditors.vb region=trackBarEditorElement}}
 	Public Class TrackBarEditorElement
 	    Inherits RadTrackBarElement
 	    Public Sub New()
@@ -195,7 +195,7 @@ The __EditorRequired__ event is the correct place to replace the default editor:
 
 #### __[C#] Changing the current editor__
 
-{{region changingTheEditor}}
+{{source=..\SamplesCS\GridView\Editors\UsingCustomEditors.cs region=changingTheEditor}}
 	        void radGridView1_EditorRequired(object sender, EditorRequiredEventArgs e)
 	        {
 	            if (e.EditorType == typeof(GridSpinEditor))
@@ -209,7 +209,7 @@ The __EditorRequired__ event is the correct place to replace the default editor:
 
 #### __[VB.NET] Changing the current editor__
 
-{{region changingTheEditor}}
+{{source=..\SamplesVB\GridView\Editors\UsingCustomEditors.vb region=changingTheEditor}}
 	    Private Sub RadGridView1_EditorRequired(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.EditorRequiredEventArgs) Handles RadGridView1.EditorRequired
 	        If e.EditorType Is GetType(GridSpinEditor) Then
 	            e.EditorType = GetType(TrackBarEditor)

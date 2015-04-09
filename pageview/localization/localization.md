@@ -28,7 +28,7 @@ Below is a sample implementation of a custom localization provider, which return
 
 #### __[C#] Localizing RadPageView strings__
 
-{{region localizationImpl}}
+{{source=..\SamplesCS\PageView\Localization.cs region=localizationImpl}}
 	
 	        public class MyEnglishRadPageViewLocalizationProvider : RadPageViewLocalizationProvider
 	        {
@@ -66,7 +66,7 @@ Below is a sample implementation of a custom localization provider, which return
 
 #### __[VB.NET] Localizing RadPageView strings__
 
-{{region localizationImpl}}
+{{source=..\SamplesVB\PageView\Localization.vb region=localizationImpl}}
 	
 	    Public Class MyEnglishRadPageViewLocalizationProvider
 	        Inherits RadPageViewLocalizationProvider
@@ -103,7 +103,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[C#] Using the custom localization provider__
 
-{{region localizationUsage}}
+{{source=..\SamplesCS\PageView\Localization.cs region=localizationUsage}}
 	
 	            RadPageViewLocalizationProvider.CurrentProvider = new MyEnglishRadPageViewLocalizationProvider();
 	
@@ -113,7 +113,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[VB.NET] Using the custom localization provider__
 
-{{region localizationUsage}}
+{{source=..\SamplesVB\PageView\Localization.vb region=localizationUsage}}
 	
 	        RadPageViewLocalizationProvider.CurrentProvider = New MyEnglishRadPageViewLocalizationProvider()
 	

@@ -25,7 +25,7 @@ This tutorial demonstrates adding a page view to a RadMenu. Each page will conta
 
 #### __[C#] __
 
-{{region data}}
+{{source=..\SamplesCS\Menus\Menu\NestingControlsTutorial.cs region=data}}
 	        private RadDropDownList seasonDropDownList;
 	        private RadDropDownList monthDropDownList;
 	        private RadPageView pageView;
@@ -42,7 +42,7 @@ This tutorial demonstrates adding a page view to a RadMenu. Each page will conta
 
 #### __[VB.NET] __
 
-{{region data}}
+{{source=..\SamplesVB\Menus\Menu\NestingControlsTutorial.vb region=data}}
 	    Private seasonDropDownList As RadDropDownList
 	    Private monthDropDownList As RadDropDownList
 	    Private pageView As RadPageView
@@ -137,7 +137,7 @@ This tutorial demonstrates adding a page view to a RadMenu. Each page will conta
 
 #### __[C#] __
 
-{{region CreaateDDL}}
+{{source=..\SamplesCS\Menus\Menu\NestingControlsTutorial.cs region=CreaateDDL}}
 	        private RadDropDownList CreateRadDropDownListElement(string text, string[] captions)
 	        {
 	            RadDropDownList ddl = new RadDropDownList();
@@ -165,7 +165,7 @@ This tutorial demonstrates adding a page view to a RadMenu. Each page will conta
 
 #### __[VB.NET] __
 
-{{region CreaateDDL}}
+{{source=..\SamplesVB\Menus\Menu\NestingControlsTutorial.vb region=CreaateDDL}}
 	    Private Function CreateRadDropDownListElement(ByVal text As String, ByVal captions() As String) As RadDropDownList
 	        Dim ddl As New RadDropDownList()
 	        ddl.Location = New Point(15, 15)
@@ -195,7 +195,7 @@ This tutorial demonstrates adding a page view to a RadMenu. Each page will conta
 
 #### __[C#] __
 
-{{region main}}
+{{source=..\SamplesCS\Menus\Menu\NestingControlsTutorial.cs region=main}}
 	        private void Form1_Load(object sender, EventArgs e)
 	        {
 	            monthDropDownList = CreateRadDropDownListElement("Select Month", months);
@@ -247,7 +247,7 @@ This tutorial demonstrates adding a page view to a RadMenu. Each page will conta
 
 #### __[VB.NET] __
 
-{{region main}}
+{{source=..\SamplesVB\Menus\Menu\NestingControlsTutorial.vb region=main}}
 	    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 	        monthDropDownList = CreateRadDropDownListElement("Select Month", months)
 	        seasonDropDownList = CreateRadDropDownListElement("Select Season", seasons)

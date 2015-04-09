@@ -19,7 +19,7 @@ This topic will demonstrate how to access different element in the control in or
 
 #### __[C#] __
 
-{{region ChangeTheImageOfMemoryElement}}
+{{source=..\SamplesCS\Editors\RadCalculatorDropDownCustomization.cs region=ChangeTheImageOfMemoryElement}}
 	            radCalculatorDropDown1.CalculatorElement.MemoryElement.Image = Resources.email;
 	{{endregion}}
 
@@ -27,7 +27,7 @@ This topic will demonstrate how to access different element in the control in or
 
 #### __[VB.NET] __
 
-{{region ChangeTheImageOfMemoryElement}}
+{{source=..\SamplesVB\Editors\RadCalculatorDropDownCustomization.vb region=ChangeTheImageOfMemoryElement}}
 	        RadCalculatorDropDown1.CalculatorElement.MemoryElement.Image = My.Resources.email
 	{{endregion}}
 
@@ -37,7 +37,7 @@ This topic will demonstrate how to access different element in the control in or
 
 #### __[C#] __
 
-{{region ChangeTheBackColorOfTheTextBox}}
+{{source=..\SamplesCS\Editors\RadCalculatorDropDownCustomization.cs region=ChangeTheBackColorOfTheTextBox}}
 	            radCalculatorDropDown1.CalculatorElement.FillPrimitive.BackColor = Color.Yellow;
 	            radCalculatorDropDown1.CalculatorElement.EditorContentElement.Fill.BackColor = Color.Yellow;
 	{{endregion}}
@@ -46,7 +46,7 @@ This topic will demonstrate how to access different element in the control in or
 
 #### __[VB.NET] __
 
-{{region ChangeTheBackColorOfTheTextBox}}
+{{source=..\SamplesVB\Editors\RadCalculatorDropDownCustomization.vb region=ChangeTheBackColorOfTheTextBox}}
 	        RadCalculatorDropDown1.CalculatorElement.FillPrimitive.BackColor = Color.Yellow
 	        RadCalculatorDropDown1.CalculatorElement.EditorContentElement.Fill.BackColor = Color.Yellow
 	{{endregion}}
@@ -57,7 +57,7 @@ This topic will demonstrate how to access different element in the control in or
 
 #### __[C#] __
 
-{{region ChangeTheBackColorOfTheCalculator}}
+{{source=..\SamplesCS\Editors\RadCalculatorDropDownCustomization.cs region=ChangeTheBackColorOfTheCalculator}}
 	            radCalculatorDropDown1.CalculatorElement.CalculatorContentElement.BackColor = Color.Green;
 	{{endregion}}
 
@@ -65,7 +65,7 @@ This topic will demonstrate how to access different element in the control in or
 
 #### __[VB.NET] __
 
-{{region ChangeTheBackColorOfTheCalculator}}
+{{source=..\SamplesVB\Editors\RadCalculatorDropDownCustomization.vb region=ChangeTheBackColorOfTheCalculator}}
 	        RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.BackColor = Color.Green
 	{{endregion}}
 
@@ -75,7 +75,7 @@ This topic will demonstrate how to access different element in the control in or
 
 #### __[C#] __
 
-{{region ChangeTheBackColorOfButtons}}
+{{source=..\SamplesCS\Editors\RadCalculatorDropDownCustomization.cs region=ChangeTheBackColorOfButtons}}
 	            radCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonEquals.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
 	            radCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonEquals.BackColor = Color.Navy;
 	            
@@ -87,7 +87,7 @@ This topic will demonstrate how to access different element in the control in or
 
 #### __[VB.NET] __
 
-{{region ChangeTheBackColorOfButtons}}
+{{source=..\SamplesVB\Editors\RadCalculatorDropDownCustomization.vb region=ChangeTheBackColorOfButtons}}
 	        RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonEquals.GradientStyle = Telerik.WinControls.GradientStyles.Solid
 	        RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonEquals.BackColor = Color.Navy
 	

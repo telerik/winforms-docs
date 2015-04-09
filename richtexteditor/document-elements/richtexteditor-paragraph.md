@@ -33,7 +33,7 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug richtext
 
 #### __[C#] __
 
-{{region section}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\ParagraphCode.cs region=section}}
 	            
 	            Section section = new Section();
 	            Paragraph paragraph = new Paragraph();          
@@ -49,7 +49,7 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug richtext
 
 #### __[VB.NET] __
 
-{{region section}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\ParagraphCode.vb region=section}}
 	
 	        Dim section As New Section()
 	        Dim paragraph As New Paragraph()    
@@ -87,7 +87,7 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 
 #### __[C#] __
 
-{{region inline}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\ParagraphCode.cs region=inline}}
 	            
 	            Section section = new Section();
 	            Paragraph paragraph = new Paragraph();
@@ -105,7 +105,7 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 
 #### __[VB.NET] __
 
-{{region inline}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\ParagraphCode.vb region=inline}}
 	
 	        Dim section As New Section()
 	        Dim paragraph As New Paragraph()

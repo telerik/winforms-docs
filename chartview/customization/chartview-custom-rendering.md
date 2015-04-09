@@ -48,7 +48,7 @@ The starting point of the article is a form with one RadChartView on it. In the 
 
 #### __[C#] __
 
-{{region CustomRendererRegion}}
+{{source=..\SamplesCS\ChartView\Customization\CustomRenderer.cs region=CustomRendererRegion}}
 	    public partial class CustomRenderer : Form
 	    {
 	        public CustomRenderer()
@@ -86,7 +86,7 @@ The starting point of the article is a form with one RadChartView on it. In the 
 
 #### __[VB.NET] __
 
-{{region CustomRendererRegion}}
+{{source=..\SamplesVB\ChartView\Customization\CustomRenderer.vb region=CustomRendererRegion}}
 	Public Class CustomRenderer
 	    Protected Overrides Sub OnLoad(e As System.EventArgs)
 	        MyBase.OnLoad(e)
@@ -119,7 +119,7 @@ Now you need to create a CustomCartesianRenderer class that inherits CartesianRe
 
 #### __[C#] __
 
-{{region CustomCartesianRendererRegion}}
+{{source=..\SamplesCS\ChartView\Customization\CustomRenderer.cs region=CustomCartesianRendererRegion}}
 	    public class CustomCartesianRenderer : CartesianRenderer
 	    {
 	        public CustomCartesianRenderer(CartesianArea area)
@@ -146,7 +146,7 @@ Now you need to create a CustomCartesianRenderer class that inherits CartesianRe
 
 #### __[VB.NET] __
 
-{{region CustomCartesianRendererRegion}}
+{{source=..\SamplesVB\ChartView\Customization\CustomRenderer.vb region=CustomCartesianRendererRegion}}
 	Public Class CustomCartesianRenderer
 	    Inherits CartesianRenderer
 	
@@ -173,7 +173,7 @@ Let us further focus on the CustomLineSeriesDrawPart implementation. To introduc
 
 #### __[C#] __
 
-{{region ColorPositionBlendRegion}}
+{{source=..\SamplesCS\ChartView\Customization\CustomRenderer.cs region=ColorPositionBlendRegion}}
 	    public class ColorPositionBlend
 	    {
 	        private List<float> positions;
@@ -213,7 +213,7 @@ Let us further focus on the CustomLineSeriesDrawPart implementation. To introduc
 
 #### __[VB.NET] __
 
-{{region ColorPositionBlendRegion}}
+{{source=..\SamplesVB\ChartView\Customization\CustomRenderer.vb region=ColorPositionBlendRegion}}
 	Public Class ColorPositionBlend
 	    Private m_positions As List(Of Single)
 	    Private m_colors As List(Of Color)
@@ -254,7 +254,7 @@ Getting back to the CustomLineSeriesDrawPart, you need to create a method which 
 
 #### __[C#] __
 
-{{region CustomLineSeriesDrawPartRegion}}
+{{source=..\SamplesCS\ChartView\Customization\CustomRenderer.cs region=CustomLineSeriesDrawPartRegion}}
 	    public class CustomLineSeriesDrawPart : LineSeriesDrawPart
 	    {
 	        float[] predefinedValues = new float[] { 10, 15, 20, 25 };
@@ -383,7 +383,7 @@ Getting back to the CustomLineSeriesDrawPart, you need to create a method which 
 
 #### __[VB.NET] __
 
-{{region CustomLineSeriesDrawPartRegion}}
+{{source=..\SamplesVB\ChartView\Customization\CustomRenderer.vb region=CustomLineSeriesDrawPartRegion}}
 	Public Class CustomLineSeriesDrawPart
 	    Inherits LineSeriesDrawPart
 	    Public Sub New(series As LineSeriesBase, renderer As IChartRenderer)

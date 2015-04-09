@@ -21,7 +21,7 @@ __RadGridView__ has the ability to represent hierarchical master-detail data.
 
 #### __[C#] Create hierarchical grid__
 
-{{region AutoGenerateHierarchy}}
+{{source=..\SamplesCS\GridView\Fundamentials\CreatingHierarchicalGrid.cs region=AutoGenerateHierarchy}}
 	            this.ordersTableAdapter.Fill(this.nwindDataSet.Orders);
 	            this.order_DetailsTableAdapter.Fill(this.nwindDataSet.Order_Details);
 	            this.customersTableAdapter.Fill(this.nwindDataSet.Customers);
@@ -32,7 +32,7 @@ __RadGridView__ has the ability to represent hierarchical master-detail data.
 
 #### __[VB.NET] Create hierarchical grid__
 
-{{region AutoGenerateHierarchy}}
+{{source=..\SamplesVB\GridView\Fundamentials\CreatingHierarchicalGrid.vb region=AutoGenerateHierarchy}}
 	        Me.OrdersTableAdapter.Fill(Me.NwindDataSet.Orders)
 	        Me.Order_DetailsTableAdapter.Fill(Me.NwindDataSet.Order_Details)
 	        Me.CustomersTableAdapter.Fill(Me.NwindDataSet.Customers)

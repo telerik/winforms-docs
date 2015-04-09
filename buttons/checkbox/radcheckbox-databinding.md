@@ -26,7 +26,7 @@ You can also add __DataBindings__ to your control programmatically. The followin
 
 #### __[C#]__
 
-{{region databinding}}
+{{source=..\SamplesCS\Buttons\CheckBox.cs region=databinding}}
 	
 	            this.radCheckBox1.IsThreeState = false;
 	            DataTable t = new DataTable();
@@ -43,7 +43,7 @@ You can also add __DataBindings__ to your control programmatically. The followin
 
 #### __[VB.NET]__
 
-{{region databinding}}
+{{source=..\SamplesVB\Buttons\CheckBox.vb region=databinding}}
 	
 	        Me.radCheckBox1.IsThreeState = False
 	        Dim t As New DataTable

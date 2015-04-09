@@ -20,7 +20,7 @@ BindingList is a generic list type that has additional binding support. While yo
 
 #### __[C#] Creating sample class__
 
-{{region MyObjectClass}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToBindingList.cs region=MyObjectClass}}
 	        public class MyObject
 	        {
 	            public MyObject(int myInt, string myString)
@@ -47,7 +47,7 @@ BindingList is a generic list type that has additional binding support. While yo
 
 #### __[VB.NET] Creating sample class__
 
-{{region MyObjectClass}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToBindingList.vb region=MyObjectClass}}
 	    Public Class MyObject
 	        Public Sub New(ByVal myInt As Integer, ByVal myString As String)
 	            _myInt = myInt
@@ -78,7 +78,7 @@ BindingList is a generic list type that has additional binding support. While yo
 
 #### __[C#] Binding to BindingList__
 
-{{region bindingToBindingList}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToBindingList.cs region=bindingToBindingList}}
 	        private BindingList<MyObject> myList;
 	        private void Form1_Load(object sender, EventArgs e)
 	        {
@@ -106,7 +106,7 @@ BindingList is a generic list type that has additional binding support. While yo
 
 #### __[VB.NET] Binding to BindingList__
 
-{{region bindingToBindingList}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToBindingList.vb region=bindingToBindingList}}
 	    Private myList As BindingList(Of MyObject)
 	    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
 	        myList = New BindingList(Of MyObject)()

@@ -27,7 +27,7 @@ To set a RadScheduler with a print style:
 
 #### __[C#]__
 
-{{region SetPrintStyle}}
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SetPrintStyle}}
 	            SchedulerPrintStyle schedulerPrintStyle = new SchedulerDailyPrintStyle();
 	            this.radScheduler1.PrintStyle = schedulerPrintStyle;
 	{{endregion}}
@@ -36,7 +36,7 @@ To set a RadScheduler with a print style:
 
 #### __[VB.NET]__
 
-{{region SetPrintStyle}}
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SetPrintStyle}}
 	        Dim schedulerPrintStyle As New SchedulerDailyPrintStyle()
 	        Me.RadScheduler1.PrintStyle = schedulerPrintStyle
 	        '#End Region
@@ -123,7 +123,7 @@ SchedulerPrintStyle has the following properties:
 
 #### __[C#]__
 
-{{region SpeficyDateRange}}
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SpeficyDateRange}}
 	            schedulerPrintStyle.DateStartRange = DateTime.Today;
 	            schedulerPrintStyle.DateEndRange = DateTime.Today.AddDays(6);
 	{{endregion}}
@@ -132,7 +132,7 @@ SchedulerPrintStyle has the following properties:
 
 #### __[VB.NET]__
 
-{{region SpeficyDateRange}}
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SpeficyDateRange}}
 	        schedulerPrintStyle.DateStartRange = DateTime.Today
 	        schedulerPrintStyle.DateEndRange = DateTime.Today.AddDays(6)
 	        '#End Region
@@ -213,7 +213,7 @@ SchedulerPrintStyle has the following properties:
 
 #### __[C#]__
 
-{{region SpecifyTimeFrame}}
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SpecifyTimeFrame}}
 	            schedulerPrintStyle.TimeStartRange = TimeSpan.FromHours(7);
 	            schedulerPrintStyle.TimeEndRange = TimeSpan.FromHours(19);
 	{{endregion}}
@@ -222,7 +222,7 @@ SchedulerPrintStyle has the following properties:
 
 #### __[VB.NET]__
 
-{{region SpecifyTimeFrame}}
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SpecifyTimeFrame}}
 	        schedulerPrintStyle.TimeStartRange = TimeSpan.FromHours(7)
 	        schedulerPrintStyle.TimeEndRange = TimeSpan.FromHours(19)
 	        '#End Region
@@ -297,7 +297,7 @@ SchedulerPrintStyle has the following properties:
 
 #### __[C#]__
 
-{{region SetFonts}}
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SetFonts}}
 	            schedulerPrintStyle.AppointmentFont = new Font("Segoe UI Light", 8, FontStyle.Regular);
 	            schedulerPrintStyle.DateHeadingFont = new Font("Segoe UI Light", 12, FontStyle.Regular);
 	            schedulerPrintStyle.PageHeadingFont = new Font("Segoe UI Light", 16, FontStyle.Regular);
@@ -307,7 +307,7 @@ SchedulerPrintStyle has the following properties:
 
 #### __[VB.NET]__
 
-{{region SetFonts}}
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SetFonts}}
 	        schedulerPrintStyle.AppointmentFont = New Font("Segoe UI Light", 8, FontStyle.Regular)
 	        schedulerPrintStyle.DateHeadingFont = New Font("Segoe UI Light", 12, FontStyle.Regular)
 	        schedulerPrintStyle.PageHeadingFont = New Font("Segoe UI Light", 16, FontStyle.Regular)
@@ -377,7 +377,7 @@ SchedulerPrintStyle has the following properties:
 
 #### __[C#]__
 
-{{region SpeficyVisualElements}}
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SpeficyVisualElements}}
 	            schedulerPrintStyle.DrawPageTitle = true;
 	            schedulerPrintStyle.DrawPageTitleCalendar = true;
 	            schedulerPrintStyle.ShowLinedNotesArea = true;
@@ -388,7 +388,7 @@ SchedulerPrintStyle has the following properties:
 
 #### __[VB.NET]__
 
-{{region SpeficyVisualElements}}
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SpeficyVisualElements}}
 	        schedulerPrintStyle.DrawPageTitle = True
 	        schedulerPrintStyle.DrawPageTitleCalendar = True
 	        schedulerPrintStyle.ShowLinedNotesArea = True
@@ -451,7 +451,7 @@ SchedulerPrintStyle has the following properties:
 
 #### __[C#]__
 
-{{region ModifyVisualElements}}
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=ModifyVisualElements}}
 	            schedulerPrintStyle.NotesAreaWidth = 200;
 	            schedulerPrintStyle.HeadingAreaHeight = 100;
 	{{endregion}}
@@ -460,7 +460,7 @@ SchedulerPrintStyle has the following properties:
 
 #### __[VB.NET]__
 
-{{region ModifyVisualElements}}
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=ModifyVisualElements}}
 	        schedulerPrintStyle.NotesAreaWidth = 200
 	        schedulerPrintStyle.HeadingAreaHeight = 100
 	        '#End Region
@@ -523,7 +523,7 @@ The SchedulerDailyPrintStyle class defines printing of RadScheduler in a daily m
 
 #### __[C#]__
 
-{{region DailyStyle}}
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=DailyStyle}}
 	            SchedulerDailyPrintStyle dailyStyle = new SchedulerDailyPrintStyle();
 	            dailyStyle.HoursColumnWidth = 100;
 	            dailyStyle.MaxAllDayAreaHeight = 100;
@@ -535,7 +535,7 @@ The SchedulerDailyPrintStyle class defines printing of RadScheduler in a daily m
 
 #### __[VB.NET]__
 
-{{region DailyStyle}}
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=DailyStyle}}
 	        Dim dailyStyle As New SchedulerDailyPrintStyle()
 	        dailyStyle.HoursColumnWidth = 100
 	        dailyStyle.MaxAllDayAreaHeight = 100
@@ -604,7 +604,7 @@ In the WeeklyCalendarPrintStyle the appointments are arranged in a grid where ea
 
 #### __[C#]__
 
-{{region WeeklyCalendarStyle}}
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=WeeklyCalendarStyle}}
 	            SchedulerWeeklyCalendarPrintStyle weeklyCalendarStyle = new SchedulerWeeklyCalendarPrintStyle();
 	            weeklyCalendarStyle.AppointmentFont = new System.Drawing.Font("Segoe UI", 12, FontStyle.Regular);
 	            weeklyCalendarStyle.HeadingAreaHeight = 120;
@@ -615,7 +615,7 @@ In the WeeklyCalendarPrintStyle the appointments are arranged in a grid where ea
 
 #### __[VB.NET]__
 
-{{region WeeklyCalendarStyle}}
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=WeeklyCalendarStyle}}
 	        Dim weeklyCalendarStyle As New SchedulerWeeklyCalendarPrintStyle()
 	        weeklyCalendarStyle.AppointmentFont = New System.Drawing.Font("Segoe UI", 12, FontStyle.Regular)
 	        weeklyCalendarStyle.HeadingAreaHeight = 120
@@ -646,7 +646,7 @@ The SchedulerWeeklyPrintStyle class defines printing of RadScheduler in a weekly
 
 #### __[C#]__
 
-{{region WeeklyStyle}}
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=WeeklyStyle}}
 	            SchedulerWeeklyPrintStyle weeklyStyle = new SchedulerWeeklyPrintStyle();
 	            weeklyStyle.ExcludeNonWorkingDays = true;
 	            weeklyStyle.DaysLayout = WeeklyStyleLayout.TopToBottom;
@@ -657,7 +657,7 @@ The SchedulerWeeklyPrintStyle class defines printing of RadScheduler in a weekly
 
 #### __[VB.NET]__
 
-{{region WeeklyStyle}}
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=WeeklyStyle}}
 	        Dim weeklyStyle As New SchedulerWeeklyPrintStyle()
 	        weeklyStyle.ExcludeNonWorkingDays = True
 	        weeklyStyle.DaysLayout = WeeklyStyleLayout.TopToBottom
@@ -727,7 +727,7 @@ In this mode you can take advantage of the following properties:
 
 #### __[C#]__
 
-{{region MonthlyStyle}}
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=MonthlyStyle}}
 	            SchedulerMonthlyPrintStyle monthlyStyle = new SchedulerMonthlyPrintStyle();
 	            monthlyStyle.ExcludeNonWorkingDays = true;
 	            monthlyStyle.TwoPagesPerMonth = true;
@@ -742,7 +742,7 @@ In this mode you can take advantage of the following properties:
 
 #### __[VB.NET]__
 
-{{region MonthlyStyle}}
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=MonthlyStyle}}
 	        Dim monthlyStyle As New SchedulerMonthlyPrintStyle()
 	        monthlyStyle.ExcludeNonWorkingDays = True
 	        monthlyStyle.TwoPagesPerMonth = True
@@ -799,7 +799,7 @@ Similar to the previous modes, you can set properties that define the size of sp
 
 #### __[C#]__
 
-{{region DetailsStyle}}
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=DetailsStyle}}
 	            SchedulerDetailsPrintStyle detailsStyle = new SchedulerDetailsPrintStyle();
 	            detailsStyle.AppointmentDateWidth = 200;
 	            detailsStyle.AppointmentTitleHeight = 30;
@@ -811,7 +811,7 @@ Similar to the previous modes, you can set properties that define the size of sp
 
 #### __[VB.NET]__
 
-{{region DetailsStyle}}
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=DetailsStyle}}
 	        Dim detailsStyle As New SchedulerDetailsPrintStyle()
 	        detailsStyle.AppointmentDateWidth = 200
 	        detailsStyle.AppointmentTitleHeight = 30

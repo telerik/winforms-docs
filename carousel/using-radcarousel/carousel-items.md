@@ -20,7 +20,7 @@ To add items to the carousel without [data binding]({%slug carousel-using-radcar
 
 #### __[C#] Adding Carousel Items__
 
-{{region carouselItems}}
+{{source=..\SamplesCS\Carousel\CarouselItems.cs region=carouselItems}}
 	            radCarousel1.Items.Add(new RadButtonElement("My Button"));
 	            RadCheckBoxElement checkbox = new RadCheckBoxElement();
 	            checkbox.Text = "My Checkbox";
@@ -41,7 +41,7 @@ To add items to the carousel without [data binding]({%slug carousel-using-radcar
 
 #### __[VB.NET] Adding Carousel Items__
 
-{{region carouselItems}}
+{{source=..\SamplesVB\Carousel\CarouselItems.vb region=carouselItems}}
 	        RadCarousel1.Items.Add(New RadButtonElement("My Button"))
 	        Dim checkbox As New RadCheckBoxElement()
 	        checkbox.Text = "My Checkbox"
@@ -77,7 +77,7 @@ To delete an entry from the carousel Items collection, use the __Remove__ or __R
 
 #### __[C#] Deleting Carousel Items__
 
-{{region carouselDeletingItems}}
+{{source=..\SamplesCS\Carousel\CarouselItems.cs region=carouselDeletingItems}}
 	            radCarousel1.Items.Remove(radCarousel1.Items[0]);
 	            radCarousel1.Items.RemoveAt(0);
 	{{endregion}}
@@ -86,7 +86,7 @@ To delete an entry from the carousel Items collection, use the __Remove__ or __R
 
 #### __[VB.NET] Deleting Carousel Items__
 
-{{region carouselDeletingItems}}
+{{source=..\SamplesVB\Carousel\CarouselItems.vb region=carouselDeletingItems}}
 	        RadCarousel1.Items.Remove(RadCarousel1.Items(0))
 	        RadCarousel1.Items.RemoveAt(0)
 	{{endregion}}

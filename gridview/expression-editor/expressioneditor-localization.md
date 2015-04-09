@@ -26,7 +26,7 @@ You can localize the UI elements of RadExpressionEditor
 
 #### __[C#]__
 
-{{region expressionEditorLocalization}}
+{{source=..\SamplesCS\GridView\ExpressionEditor\CustomLocalizationProvider.cs region=expressionEditorLocalization}}
 	    public class CustomLocalizationProvider : RadGridLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -78,7 +78,7 @@ You can localize the UI elements of RadExpressionEditor
 
 #### __[VB.NET]__
 
-{{region expressionEditorLocalization}}
+{{source=..\SamplesVB\GridView\ExpressionEditor\CustomLocalizationProvider.vb region=expressionEditorLocalization}}
 	Public Class CustomLocalizationProvider
 	    Inherits RadGridLocalizationProvider
 	    Public Overrides Function GetLocalizedString(ByVal id As String) As String

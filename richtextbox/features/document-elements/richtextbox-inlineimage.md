@@ -25,7 +25,7 @@ Here is an example of how to add an __InlineImage__ element in the code behind.
 
 #### __C#__
 
-{{region AddInlineImageViaCode}}
+{{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxInnerImage.cs region=AddInlineImageViaCode}}
 	            Section section = new Section();
 	            Paragraph paragraph = new Paragraph();
 	            Size size = new Size(236, 50);
@@ -39,7 +39,7 @@ Here is an example of how to add an __InlineImage__ element in the code behind.
 
 #### __VB.NET__
 
-{{region AddInlineImageViaCode}}
+{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxInnerImage.vb region=AddInlineImageViaCode}}
 	        Dim section As New Section()
 	        Dim paragraph As New Paragraph()
 	        Dim stream As IO.Stream = GetImage()
@@ -65,7 +65,7 @@ Here is an example of how to allow the user to select an image and add it to the
 
 #### __C#__
 
-{{region AddInlineImageViaUI}}
+{{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxInnerImage.cs region=AddInlineImageViaUI}}
 	        private void imageButton_Click(object sender, EventArgs e)
 	        {
 	            OpenFileDialog openDialog = new OpenFileDialog();
@@ -83,7 +83,7 @@ Here is an example of how to allow the user to select an image and add it to the
 
 #### __VB.NET__
 
-{{region AddInlineImageViaUI}}
+{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxInnerImage.vb region=AddInlineImageViaUI}}
 	    Private Sub imageButton_Click(sender As System.Object, e As System.EventArgs) Handles imageButton.Click
 	        Dim openDialog As New OpenFileDialog()
 	        openDialog.Filter = "Images|*.png"

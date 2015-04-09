@@ -36,7 +36,7 @@ The following code snippet demonstrates how to open existing Zip archive using t
 
 #### __[C#] __
 
-{{region stream}}
+{{source=..\SamplesCS\ZipLibrary\GettingStarted.cs region=stream}}
 	            
 	            using (Stream stream = File.Open("test.zip", FileMode.Open))
 	            {
@@ -52,7 +52,7 @@ The following code snippet demonstrates how to open existing Zip archive using t
 
 #### __[VB.NET] __
 
-{{region stream}}
+{{source=..\SamplesVB\ZipLibrary\GettingStartedZipCode.vb region=stream}}
 	        Using stream As Stream = File.Open("test.zip", FileMode.Open)
 	            Using archive As New ZipArchive(stream)
 	                ' Display the list of the files in the selected zip file using the ZipArchive.Entries property.
@@ -90,7 +90,7 @@ The example below shows how to create a new Zip archive using the __ZipArchive__
 
 #### __[C#] __
 
-{{region create}}
+{{source=..\SamplesCS\ZipLibrary\GettingStarted.cs region=create}}
 	                
 	            using (Stream stream = File.Open("test.zip", FileMode.Create))
 	            {
@@ -111,7 +111,7 @@ The example below shows how to create a new Zip archive using the __ZipArchive__
 
 #### __[VB.NET] __
 
-{{region create}}
+{{source=..\SamplesVB\ZipLibrary\GettingStartedZipCode.vb region=create}}
 	        Using stream As Stream = File.Open("test.zip", FileMode.Create)
 	            Using archive As New ZipArchive(stream, ZipArchiveMode.Create, False, Nothing)
 	                Using entry As ZipArchiveEntry = archive.CreateEntry("text.txt")

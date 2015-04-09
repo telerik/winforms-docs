@@ -61,7 +61,7 @@ Another way of customizing the content area is in code. The following code snipp
 
 #### __[C#] Accessing the content area of Backstage View__
 
-{{region contentArea}}
+{{source=..\SamplesCS\PageView\BackstageView.cs region=contentArea}}
 	            RadPageViewBackstageElement backStageElement = radPageView1.ViewElement as RadPageViewBackstageElement;
 	            backStageElement.ContentArea.BackColor = Color.Yellow;
 	{{endregion}}
@@ -70,7 +70,7 @@ Another way of customizing the content area is in code. The following code snipp
 
 #### __[VB.NET] Accessing the content area of Backstage View__
 
-{{region contentArea}}
+{{source=..\SamplesVB\PageView\BackstageView.vb region=contentArea}}
 	        Dim backStageElement As RadPageViewBackstageElement = TryCast(RadPageView1.ViewElement, RadPageViewBackstageElement)
 	        backStageElement.ContentArea.BackColor = Color.Yellow
 	{{endregion}}
@@ -85,7 +85,7 @@ Use the following code snippet to access the element in code:
 
 #### __[C#] Accessing the content area of Backstage View__
 
-{{region itemsArea}}
+{{source=..\SamplesCS\PageView\BackstageView.cs region=itemsArea}}
 	            RadPageViewBackstageElement backStageElement = radPageView1.ViewElement as RadPageViewBackstageElement;
 	            StripViewItemLayout itemLayout = backStageElement.ItemContainer.ItemLayout as StripViewItemLayout;
 	            itemLayout.BackColor = Color.Red;
@@ -95,7 +95,7 @@ Use the following code snippet to access the element in code:
 
 #### __[VB.NET] Accessing the content area of Backstage View__
 
-{{region itemsArea}}
+{{source=..\SamplesVB\PageView\BackstageView.vb region=itemsArea}}
 	        Dim backStageElement As RadPageViewBackstageElement = TryCast(RadPageView1.ViewElement, RadPageViewBackstageElement)
 	        Dim itemLayout As StripViewItemLayout = TryCast(backStageElement.ItemContainer.ItemLayout, StripViewItemLayout)
 	        itemLayout.BackColor = Color.Red
@@ -118,7 +118,7 @@ The buttons panel can be accessed from the ItemsContaier of the Backstage elemen
 
 #### __[C#] Accessing the content area of Backstage View__
 
-{{region buttonsArea}}
+{{source=..\SamplesCS\PageView\BackstageView.cs region=buttonsArea}}
 	            RadPageViewBackstageElement backStageElement = radPageView1.ViewElement as RadPageViewBackstageElement;
 	            StripViewButtonsPanel buttonsPanel = backStageElement.ItemContainer.ButtonsPanel as StripViewButtonsPanel;
 	            buttonsPanel.Visibility = ElementVisibility.Visible;
@@ -130,7 +130,7 @@ The buttons panel can be accessed from the ItemsContaier of the Backstage elemen
 
 #### __[VB.NET] Accessing the content area of Backstage View__
 
-{{region buttonsArea}}
+{{source=..\SamplesVB\PageView\BackstageView.vb region=buttonsArea}}
 	        Dim backStageElement As RadPageViewBackstageElement = TryCast(RadPageView1.ViewElement, RadPageViewBackstageElement)
 	        Dim buttonsPanel As StripViewButtonsPanel = TryCast(backStageElement.ItemContainer.ButtonsPanel, StripViewButtonsPanel)
 	        buttonsPanel.Visibility = ElementVisibility.Visible
@@ -185,7 +185,7 @@ The following code snippet demonstrates how to access and customize the group it
 
 #### __[C#] Accessing the content area of Backstage View__
 
-{{region groupItems}}
+{{source=..\SamplesCS\PageView\BackstageView.cs region=groupItems}}
 	            RadPageViewBackstageElement backStageElement = radPageView1.ViewElement as RadPageViewBackstageElement;
 	            StripViewItemLayout itemLayout = backStageElement.ItemContainer.ItemLayout as StripViewItemLayout;
 	            foreach (RadPageViewStripItem item in itemLayout.Children)
@@ -209,7 +209,7 @@ The following code snippet demonstrates how to access and customize the group it
 
 #### __[VB.NET] Accessing the content area of Backstage View__
 
-{{region groupItems}}
+{{source=..\SamplesVB\PageView\BackstageView.vb region=groupItems}}
 	        Dim backStageElement As RadPageViewBackstageElement = TryCast(RadPageView1.ViewElement, RadPageViewBackstageElement)
 	        Dim itemLayout As StripViewItemLayout = TryCast(backStageElement.ItemContainer.ItemLayout, StripViewItemLayout)
 	        For Each item As RadPageViewStripItem In itemLayout.Children

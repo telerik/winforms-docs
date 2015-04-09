@@ -32,7 +32,7 @@ The next step is to add controls to the second RadPanel (the controls which are 
 
 #### __[C#]__
 
-{{region buttons}}
+{{source=..\SamplesCS\TrackAndStatus\ScrollBar\ScrollGettingStarted.cs region=buttons}}
 	            for (int i = 1; i < 15; i++)
 	            {
 	                RadButton button = new RadButton();
@@ -47,7 +47,7 @@ The next step is to add controls to the second RadPanel (the controls which are 
 
 #### __[VB.NET]__
 
-{{region buttons}}
+{{source=..\SamplesVB\TrackAndStatus\ScrollBar\ScrollGettingStarted.vb region=buttons}}
 	        For i As Integer = 1 To 14
 	            Dim button As New RadButton()
 	            button.Location = New Point(30, i * 30 + 5 * i)
@@ -67,7 +67,7 @@ Then subscribe to the Scroll event of the vertical scrollbar and assign its nega
 
 #### __[C#]__
 
-{{region scroll}}
+{{source=..\SamplesCS\TrackAndStatus\ScrollBar\ScrollGettingStarted.cs region=scroll}}
 	        void radVScrollBar1_Scroll(object sender, ScrollEventArgs e)
 	        {
 	            this.radPanel2.Top = -this.radVScrollBar1.Value;
@@ -78,7 +78,7 @@ Then subscribe to the Scroll event of the vertical scrollbar and assign its nega
 
 #### __[VB.NET]__
 
-{{region scroll}}
+{{source=..\SamplesVB\TrackAndStatus\ScrollBar\ScrollGettingStarted.vb region=scroll}}
 	    Private Sub radVScrollBar1_Scroll(ByVal sender As Object, ByVal e As ScrollEventArgs)
 	        Me.RadPanel2.Top = -Me.RadVScrollBar1.Value
 	    End Sub
@@ -90,7 +90,7 @@ The last required step is to set the __Maximum__property of the scrollbar to ref
 
 #### __[C#]__
 
-{{region maximum}}
+{{source=..\SamplesCS\TrackAndStatus\ScrollBar\ScrollGettingStarted.cs region=maximum}}
 	            this.radVScrollBar1.Maximum = this.radPanel2.Size.Height - this.radPanel1.Size.Height;
 	{{endregion}}
 
@@ -98,7 +98,7 @@ The last required step is to set the __Maximum__property of the scrollbar to ref
 
 #### __[VB.NET]__
 
-{{region maximum}}
+{{source=..\SamplesVB\TrackAndStatus\ScrollBar\ScrollGettingStarted.vb region=maximum}}
 	        Me.RadVScrollBar1.Maximum = Me.RadPanel2.Size.Height - Me.RadPanel1.Size.Height
 	{{endregion}}
 

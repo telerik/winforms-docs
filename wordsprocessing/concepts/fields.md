@@ -54,7 +54,7 @@ Here is how to create a document with a single __Date__ field using __RadFlowDoc
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-fields_0}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing-concepts-fields_0}}
 	            RadFlowDocument document = new RadFlowDocument();
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
 	            editor.InsertField("DATE", "10/11/2012");
@@ -64,7 +64,7 @@ Here is how to create a document with a single __Date__ field using __RadFlowDoc
 
 #### __VB__
 
-{{region radwordsprocessing-concepts-fields_0}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_0}}
 	        Dim document As New RadFlowDocument()
 	        Dim editor As New RadFlowDocumentEditor(document)
 	        editor.InsertField("DATE", "10/11/2012")
@@ -145,7 +145,7 @@ You can also create and insert all the parts of the field manually by creating a
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-fields_1}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing-concepts-fields_1}}
 	            // Create a document with paragraph            
 	            RadFlowDocument document = new RadFlowDocument();
 	            Paragraph paragraph = document.Sections.AddSection().Blocks.AddParagraph();
@@ -165,7 +165,7 @@ You can also create and insert all the parts of the field manually by creating a
 
 #### __VB__
 
-{{region radwordsprocessing-concepts-fields_1}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_1}}
 	        ' Create a document with paragraph 
 	        Dim document As New RadFlowDocument()
 	        Dim paragraph As Paragraph = document.Sections.AddSection().Blocks.AddParagraph()
@@ -269,7 +269,7 @@ Updating a single field is done with the __UpdateField()__ method of the __Field
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-fields_2}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing-concepts-fields_2}}
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
 	            FieldInfo fieldInfo = editor.InsertField("DATE \\@ dd/MM/yyyy", "result");
 	            Console.WriteLine(fieldInfo.GetResult()); // Output: result
@@ -281,7 +281,7 @@ Updating a single field is done with the __UpdateField()__ method of the __Field
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-fields_2}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_2}}
 	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	        Dim fieldInfo As FieldInfo = editor.InsertField("DATE \@ dd/MM/yyyy", "result")
 	        Console.WriteLine(fieldInfo.GetResult())
@@ -339,7 +339,7 @@ All fields in the document can be updated using __UpdateFields()__ of __RadFlowD
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-fields_3}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing-concepts-fields_3}}
 	            RadFlowDocument document = new RadFlowDocument();
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
 	            FieldInfo fieldInfo = editor.InsertField("DATE \\@ dd/MM/yyyy", "result");
@@ -353,7 +353,7 @@ All fields in the document can be updated using __UpdateFields()__ of __RadFlowD
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-fields_3}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_3}}
 	        Dim document As New RadFlowDocument()
 	        Dim editor As New RadFlowDocumentEditor(document)
 	        Dim fieldInfo As FieldInfo = editor.InsertField("DATE \@ dd/MM/yyyy", "result")
@@ -428,7 +428,7 @@ Here is an example of cratering a field which will be evaluated to appropriate g
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-fields_4}}
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing-concepts-fields_4}}
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
 	
 	            // Create an outer field with empty code fragment
@@ -450,7 +450,7 @@ Here is an example of cratering a field which will be evaluated to appropriate g
 
 #### __C#__
 
-{{region radwordsprocessing-concepts-fields_4}}
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_4}}
 	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	
 	        ' Create an outer field with empty code fragment

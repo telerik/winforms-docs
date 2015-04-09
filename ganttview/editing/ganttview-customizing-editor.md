@@ -24,7 +24,7 @@ The following sample demonstrates how to change the default font of a BaseTextBo
 
 #### __[C#] __
 
-{{region CustomizingEditor}}
+{{source=..\SamplesCS\GanttView\Editing\CustomizingEditor.cs region=CustomizingEditor}}
 	        private void GanttViewElement_EditorInitialized(object sender, GanttViewItemEditorInitializedEventArgs e)
 	        {
 	            BaseTextBoxEditor editor = e.Editor as BaseTextBoxEditor;
@@ -40,7 +40,7 @@ The following sample demonstrates how to change the default font of a BaseTextBo
 
 #### __[VB.NET] __
 
-{{region CustomizingEditor}}
+{{source=..\SamplesVB\GanttView\Editing\CustomizingEditor.vb region=CustomizingEditor}}
 	    Private Sub GanttViewElement_EditorInitialized(sender As Object, e As GanttViewItemEditorInitializedEventArgs)
 	        Dim editor As BaseTextBoxEditor = TryCast(e.Editor, BaseTextBoxEditor)
 	

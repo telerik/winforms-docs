@@ -38,7 +38,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[C#] Localizing print dialogs__
 
-{{region localizationProvider}}
+{{source=..\SamplesCS\TPF\Printing support\LocalizeRadPrintDialog.cs region=localizationProvider}}
 	    class MyPrintDialogsLocalizationProvider : Telerik.WinControls.UI.PrintDialogsLocalizationProvider
 	    {
 	        public override string GetLocalizedString(string id)
@@ -191,7 +191,7 @@ Below is a sample implementation of an English localization provider:
 
 #### __[VB.NET] Localizing print dialogs__
 
-{{region localizationProvider}}
+{{source=..\SamplesVB\TPF\Printing support\LocalizeRadPrintDialog.vb region=localizationProvider}}
 	    Class MyPrintDialogsLocalizationProvider
 	        Inherits Telerik.WinControls.UI.PrintDialogsLocalizationProvider
 	        Public Overrides Function GetLocalizedString(id As String) As String
@@ -472,7 +472,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[C#] Assigning the Current Localization Provider__
 
-{{region setTheLocalizationProvider}}
+{{source=..\SamplesCS\TPF\Printing support\LocalizeRadPrintDialog.cs region=setTheLocalizationProvider}}
 	            PrintDialogsLocalizationProvider.CurrentProvider = new MyPrintDialogsLocalizationProvider();
 	{{endregion}}
 
@@ -480,7 +480,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 #### __[VB.NET] Assigning the Current Localization Provider__
 
-{{region setTheLocalizationProvider}}
+{{source=..\SamplesVB\TPF\Printing support\LocalizeRadPrintDialog.vb region=setTheLocalizationProvider}}
 	        PrintDialogsLocalizationProvider.CurrentProvider = New MyPrintDialogsLocalizationProvider()
 	{{endregion}}
 

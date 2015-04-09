@@ -39,7 +39,7 @@ To define how expanded pages are sized, you should set the __ContentSizeMode__ p
 
 #### __[C#]__
 
-{{region contentSizeMode}}
+{{source=..\SamplesCS\PageView\ExplorerBarView.cs region=contentSizeMode}}
 	
 	            RadPageViewExplorerBarElement explorerBarElement = (this.radPageView1.ViewElement as RadPageViewExplorerBarElement);
 	            explorerBarElement.ContentSizeMode = ExplorerBarContentSizeMode.EqualLength;
@@ -50,7 +50,7 @@ To define how expanded pages are sized, you should set the __ContentSizeMode__ p
 
 #### __[VB.NET]__
 
-{{region contentSizeMode}}
+{{source=..\SamplesVB\PageView\ExplorerBarView.vb region=contentSizeMode}}
 	
 	        Dim explorerBarElement As RadPageViewExplorerBarElement = (TryCast(Me.radPageView1.ViewElement, RadPageViewExplorerBarElement))
 	        explorerBarElement.ContentSizeMode = ExplorerBarContentSizeMode.EqualLength
@@ -64,7 +64,7 @@ If you choose to use the __FixedLength__ size mode and consequently wish to defi
 
 #### __[C#]__
 
-{{region pageLength}}
+{{source=..\SamplesCS\PageView\ExplorerBarView.cs region=pageLength}}
 	
 	            this.radPageViewPage1.PageLength = 430;
 	
@@ -74,7 +74,7 @@ If you choose to use the __FixedLength__ size mode and consequently wish to defi
 
 #### __[VB.NET]__
 
-{{region pageLength}}
+{{source=..\SamplesVB\PageView\ExplorerBarView.vb region=pageLength}}
 	
 	        Me.radPageViewPage1.PageLength = 430
 	
@@ -97,7 +97,7 @@ To expand or collapse a page, you should simply click on its item. You can also 
 
 #### __[C#]__
 
-{{region isContentVisible}}
+{{source=..\SamplesCS\PageView\ExplorerBarView.cs region=isContentVisible}}
 	
 	            this.radPageViewPage1.IsContentVisible = true;
 	
@@ -107,7 +107,7 @@ To expand or collapse a page, you should simply click on its item. You can also 
 
 #### __[VB.NET]__
 
-{{region isContentVisible}}
+{{source=..\SamplesVB\PageView\ExplorerBarView.vb region=isContentVisible}}
 	
 	        Me.radPageViewPage1.IsContentVisible = True
 	
@@ -151,7 +151,7 @@ The ExplorerBar view also automatically scrolls to an item when it is selected. 
 
 #### __[C#]__
 
-{{region scrolling}}
+{{source=..\SamplesCS\PageView\ExplorerBarView.cs region=scrolling}}
 	
 	            RadPageViewExplorerBarItem item = this.radPageViewPage1.Item as RadPageViewExplorerBarItem;
 	            explorerBarElement.ScrollToItem(item);
@@ -162,7 +162,7 @@ The ExplorerBar view also automatically scrolls to an item when it is selected. 
 
 #### __[VB.NET]__
 
-{{region scrolling}}
+{{source=..\SamplesVB\PageView\ExplorerBarView.vb region=scrolling}}
 	
 	        Dim item As RadPageViewExplorerBarItem = TryCast(Me.radPageViewPage1.Item, RadPageViewExplorerBarItem)
 	        explorerBarElement.ScrollToItem(item)

@@ -18,7 +18,7 @@ You can iterate through the cells of each row using the __Cells__ collection of
 
 #### __[C#] Iterating cells__
 
-{{region iteratingCells}}
+{{source=..\SamplesCS\GridView\Cells\IteratingCells.cs region=iteratingCells}}
 	            foreach (GridViewRowInfo rowInfo in radGridView1.Rows)
 	            {
 	                foreach (GridViewCellInfo cellInfo in rowInfo.Cells)
@@ -37,7 +37,7 @@ You can iterate through the cells of each row using the __Cells__ collection of
 
 #### __[VB.NET] Iterating cells__
 
-{{region iteratingCells}}
+{{source=..\SamplesVB\GridView\Cells\IteratingCells.vb region=iteratingCells}}
 	        For Each rowInfo As GridViewRowInfo In RadGridView1.Rows
 	            For Each cellInfo As GridViewCellInfo In rowInfo.Cells
 	                If (cellInfo.ColumnInfo.Name = "Title") OrElse (cellInfo.ColumnInfo.Name = "FirstName") OrElse (cellInfo.ColumnInfo.Name = "LastName") Then

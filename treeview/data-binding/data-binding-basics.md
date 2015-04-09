@@ -28,7 +28,7 @@ The example below binds a generic list of "Product" objects and displays
 
 #### ____
 
-{{region dataBindingBasics}}
+{{source=..\SamplesCS\TreeView\DataBinding\DataBindingBasics.cs region=dataBindingBasics}}
 	    public partial class DataBindingBasics : Form
 	    {
 	        public DataBindingBasics()
@@ -62,7 +62,7 @@ The example below binds a generic list of "Product" objects and displays
 
 #### ____
 
-{{region product}}
+{{source=..\SamplesCS\TreeView\DataBinding\Product.cs region=product}}
 	    public class Product
 	    {
 	        private int _id;
@@ -100,7 +100,7 @@ The example below binds a generic list of "Product" objects and displays
 
 #### ____
 
-{{region dataBindingBasics}}
+{{source=..\SamplesVB\TreeView\DataBinding\DataBindingBasics.vb region=dataBindingBasics}}
 	    Public Class DataBindingBasics
 	        Public Sub New()
 	            InitializeComponent()
@@ -135,7 +135,7 @@ The example below binds a generic list of "Product" objects and displays
 
 #### ____
 
-{{region product}}
+{{source=..\SamplesVB\TreeView\DataBinding\Product.vb region=product}}
 	    Public Class Product
 	
 	        Private _id As Integer
@@ -190,7 +190,7 @@ To extend the previous example, let's get the price of a product when we
 
 #### __[C#]__
 
-{{region dataBoundItem}}
+{{source=..\SamplesCS\TreeView\DataBinding\DataBindingBasics.cs region=dataBoundItem}}
 	        void radTreeView1_SelectedNodeChanged(object sender, Telerik.WinControls.UI.RadTreeViewEventArgs e)
 	        {
 	            Product product = e.Node.DataBoundItem as Product;
@@ -205,7 +205,7 @@ To extend the previous example, let's get the price of a product when we
 
 #### __[VB.NET]__
 
-{{region dataBoundItem}}
+{{source=..\SamplesVB\TreeView\DataBinding\DataBindingBasics.vb region=dataBoundItem}}
 	        Private Sub RadTreeView1_SelectedNodeChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.RadTreeViewEventArgs) Handles RadTreeView1.SelectedNodeChanged
 	            Dim product As Product = TryCast(e.Node.DataBoundItem, Product)
 	            If product IsNot Nothing Then
@@ -227,7 +227,7 @@ When a __RadTreeNode__ is assigned with a data-bound item for the first time, th
 
 #### __[C#]__
 
-{{region nodeDataBoundEvent}}
+{{source=..\SamplesCS\TreeView\DataBinding\DataBindingBasics.cs region=nodeDataBoundEvent}}
 	        void radTreeView1_NodeDataBound(object sender, Telerik.WinControls.UI.RadTreeViewEventArgs e)
 	        {
 	            DataRowView dataRow = e.Node.DataBoundItem as DataRowView;
@@ -242,7 +242,7 @@ When a __RadTreeNode__ is assigned with a data-bound item for the first time, th
 
 #### __[VB.NET]__
 
-{{region nodeDataBoundEvent}}
+{{source=..\SamplesVB\TreeView\DataBinding\DataBindingBasics.vb region=nodeDataBoundEvent}}
 	        Private Sub RadTreeView1_NodeDataBound(sender As Object, e As Telerik.WinControls.UI.RadTreeViewEventArgs) Handles RadTreeView1.NodeDataBound
 	            Dim dataRow As DataRowView = TryCast(e.Node.DataBoundItem, DataRowView)
 	            If dataRow IsNot Nothing Then
@@ -283,7 +283,7 @@ In order to display the hierarchy of business objects, we just need to
 
 #### __[C#]__
 
-{{region hierarchy}}
+{{source=..\SamplesCS\TreeView\DataBinding\BasicsHierarchyForm.cs region=hierarchy}}
 	        
 	        public BasicsHierarchyForm()
 	        {
@@ -317,7 +317,7 @@ In order to display the hierarchy of business objects, we just need to
 
 #### __[C#]__
 
-{{region product}}
+{{source=..\SamplesCS\TreeView\DataBinding\Product.cs region=product}}
 	    public class Product
 	    {
 	        private int _id;
@@ -355,7 +355,7 @@ In order to display the hierarchy of business objects, we just need to
 
 #### __[C#]__
 
-{{region category}}
+{{source=..\SamplesCS\TreeView\DataBinding\Category.cs region=category}}
 	    public class Category
 	    {
 	        public Category(string name, List<Product> products)
@@ -382,7 +382,7 @@ In order to display the hierarchy of business objects, we just need to
 
 #### __[VB.NET]__
 
-{{region hierarchy}}
+{{source=..\SamplesVB\TreeView\DataBinding\BasicsHierarchyForm.vb region=hierarchy}}
 	        Public Sub New()
 	            InitializeComponent()
 	
@@ -450,7 +450,7 @@ In order to display the hierarchy of business objects, we just need to
 
 #### __[VB.NET]__
 
-{{region product}}
+{{source=..\SamplesVB\TreeView\DataBinding\Product.vb region=product}}
 	    Public Class Product
 	
 	        Private _id As Integer
@@ -497,7 +497,7 @@ In order to display the hierarchy of business objects, we just need to
 
 #### __[VB.NET]__
 
-{{region category}}
+{{source=..\SamplesVB\TreeView\DataBinding\Category.vb region=category}}
 	    Public Class Category
 	        Public Sub New(ByVal name As String, ByVal products As List(Of Product))
 	            _name = name
@@ -537,7 +537,7 @@ Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a
 
 #### ____
 
-{{region CheckedMember}}
+{{source=..\SamplesCS\TreeView\DataBinding\BasicsHierarchyForm.cs region=CheckedMember}}
 	            
 	            DataTable parentDt = new DataTable("Parent");
 	            parentDt.Columns.Add("MasterId", typeof(string));
@@ -577,7 +577,7 @@ Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a
 
 #### ____
 
-{{region CheckedMember}}
+{{source=..\SamplesVB\TreeView\DataBinding\BasicsHierarchyForm.vb region=CheckedMember}}
 	            
 	            Dim parentDt As New DataTable("Parent")
 	            parentDt.Columns.Add("MasterId", GetType(String))

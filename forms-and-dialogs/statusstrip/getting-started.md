@@ -79,7 +79,7 @@ The following tutorial demonstrates configuring __RadStatusStrip__
 
 #### __[C#]__
 
-{{region statusClick}}
+{{source=..\SamplesCS\Forms And Dialogs\StatusStripGettingStarted.cs region=statusClick}}
 	        private void btnStatus_Click(object sender, EventArgs e)
 	        {
 	            if (radListControl1.SelectedIndex >= radListControl1.Items.Count - 1)
@@ -93,7 +93,7 @@ The following tutorial demonstrates configuring __RadStatusStrip__
 
 #### __[VB.NET]__
 
-{{region statusClick}}
+{{source=..\SamplesVB\Forms And Dialogs\StatusStripGettingStarted.vb region=statusClick}}
 	    Private Sub btnStatus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnStatus.Click
 	        If RadListControl1.SelectedIndex >= RadListControl1.Items.Count - 1 Then
 	            RadListControl1.SelectedIndex = 0
@@ -152,7 +152,7 @@ The following tutorial demonstrates configuring __RadStatusStrip__
 
 #### __[C#]__
 
-{{region selectedIndexChanged}}
+{{source=..\SamplesCS\Forms And Dialogs\StatusStripGettingStarted.cs region=selectedIndexChanged}}
 	        void radListControl1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
 	        {
 	            RadListElement listControl = (sender as RadListElement);
@@ -176,7 +176,7 @@ The following tutorial demonstrates configuring __RadStatusStrip__
 
 #### __[VB.NET]__
 
-{{region selectedIndexChanged}}
+{{source=..\SamplesVB\Forms And Dialogs\StatusStripGettingStarted.vb region=selectedIndexChanged}}
 	    Private Sub RadListControl1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs) Handles RadListControl1.SelectedIndexChanged
 	        Dim listControl As RadListElement = TryCast(sender, RadListElement)
 	        Dim item As RadListDataItem = listControl.SelectedItem
@@ -203,7 +203,7 @@ The following tutorial demonstrates configuring __RadStatusStrip__
 
 #### __[C#]__
 
-{{region namespaces}}
+{{source=..\SamplesCS\Forms And Dialogs\StatusStripGettingStarted.cs region=namespaces}}
 	using Telerik.WinControls.UI;
 	using System.Threading;
 	{{endregion}}
@@ -212,7 +212,7 @@ The following tutorial demonstrates configuring __RadStatusStrip__
 
 #### __[VB.NET]__
 
-{{region namespaces}}
+{{source=..\SamplesVB\Forms And Dialogs\StatusStripGettingStarted.vb region=namespaces}}
 	Imports Telerik.WinControls.UI
 	Imports System.Threading
 	{{endregion}}

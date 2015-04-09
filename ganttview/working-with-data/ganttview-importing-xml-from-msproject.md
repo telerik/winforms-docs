@@ -20,7 +20,7 @@ Although RadGanttView does not support direct binding or importing of MS Project
 
 #### __[C#] __
 
-{{region MsProjectImport}}
+{{source=..\SamplesCS\GanttView\WorkingWithData\ImportXmlFromMsProject.cs region=MsProjectImport}}
 	    public class MsProjectImporter
 	    {
 	        private Dictionary<int, List<DataRow>> tasksByLevel;
@@ -198,7 +198,7 @@ Although RadGanttView does not support direct binding or importing of MS Project
 
 #### __[VB.NET] __
 
-{{region MsProjectImport}}
+{{source=..\SamplesVB\GanttView\WorkingWithData\ImportXmlFromMsProject.vb region=MsProjectImport}}
 	Public Class MsProjectImporter
 	    Private tasksByLevel As Dictionary(Of Integer, List(Of DataRow))
 	    Private dataSet As DataSet
@@ -363,7 +363,7 @@ After you have this code in your project you can load the data from the xml into
 
 #### __[C#] __
 
-{{region ImportXmlIntoGanttView}}
+{{source=..\SamplesCS\GanttView\WorkingWithData\ImportXmlFromMsProject.cs region=ImportXmlIntoGanttView}}
 	            string fileLocation = @"C:\file.xml";
 	            MsProjectImporter importer = new MsProjectImporter(); 
 	            StringReader reader = new StringReader(fileLocation); 
@@ -375,7 +375,7 @@ After you have this code in your project you can load the data from the xml into
 
 #### __[VB.NET] __
 
-{{region ImportXmlIntoGanttView}}
+{{source=..\SamplesVB\GanttView\WorkingWithData\ImportXmlFromMsProject.vb region=ImportXmlIntoGanttView}}
 	        Dim fileLocation As String = "C:\file.xml"
 	        Dim importer As New MsProjectImporter()
 	        Dim reader As New StringReader(fileLocation)

@@ -34,7 +34,7 @@ __Example 1__ shows how to create a __Break__ element and add it to a [Paragraph
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-break_0}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_0}}
 	            Break br = new Break(document);
 	            paragraph.Inlines.Add(br);
 	{{endregion}}
@@ -43,7 +43,7 @@ __Example 1__ shows how to create a __Break__ element and add it to a [Paragraph
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-break_0}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_0}}
 	            Dim br As New Break(document)
 	            paragraph.Inlines.Add(br)
 	            '#End Region
@@ -81,7 +81,7 @@ __Example 2__ shows how you can change the type of the break created in __Exampl
 
 #### __[C#] Example 2: Change BreakType__
 
-{{region radwordsprocessing-model-break_1}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_1}}
 	            br.BreakType = BreakType.PageBreak;
 	{{endregion}}
 
@@ -89,7 +89,7 @@ __Example 2__ shows how you can change the type of the break created in __Exampl
 
 #### __[VB.NET] Example 2: Change BreakType__
 
-{{region radwordsprocessing-model-break_1}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_1}}
 	            br.BreakType = BreakType.PageBreak
 	            '#End Region
 	        End Sub
@@ -122,7 +122,7 @@ __Example 3__ shows how you can insert a break through __RadFlowDocumentEditor__
 
 #### __[C#] Example 3: Insert break using RadFlowDocumentEditor__
 
-{{region radwordsprocessing-model-break_2}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_2}}
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
 	            Break br = editor.InsertBreak(BreakType.PageBreak);
 	{{endregion}}
@@ -131,7 +131,7 @@ __Example 3__ shows how you can insert a break through __RadFlowDocumentEditor__
 
 #### __[VB.NET] Example 3: Insert break using RadFlowDocumentEditor__
 
-{{region radwordsprocessing-model-break_2}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_2}}
 	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	            Dim br As Break = editor.InsertBreak(BreakType.PageBreak)
 	            '#End Region
@@ -178,7 +178,7 @@ __Example 4__ shows how you can insert a Break through __RadFlowDocumentEditor__
 
 #### __[C#] Example 4: Customize a break__
 
-{{region radwordsprocessing-model-break_3}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_3}}
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
 	
 	            Break br = editor.InsertBreak(BreakType.PageBreak);
@@ -190,7 +190,7 @@ __Example 4__ shows how you can insert a Break through __RadFlowDocumentEditor__
 
 #### __[VB.NET] Example 4: Customize a break__
 
-{{region radwordsprocessing-model-break_3}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_3}}
 	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	
 	            Dim br As Break = editor.InsertBreak(BreakType.PageBreak)

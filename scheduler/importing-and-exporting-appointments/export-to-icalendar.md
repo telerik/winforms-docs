@@ -25,7 +25,7 @@ RadScheduler allows you to export appointments in the industry-standard ICalenda
 
 #### __[C#]__
 
-{{region iCalExport}}
+{{source=..\SamplesCS\Scheduler\ImportExport\ImEx.cs region=iCalExport}}
 	            string exportResult = this.radScheduler1.Export(new SchedulerICalendarExporter());
 	{{endregion}}
 
@@ -33,7 +33,7 @@ RadScheduler allows you to export appointments in the industry-standard ICalenda
 
 #### __[VB.NET]__
 
-{{region iCalExport}}
+{{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=iCalExport}}
 	        Dim exportResult As String = Me.RadScheduler1.Export(New SchedulerICalendarExporter)
 	{{endregion}}
 
@@ -43,7 +43,7 @@ Another override of the __Export__ method allows writing the appointment data to
 
 #### __[C#]__
 
-{{region iCalEFile}}
+{{source=..\SamplesCS\Scheduler\ImportExport\ImEx.cs region=iCalEFile}}
 	            using (FileStream stream = File.Create("schedule.ics"))
 	            {
 	                this.radScheduler1.Export(stream, new SchedulerICalendarExporter());
@@ -54,7 +54,7 @@ Another override of the __Export__ method allows writing the appointment data to
 
 #### __[VB.NET]__
 
-{{region iCalEFile}}
+{{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=iCalEFile}}
 	        Using stream As FileStream = File.Create("schedule.ics")
 	            Me.RadScheduler1.Export(stream, New SchedulerICalendarExporter)
 	        End Using

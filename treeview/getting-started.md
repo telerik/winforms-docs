@@ -66,7 +66,7 @@ The design should now look something like the screenshot below.![treeview-gettin
 
 #### __[C#] __
 
-{{region GettingStarted}}
+{{source=..\SamplesCS\TreeView\GettingStarted.cs region=GettingStarted}}
 	            
 	            RadTreeNode node = radTreeView1.Nodes["Email Contacts"].Nodes.Add("Bob Tony");
 	            node.Selected = true;
@@ -88,7 +88,7 @@ The design should now look something like the screenshot below.![treeview-gettin
 
 #### __[VB.NET] __
 
-{{region GettingStarted}}
+{{source=..\SamplesVB\TreeView\TreeViewGettingStarted.vb region=GettingStarted}}
 	        Dim node As RadTreeNode = RadTreeView1.Nodes("Email Contacts").Nodes.Add("Bob Tony")
 	        node.Selected = True
 	

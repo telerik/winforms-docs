@@ -18,7 +18,7 @@ Subscribing to RadPageViewPage event is no different then subscribing to any oth
 
 #### __[C#]__
 
-{{region subscribeToEvents}}
+{{source=..\SamplesCS\PageView\HowTo.cs region=subscribeToEvents}}
 	
 	            radPageViewPage1.MouseClick += new MouseEventHandler(radPageViewPage1_MouseClick);
 	            radPageViewPage1.MouseDoubleClick += new MouseEventHandler(radPageViewPage1_MouseDoubleClick);
@@ -29,7 +29,7 @@ Subscribing to RadPageViewPage event is no different then subscribing to any oth
 
 #### __[C#]__
 
-{{region eventHandlers}}
+{{source=..\SamplesCS\PageView\HowTo.cs region=eventHandlers}}
 	
 	        void radPageViewPage1_MouseDoubleClick(object sender, MouseEventArgs e)
 	        {
@@ -48,7 +48,7 @@ Subscribing to RadPageViewPage event is no different then subscribing to any oth
 
 #### __[VB.NET]__
 
-{{region subscribeToEvents}}
+{{source=..\SamplesVB\PageView\HowTo.vb region=subscribeToEvents}}
 	
 	        AddHandler radPageViewPage1.MouseClick, AddressOf radPageViewPage1_MouseClick
 	        AddHandler radPageViewPage1.MouseDoubleClick, AddressOf radPageViewPage1_MouseDoubleClick
@@ -59,7 +59,7 @@ Subscribing to RadPageViewPage event is no different then subscribing to any oth
 
 #### __[VB.NET]__
 
-{{region eventHandlers}}
+{{source=..\SamplesVB\PageView\HowTo.vb region=eventHandlers}}
 	
 	    Private Sub radPageViewPage1_MouseDoubleClick(ByVal sender As Object, ByVal e As MouseEventArgs)
 	        'do something

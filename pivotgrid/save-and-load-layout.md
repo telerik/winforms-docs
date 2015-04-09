@@ -22,7 +22,7 @@ Here is a sample demonstrating how you can implement a Save Layout button event 
 
 #### __[C#]__
 
-{{region SaveLayout}}
+{{source=..\SamplesCS\PivotGrid\PivotGridSaveLoadLayout.cs region=SaveLayout}}
 	        
 	        private void radButtonSaveLayout_Click(object sender, EventArgs e)
 	        {
@@ -43,7 +43,7 @@ Here is a sample demonstrating how you can implement a Save Layout button event 
 
 #### __[VB]__
 
-{{region SaveLayout}}
+{{source=..\SamplesVB\PivotGrid\PivotGridSaveLoadLayout.vb region=SaveLayout}}
 	
 	    Private Sub RadButtonSaveLayout_Click(sender As Object, e As EventArgs) Handles RadButtonSaveLayout.Click
 	        Dim s As String = "default.xml"
@@ -80,7 +80,7 @@ The code snippet below demonstrates how you can implement a Load Layout button e
 
 #### __[C#]__
 
-{{region LoadLayout}}
+{{source=..\SamplesCS\PivotGrid\PivotGridSaveLoadLayout.cs region=LoadLayout}}
 	        
 	        private void radButtonLoadLayout_Click(object sender, EventArgs e)
 	        {
@@ -101,7 +101,7 @@ The code snippet below demonstrates how you can implement a Load Layout button e
 
 #### __[VB]__
 
-{{region LoadLayout}}
+{{source=..\SamplesVB\PivotGrid\PivotGridSaveLoadLayout.vb region=LoadLayout}}
 	
 	    Private Sub RadButtonLoadLayout_Click(sender As Object, e As EventArgs) Handles RadButtonLoadLayout.Click
 	        Dim s As String = "default.xml"

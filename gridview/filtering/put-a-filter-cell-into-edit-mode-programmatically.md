@@ -18,7 +18,7 @@ You can easily put a filter cell into edit mode by code. You should simply call 
 
 #### __[C#] Put a filter cell in edit mode programmatically__
 
-{{region putFilterCellIntoEditModeProgramatically}}
+{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=putFilterCellIntoEditModeProgramatically}}
 	            this.radGridView1.MasterView.TableFilteringRow.Cells[1].BeginEdit();
 	{{endregion}}
 
@@ -26,7 +26,7 @@ You can easily put a filter cell into edit mode by code. You should simply call 
 
 #### __[VB.NET] Put a filter cell in edit mode programmatically__
 
-{{region putFilterCellIntoEditModeProgramatically}}
+{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=putFilterCellIntoEditModeProgramatically}}
 	        Me.RadGridView1.MasterView.TableFilteringRow.Cells(0).BeginEdit()
 	{{endregion}}
 

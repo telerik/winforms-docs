@@ -27,7 +27,7 @@ Let’s assume that our __RadScheduler__ is in unbound mode and the __RadGridVie
 
 #### __[C#]__
 
-{{region CustomRowGridBehavior}}
+{{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToGrid.cs region=CustomRowGridBehavior}}
 	        
 	        //initiates drag and drop service for clicked rows
 	        public class CustomRowGridBehavior : GridDataRowBehavior
@@ -50,7 +50,7 @@ Let’s assume that our __RadScheduler__ is in unbound mode and the __RadGridVie
 
 #### __[VB.NET]__
 
-{{region CustomRowGridBehavior}}
+{{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToGrid.vb region=CustomRowGridBehavior}}
 	
 	    'initiates drag and drop service for clicked rows
 	    Public Class CustomRowGridBehavior
@@ -200,7 +200,7 @@ Let’s assume that our __RadScheduler__ is in unbound mode and the __RadGridVie
 
 #### __[C#]__
 
-{{region RegisterGridBehavior}}
+{{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToGrid.cs region=RegisterGridBehavior}}
 	            
 	            //register the custom row behavior
 	            BaseGridBehavior gridBehavior = this.radGridView1.GridBehavior as BaseGridBehavior;
@@ -213,7 +213,7 @@ Let’s assume that our __RadScheduler__ is in unbound mode and the __RadGridVie
 
 #### __[VB.NET]__
 
-{{region RegisterGridBehavior}}
+{{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToGrid.vb region=RegisterGridBehavior}}
 	
 	        'register the custom row behavior
 	        Dim gridBehavior As BaseGridBehavior = TryCast(Me.RadGridView1.GridBehavior, BaseGridBehavior)
@@ -383,7 +383,7 @@ Let’s assume that our __RadScheduler__ is in unbound mode and the __RadGridVie
 
 #### __[C#]__
 
-{{region RadDragDropService}}
+{{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToGrid.cs region=RadDragDropService}}
 	            
 	            //handle drag and drop events for the grid through the DragDrop service
 	            RadDragDropService svc = this.radGridView1.GridViewElement.GetService<RadDragDropService>();
@@ -397,7 +397,7 @@ Let’s assume that our __RadScheduler__ is in unbound mode and the __RadGridVie
 
 #### __[VB.NET]__
 
-{{region RadDragDropService}}
+{{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToGrid.vb region=RadDragDropService}}
 	
 	        'handle drag and drop events for the grid through the DragDrop service
 	        Dim svc As RadDragDropService = Me.RadGridView1.GridViewElement.GetService(Of RadDragDropService)()
@@ -572,7 +572,7 @@ Let’s assume that our __RadScheduler__ is in unbound mode and the __RadGridVie
 
 #### __[C#]__
 
-{{region PerformGridToSchedulerDragDrop}}
+{{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToGrid.cs region=PerformGridToSchedulerDragDrop}}
 	        
 	        //required to initiate drag and drop when grid is in bound mode
 	        private void svc_PreviewDragStart(object sender, PreviewDragStartEventArgs e)
@@ -639,7 +639,7 @@ Let’s assume that our __RadScheduler__ is in unbound mode and the __RadGridVie
 
 #### __[VB.NET]__
 
-{{region PerformGridToSchedulerDragDrop}}
+{{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToGrid.vb region=PerformGridToSchedulerDragDrop}}
 	
 	    'required to initiate drag and drop when grid is in bound mode
 	    Private Sub svc_PreviewDragStart(sender As Object, e As PreviewDragStartEventArgs)
@@ -777,7 +777,7 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 
 #### __[C#]__
 
-{{region SchedulerToGrid}}
+{{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToGrid.cs region=SchedulerToGrid}}
 	        
 	        private void DragDropBehavior_PreviewDragOver(object sender, Telerik.WinControls.RadDragOverEventArgs e)
 	        {
@@ -868,7 +868,7 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 
 #### __[VB.NET]__
 
-{{region SchedulerToGrid}}
+{{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToGrid.vb region=SchedulerToGrid}}
 	
 	    Private Sub DragDropBehavior_PreviewDragOver(sender As Object, e As Telerik.WinControls.RadDragOverEventArgs)
 	        e.CanDrop = TypeOf e.HitTarget Is GridTableElement OrElse TypeOf e.HitTarget Is GridDataRowElement

@@ -18,11 +18,11 @@ __RadDiagram__ gives you the ability to rotate shapes by dragging their Rotation
 ## Enable/Disable rotation
 
 By default, the __RadDiagram__ is enabled for rotation manipulation.
-        In order to disable this functionality, you can set __IsRotationEnabled__ to *False*.![diagram-items-manipulation-rotation 001](images/diagram-items-manipulation-rotation001.png)
+        In order to disable this functionality, you can set the __IsRotationEnabled__ property to *false*.![diagram-items-manipulation-rotation 001](images/diagram-items-manipulation-rotation001.png)
 
 #### __[C#] __
 
-{{region EnableRotation}}
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=EnableRotation}}
 	            
 	            this.radDiagram1.IsRotationEnabled = false;
 	
@@ -32,7 +32,7 @@ By default, the __RadDiagram__ is enabled for rotation manipulation.
 
 #### __[VB.NET] __
 
-{{region EnableRotation}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EnableRotation}}
 	
 	        Me.RadDiagram1.IsRotationEnabled = False
 	
@@ -246,6 +246,21 @@ By default, the __RadDiagram__ is enabled for rotation manipulation.
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 
@@ -256,7 +271,7 @@ You can rotate shapes by using their __RotationAngle__ property: ![diagram-items
 
 #### __[C#] __
 
-{{region RotationAngle}}
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=RotationAngle}}
 	            
 	            RadDiagramShape sourceShape = new RadDiagramShape()
 	            {
@@ -272,7 +287,7 @@ You can rotate shapes by using their __RotationAngle__ property: ![diagram-items
 
 #### __[VB.NET] __
 
-{{region RotationAngle}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=RotationAngle}}
 	
 	        Dim sourceShape As New RadDiagramShape() With { _
 	            .ShapeText = "Text", _
@@ -480,6 +495,21 @@ You can rotate shapes by using their __RotationAngle__ property: ![diagram-items
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 

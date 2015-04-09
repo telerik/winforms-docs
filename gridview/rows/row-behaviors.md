@@ -56,7 +56,7 @@ Let’s start with constructing a hierarchical __RadGridView__ and populate it w
 
 #### __[C#] Fill RadGridView with hierarchical data__
 
-{{region FillHierarchicalData}}
+{{source=..\SamplesCS\GridView\Rows\RowBehaviorsForm.cs region=FillHierarchicalData}}
 	        
 	        public RowBehaviorsForm()
 	        {
@@ -106,7 +106,7 @@ Let’s start with constructing a hierarchical __RadGridView__ and populate it w
 
 #### __[VB.NET] Fill RadGridView with hierarchical data__
 
-{{region FillHierarchicalData}}
+{{source=..\SamplesVB\GridView\Rows\RowBehaviorsForm.vb region=FillHierarchicalData}}
 	    Sub New()
 	        InitializeComponent()
 	
@@ -232,7 +232,7 @@ By default, when the user hits the __Delete__ key over a certain row, the row is
 
 #### __[C#]__
 
-{{region ProcessDeleteKey}}
+{{source=..\SamplesCS\GridView\Rows\RowBehaviorsForm.cs region=ProcessDeleteKey}}
 	        
 	        public class CustomGridHierarchyRowBehavior : GridHierarchyRowBehavior
 	        {
@@ -258,7 +258,7 @@ By default, when the user hits the __Delete__ key over a certain row, the row is
 
 #### __[VB.NET]__
 
-{{region ProcessDeleteKey}}
+{{source=..\SamplesVB\GridView\Rows\RowBehaviorsForm.vb region=ProcessDeleteKey}}
 	
 	    Public Class CustomGridHierarchyRowBehavior
 	    Inherits GridHierarchyRowBehavior
@@ -327,7 +327,7 @@ Next we will register this behavior in our grid. Add the following code after po
 
 #### __[C#]__
 
-{{region RegisterBehavior}}
+{{source=..\SamplesCS\GridView\Rows\RowBehaviorsForm.cs region=RegisterBehavior}}
 	            
 	            //register the custom row  behavior
 	            BaseGridBehavior gridBehavior = radGridView1.GridBehavior as BaseGridBehavior;
@@ -340,7 +340,7 @@ Next we will register this behavior in our grid. Add the following code after po
 
 #### __[VB.NET]__
 
-{{region RegisterBehavior}}
+{{source=..\SamplesVB\GridView\Rows\RowBehaviorsForm.vb region=RegisterBehavior}}
 	
 	        'register the custom row  behavior
 	        Dim gridBehavior As BaseGridBehavior = TryCast(RadGridView1.GridBehavior, BaseGridBehavior)
@@ -421,7 +421,7 @@ The next modification we are going to introduce is to override the __OnMouseDown
 
 #### __[C#]__
 
-{{region MouseDownLeft}}
+{{source=..\SamplesCS\GridView\Rows\RowBehaviorsForm.cs region=MouseDownLeft}}
 	                
 	            protected override bool OnMouseDownLeft(MouseEventArgs e)
 	            {
@@ -453,7 +453,7 @@ The next modification we are going to introduce is to override the __OnMouseDown
 
 #### __[VB.NET]__
 
-{{region MouseDownLeft}}
+{{source=..\SamplesVB\GridView\Rows\RowBehaviorsForm.vb region=MouseDownLeft}}
 	
 	        Protected Overrides Function OnMouseDownLeft(e As MouseEventArgs) As Boolean
 	            Dim cellElement As GridCellElement = Me.GetCellAtPoint(e.Location)
@@ -503,7 +503,7 @@ __RadGridView__ supports rows/cells navigation by default, using the arrow keys.
 
 #### __[C#]__
 
-{{region ProcessKey}}
+{{source=..\SamplesCS\GridView\Rows\RowBehaviorsForm.cs region=ProcessKey}}
 	                
 	            public override bool ProcessKey(KeyEventArgs keys)
 	            {
@@ -527,7 +527,7 @@ __RadGridView__ supports rows/cells navigation by default, using the arrow keys.
 
 #### __[VB.NET]__
 
-{{region ProcessKey}}
+{{source=..\SamplesVB\GridView\Rows\RowBehaviorsForm.vb region=ProcessKey}}
 	
 	        Public Overrides Function ProcessKey(keys__1 As KeyEventArgs) As Boolean
 	            If keys__1.KeyCode = Keys.Up OrElse keys__1.KeyCode = Keys.Down Then

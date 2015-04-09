@@ -53,7 +53,7 @@ Here is an example of a __WordDictionary__ loaded from a __TDF__ file.
 
 #### __[C#] Load dictionary__
 
-{{region LoadDictionary}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSpellCheck.cs region=LoadDictionary}}
 	        private void LoadDictionary(Stream tdfFileStream)
 	        {
 	            WordDictionary dictionary = new WordDictionary();
@@ -66,7 +66,7 @@ Here is an example of a __WordDictionary__ loaded from a __TDF__ file.
 
 #### __[VB.NET] Load dictionary__
 
-{{region LoadDictionary}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSpellCheck.vb region=LoadDictionary}}
 	    Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
 	        Dim dictionary As New WordDictionary()
 	        dictionary.Load(tdfFileStream)
@@ -95,7 +95,7 @@ Here is an example:
 
 #### __[C#] Add word to dictionary__
 
-{{region AddWord}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSpellCheck.cs region=AddWord}}
 	            this.radRichTextBox1.SpellChecker.AddWord("RadRichTextBox", CultureInfo.InvariantCulture);
 	{{endregion}}
 
@@ -103,7 +103,7 @@ Here is an example:
 
 #### __[VB.NET] Add word to dictionary__
 
-{{region AddWord}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSpellCheck.vb region=AddWord}}
 	        Me.RadRichTextBox1.SpellChecker.AddWord("RadRichTextBox", CultureInfo.InvariantCulture)
 	{{endregion}}
 
@@ -121,7 +121,7 @@ The spell checking component is designed to suit scenarios where different cultu
 
 #### __[C#] Load international dictionary __
 
-{{region LoadDictionaryDE}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSpellCheck.cs region=LoadDictionaryDE}}
 	        private void LoadDictionaryDE(Stream tdfFileStream)
 	        {
 	             WordDictionary dictionary = new WordDictionary();
@@ -134,7 +134,7 @@ The spell checking component is designed to suit scenarios where different cultu
 
 #### __[VB.NET] Load international dictionary __
 
-{{region LoadDictionaryDE}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSpellCheck.vb region=LoadDictionaryDE}}
 	    Private Sub LoadDictionaryDE(ByVal tdfFileStream As Stream)
 	        Dim dictionary As New WordDictionary()
 	        dictionary.Load(tdfFileStream)

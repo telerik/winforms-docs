@@ -68,7 +68,7 @@ __RadMaskedEditBox__ descends from RadTextBox and so has the same properties, me
 
 #### __[C#]__
 
-{{region workingWithRadMaskedEditBox}}
+{{source=..\SamplesCS\Editors\MaskEditBox1.cs region=workingWithRadMaskedEditBox}}
 	            
 	            this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.DateTime;
 	            this.radMaskedEditBox1.Mask = "d";
@@ -80,7 +80,7 @@ __RadMaskedEditBox__ descends from RadTextBox and so has the same properties, me
 
 #### __[VB.NET]__
 
-{{region workingWithRadMaskedEditBox}}
+{{source=..\SamplesVB\Editors\MaskEditBox1.vb region=workingWithRadMaskedEditBox}}
 	        Me.RadMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.DateTime
 	        Me.RadMaskedEditBox1.Mask = "D"
 	        Me.RadMaskedEditBox1.Culture = New System.Globalization.CultureInfo("de-DE")

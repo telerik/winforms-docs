@@ -27,7 +27,7 @@ The __AutoCompleteMode__ property controls the auto-complete behavior and can be
 
 #### __[C#] __
 
-{{region AutoCompleteMode.None}}
+{{source=..\SamplesCS\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.cs region=AutoCompleteMode.None}}
 	        this.radMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.None;
 	{{endregion}}
 
@@ -35,7 +35,7 @@ The __AutoCompleteMode__ property controls the auto-complete behavior and can be
 
 #### __[VB.NET] __
 
-{{region AutoCompleteMode.None}}
+{{source=..\SamplesVB\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.vb region=AutoCompleteMode.None}}
 	        Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.None
 	{{endregion}}
 
@@ -46,7 +46,7 @@ The __AutoCompleteMode__ property controls the auto-complete behavior and can be
 
 #### __[C#] __
 
-{{region AutoCompleteMode.Append}}
+{{source=..\SamplesCS\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.cs region=AutoCompleteMode.Append}}
 	        this.radMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Append;
 	{{endregion}}
 
@@ -54,7 +54,7 @@ The __AutoCompleteMode__ property controls the auto-complete behavior and can be
 
 #### __[VB.NET] __
 
-{{region AutoCompleteMode.Append}}
+{{source=..\SamplesVB\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.vb region=AutoCompleteMode.Append}}
 	        Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Append
 	{{endregion}}
 
@@ -67,7 +67,7 @@ The __AutoCompleteMode__ property controls the auto-complete behavior and can be
 
 #### __[C#] __
 
-{{region AutoCompleteMode.Suggest}}
+{{source=..\SamplesCS\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.cs region=AutoCompleteMode.Suggest}}
 	        this.radMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
 	{{endregion}}
 
@@ -75,7 +75,7 @@ The __AutoCompleteMode__ property controls the auto-complete behavior and can be
 
 #### __[VB.NET] __
 
-{{region AutoCompleteMode.Suggest}}
+{{source=..\SamplesVB\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.vb region=AutoCompleteMode.Suggest}}
 	        Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest
 	{{endregion}}
 

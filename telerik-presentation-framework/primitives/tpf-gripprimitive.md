@@ -21,7 +21,7 @@ GripPrimitive displays a vertical row of dots as a visual cue to users that this
 
 #### __[C#] Creating a GripPrimitive__
 
-{{region myGripPrimitiveElement}}
+{{source=..\SamplesCS\TPF\Primitives\GripPrimitive1\MyGripPrimitiveElement.cs region=myGripPrimitiveElement}}
 	    public class MyGripPrimitiveElement : RadElement
 	    {
 	        protected override void CreateChildElements()
@@ -49,7 +49,7 @@ GripPrimitive displays a vertical row of dots as a visual cue to users that this
 
 #### __[VB.NET] Creating a GripPrimitive__
 
-{{region myGripPrimitiveElement}}
+{{source=..\SamplesVB\TPF\Primitives\GripPrimitive1\MyGripPrimitiveElement.vb region=myGripPrimitiveElement}}
 	Public Class MyGripPrimitiveElement
 	    Inherits RadElement
 	    Protected Overrides Sub CreateChildElements()

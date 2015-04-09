@@ -45,7 +45,7 @@ This approach allows us to update the database when the end-user
 
 #### __[C#]__
 
-{{region bindingSource}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\AutoSavingDataBSEventsForm.cs region=bindingSource}}
 	        private DataRow lastEditRow = null;
 	
 	        public AutoSavingDataBSEventsForm()
@@ -83,7 +83,7 @@ This approach allows us to update the database when the end-user
 
 #### __[VB.NET]__
 
-{{region bindingSource}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\AutoSavingDataBSEventsForm.vb region=bindingSource}}
 	    Private lastEditRow As DataRow = Nothing
 	
 	    Public Sub New()
@@ -140,7 +140,7 @@ Here is how we can update the database when the end-user __deletes__ a row. Basi
 
 #### __[C#]__
 
-{{region deletingRows}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\AutoSavingDataGridEvents.cs region=deletingRows}}
 	        private List<DataRowView> lastRemovedRows = new List<DataRowView>();
 	
 	        void radGridView1_UserDeletingRow(object sender, Telerik.WinControls.UI.GridViewRowCancelEventArgs e)
@@ -173,7 +173,7 @@ Here is how we can update the database when the end-user __deletes__ a row. Basi
 
 #### __[VB.NET]__
 
-{{region deletingRows}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\AutoSavingDataGridEvents.vb region=deletingRows}}
 	    Private lastRemovedRows As New List(Of DataRowView)()
 	
 	    Private Sub radGridView1_UserDeletingRow(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewRowCancelEventArgs) Handles RadGridView1.UserDeletingRow
@@ -245,7 +245,7 @@ And this is how we can update the database when the user __adds__ a new row. The
 
 #### __[C#]__
 
-{{region addingRows}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\AutoSavingDataGridEvents.cs region=addingRows}}
 	        void radGridView1_UserAddedRow(object sender, Telerik.WinControls.UI.GridViewRowEventArgs e)
 	        {
 	            DataRowView dataRowView = e.Rows[0].DataBoundItem as DataRowView;
@@ -259,7 +259,7 @@ And this is how we can update the database when the user __adds__ a new row. The
 
 #### __[VB.NET]__
 
-{{region addingRows}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\AutoSavingDataGridEvents.vb region=addingRows}}
 	    Private Sub radGridView1_UserAddedRow(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewRowEventArgs) Handles RadGridView1.UserAddedRow
 	        Dim dataRowView As DataRowView = TryCast(e.Rows(0).DataBoundItem, DataRowView)
 	        Dim row As DataRow = dataRowView.Row
@@ -308,7 +308,7 @@ When the user __changes the current__ row, you can update the database not only 
 
 #### __[C#]__
 
-{{region changingCurrentRow}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\AutoSavingDataGridEvents.cs region=changingCurrentRow}}
 	        void radGridView1_CurrentRowChanged(object sender, Telerik.WinControls.UI.CurrentRowChangedEventArgs e)
 	        {
 	            if (e.OldRow == null)
@@ -332,7 +332,7 @@ When the user __changes the current__ row, you can update the database not only 
 
 #### __[VB.NET]__
 
-{{region changingCurrentRow}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\AutoSavingDataGridEvents.vb region=changingCurrentRow}}
 	    Private Sub radGridView1_CurrentRowChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CurrentRowChangedEventArgs) Handles RadGridView1.CurrentRowChanged
 	        If e.OldRow Is Nothing Then
 	            Return
@@ -375,7 +375,7 @@ The above solutions will come in handy in many cases. However, in some
 
 #### __[C#]__
 
-{{region changingValue}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\AutoSavingDataGridEvents.cs region=changingValue}}
 	        void radGridView1_CellValueChanged(object sender, Telerik.WinControls.UI.GridViewCellEventArgs e)
 	        {
 	            IEditableObject editbaleObject = e.Row.DataBoundItem as IEditableObject;
@@ -396,7 +396,7 @@ The above solutions will come in handy in many cases. However, in some
 
 #### __[VB.NET]__
 
-{{region changingValue}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\AutoSavingDataGridEvents.vb region=changingValue}}
 	    Private Sub radGridView1_CellValueChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs) Handles RadGridView1.CellValueChanged
 	        Dim editbaleObject As IEditableObject = TryCast(e.Row.DataBoundItem, IEditableObject)
 	        If editbaleObject IsNot Nothing Then

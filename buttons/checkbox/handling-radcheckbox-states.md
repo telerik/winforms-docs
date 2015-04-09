@@ -24,7 +24,7 @@ You can handle __ToggleStateChanged__ event of __RadCheckBox__ to take action wh
 
 #### __[C#] ToggleStateChanged__
 
-{{region handlingToggleStateChanged}}
+{{source=..\SamplesCS\Buttons\CheckBox.cs region=handlingToggleStateChanged}}
 	
 	        void radCheckBox1_ToggleStateChanged(object sender, StateChangedEventArgs args)
 	        {
@@ -37,7 +37,7 @@ You can handle __ToggleStateChanged__ event of __RadCheckBox__ to take action wh
 
 #### __[VB.NET] ToggleStateChanged__
 
-{{region handlingToggleStateChanged}}
+{{source=..\SamplesVB\Buttons\CheckBox.vb region=handlingToggleStateChanged}}
 	
 	    Private Sub RadCheckBox1_ToggleStateChanged(ByVal sender As System.Object, ByVal args As Telerik.WinControls.UI.StateChangedEventArgs)
 	        MessageBox.Show(args.ToggleState.ToString())
@@ -53,7 +53,7 @@ You can also handle __ToggleStateChanging__ event. This event provides an opport
 
 #### __[C#] ToggleStateChanging__
 
-{{region handlingToggleStateChanging}}
+{{source=..\SamplesCS\Buttons\CheckBox.cs region=handlingToggleStateChanging}}
 	
 	        void radCheckBox1_ToggleStateChanging(object sender, StateChangingEventArgs args)
 	        {
@@ -66,7 +66,7 @@ You can also handle __ToggleStateChanging__ event. This event provides an opport
 
 #### __[VB.NET] ToggleStateChanging__
 
-{{region handlingToggleStateChanging}}
+{{source=..\SamplesVB\Buttons\CheckBox.vb region=handlingToggleStateChanging}}
 	
 	    Private Sub RadCheckBox1_ToggleStateChanging(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.StateChangingEventArgs)
 	        args.Cancel = True

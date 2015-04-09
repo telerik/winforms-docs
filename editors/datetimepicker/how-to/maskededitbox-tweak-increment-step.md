@@ -38,7 +38,7 @@ As a prerequisite for the example, RadDateTimePicker should of course show minut
 
 #### __[C#]__
 
-{{region prerequisite}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=prerequisite}}
 	            this.radDateTimePicker1.CustomFormat = "hh:mm";
 	            this.radDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
 	            this.radDateTimePicker1.ShowUpDown = true;
@@ -48,7 +48,7 @@ As a prerequisite for the example, RadDateTimePicker should of course show minut
 
 #### __[VB.NET]__
 
-{{region prerequisite}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=prerequisite}}
 	        Me.RadDateTimePicker1.CustomFormat = "hh:mm"
 	        Me.RadDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
 	        Me.RadDateTimePicker1.ShowUpDown = True
@@ -64,7 +64,7 @@ Here is the approach divided into separate steps:
 
 #### __[C#]__
 
-{{region initialization}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=initialization}}
 	        DateTime initialDateTime;
 	
 	        private void Form1_Load(object sender, EventArgs e)
@@ -79,7 +79,7 @@ Here is the approach divided into separate steps:
 
 #### __[VB.NET]__
 
-{{region initialization}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=initialization}}
 	    Private initialDateTime As Date
 	
 	    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
@@ -136,7 +136,7 @@ Here is the approach divided into separate steps:
 
 #### __[C#]__
 
-{{region valueChanged}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=valueChanged}}
 	        bool suspendValueChanged = false;
 	
 	        void radDateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -179,7 +179,7 @@ Here is the approach divided into separate steps:
 
 #### __[VB.NET]__
 
-{{region valueChanged}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=valueChanged}}
 	    Private suspendValueChanged As Boolean = False
 	
 	    Private Sub radDateTimePicker1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)

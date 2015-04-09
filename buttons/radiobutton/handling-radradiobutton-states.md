@@ -26,7 +26,7 @@ You can handle the __ToggleStateChanged__ event of __RadRadioButton__to take act
 
 #### __[C#] Handling ToggleStateChanged event__
 
-{{region handlingToggleStateChangedWithArgs}}
+{{source=..\SamplesCS\Buttons\RadioButton.cs region=handlingToggleStateChangedWithArgs}}
 	
 	        void radRadioButton2_ToggleStateChanged(object sender, StateChangedEventArgs args)
 	        {
@@ -39,7 +39,7 @@ You can handle the __ToggleStateChanged__ event of __RadRadioButton__to take act
 
 #### __[VB.NET] Handling ToggleStateChanged event__
 
-{{region handlingToggleStateChangedWithArgs}}
+{{source=..\SamplesVB\Buttons\RadioButton.vb region=handlingToggleStateChangedWithArgs}}
 	
 	    Private Sub radRadioButton2_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
 	        MessageBox.Show(args.ToggleState.ToString())
@@ -66,7 +66,7 @@ You can also handle the __ToggleStateChanging__ event.
 
 #### __[C#] Handling ToggleStateChanging event__
 
-{{region StateChanging}}
+{{source=..\SamplesCS\Buttons\RadioButton.cs region=StateChanging}}
 	
 	        void radRadioButton3_ToggleStateChanging(object sender, StateChangingEventArgs args)
 	        {
@@ -84,7 +84,7 @@ You can also handle the __ToggleStateChanging__ event.
 
 #### __[VB.NET] Handling ToggleStateChanging event__
 
-{{region StateChanging}}
+{{source=..\SamplesVB\Buttons\RadioButton.vb region=StateChanging}}
 	
 	    Private Sub radRadioButton3_ToggleStateChanging(ByVal sender As Object, ByVal args As StateChangingEventArgs)
 	        args.Cancel = True

@@ -18,7 +18,7 @@ To customize the day elements appearance of __RadCalendar__use __ElementRender__
 
 #### __[C#]__
 
-{{region elementRender}}
+{{source=..\SamplesCS\Calendar\Calendar1.cs region=elementRender}}
 	        void Form1_Load(object sender, EventArgs e)
 	        {
 	            this.radCalendar1.ElementRender += new RenderElementEventHandler(radCalendar1_ElementRender);
@@ -38,7 +38,7 @@ To customize the day elements appearance of __RadCalendar__use __ElementRender__
 
 #### __[VB.NET]__
 
-{{region elementRender}}
+{{source=..\SamplesVB\Calendar\Calendar1.vb region=elementRender}}
 	    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 	        AddHandler RadCalendar1.ElementRender, AddressOf radCalendar1_ElementRender
 	        Me.RadCalendar1.InvalidateCalendar()

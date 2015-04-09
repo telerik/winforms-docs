@@ -24,7 +24,7 @@ RadScheduler allows you to import appointments from the industry-standard ICalen
 
 #### __[C#]__
 
-{{region iCalImport}}
+{{source=..\SamplesCS\Scheduler\ImportExport\ImEx.cs region=iCalImport}}
 	            string importString = "ICalendar string format";
 	            this.radScheduler1.Import(importString, new SchedulerICalendarImporter());
 	{{endregion}}
@@ -33,7 +33,7 @@ RadScheduler allows you to import appointments from the industry-standard ICalen
 
 #### __[VB.NET]__
 
-{{region iCalImport}}
+{{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=iCalImport}}
 	        Dim importResult As String = "ICalendar string format"
 	        Me.RadScheduler1.Import(importResult, New SchedulerICalendarImporter)
 	{{endregion}}
@@ -44,7 +44,7 @@ Another override of the __Import__ method allows you to read appointment data fr
 
 #### __[C#]__
 
-{{region iCalIFile}}
+{{source=..\SamplesCS\Scheduler\ImportExport\ImEx.cs region=iCalIFile}}
 	            using (FileStream stream = File.OpenRead("schedule.ics"))
 	            {
 	                this.radScheduler1.Import(stream, new SchedulerICalendarImporter());
@@ -55,7 +55,7 @@ Another override of the __Import__ method allows you to read appointment data fr
 
 #### __[VB.NET]__
 
-{{region iCalIFile}}
+{{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=iCalIFile}}
 	        Using stream As FileStream = File.OpenRead("schedule.ics")
 	            Me.RadScheduler1.Import(stream, New SchedulerICalendarImporter)
 	        End Using

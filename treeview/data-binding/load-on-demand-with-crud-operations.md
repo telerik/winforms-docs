@@ -26,7 +26,7 @@ In this example, we will use the following scenario: A hierarchy, which has __Te
 
 #### __[C#]__
 
-{{region Models}}
+{{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=Models}}
 	        public class Team : INotifyPropertyChanged
 	        {
 	            private string teamName;
@@ -154,7 +154,7 @@ In this example, we will use the following scenario: A hierarchy, which has __Te
 
 #### __[VB.NET]__
 
-{{region Models}}
+{{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=Models}}
 	    Public Class Team
 	        Implements INotifyPropertyChanged
 	        Private m_teamName As String
@@ -288,7 +288,7 @@ In this example, we will use the following scenario: A hierarchy, which has __Te
 
 #### __[C#]__
 
-{{region InitilaizeTreeView}}
+{{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=InitilaizeTreeView}}
 	            this.radTreeView1.Dock = DockStyle.Fill;
 	            this.radTreeView1.AllowRemove = true;
 	            this.radTreeView1.AllowAdd = true;
@@ -300,7 +300,7 @@ In this example, we will use the following scenario: A hierarchy, which has __Te
 
 #### __[VB.NET]__
 
-{{region InitilaizeTreeView}}
+{{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=InitilaizeTreeView}}
 	        Me.RadTreeView1.Dock = DockStyle.Fill
 	        Me.RadTreeView1.AllowRemove = True
 	        Me.RadTreeView1.AllowAdd = True
@@ -597,7 +597,7 @@ In this example, we will use the following scenario: A hierarchy, which has __Te
 
 #### __[C#]__
 
-{{region CreateNode}}
+{{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=CreateNode}}
 	        private RadTreeNode CreateNode(string text, object tag)
 	        {
 	            RadTreeNode newNode = new RadTreeNode(text);
@@ -610,7 +610,7 @@ In this example, we will use the following scenario: A hierarchy, which has __Te
 
 #### __[VB.NET]__
 
-{{region CreateNode}}
+{{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=CreateNode}}
 	    Private Function CreateNode(text As String, tag As Object) As RadTreeNode
 	        Dim newNode As New RadTreeNode(text)
 	        newNode.Tag = tag
@@ -889,7 +889,7 @@ After we have this method and our tree view set up, we can actually create the h
 
 #### __[C#]__
 
-{{region InitializeHierarchy}}
+{{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=InitializeHierarchy}}
 	        private void InitializeHierarchy()
 	        {
 	            //the Teams collection is a property of the Form
@@ -940,7 +940,7 @@ After we have this method and our tree view set up, we can actually create the h
 
 #### __[VB.NET]__
 
-{{region InitializeHierarchy}}
+{{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=InitializeHierarchy}}
 	    Private Sub InitializeHierarchy()
 	        'the Teams collection is a property of the Form
 	        Me.Teams = New BindingList(Of Team)()
@@ -1216,7 +1216,7 @@ After we have this method and our tree view set up, we can actually create the h
 
 #### __[C#]__
 
-{{region NodesNeeded}}
+{{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=NodesNeeded}}
 	        private void TreeView_NodesNeeded(object sender, NodesNeededEventArgs e)
 	        {
 	            if (e.Parent == null || e.Parent.Tag == null || e.Parent.Tag is Task)
@@ -1253,7 +1253,7 @@ After we have this method and our tree view set up, we can actually create the h
 
 #### __[VB.NET]__
 
-{{region NodesNeeded}}
+{{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=NodesNeeded}}
 	    Private Sub TreeView_NodesNeeded(sender As Object, e As NodesNeededEventArgs)
 	        If e.Parent Is Nothing OrElse e.Parent.Tag Is Nothing OrElse TypeOf e.Parent.Tag Is Task Then
 	            Return
@@ -1485,7 +1485,7 @@ After we have this method and our tree view set up, we can actually create the h
 
 #### __[C#]__
 
-{{region NodeFormatting}}
+{{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=NodeFormatting}}
 	        private void TreeView_NodeFormatting(object sender, TreeNodeFormattingEventArgs e)
 	        {
 	            Team team = e.Node.Tag as Team;
@@ -1507,7 +1507,7 @@ After we have this method and our tree view set up, we can actually create the h
 
 #### __[VB.NET]__
 
-{{region NodeFormatting}}
+{{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=NodeFormatting}}
 	    Private Sub TreeView_NodeFormatting(sender As Object, e As TreeNodeFormattingEventArgs)
 	        Dim team As Team = TryCast(e.Node.Tag, Team)
 	        Dim teamMember As TeamMember = TryCast(e.Node.Tag, TeamMember)
@@ -1714,7 +1714,7 @@ After we have this method and our tree view set up, we can actually create the h
 
 #### __[C#]__
 
-{{region NodeAddedAndNodeRemoving}}
+{{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=NodeAddedAndNodeRemoving}}
 	        private void TreeView_NodeAdded(object sender, RadTreeViewEventArgs e)
 	        {
 	            if (e.Node.Parent == null)
@@ -1788,7 +1788,7 @@ After we have this method and our tree view set up, we can actually create the h
 
 #### __[VB.NET]__
 
-{{region NodeAddedAndNodeRemoving}}
+{{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=NodeAddedAndNodeRemoving}}
 	    Private Sub TreeView_NodeAdded(sender As Object, e As RadTreeViewEventArgs)
 	        If e.Node.Parent Is Nothing Then
 	            Return

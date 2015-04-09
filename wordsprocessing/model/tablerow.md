@@ -29,7 +29,7 @@ You can use the following code snippet to create a __TableRow__ and add it in a 
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-tablerow_0}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableRow.cs region=radwordsprocessing-model-tablerow_0}}
 	            TableRow row = new TableRow(document);
 	            table.Rows.Add(row);
 	{{endregion}}
@@ -38,7 +38,7 @@ You can use the following code snippet to create a __TableRow__ and add it in a 
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-tablerow_0}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableRow.vb region=radwordsprocessing-model-tablerow_0}}
 	            Dim row As New TableRow(document)
 	            table.Rows.Add(row)
 	            '#End Region
@@ -73,7 +73,7 @@ In order to create a __TableRow__ and add it in the document tree in the same ti
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-tablerow_1}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableRow.cs region=radwordsprocessing-model-tablerow_1}}
 	            TableRow row = table.Rows.AddTableRow();
 	{{endregion}}
 
@@ -81,7 +81,7 @@ In order to create a __TableRow__ and add it in the document tree in the same ti
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-tablerow_1}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableRow.vb region=radwordsprocessing-model-tablerow_1}}
 	            Dim row As TableRow = table.Rows.AddTableRow()
 	            '#End Region
 	        End Sub
@@ -144,7 +144,7 @@ The following code snippet shows how to add a number of __TableCell__ elements i
 
 #### __[C#] __
 
-{{region radwordsprocessing-model-tablerow_2}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableRow.cs region=radwordsprocessing-model-tablerow_2}}
 	            TableRow row = table.Rows.AddTableRow();
 	
 	            for (int i = 0; i < row.Table.GridColumnsCount; i++)
@@ -159,7 +159,7 @@ The following code snippet shows how to add a number of __TableCell__ elements i
 
 #### __[VB.NET] __
 
-{{region radwordsprocessing-model-tablerow_2}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableRow.vb region=radwordsprocessing-model-tablerow_2}}
 	            Dim row As TableRow = table.Rows.AddTableRow()
 	
 	            For i As Integer = 0 To row.Table.GridColumnsCount - 1

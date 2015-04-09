@@ -24,7 +24,7 @@ Exact Time Rendering increases readability of the appointments by rendering them
 
 #### __[C#]__
 
-{{region exactTimeRendering}}
+{{source=..\SamplesCS\Scheduler\Views\CommonProperties.cs region=exactTimeRendering}}
 	            this.radScheduler1.EnableExactTimeRendering = true;
 	{{endregion}}
 
@@ -32,7 +32,7 @@ Exact Time Rendering increases readability of the appointments by rendering them
 
 #### __[VB.NET]__
 
-{{region exactTimeRendering}}
+{{source=..\SamplesVB\Scheduler\Views\CommonProperties.vb region=exactTimeRendering}}
 	        Me.RadScheduler1.EnableExactTimeRendering = True
 	        '#End Region
 	
@@ -61,7 +61,7 @@ When __AutoSizeAppointments__ is enabled, appointment elements will automaticall
 
 #### __[C#]__
 
-{{region autoSizeAppointments}}
+{{source=..\SamplesCS\Scheduler\Views\CommonProperties.cs region=autoSizeAppointments}}
 	            this.radScheduler1.AutoSizeAppointments = true;
 	{{endregion}}
 
@@ -69,7 +69,7 @@ When __AutoSizeAppointments__ is enabled, appointment elements will automaticall
 
 #### __[VB.NET]__
 
-{{region autoSizeAppointments}}
+{{source=..\SamplesVB\Scheduler\Views\CommonProperties.vb region=autoSizeAppointments}}
 	        Me.RadScheduler1.AutoSizeAppointments = True
 	        '#End Region
 	
@@ -93,7 +93,7 @@ When __AutoSizeAppointments__ is disabled, the appointments in Month and Timelin
 
 #### __[C#]__
 
-{{region appointmentsHeight}}
+{{source=..\SamplesCS\Scheduler\Views\CommonProperties.cs region=appointmentsHeight}}
 	            ((SchedulerMonthViewElement)this.radScheduler1.ViewElement).AppointmentHeight = 50;
 	            ((SchedulerTimelineViewElement)this.radScheduler1.ViewElement).AppointmentHeight = 50;
 	{{endregion}}
@@ -102,7 +102,7 @@ When __AutoSizeAppointments__ is disabled, the appointments in Month and Timelin
 
 #### __[VB.NET]__
 
-{{region appointmentsHeight}}
+{{source=..\SamplesVB\Scheduler\Views\CommonProperties.vb region=appointmentsHeight}}
 	        DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement).AppointmentHeight = 50
 	        DirectCast(Me.RadScheduler1.ViewElement, SchedulerTimelineViewElement).AppointmentHeight = 50
 	        '#End Region
@@ -121,7 +121,7 @@ Using the __AppointmentsMargin__ property, you can specify the spacing between t
 
 #### __[C#]__
 
-{{region appointmentsMargin}}
+{{source=..\SamplesCS\Scheduler\Views\CommonProperties.cs region=appointmentsMargin}}
 	            this.radScheduler1.ViewElement.AppointmentMargin = new Padding(5, 0, 10, 0);
 	{{endregion}}
 
@@ -129,7 +129,7 @@ Using the __AppointmentsMargin__ property, you can specify the spacing between t
 
 #### __[VB.NET]__
 
-{{region appointmentsMargin}}
+{{source=..\SamplesVB\Scheduler\Views\CommonProperties.vb region=appointmentsMargin}}
 	        Me.RadScheduler1.ViewElement.AppointmentMargin = New Padding(5, 0, 10, 0)
 	        '#End Region
 	    End Sub

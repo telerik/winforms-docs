@@ -14,14 +14,186 @@ position: 10
 
 This article demonstrates how you can customize or replace the TabStrip items.
 
-## Adding element to the TabStrip item
+## 
+        Using the TabStripItemCreating event
+      
 
-The TabStripItemCreating event can be used for adding any kind of RadElement to the TabStrip.
-        For example the following code adds text box to each TabStrip item:
+The above examples are using the __TabStripItemCreating__ event. This event cannot be accessed via the RadDock instance.
+          You can subscribe to the event by using the static __RadDockEvents__ class. You should do that before the InitializeComponent method call:
+        
 
 #### __[C#]__
 
-{{region element}}
+{{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=subscribe}}
+	        public CustomizingTabStripItems()
+	        {
+	            RadDockEvents.TabStripItemCreating += RadDockEvents_TabStripItemCreating;
+	            InitializeComponent();
+	        }
+	{{endregion}}
+
+
+
+#### __[VB.NET]__
+
+{{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=subscribe}}
+	    Public Sub New()
+	        AddHandler RadDockEvents.TabStripItemCreating, AddressOf RadDockEvents_TabStripItemCreating
+	        InitializeComponent()
+	    End Sub
+	    '#End Region
+	
+	    '#Region "closed"
+	    Protected Overrides Sub OnClosed(ByVal e As EventArgs)
+	        RemoveHandler RadDockEvents.TabStripItemCreating, AddressOf RadDockEvents_TabStripItemCreating
+	        MyBase.OnClosed(e)
+	    End Sub
+	    '#End Region
+	
+	    '#Region "element"
+	    Private Sub RadDockEvents_TabStripItemCreating1(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
+	        Dim textbox As New RadTextBoxControlElement()
+	        textbox.Margin = New System.Windows.Forms.Padding(80, 5, 5, 5)
+	        textbox.MinSize = New System.Drawing.Size(50, 0)
+	        args.TabItem.Children.Add(textbox)
+	    End Sub
+	    '#End Region
+	
+	    '#Region "replace"
+	    Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
+	        args.TabItem = New MyTabStripItem(args.TabItem.TabPanel)
+	    End Sub
+	    '#End Region
+	
+	End Class
+	'#Region "Item"
+	Friend Class MyTabStripItem
+	    Inherits TabStripItem
+	
+	    Public Sub New(ByVal panel As TabPanel)
+	        MyBase.New(panel)
+	    End Sub
+	    Protected Overrides Sub CreateChildElements()
+	        MyBase.CreateChildElements()
+	        Me.Children.Add(CreateCustomElement())
+	    End Sub
+	    Private Function CreateCustomElement() As RadElement
+	        Dim element As New StackLayoutElement()
+	        element.Orientation = Orientation.Horizontal
+	        element.StretchHorizontally = True
+	        element.MinSize = New System.Drawing.Size(100, 0)
+	
+	        Dim button As New RadButtonElement()
+	        button.Text = "Search"
+	        element.Children.Add(button)
+	
+	        Dim textbox As New RadTextBoxControlElement()
+	        element.Children.Add(textbox)
+	        element.Margin = New Padding(5, 2, 2, 2)
+	        Me.DrawText = False
+	        Me.Padding = New Padding(40, 5, 40, 5)
+	
+	        Return element
+	    End Function
+	    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
+	        Get
+	            Return GetType(TabStripItem)
+	        End Get
+	    End Property
+	End Class
+	'#End Region
+	
+
+
+
+Please note that when such static events are used it is mandatory to unsubscribe from the event. If you do not do that the form would not be disposed properly:
+
+#### __[C#]__
+
+{{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=closed}}
+	        protected override void OnClosed(EventArgs e)
+	        {
+	            RadDockEvents.TabStripItemCreating -= RadDockEvents_TabStripItemCreating;
+	            base.OnClosed(e);
+	        }
+	{{endregion}}
+
+
+
+#### __[VB.NET]__
+
+{{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=closed}}
+	    Protected Overrides Sub OnClosed(ByVal e As EventArgs)
+	        RemoveHandler RadDockEvents.TabStripItemCreating, AddressOf RadDockEvents_TabStripItemCreating
+	        MyBase.OnClosed(e)
+	    End Sub
+	    '#End Region
+	
+	    '#Region "element"
+	    Private Sub RadDockEvents_TabStripItemCreating1(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
+	        Dim textbox As New RadTextBoxControlElement()
+	        textbox.Margin = New System.Windows.Forms.Padding(80, 5, 5, 5)
+	        textbox.MinSize = New System.Drawing.Size(50, 0)
+	        args.TabItem.Children.Add(textbox)
+	    End Sub
+	    '#End Region
+	
+	    '#Region "replace"
+	    Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
+	        args.TabItem = New MyTabStripItem(args.TabItem.TabPanel)
+	    End Sub
+	    '#End Region
+	
+	End Class
+	'#Region "Item"
+	Friend Class MyTabStripItem
+	    Inherits TabStripItem
+	
+	    Public Sub New(ByVal panel As TabPanel)
+	        MyBase.New(panel)
+	    End Sub
+	    Protected Overrides Sub CreateChildElements()
+	        MyBase.CreateChildElements()
+	        Me.Children.Add(CreateCustomElement())
+	    End Sub
+	    Private Function CreateCustomElement() As RadElement
+	        Dim element As New StackLayoutElement()
+	        element.Orientation = Orientation.Horizontal
+	        element.StretchHorizontally = True
+	        element.MinSize = New System.Drawing.Size(100, 0)
+	
+	        Dim button As New RadButtonElement()
+	        button.Text = "Search"
+	        element.Children.Add(button)
+	
+	        Dim textbox As New RadTextBoxControlElement()
+	        element.Children.Add(textbox)
+	        element.Margin = New Padding(5, 2, 2, 2)
+	        Me.DrawText = False
+	        Me.Padding = New Padding(40, 5, 40, 5)
+	
+	        Return element
+	    End Function
+	    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
+	        Get
+	            Return GetType(TabStripItem)
+	        End Get
+	    End Property
+	End Class
+	'#End Region
+	
+
+
+
+## Adding element to the TabStrip item
+
+The TabStripItemCreating event can be used for adding any kind of RadElement to the TabStrip.
+          For example the following code adds text box to each TabStrip item:
+        
+
+#### __[C#]__
+
+{{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=element}}
 	        void RadDockEvents_TabStripItemCreating1(object sender, TabStripItemCreatingEventArgs args)
 	        {
 	            RadTextBoxControlElement textbox = new RadTextBoxControlElement();
@@ -35,7 +207,7 @@ The TabStripItemCreating event can be used for adding any kind of RadElement to 
 
 #### __[VB.NET]__
 
-{{region element}}
+{{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=element}}
 	    Private Sub RadDockEvents_TabStripItemCreating1(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
 	        Dim textbox As New RadTextBoxControlElement()
 	        textbox.Margin = New System.Windows.Forms.Padding(80, 5, 5, 5)
@@ -43,11 +215,13 @@ The TabStripItemCreating event can be used for adding any kind of RadElement to 
 	        args.TabItem.Children.Add(textbox)
 	    End Sub
 	    '#End Region
+	
 	    '#Region "replace"
 	    Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
 	        args.TabItem = New MyTabStripItem(args.TabItem.TabPanel)
 	    End Sub
 	    '#End Region
+	
 	End Class
 	'#Region "Item"
 	Friend Class MyTabStripItem
@@ -95,11 +269,11 @@ The tabs will look like this:![dock-object-model-customizing-tabstrip-items 001]
         Replacing the entire TabStrip element.
       
 
-The TabStripItemCreating event can be used for replacing the entire element as well. Firs you need to create a TabStripItem class descendant
+The TabStripItemCreating event can be used for replacing the entire element as well. First you need to create a TabStripItem class descendant
 
 #### __[C#]__
 
-{{region Item}}
+{{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=Item}}
 	    class MyTabStripItem : TabStripItem
 	    {
 	        public MyTabStripItem(TabPanel panel)
@@ -143,7 +317,7 @@ The TabStripItemCreating event can be used for replacing the entire element as w
 
 #### __[VB.NET]__
 
-{{region Item}}
+{{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=Item}}
 	Friend Class MyTabStripItem
 	    Inherits TabStripItem
 	
@@ -188,7 +362,7 @@ Then you can just replace the default item:
 
 #### __[C#]__
 
-{{region replace}}
+{{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=replace}}
 	        void RadDockEvents_TabStripItemCreating(object sender, TabStripItemCreatingEventArgs args)
 	        {
 	            args.TabItem = new MyTabStripItem(args.TabItem.TabPanel);
@@ -199,11 +373,12 @@ Then you can just replace the default item:
 
 #### __[VB.NET]__
 
-{{region replace}}
+{{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=replace}}
 	    Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
 	        args.TabItem = New MyTabStripItem(args.TabItem.TabPanel)
 	    End Sub
 	    '#End Region
+	
 	End Class
 	'#Region "Item"
 	Friend Class MyTabStripItem
@@ -249,20 +424,34 @@ The tabs will look like in the following image:
         ![dock-object-model-customizing-tabstrip-items 002](images/dock-object-model-customizing-tabstrip-items002.png)
 
 ## 
-        Using the TabStripItemCreating event
+        DocumentTabStrip Multi Line Row Layout with a Custom Tab Shape
       
 
-The above examples are using the __TabStripItemCreating__ event. This event cannot be accessed via the RadDock instance.
-          You can subscribe to it event by using the static __RadDockEvents__ class. You should do that before the InitializeComponent method call:
+The tab items of the __DocumentWindows__ in __RadDock__ have a predefined shape applied (*TabVsShape*). The following example will demonstrate how the default layout can be modified so the tabs are displayed in a multi row layout and how a custom shape can be set to the tab items. For the purpose we have to subscribe to the static __TabStripItemCreating__ event (where we will change the __Shape__ property) and access the __DocumentTabStrip__ in order to set the desired __StripViewItemFitMode__.
         
+
+>Since the __TabStripItemCreating__ event is static the event subscription have to be defined before the call to the InitializeComponent method.
 
 #### __[C#]__
 
-{{region subscribe}}
-	        public CustomizingTabStripItems()
+{{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=MultiLineRowLayoutInit}}
+	        public void CustomizingTabStripItemsForm()
 	        {
 	            RadDockEvents.TabStripItemCreating += RadDockEvents_TabStripItemCreating;
 	            InitializeComponent();
+	
+	            DocumentContainer container = this.documentContainer1;
+	            DocumentTabStrip tabStrip = container.Controls[0] as DocumentTabStrip;
+	            if (tabStrip != null)
+	            {
+	                tabStrip.TabStripElement.ItemFitMode = StripViewItemFitMode.MultiLine;
+	            }
+	        }
+	
+	        void RadDockEvents_TabStripItemCreating(object sender, TabStripItemCreatingEventArgs args)
+	        {
+	            args.TabItem.Shape = new ChamferedRectShape();
+	            args.TabItem.Padding = new System.Windows.Forms.Padding(4, 4, 7, 4);
 	        }
 	{{endregion}}
 
@@ -270,7 +459,26 @@ The above examples are using the __TabStripItemCreating__ event. This event cann
 
 #### __[VB.NET]__
 
-{{region subscribe}}
+{{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=MultiLineRowLayoutInit}}
+	    Public Sub New()
+	        AddHandler RadDockEvents.TabStripItemCreating, AddressOf RadDockEvents_TabStripItemCreating
+	        InitializeComponent()
+	
+	        Dim container As DocumentContainer = Me.documentContainer1
+	        Dim tabStrip As DocumentTabStrip = TryCast(container.Controls(0), DocumentTabStrip)
+	        If tabStrip IsNot Nothing Then
+	            tabStrip.TabStripElement.ItemFitMode = StripViewItemFitMode.MultiLine
+	        End If
+	    End Sub
+	
+	    Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
+	        args.TabItem.Shape = New ChamferedRectShape()
+	        args.TabItem.Padding = New System.Windows.Forms.Padding(4, 4, 7, 4)
+	    End Sub
+	    '#End Region
+	#End If
+	
+	    '#Region "subscribe"
 	    Public Sub New()
 	        AddHandler RadDockEvents.TabStripItemCreating, AddressOf RadDockEvents_TabStripItemCreating
 	        InitializeComponent()
@@ -292,11 +500,13 @@ The above examples are using the __TabStripItemCreating__ event. This event cann
 	        args.TabItem.Children.Add(textbox)
 	    End Sub
 	    '#End Region
+	
 	    '#Region "replace"
 	    Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
 	        args.TabItem = New MyTabStripItem(args.TabItem.TabPanel)
 	    End Sub
 	    '#End Region
+	
 	End Class
 	'#Region "Item"
 	Friend Class MyTabStripItem
@@ -338,11 +548,11 @@ The above examples are using the __TabStripItemCreating__ event. This event cann
 
 
 
-Please note that when such static events are used it is mandatory to unsubscribe from the event. If you do not do that the form would not be disposed properly:
+>Because we are subscribing to a static event, we need to take care of the unscibription as well. Otherwise the form would not be disposed properly.
 
 #### __[C#]__
 
-{{region closed}}
+{{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=closed}}
 	        protected override void OnClosed(EventArgs e)
 	        {
 	            RadDockEvents.TabStripItemCreating -= RadDockEvents_TabStripItemCreating;
@@ -354,7 +564,7 @@ Please note that when such static events are used it is mandatory to unsubscribe
 
 #### __[VB.NET]__
 
-{{region closed}}
+{{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=closed}}
 	    Protected Overrides Sub OnClosed(ByVal e As EventArgs)
 	        RemoveHandler RadDockEvents.TabStripItemCreating, AddressOf RadDockEvents_TabStripItemCreating
 	        MyBase.OnClosed(e)
@@ -369,11 +579,13 @@ Please note that when such static events are used it is mandatory to unsubscribe
 	        args.TabItem.Children.Add(textbox)
 	    End Sub
 	    '#End Region
+	
 	    '#Region "replace"
 	    Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
 	        args.TabItem = New MyTabStripItem(args.TabItem.TabPanel)
 	    End Sub
 	    '#End Region
+	
 	End Class
 	'#Region "Item"
 	Friend Class MyTabStripItem
@@ -414,3 +626,6 @@ Please note that when such static events are used it is mandatory to unsubscribe
 	
 
 
+
+Here is the outcome of the code above:
+        ![dock-object-model-customizing-tabstrip-items 003](images/dock-object-model-customizing-tabstrip-items003.png)

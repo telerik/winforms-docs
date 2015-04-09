@@ -39,7 +39,7 @@ __Example 1__ shows how to generate a simple table with two rows and three colum
 
 #### __[C#] Create Simple Table__
 
-{{region radpdfprocessing-editing-table_0}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_0}}
 	            Table table = new Table();
 	         
 	            TableRow firstRow = table.Rows.AddTableRow();
@@ -57,7 +57,7 @@ __Example 1__ shows how to generate a simple table with two rows and three colum
 
 #### __[VB.NET] Create Simple Table__
 
-{{region radpdfprocessing-editing-table_0}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_0}}
 	            Dim table As New Table()
 	
 	            Dim firstRow As TableRow = table.Rows.AddTableRow()
@@ -206,7 +206,7 @@ __Еxample 2__ shows how to use the __DefaultCellProperties__ of a table
 
 #### __[C#] Example 2: Use DefaultCellProperties of Table__
 
-{{region radpdfprocessing-editing-table_1}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_1}}
 	            Table table = new Table();
 	            Border redBorder = new Border(2, new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0));
 	            table.DefaultCellProperties.Borders = new Telerik.Windows.Documents.Fixed.Model.Editing.Tables.TableCellBorders(redBorder);
@@ -228,7 +228,7 @@ __Еxample 2__ shows how to use the __DefaultCellProperties__ of a table
 
 #### __[VB.NET] Example 2: Use DefaultCellProperties of Table__
 
-{{region radpdfprocessing-editing-table_1}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_1}}
 	            Dim table As New Table()
 	            Dim redBorder As New Border(2, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0))
 	            table.DefaultCellProperties.Borders = New Telerik.Windows.Documents.Fixed.Model.Editing.Tables.TableCellBorders(redBorder)
@@ -361,7 +361,7 @@ The next example aims to demonstrate how border calculations occur with differen
 
 #### __[C#] Example 3: Create Table with Red Border__
 
-{{region radpdfprocessing-editing-table_2}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_2}}
 	            Table table = new Table();
 	            table.DefaultCellProperties.Padding = new System.Windows.Thickness(10, 6, 10, 6);
 	            Border redBorder = new Border(10, new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0));
@@ -372,7 +372,7 @@ The next example aims to demonstrate how border calculations occur with differen
 
 #### __[VB.NET] Example 3: Create Table with Red Border__
 
-{{region radpdfprocessing-editing-table_2}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_2}}
 	            Dim table As New Table()
 	            table.DefaultCellProperties.Padding = New System.Windows.Thickness(10, 6, 10, 6)
 	            Dim redBorder As New Border(10, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0))
@@ -457,7 +457,7 @@ __Example 4__ adds a single row with two cells to the table from __Example 3__. 
 
 #### __[C#] Example 2: Example 4: Add Green and Blue Cells__
 
-{{region radpdfprocessing-editing-table_3}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_3}}
 	            TableRow tableRow = table.Rows.AddTableRow();
 	
 	            TableCell firstCell = tableRow.Cells.AddTableCell();
@@ -475,7 +475,7 @@ __Example 4__ adds a single row with two cells to the table from __Example 3__. 
 
 #### __[VB.NET] Example 2: Example 4: Add Green and Blue Cells__
 
-{{region radpdfprocessing-editing-table_3}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_3}}
 	            Dim tableRow As TableRow = table.Rows.AddTableRow()
 	
 	            Dim firstCell As TableCell = tableRow.Cells.AddTableCell()
@@ -553,7 +553,7 @@ __Figure 3__ shows the table from Example 3 and 4 with BorderCollapse property s
 
 #### __[C#] Example 5: Collapse Border__
 
-{{region radpdfprocessing-editing-table_4}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_4}}
 	            table.BorderCollapse = BorderCollapse.Collapse;
 	{{endregion}}
 
@@ -561,7 +561,7 @@ __Figure 3__ shows the table from Example 3 and 4 with BorderCollapse property s
 
 #### __[VB.NET] Example 5: Collapse Border__
 
-{{region radpdfprocessing-editing-table_4}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_4}}
 	            table.BorderCollapse = BorderCollapse.Collapse
 	            '#End Region
 	
@@ -627,7 +627,7 @@ __Figure 4__ shows the same table with BorderCollapse property set to Separate -
 
 #### __[C#] Example 6: Separate Border__
 
-{{region radpdfprocessing-editing-table_5}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_5}}
 	            table.BorderCollapse = BorderCollapse.Separate;
 	{{endregion}}
 
@@ -635,7 +635,7 @@ __Figure 4__ shows the same table with BorderCollapse property set to Separate -
 
 #### __[VB.NET] Example 6: Separate Border__
 
-{{region radpdfprocessing-editing-table_5}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_5}}
 	            table.BorderCollapse = BorderCollapse.Separate
 	            '#End Region
 	        End Sub
@@ -712,7 +712,7 @@ __Example 7__ generates a simple table with two cells.
 
 #### __[C#] Example 7: Create Table__
 
-{{region radpdfprocessing-editing-table_6}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_6}}
 	            Table table = new Table();
 	
 	            Border border = new Border();
@@ -731,7 +731,7 @@ __Example 7__ generates a simple table with two cells.
 
 #### __[VB.NET] Example 7: Create Tablee__
 
-{{region radpdfprocessing-editing-table_6}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_6}}
 	            Dim table As New Table()
 	
 	            Dim border As New Border()
@@ -785,7 +785,7 @@ __Example 8__ inserts the table from __Example 7__ in a RadFixedDocumentEditor a
 
 #### __[C#] Example 8: Insert AutoFit Table__
 
-{{region radpdfprocessing-editing-table_7}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_7}}
 	            RadFixedDocumentEditor editor = new RadFixedDocumentEditor(document);         
 	            table.LayoutType = Telerik.Windows.Documents.Fixed.Model.Editing.Flow.TableLayoutType.AutoFit;
 	            editor.InsertTable(table);
@@ -795,7 +795,7 @@ __Example 8__ inserts the table from __Example 7__ in a RadFixedDocumentEditor a
 
 #### __[VB.NET] Example 8: Insert AutoFit Table__
 
-{{region radpdfprocessing-editing-table_7}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_7}}
 	        Dim editor As New RadFixedDocumentEditor(document)
 	        table.LayoutType = Flow.TableLayoutType.AutoFit
 	        editor.InsertTable(table)
@@ -839,7 +839,7 @@ Specifying FixedWidth layout option produces different results.
 
 #### __[C#] Example 9: Insert FixedWidth Table__
 
-{{region radpdfprocessing-editing-table_8}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_8}}
 	            table.LayoutType = Telerik.Windows.Documents.Fixed.Model.Editing.Flow.TableLayoutType.FixedWidth;
 	            editor.InsertTable(table);
 	{{endregion}}
@@ -848,7 +848,7 @@ Specifying FixedWidth layout option produces different results.
 
 #### __[VB.NET] Example 9: Insert FixedWidth Table__
 
-{{region radpdfprocessing-editing-table_8}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_8}}
 	        table.LayoutType = Flow.TableLayoutType.FixedWidth
 	        editor.InsertTable(table)
 	            '#End Region
@@ -888,7 +888,7 @@ __Example 10__ shows how to draw a rotated table with the help of FixedContentEd
 
 #### __[C#] Example 9: Insert FixedWidth Table__
 
-{{region radpdfprocessing-editing-table_9}}
+{{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_9}}
 	            Table table = GenerateSampleTable();
 	
 	            Telerik.Windows.Documents.Fixed.Model.RadFixedDocument document = new Telerik.Windows.Documents.Fixed.Model.RadFixedDocument();
@@ -904,7 +904,7 @@ __Example 10__ shows how to draw a rotated table with the help of FixedContentEd
 
 #### __[VB.NET] Example 9: Insert FixedWidth Table__
 
-{{region radpdfprocessing-editing-table_9}}
+{{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_9}}
 	            Dim table As Table = GenerateSampleTable()
 	
 	            Dim document As New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument()

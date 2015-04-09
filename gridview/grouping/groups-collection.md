@@ -16,7 +16,7 @@ When a group is created it is added to the *Groups* collection of the correspond
 
 #### __[C#] Accessing groups__
 
-{{region accessGroups}}
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=accessGroups}}
 	            DataGroupCollection templateGroupCollection = this.radGridView1.MasterTemplate.Groups;
 	{{endregion}}
 
@@ -24,7 +24,7 @@ When a group is created it is added to the *Groups* collection of the correspond
 
 #### __[VB.NET] Accessing groups__
 
-{{region accessGroups}}
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=accessGroups}}
 	        Dim templateGroupCollection = Me.RadGridView1.MasterTemplate.Groups
 	{{endregion}}
 
@@ -34,7 +34,7 @@ You can expand and collapse groups programmatically. The code blocks below demon
 
 #### __[C#] Expanding groups__
 
-{{region expandGroups}}
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=expandGroups}}
 	            this.radGridView1.Groups[0].Expand();
 	{{endregion}}
 
@@ -42,7 +42,7 @@ You can expand and collapse groups programmatically. The code blocks below demon
 
 #### __[VB.NET] Expanding groups__
 
-{{region expandGroups}}
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=expandGroups}}
 	        Me.RadGridView1.Groups(0).Expand()
 	{{endregion}}
 
@@ -50,7 +50,7 @@ You can expand and collapse groups programmatically. The code blocks below demon
 
 #### __[C#] Collapse groups__
 
-{{region collapseGroups}}
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=collapseGroups}}
 	            this.radGridView1.Groups[0].Collapse();
 	{{endregion}}
 
@@ -58,7 +58,7 @@ You can expand and collapse groups programmatically. The code blocks below demon
 
 #### __[VB.NET] Collapse groups__
 
-{{region collapseGroups}}
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=collapseGroups}}
 	        Me.RadGridView1.Groups(0).Collapse()
 	{{endregion}}
 
@@ -68,7 +68,7 @@ You can use __AllowGroup__ property of each column to indicate whether the user
 
 #### __[C#] Allow groups__
 
-{{region allowGroup}}
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=allowGroup}}
 	            this.radGridView1.Columns["Country"].AllowGroup = false;
 	{{endregion}}
 
@@ -76,7 +76,7 @@ You can use __AllowGroup__ property of each column to indicate whether the user
 
 #### __[VB.NET] Allow groups__
 
-{{region allowGroup}}
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=allowGroup}}
 	        Me.RadGridView1.Columns("Country").AllowGroup = False
 	{{endregion}}
 
@@ -88,7 +88,7 @@ DataGroup collections have hierarchical structure. One or more group levels coul
 
 #### __[C#] Accessing parent/child groups__
 
-{{region accessingParentChildGroups}}
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=accessingParentChildGroups}}
 	            int groupLevel= this.radGridView1.Groups[0].Level;
 	            Group<GridViewRowInfo> parentGroup = this.radGridView1.Groups[0].Parent;
 	            DataGroupCollection groups = this.radGridView1.Groups[0].Groups;
@@ -98,7 +98,7 @@ DataGroup collections have hierarchical structure. One or more group levels coul
 
 #### __[VB.NET] Accessing parent/child groups__
 
-{{region accessingParentChildGroups}}
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=accessingParentChildGroups}}
 	        Dim groupLevel As Integer = Me.RadGridView1.Groups(0).Level
 	        Dim parentGroup As Group(Of GridViewRowInfo) = Me.RadGridView1.Groups(0).Parent
 	        Dim groups As DataGroupCollection = Me.RadGridView1.Groups(0).Groups
@@ -111,7 +111,7 @@ The header row of a group (*GridViewGroupRowInfo*) can be accessed using the __G
 
 #### __[C#] Accessing group header row__
 
-{{region groupHeaderRow}}
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=groupHeaderRow}}
 	            GridViewRowInfo groupHeaderRow = radGridView1.Groups[0].GroupRow;
 	{{endregion}}
 
@@ -119,7 +119,7 @@ The header row of a group (*GridViewGroupRowInfo*) can be accessed using the __G
 
 #### __[VB.NET] Accessing group header row__
 
-{{region groupHeaderRow}}
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=groupHeaderRow}}
 	        Dim groupHeaderRow = Me.RadGridView1.Groups(0).GroupRow
 	{{endregion}}
 

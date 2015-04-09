@@ -69,7 +69,7 @@ You can create a compressed stream by initializing new instance of the __Compres
 
 #### __[C#] __
 
-{{region stream}}
+{{source=..\SamplesCS\ZipLibrary\CompressStream.cs region=stream}}
 	            
 	            using (CompressedStream compressedStream = new CompressedStream(outputStream, StreamOperationMode.Write, new DeflateSettings()))
 	            {
@@ -82,7 +82,7 @@ You can create a compressed stream by initializing new instance of the __Compres
 
 #### __[VB.NET] __
 
-{{region stream}}
+{{source=..\SamplesVB\ZipLibrary\CompressStream.vb region=stream}}
 	        Using compressedStream As New CompressedStream(outputStream, StreamOperationMode.Write, New DeflateSettings())
 	            ' write to compressed stream
 	        End Using
@@ -109,7 +109,7 @@ If you want to compress a specific stream (*inputStream*), you need to copy it t
 
 #### __[C#] __
 
-{{region copy}}
+{{source=..\SamplesCS\ZipLibrary\CompressStream.cs region=copy}}
 	            
 	            using (CompressedStream compressedStream = new CompressedStream(outputStream, StreamOperationMode.Write, new DeflateSettings()))
 	            {
@@ -123,7 +123,7 @@ If you want to compress a specific stream (*inputStream*), you need to copy it t
 
 #### __[VB.NET] __
 
-{{region copy}}
+{{source=..\SamplesVB\ZipLibrary\CompressStream.vb region=copy}}
 	        Using compressedStream As New CompressedStream(outputStream, StreamOperationMode.Write, New DeflateSettings())
 	            inputStream.CopyTo(compressedStream)
 	            compressedStream.Flush()
@@ -149,7 +149,7 @@ Decompressing a stream is just as simple as compressing it. All you need to do i
 
 #### __[C#] __
 
-{{region copyto}}
+{{source=..\SamplesCS\ZipLibrary\CompressStream.cs region=copyto}}
 	    
 	            using (CompressedStream compressedStream = new CompressedStream(inputStream, StreamOperationMode.Read, new DeflateSettings()))
 	            {
@@ -162,7 +162,7 @@ Decompressing a stream is just as simple as compressing it. All you need to do i
 
 #### __[VB.NET] __
 
-{{region copyto}}
+{{source=..\SamplesVB\ZipLibrary\CompressStream.vb region=copyto}}
 	        Using compressedStream As New CompressedStream(inputStream, StreamOperationMode.Read, New DeflateSettings())
 	            compressedStream.CopyTo(outputStream)
 	        End Using

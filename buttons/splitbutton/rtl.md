@@ -19,7 +19,7 @@ You can present the content of your grid instance in a right-to-left direction b
 
 #### __[C#]__
 
-{{region rtl}}
+{{source=..\SamplesCS\Buttons\SplitButton1.cs region=rtl}}
 	
 	            radSplitButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 	
@@ -29,7 +29,7 @@ You can present the content of your grid instance in a right-to-left direction b
 
 #### __[VB.NET]__
 
-{{region rtl}}
+{{source=..\SamplesVB\Buttons\SplitButton1.vb region=rtl}}
 	
 	        radSplitButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 	

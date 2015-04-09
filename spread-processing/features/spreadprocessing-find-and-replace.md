@@ -53,7 +53,7 @@ __Example 1__ creates a new workbook with two empty worksheets and assigns sampl
 
 #### __[C#] Example 1: Perform find an find all__
 
-{{region radspreadprocessing-features-find-and-replace_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFindAndReplace.cs region=radspreadprocessing-features-find-and-replace_0}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet1 = workbook.Worksheets.Add();
 	            Worksheet worksheet2 = workbook.Worksheets.Add();
@@ -81,7 +81,7 @@ __Example 1__ creates a new workbook with two empty worksheets and assigns sampl
 
 #### __VB__
 
-{{region radspreadprocessing-features-find-and-replace_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFindAndReplace.vb region=radspreadprocessing-features-find-and-replace_0}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet1 As Worksheet = workbook.Worksheets.Add()
 	        Dim worksheet2 As Worksheet = workbook.Worksheets.Add()
@@ -155,7 +155,7 @@ __Example 2__ creates a workbook from scratch with two empty worksheet and adds 
 
 #### __[C#] Example 2: Perform replace and replace all__
 
-{{region radspreadprocessing-features-find-and-replace_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFindAndReplace.cs region=radspreadprocessing-features-find-and-replace_1}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet1 = workbook.Worksheets.Add();
 	            Worksheet worksheet2 = workbook.Worksheets.Add();
@@ -192,7 +192,7 @@ __Example 2__ creates a workbook from scratch with two empty worksheet and adds 
 
 #### __VB__
 
-{{region radspreadprocessing-features-find-and-replace_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFindAndReplace.vb region=radspreadprocessing-features-find-and-replace_1}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet1 As Worksheet = workbook.Worksheets.Add()
 	        Dim worksheet2 As Worksheet = workbook.Worksheets.Add()

@@ -22,7 +22,7 @@ The code snippets below demonstrates changing the background color of rows, whic
 
 #### __[C#] Data row formatting in RadGridView__
 
-{{region rowFormatting}}
+{{source=..\SamplesCS\GridView\Rows\FormattingRows.cs region=rowFormatting}}
 	
 	        private void radGridView1_RowFormatting(object sender, RowFormattingEventArgs e)
 	        {
@@ -46,7 +46,7 @@ The code snippets below demonstrates changing the background color of rows, whic
 
 #### __[VB.NET] Data row formatting in RadGridView__
 
-{{region rowFormatting}}
+{{source=..\SamplesVB\GridView\Rows\FormattingRows.vb region=rowFormatting}}
 	    Private Sub RadGridView1_RowFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.RowFormattingEventArgs) Handles RadGridView1.RowFormatting
 	        If e.RowElement.RowInfo.Cells("BMP").Value = True Then
 	            e.RowElement.DrawFill = True
@@ -77,7 +77,7 @@ To customize the non-data rows (header row, new row, filtering row, etc) of RadG
 
 #### __[C#] Non-data row formatting in RadGridView__
 
-{{region viewRowFormatting}}
+{{source=..\SamplesCS\GridView\Rows\FormattingRows.cs region=viewRowFormatting}}
 	        void radGridView1_ViewRowFormatting(object sender, RowFormattingEventArgs e)
 	        {
 	            Console.WriteLine(e.RowElement.GetType());
@@ -102,7 +102,7 @@ To customize the non-data rows (header row, new row, filtering row, etc) of RadG
 
 #### __[VB.NET] Non-data row formatting in RadGridView__
 
-{{region viewRowFormatting}}
+{{source=..\SamplesVB\GridView\Rows\FormattingRows.vb region=viewRowFormatting}}
 	    Private Sub RadGridView1_ViewRowFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.RowFormattingEventArgs) Handles RadGridView1.ViewRowFormatting
 	        If TypeOf e.RowElement Is GridTableHeaderRowElement Then
 	            e.RowElement.DrawFill = True

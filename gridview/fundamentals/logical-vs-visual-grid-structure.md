@@ -56,7 +56,7 @@ This logical tree structure allows you to traverse down through the cell level u
 
 #### __[C#] Iterate the MasterGridViewTemplate cells__
 
-{{region iterateMasterGridViewTemplate}}
+{{source=..\SamplesCS\GridView\Fundamentials\LogicalVsVisualStructure.cs region=iterateMasterGridViewTemplate}}
 	            foreach (GridViewRowInfo rowInfo in radGridView1.MasterTemplate.Rows)
 	            {
 	                foreach (GridViewCellInfo cellInfo in rowInfo.Cells)
@@ -73,7 +73,7 @@ This logical tree structure allows you to traverse down through the cell level u
 
 #### __[VB.NET] Iterate the MasterGridViewTemplate cells__
 
-{{region iterateMasterGridViewTemplate}}
+{{source=..\SamplesVB\GridView\Fundamentials\LogicalVsVisualStructure.vb region=iterateMasterGridViewTemplate}}
 	
 	        For Each rowInfo As GridViewRowInfo In RadGridView1.MasterTemplate.Rows
 	            For Each cellInfo As GridViewCellInfo In rowInfo.Cells
@@ -90,7 +90,7 @@ This logical tree structure allows you to traverse down through the cell level u
 
 #### __[C#] Iterate the child templates cells__
 
-{{region iterateChildTemplates}}
+{{source=..\SamplesCS\GridView\Fundamentials\LogicalVsVisualStructure.cs region=iterateChildTemplates}}
 	            foreach (GridViewTemplate childTemplate in radGridView1.MasterTemplate.Templates)
 	            {
 	                foreach (GridViewColumn column in childTemplate.Columns)
@@ -104,7 +104,7 @@ This logical tree structure allows you to traverse down through the cell level u
 
 #### __[VB.NET] Iterate the child templates cells__
 
-{{region iterateChildTemplates}}
+{{source=..\SamplesVB\GridView\Fundamentials\LogicalVsVisualStructure.vb region=iterateChildTemplates}}
 	        For Each childtemplate As GridViewTemplate In RadGridView1.MasterTemplate.Templates
 	            For Each column As GridViewColumn In childtemplate.Columns
 	                column.HeaderTextAlignment = ContentAlignment.TopCenter
@@ -132,7 +132,7 @@ RadGridView has several events that allow you to access the visual elements of t
 
 #### __[C#] Iterating all cells by using CellFormatting event__
 
-{{region cellFormatting}}
+{{source=..\SamplesCS\GridView\Fundamentials\LogicalVsVisualStructure.cs region=cellFormatting}}
 	        void radGridView1_CellFormatting(object sender, CellFormattingEventArgs e)
 	        {
 	            RadProgressBarElement element = new RadProgressBarElement();
@@ -144,7 +144,7 @@ RadGridView has several events that allow you to access the visual elements of t
 
 #### __[VB.NET] Iterating all cells by using CellFormatting event__
 
-{{region cellFormatting}}
+{{source=..\SamplesVB\GridView\Fundamentials\LogicalVsVisualStructure.vb region=cellFormatting}}
 	    Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
 	        Dim element As New RadProgressBarElement()
 	        e.CellElement.Children.Add(element)

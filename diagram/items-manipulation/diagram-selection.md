@@ -13,9 +13,9 @@ position: 2
 
 
 __RadDiagram__ gives you the ability to select __RadDiagramItems__ in code behind,
-        interactively or by invoking __RadDiagramCommand__.
+        interactively or by invoking [RadDiagramCommand]({%slug diagram-features-commands%}).
 
-The following tutorial will show you how select items, work with different selection modes and set up selection commands and events.
+The following tutorial will show you how to select items, work with different selection modes and set up selection commands and events.
 
 ## Selection modes
 
@@ -50,7 +50,7 @@ In order to select items programmatically, you only need to set their __IsSelect
 
 #### __[C#] __
 
-{{region IsSelected}}
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=IsSelected}}
 	
 	            RadDiagramShape shape1 = new RadDiagramShape()
 	            {
@@ -77,7 +77,7 @@ In order to select items programmatically, you only need to set their __IsSelect
 
 #### __[VB.NET] __
 
-{{region IsSelected}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=IsSelected}}
 	
 	        Dim shape1 As New RadDiagramShape() With { _
 	            .ShapeText = "", _
@@ -257,6 +257,21 @@ In order to select items programmatically, you only need to set their __IsSelect
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 
@@ -266,7 +281,7 @@ When multiple items are selected, they are automatically added in one Selection 
 
 #### __[C#] __
 
-{{region MultipleSelection}}
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=MultipleSelection}}
 	            
 	            RadDiagramShape shape1 = new RadDiagramShape()
 	            {
@@ -294,7 +309,7 @@ When multiple items are selected, they are automatically added in one Selection 
 
 #### __[VB.NET] __
 
-{{region MultipleSelection}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=MultipleSelection}}
 	
 	        Dim shape1 As New RadDiagramShape() With { _
 	            .ShapeText = "", _
@@ -429,6 +444,21 @@ When multiple items are selected, they are automatically added in one Selection 
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 
@@ -438,7 +468,7 @@ You may also want to use the __SelectedIndex__ or the __SelectedItem__ property
 
 #### __[C#] __
 
-{{region SelectedIndex}}
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=SelectedIndex}}
 	            
 	            this.radDiagram1.SelectedIndex = 1;
 	            
@@ -448,7 +478,7 @@ You may also want to use the __SelectedIndex__ or the __SelectedItem__ property
 
 #### __[VB.NET] __
 
-{{region SelectedIndex}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=SelectedIndex}}
 	
 	        Me.RadDiagram1.SelectedIndex = 1
 	        '#End Region
@@ -561,20 +591,35 @@ You may also want to use the __SelectedIndex__ or the __SelectedItem__ property
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 
 
-## SelectAll
+## Select All
 
 You are able to select all __RadDiagramItems__ interactively (by Mouse or by pressing Ctrl + A),
-          programmatically (via the SelectAll() method), set __IsSelected__ to every Shape and Connection via StyleBindings,
-          or with Command. Below is shown how you can use the __SelectAll__ command:
+          programmatically (via the __SelectAll__ method), set the __IsSelected__ property 
+          to every Shape and Connection. Below is demonstrated how you can use the __SelectAll__ command:
         
 
 #### __[C#] __
 
-{{region SelectAllCommand}}
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=SelectAllCommand}}
 	            
 	            this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.SelectAll, "");
 	
@@ -584,7 +629,7 @@ You are able to select all __RadDiagramItems__ interactively (by Mouse or by pre
 
 #### __[VB.NET] __
 
-{{region SelectAllCommand}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=SelectAllCommand}}
 	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.SelectAll, "")
 	
 	        '#End Region
@@ -692,6 +737,21 @@ You are able to select all __RadDiagramItems__ interactively (by Mouse or by pre
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 

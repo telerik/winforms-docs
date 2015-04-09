@@ -48,7 +48,7 @@ __Example 1__ shows how to retrieve and change the height of several rows.
 
 #### __[C#] Example 1: Change row height__
 
-{{region radspreadprocessing-working-with-rows-and-columns-resizing_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.cs region=radspreadprocessing-working-with-rows-and-columns-resizing_0}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -61,7 +61,7 @@ __Example 1__ shows how to retrieve and change the height of several rows.
 
 #### __[VB.NET] Example 1: Change row height__
 
-{{region radspreadprocessing-working-with-rows-and-columns-resizing_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-resizing_0}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -122,7 +122,7 @@ The autofit feature offers a handy approach for resizing multiple rows, so that 
 
 #### __[C#] Example 2: Fit height of rows__
 
-{{region radspreadprocessing-working-with-rows-and-columns-resizing_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.cs region=radspreadprocessing-working-with-rows-and-columns-resizing_1}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -134,7 +134,7 @@ The autofit feature offers a handy approach for resizing multiple rows, so that 
 
 #### __[VB.NET] Example 2: Fit height of rows__
 
-{{region radspreadprocessing-working-with-rows-and-columns-resizing_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-resizing_1}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -202,7 +202,7 @@ __Example 3__ shows how to retrieve and change the width of several columns.
 
 #### __[C#] Example 3: Change columns width__
 
-{{region radspreadprocessing-working-with-rows-and-columns-resizing_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.cs region=radspreadprocessing-working-with-rows-and-columns-resizing_2}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -215,7 +215,7 @@ __Example 3__ shows how to retrieve and change the width of several columns.
 
 #### __[VB.NET] Example 3: Change columns width__
 
-{{region radspreadprocessing-working-with-rows-and-columns-resizing_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-resizing_2}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -255,7 +255,7 @@ The autofit feature offers a handy approach for resizing multiple columns, so th
 
 #### __[C#] Example 4: Fit width of columns__
 
-{{region radspreadprocessing-working-with-rows-and-columns-resizing_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.cs region=radspreadprocessing-working-with-rows-and-columns-resizing_3}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -267,7 +267,7 @@ The autofit feature offers a handy approach for resizing multiple columns, so th
 
 #### __[VB.NET] Example 4: Fit width of columns__
 
-{{region radspreadprocessing-working-with-rows-and-columns-resizing_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-resizing_3}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	
@@ -294,7 +294,7 @@ Another way to auto fit column widths is to use the __ExpandToFitNumberValuesWid
 
 #### __[C#] Example 5: Fit with ExpandToFitNumberValuesWidth()__
 
-{{region radspreadprocessing-working-with-rows-and-columns-resizing_4}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.cs region=radspreadprocessing-working-with-rows-and-columns-resizing_4}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	
@@ -306,7 +306,7 @@ Another way to auto fit column widths is to use the __ExpandToFitNumberValuesWid
 
 #### __[VB.NET] Example 5: Fit with ExpandToFitNumberValuesWidth()__
 
-{{region radspreadprocessing-working-with-rows-and-columns-resizing_4}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-resizing_4}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	

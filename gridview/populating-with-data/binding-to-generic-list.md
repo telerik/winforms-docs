@@ -23,7 +23,7 @@ Generally, you should not try to bind __RadGridView__ to a list of simple types.
 
 #### __[C#] Binding to list of simple types__
 
-{{region bindingToListOfSimpleTypes}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToGenericLists.cs region=bindingToListOfSimpleTypes}}
 	            List<string> list = new List<string>();
 	            list.Add("One");
 	            list.Add("Two");
@@ -35,7 +35,7 @@ Generally, you should not try to bind __RadGridView__ to a list of simple types.
 
 #### __[VB.NET] Binding to list of simple types__
 
-{{region bindingToListOfSimpleTypes}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToGenericLists.vb region=bindingToListOfSimpleTypes}}
 	        Dim list As New List(Of String)()
 	        list.Add("One")
 	        list.Add("Two")
@@ -53,7 +53,7 @@ The example below defines a "MyObject" class containing one integer and one stri
 
 #### __[C#] Creating object of simple type__
 
-{{region objectClass}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToGenericLists.cs region=objectClass}}
 	    public class MyObject
 	    {
 	        public MyObject(int myInt, string myString)
@@ -80,7 +80,7 @@ The example below defines a "MyObject" class containing one integer and one stri
 
 #### __[VB.NET] Creating object of simple type__
 
-{{region objectClass}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToGenericLists.vb region=objectClass}}
 	Public Class MyObject
 	    Public Sub New(ByVal myInt As Integer, ByVal myString As String)
 	        _myInt = myInt
@@ -111,7 +111,7 @@ The example below defines a "MyObject" class containing one integer and one stri
 
 #### __[C#] Binding to list of simple types__
 
-{{region bindingtoObjectsOfSimpleType}}
+{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToGenericLists.cs region=bindingtoObjectsOfSimpleType}}
 	            List<MyObject> myList = new List<MyObject>();
 	            myList.Add(new MyObject(1, "Outdoor"));
 	            myList.Add(new MyObject(2, "Hardware"));
@@ -125,7 +125,7 @@ The example below defines a "MyObject" class containing one integer and one stri
 
 #### __[VB.NET] Binding to list of simple types__
 
-{{region bindingtoObjectsOfSimpleType}}
+{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToGenericLists.vb region=bindingtoObjectsOfSimpleType}}
 	        Dim myList As New List(Of MyObject)()
 	        myList.Add(New MyObject(1, "Outdoor"))
 	        myList.Add(New MyObject(2, "Hardware"))

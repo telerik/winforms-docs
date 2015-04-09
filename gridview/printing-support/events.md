@@ -26,7 +26,7 @@ Just like the other formatting events of RadGridView, this event allows you to f
 
 #### __[C#]__
 
-{{region PrintCellFormatting}}
+{{source=..\SamplesCS\GridView\Printing support\EventsAndCustomization.cs region=PrintCellFormatting}}
 	        private void radGridView1_PrintCellFormatting(object sender, PrintCellFormattingEventArgs e)
 	        {
 	            if (e.Row is GridViewTableHeaderRowInfo)
@@ -48,7 +48,7 @@ Just like the other formatting events of RadGridView, this event allows you to f
 
 #### __[VB.NET]__
 
-{{region PrintCellFormatting}}
+{{source=..\SamplesVB\GridView\Printing support\EventsAndCustomization.vb region=PrintCellFormatting}}
 	    Private Sub radGridView1_PrintCellFormatting(sender As Object, e As PrintCellFormattingEventArgs)
 	        If TypeOf e.Row Is GridViewTableHeaderRowInfo Then
 	            e.PrintCell.DrawFill = True
@@ -71,7 +71,7 @@ This event allow you to access the cell and to paint in it whatever you need. He
 
 #### __[C#]__
 
-{{region PrintCellPaint}}
+{{source=..\SamplesCS\GridView\Printing support\EventsAndCustomization.cs region=PrintCellPaint}}
 	        private void radGridView1_PrintCellPaint(object sender, PrintCellPaintEventArgs e)
 	        {
 	            if (e.Row is GridViewDataRowInfo & e.Column.Name == "UnitsInStock")
@@ -101,7 +101,7 @@ This event allow you to access the cell and to paint in it whatever you need. He
 
 #### __[VB.NET]__
 
-{{region PrintCellPaint}}
+{{source=..\SamplesVB\GridView\Printing support\EventsAndCustomization.vb region=PrintCellPaint}}
 	    Private Sub radGridView1_PrintCellPaint(sender As Object, e As PrintCellPaintEventArgs)
 	        If TypeOf e.Row Is GridViewDataRowInfo And e.Column.Name = "UnitsInStock" Then
 	            Dim side As Integer = e.CellRect.Height - 8

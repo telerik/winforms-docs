@@ -27,7 +27,7 @@ __RadScheduler__ gives you the ability to easily customize its default context m
 
 #### __[C#]__
 
-{{region contextMenuOpening}}
+{{source=..\SamplesCS\Scheduler\CustomizeContextMenu.cs region=contextMenuOpening}}
 	        void radScheduler1_ContextMenuOpening(object sender, SchedulerContextMenuOpeningEventArgs e)
 	        {
 	            if (e.Element is AppointmentElement)
@@ -45,7 +45,7 @@ __RadScheduler__ gives you the ability to easily customize its default context m
 
 #### __[VB.NET]__
 
-{{region contextMenuOpening}}
+{{source=..\SamplesVB\Scheduler\CustomizeContextMenu.vb region=contextMenuOpening}}
 	    Private Sub radScheduler1_ContextMenuOpening(sender As Object, e As SchedulerContextMenuOpeningEventArgs) Handles RadScheduler1.ContextMenuOpening
 	        If TypeOf e.Element Is AppointmentElement Then
 	            e.Menu = Me.RadContextMenu1
@@ -68,7 +68,7 @@ The __Menu__ property of the __SchedulerContextMenuOpeningEventArgs__ objects gi
 
 #### __[C#]__
 
-{{region contextMenuOpening1}}
+{{source=..\SamplesCS\Scheduler\CustomizeContextMenu.cs region=contextMenuOpening1}}
 	        void radScheduler1_ContextMenuOpening1(object sender, SchedulerContextMenuOpeningEventArgs e)
 	        {
 	            if (e.Element is AppointmentElement)
@@ -86,7 +86,7 @@ The __Menu__ property of the __SchedulerContextMenuOpeningEventArgs__ objects gi
 
 #### __[VB.NET]__
 
-{{region contextMenuOpening1}}
+{{source=..\SamplesVB\Scheduler\CustomizeContextMenu.vb region=contextMenuOpening1}}
 	    Private Sub radScheduler1_ContextMenuOpening1(sender As Object, e As SchedulerContextMenuOpeningEventArgs)
 	        If TypeOf e.Element Is AppointmentElement Then
 	            e.Menu.Items.RemoveAt(0)

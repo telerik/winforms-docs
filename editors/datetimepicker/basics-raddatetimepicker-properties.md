@@ -22,7 +22,7 @@ The significant properties for __RadDateTimePicker__ are:
 
 #### __[C#] Setting the value of RadDateTimePicker__
 
-{{region Value}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=Value}}
 	            this.radDateTimePicker1.Value = DateTime.Today.AddDays(1);
 	{{endregion}}
 
@@ -30,7 +30,7 @@ The significant properties for __RadDateTimePicker__ are:
 
 #### __[VB.NET] Setting the value of RadDateTimePicker__
 
-{{region Value}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=Value}}
 	        Me.RadDateTimePicker1.Value = DateTime.Now.AddDays(1)
 	{{endregion}}
 
@@ -41,7 +41,7 @@ The significant properties for __RadDateTimePicker__ are:
 
 #### __[C#] Setting the MinDate property of RadDateTimePicker__
 
-{{region MinDate}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=MinDate}}
 	            this.radDateTimePicker1.MinDate = DateTime.Today.AddDays(-DateTime.Today.Day);
 	{{endregion}}
 
@@ -49,7 +49,7 @@ The significant properties for __RadDateTimePicker__ are:
 
 #### __[VB.NET] Setting the MinDate property of RadDateTimePicker__
 
-{{region MinDate}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=MinDate}}
 	        Me.RadDateTimePicker1.MinDate = DateTime.Today.AddDays(-DateTime.Today.Day)
 	{{endregion}}
 
@@ -62,7 +62,7 @@ The significant properties for __RadDateTimePicker__ are:
 
 #### __[C#] Setting the NullText property of RadDateTimePicker__
 
-{{region NullText}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=NullText}}
 	            this.radDateTimePicker1.NullText = "No date selected";
 	{{endregion}}
 
@@ -70,7 +70,7 @@ The significant properties for __RadDateTimePicker__ are:
 
 #### __[VB.NET] Setting the NullText property of RadDateTimePicker__
 
-{{region NullText}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=NullText}}
 	        Me.RadDateTimePicker1.NullText = "No date selected"
 	{{endregion}}
 
@@ -81,7 +81,7 @@ The significant properties for __RadDateTimePicker__ are:
 
 #### __[C#]__
 
-{{region ShowTimePicker1}}
+{{source=..\SamplesCS\Editors\DateTimePicker2.cs region=ShowTimePicker1}}
 	
 	            this.radDateTimePicker1.DateTimePickerElement.ShowTimePicker = true;
 	
@@ -91,7 +91,7 @@ The significant properties for __RadDateTimePicker__ are:
 
 #### __[VB.NET]__
 
-{{region ShowTimePicker1}}
+{{source=..\SamplesVB\Editors\DateTimePicker2.vb region=ShowTimePicker1}}
 	
 	        Me.radDateTimePicker1.DateTimePickerElement.ShowTimePicker = True
 	
@@ -152,7 +152,7 @@ The significant properties for __RadDateTimePicker__ are:
 
 #### __[C#] Setting the NullableValue property of RadDateTimePicker__
 
-{{region NullableValue}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=NullableValue}}
 	            this.radDateTimePicker1.NullableValue = null;
 	{{endregion}}
 
@@ -160,7 +160,7 @@ The significant properties for __RadDateTimePicker__ are:
 
 #### __[VB.NET] Setting the NullableValue property of RadDateTimePicker__
 
-{{region NullableValue}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=NullableValue}}
 	        Me.RadDateTimePicker1.NullableValue = Nothing
 	{{endregion}}
 
@@ -176,7 +176,7 @@ __NullableValue__ can be bound to a business object that exposes
 
 #### __[C#]__
 
-{{region NullableBinding}}
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=NullableBinding}}
 	        public class MyObject
 	        {
 	            public MyObject(DateTime? _endTime)
@@ -212,7 +212,7 @@ __NullableValue__ can be bound to a business object that exposes
 
 #### __[VB.NET]__
 
-{{region NullableBinding}}
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=NullableBinding}}
 	    Public Class MyObject
 	        Public Sub New(ByVal _endTime? As Date)
 	            Me._endTime = _endTime
@@ -299,7 +299,7 @@ __Editing Date and Time in RadDateTimePicker.__
 
 #### __[C#]__
 
-{{region ShowTimePicker2}}
+{{source=..\SamplesCS\Editors\DateTimePicker2.cs region=ShowTimePicker2}}
 	
 	            this.radDateTimePicker1.DateTimePickerElement.ShowTimePicker = true;
 	            this.radDateTimePicker1.Format = DateTimePickerFormat.Custom;
@@ -312,7 +312,7 @@ __Editing Date and Time in RadDateTimePicker.__
 
 #### __[VB.NET]__
 
-{{region ShowTimePicker2}}
+{{source=..\SamplesVB\Editors\DateTimePicker2.vb region=ShowTimePicker2}}
 	
 	        Me.radDateTimePicker1.DateTimePickerElement.ShowTimePicker = True
 	        Me.radDateTimePicker1.Format = DateTimePickerFormat.[Custom]
@@ -379,7 +379,7 @@ The MaskDateTimeProvider can be accessed by casting to that appropriate class. T
 
 #### __[C#]__
 
-{{region provider}}
+{{source=..\SamplesCS\Editors\DateTimePicker2.cs region=provider}}
 	            MaskDateTimeProvider provider = this.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider as MaskDateTimeProvider;
 	            provider.AutoSelectNextPart = true;
 	{{endregion}}
@@ -388,7 +388,7 @@ The MaskDateTimeProvider can be accessed by casting to that appropriate class. T
 
 #### __[VB.NET]__
 
-{{region provider}}
+{{source=..\SamplesVB\Editors\DateTimePicker2.vb region=provider}}
 	        Dim provider As MaskDateTimeProvider = TryCast(Me.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider, MaskDateTimeProvider)
 	        provider.AutoSelectNextPart = True
 	        '#End Region

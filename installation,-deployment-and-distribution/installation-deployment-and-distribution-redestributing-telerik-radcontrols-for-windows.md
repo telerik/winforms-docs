@@ -59,7 +59,7 @@ In order to use this approach you need to set the __ResolverTypesInCurrentAssemb
 
 #### __[C#]__
 
-{{region ResolveTypesInCurrentAssembly}}
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=ResolveTypesInCurrentAssembly}}
 	        static RedestributingTelerikRadControls()
 	        {
 	            Telerik.WinControls.RadTypeResolver.Instance.ResolveTypesInCurrentAssembly = true;
@@ -75,7 +75,7 @@ In order to use this approach you need to set the __ResolverTypesInCurrentAssemb
 
 #### __[VB.NET]__
 
-{{region ResolveTypesInCurrentAssembly}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=ResolveTypesInCurrentAssembly}}
 	    Shared Sub New()
 	        Telerik.WinControls.RadTypeResolver.Instance.ResolveTypesInCurrentAssembly = True
 	    End Sub
@@ -234,7 +234,7 @@ __Instructions__
 
 #### __[C#] Before__
 
-{{region CommentedIsValid}}
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=CommentedIsValid}}
 	        public static bool IsValid()
 	        {
 	            // Uncomment the following line
@@ -247,7 +247,7 @@ __Instructions__
 
 #### __[VB] Before__
 
-{{region CommentedIsValid}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=CommentedIsValid}}
 	    Public Shared Function IsValid() As Boolean
 	        ' Uncomment the following line
 	        ' return ValidatePassPhrase();
@@ -259,7 +259,7 @@ __Instructions__
 
 #### __[C#] After__
 
-{{region UnCommentedIsValid}}
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=UnCommentedIsValid}}
 	        public static bool IsValid()
 	        {
 	            // Uncomment the following line
@@ -271,7 +271,7 @@ __Instructions__
 
 #### __[VB] After__
 
-{{region UnCommentedIsValid}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=UnCommentedIsValid}}
 	    Public Shared Function IsValid() As Boolean
 	        ' Uncomment the following line
 	        Return ValidatePassPhrase()
@@ -284,7 +284,7 @@ __Instructions__
 
 #### __[C#] Before__
 
-{{region AppNameBefore}}
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=AppNameBefore}}
 	        internal const string ApplicationName = "MyApp";
 	{{endregion}}
 
@@ -292,7 +292,7 @@ __Instructions__
 
 #### __[VB] Before__
 
-{{region AppNameBefore}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=AppNameBefore}}
 	    Friend Const ApplicationName As String = "MyApp"
 	{{endregion}}
 
@@ -300,7 +300,7 @@ __Instructions__
 
 #### __[C#] After__
 
-{{region AppNameAfter}}
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=AppNameAfter}}
 	        internal const string ApplicationName = "Sample Application Name v2.0 (tm)";
 	{{endregion}}
 
@@ -308,7 +308,7 @@ __Instructions__
 
 #### __[VB] After__
 
-{{region AppNameAfter}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=AppNameAfter}}
 	    Friend Const ApplicationName As String = "Sample Application Name v2.0 (tm)"
 	{{endregion}}
 

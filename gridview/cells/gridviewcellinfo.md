@@ -30,7 +30,7 @@ GridViewCellInfo also includes an __EnsureVisible()__method that scrolls the cel
 
 #### __[C#] Using GridViewCellInfo__
 
-{{region GridViewCellInfo}}
+{{source=..\SamplesCS\GridView\Cells\GridViewCellInfo1.cs region=GridViewCellInfo}}
 	            GridViewRowInfo lastRow = radGridView1.Rows[radGridView1.Rows.Count - 1];
 			    GridViewCellInfo cell = lastRow.Cells["BMP"];
 	            lastRow.EnsureVisible();
@@ -45,7 +45,7 @@ GridViewCellInfo also includes an __EnsureVisible()__method that scrolls the cel
 
 #### __[VB.NET] Using GridViewCellInfo__
 
-{{region GridViewCellInfo}}
+{{source=..\SamplesVB\GridView\Cells\GridViewCellInfo1.vb region=GridViewCellInfo}}
 	        Dim lastRow As GridViewRowInfo = RadGridView1.Rows(RadGridView1.Rows.Count - 1)
 	        Dim cell As GridViewCellInfo = lastRow.Cells("BMP")
 	        lastRow.EnsureVisible()

@@ -24,7 +24,7 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 
 #### __[C#]__
 
-{{region TimeRangeCustom}}
+{{source=..\SamplesCS\GanttView\CustomTimeline\DecadesTimeline.cs region=TimeRangeCustom}}
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Custom;
 	{{endregion}}
 
@@ -32,7 +32,7 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 
 #### __[VB.NET]__
 
-{{region TimeRangeCustom}}
+{{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=TimeRangeCustom}}
 	        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Custom
 	{{endregion}}
 
@@ -42,7 +42,7 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 
 #### __[C#]__
 
-{{region CustomBehavior}}
+{{source=..\SamplesCS\GanttView\CustomTimeline\DecadesTimeline.cs region=CustomBehavior}}
 	            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineBehavior = new DecadesGanttViewTimelineBehavior();
 	{{endregion}}
 
@@ -50,7 +50,7 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 
 #### __[VB.NET]__
 
-{{region CustomBehavior}}
+{{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=CustomBehavior}}
 	        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineBehavior = New DecadesGanttViewTimelineBehavior()
 	{{endregion}}
 
@@ -67,7 +67,7 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 
 #### __[C#]__
 
-{{region AdjustedStartAndEnd}}
+{{source=..\SamplesCS\GanttView\CustomTimeline\DecadesTimeline.cs region=AdjustedStartAndEnd}}
 	        public override DateTime AdjustedTimelineStart
 	        {
 	            get
@@ -99,7 +99,7 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 
 #### __[VB.NET]__
 
-{{region AdjustedStartAndEnd}}
+{{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=AdjustedStartAndEnd}}
 	    Public Overrides ReadOnly Property AdjustedTimelineStart() As DateTime
 	        Get
 	            If Me.GraphicalViewElement.TimelineRange <> TimeRange.[Custom] Then
@@ -126,7 +126,7 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 
 #### __[C#]__
 
-{{region GanttViewTimelineDataItems}}
+{{source=..\SamplesCS\GanttView\CustomTimeline\DecadesTimeline.cs region=GanttViewTimelineDataItems}}
 	        public override IList<GanttViewTimelineDataItem> BuildTimelineDataItems(TimeRange range)
 	        {
 	            if (range != TimeRange.Custom)
@@ -173,7 +173,7 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 
 #### __[VB.NET]__
 
-{{region GanttViewTimelineDataItems}}
+{{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=GanttViewTimelineDataItems}}
 	        Public Overrides Function BuildTimelineDataItems(range As TimeRange) As IList(Of GanttViewTimelineDataItem)
 	        If range <> TimeRange.[Custom] Then
 	            Return MyBase.BuildTimelineDataItems(range)
@@ -215,7 +215,7 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 
 #### __[C#]__
 
-{{region GanttTimelineCellsInfo}}
+{{source=..\SamplesCS\GanttView\CustomTimeline\DecadesTimeline.cs region=GanttTimelineCellsInfo}}
 	        public override GanttTimelineCellsInfo GetTimelineCellInfoForItem(GanttViewTimelineDataItem item, TimeRange timeRange)
 	        {
 	            if (timeRange != TimeRange.Custom)
@@ -254,7 +254,7 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 
 #### __[VB.NET]__
 
-{{region GanttTimelineCellsInfo}}
+{{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=GanttTimelineCellsInfo}}
 	    Public Overrides Function GetTimelineCellInfoForItem(item As GanttViewTimelineDataItem, range As TimeRange) As GanttTimelineCellsInfo
 	        If range <> TimeRange.[Custom] Then
 	            Return MyBase.GetTimelineCellInfoForItem(item, range)
@@ -285,7 +285,7 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 
 #### __[C#]__
 
-{{region TimelineElementsText}}
+{{source=..\SamplesCS\GanttView\CustomTimeline\DecadesTimeline.cs region=TimelineElementsText}}
 	        public override string GetTimelineTopElementText(GanttViewTimelineDataItem item)
 	        {
 	            if (item.Range != TimeRange.Custom)
@@ -313,7 +313,7 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 
 #### __[VB.NET]__
 
-{{region TimelineElementsText}}
+{{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=TimelineElementsText}}
 	      Public Overrides Function GetTimelineTopElementText(item As GanttViewTimelineDataItem) As String
 	        If item.Range <> TimeRange.[Custom] Then
 	            Return MyBase.GetTimelineTopElementText(item)

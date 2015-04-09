@@ -25,7 +25,7 @@ The following code snippet demonstrates how to populate the __RadTreeView__ with
 
 #### __[C#]__
 
-{{region BindToObjectRelationalData}}
+{{source=..\SamplesCS\TreeView\HowTo\KeepTreeViewStates.cs region=BindToObjectRelationalData}}
 	        
 	        public KeepTreeViewStates()
 	        {
@@ -121,7 +121,7 @@ The following code snippet demonstrates how to populate the __RadTreeView__ with
 
 #### __[VB.NET]__
 
-{{region BindToObjectRelationalData}}
+{{source=..\SamplesVB\TreeView\HowTo\KeepTreeViewStates.vb region=BindToObjectRelationalData}}
 	
 	    Public Sub New()
 	        InitializeComponent()
@@ -357,7 +357,7 @@ Unfortunately, a solution of this cannot be added to the control as it
 
 #### __[C#]__
 
-{{region SaveRestore}}
+{{source=..\SamplesCS\TreeView\HowTo\KeepTreeViewStates.cs region=SaveRestore}}
 	        
 	        Dictionary<object, State> nodeStates = new Dictionary<object, State>();
 	        
@@ -416,7 +416,7 @@ Unfortunately, a solution of this cannot be added to the control as it
 
 #### __[VB.NET]__
 
-{{region SaveRestore}}
+{{source=..\SamplesVB\TreeView\HowTo\KeepTreeViewStates.vb region=SaveRestore}}
 	
 	    Private nodeStates As New Dictionary(Of Object, State)()
 	
@@ -485,7 +485,7 @@ Once we have these methods implemented, we can use the dictionary to save the Ra
 
 #### __[C#]__
 
-{{region KeepTreeViewStates}}
+{{source=..\SamplesCS\TreeView\HowTo\KeepTreeViewStates.cs region=KeepTreeViewStates}}
 	        
 	        private void radButtonAdd_Click(object sender, EventArgs e)
 	        {
@@ -551,7 +551,7 @@ Once we have these methods implemented, we can use the dictionary to save the Ra
 
 #### __[VB.NET]__
 
-{{region KeepTreeViewStates}}
+{{source=..\SamplesVB\TreeView\HowTo\KeepTreeViewStates.vb region=KeepTreeViewStates}}
 	
 	    Private Sub radButtonAdd_Click(sender As Object, e As EventArgs) Handles RadButtonAdd.Click
 	        Dim scrollBarValue As Integer = RadTreeView1.VScrollBar.Value

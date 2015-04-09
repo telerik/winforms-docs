@@ -30,7 +30,7 @@ In this mode RadTrackBar looks like RadTrackBar in SingleThumb mode, but it can 
 
 #### __[C#]__
 
-{{region TrackBarModeStartFromTheBeginning}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=TrackBarModeStartFromTheBeginning}}
 	            this.radTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.StartFromTheBeginning;
 	            this.radTrackBar1.Ranges.Add(new TrackBarRange(0, 5, "MyRange1"));
 	            this.radTrackBar1.Ranges.Add(new TrackBarRange(0, 15, "MyRange2"));
@@ -40,7 +40,7 @@ In this mode RadTrackBar looks like RadTrackBar in SingleThumb mode, but it can 
 
 #### __[VB.NET]__
 
-{{region TrackBarModeStartFromTheBeginning}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=TrackBarModeStartFromTheBeginning}}
 	        Me.RadTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.StartFromTheBeginning
 	        Me.RadTrackBar1.Ranges.Add(New TrackBarRange(0, 5, "MyRange1"))
 	        Me.RadTrackBar1.Ranges.Add(New TrackBarRange(0, 15, "MyRange2"))
@@ -114,7 +114,7 @@ In order to access the values of the thumbs in this mode you should go through t
 
 #### __[C#]__
 
-{{region accessValuesStartFromTheBeginningMode}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=accessValuesStartFromTheBeginningMode}}
 	            float fitstRangeValue = this.radTrackBar1.Ranges[0].End;
 	            float secondRangeValue = this.radTrackBar1.Ranges[1].End;
 	{{endregion}}
@@ -123,7 +123,7 @@ In order to access the values of the thumbs in this mode you should go through t
 
 #### __[VB.NET]__
 
-{{region accessValuesStartFromTheBeginningMode}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=accessValuesStartFromTheBeginningMode}}
 	        Dim fitstRangeValue As Single = Me.RadTrackBar1.Ranges(0).[End]
 	        '#End Region
 	
@@ -172,7 +172,7 @@ To receive notification when the Value is changed in this mode, you should use t
 
 #### __[C#]__
 
-{{region Ranges_CollectionChangedEvent}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=Ranges_CollectionChangedEvent}}
 	        void Ranges_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
 	        {
 	            if (e.Action == Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged) 
@@ -194,7 +194,7 @@ To receive notification when the Value is changed in this mode, you should use t
 
 #### __[VB.NET]__
 
-{{region Ranges_CollectionChangedEvent}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=Ranges_CollectionChangedEvent}}
 	    Private Sub Ranges_CollectionChanged(sender As Object, e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
 	        If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
 	            For Each item As Object In e.NewItems
@@ -239,7 +239,7 @@ This mode allows you to define one or more __Ranges__ with __Start__ and __End__
 
 #### __[C#]__
 
-{{region TrackBarModeRange}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=TrackBarModeRange}}
 	            this.radTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.Range;
 	            this.radTrackBar1.Ranges[0].Start = 2;
 	            this.radTrackBar1.Ranges[0].End = 5;
@@ -250,7 +250,7 @@ This mode allows you to define one or more __Ranges__ with __Start__ and __End__
 
 #### __[VB.NET]__
 
-{{region TrackBarModeRange}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=TrackBarModeRange}}
 	        Me.RadTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.Range
 	        Me.RadTrackBar1.Ranges(0).Start = 2
 	        Me.RadTrackBar1.Ranges(0).[End] = 5
@@ -316,7 +316,7 @@ To receive notification when the Value is changed in this mode, you should use t
 
 #### __[C#]__
 
-{{region Ranges_CollectionChangedEvent}}
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=Ranges_CollectionChangedEvent}}
 	        void Ranges_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
 	        {
 	            if (e.Action == Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged) 
@@ -338,7 +338,7 @@ To receive notification when the Value is changed in this mode, you should use t
 
 #### __[VB.NET]__
 
-{{region Ranges_CollectionChangedEvent}}
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=Ranges_CollectionChangedEvent}}
 	    Private Sub Ranges_CollectionChanged(sender As Object, e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
 	        If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
 	            For Each item As Object In e.NewItems

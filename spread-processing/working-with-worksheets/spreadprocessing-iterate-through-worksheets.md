@@ -22,7 +22,7 @@ __Example 1__ illustrates how to retrieve worksheets that have already been adde
 
 #### __[C#] Example 1: Retrieve worksheet__
 
-{{region radspreadprocessing-working-with-worksheets-iterate-through-worksheets_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingIterateThroughWorksheets.cs region=radspreadprocessing-working-with-worksheets-iterate-through-worksheets_0}}
 	            Workbook workbook = new Workbook();
 	
 	            WorksheetCollection worksheets = workbook.Worksheets;
@@ -37,7 +37,7 @@ __Example 1__ illustrates how to retrieve worksheets that have already been adde
 
 #### __[VB.NET] Example 1: Retrieve worksheet__
 
-{{region radspreadprocessing-working-with-worksheets-iterate-through-worksheets_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingIterateThroughWorksheets.vb region=radspreadprocessing-working-with-worksheets-iterate-through-worksheets_0}}
 	        Dim workbook As New Workbook()
 	
 	        Dim worksheets As WorksheetCollection = workbook.Worksheets
@@ -78,7 +78,7 @@ __Example 2__ creates a new workbook with three worksheets. The code further ite
 
 #### __[C#] Example 2: Iterate worksheets__
 
-{{region radspreadprocessing-working-with-worksheets-iterate-through-worksheets_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingIterateThroughWorksheets.cs region=radspreadprocessing-working-with-worksheets-iterate-through-worksheets_1}}
 	            Workbook workbook = new Workbook();
 	
 	            workbook.Worksheets.Add();
@@ -102,7 +102,7 @@ __Example 2__ creates a new workbook with three worksheets. The code further ite
 
 #### __[VB.NET] Example 2: Iterate worksheets__
 
-{{region radspreadprocessing-working-with-worksheets-iterate-through-worksheets_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingIterateThroughWorksheets.vb region=radspreadprocessing-working-with-worksheets-iterate-through-worksheets_1}}
 	        Dim workbook As New Workbook()
 	
 	        For i As Integer = 0 To 9

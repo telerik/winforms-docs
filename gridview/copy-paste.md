@@ -42,7 +42,7 @@ __RadGridView__ introduces __Copying__ event which occurs when the grid has prep
 
 #### __[C#]__
 
-{{region Copying}}
+{{source=..\SamplesCS\GridView\CopyPasteBehavior\CopyPasteForm.cs region=Copying}}
 	        
 	        private void radGridView1_Copying(object sender, GridViewClipboardEventArgs e)
 	        {
@@ -58,7 +58,7 @@ __RadGridView__ introduces __Copying__ event which occurs when the grid has prep
 
 #### __[VB.NET]__
 
-{{region Copying}}
+{{source=..\SamplesVB\GridView\CopyPasteBehavior\CopyPasteForm.vb region=Copying}}
 	
 	    Private Sub radGridView1_Copying(sender As Object, e As GridViewClipboardEventArgs)
 	        If e.Format = DataFormats.Html Then
@@ -107,7 +107,7 @@ The following example demonstrates how to capitalize the copied string before in
 
 #### __[C#]__
 
-{{region Pasting}}
+{{source=..\SamplesCS\GridView\CopyPasteBehavior\CopyPasteForm.cs region=Pasting}}
 	        
 	        private void radGridView1_Pasting(object sender, GridViewClipboardEventArgs e)
 	        {
@@ -127,7 +127,7 @@ The following example demonstrates how to capitalize the copied string before in
 
 #### __[VB.NET]__
 
-{{region Pasting}}
+{{source=..\SamplesVB\GridView\CopyPasteBehavior\CopyPasteForm.vb region=Pasting}}
 	
 	    Private Sub radGridView1_Pasting(sender As Object, e As GridViewClipboardEventArgs)
 	        If Clipboard.ContainsData(DataFormats.Text) Then

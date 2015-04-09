@@ -51,7 +51,7 @@ Here is an example of how to use the __CaretPosition__ property to get the curre
 
 #### __[C#] __
 
-{{region CaretPosition}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxPositioning.cs region=CaretPosition}}
 	            string currentSpanText = this.radRichTextBox1.Document.CaretPosition.GetCurrentSpanBox().Text;
 	{{endregion}}
 
@@ -59,7 +59,7 @@ Here is an example of how to use the __CaretPosition__ property to get the curre
 
 #### __[VB.NET] __
 
-{{region CaretPosition}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxPositioning.vb region=CaretPosition}}
 	        Dim currentSpanText As String = Me.RadRichTextBox1.Document.CaretPosition.GetCurrentSpanBox().Text
 	{{endregion}}
 
@@ -74,7 +74,7 @@ An alternative of using the __CaretPosition__ property is to create an instance 
 
 #### __[C#] __
 
-{{region DocumentPosition}}
+{{source=..\SamplesCS\RichTextBox\Features\RichTextBoxPositioning.cs region=DocumentPosition}}
 	            DocumentPosition position = new DocumentPosition(this.radRichTextBox1.Document);
 	            string currentSpanText1 = position.GetCurrentSpanBox().Text;
 	{{endregion}}
@@ -83,7 +83,7 @@ An alternative of using the __CaretPosition__ property is to create an instance 
 
 #### __[VB.NET] __
 
-{{region DocumentPosition}}
+{{source=..\SamplesVB\RichTextBox\Features\RichTextBoxPositioning.vb region=DocumentPosition}}
 	        Dim position As DocumentPosition = New DocumentPosition(Me.RadRichTextBox1.Document)
 	        Dim currentSpanText1 As String = position.GetCurrentSpanBox().Text
 	{{endregion}}

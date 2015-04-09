@@ -32,7 +32,7 @@ The __CellSelection__ class exposes an __Insert()__ method that takes one argume
 
 #### __[C#] Example 1: Insert cells__
 
-{{region radspreadprocessing-working-with-cells-insert-remove-cells_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingInsertAndRemoveCells.cs region=radspreadprocessing-working-with-cells-insert-remove-cells_0}}
 	
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
@@ -51,7 +51,7 @@ The __CellSelection__ class exposes an __Insert()__ method that takes one argume
 
 #### __[VB] Example 1: Insert cells__
 
-{{region radspreadprocessing-working-with-cells-insert-remove-cells_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingInsertAndRemoveCells.vb region=radspreadprocessing-working-with-cells-insert-remove-cells_0}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -98,7 +98,7 @@ The __CellSelection__ class exposes a __Remove()__ method that takes one argumen
 
 #### __[C#] Example 2: Remove cells__
 
-{{region radspreadprocessing-working-with-cells-insert-remove-cells_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingInsertAndRemoveCells.cs region=radspreadprocessing-working-with-cells-insert-remove-cells_1}}
 	
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
@@ -117,7 +117,7 @@ The __CellSelection__ class exposes a __Remove()__ method that takes one argumen
 
 #### __[VB] Example 2: Remove cells__
 
-{{region radspreadprocessing-working-with-cells-insert-remove-cells_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingInsertAndRemoveCells.vb region=radspreadprocessing-working-with-cells-insert-remove-cells_1}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()

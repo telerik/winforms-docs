@@ -54,7 +54,7 @@ The following example demonstrates how to hide all RadGridView rows that contain
 
 #### __[C#]__
 
-{{region usingCustomFiltering}}
+{{source=..\SamplesCS\GridView\Filtering\CustomFiltering.cs region=usingCustomFiltering}}
 	            this.radGridView1.EnableCustomFiltering = true;
 	            this.radGridView1.CustomFiltering += new GridViewCustomFilteringEventHandler(radGridView1_CustomFiltering);
 	
@@ -66,7 +66,7 @@ The following example demonstrates how to hide all RadGridView rows that contain
 
 #### __[VB.NET]__
 
-{{region usingCustomFiltering}}
+{{source=..\SamplesVB\GridView\Filtering\CustomFiltering.vb region=usingCustomFiltering}}
 	        Me.RadGridView1.EnableCustomFiltering = True
 	        Dim descriptor As New FilterDescriptor("UnitsPrice", FilterOperator.IsGreaterThan, 0)
 	        Me.RadGridView1.FilterDescriptors.Add(descriptor)
@@ -76,7 +76,7 @@ The following example demonstrates how to hide all RadGridView rows that contain
 
 #### __[C#]__
 
-{{region usingCustomFiltering1}}
+{{source=..\SamplesCS\GridView\Filtering\CustomFiltering.cs region=usingCustomFiltering1}}
 	        private void radGridView1_CustomFiltering(object sender, GridViewCustomFilteringEventArgs e)
 	        {
 	            e.Visible = (decimal)e.Row.Cells["UnitPrice"].Value > 30;
@@ -87,7 +87,7 @@ The following example demonstrates how to hide all RadGridView rows that contain
 
 #### __[VB.NET]__
 
-{{region usingCustomFiltering1}}
+{{source=..\SamplesVB\GridView\Filtering\CustomFiltering.vb region=usingCustomFiltering1}}
 	    Private Sub RadGridView1_CustomFiltering(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCustomFilteringEventArgs) Handles RadGridView1.CustomFiltering
 	        e.Visible = CDec(e.Row.Cells("UnitPrice").Value) > 30
 	    End Sub
@@ -102,7 +102,7 @@ The following example demonstrates how you can use the __Handled__ property of t
 
 #### __[C#]__
 
-{{region usingCustomFilteringPlusHandled}}
+{{source=..\SamplesCS\GridView\Filtering\CustomFiltering1.cs region=usingCustomFilteringPlusHandled}}
 	            this.radGridView1.EnableCustomFiltering = true;
 	            this.radGridView1.CustomFiltering += new GridViewCustomFilteringEventHandler(radGridView1_CustomFiltering);
 	
@@ -115,7 +115,7 @@ The following example demonstrates how you can use the __Handled__ property of t
 
 #### __[VB.NET]__
 
-{{region usingCustomFilteringPlusHandled}}
+{{source=..\SamplesVB\GridView\Filtering\CustomFiltering1.vb region=usingCustomFilteringPlusHandled}}
 	        Me.RadGridView1.EnableCustomFiltering = True
 	
 	        Dim descriptor As New FilterDescriptor("UnitsInStock", FilterOperator.IsGreaterThan, 0)
@@ -127,7 +127,7 @@ The following example demonstrates how you can use the __Handled__ property of t
 
 #### __[C#]__
 
-{{region usingCustomFilteringPlusHandled1}}
+{{source=..\SamplesCS\GridView\Filtering\CustomFiltering1.cs region=usingCustomFilteringPlusHandled1}}
 	        private void radGridView1_CustomFiltering(object sender, GridViewCustomFilteringEventArgs e)
 	        {
 	            string productName = e.Row.Cells["ProductName"].Value.ToString();
@@ -141,7 +141,7 @@ The following example demonstrates how you can use the __Handled__ property of t
 
 #### __[VB.NET]__
 
-{{region usingCustomFilteringPlusHandled1}}
+{{source=..\SamplesVB\GridView\Filtering\CustomFiltering1.vb region=usingCustomFilteringPlusHandled1}}
 	    Private Sub RadGridView1_CustomFiltering(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCustomFilteringEventArgs) Handles RadGridView1.CustomFiltering
 	        Dim productName As String = e.Row.Cells("ProductName").Value.ToString()
 	        e.Handled = Not productName.StartsWith("Ch")
@@ -164,7 +164,7 @@ The following example demonstrates how to use a custom filtering mechanism in Ra
 
 #### __[C#]__
 
-{{region usingFilterPredicate}}
+{{source=..\SamplesCS\GridView\Filtering\CustomFiltering.cs region=usingFilterPredicate}}
 	            this.radGridView1.MasterTemplate.FilterPredicate = new Predicate<GridViewRowInfo>(PerformFiltering);
 	{{endregion}}
 
@@ -172,7 +172,7 @@ The following example demonstrates how to use a custom filtering mechanism in Ra
 
 #### __[VB.NET]__
 
-{{region usingFilterPredicate}}
+{{source=..\SamplesVB\GridView\Filtering\CustomFiltering.vb region=usingFilterPredicate}}
 	        Me.RadGridView1.MasterTemplate.FilterPredicate = New Predicate(Of GridViewRowInfo)(AddressOf PerformFiltering)
 	{{endregion}}
 
@@ -180,7 +180,7 @@ The following example demonstrates how to use a custom filtering mechanism in Ra
 
 #### __[C#]__
 
-{{region usingFilterPredicate1}}
+{{source=..\SamplesCS\GridView\Filtering\CustomFiltering.cs region=usingFilterPredicate1}}
 	        private bool PerformFiltering(GridViewRowInfo row)
 	        {
 	            bool valid = (decimal)row.Cells["UnitPrice"].Value > 30;
@@ -192,7 +192,7 @@ The following example demonstrates how to use a custom filtering mechanism in Ra
 
 #### __[VB.NET]__
 
-{{region usingFilterPredicate1}}
+{{source=..\SamplesVB\GridView\Filtering\CustomFiltering.vb region=usingFilterPredicate1}}
 	    Private Function PerformFiltering(ByVal row As GridViewRowInfo) As Boolean
 	        Dim valid As Boolean = CDec(row.Cells("UnitPrice").Value) > 30
 	        Return valid

@@ -18,7 +18,7 @@ Use the code below to open the drop-down menu using shortcuts(*Please refer to t
 
 #### __[C#] Adding sub items__
 
-{{region keyShortcuts}}
+{{source=..\SamplesCS\Buttons\DropDownButton.cs region=keyShortcuts}}
 	
 	        public DropDownButton()
 	        {
@@ -39,7 +39,7 @@ Use the code below to open the drop-down menu using shortcuts(*Please refer to t
 
 #### __[VB.NET] Adding sub items__
 
-{{region keyShortcuts}}
+{{source=..\SamplesVB\Buttons\DropDownButton.vb region=keyShortcuts}}
 	
 	    Public Sub New()
 	        InitializeComponent()

@@ -21,7 +21,7 @@ __RadButton__is a replacement of the standard WinForms Button. __RadButton__supp
 
 #### __[C#] Adding a RadButton at runtime__
 
-{{region creatingbutton}}
+{{source=..\SamplesCS\Buttons\Button.cs region=creatingbutton}}
 	
 	            RadButton myNewRadButton = new RadButton();
 	            myNewRadButton.Text = "My New RadButton";
@@ -35,7 +35,7 @@ __RadButton__is a replacement of the standard WinForms Button. __RadButton__supp
 
 #### __[VB.NET] Adding a RadButton at runtime__
 
-{{region creatingbutton}}
+{{source=..\SamplesVB\Buttons\Button.vb region=creatingbutton}}
 	        Dim myNewRadButton As New RadButton()
 	        myNewRadButton.Text = "My New RadButton"
 	        myNewRadButton.Width = 150
@@ -52,7 +52,7 @@ Use the following code snippet to set the __TextRenderingHint__property of the _
 
 #### __[C#]__
 
-{{region textrenderinghint}}
+{{source=..\SamplesCS\Buttons\Button.cs region=textrenderinghint}}
 	
 	            ((TextPrimitive)myNewRadButton.ButtonElement.Children[1].Children[1]).TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
 	
@@ -62,7 +62,7 @@ Use the following code snippet to set the __TextRenderingHint__property of the _
 
 #### __[VB.NET]__
 
-{{region textrenderinghint}}
+{{source=..\SamplesVB\Buttons\Button.vb region=textrenderinghint}}
 	        DirectCast(myNewRadButton.ButtonElement.Children(1).Children(1), TextPrimitive).TextRenderingHint = Drawing.Text.TextRenderingHint.AntiAlias
 	{{endregion}}
 

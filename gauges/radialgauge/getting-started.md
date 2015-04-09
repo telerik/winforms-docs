@@ -26,7 +26,7 @@ You can create your own gauge's style programmatically from the scratch by addin
 
 #### __[C#]__
 
-{{region AddItemsProgrammatically}}
+{{source=..\SamplesCS\Gauges\RadialGauge\RadialGaugeGettingStarted.cs region=AddItemsProgrammatically}}
 	            
 	            RadialGaugeLabels labels = new RadialGaugeLabels();
 	            RadialGaugeTicks smallTicks = new RadialGaugeTicks();
@@ -60,7 +60,7 @@ You can create your own gauge's style programmatically from the scratch by addin
 
 #### __[VB.NET]__
 
-{{region AddItemsProgrammatically}}
+{{source=..\SamplesVB\Gauges\RadialGauge\RadialGaugeGettingStarted.vb region=AddItemsProgrammatically}}
 	
 	        Dim labels As New RadialGaugeLabels()
 	        Dim smallTicks As New RadialGaugeTicks()
@@ -277,7 +277,7 @@ Drag a __RadRadialGauge__ from the Toolbox and drop it onto the form. The gauge 
 
 #### __[C#]__
 
-{{region AdvancedExample}}
+{{source=..\SamplesCS\Gauges\RadialGauge\RadialGaugeGettingStarted.cs region=AdvancedExample}}
 	        
 	        Timer timer = new Timer(); 
 	        float step = 0f; 
@@ -387,7 +387,7 @@ Drag a __RadRadialGauge__ from the Toolbox and drop it onto the form. The gauge 
 
 #### __[VB.NET]__
 
-{{region AdvancedExample}}
+{{source=..\SamplesVB\Gauges\RadialGauge\RadialGaugeGettingStarted.vb region=AdvancedExample}}
 	
 	    Private timer As New Timer()
 	    Private [step] As Single = 0.0F
@@ -569,7 +569,7 @@ The following code snippet is purposed to demonstrate how to create a simple clo
 
 #### __[C#]__
 
-{{region Clock}}
+{{source=..\SamplesCS\Gauges\RadialGauge\RadialGaugeGettingStarted.cs region=Clock}}
 	        
 	        RadialGaugeNeedle hoursNeedle ;
 	        RadialGaugeNeedle minutesNeedle;
@@ -646,7 +646,7 @@ The following code snippet is purposed to demonstrate how to create a simple clo
 
 #### __[VB.NET]__
 
-{{region Clock}}
+{{source=..\SamplesVB\Gauges\RadialGauge\RadialGaugeGettingStarted.vb region=Clock}}
 	
 	    Private hoursNeedle As RadialGaugeNeedle
 	    Private minutesNeedle As RadialGaugeNeedle

@@ -47,7 +47,7 @@ Before running export to CSV, you have to initialize the ExportToCSV class. The 
 
 #### __[C#]  ExportToCSV initialization__
 
-{{region exportToCsvInitialization}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToCSV1.cs region=exportToCsvInitialization}}
 	            ExportToCSV exporter = new ExportToCSV(this.radGridView1);
 	{{endregion}}
 
@@ -55,7 +55,7 @@ Before running export to CSV, you have to initialize the ExportToCSV class. The 
 
 #### __[VB.NET]  ExportToCSV initialization__
 
-{{region exportToCsvInitialization}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=exportToCsvInitialization}}
 	        Dim exporter As ExportToCSV = New ExportToCSV(Me.RadGridView1)
 	{{endregion}}
 
@@ -69,7 +69,7 @@ This property allows for changing the default (*.csv) file extension of the expo
 
 #### __[C#]  Setting the file extension__
 
-{{region settingTheFileExtention}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToCSV1.cs region=settingTheFileExtention}}
 	            exporter.FileExtension = "";
 	{{endregion}}
 
@@ -77,7 +77,7 @@ This property allows for changing the default (*.csv) file extension of the expo
 
 #### __[VB.NET]  Setting the file extension__
 
-{{region settingTheFileExtention}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=settingTheFileExtention}}
 	        exporter.FileExtension = ""
 	{{endregion}}
 
@@ -109,7 +109,7 @@ You can use __SummariesExportOption__ property to specify how to export summary 
 
 #### __[C#]  Setting summaries to export__
 
-{{region settingSummariesToExport}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToCSV1.cs region=settingSummariesToExport}}
 	            exporter.SummariesExportOption = SummariesOption.DoNotExport;
 	{{endregion}}
 
@@ -117,7 +117,7 @@ You can use __SummariesExportOption__ property to specify how to export summary 
 
 #### __[VB.NET]  Setting summaries to export__
 
-{{region settingSummariesToExport}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=settingSummariesToExport}}
 	        exporter.SummariesExportOption = SummariesOption.DoNotExport
 	{{endregion}}
 
@@ -131,7 +131,7 @@ Exporting data to CSV file is done through the RunExport method of ExportToCSV o
 
 #### __[C#]  Export to CVS format__
 
-{{region exportToCsvFormat}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToCSV1.cs region=exportToCsvFormat}}
 	            string fileName = "C:\\ExportedData.csv";
 	            exporter.RunExport(fileName);
 	{{endregion}}
@@ -140,7 +140,7 @@ Exporting data to CSV file is done through the RunExport method of ExportToCSV o
 
 #### __[VB.NET]  Export to CVS format__
 
-{{region exportToCsvFormat}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=exportToCsvFormat}}
 	        Dim fileName As String = "C:\\ExportedData.csv"
 	        exporter.RunExport(fileName)
 	{{endregion}}
@@ -156,7 +156,7 @@ It gives access to a single cell’s element that allows you to replace the actu
 
 #### __[C#]  Handling the CSVCellFormatting event__
 
-{{region handlingTheCsvCellFormattingEvent}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToCSV1.cs region=handlingTheCsvCellFormattingEvent}}
 	        void exporter_CSVCellFormatting(object sender, Telerik.WinControls.UI.Export.CSV.CSVCellFormattingEventArgs e)
 	        {
 	            if (e.GridColumnIndex == 1 && e.GridRowInfoType == typeof(GridViewDataRowInfo))
@@ -170,7 +170,7 @@ It gives access to a single cell’s element that allows you to replace the actu
 
 #### __[VB.NET]  Handling the CSVCellFormatting event__
 
-{{region handlingTheCsvCellFormattingEvent}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=handlingTheCsvCellFormattingEvent}}
 	    Private Sub exporter_CSVCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.CSV.CSVCellFormattingEventArgs)
 	        If (e.GridColumnIndex = 1 AndAlso e.GridRowInfoType.Equals(GetType(GridViewDataRowInfo))) Then
 	            e.CSVCellElement.Value = "test value"
@@ -186,7 +186,7 @@ It can be used together with the public method AddCustomCSVRow. It allows for ad
 
 #### __[C#] Handling the CSVTableCreated event__
 
-{{region handlingTheCsvTableCreatedevent}}
+{{source=..\SamplesCS\GridView\ExportingData\ExportToCSV1.cs region=handlingTheCsvTableCreatedevent}}
 	        void exporter_CSVTableCreated(object sender, Telerik.WinControls.UI.Export.CSV.CSVTableCreatedEventArgs e)
 	        {
 	            ((ExportToCSV)sender).AddCustomCSVRow(e.CSVTableElement, "MY TABLE CAPTION");
@@ -197,7 +197,7 @@ It can be used together with the public method AddCustomCSVRow. It allows for ad
 
 #### __[VB.NET]  Handling the CSVTableCreated event__
 
-{{region handlingTheCsvTableCreatedevent}}
+{{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=handlingTheCsvTableCreatedevent}}
 	    Private Sub exporter_CSVTableCreated(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.CSV.CSVTableCreatedEventArgs)
 	        DirectCast(sender, ExportToCSV).AddCustomCSVRow(e.CSVTableElement, "MY TABLE CAPTION")
 	    End Sub

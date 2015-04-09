@@ -23,7 +23,7 @@ You can use the __PageUp__, __PageDown__, __GoToPage__ methods to navigate throu
 
 #### __[C#] __
 
-{{region PageNavigation}}
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=PageNavigation}}
 	
 	        private void buttonPageUp_Click(object sender, EventArgs e)
 	        {
@@ -46,7 +46,7 @@ You can use the __PageUp__, __PageDown__, __GoToPage__ methods to navigate throu
 
 #### __[VB.NET] __
 
-{{region PageNavigation}}
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=PageNavigation}}
 	
 	    Private Sub buttonPageUp_Click(sender As Object, e As EventArgs) Handles buttonPageUp.Click
 	        Me.radPdfViewer1.PdfViewerElement.PageUp()
@@ -150,7 +150,7 @@ Additionally, you can control the precise scroll position by using the __Scroll_
 
 #### __[C#] __
 
-{{region Scrolling}}
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=Scrolling}}
 	
 	        private void buttonScroll_Click(object sender, EventArgs e)
 	        {
@@ -168,7 +168,7 @@ Additionally, you can control the precise scroll position by using the __Scroll_
 
 #### __[VB.NET] __
 
-{{region Scrolling}}
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=Scrolling}}
 	
 	    Private Sub buttonScroll_Click(sender As Object, e As EventArgs) Handles buttonScroll.Click
 	        Me.radPdfViewer1.PdfViewerElement.Scroll(30, 30)
@@ -259,7 +259,7 @@ The __SelectAll__, __DeselectAll__, __Select__ methods allow you to set the sele
 
 #### __[C#] __
 
-{{region Select}}
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=Select}}
 	
 	        private void buttonSelectAll_Click(object sender, EventArgs e)
 	        {
@@ -288,7 +288,7 @@ The __SelectAll__, __DeselectAll__, __Select__ methods allow you to set the sele
 
 #### __[VB.NET] __
 
-{{region Select}}
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=Select}}
 	
 	    Private Sub buttonSelectAll_Click(sender As Object, e As EventArgs) Handles buttonSelectAll.Click
 	        Me.radPdfViewer1.PdfViewerElement.SelectAll()
@@ -366,7 +366,7 @@ You can use the __GetSelectedText__, __GetSelectedTextAsync__ methods to get the
 
 #### __[C#] __
 
-{{region GetSelectedText}}
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=GetSelectedText}}
 	
 	        private void butonGetSelectedText_Click(object sender, EventArgs e)
 	        {
@@ -389,7 +389,7 @@ You can use the __GetSelectedText__, __GetSelectedTextAsync__ methods to get the
 
 #### __[VB.NET] __
 
-{{region GetSelectedText}}
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=GetSelectedText}}
 	
 	    Private Sub buttonGetSelectedText_Click(sender As Object, e As EventArgs) Handles buttonGetSelectedText.Click
 	        RadMessageBox.Show("The current selection: " & Me.radPdfViewer1.PdfViewerElement.GetSelectedText())
@@ -443,7 +443,7 @@ The __Find__, __FindPrevious__ are used to perform text search forwards or backw
 
 #### __[C#] __
 
-{{region Search}}
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=Search}}
 	
 	        private void buttonFindNext_Click(object sender, EventArgs e)
 	        {
@@ -473,7 +473,7 @@ The __Find__, __FindPrevious__ are used to perform text search forwards or backw
 
 #### __[VB.NET] __
 
-{{region Search}}
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=Search}}
 	
 	    Private Sub buttonFindNext_Click(sender As Object, e As EventArgs) Handles buttonFindNext.Click
 	        Dim res As Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult
@@ -511,7 +511,7 @@ RadPdfViewer has a default context menu - __PdfViewerContextMenu__ which provide
 
 #### __[C#] __
 
-{{region ChangeContextMenu}}
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ChangeContextMenu}}
 	
 	            this.radPdfViewer1.RadContextMenu = this.radContextMenu1;
 	
@@ -521,7 +521,7 @@ RadPdfViewer has a default context menu - __PdfViewerContextMenu__ which provide
 
 #### __[VB.NET] __
 
-{{region ChangeContextMenu}}
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ChangeContextMenu}}
 	
 	        Me.radPdfViewer1.RadContextMenu = Me.radContextMenu1
 	
@@ -540,7 +540,7 @@ You can also use the __ShowMenu__ method to show the context menu programmatical
 
 #### __[C#] __
 
-{{region ShowContextMenu}}
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ShowContextMenu}}
 	
 	        private void buttonShowMenu_Click(object sender, EventArgs e)
 	        {
@@ -553,7 +553,7 @@ You can also use the __ShowMenu__ method to show the context menu programmatical
 
 #### __[VB.NET] __
 
-{{region ShowContextMenu}}
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ShowContextMenu}}
 	
 	    Private Sub buttonShowMenu_Click(sender As Object, e As EventArgs) Handles buttonShowMenu.Click
 	        Me.radPdfViewer1.PdfViewerElement.ShowMenu(New Point(100, 100))
@@ -573,7 +573,7 @@ Annotations are hyperlinks inside a document which when clicked depending on the
 
 #### __[C#] __
 
-{{region AnnotationClicked}}
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=AnnotationClicked}}
 	
 	        void radPdfViewer1_AnnotationClicked(object sender, Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.EventArgs.AnnotationEventArgs e)
 	        {
@@ -593,7 +593,7 @@ Annotations are hyperlinks inside a document which when clicked depending on the
 
 #### __[VB.NET] __
 
-{{region AnnotationClicked}}
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=AnnotationClicked}}
 	
 	    Private Sub radPdfViewer1_AnnotationClicked(sender As Object, e As Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.EventArgs.AnnotationEventArgs) Handles radPdfViewer1.AnnotationClicked
 	        If DirectCast(e.Annotation, Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link).Action IsNot Nothing Then
@@ -710,7 +710,7 @@ You can control whether the thumbnail element is visible by setting the __Enable
 
 #### __[C#] __
 
-{{region EnableThumbnails}}
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=EnableThumbnails}}
 	            this.radPdfViewer1.EnableThumbnails = true;
 	{{endregion}}
 
@@ -718,7 +718,7 @@ You can control whether the thumbnail element is visible by setting the __Enable
 
 #### __[VB.NET] __
 
-{{region EnableThumbnails}}
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=EnableThumbnails}}
 	        Me.radPdfViewer1.EnableThumbnails = True
 	{{endregion}}
 

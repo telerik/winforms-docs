@@ -20,7 +20,7 @@ To change the default English localization provider you should use the __Current
 
 #### __[C#] __
 
-{{region xml}}
+{{source=..\SamplesCS\RichTextEditor\Localization.cs region=xml}}
 	
 	            RichTextBoxLocalizationProvider.CurrentProvider = RichTextBoxLocalizationProvider.FromFile(@"C:\RichTextBoxStrings.xml");
 	
@@ -30,7 +30,7 @@ To change the default English localization provider you should use the __Current
 
 #### __[VB.NET] __
 
-{{region xml}}
+{{source=..\SamplesVB\RichTextEditor\Localization.vb region=xml}}
 	
 	        RichTextBoxLocalizationProvider.CurrentProvider = RichTextBoxLocalizationProvider.FromFile("C:\RichTextBoxStrings.xml")
 	
@@ -83,7 +83,7 @@ Another approach is co create a custom localization provider class which inherit
 
 #### __[C#] __
 
-{{region custom}}
+{{source=..\SamplesCS\RichTextEditor\Localization.cs region=custom}}
 	        
 	    public class MyRichTextBoxLocalizationProvider : RichTextBoxLocalizationProvider
 	    {
@@ -119,7 +119,7 @@ Another approach is co create a custom localization provider class which inherit
 
 #### __[VB.NET] __
 
-{{region custom}}
+{{source=..\SamplesVB\RichTextEditor\Localization.vb region=custom}}
 	
 	Public Class MyRichTextBoxLocalizationProvider
 	    Inherits RichTextBoxLocalizationProvider
@@ -156,7 +156,7 @@ The following code snipped shows how you can use the new class:
 
 #### __[C#] __
 
-{{region change}}
+{{source=..\SamplesCS\RichTextEditor\Localization.cs region=change}}
 	            
 	            RichTextBoxLocalizationProvider.CurrentProvider = new MyRichTextBoxLocalizationProvider();
 	    
@@ -166,7 +166,7 @@ The following code snipped shows how you can use the new class:
 
 #### __[VB.NET] __
 
-{{region change}}
+{{source=..\SamplesVB\RichTextEditor\Localization.vb region=change}}
 	
 	        RichTextBoxLocalizationProvider.CurrentProvider = New MyRichTextBoxLocalizationProvider()
 	

@@ -19,7 +19,7 @@ The embedded __RadCalendar__ has HeaderNavigationMode property, which determines
 
 #### __[C#] Setting the value of RadDateTimePicker__
 
-{{region HeaderNavigationMode}}
+{{source=..\SamplesCS\Editors\DateTimePicker2.cs region=HeaderNavigationMode}}
 	
 	            this.radDateTimePicker1.DateTimePickerElement.Calendar.HeaderNavigationMode = HeaderNavigationMode.Zoom;
 	
@@ -29,7 +29,7 @@ The embedded __RadCalendar__ has HeaderNavigationMode property, which determines
 
 #### __[VB.NET] Setting the value of RadDateTimePicker__
 
-{{region HeaderNavigationMode}}
+{{source=..\SamplesVB\Editors\DateTimePicker2.vb region=HeaderNavigationMode}}
 	
 	        Me.radDateTimePicker1.DateTimePickerElement.Calendar.HeaderNavigationMode = HeaderNavigationMode.Zoom
 	

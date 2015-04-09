@@ -95,7 +95,7 @@ Having done that a __RadButtonElement__ is added to the *button group* that you
 
 #### __[C#] Make text bold or italic__
 
-{{region BoldAndItalicText}}
+{{source=..\SamplesCS\RibbonBar\GettingStarted\RibbonGettingStarted.cs region=BoldAndItalicText}}
 	        private void TextBold_Click(object sender, EventArgs e)
 	        {
 	            if (richTextBox1.SelectionFont.Bold)     
@@ -125,7 +125,7 @@ Having done that a __RadButtonElement__ is added to the *button group* that you
 
 #### __[VB.NET] Make text bold or italic__
 
-{{region BoldAndItalicText}}
+{{source=..\SamplesVB\RibbonBar\GettingStarted\RibbonGettingStarted.vb region=BoldAndItalicText}}
 	    Private Sub TextBold_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBold.Click
 	        If RichTextBox1.SelectionFont.Bold Then
 	            RichTextBox1.SelectionFont = New Font(RichTextBox1.SelectionFont, RichTextBox1.SelectionFont.Style And Not FontStyle.Bold)

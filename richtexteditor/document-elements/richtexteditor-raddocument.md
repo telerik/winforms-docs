@@ -99,7 +99,7 @@ For example, you can build a RadDocument from scratch and add Sections to it in 
 
 #### __[C#] __
 
-{{region section}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\RadDocumentCode.cs region=section}}
 	            
 	            Section section = new Section();
 	            this.radRichTextEditor1.Document.Sections.Add(section);
@@ -110,7 +110,7 @@ For example, you can build a RadDocument from scratch and add Sections to it in 
 
 #### __[VB.NET] __
 
-{{region section}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\RadDocumentCode.vb region=section}}
 	
 	        Dim section As New Section()
 	        Me.radRichTextEditor1.Document.Sections.Add(section)
@@ -137,7 +137,7 @@ Splitting an already measured document into two sections at the current caret po
 
 #### __[C#] __
 
-{{region break}}
+{{source=..\SamplesCS\RichTextEditor\DocumentElements\RadDocumentCode.cs region=break}}
 	            
 	            this.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage);
 	    
@@ -147,7 +147,7 @@ Splitting an already measured document into two sections at the current caret po
 
 #### __[VB.NET] __
 
-{{region break}}
+{{source=..\SamplesVB\RichTextEditor\DocumentElements\RadDocumentCode.vb region=break}}
 	
 	        Me.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage)
 	

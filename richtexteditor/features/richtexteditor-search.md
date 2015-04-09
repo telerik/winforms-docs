@@ -24,7 +24,7 @@ The simplest scenario – finding a string in the content of the document can be
 
 #### __[C#] __
 
-{{region search}}
+{{source=..\SamplesCS\RichTextEditor\Features\Search.cs region=search}}
 	                
 	        private void SelectAllMatches(string toSearch)
 	        {
@@ -43,7 +43,7 @@ The simplest scenario – finding a string in the content of the document can be
 
 #### __[VB.NET] __
 
-{{region search}}
+{{source=..\SamplesVB\RichTextEditor\Features\Search.vb region=search}}
 	
 	    Private Sub SelectAllMatches(ByVal toSearch As String)
 	        Me.radRichTextEditor1.Document.Selection.Clear() ' this clears the selection before processing
@@ -95,7 +95,7 @@ You can use all kind of regular expressions, such as __"(asp|silverlight)\s*cont
 
 #### __[C#] __
 
-{{region regex}}
+{{source=..\SamplesCS\RichTextEditor\Features\Search.cs region=regex}}
 	            string toSearch = "";
 	
 	            toSearch = Regex.Escape(toSearch);
@@ -106,7 +106,7 @@ You can use all kind of regular expressions, such as __"(asp|silverlight)\s*cont
 
 #### __[VB.NET] __
 
-{{region regex}}
+{{source=..\SamplesVB\RichTextEditor\Features\Search.vb region=regex}}
 	        Dim toSearch As String = ""
 	
 	        toSearch = Regex.Escape(toSearch)
@@ -172,7 +172,7 @@ Selecting the results of the search is particularly useful, as most formatting c
 
 #### __[C#] __
 
-{{region style}}
+{{source=..\SamplesCS\RichTextEditor\Features\Search.cs region=style}}
 	            
 	            this.radRichTextEditor1.ChangeTextHighlightColor(Telerik.WinControls.RichTextEditor.UI.Colors.LightGray);  // will highlight all selected words in LightGray
 	            this.radRichTextEditor1.ChangeFontSize(Telerik.WinControls.RichTextBox.Model.Unit.PointToDip(32));   // will increase the font size of the words to 30 DIP
@@ -184,7 +184,7 @@ Selecting the results of the search is particularly useful, as most formatting c
 
 #### __[VB.NET] __
 
-{{region style}}
+{{source=..\SamplesVB\RichTextEditor\Features\Search.vb region=style}}
 	
 	        Me.radRichTextEditor1.ChangeTextHighlightColor(Telerik.WinControls.RichTextEditor.UI.Colors.LightGray) ' will highlight all selected words in LightGray
 	        Me.radRichTextEditor1.ChangeFontSize(Telerik.WinControls.RichTextBox.Model.Unit.PointToDip(32)) ' will increase the font size of the words to 30 DIP
@@ -242,7 +242,7 @@ Most of the time, you would like to remove the selection at the end of the opera
 
 #### __[C#] __
 
-{{region clear}}
+{{source=..\SamplesCS\RichTextEditor\Features\Search.cs region=clear}}
 	        
 	            this.radRichTextEditor1.Document.Selection.Clear();
 	            
@@ -252,7 +252,7 @@ Most of the time, you would like to remove the selection at the end of the opera
 
 #### __[VB.NET] __
 
-{{region clear}}
+{{source=..\SamplesVB\RichTextEditor\Features\Search.vb region=clear}}
 	
 	        Me.radRichTextEditor1.Document.Selection.Clear()
 	
@@ -301,7 +301,7 @@ On a side note, the find and select functionality can be extended in order to im
 
 #### __[C#] __
 
-{{region allmatches}}
+{{source=..\SamplesCS\RichTextEditor\Features\Search.cs region=allmatches}}
 	                
 	        private void ReplaceAllMatches(string toSearch, string toReplaceWith)
 	        {
@@ -329,7 +329,7 @@ On a side note, the find and select functionality can be extended in order to im
 
 #### __[VB.NET] __
 
-{{region allmatches}}
+{{source=..\SamplesVB\RichTextEditor\Features\Search.vb region=allmatches}}
 	
 	    Private Sub ReplaceAllMatches(ByVal toSearch As String, ByVal toReplaceWith As String)
 	        Me.radRichTextEditor1.Document.Selection.Clear() ' this clears the selection before processing

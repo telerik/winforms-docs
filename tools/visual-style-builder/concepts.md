@@ -42,7 +42,7 @@ These are new IElementSelector implementations, which, much like in the CSS styl
 
 #### __[C#] __
 
-{{region VisualStateSelector}}
+{{source=..\SamplesCS\Tools\VisualStyleBuilder\Overview\Concepts.cs region=VisualStateSelector}}
 	            VisualStateSelector stateSelector = new VisualStateSelector("RadButtonElement");
 	            stateSelector.ChildSelector = new TypeSelector(typeof(FillPrimitive));
 	{{endregion}}
@@ -51,7 +51,7 @@ These are new IElementSelector implementations, which, much like in the CSS styl
 
 #### __[VB.NET] __
 
-{{region VisualStateSelector}}
+{{source=..\SamplesVB\Tools\VisualStyleBuilder\Overview\Concepts.vb region=VisualStateSelector}}
 	        Dim stateSelector = New VisualStateSelector("RadButtonElement")
 	        stateSelector.ChildSelector = New TypeSelector(GetType(FillPrimitive))
 	{{endregion}}

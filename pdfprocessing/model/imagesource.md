@@ -25,7 +25,7 @@ __Example 1__ illustrates how you can create an ImageSource using a __FileStream
 
 #### __[C#] Example 1: Create ImageSource from Stream__
 
-{{region radpdfprocessing-model-imagesource_0}}
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelImageSource.cs region=radpdfprocessing-model-imagesource_0}}
 	            
 	            using (FileStream source = File.Open(filename, FileMode.Open))
 	            {
@@ -38,7 +38,7 @@ __Example 1__ illustrates how you can create an ImageSource using a __FileStream
 
 #### __[VB] Example 1: Create ImageSource from Stream__
 
-{{region radpdfprocessing-model-imagesource_0}}
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImageSource.vb region=radpdfprocessing-model-imagesource_0}}
 	        Using source As FileStream = File.Open(filename, FileMode.Open)
 	            Dim imageSource As New ImageSource(source)
 	        End Using
@@ -68,7 +68,7 @@ __RadPdfProcessing__ exposes an extension method allowing to convert every Bitma
 
 #### __[C#] Example 2: Create ImageSource with Extension Method__
 
-{{region radpdfprocessing-model-imagesource_1}}
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelImageSource.cs region=radpdfprocessing-model-imagesource_1}}
 	            BitmapImage bitmap = new BitmapImage();
 	            bitmap.BeginInit();
 	            bitmap.UriSource = new Uri(filename, UriKind.RelativeOrAbsolute);
@@ -81,7 +81,7 @@ __RadPdfProcessing__ exposes an extension method allowing to convert every Bitma
 
 #### __[VB] Example 2: Create ImageSource with Extension Method__
 
-{{region radpdfprocessing-model-imagesource_1}}
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImageSource.vb region=radpdfprocessing-model-imagesource_1}}
 	        Dim bitmap As New BitmapImage()
 	        bitmap.BeginInit()
 	        bitmap.UriSource = New Uri(filename, UriKind.RelativeOrAbsolute)

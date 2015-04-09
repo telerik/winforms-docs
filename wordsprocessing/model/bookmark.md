@@ -28,7 +28,7 @@ __Example 1__ shows how to create a __Bookmark__ and add its BookmarkRangeStart 
 
 #### __[C#] Example 1: Add Bookmark to Paragraph__
 
-{{region radwordsprocessing-model-bookmark_0}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBookmark.cs region=radwordsprocessing-model-bookmark_0}}
 	            Bookmark bookmark = new Bookmark(document, "MyBookmark");
 	            paragraph.Inlines.Add(bookmark.BookmarkRangeStart);
 	            paragraph.Inlines.AddRun("text");
@@ -39,7 +39,7 @@ __Example 1__ shows how to create a __Bookmark__ and add its BookmarkRangeStart 
 
 #### __[VB.NET] Example 1: Add Bookmark to Paragraph__
 
-{{region radwordsprocessing-model-bookmark_0}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBookmark.vb region=radwordsprocessing-model-bookmark_0}}
 	            Dim bookmark As New Bookmark(document, "MyBookmark")
 	            paragraph.Inlines.Add(bookmark.BookmarkRangeStart)
 	            paragraph.Inlines.AddRun("text")
@@ -69,7 +69,7 @@ Inserting a __Bookmark__ in the document can also be done with through the [RadF
 
 #### __[C#] Example 2: Insert Bookmark using RadFlowDocumentEditor__
 
-{{region radwordsprocessing-model-bookmark_1}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBookmark.cs region=radwordsprocessing-model-bookmark_1}}
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
 	            Bookmark bookmark = editor.InsertBookmark("MyBookmark");
 	{{endregion}}
@@ -78,7 +78,7 @@ Inserting a __Bookmark__ in the document can also be done with through the [RadF
 
 #### __[VB.NET] Example 2: Insert Bookmark using RadFlowDocumentEditor__
 
-{{region radwordsprocessing-model-bookmark_1}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBookmark.vb region=radwordsprocessing-model-bookmark_1}}
 	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	            Dim bookmark As Bookmark = editor.InsertBookmark("MyBookmark")
 	            '#End Region
@@ -104,7 +104,7 @@ __Example 3__ demonstrates how you can delete the bookmark created in __Example 
 
 #### __[C#] Example 3: Delete Bookmark using RadFlowDocumentEditor__
 
-{{region radwordsprocessing-model-bookmark_2}}
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBookmark.cs region=radwordsprocessing-model-bookmark_2}}
 	            editor.DeleteBookmark("MyBookmark");
 	{{endregion}}
 
@@ -112,7 +112,7 @@ __Example 3__ demonstrates how you can delete the bookmark created in __Example 
 
 #### __[VB.NET] Example 3: Delete Bookmark using RadFlowDocumentEditor__
 
-{{region radwordsprocessing-model-bookmark_2}}
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBookmark.vb region=radwordsprocessing-model-bookmark_2}}
 	            editor.DeleteBookmark("MyBookmark")
 	            '#End Region
 	        End Sub

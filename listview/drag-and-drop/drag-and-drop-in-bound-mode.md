@@ -24,7 +24,7 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 
 #### __[C#] __
 
-{{region CreateItem}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropInBoundMode.cs region=CreateItem}}
 	        
 	        public class Item
 	        {
@@ -66,7 +66,7 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 
 #### __[VB.NET] __
 
-{{region CreateItem}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropInBoundMode.vb region=CreateItem}}
 	
 	    Public Class Item
 	        Public Property UniqueId() As String
@@ -210,7 +210,7 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 
 #### __[C#] __
 
-{{region EnableDragDrop}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropInBoundMode.cs region=EnableDragDrop}}
 	            
 	            this.radListView1.AllowDragDrop = true;
 	            
@@ -220,7 +220,7 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 
 #### __[VB.NET] __
 
-{{region EnableDragDrop}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropInBoundMode.vb region=EnableDragDrop}}
 	
 	        Me.radListView1.AllowDragDrop = True
 	
@@ -296,7 +296,7 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 
 #### __[C#] __
 
-{{region DragStartOver}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropInBoundMode.cs region=DragStartOver}}
 	        
 	        Item sourceBoundItem;
 	        
@@ -324,7 +324,7 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 
 #### __[VB.NET] __
 
-{{region DragStartOver}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropInBoundMode.vb region=DragStartOver}}
 	
 	    Private sourceBoundItem As Item
 	
@@ -389,7 +389,7 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 
 #### __[C#] __
 
-{{region DragDrop}}
+{{source=..\SamplesCS\ListView\DragDrop\DragDropInBoundMode.cs region=DragDrop}}
 	        
 	        private void DragDropService_PreviewDragDrop(object sender, RadDropEventArgs e)
 	        {
@@ -439,7 +439,7 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 
 #### __[VB.NET] __
 
-{{region DragDrop}}
+{{source=..\SamplesVB\ListView\DragDrop\DragDropInBoundMode.vb region=DragDrop}}
 	
 	    Private Sub DragDropService_PreviewDragDrop(sender As Object, e As RadDropEventArgs)
 	        e.Handled = True

@@ -28,7 +28,7 @@ __Example 1__ constructs a worksheet that will be used as a starting point in th
 
 #### __[C#] Example 1: Construct worksheet__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_8}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.cs region=radspreadprocessing-features-merge-unmerge-cells_8}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            worksheet.Cells[0, 0].SetValue("A1");
@@ -41,7 +41,7 @@ __Example 1__ constructs a worksheet that will be used as a starting point in th
 
 #### __VB__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_8}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.vb region=radspreadprocessing-features-merge-unmerge-cells_8}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        worksheet.Cells(0, 0).SetValue("A1")
@@ -64,7 +64,7 @@ __Example 2__ illustrates how to perform a merge operation on the cell region *A
 
 #### __[C#] Example 2: Perform merge operation__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.cs region=radspreadprocessing-features-merge-unmerge-cells_0}}
 	
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
@@ -79,7 +79,7 @@ __Example 2__ illustrates how to perform a merge operation on the cell region *A
 
 #### __VB__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.vb region=radspreadprocessing-features-merge-unmerge-cells_0}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -204,7 +204,7 @@ __Example 3__ illustrates how to perform a merge operation on the cell region *A
 
 #### __[C#] Example 3: Perform merge across__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.cs region=radspreadprocessing-features-merge-unmerge-cells_1}}
 	
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
@@ -218,7 +218,7 @@ __Example 3__ illustrates how to perform a merge operation on the cell region *A
 
 #### __VB__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.vb region=radspreadprocessing-features-merge-unmerge-cells_1}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -330,7 +330,7 @@ __Example 4__ merges across the region *A1:B2* and then performs another merge o
 
 #### __[C#] Example 4: Intersect cell range with merged cell range __
 
-{{region radspreadprocessing-features-merge-unmerge-cells_2}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.cs region=radspreadprocessing-features-merge-unmerge-cells_2}}
 	
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
@@ -344,7 +344,7 @@ __Example 4__ merges across the region *A1:B2* and then performs another merge o
 
 #### __VB__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_2}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.vb region=radspreadprocessing-features-merge-unmerge-cells_2}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -451,7 +451,7 @@ __Example 5__ checks if cell A1 is in a merged region.
 
 #### __[C#] Example 5: Check if cell is in merged cell range__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_3}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.cs region=radspreadprocessing-features-merge-unmerge-cells_3}}
 	            CellIndex A1CellIndex = new CellIndex(0, 0);
 	            bool isA1merged = worksheet.Cells.GetIsMerged(A1CellIndex);
 	
@@ -461,7 +461,7 @@ __Example 5__ checks if cell A1 is in a merged region.
 
 #### __VB__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_3}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.vb region=radspreadprocessing-features-merge-unmerge-cells_3}}
 	
 	        Dim A1CellIndex As New CellIndex(0, 0)
 	        Dim isA1merged As Boolean = Worksheet.Cells.GetIsMerged(A1CellIndex)
@@ -541,7 +541,7 @@ __Example 6__ shows how to use TryGetContainingMergedRange() method.
 
 #### __[C#] Example 6: Try get merged cell range__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_4}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.cs region=radspreadprocessing-features-merge-unmerge-cells_4}}
 	            CellIndex A1CellIndex = new CellIndex(0, 0);
 	            CellRange mergedCellRange;
 	            bool canGetContainingMergedCellRange = worksheet.Cells.TryGetContainingMergedRange(A1CellIndex, out mergedCellRange);
@@ -552,7 +552,7 @@ __Example 6__ shows how to use TryGetContainingMergedRange() method.
 
 #### __VB__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_4}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.vb region=radspreadprocessing-features-merge-unmerge-cells_4}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -623,7 +623,7 @@ __Example 7__ shows how to use GetContainingMergedRanges() method.
 
 #### __[C#] Example 7: Get all containing merged ranges in a range__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_5}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.cs region=radspreadprocessing-features-merge-unmerge-cells_5}}
 	            CellIndex A1CellIndex = new CellIndex(0, 0);
 	            CellIndex N33CellIndex = new CellIndex(32, 13);
 	            CellRange A1N33CellRange = new CellRange(A1CellIndex, N33CellIndex);
@@ -635,7 +635,7 @@ __Example 7__ shows how to use GetContainingMergedRanges() method.
 
 #### __VB__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_5}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.vb region=radspreadprocessing-features-merge-unmerge-cells_5}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -694,7 +694,7 @@ __Example 8__ shows how to get all merged ranges in a worksheet.
 
 #### __[C#] Example 8: Get all merged ranges__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_6}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.cs region=radspreadprocessing-features-merge-unmerge-cells_6}}
 	
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
@@ -706,7 +706,7 @@ __Example 8__ shows how to get all merged ranges in a worksheet.
 
 #### __VB__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_6}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.vb region=radspreadprocessing-features-merge-unmerge-cells_6}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
@@ -754,7 +754,7 @@ __Example 9__ invokes the __Unmerge()__ method for the region *B2:D4* of the wor
 
 #### __[C#] Example 9: Unmerge cells__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_7}}
+{{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.cs region=radspreadprocessing-features-merge-unmerge-cells_7}}
 	            CellIndex B2CellIndex = new CellIndex(1, 1);
 	            CellIndex D4CellIndex = new CellIndex(3, 3);
 	            CellRange B2D4CellSelection = new CellRange(B2CellIndex, D4CellIndex);
@@ -766,7 +766,7 @@ __Example 9__ invokes the __Unmerge()__ method for the region *B2:D4* of the wor
 
 #### __VB__
 
-{{region radspreadprocessing-features-merge-unmerge-cells_7}}
+{{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.vb region=radspreadprocessing-features-merge-unmerge-cells_7}}
 	
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()

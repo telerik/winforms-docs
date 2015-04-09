@@ -36,7 +36,7 @@ The following example will demonstrate the basic functionalities of RadPropertyG
 
 #### __[C#] Setting the SelectedObject of RadPropertyGrid__
 
-{{region SelectedObject}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=SelectedObject}}
 	            radPropertyGrid1.SelectedObject = new PropertyGridElement();
 	{{endregion}}
 
@@ -44,7 +44,7 @@ The following example will demonstrate the basic functionalities of RadPropertyG
 
 #### __[VB.NET] Setting the SelectedObject of RadPropertyGrid__
 
-{{region SelectedObject}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=SelectedObject}}
 	        RadPropertyGrid1.SelectedObject = New PropertyGridElement()
 	{{endregion}}
 
@@ -68,7 +68,7 @@ Next, we will add a predefined toolbox on the top of the control. This toolbox c
 
 #### __[C#] Showing the tool box on the top of RadPropertyGrid__
 
-{{region ToolBarVisible}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=ToolBarVisible}}
 	            radPropertyGrid1.ToolbarVisible = true;
 	{{endregion}}
 
@@ -76,7 +76,7 @@ Next, we will add a predefined toolbox on the top of the control. This toolbox c
 
 #### __[VB.NET] Showing the tool box on the top of RadPropertyGrid__
 
-{{region ToolBarVisible}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=ToolBarVisible}}
 	        RadPropertyGrid1.ToolbarVisible = True
 	{{endregion}}
 
@@ -88,7 +88,7 @@ Additionally, since the toolbox consists of a __StackLayoutPanel__, is supports 
 
 #### __[C#] Add element to toolbox__
 
-{{region AddElementToToolbox1}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=AddElementToToolbox1}}
 	            RadButtonElement clearFiltering = new RadButtonElement();
 	            clearFiltering.Text = "Clear";
 	            clearFiltering.MinSize = new System.Drawing.Size(25, 22);
@@ -100,7 +100,7 @@ Additionally, since the toolbox consists of a __StackLayoutPanel__, is supports 
 
 #### __[C#] Clear the filter__
 
-{{region AddElementToToolbox2}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=AddElementToToolbox2}}
 	        void clearFiltering_Click(object sender, EventArgs e)
 	        {
 	            radPropertyGrid1.PropertyGridElement.ToolbarElement.SearchTextBoxElement.Text = "";
@@ -111,7 +111,7 @@ Additionally, since the toolbox consists of a __StackLayoutPanel__, is supports 
 
 #### __[VB.NET] Add element to toolbox__
 
-{{region AddElementToToolbox1}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=AddElementToToolbox1}}
 	        Dim clearFiltering = New RadButtonElement()
 	        clearFiltering.Text = "Clear"
 	        clearFiltering.MinSize = New System.Drawing.Size(25, 22)
@@ -123,7 +123,7 @@ Additionally, since the toolbox consists of a __StackLayoutPanel__, is supports 
 
 #### __[VB.NET] Clear the filter__
 
-{{region AddElementToToolbox2}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=AddElementToToolbox2}}
 	    Private Sub clearFiltering_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        RadPropertyGrid1.PropertyGridElement.ToolbarElement.SearchTextBoxElement.Text = ""
 	    End Sub
@@ -144,7 +144,7 @@ By default, opening the editor for editing is done by double clicking the editor
 
 #### __[C#] Selecting the begin edit mode__
 
-{{region BeginEditMode}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=BeginEditMode}}
 	            radPropertyGrid1.BeginEditMode = RadPropertyGridBeginEditModes.BeginEditOnClick;
 	{{endregion}}
 
@@ -152,7 +152,7 @@ By default, opening the editor for editing is done by double clicking the editor
 
 #### __[VB.NET] Selecting the begin edit mode__
 
-{{region BeginEditMode}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=BeginEditMode}}
 	        RadPropertyGrid1.BeginEditMode = RadPropertyGridBeginEditModes.BeginEditOnClick
 	{{endregion}}
 
@@ -174,7 +174,7 @@ To set the default sorting or grouping of the properties, just set the __Propert
 
 #### __[C#] Group by categories__
 
-{{region PropertySort}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=PropertySort}}
 	            radPropertyGrid1.PropertySort = PropertySort.Categorized;
 	{{endregion}}
 
@@ -182,7 +182,7 @@ To set the default sorting or grouping of the properties, just set the __Propert
 
 #### __[VB.NET] Group by categories__
 
-{{region PropertySort}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=PropertySort}}
 	        RadPropertyGrid1.PropertySort = PropertySort.Categorized
 	{{endregion}}
 
@@ -194,7 +194,7 @@ You can control the sort order, by setting the __SortOrder__ property of the con
 
 #### __[C#] Setting the sort order__
 
-{{region SortOrder}}
+{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=SortOrder}}
 	            radPropertyGrid1.SortOrder = SortOrder.Ascending;
 	{{endregion}}
 
@@ -202,7 +202,7 @@ You can control the sort order, by setting the __SortOrder__ property of the con
 
 #### __[VB.NET] Setting the sort order__
 
-{{region SortOrder}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=SortOrder}}
 	        RadPropertyGrid1.SortOrder = SortOrder.Ascending
 	{{endregion}}
 

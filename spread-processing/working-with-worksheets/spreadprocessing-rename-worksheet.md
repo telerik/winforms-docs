@@ -50,7 +50,7 @@ __Example 1__ creates a new workbook, adds a single worksheet to it and renames 
 
 #### __[C#] Example 1: Create and rename a worksheet__
 
-{{region radspreadprocessing-working-with-worksheets-rename-worksheet_0}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingRenameAWorksheet.cs region=radspreadprocessing-working-with-worksheets-rename-worksheet_0}}
 	            Workbook workbook = new Workbook();
 	            Worksheet worksheet = workbook.Worksheets.Add();
 	            worksheet.Name = "Sam's Worksheet";
@@ -60,7 +60,7 @@ __Example 1__ creates a new workbook, adds a single worksheet to it and renames 
 
 #### __[VB.NET] Example 1: Create and rename a worksheet__
 
-{{region radspreadprocessing-working-with-worksheets-rename-worksheet_0}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingRenameAWorksheet.vb region=radspreadprocessing-working-with-worksheets-rename-worksheet_0}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        worksheet.Name = "Sam's Worksheet"
@@ -95,7 +95,7 @@ __Example 2__ creates a new workbook and adds two worksheets to it. The snippet 
 
 #### __[C#] Example 2: Rename a worksheet__
 
-{{region radspreadprocessing-working-with-worksheets-rename-worksheet_1}}
+{{source=..\SamplesCS\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingRenameAWorksheet.cs region=radspreadprocessing-working-with-worksheets-rename-worksheet_1}}
 	            Workbook workbook = new Workbook();
 	            workbook.Worksheets.Add();
 	            workbook.Worksheets.Add();
@@ -119,7 +119,7 @@ __Example 2__ creates a new workbook and adds two worksheets to it. The snippet 
 
 #### __[VB.NET] Example 2: Rename a worksheet__
 
-{{region radspreadprocessing-working-with-worksheets-rename-worksheet_1}}
+{{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingRenameAWorksheet.vb region=radspreadprocessing-working-with-worksheets-rename-worksheet_1}}
 	        Dim workbook As New Workbook()
 	        workbook.Worksheets.Add()
 	        workbook.Worksheets.Add()

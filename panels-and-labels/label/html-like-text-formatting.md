@@ -87,7 +87,7 @@ The following code snippet will produce the result shown in the screen-shot belo
 
 #### __[C#] Set HTML-like text formatting to RadLabel text__
 
-{{region setHtmlText}}
+{{source=..\SamplesCS\PanelsAndLabels\Label\LabelHtmlLikeTextFormatting.cs region=setHtmlText}}
 	            this.radLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text";
 	{{endregion}}
 
@@ -95,7 +95,7 @@ The following code snippet will produce the result shown in the screen-shot belo
 
 #### __[VB.NET] Set HTML-like text formatting to RadLabel text__
 
-{{region setHtmlText}}
+{{source=..\SamplesVB\PanelsAndLabels\Label\LabelHtmlLikeTextFormatting.vb region=setHtmlText}}
 	        Me.RadLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text"
 	{{endregion}}
 

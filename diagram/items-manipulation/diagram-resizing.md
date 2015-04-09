@@ -13,16 +13,16 @@ position: 1
 
 
 __RadDiagram__ gives you the ability to resize shapes by dragging their __Resizing Thumbs__.
-        You can also use the Shapes' __Width__ and __Height__ for this purpose.
+        You can also use the shapes' __Width__ and __Height__ for this purpose.
 
 ## Enable/Disable resizing
 
 By default, the __RadDiagram__ is enabled for resizing manipulation. 
-        In order to disable this functionality, you can set __IsResizingEnabled__ to *False*.![diagram-items-manipulation-resizing 001](images/diagram-items-manipulation-resizing001.png)
+        In order to disable this functionality, you can set the __IsResizingEnabled__ property to *false*.![diagram-items-manipulation-resizing 001](images/diagram-items-manipulation-resizing001.png)
 
 #### __[C#] __
 
-{{region EnableResizing}}
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=EnableResizing}}
 	
 	            this.radDiagram1.IsResizingEnabled = false;
 	            
@@ -32,7 +32,7 @@ By default, the __RadDiagram__ is enabled for resizing manipulation.
 
 #### __[VB.NET] __
 
-{{region EnableResizing}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EnableResizing}}
 	        Me.RadDiagram1.IsResizingEnabled = False
 	        '#End Region
 	
@@ -230,6 +230,21 @@ By default, the __RadDiagram__ is enabled for resizing manipulation.
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 
@@ -241,7 +256,7 @@ You can resize shapes by using their __Width__ and __Height__ properties:
 
 #### __[C#] __
 
-{{region ResizeShape}}
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=ResizeShape}}
 	            
 	            RadDiagramShape resizedShape = new RadDiagramShape()
 	            {
@@ -260,7 +275,7 @@ You can resize shapes by using their __Width__ and __Height__ properties:
 
 #### __[VB.NET] __
 
-{{region ResizeShape}}
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=ResizeShape}}
 	
 	        Dim resizedShape As New RadDiagramShape() With { _
 	            .ShapeText = "", _
@@ -454,6 +469,21 @@ You can resize shapes by using their __Width__ and __Height__ properties:
 	
 	        '#End Region
 	    End Sub
+	
+	    '#region CommandsExample
+	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+	    End Sub
+	
+	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+	    End Sub
+	
+	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+	    End Sub
+	    '#End Region
+	
 	End Class
 
 
