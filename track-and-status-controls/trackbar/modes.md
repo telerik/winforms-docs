@@ -44,65 +44,7 @@ In this mode RadTrackBar looks like RadTrackBar in SingleThumb mode, but it can 
 	        Me.RadTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.StartFromTheBeginning
 	        Me.RadTrackBar1.Ranges.Add(New TrackBarRange(0, 5, "MyRange1"))
 	        Me.RadTrackBar1.Ranges.Add(New TrackBarRange(0, 15, "MyRange2"))
-	        '#End Region
-	
-	        '#Region "TrackBarModeRange"
-	        Me.RadTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.Range
-	        Me.RadTrackBar1.Ranges(0).Start = 2
-	        Me.RadTrackBar1.Ranges(0).[End] = 5
-	        Me.RadTrackBar1.Ranges.Add(New TrackBarRange(10, 15))
-	        '#End Region
-	
-	        '#Region "SnapModeOff"
-	        Me.RadTrackBar1.SnapMode = TrackBarSnapModes.SnapToTicks
-	        '#End Region
-	
-	        '#Region "ThumbSize"
-	        Me.RadTrackBar1.ThumbSize = New Size(16, 18)
-	        '#End Region
-	
-	        Me.RadTrackBar1.LabelStyle = TrackBarLabelStyle.Both
-	
-	        '#Region "accessValuesStartFromTheBeginningMode"
-	        Dim fitstRangeValue As Single = Me.RadTrackBar1.Ranges(0).[End]
-	        '#End Region
-	
-	
-	        Dim secondRangeValue As Single = Me.RadTrackBar1.Ranges(1).[End]
-	    End Sub
-	#Region "Ranges_CollectionChangedEvent"
-	    Private Sub Ranges_CollectionChanged(sender As Object, e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
-	        If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
-	            For Each item As Object In e.NewItems
-	                Dim range As TrackBarRange = TryCast(item, TrackBarRange)
-	                If range IsNot Nothing Then
-	                    Console.WriteLine("Range {0} value {1}", range.Text, range.[End])
-	                End If
-	
-	            Next
-	        End If
-	    End Sub
-	#End Region
-	
-	#Region "LabelFormattingEvent"
-	    Private Sub radTrackBar1_LabelFormatting(sender As Object, e As LabelFormattingEventArgs)
-	        e.LabelElement.ForeColor = Color.Red
-	    End Sub
-	#End Region
-	
-	#Region "TickFormattingEvent"
-	    Private Sub radTrackBar1_TickFormatting(sender As Object, e As TickFormattingEventArgs)
-	        e.TickElement.Line1.BackColor = Color.Red
-	    End Sub
-	#End Region
-	
-	    Private Sub radTrackBar1_Scroll(sender As Object, e As ScrollEventArgs)
-	        Console.WriteLine("Scroll : {0}", e.NewValue)
-	    End Sub
-	
-	End Class
-	
-	
+	{{endregion}}
 
 ![track-and-status-controls-trackbar-modes 002](images/track-and-status-controls-trackbar-modes002.png)
 
@@ -125,44 +67,7 @@ In order to access the values of the thumbs in this mode you should go through t
 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=accessValuesStartFromTheBeginningMode}}
 	        Dim fitstRangeValue As Single = Me.RadTrackBar1.Ranges(0).[End]
-	        '#End Region
-	
-	
-	        Dim secondRangeValue As Single = Me.RadTrackBar1.Ranges(1).[End]
-	    End Sub
-	#Region "Ranges_CollectionChangedEvent"
-	    Private Sub Ranges_CollectionChanged(sender As Object, e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
-	        If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
-	            For Each item As Object In e.NewItems
-	                Dim range As TrackBarRange = TryCast(item, TrackBarRange)
-	                If range IsNot Nothing Then
-	                    Console.WriteLine("Range {0} value {1}", range.Text, range.[End])
-	                End If
-	
-	            Next
-	        End If
-	    End Sub
-	#End Region
-	
-	#Region "LabelFormattingEvent"
-	    Private Sub radTrackBar1_LabelFormatting(sender As Object, e As LabelFormattingEventArgs)
-	        e.LabelElement.ForeColor = Color.Red
-	    End Sub
-	#End Region
-	
-	#Region "TickFormattingEvent"
-	    Private Sub radTrackBar1_TickFormatting(sender As Object, e As TickFormattingEventArgs)
-	        e.TickElement.Line1.BackColor = Color.Red
-	    End Sub
-	#End Region
-	
-	    Private Sub radTrackBar1_Scroll(sender As Object, e As ScrollEventArgs)
-	        Console.WriteLine("Scroll : {0}", e.NewValue)
-	    End Sub
-	
-	End Class
-	
-	
+	{{endregion}}
 
 
 
@@ -206,27 +111,7 @@ To receive notification when the Value is changed in this mode, you should use t
 	            Next
 	        End If
 	    End Sub
-	#End Region
-	
-	#Region "LabelFormattingEvent"
-	    Private Sub radTrackBar1_LabelFormatting(sender As Object, e As LabelFormattingEventArgs)
-	        e.LabelElement.ForeColor = Color.Red
-	    End Sub
-	#End Region
-	
-	#Region "TickFormattingEvent"
-	    Private Sub radTrackBar1_TickFormatting(sender As Object, e As TickFormattingEventArgs)
-	        e.TickElement.Line1.BackColor = Color.Red
-	    End Sub
-	#End Region
-	
-	    Private Sub radTrackBar1_Scroll(sender As Object, e As ScrollEventArgs)
-	        Console.WriteLine("Scroll : {0}", e.NewValue)
-	    End Sub
-	
-	End Class
-	
-	
+	{{endregion}}
 
 
 
@@ -255,58 +140,7 @@ This mode allows you to define one or more __Ranges__ with __Start__ and __End__
 	        Me.RadTrackBar1.Ranges(0).Start = 2
 	        Me.RadTrackBar1.Ranges(0).[End] = 5
 	        Me.RadTrackBar1.Ranges.Add(New TrackBarRange(10, 15))
-	        '#End Region
-	
-	        '#Region "SnapModeOff"
-	        Me.RadTrackBar1.SnapMode = TrackBarSnapModes.SnapToTicks
-	        '#End Region
-	
-	        '#Region "ThumbSize"
-	        Me.RadTrackBar1.ThumbSize = New Size(16, 18)
-	        '#End Region
-	
-	        Me.RadTrackBar1.LabelStyle = TrackBarLabelStyle.Both
-	
-	        '#Region "accessValuesStartFromTheBeginningMode"
-	        Dim fitstRangeValue As Single = Me.RadTrackBar1.Ranges(0).[End]
-	        '#End Region
-	
-	
-	        Dim secondRangeValue As Single = Me.RadTrackBar1.Ranges(1).[End]
-	    End Sub
-	#Region "Ranges_CollectionChangedEvent"
-	    Private Sub Ranges_CollectionChanged(sender As Object, e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
-	        If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
-	            For Each item As Object In e.NewItems
-	                Dim range As TrackBarRange = TryCast(item, TrackBarRange)
-	                If range IsNot Nothing Then
-	                    Console.WriteLine("Range {0} value {1}", range.Text, range.[End])
-	                End If
-	
-	            Next
-	        End If
-	    End Sub
-	#End Region
-	
-	#Region "LabelFormattingEvent"
-	    Private Sub radTrackBar1_LabelFormatting(sender As Object, e As LabelFormattingEventArgs)
-	        e.LabelElement.ForeColor = Color.Red
-	    End Sub
-	#End Region
-	
-	#Region "TickFormattingEvent"
-	    Private Sub radTrackBar1_TickFormatting(sender As Object, e As TickFormattingEventArgs)
-	        e.TickElement.Line1.BackColor = Color.Red
-	    End Sub
-	#End Region
-	
-	    Private Sub radTrackBar1_Scroll(sender As Object, e As ScrollEventArgs)
-	        Console.WriteLine("Scroll : {0}", e.NewValue)
-	    End Sub
-	
-	End Class
-	
-	
+	{{endregion}}
 
 ![track-and-status-controls-trackbar-modes 003](images/track-and-status-controls-trackbar-modes003.png)
 
@@ -350,27 +184,7 @@ To receive notification when the Value is changed in this mode, you should use t
 	            Next
 	        End If
 	    End Sub
-	#End Region
-	
-	#Region "LabelFormattingEvent"
-	    Private Sub radTrackBar1_LabelFormatting(sender As Object, e As LabelFormattingEventArgs)
-	        e.LabelElement.ForeColor = Color.Red
-	    End Sub
-	#End Region
-	
-	#Region "TickFormattingEvent"
-	    Private Sub radTrackBar1_TickFormatting(sender As Object, e As TickFormattingEventArgs)
-	        e.TickElement.Line1.BackColor = Color.Red
-	    End Sub
-	#End Region
-	
-	    Private Sub radTrackBar1_Scroll(sender As Object, e As ScrollEventArgs)
-	        Console.WriteLine("Scroll : {0}", e.NewValue)
-	    End Sub
-	
-	End Class
-	
-	
+	{{endregion}}
 
 
 

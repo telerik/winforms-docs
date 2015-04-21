@@ -52,33 +52,7 @@ You can enable or disable the history for the __RadDocument__ via the __Enabled_
 	
 	        Me.radRichTextEditor1.Document.History.IsEnabled = False
 	
-	        '#End Region
-	
-	        '#Region "clear"
-	
-	        Me.radRichTextEditor1.Document.History.Clear()
-	
-	        '#End Region
-	
-	        '#Region "depth"
-	
-	        Me.radRichTextEditor1.Document.History.Depth = 500
-	
-	        '#End Region
-	    End Sub
-	
-	#Region "undo"
-	
-	    Private Sub UndoAction()
-	        Me.radRichTextEditor1.Undo()
-	    End Sub
-	
-	    Private Sub RedoAction()
-	        Me.radRichTextEditor1.Redo()
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -103,27 +77,7 @@ To clear the history you just have to call the __Clear()__ method of the __Docum
 	
 	        Me.radRichTextEditor1.Document.History.Clear()
 	
-	        '#End Region
-	
-	        '#Region "depth"
-	
-	        Me.radRichTextEditor1.Document.History.Depth = 500
-	
-	        '#End Region
-	    End Sub
-	
-	#Region "undo"
-	
-	    Private Sub UndoAction()
-	        Me.radRichTextEditor1.Undo()
-	    End Sub
-	
-	    Private Sub RedoAction()
-	        Me.radRichTextEditor1.Redo()
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -163,8 +117,7 @@ To undo and redo some actions, you can call the __Undo()__ and __Redo()__ method
 	        Me.radRichTextEditor1.Redo()
 	    End Sub
 	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -190,21 +143,7 @@ To change the history capacity you have to set the desired value of the __Depth_
 	
 	        Me.radRichTextEditor1.Document.History.Depth = 500
 	
-	        '#End Region
-	    End Sub
-	
-	#Region "undo"
-	
-	    Private Sub UndoAction()
-	        Me.radRichTextEditor1.Undo()
-	    End Sub
-	
-	    Private Sub RedoAction()
-	        Me.radRichTextEditor1.Redo()
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 

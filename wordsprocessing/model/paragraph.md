@@ -49,43 +49,7 @@ The following code snippet creates and inserts a Paragraph to a Section.
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_0}}
 	            Dim paragraph As New Paragraph(document)
 	            section.Blocks.Add(paragraph)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertParagraph(document As RadFlowDocument, section As Section)
-	            '#Region "radwordsprocessing-model-paragraph_1"
-	            Dim paragraph As New Paragraph(document)
-	            section.Blocks.Insert(0, paragraph)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateParagraphWithMethod(section As Section)
-	            '#Region "radwordsprocessing-model-paragraph_2"
-	            Dim paragraph As Paragraph = section.Blocks.AddParagraph()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateParagraphWithRadFlowDocumentEditor()
-	            '#Region "radwordsprocessing-model-paragraph_3"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	            Dim paragraph As Paragraph = editor.InsertParagraph()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub AddInlinesToParagraph(paragraph As Paragraph)
-	            '#Region "radwordsprocessing-model-paragraph_4"
-	            Dim run As Run = paragraph.Inlines.AddRun()
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-paragraph_5"
-	            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-paragraph_6"
-	            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -111,36 +75,7 @@ You can add a paragraph at a specific index in the __Blocks__ collection of a __
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_1}}
 	            Dim paragraph As New Paragraph(document)
 	            section.Blocks.Insert(0, paragraph)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateParagraphWithMethod(section As Section)
-	            '#Region "radwordsprocessing-model-paragraph_2"
-	            Dim paragraph As Paragraph = section.Blocks.AddParagraph()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateParagraphWithRadFlowDocumentEditor()
-	            '#Region "radwordsprocessing-model-paragraph_3"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	            Dim paragraph As Paragraph = editor.InsertParagraph()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub AddInlinesToParagraph(paragraph As Paragraph)
-	            '#Region "radwordsprocessing-model-paragraph_4"
-	            Dim run As Run = paragraph.Inlines.AddRun()
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-paragraph_5"
-	            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-paragraph_6"
-	            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -160,30 +95,7 @@ You can also use the __AddParagraph()__ method of the __Blocks__ collection of a
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_2}}
 	            Dim paragraph As Paragraph = section.Blocks.AddParagraph()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateParagraphWithRadFlowDocumentEditor()
-	            '#Region "radwordsprocessing-model-paragraph_3"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	            Dim paragraph As Paragraph = editor.InsertParagraph()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub AddInlinesToParagraph(paragraph As Paragraph)
-	            '#Region "radwordsprocessing-model-paragraph_4"
-	            Dim run As Run = paragraph.Inlines.AddRun()
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-paragraph_5"
-	            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-paragraph_6"
-	            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -204,23 +116,7 @@ Inserting a new Paragraph in the document can also be achieved with the [RadFlow
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_3}}
 	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	            Dim paragraph As Paragraph = editor.InsertParagraph()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub AddInlinesToParagraph(paragraph As Paragraph)
-	            '#Region "radwordsprocessing-model-paragraph_4"
-	            Dim run As Run = paragraph.Inlines.AddRun()
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-paragraph_5"
-	            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-paragraph_6"
-	            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -330,17 +226,7 @@ The following code snippet adds a run to an existing paragraph:
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_4}}
 	            Dim run As Run = paragraph.Inlines.AddRun()
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-paragraph_5"
-	            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-paragraph_6"
-	            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -364,13 +250,7 @@ The following code snippet adds an inline image to an existing paragraph:
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_5}}
 	            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-paragraph_6"
-	            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -394,9 +274,7 @@ The following code snippet adds a floating image to an existing paragraph:
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_6}}
 	            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 

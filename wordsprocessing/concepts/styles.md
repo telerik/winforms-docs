@@ -135,16 +135,7 @@ A style should be added to __RadFlowDocument__'s style repository in order to be
 	            tableStyle.TableProperties.Alignment.LocalValue = Alignment.Center
 	            tableStyle.TableCellProperties.VerticalAlignment.LocalValue = VerticalAlignment.Center
 	            document.StyleRepository.Add(tableStyle)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub GetHeading1(document As RadFlowDocument)
-	            '#Region "radwordsprocessing-concepts-styles_1"
-	            Dim heading1StyleId As String = BuiltInStyleNames.GetHeadingStyleIdByIndex(1)
-	            Dim heading1Style As Style = document.StyleRepository.AddBuiltInStyle(heading1StyleId)
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -194,9 +185,7 @@ Built-in styles are commonly used styles which are predefined for convenience. T
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyles.vb region=radwordsprocessing-concepts-styles_1}}
 	            Dim heading1StyleId As String = BuiltInStyleNames.GetHeadingStyleIdByIndex(1)
 	            Dim heading1Style As Style = document.StyleRepository.AddBuiltInStyle(heading1StyleId)
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 

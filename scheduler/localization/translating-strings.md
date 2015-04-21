@@ -600,7 +600,7 @@ Below is a sample implementation of a custom localization provider: 
 	    End Function
 	
 	End Class
-	'#End Region
+	{{endregion}}
 
 
 
@@ -618,13 +618,6 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 {{source=..\SamplesVB\Scheduler\Localization\AssignProviders.vb region=assignSchedulerProvider}}
 	        RadSchedulerLocalizationProvider.CurrentProvider = New CustomSchedulerLocalizationProvider()
-	        '#End Region
-	
-	        '#Region "assignNavigatorProvider"
-	        SchedulerNavigatorLocalizationProvider.CurrentProvider = New CustomSchedulerNavigatorLocalizationProvider()
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 

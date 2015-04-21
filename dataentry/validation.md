@@ -148,25 +148,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 	            Female
 	            Male
 	        End Enum
-	#End Region
-	
-	        Public Sub New()
-	            InitializeComponent()
-	
-	            '#Region "bind1"
-	            Me.radDataEntry1.DataSource = New Employee() With { _
-	              .FirstName = "Sarah", _
-	              .LastName = "Blake", _
-	              .Occupation = "Supplied Manager", _
-	              .StartingDate = New DateTime(2005, 4, 12), _
-	              .IsMarried = True, _
-	              .Salary = 3500, _
-	              .Gender = Gender.Female _
-	             }
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -198,10 +180,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 	              .Salary = 3500, _
 	              .Gender = Gender.Female _
 	             }
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-validation 001](images/dataentry-validation001.png)
 
@@ -220,126 +199,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=ShowValidationPanel2}}
 	            Me.radDataEntry1.ShowValidationPanel = True
-	            '#End Region
-	
-	            Me.radDataEntry1.PanelContainer.Size = New System.Drawing.Size(354, 300)
-	            Me.radDataEntry1.Size = New System.Drawing.Size(356, 302)
-	
-	            AddHandler Me.radDataEntry1.ItemValidated, AddressOf radDataEntry1_ItemValidated
-	        End Sub
-	#Region "ItemValidated"
-	
-	        Private Sub radDataEntry1_ItemValidated(sender As Object, e As ItemValidatedEventArgs)
-	            Dim employee As Employee = TryCast(Me.radDataEntry1.CurrentObject, Employee)
-	
-	            If e.Label.Text = "FirstName" Then
-	                If employee.FirstName.Length < 2 OrElse employee.FirstName.Length > 15 Then
-	                    e.ErrorProvider.SetError(TryCast(sender, Control), "First Name should be between 2 and 15 chars long.")
-	
-	                    If Not Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.ContainsKey("FirstName") Then
-	                        Dim label As New RadLabel()
-	                        label.Name = "FirstName"
-	                        label.Text = "<html><size=10><b><color= Red>FirstName : </b><color= Black>First Name should be between 2 and 15 chars long."
-	                        label.Dock = DockStyle.Top
-	                        label.AutoSize = False
-	                        label.BackColor = Color.Transparent
-	                        Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
-	                    End If
-	                Else
-	                    e.ErrorProvider.Clear()
-	                    Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.RemoveByKey("FirstName")
-	                End If
-	            ElseIf e.Label.Text = "LastName" Then
-	                If employee.LastName.Length < 2 OrElse employee.LastName.Length > 15 Then
-	                    e.ErrorProvider.SetError(TryCast(sender, Control), "Last Name should be between 2 and 15 chars long.")
-	
-	                    If Not Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.ContainsKey("LastName") Then
-	                        Dim label As New RadLabel()
-	                        label.Name = "LastName"
-	                        label.Text = "<html><size=10><b><color= Red>LastName : </b><color= Black>Last Name should be between 2 and 15 chars long."
-	                        label.Dock = DockStyle.Top
-	                        label.AutoSize = False
-	                        label.BackColor = Color.Transparent
-	                        Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
-	                    End If
-	                Else
-	                    e.ErrorProvider.Clear()
-	                    Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.RemoveByKey("LastName")
-	                End If
-	            ElseIf e.Label.Text = "Salary" Then
-	
-	                If employee.Salary < 1500 OrElse employee.Salary > 1700 Then
-	                    e.ErrorProvider.SetError(TryCast(sender, Control), "Salary should be in range 1500 - 1700.")
-	
-	                    If Not Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.ContainsKey("Salary") Then
-	                        Dim label As New RadLabel()
-	                        label.Name = "Salary"
-	
-	                        label.Text = "<html><size=10><b><color= Red>Salary : </b><color= Black>Salary should be in range 1500 - 1700."
-	                        label.Dock = DockStyle.Top
-	                        label.AutoSize = False
-	                        label.BackColor = Color.Transparent
-	                        Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
-	                    End If
-	                Else
-	                    e.ErrorProvider.Clear()
-	                    Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.RemoveByKey("Salary")
-	                End If
-	            End If
-	        End Sub
-	
-	#End Region
-	
-	        Private Sub SetEditorInitializing()
-	            AddHandler Me.radDataEntry1.EditorInitializing, AddressOf radDataEntry1_EditorInitializing
-	            AddHandler Me.radDataEntry1.BindingCreated, AddressOf radDataEntry1_BindingCreated
-	        End Sub
-	
-	#Region "EditorInitializing"
-	        Private Sub radDataEntry1_EditorInitializing(sender As Object, e As Telerik.WinControls.UI.EditorInitializingEventArgs)
-	            If e.[Property].Name = "Salary" Then
-	                Dim radMaskedEditBox As New RadMaskedEditBox()
-	                radMaskedEditBox.MaskType = MaskType.Numeric
-	                radMaskedEditBox.MaskedEditBoxElement.StretchVertically = True
-	
-	                e.Editor = radMaskedEditBox
-	            End If
-	        End Sub
-	#End Region
-	
-	#Region "BindingCreated"
-	        Private Sub radDataEntry1_BindingCreated(sender As Object, e As BindingCreatedEventArgs)
-	            If e.DataMember = "Salary" Then
-	                AddHandler e.Binding.Parse, AddressOf Binding_Parse
-	            End If
-	        End Sub
-	
-	        Private Sub Binding_Parse(sender As Object, e As ConvertEventArgs)
-	            Dim salary As Integer = Integer.Parse(e.Value.ToString(), NumberStyles.Currency)
-	            e.Value = salary
-	        End Sub
-	
-	#End Region
-	
-	        Private Sub SetItemInitialized()
-	            AddHandler Me.radDataEntry1.ItemInitialized, AddressOf radDataEntry1_ItemInitialized
-	        End Sub
-	#Region "ItemInitialized"
-	        Private Sub radDataEntry1_ItemInitialized(sender As Object, e As Telerik.WinControls.UI.ItemInitializedEventArgs)
-	            If e.Panel.Controls(1).Text = "FirstName" Then
-	                e.Panel.Size = New Size(150, 25)
-	                e.Panel.Controls(1).Text = "Name"
-	            ElseIf e.Panel.Controls(1).Text = "LastName" Then
-	                e.Panel.Size = New Size(100, 25)
-	                e.Panel.Controls(1).Visible = False
-	                e.Panel.Location = New Point(160, radDataEntry1.ItemSpace)
-	            Else
-	                e.Panel.Location = New Point(e.Panel.Location.X, e.Panel.Location.Y - 25)
-	            End If
-	        End Sub
-	#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -494,58 +354,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 	            End If
 	        End Sub
 	
-	#End Region
-	
-	        Private Sub SetEditorInitializing()
-	            AddHandler Me.radDataEntry1.EditorInitializing, AddressOf radDataEntry1_EditorInitializing
-	            AddHandler Me.radDataEntry1.BindingCreated, AddressOf radDataEntry1_BindingCreated
-	        End Sub
-	
-	#Region "EditorInitializing"
-	        Private Sub radDataEntry1_EditorInitializing(sender As Object, e As Telerik.WinControls.UI.EditorInitializingEventArgs)
-	            If e.[Property].Name = "Salary" Then
-	                Dim radMaskedEditBox As New RadMaskedEditBox()
-	                radMaskedEditBox.MaskType = MaskType.Numeric
-	                radMaskedEditBox.MaskedEditBoxElement.StretchVertically = True
-	
-	                e.Editor = radMaskedEditBox
-	            End If
-	        End Sub
-	#End Region
-	
-	#Region "BindingCreated"
-	        Private Sub radDataEntry1_BindingCreated(sender As Object, e As BindingCreatedEventArgs)
-	            If e.DataMember = "Salary" Then
-	                AddHandler e.Binding.Parse, AddressOf Binding_Parse
-	            End If
-	        End Sub
-	
-	        Private Sub Binding_Parse(sender As Object, e As ConvertEventArgs)
-	            Dim salary As Integer = Integer.Parse(e.Value.ToString(), NumberStyles.Currency)
-	            e.Value = salary
-	        End Sub
-	
-	#End Region
-	
-	        Private Sub SetItemInitialized()
-	            AddHandler Me.radDataEntry1.ItemInitialized, AddressOf radDataEntry1_ItemInitialized
-	        End Sub
-	#Region "ItemInitialized"
-	        Private Sub radDataEntry1_ItemInitialized(sender As Object, e As Telerik.WinControls.UI.ItemInitializedEventArgs)
-	            If e.Panel.Controls(1).Text = "FirstName" Then
-	                e.Panel.Size = New Size(150, 25)
-	                e.Panel.Controls(1).Text = "Name"
-	            ElseIf e.Panel.Controls(1).Text = "LastName" Then
-	                e.Panel.Size = New Size(100, 25)
-	                e.Panel.Controls(1).Visible = False
-	                e.Panel.Location = New Point(160, radDataEntry1.ItemSpace)
-	            Else
-	                e.Panel.Location = New Point(e.Panel.Location.X, e.Panel.Location.Y - 25)
-	            End If
-	        End Sub
-	#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-validation 002](images/dataentry-validation002.png)
 

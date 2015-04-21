@@ -58,9 +58,6 @@ Before using the following code snippets, please make sure that you have added t
 	        Dim theme As New Office2007SilverTheme()
 	        ThemeResolutionService.ApplicationThemeName = "Office2007Silver"
 	    End Sub
-	#End Region
-	
-	
-	End Class
+	{{endregion}}
 
 

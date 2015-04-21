@@ -62,22 +62,7 @@ To add a scale break you show use the __ScaleBreaks__ collection of the axis.
 	        scaleBreakItem1.To = 4900
 	
 	        verticalAxis.ScaleBreaks.Add(scaleBreakItem1)
-	        '#End Region
-	    End Sub
-	    Public Sub settings()
-	        '#Region "Settings"
-	        Dim verticalAxis As LinearAxis = radChartView1.Axes.Get(Of LinearAxis)(1)
-	
-	        verticalAxis.ScaleBreakStyle = ScaleBreakStyle.Waved
-	        verticalAxis.ScaleBreakBackColor = Color.Silver
-	        verticalAxis.ScaleBreakBorderColor = Color.Red
-	        verticalAxis.ScaleBreakSize = 10
-	
-	        '#End Region
-	    End Sub
-	
-	End Class
-	
+	{{endregion}}
 
 
 
@@ -131,10 +116,6 @@ The following example shows how you can set the scale breaks settings:
 	        verticalAxis.ScaleBreakBorderColor = Color.Red
 	        verticalAxis.ScaleBreakSize = 10
 	
-	        '#End Region
-	    End Sub
-	
-	End Class
-	
+	{{endregion}}
 
 ![chartview-axes-scale-breaks 002](images/chartview-axes-scale-breaks002.png)

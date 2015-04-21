@@ -53,34 +53,11 @@ __Example 1__ shows how you can create a __PdfImportSettings__ object and assign
 #### __[VB.NET] Example 1: Import Settings__
 
 {{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_0}}
-	    Private Sub UserPasswordNeeded_EventHandler(sender As Object, e As PasswordNeededEventArgs)
-	        e.Password = "D0cum3ntP4ssw0rd"
-	    End Sub
-	    '	 #End Region
-	
-	    Private Sub Export()
-	        '	 #Region "radpdfprocessing-formats-and-conversion-pdf-settings_1"
 	        Dim provider As PdfFormatProvider = New PdfFormatProvider()
-	        Dim settings As PdfExportSettings = New PdfExportSettings()
-	        settings.IsEncrypted = True
-	        settings.UserPassword = "D0cum3ntP4ssw0rd"
-	        settings.ImageQuality = ImageQuality.High
-	        settings.ComplianceLevel = PdfComplianceLevel.PdfA2B
-	
-	        provider.ExportSettings = settings
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub ComplianceLevel()
-	        '	 #Region "radpdfprocessing-complianceLevel"
-	        Dim provider As PdfFormatProvider = New PdfFormatProvider()
-	        Dim settings As PdfExportSettings = New PdfExportSettings()
-	        settings.ComplianceLevel = PdfComplianceLevel.PdfA2B
-	
-	        provider.ExportSettings = settings
-	        '	 #End Region
-	    End Sub
-	End Class
+	        Dim settings As PdfImportSettings = New PdfImportSettings()
+	        AddHandler settings.UserPasswordNeeded, AddressOf UserPasswordNeeded_EventHandler
+	        provider.ImportSettings = settings
+	{{endregion}}
 
 
 
@@ -90,31 +67,7 @@ __Example 1__ shows how you can create a __PdfImportSettings__ object and assign
 	    Private Sub UserPasswordNeeded_EventHandler(sender As Object, e As PasswordNeededEventArgs)
 	        e.Password = "D0cum3ntP4ssw0rd"
 	    End Sub
-	    '	 #End Region
-	
-	    Private Sub Export()
-	        '	 #Region "radpdfprocessing-formats-and-conversion-pdf-settings_1"
-	        Dim provider As PdfFormatProvider = New PdfFormatProvider()
-	        Dim settings As PdfExportSettings = New PdfExportSettings()
-	        settings.IsEncrypted = True
-	        settings.UserPassword = "D0cum3ntP4ssw0rd"
-	        settings.ImageQuality = ImageQuality.High
-	        settings.ComplianceLevel = PdfComplianceLevel.PdfA2B
-	
-	        provider.ExportSettings = settings
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub ComplianceLevel()
-	        '	 #Region "radpdfprocessing-complianceLevel"
-	        Dim provider As PdfFormatProvider = New PdfFormatProvider()
-	        Dim settings As PdfExportSettings = New PdfExportSettings()
-	        settings.ComplianceLevel = PdfComplianceLevel.PdfA2B
-	
-	        provider.ExportSettings = settings
-	        '	 #End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -192,19 +145,7 @@ __Example 2__ shows ow you can create a __PdfExportSettings__ object and assign 
 	        settings.ComplianceLevel = PdfComplianceLevel.PdfA2B
 	
 	        provider.ExportSettings = settings
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub ComplianceLevel()
-	        '	 #Region "radpdfprocessing-complianceLevel"
-	        Dim provider As PdfFormatProvider = New PdfFormatProvider()
-	        Dim settings As PdfExportSettings = New PdfExportSettings()
-	        settings.ComplianceLevel = PdfComplianceLevel.PdfA2B
-	
-	        provider.ExportSettings = settings
-	        '	 #End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -45,100 +45,7 @@ __FixedContentEditor__ is always associated to a single __IContentRootElement__ 
 
 {{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_0}}
 	        Dim editor As FixedContentEditor = New FixedContentEditor(contentRootElement)
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub CreateFixedContentEditorWithPosition(ByVal contentRootElement As IContentRootElement, ByVal initialPosition As IPosition)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_1"
-	        Dim editor As FixedContentEditor = New FixedContentEditor(contentRootElement, initialPosition)
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertTextFragment(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_2"
-	        editor.DrawText("First text fragment.")
-	        '	 #End Region
-	
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_3"
-	        Dim block As New Block()
-	        block.InsertText("First sentence.")
-	        block.InsertText("Second sentence.")
-	        editor.DrawBlock(block)
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertImage(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_4"
-	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-	            editor.DrawImage(stream, New Size(118, 28))
-	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertGemotery(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_5"
-	        editor.DrawEllipse(New Point(250, 70), 136, 48)
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertClipping(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_6"
-	        Dim visibleText As String = "The last word in this text is"
-	        Dim text As String = String.Format("{0} clipped.", visibleText)
-	        'The last word in this text is clipped.
-	        Dim block As New Block()
-	        block.InsertText(visibleText)
-	        Dim visisibleTextSize As Size = block.Measure()
-	
-	        Using editor.PushClipping(New Rect(New Point(0, 0), visisibleTextSize))
-	            editor.DrawText(text)
-	        End Using
-	        '	 #End Region
-	
-	    End Sub
-	
-	    Private Sub Positioning(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_7"
-	        editor.Position.Scale(1.5, 0.5)
-	        editor.Position.Rotate(10)
-	        editor.DrawText("Image:")
-	        editor.Position.Translate(0, 20)
-	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-	            editor.DrawImage(stream, New Size(118, 28))
-	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Function GetResourceStream(ByVal p As String) As Stream
-	        ' TODO: Implement this method
-	        Throw New NotImplementedException()
-	    End Function
-	
-	    Private Sub InsertTable()
-	        '#Region "radpdfprocessing-editing-fixedcontenteditor_8"
-	
-	        Dim table As New Table()
-	        Dim border As New Border()
-	        table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-	        table.DefaultCellProperties.Padding = New Thickness(10)
-	        Dim firstRow As TableRow = table.Rows.AddTableRow()
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell")
-	        Dim secondRow As TableRow = table.Rows.AddTableRow()
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell")
-	
-	        Dim document As New RadFixedDocument()
-	        Dim page As RadFixedPage = document.Pages.AddPage()
-	        Dim editor As New FixedContentEditor(page)
-	        editor.Position.Translate(10, 10)
-	        editor.DrawTable(table, New Size(180, Double.PositiveInfinity))
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -162,94 +69,7 @@ __Example 2__ demonstrates how you can create а FixedContentEditor with specifi
 
 {{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_1}}
 	        Dim editor As FixedContentEditor = New FixedContentEditor(contentRootElement, initialPosition)
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertTextFragment(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_2"
-	        editor.DrawText("First text fragment.")
-	        '	 #End Region
-	
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_3"
-	        Dim block As New Block()
-	        block.InsertText("First sentence.")
-	        block.InsertText("Second sentence.")
-	        editor.DrawBlock(block)
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertImage(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_4"
-	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-	            editor.DrawImage(stream, New Size(118, 28))
-	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertGemotery(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_5"
-	        editor.DrawEllipse(New Point(250, 70), 136, 48)
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertClipping(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_6"
-	        Dim visibleText As String = "The last word in this text is"
-	        Dim text As String = String.Format("{0} clipped.", visibleText)
-	        'The last word in this text is clipped.
-	        Dim block As New Block()
-	        block.InsertText(visibleText)
-	        Dim visisibleTextSize As Size = block.Measure()
-	
-	        Using editor.PushClipping(New Rect(New Point(0, 0), visisibleTextSize))
-	            editor.DrawText(text)
-	        End Using
-	        '	 #End Region
-	
-	    End Sub
-	
-	    Private Sub Positioning(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_7"
-	        editor.Position.Scale(1.5, 0.5)
-	        editor.Position.Rotate(10)
-	        editor.DrawText("Image:")
-	        editor.Position.Translate(0, 20)
-	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-	            editor.DrawImage(stream, New Size(118, 28))
-	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Function GetResourceStream(ByVal p As String) As Stream
-	        ' TODO: Implement this method
-	        Throw New NotImplementedException()
-	    End Function
-	
-	    Private Sub InsertTable()
-	        '#Region "radpdfprocessing-editing-fixedcontenteditor_8"
-	
-	        Dim table As New Table()
-	        Dim border As New Border()
-	        table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-	        table.DefaultCellProperties.Padding = New Thickness(10)
-	        Dim firstRow As TableRow = table.Rows.AddTableRow()
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell")
-	        Dim secondRow As TableRow = table.Rows.AddTableRow()
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell")
-	
-	        Dim document As New RadFixedDocument()
-	        Dim page As RadFixedPage = document.Pages.AddPage()
-	        Dim editor As New FixedContentEditor(page)
-	        editor.Position.Translate(10, 10)
-	        editor.DrawTable(table, New Size(180, Double.PositiveInfinity))
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -277,88 +97,7 @@ Inserting а [TextFragment]({%slug pdfprocessing-model-textfragment%}) can be do
 
 {{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_2}}
 	        editor.DrawText("First text fragment.")
-	        '	 #End Region
-	
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_3"
-	        Dim block As New Block()
-	        block.InsertText("First sentence.")
-	        block.InsertText("Second sentence.")
-	        editor.DrawBlock(block)
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertImage(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_4"
-	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-	            editor.DrawImage(stream, New Size(118, 28))
-	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertGemotery(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_5"
-	        editor.DrawEllipse(New Point(250, 70), 136, 48)
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertClipping(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_6"
-	        Dim visibleText As String = "The last word in this text is"
-	        Dim text As String = String.Format("{0} clipped.", visibleText)
-	        'The last word in this text is clipped.
-	        Dim block As New Block()
-	        block.InsertText(visibleText)
-	        Dim visisibleTextSize As Size = block.Measure()
-	
-	        Using editor.PushClipping(New Rect(New Point(0, 0), visisibleTextSize))
-	            editor.DrawText(text)
-	        End Using
-	        '	 #End Region
-	
-	    End Sub
-	
-	    Private Sub Positioning(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_7"
-	        editor.Position.Scale(1.5, 0.5)
-	        editor.Position.Rotate(10)
-	        editor.DrawText("Image:")
-	        editor.Position.Translate(0, 20)
-	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-	            editor.DrawImage(stream, New Size(118, 28))
-	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Function GetResourceStream(ByVal p As String) As Stream
-	        ' TODO: Implement this method
-	        Throw New NotImplementedException()
-	    End Function
-	
-	    Private Sub InsertTable()
-	        '#Region "radpdfprocessing-editing-fixedcontenteditor_8"
-	
-	        Dim table As New Table()
-	        Dim border As New Border()
-	        table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-	        table.DefaultCellProperties.Padding = New Thickness(10)
-	        Dim firstRow As TableRow = table.Rows.AddTableRow()
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell")
-	        Dim secondRow As TableRow = table.Rows.AddTableRow()
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell")
-	
-	        Dim document As New RadFixedDocument()
-	        Dim page As RadFixedPage = document.Pages.AddPage()
-	        Dim editor As New FixedContentEditor(page)
-	        editor.Position.Translate(10, 10)
-	        editor.DrawTable(table, New Size(180, Double.PositiveInfinity))
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -392,81 +131,7 @@ __Example 4__ shows how you can use the __Block__ object to draw a paragraph.
 	        block.InsertText("First sentence.")
 	        block.InsertText("Second sentence.")
 	        editor.DrawBlock(block)
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertImage(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_4"
-	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-	            editor.DrawImage(stream, New Size(118, 28))
-	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertGemotery(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_5"
-	        editor.DrawEllipse(New Point(250, 70), 136, 48)
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertClipping(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_6"
-	        Dim visibleText As String = "The last word in this text is"
-	        Dim text As String = String.Format("{0} clipped.", visibleText)
-	        'The last word in this text is clipped.
-	        Dim block As New Block()
-	        block.InsertText(visibleText)
-	        Dim visisibleTextSize As Size = block.Measure()
-	
-	        Using editor.PushClipping(New Rect(New Point(0, 0), visisibleTextSize))
-	            editor.DrawText(text)
-	        End Using
-	        '	 #End Region
-	
-	    End Sub
-	
-	    Private Sub Positioning(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_7"
-	        editor.Position.Scale(1.5, 0.5)
-	        editor.Position.Rotate(10)
-	        editor.DrawText("Image:")
-	        editor.Position.Translate(0, 20)
-	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-	            editor.DrawImage(stream, New Size(118, 28))
-	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Function GetResourceStream(ByVal p As String) As Stream
-	        ' TODO: Implement this method
-	        Throw New NotImplementedException()
-	    End Function
-	
-	    Private Sub InsertTable()
-	        '#Region "radpdfprocessing-editing-fixedcontenteditor_8"
-	
-	        Dim table As New Table()
-	        Dim border As New Border()
-	        table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-	        table.DefaultCellProperties.Padding = New Thickness(10)
-	        Dim firstRow As TableRow = table.Rows.AddTableRow()
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell")
-	        Dim secondRow As TableRow = table.Rows.AddTableRow()
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell")
-	
-	        Dim document As New RadFixedDocument()
-	        Dim page As RadFixedPage = document.Pages.AddPage()
-	        Dim editor As New FixedContentEditor(page)
-	        editor.Position.Translate(10, 10)
-	        editor.DrawTable(table, New Size(180, Double.PositiveInfinity))
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -517,73 +182,7 @@ __Example 5__ shows how you can add an image created from a Stream.
 	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
 	            editor.DrawImage(stream, New Size(118, 28))
 	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertGemotery(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_5"
-	        editor.DrawEllipse(New Point(250, 70), 136, 48)
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertClipping(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_6"
-	        Dim visibleText As String = "The last word in this text is"
-	        Dim text As String = String.Format("{0} clipped.", visibleText)
-	        'The last word in this text is clipped.
-	        Dim block As New Block()
-	        block.InsertText(visibleText)
-	        Dim visisibleTextSize As Size = block.Measure()
-	
-	        Using editor.PushClipping(New Rect(New Point(0, 0), visisibleTextSize))
-	            editor.DrawText(text)
-	        End Using
-	        '	 #End Region
-	
-	    End Sub
-	
-	    Private Sub Positioning(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_7"
-	        editor.Position.Scale(1.5, 0.5)
-	        editor.Position.Rotate(10)
-	        editor.DrawText("Image:")
-	        editor.Position.Translate(0, 20)
-	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-	            editor.DrawImage(stream, New Size(118, 28))
-	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Function GetResourceStream(ByVal p As String) As Stream
-	        ' TODO: Implement this method
-	        Throw New NotImplementedException()
-	    End Function
-	
-	    Private Sub InsertTable()
-	        '#Region "radpdfprocessing-editing-fixedcontenteditor_8"
-	
-	        Dim table As New Table()
-	        Dim border As New Border()
-	        table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-	        table.DefaultCellProperties.Padding = New Thickness(10)
-	        Dim firstRow As TableRow = table.Rows.AddTableRow()
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell")
-	        Dim secondRow As TableRow = table.Rows.AddTableRow()
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell")
-	
-	        Dim document As New RadFixedDocument()
-	        Dim page As RadFixedPage = document.Pages.AddPage()
-	        Dim editor As New FixedContentEditor(page)
-	        editor.Position.Translate(10, 10)
-	        editor.DrawTable(table, New Size(180, Double.PositiveInfinity))
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -626,67 +225,7 @@ __Example 6__ shows how you can add an ellipse using one of FixedContentEditor's
 
 {{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_5}}
 	        editor.DrawEllipse(New Point(250, 70), 136, 48)
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub InsertClipping(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_6"
-	        Dim visibleText As String = "The last word in this text is"
-	        Dim text As String = String.Format("{0} clipped.", visibleText)
-	        'The last word in this text is clipped.
-	        Dim block As New Block()
-	        block.InsertText(visibleText)
-	        Dim visisibleTextSize As Size = block.Measure()
-	
-	        Using editor.PushClipping(New Rect(New Point(0, 0), visisibleTextSize))
-	            editor.DrawText(text)
-	        End Using
-	        '	 #End Region
-	
-	    End Sub
-	
-	    Private Sub Positioning(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_7"
-	        editor.Position.Scale(1.5, 0.5)
-	        editor.Position.Rotate(10)
-	        editor.DrawText("Image:")
-	        editor.Position.Translate(0, 20)
-	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-	            editor.DrawImage(stream, New Size(118, 28))
-	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Function GetResourceStream(ByVal p As String) As Stream
-	        ' TODO: Implement this method
-	        Throw New NotImplementedException()
-	    End Function
-	
-	    Private Sub InsertTable()
-	        '#Region "radpdfprocessing-editing-fixedcontenteditor_8"
-	
-	        Dim table As New Table()
-	        Dim border As New Border()
-	        table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-	        table.DefaultCellProperties.Padding = New Thickness(10)
-	        Dim firstRow As TableRow = table.Rows.AddTableRow()
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell")
-	        Dim secondRow As TableRow = table.Rows.AddTableRow()
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell")
-	
-	        Dim document As New RadFixedDocument()
-	        Dim page As RadFixedPage = document.Pages.AddPage()
-	        Dim editor As New FixedContentEditor(page)
-	        editor.Position.Translate(10, 10)
-	        editor.DrawTable(table, New Size(180, Double.PositiveInfinity))
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -742,52 +281,7 @@ When a new clipping is pushed, it is set as a clipping to the current clipping i
 	        Using editor.PushClipping(New Rect(New Point(0, 0), visisibleTextSize))
 	            editor.DrawText(text)
 	        End Using
-	        '	 #End Region
-	
-	    End Sub
-	
-	    Private Sub Positioning(ByVal editor As FixedContentEditor)
-	        '	 #Region "radpdfprocessing-editing-fixedcontenteditor_7"
-	        editor.Position.Scale(1.5, 0.5)
-	        editor.Position.Rotate(10)
-	        editor.DrawText("Image:")
-	        editor.Position.Translate(0, 20)
-	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-	            editor.DrawImage(stream, New Size(118, 28))
-	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Function GetResourceStream(ByVal p As String) As Stream
-	        ' TODO: Implement this method
-	        Throw New NotImplementedException()
-	    End Function
-	
-	    Private Sub InsertTable()
-	        '#Region "radpdfprocessing-editing-fixedcontenteditor_8"
-	
-	        Dim table As New Table()
-	        Dim border As New Border()
-	        table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-	        table.DefaultCellProperties.Padding = New Thickness(10)
-	        Dim firstRow As TableRow = table.Rows.AddTableRow()
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell")
-	        Dim secondRow As TableRow = table.Rows.AddTableRow()
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell")
-	
-	        Dim document As New RadFixedDocument()
-	        Dim page As RadFixedPage = document.Pages.AddPage()
-	        Dim editor As New FixedContentEditor(page)
-	        editor.Position.Translate(10, 10)
-	        editor.DrawTable(table, New Size(180, Double.PositiveInfinity))
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -831,39 +325,7 @@ The code in __Example 8__ shows how to manipulate the position of the inserted c
 	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
 	            editor.DrawImage(stream, New Size(118, 28))
 	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Function GetResourceStream(ByVal p As String) As Stream
-	        ' TODO: Implement this method
-	        Throw New NotImplementedException()
-	    End Function
-	
-	    Private Sub InsertTable()
-	        '#Region "radpdfprocessing-editing-fixedcontenteditor_8"
-	
-	        Dim table As New Table()
-	        Dim border As New Border()
-	        table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-	        table.DefaultCellProperties.Padding = New Thickness(10)
-	        Dim firstRow As TableRow = table.Rows.AddTableRow()
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell")
-	        Dim secondRow As TableRow = table.Rows.AddTableRow()
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell")
-	        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell")
-	
-	        Dim document As New RadFixedDocument()
-	        Dim page As RadFixedPage = document.Pages.AddPage()
-	        Dim editor As New FixedContentEditor(page)
-	        editor.Position.Translate(10, 10)
-	        editor.DrawTable(table, New Size(180, Double.PositiveInfinity))
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

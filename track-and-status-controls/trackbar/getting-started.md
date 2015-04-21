@@ -55,8 +55,7 @@ This tutorial demonstrates connecting a RadTrackBar to a RadTextBox control. Se
 	    Private Sub radTrackBar1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
 	        Me.radTextBox1.Text = radTrackBar1.Value.ToString()
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 

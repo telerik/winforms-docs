@@ -46,56 +46,7 @@ The __WorkbookFormatProvidersManager__ class contains two methods that allow you
 	
 	        WorkbookFormatProvidersManager.RegisterFormatProvider(New XlsxFormatProvider())
 	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UnregisterTxtFormatProvider()
-	        '#Region "radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_1"
-	
-	        Dim provider As IWorkbookFormatProvider = WorkbookFormatProvidersManager.GetProviderByName("TxtFormatProvider")
-	        If provider IsNot Nothing Then
-	            WorkbookFormatProvidersManager.UnregisterFormatProvider(provider)
-	        End If
-	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub Import()
-	        '#Region "radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_2"
-	
-	        Dim workbook As Workbook
-	        Dim openFileDialog As New OpenFileDialog()
-	        If openFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
-	            Try
-	                Dim extension As String = Path.GetExtension(openFileDialog.FileName)
-	                Using input As Stream = openFileDialog.OpenFile()
-	                    workbook = WorkbookFormatProvidersManager.Import(extension, input)
-	                End Using
-	            Catch ex As IOException
-	                Throw New IOException("The file cannot be opened. It might be locked by another application.", ex)
-	            End Try
-	        End If
-	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub ExportCsvCustomDelimiter()
-	        Dim workbook As New Workbook()
-	
-	        '#Region "radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_3"
-	
-	        Dim saveFileDialog As New SaveFileDialog()
-	
-	        If saveFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
-	            Dim extension As String = Path.GetExtension(saveFileDialog.FileName)
-	            Using output As Stream = saveFileDialog.OpenFile()
-	                WorkbookFormatProvidersManager.Export(workbook, extension, output)
-	            End Using
-	        End If
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -125,45 +76,7 @@ You can also unregister format providers using the UnregisterFormatProvider() me
 	            WorkbookFormatProvidersManager.UnregisterFormatProvider(provider)
 	        End If
 	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub Import()
-	        '#Region "radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_2"
-	
-	        Dim workbook As Workbook
-	        Dim openFileDialog As New OpenFileDialog()
-	        If openFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
-	            Try
-	                Dim extension As String = Path.GetExtension(openFileDialog.FileName)
-	                Using input As Stream = openFileDialog.OpenFile()
-	                    workbook = WorkbookFormatProvidersManager.Import(extension, input)
-	                End Using
-	            Catch ex As IOException
-	                Throw New IOException("The file cannot be opened. It might be locked by another application.", ex)
-	            End Try
-	        End If
-	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub ExportCsvCustomDelimiter()
-	        Dim workbook As New Workbook()
-	
-	        '#Region "radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_3"
-	
-	        Dim saveFileDialog As New SaveFileDialog()
-	
-	        If saveFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
-	            Dim extension As String = Path.GetExtension(saveFileDialog.FileName)
-	            Using output As Stream = saveFileDialog.OpenFile()
-	                WorkbookFormatProvidersManager.Export(workbook, extension, output)
-	            End Using
-	        End If
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -221,26 +134,7 @@ The following example demonstrates how to present the user with an OpenFileDialo
 	            End Try
 	        End If
 	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub ExportCsvCustomDelimiter()
-	        Dim workbook As New Workbook()
-	
-	        '#Region "radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_3"
-	
-	        Dim saveFileDialog As New SaveFileDialog()
-	
-	        If saveFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
-	            Dim extension As String = Path.GetExtension(saveFileDialog.FileName)
-	            Using output As Stream = saveFileDialog.OpenFile()
-	                WorkbookFormatProvidersManager.Export(workbook, extension, output)
-	            End Using
-	        End If
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -292,9 +186,7 @@ The next example illustrates how to use the __Export()__ method to save a file. 
 	            End Using
 	        End If
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

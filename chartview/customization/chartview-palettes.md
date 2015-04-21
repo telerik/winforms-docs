@@ -34,56 +34,7 @@ To apply one of these predefined palettes all you have to do is execute the foll
 
 {{source=..\SamplesVB\ChartView\Customization\ChartViewPalettes.vb region=palette}}
 	        Me.RadChartView1.Area.View.Palette = KnownPalette.Metro
-	        '#End Region
-	
-	        '#Region "setCustomPalette"
-	        Me.RadChartView1.Area.View.Palette = New CustomPalette()
-	        '#End Region
-	
-	        InitializeComponent()
-	    End Sub
-	
-	    Protected Overrides Sub OnShown(e As EventArgs)
-	        MyBase.OnShown(e)
-	
-	        Dim r As New Random()
-	        For i As Integer = 0 To 7
-	            Dim table As New DataTable()
-	            table.Columns.Add("Value", GetType(Double))
-	            table.Columns.Add("Name", GetType(String))
-	            table.Rows.Add(r.[Next](20), "John")
-	            table.Rows.Add(r.[Next](20), "Adam")
-	            table.Rows.Add(r.[Next](20), "Peter")
-	            table.Rows.Add(r.[Next](20), "Sam")
-	            table.Rows.Add(r.[Next](20), "Paul")
-	
-	            Dim lineSeria As New LineSeries()
-	            RadChartView1.Series.Add(lineSeria)
-	
-	            lineSeria.ValueMember = "Value"
-	            lineSeria.CategoryMember = "Name"
-	            lineSeria.DataSource = table
-	
-	            '#Region "sample"
-	            lineSeria.Palette = KnownPalette.Flower.GlobalEntries(0)
-	            lineSeria.Palette = New PaletteEntry(Color.Yellow, Color.Red)
-	            '#End Region
-	
-	        Next
-	
-	
-	    End Sub
-	
-	#Region "customPalette"
-	    Public Class CustomPalette
-	        Inherits ChartPalette
-	        Public Sub New()
-	            Me.GlobalEntries.Add(Color.Yellow, Color.Red)
-	            Me.GlobalEntries.Add(Color.Yellow, Color.Blue)
-	        End Sub
-	    End Class
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -114,23 +65,7 @@ The predefined palettes consist of 8 palette entries which are applied to the se
 {{source=..\SamplesVB\ChartView\Customization\ChartViewPalettes.vb region=sample}}
 	            lineSeria.Palette = KnownPalette.Flower.GlobalEntries(0)
 	            lineSeria.Palette = New PaletteEntry(Color.Yellow, Color.Red)
-	            '#End Region
-	
-	        Next
-	
-	
-	    End Sub
-	
-	#Region "customPalette"
-	    Public Class CustomPalette
-	        Inherits ChartPalette
-	        Public Sub New()
-	            Me.GlobalEntries.Add(Color.Yellow, Color.Red)
-	            Me.GlobalEntries.Add(Color.Yellow, Color.Blue)
-	        End Sub
-	    End Class
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -163,8 +98,7 @@ Predefined palettes cannot be edited , however, you can define your own palettes
 	            Me.GlobalEntries.Add(Color.Yellow, Color.Blue)
 	        End Sub
 	    End Class
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -182,51 +116,6 @@ and here is how to set the custom palette:
 
 {{source=..\SamplesVB\ChartView\Customization\ChartViewPalettes.vb region=setCustomPalette}}
 	        Me.RadChartView1.Area.View.Palette = New CustomPalette()
-	        '#End Region
-	
-	        InitializeComponent()
-	    End Sub
-	
-	    Protected Overrides Sub OnShown(e As EventArgs)
-	        MyBase.OnShown(e)
-	
-	        Dim r As New Random()
-	        For i As Integer = 0 To 7
-	            Dim table As New DataTable()
-	            table.Columns.Add("Value", GetType(Double))
-	            table.Columns.Add("Name", GetType(String))
-	            table.Rows.Add(r.[Next](20), "John")
-	            table.Rows.Add(r.[Next](20), "Adam")
-	            table.Rows.Add(r.[Next](20), "Peter")
-	            table.Rows.Add(r.[Next](20), "Sam")
-	            table.Rows.Add(r.[Next](20), "Paul")
-	
-	            Dim lineSeria As New LineSeries()
-	            RadChartView1.Series.Add(lineSeria)
-	
-	            lineSeria.ValueMember = "Value"
-	            lineSeria.CategoryMember = "Name"
-	            lineSeria.DataSource = table
-	
-	            '#Region "sample"
-	            lineSeria.Palette = KnownPalette.Flower.GlobalEntries(0)
-	            lineSeria.Palette = New PaletteEntry(Color.Yellow, Color.Red)
-	            '#End Region
-	
-	        Next
-	
-	
-	    End Sub
-	
-	#Region "customPalette"
-	    Public Class CustomPalette
-	        Inherits ChartPalette
-	        Public Sub New()
-	            Me.GlobalEntries.Add(Color.Yellow, Color.Red)
-	            Me.GlobalEntries.Add(Color.Yellow, Color.Blue)
-	        End Sub
-	    End Class
-	#End Region
-	End Class
+	{{endregion}}
 
 ![chartview-customization-palettes 005](images/chartview-customization-palettes005.png)

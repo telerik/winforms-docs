@@ -64,8 +64,7 @@ Timer control.
 	            ticks = 0
 	        End If
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -102,20 +101,7 @@ Timer control.
 	    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        Timer1.Enabled = True
 	    End Sub
-	    '#End Region
-	
-	    '#Region "tick"
-	    Private ticks As Integer = 0
-	    Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs)
-	        ticks += 1
-	        RadProgressBar1.Value1 = ticks
-	        If ticks = 100 Then
-	            Timer1.Enabled = False
-	            ticks = 0
-	        End If
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 

@@ -35,92 +35,7 @@ The Day View is the default RadScheduler view, but you can explicitly set it to 
 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=activeViewType}}
 	        Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day
-	        '#End Region
-	
-	        '#Region getDayView
-	        Dim dayView As SchedulerDayView = Me.RadScheduler1.GetDayView()
-	        '#End Region
-	
-	        '#Region activeView
-	        If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day Then
-	            Dim activeDayView As SchedulerDayView = CType(Me.RadScheduler1.ActiveView, SchedulerDayView)
-	        End If
-	        '#End Region
-	
-	        '#Region dayCount
-	        dayView.DayCount = 3
-	        '#End Region
-	
-	        '#Region workTime
-	        dayView.WorkTime = TimeInterval.DefaultWorkTime
-	        '#End Region
-	
-	        '#Region workWeek
-	        dayView.WorkWeekStart = DayOfWeek.Thursday
-	        dayView.WorkWeekEnd = DayOfWeek.Saturday
-	
-	        '#End Region
-	        '#Region showHeader
-	        dayView.ShowHeader = True
-	        '#End Region
-	
-	        '#Region headerFormat
-	        dayView.HeaderFormat = "MMMM dd"
-	        '#End Region
-	
-	        '#Region rangeFactor
-	        dayView.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region rulerScaleSize
-	        dayView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerStartScale
-	        dayView.RangeFactor = ScaleRange.QuarterHour
-	        dayView.RulerStartScale = 9
-	        dayView.RulerStartScaleMinutes = 30
-	        dayView.RulerEndScale = 14
-	        dayView.RulerEndScaleMinutes = 45
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
-	        '#End Region
-	
-	        '#Region showRuler
-	        dayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -147,88 +62,7 @@ To get the instance to the SchedulerDayView from the RadScheduler object, either
 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=getDayView}}
 	        Dim dayView As SchedulerDayView = Me.RadScheduler1.GetDayView()
-	        '#End Region
-	
-	        '#Region activeView
-	        If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day Then
-	            Dim activeDayView As SchedulerDayView = CType(Me.RadScheduler1.ActiveView, SchedulerDayView)
-	        End If
-	        '#End Region
-	
-	        '#Region dayCount
-	        dayView.DayCount = 3
-	        '#End Region
-	
-	        '#Region workTime
-	        dayView.WorkTime = TimeInterval.DefaultWorkTime
-	        '#End Region
-	
-	        '#Region workWeek
-	        dayView.WorkWeekStart = DayOfWeek.Thursday
-	        dayView.WorkWeekEnd = DayOfWeek.Saturday
-	
-	        '#End Region
-	        '#Region showHeader
-	        dayView.ShowHeader = True
-	        '#End Region
-	
-	        '#Region headerFormat
-	        dayView.HeaderFormat = "MMMM dd"
-	        '#End Region
-	
-	        '#Region rangeFactor
-	        dayView.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region rulerScaleSize
-	        dayView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerStartScale
-	        dayView.RangeFactor = ScaleRange.QuarterHour
-	        dayView.RulerStartScale = 9
-	        dayView.RulerStartScaleMinutes = 30
-	        dayView.RulerEndScale = 14
-	        dayView.RulerEndScaleMinutes = 45
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
-	        '#End Region
-	
-	        '#Region showRuler
-	        dayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -249,85 +83,8 @@ To get the instance to the SchedulerDayView from the RadScheduler object, either
 #### __[VB.NET]__
 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=activeView}}
-	        If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day Then
-	            Dim activeDayView As SchedulerDayView = CType(Me.RadScheduler1.ActiveView, SchedulerDayView)
-	        End If
-	        '#End Region
-	
-	        '#Region dayCount
-	        dayView.DayCount = 3
-	        '#End Region
-	
-	        '#Region workTime
-	        dayView.WorkTime = TimeInterval.DefaultWorkTime
-	        '#End Region
-	
-	        '#Region workWeek
-	        dayView.WorkWeekStart = DayOfWeek.Thursday
-	        dayView.WorkWeekEnd = DayOfWeek.Saturday
-	
-	        '#End Region
-	        '#Region showHeader
-	        dayView.ShowHeader = True
-	        '#End Region
-	
-	        '#Region headerFormat
-	        dayView.HeaderFormat = "MMMM dd"
-	        '#End Region
-	
-	        '#Region rangeFactor
-	        dayView.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region rulerScaleSize
-	        dayView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerStartScale
-	        dayView.RangeFactor = ScaleRange.QuarterHour
-	        dayView.RulerStartScale = 9
-	        dayView.RulerStartScaleMinutes = 30
-	        dayView.RulerEndScale = 14
-	        dayView.RulerEndScaleMinutes = 45
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
-	        '#End Region
-	
-	        '#Region showRuler
-	        dayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	        Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day
+	{{endregion}}
 
 
 
@@ -348,78 +105,7 @@ The Day View can show a predefined number of days through the __DayCount__ prope
 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=dayCount}}
 	        dayView.DayCount = 3
-	        '#End Region
-	
-	        '#Region workTime
-	        dayView.WorkTime = TimeInterval.DefaultWorkTime
-	        '#End Region
-	
-	        '#Region workWeek
-	        dayView.WorkWeekStart = DayOfWeek.Thursday
-	        dayView.WorkWeekEnd = DayOfWeek.Saturday
-	
-	        '#End Region
-	        '#Region showHeader
-	        dayView.ShowHeader = True
-	        '#End Region
-	
-	        '#Region headerFormat
-	        dayView.HeaderFormat = "MMMM dd"
-	        '#End Region
-	
-	        '#Region rangeFactor
-	        dayView.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region rulerScaleSize
-	        dayView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerStartScale
-	        dayView.RangeFactor = ScaleRange.QuarterHour
-	        dayView.RulerStartScale = 9
-	        dayView.RulerStartScaleMinutes = 30
-	        dayView.RulerEndScale = 14
-	        dayView.RulerEndScaleMinutes = 45
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
-	        '#End Region
-	
-	        '#Region showRuler
-	        dayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -442,74 +128,7 @@ The work time hours is a predefined range of hours, which can be specified withi
 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=workTime}}
 	        dayView.WorkTime = TimeInterval.DefaultWorkTime
-	        '#End Region
-	
-	        '#Region workWeek
-	        dayView.WorkWeekStart = DayOfWeek.Thursday
-	        dayView.WorkWeekEnd = DayOfWeek.Saturday
-	
-	        '#End Region
-	        '#Region showHeader
-	        dayView.ShowHeader = True
-	        '#End Region
-	
-	        '#Region headerFormat
-	        dayView.HeaderFormat = "MMMM dd"
-	        '#End Region
-	
-	        '#Region rangeFactor
-	        dayView.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region rulerScaleSize
-	        dayView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerStartScale
-	        dayView.RangeFactor = ScaleRange.QuarterHour
-	        dayView.RulerStartScale = 9
-	        dayView.RulerStartScaleMinutes = 30
-	        dayView.RulerEndScale = 14
-	        dayView.RulerEndScaleMinutes = 45
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
-	        '#End Region
-	
-	        '#Region showRuler
-	        dayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -536,68 +155,7 @@ Additionally, you can specify which week days are part of the working week. This
 	        dayView.WorkWeekStart = DayOfWeek.Thursday
 	        dayView.WorkWeekEnd = DayOfWeek.Saturday
 	
-	        '#End Region
-	        '#Region showHeader
-	        dayView.ShowHeader = True
-	        '#End Region
-	
-	        '#Region headerFormat
-	        dayView.HeaderFormat = "MMMM dd"
-	        '#End Region
-	
-	        '#Region rangeFactor
-	        dayView.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region rulerScaleSize
-	        dayView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerStartScale
-	        dayView.RangeFactor = ScaleRange.QuarterHour
-	        dayView.RulerStartScale = 9
-	        dayView.RulerStartScaleMinutes = 30
-	        dayView.RulerEndScale = 14
-	        dayView.RulerEndScaleMinutes = 45
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
-	        '#End Region
-	
-	        '#Region showRuler
-	        dayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -618,65 +176,7 @@ Showing/hiding the day headers is done through the __ShowHeader__ property (the 
 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=showHeader}}
 	        dayView.ShowHeader = True
-	        '#End Region
-	
-	        '#Region headerFormat
-	        dayView.HeaderFormat = "MMMM dd"
-	        '#End Region
-	
-	        '#Region rangeFactor
-	        dayView.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region rulerScaleSize
-	        dayView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerStartScale
-	        dayView.RangeFactor = ScaleRange.QuarterHour
-	        dayView.RulerStartScale = 9
-	        dayView.RulerStartScaleMinutes = 30
-	        dayView.RulerEndScale = 14
-	        dayView.RulerEndScaleMinutes = 45
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
-	        '#End Region
-	
-	        '#Region showRuler
-	        dayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -697,61 +197,7 @@ RadScheduler uses the [.NET Standard DateTime Format Strings](http://msdn.micros
 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=headerFormat}}
 	        dayView.HeaderFormat = "MMMM dd"
-	        '#End Region
-	
-	        '#Region rangeFactor
-	        dayView.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region rulerScaleSize
-	        dayView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerStartScale
-	        dayView.RangeFactor = ScaleRange.QuarterHour
-	        dayView.RulerStartScale = 9
-	        dayView.RulerStartScaleMinutes = 30
-	        dayView.RulerEndScale = 14
-	        dayView.RulerEndScaleMinutes = 45
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
-	        '#End Region
-	
-	        '#Region showRuler
-	        dayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -788,57 +234,7 @@ The default __scale of the ruler__ can be set with a single property (__RangeFac
 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=rangeFactor}}
 	        dayView.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region rulerScaleSize
-	        dayView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerStartScale
-	        dayView.RangeFactor = ScaleRange.QuarterHour
-	        dayView.RulerStartScale = 9
-	        dayView.RulerStartScaleMinutes = 30
-	        dayView.RulerEndScale = 14
-	        dayView.RulerEndScaleMinutes = 45
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
-	        '#End Region
-	
-	        '#Region showRuler
-	        dayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -861,53 +257,7 @@ The size of the ruler height (and row height respectively) is controlled by the 
 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=rulerScaleSize}}
 	        dayView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerStartScale
-	        dayView.RangeFactor = ScaleRange.QuarterHour
-	        dayView.RulerStartScale = 9
-	        dayView.RulerStartScaleMinutes = 30
-	        dayView.RulerEndScale = 14
-	        dayView.RulerEndScaleMinutes = 45
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
-	        '#End Region
-	
-	        '#Region showRuler
-	        dayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -941,45 +291,7 @@ You can control which hours are visible in the view by using __RulerStartScale__
 	        dayView.RulerStartScaleMinutes = 30
 	        dayView.RulerEndScale = 14
 	        dayView.RulerEndScaleMinutes = 45
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
-	        '#End Region
-	
-	        '#Region showRuler
-	        dayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -1013,39 +325,7 @@ The __RulerFormatStrings__ property changes the time format in the ruler between
 	        dayView.RulerStartScale = 9
 	        dayView.RulerEndScale = 14
 	        dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        dayView.RulerStartScale = 9
-	        dayView.RulerEndScale = 14
-	        dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
-	        '#End Region
-	
-	        '#Region showRuler
-	        dayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 </td><td>
 
@@ -1067,33 +347,7 @@ The __RulerFormatStrings__ property changes the time format in the ruler between
 	        dayView.RulerStartScale = 9
 	        dayView.RulerEndScale = 14
 	        dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
-	        '#End Region
-	
-	        '#Region showRuler
-	        dayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 </td><td>
 
@@ -1118,29 +372,7 @@ To show and hide the ruler, use the __ShowRuler__ property:
 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=showRuler}}
 	        dayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -1163,25 +395,7 @@ The width of the ruler is controlled from the __RulerWidth__ property, whereas t
 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=rulerWidth}}
 	        dayView.RulerWidth = 40
-	        '#End Region
-	
-	        '#Region currentTimePointer
-	        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -1212,18 +426,7 @@ The current time pointer is a thin line on the ruler and on the today’s column
 	        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
 	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
 	        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region allDayArea
-	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -1249,13 +452,7 @@ The AllDay area contains appointments that are either defined as AllDay appointm
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=allDayArea}}
 	        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
 	        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -1279,9 +476,7 @@ The __SchedulerDayViewElement__ allows you to specify different size for the dif
 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=resizeColumns}}
 	        dayViewElement.SetColumnWidth(2, 2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

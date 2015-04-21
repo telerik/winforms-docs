@@ -224,8 +224,6 @@ Here is a step by step guide how to achieve that:
 	    Public Function CreateNewAppointment() As IEvent Implements IAppointmentFactory.CreateNewAppointment
 	        Return New AppointmentWithEmail()
 	    End Function
-	#End Region
-	End Class
 	{{endregion}}
 
 

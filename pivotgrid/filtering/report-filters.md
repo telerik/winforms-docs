@@ -37,45 +37,7 @@ The report filters are displayed as descriptor elements in the report filters ar
 
 {{source=..\SamplesVB\PivotGrid\Filtering\PivotGridReportFiltering.vb region=ShowFilterArea}}
 	        Me.radPivotGrid1.ShowFilterArea = True
-	        '#End Region
-	
-	        '#Region "PropertyFilterDescription"
-	        Dim description As New PropertyFilterDescription()
-	        Dim condition As New ComparisonCondition()
-	
-	        condition.Condition = Telerik.Pivot.Core.Filtering.Comparison.Equals
-	        condition.Than = "UK"
-	
-	        description.PropertyName = "ShipCountry"
-	        description.Condition = condition
-	        description.CustomName = "Country"
-	
-	        Me.radPivotGrid1.FilterDescriptions.Add(description)
-	        '#End Region
-	
-	        description = New PropertyFilterDescription()
-	
-	        '#Region "SetCondition"
-	        Dim setCondition As New SetCondition()
-	
-	        setCondition.Comparison = SetComparison.Includes
-	        setCondition.Items.Add("UK")
-	        setCondition.Items.Add("Canada")
-	        setCondition.Items.Add("USA")
-	        '#End Region
-	
-	        description.PropertyName = "ShipCountry"
-	        description.Condition = setCondition
-	        description.CustomName = "Country"
-	
-	        Me.radPivotGrid1.FilterDescriptions.Add(description)
-	    End Sub
-	
-	    Private Sub PivotGridReportFiltering_Load(sender As Object, e As EventArgs) Handles Me.Load
-	        ' TODO: This line of code loads data into the 'nwindDataSet.Orders' table. You can move, or remove it, as needed.
-	        Me.ordersTableAdapter.Fill(Me.nwindDataSet.Orders)
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -129,31 +91,7 @@ The contents of the FilterDescriptions collection can also be edited at runtime 
 	        description.CustomName = "Country"
 	
 	        Me.radPivotGrid1.FilterDescriptions.Add(description)
-	        '#End Region
-	
-	        description = New PropertyFilterDescription()
-	
-	        '#Region "SetCondition"
-	        Dim setCondition As New SetCondition()
-	
-	        setCondition.Comparison = SetComparison.Includes
-	        setCondition.Items.Add("UK")
-	        setCondition.Items.Add("Canada")
-	        setCondition.Items.Add("USA")
-	        '#End Region
-	
-	        description.PropertyName = "ShipCountry"
-	        description.Condition = setCondition
-	        description.CustomName = "Country"
-	
-	        Me.radPivotGrid1.FilterDescriptions.Add(description)
-	    End Sub
-	
-	    Private Sub PivotGridReportFiltering_Load(sender As Object, e As EventArgs) Handles Me.Load
-	        ' TODO: This line of code loads data into the 'nwindDataSet.Orders' table. You can move, or remove it, as needed.
-	        Me.ordersTableAdapter.Fill(Me.nwindDataSet.Orders)
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -184,19 +122,6 @@ The __Condition__ property of the __PropertyFilterDescription__ holds the
 	        setCondition.Items.Add("UK")
 	        setCondition.Items.Add("Canada")
 	        setCondition.Items.Add("USA")
-	        '#End Region
-	
-	        description.PropertyName = "ShipCountry"
-	        description.Condition = setCondition
-	        description.CustomName = "Country"
-	
-	        Me.radPivotGrid1.FilterDescriptions.Add(description)
-	    End Sub
-	
-	    Private Sub PivotGridReportFiltering_Load(sender As Object, e As EventArgs) Handles Me.Load
-	        ' TODO: This line of code loads data into the 'nwindDataSet.Orders' table. You can move, or remove it, as needed.
-	        Me.ordersTableAdapter.Fill(Me.nwindDataSet.Orders)
-	    End Sub
-	End Class
+	{{endregion}}
 
 

@@ -61,70 +61,7 @@ Here is an example how you can create a Header:
 	        Dim header As New Header() With {.Body = radDocument, .IsLinkedToPrevious = False} 'radDocument is an instance of RadDocument, representing the content of a Header,
 	        'typically contains a few paragraphs
 	
-	        '#End Region
-	
-	        Dim section As New Section()
-	
-	        '#Region "section"
-	
-	        section.Headers.Default = header
-	
-	        '#End Region
-	
-	        '#Region "editor"
-	
-	        Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, HeaderFooterType.Default, header)
-	
-	        '#End Region
-	
-	        '#Region "first"
-	
-	        Me.radRichTextEditor1.Document.Sections.First.HasDifferentFirstPageHeaderFooter = True
-	        'or
-	        Me.radRichTextEditor1.Document.HasDifferentEvenAndOddHeadersFooters = True
-	
-	        '#End Region
-	
-	        '#Region "footer"
-	
-	        Dim footer As New Footer() With {.Body = radDocument, .IsLinkedToPrevious = False} 'radDocument is an instance of RadDocument, representing the content of the footer
-	
-	        '#End Region
-	
-	        '#Region "footersection"
-	
-	        section.Footers.Default = footer
-	
-	        '#End Region
-	
-	        '#Region "update"
-	
-	        Me.radRichTextEditor1.UpdateFooter(Me.radRichTextEditor1.Document.Sections.First, HeaderFooterType.Default, footer)
-	
-	        '#End Region
-	
-	        '#Region "even"
-	
-	        Me.radRichTextEditor1.Document.Sections.First.HasDifferentFirstPageHeaderFooter = True
-	        'or
-	        Me.radRichTextEditor1.Document.HasDifferentEvenAndOddHeadersFooters = True
-	
-	        '#End Region
-	    End Sub
-	End Class
-	
-	#Region "custom"
-	
-	Friend Class CustomUILayerBuilder
-	    Inherits UILayersBuilder
-	
-	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-	        Me.BuildUILayersOverride(uiLayerContainer)
-	        uiLayerContainer.UILayers.Remove(DefaultUILayers.HeaderFooterLayer)
-	    End Sub
-	End Class
-	
-	#End Region
+	{{endregion}}
 
 
 
@@ -148,62 +85,7 @@ When it comes to using a Header created in this manner, this depends on the stat
 	
 	        section.Headers.Default = header
 	
-	        '#End Region
-	
-	        '#Region "editor"
-	
-	        Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, HeaderFooterType.Default, header)
-	
-	        '#End Region
-	
-	        '#Region "first"
-	
-	        Me.radRichTextEditor1.Document.Sections.First.HasDifferentFirstPageHeaderFooter = True
-	        'or
-	        Me.radRichTextEditor1.Document.HasDifferentEvenAndOddHeadersFooters = True
-	
-	        '#End Region
-	
-	        '#Region "footer"
-	
-	        Dim footer As New Footer() With {.Body = radDocument, .IsLinkedToPrevious = False} 'radDocument is an instance of RadDocument, representing the content of the footer
-	
-	        '#End Region
-	
-	        '#Region "footersection"
-	
-	        section.Footers.Default = footer
-	
-	        '#End Region
-	
-	        '#Region "update"
-	
-	        Me.radRichTextEditor1.UpdateFooter(Me.radRichTextEditor1.Document.Sections.First, HeaderFooterType.Default, footer)
-	
-	        '#End Region
-	
-	        '#Region "even"
-	
-	        Me.radRichTextEditor1.Document.Sections.First.HasDifferentFirstPageHeaderFooter = True
-	        'or
-	        Me.radRichTextEditor1.Document.HasDifferentEvenAndOddHeadersFooters = True
-	
-	        '#End Region
-	    End Sub
-	End Class
-	
-	#Region "custom"
-	
-	Friend Class CustomUILayerBuilder
-	    Inherits UILayersBuilder
-	
-	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-	        Me.BuildUILayersOverride(uiLayerContainer)
-	        uiLayerContainer.UILayers.Remove(DefaultUILayers.HeaderFooterLayer)
-	    End Sub
-	End Class
-	
-	#End Region
+	{{endregion}}
 
 
 
@@ -225,56 +107,7 @@ When it comes to using a Header created in this manner, this depends on the stat
 	
 	        Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, HeaderFooterType.Default, header)
 	
-	        '#End Region
-	
-	        '#Region "first"
-	
-	        Me.radRichTextEditor1.Document.Sections.First.HasDifferentFirstPageHeaderFooter = True
-	        'or
-	        Me.radRichTextEditor1.Document.HasDifferentEvenAndOddHeadersFooters = True
-	
-	        '#End Region
-	
-	        '#Region "footer"
-	
-	        Dim footer As New Footer() With {.Body = radDocument, .IsLinkedToPrevious = False} 'radDocument is an instance of RadDocument, representing the content of the footer
-	
-	        '#End Region
-	
-	        '#Region "footersection"
-	
-	        section.Footers.Default = footer
-	
-	        '#End Region
-	
-	        '#Region "update"
-	
-	        Me.radRichTextEditor1.UpdateFooter(Me.radRichTextEditor1.Document.Sections.First, HeaderFooterType.Default, footer)
-	
-	        '#End Region
-	
-	        '#Region "even"
-	
-	        Me.radRichTextEditor1.Document.Sections.First.HasDifferentFirstPageHeaderFooter = True
-	        'or
-	        Me.radRichTextEditor1.Document.HasDifferentEvenAndOddHeadersFooters = True
-	
-	        '#End Region
-	    End Sub
-	End Class
-	
-	#Region "custom"
-	
-	Friend Class CustomUILayerBuilder
-	    Inherits UILayersBuilder
-	
-	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-	        Me.BuildUILayersOverride(uiLayerContainer)
-	        uiLayerContainer.UILayers.Remove(DefaultUILayers.HeaderFooterLayer)
-	    End Sub
-	End Class
-	
-	#End Region
+	{{endregion}}
 
 
 
@@ -302,48 +135,7 @@ All header/footer types - Default, First and Even are set identically. The only 
 	        'or
 	        Me.radRichTextEditor1.Document.HasDifferentEvenAndOddHeadersFooters = True
 	
-	        '#End Region
-	
-	        '#Region "footer"
-	
-	        Dim footer As New Footer() With {.Body = radDocument, .IsLinkedToPrevious = False} 'radDocument is an instance of RadDocument, representing the content of the footer
-	
-	        '#End Region
-	
-	        '#Region "footersection"
-	
-	        section.Footers.Default = footer
-	
-	        '#End Region
-	
-	        '#Region "update"
-	
-	        Me.radRichTextEditor1.UpdateFooter(Me.radRichTextEditor1.Document.Sections.First, HeaderFooterType.Default, footer)
-	
-	        '#End Region
-	
-	        '#Region "even"
-	
-	        Me.radRichTextEditor1.Document.Sections.First.HasDifferentFirstPageHeaderFooter = True
-	        'or
-	        Me.radRichTextEditor1.Document.HasDifferentEvenAndOddHeadersFooters = True
-	
-	        '#End Region
-	    End Sub
-	End Class
-	
-	#Region "custom"
-	
-	Friend Class CustomUILayerBuilder
-	    Inherits UILayersBuilder
-	
-	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-	        Me.BuildUILayersOverride(uiLayerContainer)
-	        uiLayerContainer.UILayers.Remove(DefaultUILayers.HeaderFooterLayer)
-	    End Sub
-	End Class
-	
-	#End Region
+	{{endregion}}
 
 
 
@@ -369,42 +161,7 @@ Setting the Footers can be done in the same way.
 	
 	        Dim footer As New Footer() With {.Body = radDocument, .IsLinkedToPrevious = False} 'radDocument is an instance of RadDocument, representing the content of the footer
 	
-	        '#End Region
-	
-	        '#Region "footersection"
-	
-	        section.Footers.Default = footer
-	
-	        '#End Region
-	
-	        '#Region "update"
-	
-	        Me.radRichTextEditor1.UpdateFooter(Me.radRichTextEditor1.Document.Sections.First, HeaderFooterType.Default, footer)
-	
-	        '#End Region
-	
-	        '#Region "even"
-	
-	        Me.radRichTextEditor1.Document.Sections.First.HasDifferentFirstPageHeaderFooter = True
-	        'or
-	        Me.radRichTextEditor1.Document.HasDifferentEvenAndOddHeadersFooters = True
-	
-	        '#End Region
-	    End Sub
-	End Class
-	
-	#Region "custom"
-	
-	Friend Class CustomUILayerBuilder
-	    Inherits UILayersBuilder
-	
-	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-	        Me.BuildUILayersOverride(uiLayerContainer)
-	        uiLayerContainer.UILayers.Remove(DefaultUILayers.HeaderFooterLayer)
-	    End Sub
-	End Class
-	
-	#End Region
+	{{endregion}}
 
 
 
@@ -428,36 +185,7 @@ Setting the Footers can be done in the same way.
 	
 	        section.Footers.Default = footer
 	
-	        '#End Region
-	
-	        '#Region "update"
-	
-	        Me.radRichTextEditor1.UpdateFooter(Me.radRichTextEditor1.Document.Sections.First, HeaderFooterType.Default, footer)
-	
-	        '#End Region
-	
-	        '#Region "even"
-	
-	        Me.radRichTextEditor1.Document.Sections.First.HasDifferentFirstPageHeaderFooter = True
-	        'or
-	        Me.radRichTextEditor1.Document.HasDifferentEvenAndOddHeadersFooters = True
-	
-	        '#End Region
-	    End Sub
-	End Class
-	
-	#Region "custom"
-	
-	Friend Class CustomUILayerBuilder
-	    Inherits UILayersBuilder
-	
-	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-	        Me.BuildUILayersOverride(uiLayerContainer)
-	        uiLayerContainer.UILayers.Remove(DefaultUILayers.HeaderFooterLayer)
-	    End Sub
-	End Class
-	
-	#End Region
+	{{endregion}}
 
 
 
@@ -479,30 +207,7 @@ Setting the Footers can be done in the same way.
 	
 	        Me.radRichTextEditor1.UpdateFooter(Me.radRichTextEditor1.Document.Sections.First, HeaderFooterType.Default, footer)
 	
-	        '#End Region
-	
-	        '#Region "even"
-	
-	        Me.radRichTextEditor1.Document.Sections.First.HasDifferentFirstPageHeaderFooter = True
-	        'or
-	        Me.radRichTextEditor1.Document.HasDifferentEvenAndOddHeadersFooters = True
-	
-	        '#End Region
-	    End Sub
-	End Class
-	
-	#Region "custom"
-	
-	Friend Class CustomUILayerBuilder
-	    Inherits UILayersBuilder
-	
-	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-	        Me.BuildUILayersOverride(uiLayerContainer)
-	        uiLayerContainer.UILayers.Remove(DefaultUILayers.HeaderFooterLayer)
-	    End Sub
-	End Class
-	
-	#End Region
+	{{endregion}}
 
 
 
@@ -530,22 +235,7 @@ As for setting different footers for the first page or the even page, this is do
 	        'or
 	        Me.radRichTextEditor1.Document.HasDifferentEvenAndOddHeadersFooters = True
 	
-	        '#End Region
-	    End Sub
-	End Class
-	
-	#Region "custom"
-	
-	Friend Class CustomUILayerBuilder
-	    Inherits UILayersBuilder
-	
-	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-	        Me.BuildUILayersOverride(uiLayerContainer)
-	        uiLayerContainer.UILayers.Remove(DefaultUILayers.HeaderFooterLayer)
-	    End Sub
-	End Class
-	
-	#End Region
+	{{endregion}}
 
 
 
@@ -589,7 +279,7 @@ Headers and footers are only present in Paged layout mode, so the easiest way to
 	    End Sub
 	End Class
 	
-	#End Region
+	{{endregion}}
 
 
 

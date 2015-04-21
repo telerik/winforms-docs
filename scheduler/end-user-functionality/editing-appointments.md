@@ -79,25 +79,7 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorViewModeEditor}}
 	        Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.Editor
-	        '#End Region
-	
-	        '#Region "editorViewModeEditorDialog"
-	        Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.EditorDialog
-	        '#End Region
-	
-	        '#Region "editorViewModeEditorNone"
-	        Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.None
-	        '#End Region
-	
-	        AddHandler RadScheduler1.EditorRequired, AddressOf radScheduler1_EditorRequired
-	    End Sub
-	
-	    '#Region "editorRequired"
-	    Private Sub radScheduler1_EditorRequired(ByVal sender As Object, ByVal e As SchedulerEditorRequiredArgs)
-	        e.Editor = New CustomSchedulerTextBoxEditor()
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 ![scheduler-end-user-functionality-editing-appointments 001](images/scheduler-end-user-functionality-editing-appointments001.png)
 
@@ -117,21 +99,7 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorViewModeEditorDialog}}
 	        Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.EditorDialog
-	        '#End Region
-	
-	        '#Region "editorViewModeEditorNone"
-	        Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.None
-	        '#End Region
-	
-	        AddHandler RadScheduler1.EditorRequired, AddressOf radScheduler1_EditorRequired
-	    End Sub
-	
-	    '#Region "editorRequired"
-	    Private Sub radScheduler1_EditorRequired(ByVal sender As Object, ByVal e As SchedulerEditorRequiredArgs)
-	        e.Editor = New CustomSchedulerTextBoxEditor()
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 ![scheduler-end-user-functionality-editing-appointments 002](images/scheduler-end-user-functionality-editing-appointments002.png)
 
@@ -149,17 +117,7 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorViewModeEditorNone}}
 	        Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.None
-	        '#End Region
-	
-	        AddHandler RadScheduler1.EditorRequired, AddressOf radScheduler1_EditorRequired
-	    End Sub
-	
-	    '#Region "editorRequired"
-	    Private Sub radScheduler1_EditorRequired(ByVal sender As Object, ByVal e As SchedulerEditorRequiredArgs)
-	        e.Editor = New CustomSchedulerTextBoxEditor()
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -228,7 +186,7 @@ You are able to change the default editors in the EditorRequired event of the Ra
 	        End If
 	    End Sub
 	End Class
-	'#End Region
+	{{endregion}}
 
 
 
@@ -253,8 +211,7 @@ After creating the custom editor that edits Description property of the appointm
 	    Private Sub radScheduler1_EditorRequired(ByVal sender As Object, ByVal e As SchedulerEditorRequiredArgs)
 	        e.Editor = New CustomSchedulerTextBoxEditor()
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 

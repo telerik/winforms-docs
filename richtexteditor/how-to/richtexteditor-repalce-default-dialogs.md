@@ -71,39 +71,7 @@ This article will demonstrate how you can replace the default __FindAndRepacle__
 	            Me.richTextBox.Document.Selection.AddSelectionEnd(textRange.EndPosition)
 	        Next textRange
 	    End Sub
-	    '#End Region
-	
-	    '#Region "interface"
-	    Private richTextBox As RadRichTextBox
-	    Private _isOpen As Boolean
-	
-	    Public ReadOnly Property IsOpen() As Boolean Implements IFindReplaceDialog.IsOpen
-	        Get
-	            Return Me._isOpen
-	        End Get
-	    End Property
-	
-	    Public Sub Show(ByVal richTextBox As RadRichTextBox, ByVal replaceCallback As Func(Of String, Boolean), ByVal textToFind As String) Implements IFindReplaceDialog.Show
-	        Me.Owner = richTextBox.ElementTree.Control.FindForm()
-	        Me.richTextBox = richTextBox
-	        MyBase.Show()
-	    End Sub
-	
-	    Public Sub Close() Implements IFindReplaceDialog.Close
-	
-	    End Sub
-	
-	    Protected Overrides Sub OnShown(ByVal e As EventArgs)
-	        Me._isOpen = True
-	        MyBase.OnShown(e)
-	    End Sub
-	
-	    Protected Overrides Sub OnActivated(ByVal e As EventArgs)
-	        Me._isOpen = False
-	        MyBase.OnActivated(e)
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -127,63 +95,7 @@ This article will demonstrate how you can replace the default __FindAndRepacle__
 	Partial Public Class FindAllDialog
 	    Inherits RadForm
 	    Implements IFindReplaceDialog
-	    '#End Region
-	
-	    Dim radTextBox1 As New RadTextBox()
-	    Dim radColorBox1 As New RadColorBox()
-	Public Sub New()
-	    InitializeComponent()
-	End Sub
-	    '#Region "search"
-	    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim textToFind As String = radTextBox1.Text
-	        SelectAllMatches(textToFind)
-	        Dim color = radColorBox1.Value
-	        richTextBox.ChangeTextHighlightColor(color)
-	        Me.richTextBox.Document.Selection.Clear()
-	    End Sub
-	
-	    Private Sub SelectAllMatches(ByVal toSearch As String)
-	        Me.richTextBox.Document.Selection.Clear()
-	        Dim search As New DocumentTextSearch(Me.richTextBox.Document)
-	        For Each textRange In search.FindAll(toSearch)
-	            Me.richTextBox.Document.Selection.AddSelectionStart(textRange.StartPosition)
-	            Me.richTextBox.Document.Selection.AddSelectionEnd(textRange.EndPosition)
-	        Next textRange
-	    End Sub
-	    '#End Region
-	
-	    '#Region "interface"
-	    Private richTextBox As RadRichTextBox
-	    Private _isOpen As Boolean
-	
-	    Public ReadOnly Property IsOpen() As Boolean Implements IFindReplaceDialog.IsOpen
-	        Get
-	            Return Me._isOpen
-	        End Get
-	    End Property
-	
-	    Public Sub Show(ByVal richTextBox As RadRichTextBox, ByVal replaceCallback As Func(Of String, Boolean), ByVal textToFind As String) Implements IFindReplaceDialog.Show
-	        Me.Owner = richTextBox.ElementTree.Control.FindForm()
-	        Me.richTextBox = richTextBox
-	        MyBase.Show()
-	    End Sub
-	
-	    Public Sub Close() Implements IFindReplaceDialog.Close
-	
-	    End Sub
-	
-	    Protected Overrides Sub OnShown(ByVal e As EventArgs)
-	        Me._isOpen = True
-	        MyBase.OnShown(e)
-	    End Sub
-	
-	    Protected Overrides Sub OnActivated(ByVal e As EventArgs)
-	        Me._isOpen = False
-	        MyBase.OnActivated(e)
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 Now you are ready to add the required fields, property and methods:
 
@@ -256,8 +168,7 @@ Now you are ready to add the required fields, property and methods:
 	        Me._isOpen = False
 	        MyBase.OnActivated(e)
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -276,9 +187,7 @@ Now you are ready to add the required fields, property and methods:
 
 {{source=..\SamplesVB\RichTextEditor\HowTo\ChangeDefaultDialogs.vb region=assign}}
 	        radRichTextEditor1.RichTextBoxElement.FindReplaceDialog = New FindAllDialog()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -171,8 +171,7 @@ It is possible to manually set up the child templates and the relations between 
 	        radGridView1.Relations.Add(relation2)
 	    End Sub
 	
-	#End Region
-	End Class
+	{{endregion}}
 
 ![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 003](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically003.png)
 
@@ -539,16 +538,6 @@ Following the introduced approach in the previous section, the three-level hiera
 	        End Using
 	    End Sub
 	
-	    #End Region
-	
-	    '=======================================================
-	    'Service provided by Telerik (www.telerik.com)
-	    'Conversion powered by NRefactory.
-	    'Twitter: @telerik
-	    'Facebook: facebook.com/telerik
-	    '=======================================================
-	    
-	
-	End Class
+	{{endregion}}
 
 ![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 004](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically004.png)

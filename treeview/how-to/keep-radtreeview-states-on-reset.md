@@ -222,121 +222,7 @@ The following code snippet demonstrates how to populate the __RadTreeView__ with
 	        End Sub
 	    End Class
 	
-	    #End Region
-	
-	    #Region "KeepTreeViewStates"
-	
-	    Private Sub radButtonAdd_Click(sender As Object, e As EventArgs) Handles RadButtonAdd.Click
-	        Dim scrollBarValue As Integer = RadTreeView1.VScrollBar.Value
-	        For Each nodeToSave As RadTreeNode In RadTreeView1.Nodes
-	            SaveExpandedStates(nodeToSave)
-	        Next
-	
-	        Dim parent As ParentObject = TryCast(RadTreeView1.Nodes(0).DataBoundItem, ParentObject)
-	        parent.Children.Add(New ChildObject(673, "New child"))
-	
-	        RadTreeView1.TreeViewElement.Update(RadTreeViewElement.UpdateActions.ItemAdded)
-	
-	        For Each nodeToRestore As RadTreeNode In RadTreeView1.Nodes
-	            RestoreExpandedStates(nodeToRestore)
-	        Next
-	        RadTreeView1.VScrollBar.Value = scrollBarValue
-	    End Sub
-	
-	    Private Sub radButtonDelete_Click(sender As Object, e As EventArgs) Handles RadButtonDelete.Click
-	        Dim scrollBarValue As Integer = RadTreeView1.VScrollBar.Value
-	        For Each nodeToSave As RadTreeNode In RadTreeView1.Nodes
-	            SaveExpandedStates(nodeToSave)
-	        Next
-	
-	        Dim parent As ParentObject = TryCast(RadTreeView1.Nodes(0).DataBoundItem, ParentObject)
-	        parent.Children.Clear()
-	
-	        RadTreeView1.TreeViewElement.Update(RadTreeViewElement.UpdateActions.ItemRemoved)
-	
-	        For Each nodeToRestore As RadTreeNode In RadTreeView1.Nodes
-	            RestoreExpandedStates(nodeToRestore)
-	        Next
-	        RadTreeView1.VScrollBar.Value = scrollBarValue
-	    End Sub
-	
-	    Private Sub radButtonUpdate_Click(sender As Object, e As EventArgs) Handles RadButtonUpdate.Click
-	        Dim scrollBarValue As Integer = RadTreeView1.VScrollBar.Value
-	        For Each nodeToSave As RadTreeNode In RadTreeView1.Nodes
-	            SaveExpandedStates(nodeToSave)
-	        Next
-	
-	        Dim parent As ParentObject = TryCast(RadTreeView1.Nodes(2).DataBoundItem, ParentObject)
-	        parent.Children(1).Description = "New description"
-	
-	        For Each nodeToRestore As RadTreeNode In RadTreeView1.Nodes
-	            RestoreExpandedStates(nodeToRestore)
-	        Next
-	        RadTreeView1.VScrollBar.Value = scrollBarValue
-	    End Sub
-	
-	    #End Region
-	
-	    #Region "SaveRestore"
-	
-	    Private nodeStates As New Dictionary(Of Object, State)()
-	
-	    Private Structure State
-	        Public Property Expanded() As Boolean
-	            Get
-	                Return m_Expanded
-	            End Get
-	            Set(value As Boolean)
-	                m_Expanded = value
-	            End Set
-	        End Property
-	        Private m_Expanded As Boolean
-	
-	        Public Property Selected() As Boolean
-	            Get
-	                Return m_Selected
-	            End Get
-	            Set(value As Boolean)
-	                m_Selected = value
-	            End Set
-	        End Property
-	        Private m_Selected As Boolean
-	
-	        Public Sub New(expanded As Boolean, selected As Boolean)
-	            Me.Expanded = expanded
-	            Me.Selected = selected
-	        End Sub
-	    End Structure
-	
-	    Private Sub SaveExpandedStates(nodeToSave As RadTreeNode)
-	        If True Then
-	            If nodeToSave IsNot Nothing AndAlso nodeToSave.DataBoundItem IsNot Nothing Then
-	                If Not nodeStates.ContainsKey(nodeToSave.DataBoundItem) Then
-	                    nodeStates.Add(nodeToSave.DataBoundItem, New State(nodeToSave.Expanded, nodeToSave.Selected))
-	                Else
-	                    nodeStates(nodeToSave.DataBoundItem) = New State(nodeToSave.Expanded, nodeToSave.Selected)
-	                End If
-	            End If
-	            For Each childNode As RadTreeNode In nodeToSave.Nodes
-	                SaveExpandedStates(childNode)
-	            Next
-	        End If
-	    End Sub
-	
-	    Private Sub RestoreExpandedStates(nodeToRestore As RadTreeNode)
-	        If nodeToRestore IsNot Nothing AndAlso nodeToRestore.DataBoundItem IsNot Nothing AndAlso nodeStates.ContainsKey(nodeToRestore.DataBoundItem) Then
-	            nodeToRestore.Expanded = nodeStates(nodeToRestore.DataBoundItem).Expanded
-	            nodeToRestore.Selected = nodeStates(nodeToRestore.DataBoundItem).Selected
-	        End If
-	
-	        For Each childNode As RadTreeNode In nodeToRestore.Nodes
-	            RestoreExpandedStates(childNode)
-	        Next
-	    End Sub
-	
-	    #End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -473,9 +359,7 @@ Unfortunately, a solution of this cannot be added to the control as it
 	        Next
 	    End Sub
 	
-	    #End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -602,68 +486,7 @@ Once we have these methods implemented, we can use the dictionary to save the Ra
 	        RadTreeView1.VScrollBar.Value = scrollBarValue
 	    End Sub
 	
-	    #End Region
-	
-	    #Region "SaveRestore"
-	
-	    Private nodeStates As New Dictionary(Of Object, State)()
-	
-	    Private Structure State
-	        Public Property Expanded() As Boolean
-	            Get
-	                Return m_Expanded
-	            End Get
-	            Set(value As Boolean)
-	                m_Expanded = value
-	            End Set
-	        End Property
-	        Private m_Expanded As Boolean
-	
-	        Public Property Selected() As Boolean
-	            Get
-	                Return m_Selected
-	            End Get
-	            Set(value As Boolean)
-	                m_Selected = value
-	            End Set
-	        End Property
-	        Private m_Selected As Boolean
-	
-	        Public Sub New(expanded As Boolean, selected As Boolean)
-	            Me.Expanded = expanded
-	            Me.Selected = selected
-	        End Sub
-	    End Structure
-	
-	    Private Sub SaveExpandedStates(nodeToSave As RadTreeNode)
-	        If True Then
-	            If nodeToSave IsNot Nothing AndAlso nodeToSave.DataBoundItem IsNot Nothing Then
-	                If Not nodeStates.ContainsKey(nodeToSave.DataBoundItem) Then
-	                    nodeStates.Add(nodeToSave.DataBoundItem, New State(nodeToSave.Expanded, nodeToSave.Selected))
-	                Else
-	                    nodeStates(nodeToSave.DataBoundItem) = New State(nodeToSave.Expanded, nodeToSave.Selected)
-	                End If
-	            End If
-	            For Each childNode As RadTreeNode In nodeToSave.Nodes
-	                SaveExpandedStates(childNode)
-	            Next
-	        End If
-	    End Sub
-	
-	    Private Sub RestoreExpandedStates(nodeToRestore As RadTreeNode)
-	        If nodeToRestore IsNot Nothing AndAlso nodeToRestore.DataBoundItem IsNot Nothing AndAlso nodeStates.ContainsKey(nodeToRestore.DataBoundItem) Then
-	            nodeToRestore.Expanded = nodeStates(nodeToRestore.DataBoundItem).Expanded
-	            nodeToRestore.Selected = nodeStates(nodeToRestore.DataBoundItem).Selected
-	        End If
-	
-	        For Each childNode As RadTreeNode In nodeToRestore.Nodes
-	            RestoreExpandedStates(childNode)
-	        Next
-	    End Sub
-	
-	    #End Region
-	
-	End Class
+	{{endregion}}
 
 
 

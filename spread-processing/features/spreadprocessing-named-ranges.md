@@ -125,14 +125,7 @@ __Example 1__ demonstrates how to add and use defined names. The code creates a 
 	
 	        workbook.Names.Remove("CorporateTax")
 	        sheet1.Names.Remove("GrossProfit")
-	        '#End Region
-	
-	        '#Region radspreadprocessing-features-named-ranges_1
-	        workbook.Names.Remove("CorporateTax")
-	        sheet1.Names.Remove("GrossProfit")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -158,8 +151,6 @@ __Example 2__ shows how to remove one of the names added in __Example 1__.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingNamedRanges.vb region=radspreadprocessing-features-named-ranges_1}}
 	        workbook.Names.Remove("CorporateTax")
 	        sheet1.Names.Remove("GrossProfit")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

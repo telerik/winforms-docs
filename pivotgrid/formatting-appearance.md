@@ -113,8 +113,7 @@ The GroupElementFormatting event can be used for styling the group cells:
 	            e.GroupElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
 	        End If
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 ![pivotgrid-formatting-appearance 002](images/pivotgrid-formatting-appearance002.png)
 

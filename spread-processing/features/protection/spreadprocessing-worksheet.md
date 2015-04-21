@@ -48,28 +48,7 @@ __Example 1__ sets the __IsLocked__ property of cell A1 to false and protects th
 	        worksheet.Cells(0, 0).SetIsLocked(False)
 	
 	        worksheet.Protect("telerik", WorksheetProtectionOptions.[Default])
-	        '#End Region
-	    End Sub
-	
-	    Public Shared Sub WorksheetUnprotect()
-	        '#Region "radspreadprocessing-features-protection-worksheet_1"
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        worksheet.Protect("telerik", WorksheetProtectionOptions.[Default])
-	
-	        worksheet.Unprotect("telerik")
-	        '#End Region
-	    End Sub
-	
-	    Public Shared Sub WorksheetProtectionMethod()
-	        '#Region "radspreadprocessing-features-protection-worksheet_2"
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim options As New WorksheetProtectionOptions(allowInsertRows:=True, allowDeleteRows:=True)
-	        worksheet.Protect("telerik", options)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -99,18 +78,7 @@ __Example 2__ demonstrates how to unprotect a worksheet:
 	        worksheet.Protect("telerik", WorksheetProtectionOptions.[Default])
 	
 	        worksheet.Unprotect("telerik")
-	        '#End Region
-	    End Sub
-	
-	    Public Shared Sub WorksheetProtectionMethod()
-	        '#Region "radspreadprocessing-features-protection-worksheet_2"
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim options As New WorksheetProtectionOptions(allowInsertRows:=True, allowDeleteRows:=True)
-	        worksheet.Protect("telerik", options)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -143,9 +111,7 @@ __Example 3__ demonstrates how to protect a worksheet using WorksheetProtectionO
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        Dim options As New WorksheetProtectionOptions(allowInsertRows:=True, allowDeleteRows:=True)
 	        worksheet.Protect("telerik", options)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -68,39 +68,7 @@ There are also properties for the above settings which you can set in your code:
 	        Me.RadPdfViewer1.ReadingMode = ReadingMode.OnDemand
 	        Me.RadPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection
 	
-	        '#End Region
-	
-	        '#Region "Loading"
-	
-	        Me.RadPdfViewer1.LoadDocument(Application.StartupPath & "\PdfViewer\Sample.pdf")
-	
-	        '#End Region
-	
-	        '#Region "Navigator"
-	
-	        Me.RadPdfViewerNavigator1.AssociatedViewer = Me.RadPdfViewer1
-	
-	        '#End Region
-	    End Sub
-	
-	#Region "DocumentLoaded"
-	
-	    Private Sub radPdfViewer1_DocumentLoaded(sender As Object, e As EventArgs)
-	        RadMessageBox.Show("The document was loaded.")
-	    End Sub
-	
-	#End Region
-	
-	    Private Sub RadButton1_Click(sender As System.Object, e As System.EventArgs) Handles RadButton1.Click
-	        '#Region "PrintMethods"
-	
-	        Me.RadPdfViewer1.Print()
-	        Me.RadPdfViewer1.PrintPreview()
-	
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -123,33 +91,7 @@ Loading a PDF document is done via the __LoadDocument__ method. It accepts eithe
 	
 	        Me.RadPdfViewer1.LoadDocument(Application.StartupPath & "\PdfViewer\Sample.pdf")
 	
-	        '#End Region
-	
-	        '#Region "Navigator"
-	
-	        Me.RadPdfViewerNavigator1.AssociatedViewer = Me.RadPdfViewer1
-	
-	        '#End Region
-	    End Sub
-	
-	#Region "DocumentLoaded"
-	
-	    Private Sub radPdfViewer1_DocumentLoaded(sender As Object, e As EventArgs)
-	        RadMessageBox.Show("The document was loaded.")
-	    End Sub
-	
-	#End Region
-	
-	    Private Sub RadButton1_Click(sender As System.Object, e As System.EventArgs) Handles RadButton1.Click
-	        '#Region "PrintMethods"
-	
-	        Me.RadPdfViewer1.Print()
-	        Me.RadPdfViewer1.PrintPreview()
-	
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -177,18 +119,7 @@ The calls above will start to load the specified document asynchronously. When t
 	        RadMessageBox.Show("The document was loaded.")
 	    End Sub
 	
-	#End Region
-	
-	    Private Sub RadButton1_Click(sender As System.Object, e As System.EventArgs) Handles RadButton1.Click
-	        '#Region "PrintMethods"
-	
-	        Me.RadPdfViewer1.Print()
-	        Me.RadPdfViewer1.PrintPreview()
-	
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -237,27 +168,7 @@ You can also set this in your code by using the __AssociatedPdfViewer__ property
 	
 	        Me.RadPdfViewerNavigator1.AssociatedViewer = Me.RadPdfViewer1
 	
-	        '#End Region
-	    End Sub
-	
-	#Region "DocumentLoaded"
-	
-	    Private Sub radPdfViewer1_DocumentLoaded(sender As Object, e As EventArgs)
-	        RadMessageBox.Show("The document was loaded.")
-	    End Sub
-	
-	#End Region
-	
-	    Private Sub RadButton1_Click(sender As System.Object, e As System.EventArgs) Handles RadButton1.Click
-	        '#Region "PrintMethods"
-	
-	        Me.RadPdfViewer1.Print()
-	        Me.RadPdfViewer1.PrintPreview()
-	
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 

@@ -41,6 +41,8 @@ data from the cache and optionally flushes old data from memory.
 
 * Filtering
 
+* Paging
+
 When you are implementing virtual mode, you will need to track when a new
 row is needed in the data model and when to rollback the adding of the new row.
 The exact implementation of this functionality will depend on the

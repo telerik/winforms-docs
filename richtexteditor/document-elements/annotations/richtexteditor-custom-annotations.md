@@ -75,95 +75,7 @@ The most common scenarios for the use of custom annotations is for associating s
 	    Protected Overrides Sub CopyContentFromOverride(ByVal fromElement As DocumentElement)
 	    End Sub
 	
-	#End Region
-	
-	#Region "copy"
-	
-	    Protected Overrides Sub CopyPropertiesFromOverride(ByVal fromElement As DocumentElement)
-	        MyBase.CopyPropertiesFromOverride(fromElement)
-	        Me.Name = CType(fromElement, CustomAnnotationRangeStart).Name
-	    End Sub
-	
-	#End Region
-	
-	#Region "delete"
-	
-	    Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.SelectAnnotation
-	        End Get
-	    End Property
-	
-	    Public Overrides ReadOnly Property BackspaceBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.SelectAnnotation
-	        End Get
-	    End Property
-	
-	    Public Overrides ReadOnly Property DeleteSelectedBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-	        End Get
-	    End Property
-	
-	#End Region
-	
-	#Region "name"
-	
-	    <XamlSerializable>
-	    Public Property Name() As String
-	
-	#End Region
-	
-	    Public Overrides ReadOnly Property SkipPositionBefore() As Boolean
-	        Get
-	            Return True
-	        End Get
-	    End Property
-	End Class
-	
-	Public Class CustomAnnotationRangeEnd
-	    Inherits AnnotationRangeEnd
-	
-	    Protected Overrides Function CreateNewElementInstance() As DocumentElement
-	        Return New CustomAnnotationRangeEnd()
-	    End Function
-	#Region "instance"
-	    Protected Overrides Function CreateRangeStartInstance() As AnnotationRangeStart
-	        Return New CustomAnnotationRangeStart()
-	    End Function
-	#End Region
-	    Protected Overrides Sub CopyContentFromOverride(ByVal fromElement As DocumentElement)
-	    End Sub
-	
-	    Public Overrides ReadOnly Property SkipPositionBefore() As Boolean
-	        Get
-	            Return True
-	        End Get
-	    End Property
-	
-	#Region "delete2"
-	
-	    Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.PreserveAnnotation
-	        End Get
-	    End Property
-	
-	    Public Overrides ReadOnly Property BackspaceBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-	        End Get
-	    End Property
-	
-	    Public Overrides ReadOnly Property DeleteSelectedBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-	        End Get
-	    End Property
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -186,38 +98,7 @@ The most common scenarios for the use of custom annotations is for associating s
 	    Protected Overrides Function CreateRangeStartInstance() As AnnotationRangeStart
 	        Return New CustomAnnotationRangeStart()
 	    End Function
-	#End Region
-	    Protected Overrides Sub CopyContentFromOverride(ByVal fromElement As DocumentElement)
-	    End Sub
-	
-	    Public Overrides ReadOnly Property SkipPositionBefore() As Boolean
-	        Get
-	            Return True
-	        End Get
-	    End Property
-	
-	#Region "delete2"
-	
-	    Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.PreserveAnnotation
-	        End Get
-	    End Property
-	
-	    Public Overrides ReadOnly Property BackspaceBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-	        End Get
-	    End Property
-	
-	    Public Overrides ReadOnly Property DeleteSelectedBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-	        End Get
-	    End Property
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -260,86 +141,7 @@ The behavior of the annotations when edited, copied and deleted is determined by
 	        Me.Name = CType(fromElement, CustomAnnotationRangeStart).Name
 	    End Sub
 	
-	#End Region
-	
-	#Region "delete"
-	
-	    Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.SelectAnnotation
-	        End Get
-	    End Property
-	
-	    Public Overrides ReadOnly Property BackspaceBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.SelectAnnotation
-	        End Get
-	    End Property
-	
-	    Public Overrides ReadOnly Property DeleteSelectedBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-	        End Get
-	    End Property
-	
-	#End Region
-	
-	#Region "name"
-	
-	    <XamlSerializable>
-	    Public Property Name() As String
-	
-	#End Region
-	
-	    Public Overrides ReadOnly Property SkipPositionBefore() As Boolean
-	        Get
-	            Return True
-	        End Get
-	    End Property
-	End Class
-	
-	Public Class CustomAnnotationRangeEnd
-	    Inherits AnnotationRangeEnd
-	
-	    Protected Overrides Function CreateNewElementInstance() As DocumentElement
-	        Return New CustomAnnotationRangeEnd()
-	    End Function
-	#Region "instance"
-	    Protected Overrides Function CreateRangeStartInstance() As AnnotationRangeStart
-	        Return New CustomAnnotationRangeStart()
-	    End Function
-	#End Region
-	    Protected Overrides Sub CopyContentFromOverride(ByVal fromElement As DocumentElement)
-	    End Sub
-	
-	    Public Overrides ReadOnly Property SkipPositionBefore() As Boolean
-	        Get
-	            Return True
-	        End Get
-	    End Property
-	
-	#Region "delete2"
-	
-	    Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.PreserveAnnotation
-	        End Get
-	    End Property
-	
-	    Public Overrides ReadOnly Property BackspaceBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-	        End Get
-	    End Property
-	
-	    Public Overrides ReadOnly Property DeleteSelectedBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-	        End Get
-	    End Property
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -413,64 +215,7 @@ The behavior of the annotations when edited, copied and deleted is determined by
 	        End Get
 	    End Property
 	
-	#End Region
-	
-	#Region "name"
-	
-	    <XamlSerializable>
-	    Public Property Name() As String
-	
-	#End Region
-	
-	    Public Overrides ReadOnly Property SkipPositionBefore() As Boolean
-	        Get
-	            Return True
-	        End Get
-	    End Property
-	End Class
-	
-	Public Class CustomAnnotationRangeEnd
-	    Inherits AnnotationRangeEnd
-	
-	    Protected Overrides Function CreateNewElementInstance() As DocumentElement
-	        Return New CustomAnnotationRangeEnd()
-	    End Function
-	#Region "instance"
-	    Protected Overrides Function CreateRangeStartInstance() As AnnotationRangeStart
-	        Return New CustomAnnotationRangeStart()
-	    End Function
-	#End Region
-	    Protected Overrides Sub CopyContentFromOverride(ByVal fromElement As DocumentElement)
-	    End Sub
-	
-	    Public Overrides ReadOnly Property SkipPositionBefore() As Boolean
-	        Get
-	            Return True
-	        End Get
-	    End Property
-	
-	#Region "delete2"
-	
-	    Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.PreserveAnnotation
-	        End Get
-	    End Property
-	
-	    Public Overrides ReadOnly Property BackspaceBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-	        End Get
-	    End Property
-	
-	    Public Overrides ReadOnly Property DeleteSelectedBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-	        End Get
-	    End Property
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 HyperlinkRangeEnd:
 
@@ -528,8 +273,7 @@ HyperlinkRangeEnd:
 	        End Get
 	    End Property
 	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -555,57 +299,7 @@ HyperlinkRangeEnd:
 	    <XamlSerializable>
 	    Public Property Name() As String
 	
-	#End Region
-	
-	    Public Overrides ReadOnly Property SkipPositionBefore() As Boolean
-	        Get
-	            Return True
-	        End Get
-	    End Property
-	End Class
-	
-	Public Class CustomAnnotationRangeEnd
-	    Inherits AnnotationRangeEnd
-	
-	    Protected Overrides Function CreateNewElementInstance() As DocumentElement
-	        Return New CustomAnnotationRangeEnd()
-	    End Function
-	#Region "instance"
-	    Protected Overrides Function CreateRangeStartInstance() As AnnotationRangeStart
-	        Return New CustomAnnotationRangeStart()
-	    End Function
-	#End Region
-	    Protected Overrides Sub CopyContentFromOverride(ByVal fromElement As DocumentElement)
-	    End Sub
-	
-	    Public Overrides ReadOnly Property SkipPositionBefore() As Boolean
-	        Get
-	            Return True
-	        End Get
-	    End Property
-	
-	#Region "delete2"
-	
-	    Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.PreserveAnnotation
-	        End Get
-	    End Property
-	
-	    Public Overrides ReadOnly Property BackspaceBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-	        End Get
-	    End Property
-	
-	    Public Overrides ReadOnly Property DeleteSelectedBehavior() As AnnotationMarkerDeleteBehavior
-	        Get
-	            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-	        End Get
-	    End Property
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 

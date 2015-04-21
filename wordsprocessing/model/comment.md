@@ -44,32 +44,7 @@ __Example 1__ shows how to create a __Comment__ and add its CommentRangeStart an
 	            paragraph.Inlines.Add(comment.CommentRangeStart)
 	            paragraph.Inlines.AddRun("text")
 	            paragraph.Inlines.Add(comment.CommentRangeEnd)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertComment(editor As RadFlowDocumentEditor, comment As Comment)
-	            '#Region "radwordsprocessing-model-comment_1"
-	            editor.InsertComment(comment)
-	            '#End Region
-	
-	        End Sub
-	
-	        Private Sub InsertComment2()
-	            '#Region "radwordsprocessing-model-comment_2"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	
-	            Dim run As Run = editor.InsertText("text")
-	            editor.InsertComment("My sample comment.", run, run)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub AddBlockToComment(comment As Comment)
-	            '#Region "radwordsprocessing-model-comment_3"
-	            Dim paragraph As Paragraph = comment.Blocks.AddParagraph()
-	            Dim table As Table = comment.Blocks.AddTable()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -91,26 +66,7 @@ __Example 2__ showsh ow you can insert a previously created __Comment__ object i
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingComment.vb region=radwordsprocessing-model-comment_1}}
 	            editor.InsertComment(comment)
-	            '#End Region
-	
-	        End Sub
-	
-	        Private Sub InsertComment2()
-	            '#Region "radwordsprocessing-model-comment_2"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	
-	            Dim run As Run = editor.InsertText("text")
-	            editor.InsertComment("My sample comment.", run, run)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub AddBlockToComment(comment As Comment)
-	            '#Region "radwordsprocessing-model-comment_3"
-	            Dim paragraph As Paragraph = comment.Blocks.AddParagraph()
-	            Dim table As Table = comment.Blocks.AddTable()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -135,16 +91,7 @@ __Example 3__ demonstrates how you can use another overload of __RadFlowDocument
 	
 	            Dim run As Run = editor.InsertText("text")
 	            editor.InsertComment("My sample comment.", run, run)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub AddBlockToComment(comment As Comment)
-	            '#Region "radwordsprocessing-model-comment_3"
-	            Dim paragraph As Paragraph = comment.Blocks.AddParagraph()
-	            Dim table As Table = comment.Blocks.AddTable()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -186,9 +133,7 @@ __Example 4__ shows how you can add a Table to a Comment.
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingComment.vb region=radwordsprocessing-model-comment_3}}
 	            Dim paragraph As Paragraph = comment.Blocks.AddParagraph()
 	            Dim table As Table = comment.Blocks.AddTable()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 

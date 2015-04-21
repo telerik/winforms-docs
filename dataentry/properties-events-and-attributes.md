@@ -49,10 +49,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 	              .Salary = 3500, _
 	              .Gender = Gender.Female _
 	             }
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-properties-events-and-attributes 001](images/dataentry-properties-events-and-attributes001.png)
 
@@ -71,10 +68,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=NumberOfColumns}}
 	            Me.radDataEntry1.ColumnCount = 2
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-properties-events-and-attributes 002](images/dataentry-properties-events-and-attributes002.png)
 
@@ -94,16 +88,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=FitToParentWidth}}
 	            Me.radDataEntry1.FitToParentWidth = True
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetNumberOfColumns()
-	            '#Region "NumberOfColumns"
-	            Me.radDataEntry1.ColumnCount = 2
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-properties-events-and-attributes 003](images/dataentry-properties-events-and-attributes003.png)
 
@@ -143,22 +128,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 	            label.BackColor = Color.Transparent
 	            Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
 	
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFitToParentWidth()
-	            '#Region "FitToParentWidth"
-	            Me.radDataEntry1.FitToParentWidth = True
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetNumberOfColumns()
-	            '#Region "NumberOfColumns"
-	            Me.radDataEntry1.ColumnCount = 2
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-properties-events-and-attributes 004](images/dataentry-properties-events-and-attributes004.png)
 
@@ -180,45 +150,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=FillingOrder1}}
 	            Me.radDataEntry1.ColumnCount = 2
 	            Me.radDataEntry1.FlowDirection = FlowDirection.TopDown
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFillingOrder2()
-	            '#Region "FillingOrder2"
-	            Me.radDataEntry1.ColumnCount = 2
-	            Me.radDataEntry1.FlowDirection = FlowDirection.LeftToRight
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetShowValidationPanel()
-	            '#Region "ShowValidationPanel"
-	
-	            Me.radDataEntry1.ShowValidationPanel = True
-	
-	            Dim label As New RadLabel()
-	            label.Name = "First Name"
-	            label.Text = "<html><size=10><b>First Name : </b>First Name should be between 2 and 15 chars long."
-	            label.Dock = DockStyle.Top
-	            label.AutoSize = False
-	            label.BackColor = Color.Transparent
-	            Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
-	
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFitToParentWidth()
-	            '#Region "FitToParentWidth"
-	            Me.radDataEntry1.FitToParentWidth = True
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetNumberOfColumns()
-	            '#Region "NumberOfColumns"
-	            Me.radDataEntry1.ColumnCount = 2
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-properties-events-and-attributes 002](images/dataentry-properties-events-and-attributes002.png)
 
@@ -237,57 +169,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ItemSpace}}
 	            Me.radDataEntry1.ItemSpace = 10
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFillingOrder()
-	            'SetFillingOrder1();
-	            SetFillingOrder2()
-	        End Sub
-	
-	        Private Sub SetFillingOrder1()
-	            '#Region "FillingOrder1"
-	            Me.radDataEntry1.ColumnCount = 2
-	            Me.radDataEntry1.FlowDirection = FlowDirection.TopDown
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFillingOrder2()
-	            '#Region "FillingOrder2"
-	            Me.radDataEntry1.ColumnCount = 2
-	            Me.radDataEntry1.FlowDirection = FlowDirection.LeftToRight
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetShowValidationPanel()
-	            '#Region "ShowValidationPanel"
-	
-	            Me.radDataEntry1.ShowValidationPanel = True
-	
-	            Dim label As New RadLabel()
-	            label.Name = "First Name"
-	            label.Text = "<html><size=10><b>First Name : </b>First Name should be between 2 and 15 chars long."
-	            label.Dock = DockStyle.Top
-	            label.AutoSize = False
-	            label.BackColor = Color.Transparent
-	            Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
-	
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFitToParentWidth()
-	            '#Region "FitToParentWidth"
-	            Me.radDataEntry1.FitToParentWidth = True
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetNumberOfColumns()
-	            '#Region "NumberOfColumns"
-	            Me.radDataEntry1.ColumnCount = 2
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-properties-events-and-attributes 006](images/dataentry-properties-events-and-attributes006.png)
 
@@ -308,64 +190,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ItemDefaultSize}}
 	            Me.radDataEntry1.ItemDefaultSize = New Size(300, 30)
-	            '#End Region
-	
-	        End Sub
-	
-	        Private Sub SetItemSpace()
-	            '#Region "ItemSpace"
-	            Me.radDataEntry1.ItemSpace = 10
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFillingOrder()
-	            'SetFillingOrder1();
-	            SetFillingOrder2()
-	        End Sub
-	
-	        Private Sub SetFillingOrder1()
-	            '#Region "FillingOrder1"
-	            Me.radDataEntry1.ColumnCount = 2
-	            Me.radDataEntry1.FlowDirection = FlowDirection.TopDown
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFillingOrder2()
-	            '#Region "FillingOrder2"
-	            Me.radDataEntry1.ColumnCount = 2
-	            Me.radDataEntry1.FlowDirection = FlowDirection.LeftToRight
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetShowValidationPanel()
-	            '#Region "ShowValidationPanel"
-	
-	            Me.radDataEntry1.ShowValidationPanel = True
-	
-	            Dim label As New RadLabel()
-	            label.Name = "First Name"
-	            label.Text = "<html><size=10><b>First Name : </b>First Name should be between 2 and 15 chars long."
-	            label.Dock = DockStyle.Top
-	            label.AutoSize = False
-	            label.BackColor = Color.Transparent
-	            Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
-	
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFitToParentWidth()
-	            '#Region "FitToParentWidth"
-	            Me.radDataEntry1.FitToParentWidth = True
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetNumberOfColumns()
-	            '#Region "NumberOfColumns"
-	            Me.radDataEntry1.ColumnCount = 2
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-properties-events-and-attributes 007](images/dataentry-properties-events-and-attributes007.png)
 
@@ -386,71 +211,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ResizeLabels}}
 	            Me.radDataEntry1.AutoSizeLabels = False
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetItemDefaultSize()
-	
-	            '#Region "ItemDefaultSize"
-	            Me.radDataEntry1.ItemDefaultSize = New Size(300, 30)
-	            '#End Region
-	
-	        End Sub
-	
-	        Private Sub SetItemSpace()
-	            '#Region "ItemSpace"
-	            Me.radDataEntry1.ItemSpace = 10
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFillingOrder()
-	            'SetFillingOrder1();
-	            SetFillingOrder2()
-	        End Sub
-	
-	        Private Sub SetFillingOrder1()
-	            '#Region "FillingOrder1"
-	            Me.radDataEntry1.ColumnCount = 2
-	            Me.radDataEntry1.FlowDirection = FlowDirection.TopDown
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFillingOrder2()
-	            '#Region "FillingOrder2"
-	            Me.radDataEntry1.ColumnCount = 2
-	            Me.radDataEntry1.FlowDirection = FlowDirection.LeftToRight
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetShowValidationPanel()
-	            '#Region "ShowValidationPanel"
-	
-	            Me.radDataEntry1.ShowValidationPanel = True
-	
-	            Dim label As New RadLabel()
-	            label.Name = "First Name"
-	            label.Text = "<html><size=10><b>First Name : </b>First Name should be between 2 and 15 chars long."
-	            label.Dock = DockStyle.Top
-	            label.AutoSize = False
-	            label.BackColor = Color.Transparent
-	            Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
-	
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFitToParentWidth()
-	            '#Region "FitToParentWidth"
-	            Me.radDataEntry1.FitToParentWidth = True
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetNumberOfColumns()
-	            '#Region "NumberOfColumns"
-	            Me.radDataEntry1.ColumnCount = 2
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-properties-events-and-attributes 008](images/dataentry-properties-events-and-attributes008.png)
 
@@ -517,173 +278,7 @@ With the __Browsable__ attribute users can easily control which properties shoul
 	                End Set
 	            End Property
 	            Private m_PhoneNumber As String
-	#End Region
-	
-	#Region "DisplayName"
-	            <DisplayName("family name")> _
-	            Public Property LastName() As String
-	                Get
-	                    Return m_LastName
-	                End Get
-	                Set(value As String)
-	                    m_LastName = Value
-	                End Set
-	            End Property
-	            Private m_LastName As String
-	#End Region
-	
-	            Public Property Occupation() As String
-	                Get
-	                    Return m_Occupation
-	                End Get
-	                Set(value As String)
-	                    m_Occupation = Value
-	                End Set
-	            End Property
-	            Private m_Occupation As String
-	            Public Property StartingDate() As DateTime
-	                Get
-	                    Return m_StartingDate
-	                End Get
-	                Set(value As DateTime)
-	                    m_StartingDate = Value
-	                End Set
-	            End Property
-	            Private m_StartingDate As DateTime
-	            Public Property IsMarried() As Boolean
-	                Get
-	                    Return m_IsMarried
-	                End Get
-	                Set(value As Boolean)
-	                    m_IsMarried = Value
-	                End Set
-	            End Property
-	            Private m_IsMarried As Boolean
-	#Region "RadRange"
-	            <RadRange(1500, 2000)> _
-	            Public Property Salary() As Integer
-	                Get
-	                    Return m_Salary
-	                End Get
-	                Set(value As Integer)
-	                    m_Salary = Value
-	                End Set
-	            End Property
-	            Private m_Salary As Integer
-	#End Region
-	            Public Property Gender() As Gender
-	                Get
-	                    Return m_Gender
-	                End Get
-	                Set(value As Gender)
-	                    m_Gender = Value
-	                End Set
-	            End Property
-	            Private m_Gender As Gender
-	        End Class
-	        Private Enum Gender
-	            Female
-	            Male
-	        End Enum
-	        Public Sub New()
-	            InitializeComponent()
-	        End Sub
-	
-	        Private Sub RadDataEntryProgram_Load(sender As Object, e As EventArgs) Handles Me.Load
-	
-	            'SetNumberOfColumns();
-	
-	            'SetFitToParentWidth();
-	
-	            'SetShowValidationPanel();
-	
-	            'SetFillingOrder();
-	
-	            'SetItemSpace();
-	
-	            'SetItemDefaultSize();
-	
-	            'SetResizeLabels();
-	
-	            Me.radDataEntry1.DataSource = New Employee() With { _
-	              .FirstName = "Sarah", _
-	              .LastName = "Blake", _
-	              .Occupation = "Supplied Manager", _
-	              .StartingDate = New DateTime(2005, 4, 12), _
-	              .IsMarried = True, _
-	              .Salary = 3500, _
-	              .Gender = Gender.Female _
-	            }
-	        End Sub
-	
-	        Private Sub SetResizeLabels()
-	            '#Region "ResizeLabels"
-	            Me.radDataEntry1.AutoSizeLabels = False
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetItemDefaultSize()
-	
-	            '#Region "ItemDefaultSize"
-	            Me.radDataEntry1.ItemDefaultSize = New Size(300, 30)
-	            '#End Region
-	
-	        End Sub
-	
-	        Private Sub SetItemSpace()
-	            '#Region "ItemSpace"
-	            Me.radDataEntry1.ItemSpace = 10
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFillingOrder()
-	            'SetFillingOrder1();
-	            SetFillingOrder2()
-	        End Sub
-	
-	        Private Sub SetFillingOrder1()
-	            '#Region "FillingOrder1"
-	            Me.radDataEntry1.ColumnCount = 2
-	            Me.radDataEntry1.FlowDirection = FlowDirection.TopDown
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFillingOrder2()
-	            '#Region "FillingOrder2"
-	            Me.radDataEntry1.ColumnCount = 2
-	            Me.radDataEntry1.FlowDirection = FlowDirection.LeftToRight
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetShowValidationPanel()
-	            '#Region "ShowValidationPanel"
-	
-	            Me.radDataEntry1.ShowValidationPanel = True
-	
-	            Dim label As New RadLabel()
-	            label.Name = "First Name"
-	            label.Text = "<html><size=10><b>First Name : </b>First Name should be between 2 and 15 chars long."
-	            label.Dock = DockStyle.Top
-	            label.AutoSize = False
-	            label.BackColor = Color.Transparent
-	            Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
-	
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFitToParentWidth()
-	            '#Region "FitToParentWidth"
-	            Me.radDataEntry1.FitToParentWidth = True
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetNumberOfColumns()
-	            '#Region "NumberOfColumns"
-	            Me.radDataEntry1.ColumnCount = 2
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -716,160 +311,7 @@ The __DisplayName__ attribute defines what text should be displayed in the label
 	                End Set
 	            End Property
 	            Private m_LastName As String
-	#End Region
-	
-	            Public Property Occupation() As String
-	                Get
-	                    Return m_Occupation
-	                End Get
-	                Set(value As String)
-	                    m_Occupation = Value
-	                End Set
-	            End Property
-	            Private m_Occupation As String
-	            Public Property StartingDate() As DateTime
-	                Get
-	                    Return m_StartingDate
-	                End Get
-	                Set(value As DateTime)
-	                    m_StartingDate = Value
-	                End Set
-	            End Property
-	            Private m_StartingDate As DateTime
-	            Public Property IsMarried() As Boolean
-	                Get
-	                    Return m_IsMarried
-	                End Get
-	                Set(value As Boolean)
-	                    m_IsMarried = Value
-	                End Set
-	            End Property
-	            Private m_IsMarried As Boolean
-	#Region "RadRange"
-	            <RadRange(1500, 2000)> _
-	            Public Property Salary() As Integer
-	                Get
-	                    Return m_Salary
-	                End Get
-	                Set(value As Integer)
-	                    m_Salary = Value
-	                End Set
-	            End Property
-	            Private m_Salary As Integer
-	#End Region
-	            Public Property Gender() As Gender
-	                Get
-	                    Return m_Gender
-	                End Get
-	                Set(value As Gender)
-	                    m_Gender = Value
-	                End Set
-	            End Property
-	            Private m_Gender As Gender
-	        End Class
-	        Private Enum Gender
-	            Female
-	            Male
-	        End Enum
-	        Public Sub New()
-	            InitializeComponent()
-	        End Sub
-	
-	        Private Sub RadDataEntryProgram_Load(sender As Object, e As EventArgs) Handles Me.Load
-	
-	            'SetNumberOfColumns();
-	
-	            'SetFitToParentWidth();
-	
-	            'SetShowValidationPanel();
-	
-	            'SetFillingOrder();
-	
-	            'SetItemSpace();
-	
-	            'SetItemDefaultSize();
-	
-	            'SetResizeLabels();
-	
-	            Me.radDataEntry1.DataSource = New Employee() With { _
-	              .FirstName = "Sarah", _
-	              .LastName = "Blake", _
-	              .Occupation = "Supplied Manager", _
-	              .StartingDate = New DateTime(2005, 4, 12), _
-	              .IsMarried = True, _
-	              .Salary = 3500, _
-	              .Gender = Gender.Female _
-	            }
-	        End Sub
-	
-	        Private Sub SetResizeLabels()
-	            '#Region "ResizeLabels"
-	            Me.radDataEntry1.AutoSizeLabels = False
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetItemDefaultSize()
-	
-	            '#Region "ItemDefaultSize"
-	            Me.radDataEntry1.ItemDefaultSize = New Size(300, 30)
-	            '#End Region
-	
-	        End Sub
-	
-	        Private Sub SetItemSpace()
-	            '#Region "ItemSpace"
-	            Me.radDataEntry1.ItemSpace = 10
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFillingOrder()
-	            'SetFillingOrder1();
-	            SetFillingOrder2()
-	        End Sub
-	
-	        Private Sub SetFillingOrder1()
-	            '#Region "FillingOrder1"
-	            Me.radDataEntry1.ColumnCount = 2
-	            Me.radDataEntry1.FlowDirection = FlowDirection.TopDown
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFillingOrder2()
-	            '#Region "FillingOrder2"
-	            Me.radDataEntry1.ColumnCount = 2
-	            Me.radDataEntry1.FlowDirection = FlowDirection.LeftToRight
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetShowValidationPanel()
-	            '#Region "ShowValidationPanel"
-	
-	            Me.radDataEntry1.ShowValidationPanel = True
-	
-	            Dim label As New RadLabel()
-	            label.Name = "First Name"
-	            label.Text = "<html><size=10><b>First Name : </b>First Name should be between 2 and 15 chars long."
-	            label.Dock = DockStyle.Top
-	            label.AutoSize = False
-	            label.BackColor = Color.Transparent
-	            Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
-	
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFitToParentWidth()
-	            '#Region "FitToParentWidth"
-	            Me.radDataEntry1.FitToParentWidth = True
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetNumberOfColumns()
-	            '#Region "NumberOfColumns"
-	            Me.radDataEntry1.ColumnCount = 2
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-properties-events-and-attributes 009](images/dataentry-properties-events-and-attributes009.png)
 
@@ -902,119 +344,6 @@ With __RadRangeAttribute__ attribute users can define range that can be used int
 	                End Set
 	            End Property
 	            Private m_Salary As Integer
-	#End Region
-	            Public Property Gender() As Gender
-	                Get
-	                    Return m_Gender
-	                End Get
-	                Set(value As Gender)
-	                    m_Gender = Value
-	                End Set
-	            End Property
-	            Private m_Gender As Gender
-	        End Class
-	        Private Enum Gender
-	            Female
-	            Male
-	        End Enum
-	        Public Sub New()
-	            InitializeComponent()
-	        End Sub
-	
-	        Private Sub RadDataEntryProgram_Load(sender As Object, e As EventArgs) Handles Me.Load
-	
-	            'SetNumberOfColumns();
-	
-	            'SetFitToParentWidth();
-	
-	            'SetShowValidationPanel();
-	
-	            'SetFillingOrder();
-	
-	            'SetItemSpace();
-	
-	            'SetItemDefaultSize();
-	
-	            'SetResizeLabels();
-	
-	            Me.radDataEntry1.DataSource = New Employee() With { _
-	              .FirstName = "Sarah", _
-	              .LastName = "Blake", _
-	              .Occupation = "Supplied Manager", _
-	              .StartingDate = New DateTime(2005, 4, 12), _
-	              .IsMarried = True, _
-	              .Salary = 3500, _
-	              .Gender = Gender.Female _
-	            }
-	        End Sub
-	
-	        Private Sub SetResizeLabels()
-	            '#Region "ResizeLabels"
-	            Me.radDataEntry1.AutoSizeLabels = False
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetItemDefaultSize()
-	
-	            '#Region "ItemDefaultSize"
-	            Me.radDataEntry1.ItemDefaultSize = New Size(300, 30)
-	            '#End Region
-	
-	        End Sub
-	
-	        Private Sub SetItemSpace()
-	            '#Region "ItemSpace"
-	            Me.radDataEntry1.ItemSpace = 10
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFillingOrder()
-	            'SetFillingOrder1();
-	            SetFillingOrder2()
-	        End Sub
-	
-	        Private Sub SetFillingOrder1()
-	            '#Region "FillingOrder1"
-	            Me.radDataEntry1.ColumnCount = 2
-	            Me.radDataEntry1.FlowDirection = FlowDirection.TopDown
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFillingOrder2()
-	            '#Region "FillingOrder2"
-	            Me.radDataEntry1.ColumnCount = 2
-	            Me.radDataEntry1.FlowDirection = FlowDirection.LeftToRight
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetShowValidationPanel()
-	            '#Region "ShowValidationPanel"
-	
-	            Me.radDataEntry1.ShowValidationPanel = True
-	
-	            Dim label As New RadLabel()
-	            label.Name = "First Name"
-	            label.Text = "<html><size=10><b>First Name : </b>First Name should be between 2 and 15 chars long."
-	            label.Dock = DockStyle.Top
-	            label.AutoSize = False
-	            label.BackColor = Color.Transparent
-	            Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
-	
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetFitToParentWidth()
-	            '#Region "FitToParentWidth"
-	            Me.radDataEntry1.FitToParentWidth = True
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetNumberOfColumns()
-	            '#Region "NumberOfColumns"
-	            Me.radDataEntry1.ColumnCount = 2
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 

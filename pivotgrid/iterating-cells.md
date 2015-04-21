@@ -55,29 +55,7 @@ To iterate thought the cells in __RadPivotGrid__ you should first retrieve all r
 	            Next row
 	        Next col
 	
-	        '#End Region
-	
-	        For Each col As PivotGroupNode In colGroups
-	            For Each row As PivotGroupNode In rowGroups
-	                If row.Group IsNot Nothing AndAlso col.Group IsNot Nothing Then
-	                    '#Region "select"
-	
-	                    ' Print the values of the selected cells.
-	                    If radPivotGrid1.PivotGridElement.IsCellSelected(row, col) Then
-	                        Dim Value = Me.radPivotGrid1.PivotGridElement.GetAggregateValue(row.Group, col.Group, False, False)
-	                        Debug.WriteLine("Row = {0} , Column ={1}, Value ={2}", row.Name, col.Name, Value)
-	                    End If
-	
-	                    'Select cell in code
-	                    radPivotGrid1.PivotGridElement.SelectCell(row, col, False, True)
-	
-	                    '#End Region
-	                End If
-	            Next row
-	        Next col
-	    End Sub
-	End Class
-	
+	{{endregion}}
 
 
 
@@ -115,12 +93,6 @@ Using the above approach you can determine if a cell is selected or programmatic
 	                    'Select cell in code
 	                    radPivotGrid1.PivotGridElement.SelectCell(row, col, False, True)
 	
-	                    '#End Region
-	                End If
-	            Next row
-	        Next col
-	    End Sub
-	End Class
-	
+	{{endregion}}
 
 

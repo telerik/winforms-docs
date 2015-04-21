@@ -43,51 +43,7 @@ Inserting [TextFragments]({%slug pdfprocessing-model-textfragment%}) is achieved
 {{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_0}}
 	            Dim block As New Block()
 	            block.InsertText("Text")
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-block_1"
-	            block.InsertText(New System.Windows.Media.FontFamily("Arial"), "Text")
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-block_2"
-	            'block.InsertText(fontFamily, fontStyle, fontWeight, "Text");
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertLineBreak(block As Block)
-	            '#Region "radpdfprocessing-editing-block_3"
-	            block.InsertLineBreak()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub DrawBlock(block As Block, fixedContentEditor As FixedContentEditor)
-	            '#Region "radpdfprocessing-editing-block_4"
-	            Dim boundingRect As New System.Windows.Rect(New System.Windows.Point(0, 0), New System.Windows.Size(200, 300))
-	            block.Draw(fixedContentEditor, boundingRect)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub MeasureBlock()
-	            '#Region "radpdfprocessing-editing-block_5"
-	            Dim block As New Block()
-	            block.InsertText("Hello RadPdfProcessing!")
-	            Dim size As System.Windows.Size = block.Measure()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub MeasureBlockSpecificSize()
-	            '#Region "radpdfprocessing-editing-block_6"
-	            Dim helloBlock As New Block()
-	            helloBlock.InsertText("Hello")
-	            Dim helloSize As System.Windows.Size = helloBlock.Measure()
-	
-	            Dim block As New Block()
-	            block.InsertText("Hello RadPdfProcessing!")
-	            Dim size As System.Windows.Size = block.Measure(helloSize)
-	            Dim secondBlock As Block = block.Split()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -106,47 +62,7 @@ __Example 2__ demonstrates how to insert text with a specific font family.
 
 {{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_1}}
 	            block.InsertText(New System.Windows.Media.FontFamily("Arial"), "Text")
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-block_2"
-	            'block.InsertText(fontFamily, fontStyle, fontWeight, "Text");
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertLineBreak(block As Block)
-	            '#Region "radpdfprocessing-editing-block_3"
-	            block.InsertLineBreak()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub DrawBlock(block As Block, fixedContentEditor As FixedContentEditor)
-	            '#Region "radpdfprocessing-editing-block_4"
-	            Dim boundingRect As New System.Windows.Rect(New System.Windows.Point(0, 0), New System.Windows.Size(200, 300))
-	            block.Draw(fixedContentEditor, boundingRect)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub MeasureBlock()
-	            '#Region "radpdfprocessing-editing-block_5"
-	            Dim block As New Block()
-	            block.InsertText("Hello RadPdfProcessing!")
-	            Dim size As System.Windows.Size = block.Measure()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub MeasureBlockSpecificSize()
-	            '#Region "radpdfprocessing-editing-block_6"
-	            Dim helloBlock As New Block()
-	            helloBlock.InsertText("Hello")
-	            Dim helloSize As System.Windows.Size = helloBlock.Measure()
-	
-	            Dim block As New Block()
-	            block.InsertText("Hello RadPdfProcessing!")
-	            Dim size As System.Windows.Size = block.Measure(helloSize)
-	            Dim secondBlock As Block = block.Split()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -168,37 +84,7 @@ Inserting a line break results in the next element starting on a new line. The a
 
 {{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_3}}
 	            block.InsertLineBreak()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub DrawBlock(block As Block, fixedContentEditor As FixedContentEditor)
-	            '#Region "radpdfprocessing-editing-block_4"
-	            Dim boundingRect As New System.Windows.Rect(New System.Windows.Point(0, 0), New System.Windows.Size(200, 300))
-	            block.Draw(fixedContentEditor, boundingRect)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub MeasureBlock()
-	            '#Region "radpdfprocessing-editing-block_5"
-	            Dim block As New Block()
-	            block.InsertText("Hello RadPdfProcessing!")
-	            Dim size As System.Windows.Size = block.Measure()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub MeasureBlockSpecificSize()
-	            '#Region "radpdfprocessing-editing-block_6"
-	            Dim helloBlock As New Block()
-	            helloBlock.InsertText("Hello")
-	            Dim helloSize As System.Windows.Size = helloBlock.Measure()
-	
-	            Dim block As New Block()
-	            block.InsertText("Hello RadPdfProcessing!")
-	            Dim size As System.Windows.Size = block.Measure(helloSize)
-	            Dim secondBlock As Block = block.Split()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -346,30 +232,7 @@ __Example 4__ demonstrates how to draw a block.
 {{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_4}}
 	            Dim boundingRect As New System.Windows.Rect(New System.Windows.Point(0, 0), New System.Windows.Size(200, 300))
 	            block.Draw(fixedContentEditor, boundingRect)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub MeasureBlock()
-	            '#Region "radpdfprocessing-editing-block_5"
-	            Dim block As New Block()
-	            block.InsertText("Hello RadPdfProcessing!")
-	            Dim size As System.Windows.Size = block.Measure()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub MeasureBlockSpecificSize()
-	            '#Region "radpdfprocessing-editing-block_6"
-	            Dim helloBlock As New Block()
-	            helloBlock.InsertText("Hello")
-	            Dim helloSize As System.Windows.Size = helloBlock.Measure()
-	
-	            Dim block As New Block()
-	            block.InsertText("Hello RadPdfProcessing!")
-	            Dim size As System.Windows.Size = block.Measure(helloSize)
-	            Dim secondBlock As Block = block.Split()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -406,22 +269,7 @@ __Example 5__ creates a Block with text "Hello RadPdfProcessing!" and measures i
 	            Dim block As New Block()
 	            block.InsertText("Hello RadPdfProcessing!")
 	            Dim size As System.Windows.Size = block.Measure()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub MeasureBlockSpecificSize()
-	            '#Region "radpdfprocessing-editing-block_6"
-	            Dim helloBlock As New Block()
-	            helloBlock.InsertText("Hello")
-	            Dim helloSize As System.Windows.Size = helloBlock.Measure()
-	
-	            Dim block As New Block()
-	            block.InsertText("Hello RadPdfProcessing!")
-	            Dim size As System.Windows.Size = block.Measure(helloSize)
-	            Dim secondBlock As Block = block.Split()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 

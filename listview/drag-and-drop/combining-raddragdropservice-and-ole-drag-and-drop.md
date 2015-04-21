@@ -58,133 +58,7 @@ Let’s assume that our __RadListView__ is in bound mode and its __ViewType__ pr
 	        Me.RadListView1.AllowDrop = True
 	        Me.RadListControl1.AllowDrop = True
 	        Me.RadListView1.ViewType = Telerik.WinControls.UI.ListViewType.IconsView
-	        '#End Region
-	
-	
-	        Me.RadListView1.ItemSize = New Size(110, 20)
-	
-	        AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragOver, AddressOf DragDropService_PreviewDragOver
-	        AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragDrop, AddressOf DragDropService_PreviewDragDrop
-	
-	        AddHandler Me.RadListControl1.MouseDown, AddressOf radListControl1_MouseDown
-	        AddHandler Me.RadListControl1.MouseMove, AddressOf radListControl1_MouseMove
-	        AddHandler Me.RadListControl1.MouseUp, AddressOf radListControl1_MouseUp
-	        AddHandler Me.RadListView1.DragEnter, AddressOf radListView1_DragEnter
-	        AddHandler Me.RadListView1.DragDrop, AddressOf radListView1_DragDrop
-	    End Sub
-	
-	    '#Region "ListControlToListView"
-	
-	    '#Region "ListControlToListViewStart"
-	
-	    Private mouseDownPosition As Point
-	    Private isDragging As Boolean
-	
-	    Private Sub radListControl1_MouseDown(sender As Object, e As MouseEventArgs)
-	        Me.mouseDownPosition = e.Location
-	    End Sub
-	
-	    Private Sub radListControl1_MouseMove(sender As Object, e As MouseEventArgs)
-	        If e.Button <> MouseButtons.Left Then
-	            Me.isDragging = False
-	            Return
-	        End If
-	
-	        If Me.isDragging Then
-	            Return
-	        End If
-	
-	        If Me.ShouldBeginDrag(Me.mouseDownPosition, e.Location) Then
-	            Dim draggedItem As RadListVisualItem = TryCast(Me.RadListControl1.ElementTree.GetElementAtPoint(Me.mouseDownPosition), RadListVisualItem)
-	            If draggedItem IsNot Nothing Then
-	                Me.isDragging = True
-	                'start the drag and drop operation
-	                TryCast(sender, RadListControl).DoDragDrop(draggedItem.Data, DragDropEffects.Copy)
-	            End If
-	        End If
-	    End Sub
-	
-	    Private Function ShouldBeginDrag(current As Point, capture As Point) As Boolean
-	        Dim dragSize As Size = SystemInformation.DragSize
-	        Dim dragRect As New Rectangle(capture.X - dragSize.Width / 2, capture.Y - dragSize.Height / 2, dragSize.Width, dragSize.Height)
-	        Return Not dragRect.Contains(current)
-	    End Function
-	
-	    Private Sub radListView1_DragEnter(sender As Object, e As DragEventArgs)
-	        e.Effect = DragDropEffects.Copy
-	    End Sub
-	
-	    '#End Region
-	
-	    '#Region "ListControlToListViewDragDrop"
-	
-	    Private Sub radListView1_DragDrop(sender As Object, e As DragEventArgs)
-	        Dim listView As RadListView = TryCast(sender, RadListView)
-	        Dim point__1 As Point = listView.PointToClient(New Point(e.X, e.Y))
-	        Dim targetItem As BaseListViewVisualItem = TryCast(listView.ElementTree.GetElementAtPoint(point__1), BaseListViewVisualItem)
-	        Dim draggedItem As RadListDataItem = TryCast(e.Data.GetData(GetType(RadListDataItem)), RadListDataItem)
-	
-	        Dim targetDataSource As BindingList(Of String) = TryCast(listView.DataSource, BindingList(Of String))
-	        If targetDataSource IsNot Nothing Then
-	            'you are dropping over an item
-	            If targetItem IsNot Nothing Then
-	                Dim targetIndex As Integer = listView.Items.IndexOf(targetItem.Data)
-	
-	                targetDataSource.Insert(targetIndex, draggedItem.Text)
-	            Else
-	                ' you are dropping over the ListViewElement
-	                targetDataSource.Add(draggedItem.Text)
-	            End If
-	        End If
-	
-	        Dim indexToRemove As Integer = Me.RadListControl1.Items.IndexOf(draggedItem)
-	        If indexToRemove > -1 Then
-	            Me.RadListControl1.Items.RemoveAt(indexToRemove)
-	        End If
-	        Me.mouseDownPosition = Point.Empty
-	        Me.isDragging = False
-	    End Sub
-	
-	    Private Sub radListControl1_MouseUp(sender As Object, e As MouseEventArgs)
-	        Me.mouseDownPosition = Point.Empty
-	        Me.isDragging = False
-	    End Sub
-	
-	    '#End Region
-	
-	    '#End Region
-	
-	    '#Region "ListViewToListControl"
-	
-	    Private Sub DragDropService_PreviewDragOver(sender As Object, e As Telerik.WinControls.RadDragOverEventArgs)
-	        e.CanDrop = TypeOf e.HitTarget Is RadListElement
-	    End Sub
-	
-	    Private Sub DragDropService_PreviewDragDrop(sender As Object, e As Telerik.WinControls.RadDropEventArgs)
-	        Dim draggedItem As BaseListViewVisualItem = TryCast(e.DragInstance, BaseListViewVisualItem)
-	        Dim listElement As RadListElement = TryCast(e.HitTarget, RadListElement)
-	
-	        If listElement Is Nothing Then
-	            Return
-	        End If
-	        e.Handled = True
-	        Dim listControl As RadListControl = TryCast(listElement.ElementTree.Control, RadListControl)
-	        Dim targetItem As RadListVisualItem = TryCast(listControl.ElementTree.GetElementAtPoint(e.DropLocation), RadListVisualItem)
-	        Dim indexToInsert As Integer
-	        If targetItem IsNot Nothing Then
-	            indexToInsert = targetItem.Data.RowIndex
-	        Else
-	            indexToInsert = listControl.Items.Count
-	        End If
-	        Dim newItem As New RadListDataItem(draggedItem.Data.Text)
-	        listControl.Items.Insert(indexToInsert, newItem)
-	
-	        draggedItem.Data.ListView.Items.Remove(draggedItem.Data)
-	    End Sub
-	
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -266,9 +140,7 @@ To implement drag and drop functionality for this scenario, we will use the List
 	        draggedItem.Data.ListView.Items.Remove(draggedItem.Data)
 	    End Sub
 	
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -375,77 +247,7 @@ To implement drag and drop functionality for this scenario, we will use the List
 	        e.Effect = DragDropEffects.Copy
 	    End Sub
 	
-	    '#End Region
-	
-	    '#Region "ListControlToListViewDragDrop"
-	
-	    Private Sub radListView1_DragDrop(sender As Object, e As DragEventArgs)
-	        Dim listView As RadListView = TryCast(sender, RadListView)
-	        Dim point__1 As Point = listView.PointToClient(New Point(e.X, e.Y))
-	        Dim targetItem As BaseListViewVisualItem = TryCast(listView.ElementTree.GetElementAtPoint(point__1), BaseListViewVisualItem)
-	        Dim draggedItem As RadListDataItem = TryCast(e.Data.GetData(GetType(RadListDataItem)), RadListDataItem)
-	
-	        Dim targetDataSource As BindingList(Of String) = TryCast(listView.DataSource, BindingList(Of String))
-	        If targetDataSource IsNot Nothing Then
-	            'you are dropping over an item
-	            If targetItem IsNot Nothing Then
-	                Dim targetIndex As Integer = listView.Items.IndexOf(targetItem.Data)
-	
-	                targetDataSource.Insert(targetIndex, draggedItem.Text)
-	            Else
-	                ' you are dropping over the ListViewElement
-	                targetDataSource.Add(draggedItem.Text)
-	            End If
-	        End If
-	
-	        Dim indexToRemove As Integer = Me.RadListControl1.Items.IndexOf(draggedItem)
-	        If indexToRemove > -1 Then
-	            Me.RadListControl1.Items.RemoveAt(indexToRemove)
-	        End If
-	        Me.mouseDownPosition = Point.Empty
-	        Me.isDragging = False
-	    End Sub
-	
-	    Private Sub radListControl1_MouseUp(sender As Object, e As MouseEventArgs)
-	        Me.mouseDownPosition = Point.Empty
-	        Me.isDragging = False
-	    End Sub
-	
-	    '#End Region
-	
-	    '#End Region
-	
-	    '#Region "ListViewToListControl"
-	
-	    Private Sub DragDropService_PreviewDragOver(sender As Object, e As Telerik.WinControls.RadDragOverEventArgs)
-	        e.CanDrop = TypeOf e.HitTarget Is RadListElement
-	    End Sub
-	
-	    Private Sub DragDropService_PreviewDragDrop(sender As Object, e As Telerik.WinControls.RadDropEventArgs)
-	        Dim draggedItem As BaseListViewVisualItem = TryCast(e.DragInstance, BaseListViewVisualItem)
-	        Dim listElement As RadListElement = TryCast(e.HitTarget, RadListElement)
-	
-	        If listElement Is Nothing Then
-	            Return
-	        End If
-	        e.Handled = True
-	        Dim listControl As RadListControl = TryCast(listElement.ElementTree.Control, RadListControl)
-	        Dim targetItem As RadListVisualItem = TryCast(listControl.ElementTree.GetElementAtPoint(e.DropLocation), RadListVisualItem)
-	        Dim indexToInsert As Integer
-	        If targetItem IsNot Nothing Then
-	            indexToInsert = targetItem.Data.RowIndex
-	        Else
-	            indexToInsert = listControl.Items.Count
-	        End If
-	        Dim newItem As New RadListDataItem(draggedItem.Data.Text)
-	        listControl.Items.Insert(indexToInsert, newItem)
-	
-	        draggedItem.Data.ListView.Items.Remove(draggedItem.Data)
-	    End Sub
-	
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -535,40 +337,6 @@ To implement drag and drop functionality for this scenario, we will use the List
 	        Me.isDragging = False
 	    End Sub
 	
-	    '#End Region
-	
-	    '#End Region
-	
-	    '#Region "ListViewToListControl"
-	
-	    Private Sub DragDropService_PreviewDragOver(sender As Object, e As Telerik.WinControls.RadDragOverEventArgs)
-	        e.CanDrop = TypeOf e.HitTarget Is RadListElement
-	    End Sub
-	
-	    Private Sub DragDropService_PreviewDragDrop(sender As Object, e As Telerik.WinControls.RadDropEventArgs)
-	        Dim draggedItem As BaseListViewVisualItem = TryCast(e.DragInstance, BaseListViewVisualItem)
-	        Dim listElement As RadListElement = TryCast(e.HitTarget, RadListElement)
-	
-	        If listElement Is Nothing Then
-	            Return
-	        End If
-	        e.Handled = True
-	        Dim listControl As RadListControl = TryCast(listElement.ElementTree.Control, RadListControl)
-	        Dim targetItem As RadListVisualItem = TryCast(listControl.ElementTree.GetElementAtPoint(e.DropLocation), RadListVisualItem)
-	        Dim indexToInsert As Integer
-	        If targetItem IsNot Nothing Then
-	            indexToInsert = targetItem.Data.RowIndex
-	        Else
-	            indexToInsert = listControl.Items.Count
-	        End If
-	        Dim newItem As New RadListDataItem(draggedItem.Data.Text)
-	        listControl.Items.Insert(indexToInsert, newItem)
-	
-	        draggedItem.Data.ListView.Items.Remove(draggedItem.Data)
-	    End Sub
-	
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 

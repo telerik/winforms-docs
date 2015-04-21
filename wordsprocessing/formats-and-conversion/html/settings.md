@@ -91,32 +91,7 @@ __Example 1__ shows how you can create and apply specific import settings.
 	
 	            provider.ImportSettings = importSettings
 	
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetImageData() As Byte()
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Sub ApplyExportSettings()
-	            '#Region "radwordsprocessing-formats-and-conversion-html-settings_1"
-	            Dim provider As New HtmlFormatProvider()
-	            Dim exportSettings As New HtmlExportSettings()
-	
-	            Dim data As Byte() = Nothing
-	            exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment
-	            exportSettings.IndentDocument = True
-	        AddHandler exportSettings.ImageExporting, Sub(s, e)
-	                                                      e.Source = "test.jpg"
-	                                                      data = e.Image.ImageSource.Data
-	                                                      e.Handled = True
-	
-	                                                  End Sub
-	
-	            provider.ExportSettings = exportSettings
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -266,9 +241,7 @@ __Example 2__ demonstrates how you can create export settings.
 	                                                  End Sub
 	
 	            provider.ExportSettings = exportSettings
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 

@@ -66,9 +66,7 @@ To remove the image adorner from your application you can create a new __UILayer
 	            uiLayerContainer.UILayers.Remove("AdornerLayer")
 	        End Sub
 	    End Class
-	#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -94,19 +92,7 @@ Alternatively, you can disable the capabilities of the image adorner by accessin
 	        Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanDrag = False
 	        Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanResize = False
 	        Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanRotate = False
-	        '#End Region
-	    End Sub
-	#Region "layer"
-	    Public Class CustomLayersBuilder
-	        Inherits UILayersBuilder
-	
-	        Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-	            uiLayerContainer.UILayers.Remove("AdornerLayer")
-	        End Sub
-	    End Class
-	#End Region
-	
-	End Class
+	{{endregion}}
 
 
 

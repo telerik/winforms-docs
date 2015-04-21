@@ -52,21 +52,7 @@ In order to enable the Maximize and Minimize buttons for a FloatingWindow,
 	        e.Window.MinimizeBox = True
 	        e.Window.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable
 	    End Sub
-	    '#End Region
-	
-	    '#Region "showBehind"
-	    Private Sub radDock1_FloatingWindowCreated2(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Docking.FloatingWindowEventArgs)
-	        Dim customWindow As New CustomFloatingWindow(Me.RadDock1)
-	        e.Window = customWindow
-	    End Sub
-	    '#End Region
-	
-	    '#Region "themeName"
-	    Private Sub radDock1_FloatingWindowCreated3(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Docking.FloatingWindowEventArgs)
-	        e.Window.ThemeName = "TelerikMetroBlue"
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -156,14 +142,7 @@ Finally, we have to pass an instance of the custom FloatingWindow to the event a
 	        Dim customWindow As New CustomFloatingWindow(Me.RadDock1)
 	        e.Window = customWindow
 	    End Sub
-	    '#End Region
-	
-	    '#Region "themeName"
-	    Private Sub radDock1_FloatingWindowCreated3(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Docking.FloatingWindowEventArgs)
-	        e.Window.ThemeName = "TelerikMetroBlue"
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -197,7 +176,6 @@ FloatingWindow is a descendant class of RadForm. As such, FloatingWindow has the
 	    Private Sub radDock1_FloatingWindowCreated3(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Docking.FloatingWindowEventArgs)
 	        e.Window.ThemeName = "TelerikMetroBlue"
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 ![dock-object-model-customizing-floating-windows 003](images/dock-object-model-customizing-floating-windows003.png)

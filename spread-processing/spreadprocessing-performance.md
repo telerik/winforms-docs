@@ -62,71 +62,7 @@ Internally there are many mechanisms used to lower the number of calculations, b
 	        ' The code which generates the document
 	        workbook.ResumeLayoutUpdate()
 	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub SuspendLayoutInUndoScope()
-	        '#Region "radspreadprocessing-performance_1"
-	
-	        Dim workbook As New Workbook()
-	
-	        Dim updateScope = New UpdateScope(AddressOf workbook.SuspendLayoutUpdate, AddressOf workbook.ResumeLayoutUpdate)
-	        Using updateScope
-	        ' The code which generates the document
-	        End Using
-	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreateUndoGroup()
-	        '#Region "radspreadprocessing-performance_2"
-	
-	        Dim workbook As New Workbook()
-	        workbook.History.BeginUndoGroup()
-	        ' The code which generates the document
-	        workbook.History.EndUndoGroup()
-	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreateUndoGroupUndoScope()
-	        '#Region "radspreadprocessing-performance_3"
-	
-	        Dim workbook As New Workbook()
-	        Dim updateScope = New UpdateScope(AddressOf workbook.History.BeginUndoGroup, AddressOf workbook.History.EndUndoGroup)
-	        Using updateScope
-	        ' The code which generates the document
-	        End Using
-	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub DisableHistory(workbook As Workbook)
-	        '#Region "radspreadprocessing-performance_4"
-	
-	        workbook.History.IsEnabled = False
-	        ' The code which generates the document
-	        workbook.History.IsEnabled = True
-	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub DisableHistoryUndoScope(workbook As Workbook)
-	        '#Region "radspreadprocessing-performance_5"
-	
-	        Using New UpdateScope(Function()
-	                                  workbook.History.IsEnabled = False
-	
-	                              End Function, Function()
-	                                                workbook.History.IsEnabled = True
-	
-	                                                ' The code which generates the document
-	                                            End Function)
-	        End Using
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -159,58 +95,7 @@ Note that if an exception is thrown between the two method calls, the resuming o
 	        ' The code which generates the document
 	        End Using
 	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreateUndoGroup()
-	        '#Region "radspreadprocessing-performance_2"
-	
-	        Dim workbook As New Workbook()
-	        workbook.History.BeginUndoGroup()
-	        ' The code which generates the document
-	        workbook.History.EndUndoGroup()
-	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreateUndoGroupUndoScope()
-	        '#Region "radspreadprocessing-performance_3"
-	
-	        Dim workbook As New Workbook()
-	        Dim updateScope = New UpdateScope(AddressOf workbook.History.BeginUndoGroup, AddressOf workbook.History.EndUndoGroup)
-	        Using updateScope
-	        ' The code which generates the document
-	        End Using
-	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub DisableHistory(workbook As Workbook)
-	        '#Region "radspreadprocessing-performance_4"
-	
-	        workbook.History.IsEnabled = False
-	        ' The code which generates the document
-	        workbook.History.IsEnabled = True
-	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub DisableHistoryUndoScope(workbook As Workbook)
-	        '#Region "radspreadprocessing-performance_5"
-	
-	        Using New UpdateScope(Function()
-	                                  workbook.History.IsEnabled = False
-	
-	                              End Function, Function()
-	                                                workbook.History.IsEnabled = True
-	
-	                                                ' The code which generates the document
-	                                            End Function)
-	        End Using
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -245,47 +130,7 @@ Preserving information about the steps in the undo stack is usually not a time c
 	        ' The code which generates the document
 	        workbook.History.EndUndoGroup()
 	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreateUndoGroupUndoScope()
-	        '#Region "radspreadprocessing-performance_3"
-	
-	        Dim workbook As New Workbook()
-	        Dim updateScope = New UpdateScope(AddressOf workbook.History.BeginUndoGroup, AddressOf workbook.History.EndUndoGroup)
-	        Using updateScope
-	        ' The code which generates the document
-	        End Using
-	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub DisableHistory(workbook As Workbook)
-	        '#Region "radspreadprocessing-performance_4"
-	
-	        workbook.History.IsEnabled = False
-	        ' The code which generates the document
-	        workbook.History.IsEnabled = True
-	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub DisableHistoryUndoScope(workbook As Workbook)
-	        '#Region "radspreadprocessing-performance_5"
-	
-	        Using New UpdateScope(Function()
-	                                  workbook.History.IsEnabled = False
-	
-	                              End Function, Function()
-	                                                workbook.History.IsEnabled = True
-	
-	                                                ' The code which generates the document
-	                                            End Function)
-	        End Using
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -318,35 +163,7 @@ Note that if an exception is thrown between the two method calls, the ending of 
 	        ' The code which generates the document
 	        End Using
 	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub DisableHistory(workbook As Workbook)
-	        '#Region "radspreadprocessing-performance_4"
-	
-	        workbook.History.IsEnabled = False
-	        ' The code which generates the document
-	        workbook.History.IsEnabled = True
-	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub DisableHistoryUndoScope(workbook As Workbook)
-	        '#Region "radspreadprocessing-performance_5"
-	
-	        Using New UpdateScope(Function()
-	                                  workbook.History.IsEnabled = False
-	
-	                              End Function, Function()
-	                                                workbook.History.IsEnabled = True
-	
-	                                                ' The code which generates the document
-	                                            End Function)
-	        End Using
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -377,25 +194,7 @@ As you already know from the [Reduce the Number of Undo Steps section](#reduce-t
 	        ' The code which generates the document
 	        workbook.History.IsEnabled = True
 	
-	        '#End Region
-	    End Sub
-	
-	    Private Sub DisableHistoryUndoScope(workbook As Workbook)
-	        '#Region "radspreadprocessing-performance_5"
-	
-	        Using New UpdateScope(Function()
-	                                  workbook.History.IsEnabled = False
-	
-	                              End Function, Function()
-	                                                workbook.History.IsEnabled = True
-	
-	                                                ' The code which generates the document
-	                                            End Function)
-	        End Using
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -432,9 +231,7 @@ If an exception is thrown before enabling the history, it will not be enabled an
 	                                            End Function)
 	        End Using
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

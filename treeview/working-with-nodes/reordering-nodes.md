@@ -59,41 +59,6 @@ Use the __Insert()__and __Add()__methods of the RadTreeView Nodes collection to 
 	        ' Remove the child from the first parent collection and add it to the second parent nodes collection
 	        parentNode1.Nodes.Remove(childNode)
 	        parentNode2.Nodes.Add(childNode)
-	        '#End Region
-	
-	        '#Region bringIntoView
-	        Dim lastRootNode As RadTreeNode = RadTreeView1.Nodes(RadTreeView1.Nodes.Count - 1)
-	        RadTreeView1.BringIntoView(lastRootNode.Nodes(lastRootNode.Nodes.Count - 1))
-	        '#End Region
-	
-	        '#Region editing
-	        RadTreeView1.AllowEdit = True
-	        ' set the SelectedNode - this node will be edited  
-	        RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
-	        ' this will start edit on selected node
-	        RadTreeView1.BeginEdit()
-	        '#End Region
-	
-	        '#Region selectedNode
-	        RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
-	        '#End Region
-	
-	        '#Region selectMultiNodes
-	        RadTreeView1.MultiSelect = True
-	        Dim Node1 As New RadTreeNode("Inbox")
-	        Dim Node2 As New RadTreeNode("Deleted Items")
-	        Dim Node3 As New RadTreeNode("Outbox")
-	        Dim Node4 As New RadTreeNode("Sent")
-	        RadTreeView1.Nodes.Add(Node1)
-	        RadTreeView1.Nodes.Add(Node2)
-	        RadTreeView1.Nodes.Add(Node3)
-	        RadTreeView1.Nodes.Add(Node4)
-	        Node3.Selected = True
-	        Node4.Selected = True
-	        '#End Region
-	
-	        '#region filter
-	        Me.RadTreeView1.Filter = "new"
 	{{endregion}}
 
 
@@ -162,62 +127,6 @@ In the sample code below, two parent nodes are created, a single node is added t
 	        parentNode2.Nodes.Add(childNode5)
 	        ' Insert the childNode instance to the parentNode2 nodes collection
 	        parentNode2.Nodes.Insert(1, childNode)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub OptionList()
-	        '#Region optionList
-	        Dim Node1 As New RadTreeNode("Node1")
-	        Node1.Expanded = True
-	        Node1.CheckType = ChildListType.OptionList
-	        Dim Node2 As New RadTreeNode("Node2")
-	        Dim Node3 As New RadTreeNode("Node3")
-	        Dim Node4 As New RadTreeNode("Node4")
-	        RadTreeView1.Nodes.Add(Node1)
-	        RadTreeView1.Nodes.Add(Node2)
-	        Node1.Nodes.Add(Node3)
-	        Node1.Nodes.Add(Node4)
-	        '#End Region
-	    End Sub
-	
-	    '#Region doubleClick
-	    Private Sub radTreeView1_DoubleClick(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim args As MouseEventArgs = TryCast(e, MouseEventArgs)
-	        Dim clickedNode As RadTreeNode = RadTreeView1.GetNodeAt(args.X, args.Y)
-	        If clickedNode IsNot Nothing Then
-	            MessageBox.Show("Node Text: " & clickedNode.Text & "  Node Value: " & clickedNode.Tag)
-	        End If
-	    End Sub
-	    '#End Region
-	
-	    '#Region addNodes
-	    Private Sub AddNodes()
-	        Dim Node1 As New RadTreeNode("Node1")
-	        Node1.Tag = 1234
-	        Node1.BackColor = Color.Blue
-	        Dim Node2 As New RadTreeNode("Node2")
-	        Dim Node3 As New RadTreeNode("Node3")
-	        Dim Node4 As New RadTreeNode("Node4")
-	        RadTreeView1.Nodes.Add(Node1)
-	        RadTreeView1.Nodes.Add(Node2)
-	        Node1.Nodes.Add(Node3)
-	        Node2.Nodes.Add(Node4)
-	        'Alternative methods for adding nodes
-	        'RadTreeNode Node1 = radTreeView1.Nodes.Add("Node1");
-	        'RadTreeNode Node2 = radTreeView1.Nodes.Add("Node2");
-	        'Node1.Nodes.Add("Node3");
-	        'Node2.Nodes.Add("Node4");
-	    End Sub
-	    '#End Region
-	
-	    '#Region removeNodes
-	    Private Sub RemoveNodes()
-	        'Remove a single node
-	        RadTreeView1.Nodes(0).Remove()
-	        ' removes all nodes from TreeView
-	        RadTreeView1.Nodes.Clear()
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 

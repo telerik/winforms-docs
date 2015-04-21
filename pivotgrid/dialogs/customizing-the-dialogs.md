@@ -43,16 +43,7 @@ To customize the dialogs in RadPivotGrid/RadPivotFieldList, you can either inher
 	        Me.Text = "This is a custom dialog"
 	    End Sub
 	End Class
-	#End Region
-	
-	#Region "MyDialogsFactory"
-	Class MyDialogsFactory
-	    Inherits PivotGridDialogsFactory
-	    Public Overrides Function CreateAggregateOptionsDialog() As IAggregateOptionsDialog
-	        Return New MyAggregateOptionsDialog()
-	    End Function
-	End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -84,7 +75,7 @@ When RadPivotGrid and RadPivotFieldList need a dialog, they use the __PivotGridD
 	        Return New MyAggregateOptionsDialog()
 	    End Function
 	End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -104,32 +95,6 @@ Then, you need to assign it to RadPivotGrid and RadPivotFieldList:
 {{source=..\SamplesVB\PivotGrid\PivotGridDialogs.vb region=SetFactories}}
 	        Me.radPivotGrid1.DialogsFactory = New MyDialogsFactory()
 	        Me.radPivotFieldList1.DialogsFactory = New MyDialogsFactory()
-	        '#End Region
-	    End Sub
-	
-	    Private Sub PivotGridDialogs_Load(sender As Object, e As EventArgs) Handles Me.Load
-	        ' TODO: This line of code loads data into the 'nwindDataSet.Orders' table. You can move, or remove it, as needed.
-	        Me.ordersTableAdapter.Fill(Me.nwindDataSet.Orders)
-	    End Sub
-	End Class
-	
-	#Region "MyAggregateOptionsDialog"
-	Class MyAggregateOptionsDialog
-	    Inherits AggregateOptionsDialog
-	    Public Overrides Sub LoadSettings(aggregateDescription As Telerik.Pivot.Core.PropertyAggregateDescriptionBase)
-	        MyBase.LoadSettings(aggregateDescription)
-	        Me.Text = "This is a custom dialog"
-	    End Sub
-	End Class
-	#End Region
-	
-	#Region "MyDialogsFactory"
-	Class MyDialogsFactory
-	    Inherits PivotGridDialogsFactory
-	    Public Overrides Function CreateAggregateOptionsDialog() As IAggregateOptionsDialog
-	        Return New MyAggregateOptionsDialog()
-	    End Function
-	End Class
-	#End Region
+	{{endregion}}
 
 ![pivotgrid-dialogs-customizing-the-dialogs 001](images/pivotgrid-dialogs-customizing-the-dialogs001.png)

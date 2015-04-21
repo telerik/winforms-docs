@@ -122,17 +122,7 @@ Insert a page field:
 
 {{source=..\SamplesVB\RichTextEditor\Features\Fields.vb region=insert}}
 	        Me.radRichTextEditor1.InsertField(New PageField())
-	        '#End Region
-	
-	        '#Region "update"
-	        Me.radRichTextEditor1.UpdateField(New FieldRangeStart())
-	        '#End Region
-	
-	        '#Region "register"
-	        FieldsUpdateManager.RegisterFieldUpdatePriority(GetType(ReferenceField), 1000)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -154,13 +144,7 @@ Update a field:
 
 {{source=..\SamplesVB\RichTextEditor\Features\Fields.vb region=update}}
 	        Me.radRichTextEditor1.UpdateField(New FieldRangeStart())
-	        '#End Region
-	
-	        '#Region "register"
-	        FieldsUpdateManager.RegisterFieldUpdatePriority(GetType(ReferenceField), 1000)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -190,9 +174,7 @@ Priority can specified through the __FieldsUpdateManager__ static class. The fol
 
 {{source=..\SamplesVB\RichTextEditor\Features\Fields.vb region=register}}
 	        FieldsUpdateManager.RegisterFieldUpdatePriority(GetType(ReferenceField), 1000)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

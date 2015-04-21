@@ -129,79 +129,7 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 	        Me.radListView1.DisplayMember = "Title"
 	    End Sub
 	
-	    #End Region
-	
-	    Protected Overrides Sub OnLoad(e As EventArgs)
-	        MyBase.OnLoad(e)
-	
-	        '#Region "EnableDragDrop"
-	
-	        Me.radListView1.AllowDragDrop = True
-	
-	        '#End Region
-	
-	        AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragStart, AddressOf DragDropService_PreviewDragStart
-	        AddHandler Me.radListView1.ListViewElement.DragDropService.PreviewDragOver, AddressOf DragDropService_PreviewDragOver
-	        AddHandler Me.radListView1.ListViewElement.DragDropService.PreviewDragDrop, AddressOf DragDropService_PreviewDragDrop
-	    End Sub
-	
-	    '#Region "DragStartOver"
-	
-	    Private sourceBoundItem As Item
-	
-	    Private Sub DragDropService_PreviewDragStart(sender As Object, e As PreviewDragStartEventArgs)
-	        Dim sourceItem As SimpleListViewVisualItem = TryCast(e.DragInstance, SimpleListViewVisualItem)
-	        If sourceItem IsNot Nothing Then
-	            sourceBoundItem = TryCast(sourceItem.Data.DataBoundItem, Item)
-	        End If
-	    End Sub
-	
-	    Private Sub DragDropService_PreviewDragOver(sender As Object, e As RadDragOverEventArgs)
-	        If TypeOf e.DragInstance Is SimpleListViewVisualItem Then
-	            e.CanDrop = TypeOf e.HitTarget Is SimpleListViewVisualItem OrElse TypeOf e.HitTarget Is SimpleListViewElement
-	        End If
-	    End Sub
-	
-	    '#End Region
-	
-	    '#Region "DragDrop"
-	
-	    Private Sub DragDropService_PreviewDragDrop(sender As Object, e As RadDropEventArgs)
-	        e.Handled = True
-	
-	        Dim targetItem As SimpleListViewVisualItem = TryCast(e.HitTarget, SimpleListViewVisualItem)
-	        Dim sourceItem As SimpleListViewVisualItem = TryCast(e.DragInstance, SimpleListViewVisualItem)
-	        Dim viewElement As SimpleListViewElement = TryCast(e.HitTarget, SimpleListViewElement)
-	        If (targetItem Is Nothing OrElse sourceItem Is Nothing) AndAlso viewElement Is Nothing Then
-	            Return
-	        End If
-	        Dim dataSource As BindingList(Of Item) = TryCast(sourceItem.Data.ListView.DataSource, BindingList(Of Item))
-	        If dataSource IsNot Nothing Then
-	            If sourceBoundItem IsNot Nothing Then
-	                Dim sourceIndex As Integer = dataSource.IndexOf(sourceBoundItem)
-	                If viewElement IsNot Nothing Then
-	                    'add the dragged item at last position
-	                    dataSource.RemoveAt(sourceIndex)
-	                    dataSource.Add(sourceBoundItem)
-	                Else
-	                    viewElement = TryCast(sourceItem.Data.ListView.ListViewElement.ViewElement, SimpleListViewElement)
-	                    'reorder the items in the BindingList
-	                    Dim targetBoundItem As Item = TryCast(targetItem.Data.DataBoundItem, Item)
-	
-	                    dataSource.RemoveAt(sourceIndex)
-	                    Dim targetIndex As Integer = dataSource.IndexOf(targetBoundItem)
-	
-	                    If viewElement.ShouldDropAfter(targetItem, e.DropLocation) Then
-	                        targetIndex += 1
-	                    End If
-	                    dataSource.Insert(targetIndex, sourceBoundItem)
-	                End If
-	            End If
-	        End If
-	    End Sub
-	    
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -224,70 +152,7 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 	
 	        Me.radListView1.AllowDragDrop = True
 	
-	        '#End Region
-	
-	        AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragStart, AddressOf DragDropService_PreviewDragStart
-	        AddHandler Me.radListView1.ListViewElement.DragDropService.PreviewDragOver, AddressOf DragDropService_PreviewDragOver
-	        AddHandler Me.radListView1.ListViewElement.DragDropService.PreviewDragDrop, AddressOf DragDropService_PreviewDragDrop
-	    End Sub
-	
-	    '#Region "DragStartOver"
-	
-	    Private sourceBoundItem As Item
-	
-	    Private Sub DragDropService_PreviewDragStart(sender As Object, e As PreviewDragStartEventArgs)
-	        Dim sourceItem As SimpleListViewVisualItem = TryCast(e.DragInstance, SimpleListViewVisualItem)
-	        If sourceItem IsNot Nothing Then
-	            sourceBoundItem = TryCast(sourceItem.Data.DataBoundItem, Item)
-	        End If
-	    End Sub
-	
-	    Private Sub DragDropService_PreviewDragOver(sender As Object, e As RadDragOverEventArgs)
-	        If TypeOf e.DragInstance Is SimpleListViewVisualItem Then
-	            e.CanDrop = TypeOf e.HitTarget Is SimpleListViewVisualItem OrElse TypeOf e.HitTarget Is SimpleListViewElement
-	        End If
-	    End Sub
-	
-	    '#End Region
-	
-	    '#Region "DragDrop"
-	
-	    Private Sub DragDropService_PreviewDragDrop(sender As Object, e As RadDropEventArgs)
-	        e.Handled = True
-	
-	        Dim targetItem As SimpleListViewVisualItem = TryCast(e.HitTarget, SimpleListViewVisualItem)
-	        Dim sourceItem As SimpleListViewVisualItem = TryCast(e.DragInstance, SimpleListViewVisualItem)
-	        Dim viewElement As SimpleListViewElement = TryCast(e.HitTarget, SimpleListViewElement)
-	        If (targetItem Is Nothing OrElse sourceItem Is Nothing) AndAlso viewElement Is Nothing Then
-	            Return
-	        End If
-	        Dim dataSource As BindingList(Of Item) = TryCast(sourceItem.Data.ListView.DataSource, BindingList(Of Item))
-	        If dataSource IsNot Nothing Then
-	            If sourceBoundItem IsNot Nothing Then
-	                Dim sourceIndex As Integer = dataSource.IndexOf(sourceBoundItem)
-	                If viewElement IsNot Nothing Then
-	                    'add the dragged item at last position
-	                    dataSource.RemoveAt(sourceIndex)
-	                    dataSource.Add(sourceBoundItem)
-	                Else
-	                    viewElement = TryCast(sourceItem.Data.ListView.ListViewElement.ViewElement, SimpleListViewElement)
-	                    'reorder the items in the BindingList
-	                    Dim targetBoundItem As Item = TryCast(targetItem.Data.DataBoundItem, Item)
-	
-	                    dataSource.RemoveAt(sourceIndex)
-	                    Dim targetIndex As Integer = dataSource.IndexOf(targetBoundItem)
-	
-	                    If viewElement.ShouldDropAfter(targetItem, e.DropLocation) Then
-	                        targetIndex += 1
-	                    End If
-	                    dataSource.Insert(targetIndex, sourceBoundItem)
-	                End If
-	            End If
-	        End If
-	    End Sub
-	    
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -341,46 +206,7 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 	        End If
 	    End Sub
 	
-	    '#End Region
-	
-	    '#Region "DragDrop"
-	
-	    Private Sub DragDropService_PreviewDragDrop(sender As Object, e As RadDropEventArgs)
-	        e.Handled = True
-	
-	        Dim targetItem As SimpleListViewVisualItem = TryCast(e.HitTarget, SimpleListViewVisualItem)
-	        Dim sourceItem As SimpleListViewVisualItem = TryCast(e.DragInstance, SimpleListViewVisualItem)
-	        Dim viewElement As SimpleListViewElement = TryCast(e.HitTarget, SimpleListViewElement)
-	        If (targetItem Is Nothing OrElse sourceItem Is Nothing) AndAlso viewElement Is Nothing Then
-	            Return
-	        End If
-	        Dim dataSource As BindingList(Of Item) = TryCast(sourceItem.Data.ListView.DataSource, BindingList(Of Item))
-	        If dataSource IsNot Nothing Then
-	            If sourceBoundItem IsNot Nothing Then
-	                Dim sourceIndex As Integer = dataSource.IndexOf(sourceBoundItem)
-	                If viewElement IsNot Nothing Then
-	                    'add the dragged item at last position
-	                    dataSource.RemoveAt(sourceIndex)
-	                    dataSource.Add(sourceBoundItem)
-	                Else
-	                    viewElement = TryCast(sourceItem.Data.ListView.ListViewElement.ViewElement, SimpleListViewElement)
-	                    'reorder the items in the BindingList
-	                    Dim targetBoundItem As Item = TryCast(targetItem.Data.DataBoundItem, Item)
-	
-	                    dataSource.RemoveAt(sourceIndex)
-	                    Dim targetIndex As Integer = dataSource.IndexOf(targetBoundItem)
-	
-	                    If viewElement.ShouldDropAfter(targetItem, e.DropLocation) Then
-	                        targetIndex += 1
-	                    End If
-	                    dataSource.Insert(targetIndex, sourceBoundItem)
-	                End If
-	            End If
-	        End If
-	    End Sub
-	    
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -475,7 +301,6 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 	        End If
 	    End Sub
 	    
-	    '#End Region
-	End Class
+	{{endregion}}
 
 

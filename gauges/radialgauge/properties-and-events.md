@@ -134,7 +134,6 @@ The __ValueChanged__ event fires when the value is modified. You can perform cha
 	        setting.ApplyValue(RadRadialGauge1.GaugeElement)
 	    End Sub
 	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 

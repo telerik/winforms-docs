@@ -98,47 +98,7 @@ Here are some examples on how to export and import.
 	        Dim provider As New XamlFormatProvider()
 	        Return provider.Export(document)
 	    End Function
-	#End Region
-	#Region "docx"
-	    Public Sub ExportToDocx(ByVal document As RadDocument)
-	        Dim provider As New DocxFormatProvider()
-	        Dim saveDialog As New SaveFileDialog()
-	        saveDialog.DefaultExt = ".docx"
-	        saveDialog.Filter = "Documents|*.docx"
-	        Dim dialogResult As DialogResult = saveDialog.ShowDialog()
-	        If dialogResult = System.Windows.Forms.DialogResult.OK Then
-	            Using output As Stream = saveDialog.OpenFile()
-	                provider.Export(document, output)
-	                MessageBox.Show("Saved Successfuly!")
-	            End Using
-	        End If
-	    End Sub
-	#End Region
-	
-	#Region "importXAML"
-	    Public Function ImportXaml(ByVal content As String) As RadDocument
-	        Dim provider As New XamlFormatProvider()
-	        Return provider.Import(content)
-	    End Function
-	#End Region
-	
-	#Region "importDocx"
-	    Public Function ImportDocx() As RadDocument
-	        Dim document As RadDocument = Nothing
-	        Dim provider As IDocumentFormatProvider = New DocxFormatProvider()
-	        Dim openDialog As New OpenFileDialog()
-	        openDialog.Filter = "Documents|*.docx"
-	        openDialog.Multiselect = False
-	        Dim dialogResult As DialogResult = openDialog.ShowDialog()
-	        If dialogResult = System.Windows.Forms.DialogResult.OK Then
-	            Using stream As Stream = openDialog.OpenFile()
-	                document = provider.Import(stream)
-	            End Using
-	        End If
-	        Return document
-	    End Function
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -183,32 +143,7 @@ Here are some examples on how to export and import.
 	            End Using
 	        End If
 	    End Sub
-	#End Region
-	
-	#Region "importXAML"
-	    Public Function ImportXaml(ByVal content As String) As RadDocument
-	        Dim provider As New XamlFormatProvider()
-	        Return provider.Import(content)
-	    End Function
-	#End Region
-	
-	#Region "importDocx"
-	    Public Function ImportDocx() As RadDocument
-	        Dim document As RadDocument = Nothing
-	        Dim provider As IDocumentFormatProvider = New DocxFormatProvider()
-	        Dim openDialog As New OpenFileDialog()
-	        openDialog.Filter = "Documents|*.docx"
-	        openDialog.Multiselect = False
-	        Dim dialogResult As DialogResult = openDialog.ShowDialog()
-	        If dialogResult = System.Windows.Forms.DialogResult.OK Then
-	            Using stream As Stream = openDialog.OpenFile()
-	                document = provider.Import(stream)
-	            End Using
-	        End If
-	        Return document
-	    End Function
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -233,25 +168,7 @@ Here are some examples on how to export and import.
 	        Dim provider As New XamlFormatProvider()
 	        Return provider.Import(content)
 	    End Function
-	#End Region
-	
-	#Region "importDocx"
-	    Public Function ImportDocx() As RadDocument
-	        Dim document As RadDocument = Nothing
-	        Dim provider As IDocumentFormatProvider = New DocxFormatProvider()
-	        Dim openDialog As New OpenFileDialog()
-	        openDialog.Filter = "Documents|*.docx"
-	        openDialog.Multiselect = False
-	        Dim dialogResult As DialogResult = openDialog.ShowDialog()
-	        If dialogResult = System.Windows.Forms.DialogResult.OK Then
-	            Using stream As Stream = openDialog.OpenFile()
-	                document = provider.Import(stream)
-	            End Using
-	        End If
-	        Return document
-	    End Function
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -298,8 +215,7 @@ Here are some examples on how to export and import.
 	        End If
 	        Return document
 	    End Function
-	#End Region
-	End Class
+	{{endregion}}
 
 
 

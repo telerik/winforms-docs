@@ -34,46 +34,7 @@ To change the default English localization provider you should use the __Current
 	
 	        RichTextBoxLocalizationProvider.CurrentProvider = RichTextBoxLocalizationProvider.FromFile("C:\RichTextBoxStrings.xml")
 	
-	        '#End Region
-	
-	        '#Region "change"
-	
-	        RichTextBoxLocalizationProvider.CurrentProvider = New MyRichTextBoxLocalizationProvider()
-	
-	        '#End Region
-	    End Sub
-	End Class
-	
-	#Region "custom"
-	
-	Public Class MyRichTextBoxLocalizationProvider
-	    Inherits RichTextBoxLocalizationProvider
-	
-	    Public Overrides Function GetLocalizedString(ByVal id As String) As String
-	        Select Case id
-	            Case "Documents_FindReplaceDialog_FindNext"
-	                Return "Weitersuchen"
-	            Case "Documents_FindReplaceDialog_Header"
-	                Return "Suchen und Ersetzen"
-	            Case "Documents_FindReplaceDialog_Replace"
-	                Return "Ersetzen"
-	            Case "Documents_FindReplaceDialog_ReplaceAll"
-	                Return "Alle ersetzen"
-	            Case "Documents_FindReplaceDialog_ReplaceWith"
-	                Return "Ersetzen durch"
-	            Case "Documents_FindReplaceDialog_TextToFind"
-	                Return "Suchen nach"
-	            Case "Documents_FindReplaceDialog_RestartSearch"
-	                Return "Zeigen unten die Multifunktionsleiste"
-	            Case "Documents_FindReplaceDialog_SearchedTextNotFound"
-	                Return "Der Suchbegriff wurde nicht gefunden"
-	        End Select
-	
-	        Return MyBase.GetLocalizedString(id)
-	    End Function
-	End Class
-	
-	#End Region
+	{{endregion}}
 
 
 
@@ -148,7 +109,7 @@ Another approach is co create a custom localization provider class which inherit
 	    End Function
 	End Class
 	
-	#End Region
+	{{endregion}}
 
 
 
@@ -170,40 +131,7 @@ The following code snipped shows how you can use the new class:
 	
 	        RichTextBoxLocalizationProvider.CurrentProvider = New MyRichTextBoxLocalizationProvider()
 	
-	        '#End Region
-	    End Sub
-	End Class
-	
-	#Region "custom"
-	
-	Public Class MyRichTextBoxLocalizationProvider
-	    Inherits RichTextBoxLocalizationProvider
-	
-	    Public Overrides Function GetLocalizedString(ByVal id As String) As String
-	        Select Case id
-	            Case "Documents_FindReplaceDialog_FindNext"
-	                Return "Weitersuchen"
-	            Case "Documents_FindReplaceDialog_Header"
-	                Return "Suchen und Ersetzen"
-	            Case "Documents_FindReplaceDialog_Replace"
-	                Return "Ersetzen"
-	            Case "Documents_FindReplaceDialog_ReplaceAll"
-	                Return "Alle ersetzen"
-	            Case "Documents_FindReplaceDialog_ReplaceWith"
-	                Return "Ersetzen durch"
-	            Case "Documents_FindReplaceDialog_TextToFind"
-	                Return "Suchen nach"
-	            Case "Documents_FindReplaceDialog_RestartSearch"
-	                Return "Zeigen unten die Multifunktionsleiste"
-	            Case "Documents_FindReplaceDialog_SearchedTextNotFound"
-	                Return "Der Suchbegriff wurde nicht gefunden"
-	        End Select
-	
-	        Return MyBase.GetLocalizedString(id)
-	    End Function
-	End Class
-	
-	#End Region
+	{{endregion}}
 
 
 

@@ -44,20 +44,7 @@ __Example 1__ shows how to create a __Bookmark__ and add its BookmarkRangeStart 
 	            paragraph.Inlines.Add(bookmark.BookmarkRangeStart)
 	            paragraph.Inlines.AddRun("text")
 	            paragraph.Inlines.Add(bookmark.BookmarkRangeEnd)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertDeleteBookmark()
-	            '#Region "radwordsprocessing-model-bookmark_1"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	            Dim bookmark As Bookmark = editor.InsertBookmark("MyBookmark")
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-bookmark_2"
-	            editor.DeleteBookmark("MyBookmark")
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -81,13 +68,7 @@ Inserting a __Bookmark__ in the document can also be done with through the [RadF
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBookmark.vb region=radwordsprocessing-model-bookmark_1}}
 	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	            Dim bookmark As Bookmark = editor.InsertBookmark("MyBookmark")
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-bookmark_2"
-	            editor.DeleteBookmark("MyBookmark")
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -114,9 +95,7 @@ __Example 3__ demonstrates how you can delete the bookmark created in __Example 
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBookmark.vb region=radwordsprocessing-model-bookmark_2}}
 	            editor.DeleteBookmark("MyBookmark")
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 

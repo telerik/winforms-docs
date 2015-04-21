@@ -101,48 +101,7 @@ In order to describe fully the state of the frozen panes the following need to b
 	        Dim fixedPaneTopLeftCellIndex As New CellIndex(2, 2)
 	        Dim scrollableTopLeftCellIndex As New CellIndex(5, 8)
 	        workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 1, 4, scrollableTopLeftCellIndex)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub DummySplit()
-	        Dim workbook As New Workbook()
-	
-	        '#Region "HorizontalVerticalSplit"
-	
-	        Dim fixedPaneTopLeftCellIndex As New CellIndex(2, 2)
-	        workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 0, 4)
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub DummyPane()
-	        Dim workbook As New Workbook()
-	
-	        '#Region "Pane"
-	
-	        Dim scrollableTopLeftCellIndex As New CellIndex(5, 8)
-	        Dim pane As New Pane(scrollableTopLeftCellIndex, 4, 1, ViewportPaneType.Scrollable)
-	        workbook.ActiveWorksheet.ViewState.Pane = pane
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub DummyUnfreezingPanes()
-	        Dim workbook As New Workbook()
-	
-	        '#Region "UnfreezingPanes"
-	
-	        workbook.ActiveWorksheet.ViewState.FreezePanes(0, 0)
-	
-	        '#End Region
-	
-	        '#Region "AlternativeUnfreezingPanes"
-	
-	        workbook.ActiveWorksheet.ViewState.Pane = Nothing
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -167,37 +126,7 @@ In order to describe fully the state of the frozen panes the following need to b
 	        Dim fixedPaneTopLeftCellIndex As New CellIndex(2, 2)
 	        workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 0, 4)
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub DummyPane()
-	        Dim workbook As New Workbook()
-	
-	        '#Region "Pane"
-	
-	        Dim scrollableTopLeftCellIndex As New CellIndex(5, 8)
-	        Dim pane As New Pane(scrollableTopLeftCellIndex, 4, 1, ViewportPaneType.Scrollable)
-	        workbook.ActiveWorksheet.ViewState.Pane = pane
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub DummyUnfreezingPanes()
-	        Dim workbook As New Workbook()
-	
-	        '#Region "UnfreezingPanes"
-	
-	        workbook.ActiveWorksheet.ViewState.FreezePanes(0, 0)
-	
-	        '#End Region
-	
-	        '#Region "AlternativeUnfreezingPanes"
-	
-	        workbook.ActiveWorksheet.ViewState.Pane = Nothing
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 This code will result in the following:![spreadprocessing-features-freeze-panes 004](images/spreadprocessing-features-freeze-panes004.png)Since the two panes present are only vertical scrollable and scrollable the columns A and B will remain unreachable. 
             However, the user will be able to scroll to the first two rows. Even though there are two rows from the start of the document 
@@ -242,25 +171,7 @@ This code will result in the following:![spreadprocessing-features-freeze-panes 
 	        Dim pane As New Pane(scrollableTopLeftCellIndex, 4, 1, ViewportPaneType.Scrollable)
 	        workbook.ActiveWorksheet.ViewState.Pane = pane
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub DummyUnfreezingPanes()
-	        Dim workbook As New Workbook()
-	
-	        '#Region "UnfreezingPanes"
-	
-	        workbook.ActiveWorksheet.ViewState.FreezePanes(0, 0)
-	
-	        '#End Region
-	
-	        '#Region "AlternativeUnfreezingPanes"
-	
-	        workbook.ActiveWorksheet.ViewState.Pane = Nothing
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -285,15 +196,7 @@ In order to unfreeze the panes of the worksheet you need to use the same methods
 	
 	        workbook.ActiveWorksheet.ViewState.FreezePanes(0, 0)
 	
-	        '#End Region
-	
-	        '#Region "AlternativeUnfreezingPanes"
-	
-	        workbook.ActiveWorksheet.ViewState.Pane = Nothing
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -315,9 +218,7 @@ Another option is to set the Pane property of the ViewState to null.
 	
 	        workbook.ActiveWorksheet.ViewState.Pane = Nothing
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

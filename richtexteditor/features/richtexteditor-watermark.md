@@ -51,27 +51,7 @@ There is also a set of predefined textual watermarks - the most commonly used on
 
 {{source=..\SamplesVB\RichTextEditor\Features\Watermark.vb region=set}}
 	        Me.radRichTextEditor1.SetWatermark(PredefinedWatermarkType.Confidential)
-	        '#End Region
-	
-	        '#Region "settings"
-	        Dim textSettings As New WatermarkTextSettings()
-	        textSettings.Text = "Purple Watermark"
-	        textSettings.RotateAngle = 30
-	        textSettings.Opacity = 1
-	        textSettings.ForegroundColor = Colors.Purple
-	
-	        Me.radRichTextEditor1.SetWatermarkText(textSettings)
-	        '#End Region
-	        Dim uri As New Uri("")
-	        '#Region "image"
-	        Dim imageSettings As New WatermarkImageSettings()
-	        imageSettings.UriSource = uri
-	        imageSettings.Size = New Size(500, 665)
-	
-	        Me.radRichTextEditor1.SetWatermarkImage(imageSettings)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -106,17 +86,7 @@ The following example demonstrates how to crate a text watermark and apply it to
 	        textSettings.ForegroundColor = Colors.Purple
 	
 	        Me.radRichTextEditor1.SetWatermarkText(textSettings)
-	        '#End Region
-	        Dim uri As New Uri("")
-	        '#Region "image"
-	        Dim imageSettings As New WatermarkImageSettings()
-	        imageSettings.UriSource = uri
-	        imageSettings.Size = New Size(500, 665)
-	
-	        Me.radRichTextEditor1.SetWatermarkImage(imageSettings)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -142,9 +112,7 @@ And this is how you create an image watermark and apply it:
 	        imageSettings.Size = New Size(500, 665)
 	
 	        Me.radRichTextEditor1.SetWatermarkImage(imageSettings)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

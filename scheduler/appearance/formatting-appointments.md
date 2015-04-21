@@ -77,8 +77,7 @@ The code snippet below demonstrates how to change the font, fore color, border c
 	            e.AppointmentElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local)
 	        End If
 	    End Sub
-	    #End Region
-	End Class
+	{{endregion}}
 
 ![scheduler-appearance-formatting-appointments 001](images/scheduler-appearance-formatting-appointments001.png)
 
@@ -99,33 +98,6 @@ It is possible to change the appointments’ shape setting the SchedulerElement.
 
 {{source=..\SamplesVB\Scheduler\Appearance\FormattingAppointments.vb region=AppointmentShape}}
 	        Me.RadScheduler1.SchedulerElement.AppointmentShape = New HeartShape()
-	        '#End Region
-	    End Sub
-	    
-	    #Region "AppointmentFormatting"
-	
-	    Private font As New Font("Verdana", 10.0F, FontStyle.Bold)
-	
-	    Private Sub RadScheduler1_AppointmentFormatting(sender As Object, e As Telerik.WinControls.UI.SchedulerAppointmentEventArgs) Handles RadScheduler1.AppointmentFormatting
-	        If e.AppointmentElement.Selected Then
-	            e.AppointmentElement.Font = font
-	            e.AppointmentElement.ForeColor = Color.Fuchsia
-	            e.AppointmentElement.TextAlignment = ContentAlignment.MiddleCenter
-	            e.AppointmentElement.UseDefaultPaint = True
-	            e.AppointmentElement.BorderColor = Color.Aqua
-	            e.AppointmentElement.BorderBoxStyle = BorderBoxStyle.SingleBorder
-	            e.AppointmentElement.BorderWidth = 3
-	        Else
-	            e.AppointmentElement.ResetValue(VisualElement.FontProperty, ValueResetFlags.Local)
-	            e.AppointmentElement.ResetValue(VisualElement.ForeColorProperty, ValueResetFlags.Local)
-	            e.AppointmentElement.ResetValue(LightVisualElement.TextAlignmentProperty, ValueResetFlags.Local)
-	            e.AppointmentElement.UseDefaultPaint = False
-	            e.AppointmentElement.ResetValue(LightVisualElement.BorderColorProperty, ValueResetFlags.Local)
-	            e.AppointmentElement.ResetValue(LightVisualElement.BorderWidthProperty, ValueResetFlags.Local)
-	            e.AppointmentElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local)
-	        End If
-	    End Sub
-	    #End Region
-	End Class
+	{{endregion}}
 
 ![scheduler-appearance-formatting-appointments 002](images/scheduler-appearance-formatting-appointments002.png)

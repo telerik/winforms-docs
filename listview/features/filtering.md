@@ -30,20 +30,7 @@ RadListView allows filtering operations in all views. To enable filtering operat
 
 {{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=EnableFiltering}}
 	        RadListView1.EnableFiltering = True
-	        '#End Region
-	
-	        '#Region FilterDescriptor
-	        Dim valueFilter As New FilterDescriptor("Value", FilterOperator.StartsWith, "Local")
-	        RadListView1.FilterDescriptors.Add(valueFilter)
-	        '#End Region
-	
-	        '#Region FilterDescriptor1
-	        Dim typeFilter As New FilterDescriptor("Type", FilterOperator.Contains, "Disk")
-	        RadListView1.FilterDescriptors.Add(typeFilter)
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -65,12 +52,9 @@ Once the filtering is enabled, we have to create a new __FilterDescriptor__
 #### __[VB.NET] Filter by value__
 
 {{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=FilterDescriptor}}
-	        Dim typeFilter As New FilterDescriptor("Type", FilterOperator.Contains, "Disk")
-	        RadListView1.FilterDescriptors.Add(typeFilter)
-	        '#End Region
-	
-	    End Sub
-	End Class
+	        Dim valueFilter As New FilterDescriptor("Value", FilterOperator.StartsWith, "Local")
+	        RadListView1.FilterDescriptors.Add(valueFilter)
+	{{endregion}}
 
 
 
@@ -94,10 +78,7 @@ When a column name is specified as __PropertyName__ of the filter descriptor,
 {{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=FilterDescriptor1}}
 	        Dim typeFilter As New FilterDescriptor("Type", FilterOperator.Contains, "Disk")
 	        RadListView1.FilterDescriptors.Add(typeFilter)
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

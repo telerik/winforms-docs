@@ -96,26 +96,7 @@ The first one involves subscribing to the __Showing__ event of the default __Con
 	        currentCell.Background = Colors.Yellow
 	        Me.radRichTextEditor1.UpdateEditorLayout()
 	    End Sub
-	#End Region
-	
-	    Public Sub temp()
-	        '#Region "create"
-	
-	        Dim contextMenu1 As Telerik.WinControls.RichTextEditor.UI.ContextMenu = CType(Me.radRichTextEditor1.RichTextBoxElement.ContextMenu, Telerik.WinControls.RichTextEditor.UI.ContextMenu)
-	        contextMenu1.ContentBuilder = New CustomContextMenuContentBuilder(Me.radRichTextEditor1)
-	        '#End Region
-	    End Sub
-	End Class
-	Public Class CustomContextMenuContentBuilder
-	    Inherits ContextMenuContentBuilder
-	
-	    Private radRichTextEditor1 As RadRichTextEditor
-	    Public Sub New(ByVal rte As RadRichTextEditor)
-	        Me.radRichTextEditor1 = rte
-	    End Sub
-	
-	End Class
-	
+	{{endregion}}
 
 
 
@@ -145,19 +126,7 @@ Now you can simply assign the instance of your class to the __ContentBuilder__ p
 	
 	        Dim contextMenu1 As Telerik.WinControls.RichTextEditor.UI.ContextMenu = CType(Me.radRichTextEditor1.RichTextBoxElement.ContextMenu, Telerik.WinControls.RichTextEditor.UI.ContextMenu)
 	        contextMenu1.ContentBuilder = New CustomContextMenuContentBuilder(Me.radRichTextEditor1)
-	        '#End Region
-	    End Sub
-	End Class
-	Public Class CustomContextMenuContentBuilder
-	    Inherits ContextMenuContentBuilder
-	
-	    Private radRichTextEditor1 As RadRichTextEditor
-	    Public Sub New(ByVal rte As RadRichTextEditor)
-	        Me.radRichTextEditor1 = rte
-	    End Sub
-	
-	End Class
-	
+	{{endregion}}
 
 
 

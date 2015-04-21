@@ -34,22 +34,7 @@ Exact Time Rendering increases readability of the appointments by rendering them
 
 {{source=..\SamplesVB\Scheduler\Views\CommonProperties.vb region=exactTimeRendering}}
 	        Me.RadScheduler1.EnableExactTimeRendering = True
-	        '#End Region
-	
-	        '#Region autoSizeAppointments
-	        Me.RadScheduler1.AutoSizeAppointments = True
-	        '#End Region
-	
-	        '#Region appointmentsHeight
-	        DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement).AppointmentHeight = 50
-	        DirectCast(Me.RadScheduler1.ViewElement, SchedulerTimelineViewElement).AppointmentHeight = 50
-	        '#End Region
-	
-	        '#Region appointmentsMargin
-	        Me.RadScheduler1.ViewElement.AppointmentMargin = New Padding(5, 0, 10, 0)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![scheduler-views-common-visual-properties 001](images/scheduler-views-common-visual-properties001.png)
 
@@ -71,18 +56,7 @@ When __AutoSizeAppointments__ is enabled, appointment elements will automaticall
 
 {{source=..\SamplesVB\Scheduler\Views\CommonProperties.vb region=autoSizeAppointments}}
 	        Me.RadScheduler1.AutoSizeAppointments = True
-	        '#End Region
-	
-	        '#Region appointmentsHeight
-	        DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement).AppointmentHeight = 50
-	        DirectCast(Me.RadScheduler1.ViewElement, SchedulerTimelineViewElement).AppointmentHeight = 50
-	        '#End Region
-	
-	        '#Region appointmentsMargin
-	        Me.RadScheduler1.ViewElement.AppointmentMargin = New Padding(5, 0, 10, 0)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![scheduler-views-common-visual-properties 002](images/scheduler-views-common-visual-properties002.png)
 
@@ -105,13 +79,7 @@ When __AutoSizeAppointments__ is disabled, the appointments in Month and Timelin
 {{source=..\SamplesVB\Scheduler\Views\CommonProperties.vb region=appointmentsHeight}}
 	        DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement).AppointmentHeight = 50
 	        DirectCast(Me.RadScheduler1.ViewElement, SchedulerTimelineViewElement).AppointmentHeight = 50
-	        '#End Region
-	
-	        '#Region appointmentsMargin
-	        Me.RadScheduler1.ViewElement.AppointmentMargin = New Padding(5, 0, 10, 0)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -131,8 +99,6 @@ Using the __AppointmentsMargin__ property, you can specify the spacing between t
 
 {{source=..\SamplesVB\Scheduler\Views\CommonProperties.vb region=appointmentsMargin}}
 	        Me.RadScheduler1.ViewElement.AppointmentMargin = New Padding(5, 0, 10, 0)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![scheduler-views-common-visual-properties 003](images/scheduler-views-common-visual-properties003.png)

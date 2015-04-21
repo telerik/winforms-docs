@@ -48,39 +48,7 @@ __Example 1__ shows how to use HtmlFormatProvider to import an HTML document fro
 	                Dim provider As New HtmlFormatProvider()
 	                Dim document As RadFlowDocument = provider.Import(input)
 	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Sub ImportFromString()
-	            '#Region "radwordsprocessing-formats-and-conversion-html-htmlformatprovider_1"
-	            Dim html As String = "<p>hello world!</p>"
-	            Dim provider As New HtmlFormatProvider()
-	            Dim document As RadFlowDocument = provider.Import(html)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub ExportToFile()
-	            '#Region "radwordsprocessing-formats-and-conversion-html-htmlformatprovider_2"
-	            Dim provider As New HtmlFormatProvider()
-	            Using output As Stream = File.Create("Sample.html")
-	                Dim document As RadFlowDocument = CreateRadFlowDocument()
-	                provider.Export(document, output)
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function CreateRadFlowDocument() As RadFlowDocument
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Sub ExportToString()
-	            '#Region "radwordsprocessing-formats-and-conversion-html-htmlformatprovider_3"
-	            Dim document As RadFlowDocument = CreateRadFlowDocument()
-	            Dim provider As New HtmlFormatProvider()
-	            Dim html As String = provider.Export(document)
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -103,31 +71,7 @@ __Example 2__ shows how you can import an HTML string.
 	            Dim html As String = "<p>hello world!</p>"
 	            Dim provider As New HtmlFormatProvider()
 	            Dim document As RadFlowDocument = provider.Import(html)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub ExportToFile()
-	            '#Region "radwordsprocessing-formats-and-conversion-html-htmlformatprovider_2"
-	            Dim provider As New HtmlFormatProvider()
-	            Using output As Stream = File.Create("Sample.html")
-	                Dim document As RadFlowDocument = CreateRadFlowDocument()
-	                provider.Export(document, output)
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function CreateRadFlowDocument() As RadFlowDocument
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Sub ExportToString()
-	            '#Region "radwordsprocessing-formats-and-conversion-html-htmlformatprovider_3"
-	            Dim document As RadFlowDocument = CreateRadFlowDocument()
-	            Dim provider As New HtmlFormatProvider()
-	            Dim html As String = provider.Export(document)
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -163,21 +107,7 @@ __Example 3__ shows how to use the HtmlFormatProvider to export an instance of R
 	                Dim document As RadFlowDocument = CreateRadFlowDocument()
 	                provider.Export(document, output)
 	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function CreateRadFlowDocument() As RadFlowDocument
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Sub ExportToString()
-	            '#Region "radwordsprocessing-formats-and-conversion-html-htmlformatprovider_3"
-	            Dim document As RadFlowDocument = CreateRadFlowDocument()
-	            Dim provider As New HtmlFormatProvider()
-	            Dim html As String = provider.Export(document)
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -200,8 +130,6 @@ You can also export the document to a string variable like shown in __Example 4_
 	            Dim document As RadFlowDocument = CreateRadFlowDocument()
 	            Dim provider As New HtmlFormatProvider()
 	            Dim html As String = provider.Export(document)
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 

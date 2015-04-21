@@ -68,74 +68,7 @@ Here is how to create a document with a single __Date__ field using __RadFlowDoc
 	        Dim document As New RadFlowDocument()
 	        Dim editor As New RadFlowDocumentEditor(document)
 	        editor.InsertField("DATE", "10/11/2012")
-	        '#End Region
-	    End Sub
-	
-	    Private Sub InsertDateField()
-	        '#Region "radwordsprocessing-concepts-fields_1"
-	        ' Create a document with paragraph 
-	        Dim document As New RadFlowDocument()
-	        Dim paragraph As Paragraph = document.Sections.AddSection().Blocks.AddParagraph()
-	
-	        ' Create the field info
-	        Dim field As New FieldInfo(document)
-	
-	        ' Create and add all the inlines to the paragraph.
-	        paragraph.Inlines.Add(field.Start)
-	        paragraph.Inlines.AddRun("AUTHOR")
-	        paragraph.Inlines.Add(field.Separator)
-	        paragraph.Inlines.AddRun("John Doe")
-	        paragraph.Inlines.Add(field.[End])
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UpdateField()
-	        '#Region "radwordsprocessing-concepts-fields_2"
-	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	        Dim fieldInfo As FieldInfo = editor.InsertField("DATE \@ dd/MM/yyyy", "result")
-	        Console.WriteLine(fieldInfo.GetResult())
-	        ' Output: result
-	        fieldInfo.UpdateField()
-	        Console.WriteLine(fieldInfo.GetResult())
-	        ' Output: 06/06/2014
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UpdateAllFields()
-	        '#Region "radwordsprocessing-concepts-fields_3"
-	        Dim document As New RadFlowDocument()
-	        Dim editor As New RadFlowDocumentEditor(document)
-	        Dim fieldInfo As FieldInfo = editor.InsertField("DATE \@ dd/MM/yyyy", "result")
-	
-	        Console.WriteLine(fieldInfo.GetResult())
-	        ' Output: result
-	        document.UpdateFields()
-	        Console.WriteLine(fieldInfo.GetResult())
-	        ' Output: 06/06/2014
-	        '#End Region
-	    End Sub
-	
-	    Private Sub NestedField()
-	        '#Region "radwordsprocessing-concepts-fields_4"
-	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	
-	        ' Create an outer field with empty code fragment
-	        Dim outerFieldInfo As FieldInfo = editor.InsertField(String.Empty, "if field result")
-	
-	        ' Move the editor after the field start character
-	        editor.MoveToInlineEnd(outerFieldInfo.Start)
-	
-	        ' Create the a code fragment with a nested TIME field
-	        editor.InsertText("IF ")
-	        editor.InsertField("TIME \@ HH", "time field result")
-	        editor.InsertText(" < 12 ""Good morning!"" ""Good afternoon!""")
-	
-	        outerFieldInfo.UpdateField()
-	        Console.WriteLine(outerFieldInfo.GetResult())
-	        ' Output: Good afternoon!
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -179,56 +112,7 @@ You can also create and insert all the parts of the field manually by creating a
 	        paragraph.Inlines.Add(field.Separator)
 	        paragraph.Inlines.AddRun("John Doe")
 	        paragraph.Inlines.Add(field.[End])
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UpdateField()
-	        '#Region "radwordsprocessing-concepts-fields_2"
-	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	        Dim fieldInfo As FieldInfo = editor.InsertField("DATE \@ dd/MM/yyyy", "result")
-	        Console.WriteLine(fieldInfo.GetResult())
-	        ' Output: result
-	        fieldInfo.UpdateField()
-	        Console.WriteLine(fieldInfo.GetResult())
-	        ' Output: 06/06/2014
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UpdateAllFields()
-	        '#Region "radwordsprocessing-concepts-fields_3"
-	        Dim document As New RadFlowDocument()
-	        Dim editor As New RadFlowDocumentEditor(document)
-	        Dim fieldInfo As FieldInfo = editor.InsertField("DATE \@ dd/MM/yyyy", "result")
-	
-	        Console.WriteLine(fieldInfo.GetResult())
-	        ' Output: result
-	        document.UpdateFields()
-	        Console.WriteLine(fieldInfo.GetResult())
-	        ' Output: 06/06/2014
-	        '#End Region
-	    End Sub
-	
-	    Private Sub NestedField()
-	        '#Region "radwordsprocessing-concepts-fields_4"
-	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	
-	        ' Create an outer field with empty code fragment
-	        Dim outerFieldInfo As FieldInfo = editor.InsertField(String.Empty, "if field result")
-	
-	        ' Move the editor after the field start character
-	        editor.MoveToInlineEnd(outerFieldInfo.Start)
-	
-	        ' Create the a code fragment with a nested TIME field
-	        editor.InsertText("IF ")
-	        editor.InsertField("TIME \@ HH", "time field result")
-	        editor.InsertText(" < 12 ""Good morning!"" ""Good afternoon!""")
-	
-	        outerFieldInfo.UpdateField()
-	        Console.WriteLine(outerFieldInfo.GetResult())
-	        ' Output: Good afternoon!
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -289,44 +173,7 @@ Updating a single field is done with the __UpdateField()__ method of the __Field
 	        fieldInfo.UpdateField()
 	        Console.WriteLine(fieldInfo.GetResult())
 	        ' Output: 06/06/2014
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UpdateAllFields()
-	        '#Region "radwordsprocessing-concepts-fields_3"
-	        Dim document As New RadFlowDocument()
-	        Dim editor As New RadFlowDocumentEditor(document)
-	        Dim fieldInfo As FieldInfo = editor.InsertField("DATE \@ dd/MM/yyyy", "result")
-	
-	        Console.WriteLine(fieldInfo.GetResult())
-	        ' Output: result
-	        document.UpdateFields()
-	        Console.WriteLine(fieldInfo.GetResult())
-	        ' Output: 06/06/2014
-	        '#End Region
-	    End Sub
-	
-	    Private Sub NestedField()
-	        '#Region "radwordsprocessing-concepts-fields_4"
-	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	
-	        ' Create an outer field with empty code fragment
-	        Dim outerFieldInfo As FieldInfo = editor.InsertField(String.Empty, "if field result")
-	
-	        ' Move the editor after the field start character
-	        editor.MoveToInlineEnd(outerFieldInfo.Start)
-	
-	        ' Create the a code fragment with a nested TIME field
-	        editor.InsertText("IF ")
-	        editor.InsertField("TIME \@ HH", "time field result")
-	        editor.InsertText(" < 12 ""Good morning!"" ""Good afternoon!""")
-	
-	        outerFieldInfo.UpdateField()
-	        Console.WriteLine(outerFieldInfo.GetResult())
-	        ' Output: Good afternoon!
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -363,30 +210,7 @@ All fields in the document can be updated using __UpdateFields()__ of __RadFlowD
 	        document.UpdateFields()
 	        Console.WriteLine(fieldInfo.GetResult())
 	        ' Output: 06/06/2014
-	        '#End Region
-	    End Sub
-	
-	    Private Sub NestedField()
-	        '#Region "radwordsprocessing-concepts-fields_4"
-	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	
-	        ' Create an outer field with empty code fragment
-	        Dim outerFieldInfo As FieldInfo = editor.InsertField(String.Empty, "if field result")
-	
-	        ' Move the editor after the field start character
-	        editor.MoveToInlineEnd(outerFieldInfo.Start)
-	
-	        ' Create the a code fragment with a nested TIME field
-	        editor.InsertText("IF ")
-	        editor.InsertField("TIME \@ HH", "time field result")
-	        editor.InsertText(" < 12 ""Good morning!"" ""Good afternoon!""")
-	
-	        outerFieldInfo.UpdateField()
-	        Console.WriteLine(outerFieldInfo.GetResult())
-	        ' Output: Good afternoon!
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -467,9 +291,7 @@ Here is an example of cratering a field which will be evaluated to appropriate g
 	        outerFieldInfo.UpdateField()
 	        Console.WriteLine(outerFieldInfo.GetResult())
 	        ' Output: Good afternoon!
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![wordsprocessing-concepts-fields 002](images/wordsprocessing-concepts-fields002.png)
 

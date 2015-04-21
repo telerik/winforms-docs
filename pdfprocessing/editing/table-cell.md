@@ -45,21 +45,7 @@ The code snippet in __Example 1__ shows how to create a table with a single row 
 	        Dim table As New Table()
 	        Dim firstRow As TableRow = table.Rows.AddTableRow()
 	        Dim firstCell As TableCell = firstRow.Cells.AddTableCell()
-	        '#End Region
-	
-	        '#Region "radpdfprocessing-editing-tablecell_1"
-	        Dim block As Block = firstCell.Blocks.AddBlock()
-	        block.InsertText("Text in the cell.")
-	        '#End Region
-	
-	        '#Region "radpdfprocessing-editing-tablecell_2"
-	        firstCell.RowSpan = 2
-	        firstCell.ColumnSpan = 2
-	        firstCell.Borders = New TableCellBorders(New Border(1, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(150, 0, 0)))
-	        firstCell.Background = New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 100, 100)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -85,16 +71,7 @@ __Example 2__ shows how to create a cell with a single [Block]({%slug radpdfproc
 {{source=..\SamplesVB\PdfProcessing\Editing\TableCell1.vb region=radpdfprocessing-editing-tablecell_1}}
 	        Dim block As Block = firstCell.Blocks.AddBlock()
 	        block.InsertText("Text in the cell.")
-	        '#End Region
-	
-	        '#Region "radpdfprocessing-editing-tablecell_2"
-	        firstCell.RowSpan = 2
-	        firstCell.ColumnSpan = 2
-	        firstCell.Borders = New TableCellBorders(New Border(1, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(150, 0, 0)))
-	        firstCell.Background = New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 100, 100)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -142,9 +119,7 @@ __Example 3__ demonstrates how to set locally the cell properties to a specific 
 	        firstCell.ColumnSpan = 2
 	        firstCell.Borders = New TableCellBorders(New Border(1, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(150, 0, 0)))
 	        firstCell.Background = New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 100, 100)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

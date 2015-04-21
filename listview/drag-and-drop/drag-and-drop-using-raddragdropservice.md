@@ -94,134 +94,7 @@ This article will guide you through the process of achieving drag and drop funct
 	        gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Telerik UI for Windows Phone")
 	        Me.RadGridView1.DataSource = gridViewDataTable
 	    End Sub
-	    '#End Region
-	
-	
-	    '#Region "ListViewToGridView"
-	
-	    Private Sub DragDropService_PreviewDragOver(sender As Object, e As RadDragOverEventArgs)
-	        e.CanDrop = TypeOf e.HitTarget Is GridTableElement OrElse TypeOf e.HitTarget Is GridDataRowElement
-	    End Sub
-	
-	    Private Sub DragDropService_PreviewDragDrop(sender As Object, e As RadDropEventArgs)
-	        Dim draggedItem As BaseListViewVisualItem = TryCast(e.DragInstance, BaseListViewVisualItem)
-	        Dim rowElement As GridDataRowElement = TryCast(e.HitTarget, GridDataRowElement)
-	        Dim tableElement As GridTableElement = TryCast(e.HitTarget, GridTableElement)
-	
-	        If rowElement Is Nothing AndAlso tableElement Is Nothing Then
-	            Return
-	        End If
-	        e.Handled = True
-	        Dim newRow As DataRow = gridViewDataTable.NewRow()
-	        If tableElement IsNot Nothing Then
-	            gridViewDataTable.Rows.Add(newRow)
-	        End If
-	        If rowElement IsNot Nothing Then
-	            Dim targetRow As GridViewRowInfo = rowElement.RowInfo
-	
-	            Dim insertIndex As Integer = Me.RadGridView1.Rows.IndexOf(targetRow)
-	            If insertIndex > -1 Then
-	                gridViewDataTable.Rows.InsertAt(newRow, insertIndex)
-	            End If
-	        End If
-	        newRow("Id") = draggedItem.Data("Id")
-	        newRow("Title") = draggedItem.Data("Title")
-	
-	        Me.RadListView1.Items.Remove(draggedItem.Data)
-	    End Sub
-	
-	    '#End Region
-	
-	    '#Region "GridViewToListView"
-	
-	    Private Sub svc_PreviewDragStart(sender As Object, e As PreviewDragStartEventArgs)
-	        e.CanStart = True
-	    End Sub
-	
-	    Private Sub svc_PreviewDragOver(sender As Object, e As RadDragOverEventArgs)
-	        If TypeOf e.DragInstance Is GridDataRowElement Then
-	            e.CanDrop = TypeOf e.HitTarget Is DetailListViewDataCellElement OrElse TypeOf e.HitTarget Is DetailListViewElement
-	        End If
-	    End Sub
-	
-	    Private Sub svc_PreviewDragDrop(sender As Object, e As RadDropEventArgs)
-	        Dim targetCell As DetailListViewDataCellElement = TryCast(e.HitTarget, DetailListViewDataCellElement)
-	        Dim targetElement As DetailListViewElement = TryCast(e.HitTarget, DetailListViewElement)
-	        Dim draggedRow As GridDataRowElement = TryCast(e.DragInstance, GridDataRowElement)
-	
-	        If draggedRow Is Nothing Then
-	            Return
-	        End If
-	        Dim item As New ListViewDataItem()
-	        Dim draggedDataBoundItem As DataRow = DirectCast(draggedRow.RowInfo.DataBoundItem, DataRowView).Row
-	        If targetElement IsNot Nothing Then
-	            DirectCast(targetElement.Parent, RadListViewElement).Items.Add(item)
-	        End If
-	        If targetCell IsNot Nothing Then
-	            Dim targetVisualItem As BaseListViewVisualItem = targetCell.RowElement
-	
-	            Dim insertIndex As Integer = targetCell.Row.ListView.Items.IndexOf(targetVisualItem.Data)
-	            If insertIndex > -1 Then
-	                targetCell.Row.ListView.Items.Insert(insertIndex, item)
-	            End If
-	        End If
-	        item("Id") = draggedDataBoundItem("Id")
-	        item("Title") = draggedDataBoundItem("Title")
-	
-	        gridViewDataTable.Rows.Remove(draggedDataBoundItem)
-	    End Sub
-	
-	    '#End Region
-	
-	    '#Region "RowBehavior"
-	
-	    'initiates drag and drop service for clicked rows
-	
-	    Public Class CustomRowGridBehavior
-	        Inherits GridDataRowBehavior
-	        Protected Overrides Function OnMouseDownLeft(e As MouseEventArgs) As Boolean
-	            Dim row As GridDataRowElement = TryCast(Me.GetRowAtPoint(e.Location), GridDataRowElement)
-	            If row IsNot Nothing Then
-	                Dim svc As RadGridViewDragDropService = Me.GridViewElement.GetService(Of RadGridViewDragDropService)()
-	                svc.Start(row)
-	            End If
-	            Return MyBase.OnMouseDownLeft(e)
-	        End Function
-	    End Class
-	
-	    '#End Region
-	
-	    Private Sub DragDropRadDragDropService_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-	        '#Region "RegisterRowBehavior"
-	
-	        'register the custom row behavior
-	        Dim gridBehavior As BaseGridBehavior = TryCast(Me.RadGridView1.GridBehavior, BaseGridBehavior)
-	        gridBehavior.UnregisterBehavior(GetType(GridViewDataRowInfo))
-	        gridBehavior.RegisterBehavior(GetType(GridViewDataRowInfo), New CustomRowGridBehavior())
-	
-	        '#End Region
-	
-	        '#Region "WireGridServiceEvents"
-	
-	        'handle drag and drop events for the grid through the DragDrop service
-	        Dim svc As RadDragDropService = Me.RadGridView1.GridViewElement.GetService(Of RadDragDropService)()
-	        AddHandler svc.PreviewDragStart, AddressOf svc_PreviewDragStart
-	        AddHandler svc.PreviewDragDrop, AddressOf svc_PreviewDragDrop
-	        AddHandler svc.PreviewDragOver, AddressOf svc_PreviewDragOver
-	
-	        '#End Region
-	
-	        Me.RadListView1.AllowDragDrop = True
-	
-	        '#Region "WireListViewServiceEvents"
-	
-	        AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragOver, AddressOf DragDropService_PreviewDragOver
-	        AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragDrop, AddressOf DragDropService_PreviewDragDrop
-	
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -274,39 +147,7 @@ This article will guide you through the process of achieving drag and drop funct
 	        End Function
 	    End Class
 	
-	    '#End Region
-	
-	    Private Sub DragDropRadDragDropService_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-	        '#Region "RegisterRowBehavior"
-	
-	        'register the custom row behavior
-	        Dim gridBehavior As BaseGridBehavior = TryCast(Me.RadGridView1.GridBehavior, BaseGridBehavior)
-	        gridBehavior.UnregisterBehavior(GetType(GridViewDataRowInfo))
-	        gridBehavior.RegisterBehavior(GetType(GridViewDataRowInfo), New CustomRowGridBehavior())
-	
-	        '#End Region
-	
-	        '#Region "WireGridServiceEvents"
-	
-	        'handle drag and drop events for the grid through the DragDrop service
-	        Dim svc As RadDragDropService = Me.RadGridView1.GridViewElement.GetService(Of RadDragDropService)()
-	        AddHandler svc.PreviewDragStart, AddressOf svc_PreviewDragStart
-	        AddHandler svc.PreviewDragDrop, AddressOf svc_PreviewDragDrop
-	        AddHandler svc.PreviewDragOver, AddressOf svc_PreviewDragOver
-	
-	        '#End Region
-	
-	        Me.RadListView1.AllowDragDrop = True
-	
-	        '#Region "WireListViewServiceEvents"
-	
-	        AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragOver, AddressOf DragDropService_PreviewDragOver
-	        AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragDrop, AddressOf DragDropService_PreviewDragDrop
-	
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -335,29 +176,7 @@ This article will guide you through the process of achieving drag and drop funct
 	        gridBehavior.UnregisterBehavior(GetType(GridViewDataRowInfo))
 	        gridBehavior.RegisterBehavior(GetType(GridViewDataRowInfo), New CustomRowGridBehavior())
 	
-	        '#End Region
-	
-	        '#Region "WireGridServiceEvents"
-	
-	        'handle drag and drop events for the grid through the DragDrop service
-	        Dim svc As RadDragDropService = Me.RadGridView1.GridViewElement.GetService(Of RadDragDropService)()
-	        AddHandler svc.PreviewDragStart, AddressOf svc_PreviewDragStart
-	        AddHandler svc.PreviewDragDrop, AddressOf svc_PreviewDragDrop
-	        AddHandler svc.PreviewDragOver, AddressOf svc_PreviewDragOver
-	
-	        '#End Region
-	
-	        Me.RadListView1.AllowDragDrop = True
-	
-	        '#Region "WireListViewServiceEvents"
-	
-	        AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragOver, AddressOf DragDropService_PreviewDragOver
-	        AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragDrop, AddressOf DragDropService_PreviewDragDrop
-	
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -463,57 +282,7 @@ This article will guide you through the process of achieving drag and drop funct
 	        gridViewDataTable.Rows.Remove(draggedDataBoundItem)
 	    End Sub
 	
-	    '#End Region
-	
-	    '#Region "RowBehavior"
-	
-	    'initiates drag and drop service for clicked rows
-	
-	    Public Class CustomRowGridBehavior
-	        Inherits GridDataRowBehavior
-	        Protected Overrides Function OnMouseDownLeft(e As MouseEventArgs) As Boolean
-	            Dim row As GridDataRowElement = TryCast(Me.GetRowAtPoint(e.Location), GridDataRowElement)
-	            If row IsNot Nothing Then
-	                Dim svc As RadGridViewDragDropService = Me.GridViewElement.GetService(Of RadGridViewDragDropService)()
-	                svc.Start(row)
-	            End If
-	            Return MyBase.OnMouseDownLeft(e)
-	        End Function
-	    End Class
-	
-	    '#End Region
-	
-	    Private Sub DragDropRadDragDropService_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-	        '#Region "RegisterRowBehavior"
-	
-	        'register the custom row behavior
-	        Dim gridBehavior As BaseGridBehavior = TryCast(Me.RadGridView1.GridBehavior, BaseGridBehavior)
-	        gridBehavior.UnregisterBehavior(GetType(GridViewDataRowInfo))
-	        gridBehavior.RegisterBehavior(GetType(GridViewDataRowInfo), New CustomRowGridBehavior())
-	
-	        '#End Region
-	
-	        '#Region "WireGridServiceEvents"
-	
-	        'handle drag and drop events for the grid through the DragDrop service
-	        Dim svc As RadDragDropService = Me.RadGridView1.GridViewElement.GetService(Of RadDragDropService)()
-	        AddHandler svc.PreviewDragStart, AddressOf svc_PreviewDragStart
-	        AddHandler svc.PreviewDragDrop, AddressOf svc_PreviewDragDrop
-	        AddHandler svc.PreviewDragOver, AddressOf svc_PreviewDragOver
-	
-	        '#End Region
-	
-	        Me.RadListView1.AllowDragDrop = True
-	
-	        '#Region "WireListViewServiceEvents"
-	
-	        AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragOver, AddressOf DragDropService_PreviewDragOver
-	        AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragDrop, AddressOf DragDropService_PreviewDragDrop
-	
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -609,97 +378,6 @@ This article will guide you through the process of achieving drag and drop funct
 	        Me.RadListView1.Items.Remove(draggedItem.Data)
 	    End Sub
 	
-	    '#End Region
-	
-	    '#Region "GridViewToListView"
-	
-	    Private Sub svc_PreviewDragStart(sender As Object, e As PreviewDragStartEventArgs)
-	        e.CanStart = True
-	    End Sub
-	
-	    Private Sub svc_PreviewDragOver(sender As Object, e As RadDragOverEventArgs)
-	        If TypeOf e.DragInstance Is GridDataRowElement Then
-	            e.CanDrop = TypeOf e.HitTarget Is DetailListViewDataCellElement OrElse TypeOf e.HitTarget Is DetailListViewElement
-	        End If
-	    End Sub
-	
-	    Private Sub svc_PreviewDragDrop(sender As Object, e As RadDropEventArgs)
-	        Dim targetCell As DetailListViewDataCellElement = TryCast(e.HitTarget, DetailListViewDataCellElement)
-	        Dim targetElement As DetailListViewElement = TryCast(e.HitTarget, DetailListViewElement)
-	        Dim draggedRow As GridDataRowElement = TryCast(e.DragInstance, GridDataRowElement)
-	
-	        If draggedRow Is Nothing Then
-	            Return
-	        End If
-	        Dim item As New ListViewDataItem()
-	        Dim draggedDataBoundItem As DataRow = DirectCast(draggedRow.RowInfo.DataBoundItem, DataRowView).Row
-	        If targetElement IsNot Nothing Then
-	            DirectCast(targetElement.Parent, RadListViewElement).Items.Add(item)
-	        End If
-	        If targetCell IsNot Nothing Then
-	            Dim targetVisualItem As BaseListViewVisualItem = targetCell.RowElement
-	
-	            Dim insertIndex As Integer = targetCell.Row.ListView.Items.IndexOf(targetVisualItem.Data)
-	            If insertIndex > -1 Then
-	                targetCell.Row.ListView.Items.Insert(insertIndex, item)
-	            End If
-	        End If
-	        item("Id") = draggedDataBoundItem("Id")
-	        item("Title") = draggedDataBoundItem("Title")
-	
-	        gridViewDataTable.Rows.Remove(draggedDataBoundItem)
-	    End Sub
-	
-	    '#End Region
-	
-	    '#Region "RowBehavior"
-	
-	    'initiates drag and drop service for clicked rows
-	
-	    Public Class CustomRowGridBehavior
-	        Inherits GridDataRowBehavior
-	        Protected Overrides Function OnMouseDownLeft(e As MouseEventArgs) As Boolean
-	            Dim row As GridDataRowElement = TryCast(Me.GetRowAtPoint(e.Location), GridDataRowElement)
-	            If row IsNot Nothing Then
-	                Dim svc As RadGridViewDragDropService = Me.GridViewElement.GetService(Of RadGridViewDragDropService)()
-	                svc.Start(row)
-	            End If
-	            Return MyBase.OnMouseDownLeft(e)
-	        End Function
-	    End Class
-	
-	    '#End Region
-	
-	    Private Sub DragDropRadDragDropService_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-	        '#Region "RegisterRowBehavior"
-	
-	        'register the custom row behavior
-	        Dim gridBehavior As BaseGridBehavior = TryCast(Me.RadGridView1.GridBehavior, BaseGridBehavior)
-	        gridBehavior.UnregisterBehavior(GetType(GridViewDataRowInfo))
-	        gridBehavior.RegisterBehavior(GetType(GridViewDataRowInfo), New CustomRowGridBehavior())
-	
-	        '#End Region
-	
-	        '#Region "WireGridServiceEvents"
-	
-	        'handle drag and drop events for the grid through the DragDrop service
-	        Dim svc As RadDragDropService = Me.RadGridView1.GridViewElement.GetService(Of RadDragDropService)()
-	        AddHandler svc.PreviewDragStart, AddressOf svc_PreviewDragStart
-	        AddHandler svc.PreviewDragDrop, AddressOf svc_PreviewDragDrop
-	        AddHandler svc.PreviewDragOver, AddressOf svc_PreviewDragOver
-	
-	        '#End Region
-	
-	        Me.RadListView1.AllowDragDrop = True
-	
-	        '#Region "WireListViewServiceEvents"
-	
-	        AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragOver, AddressOf DragDropService_PreviewDragOver
-	        AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragDrop, AddressOf DragDropService_PreviewDragDrop
-	
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 

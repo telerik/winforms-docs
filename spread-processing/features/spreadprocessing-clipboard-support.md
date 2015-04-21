@@ -57,39 +57,7 @@ __Example 1__ creates a new workbook with a single worksheet and assigns some sa
 	
 	        Dim copiedCellRange As New CellRange(0, 0, 2, 1)
 	        Dim worksheetFragment As WorksheetFragment = worksheet.Cells(copiedCellRange).Copy()
-	        '#End Region
-	
-	
-	        
-	
-	
-	        '#Region "radspreadprocessing-features-clipboard-support_2"
-	        Dim pasteOptionsValues As New PasteOptions(PasteType.Values)
-	        worksheet.Cells(2, 0).Paste(worksheetFragment, pasteOptionsValues)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-clipboard-support_3"
-	        Dim valuesAndFormatting As New PasteOptions(PasteType.Formulas Or PasteType.Formats)
-	        worksheet.Cells(3, 0).Paste(worksheetFragment, valuesAndFormatting)
-	        '#End Region
-	    End Sub
-	
-	    Protected Overrides Sub OnLoad(e As EventArgs)
-	        MyBase.OnLoad(e)
-	        '#Region "radspreadprocessing-features-clipboard-support_1"
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        worksheet.Cells(0, 0).SetValue("=CONCATENATE(""Rad"", ""Spreadsheet"")")
-	        worksheet.Cells(0, 0).SetForeColor(New ThemableColor(Colors.Green))
-	
-	        Dim worksheetFragment As WorksheetFragment = worksheet.Cells(0, 0).Copy()
-	        
-	        Dim pasteOptions As New PasteOptions(PasteType.All)
-	        worksheet.Cells(1, 0).Paste(worksheetFragment, pasteOptions)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -152,9 +120,7 @@ __Example 2__ creates a new workbook with an empty worksheet. Further, the examp
 	        
 	        Dim pasteOptions As New PasteOptions(PasteType.All)
 	        worksheet.Cells(1, 0).Paste(worksheetFragment, pasteOptions)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -175,30 +141,7 @@ Using different __PasteType__, however, produces different output. __Example 3__
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingClipboardSupport.vb region=radspreadprocessing-features-clipboard-support_2}}
 	        Dim pasteOptionsValues As New PasteOptions(PasteType.Values)
 	        worksheet.Cells(2, 0).Paste(worksheetFragment, pasteOptionsValues)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-clipboard-support_3"
-	        Dim valuesAndFormatting As New PasteOptions(PasteType.Formulas Or PasteType.Formats)
-	        worksheet.Cells(3, 0).Paste(worksheetFragment, valuesAndFormatting)
-	        '#End Region
-	    End Sub
-	
-	    Protected Overrides Sub OnLoad(e As EventArgs)
-	        MyBase.OnLoad(e)
-	        '#Region "radspreadprocessing-features-clipboard-support_1"
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        worksheet.Cells(0, 0).SetValue("=CONCATENATE(""Rad"", ""Spreadsheet"")")
-	        worksheet.Cells(0, 0).SetForeColor(New ThemableColor(Colors.Green))
-	
-	        Dim worksheetFragment As WorksheetFragment = worksheet.Cells(0, 0).Copy()
-	        
-	        Dim pasteOptions As New PasteOptions(PasteType.All)
-	        worksheet.Cells(1, 0).Paste(worksheetFragment, pasteOptions)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -222,25 +165,7 @@ __Example 4__ combines the Value and Formats paste types and preserves both the 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingClipboardSupport.vb region=radspreadprocessing-features-clipboard-support_3}}
 	        Dim valuesAndFormatting As New PasteOptions(PasteType.Formulas Or PasteType.Formats)
 	        worksheet.Cells(3, 0).Paste(worksheetFragment, valuesAndFormatting)
-	        '#End Region
-	    End Sub
-	
-	    Protected Overrides Sub OnLoad(e As EventArgs)
-	        MyBase.OnLoad(e)
-	        '#Region "radspreadprocessing-features-clipboard-support_1"
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        worksheet.Cells(0, 0).SetValue("=CONCATENATE(""Rad"", ""Spreadsheet"")")
-	        worksheet.Cells(0, 0).SetForeColor(New ThemableColor(Colors.Green))
-	
-	        Dim worksheetFragment As WorksheetFragment = worksheet.Cells(0, 0).Copy()
-	        
-	        Dim pasteOptions As New PasteOptions(PasteType.All)
-	        worksheet.Cells(1, 0).Paste(worksheetFragment, pasteOptions)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

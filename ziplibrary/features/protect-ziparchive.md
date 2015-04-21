@@ -75,19 +75,7 @@ __Example 1__: Create a password-protected ZIP archive:
 	                End Using
 	            End Using
 	        End Using
-	        '#End Region
-	        '#Region "read"
-	        Using stream As Stream = File.Open("test.zip", FileMode.Open)
-	            Dim encryptionSettings As New DefaultEncryptionSettings()
-	            encryptionSettings.Password = "password"
-	            Using archive As New ZipArchive(stream, ZipArchiveMode.Read, False, Nothing, Nothing, encryptionSettings)
-	                ' Display the list of the files in the selected zip file using the ZipArchive.Entries property. 
-	            End Using
-	
-	        End Using
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -136,9 +124,7 @@ __Example 2__: Open and read a password-protected ZIP archive.
 	            End Using
 	
 	        End Using
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

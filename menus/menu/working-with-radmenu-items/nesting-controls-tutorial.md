@@ -49,85 +49,7 @@ This tutorial demonstrates adding a page view to a RadMenu. Each page will conta
 	
 	    Private months() As String = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", "January"}
 	    Private seasons() As String = {"Spring", "Summer", "Fall", "Winter"}
-	#End Region
-	
-	    Private radMenu1 As RadMenu
-	
-	    Public Sub New()
-	        InitializeComponent()
-	        radMenu1 = New RadMenu()
-	        Me.Controls.Add(radMenu1)
-	
-	
-	        AddHandler Me.Load, AddressOf Form1_Load
-	    End Sub
-	
-	#Region "main"
-	    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
-	        monthDropDownList = CreateRadDropDownListElement("Select Month", months)
-	        seasonDropDownList = CreateRadDropDownListElement("Select Season", seasons)
-	
-	        Dim rmiSettings As New RadMenuItem("Calendar")
-	        AddHandler rmiSettings.DropDownClosing, AddressOf rmiSettings_DropDownClosing
-	        radMenu1.Items.Add(rmiSettings)
-	        rmiSettings.Items.Add(New RadMenuItem("Options"))
-	        Dim closeItem As New RadMenuItem("Exit")
-	        AddHandler closeItem.Click, AddressOf closeItem_Click
-	        rmiSettings.Items.Add(closeItem)
-	
-	        Me.pageView = New RadPageView()
-	        Me.pageView.Size = New System.Drawing.Size(300, 100)
-	        Dim stripElement As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-	        stripElement.ItemFitMode = StripViewItemFitMode.None
-	        stripElement.StripButtons = StripViewButtons.None
-	
-	        Dim montsPage As New RadPageViewPage("Month")
-	        Dim seasonsPage As New RadPageViewPage("Season")
-	
-	        montsPage.Controls.Add(monthDropDownList)
-	        seasonsPage.Controls.Add(seasonDropDownList)
-	
-	        pageView.Pages.Add(montsPage)
-	        pageView.Pages.Add(seasonsPage)
-	        Dim hostItem As New RadMenuHostItem(pageView)
-	        hostItem.MinSize = New System.Drawing.Size(210, 50)
-	
-	        rmiSettings.Items.Insert(1, hostItem)
-	    End Sub
-	
-	
-	    Private Sub closeItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim item As RadMenuItem = DirectCast(sender, RadMenuItem)
-	        Dim parent As RadMenuItem = TryCast(item.HierarchyParent, RadMenuItem)
-	        parent.DropDown.ClosePopup(New PopupCloseInfo(RadPopupCloseReason.CloseCalled, Me))
-	    End Sub
-	
-	    Private Sub rmiSettings_DropDownClosing(ByVal sender As Object, ByVal args As RadPopupClosingEventArgs)
-	        args.Cancel = args.CloseReason = RadPopupCloseReason.Mouse
-	    End Sub  
-	#End Region
-	
-	#Region "CreaateDDL"
-	    Private Function CreateRadDropDownListElement(ByVal text As String, ByVal captions() As String) As RadDropDownList
-	        Dim ddl As New RadDropDownList()
-	        ddl.Location = New Point(15, 15)
-	        ddl.Size = New Size(150, 19)
-	        ddl.Margin = New Padding(25, 5, 5, 5)
-	        ddl.Text = text
-	        For Each caption As String In captions
-	            ddl.Items.Add(New RadListDataItem(caption))
-	        Next caption
-	        AddHandler ddl.SelectedIndexChanged, AddressOf ddl_SelectedIndexChanged
-	        Return ddl
-	    End Function
-	
-	    Private Sub ddl_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-	        Dim item As RadListDataItem = (TryCast(sender, RadDropDownList)).SelectedItem
-	        MessageBox.Show(item.Text)
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -184,8 +106,7 @@ This tutorial demonstrates adding a page view to a RadMenu. Each page will conta
 	        MessageBox.Show(item.Text)
 	    End Sub
 	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -290,29 +211,7 @@ This tutorial demonstrates adding a page view to a RadMenu. Each page will conta
 	    Private Sub rmiSettings_DropDownClosing(ByVal sender As Object, ByVal args As RadPopupClosingEventArgs)
 	        args.Cancel = args.CloseReason = RadPopupCloseReason.Mouse
 	    End Sub  
-	#End Region
-	
-	#Region "CreaateDDL"
-	    Private Function CreateRadDropDownListElement(ByVal text As String, ByVal captions() As String) As RadDropDownList
-	        Dim ddl As New RadDropDownList()
-	        ddl.Location = New Point(15, 15)
-	        ddl.Size = New Size(150, 19)
-	        ddl.Margin = New Padding(25, 5, 5, 5)
-	        ddl.Text = text
-	        For Each caption As String In captions
-	            ddl.Items.Add(New RadListDataItem(caption))
-	        Next caption
-	        AddHandler ddl.SelectedIndexChanged, AddressOf ddl_SelectedIndexChanged
-	        Return ddl
-	    End Function
-	
-	    Private Sub ddl_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-	        Dim item As RadListDataItem = (TryCast(sender, RadDropDownList)).SelectedItem
-	        MessageBox.Show(item.Text)
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 This Load event handler performs the main work of the application. 
 

@@ -56,23 +56,7 @@ Here is a sample demonstrating how you can implement a Save Layout button event 
 	        Me.RadPivotGrid1.SaveLayout(s)
 	    End Sub
 	
-	#End Region
-	
-	#Region "LoadLayout"
-	
-	    Private Sub RadButtonLoadLayout_Click(sender As Object, e As EventArgs) Handles RadButtonLoadLayout.Click
-	        Dim s As String = "default.xml"
-	        Dim dialog As New OpenFileDialog()
-	        dialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*"
-	        dialog.Title = "Select a xml file"
-	        If dialog.ShowDialog() = DialogResult.OK Then
-	            s = dialog.FileName
-	        End If
-	        Me.RadPivotGrid1.LoadLayout(s)
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -114,7 +98,6 @@ The code snippet below demonstrates how you can implement a Load Layout button e
 	        Me.RadPivotGrid1.LoadLayout(s)
 	    End Sub
 	
-	#End Region
-	End Class
+	{{endregion}}
 
 

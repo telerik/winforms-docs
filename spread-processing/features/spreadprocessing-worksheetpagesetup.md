@@ -91,31 +91,7 @@ In order to fit the print content better we use the Worksheet's page setup and c
 	        pageSetup.PageOrientation = PageOrientation.Landscape
 	        pageSetup.ScaleFactor = New Size(0.9, 0.9)
 	        pageSetup.CenterHorizontally = True
-	        '#End Region
-	    End Sub
-	
-	    Private Sub SetPrintArea(workbook As Workbook)
-	        '#Region "radspreadprocessing-features-worksheetpagesetup_1"
-	        Dim printArea As PrintArea = workbook.ActiveWorksheet.WorksheetPageSetup.PrintArea
-	
-	        printArea.SetPrintArea(New CellRange() {New CellRange(0, 0, 4, 8), New CellRange(1, 1, 25, 3)})
-	        '#End Region
-	    End Sub
-	
-	    Private Sub InsertPageBreaks(workbook As Workbook)
-	        '#Region "radspreadprocessing-features-worksheetpagesetup_2"
-	        Dim pageBreaks As PageBreaks = workbook.ActiveWorksheet.WorksheetPageSetup.PageBreaks
-	
-	        pageBreaks.TryInsertHorizontalPageBreak(5, 0)
-	        pageBreaks.TryInsertHorizontalPageBreak(8, 0)
-	        pageBreaks.TryInsertHorizontalPageBreak(11, 0)
-	        pageBreaks.TryInsertHorizontalPageBreak(14, 0)
-	        pageBreaks.TryInsertHorizontalPageBreak(17, 0)
-	        pageBreaks.TryInsertHorizontalPageBreak(20, 0)
-	        pageBreaks.TryInsertHorizontalPageBreak(23, 0)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -167,23 +143,7 @@ The example shown in __Figures 3__ demonstrates how to use Worksheet's print are
 	        Dim printArea As PrintArea = workbook.ActiveWorksheet.WorksheetPageSetup.PrintArea
 	
 	        printArea.SetPrintArea(New CellRange() {New CellRange(0, 0, 4, 8), New CellRange(1, 1, 25, 3)})
-	        '#End Region
-	    End Sub
-	
-	    Private Sub InsertPageBreaks(workbook As Workbook)
-	        '#Region "radspreadprocessing-features-worksheetpagesetup_2"
-	        Dim pageBreaks As PageBreaks = workbook.ActiveWorksheet.WorksheetPageSetup.PageBreaks
-	
-	        pageBreaks.TryInsertHorizontalPageBreak(5, 0)
-	        pageBreaks.TryInsertHorizontalPageBreak(8, 0)
-	        pageBreaks.TryInsertHorizontalPageBreak(11, 0)
-	        pageBreaks.TryInsertHorizontalPageBreak(14, 0)
-	        pageBreaks.TryInsertHorizontalPageBreak(17, 0)
-	        pageBreaks.TryInsertHorizontalPageBreak(20, 0)
-	        pageBreaks.TryInsertHorizontalPageBreak(23, 0)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -257,9 +217,7 @@ In order to separate semantically-correct the print data onto several pages we a
 	        pageBreaks.TryInsertHorizontalPageBreak(17, 0)
 	        pageBreaks.TryInsertHorizontalPageBreak(20, 0)
 	        pageBreaks.TryInsertHorizontalPageBreak(23, 0)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

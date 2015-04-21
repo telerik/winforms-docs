@@ -140,8 +140,7 @@ Following our requirements, we prepare the this implementation:
 	            End If
 	        Next i
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 

@@ -86,21 +86,7 @@ You can create a compressed stream by initializing new instance of the __Compres
 	        Using compressedStream As New CompressedStream(outputStream, StreamOperationMode.Write, New DeflateSettings())
 	            ' write to compressed stream
 	        End Using
-	        '#End Region
-	        '#Region "copy"
-	        Using compressedStream As New CompressedStream(outputStream, StreamOperationMode.Write, New DeflateSettings())
-	            inputStream.CopyTo(compressedStream)
-	            compressedStream.Flush()
-	        End Using
-	        '#End Region
-	
-	        '#Region "copyto"
-	        Using compressedStream As New CompressedStream(inputStream, StreamOperationMode.Read, New DeflateSettings())
-	            compressedStream.CopyTo(outputStream)
-	        End Using
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -128,15 +114,7 @@ If you want to compress a specific stream (*inputStream*), you need to copy it t
 	            inputStream.CopyTo(compressedStream)
 	            compressedStream.Flush()
 	        End Using
-	        '#End Region
-	
-	        '#Region "copyto"
-	        Using compressedStream As New CompressedStream(inputStream, StreamOperationMode.Read, New DeflateSettings())
-	            compressedStream.CopyTo(outputStream)
-	        End Using
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -166,9 +144,7 @@ Decompressing a stream is just as simple as compressing it. All you need to do i
 	        Using compressedStream As New CompressedStream(inputStream, StreamOperationMode.Read, New DeflateSettings())
 	            compressedStream.CopyTo(outputStream)
 	        End Using
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -60,87 +60,7 @@ You can use the __PageUp__, __PageDown__, __GoToPage__ methods to navigate throu
 	        Me.radPdfViewer1.PdfViewerElement.GoToPage(3)
 	    End Sub
 	
-	#End Region
-	
-	#Region "Scrolling"
-	
-	    Private Sub buttonScroll_Click(sender As Object, e As EventArgs) Handles buttonScroll.Click
-	        Me.radPdfViewer1.PdfViewerElement.Scroll(30, 30)
-	    End Sub
-	
-	    Private Sub buttonScrollTo_Click(sender As Object, e As EventArgs) Handles buttonScrollTo.Click
-	        Me.radPdfViewer1.PdfViewerElement.ScrollTo(0, 300)
-	    End Sub
-	
-	#End Region
-	
-	#Region "Select"
-	
-	    Private Sub buttonSelectAll_Click(sender As Object, e As EventArgs) Handles buttonSelectAll.Click
-	        Me.radPdfViewer1.PdfViewerElement.SelectAll()
-	    End Sub
-	
-	    Private Sub buttonDeselectAll_Click(sender As Object, e As EventArgs) Handles buttonDeselectAll.Click
-	        Me.radPdfViewer1.PdfViewerElement.DeselectAll()
-	    End Sub
-	
-	    Private Sub buttonSelect_Click(sender As Object, e As EventArgs) Handles buttonSelect.Click
-	        Dim startPosition As New Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(Me.radPdfViewer1.Document)
-	        Dim endPosition As New Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(Me.radPdfViewer1.Document)
-	        startPosition.MoveToLineStart()
-	        endPosition.MoveToLineEnd()
-	
-	        'Select the first line in the document
-	        Me.radPdfViewer1.PdfViewerElement.[Select](startPosition, endPosition)
-	    End Sub
-	
-	#End Region
-	
-	#Region "GetSelectedText"
-	
-	    Private Sub buttonGetSelectedText_Click(sender As Object, e As EventArgs) Handles buttonGetSelectedText.Click
-	        RadMessageBox.Show("The current selection: " & Me.radPdfViewer1.PdfViewerElement.GetSelectedText())
-	    End Sub
-	
-	    Private Sub buttonGetSelectedTextAsync_Click(sender As Object, e As EventArgs) Handles buttonGetSelectedTextAsync.Click
-	        Me.radPdfViewer1.PdfViewerElement.GetSelectedTextAsync(Function(text As String)
-	                                                                   MessageBox.Show("Selected text: " & text)
-	                                                               End Function)
-		End Sub
-	
-	    Private Sub buttonCopy_Click(sender As Object, e As EventArgs) Handles buttonCopy.Click
-	        Me.radPdfViewer1.PdfViewerElement.Copy()
-	    End Sub
-	
-	#End Region
-	
-	#Region "Search"
-	
-	    Private Sub buttonFindNext_Click(sender As Object, e As EventArgs) Handles buttonFindNext.Click
-	        Dim res As Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult
-	        If Me.checkSearchBackwards.IsChecked Then
-	            res = Me.radPdfViewer1.PdfViewerElement.FindPrevious("WinForms")
-	        Else
-	            res = Me.radPdfViewer1.PdfViewerElement.Find("WinForms")
-	        End If
-	
-	        If res Is Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult.NotFound Then
-	            RadMessageBox.Show("String not found")
-	        Else
-	            RadMessageBox.Show("Result found on page " & res.Range.StartPosition.Page.PageNo)
-	        End If
-	    End Sub
-	
-	#End Region
-	
-	#Region "ShowContextMenu"
-	
-	    Private Sub buttonShowMenu_Click(sender As Object, e As EventArgs) Handles buttonShowMenu.Click
-	        Me.radPdfViewer1.PdfViewerElement.ShowMenu(New Point(100, 100))
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -178,75 +98,7 @@ Additionally, you can control the precise scroll position by using the __Scroll_
 	        Me.radPdfViewer1.PdfViewerElement.ScrollTo(0, 300)
 	    End Sub
 	
-	#End Region
-	
-	#Region "Select"
-	
-	    Private Sub buttonSelectAll_Click(sender As Object, e As EventArgs) Handles buttonSelectAll.Click
-	        Me.radPdfViewer1.PdfViewerElement.SelectAll()
-	    End Sub
-	
-	    Private Sub buttonDeselectAll_Click(sender As Object, e As EventArgs) Handles buttonDeselectAll.Click
-	        Me.radPdfViewer1.PdfViewerElement.DeselectAll()
-	    End Sub
-	
-	    Private Sub buttonSelect_Click(sender As Object, e As EventArgs) Handles buttonSelect.Click
-	        Dim startPosition As New Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(Me.radPdfViewer1.Document)
-	        Dim endPosition As New Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(Me.radPdfViewer1.Document)
-	        startPosition.MoveToLineStart()
-	        endPosition.MoveToLineEnd()
-	
-	        'Select the first line in the document
-	        Me.radPdfViewer1.PdfViewerElement.[Select](startPosition, endPosition)
-	    End Sub
-	
-	#End Region
-	
-	#Region "GetSelectedText"
-	
-	    Private Sub buttonGetSelectedText_Click(sender As Object, e As EventArgs) Handles buttonGetSelectedText.Click
-	        RadMessageBox.Show("The current selection: " & Me.radPdfViewer1.PdfViewerElement.GetSelectedText())
-	    End Sub
-	
-	    Private Sub buttonGetSelectedTextAsync_Click(sender As Object, e As EventArgs) Handles buttonGetSelectedTextAsync.Click
-	        Me.radPdfViewer1.PdfViewerElement.GetSelectedTextAsync(Function(text As String)
-	                                                                   MessageBox.Show("Selected text: " & text)
-	                                                               End Function)
-		End Sub
-	
-	    Private Sub buttonCopy_Click(sender As Object, e As EventArgs) Handles buttonCopy.Click
-	        Me.radPdfViewer1.PdfViewerElement.Copy()
-	    End Sub
-	
-	#End Region
-	
-	#Region "Search"
-	
-	    Private Sub buttonFindNext_Click(sender As Object, e As EventArgs) Handles buttonFindNext.Click
-	        Dim res As Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult
-	        If Me.checkSearchBackwards.IsChecked Then
-	            res = Me.radPdfViewer1.PdfViewerElement.FindPrevious("WinForms")
-	        Else
-	            res = Me.radPdfViewer1.PdfViewerElement.Find("WinForms")
-	        End If
-	
-	        If res Is Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult.NotFound Then
-	            RadMessageBox.Show("String not found")
-	        Else
-	            RadMessageBox.Show("Result found on page " & res.Range.StartPosition.Page.PageNo)
-	        End If
-	    End Sub
-	
-	#End Region
-	
-	#Region "ShowContextMenu"
-	
-	    Private Sub buttonShowMenu_Click(sender As Object, e As EventArgs) Handles buttonShowMenu.Click
-	        Me.radPdfViewer1.PdfViewerElement.ShowMenu(New Point(100, 100))
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -308,53 +160,7 @@ The __SelectAll__, __DeselectAll__, __Select__ methods allow you to set the sele
 	        Me.radPdfViewer1.PdfViewerElement.[Select](startPosition, endPosition)
 	    End Sub
 	
-	#End Region
-	
-	#Region "GetSelectedText"
-	
-	    Private Sub buttonGetSelectedText_Click(sender As Object, e As EventArgs) Handles buttonGetSelectedText.Click
-	        RadMessageBox.Show("The current selection: " & Me.radPdfViewer1.PdfViewerElement.GetSelectedText())
-	    End Sub
-	
-	    Private Sub buttonGetSelectedTextAsync_Click(sender As Object, e As EventArgs) Handles buttonGetSelectedTextAsync.Click
-	        Me.radPdfViewer1.PdfViewerElement.GetSelectedTextAsync(Function(text As String)
-	                                                                   MessageBox.Show("Selected text: " & text)
-	                                                               End Function)
-		End Sub
-	
-	    Private Sub buttonCopy_Click(sender As Object, e As EventArgs) Handles buttonCopy.Click
-	        Me.radPdfViewer1.PdfViewerElement.Copy()
-	    End Sub
-	
-	#End Region
-	
-	#Region "Search"
-	
-	    Private Sub buttonFindNext_Click(sender As Object, e As EventArgs) Handles buttonFindNext.Click
-	        Dim res As Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult
-	        If Me.checkSearchBackwards.IsChecked Then
-	            res = Me.radPdfViewer1.PdfViewerElement.FindPrevious("WinForms")
-	        Else
-	            res = Me.radPdfViewer1.PdfViewerElement.Find("WinForms")
-	        End If
-	
-	        If res Is Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult.NotFound Then
-	            RadMessageBox.Show("String not found")
-	        Else
-	            RadMessageBox.Show("Result found on page " & res.Range.StartPosition.Page.PageNo)
-	        End If
-	    End Sub
-	
-	#End Region
-	
-	#Region "ShowContextMenu"
-	
-	    Private Sub buttonShowMenu_Click(sender As Object, e As EventArgs) Handles buttonShowMenu.Click
-	        Me.radPdfViewer1.PdfViewerElement.ShowMenu(New Point(100, 100))
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -405,35 +211,7 @@ You can use the __GetSelectedText__, __GetSelectedTextAsync__ methods to get the
 	        Me.radPdfViewer1.PdfViewerElement.Copy()
 	    End Sub
 	
-	#End Region
-	
-	#Region "Search"
-	
-	    Private Sub buttonFindNext_Click(sender As Object, e As EventArgs) Handles buttonFindNext.Click
-	        Dim res As Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult
-	        If Me.checkSearchBackwards.IsChecked Then
-	            res = Me.radPdfViewer1.PdfViewerElement.FindPrevious("WinForms")
-	        Else
-	            res = Me.radPdfViewer1.PdfViewerElement.Find("WinForms")
-	        End If
-	
-	        If res Is Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult.NotFound Then
-	            RadMessageBox.Show("String not found")
-	        Else
-	            RadMessageBox.Show("Result found on page " & res.Range.StartPosition.Page.PageNo)
-	        End If
-	    End Sub
-	
-	#End Region
-	
-	#Region "ShowContextMenu"
-	
-	    Private Sub buttonShowMenu_Click(sender As Object, e As EventArgs) Handles buttonShowMenu.Click
-	        Me.radPdfViewer1.PdfViewerElement.ShowMenu(New Point(100, 100))
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -490,16 +268,7 @@ The __Find__, __FindPrevious__ are used to perform text search forwards or backw
 	        End If
 	    End Sub
 	
-	#End Region
-	
-	#Region "ShowContextMenu"
-	
-	    Private Sub buttonShowMenu_Click(sender As Object, e As EventArgs) Handles buttonShowMenu.Click
-	        Me.radPdfViewer1.PdfViewerElement.ShowMenu(New Point(100, 100))
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -525,12 +294,6 @@ RadPdfViewer has a default context menu - __PdfViewerContextMenu__ which provide
 	
 	        Me.radPdfViewer1.RadContextMenu = Me.radContextMenu1
 	
-	        '#End Region
-	
-	        '#region ShowHideThumbnails
-	        Me.radPdfViewer1.ShowThubnails()
-	
-	        Me.radPdfViewer1.HideThumbnails()
 	{{endregion}}
 
 
@@ -559,8 +322,7 @@ You can also use the __ShowMenu__ method to show the context menu programmatical
 	        Me.radPdfViewer1.PdfViewerElement.ShowMenu(New Point(100, 100))
 	    End Sub
 	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -603,103 +365,7 @@ Annotations are hyperlinks inside a document which when clicked depending on the
 	        End If
 	    End Sub
 	
-	#End Region
-	
-	#Region "PageNavigation"
-	
-	    Private Sub buttonPageUp_Click(sender As Object, e As EventArgs) Handles buttonPageUp.Click
-	        Me.radPdfViewer1.PdfViewerElement.PageUp()
-	    End Sub
-	
-	    Private Sub buttonPageDown_Click(sender As Object, e As EventArgs) Handles buttonPageDown.Click
-	        Me.radPdfViewer1.PdfViewerElement.PageDown()
-	    End Sub
-	
-	    Private Sub buttonGotoPage_Click(sender As Object, e As EventArgs) Handles buttonGotoPage.Click
-	        Me.radPdfViewer1.PdfViewerElement.GoToPage(3)
-	    End Sub
-	
-	#End Region
-	
-	#Region "Scrolling"
-	
-	    Private Sub buttonScroll_Click(sender As Object, e As EventArgs) Handles buttonScroll.Click
-	        Me.radPdfViewer1.PdfViewerElement.Scroll(30, 30)
-	    End Sub
-	
-	    Private Sub buttonScrollTo_Click(sender As Object, e As EventArgs) Handles buttonScrollTo.Click
-	        Me.radPdfViewer1.PdfViewerElement.ScrollTo(0, 300)
-	    End Sub
-	
-	#End Region
-	
-	#Region "Select"
-	
-	    Private Sub buttonSelectAll_Click(sender As Object, e As EventArgs) Handles buttonSelectAll.Click
-	        Me.radPdfViewer1.PdfViewerElement.SelectAll()
-	    End Sub
-	
-	    Private Sub buttonDeselectAll_Click(sender As Object, e As EventArgs) Handles buttonDeselectAll.Click
-	        Me.radPdfViewer1.PdfViewerElement.DeselectAll()
-	    End Sub
-	
-	    Private Sub buttonSelect_Click(sender As Object, e As EventArgs) Handles buttonSelect.Click
-	        Dim startPosition As New Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(Me.radPdfViewer1.Document)
-	        Dim endPosition As New Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(Me.radPdfViewer1.Document)
-	        startPosition.MoveToLineStart()
-	        endPosition.MoveToLineEnd()
-	
-	        'Select the first line in the document
-	        Me.radPdfViewer1.PdfViewerElement.[Select](startPosition, endPosition)
-	    End Sub
-	
-	#End Region
-	
-	#Region "GetSelectedText"
-	
-	    Private Sub buttonGetSelectedText_Click(sender As Object, e As EventArgs) Handles buttonGetSelectedText.Click
-	        RadMessageBox.Show("The current selection: " & Me.radPdfViewer1.PdfViewerElement.GetSelectedText())
-	    End Sub
-	
-	    Private Sub buttonGetSelectedTextAsync_Click(sender As Object, e As EventArgs) Handles buttonGetSelectedTextAsync.Click
-	        Me.radPdfViewer1.PdfViewerElement.GetSelectedTextAsync(Function(text As String)
-	                                                                   MessageBox.Show("Selected text: " & text)
-	                                                               End Function)
-		End Sub
-	
-	    Private Sub buttonCopy_Click(sender As Object, e As EventArgs) Handles buttonCopy.Click
-	        Me.radPdfViewer1.PdfViewerElement.Copy()
-	    End Sub
-	
-	#End Region
-	
-	#Region "Search"
-	
-	    Private Sub buttonFindNext_Click(sender As Object, e As EventArgs) Handles buttonFindNext.Click
-	        Dim res As Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult
-	        If Me.checkSearchBackwards.IsChecked Then
-	            res = Me.radPdfViewer1.PdfViewerElement.FindPrevious("WinForms")
-	        Else
-	            res = Me.radPdfViewer1.PdfViewerElement.Find("WinForms")
-	        End If
-	
-	        If res Is Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult.NotFound Then
-	            RadMessageBox.Show("String not found")
-	        Else
-	            RadMessageBox.Show("Result found on page " & res.Range.StartPosition.Page.PageNo)
-	        End If
-	    End Sub
-	
-	#End Region
-	
-	#Region "ShowContextMenu"
-	
-	    Private Sub buttonShowMenu_Click(sender As Object, e As EventArgs) Handles buttonShowMenu.Click
-	        Me.radPdfViewer1.PdfViewerElement.ShowMenu(New Point(100, 100))
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 

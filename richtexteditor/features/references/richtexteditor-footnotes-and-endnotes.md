@@ -108,44 +108,7 @@ Footnotes and endnotes all contain the __Note__ class which defines the note bod
 	        radRichTextEditor1.InsertEndnote()
 	        radRichTextEditor1.InsertEndnote(New Note())
 	
-	        '#End Region
-	
-	        '#Region "static"
-	
-	        Dim note As Note = note.CreateCustomMarkFootnote("symbol")
-	        note = note.CreateCustomMarkEndnote("symbol", New FontFamily("Arial"))
-	        note = note.CreateDefaultFootnote()
-	        note = note.CreateDefaultEndnote()
-	
-	        '#End Region
-	
-	        '#Region "add"
-	
-	        Dim note1 As Note = note.CreateCustomMarkFootnote("$", New FontFamily("Calibri"))
-	        Me.radRichTextEditor1.InsertFootnote(note1)
-	
-	        '#End Region
-	
-	        '#Region "move"
-	
-	        radRichTextEditor1.GoToNextFootnote()
-	        radRichTextEditor1.GoToPreviousFootnote()
-	        radRichTextEditor1.GoToNextEndnote()
-	        radRichTextEditor1.GoToPreviousEndnote()
-	
-	        '#End Region
-	
-	        '#Region "range"
-	
-	        Dim noteRangeStart As EndnoteRangeStart = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of EndnoteRangeStart)().FirstOrDefault()
-	
-	        If noteRangeStart IsNot Nothing Then
-	            Me.radRichTextEditor1.ScrollToNote(noteRangeStart.Note)
-	        End If
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -177,35 +140,7 @@ There is a set of document
 	        note = note.CreateDefaultFootnote()
 	        note = note.CreateDefaultEndnote()
 	
-	        '#End Region
-	
-	        '#Region "add"
-	
-	        Dim note1 As Note = note.CreateCustomMarkFootnote("$", New FontFamily("Calibri"))
-	        Me.radRichTextEditor1.InsertFootnote(note1)
-	
-	        '#End Region
-	
-	        '#Region "move"
-	
-	        radRichTextEditor1.GoToNextFootnote()
-	        radRichTextEditor1.GoToPreviousFootnote()
-	        radRichTextEditor1.GoToNextEndnote()
-	        radRichTextEditor1.GoToPreviousEndnote()
-	
-	        '#End Region
-	
-	        '#Region "range"
-	
-	        Dim noteRangeStart As EndnoteRangeStart = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of EndnoteRangeStart)().FirstOrDefault()
-	
-	        If noteRangeStart IsNot Nothing Then
-	            Me.radRichTextEditor1.ScrollToNote(noteRangeStart.Note)
-	        End If
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -229,28 +164,7 @@ Here is for example how to insert a footnote with a custom mark – dollar sign 
 	        Dim note1 As Note = note.CreateCustomMarkFootnote("$", New FontFamily("Calibri"))
 	        Me.radRichTextEditor1.InsertFootnote(note1)
 	
-	        '#End Region
-	
-	        '#Region "move"
-	
-	        radRichTextEditor1.GoToNextFootnote()
-	        radRichTextEditor1.GoToPreviousFootnote()
-	        radRichTextEditor1.GoToNextEndnote()
-	        radRichTextEditor1.GoToPreviousEndnote()
-	
-	        '#End Region
-	
-	        '#Region "range"
-	
-	        Dim noteRangeStart As EndnoteRangeStart = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of EndnoteRangeStart)().FirstOrDefault()
-	
-	        If noteRangeStart IsNot Nothing Then
-	            Me.radRichTextEditor1.ScrollToNote(noteRangeStart.Note)
-	        End If
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -282,19 +196,7 @@ You can programmatically navigate the document caret position through the notes 
 	        radRichTextEditor1.GoToNextEndnote()
 	        radRichTextEditor1.GoToPreviousEndnote()
 	
-	        '#End Region
-	
-	        '#Region "range"
-	
-	        Dim noteRangeStart As EndnoteRangeStart = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of EndnoteRangeStart)().FirstOrDefault()
-	
-	        If noteRangeStart IsNot Nothing Then
-	            Me.radRichTextEditor1.ScrollToNote(noteRangeStart.Note)
-	        End If
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -329,8 +231,6 @@ You can use the __ScrollToNote()__ method to scroll the viewport so that a note 
 	            Me.radRichTextEditor1.ScrollToNote(noteRangeStart.Note)
 	        End If
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

@@ -58,22 +58,7 @@ The following code snippet demonstrates how to open existing Zip archive using t
 	                ' Display the list of the files in the selected zip file using the ZipArchive.Entries property.
 	            End Using
 	        End Using
-	        '#End Region
-	
-	        '#Region "create"
-	        Using stream As Stream = File.Open("test.zip", FileMode.Create)
-	            Using archive As New ZipArchive(stream, ZipArchiveMode.Create, False, Nothing)
-	                Using entry As ZipArchiveEntry = archive.CreateEntry("text.txt")
-	                    Dim writer As New StreamWriter(entry.Open())
-	                    writer.WriteLine("Hello world!")
-	                    writer.Flush()
-	                End Using
-	            End Using
-	        End Using
-	        '#End Region
-	    End Sub
-	End Class
-	
+	{{endregion}}
 
 
 
@@ -121,10 +106,7 @@ The example below shows how to create a new Zip archive using the __ZipArchive__
 	                End Using
 	            End Using
 	        End Using
-	        '#End Region
-	    End Sub
-	End Class
-	
+	{{endregion}}
 
 
 

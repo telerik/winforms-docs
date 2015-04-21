@@ -66,20 +66,7 @@ __RadGridView__ introduces __Copying__ event which occurs when the grid has prep
 	        End If
 	    End Sub
 	
-	    #End Region
-	
-	    #Region "Pasting"
-	
-	    Private Sub radGridView1_Pasting(sender As Object, e As GridViewClipboardEventArgs)
-	        If Clipboard.ContainsData(DataFormats.Text) Then
-	            Dim data As String = Clipboard.GetData(DataFormats.Text).ToString()
-	            If data <> String.Empty Then
-	                Clipboard.SetData(DataFormats.Text, data.ToUpper())
-	            End If
-	        End If
-	    End Sub
-	    #End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -137,8 +124,7 @@ The following example demonstrates how to capitalize the copied string before in
 	            End If
 	        End If
 	    End Sub
-	    #End Region
-	End Class
+	{{endregion}}
 
 
 

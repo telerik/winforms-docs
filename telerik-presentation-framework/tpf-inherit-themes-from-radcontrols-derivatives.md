@@ -50,21 +50,7 @@ When you inherit from a __RadControl__ (or any __RadControl__ descendant), the o
 	        End Property
 	    End Class
 	
-	    #End Region
-	
-	    #Region "MyRadButtonElement"
-	
-	    Public Class MyRadButtonElement
-	    Inherits RadButtonElement
-	        Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-	            Get
-	                Return GetType(RadButtonElement)
-	            End Get
-	        End Property
-	    End Class
-	
-	    #End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -104,7 +90,6 @@ When you inherit from a __RadElement__ descendant (for example __RadButtonElemen
 	        End Property
 	    End Class
 	
-	    #End Region
-	End Class
+	{{endregion}}
 
 

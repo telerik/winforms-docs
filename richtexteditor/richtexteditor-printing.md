@@ -50,10 +50,7 @@ Additionally to using the UI, you can print by taking advantage of the __Print()
 	        Me.radRichTextEditor1.Print()
 	        'or
 	        Me.radRichTextEditor1.PrintPreview()
-	        '#End Region
-	    End Sub
-	End Class
-	
+	{{endregion}}
 
 
 

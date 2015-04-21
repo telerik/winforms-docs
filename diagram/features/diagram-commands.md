@@ -140,8 +140,6 @@ Below is shown a sample code snippet how you can use some of the Diagram Command
 	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
 	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
 	    End Sub
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 ![diagram-features-commands 001](images/diagram-features-commands001.gif)

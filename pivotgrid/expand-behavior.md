@@ -73,30 +73,7 @@ __RadPivotGrid__ has two properties to control the expand behavior -
 	        pivot.RowGroupsExpandBehavior = New GroupsExpandBehavior() With {.Expanded = False, .UpToLevel = 2}
 	        pivot.ColumnGroupsExpandBehavior = New GroupsExpandBehavior() With {.Expanded = False}
 	
-	        '#End Region
-	    End Sub
-	
-	    Private pivot As New RadPivotGrid()
-	
-	    '#Region "click"
-	
-	    Public Sub ExpandGroupsButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	        TryCast(Me.pivot.RowGroupsExpandBehavior, GroupsExpandBehavior).Expanded = True
-	        TryCast(Me.pivot.ColumnGroupsExpandBehavior, GroupsExpandBehavior).Expanded = True
-	        Me.pivot.DataProvider.Refresh()
-	    End Sub
-	
-	    Private Sub CollapseGroupsButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	        TryCast(Me.pivot.RowGroupsExpandBehavior, GroupsExpandBehavior).Expanded = False
-	        TryCast(Me.pivot.ColumnGroupsExpandBehavior, GroupsExpandBehavior).Expanded = False
-	        Me.pivot.DataProvider.Refresh()
-	    End Sub
-	
-	    '#End Region
-	
-	
-	End Class
-	
+	{{endregion}}
 
 
 
@@ -146,10 +123,6 @@ If you want to collapse all groups in __RadPivotGrid__ you can change the behavi
 	        Me.pivot.DataProvider.Refresh()
 	    End Sub
 	
-	    '#End Region
-	
-	
-	End Class
-	
+	{{endregion}}
 
 

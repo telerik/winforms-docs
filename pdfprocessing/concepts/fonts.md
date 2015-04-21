@@ -74,14 +74,7 @@ __Example 1__ demonstrates how you can use the RegisterFont() method.
 
 {{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsFonts.vb region=radpdfprocessing-concepts-fonts_0}}
 	        FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data)
-	        '	#End Region
-	
-	        '	#Region "radpdfprocessing-concepts-fonts_1"
-	        Dim font As FontBase
-	        Dim success As Boolean = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, font)
-	        '	#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -107,9 +100,7 @@ __Example 2__ shows how to create a font using the FontsRepository.
 {{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsFonts.vb region=radpdfprocessing-concepts-fonts_1}}
 	        Dim font As FontBase
 	        Dim success As Boolean = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, font)
-	        '	#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
 

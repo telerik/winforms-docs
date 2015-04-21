@@ -57,9 +57,7 @@ To enable or disable a gesture,
 {{source=..\SamplesVB\TPF\Touch\TouchGesturesForm.vb region=callingMethods}}
 	        Me.radButton1.EnableGesture(GestureType.All)
 	        Me.radButton1.DisableGesture(GestureType.Zoom)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

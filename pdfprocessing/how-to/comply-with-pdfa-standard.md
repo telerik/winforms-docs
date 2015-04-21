@@ -106,9 +106,7 @@ To comply with one of the versions of the standard you need to specify __Complia
 	        settings.ComplianceLevel = PdfComplianceLevel.PdfA2B
 	
 	        provider.ExportSettings = settings
-	        '	 #End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -102,7 +102,7 @@ The following example demonstrates how you can bind the control by using the __C
 	    End Property
 	    Private m_CheckState As CheckState
 	End Class
-	'#End Region
+	{{endregion}}
 
 
 
@@ -166,42 +166,7 @@ The following example demonstrates how you can bind the control by using the __C
 	
 	        Return data
 	    End Function
-	    '#End Region
-	End Class
-	
-	'#Region "SimpleObject"
-	Public Class SimpleObject
-	    Public Property Id() As Integer
-	        Get
-	            Return m_Id
-	        End Get
-	        Set(value As Integer)
-	            m_Id = value
-	        End Set
-	    End Property
-	    Private m_Id As Integer
-	
-	    Public Property Name() As String
-	        Get
-	            Return m_Name
-	        End Get
-	        Set(value As String)
-	            m_Name = value
-	        End Set
-	    End Property
-	    Private m_Name As String
-	
-	    Public Property CheckState() As CheckState
-	        Get
-	            Return m_CheckState
-	        End Get
-	        Set(value As CheckState)
-	            m_CheckState = value
-	        End Set
-	    End Property
-	    Private m_CheckState As CheckState
-	End Class
-	'#End Region
+	{{endregion}}
 
 
 
@@ -220,89 +185,7 @@ The following example demonstrates how you can bind the control by using the __C
 
 {{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=ThreeStateMode}}
 	        Me.RadCheckedListBox1.ThreeStateMode = True
-	        '#End Region
-	
-	        '#Region "ProgramaticallyDatabind"
-	        Me.RadCheckedListBox1.DataSource = Me.CreateSimpleObjects()
-	        Me.RadCheckedListBox1.DisplayMember = "Name"
-	        Me.RadCheckedListBox1.ValueMember = "Id"
-	        Me.RadCheckedListBox1.CheckedMember = "CheckState"
-	        '#End Region
-	    End Sub
-	
-	    '#Region "CreateSimpleObjects"
-	    Private Function CreateSimpleObjects() As IEnumerable(Of SimpleObject)
-	        Dim data As New List(Of SimpleObject)() From { _
-	            New SimpleObject() With { _
-	                .Id = 1, _
-	                .Name = "Item1", _
-	                .CheckState = CheckState.Unchecked _
-	            }, _
-	            New SimpleObject() With { _
-	                .Id = 2, _
-	                .Name = "Item2", _
-	                .CheckState = CheckState.Checked _
-	            }, _
-	            New SimpleObject() With { _
-	                .Id = 3, _
-	                .Name = "Item3", _
-	                .CheckState = CheckState.Indeterminate _
-	            }, _
-	            New SimpleObject() With { _
-	                .Id = 4, _
-	                .Name = "Item4", _
-	                .CheckState = CheckState.Unchecked _
-	            }, _
-	            New SimpleObject() With { _
-	                .Id = 5, _
-	                .Name = "Item5", _
-	                .CheckState = CheckState.Unchecked _
-	            }, _
-	            New SimpleObject() With { _
-	                .Id = 6, _
-	                .Name = "Item6", _
-	                .CheckState = CheckState.Checked _
-	            } _
-	        }
-	
-	        Return data
-	    End Function
-	    '#End Region
-	End Class
-	
-	'#Region "SimpleObject"
-	Public Class SimpleObject
-	    Public Property Id() As Integer
-	        Get
-	            Return m_Id
-	        End Get
-	        Set(value As Integer)
-	            m_Id = value
-	        End Set
-	    End Property
-	    Private m_Id As Integer
-	
-	    Public Property Name() As String
-	        Get
-	            Return m_Name
-	        End Get
-	        Set(value As String)
-	            m_Name = value
-	        End Set
-	    End Property
-	    Private m_Name As String
-	
-	    Public Property CheckState() As CheckState
-	        Get
-	            Return m_CheckState
-	        End Get
-	        Set(value As CheckState)
-	            m_CheckState = value
-	        End Set
-	    End Property
-	    Private m_CheckState As CheckState
-	End Class
-	'#End Region
+	{{endregion}}
 
 
 
@@ -328,81 +211,6 @@ The following example demonstrates how you can bind the control by using the __C
 	        Me.RadCheckedListBox1.DisplayMember = "Name"
 	        Me.RadCheckedListBox1.ValueMember = "Id"
 	        Me.RadCheckedListBox1.CheckedMember = "CheckState"
-	        '#End Region
-	    End Sub
-	
-	    '#Region "CreateSimpleObjects"
-	    Private Function CreateSimpleObjects() As IEnumerable(Of SimpleObject)
-	        Dim data As New List(Of SimpleObject)() From { _
-	            New SimpleObject() With { _
-	                .Id = 1, _
-	                .Name = "Item1", _
-	                .CheckState = CheckState.Unchecked _
-	            }, _
-	            New SimpleObject() With { _
-	                .Id = 2, _
-	                .Name = "Item2", _
-	                .CheckState = CheckState.Checked _
-	            }, _
-	            New SimpleObject() With { _
-	                .Id = 3, _
-	                .Name = "Item3", _
-	                .CheckState = CheckState.Indeterminate _
-	            }, _
-	            New SimpleObject() With { _
-	                .Id = 4, _
-	                .Name = "Item4", _
-	                .CheckState = CheckState.Unchecked _
-	            }, _
-	            New SimpleObject() With { _
-	                .Id = 5, _
-	                .Name = "Item5", _
-	                .CheckState = CheckState.Unchecked _
-	            }, _
-	            New SimpleObject() With { _
-	                .Id = 6, _
-	                .Name = "Item6", _
-	                .CheckState = CheckState.Checked _
-	            } _
-	        }
-	
-	        Return data
-	    End Function
-	    '#End Region
-	End Class
-	
-	'#Region "SimpleObject"
-	Public Class SimpleObject
-	    Public Property Id() As Integer
-	        Get
-	            Return m_Id
-	        End Get
-	        Set(value As Integer)
-	            m_Id = value
-	        End Set
-	    End Property
-	    Private m_Id As Integer
-	
-	    Public Property Name() As String
-	        Get
-	            Return m_Name
-	        End Get
-	        Set(value As String)
-	            m_Name = value
-	        End Set
-	    End Property
-	    Private m_Name As String
-	
-	    Public Property CheckState() As CheckState
-	        Get
-	            Return m_CheckState
-	        End Get
-	        Set(value As CheckState)
-	            m_CheckState = value
-	        End Set
-	    End Property
-	    Private m_CheckState As CheckState
-	End Class
-	'#End Region
+	{{endregion}}
 
 ![checkedlistbox-data-binding 003](images/checkedlistbox-data-binding003.png)

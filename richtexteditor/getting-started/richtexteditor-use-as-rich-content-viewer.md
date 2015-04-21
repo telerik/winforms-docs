@@ -34,17 +34,7 @@ To use __RadRichTextEditor__ as a rich content viewer you have to disable the us
 	
 	        Me.radRichTextEditor.IsReadOnly = True
 	
-	        '#End Region
-	    End Sub
-	
-	    #Region "bold"
-	
-	    Private Sub togglebutton_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        Me.radRichTextEditor.ToggleBold()
-	    End Sub
-	
-	    #End Region
-	End Class
+	{{endregion}}
 
 
 

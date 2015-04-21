@@ -62,25 +62,7 @@ Use one of many overloads to build a new Appointment instance. The example below
 	        appointment.StatusId = 2
 	        appointment.BackgroundId = 6
 	        Me.RadScheduler1.Appointments.Add(appointment)
-	        '#End Region
-	
-	        '#Region addStatus
-	        Me.RadScheduler1.Statuses.Add(New AppointmentStatusInfo(5, "test", Color.Purple, Color.Purple, AppointmentStatusFillType.Solid))
-	        '#End Region
-	
-	        '#Region addBackground
-	        Me.RadScheduler1.Backgrounds.Add(New AppointmentBackgroundInfo(12, "test", Color.Purple))
-	        '#End Region
-	
-	        '#Region appointmentFormat
-	        Me.RadScheduler1.AppointmentTitleFormat = "{0} to {1}, {2} ({3})"
-	        '#End Region
-	
-	        '#Region toolTipText
-	        appointment.ToolTipText = "Some text"
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![scheduler-appointments-and-dialogs-working-with-appointments 003](images/scheduler-appointments-and-dialogs-working-with-appointments003.png)
 
@@ -116,21 +98,7 @@ Use one of many overloads to build a new Appointment instance. The example below
 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=addStatus}}
 	        Me.RadScheduler1.Statuses.Add(New AppointmentStatusInfo(5, "test", Color.Purple, Color.Purple, AppointmentStatusFillType.Solid))
-	        '#End Region
-	
-	        '#Region addBackground
-	        Me.RadScheduler1.Backgrounds.Add(New AppointmentBackgroundInfo(12, "test", Color.Purple))
-	        '#End Region
-	
-	        '#Region appointmentFormat
-	        Me.RadScheduler1.AppointmentTitleFormat = "{0} to {1}, {2} ({3})"
-	        '#End Region
-	
-	        '#Region toolTipText
-	        appointment.ToolTipText = "Some text"
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -176,17 +144,7 @@ Use one of many overloads to build a new Appointment instance. The example below
 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=addBackground}}
 	        Me.RadScheduler1.Backgrounds.Add(New AppointmentBackgroundInfo(12, "test", Color.Purple))
-	        '#End Region
-	
-	        '#Region appointmentFormat
-	        Me.RadScheduler1.AppointmentTitleFormat = "{0} to {1}, {2} ({3})"
-	        '#End Region
-	
-	        '#Region toolTipText
-	        appointment.ToolTipText = "Some text"
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -217,13 +175,7 @@ Use one of many overloads to build a new Appointment instance. The example below
 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=appointmentFormat}}
 	        Me.RadScheduler1.AppointmentTitleFormat = "{0} to {1}, {2} ({3})"
-	        '#End Region
-	
-	        '#Region toolTipText
-	        appointment.ToolTipText = "Some text"
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 Here is a list with the different elements and their content:
             
@@ -264,9 +216,7 @@ Here is a list with the different elements and their content:
 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=toolTipText}}
 	        appointment.ToolTipText = "Some text"
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

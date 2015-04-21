@@ -76,29 +76,7 @@ Here is how to insert __PAGE__ field representing the current page number in the
 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_0}}
 	        editor.InsertField("PAGE \* ROMAN", "VII")
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-concepts-customcodefield_1"
-	        editor.InsertText("Page ")
-	        editor.InsertField("PAGE", "3")
-	        editor.InsertText(" of ")
-	        editor.InsertField("NUMPAGES", "5")
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-concepts-customcodefield_2"
-	        editor.InsertField("DATE \@ ""M/d/yy""", "17/2/14")
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-concepts-customcodefield_3"
-	        editor.InsertField("AUTHOR \* Upper", "JOHN DOE")
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-concepts-customcodefield_4"
-	        Dim tocField As FieldInfo = editor.InsertField("TOC \o ""1-3"" \h \z \u", "result")
-	        '#End Region
-	        tocField.IsDirty = True
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -129,22 +107,7 @@ Here is how a combination of __PAGE__ and __NUMPAGES__ fields can be inserted to
 	        editor.InsertField("PAGE", "3")
 	        editor.InsertText(" of ")
 	        editor.InsertField("NUMPAGES", "5")
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-concepts-customcodefield_2"
-	        editor.InsertField("DATE \@ ""M/d/yy""", "17/2/14")
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-concepts-customcodefield_3"
-	        editor.InsertField("AUTHOR \* Upper", "JOHN DOE")
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-concepts-customcodefield_4"
-	        Dim tocField As FieldInfo = editor.InsertField("TOC \o ""1-3"" \h \z \u", "result")
-	        '#End Region
-	        tocField.IsDirty = True
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -165,14 +128,7 @@ Here is how to insert __AUTHOR__ field showing the name of the author of the doc
 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_3}}
 	        editor.InsertField("AUTHOR \* Upper", "JOHN DOE")
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-concepts-customcodefield_4"
-	        Dim tocField As FieldInfo = editor.InsertField("TOC \o ""1-3"" \h \z \u", "result")
-	        '#End Region
-	        tocField.IsDirty = True
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -197,10 +153,7 @@ Here is how to insert table of contents (TOC) field:
 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_4}}
 	        Dim tocField As FieldInfo = editor.InsertField("TOC \o ""1-3"" \h \z \u", "result")
-	        '#End Region
-	        tocField.IsDirty = True
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

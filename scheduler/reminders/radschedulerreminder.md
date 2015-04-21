@@ -52,24 +52,6 @@ In order to incorporate __RadSchedulerReminder__ in your application, please
 
 {{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=creating}}
 	        Dim schedulerReminder As New RadSchedulerReminder()
-	        '			#End Region
-	
-	        '			#Region "associatedScheduler"
-	        schedulerReminder.AssociatedScheduler = Me.RadScheduler1
-	        '			#End Region
-	
-	        '			#Region "interval"
-	        schedulerReminder.StartReminderInterval = Date.Now
-	        schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
-	        '			#End Region
-	        '#region reminder
-	
-	        Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
-	        Dim dtEnd As DateTime = dtStart.AddHours(1)
-	        Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
-	        Me.RadScheduler1.Appointments.Add(appointment)
-	
-	        appointment.Reminder = New TimeSpan(10000)
 	{{endregion}}
 
 
@@ -89,20 +71,6 @@ In order to incorporate __RadSchedulerReminder__ in your application, please
 
 {{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=associatedScheduler}}
 	        schedulerReminder.AssociatedScheduler = Me.RadScheduler1
-	        '			#End Region
-	
-	        '			#Region "interval"
-	        schedulerReminder.StartReminderInterval = Date.Now
-	        schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
-	        '			#End Region
-	        '#region reminder
-	
-	        Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
-	        Dim dtEnd As DateTime = dtStart.AddHours(1)
-	        Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
-	        Me.RadScheduler1.Appointments.Add(appointment)
-	
-	        appointment.Reminder = New TimeSpan(10000)
 	{{endregion}}
 
 
@@ -123,15 +91,6 @@ In order to incorporate __RadSchedulerReminder__ in your application, please
 {{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=interval}}
 	        schedulerReminder.StartReminderInterval = Date.Now
 	        schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
-	        '			#End Region
-	        '#region reminder
-	
-	        Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
-	        Dim dtEnd As DateTime = dtStart.AddHours(1)
-	        Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
-	        Me.RadScheduler1.Appointments.Add(appointment)
-	
-	        appointment.Reminder = New TimeSpan(10000)
 	{{endregion}}
 
 

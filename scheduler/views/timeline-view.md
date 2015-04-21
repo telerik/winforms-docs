@@ -45,61 +45,7 @@ The Timeline View can be set it to be the default view which the user sees:
 
 {{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=activeViewType}}
 	        Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Timeline
-	        '#End Region
-	
-	        '#Region timelineView
-	        Dim timelineView As SchedulerTimelineView = Me.RadScheduler1.GetTimelineView()
-	        '#End Region
-	
-	        '#Region activeView
-	        If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Timeline Then
-	            Dim activeTimelineView As SchedulerTimelineView = CType(Me.RadScheduler1.ActiveView, SchedulerTimelineView)
-	        End If
-	        '#End Region
-	
-	        '#Region getTimelineView
-	        Me.RadScheduler1.GetTimelineView().RangeStartDate = New Date(2010, 1, 20)
-	        Me.RadScheduler1.GetTimelineView().RangeEndDate = New Date(2010, 2, 20)
-	        Me.RadScheduler1.GetTimelineView().StartDate = New Date(2010, 2, 1)
-	        '#End Region
-	
-	        '#Region duration
-	        Dim duration As TimeSpan = timelineView.Duration
-	        '			#End Region
-	
-	        '#Region showTimescale
-	        Dim scale As Timescales = Timescales.Hours
-	        timelineView.ShowTimescale(scale)
-	        '#End Region
-	
-	        '#Region getTimescale
-	        Dim currentScaling As SchedulerTimescale = timelineView.GetScaling()
-	        currentScaling.Format = "dd MMM"
-	        currentScaling.DisplayedCellsCount = 8
-	        '#End Region
-	
-	        '#Region navigationElements
-	        timelineView.ShowNavigationElement = False
-	        timelineView.ShowVerticalScrollBar = False
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        Dim viewElement As SchedulerTimelineViewElement = CType(RadScheduler1.ViewElement, SchedulerTimelineViewElement)
-	        viewElement.SetColumnWidth(1, 2)
-	        '#End Region
-	
-	        '#Region headerSizing
-	        viewElement.ColumnHeaderHeight = 70
-	        viewElement.ViewHeaderHeight = 35
-	        '#End Region
-	
-	
-	        '#Region "verticalScrollBar"
-	        timelineView.ShowVerticalScrollBar = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -124,57 +70,7 @@ To get the instance to the Scheduler Timeline View from the RadScheduler object,
 
 {{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=timelineView}}
 	        Dim timelineView As SchedulerTimelineView = Me.RadScheduler1.GetTimelineView()
-	        '#End Region
-	
-	        '#Region activeView
-	        If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Timeline Then
-	            Dim activeTimelineView As SchedulerTimelineView = CType(Me.RadScheduler1.ActiveView, SchedulerTimelineView)
-	        End If
-	        '#End Region
-	
-	        '#Region getTimelineView
-	        Me.RadScheduler1.GetTimelineView().RangeStartDate = New Date(2010, 1, 20)
-	        Me.RadScheduler1.GetTimelineView().RangeEndDate = New Date(2010, 2, 20)
-	        Me.RadScheduler1.GetTimelineView().StartDate = New Date(2010, 2, 1)
-	        '#End Region
-	
-	        '#Region duration
-	        Dim duration As TimeSpan = timelineView.Duration
-	        '			#End Region
-	
-	        '#Region showTimescale
-	        Dim scale As Timescales = Timescales.Hours
-	        timelineView.ShowTimescale(scale)
-	        '#End Region
-	
-	        '#Region getTimescale
-	        Dim currentScaling As SchedulerTimescale = timelineView.GetScaling()
-	        currentScaling.Format = "dd MMM"
-	        currentScaling.DisplayedCellsCount = 8
-	        '#End Region
-	
-	        '#Region navigationElements
-	        timelineView.ShowNavigationElement = False
-	        timelineView.ShowVerticalScrollBar = False
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        Dim viewElement As SchedulerTimelineViewElement = CType(RadScheduler1.ViewElement, SchedulerTimelineViewElement)
-	        viewElement.SetColumnWidth(1, 2)
-	        '#End Region
-	
-	        '#Region headerSizing
-	        viewElement.ColumnHeaderHeight = 70
-	        viewElement.ViewHeaderHeight = 35
-	        '#End Region
-	
-	
-	        '#Region "verticalScrollBar"
-	        timelineView.ShowVerticalScrollBar = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -196,54 +92,8 @@ To get the instance to the Scheduler Timeline View from the RadScheduler object,
 #### __[VB.NET]__
 
 {{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=activeView}}
-	        If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Timeline Then
-	            Dim activeTimelineView As SchedulerTimelineView = CType(Me.RadScheduler1.ActiveView, SchedulerTimelineView)
-	        End If
-	        '#End Region
-	
-	        '#Region getTimelineView
-	        Me.RadScheduler1.GetTimelineView().RangeStartDate = New Date(2010, 1, 20)
-	        Me.RadScheduler1.GetTimelineView().RangeEndDate = New Date(2010, 2, 20)
-	        Me.RadScheduler1.GetTimelineView().StartDate = New Date(2010, 2, 1)
-	        '#End Region
-	
-	        '#Region duration
-	        Dim duration As TimeSpan = timelineView.Duration
-	        '			#End Region
-	
-	        '#Region showTimescale
-	        Dim scale As Timescales = Timescales.Hours
-	        timelineView.ShowTimescale(scale)
-	        '#End Region
-	
-	        '#Region getTimescale
-	        Dim currentScaling As SchedulerTimescale = timelineView.GetScaling()
-	        currentScaling.Format = "dd MMM"
-	        currentScaling.DisplayedCellsCount = 8
-	        '#End Region
-	
-	        '#Region navigationElements
-	        timelineView.ShowNavigationElement = False
-	        timelineView.ShowVerticalScrollBar = False
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        Dim viewElement As SchedulerTimelineViewElement = CType(RadScheduler1.ViewElement, SchedulerTimelineViewElement)
-	        viewElement.SetColumnWidth(1, 2)
-	        '#End Region
-	
-	        '#Region headerSizing
-	        viewElement.ColumnHeaderHeight = 70
-	        viewElement.ViewHeaderHeight = 35
-	        '#End Region
-	
-	
-	        '#Region "verticalScrollBar"
-	        timelineView.ShowVerticalScrollBar = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	        Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Timeline
+	{{endregion}}
 
 
 
@@ -276,45 +126,7 @@ The __StartDate__ property sets the first date that is shown in the timeline vi
 	        Me.RadScheduler1.GetTimelineView().RangeStartDate = New Date(2010, 1, 20)
 	        Me.RadScheduler1.GetTimelineView().RangeEndDate = New Date(2010, 2, 20)
 	        Me.RadScheduler1.GetTimelineView().StartDate = New Date(2010, 2, 1)
-	        '#End Region
-	
-	        '#Region duration
-	        Dim duration As TimeSpan = timelineView.Duration
-	        '			#End Region
-	
-	        '#Region showTimescale
-	        Dim scale As Timescales = Timescales.Hours
-	        timelineView.ShowTimescale(scale)
-	        '#End Region
-	
-	        '#Region getTimescale
-	        Dim currentScaling As SchedulerTimescale = timelineView.GetScaling()
-	        currentScaling.Format = "dd MMM"
-	        currentScaling.DisplayedCellsCount = 8
-	        '#End Region
-	
-	        '#Region navigationElements
-	        timelineView.ShowNavigationElement = False
-	        timelineView.ShowVerticalScrollBar = False
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        Dim viewElement As SchedulerTimelineViewElement = CType(RadScheduler1.ViewElement, SchedulerTimelineViewElement)
-	        viewElement.SetColumnWidth(1, 2)
-	        '#End Region
-	
-	        '#Region headerSizing
-	        viewElement.ColumnHeaderHeight = 70
-	        viewElement.ViewHeaderHeight = 35
-	        '#End Region
-	
-	
-	        '#Region "verticalScrollBar"
-	        timelineView.ShowVerticalScrollBar = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -336,41 +148,7 @@ To get the duration between __RangeStartDate__ and __RangeEndDate__ you can use 
 
 {{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=duration}}
 	        Dim duration As TimeSpan = timelineView.Duration
-	        '			#End Region
-	
-	        '#Region showTimescale
-	        Dim scale As Timescales = Timescales.Hours
-	        timelineView.ShowTimescale(scale)
-	        '#End Region
-	
-	        '#Region getTimescale
-	        Dim currentScaling As SchedulerTimescale = timelineView.GetScaling()
-	        currentScaling.Format = "dd MMM"
-	        currentScaling.DisplayedCellsCount = 8
-	        '#End Region
-	
-	        '#Region navigationElements
-	        timelineView.ShowNavigationElement = False
-	        timelineView.ShowVerticalScrollBar = False
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        Dim viewElement As SchedulerTimelineViewElement = CType(RadScheduler1.ViewElement, SchedulerTimelineViewElement)
-	        viewElement.SetColumnWidth(1, 2)
-	        '#End Region
-	
-	        '#Region headerSizing
-	        viewElement.ColumnHeaderHeight = 70
-	        viewElement.ViewHeaderHeight = 35
-	        '#End Region
-	
-	
-	        '#Region "verticalScrollBar"
-	        timelineView.ShowVerticalScrollBar = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -411,36 +189,7 @@ To change the time scaling to HOUR, for example, you need to use the __ShowTimes
 {{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=showTimescale}}
 	        Dim scale As Timescales = Timescales.Hours
 	        timelineView.ShowTimescale(scale)
-	        '#End Region
-	
-	        '#Region getTimescale
-	        Dim currentScaling As SchedulerTimescale = timelineView.GetScaling()
-	        currentScaling.Format = "dd MMM"
-	        currentScaling.DisplayedCellsCount = 8
-	        '#End Region
-	
-	        '#Region navigationElements
-	        timelineView.ShowNavigationElement = False
-	        timelineView.ShowVerticalScrollBar = False
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        Dim viewElement As SchedulerTimelineViewElement = CType(RadScheduler1.ViewElement, SchedulerTimelineViewElement)
-	        viewElement.SetColumnWidth(1, 2)
-	        '#End Region
-	
-	        '#Region headerSizing
-	        viewElement.ColumnHeaderHeight = 70
-	        viewElement.ViewHeaderHeight = 35
-	        '#End Region
-	
-	
-	        '#Region "verticalScrollBar"
-	        timelineView.ShowVerticalScrollBar = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -467,30 +216,7 @@ To get the currently selected scale, use the __GetScaling__ method. After this y
 	        Dim currentScaling As SchedulerTimescale = timelineView.GetScaling()
 	        currentScaling.Format = "dd MMM"
 	        currentScaling.DisplayedCellsCount = 8
-	        '#End Region
-	
-	        '#Region navigationElements
-	        timelineView.ShowNavigationElement = False
-	        timelineView.ShowVerticalScrollBar = False
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        Dim viewElement As SchedulerTimelineViewElement = CType(RadScheduler1.ViewElement, SchedulerTimelineViewElement)
-	        viewElement.SetColumnWidth(1, 2)
-	        '#End Region
-	
-	        '#Region headerSizing
-	        viewElement.ColumnHeaderHeight = 70
-	        viewElement.ViewHeaderHeight = 35
-	        '#End Region
-	
-	
-	        '#Region "verticalScrollBar"
-	        timelineView.ShowVerticalScrollBar = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -518,25 +244,7 @@ In TimelineView there are two scrollbars which stand for navigation between date
 {{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=navigationElements}}
 	        timelineView.ShowNavigationElement = False
 	        timelineView.ShowVerticalScrollBar = False
-	        '#End Region
-	
-	        '#Region resizeColumns
-	        Dim viewElement As SchedulerTimelineViewElement = CType(RadScheduler1.ViewElement, SchedulerTimelineViewElement)
-	        viewElement.SetColumnWidth(1, 2)
-	        '#End Region
-	
-	        '#Region headerSizing
-	        viewElement.ColumnHeaderHeight = 70
-	        viewElement.ViewHeaderHeight = 35
-	        '#End Region
-	
-	
-	        '#Region "verticalScrollBar"
-	        timelineView.ShowVerticalScrollBar = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -564,20 +272,7 @@ The SchedulerTimelineViewElement allows you to specify different size for the di
 {{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=resizeColumns}}
 	        Dim viewElement As SchedulerTimelineViewElement = CType(RadScheduler1.ViewElement, SchedulerTimelineViewElement)
 	        viewElement.SetColumnWidth(1, 2)
-	        '#End Region
-	
-	        '#Region headerSizing
-	        viewElement.ColumnHeaderHeight = 70
-	        viewElement.ViewHeaderHeight = 35
-	        '#End Region
-	
-	
-	        '#Region "verticalScrollBar"
-	        timelineView.ShowVerticalScrollBar = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -604,15 +299,7 @@ TimelineView contains two header rows. The first one displays the date range of 
 {{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=headerSizing}}
 	        viewElement.ColumnHeaderHeight = 70
 	        viewElement.ViewHeaderHeight = 35
-	        '#End Region
-	
-	
-	        '#Region "verticalScrollBar"
-	        timelineView.ShowVerticalScrollBar = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

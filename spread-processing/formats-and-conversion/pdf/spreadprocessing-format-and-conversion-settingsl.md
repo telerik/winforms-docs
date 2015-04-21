@@ -46,19 +46,7 @@ The following example shows how to export the Entire Workbook without ignoring t
 {{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingPdfSettings.vb region=radspreadprocessing-formats-and-conversion-pdf-settings_0}}
 	            Dim provider As New PdfFormatProvider()
 	            provider.ExportSettings = New PdfExportSettings(ExportWhat.EntireWorkbook, False)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsePdfSettingsExportSelection()
-	            '#Region "radspreadprocessing-formats-and-conversion-pdf-settings_1"
-	            Dim rangesToExport As CellRange() = New CellRange() {New CellRange(2, 3, 10, 15), New CellRange(4, 5, 8, 20)}
-	
-	            Dim provider As New PdfFormatProvider()
-	            provider.ExportSettings = New PdfExportSettings(rangesToExport)
-	            '#End Region
-	        End Sub
-	    End Class
-	End Class
+	{{endregion}}
 
 
 
@@ -87,9 +75,6 @@ The following example shows how to export only two selected ranges from the acti
 	
 	            Dim provider As New PdfFormatProvider()
 	            provider.ExportSettings = New PdfExportSettings(rangesToExport)
-	            '#End Region
-	        End Sub
-	    End Class
-	End Class
+	{{endregion}}
 
 

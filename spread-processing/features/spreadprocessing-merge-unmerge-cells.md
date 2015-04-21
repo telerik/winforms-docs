@@ -48,9 +48,7 @@ __Example 1__ constructs a worksheet that will be used as a starting point in th
 	        worksheet.Cells(1, 0).SetValue("A2")
 	        worksheet.Cells(0, 1).SetValue("B1")
 	        worksheet.Cells(1, 1).SetValue("B2")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -88,103 +86,7 @@ __Example 2__ illustrates how to perform a merge operation on the cell region *A
 	
 	        worksheet.Cells(A1Cell, B2Cell).Merge()
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub MergeAcrossA1B2()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_1
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim A1Cell As New CellIndex(0, 0)
-	        Dim B2Cell As New CellIndex(1, 1)
-	        worksheet.Cells(A1Cell, B2Cell).MergeAcross()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub MergeB2C3()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_2
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim B2Cell As New CellIndex(1, 1)
-	        Dim C3Cell As New CellIndex(2, 2)
-	        worksheet.Cells(B2Cell, C3Cell).Merge()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CheckA1IsMerged()
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_3
-	
-	        Dim A1CellIndex As New CellIndex(0, 0)
-	        Dim isA1merged As Boolean = Worksheet.Cells.GetIsMerged(A1CellIndex)
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetContainingMergedRangeForCellA1()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_4
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim A1CellIndex As New CellIndex(0, 0)
-	        Dim mergedCellRange As CellRange
-	        Dim canGetContainingMergedCellRange As Boolean = worksheet.Cells.TryGetContainingMergedRange(A1CellIndex, mergedCellRange)
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetAllContainingMergedRangesInRange()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_5
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim A1CellIndex As New CellIndex(0, 0)
-	        Dim N33CellIndex As New CellIndex(32, 13)
-	        Dim A1N33CellRange As New CellRange(A1CellIndex, N33CellIndex)
-	        Dim containingMergedCellRanges As IEnumerable(Of CellRange) = worksheet.Cells.GetContainingMergedRanges(A1N33CellRange)
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetAllMergedCells()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_6
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim mergedCellRanges As IEnumerable(Of CellRange) = worksheet.Cells.GetMergedCellRanges()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub UnmergeCells()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_7
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim B2CellIndex As New CellIndex(1, 1)
-	        Dim D4CellIndex As New CellIndex(3, 3)
-	        Dim B2D4CellSelection As New CellRange(B2CellIndex, D4CellIndex)
-	        worksheet.Cells(B2D4CellSelection).Unmerge()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub StartingPoint()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_8
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        worksheet.Cells(0, 0).SetValue("A1")
-	        worksheet.Cells(1, 0).SetValue("A2")
-	        worksheet.Cells(0, 1).SetValue("B1")
-	        worksheet.Cells(1, 1).SetValue("B2")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -226,91 +128,7 @@ __Example 3__ illustrates how to perform a merge operation on the cell region *A
 	        Dim B2Cell As New CellIndex(1, 1)
 	        worksheet.Cells(A1Cell, B2Cell).MergeAcross()
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub MergeB2C3()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_2
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim B2Cell As New CellIndex(1, 1)
-	        Dim C3Cell As New CellIndex(2, 2)
-	        worksheet.Cells(B2Cell, C3Cell).Merge()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CheckA1IsMerged()
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_3
-	
-	        Dim A1CellIndex As New CellIndex(0, 0)
-	        Dim isA1merged As Boolean = Worksheet.Cells.GetIsMerged(A1CellIndex)
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetContainingMergedRangeForCellA1()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_4
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim A1CellIndex As New CellIndex(0, 0)
-	        Dim mergedCellRange As CellRange
-	        Dim canGetContainingMergedCellRange As Boolean = worksheet.Cells.TryGetContainingMergedRange(A1CellIndex, mergedCellRange)
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetAllContainingMergedRangesInRange()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_5
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim A1CellIndex As New CellIndex(0, 0)
-	        Dim N33CellIndex As New CellIndex(32, 13)
-	        Dim A1N33CellRange As New CellRange(A1CellIndex, N33CellIndex)
-	        Dim containingMergedCellRanges As IEnumerable(Of CellRange) = worksheet.Cells.GetContainingMergedRanges(A1N33CellRange)
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetAllMergedCells()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_6
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim mergedCellRanges As IEnumerable(Of CellRange) = worksheet.Cells.GetMergedCellRanges()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub UnmergeCells()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_7
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim B2CellIndex As New CellIndex(1, 1)
-	        Dim D4CellIndex As New CellIndex(3, 3)
-	        Dim B2D4CellSelection As New CellRange(B2CellIndex, D4CellIndex)
-	        worksheet.Cells(B2D4CellSelection).Unmerge()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub StartingPoint()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_8
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        worksheet.Cells(0, 0).SetValue("A1")
-	        worksheet.Cells(1, 0).SetValue("A2")
-	        worksheet.Cells(0, 1).SetValue("B1")
-	        worksheet.Cells(1, 1).SetValue("B2")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -352,79 +170,7 @@ __Example 4__ merges across the region *A1:B2* and then performs another merge o
 	        Dim C3Cell As New CellIndex(2, 2)
 	        worksheet.Cells(B2Cell, C3Cell).Merge()
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CheckA1IsMerged()
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_3
-	
-	        Dim A1CellIndex As New CellIndex(0, 0)
-	        Dim isA1merged As Boolean = Worksheet.Cells.GetIsMerged(A1CellIndex)
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetContainingMergedRangeForCellA1()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_4
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim A1CellIndex As New CellIndex(0, 0)
-	        Dim mergedCellRange As CellRange
-	        Dim canGetContainingMergedCellRange As Boolean = worksheet.Cells.TryGetContainingMergedRange(A1CellIndex, mergedCellRange)
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetAllContainingMergedRangesInRange()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_5
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim A1CellIndex As New CellIndex(0, 0)
-	        Dim N33CellIndex As New CellIndex(32, 13)
-	        Dim A1N33CellRange As New CellRange(A1CellIndex, N33CellIndex)
-	        Dim containingMergedCellRanges As IEnumerable(Of CellRange) = worksheet.Cells.GetContainingMergedRanges(A1N33CellRange)
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetAllMergedCells()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_6
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim mergedCellRanges As IEnumerable(Of CellRange) = worksheet.Cells.GetMergedCellRanges()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub UnmergeCells()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_7
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim B2CellIndex As New CellIndex(1, 1)
-	        Dim D4CellIndex As New CellIndex(3, 3)
-	        Dim B2D4CellSelection As New CellRange(B2CellIndex, D4CellIndex)
-	        worksheet.Cells(B2D4CellSelection).Unmerge()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub StartingPoint()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_8
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        worksheet.Cells(0, 0).SetValue("A1")
-	        worksheet.Cells(1, 0).SetValue("A2")
-	        worksheet.Cells(0, 1).SetValue("B1")
-	        worksheet.Cells(1, 1).SetValue("B2")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -466,68 +212,7 @@ __Example 5__ checks if cell A1 is in a merged region.
 	        Dim A1CellIndex As New CellIndex(0, 0)
 	        Dim isA1merged As Boolean = Worksheet.Cells.GetIsMerged(A1CellIndex)
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetContainingMergedRangeForCellA1()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_4
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim A1CellIndex As New CellIndex(0, 0)
-	        Dim mergedCellRange As CellRange
-	        Dim canGetContainingMergedCellRange As Boolean = worksheet.Cells.TryGetContainingMergedRange(A1CellIndex, mergedCellRange)
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetAllContainingMergedRangesInRange()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_5
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim A1CellIndex As New CellIndex(0, 0)
-	        Dim N33CellIndex As New CellIndex(32, 13)
-	        Dim A1N33CellRange As New CellRange(A1CellIndex, N33CellIndex)
-	        Dim containingMergedCellRanges As IEnumerable(Of CellRange) = worksheet.Cells.GetContainingMergedRanges(A1N33CellRange)
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetAllMergedCells()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_6
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim mergedCellRanges As IEnumerable(Of CellRange) = worksheet.Cells.GetMergedCellRanges()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub UnmergeCells()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_7
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim B2CellIndex As New CellIndex(1, 1)
-	        Dim D4CellIndex As New CellIndex(3, 3)
-	        Dim B2D4CellSelection As New CellRange(B2CellIndex, D4CellIndex)
-	        worksheet.Cells(B2D4CellSelection).Unmerge()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub StartingPoint()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_8
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        worksheet.Cells(0, 0).SetValue("A1")
-	        worksheet.Cells(1, 0).SetValue("A2")
-	        worksheet.Cells(0, 1).SetValue("B1")
-	        worksheet.Cells(1, 1).SetValue("B2")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -560,56 +245,7 @@ __Example 6__ shows how to use TryGetContainingMergedRange() method.
 	        Dim mergedCellRange As CellRange
 	        Dim canGetContainingMergedCellRange As Boolean = worksheet.Cells.TryGetContainingMergedRange(A1CellIndex, mergedCellRange)
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetAllContainingMergedRangesInRange()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_5
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim A1CellIndex As New CellIndex(0, 0)
-	        Dim N33CellIndex As New CellIndex(32, 13)
-	        Dim A1N33CellRange As New CellRange(A1CellIndex, N33CellIndex)
-	        Dim containingMergedCellRanges As IEnumerable(Of CellRange) = worksheet.Cells.GetContainingMergedRanges(A1N33CellRange)
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetAllMergedCells()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_6
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim mergedCellRanges As IEnumerable(Of CellRange) = worksheet.Cells.GetMergedCellRanges()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub UnmergeCells()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_7
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim B2CellIndex As New CellIndex(1, 1)
-	        Dim D4CellIndex As New CellIndex(3, 3)
-	        Dim B2D4CellSelection As New CellRange(B2CellIndex, D4CellIndex)
-	        worksheet.Cells(B2D4CellSelection).Unmerge()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub StartingPoint()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_8
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        worksheet.Cells(0, 0).SetValue("A1")
-	        worksheet.Cells(1, 0).SetValue("A2")
-	        worksheet.Cells(0, 1).SetValue("B1")
-	        worksheet.Cells(1, 1).SetValue("B2")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -644,43 +280,7 @@ __Example 7__ shows how to use GetContainingMergedRanges() method.
 	        Dim A1N33CellRange As New CellRange(A1CellIndex, N33CellIndex)
 	        Dim containingMergedCellRanges As IEnumerable(Of CellRange) = worksheet.Cells.GetContainingMergedRanges(A1N33CellRange)
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub GetAllMergedCells()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_6
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim mergedCellRanges As IEnumerable(Of CellRange) = worksheet.Cells.GetMergedCellRanges()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub UnmergeCells()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_7
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim B2CellIndex As New CellIndex(1, 1)
-	        Dim D4CellIndex As New CellIndex(3, 3)
-	        Dim B2D4CellSelection As New CellRange(B2CellIndex, D4CellIndex)
-	        worksheet.Cells(B2D4CellSelection).Unmerge()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub StartingPoint()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_8
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        worksheet.Cells(0, 0).SetValue("A1")
-	        worksheet.Cells(1, 0).SetValue("A2")
-	        worksheet.Cells(0, 1).SetValue("B1")
-	        worksheet.Cells(1, 1).SetValue("B2")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -712,33 +312,7 @@ __Example 8__ shows how to get all merged ranges in a worksheet.
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
 	        Dim mergedCellRanges As IEnumerable(Of CellRange) = worksheet.Cells.GetMergedCellRanges()
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub UnmergeCells()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_7
-	
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        Dim B2CellIndex As New CellIndex(1, 1)
-	        Dim D4CellIndex As New CellIndex(3, 3)
-	        Dim B2D4CellSelection As New CellRange(B2CellIndex, D4CellIndex)
-	        worksheet.Cells(B2D4CellSelection).Unmerge()
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub StartingPoint()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_8
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        worksheet.Cells(0, 0).SetValue("A1")
-	        worksheet.Cells(1, 0).SetValue("A2")
-	        worksheet.Cells(0, 1).SetValue("B1")
-	        worksheet.Cells(1, 1).SetValue("B2")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -775,20 +349,7 @@ __Example 9__ invokes the __Unmerge()__ method for the region *B2:D4* of the wor
 	        Dim B2D4CellSelection As New CellRange(B2CellIndex, D4CellIndex)
 	        worksheet.Cells(B2D4CellSelection).Unmerge()
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub StartingPoint()
-	        '#Region radspreadprocessing-features-merge-unmerge-cells_8
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        worksheet.Cells(0, 0).SetValue("A1")
-	        worksheet.Cells(1, 0).SetValue("A2")
-	        worksheet.Cells(0, 1).SetValue("B1")
-	        worksheet.Cells(1, 1).SetValue("B2")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -57,44 +57,7 @@ RadChartView areas, which support axes, can render a grid that facilitate the pr
 	        series.DataPoints.Add(New CategoricalDataPoint(400, "Jul"))
 	        series.DataPoints.Add(New CategoricalDataPoint(250, "Oct"))
 	        Me.RadChartView1.Series.Add(series)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub PolarAreaGrid()
-	        '#Region "polar"
-	        Me.RadChartView1.AreaType = ChartAreaType.Polar
-	        Dim area As PolarArea = Me.RadChartView1.GetArea(Of PolarArea)()
-	        Dim grid As PolarGrid = area.GetGrid(Of PolarGrid)()
-	        area.ShowGrid = True
-	        grid.BorderDashStyle = System.Drawing.Drawing2D.DashStyle.Dash
-	
-	        Dim polarPointSeries As New PolarPointSeries()
-	
-	        Dim dataPoint As New PolarDataPoint()
-	        dataPoint.Value = 40
-	        dataPoint.Angle = 200
-	        polarPointSeries.DataPoints.Add(dataPoint)
-	
-	        dataPoint = New PolarDataPoint()
-	        dataPoint.Value = 35
-	        dataPoint.Angle = 50
-	        polarPointSeries.DataPoints.Add(dataPoint)
-	
-	        dataPoint = New PolarDataPoint()
-	        dataPoint.Value = 55
-	        dataPoint.Angle = 320
-	        polarPointSeries.DataPoints.Add(dataPoint)
-	
-	        dataPoint = New PolarDataPoint()
-	        dataPoint.Value = 25
-	        dataPoint.Angle = 130
-	        polarPointSeries.DataPoints.Add(dataPoint)
-	
-	        Me.RadChartView1.Series.Add(polarPointSeries)
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 ![chartview-chart-grid 001](images/chartview-chart-grid001.png)
 
@@ -186,10 +149,7 @@ The essential properties of CartesianGrid are the following:
 	        polarPointSeries.DataPoints.Add(dataPoint)
 	
 	        Me.RadChartView1.Series.Add(polarPointSeries)
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 ![chartview-chart-grid 002](images/chartview-chart-grid002.png)
 

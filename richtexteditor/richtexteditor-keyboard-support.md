@@ -205,8 +205,7 @@ Now these key shortcuts can be overridden and customized to the liking of the us
 	    End Sub
 	End Class
 	
-	#End Region
-	
+	{{endregion}}
 
 
 
@@ -228,36 +227,7 @@ the default behavior can be changed like this:
 	
 	        radRichTextEditor1.InputHandler = New MyInputBehavior(radRichTextEditor1.RichTextBoxElement)
 	
-	        '#End Region
-	    End Sub
-	
-	#Region "keyDown"
-	
-	    Private Sub RichTextBoxElement_PreviewEditorKeyDown(ByVal sender As Object, ByVal e As PreviewEditorKeyEventArgs)
-	        If (Keyboard.IsKeyDown(Key.LeftShift) OrElse Keyboard.IsKeyDown(Key.RightShift)) Then
-	            e.SuppressDefaultAction = True
-	        End If
-	    End Sub
-	
-	#End Region
-	
-	End Class
-	
-	#Region "input"
-	
-	Public Class MyInputBehavior
-	    Inherits Telerik.WinForms.RichTextEditor.RichTextEditorInputBehavior
-	
-	    Public Sub New(ByVal editor As RadRichTextBox)
-	        MyBase.New(editor)
-	    End Sub
-	    Protected Overrides Sub PerformCopyOperation(ByVal e As System.Windows.Forms.KeyEventArgs)
-	        MyBase.PerformCutOperation(e)
-	    End Sub
-	End Class
-	
-	#End Region
-	
+	{{endregion}}
 
 
 
@@ -293,25 +263,7 @@ Another way to customize the control behavior is to use the __PreviewEditorKeyDo
 	        End If
 	    End Sub
 	
-	#End Region
-	
-	End Class
-	
-	#Region "input"
-	
-	Public Class MyInputBehavior
-	    Inherits Telerik.WinForms.RichTextEditor.RichTextEditorInputBehavior
-	
-	    Public Sub New(ByVal editor As RadRichTextBox)
-	        MyBase.New(editor)
-	    End Sub
-	    Protected Overrides Sub PerformCopyOperation(ByVal e As System.Windows.Forms.KeyEventArgs)
-	        MyBase.PerformCutOperation(e)
-	    End Sub
-	End Class
-	
-	#End Region
-	
+	{{endregion}}
 
 
 

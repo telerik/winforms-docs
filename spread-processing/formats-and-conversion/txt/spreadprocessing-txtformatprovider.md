@@ -56,23 +56,7 @@ __Example 1__ shows how to import a txt file using a FileStream. The sample inst
 	        Using input As New FileStream(fileName, FileMode.Open)
 	            workbook = formatProvider.Import(input)
 	        End Using
-	        '#End Region
-	    End Sub
-	
-	    Private Sub ExportTxt()
-	        '#Region radspreadsheet-model-import-export-txtformatprovider-wpf_1
-	        Dim workbook As New Workbook()
-	        workbook.Worksheets.Add()
-	
-	        Dim fileName As String = "SampleFile.txt"
-	        Dim formatProvider As IWorkbookFormatProvider = New TxtFormatProvider()
-	
-	        Using output As New FileStream(fileName, FileMode.Create)
-	            formatProvider.Export(workbook, output)
-	        End Using
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -111,8 +95,6 @@ __Example 2__ demonstrates how to export an existing Workbook to a TXT file. The
 	        Using output As New FileStream(fileName, FileMode.Create)
 	            formatProvider.Export(workbook, output)
 	        End Using
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

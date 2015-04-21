@@ -32,60 +32,7 @@ The ruler can be accessed as follows:
 
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=GetRuller}}
 	        Dim ruler As RulerPrimitive = TryCast(Me.scheduler.SchedulerElement.ViewElement, SchedulerDayViewElement).DataAreaElement.Ruler
-	        '#End Region
-	
-	        '#Region "TimePointerStyle"
-	        ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        '#End Region
-	
-	        '#Region "StartEndScale"
-	        ruler.StartScale = 2
-	        ruler.EndScale = 9
-	        '#End Region
-	
-	        '#Region "RangeFactor"
-	        ruler.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region "CurrentTimePointerWidthAndColor"
-	        ruler.CurrentTimePointerWidth = 10
-	        ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region "RulerWidth"
-	        ruler.RulerWidth = 100
-	        '#End Region
-	
-	        '#Region "FormatStrings"
-	        ruler.FormatStrings = New RulerFormatStrings("hh", "mm", "hh", "mm")
-	        '#End Region
-	
-	        '#Region "RulerFormattingSubscribe"
-	        '#End Region
-	
-	        AddHandler Me.scheduler.RulerTextFormatting, AddressOf Scheduler_RulerTextFormatting
-	    End Sub
-	
-	#Region "RulerFormattingHandler"
-	    Private Sub Scheduler_RulerTextFormatting(sender As Object, e As RulerTextFormattingEventArgs)
-	        If e.Text.Length = 1 Then
-	            e.Text = "0" & e.Text
-	        End If
-	    End Sub
-	#End Region
-	
-	    Public Sub LoadAppointments(scheduler As RadScheduler)
-	        Dim addDays As Integer = 0
-	        For i As Integer = 0 To rnd.[Next](15, 30) - 1
-	            Dim app As New Appointment(DateTime.Now.AddDays(addDays).AddHours(rnd.[Next](0, 5)), DateTime.Now.AddHours(rnd.[Next](4, 10)), "")
-	            scheduler.Appointments.Add(app)
-	
-	            If i Mod 5 = 0 Then
-	                addDays += 1
-	            End If
-	        Next
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![scheduler-fundamentals-ruler 001](images/scheduler-fundamentals-ruler001.png)
 
@@ -104,56 +51,7 @@ The ruler can be accessed as follows:
 
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=TimePointerStyle}}
 	        ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-	        '#End Region
-	
-	        '#Region "StartEndScale"
-	        ruler.StartScale = 2
-	        ruler.EndScale = 9
-	        '#End Region
-	
-	        '#Region "RangeFactor"
-	        ruler.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region "CurrentTimePointerWidthAndColor"
-	        ruler.CurrentTimePointerWidth = 10
-	        ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region "RulerWidth"
-	        ruler.RulerWidth = 100
-	        '#End Region
-	
-	        '#Region "FormatStrings"
-	        ruler.FormatStrings = New RulerFormatStrings("hh", "mm", "hh", "mm")
-	        '#End Region
-	
-	        '#Region "RulerFormattingSubscribe"
-	        '#End Region
-	
-	        AddHandler Me.scheduler.RulerTextFormatting, AddressOf Scheduler_RulerTextFormatting
-	    End Sub
-	
-	#Region "RulerFormattingHandler"
-	    Private Sub Scheduler_RulerTextFormatting(sender As Object, e As RulerTextFormattingEventArgs)
-	        If e.Text.Length = 1 Then
-	            e.Text = "0" & e.Text
-	        End If
-	    End Sub
-	#End Region
-	
-	    Public Sub LoadAppointments(scheduler As RadScheduler)
-	        Dim addDays As Integer = 0
-	        For i As Integer = 0 To rnd.[Next](15, 30) - 1
-	            Dim app As New Appointment(DateTime.Now.AddDays(addDays).AddHours(rnd.[Next](0, 5)), DateTime.Now.AddHours(rnd.[Next](4, 10)), "")
-	            scheduler.Appointments.Add(app)
-	
-	            If i Mod 5 = 0 Then
-	                addDays += 1
-	            End If
-	        Next
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![scheduler-fundamentals-ruler 002](images/scheduler-fundamentals-ruler002.png)
 
@@ -174,51 +72,7 @@ The ruler can be accessed as follows:
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=StartEndScale}}
 	        ruler.StartScale = 2
 	        ruler.EndScale = 9
-	        '#End Region
-	
-	        '#Region "RangeFactor"
-	        ruler.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region "CurrentTimePointerWidthAndColor"
-	        ruler.CurrentTimePointerWidth = 10
-	        ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region "RulerWidth"
-	        ruler.RulerWidth = 100
-	        '#End Region
-	
-	        '#Region "FormatStrings"
-	        ruler.FormatStrings = New RulerFormatStrings("hh", "mm", "hh", "mm")
-	        '#End Region
-	
-	        '#Region "RulerFormattingSubscribe"
-	        '#End Region
-	
-	        AddHandler Me.scheduler.RulerTextFormatting, AddressOf Scheduler_RulerTextFormatting
-	    End Sub
-	
-	#Region "RulerFormattingHandler"
-	    Private Sub Scheduler_RulerTextFormatting(sender As Object, e As RulerTextFormattingEventArgs)
-	        If e.Text.Length = 1 Then
-	            e.Text = "0" & e.Text
-	        End If
-	    End Sub
-	#End Region
-	
-	    Public Sub LoadAppointments(scheduler As RadScheduler)
-	        Dim addDays As Integer = 0
-	        For i As Integer = 0 To rnd.[Next](15, 30) - 1
-	            Dim app As New Appointment(DateTime.Now.AddDays(addDays).AddHours(rnd.[Next](0, 5)), DateTime.Now.AddHours(rnd.[Next](4, 10)), "")
-	            scheduler.Appointments.Add(app)
-	
-	            If i Mod 5 = 0 Then
-	                addDays += 1
-	            End If
-	        Next
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![scheduler-fundamentals-ruler 003](images/scheduler-fundamentals-ruler003.png)
 
@@ -237,47 +91,7 @@ The ruler can be accessed as follows:
 
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=RangeFactor}}
 	        ruler.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region "CurrentTimePointerWidthAndColor"
-	        ruler.CurrentTimePointerWidth = 10
-	        ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region "RulerWidth"
-	        ruler.RulerWidth = 100
-	        '#End Region
-	
-	        '#Region "FormatStrings"
-	        ruler.FormatStrings = New RulerFormatStrings("hh", "mm", "hh", "mm")
-	        '#End Region
-	
-	        '#Region "RulerFormattingSubscribe"
-	        '#End Region
-	
-	        AddHandler Me.scheduler.RulerTextFormatting, AddressOf Scheduler_RulerTextFormatting
-	    End Sub
-	
-	#Region "RulerFormattingHandler"
-	    Private Sub Scheduler_RulerTextFormatting(sender As Object, e As RulerTextFormattingEventArgs)
-	        If e.Text.Length = 1 Then
-	            e.Text = "0" & e.Text
-	        End If
-	    End Sub
-	#End Region
-	
-	    Public Sub LoadAppointments(scheduler As RadScheduler)
-	        Dim addDays As Integer = 0
-	        For i As Integer = 0 To rnd.[Next](15, 30) - 1
-	            Dim app As New Appointment(DateTime.Now.AddDays(addDays).AddHours(rnd.[Next](0, 5)), DateTime.Now.AddHours(rnd.[Next](4, 10)), "")
-	            scheduler.Appointments.Add(app)
-	
-	            If i Mod 5 = 0 Then
-	                addDays += 1
-	            End If
-	        Next
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![scheduler-fundamentals-ruler 004](images/scheduler-fundamentals-ruler004.png)
 
@@ -298,42 +112,7 @@ The ruler can be accessed as follows:
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=CurrentTimePointerWidthAndColor}}
 	        ruler.CurrentTimePointerWidth = 10
 	        ruler.CurrentTimePointerColor = Color.Red
-	        '#End Region
-	
-	        '#Region "RulerWidth"
-	        ruler.RulerWidth = 100
-	        '#End Region
-	
-	        '#Region "FormatStrings"
-	        ruler.FormatStrings = New RulerFormatStrings("hh", "mm", "hh", "mm")
-	        '#End Region
-	
-	        '#Region "RulerFormattingSubscribe"
-	        '#End Region
-	
-	        AddHandler Me.scheduler.RulerTextFormatting, AddressOf Scheduler_RulerTextFormatting
-	    End Sub
-	
-	#Region "RulerFormattingHandler"
-	    Private Sub Scheduler_RulerTextFormatting(sender As Object, e As RulerTextFormattingEventArgs)
-	        If e.Text.Length = 1 Then
-	            e.Text = "0" & e.Text
-	        End If
-	    End Sub
-	#End Region
-	
-	    Public Sub LoadAppointments(scheduler As RadScheduler)
-	        Dim addDays As Integer = 0
-	        For i As Integer = 0 To rnd.[Next](15, 30) - 1
-	            Dim app As New Appointment(DateTime.Now.AddDays(addDays).AddHours(rnd.[Next](0, 5)), DateTime.Now.AddHours(rnd.[Next](4, 10)), "")
-	            scheduler.Appointments.Add(app)
-	
-	            If i Mod 5 = 0 Then
-	                addDays += 1
-	            End If
-	        Next
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![scheduler-fundamentals-ruler 005](images/scheduler-fundamentals-ruler005.png)
 
@@ -352,34 +131,7 @@ The ruler can be accessed as follows:
 
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=FormatStrings}}
 	        ruler.FormatStrings = New RulerFormatStrings("hh", "mm", "hh", "mm")
-	        '#End Region
-	
-	        '#Region "RulerFormattingSubscribe"
-	        '#End Region
-	
-	        AddHandler Me.scheduler.RulerTextFormatting, AddressOf Scheduler_RulerTextFormatting
-	    End Sub
-	
-	#Region "RulerFormattingHandler"
-	    Private Sub Scheduler_RulerTextFormatting(sender As Object, e As RulerTextFormattingEventArgs)
-	        If e.Text.Length = 1 Then
-	            e.Text = "0" & e.Text
-	        End If
-	    End Sub
-	#End Region
-	
-	    Public Sub LoadAppointments(scheduler As RadScheduler)
-	        Dim addDays As Integer = 0
-	        For i As Integer = 0 To rnd.[Next](15, 30) - 1
-	            Dim app As New Appointment(DateTime.Now.AddDays(addDays).AddHours(rnd.[Next](0, 5)), DateTime.Now.AddHours(rnd.[Next](4, 10)), "")
-	            scheduler.Appointments.Add(app)
-	
-	            If i Mod 5 = 0 Then
-	                addDays += 1
-	            End If
-	        Next
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![scheduler-fundamentals-ruler 006](images/scheduler-fundamentals-ruler006.png)The RulerTextFormatting event can be used to manually format the text. You can prepend a "0" in front of the text if it contains only one digit:
             
@@ -395,31 +147,7 @@ The ruler can be accessed as follows:
 #### __[VB.NET] __
 
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=RulerFormattingSubscribe}}
-	        '#End Region
-	
-	        AddHandler Me.scheduler.RulerTextFormatting, AddressOf Scheduler_RulerTextFormatting
-	    End Sub
-	
-	#Region "RulerFormattingHandler"
-	    Private Sub Scheduler_RulerTextFormatting(sender As Object, e As RulerTextFormattingEventArgs)
-	        If e.Text.Length = 1 Then
-	            e.Text = "0" & e.Text
-	        End If
-	    End Sub
-	#End Region
-	
-	    Public Sub LoadAppointments(scheduler As RadScheduler)
-	        Dim addDays As Integer = 0
-	        For i As Integer = 0 To rnd.[Next](15, 30) - 1
-	            Dim app As New Appointment(DateTime.Now.AddDays(addDays).AddHours(rnd.[Next](0, 5)), DateTime.Now.AddHours(rnd.[Next](4, 10)), "")
-	            scheduler.Appointments.Add(app)
-	
-	            If i Mod 5 = 0 Then
-	                addDays += 1
-	            End If
-	        Next
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -445,20 +173,7 @@ The ruler can be accessed as follows:
 	            e.Text = "0" & e.Text
 	        End If
 	    End Sub
-	#End Region
-	
-	    Public Sub LoadAppointments(scheduler As RadScheduler)
-	        Dim addDays As Integer = 0
-	        For i As Integer = 0 To rnd.[Next](15, 30) - 1
-	            Dim app As New Appointment(DateTime.Now.AddDays(addDays).AddHours(rnd.[Next](0, 5)), DateTime.Now.AddHours(rnd.[Next](4, 10)), "")
-	            scheduler.Appointments.Add(app)
-	
-	            If i Mod 5 = 0 Then
-	                addDays += 1
-	            End If
-	        Next
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -477,37 +192,6 @@ The ruler can be accessed as follows:
 
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=RulerWidth}}
 	        ruler.RulerWidth = 100
-	        '#End Region
-	
-	        '#Region "FormatStrings"
-	        ruler.FormatStrings = New RulerFormatStrings("hh", "mm", "hh", "mm")
-	        '#End Region
-	
-	        '#Region "RulerFormattingSubscribe"
-	        '#End Region
-	
-	        AddHandler Me.scheduler.RulerTextFormatting, AddressOf Scheduler_RulerTextFormatting
-	    End Sub
-	
-	#Region "RulerFormattingHandler"
-	    Private Sub Scheduler_RulerTextFormatting(sender As Object, e As RulerTextFormattingEventArgs)
-	        If e.Text.Length = 1 Then
-	            e.Text = "0" & e.Text
-	        End If
-	    End Sub
-	#End Region
-	
-	    Public Sub LoadAppointments(scheduler As RadScheduler)
-	        Dim addDays As Integer = 0
-	        For i As Integer = 0 To rnd.[Next](15, 30) - 1
-	            Dim app As New Appointment(DateTime.Now.AddDays(addDays).AddHours(rnd.[Next](0, 5)), DateTime.Now.AddHours(rnd.[Next](4, 10)), "")
-	            scheduler.Appointments.Add(app)
-	
-	            If i Mod 5 = 0 Then
-	                addDays += 1
-	            End If
-	        Next
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![scheduler-fundamentals-ruler 007](images/scheduler-fundamentals-ruler007.png)

@@ -98,31 +98,7 @@ For example, you can keep a Dictionary<string, string> mapping each bookmark nam
 	        Me.radRichTextEditor1.Insert("new text")
 	    End Sub
 	
-	#End Region
-	
-	#Region "change"
-	
-	    Private Sub ChangeAllBookmarks(ByVal radRichTextEditor As RadRichTextEditor)
-	        Dim bookmarks() As BookmarkRangeStart = radRichTextEditor.Document.GetAllBookmarks().ToArray()
-	        Dim start As New DocumentPosition(radRichTextEditor.Document)
-	        Dim [end] As New DocumentPosition(radRichTextEditor.Document)
-	        For Each item As BookmarkRangeStart In bookmarks
-	            radRichTextEditor.Document.GoToBookmark(item)
-	
-	            start.MoveToInline(TryCast(item.FirstLayoutBox, InlineLayoutBox), 0)
-	            [end].MoveToInline(TryCast(item.End.FirstLayoutBox, InlineLayoutBox), 0)
-	            start.MoveToNextInline()
-	            radRichTextEditor.Document.Selection.SetSelectionStart(start)
-	            radRichTextEditor.Document.Selection.AddSelectionEnd([end])
-	
-	            radRichTextEditor.Delete(False)
-	
-	            radRichTextEditor.Insert("new text")
-	        Next item
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -182,8 +158,7 @@ If you want to preserve the bookmarks in the document and only change the text b
 	        Next item
 	    End Sub
 	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 

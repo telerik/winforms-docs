@@ -68,50 +68,7 @@ __Example 1__ shows how to retrieve and change the height of several rows.
 	        Dim rowSelection As RowSelection = worksheet.Rows(5, 7)
 	        Dim rowsHeight As Double = rowSelection.GetHeight().Value.Value
 	        rowSelection.SetHeight(New RowHeight(rowsHeight + 50, True))
-	        '#End Region
-	    End Sub
-	
-	    Public Sub AutoFitRowsHeight()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-resizing_1
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim rowSelection As RowSelection = worksheet.Rows(5, 7)
-	        rowSelection.AutoFitHeight()
-	        '#End Region
-	    End Sub
-	
-	    Public Sub ResizeColumns()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-resizing_2
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
-	        Dim columnWidth As Double = columnSelection.GetWidth().Value.Value
-	        columnSelection.SetWidth(New ColumnWidth(columnWidth + 50, True))
-	        '#End Region
-	    End Sub
-	
-	    Public Sub AutoFitColumnsWidth()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-resizing_3
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
-	        columnSelection.AutoFitWidth()
-	        '#End Region
-	    End Sub
-	
-	    Public Sub ExpandToFitNumberValuesWidth()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-resizing_4
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
-	        columnSelection.ExpandToFitNumberValuesWidth()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -140,40 +97,7 @@ The autofit feature offers a handy approach for resizing multiple rows, so that 
 	
 	        Dim rowSelection As RowSelection = worksheet.Rows(5, 7)
 	        rowSelection.AutoFitHeight()
-	        '#End Region
-	    End Sub
-	
-	    Public Sub ResizeColumns()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-resizing_2
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
-	        Dim columnWidth As Double = columnSelection.GetWidth().Value.Value
-	        columnSelection.SetWidth(New ColumnWidth(columnWidth + 50, True))
-	        '#End Region
-	    End Sub
-	
-	    Public Sub AutoFitColumnsWidth()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-resizing_3
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
-	        columnSelection.AutoFitWidth()
-	        '#End Region
-	    End Sub
-	
-	    Public Sub ExpandToFitNumberValuesWidth()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-resizing_4
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
-	        columnSelection.ExpandToFitNumberValuesWidth()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -222,29 +146,7 @@ __Example 3__ shows how to retrieve and change the width of several columns.
 	        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
 	        Dim columnWidth As Double = columnSelection.GetWidth().Value.Value
 	        columnSelection.SetWidth(New ColumnWidth(columnWidth + 50, True))
-	        '#End Region
-	    End Sub
-	
-	    Public Sub AutoFitColumnsWidth()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-resizing_3
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
-	        columnSelection.AutoFitWidth()
-	        '#End Region
-	    End Sub
-	
-	    Public Sub ExpandToFitNumberValuesWidth()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-resizing_4
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
-	        columnSelection.ExpandToFitNumberValuesWidth()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -273,19 +175,7 @@ The autofit feature offers a handy approach for resizing multiple columns, so th
 	
 	        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
 	        columnSelection.AutoFitWidth()
-	        '#End Region
-	    End Sub
-	
-	    Public Sub ExpandToFitNumberValuesWidth()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-resizing_4
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
-	        columnSelection.ExpandToFitNumberValuesWidth()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -312,8 +202,6 @@ Another way to auto fit column widths is to use the __ExpandToFitNumberValuesWid
 	
 	        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
 	        columnSelection.ExpandToFitNumberValuesWidth()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

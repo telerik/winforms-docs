@@ -35,26 +35,7 @@ Group filtering is enabled by default. To enable or disable it use the following
 
 {{source=..\SamplesVB\PivotGrid\Filtering\PivotGridGroupFiltering.vb region=AllowGroupFiltering}}
 	        Me.radPivotGrid1.AllowGroupFiltering = True
-	        '#End Region
-	
-	        '#Region "PropertyGroupDescription"
-	        Dim description As PropertyGroupDescriptionBase = Me.radPivotGrid1.RowGroupDescriptions(0)
-	        Dim filter As New LabelGroupFilter()
-	        Dim condition As New ComparisonCondition()
-	
-	        condition.Condition = Telerik.Pivot.Core.Filtering.Comparison.Equals
-	        condition.Than = "UK"
-	
-	        filter.Condition = condition
-	        '#End Region
-	        description.GroupFilter = filter
-	    End Sub
-	
-	    Private Sub PivotGridReportFiltering_Load(sender As Object, e As EventArgs) Handles Me.Load
-	        ' TODO: This line of code loads data into the 'nwindDataSet.Orders' table. You can move, or remove it, as needed.
-	        Me.ordersTableAdapter.Fill(Me.nwindDataSet.Orders)
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -99,14 +80,6 @@ Group filters can be applied to group descriptions by using their __GroupFilter_
 	        condition.Than = "UK"
 	
 	        filter.Condition = condition
-	        '#End Region
-	        description.GroupFilter = filter
-	    End Sub
-	
-	    Private Sub PivotGridReportFiltering_Load(sender As Object, e As EventArgs) Handles Me.Load
-	        ' TODO: This line of code loads data into the 'nwindDataSet.Orders' table. You can move, or remove it, as needed.
-	        Me.ordersTableAdapter.Fill(Me.nwindDataSet.Orders)
-	    End Sub
-	End Class
+	{{endregion}}
 
 

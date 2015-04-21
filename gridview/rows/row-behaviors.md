@@ -145,83 +145,7 @@ Let’s start with constructing a hierarchical __RadGridView__ and populate it w
 	        template.[ReadOnly] = False
 	        template.DataSource = subItems
 	    End Sub
-	    '#End Region
-	
-	    Protected Overrides Sub OnLoad(e As EventArgs)
-	        MyBase.OnLoad(e)
-	
-	        '#Region "RegisterBehavior"
-	
-	        'register the custom row  behavior
-	        Dim gridBehavior As BaseGridBehavior = TryCast(RadGridView1.GridBehavior, BaseGridBehavior)
-	        gridBehavior.UnregisterBehavior(GetType(GridViewHierarchyRowInfo))
-	        gridBehavior.RegisterBehavior(GetType(GridViewHierarchyRowInfo), New CustomGridHierarchyRowBehavior())
-	
-	        '#End Region
-	    End Sub
-	
-	    '#Region "ProcessDeleteKey"
-	
-	    Public Class CustomGridHierarchyRowBehavior
-	    Inherits GridHierarchyRowBehavior
-	        Protected Overrides Function ProcessDeleteKey(keys As KeyEventArgs) As Boolean
-	            If Me.GridControl.CurrentRow.ChildRows.Count > 0 Then
-	                Dim result As DialogResult = MessageBox.Show("The current row has child rows." & "Are you sure you want to delete the selected row?", "Confirmation", MessageBoxButtons.YesNo)
-	                If result = DialogResult.No Then
-	                    Return True
-	                End If
-	            End If
-	
-	            Return MyBase.ProcessDeleteKey(keys)
-	        End Function
-	
-	    End Class
-	
-	    '#End Region
-	
-	    Public Class DummyBehavior
-	    Inherits GridHierarchyRowBehavior
-	        '#Region "MouseDownLeft"
-	
-	        Protected Overrides Function OnMouseDownLeft(e As MouseEventArgs) As Boolean
-	            Dim cellElement As GridCellElement = Me.GetCellAtPoint(e.Location)
-	            If cellElement IsNot Nothing AndAlso TypeOf cellElement Is GridCheckBoxCellElement Then
-	                Dim rowElement As GridRowElement = cellElement.RowElement
-	                Me.Navigator.BeginSelection(Me.GetMouseNavigationContext(e))
-	                Me.Navigator.[Select](rowElement.RowInfo, cellElement.ColumnInfo)
-	                Me.Navigator.EndSelection()
-	
-	                If Not cellElement.IsInValidState(True) Then
-	                    cellElement = Me.GetCellAtPoint(e.Location)
-	                End If
-	                If cellElement IsNot Nothing Then
-	                    GridViewElement.ContextMenuManager.ShowContextMenu(cellElement)
-	                End If
-	                Return True
-	            End If
-	
-	            Return MyBase.OnMouseDownLeft(e)
-	        End Function
-	
-	        '#End Region
-	        
-	        '#Region "ProcessKey"
-	
-	        Public Overrides Function ProcessKey(keys__1 As KeyEventArgs) As Boolean
-	            If keys__1.KeyCode = Keys.Up OrElse keys__1.KeyCode = Keys.Down Then
-	                Dim rowView As DataRowView = TryCast(Me.GridControl.CurrentRow.DataBoundItem, DataRowView)
-	                If rowView IsNot Nothing AndAlso Me.GridControl.CurrentRow.ViewTemplate.Equals(Me.MasterTemplate) Then
-	                    If CBool(rowView.Row("IsActive")) = False Then
-	                        Return True
-	                    End If
-	                End If
-	            End If
-	            Return MyBase.ProcessKey(keys__1)
-	        End Function
-	
-	        '#End Region
-	    End Class
-	End Class
+	{{endregion}}
 
 
 
@@ -275,51 +199,7 @@ By default, when the user hits the __Delete__ key over a certain row, the row is
 	
 	    End Class
 	
-	    '#End Region
-	
-	    Public Class DummyBehavior
-	    Inherits GridHierarchyRowBehavior
-	        '#Region "MouseDownLeft"
-	
-	        Protected Overrides Function OnMouseDownLeft(e As MouseEventArgs) As Boolean
-	            Dim cellElement As GridCellElement = Me.GetCellAtPoint(e.Location)
-	            If cellElement IsNot Nothing AndAlso TypeOf cellElement Is GridCheckBoxCellElement Then
-	                Dim rowElement As GridRowElement = cellElement.RowElement
-	                Me.Navigator.BeginSelection(Me.GetMouseNavigationContext(e))
-	                Me.Navigator.[Select](rowElement.RowInfo, cellElement.ColumnInfo)
-	                Me.Navigator.EndSelection()
-	
-	                If Not cellElement.IsInValidState(True) Then
-	                    cellElement = Me.GetCellAtPoint(e.Location)
-	                End If
-	                If cellElement IsNot Nothing Then
-	                    GridViewElement.ContextMenuManager.ShowContextMenu(cellElement)
-	                End If
-	                Return True
-	            End If
-	
-	            Return MyBase.OnMouseDownLeft(e)
-	        End Function
-	
-	        '#End Region
-	        
-	        '#Region "ProcessKey"
-	
-	        Public Overrides Function ProcessKey(keys__1 As KeyEventArgs) As Boolean
-	            If keys__1.KeyCode = Keys.Up OrElse keys__1.KeyCode = Keys.Down Then
-	                Dim rowView As DataRowView = TryCast(Me.GridControl.CurrentRow.DataBoundItem, DataRowView)
-	                If rowView IsNot Nothing AndAlso Me.GridControl.CurrentRow.ViewTemplate.Equals(Me.MasterTemplate) Then
-	                    If CBool(rowView.Row("IsActive")) = False Then
-	                        Return True
-	                    End If
-	                End If
-	            End If
-	            Return MyBase.ProcessKey(keys__1)
-	        End Function
-	
-	        '#End Region
-	    End Class
-	End Class
+	{{endregion}}
 
 
 
@@ -347,71 +227,7 @@ Next we will register this behavior in our grid. Add the following code after po
 	        gridBehavior.UnregisterBehavior(GetType(GridViewHierarchyRowInfo))
 	        gridBehavior.RegisterBehavior(GetType(GridViewHierarchyRowInfo), New CustomGridHierarchyRowBehavior())
 	
-	        '#End Region
-	    End Sub
-	
-	    '#Region "ProcessDeleteKey"
-	
-	    Public Class CustomGridHierarchyRowBehavior
-	    Inherits GridHierarchyRowBehavior
-	        Protected Overrides Function ProcessDeleteKey(keys As KeyEventArgs) As Boolean
-	            If Me.GridControl.CurrentRow.ChildRows.Count > 0 Then
-	                Dim result As DialogResult = MessageBox.Show("The current row has child rows." & "Are you sure you want to delete the selected row?", "Confirmation", MessageBoxButtons.YesNo)
-	                If result = DialogResult.No Then
-	                    Return True
-	                End If
-	            End If
-	
-	            Return MyBase.ProcessDeleteKey(keys)
-	        End Function
-	
-	    End Class
-	
-	    '#End Region
-	
-	    Public Class DummyBehavior
-	    Inherits GridHierarchyRowBehavior
-	        '#Region "MouseDownLeft"
-	
-	        Protected Overrides Function OnMouseDownLeft(e As MouseEventArgs) As Boolean
-	            Dim cellElement As GridCellElement = Me.GetCellAtPoint(e.Location)
-	            If cellElement IsNot Nothing AndAlso TypeOf cellElement Is GridCheckBoxCellElement Then
-	                Dim rowElement As GridRowElement = cellElement.RowElement
-	                Me.Navigator.BeginSelection(Me.GetMouseNavigationContext(e))
-	                Me.Navigator.[Select](rowElement.RowInfo, cellElement.ColumnInfo)
-	                Me.Navigator.EndSelection()
-	
-	                If Not cellElement.IsInValidState(True) Then
-	                    cellElement = Me.GetCellAtPoint(e.Location)
-	                End If
-	                If cellElement IsNot Nothing Then
-	                    GridViewElement.ContextMenuManager.ShowContextMenu(cellElement)
-	                End If
-	                Return True
-	            End If
-	
-	            Return MyBase.OnMouseDownLeft(e)
-	        End Function
-	
-	        '#End Region
-	        
-	        '#Region "ProcessKey"
-	
-	        Public Overrides Function ProcessKey(keys__1 As KeyEventArgs) As Boolean
-	            If keys__1.KeyCode = Keys.Up OrElse keys__1.KeyCode = Keys.Down Then
-	                Dim rowView As DataRowView = TryCast(Me.GridControl.CurrentRow.DataBoundItem, DataRowView)
-	                If rowView IsNot Nothing AndAlso Me.GridControl.CurrentRow.ViewTemplate.Equals(Me.MasterTemplate) Then
-	                    If CBool(rowView.Row("IsActive")) = False Then
-	                        Return True
-	                    End If
-	                End If
-	            End If
-	            Return MyBase.ProcessKey(keys__1)
-	        End Function
-	
-	        '#End Region
-	    End Class
-	End Class
+	{{endregion}}
 
 
 
@@ -475,25 +291,7 @@ The next modification we are going to introduce is to override the __OnMouseDown
 	            Return MyBase.OnMouseDownLeft(e)
 	        End Function
 	
-	        '#End Region
-	        
-	        '#Region "ProcessKey"
-	
-	        Public Overrides Function ProcessKey(keys__1 As KeyEventArgs) As Boolean
-	            If keys__1.KeyCode = Keys.Up OrElse keys__1.KeyCode = Keys.Down Then
-	                Dim rowView As DataRowView = TryCast(Me.GridControl.CurrentRow.DataBoundItem, DataRowView)
-	                If rowView IsNot Nothing AndAlso Me.GridControl.CurrentRow.ViewTemplate.Equals(Me.MasterTemplate) Then
-	                    If CBool(rowView.Row("IsActive")) = False Then
-	                        Return True
-	                    End If
-	                End If
-	            End If
-	            Return MyBase.ProcessKey(keys__1)
-	        End Function
-	
-	        '#End Region
-	    End Class
-	End Class
+	{{endregion}}
 
 ![gridview-rows-row-behaviors 002](images/gridview-rows-row-behaviors002.png)
 
@@ -541,9 +339,7 @@ __RadGridView__ supports rows/cells navigation by default, using the arrow keys.
 	            Return MyBase.ProcessKey(keys__1)
 	        End Function
 	
-	        '#End Region
-	    End Class
-	End Class
+	{{endregion}}
 
 
 

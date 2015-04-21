@@ -38,29 +38,7 @@ All UILayers implement the __IUILayer__ interface. There is an abstract class, w
 
 {{source=..\SamplesVB\RichTextEditor\HowTo\UILayers.vb region=override}}
 	    Public Overrides Sub UpdateUIViewPortOverride(ByVal context As UILayerUpdateContext)
-	        '#End Region
-	
-	    End Sub
-	    '#Region "name"
-	    Public Overrides ReadOnly Property Name() As String
-	        Get
-	            Return Me.customLayerName
-	        End Get
-	    End Property
-	    '#End Region
-	    Private customLayerName As String
-	End Class
-	'#Region "builder"
-	Public Class CustomLayersBuilder
-	    Inherits UILayersBuilder
-	    '#End Region
-	    '#Region "build"
-	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-	        uiLayerContainer.UILayers.AddAfter(DefaultUILayers.HighlightDecoration, New CustomDecorationUILayerBase())
-	    End Sub
-	    '#End Region
-		End Class
-	
+	{{endregion}}
 
 
 
@@ -93,20 +71,7 @@ Last but not least, you should not forget to override the Name property of the l
 	            Return Me.customLayerName
 	        End Get
 	    End Property
-	    '#End Region
-	    Private customLayerName As String
-	End Class
-	'#Region "builder"
-	Public Class CustomLayersBuilder
-	    Inherits UILayersBuilder
-	    '#End Region
-	    '#Region "build"
-	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-	        uiLayerContainer.UILayers.AddAfter(DefaultUILayers.HighlightDecoration, New CustomDecorationUILayerBase())
-	    End Sub
-	    '#End Region
-		End Class
-	
+	{{endregion}}
 
 
 
@@ -125,14 +90,7 @@ After having implemented the logic of your custom UI layer, you can plug it in t
 {{source=..\SamplesVB\RichTextEditor\HowTo\UILayers.vb region=builder}}
 	Public Class CustomLayersBuilder
 	    Inherits UILayersBuilder
-	    '#End Region
-	    '#Region "build"
-	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-	        uiLayerContainer.UILayers.AddAfter(DefaultUILayers.HighlightDecoration, New CustomDecorationUILayerBase())
-	    End Sub
-	    '#End Region
-		End Class
-	
+	{{endregion}}
 
 
 
@@ -151,37 +109,7 @@ You can assign the new builder to specific instance of RadRichTextEditor like th
 
 {{source=..\SamplesVB\RichTextEditor\HowTo\UILayers.vb region=change}}
 	        Me.radRichTextEditor1.RichTextBoxElement.UILayersBuilder = New CustomLayersBuilder()
-	        '#End Region
-	    End Sub
-	End Class
-	Public Class CustomDecorationUILayerBase
-	    Inherits DecorationUILayerBase
-	
-	    '#Region "override"
-	    Public Overrides Sub UpdateUIViewPortOverride(ByVal context As UILayerUpdateContext)
-	        '#End Region
-	
-	    End Sub
-	    '#Region "name"
-	    Public Overrides ReadOnly Property Name() As String
-	        Get
-	            Return Me.customLayerName
-	        End Get
-	    End Property
-	    '#End Region
-	    Private customLayerName As String
-	End Class
-	'#Region "builder"
-	Public Class CustomLayersBuilder
-	    Inherits UILayersBuilder
-	    '#End Region
-	    '#Region "build"
-	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-	        uiLayerContainer.UILayers.AddAfter(DefaultUILayers.HighlightDecoration, New CustomDecorationUILayerBase())
-	    End Sub
-	    '#End Region
-		End Class
-	
+	{{endregion}}
 
 
 
@@ -204,8 +132,6 @@ All that is left is to specify the place of your layer, i.e. which layers should
 	    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
 	        uiLayerContainer.UILayers.AddAfter(DefaultUILayers.HighlightDecoration, New CustomDecorationUILayerBase())
 	    End Sub
-	    '#End Region
-		End Class
-	
+	{{endregion}}
 
 

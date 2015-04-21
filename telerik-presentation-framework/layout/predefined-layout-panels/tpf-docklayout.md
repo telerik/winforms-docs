@@ -46,57 +46,6 @@ The Dock of each element is set through the static method of DockLayoutPanel __S
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.vb region=snippet1}}
 	        Dim button As New RadButtonElement("button1")
 	        DockLayoutPanel.SetDock(button, Telerik.WinControls.Layouts.Dock.Left)
-	        '#End Region
-	
-	        '#Region "snippet2"
-	        Dim button1 As New RadButtonElement("button1")
-	        DockLayoutPanel.SetDock(button1, Telerik.WinControls.Layouts.Dock.Left)
-	
-	        Dim button2 As New RadButtonElement("button2")
-	        DockLayoutPanel.SetDock(button2, Telerik.WinControls.Layouts.Dock.Right)
-	
-	        Dim button3 As New RadButtonElement("button3")
-	        DockLayoutPanel.SetDock(button3, Telerik.WinControls.Layouts.Dock.Top)
-	
-	        Dim button4 As New RadButtonElement("button4")
-	        DockLayoutPanel.SetDock(button4, Telerik.WinControls.Layouts.Dock.Bottom)
-	        '#End Region
-	
-	        '#Region "snippet3"
-	        Dim dockPanel As New DockLayoutPanel()
-	        dockPanel.Children.Add(button1)
-	        dockPanel.Children.Add(button2)
-	        dockPanel.Children.Add(button3)
-	        dockPanel.Children.Add(button4)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub snippets()
-	        Dim button1 As New RadButtonElement("button1")
-	        Dim button2 As New RadButtonElement("button2")
-	        Dim button3 As New RadButtonElement("button3")
-	        Dim button4 As New RadButtonElement("button4")
-	
-	        '#Region "snippet4"
-	        Dim dockPanel As New DockLayoutPanel()
-	        dockPanel.Children.Add(button4)
-	        dockPanel.Children.Add(button3)
-	        dockPanel.Children.Add(button2)
-	        dockPanel.Children.Add(button1)
-	        '#End Region
-	    End Sub
-	
-	End Class
-	
-	'#region dockLayoutClass
-	Public Class MyDockLayoutPanelControl
-	    Inherits RadControl
-	
-	    Protected Overrides Sub CreateChildItems(parent As RadElement)
-	        MyBase.CreateChildItems(parent)
-	        parent.Children.Add(New MyDockLayoutPanelElement())
-	    End Sub
-	End Class
 	{{endregion}}
 
 
@@ -136,43 +85,6 @@ Essential for the final layout of the DockLayoutPanel is the sequence in which e
 	
 	        Dim button4 As New RadButtonElement("button4")
 	        DockLayoutPanel.SetDock(button4, Telerik.WinControls.Layouts.Dock.Bottom)
-	        '#End Region
-	
-	        '#Region "snippet3"
-	        Dim dockPanel As New DockLayoutPanel()
-	        dockPanel.Children.Add(button1)
-	        dockPanel.Children.Add(button2)
-	        dockPanel.Children.Add(button3)
-	        dockPanel.Children.Add(button4)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub snippets()
-	        Dim button1 As New RadButtonElement("button1")
-	        Dim button2 As New RadButtonElement("button2")
-	        Dim button3 As New RadButtonElement("button3")
-	        Dim button4 As New RadButtonElement("button4")
-	
-	        '#Region "snippet4"
-	        Dim dockPanel As New DockLayoutPanel()
-	        dockPanel.Children.Add(button4)
-	        dockPanel.Children.Add(button3)
-	        dockPanel.Children.Add(button2)
-	        dockPanel.Children.Add(button1)
-	        '#End Region
-	    End Sub
-	
-	End Class
-	
-	'#region dockLayoutClass
-	Public Class MyDockLayoutPanelControl
-	    Inherits RadControl
-	
-	    Protected Overrides Sub CreateChildItems(parent As RadElement)
-	        MyBase.CreateChildItems(parent)
-	        parent.Children.Add(New MyDockLayoutPanelElement())
-	    End Sub
-	End Class
 	{{endregion}}
 
 
@@ -199,35 +111,6 @@ Adding the above in the following order results in the layout below:
 	        dockPanel.Children.Add(button2)
 	        dockPanel.Children.Add(button3)
 	        dockPanel.Children.Add(button4)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub snippets()
-	        Dim button1 As New RadButtonElement("button1")
-	        Dim button2 As New RadButtonElement("button2")
-	        Dim button3 As New RadButtonElement("button3")
-	        Dim button4 As New RadButtonElement("button4")
-	
-	        '#Region "snippet4"
-	        Dim dockPanel As New DockLayoutPanel()
-	        dockPanel.Children.Add(button4)
-	        dockPanel.Children.Add(button3)
-	        dockPanel.Children.Add(button2)
-	        dockPanel.Children.Add(button1)
-	        '#End Region
-	    End Sub
-	
-	End Class
-	
-	'#region dockLayoutClass
-	Public Class MyDockLayoutPanelControl
-	    Inherits RadControl
-	
-	    Protected Overrides Sub CreateChildItems(parent As RadElement)
-	        MyBase.CreateChildItems(parent)
-	        parent.Children.Add(New MyDockLayoutPanelElement())
-	    End Sub
-	End Class
 	{{endregion}}
 
 
@@ -256,20 +139,6 @@ However, if the same elements are added in a reversed order, the outcome will be
 	        dockPanel.Children.Add(button3)
 	        dockPanel.Children.Add(button2)
 	        dockPanel.Children.Add(button1)
-	        '#End Region
-	    End Sub
-	
-	End Class
-	
-	'#region dockLayoutClass
-	Public Class MyDockLayoutPanelControl
-	    Inherits RadControl
-	
-	    Protected Overrides Sub CreateChildItems(parent As RadElement)
-	        MyBase.CreateChildItems(parent)
-	        parent.Children.Add(New MyDockLayoutPanelElement())
-	    End Sub
-	End Class
 	{{endregion}}
 
 

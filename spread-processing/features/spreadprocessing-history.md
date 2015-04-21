@@ -45,17 +45,7 @@ __Example 1__ enables the history of a workbook.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHistory.vb region=radspreadprocessing-features-history_2}}
 	        Dim workbook As New Workbook()
 	        workbook.History.IsEnabled = False
-	        '#End Region
-	    End Sub
-	
-	
-	    Public Shared Sub ClearHistory()
-	        '#Region radspreadprocessing-features-history_3
-	        Dim workbook As New Workbook()
-	        workbook.History.Clear()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -95,42 +85,7 @@ __Example 2__ creates a new workbook with a single worksheet and sets the value 
 	
 	        workbook.History.Undo()
 	        workbook.History.Redo()
-	        '#End Region
-	    End Sub
-	
-	    Public Shared Sub IterateCellsAndWorksheetsInWorkbookUndoGroup()
-	        '#Region radspreadprocessing-features-history_1
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        workbook.History.IsEnabled = True
-	
-	        workbook.History.BeginUndoGroup()
-	
-	        worksheet.Cells(0, 0).SetValue(15)
-	        worksheet.Cells(0, 0).SetFormat(New CellValueFormat("0.00"))
-	
-	        workbook.History.EndUndoGroup()
-	
-	        workbook.History.Undo()
-	        workbook.History.Redo()
-	        '#End Region
-	    End Sub
-	
-	    Public Shared Sub DisableHistory()
-	        '#Region radspreadprocessing-features-history_2
-	        Dim workbook As New Workbook()
-	        workbook.History.IsEnabled = False
-	        '#End Region
-	    End Sub
-	
-	
-	    Public Shared Sub ClearHistory()
-	        '#Region radspreadprocessing-features-history_3
-	        Dim workbook As New Workbook()
-	        workbook.History.Clear()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -178,24 +133,7 @@ __Example 3__ demonstrates how to create an undo group:
 	
 	        workbook.History.Undo()
 	        workbook.History.Redo()
-	        '#End Region
-	    End Sub
-	
-	    Public Shared Sub DisableHistory()
-	        '#Region radspreadprocessing-features-history_2
-	        Dim workbook As New Workbook()
-	        workbook.History.IsEnabled = False
-	        '#End Region
-	    End Sub
-	
-	
-	    Public Shared Sub ClearHistory()
-	        '#Region radspreadprocessing-features-history_3
-	        Dim workbook As New Workbook()
-	        workbook.History.Clear()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -221,8 +159,6 @@ __Example 4__ clears the history of a workbook.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHistory.vb region=radspreadprocessing-features-history_3}}
 	        Dim workbook As New Workbook()
 	        workbook.History.Clear()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

@@ -53,24 +53,7 @@ __Example 1__ shows how to use PdfFormatProvider to import a PDF document form a
 	        Using input As Stream = File.OpenRead("Sample.pdf")
 	            Dim document As RadFixedDocument = provider.Import(input)
 	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub Export()
-	        '	 #Region "radpdfprocessing-formats-and-conversion-pdf-pdfformatprovider_1"
-	        Dim provider As PdfFormatProvider = New PdfFormatProvider()
-	        Using output As Stream = File.OpenWrite("sample.pdf")
-	            Dim document As RadFixedDocument = CreateRadFixedDocument()
-	            provider.Export(document, output)
-	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Function CreateRadFixedDocument() As RadFixedDocument
-	        Throw New NotImplementedException()
-	    End Function
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -106,14 +89,7 @@ __Example 2__ shows how to use the __Export()__ method of PdfFormatProvider to e
 	            Dim document As RadFixedDocument = CreateRadFixedDocument()
 	            provider.Export(document, output)
 	        End Using
-	        '	 #End Region
-	    End Sub
-	
-	    Private Function CreateRadFixedDocument() As RadFixedDocument
-	        Throw New NotImplementedException()
-	    End Function
-	
-	End Class
+	{{endregion}}
 
 
 

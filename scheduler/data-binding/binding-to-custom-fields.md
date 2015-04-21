@@ -106,8 +106,6 @@ RadScheduler has full support for binding to custom fields i.e. RadScheduler can
 	    Public Function CreateNewAppointment() As IEvent Implements IAppointmentFactory.CreateNewAppointment
 	        Return New AppointmentWithEmail()
 	    End Function
-	#End Region
-	End Class
 	{{endregion}}
 
 

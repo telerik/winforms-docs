@@ -86,8 +86,7 @@ The purpose of the example that follows is to demonstrate how you can show diffe
 	            e.NodeElement.ImageElement.Image = file
 	        End If
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 

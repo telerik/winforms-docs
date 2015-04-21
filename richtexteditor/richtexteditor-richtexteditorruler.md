@@ -69,7 +69,6 @@ You can add the control in code as well. The following snippet demonstrates how 
 	        documentRuler1.Controls.Add(radRichTextEditor1)
 	        Me.Controls.Add(documentRuler1)
 	    End Sub
-	#End Region
-	End Class
+	{{endregion}}
 
 

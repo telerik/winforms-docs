@@ -147,25 +147,7 @@ This tutorial demonstrates how bind __RadDataEntry__ to business object and to a
 	            Female
 	            Male
 	        End Enum
-	#End Region
-	
-	        Public Sub New()
-	            InitializeComponent()
-	
-	            '#Region "bind1"
-	            Me.radDataEntry1.DataSource = New Employee() With { _
-	              .FirstName = "Sarah", _
-	              .LastName = "Blake", _
-	              .Occupation = "Supplied Manager", _
-	              .StartingDate = New DateTime(2005, 4, 12), _
-	              .IsMarried = True, _
-	              .Salary = 3500, _
-	              .Gender = Gender.Female _
-	             }
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -200,10 +182,7 @@ This tutorial demonstrates how bind __RadDataEntry__ to business object and to a
 	              .Salary = 3500, _
 	              .Gender = Gender.Female _
 	             }
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -293,18 +272,7 @@ The following tutorial will demonstrate how to bind __RadDataEntry__ to a collec
 	
 	            Me.bindingSource1.DataSource = employees
 	
-	            '#End Region
-	
-	            '#Region "bind3"
-	
-	            Me.radDataEntry1.DataSource = Me.bindingSource1
-	            Me.radBindingNavigator1.BindingSource = Me.bindingSource1
-	
-	            '#End Region
-	
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -329,11 +297,7 @@ The following tutorial will demonstrate how to bind __RadDataEntry__ to a collec
 	            Me.radDataEntry1.DataSource = Me.bindingSource1
 	            Me.radBindingNavigator1.BindingSource = Me.bindingSource1
 	
-	            '#End Region
-	
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 

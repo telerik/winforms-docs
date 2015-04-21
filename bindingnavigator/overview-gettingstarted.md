@@ -101,26 +101,7 @@ Adding a __RadBindingNavigator__ control to a form and binding it to a data sour
 	             8 _
 	            }
 	            Me.radBindingNavigator1.BindingSource = Me.bindingSource1
-	            '#End Region
-	
-	
-	            '#Region "custradBindingNavigator1"
-	
-	            Dim newButton As New CommandBarButton()
-	            newButton.Image = My.Resources.details_icon
-	            AddHandler newButton.Click, AddressOf newButton_Click
-	
-	            Me.radBindingNavigator1.Rows(0).Strips(1).Items.Add(New CommandBarSeparator())
-	            Me.radBindingNavigator1.Rows(0).Strips(1).Items.Add(newButton)
-	            '#End Region
-	
-	        End Sub
-	
-	        Private Sub newButton_Click(sender As Object, e As EventArgs)
-	
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 

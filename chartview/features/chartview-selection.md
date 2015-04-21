@@ -39,15 +39,7 @@ In order to utilize this behavior users simply have to add it to the
 	        RadChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint
 	        AddHandler RadChartView1.SelectedPointChanged, AddressOf RadChartView1_SelectedPointChanged
 	
-	        '#End Region
-	
-	        '#Region "selectionMode"
-	        radChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint
-	        radChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -69,10 +61,7 @@ The ChartSelectionController will be added automatically if the
 {{source=..\SamplesVB\ChartView\Features\ChartSelection.vb region=selectionMode}}
 	        radChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint
 	        radChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -177,22 +166,6 @@ Here is a sample using PieSeries and multiple selection. When a slice is selecte
 	            End If
 	        End If
 	    End Sub
-	#End Region
-	
-	    Private Sub snippets()
-	        '#Region "controller"
-	        RadChartView1.Controllers.Add(New ChartSelectionController())
-	        RadChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint
-	        AddHandler RadChartView1.SelectedPointChanged, AddressOf RadChartView1_SelectedPointChanged
-	
-	        '#End Region
-	
-	        '#Region "selectionMode"
-	        radChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint
-	        radChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 ![chartview-features-selection 001](images/chartview-features-selection001.png)

@@ -64,28 +64,6 @@ When the form is loaded the BackgroundWorker instance should be initialized. Add
 	        AddHandler myBackgroundWorker.DoWork, AddressOf myBackgroundWorker1_DoWork
 	        AddHandler myBackgroundWorker.RunWorkerCompleted, AddressOf myBackgroundWorker1_RunWorkerCompleted
 	    End Sub
-	    '#End Region
-	
-	    '#region workCompleted
-	    Private Sub myBackgroundWorker1_RunWorkerCompleted(ByVal sender As Object, ByVal e As RunWorkerCompletedEventArgs)
-	        Me.radWaitingBar1.StopWaiting()
-	        Me.radWaitingBar1.ResetWaiting()
-	        Me.radButton1.Enabled = True
-	        Me.radButton2.Enabled = False
-	        [end] = Date.Now
-	
-	        If (e.Cancelled = True) Then
-	            Me.radLabel1.Text = "Calculations are canceled!"
-	        ElseIf Not (e.Error Is Nothing) Then
-	            Me.radLabel1.Text = ("Error: " & e.Error.Message)
-	        Else
-	            Me.radLabel1.Text = "The " & Me.radSpinEditor1.Value.ToString() & "th member of the Fibonacci sequence is: " & e.Result.ToString()
-	            Dim span As New TimeSpan()
-	            span = [end].Subtract(begin)
-	
-	            Me.radLabel1.Text += vbLf & "Calculating time: " & span.TotalSeconds & " seconds"
-	        End If
-	    End Sub
 	{{endregion}}
 
 

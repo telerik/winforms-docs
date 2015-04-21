@@ -57,7 +57,6 @@ The static RadProperty __Register()__ method creates an instance of a RadPropert
 	            Me.SetValue(PhoneProperty, value)
 	        End Set
 	    End Property
-	#End Region
-	End Class
+	{{endregion}}
 
 

@@ -87,38 +87,6 @@ Here is the approach divided into separate steps:
 	
 	        AddHandler RadDateTimePicker1.ValueChanged, AddressOf radDateTimePicker1_ValueChanged
 	    End Sub
-	    '#End Region
-	
-	    '#region valueChanged
-	    Private suspendValueChanged As Boolean = False
-	
-	    Private Sub radDateTimePicker1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim dt As Date = Me.RadDateTimePicker1.Value
-	        Dim sp As TimeSpan = dt.Subtract(initialDateTime)
-	
-	        If Not suspendValueChanged Then
-	            Dim provider As MaskDateTimeProvider = (TryCast(Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider, MaskDateTimeProvider))
-	            If provider.List(provider.SelectedItemIndex).type = PartTypes.Minutes Then
-	                suspendValueChanged = True
-	
-	                If sp.Ticks < 0 Then
-	                    For i As Integer = 0 To 3
-	                        Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Down()
-	                    Next i
-	                End If
-	
-	                If sp.Ticks > 0 Then
-	                    For i As Integer = 0 To 3
-	                        Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Up()
-	                    Next i
-	                End If
-	
-	                initialDateTime = Me.RadDateTimePicker1.Value
-	
-	                suspendValueChanged = False
-	            End If
-	        End If
-	    End Sub
 	{{endregion}}
 
 

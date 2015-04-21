@@ -101,12 +101,7 @@ The __CaptionDefinition__ class contains viable information for the creation of 
 	        captionDefinition.NumberingFormat = NumberingFormat.Arabic
 	        captionDefinition.SeparatorType = CaptionSeparatorType.Colon
 	        Me.radRichTextEditor1.InsertCaption(captionDefinition, "captionText", True, True)
-	        '#End Region
-	        '#Region "insert2"
-	        Me.radRichTextEditor1.InsertCaption(Me.radRichTextEditor1.Document.CaptionDefinitions("Table"), "captionText", True, True)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -126,9 +121,7 @@ The __RadDocument__ contains the two default __CaptionDefinitions__ by default. 
 
 {{source=..\SamplesVB\RichTextEditor\Features\Caption.vb region=insert2}}
 	        Me.radRichTextEditor1.InsertCaption(Me.radRichTextEditor1.Document.CaptionDefinitions("Table"), "captionText", True, True)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

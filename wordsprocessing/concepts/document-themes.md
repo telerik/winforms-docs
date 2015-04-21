@@ -106,63 +106,7 @@ The following sample demonstrates how to create a __ThemeColorScheme__ object. N
 	            Colors.Gray, Colors.Green, Colors.LightGray, Colors.Magenta, Colors.Orange, Colors.Purple, _
 	            Colors.Red)
 	        ' followedHyperlink
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreateThemableColor()
-	        '#Region "radwordsprocessing-concepts-document-themes_1"
-	        Dim themableColor As New ThemableColor(ThemeColorType.Accent1)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreateFontScheme()
-	        '#Region "radwordsprocessing-concepts-document-themes_2"
-	        ' Major
-	        Dim fontScheme As New ThemeFontScheme("Mine", "Times New Roman", "Arial")
-	        ' Minor
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreatheThemableFontFamily()
-	        '#Region "radwordsprocessing-concepts-document-themes_3"
-	        Dim themableFont As New ThemableFontFamily(ThemeFontType.Major)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreatingTheme(colorScheme As ThemeColorScheme, fontScheme As ThemeFontScheme)
-	        '#Region "radwordsprocessing-concepts-document-themes_4"
-	        Dim theme As New DocumentTheme("Mine", colorScheme, fontScheme)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreatingThemeFromPredefinedColorandFontSchemes()
-	        '#Region "radwordsprocessing-concepts-document-themes_5"
-	        Dim theme1 As New DocumentTheme("From Predefined schemes", PredefinedThemeSchemes.ColorSchemes(0), PredefinedThemeSchemes.FontSchemes(5))
-	        '#End Region
-	    End Sub
-	
-	    Private Sub ChangingDocumentTheme(theme As DocumentTheme)
-	        '#Region "radwordsprocessing-concepts-document-themes_6"
-	        Dim document As New RadFlowDocument()
-	        document.Theme = theme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableColor(theme As DocumentTheme, themableColor As ThemableColor)
-	        '#Region "radwordsprocessing-concepts-document-themes_7"
-	        Dim actualColor As Color = themableColor.GetActualValue(theme)
-	        ' the actual color is the same as Accent1 color of the colorScheme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableFont(theme As DocumentTheme, themableFont As ThemableFontFamily)
-	        '#Region "radwordsprocessing-concepts-document-themes_8"
-	        Dim actualFont = themableFont.GetActualValue(theme)
-	
-	        ' the actualFont is the same as the Major font of the fontScheme
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -201,57 +145,7 @@ In order to create colors that depend on the current document theme, you need to
 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_1}}
 	        Dim themableColor As New ThemableColor(ThemeColorType.Accent1)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreateFontScheme()
-	        '#Region "radwordsprocessing-concepts-document-themes_2"
-	        ' Major
-	        Dim fontScheme As New ThemeFontScheme("Mine", "Times New Roman", "Arial")
-	        ' Minor
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreatheThemableFontFamily()
-	        '#Region "radwordsprocessing-concepts-document-themes_3"
-	        Dim themableFont As New ThemableFontFamily(ThemeFontType.Major)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreatingTheme(colorScheme As ThemeColorScheme, fontScheme As ThemeFontScheme)
-	        '#Region "radwordsprocessing-concepts-document-themes_4"
-	        Dim theme As New DocumentTheme("Mine", colorScheme, fontScheme)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreatingThemeFromPredefinedColorandFontSchemes()
-	        '#Region "radwordsprocessing-concepts-document-themes_5"
-	        Dim theme1 As New DocumentTheme("From Predefined schemes", PredefinedThemeSchemes.ColorSchemes(0), PredefinedThemeSchemes.FontSchemes(5))
-	        '#End Region
-	    End Sub
-	
-	    Private Sub ChangingDocumentTheme(theme As DocumentTheme)
-	        '#Region "radwordsprocessing-concepts-document-themes_6"
-	        Dim document As New RadFlowDocument()
-	        document.Theme = theme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableColor(theme As DocumentTheme, themableColor As ThemableColor)
-	        '#Region "radwordsprocessing-concepts-document-themes_7"
-	        Dim actualColor As Color = themableColor.GetActualValue(theme)
-	        ' the actual color is the same as Accent1 color of the colorScheme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableFont(theme As DocumentTheme, themableFont As ThemableFontFamily)
-	        '#Region "radwordsprocessing-concepts-document-themes_8"
-	        Dim actualFont = themableFont.GetActualValue(theme)
-	
-	        ' the actualFont is the same as the Major font of the fontScheme
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -287,49 +181,7 @@ The next snippet illustrates how to create a __ThemeFontScheme__ object. A name 
 	        ' Major
 	        Dim fontScheme As New ThemeFontScheme("Mine", "Times New Roman", "Arial")
 	        ' Minor
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreatheThemableFontFamily()
-	        '#Region "radwordsprocessing-concepts-document-themes_3"
-	        Dim themableFont As New ThemableFontFamily(ThemeFontType.Major)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreatingTheme(colorScheme As ThemeColorScheme, fontScheme As ThemeFontScheme)
-	        '#Region "radwordsprocessing-concepts-document-themes_4"
-	        Dim theme As New DocumentTheme("Mine", colorScheme, fontScheme)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreatingThemeFromPredefinedColorandFontSchemes()
-	        '#Region "radwordsprocessing-concepts-document-themes_5"
-	        Dim theme1 As New DocumentTheme("From Predefined schemes", PredefinedThemeSchemes.ColorSchemes(0), PredefinedThemeSchemes.FontSchemes(5))
-	        '#End Region
-	    End Sub
-	
-	    Private Sub ChangingDocumentTheme(theme As DocumentTheme)
-	        '#Region "radwordsprocessing-concepts-document-themes_6"
-	        Dim document As New RadFlowDocument()
-	        document.Theme = theme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableColor(theme As DocumentTheme, themableColor As ThemableColor)
-	        '#Region "radwordsprocessing-concepts-document-themes_7"
-	        Dim actualColor As Color = themableColor.GetActualValue(theme)
-	        ' the actual color is the same as Accent1 color of the colorScheme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableFont(theme As DocumentTheme, themableFont As ThemableFontFamily)
-	        '#Region "radwordsprocessing-concepts-document-themes_8"
-	        Dim actualFont = themableFont.GetActualValue(theme)
-	
-	        ' the actualFont is the same as the Major font of the fontScheme
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -361,43 +213,7 @@ When you need to create font that depends on the current document theme, you nee
 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_3}}
 	        Dim themableFont As New ThemableFontFamily(ThemeFontType.Major)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreatingTheme(colorScheme As ThemeColorScheme, fontScheme As ThemeFontScheme)
-	        '#Region "radwordsprocessing-concepts-document-themes_4"
-	        Dim theme As New DocumentTheme("Mine", colorScheme, fontScheme)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreatingThemeFromPredefinedColorandFontSchemes()
-	        '#Region "radwordsprocessing-concepts-document-themes_5"
-	        Dim theme1 As New DocumentTheme("From Predefined schemes", PredefinedThemeSchemes.ColorSchemes(0), PredefinedThemeSchemes.FontSchemes(5))
-	        '#End Region
-	    End Sub
-	
-	    Private Sub ChangingDocumentTheme(theme As DocumentTheme)
-	        '#Region "radwordsprocessing-concepts-document-themes_6"
-	        Dim document As New RadFlowDocument()
-	        document.Theme = theme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableColor(theme As DocumentTheme, themableColor As ThemableColor)
-	        '#Region "radwordsprocessing-concepts-document-themes_7"
-	        Dim actualColor As Color = themableColor.GetActualValue(theme)
-	        ' the actual color is the same as Accent1 color of the colorScheme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableFont(theme As DocumentTheme, themableFont As ThemableFontFamily)
-	        '#Region "radwordsprocessing-concepts-document-themes_8"
-	        Dim actualFont = themableFont.GetActualValue(theme)
-	
-	        ' the actualFont is the same as the Major font of the fontScheme
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -419,37 +235,7 @@ Now that you have a color and a font schemes, you can create a new __DocumentThe
 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_4}}
 	        Dim theme As New DocumentTheme("Mine", colorScheme, fontScheme)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub CreatingThemeFromPredefinedColorandFontSchemes()
-	        '#Region "radwordsprocessing-concepts-document-themes_5"
-	        Dim theme1 As New DocumentTheme("From Predefined schemes", PredefinedThemeSchemes.ColorSchemes(0), PredefinedThemeSchemes.FontSchemes(5))
-	        '#End Region
-	    End Sub
-	
-	    Private Sub ChangingDocumentTheme(theme As DocumentTheme)
-	        '#Region "radwordsprocessing-concepts-document-themes_6"
-	        Dim document As New RadFlowDocument()
-	        document.Theme = theme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableColor(theme As DocumentTheme, themableColor As ThemableColor)
-	        '#Region "radwordsprocessing-concepts-document-themes_7"
-	        Dim actualColor As Color = themableColor.GetActualValue(theme)
-	        ' the actual color is the same as Accent1 color of the colorScheme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableFont(theme As DocumentTheme, themableFont As ThemableFontFamily)
-	        '#Region "radwordsprocessing-concepts-document-themes_8"
-	        Dim actualFont = themableFont.GetActualValue(theme)
-	
-	        ' the actualFont is the same as the Major font of the fontScheme
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -470,31 +256,7 @@ There are a number of predefined color and font schemes. You can find them in a 
 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_5}}
 	        Dim theme1 As New DocumentTheme("From Predefined schemes", PredefinedThemeSchemes.ColorSchemes(0), PredefinedThemeSchemes.FontSchemes(5))
-	        '#End Region
-	    End Sub
-	
-	    Private Sub ChangingDocumentTheme(theme As DocumentTheme)
-	        '#Region "radwordsprocessing-concepts-document-themes_6"
-	        Dim document As New RadFlowDocument()
-	        document.Theme = theme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableColor(theme As DocumentTheme, themableColor As ThemableColor)
-	        '#Region "radwordsprocessing-concepts-document-themes_7"
-	        Dim actualColor As Color = themableColor.GetActualValue(theme)
-	        ' the actual color is the same as Accent1 color of the colorScheme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableFont(theme As DocumentTheme, themableFont As ThemableFontFamily)
-	        '#Region "radwordsprocessing-concepts-document-themes_8"
-	        Dim actualFont = themableFont.GetActualValue(theme)
-	
-	        ' the actualFont is the same as the Major font of the fontScheme
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -515,24 +277,7 @@ Changing the current document theme is as easy as setting a single property:
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_6}}
 	        Dim document As New RadFlowDocument()
 	        document.Theme = theme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableColor(theme As DocumentTheme, themableColor As ThemableColor)
-	        '#Region "radwordsprocessing-concepts-document-themes_7"
-	        Dim actualColor As Color = themableColor.GetActualValue(theme)
-	        ' the actual color is the same as Accent1 color of the colorScheme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableFont(theme As DocumentTheme, themableFont As ThemableFontFamily)
-	        '#Region "radwordsprocessing-concepts-document-themes_8"
-	        Dim actualFont = themableFont.GetActualValue(theme)
-	
-	        ' the actualFont is the same as the Major font of the fontScheme
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -566,17 +311,7 @@ In order to get the actual value from __ThemableColor__ or __ThemableFontFamily_
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_7}}
 	        Dim actualColor As Color = themableColor.GetActualValue(theme)
 	        ' the actual color is the same as Accent1 color of the colorScheme
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GettingActualValueFromThemableFont(theme As DocumentTheme, themableFont As ThemableFontFamily)
-	        '#Region "radwordsprocessing-concepts-document-themes_8"
-	        Dim actualFont = themableFont.GetActualValue(theme)
-	
-	        ' the actualFont is the same as the Major font of the fontScheme
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -586,9 +321,7 @@ In order to get the actual value from __ThemableColor__ or __ThemableFontFamily_
 	        Dim actualFont = themableFont.GetActualValue(theme)
 	
 	        ' the actualFont is the same as the Major font of the fontScheme
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

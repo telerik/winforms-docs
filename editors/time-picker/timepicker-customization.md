@@ -40,59 +40,6 @@ For example the editable area of the control consist of RadTextBoxItem hosted in
 {{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeTextBox}}
 	        RadTimePicker1.TimePickerElement.MaskedEditBox.Fill.BackColor = Color.Red
 	        RadTimePicker1.TimePickerElement.MaskedEditBox.TextBoxItem.BackColor = Color.Red
-	        '#End Region
-	
-	        '#Region "CustomizeDropDownButton"
-	        RadTimePicker1.TimePickerElement.DropDownButton.Padding = New Windows.Forms.Padding(10, 0, 10, 0)
-	        '#End Region
-	
-	        '#Region "CustomizeArrowButtons"
-	        RadTimePicker1.TimePickerElement.UpButton.Border.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.UpButton.Border.ForeColor = Color.Blue
-	        RadTimePicker1.TimePickerElement.DownButton.Border.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.DownButton.Border.ForeColor = Color.Blue
-	        '#End Region
-	
-	        '#Region "CustomizeClock"
-	        'customize header
-	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockHeaderElement.Font = New System.Drawing.Font("Arial", 22)
-	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockHeaderElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockHeaderElement.BackColor = Color.YellowGreen
-	        'hide seconds arrow
-	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockElement.SecondsArrow.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
-	        '#End Region
-	
-	        '#Region "CustomizeHoursAndMinutesHeaders"
-	        'hours header
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.TableHeader.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.TableHeader.BackColor = Color.Yellow
-	        'minutes header
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.DrawBorder = True
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderWidth = 3
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderColor = Color.Red
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        '#End Region
-	
-	        '#Region "CustomizeHoursAndMinutesTables"
-	        'hours table
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.DrawFill = True
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.BackColor = Color.Red
-	        'minutes table
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.DrawFill = True
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.BackColor = Color.Blue
-	        '#End Region
-	
-	        '#Region "CustomizeFooterPanel"
-	        RadTimePicker1.TimePickerElement.PopupContentElement.FooterPanel.BackColor = Color.BlanchedAlmond
-	        '#End Region
-	
-	        AddHandler RadTimePicker1.TimeCellFormatting, AddressOf radTimePicker1_TimeCellFormatting
-	
-	
-	        '#region settingTheLocalizationProvider
-	        RadTimePickerLocalizationProvider.CurrentProvider = New MyTimePickerLocalizationProvider()
 	{{endregion}}
 
 
@@ -116,55 +63,6 @@ Here is how you can set some left and right padding of the drop down button:
 
 {{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeDropDownButton}}
 	        RadTimePicker1.TimePickerElement.DropDownButton.Padding = New Windows.Forms.Padding(10, 0, 10, 0)
-	        '#End Region
-	
-	        '#Region "CustomizeArrowButtons"
-	        RadTimePicker1.TimePickerElement.UpButton.Border.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.UpButton.Border.ForeColor = Color.Blue
-	        RadTimePicker1.TimePickerElement.DownButton.Border.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.DownButton.Border.ForeColor = Color.Blue
-	        '#End Region
-	
-	        '#Region "CustomizeClock"
-	        'customize header
-	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockHeaderElement.Font = New System.Drawing.Font("Arial", 22)
-	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockHeaderElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockHeaderElement.BackColor = Color.YellowGreen
-	        'hide seconds arrow
-	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockElement.SecondsArrow.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
-	        '#End Region
-	
-	        '#Region "CustomizeHoursAndMinutesHeaders"
-	        'hours header
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.TableHeader.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.TableHeader.BackColor = Color.Yellow
-	        'minutes header
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.DrawBorder = True
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderWidth = 3
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderColor = Color.Red
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        '#End Region
-	
-	        '#Region "CustomizeHoursAndMinutesTables"
-	        'hours table
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.DrawFill = True
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.BackColor = Color.Red
-	        'minutes table
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.DrawFill = True
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.BackColor = Color.Blue
-	        '#End Region
-	
-	        '#Region "CustomizeFooterPanel"
-	        RadTimePicker1.TimePickerElement.PopupContentElement.FooterPanel.BackColor = Color.BlanchedAlmond
-	        '#End Region
-	
-	        AddHandler RadTimePicker1.TimeCellFormatting, AddressOf radTimePicker1_TimeCellFormatting
-	
-	
-	        '#region settingTheLocalizationProvider
-	        RadTimePickerLocalizationProvider.CurrentProvider = New MyTimePickerLocalizationProvider()
 	{{endregion}}
 
 
@@ -194,48 +92,6 @@ Here is how to access and set the border color of the arrow buttons:
 	        RadTimePicker1.TimePickerElement.UpButton.Border.ForeColor = Color.Blue
 	        RadTimePicker1.TimePickerElement.DownButton.Border.GradientStyle = Telerik.WinControls.GradientStyles.Solid
 	        RadTimePicker1.TimePickerElement.DownButton.Border.ForeColor = Color.Blue
-	        '#End Region
-	
-	        '#Region "CustomizeClock"
-	        'customize header
-	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockHeaderElement.Font = New System.Drawing.Font("Arial", 22)
-	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockHeaderElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockHeaderElement.BackColor = Color.YellowGreen
-	        'hide seconds arrow
-	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockElement.SecondsArrow.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
-	        '#End Region
-	
-	        '#Region "CustomizeHoursAndMinutesHeaders"
-	        'hours header
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.TableHeader.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.TableHeader.BackColor = Color.Yellow
-	        'minutes header
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.DrawBorder = True
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderWidth = 3
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderColor = Color.Red
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        '#End Region
-	
-	        '#Region "CustomizeHoursAndMinutesTables"
-	        'hours table
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.DrawFill = True
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.BackColor = Color.Red
-	        'minutes table
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.DrawFill = True
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.BackColor = Color.Blue
-	        '#End Region
-	
-	        '#Region "CustomizeFooterPanel"
-	        RadTimePicker1.TimePickerElement.PopupContentElement.FooterPanel.BackColor = Color.BlanchedAlmond
-	        '#End Region
-	
-	        AddHandler RadTimePicker1.TimeCellFormatting, AddressOf radTimePicker1_TimeCellFormatting
-	
-	
-	        '#region settingTheLocalizationProvider
-	        RadTimePickerLocalizationProvider.CurrentProvider = New MyTimePickerLocalizationProvider()
 	{{endregion}}
 
 
@@ -269,39 +125,6 @@ Here is how to change the clock header background and font and also how to hide 
 	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockHeaderElement.BackColor = Color.YellowGreen
 	        'hide seconds arrow
 	        RadTimePicker1.TimePickerElement.PopupContentElement.ClockElement.SecondsArrow.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
-	        '#End Region
-	
-	        '#Region "CustomizeHoursAndMinutesHeaders"
-	        'hours header
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.TableHeader.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.TableHeader.BackColor = Color.Yellow
-	        'minutes header
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.DrawBorder = True
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderWidth = 3
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderColor = Color.Red
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        '#End Region
-	
-	        '#Region "CustomizeHoursAndMinutesTables"
-	        'hours table
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.DrawFill = True
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.BackColor = Color.Red
-	        'minutes table
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.DrawFill = True
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.BackColor = Color.Blue
-	        '#End Region
-	
-	        '#Region "CustomizeFooterPanel"
-	        RadTimePicker1.TimePickerElement.PopupContentElement.FooterPanel.BackColor = Color.BlanchedAlmond
-	        '#End Region
-	
-	        AddHandler RadTimePicker1.TimeCellFormatting, AddressOf radTimePicker1_TimeCellFormatting
-	
-	
-	        '#region settingTheLocalizationProvider
-	        RadTimePickerLocalizationProvider.CurrentProvider = New MyTimePickerLocalizationProvider()
 	{{endregion}}
 
 
@@ -339,28 +162,6 @@ This code snippet demonstrates how to change the hours header back color and the
 	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderWidth = 3
 	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderColor = Color.Red
 	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.HeaderElement.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        '#End Region
-	
-	        '#Region "CustomizeHoursAndMinutesTables"
-	        'hours table
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.DrawFill = True
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.HoursTable.BackColor = Color.Red
-	        'minutes table
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.DrawFill = True
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.BackColor = Color.Blue
-	        '#End Region
-	
-	        '#Region "CustomizeFooterPanel"
-	        RadTimePicker1.TimePickerElement.PopupContentElement.FooterPanel.BackColor = Color.BlanchedAlmond
-	        '#End Region
-	
-	        AddHandler RadTimePicker1.TimeCellFormatting, AddressOf radTimePicker1_TimeCellFormatting
-	
-	
-	        '#region settingTheLocalizationProvider
-	        RadTimePickerLocalizationProvider.CurrentProvider = New MyTimePickerLocalizationProvider()
 	{{endregion}}
 
 
@@ -410,26 +211,6 @@ The cells in both minutes and hours tables are placed in a GridLayout. To custom
 	            e.Element.BackColor = Color.Green
 	        End If
 	    End Sub
-	    '#End Region
-	
-	    '#region LocalizationProvider
-	    Class MyTimePickerLocalizationProvider
-	        Inherits RadTimePickerLocalizationProvider
-	
-	        Public Overrides Function GetLocalizedString(id As String) As String
-	            Select Case id
-	                Case RadTimePickerStringId.HourHeaderText
-	                    Return "Hours"
-	                Case RadTimePickerStringId.MinutesHeaderText
-	                    Return "Minutes"
-	                Case RadTimePickerStringId.CloseButtonText
-	                    Return "Close"
-	                Case Else
-	                    Return String.Empty
-	            End Select
-	        End Function
-	
-	    End Class
 	{{endregion}}
 
 
@@ -467,17 +248,6 @@ This is how you can set the hours and minutes tables background color:
 	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.DrawFill = True
 	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.GradientStyle = Telerik.WinControls.GradientStyles.Solid
 	        RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.BackColor = Color.Blue
-	        '#End Region
-	
-	        '#Region "CustomizeFooterPanel"
-	        RadTimePicker1.TimePickerElement.PopupContentElement.FooterPanel.BackColor = Color.BlanchedAlmond
-	        '#End Region
-	
-	        AddHandler RadTimePicker1.TimeCellFormatting, AddressOf radTimePicker1_TimeCellFormatting
-	
-	
-	        '#region settingTheLocalizationProvider
-	        RadTimePickerLocalizationProvider.CurrentProvider = New MyTimePickerLocalizationProvider()
 	{{endregion}}
 
 
@@ -501,13 +271,6 @@ Here is how to change the BackColor of the FooterPanel:
 
 {{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeFooterPanel}}
 	        RadTimePicker1.TimePickerElement.PopupContentElement.FooterPanel.BackColor = Color.BlanchedAlmond
-	        '#End Region
-	
-	        AddHandler RadTimePicker1.TimeCellFormatting, AddressOf radTimePicker1_TimeCellFormatting
-	
-	
-	        '#region settingTheLocalizationProvider
-	        RadTimePickerLocalizationProvider.CurrentProvider = New MyTimePickerLocalizationProvider()
 	{{endregion}}
 
 

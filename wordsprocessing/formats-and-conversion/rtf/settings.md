@@ -47,9 +47,6 @@ The following code snippet shows how you can create and specify particular expor
 	            Dim exportSettings As New RtfExportSettings()
 	            exportSettings.ExportImagesInCompatibilityMode = True
 	            provider.ExportSettings = exportSettings
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 

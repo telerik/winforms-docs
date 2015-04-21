@@ -62,50 +62,7 @@ The __RowSelection__ class exposes __CanInsert()__ and __Insert()__ methods that
 	            Dim selection As RowSelection = worksheet.Rows(index, index + itemCount)
 	            selection.Insert()
 	        End If
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveRows()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_1
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim index As Integer = 2
-	        Dim itemCount As Integer = 3
-	
-	        Dim selection As RowSelection = worksheet.Rows(index, index + itemCount)
-	        selection.Remove()
-	        '#End Region
-	    End Sub
-	
-	    Public Sub InsertColumns()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_2
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim index As Integer = 2
-	        Dim itemCount As Integer = 3
-	
-	        If worksheet.Columns.CanInsert(index, itemCount) Then
-	            Dim selection As ColumnSelection = worksheet.Columns(index, index + itemCount)
-	            selection.Insert()
-	        End If
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveColumns()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_3
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim index As Integer = 2
-	        Dim itemCount As Integer = 3
-	
-	        Dim selection As ColumnSelection = worksheet.Columns(index, index + itemCount)
-	        selection.Remove()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -143,37 +100,7 @@ The __RowSelection__ class exposes a __Remove()__ method that performs the remov
 	
 	        Dim selection As RowSelection = worksheet.Rows(index, index + itemCount)
 	        selection.Remove()
-	        '#End Region
-	    End Sub
-	
-	    Public Sub InsertColumns()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_2
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim index As Integer = 2
-	        Dim itemCount As Integer = 3
-	
-	        If worksheet.Columns.CanInsert(index, itemCount) Then
-	            Dim selection As ColumnSelection = worksheet.Columns(index, index + itemCount)
-	            selection.Insert()
-	        End If
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveColumns()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_3
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim index As Integer = 2
-	        Dim itemCount As Integer = 3
-	
-	        Dim selection As ColumnSelection = worksheet.Columns(index, index + itemCount)
-	        selection.Remove()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -216,22 +143,7 @@ The __ColumnSelection__ class exposes __CanInsert()__ and __Insert()__ methods t
 	            Dim selection As ColumnSelection = worksheet.Columns(index, index + itemCount)
 	            selection.Insert()
 	        End If
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveColumns()
-	        '#Region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_3
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim index As Integer = 2
-	        Dim itemCount As Integer = 3
-	
-	        Dim selection As ColumnSelection = worksheet.Columns(index, index + itemCount)
-	        selection.Remove()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -269,8 +181,6 @@ The __ColumnSelection__ class exposes a __Remove()__ method that executes the re
 	
 	        Dim selection As ColumnSelection = worksheet.Columns(index, index + itemCount)
 	        selection.Remove()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

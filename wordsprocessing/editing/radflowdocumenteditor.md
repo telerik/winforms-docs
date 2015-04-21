@@ -44,126 +44,7 @@ __RadFlowDocumentEditor__ is always associated to a single document which it tak
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_0}}
 	            Dim document As New RadFlowDocument()
 	            Dim editor As New RadFlowDocumentEditor(document)
-	            '#End Region
-	        End Sub
-	
-	#If silverlight Then
-	        #Region "radwordsprocessing-editing-radflowdocumenteditor_1"
-	        Public Sub MoveToInlineStart(inline As InlineBase)
-	        End Sub
-	        Public Sub MoveToInlineEnd(inline As InlineBase)
-	        End Sub
-	        Public Sub MoveToParagraphStart(paragraph As Paragraph)
-	        End Sub
-	        Public Sub MoveToTableEnd(table As Table)
-	        End Sub
-	        #End Region
-	#End If
-	
-	        Private Sub MovePositonInEditor(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_2"
-	            Dim firstParagraph As Paragraph = document.EnumerateChildrenOfType(Of Paragraph)().First()
-	            editor.MoveToInlineEnd(firstParagraph.Inlines(1))
-	            '#End Region
-	        End Sub
-	
-	        Private Function CreateDocument() As RadFlowDocument
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_3"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	            editor.InsertText("Hello word!")
-	            Return editor.Document
-	            '#End Region
-	        End Function
-	
-	        Private Sub InsertRun(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_4"
-	            editor.InsertText("First" + Environment.NewLine + "Second")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertParagraph(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_5"
-	            editor.InsertText("First paragraph")
-	            editor.InsertParagraph()
-	            editor.InsertText("Second paragraph")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertHyperlink(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_6"
-	            editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertFieldInFragment(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_7"
-	            ' Create header and move the editor
-	            Dim header As Header = document.Sections(0).Headers.Add()
-	            editor.MoveToParagraphStart(header.Blocks.AddParagraph())
-	
-	            editor.InsertText("Page ")
-	            editor.InsertField("PAGE", "1")
-	            editor.InsertText(" of ")
-	            editor.InsertField("NUMPAGES", "1")
-	            '#End Region
-	        End Sub
-	
-	#If silverlight Then
-	        #Region "radwordsprocessing-editing-radflowdocumenteditor_8"
-	        Public Function InsertImageInline(source As ImageSource, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertImageInline(stream As Stream, extension As String, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertFloatingImage(source As ImageSource, size As Size) As FloatingImage
-	        End Function
-	        Public Function InsertFloatingImage(stream As Stream, extension As String, size As Size) As FloatingImage
-	        End Function
-	        #End Region
-	#End If
-	
-	        Private Sub InsertImage(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_9"
-	            editor.InsertText("Image:")
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertImageInline(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Sub ImsertTable(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_10"
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            editor.InsertText("Before table.")
-	            editor.InsertTable(2, 4)
-	            editor.InsertText("After table.")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertCodeSnippet(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_11"
-	            ' Set code block formatting
-	            Dim codeFont = New ThemableFontFamily(New FontFamily("Consolas"))
-	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont
-	            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0
-	
-	            editor.InsertLine("static void Main(string[] args)")
-	            editor.InsertLine("{")
-	            editor.InsertLine(" Console.WriteLine(""Hello World"");")
-	            editor.InsertLine("}")
-	            '#End Region
-	    End Sub
-	    Private Sub section(ByVal editor As RadFlowDocumentEditor)
-	        '#Region "section"
-	        editor.InsertSection()
-	        '#End Region
-	    End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -193,113 +74,7 @@ The editor maintains an internal position inside the document. This position poi
 	        End Sub
 	        Public Sub MoveToTableEnd(table As Table)
 	        End Sub
-	        #End Region
-	#End If
-	
-	        Private Sub MovePositonInEditor(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_2"
-	            Dim firstParagraph As Paragraph = document.EnumerateChildrenOfType(Of Paragraph)().First()
-	            editor.MoveToInlineEnd(firstParagraph.Inlines(1))
-	            '#End Region
-	        End Sub
-	
-	        Private Function CreateDocument() As RadFlowDocument
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_3"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	            editor.InsertText("Hello word!")
-	            Return editor.Document
-	            '#End Region
-	        End Function
-	
-	        Private Sub InsertRun(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_4"
-	            editor.InsertText("First" + Environment.NewLine + "Second")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertParagraph(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_5"
-	            editor.InsertText("First paragraph")
-	            editor.InsertParagraph()
-	            editor.InsertText("Second paragraph")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertHyperlink(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_6"
-	            editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertFieldInFragment(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_7"
-	            ' Create header and move the editor
-	            Dim header As Header = document.Sections(0).Headers.Add()
-	            editor.MoveToParagraphStart(header.Blocks.AddParagraph())
-	
-	            editor.InsertText("Page ")
-	            editor.InsertField("PAGE", "1")
-	            editor.InsertText(" of ")
-	            editor.InsertField("NUMPAGES", "1")
-	            '#End Region
-	        End Sub
-	
-	#If silverlight Then
-	        #Region "radwordsprocessing-editing-radflowdocumenteditor_8"
-	        Public Function InsertImageInline(source As ImageSource, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertImageInline(stream As Stream, extension As String, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertFloatingImage(source As ImageSource, size As Size) As FloatingImage
-	        End Function
-	        Public Function InsertFloatingImage(stream As Stream, extension As String, size As Size) As FloatingImage
-	        End Function
-	        #End Region
-	#End If
-	
-	        Private Sub InsertImage(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_9"
-	            editor.InsertText("Image:")
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertImageInline(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Sub ImsertTable(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_10"
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            editor.InsertText("Before table.")
-	            editor.InsertTable(2, 4)
-	            editor.InsertText("After table.")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertCodeSnippet(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_11"
-	            ' Set code block formatting
-	            Dim codeFont = New ThemableFontFamily(New FontFamily("Consolas"))
-	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont
-	            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0
-	
-	            editor.InsertLine("static void Main(string[] args)")
-	            editor.InsertLine("{")
-	            editor.InsertLine(" Console.WriteLine(""Hello World"");")
-	            editor.InsertLine("}")
-	            '#End Region
-	    End Sub
-	    Private Sub section(ByVal editor As RadFlowDocumentEditor)
-	        '#Region "section"
-	        editor.InsertSection()
-	        '#End Region
-	    End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -320,106 +95,7 @@ Here is an example of how to position the editor after the second inline in the 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_2}}
 	            Dim firstParagraph As Paragraph = document.EnumerateChildrenOfType(Of Paragraph)().First()
 	            editor.MoveToInlineEnd(firstParagraph.Inlines(1))
-	            '#End Region
-	        End Sub
-	
-	        Private Function CreateDocument() As RadFlowDocument
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_3"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	            editor.InsertText("Hello word!")
-	            Return editor.Document
-	            '#End Region
-	        End Function
-	
-	        Private Sub InsertRun(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_4"
-	            editor.InsertText("First" + Environment.NewLine + "Second")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertParagraph(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_5"
-	            editor.InsertText("First paragraph")
-	            editor.InsertParagraph()
-	            editor.InsertText("Second paragraph")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertHyperlink(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_6"
-	            editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertFieldInFragment(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_7"
-	            ' Create header and move the editor
-	            Dim header As Header = document.Sections(0).Headers.Add()
-	            editor.MoveToParagraphStart(header.Blocks.AddParagraph())
-	
-	            editor.InsertText("Page ")
-	            editor.InsertField("PAGE", "1")
-	            editor.InsertText(" of ")
-	            editor.InsertField("NUMPAGES", "1")
-	            '#End Region
-	        End Sub
-	
-	#If silverlight Then
-	        #Region "radwordsprocessing-editing-radflowdocumenteditor_8"
-	        Public Function InsertImageInline(source As ImageSource, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertImageInline(stream As Stream, extension As String, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertFloatingImage(source As ImageSource, size As Size) As FloatingImage
-	        End Function
-	        Public Function InsertFloatingImage(stream As Stream, extension As String, size As Size) As FloatingImage
-	        End Function
-	        #End Region
-	#End If
-	
-	        Private Sub InsertImage(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_9"
-	            editor.InsertText("Image:")
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertImageInline(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Sub ImsertTable(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_10"
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            editor.InsertText("Before table.")
-	            editor.InsertTable(2, 4)
-	            editor.InsertText("After table.")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertCodeSnippet(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_11"
-	            ' Set code block formatting
-	            Dim codeFont = New ThemableFontFamily(New FontFamily("Consolas"))
-	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont
-	            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0
-	
-	            editor.InsertLine("static void Main(string[] args)")
-	            editor.InsertLine("{")
-	            editor.InsertLine(" Console.WriteLine(""Hello World"");")
-	            editor.InsertLine("}")
-	            '#End Region
-	    End Sub
-	    Private Sub section(ByVal editor As RadFlowDocumentEditor)
-	        '#Region "section"
-	        editor.InsertSection()
-	        '#End Region
-	    End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -444,98 +120,7 @@ Note that it is possible to create a __RadFlowDocumentEditor__ for an empty docu
 	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	            editor.InsertText("Hello word!")
 	            Return editor.Document
-	            '#End Region
-	        End Function
-	
-	        Private Sub InsertRun(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_4"
-	            editor.InsertText("First" + Environment.NewLine + "Second")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertParagraph(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_5"
-	            editor.InsertText("First paragraph")
-	            editor.InsertParagraph()
-	            editor.InsertText("Second paragraph")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertHyperlink(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_6"
-	            editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertFieldInFragment(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_7"
-	            ' Create header and move the editor
-	            Dim header As Header = document.Sections(0).Headers.Add()
-	            editor.MoveToParagraphStart(header.Blocks.AddParagraph())
-	
-	            editor.InsertText("Page ")
-	            editor.InsertField("PAGE", "1")
-	            editor.InsertText(" of ")
-	            editor.InsertField("NUMPAGES", "1")
-	            '#End Region
-	        End Sub
-	
-	#If silverlight Then
-	        #Region "radwordsprocessing-editing-radflowdocumenteditor_8"
-	        Public Function InsertImageInline(source As ImageSource, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertImageInline(stream As Stream, extension As String, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertFloatingImage(source As ImageSource, size As Size) As FloatingImage
-	        End Function
-	        Public Function InsertFloatingImage(stream As Stream, extension As String, size As Size) As FloatingImage
-	        End Function
-	        #End Region
-	#End If
-	
-	        Private Sub InsertImage(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_9"
-	            editor.InsertText("Image:")
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertImageInline(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Sub ImsertTable(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_10"
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            editor.InsertText("Before table.")
-	            editor.InsertTable(2, 4)
-	            editor.InsertText("After table.")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertCodeSnippet(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_11"
-	            ' Set code block formatting
-	            Dim codeFont = New ThemableFontFamily(New FontFamily("Consolas"))
-	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont
-	            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0
-	
-	            editor.InsertLine("static void Main(string[] args)")
-	            editor.InsertLine("{")
-	            editor.InsertLine(" Console.WriteLine(""Hello World"");")
-	            editor.InsertLine("}")
-	            '#End Region
-	    End Sub
-	    Private Sub section(ByVal editor As RadFlowDocumentEditor)
-	        '#Region "section"
-	        editor.InsertSection()
-	        '#End Region
-	    End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -577,92 +162,7 @@ The next snippet insert a run containing a new line:
 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_4}}
 	            editor.InsertText("First" + Environment.NewLine + "Second")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertParagraph(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_5"
-	            editor.InsertText("First paragraph")
-	            editor.InsertParagraph()
-	            editor.InsertText("Second paragraph")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertHyperlink(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_6"
-	            editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertFieldInFragment(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_7"
-	            ' Create header and move the editor
-	            Dim header As Header = document.Sections(0).Headers.Add()
-	            editor.MoveToParagraphStart(header.Blocks.AddParagraph())
-	
-	            editor.InsertText("Page ")
-	            editor.InsertField("PAGE", "1")
-	            editor.InsertText(" of ")
-	            editor.InsertField("NUMPAGES", "1")
-	            '#End Region
-	        End Sub
-	
-	#If silverlight Then
-	        #Region "radwordsprocessing-editing-radflowdocumenteditor_8"
-	        Public Function InsertImageInline(source As ImageSource, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertImageInline(stream As Stream, extension As String, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertFloatingImage(source As ImageSource, size As Size) As FloatingImage
-	        End Function
-	        Public Function InsertFloatingImage(stream As Stream, extension As String, size As Size) As FloatingImage
-	        End Function
-	        #End Region
-	#End If
-	
-	        Private Sub InsertImage(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_9"
-	            editor.InsertText("Image:")
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertImageInline(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Sub ImsertTable(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_10"
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            editor.InsertText("Before table.")
-	            editor.InsertTable(2, 4)
-	            editor.InsertText("After table.")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertCodeSnippet(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_11"
-	            ' Set code block formatting
-	            Dim codeFont = New ThemableFontFamily(New FontFamily("Consolas"))
-	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont
-	            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0
-	
-	            editor.InsertLine("static void Main(string[] args)")
-	            editor.InsertLine("{")
-	            editor.InsertLine(" Console.WriteLine(""Hello World"");")
-	            editor.InsertLine("}")
-	            '#End Region
-	    End Sub
-	    Private Sub section(ByVal editor As RadFlowDocumentEditor)
-	        '#Region "section"
-	        editor.InsertSection()
-	        '#End Region
-	    End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -695,84 +195,7 @@ You can start a new [Paragraph]({%slug wordsprocessing-model-paragraph%}) with t
 	            editor.InsertText("First paragraph")
 	            editor.InsertParagraph()
 	            editor.InsertText("Second paragraph")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertHyperlink(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_6"
-	            editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertFieldInFragment(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_7"
-	            ' Create header and move the editor
-	            Dim header As Header = document.Sections(0).Headers.Add()
-	            editor.MoveToParagraphStart(header.Blocks.AddParagraph())
-	
-	            editor.InsertText("Page ")
-	            editor.InsertField("PAGE", "1")
-	            editor.InsertText(" of ")
-	            editor.InsertField("NUMPAGES", "1")
-	            '#End Region
-	        End Sub
-	
-	#If silverlight Then
-	        #Region "radwordsprocessing-editing-radflowdocumenteditor_8"
-	        Public Function InsertImageInline(source As ImageSource, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertImageInline(stream As Stream, extension As String, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertFloatingImage(source As ImageSource, size As Size) As FloatingImage
-	        End Function
-	        Public Function InsertFloatingImage(stream As Stream, extension As String, size As Size) As FloatingImage
-	        End Function
-	        #End Region
-	#End If
-	
-	        Private Sub InsertImage(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_9"
-	            editor.InsertText("Image:")
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertImageInline(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Sub ImsertTable(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_10"
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            editor.InsertText("Before table.")
-	            editor.InsertTable(2, 4)
-	            editor.InsertText("After table.")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertCodeSnippet(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_11"
-	            ' Set code block formatting
-	            Dim codeFont = New ThemableFontFamily(New FontFamily("Consolas"))
-	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont
-	            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0
-	
-	            editor.InsertLine("static void Main(string[] args)")
-	            editor.InsertLine("{")
-	            editor.InsertLine(" Console.WriteLine(""Hello World"");")
-	            editor.InsertLine("}")
-	            '#End Region
-	    End Sub
-	    Private Sub section(ByVal editor As RadFlowDocumentEditor)
-	        '#Region "section"
-	        editor.InsertSection()
-	        '#End Region
-	    End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -803,9 +226,7 @@ Inserting [Section]({%slug wordsprocessing-model-section%}) elements can be achi
 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=section}}
 	        editor.InsertSection()
-	        '#End Region
-	    End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -841,78 +262,7 @@ It automatically applies "Hyperlink" built-in style to the inserted hyperlink if
 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_6}}
 	            editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertFieldInFragment(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_7"
-	            ' Create header and move the editor
-	            Dim header As Header = document.Sections(0).Headers.Add()
-	            editor.MoveToParagraphStart(header.Blocks.AddParagraph())
-	
-	            editor.InsertText("Page ")
-	            editor.InsertField("PAGE", "1")
-	            editor.InsertText(" of ")
-	            editor.InsertField("NUMPAGES", "1")
-	            '#End Region
-	        End Sub
-	
-	#If silverlight Then
-	        #Region "radwordsprocessing-editing-radflowdocumenteditor_8"
-	        Public Function InsertImageInline(source As ImageSource, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertImageInline(stream As Stream, extension As String, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertFloatingImage(source As ImageSource, size As Size) As FloatingImage
-	        End Function
-	        Public Function InsertFloatingImage(stream As Stream, extension As String, size As Size) As FloatingImage
-	        End Function
-	        #End Region
-	#End If
-	
-	        Private Sub InsertImage(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_9"
-	            editor.InsertText("Image:")
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertImageInline(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Sub ImsertTable(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_10"
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            editor.InsertText("Before table.")
-	            editor.InsertTable(2, 4)
-	            editor.InsertText("After table.")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertCodeSnippet(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_11"
-	            ' Set code block formatting
-	            Dim codeFont = New ThemableFontFamily(New FontFamily("Consolas"))
-	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont
-	            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0
-	
-	            editor.InsertLine("static void Main(string[] args)")
-	            editor.InsertLine("{")
-	            editor.InsertLine(" Console.WriteLine(""Hello World"");")
-	            editor.InsertLine("}")
-	            '#End Region
-	    End Sub
-	    Private Sub section(ByVal editor As RadFlowDocumentEditor)
-	        '#Region "section"
-	        editor.InsertSection()
-	        '#End Region
-	    End Sub
-	    End Class
+	{{endregion}}
 
 ![wordsprocessing-editing-radflowdocumenteditor 003](images/wordsprocessing-editing-radflowdocumenteditor003.png)
 
@@ -952,65 +302,7 @@ Here is how to add page numbering in the header of document:
 	            editor.InsertField("PAGE", "1")
 	            editor.InsertText(" of ")
 	            editor.InsertField("NUMPAGES", "1")
-	            '#End Region
-	        End Sub
-	
-	#If silverlight Then
-	        #Region "radwordsprocessing-editing-radflowdocumenteditor_8"
-	        Public Function InsertImageInline(source As ImageSource, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertImageInline(stream As Stream, extension As String, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertFloatingImage(source As ImageSource, size As Size) As FloatingImage
-	        End Function
-	        Public Function InsertFloatingImage(stream As Stream, extension As String, size As Size) As FloatingImage
-	        End Function
-	        #End Region
-	#End If
-	
-	        Private Sub InsertImage(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_9"
-	            editor.InsertText("Image:")
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertImageInline(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Sub ImsertTable(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_10"
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            editor.InsertText("Before table.")
-	            editor.InsertTable(2, 4)
-	            editor.InsertText("After table.")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertCodeSnippet(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_11"
-	            ' Set code block formatting
-	            Dim codeFont = New ThemableFontFamily(New FontFamily("Consolas"))
-	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont
-	            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0
-	
-	            editor.InsertLine("static void Main(string[] args)")
-	            editor.InsertLine("{")
-	            editor.InsertLine(" Console.WriteLine(""Hello World"");")
-	            editor.InsertLine("}")
-	            '#End Region
-	    End Sub
-	    Private Sub section(ByVal editor As RadFlowDocumentEditor)
-	        '#Region "section"
-	        editor.InsertSection()
-	        '#End Region
-	    End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -1055,52 +347,7 @@ __RadFlowDocumentEditor__ provides several methods for inserting [ImageInline]({
 	        End Function
 	        Public Function InsertFloatingImage(stream As Stream, extension As String, size As Size) As FloatingImage
 	        End Function
-	        #End Region
-	#End If
-	
-	        Private Sub InsertImage(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_9"
-	            editor.InsertText("Image:")
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertImageInline(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Sub ImsertTable(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_10"
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            editor.InsertText("Before table.")
-	            editor.InsertTable(2, 4)
-	            editor.InsertText("After table.")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertCodeSnippet(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_11"
-	            ' Set code block formatting
-	            Dim codeFont = New ThemableFontFamily(New FontFamily("Consolas"))
-	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont
-	            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0
-	
-	            editor.InsertLine("static void Main(string[] args)")
-	            editor.InsertLine("{")
-	            editor.InsertLine(" Console.WriteLine(""Hello World"");")
-	            editor.InsertLine("}")
-	            '#End Region
-	    End Sub
-	    Private Sub section(ByVal editor As RadFlowDocumentEditor)
-	        '#Region "section"
-	        editor.InsertSection()
-	        '#End Region
-	    End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -1126,43 +373,7 @@ Here is how an image can be inserted using a stream:
 	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
 	                editor.InsertImageInline(stream, "png", New Size(118, 28))
 	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Sub ImsertTable(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_10"
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            editor.InsertText("Before table.")
-	            editor.InsertTable(2, 4)
-	            editor.InsertText("After table.")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertCodeSnippet(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_11"
-	            ' Set code block formatting
-	            Dim codeFont = New ThemableFontFamily(New FontFamily("Consolas"))
-	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont
-	            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0
-	
-	            editor.InsertLine("static void Main(string[] args)")
-	            editor.InsertLine("{")
-	            editor.InsertLine(" Console.WriteLine(""Hello World"");")
-	            editor.InsertLine("}")
-	            '#End Region
-	    End Sub
-	    Private Sub section(ByVal editor As RadFlowDocumentEditor)
-	        '#Region "section"
-	        editor.InsertSection()
-	        '#End Region
-	    End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -1210,28 +421,7 @@ Here is how to insert a table with the "TableGrid" built-in style:
 	            editor.InsertText("Before table.")
 	            editor.InsertTable(2, 4)
 	            editor.InsertText("After table.")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertCodeSnippet(editor As RadFlowDocumentEditor)
-	            '#Region "radwordsprocessing-editing-radflowdocumenteditor_11"
-	            ' Set code block formatting
-	            Dim codeFont = New ThemableFontFamily(New FontFamily("Consolas"))
-	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont
-	            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0
-	
-	            editor.InsertLine("static void Main(string[] args)")
-	            editor.InsertLine("{")
-	            editor.InsertLine(" Console.WriteLine(""Hello World"");")
-	            editor.InsertLine("}")
-	            '#End Region
-	    End Sub
-	    Private Sub section(ByVal editor As RadFlowDocumentEditor)
-	        '#Region "section"
-	        editor.InsertSection()
-	        '#End Region
-	    End Sub
-	    End Class
+	{{endregion}}
 
 ![wordsprocessing-editing-radflowdocumenteditor 006](images/wordsprocessing-editing-radflowdocumenteditor006.png)
 
@@ -1285,14 +475,7 @@ Formatting options are most useful when inserting multiple elements that should 
 	            editor.InsertLine("{")
 	            editor.InsertLine(" Console.WriteLine(""Hello World"");")
 	            editor.InsertLine("}")
-	            '#End Region
-	    End Sub
-	    Private Sub section(ByVal editor As RadFlowDocumentEditor)
-	        '#Region "section"
-	        editor.InsertSection()
-	        '#End Region
-	    End Sub
-	    End Class
+	{{endregion}}
 
 ![wordsprocessing-editing-radflowdocumenteditor 007](images/wordsprocessing-editing-radflowdocumenteditor007.png)
 

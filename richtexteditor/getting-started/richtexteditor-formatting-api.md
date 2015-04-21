@@ -49,8 +49,7 @@ Here is an example of a toggle button that upon checking should make the selecti
 	        Me.radRichTextEditor.ToggleBold()
 	    End Sub
 	
-	    #End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -84,46 +83,7 @@ The following example inserts the word "text" at the CaretPosition.
 	
 	        Me.radRichTextEditor.Insert("text")
 	
-	        '#End Region
-	
-	        Dim togglebutton As New RadToggleButton()
-	        AddHandler togglebutton.Click, AddressOf Me.togglebutton_Click
-	
-	        Dim fragment As New DocumentFragment(Me.radRichTextEditor.Document)
-	
-	        '#Region "fragment"
-	
-	        Me.radRichTextEditor.InsertFragment(fragment)
-	
-	        '#End Region
-	
-	        '#Region "insert1"
-	
-	        Dim fragmentFromDocument As New DocumentFragment(Me.radRichTextEditor.Document)
-	
-	        '#End Region
-	
-	        '#Region "selection"
-	
-	        Dim fragmentFromSelection As DocumentFragment = Me.radRichTextEditor.Document.Selection.CopySelectedDocumentElements()
-	
-	        '#End Region
-	
-	        '#Region "readonly"
-	
-	        Me.radRichTextEditor.IsReadOnly = True
-	
-	        '#End Region
-	    End Sub
-	
-	    #Region "bold"
-	
-	    Private Sub togglebutton_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        Me.radRichTextEditor.ToggleBold()
-	    End Sub
-	
-	    #End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -157,35 +117,7 @@ Both approaches can be used to insert content at the caret position with the __I
 	
 	        Me.radRichTextEditor.InsertFragment(fragment)
 	
-	        '#End Region
-	
-	        '#Region "insert1"
-	
-	        Dim fragmentFromDocument As New DocumentFragment(Me.radRichTextEditor.Document)
-	
-	        '#End Region
-	
-	        '#Region "selection"
-	
-	        Dim fragmentFromSelection As DocumentFragment = Me.radRichTextEditor.Document.Selection.CopySelectedDocumentElements()
-	
-	        '#End Region
-	
-	        '#Region "readonly"
-	
-	        Me.radRichTextEditor.IsReadOnly = True
-	
-	        '#End Region
-	    End Sub
-	
-	    #Region "bold"
-	
-	    Private Sub togglebutton_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        Me.radRichTextEditor.ToggleBold()
-	    End Sub
-	
-	    #End Region
-	End Class
+	{{endregion}}
 
 Using the constructor of DocumentFragment
 
@@ -209,29 +141,7 @@ If you create a fragment in this way, it will end with a new paragraph. This is 
 	
 	        Dim fragmentFromDocument As New DocumentFragment(Me.radRichTextEditor.Document)
 	
-	        '#End Region
-	
-	        '#Region "selection"
-	
-	        Dim fragmentFromSelection As DocumentFragment = Me.radRichTextEditor.Document.Selection.CopySelectedDocumentElements()
-	
-	        '#End Region
-	
-	        '#Region "readonly"
-	
-	        Me.radRichTextEditor.IsReadOnly = True
-	
-	        '#End Region
-	    End Sub
-	
-	    #Region "bold"
-	
-	    Private Sub togglebutton_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        Me.radRichTextEditor.ToggleBold()
-	    End Sub
-	
-	    #End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -257,23 +167,7 @@ If you choose to use the document selection when creating a __DocumentFragment__
 	
 	        Dim fragmentFromSelection As DocumentFragment = Me.radRichTextEditor.Document.Selection.CopySelectedDocumentElements()
 	
-	        '#End Region
-	
-	        '#Region "readonly"
-	
-	        Me.radRichTextEditor.IsReadOnly = True
-	
-	        '#End Region
-	    End Sub
-	
-	    #Region "bold"
-	
-	    Private Sub togglebutton_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        Me.radRichTextEditor.ToggleBold()
-	    End Sub
-	
-	    #End Region
-	End Class
+	{{endregion}}
 
 
 

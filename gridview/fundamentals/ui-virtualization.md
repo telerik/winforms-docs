@@ -100,26 +100,7 @@ Here is a quick sample:
 	        cell.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local)
 	        cell.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local)
 	    End Sub
-	    '#End Region
-	
-	    Private Sub StyleCells()
-	        CType(New Telerik.WinControls.RadControlSpy.RadControlSpyForm(), Telerik.WinControls.RadControlSpy.RadControlSpyForm).Show()
-	
-	        '#Region "uiVirtStyle"
-	        For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
-	            If Me.radGridView1.Rows(i).Cells("KBytes").Value IsNot Nothing Then
-	                If CDec(Me.radGridView1.Rows(i).Cells("KBytes").Value) > 30 Then
-	                    Me.radGridView1.Rows(i).Cells("Picture Name").Style.CustomizeFill = True
-	                    Me.radGridView1.Rows(i).Cells("Picture Name").Style.CustomizeBorder = True
-	                    Me.radGridView1.Rows(i).Cells("Picture Name").Style.BackColor = Color.Red
-	                    Me.radGridView1.Rows(i).Cells("Picture Name").Style.BorderGradientStyle = GradientStyles.Solid
-	                    Me.radGridView1.Rows(i).Cells("Picture Name").Style.BorderBoxStyle = BorderBoxStyle.SingleBorder
-	                End If
-	            End If
-	        Next i
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![gridview-fundamentals-ui-virtualization 001](images/gridview-fundamentals-ui-virtualization001.png)
 
@@ -167,9 +148,7 @@ Here is a quick sample:
 	                End If
 	            End If
 	        Next i
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![gridview-fundamentals-ui-virtualization 002](images/gridview-fundamentals-ui-virtualization002.png)
 

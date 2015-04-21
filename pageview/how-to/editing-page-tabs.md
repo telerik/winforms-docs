@@ -51,38 +51,7 @@ The sample code demonstrates how to start editing:
 	        'this will start edit operation on the selected page tab
 	        RadPageView1.ViewElement.BeginEdit()
 	
-	        '#End Region
-	
-	        '#Region "Edit"
-	        RadPageView1.ViewElement.AllowEdit = True
-	        AddHandler RadPageView1.ViewElement.EditorInitialized, AddressOf ViewElement_EditorInitialized
-	        '#End Region
-	    End Sub
-	
-	    '#Region "EditContinuation"
-	    Private pageText As String
-	    Private Sub ViewElement_EditorInitialized(ByVal sender As Object, ByVal e As RadPageViewEditorEventArgs)
-	        AddHandler radPageView1.ViewElement.ActiveEditor.Validating, AddressOf ActiveEditor_Validating
-	        AddHandler radPageView1.ViewElement.ActiveEditor.Validated, AddressOf ActiveEditor_Validated
-	        pageText = e.Value.ToString()
-	    End Sub
-	
-	    Private Sub ActiveEditor_Validating(ByVal sender As Object, ByVal e As CancelEventArgs)
-	        Dim editor As RadPageViewElement.PageViewItemTextEditor = TryCast(sender, RadPageViewElement.PageViewItemTextEditor)
-	
-	        If editor IsNot Nothing AndAlso radPageView1.ViewElement.ActiveEditor.Value = String.Empty Then
-	            e.Cancel = True
-	            editor.Value = pageText
-	            RadMessageBox.Show("Page label can't be empty!", "Error", MessageBoxButtons.OK, RadMessageIcon.Error)
-	        End If
-	    End Sub
-	
-	    Private Sub ActiveEditor_Validated(ByVal sender As Object, ByVal e As EventArgs)
-	        RadMessageBox.Show("Page label has been successfully updated!", "Information", MessageBoxButtons.OK, RadMessageIcon.Info)
-	        Me.radPageView1.Cursor = Cursors.Arrow
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 ![pageview-how-to-editing-radpageviewelement 001](images/pageview-how-to-editing-radpageviewelement001.png)
 
@@ -125,33 +94,7 @@ The sample code below demonstrates how to forbid the user to clear the text in t
 {{source=..\SamplesVB\PageView\EditingRadPageViewElement\EditingRadPageViewElement.vb region=Edit}}
 	        RadPageView1.ViewElement.AllowEdit = True
 	        AddHandler RadPageView1.ViewElement.EditorInitialized, AddressOf ViewElement_EditorInitialized
-	        '#End Region
-	    End Sub
-	
-	    '#Region "EditContinuation"
-	    Private pageText As String
-	    Private Sub ViewElement_EditorInitialized(ByVal sender As Object, ByVal e As RadPageViewEditorEventArgs)
-	        AddHandler radPageView1.ViewElement.ActiveEditor.Validating, AddressOf ActiveEditor_Validating
-	        AddHandler radPageView1.ViewElement.ActiveEditor.Validated, AddressOf ActiveEditor_Validated
-	        pageText = e.Value.ToString()
-	    End Sub
-	
-	    Private Sub ActiveEditor_Validating(ByVal sender As Object, ByVal e As CancelEventArgs)
-	        Dim editor As RadPageViewElement.PageViewItemTextEditor = TryCast(sender, RadPageViewElement.PageViewItemTextEditor)
-	
-	        If editor IsNot Nothing AndAlso radPageView1.ViewElement.ActiveEditor.Value = String.Empty Then
-	            e.Cancel = True
-	            editor.Value = pageText
-	            RadMessageBox.Show("Page label can't be empty!", "Error", MessageBoxButtons.OK, RadMessageIcon.Error)
-	        End If
-	    End Sub
-	
-	    Private Sub ActiveEditor_Validated(ByVal sender As Object, ByVal e As EventArgs)
-	        RadMessageBox.Show("Page label has been successfully updated!", "Information", MessageBoxButtons.OK, RadMessageIcon.Info)
-	        Me.radPageView1.Cursor = Cursors.Arrow
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -213,7 +156,6 @@ The sample code below demonstrates how to forbid the user to clear the text in t
 	        RadMessageBox.Show("Page label has been successfully updated!", "Information", MessageBoxButtons.OK, RadMessageIcon.Info)
 	        Me.radPageView1.Cursor = Cursors.Arrow
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 ![pageview-how-to-editing-radpageviewelement 002](images/pageview-how-to-editing-radpageviewelement002.png)![pageview-how-to-editing-radpageviewelement 003](images/pageview-how-to-editing-radpageviewelement003.png)

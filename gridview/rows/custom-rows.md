@@ -54,75 +54,7 @@ Consider the __RadGridView__ is populated with data form Northwind.Products tabl
 	        Me.RadGridView1.DataSource = Me.NwindDataSet.Products
 	        Me.RadGridView1.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill
 	    End Sub
-	    '#End Region
-	
-	    '#Region "RowElement"
-	
-	    Public Class CustomGridRowElement
-	        Inherits GridRowElement
-	        Private cellElement As GridCellElement
-	        Private radChartElement As RadChartElement
-	
-	        Public Sub New()
-	        End Sub
-	
-	        Protected Overrides Sub CreateChildElements()
-	            MyBase.CreateChildElements()
-	            Me.cellElement = New GridCellElement(Nothing, Me)
-	            Me.cellElement.StretchHorizontally = True
-	            Me.cellElement.StretchVertically = True
-	            Me.Children.Add(cellElement)
-	
-	            Me.radChartElement = New RadChartElement()
-	
-	            Dim series As New LineSeries()
-	
-	            Me.radChartElement.View.ShowSmartLabels = True
-	            Me.radChartElement.ShowLegend = True
-	            Me.radChartElement.View.Series.Add(series)
-	
-	            Me.cellElement.Children.Add(Me.radChartElement)
-	            Me.cellElement.ClipDrawing = True
-	
-	            series.CategoryMember = "CategoryID"
-	            series.ValueMember = "UnitPrice"
-	            series.DataSource = DataSource
-	        End Sub
-	
-	        Public Overrides Function IsCompatible(data As GridViewRowInfo, context As Object) As Boolean
-	            Return TypeOf data Is CustomGridViewRowInfo
-	        End Function
-	    End Class
-	
-	    '#End Region
-	
-	    '#Region "RowInfo"
-	
-	    Public Class CustomGridViewRowInfo
-	        Inherits GridViewNewRowInfo
-	        Public Sub New(viewInfo As GridViewInfo)
-	            MyBase.New(viewInfo)
-	        End Sub
-	
-	        Public Overrides ReadOnly Property RowElementType() As Type
-	            Get
-	                Return GetType(CustomGridRowElement)
-	            End Get
-	        End Property
-	    End Class
-	
-	    '#End Region
-	
-	    '#Region "ReplaceRow"
-	
-	    Private Sub radGridView1_CreateRowInfo(sender As Object, e As GridViewCreateRowInfoEventArgs) Handles RadGridView1.CreateRowInfo
-	        If TypeOf e.RowInfo Is GridViewNewRowInfo Then
-	            e.RowInfo = New CustomGridViewRowInfo(e.ViewInfo)
-	        End If
-	    End Sub
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -221,35 +153,7 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 	        End Function
 	    End Class
 	
-	    '#End Region
-	
-	    '#Region "RowInfo"
-	
-	    Public Class CustomGridViewRowInfo
-	        Inherits GridViewNewRowInfo
-	        Public Sub New(viewInfo As GridViewInfo)
-	            MyBase.New(viewInfo)
-	        End Sub
-	
-	        Public Overrides ReadOnly Property RowElementType() As Type
-	            Get
-	                Return GetType(CustomGridRowElement)
-	            End Get
-	        End Property
-	    End Class
-	
-	    '#End Region
-	
-	    '#Region "ReplaceRow"
-	
-	    Private Sub radGridView1_CreateRowInfo(sender As Object, e As GridViewCreateRowInfoEventArgs) Handles RadGridView1.CreateRowInfo
-	        If TypeOf e.RowInfo Is GridViewNewRowInfo Then
-	            e.RowInfo = New CustomGridViewRowInfo(e.ViewInfo)
-	        End If
-	    End Sub
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -296,18 +200,7 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 	        End Property
 	    End Class
 	
-	    '#End Region
-	
-	    '#Region "ReplaceRow"
-	
-	    Private Sub radGridView1_CreateRowInfo(sender As Object, e As GridViewCreateRowInfoEventArgs) Handles RadGridView1.CreateRowInfo
-	        If TypeOf e.RowInfo Is GridViewNewRowInfo Then
-	            e.RowInfo = New CustomGridViewRowInfo(e.ViewInfo)
-	        End If
-	    End Sub
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -341,7 +234,6 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 	        End If
 	    End Sub
 	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 

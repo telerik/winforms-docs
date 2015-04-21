@@ -44,12 +44,7 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 	    Private radRichTextBox1 As New RadRichTextBox()
 	    'new
 	    Private radRichTextEditor1 As New RadRichTextEditor()
-	#End Region
-	    Public Sub New()
-	
-	        InitializeComponent()
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -91,39 +86,7 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 	
 	        radRichTextEditor1.ShowInsertHyperlinkDialog()
 	
-	        '#End Region
-	
-	        '#Region "insertBookmark"
-	
-	        radRichTextEditor1.ShowInsertHyperlinkDialog()
-	
-	        '#End Region
-	
-	        Dim stream As Stream = New FileStream("", FileMode.Create)
-	        Dim extension As String = "jpg"
-	
-	        '#Region "insertImage"
-	
-	        radRichTextEditor1.InsertImage(stream, extension)
-	
-	        '#End Region
-	
-	        '#Region "insertTable"
-	        radRichTextEditor1.ShowInsertTableDialog()
-	
-	        '#End Region
-	
-	    End Sub
-	End Class
-	
-	
-	'=======================================================
-	'Service provided by Telerik (www.telerik.com)
-	'Conversion powered by NRefactory.
-	'Twitter: @telerik
-	'Facebook: facebook.com/telerik
-	'=======================================================
-	
+	{{endregion}}
 
 
 
@@ -146,33 +109,7 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 	
 	        radRichTextEditor1.ShowInsertHyperlinkDialog()
 	
-	        '#End Region
-	
-	        Dim stream As Stream = New FileStream("", FileMode.Create)
-	        Dim extension As String = "jpg"
-	
-	        '#Region "insertImage"
-	
-	        radRichTextEditor1.InsertImage(stream, extension)
-	
-	        '#End Region
-	
-	        '#Region "insertTable"
-	        radRichTextEditor1.ShowInsertTableDialog()
-	
-	        '#End Region
-	
-	    End Sub
-	End Class
-	
-	
-	'=======================================================
-	'Service provided by Telerik (www.telerik.com)
-	'Conversion powered by NRefactory.
-	'Twitter: @telerik
-	'Facebook: facebook.com/telerik
-	'=======================================================
-	
+	{{endregion}}
 
 
 
@@ -194,24 +131,7 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 	
 	        radRichTextEditor1.InsertImage(stream, extension)
 	
-	        '#End Region
-	
-	        '#Region "insertTable"
-	        radRichTextEditor1.ShowInsertTableDialog()
-	
-	        '#End Region
-	
-	    End Sub
-	End Class
-	
-	
-	'=======================================================
-	'Service provided by Telerik (www.telerik.com)
-	'Conversion powered by NRefactory.
-	'Twitter: @telerik
-	'Facebook: facebook.com/telerik
-	'=======================================================
-	
+	{{endregion}}
 
 
 
@@ -232,19 +152,7 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 {{source=..\SamplesVB\RichTextEditor\ConvertToRadRichTextEditor.vb region=insertTable}}
 	        radRichTextEditor1.ShowInsertTableDialog()
 	
-	        '#End Region
-	
-	    End Sub
-	End Class
-	
-	
-	'=======================================================
-	'Service provided by Telerik (www.telerik.com)
-	'Conversion powered by NRefactory.
-	'Twitter: @telerik
-	'Facebook: facebook.com/telerik
-	'=======================================================
-	
+	{{endregion}}
 
 
 

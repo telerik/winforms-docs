@@ -68,47 +68,6 @@ __RadTreeView__ the supports option trees that allows radio buttons and
 	        RadTreeView1.Nodes.Add(Node2)
 	        Node1.Nodes.Add(Node3)
 	        Node1.Nodes.Add(Node4)
-	        '#End Region
-	    End Sub
-	
-	    '#Region doubleClick
-	    Private Sub radTreeView1_DoubleClick(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim args As MouseEventArgs = TryCast(e, MouseEventArgs)
-	        Dim clickedNode As RadTreeNode = RadTreeView1.GetNodeAt(args.X, args.Y)
-	        If clickedNode IsNot Nothing Then
-	            MessageBox.Show("Node Text: " & clickedNode.Text & "  Node Value: " & clickedNode.Tag)
-	        End If
-	    End Sub
-	    '#End Region
-	
-	    '#Region addNodes
-	    Private Sub AddNodes()
-	        Dim Node1 As New RadTreeNode("Node1")
-	        Node1.Tag = 1234
-	        Node1.BackColor = Color.Blue
-	        Dim Node2 As New RadTreeNode("Node2")
-	        Dim Node3 As New RadTreeNode("Node3")
-	        Dim Node4 As New RadTreeNode("Node4")
-	        RadTreeView1.Nodes.Add(Node1)
-	        RadTreeView1.Nodes.Add(Node2)
-	        Node1.Nodes.Add(Node3)
-	        Node2.Nodes.Add(Node4)
-	        'Alternative methods for adding nodes
-	        'RadTreeNode Node1 = radTreeView1.Nodes.Add("Node1");
-	        'RadTreeNode Node2 = radTreeView1.Nodes.Add("Node2");
-	        'Node1.Nodes.Add("Node3");
-	        'Node2.Nodes.Add("Node4");
-	    End Sub
-	    '#End Region
-	
-	    '#Region removeNodes
-	    Private Sub RemoveNodes()
-	        'Remove a single node
-	        RadTreeView1.Nodes(0).Remove()
-	        ' removes all nodes from TreeView
-	        RadTreeView1.Nodes.Clear()
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 

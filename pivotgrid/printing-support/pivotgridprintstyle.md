@@ -42,67 +42,7 @@ You can modify the default font of the different cell types by using the followi
 	        Me.radPivotGrid1.PrintStyle.DecriptorsFont = New Font("Segoe UI Light", 9, FontStyle.Regular)
 	        Me.radPivotGrid1.PrintStyle.SubTotalCellsFont = New Font("Segoe UI Light", 8, FontStyle.Italic)
 	        Me.radPivotGrid1.PrintStyle.GrandTotalCellsFont = New Font("Segoe UI Light", 8, FontStyle.Italic Or FontStyle.Bold)
-	        '#End Region
-	
-	        '#Region "PrintStyleColor"
-	        Me.radPivotGrid1.PrintStyle.CellBackColor = Color.Wheat
-	        Me.radPivotGrid1.PrintStyle.HeadersBackColor = Color.Gray
-	        Me.radPivotGrid1.PrintStyle.DescriptorsBackColor = Color.Yellow
-	        Me.radPivotGrid1.PrintStyle.SubTotalsBackColor = Color.LightBlue
-	        Me.radPivotGrid1.PrintStyle.GrandTotalsBackColor = Color.Blue
-	        '#End Region
-	
-	        '#Region "ScaleMode"
-	        Me.radPivotGrid1.PrintStyle.ScaleMode = Telerik.WinControls.UI.PivotPrintScaleMode.FitAll
-	        '#End Region
-	
-	        '#Region "PageOrder"
-	        Me.radPivotGrid1.PrintStyle.PageOrder = Telerik.WinControls.UI.PivotGridPrintPageOrder.DownThenOver
-	        '#End Region
-	
-	        '#Region "Layout"
-	        Me.radPivotGrid1.PrintStyle.LayoutType = Telerik.WinControls.UI.PivotLayout.Compact
-	        Me.radPivotGrid1.PrintStyle.ComactLayoutIndent = 20
-	        '#End Region
-	
-	        '#Region "PrintSelection"
-	        Me.radPivotGrid1.PrintStyle.PrintSelectionOnly = True
-	        '#End Region
-	
-	        AddHandler Me.radPivotGrid1.PrintElementFormatting, AddressOf radPivotGrid1_PrintElementFormatting
-	        AddHandler Me.radPivotGrid1.PrintElementPaint, AddressOf radPivotGrid1_PrintElementPaint
-	
-	    End Sub
-	
-	#Region "Formatting"
-	    Private Sub radPivotGrid1_PrintElementFormatting(sender As Object, e As Telerik.WinControls.UI.PrintElementEventArgs)
-	        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
-	        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) < 100 Then
-	            cell.BackColor = Color.Red
-	        End If
-	
-	        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) > 500 Then
-	            cell.BackColor = Color.Green
-	        End If
-	    End Sub
-	
-	    Private Sub radPivotGrid1_PrintElementPaint(sender As Object, e As PrintElementPaintEventArgs)
-	        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
-	        If cell IsNot Nothing AndAlso cell.Value Is Nothing Then
-	            Dim b As Brush = New HatchBrush(HatchStyle.BackwardDiagonal, Color.LightGray, Color.Transparent)
-	            e.Graphics.FillRectangle(b, e.Bounds)
-	        End If
-	    End Sub
-	#End Region
-	
-	    Private Sub PivotGridPrinting_Load(sender As Object, e As EventArgs) Handles Me.Load
-	        ' TODO: This line of code loads data into the 'nwindDataSet.Orders' table. You can move, or remove it, as needed.
-	        Me.ordersTableAdapter.Fill(Me.nwindDataSet.Orders)
-	
-	    End Sub
-	
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -129,59 +69,7 @@ Similarly, you can modify the background color for the different cell types:
 	        Me.radPivotGrid1.PrintStyle.DescriptorsBackColor = Color.Yellow
 	        Me.radPivotGrid1.PrintStyle.SubTotalsBackColor = Color.LightBlue
 	        Me.radPivotGrid1.PrintStyle.GrandTotalsBackColor = Color.Blue
-	        '#End Region
-	
-	        '#Region "ScaleMode"
-	        Me.radPivotGrid1.PrintStyle.ScaleMode = Telerik.WinControls.UI.PivotPrintScaleMode.FitAll
-	        '#End Region
-	
-	        '#Region "PageOrder"
-	        Me.radPivotGrid1.PrintStyle.PageOrder = Telerik.WinControls.UI.PivotGridPrintPageOrder.DownThenOver
-	        '#End Region
-	
-	        '#Region "Layout"
-	        Me.radPivotGrid1.PrintStyle.LayoutType = Telerik.WinControls.UI.PivotLayout.Compact
-	        Me.radPivotGrid1.PrintStyle.ComactLayoutIndent = 20
-	        '#End Region
-	
-	        '#Region "PrintSelection"
-	        Me.radPivotGrid1.PrintStyle.PrintSelectionOnly = True
-	        '#End Region
-	
-	        AddHandler Me.radPivotGrid1.PrintElementFormatting, AddressOf radPivotGrid1_PrintElementFormatting
-	        AddHandler Me.radPivotGrid1.PrintElementPaint, AddressOf radPivotGrid1_PrintElementPaint
-	
-	    End Sub
-	
-	#Region "Formatting"
-	    Private Sub radPivotGrid1_PrintElementFormatting(sender As Object, e As Telerik.WinControls.UI.PrintElementEventArgs)
-	        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
-	        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) < 100 Then
-	            cell.BackColor = Color.Red
-	        End If
-	
-	        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) > 500 Then
-	            cell.BackColor = Color.Green
-	        End If
-	    End Sub
-	
-	    Private Sub radPivotGrid1_PrintElementPaint(sender As Object, e As PrintElementPaintEventArgs)
-	        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
-	        If cell IsNot Nothing AndAlso cell.Value Is Nothing Then
-	            Dim b As Brush = New HatchBrush(HatchStyle.BackwardDiagonal, Color.LightGray, Color.Transparent)
-	            e.Graphics.FillRectangle(b, e.Bounds)
-	        End If
-	    End Sub
-	#End Region
-	
-	    Private Sub PivotGridPrinting_Load(sender As Object, e As EventArgs) Handles Me.Load
-	        ' TODO: This line of code loads data into the 'nwindDataSet.Orders' table. You can move, or remove it, as needed.
-	        Me.ordersTableAdapter.Fill(Me.nwindDataSet.Orders)
-	
-	    End Sub
-	
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -201,55 +89,7 @@ Sometimes the reports generated by RadPivotGrid can be larger than a single page
 
 {{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=ScaleMode}}
 	        Me.radPivotGrid1.PrintStyle.ScaleMode = Telerik.WinControls.UI.PivotPrintScaleMode.FitAll
-	        '#End Region
-	
-	        '#Region "PageOrder"
-	        Me.radPivotGrid1.PrintStyle.PageOrder = Telerik.WinControls.UI.PivotGridPrintPageOrder.DownThenOver
-	        '#End Region
-	
-	        '#Region "Layout"
-	        Me.radPivotGrid1.PrintStyle.LayoutType = Telerik.WinControls.UI.PivotLayout.Compact
-	        Me.radPivotGrid1.PrintStyle.ComactLayoutIndent = 20
-	        '#End Region
-	
-	        '#Region "PrintSelection"
-	        Me.radPivotGrid1.PrintStyle.PrintSelectionOnly = True
-	        '#End Region
-	
-	        AddHandler Me.radPivotGrid1.PrintElementFormatting, AddressOf radPivotGrid1_PrintElementFormatting
-	        AddHandler Me.radPivotGrid1.PrintElementPaint, AddressOf radPivotGrid1_PrintElementPaint
-	
-	    End Sub
-	
-	#Region "Formatting"
-	    Private Sub radPivotGrid1_PrintElementFormatting(sender As Object, e As Telerik.WinControls.UI.PrintElementEventArgs)
-	        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
-	        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) < 100 Then
-	            cell.BackColor = Color.Red
-	        End If
-	
-	        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) > 500 Then
-	            cell.BackColor = Color.Green
-	        End If
-	    End Sub
-	
-	    Private Sub radPivotGrid1_PrintElementPaint(sender As Object, e As PrintElementPaintEventArgs)
-	        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
-	        If cell IsNot Nothing AndAlso cell.Value Is Nothing Then
-	            Dim b As Brush = New HatchBrush(HatchStyle.BackwardDiagonal, Color.LightGray, Color.Transparent)
-	            e.Graphics.FillRectangle(b, e.Bounds)
-	        End If
-	    End Sub
-	#End Region
-	
-	    Private Sub PivotGridPrinting_Load(sender As Object, e As EventArgs) Handles Me.Load
-	        ' TODO: This line of code loads data into the 'nwindDataSet.Orders' table. You can move, or remove it, as needed.
-	        Me.ordersTableAdapter.Fill(Me.nwindDataSet.Orders)
-	
-	    End Sub
-	
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -268,51 +108,7 @@ If you do not want to scale the report, you can choose the order in which pages 
 
 {{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=PageOrder}}
 	        Me.radPivotGrid1.PrintStyle.PageOrder = Telerik.WinControls.UI.PivotGridPrintPageOrder.DownThenOver
-	        '#End Region
-	
-	        '#Region "Layout"
-	        Me.radPivotGrid1.PrintStyle.LayoutType = Telerik.WinControls.UI.PivotLayout.Compact
-	        Me.radPivotGrid1.PrintStyle.ComactLayoutIndent = 20
-	        '#End Region
-	
-	        '#Region "PrintSelection"
-	        Me.radPivotGrid1.PrintStyle.PrintSelectionOnly = True
-	        '#End Region
-	
-	        AddHandler Me.radPivotGrid1.PrintElementFormatting, AddressOf radPivotGrid1_PrintElementFormatting
-	        AddHandler Me.radPivotGrid1.PrintElementPaint, AddressOf radPivotGrid1_PrintElementPaint
-	
-	    End Sub
-	
-	#Region "Formatting"
-	    Private Sub radPivotGrid1_PrintElementFormatting(sender As Object, e As Telerik.WinControls.UI.PrintElementEventArgs)
-	        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
-	        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) < 100 Then
-	            cell.BackColor = Color.Red
-	        End If
-	
-	        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) > 500 Then
-	            cell.BackColor = Color.Green
-	        End If
-	    End Sub
-	
-	    Private Sub radPivotGrid1_PrintElementPaint(sender As Object, e As PrintElementPaintEventArgs)
-	        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
-	        If cell IsNot Nothing AndAlso cell.Value Is Nothing Then
-	            Dim b As Brush = New HatchBrush(HatchStyle.BackwardDiagonal, Color.LightGray, Color.Transparent)
-	            e.Graphics.FillRectangle(b, e.Bounds)
-	        End If
-	    End Sub
-	#End Region
-	
-	    Private Sub PivotGridPrinting_Load(sender As Object, e As EventArgs) Handles Me.Load
-	        ' TODO: This line of code loads data into the 'nwindDataSet.Orders' table. You can move, or remove it, as needed.
-	        Me.ordersTableAdapter.Fill(Me.nwindDataSet.Orders)
-	
-	    End Sub
-	
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -333,46 +129,7 @@ To save some spaces, you can enable __CompactLayout__ mode for the printed pages
 {{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=Layout}}
 	        Me.radPivotGrid1.PrintStyle.LayoutType = Telerik.WinControls.UI.PivotLayout.Compact
 	        Me.radPivotGrid1.PrintStyle.ComactLayoutIndent = 20
-	        '#End Region
-	
-	        '#Region "PrintSelection"
-	        Me.radPivotGrid1.PrintStyle.PrintSelectionOnly = True
-	        '#End Region
-	
-	        AddHandler Me.radPivotGrid1.PrintElementFormatting, AddressOf radPivotGrid1_PrintElementFormatting
-	        AddHandler Me.radPivotGrid1.PrintElementPaint, AddressOf radPivotGrid1_PrintElementPaint
-	
-	    End Sub
-	
-	#Region "Formatting"
-	    Private Sub radPivotGrid1_PrintElementFormatting(sender As Object, e As Telerik.WinControls.UI.PrintElementEventArgs)
-	        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
-	        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) < 100 Then
-	            cell.BackColor = Color.Red
-	        End If
-	
-	        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) > 500 Then
-	            cell.BackColor = Color.Green
-	        End If
-	    End Sub
-	
-	    Private Sub radPivotGrid1_PrintElementPaint(sender As Object, e As PrintElementPaintEventArgs)
-	        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
-	        If cell IsNot Nothing AndAlso cell.Value Is Nothing Then
-	            Dim b As Brush = New HatchBrush(HatchStyle.BackwardDiagonal, Color.LightGray, Color.Transparent)
-	            e.Graphics.FillRectangle(b, e.Bounds)
-	        End If
-	    End Sub
-	#End Region
-	
-	    Private Sub PivotGridPrinting_Load(sender As Object, e As EventArgs) Handles Me.Load
-	        ' TODO: This line of code loads data into the 'nwindDataSet.Orders' table. You can move, or remove it, as needed.
-	        Me.ordersTableAdapter.Fill(Me.nwindDataSet.Orders)
-	
-	    End Sub
-	
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -392,41 +149,6 @@ Additionally, if you do not want to print the entire report but only the selecte
 
 {{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=PrintSelection}}
 	        Me.radPivotGrid1.PrintStyle.PrintSelectionOnly = True
-	        '#End Region
-	
-	        AddHandler Me.radPivotGrid1.PrintElementFormatting, AddressOf radPivotGrid1_PrintElementFormatting
-	        AddHandler Me.radPivotGrid1.PrintElementPaint, AddressOf radPivotGrid1_PrintElementPaint
-	
-	    End Sub
-	
-	#Region "Formatting"
-	    Private Sub radPivotGrid1_PrintElementFormatting(sender As Object, e As Telerik.WinControls.UI.PrintElementEventArgs)
-	        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
-	        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) < 100 Then
-	            cell.BackColor = Color.Red
-	        End If
-	
-	        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) > 500 Then
-	            cell.BackColor = Color.Green
-	        End If
-	    End Sub
-	
-	    Private Sub radPivotGrid1_PrintElementPaint(sender As Object, e As PrintElementPaintEventArgs)
-	        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
-	        If cell IsNot Nothing AndAlso cell.Value Is Nothing Then
-	            Dim b As Brush = New HatchBrush(HatchStyle.BackwardDiagonal, Color.LightGray, Color.Transparent)
-	            e.Graphics.FillRectangle(b, e.Bounds)
-	        End If
-	    End Sub
-	#End Region
-	
-	    Private Sub PivotGridPrinting_Load(sender As Object, e As EventArgs) Handles Me.Load
-	        ' TODO: This line of code loads data into the 'nwindDataSet.Orders' table. You can move, or remove it, as needed.
-	        Me.ordersTableAdapter.Fill(Me.nwindDataSet.Orders)
-	
-	    End Sub
-	
-	
-	End Class
+	{{endregion}}
 
 

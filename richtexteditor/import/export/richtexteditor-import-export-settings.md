@@ -156,52 +156,7 @@ __HtmlExportSettings__ provide the following options:
 	        htmlExportSettings.PropertiesToIgnore("td").Add("padding")
 	        htmlExportSettings.PropertiesToIgnore("td").Add("vertical-align")
 	
-	        '#End Region
-	
-	        AddHandler Me.Load, AddressOf Settings_Load
-	    End Sub
-	#Region "rtf"
-	    Private Sub Settings_Load(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim rtfFormatProvider As RtfFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("rtf"), RtfFormatProvider)
-	        Dim rtfImportSettings As New RtfImportSettings()
-	        AddHandler rtfImportSettings.FontSubstituting, AddressOf rtfImportSettings_FontSubstituting
-	        rtfFormatProvider.ImportSettings = rtfImportSettings
-	    End Sub
-	
-	    Public Sub rtfImportSettings_FontSubstituting(ByVal sender As Object, ByVal e As FontSubstitutingEventArgs)
-	        If e.OriginalFontName.Equals("Cambria") Then
-	            e.SubstitutionFontFamily = New FontFamily("Calibri")
-	        End If
-	    End Sub
-	#End Region
-	
-	#Region "setup"
-	
-	    Public Sub SetupDefaultHtmlFormatProvider()
-	        'Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
-	        Dim htmlFormatProvider As HtmlFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("html"), HtmlFormatProvider)
-	
-	        Dim htmlExportSettings As New HtmlExportSettings()
-	        htmlExportSettings.DocumentExportLevel = DocumentExportLevel.Fragment
-	        htmlExportSettings.StylesExportMode = StylesExportMode.Inline
-	        htmlExportSettings.StyleRepositoryExportMode = StyleRepositoryExportMode.DontExportStyles
-	        htmlExportSettings.ExportFontStylesAsTags = True
-	
-	        htmlFormatProvider.ExportSettings = htmlExportSettings
-	    End Sub
-	
-	#End Region
-	#Region "docx"
-	    Public Sub SetupDefaultDocxFormatProvider()
-	        'Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
-	        Dim docxFormatProvider As DocxFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("docx"), DocxFormatProvider)
-	        Dim docxExportSettings As New DocxExportSettings()
-	        docxExportSettings.FieldResultMode = FieldDisplayMode.DisplayName
-	
-	        docxFormatProvider.ExportSettings = docxExportSettings
-	    End Sub
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -261,18 +216,7 @@ Here are some examples for using the settings in code-behind:
 	        htmlFormatProvider.ExportSettings = htmlExportSettings
 	    End Sub
 	
-	#End Region
-	#Region "docx"
-	    Public Sub SetupDefaultDocxFormatProvider()
-	        'Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
-	        Dim docxFormatProvider As DocxFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("docx"), DocxFormatProvider)
-	        Dim docxExportSettings As New DocxExportSettings()
-	        docxExportSettings.FieldResultMode = FieldDisplayMode.DisplayName
-	
-	        docxFormatProvider.ExportSettings = docxExportSettings
-	    End Sub
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -374,35 +318,7 @@ __RtfFormatProvider__ has __ImportSettings__, which provide an event - __FontSub
 	            e.SubstitutionFontFamily = New FontFamily("Calibri")
 	        End If
 	    End Sub
-	#End Region
-	
-	#Region "setup"
-	
-	    Public Sub SetupDefaultHtmlFormatProvider()
-	        'Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
-	        Dim htmlFormatProvider As HtmlFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("html"), HtmlFormatProvider)
-	
-	        Dim htmlExportSettings As New HtmlExportSettings()
-	        htmlExportSettings.DocumentExportLevel = DocumentExportLevel.Fragment
-	        htmlExportSettings.StylesExportMode = StylesExportMode.Inline
-	        htmlExportSettings.StyleRepositoryExportMode = StyleRepositoryExportMode.DontExportStyles
-	        htmlExportSettings.ExportFontStylesAsTags = True
-	
-	        htmlFormatProvider.ExportSettings = htmlExportSettings
-	    End Sub
-	
-	#End Region
-	#Region "docx"
-	    Public Sub SetupDefaultDocxFormatProvider()
-	        'Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
-	        Dim docxFormatProvider As DocxFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("docx"), DocxFormatProvider)
-	        Dim docxExportSettings As New DocxExportSettings()
-	        docxExportSettings.FieldResultMode = FieldDisplayMode.DisplayName
-	
-	        docxFormatProvider.ExportSettings = docxExportSettings
-	    End Sub
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -446,7 +362,6 @@ Here is an example how you can get a reference to the format provider used by th
 	
 	        docxFormatProvider.ExportSettings = docxExportSettings
 	    End Sub
-	#End Region
-	End Class
+	{{endregion}}
 
 

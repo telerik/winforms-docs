@@ -59,25 +59,7 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug richtext
 	
 	        Me.radRichTextEditor1.Document = document
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub Temp()
-	        '#Region "inline"
-	
-	        Dim section As New Section()
-	        Dim paragraph As New Paragraph()
-	        Dim span As New Span("Span declared in code-behind")
-	        paragraph.Inlines.Add(span)
-	        section.Blocks.Add(paragraph)
-	        Dim document As New RadDocument()
-	        document.Sections.Add(section)
-	
-	        Me.radRichTextEditor1.Document = document
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -117,9 +99,7 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 	
 	        Me.radRichTextEditor1.Document = document
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

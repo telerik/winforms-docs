@@ -42,25 +42,7 @@ __Example 1__ creates a workbook with a single worksheet before setting the valu
 	        Dim workbook As New Workbook()
 	        workbook.Worksheets.Add()
 	        workbook.ActiveWorksheet.Cells(0, 2).SetValue("=A1+B1")
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-formulas-cell-references_1"
-	        workbook.Worksheets.Add()
-	        Dim sheet1 As Worksheet = workbook.Worksheets(0)
-	        Dim samsWorksheet As Worksheet = workbook.Worksheets(1)
-	        samsWorksheet.Name = "Sam'sWorksheet"
-	
-	        sheet1.Cells(0, 0).SetValue("='Sam''sWorksheet'!B2")
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-formulas-cell-references_2"
-	       sheet1.Cells(2, 2).SetValue("=SUM(A1:B2)")
-	        samsWorksheet.Cells(0, 0).SetValue("=PRODUCT(D3:F5)")
-	        '#End Region
-	
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -92,16 +74,7 @@ __Example 2__ adds a worksheet to the workbook and renames the newly created ins
 	        samsWorksheet.Name = "Sam'sWorksheet"
 	
 	        sheet1.Cells(0, 0).SetValue("='Sam''sWorksheet'!B2")
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-formulas-cell-references_2"
-	       sheet1.Cells(2, 2).SetValue("=SUM(A1:B2)")
-	        samsWorksheet.Cells(0, 0).SetValue("=PRODUCT(D3:F5)")
-	        '#End Region
-	
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -125,11 +98,7 @@ __Example 3__ demonstrates how to add a reference to a whole cell range.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCellReferences.vb region=radspreadprocessing-features-formulas-cell-references_2}}
 	       sheet1.Cells(2, 2).SetValue("=SUM(A1:B2)")
 	        samsWorksheet.Cells(0, 0).SetValue("=PRODUCT(D3:F5)")
-	        '#End Region
-	
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 

@@ -47,22 +47,7 @@ You can use the following code to display a simple RangeSeries
 	        rangeSeries.DataPoints.Add(New RangeDataPoint(9, 7, "June"))
 	        rangeSeries.DataPoints.Add(New RangeDataPoint(3, 1, "July"))
 	        radChartView1.Series.Add(rangeSeries)
-	        '#End Region 
-	        '#Region "Bar"
-	        Dim rangeBarSeries As New RangeBarSeries()
-	        rangeBarSeries.DataPoints.Add(New RangeDataPoint(7, 5, "January"))
-	        rangeBarSeries.DataPoints.Add(New RangeDataPoint(4, 2, "February"))
-	        rangeBarSeries.DataPoints.Add(New RangeDataPoint(8, 4, "March"))
-	        rangeBarSeries.DataPoints.Add(New RangeDataPoint(8, 3, "April"))
-	        rangeBarSeries.DataPoints.Add(New RangeDataPoint(6, 3, "May"))
-	        rangeBarSeries.DataPoints.Add(New RangeDataPoint(6, 2, "June"))
-	        rangeBarSeries.DataPoints.Add(New RangeDataPoint(3, 1, "July"))
-	        radChartView1.Series.Add(rangeBarSeries)
-	        '#End Region
-	
-	    End Sub
-	End Class
-	
+	{{endregion}}
 
 
 
@@ -101,10 +86,6 @@ You can use the following code to display a simple RangeBarSeries
 	        rangeBarSeries.DataPoints.Add(New RangeDataPoint(6, 2, "June"))
 	        rangeBarSeries.DataPoints.Add(New RangeDataPoint(3, 1, "July"))
 	        radChartView1.Series.Add(rangeBarSeries)
-	        '#End Region
-	
-	    End Sub
-	End Class
-	
+	{{endregion}}
 
 

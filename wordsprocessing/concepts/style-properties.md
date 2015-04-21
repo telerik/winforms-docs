@@ -121,34 +121,7 @@ Here is example for equivalent getting of a value with CLR property and style pr
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_0}}
 	            Dim keepOnOnePageActualValueShorthand As Boolean = paragraph.KeepOnOnePage
 	            Dim keepOnOnePageActualValue As Boolean = paragraph.Properties.KeepOnOnePage.GetActualValue().Value
-	            '#End Region
-	        End Sub
-	
-	        Private Sub SetParagraphProperties(paragraph As Paragraph)
-	            '#Region "radwordsprocessing-concepts-style-properties_1"
-	            paragraph.KeepOnOnePage = True
-	            paragraph.Properties.KeepOnOnePage.LocalValue = True
-	            '#End Region
-	        End Sub
-	
-	        Private Sub GetLocalProperties(style As Style)
-	            '#Region "radwordsprocessing-concepts-style-properties_2"
-	            Dim keepOnOnePage As System.Nullable(Of Boolean) = style.ParagraphProperties.KeepOnOnePage.LocalValue
-	            '#End Region
-	        End Sub
-	
-	        Private Sub GetActualProperties(style As Style)
-	            '#Region "radwordsprocessing-concepts-style-properties_3"
-	            Dim keepOnOnePage As Boolean = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value
-	            '#End Region
-	        End Sub
-	
-	        Private Sub GetDefaultvalueOfProperty()
-	            '#Region "radwordsprocessing-concepts-style-properties_4"
-	            Dim keepOnOnePageDefaultValue As Boolean = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -169,27 +142,7 @@ Here is example for equivalent setting of a value with CLR property and style pr
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_1}}
 	            paragraph.KeepOnOnePage = True
 	            paragraph.Properties.KeepOnOnePage.LocalValue = True
-	            '#End Region
-	        End Sub
-	
-	        Private Sub GetLocalProperties(style As Style)
-	            '#Region "radwordsprocessing-concepts-style-properties_2"
-	            Dim keepOnOnePage As System.Nullable(Of Boolean) = style.ParagraphProperties.KeepOnOnePage.LocalValue
-	            '#End Region
-	        End Sub
-	
-	        Private Sub GetActualProperties(style As Style)
-	            '#Region "radwordsprocessing-concepts-style-properties_3"
-	            Dim keepOnOnePage As Boolean = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value
-	            '#End Region
-	        End Sub
-	
-	        Private Sub GetDefaultvalueOfProperty()
-	            '#Region "radwordsprocessing-concepts-style-properties_4"
-	            Dim keepOnOnePageDefaultValue As Boolean = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -215,21 +168,7 @@ Here is a code snippet illustrating how to get the local value of a style proper
 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_2}}
 	            Dim keepOnOnePage As System.Nullable(Of Boolean) = style.ParagraphProperties.KeepOnOnePage.LocalValue
-	            '#End Region
-	        End Sub
-	
-	        Private Sub GetActualProperties(style As Style)
-	            '#Region "radwordsprocessing-concepts-style-properties_3"
-	            Dim keepOnOnePage As Boolean = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value
-	            '#End Region
-	        End Sub
-	
-	        Private Sub GetDefaultvalueOfProperty()
-	            '#Region "radwordsprocessing-concepts-style-properties_4"
-	            Dim keepOnOnePageDefaultValue As Boolean = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -248,15 +187,7 @@ Here is a code snippet illustrating how to get the actual value of style propert
 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_3}}
 	            Dim keepOnOnePage As Boolean = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value
-	            '#End Region
-	        End Sub
-	
-	        Private Sub GetDefaultvalueOfProperty()
-	            '#Region "radwordsprocessing-concepts-style-properties_4"
-	            Dim keepOnOnePageDefaultValue As Boolean = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -281,9 +212,7 @@ The following code snippet illustrates how to get the default value for a style 
 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_4}}
 	            Dim keepOnOnePageDefaultValue As Boolean = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 

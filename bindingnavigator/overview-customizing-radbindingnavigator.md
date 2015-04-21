@@ -44,14 +44,6 @@ Each of the control's elements can be accessed and customized. Once you access t
 	
 	            Me.radBindingNavigator1.Rows(0).Strips(1).Items.Add(New CommandBarSeparator())
 	            Me.radBindingNavigator1.Rows(0).Strips(1).Items.Add(newButton)
-	            '#End Region
-	
-	        End Sub
-	
-	        Private Sub newButton_Click(sender As Object, e As EventArgs)
-	
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![bindingnavigator-overview-customizing-radbindingnavigator 001](images/bindingnavigator-overview-customizing-radbindingnavigator001.png)

@@ -75,14 +75,13 @@ Here is an example of a __RadDictionary__ loaded from a TDF file.
 
 {{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=load}}
 	
-	    Private Sub LoadDictionary1(ByVal tdfFileStream As Stream)
+	    Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
 	        Dim dictionary As New RadDictionary()
 	        dictionary.Load(tdfFileStream)
-	        CType(Me.radRichTextEditor1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, New CultureInfo("de-DE"))
+	        CType(Me.radRichTextEditor1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture)
 	    End Sub
 	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -135,18 +134,7 @@ Here is an example of a such dictionary which adds the words in the "CustomDicti
 	        Me.radRichTextEditor1.SpellChecker = spellchecker
 	    End Sub
 	
-	#End Region
-	
-	#Region "load"
-	
-	    Private Sub LoadDictionary1(ByVal tdfFileStream As Stream)
-	        Dim dictionary As New RadDictionary()
-	        dictionary.Load(tdfFileStream)
-	        CType(Me.radRichTextEditor1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, New CultureInfo("de-DE"))
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -186,39 +174,7 @@ Here is an example.
 	
 	        Me.radRichTextEditor1.SpellChecker.AddWord("RadRichTextEditor", CultureInfo.InvariantCulture)
 	
-	        '#End Region
-	    End Sub
-	
-	#Region "load"
-	
-	    Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
-	        Dim dictionary As New RadDictionary()
-	        dictionary.Load(tdfFileStream)
-	        CType(Me.radRichTextEditor1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture)
-	    End Sub
-	
-	#End Region
-	
-	#Region "custom"
-	
-	    Private Sub CreateCustomDictionary()
-	        Dim dictionary As New RadIsolatedStorageCustomDictionary(IsolatedStorageScope.Site, "CustomDictionary.txt")
-	        Dim spellchecker As New DocumentSpellChecker(dictionary)
-	        Me.radRichTextEditor1.SpellChecker = spellchecker
-	    End Sub
-	
-	#End Region
-	
-	#Region "load"
-	
-	    Private Sub LoadDictionary1(ByVal tdfFileStream As Stream)
-	        Dim dictionary As New RadDictionary()
-	        dictionary.Load(tdfFileStream)
-	        CType(Me.radRichTextEditor1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, New CultureInfo("de-DE"))
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -252,13 +208,12 @@ Here is an example.
 
 {{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=load}}
 	
-	    Private Sub LoadDictionary1(ByVal tdfFileStream As Stream)
+	    Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
 	        Dim dictionary As New RadDictionary()
 	        dictionary.Load(tdfFileStream)
-	        CType(Me.radRichTextEditor1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, New CultureInfo("de-DE"))
+	        CType(Me.radRichTextEditor1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture)
 	    End Sub
 	
-	#End Region
-	End Class
+	{{endregion}}
 
 

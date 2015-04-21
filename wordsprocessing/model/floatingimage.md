@@ -38,36 +38,7 @@ The following code snippet creates a FloatingImage and adds it to a [Paragraph](
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_0}}
 	            Dim floatingImage As New FloatingImage(document)
 	            paragraph.Inlines.Add(floatingImage)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub AddInlineImageAtIndex(document As RadFlowDocument, paragraph As Paragraph)
-	            '#Region "radwordsprocessing-model-floatingimage_1"
-	            Dim floatingImage As New FloatingImage(document)
-	            paragraph.Inlines.Insert(0, floatingImage)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateInlineImageAndAddToParagraph(paragraph As Paragraph)
-	            '#Region "radwordsprocessing-model-floatingimage_2"
-	            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertImageWithRadFlowDocument(document As RadFlowDocument)
-	            '#Region "radwordsprocessing-model-floatingimage_3"
-	            Dim editor As New RadFlowDocumentEditor(document)
-	
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertFloatingImage(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	    End Class
+	{{endregion}}
 
 
 
@@ -92,29 +63,7 @@ You can add an image at a specific index in the __Inlines__ collection of a para
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_1}}
 	            Dim floatingImage As New FloatingImage(document)
 	            paragraph.Inlines.Insert(0, floatingImage)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateInlineImageAndAddToParagraph(paragraph As Paragraph)
-	            '#Region "radwordsprocessing-model-floatingimage_2"
-	            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertImageWithRadFlowDocument(document As RadFlowDocument)
-	            '#Region "radwordsprocessing-model-floatingimage_3"
-	            Dim editor As New RadFlowDocumentEditor(document)
-	
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertFloatingImage(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	    End Class
+	{{endregion}}
 
 
 
@@ -134,23 +83,7 @@ You can also use the __AddFloatingImage()__ method of the __Inlines__ collection
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_2}}
 	            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertImageWithRadFlowDocument(document As RadFlowDocument)
-	            '#Region "radwordsprocessing-model-floatingimage_3"
-	            Dim editor As New RadFlowDocumentEditor(document)
-	
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertFloatingImage(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	    End Class
+	{{endregion}}
 
 
 
@@ -179,13 +112,7 @@ Inserting __FloatingImage__ element in RadFlowDocument can also be achieved with
 	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
 	                editor.InsertFloatingImage(stream, "png", New Size(118, 28))
 	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	    End Class
+	{{endregion}}
 
 
 

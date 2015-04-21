@@ -69,108 +69,7 @@ __Example 1__ shows how to generate a simple table with two rows and three colum
 	            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell21")
 	            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell22")
 	            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell23")
-	            '#End Region
-	        End Sub
-	
-	
-	        Private Sub ChangeDefaultCellProperties()
-	            '#Region "radpdfprocessing-editing-table_1"
-	            Dim table As New Table()
-	            Dim redBorder As New Border(2, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0))
-	            table.DefaultCellProperties.Borders = New Telerik.Windows.Documents.Fixed.Model.Editing.Tables.TableCellBorders(redBorder)
-	            table.DefaultCellProperties.Padding = New System.Windows.Thickness(20, 10, 20, 10)
-	            table.DefaultCellProperties.Background = New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 255, 0)
-	
-	            Dim firstRow As TableRow = table.Rows.AddTableRow()
-	            firstRow.Cells.AddTableCell()
-	            firstRow.Cells.AddTableCell()
-	            firstRow.Cells.AddTableCell()
-	
-	            Dim secondRow As TableRow = table.Rows.AddTableRow()
-	            secondRow.Cells.AddTableCell()
-	            secondRow.Cells.AddTableCell()
-	            secondRow.Cells.AddTableCell()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub BordersExample()
-	            '#Region "radpdfprocessing-editing-table_2"
-	            Dim table As New Table()
-	            table.DefaultCellProperties.Padding = New System.Windows.Thickness(10, 6, 10, 6)
-	            Dim redBorder As New Border(10, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0))
-	            table.Borders = New TableBorders(redBorder)
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_3"
-	            Dim tableRow As TableRow = table.Rows.AddTableRow()
-	
-	            Dim firstCell As TableCell = tableRow.Cells.AddTableCell()
-	            Dim greenBorder As New Border(5, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 255, 0))
-	            firstCell.Borders = New TableCellBorders(greenBorder, greenBorder, greenBorder, greenBorder)
-	            firstCell.Blocks.AddBlock().InsertText("green bordered cell")
-	
-	            Dim secondCell As TableCell = tableRow.Cells.AddTableCell()
-	            Dim blueBorder As New Border(3, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 0, 255))
-	            secondCell.Borders = New TableCellBorders(blueBorder, blueBorder, blueBorder, blueBorder)
-	            secondCell.Blocks.AddBlock().InsertText("blue bordered cell")
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_4"
-	            table.BorderCollapse = BorderCollapse.Collapse
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_5"
-	            table.BorderCollapse = BorderCollapse.Separate
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingRadFixedDocumentEditor(document As Telerik.Windows.Documents.Fixed.Model.RadFixedDocument)
-	            '#Region "radpdfprocessing-editing-table_6"
-	            Dim table As New Table()
-	
-	            Dim border As New Border()
-	            table.Borders = New TableBorders(border)
-	            table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-	
-	            table.BorderSpacing = 5
-	            table.BorderCollapse = BorderCollapse.Separate
-	
-	            Dim row As TableRow = table.Rows.AddTableRow()
-	            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-	            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_7"
-	        Dim editor As New RadFixedDocumentEditor(document)
-	        table.LayoutType = Flow.TableLayoutType.AutoFit
-	        editor.InsertTable(table)
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_8"
-	        table.LayoutType = Flow.TableLayoutType.FixedWidth
-	        editor.InsertTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingFixedContentEditor()
-	            '#Region "radpdfprocessing-editing-table_9"
-	            Dim table As Table = GenerateSampleTable()
-	
-	            Dim document As New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument()
-	            Dim page As Telerik.Windows.Documents.Fixed.Model.RadFixedPage = document.Pages.AddPage()
-	            Dim editor As New FixedContentEditor(page, New Telerik.Windows.Documents.Fixed.Model.Data.SimplePosition())
-	
-	            editor.Position.Translate(10, 100)
-	            editor.Position.Rotate(-45)
-	            editor.DrawTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Function GenerateSampleTable() As Table
-	            Throw New NotImplementedException()
-	        End Function
-	
-	    End Class
+	{{endregion}}
 
 
 
@@ -244,87 +143,7 @@ __Еxample 2__ shows how to use the __DefaultCellProperties__ of a table
 	            secondRow.Cells.AddTableCell()
 	            secondRow.Cells.AddTableCell()
 	            secondRow.Cells.AddTableCell()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub BordersExample()
-	            '#Region "radpdfprocessing-editing-table_2"
-	            Dim table As New Table()
-	            table.DefaultCellProperties.Padding = New System.Windows.Thickness(10, 6, 10, 6)
-	            Dim redBorder As New Border(10, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0))
-	            table.Borders = New TableBorders(redBorder)
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_3"
-	            Dim tableRow As TableRow = table.Rows.AddTableRow()
-	
-	            Dim firstCell As TableCell = tableRow.Cells.AddTableCell()
-	            Dim greenBorder As New Border(5, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 255, 0))
-	            firstCell.Borders = New TableCellBorders(greenBorder, greenBorder, greenBorder, greenBorder)
-	            firstCell.Blocks.AddBlock().InsertText("green bordered cell")
-	
-	            Dim secondCell As TableCell = tableRow.Cells.AddTableCell()
-	            Dim blueBorder As New Border(3, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 0, 255))
-	            secondCell.Borders = New TableCellBorders(blueBorder, blueBorder, blueBorder, blueBorder)
-	            secondCell.Blocks.AddBlock().InsertText("blue bordered cell")
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_4"
-	            table.BorderCollapse = BorderCollapse.Collapse
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_5"
-	            table.BorderCollapse = BorderCollapse.Separate
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingRadFixedDocumentEditor(document As Telerik.Windows.Documents.Fixed.Model.RadFixedDocument)
-	            '#Region "radpdfprocessing-editing-table_6"
-	            Dim table As New Table()
-	
-	            Dim border As New Border()
-	            table.Borders = New TableBorders(border)
-	            table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-	
-	            table.BorderSpacing = 5
-	            table.BorderCollapse = BorderCollapse.Separate
-	
-	            Dim row As TableRow = table.Rows.AddTableRow()
-	            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-	            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_7"
-	        Dim editor As New RadFixedDocumentEditor(document)
-	        table.LayoutType = Flow.TableLayoutType.AutoFit
-	        editor.InsertTable(table)
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_8"
-	        table.LayoutType = Flow.TableLayoutType.FixedWidth
-	        editor.InsertTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingFixedContentEditor()
-	            '#Region "radpdfprocessing-editing-table_9"
-	            Dim table As Table = GenerateSampleTable()
-	
-	            Dim document As New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument()
-	            Dim page As Telerik.Windows.Documents.Fixed.Model.RadFixedPage = document.Pages.AddPage()
-	            Dim editor As New FixedContentEditor(page, New Telerik.Windows.Documents.Fixed.Model.Data.SimplePosition())
-	
-	            editor.Position.Translate(10, 100)
-	            editor.Position.Rotate(-45)
-	            editor.DrawTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Function GenerateSampleTable() As Table
-	            Throw New NotImplementedException()
-	        End Function
-	
-	    End Class
+	{{endregion}}
 
 
 
@@ -377,78 +196,7 @@ The next example aims to demonstrate how border calculations occur with differen
 	            table.DefaultCellProperties.Padding = New System.Windows.Thickness(10, 6, 10, 6)
 	            Dim redBorder As New Border(10, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0))
 	            table.Borders = New TableBorders(redBorder)
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_3"
-	            Dim tableRow As TableRow = table.Rows.AddTableRow()
-	
-	            Dim firstCell As TableCell = tableRow.Cells.AddTableCell()
-	            Dim greenBorder As New Border(5, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 255, 0))
-	            firstCell.Borders = New TableCellBorders(greenBorder, greenBorder, greenBorder, greenBorder)
-	            firstCell.Blocks.AddBlock().InsertText("green bordered cell")
-	
-	            Dim secondCell As TableCell = tableRow.Cells.AddTableCell()
-	            Dim blueBorder As New Border(3, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 0, 255))
-	            secondCell.Borders = New TableCellBorders(blueBorder, blueBorder, blueBorder, blueBorder)
-	            secondCell.Blocks.AddBlock().InsertText("blue bordered cell")
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_4"
-	            table.BorderCollapse = BorderCollapse.Collapse
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_5"
-	            table.BorderCollapse = BorderCollapse.Separate
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingRadFixedDocumentEditor(document As Telerik.Windows.Documents.Fixed.Model.RadFixedDocument)
-	            '#Region "radpdfprocessing-editing-table_6"
-	            Dim table As New Table()
-	
-	            Dim border As New Border()
-	            table.Borders = New TableBorders(border)
-	            table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-	
-	            table.BorderSpacing = 5
-	            table.BorderCollapse = BorderCollapse.Separate
-	
-	            Dim row As TableRow = table.Rows.AddTableRow()
-	            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-	            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_7"
-	        Dim editor As New RadFixedDocumentEditor(document)
-	        table.LayoutType = Flow.TableLayoutType.AutoFit
-	        editor.InsertTable(table)
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_8"
-	        table.LayoutType = Flow.TableLayoutType.FixedWidth
-	        editor.InsertTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingFixedContentEditor()
-	            '#Region "radpdfprocessing-editing-table_9"
-	            Dim table As Table = GenerateSampleTable()
-	
-	            Dim document As New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument()
-	            Dim page As Telerik.Windows.Documents.Fixed.Model.RadFixedPage = document.Pages.AddPage()
-	            Dim editor As New FixedContentEditor(page, New Telerik.Windows.Documents.Fixed.Model.Data.SimplePosition())
-	
-	            editor.Position.Translate(10, 100)
-	            editor.Position.Rotate(-45)
-	            editor.DrawTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Function GenerateSampleTable() As Table
-	            Throw New NotImplementedException()
-	        End Function
-	
-	    End Class
+	{{endregion}}
 
 
 
@@ -487,64 +235,7 @@ __Example 4__ adds a single row with two cells to the table from __Example 3__. 
 	            Dim blueBorder As New Border(3, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 0, 255))
 	            secondCell.Borders = New TableCellBorders(blueBorder, blueBorder, blueBorder, blueBorder)
 	            secondCell.Blocks.AddBlock().InsertText("blue bordered cell")
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_4"
-	            table.BorderCollapse = BorderCollapse.Collapse
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_5"
-	            table.BorderCollapse = BorderCollapse.Separate
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingRadFixedDocumentEditor(document As Telerik.Windows.Documents.Fixed.Model.RadFixedDocument)
-	            '#Region "radpdfprocessing-editing-table_6"
-	            Dim table As New Table()
-	
-	            Dim border As New Border()
-	            table.Borders = New TableBorders(border)
-	            table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-	
-	            table.BorderSpacing = 5
-	            table.BorderCollapse = BorderCollapse.Separate
-	
-	            Dim row As TableRow = table.Rows.AddTableRow()
-	            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-	            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_7"
-	        Dim editor As New RadFixedDocumentEditor(document)
-	        table.LayoutType = Flow.TableLayoutType.AutoFit
-	        editor.InsertTable(table)
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_8"
-	        table.LayoutType = Flow.TableLayoutType.FixedWidth
-	        editor.InsertTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingFixedContentEditor()
-	            '#Region "radpdfprocessing-editing-table_9"
-	            Dim table As Table = GenerateSampleTable()
-	
-	            Dim document As New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument()
-	            Dim page As Telerik.Windows.Documents.Fixed.Model.RadFixedPage = document.Pages.AddPage()
-	            Dim editor As New FixedContentEditor(page, New Telerik.Windows.Documents.Fixed.Model.Data.SimplePosition())
-	
-	            editor.Position.Translate(10, 100)
-	            editor.Position.Rotate(-45)
-	            editor.DrawTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Function GenerateSampleTable() As Table
-	            Throw New NotImplementedException()
-	        End Function
-	
-	    End Class
+	{{endregion}}
 
 
 
@@ -563,60 +254,7 @@ __Figure 3__ shows the table from Example 3 and 4 with BorderCollapse property s
 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_4}}
 	            table.BorderCollapse = BorderCollapse.Collapse
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_5"
-	            table.BorderCollapse = BorderCollapse.Separate
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingRadFixedDocumentEditor(document As Telerik.Windows.Documents.Fixed.Model.RadFixedDocument)
-	            '#Region "radpdfprocessing-editing-table_6"
-	            Dim table As New Table()
-	
-	            Dim border As New Border()
-	            table.Borders = New TableBorders(border)
-	            table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-	
-	            table.BorderSpacing = 5
-	            table.BorderCollapse = BorderCollapse.Separate
-	
-	            Dim row As TableRow = table.Rows.AddTableRow()
-	            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-	            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_7"
-	        Dim editor As New RadFixedDocumentEditor(document)
-	        table.LayoutType = Flow.TableLayoutType.AutoFit
-	        editor.InsertTable(table)
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_8"
-	        table.LayoutType = Flow.TableLayoutType.FixedWidth
-	        editor.InsertTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingFixedContentEditor()
-	            '#Region "radpdfprocessing-editing-table_9"
-	            Dim table As Table = GenerateSampleTable()
-	
-	            Dim document As New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument()
-	            Dim page As Telerik.Windows.Documents.Fixed.Model.RadFixedPage = document.Pages.AddPage()
-	            Dim editor As New FixedContentEditor(page, New Telerik.Windows.Documents.Fixed.Model.Data.SimplePosition())
-	
-	            editor.Position.Translate(10, 100)
-	            editor.Position.Rotate(-45)
-	            editor.DrawTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Function GenerateSampleTable() As Table
-	            Throw New NotImplementedException()
-	        End Function
-	
-	    End Class
+	{{endregion}}
 
 
 
@@ -637,56 +275,7 @@ __Figure 4__ shows the same table with BorderCollapse property set to Separate -
 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_5}}
 	            table.BorderCollapse = BorderCollapse.Separate
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingRadFixedDocumentEditor(document As Telerik.Windows.Documents.Fixed.Model.RadFixedDocument)
-	            '#Region "radpdfprocessing-editing-table_6"
-	            Dim table As New Table()
-	
-	            Dim border As New Border()
-	            table.Borders = New TableBorders(border)
-	            table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-	
-	            table.BorderSpacing = 5
-	            table.BorderCollapse = BorderCollapse.Separate
-	
-	            Dim row As TableRow = table.Rows.AddTableRow()
-	            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-	            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_7"
-	        Dim editor As New RadFixedDocumentEditor(document)
-	        table.LayoutType = Flow.TableLayoutType.AutoFit
-	        editor.InsertTable(table)
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_8"
-	        table.LayoutType = Flow.TableLayoutType.FixedWidth
-	        editor.InsertTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingFixedContentEditor()
-	            '#Region "radpdfprocessing-editing-table_9"
-	            Dim table As Table = GenerateSampleTable()
-	
-	            Dim document As New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument()
-	            Dim page As Telerik.Windows.Documents.Fixed.Model.RadFixedPage = document.Pages.AddPage()
-	            Dim editor As New FixedContentEditor(page, New Telerik.Windows.Documents.Fixed.Model.Data.SimplePosition())
-	
-	            editor.Position.Translate(10, 100)
-	            editor.Position.Rotate(-45)
-	            editor.DrawTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Function GenerateSampleTable() As Table
-	            Throw New NotImplementedException()
-	        End Function
-	
-	    End Class
+	{{endregion}}
 
 
 
@@ -744,39 +333,7 @@ __Example 7__ generates a simple table with two cells.
 	            Dim row As TableRow = table.Rows.AddTableRow()
 	            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
 	            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_7"
-	        Dim editor As New RadFixedDocumentEditor(document)
-	        table.LayoutType = Flow.TableLayoutType.AutoFit
-	        editor.InsertTable(table)
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_8"
-	        table.LayoutType = Flow.TableLayoutType.FixedWidth
-	        editor.InsertTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingFixedContentEditor()
-	            '#Region "radpdfprocessing-editing-table_9"
-	            Dim table As Table = GenerateSampleTable()
-	
-	            Dim document As New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument()
-	            Dim page As Telerik.Windows.Documents.Fixed.Model.RadFixedPage = document.Pages.AddPage()
-	            Dim editor As New FixedContentEditor(page, New Telerik.Windows.Documents.Fixed.Model.Data.SimplePosition())
-	
-	            editor.Position.Translate(10, 100)
-	            editor.Position.Rotate(-45)
-	            editor.DrawTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Function GenerateSampleTable() As Table
-	            Throw New NotImplementedException()
-	        End Function
-	
-	    End Class
+	{{endregion}}
 
 
 
@@ -799,33 +356,7 @@ __Example 8__ inserts the table from __Example 7__ in a RadFixedDocumentEditor a
 	        Dim editor As New RadFixedDocumentEditor(document)
 	        table.LayoutType = Flow.TableLayoutType.AutoFit
 	        editor.InsertTable(table)
-	            '#End Region
-	
-	            '#Region "radpdfprocessing-editing-table_8"
-	        table.LayoutType = Flow.TableLayoutType.FixedWidth
-	        editor.InsertTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingFixedContentEditor()
-	            '#Region "radpdfprocessing-editing-table_9"
-	            Dim table As Table = GenerateSampleTable()
-	
-	            Dim document As New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument()
-	            Dim page As Telerik.Windows.Documents.Fixed.Model.RadFixedPage = document.Pages.AddPage()
-	            Dim editor As New FixedContentEditor(page, New Telerik.Windows.Documents.Fixed.Model.Data.SimplePosition())
-	
-	            editor.Position.Translate(10, 100)
-	            editor.Position.Rotate(-45)
-	            editor.DrawTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Function GenerateSampleTable() As Table
-	            Throw New NotImplementedException()
-	        End Function
-	
-	    End Class
+	{{endregion}}
 
 
 
@@ -851,28 +382,7 @@ Specifying FixedWidth layout option produces different results.
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_8}}
 	        table.LayoutType = Flow.TableLayoutType.FixedWidth
 	        editor.InsertTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub UsingFixedContentEditor()
-	            '#Region "radpdfprocessing-editing-table_9"
-	            Dim table As Table = GenerateSampleTable()
-	
-	            Dim document As New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument()
-	            Dim page As Telerik.Windows.Documents.Fixed.Model.RadFixedPage = document.Pages.AddPage()
-	            Dim editor As New FixedContentEditor(page, New Telerik.Windows.Documents.Fixed.Model.Data.SimplePosition())
-	
-	            editor.Position.Translate(10, 100)
-	            editor.Position.Rotate(-45)
-	            editor.DrawTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Function GenerateSampleTable() As Table
-	            Throw New NotImplementedException()
-	        End Function
-	
-	    End Class
+	{{endregion}}
 
 
 
@@ -914,14 +424,7 @@ __Example 10__ shows how to draw a rotated table with the help of FixedContentEd
 	            editor.Position.Translate(10, 100)
 	            editor.Position.Rotate(-45)
 	            editor.DrawTable(table)
-	            '#End Region
-	        End Sub
-	
-	        Private Function GenerateSampleTable() As Table
-	            Throw New NotImplementedException()
-	        End Function
-	
-	    End Class
+	{{endregion}}
 
 
 

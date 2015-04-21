@@ -58,52 +58,7 @@ The following code snippet creates and inserts a Table to a Section.
 	            ' Table object with 10 rows and 5 columns.
 	        section.Blocks.Add(table)
 	
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertTable(document As RadFlowDocument, section As Section)
-	            '#Region "radwordsprocessing-model-table_1"
-	            Dim table As New Table(document, 10, 5)
-	            section.Blocks.Insert(0, table)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateTablehMethod(section As Section)
-	            '#Region "radwordsprocessing-model-table_2"
-	            Dim table As Table = section.Blocks.AddTable()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateTableWithRadFlowDocumentEditor()
-	            '#Region "radwordsprocessing-model-table_3"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	            Dim table As Table = editor.InsertTable(5, 3)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateTableWithContent()
-	            '#Region "radwordsprocessing-model-table_4"
-	            Dim document As New RadFlowDocument()
-	
-	            Dim table As Table = document.Sections.AddSection().Blocks.AddTable()
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	        table.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            Dim cellBackground As New ThemableColor(Colors.Beige)
-	
-	            For i As Integer = 0 To 4
-	                Dim row As TableRow = table.Rows.AddTableRow()
-	
-	                For j As Integer = 0 To 9
-	                    Dim cell As TableCell = row.Cells.AddTableCell()
-	                    cell.Blocks.AddParagraph().Inlines.AddRun(String.Format("Cell {0}, {1}", i, j))
-	                    cell.Shading.BackgroundColor = cellBackground
-	                    cell.PreferredWidth = New TableWidthUnit(50)
-	                Next
-	            Next
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -129,45 +84,7 @@ You can add a table at a specific index in the __Blocks__ collection of a __Bloc
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_1}}
 	            Dim table As New Table(document, 10, 5)
 	            section.Blocks.Insert(0, table)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateTablehMethod(section As Section)
-	            '#Region "radwordsprocessing-model-table_2"
-	            Dim table As Table = section.Blocks.AddTable()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateTableWithRadFlowDocumentEditor()
-	            '#Region "radwordsprocessing-model-table_3"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	            Dim table As Table = editor.InsertTable(5, 3)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateTableWithContent()
-	            '#Region "radwordsprocessing-model-table_4"
-	            Dim document As New RadFlowDocument()
-	
-	            Dim table As Table = document.Sections.AddSection().Blocks.AddTable()
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	        table.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            Dim cellBackground As New ThemableColor(Colors.Beige)
-	
-	            For i As Integer = 0 To 4
-	                Dim row As TableRow = table.Rows.AddTableRow()
-	
-	                For j As Integer = 0 To 9
-	                    Dim cell As TableCell = row.Cells.AddTableCell()
-	                    cell.Blocks.AddParagraph().Inlines.AddRun(String.Format("Cell {0}, {1}", i, j))
-	                    cell.Shading.BackgroundColor = cellBackground
-	                    cell.PreferredWidth = New TableWidthUnit(50)
-	                Next
-	            Next
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -187,39 +104,7 @@ You can also use the __AddTable()__ method of the __Blocks__ collection of a __B
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_2}}
 	            Dim table As Table = section.Blocks.AddTable()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateTableWithRadFlowDocumentEditor()
-	            '#Region "radwordsprocessing-model-table_3"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	            Dim table As Table = editor.InsertTable(5, 3)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateTableWithContent()
-	            '#Region "radwordsprocessing-model-table_4"
-	            Dim document As New RadFlowDocument()
-	
-	            Dim table As Table = document.Sections.AddSection().Blocks.AddTable()
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	        table.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            Dim cellBackground As New ThemableColor(Colors.Beige)
-	
-	            For i As Integer = 0 To 4
-	                Dim row As TableRow = table.Rows.AddTableRow()
-	
-	                For j As Integer = 0 To 9
-	                    Dim cell As TableCell = row.Cells.AddTableCell()
-	                    cell.Blocks.AddParagraph().Inlines.AddRun(String.Format("Cell {0}, {1}", i, j))
-	                    cell.Shading.BackgroundColor = cellBackground
-	                    cell.PreferredWidth = New TableWidthUnit(50)
-	                Next
-	            Next
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -240,32 +125,7 @@ Inserting a new Table in the document can also be achieved with the [RadFlowDocu
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_3}}
 	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	            Dim table As Table = editor.InsertTable(5, 3)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateTableWithContent()
-	            '#Region "radwordsprocessing-model-table_4"
-	            Dim document As New RadFlowDocument()
-	
-	            Dim table As Table = document.Sections.AddSection().Blocks.AddTable()
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	        table.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            Dim cellBackground As New ThemableColor(Colors.Beige)
-	
-	            For i As Integer = 0 To 4
-	                Dim row As TableRow = table.Rows.AddTableRow()
-	
-	                For j As Integer = 0 To 9
-	                    Dim cell As TableCell = row.Cells.AddTableCell()
-	                    cell.Blocks.AddParagraph().Inlines.AddRun(String.Format("Cell {0}, {1}", i, j))
-	                    cell.Shading.BackgroundColor = cellBackground
-	                    cell.PreferredWidth = New TableWidthUnit(50)
-	                Next
-	            Next
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -400,9 +260,7 @@ The following code snippet demonstrates how to add a __Table__ with 5 rows and 1
 	                    cell.PreferredWidth = New TableWidthUnit(50)
 	                Next
 	            Next
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 

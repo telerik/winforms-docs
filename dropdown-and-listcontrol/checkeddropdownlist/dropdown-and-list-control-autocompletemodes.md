@@ -32,30 +32,7 @@ You can set the __AutoCompleteMode__ as follows:
 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SetMode}}
 	        Me.RadCheckedDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
-	        '#End Region
-	
-	        '#Region "SuggestMode"
-	        Me.RadCheckedDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains
-	        '#End Region
-	
-	        '#Region "SetAppendHelper"
-	        Me.RadCheckedDropDownList1.DropDownListElement.AutoCompleteAppend = New MyAutoCompleteAppendHelper(Me.RadCheckedDropDownList1.DropDownListElement)
-	        '#End Region
-	    End Sub
-	
-	#Region "CustomHelper"
-	    Private Class MyAutoCompleteAppendHelper
-	        Inherits AutoCompleteAppendHelper
-	        Public Sub New(ddList As RadDropDownListElement)
-	            MyBase.New(ddList)
-	        End Sub
-	
-	        Protected Overrides Function DefaultCompare(item As RadListDataItem) As Boolean
-	            Return item.Text = Me.FindString
-	        End Function
-	    End Class
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -74,26 +51,7 @@ Changing the filter for the __AutoCompleteSuggest__ is as easy as setting the __
 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SuggestMode}}
 	        Me.RadCheckedDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains
-	        '#End Region
-	
-	        '#Region "SetAppendHelper"
-	        Me.RadCheckedDropDownList1.DropDownListElement.AutoCompleteAppend = New MyAutoCompleteAppendHelper(Me.RadCheckedDropDownList1.DropDownListElement)
-	        '#End Region
-	    End Sub
-	
-	#Region "CustomHelper"
-	    Private Class MyAutoCompleteAppendHelper
-	        Inherits AutoCompleteAppendHelper
-	        Public Sub New(ddList As RadDropDownListElement)
-	            MyBase.New(ddList)
-	        End Sub
-	
-	        Protected Overrides Function DefaultCompare(item As RadListDataItem) As Boolean
-	            Return item.Text = Me.FindString
-	        End Function
-	    End Class
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -132,8 +90,7 @@ In order to customize the __AutoCompleteAppendHelper__ you need to create a desc
 	            Return item.Text = Me.FindString
 	        End Function
 	    End Class
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -149,22 +106,7 @@ In order to customize the __AutoCompleteAppendHelper__ you need to create a desc
 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SetAppendHelper}}
 	        Me.RadCheckedDropDownList1.DropDownListElement.AutoCompleteAppend = New MyAutoCompleteAppendHelper(Me.RadCheckedDropDownList1.DropDownListElement)
-	        '#End Region
-	    End Sub
-	
-	#Region "CustomHelper"
-	    Private Class MyAutoCompleteAppendHelper
-	        Inherits AutoCompleteAppendHelper
-	        Public Sub New(ddList As RadDropDownListElement)
-	            MyBase.New(ddList)
-	        End Sub
-	
-	        Protected Overrides Function DefaultCompare(item As RadListDataItem) As Boolean
-	            Return item.Text = Me.FindString
-	        End Function
-	    End Class
-	#End Region
-	End Class
+	{{endregion}}
 
 
 

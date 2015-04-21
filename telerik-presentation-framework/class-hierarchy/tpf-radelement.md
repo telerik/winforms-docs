@@ -109,8 +109,7 @@ Behaviors are a mechanism that trigger actions when specific properties are chan
 	            End If
 	        End Sub
 	    End Class
-	#End Region
-	End Class
+	{{endregion}}
 
 
 

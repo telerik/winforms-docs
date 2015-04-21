@@ -89,92 +89,7 @@ Consider the following code:
 	        shape3.Position = New Telerik.Windows.Diagrams.Core.Point(60, 60)
 	        radDiagram1.AddShape(shape3)
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub Dummy3()
-	        '#Region "CommandZIndex"
-	
-	        Dim shape1 As New RadDiagramShape() With { _
-	            .ShapeText = "shape1", _
-	            .ZIndex = 1, _
-	            .ElementShape = New EllipseShape(), _
-	            .InternalElementColor = System.Drawing.Color.LightBlue _
-	        }
-	        shape1.Position = New Telerik.Windows.Diagrams.Core.Point(100, 10)
-	        radDiagram1.AddShape(shape1)
-	
-	        Dim shape2 As New RadDiagramShape() With { _
-	            .ShapeText = "shape2", _
-	            .ZIndex = 2, _
-	            .ElementShape = New EllipseShape(), _
-	            .InternalElementColor = System.Drawing.Color.LightGreen _
-	        }
-	        shape2.Position = New Telerik.Windows.Diagrams.Core.Point(150, 80)
-	        RadDiagram1.AddShape(shape2)
-	
-	        Dim shape3 As New RadDiagramShape() With { _
-	            .ShapeText = "shape3", _
-	            .ZIndex = 3, _
-	            .ElementShape = New EllipseShape(), _
-	            .InternalElementColor = System.Drawing.Color.LightCoral _
-	        }
-	        shape3.Position = New Telerik.Windows.Diagrams.Core.Point(60, 80)
-	        RadDiagram1.AddShape(shape3)
-	
-	        Dim connection1 As New RadDiagramConnection() With { _
-	            .Name = "aaaa" _
-	        }
-	        connection1.Source = shape1
-	        connection1.Target = shape2
-	        connection1.ZIndex = 2
-	        connection1.SourceConnectorPosition = "Right"
-	        connection1.TargetConnectorPosition = "Right"
-	
-	        RadDiagram1.Items.Add(connection1)
-	
-	        Dim connection2 As New RadDiagramConnection() With { _
-	            .Name = "bbbb" _
-	        }
-	        connection2.Source = shape1
-	        connection2.Target = shape3
-	        connection2.ZIndex = 1
-	        connection2.SourceConnectorPosition = "Left"
-	        connection2.TargetConnectorPosition = "Left"
-	        radDiagram1.Items.Add(connection2)
-	
-	        '#End Region
-	        
-	        '#Region "BringToFront"
-	
-	        Me.RadDiagram1.SelectedItem = shape1
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.BringToFront, "")
-	
-	        '#End Region
-	
-	        '#Region "SendToBack"
-	
-	        Me.RadDiagram1.SelectedItem = shape3
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.SendToBack, "")
-	
-	        '#End Region
-	    End Sub
-	
-	    '#region CommandsExample
-	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
-	    End Sub
-	
-	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
-	    End Sub
-	
-	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
-	    End Sub
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -296,38 +211,7 @@ __RadDiagram__ provides a set of predefined commands for manipulating the select
 	        connection2.TargetConnectorPosition = "Left"
 	        radDiagram1.Items.Add(connection2)
 	
-	        '#End Region
-	        
-	        '#Region "BringToFront"
-	
-	        Me.RadDiagram1.SelectedItem = shape1
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.BringToFront, "")
-	
-	        '#End Region
-	
-	        '#Region "SendToBack"
-	
-	        Me.RadDiagram1.SelectedItem = shape3
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.SendToBack, "")
-	
-	        '#End Region
-	    End Sub
-	
-	    '#region CommandsExample
-	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
-	    End Sub
-	
-	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
-	    End Sub
-	
-	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
-	    End Sub
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -353,31 +237,7 @@ Here is the result of selecting the first shape and executing the DiagramCommand
 	        Me.RadDiagram1.SelectedItem = shape1
 	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.BringToFront, "")
 	
-	        '#End Region
-	
-	        '#Region "SendToBack"
-	
-	        Me.RadDiagram1.SelectedItem = shape3
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.SendToBack, "")
-	
-	        '#End Region
-	    End Sub
-	
-	    '#region CommandsExample
-	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
-	    End Sub
-	
-	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
-	    End Sub
-	
-	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
-	    End Sub
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -402,23 +262,6 @@ Here is the result of selecting the third shape and executing the DiagramCommand
 	        Me.RadDiagram1.SelectedItem = shape3
 	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.SendToBack, "")
 	
-	        '#End Region
-	    End Sub
-	
-	    '#region CommandsExample
-	    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
-	    End Sub
-	
-	    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
-	    End Sub
-	
-	    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
-	        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
-	    End Sub
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 

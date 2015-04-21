@@ -123,22 +123,7 @@ __Exam0ple 1__ demonstrates how to apply scientific format to cell *A1* and perc
 	        cellSelectionA2B3.SetFormat(percentageFormat)
 	    End Sub
 	
-	    '#End Region
-	
-	
-	    '#Region radspreadprocessing-features-number-formats_1
-	    Public Sub GetFormat()
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        Dim cellSelectionA1 As CellSelection = worksheet.Cells(New CellIndex(0, 0))
-	        Dim cellSelectionA2B3 As CellSelection = worksheet.Cells(New CellRange(New CellIndex(1, 0), New CellIndex(2, 1)))
-	
-	        Dim cellSelectioA1Format As CellValueFormat = cellSelectionA1.GetFormat().Value
-	        Dim cellSelectioA2Format As CellValueFormat = cellSelectionA2B3.GetFormat().Value
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -186,7 +171,6 @@ __Example 2__ demonstrates how to get the __Number__ format of cell *A1* and cel
 	        Dim cellSelectioA1Format As CellValueFormat = cellSelectionA1.GetFormat().Value
 	        Dim cellSelectioA2Format As CellValueFormat = cellSelectionA2B3.GetFormat().Value
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 

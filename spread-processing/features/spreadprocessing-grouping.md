@@ -67,50 +67,7 @@ There are two available options when grouping. The first option is to simply ass
 	        worksheet.Columns(0).SetOutlineLevel(1)
 	        worksheet.Columns(1, 2).SetOutlineLevel(2)
 	        worksheet.Columns(3).SetOutlineLevel(1)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GroupingUsingGroupMethod()
-	        '#Region "radspreadprocessing-features-grouping_1"
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        worksheet.Columns(0, 3).Group()
-	        worksheet.Columns(1, 2).Group()
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UngroupingUsingOutline()
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        '#Region "radspreadprocessing-features-grouping_2"
-	        worksheet.Rows(0, 1).ClearOutlineLevel()
-	        worksheet.Rows(4, 6).SetOutlineLevel(1)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UngroupingUsingUnGroupMethod()
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        '#Region "radspreadprocessing-features-grouping_3"
-	        worksheet.Rows(0, 1).Ungroup()
-	        worksheet.Rows(4, 6).Ungroup()
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GetOutLineLevel()
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        '#Region "radspreadprocessing-features-grouping_4"
-	        Dim outlineLevelRangeValue As RangePropertyValue(Of Integer) = worksheet.Rows(0, 1).GetOutlineLevel()
-	        Dim outLineLevel As Integer = outlineLevelRangeValue.Value
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -137,40 +94,7 @@ The other option is to use the Group method exposed by the row/column selection 
 	
 	        worksheet.Columns(0, 3).Group()
 	        worksheet.Columns(1, 2).Group()
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UngroupingUsingOutline()
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        '#Region "radspreadprocessing-features-grouping_2"
-	        worksheet.Rows(0, 1).ClearOutlineLevel()
-	        worksheet.Rows(4, 6).SetOutlineLevel(1)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UngroupingUsingUnGroupMethod()
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        '#Region "radspreadprocessing-features-grouping_3"
-	        worksheet.Rows(0, 1).Ungroup()
-	        worksheet.Rows(4, 6).Ungroup()
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GetOutLineLevel()
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        '#Region "radspreadprocessing-features-grouping_4"
-	        Dim outlineLevelRangeValue As RangePropertyValue(Of Integer) = worksheet.Rows(0, 1).GetOutlineLevel()
-	        Dim outLineLevel As Integer = outlineLevelRangeValue.Value
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -203,30 +127,7 @@ Figure 3![spreadprocessing-features-grouping 003](images/spreadprocessing-featur
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.vb region=radspreadprocessing-features-grouping_2}}
 	        worksheet.Rows(0, 1).ClearOutlineLevel()
 	        worksheet.Rows(4, 6).SetOutlineLevel(1)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UngroupingUsingUnGroupMethod()
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        '#Region "radspreadprocessing-features-grouping_3"
-	        worksheet.Rows(0, 1).Ungroup()
-	        worksheet.Rows(4, 6).Ungroup()
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GetOutLineLevel()
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        '#Region "radspreadprocessing-features-grouping_4"
-	        Dim outlineLevelRangeValue As RangePropertyValue(Of Integer) = worksheet.Rows(0, 1).GetOutlineLevel()
-	        Dim outLineLevel As Integer = outlineLevelRangeValue.Value
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -247,20 +148,7 @@ You can achieve the same result with the code in __Example 4__:
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.vb region=radspreadprocessing-features-grouping_3}}
 	        worksheet.Rows(0, 1).Ungroup()
 	        worksheet.Rows(4, 6).Ungroup()
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GetOutLineLevel()
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        '#Region "radspreadprocessing-features-grouping_4"
-	        Dim outlineLevelRangeValue As RangePropertyValue(Of Integer) = worksheet.Rows(0, 1).GetOutlineLevel()
-	        Dim outLineLevel As Integer = outlineLevelRangeValue.Value
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -283,10 +171,7 @@ You can get the outline level of a row/column or a group of rows/columns using t
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.vb region=radspreadprocessing-features-grouping_4}}
 	        Dim outlineLevelRangeValue As RangePropertyValue(Of Integer) = worksheet.Rows(0, 1).GetOutlineLevel()
 	        Dim outLineLevel As Integer = outlineLevelRangeValue.Value
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 

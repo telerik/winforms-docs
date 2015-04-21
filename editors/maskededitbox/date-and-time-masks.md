@@ -186,9 +186,7 @@ When the mask type is set to *DateTime* you can access the MaskDateTimeProvider 
 	        Dim provider As MaskDateTimeProvider = TryCast(Me.RadMaskedEditBox1.MaskedEditBoxElement.Provider, MaskDateTimeProvider)
 	        provider.AutoSelectNextPart = True
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -85,24 +85,7 @@ __Example 1__ shows how you can create a workbook and add a new worksheet to it.
 {{source=..\SamplesVB\RadSpreadProcessing\RadSpreadProcessingGettingStarted.vb region=radspreadprocessing-getting-started_0}}
 	        Dim workbook As New Workbook()
 	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-getting-started_1"
-	        Dim selection As CellSelection = worksheet.Cells(1, 1) 'B2 cell
-	        selection.SetValue("Hello RadSpreadProcessing")
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-getting-started_2"
-	        Dim fileName As String = "Hello.xlsx"
-	        Dim formatProvider As IWorkbookFormatProvider = New XlsxFormatProvider()
-	
-	        Using input As New FileStream(fileName, FileMode.Open)
-	            workbook = formatProvider.Import(input)
-	        End Using
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -123,19 +106,7 @@ You can then create a [CellSelection]({%slug spreadprocessing-working-with-cells
 {{source=..\SamplesVB\RadSpreadProcessing\RadSpreadProcessingGettingStarted.vb region=radspreadprocessing-getting-started_1}}
 	        Dim selection As CellSelection = worksheet.Cells(1, 1) 'B2 cell
 	        selection.SetValue("Hello RadSpreadProcessing")
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-getting-started_2"
-	        Dim fileName As String = "Hello.xlsx"
-	        Dim formatProvider As IWorkbookFormatProvider = New XlsxFormatProvider()
-	
-	        Using input As New FileStream(fileName, FileMode.Open)
-	            workbook = formatProvider.Import(input)
-	        End Using
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -167,10 +138,7 @@ The __RadSpreadProcessing__ library supports a variety of formats to which you c
 	        Using input As New FileStream(fileName, FileMode.Open)
 	            workbook = formatProvider.Import(input)
 	        End Using
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -47,12 +47,7 @@ __Example 1__ demonstrates how you can insert a merge field.
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingMergeField.vb region=editor}}
 	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	        editor.InsertField("MERGEFIELD First_Name", "Nancy Davolio")
-	        '#End Region
-	        '#Region "insert"
-	        editor.InsertField("MERGEFIELD First_Name \b ""Mr. "" \f "". """, "")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -86,9 +81,7 @@ __Example 2__ shows a possible use of merge field's switches.
 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingMergeField.vb region=insert}}
 	        editor.InsertField("MERGEFIELD First_Name \b ""Mr. "" \f "". """, "")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

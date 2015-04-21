@@ -35,25 +35,11 @@ This article will guide you through the process of creating a month-year picker.
 
 {{source=..\SamplesVB\Calendar\Calendar1.vb region=monthYearPicker}}
 	
-	    Private Sub radCalendar1_ZoomChanging(sender As Object, e As CalendarZoomChangingEventArgs)
-	        If Me.RadCalendar1.ZoomLevel = ZoomLevel.Years AndAlso e.Direction = DrillDirection.Up Then
-	            e.Cancel = True
-	        End If
-	        If Me.RadCalendar1.ZoomLevel = ZoomLevel.Months AndAlso e.Direction = DrillDirection.Down Then
-	            e.Cancel = True
-	        End If
-	    End Sub
-	    '#End Region
+	        Me.RadCalendar1.HeaderNavigationMode = HeaderNavigationMode.Zoom
+	        Me.RadCalendar1.ZoomLevel = ZoomLevel.Months
 	
-	    '#region iteratingSpecialSelected
-	    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        For Each dateTime As DateTime In RadCalendar1.SelectedDates
-	            RadListControl1.Items.Add(New RadListDataItem("Selected: " + dateTime.ToShortDateString()))
-	        Next
-	        For Each day As RadCalendarDay In RadCalendar1.SpecialDays
-	            RadListControl1.Items.Add(New RadListDataItem("Special: " + day.[Date].ToShortDateString()))
-	        Next
-	    End Sub
+	        AddHandler Me.RadCalendar1.ZoomChanging, AddressOf radCalendar1_ZoomChanging
+	
 	{{endregion}}
 
 
@@ -91,17 +77,6 @@ In addition, you should subscribe to the __ZoomChanging__ event and stop navigat
 	        If Me.RadCalendar1.ZoomLevel = ZoomLevel.Months AndAlso e.Direction = DrillDirection.Down Then
 	            e.Cancel = True
 	        End If
-	    End Sub
-	    '#End Region
-	
-	    '#region iteratingSpecialSelected
-	    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        For Each dateTime As DateTime In RadCalendar1.SelectedDates
-	            RadListControl1.Items.Add(New RadListDataItem("Selected: " + dateTime.ToShortDateString()))
-	        Next
-	        For Each day As RadCalendarDay In RadCalendar1.SpecialDays
-	            RadListControl1.Items.Add(New RadListDataItem("Special: " + day.[Date].ToShortDateString()))
-	        Next
 	    End Sub
 	{{endregion}}
 

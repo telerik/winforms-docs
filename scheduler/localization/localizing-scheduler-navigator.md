@@ -97,7 +97,7 @@ The __RadSchedulerNavigator__ control uses the __SchedulerNavigatorLocalizationP
 	        Return String.Empty
 	    End Function
 	End Class
-	'#End Region
+	{{endregion}}
 
 
 
@@ -117,9 +117,6 @@ In order to utilize the new Localization Provider, you should create an instance
 
 {{source=..\SamplesVB\Scheduler\Localization\AssignProviders.vb region=assignNavigatorProvider}}
 	        SchedulerNavigatorLocalizationProvider.CurrentProvider = New CustomSchedulerNavigatorLocalizationProvider()
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 

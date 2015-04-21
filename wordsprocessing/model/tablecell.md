@@ -43,22 +43,7 @@ You can use the following code snippet to create a __TableCell__ and add it in a
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_0}}
 	            Dim cell As New TableCell(document)
 	            row.Cells.Add(cell)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub AddTableCell(table As Table)
-	            '#Region "radwordsprocessing-model-tablecell_1"
-	            Dim row As TableRow = table.Rows.AddTableRow()
-	            Dim cell As TableCell = row.Cells.AddTableCell()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateCellWithParagraph(cell As TableCell)
-	            '#Region "radwordsprocessing-model-tablecell_2"
-	            Dim paragraph As Paragraph = cell.Blocks.AddParagraph()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -80,15 +65,7 @@ To create a __TableCell__ and add it in the document tree in the same time, you 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_1}}
 	            Dim row As TableRow = table.Rows.AddTableRow()
 	            Dim cell As TableCell = row.Cells.AddTableCell()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateCellWithParagraph(cell As TableCell)
-	            '#Region "radwordsprocessing-model-tablecell_2"
-	            Dim paragraph As Paragraph = cell.Blocks.AddParagraph()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -183,9 +160,7 @@ The following code snippet demonstrates how to add a __Paragraph__ to a __TableC
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_2}}
 	            Dim paragraph As Paragraph = cell.Blocks.AddParagraph()
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 

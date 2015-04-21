@@ -109,10 +109,6 @@ To enable this functionality a single property setting is needed:
 
 {{source=..\SamplesVB\TreeView\Usability1\TreeViewUsabilityKeyboardNavigation.vb region=KeyboardSearchEnabled}}
 	        radTreeView1.KeyboardSearchEnabled = True
-	        '#End Region
-	
-	        '#region KeyboardSearchResetInterval
-	        radTreeView1.KeyboardSearchResetInterval = 500
 	{{endregion}}
 
 

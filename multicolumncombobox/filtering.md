@@ -87,8 +87,6 @@ You can filter data records by multiple values. For this purpose you have to use
 	
 	        Me.radMultiColumnComboBox1.EditorControl.FilterDescriptors.Add(compositeFilter)
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

@@ -113,8 +113,7 @@ The event arguments of the NodesNeeded event contain
 	        Dim mcNode As New RadTreeNode("My Computer")
 	        nodes.Add(mcNode)
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 

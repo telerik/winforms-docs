@@ -150,25 +150,7 @@ In the following example it will be demonstrated how to change default editor wi
 	            Female
 	            Male
 	        End Enum
-	#End Region
-	
-	        Public Sub New()
-	            InitializeComponent()
-	
-	            '#Region "bind1"
-	            Me.radDataEntry1.DataSource = New Employee() With { _
-	              .FirstName = "Sarah", _
-	              .LastName = "Blake", _
-	              .Occupation = "Supplied Manager", _
-	              .StartingDate = New DateTime(2005, 4, 12), _
-	              .IsMarried = True, _
-	              .Salary = 3500, _
-	              .Gender = Gender.Female _
-	             }
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -200,10 +182,7 @@ In the following example it will be demonstrated how to change default editor wi
 	              .Salary = 3500, _
 	              .Gender = Gender.Female _
 	             }
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-overview-change-auto-generated-editor 001](images/dataentry-overview-change-auto-generated-editor001.png)
 
@@ -241,41 +220,7 @@ In the following example it will be demonstrated how to change default editor wi
 	                e.Editor = radMaskedEditBox
 	            End If
 	        End Sub
-	#End Region
-	
-	#Region "BindingCreated"
-	        Private Sub radDataEntry1_BindingCreated(sender As Object, e As BindingCreatedEventArgs)
-	            If e.DataMember = "Salary" Then
-	                AddHandler e.Binding.Parse, AddressOf Binding_Parse
-	            End If
-	        End Sub
-	
-	        Private Sub Binding_Parse(sender As Object, e As ConvertEventArgs)
-	            Dim salary As Integer = Integer.Parse(e.Value.ToString(), NumberStyles.Currency)
-	            e.Value = salary
-	        End Sub
-	
-	#End Region
-	
-	        Private Sub SetItemInitialized()
-	            AddHandler Me.radDataEntry1.ItemInitialized, AddressOf radDataEntry1_ItemInitialized
-	        End Sub
-	#Region "ItemInitialized"
-	        Private Sub radDataEntry1_ItemInitialized(sender As Object, e As Telerik.WinControls.UI.ItemInitializedEventArgs)
-	            If e.Panel.Controls(1).Text = "FirstName" Then
-	                e.Panel.Size = New Size(150, 25)
-	                e.Panel.Controls(1).Text = "Name"
-	            ElseIf e.Panel.Controls(1).Text = "LastName" Then
-	                e.Panel.Size = New Size(100, 25)
-	                e.Panel.Controls(1).Visible = False
-	                e.Panel.Location = New Point(160, radDataEntry1.ItemSpace)
-	            Else
-	                e.Panel.Location = New Point(e.Panel.Location.X, e.Panel.Location.Y - 25)
-	            End If
-	        End Sub
-	#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-overview-change-auto-generated-editor 002](images/dataentry-overview-change-auto-generated-editor002.png)
 
@@ -324,26 +269,6 @@ In the following example it will be demonstrated how to change default editor wi
 	            e.Value = salary
 	        End Sub
 	
-	#End Region
-	
-	        Private Sub SetItemInitialized()
-	            AddHandler Me.radDataEntry1.ItemInitialized, AddressOf radDataEntry1_ItemInitialized
-	        End Sub
-	#Region "ItemInitialized"
-	        Private Sub radDataEntry1_ItemInitialized(sender As Object, e As Telerik.WinControls.UI.ItemInitializedEventArgs)
-	            If e.Panel.Controls(1).Text = "FirstName" Then
-	                e.Panel.Size = New Size(150, 25)
-	                e.Panel.Controls(1).Text = "Name"
-	            ElseIf e.Panel.Controls(1).Text = "LastName" Then
-	                e.Panel.Size = New Size(100, 25)
-	                e.Panel.Controls(1).Visible = False
-	                e.Panel.Location = New Point(160, radDataEntry1.ItemSpace)
-	            Else
-	                e.Panel.Location = New Point(e.Panel.Location.X, e.Panel.Location.Y - 25)
-	            End If
-	        End Sub
-	#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 

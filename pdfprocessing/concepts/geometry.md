@@ -59,25 +59,7 @@ __Example 1__ shows hot to create a RectangleGeometry.
 {{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsGeometry.vb region=radpdfprocessing-concepts-geometry_0}}
 	        Dim rectangleGeometry As RectangleGeometry = New RectangleGeometry()
 	        rectangleGeometry.Rect = New Rect(10, 5, 400, 300)
-	        '	#End Region
-	    End Sub
-	
-	    Private Sub CreatePathGeometry()
-	        '	#Region "radpdfprocessing-concepts-geometry_1"
-	        Dim pathGeometry As PathGeometry = New PathGeometry()
-	        Dim pathFigure As PathFigure = pathGeometry.Figures.AddPathFigure()
-	        pathFigure.StartPoint = New Point(5, 5)
-	        Dim lineSegment As LineSegment = pathFigure.Segments.AddLineSegment()
-	        lineSegment.Point = New Point(205, 5)
-	        Dim bezierSegment As BezierSegment = pathFigure.Segments.AddBezierSegment()
-	        bezierSegment.Point1 = New Point(105, 50)
-	        bezierSegment.Point2 = New Point(130, 105)
-	        bezierSegment.Point3 = New Point(100, 200)
-	        pathFigure.IsClosed = True
-	        '	#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -131,10 +113,7 @@ __Example 2__ shows how to create a PathGeometry which consists of line segments
 	        bezierSegment.Point2 = New Point(130, 105)
 	        bezierSegment.Point3 = New Point(100, 200)
 	        pathFigure.IsClosed = True
-	        '	#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 

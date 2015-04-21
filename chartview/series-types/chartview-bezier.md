@@ -57,9 +57,7 @@ The Bezier chart displays a series of points on a curved line.  Two "control poi
 	        bezier3.DataPoints.Add(New BezierDataPoint(20, 150, 0, 0, 20, 250))
 	        bezier3.DataPoints.Add(New BezierDataPoint(80, 150, 80, 250, 0, 0))
 	        Me.RadChartView1.Series.Add(bezier3)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

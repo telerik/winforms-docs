@@ -148,28 +148,7 @@ The default behavior of the
 	        End Sub
 	    End Class
 	
-	    #End Region
-	
-	    Public Class DummySchedulerSelectionBehavior
-	    Inherits SchedulerSelectionBehavior
-	        Public Sub New(scheduler As RadScheduler)
-	            MyBase.New(scheduler)
-	        End Sub
-	
-	        #Region "SelectAppointment"
-	
-	        Public Overrides Sub SelectAppointment(appointment As IEvent, extend As Boolean)
-	            Dim dayView As SchedulerDayView = Me.Scheduler.GetDayView()
-	
-	            If dayView.IsWorkTime(appointment.Start) Then
-	                Return
-	            End If
-	            MyBase.SelectAppointment(appointment, extend)
-	        End Sub
-	
-	        #End Region
-	    End Class
-	End Class
+	{{endregion}}
 
 
 
@@ -208,9 +187,7 @@ The default behavior of the
 	            MyBase.SelectAppointment(appointment, extend)
 	        End Sub
 	
-	        #End Region
-	    End Class
-	End Class
+	{{endregion}}
 
 
 
@@ -233,41 +210,6 @@ The default behavior of the
 	
 	        Me.RadScheduler1.SelectionBehavior = New CustomSchedulerSelectionBehavior(Me.RadScheduler1)
 	
-	        '#End Region
-	
-	        Me.RadScheduler1.SelectionBehavior = New DummySchedulerSelectionBehavior(Me.RadScheduler1)
-	    End Sub
-	
-	    #Region "SchedulerSelectionBehavior"
-	
-	    Public Class CustomSchedulerSelectionBehavior
-	    Inherits SchedulerSelectionBehavior
-	        Public Sub New(scheduler As RadScheduler)
-	            MyBase.New(scheduler)
-	        End Sub
-	    End Class
-	
-	    #End Region
-	
-	    Public Class DummySchedulerSelectionBehavior
-	    Inherits SchedulerSelectionBehavior
-	        Public Sub New(scheduler As RadScheduler)
-	            MyBase.New(scheduler)
-	        End Sub
-	
-	        #Region "SelectAppointment"
-	
-	        Public Overrides Sub SelectAppointment(appointment As IEvent, extend As Boolean)
-	            Dim dayView As SchedulerDayView = Me.Scheduler.GetDayView()
-	
-	            If dayView.IsWorkTime(appointment.Start) Then
-	                Return
-	            End If
-	            MyBase.SelectAppointment(appointment, extend)
-	        End Sub
-	
-	        #End Region
-	    End Class
-	End Class
+	{{endregion}}
 
 

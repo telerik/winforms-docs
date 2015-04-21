@@ -38,29 +38,7 @@ Each RadDocument instance has a dictionary of variables exposed by the __Documen
 	
 	        Dim variables As Telerik.WinForms.Documents.Model.DocumentVariableCollection = Me.radRichTextEditor1.Document.DocumentVariables
 	
-	        '#End Region
-	
-	        '#Region "add"
-	
-	        Me.radRichTextEditor1.Document.DocumentVariables.Add("Name", "Andrew Fuller")
-	        Me.radRichTextEditor1.Document.DocumentVariables("Job") = "Software Engineer"
-	
-	        '#End Region
-	
-	        '#Region "remove"
-	
-	        Me.radRichTextEditor1.Document.DocumentVariables.Remove("Name")
-	
-	        '#End Region
-	
-	        '#Region "field"
-	
-	        Dim docVariable As New Telerik.WinForms.Documents.Model.DocumentVariableField() With {.VariableName = "Name"}
-	        Me.radRichTextEditor1.InsertField(docVariable)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -87,22 +65,7 @@ This collection maps string keys to object values (most often strings). The valu
 	        Me.radRichTextEditor1.Document.DocumentVariables.Add("Name", "Andrew Fuller")
 	        Me.radRichTextEditor1.Document.DocumentVariables("Job") = "Software Engineer"
 	
-	        '#End Region
-	
-	        '#Region "remove"
-	
-	        Me.radRichTextEditor1.Document.DocumentVariables.Remove("Name")
-	
-	        '#End Region
-	
-	        '#Region "field"
-	
-	        Dim docVariable As New Telerik.WinForms.Documents.Model.DocumentVariableField() With {.VariableName = "Name"}
-	        Me.radRichTextEditor1.InsertField(docVariable)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -128,16 +91,7 @@ Removing variables from the collection can be done like this:
 	
 	        Me.radRichTextEditor1.Document.DocumentVariables.Remove("Name")
 	
-	        '#End Region
-	
-	        '#Region "field"
-	
-	        Dim docVariable As New Telerik.WinForms.Documents.Model.DocumentVariableField() With {.VariableName = "Name"}
-	        Me.radRichTextEditor1.InsertField(docVariable)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -163,8 +117,6 @@ Document variables can be inserted in the document using DocumentVariableField. 
 	        Dim docVariable As New Telerik.WinForms.Documents.Model.DocumentVariableField() With {.VariableName = "Name"}
 	        Me.radRichTextEditor1.InsertField(docVariable)
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

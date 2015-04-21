@@ -38,36 +38,7 @@ You can use the following code snippet to create an ImageInline and add it to a 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_0}}
 	            Dim imageInline As New ImageInline(document)
 	            paragraph.Inlines.Add(imageInline)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub AddInlineImageAtIndex(document As RadFlowDocument, paragraph As Paragraph)
-	            '#Region "radwordsprocessing-model-imageinline_1"
-	            Dim imageInline As New ImageInline(document)
-	            paragraph.Inlines.Insert(0, imageInline)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateInlineImageAndAddToParagraph(paragraph As Paragraph)
-	            '#Region "radwordsprocessing-model-imageinline_2"
-	            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertImageWithRadFlowDocument(document As RadFlowDocument)
-	            '#Region "radwordsprocessing-model-imageinline_3"
-	            Dim editor As New RadFlowDocumentEditor(document)
-	
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertImageInline(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	    End Class
+	{{endregion}}
 
 
 
@@ -92,29 +63,7 @@ You can add an image at a specific index in the __Inlines__ collection of a para
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_1}}
 	            Dim imageInline As New ImageInline(document)
 	            paragraph.Inlines.Insert(0, imageInline)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateInlineImageAndAddToParagraph(paragraph As Paragraph)
-	            '#Region "radwordsprocessing-model-imageinline_2"
-	            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertImageWithRadFlowDocument(document As RadFlowDocument)
-	            '#Region "radwordsprocessing-model-imageinline_3"
-	            Dim editor As New RadFlowDocumentEditor(document)
-	
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertImageInline(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	    End Class
+	{{endregion}}
 
 
 
@@ -134,23 +83,7 @@ You can also use the __AddImageInline()__ method of the __Inlines__ collection o
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_2}}
 	            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub InsertImageWithRadFlowDocument(document As RadFlowDocument)
-	            '#Region "radwordsprocessing-model-imageinline_3"
-	            Dim editor As New RadFlowDocumentEditor(document)
-	
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertImageInline(stream, "png", New Size(118, 28))
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	    End Class
+	{{endregion}}
 
 
 
@@ -179,13 +112,7 @@ Inserting __ImageInline__ element in RadFlowDocument can also be achieved with
 	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
 	                editor.InsertImageInline(stream, "png", New Size(118, 28))
 	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Function GetResourceStream(p As String) As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	    End Class
+	{{endregion}}
 
 
 

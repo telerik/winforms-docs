@@ -63,48 +63,7 @@ When the document is measured (for example, shown in a __RadRichTextEditor__), y
 	
 	        Me.radRichTextEditor1.InsertReadOnlyRange()
 	
-	        '#End Region
-	
-	        '#Region "add"
-	
-	        Dim document As New RadDocument()
-	        Dim section As New Section()
-	        Dim paragraph As New Paragraph()
-	        Dim span As New Span("Content prior range[")
-	        Dim span2 As New Span("]Content after range")
-	        Dim readOnlyContent As New Span("READ ONLY")
-	
-	        Dim rangeStart As New ReadOnlyRangeStart()
-	        Dim rangeEnd As New ReadOnlyRangeEnd()
-	        rangeEnd.PairWithStart(rangeStart)
-	
-	        paragraph.Inlines.Add(span)
-	        paragraph.Inlines.Add(rangeStart)
-	        paragraph.Inlines.Add(readOnlyContent)
-	        paragraph.Inlines.Add(rangeEnd)
-	        paragraph.Inlines.Add(span2)
-	
-	        section.Blocks.Add(paragraph)
-	        document.Sections.Add(section)
-	
-	        '#End Region
-	
-	        '#Region "delete"
-	
-	        Me.radRichTextEditor1.DeleteReadOnlyRange()
-	
-	        '#End Region
-	
-	        '#Region "start"
-	
-	        Dim start As ReadOnlyRangeStart = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of ReadOnlyRangeStart)().Where(Function(x) x.Tag = "ReadOnly").FirstOrDefault()
-	        If start IsNot Nothing Then
-	            Me.radRichTextEditor1.DeleteReadOnlyRange(start)
-	        End If
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -170,24 +129,7 @@ As opposed to when inserting with one of the methods of __RadRichTextEditor__, w
 	        section.Blocks.Add(paragraph)
 	        document.Sections.Add(section)
 	
-	        '#End Region
-	
-	        '#Region "delete"
-	
-	        Me.radRichTextEditor1.DeleteReadOnlyRange()
-	
-	        '#End Region
-	
-	        '#Region "start"
-	
-	        Dim start As ReadOnlyRangeStart = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of ReadOnlyRangeStart)().Where(Function(x) x.Tag = "ReadOnly").FirstOrDefault()
-	        If start IsNot Nothing Then
-	            Me.radRichTextEditor1.DeleteReadOnlyRange(start)
-	        End If
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -213,18 +155,7 @@ In order to remove a read only range, you should simply call the __DeleteReadOnl
 	
 	        Me.radRichTextEditor1.DeleteReadOnlyRange()
 	
-	        '#End Region
-	
-	        '#Region "start"
-	
-	        Dim start As ReadOnlyRangeStart = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of ReadOnlyRangeStart)().Where(Function(x) x.Tag = "ReadOnly").FirstOrDefault()
-	        If start IsNot Nothing Then
-	            Me.radRichTextEditor1.DeleteReadOnlyRange(start)
-	        End If
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -259,9 +190,7 @@ Additionally, if you can obtain a reference to a particular __ReadOnlyRangeStart
 	            Me.radRichTextEditor1.DeleteReadOnlyRange(start)
 	        End If
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -126,105 +126,7 @@ __RadListView__  supports drag and drop functionality from another control,
 	        e.Effect = DragDropEffects.Copy
 	    End Sub
 	
-	    '#End Region
-	
-	    '#Region "ListBoxToListViewDragDrop"
-	
-	
-	    Private Sub radListView1_DragDrop(sender As Object, e As DragEventArgs)
-	        Dim point As Point = Me.RadListView1.PointToClient(New Point(e.X, e.Y))
-	        Dim targetItem As BaseListViewVisualItem = TryCast(Me.RadListView1.ElementTree.GetElementAtPoint(point), BaseListViewVisualItem)
-	        Dim draggedText As String = e.Data.GetData(GetType(String)).ToString()
-	
-	        'you are dropping over an item
-	        If targetItem IsNot Nothing Then
-	            Dim targetIndex As Integer = Me.RadListView1.Items.IndexOf(targetItem.Data)
-	            Me.RadListView1.Items.Insert(targetIndex, New ListViewDataItem(draggedText))
-	        Else
-	            ' you are dropping over the ListViewElement
-	            Me.RadListView1.Items.Add(New ListViewDataItem(draggedText))
-	        End If
-	        Dim indexToRemove As Integer = Me.ListBox1.Items.IndexOf(draggedText)
-	        If indexToRemove > -1 Then
-	            Me.ListBox1.Items.RemoveAt(indexToRemove)
-	        End If
-	        Me.mouseDownPosition = point.Empty
-	        Me.isDragging = False
-	    End Sub
-	
-	    Private Sub listBox1_MouseUp(sender As Object, e As MouseEventArgs)
-	        Me.mouseDownPosition = Point.Empty
-	        Me.isDragging = False
-	    End Sub
-	
-	    '#End Region
-	    
-	    '#End Region
-	
-	    '#Region "ListViewToListBox"
-	
-	
-	    '#Region "ListViewToListBoxStart"
-	
-	    Private lastMouseDownLocation As Point
-	
-	    Private Sub radListView1_MouseDown(sender As Object, e As MouseEventArgs)
-	        Me.lastMouseDownLocation = e.Location
-	    End Sub
-	
-	    Private Sub radListView1_MouseMove(sender As Object, e As MouseEventArgs)
-	        If e.Button <> MouseButtons.Left Then
-	            Return
-	        End If
-	        Dim draggedItem As BaseListViewVisualItem = TryCast(RadListView1.ElementTree.GetElementAtPoint(e.Location), BaseListViewVisualItem)
-	        If draggedItem IsNot Nothing AndAlso _
-	        IsRealDrag(Me.lastMouseDownLocation, e.Location) Then
-	            RadListView1.Capture = False
-	            RadListView1.DoDragDrop(draggedItem.Data, DragDropEffects.Move)
-	        End If
-	    End Sub
-	
-	    Private Function IsRealDrag(current As Point, capture As Point) As Boolean
-	        Dim dragSize As Size = SystemInformation.DragSize
-	        Dim dragRect As New Rectangle(capture.X - dragSize.Width / 2, _
-	                                      capture.Y - dragSize.Height / 2, dragSize.Width, dragSize.Height)
-	        Return Not dragRect.Contains(current)
-	    End Function
-	
-	    Private Sub listBox1_DragEnter(sender As Object, e As DragEventArgs)
-	        e.Effect = DragDropEffects.Move
-	    End Sub
-	
-	    '#End Region
-	
-	    '#Region "ListViewToListBoxDrop"
-	
-	    Private Sub listBox1_DragDrop(sender As Object, e As DragEventArgs)
-	        Dim draggedItem As ListViewDataItem = TryCast(e.Data.GetData(GetType(ListViewDataItem)), ListViewDataItem)
-	        If draggedItem IsNot Nothing Then
-	            Dim point As Point = Me.ListBox1.PointToClient(New Point(e.X, e.Y))
-	            Dim targetIndex As Integer = Me.ListBox1.IndexFromPoint(point)
-	            If targetIndex > -1 Then
-	                Me.ListBox1.Items.Insert(targetIndex, draggedItem.Text)
-	            Else
-	                Me.ListBox1.Items.Add(draggedItem.Text)
-	            End If
-	            Dim sourceIndex As Integer = Me.RadListView1.Items.IndexOf(draggedItem)
-	            If sourceIndex > -1 Then
-	                Me.RadListView1.Items.RemoveAt(sourceIndex)
-	            End If
-	        End If
-	        Me.lastMouseDownLocation = Point.Empty
-	    End Sub
-	
-	    Private Sub radListView1_MouseUp(sender As Object, e As MouseEventArgs)
-	        Me.lastMouseDownLocation = Point.Empty
-	    End Sub
-	
-	    '#End Region
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -303,74 +205,7 @@ __RadListView__  supports drag and drop functionality from another control,
 	        Me.isDragging = False
 	    End Sub
 	
-	    '#End Region
-	    
-	    '#End Region
-	
-	    '#Region "ListViewToListBox"
-	
-	
-	    '#Region "ListViewToListBoxStart"
-	
-	    Private lastMouseDownLocation As Point
-	
-	    Private Sub radListView1_MouseDown(sender As Object, e As MouseEventArgs)
-	        Me.lastMouseDownLocation = e.Location
-	    End Sub
-	
-	    Private Sub radListView1_MouseMove(sender As Object, e As MouseEventArgs)
-	        If e.Button <> MouseButtons.Left Then
-	            Return
-	        End If
-	        Dim draggedItem As BaseListViewVisualItem = TryCast(RadListView1.ElementTree.GetElementAtPoint(e.Location), BaseListViewVisualItem)
-	        If draggedItem IsNot Nothing AndAlso _
-	        IsRealDrag(Me.lastMouseDownLocation, e.Location) Then
-	            RadListView1.Capture = False
-	            RadListView1.DoDragDrop(draggedItem.Data, DragDropEffects.Move)
-	        End If
-	    End Sub
-	
-	    Private Function IsRealDrag(current As Point, capture As Point) As Boolean
-	        Dim dragSize As Size = SystemInformation.DragSize
-	        Dim dragRect As New Rectangle(capture.X - dragSize.Width / 2, _
-	                                      capture.Y - dragSize.Height / 2, dragSize.Width, dragSize.Height)
-	        Return Not dragRect.Contains(current)
-	    End Function
-	
-	    Private Sub listBox1_DragEnter(sender As Object, e As DragEventArgs)
-	        e.Effect = DragDropEffects.Move
-	    End Sub
-	
-	    '#End Region
-	
-	    '#Region "ListViewToListBoxDrop"
-	
-	    Private Sub listBox1_DragDrop(sender As Object, e As DragEventArgs)
-	        Dim draggedItem As ListViewDataItem = TryCast(e.Data.GetData(GetType(ListViewDataItem)), ListViewDataItem)
-	        If draggedItem IsNot Nothing Then
-	            Dim point As Point = Me.ListBox1.PointToClient(New Point(e.X, e.Y))
-	            Dim targetIndex As Integer = Me.ListBox1.IndexFromPoint(point)
-	            If targetIndex > -1 Then
-	                Me.ListBox1.Items.Insert(targetIndex, draggedItem.Text)
-	            Else
-	                Me.ListBox1.Items.Add(draggedItem.Text)
-	            End If
-	            Dim sourceIndex As Integer = Me.RadListView1.Items.IndexOf(draggedItem)
-	            If sourceIndex > -1 Then
-	                Me.RadListView1.Items.RemoveAt(sourceIndex)
-	            End If
-	        End If
-	        Me.lastMouseDownLocation = Point.Empty
-	    End Sub
-	
-	    Private Sub radListView1_MouseUp(sender As Object, e As MouseEventArgs)
-	        Me.lastMouseDownLocation = Point.Empty
-	    End Sub
-	
-	    '#End Region
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -456,36 +291,7 @@ __RadListView__  supports drag and drop functionality from another control,
 	        e.Effect = DragDropEffects.Move
 	    End Sub
 	
-	    '#End Region
-	
-	    '#Region "ListViewToListBoxDrop"
-	
-	    Private Sub listBox1_DragDrop(sender As Object, e As DragEventArgs)
-	        Dim draggedItem As ListViewDataItem = TryCast(e.Data.GetData(GetType(ListViewDataItem)), ListViewDataItem)
-	        If draggedItem IsNot Nothing Then
-	            Dim point As Point = Me.ListBox1.PointToClient(New Point(e.X, e.Y))
-	            Dim targetIndex As Integer = Me.ListBox1.IndexFromPoint(point)
-	            If targetIndex > -1 Then
-	                Me.ListBox1.Items.Insert(targetIndex, draggedItem.Text)
-	            Else
-	                Me.ListBox1.Items.Add(draggedItem.Text)
-	            End If
-	            Dim sourceIndex As Integer = Me.RadListView1.Items.IndexOf(draggedItem)
-	            If sourceIndex > -1 Then
-	                Me.RadListView1.Items.RemoveAt(sourceIndex)
-	            End If
-	        End If
-	        Me.lastMouseDownLocation = Point.Empty
-	    End Sub
-	
-	    Private Sub radListView1_MouseUp(sender As Object, e As MouseEventArgs)
-	        Me.lastMouseDownLocation = Point.Empty
-	    End Sub
-	
-	    '#End Region
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -555,9 +361,6 @@ __RadListView__  supports drag and drop functionality from another control,
 	        Me.lastMouseDownLocation = Point.Empty
 	    End Sub
 	
-	    '#End Region
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 

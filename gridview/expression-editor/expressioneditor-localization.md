@@ -155,7 +155,7 @@ You can localize the UI elements of RadExpressionEditor
 	        Return String.Empty
 	    End Function
 	End Class
-	'#End Region
+	{{endregion}}
 
 
 

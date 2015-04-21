@@ -124,7 +124,7 @@ Next, you should build your solution and then ILMerge the built application exec
 
 The MergedApplicationExecutable.exe is now a stand-alone application executable that does not need any additional references to the Telerik assemblies.
 
-## Building the Telerik assembles from source code
+## Building the Telerik assembles from source code - using the OemAssemblyName
 
 This method requires modifications to the source files,
           which are distributed as part of the Subscription license.
@@ -168,7 +168,7 @@ Once you finish these steps, and if you or someone else tries to use that assemb
           from another application the evaluation dialog will appear (randomly).
         ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 005](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows005.png)
 
-## Public Token Key Deployment
+## Building the Telerik assembles from source code - using the OemPublicKeyToken
 
 This section demonstrates how to deploy a project with a public token key. We will assume that you have downloaded and extracted your source code distribution in
           C:\Telerik UI for WinForms Source\RadControlsVS2010.sln:

@@ -44,9 +44,6 @@ RadPdfViewer also exposes the two known methods which allow you to easily print 
 	        Me.RadPdfViewer1.Print()
 	        Me.RadPdfViewer1.PrintPreview()
 	
-	        '#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 

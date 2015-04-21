@@ -316,42 +316,7 @@ By using the HTML-like text formatting functionality, the __RadLabel__ can displ
 	        Me.RadLabel1.Text = "<html><size=12><a href=www.telerik.com>Telerik</a>" & Environment.NewLine & _
 	        "<a href=www.telerik.com/help/winforms>Documentation</a> " & Environment.NewLine & _
 	        "<a href=www.telerik.com/forums/winforms>Forum</a> "
-	        '#End Region
-	
-	        AddHandler Me.RadLabel1.MouseDown, AddressOf RadLabel1_MouseDown
-	    End Sub
-	    '#Region "MouseDown"
-	
-	    Private Sub RadLabel1_MouseDown(sender As Object, e As MouseEventArgs)
-	        Dim text As TextPrimitiveHtmlImpl = TryCast(Me.RadLabel1.LabelElement.LabelText.Impl, TextPrimitiveHtmlImpl)
-	        Dim textBlock As FormattedTextBlock = text.TextBlock
-	        Dim clickedLink As FormattedText = IsMouseOverBlock(textBlock, e)
-	        If clickedLink IsNot Nothing Then
-	            MessageBox.Show(clickedLink.Text + " pressed")
-	        End If
-	    End Sub
-	
-	    Private Function IsMouseOverBlock(textBlock As FormattedTextBlock, e As MouseEventArgs) As FormattedText
-	        Dim elementAtPoint As Point = Me.RadLabel1.LabelElement.PointFromControl(e.Location)
-	        Dim linesCount As Integer = textBlock.Lines.Count
-	        For i As Integer = 0 To linesCount - 1
-	            Dim textLine As TextLine = textBlock.Lines(i)
-	            Dim textLineCount As Integer = textLine.List.Count
-	            For j As Integer = 0 To textLineCount - 1
-	                Dim formattedText As FormattedText = textLine.List(j)
-	                If formattedText.DrawingRectangle.Contains(elementAtPoint) Then
-	                    'found link under mouse
-	                    Return formattedText
-	                End If
-	            Next
-	        Next
-	
-	        Return Nothing
-	    End Function
-	
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 ![tpf-html-like-text-formatting 003](images/tpf-html-like-text-formatting003.png)
 
@@ -433,8 +398,6 @@ It is possible to detect which link among several ones is clicked within the __R
 	        Return Nothing
 	    End Function
 	
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 

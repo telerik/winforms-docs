@@ -47,9 +47,6 @@ You can export the __RadChartVew__ content by using one of the following
 	        Dim filePath As String = "..\..\..\exprtedChart.png"
 	        Me.RadChartView1.ExportToImage(filePath, Me.RadChartView1.Size, System.Drawing.Imaging.ImageFormat.Png)
 	
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![chartview-features-export 001](images/chartview-features-export001.png)

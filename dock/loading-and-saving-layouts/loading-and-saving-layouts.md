@@ -36,76 +36,7 @@ To save a layout, call the __RadDock.SaveToXML()__ method:
 
 {{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=saveLayout}}
 	        Me.RadDock1.SaveToXml("c:\layout1.xml")
-	        '#End Region
-	
-	        '#Region "loadLayout"
-	        Me.RadDock1.LoadFromXml("c:\layout1.xml")
-	        '#End Region
-	
-	        AddHandler Load, AddressOf MainForm_Load
-	        AddHandler FormClosing, AddressOf MainForm_FormClosing
-	    End Sub
-	
-	    '#Region "formLoad"
-	    Private Sub MainForm_Load(ByVal sender As Object, ByVal e As EventArgs)
-	        If Not File.Exists(dockLayoutPath) Then
-	            InitializeLayout()
-	        Else
-	            Me.RadDock1.LoadFromXml(dockLayoutPath)
-	            LoadContent()
-	        End If
-	    End Sub
-	
-	    Private Sub InitializeLayout()
-	        Me.RadDock1.MainDocumentContainerVisible = False
-	
-	        Dim afW As HostWindow = Me.RadDock1.DockControl(New AvailableFlights(), DockPosition.Left)
-	        afW.Text = "Available Flights"
-	        Dim bfW As HostWindow = Me.RadDock1.DockControl(New BookFlight(), DockPosition.Left)
-	        bfW.Text = "Book a Flight"
-	        Dim fsW As HostWindow = Me.RadDock1.DockControl(New FlightsSummary(), DockPosition.Left)
-	        fsW.Text = "Flight Summary"
-	    End Sub
-	    '#End Region
-	
-	    '#Region "formClosing"
-	    Private Sub MainForm_FormClosing(ByVal sender As Object, ByVal e As FormClosingEventArgs)
-	        Me.RadDock1.SaveToXml(dockLayoutPath)
-	    End Sub
-	    '#End Region
-	
-	    '#Region "loadContent"
-	    Private Sub LoadContent()
-	        For i As Integer = 0 To Me.RadDock1.DockWindows.Count - 1
-	            Dim hw As HostWindow = TryCast(Me.RadDock1.DockWindows(i), HostWindow)
-	            If hw IsNot Nothing Then
-	                If hw.Name.StartsWith("Available") Then
-	                    hw.LoadContent(New AvailableFlights())
-	                    hw.Text = "Available Flights"
-	                End If
-	
-	                If hw.Name.StartsWith("Book") Then
-	                    hw.LoadContent(New BookFlight())
-	                    hw.Text = "Book a Flight"
-	                End If
-	
-	                If hw.Name.StartsWith("Flight") Then
-	                    hw.LoadContent(New FlightsSummary())
-	                    hw.Text = "Flight Summary"
-	                End If
-	            End If
-	        Next i
-	    End Sub
-	    '#End Region
-	    '#Region "Serializing"
-	    Private Sub radDock1_DockWindowSerializing(ByVal sender As Object, ByVal e As DockWindowCancelEventArgs)
-	        If e.NewWindow.Text = "Window Top" Then
-	            e.Cancel = True
-	        End If
-	    End Sub
-	    '#End Region
-	End Class
-	
+	{{endregion}}
 
 
 
@@ -134,9 +65,7 @@ You can use the __DockWindowSerializing__ event to exclude windows from the save
 	            e.Cancel = True
 	        End If
 	    End Sub
-	    '#End Region
-	End Class
-	
+	{{endregion}}
 
 
 
@@ -157,72 +86,7 @@ To load a layout, call the __RadDock.LoadFromXML()__method:
 
 {{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=loadLayout}}
 	        Me.RadDock1.LoadFromXml("c:\layout1.xml")
-	        '#End Region
-	
-	        AddHandler Load, AddressOf MainForm_Load
-	        AddHandler FormClosing, AddressOf MainForm_FormClosing
-	    End Sub
-	
-	    '#Region "formLoad"
-	    Private Sub MainForm_Load(ByVal sender As Object, ByVal e As EventArgs)
-	        If Not File.Exists(dockLayoutPath) Then
-	            InitializeLayout()
-	        Else
-	            Me.RadDock1.LoadFromXml(dockLayoutPath)
-	            LoadContent()
-	        End If
-	    End Sub
-	
-	    Private Sub InitializeLayout()
-	        Me.RadDock1.MainDocumentContainerVisible = False
-	
-	        Dim afW As HostWindow = Me.RadDock1.DockControl(New AvailableFlights(), DockPosition.Left)
-	        afW.Text = "Available Flights"
-	        Dim bfW As HostWindow = Me.RadDock1.DockControl(New BookFlight(), DockPosition.Left)
-	        bfW.Text = "Book a Flight"
-	        Dim fsW As HostWindow = Me.RadDock1.DockControl(New FlightsSummary(), DockPosition.Left)
-	        fsW.Text = "Flight Summary"
-	    End Sub
-	    '#End Region
-	
-	    '#Region "formClosing"
-	    Private Sub MainForm_FormClosing(ByVal sender As Object, ByVal e As FormClosingEventArgs)
-	        Me.RadDock1.SaveToXml(dockLayoutPath)
-	    End Sub
-	    '#End Region
-	
-	    '#Region "loadContent"
-	    Private Sub LoadContent()
-	        For i As Integer = 0 To Me.RadDock1.DockWindows.Count - 1
-	            Dim hw As HostWindow = TryCast(Me.RadDock1.DockWindows(i), HostWindow)
-	            If hw IsNot Nothing Then
-	                If hw.Name.StartsWith("Available") Then
-	                    hw.LoadContent(New AvailableFlights())
-	                    hw.Text = "Available Flights"
-	                End If
-	
-	                If hw.Name.StartsWith("Book") Then
-	                    hw.LoadContent(New BookFlight())
-	                    hw.Text = "Book a Flight"
-	                End If
-	
-	                If hw.Name.StartsWith("Flight") Then
-	                    hw.LoadContent(New FlightsSummary())
-	                    hw.Text = "Flight Summary"
-	                End If
-	            End If
-	        Next i
-	    End Sub
-	    '#End Region
-	    '#Region "Serializing"
-	    Private Sub radDock1_DockWindowSerializing(ByVal sender As Object, ByVal e As DockWindowCancelEventArgs)
-	        If e.NewWindow.Text = "Window Top" Then
-	            e.Cancel = True
-	        End If
-	    End Sub
-	    '#End Region
-	End Class
-	
+	{{endregion}}
 
 
 <table><th><tr><td>

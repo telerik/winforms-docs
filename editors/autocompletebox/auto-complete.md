@@ -136,42 +136,7 @@ To use auto-completion without specifying a data source, you need to populate
 	        items.Add(New RadListDataItem("James Stone", "james.stone@manystones.com"))
 	        items.Add(New RadListDataItem("Samuel Jackson", "samuel.jackson@nojackson.com"))
 	    End Sub
-	#End Region
-	
-	
-	
-	#Region "replaceTokens"
-	    Private Sub radAutoCompleteBox1_CreateTextBlock(sender As Object, e As CreateTextBlockEventArgs)
-	        If TypeOf e.TextBlock Is TokenizedTextBlockElement Then
-	            e.TextBlock = New MyTokenizedTextBlockElement()
-	        End If
-	    End Sub
-	#End Region
-	
-	
-	#Region "customTokens"
-	    Public Class MyTokenizedTextBlockElement
-	        Inherits TokenizedTextBlockElement
-	        Private checkBox As RadCheckBoxElement
-	
-	        Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-	            Get
-	                Return GetType(TokenizedTextBlockElement)
-	            End Get
-	        End Property
-	
-	        Protected Overrides Sub CreateChildElements()
-	            MyBase.CreateChildElements()
-	
-	            Dim index As Integer = Me.Children.IndexOf(Me.RemoveButton)
-	            Me.checkBox = New RadCheckBoxElement()
-	            Me.checkBox.StretchVertically = True
-	            Me.checkBox.StretchHorizontally = False
-	            Me.Children.Insert(index, Me.checkBox)
-	        End Sub
-	    End Class
-	#End Region
-	End Class
+	{{endregion}}
 
 
 

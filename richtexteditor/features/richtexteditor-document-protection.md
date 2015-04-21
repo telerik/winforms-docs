@@ -59,71 +59,7 @@ The users that will be able to edit the document and the groups they are in can 
 	
 	        Me.radRichTextEditor1.Users = New PermissionInfoCollection() From {PermissionInfo.CreateEveryonePermissionInfo(), New PermissionInfo("jmiller", PermissionType.Individual, "James Miller"), New PermissionInfo("jsmith", PermissionType.Individual, "John Smith"), New PermissionInfo("rbrown", PermissionType.Individual, "Robert Brown"), New PermissionInfo("Administrators", PermissionType.Group, "Administrators")}
 	
-	        '#End Region
-	
-	        '#Region "current"
-	
-	        Me.radRichTextEditor1.CurrentUser = New UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com")
-	
-	        '#End Region
-	
-	        '#Region "usersList"
-	
-	        Dim CurrentUsers As New List(Of UserInfo)() From {
-	            New UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com"),
-	            New UserInfo("Administrators", "John Smith", "jsmith", "jsmith@example.com"),
-	            New UserInfo("Administrators", "Robert Brown", "rbrown", "rbrown@example.com")
-	        }
-	
-	        '#End Region
-	
-	        '#Region "password"
-	
-	        Me.radRichTextEditor1.Document.ProtectDocument(DocumentProtectionMode.ReadOnly, "password")
-	
-	        '#End Region
-	
-	        '#Region "combo1"
-	
-	        Dim dropdown1 As New RadDropDownList()
-	        dropdown1.Location = New Point(10, 10)
-	        Me.Controls.Add(dropdown1)
-	        AddHandler dropdown1.SelectedIndexChanged, AddressOf Me.dropdown1_SelectedIndexChanged
-	
-	        '#End Region
-	
-	        '#Region "combo2"
-	
-	        dropdown1.DataSource = CurrentUsers
-	        dropdown1.DisplayMember = "Username"
-	
-	        '#End Region
-	
-	        '#Region "unprotect"
-	
-	        Me.radRichTextEditor1.Document.UnprotectDocument("password")
-	
-	        '#End Region
-	
-	        '#Region "permissions"
-	
-	        Dim info As New PermissionRangeInfo()
-	        info.Type = PermissionType.Individual
-	        info.Name = Me.radRichTextEditor1.CurrentUser.Username
-	        Dim infos As New List(Of PermissionRangeInfo)() From {info}
-	        Me.radRichTextEditor1.InsertPermissionRange(infos)
-	
-	        '#End Region
-	    End Sub
-	
-	#Region "combo3"
-	
-	    Private Sub dropdown1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-	        Me.radRichTextEditor1.CurrentUser = TryCast(DirectCast(sender, RadDropDownList).SelectedValue, UserInfo)
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -158,65 +94,7 @@ The current user of the document is set using the __CurrentUser__ property of th
 	
 	        Me.radRichTextEditor1.CurrentUser = New UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com")
 	
-	        '#End Region
-	
-	        '#Region "usersList"
-	
-	        Dim CurrentUsers As New List(Of UserInfo)() From {
-	            New UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com"),
-	            New UserInfo("Administrators", "John Smith", "jsmith", "jsmith@example.com"),
-	            New UserInfo("Administrators", "Robert Brown", "rbrown", "rbrown@example.com")
-	        }
-	
-	        '#End Region
-	
-	        '#Region "password"
-	
-	        Me.radRichTextEditor1.Document.ProtectDocument(DocumentProtectionMode.ReadOnly, "password")
-	
-	        '#End Region
-	
-	        '#Region "combo1"
-	
-	        Dim dropdown1 As New RadDropDownList()
-	        dropdown1.Location = New Point(10, 10)
-	        Me.Controls.Add(dropdown1)
-	        AddHandler dropdown1.SelectedIndexChanged, AddressOf Me.dropdown1_SelectedIndexChanged
-	
-	        '#End Region
-	
-	        '#Region "combo2"
-	
-	        dropdown1.DataSource = CurrentUsers
-	        dropdown1.DisplayMember = "Username"
-	
-	        '#End Region
-	
-	        '#Region "unprotect"
-	
-	        Me.radRichTextEditor1.Document.UnprotectDocument("password")
-	
-	        '#End Region
-	
-	        '#Region "permissions"
-	
-	        Dim info As New PermissionRangeInfo()
-	        info.Type = PermissionType.Individual
-	        info.Name = Me.radRichTextEditor1.CurrentUser.Username
-	        Dim infos As New List(Of PermissionRangeInfo)() From {info}
-	        Me.radRichTextEditor1.InsertPermissionRange(infos)
-	
-	        '#End Region
-	    End Sub
-	
-	#Region "combo3"
-	
-	    Private Sub dropdown1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-	        Me.radRichTextEditor1.CurrentUser = TryCast(DirectCast(sender, RadDropDownList).SelectedValue, UserInfo)
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -249,55 +127,7 @@ You can also create a collection with the UserInfos that will be interracting wi
 	            New UserInfo("Administrators", "Robert Brown", "rbrown", "rbrown@example.com")
 	        }
 	
-	        '#End Region
-	
-	        '#Region "password"
-	
-	        Me.radRichTextEditor1.Document.ProtectDocument(DocumentProtectionMode.ReadOnly, "password")
-	
-	        '#End Region
-	
-	        '#Region "combo1"
-	
-	        Dim dropdown1 As New RadDropDownList()
-	        dropdown1.Location = New Point(10, 10)
-	        Me.Controls.Add(dropdown1)
-	        AddHandler dropdown1.SelectedIndexChanged, AddressOf Me.dropdown1_SelectedIndexChanged
-	
-	        '#End Region
-	
-	        '#Region "combo2"
-	
-	        dropdown1.DataSource = CurrentUsers
-	        dropdown1.DisplayMember = "Username"
-	
-	        '#End Region
-	
-	        '#Region "unprotect"
-	
-	        Me.radRichTextEditor1.Document.UnprotectDocument("password")
-	
-	        '#End Region
-	
-	        '#Region "permissions"
-	
-	        Dim info As New PermissionRangeInfo()
-	        info.Type = PermissionType.Individual
-	        info.Name = Me.radRichTextEditor1.CurrentUser.Username
-	        Dim infos As New List(Of PermissionRangeInfo)() From {info}
-	        Me.radRichTextEditor1.InsertPermissionRange(infos)
-	
-	        '#End Region
-	    End Sub
-	
-	#Region "combo3"
-	
-	    Private Sub dropdown1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-	        Me.radRichTextEditor1.CurrentUser = TryCast(DirectCast(sender, RadDropDownList).SelectedValue, UserInfo)
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -325,40 +155,7 @@ you can declare a RadDropDownList which will be used to change the current user 
 	        Me.Controls.Add(dropdown1)
 	        AddHandler dropdown1.SelectedIndexChanged, AddressOf Me.dropdown1_SelectedIndexChanged
 	
-	        '#End Region
-	
-	        '#Region "combo2"
-	
-	        dropdown1.DataSource = CurrentUsers
-	        dropdown1.DisplayMember = "Username"
-	
-	        '#End Region
-	
-	        '#Region "unprotect"
-	
-	        Me.radRichTextEditor1.Document.UnprotectDocument("password")
-	
-	        '#End Region
-	
-	        '#Region "permissions"
-	
-	        Dim info As New PermissionRangeInfo()
-	        info.Type = PermissionType.Individual
-	        info.Name = Me.radRichTextEditor1.CurrentUser.Username
-	        Dim infos As New List(Of PermissionRangeInfo)() From {info}
-	        Me.radRichTextEditor1.InsertPermissionRange(infos)
-	
-	        '#End Region
-	    End Sub
-	
-	#Region "combo3"
-	
-	    Private Sub dropdown1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-	        Me.radRichTextEditor1.CurrentUser = TryCast(DirectCast(sender, RadDropDownList).SelectedValue, UserInfo)
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -382,33 +179,7 @@ and populate it like this:
 	        dropdown1.DataSource = CurrentUsers
 	        dropdown1.DisplayMember = "Username"
 	
-	        '#End Region
-	
-	        '#Region "unprotect"
-	
-	        Me.radRichTextEditor1.Document.UnprotectDocument("password")
-	
-	        '#End Region
-	
-	        '#Region "permissions"
-	
-	        Dim info As New PermissionRangeInfo()
-	        info.Type = PermissionType.Individual
-	        info.Name = Me.radRichTextEditor1.CurrentUser.Username
-	        Dim infos As New List(Of PermissionRangeInfo)() From {info}
-	        Me.radRichTextEditor1.InsertPermissionRange(infos)
-	
-	        '#End Region
-	    End Sub
-	
-	#Region "combo3"
-	
-	    Private Sub dropdown1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-	        Me.radRichTextEditor1.CurrentUser = TryCast(DirectCast(sender, RadDropDownList).SelectedValue, UserInfo)
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -435,8 +206,7 @@ Then, when the selected item of the combo changes, the CurrentUser of the editor
 	        Me.radRichTextEditor1.CurrentUser = TryCast(DirectCast(sender, RadDropDownList).SelectedValue, UserInfo)
 	    End Sub
 	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -471,49 +241,7 @@ It is also possible to toggle document protection in code-behind, without showin
 	
 	        Me.radRichTextEditor1.Document.ProtectDocument(DocumentProtectionMode.ReadOnly, "password")
 	
-	        '#End Region
-	
-	        '#Region "combo1"
-	
-	        Dim dropdown1 As New RadDropDownList()
-	        dropdown1.Location = New Point(10, 10)
-	        Me.Controls.Add(dropdown1)
-	        AddHandler dropdown1.SelectedIndexChanged, AddressOf Me.dropdown1_SelectedIndexChanged
-	
-	        '#End Region
-	
-	        '#Region "combo2"
-	
-	        dropdown1.DataSource = CurrentUsers
-	        dropdown1.DisplayMember = "Username"
-	
-	        '#End Region
-	
-	        '#Region "unprotect"
-	
-	        Me.radRichTextEditor1.Document.UnprotectDocument("password")
-	
-	        '#End Region
-	
-	        '#Region "permissions"
-	
-	        Dim info As New PermissionRangeInfo()
-	        info.Type = PermissionType.Individual
-	        info.Name = Me.radRichTextEditor1.CurrentUser.Username
-	        Dim infos As New List(Of PermissionRangeInfo)() From {info}
-	        Me.radRichTextEditor1.InsertPermissionRange(infos)
-	
-	        '#End Region
-	    End Sub
-	
-	#Region "combo3"
-	
-	    Private Sub dropdown1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-	        Me.radRichTextEditor1.CurrentUser = TryCast(DirectCast(sender, RadDropDownList).SelectedValue, UserInfo)
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -535,27 +263,7 @@ The reverse operations can be executed like this:
 	
 	        Me.radRichTextEditor1.Document.UnprotectDocument("password")
 	
-	        '#End Region
-	
-	        '#Region "permissions"
-	
-	        Dim info As New PermissionRangeInfo()
-	        info.Type = PermissionType.Individual
-	        info.Name = Me.radRichTextEditor1.CurrentUser.Username
-	        Dim infos As New List(Of PermissionRangeInfo)() From {info}
-	        Me.radRichTextEditor1.InsertPermissionRange(infos)
-	
-	        '#End Region
-	    End Sub
-	
-	#Region "combo3"
-	
-	    Private Sub dropdown1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-	        Me.radRichTextEditor1.CurrentUser = TryCast(DirectCast(sender, RadDropDownList).SelectedValue, UserInfo)
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -594,17 +302,7 @@ Here is an example:
 	        Dim infos As New List(Of PermissionRangeInfo)() From {info}
 	        Me.radRichTextEditor1.InsertPermissionRange(infos)
 	
-	        '#End Region
-	    End Sub
-	
-	#Region "combo3"
-	
-	    Private Sub dropdown1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-	        Me.radRichTextEditor1.CurrentUser = TryCast(DirectCast(sender, RadDropDownList).SelectedValue, UserInfo)
-	    End Sub
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 

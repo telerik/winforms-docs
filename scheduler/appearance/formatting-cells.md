@@ -111,44 +111,7 @@ Let's now format some data cells. We will make red the SchedulerCellElements
 	            End If
 	        End If
 	    End Sub
-	    '#End Region
-	
-	    '#Region "resettingRedColor"
-	    Private Sub radScheduler1_CellFormatting2(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.SchedulerCellEventArgs)
-	        If e.CellElement.Date.Month = 4 AndAlso e.CellElement.Date.Day = 13 Then
-	            If Not (TypeOf e.CellElement Is SchedulerHeaderCellElement) Then
-	                e.CellElement.BackColor = Color.Red
-	            End If
-	        Else
-	            If Not (TypeOf e.CellElement Is SchedulerHeaderCellElement) Then
-	                e.CellElement.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local)
-	            End If
-	        End If
-	    End Sub
-	    '#End Region
-	
-	    '#Region "headerCellFormatting"
-	    Private Sub radScheduler1_CellFormatting3(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.SchedulerCellEventArgs)
-	        If TypeOf e.CellElement Is SchedulerHeaderCellElement Then
-	            If e.CellElement.[Date].Month = DateTime.Now.Month AndAlso e.CellElement.[Date].Day = DateTime.Now.Day Then
-	                If TypeOf e.CellElement.Parent Is DayViewHeader Then
-	                    e.CellElement.Text = "Birthday!"
-	                    e.CellElement.BackColor = Color.Yellow
-	                    e.CellElement.GradientStyle = GradientStyles.Solid
-	                    e.CellElement.DrawFill = True
-	                ElseIf TypeOf e.CellElement.Parent Is DayViewAllDayHeader AndAlso e.CellElement.Text <> "Local" Then
-	                    e.CellElement.DrawFill = True
-	                    e.CellElement.BackColor = Color.DarkRed
-	                Else
-	                    e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
-	                    e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
-	                    e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
-	                End If
-	            End If
-	        End If
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -201,30 +164,7 @@ As you can see, undesired cells become red as well. RadScheduler is using elemen
 	            End If
 	        End If
 	    End Sub
-	    '#End Region
-	
-	    '#Region "headerCellFormatting"
-	    Private Sub radScheduler1_CellFormatting3(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.SchedulerCellEventArgs)
-	        If TypeOf e.CellElement Is SchedulerHeaderCellElement Then
-	            If e.CellElement.[Date].Month = DateTime.Now.Month AndAlso e.CellElement.[Date].Day = DateTime.Now.Day Then
-	                If TypeOf e.CellElement.Parent Is DayViewHeader Then
-	                    e.CellElement.Text = "Birthday!"
-	                    e.CellElement.BackColor = Color.Yellow
-	                    e.CellElement.GradientStyle = GradientStyles.Solid
-	                    e.CellElement.DrawFill = True
-	                ElseIf TypeOf e.CellElement.Parent Is DayViewAllDayHeader AndAlso e.CellElement.Text <> "Local" Then
-	                    e.CellElement.DrawFill = True
-	                    e.CellElement.BackColor = Color.DarkRed
-	                Else
-	                    e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
-	                    e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
-	                    e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
-	                End If
-	            End If
-	        End If
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -296,8 +236,7 @@ We are going to make the header cells that displays the text orange, while
 	            End If
 	        End If
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 

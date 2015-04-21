@@ -46,21 +46,7 @@ __Example 1__ illustrates how to create a workbook from scratch and protect it u
 	
 	        workbook.Protect("telerik")
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Shared Sub WorkbookUnprotect()
-	        '#Region "radspreadprocessing-features-protection-workbook_1"
-	        Dim workbook As New Workbook()
-	        workbook.Worksheets.Add()
-	
-	        workbook.Protect("telerik")
-	
-	        workbook.Unprotect("telerik")
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -96,9 +82,7 @@ __Example 2__ demonstrates how to unprotect a workbook:
 	
 	        workbook.Unprotect("telerik")
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

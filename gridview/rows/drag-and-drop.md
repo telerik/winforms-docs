@@ -95,133 +95,7 @@ The drag and drop functionality is made easy using the built-in RadGridViewDragD
 	        gridBehavior.RegisterBehavior(GetType(GridViewDataRowInfo), New RowSelectionGridBehavior())
 	
 	    End Sub
-	#End Region
-	
-	#Region "PreviewDragStart"
-	    'required to initiate drag and drop when grid is in bound mode
-	    Private Sub svc_PreviewDragStart(ByVal sender As Object, ByVal e As PreviewDragStartEventArgs)
-	        e.CanStart = True
-	    End Sub
-	#End Region
-	
-	#Region "PreviewDragDrop"
-	    'gather drag/source grid and target/destination information and initiate the move of selected rows
-	    Private Sub svc_PreviewDragDrop(ByVal sender As Object, ByVal e As RadDropEventArgs)
-	        Dim rowElement = TryCast(e.DragInstance, GridDataRowElement)
-	
-	        If rowElement Is Nothing Then
-	            Return
-	        End If
-	        e.Handled = True
-	
-	        Dim dropTarget = TryCast(e.HitTarget, RadItem)
-	        Dim targetGrid = TryCast(dropTarget.ElementTree.Control, RadGridView)
-	        If targetGrid Is Nothing Then
-	            Return
-	        End If
-	
-	        Dim dragGrid = TryCast(rowElement.ElementTree.Control, RadGridView)
-	        If Not targetGrid Is dragGrid Then
-	            e.Handled = True
-	            'append dragged rows to the end of the target grid
-	            Dim index As Integer = targetGrid.RowCount
-	
-	            'Grab every selected row from the source grid, including the current row
-	            Dim rows As New List(Of GridViewRowInfo)
-	
-	            For Each row As GridViewRowInfo In dragGrid.SelectedRows
-	                rows.Add(row)
-	            Next
-	            If Not dragGrid.CurrentRow Is Nothing Then
-	                Dim row As GridViewRowInfo = dragGrid.CurrentRow
-	                If (Not rows.Contains(row)) Then
-	                    rows.Add(row)
-	                End If
-	            End If
-	            Me.MoveRows(targetGrid, dragGrid, rows, index)
-	        End If
-	    End Sub
-	#End Region
-	
-	#Region "PreviewDragOver"
-	    Private Sub svc_PreviewDragOver(ByVal sender As Object, ByVal e As RadDragOverEventArgs)
-	        If TypeOf e.DragInstance Is GridDataRowElement Then
-	            e.CanDrop = TypeOf e.HitTarget Is GridDataRowElement OrElse
-	                        TypeOf e.HitTarget Is GridTableElement OrElse
-	                        TypeOf e.HitTarget Is GridSummaryRowElement
-	        End If
-	    End Sub
-	#End Region
-	
-	#Region "MoveRows"
-	    Private Sub MoveRows(ByVal targetGrid As RadGridView, ByVal dragGrid As RadGridView, ByVal dragRows As IList(Of GridViewRowInfo), ByVal index As Integer)
-	        dragGrid.BeginUpdate()
-	        targetGrid.BeginUpdate()
-	        For i As Integer = dragRows.Count - 1 To 0 Step -1
-	            Dim row As GridViewRowInfo = dragRows(i)
-	            If TypeOf row Is GridViewSummaryRowInfo Then
-	                Continue For
-	            End If
-	            If targetGrid.DataSource Is Nothing Then
-	                'unbound scenario
-	                Dim newRow As GridViewRowInfo = targetGrid.Rows.NewRow()
-	
-	                For Each cell As GridViewCellInfo In row.Cells
-	                    If Not newRow.Cells(cell.ColumnInfo.Name) Is Nothing Then
-	                        newRow.Cells(cell.ColumnInfo.Name).Value = cell.Value
-	                    End If
-	                Next cell
-	
-	                targetGrid.Rows.Insert(index, newRow)
-	
-	                row.IsSelected = False
-	                dragGrid.Rows.Remove(row)
-	            ElseIf GetType(DataSet).IsAssignableFrom(targetGrid.DataSource.GetType()) Then
-	                'bound to a dataset scenario
-	                Dim sourceTable = (CType(dragGrid.DataSource, DataSet)).Tables(0)
-	                Dim targetTable = (CType(targetGrid.DataSource, DataSet)).Tables(0)
-	
-	                Dim newRow = targetTable.NewRow()
-	                For Each cell As GridViewCellInfo In row.Cells
-	                    newRow(cell.ColumnInfo.Name) = cell.Value
-	                Next cell
-	
-	                sourceTable.Rows.Remove((CType(row.DataBoundItem, DataRowView)).Row)
-	                targetTable.Rows.InsertAt(newRow, index)
-	            ElseIf GetType(IList).IsAssignableFrom(targetGrid.DataSource.GetType()) Then
-	                'bound to a list of objects scenario
-	                Dim targetCollection = CType(targetGrid.DataSource, IList)
-	                Dim sourceCollection = CType(dragGrid.DataSource, IList)
-	                sourceCollection.Remove(row.DataBoundItem)
-	                targetCollection.Add(row.DataBoundItem)
-	            Else
-	                Throw New ApplicationException("Unhandled Scenario")
-	            End If
-	            index += 1
-	        Next i
-	        dragGrid.EndUpdate(True)
-	        targetGrid.EndUpdate(True)
-	    End Sub
-	#End Region
-	
-	End Class
-	
-	#Region "GridBehavior"
-	'initiates drag and drop service for clicked rows
-	Public Class RowSelectionGridBehavior
-	    Inherits GridDataRowBehavior
-	    Protected Overrides Function OnMouseDownLeft(ByVal e As MouseEventArgs) As Boolean
-	        Dim row As GridDataRowElement = TryCast(Me.GetRowAtPoint(e.Location), GridDataRowElement)
-	        If Not row Is Nothing Then
-	            Dim svc As RadGridViewDragDropService = Me.GridViewElement.GetService(Of RadGridViewDragDropService)()
-	            svc.AllowAutoScrollColumnsWhileDragging = False
-	            svc.AllowAutoScrollRowsWhileDragging = False
-	            svc.Start(row)
-	        End If
-	        Return MyBase.OnMouseDownLeft(e)
-	    End Function
-	End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -272,7 +146,7 @@ In order to start the drag and drop service when the user clicks on a row with t
 	        Return MyBase.OnMouseDownLeft(e)
 	    End Function
 	End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -301,126 +175,7 @@ The PreviewDragStart event is fired once the Drag and Drop service on the grid i
 	    Private Sub svc_PreviewDragStart(ByVal sender As Object, ByVal e As PreviewDragStartEventArgs)
 	        e.CanStart = True
 	    End Sub
-	#End Region
-	
-	#Region "PreviewDragDrop"
-	    'gather drag/source grid and target/destination information and initiate the move of selected rows
-	    Private Sub svc_PreviewDragDrop(ByVal sender As Object, ByVal e As RadDropEventArgs)
-	        Dim rowElement = TryCast(e.DragInstance, GridDataRowElement)
-	
-	        If rowElement Is Nothing Then
-	            Return
-	        End If
-	        e.Handled = True
-	
-	        Dim dropTarget = TryCast(e.HitTarget, RadItem)
-	        Dim targetGrid = TryCast(dropTarget.ElementTree.Control, RadGridView)
-	        If targetGrid Is Nothing Then
-	            Return
-	        End If
-	
-	        Dim dragGrid = TryCast(rowElement.ElementTree.Control, RadGridView)
-	        If Not targetGrid Is dragGrid Then
-	            e.Handled = True
-	            'append dragged rows to the end of the target grid
-	            Dim index As Integer = targetGrid.RowCount
-	
-	            'Grab every selected row from the source grid, including the current row
-	            Dim rows As New List(Of GridViewRowInfo)
-	
-	            For Each row As GridViewRowInfo In dragGrid.SelectedRows
-	                rows.Add(row)
-	            Next
-	            If Not dragGrid.CurrentRow Is Nothing Then
-	                Dim row As GridViewRowInfo = dragGrid.CurrentRow
-	                If (Not rows.Contains(row)) Then
-	                    rows.Add(row)
-	                End If
-	            End If
-	            Me.MoveRows(targetGrid, dragGrid, rows, index)
-	        End If
-	    End Sub
-	#End Region
-	
-	#Region "PreviewDragOver"
-	    Private Sub svc_PreviewDragOver(ByVal sender As Object, ByVal e As RadDragOverEventArgs)
-	        If TypeOf e.DragInstance Is GridDataRowElement Then
-	            e.CanDrop = TypeOf e.HitTarget Is GridDataRowElement OrElse
-	                        TypeOf e.HitTarget Is GridTableElement OrElse
-	                        TypeOf e.HitTarget Is GridSummaryRowElement
-	        End If
-	    End Sub
-	#End Region
-	
-	#Region "MoveRows"
-	    Private Sub MoveRows(ByVal targetGrid As RadGridView, ByVal dragGrid As RadGridView, ByVal dragRows As IList(Of GridViewRowInfo), ByVal index As Integer)
-	        dragGrid.BeginUpdate()
-	        targetGrid.BeginUpdate()
-	        For i As Integer = dragRows.Count - 1 To 0 Step -1
-	            Dim row As GridViewRowInfo = dragRows(i)
-	            If TypeOf row Is GridViewSummaryRowInfo Then
-	                Continue For
-	            End If
-	            If targetGrid.DataSource Is Nothing Then
-	                'unbound scenario
-	                Dim newRow As GridViewRowInfo = targetGrid.Rows.NewRow()
-	
-	                For Each cell As GridViewCellInfo In row.Cells
-	                    If Not newRow.Cells(cell.ColumnInfo.Name) Is Nothing Then
-	                        newRow.Cells(cell.ColumnInfo.Name).Value = cell.Value
-	                    End If
-	                Next cell
-	
-	                targetGrid.Rows.Insert(index, newRow)
-	
-	                row.IsSelected = False
-	                dragGrid.Rows.Remove(row)
-	            ElseIf GetType(DataSet).IsAssignableFrom(targetGrid.DataSource.GetType()) Then
-	                'bound to a dataset scenario
-	                Dim sourceTable = (CType(dragGrid.DataSource, DataSet)).Tables(0)
-	                Dim targetTable = (CType(targetGrid.DataSource, DataSet)).Tables(0)
-	
-	                Dim newRow = targetTable.NewRow()
-	                For Each cell As GridViewCellInfo In row.Cells
-	                    newRow(cell.ColumnInfo.Name) = cell.Value
-	                Next cell
-	
-	                sourceTable.Rows.Remove((CType(row.DataBoundItem, DataRowView)).Row)
-	                targetTable.Rows.InsertAt(newRow, index)
-	            ElseIf GetType(IList).IsAssignableFrom(targetGrid.DataSource.GetType()) Then
-	                'bound to a list of objects scenario
-	                Dim targetCollection = CType(targetGrid.DataSource, IList)
-	                Dim sourceCollection = CType(dragGrid.DataSource, IList)
-	                sourceCollection.Remove(row.DataBoundItem)
-	                targetCollection.Add(row.DataBoundItem)
-	            Else
-	                Throw New ApplicationException("Unhandled Scenario")
-	            End If
-	            index += 1
-	        Next i
-	        dragGrid.EndUpdate(True)
-	        targetGrid.EndUpdate(True)
-	    End Sub
-	#End Region
-	
-	End Class
-	
-	#Region "GridBehavior"
-	'initiates drag and drop service for clicked rows
-	Public Class RowSelectionGridBehavior
-	    Inherits GridDataRowBehavior
-	    Protected Overrides Function OnMouseDownLeft(ByVal e As MouseEventArgs) As Boolean
-	        Dim row As GridDataRowElement = TryCast(Me.GetRowAtPoint(e.Location), GridDataRowElement)
-	        If Not row Is Nothing Then
-	            Dim svc As RadGridViewDragDropService = Me.GridViewElement.GetService(Of RadGridViewDragDropService)()
-	            svc.AllowAutoScrollColumnsWhileDragging = False
-	            svc.AllowAutoScrollRowsWhileDragging = False
-	            svc.Start(row)
-	        End If
-	        Return MyBase.OnMouseDownLeft(e)
-	    End Function
-	End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -452,77 +207,7 @@ The next event we will handle is the PreviewDragOver event. This event allows yo
 	                        TypeOf e.HitTarget Is GridSummaryRowElement
 	        End If
 	    End Sub
-	#End Region
-	
-	#Region "MoveRows"
-	    Private Sub MoveRows(ByVal targetGrid As RadGridView, ByVal dragGrid As RadGridView, ByVal dragRows As IList(Of GridViewRowInfo), ByVal index As Integer)
-	        dragGrid.BeginUpdate()
-	        targetGrid.BeginUpdate()
-	        For i As Integer = dragRows.Count - 1 To 0 Step -1
-	            Dim row As GridViewRowInfo = dragRows(i)
-	            If TypeOf row Is GridViewSummaryRowInfo Then
-	                Continue For
-	            End If
-	            If targetGrid.DataSource Is Nothing Then
-	                'unbound scenario
-	                Dim newRow As GridViewRowInfo = targetGrid.Rows.NewRow()
-	
-	                For Each cell As GridViewCellInfo In row.Cells
-	                    If Not newRow.Cells(cell.ColumnInfo.Name) Is Nothing Then
-	                        newRow.Cells(cell.ColumnInfo.Name).Value = cell.Value
-	                    End If
-	                Next cell
-	
-	                targetGrid.Rows.Insert(index, newRow)
-	
-	                row.IsSelected = False
-	                dragGrid.Rows.Remove(row)
-	            ElseIf GetType(DataSet).IsAssignableFrom(targetGrid.DataSource.GetType()) Then
-	                'bound to a dataset scenario
-	                Dim sourceTable = (CType(dragGrid.DataSource, DataSet)).Tables(0)
-	                Dim targetTable = (CType(targetGrid.DataSource, DataSet)).Tables(0)
-	
-	                Dim newRow = targetTable.NewRow()
-	                For Each cell As GridViewCellInfo In row.Cells
-	                    newRow(cell.ColumnInfo.Name) = cell.Value
-	                Next cell
-	
-	                sourceTable.Rows.Remove((CType(row.DataBoundItem, DataRowView)).Row)
-	                targetTable.Rows.InsertAt(newRow, index)
-	            ElseIf GetType(IList).IsAssignableFrom(targetGrid.DataSource.GetType()) Then
-	                'bound to a list of objects scenario
-	                Dim targetCollection = CType(targetGrid.DataSource, IList)
-	                Dim sourceCollection = CType(dragGrid.DataSource, IList)
-	                sourceCollection.Remove(row.DataBoundItem)
-	                targetCollection.Add(row.DataBoundItem)
-	            Else
-	                Throw New ApplicationException("Unhandled Scenario")
-	            End If
-	            index += 1
-	        Next i
-	        dragGrid.EndUpdate(True)
-	        targetGrid.EndUpdate(True)
-	    End Sub
-	#End Region
-	
-	End Class
-	
-	#Region "GridBehavior"
-	'initiates drag and drop service for clicked rows
-	Public Class RowSelectionGridBehavior
-	    Inherits GridDataRowBehavior
-	    Protected Overrides Function OnMouseDownLeft(ByVal e As MouseEventArgs) As Boolean
-	        Dim row As GridDataRowElement = TryCast(Me.GetRowAtPoint(e.Location), GridDataRowElement)
-	        If Not row Is Nothing Then
-	            Dim svc As RadGridViewDragDropService = Me.GridViewElement.GetService(Of RadGridViewDragDropService)()
-	            svc.AllowAutoScrollColumnsWhileDragging = False
-	            svc.AllowAutoScrollRowsWhileDragging = False
-	            svc.Start(row)
-	        End If
-	        Return MyBase.OnMouseDownLeft(e)
-	    End Function
-	End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -611,87 +296,7 @@ The last event we want to handle in our implementation is the PreviewDragDrop ev
 	            Me.MoveRows(targetGrid, dragGrid, rows, index)
 	        End If
 	    End Sub
-	#End Region
-	
-	#Region "PreviewDragOver"
-	    Private Sub svc_PreviewDragOver(ByVal sender As Object, ByVal e As RadDragOverEventArgs)
-	        If TypeOf e.DragInstance Is GridDataRowElement Then
-	            e.CanDrop = TypeOf e.HitTarget Is GridDataRowElement OrElse
-	                        TypeOf e.HitTarget Is GridTableElement OrElse
-	                        TypeOf e.HitTarget Is GridSummaryRowElement
-	        End If
-	    End Sub
-	#End Region
-	
-	#Region "MoveRows"
-	    Private Sub MoveRows(ByVal targetGrid As RadGridView, ByVal dragGrid As RadGridView, ByVal dragRows As IList(Of GridViewRowInfo), ByVal index As Integer)
-	        dragGrid.BeginUpdate()
-	        targetGrid.BeginUpdate()
-	        For i As Integer = dragRows.Count - 1 To 0 Step -1
-	            Dim row As GridViewRowInfo = dragRows(i)
-	            If TypeOf row Is GridViewSummaryRowInfo Then
-	                Continue For
-	            End If
-	            If targetGrid.DataSource Is Nothing Then
-	                'unbound scenario
-	                Dim newRow As GridViewRowInfo = targetGrid.Rows.NewRow()
-	
-	                For Each cell As GridViewCellInfo In row.Cells
-	                    If Not newRow.Cells(cell.ColumnInfo.Name) Is Nothing Then
-	                        newRow.Cells(cell.ColumnInfo.Name).Value = cell.Value
-	                    End If
-	                Next cell
-	
-	                targetGrid.Rows.Insert(index, newRow)
-	
-	                row.IsSelected = False
-	                dragGrid.Rows.Remove(row)
-	            ElseIf GetType(DataSet).IsAssignableFrom(targetGrid.DataSource.GetType()) Then
-	                'bound to a dataset scenario
-	                Dim sourceTable = (CType(dragGrid.DataSource, DataSet)).Tables(0)
-	                Dim targetTable = (CType(targetGrid.DataSource, DataSet)).Tables(0)
-	
-	                Dim newRow = targetTable.NewRow()
-	                For Each cell As GridViewCellInfo In row.Cells
-	                    newRow(cell.ColumnInfo.Name) = cell.Value
-	                Next cell
-	
-	                sourceTable.Rows.Remove((CType(row.DataBoundItem, DataRowView)).Row)
-	                targetTable.Rows.InsertAt(newRow, index)
-	            ElseIf GetType(IList).IsAssignableFrom(targetGrid.DataSource.GetType()) Then
-	                'bound to a list of objects scenario
-	                Dim targetCollection = CType(targetGrid.DataSource, IList)
-	                Dim sourceCollection = CType(dragGrid.DataSource, IList)
-	                sourceCollection.Remove(row.DataBoundItem)
-	                targetCollection.Add(row.DataBoundItem)
-	            Else
-	                Throw New ApplicationException("Unhandled Scenario")
-	            End If
-	            index += 1
-	        Next i
-	        dragGrid.EndUpdate(True)
-	        targetGrid.EndUpdate(True)
-	    End Sub
-	#End Region
-	
-	End Class
-	
-	#Region "GridBehavior"
-	'initiates drag and drop service for clicked rows
-	Public Class RowSelectionGridBehavior
-	    Inherits GridDataRowBehavior
-	    Protected Overrides Function OnMouseDownLeft(ByVal e As MouseEventArgs) As Boolean
-	        Dim row As GridDataRowElement = TryCast(Me.GetRowAtPoint(e.Location), GridDataRowElement)
-	        If Not row Is Nothing Then
-	            Dim svc As RadGridViewDragDropService = Me.GridViewElement.GetService(Of RadGridViewDragDropService)()
-	            svc.AllowAutoScrollColumnsWhileDragging = False
-	            svc.AllowAutoScrollRowsWhileDragging = False
-	            svc.Start(row)
-	        End If
-	        Return MyBase.OnMouseDownLeft(e)
-	    End Function
-	End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -826,26 +431,7 @@ It is in the MoveRows method where the physical moving of the data happens. Basi
 	        dragGrid.EndUpdate(True)
 	        targetGrid.EndUpdate(True)
 	    End Sub
-	#End Region
-	
-	End Class
-	
-	#Region "GridBehavior"
-	'initiates drag and drop service for clicked rows
-	Public Class RowSelectionGridBehavior
-	    Inherits GridDataRowBehavior
-	    Protected Overrides Function OnMouseDownLeft(ByVal e As MouseEventArgs) As Boolean
-	        Dim row As GridDataRowElement = TryCast(Me.GetRowAtPoint(e.Location), GridDataRowElement)
-	        If Not row Is Nothing Then
-	            Dim svc As RadGridViewDragDropService = Me.GridViewElement.GetService(Of RadGridViewDragDropService)()
-	            svc.AllowAutoScrollColumnsWhileDragging = False
-	            svc.AllowAutoScrollRowsWhileDragging = False
-	            svc.Start(row)
-	        End If
-	        Return MyBase.OnMouseDownLeft(e)
-	    End Function
-	End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -903,122 +489,7 @@ Initialize some settings of the grids in the default constructor of the form as 
 	            rightGrid.Rows.Clear()
 	            rightGrid.Columns.Clear()
 	        End Sub
-	#End Region
-	
-	#Region "Unbound"
-	        Private Sub btnUnbound_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnUnbound.Click
-	            ResetGrids()
-	
-	            PrepareUnboundGrid(leftGrid)
-	            leftGrid.Rows.Add("Carey", "Payette")
-	            leftGrid.Rows.Add("Michael", "Crump")
-	            leftGrid.Rows.Add("Jeff", "Fritz")
-	            PrepareUnboundGrid(rightGrid)
-	            rightGrid.Rows.Add("Phil", "Japikse")
-	            rightGrid.Rows.Add("Jesse", "Liberty")
-	            rightGrid.Rows.Add("Iris", "Classon")
-	        End Sub
-	
-	        Private Sub PrepareUnboundGrid(ByVal grid As RadGridView)
-	            'setup columns
-	            Dim firstName As GridViewTextBoxColumn = New GridViewTextBoxColumn("FirstName", "FirstName")
-	            firstName.HeaderText = "First Name"
-	            Dim lastName As GridViewTextBoxColumn = New GridViewTextBoxColumn("LastName", "LastName")
-	            lastName.HeaderText = "Last Name"
-	
-	            grid.Columns.AddRange(firstName, lastName)
-	        End Sub
-	#End Region
-	
-	#Region "BoundObjects"
-	        Private Sub btnBoundObjects_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnBoundObjects.Click
-	            ResetGrids()
-	
-	            Dim dataList1 As New BindingList(Of Player)()
-	            dataList1.Add(New Player() With { _
-	                .FirstName = "Carey", _
-	                .LastName = "Payette" _
-	            })
-	            dataList1.Add(New Player() With { _
-	                .FirstName = "Michael", _
-	                .LastName = "Crump" _
-	            })
-	            dataList1.Add(New Player() With { _
-	                .FirstName = "Jeff", _
-	                .LastName = "Fritz" _
-	            })
-	            Dim dataList2 As New BindingList(Of Player)()
-	            dataList2.Add(New Player() With { _
-	                .FirstName = "Phil", _
-	                .LastName = "Japikse" _
-	            })
-	            dataList2.Add(New Player() With { _
-	                .FirstName = "Jesse", _
-	                .LastName = "Liberty" _
-	            })
-	            dataList2.Add(New Player() With { _
-	                .FirstName = "Iris", _
-	                .LastName = "Classon" _
-	            })
-	
-	            leftGrid.DataSource = dataList1
-	            rightGrid.DataSource = dataList2
-	        End Sub
-	#End Region
-	
-	#Region "DataSet"
-	        Private Sub btnBoundDataSet_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnBoundDataSet.Click
-	            ResetGrids()
-	
-	            Dim ds1 As DataSet = New DataSet()
-	            Dim team1 As DataTable = New DataTable()
-	            team1.Columns.Add("First Name", GetType(String))
-	            team1.Columns.Add("Last Name", GetType(String))
-	            team1.Rows.Add("Carey", "Payette")
-	            team1.Rows.Add("Michael", "Crump")
-	            team1.Rows.Add("Jeff", "Fritz")
-	            ds1.Tables.Add(team1)
-	
-	            Dim ds2 As DataSet = New DataSet()
-	            Dim team2 As DataTable = New DataTable()
-	            team2.Columns.Add("First Name", GetType(String))
-	            team2.Columns.Add("Last Name", GetType(String))
-	            team2.Rows.Add("Phil", "Japikse")
-	            team2.Rows.Add("Jesse", "Liberty")
-	            team2.Rows.Add("Iris", "Classon")
-	            ds2.Tables.Add(team2)
-	
-	            leftGrid.DataSource = ds1
-	            leftGrid.DataMember = "Table1"
-	            rightGrid.DataSource = ds2
-	            rightGrid.DataMember = "Table1"
-	        End Sub
-	#End Region
-	
-	    End Class
-	
-	#Region "Player"
-	    Public Class Player
-	        Public Property FirstName() As String
-	            Get
-	                Return m_FirstName
-	            End Get
-	            Set(ByVal value As String)
-	                m_FirstName = Value
-	            End Set
-	        End Property
-	        Private m_FirstName As String
-	        Public Property LastName() As String
-	            Get
-	                Return m_LastName
-	            End Get
-	            Set(ByVal value As String)
-	                m_LastName = Value
-	            End Set
-	        End Property
-	        Private m_LastName As String
-	    End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -1080,97 +551,7 @@ First we will implement the usage of our custom grid in an unbound scenario. To 
 	
 	            grid.Columns.AddRange(firstName, lastName)
 	        End Sub
-	#End Region
-	
-	#Region "BoundObjects"
-	        Private Sub btnBoundObjects_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnBoundObjects.Click
-	            ResetGrids()
-	
-	            Dim dataList1 As New BindingList(Of Player)()
-	            dataList1.Add(New Player() With { _
-	                .FirstName = "Carey", _
-	                .LastName = "Payette" _
-	            })
-	            dataList1.Add(New Player() With { _
-	                .FirstName = "Michael", _
-	                .LastName = "Crump" _
-	            })
-	            dataList1.Add(New Player() With { _
-	                .FirstName = "Jeff", _
-	                .LastName = "Fritz" _
-	            })
-	            Dim dataList2 As New BindingList(Of Player)()
-	            dataList2.Add(New Player() With { _
-	                .FirstName = "Phil", _
-	                .LastName = "Japikse" _
-	            })
-	            dataList2.Add(New Player() With { _
-	                .FirstName = "Jesse", _
-	                .LastName = "Liberty" _
-	            })
-	            dataList2.Add(New Player() With { _
-	                .FirstName = "Iris", _
-	                .LastName = "Classon" _
-	            })
-	
-	            leftGrid.DataSource = dataList1
-	            rightGrid.DataSource = dataList2
-	        End Sub
-	#End Region
-	
-	#Region "DataSet"
-	        Private Sub btnBoundDataSet_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnBoundDataSet.Click
-	            ResetGrids()
-	
-	            Dim ds1 As DataSet = New DataSet()
-	            Dim team1 As DataTable = New DataTable()
-	            team1.Columns.Add("First Name", GetType(String))
-	            team1.Columns.Add("Last Name", GetType(String))
-	            team1.Rows.Add("Carey", "Payette")
-	            team1.Rows.Add("Michael", "Crump")
-	            team1.Rows.Add("Jeff", "Fritz")
-	            ds1.Tables.Add(team1)
-	
-	            Dim ds2 As DataSet = New DataSet()
-	            Dim team2 As DataTable = New DataTable()
-	            team2.Columns.Add("First Name", GetType(String))
-	            team2.Columns.Add("Last Name", GetType(String))
-	            team2.Rows.Add("Phil", "Japikse")
-	            team2.Rows.Add("Jesse", "Liberty")
-	            team2.Rows.Add("Iris", "Classon")
-	            ds2.Tables.Add(team2)
-	
-	            leftGrid.DataSource = ds1
-	            leftGrid.DataMember = "Table1"
-	            rightGrid.DataSource = ds2
-	            rightGrid.DataMember = "Table1"
-	        End Sub
-	#End Region
-	
-	    End Class
-	
-	#Region "Player"
-	    Public Class Player
-	        Public Property FirstName() As String
-	            Get
-	                Return m_FirstName
-	            End Get
-	            Set(ByVal value As String)
-	                m_FirstName = Value
-	            End Set
-	        End Property
-	        Private m_FirstName As String
-	        Public Property LastName() As String
-	            Get
-	                Return m_LastName
-	            End Get
-	            Set(ByVal value As String)
-	                m_LastName = Value
-	            End Set
-	        End Property
-	        Private m_LastName As String
-	    End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -1235,61 +616,7 @@ Next we will implement the usage of our grid when it is bound to a BindingList. 
 	            leftGrid.DataSource = dataList1
 	            rightGrid.DataSource = dataList2
 	        End Sub
-	#End Region
-	
-	#Region "DataSet"
-	        Private Sub btnBoundDataSet_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnBoundDataSet.Click
-	            ResetGrids()
-	
-	            Dim ds1 As DataSet = New DataSet()
-	            Dim team1 As DataTable = New DataTable()
-	            team1.Columns.Add("First Name", GetType(String))
-	            team1.Columns.Add("Last Name", GetType(String))
-	            team1.Rows.Add("Carey", "Payette")
-	            team1.Rows.Add("Michael", "Crump")
-	            team1.Rows.Add("Jeff", "Fritz")
-	            ds1.Tables.Add(team1)
-	
-	            Dim ds2 As DataSet = New DataSet()
-	            Dim team2 As DataTable = New DataTable()
-	            team2.Columns.Add("First Name", GetType(String))
-	            team2.Columns.Add("Last Name", GetType(String))
-	            team2.Rows.Add("Phil", "Japikse")
-	            team2.Rows.Add("Jesse", "Liberty")
-	            team2.Rows.Add("Iris", "Classon")
-	            ds2.Tables.Add(team2)
-	
-	            leftGrid.DataSource = ds1
-	            leftGrid.DataMember = "Table1"
-	            rightGrid.DataSource = ds2
-	            rightGrid.DataMember = "Table1"
-	        End Sub
-	#End Region
-	
-	    End Class
-	
-	#Region "Player"
-	    Public Class Player
-	        Public Property FirstName() As String
-	            Get
-	                Return m_FirstName
-	            End Get
-	            Set(ByVal value As String)
-	                m_FirstName = Value
-	            End Set
-	        End Property
-	        Private m_FirstName As String
-	        Public Property LastName() As String
-	            Get
-	                Return m_LastName
-	            End Get
-	            Set(ByVal value As String)
-	                m_LastName = Value
-	            End Set
-	        End Property
-	        Private m_LastName As String
-	    End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -1330,7 +657,7 @@ Add a Player class to the Form1.cs source file to support this scenario defined 
 	        End Property
 	        Private m_LastName As String
 	    End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -1399,32 +726,7 @@ Lastly we will implement the scenario of when the grids are bound to a DataSet. 
 	            rightGrid.DataSource = ds2
 	            rightGrid.DataMember = "Table1"
 	        End Sub
-	#End Region
-	
-	    End Class
-	
-	#Region "Player"
-	    Public Class Player
-	        Public Property FirstName() As String
-	            Get
-	                Return m_FirstName
-	            End Get
-	            Set(ByVal value As String)
-	                m_FirstName = Value
-	            End Set
-	        End Property
-	        Private m_FirstName As String
-	        Public Property LastName() As String
-	            Get
-	                Return m_LastName
-	            End Get
-	            Set(ByVal value As String)
-	                m_LastName = Value
-	            End Set
-	        End Property
-	        Private m_LastName As String
-	    End Class
-	#End Region
+	{{endregion}}
 
 
 

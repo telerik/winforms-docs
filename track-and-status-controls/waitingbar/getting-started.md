@@ -88,9 +88,7 @@ Replace the automatically-generated event handler with this code:
 	            Me.RadButton1.Text = "Stop"
 	        End If
 	    End Sub
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 
 

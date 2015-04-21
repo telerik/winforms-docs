@@ -126,17 +126,7 @@ Every bookmark has a unique name. So in order to insert a reference to a bookmar
 
 {{source=..\SamplesVB\RichTextEditor\Features\CrossReference.vb region=bookmark}}
 	        radRichTextEditor1.InsertCrossReferenceToBookmark("Bookmark Name", ReferenceContentType.EntireContent, False)
-	        '#End Region
-	        Dim headingParagraph As New Paragraph()
-	        '#Region "heading "
-	        radRichTextEditor1.InsertCrossReferenceToHeading(headingParagraph, ReferenceContentType.OnlyCaption, True)
-	        '#End Region
-	        Dim captionParagraph As New Paragraph()
-	        '#Region "caption"
-	        radRichTextEditor1.InsertCrossReferenceToCaption(captionParagraph, ReferenceContentType.OnlyLabelAndNumber, False)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -178,9 +168,7 @@ The method signature is:
 
 {{source=..\SamplesVB\RichTextEditor\Features\CrossReference.vb region=caption}}
 	        radRichTextEditor1.InsertCrossReferenceToCaption(captionParagraph, ReferenceContentType.OnlyLabelAndNumber, False)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

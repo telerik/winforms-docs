@@ -95,36 +95,7 @@ The significant properties for __RadDateTimePicker__ are:
 	
 	        Me.radDateTimePicker1.DateTimePickerElement.ShowTimePicker = True
 	
-	        '#End Region
-	
-	        '#Region ShowTimePicker2
-	
-	        Me.radDateTimePicker1.DateTimePickerElement.ShowTimePicker = True
-	        Me.radDateTimePicker1.Format = DateTimePickerFormat.[Custom]
-	        Me.radDateTimePicker1.CustomFormat = "MMM - dd - yyyy hh:mm tt"
-	        TryCast(Me.radDateTimePicker1.DateTimePickerElement.CurrentBehavior, RadDateTimePickerCalendar).DropDownMinSize = New System.Drawing.Size(330, 250)
-	
-	        '#End Region
-	
-	        '#Region HeaderNavigationMode
-	
-	        Me.radDateTimePicker1.DateTimePickerElement.Calendar.HeaderNavigationMode = HeaderNavigationMode.Zoom
-	
-	        '#End Region
-	
-	        '#Region FreeFormDateTimeDateTimePicker
-	
-	        Me.radDateTimePicker1.DateTimePickerElement.TextBoxElement.MaskType = MaskType.FreeFormDateTime
-	
-	        '#End Region
-	
-	        '#Region "provider"
-	        Dim provider As MaskDateTimeProvider = TryCast(Me.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider, MaskDateTimeProvider)
-	        provider.AutoSelectNextPart = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -242,48 +213,6 @@ __NullableValue__ can be bound to a business object that exposes
 	
 	        Me.RadDateTimePicker1.DataBindings.Add(New Binding("NullableValue", Me.myList, "EndTime", True, DataSourceUpdateMode.OnPropertyChanged))
 	    End Sub
-	    '#End Region
-	
-	    '#Region "initialization"
-	    Private initialDateTime As Date
-	
-	    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
-	        initialDateTime = Me.RadDateTimePicker1.Value
-	
-	        AddHandler RadDateTimePicker1.ValueChanged, AddressOf radDateTimePicker1_ValueChanged
-	    End Sub
-	    '#End Region
-	
-	    '#region valueChanged
-	    Private suspendValueChanged As Boolean = False
-	
-	    Private Sub radDateTimePicker1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim dt As Date = Me.RadDateTimePicker1.Value
-	        Dim sp As TimeSpan = dt.Subtract(initialDateTime)
-	
-	        If Not suspendValueChanged Then
-	            Dim provider As MaskDateTimeProvider = (TryCast(Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider, MaskDateTimeProvider))
-	            If provider.List(provider.SelectedItemIndex).type = PartTypes.Minutes Then
-	                suspendValueChanged = True
-	
-	                If sp.Ticks < 0 Then
-	                    For i As Integer = 0 To 3
-	                        Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Down()
-	                    Next i
-	                End If
-	
-	                If sp.Ticks > 0 Then
-	                    For i As Integer = 0 To 3
-	                        Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Up()
-	                    Next i
-	                End If
-	
-	                initialDateTime = Me.RadDateTimePicker1.Value
-	
-	                suspendValueChanged = False
-	            End If
-	        End If
-	    End Sub
 	{{endregion}}
 
 
@@ -319,27 +248,7 @@ __Editing Date and Time in RadDateTimePicker.__
 	        Me.radDateTimePicker1.CustomFormat = "MMM - dd - yyyy hh:mm tt"
 	        TryCast(Me.radDateTimePicker1.DateTimePickerElement.CurrentBehavior, RadDateTimePickerCalendar).DropDownMinSize = New System.Drawing.Size(330, 250)
 	
-	        '#End Region
-	
-	        '#Region HeaderNavigationMode
-	
-	        Me.radDateTimePicker1.DateTimePickerElement.Calendar.HeaderNavigationMode = HeaderNavigationMode.Zoom
-	
-	        '#End Region
-	
-	        '#Region FreeFormDateTimeDateTimePicker
-	
-	        Me.radDateTimePicker1.DateTimePickerElement.TextBoxElement.MaskType = MaskType.FreeFormDateTime
-	
-	        '#End Region
-	
-	        '#Region "provider"
-	        Dim provider As MaskDateTimeProvider = TryCast(Me.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider, MaskDateTimeProvider)
-	        provider.AutoSelectNextPart = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -391,9 +300,6 @@ The MaskDateTimeProvider can be accessed by casting to that appropriate class. T
 {{source=..\SamplesVB\Editors\DateTimePicker2.vb region=provider}}
 	        Dim provider As MaskDateTimeProvider = TryCast(Me.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider, MaskDateTimeProvider)
 	        provider.AutoSelectNextPart = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 

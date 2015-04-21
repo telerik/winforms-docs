@@ -39,34 +39,6 @@ RadListView supports both custom grouping and automatic grouping based on a cert
 	        RadListView1.ShowGroups = True
 	        Dim groupByValue As New GroupDescriptor(New SortDescriptor() {New SortDescriptor("Value", ListSortDirection.Descending)})
 	        RadListView1.GroupDescriptors.Add(groupByValue)
-	        '#End Region
-	
-	        '#Region groupByColumn
-	        RadListView1.EnableGrouping = True
-	        RadListView1.ShowGroups = True
-	        Dim groupByType As New GroupDescriptor(New SortDescriptor() {New SortDescriptor("Type", ListSortDirection.Descending)})
-	        RadListView1.GroupDescriptors.Add(groupByType)
-	        '#End Region
-	
-	        '#Region customGrouping
-	        RadListView1.EnableCustomGrouping = True
-	        RadListView1.ShowGroups = True
-	        Dim docGroup As New ListViewDataItemGroup("Documents")
-	        Dim diskGroup As New ListViewDataItemGroup("Disks")
-	        RadListView1.Groups.Add(docGroup)
-	        RadListView1.Groups.Add(diskGroup)
-	        For Each item As ListViewDataItem In RadListView1.Items
-	            If item.Value = "Shared Documents" OrElse item.Value = "Administrator's Documents" Then
-	                item.Group = docGroup
-	            Else
-	                item.Group = diskGroup
-	            End If
-	        Next
-	        '#End Region
-	
-	        '#region ExpandCollapseAll
-	        Me.RadListView1.ExpandAll()
-	        Me.RadListView1.CollapseAll()
 	{{endregion}}
 
 
@@ -97,27 +69,6 @@ And here is how you can group by a certain column when __DetailsView__ is used:
 	        RadListView1.ShowGroups = True
 	        Dim groupByType As New GroupDescriptor(New SortDescriptor() {New SortDescriptor("Type", ListSortDirection.Descending)})
 	        RadListView1.GroupDescriptors.Add(groupByType)
-	        '#End Region
-	
-	        '#Region customGrouping
-	        RadListView1.EnableCustomGrouping = True
-	        RadListView1.ShowGroups = True
-	        Dim docGroup As New ListViewDataItemGroup("Documents")
-	        Dim diskGroup As New ListViewDataItemGroup("Disks")
-	        RadListView1.Groups.Add(docGroup)
-	        RadListView1.Groups.Add(diskGroup)
-	        For Each item As ListViewDataItem In RadListView1.Items
-	            If item.Value = "Shared Documents" OrElse item.Value = "Administrator's Documents" Then
-	                item.Group = docGroup
-	            Else
-	                item.Group = diskGroup
-	            End If
-	        Next
-	        '#End Region
-	
-	        '#region ExpandCollapseAll
-	        Me.RadListView1.ExpandAll()
-	        Me.RadListView1.CollapseAll()
 	{{endregion}}
 
 
@@ -169,11 +120,6 @@ To take advantage of the custom grouping feature of RadListView, just enable the
 	                item.Group = diskGroup
 	            End If
 	        Next
-	        '#End Region
-	
-	        '#region ExpandCollapseAll
-	        Me.RadListView1.ExpandAll()
-	        Me.RadListView1.CollapseAll()
 	{{endregion}}
 
 

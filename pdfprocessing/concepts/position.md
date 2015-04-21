@@ -84,19 +84,7 @@ __Example 1__ shows how transformations can be appended.
 	        Dim matrixPosition As MatrixPosition = New MatrixPosition()
 	        matrixPosition.Translate(20, 20) ' Translates the position by (20, 20)
 	        matrixPosition.Translate(30, 30) ' Translates the position by (30, 30).
-	        '	 #End Region
-	    End Sub
-	
-	
-	    Private Sub SimplePositionTrasform()
-	        '	 #Region "radpdfprocessing-concepts-position_1"
-	        Dim simplePosition As SimplePosition = New SimplePosition()
-	        simplePosition.Translate(20, 20) ' Translates the position by (30, 30).
-	        simplePosition.Translate(30, 30) ' Translates the position by (20, 20) overwriting the previous translations.
-	        '	 #End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -139,10 +127,7 @@ __Example 2__ shows how transformations overwrite the previous transformations o
 	        Dim simplePosition As SimplePosition = New SimplePosition()
 	        simplePosition.Translate(20, 20) ' Translates the position by (30, 30).
 	        simplePosition.Translate(30, 30) ' Translates the position by (20, 20) overwriting the previous translations.
-	        '	 #End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 

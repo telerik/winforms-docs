@@ -41,14 +41,7 @@ __Example 1__ shows how you can initialize a TextFragment object and add it in a
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelTextFragment.vb region=radpdfprocessing-model-textfragment_0}}
 	        Dim fragment As TextFragment = New TextFragment()
 	        container.Content.Add(fragment)
-	        '	#End Region
-	
-	        '	#Region "radpdfprocessing-model-textfragment_1"
-	        Dim textFragment As TextFragment = container.Content.AddTextFragment()
-	        Dim textFragmentWithText As TextFragment = container.Content.AddTextFragment("Text")
-	        '	#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -69,9 +62,7 @@ __Example 2__ demonstrates how to use one of the factory methods of the __Conten
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelTextFragment.vb region=radpdfprocessing-model-textfragment_1}}
 	        Dim textFragment As TextFragment = container.Content.AddTextFragment()
 	        Dim textFragmentWithText As TextFragment = container.Content.AddTextFragment("Text")
-	        '	#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

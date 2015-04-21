@@ -63,7 +63,6 @@ __Example 1__ creates a new workbook from scratch and subscribes to its __Active
 	    Private Sub Workbook_ActiveSheetChanged(sender As Object, e As EventArgs)
 	        ' the active worksheet is changed
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 

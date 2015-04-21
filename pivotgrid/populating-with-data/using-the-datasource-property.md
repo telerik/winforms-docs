@@ -87,9 +87,7 @@ Similarly to other WinForms data controls, RadPivotGrid can be populated with da
 	
 	        Me.RadPivotGrid1.DataSource = dataset
 	        Me.RadPivotGrid1.DataMember = "Orders"
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

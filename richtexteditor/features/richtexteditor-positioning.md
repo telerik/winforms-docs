@@ -62,16 +62,7 @@ Here is an example of how to use the __CaretPosition__ property to get the curre
 	
 	        Dim currentSpanText As String = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentSpanBox().Text
 	
-	        '#End Region
-	
-	        '#Region "position"
-	
-	        Dim position As New Telerik.WinForms.Documents.DocumentPosition(Me.radRichTextEditor1.Document)
-	        Dim currentSpanText1 As String = position.GetCurrentSpanBox().Text
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -99,9 +90,7 @@ An alternative of using the __CaretPosition__ property is to create an instance 
 	        Dim position As New Telerik.WinForms.Documents.DocumentPosition(Me.radRichTextEditor1.Document)
 	        Dim currentSpanText1 As String = position.GetCurrentSpanBox().Text
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

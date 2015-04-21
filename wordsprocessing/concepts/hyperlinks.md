@@ -50,22 +50,7 @@ The suggested way to insert hyperlink is by using [RadFlowDocumentEditor]({%slug
 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingHyperlink.vb region=radwordsprocessing-concepts-hyperlinks_0}}
 	        editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
-	        '#End Region
-	    End Sub
-	
-	    Private Sub InsertHyperlinkToBookmark()
-	        '#Region "radwordsprocessing-concepts-hyperlinks_1"
-	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	
-	        ' Insert bookmark.
-	        editor.InsertBookmark("DocumentStart")
-	        editor.InsertLine("Hello word!")
-	
-	        ' Insert hyperlink pointing to the bookmark.
-	        editor.InsertHyperlink("Go to start", "DocumentStart", True, "Document start")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -105,9 +90,7 @@ Hyperlinks can also point to a [Boomark]({%slug wordsprocessing-model-bookmark%}
 	
 	        ' Insert hyperlink pointing to the bookmark.
 	        editor.InsertHyperlink("Go to start", "DocumentStart", True, "Document start")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -39,15 +39,7 @@ From Q2 2014 we introduced new MaskType of RadMaskedEditBox that is designed to 
 	
 	        Me.radDateTimePicker1.DateTimePickerElement.TextBoxElement.MaskType = MaskType.FreeFormDateTime
 	
-	        '#End Region
-	
-	        '#Region "provider"
-	        Dim provider As MaskDateTimeProvider = TryCast(Me.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider, MaskDateTimeProvider)
-	        provider.AutoSelectNextPart = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

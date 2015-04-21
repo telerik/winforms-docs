@@ -110,18 +110,7 @@ This approach allows us to update the database when the end-user
 	
 	        lastEditRow = dataRow
 	    End Sub
-	    '#End Region
-	
-	    Private Sub AutoSavingDataBSEventsForm_Load_1(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-	        'TODO: This line of code loads data into the 'NwindDataSet.Employees' table. You can move, or remove it, as needed.
-	        Me.EmployeesTableAdapter.Fill(Me.NwindDataSet.Employees)
-	        'TODO: This line of code loads data into the 'NwindDataSet.Order_Details' table. You can move, or remove it, as needed.
-	        Me.Order_DetailsTableAdapter.Fill(Me.NwindDataSet.Order_Details)
-	        'TODO: This line of code loads data into the 'NwindDataSet.Orders' table. You can move, or remove it, as needed.
-	        Me.OrdersTableAdapter.Fill(Me.NwindDataSet.Orders)
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -195,47 +184,7 @@ Here is how we can update the database when the end-user __deletes__ a row. Basi
 	        Me.EmployeesTableAdapter.Update(rows)
 	        Me.lastRemovedRows.Clear()
 	    End Sub
-	    '#End Region
-	
-	    '#Region "addingRows"
-	    Private Sub radGridView1_UserAddedRow(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewRowEventArgs) Handles RadGridView1.UserAddedRow
-	        Dim dataRowView As DataRowView = TryCast(e.Rows(0).DataBoundItem, DataRowView)
-	        Dim row As DataRow = dataRowView.Row
-	
-	        Me.EmployeesTableAdapter.Update(row)
-	    End Sub
-	    '#End Region
-	
-	    '#Region "changingCurrentRow"
-	    Private Sub radGridView1_CurrentRowChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CurrentRowChangedEventArgs) Handles RadGridView1.CurrentRowChanged
-	        If e.OldRow Is Nothing Then
-	            Return
-	        End If
-	
-	        Dim dataRowView As DataRowView = TryCast(e.OldRow.DataBoundItem, DataRowView)
-	        If dataRowView IsNot Nothing Then
-	            Dim dataRow As DataRow = dataRowView.Row
-	            If dataRow.RowState = DataRowState.Modified Then
-	                Me.EmployeesTableAdapter.Update(dataRow)
-	            End If
-	        End If
-	    End Sub
-	    '#End Region
-	
-	    '#Region "changingValue"
-	    Private Sub radGridView1_CellValueChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs) Handles RadGridView1.CellValueChanged
-	        Dim editbaleObject As IEditableObject = TryCast(e.Row.DataBoundItem, IEditableObject)
-	        If editbaleObject IsNot Nothing Then
-	            editbaleObject.EndEdit()
-	        End If
-	
-	        Dim dataRowView As DataRowView = TryCast(e.Row.DataBoundItem, DataRowView)
-	        If dataRowView IsNot Nothing Then
-	            Me.EmployeesTableAdapter.Update(dataRowView.Row)
-	        End If
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -266,38 +215,7 @@ And this is how we can update the database when the user __adds__ a new row. The
 	
 	        Me.EmployeesTableAdapter.Update(row)
 	    End Sub
-	    '#End Region
-	
-	    '#Region "changingCurrentRow"
-	    Private Sub radGridView1_CurrentRowChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CurrentRowChangedEventArgs) Handles RadGridView1.CurrentRowChanged
-	        If e.OldRow Is Nothing Then
-	            Return
-	        End If
-	
-	        Dim dataRowView As DataRowView = TryCast(e.OldRow.DataBoundItem, DataRowView)
-	        If dataRowView IsNot Nothing Then
-	            Dim dataRow As DataRow = dataRowView.Row
-	            If dataRow.RowState = DataRowState.Modified Then
-	                Me.EmployeesTableAdapter.Update(dataRow)
-	            End If
-	        End If
-	    End Sub
-	    '#End Region
-	
-	    '#Region "changingValue"
-	    Private Sub radGridView1_CellValueChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs) Handles RadGridView1.CellValueChanged
-	        Dim editbaleObject As IEditableObject = TryCast(e.Row.DataBoundItem, IEditableObject)
-	        If editbaleObject IsNot Nothing Then
-	            editbaleObject.EndEdit()
-	        End If
-	
-	        Dim dataRowView As DataRowView = TryCast(e.Row.DataBoundItem, DataRowView)
-	        If dataRowView IsNot Nothing Then
-	            Me.EmployeesTableAdapter.Update(dataRowView.Row)
-	        End If
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -346,22 +264,7 @@ When the user __changes the current__ row, you can update the database not only 
 	            End If
 	        End If
 	    End Sub
-	    '#End Region
-	
-	    '#Region "changingValue"
-	    Private Sub radGridView1_CellValueChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs) Handles RadGridView1.CellValueChanged
-	        Dim editbaleObject As IEditableObject = TryCast(e.Row.DataBoundItem, IEditableObject)
-	        If editbaleObject IsNot Nothing Then
-	            editbaleObject.EndEdit()
-	        End If
-	
-	        Dim dataRowView As DataRowView = TryCast(e.Row.DataBoundItem, DataRowView)
-	        If dataRowView IsNot Nothing Then
-	            Me.EmployeesTableAdapter.Update(dataRowView.Row)
-	        End If
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -408,8 +311,7 @@ The above solutions will come in handy in many cases. However, in some
 	            Me.EmployeesTableAdapter.Update(dataRowView.Row)
 	        End If
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 

@@ -75,17 +75,7 @@ Here is a sample demonstrating how to bind [LineSeries]({%slug chartview-series-
 	        lineSeria.CategoryMember = "Name"
 	        lineSeria.DataSource = table
 	    End Sub
-	#End Region
-	
-	#Region "addingRecord"
-	    Private Sub RadButton1_Click_1(sender As System.Object, e As System.EventArgs) Handles RadButton1.Click
-	
-	        table.Rows.Add(10, "Moris")
-	        RadChartView1.Refresh()
-	    End Sub
-	#End Region
-	
-	End Class
+	{{endregion}}
 
 ![chartview-databinding-binding-to-datatable 001](images/chartview-databinding-binding-to-datatable001.png)
 

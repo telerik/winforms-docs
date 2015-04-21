@@ -78,24 +78,7 @@ If the Item which needs a ScreenTip is a TreeNodeElement, you set the necessary 
 	            node.ScreenTip = Me.screenTip
 	        End If
 	    End Sub
-	    '#End Region
-	
-	    Private folderOpen As Bitmap = My.Resources.folder_open
-	    Private folderClose As Bitmap = My.Resources.folder_close
-	    Private file As Bitmap = My.Resources.file
-	
-	    Private Sub radTreeView1_NodeFormatting(ByVal sender As Object, ByVal e As TreeNodeFormattingEventArgs)
-	        If e.Node.Nodes.Count > 0 Then
-	            If e.Node.Expanded Then
-	                e.NodeElement.ImageElement.Image = folderOpen
-	            Else
-	                e.NodeElement.ImageElement.Image = folderClose
-	            End If
-	        Else
-	            e.NodeElement.ImageElement.Image = file
-	        End If
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

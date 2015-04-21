@@ -64,9 +64,7 @@ __BubbleSeries__ are used to visualize data points as points with coordinates an
 	        bubbleSeries2.DataPoints.Add(New BubbleDataPoint(18, 22, 2))
 	        bubbleSeries2.DataPoints.Add(New BubbleDataPoint(10, 10, 4))
 	        Me.RadChartView1.Series.Add(bubbleSeries2)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

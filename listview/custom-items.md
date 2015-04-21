@@ -264,19 +264,7 @@ We should create a custom visual item inheriting the __IconListViewVisualItem__.
 	        End Sub
 	    End Class
 	
-	    '#End Region
-	
-	    '#Region "UseCustomIconItem"
-	
-	    Private Sub VisualItemCreating(sender As Object, e As ListViewVisualItemCreatingEventArgs)
-	        If Me.RadListView1.ViewType = ListViewType.IconsView Then
-	            e.VisualItem = New MyCustomIconListViewVisualItem()
-	        End If
-	    End Sub
-	
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -309,9 +297,7 @@ To use the newly created item, you should subscribe to the __VisualItemCreating_
 	        End If
 	    End Sub
 	
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 
 

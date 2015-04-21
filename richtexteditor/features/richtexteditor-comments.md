@@ -135,8 +135,7 @@ You can customize the looks of the comments by attaching to the __CommentShowing
 	        End If
 	    End Sub
 	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 

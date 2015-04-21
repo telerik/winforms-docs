@@ -52,80 +52,7 @@ MultidayView shows multiple date-time intervals with appointments arranged one 
 	        multiDayView.Intervals.Add(startDate, 2)
 	        multiDayView.Intervals.Add(startDate.AddDays(4), 3)
 	        Me.RadScheduler1.ActiveView = multiDayView
-	        '#End Region
-	
-	        '#Region interval
-	        Dim interval As New DateTimeInterval()
-	        interval.Duration = New TimeSpan(20, 5, 25)
-	        multiDayView.GetAppointmentsInInterval(interval)
-	        '#End Region
-	
-	        '#Region getDayView
-	        Me.RadScheduler1.GetDayView().WorkTime = New TimeInterval(TimeSpan.FromHours(5), TimeSpan.FromHours(9))
-	        '#End Region
-	
-	        '#Region "workDays"
-	        multiDayView.WorkWeekStart = DayOfWeek.Tuesday
-	        multiDayView.WorkWeekEnd = DayOfWeek.Saturday
-	
-	        '#End Region
-	
-	        ' #Region "showHideAllDay"
-	        multiDayView.ShowAllDayArea = False
-	        '#End Region
-	
-	        '#Region "rulerStartScaleMinutes"
-	
-	        multiDayView.RangeFactor = ScaleRange.TenMinutes
-	        multiDayView.RulerStartScale = 11
-	        multiDayView.RulerStartScaleMinutes = 40
-	        multiDayView.RulerEndScale = 14
-	        multiDayView.RulerEndScaleMinutes = 10
-	
-	        '#End Region
-	
-	        '#Region showDayHeaders
-	        multiDayView.ShowHeader = True
-	        '#End Region
-	
-	        '#Region headerFormat
-	        multiDayView.HeaderFormat = "MMMM dd"
-	        '#End Region
-	
-	        '#Region rangeFactor
-	        multiDayView.RangeFactor = ScaleRange.Hour
-	        '			#End Region
-	
-	        '#Region rulerScaleSize
-	        multiDayView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerScale
-	        multiDayView.RulerStartScale = 9
-	        multiDayView.RulerEndScale = 14
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        multiDayView.RulerStartScale = 9
-	        multiDayView.RulerEndScale = 14
-	        multiDayView.RulerTimeFormat = RulerTimeFormat.hours12
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        multiDayView.RulerStartScale = 9
-	        multiDayView.RulerEndScale = 14
-	        multiDayView.RulerTimeFormat = RulerTimeFormat.hours24
-	        '#End Region
-	
-	        '#Region showRuler
-	        multiDayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        multiDayView.RulerWidth = 40
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -149,74 +76,7 @@ MultidayView shows multiple date-time intervals with appointments arranged one 
 	        Dim interval As New DateTimeInterval()
 	        interval.Duration = New TimeSpan(20, 5, 25)
 	        multiDayView.GetAppointmentsInInterval(interval)
-	        '#End Region
-	
-	        '#Region getDayView
-	        Me.RadScheduler1.GetDayView().WorkTime = New TimeInterval(TimeSpan.FromHours(5), TimeSpan.FromHours(9))
-	        '#End Region
-	
-	        '#Region "workDays"
-	        multiDayView.WorkWeekStart = DayOfWeek.Tuesday
-	        multiDayView.WorkWeekEnd = DayOfWeek.Saturday
-	
-	        '#End Region
-	
-	        ' #Region "showHideAllDay"
-	        multiDayView.ShowAllDayArea = False
-	        '#End Region
-	
-	        '#Region "rulerStartScaleMinutes"
-	
-	        multiDayView.RangeFactor = ScaleRange.TenMinutes
-	        multiDayView.RulerStartScale = 11
-	        multiDayView.RulerStartScaleMinutes = 40
-	        multiDayView.RulerEndScale = 14
-	        multiDayView.RulerEndScaleMinutes = 10
-	
-	        '#End Region
-	
-	        '#Region showDayHeaders
-	        multiDayView.ShowHeader = True
-	        '#End Region
-	
-	        '#Region headerFormat
-	        multiDayView.HeaderFormat = "MMMM dd"
-	        '#End Region
-	
-	        '#Region rangeFactor
-	        multiDayView.RangeFactor = ScaleRange.Hour
-	        '			#End Region
-	
-	        '#Region rulerScaleSize
-	        multiDayView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerScale
-	        multiDayView.RulerStartScale = 9
-	        multiDayView.RulerEndScale = 14
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        multiDayView.RulerStartScale = 9
-	        multiDayView.RulerEndScale = 14
-	        multiDayView.RulerTimeFormat = RulerTimeFormat.hours12
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        multiDayView.RulerStartScale = 9
-	        multiDayView.RulerEndScale = 14
-	        multiDayView.RulerTimeFormat = RulerTimeFormat.hours24
-	        '#End Region
-	
-	        '#Region showRuler
-	        multiDayView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        multiDayView.RulerWidth = 40
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

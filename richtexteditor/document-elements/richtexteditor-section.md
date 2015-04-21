@@ -52,82 +52,7 @@ For example, you can build a RadDocument from scratch and add Sections to it in 
 	        Dim section As New Telerik.WinForms.Documents.Model.Section()
 	        Me.radRichTextEditor1.Document.Sections.Add(section)
 	
-	        '#End Region
-	
-	        '#Region "break"
-	
-	        Me.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage)
-	
-	        '#End Region
-	
-	        '#Region "break2"
-	        ' Dim documentEditor As New RadDocumentEditor(Me.radRichTextEditor1.Document)
-	        '  documentEditor.InsertSectionBreak(Me.radRichTextEditor1.Document.CaretPosition, Me.radRichTextEditor1.CurrentEditingStyle, SectionBreakType.NextPage)
-	
-	        '#End Region
-	
-	        '#Region "margin"
-	
-	        section.PageMargin = New Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30)
-	
-	        'When the section has already been added to the document
-	        Me.radRichTextEditor1.ChangeSectionPageMargin(New Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30))
-	
-	        '#End Region
-	
-	        '#Region "orientation"
-	
-	        'When creating a Section programmatically
-	        section.PageOrientation = PageOrientation.Landscape
-	
-	        'When the section has already been added to the document
-	        Me.radRichTextEditor1.ChangeSectionPageOrientation(PageOrientation.Landscape)
-	
-	        '#End Region 
-	
-	        '#Region "page"
-	
-	        'When creating a Section programmatically
-	        section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4)
-	
-	        'When the section has already been added to the document
-	        Me.radRichTextEditor1.ChangeSectionPageSize(PaperTypeConverter.ToSize(PaperTypes.A4))
-	
-	        '#End Region
-	
-	        Dim radDocument = Me.radRichTextEditor1.Document
-	
-	        '#Region "body"
-	
-	        Dim header As New Telerik.WinForms.Documents.Model.Header() With {.Body = radDocument, .IsLinkedToPrevious = False}
-	
-	        '#End Region
-	
-	        '#Region "header1"
-	
-	        section.Headers.First = header
-	
-	        '#End Region
-	
-	        '#Region "header2"
-	
-	        Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header)
-	
-	        '#End Region
-	
-	        '#Region "add1"
-	
-	        Dim section1 As New Section()
-	        Dim paragraph As New Paragraph()
-	        section1.Blocks.Add(paragraph)
-	
-	        '#End Region
-	
-	        '#Region "add2"
-	        Me.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -150,76 +75,7 @@ Splitting an already measured document into two sections at the current caret po
 	
 	        Me.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage)
 	
-	        '#End Region
-	
-	        '#Region "break2"
-	        ' Dim documentEditor As New RadDocumentEditor(Me.radRichTextEditor1.Document)
-	        '  documentEditor.InsertSectionBreak(Me.radRichTextEditor1.Document.CaretPosition, Me.radRichTextEditor1.CurrentEditingStyle, SectionBreakType.NextPage)
-	
-	        '#End Region
-	
-	        '#Region "margin"
-	
-	        section.PageMargin = New Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30)
-	
-	        'When the section has already been added to the document
-	        Me.radRichTextEditor1.ChangeSectionPageMargin(New Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30))
-	
-	        '#End Region
-	
-	        '#Region "orientation"
-	
-	        'When creating a Section programmatically
-	        section.PageOrientation = PageOrientation.Landscape
-	
-	        'When the section has already been added to the document
-	        Me.radRichTextEditor1.ChangeSectionPageOrientation(PageOrientation.Landscape)
-	
-	        '#End Region 
-	
-	        '#Region "page"
-	
-	        'When creating a Section programmatically
-	        section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4)
-	
-	        'When the section has already been added to the document
-	        Me.radRichTextEditor1.ChangeSectionPageSize(PaperTypeConverter.ToSize(PaperTypes.A4))
-	
-	        '#End Region
-	
-	        Dim radDocument = Me.radRichTextEditor1.Document
-	
-	        '#Region "body"
-	
-	        Dim header As New Telerik.WinForms.Documents.Model.Header() With {.Body = radDocument, .IsLinkedToPrevious = False}
-	
-	        '#End Region
-	
-	        '#Region "header1"
-	
-	        section.Headers.First = header
-	
-	        '#End Region
-	
-	        '#Region "header2"
-	
-	        Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header)
-	
-	        '#End Region
-	
-	        '#Region "add1"
-	
-	        Dim section1 As New Section()
-	        Dim paragraph As New Paragraph()
-	        section1.Blocks.Add(paragraph)
-	
-	        '#End Region
-	
-	        '#Region "add2"
-	        Me.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -271,61 +127,7 @@ Here is a list of these properties:
 	        'When the section has already been added to the document
 	        Me.radRichTextEditor1.ChangeSectionPageMargin(New Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30))
 	
-	        '#End Region
-	
-	        '#Region "orientation"
-	
-	        'When creating a Section programmatically
-	        section.PageOrientation = PageOrientation.Landscape
-	
-	        'When the section has already been added to the document
-	        Me.radRichTextEditor1.ChangeSectionPageOrientation(PageOrientation.Landscape)
-	
-	        '#End Region 
-	
-	        '#Region "page"
-	
-	        'When creating a Section programmatically
-	        section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4)
-	
-	        'When the section has already been added to the document
-	        Me.radRichTextEditor1.ChangeSectionPageSize(PaperTypeConverter.ToSize(PaperTypes.A4))
-	
-	        '#End Region
-	
-	        Dim radDocument = Me.radRichTextEditor1.Document
-	
-	        '#Region "body"
-	
-	        Dim header As New Telerik.WinForms.Documents.Model.Header() With {.Body = radDocument, .IsLinkedToPrevious = False}
-	
-	        '#End Region
-	
-	        '#Region "header1"
-	
-	        section.Headers.First = header
-	
-	        '#End Region
-	
-	        '#Region "header2"
-	
-	        Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header)
-	
-	        '#End Region
-	
-	        '#Region "add1"
-	
-	        Dim section1 As New Section()
-	        Dim paragraph As New Paragraph()
-	        section1.Blocks.Add(paragraph)
-	
-	        '#End Region
-	
-	        '#Region "add2"
-	        Me.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -356,51 +158,7 @@ Here is a list of these properties:
 	        'When the section has already been added to the document
 	        Me.radRichTextEditor1.ChangeSectionPageOrientation(PageOrientation.Landscape)
 	
-	        '#End Region 
-	
-	        '#Region "page"
-	
-	        'When creating a Section programmatically
-	        section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4)
-	
-	        'When the section has already been added to the document
-	        Me.radRichTextEditor1.ChangeSectionPageSize(PaperTypeConverter.ToSize(PaperTypes.A4))
-	
-	        '#End Region
-	
-	        Dim radDocument = Me.radRichTextEditor1.Document
-	
-	        '#Region "body"
-	
-	        Dim header As New Telerik.WinForms.Documents.Model.Header() With {.Body = radDocument, .IsLinkedToPrevious = False}
-	
-	        '#End Region
-	
-	        '#Region "header1"
-	
-	        section.Headers.First = header
-	
-	        '#End Region
-	
-	        '#Region "header2"
-	
-	        Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header)
-	
-	        '#End Region
-	
-	        '#Region "add1"
-	
-	        Dim section1 As New Section()
-	        Dim paragraph As New Paragraph()
-	        section1.Blocks.Add(paragraph)
-	
-	        '#End Region
-	
-	        '#Region "add2"
-	        Me.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -431,41 +189,7 @@ Here is a list of these properties:
 	        'When the section has already been added to the document
 	        Me.radRichTextEditor1.ChangeSectionPageSize(PaperTypeConverter.ToSize(PaperTypes.A4))
 	
-	        '#End Region
-	
-	        Dim radDocument = Me.radRichTextEditor1.Document
-	
-	        '#Region "body"
-	
-	        Dim header As New Telerik.WinForms.Documents.Model.Header() With {.Body = radDocument, .IsLinkedToPrevious = False}
-	
-	        '#End Region
-	
-	        '#Region "header1"
-	
-	        section.Headers.First = header
-	
-	        '#End Region
-	
-	        '#Region "header2"
-	
-	        Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header)
-	
-	        '#End Region
-	
-	        '#Region "add1"
-	
-	        Dim section1 As New Section()
-	        Dim paragraph As New Paragraph()
-	        section1.Blocks.Add(paragraph)
-	
-	        '#End Region
-	
-	        '#Region "add2"
-	        Me.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -489,33 +213,7 @@ Here is a list of these properties:
 	
 	        Dim header As New Telerik.WinForms.Documents.Model.Header() With {.Body = radDocument, .IsLinkedToPrevious = False}
 	
-	        '#End Region
-	
-	        '#Region "header1"
-	
-	        section.Headers.First = header
-	
-	        '#End Region
-	
-	        '#Region "header2"
-	
-	        Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header)
-	
-	        '#End Region
-	
-	        '#Region "add1"
-	
-	        Dim section1 As New Section()
-	        Dim paragraph As New Paragraph()
-	        section1.Blocks.Add(paragraph)
-	
-	        '#End Region
-	
-	        '#Region "add2"
-	        Me.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 All header/footer types are set identically.
 
@@ -537,27 +235,7 @@ All header/footer types are set identically.
 	
 	        section.Headers.First = header
 	
-	        '#End Region
-	
-	        '#Region "header2"
-	
-	        Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header)
-	
-	        '#End Region
-	
-	        '#Region "add1"
-	
-	        Dim section1 As New Section()
-	        Dim paragraph As New Paragraph()
-	        section1.Blocks.Add(paragraph)
-	
-	        '#End Region
-	
-	        '#Region "add2"
-	        Me.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -577,21 +255,7 @@ All header/footer types are set identically.
 	
 	        Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header)
 	
-	        '#End Region
-	
-	        '#Region "add1"
-	
-	        Dim section1 As New Section()
-	        Dim paragraph As New Paragraph()
-	        section1.Blocks.Add(paragraph)
-	
-	        '#End Region
-	
-	        '#Region "add2"
-	        Me.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 Setting the Footers can be done in the same way.
 
@@ -621,13 +285,7 @@ In a non-measured document:
 	        Dim paragraph As New Paragraph()
 	        section1.Blocks.Add(paragraph)
 	
-	        '#End Region
-	
-	        '#Region "add2"
-	        Me.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -645,9 +303,7 @@ In a measured document:
 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=add2}}
 	        Me.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

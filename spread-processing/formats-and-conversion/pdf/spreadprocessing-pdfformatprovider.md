@@ -61,25 +61,7 @@ __Example 1__ shows how to use __PdfFormatProvider__ to export a Workbook to a f
 	                Dim workbook As Workbook = CreateSampleWorkbook()
 	                pdfFormatProvider.Export(workbook, output)
 	            End Using
-	            '#End Region
-	        End Sub
-	        Private Sub Example2()
-	            '#Region "example2 "
-	            Dim workbook As Workbook = CreateSampleWorkbook()
-	
-	            Dim provider As New PdfFormatProvider()
-	            Dim fixedDocument As RadFixedDocument = provider.ExportToFixedDocument(workbook)
-	            '#End Region
-	        End Sub
-	        Private Function GetFileStream() As Stream
-	            Throw New NotImplementedException()
-	        End Function
-	
-	        Private Function CreateSampleWorkbook() As Workbook
-	            Throw New NotImplementedException()
-	        End Function
-	    End Class
-	End Class
+	{{endregion}}
 
 
 

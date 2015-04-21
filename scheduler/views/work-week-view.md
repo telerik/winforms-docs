@@ -37,60 +37,7 @@ The Week View can be set it to be the default view which the user sees:
 
 {{source=..\SamplesVB\Scheduler\Views\WorkWeekView.vb region=activeViewType}}
 	        Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.WorkWeek
-	        '#End Region
-	
-	        '#Region getWeekView
-	        Dim weekView As SchedulerWeekView = Me.RadScheduler1.GetWeekView()
-	        '#End Region
-	
-	        '#Region activeWorkWeek
-	        If Me.RadScheduler1.ActiveViewType = SchedulerViewType.WorkWeek Then
-	            Dim activeWeekView As SchedulerWeekView = CType(Me.RadScheduler1.ActiveView, SchedulerWeekView)
-	        End If
-	        '#End Region
-	
-	        '#Region showDayHeaders
-	        weekView.ShowHeader = True
-	        '#End Region
-	
-	        '#Region headerFormat
-	        weekView.HeaderFormat = "MMMM dd"
-	        '#End Region
-	
-	        '#Region rangeFactor
-	        weekView.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region rulerScaleSize
-	        weekView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerScale
-	        weekView.RulerStartScale = 9
-	        weekView.RulerEndScale = 14
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        weekView.RulerStartScale = 9
-	        weekView.RulerEndScale = 14
-	        weekView.RulerTimeFormat = RulerTimeFormat.hours12
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        weekView.RulerStartScale = 9
-	        weekView.RulerEndScale = 14
-	        weekView.RulerTimeFormat = RulerTimeFormat.hours24
-	        '#End Region
-	
-	        '#Region showRuler
-	        weekView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        weekView.RulerWidth = 40
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -113,56 +60,7 @@ To get the instance to the SchedulerWeekView from the RadScheduler object,either
 
 {{source=..\SamplesVB\Scheduler\Views\WorkWeekView.vb region=getWeekView}}
 	        Dim weekView As SchedulerWeekView = Me.RadScheduler1.GetWeekView()
-	        '#End Region
-	
-	        '#Region activeWorkWeek
-	        If Me.RadScheduler1.ActiveViewType = SchedulerViewType.WorkWeek Then
-	            Dim activeWeekView As SchedulerWeekView = CType(Me.RadScheduler1.ActiveView, SchedulerWeekView)
-	        End If
-	        '#End Region
-	
-	        '#Region showDayHeaders
-	        weekView.ShowHeader = True
-	        '#End Region
-	
-	        '#Region headerFormat
-	        weekView.HeaderFormat = "MMMM dd"
-	        '#End Region
-	
-	        '#Region rangeFactor
-	        weekView.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region rulerScaleSize
-	        weekView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerScale
-	        weekView.RulerStartScale = 9
-	        weekView.RulerEndScale = 14
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        weekView.RulerStartScale = 9
-	        weekView.RulerEndScale = 14
-	        weekView.RulerTimeFormat = RulerTimeFormat.hours12
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        weekView.RulerStartScale = 9
-	        weekView.RulerEndScale = 14
-	        weekView.RulerTimeFormat = RulerTimeFormat.hours24
-	        '#End Region
-	
-	        '#Region showRuler
-	        weekView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        weekView.RulerWidth = 40
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -187,56 +85,7 @@ To get the instance to the SchedulerWeekView from the RadScheduler object,either
 
 {{source=..\SamplesVB\Scheduler\Views\WorkWeekView.vb region=getWeekView}}
 	        Dim weekView As SchedulerWeekView = Me.RadScheduler1.GetWeekView()
-	        '#End Region
-	
-	        '#Region activeWorkWeek
-	        If Me.RadScheduler1.ActiveViewType = SchedulerViewType.WorkWeek Then
-	            Dim activeWeekView As SchedulerWeekView = CType(Me.RadScheduler1.ActiveView, SchedulerWeekView)
-	        End If
-	        '#End Region
-	
-	        '#Region showDayHeaders
-	        weekView.ShowHeader = True
-	        '#End Region
-	
-	        '#Region headerFormat
-	        weekView.HeaderFormat = "MMMM dd"
-	        '#End Region
-	
-	        '#Region rangeFactor
-	        weekView.RangeFactor = ScaleRange.Hour
-	        '#End Region
-	
-	        '#Region rulerScaleSize
-	        weekView.RulerScaleSize = 50
-	        '#End Region
-	
-	        '#Region rulerScale
-	        weekView.RulerStartScale = 9
-	        weekView.RulerEndScale = 14
-	        '#End Region
-	
-	        '#Region 12rulerTimeFormat
-	        weekView.RulerStartScale = 9
-	        weekView.RulerEndScale = 14
-	        weekView.RulerTimeFormat = RulerTimeFormat.hours12
-	        '#End Region
-	
-	        '#Region 24rulerTimeFormat
-	        weekView.RulerStartScale = 9
-	        weekView.RulerEndScale = 14
-	        weekView.RulerTimeFormat = RulerTimeFormat.hours24
-	        '#End Region
-	
-	        '#Region showRuler
-	        weekView.ShowRuler = True
-	        '#End Region
-	
-	        '#Region rulerWidth
-	        weekView.RulerWidth = 40
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -67,69 +67,7 @@ For example, a link to our site can be inserted in the document programmatically
 	        Dim info As New HyperlinkInfo() With {.NavigateUri = "http://www.telerik.com", .Target = HyperlinkTargets.Blank, .IsAnchor = False}
 	        Me.radRichTextEditor1.InsertHyperlink(info, "RichTextBox demo")
 	
-	        '#End Region
-	
-	        '#Region "remove"
-	
-	        Me.radRichTextEditor1.RemoveHyperlink()
-	
-	        '#End Region
-	
-	        '#Region "bookmark"
-	
-	        Dim info1 As New HyperlinkInfo() With {.NavigateUri = "bookmark1", .Target = HyperlinkTargets.Self, .IsAnchor = True}
-	        Me.radRichTextEditor1.InsertHyperlink(info1, "Link to Bookmark 1")
-	
-	        '#End Region
-	
-	        '#Region "startend"
-	
-	        Dim hyperlinkStart As New HyperlinkRangeStart()
-	        Dim hyperlinkEnd As New HyperlinkRangeEnd()
-	        hyperlinkEnd.PairWithStart(hyperlinkStart)
-	        Dim hyperlinkInfo As New HyperlinkInfo() With {.NavigateUri = "http://telerik.com", .Target = HyperlinkTargets.Blank}
-	        hyperlinkStart.HyperlinkInfo = hyperlinkInfo
-	        Dim document As New RadDocument()
-	        Dim section As New Section()
-	        Dim paragraph As New Paragraph()
-	        Dim spanBefore As New Span("Text before the image ")
-	        Dim image As ImageInline
-	        Using ms As New MemoryStream()
-	            System.Drawing.Image.FromFile("C:\logo.png").Save(ms, System.Drawing.Imaging.ImageFormat.Png)
-	            image = New ImageInline(ms, New Telerik.WinControls.RichTextEditor.UI.Size(25, 25), "png")
-	        End Using
-	        Dim spanAfter As New Span(" and some text after the image")
-	        paragraph.Inlines.Add(hyperlinkStart)
-	        paragraph.Inlines.Add(spanBefore)
-	        paragraph.Inlines.Add(image)
-	        paragraph.Inlines.Add(spanAfter)
-	        section.Blocks.Add(paragraph)
-	        Dim anotherParagraph As New Paragraph()
-	        anotherParagraph.Inlines.Add(New Span("Another paragraph here and still in hyperlink"))
-	        anotherParagraph.Inlines.Add(hyperlinkEnd)
-	        section.Blocks.Add(anotherParagraph)
-	        document.Sections.Add(section)
-	        Me.radRichTextEditor1.Document = document
-	
-	        '#End Region
-	
-	        '#Region "delete"
-	        Dim links As IEnumerable(Of HyperlinkRangeStart) = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of HyperlinkRangeStart)()
-	        For Each link As HyperlinkRangeStart In links
-	            Me.radRichTextEditor1.Document.CaretPosition.MoveToInline(TryCast(link.FirstLayoutBox, Telerik.WinForms.Documents.Layout.InlineLayoutBox), 0)
-	            Me.radRichTextEditor1.Document.Selection.SelectAnnotationRange(link)
-	            Me.radRichTextEditor1.Delete(False)
-	            Me.radRichTextEditor1.Insert("Removed hyperlink")
-	        Next link
-	        '#End Region
-	
-	        AddHandler radRichTextEditor1.HyperlinkClicked, AddressOf radRichTextEditor1_HyperlinkClicked
-	    End Sub
-	
-	    Private Sub radRichTextEditor1_HyperlinkClicked(ByVal sender As Object, ByVal e As HyperlinkClickedEventArgs)
-	        e.Handled = False
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -151,63 +89,7 @@ A link to a bookmark is inserted by specifying the bookmark's name as NavigateUr
 	
 	        Me.radRichTextEditor1.RemoveHyperlink()
 	
-	        '#End Region
-	
-	        '#Region "bookmark"
-	
-	        Dim info1 As New HyperlinkInfo() With {.NavigateUri = "bookmark1", .Target = HyperlinkTargets.Self, .IsAnchor = True}
-	        Me.radRichTextEditor1.InsertHyperlink(info1, "Link to Bookmark 1")
-	
-	        '#End Region
-	
-	        '#Region "startend"
-	
-	        Dim hyperlinkStart As New HyperlinkRangeStart()
-	        Dim hyperlinkEnd As New HyperlinkRangeEnd()
-	        hyperlinkEnd.PairWithStart(hyperlinkStart)
-	        Dim hyperlinkInfo As New HyperlinkInfo() With {.NavigateUri = "http://telerik.com", .Target = HyperlinkTargets.Blank}
-	        hyperlinkStart.HyperlinkInfo = hyperlinkInfo
-	        Dim document As New RadDocument()
-	        Dim section As New Section()
-	        Dim paragraph As New Paragraph()
-	        Dim spanBefore As New Span("Text before the image ")
-	        Dim image As ImageInline
-	        Using ms As New MemoryStream()
-	            System.Drawing.Image.FromFile("C:\logo.png").Save(ms, System.Drawing.Imaging.ImageFormat.Png)
-	            image = New ImageInline(ms, New Telerik.WinControls.RichTextEditor.UI.Size(25, 25), "png")
-	        End Using
-	        Dim spanAfter As New Span(" and some text after the image")
-	        paragraph.Inlines.Add(hyperlinkStart)
-	        paragraph.Inlines.Add(spanBefore)
-	        paragraph.Inlines.Add(image)
-	        paragraph.Inlines.Add(spanAfter)
-	        section.Blocks.Add(paragraph)
-	        Dim anotherParagraph As New Paragraph()
-	        anotherParagraph.Inlines.Add(New Span("Another paragraph here and still in hyperlink"))
-	        anotherParagraph.Inlines.Add(hyperlinkEnd)
-	        section.Blocks.Add(anotherParagraph)
-	        document.Sections.Add(section)
-	        Me.radRichTextEditor1.Document = document
-	
-	        '#End Region
-	
-	        '#Region "delete"
-	        Dim links As IEnumerable(Of HyperlinkRangeStart) = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of HyperlinkRangeStart)()
-	        For Each link As HyperlinkRangeStart In links
-	            Me.radRichTextEditor1.Document.CaretPosition.MoveToInline(TryCast(link.FirstLayoutBox, Telerik.WinForms.Documents.Layout.InlineLayoutBox), 0)
-	            Me.radRichTextEditor1.Document.Selection.SelectAnnotationRange(link)
-	            Me.radRichTextEditor1.Delete(False)
-	            Me.radRichTextEditor1.Insert("Removed hyperlink")
-	        Next link
-	        '#End Region
-	
-	        AddHandler radRichTextEditor1.HyperlinkClicked, AddressOf radRichTextEditor1_HyperlinkClicked
-	    End Sub
-	
-	    Private Sub radRichTextEditor1_HyperlinkClicked(ByVal sender As Object, ByVal e As HyperlinkClickedEventArgs)
-	        e.Handled = False
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -248,63 +130,7 @@ Removing a hyperlink (and keeping the part of the document that the hyperlink sp
 	
 	        Me.radRichTextEditor1.RemoveHyperlink()
 	
-	        '#End Region
-	
-	        '#Region "bookmark"
-	
-	        Dim info1 As New HyperlinkInfo() With {.NavigateUri = "bookmark1", .Target = HyperlinkTargets.Self, .IsAnchor = True}
-	        Me.radRichTextEditor1.InsertHyperlink(info1, "Link to Bookmark 1")
-	
-	        '#End Region
-	
-	        '#Region "startend"
-	
-	        Dim hyperlinkStart As New HyperlinkRangeStart()
-	        Dim hyperlinkEnd As New HyperlinkRangeEnd()
-	        hyperlinkEnd.PairWithStart(hyperlinkStart)
-	        Dim hyperlinkInfo As New HyperlinkInfo() With {.NavigateUri = "http://telerik.com", .Target = HyperlinkTargets.Blank}
-	        hyperlinkStart.HyperlinkInfo = hyperlinkInfo
-	        Dim document As New RadDocument()
-	        Dim section As New Section()
-	        Dim paragraph As New Paragraph()
-	        Dim spanBefore As New Span("Text before the image ")
-	        Dim image As ImageInline
-	        Using ms As New MemoryStream()
-	            System.Drawing.Image.FromFile("C:\logo.png").Save(ms, System.Drawing.Imaging.ImageFormat.Png)
-	            image = New ImageInline(ms, New Telerik.WinControls.RichTextEditor.UI.Size(25, 25), "png")
-	        End Using
-	        Dim spanAfter As New Span(" and some text after the image")
-	        paragraph.Inlines.Add(hyperlinkStart)
-	        paragraph.Inlines.Add(spanBefore)
-	        paragraph.Inlines.Add(image)
-	        paragraph.Inlines.Add(spanAfter)
-	        section.Blocks.Add(paragraph)
-	        Dim anotherParagraph As New Paragraph()
-	        anotherParagraph.Inlines.Add(New Span("Another paragraph here and still in hyperlink"))
-	        anotherParagraph.Inlines.Add(hyperlinkEnd)
-	        section.Blocks.Add(anotherParagraph)
-	        document.Sections.Add(section)
-	        Me.radRichTextEditor1.Document = document
-	
-	        '#End Region
-	
-	        '#Region "delete"
-	        Dim links As IEnumerable(Of HyperlinkRangeStart) = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of HyperlinkRangeStart)()
-	        For Each link As HyperlinkRangeStart In links
-	            Me.radRichTextEditor1.Document.CaretPosition.MoveToInline(TryCast(link.FirstLayoutBox, Telerik.WinForms.Documents.Layout.InlineLayoutBox), 0)
-	            Me.radRichTextEditor1.Document.Selection.SelectAnnotationRange(link)
-	            Me.radRichTextEditor1.Delete(False)
-	            Me.radRichTextEditor1.Insert("Removed hyperlink")
-	        Next link
-	        '#End Region
-	
-	        AddHandler radRichTextEditor1.HyperlinkClicked, AddressOf radRichTextEditor1_HyperlinkClicked
-	    End Sub
-	
-	    Private Sub radRichTextEditor1_HyperlinkClicked(ByVal sender As Object, ByVal e As HyperlinkClickedEventArgs)
-	        e.Handled = False
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -385,25 +211,7 @@ Here is an example that creates a document with a hyperlink spanning several par
 	        document.Sections.Add(section)
 	        Me.radRichTextEditor1.Document = document
 	
-	        '#End Region
-	
-	        '#Region "delete"
-	        Dim links As IEnumerable(Of HyperlinkRangeStart) = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of HyperlinkRangeStart)()
-	        For Each link As HyperlinkRangeStart In links
-	            Me.radRichTextEditor1.Document.CaretPosition.MoveToInline(TryCast(link.FirstLayoutBox, Telerik.WinForms.Documents.Layout.InlineLayoutBox), 0)
-	            Me.radRichTextEditor1.Document.Selection.SelectAnnotationRange(link)
-	            Me.radRichTextEditor1.Delete(False)
-	            Me.radRichTextEditor1.Insert("Removed hyperlink")
-	        Next link
-	        '#End Region
-	
-	        AddHandler radRichTextEditor1.HyperlinkClicked, AddressOf radRichTextEditor1_HyperlinkClicked
-	    End Sub
-	
-	    Private Sub radRichTextEditor1_HyperlinkClicked(ByVal sender As Object, ByVal e As HyperlinkClickedEventArgs)
-	        e.Handled = False
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -440,15 +248,7 @@ For instance, here is how you can delete all hyperlinks in the document and repl
 	            Me.radRichTextEditor1.Delete(False)
 	            Me.radRichTextEditor1.Insert("Removed hyperlink")
 	        Next link
-	        '#End Region
-	
-	        AddHandler radRichTextEditor1.HyperlinkClicked, AddressOf radRichTextEditor1_HyperlinkClicked
-	    End Sub
-	
-	    Private Sub radRichTextEditor1_HyperlinkClicked(ByVal sender As Object, ByVal e As HyperlinkClickedEventArgs)
-	        e.Handled = False
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

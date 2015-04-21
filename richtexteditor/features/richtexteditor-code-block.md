@@ -76,27 +76,7 @@ Additionally, you can enable the display of line numbers and the alternating lin
 	
 	        Me.radRichTextEditor1.InsertCodeBlock(code, formattingSettings)
 	
-	        '#End Region
-	
-	        '#Region "delete"
-	
-	        Dim markers As IEnumerable(Of CodeAnnotationRangeStart) = Me.radRichTextEditor1.Document.GetAnnotationMarkersOfType(Of CodeAnnotationRangeStart)()
-	        Me.radRichTextEditor1.DeleteCodeBlock(markers.First())
-	
-	        '#End Region
-	
-	        '#Region "js"
-	
-	        Dim commentJS As New StyleDefinition("CommentJS", StyleType.Character)
-	        commentJS.SpanProperties.ForeColor = Colors.Gray
-	        commentJS.IsCustom = False
-	        commentJS.IsPrimary = False
-	
-	        Me.radRichTextEditor1.Document.CodeFormatter.RegisterClassificationType(ClassificationTypes.Comment, CodeLanguages.JavaScript, commentJS)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -129,20 +109,7 @@ To remove the code block you can use the __DeleteCodeBlock()__ method of
 	        Dim markers As IEnumerable(Of CodeAnnotationRangeStart) = Me.radRichTextEditor1.Document.GetAnnotationMarkersOfType(Of CodeAnnotationRangeStart)()
 	        Me.radRichTextEditor1.DeleteCodeBlock(markers.First())
 	
-	        '#End Region
-	
-	        '#Region "js"
-	
-	        Dim commentJS As New StyleDefinition("CommentJS", StyleType.Character)
-	        commentJS.SpanProperties.ForeColor = Colors.Gray
-	        commentJS.IsCustom = False
-	        commentJS.IsPrimary = False
-	
-	        Me.radRichTextEditor1.Document.CodeFormatter.RegisterClassificationType(ClassificationTypes.Comment, CodeLanguages.JavaScript, commentJS)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -198,8 +165,6 @@ You can also register or change which style will be used for which classificatio
 	
 	        Me.radRichTextEditor1.Document.CodeFormatter.RegisterClassificationType(ClassificationTypes.Comment, CodeLanguages.JavaScript, commentJS)
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

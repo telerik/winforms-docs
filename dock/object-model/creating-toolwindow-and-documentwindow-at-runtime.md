@@ -290,29 +290,6 @@ So, we need to follow another approach. What we need to do is to globally define
 	            Me.RadDock1.DockWindow(seucW, rightHandStrip, DockPosition.Fill)
 	        End If
 	    End Sub
-	    '#End Region
-	
-	    '#region wrongApproach
-	    Private Sub menuItemTeamExplorer_Click1(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim teuc As New TeamExplorerUserControl()
-	        Dim dockTo As DockPosition = DockPosition.Right
-	        Dim hw As HostWindow = Me.RadDock1.DockControl(teuc, dockTo)
-	        hw.Text = "Team Explorer"
-	    End Sub
-	
-	    Private Sub menuItemServerExplorer_Click1(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim seuc As New ServerExplorerUserControl()
-	        Dim dockTo As DockPosition = DockPosition.Right
-	        Dim hw As HostWindow = Me.RadDock1.DockControl(seuc, dockTo)
-	        hw.Text = "Server Explorer"
-	    End Sub
-	
-	    Private Sub menuItemSolutionExplorer_Click1(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim seuc As New SolutionExplorerUserControl()
-	        Dim dockTo As DockPosition = DockPosition.Right
-	        Dim hw As HostWindow = Me.RadDock1.DockControl(seuc, dockTo)
-	        hw.Text = "Solution Explorer"
-	    End Sub
 	{{endregion}}
 
 

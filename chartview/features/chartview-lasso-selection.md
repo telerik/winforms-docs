@@ -78,17 +78,7 @@ First let’s start by adding some data points to the __RadChartView__ and __Las
 	        Dim lassoZoomController As New LassoZoomController()
 	        RadChartView1.Controllers.Add(lassoZoomController)
 	    End Sub
-	    '#End Region
-	
-	    '#Region "ZoomFirst"
-	    Private Sub LassoSelection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-	        Dim lassoZoomController As LassoZoomController = TryCast(RadChartView1.Controllers(1), LassoZoomController)
-	        If lassoZoomController IsNot Nothing Then
-	            lassoZoomController.ZoomAndPan(0, 50)
-	        End If
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 ![chartview-features-lasso-selection 001](images/chartview-features-lasso-selection001.png)
 
@@ -126,8 +116,7 @@ __LassoZoomController__ supports zoom and pan functionality programmatically via
 	            lassoZoomController.ZoomAndPan(0, 50)
 	        End If
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 ![chartview-features-lasso-selection 004](images/chartview-features-lasso-selection004.png)
 

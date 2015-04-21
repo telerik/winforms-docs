@@ -17,7 +17,7 @@ position: 10
 Annotations are visual elements that can be used to highlight certain areas on the plot area and denote significant values.
       
 
-The ChartView provides the following types of annotations:
+The __RadChartView__ provides the following types of annotations:
       
 
 * Cartesian GridLine

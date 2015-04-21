@@ -103,7 +103,6 @@ It is possible to auto generate Multi-level hierarchy as well. You should again 
 	        RadGridView1.AutoGenerateHierarchy = True
 	    End Sub
 	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 ![gridview-hierarchical-grid-binding-to-hierarchical-data-automatically 003](images/gridview-hierarchical-grid-binding-to-hierarchical-data-automatically003.png)

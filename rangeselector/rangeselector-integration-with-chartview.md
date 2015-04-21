@@ -47,40 +47,7 @@ Here is how to access the __RangeSelectorViewElement__ and change the series typ
 {{source=..\SamplesVB\RangeSelector\RangeSelectorIntegrationWithChart.vb region=ScaleCustomization1}}
 	            Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
 	            AddHandler chartElement.SeriesInitializing, AddressOf chartElement_SeriesInitializing
-	            '#End Region
-	        End Sub
-	
-	#Region "ScaleCustomization2"
-	        Private Sub chartElement_SeriesInitializing(sender As Object, e As SeriesInitializingEventArgs)
-	            e.SeriesType = GetType(BarSeries)
-	        End Sub
-	#End Region
-	
-	#Region "LabelCustomization1"
-	        Private f As New Font("Arial", 22)
-	        Private Sub chartElement_LabelInitializing(sender As Object, e As LabelInitializingEventArgs)
-	            e.LabelElement.Font = f
-	
-	            If e.LabelElement.Text = "C" Then
-	                e.LabelElement.ForeColor = Color.Blue
-	            End If
-	            If e.LabelElement.Text = "A" Then
-	                e.LabelElement.ForeColor = Color.Red
-	            End If
-	        End Sub
-	#End Region
-	
-	#Region "LabelCustomization3"
-	        Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
-	            Dim chartScaleElement As RangeSelectorChartScaleContainerElement = TryCast(e.ScaleElement, RangeSelectorChartScaleContainerElement)
-	            chartScaleElement.LabelsOffset = 0
-	            chartScaleElement.ShowAllLabels = False
-	        End Sub
-	#End Region
-	
-	
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -101,33 +68,7 @@ Here is how to access the __RangeSelectorViewElement__ and change the series typ
 	        Private Sub chartElement_SeriesInitializing(sender As Object, e As SeriesInitializingEventArgs)
 	            e.SeriesType = GetType(BarSeries)
 	        End Sub
-	#End Region
-	
-	#Region "LabelCustomization1"
-	        Private f As New Font("Arial", 22)
-	        Private Sub chartElement_LabelInitializing(sender As Object, e As LabelInitializingEventArgs)
-	            e.LabelElement.Font = f
-	
-	            If e.LabelElement.Text = "C" Then
-	                e.LabelElement.ForeColor = Color.Blue
-	            End If
-	            If e.LabelElement.Text = "A" Then
-	                e.LabelElement.ForeColor = Color.Red
-	            End If
-	        End Sub
-	#End Region
-	
-	#Region "LabelCustomization3"
-	        Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
-	            Dim chartScaleElement As RangeSelectorChartScaleContainerElement = TryCast(e.ScaleElement, RangeSelectorChartScaleContainerElement)
-	            chartScaleElement.LabelsOffset = 0
-	            chartScaleElement.ShowAllLabels = False
-	        End Sub
-	#End Region
-	
-	
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![rangeselector-integration-with-chartview 001](images/rangeselector-integration-with-chartview001.png)
 
@@ -151,55 +92,7 @@ Here is how to access and modify the labels in RadRangeSelector
 {{source=..\SamplesVB\RangeSelector\RangeSelectorIntegrationWithChart.vb region=LabelCustomization}}
 	            Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
 	            AddHandler chartElement.LabelInitializing, AddressOf chartElement_LabelInitializing
-	            '#End Region
-	
-	            '#Region "EnablePanAndZoomSynchronization"
-	            DirectCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement).EnablePanAndZoomSynchronization = False
-	            '#End Region
-	
-	            '#Region "LabelCustomization2"
-	            AddHandler Me.radRangeSelector1.ScaleInitializing, AddressOf radRangeSelector1_ScaleInitializing
-	            '#End Region
-	        End Sub
-	
-	        Private Sub ScaleCustomization()
-	            '#Region "ScaleCustomization1"
-	            Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
-	            AddHandler chartElement.SeriesInitializing, AddressOf chartElement_SeriesInitializing
-	            '#End Region
-	        End Sub
-	
-	#Region "ScaleCustomization2"
-	        Private Sub chartElement_SeriesInitializing(sender As Object, e As SeriesInitializingEventArgs)
-	            e.SeriesType = GetType(BarSeries)
-	        End Sub
-	#End Region
-	
-	#Region "LabelCustomization1"
-	        Private f As New Font("Arial", 22)
-	        Private Sub chartElement_LabelInitializing(sender As Object, e As LabelInitializingEventArgs)
-	            e.LabelElement.Font = f
-	
-	            If e.LabelElement.Text = "C" Then
-	                e.LabelElement.ForeColor = Color.Blue
-	            End If
-	            If e.LabelElement.Text = "A" Then
-	                e.LabelElement.ForeColor = Color.Red
-	            End If
-	        End Sub
-	#End Region
-	
-	#Region "LabelCustomization3"
-	        Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
-	            Dim chartScaleElement As RangeSelectorChartScaleContainerElement = TryCast(e.ScaleElement, RangeSelectorChartScaleContainerElement)
-	            chartScaleElement.LabelsOffset = 0
-	            chartScaleElement.ShowAllLabels = False
-	        End Sub
-	#End Region
-	
-	
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -238,19 +131,7 @@ Here is how to access and modify the labels in RadRangeSelector
 	                e.LabelElement.ForeColor = Color.Red
 	            End If
 	        End Sub
-	#End Region
-	
-	#Region "LabelCustomization3"
-	        Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
-	            Dim chartScaleElement As RangeSelectorChartScaleContainerElement = TryCast(e.ScaleElement, RangeSelectorChartScaleContainerElement)
-	            chartScaleElement.LabelsOffset = 0
-	            chartScaleElement.ShowAllLabels = False
-	        End Sub
-	#End Region
-	
-	
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![rangeselector-integration-with-chartview 002](images/rangeselector-integration-with-chartview002.png)
 
@@ -279,47 +160,7 @@ The easiest way to access these properties is in the ScaleInitializing event of 
 
 {{source=..\SamplesVB\RangeSelector\RangeSelectorIntegrationWithChart.vb region=LabelCustomization2}}
 	            AddHandler Me.radRangeSelector1.ScaleInitializing, AddressOf radRangeSelector1_ScaleInitializing
-	            '#End Region
-	        End Sub
-	
-	        Private Sub ScaleCustomization()
-	            '#Region "ScaleCustomization1"
-	            Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
-	            AddHandler chartElement.SeriesInitializing, AddressOf chartElement_SeriesInitializing
-	            '#End Region
-	        End Sub
-	
-	#Region "ScaleCustomization2"
-	        Private Sub chartElement_SeriesInitializing(sender As Object, e As SeriesInitializingEventArgs)
-	            e.SeriesType = GetType(BarSeries)
-	        End Sub
-	#End Region
-	
-	#Region "LabelCustomization1"
-	        Private f As New Font("Arial", 22)
-	        Private Sub chartElement_LabelInitializing(sender As Object, e As LabelInitializingEventArgs)
-	            e.LabelElement.Font = f
-	
-	            If e.LabelElement.Text = "C" Then
-	                e.LabelElement.ForeColor = Color.Blue
-	            End If
-	            If e.LabelElement.Text = "A" Then
-	                e.LabelElement.ForeColor = Color.Red
-	            End If
-	        End Sub
-	#End Region
-	
-	#Region "LabelCustomization3"
-	        Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
-	            Dim chartScaleElement As RangeSelectorChartScaleContainerElement = TryCast(e.ScaleElement, RangeSelectorChartScaleContainerElement)
-	            chartScaleElement.LabelsOffset = 0
-	            chartScaleElement.ShowAllLabels = False
-	        End Sub
-	#End Region
-	
-	
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -344,11 +185,7 @@ The easiest way to access these properties is in the ScaleInitializing event of 
 	            chartScaleElement.LabelsOffset = 0
 	            chartScaleElement.ShowAllLabels = False
 	        End Sub
-	#End Region
-	
-	
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -371,50 +208,6 @@ There is two-way synchronization between the pan and zoom functionality of RadCh
 
 {{source=..\SamplesVB\RangeSelector\RangeSelectorIntegrationWithChart.vb region=EnablePanAndZoomSynchronization}}
 	            DirectCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement).EnablePanAndZoomSynchronization = False
-	            '#End Region
-	
-	            '#Region "LabelCustomization2"
-	            AddHandler Me.radRangeSelector1.ScaleInitializing, AddressOf radRangeSelector1_ScaleInitializing
-	            '#End Region
-	        End Sub
-	
-	        Private Sub ScaleCustomization()
-	            '#Region "ScaleCustomization1"
-	            Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
-	            AddHandler chartElement.SeriesInitializing, AddressOf chartElement_SeriesInitializing
-	            '#End Region
-	        End Sub
-	
-	#Region "ScaleCustomization2"
-	        Private Sub chartElement_SeriesInitializing(sender As Object, e As SeriesInitializingEventArgs)
-	            e.SeriesType = GetType(BarSeries)
-	        End Sub
-	#End Region
-	
-	#Region "LabelCustomization1"
-	        Private f As New Font("Arial", 22)
-	        Private Sub chartElement_LabelInitializing(sender As Object, e As LabelInitializingEventArgs)
-	            e.LabelElement.Font = f
-	
-	            If e.LabelElement.Text = "C" Then
-	                e.LabelElement.ForeColor = Color.Blue
-	            End If
-	            If e.LabelElement.Text = "A" Then
-	                e.LabelElement.ForeColor = Color.Red
-	            End If
-	        End Sub
-	#End Region
-	
-	#Region "LabelCustomization3"
-	        Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
-	            Dim chartScaleElement As RangeSelectorChartScaleContainerElement = TryCast(e.ScaleElement, RangeSelectorChartScaleContainerElement)
-	            chartScaleElement.LabelsOffset = 0
-	            chartScaleElement.ShowAllLabels = False
-	        End Sub
-	#End Region
-	
-	
-	    End Class
-	End Namespace
+	{{endregion}}
 
 

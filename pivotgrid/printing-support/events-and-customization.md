@@ -73,16 +73,7 @@ RadPivotGrid exposes two events which you can use to format the appearance and a
 	            e.Graphics.FillRectangle(b, e.Bounds)
 	        End If
 	    End Sub
-	#End Region
-	
-	    Private Sub PivotGridPrinting_Load(sender As Object, e As EventArgs) Handles Me.Load
-	        ' TODO: This line of code loads data into the 'nwindDataSet.Orders' table. You can move, or remove it, as needed.
-	        Me.ordersTableAdapter.Fill(Me.nwindDataSet.Orders)
-	
-	    End Sub
-	
-	
-	End Class
+	{{endregion}}
 
 
 

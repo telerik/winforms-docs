@@ -33,20 +33,6 @@ The embedded __RadCalendar__ has HeaderNavigationMode property, which determines
 	
 	        Me.radDateTimePicker1.DateTimePickerElement.Calendar.HeaderNavigationMode = HeaderNavigationMode.Zoom
 	
-	        '#End Region
-	
-	        '#Region FreeFormDateTimeDateTimePicker
-	
-	        Me.radDateTimePicker1.DateTimePickerElement.TextBoxElement.MaskType = MaskType.FreeFormDateTime
-	
-	        '#End Region
-	
-	        '#Region "provider"
-	        Dim provider As MaskDateTimeProvider = TryCast(Me.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider, MaskDateTimeProvider)
-	        provider.AutoSelectNextPart = True
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 

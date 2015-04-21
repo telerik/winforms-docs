@@ -1,27 +1,32 @@
 ---
-title: Annotations and Destinations
-page_title: Annotations and Destinations
-description: Annotations and Destinations
-slug: radpdfprocessing-model-annotations-and-destinations
-tags: annotations,and,destinations
+title:  Annotations and Destinations
+page_title:  Annotations and Destinations
+description:  Annotations and Destinations
+slug: pdfprocessing-model-annotations-and-destinations
+tags: annotations,destinations
 published: True
-position: 7
+position: 6
 ---
 
-# Annotations and Destinations
+#  Annotations and Destinations
 
 
 
-The abstract __Annotation__ element associates an object with a location on a [RadFixedPage]({%slug radpdfprocessing-model-radfixedpage%}). Annotation exposes the following properties:
+The abstract __Annotation__ element associates an object with a location on a [RadFixedPage]({%slug pdfprocessing-model-radfixedpage%}). Annotation exposes the following properties:
       
 
 * __Rect__: The rectangle which defines the location of the annotation on the page.
           
 
-* __Type__: Property of type [AnnotationType](http://www.telerik.com/help/wpf/t_telerik_windows_Documents_fixed_model_annotations_annotationtype.html) which determines the type of the annotation. The only supported type is __Link__.
+* __Type__: Property of type
+            [AnnotationType](
+                http://www.telerik.com/help/winforms/t_telerik_windows_Documents_fixed_model_annotations_annotationtype.html
+              )
+            which determines the type of the annotation. The only supported type is __Link__.
           
 
 This article will get you familiar with the following concepts:
+      
 
 * [Link](#link)
 
@@ -59,46 +64,7 @@ __Link__ exposes the following properties:
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelAnnotationsAndDestinations.vb region=radpdfprocessing-model-annotations-and-destinations_0}}
 	        Dim linkWithDestination As Link = New Link(destination)
 	        page.Annotations.Add(linkWithDestination)
-	        '	#End Region
-	    End Sub
-	
-	    Private Sub CreateLinkToAction(ByVal action As Action, ByVal page As RadFixedPage)
-	        '	#Region "radpdfprocessing-model-annotations-and-destinations_1"
-	        Dim linkWithAction As Link = New Link(action)
-	        page.Annotations.Add(linkWithAction)
-	        '	#End Region
-	    End Sub
-	
-	    Private Sub CreateLocation(ByVal secondPage As RadFixedPage, ByVal firstPage As RadFixedPage)
-	        '	#Region "radpdfprocessing-model-annotations-and-destinations_2"
-	        Dim location As Location = New Location()
-	        location.Left = 225
-	        location.Top = 500
-	        location.Zoom = 4
-	        location.Page = secondPage
-	
-	        Dim link = firstPage.Annotations.AddLink(location)
-	        link.Rect = New Rect(10, 10, 50, 50)
-	        '	#End Region
-	    End Sub
-	
-	    Private Sub CreateAction(ByVal firstPage As RadFixedPage, ByVal location As Location)
-	        '	#Region "radpdfprocessing-model-annotations-and-destinations_3"
-	        Dim goToAction As GoToAction = New GoToAction()
-	        goToAction.Destination = location
-	
-	        Dim goToLink = firstPage.Annotations.AddLink(goToAction)
-	        goToLink.Rect = New Rect(10, 10, 50, 50)
-	
-	        Dim uriAction As UriAction = New UriAction()
-	        uriAction.Uri = New Uri("http://www.telerik.com")
-	
-	        Dim uriLink = firstPage.Annotations.AddLink(uriAction)
-	        uriLink.Rect = New Rect(70, 10, 50, 50)
-	        '	#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -120,39 +86,7 @@ __Link__ exposes the following properties:
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelAnnotationsAndDestinations.vb region=radpdfprocessing-model-annotations-and-destinations_1}}
 	        Dim linkWithAction As Link = New Link(action)
 	        page.Annotations.Add(linkWithAction)
-	        '	#End Region
-	    End Sub
-	
-	    Private Sub CreateLocation(ByVal secondPage As RadFixedPage, ByVal firstPage As RadFixedPage)
-	        '	#Region "radpdfprocessing-model-annotations-and-destinations_2"
-	        Dim location As Location = New Location()
-	        location.Left = 225
-	        location.Top = 500
-	        location.Zoom = 4
-	        location.Page = secondPage
-	
-	        Dim link = firstPage.Annotations.AddLink(location)
-	        link.Rect = New Rect(10, 10, 50, 50)
-	        '	#End Region
-	    End Sub
-	
-	    Private Sub CreateAction(ByVal firstPage As RadFixedPage, ByVal location As Location)
-	        '	#Region "radpdfprocessing-model-annotations-and-destinations_3"
-	        Dim goToAction As GoToAction = New GoToAction()
-	        goToAction.Destination = location
-	
-	        Dim goToLink = firstPage.Annotations.AddLink(goToAction)
-	        goToLink.Rect = New Rect(10, 10, 50, 50)
-	
-	        Dim uriAction As UriAction = New UriAction()
-	        uriAction.Uri = New Uri("http://www.telerik.com")
-	
-	        Dim uriLink = firstPage.Annotations.AddLink(uriAction)
-	        uriLink.Rect = New Rect(70, 10, 50, 50)
-	        '	#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -229,26 +163,7 @@ __Example 3__ shows how you can create a Location object, associate it with a Li
 	
 	        Dim link = firstPage.Annotations.AddLink(location)
 	        link.Rect = New Rect(10, 10, 50, 50)
-	        '	#End Region
-	    End Sub
-	
-	    Private Sub CreateAction(ByVal firstPage As RadFixedPage, ByVal location As Location)
-	        '	#Region "radpdfprocessing-model-annotations-and-destinations_3"
-	        Dim goToAction As GoToAction = New GoToAction()
-	        goToAction.Destination = location
-	
-	        Dim goToLink = firstPage.Annotations.AddLink(goToAction)
-	        goToLink.Rect = New Rect(10, 10, 50, 50)
-	
-	        Dim uriAction As UriAction = New UriAction()
-	        uriAction.Uri = New Uri("http://www.telerik.com")
-	
-	        Dim uriLink = firstPage.Annotations.AddLink(uriAction)
-	        uriLink.Rect = New Rect(70, 10, 50, 50)
-	        '	#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -307,10 +222,7 @@ __Example 4__ demonstrates how to create an action of type __GoToAction__, assoc
 	
 	        Dim uriLink = firstPage.Annotations.AddLink(uriAction)
 	        uriLink.Rect = New Rect(70, 10, 50, 50)
-	        '	#End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 

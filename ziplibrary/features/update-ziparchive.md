@@ -48,38 +48,7 @@ The following code snippet opens a ZIP archive in update mode using __ZipArchive
 	                ' Display the list of the files in the selected zip file using the ZipArchive.Entries property.
 	            End Using
 	        End Using
-	        '#End Region
-	
-	        '#Region "flush"
-	        Using entry As ZipArchiveEntry = archive.CreateEntry("text.txt")
-	            Dim writer As New StreamWriter(entry.Open())
-	            writer.WriteLine("Hello world!")
-	            writer.Flush()
-	        End Using
-	        '#End Region
-	        '#Region "delete"
-	        Dim entry2 As ZipArchiveEntry = archive.GetEntry("text.txt")
-	        If entry2 IsNot Nothing Then
-	            entry2.Delete()
-	        End If
-	        '#End Region
-	        '#Region "entry"
-	        Dim entry1 As ZipArchiveEntry = archive.GetEntry("text.txt")
-	        If entry1 IsNot Nothing Then
-	            Dim entryStream As Stream = entry1.Open()
-	            Dim reader As New StreamReader(entryStream)
-	            Dim content As String = reader.ReadToEnd()
-	
-	            entryStream.Seek(0, SeekOrigin.End)
-	            Dim writer As New StreamWriter(entryStream)
-	            writer.WriteLine("Updated line.")
-	            writer.Flush()
-	        End If
-	        '#End Region
-	    End Sub
-	End Class
-	
-	
+	{{endregion}}
 
 
 
@@ -124,30 +93,7 @@ In order to add a new entry into the ZIP archive you should perform the followin
 	            writer.WriteLine("Hello world!")
 	            writer.Flush()
 	        End Using
-	        '#End Region
-	        '#Region "delete"
-	        Dim entry2 As ZipArchiveEntry = archive.GetEntry("text.txt")
-	        If entry2 IsNot Nothing Then
-	            entry2.Delete()
-	        End If
-	        '#End Region
-	        '#Region "entry"
-	        Dim entry1 As ZipArchiveEntry = archive.GetEntry("text.txt")
-	        If entry1 IsNot Nothing Then
-	            Dim entryStream As Stream = entry1.Open()
-	            Dim reader As New StreamReader(entryStream)
-	            Dim content As String = reader.ReadToEnd()
-	
-	            entryStream.Seek(0, SeekOrigin.End)
-	            Dim writer As New StreamWriter(entryStream)
-	            writer.WriteLine("Updated line.")
-	            writer.Flush()
-	        End If
-	        '#End Region
-	    End Sub
-	End Class
-	
-	
+	{{endregion}}
 
 
 
@@ -181,24 +127,7 @@ The following code snippet obtains an entry and deletes it from the ZIP archive 
 	        If entry2 IsNot Nothing Then
 	            entry2.Delete()
 	        End If
-	        '#End Region
-	        '#Region "entry"
-	        Dim entry1 As ZipArchiveEntry = archive.GetEntry("text.txt")
-	        If entry1 IsNot Nothing Then
-	            Dim entryStream As Stream = entry1.Open()
-	            Dim reader As New StreamReader(entryStream)
-	            Dim content As String = reader.ReadToEnd()
-	
-	            entryStream.Seek(0, SeekOrigin.End)
-	            Dim writer As New StreamWriter(entryStream)
-	            writer.WriteLine("Updated line.")
-	            writer.Flush()
-	        End If
-	        '#End Region
-	    End Sub
-	End Class
-	
-	
+	{{endregion}}
 
 
 
@@ -255,11 +184,7 @@ In order to update an existing entry in the ZIP archive you should perform the f
 	            writer.WriteLine("Updated line.")
 	            writer.Flush()
 	        End If
-	        '#End Region
-	    End Sub
-	End Class
-	
-	
+	{{endregion}}
 
 
 

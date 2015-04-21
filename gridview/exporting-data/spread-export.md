@@ -53,73 +53,7 @@ To use the spread export functionality, an instance of the __SpreadExport__ obje
 				Dim spreadExporter As SpreadExport = New SpreadExport(radGridView1)
 				spreadExporter.RunExport("D:\exportedFile.xlsx")
 	
-	            '#End Region
-			End Sub
-	
-			Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles radButton1.Click
-				System.IO.File.Delete("D:\exportedFile.xlsx")
-				Dim spreadExporter As SpreadExport = New SpreadExport(radGridView1)
-				spreadExporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
-	
-			   ' spreadExporter.CellFormatting += spreadExporter_CellFormatting;
-				AddHandler spreadExporter.WorkbookCreated, AddressOf spreadExporter_WorkbookCreated
-				spreadExporter.ExportVisualSettings = True
-	
-				'spreadExporter.ExportHierarchy = true;
-				'spreadExporter.ChildViewExportMode = Telerik.WinControls.UI.Export.ChildViewExportMode.ExportCurrentlyActiveView
-				'spreadExporter.HiddenRowOption
-				'spreadExporter.PagingExportOption = Telerik.WinControls.UI.Export.PagingExportOption.
-				'spreadExporter.SummariesExportOption
-				'spreadExporter.RadGridViewToExport
-				'spreadExporter.SheetMaxRows
-				'spreadExporter.SheetName
-	
-				'spreadExporter.ChildViewExporting
-				'spreadExporter.ExportCompleted
-	
-				spreadExporter.ExportHierarchy = False
-				spreadExporter.RunExport("D:\exportedFile.xlsx")
-				System.Diagnostics.Process.Start("D:\exportedFile.xlsx")
-			End Sub
-	
-			#Region "WorbookCreated"
-	
-			Private Sub spreadExporter_WorkbookCreated(ByVal sender As Object, ByVal e As WorkbookCreatedEventArgs)
-				Dim worksheet As Worksheet = CType(e.Workbook.Sheets(0), Worksheet)
-				worksheet.Columns(worksheet.UsedCellRange).AutoFitWidth()
-			End Sub
-	
-			#End Region
-	
-			#Region "CellFormatting"
-	
-			Private Sub spreadExporter_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.SpreadExport.CellFormattingEventArgs)
-				If e.GridRowInfoType Is GetType(GridViewTableHeaderRowInfo) Then
-					e.CellStyleInfo.Underline = True
-	
-					If e.GridCellInfo.RowInfo.HierarchyLevel = 0 Then
-						e.CellStyleInfo.BackColor = Color.DeepSkyBlue
-					ElseIf e.GridCellInfo.RowInfo.HierarchyLevel = 1 Then
-						e.CellStyleInfo.BackColor = Color.LightSkyBlue
-					End If
-				End If
-	
-				If e.GridRowInfoType Is GetType(GridViewHierarchyRowInfo) Then
-					If e.GridCellInfo.RowInfo.HierarchyLevel = 0 Then
-						e.CellStyleInfo.IsItalic = True
-						e.CellStyleInfo.FontSize = 12
-						e.CellStyleInfo.BackColor = Color.GreenYellow
-					ElseIf e.GridCellInfo.RowInfo.HierarchyLevel = 1 Then
-						e.CellStyleInfo.ForeColor = Color.DarkGreen
-						e.CellStyleInfo.BackColor = Color.LightGreen
-					End If
-				End If
-			End Sub
-	
-			#End Region
-	
-		End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -312,10 +246,7 @@ Here is an example of formatting the exported grid:
 				End If
 			End Sub
 	
-			#End Region
-	
-		End Class
-	End Namespace
+	{{endregion}}
 
 ![gridview-exporting-data-spread-export 003](images/gridview-exporting-data-spread-export003.png)
 
@@ -348,37 +279,7 @@ __WorkbookCreated__ - this event is triggered when the workbook is ready to be e
 				worksheet.Columns(worksheet.UsedCellRange).AutoFitWidth()
 			End Sub
 	
-			#End Region
-	
-			#Region "CellFormatting"
-	
-			Private Sub spreadExporter_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.SpreadExport.CellFormattingEventArgs)
-				If e.GridRowInfoType Is GetType(GridViewTableHeaderRowInfo) Then
-					e.CellStyleInfo.Underline = True
-	
-					If e.GridCellInfo.RowInfo.HierarchyLevel = 0 Then
-						e.CellStyleInfo.BackColor = Color.DeepSkyBlue
-					ElseIf e.GridCellInfo.RowInfo.HierarchyLevel = 1 Then
-						e.CellStyleInfo.BackColor = Color.LightSkyBlue
-					End If
-				End If
-	
-				If e.GridRowInfoType Is GetType(GridViewHierarchyRowInfo) Then
-					If e.GridCellInfo.RowInfo.HierarchyLevel = 0 Then
-						e.CellStyleInfo.IsItalic = True
-						e.CellStyleInfo.FontSize = 12
-						e.CellStyleInfo.BackColor = Color.GreenYellow
-					ElseIf e.GridCellInfo.RowInfo.HierarchyLevel = 1 Then
-						e.CellStyleInfo.ForeColor = Color.DarkGreen
-						e.CellStyleInfo.BackColor = Color.LightGreen
-					End If
-				End If
-			End Sub
-	
-			#End Region
-	
-		End Class
-	End Namespace
+	{{endregion}}
 
 ![gridview-exporting-data-spread-export 004](images/gridview-exporting-data-spread-export004.png)
 

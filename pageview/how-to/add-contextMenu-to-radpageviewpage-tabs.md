@@ -75,45 +75,7 @@ To create your custom __RadContextMenu__, add its' __RadMenuItems__, set their p
 	        contextMenu1.Items.Add(closeAllTabsMenuItem)
 	    End Sub
 	
-	    '#End Region
-	
-	    '#Region "eventHandlerImpl"
-	
-	    Private Sub addNewTabMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim newPage As New RadPageViewPage()
-	        newPage.Text = "My new tab text"
-	        radPageView1.Pages.Add(newPage)
-	    End Sub
-	
-	    Private Sub closeTabMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        radPageView1.Pages.Remove(radPageView1.SelectedPage)
-	    End Sub
-	
-	    Private Sub closeAllButThisMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        For i As Integer = radPageView1.Pages.Count - 1 To 0 Step -1
-	            If radPageView1.Pages(i) IsNot radPageView1.SelectedPage Then
-	                radPageView1.Pages.RemoveAt(i)
-	            End If
-	        Next i
-	    End Sub
-	
-	    Private Sub closeAllTabsMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        radPageView1.Pages.Clear()
-	    End Sub
-	
-	    '#End Region
-	
-	    '#Region "mouseClick"
-	
-	    Private Sub radPageView1_MouseClick(ByVal sender As Object, ByVal e As MouseEventArgs)
-	        Dim hitItem As RadPageViewItem = Me.radPageView1.ViewElement.ItemFromPoint(e.Location)
-	        If e.Button = MouseButtons.Right AndAlso hitItem IsNot Nothing Then
-	            contextMenu1.Show(Me.radPageView1.PointToScreen(e.Location))
-	        End If
-	    End Sub
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -181,19 +143,7 @@ In the following code snippet you can observe, how to add the most common items 
 	        radPageView1.Pages.Clear()
 	    End Sub
 	
-	    '#End Region
-	
-	    '#Region "mouseClick"
-	
-	    Private Sub radPageView1_MouseClick(ByVal sender As Object, ByVal e As MouseEventArgs)
-	        Dim hitItem As RadPageViewItem = Me.radPageView1.ViewElement.ItemFromPoint(e.Location)
-	        If e.Button = MouseButtons.Right AndAlso hitItem IsNot Nothing Then
-	            contextMenu1.Show(Me.radPageView1.PointToScreen(e.Location))
-	        End If
-	    End Sub
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -227,7 +177,6 @@ After the context menu is created it have to be associated with __RadPageViewP
 	        End If
 	    End Sub
 	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 

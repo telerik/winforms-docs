@@ -54,54 +54,7 @@ __RadRating__ introduces an easy way to customize the item’s BackColor when ho
 	            item.SelectedValueElement.Fill.GradientStyle = GradientStyles.Solid
 	        Next
 	
-	        '#End Region
-	
-	        '#Region "CustomShape"
-	
-	        For i As Integer = 0 To 4
-	            Dim myShape As New CustomShapeElement()
-	            myShape.Fill.BackColor = Color.LightBlue
-	            myShape.HoverElement.Fill.BackColor = Color.DeepSkyBlue
-	            myShape.ValueElement.Fill.BackColor = Color.DodgerBlue
-	            myShape.SelectedValueElement.Fill.BackColor = Color.Blue
-	
-	            myShape.Fill.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	            myShape.HoverElement.Fill.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	            myShape.ValueElement.Fill.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-	            myShape.SelectedValueElement.Fill.GradientStyle = GradientStyles.Solid
-	            Me.RadRating1.Items.Add(myShape)
-	        Next
-	
-	        ' #End Region
-	    End Sub
-	
-	#Region "CustomShapeClasses"
-	
-	    Public Class CustomShapeElement
-	        Inherits RatingVisualElement
-	        Protected Overrides Function GetShape() As ElementShape
-	            Return New CustomShape()
-	        End Function
-	
-	        Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-	            Get
-	                Return GetType(RatingVisualElement)
-	            End Get
-	        End Property
-	    End Class
-	
-	    Public Class CustomShape
-	        Inherits ElementShape
-	        Public Overrides Function CreatePath(bounds As Rectangle) As GraphicsPath
-	            Dim path As New GraphicsPath()
-	            path.AddEllipse(bounds)
-	
-	            Return path
-	        End Function
-	    End Class
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 ![rating-customization 001](images/rating-customization001.png)![rating-customization 002](images/rating-customization002.png)
 
@@ -153,36 +106,7 @@ By default __RadRating__ supports three main element shapes: Stars, Diamonds and
 	            Me.RadRating1.Items.Add(myShape)
 	        Next
 	
-	        ' #End Region
-	    End Sub
-	
-	#Region "CustomShapeClasses"
-	
-	    Public Class CustomShapeElement
-	        Inherits RatingVisualElement
-	        Protected Overrides Function GetShape() As ElementShape
-	            Return New CustomShape()
-	        End Function
-	
-	        Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-	            Get
-	                Return GetType(RatingVisualElement)
-	            End Get
-	        End Property
-	    End Class
-	
-	    Public Class CustomShape
-	        Inherits ElementShape
-	        Public Overrides Function CreatePath(bounds As Rectangle) As GraphicsPath
-	            Dim path As New GraphicsPath()
-	            path.AddEllipse(bounds)
-	
-	            Return path
-	        End Function
-	    End Class
-	
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -248,7 +172,6 @@ By default __RadRating__ supports three main element shapes: Stars, Diamonds and
 	        End Function
 	    End Class
 	
-	#End Region
-	End Class
+	{{endregion}}
 
 ![rating-customization 003](images/rating-customization003.png)

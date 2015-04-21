@@ -87,33 +87,7 @@ In this particular case we are going to add three buttons to RadTextBox:
 	        stackPanel.Children.Add(button)
 	        stackPanel.Children.Add(button2)
 	        stackPanel.Children.Add(button3)
-	        '#End Region
-	
-	        '#Region "dockLayoutPanel"
-	        Dim tbItem As RadTextBoxItem = Me.RadTextBox1.TextBoxElement.TextBoxItem
-	        Me.RadTextBox1.TextBoxElement.Children.Remove(tbItem)
-	
-	        Dim dockPanel As New DockLayoutPanel()
-	        dockPanel.Children.Add(stackPanel)
-	        dockPanel.Children.Add(tbItem)
-	        DockLayoutPanel.SetDock(tbItem, Telerik.WinControls.Layouts.Dock.Left)
-	        DockLayoutPanel.SetDock(stackPanel, Telerik.WinControls.Layouts.Dock.Right)
-	        Me.RadTextBox1.TextBoxElement.Children.Add(dockPanel)
-	        '#End Region
-	
-	        '#Region "finalPadding"
-	        Me.RadTextBox1.TextBoxElement.Padding = New Padding(1, 1, 1, 1)
-	        tbItem.Margin = New Padding(0, 1, 0, 0)
-	        '#End Region
-	    End Sub
-	
-	    '#Region "clickHandler"
-	    Private Sub button_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim button As RadButtonElement = TryCast(sender, RadButtonElement)
-	        RadMessageBox.Show("Clicked! " & button.Text)
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 As you can see, we are also setting Padding of the buttons. This allows us to set some size
               to these buttons bigger than the default one. In addition, we are setting Margin of the buttons,
@@ -153,21 +127,7 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 	        DockLayoutPanel.SetDock(tbItem, Telerik.WinControls.Layouts.Dock.Left)
 	        DockLayoutPanel.SetDock(stackPanel, Telerik.WinControls.Layouts.Dock.Right)
 	        Me.RadTextBox1.TextBoxElement.Children.Add(dockPanel)
-	        '#End Region
-	
-	        '#Region "finalPadding"
-	        Me.RadTextBox1.TextBoxElement.Padding = New Padding(1, 1, 1, 1)
-	        tbItem.Margin = New Padding(0, 1, 0, 0)
-	        '#End Region
-	    End Sub
-	
-	    '#Region "clickHandler"
-	    Private Sub button_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim button As RadButtonElement = TryCast(sender, RadButtonElement)
-	        RadMessageBox.Show("Clicked! " & button.Text)
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -189,16 +149,7 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 {{source=..\SamplesVB\Editors\TextBoxWithButtons.vb region=finalPadding}}
 	        Me.RadTextBox1.TextBoxElement.Padding = New Padding(1, 1, 1, 1)
 	        tbItem.Margin = New Padding(0, 1, 0, 0)
-	        '#End Region
-	    End Sub
-	
-	    '#Region "clickHandler"
-	    Private Sub button_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim button As RadButtonElement = TryCast(sender, RadButtonElement)
-	        RadMessageBox.Show("Clicked! " & button.Text)
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -224,8 +175,7 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 	        Dim button As RadButtonElement = TryCast(sender, RadButtonElement)
 	        RadMessageBox.Show("Clicked! " & button.Text)
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 

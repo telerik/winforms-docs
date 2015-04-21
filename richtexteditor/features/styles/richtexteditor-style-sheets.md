@@ -66,23 +66,7 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
 	            End Using
 	        End If
 	
-	        '#End Region
-	
-	        '#Region "save"
-	
-	        Dim sfd As New SaveFileDialog()
-	        sfd.Filter = "Xaml Files|*.xaml"
-	        If sfd.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
-	            Using stream = sfd.OpenFile()
-	                Dim stylesheet As New Stylesheet()
-	                stylesheet.ExtractStylesheetFromDocument(Me.radRichTextEditor1.Document)
-	                XamlFormatProvider.SaveStylesheet(stylesheet, stream)
-	            End Using
-	        End If
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -123,8 +107,6 @@ This is how you can save a style sheet with the __SaveStyleSheet__ method of __X
 	            End Using
 	        End If
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

@@ -43,8 +43,6 @@ BasePrimitive is a [VisualElement]({%slug tpf-class-hierarchy-visualelement%}) d
 	                Me.Shadow, Me.TextRenderingHint, Me.TextOrientation, Me.FlipText)
 	        End Sub
 	
-	#End Region
-	    End Class
-	End Class
+	{{endregion}}
 
 

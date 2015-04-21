@@ -65,9 +65,7 @@ The example above can be achieved with the following code snippet:
 	        series.DataPoints.Add(New WaterfallDataPoint(-30000, True, False, "Q2"))
 	        series.DataPoints.Add(New WaterfallDataPoint(39000, False, True, "Ending" & vbLf & "Balance"))
 	        Me.radChartView1.Series.Add(series)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -148,25 +146,6 @@ You need to set the standard databinding properties as well
 	        series.DataSource = table
 	
 	        Me.radChartView1.Series.Add(series)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UnboundMode()
-	        '#Region "UnboundMode"
-	        Dim series As New WaterfallSeries()
-	        series.DataPoints.Add(New WaterfallDataPoint(50000, False, False, "Beginning" & vbLf & "Balance"))
-	        series.DataPoints.Add(New WaterfallDataPoint(17000, False, False, "Jan"))
-	        series.DataPoints.Add(New WaterfallDataPoint(14000, False, False, "Feb"))
-	        series.DataPoints.Add(New WaterfallDataPoint(-12000, False, False, "Mar"))
-	        series.DataPoints.Add(New WaterfallDataPoint(69000, True, False, "Q1"))
-	        series.DataPoints.Add(New WaterfallDataPoint(-22000, False, False, "Apr"))
-	        series.DataPoints.Add(New WaterfallDataPoint(-18000, False, False, "May"))
-	        series.DataPoints.Add(New WaterfallDataPoint(10000, False, False, "Jun"))
-	        series.DataPoints.Add(New WaterfallDataPoint(-30000, True, False, "Q2"))
-	        series.DataPoints.Add(New WaterfallDataPoint(39000, False, True, "Ending" & vbLf & "Balance"))
-	        Me.radChartView1.Series.Add(series)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

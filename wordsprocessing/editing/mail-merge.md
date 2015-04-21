@@ -47,45 +47,7 @@ The code snippet in __Example 1__ shows how to initialize a RadFlodDocumentEdito
 	        Dim editor As New RadFlowDocumentEditor(document)
 	        editor.InsertField("MERGEFIELD FirstName", "")
 	
-	        '#End Region
-	
-	        Dim paragraph As New Paragraph(document)
-	
-	        '#Region "mailmerge2"
-	
-	        Dim field As New FieldInfo(document)
-	
-	        paragraph.Inlines.Add(field.Start)
-	        paragraph.Inlines.AddRun("MERGEFIELD LastName")
-	        paragraph.Inlines.Add(field.Separator)
-	        paragraph.Inlines.AddRun("")
-	        paragraph.Inlines.Add(field.End)
-	
-	        '#End Region
-	
-	        '#Region "mailmerge3"
-	
-	        Dim mailMergeDataSource As New List(Of MailMergeRecord)() From {
-	            New MailMergeRecord() With {.FirstName = "Andrew", .LastName = "Fuller"},
-	            New MailMergeRecord() With {.FirstName = "Nancy", .LastName = "Davolio"}
-	        }
-	
-	        '#End Region 
-	
-	        '#Region "mailmerge4"
-	
-	        Dim mailMergeResult As RadFlowDocument = document.MailMerge(mailMergeDataSource)
-	
-	        '#End Region
-	    End Sub
-	End Class
-	
-	Public Class MailMergeRecord
-	    Public Property FirstName() As String
-	
-	    Public Property LastName() As String
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -121,31 +83,7 @@ Additionally, a field can be added to a Paragraph manually by creating a __Field
 	        paragraph.Inlines.AddRun("")
 	        paragraph.Inlines.Add(field.End)
 	
-	        '#End Region
-	
-	        '#Region "mailmerge3"
-	
-	        Dim mailMergeDataSource As New List(Of MailMergeRecord)() From {
-	            New MailMergeRecord() With {.FirstName = "Andrew", .LastName = "Fuller"},
-	            New MailMergeRecord() With {.FirstName = "Nancy", .LastName = "Davolio"}
-	        }
-	
-	        '#End Region 
-	
-	        '#Region "mailmerge4"
-	
-	        Dim mailMergeResult As RadFlowDocument = document.MailMerge(mailMergeDataSource)
-	
-	        '#End Region
-	    End Sub
-	End Class
-	
-	Public Class MailMergeRecord
-	    Public Property FirstName() As String
-	
-	    Public Property LastName() As String
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -194,22 +132,7 @@ Example 3 shows a simple example data source.
 	            New MailMergeRecord() With {.FirstName = "Nancy", .LastName = "Davolio"}
 	        }
 	
-	        '#End Region 
-	
-	        '#Region "mailmerge4"
-	
-	        Dim mailMergeResult As RadFlowDocument = document.MailMerge(mailMergeDataSource)
-	
-	        '#End Region
-	    End Sub
-	End Class
-	
-	Public Class MailMergeRecord
-	    Public Property FirstName() As String
-	
-	    Public Property LastName() As String
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -233,16 +156,7 @@ __Example 4__ performs the mail merge operation over a previously defined templa
 	
 	        Dim mailMergeResult As RadFlowDocument = document.MailMerge(mailMergeDataSource)
 	
-	        '#End Region
-	    End Sub
-	End Class
-	
-	Public Class MailMergeRecord
-	    Public Property FirstName() As String
-	
-	    Public Property LastName() As String
-	
-	End Class
+	{{endregion}}
 
 
 

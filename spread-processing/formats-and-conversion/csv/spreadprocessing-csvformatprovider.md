@@ -61,24 +61,7 @@ __Example 1__ shows how to import a CSV file using a __FileStream__. The code as
 	            Using input As New FileStream(fileName, FileMode.Open)
 	                workbook = formatProvider.Import(input)
 	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Sub ExportCsv()
-	            '#Region "radspreadprocessing-formats-and-conversion-csv-csvformatprovider_1"
-	            Dim workbook As New Workbook()
-	            workbook.Worksheets.Add()
-	
-	            Dim fileName As String = "SampleFile.csv"
-	            Dim formatProvider As IWorkbookFormatProvider = New CsvFormatProvider()
-	
-	            Using output As New FileStream(fileName, FileMode.Create)
-	                formatProvider.Export(workbook, output)
-	            End Using
-	            '#End Region
-	        End Sub
-	    End Class
-	End Class
+	{{endregion}}
 
 
 
@@ -117,9 +100,6 @@ __Example 2__ demonstrates how to export an existing Workbook to a CSV file. The
 	            Using output As New FileStream(fileName, FileMode.Create)
 	                formatProvider.Export(workbook, output)
 	            End Using
-	            '#End Region
-	        End Sub
-	    End Class
-	End Class
+	{{endregion}}
 
 

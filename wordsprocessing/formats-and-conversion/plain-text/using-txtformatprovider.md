@@ -52,38 +52,7 @@ The following code snippet shows how to use __TxtFormatProvider__ to import a do
 	            Using input As Stream = File.OpenRead("Sample.txt")
 	                Dim document As RadFlowDocument = provider.Import(input)
 	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Sub ImportFromString(input As String)
-	            '#Region "radwordsprocessing-formats-and-conversion-txt-txtformatprovider_1"
-	            Dim provider As New TxtFormatProvider()
-	            Dim document As RadFlowDocument = provider.Import(input)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub ExportToFile()
-	            '#Region "radwordsprocessing-formats-and-conversion-txt-txtformatprovider_2"
-	            Dim provider As New TxtFormatProvider()
-	            Using output As Stream = File.OpenWrite("sample.txt")
-	                Dim document As RadFlowDocument = CreateRadFlowDocument()
-	                provider.Export(document, output)
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Sub ExportToArray()
-	            '#Region "radwordsprocessing-formats-and-conversion-txt-txtformatprovider_3"
-	            Dim provider As New TxtFormatProvider()
-	            Dim document As RadFlowDocument = CreateRadFlowDocument()
-	            Dim output As String = provider.Export(document)
-	            '#End Region
-	        End Sub
-	
-	        Private Function CreateRadFlowDocument() As RadFlowDocument
-	            Return New RadFlowDocument()
-	        End Function
-	    End Class
+	{{endregion}}
 
 
 
@@ -104,31 +73,7 @@ And here is how you can import a document from string:
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.vb region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_1}}
 	            Dim provider As New TxtFormatProvider()
 	            Dim document As RadFlowDocument = provider.Import(input)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub ExportToFile()
-	            '#Region "radwordsprocessing-formats-and-conversion-txt-txtformatprovider_2"
-	            Dim provider As New TxtFormatProvider()
-	            Using output As Stream = File.OpenWrite("sample.txt")
-	                Dim document As RadFlowDocument = CreateRadFlowDocument()
-	                provider.Export(document, output)
-	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Sub ExportToArray()
-	            '#Region "radwordsprocessing-formats-and-conversion-txt-txtformatprovider_3"
-	            Dim provider As New TxtFormatProvider()
-	            Dim document As RadFlowDocument = CreateRadFlowDocument()
-	            Dim output As String = provider.Export(document)
-	            '#End Region
-	        End Sub
-	
-	        Private Function CreateRadFlowDocument() As RadFlowDocument
-	            Return New RadFlowDocument()
-	        End Function
-	    End Class
+	{{endregion}}
 
 
 
@@ -164,21 +109,7 @@ The following snippet shows how to use __TxtFormatProvider__ to export __RadFlow
 	                Dim document As RadFlowDocument = CreateRadFlowDocument()
 	                provider.Export(document, output)
 	            End Using
-	            '#End Region
-	        End Sub
-	
-	        Private Sub ExportToArray()
-	            '#Region "radwordsprocessing-formats-and-conversion-txt-txtformatprovider_3"
-	            Dim provider As New TxtFormatProvider()
-	            Dim document As RadFlowDocument = CreateRadFlowDocument()
-	            Dim output As String = provider.Export(document)
-	            '#End Region
-	        End Sub
-	
-	        Private Function CreateRadFlowDocument() As RadFlowDocument
-	            Return New RadFlowDocument()
-	        End Function
-	    End Class
+	{{endregion}}
 
 
 
@@ -201,12 +132,6 @@ You can also export the document to a string and preserve it in a database.
 	            Dim provider As New TxtFormatProvider()
 	            Dim document As RadFlowDocument = CreateRadFlowDocument()
 	            Dim output As String = provider.Export(document)
-	            '#End Region
-	        End Sub
-	
-	        Private Function CreateRadFlowDocument() As RadFlowDocument
-	            Return New RadFlowDocument()
-	        End Function
-	    End Class
+	{{endregion}}
 
 

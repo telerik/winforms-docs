@@ -336,8 +336,7 @@ Let's say that you have a number of employees. Only one employee is Vice Preside
 	            End If
 	        End If
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -460,112 +459,7 @@ When __RadGridView__ displays hierarchical data, you expand/collapse child level
 	
 	        Return False
 	    End Function
-	    '#End Region
-	
-	End Class
-	
-	Public Class Car
-	    Public Property Id() As Integer
-	        Get
-	            Return m_Id
-	        End Get
-	        Set(value As Integer)
-	            m_Id = value
-	        End Set
-	    End Property
-	    Private m_Id As Integer
-	
-	    Public Property Title() As String
-	        Get
-	            Return m_Title
-	        End Get
-	        Set(value As String)
-	            m_Title = value
-	        End Set
-	    End Property
-	    Private m_Title As String
-	
-	    Public Sub New(id As Integer, title As String)
-	        Me.Id = id
-	        Me.Title = title
-	    End Sub
-	End Class
-	
-	Public Class Part
-	    Public Property Id() As Integer
-	        Get
-	            Return m_Id
-	        End Get
-	        Set(value As Integer)
-	            m_Id = value
-	        End Set
-	    End Property
-	    Private m_Id As Integer
-	
-	    Public Property PartName() As String
-	        Get
-	            Return m_PartName
-	        End Get
-	        Set(value As String)
-	            m_PartName = value
-	        End Set
-	    End Property
-	    Private m_PartName As String
-	
-	    Public Property CarId() As Integer
-	        Get
-	            Return m_CarId
-	        End Get
-	        Set(value As Integer)
-	            m_CarId = value
-	        End Set
-	    End Property
-	    Private m_CarId As Integer
-	
-	    Public Sub New(id As Integer, name As String, carId As Integer)
-	        Me.Id = id
-	        Me.PartName = name
-	        Me.CarId = carId
-	    End Sub
-	End Class
-	
-	Public Class Service
-	    Public Property Id() As Integer
-	        Get
-	            Return m_Id
-	        End Get
-	        Set(value As Integer)
-	            m_Id = value
-	        End Set
-	    End Property
-	    Private m_Id As Integer
-	
-	    Public Property ServiceName() As String
-	        Get
-	            Return m_ServiceName
-	        End Get
-	        Set(value As String)
-	            m_ServiceName = value
-	        End Set
-	    End Property
-	    Private m_ServiceName As String
-	
-	    Public Property CarId() As Integer
-	        Get
-	            Return m_CarId
-	        End Get
-	        Set(value As Integer)
-	            m_CarId = value
-	        End Set
-	    End Property
-	    Private m_CarId As Integer
-	
-	    Public Sub New(id As Integer, srviceName As String, carId As Integer)
-	        Me.Id = id
-	        Me.ServiceName = srviceName
-	        Me.CarId = carId
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -706,7 +600,14 @@ The example below shows how to customize the __Font__ and
 #### __[VB.NET] Formatting cells vie Style property__
 
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=CellStyleMethod}}
-	        Me.StyleCell(Me.RadGridView1.Rows(1).Cells(1))
+	    Private myFont As New Font(New FontFamily("Calibri"), 12.0F, FontStyle.Bold)
+	
+	    Private Sub StyleCell(cell As GridViewCellInfo)
+	        cell.Style.Font = myFont
+	        cell.Style.CustomizeFill = True
+	        cell.Style.GradientStyle = GradientStyles.Solid
+	        cell.Style.BackColor = Color.FromArgb(162, 215, 255)
+	    End Sub
 	{{endregion}}
 
 

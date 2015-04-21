@@ -61,19 +61,6 @@ For example, a link to our Telerik UI for WinForms demo page can be inserted in 
 	         .IsAnchor = False _
 	        }
 	        Me.RadRichTextBox1.InsertHyperlink(info, "RadControls for WinForms demos")
-	        '#End Region
-	
-	        '#Region "AddLinkToBookmark"
-	        Dim hlInfo As New HyperlinkInfo() With { _
-	         .NavigateUri = "bookmark1", _
-	         .Target = HyperlinkTargets.Self, _
-	         .IsAnchor = True _
-	        }
-	        Me.RadRichTextBox1.InsertHyperlink(hlInfo, "Link to Bookmark 1")
-	        '#End Region
-	
-	        '#region RemoveHyperlink
-	        Me.RadRichTextBox1.RemoveHyperlink()
 	{{endregion}}
 
 
@@ -104,10 +91,6 @@ A link to a bookmark is inserted by specifying the bookmark's name as NavigateUr
 	         .IsAnchor = True _
 	        }
 	        Me.RadRichTextBox1.InsertHyperlink(hlInfo, "Link to Bookmark 1")
-	        '#End Region
-	
-	        '#region RemoveHyperlink
-	        Me.RadRichTextBox1.RemoveHyperlink()
 	{{endregion}}
 
 
@@ -209,20 +192,7 @@ Here is an example that creates a document with a hyperlink spanning several par
 	        section.Blocks.Add(anotherParagraph)
 	        document.Sections.Add(section)
 	        Me.RadRichTextBox1.Document = document
-	        '#End Region
-	
-	        '#Region "RemoveHyperlinksAndReplaceThemWithText"
-	        Dim links As IEnumerable(Of HyperlinkRangeStart) = Me.RadRichTextBox1.Document.EnumerateChildrenOfType(Of HyperlinkRangeStart)()
-	        For Each link As HyperlinkRangeStart In links
-	            Me.RadRichTextBox1.Document.CaretPosition.MoveToInline(TryCast(link.FirstLayoutBox, InlineLayoutBox), 0)
-	            Me.RadRichTextBox1.Document.Selection.SelectAnnotationRange(link)
-	            Me.RadRichTextBox1.Delete(False)
-	            Me.RadRichTextBox1.Insert("Removed hyperlink")
-	        Next
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -257,10 +227,7 @@ For instance, here is how you can delete all hyperlinks in the document and repl
 	            Me.RadRichTextBox1.Delete(False)
 	            Me.RadRichTextBox1.Insert("Removed hyperlink")
 	        Next
-	        '#End Region
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -53,23 +53,7 @@ __Example 1__ demonstrates how to create DeflateSettings.
 	        Dim compressionSettings As New DeflateSettings()
 	        compressionSettings.CompressionLevel = CompressionLevel.Best
 	        compressionSettings.HeaderType = CompressedStreamHeader.ZLib
-	        '#End Region
-	
-	        '#Region "lzma"
-	        Dim compressionSettings1 As New LzmaSettings()
-	        compressionSettings1.DictionarySize = 23
-	        compressionSettings1.FastBytes = 32
-	        compressionSettings1.LiteralContextBits = 3
-	        compressionSettings1.LiteralPositionBits = 3
-	        compressionSettings1.MatchFinderType = LzmaMatchFinderType.BT4
-	        compressionSettings1.PositionStateBits = 2
-	        '#End Region
-	
-	        '#Region "settings"
-	        Dim compressionSettings2 As New StoreSettings()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -128,13 +112,7 @@ The configurable parameters of the __LzmaSettings__ class are as follows:
 	        compressionSettings1.LiteralPositionBits = 3
 	        compressionSettings1.MatchFinderType = LzmaMatchFinderType.BT4
 	        compressionSettings1.PositionStateBits = 2
-	        '#End Region
-	
-	        '#Region "settings"
-	        Dim compressionSettings2 As New StoreSettings()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -155,9 +133,7 @@ Store settings are used to just store the data using no compression.
 
 {{source=..\SamplesVB\ZipLibrary\CompressionSettings.vb region=settings}}
 	        Dim compressionSettings2 As New StoreSettings()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

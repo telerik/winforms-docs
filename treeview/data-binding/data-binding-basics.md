@@ -120,15 +120,6 @@ The example below binds a generic list of "Product" objects and displays
 	                e.Node.ForeColor = DirectCast(dataRow("ForeColor"), Color)
 	            End If
 	        End Sub
-	#End Region
-	
-	        '#Region dataBoundItem
-	        Private Sub RadTreeView1_SelectedNodeChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.RadTreeViewEventArgs) Handles RadTreeView1.SelectedNodeChanged
-	            Dim product As Product = TryCast(e.Node.DataBoundItem, Product)
-	            If product IsNot Nothing Then
-	                MessageBox.Show("Product: " & e.Node.Text & ", Price: " & product.Price)
-	            End If
-	        End Sub
 	{{endregion}}
 
 
@@ -175,8 +166,7 @@ The example below binds a generic list of "Product" objects and displays
 	            _price = price
 	        End Sub
 	    End Class
-	    '#End Region
-	End Namespace
+	{{endregion}}
 
 
 
@@ -247,15 +237,6 @@ When a __RadTreeNode__ is assigned with a data-bound item for the first time, th
 	            Dim dataRow As DataRowView = TryCast(e.Node.DataBoundItem, DataRowView)
 	            If dataRow IsNot Nothing Then
 	                e.Node.ForeColor = DirectCast(dataRow("ForeColor"), Color)
-	            End If
-	        End Sub
-	#End Region
-	
-	        '#Region dataBoundItem
-	        Private Sub RadTreeView1_SelectedNodeChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.RadTreeViewEventArgs) Handles RadTreeView1.SelectedNodeChanged
-	            Dim product As Product = TryCast(e.Node.DataBoundItem, Product)
-	            If product IsNot Nothing Then
-	                MessageBox.Show("Product: " & e.Node.Text & ", Price: " & product.Price)
 	            End If
 	        End Sub
 	{{endregion}}
@@ -405,46 +386,7 @@ In order to display the hierarchy of business objects, we just need to
 	                MessageBox.Show("Product: " & e.Node.Text & ", Price: " & product.Price)
 	            End If
 	        End Sub
-	        '#End Region
-	
-	        Private Sub DataBandingBasics(radTreeView1 As RadTreeView)
-	            '#Region "CheckedMember"
-	            
-	            Dim parentDt As New DataTable("Parent")
-	            parentDt.Columns.Add("MasterId", GetType(String))
-	            parentDt.Columns.Add("Title", GetType(String))
-	            parentDt.Columns.Add("IsActive", GetType(Boolean))
-	
-	            Dim childDt As New DataTable("Child")
-	            childDt.Columns.Add("ChildId", GetType(String))
-	            childDt.Columns.Add("ParentId", GetType(String))
-	            childDt.Columns.Add("Name", GetType(String))
-	            childDt.Columns.Add("Status", GetType(Boolean))
-	
-	            Dim parentId As String = String.Empty
-	            Dim childId As String = String.Empty
-	            For i As Integer = 1 To 5
-	                parentId = Guid.NewGuid().ToString()
-	                parentDt.Rows.Add(parentId, "Node." & i, i Mod 2 = 0)
-	
-	                For j As Integer = 1 To 4
-	                    childId = Guid.NewGuid().ToString()
-	                    childDt.Rows.Add(childId, parentId, "SubNode." & i & "." & j, j Mod 2 = 0)
-	                Next
-	            Next
-	
-	            radTreeView1.DataSource = parentDt
-	            radTreeView1.RelationBindings.Add(New RelationBinding(childDt, Nothing, "Name", "MasterId", "ParentId", "ChildId", "Status"))
-	            radTreeView1.DisplayMember = "Title"
-	            radTreeView1.ValueMember = "Id"
-	            radTreeView1.CheckedMember = "IsActive"
-	            radTreeView1.CheckBoxes = True
-	
-	            '#End Region
-	        End Sub
-	    End Class
-	
-	End Namespace
+	{{endregion}}
 
 
 
@@ -490,8 +432,7 @@ In order to display the hierarchy of business objects, we just need to
 	            _price = price
 	        End Sub
 	    End Class
-	    '#End Region
-	End Namespace
+	{{endregion}}
 
 
 
@@ -522,9 +463,7 @@ In order to display the hierarchy of business objects, we just need to
 	            End Set
 	        End Property
 	    End Class
-	    '#End Region
-	
-	End Namespace
+	{{endregion}}
 
 
 
@@ -609,10 +548,6 @@ Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a
 	            radTreeView1.CheckedMember = "IsActive"
 	            radTreeView1.CheckBoxes = True
 	
-	            '#End Region
-	        End Sub
-	    End Class
-	
-	End Namespace
+	{{endregion}}
 
 

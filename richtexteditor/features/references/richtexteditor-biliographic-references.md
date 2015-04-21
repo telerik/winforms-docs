@@ -112,35 +112,7 @@ This is how you can add a new source:
 	        bibliographicSource.Editor = "editorTest"
 	        bibliographicSource.SourceType = BibliographicSourceType.Book
 	        Me.radRichTextEditor1.Document.BibliographicSources.Add(bibliographicSource)
-	        '#End Region
-	
-	        '#Region "add"
-	        Dim APAFifthEdition As New APAFifthEditionStyle()
-	        Me.radRichTextEditor1.Document.BibliographicStyles.Add(APAFifthEdition.Key, APAFifthEdition)
-	
-	        Dim HarvardAnglia2008 As New HarvardAnglia2008Style()
-	        Me.radRichTextEditor1.Document.BibliographicStyles.Add(HarvardAnglia2008.Key, HarvardAnglia2008)
-	
-	        Dim ISO690_FirstElementAndDate As New ISO690_FirstElementAndDateStyle()
-	        Me.radRichTextEditor1.Document.BibliographicStyles.Add(ISO690_FirstElementAndDate.Key, ISO690_FirstElementAndDate)
-	        '#End Region
-	
-	        '#Region "citation"
-	        Dim citationField As New CitationField()
-	        citationField.SourceName = "test"
-	        Me.radRichTextEditor1.Document.InsertField(citationField, FieldDisplayMode.Result)
-	        '#End Region
-	
-	        '#Region "bibliography"
-	        Dim bibliographyField As New BibliographyField()
-	        Me.radRichTextEditor1.Document.InsertField(bibliographyField, FieldDisplayMode.Result)
-	        '#End Region
-	
-	        '#Region "style"
-	        Me.radRichTextEditor1.ChangeBibliographicStyle(New HarvardAnglia2008Style())
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -177,24 +149,7 @@ To create a custom __BibliographicStyle__ you have to derive from __Bibliographi
 	
 	        Dim ISO690_FirstElementAndDate As New ISO690_FirstElementAndDateStyle()
 	        Me.radRichTextEditor1.Document.BibliographicStyles.Add(ISO690_FirstElementAndDate.Key, ISO690_FirstElementAndDate)
-	        '#End Region
-	
-	        '#Region "citation"
-	        Dim citationField As New CitationField()
-	        citationField.SourceName = "test"
-	        Me.radRichTextEditor1.Document.InsertField(citationField, FieldDisplayMode.Result)
-	        '#End Region
-	
-	        '#Region "bibliography"
-	        Dim bibliographyField As New BibliographyField()
-	        Me.radRichTextEditor1.Document.InsertField(bibliographyField, FieldDisplayMode.Result)
-	        '#End Region
-	
-	        '#Region "style"
-	        Me.radRichTextEditor1.ChangeBibliographicStyle(New HarvardAnglia2008Style())
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 Insert Citation Field using code behind
 
@@ -218,18 +173,7 @@ The Citation field is a field not different from every other field. You can use 
 	        Dim citationField As New CitationField()
 	        citationField.SourceName = "test"
 	        Me.radRichTextEditor1.Document.InsertField(citationField, FieldDisplayMode.Result)
-	        '#End Region
-	
-	        '#Region "bibliography"
-	        Dim bibliographyField As New BibliographyField()
-	        Me.radRichTextEditor1.Document.InsertField(bibliographyField, FieldDisplayMode.Result)
-	        '#End Region
-	
-	        '#Region "style"
-	        Me.radRichTextEditor1.ChangeBibliographicStyle(New HarvardAnglia2008Style())
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 Insert Bibliography Field using code behind
 
@@ -251,13 +195,7 @@ The Bibliography field is a field not different from every other field. You can 
 {{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=bibliography}}
 	        Dim bibliographyField As New BibliographyField()
 	        Me.radRichTextEditor1.Document.InsertField(bibliographyField, FieldDisplayMode.Result)
-	        '#End Region
-	
-	        '#Region "style"
-	        Me.radRichTextEditor1.ChangeBibliographicStyle(New HarvardAnglia2008Style())
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 Changing Bibliographic Style using code behind
 
@@ -277,8 +215,6 @@ There is a method called __ChangeBibliographicStyle()__ on __RadRichTextEditor__
 
 {{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=style}}
 	        Me.radRichTextEditor1.ChangeBibliographicStyle(New HarvardAnglia2008Style())
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

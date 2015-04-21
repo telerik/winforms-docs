@@ -47,49 +47,7 @@ To start the editor at Run Time, create a new instance of the dialog and use *Sh
 	        If result = DialogResult.OK Then
 	            MessageBox.Show(dialog.Value)
 	        End If
-	        '#End Region
-	    End Sub
-	
-	    Private Sub SecondDialog()
-	        '#Region "DialogSetValue"
-	        Dim dialog As New RadMarkupDialog()
-	        dialog.Value = "Initial"
-	        dialog.ShowDialog()
-	        '#End Region
-	    End Sub
-	
-	    Private Sub ThirdDialog()
-	        '#Region "DialogSetFont"
-	        Dim dialog As New RadMarkupDialog()
-	        dialog.DefaultFont = SystemFonts.DefaultFont
-	        dialog.ShowDialog()
-	        '#End Region
-	    End Sub
-	
-	    'Fake class so that we do not add reference to Telerik.WinControls.RadMarkupEditor
-	    Private Class RadMarkupDialog
-	        Inherits Form
-	        Public Property Value() As String
-	            Get
-	                Return m_Value
-	            End Get
-	            Set(value As String)
-	                m_Value = value
-	            End Set
-	        End Property
-	        Private m_Value As String
-	        Public Property DefaultFont() As Font
-	            Get
-	                Return m_DefaultFont
-	            End Get
-	            Set(value As Font)
-	                m_DefaultFont = value
-	            End Set
-	        End Property
-	        Private m_DefaultFont As Font
-	    End Class
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -115,41 +73,7 @@ The *Value* property can be set to the RadMarkupDialog before it is shown which 
 	        Dim dialog As New RadMarkupDialog()
 	        dialog.Value = "Initial"
 	        dialog.ShowDialog()
-	        '#End Region
-	    End Sub
-	
-	    Private Sub ThirdDialog()
-	        '#Region "DialogSetFont"
-	        Dim dialog As New RadMarkupDialog()
-	        dialog.DefaultFont = SystemFonts.DefaultFont
-	        dialog.ShowDialog()
-	        '#End Region
-	    End Sub
-	
-	    'Fake class so that we do not add reference to Telerik.WinControls.RadMarkupEditor
-	    Private Class RadMarkupDialog
-	        Inherits Form
-	        Public Property Value() As String
-	            Get
-	                Return m_Value
-	            End Get
-	            Set(value As String)
-	                m_Value = value
-	            End Set
-	        End Property
-	        Private m_Value As String
-	        Public Property DefaultFont() As Font
-	            Get
-	                Return m_DefaultFont
-	            End Get
-	            Set(value As Font)
-	                m_DefaultFont = value
-	            End Set
-	        End Property
-	        Private m_DefaultFont As Font
-	    End Class
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -171,33 +95,7 @@ You can also set the default font size and name before showing the dialog using 
 	        Dim dialog As New RadMarkupDialog()
 	        dialog.DefaultFont = SystemFonts.DefaultFont
 	        dialog.ShowDialog()
-	        '#End Region
-	    End Sub
-	
-	    'Fake class so that we do not add reference to Telerik.WinControls.RadMarkupEditor
-	    Private Class RadMarkupDialog
-	        Inherits Form
-	        Public Property Value() As String
-	            Get
-	                Return m_Value
-	            End Get
-	            Set(value As String)
-	                m_Value = value
-	            End Set
-	        End Property
-	        Private m_Value As String
-	        Public Property DefaultFont() As Font
-	            Get
-	                Return m_DefaultFont
-	            End Get
-	            Set(value As Font)
-	                m_DefaultFont = value
-	            End Set
-	        End Property
-	        Private m_DefaultFont As Font
-	    End Class
-	
-	End Class
+	{{endregion}}
 
 
 

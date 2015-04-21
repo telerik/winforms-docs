@@ -98,7 +98,7 @@ Below is a sample implementation of an English localization provider:
 	        Return Nothing
 	    End Function
 	End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -116,44 +116,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 {{source=..\SamplesVB\SpellChecker\SpellCheckerLocalization.vb region=localizeSpellChecker}}
 	        RadSpellCheckerLocalizationProvider.CurrentProvider = New MyEnglishSpellCheckerLocalizationProvider()
-	        '#End Region
-	
-	    End Sub
-	End Class
-	
-	#Region "myEnglishLocalizationProvider"
-	Class MyEnglishSpellCheckerLocalizationProvider
-	    Inherits RadSpellCheckerLocalizationProvider
-	    Public Overrides Function GetLocalizedString(id As String) As String
-	        Select Case id
-	            Case RadSpellCheckerStringId.Title
-	                Return "Spell Checking"
-	            Case RadSpellCheckerStringId.OK
-	                Return "OK"
-	            Case RadSpellCheckerStringId.Cancel
-	                Return "Cancel"
-	            Case RadSpellCheckerStringId.Close
-	                Return "Close"
-	            Case RadSpellCheckerStringId.Change
-	                Return "Change"
-	            Case RadSpellCheckerStringId.Complete
-	                Return "The spelling check is complete."
-	            Case RadSpellCheckerStringId.AddToDictionary
-	                Return "Add to Dictionary"
-	            Case RadSpellCheckerStringId.IngoreAll
-	                Return "Ignore All"
-	            Case RadSpellCheckerStringId.Suggestions
-	                Return "Suggestions:"
-	            Case RadSpellCheckerStringId.ChangeTo
-	                Return "Change To:"
-	            Case RadSpellCheckerStringId.NotInDictionary
-	                Return "Not in Dicitionary:"
-	        End Select
-	
-	        Return Nothing
-	    End Function
-	End Class
-	#End Region
+	{{endregion}}
 
 
 

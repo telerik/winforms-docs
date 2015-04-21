@@ -109,35 +109,7 @@ Below you can find a code snippet which creates three shapes and connections bet
 	        connection2.Target = shape3
 	        RadDiagram1.Items.Add(connection2)
 	
-	        '#End Region
-	
-	        '#Region "SetLayout"
-	        RadDiagram1.DiagramElement.SetLayout()
-	        '#End Region
-	
-	        '#Region "LoadFromXML"
-	        Dim openFileDialog1 As New OpenFileDialog()
-	
-	        openFileDialog1.InitialDirectory = "c:\"
-	        openFileDialog1.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*"
-	        openFileDialog1.RestoreDirectory = True
-	
-	        If openFileDialog1.ShowDialog() = DialogResult.OK Then
-	            Dim filename As String = openFileDialog1.FileName
-	
-	            Dim filelines As String = File.ReadAllText(filename)
-	            Try
-	                RadDiagram1.DiagramElement.Items.Clear()
-	                RadDiagram1.DiagramElement.Load(filelines)
-	            Catch ex As Exception
-	                MessageBox.Show((Convert.ToString("Unable to load ") & filename) + vbLf & "Error: " + ex.Message)
-	            End Try
-	        End If
-	        ' #End Region
-	
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![diagram-populating-with-data 001](images/diagram-populating-with-data001.png)
 
@@ -194,11 +166,7 @@ You can load items in __RadDiagram__ from XML. Here is a sample code snippet:
 	                MessageBox.Show((Convert.ToString("Unable to load ") & filename) + vbLf & "Error: " + ex.Message)
 	            End Try
 	        End If
-	        ' #End Region
-	
-	
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

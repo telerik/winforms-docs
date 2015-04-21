@@ -52,7 +52,6 @@ The __ValueChanged__ event fires when the __Value__ of the control is changed.
 	            RadMessageBox.Show("Detected value that is close to the maximum!")
 	        End If
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 

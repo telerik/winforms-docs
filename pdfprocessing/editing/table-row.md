@@ -42,15 +42,7 @@ The code snippet in __Example 1__ shows how to create a table and add a single r
 {{source=..\SamplesVB\PdfProcessing\Editing\TableRow1.vb region=radpdfprocessing-editing-tablerow_0}}
 	        Dim table As New Table()
 	        Dim tableRow As TableRow = table.Rows.AddTableRow()
-	        '#End Region
-	
-	        '#Region "radpdfprocessing-editing-tablerow_1"
-	        Dim firstCell As TableCell = tableRow.Cells.AddTableCell()
-	        Dim secondCell As TableCell = tableRow.Cells.AddTableCell()
-	        Dim cellsInRowCount As Integer = tableRow.Cells.Count
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -78,9 +70,7 @@ __Example 2__ shows how to add two cells in a row and get the cells count.
 	        Dim firstCell As TableCell = tableRow.Cells.AddTableCell()
 	        Dim secondCell As TableCell = tableRow.Cells.AddTableCell()
 	        Dim cellsInRowCount As Integer = tableRow.Cells.Count
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

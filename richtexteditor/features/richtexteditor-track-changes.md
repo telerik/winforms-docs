@@ -45,38 +45,7 @@ You can activate change tracking through the __IsTrackChangesEnabled__ property 
 	
 	        Me.radRichTextEditor1.IsTrackChangesEnabled = True
 	
-	        '#End Region
-	
-	        '#Region "options"
-	
-	        Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Insert.Decoration = RevisionDecoration.ColorOnly
-	        Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Insert.ColorOptions = New RevisionColor(Color.Green)
-	        Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Delete.Decoration = RevisionDecoration.Underline
-	        Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Delete.ColorOptions = New RevisionColor(Color.Orange)
-	        Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.ChangedLinesDecorationColorOptions.ColorOptions = New RevisionColor(Color.Red)
-	
-	        '#End Region
-	
-	        '#Region "user"
-	
-	        Me.radRichTextEditor1.CurrentUser = New UserInfo("Group", "Boby", "Boby", "bobby@telerik.com")
-	
-	        '#End Region
-	
-	        Dim document = Me.radRichTextEditor1.Document
-	
-	        '#Region "revision"
-	
-	        Dim prev As Revision = document.GoToPreviousRevision()
-	        Dim [next] As Revision = document.GoToNextRevision()
-	        Dim getCurrent As Revision = document.GetCurrentRevision()
-	        Dim getPrev As Revision = document.GetPreviousRevision()
-	        Dim getNext As Revision = document.GetNextRevision()
-	        Dim all As IEnumerable(Of Revision) = document.GetAllRevisions()
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -120,28 +89,7 @@ As you can see tracked changes are visualized inside the rich text box with diff
 	        Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Delete.ColorOptions = New RevisionColor(Color.Orange)
 	        Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.ChangedLinesDecorationColorOptions.ColorOptions = New RevisionColor(Color.Red)
 	
-	        '#End Region
-	
-	        '#Region "user"
-	
-	        Me.radRichTextEditor1.CurrentUser = New UserInfo("Group", "Boby", "Boby", "bobby@telerik.com")
-	
-	        '#End Region
-	
-	        Dim document = Me.radRichTextEditor1.Document
-	
-	        '#Region "revision"
-	
-	        Dim prev As Revision = document.GoToPreviousRevision()
-	        Dim [next] As Revision = document.GoToNextRevision()
-	        Dim getCurrent As Revision = document.GetCurrentRevision()
-	        Dim getPrev As Revision = document.GetPreviousRevision()
-	        Dim getNext As Revision = document.GetNextRevision()
-	        Dim all As IEnumerable(Of Revision) = document.GetAllRevisions()
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -169,22 +117,7 @@ All changes made while track changes are enabled are made on behalf of the curre
 	
 	        Me.radRichTextEditor1.CurrentUser = New UserInfo("Group", "Boby", "Boby", "bobby@telerik.com")
 	
-	        '#End Region
-	
-	        Dim document = Me.radRichTextEditor1.Document
-	
-	        '#Region "revision"
-	
-	        Dim prev As Revision = document.GoToPreviousRevision()
-	        Dim [next] As Revision = document.GoToNextRevision()
-	        Dim getCurrent As Revision = document.GetCurrentRevision()
-	        Dim getPrev As Revision = document.GetPreviousRevision()
-	        Dim getNext As Revision = document.GetNextRevision()
-	        Dim all As IEnumerable(Of Revision) = document.GetAllRevisions()
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -236,8 +169,6 @@ All revision have a RevisionInfo object associated to them, which contains infor
 	        Dim getNext As Revision = document.GetNextRevision()
 	        Dim all As IEnumerable(Of Revision) = document.GetAllRevisions()
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

@@ -54,8 +54,6 @@ __Example 1__ shows how to create and specify particular setting to a CsvFormatP
 	        provider.Settings.Delimiter = ";"c
 	        provider.Settings.Quote = "^"c
 	        provider.Settings.HasHeaderRow = True
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

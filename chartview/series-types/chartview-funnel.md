@@ -74,9 +74,6 @@ The following example shows how you can add funnel series in code.
 	
 	        radChartView1.ShowLegend = True
 	        radChartView1.Series.Add(funnelSeries)
-	        '#End Region
-	    End Sub
-	End Class
-	
+	{{endregion}}
 
 

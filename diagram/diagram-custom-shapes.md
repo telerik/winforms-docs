@@ -53,8 +53,7 @@ In order to create a custom shape, you need to define a custom shape class deriv
 	        End Function
 	    End Class
 	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -102,8 +101,7 @@ In order to create a custom shape, you need to define a custom shape class deriv
 	        End Function
 	    End Class
 	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 ![diagram-custom-shapes 001](images/diagram-custom-shapes001.png)
 

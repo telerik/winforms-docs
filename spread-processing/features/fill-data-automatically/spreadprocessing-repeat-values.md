@@ -66,23 +66,7 @@ __Example 1__ illustrates how the contents of column *A* can be copied to the re
 	
 	        Dim range As New CellRange(0, 0, 3, 3)
 	        worksheet.Cells(range).FillData(FillDirection.Right)
-	        '#End Region
-	    End Sub
-	
-	    Public Shared Sub RepeatValuesDown()
-	        '#Region radspreadprocessing-features-fill-data-automatically-repeat-values_1
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	
-	        worksheet.Cells(1, 1).SetValue(34)
-	        worksheet.Cells(1, 2).SetValue(55)
-	        worksheet.Cells(1, 3).SetValue(89)
-	
-	        Dim range As New CellRange(1, 1, 3, 3)
-	        worksheet.Cells(range).FillData(FillDirection.Down)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -126,9 +110,7 @@ __Example 2__ invokes the __FillData()__ method with __FillDirection Down__ for 
 	
 	        Dim range As New CellRange(1, 1, 3, 3)
 	        worksheet.Cells(range).FillData(FillDirection.Down)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

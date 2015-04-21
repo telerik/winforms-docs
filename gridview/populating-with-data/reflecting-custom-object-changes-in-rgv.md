@@ -159,7 +159,7 @@ RadGridView is capable of fetching bindable properties and data.
 	        End Set
 	    End Property
 	End Class
-	'#End Region
+	{{endregion}}
 
 
 
@@ -204,42 +204,7 @@ RadGridView is capable of fetching bindable properties and data.
 	        collectionOfStudents.Add(New Student(4, "John", "D-"))
 	        Me.radGridView1.DataSource = collectionOfStudents
 	    End Sub
-	    '#End Region
-	
-	    '#Region "buttonRemove"
-	    Private Sub btnDeleteRecord_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        collectionOfStudents.RemoveAt(0)
-	    End Sub
-	    '#End Region
-	
-	    '#Region "setGrade"
-	    Private Sub btnSetGrade_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        collectionOfStudents(collectionOfStudents.Count - 1).Grade = "F"
-	    End Sub
-	    '#End Region
-	End Class
-	
-	Namespace SamplesCS.GridView.PopulatingWithDataDynamic
-	    Public Class ReflectingCustomObjectChanges1
-	        Inherits Form
-	        Private radGridView1 As New RadGridView()
-	
-	        '#Region "bindingList"
-	        Private collectionOfStudents As New BindingList(Of Student)()
-	
-	        Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-	            MyBase.OnLoad(e)
-	
-	            collectionOfStudents.Add(New Student(0, "Peter", "A+"))
-	            collectionOfStudents.Add(New Student(1, "John", "D-"))
-	            collectionOfStudents.Add(New Student(2, "Antony", "B+"))
-	            collectionOfStudents.Add(New Student(3, "David", "A-"))
-	            collectionOfStudents.Add(New Student(4, "John", "D-"))
-	            Me.radGridView1.DataSource = collectionOfStudents
-	        End Sub
-	        '#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -266,36 +231,7 @@ RadGridView is capable of fetching bindable properties and data.
 	    Private Sub btnDeleteRecord_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        collectionOfStudents.RemoveAt(0)
 	    End Sub
-	    '#End Region
-	
-	    '#Region "setGrade"
-	    Private Sub btnSetGrade_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        collectionOfStudents(collectionOfStudents.Count - 1).Grade = "F"
-	    End Sub
-	    '#End Region
-	End Class
-	
-	Namespace SamplesCS.GridView.PopulatingWithDataDynamic
-	    Public Class ReflectingCustomObjectChanges1
-	        Inherits Form
-	        Private radGridView1 As New RadGridView()
-	
-	        '#Region "bindingList"
-	        Private collectionOfStudents As New BindingList(Of Student)()
-	
-	        Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-	            MyBase.OnLoad(e)
-	
-	            collectionOfStudents.Add(New Student(0, "Peter", "A+"))
-	            collectionOfStudents.Add(New Student(1, "John", "D-"))
-	            collectionOfStudents.Add(New Student(2, "Antony", "B+"))
-	            collectionOfStudents.Add(New Student(3, "David", "A-"))
-	            collectionOfStudents.Add(New Student(4, "John", "D-"))
-	            Me.radGridView1.DataSource = collectionOfStudents
-	        End Sub
-	        '#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
           The initial view when we start the application is this:
@@ -367,9 +303,7 @@ RadGridView is capable of fetching bindable properties and data.
 	            collectionOfStudents.Add(New Student(4, "John", "D-"))
 	            Me.radGridView1.DataSource = collectionOfStudents
 	        End Sub
-	        '#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -396,36 +330,7 @@ RadGridView is capable of fetching bindable properties and data.
 	    Private Sub btnDeleteRecord_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        collectionOfStudents.RemoveAt(0)
 	    End Sub
-	    '#End Region
-	
-	    '#Region "setGrade"
-	    Private Sub btnSetGrade_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        collectionOfStudents(collectionOfStudents.Count - 1).Grade = "F"
-	    End Sub
-	    '#End Region
-	End Class
-	
-	Namespace SamplesCS.GridView.PopulatingWithDataDynamic
-	    Public Class ReflectingCustomObjectChanges1
-	        Inherits Form
-	        Private radGridView1 As New RadGridView()
-	
-	        '#Region "bindingList"
-	        Private collectionOfStudents As New BindingList(Of Student)()
-	
-	        Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-	            MyBase.OnLoad(e)
-	
-	            collectionOfStudents.Add(New Student(0, "Peter", "A+"))
-	            collectionOfStudents.Add(New Student(1, "John", "D-"))
-	            collectionOfStudents.Add(New Student(2, "Antony", "B+"))
-	            collectionOfStudents.Add(New Student(3, "David", "A-"))
-	            collectionOfStudents.Add(New Student(4, "John", "D-"))
-	            Me.radGridView1.DataSource = collectionOfStudents
-	        End Sub
-	        '#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -452,30 +357,7 @@ RadGridView is capable of fetching bindable properties and data.
 	    Private Sub btnSetGrade_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        collectionOfStudents(collectionOfStudents.Count - 1).Grade = "F"
 	    End Sub
-	    '#End Region
-	End Class
-	
-	Namespace SamplesCS.GridView.PopulatingWithDataDynamic
-	    Public Class ReflectingCustomObjectChanges1
-	        Inherits Form
-	        Private radGridView1 As New RadGridView()
-	
-	        '#Region "bindingList"
-	        Private collectionOfStudents As New BindingList(Of Student)()
-	
-	        Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-	            MyBase.OnLoad(e)
-	
-	            collectionOfStudents.Add(New Student(0, "Peter", "A+"))
-	            collectionOfStudents.Add(New Student(1, "John", "D-"))
-	            collectionOfStudents.Add(New Student(2, "Antony", "B+"))
-	            collectionOfStudents.Add(New Student(3, "David", "A-"))
-	            collectionOfStudents.Add(New Student(4, "John", "D-"))
-	            Me.radGridView1.DataSource = collectionOfStudents
-	        End Sub
-	        '#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -694,9 +576,7 @@ RadGridView is capable of fetching bindable properties and data.
 	            collectionOfStudents.Add(New Student(4, "John", "D-"))
 	            Me.radGridView1.DataSource = collectionOfStudents
 	        End Sub
-	        '#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -723,36 +603,7 @@ RadGridView is capable of fetching bindable properties and data.
 	    Private Sub btnDeleteRecord_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        collectionOfStudents.RemoveAt(0)
 	    End Sub
-	    '#End Region
-	
-	    '#Region "setGrade"
-	    Private Sub btnSetGrade_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        collectionOfStudents(collectionOfStudents.Count - 1).Grade = "F"
-	    End Sub
-	    '#End Region
-	End Class
-	
-	Namespace SamplesCS.GridView.PopulatingWithDataDynamic
-	    Public Class ReflectingCustomObjectChanges1
-	        Inherits Form
-	        Private radGridView1 As New RadGridView()
-	
-	        '#Region "bindingList"
-	        Private collectionOfStudents As New BindingList(Of Student)()
-	
-	        Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-	            MyBase.OnLoad(e)
-	
-	            collectionOfStudents.Add(New Student(0, "Peter", "A+"))
-	            collectionOfStudents.Add(New Student(1, "John", "D-"))
-	            collectionOfStudents.Add(New Student(2, "Antony", "B+"))
-	            collectionOfStudents.Add(New Student(3, "David", "A-"))
-	            collectionOfStudents.Add(New Student(4, "John", "D-"))
-	            Me.radGridView1.DataSource = collectionOfStudents
-	        End Sub
-	        '#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -779,30 +630,7 @@ RadGridView is capable of fetching bindable properties and data.
 	    Private Sub btnSetGrade_Click(ByVal sender As Object, ByVal e As EventArgs)
 	        collectionOfStudents(collectionOfStudents.Count - 1).Grade = "F"
 	    End Sub
-	    '#End Region
-	End Class
-	
-	Namespace SamplesCS.GridView.PopulatingWithDataDynamic
-	    Public Class ReflectingCustomObjectChanges1
-	        Inherits Form
-	        Private radGridView1 As New RadGridView()
-	
-	        '#Region "bindingList"
-	        Private collectionOfStudents As New BindingList(Of Student)()
-	
-	        Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-	            MyBase.OnLoad(e)
-	
-	            collectionOfStudents.Add(New Student(0, "Peter", "A+"))
-	            collectionOfStudents.Add(New Student(1, "John", "D-"))
-	            collectionOfStudents.Add(New Student(2, "Antony", "B+"))
-	            collectionOfStudents.Add(New Student(3, "David", "A-"))
-	            collectionOfStudents.Add(New Student(4, "John", "D-"))
-	            Me.radGridView1.DataSource = collectionOfStudents
-	        End Sub
-	        '#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 

@@ -48,7 +48,7 @@ First, you will need to reference the EQATEC.Analytics.Monitor.dll in your appli
 
 #### __[C#] __
 
-{{region key}}
+{{source=..\SamplesCS\Eqatec\Eqatec.cs region=key}}
 	            EQATEC.Analytics.Monitor.IAnalyticsMonitor monitor = Telerik.WinControls.Analytics.TraceMonitor.Initialize("product key");
 	{{endregion}}
 
@@ -56,7 +56,7 @@ First, you will need to reference the EQATEC.Analytics.Monitor.dll in your appli
 
 #### __[VB.NET] __
 
-{{region key}}
+{{source=..\SamplesVB\Eqatec\Eqatec.vb region=key}}
 	        Dim monitor As Global.EQATEC.Analytics.Monitor.IAnalyticsMonitor = Telerik.WinControls.Analytics.TraceMonitor.Initialize("product key")
 	{{endregion}}
 
@@ -75,7 +75,7 @@ You can disable the analytics functionality for particular controls with their _
 
 #### __[C#] __
 
-{{region properties}}
+{{source=..\SamplesCS\Eqatec\Eqatec.cs region=properties}}
 	            this.radButton1.EnableAnalytics = true;
 	            this.radButton1.AnalyticsName = "Save Button";
 	{{endregion}}
@@ -84,7 +84,7 @@ You can disable the analytics functionality for particular controls with their _
 
 #### __[VB.NET] __
 
-{{region properties}}
+{{source=..\SamplesVB\Eqatec\Eqatec.vb region=properties}}
 	        Me.RadButton1.EnableAnalytics = True
 	        Me.RadButton1.AnalyticsName = "Save Button"
 	{{endregion}}

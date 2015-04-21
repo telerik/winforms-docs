@@ -49,26 +49,7 @@ At any one time the scheduler displays a view using a descendant of the Schedule
 	        Dim dayView As SchedulerDayView = RadScheduler1.GetDayView()
 	        dayView.RulerStartScale = 2
 	        dayView.RulerEndScale = 5
-	        '#End Region
-	
-	        '#Region activeViewType
-	        RadScheduler1.ActiveViewType = SchedulerViewType.Day
-	        '#End Region
-	
-	        '#Region weekCount
-	        RadScheduler1.ActiveViewType = SchedulerViewType.Month
-	        TryCast(RadScheduler1.ActiveView, SchedulerMonthView).WeekCount = 2
-	        '#End Region
-	
-	        AddHandler RadScheduler1.ActiveViewChanging, AddressOf radScheduler1_ActiveViewChanging
-	    End Sub
-	
-	    '#Region activeViewChanging
-	    Private Sub radScheduler1_ActiveViewChanging(ByVal sender As Object, ByVal e As SchedulerViewChangingEventArgs)
-	        Me.Text = String.Format("Old: {0} New: {1}", e.OldView.ViewType.ToString(), e.NewView.ViewType.ToString())
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -89,22 +70,7 @@ Change between views by changing the __ActiveViewType__ property to one of the _
 
 {{source=..\SamplesVB\Scheduler\Views\WorkingWithViews.vb region=activeViewType}}
 	        RadScheduler1.ActiveViewType = SchedulerViewType.Day
-	        '#End Region
-	
-	        '#Region weekCount
-	        RadScheduler1.ActiveViewType = SchedulerViewType.Month
-	        TryCast(RadScheduler1.ActiveView, SchedulerMonthView).WeekCount = 2
-	        '#End Region
-	
-	        AddHandler RadScheduler1.ActiveViewChanging, AddressOf radScheduler1_ActiveViewChanging
-	    End Sub
-	
-	    '#Region activeViewChanging
-	    Private Sub radScheduler1_ActiveViewChanging(ByVal sender As Object, ByVal e As SchedulerViewChangingEventArgs)
-	        Me.Text = String.Format("Old: {0} New: {1}", e.OldView.ViewType.ToString(), e.NewView.ViewType.ToString())
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -124,17 +90,7 @@ Retrieve the view that is currently being displayed by using the ActiveView prop
 {{source=..\SamplesVB\Scheduler\Views\WorkingWithViews.vb region=weekCount}}
 	        RadScheduler1.ActiveViewType = SchedulerViewType.Month
 	        TryCast(RadScheduler1.ActiveView, SchedulerMonthView).WeekCount = 2
-	        '#End Region
-	
-	        AddHandler RadScheduler1.ActiveViewChanging, AddressOf radScheduler1_ActiveViewChanging
-	    End Sub
-	
-	    '#Region activeViewChanging
-	    Private Sub radScheduler1_ActiveViewChanging(ByVal sender As Object, ByVal e As SchedulerViewChangingEventArgs)
-	        Me.Text = String.Format("Old: {0} New: {1}", e.OldView.ViewType.ToString(), e.NewView.ViewType.ToString())
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 ![scheduler-views-working-with-views 002](images/scheduler-views-working-with-views002.png)
 
@@ -159,7 +115,6 @@ Detect changes to the view by handling the __ActiveViewChanging__ and __ActiveVi
 	    Private Sub radScheduler1_ActiveViewChanging(ByVal sender As Object, ByVal e As SchedulerViewChangingEventArgs)
 	        Me.Text = String.Format("Old: {0} New: {1}", e.OldView.ViewType.ToString(), e.NewView.ViewType.ToString())
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 

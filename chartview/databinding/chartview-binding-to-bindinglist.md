@@ -72,57 +72,7 @@ BindingList is a generic list type, that provides additional control over list i
 	        barSeria.ValueMember = "MyInt"
 	        barSeria.CategoryMember = "MyString"
 	    End Sub
-	#End Region
-	
-	#Region "addingNewRecord"
-	    Private Sub RadButton1_Click(sender As System.Object, e As System.EventArgs) Handles RadButton1.Click
-	
-	        myList.Add(New MyCustomObject(10, "Plants"))
-	    End Sub
-	#End Region
-	
-	
-	
-	End Class
-	
-	#Region "customClass"
-	Public Class MyCustomObject
-	    Implements INotifyPropertyChanged
-	    Private _myInt As Integer
-	    Private _myString As String
-	
-	    Public Sub New(myInt As Integer, myString As String)
-	        _myInt = myInt
-	        _myString = myString
-	    End Sub
-	
-	    Public Property MyInt() As Integer
-	        Get
-	            Return _myInt
-	        End Get
-	        Set(value As Integer)
-	            _myInt = value
-	            OnPropertyChanged("MyInt")
-	        End Set
-	    End Property
-	
-	    Public Property MyString() As String
-	        Get
-	            Return _myString
-	        End Get
-	        Set(value As String)
-	            _myString = value
-	            OnPropertyChanged("MyString")
-	        End Set
-	    End Property
-	
-	    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
-	
-	    Protected Overridable Sub OnPropertyChanged(propertyName As String)
-	        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-	    End Sub
-	End Class
-	#End Region
+	{{endregion}}
 
 ![chartview-databinding-binding-to-bindinglist 001](images/chartview-databinding-binding-to-bindinglist001.png)
 
@@ -216,7 +166,7 @@ In order to allow RadChartView to automatically reflect changes in the DataSourc
 	        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 	    End Sub
 	End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -242,49 +192,6 @@ Once the interface is implemented and your collection implement IBindingList, ju
 	
 	        myList.Add(New MyCustomObject(10, "Plants"))
 	    End Sub
-	#End Region
-	
-	
-	
-	End Class
-	
-	#Region "customClass"
-	Public Class MyCustomObject
-	    Implements INotifyPropertyChanged
-	    Private _myInt As Integer
-	    Private _myString As String
-	
-	    Public Sub New(myInt As Integer, myString As String)
-	        _myInt = myInt
-	        _myString = myString
-	    End Sub
-	
-	    Public Property MyInt() As Integer
-	        Get
-	            Return _myInt
-	        End Get
-	        Set(value As Integer)
-	            _myInt = value
-	            OnPropertyChanged("MyInt")
-	        End Set
-	    End Property
-	
-	    Public Property MyString() As String
-	        Get
-	            Return _myString
-	        End Get
-	        Set(value As String)
-	            _myString = value
-	            OnPropertyChanged("MyString")
-	        End Set
-	    End Property
-	
-	    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
-	
-	    Protected Overridable Sub OnPropertyChanged(propertyName As String)
-	        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-	    End Sub
-	End Class
-	#End Region
+	{{endregion}}
 
 ![chartview-databinding-binding-to-bindinglist 002](images/chartview-databinding-binding-to-bindinglist002.png)

@@ -116,8 +116,7 @@ The first task is to decide what the calculation formula that you want to use is
 	        Return Nothing
 	    End Function
 	End Class
-	'#End Region
-	
+	{{endregion}}
 
 ![pivotgrid-calculated-fields 001](images/pivotgrid-calculated-fields001.png)
 
@@ -146,69 +145,7 @@ Now it is time to add a new instance of this class to the CalculatedFields colle
 	
 	            DirectCast(Me.radPivotGrid1.DataProvider, LocalDataSourceProvider).CalculatedFields.Add(calculatedField)
 	        End Using
-	        '#End Region
-	
-	        '#Region "AddCalculatedToAggregateDescriptions"
-	        Dim calculatedAggregate As New CalculatedAggregateDescription()
-	        calculatedAggregate.CalculatedFieldName = "Commission"
-	        DirectCast(radPivotGrid1.DataProvider, LocalDataSourceProvider).AggregateDescriptions.Add(calculatedAggregate)
-	        '#End Region
-	
-	        FillWithData()
-	    End Sub
-	
-	    Private Sub FillWithData()
-	        Me.radPivotGrid1.RowGroupDescriptions.Add(New PropertyGroupDescription() With { _
-	             .PropertyName = "Salesperson" _
-	        })
-	
-	        Me.radPivotGrid1.ColumnGroupDescriptions.Add(New DateTimeGroupDescription() With { _
-	             .PropertyName = "OrderDate", _
-	             .[Step] = DateTimeStep.Quarter _
-	        })
-	
-	        Me.radPivotGrid1.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
-	             .PropertyName = "ExtendedPrice", _
-	             .AggregateFunction = AggregateFunctions.Sum _
-	        })
-	
-	        provider.ItemsSource = Invoice.GetInvoices()
-	        Me.radPivotGrid1.ErrorString = "Error"
-	    End Sub
-	
-	End Class
-	
-	
-	'#Region CalculatedFieldClass
-	Public Class CommissionCalculatedField
-	    Inherits CalculatedField
-	    Private extendPriceField As RequiredField
-	
-	    Public Sub New()
-	        Me.Name = "Commission"
-	        Me.extendPriceField = RequiredField.ForProperty("ExtendedPrice")
-	    End Sub
-	
-	    Protected Overrides Function RequiredFields() As IEnumerable(Of RequiredField)
-	        Return New List(Of RequiredField) From {extendPriceField}
-	    End Function
-	
-	    Protected Overrides Function CalculateValue(aggregateValues As IAggregateValues) As AggregateValue
-	        Dim aggregateValue = aggregateValues.GetAggregateValue(Me.extendPriceField)
-	        If aggregateValue.IsError() Then
-	            Return aggregateValue
-	        End If
-	
-	        Dim extendedPrice As Double = aggregateValue.ConvertOrDefault(Of Double)()
-	        If extendedPrice > 15000 Then
-	            Return New DoubleAggregateValue(extendedPrice * 0.1)
-	        End If
-	
-	        Return Nothing
-	    End Function
-	End Class
-	'#End Region
-	
+	{{endregion}}
 
 
 

@@ -58,21 +58,7 @@ The code snippet in __Example 1__ shows how to create a __PdfFormatProvider__ in
 	            provider.Export(document, output)
 	        End Using
 	
-	        '#End Region
-	    End Sub
-	    Private Sub example2()
-	        '#Region "example2"
-	        Dim document As RadFlowDocument = CreateRadFlowDocument()
-	
-	        Dim provider As New PdfFormatProvider()
-	        Dim fixedDocument As RadFixedDocument = provider.ExportToFixedDocument(document)
-	        '#End Region
-	    End Sub
-	
-	    Private Function CreateRadFlowDocument() As Telerik.Windows.Documents.Flow.Model.RadFlowDocument
-	        Return New Telerik.Windows.Documents.Flow.Model.RadFlowDocument()
-	    End Function
-	End Class
+	{{endregion}}
 
 
 
@@ -97,13 +83,7 @@ The result from the method is a document that can be opened in any application t
 	
 	        Dim provider As New PdfFormatProvider()
 	        Dim fixedDocument As RadFixedDocument = provider.ExportToFixedDocument(document)
-	        '#End Region
-	    End Sub
-	
-	    Private Function CreateRadFlowDocument() As Telerik.Windows.Documents.Flow.Model.RadFlowDocument
-	        Return New Telerik.Windows.Documents.Flow.Model.RadFlowDocument()
-	    End Function
-	End Class
+	{{endregion}}
 
 
 

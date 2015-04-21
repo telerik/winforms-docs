@@ -63,39 +63,7 @@ When a __RadDocument__ instance was for some reason created from code – built 
 	
 	        Dim documentEditor As New RadDocumentEditor(Me.radRichTextEditor1.Document)
 	
-	        '#End Region
-	
-	        '#Region "insert"
-	
-	        documentEditor.BeginUndoGroup()
-	
-	        If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
-	            documentEditor.InsertTableRow()
-	            documentEditor.InsertTableRow()
-	            documentEditor.InsertTableRow()
-	            documentEditor.Document.Selection.Clear()
-	        End If
-	
-	        documentEditor.EndUndoGroup("Insert three table rows")
-	
-	        '#End Region
-	
-	        '#Region "cancel"
-	
-	        documentEditor.BeginUndoGroup()
-	
-	        If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
-	            documentEditor.InsertTableRow()
-	            documentEditor.InsertTableRow()
-	            documentEditor.InsertTableRow()
-	            documentEditor.Document.Selection.Clear()
-	        End If
-	
-	        documentEditor.CancelUndoGroup()
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -139,24 +107,7 @@ The newly created *documentEditor* instance now provides all capabilities that a
 	
 	        documentEditor.EndUndoGroup("Insert three table rows")
 	
-	        '#End Region
-	
-	        '#Region "cancel"
-	
-	        documentEditor.BeginUndoGroup()
-	
-	        If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
-	            documentEditor.InsertTableRow()
-	            documentEditor.InsertTableRow()
-	            documentEditor.InsertTableRow()
-	            documentEditor.Document.Selection.Clear()
-	        End If
-	
-	        documentEditor.CancelUndoGroup()
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -197,9 +148,7 @@ You can also cancel the execution of the undo group, and it won't be recorded in
 	
 	        documentEditor.CancelUndoGroup()
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -51,66 +51,7 @@ The first step would be to just create the custom class
 	    Inherits RadPanel
 	    Implements IPrintable
 	
-	    '#End Region
-	
-	
-	    '#Region "beginEnd"
-	
-	    Public Function BeginPrint(sender As RadPrintDocument, args As PrintEventArgs) As Integer Implements IPrintable.BeginPrint
-	
-	        Return 1
-	    End Function
-	
-	    Public Function EndPrint(sender As RadPrintDocument, args As PrintEventArgs) As Boolean Implements IPrintable.EndPrint
-	        Return True
-	    End Function
-	
-	    '#End Region
-	
-	    '#Region "page"
-	
-	    Public Function PrintPage(pageNumber As Integer, sender As RadPrintDocument, args As PrintPageEventArgs) As Boolean Implements IPrintable.PrintPage
-	        Dim bmp As New Bitmap(Me.Width, Me.Height)
-	        Me.DrawToBitmap(bmp, New Rectangle(Point.Empty, Me.Size))
-	        args.Graphics.DrawImage(bmp, Point.Empty)
-	
-	        Return False
-	    End Function
-	    '#End Region
-	
-	    '#Region "dialog"
-	
-	    Public Function GetSettingsDialog(document As RadPrintDocument) As Form Implements IPrintable.GetSettingsDialog
-	        Return New PrintSettingsDialog(document)
-	    End Function
-	
-	    '#End Region
-	
-	    '#Region "print"
-	
-	    Public Sub Print()
-	        Dim doc As RadPrintDocument = Me.CreatePrintDocument()
-	        doc.Print()
-	    End Sub
-	
-	    Public Sub PrintPreview()
-	        Dim doc As RadPrintDocument = Me.CreatePrintDocument()
-	        Dim dialog As New RadPrintPreviewDialog(doc)
-	
-	        dialog.ThemeName = Me.ThemeName
-	        dialog.ShowDialog()
-	    End Sub
-	    '#End Region
-	    '#Region "create"
-	
-	    Private Function CreatePrintDocument() As RadPrintDocument
-	        Dim doc As New RadPrintDocument()
-	        doc.AssociatedObject = Me
-	        Return doc
-	    End Function
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -148,52 +89,7 @@ For the current example the __BeginPrint__ and __EndPrint__ methods should just 
 	        Return True
 	    End Function
 	
-	    '#End Region
-	
-	    '#Region "page"
-	
-	    Public Function PrintPage(pageNumber As Integer, sender As RadPrintDocument, args As PrintPageEventArgs) As Boolean Implements IPrintable.PrintPage
-	        Dim bmp As New Bitmap(Me.Width, Me.Height)
-	        Me.DrawToBitmap(bmp, New Rectangle(Point.Empty, Me.Size))
-	        args.Graphics.DrawImage(bmp, Point.Empty)
-	
-	        Return False
-	    End Function
-	    '#End Region
-	
-	    '#Region "dialog"
-	
-	    Public Function GetSettingsDialog(document As RadPrintDocument) As Form Implements IPrintable.GetSettingsDialog
-	        Return New PrintSettingsDialog(document)
-	    End Function
-	
-	    '#End Region
-	
-	    '#Region "print"
-	
-	    Public Sub Print()
-	        Dim doc As RadPrintDocument = Me.CreatePrintDocument()
-	        doc.Print()
-	    End Sub
-	
-	    Public Sub PrintPreview()
-	        Dim doc As RadPrintDocument = Me.CreatePrintDocument()
-	        Dim dialog As New RadPrintPreviewDialog(doc)
-	
-	        dialog.ThemeName = Me.ThemeName
-	        dialog.ShowDialog()
-	    End Sub
-	    '#End Region
-	    '#Region "create"
-	
-	    Private Function CreatePrintDocument() As RadPrintDocument
-	        Dim doc As New RadPrintDocument()
-	        doc.AssociatedObject = Me
-	        Return doc
-	    End Function
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -221,33 +117,7 @@ In the __GetSettingsDialog__ method you should just return an new settings dialo
 	        Return New PrintSettingsDialog(document)
 	    End Function
 	
-	    '#End Region
-	
-	    '#Region "print"
-	
-	    Public Sub Print()
-	        Dim doc As RadPrintDocument = Me.CreatePrintDocument()
-	        doc.Print()
-	    End Sub
-	
-	    Public Sub PrintPreview()
-	        Dim doc As RadPrintDocument = Me.CreatePrintDocument()
-	        Dim dialog As New RadPrintPreviewDialog(doc)
-	
-	        dialog.ThemeName = Me.ThemeName
-	        dialog.ShowDialog()
-	    End Sub
-	    '#End Region
-	    '#Region "create"
-	
-	    Private Function CreatePrintDocument() As RadPrintDocument
-	        Dim doc As New RadPrintDocument()
-	        doc.AssociatedObject = Me
-	        Return doc
-	    End Function
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -281,41 +151,7 @@ The __PrintPage__ method is the place where the panel actual would be converted 
 	
 	        Return False
 	    End Function
-	    '#End Region
-	
-	    '#Region "dialog"
-	
-	    Public Function GetSettingsDialog(document As RadPrintDocument) As Form Implements IPrintable.GetSettingsDialog
-	        Return New PrintSettingsDialog(document)
-	    End Function
-	
-	    '#End Region
-	
-	    '#Region "print"
-	
-	    Public Sub Print()
-	        Dim doc As RadPrintDocument = Me.CreatePrintDocument()
-	        doc.Print()
-	    End Sub
-	
-	    Public Sub PrintPreview()
-	        Dim doc As RadPrintDocument = Me.CreatePrintDocument()
-	        Dim dialog As New RadPrintPreviewDialog(doc)
-	
-	        dialog.ThemeName = Me.ThemeName
-	        dialog.ShowDialog()
-	    End Sub
-	    '#End Region
-	    '#Region "create"
-	
-	    Private Function CreatePrintDocument() As RadPrintDocument
-	        Dim doc As New RadPrintDocument()
-	        doc.AssociatedObject = Me
-	        Return doc
-	    End Function
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -360,17 +196,7 @@ Besides the interface methods implementation you can create the __Print__ and __
 	        dialog.ThemeName = Me.ThemeName
 	        dialog.ShowDialog()
 	    End Sub
-	    '#End Region
-	    '#Region "create"
-	
-	    Private Function CreatePrintDocument() As RadPrintDocument
-	        Dim doc As New RadPrintDocument()
-	        doc.AssociatedObject = Me
-	        Return doc
-	    End Function
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -402,7 +228,6 @@ The final method left is the __CreatePrintDocument__. It returns a new RadPrintD
 	        Return doc
 	    End Function
 	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 

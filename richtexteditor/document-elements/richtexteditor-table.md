@@ -137,9 +137,7 @@ Here is an example done in the code-behind.
 	
 	        Me.radRichTextEditor1.Document = document
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

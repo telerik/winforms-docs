@@ -113,64 +113,7 @@ In order to create an instance of __FloatingImage__ you need the worksheet in wh
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_0}}
 	        Dim image As New FloatingImage(worksheet, New CellIndex(7, 1), 35, 10)
 	
-	        '#End Region
-	        Dim filePath As String = ""
-	        '#Region "radspreadprocessing-features-shapes-and-images_01"
-	        Dim stream As FileStream = File.Open(filePath, FileMode.Open)
-	
-	        Using stream
-	            image.ImageSource = New Telerik.Windows.Documents.Media.ImageSource(stream, "jpg")
-	        End Using
-	
-	        image.Width = 330
-	        image.Height = 45
-	        image.RotationAngle = 20
-	
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_02"
-	        worksheet.Shapes.Add(image)
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_03"
-	        worksheet.Shapes.Remove(image)
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_04"
-	        image.CellIndex = New CellIndex(4, 5)
-	        image.OffsetX = 10
-	        image.OffsetY = 10
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_05"
-	        image.Width -= 50
-	        image.Height += 50
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_06"
-	        image.RotationAngle = 40
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_07"
-	        image.IsHorizontallyFlipped = True
-	
-	        '#End Region
-	
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_08"
-	
-	        image.SetWidth(False, 330)
-	        image.SetHeight(True, 45)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -210,50 +153,7 @@ The next step is to configure the other properties of the image as needed.
 	        image.RotationAngle = 20
 	
 	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_02"
-	        worksheet.Shapes.Add(image)
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_03"
-	        worksheet.Shapes.Remove(image)
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_04"
-	        image.CellIndex = New CellIndex(4, 5)
-	        image.OffsetX = 10
-	        image.OffsetY = 10
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_05"
-	        image.Width -= 50
-	        image.Height += 50
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_06"
-	        image.RotationAngle = 40
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_07"
-	        image.IsHorizontallyFlipped = True
-	
-	        '#End Region
-	
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_08"
-	
-	        image.SetWidth(False, 330)
-	        image.SetHeight(True, 45)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -275,45 +175,7 @@ Insert the image into the collection of shapes of the worksheet.  Note that the 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_02}}
 	        worksheet.Shapes.Add(image)
 	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_03"
-	        worksheet.Shapes.Remove(image)
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_04"
-	        image.CellIndex = New CellIndex(4, 5)
-	        image.OffsetX = 10
-	        image.OffsetY = 10
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_05"
-	        image.Width -= 50
-	        image.Height += 50
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_06"
-	        image.RotationAngle = 40
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_07"
-	        image.IsHorizontallyFlipped = True
-	
-	        '#End Region
-	
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_08"
-	
-	        image.SetWidth(False, 330)
-	        image.SetHeight(True, 45)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -340,40 +202,7 @@ __Example 4__ demonstrates how you can remove the image added in __Example 3__.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_03}}
 	        worksheet.Shapes.Remove(image)
 	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_04"
-	        image.CellIndex = New CellIndex(4, 5)
-	        image.OffsetX = 10
-	        image.OffsetY = 10
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_05"
-	        image.Width -= 50
-	        image.Height += 50
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_06"
-	        image.RotationAngle = 40
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_07"
-	        image.IsHorizontallyFlipped = True
-	
-	        '#End Region
-	
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_08"
-	
-	        image.SetWidth(False, 330)
-	        image.SetHeight(True, 45)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -404,33 +233,7 @@ After the initial values of the properties of the shapes have been assigned, the
 	        image.OffsetX = 10
 	        image.OffsetY = 10
 	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_05"
-	        image.Width -= 50
-	        image.Height += 50
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_06"
-	        image.RotationAngle = 40
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_07"
-	        image.IsHorizontallyFlipped = True
-	
-	        '#End Region
-	
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_08"
-	
-	        image.SetWidth(False, 330)
-	        image.SetHeight(True, 45)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -454,27 +257,7 @@ After the initial values of the properties of the shapes have been assigned, the
 	        image.Width -= 50
 	        image.Height += 50
 	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_06"
-	        image.RotationAngle = 40
-	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_07"
-	        image.IsHorizontallyFlipped = True
-	
-	        '#End Region
-	
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_08"
-	
-	        image.SetWidth(False, 330)
-	        image.SetHeight(True, 45)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 The Width and Height properties do not take the LockAspectRatio property into account. If you would like more control on whether the aspect ratio of the shape should be observed, you can also use the following methods.
             
@@ -503,9 +286,7 @@ The Width and Height properties do not take the LockAspectRatio property into ac
 	        image.SetWidth(False, 330)
 	        image.SetHeight(True, 45)
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 These two methods will be further explained in the next section.
             
@@ -528,22 +309,7 @@ These two methods will be further explained in the next section.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_06}}
 	        image.RotationAngle = 40
 	
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_07"
-	        image.IsHorizontallyFlipped = True
-	
-	        '#End Region
-	
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_08"
-	
-	        image.SetWidth(False, 330)
-	        image.SetHeight(True, 45)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 The rotation angle of the shape can affect the __CellIndexM__ property and the offset. The relationship between these properties is described in more detail in the next section of this article.
             
@@ -566,17 +332,7 @@ The rotation angle of the shape can affect the __CellIndexM__ property and the o
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_07}}
 	        image.IsHorizontallyFlipped = True
 	
-	        '#End Region
-	
-	
-	        '#Region "radspreadprocessing-features-shapes-and-images_08"
-	
-	        image.SetWidth(False, 330)
-	        image.SetHeight(True, 45)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

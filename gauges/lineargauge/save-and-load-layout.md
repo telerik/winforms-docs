@@ -38,15 +38,6 @@ You can save/load the layout in code as well.
 {{source=..\SamplesVB\Gauges\LinearGauge\LinearGuageGettingStarted.vb region=code}}
 	        radLinearGauge1.SaveLayout("Layout.xml")
 	        radLinearGauge1.LoadLayout("Layout.xml")
-	        '#End Region
-	    End Sub
-	    '#Region "value"
-	    Private Sub radLinearGauge1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-	        If radLinearGauge2.Value > radLinearGauge2.RangeEnd - 10 Then
-	            RadMessageBox.Show("Detected value that is close to the maximum!")
-	        End If
-	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 

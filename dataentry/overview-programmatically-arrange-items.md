@@ -149,25 +149,7 @@ Items in __RadDataEntry__ can be arranged both at design time and run time. At d
 	            Female
 	            Male
 	        End Enum
-	#End Region
-	
-	        Public Sub New()
-	            InitializeComponent()
-	
-	            '#Region "bind1"
-	            Me.radDataEntry1.DataSource = New Employee() With { _
-	              .FirstName = "Sarah", _
-	              .LastName = "Blake", _
-	              .Occupation = "Supplied Manager", _
-	              .StartingDate = New DateTime(2005, 4, 12), _
-	              .IsMarried = True, _
-	              .Salary = 3500, _
-	              .Gender = Gender.Female _
-	             }
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -199,10 +181,7 @@ Items in __RadDataEntry__ can be arranged both at design time and run time. At d
 	              .Salary = 3500, _
 	              .Gender = Gender.Female _
 	             }
-	            '#End Region
-	        End Sub
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-overview-programmatically-arrange-items 001](images/dataentry-overview-programmatically-arrange-items001.png)
 
@@ -250,8 +229,6 @@ Items in __RadDataEntry__ can be arranged both at design time and run time. At d
 	                e.Panel.Location = New Point(e.Panel.Location.X, e.Panel.Location.Y - 25)
 	            End If
 	        End Sub
-	#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 ![dataentry-overview-programmatically-arrange-items 002](images/dataentry-overview-programmatically-arrange-items002.png)

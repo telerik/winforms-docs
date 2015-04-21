@@ -74,8 +74,7 @@ Once the control is added to the form you just need to synchronize the
 	        radBulletGraph1.FeaturedMeasure = rand.Next(100)
 	        radBulletGraph1.ComparativeMeasure = rand.Next(100)
 	    End Sub
-	#End Region
-	End Class
+	{{endregion}}
 
 
 

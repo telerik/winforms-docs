@@ -261,8 +261,6 @@ Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a
 	        radTreeView1.CheckBoxes = True
 	        radTreeView1.DataSource = dt
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

@@ -57,64 +57,7 @@ By default all annotations are markup-only in the sense that they do not have an
 	
 	        Dim markers As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetAnnotationMarkersOfType(Of BookmarkRangeStart)()
 	
-	        '#End Region
-	
-	        Dim paragraph As Paragraph = TryCast(Me.radRichTextEditor1.Document.Sections.First.Blocks.First, Paragraph)
-	        Dim inline As Inline = paragraph.Inlines.First
-	
-	        '#Region "inRange"
-	
-	        Dim isInRange As Boolean = Me.radRichTextEditor1.Document.IsInAnnotationRange(Of BookmarkRangeStart)(inline)
-	
-	        Dim ranges As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetContainingAnnotationRanges(Of BookmarkRangeStart)(inline)
-	
-	        '#End Region
-	
-	
-	        '#Region "inRange1"
-	
-	        Dim isInRange1 As Boolean = Me.radRichTextEditor1.Document.IsInAnnotationRange(Of BookmarkRangeStart)(inline, AddressOf Filter, True)
-	
-	        Dim ranges1 As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetContainingAnnotationRanges(Of BookmarkRangeStart)(inline, AddressOf Filter, True)
-	
-	        '#End Region
-	
-	        Dim documentEditor As New RadDocumentEditor(Me.radRichTextEditor1.Document)
-	        Dim start = New BookmarkRangeStart()
-	        Dim documentPosition As New Telerik.WinForms.Documents.DocumentPosition(Me.radRichTextEditor1.Document)
-	
-	        '#Region "insert"
-	
-	        documentEditor.InsertAnnotationRange(New BookmarkRangeStart(), New BookmarkRangeEnd())
-	
-	        '#End Region
-	
-	        '#Region "delete"
-	
-	        documentEditor.DeleteAnnotationRange(start)
-	
-	        '#End Region
-	
-	        '#Region "delete1"
-	
-	        documentEditor.Document.Selection.SelectAnnotationRange(start)
-	        documentEditor.Delete(False)
-	
-	        '#End Region
-	
-	        '#Region "split"
-	
-	        documentEditor.SplitAnnotationRange(start)
-	        'or
-	        documentEditor.SplitAnnotationRange(start, documentPosition)
-	
-	        '#End Region
-	    End Sub
-	    Private Shared Function Filter(ByVal start As BookmarkRangeStart) As Boolean
-	        Return True
-	    End Function
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -137,72 +80,7 @@ By default all annotations are markup-only in the sense that they do not have an
 	
 	        Dim currentInline As Inline = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentInline()
 	
-	        '#End Region
-	
-	        '#Region "contains"
-	
-	        Dim containsBookamrks As Boolean = Me.radRichTextEditor1.Document.ContainsAnnotationMarkersOfType(Of BookmarkRangeStart)()
-	
-	        Dim markers As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetAnnotationMarkersOfType(Of BookmarkRangeStart)()
-	
-	        '#End Region
-	
-	        Dim paragraph As Paragraph = TryCast(Me.radRichTextEditor1.Document.Sections.First.Blocks.First, Paragraph)
-	        Dim inline As Inline = paragraph.Inlines.First
-	
-	        '#Region "inRange"
-	
-	        Dim isInRange As Boolean = Me.radRichTextEditor1.Document.IsInAnnotationRange(Of BookmarkRangeStart)(inline)
-	
-	        Dim ranges As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetContainingAnnotationRanges(Of BookmarkRangeStart)(inline)
-	
-	        '#End Region
-	
-	
-	        '#Region "inRange1"
-	
-	        Dim isInRange1 As Boolean = Me.radRichTextEditor1.Document.IsInAnnotationRange(Of BookmarkRangeStart)(inline, AddressOf Filter, True)
-	
-	        Dim ranges1 As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetContainingAnnotationRanges(Of BookmarkRangeStart)(inline, AddressOf Filter, True)
-	
-	        '#End Region
-	
-	        Dim documentEditor As New RadDocumentEditor(Me.radRichTextEditor1.Document)
-	        Dim start = New BookmarkRangeStart()
-	        Dim documentPosition As New Telerik.WinForms.Documents.DocumentPosition(Me.radRichTextEditor1.Document)
-	
-	        '#Region "insert"
-	
-	        documentEditor.InsertAnnotationRange(New BookmarkRangeStart(), New BookmarkRangeEnd())
-	
-	        '#End Region
-	
-	        '#Region "delete"
-	
-	        documentEditor.DeleteAnnotationRange(start)
-	
-	        '#End Region
-	
-	        '#Region "delete1"
-	
-	        documentEditor.Document.Selection.SelectAnnotationRange(start)
-	        documentEditor.Delete(False)
-	
-	        '#End Region
-	
-	        '#Region "split"
-	
-	        documentEditor.SplitAnnotationRange(start)
-	        'or
-	        documentEditor.SplitAnnotationRange(start, documentPosition)
-	
-	        '#End Region
-	    End Sub
-	    Private Shared Function Filter(ByVal start As BookmarkRangeStart) As Boolean
-	        Return True
-	    End Function
-	
-	End Class
+	{{endregion}}
 
 and then, check if this inline is contained in a range using one of the methods below:
 
@@ -226,53 +104,7 @@ and then, check if this inline is contained in a range using one of the methods 
 	
 	        Dim ranges As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetContainingAnnotationRanges(Of BookmarkRangeStart)(inline)
 	
-	        '#End Region
-	
-	
-	        '#Region "inRange1"
-	
-	        Dim isInRange1 As Boolean = Me.radRichTextEditor1.Document.IsInAnnotationRange(Of BookmarkRangeStart)(inline, AddressOf Filter, True)
-	
-	        Dim ranges1 As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetContainingAnnotationRanges(Of BookmarkRangeStart)(inline, AddressOf Filter, True)
-	
-	        '#End Region
-	
-	        Dim documentEditor As New RadDocumentEditor(Me.radRichTextEditor1.Document)
-	        Dim start = New BookmarkRangeStart()
-	        Dim documentPosition As New Telerik.WinForms.Documents.DocumentPosition(Me.radRichTextEditor1.Document)
-	
-	        '#Region "insert"
-	
-	        documentEditor.InsertAnnotationRange(New BookmarkRangeStart(), New BookmarkRangeEnd())
-	
-	        '#End Region
-	
-	        '#Region "delete"
-	
-	        documentEditor.DeleteAnnotationRange(start)
-	
-	        '#End Region
-	
-	        '#Region "delete1"
-	
-	        documentEditor.Document.Selection.SelectAnnotationRange(start)
-	        documentEditor.Delete(False)
-	
-	        '#End Region
-	
-	        '#Region "split"
-	
-	        documentEditor.SplitAnnotationRange(start)
-	        'or
-	        documentEditor.SplitAnnotationRange(start, documentPosition)
-	
-	        '#End Region
-	    End Sub
-	    Private Shared Function Filter(ByVal start As BookmarkRangeStart) As Boolean
-	        Return True
-	    End Function
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -298,44 +130,7 @@ and then, check if this inline is contained in a range using one of the methods 
 	
 	        Dim ranges1 As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetContainingAnnotationRanges(Of BookmarkRangeStart)(inline, AddressOf Filter, True)
 	
-	        '#End Region
-	
-	        Dim documentEditor As New RadDocumentEditor(Me.radRichTextEditor1.Document)
-	        Dim start = New BookmarkRangeStart()
-	        Dim documentPosition As New Telerik.WinForms.Documents.DocumentPosition(Me.radRichTextEditor1.Document)
-	
-	        '#Region "insert"
-	
-	        documentEditor.InsertAnnotationRange(New BookmarkRangeStart(), New BookmarkRangeEnd())
-	
-	        '#End Region
-	
-	        '#Region "delete"
-	
-	        documentEditor.DeleteAnnotationRange(start)
-	
-	        '#End Region
-	
-	        '#Region "delete1"
-	
-	        documentEditor.Document.Selection.SelectAnnotationRange(start)
-	        documentEditor.Delete(False)
-	
-	        '#End Region
-	
-	        '#Region "split"
-	
-	        documentEditor.SplitAnnotationRange(start)
-	        'or
-	        documentEditor.SplitAnnotationRange(start, documentPosition)
-	
-	        '#End Region
-	    End Sub
-	    Private Shared Function Filter(ByVal start As BookmarkRangeStart) As Boolean
-	        Return True
-	    End Function
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -360,34 +155,7 @@ Annotations can be inserted in the document using the following method of [RadDo
 	
 	        documentEditor.InsertAnnotationRange(New BookmarkRangeStart(), New BookmarkRangeEnd())
 	
-	        '#End Region
-	
-	        '#Region "delete"
-	
-	        documentEditor.DeleteAnnotationRange(start)
-	
-	        '#End Region
-	
-	        '#Region "delete1"
-	
-	        documentEditor.Document.Selection.SelectAnnotationRange(start)
-	        documentEditor.Delete(False)
-	
-	        '#End Region
-	
-	        '#Region "split"
-	
-	        documentEditor.SplitAnnotationRange(start)
-	        'or
-	        documentEditor.SplitAnnotationRange(start, documentPosition)
-	
-	        '#End Region
-	    End Sub
-	    Private Shared Function Filter(ByVal start As BookmarkRangeStart) As Boolean
-	        Return True
-	    End Function
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -416,28 +184,7 @@ In order to delete an annotation, you need to obtain a reference to its range st
 	
 	        documentEditor.DeleteAnnotationRange(start)
 	
-	        '#End Region
-	
-	        '#Region "delete1"
-	
-	        documentEditor.Document.Selection.SelectAnnotationRange(start)
-	        documentEditor.Delete(False)
-	
-	        '#End Region
-	
-	        '#Region "split"
-	
-	        documentEditor.SplitAnnotationRange(start)
-	        'or
-	        documentEditor.SplitAnnotationRange(start, documentPosition)
-	
-	        '#End Region
-	    End Sub
-	    Private Shared Function Filter(ByVal start As BookmarkRangeStart) As Boolean
-	        Return True
-	    End Function
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -462,21 +209,7 @@ Note that this method will remove the annotation, but will keep its contents. In
 	        documentEditor.Document.Selection.SelectAnnotationRange(start)
 	        documentEditor.Delete(False)
 	
-	        '#End Region
-	
-	        '#Region "split"
-	
-	        documentEditor.SplitAnnotationRange(start)
-	        'or
-	        documentEditor.SplitAnnotationRange(start, documentPosition)
-	
-	        '#End Region
-	    End Sub
-	    Private Shared Function Filter(ByVal start As BookmarkRangeStart) As Boolean
-	        Return True
-	    End Function
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -508,13 +241,7 @@ Some user scenarios require that there would be an easy way to split annotation 
 	        'or
 	        documentEditor.SplitAnnotationRange(start, documentPosition)
 	
-	        '#End Region
-	    End Sub
-	    Private Shared Function Filter(ByVal start As BookmarkRangeStart) As Boolean
-	        Return True
-	    End Function
-	
-	End Class
+	{{endregion}}
 
 
 

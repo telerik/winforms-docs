@@ -55,76 +55,7 @@ The code snippet from __Example 1__ shows how to create a list with NumberedPare
 	
 	        Dim numberedParenthesesList As New List(ListTemplateType.NumberedParentheses)
 	
-	        '#End Region
-	
-	        '#Region "levels"
-	
-	        Dim list As New List()
-	        Dim levelZero As ListLevel = list.Levels.AddListLevel()
-	        levelZero.ParagraphProperties.LeftIndent = 30
-	        levelZero.CharacterProperties.ForegroundColor = New RgbColor(100, 100, 100)
-	        levelZero.IndentAfterBullet = 5
-	        levelZero.BulletNumberingFormat = New TextBulletNumberingFormat(Function(indexer) String.Format("{0:D2}.", indexer.GetCurrentIndex(0)))
-	
-	        Dim levelOne As ListLevel = list.Levels.AddListLevel()
-	        levelOne.ParagraphProperties.LeftIndent = 60
-	        levelOne.CharacterProperties.ForegroundColor = New RgbColor(100, 100, 100)
-	        levelOne.IndentAfterBullet = 10
-	        levelOne.BulletNumberingFormat = New TextBulletNumberingFormat(Function(indexer) "☑")
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub example3()
-	        '#Region "bullet"
-	
-	        Dim list As New List()
-	
-	        For i As Integer = 0 To 2
-	            Dim level As ListLevel = list.Levels.AddListLevel()
-	            level.ParagraphProperties.LeftIndent = (i + 1) * 20
-	            level.IndentAfterBullet = 10
-	            Dim currentLevelIndex As Integer = i
-	
-	            level.BulletNumberingFormat = New TextBulletNumberingFormat(Function(indexer)
-	                                                                            Dim builder As New StringBuilder()
-	                                                                            For levelIndex As Integer = 0 To currentLevelIndex
-	                                                                                builder.AppendFormat("{0}.", indexer.GetCurrentIndex(levelIndex))
-	                                                                            Next levelIndex
-	                                                                            Return builder.ToString()
-	                                                                        End Function)
-	        Next i
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub example4()
-	
-	        '#Region "editor"
-	
-	        Using editor As New RadFixedDocumentEditor(New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument())
-	            Dim list As List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
-	            editor.ParagraphProperties.ListId = list.Id
-	
-	            For listLevel As Integer = 0 To list.Levels.Count - 1
-	                editor.ParagraphProperties.ListLevel = listLevel
-	                editor.InsertParagraph()
-	                editor.InsertRun(String.Format("List level {0}", listLevel))
-	            Next listLevel
-	        End Using
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub example5()
-	        '#Region "block"
-	        Dim list As New List(ListTemplateType.BulletDefault)
-	        Dim block As New Block()
-	        block.SetBullet(list, 0)
-	        block.InsertText("Sample block text.")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -200,59 +131,7 @@ __Example 2__ shows how to create an empty list and add two custom list levels t
 	        levelOne.IndentAfterBullet = 10
 	        levelOne.BulletNumberingFormat = New TextBulletNumberingFormat(Function(indexer) "☑")
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub example3()
-	        '#Region "bullet"
-	
-	        Dim list As New List()
-	
-	        For i As Integer = 0 To 2
-	            Dim level As ListLevel = list.Levels.AddListLevel()
-	            level.ParagraphProperties.LeftIndent = (i + 1) * 20
-	            level.IndentAfterBullet = 10
-	            Dim currentLevelIndex As Integer = i
-	
-	            level.BulletNumberingFormat = New TextBulletNumberingFormat(Function(indexer)
-	                                                                            Dim builder As New StringBuilder()
-	                                                                            For levelIndex As Integer = 0 To currentLevelIndex
-	                                                                                builder.AppendFormat("{0}.", indexer.GetCurrentIndex(levelIndex))
-	                                                                            Next levelIndex
-	                                                                            Return builder.ToString()
-	                                                                        End Function)
-	        Next i
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub example4()
-	
-	        '#Region "editor"
-	
-	        Using editor As New RadFixedDocumentEditor(New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument())
-	            Dim list As List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
-	            editor.ParagraphProperties.ListId = list.Id
-	
-	            For listLevel As Integer = 0 To list.Levels.Count - 1
-	                editor.ParagraphProperties.ListLevel = listLevel
-	                editor.InsertParagraph()
-	                editor.InsertRun(String.Format("List level {0}", listLevel))
-	            Next listLevel
-	        End Using
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub example5()
-	        '#Region "block"
-	        Dim list As New List(ListTemplateType.BulletDefault)
-	        Dim block As New Block()
-	        block.SetBullet(list, 0)
-	        block.InsertText("Sample block text.")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -325,36 +204,7 @@ The following code snippet shows how to create the bullets of a numbered hierarc
 	                                                                        End Function)
 	        Next i
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub example4()
-	
-	        '#Region "editor"
-	
-	        Using editor As New RadFixedDocumentEditor(New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument())
-	            Dim list As List = editor.Lists.AddList(ListTemplateType.NumberedDefault)
-	            editor.ParagraphProperties.ListId = list.Id
-	
-	            For listLevel As Integer = 0 To list.Levels.Count - 1
-	                editor.ParagraphProperties.ListLevel = listLevel
-	                editor.InsertParagraph()
-	                editor.InsertRun(String.Format("List level {0}", listLevel))
-	            Next listLevel
-	        End Using
-	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub example5()
-	        '#Region "block"
-	        Dim list As New List(ListTemplateType.BulletDefault)
-	        Dim block As New Block()
-	        block.SetBullet(list, 0)
-	        block.InsertText("Sample block text.")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -407,18 +257,7 @@ __Example 4__ shows how to create a list with __RadFixedDocumentEditor__ and ins
 	            Next listLevel
 	        End Using
 	
-	        '#End Region
-	    End Sub
-	
-	    Public Sub example5()
-	        '#Region "block"
-	        Dim list As New List(ListTemplateType.BulletDefault)
-	        Dim block As New Block()
-	        block.SetBullet(list, 0)
-	        block.InsertText("Sample block text.")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -453,9 +292,7 @@ As the __Block__ class has __Bullet__ and __IndentAfterBullet__ properties you c
 	        Dim block As New Block()
 	        block.SetBullet(list, 0)
 	        block.InsertText("Sample block text.")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

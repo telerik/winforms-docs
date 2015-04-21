@@ -57,56 +57,7 @@ If you want to group RadScheduler by resources you can use the GroupType proper
 
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=groupType}}
 	        Me.RadScheduler1.GroupType = GroupType.Resource
-	        '#End Region
-	
-	        '#Region addingResources
-	        Dim colors() As Color = {Color.LightBlue, Color.LightGreen, Color.LightYellow, Color.Red, Color.Orange, Color.Pink, Color.Purple, Color.Peru, Color.PowderBlue}
-	
-	        Dim names() As String = {"Alan Smith", "Anne Dodsworth", "Boyan Mastoni", "Richard Duncan", "Maria Shnaider"}
-	
-	        For i As Integer = 0 To names.Length - 1
-	            Dim resource As New Telerik.WinControls.UI.Resource()
-	            resource.Id = New EventId(i)
-	            resource.Name = names(i)
-	            resource.Color = colors(i)
-	
-	            resource.Image = Me.imageList1.Images(i)
-	            Me.RadScheduler1.Resources.Add(resource)
-	        Next i
-	        '#End Region
-	
-	        '#Region getDayView
-	        Me.RadScheduler1.ActiveView.ResourcesPerView = 2
-	        '#End Region
-	
-	        '#Region resourceNavigation
-	        CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).ResourceStartIndex = 2
-	        '#End Region 
-	
-	        '#Region resourceNavigationEvents
-	        AddHandler Me.RadScheduler1.ResourceStartIndexChanging, AddressOf radScheduler1_ResourceStartIndexChanging
-	        AddHandler Me.RadScheduler1.ResourceStartIndexChanged, AddressOf radScheduler1_ResourceStartIndexChanged
-	        '#End Region
-	
-	        '#Region resourceResizing
-	        CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).SetResourceSize(1, 2)
-	        '#End Region
-	
-	    End Sub
-	
-	    '#Region resourceNavigationHandlers
-	    Private Sub radScheduler1_ResourceStartIndexChanging(sender As Object, e As ResourceIndexChangingEventArgs)
-	        If e.NewStartIndex > 5 Then
-	            e.Cancel = True
-	        End If
-	    End Sub
-	
-	    Private Sub radScheduler1_ResourceStartIndexChanged(sender As Object, e As EventArgs)
-	        RadMessageBox.Show("Resource Index has changed")
-	    End Sub
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -151,40 +102,7 @@ You can add/remove resources using the RadScheduler’s Resources collection. Th
 	            resource.Image = Me.imageList1.Images(i)
 	            Me.RadScheduler1.Resources.Add(resource)
 	        Next i
-	        '#End Region
-	
-	        '#Region getDayView
-	        Me.RadScheduler1.ActiveView.ResourcesPerView = 2
-	        '#End Region
-	
-	        '#Region resourceNavigation
-	        CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).ResourceStartIndex = 2
-	        '#End Region 
-	
-	        '#Region resourceNavigationEvents
-	        AddHandler Me.RadScheduler1.ResourceStartIndexChanging, AddressOf radScheduler1_ResourceStartIndexChanging
-	        AddHandler Me.RadScheduler1.ResourceStartIndexChanged, AddressOf radScheduler1_ResourceStartIndexChanged
-	        '#End Region
-	
-	        '#Region resourceResizing
-	        CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).SetResourceSize(1, 2)
-	        '#End Region
-	
-	    End Sub
-	
-	    '#Region resourceNavigationHandlers
-	    Private Sub radScheduler1_ResourceStartIndexChanging(sender As Object, e As ResourceIndexChangingEventArgs)
-	        If e.NewStartIndex > 5 Then
-	            e.Cancel = True
-	        End If
-	    End Sub
-	
-	    Private Sub radScheduler1_ResourceStartIndexChanged(sender As Object, e As EventArgs)
-	        RadMessageBox.Show("Resource Index has changed")
-	    End Sub
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -204,36 +122,7 @@ You can use the SchedulerView’s ResourcesPerView property to change the number
 
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=getDayView}}
 	        Me.RadScheduler1.ActiveView.ResourcesPerView = 2
-	        '#End Region
-	
-	        '#Region resourceNavigation
-	        CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).ResourceStartIndex = 2
-	        '#End Region 
-	
-	        '#Region resourceNavigationEvents
-	        AddHandler Me.RadScheduler1.ResourceStartIndexChanging, AddressOf radScheduler1_ResourceStartIndexChanging
-	        AddHandler Me.RadScheduler1.ResourceStartIndexChanged, AddressOf radScheduler1_ResourceStartIndexChanged
-	        '#End Region
-	
-	        '#Region resourceResizing
-	        CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).SetResourceSize(1, 2)
-	        '#End Region
-	
-	    End Sub
-	
-	    '#Region resourceNavigationHandlers
-	    Private Sub radScheduler1_ResourceStartIndexChanging(sender As Object, e As ResourceIndexChangingEventArgs)
-	        If e.NewStartIndex > 5 Then
-	            e.Cancel = True
-	        End If
-	    End Sub
-	
-	    Private Sub radScheduler1_ResourceStartIndexChanged(sender As Object, e As EventArgs)
-	        RadMessageBox.Show("Resource Index has changed")
-	    End Sub
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -254,18 +143,8 @@ Navigating through resources
 #### __[VB.NET]__
 
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceNavigation}}
-	    Private Sub radScheduler1_ResourceStartIndexChanging(sender As Object, e As ResourceIndexChangingEventArgs)
-	        If e.NewStartIndex > 5 Then
-	            e.Cancel = True
-	        End If
-	    End Sub
-	
-	    Private Sub radScheduler1_ResourceStartIndexChanged(sender As Object, e As EventArgs)
-	        RadMessageBox.Show("Resource Index has changed")
-	    End Sub
-	    '#End Region
-	
-	End Class
+	        CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).ResourceStartIndex = 2
+	{{endregion}}
 
 
 
@@ -286,27 +165,7 @@ To track when the resource index is changed, you can use the ResourceStartIndexC
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceNavigationEvents}}
 	        AddHandler Me.RadScheduler1.ResourceStartIndexChanging, AddressOf radScheduler1_ResourceStartIndexChanging
 	        AddHandler Me.RadScheduler1.ResourceStartIndexChanged, AddressOf radScheduler1_ResourceStartIndexChanged
-	        '#End Region
-	
-	        '#Region resourceResizing
-	        CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).SetResourceSize(1, 2)
-	        '#End Region
-	
-	    End Sub
-	
-	    '#Region resourceNavigationHandlers
-	    Private Sub radScheduler1_ResourceStartIndexChanging(sender As Object, e As ResourceIndexChangingEventArgs)
-	        If e.NewStartIndex > 5 Then
-	            e.Cancel = True
-	        End If
-	    End Sub
-	
-	    Private Sub radScheduler1_ResourceStartIndexChanged(sender As Object, e As EventArgs)
-	        RadMessageBox.Show("Resource Index has changed")
-	    End Sub
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -341,9 +200,7 @@ To track when the resource index is changed, you can use the ResourceStartIndexC
 	    Private Sub radScheduler1_ResourceStartIndexChanged(sender As Object, e As EventArgs)
 	        RadMessageBox.Show("Resource Index has changed")
 	    End Sub
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -363,22 +220,6 @@ RadScheduler allows you to specify different size for the different resources. T
 
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceResizing}}
 	        CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).SetResourceSize(1, 2)
-	        '#End Region
-	
-	    End Sub
-	
-	    '#Region resourceNavigationHandlers
-	    Private Sub radScheduler1_ResourceStartIndexChanging(sender As Object, e As ResourceIndexChangingEventArgs)
-	        If e.NewStartIndex > 5 Then
-	            e.Cancel = True
-	        End If
-	    End Sub
-	
-	    Private Sub radScheduler1_ResourceStartIndexChanged(sender As Object, e As EventArgs)
-	        RadMessageBox.Show("Resource Index has changed")
-	    End Sub
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 ![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource001.png)

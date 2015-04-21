@@ -41,17 +41,7 @@ __Example 1__ shows how to initialize an Image object and add it to a previously
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImage.vb region=radpdfprocessing-model-image_0}}
 	        Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = New Telerik.Windows.Documents.Fixed.Model.Objects.Image()
 	        container.Content.Add(image)
-	        '	 #End Region
-	    End Sub
-	
-	    Private Sub AddImage(ByVal container As IContainerElement, ByVal imageSource As ImageSource)
-	        '	 #Region "radpdfprocessing-model-image_1"
-	        Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage()
-	        Dim imageWithSource As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage(imageSource)
-	        '	 #End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -72,10 +62,7 @@ __Example 2__ demonstrates how to use one of the factory methods of the __Conten
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImage.vb region=radpdfprocessing-model-image_1}}
 	        Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage()
 	        Dim imageWithSource As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage(imageSource)
-	        '	 #End Region
-	    End Sub
-	
-	End Class
+	{{endregion}}
 
 
 

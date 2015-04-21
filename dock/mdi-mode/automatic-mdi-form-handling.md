@@ -164,8 +164,7 @@ The __CloseAllWindows__ returns bool value which indicates if the operation is s
 	        MyBase.OnClosing(e)
 	
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 

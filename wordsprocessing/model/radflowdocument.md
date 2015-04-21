@@ -37,39 +37,7 @@ The following code snippet shows how you can create a new __RadFlowDocument__:
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_0}}
 	        Dim document As New RadFlowDocument()
-	        '#End Region
-	    End Sub
-	
-	    Private Sub AddSectionsToDocument()
-	        '#Region "radwordsprocessing-model-radflowdocument_1"
-	        Dim document As New RadFlowDocument()
-	        document.Sections.AddSection()
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-model-radflowdocument_2"
-	        Dim section As New Section(document)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub MergeDocuments(document As RadFlowDocument, sourceDocument As RadFlowDocument)
-	        '#Region "radwordsprocessing-model-radflowdocument_3"
-	        document.Merge(sourceDocument)
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-model-radflowdocument_4"
-	        Dim mergeOptions As New MergeOptions()
-	        mergeOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle
-	
-	        document.Merge(sourceDocument, mergeOptions)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UpdateFields(document As RadFlowDocument)
-	        '#Region "radwordsprocessing-model-radflowdocument_5"
-	        document.UpdateFields()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -129,32 +97,7 @@ You can create a __RadFlowDocument__ from scratch and add Sections to it as foll
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_1}}
 	        Dim document As New RadFlowDocument()
 	        document.Sections.AddSection()
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-model-radflowdocument_2"
-	        Dim section As New Section(document)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub MergeDocuments(document As RadFlowDocument, sourceDocument As RadFlowDocument)
-	        '#Region "radwordsprocessing-model-radflowdocument_3"
-	        document.Merge(sourceDocument)
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-model-radflowdocument_4"
-	        Dim mergeOptions As New MergeOptions()
-	        mergeOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle
-	
-	        document.Merge(sourceDocument, mergeOptions)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UpdateFields(document As RadFlowDocument)
-	        '#Region "radwordsprocessing-model-radflowdocument_5"
-	        document.UpdateFields()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -176,28 +119,7 @@ Alternatively, you could create a section by passing to its constructor the docu
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_2}}
 	        Dim section As New Section(document)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub MergeDocuments(document As RadFlowDocument, sourceDocument As RadFlowDocument)
-	        '#Region "radwordsprocessing-model-radflowdocument_3"
-	        document.Merge(sourceDocument)
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-model-radflowdocument_4"
-	        Dim mergeOptions As New MergeOptions()
-	        mergeOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle
-	
-	        document.Merge(sourceDocument, mergeOptions)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UpdateFields(document As RadFlowDocument)
-	        '#Region "radwordsprocessing-model-radflowdocument_5"
-	        document.UpdateFields()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -219,22 +141,7 @@ You can merge a __RadFlowDocument__ within another document by using the __Merge
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_3}}
 	        document.Merge(sourceDocument)
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-model-radflowdocument_4"
-	        Dim mergeOptions As New MergeOptions()
-	        mergeOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle
-	
-	        document.Merge(sourceDocument, mergeOptions)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UpdateFields(document As RadFlowDocument)
-	        '#Region "radwordsprocessing-model-radflowdocument_5"
-	        document.UpdateFields()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -271,15 +178,7 @@ Additionally, you have the opportunity to specify the __MergeOptions__ which con
 	        mergeOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle
 	
 	        document.Merge(sourceDocument, mergeOptions)
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UpdateFields(document As RadFlowDocument)
-	        '#Region "radwordsprocessing-model-radflowdocument_5"
-	        document.UpdateFields()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -303,9 +202,7 @@ The next snippet shows how all fields in a document can be updated simultaneousl
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_5}}
 	        document.UpdateFields()
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

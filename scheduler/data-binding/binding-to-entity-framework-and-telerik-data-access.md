@@ -50,92 +50,7 @@ Now, you need to create a form and add a RadScheduler, in this tutorial it is na
 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=DbContext}}
 	    Private dbContext As New SchedulerDataEntities1()
-	#End Region
-	
-	    Public Sub New()
-	        InitializeComponent()
-	
-	        Me.scheduler = New RadScheduler()
-	        Me.scheduler.Parent = Me
-	        Me.scheduler.Dock = DockStyle.Fill
-	
-	        '#Region "Mappings"
-	        Dim schedulerBindingSource As New SchedulerBindingDataSource()
-	        Dim appointmentMappingInfo As New AppointmentMappingInfo()
-	        Dim resourceMappingInfo As New ResourceMappingInfo()
-	        '#End Region
-	
-	        '#Region "EFCode"
-	        dbContext.Appointments.Load()
-	        dbContext.Resources.Load()
-	
-	        appointmentMappingInfo.BackgroundId = "BackgroundID"
-	        appointmentMappingInfo.Description = "Description"
-	        appointmentMappingInfo.[End] = "End"
-	        appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments"
-	        appointmentMappingInfo.Location = "Location"
-	        appointmentMappingInfo.MasterEventId = "ParentID"
-	        appointmentMappingInfo.RecurrenceRule = "RecurrenceRule"
-	        appointmentMappingInfo.ResourceId = "ID"
-	
-	        appointmentMappingInfo.Resources = "Resources"
-	
-	        appointmentMappingInfo.Start = "Start"
-	        appointmentMappingInfo.StatusId = "StatusID"
-	        appointmentMappingInfo.Summary = "Summary"
-	        appointmentMappingInfo.Visible = "Visible"
-	
-	        schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo
-	
-	        resourceMappingInfo.Id = "ID"
-	        resourceMappingInfo.Name = "ResourceName"
-	        schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo
-	
-	        schedulerBindingSource.ResourceProvider.DataSource = dbContext.Resources.Local.ToBindingList()
-	        schedulerBindingSource.EventProvider.DataSource = dbContext.Appointments.Local.ToBindingList()
-	        '#End Region
-	
-	        'TDA will never be defined, we simply want this code here without breaking anyting
-	#If TDA Then
-	        '#Region "TDACode"
-	        appointmentMappingInfo.BackgroundId = "BackgroundID"
-	        appointmentMappingInfo.Description = "Description"
-	        appointmentMappingInfo.[End] = "End"
-	        appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments"
-	        appointmentMappingInfo.Location = "Location"
-	        appointmentMappingInfo.MasterEventId = "ParentID"
-	        appointmentMappingInfo.RecurrenceRule = "RecurrenceRule"
-	        appointmentMappingInfo.ResourceId = "ResourceID"
-	        appointmentMappingInfo.Resources = "AppointmentsResources"
-	        appointmentMappingInfo.Start = "Start"
-	        appointmentMappingInfo.StatusId = "StatusID"
-	        appointmentMappingInfo.Summary = "Summary"
-	        appointmentMappingInfo.Visible = "Visible"
-	
-	        Me.schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo1
-	
-	        resourceMappingInfo.Id = "ID"
-	        resourceMappingInfo.Name = "ResourceName"
-	        schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo1
-	
-	        schedulerBindingDataSource.ResourceProvider.DataSource = entityContext.Resources.ToList()
-	        schedulerBindingDataSource.EventProvider.DataSource = entityContext.Appointments.ToList()
-	        '#End Region
-	#End If
-	
-	        '#Region "DataSourceAndGroup"
-	        Me.scheduler.DataSource = schedulerBindingSource
-	        '#End Region
-	        Me.scheduler.GroupType = GroupType.Resource
-	    End Sub
-	
-	#Region "Closing"
-	    Protected Overrides Sub OnClosing(e As CancelEventArgs)
-	        Me.dbContext.SaveChanges()
-	        MyBase.OnClosing(e)
-	    End Sub
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -158,79 +73,7 @@ Then, we will need a __SchedulerBindingDataSource__, __AppointmentMappingInfo__ 
 	        Dim schedulerBindingSource As New SchedulerBindingDataSource()
 	        Dim appointmentMappingInfo As New AppointmentMappingInfo()
 	        Dim resourceMappingInfo As New ResourceMappingInfo()
-	        '#End Region
-	
-	        '#Region "EFCode"
-	        dbContext.Appointments.Load()
-	        dbContext.Resources.Load()
-	
-	        appointmentMappingInfo.BackgroundId = "BackgroundID"
-	        appointmentMappingInfo.Description = "Description"
-	        appointmentMappingInfo.[End] = "End"
-	        appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments"
-	        appointmentMappingInfo.Location = "Location"
-	        appointmentMappingInfo.MasterEventId = "ParentID"
-	        appointmentMappingInfo.RecurrenceRule = "RecurrenceRule"
-	        appointmentMappingInfo.ResourceId = "ID"
-	
-	        appointmentMappingInfo.Resources = "Resources"
-	
-	        appointmentMappingInfo.Start = "Start"
-	        appointmentMappingInfo.StatusId = "StatusID"
-	        appointmentMappingInfo.Summary = "Summary"
-	        appointmentMappingInfo.Visible = "Visible"
-	
-	        schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo
-	
-	        resourceMappingInfo.Id = "ID"
-	        resourceMappingInfo.Name = "ResourceName"
-	        schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo
-	
-	        schedulerBindingSource.ResourceProvider.DataSource = dbContext.Resources.Local.ToBindingList()
-	        schedulerBindingSource.EventProvider.DataSource = dbContext.Appointments.Local.ToBindingList()
-	        '#End Region
-	
-	        'TDA will never be defined, we simply want this code here without breaking anyting
-	#If TDA Then
-	        '#Region "TDACode"
-	        appointmentMappingInfo.BackgroundId = "BackgroundID"
-	        appointmentMappingInfo.Description = "Description"
-	        appointmentMappingInfo.[End] = "End"
-	        appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments"
-	        appointmentMappingInfo.Location = "Location"
-	        appointmentMappingInfo.MasterEventId = "ParentID"
-	        appointmentMappingInfo.RecurrenceRule = "RecurrenceRule"
-	        appointmentMappingInfo.ResourceId = "ResourceID"
-	        appointmentMappingInfo.Resources = "AppointmentsResources"
-	        appointmentMappingInfo.Start = "Start"
-	        appointmentMappingInfo.StatusId = "StatusID"
-	        appointmentMappingInfo.Summary = "Summary"
-	        appointmentMappingInfo.Visible = "Visible"
-	
-	        Me.schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo1
-	
-	        resourceMappingInfo.Id = "ID"
-	        resourceMappingInfo.Name = "ResourceName"
-	        schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo1
-	
-	        schedulerBindingDataSource.ResourceProvider.DataSource = entityContext.Resources.ToList()
-	        schedulerBindingDataSource.EventProvider.DataSource = entityContext.Appointments.ToList()
-	        '#End Region
-	#End If
-	
-	        '#Region "DataSourceAndGroup"
-	        Me.scheduler.DataSource = schedulerBindingSource
-	        '#End Region
-	        Me.scheduler.GroupType = GroupType.Resource
-	    End Sub
-	
-	#Region "Closing"
-	    Protected Overrides Sub OnClosing(e As CancelEventArgs)
-	        Me.dbContext.SaveChanges()
-	        MyBase.OnClosing(e)
-	    End Sub
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -304,49 +147,7 @@ Below you can see the code you need to use with *Entity Framework*:
 	
 	        schedulerBindingSource.ResourceProvider.DataSource = dbContext.Resources.Local.ToBindingList()
 	        schedulerBindingSource.EventProvider.DataSource = dbContext.Appointments.Local.ToBindingList()
-	        '#End Region
-	
-	        'TDA will never be defined, we simply want this code here without breaking anyting
-	#If TDA Then
-	        '#Region "TDACode"
-	        appointmentMappingInfo.BackgroundId = "BackgroundID"
-	        appointmentMappingInfo.Description = "Description"
-	        appointmentMappingInfo.[End] = "End"
-	        appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments"
-	        appointmentMappingInfo.Location = "Location"
-	        appointmentMappingInfo.MasterEventId = "ParentID"
-	        appointmentMappingInfo.RecurrenceRule = "RecurrenceRule"
-	        appointmentMappingInfo.ResourceId = "ResourceID"
-	        appointmentMappingInfo.Resources = "AppointmentsResources"
-	        appointmentMappingInfo.Start = "Start"
-	        appointmentMappingInfo.StatusId = "StatusID"
-	        appointmentMappingInfo.Summary = "Summary"
-	        appointmentMappingInfo.Visible = "Visible"
-	
-	        Me.schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo1
-	
-	        resourceMappingInfo.Id = "ID"
-	        resourceMappingInfo.Name = "ResourceName"
-	        schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo1
-	
-	        schedulerBindingDataSource.ResourceProvider.DataSource = entityContext.Resources.ToList()
-	        schedulerBindingDataSource.EventProvider.DataSource = entityContext.Appointments.ToList()
-	        '#End Region
-	#End If
-	
-	        '#Region "DataSourceAndGroup"
-	        Me.scheduler.DataSource = schedulerBindingSource
-	        '#End Region
-	        Me.scheduler.GroupType = GroupType.Resource
-	    End Sub
-	
-	#Region "Closing"
-	    Protected Overrides Sub OnClosing(e As CancelEventArgs)
-	        Me.dbContext.SaveChanges()
-	        MyBase.OnClosing(e)
-	    End Sub
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -410,22 +211,7 @@ And the following code needs to be used with *Telerik Data Access*:
 	
 	        schedulerBindingDataSource.ResourceProvider.DataSource = entityContext.Resources.ToList()
 	        schedulerBindingDataSource.EventProvider.DataSource = entityContext.Appointments.ToList()
-	        '#End Region
-	#End If
-	
-	        '#Region "DataSourceAndGroup"
-	        Me.scheduler.DataSource = schedulerBindingSource
-	        '#End Region
-	        Me.scheduler.GroupType = GroupType.Resource
-	    End Sub
-	
-	#Region "Closing"
-	    Protected Overrides Sub OnClosing(e As CancelEventArgs)
-	        Me.dbContext.SaveChanges()
-	        MyBase.OnClosing(e)
-	    End Sub
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -445,17 +231,7 @@ The last step that you need to take in order to complete the binding process is 
 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=DataSourceAndGroup}}
 	        Me.scheduler.DataSource = schedulerBindingSource
-	        '#End Region
-	        Me.scheduler.GroupType = GroupType.Resource
-	    End Sub
-	
-	#Region "Closing"
-	    Protected Overrides Sub OnClosing(e As CancelEventArgs)
-	        Me.dbContext.SaveChanges()
-	        MyBase.OnClosing(e)
-	    End Sub
-	#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -481,7 +257,6 @@ Saving changes to the database happens when the __SaveChanges__ method of the Db
 	        Me.dbContext.SaveChanges()
 	        MyBase.OnClosing(e)
 	    End Sub
-	#End Region
-	End Class
+	{{endregion}}
 
 

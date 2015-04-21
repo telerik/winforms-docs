@@ -74,23 +74,7 @@ With __RadPivotGrid__ you are able to create different Groups that will be shown
 	        Return New DoubleAggregateValue(average)
 	    End Function
 	End Class
-	#End Region
-	
-	#Region "CA"
-	Public Class CA
-	    Inherits CalculatedItem
-	    Protected Overrides Function GetValue(aggregateSummaryValues As IAggregateSummaryValues) As AggregateValue
-	        Dim aggregateValue__1 As AggregateValue = aggregateSummaryValues.GetAggregateValue("Canada")
-	
-	        If aggregateValue__1.IsError() Then
-	            Return AggregateValue.ErrorAggregateValue
-	        End If
-	
-	        Dim value = If(aggregateValue__1.ConvertOrDefault(Of Double)() > 500, 500, 0)
-	        Return New DoubleAggregateValue(value)
-	    End Function
-	End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -122,102 +106,7 @@ As you can see the Calculated Item will show the average sales of four people. N
 	        calculatedItem.GroupName = "Average Sales (Men)"
 	        salesPersonGroupDescription.CalculatedItems.Add(calculatedItem)
 	        localProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription)
-	        '#End Region
-	
-	        localProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
-	             .PropertyName = "ExtendedPrice", _
-	             .AggregateFunction = AggregateFunctions.Sum, _
-	             .StringFormat = "N" _
-	        })
-	
-	        localProvider.ItemsSource = Invoice.GetInvoices()
-	
-	        Me.RadPivotGrid1.DataProvider = localProvider
-	        Me.RadPivotGrid1.ErrorString = "Error"
-	    End Sub
-	
-	    Private Sub AddCalcItemWithSortOrder()
-	        AddHandler localProvider.PrepareDescriptionForField, AddressOf localProvider_PrepareDescriptionForField
-	
-	        '#Region "AddCalcItemWithSortOrder"
-	        Dim salesPersonGroupDescription As New PropertyGroupDescription()
-	        salesPersonGroupDescription.PropertyName = "Salesperson"
-	
-	        Dim menAvgSalesCalculatedItem As New MenAverageSales()
-	        menAvgSalesCalculatedItem.GroupName = "Average Sales (Men)"
-	        menAvgSalesCalculatedItem.SolveOrder = 1
-	        salesPersonGroupDescription.CalculatedItems.Add(menAvgSalesCalculatedItem)
-	
-	        Dim countryGroupDescription As New PropertyGroupDescription()
-	        countryGroupDescription.PropertyName = "Country"
-	        Dim caCalculatedItem As New CA()
-	        caCalculatedItem.GroupName = "CA"
-	        caCalculatedItem.SolveOrder = 2
-	        countryGroupDescription.CalculatedItems.Add(caCalculatedItem)
-	
-	
-	        localProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription)
-	        localProvider.RowGroupDescriptions.Add(countryGroupDescription)
-	        '#End Region
-	
-	        localProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
-	            .PropertyName = "ExtendedPrice", _
-	            .AggregateFunction = AggregateFunctions.Sum, _
-	            .StringFormat = "N" _
-	        })
-	
-	        localProvider.ItemsSource = Invoice.GetInvoices()
-	
-	        Me.RadPivotGrid1.DataProvider = localProvider
-	        Me.RadPivotGrid1.ErrorString = "Error"
-	    End Sub
-	
-	#Region "localProvider_PrepareDescriptionForField"
-	    Private Sub localProvider_PrepareDescriptionForField(sender As Object, e As PrepareDescriptionForFieldEventArgs)
-	        If e.DescriptionType = DataProviderDescriptionType.Group AndAlso e.FieldInfo.DisplayName = "Salesperson" Then
-	            Dim description = TryCast(e.Description, Telerik.Pivot.Core.PropertyGroupDescription)
-	
-	            If description IsNot Nothing Then
-	                Dim calculatedItem = New MenAverageSales()
-	                calculatedItem.GroupName = "Average Sales (Men)"
-	                description.CalculatedItems.Add(calculatedItem)
-	            End If
-	        End If
-	    End Sub
-	#End Region
-	End Class
-	
-	#Region "CalculatedItemClasses"
-	Public Class MenAverageSales
-	    Inherits CalculatedItem
-	    Protected Overrides Function GetValue(aggregateSummaryValues As IAggregateSummaryValues) As AggregateValue
-	        Dim aggregateValues As AggregateValue() = {aggregateSummaryValues.GetAggregateValue("Andrew Fuller"), aggregateSummaryValues.GetAggregateValue("Michael Suyama"), aggregateSummaryValues.GetAggregateValue("Robert King"), aggregateSummaryValues.GetAggregateValue("Steven Buchanan")}
-	
-	        If aggregateValues.ContainsError() Then
-	            Return AggregateValue.ErrorAggregateValue
-	        End If
-	
-	        Dim average As Double = aggregateValues.Average(Function(av) av.ConvertOrDefault(Of Double)())
-	        Return New DoubleAggregateValue(average)
-	    End Function
-	End Class
-	#End Region
-	
-	#Region "CA"
-	Public Class CA
-	    Inherits CalculatedItem
-	    Protected Overrides Function GetValue(aggregateSummaryValues As IAggregateSummaryValues) As AggregateValue
-	        Dim aggregateValue__1 As AggregateValue = aggregateSummaryValues.GetAggregateValue("Canada")
-	
-	        If aggregateValue__1.IsError() Then
-	            Return AggregateValue.ErrorAggregateValue
-	        End If
-	
-	        Dim value = If(aggregateValue__1.ConvertOrDefault(Of Double)() > 500, 500, 0)
-	        Return New DoubleAggregateValue(value)
-	    End Function
-	End Class
-	#End Region
+	{{endregion}}
 
 ![pivotgrid-calculated-items 001](images/pivotgrid-calculated-items001.png)
 
@@ -264,40 +153,7 @@ Calculated items can be added only to Group Descriptions. If you are using __Rad
 	            End If
 	        End If
 	    End Sub
-	#End Region
-	End Class
-	
-	#Region "CalculatedItemClasses"
-	Public Class MenAverageSales
-	    Inherits CalculatedItem
-	    Protected Overrides Function GetValue(aggregateSummaryValues As IAggregateSummaryValues) As AggregateValue
-	        Dim aggregateValues As AggregateValue() = {aggregateSummaryValues.GetAggregateValue("Andrew Fuller"), aggregateSummaryValues.GetAggregateValue("Michael Suyama"), aggregateSummaryValues.GetAggregateValue("Robert King"), aggregateSummaryValues.GetAggregateValue("Steven Buchanan")}
-	
-	        If aggregateValues.ContainsError() Then
-	            Return AggregateValue.ErrorAggregateValue
-	        End If
-	
-	        Dim average As Double = aggregateValues.Average(Function(av) av.ConvertOrDefault(Of Double)())
-	        Return New DoubleAggregateValue(average)
-	    End Function
-	End Class
-	#End Region
-	
-	#Region "CA"
-	Public Class CA
-	    Inherits CalculatedItem
-	    Protected Overrides Function GetValue(aggregateSummaryValues As IAggregateSummaryValues) As AggregateValue
-	        Dim aggregateValue__1 As AggregateValue = aggregateSummaryValues.GetAggregateValue("Canada")
-	
-	        If aggregateValue__1.IsError() Then
-	            Return AggregateValue.ErrorAggregateValue
-	        End If
-	
-	        Dim value = If(aggregateValue__1.ConvertOrDefault(Of Double)() > 500, 500, 0)
-	        Return New DoubleAggregateValue(value)
-	    End Function
-	End Class
-	#End Region
+	{{endregion}}
 
 
 
@@ -353,66 +209,7 @@ If you have calculated items in both rows and columns group descriptions, you ha
 	
 	        localProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription)
 	        localProvider.RowGroupDescriptions.Add(countryGroupDescription)
-	        '#End Region
-	
-	        localProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
-	            .PropertyName = "ExtendedPrice", _
-	            .AggregateFunction = AggregateFunctions.Sum, _
-	            .StringFormat = "N" _
-	        })
-	
-	        localProvider.ItemsSource = Invoice.GetInvoices()
-	
-	        Me.RadPivotGrid1.DataProvider = localProvider
-	        Me.RadPivotGrid1.ErrorString = "Error"
-	    End Sub
-	
-	#Region "localProvider_PrepareDescriptionForField"
-	    Private Sub localProvider_PrepareDescriptionForField(sender As Object, e As PrepareDescriptionForFieldEventArgs)
-	        If e.DescriptionType = DataProviderDescriptionType.Group AndAlso e.FieldInfo.DisplayName = "Salesperson" Then
-	            Dim description = TryCast(e.Description, Telerik.Pivot.Core.PropertyGroupDescription)
-	
-	            If description IsNot Nothing Then
-	                Dim calculatedItem = New MenAverageSales()
-	                calculatedItem.GroupName = "Average Sales (Men)"
-	                description.CalculatedItems.Add(calculatedItem)
-	            End If
-	        End If
-	    End Sub
-	#End Region
-	End Class
-	
-	#Region "CalculatedItemClasses"
-	Public Class MenAverageSales
-	    Inherits CalculatedItem
-	    Protected Overrides Function GetValue(aggregateSummaryValues As IAggregateSummaryValues) As AggregateValue
-	        Dim aggregateValues As AggregateValue() = {aggregateSummaryValues.GetAggregateValue("Andrew Fuller"), aggregateSummaryValues.GetAggregateValue("Michael Suyama"), aggregateSummaryValues.GetAggregateValue("Robert King"), aggregateSummaryValues.GetAggregateValue("Steven Buchanan")}
-	
-	        If aggregateValues.ContainsError() Then
-	            Return AggregateValue.ErrorAggregateValue
-	        End If
-	
-	        Dim average As Double = aggregateValues.Average(Function(av) av.ConvertOrDefault(Of Double)())
-	        Return New DoubleAggregateValue(average)
-	    End Function
-	End Class
-	#End Region
-	
-	#Region "CA"
-	Public Class CA
-	    Inherits CalculatedItem
-	    Protected Overrides Function GetValue(aggregateSummaryValues As IAggregateSummaryValues) As AggregateValue
-	        Dim aggregateValue__1 As AggregateValue = aggregateSummaryValues.GetAggregateValue("Canada")
-	
-	        If aggregateValue__1.IsError() Then
-	            Return AggregateValue.ErrorAggregateValue
-	        End If
-	
-	        Dim value = If(aggregateValue__1.ConvertOrDefault(Of Double)() > 500, 500, 0)
-	        Return New DoubleAggregateValue(value)
-	    End Function
-	End Class
-	#End Region
+	{{endregion}}
 
 
 

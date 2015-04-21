@@ -14,8 +14,7 @@ position: 14
 
 ## 
 
-The __Hlc__ series is a simple variant of the __Ohlc__ which was discussed in the previous topic. Its data points
-          contain information about the following parameters: * high, low* and *close*.
+The __Hlc series__ is a simple variant of the [Ohlc series]({%slug chartview-series-types-ohlc-and-candlestick%}) which was discussed in the previous topic. Its data points contain information about the following parameters: * high, low* and *close*.
       
 
 Here is how to read the values of an __Hlc__ point:

@@ -65,18 +65,7 @@ Here is how to create a [RadFlowDocument]({%slug wordsprocessing-model-radflowdo
 	            Dim document As New RadFlowDocument()
 	            Dim editor As New RadFlowDocumentEditor(document)
 	            editor.InsertText("Hello world!")
-	            '#End Region
-	        End Sub
-	
-	        Private Sub ExportToDocx(document As RadFlowDocument)
-	            '#Region "radwordsprocessing-getting-started_1"
-	            Using output As Stream = New FileStream("output.docx", FileMode.OpenOrCreate)
-	                Dim provider As New DocxFormatProvider()
-	                provider.Export(document, output)
-	            End Using
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -114,9 +103,7 @@ Exporting the document to Docx file can be achieved with the [DocxFormatProvider
 	                Dim provider As New DocxFormatProvider()
 	                provider.Export(document, output)
 	            End Using
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 

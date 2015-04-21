@@ -64,27 +64,7 @@ Here is an example of how to add an __InlineImage__ element in the code behind.
 	        section.Children.Add(paragraph)
 	        Me.radRichTextEditor1.Document.Sections.Add(section)
 	
-	        '#End Region
-	    End Sub
-	
-	    '#Region "insert"
-	
-	    Private Sub ImageButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	        Dim openDialog As New OpenFileDialog()
-	        openDialog.Filter = "Images|*.jpg;*.png"
-	        openDialog.Multiselect = False
-	
-	        Dim myDialogResult As DialogResult = openDialog.ShowDialog()
-	        If myDialogResult = System.Windows.Forms.DialogResult.Yes Then
-	            Dim stream As Stream = openDialog.OpenFile()
-	
-	            Dim extension As String = Path.GetExtension(openDialog.FileName)
-	            Me.radRichTextEditor1.InsertImage(stream, extension)
-	        End If
-	    End Sub
-	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -138,8 +118,7 @@ Here is an example of how to allow the user to select an image and add it to the
 	        End If
 	    End Sub
 	
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 

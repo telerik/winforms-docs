@@ -145,74 +145,7 @@ __Example 1__ shows how to create a __ValuesCollectionFilter__.
 	        Dim stringItems As IEnumerable(Of String) = New List(Of String)() From {"test", "1%", "1.0"}
 	        Dim dateItems As IEnumerable(Of DateGroupItem) = New List(Of DateGroupItem)() From { New DateGroupItem(2013), New DateGroupItem(2014, 3)}
 	        Dim filter As New ValuesCollectionFilter(0, stringItems, dateItems, True)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateCustomFilter()
-	        '#Region "radspreadprocessing-features-filtering_1"
-	        Dim critera1 As New CustomFilterCriteria(ComparisonOperator.EqualsTo, "Test string")
-	        Dim critera2 As New CustomFilterCriteria(ComparisonOperator.GreaterThan, "-5")
-	        Dim filter As New CustomFilter(0, critera1, LogicalOperator.[Or], critera2)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateTopFilter()
-	        '#Region "radspreadprocessing-features-filtering_2"
-	        Dim filter As New TopFilter(0, TopFilterType.BottomPercent, 30)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateDynamicFilter()
-	        '#Region "radspreadprocessing-features-filtering_3"
-	        Dim filter As New DynamicFilter(0, DynamicFilterType.LastWeek)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateForeColorFilter()
-	        '#Region "radspreadprocessing-features-filtering_4"
-	        Dim color As New ThemableColor(Colors.Red)
-	        Dim filter As New ForeColorFilter(0, color)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateFillColorFilter()
-	        '#Region "radspreadprocessing-features-filtering_5"
-	        Dim fill As IFill = New PatternFill(PatternType.Solid, Colors.Red, Colors.Red)
-	        Dim filter As New FillColorFilter(0, fill)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub SetFilter(workbook As Workbook)
-	        '#Region "radspreadprocessing-features-filtering_6"
-	        Dim worksheet As Worksheet = workbook.ActiveWorksheet
-	
-	        Dim filterRange As New CellRange(0, 1, 5, 2)
-	        worksheet.Filter.FilterRange = filterRange
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_7"
-	        Dim filter As New DynamicFilter(1, DynamicFilterType.AboveAverage)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_8"
-	        worksheet.Filter.SetFilter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_9"
-	        worksheet.Cells(filterRange).Filter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_10"
-	        worksheet.Filter.ReapplyFilter(1)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveFilter(worksheet As Worksheet)
-	        '#Region "radspreadprocessing-features-filtering_11"
-	        Dim success As Boolean = worksheet.Filter.RemoveFilter(1)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -282,66 +215,7 @@ __Example 2__ shows how to create a custom filter.
 	        Dim critera1 As New CustomFilterCriteria(ComparisonOperator.EqualsTo, "Test string")
 	        Dim critera2 As New CustomFilterCriteria(ComparisonOperator.GreaterThan, "-5")
 	        Dim filter As New CustomFilter(0, critera1, LogicalOperator.[Or], critera2)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateTopFilter()
-	        '#Region "radspreadprocessing-features-filtering_2"
-	        Dim filter As New TopFilter(0, TopFilterType.BottomPercent, 30)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateDynamicFilter()
-	        '#Region "radspreadprocessing-features-filtering_3"
-	        Dim filter As New DynamicFilter(0, DynamicFilterType.LastWeek)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateForeColorFilter()
-	        '#Region "radspreadprocessing-features-filtering_4"
-	        Dim color As New ThemableColor(Colors.Red)
-	        Dim filter As New ForeColorFilter(0, color)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateFillColorFilter()
-	        '#Region "radspreadprocessing-features-filtering_5"
-	        Dim fill As IFill = New PatternFill(PatternType.Solid, Colors.Red, Colors.Red)
-	        Dim filter As New FillColorFilter(0, fill)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub SetFilter(workbook As Workbook)
-	        '#Region "radspreadprocessing-features-filtering_6"
-	        Dim worksheet As Worksheet = workbook.ActiveWorksheet
-	
-	        Dim filterRange As New CellRange(0, 1, 5, 2)
-	        worksheet.Filter.FilterRange = filterRange
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_7"
-	        Dim filter As New DynamicFilter(1, DynamicFilterType.AboveAverage)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_8"
-	        worksheet.Filter.SetFilter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_9"
-	        worksheet.Cells(filterRange).Filter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_10"
-	        worksheet.Filter.ReapplyFilter(1)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveFilter(worksheet As Worksheet)
-	        '#Region "radspreadprocessing-features-filtering_11"
-	        Dim success As Boolean = worksheet.Filter.RemoveFilter(1)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -389,60 +263,7 @@ __Example 3__ shows how to create a top filter.
 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_2}}
 	        Dim filter As New TopFilter(0, TopFilterType.BottomPercent, 30)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateDynamicFilter()
-	        '#Region "radspreadprocessing-features-filtering_3"
-	        Dim filter As New DynamicFilter(0, DynamicFilterType.LastWeek)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateForeColorFilter()
-	        '#Region "radspreadprocessing-features-filtering_4"
-	        Dim color As New ThemableColor(Colors.Red)
-	        Dim filter As New ForeColorFilter(0, color)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateFillColorFilter()
-	        '#Region "radspreadprocessing-features-filtering_5"
-	        Dim fill As IFill = New PatternFill(PatternType.Solid, Colors.Red, Colors.Red)
-	        Dim filter As New FillColorFilter(0, fill)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub SetFilter(workbook As Workbook)
-	        '#Region "radspreadprocessing-features-filtering_6"
-	        Dim worksheet As Worksheet = workbook.ActiveWorksheet
-	
-	        Dim filterRange As New CellRange(0, 1, 5, 2)
-	        worksheet.Filter.FilterRange = filterRange
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_7"
-	        Dim filter As New DynamicFilter(1, DynamicFilterType.AboveAverage)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_8"
-	        worksheet.Filter.SetFilter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_9"
-	        worksheet.Cells(filterRange).Filter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_10"
-	        worksheet.Filter.ReapplyFilter(1)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveFilter(worksheet As Worksheet)
-	        '#Region "radspreadprocessing-features-filtering_11"
-	        Dim success As Boolean = worksheet.Filter.RemoveFilter(1)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -477,54 +298,7 @@ __Example 4__ demonstrates how to create a dynamic filter.
 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_3}}
 	        Dim filter As New DynamicFilter(0, DynamicFilterType.LastWeek)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateForeColorFilter()
-	        '#Region "radspreadprocessing-features-filtering_4"
-	        Dim color As New ThemableColor(Colors.Red)
-	        Dim filter As New ForeColorFilter(0, color)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateFillColorFilter()
-	        '#Region "radspreadprocessing-features-filtering_5"
-	        Dim fill As IFill = New PatternFill(PatternType.Solid, Colors.Red, Colors.Red)
-	        Dim filter As New FillColorFilter(0, fill)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub SetFilter(workbook As Workbook)
-	        '#Region "radspreadprocessing-features-filtering_6"
-	        Dim worksheet As Worksheet = workbook.ActiveWorksheet
-	
-	        Dim filterRange As New CellRange(0, 1, 5, 2)
-	        worksheet.Filter.FilterRange = filterRange
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_7"
-	        Dim filter As New DynamicFilter(1, DynamicFilterType.AboveAverage)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_8"
-	        worksheet.Filter.SetFilter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_9"
-	        worksheet.Cells(filterRange).Filter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_10"
-	        worksheet.Filter.ReapplyFilter(1)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveFilter(worksheet As Worksheet)
-	        '#Region "radspreadprocessing-features-filtering_11"
-	        Dim success As Boolean = worksheet.Filter.RemoveFilter(1)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -559,47 +333,7 @@ __Example 5__ demonstrates how to create a fore color filter.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_4}}
 	        Dim color As New ThemableColor(Colors.Red)
 	        Dim filter As New ForeColorFilter(0, color)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub CreateFillColorFilter()
-	        '#Region "radspreadprocessing-features-filtering_5"
-	        Dim fill As IFill = New PatternFill(PatternType.Solid, Colors.Red, Colors.Red)
-	        Dim filter As New FillColorFilter(0, fill)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub SetFilter(workbook As Workbook)
-	        '#Region "radspreadprocessing-features-filtering_6"
-	        Dim worksheet As Worksheet = workbook.ActiveWorksheet
-	
-	        Dim filterRange As New CellRange(0, 1, 5, 2)
-	        worksheet.Filter.FilterRange = filterRange
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_7"
-	        Dim filter As New DynamicFilter(1, DynamicFilterType.AboveAverage)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_8"
-	        worksheet.Filter.SetFilter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_9"
-	        worksheet.Cells(filterRange).Filter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_10"
-	        worksheet.Filter.ReapplyFilter(1)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveFilter(worksheet As Worksheet)
-	        '#Region "radspreadprocessing-features-filtering_11"
-	        Dim success As Boolean = worksheet.Filter.RemoveFilter(1)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -634,40 +368,7 @@ __Example 6__ shows hot to create a fill color filter.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_5}}
 	        Dim fill As IFill = New PatternFill(PatternType.Solid, Colors.Red, Colors.Red)
 	        Dim filter As New FillColorFilter(0, fill)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub SetFilter(workbook As Workbook)
-	        '#Region "radspreadprocessing-features-filtering_6"
-	        Dim worksheet As Worksheet = workbook.ActiveWorksheet
-	
-	        Dim filterRange As New CellRange(0, 1, 5, 2)
-	        worksheet.Filter.FilterRange = filterRange
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_7"
-	        Dim filter As New DynamicFilter(1, DynamicFilterType.AboveAverage)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_8"
-	        worksheet.Filter.SetFilter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_9"
-	        worksheet.Cells(filterRange).Filter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_10"
-	        worksheet.Filter.ReapplyFilter(1)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveFilter(worksheet As Worksheet)
-	        '#Region "radspreadprocessing-features-filtering_11"
-	        Dim success As Boolean = worksheet.Filter.RemoveFilter(1)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -700,31 +401,7 @@ In order to set a filter on a range, you need to follow the steps below:
 	
 	        Dim filterRange As New CellRange(0, 1, 5, 2)
 	        worksheet.Filter.FilterRange = filterRange
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_7"
-	        Dim filter As New DynamicFilter(1, DynamicFilterType.AboveAverage)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_8"
-	        worksheet.Filter.SetFilter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_9"
-	        worksheet.Cells(filterRange).Filter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_10"
-	        worksheet.Filter.ReapplyFilter(1)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveFilter(worksheet As Worksheet)
-	        '#Region "radspreadprocessing-features-filtering_11"
-	        Dim success As Boolean = worksheet.Filter.RemoveFilter(1)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -743,27 +420,7 @@ In order to set a filter on a range, you need to follow the steps below:
 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_7}}
 	        Dim filter As New DynamicFilter(1, DynamicFilterType.AboveAverage)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_8"
-	        worksheet.Filter.SetFilter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_9"
-	        worksheet.Cells(filterRange).Filter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_10"
-	        worksheet.Filter.ReapplyFilter(1)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveFilter(worksheet As Worksheet)
-	        '#Region "radspreadprocessing-features-filtering_11"
-	        Dim success As Boolean = worksheet.Filter.RemoveFilter(1)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 The relative index specified in the constructor is 1, which means that the filter will be set on the second column of the range, that is, column C.
             
@@ -783,23 +440,7 @@ The relative index specified in the constructor is 1, which means that the filte
 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_8}}
 	        worksheet.Filter.SetFilter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_9"
-	        worksheet.Cells(filterRange).Filter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_10"
-	        worksheet.Filter.ReapplyFilter(1)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveFilter(worksheet As Worksheet)
-	        '#Region "radspreadprocessing-features-filtering_11"
-	        Dim success As Boolean = worksheet.Filter.RemoveFilter(1)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -818,19 +459,7 @@ Alternatively, you can set the filter through the cell selection like in __Examp
 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_9}}
 	        worksheet.Cells(filterRange).Filter(filter)
-	        '#End Region
-	
-	        '#Region "radspreadprocessing-features-filtering_10"
-	        worksheet.Filter.ReapplyFilter(1)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveFilter(worksheet As Worksheet)
-	        '#Region "radspreadprocessing-features-filtering_11"
-	        Dim success As Boolean = worksheet.Filter.RemoveFilter(1)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -857,15 +486,7 @@ When a filter is set it is automatically applied. The application of a filter ha
 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_10}}
 	        worksheet.Filter.ReapplyFilter(1)
-	        '#End Region
-	    End Sub
-	
-	    Public Sub RemoveFilter(worksheet As Worksheet)
-	        '#Region "radspreadprocessing-features-filtering_11"
-	        Dim success As Boolean = worksheet.Filter.RemoveFilter(1)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -901,9 +522,7 @@ As is the case with the __ReapplyFilter()__ method, you can remove a filter by i
 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_11}}
 	        Dim success As Boolean = worksheet.Filter.RemoveFilter(1)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

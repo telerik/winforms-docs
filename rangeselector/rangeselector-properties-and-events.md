@@ -40,47 +40,7 @@ Here are the most important properties for changing the control appearance and b
 	            Me.radRangeSelector1.StartRange = 20
 	            Me.radRangeSelector1.EndRange = 50
 	
-	            '#End Region
-	
-	
-	            '#Region "StartZoomEndZoom"
-	
-	            Me.radRangeSelector1.RangeSelectorViewZoomStart = 20
-	            Me.radRangeSelector1.RangeSelectorViewZoomEnd = 50
-	
-	            '#End Region
-	
-	            '#Region "hideButtons"
-	
-	            Me.radRangeSelector1.ShowButtons = False
-	
-	            '#End Region
-	
-	            '#Region "set associatedElement"
-	
-	            Me.radRangeSelector1.RangeSelectorElement.AssociatedElement = New RangeSelectorViewElement(New RadChartElement())
-	
-	            '#End Region
-	        End Sub
-	
-	#Region "ScaleInitializing"
-	
-	        Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
-	            Dim scaleElement As RangeSelectorChartScaleContainerElement = TryCast(e.ScaleElement, RangeSelectorChartScaleContainerElement)
-	            If scaleElement Is Nothing Then
-	                Return
-	            End If
-	
-	            If scaleElement.Title = "axe1" Then
-	                e.Cancel = True
-	            Else
-	                scaleElement.ScalePostion = ViewPosition.TopLeft
-	            End If
-	        End Sub
-	
-	#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -107,39 +67,7 @@ Here are the most important properties for changing the control appearance and b
 	            Me.radRangeSelector1.RangeSelectorViewZoomStart = 20
 	            Me.radRangeSelector1.RangeSelectorViewZoomEnd = 50
 	
-	            '#End Region
-	
-	            '#Region "hideButtons"
-	
-	            Me.radRangeSelector1.ShowButtons = False
-	
-	            '#End Region
-	
-	            '#Region "set associatedElement"
-	
-	            Me.radRangeSelector1.RangeSelectorElement.AssociatedElement = New RangeSelectorViewElement(New RadChartElement())
-	
-	            '#End Region
-	        End Sub
-	
-	#Region "ScaleInitializing"
-	
-	        Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
-	            Dim scaleElement As RangeSelectorChartScaleContainerElement = TryCast(e.ScaleElement, RangeSelectorChartScaleContainerElement)
-	            If scaleElement Is Nothing Then
-	                Return
-	            End If
-	
-	            If scaleElement.Title = "axe1" Then
-	                e.Cancel = True
-	            Else
-	                scaleElement.ScalePostion = ViewPosition.TopLeft
-	            End If
-	        End Sub
-	
-	#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -162,33 +90,7 @@ Here are the most important properties for changing the control appearance and b
 	
 	            Me.radRangeSelector1.ShowButtons = False
 	
-	            '#End Region
-	
-	            '#Region "set associatedElement"
-	
-	            Me.radRangeSelector1.RangeSelectorElement.AssociatedElement = New RangeSelectorViewElement(New RadChartElement())
-	
-	            '#End Region
-	        End Sub
-	
-	#Region "ScaleInitializing"
-	
-	        Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
-	            Dim scaleElement As RangeSelectorChartScaleContainerElement = TryCast(e.ScaleElement, RangeSelectorChartScaleContainerElement)
-	            If scaleElement Is Nothing Then
-	                Return
-	            End If
-	
-	            If scaleElement.Title = "axe1" Then
-	                e.Cancel = True
-	            Else
-	                scaleElement.ScalePostion = ViewPosition.TopLeft
-	            End If
-	        End Sub
-	
-	#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -236,27 +138,7 @@ Here are the most important properties for changing the control appearance and b
 	
 	            Me.radRangeSelector1.RangeSelectorElement.AssociatedElement = New RangeSelectorViewElement(New RadChartElement())
 	
-	            '#End Region
-	        End Sub
-	
-	#Region "ScaleInitializing"
-	
-	        Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
-	            Dim scaleElement As RangeSelectorChartScaleContainerElement = TryCast(e.ScaleElement, RangeSelectorChartScaleContainerElement)
-	            If scaleElement Is Nothing Then
-	                Return
-	            End If
-	
-	            If scaleElement.Title = "axe1" Then
-	                e.Cancel = True
-	            Else
-	                scaleElement.ScalePostion = ViewPosition.TopLeft
-	            End If
-	        End Sub
-	
-	#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 
 
@@ -331,8 +213,6 @@ There are several events that you will find useful in the context of RadRangeSel
 	            End If
 	        End Sub
 	
-	#End Region
-	    End Class
-	End Namespace
+	{{endregion}}
 
 

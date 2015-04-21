@@ -78,8 +78,7 @@ __Modifying sorting behavior__
 	            End If
 	        End If
 	    End Sub
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 

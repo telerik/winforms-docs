@@ -57,16 +57,7 @@ The __Spans__can be used only in the context of the [Paragraph](4A8EFD5F-9604-49
 	        section.Blocks.Add(paragraph)
 	        Me.radRichTextEditor1.Document.Sections.Add(section)
 	
-	        '#End Region
-	
-	        '#Region "span2"
-	
-	        Dim span1 As New Span()
-	        span1.Text = "Thank you for choosing Telerik RadRichTextBox!"
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -101,16 +92,7 @@ To specify the text in the __Span__ you can use its __Text__ property.
 	        section.Blocks.Add(paragraph)
 	        Me.radRichTextEditor1.Document.Sections.Add(section)
 	
-	        '#End Region
-	
-	        '#Region "span2"
-	
-	        Dim span1 As New Span()
-	        span1.Text = "Thank you for choosing Telerik RadRichTextBox!"
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -42,21 +42,7 @@ __RadRichTextEditor's__ API exposes a method and a command for each of the three
 	        Me.radRichTextEditor1.Cut()
 	        Me.radRichTextEditor1.Paste()
 	
-	        '#End Region
-	
-	        '#Region "ex"
-	
-	        ClipboardEx.ClipboardHandlers.Clear()
-	
-	        Dim clipboardHandler As New ClipboardHandler()
-	        clipboardHandler.ClipboardDataFormat = DataFormats.Text
-	        clipboardHandler.DocumentFormatProvider = New TxtFormatProvider()
-	
-	        ClipboardEx.ClipboardHandlers.Add(clipboardHandler)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -116,9 +102,7 @@ For instance, here is how you can clear the default clipboard handlers and add o
 	
 	        ClipboardEx.ClipboardHandlers.Add(clipboardHandler)
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

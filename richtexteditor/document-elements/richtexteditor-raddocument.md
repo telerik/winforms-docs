@@ -115,21 +115,7 @@ For example, you can build a RadDocument from scratch and add Sections to it in 
 	        Dim section As New Section()
 	        Me.radRichTextEditor1.Document.Sections.Add(section)
 	
-	        '#End Region
-	
-	        '#Region "break"
-	
-	        Me.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage)
-	
-	        '#End Region
-	
-	        '#Region "position"
-	
-	        Me.radRichTextEditor1.Document.InsertSectionBreak(Me.radRichTextEditor1.Document.CaretPosition, Me.radRichTextEditor1.CurrentEditingStyle, SectionBreakType.NextPage)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -151,15 +137,7 @@ Splitting an already measured document into two sections at the current caret po
 	
 	        Me.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage)
 	
-	        '#End Region
-	
-	        '#Region "position"
-	
-	        Me.radRichTextEditor1.Document.InsertSectionBreak(Me.radRichTextEditor1.Document.CaretPosition, Me.radRichTextEditor1.CurrentEditingStyle, SectionBreakType.NextPage)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

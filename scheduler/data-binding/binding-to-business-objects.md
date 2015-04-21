@@ -362,98 +362,6 @@ To use your custom object, create CustomAppointment instances and place them in 
 	        ' assign the generic List of CustomAppointment as the EventProvider data source
 	        dataSource.EventProvider.DataSource = appointments
 	        Me.radScheduler1.DataSource = dataSource
-	        '#End Region
-	
-	        '#Region "bind the resource provider"
-	        Dim resources As New BindingList(Of CustomResource)()
-	        For i As Integer = 0 To 4
-	            Dim resource As New CustomResource()
-	            resource.Id = i
-	            resource.Name = "Resource " & i
-	            resources.Add(resource)
-	        Next
-	
-	        Dim resourceMappingInfo As New ResourceMappingInfo()
-	        resourceMappingInfo.Name = "Name"
-	        resourceMappingInfo.Id = "Id"
-	        dataSource.ResourceProvider.Mapping = resourceMappingInfo
-	        dataSource.ResourceProvider.DataSource = resources
-	        '#End Region
-	    End Sub
-	
-	    Private Sub OneToManyBindingMethod()
-	        ' create a list of CustomAppointment objects
-	        Dim appointments As New BindingList(Of CustomAppointment)()
-	        For i As Integer = 0 To 9
-	            ' add every other appointment, populate with sample data
-	            If (i Mod 2) = 0 Then
-	                Dim appointmentNumber As Integer = i + 1
-	                '#Region "OneToMany2"
-	                Dim myAppointment As New CustomAppointment(DateTime.Now.AddHours(appointmentNumber), DateTime.Now.AddHours(appointmentNumber + 2), "Appointment " + appointmentNumber.ToString(), "Description for Appointment " + appointmentNumber.ToString(), "Conference room " + appointmentNumber.ToString())
-	                appointments.Add(myAppointment)
-	                'set the resource id
-	                '#End Region
-	                myAppointment.ResourceId = New EventId(i Mod 2)
-	            End If
-	        Next
-	        ' create and configure a scheduler binding source
-	        Dim dataSource As New SchedulerBindingDataSource()
-	        ' map the MyAppointment properties to the scheduler
-	        Dim appointmentMappingInfo As New AppointmentMappingInfo()
-	        appointmentMappingInfo.Start = "Start"
-	        appointmentMappingInfo.[End] = "End"
-	        appointmentMappingInfo.Summary = "Subject"
-	        appointmentMappingInfo.Description = "Description"
-	        appointmentMappingInfo.Location = "Location"
-	        appointmentMappingInfo.UniqueId = "Id"
-	        appointmentMappingInfo.Exceptions = "Exceptions"
-	        '#Region "OneToMany1"
-	        appointmentMappingInfo.ResourceId = "ResourceId"
-	        '#End Region
-	        dataSource.EventProvider.Mapping = appointmentMappingInfo
-	        ' assign the generic List of CustomAppointment as the EventProvider data source
-	        dataSource.EventProvider.DataSource = appointments
-	        Me.radScheduler1.DataSource = dataSource
-	
-	        Dim resources As New BindingList(Of CustomResource)()
-	        For i As Integer = 0 To 4
-	            Dim resource As New CustomResource()
-	            resource.Id = i
-	            resource.Name = "Resource " & i
-	            resources.Add(resource)
-	        Next
-	
-	        Dim resourceMappingInfo As New ResourceMappingInfo()
-	        resourceMappingInfo.Name = "Name"
-	        resourceMappingInfo.Id = "Id"
-	        dataSource.ResourceProvider.Mapping = resourceMappingInfo
-	        dataSource.ResourceProvider.DataSource = resources
-	
-	        '#Region "OneToMany3"
-	        Me.radScheduler1.GroupType = GroupType.Resource
-	        '#End Region
-	    End Sub
-	
-	
-	    Private Sub ManyToManyBindingMethod()
-	        Dim resources As New BindingList(Of CustomResource)()
-	        For i As Integer = 0 To 4
-	            Dim resource As New CustomResource()
-	            resource.Id = i
-	            resource.Name = "Resource " & i
-	            resources.Add(resource)
-	        Next
-	
-	        ' create a list of CustomAppointment objects
-	        Dim appointments As New BindingList(Of CustomAppointment)()
-	        For i As Integer = 0 To 9
-	            ' add every other appointment, populate with sample data
-	            If (i Mod 2) = 0 Then
-	                Dim appointmentNumber As Integer = i + 1
-	                Dim myAppointment As New CustomAppointment(DateTime.Now.AddHours(appointmentNumber), DateTime.Now.AddHours(appointmentNumber + 2), "Appointment " + appointmentNumber.ToString(), "Description for Appointment " + appointmentNumber.ToString(), "Conference room " + appointmentNumber.ToString())
-	                appointments.Add(myAppointment)
-	                '#region ManyToMany2
-	                myAppointment.Resources.Add(New EventId(resources(i Mod 3).Id))
 	{{endregion}}
 
 
@@ -599,82 +507,6 @@ Now we need to bind the __ResourceProvider__ of __SchedulerBindingDataSource__ t
 	        resourceMappingInfo.Id = "Id"
 	        dataSource.ResourceProvider.Mapping = resourceMappingInfo
 	        dataSource.ResourceProvider.DataSource = resources
-	        '#End Region
-	    End Sub
-	
-	    Private Sub OneToManyBindingMethod()
-	        ' create a list of CustomAppointment objects
-	        Dim appointments As New BindingList(Of CustomAppointment)()
-	        For i As Integer = 0 To 9
-	            ' add every other appointment, populate with sample data
-	            If (i Mod 2) = 0 Then
-	                Dim appointmentNumber As Integer = i + 1
-	                '#Region "OneToMany2"
-	                Dim myAppointment As New CustomAppointment(DateTime.Now.AddHours(appointmentNumber), DateTime.Now.AddHours(appointmentNumber + 2), "Appointment " + appointmentNumber.ToString(), "Description for Appointment " + appointmentNumber.ToString(), "Conference room " + appointmentNumber.ToString())
-	                appointments.Add(myAppointment)
-	                'set the resource id
-	                '#End Region
-	                myAppointment.ResourceId = New EventId(i Mod 2)
-	            End If
-	        Next
-	        ' create and configure a scheduler binding source
-	        Dim dataSource As New SchedulerBindingDataSource()
-	        ' map the MyAppointment properties to the scheduler
-	        Dim appointmentMappingInfo As New AppointmentMappingInfo()
-	        appointmentMappingInfo.Start = "Start"
-	        appointmentMappingInfo.[End] = "End"
-	        appointmentMappingInfo.Summary = "Subject"
-	        appointmentMappingInfo.Description = "Description"
-	        appointmentMappingInfo.Location = "Location"
-	        appointmentMappingInfo.UniqueId = "Id"
-	        appointmentMappingInfo.Exceptions = "Exceptions"
-	        '#Region "OneToMany1"
-	        appointmentMappingInfo.ResourceId = "ResourceId"
-	        '#End Region
-	        dataSource.EventProvider.Mapping = appointmentMappingInfo
-	        ' assign the generic List of CustomAppointment as the EventProvider data source
-	        dataSource.EventProvider.DataSource = appointments
-	        Me.radScheduler1.DataSource = dataSource
-	
-	        Dim resources As New BindingList(Of CustomResource)()
-	        For i As Integer = 0 To 4
-	            Dim resource As New CustomResource()
-	            resource.Id = i
-	            resource.Name = "Resource " & i
-	            resources.Add(resource)
-	        Next
-	
-	        Dim resourceMappingInfo As New ResourceMappingInfo()
-	        resourceMappingInfo.Name = "Name"
-	        resourceMappingInfo.Id = "Id"
-	        dataSource.ResourceProvider.Mapping = resourceMappingInfo
-	        dataSource.ResourceProvider.DataSource = resources
-	
-	        '#Region "OneToMany3"
-	        Me.radScheduler1.GroupType = GroupType.Resource
-	        '#End Region
-	    End Sub
-	
-	
-	    Private Sub ManyToManyBindingMethod()
-	        Dim resources As New BindingList(Of CustomResource)()
-	        For i As Integer = 0 To 4
-	            Dim resource As New CustomResource()
-	            resource.Id = i
-	            resource.Name = "Resource " & i
-	            resources.Add(resource)
-	        Next
-	
-	        ' create a list of CustomAppointment objects
-	        Dim appointments As New BindingList(Of CustomAppointment)()
-	        For i As Integer = 0 To 9
-	            ' add every other appointment, populate with sample data
-	            If (i Mod 2) = 0 Then
-	                Dim appointmentNumber As Integer = i + 1
-	                Dim myAppointment As New CustomAppointment(DateTime.Now.AddHours(appointmentNumber), DateTime.Now.AddHours(appointmentNumber + 2), "Appointment " + appointmentNumber.ToString(), "Description for Appointment " + appointmentNumber.ToString(), "Conference room " + appointmentNumber.ToString())
-	                appointments.Add(myAppointment)
-	                '#region ManyToMany2
-	                myAppointment.Resources.Add(New EventId(resources(i Mod 3).Id))
 	{{endregion}}
 
 
@@ -748,51 +580,6 @@ To map the new property, add the following setting to your __AppointmentMappingI
 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=OneToMany1}}
 	        appointmentMappingInfo.ResourceId = "ResourceId"
-	        '#End Region
-	        dataSource.EventProvider.Mapping = appointmentMappingInfo
-	        ' assign the generic List of CustomAppointment as the EventProvider data source
-	        dataSource.EventProvider.DataSource = appointments
-	        Me.radScheduler1.DataSource = dataSource
-	
-	        Dim resources As New BindingList(Of CustomResource)()
-	        For i As Integer = 0 To 4
-	            Dim resource As New CustomResource()
-	            resource.Id = i
-	            resource.Name = "Resource " & i
-	            resources.Add(resource)
-	        Next
-	
-	        Dim resourceMappingInfo As New ResourceMappingInfo()
-	        resourceMappingInfo.Name = "Name"
-	        resourceMappingInfo.Id = "Id"
-	        dataSource.ResourceProvider.Mapping = resourceMappingInfo
-	        dataSource.ResourceProvider.DataSource = resources
-	
-	        '#Region "OneToMany3"
-	        Me.radScheduler1.GroupType = GroupType.Resource
-	        '#End Region
-	    End Sub
-	
-	
-	    Private Sub ManyToManyBindingMethod()
-	        Dim resources As New BindingList(Of CustomResource)()
-	        For i As Integer = 0 To 4
-	            Dim resource As New CustomResource()
-	            resource.Id = i
-	            resource.Name = "Resource " & i
-	            resources.Add(resource)
-	        Next
-	
-	        ' create a list of CustomAppointment objects
-	        Dim appointments As New BindingList(Of CustomAppointment)()
-	        For i As Integer = 0 To 9
-	            ' add every other appointment, populate with sample data
-	            If (i Mod 2) = 0 Then
-	                Dim appointmentNumber As Integer = i + 1
-	                Dim myAppointment As New CustomAppointment(DateTime.Now.AddHours(appointmentNumber), DateTime.Now.AddHours(appointmentNumber + 2), "Appointment " + appointmentNumber.ToString(), "Description for Appointment " + appointmentNumber.ToString(), "Conference room " + appointmentNumber.ToString())
-	                appointments.Add(myAppointment)
-	                '#region ManyToMany2
-	                myAppointment.Resources.Add(New EventId(resources(i Mod 3).Id))
 	{{endregion}}
 
 
@@ -822,68 +609,6 @@ To map the new property, add the following setting to your __AppointmentMappingI
 	                Dim myAppointment As New CustomAppointment(DateTime.Now.AddHours(appointmentNumber), DateTime.Now.AddHours(appointmentNumber + 2), "Appointment " + appointmentNumber.ToString(), "Description for Appointment " + appointmentNumber.ToString(), "Conference room " + appointmentNumber.ToString())
 	                appointments.Add(myAppointment)
 	                'set the resource id
-	                '#End Region
-	                myAppointment.ResourceId = New EventId(i Mod 2)
-	            End If
-	        Next
-	        ' create and configure a scheduler binding source
-	        Dim dataSource As New SchedulerBindingDataSource()
-	        ' map the MyAppointment properties to the scheduler
-	        Dim appointmentMappingInfo As New AppointmentMappingInfo()
-	        appointmentMappingInfo.Start = "Start"
-	        appointmentMappingInfo.[End] = "End"
-	        appointmentMappingInfo.Summary = "Subject"
-	        appointmentMappingInfo.Description = "Description"
-	        appointmentMappingInfo.Location = "Location"
-	        appointmentMappingInfo.UniqueId = "Id"
-	        appointmentMappingInfo.Exceptions = "Exceptions"
-	        '#Region "OneToMany1"
-	        appointmentMappingInfo.ResourceId = "ResourceId"
-	        '#End Region
-	        dataSource.EventProvider.Mapping = appointmentMappingInfo
-	        ' assign the generic List of CustomAppointment as the EventProvider data source
-	        dataSource.EventProvider.DataSource = appointments
-	        Me.radScheduler1.DataSource = dataSource
-	
-	        Dim resources As New BindingList(Of CustomResource)()
-	        For i As Integer = 0 To 4
-	            Dim resource As New CustomResource()
-	            resource.Id = i
-	            resource.Name = "Resource " & i
-	            resources.Add(resource)
-	        Next
-	
-	        Dim resourceMappingInfo As New ResourceMappingInfo()
-	        resourceMappingInfo.Name = "Name"
-	        resourceMappingInfo.Id = "Id"
-	        dataSource.ResourceProvider.Mapping = resourceMappingInfo
-	        dataSource.ResourceProvider.DataSource = resources
-	
-	        '#Region "OneToMany3"
-	        Me.radScheduler1.GroupType = GroupType.Resource
-	        '#End Region
-	    End Sub
-	
-	
-	    Private Sub ManyToManyBindingMethod()
-	        Dim resources As New BindingList(Of CustomResource)()
-	        For i As Integer = 0 To 4
-	            Dim resource As New CustomResource()
-	            resource.Id = i
-	            resource.Name = "Resource " & i
-	            resources.Add(resource)
-	        Next
-	
-	        ' create a list of CustomAppointment objects
-	        Dim appointments As New BindingList(Of CustomAppointment)()
-	        For i As Integer = 0 To 9
-	            ' add every other appointment, populate with sample data
-	            If (i Mod 2) = 0 Then
-	                Dim appointmentNumber As Integer = i + 1
-	                Dim myAppointment As New CustomAppointment(DateTime.Now.AddHours(appointmentNumber), DateTime.Now.AddHours(appointmentNumber + 2), "Appointment " + appointmentNumber.ToString(), "Description for Appointment " + appointmentNumber.ToString(), "Conference room " + appointmentNumber.ToString())
-	                appointments.Add(myAppointment)
-	                '#region ManyToMany2
-	                myAppointment.Resources.Add(New EventId(resources(i Mod 3).Id))
 	{{endregion}}
 
 
@@ -902,29 +627,6 @@ To test this scenario, assign each appointment with a __ResourceId__ and enable 
 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=OneToMany3}}
 	        Me.radScheduler1.GroupType = GroupType.Resource
-	        '#End Region
-	    End Sub
-	
-	
-	    Private Sub ManyToManyBindingMethod()
-	        Dim resources As New BindingList(Of CustomResource)()
-	        For i As Integer = 0 To 4
-	            Dim resource As New CustomResource()
-	            resource.Id = i
-	            resource.Name = "Resource " & i
-	            resources.Add(resource)
-	        Next
-	
-	        ' create a list of CustomAppointment objects
-	        Dim appointments As New BindingList(Of CustomAppointment)()
-	        For i As Integer = 0 To 9
-	            ' add every other appointment, populate with sample data
-	            If (i Mod 2) = 0 Then
-	                Dim appointmentNumber As Integer = i + 1
-	                Dim myAppointment As New CustomAppointment(DateTime.Now.AddHours(appointmentNumber), DateTime.Now.AddHours(appointmentNumber + 2), "Appointment " + appointmentNumber.ToString(), "Description for Appointment " + appointmentNumber.ToString(), "Conference room " + appointmentNumber.ToString())
-	                appointments.Add(myAppointment)
-	                '#region ManyToMany2
-	                myAppointment.Resources.Add(New EventId(resources(i Mod 3).Id))
 	{{endregion}}
 
 ![scheduler-data-binding-binding-to-business-objects 002](images/scheduler-data-binding-binding-to-business-objects002.png)

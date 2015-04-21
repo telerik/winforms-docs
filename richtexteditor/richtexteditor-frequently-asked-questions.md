@@ -69,22 +69,7 @@ You can set these properties in code behind:
 	
 	        editor.DocumentInheritsDefaultStyleSettings = True
 	    End Sub
-	    '#End Region
-	
-	    '#Region "xaml"
-	    Public Function GetXAML(ByVal document As RadDocument) As String
-	        Dim provider As New XamlFormatProvider()
-	        Return provider.Export(document)
-	    End Function
-	    '#End Region
-	
-	    '#Region "html"
-	    Public Function ImportHtml(ByVal content As String) As RadDocument
-	        Dim provider As New HtmlFormatProvider()
-	        Return provider.Import(content)
-	    End Function
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -137,15 +122,7 @@ You can read more about the use of format providers [here]({%slug richtexteditor
 	        Dim provider As New XamlFormatProvider()
 	        Return provider.Export(document)
 	    End Function
-	    '#End Region
-	
-	    '#Region "html"
-	    Public Function ImportHtml(ByVal content As String) As RadDocument
-	        Dim provider As New HtmlFormatProvider()
-	        Return provider.Import(content)
-	    End Function
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -174,8 +151,7 @@ To get the text stripped of all formatting, you can use __TxtFormatProvider__. S
 	        Dim provider As New HtmlFormatProvider()
 	        Return provider.Import(content)
 	    End Function
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -200,44 +176,7 @@ Inserting text in __RadRichTextEditor__  at caret position:
 
 {{source=..\SamplesVB\RichTextEditor\FAQ.vb region=text}}
 	        Me.radRichTextEditor1.Insert(textToInsert)
-	        '#End Region
-	        '#Region "padding"
-	        Me.radRichTextEditor1.Padding = New Telerik.WinControls.RichTextEditor.UI.Thickness(0, 20, 100, 60)
-	
-	        '#End Region
-	        '#Region "margin"
-	        Me.radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged
-	        Me.radRichTextEditor1.Document.SectionDefaultPageMargin = New Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60)
-	        '#End Region
-	        '#Region "margin2"
-	        radRichTextEditor1.Document.Sections.First.PageMargin = New Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60)
-	        '#End Region
-	    End Sub
-	    '#Region "properties"
-	    Public Sub SetDefaultFontPropertiesToEditor(ByVal editor As RadRichTextEditor)
-	        editor.RichTextBoxElement.ChangeFontFamily(New Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS"))
-	        editor.RichTextBoxElement.ChangeFontSize(Unit.PointToDip(12))
-	        editor.RichTextBoxElement.ChangeFontStyle(Telerik.WinControls.RichTextEditor.UI.FontStyles.Italic)
-	        editor.RichTextBoxElement.ChangeFontWeight(Telerik.WinControls.RichTextEditor.UI.FontWeights.Bold)
-	
-	        editor.DocumentInheritsDefaultStyleSettings = True
-	    End Sub
-	    '#End Region
-	
-	    '#Region "xaml"
-	    Public Function GetXAML(ByVal document As RadDocument) As String
-	        Dim provider As New XamlFormatProvider()
-	        Return provider.Export(document)
-	    End Function
-	    '#End Region
-	
-	    '#Region "html"
-	    Public Function ImportHtml(ByVal content As String) As RadDocument
-	        Dim provider As New HtmlFormatProvider()
-	        Return provider.Import(content)
-	    End Function
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -264,40 +203,7 @@ If you are using a document in flow layout mode, the document respects the value
 {{source=..\SamplesVB\RichTextEditor\FAQ.vb region=padding}}
 	        Me.radRichTextEditor1.Padding = New Telerik.WinControls.RichTextEditor.UI.Thickness(0, 20, 100, 60)
 	
-	        '#End Region
-	        '#Region "margin"
-	        Me.radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged
-	        Me.radRichTextEditor1.Document.SectionDefaultPageMargin = New Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60)
-	        '#End Region
-	        '#Region "margin2"
-	        radRichTextEditor1.Document.Sections.First.PageMargin = New Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60)
-	        '#End Region
-	    End Sub
-	    '#Region "properties"
-	    Public Sub SetDefaultFontPropertiesToEditor(ByVal editor As RadRichTextEditor)
-	        editor.RichTextBoxElement.ChangeFontFamily(New Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS"))
-	        editor.RichTextBoxElement.ChangeFontSize(Unit.PointToDip(12))
-	        editor.RichTextBoxElement.ChangeFontStyle(Telerik.WinControls.RichTextEditor.UI.FontStyles.Italic)
-	        editor.RichTextBoxElement.ChangeFontWeight(Telerik.WinControls.RichTextEditor.UI.FontWeights.Bold)
-	
-	        editor.DocumentInheritsDefaultStyleSettings = True
-	    End Sub
-	    '#End Region
-	
-	    '#Region "xaml"
-	    Public Function GetXAML(ByVal document As RadDocument) As String
-	        Dim provider As New XamlFormatProvider()
-	        Return provider.Export(document)
-	    End Function
-	    '#End Region
-	
-	    '#Region "html"
-	    Public Function ImportHtml(ByVal content As String) As RadDocument
-	        Dim provider As New HtmlFormatProvider()
-	        Return provider.Import(content)
-	    End Function
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 
@@ -319,36 +225,7 @@ With paged layout mode, you can set the margin of the document like this
 {{source=..\SamplesVB\RichTextEditor\FAQ.vb region=margin}}
 	        Me.radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged
 	        Me.radRichTextEditor1.Document.SectionDefaultPageMargin = New Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60)
-	        '#End Region
-	        '#Region "margin2"
-	        radRichTextEditor1.Document.Sections.First.PageMargin = New Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60)
-	        '#End Region
-	    End Sub
-	    '#Region "properties"
-	    Public Sub SetDefaultFontPropertiesToEditor(ByVal editor As RadRichTextEditor)
-	        editor.RichTextBoxElement.ChangeFontFamily(New Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS"))
-	        editor.RichTextBoxElement.ChangeFontSize(Unit.PointToDip(12))
-	        editor.RichTextBoxElement.ChangeFontStyle(Telerik.WinControls.RichTextEditor.UI.FontStyles.Italic)
-	        editor.RichTextBoxElement.ChangeFontWeight(Telerik.WinControls.RichTextEditor.UI.FontWeights.Bold)
-	
-	        editor.DocumentInheritsDefaultStyleSettings = True
-	    End Sub
-	    '#End Region
-	
-	    '#Region "xaml"
-	    Public Function GetXAML(ByVal document As RadDocument) As String
-	        Dim provider As New XamlFormatProvider()
-	        Return provider.Export(document)
-	    End Function
-	    '#End Region
-	
-	    '#Region "html"
-	    Public Function ImportHtml(ByVal content As String) As RadDocument
-	        Dim provider As New HtmlFormatProvider()
-	        Return provider.Import(content)
-	    End Function
-	    '#End Region
-	End Class
+	{{endregion}}
 
 
 

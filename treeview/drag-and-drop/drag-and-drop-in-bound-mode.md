@@ -84,187 +84,7 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 	        Me.radTreeView1.DataSource = dt
 	    End Sub
 	
-	#End Region
-	
-	#Region "CustomService"
-	
-	    Private Class CustomDragDropService
-	        Inherits TreeViewDragDropService
-	        Private owner As RadTreeViewElement
-	        Private draggedNodes As List(Of RadTreeNode)
-	
-	        Public Sub New(owner As RadTreeViewElement)
-	            MyBase.New(owner)
-	            Me.owner = owner
-	        End Sub
-	
-	        'Save the dragged nodes
-	        Protected Overrides Sub PerformStart()
-	            MyBase.PerformStart()
-	
-	            draggedNodes = New List(Of RadTreeNode)()
-	            For Each selectedNode As RadTreeNode In Me.owner.SelectedNodes
-	                draggedNodes.Add(selectedNode)
-	            Next
-	        End Sub
-	
-	        'Clean the saved nodes
-	        Protected Overrides Sub PerformStop()
-	            MyBase.PerformStop()
-	            draggedNodes.Clear()
-	        End Sub
-	
-	        'If tree element or node element is hovered, allow drop
-	        Protected Overrides Sub OnPreviewDragOver(e As RadDragOverEventArgs)
-	            MyBase.OnPreviewDragOver(e)
-	
-	            Dim targetElement As RadTreeViewElement = TryCast(e.HitTarget, RadTreeViewElement)
-	            If targetElement IsNot Nothing AndAlso targetElement.Equals(Me.owner) Then
-	                e.CanDrop = True
-	            ElseIf TypeOf e.HitTarget Is TreeNodeElement Then
-	                e.CanDrop = True
-	
-	                For Each draggedNode As RadTreeNode In draggedNodes
-	                    Dim targetNode As RadTreeNode = TryCast(e.HitTarget, TreeNodeElement).Data.Parent
-	                    If draggedNode.Equals(targetNode) Then
-	                        'prevent dragging of a parent node over some of its child nodes
-	                        e.CanDrop = False
-	                        Exit For
-	                    End If
-	                Next
-	            End If
-	        End Sub
-	
-	        'Create copies of the selected node(s) and add them to the hovered node/tree
-	        Protected Overrides Sub OnPreviewDragDrop(e As RadDropEventArgs)
-	            Dim targetNodeElement As TreeNodeElement = TryCast(e.HitTarget, TreeNodeElement)
-	            Dim targetTreeView As RadTreeViewElement = If(targetNodeElement Is Nothing, TryCast(e.HitTarget, RadTreeViewElement), targetNodeElement.TreeViewElement)
-	
-	            If targetTreeView Is Nothing Then
-	                Return
-	            End If
-	
-	            targetTreeView.BeginUpdate()
-	
-	            For Each node As RadTreeNode In draggedNodes
-	                Dim rowView As DataRowView = TryCast(node.DataBoundItem, DataRowView)
-	                Dim row As DataRow = rowView.Row
-	                Dim dt As DataTable = TryCast(targetTreeView.DataSource, DataTable)
-	                If dt Is Nothing Then
-	                    Return
-	                End If
-	
-	                'save expanded state and vertical scrollbar value                   
-	
-	                If targetNodeElement IsNot Nothing Then
-	                    If CanShowDropHint(Cursor.Position, targetNodeElement) Then
-	                        'change node' parent
-	                        Dim nodeOver As RadTreeNode = targetNodeElement.Data.Parent
-	
-	                        If nodeOver Is Nothing Then
-	                            nodeOver = targetNodeElement.Data
-	                        End If
-	
-	                        Dim targetRowView As DataRowView = DirectCast(nodeOver.DataBoundItem, DataRowView)
-	                        Dim targetRow As DataRow = targetRowView.Row
-	                        If Not row("ParentId").Equals(targetRow("ParentId")) Then
-	                            row("ParentId") = targetRow("Id")
-	                        End If
-	
-	                        Dim rowToInsert As DataRow = dt.NewRow()
-	                        rowToInsert("ParentId") = row("ParentId")
-	                        rowToInsert("Id") = row("Id")
-	                        rowToInsert("Title") = row("Title")
-	                        dt.Rows.Remove(row)
-	                        Dim targetIndex As Integer = GetTargetIndex(dt, targetNodeElement)
-	
-	                        Dim position As DropPosition = Me.GetDropPosition(e.DropLocation, targetNodeElement)
-	                        If position = DropPosition.AfterNode Then
-	                            targetIndex += 1
-	                        End If
-	                        dt.Rows.InsertAt(rowToInsert, targetIndex)
-	                    Else
-	                        Dim nodeOver As RadTreeNode = targetNodeElement.Data
-	                        Dim targetRowView As DataRowView = DirectCast(nodeOver.DataBoundItem, DataRowView)
-	                        Dim targetRow As DataRow = targetRowView.Row
-	                        row("ParentId") = targetRow("Id")
-	                    End If
-	                Else
-	                    'make the node "root node"
-	                    row("ParentId") = Nothing
-	                End If
-	
-	                Dim ds As Object = targetTreeView.DataSource
-	                targetTreeView.DataSource = Nothing
-	                targetTreeView.DataSource = ds
-	
-	
-	                'restore expanded state and vertical scrollbar value
-	                targetTreeView.Update(RadTreeViewElement.UpdateActions.ItemAdded)
-	            Next
-	            targetTreeView.EndUpdate()
-	        End Sub
-	
-	        Private Function GetTargetIndex(dt As DataTable, targetNodeElement As TreeNodeElement) As Integer
-	            Dim index As Integer = 0
-	            Dim targetRowView As DataRowView = DirectCast(targetNodeElement.Data.DataBoundItem, DataRowView)
-	            Dim targetRow As DataRow = targetRowView.Row
-	            index = dt.Rows.IndexOf(targetRow)
-	
-	            Return index
-	        End Function
-	
-	        Private Function CanShowDropHint(point As Point, nodeElement As TreeNodeElement) As Boolean
-	            If nodeElement Is Nothing Then
-	                Return False
-	            End If
-	
-	            Dim client As Point = nodeElement.PointFromScreen(point)
-	            Dim part As Integer = nodeElement.Size.Height / 3
-	            Return client.Y < part OrElse client.Y > part * 2
-	        End Function
-	    End Class
-	
-	#End Region
-	
-	#Region "CustomTreeViewElement"
-	
-	    Private Class CustomTreeViewElement
-	        Inherits RadTreeViewElement
-	        Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-	            Get
-	                Return GetType(RadTreeViewElement)
-	            End Get
-	        End Property
-	
-	        Protected Overrides Function CreateDragDropService() As TreeViewDragDropService
-	            Return New CustomDragDropService(Me)
-	        End Function
-	    End Class
-	
-	#End Region
-	
-	#Region "TreeView"
-	
-	    Private Class CustomTreeView
-	        Inherits RadTreeView
-	        Protected Overrides Function CreateTreeViewElement() As RadTreeViewElement
-	            Return New CustomTreeViewElement()
-	        End Function
-	
-	        Public Overrides Property ThemeClassName() As String
-	            Get
-	                Return GetType(RadTreeView).FullName
-	            End Get
-	            Set(value As String)
-	                MyBase.ThemeClassName = value
-	            End Set
-	        End Property
-	    End Class
-	
-	#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -586,46 +406,7 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 	        End Function
 	    End Class
 	
-	#End Region
-	
-	#Region "CustomTreeViewElement"
-	
-	    Private Class CustomTreeViewElement
-	        Inherits RadTreeViewElement
-	        Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-	            Get
-	                Return GetType(RadTreeViewElement)
-	            End Get
-	        End Property
-	
-	        Protected Overrides Function CreateDragDropService() As TreeViewDragDropService
-	            Return New CustomDragDropService(Me)
-	        End Function
-	    End Class
-	
-	#End Region
-	
-	#Region "TreeView"
-	
-	    Private Class CustomTreeView
-	        Inherits RadTreeView
-	        Protected Overrides Function CreateTreeViewElement() As RadTreeViewElement
-	            Return New CustomTreeViewElement()
-	        End Function
-	
-	        Public Overrides Property ThemeClassName() As String
-	            Get
-	                Return GetType(RadTreeView).FullName
-	            End Get
-	            Set(value As String)
-	                MyBase.ThemeClassName = value
-	            End Set
-	        End Property
-	    End Class
-	
-	#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -673,29 +454,7 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 	        End Function
 	    End Class
 	
-	#End Region
-	
-	#Region "TreeView"
-	
-	    Private Class CustomTreeView
-	        Inherits RadTreeView
-	        Protected Overrides Function CreateTreeViewElement() As RadTreeViewElement
-	            Return New CustomTreeViewElement()
-	        End Function
-	
-	        Public Overrides Property ThemeClassName() As String
-	            Get
-	                Return GetType(RadTreeView).FullName
-	            End Get
-	            Set(value As String)
-	                MyBase.ThemeClassName = value
-	            End Set
-	        End Property
-	    End Class
-	
-	#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -749,8 +508,6 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 	        End Property
 	    End Class
 	
-	#End Region
-	
-	End Class
+	{{endregion}}
 
 

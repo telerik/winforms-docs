@@ -75,8 +75,6 @@ You can add any element that derives from the RadElement class inside the __RadE
 	        section.Blocks.Add(paragraph)
 	        Me.radRichTextEditor1.Document.Sections.Add(section)
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

@@ -129,66 +129,7 @@ This is how a Character style can be defined and registered:
 	
 	        Me.radRichTextEditor1.Document.StyleRepository.Add(charStyle)
 	
-	        '#End Region
-	
-	        '#Region "paragrph"
-	
-	        Dim paragraphStyle As New StyleDefinition()
-	        paragraphStyle.Type = StyleType.Paragraph
-	        paragraphStyle.ParagraphProperties.Background = Colors.Red
-	        paragraphStyle.ParagraphProperties.TextAlignment = RadTextAlignment.Center
-	        paragraphStyle.DisplayName = "paragraphStyle"
-	        paragraphStyle.Name = "paragraphStyle"
-	
-	        Me.radRichTextEditor1.Document.StyleRepository.Add(paragraphStyle)
-	
-	        '#End Region
-	
-	        '#Region "linked"
-	
-	        Dim linkedParagraphStyle As New StyleDefinition()
-	        linkedParagraphStyle.Type = StyleType.Paragraph
-	        linkedParagraphStyle.ParagraphProperties.Background = Colors.Yellow
-	        linkedParagraphStyle.DisplayName = "linkedParagraphStyle"
-	        linkedParagraphStyle.Name = "linkedParagraphStyle"
-	
-	        Dim linkedCharStyle As New StyleDefinition()
-	        linkedCharStyle.Type = StyleType.Character
-	        linkedCharStyle.SpanProperties.FontWeight = FontWeights.Bold
-	        linkedCharStyle.SpanProperties.FontSize = Unit.PointToDip(30)
-	        linkedCharStyle.SpanProperties.ForeColor = Colors.Purple
-	        linkedCharStyle.DisplayName = "linkedCharStyle"
-	        linkedCharStyle.Name = "linkedCharStyle"
-	        linkedParagraphStyle.LinkedStyle = linkedCharStyle
-	
-	        Me.radRichTextEditor1.Document.StyleRepository.Add(linkedParagraphStyle)
-	        Me.radRichTextEditor1.Document.StyleRepository.Add(linkedCharStyle)
-	
-	        '#End Region
-	
-	        '#Region "ChangeStyleName"
-	
-	        Me.radRichTextEditor1.RichTextBoxElement.ChangeStyleName("linkedParagraphStyle")
-	
-	        '#End Region
-	
-	        Dim table As New Table()
-	
-	        '#Region "table"
-	
-	        table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName
-	
-	        '#End Region
-	
-	        Dim paragraph As New Paragraph()
-	
-	        '#Region "paragraph"
-	
-	        paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -214,9 +155,7 @@ A paragraph style can be defined as follows:
 	
 	        paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1)
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -274,31 +213,7 @@ Linked styles should be used when both properties of Paragraph and Span should b
 	        Me.radRichTextEditor1.Document.StyleRepository.Add(linkedParagraphStyle)
 	        Me.radRichTextEditor1.Document.StyleRepository.Add(linkedCharStyle)
 	
-	        '#End Region
-	
-	        '#Region "ChangeStyleName"
-	
-	        Me.radRichTextEditor1.RichTextBoxElement.ChangeStyleName("linkedParagraphStyle")
-	
-	        '#End Region
-	
-	        Dim table As New Table()
-	
-	        '#Region "table"
-	
-	        table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName
-	
-	        '#End Region
-	
-	        Dim paragraph As New Paragraph()
-	
-	        '#Region "paragraph"
-	
-	        paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -336,25 +251,7 @@ For example, the following line will apply the "linkedParagraphStyle" to the cur
 	
 	        Me.radRichTextEditor1.RichTextBoxElement.ChangeStyleName("linkedParagraphStyle")
 	
-	        '#End Region
-	
-	        Dim table As New Table()
-	
-	        '#Region "table"
-	
-	        table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName
-	
-	        '#End Region
-	
-	        Dim paragraph As New Paragraph()
-	
-	        '#Region "paragraph"
-	
-	        paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -400,17 +297,7 @@ For example the __TableGrid__ style can be applied to a table as follows:
 	
 	        table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName
 	
-	        '#End Region
-	
-	        Dim paragraph As New Paragraph()
-	
-	        '#Region "paragraph"
-	
-	        paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1)
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -433,9 +320,7 @@ And a paragraph can have __Heading 1__ style applied to it like this:
 	
 	        paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1)
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

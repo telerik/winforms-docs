@@ -66,23 +66,7 @@ Here is an example with a __RadToggleButton__control.
 	        Me.radRichTextEditor1.Commands.ToggleBoldCommand.Execute()
 	    End Sub
 	
-	#End Region
-	
-	#Region "event"
-	
-	    Private Sub Commands_Load(ByVal sender As Object, ByVal e As EventArgs)
-	        AddHandler Me.radRichTextEditor1.Commands.ToggleBoldCommand.ToggleStateChanged, AddressOf Me.ToggleBoldCommand_ToggleStateChanged
-	    End Sub
-	
-	    Public Sub ToggleBoldCommand_ToggleStateChanged(ByVal sender As Object, ByVal e As StylePropertyChangedEventArgs(Of Boolean))
-	        Me.boldButton.IsChecked = e.NewValue
-	    End Sub
-	
-	#End Region
-	
-	    Public Sub Temp()
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -121,11 +105,7 @@ Now every time the button is clicked it will toggle the boldness of the current 
 	        Me.boldButton.IsChecked = e.NewValue
 	    End Sub
 	
-	#End Region
-	
-	    Public Sub Temp()
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

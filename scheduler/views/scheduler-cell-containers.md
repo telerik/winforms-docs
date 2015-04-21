@@ -55,65 +55,7 @@ The __InitializeCells__ and __InitializeAppointments__ methods are used to refre
 	        table.InitializeAppointments()
 	        'or use the following method which calls both of the above methods
 	        table.InitializeChildren()
-	        '#End Region
-	    End Sub
-	
-	    '#Region "cellContainerEvents"
-	
-	    Private Sub table_AppointmentsRefreshed(sender As Object, e As EventArgs)
-	        RadMessageBox.Show("Appointments were refreshed")
-	    End Sub
-	
-	    Private Sub table_CellsRefreshed(sender As Object, e As EventArgs)
-	        RadMessageBox.Show("Cells were refreshed")
-	    End Sub
-	
-	    '#End Region
-	
-	    Private Sub Update()
-	        '#Region updateSchedulerChildren
-	        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
-	        table.UpdateCells()
-	        table.UpdateAppointments()
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GetExisting()
-	        '#Region cellContainerGetElements
-	        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
-	        For Each cellElement As SchedulerCellElement In table.CellElements
-	            cellElement.BackColor = Color.Red
-	        Next
-	
-	        For Each appElement As AppointmentElement In table.AppointmentElements
-	            appElement.BackColor = Color.Green
-	        Next
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UseViewElement()
-	        '#Region viewElementUpdateCells
-	        For Each cellContainer As SchedulerCellContainer In Me.radScheduler1.ViewElement.GetCellContainers()
-	            cellContainer.UpdateCells()
-	        Next
-	        '#End Region
-	
-	        '#Region viewElementUpdateCellsDirect
-	        Me.radScheduler1.ViewElement.UpdateCells()
-	        Me.radScheduler1.ViewElement.UpdateAppointmentElements()
-	        '#End Region
-	
-	        '#Region viewElementGetAllElements
-	        For Each cellElement As SchedulerCellElement In Me.radScheduler1.ViewElement.GetCellElements()
-	            cellElement.BackColor = Color.Red
-	        Next
-	
-	        For Each appElement As AppointmentElement In Me.radScheduler1.ViewElement.GetAppointmentElements()
-	            appElement.BackColor = Color.Green
-	        Next
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -147,52 +89,7 @@ The __InitializeCells__ and __InitializeAppointments__ methods are used to refre
 	        RadMessageBox.Show("Cells were refreshed")
 	    End Sub
 	
-	    '#End Region
-	
-	    Private Sub Update()
-	        '#Region updateSchedulerChildren
-	        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
-	        table.UpdateCells()
-	        table.UpdateAppointments()
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GetExisting()
-	        '#Region cellContainerGetElements
-	        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
-	        For Each cellElement As SchedulerCellElement In table.CellElements
-	            cellElement.BackColor = Color.Red
-	        Next
-	
-	        For Each appElement As AppointmentElement In table.AppointmentElements
-	            appElement.BackColor = Color.Green
-	        Next
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UseViewElement()
-	        '#Region viewElementUpdateCells
-	        For Each cellContainer As SchedulerCellContainer In Me.radScheduler1.ViewElement.GetCellContainers()
-	            cellContainer.UpdateCells()
-	        Next
-	        '#End Region
-	
-	        '#Region viewElementUpdateCellsDirect
-	        Me.radScheduler1.ViewElement.UpdateCells()
-	        Me.radScheduler1.ViewElement.UpdateAppointmentElements()
-	        '#End Region
-	
-	        '#Region viewElementGetAllElements
-	        For Each cellElement As SchedulerCellElement In Me.radScheduler1.ViewElement.GetCellElements()
-	            cellElement.BackColor = Color.Red
-	        Next
-	
-	        For Each appElement As AppointmentElement In Me.radScheduler1.ViewElement.GetAppointmentElements()
-	            appElement.BackColor = Color.Green
-	        Next
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -221,45 +118,7 @@ The __UpdateCells__ and __UpdateAppointments__ are called to synchronize the exi
 	        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
 	        table.UpdateCells()
 	        table.UpdateAppointments()
-	        '#End Region
-	    End Sub
-	
-	    Private Sub GetExisting()
-	        '#Region cellContainerGetElements
-	        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
-	        For Each cellElement As SchedulerCellElement In table.CellElements
-	            cellElement.BackColor = Color.Red
-	        Next
-	
-	        For Each appElement As AppointmentElement In table.AppointmentElements
-	            appElement.BackColor = Color.Green
-	        Next
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UseViewElement()
-	        '#Region viewElementUpdateCells
-	        For Each cellContainer As SchedulerCellContainer In Me.radScheduler1.ViewElement.GetCellContainers()
-	            cellContainer.UpdateCells()
-	        Next
-	        '#End Region
-	
-	        '#Region viewElementUpdateCellsDirect
-	        Me.radScheduler1.ViewElement.UpdateCells()
-	        Me.radScheduler1.ViewElement.UpdateAppointmentElements()
-	        '#End Region
-	
-	        '#Region viewElementGetAllElements
-	        For Each cellElement As SchedulerCellElement In Me.radScheduler1.ViewElement.GetCellElements()
-	            cellElement.BackColor = Color.Red
-	        Next
-	
-	        For Each appElement As AppointmentElement In Me.radScheduler1.ViewElement.GetAppointmentElements()
-	            appElement.BackColor = Color.Green
-	        Next
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -296,32 +155,7 @@ You can access the cell element and the appointment elements from a SchedulerCel
 	        For Each appElement As AppointmentElement In table.AppointmentElements
 	            appElement.BackColor = Color.Green
 	        Next
-	        '#End Region
-	    End Sub
-	
-	    Private Sub UseViewElement()
-	        '#Region viewElementUpdateCells
-	        For Each cellContainer As SchedulerCellContainer In Me.radScheduler1.ViewElement.GetCellContainers()
-	            cellContainer.UpdateCells()
-	        Next
-	        '#End Region
-	
-	        '#Region viewElementUpdateCellsDirect
-	        Me.radScheduler1.ViewElement.UpdateCells()
-	        Me.radScheduler1.ViewElement.UpdateAppointmentElements()
-	        '#End Region
-	
-	        '#Region viewElementGetAllElements
-	        For Each cellElement As SchedulerCellElement In Me.radScheduler1.ViewElement.GetCellElements()
-	            cellElement.BackColor = Color.Red
-	        Next
-	
-	        For Each appElement As AppointmentElement In Me.radScheduler1.ViewElement.GetAppointmentElements()
-	            appElement.BackColor = Color.Green
-	        Next
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -344,21 +178,10 @@ The __SchedulerViewElement__ base type provides means for accessing the containe
 #### __[VB.NET]__
 
 {{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=viewElementUpdateCells}}
-	        Me.radScheduler1.ViewElement.UpdateCells()
-	        Me.radScheduler1.ViewElement.UpdateAppointmentElements()
-	        '#End Region
-	
-	        '#Region viewElementGetAllElements
-	        For Each cellElement As SchedulerCellElement In Me.radScheduler1.ViewElement.GetCellElements()
-	            cellElement.BackColor = Color.Red
+	        For Each cellContainer As SchedulerCellContainer In Me.radScheduler1.ViewElement.GetCellContainers()
+	            cellContainer.UpdateCells()
 	        Next
-	
-	        For Each appElement As AppointmentElement In Me.radScheduler1.ViewElement.GetAppointmentElements()
-	            appElement.BackColor = Color.Green
-	        Next
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -380,19 +203,7 @@ For your convenience, there are the __InitializeCells__, __UpdateCells__,
 {{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=viewElementUpdateCellsDirect}}
 	        Me.radScheduler1.ViewElement.UpdateCells()
 	        Me.radScheduler1.ViewElement.UpdateAppointmentElements()
-	        '#End Region
-	
-	        '#Region viewElementGetAllElements
-	        For Each cellElement As SchedulerCellElement In Me.radScheduler1.ViewElement.GetCellElements()
-	            cellElement.BackColor = Color.Red
-	        Next
-	
-	        For Each appElement As AppointmentElement In Me.radScheduler1.ViewElement.GetAppointmentElements()
-	            appElement.BackColor = Color.Green
-	        Next
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -425,8 +236,6 @@ Additionally, there are the __GetCellEments__ and the __GetAppointmentElements__
 	        For Each appElement As AppointmentElement In Me.radScheduler1.ViewElement.GetAppointmentElements()
 	            appElement.BackColor = Color.Green
 	        Next
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

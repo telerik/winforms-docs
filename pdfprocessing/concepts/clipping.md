@@ -40,14 +40,7 @@ __Example 1__ demonstrates how you can create a Clipping element and assign a __
 {{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsClipping.vb region=radpdfprocessing-concepts-clipping_0}}
 	        Dim clipping As Telerik.Windows.Documents.Fixed.Model.Clipping = New Telerik.Windows.Documents.Fixed.Model.Clipping()
 	        clipping.Clip = New RectangleGeometry(New Rect(5, 5, 50, 50))
-	        '	#End Region
-	
-	        '	#Region "radpdfprocessing-concepts-clipping_1"
-	        Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage(imageSource)
-	        image.Clipping = clipping
-	        '	#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -73,9 +66,7 @@ __Example 2__ demonstrates how to clip an image using the Clipping created in __
 {{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsClipping.vb region=radpdfprocessing-concepts-clipping_1}}
 	        Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage(imageSource)
 	        image.Clipping = clipping
-	        '	#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

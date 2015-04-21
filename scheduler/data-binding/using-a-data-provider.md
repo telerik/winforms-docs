@@ -324,29 +324,6 @@ We will use a list to store our appointment data. For the purpose of this exampl
 	            Me.appointments.Add(appointment)
 	        Next i
 	    End Sub
-	    '#End Region
-	
-	    '#region bindClick
-	    Private Sub btnBind_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim dataSource As New SchedulerBindingDataSource()
-	
-	        Dim appointmentMappingInfo As New AppointmentMappingInfo()
-	        appointmentMappingInfo.Start = "Start"
-	        appointmentMappingInfo.End = "End"
-	        appointmentMappingInfo.Summary = "Subject"
-	        appointmentMappingInfo.Description = "Description"
-	        appointmentMappingInfo.Location = "Location"
-	        appointmentMappingInfo.UniqueId = "Id"
-	
-	        Dim idMapping As SchedulerMapping = appointmentMappingInfo.FindByDataSourceProperty("Id")
-	        idMapping.ConvertToDataSource = New ConvertCallback(AddressOf Me.ConvertIdToDataSource)
-	        idMapping.ConvertToScheduler = New ConvertCallback(AddressOf Me.ConvertIdToScheduler)
-	
-	        dataSource.EventProvider.Mapping = appointmentMappingInfo
-	        dataSource.EventProvider.DataSource = Me.appointments
-	
-	        Me.RadScheduler1.DataSource = dataSource
-	    End Sub
 	{{endregion}}
 
 

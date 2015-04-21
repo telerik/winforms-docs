@@ -120,22 +120,7 @@ Here as an example of creating a __ListStyle__ and a __DocumentList__ programmat
 	
 	            upperRomanHierarchical.Levels.Add(New ListLevelStyle() With {.StartingIndex = 1, .NumberingFormat = ListNumberingFormat.UpperRoman, .LevelText = levelText.ToString(), .Indent = 48 + i * 24})
 	        Next i
-	        '#End Region
-	
-	        '#Region "paragraph"
-	        Dim paragraph As Paragraph = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentParagraphBox().AssociatedParagraph
-	        '#End Region
-	
-	        '#Region "newStyle"
-	        Dim newListStyle As ListStyle = Me.radRichTextEditor1.Document.AddCustomListStyle(upperRomanHierarchical)
-	        Dim documentList As New DocumentList(newListStyle, Me.radRichTextEditor1.Document)
-	        '#End Region
-	
-	        '#Region "assing"
-	        paragraph.ListId = documentList.ID
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -164,18 +149,7 @@ If you want to apply a style to a paragraph using the user interface you would m
 
 {{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=paragraph}}
 	        Dim paragraph As Paragraph = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentParagraphBox().AssociatedParagraph
-	        '#End Region
-	
-	        '#Region "newStyle"
-	        Dim newListStyle As ListStyle = Me.radRichTextEditor1.Document.AddCustomListStyle(upperRomanHierarchical)
-	        Dim documentList As New DocumentList(newListStyle, Me.radRichTextEditor1.Document)
-	        '#End Region
-	
-	        '#Region "assing"
-	        paragraph.ListId = documentList.ID
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -203,13 +177,7 @@ As the logic of creating a custom list style is rather complex, the method __Add
 {{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=newStyle}}
 	        Dim newListStyle As ListStyle = Me.radRichTextEditor1.Document.AddCustomListStyle(upperRomanHierarchical)
 	        Dim documentList As New DocumentList(newListStyle, Me.radRichTextEditor1.Document)
-	        '#End Region
-	
-	        '#Region "assing"
-	        paragraph.ListId = documentList.ID
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -229,8 +197,6 @@ Having the new __DocumentList__ all you have to do in order the paragraph to be 
 
 {{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=assing}}
 	        paragraph.ListId = documentList.ID
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

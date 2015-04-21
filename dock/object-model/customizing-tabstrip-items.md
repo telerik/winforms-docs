@@ -41,68 +41,7 @@ The above examples are using the __TabStripItemCreating__ event. This event cann
 	        AddHandler RadDockEvents.TabStripItemCreating, AddressOf RadDockEvents_TabStripItemCreating
 	        InitializeComponent()
 	    End Sub
-	    '#End Region
-	
-	    '#Region "closed"
-	    Protected Overrides Sub OnClosed(ByVal e As EventArgs)
-	        RemoveHandler RadDockEvents.TabStripItemCreating, AddressOf RadDockEvents_TabStripItemCreating
-	        MyBase.OnClosed(e)
-	    End Sub
-	    '#End Region
-	
-	    '#Region "element"
-	    Private Sub RadDockEvents_TabStripItemCreating1(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
-	        Dim textbox As New RadTextBoxControlElement()
-	        textbox.Margin = New System.Windows.Forms.Padding(80, 5, 5, 5)
-	        textbox.MinSize = New System.Drawing.Size(50, 0)
-	        args.TabItem.Children.Add(textbox)
-	    End Sub
-	    '#End Region
-	
-	    '#Region "replace"
-	    Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
-	        args.TabItem = New MyTabStripItem(args.TabItem.TabPanel)
-	    End Sub
-	    '#End Region
-	
-	End Class
-	'#Region "Item"
-	Friend Class MyTabStripItem
-	    Inherits TabStripItem
-	
-	    Public Sub New(ByVal panel As TabPanel)
-	        MyBase.New(panel)
-	    End Sub
-	    Protected Overrides Sub CreateChildElements()
-	        MyBase.CreateChildElements()
-	        Me.Children.Add(CreateCustomElement())
-	    End Sub
-	    Private Function CreateCustomElement() As RadElement
-	        Dim element As New StackLayoutElement()
-	        element.Orientation = Orientation.Horizontal
-	        element.StretchHorizontally = True
-	        element.MinSize = New System.Drawing.Size(100, 0)
-	
-	        Dim button As New RadButtonElement()
-	        button.Text = "Search"
-	        element.Children.Add(button)
-	
-	        Dim textbox As New RadTextBoxControlElement()
-	        element.Children.Add(textbox)
-	        element.Margin = New Padding(5, 2, 2, 2)
-	        Me.DrawText = False
-	        Me.Padding = New Padding(40, 5, 40, 5)
-	
-	        Return element
-	    End Function
-	    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-	        Get
-	            Return GetType(TabStripItem)
-	        End Get
-	    End Property
-	End Class
-	'#End Region
-	
+	{{endregion}}
 
 
 
@@ -127,61 +66,7 @@ Please note that when such static events are used it is mandatory to unsubscribe
 	        RemoveHandler RadDockEvents.TabStripItemCreating, AddressOf RadDockEvents_TabStripItemCreating
 	        MyBase.OnClosed(e)
 	    End Sub
-	    '#End Region
-	
-	    '#Region "element"
-	    Private Sub RadDockEvents_TabStripItemCreating1(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
-	        Dim textbox As New RadTextBoxControlElement()
-	        textbox.Margin = New System.Windows.Forms.Padding(80, 5, 5, 5)
-	        textbox.MinSize = New System.Drawing.Size(50, 0)
-	        args.TabItem.Children.Add(textbox)
-	    End Sub
-	    '#End Region
-	
-	    '#Region "replace"
-	    Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
-	        args.TabItem = New MyTabStripItem(args.TabItem.TabPanel)
-	    End Sub
-	    '#End Region
-	
-	End Class
-	'#Region "Item"
-	Friend Class MyTabStripItem
-	    Inherits TabStripItem
-	
-	    Public Sub New(ByVal panel As TabPanel)
-	        MyBase.New(panel)
-	    End Sub
-	    Protected Overrides Sub CreateChildElements()
-	        MyBase.CreateChildElements()
-	        Me.Children.Add(CreateCustomElement())
-	    End Sub
-	    Private Function CreateCustomElement() As RadElement
-	        Dim element As New StackLayoutElement()
-	        element.Orientation = Orientation.Horizontal
-	        element.StretchHorizontally = True
-	        element.MinSize = New System.Drawing.Size(100, 0)
-	
-	        Dim button As New RadButtonElement()
-	        button.Text = "Search"
-	        element.Children.Add(button)
-	
-	        Dim textbox As New RadTextBoxControlElement()
-	        element.Children.Add(textbox)
-	        element.Margin = New Padding(5, 2, 2, 2)
-	        Me.DrawText = False
-	        Me.Padding = New Padding(40, 5, 40, 5)
-	
-	        Return element
-	    End Function
-	    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-	        Get
-	            Return GetType(TabStripItem)
-	        End Get
-	    End Property
-	End Class
-	'#End Region
-	
+	{{endregion}}
 
 
 
@@ -214,52 +99,7 @@ The TabStripItemCreating event can be used for adding any kind of RadElement to 
 	        textbox.MinSize = New System.Drawing.Size(50, 0)
 	        args.TabItem.Children.Add(textbox)
 	    End Sub
-	    '#End Region
-	
-	    '#Region "replace"
-	    Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
-	        args.TabItem = New MyTabStripItem(args.TabItem.TabPanel)
-	    End Sub
-	    '#End Region
-	
-	End Class
-	'#Region "Item"
-	Friend Class MyTabStripItem
-	    Inherits TabStripItem
-	
-	    Public Sub New(ByVal panel As TabPanel)
-	        MyBase.New(panel)
-	    End Sub
-	    Protected Overrides Sub CreateChildElements()
-	        MyBase.CreateChildElements()
-	        Me.Children.Add(CreateCustomElement())
-	    End Sub
-	    Private Function CreateCustomElement() As RadElement
-	        Dim element As New StackLayoutElement()
-	        element.Orientation = Orientation.Horizontal
-	        element.StretchHorizontally = True
-	        element.MinSize = New System.Drawing.Size(100, 0)
-	
-	        Dim button As New RadButtonElement()
-	        button.Text = "Search"
-	        element.Children.Add(button)
-	
-	        Dim textbox As New RadTextBoxControlElement()
-	        element.Children.Add(textbox)
-	        element.Margin = New Padding(5, 2, 2, 2)
-	        Me.DrawText = False
-	        Me.Padding = New Padding(40, 5, 40, 5)
-	
-	        Return element
-	    End Function
-	    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-	        Get
-	            Return GetType(TabStripItem)
-	        End Get
-	    End Property
-	End Class
-	'#End Region
-	
+	{{endregion}}
 
 
 
@@ -352,8 +192,7 @@ The TabStripItemCreating event can be used for replacing the entire element as w
 	        End Get
 	    End Property
 	End Class
-	'#End Region
-	
+	{{endregion}}
 
 
 
@@ -377,46 +216,7 @@ Then you can just replace the default item:
 	    Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
 	        args.TabItem = New MyTabStripItem(args.TabItem.TabPanel)
 	    End Sub
-	    '#End Region
-	
-	End Class
-	'#Region "Item"
-	Friend Class MyTabStripItem
-	    Inherits TabStripItem
-	
-	    Public Sub New(ByVal panel As TabPanel)
-	        MyBase.New(panel)
-	    End Sub
-	    Protected Overrides Sub CreateChildElements()
-	        MyBase.CreateChildElements()
-	        Me.Children.Add(CreateCustomElement())
-	    End Sub
-	    Private Function CreateCustomElement() As RadElement
-	        Dim element As New StackLayoutElement()
-	        element.Orientation = Orientation.Horizontal
-	        element.StretchHorizontally = True
-	        element.MinSize = New System.Drawing.Size(100, 0)
-	
-	        Dim button As New RadButtonElement()
-	        button.Text = "Search"
-	        element.Children.Add(button)
-	
-	        Dim textbox As New RadTextBoxControlElement()
-	        element.Children.Add(textbox)
-	        element.Margin = New Padding(5, 2, 2, 2)
-	        Me.DrawText = False
-	        Me.Padding = New Padding(40, 5, 40, 5)
-	
-	        Return element
-	    End Function
-	    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-	        Get
-	            Return GetType(TabStripItem)
-	        End Get
-	    End Property
-	End Class
-	'#End Region
-	
+	{{endregion}}
 
 
 
@@ -475,76 +275,7 @@ The tab items of the __DocumentWindows__ in __RadDock__ have a predefined shape 
 	        args.TabItem.Shape = New ChamferedRectShape()
 	        args.TabItem.Padding = New System.Windows.Forms.Padding(4, 4, 7, 4)
 	    End Sub
-	    '#End Region
-	#End If
-	
-	    '#Region "subscribe"
-	    Public Sub New()
-	        AddHandler RadDockEvents.TabStripItemCreating, AddressOf RadDockEvents_TabStripItemCreating
-	        InitializeComponent()
-	    End Sub
-	    '#End Region
-	
-	    '#Region "closed"
-	    Protected Overrides Sub OnClosed(ByVal e As EventArgs)
-	        RemoveHandler RadDockEvents.TabStripItemCreating, AddressOf RadDockEvents_TabStripItemCreating
-	        MyBase.OnClosed(e)
-	    End Sub
-	    '#End Region
-	
-	    '#Region "element"
-	    Private Sub RadDockEvents_TabStripItemCreating1(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
-	        Dim textbox As New RadTextBoxControlElement()
-	        textbox.Margin = New System.Windows.Forms.Padding(80, 5, 5, 5)
-	        textbox.MinSize = New System.Drawing.Size(50, 0)
-	        args.TabItem.Children.Add(textbox)
-	    End Sub
-	    '#End Region
-	
-	    '#Region "replace"
-	    Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
-	        args.TabItem = New MyTabStripItem(args.TabItem.TabPanel)
-	    End Sub
-	    '#End Region
-	
-	End Class
-	'#Region "Item"
-	Friend Class MyTabStripItem
-	    Inherits TabStripItem
-	
-	    Public Sub New(ByVal panel As TabPanel)
-	        MyBase.New(panel)
-	    End Sub
-	    Protected Overrides Sub CreateChildElements()
-	        MyBase.CreateChildElements()
-	        Me.Children.Add(CreateCustomElement())
-	    End Sub
-	    Private Function CreateCustomElement() As RadElement
-	        Dim element As New StackLayoutElement()
-	        element.Orientation = Orientation.Horizontal
-	        element.StretchHorizontally = True
-	        element.MinSize = New System.Drawing.Size(100, 0)
-	
-	        Dim button As New RadButtonElement()
-	        button.Text = "Search"
-	        element.Children.Add(button)
-	
-	        Dim textbox As New RadTextBoxControlElement()
-	        element.Children.Add(textbox)
-	        element.Margin = New Padding(5, 2, 2, 2)
-	        Me.DrawText = False
-	        Me.Padding = New Padding(40, 5, 40, 5)
-	
-	        Return element
-	    End Function
-	    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-	        Get
-	            Return GetType(TabStripItem)
-	        End Get
-	    End Property
-	End Class
-	'#End Region
-	
+	{{endregion}}
 
 
 
@@ -569,61 +300,7 @@ The tab items of the __DocumentWindows__ in __RadDock__ have a predefined shape 
 	        RemoveHandler RadDockEvents.TabStripItemCreating, AddressOf RadDockEvents_TabStripItemCreating
 	        MyBase.OnClosed(e)
 	    End Sub
-	    '#End Region
-	
-	    '#Region "element"
-	    Private Sub RadDockEvents_TabStripItemCreating1(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
-	        Dim textbox As New RadTextBoxControlElement()
-	        textbox.Margin = New System.Windows.Forms.Padding(80, 5, 5, 5)
-	        textbox.MinSize = New System.Drawing.Size(50, 0)
-	        args.TabItem.Children.Add(textbox)
-	    End Sub
-	    '#End Region
-	
-	    '#Region "replace"
-	    Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
-	        args.TabItem = New MyTabStripItem(args.TabItem.TabPanel)
-	    End Sub
-	    '#End Region
-	
-	End Class
-	'#Region "Item"
-	Friend Class MyTabStripItem
-	    Inherits TabStripItem
-	
-	    Public Sub New(ByVal panel As TabPanel)
-	        MyBase.New(panel)
-	    End Sub
-	    Protected Overrides Sub CreateChildElements()
-	        MyBase.CreateChildElements()
-	        Me.Children.Add(CreateCustomElement())
-	    End Sub
-	    Private Function CreateCustomElement() As RadElement
-	        Dim element As New StackLayoutElement()
-	        element.Orientation = Orientation.Horizontal
-	        element.StretchHorizontally = True
-	        element.MinSize = New System.Drawing.Size(100, 0)
-	
-	        Dim button As New RadButtonElement()
-	        button.Text = "Search"
-	        element.Children.Add(button)
-	
-	        Dim textbox As New RadTextBoxControlElement()
-	        element.Children.Add(textbox)
-	        element.Margin = New Padding(5, 2, 2, 2)
-	        Me.DrawText = False
-	        Me.Padding = New Padding(40, 5, 40, 5)
-	
-	        Return element
-	    End Function
-	    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-	        Get
-	            Return GetType(TabStripItem)
-	        End Get
-	    End Property
-	End Class
-	'#End Region
-	
+	{{endregion}}
 
 
 

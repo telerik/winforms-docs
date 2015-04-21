@@ -71,25 +71,7 @@ Here is an example of how to select the current word.
 	        Me.radRichTextEditor1.Document.Selection.AddSelectionStart(_startPosition)
 	        Me.radRichTextEditor1.Document.Selection.AddSelectionEnd(endPosition)
 	
-	        '#End Region
-	
-	        '#Region "multiselect"
-	
-	        Dim position As New DocumentPosition(Me.radRichTextEditor1.Document)
-	        Do
-	            'GetCurrentSpan().Text returns the word at the position
-	            Dim word As String = position.GetCurrentSpanBox().Text
-	            If word.Contains("RadRichTextEditor") Then
-	                Dim wordEndPosition As New DocumentPosition(position)
-	                wordEndPosition.MoveToCurrentWordEnd()
-	                Me.radRichTextEditor1.Document.Selection.AddSelectionStart(position)
-	                Me.radRichTextEditor1.Document.Selection.AddSelectionEnd(wordEndPosition)
-	            End If
-	        Loop While position.MoveToNextWordStart()
-	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -140,9 +122,7 @@ Here is an example of selecting each "RadRichTextEditor" word in the text. This 
 	            End If
 	        Loop While position.MoveToNextWordStart()
 	
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 ![richtexteditor-features-selection 001](images/richtexteditor-features-selection001.png)
 

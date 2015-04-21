@@ -85,92 +85,7 @@ The __RadDiagramConnection__
 	        connection1.ConnectionPoints.Add(New Point(200, 30))
 	
 	        RadDiagram1.Items.Add(connection1)
-	        '#End Region
-	
-	        '#Region "PolylineConnection"
-	
-	        Dim sourceShape As New RadDiagramShape() With { _
-	            .ShapeText = "source", _
-	            .ElementShape = New RoundRectShape(5), _
-	            .InternalElementColor = Color.Red _
-	        }
-	
-	        sourceShape.Position = New Telerik.Windows.Diagrams.Core.Point(150, 100)
-	        RadDiagram1.Items.Add(sourceShape)
-	
-	        Dim targetShape As New RadDiagramShape() With { _
-	            .ShapeText = "target", _
-	            .ElementShape = New RoundRectShape(5), _
-	            .InternalElementColor = Color.Red _
-	        }
-	
-	        targetShape.Position = New Telerik.Windows.Diagrams.Core.Point(400, 300)
-	        RadDiagram1.Items.Add(targetShape)
-	
-	        Dim polylineConnection As New RadDiagramConnection() With { _
-	            .Name = "connection1" _
-	        }
-	
-	        polylineConnection.Source = sourceShape
-	        polylineConnection.Target = targetShape
-	        polylineConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Polyline
-	        RadDiagram1.Items.Add(polylineConnection)
-	
-	        '#End Region
-	
-	        '#Region "ConnectionPolylineWithPoints"
-	
-	        polylineConnection.ConnectionPoints.Add(New Point(300, 140))
-	        polylineConnection.ConnectionPoints.Add(New Point(330, 280))
-	
-	        '#End Region
-	
-	        '#Region "BezierConnection"
-	
-	
-	        Dim bezierConnection As New RadDiagramConnection() With { _
-	            .Name = "connection1" _
-	        }
-	
-	        bezierConnection.Source = sourceShape
-	        bezierConnection.Target = targetShape
-	        bezierConnection.BezierTension = 16
-	        bezierConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Bezier
-	        RadDiagram1.Items.Add(bezierConnection)
-	
-	        '#End Region
-	
-	        '#Region "SplineConnection"
-	
-	        Dim splineConnection As New RadDiagramConnection() With { _
-	            .Name = "connection1" _
-	        }
-	
-	        splineConnection.Source = sourceShape
-	        splineConnection.Target = targetShape
-	        splineConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Spline
-	        splineConnection.ConnectionPoints.Add(New Point(140, 20))
-	        splineConnection.ConnectionPoints.Add(New Point(250, 150))
-	        splineConnection.ConnectionPoints.Add(New Point(350, 50))
-	        RadDiagram1.Items.Add(splineConnection)
-	
-	        '#End Region
-	
-	    End Sub
-	
-	    '#Region "AShape"
-	
-	    Public Class AShape
-	    Inherits ElementShape
-	        Public Overrides Function CreatePath(bounds As Rectangle) As GraphicsPath
-	            Dim path As New GraphicsPath()
-	            path.AddString("A", New FontFamily("Arial"), 0, 122, Point.Empty, StringFormat.GenericTypographic)
-	            Return path
-	        End Function
-	    End Class
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 ![diagram-diagram-items-connections 002](images/diagram-diagram-items-connections002.png)
 
@@ -249,61 +164,7 @@ The __RadDiagramConnection__
 	        polylineConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Polyline
 	        RadDiagram1.Items.Add(polylineConnection)
 	
-	        '#End Region
-	
-	        '#Region "ConnectionPolylineWithPoints"
-	
-	        polylineConnection.ConnectionPoints.Add(New Point(300, 140))
-	        polylineConnection.ConnectionPoints.Add(New Point(330, 280))
-	
-	        '#End Region
-	
-	        '#Region "BezierConnection"
-	
-	
-	        Dim bezierConnection As New RadDiagramConnection() With { _
-	            .Name = "connection1" _
-	        }
-	
-	        bezierConnection.Source = sourceShape
-	        bezierConnection.Target = targetShape
-	        bezierConnection.BezierTension = 16
-	        bezierConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Bezier
-	        RadDiagram1.Items.Add(bezierConnection)
-	
-	        '#End Region
-	
-	        '#Region "SplineConnection"
-	
-	        Dim splineConnection As New RadDiagramConnection() With { _
-	            .Name = "connection1" _
-	        }
-	
-	        splineConnection.Source = sourceShape
-	        splineConnection.Target = targetShape
-	        splineConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Spline
-	        splineConnection.ConnectionPoints.Add(New Point(140, 20))
-	        splineConnection.ConnectionPoints.Add(New Point(250, 150))
-	        splineConnection.ConnectionPoints.Add(New Point(350, 50))
-	        RadDiagram1.Items.Add(splineConnection)
-	
-	        '#End Region
-	
-	    End Sub
-	
-	    '#Region "AShape"
-	
-	    Public Class AShape
-	    Inherits ElementShape
-	        Public Overrides Function CreatePath(bounds As Rectangle) As GraphicsPath
-	            Dim path As New GraphicsPath()
-	            path.AddString("A", New FontFamily("Arial"), 0, 122, Point.Empty, StringFormat.GenericTypographic)
-	            Return path
-	        End Function
-	    End Class
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 If you want to change the route of the connection, you can add connection points in code-behind through the 
                 RadDiagramConnection.__ConnectionPoints__ property.
@@ -327,54 +188,7 @@ If you want to change the route of the connection, you can add connection points
 	        polylineConnection.ConnectionPoints.Add(New Point(300, 140))
 	        polylineConnection.ConnectionPoints.Add(New Point(330, 280))
 	
-	        '#End Region
-	
-	        '#Region "BezierConnection"
-	
-	
-	        Dim bezierConnection As New RadDiagramConnection() With { _
-	            .Name = "connection1" _
-	        }
-	
-	        bezierConnection.Source = sourceShape
-	        bezierConnection.Target = targetShape
-	        bezierConnection.BezierTension = 16
-	        bezierConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Bezier
-	        RadDiagram1.Items.Add(bezierConnection)
-	
-	        '#End Region
-	
-	        '#Region "SplineConnection"
-	
-	        Dim splineConnection As New RadDiagramConnection() With { _
-	            .Name = "connection1" _
-	        }
-	
-	        splineConnection.Source = sourceShape
-	        splineConnection.Target = targetShape
-	        splineConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Spline
-	        splineConnection.ConnectionPoints.Add(New Point(140, 20))
-	        splineConnection.ConnectionPoints.Add(New Point(250, 150))
-	        splineConnection.ConnectionPoints.Add(New Point(350, 50))
-	        RadDiagram1.Items.Add(splineConnection)
-	
-	        '#End Region
-	
-	    End Sub
-	
-	    '#Region "AShape"
-	
-	    Public Class AShape
-	    Inherits ElementShape
-	        Public Overrides Function CreatePath(bounds As Rectangle) As GraphicsPath
-	            Dim path As New GraphicsPath()
-	            path.AddString("A", New FontFamily("Arial"), 0, 122, Point.Empty, StringFormat.GenericTypographic)
-	            Return path
-	        End Function
-	    End Class
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 Sample of a curved Polyline connection:![diagram-diagram-items-connections 004](images/diagram-diagram-items-connections004.png)
 
@@ -416,39 +230,7 @@ Sample of a curved Polyline connection:![diagram-diagram-items-connections 004](
 	        bezierConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Bezier
 	        RadDiagram1.Items.Add(bezierConnection)
 	
-	        '#End Region
-	
-	        '#Region "SplineConnection"
-	
-	        Dim splineConnection As New RadDiagramConnection() With { _
-	            .Name = "connection1" _
-	        }
-	
-	        splineConnection.Source = sourceShape
-	        splineConnection.Target = targetShape
-	        splineConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Spline
-	        splineConnection.ConnectionPoints.Add(New Point(140, 20))
-	        splineConnection.ConnectionPoints.Add(New Point(250, 150))
-	        splineConnection.ConnectionPoints.Add(New Point(350, 50))
-	        RadDiagram1.Items.Add(splineConnection)
-	
-	        '#End Region
-	
-	    End Sub
-	
-	    '#Region "AShape"
-	
-	    Public Class AShape
-	    Inherits ElementShape
-	        Public Overrides Function CreatePath(bounds As Rectangle) As GraphicsPath
-	            Dim path As New GraphicsPath()
-	            path.AddString("A", New FontFamily("Arial"), 0, 122, Point.Empty, StringFormat.GenericTypographic)
-	            Return path
-	        End Function
-	    End Class
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 By default, when you create a Bezier connection and attach its endpoints to __RadDiagramShapes__, 
                 the position of the handle points of the connection will be calculated based on the connector positions. 
@@ -502,22 +284,6 @@ By default, when you create a Bezier connection and attach its endpoints to __Ra
 	        splineConnection.ConnectionPoints.Add(New Point(350, 50))
 	        RadDiagram1.Items.Add(splineConnection)
 	
-	        '#End Region
-	
-	    End Sub
-	
-	    '#Region "AShape"
-	
-	    Public Class AShape
-	    Inherits ElementShape
-	        Public Overrides Function CreatePath(bounds As Rectangle) As GraphicsPath
-	            Dim path As New GraphicsPath()
-	            path.AddString("A", New FontFamily("Arial"), 0, 122, Point.Empty, StringFormat.GenericTypographic)
-	            Return path
-	        End Function
-	    End Class
-	    '#End Region
-	
-	End Class
+	{{endregion}}
 
 

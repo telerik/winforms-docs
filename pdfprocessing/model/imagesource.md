@@ -42,20 +42,7 @@ __Example 1__ illustrates how you can create an ImageSource using a __FileStream
 	        Using source As FileStream = File.Open(filename, FileMode.Open)
 	            Dim imageSource As New ImageSource(source)
 	        End Using
-	        '#End Region
-	    End Sub
-	
-	    Private Function CreateFromBitmap(filename As String) As ImageSource
-	        '#Region "radpdfprocessing-model-imagesource_1"
-	        Dim bitmap As New BitmapImage()
-	        bitmap.BeginInit()
-	        bitmap.UriSource = New Uri(filename, UriKind.RelativeOrAbsolute)
-	        bitmap.EndInit()
-	
-	        Return bitmap.ToImageSource()
-	        '#End Region
-	    End Function
-	End Class
+	{{endregion}}
 
 
 
@@ -88,9 +75,7 @@ __RadPdfProcessing__ exposes an extension method allowing to convert every Bitma
 	        bitmap.EndInit()
 	
 	        Return bitmap.ToImageSource()
-	        '#End Region
-	    End Function
-	End Class
+	{{endregion}}
 
 
 

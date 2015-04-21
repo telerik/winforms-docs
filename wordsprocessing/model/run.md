@@ -41,37 +41,7 @@ The following code snippet creates a __Run__ elements and adds it to a
 	            Dim run As New Run(document)
 	            paragraph.Inlines.Add(run)
 	
-	            '#End Region
-	        End Sub
-	
-	        Private Sub AddRunToParagraph(document As RadFlowDocument, paragraph As Paragraph)
-	            '#Region "radwordsprocessing-model-run_1"
-	            Dim run As New Run(document)
-	            paragraph.Inlines.Insert(0, run)
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-run_2"
-	            ' Adds an empty run.
-	            Dim run1 As Run = paragraph.Inlines.AddRun()
-	
-	            ' Adds a run and set the text to the text property.
-	            Dim run2 As Run = paragraph.Inlines.AddRun("The text.")
-	            '#End Region
-	        End Sub
-	
-	
-	        Private Sub CreateRunhWithRadFlowDocumentEditor()
-	            '#Region "radwordsprocessing-model-run_3"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	
-	            ' Adds new run to the document
-	            Dim run1 As Run = editor.InsertText("First run ")
-	
-	            ' Adds new run and starts new paragraph
-	            Dim run2 As Run = editor.InsertLine("Second run")
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -96,30 +66,7 @@ You can add a run at a specific index in the __Inlines__ collection of a paragra
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRun.vb region=radwordsprocessing-model-run_1}}
 	            Dim run As New Run(document)
 	            paragraph.Inlines.Insert(0, run)
-	            '#End Region
-	
-	            '#Region "radwordsprocessing-model-run_2"
-	            ' Adds an empty run.
-	            Dim run1 As Run = paragraph.Inlines.AddRun()
-	
-	            ' Adds a run and set the text to the text property.
-	            Dim run2 As Run = paragraph.Inlines.AddRun("The text.")
-	            '#End Region
-	        End Sub
-	
-	
-	        Private Sub CreateRunhWithRadFlowDocumentEditor()
-	            '#Region "radwordsprocessing-model-run_3"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	
-	            ' Adds new run to the document
-	            Dim run1 As Run = editor.InsertText("First run ")
-	
-	            ' Adds new run and starts new paragraph
-	            Dim run2 As Run = editor.InsertLine("Second run")
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -147,22 +94,7 @@ You can also use the __AddRun()__ method of the __Inlines__ collection of a para
 	
 	            ' Adds a run and set the text to the text property.
 	            Dim run2 As Run = paragraph.Inlines.AddRun("The text.")
-	            '#End Region
-	        End Sub
-	
-	
-	        Private Sub CreateRunhWithRadFlowDocumentEditor()
-	            '#Region "radwordsprocessing-model-run_3"
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	
-	            ' Adds new run to the document
-	            Dim run1 As Run = editor.InsertText("First run ")
-	
-	            ' Adds new run and starts new paragraph
-	            Dim run2 As Run = editor.InsertLine("Second run")
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -193,9 +125,7 @@ Inserting text in the document can also be achieved with the [](6a2a5fb7-6df2-48
 	
 	            ' Adds new run and starts new paragraph
 	            Dim run2 As Run = editor.InsertLine("Second run")
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 

@@ -60,26 +60,7 @@ __Example 1__ demonstrates how to export a __RadFlowDocument__ instance to PDF a
 	            Dim document As Telerik.Windows.Documents.Flow.Model.RadFlowDocument = CreateRadFlowDocument()
 	            provider.Export(document, output)
 	        End Using
-	        '#End Region
-	
-	        '#Region "radwordsprocessing-formats-and-conversion-pdf-settings_1"
-	        provider.ExportSettings.ExtensibilityManager.RegisterNumberingStyleConverter(Telerik.Windows.Documents.Flow.Model.Lists.NumberingStyle.ChineseCounting, New ChineseCountingConverter())
-	        '#End Region
-	
-	    End Sub
-	
-	    Private Function CreateRadFlowDocument() As Telerik.Windows.Documents.Flow.Model.RadFlowDocument
-	        Return New Telerik.Windows.Documents.Flow.Model.RadFlowDocument()
-	    End Function
-	
-	    Private Class ChineseCountingConverter
-	        Implements INumberingStyleConverter
-	
-	        Public Function ConvertNumberToText(number As Integer) As String Implements INumberingStyleConverter.ConvertNumberToText
-	            Return ""
-	        End Function
-	    End Class
-	End Class
+	{{endregion}}
 
 
 
@@ -109,22 +90,7 @@ __Example 2__ shows how to register a custom *ChineseCountingConverter* class in
 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingPdfSettings.vb region=radwordsprocessing-formats-and-conversion-pdf-settings_1}}
 	        provider.ExportSettings.ExtensibilityManager.RegisterNumberingStyleConverter(Telerik.Windows.Documents.Flow.Model.Lists.NumberingStyle.ChineseCounting, New ChineseCountingConverter())
-	        '#End Region
-	
-	    End Sub
-	
-	    Private Function CreateRadFlowDocument() As Telerik.Windows.Documents.Flow.Model.RadFlowDocument
-	        Return New Telerik.Windows.Documents.Flow.Model.RadFlowDocument()
-	    End Function
-	
-	    Private Class ChineseCountingConverter
-	        Implements INumberingStyleConverter
-	
-	        Public Function ConvertNumberToText(number As Integer) As String Implements INumberingStyleConverter.ConvertNumberToText
-	            Return ""
-	        End Function
-	    End Class
-	End Class
+	{{endregion}}
 
 
 

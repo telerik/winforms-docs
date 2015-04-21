@@ -62,14 +62,7 @@ __ScatterAreaSeries__ plot their data using two numerical values. Once positione
 	        scatterSeries2.DataPoints.Add(New ScatterDataPoint(19, 19))
 	        scatterSeries2.Spline = True
 	        Me.radChartView1.Series.Add(scatterSeries2)
-	        '#End Region
-	
-	        '#Region "Stroke"
-	        scatterSeries2.StrokeMode = AreaSeriesStrokeMode.Points
-	        '#End Region
-	    End Sub
-	End Class
-	
+	{{endregion}}
 
 
 
@@ -99,9 +92,6 @@ The following list shows the most important properties of the ScaterArea series
 
 {{source=..\SamplesVB\ChartView\Series\ScatterAreraCode.vb region=Stroke}}
 	        scatterSeries2.StrokeMode = AreaSeriesStrokeMode.Points
-	        '#End Region
-	    End Sub
-	End Class
-	
+	{{endregion}}
 
 

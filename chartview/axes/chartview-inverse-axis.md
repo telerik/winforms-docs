@@ -140,8 +140,6 @@ This example will demosntrate the depths of crude oil wells in the period betwee
 	
 	        Me.RadChartView1.DataSource = tableDryHoles
 	        Me.RadChartView1.Series.Add(dryHoles)
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 

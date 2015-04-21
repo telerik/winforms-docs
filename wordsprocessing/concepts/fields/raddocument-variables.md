@@ -40,16 +40,7 @@ Document variables provide a mechanism to store information in the document in a
 	        Dim document As New RadFlowDocument()
 	        document.DocumentVariables("Job") = "Software Engineer"
 	        document.DocumentVariables.Add("Name", "Nancy Davolio")
-	        '#End Region
-	        '#Region "remove"
-	        document.DocumentVariables.Remove("Job")
-	        '#End Region
-	        Dim editor As New RadFlowDocumentEditor(document)
-	        '#Region "insert      "
-	        editor.InsertField("DOCVARIABLE Name", "Nancy Davolio")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -77,13 +68,7 @@ Removing defined variables can be achieved by using the __Remove()__ method of t
 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentVariables.vb region=remove}}
 	        document.DocumentVariables.Remove("Job")
-	        '#End Region
-	        Dim editor As New RadFlowDocumentEditor(document)
-	        '#Region "insert      "
-	        editor.InsertField("DOCVARIABLE Name", "Nancy Davolio")
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 

@@ -41,27 +41,7 @@ You can use the following code snippet to create a __TableRow__ and add it in a 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableRow.vb region=radwordsprocessing-model-tablerow_0}}
 	            Dim row As New TableRow(document)
 	            table.Rows.Add(row)
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateTablehMethod(table As Table)
-	            '#Region "radwordsprocessing-model-tablerow_1"
-	            Dim row As TableRow = table.Rows.AddTableRow()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateRowWithCells(table As Table)
-	            '#Region "radwordsprocessing-model-tablerow_2"
-	            Dim row As TableRow = table.Rows.AddTableRow()
-	
-	            For i As Integer = 0 To row.Table.GridColumnsCount - 1
-	                Dim cell As TableCell = row.Cells.AddTableCell()
-	                cell.Blocks.AddParagraph().Inlines.AddRun(String.Format("Cell 0, {0}", i))
-	                cell.PreferredWidth = New TableWidthUnit(50)
-	            Next
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -83,21 +63,7 @@ In order to create a __TableRow__ and add it in the document tree in the same ti
 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableRow.vb region=radwordsprocessing-model-tablerow_1}}
 	            Dim row As TableRow = table.Rows.AddTableRow()
-	            '#End Region
-	        End Sub
-	
-	        Private Sub CreateRowWithCells(table As Table)
-	            '#Region "radwordsprocessing-model-tablerow_2"
-	            Dim row As TableRow = table.Rows.AddTableRow()
-	
-	            For i As Integer = 0 To row.Table.GridColumnsCount - 1
-	                Dim cell As TableCell = row.Cells.AddTableCell()
-	                cell.Blocks.AddParagraph().Inlines.AddRun(String.Format("Cell 0, {0}", i))
-	                cell.PreferredWidth = New TableWidthUnit(50)
-	            Next
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 
@@ -167,9 +133,7 @@ The following code snippet shows how to add a number of __TableCell__ elements i
 	                cell.Blocks.AddParagraph().Inlines.AddRun(String.Format("Cell 0, {0}", i))
 	                cell.PreferredWidth = New TableWidthUnit(50)
 	            Next
-	            '#End Region
-	        End Sub
-	    End Class
+	{{endregion}}
 
 
 

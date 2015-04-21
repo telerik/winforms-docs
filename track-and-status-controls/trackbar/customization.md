@@ -137,9 +137,6 @@ RadTrackBar introduces TickFormatting and LableFormatting events in order to fac
 	            e.LabelElement.Text = dt.ToString("ddd", New CultureInfo("en-US"))
 	        End If
 	    End Sub
-	#End Region
-	End Class
-	
-	
+	{{endregion}}
 
 ![track-and-status-controls-trackbar-customization 001](images/track-and-status-controls-trackbar-customization001.png)

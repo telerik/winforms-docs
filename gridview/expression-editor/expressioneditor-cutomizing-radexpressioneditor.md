@@ -53,7 +53,7 @@ Although Telerik provides a great number of predefined functions, there could be
 	        Return Math.PI
 	    End Function
 	End Class
-	'#End Region
+	{{endregion}}
 
 
 

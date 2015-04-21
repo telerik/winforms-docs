@@ -68,66 +68,7 @@ __Example 1__ creates a hyperlink to a web address.
 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_0}}
 	        Dim webAddres As HyperlinkInfo = HyperlinkInfo.CreateHyperlink("http://google.com", "Google")
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp2()
-	        ' #Region radspreadprocessing-features-hyperlink_1
-	        Dim inDocument As HyperlinkInfo = HyperlinkInfo.CreateInDocumentHyperlink("A1:B3", "Go to A1:B3")
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp3()
-	        ' #Region radspreadprocessing-features-hyperlink_2
-	        Dim mailto As HyperlinkInfo = HyperlinkInfo.CreateMailtoHyperlink("someOne@someCompany.com", "someSubject", "Mail to someOne")
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp4()
-	        Dim webAddres As HyperlinkInfo
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        ' #Region radspreadprocessing-features-hyperlink_3
-	        Dim a1Index As New CellIndex(0, 0)
-	        Dim spreadsheetHyperlink As SpreadsheetHyperlink = worksheet.Hyperlinks.Add(a1Index, webAddres)
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp5()
-	        Dim workbook1 As New Workbook()
-	        Dim worksheet1 As Worksheet = workbook1.Worksheets.Add()
-	        Dim webAddres As HyperlinkInfo = HyperlinkInfo.CreateHyperlink("http://google.com", "Google")
-	
-	        ' #Region radspreadprocessing-features-hyperlink_4
-	        Dim a1Index As New CellIndex(0, 0)
-	        Dim b3Index As New CellIndex(2, 1)
-	        Dim a1b3Range As New CellRange(a1Index, b3Index)
-	        '#End Region
-	
-	        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink = worksheet1.Hyperlinks.Add(a1Index, webAddres)
-	
-	        ' #Region radspreadprocessing-features-hyperlink_5
-	        Dim containingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetContainingHyperlinks(a1b3Range)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_6
-	        Dim intersectingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetIntersectingHyperlinks(a1b3Range)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_7
-	        Dim canGetHyperlink As Boolean = worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_8
-	        Dim canGetHyperlinkExact As Boolean = worksheet1.Hyperlinks.TryGetHyperlinkExact(a1b3Range, spreadsheetHyperlink1)
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp6()
-	        Dim workbook1 As New Workbook()
-	        Dim worksheet1 As Worksheet = workbook1.Worksheets.Add()
-	        Dim a1Index As New CellIndex(0, 0)
-	
-	        ' #Region radspreadprocessing-features-hyperlink_9
-	        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink
-	        If worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1) Then
-	            worksheet1.Hyperlinks.Remove(spreadsheetHyperlink1)
-	        End If
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -146,61 +87,7 @@ __Example 2__ creates a hyperlink to a cell range somewhere in the document.
 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_1}}
 	        Dim inDocument As HyperlinkInfo = HyperlinkInfo.CreateInDocumentHyperlink("A1:B3", "Go to A1:B3")
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp3()
-	        ' #Region radspreadprocessing-features-hyperlink_2
-	        Dim mailto As HyperlinkInfo = HyperlinkInfo.CreateMailtoHyperlink("someOne@someCompany.com", "someSubject", "Mail to someOne")
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp4()
-	        Dim webAddres As HyperlinkInfo
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        ' #Region radspreadprocessing-features-hyperlink_3
-	        Dim a1Index As New CellIndex(0, 0)
-	        Dim spreadsheetHyperlink As SpreadsheetHyperlink = worksheet.Hyperlinks.Add(a1Index, webAddres)
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp5()
-	        Dim workbook1 As New Workbook()
-	        Dim worksheet1 As Worksheet = workbook1.Worksheets.Add()
-	        Dim webAddres As HyperlinkInfo = HyperlinkInfo.CreateHyperlink("http://google.com", "Google")
-	
-	        ' #Region radspreadprocessing-features-hyperlink_4
-	        Dim a1Index As New CellIndex(0, 0)
-	        Dim b3Index As New CellIndex(2, 1)
-	        Dim a1b3Range As New CellRange(a1Index, b3Index)
-	        '#End Region
-	
-	        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink = worksheet1.Hyperlinks.Add(a1Index, webAddres)
-	
-	        ' #Region radspreadprocessing-features-hyperlink_5
-	        Dim containingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetContainingHyperlinks(a1b3Range)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_6
-	        Dim intersectingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetIntersectingHyperlinks(a1b3Range)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_7
-	        Dim canGetHyperlink As Boolean = worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_8
-	        Dim canGetHyperlinkExact As Boolean = worksheet1.Hyperlinks.TryGetHyperlinkExact(a1b3Range, spreadsheetHyperlink1)
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp6()
-	        Dim workbook1 As New Workbook()
-	        Dim worksheet1 As Worksheet = workbook1.Worksheets.Add()
-	        Dim a1Index As New CellIndex(0, 0)
-	
-	        ' #Region radspreadprocessing-features-hyperlink_9
-	        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink
-	        If worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1) Then
-	            worksheet1.Hyperlinks.Remove(spreadsheetHyperlink1)
-	        End If
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -219,56 +106,7 @@ __Example 3__ create a hyperlink to an email address.
 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_2}}
 	        Dim mailto As HyperlinkInfo = HyperlinkInfo.CreateMailtoHyperlink("someOne@someCompany.com", "someSubject", "Mail to someOne")
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp4()
-	        Dim webAddres As HyperlinkInfo
-	        Dim workbook As New Workbook()
-	        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-	        ' #Region radspreadprocessing-features-hyperlink_3
-	        Dim a1Index As New CellIndex(0, 0)
-	        Dim spreadsheetHyperlink As SpreadsheetHyperlink = worksheet.Hyperlinks.Add(a1Index, webAddres)
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp5()
-	        Dim workbook1 As New Workbook()
-	        Dim worksheet1 As Worksheet = workbook1.Worksheets.Add()
-	        Dim webAddres As HyperlinkInfo = HyperlinkInfo.CreateHyperlink("http://google.com", "Google")
-	
-	        ' #Region radspreadprocessing-features-hyperlink_4
-	        Dim a1Index As New CellIndex(0, 0)
-	        Dim b3Index As New CellIndex(2, 1)
-	        Dim a1b3Range As New CellRange(a1Index, b3Index)
-	        '#End Region
-	
-	        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink = worksheet1.Hyperlinks.Add(a1Index, webAddres)
-	
-	        ' #Region radspreadprocessing-features-hyperlink_5
-	        Dim containingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetContainingHyperlinks(a1b3Range)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_6
-	        Dim intersectingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetIntersectingHyperlinks(a1b3Range)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_7
-	        Dim canGetHyperlink As Boolean = worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_8
-	        Dim canGetHyperlinkExact As Boolean = worksheet1.Hyperlinks.TryGetHyperlinkExact(a1b3Range, spreadsheetHyperlink1)
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp6()
-	        Dim workbook1 As New Workbook()
-	        Dim worksheet1 As Worksheet = workbook1.Worksheets.Add()
-	        Dim a1Index As New CellIndex(0, 0)
-	
-	        ' #Region radspreadprocessing-features-hyperlink_9
-	        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink
-	        If worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1) Then
-	            worksheet1.Hyperlinks.Remove(spreadsheetHyperlink1)
-	        End If
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -294,47 +132,7 @@ __Example 4__ assigns the hyperlink created in __Example 1__ to A1:
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_3}}
 	        Dim a1Index As New CellIndex(0, 0)
 	        Dim spreadsheetHyperlink As SpreadsheetHyperlink = worksheet.Hyperlinks.Add(a1Index, webAddres)
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp5()
-	        Dim workbook1 As New Workbook()
-	        Dim worksheet1 As Worksheet = workbook1.Worksheets.Add()
-	        Dim webAddres As HyperlinkInfo = HyperlinkInfo.CreateHyperlink("http://google.com", "Google")
-	
-	        ' #Region radspreadprocessing-features-hyperlink_4
-	        Dim a1Index As New CellIndex(0, 0)
-	        Dim b3Index As New CellIndex(2, 1)
-	        Dim a1b3Range As New CellRange(a1Index, b3Index)
-	        '#End Region
-	
-	        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink = worksheet1.Hyperlinks.Add(a1Index, webAddres)
-	
-	        ' #Region radspreadprocessing-features-hyperlink_5
-	        Dim containingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetContainingHyperlinks(a1b3Range)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_6
-	        Dim intersectingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetIntersectingHyperlinks(a1b3Range)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_7
-	        Dim canGetHyperlink As Boolean = worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_8
-	        Dim canGetHyperlinkExact As Boolean = worksheet1.Hyperlinks.TryGetHyperlinkExact(a1b3Range, spreadsheetHyperlink1)
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp6()
-	        Dim workbook1 As New Workbook()
-	        Dim worksheet1 As Worksheet = workbook1.Worksheets.Add()
-	        Dim a1Index As New CellIndex(0, 0)
-	
-	        ' #Region radspreadprocessing-features-hyperlink_9
-	        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink
-	        If worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1) Then
-	            worksheet1.Hyperlinks.Remove(spreadsheetHyperlink1)
-	        End If
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -362,36 +160,7 @@ __Example 5__ defines two indexes and then a cell range out of those indexes.
 	        Dim a1Index As New CellIndex(0, 0)
 	        Dim b3Index As New CellIndex(2, 1)
 	        Dim a1b3Range As New CellRange(a1Index, b3Index)
-	        '#End Region
-	
-	        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink = worksheet1.Hyperlinks.Add(a1Index, webAddres)
-	
-	        ' #Region radspreadprocessing-features-hyperlink_5
-	        Dim containingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetContainingHyperlinks(a1b3Range)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_6
-	        Dim intersectingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetIntersectingHyperlinks(a1b3Range)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_7
-	        Dim canGetHyperlink As Boolean = worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_8
-	        Dim canGetHyperlinkExact As Boolean = worksheet1.Hyperlinks.TryGetHyperlinkExact(a1b3Range, spreadsheetHyperlink1)
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp6()
-	        Dim workbook1 As New Workbook()
-	        Dim worksheet1 As Worksheet = workbook1.Worksheets.Add()
-	        Dim a1Index As New CellIndex(0, 0)
-	
-	        ' #Region radspreadprocessing-features-hyperlink_9
-	        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink
-	        If worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1) Then
-	            worksheet1.Hyperlinks.Remove(spreadsheetHyperlink1)
-	        End If
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -410,30 +179,7 @@ __Example 5__ defines two indexes and then a cell range out of those indexes.
 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_5}}
 	        Dim containingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetContainingHyperlinks(a1b3Range)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_6
-	        Dim intersectingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetIntersectingHyperlinks(a1b3Range)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_7
-	        Dim canGetHyperlink As Boolean = worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_8
-	        Dim canGetHyperlinkExact As Boolean = worksheet1.Hyperlinks.TryGetHyperlinkExact(a1b3Range, spreadsheetHyperlink1)
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp6()
-	        Dim workbook1 As New Workbook()
-	        Dim worksheet1 As Worksheet = workbook1.Worksheets.Add()
-	        Dim a1Index As New CellIndex(0, 0)
-	
-	        ' #Region radspreadprocessing-features-hyperlink_9
-	        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink
-	        If worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1) Then
-	            worksheet1.Hyperlinks.Remove(spreadsheetHyperlink1)
-	        End If
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -455,27 +201,7 @@ __Example 5__ defines two indexes and then a cell range out of those indexes.
 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_6}}
 	        Dim intersectingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetIntersectingHyperlinks(a1b3Range)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_7
-	        Dim canGetHyperlink As Boolean = worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_8
-	        Dim canGetHyperlinkExact As Boolean = worksheet1.Hyperlinks.TryGetHyperlinkExact(a1b3Range, spreadsheetHyperlink1)
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp6()
-	        Dim workbook1 As New Workbook()
-	        Dim worksheet1 As Worksheet = workbook1.Worksheets.Add()
-	        Dim a1Index As New CellIndex(0, 0)
-	
-	        ' #Region radspreadprocessing-features-hyperlink_9
-	        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink
-	        If worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1) Then
-	            worksheet1.Hyperlinks.Remove(spreadsheetHyperlink1)
-	        End If
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -494,24 +220,7 @@ __Example 5__ defines two indexes and then a cell range out of those indexes.
 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_7}}
 	        Dim canGetHyperlink As Boolean = worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1)
-	        '#End Region
-	        ' #Region radspreadprocessing-features-hyperlink_8
-	        Dim canGetHyperlinkExact As Boolean = worksheet1.Hyperlinks.TryGetHyperlinkExact(a1b3Range, spreadsheetHyperlink1)
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp6()
-	        Dim workbook1 As New Workbook()
-	        Dim worksheet1 As Worksheet = workbook1.Worksheets.Add()
-	        Dim a1Index As New CellIndex(0, 0)
-	
-	        ' #Region radspreadprocessing-features-hyperlink_9
-	        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink
-	        If worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1) Then
-	            worksheet1.Hyperlinks.Remove(spreadsheetHyperlink1)
-	        End If
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -533,21 +242,7 @@ __Example 5__ defines two indexes and then a cell range out of those indexes.
 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_8}}
 	        Dim canGetHyperlinkExact As Boolean = worksheet1.Hyperlinks.TryGetHyperlinkExact(a1b3Range, spreadsheetHyperlink1)
-	        '#End Region
-	    End Sub
-	    Public Sub Hyp6()
-	        Dim workbook1 As New Workbook()
-	        Dim worksheet1 As Worksheet = workbook1.Worksheets.Add()
-	        Dim a1Index As New CellIndex(0, 0)
-	
-	        ' #Region radspreadprocessing-features-hyperlink_9
-	        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink
-	        If worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1) Then
-	            worksheet1.Hyperlinks.Remove(spreadsheetHyperlink1)
-	        End If
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -578,8 +273,6 @@ __Example 10__ removes a hyperlink.
 	        If worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1) Then
 	            worksheet1.Hyperlinks.Remove(spreadsheetHyperlink1)
 	        End If
-	        '#End Region
-	    End Sub
-	End Class
+	{{endregion}}
 
 
