@@ -110,9 +110,8 @@ First, our model. It must implement the __INotifyPropertyChanged__ interface, so
 	            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
 	        End Sub
 	    End Class
-	#End Region
 	End Class
-
+{{endregion}}
 
 
 Now drag a __RadCheckedDropDownList__ to the form and a __RadButton__. The button will be used to check a random item in our data source. In order to bind
@@ -189,52 +188,7 @@ Now drag a __RadCheckedDropDownList__ to the form and a __RadButton__. The butto
 	        Dim item As Model = Me.dataSource(index)
 	        item.Selected = Not item.Selected
 	    End Sub
-	#End Region
-	
-	#Region "Model"
-	    Private Class Model
-	        Implements INotifyPropertyChanged
-	        Private m_id As Integer
-	        Private m_selected As Boolean
-	        Private m_name As String
-	
-	        Public Property Id() As Integer
-	            Get
-	                Return Me.m_id
-	            End Get
-	            Set(value As Integer)
-	                Me.m_id = value
-	                Me.OnPropertyChanged("Id")
-	            End Set
-	        End Property
-	
-	        Public Property Selected() As Boolean
-	            Get
-	                Return Me.m_selected
-	            End Get
-	            Set(value As Boolean)
-	                Me.m_selected = value
-	                Me.OnPropertyChanged("Selected")
-	            End Set
-	        End Property
-	
-	        Public Property Name() As String
-	            Get
-	                Return Me.m_name
-	            End Get
-	            Set(value As String)
-	                Me.m_name = value
-	                Me.OnPropertyChanged("Name")
-	            End Set
-	        End Property
-	
-	        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
-	
-	        Protected Overridable Sub OnPropertyChanged(propName As String)
-	            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propName))
-	        End Sub
-	    End Class
-	#End Region
-	End Class
+{{endregion}}
+	   
 
 

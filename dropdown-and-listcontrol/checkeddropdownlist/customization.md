@@ -62,7 +62,7 @@ In order to customize the editable area you must subscribe to the __TextBlockFor
 	    End Sub
 	    '#End Region
 	End Class
-
+{{endregion}}
 
 
 #### __[C#] Modify properties__
@@ -108,7 +108,7 @@ In order to customize the editable area you must subscribe to the __TextBlockFor
 	    End Sub
 	    '#End Region
 	End Class
-
+{{endregion}}
 ![dropdown-and-listcontrol-checkeddropdownlist-customization 001](images/dropdown-and-listcontrol-checkeddropdownlist-customization001.png)
 
 ## Customizing the drop down items
@@ -154,7 +154,7 @@ Customizing the drop down items is similar. Subscribe to the __VisualListItemFor
 	    End Sub
 	    '#End Region
 	End Class
-
+{{endregion}}
 
 
 #### __[C#] Modify properties__
@@ -189,5 +189,5 @@ Customizing the drop down items is similar. Subscribe to the __VisualListItemFor
 	    End Sub
 	    '#End Region
 	End Class
-
+{{endregion}}
 ![dropdown-and-listcontrol-checkeddropdownlist-customization 002](images/dropdown-and-listcontrol-checkeddropdownlist-customization002.png)

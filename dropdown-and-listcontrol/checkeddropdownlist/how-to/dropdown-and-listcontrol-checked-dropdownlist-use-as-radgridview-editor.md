@@ -59,7 +59,7 @@ Add a __RadGridView__ to a Form and add a regular text box column which will use
 	            this.radGridView1.EditorRequired += radGridView1_EditorRequired;
 	        }
 	        
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -95,7 +95,7 @@ Add a __RadGridView__ to a Form and add a regular text box column which will use
 	        AddHandler Me.radGridView1.EditorRequired, AddressOf radGridView1_EditorRequired
 	    End Sub
 	
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -118,7 +118,7 @@ The next step is to replace the editor the default editor. This can be achieved 
 	            }
 	        }
 	    
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -135,7 +135,7 @@ The next step is to replace the editor the default editor. This can be achieved 
 	        End If
 	    End Sub
 	
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -162,7 +162,7 @@ The final step is the creating of the editor. This can be achieved by creating a
 	        }
 	    }
 	
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -182,7 +182,8 @@ The final step is the creating of the editor. This can be achieved by creating a
 	        End Set
 	    End Property
 	End Class
-	
-	{{endregion}}
+
+
+{{endregion}}
 
 

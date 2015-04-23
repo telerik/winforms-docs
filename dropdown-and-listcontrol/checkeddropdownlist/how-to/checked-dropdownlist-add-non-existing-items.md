@@ -33,21 +33,8 @@ For this purpose __RadCheckedDropDownList__ has the __TokenValidating__ event. I
 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.vb region=Subscribe}}
 	        AddHandler Me.RadCheckedDropDownList1.TokenValidating, AddressOf radCheckedDropDownList1_TokenValidating
-	        '#End Region
-	    End Sub
+	   {{endregion}}
 	
-	#Region "Handler"
-	    Private Sub radCheckedDropDownList1_TokenValidating(sender As Object, e As TokenValidatingEventArgs)
-	        If Not e.IsValidToken Then
-	            Dim textBox As AutoCompleteBoxViewElement = TryCast(sender, AutoCompleteBoxViewElement)
-	            If Me.RadCheckedDropDownList1.DropDownListElement.FindStringExact(e.Text) = -1 Then
-	                Me.RadCheckedDropDownList1.Items.Add(New RadCheckedListDataItem(e.Text, False))
-	                e.IsValidToken = True
-	            End If
-	        End If
-	    End Sub
-	#End Region
-	End Class
 
 
 
@@ -82,7 +69,6 @@ For this purpose __RadCheckedDropDownList__ has the __TokenValidating__ event. I
 	            End If
 	        End If
 	    End Sub
-	#End Region
-	End Class
+	{{endregion}}
 
 

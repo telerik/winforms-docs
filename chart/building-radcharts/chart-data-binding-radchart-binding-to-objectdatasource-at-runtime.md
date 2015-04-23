@@ -91,5 +91,5 @@ The code below demonstrates binding to an [ObjectDataSource](http://msdn2.micros
 	        Return list
 	    End Function
 	End Class
-
+{{endregion}}
 

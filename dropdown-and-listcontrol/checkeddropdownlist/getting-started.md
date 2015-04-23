@@ -49,10 +49,6 @@ Adding items at runtime is quite similar to the design-time prodcedure. Below yo
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\GettingStarted1.vb region=AddItems}}
 	        For i As Integer = 0 To 9
 	            Me.RadCheckedDropDownList1.Items.Add(New RadCheckedListDataItem("Item " + i, i Mod 2 = 0))
-	        Next
-	        '#End Region
-	
-	    End Sub
-	End Class
-
+	        Next	       
+{{endregion}}
 ![dropdown-and-listcontrol-checkeddropdownlist-getting-started 002](images/dropdown-and-listcontrol-checkeddropdownlist-getting-started002.png)
