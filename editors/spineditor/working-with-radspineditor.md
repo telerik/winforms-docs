@@ -16,7 +16,7 @@ position: 1
 
 __InterceptArrowKeys__: This property when true (the default) allows the user to press the UP ARROW and DOWN ARROW keys to select values. The focus must be on the control for this functionality. 
 
-__ReadOnly__: This property when true prevents direct text entry and allows the text values to be changed through the up and down arrows only. By default this property is turned off. 
+__ReadOnly__: When this property is set to true the end user cannot change the control value. By default this property is turned off
 
 __RightToLeft:__If this property is set to __Yes__the arrow buttons are displayed on the left, text on the right.
 
