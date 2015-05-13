@@ -19,15 +19,9 @@ A purchased license of the Telerik UI for WinForms suite includes a run time roy
 * Windows Forms applications for internal company use.
             
 
-* Commercial Windows Forms applications deployed for end users by Telerik customers.
-              __In this case, make sure to protect Telerik's intellectual property by using one of the methods below
-                (ILMerge to merge the Telerik WinForms assemblies with the executable file
-                (this does not apply to the Document processing assemblies, see__ OR __build the Telerik.WinControls.dll assembly from source code)__
+* Commercial Windows Forms applications deployed for end users by Telerik customers. __In this case, make sure to protect Telerik's intellectual property by using one of the methods below (ILMerge to merge the Telerik WinForms assemblies with the executable file (this does not apply to the Document processing assemblies, see below) of your application__ OR __build the Telerik.WinControls.dll assembly from source code)__
 
-* Shrink-wrapped software in which the Telerik UI for WinForms are integrated. 
-              __In this case, make sure to protect Telerik's intellectual property by using one of the methods below
-                (ILMerge to merge the Telerik WinForms assemblies with the executable file of your application
-                (this does not apply to the Document processing assemblies, see__ OR __building the Telerik.WinControls.dll assembly from source code)__
+* Shrink-wrapped software in which the Telerik UI for WinForms are integrated. __In this case, make sure to protect Telerik's intellectual property by using one of the methods below (ILMerge to merge the Telerik WinForms assemblies with the executable file of your application (this does not apply to the Document processing assemblies, see below)__ OR __building the Telerik.WinControls.dll assembly from source code)__
 
 ## Examples of Uses that Require Discussion
 
@@ -39,22 +33,17 @@ A purchased license of the Telerik UI for WinForms suite includes a run time roy
 
 * Open source products.
 
-For further details, please refer to the [license agreement]({%slug licensing-license-agreement%}), or send e-mail to
-          [sales@telerik.com](mailto:sales@telerik.com?subject=Redistributing Telerik UI for WinForms) to discuss your planned use of the controls.
+For further details, please refer to the [license agreement]({%slug licensing-license-agreement%}), or send e-mail to <a href="mailto:sales@telerik.com?subject=Redistributing Telerik UI for WinForms">sales@telerik.com</a> to discuss your planned use of the controls.
         
 
 ## ILMerge Telerik WinForms assemblies
 
-When you deploy your application, you may prefer to do it as a single executable rather than an executable
-          referencing many external assemblies. In this case, you need to ILMerge the assemblies with the executable.
-          Here is a link to MSDN from where you can download the ILMerge executable:
-          [Download ILMerge](http://www.microsoft.com/download/en/details.aspx?id=17630)
+When you deploy your application, you may prefer to do it as a single executable rather than an executable referencing many external assemblies. In this case, you need to ILMerge the assemblies with the executable. Here is a link to MSDN from where you can download the ILMerge executable: [Download ILMerge](http://www.microsoft.com/download/en/details.aspx?id=17630)
 
 In order to use this approach you need to set the __ResolverTypesInCurrentAssembly__ property to *true* in the __static__ constructor of the first form that is created and loaded when your application starts:
         
 
->Please make sure that you set the ResolverTypesInCurrentAssembly property in the __static__ constructor
-            of the form. This approach will not work if the property is set somewhere else.
+>Please make sure that you set the ResolverTypesInCurrentAssembly property in the __static__ constructor of the form. This approach will not work if the property is set somewhere else.
           
 
 #### __[C#]__
@@ -108,88 +97,89 @@ Next, you should build your solution and then ILMerge the built application exec
 
 >Note: This commands will work in case the application executable and the Telerik assemblies are contained in the ILMerge tool folder. In any other case, you will need to include the full path to the assemblies/executables. In addition, the Telerik assemblies that should be given as parameters, should be those referenced by your application.
 
-	
-              ilmerge /target:winexe /out:MergedApplicationExecutable.exe ApplicationExecutable.exe TelerikCommon.dll Telerik.WinControls.UI.dll Telerik.WinControls.dll
+    ilmerge /target:winexe /out:MergedApplicationExecutable.exe ApplicationExecutable.exe TelerikCommon.dll Telerik.WinControls.UI.dll Telerik.WinControls.dll
             
 
 
 
 >If the referenced assemblies are .NET 4.0 assemblies, you need to specify the targetplatform also:
-
-	
-              ILMerge.exe /target:winexe /targetplatform:"v4, C:\Windows\Microsoft.NET\Framework\v4.0.30319"/out:MergedApplicationExecutable.exe AppliocationExecutable.exe Telerik.WinControls.dll Telerik.WinControls.UI.dll TelerikCommon.dll
+   
+    ILMerge.exe /target:winexe /targetplatform:"v4, C:\Windows\Microsoft.NET\Framework\v4.0.30319"/out:MergedApplicationExecutable.exe AppliocationExecutable.exe Telerik.WinControls.dll Telerik.WinControls.UI.dll TelerikCommon.dll
             
-
-
 
 The MergedApplicationExecutable.exe is now a stand-alone application executable that does not need any additional references to the Telerik assemblies.
 
 ## Building the Telerik assembles from source code - using the OemAssemblyName
 
-This method requires modifications to the source files,
-          which are distributed as part of the Subscription license.
-          If you have purchased a Subscription license for Telerik UI for WinForms,
-          and would like to explore this method, the following information
-          will allow you to do so.
+This method requires modifications to the source files, which are distributed as part of the Subscription license. If you have purchased a Subscription license for Telerik UI for WinForms, and would like to explore this method, the following information will allow you to do so.
         
 
-Protecting Telerik UI for WinForms requires the Telerik assemblies to be built from source code.
-          The essential part of this approach is that you need to introduce a small modification to the
-          Telerik.WinControls project. For brevity this document assumes that the source distribution ZIP file is extracted
-          in C:\Telerik UI for WinForms Source:
+Protecting Telerik UI for WinForms requires the Telerik assemblies to be built from source code. The essential part of this approach is that you need to introduce a small modification to the Telerik.WinControls project. For brevity this document assumes that the source distribution ZIP file is extracted in C:\Telerik UI for WinForms Source:
         
-
-1. Open the following solution file:
-              C:\Telerik UI for WinForms Source\RadControlsVS2010.sln
+1. Open the following solution file: C:\Telerik UI for WinForms Source\RadControlsVS2010.sln
             
 
-1. In the properties for the Telerik.WinControls project, open the Build tab and add an OEM
-              conditional compilation symbol, as shown below:
-            Before:              ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows001.png)After: ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 002](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows002.png)
+1. In the properties for the Telerik.WinControls project, open the Build tab and add an OEM conditional compilation symbol, as shown below:
+ 
+Before:
+             
+ ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows001.png)
+
+After: 
+
+![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 002](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows002.png)
 
 >Note: If you are building the .NET4.0 version of the assemblies, you need to use the Release40 build configuration. In this case, when you add the "OEM" symbol, you need to keep the existing NET4 symbol - "OEM; NET4".
 
-1. Open C:\Telerik UI for WinForms Source\RadControl\TPF\Control\
-              RadControl.cs in a text editor (notepad, Visual Studio etc).
+1. Open C:\Telerik UI for WinForms Source\RadControl\TPF\Control\RadControl.cs in a text editor (notepad, Visual Studio etc).
             
 
-1. Uncomment the following line and change the string to you application’s assembly
-              name:
-            Before:
-            ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 003](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows003.png)After:                ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 004](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows004.png)
+1. Uncomment the following line and change the string to you application’s assembly name:
+    
+    Before:
+            
+    ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 003](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows003.png)
+
+    After:                
+
+    ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 004](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows004.png)
 
 1. Save RadControl.cs and rebuild the solution.
 
-1. In your application replace the __existing__ references to Telerik UI for WinForms assemblies with the ones built
-              from source code __and rebuild your project so it will use the newly build assemblies__.
+1. In your application replace the __existing__ references to Telerik UI for WinForms assemblies with the ones built from source code __and rebuild your project so it will use the newly build assemblies__.
             
 
-Once you finish these steps, and if you or someone else tries to use that assembly
-          from another application the evaluation dialog will appear (randomly).
-        ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 005](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows005.png)
+Once you finish these steps, and if you or someone else tries to use that assembly from another application the evaluation dialog will appear (randomly).
+
+    
+![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 005](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows005.png)
 
 ## Building the Telerik assembles from source code - using the OemPublicKeyToken
 
-This section demonstrates how to deploy a project with a public token key. We will assume that you have downloaded and extracted your source code distribution in
-          C:\Telerik UI for WinForms Source\RadControlsVS2010.sln:
+This section demonstrates how to deploy a project with a public token key. We will assume that you have downloaded and extracted your source code distribution in C:\Telerik UI for WinForms Source\RadControlsVS2010.sln:
         
 
-1. Open the following solution file:
-              C:\Telerik UI for WinForms Source\RadControlsVS2010.sln
+1. Open the following solution file: C:\Telerik UI for WinForms Source\RadControlsVS2010.sln
             
 
 1. In the properties for the Telerik.WinControls project, open the Build tab and add an OEMKEY conditional compilation symbol, as shown below:
-            Before:     
-            ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 006](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows006.png)After: 
-            ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 007](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows007.png)
+            
+    Before:     
+
+    ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 006](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows006.png)
+
+    After: 
+    ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 007](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows007.png)
 
 1. Open C:\Telerik UI for WinForms Source\RadControl\TPF\Control\ RadControl.cs in a text editor (notepad, Visual Studio etc).
             
 
 1. Delete the value of the OemPublicKeyToken:
-            Before:
-            ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 008](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows008.png)After:            
-            ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 009](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows009.png)
+            
+    Before:
+    ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 008](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows008.png)
+    After:            
+    ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 009](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows009.png)
 
 1. Open your project and go to *Properties*, then select the *Signing* tab.
 
@@ -218,10 +208,7 @@ This section demonstrates how to deploy a project with a public token key. We wi
 
 ## Using the Telerik Document Processing libraries in Your Solutions
 
-In order to include the Telerik Document Processing libraries in your application, you should build the source code as described below.
-          The source code of the Document Processing libraries is distributed together with the Telerik UI for WinForms source code and installation
-          and is available for downloading from the client accounts.
-          For brevity this document assumes that the source distribution ZIP file is extracted in C:\WinFormsDPLSource
+In order to include the Telerik Document Processing libraries in your application, you should build the source code as described below. The source code of the Document Processing libraries is distributed together with the Telerik UI for WinForms source code and installation and is available for downloading from the client accounts. For brevity this document assumes that the source distribution ZIP file is extracted in C:\WinFormsDPLSource
         
 
 __Instructions__
@@ -232,9 +219,9 @@ __Instructions__
 1. Uncomment the following line:
             
 
-#### __[C#] Before__
+	#### __[C#] Before__
 
-{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=CommentedIsValid}}
+	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=CommentedIsValid}}
 	        public static bool IsValid()
 	        {
 	            // Uncomment the following line
@@ -245,9 +232,9 @@ __Instructions__
 
 
 
-#### __[VB] Before__
+	#### __[VB] Before__
 
-{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=CommentedIsValid}}
+	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=CommentedIsValid}}
 	    Public Shared Function IsValid() As Boolean
 	        ' Uncomment the following line
 	        ' return ValidatePassPhrase();
@@ -257,9 +244,9 @@ __Instructions__
 
 
 
-#### __[C#] After__
+	#### __[C#] After__
 
-{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=UnCommentedIsValid}}
+	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=UnCommentedIsValid}}
 	        public static bool IsValid()
 	        {
 	            // Uncomment the following line
@@ -269,46 +256,44 @@ __Instructions__
 
 
 
-#### __[VB] After__
+	#### __[VB] After__
 
-{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=UnCommentedIsValid}}
+	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=UnCommentedIsValid}}
 	    Public Shared Function IsValid() As Boolean
 	        ' Uncomment the following line
 	        Return ValidatePassPhrase()
 	    End Function
 	{{endregion}}
 
-
-
 1. Change the ApplicationName constant to match the name of your application:
 
-#### __[C#] Before__
+	#### __[C#] Before__
 
-{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=AppNameBefore}}
+	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=AppNameBefore}}
 	        internal const string ApplicationName = "MyApp";
 	{{endregion}}
 
 
 
-#### __[VB] Before__
+	#### __[VB] Before__
 
-{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=AppNameBefore}}
+	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=AppNameBefore}}
 	    Friend Const ApplicationName As String = "MyApp"
 	{{endregion}}
 
 
 
-#### __[C#] After__
+	#### __[C#] After__
 
-{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=AppNameAfter}}
+	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=AppNameAfter}}
 	        internal const string ApplicationName = "Sample Application Name v2.0 (tm)";
 	{{endregion}}
 
 
 
-#### __[VB] After__
+	### __[VB] After__
 
-{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=AppNameAfter}}
+	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=AppNameAfter}}
 	    Friend Const ApplicationName As String = "Sample Application Name v2.0 (tm)"
 	{{endregion}}
 
@@ -361,17 +346,10 @@ If you are using the
           [Getting Started with Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction)
 
 __Assemblies that you need to redistribute depending on which controls you use in your application__
-<table><th><tr><td>
+<table><th>Control Name</th><th>Assembly</th>
 
-<b>
-                    Control Name
-                  </b></td><td>
 
-<b>
-                    Assembly
-                  </b></td></tr></th><tr><td>
-
-<b>CustomShape</b></td><td>
+<tr><td>CustomShape</td><td>
 
 Telerik.WinControls.dll</td></tr><tr><td>
 

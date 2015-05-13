@@ -14,7 +14,5 @@ position: 3
 
 ## 
 
-Information about new features, changes and backward compatibility issues is available on Telerik's site, section Products > WinForms > What's New > Release History 
-          [http://www.telerik.com/products/winforms/whats-new/release-history.aspx](http://www.telerik.com/products/winforms/whats-new/release-history.aspx)
-          .
+Information about new features, changes and backward compatibility issues is available on Telerik's site, section Products > WinForms > What's New > Release History [http://www.telerik.com/products/winforms/whats-new/release-history.aspx](http://www.telerik.com/products/winforms/whats-new/release-history.aspx).
         

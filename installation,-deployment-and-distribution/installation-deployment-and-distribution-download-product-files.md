@@ -47,5 +47,6 @@ In order to download these you need to take the following steps:
 
 1. 
 
->importantIf you go back one step and click on __Older Versions__ you will be able to download an older version of the suite. Please note that 
-                if you do not see the desired version you can contact our sales team and they will enable the version for download: [sales@telerik.com](mailto:sales@telerik.co)![installation-deployment-and-distribution-download-product-files 005](images/installation-deployment-and-distribution-download-product-files005.png)
+>important If you go back one step and click on __Older Versions__ you will be able to download an older version of the suite. Please note that if you do not see the desired version you can contact our sales team and they will enable the version for download: [sales@telerik.com](mailto:sales@telerik.co)
+
+![installation-deployment-and-distribution-download-product-files 005](images/installation-deployment-and-distribution-download-product-files005.png)

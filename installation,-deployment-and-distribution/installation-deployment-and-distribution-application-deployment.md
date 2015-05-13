@@ -12,94 +12,60 @@ position: 2
 
 
 
-When you use Telerik controls in your WinForms application, your application must have references to several of Telerik assemblies. These references are
-        automatically added to your project when you drag and drop controls or component on your form. There are three assemblies required in general and the rest are
-        added only if you are using a specific control that requires some other assembly. In sum, most of the time you will not have to add references to
-        all Telerik assemblies. Also in general, the assembly references will be added automatically and they will refer to the assemblies installed in the GAC by
-        Telerik WinForms installer. 
-      
+When you use Telerik controls in your WinForms application, your application must have references to several of Telerik assemblies. These references are automatically added to your project when you drag and drop controls or component on your form. There are three assemblies required in general and the rest are added only if you are using a specific control that requires some other assembly. In sum, most of the time you will not have to add references to all Telerik assemblies. Also in general, the assembly references will be added automatically and they will refer to the assemblies installed in the GAC by Telerik WinForms installer.       
 
->*RadMarkupEditor* and *RadMarkupDialog*
-          require a reference to *Microsoft.mshtml* assembly and if you need to use them at
-          Run Time you will need to distribute this assembly to the end user computers as well. You can find further
-          information about that in this *external* resource:
-        [http://msdn.microsoft.com/en-us/library/w0dt2w20.aspx](http://msdn.microsoft.com/en-us/library/w0dt2w20.aspx)You do not need to do anything on your developer machine, because Visual Studio provides the required assembly. Also if your application does not
-          use the editor or the dialog, you do not need a reference to this assembly.
-        
+>*RadMarkupEditor* and *RadMarkupDialog* require a reference to *Microsoft.mshtml* assembly and if you need to use them at Run Time you will need to distribute this assembly to the end user computers as well. You can find further information about that in this *external* resource: [http://msdn.microsoft.com/en-us/library/w0dt2w20.aspx](http://msdn.microsoft.com/en-us/library/w0dt2w20.aspx) You do not need to do anything on your developer machine, because Visual Studio provides the required assembly. Also if your application does not use the editor or the dialog, you do not need a reference to this assembly.        
 
-## Deployment StrategiesX-Copy
+## Deployment Strategies
 
-This is the simplest strategy. For each Telerik assembly reference in the Solution Explorer, open its context menu, click on properties and in the property
-                grid set the *Copy Local* property of the reference to __True.__
+### X-Copy
+
+This is the simplest strategy. For each Telerik assembly reference in the Solution Explorer, open its context menu, click on properties and in the property grid set the *Copy Local* property of the reference to __True.__
 
 ![installation-deployment-and-distribution-application-deployment 001](images/installation-deployment-and-distribution-application-deployment001.png)
 
+Thus these Telerik assemblies will be copied to your *Release/Bin*, *Debug/Bin* folders. You application deployment consists of copying the exe, dlls, xmls files to your client machines which in the simpler case will be manual copy and in the more advanced scenario will be a copy by your installer.
 
+### GAC
 
-Thus these Telerik assemblies will be copied to your *Release/Bin*, *Debug/Bin* folders. You application deployment consists of copying the
-                exe, dlls, xmls files to your client machines which in the simpler case will be manual copy and in the more advanced scenario will be a copy by your
-                installer.
-              GAC
-
-As noted above, Telerik assemblies are installed in the GAC by Telerik installer on the developer machines. You may choose to insert Telerik assemblies
-                in the GAC of your client machines too by following the instructions in the
-                [ Add/Remove RadControls to the Global Assembly Cache (GAC) ]({%slug installation-deployment-and-distribution-add-remove-radcontrols-to-the-global-assembly-cache-(gac)%}) section. 
+As noted above, Telerik assemblies are installed in the GAC by Telerik installer on the developer machines. You may choose to insert Telerik assemblies in the GAC of your client machines too by following the instructions in the <a href="installation-deployment-and-distribution-add-remove-radcontrols-to-the-global-assembly-cache-(gac)">Add/Remove RadControls to the Global Assembly Cache (GAC)</a> section. 
               
 
->Please do not use Telerik installer to install Telerik assemblies in the GACs of your clients'
-                  machines. Telerik installer should be used only for the developers' machines.
-                ClickOnce
+>Please do not use Telerik installer to install Telerik assemblies in the GACs of your clients' machines. Telerik installer should be used only for the developers' machines.
 
-By default, when preparing a ClickOnce distribution of a Windows Forms Application, VS uses its default settings, which assume that all project assemblies
-                located in the GAC of the local machine are also available on the remote server. By default, the __CopyLocal__ property for assemblies
-                located in the GAC is set to *false*, and they are marked as prerequisites in the application manifest (meaning that ClickOnce expects these to
-                already be present in the remote machine's GAC. As a result, the application does not pack them). This is may cause problems if the assemblies are not
-                registered in the remote server's GAC.
+
+### ClickOnce 
+
+By default, when preparing a ClickOnce distribution of a Windows Forms Application, VS uses its default settings, which assume that all project assemblies located in the GAC of the local machine are also available on the remote server. By default, the __CopyLocal__ property for assemblies located in the GAC is set to *false*, and they are marked as prerequisites in the application manifest (meaning that ClickOnce expects these to already be present in the remote machine's GAC. As a result, the application does not pack them). This is may cause problems if the assemblies are not registered in the remote server's GAC.
               
-
 Here are several simple steps on how to deploy a Windows Forms Application using ClickOnce:
 
 1. Open your project in Visual Studio.
 
-1. 
-                  Go to your project's __Properties__.
+1. Go to your project's __Properties__.
                 
 
-1. 
-                  Go to the __Publish__ item.
+1. Go to the __Publish__ item.
                 
 
-1. 
-                  Click on the __Application Files...__ button - it will open a list of files that are required by the distribution.
+1. Click on the __Application Files...__ button - it will open a list of files that are required by the distribution.
                 
 
-1. 
-                  There is a small checkbox at the bottom left corner of the opened __Application Files__ form. If it is not checked, tick it to see all
-                  files required by the distribution.
+1. There is a small checkbox at the bottom left corner of the opened __Application Files__ form. If it is not checked, tick it to see all files required by the distribution.
                 
 
-1. 
-                  You will see all the required assemblies (that are registered in the GAC) probably with a publish status of __Prerequisite(Auto)__ -
-                  this means that the installation assumes the assemblies will be available in the target machine GAC before the installation takes place.
+1. You will see all the required assemblies (that are registered in the GAC) probably with a publish status of __Prerequisite(Auto)__ - this means that the installation assumes the assemblies will be available in the target machine GAC before the installation takes place.
                 
 
-1. 
-                  Change the __Publish Status__ field of the required assemblies from *Prerequisite* to __Include__ and accept
-                  all changes.
+1. Change the __Publish Status__ field of the required assemblies from *Prerequisite* to __Include__ and accept all changes.
                 
 
 1. Republish the project to check that all is OK.
 
 ## Running an Application from a Network Drive
 
-If your WinForms application is using Telerik controls and is located on a *network drive* and Telerik assemblies are also located on the *
-            network
-            drive
-          * you will not be able to run your application because of security attributes set to TelerikCommon assembly. In such a case, you need to copy the
-          whole program locally and run it. Please note that this does not apply to publishing your application with ClickOnce on a *network drive -* there should
-          be no problem publishing your application on a *network drive*.
+If your WinForms application is using Telerik controls and is located on a *network drive* and Telerik assemblies are also located on the *network drive* you will not be able to run your application because of security attributes set to TelerikCommon assembly. In such a case, you need to copy the whole program locally and run it. Please note that this does not apply to publishing your application with ClickOnce on a *network drive -* there should be no problem publishing your application on a *network drive*.
         
-
 ## Assemblies that you should redistribute in all scenarios 
 
 * TelerikCommon.dll
@@ -108,20 +74,12 @@ If your WinForms application is using Telerik controls and is located on a *netw
 
 ## Assemblies that you should redistribute if using Telerik Analytics 
 
-If you are using the
-      [Telerik Analytics](http://www.telerik.com/analytics)
-      functionality you will also need to reference the __EQATEC.Analytics.Monitor.dll__ assembly.
-      For more information please check out the topic on
-      [Getting Started with Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction)
+If you are using the [Telerik Analytics](http://www.telerik.com/analytics) functionality you will also need to reference the __EQATEC.Analytics.Monitor.dll__ assembly.For more information please check out the topic on [Getting Started with Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction)
 
-## 
-        Assemblies that you need to redistribute depending on which controls you use in your application
+## Assemblies that you need to redistribute depending on which controls you use in your application
       
-<table><th><tr><td>
-
-<b>Control Name</b></td><td>
-
-<b>Assembly </b></td></tr></th><tr><td>
+<table><tr><th>Control Name</th><th>Assembly</th></tr>
+<tr><td>
 
 <b>CustomShape</b></td><td>
 

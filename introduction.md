@@ -14,20 +14,26 @@ position: 1
 
 ## Performance you demand, UI you can't believe![overview](images/overview.png)
 
-Telerik UI for WinForms includes over 95 UI controls that you can use to easily build unique and visually stunning
-          Line of Business applications. Boasting a well-designed architecture and CAB support,
-          Telerik UI for WinForms controls are perfectly suited for your Enterprise desktop development.
-        
+Telerik UI for WinForms includes over 95 UI controls that you can use to easily build unique and visually stunning Line of Business applications. Boasting a well-designed architecture and CAB support, Telerik UI for WinForms controls are perfectly suited for your Enterprise desktop development.
 
+  
 
+<table>
+<tr>
+<td>
+<a href="/menus/application-menu-overview">ApplicationMenu</a> 
+<p>BreadCrumb</p>
+<a href="/gauges/bulletgraph-overview">BulletGraph</a> 
+</td>
 
-
-
+<td>
+</td>
+</tr>
+</table>
 
 
 
 <table><tr><td>
-
 [ApplicationMenu]({%slug menus-application-menu-overview%})
 
 BreadCrumb
