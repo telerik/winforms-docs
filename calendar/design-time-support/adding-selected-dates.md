@@ -1,8 +1,8 @@
 ---
 title: Adding Selected Dates
-page_title: Adding Selected Dates
+page_title: Adding Selected Dates | UI for WinForms Documentation
 description: Adding Selected Dates
-slug: calendar-design-time-support-adding-selected-dates
+slug: winforms/calendar/design-time-support/adding-selected-dates
 tags: adding,selected,dates
 published: True
 position: 0
@@ -30,4 +30,6 @@ Click the ellipses in the Property Window to edit the __SelecteDates DateTime__c
 
 * Click cancel to close the dialog without persisting your changes. Click the OK button to save your changes and close the dialog. 
 
->If you close the DateTime Collection Editor, reopen and see that only the last date has persisted in the collection, verify that __AllowMultipleSelect__is set to true. If __AllowMultipleSelect__ is false the expected behavior is that only the last date in the collection is used.![calendar-design-time-support-adding-selected-dates 001](images/calendar-design-time-support-adding-selected-dates001.png)
+>note If you close the DateTime Collection Editor, reopen and see that only the last date has persisted in the collection, verify that __AllowMultipleSelect__ is set to true. If __AllowMultipleSelect__ is false the expected behavior is that only the last date in the collection is used.
+>
+![calendar-design-time-support-adding-selected-dates 001](images/calendar-design-time-support-adding-selected-dates001.png)

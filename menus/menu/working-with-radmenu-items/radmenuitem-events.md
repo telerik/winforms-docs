@@ -1,8 +1,8 @@
 ---
 title: RadMenuItem Events
-page_title: RadMenuItem Events
+page_title: RadMenuItem Events | UI for WinForms Documentation
 description: RadMenuItem Events
-slug: menus-menu-working-with-radmenu-items-radmenuitem-events
+slug: winforms/menus/menu/working-with-radmenu-items/radmenuitem-events
 tags: radmenuitem,events
 published: True
 position: 5
@@ -28,31 +28,35 @@ The key event for the __RadMenuItem__ object is the
             __ToggleState__enumeration types with values __Intermediate__, __On__ and __Off__. 
             If __Canceled__is set to true the checkbox does not change state
             and the __ToggleStatedChanged__event does not fire.
-            
+            #_[C#] Handling the ToggleStateChanging event_
 
-#### __[C#] Handling the ToggleStateChanging event__
-
-{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=toggleStateChanging}}
-	        void radMenuItem2_ToggleStateChanging(object sender, StateChangingEventArgs args)
-	        {
-	            if (args.NewValue == Telerik.WinControls.Enumerations.ToggleState.Indeterminate)
-	            {
-	                args.Cancel = true;
-	            }
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Handling the ToggleStateChanging event__
+{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=toggleStateChanging}} 
+{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=toggleStateChanging}} 
 
-{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=toggleStateChanging}}
-	    Private Sub radMenuItem2_ToggleStateChanging(ByVal sender As Object, ByVal args As StateChangingEventArgs)
-	        If args.NewValue = Telerik.WinControls.Enumerations.ToggleState.Indeterminate Then
-	            args.Cancel = True
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        void radMenuItem2_ToggleStateChanging(object sender, StateChangingEventArgs args)
+        {
+            if (args.NewValue == Telerik.WinControls.Enumerations.ToggleState.Indeterminate)
+            {
+                args.Cancel = true;
+            }
+        }
+````
+````VB.NET
+    Private Sub radMenuItem2_ToggleStateChanging(ByVal sender As Object, ByVal args As StateChangingEventArgs)
+        If args.NewValue = Telerik.WinControls.Enumerations.ToggleState.Indeterminate Then
+            args.Cancel = True
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -61,91 +65,103 @@ The key event for the __RadMenuItem__ object is the
             __On__, __Off__ or __Intermediate__.
             The __StateChangedEventaArgs__passed to this event handler contain the
             __ToggleState__property.
-            
+            #_[C#] Handling the ToggleStateChanged event_
 
-#### __[C#] Handling the ToggleStateChanged event__
-
-{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=toggleStateChanged}}
-	        void radMenuItem2_ToggleStateChanged(object sender, StateChangedEventArgs args)
-	        {
-	            MessageBox.Show(args.ToggleState.ToString());
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Handling the ToggleStateChanged event__
+{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=toggleStateChanged}} 
+{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=toggleStateChanged}} 
 
-{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=toggleStateChanged}}
-	    Private Sub radMenuItem2_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
-	        MessageBox.Show(args.ToggleState.ToString())
-	    End Sub
-	{{endregion}}
+````C#
+        void radMenuItem2_ToggleStateChanged(object sender, StateChangedEventArgs args)
+        {
+            MessageBox.Show(args.ToggleState.ToString());
+        }
+````
+````VB.NET
+    Private Sub radMenuItem2_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
+        MessageBox.Show(args.ToggleState.ToString())
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
 ## RadMenuComboItem Events
 
-For the __RadMenuComboItem__, you will probably want to work with the events of the embedded __ComboBoxElement__property. The example below uses the __ComboBoxElement____SelectedIndexChanged__ event to get the currently selected combo box value.
+For the __RadMenuComboItem__, you will probably want to work with the events of the embedded __ComboBoxElement__property. The example below uses the __ComboBoxElement____SelectedIndexChanged__ event to get the currently selected combo box value.#_[C#] Handling the SelectedIndexChanged event of RadMenuComboItem_
 
-#### __[C#] Handling the SelectedIndexChanged event of RadMenuComboItem__
-
-{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=comboEvent}}
-	        void Form1_Load(object sender, EventArgs e)
-	        {
-	            radMenuComboItem1.ComboBoxElement.SelectedIndexChanged += new Telerik.WinControls.UI.Data.PositionChangedEventHandler(ComboBoxElement_SelectedIndexChanged);
-	        }
 	
-	        void ComboBoxElement_SelectedIndexChanged(object sender, EventArgs e)
-	        {
-	            RadListDataItem item = (sender as RadDropDownListElement).SelectedItem as RadListDataItem;
-	            MessageBox.Show(item.Text);
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET] Handling the SelectedIndexChanged event of RadMenuComboItem__
+{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=comboEvent}} 
+{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=comboEvent}} 
 
-{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=comboEvent}}
-	    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
-	        AddHandler radMenuComboItem1.ComboBoxElement.SelectedIndexChanged, AddressOf ComboBoxElement_SelectedIndexChanged
-	    End Sub
-	
-	    Private Sub ComboBoxElement_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim item As RadListDataItem = TryCast((TryCast(sender, RadDropDownListElement)).SelectedItem, RadListDataItem)
-	        MessageBox.Show(item.Text)
-	    End Sub
-	{{endregion}}
+````C#
+        void Form1_Load(object sender, EventArgs e)
+        {
+            radMenuComboItem1.ComboBoxElement.SelectedIndexChanged += new Telerik.WinControls.UI.Data.PositionChangedEventHandler(ComboBoxElement_SelectedIndexChanged);
+        }
+
+        void ComboBoxElement_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RadListDataItem item = (sender as RadDropDownListElement).SelectedItem as RadListDataItem;
+            MessageBox.Show(item.Text);
+        }
+````
+````VB.NET
+    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
+        AddHandler radMenuComboItem1.ComboBoxElement.SelectedIndexChanged, AddressOf ComboBoxElement_SelectedIndexChanged
+    End Sub
+
+    Private Sub ComboBoxElement_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
+        Dim item As RadListDataItem = TryCast((TryCast(sender, RadDropDownListElement)).SelectedItem, RadListDataItem)
+        MessageBox.Show(item.Text)
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
 ## RadMenuContentItem
 
-Handle the events for the control assigned to __RadMenuContentItem ContentElement__, not the content item itself. In the example below an event handler is attached to the __Click__of a button.
+Handle the events for the control assigned to __RadMenuContentItem ContentElement__, not the content item itself. In the example below an event handler is attached to the __Click__of a button.#_[C#] Handling events for controls embedded in RadMenuContentItem_
 
-#### __[C#] Handling events for controls embedded in RadMenuContentItem__
-
-{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=contentItem}}
-	            RadMenuContentItem buttonItem = new RadMenuContentItem();
-	            RadButtonElement button = new RadButtonElement();
-	            button.Text = "OK";
-	            button.Click += new EventHandler(button_Click);
-	            buttonItem.ContentElement = button;
-	            radMenu1.Items.Add(buttonItem);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Handling events for controls embedded in RadMenuContentItem__
+{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=contentItem}} 
+{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=contentItem}} 
 
-{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=contentItem}}
-	        Dim buttonItem As New RadMenuContentItem()
-	        Dim button As New RadButtonElement()
-	        button.Text = "OK"
-	        AddHandler button.Click, AddressOf button_Click
-	        buttonItem.ContentElement = button
-	        RadMenu1.Items.Add(buttonItem)
-	{{endregion}}
+````C#
+            RadMenuContentItem buttonItem = new RadMenuContentItem();
+            RadButtonElement button = new RadButtonElement();
+            button.Text = "OK";
+            button.Click += new EventHandler(button_Click);
+            buttonItem.ContentElement = button;
+            radMenu1.Items.Add(buttonItem);
+````
+````VB.NET
+        Dim buttonItem As New RadMenuContentItem()
+        Dim button As New RadButtonElement()
+        button.Text = "OK"
+        AddHandler button.Click, AddressOf button_Click
+        buttonItem.ContentElement = button
+        RadMenu1.Items.Add(buttonItem)
+        '
+````
+
+{{endregion}} 
+
 
 

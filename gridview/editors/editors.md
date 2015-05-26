@@ -1,8 +1,8 @@
 ---
 title: Editors
-page_title: Editors
+page_title: Editors | UI for WinForms Documentation
 description: Editors
-slug: gridview-editors
+slug: winforms/gridview/editors/editors
 tags: editors
 published: True
 position: 0
@@ -35,4 +35,11 @@ You can control also the __Enter__ key behavior when __RadGridView__ is in edit 
 __Topics:__
 
 
-<table><tr><td>[API]({%slug gridview-editors-api%}) section describes how to control the editing process programmatically.</td></tr><tr><td>[Events]({%slug gridview-editors-events%}) section presents all events that occur during this process.</td></tr><tr><td>[Data validation]({%slug gridview-editors-data-validation%}) section shows how to validate data in RadGridView.</td></tr><tr><td>[Customizing editor behavior]({%slug gridview-editors-customizing-editor-behavior%}) section demonstrates how to change editor behavior using code.</td></tr><tr><td>[Using custom editors]({%slug gridview-editors-using-custom-editors%}) section demonstrates how to replace the standard editors with a custom one.</td></tr></table>
+
+
+
+|[API]({%slug winforms/gridview/editors/api%})section describes how to control the editing process programmatically.|
+|[Events]({%slug winforms/gridview/editors/events%})section presents all events that occur during this process.|
+|[Data validation]({%slug winforms/gridview/editors/data-validation%})section shows how to validate data in RadGridView.|
+|[Customizing editor behavior]({%slug winforms/gridview/editors/customizing-editor-behavior%})section demonstrates how to change editor behavior using code.|
+|[Using custom editors]({%slug winforms/gridview/editors/using-custom-editors%})section demonstrates how to replace the standard editors with a custom one.|

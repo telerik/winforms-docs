@@ -1,8 +1,8 @@
 ---
 title: Creating and Using Contextual Tab Groups
-page_title: Creating and Using Contextual Tab Groups
+page_title: Creating and Using Contextual Tab Groups | UI for WinForms Documentation
 description: Creating and Using Contextual Tab Groups
-slug: ribbonbar-creating-and-using-contextual-tab-groups
+slug: winforms/ribbonbar/getting-started/creating-and-using-contextual-tab-groups
 tags: creating,and,using,contextual,tab,groups
 published: True
 position: 8
@@ -38,8 +38,12 @@ The __Contextual Tab Group__ is positioned over both the __Formatting__and __Lay
 
 
 
->Tabs that are associated with a Contextual Tab Group are always positioned at the end of the TabStrip.
+>note Tabs that are associated with a Contextual Tab Group are always positioned at the end of the TabStrip.
+>
 
 
 
->Contextual Tab Groups always extend to the sum of the lengths of the tabs associated with them.
+
+>note Contextual Tab Groups always extend to the sum of the lengths of the tabs associated with them.
+>
+

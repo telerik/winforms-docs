@@ -1,8 +1,8 @@
 ---
 title: Upgrading to RadPageView
-page_title: Upgrading to RadPageView
+page_title: Upgrading to RadPageView | UI for WinForms Documentation
 description: Upgrading to RadPageView
-slug: pageview-upgrading-to-radpageview
+slug: winforms/pageview/upgrading-to-radpageview
 tags: upgrading,to,radpageview
 published: True
 position: 0
@@ -11,27 +11,21 @@ position: 0
 # Upgrading to RadPageView
 
 
-<table><th><tr><td>
 
-RELATED VIDEOS</td><td></td></tr></th><tr><td>
 
-[Converting from RadPanelBar to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radpanelbar-to-radpageview)
-
-In this video, you will learn how to convert a RadPanelBar to the new RadPageView control introduced in the Q2 2010 release of RadControls for WinForms.
-            </td><td>![pageview-upgrading-to-radpageview 003](images/pageview-upgrading-to-radpageview003.png)</td></tr><tr><td>
-
-[Converting from RadTabStrip to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radtabstrip-to-radpageview)
-
-In this video, you will learn how to convert a RadTabStrip to the new RadPageView control introduced in the Q2 2010 release of RadControls for WinForms.
-            </td><td>![pageview-upgrading-to-radpageview 004](images/pageview-upgrading-to-radpageview004.png)</td></tr></table>
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[Converting from RadPanelBar to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radpanelbar-to-radpageview)In this video, you will learn how to convert a RadPanelBar to the new RadPageView control introduced in the Q2 2010 release of RadControls for WinForms.|![pageview-upgrading-to-radpageview 003](images/pageview-upgrading-to-radpageview003.png)|
+|[Converting from RadTabStrip to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radtabstrip-to-radpageview)In this video, you will learn how to convert a RadTabStrip to the new RadPageView control introduced in the Q2 2010 release of RadControls for WinForms.|![pageview-upgrading-to-radpageview 004](images/pageview-upgrading-to-radpageview004.png)|
 
 ## 
 
->This article is valid for Telerik UI for WinForms versions prior to Q2 2011 SP1 inclusive.
+>note This article is valid for Telerik UI for WinForms versions prior to Q2 2011 SP1 inclusive.
             The Upgrade Tool can be used only if started from the SmartTag of the obsolete controls. Since
             these controls have been removed in Q3 2011, their respective Upgrade Tools are not available as well.
             In case you want to use the tools, please upgrade/downgrade to Q2 2011 SP1 (v2011.2.11.831)
-          
+>
+
 
 Since Q2 2010 several brand controls were released, as successors of older and
           not that optimized controls. These are:
@@ -68,13 +62,14 @@ Upon loading the tool will loop through all the components registered with the
           should be clicked.
         
 
->RadPageView does not support adding elements directly to a RadPageViewPage. Hence a
+>note RadPageView does not support adding elements directly to a RadPageViewPage. Hence a
             conversion from RadPanelBar will create empty pages for element-based groups; only groups
             that are used as control hosts will be completely converted. Old controls will be DELETED
             upon conversion, so make sure that you have backed-up your projects first.
-          
+>
 
->Events are not converted. When you convert an obsolete control, your event handler methods will remain intact, but it
+
+>note Events are not converted. When you convert an obsolete control, your event handler methods will remain intact, but it
             is important to note that the event subscriptions will be cleared.
+>
 
-          

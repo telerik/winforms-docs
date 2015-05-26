@@ -1,8 +1,8 @@
 ---
 title: RadMenuItem
-page_title: RadMenuItem
+page_title: RadMenuItem | UI for WinForms Documentation
 description: RadMenuItem
-slug: menus-menu-working-with-radmenu-items-radmenuitem
+slug: winforms/menus/menu/working-with-radmenu-items/radmenuitem
 tags: radmenuitem
 published: True
 position: 0
@@ -36,7 +36,7 @@ The RadMenuItem represents a standard menu item. Some of its properties include:
 * __AngleTransform__ sets the angle offset from horizontal with which the item will be displayed. 
 
 
-* __CommandBinding__allows you to configure keyboard shortcuts to fire a given menu item.  See the [Getting Started]({%slug menus-menu-getting-started%}) topic for an example. 
+* __CommandBinding__allows you to configure keyboard shortcuts to fire a given menu item.  See the [Getting Started]({%slug winforms/menus/menu/getting-started%}) topic for an example. 
 
 
 * __DisplayStyle__ lets you choose whether to show an image, text, or both on the item. 
@@ -105,7 +105,7 @@ The __RadMenuComboItem__ allows you to put a drop-down list on a menu. To add it
 
 ## RadMenuContentItem
 
-The __RadMenuContentItem__ is a container control that allows you to build up custom menu items from other controls. You can assign any RadElement based control to the __ContentElement__ property of a RadMenuContentItem. See [Nesting Controls in Menu Items]({%slug menus-menu-working-with-radmenu-items-nesting-controls-in-menu-items%}) for an example.
+The __RadMenuContentItem__ is a container control that allows you to build up custom menu items from other controls. You can assign any RadElement based control to the __ContentElement__ property of a RadMenuContentItem. See [Nesting Controls in Menu Items]({%slug winforms/menus/menu/working-with-radmenu-items/nesting-controls-in-menu-items%}) for an example.
 
 ## RadMenuSeparatorItem
 

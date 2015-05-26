@@ -1,8 +1,8 @@
 ---
 title: Tag property
-page_title: Tag property
+page_title: Tag property | UI for WinForms Documentation
 description: Tag property
-slug: gridview-rows-tag-property
+slug: winforms/gridview/rows/tag-property
 tags: tag,property
 published: True
 position: 9
@@ -14,86 +14,100 @@ position: 9
 
 ## 
 
-Each row has a *Tag *property associated with it of type object where you can store a custom object.
+Each row has a *Tag *property associated with it of type object where you can store a custom object.#_[C#] Setting the Tag property of a row_
 
-#### __[C#] Setting the Tag property of a row__
-
-{{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=assignTagProperty}}
-	            this.radGridView1.Rows[1].Tag = "Some tag";
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Setting the Tag property of a row__
+{{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=assignTagProperty}} 
+{{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=assignTagProperty}} 
 
-{{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=assignTagProperty}}
-	        Me.RadGridView1.Rows(1).Tag = "Some tag"
-	{{endregion}}
+````C# 
+            this.radGridView1.Rows[1].Tag = "Some tag";
+````
+````VB.NET 
+        Me.RadGridView1.Rows(1).Tag = "Some tag"
+        '
+````
 
-
-
-
-
-#### __[C#] Setting the Tag property of cells in CellFormatting event__
-
-{{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=setTagInCellFormatting}}
-	        void radGridView1_CellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
-	        {
-	            if (e.CellElement.RowIndex % 2 == 0)
-	            {
-	                e.CellElement.RowInfo.Tag = "Some tag";
-	            }
-	            else
-	            {
-	                e.CellElement.RowInfo.Tag = "Hide row";
-	            }
-	        }
-	{{endregion}}
+{{endregion}} 
 
 
 
-#### __[VB.NET] Setting the Tag property of cells in CellFormatting event__
 
-{{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=setTagInCellFormatting}}
-	    Private Sub RadGridView1_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
-	        If (e.CellElement.RowIndex Mod 2 = 0) Then
-	            e.CellElement.RowInfo.Tag = "Some tag"
-	        Else
-	            e.CellElement.RowInfo.Tag = "Hide row"
-	        End If
-	    End Sub
-	{{endregion}}
+#_[C#] Setting the Tag property of cells in CellFormatting event_
+
+	
 
 
 
-The most natural place to use the tag is in some of the row/cell events. For example, to make the content of certain cells invisible use the following code:
+{{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=setTagInCellFormatting}} 
+{{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=setTagInCellFormatting}} 
 
-#### __[C#] Collapsing all rows with the specified tag__
+````C#
+        void radGridView1_CellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
+        {
+            if (e.CellElement.RowIndex % 2 == 0)
+            {
+                e.CellElement.RowInfo.Tag = "Some tag";
+            }
+            else
+            {
+                e.CellElement.RowInfo.Tag = "Hide row";
+            }
+        }
+````
+````VB.NET
+    Private Sub RadGridView1_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
+        If (e.CellElement.RowIndex Mod 2 = 0) Then
+            e.CellElement.RowInfo.Tag = "Some tag"
+        Else
+            e.CellElement.RowInfo.Tag = "Hide row"
+        End If
+    End Sub
+    '
+````
 
-{{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=hideRowsWithSpecifiedTag}}
-	        void radGridView1_CellFormatting1(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
-	        {
-	            if (e.CellElement.RowInfo.Tag is String && (string)e.CellElement.RowInfo.Tag == "Hide row")
-	            {
-	                e.CellElement.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
-	            }
-	        }
-	{{endregion}}
+{{endregion}} 
 
 
 
-#### __[VB.NET] Collapsing all rows with the specified tag__
 
-{{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=hideRowsWithSpecifiedTag}}
-	    Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
-	        If TypeOf e.CellElement.RowInfo.Tag Is [String] AndAlso DirectCast(e.CellElement.RowInfo.Tag, String) = "Hide row" Then
-	            e.CellElement.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
-	        End If
-	    End Sub
-	{{endregion}}
+The most natural place to use the tag is in some of the row/cell events. For example, to make the content of certain cells invisible use the following code:#_[C#] Collapsing all rows with the specified tag_
+
+	
 
 
 
->
+{{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=hideRowsWithSpecifiedTag}} 
+{{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=hideRowsWithSpecifiedTag}} 
+
+````C#
+        void radGridView1_CellFormatting1(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
+        {
+            if (e.CellElement.RowInfo.Tag is String && (string)e.CellElement.RowInfo.Tag == "Hide row")
+            {
+                e.CellElement.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+            }
+        }
+````
+````VB.NET
+    Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
+        If TypeOf e.CellElement.RowInfo.Tag Is [String] AndAlso DirectCast(e.CellElement.RowInfo.Tag, String) = "Hide row" Then
+            e.CellElement.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
+
+
+
+>note 
 
 Note: Cells also have Tag property but it differs substantially from rows one because of the UI Virtualization. Cells are reused and when you scroll the tag value remains unchanged while cell data value is updated.
+>
+

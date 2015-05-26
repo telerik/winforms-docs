@@ -1,8 +1,8 @@
 ---
 title: TextFragment
-page_title: TextFragment
+page_title: TextFragment | UI for WinForms Documentation
 description: TextFragment
-slug: pdfprocessing-model-textfragment
+slug: winforms/pdfprocessing/model/textfragment
 tags: textfragment
 published: True
 position: 2
@@ -21,53 +21,62 @@ __TextFragment__ is content element that represents а single-line text object.
 
 ## Inserting a TextFragment
 
-__TextFragment__ is a content element that can be added in the __Content__ collection of a __IContainerElement__ such as [RadFixedPage]({%slug pdfprocessing-model-radfixedpage%}). There are several approaches that can be adopted.
+__TextFragment__ is a content element that can be added in the __Content__ collection of a __IContainerElement__ such as [RadFixedPage]({%slug winforms/pdfprocessing/model/radfixedpage%}). There are several approaches that can be adopted.
         
 
 __Example 1__ shows how you can initialize a TextFragment object and add it in a previously defined container.
-        
+        #_[C#] Example 1: Create TextFragment and add it to container._
 
-#### __[C#] Example 1: Create TextFragment and add it to container.__
-
-{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelTextFragment.cs region=radpdfprocessing-model-textfragment_0}}
-	            TextFragment fragment = new TextFragment();
-	            container.Content.Add(fragment);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 1: Create TextFragment and add it to container.__
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelTextFragment.cs region=radpdfprocessing-model-textfragment_0}} 
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelTextFragment.vb region=radpdfprocessing-model-textfragment_0}} 
 
-{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelTextFragment.vb region=radpdfprocessing-model-textfragment_0}}
-	        Dim fragment As TextFragment = New TextFragment()
-	        container.Content.Add(fragment)
-	{{endregion}}
+````C#
+            TextFragment fragment = new TextFragment();
+            container.Content.Add(fragment);
+````
+````VB.NET
+        Dim fragment As TextFragment = New TextFragment()
+        container.Content.Add(fragment)
+        '
+````
+
+{{endregion}} 
+
 
 
 
 __Example 2__ demonstrates how to use one of the factory methods of the __ContentElementCollection__ which create new text fragment and insert it into the respective container. Both methods return the actual TextFragment instance so you can modify it.
-        
+        #_[C#] Example 2: Add TextFragment to container_
 
-#### __[C#] Example 2: Add TextFragment to container__
-
-{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelTextFragment.cs region=radpdfprocessing-model-textfragment_1}}
-	            TextFragment textFragment = container.Content.AddTextFragment();
-	            TextFragment textFragmentWithText = container.Content.AddTextFragment("Text");
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 2: Add TextFragment to container__
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelTextFragment.cs region=radpdfprocessing-model-textfragment_1}} 
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelTextFragment.vb region=radpdfprocessing-model-textfragment_1}} 
 
-{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelTextFragment.vb region=radpdfprocessing-model-textfragment_1}}
-	        Dim textFragment As TextFragment = container.Content.AddTextFragment()
-	        Dim textFragmentWithText As TextFragment = container.Content.AddTextFragment("Text")
-	{{endregion}}
+````C#
+            TextFragment textFragment = container.Content.AddTextFragment();
+            TextFragment textFragmentWithText = container.Content.AddTextFragment("Text");
+````
+````VB.NET
+        Dim textFragment As TextFragment = container.Content.AddTextFragment()
+        Dim textFragmentWithText As TextFragment = container.Content.AddTextFragment("Text")
+        '
+````
+
+{{endregion}} 
 
 
 
->tip__TextFragment__ represents a single line of text. In order to make your text "flows" in a document you should make sure all fragments you add can fit in a line or you can use [FixedContentEditor]({%slug pdfprocessing-editing-fixedcontenteditor%}).
-          
+
+>tip  __TextFragment__ represents a single line of text. In order to make your text "flows" in a document you should make sure all fragments you add can fit in a line or you can use[FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}).
+>
+
 
 ## Modifying a TextFragment
 
@@ -80,8 +89,9 @@ TextFragment exposes the following properties that can modify the look of the re
 * __WordSpacing__: The spacing between the words in the text.
             
 
->Only space character (Unicode 0x32) is considered a word break in RadPdfProcessing's document model.
-              
+>note Only space character (Unicode 0x32) is considered a word break in RadPdfProcessing's document model.
+>
+
 
 * __HorizontalScaling__: The horizontal scaling that is applied to the characters.
             
@@ -133,13 +143,13 @@ TextFragment exposes the following properties that can modify the look of the re
 * __Text__: Represents the text that is drawn.
             
 
-* __Position__: The [Position]({%slug pdfprocessing-concepts-position%}) where the text element is drawn.
+* __Position__: The [Position]({%slug winforms/pdfprocessing/concepts/position%}) where the text element is drawn.
             
 
 # See Also
 
- * [RadFixedPage]({%slug pdfprocessing-model-radfixedpage%})
+ * [RadFixedPage]({%slug winforms/pdfprocessing/model/radfixedpage%})
 
- * [FixedContentEditor]({%slug pdfprocessing-editing-fixedcontenteditor%})
+ * [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%})
 
- * [Position]({%slug pdfprocessing-concepts-position%})
+ * [Position]({%slug winforms/pdfprocessing/concepts/position%})

@@ -1,8 +1,8 @@
 ---
 title: FieldCharacter
-page_title: FieldCharacter
+page_title: FieldCharacter | UI for WinForms Documentation
 description: FieldCharacter
-slug: wordsprocessing-model-fieldcharacter
+slug: winforms/wordsprocessing/model/fieldcharacter
 tags: fieldcharacter
 published: True
 position: 10
@@ -19,7 +19,7 @@ __FieldCharacter__ is an inline element. It is a special character which delimit
 ## Inserting a FieldCharacter
 
 __FieldCharacter__ element is created when InsertField(string code, string result) method of
-          [RadFlowDocumentEditor]({%slug wordsprocessing-editing-radflowdocumenteditor%}) is called.
+          [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%}) is called.
         
 
 These are the possible __FieldCharacterTypes__
@@ -35,11 +35,13 @@ These are the possible __FieldCharacterTypes__
             
 
 __FieldCharacter__ has a __FieldInfo__ property which points to its associated
-          [FieldInfo]({%slug wordsprocessing-concepts-fields%}) object.
+          [FieldInfo]({%slug winforms/wordsprocessing/concepts/fields%}) object.
         
 
-# See Also[FieldCharacter API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_fields_fieldcharacter.html)
+# See Also
 
- * [Fields]({%slug wordsprocessing-concepts-fields%})
+ * [FieldCharacter API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_fields_fieldcharacter.html)
 
- * [RadFlowDocumentEditor]({%slug wordsprocessing-editing-radflowdocumenteditor%})
+ * [Fields]({%slug winforms/wordsprocessing/concepts/fields%})
+
+ * [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%})

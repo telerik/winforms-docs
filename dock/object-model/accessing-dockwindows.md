@@ -1,8 +1,8 @@
 ---
 title: Accessing DockWindows
-page_title: Accessing DockWindows
+page_title: Accessing DockWindows | UI for WinForms Documentation
 description: Accessing DockWindows
-slug: dock-object-model-accessing-dockwindows
+slug: winforms/dock/object-model/accessing-dockwindows
 tags: accessing,dockwindows
 published: True
 position: 2
@@ -34,44 +34,52 @@ The DockWindows property returns an array of all DockWindow in a RadDock
 * Returns an array of DockWindows that are put in a specific
               DockState. For example, the following code snippet will return an array
               of DockWindows that are currently hidden:
-            
+            #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Dock\CreatingWindows.cs region=gettingHiddenWindows}}
-	            DockWindow[] hiddenWindows = radDock1.DockWindows.GetWindows(DockState.Hidden);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Dock\CreatingWindows.cs region=gettingHiddenWindows}} 
+{{source=..\SamplesVB\Dock\CreatingWindows.vb region=gettingHiddenWindows}} 
 
-{{source=..\SamplesVB\Dock\CreatingWindows.vb region=gettingHiddenWindows}}
-	        Dim hiddenWindows As DockWindow() = Me.RadDock1.DockWindows.GetWindows(DockState.Hidden)
-	{{endregion}}
+````C#
+            DockWindow[] hiddenWindows = radDock1.DockWindows.GetWindows(DockState.Hidden);
+````
+````VB.NET
+        Dim hiddenWindows As DockWindow() = Me.RadDock1.DockWindows.GetWindows(DockState.Hidden)
+        '
+````
+
+{{endregion}} 
+
 
 
 
 You can get a desired ToolWindow\DocumentWindow by specifying its
           __Name__ as an index:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Dock\CreatingWindows.cs region=gettingWindowByName}}
-	            DockWindow window1 = this.radDock1.DockWindows["Form1"];
-	            // or simply
-	            DockWindow window2 = this.radDock1["Form1"];
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Dock\CreatingWindows.cs region=gettingWindowByName}} 
+{{source=..\SamplesVB\Dock\CreatingWindows.vb region=gettingWindowByName}} 
 
-{{source=..\SamplesVB\Dock\CreatingWindows.vb region=gettingWindowByName}}
-	        Dim window1 As DockWindow = Me.RadDock1.DockWindows("Form1")
-	        ' or simply
-	        Dim window2 As DockWindow = Me.RadDock1("Form1")
-	{{endregion}}
+````C#
+            DockWindow window1 = this.radDock1.DockWindows["Form1"];
+            // or simply
+            DockWindow window2 = this.radDock1["Form1"];
+````
+````VB.NET
+        Dim window1 As DockWindow = Me.RadDock1.DockWindows("Form1")
+        ' or simply
+        Dim window2 As DockWindow = Me.RadDock1("Form1")
+        '
+````
+
+{{endregion}} 
+
 
 

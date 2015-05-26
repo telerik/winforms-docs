@@ -1,8 +1,8 @@
 ---
 title: Navigation Step
-page_title: Navigation Step
+page_title: Navigation Step | UI for WinForms Documentation
 description: Navigation Step
-slug: scheduler-scheduler-navigator-navigation-step
+slug: winforms/scheduler/scheduler-navigator/navigation-step
 tags: navigation,step
 published: True
 position: 2
@@ -32,7 +32,7 @@ You can use the following properties to control the Navigation Step behavior:
 1. __NavigationStep__ – this property contains the custom step that you have to set. The default value is 1 and the minimum value is 1. The major cases that are supported are: 
 
 
-1. In [Day view]({%slug scheduler-views-day-view%}) and [Timeline view]({%slug scheduler-views-timeline-view%}): 
+1. In [Day view]({%slug winforms/scheduler/views/day-view%}) and [Timeline view]({%slug winforms/scheduler/views/timeline-view%}): 
 
 
 * __NavigationStepType__ is *Day*, and __NavigationStep__ is 1 – in this case the view will be moved with a day. If __NavigationStep__ is 2 the view will be moved with 2 days, etc. 
@@ -43,7 +43,7 @@ You can use the following properties to control the Navigation Step behavior:
 
 * __NavigationStepType__ is *Month*, and __NavigationStep__ is 1 – in this case the view will be moved with a month. If __NavigationStep__ is 2 the view will be moved with 2 months, etc. 
 
-1. In [Month view]({%slug scheduler-views-month-view%}) and [Week view]({%slug scheduler-views-week-view%}): 
+1. In [Month view]({%slug winforms/scheduler/views/month-view%}) and [Week view]({%slug winforms/scheduler/views/week-view%}): 
 
 
 * __NavigationStepType__ is *Day*, and __NavigationStep__ is 1 – in this case nothing will be changed in the view. 

@@ -1,8 +1,8 @@
 ---
 title: Adding and Removing Groups and Buttons
-page_title: Adding and Removing Groups and Buttons
+page_title: Adding and Removing Groups and Buttons | UI for WinForms Documentation
 description: Adding and Removing Groups and Buttons
-slug: ribbonbar-adding-and-removing-groups-and-buttons
+slug: winforms/ribbonbar/getting-started/adding-and-removing-groups-and-buttons
 tags: adding,and,removing,groups,and,buttons
 published: True
 position: 5

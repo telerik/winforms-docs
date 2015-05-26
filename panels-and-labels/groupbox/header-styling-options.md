@@ -1,8 +1,8 @@
 ---
 title: Header Styling Options
-page_title: Header Styling Options
+page_title: Header Styling Options | UI for WinForms Documentation
 description: Header Styling Options
-slug: panels-and-labels-groupbox-header-styling-options
+slug: winforms/panels-and-labels/groupbox/header-styling-options
 tags: header,styling,options
 published: True
 position: 0
@@ -23,7 +23,9 @@ The HeaderPosition can be set to *Top*, *Right*, *Bottom*,
 
 HeaderAlignment takes *Near*, *Center*, and *Far *values:![panels-and-labels-groupbox-header-styling-options 002](images/panels-and-labels-groupbox-header-styling-options002.png)
 
->HeaderAlignment is not taken into consideration when the GroupBoxStyle is set to Office. In this case the header occupies the whole width or height of the control. You may use HeaderTextAlignment and HeaderImageAlignment properties in this case. 
+>note HeaderAlignment is not taken into consideration when the GroupBoxStyle is set to Office. In this case the header occupies the whole width or height of the control. You may use HeaderTextAlignment and HeaderImageAlignment properties in this case.
+>
+
 
 ## GroupBoxStyle
 
@@ -43,5 +45,5 @@ There are corresponding footer properties.
 
 ## Other properties 
 
-Please refer to the [TPF structure]({%slug panels-and-labels-groupbox-advanced-tpf-structure%}) 
+Please refer to the [TPF structure]({%slug winforms/panels-and-labels/groupbox/advanced/tpf-structure%}) 
         topic in the Advanced section of the documentation.

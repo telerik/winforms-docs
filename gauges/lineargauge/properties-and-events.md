@@ -1,8 +1,8 @@
 ---
 title: Properties and Events
-page_title: Properties and Events
+page_title: Properties and Events | UI for WinForms Documentation
 description: Properties and Events
-slug: lineargauge-properties-and-events
+slug: winforms/gauges/lineargauge/properties-and-events
 tags: properties,and,events
 published: True
 position: 4
@@ -28,30 +28,34 @@ position: 4
 ## Events
 
 The __ValueChanged__ event fires when the __Value__ of the control is changed.
-        For example you can use this event to alert the user that the current value is close to the maximum:
+        For example you can use this event to alert the user that the current value is close to the maximum:#_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\Gauges\LinearGauge\LinearGuageGettingStarted.cs region=value}}
-	        void radLinearGauge2_ValueChanged(object sender, EventArgs e)
-	        {
-	            if ( radLinearGauge2.Value > radLinearGauge2.RangeEnd - 10)
-	            {
-	                RadMessageBox.Show("Detected value that is close to the maximum!");
-	            }
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\Gauges\LinearGauge\LinearGuageGettingStarted.cs region=value}} 
+{{source=..\SamplesVB\Gauges\LinearGauge\LinearGuageGettingStarted.vb region=value}} 
 
-{{source=..\SamplesVB\Gauges\LinearGauge\LinearGuageGettingStarted.vb region=value}}
-	    Private Sub radLinearGauge1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-	        If radLinearGauge2.Value > radLinearGauge2.RangeEnd - 10 Then
-	            RadMessageBox.Show("Detected value that is close to the maximum!")
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        void radLinearGauge2_ValueChanged(object sender, EventArgs e)
+        {
+            if ( radLinearGauge2.Value > radLinearGauge2.RangeEnd - 10)
+            {
+                RadMessageBox.Show("Detected value that is close to the maximum!");
+            }
+        }
+````
+````VB.NET
+    Private Sub radLinearGauge1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+        If radLinearGauge2.Value > radLinearGauge2.RangeEnd - 10 Then
+            RadMessageBox.Show("Detected value that is close to the maximum!")
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 

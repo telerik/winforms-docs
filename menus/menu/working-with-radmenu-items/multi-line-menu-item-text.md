@@ -1,8 +1,8 @@
 ---
 title: Multi-Line Menu Item Text
-page_title: Multi-Line Menu Item Text
+page_title: Multi-Line Menu Item Text | UI for WinForms Documentation
 description: Multi-Line Menu Item Text
-slug: menus-menu-working-with-radmenu-items-multi-line-menu-item-text
+slug: winforms/menus/menu/working-with-radmenu-items/multi-line-menu-item-text
 tags: multi-line,menu,item,text
 published: True
 position: 4
@@ -21,43 +21,51 @@ In the Property Window for a __RadMenuItem__use the drop down list to invoke the
 				![menus-menu-working-with-radmenu-items-multi-line-menu-item-text 002](images/menus-menu-working-with-radmenu-items-multi-line-menu-item-text002.png)
 
 In code use __Environment.NewLine__ to separate strings:
-				
+				#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=multiline}}
-	            radMenuItem1.Text = "Bar Chart - " +
-	             Environment.NewLine +
-	             "Compare multiple series of data";
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=multiline}} 
+{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=multiline}} 
 
-{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=multiline}}
-	        radMenuItem1.Text = "Bar Chart - " & Environment.NewLine & "Compare multiple series of data"
-	{{endregion}}
+````C#
+            radMenuItem1.Text = "Bar Chart - " +
+             Environment.NewLine +
+             "Compare multiple series of data";
+````
+````VB.NET
+        radMenuItem1.Text = "Bar Chart - " & Environment.NewLine & "Compare multiple series of data"
+        '
+````
+
+{{endregion}} 
+
 
 
 
 ## Menu Item Height
 
 The __AllItemsEqualHeight__ property controls whether the RadMenu allows some menu items to be taller than others. By default, menu items with multiple lines of text are taller than menu items with single lines of text. If you set this property to True, the height of all items increases to match that of the tallest items.
-				
+				#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Menus\Menu\WorkingWithRadMenuItems\MultilineMenuItemText.cs region=Height}}
-	            radMenu1.AllItemsEqualHeight = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Menus\Menu\WorkingWithRadMenuItems\MultilineMenuItemText.cs region=Height}} 
+{{source=..\SamplesVB\Menus\Menu\WorkingWithRadMenuItems\MultilineMenuItemText.vb region=Height}} 
 
-{{source=..\SamplesVB\Menus\Menu\WorkingWithRadMenuItems\MultilineMenuItemText.vb region=Height}}
-	        radMenu1.AllItemsEqualHeight = True
-	{{endregion}}
+````C#
+            radMenu1.AllItemsEqualHeight = true;
+````
+````VB.NET
+        radMenu1.AllItemsEqualHeight = True
+        '
+````
+
+{{endregion}} 
+
 
 

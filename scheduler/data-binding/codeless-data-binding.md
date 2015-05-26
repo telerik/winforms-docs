@@ -1,8 +1,8 @@
 ---
 title: Codeless data binding
-page_title: Codeless data binding
+page_title: Codeless data binding | UI for WinForms Documentation
 description: Codeless data binding
-slug: scheduler-data-binding-codeless-data-binding
+slug: winforms/scheduler/data-binding/codeless-data-binding
 tags: codeless,data,binding
 published: True
 position: 2
@@ -13,19 +13,12 @@ position: 2
 
 
 ## 
-<table><th><tr><td>
 
-RELATED VIDEOS</td><td></td></tr></th><tr><td>
 
-[Codeless Data Binding with RadScheduler for WinForms](http://tv.telerik.com/winforms/radscheduler/codeless-data-binding-with-radscheduler-winforms)
-
-In this video, you will learn how to use the SchedulerBindingDataSource with the RadScheduler for WinForms to quickly and codelessly data bind a RadScheduler. You will also be introduced to the RadSchedulerNavigator, a simple control that makes it easy for users navigate a RadScheduler. (Runtime: 07:04)
-              </td><td>![scheduler-data-binding-codeless-data-binding 001](images/scheduler-data-binding-codeless-data-binding001.png)</td></tr><tr><td>
-
-[Introduction to RadScheduler for WinForms](http://tv.telerik.com/winforms/radscheduler/introduction-radscheduler-winforms)
-
-In this webinar, Telerik Developer Support Specialist Robert Shoemate will introduce RadScheduler and demonstrate how to utilize its powerful feature set in your own applications. By attending this webinar, you will learn about features such as codeless data binding, adding custom fields, and UI customization. (Runtime: 55:58)
-              </td><td>![scheduler-data-binding-codeless-data-binding 002](images/scheduler-data-binding-codeless-data-binding002.png)</td></tr></table>
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[Codeless Data Binding with RadScheduler for WinForms](http://tv.telerik.com/winforms/radscheduler/codeless-data-binding-with-radscheduler-winforms)In this video, you will learn how to use the SchedulerBindingDataSource with the RadScheduler for WinForms to quickly and codelessly data bind a RadScheduler. You will also be introduced to the RadSchedulerNavigator, a simple control that makes it easy for users navigate a RadScheduler. (Runtime: 07:04)|![scheduler-data-binding-codeless-data-binding 001](images/scheduler-data-binding-codeless-data-binding001.png)|
+|[Introduction to RadScheduler for WinForms](http://tv.telerik.com/winforms/radscheduler/introduction-radscheduler-winforms)In this webinar, Telerik Developer Support Specialist Robert Shoemate will introduce RadScheduler and demonstrate how to utilize its powerful feature set in your own applications. By attending this webinar, you will learn about features such as codeless data binding, adding custom fields, and UI customization. (Runtime: 55:58)|![scheduler-data-binding-codeless-data-binding 002](images/scheduler-data-binding-codeless-data-binding002.png)|
 
 This tutorial will show you how to bind RadScheduler from the Visual Studio design time surface, by only using the RadScheduler
           design-time support, and without writing any code. The tutorial uses the data base which comes with the installation of Telerik UI for WinForms.
@@ -134,9 +127,9 @@ This tutorial will show you how to bind RadScheduler from the Visual Studio desi
 1. __UniqueID__ is the ID of your appointments
                 
 
-1. __[Resources]({%slug scheduler-data-binding-working-with-resources%})__ is a relation in the dataset, in this case __AppointmentsAppointmentsResources__
+1. __[Resources]({%slug winforms/scheduler/data-binding/working-with-resources%})__ is a relation in the dataset, in this case __AppointmentsAppointmentsResources__
 
-1. __[Exceptions]({%slug scheduler-data-binding-working-with-exceptions%})__ is a self-relation in the dataset, in this case __AppointmentsAppointments__At the end the *Appointment Mapping Dialog* should look like the following screenshot. Save and Close the dialog when done: 
+1. __[Exceptions]({%slug winforms/scheduler/data-binding/working-with-exceptions%})__ is a self-relation in the dataset, in this case __AppointmentsAppointments__At the end the *Appointment Mapping Dialog* should look like the following screenshot. Save and Close the dialog when done: 
             ![scheduler-data-binding-codeless-data-binding 008](images/scheduler-data-binding-codeless-data-binding008.png)  
           
 
@@ -148,50 +141,58 @@ This tutorial will show you how to bind RadScheduler from the Visual Studio desi
             ![scheduler-data-binding-codeless-data-binding 010](images/scheduler-data-binding-codeless-data-binding010.png)
 
 1. Fill the data tables in the data set:
-            
+            #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=codelessDatabinding}}
-	            AppointmentsTableAdapter appointmentsAdapter = new AppointmentsTableAdapter();
-	            appointmentsAdapter.Fill(this.schedulerDataDataSet.Appointments);
-	            ResourcesTableAdapter resourcesAdapter = new ResourcesTableAdapter();
-	            resourcesAdapter.Fill(this.schedulerDataDataSet.Resources);
-	            AppointmentsResourcesTableAdapter appointmentsResourcesAdapter = new AppointmentsResourcesTableAdapter();
-	            appointmentsResourcesAdapter.Fill(this.schedulerDataDataSet.AppointmentsResources);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=codelessDatabinding}} 
+{{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=codelessDatabinding}} 
 
-{{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=codelessDatabinding}}
-	        Dim appointmentsAdapter As New AppointmentsTableAdapter()
-	        appointmentsAdapter.Fill(Me.SchedulerDataDataSet.Appointments)
-	        Dim resourcesAdapter As New ResourcesTableAdapter()
-	        resourcesAdapter.Fill(Me.SchedulerDataDataSet.Resources)
-	        Dim appointmentsResourcesAdapter As New AppointmentsResourcesTableAdapter()
-	        appointmentsResourcesAdapter.Fill(Me.SchedulerDataDataSet.AppointmentsResources)
-	{{endregion}}
+````C#
+            AppointmentsTableAdapter appointmentsAdapter = new AppointmentsTableAdapter();
+            appointmentsAdapter.Fill(this.schedulerDataDataSet.Appointments);
+            ResourcesTableAdapter resourcesAdapter = new ResourcesTableAdapter();
+            resourcesAdapter.Fill(this.schedulerDataDataSet.Resources);
+            AppointmentsResourcesTableAdapter appointmentsResourcesAdapter = new AppointmentsResourcesTableAdapter();
+            appointmentsResourcesAdapter.Fill(this.schedulerDataDataSet.AppointmentsResources);
+````
+````VB.NET
+        Dim appointmentsAdapter As New AppointmentsTableAdapter()
+        appointmentsAdapter.Fill(Me.SchedulerDataDataSet.Appointments)
+        Dim resourcesAdapter As New ResourcesTableAdapter()
+        resourcesAdapter.Fill(Me.SchedulerDataDataSet.Resources)
+        Dim appointmentsResourcesAdapter As New AppointmentsResourcesTableAdapter()
+        appointmentsResourcesAdapter.Fill(Me.SchedulerDataDataSet.AppointmentsResources)
+        '
+````
+
+{{endregion}} 
+
 
 
 
 1. Use the __Rebind__ method of the SchedulerBindingDataSource object if the dataset is filled after applying the event provider data source:
-            
+            #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=Rebind}}
-	            schedulerBindingDataSource1.Rebind();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=Rebind}} 
+{{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=Rebind}} 
 
-{{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=Rebind}}
-	        SchedulerBindingDataSource1.Rebind()
-	{{endregion}}
+````C#
+            schedulerBindingDataSource1.Rebind();
+````
+````VB.NET
+        SchedulerBindingDataSource1.Rebind()
+        '
+````
+
+{{endregion}} 
+
 
 
 

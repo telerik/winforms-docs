@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: forms-and-dialogs-form-getting-started
+slug: winforms/forms-and-dialogs/form/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -36,11 +36,9 @@ Changing the base class of a standard Windows Form to RadForm in C#:
 1. If you are working in C#: Change the declaration of the form so that it derives from the __Telerik.WinControls.UI.RadForm__ class
             
 
-#### __[C#] Changing WinForms form to Telerik RadForm__
-
-{{source=..\SamplesCS\Forms and Dialogs\Form1.Designer.cs region=radForm}}
+````csharp
 	    partial class Form1 : Telerik.WinControls.UI.RadForm
-	{{endregion}}
+````
 
 
 
@@ -56,14 +54,9 @@ Changing the base class of a standard Windows Form to RadForm in VB.NET:
             
 
 1. Change the declaration in the __Form1.Designer.vb__file so that it derives from the __Telerik.WinControls.UI.RadForm__class:
-            
+            #_[VB.NET] Changing WinForms form to Telerik RadForm_
 
-#### __[VB.NET] Changing WinForms form to Telerik RadForm__
-
-{{source=..\SamplesVB\Forms and Dialogs\Form1.Designer.vb region=radForm}}
-	Partial Class Form1
-	    Inherits Telerik.WinControls.UI.RadForm
-	{{endregion}}
+	
 
 
 

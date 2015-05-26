@@ -1,8 +1,8 @@
 ---
 title: Adding columns
-page_title: Adding columns
+page_title: Adding columns | UI for WinForms Documentation
 description: Adding columns
-slug: listview-working-with-design-time-adding-columns
+slug: winforms/listview/working-with-design-time/adding-columns
 tags: adding,columns
 published: True
 position: 0

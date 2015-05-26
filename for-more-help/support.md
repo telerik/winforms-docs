@@ -1,8 +1,8 @@
 ---
 title: Support
-page_title: Support
+page_title: Support | UI for WinForms Documentation
 description: Support
-slug: for-more-help-support
+slug: winforms/for-more-help/support
 tags: support
 published: True
 position: 0

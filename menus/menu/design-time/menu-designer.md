@@ -1,8 +1,8 @@
 ---
 title: Menu Designer
-page_title: Menu Designer
+page_title: Menu Designer | UI for WinForms Documentation
 description: Menu Designer
-slug: menus-menu-design-time-menu-designer
+slug: winforms/menus/menu/design-time/menu-designer
 tags: menu,designer
 published: True
 position: 1
@@ -23,19 +23,19 @@ There are multiple methods for building menus using the property collection edi
 
 * Or, click the drop-down arrow to the right of the existing main menu items, and select __Add RadMenuItem__,
             __Add RadMenuComboItem__ or __Add RadMenuSeparatorItem__ to create an item of the corresponding type.
-            Once the menu item is created you can use the [Smart Tag]({%slug menus-menu-design-time-smart-tag%})
+            Once the menu item is created you can use the [Smart Tag]({%slug winforms/menus/menu/design-time/smart-tag%})
             to configure the __Text__, __Image__ properties and edit the __Items__ collection for the menu 
             item.![menus-menu-design-time-menu-designer 002](images/menus-menu-design-time-menu-designer002.png)
 
-* Or, click the RadMenu control, open its [Smart Tag]({%slug menus-menu-design-time-smart-tag%}) 
+* Or, click the RadMenu control, open its [Smart Tag]({%slug winforms/menus/menu/design-time/smart-tag%}) 
             menu, and select __Edit Items__. Add a new __RadMenuItem__ in the __RadElement Collection Editor__.![menus-menu-design-time-menu-designer 003](images/menus-menu-design-time-menu-designer003.png)
 
->The menu designer is decorated with rightward and downward pointing arrow buttons. Right-pointing arrows 
-            indicate [Smart Tags]({%slug menus-menu-design-time-smart-tag%}) for
+>note The menu designer is decorated with rightward and downward pointing arrow buttons. Right-pointing arrows 
+            indicate[Smart Tags]({%slug winforms/menus/menu/design-time/smart-tag%})for
             the __RadMenu__ and the individual __RadMenuItems__ that make up the menu. Downward 
-            pointing arrows let you add a particular menu item type, i.e. __RadMenuItem__, __RadMenuComboItem__ 
-              or __RadMenuSeparatorItem__.
-            
+            pointing arrows let you add a particular menu item type, i.e. __RadMenuItem__ , __RadMenuComboItem__ or __RadMenuSeparatorItem__ .
+>
+
 
 ## Adding Sub Menu Items
 

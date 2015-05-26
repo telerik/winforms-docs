@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: telerik-analytics-integration-getting-started
+slug: winforms/telerik-analytics-integration/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -42,21 +42,25 @@ In the Program.cs file you will notice that the initialization code for the Anal
 This is all that is necessary to start monitoring your application. By default the controls that have integrated support for analytics will
           start automatically to capture and send data. And when you start your application it will automatically send data to the Telerik Platform. 
           In case you want to disable this for a particular control you can set its __EnableAnalytics__ property to *false*.
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\Eqatec\Eqatec.cs region=disable}}
-	            this.radButton1.EnableAnalytics = false;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\Eqatec\Eqatec.cs region=disable}} 
+{{source=..\SamplesVB\Eqatec\Eqatec.vb region=disable}} 
 
-{{source=..\SamplesVB\Eqatec\Eqatec.vb region=disable}}
-	        Me.RadButton1.EnableAnalytics = False
-	{{endregion}}
+````C#
+            this.radButton1.EnableAnalytics = false;
+````
+````VB.NET
+        Me.RadButton1.EnableAnalytics = False
+        '
+````
+
+{{endregion}} 
+
 
 
 

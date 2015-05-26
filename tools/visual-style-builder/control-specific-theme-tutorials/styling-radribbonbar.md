@@ -1,8 +1,8 @@
 ---
 title: Styling RadRibbonBar
-page_title: Styling RadRibbonBar
+page_title: Styling RadRibbonBar | UI for WinForms Documentation
 description: Styling RadRibbonBar
-slug: tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar
+slug: winforms/tools/visual-style-builder/control-specific-theme-tutorials/styling-radribbonbar
 tags: styling,radribbonbar
 published: True
 position: 0
@@ -52,7 +52,9 @@ You will see that the RadRibbonBarElement and RadRibbonBarElement.IsRibbonFormAc
 
 ![tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 004](images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar004.png)
 
->The RadRibbonBarElement.IsRibbonFormActive state is applied to the RadRibbonBar control when it is in a RadRibbonForm and the form is active. Otherwise the RadRibbonBarElement state is applied since it is the default state.
+>note The RadRibbonBarElement.IsRibbonFormActive state is applied to the RadRibbonBar control when it is in a RadRibbonForm and the form is active. Otherwise the RadRibbonBarElement state is applied since it is the default state.
+>
+
 
 We see that a repository item named RibbonTitlebarFillNormal is highlighted and checked. That means that this repository item is associated with the current state. So we will need to modify this repository item to change the appearance for the RadRibbonBar when it is in this state. To do so, double-click on the repository item or click on the Edit Repository Item button. An editor will be opened in dialog mode which allows for modifying the parameters of the repository item:
 

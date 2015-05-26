@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: codedui-getting-started
+slug: winforms/codedui/getting-started
 tags: getting,started
 published: True
 position: 1
@@ -13,25 +13,18 @@ position: 1
 
 
 ## 
-<table><th><tr><td>
 
-RELATED VIDEOS</td><td></td></tr></th><tr><td>
 
-[What is new in Q3 2012 Telerik UI for WinForms](http://tv.telerik.com/watch/radcontrols-for-winforms/what-is-new-in-q3-2012-radcontrols-for-winforms)
-
-This webinar examines the new features found in Telerik UI for WinForms. Included in the Q3 2012 release is RadPivotGrid (Beta),
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[What is new in Q3 2012 Telerik UI for WinForms](http://tv.telerik.com/watch/radcontrols-for-winforms/what-is-new-in-q3-2012-radcontrols-for-winforms)This webinar examines the new features found in Telerik UI for WinForms. Included in the Q3 2012 release is RadPivotGrid (Beta),
                 Coded UI Testing Support, touch, legend and financial charts for RadChartView, Visual Studio 2012 compliance and much much more.
-                Get started with Coded UI Test and Telerik UI for WinForms now! (25:02 - 31:32)
-              </td><td>![webinar Q 32012](images/webinarQ32012.png)</td></tr><tr><td>
-
-[
+                Get started with Coded UI Test and Telerik UI for WinForms now! (25:02 - 31:32)|![webinar Q 32012](images/webinarQ32012.png)|
+|[
                     Getting Started with Coded UI for WinForms
-                  ](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-coded-ui-for-winforms)
-
-Telerik UI for WinForms Q3 2012 introduces full support for Coded UI Tests implementing all four Coded UI Test levels.
+                  ](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-coded-ui-for-winforms)Telerik UI for WinForms Q3 2012 introduces full support for Coded UI Tests implementing all four Coded UI Test levels.
                 These enhancements are available not only in Visual Studio 2010, but also in the new Visual Studio 2012. Today, we will take
-                a look at Getting started with CodedUI testing using Telerik UI for WinForms.
-              </td><td>![codedui-getting-started 000](images/codedui-getting-started000.png)</td></tr></table>
+                a look at Getting started with CodedUI testing using Telerik UI for WinForms.|![codedui-getting-started 000](images/codedui-getting-started000.png)|
 
 This article will demonstrate how to create a simple test with RadListControl and CodedUI
         

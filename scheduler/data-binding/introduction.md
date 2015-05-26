@@ -1,8 +1,8 @@
 ---
 title: Introduction
-page_title: Introduction
+page_title: Introduction | UI for WinForms Documentation
 description: Introduction
-slug: scheduler-data-binding-introduction
+slug: winforms/scheduler/data-binding/introduction
 tags: introduction
 published: True
 position: 0
@@ -13,30 +13,24 @@ position: 0
 
 
 ## 
-<table><th><tr><td>
 
-RELATED VIDEOS</td><td></td></tr></th><tr><td>
 
-[Codeless Data Binding with RadScheduler for WinForms](http://tv.telerik.com/winforms/radscheduler/codeless-data-binding-with-radscheduler-winforms)         
-                In this video, you will learn how to use the SchedulerBindingDataSource with the RadScheduler for WinForms to quickly and codelessly data bind a RadScheduler. You will also be introduced to the RadSchedulerNavigator, a simple control that makes it easy for users navigate a RadScheduler. (Runtime: 07:04)
-              </td><td>
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[Codeless Data Binding with RadScheduler for WinForms](http://tv.telerik.com/winforms/radscheduler/codeless-data-binding-with-radscheduler-winforms)In this video, you will learn how to use the SchedulerBindingDataSource with the RadScheduler for WinForms to quickly and codelessly data bind a RadScheduler. You will also be introduced to the RadSchedulerNavigator, a simple control that makes it easy for users navigate a RadScheduler. (Runtime: 07:04)|
+>caption 
 
-![scheduler-data-binding-codeless-data-binding 001](images/scheduler-data-binding-codeless-data-binding001.png)</td></tr><tr><td>
+![scheduler-data-binding-codeless-data-binding 001](images/scheduler-data-binding-codeless-data-binding001.png)|
+|[Introduction to RadScheduler for WinForms](http://tv.telerik.com/winforms/radscheduler/introduction-radscheduler-winforms)In this webinar, Telerik Developer Support Specialist Robert Shoemate will introduce RadScheduler and demonstrate how to utilize its powerful feature set in your own applications. By attending this webinar, you will learn about features such as codeless data binding, adding custom fields, and UI customization. (Runtime: 55:58)|
+>caption 
 
-[Introduction to RadScheduler for WinForms](http://tv.telerik.com/winforms/radscheduler/introduction-radscheduler-winforms)
-                In this webinar, Telerik Developer Support Specialist Robert Shoemate will introduce RadScheduler and demonstrate how to utilize its powerful feature set in your own applications. By attending this webinar, you will learn about features such as codeless data binding, adding custom fields, and UI customization. (Runtime: 55:58)
-              </td><td>
+![scheduler-data-binding-codeless-data-binding 002](images/scheduler-data-binding-codeless-data-binding002.png)|
 
-![scheduler-data-binding-codeless-data-binding 002](images/scheduler-data-binding-codeless-data-binding002.png)</td></tr></table>
-<table><th><tr><td>
 
-RELATED BLOGS</td></tr></th><tr><td>
-
-<b>
-                Data Binding with RadScheduler for
-                WinForms</b>
-
-RadScheduler for WinForms is highly
+| RELATED BLOGS |
+| ------ |
+| __Data Binding with RadScheduler for
+                WinForms__ RadScheduler for WinForms is highly
               customizable component that offers functionality similar to
               that of the Calendar included with MS Outlook. When working
               with RadScheduler, developers can easily bind data sources
@@ -44,15 +38,11 @@ RadScheduler for WinForms is highly
               SchedulerBindingDataSource. The provided data source can be
               in the form of a database or business objects. The only
               requirement is that the data source must conform to a
-              specific structure and provide specific fields. [Read full post ...](http://blogs.telerik.com/winformsteam/posts/10-04-01/data_binding_with_radscheduler_for_winforms.aspx)</td></tr><tr><td>
-
-<b>
-                  RadScheduler for WinForms data binding and occurrence exceptions  </b>
-
-The big [new] feature for Q3 2009 release in RadScheduler for WinForms has got to be the resource grouping functionality.
+              specific structure and provide specific fields.[Read full post ...](http://blogs.telerik.com/winformsteam/posts/10-04-01/data_binding_with_radscheduler_for_winforms.aspx)|
+| __RadScheduler for WinForms data binding and occurrence exceptions__ The big [new] feature for Q3 2009 release in RadScheduler for WinForms has got to be the resource grouping functionality.
               There are, however, numerous other improvements that also deserve attention, such as data binding. Some of you may remember that in its
               first release the WinForms Scheduler had just basic support for binding to appointment data. Later we extended this functionality to support 
-              storing associations to resources in the data source. [Read full post ...](http://blogs.telerik.com/winformsteam/posts/09-11-04/radscheduler-for-winforms-data-binding-and-occurrence-exceptions.aspx)</td></tr></table>
+              storing associations to resources in the data source.[Read full post ...](http://blogs.telerik.com/winformsteam/posts/09-11-04/radscheduler-for-winforms-data-binding-and-occurrence-exceptions.aspx)|
 
 RadScheduler uses a data source provider model for data binding that targets
           highly customizable information storage and retrieval. For example, the
@@ -82,10 +72,11 @@ Here are some of the other helpful properties that can be set at design
             user is allowed to use.
 ![scheduler-data-binding-introduction 001](images/scheduler-data-binding-introduction001.png)
 
->The active
+>note The active
                 view cannot be changed if the new view is not in the accessible
                 interval.
-              
+>
+
 
 * __AppointmentTitleFormat__ is fed to a String.Format()
             call and supplies parameters for Start, End, Subject and Location in

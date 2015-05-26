@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: bulletgraph-getting-started
+slug: winforms/gauges/bulletgraph/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -18,7 +18,9 @@ When you drag a __RadBulletGraph__ from the Toolbox and drop it onto the form, t
           will offer you to pick up the desired type:
         ![bulletgraph-getting-started 001](images/bulletgraph-getting-started001.png)
 
->If you do not choose a gauge's style and just close the gallery, an empty __RadBulletGraph__ will be created.
+>note If you do not choose a gauge's style and just close the gallery, an empty __RadBulletGraph__ will be created.
+>
+
 
 You can change the gauge's style via the Smart tag's option Open Gallery as well.
         ![bulletgraph-getting-started 002](images/bulletgraph-getting-started002.png)
@@ -26,58 +28,62 @@ You can change the gauge's style via the Smart tag's option Open Gallery as well
 Once the control is added to the form you just need to synchronize the
           __FeaturedMeasure__ and __ComparativeMeasure__ values with your business logic values.
           For example you can see how the controls work with the following code:          
+        #_[C#]_
+
+	
+
+
+
+{{source=..\SamplesCS\Gauges\BulletGraphCode.cs region=test}} 
+{{source=..\SamplesVB\Gauges\BulletGraphCode.vb region=test}} 
+
+````C#
+        Timer timer;
+        Random rand;
+        
+        public BulletGraphCode()
+        {
+            InitializeComponent();
+            timer = new Timer();
+            rand = new Random();
+            timer.Interval = 1000;
+            timer.Tick += timer_Tick;
+            timer.Start();
         
 
-#### __[C#]__
+        }
+     
+        void timer_Tick(object sender, EventArgs e)
+        {
+            radBulletGraph1.FeaturedMeasure = rand.Next(100);
+            radBulletGraph1.ComparativeMeasure = rand.Next(100);
+        }
+````
+````VB.NET
+    Private timer As Timer
+    Private rand As Random
 
-{{source=..\SamplesCS\Gauges\BulletGraphCode.cs region=test}}
-	        Timer timer;
-	        Random rand;
-	        
-	        public BulletGraphCode()
-	        {
-	            InitializeComponent();
-	            timer = new Timer();
-	            rand = new Random();
-	            timer.Interval = 1000;
-	            timer.Tick += timer_Tick;
-	            timer.Start();
-	        
-	
-	        }
-	     
-	        void timer_Tick(object sender, EventArgs e)
-	        {
-	            radBulletGraph1.FeaturedMeasure = rand.Next(100);
-	            radBulletGraph1.ComparativeMeasure = rand.Next(100);
-	        }
-	{{endregion}}
+    Public Sub New()
+        InitializeComponent()
+        timer = New Timer()
+        rand = New Random()
+        timer.Interval = 1000
+        AddHandler timer.Tick, AddressOf timer_Tick
+        timer.Start()
+    End Sub
 
+    Private Sub timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
+        radBulletGraph1.FeaturedMeasure = rand.Next(100)
+        radBulletGraph1.ComparativeMeasure = rand.Next(100)
+    End Sub
+````
 
-
-#### __[VB.NET]__
-
-{{source=..\SamplesVB\Gauges\BulletGraphCode.vb region=test}}
-	    Private timer As Timer
-	    Private rand As Random
-	
-	    Public Sub New()
-	        InitializeComponent()
-	        timer = New Timer()
-	        rand = New Random()
-	        timer.Interval = 1000
-	        AddHandler timer.Tick, AddressOf timer_Tick
-	        timer.Start()
-	    End Sub
-	
-	    Private Sub timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
-	        radBulletGraph1.FeaturedMeasure = rand.Next(100)
-	        radBulletGraph1.ComparativeMeasure = rand.Next(100)
-	    End Sub
-	{{endregion}}
+{{endregion}} 
 
 
 
->importantPlease note that when you select the style all events will be automatically created and you can directly access them. 
-          You can create the control in code as well. More information is available in the following article:
-          [Getting Started]({%slug lineargauge-getting-started%})
+
+>important Please note that when you select the style all events will be automatically created and you can directly access them. 
+          You can create the control in code as well. More information is available in the following article:[Getting Started]({%slug winforms/gauges/lineargauge/getting-started%})
+>
+

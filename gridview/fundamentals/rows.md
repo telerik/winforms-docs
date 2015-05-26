@@ -1,8 +1,8 @@
 ---
 title: Rows
-page_title: Rows
+page_title: Rows | UI for WinForms Documentation
 description: Rows
-slug: gridview-fundamentals-rows
+slug: winforms/gridview/fundamentals/rows
 tags: rows
 published: True
 position: 4
@@ -22,13 +22,14 @@ There are two main row types in RadGridView:
 
 Each data row in the grid represents a record from the specified __DataSource__. Each 
       		__RadGridView__ has a row collection of type
-        	[GridViewRowInfo]({%slug gridview-rows-gridviewrowinfo%}).
+        	[GridViewRowInfo]({%slug winforms/gridview/rows/gridviewrowinfo%}).
       		The collection provides methods to add or remove items.
       	
 
->Note that only Rows bound to the data source are kept in the Rows collection. The header, pager, filter and separator are not 
-        	included in this collection. 
-          Selected row
+>note Note that only Rows bound to the data source are kept in the Rows collection. The header, pager, filter and separator are not 
+        	included in this collection.
+>
+Selected row
 
 You can check if a grid row is in selected state using __GridRowElement.IsSelected__ property.
       				Multiple rows can be selected if the RadGridView __MultiSelect__ property is set to *True*.
@@ -37,7 +38,7 @@ You can check if a grid row is in selected state using __GridRowElement.IsSelect
 ## Structure RowsFilteringRow
 
 FilteringRow will appear automatically when you have
-		      		[Filtering]({%slug gridview-filtering-basic-filtering%})
+		      		[Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
 		        	enabled either by __RadGridView.EnableFiltering__ or __GridViewTemplate.EnableFiltering__ properties.
 		      	
 

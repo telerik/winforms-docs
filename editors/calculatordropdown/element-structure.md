@@ -1,8 +1,8 @@
 ---
 title: Element structure
-page_title: Element structure
+page_title: Element structure | UI for WinForms Documentation
 description: Element structure
-slug: editors-calculatordropdown-element-structure
+slug: winforms/editors/calculatordropdown/element-structure
 tags: element,structure
 published: True
 position: 0

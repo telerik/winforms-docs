@@ -1,8 +1,8 @@
 ---
 title: RadRibbonBar Control Element Structure
-page_title: RadRibbonBar Control Element Structure
+page_title: RadRibbonBar Control Element Structure | UI for WinForms Documentation
 description: RadRibbonBar Control Element Structure
-slug: ribbonbar-styling-radribbonbar-radribbonbar-control-element-structure
+slug: winforms/ribbonbar/styling-radribbonbar/radribbonbar-control-element-structure
 tags: radribbonbar,control,element,structure
 published: True
 position: 0

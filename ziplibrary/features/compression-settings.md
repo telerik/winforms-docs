@@ -1,8 +1,8 @@
 ---
 title: Compression settings
-page_title: Compression settings
+page_title: Compression settings | UI for WinForms Documentation
 description: Compression settings
-slug: ziplibrary-features-compression-settings
+slug: winforms/ziplibrary/features/compression-settings
 tags: compression,settings
 published: True
 position: 3
@@ -21,9 +21,9 @@ The __RadZipLibrary__ allows you compress and decompress data in your applicatio
 Deflate settings are used for compressing data using a combination of the LZ77 algorithm and Huffman coding.
         
 
->tipYou can find more information on the Deflate data compression algorithm
-            [here](http://en.wikipedia.org/wiki/DEFLATE).
-          
+>tip You can find more information on the Deflate data compression algorithm[here](http://en.wikipedia.org/wiki/DEFLATE).
+>
+
 
 The __DeflateSettings__ class exposes some configurable parameters:
         
@@ -35,25 +35,29 @@ The __DeflateSettings__ class exposes some configurable parameters:
             
 
 __Example 1__ demonstrates how to create DeflateSettings.
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\ZipLibrary\CompressionSettings.cs region=default}}
-	            DeflateSettings compressionSettings = new DeflateSettings();
-	            compressionSettings.CompressionLevel = CompressionLevel.Best;
-	            compressionSettings.HeaderType = CompressedStreamHeader.ZLib;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\ZipLibrary\CompressionSettings.cs region=default}} 
+{{source=..\SamplesVB\ZipLibrary\CompressionSettings.vb region=default}} 
 
-{{source=..\SamplesVB\ZipLibrary\CompressionSettings.vb region=default}}
-	        Dim compressionSettings As New DeflateSettings()
-	        compressionSettings.CompressionLevel = CompressionLevel.Best
-	        compressionSettings.HeaderType = CompressedStreamHeader.ZLib
-	{{endregion}}
+````C#
+            DeflateSettings compressionSettings = new DeflateSettings();
+            compressionSettings.CompressionLevel = CompressionLevel.Best;
+            compressionSettings.HeaderType = CompressedStreamHeader.ZLib;
+````
+````VB.NET
+        Dim compressionSettings As New DeflateSettings()
+        compressionSettings.CompressionLevel = CompressionLevel.Best
+        compressionSettings.HeaderType = CompressedStreamHeader.ZLib
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -62,9 +66,9 @@ __Example 1__ demonstrates how to create DeflateSettings.
 LZMA settings are used for compressing your data using Lempel-Ziv-Markov chain algorithm (LZMA).
         
 
->tipYou can read more about LZMA
-            [here](http://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm).
-          
+>tip You can read more about LZMA[here](http://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm).
+>
+
 
 The configurable parameters of the __LzmaSettings__ class are as follows:
         
@@ -86,57 +90,65 @@ The configurable parameters of the __LzmaSettings__ class are as follows:
 
 * __MatchFinderType__: The type of the match finder. Allowed values are BT2(match finder that uses two bytes for the hash) 
               and BT4(uses four bytes for the hash).
-            
+            #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\ZipLibrary\CompressionSettings.cs region=lzma}}
-	            LzmaSettings compressionSettings1 = new LzmaSettings();
-	            compressionSettings1.DictionarySize = 23;
-	            compressionSettings1.FastBytes = 32;
-	            compressionSettings1.LiteralContextBits = 3;
-	            compressionSettings1.LiteralPositionBits = 3;
-	            compressionSettings1.MatchFinderType = LzmaMatchFinderType.BT4;
-	            compressionSettings1.PositionStateBits = 2;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\ZipLibrary\CompressionSettings.cs region=lzma}} 
+{{source=..\SamplesVB\ZipLibrary\CompressionSettings.vb region=lzma}} 
 
-{{source=..\SamplesVB\ZipLibrary\CompressionSettings.vb region=lzma}}
-	        Dim compressionSettings1 As New LzmaSettings()
-	        compressionSettings1.DictionarySize = 23
-	        compressionSettings1.FastBytes = 32
-	        compressionSettings1.LiteralContextBits = 3
-	        compressionSettings1.LiteralPositionBits = 3
-	        compressionSettings1.MatchFinderType = LzmaMatchFinderType.BT4
-	        compressionSettings1.PositionStateBits = 2
-	{{endregion}}
+````C#
+            LzmaSettings compressionSettings1 = new LzmaSettings();
+            compressionSettings1.DictionarySize = 23;
+            compressionSettings1.FastBytes = 32;
+            compressionSettings1.LiteralContextBits = 3;
+            compressionSettings1.LiteralPositionBits = 3;
+            compressionSettings1.MatchFinderType = LzmaMatchFinderType.BT4;
+            compressionSettings1.PositionStateBits = 2;
+````
+````VB.NET
+        Dim compressionSettings1 As New LzmaSettings()
+        compressionSettings1.DictionarySize = 23
+        compressionSettings1.FastBytes = 32
+        compressionSettings1.LiteralContextBits = 3
+        compressionSettings1.LiteralPositionBits = 3
+        compressionSettings1.MatchFinderType = LzmaMatchFinderType.BT4
+        compressionSettings1.PositionStateBits = 2
+        '
+````
+
+{{endregion}} 
+
 
 
 
 ## Store Settings
 
 Store settings are used to just store the data using no compression.
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\ZipLibrary\CompressionSettings.cs region=settings}}
-	            StoreSettings compressionSettings2 = new StoreSettings();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\ZipLibrary\CompressionSettings.cs region=settings}} 
+{{source=..\SamplesVB\ZipLibrary\CompressionSettings.vb region=settings}} 
 
-{{source=..\SamplesVB\ZipLibrary\CompressionSettings.vb region=settings}}
-	        Dim compressionSettings2 As New StoreSettings()
-	{{endregion}}
+````C#
+            StoreSettings compressionSettings2 = new StoreSettings();
+````
+````VB.NET
+        Dim compressionSettings2 As New StoreSettings()
+        '
+````
+
+{{endregion}} 
+
 
 
 
 # See Also
 
- * [Compress a stream]({%slug ziplibrary-features-compress-a-stream%})
+ * [Compress a stream]({%slug winforms/ziplibrary/features/compress-a-stream%})

@@ -27,7 +27,6 @@ a img {
 }
 
 /* Header */
-
 #page-header {
     background-color: #2a2d33;
     font-size: 12px;
@@ -119,6 +118,7 @@ a img {
    /*  height: 80px; 
     border-bottom: 2px solid #ebecee;*/
 }
+
 
 /* Tabs */
 
@@ -282,6 +282,7 @@ a img {
 
 #page-nav .k-plus { background: url(../images/close.png) no-repeat; }
 #page-nav .k-minus { background: url(../images/open.png) no-repeat; }
+
 
 #page-nav .article {
 	background: url(../images/file.png) no-repeat;
@@ -802,6 +803,35 @@ header, nav, section, article, aside, footer {
     min-height: 24px;
     min-width: 24px;
 } 
+.k-tabstrip-wrapper {
+    margin: 1em 0;
+}
+
+.k-tabstrip {
+    border: 0;
+}
+
+.k-tabstrip .k-item {
+    border-width: 0 1px 0;
+    border-color: #acacac;
+}
+
+.k-tabstrip .k-content {
+    border-color: #acacac;
+    background: #F1F5F9;
+}
+.k-tabstrip .k-content pre {
+    border: 0;
+}
+
+.k-tabstrip .k-tabstrip-items .k-state-active {
+    border-bottom-width: 0;
+    margin-bottom: -1px;
+    padding-bottom: -1px;
+    z-index: 1;
+    background: #F1F5F9;
+}
+
 
 @media (max-width: 1200px) {
     #page-nav {

@@ -1,8 +1,8 @@
 ---
 title: Handling Events
-page_title: Handling Events
+page_title: Handling Events | UI for WinForms Documentation
 description: Handling Events
-slug: ribbonbar-programming-radribbonbar-handling-events
+slug: winforms/ribbonbar/programming-radribbonbar/handling-events
 tags: handling,events
 published: True
 position: 6

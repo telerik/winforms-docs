@@ -1,8 +1,8 @@
 ---
 title: Control Element Structure
-page_title: Control Element Structure
+page_title: Control Element Structure | UI for WinForms Documentation
 description: Control Element Structure
-slug: track-and-status-controls-trackbar-control-element-structure
+slug: winforms/track-and-status-controls/trackbar/control-element-structure
 tags: control,element,structure
 published: True
 position: 1
@@ -37,7 +37,7 @@ Here is a brief explanation of the various elements in the tree:
             
 
 * __TrackBarIndicatorContainerElement__ generates and arranges the __TrackbarIndicatorElements__
-              according the [mode]({%slug track-and-status-controls-trackbar-modes%}) of RadTrackBar and the content of the __Ranges__ 
+              according the [mode]({%slug winforms/track-and-status-controls/trackbar/modes%}) of RadTrackBar and the content of the __Ranges__ 
               collection. This class creates a connection between the logical __TrackBarRange__ and its visual representation 
               - __TrackbarIndicatorElements__.
             

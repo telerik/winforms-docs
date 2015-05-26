@@ -1,8 +1,8 @@
 ---
 title: Requirements
-page_title: Requirements
+page_title: Requirements | UI for WinForms Documentation
 description: Requirements
-slug: codedui-requirements
+slug: winforms/codedui/requirements
 tags: requirements
 published: True
 position: 0

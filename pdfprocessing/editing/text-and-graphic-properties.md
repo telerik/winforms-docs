@@ -1,8 +1,8 @@
 ---
 title: Text and Graphic Properties
-page_title: Text and Graphic Properties
+page_title: Text and Graphic Properties | UI for WinForms Documentation
 description: Text and Graphic Properties
-slug: pdfprocessing-editing-text-and-graphic-properties
+slug: winforms/pdfprocessing/editing/text-and-graphic-properties
 tags: text,and,graphic,properties
 published: True
 position: 7
@@ -12,7 +12,7 @@ position: 7
 
 
 
-When using the methods of [FixedContentEditor]({%slug pdfprocessing-editing-fixedcontenteditor%}) or [Block]({%slug radpdfprocessing-editing-block%}) classes they will create different content elements. You can control the look of the newly created elements with the following properties:
+When using the methods of [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}) or [Block]({%slug winforms/pdfprocessing/editing/block%}) classes they will create different content elements. You can control the look of the newly created elements with the following properties:
       
 
 ## GraphicProperties
@@ -116,11 +116,12 @@ __properties.Save();__
 
 __properties.Restore();__
 
->The Save() method returns __IDisposable__ object that will execute Restore() as soon as the dispose method is called and can be used in a using statement.
-          
+>note The Save() method returns __IDisposable__ object that will execute Restore() as soon as the dispose method is called and can be used in a using statement.
+>
+
 
 # See Also
 
- * [FixedContentEditor]({%slug pdfprocessing-editing-fixedcontenteditor%})
+ * [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%})
 
- * [Block]({%slug radpdfprocessing-editing-block%})
+ * [Block]({%slug winforms/pdfprocessing/editing/block%})

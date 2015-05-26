@@ -1,8 +1,8 @@
 ---
 title: Floating Strips
-page_title: Floating Strips
+page_title: Floating Strips | UI for WinForms Documentation
 description: Floating Strips
-slug: commandbar-floating-strips
+slug: winforms/commandbar/floating-strips
 tags: floating,strips
 published: True
 position: 4
@@ -38,115 +38,131 @@ There are some events that provide you with control over the floating/docking pr
 
 * __FloatingStripCreating__ event is fired when a strip is about to be made floating.
        The following example shows how to prevent the strip “OptionsStrip” from becoming floating.
- 	 
+ 	 #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripCreating}}
-	        void radCommandBar1_FloatingStripCreating(object sender, CancelEventArgs e)
-	        {
-	            if ((sender as CommandBarStripElement).Name == "OptionsStrip")
-	            {
-	                e.Cancel = true;
-	            }
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripCreating}} 
+{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripCreating}} 
 
-{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripCreating}}
-	    Private Sub radCommandBar1_FloatingStripCreating(ByVal sender As Object, ByVal e As CancelEventArgs)
-	        If TryCast(sender, CommandBarStripElement).Name = "OptionsStrip" Then
-	            e.Cancel = True
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        void radCommandBar1_FloatingStripCreating(object sender, CancelEventArgs e)
+        {
+            if ((sender as CommandBarStripElement).Name == "OptionsStrip")
+            {
+                e.Cancel = true;
+            }
+        }
+````
+````VB.NET
+    Private Sub radCommandBar1_FloatingStripCreating(ByVal sender As Object, ByVal e As CancelEventArgs)
+        If TryCast(sender, CommandBarStripElement).Name = "OptionsStrip" Then
+            e.Cancel = True
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
 * __FloatingStripCreated__ event is fired when the floating form is shown.
-  The following example shows how to set the caption text of the floating form:
+  The following example shows how to set the caption text of the floating form:#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripCreated}}
-	        void radCommandBar1_FloatingStripCreated(object sender, EventArgs e)
-	        {
-	            (sender as CommandBarStripElement).FloatingForm.Text = "Just a floating form";
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripCreated}} 
+{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripCreated}} 
 
-{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripCreated}}
-	    Private Sub radCommandBar1_FloatingStripCreated(ByVal sender As Object, ByVal e As EventArgs)
-	        TryCast(sender, CommandBarStripElement).FloatingForm.Text = "Just a floating form"
-	    End Sub
-	{{endregion}}
+````C#
+        void radCommandBar1_FloatingStripCreated(object sender, EventArgs e)
+        {
+            (sender as CommandBarStripElement).FloatingForm.Text = "Just a floating form";
+        }
+````
+````VB.NET
+    Private Sub radCommandBar1_FloatingStripCreated(ByVal sender As Object, ByVal e As EventArgs)
+        TryCast(sender, CommandBarStripElement).FloatingForm.Text = "Just a floating form"
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
 * __FloatingStripDocking__ event is fired when a floating strip is about to be docked to a RadCommandBar control. 
-The following example shows how to prevent the strip with name “OptionsStrip” from being docked.
+The following example shows how to prevent the strip with name “OptionsStrip” from being docked.#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripDocking}}
-	        void radCommandBar1_FloatingStripDocking(object sender, CancelEventArgs e)
-	        {
-	            if ((sender as CommandBarStripElement).Name == "OptionsStrip")
-	            {
-	                e.Cancel = true;
-	            }
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripDocking}} 
+{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripDocking}} 
 
-{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripDocking}}
-	    Private Sub radCommandBar1_FloatingStripDocking(ByVal sender As Object, ByVal e As CancelEventArgs)
-	        If TryCast(sender, CommandBarStripElement).Name = "OptionsStrip" Then
-	            e.Cancel = True
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        void radCommandBar1_FloatingStripDocking(object sender, CancelEventArgs e)
+        {
+            if ((sender as CommandBarStripElement).Name == "OptionsStrip")
+            {
+                e.Cancel = true;
+            }
+        }
+````
+````VB.NET
+    Private Sub radCommandBar1_FloatingStripDocking(ByVal sender As Object, ByVal e As CancelEventArgs)
+        If TryCast(sender, CommandBarStripElement).Name = "OptionsStrip" Then
+            e.Cancel = True
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
 * __FloatingStripDocked__ event is fired when a floating strip has docked to a RadCommandBar control.
  The following example shows a sample usage of this event.
-  
+  #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripDocked}}
-	        void radCommandBar1_FloatingStripDocked(object sender, EventArgs e)
-	        {
-	            CommandBarStripElement dockedStrip = sender as CommandBarStripElement;
-	            if (dockedStrip != null)
-	            {
-	                MessageBox.Show(dockedStrip.Name + " has docked to " + dockedStrip.ElementTree.Control.Name);
-	            }
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripDocked}} 
+{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripDocked}} 
 
-{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripDocked}}
-	    Private Sub radCommandBar1_FloatingStripDocked(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim dockedStrip As CommandBarStripElement = TryCast(sender, CommandBarStripElement)
-	        If dockedStrip IsNot Nothing Then
-	            MessageBox.Show(dockedStrip.Name & " has docked to " & dockedStrip.ElementTree.Control.Name)
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        void radCommandBar1_FloatingStripDocked(object sender, EventArgs e)
+        {
+            CommandBarStripElement dockedStrip = sender as CommandBarStripElement;
+            if (dockedStrip != null)
+            {
+                MessageBox.Show(dockedStrip.Name + " has docked to " + dockedStrip.ElementTree.Control.Name);
+            }
+        }
+````
+````VB.NET
+    Private Sub radCommandBar1_FloatingStripDocked(ByVal sender As Object, ByVal e As EventArgs)
+        Dim dockedStrip As CommandBarStripElement = TryCast(sender, CommandBarStripElement)
+        If dockedStrip IsNot Nothing Then
+            MessageBox.Show(dockedStrip.Name & " has docked to " & dockedStrip.ElementTree.Control.Name)
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 

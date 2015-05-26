@@ -1,8 +1,8 @@
 ---
 title: Working with needles
-page_title: Working with needles
+page_title: Working with needles | UI for WinForms Documentation
 description: Working with needles
-slug: radialgauge-understanding-gauge-elements-working-with-needles
+slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-needles
 tags: working,with,needles
 published: True
 position: 1

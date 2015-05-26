@@ -1,8 +1,8 @@
 ---
 title: RadDock Properties and Methods
-page_title: RadDock Properties and Methods
+page_title: RadDock Properties and Methods | UI for WinForms Documentation
 description: RadDock Properties and Methods
-slug: dock-object-model-raddock-properties-and-methods
+slug: winforms/dock/object-model/raddock-properties-and-methods
 tags: raddock,properties,and,methods
 published: True
 position: 0
@@ -42,7 +42,7 @@ __RadDock__controls the overall behavior of __ToolWindows__and __DocumentWindows
 * __MainDocumentContainerVisible__: Indicates whether main document container will be initially visible.
             
 
-* __QuickNavigatorSettings:__ this property give you an object of type QuickNavigatorSettings. This object gives you a full control over the [Quick Navigator]({%slug dock-architecture-and-features-quick-navigator%}) features.
+* __QuickNavigatorSettings:__ this property give you an object of type QuickNavigatorSettings. This object gives you a full control over the [Quick Navigator]({%slug winforms/dock/architecture-and-features/quick-navigator%}) features.
             
 
 ## RadDock Methods
@@ -59,7 +59,7 @@ __RadDock__controls the overall behavior of __ToolWindows__and __DocumentWindows
 * __AutoHideWindows(IEnumerable<DockWindow> windows, AutoHidePosition position):__ Makes the specified DockWindow collection auto-hidden.
             
 
-* __CloseAllWindows():__ Closes all DockWindows. The __[CloseAction]({%slug dock-object-model-removing-toolwindow-and-documentwindow-at-runtime%})__ property specifies whether a __ToolWindow/DocumentWindow__ will be *Closed*, *ClosedAndDisposed* or just *Hidden*.
+* __CloseAllWindows():__ Closes all DockWindows. The __[CloseAction]({%slug winforms/dock/object-model/removing-toolwindow-and-documentwindow-at-runtime%})__ property specifies whether a __ToolWindow/DocumentWindow__ will be *Closed*, *ClosedAndDisposed* or just *Hidden*.
             
 
 * __CloseWindow(DockWindow window):__ Closes a specified ToolWindow or DocumentWindow.
@@ -82,7 +82,7 @@ __RadDock__controls the overall behavior of __ToolWindows__and __DocumentWindows
 
 * __LoadFromXml(fileName)__: Deserializes __RadDock__ layout structure__.__
 
-* __SaveToXml(fileName):__ Serializes the __RadDock__layout structure. This method does not save content. See [Loading and Saving Layouts]({%slug dock-loading-and-saving-layouts%}) for more information.
+* __SaveToXml(fileName):__ Serializes the __RadDock__layout structure. This method does not save content. See [Loading and Saving Layouts]({%slug winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts%}) for more information.
             
 
 * __RemoveWindow(DockWindow window)__: Removes a __ToolWindow__ or __DocumentWindow__ from the list of managed dockables.

@@ -1,8 +1,8 @@
 ---
 title: Structure
-page_title: Structure
+page_title: Structure | UI for WinForms Documentation
 description: Structure
-slug: wizard-structure
+slug: winforms/wizard/structure
 tags: structure
 published: True
 position: 0

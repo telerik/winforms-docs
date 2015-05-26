@@ -1,8 +1,8 @@
 ---
 title: GridViewRowInfo
-page_title: GridViewRowInfo
+page_title: GridViewRowInfo | UI for WinForms Documentation
 description: GridViewRowInfo
-slug: gridview-rows-gridviewrowinfo
+slug: winforms/gridview/rows/gridviewrowinfo
 tags: gridviewrowinfo
 published: True
 position: 0
@@ -21,16 +21,16 @@ __GridViewRowInfo__ class is the logical representation of a single row. Some of
 * __IsExpanded:__This property indicates if the row has been expanded when the row is a grouping header row or when displaying hierarchy.
           
 
-* [IsPinned]({%slug gridview-rows-pinned-rows%}): Can be pinned to the top of the grid so the row will always be visible, even when scrolling.
+* [IsPinned]({%slug winforms/gridview/rows/pinned-rows%}): Can be pinned to the top of the grid so the row will always be visible, even when scrolling.
           
 
-* [IsSelected:]({%slug gridview-rows-selected-rows-and-current-row%}) If set to __True,__ the row is selected.
+* [IsSelected:]({%slug winforms/gridview/rows/selected-rows-and-current-row%}) If set to __True,__ the row is selected.
           
 
 * __Height__: The height of the row in pixels.
           
 
-* [IsCurrent:]({%slug gridview-rows-selected-rows-and-current-row%}) If set to __True,__ the row is selected.
+* [IsCurrent:]({%slug winforms/gridview/rows/selected-rows-and-current-row%}) If set to __True,__ the row is selected.
           
 
 * __AllowResize__: If __True__, the height of the row can be resized. If __False__ the splitter mouse cursor does not display and the row is prevented from being resized.
@@ -42,29 +42,33 @@ __GridViewRowInfo__ class is the logical representation of a single row. Some of
 GridViewRowInfo also has an __EnsureVisible()__ method that scrolls a row into view.
       
 
-The example below demonstrates the behavior of several of these properties:![gridview-rows-gridviewrowinfo 001](images/gridview-rows-gridviewrowinfo001.png)
+The example below demonstrates the behavior of several of these properties:![gridview-rows-gridviewrowinfo 001](images/gridview-rows-gridviewrowinfo001.png)#_[C#] Using GridViewRowInfo_
 
-#### __[C#] Using GridViewRowInfo__
-
-{{source=..\SamplesCS\GridView\Rows\GridViewRowInfo1.cs region=GridViewRowInfo}}
-	            GridViewRowInfo lastRow = radGridView1.Rows[radGridView1.Rows.Count - 1];
-	            lastRow.EnsureVisible();
-	            lastRow.IsSelected = true;
-	            lastRow.Height = 100;
-	            lastRow.AllowResize = false;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Using GridViewRowInfo__
+{{source=..\SamplesCS\GridView\Rows\GridViewRowInfo1.cs region=GridViewRowInfo}} 
+{{source=..\SamplesVB\GridView\Rows\GridViewRowInfo1.vb region=GridViewRowInfo}} 
 
-{{source=..\SamplesVB\GridView\Rows\GridViewRowInfo1.vb region=GridViewRowInfo}}
-	        Dim lastRow As GridViewRowInfo = RadGridView1.Rows(RadGridView1.Rows.Count - 1)
-	        lastRow.EnsureVisible()
-	        lastRow.IsSelected = True
-	        lastRow.Height = 100
-	        lastRow.AllowResize = False
-	{{endregion}}
+````C#
+            GridViewRowInfo lastRow = radGridView1.Rows[radGridView1.Rows.Count - 1];
+            lastRow.EnsureVisible();
+            lastRow.IsSelected = true;
+            lastRow.Height = 100;
+            lastRow.AllowResize = false;
+````
+````VB.NET
+        Dim lastRow As GridViewRowInfo = RadGridView1.Rows(RadGridView1.Rows.Count - 1)
+        lastRow.EnsureVisible()
+        lastRow.IsSelected = True
+        lastRow.Height = 100
+        lastRow.AllowResize = False
+        '
+````
+
+{{endregion}} 
+
 
 
 

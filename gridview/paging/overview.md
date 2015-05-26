@@ -1,21 +1,21 @@
 ---
-title: Overview
-page_title: Overview
+title: Paging Overview
+page_title: Overview | UI for WinForms Documentation
 description: Overview
-slug: gridview-paging-overview
+slug: winforms/gridview/paging/overview
 tags: overview
 published: True
 position: 0
 ---
 
-# Overview
+# Paging Overview
 
 
 
 ## 
 
 The data layer of __RadGridView__ now supports pagination of data natively. You can still bind __RadGridView__
-          to the same [data providers]({%slug gridview-populating-with-data-bindable-types%}) as before with the
+          to the same [data providers]({%slug winforms/gridview/populating-with-data/bindable-types%}) as before with the
           addition of the paging option. There is a number of features, which will allow you to easily configure and manage the paging of the data.
         ![gridview-paging-overview 001](images/gridview-paging-overview001.png)
 

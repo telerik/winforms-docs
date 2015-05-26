@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: treeview-getting-started
+slug: winforms/treeview/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -35,7 +35,7 @@ The design should now look something like this.![treeview-getting-started 001](i
 
 1. Right click the __RadTreeView__ and select __Open Property Builder__from the context menu. 
               You will see a set of buttons on the left side of the __RadTreeView__ Property Builder and a preview of the tree view below the buttons.
-              See [Property Builder]({%slug treeview-design-time-property-builder%}) topic 
+              See [Property Builder]({%slug winforms/treeview/design-time/property-builder%}) topic 
               for a complete  tour of functionality.
             
 
@@ -62,48 +62,51 @@ The design should now look something like the screenshot below.![treeview-gettin
 
 1. In the form's constructor add the code appearing below the __InitializeComponent()__ method call.
               This code creates new __RadTreeNode__ objects, populates them with text and attaches them to parent nodes.
+            #_[C#] _
+
+	
+
+
+
+{{source=..\SamplesCS\TreeView\GettingStarted.cs region=GettingStarted}} 
+{{source=..\SamplesVB\TreeView\TreeViewGettingStarted.vb region=GettingStarted}} 
+
+````C#
             
+            RadTreeNode node = radTreeView1.Nodes["Email Contacts"].Nodes.Add("Bob Tony");
+            node.Selected = true;
+            
+            radTreeView1.Nodes["Email Contacts"].Nodes.Add("Sue Winchell");
+            radTreeView1.Nodes["Email Contacts"].Nodes.Add("Lui Sang");
+            radTreeView1.Nodes["Lists"].Nodes.Add("Priorities");
+            radTreeView1.Nodes["Lists"].Nodes.Add("Opportunities");
+            radTreeView1.Nodes["Lists"].Nodes.Add("Issues");
+            
+            node = radTreeView1.Nodes["Reports"].Nodes.Add("June Sales");
+            node = radTreeView1.Nodes["Reports"].Nodes.Add("July Sales");
+            node = radTreeView1.Nodes["Reports"].Nodes.Add("First Quarter Summary");
+            node = radTreeView1.Nodes["Reports"].Nodes.Add("Second Quarter Summary");
+````
+````VB.NET
+        Dim node As RadTreeNode = RadTreeView1.Nodes("Email Contacts").Nodes.Add("Bob Tony")
+        node.Selected = True
 
-#### __[C#] __
+        RadTreeView1.Nodes("Email Contacts").Nodes.Add("Sue Winchell")
+        RadTreeView1.Nodes("Email Contacts").Nodes.Add("Lui Sang")
+        RadTreeView1.Nodes("Lists").Nodes.Add("Priorities")
+        RadTreeView1.Nodes("Lists").Nodes.Add("Opportunities")
+        RadTreeView1.Nodes("Lists").Nodes.Add("Issues")
 
-{{source=..\SamplesCS\TreeView\GettingStarted.cs region=GettingStarted}}
-	            
-	            RadTreeNode node = radTreeView1.Nodes["Email Contacts"].Nodes.Add("Bob Tony");
-	            node.Selected = true;
-	            
-	            radTreeView1.Nodes["Email Contacts"].Nodes.Add("Sue Winchell");
-	            radTreeView1.Nodes["Email Contacts"].Nodes.Add("Lui Sang");
-	            radTreeView1.Nodes["Lists"].Nodes.Add("Priorities");
-	            radTreeView1.Nodes["Lists"].Nodes.Add("Opportunities");
-	            radTreeView1.Nodes["Lists"].Nodes.Add("Issues");
-	            
-	            node = radTreeView1.Nodes["Reports"].Nodes.Add("June Sales");
-	            node = radTreeView1.Nodes["Reports"].Nodes.Add("July Sales");
-	            node = radTreeView1.Nodes["Reports"].Nodes.Add("First Quarter Summary");
-	            node = radTreeView1.Nodes["Reports"].Nodes.Add("Second Quarter Summary");
-	
-	{{endregion}}
+        node = RadTreeView1.Nodes("Reports").Nodes.Add("June Sales")
+        node = RadTreeView1.Nodes("Reports").Nodes.Add("July Sales")
+        node = RadTreeView1.Nodes("Reports").Nodes.Add("First Quarter Summary")
+        node = RadTreeView1.Nodes("Reports").Nodes.Add("Second Quarter Summary")
 
+        '
+````
 
+{{endregion}} 
 
-#### __[VB.NET] __
-
-{{source=..\SamplesVB\TreeView\TreeViewGettingStarted.vb region=GettingStarted}}
-	        Dim node As RadTreeNode = RadTreeView1.Nodes("Email Contacts").Nodes.Add("Bob Tony")
-	        node.Selected = True
-	
-	        RadTreeView1.Nodes("Email Contacts").Nodes.Add("Sue Winchell")
-	        RadTreeView1.Nodes("Email Contacts").Nodes.Add("Lui Sang")
-	        RadTreeView1.Nodes("Lists").Nodes.Add("Priorities")
-	        RadTreeView1.Nodes("Lists").Nodes.Add("Opportunities")
-	        RadTreeView1.Nodes("Lists").Nodes.Add("Issues")
-	
-	        node = RadTreeView1.Nodes("Reports").Nodes.Add("June Sales")
-	        node = RadTreeView1.Nodes("Reports").Nodes.Add("July Sales")
-	        node = RadTreeView1.Nodes("Reports").Nodes.Add("First Quarter Summary")
-	        node = RadTreeView1.Nodes("Reports").Nodes.Add("Second Quarter Summary")
-	
-	{{endregion}}
 
 
 

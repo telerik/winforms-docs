@@ -1,8 +1,8 @@
 ---
 title: Editing Nodes
-page_title: Editing Nodes
+page_title: Editing Nodes | UI for WinForms Documentation
 description: Editing Nodes
-slug: treeview-editing-editing-nodes
+slug: winforms/treeview/editing/editing-nodes
 tags: editing,nodes
 published: True
 position: 0
@@ -21,29 +21,55 @@ By default __RadTreeView__ does not allow node editing. If the __AllowEditing__ 
 * Use the __EndEdit()__ method to conclude editing. EndEdit() takes a single boolean parameter "cancelEdit" that when true does not persist user changes.
           
 
-The sample code below shows how to start editing using the API:
+The sample code below shows how to start editing using the API:#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=editing}}
-	            radTreeView1.AllowEdit = true;
-	            // set the SelectedNode - this node will be edited  
-	            radTreeView1.SelectedNode = radTreeView1.Nodes[0];
-	            // this will start edit on selected node
-	            radTreeView1.BeginEdit();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=editing}} 
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=editing}} 
 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=editing}}
-	        RadTreeView1.AllowEdit = True
-	        ' set the SelectedNode - this node will be edited  
-	        RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
-	        ' this will start edit on selected node
-	        RadTreeView1.BeginEdit()
-	{{endregion}}
+````C#
+            radTreeView1.AllowEdit = true;
+            // set the SelectedNode - this node will be edited  
+            radTreeView1.SelectedNode = radTreeView1.Nodes[0];
+            // this will start edit on selected node
+            radTreeView1.BeginEdit();
+````
+````VB.NET
+        RadTreeView1.AllowEdit = True
+        ' set the SelectedNode - this node will be edited  
+        RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
+        ' this will start edit on selected node
+        RadTreeView1.BeginEdit()
+        '#End Region
+
+        '#Region selectedNode
+        RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
+        '#End Region
+
+        '#Region selectMultiNodes
+        RadTreeView1.MultiSelect = True
+        Dim Node1 As New RadTreeNode("Inbox")
+        Dim Node2 As New RadTreeNode("Deleted Items")
+        Dim Node3 As New RadTreeNode("Outbox")
+        Dim Node4 As New RadTreeNode("Sent")
+        RadTreeView1.Nodes.Add(Node1)
+        RadTreeView1.Nodes.Add(Node2)
+        RadTreeView1.Nodes.Add(Node3)
+        RadTreeView1.Nodes.Add(Node4)
+        Node3.Selected = True
+        Node4.Selected = True
+        '#End Region
+
+        '#region filter
+        Me.RadTreeView1.Filter = "new"
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -97,5 +123,6 @@ The property has the following values:
 * __TextAndValue__ - When the user performs edit, both the Text and the will be edited.
             
 
->When __EditMode__ is set to __TextAndValue__, editing either of the properties programatically will result in changing both of them.
-          
+>note When __EditMode__ is set to __TextAndValue__ , editing either of the properties programatically will result in changing -both of them- .
+>
+

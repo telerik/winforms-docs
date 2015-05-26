@@ -1,8 +1,8 @@
 ---
 title: Localization
-page_title: Localization
+page_title: Localization | UI for WinForms Documentation
 description: Localization
-slug: treeview-localization-localization
+slug: winforms/treeview/localization/localization
 tags: localization
 published: True
 position: 0
@@ -26,74 +26,82 @@ To localize RadTreeView to display control text and messages in a specific langu
           in the __default__clause of the __switch__statement in the example. 
           
 
-Below is a sample implementation of an English localization provider:
+Below is a sample implementation of an English localization provider:#_[C#] Localizing RadTreeView Strings_
 
-#### __[C#] Localizing RadTreeView Strings__
-
-{{source=..\SamplesCS\TreeView\MyEnglishTreeViewLocalizationProvider.cs region=provider}}
-	    public class MyEnglishTreeViewLocalizationProvider : TreeViewLocalizationProvider
-	    {
-	        public override string GetLocalizedString(string id)
-	        {
-	            switch (id)
-	            {
-	                case TreeViewStringId.ContextMenuCollapse:
-	                    return "Collapse11";
-	                case TreeViewStringId.ContextMenuDelete:
-	                    return "Delete11";
-	                case TreeViewStringId.ContextMenuEdit:
-	                    return "Edit11";
-	                case TreeViewStringId.ContextMenuExpand:
-	                    return "Expand11";
-	                case TreeViewStringId.ContextMenuNew:
-	                    return "New11";
-	            }
 	
-	            return "";
-	        }
-	    }
-	{{endregion}}
 
 
 
-#### __[VB.NET] Localizing RadTreeView Strings__
+{{source=..\SamplesCS\TreeView\MyEnglishTreeViewLocalizationProvider.cs region=provider}} 
+{{source=..\SamplesVB\TreeView\MyEnglishTreeViewLocalizationProvider.vb region=provider}} 
 
-{{source=..\SamplesVB\TreeView\MyEnglishTreeViewLocalizationProvider.vb region=provider}}
-	    Public Overrides Function GetLocalizedString(ByVal id As String) As String
-	        Select Case id
-	            Case TreeViewStringId.ContextMenuCollapse
-	                Return "Collapse"
-	            Case TreeViewStringId.ContextMenuDelete
-	                Return "Delete"
-	            Case TreeViewStringId.ContextMenuEdit
-	                Return "Edit"
-	            Case TreeViewStringId.ContextMenuExpand
-	                Return "Expand"
-	            Case TreeViewStringId.ContextMenuNew
-	                Return "New"
-	        End Select
+````C#
+    public class MyEnglishTreeViewLocalizationProvider : TreeViewLocalizationProvider
+    {
+        public override string GetLocalizedString(string id)
+        {
+            switch (id)
+            {
+                case TreeViewStringId.ContextMenuCollapse:
+                    return "Collapse11";
+                case TreeViewStringId.ContextMenuDelete:
+                    return "Delete11";
+                case TreeViewStringId.ContextMenuEdit:
+                    return "Edit11";
+                case TreeViewStringId.ContextMenuExpand:
+                    return "Expand11";
+                case TreeViewStringId.ContextMenuNew:
+                    return "New11";
+            }
+
+            return "";
+        }
+    }
+````
+````VB.NET
+    Public Overrides Function GetLocalizedString(ByVal id As String) As String
+        Select Case id
+            Case TreeViewStringId.ContextMenuCollapse
+                Return "Collapse"
+            Case TreeViewStringId.ContextMenuDelete
+                Return "Delete"
+            Case TreeViewStringId.ContextMenuEdit
+                Return "Edit"
+            Case TreeViewStringId.ContextMenuExpand
+                Return "Expand"
+            Case TreeViewStringId.ContextMenuNew
+                Return "New"
+        End Select
+
+        Return String.Empty
+    End Function
+    '
+````
+
+{{endregion}} 
+
+
+
+
+To apply the custom localization provider, instantiate and assign it to the current localization provider: #_[C#] Assigning the Current Localization Provider_
+
 	
-	        Return String.Empty
-	    End Function
-	{{endregion}}
 
 
 
-To apply the custom localization provider, instantiate and assign it to the current localization provider: 
+{{source=..\SamplesCS\TreeView\TreeLocalization.cs region=localization}} 
+{{source=..\SamplesVB\TreeView\TreeLocalization.vb region=localization}} 
 
-#### __[C#] Assigning the Current Localization Provider__
+````C#
+            TreeViewLocalizationProvider.CurrentProvider = new MyEnglishTreeViewLocalizationProvider();
+````
+````VB.NET
+        TreeViewLocalizationProvider.CurrentProvider = New MyEnglishTreeViewLocalizationProvider()
+        '
+````
 
-{{source=..\SamplesCS\TreeView\TreeLocalization.cs region=localization}}
-	            TreeViewLocalizationProvider.CurrentProvider = new MyEnglishTreeViewLocalizationProvider();
-	{{endregion}}
+{{endregion}} 
 
-
-
-#### __[VB.NET] Assigning the Current Localization Provider__
-
-{{source=..\SamplesVB\TreeView\TreeLocalization.vb region=localization}}
-	        TreeViewLocalizationProvider.CurrentProvider = New MyEnglishTreeViewLocalizationProvider()
-	{{endregion}}
 
 
 

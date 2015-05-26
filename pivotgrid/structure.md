@@ -1,8 +1,8 @@
 ---
 title: Structure
-page_title: Structure
+page_title: Structure | UI for WinForms Documentation
 description: Structure
-slug: pivotgrid-structure
+slug: winforms/pivotgrid/structure
 tags: structure
 published: True
 position: 0

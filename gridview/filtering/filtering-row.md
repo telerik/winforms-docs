@@ -1,8 +1,8 @@
 ---
 title: Filtering Row
-page_title: Filtering Row
+page_title: Filtering Row | UI for WinForms Documentation
 description: Filtering Row
-slug: gridview-filtering-filtering-row
+slug: winforms/gridview/filtering/filtering-row
 tags: filtering,row
 published: True
 position: 1
@@ -19,45 +19,58 @@ The __GridFilterRowElement__ is the row that holds the filtering boxes. It appea
 
 You can hide the operator text of the filter cells by setting the
           __ShowFilterCellOperator__ property to *false*:
-        
+        #_[C#] Hide filter row_
 
-#### __[C#] Hide filter row__
-
-{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=filterOperatorText}}
-	            this.radGridView1.MasterTemplate.ShowFilterCellOperatorText = false;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Hide filter row__
+{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=filterOperatorText}} 
+{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=filterOperatorText}} 
 
-{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=filterOperatorText}}
-	        Me.RadGridView1.MasterTemplate.ShowFilterCellOperatorText = False
-	{{endregion}}
+````C#
+            this.radGridView1.MasterTemplate.ShowFilterCellOperatorText = false;
+````
+````VB.NET
+        Me.RadGridView1.MasterTemplate.ShowFilterCellOperatorText = False
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-filtering-filtering-row 002](images/gridview-filtering-filtering-row002.png)
 
 You can also hide the entire __GridFilterRowElement__: 
-        
+        #_[C#] Hide filter row_
 
-#### __[C#] Hide filter row__
-
-{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=hidingTheFilterRow}}
-	            this.radGridView1.ShowFilteringRow = false;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Hide filter row__
+{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=hidingTheFilterRow}} 
+{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=hidingTheFilterRow}} 
 
-{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=hidingTheFilterRow}}
-	        Me.RadGridView1.ShowFilteringRow = False
-	{{endregion}}
+````C#
+            this.radGridView1.ShowFilteringRow = false;
+````
+````VB.NET
+        Me.RadGridView1.ShowFilteringRow = False
+        '
+````
+
+{{endregion}} 
 
 
 
->You can still add FilterDescriptors programmatically when the __GridFilterRowElement__ is hidden.
-          
+
+>note You can still add FilterDescriptors programmatically when the __GridFilterRowElement__ is hidden.
+>
+
+
+>caution Filtering strings not allowed are: " LIKE ", " AND ", " OR ", "\"", ">", "<", "<>", "%", " NULL ", " IS ". Note: the spaces are important (e.g. " LIKE " compared to "LIKE").
+>
+
 
 You can customize the __GridFilterRowElement__ by using the __Visual Style Builder__.
         ![gridview-filtering-filtering-row 003](images/gridview-filtering-filtering-row003.png)

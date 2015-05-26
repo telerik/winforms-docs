@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: wordsprocessing-getting-started
+slug: winforms/wordsprocessing/getting-started
 tags: getting,started
 published: True
 position: 1
@@ -41,31 +41,36 @@ Here is a list of assemblies that contain the __RadWordsProcessing__ functionali
 * Telerik.Windows.Documents.Fixed
             
 
->The latter two assemblies - Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll and Telerik.Windows.Documents.Fixed.dll are only needed if you plan on exporting the document to PDF format.
-          
+>note The latter two assemblies - Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll and Telerik.Windows.Documents.Fixed.dll are only needed if you plan on exporting the document to PDF format.
+>
+
 
 ## Creating RadFlowDocument from Code
 
-Here is how to create a [RadFlowDocument]({%slug wordsprocessing-model-radflowdocument%}) and insert some text content.
-        
+Here is how to create a [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%}) and insert some text content.
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\WordsProcessingGettingStarted.cs region=radwordsprocessing-getting-started_0}}
-	            RadFlowDocument document = new RadFlowDocument();
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
-	            editor.InsertText("Hello world!");
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\WordsProcessingGettingStarted.cs region=radwordsprocessing-getting-started_0}} 
+{{source=..\SamplesVB\WordsProcessing\WordsProcessingGettingStarted.vb region=radwordsprocessing-getting-started_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\WordsProcessingGettingStarted.vb region=radwordsprocessing-getting-started_0}}
-	            Dim document As New RadFlowDocument()
-	            Dim editor As New RadFlowDocumentEditor(document)
-	            editor.InsertText("Hello world!")
-	{{endregion}}
+````C#
+            RadFlowDocument document = new RadFlowDocument();
+            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
+            editor.InsertText("Hello world!");
+````
+````VB.NET
+            Dim document As New RadFlowDocument()
+            Dim editor As New RadFlowDocumentEditor(document)
+            editor.InsertText("Hello world!")
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -80,30 +85,34 @@ You need to add using directive to the following namespaces:
 
 ## Exporting RadFlowDocument to Docx
 
-Exporting the document to Docx file can be achieved with the [DocxFormatProvider]({%slug wordsprocessing-formats-and-conversion-docx-using-docxformatprovider%}). Here
+Exporting the document to Docx file can be achieved with the [DocxFormatProvider]({%slug winforms/wordsprocessing/formats-and-conversion/docx/using-docxformatprovider%}). Here
           is how to create a provider instance and save a document with it:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\WordsProcessingGettingStarted.cs region=radwordsprocessing-getting-started_1}}
-	            using (Stream output = new FileStream("output.docx", FileMode.OpenOrCreate))
-	            {
-	                DocxFormatProvider provider = new DocxFormatProvider();
-	                provider.Export(document, output);
-	            }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\WordsProcessingGettingStarted.cs region=radwordsprocessing-getting-started_1}} 
+{{source=..\SamplesVB\WordsProcessing\WordsProcessingGettingStarted.vb region=radwordsprocessing-getting-started_1}} 
 
-{{source=..\SamplesVB\WordsProcessing\WordsProcessingGettingStarted.vb region=radwordsprocessing-getting-started_1}}
-	            Using output As Stream = New FileStream("output.docx", FileMode.OpenOrCreate)
-	                Dim provider As New DocxFormatProvider()
-	                provider.Export(document, output)
-	            End Using
-	{{endregion}}
+````C#
+            using (Stream output = new FileStream("output.docx", FileMode.OpenOrCreate))
+            {
+                DocxFormatProvider provider = new DocxFormatProvider();
+                provider.Export(document, output);
+            }
+````
+````VB.NET
+            Using output As Stream = New FileStream("output.docx", FileMode.OpenOrCreate)
+                Dim provider As New DocxFormatProvider()
+                provider.Export(document, output)
+            End Using
+            '
+````
+
+{{endregion}} 
+
 
 
 

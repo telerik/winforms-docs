@@ -1,8 +1,8 @@
 ---
 title: Live Tile Editor
-page_title: Live Tile Editor
+page_title: Live Tile Editor | UI for WinForms Documentation
 description: Live Tile Editor
-slug: panorama-live-tile-editor
+slug: winforms/panorama/live-tile-editor
 tags: live,tile,editor
 published: True
 position: 2

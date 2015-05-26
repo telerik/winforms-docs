@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: tools-getting-started
+slug: winforms/tools/shapeeditor/getting-started
 tags: getting,started
 published: True
 position: 1
@@ -45,7 +45,7 @@ This tutorial demonstrates modifying the shape of a __RadButton__.
             Move the upper left corner in to form a new shape (see screen shot below).![tools-getting-started 001](images/tools-getting-started001.png)
 
 1. 
-            Right-click the bottom line and select __Convert__ from the context menu.  This step converts the line to a [Bezier curve]({%slug tools-shapeeditor-using-the-custom-shape-editor-using-bezier-curves%}).
+            Right-click the bottom line and select __Convert__ from the context menu.  This step converts the line to a [Bezier curve]({%slug winforms/tools/shapeeditor/using-the-custom-shape-editor/using-bezier-curves%}).
           
 
 1. 

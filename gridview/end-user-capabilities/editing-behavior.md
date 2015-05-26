@@ -1,8 +1,8 @@
 ---
 title: Editing Behavior
-page_title: Editing Behavior
+page_title: Editing Behavior | UI for WinForms Documentation
 description: Editing Behavior
-slug: gridview-end-user-capabilities-editing-behavior
+slug: winforms/gridview/end-user-capabilities/editing-behavior
 tags: editing,behavior
 published: True
 position: 1
@@ -35,4 +35,4 @@ To edit using the keyboard:
 
 * Use the __Delete__ button to remove the current row.
 
-See the [Keyboard Support]({%slug gridview-end-user-capabilities-keyboard-support%}) topic for more information on navigating using the keyboard.
+See the [Keyboard Support]({%slug winforms/gridview/end-user-capabilities/keyboard-support%}) topic for more information on navigating using the keyboard.

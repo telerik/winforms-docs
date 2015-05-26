@@ -1,8 +1,8 @@
 ---
 title: Usability
-page_title: Usability
+page_title: Usability | UI for WinForms Documentation
 description: Usability
-slug: forms-and-dialogs-colordialog-usability
+slug: winforms/forms-and-dialogs/colordialog/usability
 tags: usability
 published: True
 position: 0
@@ -32,7 +32,11 @@ The edit areas to the top right of the rainbow bar control __H__ue, __S__aturati
 Under Hue, Saturation and Luminance are the edits for __A__lpha, __R__ed, __G__reen and __B__lue. Alpha represents the amount of transparency the color has where a value of zero would allow anything covered by the color to show through and the maximum value, 255, would completely hide anything covered by the color. R/G/B represent the Red, Green and Blue components of the color using values from 0 to 255.
 
 
-<table><tr><td>![forms-and-dialogs-colordialog-usability 001](images/forms-and-dialogs-colordialog-usability001.png)</td><td>![forms-and-dialogs-colordialog-usability 002](images/forms-and-dialogs-colordialog-usability002.png)</td></tr><tr><td>![forms-and-dialogs-colordialog-usability 003](images/forms-and-dialogs-colordialog-usability003.png)</td><td>![forms-and-dialogs-colordialog-usability 004](images/forms-and-dialogs-colordialog-usability004.png)</td></tr></table>
+
+
+
+|![forms-and-dialogs-colordialog-usability 001](images/forms-and-dialogs-colordialog-usability001.png)|![forms-and-dialogs-colordialog-usability 002](images/forms-and-dialogs-colordialog-usability002.png)|
+|![forms-and-dialogs-colordialog-usability 003](images/forms-and-dialogs-colordialog-usability003.png)|![forms-and-dialogs-colordialog-usability 004](images/forms-and-dialogs-colordialog-usability004.png)|
 
 The right side of each tab includes sample color swatches that show the __Current__ color property when the dialog was invoked and a __New__ color that will be used after the dialog closes. A hexidecimal entry shows the color as a numeric value that can be edited or pasted from another source.  An eye dropper control lets you pick up another color from anywhere on the screen. To use the eye dropper control, click the button and move the mouse over the screen.  Colors under the mouse are reflected in the hexidecimal value and the __New__ color patch. Left-click the mouse to retain a color selected by the eyedropper control.
 

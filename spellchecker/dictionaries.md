@@ -1,8 +1,8 @@
 ---
 title: Dictionaries
-page_title: Dictionaries
+page_title: Dictionaries | UI for WinForms Documentation
 description: Dictionaries
-slug: spellchecker-dictionaries
+slug: winforms/spellchecker/dictionaries
 tags: dictionaries
 published: True
 position: 4
@@ -20,7 +20,9 @@ RadSpellChecker comes with one predefined dictionary which checks the English la
 
 ## Loading a custom dictionary
 
->To access the RadSpellChecker related types, you need to include the Telerik.WinControls.RichTextBox.Proofing namespace
+>note To access the RadSpellChecker related types, you need to include the Telerik.WinControls.RichTextBox.Proofing namespace
+>
+
 
 1. Let's say that you have chosen one of the dictionary files provided in [this article](http://www.telerik.com/community/code-library/winforms/localization-providers/dictionaries-for-radspellchecker.aspx), for example, the German (Germany) (de-DE) dictionary.
             
@@ -33,37 +35,41 @@ RadSpellChecker comes with one predefined dictionary which checks the English la
               we should override the EnsureDictionaryLoadedOverride method, create a MemoryStream based on the
               TDF resource and call the Load method of the WordDictionary class passing the MemoryStream as a parameter. Assuming
               that our CSharp project is called SamplesCS the code looks as shown below:
-            
+            #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\SpellChecker\GermanDictionary.cs region=germanDictionary}}
-	    public class GermanDictionary : WordDictionary
-	    {
-	        protected override void EnsureDictionaryLoadedOverride()
-	        {
-	            using (MemoryStream ms = new MemoryStream(SamplesCS.Properties.Resources.de_DE))
-	            {
-	                this.Load(ms);
-	            }
-	        }
-	    }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\SpellChecker\GermanDictionary.cs region=germanDictionary}} 
+{{source=..\SamplesVB\SpellChecker\GermanDictionary.vb region=germanDictionary}} 
 
-{{source=..\SamplesVB\SpellChecker\GermanDictionary.vb region=germanDictionary}}
-	Public Class GermanDictionary
-	    Inherits WordDictionary
-	    Protected Overrides Sub EnsureDictionaryLoadedOverride()
-	        Using ms As MemoryStream = New MemoryStream(My.Resources.de_DE)
-	            Me.Load(ms)
-	        End Using
-	    End Sub
-	End Class
-	{{endregion}}
+````C#
+    public class GermanDictionary : WordDictionary
+    {
+        protected override void EnsureDictionaryLoadedOverride()
+        {
+            using (MemoryStream ms = new MemoryStream(SamplesCS.Properties.Resources.de_DE))
+            {
+                this.Load(ms);
+            }
+        }
+    }
+````
+````VB.NET
+Public Class GermanDictionary
+    Inherits WordDictionary
+    Protected Overrides Sub EnsureDictionaryLoadedOverride()
+        Using ms As MemoryStream = New MemoryStream(My.Resources.de_DE)
+            Me.Load(ms)
+        End Using
+    End Sub
+End Class
+'
+````
+
+{{endregion}} 
+
 
 
 
@@ -74,61 +80,73 @@ RadSpellChecker comes with one predefined dictionary which checks the English la
               spell checked. For example, here we are going to add a Dictionary that will be used only for RadTextBox instances.
               In addition, we need to define a CultureInfo that will be stored together with the dictionary in the list of
               dictionaries. This culture will serve as a primary key for the respective dictionary in the dictionaries collection.
-            
+            #_[C#] Defining a culture_
 
-#### __[C#] Defining a culture__
-
-{{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=defineCulture}}
-	        private static readonly CultureInfo GermanCulture = CultureInfo.GetCultureInfo("de-DE");
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Defining a culture__
+{{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=defineCulture}} 
+{{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=defineCulture}} 
 
-{{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=defineCulture}}
-	    Friend Shared GermanCulture As CultureInfo = CultureInfo.GetCultureInfo("de-DE")
-	{{endregion}}
+````C#
+        private static readonly CultureInfo GermanCulture = CultureInfo.GetCultureInfo("de-DE");
+````
+````VB.NET
+    Friend Shared GermanCulture As CultureInfo = CultureInfo.GetCultureInfo("de-DE")
+    '
+````
 
-
-
-#### __[C#] Adding a dictionary__
-
-{{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=addingDictionary}}
-	            IControlSpellChecker textBoxControlSpellChecker = this.radSpellChecker1.GetControlSpellChecker(typeof(RadTextBox));
-	            DocumentSpellChecker documentSpellChecker = textBoxControlSpellChecker.SpellChecker as DocumentSpellChecker;
-	            documentSpellChecker.AddDictionary(new GermanDictionary(), GermanCulture);
-	{{endregion}}
+{{endregion}} 
 
 
+#_[C#] Adding a dictionary_
 
-#### __[VB.NET] Adding a dictionary__
+	
 
-{{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=addingDictionary}}
-	        Dim textBoxControlSpellChecker As IControlSpellChecker = Me.radSpellChecker1.GetControlSpellChecker(GetType(RadTextBox))
-	        Dim documentSpellChecker As DocumentSpellChecker = TryCast(textBoxControlSpellChecker.SpellChecker, DocumentSpellChecker)
-	        documentSpellChecker.AddDictionary(New GermanDictionary(), GermanCulture)
-	{{endregion}}
+
+
+{{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=addingDictionary}} 
+{{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=addingDictionary}} 
+
+````C#
+            IControlSpellChecker textBoxControlSpellChecker = this.radSpellChecker1.GetControlSpellChecker(typeof(RadTextBox));
+            DocumentSpellChecker documentSpellChecker = textBoxControlSpellChecker.SpellChecker as DocumentSpellChecker;
+            documentSpellChecker.AddDictionary(new GermanDictionary(), GermanCulture);
+````
+````VB.NET
+        Dim textBoxControlSpellChecker As IControlSpellChecker = Me.radSpellChecker1.GetControlSpellChecker(GetType(RadTextBox))
+        Dim documentSpellChecker As DocumentSpellChecker = TryCast(textBoxControlSpellChecker.SpellChecker, DocumentSpellChecker)
+        documentSpellChecker.AddDictionary(New GermanDictionary(), GermanCulture)
+        '
+````
+
+{{endregion}} 
+
 
 
 
 1. Now, we have to set the __SpellCheckingCulture__ property that will determine which of the available dictionaries will
               be used (in case dictionaries of different languages are added).
-            
+            #_[C#] Setting the culture_
 
-#### __[C#] Setting the culture__
-
-{{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=settingCulture}}
-	            documentSpellChecker.SpellCheckingCulture = GermanCulture;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Setting the culture__
+{{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=settingCulture}} 
+{{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=settingCulture}} 
 
-{{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=settingCulture}}
-	        documentSpellChecker.SpellCheckingCulture = GermanCulture
-	{{endregion}}
+````C#
+            documentSpellChecker.SpellCheckingCulture = GermanCulture;
+````
+````VB.NET
+        documentSpellChecker.SpellCheckingCulture = GermanCulture
+        '
+````
+
+{{endregion}} 
+
 
 If this property is not set, RadSpellChecker will
               try check if there is a dictionary whose culture is the CurrentUICulture of the application. If such a dictionary is found, RadSpellChecker

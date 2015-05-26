@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: gridview-getting-started
+slug: winforms/gridview/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -13,11 +13,11 @@ position: 0
 
 
 ## 
-<table><tr><td>
 
-RELATED VIDEOS</td></tr><tr><td>[RadGridView for WinForms Webinar](http://tv.telerik.com/winforms/webinar/radgridview-for-winforms-webinar)
 
-Lino Tadros from Falalel provides an in-depth overview of Telerik's RadGridView for WinForms (Runtime: 01:45:11)</td></tr></table>
+
+|RELATED VIDEOS|
+|[RadGridView for WinForms Webinar](http://tv.telerik.com/winforms/webinar/radgridview-for-winforms-webinar)Lino Tadros from Falalel provides an in-depth overview of Telerik's RadGridView for WinForms (Runtime: 01:45:11)|
 
 The example below demonstrates creating a hierarchical grid presenting two tables
           *Product Category* and *Product Information*.

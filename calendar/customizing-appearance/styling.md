@@ -1,8 +1,8 @@
 ---
 title: Styling
-page_title: Styling
+page_title: Styling | UI for WinForms Documentation
 description: Styling
-slug: calendar-customizing-appearance-styling
+slug: winforms/calendar/customizing-appearance/styling
 tags: styling
 published: True
 position: 0

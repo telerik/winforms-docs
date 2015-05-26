@@ -1,8 +1,8 @@
 ---
 title: Parameters
-page_title: Parameters
+page_title: Parameters | UI for WinForms Documentation
 description: Parameters
-slug: forms-and-dialogs-messagebox-parameters
+slug: winforms/forms-and-dialogs/messagebox/parameters
 tags: parameters
 published: True
 position: 1
@@ -16,21 +16,25 @@ position: 1
 
 You can easily set the ThemeName of the RadMessageBox by calling the SetThemeName parameter,
           passing the theme name string:
-        
+        #_[C#] Setting a theme in RadMessageBox_
 
-#### __[C#] Setting a theme in RadMessageBox__
-
-{{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=SetThemeName}}
-	            RadMessageBox.SetThemeName("Desert");
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Setting a theme in RadMessageBox__
+{{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=SetThemeName}} 
+{{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=SetThemeName}} 
 
-{{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=SetThemeName}}
-	        RadMessageBox.SetThemeName("Desert")
-	{{endregion}}
+````C#
+            RadMessageBox.SetThemeName("Desert");
+````
+````VB.NET
+        RadMessageBox.SetThemeName("Desert")
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -100,21 +104,54 @@ The Show method displays a RadMessageBox. It returns a DialogResult value and ha
 
 As of Q2 2014 __RadMessageBox__ supports details section. This section can be shown by just specifying the details text in the 
           Show method parameters:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=details}}
-	            RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore, "Details Text");
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=details}} 
+{{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=details}} 
 
-{{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=details}}
-	        RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore, "Details Text")
-	{{endregion}}
+````C#
+            RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore, "Details Text");
+````
+````VB.NET
+        RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore, "Details Text")
+        '#End Region
+    End Sub
+End Class
+
+'#region LocalizationProvider
+Public Class MyRadMessageLocalizationProvider
+    Inherits RadMessageLocalizationProvider
+
+    Public Overloads Overrides Function GetLocalizedString(ByVal id As String) As String
+        Select Case id
+            Case RadMessageStringID.AbortButton
+                Return "Abbruch"
+            Case RadMessageStringID.CancelButton
+                Return "Löschen"
+            Case RadMessageStringID.IgnoreButton
+                Return "Ignorieren"
+            Case RadMessageStringID.NoButton
+                Return "Nein"
+            Case RadMessageStringID.OKButton
+                Return "OK"
+            Case RadMessageStringID.RetryButton
+                Return "Wiederholung"
+            Case RadMessageStringID.YesButton
+                Return "Ja"
+            Case Else
+                Return MyBase.GetLocalizedString(id)
+        End Select
+    End Function
+End Class
+'
+````
+
+{{endregion}} 
+
 
 
 

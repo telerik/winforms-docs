@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: ziplibrary-getting-started
+slug: winforms/ziplibrary/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -32,33 +32,36 @@ The ZIP archive is represented by __ZipArchive__ class. It can be used in 3 mode
 ## Open Zip Archive
 
 The following code snippet demonstrates how to open existing Zip archive using the __ZipArchive__ class.
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\ZipLibrary\GettingStarted.cs region=stream}}
-	            
-	            using (Stream stream = File.Open("test.zip", FileMode.Open))
-	            {
-	                using (ZipArchive archive = new ZipArchive(stream))
-	                {
-	                    // Display the list of the files in the selected zip file using the ZipArchive.Entries property.
-	                }
-	            }
-	            
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\ZipLibrary\GettingStarted.cs region=stream}} 
+{{source=..\SamplesVB\ZipLibrary\GettingStartedZipCode.vb region=stream}} 
 
-{{source=..\SamplesVB\ZipLibrary\GettingStartedZipCode.vb region=stream}}
-	        Using stream As Stream = File.Open("test.zip", FileMode.Open)
-	            Using archive As New ZipArchive(stream)
-	                ' Display the list of the files in the selected zip file using the ZipArchive.Entries property.
-	            End Using
-	        End Using
-	{{endregion}}
+````C#
+            
+            using (Stream stream = File.Open("test.zip", FileMode.Open))
+            {
+                using (ZipArchive archive = new ZipArchive(stream))
+                {
+                    // Display the list of the files in the selected zip file using the ZipArchive.Entries property.
+                }
+            }
+````
+````VB.NET
+        Using stream As Stream = File.Open("test.zip", FileMode.Open)
+            Using archive As New ZipArchive(stream)
+                ' Display the list of the files in the selected zip file using the ZipArchive.Entries property.
+            End Using
+        End Using
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -71,48 +74,53 @@ The *archive* variable holds the files that are compressed in the selected zip. 
 ## Create Zip Archive
 
 The example below shows how to create a new Zip archive using the __ZipArchive__ class and place a text file in it.
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\ZipLibrary\GettingStarted.cs region=create}}
-	                
-	            using (Stream stream = File.Open("test.zip", FileMode.Create))
-	            {
-	                using (ZipArchive archive = new ZipArchive(stream, ZipArchiveMode.Create, false, null))
-	                {
-	                    using (ZipArchiveEntry entry = archive.CreateEntry("text.txt"))
-	                    {
-	                        StreamWriter writer = new StreamWriter(entry.Open());
-	                        writer.WriteLine("Hello world!");
-	                        writer.Flush();
-	                    }
-	                }
-	            }
 	
-	{{endregion}}
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\ZipLibrary\GettingStarted.cs region=create}} 
+{{source=..\SamplesVB\ZipLibrary\GettingStartedZipCode.vb region=create}} 
 
-{{source=..\SamplesVB\ZipLibrary\GettingStartedZipCode.vb region=create}}
-	        Using stream As Stream = File.Open("test.zip", FileMode.Create)
-	            Using archive As New ZipArchive(stream, ZipArchiveMode.Create, False, Nothing)
-	                Using entry As ZipArchiveEntry = archive.CreateEntry("text.txt")
-	                    Dim writer As New StreamWriter(entry.Open())
-	                    writer.WriteLine("Hello world!")
-	                    writer.Flush()
-	                End Using
-	            End Using
-	        End Using
-	{{endregion}}
+````C#
+                
+            using (Stream stream = File.Open("test.zip", FileMode.Create))
+            {
+                using (ZipArchive archive = new ZipArchive(stream, ZipArchiveMode.Create, false, null))
+                {
+                    using (ZipArchiveEntry entry = archive.CreateEntry("text.txt"))
+                    {
+                        StreamWriter writer = new StreamWriter(entry.Open());
+                        writer.WriteLine("Hello world!");
+                        writer.Flush();
+                    }
+                }
+            }
+````
+````VB.NET
+        Using stream As Stream = File.Open("test.zip", FileMode.Create)
+            Using archive As New ZipArchive(stream, ZipArchiveMode.Create, False, Nothing)
+                Using entry As ZipArchiveEntry = archive.CreateEntry("text.txt")
+                    Dim writer As New StreamWriter(entry.Open())
+                    writer.WriteLine("Hello world!")
+                    writer.Flush()
+                End Using
+            End Using
+        End Using
+        '
+````
+
+{{endregion}} 
 
 
 
->tipIf you use __StreamWriter__ to write content to the stream you should call the Flush() method in order to flush the data to
+
+>tip If you use __StreamWriter__ to write content to the stream you should call the Flush() method in order to flush the data to
             the stream.
-          
+>
 
->Do not close the stream opened by the __ZipArchiveEntry.Open()__ method. Otherwise the result is unpredictable.
-          
+
+>note Do not close the stream opened by the __ZipArchiveEntry.Open()__ method. Otherwise the result is unpredictable.
+>
+

@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: rotator-getting-started
+slug: winforms/rotator/getting-started
 tags: getting,started
 published: True
 position: 0

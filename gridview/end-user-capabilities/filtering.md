@@ -1,8 +1,8 @@
 ---
 title: Filtering
-page_title: Filtering
+page_title: Filtering | UI for WinForms Documentation
 description: Filtering
-slug: gridview-end-user-capabilities-filtering
+slug: winforms/gridview/end-user-capabilities/filtering
 tags: filtering
 published: True
 position: 5

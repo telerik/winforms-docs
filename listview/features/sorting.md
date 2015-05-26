@@ -1,8 +1,8 @@
 ---
 title: Sorting
-page_title: Sorting
+page_title: Sorting | UI for WinForms Documentation
 description: Sorting
-slug: listview-features-sorting
+slug: winforms/listview/features/sorting
 tags: sorting
 published: True
 position: 3
@@ -21,45 +21,53 @@ Sorting is possible in two ways either programmatically by adding the appropriat
 
 Enabling sorting on header click is done by setting both __EnableSorting__ and
             __EnableColumnSort__ property to *true*.
-        
+        #_[C#] Enable column sorting_
 
-#### __[C#] Enable column sorting__
-
-{{source=..\SamplesCS\ListView\Features\ListViewSorting.cs region=EnableColumnSort}}
-	            radListView1.EnableSorting = true;
-	            radListView1.EnableColumnSort = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Enable column sorting__
+{{source=..\SamplesCS\ListView\Features\ListViewSorting.cs region=EnableColumnSort}} 
+{{source=..\SamplesVB\ListView\Features\ListViewSorting.vb region=EnableColumnSort}} 
 
-{{source=..\SamplesVB\ListView\Features\ListViewSorting.vb region=EnableColumnSort}}
-	        RadListView1.EnableColumnSort = True
-	        RadListView1.EnableSorting = True
-	{{endregion}}
+````C#
+            radListView1.EnableSorting = true;
+            radListView1.EnableColumnSort = true;
+````
+````VB.NET
+        RadListView1.EnableColumnSort = True
+        RadListView1.EnableSorting = True
+        '
+````
 
-
-
-The following code demonstrates how to add __SortDescriptor__ to RadListView:
-
-#### __[C#] Adding SortDescriptors__
-
-{{source=..\SamplesCS\ListView\Features\ListViewSorting.cs region=SortDescriptor}}
-	            radListView1.EnableSorting = true;
-	            SortDescriptor sort = new SortDescriptor("Free Space", ListSortDirection.Ascending);
-	            radListView1.SortDescriptors.Add(sort);
-	{{endregion}}
+{{endregion}} 
 
 
 
-#### __[VB.NET] Adding SortDescriptors__
 
-{{source=..\SamplesVB\ListView\Features\ListViewSorting.vb region=SortDescriptor}}
-	        RadListView1.EnableSorting = True
-	        Dim sort = New SortDescriptor("Free Space", ListSortDirection.Ascending)
-	        RadListView1.SortDescriptors.Add(sort)
-	{{endregion}}
+The following code demonstrates how to add __SortDescriptor__ to RadListView:#_[C#] Adding SortDescriptors_
+
+	
+
+
+
+{{source=..\SamplesCS\ListView\Features\ListViewSorting.cs region=SortDescriptor}} 
+{{source=..\SamplesVB\ListView\Features\ListViewSorting.vb region=SortDescriptor}} 
+
+````C#
+            radListView1.EnableSorting = true;
+            SortDescriptor sort = new SortDescriptor("Free Space", ListSortDirection.Ascending);
+            radListView1.SortDescriptors.Add(sort);
+````
+````VB.NET
+        RadListView1.EnableSorting = True
+        Dim sort = New SortDescriptor("Free Space", ListSortDirection.Ascending)
+        RadListView1.SortDescriptors.Add(sort)
+        '
+````
+
+{{endregion}} 
+
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: Conditional Formatting Rows
-page_title: Conditional Formatting Rows
+page_title: Conditional Formatting Rows | UI for WinForms Documentation
 description: Conditional Formatting Rows
-slug: gridview-rows-conditional-formatting-rows
+slug: winforms/gridview/rows/conditional-formatting-rows
 tags: conditional,formatting,rows
 published: True
 position: 8
@@ -48,28 +48,36 @@ The __ConditionalFormattingObject__ also contains formatting properties for the 
 
 ## Conditional Formatting Rows
 
-This example looks for the same condition as the [cell formatting example]({%slug gridview-cells-conditional-formatting-cells%}). The difference is that the last parameter ("ApplyToRow") passed to the __ConditionalFormattingObject__is set to true, allowing the __RowBackColor__ property to be recognized.  ![gridview-rows-conditional-formatting-rows 001](images/gridview-rows-conditional-formatting-rows001.png)
+This example looks for the same condition as the [cell formatting example]({%slug winforms/gridview/cells/conditional-formatting-cells%}). The difference is that the last parameter ("ApplyToRow") passed to the __ConditionalFormattingObject__is set to true, allowing the __RowBackColor__ property to be recognized.  ![gridview-rows-conditional-formatting-rows 001](images/gridview-rows-conditional-formatting-rows001.png)#_[C#] Conditional formatting rows_
 
-#### __[C#] Conditional formatting rows__
-
-{{source=..\SamplesCS\GridView\Rows\ConditionalFormattingRows.cs region=conditionalFormatting}}
-	            ConditionalFormattingObject obj = new ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", true);
-	            obj.CellForeColor = Color.Red;
-	            obj.RowBackColor = Color.SkyBlue;
-	            this.radGridView1.Columns["UnitPrice"].ConditionalFormattingObjectList.Add(obj);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Conditional formatting rows__
+{{source=..\SamplesCS\GridView\Rows\ConditionalFormattingRows.cs region=conditionalFormatting}} 
+{{source=..\SamplesVB\GridView\Rows\ConditionalFormattingRows.vb region=conditionalFormatting}} 
 
-{{source=..\SamplesVB\GridView\Rows\ConditionalFormattingRows.vb region=conditionalFormatting}}
-	        Dim obj = New ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", True)
-	        obj.CellForeColor = Color.Red
-	        obj.RowBackColor = Color.SkyBlue
-	        Me.RadGridView1.Columns("Unit Price").ConditionalFormattingObjectList.Add(obj)
-	{{endregion}}
+````C#
+            ConditionalFormattingObject obj = new ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", true);
+            obj.CellForeColor = Color.Red;
+            obj.RowBackColor = Color.SkyBlue;
+            this.radGridView1.Columns["UnitPrice"].ConditionalFormattingObjectList.Add(obj);
+````
+````VB.NET
+        Dim obj = New ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", True)
+        obj.CellForeColor = Color.Red
+        obj.RowBackColor = Color.SkyBlue
+        Me.RadGridView1.Columns("Unit Price").ConditionalFormattingObjectList.Add(obj)
+        '
+````
 
+{{endregion}} 
+
+
+
+
+>caution The declarative nature of Conditional Formatting limits the situations in which it can be used. While the provided functionality covers most scenarios, there are situations in which you will need to use[events]({%slug winforms/gridview/rows/formatting-rows%}).
+>
 
 
 

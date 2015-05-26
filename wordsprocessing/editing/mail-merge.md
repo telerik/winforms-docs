@@ -1,8 +1,8 @@
 ---
 title: Mail Merge
-page_title: Mail Merge
+page_title: Mail Merge | UI for WinForms Documentation
 description: Mail Merge
-slug: wordsprocessing-editing-mail-merge
+slug: winforms/wordsprocessing/editing/mail-merge
 tags: mail,merge
 published: True
 position: 2
@@ -13,84 +13,90 @@ position: 2
 
 
 [Mail merge](http://en.wikipedia.org/wiki/Mail_merge) is functionality allowing to produce personalized documents from a template holding fixed content and variables. 
-        The variables are called [Merge Fields]({%slug radwordsprocessing-concepts-merge-fields-mergefield%}) and are replaced through the merge process
+        The variables are called [Merge Fields]({%slug winforms/wordsprocessing/concepts/fields/merge-field%}) and are replaced through the merge process
         with content from a specified data source.
       
 
 ## Inserting Merge Fields
 
-Merge fields are a type of [Fields]({%slug wordsprocessing-concepts-fields%}) and can be added in a template
-          document via [RadFlowDocumentEditor]({%slug wordsprocessing-editing-radflowdocumenteditor%})'s __InsertFIeld()__ method. 
+Merge fields are a type of [Fields]({%slug winforms/wordsprocessing/concepts/fields%}) and can be added in a template
+          document via [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%})'s __InsertFIeld()__ method. 
           The method requires the code representation of the field and the result which is shown in the template before the document is mail-merged.
         
 
 The code snippet in __Example 1__ shows how to initialize a RadFlodDocumentEditor instance and insert a merge field.
-        
+        #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\MailMerge.cs region=mailmerge1}}
-	            
-	            RadFlowDocument document = new RadFlowDocument();
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
-	            editor.InsertField("MERGEFIELD FirstName", "");
-	            
-	{{endregion}}
-
-
-
-#### __VB__
-
-{{source=..\SamplesVB\WordsProcessing\Editing\MailMerge.vb region=mailmerge1}}
 	
-	        Dim document As New RadFlowDocument()
-	        Dim editor As New RadFlowDocumentEditor(document)
-	        editor.InsertField("MERGEFIELD FirstName", "")
-	
-	{{endregion}}
+
+
+
+{{source=..\SamplesCS\WordsProcessing\Editing\MailMerge.cs region=mailmerge1}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\MailMerge.vb region=mailmerge1}} 
+
+````C#
+            
+            RadFlowDocument document = new RadFlowDocument();
+            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
+            editor.InsertField("MERGEFIELD FirstName", "");
+````
+````VB.NET
+
+        Dim document As New RadFlowDocument()
+        Dim editor As New RadFlowDocumentEditor(document)
+        editor.InsertField("MERGEFIELD FirstName", "")
+
+        '
+````
+
+{{endregion}} 
+
 
 
 
 Additionally, a field can be added to a Paragraph manually by creating a __FieldInfo__ instance and placing its start, 
           code, separator, result and end in the block. __Example 2__ shows the manual approach for adding a merge field.
-        
+        #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\MailMerge.cs region=mailmerge2}}
-	            
-	            FieldInfo field = new FieldInfo(document);
-	            
-	            paragraph.Inlines.Add(field.Start);
-	            paragraph.Inlines.AddRun("MERGEFIELD LastName");
-	            paragraph.Inlines.Add(field.Separator);
-	            paragraph.Inlines.AddRun("");
-	            paragraph.Inlines.Add(field.End);
-	                
-	{{endregion}}
-
-
-
-#### __VB__
-
-{{source=..\SamplesVB\WordsProcessing\Editing\MailMerge.vb region=mailmerge2}}
 	
-	        Dim field As New FieldInfo(document)
-	
-	        paragraph.Inlines.Add(field.Start)
-	        paragraph.Inlines.AddRun("MERGEFIELD LastName")
-	        paragraph.Inlines.Add(field.Separator)
-	        paragraph.Inlines.AddRun("")
-	        paragraph.Inlines.Add(field.End)
-	
-	{{endregion}}
+
+
+
+{{source=..\SamplesCS\WordsProcessing\Editing\MailMerge.cs region=mailmerge2}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\MailMerge.vb region=mailmerge2}} 
+
+````C#
+            
+            FieldInfo field = new FieldInfo(document);
+            
+            paragraph.Inlines.Add(field.Start);
+            paragraph.Inlines.AddRun("MERGEFIELD LastName");
+            paragraph.Inlines.Add(field.Separator);
+            paragraph.Inlines.AddRun("");
+            paragraph.Inlines.Add(field.End);
+````
+````VB.NET
+
+        Dim field As New FieldInfo(document)
+
+        paragraph.Inlines.Add(field.Start)
+        paragraph.Inlines.AddRun("MERGEFIELD LastName")
+        paragraph.Inlines.Add(field.Separator)
+        paragraph.Inlines.AddRun("")
+        paragraph.Inlines.Add(field.End)
+
+        '
+````
+
+{{endregion}} 
+
 
 
 
 ## Performing Mail Merge
 
 Mail merge can be performed over a template document containing merge fields. For this action the __MailMerge()__ method 
-          of [RadFlowDocument]({%slug wordsprocessing-model-radflowdocument%}) needs to be used. The method accepts a collection of elements as a parameter.
+          of [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%}) needs to be used. The method accepts a collection of elements as a parameter.
         
 
 During the operation each MergeField is replaced with the corresponding information from the data source record in a new 
@@ -99,71 +105,77 @@ During the operation each MergeField is replaced with the corresponding informat
         
 
 Example 3 shows a simple example data source.
-        
+        #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\MailMerge.cs region=mailmerge3}}
-	                
-	            List<MailMergeRecord> mailMergeDataSource = new List<MailMergeRecord>()
-	            {
-	                new MailMergeRecord()
-	                {
-	                    FirstName = "Andrew",
-	                    LastName = "Fuller"
-	                },
-	                new MailMergeRecord()
-	                {
-	                    FirstName = "Nancy",
-	                    LastName = "Davolio"
-	                },
-	            };
-	    
-	{{endregion}}
-
-
-
-#### __VB__
-
-{{source=..\SamplesVB\WordsProcessing\Editing\MailMerge.vb region=mailmerge3}}
 	
-	        Dim mailMergeDataSource As New List(Of MailMergeRecord)() From {
-	            New MailMergeRecord() With {.FirstName = "Andrew", .LastName = "Fuller"},
-	            New MailMergeRecord() With {.FirstName = "Nancy", .LastName = "Davolio"}
-	        }
-	
-	{{endregion}}
+
+
+
+{{source=..\SamplesCS\WordsProcessing\Editing\MailMerge.cs region=mailmerge3}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\MailMerge.vb region=mailmerge3}} 
+
+````C#
+                
+            List<MailMergeRecord> mailMergeDataSource = new List<MailMergeRecord>()
+            {
+                new MailMergeRecord()
+                {
+                    FirstName = "Andrew",
+                    LastName = "Fuller"
+                },
+                new MailMergeRecord()
+                {
+                    FirstName = "Nancy",
+                    LastName = "Davolio"
+                },
+            };
+````
+````VB.NET
+
+        Dim mailMergeDataSource As New List(Of MailMergeRecord)() From {
+            New MailMergeRecord() With {.FirstName = "Andrew", .LastName = "Fuller"},
+            New MailMergeRecord() With {.FirstName = "Nancy", .LastName = "Davolio"}
+        }
+
+        '
+````
+
+{{endregion}} 
+
 
 
 
 __Example 4__ performs the mail merge operation over a previously defined template document using the data source from 
           __Example 3__.
+        #_C#_
+
+	
+
+
+
+{{source=..\SamplesCS\WordsProcessing\Editing\MailMerge.cs region=mailmerge4}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\MailMerge.vb region=mailmerge4}} 
+
+````C#
         
+            RadFlowDocument mailMergeResult = document.MailMerge(mailMergeDataSource);
+````
+````VB.NET
 
-#### __C#__
+        Dim mailMergeResult As RadFlowDocument = document.MailMerge(mailMergeDataSource)
 
-{{source=..\SamplesCS\WordsProcessing\Editing\MailMerge.cs region=mailmerge4}}
-	        
-	            RadFlowDocument mailMergeResult = document.MailMerge(mailMergeDataSource);
-	
-	{{endregion}}
+        '
+````
 
+{{endregion}} 
 
-
-#### __VB__
-
-{{source=..\SamplesVB\WordsProcessing\Editing\MailMerge.vb region=mailmerge4}}
-	
-	        Dim mailMergeResult As RadFlowDocument = document.MailMerge(mailMergeDataSource)
-	
-	{{endregion}}
 
 
 
 # See Also
 
- * [Fields]({%slug wordsprocessing-concepts-fields%})
+ * [Fields]({%slug winforms/wordsprocessing/concepts/fields%})
 
- * [Merge Field]({%slug radwordsprocessing-concepts-merge-fields-mergefield%})
+ * [Merge Field]({%slug winforms/wordsprocessing/concepts/fields/merge-field%})
 
- * [RadFlowDocument]({%slug wordsprocessing-model-radflowdocument%})
+ * [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%})

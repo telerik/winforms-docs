@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: track-and-status-controls-trackbar-getting-started
+slug: winforms/track-and-status-controls/trackbar/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -36,26 +36,30 @@ This tutorial demonstrates connecting a RadTrackBar to a RadTextBox control. Se
             
 
 1. Replace the automatically-generated event handler with the following code:
-            
+            #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackGettingStarted.cs region=valueChanged}}
-	        void radTrackBar1_ValueChanged(object sender, EventArgs e)
-	        {
-	            this.radTextBox1.Text = radTrackBar1.Value.ToString();
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackGettingStarted.cs region=valueChanged}} 
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackGettingStarted.vb region=valueChanged}} 
 
-{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackGettingStarted.vb region=valueChanged}}
-	    Private Sub radTrackBar1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-	        Me.radTextBox1.Text = radTrackBar1.Value.ToString()
-	    End Sub
-	{{endregion}}
+````C#
+        void radTrackBar1_ValueChanged(object sender, EventArgs e)
+        {
+            this.radTextBox1.Text = radTrackBar1.Value.ToString();
+        }
+````
+````VB.NET
+    Private Sub radTrackBar1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+        Me.radTextBox1.Text = radTrackBar1.Value.ToString()
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 

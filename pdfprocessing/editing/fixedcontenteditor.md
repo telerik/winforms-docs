@@ -1,8 +1,8 @@
 ---
 title: FixedContentEditor
-page_title: FixedContentEditor
+page_title: FixedContentEditor | UI for WinForms Documentation
 description: FixedContentEditor
-slug: pdfprocessing-editing-fixedcontenteditor
+slug: winforms/pdfprocessing/editing/fixedcontenteditor
 tags: fixedcontenteditor
 published: True
 position: 0
@@ -12,7 +12,7 @@ position: 0
 
 
 
-__FixedContentEditor__ is utility class that is intended to simplify the process of creating and editing the content of an __IContentRootElement__ such as [RadFixedPage]({%slug pdfprocessing-model-radfixedpage%}).
+__FixedContentEditor__ is utility class that is intended to simplify the process of creating and editing the content of an __IContentRootElement__ such as [RadFixedPage]({%slug winforms/pdfprocessing/model/radfixedpage%}).
       
 
 The current article will get you familiar with the following topics:
@@ -29,123 +29,138 @@ The current article will get you familiar with the following topics:
 ## Creating FixedContentEditor
 
 __FixedContentEditor__ is always associated to a single __IContentRootElement__ which it takes as a constructor parameter when it is created. __Example 1__ shows how you can create an editor.
-        
+        #_[C#] Example 1: Create FixedContentEditor_
 
-#### __[C#] Example 1: Create FixedContentEditor__
-
-{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_0}}
-	            
-	            FixedContentEditor editor = new FixedContentEditor(contentRootElement);
-	        
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 1: Create FixedContentEditor__
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_0}} 
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_0}} 
 
-{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_0}}
-	        Dim editor As FixedContentEditor = New FixedContentEditor(contentRootElement)
-	{{endregion}}
+````C#
+            
+            FixedContentEditor editor = new FixedContentEditor(contentRootElement);
+````
+````VB.NET
+        Dim editor As FixedContentEditor = New FixedContentEditor(contentRootElement)
+        '
+````
+
+{{endregion}} 
 
 
 
-The editor maintains an internal [Position]({%slug pdfprocessing-concepts-position%}) inside the content root element. When a new element is created, its position is being set to the current position of the editor. The initial position of the editor can be specified when it is created.
+
+The editor maintains an internal [Position]({%slug winforms/pdfprocessing/concepts/position%}) inside the content root element. When a new element is created, its position is being set to the current position of the editor. The initial position of the editor can be specified when it is created.
         
 
 __Example 2__ demonstrates how you can create а FixedContentEditor with specific initial position.
+        #_[C#] Example 2: Create FixedContentEditor with Specific IPosition_
+
+	
+
+
+
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_1}} 
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_1}} 
+
+````C#
         
+            FixedContentEditor editor = new FixedContentEditor(contentRootElement, initialPosition);
+````
+````VB.NET
+        Dim editor As FixedContentEditor = New FixedContentEditor(contentRootElement, initialPosition)
+        '
+````
 
-#### __[C#] Example 2: Create FixedContentEditor with Specific IPosition__
+{{endregion}} 
 
-{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_1}}
-	        
-	            FixedContentEditor editor = new FixedContentEditor(contentRootElement, initialPosition);
-	        
-	{{endregion}}
-
-
-
-#### __[VB.NET] Example 2: Create FixedContentEditor with Specific IPosition__
-
-{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_1}}
-	        Dim editor As FixedContentEditor = New FixedContentEditor(contentRootElement, initialPosition)
-	{{endregion}}
 
 
 
 ## Inserting Elements
 
-Composing a [RadFixedDocument]({%slug pdfprocessing-model-radfixeddocument%}) normally requires to create all elements and specify exactly how they should look. The __FixedContentEditor__ takes care of most things for you. This section explains how you can add different type of elements.
+Composing a [RadFixedDocument]({%slug winforms/pdfprocessing/model/radfixeddocument%}) normally requires to create all elements and specify exactly how they should look. The __FixedContentEditor__ takes care of most things for you. This section explains how you can add different type of elements.
         
 
 ### Inserting Text
 
-Inserting а [TextFragment]({%slug pdfprocessing-model-textfragment%}) can be done with the __public void DrawText(string text)__ method. __Example 3__ inserts a fragment with content "First text fragment.".
+Inserting а [TextFragment]({%slug winforms/pdfprocessing/model/textfragment%}) can be done with the __public void DrawText(string text)__ method. __Example 3__ inserts a fragment with content "First text fragment.".
+            #_[C#] Example 3: Insert TextFragment_
+
+	
+
+
+
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_2}} 
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_2}} 
+
+````C#
             
+            editor.DrawText("First text fragment.");
+````
+````VB.NET
+        editor.DrawText("First text fragment.")
+        '
+````
 
-#### __[C#] Example 3: Insert TextFragment__
+{{endregion}} 
 
-{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_2}}
-	            
-	            editor.DrawText("First text fragment.");
-	            
-	{{endregion}}
-
-
-
-#### __[VB.NET] Example 3: Insert TextFragment__
-
-{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_2}}
-	        editor.DrawText("First text fragment.")
-	{{endregion}}
 
 
 
 __Figure 1__ shows the result of __Example 3__.
             
+>caption Figure 1: TextFragment Result
 
-Figure 1: TextFragment Result![pdf Processing-editing-Fixed Content Editor 001](images/pdfProcessing-editing-FixedContentEditor001.png)
+![pdf Processing-editing-Fixed Content Editor 001](images/pdfProcessing-editing-FixedContentEditor001.png)
 
 ### Inserting Paragraph
 
 __Example 4__ shows how you can use the __Block__ object to draw a paragraph.
+            #_[C#] Example 4: Insert Paragraph_
+
+	
+
+
+
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_3}} 
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_3}} 
+
+````C#
             
+            Block block = new Block();
+            block.InsertText("First sentence.");
+            block.InsertText("Second sentence.");
+            editor.DrawBlock(block);
+````
+````VB.NET
+        Dim block As New Block()
+        block.InsertText("First sentence.")
+        block.InsertText("Second sentence.")
+        editor.DrawBlock(block)
+        '
+````
 
-#### __[C#] Example 4: Insert Paragraph__
+{{endregion}} 
 
-{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_3}}
-	            
-	            Block block = new Block();
-	            block.InsertText("First sentence.");
-	            block.InsertText("Second sentence.");
-	            editor.DrawBlock(block);
-	            
-	{{endregion}}
-
-
-
-#### __[VB.NET] Example 4: Insert Paragraph__
-
-{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_3}}
-	        Dim block As New Block()
-	        block.InsertText("First sentence.")
-	        block.InsertText("Second sentence.")
-	        editor.DrawBlock(block)
-	{{endregion}}
 
 
 
 __Figure 2__ shows the result of __Example 4__.
             
+>caption Figure 2: Paragraph
 
-Figure 2: Paragraph![pdf Processing-editing-Fixed Content Editor 002](images/pdfProcessing-editing-FixedContentEditor002.png)
+![pdf Processing-editing-Fixed Content Editor 002](images/pdfProcessing-editing-FixedContentEditor002.png)
 
->tipBuilding a paragraph with the FixedContentEditor is much simpler than creating TextFragments yourself. The [Block]({%slug radpdfprocessing-editing-block%}) object would flow the content of a paragraph for you if this is necessary.
-              
+>tip Building a paragraph with the FixedContentEditor is much simpler than creating TextFragments yourself. The[Block]({%slug winforms/pdfprocessing/editing/block%})object would flow the content of a paragraph for you if this is necessary.
+>
+
 
 ### Inserting Image
 
-__FixedContentEditor__ provides several overloads for inserting an [Image]({%slug pdfprocessing-model-image%}).
+__FixedContentEditor__ provides several overloads for inserting an [Image]({%slug winforms/pdfprocessing/model/image%}).
             
 
 __public void DrawImage(Stream stream);__
@@ -161,36 +176,40 @@ __public void DrawImage(ImageSource source, Size size);__
 __public void DrawImage(ImageSource source, double width, double height);__
 
 __Example 5__ shows how you can add an image created from a Stream.
-            
+            #_[C#] Example 5: Insert Image_
 
-#### __[C#] Example 5: Insert Image__
-
-{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_4}}
 	
-	            using (Stream stream = this.GetResourceStream("Telerik_logo.jpg"))
-	            {
-	                editor.DrawImage(stream, new Size(118, 28));
-	            }
-	            
-	{{endregion}}
 
 
 
-#### __[VB.NET] Example 5: Insert Image__
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_4}} 
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_4}} 
 
-{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_4}}
-	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-	            editor.DrawImage(stream, New Size(118, 28))
-	        End Using
-	{{endregion}}
+````C#
+
+            using (Stream stream = this.GetResourceStream("Telerik_logo.jpg"))
+            {
+                editor.DrawImage(stream, new Size(118, 28));
+            }
+````
+````VB.NET
+        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
+            editor.DrawImage(stream, New Size(118, 28))
+        End Using
+        '
+````
+
+{{endregion}} 
 
 
 
-Figure 3: Image Result![pdf Processing-editing-Fixed Content Editor 004](images/pdfProcessing-editing-FixedContentEditor004.png)
+>caption Figure 3: Image Result
+
+![pdf Processing-editing-Fixed Content Editor 004](images/pdfProcessing-editing-FixedContentEditor004.png)
 
 ### Inserting Geometries
 
-The following methods can be used to insert different [Geometries]({%slug pdfprocessing-concepts-geometry%}) in the document:
+The following methods can be used to insert different [Geometries]({%slug winforms/pdfprocessing/concepts/geometry%}) in the document:
             
 
 __public void DrawLine(Point point1, Point point2)__: Inserts a line between the specified points.
@@ -209,29 +228,32 @@ __public void DrawPath(PathGeometry pathGeometry)__: Inserts a custom path geome
             
 
 __Example 6__ shows how you can add an ellipse using one of FixedContentEditor's methods.
+            #_[C#] Example 6: Insert Ellipse_
+
+	
+
+
+
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_5}} 
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_5}} 
+
+````C#
             
+            editor.DrawEllipse(new Point(250, 70), 136, 48);
+````
+````VB.NET
+        editor.DrawEllipse(New Point(250, 70), 136, 48)
+        '
+````
 
-#### __[C#] Example 6: Insert Ellipse__
+{{endregion}} 
 
-{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_5}}
-	            
-	            editor.DrawEllipse(new Point(250, 70), 136, 48);
-	            
-	{{endregion}}
-
-
-
-#### __[VB.NET] Example 6: Insert Ellipse__
-
-{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_5}}
-	        editor.DrawEllipse(New Point(250, 70), 136, 48)
-	{{endregion}}
 
 
 
 ### Inserting Clipping
 
-__FixedContentEditor__ exposes a __Clipping__ property which defines the [Clipping]({%slug pdfprocessing-concepts-clipping%}) to be used for the inserted content elements. The following methods can be used to push and pop clippings:
+__FixedContentEditor__ exposes a __Clipping__ property which defines the [Clipping]({%slug winforms/pdfprocessing/concepts/clipping%}) to be used for the inserted content elements. The following methods can be used to push and pop clippings:
             
 
 __public IDisposable PushClipping(GeometryBase clip)__: Inserts a new clipping defined from the specified geometry.
@@ -247,89 +269,164 @@ When the returned __IDisposable__ object from the __PushClipping()__ method is d
             
 
 When a new clipping is pushed, it is set as a clipping to the current clipping in the editor. __Example 7__ shows how a clipping can be pushed:
-            
+            #_[C#] Example 7: Push Clipping_
 
-#### __[C#] Example 7: Push Clipping__
-
-{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_6}}
-	            
-	            string visibleText = "The last word in this text is";
-	            string text = string.Format("{0} clipped.", visibleText); //The last word in this text is clipped.
-	            Block block = new Block();
-	            block.InsertText(visibleText);
-	            Size visisibleTextSize = block.Measure();
-	            
-	            using (editor.PushClipping(new Rect(new Point(0, 0), visisibleTextSize)))
-	            {
-	                editor.DrawText(text);
-	            }
-	            
-	{{endregion}}
-
-
-
-#### __[VB.NET] Example 7: Push Clipping__
-
-{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_6}}
-	        Dim visibleText As String = "The last word in this text is"
-	        Dim text As String = String.Format("{0} clipped.", visibleText)
-	        'The last word in this text is clipped.
-	        Dim block As New Block()
-	        block.InsertText(visibleText)
-	        Dim visisibleTextSize As Size = block.Measure()
 	
-	        Using editor.PushClipping(New Rect(New Point(0, 0), visisibleTextSize))
-	            editor.DrawText(text)
-	        End Using
-	{{endregion}}
+
+
+
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_6}} 
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_6}} 
+
+````C#
+            
+            string visibleText = "The last word in this text is";
+            string text = string.Format("{0} clipped.", visibleText); //The last word in this text is clipped.
+            Block block = new Block();
+            block.InsertText(visibleText);
+            Size visisibleTextSize = block.Measure();
+            
+            using (editor.PushClipping(new Rect(new Point(0, 0), visisibleTextSize)))
+            {
+                editor.DrawText(text);
+            }
+````
+````VB.NET
+        Dim visibleText As String = "The last word in this text is"
+        Dim text As String = String.Format("{0} clipped.", visibleText)
+        'The last word in this text is clipped.
+        Dim block As New Block()
+        block.InsertText(visibleText)
+        Dim visisibleTextSize As Size = block.Measure()
+
+        Using editor.PushClipping(New Rect(New Point(0, 0), visisibleTextSize))
+            editor.DrawText(text)
+        End Using
+        '
+````
+
+{{endregion}} 
+
 
 
 
 __Figure 4__ shows the result of __Example 7__.
             
+>caption Figure 4: Clipping Result
 
-Figure 4: Clipping Result![pdf Processing-editing-Fixed Content Editor 003](images/pdfProcessing-editing-FixedContentEditor003.png)
+![pdf Processing-editing-Fixed Content Editor 003](images/pdfProcessing-editing-FixedContentEditor003.png)
+
+### Inserting Table
+
+__FixedContentEditor__ exposes __DrawTable()__ method which allows you to easily 
+              position and draw tabular data in the PDF document. You can specify the size you need to fit the table in by using the 
+              appropriate overload of the __DrawTable()__ method.
+
+__Example 8__ generates a table and draws it in some fixed size.#_[C#] Example 8: Insert Table_
+
+	
+
+
+
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_8}} 
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_8}} 
+
+````C#
+            
+            Table table = new Table();
+            Border border = new Border();
+            table.DefaultCellProperties.Borders = new TableCellBorders(border, border, border, border);
+            table.DefaultCellProperties.Padding = new Thickness(10);
+            TableRow firstRow = table.Rows.AddTableRow();
+            firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell");
+            firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell");
+            firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell");
+            TableRow secondRow = table.Rows.AddTableRow();
+            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell");
+            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell");
+            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell");
+
+            RadFixedDocument document = new RadFixedDocument();
+            RadFixedPage page = document.Pages.AddPage();
+            FixedContentEditor editor = new FixedContentEditor(page);
+            editor.Position.Translate(10, 10);
+            editor.DrawTable(table, new Size(180, double.PositiveInfinity));
+````
+````VB.NET
+
+        Dim table As New Table()
+        Dim border As New Border()
+        table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
+        table.DefaultCellProperties.Padding = New Thickness(10)
+        Dim firstRow As TableRow = table.Rows.AddTableRow()
+        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
+        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
+        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell")
+        Dim secondRow As TableRow = table.Rows.AddTableRow()
+        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell")
+        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell")
+        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell")
+
+        Dim document As New RadFixedDocument()
+        Dim page As RadFixedPage = document.Pages.AddPage()
+        Dim editor As New FixedContentEditor(page)
+        editor.Position.Translate(10, 10)
+        editor.DrawTable(table, New Size(180, Double.PositiveInfinity))
+
+        '
+````
+
+{{endregion}} 
+
+
+![pdf Processing-editing-Fixed Content Editor 006](images/pdfProcessing-editing-FixedContentEditor006.png)
+
+More detailed information about tables is available in the [Table]({%slug winforms/pdfprocessing/editing/table%}) documentation article.
 
 ## Positioning
 
-The [Position]({%slug pdfprocessing-concepts-position%})  property exposed by __FixedContentEditor__ allows an easy way to manipulate the position of inserted content elements.
+The [Position]({%slug winforms/pdfprocessing/concepts/position%})  property exposed by __FixedContentEditor__ allows an easy way to manipulate the position of inserted content elements.
         
 
 The code in __Example 8__ shows how to manipulate the position of the inserted content elements and __Figure 5__ shows the result of the code.
+        #_[C#] Example 8: Scale and Rotate Content_
+
+	
+
+
+
+{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_7}} 
+{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_7}} 
+
+````C#
         
+            editor.Position.Scale(1.5, 0.5);
+            editor.Position.Rotate(10);
+            editor.DrawText("Image:");
+            editor.Position.Translate(0, 20);
+            using (Stream stream = this.GetResourceStream("Telerik_logo.jpg"))
+            {
+                editor.DrawImage(stream, new Size(118, 28));
+            }
+````
+````VB.NET
+        editor.Position.Scale(1.5, 0.5)
+        editor.Position.Rotate(10)
+        editor.DrawText("Image:")
+        editor.Position.Translate(0, 20)
+        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
+            editor.DrawImage(stream, New Size(118, 28))
+        End Using
+        '
+````
 
-#### __[C#] Example 8: Scale and Rotate Content__
-
-{{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_7}}
-	        
-	            editor.Position.Scale(1.5, 0.5);
-	            editor.Position.Rotate(10);
-	            editor.DrawText("Image:");
-	            editor.Position.Translate(0, 20);
-	            using (Stream stream = this.GetResourceStream("Telerik_logo.jpg"))
-	            {
-	                editor.DrawImage(stream, new Size(118, 28));
-	            }
-	            
-	{{endregion}}
-
-
-
-#### __[VB.NET] Example 8: Scale and Rotate Content__
-
-{{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_7}}
-	        editor.Position.Scale(1.5, 0.5)
-	        editor.Position.Rotate(10)
-	        editor.DrawText("Image:")
-	        editor.Position.Translate(0, 20)
-	        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-	            editor.DrawImage(stream, New Size(118, 28))
-	        End Using
-	{{endregion}}
+{{endregion}} 
 
 
 
-Figure 5: Positioning Result![pdf Processing-editing-Fixed Content Editor 005](images/pdfProcessing-editing-FixedContentEditor005.png)
+>caption Figure 5: Positioning Result
+
+![pdf Processing-editing-Fixed Content Editor 005](images/pdfProcessing-editing-FixedContentEditor005.png)
 
 ## Changing Current Styles
 
@@ -359,14 +456,14 @@ __FixedContentEditor__ has some properties and methods that affect how it will b
 
 # See Also
 
- * [RadFixedPage]({%slug pdfprocessing-model-radfixedpage%})
+ * [RadFixedPage]({%slug winforms/pdfprocessing/model/radfixedpage%})
 
- * [Position]({%slug pdfprocessing-concepts-position%})
+ * [Position]({%slug winforms/pdfprocessing/concepts/position%})
 
- * [TextFragment]({%slug pdfprocessing-model-textfragment%})
+ * [TextFragment]({%slug winforms/pdfprocessing/model/textfragment%})
 
- * [Image]({%slug pdfprocessing-model-image%})
+ * [Image]({%slug winforms/pdfprocessing/model/image%})
 
- * [Geometry]({%slug pdfprocessing-concepts-geometry%})
+ * [Geometry]({%slug winforms/pdfprocessing/concepts/geometry%})
 
- * [Clipping]({%slug pdfprocessing-concepts-clipping%})
+ * [Clipping]({%slug winforms/pdfprocessing/concepts/clipping%})

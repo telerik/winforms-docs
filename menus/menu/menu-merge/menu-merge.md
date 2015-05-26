@@ -1,8 +1,8 @@
 ---
 title: Menu Merge
-page_title: Menu Merge
+page_title: Menu Merge | UI for WinForms Documentation
 description: Menu Merge
-slug: menus-menu-menu-merge
+slug: winforms/menus/menu/menu-merge/menu-merge
 tags: menu,merge
 published: True
 position: 1
@@ -14,19 +14,27 @@ position: 1
 
 You can merge RadMenuItems by using the MergeMenu method of RadMenu. The parameter designates the source menu and the menu on which the method is invoked determines the destination menu.
 
-#### __[C#]__
+>caution You need not call this method if you want to use menu merge in a MDI application. RadMenu automatically discovers that it is placed in a child MDI form and it automatically invokes MergeMenu when necessary.
+>
+#_[C#]_
 
-{{source=..\SamplesCS\Menus\Menu\MenuMerge.cs region=Merge}}
-	            radMenu1.MergeMenu(srcRadMenu2);
-	{{endregion}}
+	
 
 
 
-#### __[VB]__
+{{source=..\SamplesCS\Menus\Menu\MenuMerge.cs region=Merge}} 
+{{source=..\SamplesVB\Menus\Menu\MenuMerge.vb region=Merge}} 
 
-{{source=..\SamplesVB\Menus\Menu\MenuMerge.vb region=Merge}}
-	        radMenu1.MergeMenu(srcRadMenu2)
-	{{endregion}}
+````C#
+            radMenu1.MergeMenu(srcRadMenu2);
+````
+````VB.NET
+        radMenu1.MergeMenu(srcRadMenu2)
+        '
+````
+
+{{endregion}} 
+
 
 
 

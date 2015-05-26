@@ -1,8 +1,8 @@
 ---
 title: Quick Navigator
-page_title: Quick Navigator
+page_title: Quick Navigator | UI for WinForms Documentation
 description: Quick Navigator
-slug: dock-architecture-and-features-quick-navigator
+slug: winforms/dock/architecture-and-features/quick-navigator
 tags: quick,navigator
 published: True
 position: 5

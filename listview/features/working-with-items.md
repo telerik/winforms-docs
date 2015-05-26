@@ -1,8 +1,8 @@
 ---
 title: Working with items
-page_title: Working with items
+page_title: Working with items | UI for WinForms Documentation
 description: Working with items
-slug: listview-features-working-with-items
+slug: winforms/listview/features/working-with-items
 tags: working,with,items
 published: True
 position: 0
@@ -21,34 +21,37 @@ RadListView supports both single and multi selection. The selection mode is dete
         
 
 Multiple items can be selected in code as well. This can be achieved by using the __Select__ method.
-          This method takes and array of ListViewDataItem as parameter.
+          This method takes and array of ListViewDataItem as parameter.#_[C#] Programmatically select items_
 
-#### __[C#] Programmatically select items__
-
-{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=itemSelect}}
-	            ListViewDataItem[] itemsToSlelct = new ListViewDataItem[3];
 	
-	            itemsToSlelct[0] = radListView1.Items[1];
-	            itemsToSlelct[1] = radListView1.Items[3];
-	            itemsToSlelct[2] = radListView1.Items[4];
-	
-	            radListView1.Select(itemsToSlelct);
-	
-	{{endregion}}
 
 
 
-#### __[VB.NET] Programmatically select items__
+{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=itemSelect}} 
+{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=itemSelect}} 
 
-{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=itemSelect}}
-	        Dim itemsToSlelct(2) As ListViewDataItem
-	
-	        itemsToSlelct(0) = RadListView1.Items(1)
-	        itemsToSlelct(1) = RadListView1.Items(3)
-	        itemsToSlelct(2) = RadListView1.Items(4)
-	
-	        RadListView1.Select(itemsToSlelct)
-	{{endregion}}
+````C#
+            ListViewDataItem[] itemsToSlelct = new ListViewDataItem[3];
+
+            itemsToSlelct[0] = radListView1.Items[1];
+            itemsToSlelct[1] = radListView1.Items[3];
+            itemsToSlelct[2] = radListView1.Items[4];
+
+            radListView1.Select(itemsToSlelct);
+````
+````VB.NET
+        Dim itemsToSlelct(2) As ListViewDataItem
+
+        itemsToSlelct(0) = RadListView1.Items(1)
+        itemsToSlelct(1) = RadListView1.Items(3)
+        itemsToSlelct(2) = RadListView1.Items(4)
+
+        RadListView1.Select(itemsToSlelct)
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -58,49 +61,57 @@ In __DetailsView__ this property sets only the __Height__ of the
         	__Item__, since the __Width__ is determined by the 
         	__Width__ of the columns. Here is a sample setting of 50 pixels height of
         	the items and different widths for the columns:
-        
+        #_[C#] Item sizing_
 
-#### __[C#] Item sizing__
-
-{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=itemSizing}}
-	            radListView1.ItemSize = new Size(0, 50);
-	            radListView1.Columns[0].Width = 50;
-	            radListView1.Columns[1].Width = 75;
-	            radListView1.Columns[2].Width = 100;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Item sizing__
+{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=itemSizing}} 
+{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=itemSizing}} 
 
-{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=itemSizing}}
-	        RadListView1.ItemSize = New Drawing.Size(0, 50)
-	        RadListView1.Columns(0).Width = 50
-	        RadListView1.Columns(1).Width = 75
-	        RadListView1.Columns(2).Width = 100
-	{{endregion}}
+````C#
+            radListView1.ItemSize = new Size(0, 50);
+            radListView1.Columns[0].Width = 50;
+            radListView1.Columns[1].Width = 75;
+            radListView1.Columns[2].Width = 100;
+````
+````VB.NET
+        RadListView1.ItemSize = New Drawing.Size(0, 50)
+        RadListView1.Columns(0).Width = 50
+        RadListView1.Columns(1).Width = 75
+        RadListView1.Columns(2).Width = 100
+        '
+````
+
+{{endregion}} 
+
 
 ![listview-features-working-with-items 001](images/listview-features-working-with-items001.png)
 
 In __ViewType.ListView__, when __FullRowSelect__ is set to 
         	*false*, the __ItemSize__ sets the __Item__ size accordingly:
-        
+        #_[C#] Item sizing_
 
-#### __[C#] Item sizing__
-
-{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=fullRowSelect}}
-	            radListView1.FullRowSelect = false;
-	            radListView1.ItemSize = new Size(180, 35);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Item sizing__
+{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=fullRowSelect}} 
+{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=fullRowSelect}} 
 
-{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=fullRowSelect}}
-	        RadListView1.FullRowSelect = False
-	        RadListView1.ItemSize = New Drawing.Size(180, 35)
-	{{endregion}}
+````C#
+            radListView1.FullRowSelect = false;
+            radListView1.ItemSize = new Size(180, 35);
+````
+````VB.NET
+        RadListView1.FullRowSelect = False
+        RadListView1.ItemSize = New Drawing.Size(180, 35)
+        '
+````
+
+{{endregion}} 
+
 
 ![listview-features-working-with-items 002](images/listview-features-working-with-items002.png)
 
@@ -108,25 +119,29 @@ There are	two more properties that provide additional customization options for 
         	__AllowArbitraryItemWidth__ and __AllowArbitraryItemHeight__.
         	When both of these are set to *false*, the __ItemSize__ is
         	the one that determines the size of the items:
-        
+        #_[C#] Item sizing_
 
-#### __[C#] Item sizing__
-
-{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=arbitrarySizes}}
-	            radListView1.ItemSize = new Size(160, 80);
-	            radListView1.AllowArbitraryItemHeight = false;
-	            radListView1.AllowArbitraryItemWidth = false;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Item sizing__
+{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=arbitrarySizes}} 
+{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=arbitrarySizes}} 
 
-{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=arbitrarySizes}}
-	        RadListView1.ItemSize = New Drawing.Size(160, 80)
-	        RadListView1.AllowArbitraryItemHeight = False
-	        RadListView1.AllowArbitraryItemWidth = False
-	{{endregion}}
+````C#
+            radListView1.ItemSize = new Size(160, 80);
+            radListView1.AllowArbitraryItemHeight = false;
+            radListView1.AllowArbitraryItemWidth = false;
+````
+````VB.NET
+        RadListView1.ItemSize = New Drawing.Size(160, 80)
+        RadListView1.AllowArbitraryItemHeight = False
+        RadListView1.AllowArbitraryItemWidth = False
+        '
+````
+
+{{endregion}} 
+
 
 ![listview-features-working-with-items 003](images/listview-features-working-with-items003.png)
 

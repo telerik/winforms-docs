@@ -1,8 +1,8 @@
 ---
 title: Styling
-page_title: Styling
+page_title: Styling | UI for WinForms Documentation
 description: Styling
-slug: forms-and-dialogs-statusstrip-styling
+slug: winforms/forms-and-dialogs/statusstrip/styling
 tags: styling
 published: True
 position: 3

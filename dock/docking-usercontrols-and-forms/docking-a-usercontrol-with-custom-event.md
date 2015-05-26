@@ -1,8 +1,8 @@
 ---
 title: Docking a UserControl with custom event
-page_title: Docking a UserControl with custom event
+page_title: Docking a UserControl with custom event | UI for WinForms Documentation
 description: Docking a UserControl with custom event
-slug: dock-docking-usercontrols-and-forms-docking-a-usercontrol-with-custom-event
+slug: winforms/dock/docking-usercontrols-and-forms/docking-a-usercontrol-with-custom-event
 tags: docking,a,usercontrol,with,custom,event
 published: True
 position: 1
@@ -36,47 +36,55 @@ In our particular case we dock a user control instance in a RadDock instance. Th
 
 1. In the Property Window locate the __SelectionChanged__ event and double-click it to create an event handler.
 
-1. Add a delegate and event to be surfaced by the CalendarPanel control when the date selection changes:
+1. Add a delegate and event to be surfaced by the CalendarPanel control when the date selection changes:#_[C#] Setting up DateChanged Event_
 
-#### __[C#] Setting up DateChanged Event__
-
-{{source=..\SamplesCS\Dock\CalendarPanel.cs region=definingDelegates}}
-	        public delegate void DateChangedHandler(DateTime date);
-	        public event DateChangedHandler DateChanged;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Setting up DateChanged Event__
+{{source=..\SamplesCS\Dock\CalendarPanel.cs region=definingDelegates}} 
+{{source=..\SamplesVB\Dock\CalendarPanel.vb region=definingDelegates}} 
 
-{{source=..\SamplesVB\Dock\CalendarPanel.vb region=definingDelegates}}
-	    Public Delegate Sub DateChangedHandler(ByVal [date] As DateTime)
-	    Public Event DateChanged As DateChangedHandler
-	{{endregion}}
+````C#
+        public delegate void DateChangedHandler(DateTime date);
+        public event DateChangedHandler DateChanged;
+````
+````VB.NET
+    Public Delegate Sub DateChangedHandler(ByVal [date] As DateTime)
+    Public Event DateChanged As DateChangedHandler
+    '
+````
 
-In the __SelectionChanged__ event handler add the following code:
-
-#### __[C#] Handling the RadCalendar SelectionChanged event__
-
-{{source=..\SamplesCS\Dock\CalendarPanel.cs region=handlingSelectionChanged}}
-	        private void radCalendar1_SelectionChanged(object sender, EventArgs e)
-	        {
-	            if (DateChanged != null)
-	            {
-	                DateChanged((sender as Telerik.WinControls.UI.RadCalendar).SelectedDate);
-	            }
-	        }
-	{{endregion}}
+{{endregion}} 
 
 
+In the __SelectionChanged__ event handler add the following code:#_[C#] Handling the RadCalendar SelectionChanged event_
 
-#### __[VB.NET] Handling the RadCalendar SelectionChanged event__
+	
 
-{{source=..\SamplesVB\Dock\CalendarPanel.vb region=handlingSelectionChanged}}
-	    Private Sub RadCalendar1_SelectionChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadCalendar1.SelectionChanged
-	        RaiseEvent DateChanged((TryCast(sender, RadCalendar)).SelectedDate)
-	    End Sub
-	{{endregion}}
+
+
+{{source=..\SamplesCS\Dock\CalendarPanel.cs region=handlingSelectionChanged}} 
+{{source=..\SamplesVB\Dock\CalendarPanel.vb region=handlingSelectionChanged}} 
+
+````C#
+        private void radCalendar1_SelectionChanged(object sender, EventArgs e)
+        {
+            if (DateChanged != null)
+            {
+                DateChanged((sender as Telerik.WinControls.UI.RadCalendar).SelectedDate);
+            }
+        }
+````
+````VB.NET
+    Private Sub RadCalendar1_SelectionChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadCalendar1.SelectionChanged
+        RaiseEvent DateChanged((TryCast(sender, RadCalendar)).SelectedDate)
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -84,50 +92,58 @@ In the __SelectionChanged__ event handler add the following code:
 
 1. Drop a RadDock instance on the opened design surface. Set the RadDock __Dock__ property *Fill.*
 
-1. Dock the CalendarPanel user control to RadDock in the Form_Load event handler using the following code snippet:
+1. Dock the CalendarPanel user control to RadDock in the Form_Load event handler using the following code snippet:#_[C#] Docking CalendarPanel user control in RadDock_
 
-#### __[C#] Docking CalendarPanel user control in RadDock__
-
-{{source=..\SamplesCS\Dock\DockingForms.cs region=creatingCalendarPanel}}
-	            CalendarPanel calendarPanel = new CalendarPanel();
-	            HostWindow host = this.radDock1.DockControl(calendarPanel, Telerik.WinControls.UI.Docking.DockPosition.Left);
-	            host.Text = "Calendar";
-	            calendarPanel.DateChanged += calendarPanel_DateChanged;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Docking CalendarPanel user control in RadDock__
+{{source=..\SamplesCS\Dock\DockingForms.cs region=creatingCalendarPanel}} 
+{{source=..\SamplesVB\Dock\DockingForms.vb region=creatingCalendarPanel}} 
 
-{{source=..\SamplesVB\Dock\DockingForms.vb region=creatingCalendarPanel}}
-	        Dim calendarPanel As New CalendarPanel()
-	        Dim host As HostWindow = Me.RadDock1.DockControl(calendarPanel, Telerik.WinControls.UI.Docking.DockPosition.Left)
-	        host.Text = "Calendar"
-	        AddHandler calendarPanel.DateChanged, AddressOf calendarPanel_DateChanged
-	{{endregion}}
+````C#
+            CalendarPanel calendarPanel = new CalendarPanel();
+            HostWindow host = this.radDock1.DockControl(calendarPanel, Telerik.WinControls.UI.Docking.DockPosition.Left);
+            host.Text = "Calendar";
+            calendarPanel.DateChanged += calendarPanel_DateChanged;
+````
+````VB.NET
+        Dim calendarPanel As New CalendarPanel()
+        Dim host As HostWindow = Me.RadDock1.DockControl(calendarPanel, Telerik.WinControls.UI.Docking.DockPosition.Left)
+        host.Text = "Calendar"
+        AddHandler calendarPanel.DateChanged, AddressOf calendarPanel_DateChanged
+        '
+````
 
-
-
-1. Add an event handler for the CalendarPanel DateChanged event:
-
-#### __[C#] Handling the Custom DateChanged event__
-
-{{source=..\SamplesCS\Dock\DockingForms.cs region=handlingDateChanged}}
-	        void calendarPanel_DateChanged(DateTime date)
-	        {
-	            RadMessageBox.Show("Selected date is: " + date.ToShortDateString());
-	        }
-	{{endregion}}
+{{endregion}} 
 
 
 
-#### __[VB.NET] Handling the Custom DateChanged event__
 
-{{source=..\SamplesVB\Dock\DockingForms.vb region=handlingDateChanged}}
-	    Sub calendarPanel_DateChanged(ByVal [date] As DateTime)
-	        RadMessageBox.Show("Selected date is: " + [date].ToShortDateString())
-	    End Sub
-	{{endregion}}
+1. Add an event handler for the CalendarPanel DateChanged event:#_[C#] Handling the Custom DateChanged event_
+
+	
+
+
+
+{{source=..\SamplesCS\Dock\DockingForms.cs region=handlingDateChanged}} 
+{{source=..\SamplesVB\Dock\DockingForms.vb region=handlingDateChanged}} 
+
+````C#
+        void calendarPanel_DateChanged(DateTime date)
+        {
+            RadMessageBox.Show("Selected date is: " + date.ToShortDateString());
+        }
+````
+````VB.NET
+    Sub calendarPanel_DateChanged(ByVal [date] As DateTime)
+        RadMessageBox.Show("Selected date is: " + [date].ToShortDateString())
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 

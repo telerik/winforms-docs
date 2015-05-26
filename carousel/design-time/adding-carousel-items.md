@@ -1,8 +1,8 @@
 ---
 title: Adding Carousel Items
-page_title: Adding Carousel Items
+page_title: Adding Carousel Items | UI for WinForms Documentation
 description: Adding Carousel Items
-slug: carousel-design-time-adding-carousel-items
+slug: winforms/carousel/design-time/adding-carousel-items
 tags: adding,carousel,items
 published: True
 position: 0
@@ -17,6 +17,7 @@ position: 0
 You can add carousel items using the Visual Studio designer. Open the __RadCarousel__ Smart Tag and choose Edit Items command.
 
 
+>caption 
 
 ![carousel-design-time-adding-carousel-items 002](images/carousel-design-time-adding-carousel-items002.png)
 
@@ -25,6 +26,7 @@ You can add carousel items using the Visual Studio designer. Open the __RadCarou
 The __RadItem__ collection editor will open, where you can add different types of __RadElements__: 
 
 
+>caption 
 
 ![carousel-design-time-adding-carousel-items 001](images/carousel-design-time-adding-carousel-items001.png)
 

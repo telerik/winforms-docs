@@ -1,8 +1,8 @@
 ---
 title: API
-page_title: API
+page_title: API | UI for WinForms Documentation
 description: API
-slug: propertygrid-editors-api
+slug: winforms/propertygrid/editors/api
 tags: api
 published: True
 position: 0

@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: editors-datetimepicker-getting-started
+slug: winforms/editors/datetimepicker/getting-started
 tags: getting,started
 published: True
 position: 0

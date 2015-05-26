@@ -1,8 +1,8 @@
 ---
 title: Customizing the Quick Access Toolbar
-page_title: Customizing the Quick Access Toolbar
+page_title: Customizing the Quick Access Toolbar | UI for WinForms Documentation
 description: Customizing the Quick Access Toolbar
-slug: ribbonbar-customizing-the-quick-access-toolbar
+slug: winforms/ribbonbar/getting-started/customizing-the-quick-access-toolbar
 tags: customizing,the,quick,access,toolbar
 published: True
 position: 10
@@ -15,7 +15,7 @@ position: 10
 The Quick Access Toolbar is an area at the top of the Telerik RadRibbonBar, above the tabs:![ribbonbar-customizing-the-quick-access-toolbar 001](images/ribbonbar-customizing-the-quick-access-toolbar001.png)
 
 The Quick Access Toolbar can contain the same elements as the  
-      [RadMenu]({%slug menus-menu-overview%}):
+      [RadMenu]({%slug winforms/menus/menu%}):
 
 * Menu items, displayed as either images, text, or both
 

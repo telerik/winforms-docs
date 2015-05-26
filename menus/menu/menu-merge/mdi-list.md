@@ -1,8 +1,8 @@
 ---
 title: MDI list
-page_title: MDI list
+page_title: MDI list | UI for WinForms Documentation
 description: MDI list
-slug: menus-menu-menu-merge-mdi-list
+slug: winforms/menus/menu/menu-merge/mdi-list
 tags: mdi,list
 published: True
 position: 2

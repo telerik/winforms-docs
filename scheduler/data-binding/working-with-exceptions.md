@@ -1,8 +1,8 @@
 ---
 title: Working with Exceptions
-page_title: Working with Exceptions
+page_title: Working with Exceptions | UI for WinForms Documentation
 description: Working with Exceptions
-slug: scheduler-data-binding-working-with-exceptions
+slug: winforms/scheduler/data-binding/working-with-exceptions
 tags: working,with,exceptions
 published: True
 position: 9
@@ -15,7 +15,11 @@ position: 9
 ## Overview
 
 ## 
-<table><tr><td>RELATED BLOGS</td></tr><tr><td>RadScheduler for WinForms data binding and occurrence exceptionsThe big [new] feature for Q3 2009 release in RadScheduler for WinForms has got to be the resource grouping functionality. There are, however, numerous other improvements that also deserve attention, such as data binding. Some of you may remember that in its first release the WinForms Scheduler had just basic support for binding to appointment data. Later we extended this functionality to support storing associations to resources in the data source. [Read full post ...](http://blogs.telerik.com/winformsteam/posts/09-11-04/radscheduler_for_winforms_data_binding_and_occurrence_exceptions.aspx)</td></tr></table>
+
+
+
+|RELATED BLOGS|
+|RadScheduler for WinForms data binding and occurrence exceptionsThe big [new] feature for Q3 2009 release in RadScheduler for WinForms has got to be the resource grouping functionality. There are, however, numerous other improvements that also deserve attention, such as data binding. Some of you may remember that in its first release the WinForms Scheduler had just basic support for binding to appointment data. Later we extended this functionality to support storing associations to resources in the data source.[Read full post ...](http://blogs.telerik.com/winformsteam/posts/09-11-04/radscheduler_for_winforms_data_binding_and_occurrence_exceptions.aspx)|
 
 An __exception__, in RadScheduler terms, is an appointment instance that does not fully conform to the rule that created it. They are designed to handle the occurrence of exceptions, or special conditions that change the normal flow of the appointment execution.
 
@@ -25,4 +29,4 @@ You have a Mon-Friady daily recurring appointment, which starts at __9am__ and c
 
 ## Working with Exceptions
 
-See the [Using DataSource property]({%slug scheduler-data-binding-using-datasource-property%}) and [Binding to Business Objects]({%slug scheduler-data-binding-binding-to-business-objects%}) topics on how to work with the Exceptions Collection.
+See the [Using DataSource property]({%slug winforms/scheduler/data-binding/using-datasource-property%}) and [Binding to Business Objects]({%slug winforms/scheduler/data-binding/binding-to-business-objects%}) topics on how to work with the Exceptions Collection.

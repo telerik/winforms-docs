@@ -1,8 +1,8 @@
 ---
 title: Working with the RadColorDialog
-page_title: Working with the RadColorDialog
+page_title: Working with the RadColorDialog | UI for WinForms Documentation
 description: Working with the RadColorDialog
-slug: forms-and-dialogs-colordialog-working-with-the-radcolordialog
+slug: winforms/forms-and-dialogs/colordialog/working-with-the-radcolordialog
 tags: working,with,the,radcolordialog
 published: True
 position: 2
@@ -36,38 +36,42 @@ __AllowEditHEXValue:__ If true (the default) enables hexadecimal entry of color 
 
 __ShowHEXColorValue__: If true (the default) displays the hexadecimal entry of color values.![forms-and-dialogs-colordialog-working-with-the-radcolordialog 004](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog004.png)
 
-__CustomColors[]:__ This is a read-only array of Color objects.  You can query the contents of the custom colors displayed along the bottom of the selector.![forms-and-dialogs-colordialog-working-with-the-radcolordialog 005](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog005.png)
+__CustomColors[]:__ This is a read-only array of Color objects.  You can query the contents of the custom colors displayed along the bottom of the selector.![forms-and-dialogs-colordialog-working-with-the-radcolordialog 005](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog005.png)#_[C#] Enlist the current custom colors in RadColorDialog_
 
-#### __[C#] Enlist the current custom colors in RadColorDialog__
-
-{{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=enlistTheCustomColors}}
-	        private void radButton1_Click(object sender, EventArgs e)
-	        {
-	            StringBuilder sb = new StringBuilder();
-	            foreach (Color color in radColorDialog1.CustomColors)
-	            {
-	                sb.Append(color.ToString());
-	                sb.Append(System.Environment.NewLine);
-	            }
-	            MessageBox.Show(sb.ToString());
 	
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET] Enlist the current custom colors in RadColorDialog__
+{{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=enlistTheCustomColors}} 
+{{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=enlistTheCustomColors}} 
 
-{{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=enlistTheCustomColors}}
-	    Private Sub RadButton1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
-	        Dim sb As New StringBuilder()
-	        For Each color As Color In RadColorDialog1.CustomColors
-	            sb.Append(color.ToString())
-	            sb.Append(System.Environment.NewLine)
-	        Next
-	        MessageBox.Show(sb.ToString())
-	    End Sub
-	{{endregion}}
+````C#
+        private void radButton1_Click(object sender, EventArgs e)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (Color color in radColorDialog1.CustomColors)
+            {
+                sb.Append(color.ToString());
+                sb.Append(System.Environment.NewLine);
+            }
+            MessageBox.Show(sb.ToString());
+
+        }
+````
+````VB.NET
+    Private Sub RadButton1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
+        Dim sb As New StringBuilder()
+        For Each color As Color In RadColorDialog1.CustomColors
+            sb.Append(color.ToString())
+            sb.Append(System.Environment.NewLine)
+        Next
+        MessageBox.Show(sb.ToString())
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -75,27 +79,31 @@ __Localization/Internationalization Properties:__The text values of the __RadCol
 
 ## Getting the selected colors
 
-In order go get the SelectedColor or the SelectedHlsColor you can use the following code snippet:
+In order go get the SelectedColor or the SelectedHlsColor you can use the following code snippet:#_[C#] Enlist the current custom colors in RadColorDialog_
 
-#### __[C#] Enlist the current custom colors in RadColorDialog__
-
-{{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=getTheSelectedColors}}
-	            if (radColorDialog1.ShowDialog() == DialogResult.OK)
-	            {
-	                Color color = radColorDialog1.SelectedColor;
-	                HslColor hslColor = radColorDialog1.SelectedHslColor;
-	            }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Enlist the current custom colors in RadColorDialog__
+{{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=getTheSelectedColors}} 
+{{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=getTheSelectedColors}} 
 
-{{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=getTheSelectedColors}}
-	        If RadColorDialog1.ShowDialog() = DialogResult.OK Then
-	            Dim color As Color = RadColorDialog1.SelectedColor
-	            Dim hslColor As Telerik.WinControls.HslColor = RadColorDialog1.SelectedHslColor
-	        End If
-	{{endregion}}
+````C#
+            if (radColorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Color color = radColorDialog1.SelectedColor;
+                HslColor hslColor = radColorDialog1.SelectedHslColor;
+            }
+````
+````VB.NET
+        If RadColorDialog1.ShowDialog() = DialogResult.OK Then
+            Dim color As Color = RadColorDialog1.SelectedColor
+            Dim hslColor As Telerik.WinControls.HslColor = RadColorDialog1.SelectedHslColor
+        End If
+        '
+````
+
+{{endregion}} 
+
 
 

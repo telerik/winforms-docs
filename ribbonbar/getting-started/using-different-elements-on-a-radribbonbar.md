@@ -1,8 +1,8 @@
 ---
 title: Using Different Elements on a RadRibbonBar
-page_title: Using Different Elements on a RadRibbonBar
+page_title: Using Different Elements on a RadRibbonBar | UI for WinForms Documentation
 description: Using Different Elements on a RadRibbonBar
-slug: ribbonbar-using-different-elements-on-a-radribbonbar
+slug: winforms/ribbonbar/getting-started/using-different-elements-on-a-radribbonbar
 tags: using,different,elements,on,a,radribbonbar
 published: True
 position: 6
@@ -27,7 +27,9 @@ You can build the user interface of a Telerik RadRibbonBar using a variety of di
 1. Using the Images Collection Editor, add the desired images to the ImageList. For more help with this task, see 
             [How to: Add or Remove ImageList Images with the Designer in the Visual Studio 2005](http://msdn2.microsoft.com/en-us/library/ms233674.aspx) documentation. 
 
->A predefined list of images has been prepared for the purpose of this demonstration.
+>note A predefined list of images has been prepared for the purpose of this demonstration.
+>
+
 
 ## Adding a Tab and a Group
 
@@ -103,4 +105,6 @@ With an appropriate __Image__the __RadRibbonBar__should look similarly:![ribbonb
               __RadGalleryElement__and set their values to 2 and 5 respectively. The result should be similar to this:
             
 
->For the purpose of this demonstration Office 2007 like images for the gallery have been used.![ribbonbar-using-different-elements-on-a-radribbonbar 005](images/ribbonbar-using-different-elements-on-a-radribbonbar005.png)
+>note For the purpose of this demonstration Office 2007 like images for the gallery have been used.
+>
+![ribbonbar-using-different-elements-on-a-radribbonbar 005](images/ribbonbar-using-different-elements-on-a-radribbonbar005.png)

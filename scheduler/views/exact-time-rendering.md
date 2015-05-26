@@ -1,8 +1,8 @@
 ---
 title: Exact time rendering
-page_title: Exact time rendering
+page_title: Exact time rendering | UI for WinForms Documentation
 description: Exact time rendering
-slug: scheduler-views-exact-time-rendering
+slug: winforms/scheduler/views/exact-time-rendering
 tags: exact,time,rendering
 published: True
 position: 13
@@ -17,6 +17,11 @@ position: 13
 __RadScheduler__ supports functionality to arrange appointments according to their start time and duration.
           The __EnableExactTimeRendering__ property should get or set a value, indicating whether the appointment
           start and end time should be rendered exactly. By default its value is *false*.
+
+>note Due to the great difference in the amount of time, which different time scales represent,
+          appointments might become too small to render accurately in larger time scales.
+>
+
 
 * __Day View:__![scheduler-views-exact-time-rendering 001](images/scheduler-views-exact-time-rendering001.png)
 

@@ -1,8 +1,8 @@
 ---
 title: Model
-page_title: Model
+page_title: Model | UI for WinForms Documentation
 description: Model
-slug: wordsprocessing-model
+slug: winforms/wordsprocessing/model
 tags: model
 published: True
 position: 3
@@ -12,7 +12,7 @@ position: 3
 
 
 
-[RadFlowDocument]({%slug wordsprocessing-model-radflowdocument%}) describes flow document (document designed to dynamically adjust its
+[RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%}) describes flow document (document designed to dynamically adjust its
         layout according to the available size). This article explains in details the structure of __RadFlowDocument__'s document model.
       
 
@@ -41,29 +41,29 @@ __RadFlowDocument__ represents a tree of document elements containing each other
               [Sections](http://www.telerik.com/help/winforms/p_telerik_windows_documents_flow_model_radflowdocument_sections.html).
             
 
-* [Section]({%slug wordsprocessing-model-section%}) contains collection of
+* [Section]({%slug winforms/wordsprocessing/model/section%}) contains collection of
               [Blocks](http://www.telerik.com/help/winforms/properties_t_telerik_windows_documents_flow_model_blockbase.html)
               (Paragraphs and Tables), as well as three Headers and three Footers – one default, one for even pages and one for first section page.
             
 
-* [Paragraph]({%slug wordsprocessing-model-paragraph%}) contains collection of
+* [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}) contains collection of
               [Inlines](http://www.telerik.com/help/winfroms/properties_t_telerik_windows_documents_flow_model_inlinebase.html)
-              – [Runs]({%slug wordsprocessing-model-run%}),
-              [ImageInlines]({%slug wordsprocessing-model-imageinline%}),
-              [FloatingImages]({%slug wordsprocessing-model-floatingimage%}) and
-              [FieldCharacters]({%slug wordsprocessing-model-fieldcharacter%}).
+              – [Runs]({%slug winforms/wordsprocessing/model/run%}),
+              [ImageInlines]({%slug winforms/wordsprocessing/model/imageinline%}),
+              [FloatingImages]({%slug winforms/wordsprocessing/model/floatingimage%}) and
+              [FieldCharacters]({%slug winforms/wordsprocessing/model/fieldcharacter%}).
             
 
-* [Table]({%slug wordsprocessing-model-table%}) contains collection of TableRows.
+* [Table]({%slug winforms/wordsprocessing/model/table%}) contains collection of TableRows.
             
 
-* [TableRow]({%slug wordsprocessing-model-tablerow%})  contains collection of TableCells.
+* [TableRow]({%slug winforms/wordsprocessing/model/tablerow%})  contains collection of TableCells.
             
 
-* [TableCell]({%slug wordsprocessing-model-tablecell%}) contains collection of Blocks.
+* [TableCell]({%slug winforms/wordsprocessing/model/tablecell%}) contains collection of Blocks.
             
 
-* [Headers and Footers]({%slug wordsprocessing-model-headers-and-footers%}) contain collection of Blocks.
+* [Headers and Footers]({%slug winforms/wordsprocessing/model/headers-and-footers%}) contain collection of Blocks.
             
 
 ### Common ways for traversing the links between document elements
@@ -82,6 +82,8 @@ Relationships between document elements can be additionally traversed using:
 
 # See Also
 
- * [RadFlowDocument]({%slug wordsprocessing-model-radflowdocument%})[RadFlowDocument API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_radflowdocument.html)
+ * [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%})
 
- * [Clone and Merge]({%slug wordsprocessing-editing-clone-and-merge%})
+ * [RadFlowDocument API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_radflowdocument.html)
+
+ * [Clone and Merge]({%slug winforms/wordsprocessing/editing/clone-and-merge%})

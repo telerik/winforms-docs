@@ -1,8 +1,8 @@
 ---
 title: Smart Tag
-page_title: Smart Tag
+page_title: Smart Tag | UI for WinForms Documentation
 description: Smart Tag
-slug: menus-menu-design-time-smart-tag
+slug: winforms/menus/menu/design-time/smart-tag
 tags: smart,tag
 published: True
 position: 0

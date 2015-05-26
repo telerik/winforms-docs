@@ -1,8 +1,8 @@
 ---
 title: Knowledge Base
-page_title: Knowledge Base
+page_title: Knowledge Base | UI for WinForms Documentation
 description: Knowledge Base
-slug: for-more-help-knowledge-base
+slug: winforms/for-more-help/knowledge-base
 tags: knowledge,base
 published: True
 position: 2

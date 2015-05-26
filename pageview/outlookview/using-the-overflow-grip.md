@@ -1,8 +1,8 @@
 ---
 title: Using The Overflow Grip
-page_title: Using The Overflow Grip
+page_title: Using The Overflow Grip | UI for WinForms Documentation
 description: Using The Overflow Grip
-slug: pageview-outlookview-using-the-overflow-grip
+slug: winforms/pageview/outlookview/using-the-overflow-grip
 tags: using,the,overflow,grip
 published: True
 position: 0
@@ -23,63 +23,69 @@ The Overflow Grip can be used to increase/decrease the amount of currently visib
 
 As well as from the UI, the overflow grip can be used programmatically. To do so, you should access the methods
         exposed by the RadPageViewOutlookElement class by casting the RadPageView’s ViewElement property to RadPageViewOutlookElement.
-        Then, you should call the corresponding methods as the code snippet below demonstrates:
+        Then, you should call the corresponding methods as the code snippet below demonstrates:#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\PageView\OutlookView.cs region=programmingGrip}}
 	
-	            RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
-	            //Drags the sizing grip one item down.
-	            outlookElement.DragGripDown();
-	            //Drags the sizing grip one item up.
-	            outlookElement.DragGripUp();
+
+
+
+{{source=..\SamplesCS\PageView\OutlookView.cs region=programmingGrip}} 
+{{source=..\SamplesVB\PageView\OutlookView.vb region=programmingGrip}} 
+
+````C#
+
+            RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
+            //Drags the sizing grip one item down.
+            outlookElement.DragGripDown();
+            //Drags the sizing grip one item up.
+            outlookElement.DragGripUp();
+````
+````VB.NET
+
+        Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
+        'Drags the sizing grip one item down.
+        outlookElement.DragGripDown()
+        'Drags the sizing grip one item up.
+        outlookElement.DragGripUp()
+
+        '
+````
+
+{{endregion}} 
+
+
+
+
+You can also use the HideItems/ShowItems methods to specify how many items will be hidden/shown at once:#_[C#]_
+
 	
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\PageView\OutlookView.cs region=programmingItems}} 
+{{source=..\SamplesVB\PageView\OutlookView.vb region=programmingGrip}} 
 
-{{source=..\SamplesVB\PageView\OutlookView.vb region=programmingGrip}}
-	
-	        Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
-	        'Drags the sizing grip one item down.
-	        outlookElement.DragGripDown()
-	        'Drags the sizing grip one item up.
-	        outlookElement.DragGripUp()
-	
-	{{endregion}}
+````C#
 
+            RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
+            //Drags the sizing grip three items down.
+            outlookElement.HideItems(3);
+            //Drags the sizing grip two items up.
+            outlookElement.ShowItems(2);
+````
+````VB.NET
 
+        Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
+        'Drags the sizing grip one item down.
+        outlookElement.DragGripDown()
+        'Drags the sizing grip one item up.
+        outlookElement.DragGripUp()
 
-You can also use the HideItems/ShowItems methods to specify how many items will be hidden/shown at once:
+        '
+````
 
-#### __[C#]__
+{{endregion}} 
 
-{{source=..\SamplesCS\PageView\OutlookView.cs region=programmingItems}}
-	
-	            RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
-	            //Drags the sizing grip three items down.
-	            outlookElement.HideItems(3);
-	            //Drags the sizing grip two items up.
-	            outlookElement.ShowItems(2);
-	
-	{{endregion}}
-
-
-
-#### __[VB.NET]__
-
-{{source=..\SamplesVB\PageView\OutlookView.vb region=programmingGrip}}
-	
-	        Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
-	        'Drags the sizing grip one item down.
-	        outlookElement.DragGripDown()
-	        'Drags the sizing grip one item up.
-	        outlookElement.DragGripUp()
-	
-	{{endregion}}
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: Docx
-page_title: Docx
+page_title: Docx | UI for WinForms Documentation
 description: Docx
-slug: wordsprocessing-formats-and-conversion-docx
+slug: winforms/wordsprocessing/formats-and-conversion/docx
 tags: docx
 published: True
 position: 0

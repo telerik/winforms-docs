@@ -1,8 +1,8 @@
 ---
 title: Properties and Events
-page_title: Properties and Events
+page_title: Properties and Events | UI for WinForms Documentation
 description: Properties and Events
-slug: editors-popupeditor-properties-and-events
+slug: winforms/editors/popupeditor/properties-and-events
 tags: properties,and,events
 published: False
 position: 2

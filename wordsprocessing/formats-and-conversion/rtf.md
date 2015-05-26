@@ -1,8 +1,8 @@
 ---
 title: Rtf
-page_title: Rtf
+page_title: Rtf | UI for WinForms Documentation
 description: Rtf
-slug: wordsprocessing-formats-and-conversion-rtf
+slug: winforms/wordsprocessing/formats-and-conversion/rtf
 tags: rtf
 published: True
 position: 1

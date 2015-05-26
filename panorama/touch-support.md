@@ -1,8 +1,8 @@
 ---
 title: Touch Support
-page_title: Touch Support
+page_title: Touch Support | UI for WinForms Documentation
 description: Touch Support
-slug: panorama-touch-support
+slug: winforms/panorama/touch-support
 tags: touch,support
 published: True
 position: 3
@@ -35,4 +35,6 @@ The end-user is allowed to reorder the tiles according to his/her preferences wi
           In addition, the remaining tiles are moved out of the way according to the finger position to indicate the possible drop target.
         ![panorama-touch-support 004](images/panorama-touch-support004.png)
 
-# See Also[Windows Touch Gestures](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx)
+# See Also
+
+ * [Windows Touch Gestures](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx)

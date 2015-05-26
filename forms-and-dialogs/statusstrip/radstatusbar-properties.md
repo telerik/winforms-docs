@@ -1,8 +1,8 @@
 ---
 title: RadStatusBar Properties
-page_title: RadStatusBar Properties
+page_title: RadStatusBar Properties | UI for WinForms Documentation
 description: RadStatusBar Properties
-slug: forms-and-dialogs-statusstrip-radstatusbar-properties
+slug: winforms/forms-and-dialogs/statusstrip/radstatusbar-properties
 tags: radstatusbar,properties
 published: True
 position: 1

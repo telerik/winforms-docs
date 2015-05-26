@@ -1,8 +1,8 @@
 ---
 title: Customizing ShapedForm
-page_title: Customizing ShapedForm
+page_title: Customizing ShapedForm | UI for WinForms Documentation
 description: Customizing ShapedForm
-slug: forms-and-dialogs-shapedform-customizing-shapedform
+slug: winforms/forms-and-dialogs/shapedform/customizing-shapedform
 tags: customizing,shapedform
 published: True
 position: 1
@@ -19,26 +19,30 @@ Almost all properties of Shaped form are the same as a standard Windows Form. Yo
 * 
           	ShapedForm does not have a title bar, and so does not have maximize, minimize, or close buttons. 
           	To get maximize, minimize and close functionality, add a 
-          	[RadTitleBar control]({%slug forms-and-dialogs-radtitlebar-overview%})
+          	[RadTitleBar control]({%slug winforms/forms-and-dialogs/radtitlebar%})
           	to your __ShapedForm__.
           
 
 * __ShapedForm__ adds a __Shape__ property that can be used to choose preset shapes or allow you to create a new custom shape in the __Shape Editor__. 
 
-* Use __ThemeName__ property to set the theme name. 
+* Use __ThemeName__ property to set the theme name. #_[C#] Setting a theme to a ShapedForm_
 
-#### __[C#] Setting a theme to a ShapedForm__
-
-{{source=..\SamplesCS\Forms and Dialogs\ShapedForm1.cs region=ThemeName}}
-	            this.ThemeName = "Breeze";
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Setting a theme to a ShapedForm__
+{{source=..\SamplesCS\Forms and Dialogs\ShapedForm1.cs region=ThemeName}} 
+{{source=..\SamplesVB\Forms and Dialogs\ShapedForm1.vb region=ThemeName}} 
 
-{{source=..\SamplesVB\Forms and Dialogs\ShapedForm1.vb region=ThemeName}}
-	        Me.ThemeName = "Breeze"
-	{{endregion}}
+````C#
+            this.ThemeName = "Breeze";
+````
+````VB.NET
+        Me.ThemeName = "Breeze"
+        '
+````
+
+{{endregion}} 
+
 
 

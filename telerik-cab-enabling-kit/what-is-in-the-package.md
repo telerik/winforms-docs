@@ -1,8 +1,8 @@
 ---
 title: What is in the package
-page_title: What is in the package
+page_title: What is in the package | UI for WinForms Documentation
 description: What is in the package
-slug: telerik-cab-enabling-kit-what-is-in-the-package
+slug: winforms/telerik-cab-enabling-kit/what-is-in-the-package
 tags: what,is,in,the,package
 published: True
 position: 1

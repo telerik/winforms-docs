@@ -1,8 +1,8 @@
 ---
 title: Expand Behavior
-page_title: Expand Behavior
+page_title: Expand Behavior | UI for WinForms Documentation
 description: Expand Behavior
-slug: pivotgrid-expand-behavior
+slug: winforms/pivotgrid/expand-behavior
 tags: expand,behavior
 published: True
 position: 12
@@ -15,8 +15,9 @@ position: 12
 In this article we will show you how to change the initial expand/collapse behavior of __RadPivotGrid__ rows and 
       columns.
 
->importantInitial state is the state of __RadPivotGrid__ after refresh of the used data provider.
-        
+>important Initial state is the state of __RadPivotGrid__ after refresh of the used data provider.
+>
+
 
 ## GroupsExpandBehavior
 
@@ -47,33 +48,36 @@ __RadPivotGrid__ has two properties to control the expand behavior -
           __RowGroupsExpandBehavior__ and __ColumnGroupsExpandBehavior__.
           As you can guess, the first one controls the expand behavior of the rows and the second one - columns behavior. If you do not set 
           these properties, all groups in rows and columns will be expanded.
-        
+        #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\PivotGrid\ExpandBehavior.cs region=expand}}
-	            
-	            RadPivotGrid pivot = new RadPivotGrid();
-	            pivot.RowGroupsExpandBehavior = new GroupsExpandBehavior()
-	            {
-	                Expanded = false,
-	                UpToLevel = 2
-	            };
-	            pivot.ColumnGroupsExpandBehavior = new GroupsExpandBehavior() { Expanded = false };
-	            
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{source=..\SamplesVB\PivotGrid\ExpandBehavior.vb region=expand}}
 	
-	        Dim pivot As New RadPivotGrid()
-	        pivot.RowGroupsExpandBehavior = New GroupsExpandBehavior() With {.Expanded = False, .UpToLevel = 2}
-	        pivot.ColumnGroupsExpandBehavior = New GroupsExpandBehavior() With {.Expanded = False}
-	
-	{{endregion}}
+
+
+
+{{source=..\SamplesCS\PivotGrid\ExpandBehavior.cs region=expand}} 
+{{source=..\SamplesVB\PivotGrid\ExpandBehavior.vb region=expand}} 
+
+````C#
+            
+            RadPivotGrid pivot = new RadPivotGrid();
+            pivot.RowGroupsExpandBehavior = new GroupsExpandBehavior()
+            {
+                Expanded = false,
+                UpToLevel = 2
+            };
+            pivot.ColumnGroupsExpandBehavior = new GroupsExpandBehavior() { Expanded = false };
+````
+````VB.NET
+
+        Dim pivot As New RadPivotGrid()
+        pivot.RowGroupsExpandBehavior = New GroupsExpandBehavior() With {.Expanded = False, .UpToLevel = 2}
+        pivot.ColumnGroupsExpandBehavior = New GroupsExpandBehavior() With {.Expanded = False}
+
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -83,46 +87,49 @@ If you want to collapse all groups in __RadPivotGrid__ you can change the behavi
           provider to apply the change immediately. For example, you may add two buttons in your application and
           handle the click event for each of them in order to expand/collapse the groups. Note that the new behavior will be applied each time 
           when the data provider is refreshed.
+        #_C#_
+
+	
+
+
+
+{{source=..\SamplesCS\PivotGrid\ExpandBehavior.cs region=click}} 
+{{source=..\SamplesVB\PivotGrid\ExpandBehavior.vb region=click}} 
+
+````C#
         
+        public void ExpandGroupsButton_Click(object sender, RoutedEventArgs e)
+        {
+            (this.pivot.RowGroupsExpandBehavior as GroupsExpandBehavior).Expanded = true;
+            (this.pivot.ColumnGroupsExpandBehavior as GroupsExpandBehavior).Expanded = true;
+            this.pivot.DataProvider.Refresh();
+        }
+        
+        private void CollapseGroupsButton_Click(object sender, RoutedEventArgs e)
+        {
+            (this.pivot.RowGroupsExpandBehavior as GroupsExpandBehavior).Expanded = false;
+            (this.pivot.ColumnGroupsExpandBehavior as GroupsExpandBehavior).Expanded = false;
+            this.pivot.DataProvider.Refresh();
+        }
+````
+````VB.NET
 
-#### __C#__
+    Public Sub ExpandGroupsButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        TryCast(Me.pivot.RowGroupsExpandBehavior, GroupsExpandBehavior).Expanded = True
+        TryCast(Me.pivot.ColumnGroupsExpandBehavior, GroupsExpandBehavior).Expanded = True
+        Me.pivot.DataProvider.Refresh()
+    End Sub
 
-{{source=..\SamplesCS\PivotGrid\ExpandBehavior.cs region=click}}
-	        
-	        public void ExpandGroupsButton_Click(object sender, RoutedEventArgs e)
-	        {
-	            (this.pivot.RowGroupsExpandBehavior as GroupsExpandBehavior).Expanded = true;
-	            (this.pivot.ColumnGroupsExpandBehavior as GroupsExpandBehavior).Expanded = true;
-	            this.pivot.DataProvider.Refresh();
-	        }
-	        
-	        private void CollapseGroupsButton_Click(object sender, RoutedEventArgs e)
-	        {
-	            (this.pivot.RowGroupsExpandBehavior as GroupsExpandBehavior).Expanded = false;
-	            (this.pivot.ColumnGroupsExpandBehavior as GroupsExpandBehavior).Expanded = false;
-	            this.pivot.DataProvider.Refresh();
-	        }
-	    
-	{{endregion}}
+    Private Sub CollapseGroupsButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        TryCast(Me.pivot.RowGroupsExpandBehavior, GroupsExpandBehavior).Expanded = False
+        TryCast(Me.pivot.ColumnGroupsExpandBehavior, GroupsExpandBehavior).Expanded = False
+        Me.pivot.DataProvider.Refresh()
+    End Sub
 
+    '
+````
 
+{{endregion}} 
 
-#### __VB.NET__
-
-{{source=..\SamplesVB\PivotGrid\ExpandBehavior.vb region=click}}
-	
-	    Public Sub ExpandGroupsButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	        TryCast(Me.pivot.RowGroupsExpandBehavior, GroupsExpandBehavior).Expanded = True
-	        TryCast(Me.pivot.ColumnGroupsExpandBehavior, GroupsExpandBehavior).Expanded = True
-	        Me.pivot.DataProvider.Refresh()
-	    End Sub
-	
-	    Private Sub CollapseGroupsButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	        TryCast(Me.pivot.RowGroupsExpandBehavior, GroupsExpandBehavior).Expanded = False
-	        TryCast(Me.pivot.ColumnGroupsExpandBehavior, GroupsExpandBehavior).Expanded = False
-	        Me.pivot.DataProvider.Refresh()
-	    End Sub
-	
-	{{endregion}}
 
 

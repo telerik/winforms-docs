@@ -1,8 +1,8 @@
 ---
 title: Four ways to customize RadGridView appearance
-page_title: Four ways to customize RadGridView appearance
+page_title: Four ways to customize RadGridView appearance | UI for WinForms Documentation
 description: Four ways to customize RadGridView appearance
-slug: gridview-styling-and-appearance-four-ways-to-customize-radgridview-appearance
+slug: winforms/gridview/styling-and-appearance/four-ways-to-customize-radgridview-appearance
 tags: four,ways,to,customize,radgridview,appearance
 published: True
 position: 0
@@ -16,7 +16,7 @@ There are four ways to customize RadGridView appearance - Themes, UI editor (De
 
 ## Themes
 
-Just as all our WinForms controls, RadGridView supports our theming mechanism. You can use one of the default themes or create your own theme. Please refer to our [Themes]({%slug themes-using-default-themes%}) section in the documentation for more details. 
+Just as all our WinForms controls, RadGridView supports our theming mechanism. You can use one of the default themes or create your own theme. Please refer to our [Themes]({%slug winforms/themes/using-default-themes-%}) section in the documentation for more details. 
         
 
 ## UI editor (DesignTime)  
@@ -32,10 +32,10 @@ Setting properties through *Edit UI Elements* dialog will override the correspon
 
 ## Events 
 
-Events are the most advanced way to edit cells and rows visual properties conditionally and unconditionally. Using events you can achieve everything that you can do with Conditional Formatting but the reverse is not true. The main advantage of Conditional Formatting is that formatting is set declaratively instead of procedurally as in the events approach. Please refer to the following two topics about [row]({%slug gridview-rows-formatting-rows%}) and [cell]({%slug gridview-cells-formatting-cells%}) events.   
+Events are the most advanced way to edit cells and rows visual properties conditionally and unconditionally. Using events you can achieve everything that you can do with Conditional Formatting but the reverse is not true. The main advantage of Conditional Formatting is that formatting is set declaratively instead of procedurally as in the events approach. Please refer to the following two topics about [row]({%slug winforms/gridview/rows/formatting-rows%}) and [cell]({%slug winforms/gridview/cells/formatting-cells%}) events.   
         
 
 ## Conditional Formatting
 
-The main advantage of conditional formatting is the declarative approach used to describe formatting. It has limitations compared to events but also requires less code. Please refer to the following two section about [cells]({%slug gridview-cells-conditional-formatting-cells%}) and [rows]({%slug gridview-rows-conditional-formatting-rows%}) Conditional Formatting. 
+The main advantage of conditional formatting is the declarative approach used to describe formatting. It has limitations compared to events but also requires less code. Please refer to the following two section about [cells]({%slug winforms/gridview/cells/conditional-formatting-cells%}) and [rows]({%slug winforms/gridview/rows/conditional-formatting-rows%}) Conditional Formatting. 
         

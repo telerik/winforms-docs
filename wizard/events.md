@@ -1,8 +1,8 @@
 ---
 title: Events
-page_title: Events
+page_title: Events | UI for WinForms Documentation
 description: Events
-slug: wizard-events
+slug: winforms/wizard/events
 tags: events
 published: True
 position: 3
@@ -50,40 +50,16 @@ __RadWizard__ raises the following events:
 Below is an example of using the __Next__ event of __RadWizard__ to choose the page to be selected when the 
 			user clicks the __Next__ command button. The example demonstrates how to cancel the transition from the second to the third page 
 			and to select the first page of the control:
-		
+		#_[C#] Subscribe to the Next event_
 
-#### __[C#] Subscribe to the Next event__
+	
 
-{{source=..\SamplesCS\Wizard\Events.cs region=subscribeToTheEvent}}
-	            this.radWizard1.Next += new WizardCancelEventHandler(radWizard1_Next);
-	{{endregion}}
+#_[C#] Handle the Next event_
 
+	
 
+#_[VB.NET] Handle the Next event_
 
-#### __[C#] Handle the Next event__
-
-{{source=..\SamplesCS\Wizard\Events.cs region=nextEvent}}
-	        private void radWizard1_Next(object sender, WizardCancelEventArgs e)
-	        {
-	            if (this.radWizard1.SelectedPage == this.radWizard1.Pages[1])
-	            {
-	                e.Cancel = true;
-	                this.radWizard1.SelectedPage = this.radWizard1.Pages[0];
-	            }
-	        }
-	{{endregion}}
-
-
-
-#### __[VB.NET] Handle the Next event__
-
-{{source=..\SamplesVB\Wizard\EventsForm.vb region=nextEvent}}
-	    Private Sub RadWizard1_Next(ByVal sender As Object, ByVal e As WizardCancelEventArgs) Handles RadWizard1.Next
-	        If (Me.RadWizard1.SelectedPage Is Me.RadWizard1.Pages(1)) Then
-	            e.Cancel = True
-	            Me.RadWizard1.SelectedPage = Me.RadWizard1.Pages(0)
-	        End If
-	    End Sub
-	{{endregion}}
+	
 
 

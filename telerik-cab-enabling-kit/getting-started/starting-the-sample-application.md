@@ -1,8 +1,8 @@
 ---
 title: Starting the Sample application
-page_title: Starting the Sample application
+page_title: Starting the Sample application | UI for WinForms Documentation
 description: Starting the Sample application
-slug: telerik-cab-enabling-kit-starting-the-sample-application
+slug: winforms/telerik-cab-enabling-kit/getting-started/starting-the-sample-application
 tags: starting,the,sample,application
 published: True
 position: 1
@@ -21,4 +21,6 @@ Besides the TelerikCompositeUI project, the Telerik CAB Enabling Kit solution co
 		Run it and the choosen sample application will start.
 		
 
->Please note that you need to have RadContols fow WinForms suite installed, before attempting to run the demo projects.
+>note Please note that you need to have RadContols fow WinForms suite installed, before attempting to run the demo projects.
+>
+

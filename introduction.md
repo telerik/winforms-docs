@@ -1,184 +1,99 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Overview | UI for WinForms Documentation
 description: Overview
-slug: overview
+slug: winforms/overview
 tags: overview
 published: True
 position: 1
 ---
 
-# Overview
+# winforms Overview
 
 
 
 ## Performance you demand, UI you can't believe![overview](images/overview.png)
 
-Telerik UI for WinForms includes over 95 UI controls that you can use to easily build unique and visually stunning Line of Business applications. Boasting a well-designed architecture and CAB support, Telerik UI for WinForms controls are perfectly suited for your Enterprise desktop development.
-
-  
-
-<table>
-<tr>
-<td>
-<a href="/menus/application-menu-overview">ApplicationMenu</a> 
-<p>BreadCrumb</p>
-<a href="/gauges/bulletgraph-overview">BulletGraph</a> 
-</td>
-
-<td>
-</td>
-</tr>
-</table>
+Telerik UI for WinForms includes over 110 UI controls that you can use to easily build unique and visually stunning
+          Line of Business applications. Boasting a well-designed architecture and CAB support,
+          Telerik UI for WinForms controls are perfectly suited for your Enterprise desktop development.
+        
 
 
 
-<table><tr><td>
-[ApplicationMenu]({%slug menus-application-menu-overview%})
 
-BreadCrumb
 
-[BulletGraph]({%slug bulletgraph-overview%})
 
-[Calendar]({%slug calendar-overview%})
 
-[Carousel]({%slug carousel-overview%})
 
-[ChartView]({%slug chartview-overview%})
 
-[CheckedListBox]({%slug checkedlistbox-overview%})
 
-[CommandBar]({%slug commandbar-overview%})
 
-[DropDownList]({%slug dropdown-and-listcontrol-dropdownlist-overview%})
+|[ApplicationMenu]({%slug winforms/menus/applicationmenu%})BreadCrumb[BulletGraph]({%slug winforms/gauges/bulletgraph%})[Calendar]({%slug winforms/calendar%})[Carousel]({%slug winforms/carousel%})[ChartView]({%slug winforms/chartview-%})[CheckedListBox]({%slug winforms/checkedlistbox%})[CommandBar]({%slug winforms/commandbar%})[DropDownList]({%slug winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist%})[ContextMenu + ContextMenuManager]({%slug winforms/menus/menu%})[Diagram]({%slug winforms/diagram-(beta)%})[Dock]({%slug winforms/dock%})[GridView]({%slug winforms/gridview%})[ListControl]({%slug winforms/dropdown,-listcontrol-and-checkeddropdownlist/listcontrol%})[ListView]({%slug winforms/listview%})[LinearGauge]({%slug winforms/gauges/lineargauge%})[Menu]({%slug winforms/menus/menu%})[MultiColumnComboBox]({%slug winforms/multicolumncombobox%})[PageView]({%slug winforms/pageview%})[Panorama]({%slug winforms/panorama%})[PivotGrid]({%slug winforms/pivotgrid%})[PivotFieldList]({%slug winforms/pivotgrid/radpivotfieldlist%})[PropertyGrid]({%slug winforms/propertygrid%})[RangeSelector]({%slug winforms/rangeselector-%})[RibbonBar]({%slug winforms/ribbonbar%})[Rotator]({%slug winforms/rotator%})[Scheduler]({%slug winforms/scheduler%})[TreeView]({%slug winforms/treeview%})Track and Status Controls
 
-[ContextMenu + ContextMenuManager]({%slug menus-menu-overview%})
+* [ProgressBar]({%slug winforms/track-and-status-controls/progressbar%})
 
-[Diagram]({%slug diagram-overview%})
+* [HScrollBar]({%slug winforms/track-and-status-controls/scrollbar%})
 
-[Dock]({%slug dock-overview%})
+* [VScrollBar]({%slug winforms/track-and-status-controls/scrollbar%})
 
-[GridView]({%slug gridview-overview%})
+* [TrackBar]({%slug winforms/track-and-status-controls/trackbar%})
 
-[ListControl]({%slug dropdown-and-listcontrol-listcontrol-overview%})
+* [WaitingBar]({%slug winforms/track-and-status-controls/waitingbar%})
 
-[ListView]({%slug listview-overview%})
+* [Rating]({%slug winforms/track-and-status-controls/rating%})Forms, Dialogs, VS templates
 
-[LinearGauge]({%slug lineargauge-overview%})
+* [ColorDialog]({%slug winforms/forms-and-dialogs/colordialog%})
 
-[Menu]({%slug menus-menu-overview%})
+* [Form + VS template]({%slug winforms/forms-and-dialogs/form%})
 
-[MultiColumnComboBox]({%slug multicolumncombobox-overview%})
+* [MessageBox]({%slug winforms/forms-and-dialogs/messagebox%})
 
-[PageView]({%slug pageview-overview%})
+* [ShapedForm + VS template]({%slug winforms/forms-and-dialogs/shapedform%})
 
-[Panorama]({%slug panorama-overview%})
+* [StatusStrip]({%slug winforms/forms-and-dialogs/statusstrip%})
 
-[PivotGrid]({%slug pivotgrid-overview%})
+* [TitleBar]({%slug winforms/forms-and-dialogs/radtitlebar%})
 
-[PivotFieldList]({%slug pivotgrid-radpivotfieldlist%})
+* [RibbonForm + VS template]({%slug winforms/forms-and-dialogs/ribbonform%})|[Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%})[Shortcuts]({%slug winforms/shortcuts%})ScreenTipsToolTipsTools included
 
-[PropertyGrid]({%slug propertygrid-overview%})
+* [ControlSpy]({%slug winforms/tools/controlspy%})
 
-[RangeSelector]({%slug rangeselector%})
+* [Visual Style Builder]({%slug winforms/tools/visual-style-builder%})
 
-[RibbonBar]({%slug ribbonbar-overview%})
-
-[Rotator]({%slug rotator-overview%})
-
-[Scheduler]({%slug scheduler-introduction%})
-
-[TreeView]({%slug treeview-overview%})
-
-Track and Status Controls
-
-* [ProgressBar]({%slug track-and-status-controls-progressbar-overview%})
-
-* [HScrollBar]({%slug track-and-status-controls-scrollbar-overview%})
-
-* [VScrollBar]({%slug track-and-status-controls-scrollbar-overview%})
-
-* [TrackBar]({%slug track-and-status-controls-trackbar-overview%})
-
-* [WaitingBar]({%slug track-and-status-controls-waitingbar-overview%})
-
-* [Rating]({%slug track-and-status-controls-rating-overview%})
-
-Forms, Dialogs, VS templates
-
-* [ColorDialog]({%slug forms-and-dialogs-colordialog-overview%})
-
-* [Form + VS template]({%slug forms-and-dialogs-form-overview%})
-
-* [MessageBox]({%slug forms-and-dialogs-messagebox-overview%})
-
-* [ShapedForm + VS template]({%slug forms-and-dialogs-shapedform-overview%})
-
-* [StatusStrip]({%slug forms-and-dialogs-statusstrip-overview%})
-
-* [TitleBar]({%slug forms-and-dialogs-radtitlebar-overview%})
-
-* [RibbonForm + VS template]({%slug forms-and-dialogs-ribbonform-overview%})
-
-</td><td>
-
-[Telerik Presentation Framework]({%slug tpf-overview%})
-
-[Shortcuts]({%slug shortcuts-overview%})
-
-ScreenTips
-
-ToolTips
-
-Tools included
-
-* [ControlSpy]({%slug tools-controlspy-overview%})
-
-* [Visual Style Builder]({%slug tools-visual-style-builder-overview%})
-
-* [Shape Editor]({%slug tools-shapeeditor-overview%})
+* [Shape Editor]({%slug winforms/tools/shapeeditor%})
 
 * Project Upgrade Utility
 
-* [Element Hierarchy Editor]({%slug tools-element-hierarchy-editor-overview%})
+* [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})Editors
 
-Editors
+* [AutoCompleteBox]({%slug winforms/editors/autocompletebox%})
 
-* [AutoCompleteBox]({%slug editors-autocompletebox-overview%})
+* [BrowseEditor]({%slug winforms/editors/browse-editor%})
 
-* [BrowseEditor]({%slug editors-browse-editor-overview%})
+* [CalculatorDropDown]({%slug winforms/editors/calculatordropdown%})
 
-* [CalculatorDropDown]({%slug editors-calculatordropdown-overview%})
+* [ColorBox]({%slug winforms/editors/colorbox%})
 
-* [ColorBox]({%slug editors-color-box-overview%})
+* [DateTimePicker]({%slug winforms/editors/datetimepicker%})
 
-* [DateTimePicker]({%slug editors-datetimepicker-overview%})
+* [MaskedEditBox]({%slug winforms/editors/maskededitbox%})
 
-* [MaskedEditBox]({%slug editors-maskededitbox-overview%})
+* [SpinEditor]({%slug winforms/editors/spineditor%})
 
-* [SpinEditor]({%slug editors-spineditor-overview%})
+* [TextBox]({%slug winforms/editors/textbox%})[RichTextBox]({%slug winforms/richtextbox-(obsolete)%})[SpellChecker]({%slug winforms/spellchecker%})Panels and Labels
 
-* [TextBox]({%slug editors-textbox-overview%})
+* [GroupBox]({%slug winforms/panels-and-labels/groupbox%})
 
-[RichTextBox]({%slug richtextbox-overview%})
+* [Separator]({%slug winforms/panels-and-labels/separator%})
 
-[SpellChecker]({%slug spellchecker-overview%})
+* [Panel]({%slug winforms/panels-and-labels/panel%})
 
-Panels and Labels
+* [Label]({%slug winforms/panels-and-labels/label%})
 
-* [GroupBox]({%slug panels-and-labels-groupbox-overview%})
+* [ScrollablePanel]({%slug winforms/panels-and-labels/radscrollablepanel%})Themes
 
-* [Separator]({%slug panels-and-labels-separator%})
-
-* [Panel]({%slug panels-and-labels-panel-overview%})
-
-* [Label]({%slug panels-and-labels-label-overview%})
-
-* [ScrollablePanel]({%slug panels-and-labels-radscrollablepanel-overview%})
-
-Themes
-
-* [ThemeManager]({%slug tools-visual-style-builder-adding-custom-themes-to-your-application-adding-radthememanager-to-a-form%})
+* [ThemeManager]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/adding-radthememanager-to-a-form%})
 
 * AquaTheme
 
@@ -204,22 +119,19 @@ Themes
 
 * Windows7Theme
 
-* [Theme Color Blending](94E87FA5-B031-4A64-9A62-4A71EE30B572)</td></tr></table>
+* [Theme Color Blending](94E87FA5-B031-4A64-9A62-4A71EE30B572)|
 
 
 
 
-<table><th><tr><td>
 
-RELATED VIDEOS</td><td></td></tr></th><tr><td>
 
-[Why choose Telerik UI for WinForms](http://tv.telerik.com/watch/winforms/radcontrols-for-winforms-product-video-q3-2010)
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[Why choose Telerik UI for WinForms](http://tv.telerik.com/watch/winforms/radcontrols-for-winforms-product-video-q3-2010)See how you can easily build unique and visually stunning Line of Business Windows Forms applications with Telerik UI for WinForms. Boasting a well-designed architecture and CAB support,
+                Telerik UI for WinForms are perfectly suited for your Enterprise desktop development.|![overview-video 001](images/overview-video001.png)|
 
-See how you can easily build unique and visually stunning Line of Business Windows Forms applications with Telerik UI for WinForms. Boasting a well-designed architecture and CAB support,
-                Telerik UI for WinForms are perfectly suited for your Enterprise desktop development.
-              </td><td>![overview-video 001](images/overview-video001.png)</td></tr></table>
-<table><th><tr><td>
 
-Revision Date</td><td>
-
-07/02/2014</td></tr></th><tr><td></td><td></td></tr></table>
+| Revision Date | 07/02/2014 |
+| ------ | ------ |
+|||

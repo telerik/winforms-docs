@@ -1,8 +1,8 @@
 ---
 title: Events
-page_title: Events
+page_title: Events | UI for WinForms Documentation
 description: Events
-slug: gridview-editors-events
+slug: winforms/gridview/editors/events
 tags: events
 published: True
 position: 2
@@ -18,7 +18,9 @@ The following events occur during the editing process:
 
 __EditorRequired__– This is the first event that fires when a cell is to become editable (edit mode). 
 
->This is the right place to replace the editor with a custom one. [Here]({%slug gridview-editors-using-custom-editors%}) is an example of this behavior.
+>note This is the right place to replace the editor with a custom one.[Here]({%slug winforms/gridview/editors/using-custom-editors%})is an example of this behavior.
+>
+
 
 __CellBeginEdit__ – Fires when the cell is about to enter edit mode. You can cancel edit mode at this stage by  setting the __Cancel__ property to *false*.
 
@@ -32,4 +34,4 @@ __ValueChanged__ – Fires when the active editor changes its value. The data is
 
 __CellValueChanged__ – Fires when the value of a cell has been changed.
 
-There are more events fired during this process. Please look in the [Data validation]({%slug gridview-editors-data-validation%}) section.
+There are more events fired during this process. Please look in the [Data validation]({%slug winforms/gridview/editors/data-validation%}) section.

@@ -1,8 +1,8 @@
 ---
 title: Using Large and Small Images
-page_title: Using Large and Small Images
+page_title: Using Large and Small Images | UI for WinForms Documentation
 description: Using Large and Small Images
-slug: ribbonbar-using-large-and-small-images
+slug: winforms/ribbonbar/getting-started/using-large-and-small-images
 tags: using,large,and,small,images
 published: True
 position: 14

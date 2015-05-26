@@ -1,8 +1,8 @@
 ---
 title: Lists
-page_title: Lists
+page_title: Lists | UI for WinForms Documentation
 description: Lists
-slug: wordsprocessing-concepts-lists
+slug: winforms/wordsprocessing/concepts/lists
 tags: lists
 published: True
 position: 6
@@ -13,7 +13,7 @@ position: 6
 
 
 A list represents a set of properties which are used to describe the appearance and behavior of a set of numbered paragraphs. All lists are stored in 
-        __ListCollection__ accessible through [RadFlowDocument]({%slug wordsprocessing-model-radflowdocument%})'s __Lists__ property.
+        __ListCollection__ accessible through [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%})'s __Lists__ property.
       
 
 * [List Overview](#list-overview)
@@ -33,7 +33,7 @@ A list represents a set of properties which are used to describe the appearance 
 The class containing the structure corresponding to a list is __List__ and exposes the following properties:
         
 
-* __StyleId__: A string property which specifies the [numbering style]({%slug wordsprocessing-concepts-styles%}) 
+* __StyleId__: A string property which specifies the [numbering style]({%slug winforms/wordsprocessing/concepts/styles%}) 
               associated with the list.
             
 
@@ -88,7 +88,7 @@ The type of the list type is used by an application to determine the user interf
               in the string format set by the NumberTextFormat property.
             
 
-* __StyleId__: Specifies the name of the [paragraph style]({%slug wordsprocessing-concepts-styles%}) associated with 
+* __StyleId__: Specifies the name of the [paragraph style]({%slug winforms/wordsprocessing/concepts/styles%}) associated with 
               the list level. ListLevel can be associated only with a paragraph style.
             
 
@@ -98,7 +98,7 @@ The type of the list type is used by an application to determine the user interf
 * __CharacterProperties__: Represents the associated [character properties](f8cd99f3d-5644-41b2-806a-a1bb49336272).
             
 
-* __ParagraphProperties__: Represents the associated [paragraph properties]({%slug wordsprocessing-concepts-style-properties%}).
+* __ParagraphProperties__: Represents the associated [paragraph properties]({%slug winforms/wordsprocessing/concepts/style-properties%}).
             
 
 ## List Templates
@@ -113,21 +113,25 @@ In order to add one of the list templates to the document you need to pass a __L
         
 
 __Example 1__ adds a default bulleted list to a predefined RadFlowDocument.
-        
+        #_[C#] Example 1: Add List Template_
 
-#### __[C#] Example 1: Add List Template__
-
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_0}}
-	            List list = document.Lists.Add(ListTemplateType.BulletDefault);
-	{{endregion}}
+	
 
 
 
-#### __[VB NET] Example 1: Add List Template__
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_0}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_0}}
-	            Dim list As List = document.Lists.Add(ListTemplateType.BulletDefault)
-	{{endregion}}
+````C#
+            List list = document.Lists.Add(ListTemplateType.BulletDefault);
+````
+````VB.NET
+            Dim list As List = document.Lists.Add(ListTemplateType.BulletDefault)
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -137,99 +141,115 @@ The next tutorial will get you through the creation of a list.
         
 
 1. Define a new __RadFlowDocument__ and add a __Section__ in it.
-            
+            #_[C#] Step 1: Create RadFlowDocument_
 
-#### __[C#] Step 1: Create RadFlowDocument__
-
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_1}}
-	            RadFlowDocument document = new RadFlowDocument();
-	            Section section = document.Sections.AddSection();
-	{{endregion}}
+	
 
 
 
-#### __[VB NET] Step 1: Create RadFlowDocument__
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_1}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_1}} 
 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_1}}
-	            Dim document As New RadFlowDocument()
-	            Dim section As Section = document.Sections.AddSection()
-	{{endregion}}
+````C#
+            RadFlowDocument document = new RadFlowDocument();
+            Section section = document.Sections.AddSection();
+````
+````VB.NET
+            Dim document As New RadFlowDocument()
+            Dim section As Section = document.Sections.AddSection()
+            '
+````
+
+{{endregion}} 
+
 
 
 
 1. Create a __List__ object and associate it with the document by adding it to the __Lists__ collection.
-            
+            #_[C#] Step 2: Create List_
 
-#### __[C#] Step 2: Create List__
-
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_2}}
-	            List list = new List();
-	            document.Lists.Add(list); // Adding the list in the document.
-	{{endregion}}
+	
 
 
 
-#### __[VB NET] Step 2: Create List__
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_2}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_2}} 
 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_2}}
-	        Dim list As New List()
-	            document.Lists.Add(list)
-	            ' Adding the list in the document.
-	{{endregion}}
+````C#
+            List list = new List();
+            document.Lists.Add(list); // Adding the list in the document.
+````
+````VB.NET
+        Dim list As New List()
+            document.Lists.Add(list)
+            ' Adding the list in the document.
+            '
+````
+
+{{endregion}} 
+
 
 In this case the default __HybridMultilevel__ type of list would be created.
             
 
 1. Iterate over the collection of __Levels__ the list has.
-            
+            #_[C#] Step 3: Iterate Levels_
 
-#### __[C#] Step 3: Iterate Levels__
-
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_3}}
-	            for (int level = 0; level < list.Levels.Count; ++level)
-	{{endregion}}
+	
 
 
 
-#### __[VB NET] Step 3: Iterate Levels__
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_3}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_3}} 
 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_3}}
-	            For level As Integer = 0 To list.Levels.Count - 1
-	{{endregion}}
+````C#
+            for (int level = 0; level < list.Levels.Count; ++level)
+````
+````VB.NET
+            For level As Integer = 0 To list.Levels.Count - 1
+                '
+````
+
+{{endregion}} 
+
 
 
 
 1. Specify some properties for each level.
-            
+            #_[C#] Step 4: Customize ListLevels_
 
-#### __[C#] Step 4: Customize ListLevels__
-
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_4}}
-	                bool isEven = (level % 2) == 0;
 	
-	                list.Levels[level].StartIndex = 1;
-	                // We set Decimal numbering style to a list level if it is even level, otherwise Bullet.
-	                list.Levels[level].NumberingStyle = isEven ? NumberingStyle.Decimal : NumberingStyle.Bullet;
-	                // Accordingly to the above rule, we set the corresponding NumberTextFormat.
-	                list.Levels[level].NumberTextFormat = isEven ? "%" + (level + 1) + "." : "o";
-	                // Set the desired indentation of the ListLevel can be done through its ParagraphProperties:
-	                list.Levels[level].ParagraphProperties.LeftIndent.LocalValue = 48 + (level * 24);
-	{{endregion}}
 
 
 
-#### __[VB NET] Step 4: Customize ListLevels__
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_4}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_4}} 
 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_4}}
-	                Dim isEven As Boolean = (level Mod 2) = 0
-	
-	                list.Levels(level).StartIndex = 1
-	                ' We set Decimal numbering style to a list level if it is even level, otherwise Bullet.
-	                list.Levels(level).NumberingStyle = If(isEven, NumberingStyle.[Decimal], NumberingStyle.Bullet)
-	                ' Accordingly to the above rule, we set the corresponding NumberTextFormat.
-	                list.Levels(level).NumberTextFormat = If(isEven, "%" + (level + 1) + ".", "o")
-	                ' Set the desired indentation of the ListLevel can be done through its ParagraphProperties:
-	{{endregion}}
+````C#
+                bool isEven = (level % 2) == 0;
+
+                list.Levels[level].StartIndex = 1;
+                // We set Decimal numbering style to a list level if it is even level, otherwise Bullet.
+                list.Levels[level].NumberingStyle = isEven ? NumberingStyle.Decimal : NumberingStyle.Bullet;
+                // Accordingly to the above rule, we set the corresponding NumberTextFormat.
+                list.Levels[level].NumberTextFormat = isEven ? "%" + (level + 1) + "." : "o";
+                // Set the desired indentation of the ListLevel can be done through its ParagraphProperties:
+                list.Levels[level].ParagraphProperties.LeftIndent.LocalValue = 48 + (level * 24);
+````
+````VB.NET
+                Dim isEven As Boolean = (level Mod 2) = 0
+
+                list.Levels(level).StartIndex = 1
+                ' We set Decimal numbering style to a list level if it is even level, otherwise Bullet.
+                list.Levels(level).NumberingStyle = If(isEven, NumberingStyle.[Decimal], NumberingStyle.Bullet)
+                ' Accordingly to the above rule, we set the corresponding NumberTextFormat.
+                list.Levels(level).NumberTextFormat = If(isEven, "%" + (level + 1) + ".", "o")
+                ' Set the desired indentation of the ListLevel can be done through its ParagraphProperties:
+                '
+````
+
+{{endregion}} 
+
 
 With this step the list is ready-to-use.
             
@@ -237,46 +257,51 @@ With this step the list is ready-to-use.
 ## Apply List
 
 The tutorial in the [previous section](#) demonstrates how you can create a __List__. 
-          Once the list has been created you can apply it to a set of [paragraphs]({%slug wordsprocessing-model-paragraph%}) by 
+          Once the list has been created you can apply it to a set of [paragraphs]({%slug winforms/wordsprocessing/model/paragraph%}) by 
           setting the __ListId__ property of the paragraphs to the __Id__ of the list.
         
 
 __Example 2__ demonstrates how you can apply the list created in Steps 1-4 above.
-        
+        #_[C#] Example 2: Apply List_
 
-#### __[C#] Example 2: Apply List__
-
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_5}}
-	            for (int level = 0; level < list.Levels.Count; level++)
-	            {
-	                Paragraph paragrah = section.Blocks.AddParagraph();
-	                paragrah.Inlines.AddRun(string.Format("ListLevel: {0}", level + 1));
-	                paragrah.ListId = list.Id;
-	                paragrah.ListLevel = level;
-	            }
-	{{endregion}}
+	
 
 
 
-#### __[VB NET] Example 2: Apply List__
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingLists.cs region=radwordsprocessing-concepts-lists_5}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_5}} 
 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_5}}
-	            For level As Integer = 0 To list.Levels.Count - 1
-	                Dim paragrah As Paragraph = section.Blocks.AddParagraph()
-	                paragrah.Inlines.AddRun(String.Format("ListLevel: {0}", level + 1))
-	                paragrah.ListId = list.Id
-	                paragrah.ListLevel = level
-	            Next
-	{{endregion}}
+````C#
+            for (int level = 0; level < list.Levels.Count; level++)
+            {
+                Paragraph paragrah = section.Blocks.AddParagraph();
+                paragrah.Inlines.AddRun(string.Format("ListLevel: {0}", level + 1));
+                paragrah.ListId = list.Id;
+                paragrah.ListLevel = level;
+            }
+````
+````VB.NET
+            For level As Integer = 0 To list.Levels.Count - 1
+                Dim paragrah As Paragraph = section.Blocks.AddParagraph()
+                paragrah.Inlines.AddRun(String.Format("ListLevel: {0}", level + 1))
+                paragrah.ListId = list.Id
+                paragrah.ListLevel = level
+            Next
+            '
+````
+
+{{endregion}} 
 
 
 
-Figure 1: Result of Example 2![wordsprocessing-concepts-lists 001](images/wordsprocessing-concepts-lists001.png)
+>caption Figure 1: Result of Example 2
+
+![wordsprocessing-concepts-lists 001](images/wordsprocessing-concepts-lists001.png)
 
 # See Also
 
- * [RadFlowDocument]({%slug wordsprocessing-model-radflowdocument%})
+ * [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%})
 
- * [Styles]({%slug wordsprocessing-concepts-styles%})
+ * [Styles]({%slug winforms/wordsprocessing/concepts/styles%})
 
- * [Style Properties]({%slug wordsprocessing-concepts-style-properties%})
+ * [Style Properties]({%slug winforms/wordsprocessing/concepts/style-properties%})

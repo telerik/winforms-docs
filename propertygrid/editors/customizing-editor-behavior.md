@@ -1,8 +1,8 @@
 ---
 title: Customizing editor behavior
-page_title: Customizing editor behavior
+page_title: Customizing editor behavior | UI for WinForms Documentation
 description: Customizing editor behavior
-slug: propertygrid-editors-customizing-editor-behavior
+slug: winforms/propertygrid/editors/customizing-editor-behavior
 tags: customizing,editor,behavior
 published: True
 position: 3
@@ -20,35 +20,39 @@ The appearance and behavior of property grid editors can be changed programmatic
         
 
 The following sample demonstrates how to change the default font of __PropertyGridTextBoxEditor__:
-        
+        #_[C#] Customize editor_
 
-#### __[C#] Customize editor__
-
-{{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridCustomizingEditorBehavior.cs region=CustomizeEditor}}
-	        void radPropertyGrid1_EditorInitialized(object sender, Telerik.WinControls.UI.PropertyGridItemEditorInitializedEventArgs e)
-	        {
-	            PropertyGridTextBoxEditor editor = e.Editor as PropertyGridTextBoxEditor;
 	
-	            if (editor != null)
-	            {
-	                ((RadTextBoxElement)editor.EditorElement).Font = new Font(FontFamily.Families[12], 10, FontStyle.Bold);
-	            }
-	
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET] Customize editor__
+{{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridCustomizingEditorBehavior.cs region=CustomizeEditor}} 
+{{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridCustomizingEditorBehavior.vb region=CustomizeEditor}} 
 
-{{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridCustomizingEditorBehavior.vb region=CustomizeEditor}}
-	    Private Sub radPropertyGrid1_EditorInitialized(ByVal sender As Object, ByVal e As PropertyGridItemEditorInitializedEventArgs)
-	        Dim editor As PropertyGridTextBoxEditor = TryCast(e.Editor, PropertyGridTextBoxEditor)
-	
-	        If Not editor Is Nothing Then
-	            CType(editor.EditorElement, RadTextBoxElement).Font = New Font(FontFamily.Families(12), 10, FontStyle.Bold)
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        void radPropertyGrid1_EditorInitialized(object sender, Telerik.WinControls.UI.PropertyGridItemEditorInitializedEventArgs e)
+        {
+            PropertyGridTextBoxEditor editor = e.Editor as PropertyGridTextBoxEditor;
+
+            if (editor != null)
+            {
+                ((RadTextBoxElement)editor.EditorElement).Font = new Font(FontFamily.Families[12], 10, FontStyle.Bold);
+            }
+
+        }
+````
+````VB.NET
+    Private Sub radPropertyGrid1_EditorInitialized(ByVal sender As Object, ByVal e As PropertyGridItemEditorInitializedEventArgs)
+        Dim editor As PropertyGridTextBoxEditor = TryCast(e.Editor, PropertyGridTextBoxEditor)
+
+        If Not editor Is Nothing Then
+            CType(editor.EditorElement, RadTextBoxElement).Font = New Font(FontFamily.Families(12), 10, FontStyle.Bold)
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 ![propertygrid-editors-customize-editor](images/propertygrid-editors-customize-editor.png)

@@ -1,8 +1,8 @@
 ---
 title: Using Checkboxes
-page_title: Using Checkboxes
+page_title: Using Checkboxes | UI for WinForms Documentation
 description: Using Checkboxes
-slug: treeview-working-with-nodes-using-checkboxes
+slug: winforms/treeview/working-with-nodes/using-checkboxes
 tags: using,checkboxes
 published: True
 position: 5
@@ -24,7 +24,9 @@ Tri-state checkboxes in addition to having checked and unchecked states also hav
         feature set the __TriStateMode__ property of RadTreeView to true. The screen shot below shows that "Node1" is in 
           __Indeterminate__ state to indicate that its children are not all checked.![treeview-working-with-nodes-using-checkboxes 001](images/treeview-working-with-nodes-using-checkboxes001.png)
 
->When __TriStateMode__ is set to true, the __CheckBoxes__ property is also set to true automatically.
+>note When __TriStateMode__ is set to true, the __CheckBoxes__ property is also set to true automatically.
+>
+
 
 To programmatically set the state when __TriStateMode__ is true assign the __CheckState__ 
         property one of the __ToggleState__ enumeration values.![treeview-working-with-nodes-using-checkboxes 002](images/treeview-working-with-nodes-using-checkboxes002.png)
@@ -36,38 +38,42 @@ __RadTreeView__ the supports option trees that allows radio buttons and
             The only limitation is that all sibling nodes must have either check boxes or radio buttons.
             Check boxes and radio buttons can be mixed in a single __RadTreeNodeCollection__.
         The __RadTreeNode__property that control the type of option element to 
-        be shown (check box or radio button) is __CheckType:__![treeview-working-with-nodes-using-checkboxes 003](images/treeview-working-with-nodes-using-checkboxes003.png)
+        be shown (check box or radio button) is __CheckType:__![treeview-working-with-nodes-using-checkboxes 003](images/treeview-working-with-nodes-using-checkboxes003.png)#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=optionList}}
-	            RadTreeNode Node1 = new RadTreeNode("Node1");
-	            Node1.Expanded = true;
-	            Node1.CheckType = CheckType.RadioButton;
-	            RadTreeNode Node2 = new RadTreeNode("Node2");
-	            RadTreeNode Node3 = new RadTreeNode("Node3");
-	            RadTreeNode Node4 = new RadTreeNode("Node4");
-	            radTreeView1.Nodes.Add(Node1);
-	            radTreeView1.Nodes.Add(Node2);
-	            Node1.Nodes.Add(Node3);
-	            Node1.Nodes.Add(Node4);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=optionList}} 
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=optionList}} 
 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=optionList}}
-	        Dim Node1 As New RadTreeNode("Node1")
-	        Node1.Expanded = True
-	        Node1.CheckType = ChildListType.OptionList
-	        Dim Node2 As New RadTreeNode("Node2")
-	        Dim Node3 As New RadTreeNode("Node3")
-	        Dim Node4 As New RadTreeNode("Node4")
-	        RadTreeView1.Nodes.Add(Node1)
-	        RadTreeView1.Nodes.Add(Node2)
-	        Node1.Nodes.Add(Node3)
-	        Node1.Nodes.Add(Node4)
-	{{endregion}}
+````C#
+            RadTreeNode Node1 = new RadTreeNode("Node1");
+            Node1.Expanded = true;
+            Node1.CheckType = CheckType.RadioButton;
+            RadTreeNode Node2 = new RadTreeNode("Node2");
+            RadTreeNode Node3 = new RadTreeNode("Node3");
+            RadTreeNode Node4 = new RadTreeNode("Node4");
+            radTreeView1.Nodes.Add(Node1);
+            radTreeView1.Nodes.Add(Node2);
+            Node1.Nodes.Add(Node3);
+            Node1.Nodes.Add(Node4);
+````
+````VB.NET
+        Dim Node1 As New RadTreeNode("Node1")
+        Node1.Expanded = True
+        Node1.CheckType = ChildListType.OptionList
+        Dim Node2 As New RadTreeNode("Node2")
+        Dim Node3 As New RadTreeNode("Node3")
+        Dim Node4 As New RadTreeNode("Node4")
+        RadTreeView1.Nodes.Add(Node1)
+        RadTreeView1.Nodes.Add(Node2)
+        Node1.Nodes.Add(Node3)
+        Node1.Nodes.Add(Node4)
+        '
+````
+
+{{endregion}} 
+
 
 

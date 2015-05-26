@@ -1,8 +1,8 @@
 ---
 title: Dialogs
-page_title: Dialogs
+page_title: Dialogs | UI for WinForms Documentation
 description: Dialogs
-slug: pivotgrid-dialogs
+slug: winforms/pivotgrid/dialogs
 tags: dialogs
 published: True
 position: 15

@@ -1,8 +1,8 @@
 ---
 title: Sorting
-page_title: Sorting
+page_title: Sorting | UI for WinForms Documentation
 description: Sorting
-slug: pivotgrid-sorting
+slug: winforms/pivotgrid/sorting
 tags: sorting
 published: True
 position: 8
@@ -12,7 +12,9 @@ position: 8
 
 
 
->With the current release of RadPivotGrid sorting is available only for LocalDataSourceProvider.
+>note With the current release of RadPivotGrid sorting is available only for LocalDataSourceProvider.
+>
+
 
 ## Understanding Sorting Mechanism
 
@@ -25,8 +27,9 @@ The RowGroupDescription in this RadPivotGrid is the Product field. By default th
 You can also apply sorting based on some of the PropertyAggregateDescription you are using. In the example above you can apply sorting of the Product names in ascending (from A to Z) or descending (from Z to A) format based on the Total Sum of Quantity (green rectangle). Here is the new view of RadPivotGrid when the Product RowGroupDescription is sorted in descending order based on the Total Sum of Quantity:
         ![pivotgrid-sorting 003](images/pivotgrid-sorting003.png)
 
->The sorting is set on the ColumnGroupDescriptions or RowGroupDescriptions. You cannot set sorting on the AggregateDescriptions, but you can sort the columns or rows based on the aggregated values.
-          
+>note The sorting is set on the ColumnGroupDescriptions or RowGroupDescriptions. You cannot set sorting on the AggregateDescriptions, but you can sort the columns or rows based on the aggregated values.
+>
+
 
 ## 
         Applying sort rules
@@ -36,57 +39,66 @@ The sorting can be applied in the code behind or at runtime with the help of Rad
         
 
 * Sorting based on the GroupName (header) can be Ascending (from A to Z) or Descending (from Z to A). The default value is Ascending, but you can change it by using SortOrder property:
-            
+            #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\PivotGrid\PivotGridSorting.cs region=SortByGroupName}}
-	            PropertyGroupDescription propGroupDescription = (PropertyGroupDescription)this.radPivotGrid1.RowGroupDescriptions[0];
-	            propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
-	            this.radPivotGrid1.ReloadData();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\PivotGrid\PivotGridSorting.cs region=SortByGroupName}} 
+{{source=..\SamplesVB\PivotGrid\PivotGridSorting.vb region=SortByGroupName}} 
 
-{{source=..\SamplesVB\PivotGrid\PivotGridSorting.vb region=SortByGroupName}}
-	        Dim propGroupDescription As PropertyGroupDescription = DirectCast(Me.radPivotGrid1.RowGroupDescriptions(0), PropertyGroupDescription)
-	        propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
-	        Me.radPivotGrid1.ReloadData()
-	{{endregion}}
+````C#
+            PropertyGroupDescription propGroupDescription = (PropertyGroupDescription)this.radPivotGrid1.RowGroupDescriptions[0];
+            propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
+            this.radPivotGrid1.ReloadData();
+````
+````VB.NET
+        Dim propGroupDescription As PropertyGroupDescription = DirectCast(Me.radPivotGrid1.RowGroupDescriptions(0), PropertyGroupDescription)
+        propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
+        Me.radPivotGrid1.ReloadData()
+        '
+````
+
+{{endregion}} 
+
 
 
 
 * Sorting based on the GrandTotals can be Ascending or Descending. To set such sort mechanism you have to use the SortOrder and GroupComparer properties:
-            
+            #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\PivotGrid\PivotGridSorting.cs region=SortGrandTotals}}
-	            PropertyGroupDescription propGroupDescription = (PropertyGroupDescription)this.radPivotGrid1.RowGroupDescriptions[0];
-	            propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
-	            propGroupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 0 };
-	            this.radPivotGrid1.ReloadData();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\PivotGrid\PivotGridSorting.cs region=SortGrandTotals}} 
+{{source=..\SamplesVB\PivotGrid\PivotGridSorting.vb region=SortGrandTotals}} 
 
-{{source=..\SamplesVB\PivotGrid\PivotGridSorting.vb region=SortGrandTotals}}
-	        Dim propGroupDescription As PropertyGroupDescription = DirectCast(Me.radPivotGrid1.RowGroupDescriptions(0), PropertyGroupDescription)
-	        propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
-	        propGroupDescription.GroupComparer = New GrandTotalComparer() With { _
-	         .AggregateIndex = 0 _
-	        }
-	        Me.radPivotGrid1.ReloadData()
-	{{endregion}}
+````C#
+            PropertyGroupDescription propGroupDescription = (PropertyGroupDescription)this.radPivotGrid1.RowGroupDescriptions[0];
+            propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
+            propGroupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 0 };
+            this.radPivotGrid1.ReloadData();
+````
+````VB.NET
+        Dim propGroupDescription As PropertyGroupDescription = DirectCast(Me.radPivotGrid1.RowGroupDescriptions(0), PropertyGroupDescription)
+        propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
+        propGroupDescription.GroupComparer = New GrandTotalComparer() With { _
+         .AggregateIndex = 0 _
+        }
+        Me.radPivotGrid1.ReloadData()
+        '
+````
+
+{{endregion}} 
 
 
 
->The AggregateIndex property is set based on the count of your aggregate descriptions. If you have two aggregates the first one will have AggregateIndex = 0 and the second - AggregateIndex = 1.
-          
+
+>note The AggregateIndex property is set based on the count of your aggregate descriptions. If you have two aggregates the first one will have AggregateIndex = 0 and the second - AggregateIndex = 1.
+>
+
 
 ## Changing the Sorting at runtime
 

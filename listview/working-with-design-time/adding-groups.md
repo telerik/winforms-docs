@@ -1,8 +1,8 @@
 ---
 title: Adding groups
-page_title: Adding groups
+page_title: Adding groups | UI for WinForms Documentation
 description: Adding groups
-slug: listview-working-with-design-time-adding-groups
+slug: winforms/listview/working-with-design-time/adding-groups
 tags: adding,groups
 published: True
 position: 1

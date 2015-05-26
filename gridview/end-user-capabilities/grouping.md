@@ -1,8 +1,8 @@
 ---
 title: Grouping
-page_title: Grouping
+page_title: Grouping | UI for WinForms Documentation
 description: Grouping
-slug: gridview-end-user-capabilities-grouping
+slug: winforms/gridview/end-user-capabilities/grouping
 tags: grouping
 published: True
 position: 4

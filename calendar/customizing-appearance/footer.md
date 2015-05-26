@@ -1,8 +1,8 @@
 ---
 title: Footer
-page_title: Footer
+page_title: Footer | UI for WinForms Documentation
 description: Footer
-slug: calendar-customizing-appearance-footer
+slug: winforms/calendar/customizing-appearance/footer
 tags: footer
 published: True
 position: 3
@@ -24,23 +24,27 @@ By default the footer contains a string showing the current date and time and tw
 
 * __ShowFooter__ - gets or sets whether RadCalendar will display its footer/status bar area 
 
-* __TodayButton__ - gets an instance of RadButtonElement representing the Today button in the footer. 
+* __TodayButton__ - gets an instance of RadButtonElement representing the Today button in the footer. #_[C#] Using the Today button_
 
-#### __[C#] Using the Today button__
-
-{{source=..\SamplesCS\Calendar\Calendar1.cs region=usingTodayButton}}
-	            radCalendar1.TodayButton.Text = "Go to Today";
-	            radCalendar1.TodayButton.Image = imageList1.Images[0];
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Using the Today button__
+{{source=..\SamplesCS\Calendar\Calendar1.cs region=usingTodayButton}} 
+{{source=..\SamplesVB\Calendar\Calendar1.vb region=usingTodayButton}} 
 
-{{source=..\SamplesVB\Calendar\Calendar1.vb region=usingTodayButton}}
-	        RadCalendar1.TodayButton.Text = "Go to Today"
-	        RadCalendar1.TodayButton.Image = ImageList1.Images(0)
-	{{endregion}}
+````C#
+            radCalendar1.TodayButton.Text = "Go to Today";
+            radCalendar1.TodayButton.Image = imageList1.Images[0];
+````
+````VB.NET
+        RadCalendar1.TodayButton.Text = "Go to Today"
+        RadCalendar1.TodayButton.Image = ImageList1.Images(0)
+        '
+````
+
+{{endregion}} 
+
 
 
 

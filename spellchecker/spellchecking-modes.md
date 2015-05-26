@@ -1,8 +1,8 @@
 ---
 title: SpellChecking Modes
-page_title: SpellChecking Modes
+page_title: SpellChecking Modes | UI for WinForms Documentation
 description: SpellChecking Modes
-slug: spellchecker-spellchecking-modes
+slug: winforms/spellchecker/spellchecking-modes
 tags: spellchecking,modes
 published: True
 position: 1
@@ -34,21 +34,25 @@ __Check Word By Word__
         property to *WordByWord*:
         
 
+#_[C#]_
 
-
-#### __[C#]__
-
-{{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=wordByWord}}
-	            this.radSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordByWord;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=wordByWord}} 
+{{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=wordByWord}} 
 
-{{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=wordByWord}}
-	        Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordByWord
-	{{endregion}}
+````C#
+            this.radSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordByWord;
+````
+````VB.NET
+        Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordByWord
+        '
+````
+
+{{endregion}} 
+
 
 
       	
@@ -61,14 +65,16 @@ __Check Word By Word__
         
 
 
->
+>note 
 
 This dialog will be called on every word considered wrong.
 
->
+
+>note 
 
 WordByWord is the default value of SpellCheckMode so unless you have a complex scenario
 	  where you need to go from WordByWord to AllAtOnce an back, you do not need to set the property.
+
 
 __Check All Words at Once__
         
@@ -76,21 +82,25 @@ __Check All Words at Once__
         property to *AllAtOnce*:
         
 
+#_[C#]_
 
-
-#### __[C#]__
-
-{{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=allAtOnce}}
-	            this.radSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.AllAtOnce;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=allAtOnce}} 
+{{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=allAtOnce}} 
 
-{{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=allAtOnce}}
-	        Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.AllAtOnce
-	{{endregion}}
+````C#
+            this.radSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.AllAtOnce;
+````
+````VB.NET
+        Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.AllAtOnce
+        '
+````
+
+{{endregion}} 
+
 
 
     	

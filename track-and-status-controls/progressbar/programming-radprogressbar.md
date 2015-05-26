@@ -1,8 +1,8 @@
 ---
 title: Programming RadProgressBar
-page_title: Programming RadProgressBar
+page_title: Programming RadProgressBar | UI for WinForms Documentation
 description: Programming RadProgressBar
-slug: track-and-status-controls-progressbar-programming-radprogressbar
+slug: winforms/track-and-status-controls/progressbar/programming-radprogressbar
 tags: programming,radprogressbar
 published: True
 position: 1

@@ -1,8 +1,8 @@
 ---
 title: Search Row
-page_title: Search Row
+page_title: Search Row | UI for WinForms Documentation
 description: Search Row
-slug: gridview-rows-search-row
+slug: winforms/gridview/rows/search-row
 tags: search,row
 published: True
 position: 16
@@ -15,21 +15,25 @@ position: 16
 __RadGridView__ offers a build-in search functionality available for both end users and developers. 
       The search mechanism executes in a separate thread which leaves the UI responsive at all times. 
       To enable the search row for end users all you have to do is set the __AllowSearchRow__ property of __RadGridView__ to *true*:
-      
+      #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=AllowSearchRow}}
-	            this.radGridView1.AllowSearchRow = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=AllowSearchRow}} 
+{{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=AllowSearchRow}} 
 
-{{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=AllowSearchRow}}
-	        Me.RadGridView1.AllowSearchRow = True
-	{{endregion}}
+````C#
+            this.radGridView1.AllowSearchRow = true;
+````
+````VB.NET
+        Me.RadGridView1.AllowSearchRow = True
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-rows-search-row 001](images/gridview-rows-search-row001.png)
 
@@ -55,40 +59,48 @@ The available properties to tweak the search experience and performance and how 
 * __AutomaticallySelectFirstResult__ – Determines if the first result found by the search mechanism will be selected and brought into view.
             
 
-To change the highlight color you should use the __HighlightColor__ property of the TableElement
+To change the highlight color you should use the __HighlightColor__ property of the TableElement#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=ChangeHighlightColor}}
-	            radGridView1.TableElement.SearchHighlightColor = Color.LightBlue;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=ChangeHighlightColor}} 
+{{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=ChangeHighlightColor}} 
 
-{{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=ChangeHighlightColor}}
-	        RadGridView1.TableElement.SearchHighlightColor = Color.LightBlue
-	{{endregion}}
+````C#
+            radGridView1.TableElement.SearchHighlightColor = Color.LightBlue;
+````
+````VB.NET
+        RadGridView1.TableElement.SearchHighlightColor = Color.LightBlue
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-rows-search-row 002](images/gridview-rows-search-row002.png)
 
 You can also use the search functionality programmatically without showing the search row, just by using its API.
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=GetSearchRow}}
-	            GridViewSearchRowInfo searchRow = this.radGridView1.MasterView.TableSearchRow;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=GetSearchRow}} 
+{{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=GetSearchRow}} 
 
-{{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=GetSearchRow}}
-	        Dim searchRow As GridViewSearchRowInfo = Me.RadGridView1.MasterView.TableSearchRow
-	{{endregion}}
+````C#
+            GridViewSearchRowInfo searchRow = this.radGridView1.MasterView.TableSearchRow;
+````
+````VB.NET
+        Dim searchRow As GridViewSearchRowInfo = Me.RadGridView1.MasterView.TableSearchRow
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -115,39 +127,15 @@ To search you call the __Search__ method and pass the search criteria as a param
 
 In (Table 1.) you can see an overview of the values of the properties in the above cases.
         
-<table>Table 1.<tr><td>
 
-</td><td>
 
-<b>Cell</b></td><td>
+>caption Table 1.
 
-<b>Cells</b></td><td>
 
-<b>Search finished</b></td></tr><tr><td>
-
-<b>Until threshold is reached</b></td><td>
-
-GridSearchResultCellInfo</td><td>
-
-null</td><td>
-
-false</td></tr><tr><td>
-
-<b>After threshold is reached</b></td><td>
-
-null</td><td>
-
-GridSearchResultCellCollection</td><td>
-
-false</td></tr><tr><td>
-
-<b>Search end</b></td><td>
-
-null</td><td>
-
-null</td><td>
-
-true</td></tr></table>
+|| __Cell__ | __Cells__ | __Search finished__ |
+| __Until threshold is reached__ |GridSearchResultCellInfo|null|false|
+| __After threshold is reached__ |null|GridSearchResultCellCollection|false|
+| __Search end__ |null|null|true|
 
 The search mechanism of __RadGridView__ searches in group rows as well as data rows. 
         Since there are no cells respectively columns in group rows the __ColumnInfo__ property of the __GridSearchResultCellInfo__ 

@@ -1,8 +1,8 @@
 ---
 title: Binding to Database Data
-page_title: Binding to Database Data
+page_title: Binding to Database Data | UI for WinForms Documentation
 description: Binding to Database Data
-slug: treeview-data-binding-binding-to-database-data
+slug: winforms/treeview/data-binding/binding-to-database-data
 tags: binding,to,database,data
 published: True
 position: 1
@@ -77,28 +77,32 @@ The purpose of this example is to demonstrate how to bind to database data.
               necessary data-binding components in the component tray - a DataSet, BindingSources and TableAdapters.
               The DataSet is the container for the data, the TableAdapters are used to fill the DataSet.
 
-1. In the form __Load__ event add the code shown below.
+1. In the form __Load__ event add the code shown below.#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\TreeView\DataBinding\BindingToDatabaseData.cs region=database}}
-	            this.radTreeView1.DataSource = this.artistsBindingSource;
-	            this.radTreeView1.DisplayMember = "ArtistName";
-	            this.radTreeView1.ValueMember = "ArtistID";
-	            this.radTreeView1.RelationBindings.Add(new RelationBinding(this.albumsBindingSource, "AlbumName", "ArtistID", "ArtistID", "AlbumID"));
-	            this.radTreeView1.RelationBindings.Add(new RelationBinding(this.songsBindingSource, "SongName", "AlbumID", "AlbumID", "SongID"));
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\TreeView\DataBinding\BindingToDatabaseData.cs region=database}} 
+{{source=..\SamplesVB\TreeView\DataBinding\BindingToDatabaseData.vb region=database}} 
 
-{{source=..\SamplesVB\TreeView\DataBinding\BindingToDatabaseData.vb region=database}}
-	        Me.RadTreeView1.DataSource = Me.ArtistsBindingSource
-	        Me.RadTreeView1.DisplayMember = "ArtistName"
-	        Me.RadTreeView1.ValueMember = "ArtistID"
-	        Me.RadTreeView1.RelationBindings.Add(New RelationBinding(Me.AlbumsBindingSource, "AlbumName", "ArtistID", "ArtistID", "AlbumID"))
-	        Me.RadTreeView1.RelationBindings.Add(New RelationBinding(Me.SongsBindingSource, "SongName", "AlbumID", "AlbumID", "SongID"))
-	{{endregion}}
+````C#
+            this.radTreeView1.DataSource = this.artistsBindingSource;
+            this.radTreeView1.DisplayMember = "ArtistName";
+            this.radTreeView1.ValueMember = "ArtistID";
+            this.radTreeView1.RelationBindings.Add(new RelationBinding(this.albumsBindingSource, "AlbumName", "ArtistID", "ArtistID", "AlbumID"));
+            this.radTreeView1.RelationBindings.Add(new RelationBinding(this.songsBindingSource, "SongName", "AlbumID", "AlbumID", "SongID"));
+````
+````VB.NET
+        Me.RadTreeView1.DataSource = Me.ArtistsBindingSource
+        Me.RadTreeView1.DisplayMember = "ArtistName"
+        Me.RadTreeView1.ValueMember = "ArtistID"
+        Me.RadTreeView1.RelationBindings.Add(New RelationBinding(Me.AlbumsBindingSource, "AlbumName", "ArtistID", "ArtistID", "AlbumID"))
+        Me.RadTreeView1.RelationBindings.Add(New RelationBinding(Me.SongsBindingSource, "SongName", "AlbumID", "AlbumID", "SongID"))
+        '
+````
+
+{{endregion}} 
+
 
 

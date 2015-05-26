@@ -7,11 +7,17 @@ class SlugTag < Liquid::Block
         site = context.registers[:site]
         page = site.pages.find {|p| p.data['slug'] == @text }
         if page
-            page.url.sub('.html', '')
+			## Use page.url instead of page.url.sub('.html', '') when using Jekyll server.
+			page.url.sub('.html', '')
         else
             page_url = context.environments.first["page"]["url"]
             Jekyll.logger.warn "Slug:", "No page with slug `#{@text}` in #{page_url}. Consider fixing the slug or use normal link." 
-        end
+			
+			## Log in SlugLog.log file
+			open("SlugLog.log", "a"){|f|
+				f.puts "Slug: No page with slug `#{@text}`\n in #{page_url}. Consider fixing the slug or use normal link.\n\n" 
+			}
+	   end
     end
 end
 

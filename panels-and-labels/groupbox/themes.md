@@ -1,8 +1,8 @@
 ---
 title: Themes
-page_title: Themes
+page_title: Themes | UI for WinForms Documentation
 description: Themes
-slug: panels-and-labels-groupbox-themes
+slug: winforms/panels-and-labels/groupbox/themes
 tags: themes
 published: True
 position: 1

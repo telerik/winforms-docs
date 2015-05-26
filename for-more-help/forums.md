@@ -1,8 +1,8 @@
 ---
 title: Forums
-page_title: Forums
+page_title: Forums | UI for WinForms Documentation
 description: Forums
-slug: for-more-help-forums
+slug: winforms/for-more-help/forums
 tags: forums
 published: True
 position: 1

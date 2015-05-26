@@ -1,8 +1,8 @@
 ---
 title: Programming RadScrollBars
-page_title: Programming RadScrollBars
+page_title: Programming RadScrollBars | UI for WinForms Documentation
 description: Programming RadScrollBars
-slug: track-and-status-controls-scrollbar-programming-radscrollbars
+slug: winforms/track-and-status-controls/scrollbar/programming-radscrollbars
 tags: programming,radscrollbars
 published: True
 position: 1
@@ -17,22 +17,23 @@ __RadHScrollBar__ and __RadVScrollBar__ share the same properties. The only diff
 The most important properties are:
 
 
-<table><tr><td><b>Value</b></td><td>
 
-Gets the current value for the thumb position</td></tr><tr><td><b>Minimum</b></td><td>
 
-Gets or sets the minimum value of the control when the thumb is at the start</td></tr><tr><td><b>Maximum</b></td><td>
 
-Gets or sets the maximum value of the control when the thumb is at the end</td></tr><tr><td><b>SmallChange</b></td><td>
+| __Value__ |Gets the current value for the thumb position|
+| __Minimum__ |Gets or sets the minimum value of the control when the thumb is at the start|
+| __Maximum__ |Gets or sets the maximum value of the control when the thumb is at the end|
+| __SmallChange__ |Gets or sets the amount that the __Value__ property changes when you click on the arrow buttons|
+| __LargeChange__ |Gets or sets the amount that the __Value__ property changes when you click between the thumb and an arrow|
+| __MinThumbLength__ |Gets or sets the minimum length of the thumb|
+| __ThumbLengthProportion__ |Gets or sets the amount of the scroll bar that the thumb takes up (between 0 and 1). If set to less than 0, the length is determined automatically|
 
-Gets or sets the amount that the <b>Value</b> property changes when you click on the arrow buttons </td></tr><tr><td><b>LargeChange</b></td><td>
+>caution Don't forget to set the __Maximum__ property to reflect the maximum possible offset upon scrolling. The size of the __scrollable height__ equals the __total height__ of the scrollable content minus the __visible height__ .
+>
 
-Gets or sets the amount that the <b>Value</b> property changes when you click between the thumb and an arrow</td></tr><tr><td><b>MinThumbLength</b></td><td>
-
-Gets or sets the minimum length of the thumb </td></tr><tr><td><b>ThumbLengthProportion</b></td><td>Gets or sets the amount of the scroll bar that the thumb takes up (between 0 and 1). If set to less than 0, the length is determined automatically</td></tr></table>
 
 ## Scroll Event
 
-You have to handle the __Scroll__event to track scrollbar changes. Use the __Value__property to determine the current thumb position. In general, you have to assign the negated __Value__to the Top property of the control that is to be scrolled. Please refer to [Getting Started]({%slug track-and-status-controls-scrollbar-getting-started%}) section about using this event.
+You have to handle the __Scroll__event to track scrollbar changes. Use the __Value__property to determine the current thumb position. In general, you have to assign the negated __Value__to the Top property of the control that is to be scrolled. Please refer to [Getting Started]({%slug winforms/track-and-status-controls/scrollbar/getting-started%}) section about using this event.
 
 

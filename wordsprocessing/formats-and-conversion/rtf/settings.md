@@ -1,8 +1,8 @@
 ---
 title: Settings
-page_title: Settings
+page_title: Settings | UI for WinForms Documentation
 description: Settings
-slug: wordsprocessing-formats-and-conversion-rtf-settings
+slug: winforms/wordsprocessing/formats-and-conversion/rtf/settings
 tags: settings
 published: True
 position: 2
@@ -27,26 +27,30 @@ The default value for this setting is __false__.
               
 
 The following code snippet shows how you can create and specify particular export settings to RtfFormatProvider.
-        
+        #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingSettings.cs region=radwordsprocessing-formats-and-conversion-rtf-settings_0}}
-	            RtfFormatProvider provider = new RtfFormatProvider();
-	            RtfExportSettings exportSettings = new RtfExportSettings();
-	            exportSettings.ExportImagesInCompatibilityMode = true;
-	            provider.ExportSettings = exportSettings;
-	{{endregion}}
+	
 
 
 
-#### __VB__
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingSettings.cs region=radwordsprocessing-formats-and-conversion-rtf-settings_0}} 
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-rtf-settings_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-rtf-settings_0}}
-	            Dim provider As New RtfFormatProvider()
-	            Dim exportSettings As New RtfExportSettings()
-	            exportSettings.ExportImagesInCompatibilityMode = True
-	            provider.ExportSettings = exportSettings
-	{{endregion}}
+````C#
+            RtfFormatProvider provider = new RtfFormatProvider();
+            RtfExportSettings exportSettings = new RtfExportSettings();
+            exportSettings.ExportImagesInCompatibilityMode = true;
+            provider.ExportSettings = exportSettings;
+````
+````VB.NET
+            Dim provider As New RtfFormatProvider()
+            Dim exportSettings As New RtfExportSettings()
+            exportSettings.ExportImagesInCompatibilityMode = True
+            provider.ExportSettings = exportSettings
+            '
+````
+
+{{endregion}} 
+
 
 

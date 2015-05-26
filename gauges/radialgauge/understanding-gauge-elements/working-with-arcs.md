@@ -1,8 +1,8 @@
 ---
 title: Working with arcs
-page_title: Working with arcs
+page_title: Working with arcs | UI for WinForms Documentation
 description: Working with arcs
-slug: radialgauge-understanding-gauge-elements-working-with-arcs
+slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-arcs
 tags: working,with,arcs
 published: True
 position: 0

@@ -1,8 +1,8 @@
 ---
 title: Thumbnails
-page_title: Thumbnails
+page_title: Thumbnails | UI for WinForms Documentation
 description: Thumbnails
-slug: pdfviewer-thumbnails
+slug: winforms/pdfviewer/thumbnails
 tags: thumbnails
 published: True
 position: 6
@@ -16,60 +16,72 @@ RadPdfViewer providers options to display the pdf pages as thumbnails for easier
 
 ## Thumbnails API
 
-You can show or hide the thumbnails programmatically with following methods ShowThumbnails, HideThumbnails:
+You can show or hide the thumbnails programmatically with following methods ShowThumbnails, HideThumbnails:#_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ShowHideThumbnails}}
-	            this.radPdfViewer1.ShowThubnails();
 	
-	            this.radPdfViewer1.HideThumbnails();
-	{{endregion}}
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ShowHideThumbnails}} 
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ShowHideThumbnails}} 
 
-{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ShowHideThumbnails}}
-	        Me.radPdfViewer1.ShowThubnails()
+````C#
+            this.radPdfViewer1.ShowThubnails();
+
+            this.radPdfViewer1.HideThumbnails();
+````
+````VB.NET
+        Me.radPdfViewer1.ShowThubnails()
+
+        Me.radPdfViewer1.HideThumbnails()
+        '
+````
+
+{{endregion}} 
+
+
+
+
+You can customize the size of the thumbnails with __ThumbnailsScaleFactor__ property. This property sets the size of the thumbnails between 0 and 1 where 1 is the page in full size. By default this property is set to 0.15 which means 15% of the normal page size.#_[C#] _
+
 	
-	        Me.radPdfViewer1.HideThumbnails()
-	{{endregion}}
 
 
 
-You can customize the size of the thumbnails with __ThumbnailsScaleFactor__ property. This property sets the size of the thumbnails between 0 and 1 where 1 is the page in full size. By default this property is set to 0.15 which means 15% of the normal page size.
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ThumbnailsScaleFactor}} 
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ThumbnailsScaleFactor}} 
 
-#### __[C#] __
+````C#
+            this.radPdfViewer1.ThumbnailsScaleFactor = 0.11f;
+````
+````VB.NET
+        Me.radPdfViewer1.ThumbnailsScaleFactor = 0.11F
+        '
+````
 
-{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ThumbnailsScaleFactor}}
-	            this.radPdfViewer1.ThumbnailsScaleFactor = 0.11f;
-	{{endregion}}
-
-
-
-#### __[VB.NET] __
-
-{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ThumbnailsScaleFactor}}
-	        Me.radPdfViewer1.ThumbnailsScaleFactor = 0.11F
-	{{endregion}}
+{{endregion}} 
 
 
 
-You can customize the width of the thumbnails list with the __ThumbnailListWidth__ property. Default value of this property is 200.
 
-#### __[C#] __
+You can customize the width of the thumbnails list with the __ThumbnailListWidth__ property. Default value of this property is 200.#_[C#] _
 
-{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ThumbnailsScaleFactor}}
-	            this.radPdfViewer1.ThumbnailsScaleFactor = 0.11f;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ThumbnailsScaleFactor}} 
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ThumbnailsScaleFactor}} 
 
-{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ThumbnailsScaleFactor}}
-	        Me.radPdfViewer1.ThumbnailsScaleFactor = 0.11F
-	{{endregion}}
+````C#
+            this.radPdfViewer1.ThumbnailsScaleFactor = 0.11f;
+````
+````VB.NET
+        Me.radPdfViewer1.ThumbnailsScaleFactor = 0.11F
+        '
+````
+
+{{endregion}} 
+
 
 

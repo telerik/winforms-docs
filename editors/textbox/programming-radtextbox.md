@@ -1,8 +1,8 @@
 ---
 title: Programming RadTextBox
-page_title: Programming RadTextBox
+page_title: Programming RadTextBox | UI for WinForms Documentation
 description: Programming RadTextBox
-slug: editors-textbox-programming-radtextbox
+slug: winforms/editors/textbox/programming-radtextbox
 tags: programming,radtextbox
 published: True
 position: 0

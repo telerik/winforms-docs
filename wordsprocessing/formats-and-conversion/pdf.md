@@ -1,8 +1,8 @@
 ---
 title: Pdf
-page_title: Pdf
+page_title: Pdf | UI for WinForms Documentation
 description: Pdf
-slug: wordsprocessing-formats-and-conversion-pdf
+slug: winforms/wordsprocessing/formats-and-conversion/pdf
 tags: pdf
 published: True
 position: 3

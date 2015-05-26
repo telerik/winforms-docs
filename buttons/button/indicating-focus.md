@@ -1,8 +1,8 @@
 ---
 title: Indicating Focus
-page_title: Indicating Focus
+page_title: Indicating Focus | UI for WinForms Documentation
 description: Indicating Focus
-slug: buttons-button-indicating-focus
+slug: winforms/buttons/button/indicating-focus
 tags: indicating,focus
 published: True
 position: 1

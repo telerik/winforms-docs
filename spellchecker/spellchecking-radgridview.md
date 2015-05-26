@@ -1,8 +1,8 @@
 ---
 title: SpellChecking RadGridView
-page_title: SpellChecking RadGridView
+page_title: SpellChecking RadGridView | UI for WinForms Documentation
 description: SpellChecking RadGridView
-slug: spellchecker-spellchecking-radgridview
+slug: winforms/spellchecker/spellchecking-radgridview
 tags: spellchecking,radgridview
 published: True
 position: 2
@@ -31,41 +31,45 @@ Supposing that we have a RadGridView filled with data and a RadSpellChecker on t
 1. Let's subscribe to CellValidating event. This event is fired when the edited cell
             should be validated before the editor for that particular cell is closed. In this event
             we should call the Check method of the RadSpellChecker passing the currently opened editor:
-          
+          #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\SpellChecker\SpChWithRadGridView.cs region=validating}}
-	        string correctedValue = String.Empty;
 	
-	        void radGridView1_CellValidating(object sender, Telerik.WinControls.UI.CellValidatingEventArgs e)
-	        {
-	            RadTextBoxEditor editor = e.ActiveEditor as RadTextBoxEditor;
-	            if (editor != null)
-	            {
-	                RadTextBoxEditorElement element = editor.EditorElement as RadTextBoxEditorElement;
-	                this.radSpellChecker1.Check(element.TextBoxItem.HostedControl);
-	                correctedValue = e.ActiveEditor.Value.ToString();
-	            }
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\SpellChecker\SpChWithRadGridView.cs region=validating}} 
+{{source=..\SamplesVB\SpellChecker\SpChWithRadGridView.vb region=validating}} 
 
-{{source=..\SamplesVB\SpellChecker\SpChWithRadGridView.vb region=validating}}
-	    Dim correctedValue As String = String.Empty
-	
-	    Private Sub RadGridView1_CellValidating(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellValidatingEventArgs) Handles RadGridView1.CellValidating
-	        Dim editor As RadTextBoxEditor = TryCast(e.ActiveEditor, RadTextBoxEditor)
-	        If editor IsNot Nothing Then
-	            Dim element As RadTextBoxEditorElement = TryCast(editor.EditorElement, RadTextBoxEditorElement)
-	            Me.RadSpellChecker1.Check(element.TextBoxItem.HostedControl)
-	            correctedValue = e.ActiveEditor.Value.ToString()
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        string correctedValue = String.Empty;
+
+        void radGridView1_CellValidating(object sender, Telerik.WinControls.UI.CellValidatingEventArgs e)
+        {
+            RadTextBoxEditor editor = e.ActiveEditor as RadTextBoxEditor;
+            if (editor != null)
+            {
+                RadTextBoxEditorElement element = editor.EditorElement as RadTextBoxEditorElement;
+                this.radSpellChecker1.Check(element.TextBoxItem.HostedControl);
+                correctedValue = e.ActiveEditor.Value.ToString();
+            }
+        }
+````
+````VB.NET
+    Dim correctedValue As String = String.Empty
+
+    Private Sub RadGridView1_CellValidating(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellValidatingEventArgs) Handles RadGridView1.CellValidating
+        Dim editor As RadTextBoxEditor = TryCast(e.ActiveEditor, RadTextBoxEditor)
+        If editor IsNot Nothing Then
+            Dim element As RadTextBoxEditorElement = TryCast(editor.EditorElement, RadTextBoxEditorElement)
+            Me.RadSpellChecker1.Check(element.TextBoxItem.HostedControl)
+            correctedValue = e.ActiveEditor.Value.ToString()
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 Please note that the editor sets the corrected value to the opened editor,
             but not directly to the underlying data cell.
@@ -74,26 +78,30 @@ Please note that the editor sets the corrected value to the opened editor,
 
 1. Now we should subscribe to the CellEndEdit event which is fired after the
             editor is closed. In this event we should pass the saved corrected value to the data cell:
-          
+          #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\SpellChecker\SpChWithRadGridView.cs region=cellEndEdit}}
-	        void radGridView1_CellEndEdit(object sender, GridViewCellEventArgs e)
-	        {
-	            this.radGridView1.CurrentCell.Value = correctedValue;
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\SpellChecker\SpChWithRadGridView.cs region=cellEndEdit}} 
+{{source=..\SamplesVB\SpellChecker\SpChWithRadGridView.vb region=cellEndEdit}} 
 
-{{source=..\SamplesVB\SpellChecker\SpChWithRadGridView.vb region=cellEndEdit}}
-	    Private Sub RadGridView1_CellEndEdit(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs) Handles RadGridView1.CellEndEdit
-	        Me.RadGridView1.CurrentCell.Value = correctedValue
-	    End Sub
-	{{endregion}}
+````C#
+        void radGridView1_CellEndEdit(object sender, GridViewCellEventArgs e)
+        {
+            this.radGridView1.CurrentCell.Value = correctedValue;
+        }
+````
+````VB.NET
+    Private Sub RadGridView1_CellEndEdit(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs) Handles RadGridView1.CellEndEdit
+        Me.RadGridView1.CurrentCell.Value = correctedValue
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 

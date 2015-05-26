@@ -1,8 +1,8 @@
 ---
 title: Settings
-page_title: Settings
+page_title: Settings | UI for WinForms Documentation
 description: Settings
-slug: pdfprocessing-formats-and-conversion-pdf-settings
+slug: winforms/pdfprocessing/formats-and-conversion/pdf/settings
 tags: settings
 published: True
 position: 2
@@ -26,48 +26,41 @@ The event is fired when a user password is needed to open the document. The pass
         
 
 __Example 1__ shows how you can create a __PdfImportSettings__ object and assign it to a PdfFormatProvider.
-        
+        #_[C#] Example 1: Import Settings_
 
-#### __[C#] Example 1: Import Settings__
+	
 
-{{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_0}}
-	            PdfFormatProvider provider = new PdfFormatProvider();
-	            PdfImportSettings settings = new PdfImportSettings();
-	            settings.UserPasswordNeeded += new EventHandler<PasswordNeededEventArgs>(settings_UserPasswordNeeded);
-	            provider.ImportSettings = settings;
-	{{endregion}}
+#_[C#] Example 1: Import Settings Event Handler_
 
+	
 
+#_[VB.NET] Example 1: Import Settings_
 
-#### __[C#] Example 1: Import Settings Event Handler__
-
-{{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_0Handler}}
-	        private void settings_UserPasswordNeeded(object sender, PasswordNeededEventArgs e)
-	        {
-	            e.Password = "D0cum3ntP4ssw0rd";
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 1: Import Settings__
+{{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_0}} 
+{{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_0Handler}} 
+{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_0}} 
 
-{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_0}}
-	        Dim provider As PdfFormatProvider = New PdfFormatProvider()
-	        Dim settings As PdfImportSettings = New PdfImportSettings()
-	        AddHandler settings.UserPasswordNeeded, AddressOf UserPasswordNeeded_EventHandler
-	        provider.ImportSettings = settings
-	{{endregion}}
+{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_0Handler}} 
 
+````C#
+        private void settings_UserPasswordNeeded(object sender, PasswordNeededEventArgs e)
+        {
+            e.Password = "D0cum3ntP4ssw0rd";
+        }
+````
+````VB.NET
+    Private Sub UserPasswordNeeded_EventHandler(sender As Object, e As PasswordNeededEventArgs)
+        e.Password = "D0cum3ntP4ssw0rd"
+    End Sub
+    '
+````
 
+{{endregion}} 
 
-#### __[VB.NET] Example 1: Import Settings Event Handler__
-
-{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_0Handler}}
-	    Private Sub UserPasswordNeeded_EventHandler(sender As Object, e As PasswordNeededEventArgs)
-	        e.Password = "D0cum3ntP4ssw0rd"
-	    End Sub
-	{{endregion}}
 
 
 
@@ -80,6 +73,10 @@ __IsEncrypted__
 
 This property specifies if the document should be encrypted. The default value is False.
         
+
+>note This setting is ignored when __ComplianceLevel__ differs from None as PDF/A compliant documents do not allow encryption.
+>
+
 
 __UserPassword__
 
@@ -117,38 +114,42 @@ Specifies the PDF/A compliance level. It can have one of the following values:
 The default value is *None*. For more information on PDF/A compliance check the PDF/A Compliance article.
 
 __Example 2__ shows ow you can create a __PdfExportSettings__ object and assign it to a PdfFormatProvider.
-        
+        #_[C#] Example 2: Export Settings_
 
-#### __[C#] Example 2: Export Settings__
-
-{{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_1}}
-	            PdfFormatProvider provider = new PdfFormatProvider();
-	            PdfExportSettings settings = new PdfExportSettings();
-	            settings.IsEncrypted = true;
-	            settings.UserPassword = "D0cum3ntP4ssw0rd";
-	            settings.ImageQuality = ImageQuality.High;
-	            settings.ComplianceLevel = PdfComplianceLevel.PdfA2B;
 	
-	            provider.ExportSettings = settings;
-	{{endregion}}
 
 
 
-#### __[VB.NET] Example 2: Export Settings__
+{{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_1}} 
+{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_1}} 
 
-{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_1}}
-	        Dim provider As PdfFormatProvider = New PdfFormatProvider()
-	        Dim settings As PdfExportSettings = New PdfExportSettings()
-	        settings.IsEncrypted = True
-	        settings.UserPassword = "D0cum3ntP4ssw0rd"
-	        settings.ImageQuality = ImageQuality.High
-	        settings.ComplianceLevel = PdfComplianceLevel.PdfA2B
-	
-	        provider.ExportSettings = settings
-	{{endregion}}
+````C#
+            PdfFormatProvider provider = new PdfFormatProvider();
+            PdfExportSettings settings = new PdfExportSettings();
+            settings.IsEncrypted = true;
+            settings.UserPassword = "D0cum3ntP4ssw0rd";
+            settings.ImageQuality = ImageQuality.High;
+            settings.ComplianceLevel = PdfComplianceLevel.PdfA2B;
+
+            provider.ExportSettings = settings;
+````
+````VB.NET
+        Dim provider As PdfFormatProvider = New PdfFormatProvider()
+        Dim settings As PdfExportSettings = New PdfExportSettings()
+        settings.IsEncrypted = True
+        settings.UserPassword = "D0cum3ntP4ssw0rd"
+        settings.ImageQuality = ImageQuality.High
+        settings.ComplianceLevel = PdfComplianceLevel.PdfA2B
+
+        provider.ExportSettings = settings
+        '
+````
+
+{{endregion}} 
+
 
 
 
 # See Also
 
- * [How to Comply with PDF/A Standard]({%slug pdfprocessing-how-to-comply-with-pdfa-standard%})
+ * [How to Comply with PDF/A Standard]({%slug winforms/pdfprocessing/how-to/how-to-comply-with-pdf/a-standard%})

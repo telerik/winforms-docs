@@ -1,14 +1,14 @@
 ---
-title: Overview
-page_title: Overview
+title: Forms and Dialogs Overview
+page_title: Overview | UI for WinForms Documentation
 description: Overview
-slug: forms-and-dialogs-overview
+slug: winforms/forms-and-dialogs/overview
 tags: overview
 published: True
 position: 0
 ---
 
-# Overview
+# Forms and Dialogs Overview
 
 
 

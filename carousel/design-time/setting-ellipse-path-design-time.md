@@ -1,8 +1,8 @@
 ---
 title: Setting Ellipse Path Design-time
-page_title: Setting Ellipse Path Design-time
+page_title: Setting Ellipse Path Design-time | UI for WinForms Documentation
 description: Setting Ellipse Path Design-time
-slug: carousel-design-time-setting-ellipse-path-design-time
+slug: winforms/carousel/design-time/setting-ellipse-path-design-time
 tags: setting,ellipse,path,design-time
 published: True
 position: 1
@@ -21,16 +21,20 @@ You can set the bezier path for the carousel using the Visual Studio designer.
 2. In Properties, set __CarouselPath__ to __newCarouselEllipsePath__
 
 
+>caption 
 
 ![carousel-design-time-setting-ellipse-path-design-time 001](images/carousel-design-time-setting-ellipse-path-design-time001.png)
 
 3. Drag the two control points (__U__ and __V__) and the center point to set the ellipse as desired:
 
 
+>caption 
 
 ![carousel-design-time-setting-ellipse-path-design-time 002](images/carousel-design-time-setting-ellipse-path-design-time002.png)
 
->__Note__: You can arrange the points only in 2D. The Z coordinate (if needed) should be set programmatically.
+>note  __Note__ : You can arrange the points only in 2D. The Z coordinate (if needed) should be set programmatically.
+>
+
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: Formatting Nodes
-page_title: Formatting Nodes
+page_title: Formatting Nodes | UI for WinForms Documentation
 description: Formatting Nodes
-slug: treeview-working-with-nodes-formatting-nodes
+slug: winforms/treeview/working-with-nodes/formatting-nodes
 tags: formatting,nodes
 published: True
 position: 2
@@ -37,66 +37,72 @@ The purpose of the example that follows is to demonstrate how you can show diffe
 
 1. Handle the NodeFormatting event implementing, setting the image to the Image property of the ImageElement.
               This element is responsible for containing the image of the visual NodeElement:
-            
+            #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\NodeFormatting.cs region=nodeFormatting}}
-	        Bitmap folderOpen = SamplesCS.Properties.Resources.folder_open;
-	        Bitmap folderClose = SamplesCS.Properties.Resources.folder_close;
-	        Bitmap file = SamplesCS.Properties.Resources.file;
 	
-	        void radTreeView1_NodeFormatting(object sender, TreeNodeFormattingEventArgs e)
-	        {
-	            if (e.Node.Nodes.Count > 0)
-	            {
-	                if (e.Node.Expanded)
-	                {
-	                    e.NodeElement.ImageElement.Image = folderOpen;
-	                }
-	                else
-	                {
-	                    e.NodeElement.ImageElement.Image = folderClose;
-	                }
-	            }
-	            else
-	            {
-	                e.NodeElement.ImageElement.Image = file;
-	            }
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\NodeFormatting.cs region=nodeFormatting}} 
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\NodeFormatting.vb region=nodeFormatting}} 
 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\NodeFormatting.vb region=nodeFormatting}}
-	    Private folderOpen As Bitmap = My.Resources.folder_open
-	    Private folderClose As Bitmap = My.Resources.folder_close
-	    Private file As Bitmap = My.Resources.file
-	
-	    Private Sub radTreeView1_NodeFormatting(ByVal sender As Object, ByVal e As TreeNodeFormattingEventArgs)
-	        If e.Node.Nodes.Count > 0 Then
-	            If e.Node.Expanded Then
-	                e.NodeElement.ImageElement.Image = folderOpen
-	            Else
-	                e.NodeElement.ImageElement.Image = folderClose
-	            End If
-	        Else
-	            e.NodeElement.ImageElement.Image = file
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        Bitmap folderOpen = SamplesCS.Properties.Resources.folder_open;
+        Bitmap folderClose = SamplesCS.Properties.Resources.folder_close;
+        Bitmap file = SamplesCS.Properties.Resources.file;
+
+        void radTreeView1_NodeFormatting(object sender, TreeNodeFormattingEventArgs e)
+        {
+            if (e.Node.Nodes.Count > 0)
+            {
+                if (e.Node.Expanded)
+                {
+                    e.NodeElement.ImageElement.Image = folderOpen;
+                }
+                else
+                {
+                    e.NodeElement.ImageElement.Image = folderClose;
+                }
+            }
+            else
+            {
+                e.NodeElement.ImageElement.Image = file;
+            }
+        }
+````
+````VB.NET
+    Private folderOpen As Bitmap = My.Resources.folder_open
+    Private folderClose As Bitmap = My.Resources.folder_close
+    Private file As Bitmap = My.Resources.file
+
+    Private Sub radTreeView1_NodeFormatting(ByVal sender As Object, ByVal e As TreeNodeFormattingEventArgs)
+        If e.Node.Nodes.Count > 0 Then
+            If e.Node.Expanded Then
+                e.NodeElement.ImageElement.Image = folderOpen
+            Else
+                e.NodeElement.ImageElement.Image = folderClose
+            End If
+        Else
+            e.NodeElement.ImageElement.Image = file
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
 
 
 
->Please note that you should always provide an 'else' clause for each 'if' clause that you have
+
+>note Please note that you should always provide an 'else' clause for each 'if' clause that you have
                 in the implementation of the NodeFormatting event. Skipping this operation will lead to incorrect images
                 applied to the inappropriate nodes.
-              
+>
 
->It is also important that we are accessing the project resources outside the NodeFormatting
+
+>note It is also important that we are accessing the project resources outside the NodeFormatting
                 event handler. Accessing project resources is a time consuming operation and since NodeFormatting
                 is fired for every visible node, you may experience performance issues if you try to access such resources
                 in the event handler.
-              
+>
+

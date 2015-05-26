@@ -1,8 +1,8 @@
 ---
 title: Collapsing the RibbonBar
-page_title: Collapsing the RibbonBar
+page_title: Collapsing the RibbonBar | UI for WinForms Documentation
 description: Collapsing the RibbonBar
-slug: ribbonbar-end-user-capabilities-collapsing-the-ribbonbar
+slug: winforms/ribbonbar/end-user-capabilities/collapsing-the-ribbonbar
 tags: collapsing,the,ribbonbar
 published: True
 position: 0

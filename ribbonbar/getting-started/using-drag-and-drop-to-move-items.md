@@ -1,8 +1,8 @@
 ---
 title: Using Drag and Drop to Move Items
-page_title: Using Drag and Drop to Move Items
+page_title: Using Drag and Drop to Move Items | UI for WinForms Documentation
 description: Using Drag and Drop to Move Items
-slug: ribbonbar-using-drag-and-drop-to-move-items
+slug: winforms/ribbonbar/getting-started/using-drag-and-drop-to-move-items
 tags: using,drag,and,drop,to,move,items
 published: True
 position: 15

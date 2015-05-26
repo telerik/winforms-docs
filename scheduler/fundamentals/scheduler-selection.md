@@ -1,8 +1,8 @@
 ---
 title: Scheduler Selection
-page_title: Scheduler Selection
+page_title: Scheduler Selection | UI for WinForms Documentation
 description: Scheduler Selection
-slug: scheduler-fundamentals-scheduler-selection
+slug: winforms/scheduler/fundamentals/scheduler-selection
 tags: scheduler,selection
 published: True
 position: 3
@@ -49,69 +49,27 @@ __SchedulerSelectionBehavior__ performs selection operations and provides inform
             
 
 * Programmatically selecting cells and appointments: there are several methods, which allows you to modify the selection.
-<table><th><tr><td>
 
-Method</td><td>
 
-Description</td></tr></th><tr><td>
-
-SelectAppointment(IEvent appointment, bool extend)</td><td>
-
-Selects an appointment given as parameter. The <i>extend</i> parameter indicates whether the selection will be extended or not.
-                  If multiple selection is allowed and the <i>extend</i> parameter is true, the appointment, given as parameter, will be added to the
-                  <b>SelectedAppointments</b> collection. If this appointment is currently selected, calling the 
-                  <b>SelectAppointment</b> method will unselect it. If the <i>extend</i> parameter is false, the appointment,
+| Method | Description |
+| ------ | ------ |
+|SelectAppointment(IEvent appointment, bool extend)|Selects an appointment given as parameter. The *extend* parameter indicates whether the selection will be extended or not.
+                  If multiple selection is allowed and the *extend* parameter is true, the appointment, given as parameter, will be added to the __SelectedAppointments__ collection. If this appointment is currently selected, calling the __SelectAppointment__ method will unselect it. If the *extend* parameter is false, the appointment,
                   given as parameter, will remain the only selected appointment, no matter if it is currently selected or not. 
                   If multiple selection is not allowed, the appointment, given as parameter, will remain the
-                  only selected appointment.</td></tr><tr><td>
-
-UnselectAppointment(IEvent appointment)</td><td>
-
-Unselects the specific appointment.</td></tr><tr><td>
-
-ResetAppointmentSelection</td><td>
-
-Clears all selected appointments.</td></tr><tr><td>
-
-IsAppointmentSelected(IEvent appointment)</td><td>
-
-Indicates whether a specific appointment is selected or not.</td></tr><tr><td>
-
-ResetCellSelection</td><td>
-
-Clears the selected cells.</td></tr><tr><td>
-
-IsDateSelected(DateTime date, TimeSpan duration, EventId resourceId, bool isAllDayAreaCell)</td><td>
-
-Determines whether a specific date is selected for the certain resource id.</td></tr><tr><td>
-
-SelectCell(SchedulerCellElement cell)</td><td>
-
-Selects a specific cell.</td></tr><tr><td>
-
-SelectCell(SchedulerCellElement cell, bool extendSelection)</td><td>
-
-Selects a specific cell with option to extend or not the selection (as if the Shift key is pressed).</td></tr><tr><td>
-
-IsCellSelected(SchedulerCellElement cell)</td><td>
-
-Determines whether a specific cell is selected.</td></tr><tr><td>
-
-SelectDateRange(DateTime startDate, DateTime endDate)</td><td>
-
-Selects cells in the specified range. If the current cell belongs to a specific resource, the cells in the desired range for this resource will be selected.</td></tr><tr><td>
-
-SelectDateRange(DateTime startDate, DateTime endDate, EventId resourceId)</td><td>
-
-Selects cells in the specified range for the certain resource id.</td></tr><tr><td>
-
-GetCellDuration</td><td>
-
-Returns the cell duration according to the current view.</td></tr><tr><td>
-
-ResetSelection</td><td>
-
-Clears all selected appointments and cells.</td></tr></table>
+                  only selected appointment.|
+|UnselectAppointment(IEvent appointment)|Unselects the specific appointment.|
+|ResetAppointmentSelection|Clears all selected appointments.|
+|IsAppointmentSelected(IEvent appointment)|Indicates whether a specific appointment is selected or not.|
+|ResetCellSelection|Clears the selected cells.|
+|IsDateSelected(DateTime date, TimeSpan duration, EventId resourceId, bool isAllDayAreaCell)|Determines whether a specific date is selected for the certain resource id.|
+|SelectCell(SchedulerCellElement cell)|Selects a specific cell.|
+|SelectCell(SchedulerCellElement cell, bool extendSelection)|Selects a specific cell with option to extend or not the selection (as if the Shift key is pressed).|
+|IsCellSelected(SchedulerCellElement cell)|Determines whether a specific cell is selected.|
+|SelectDateRange(DateTime startDate, DateTime endDate)|Selects cells in the specified range. If the current cell belongs to a specific resource, the cells in the desired range for this resource will be selected.|
+|SelectDateRange(DateTime startDate, DateTime endDate, EventId resourceId)|Selects cells in the specified range for the certain resource id.|
+|GetCellDuration|Returns the cell duration according to the current view.|
+|ResetSelection|Clears all selected appointments and cells.|
 
 ## Custom SelectionBehavior
 
@@ -120,96 +78,101 @@ The default behavior of the
         
 
 1. This can be achieved by creating a derivative of the __SchedulerSelectionBehavior__:
-            
+            #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=SchedulerSelectionBehavior}}
-	        
-	        public class CustomSchedulerSelectionBehavior : SchedulerSelectionBehavior
-	        {
-	            public CustomSchedulerSelectionBehavior(RadScheduler scheduler) : base(scheduler)
-	            {
-	            }
-	        }
-	        
-	{{endregion}}
-
-
-
-#### __[VB.NET] __
-
-{{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=SchedulerSelectionBehavior}}
 	
-	    Public Class CustomSchedulerSelectionBehavior
-	    Inherits SchedulerSelectionBehavior
-	        Public Sub New(scheduler As RadScheduler)
-	            MyBase.New(scheduler)
-	        End Sub
-	    End Class
-	
-	{{endregion}}
+
+
+
+{{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=SchedulerSelectionBehavior}} 
+{{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=SchedulerSelectionBehavior}} 
+
+````C#
+        
+        public class CustomSchedulerSelectionBehavior : SchedulerSelectionBehavior
+        {
+            public CustomSchedulerSelectionBehavior(RadScheduler scheduler) : base(scheduler)
+            {
+            }
+        }
+````
+````VB.NET
+
+    Public Class CustomSchedulerSelectionBehavior
+    Inherits SchedulerSelectionBehavior
+        Public Sub New(scheduler As RadScheduler)
+            MyBase.New(scheduler)
+        End Sub
+    End Class
+````
+
+{{endregion}} 
+
 
 
 
 1. Override the __SelectAppointment__ method and allow selection only for appointments off work hours:
+            #_[C#] _
+
+	
+
+
+
+{{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=SelectAppointment}} 
+{{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=SelectAppointment}} 
+
+````C#
             
+            public override void SelectAppointment(IEvent appointment, bool extend)
+            {
+                SchedulerDayView dayView = this.Scheduler.GetDayView();
+                
+                if (dayView.IsWorkTime(appointment.Start))
+                {
+                    return;
+                }
+                base.SelectAppointment(appointment, extend);
+            }
+````
+````VB.NET
 
-#### __[C#] __
+        Public Overrides Sub SelectAppointment(appointment As IEvent, extend As Boolean)
+            Dim dayView As SchedulerDayView = Me.Scheduler.GetDayView()
 
-{{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=SelectAppointment}}
-	            
-	            public override void SelectAppointment(IEvent appointment, bool extend)
-	            {
-	                SchedulerDayView dayView = this.Scheduler.GetDayView();
-	                
-	                if (dayView.IsWorkTime(appointment.Start))
-	                {
-	                    return;
-	                }
-	                base.SelectAppointment(appointment, extend);
-	            }
-	    
-	{{endregion}}
+            If dayView.IsWorkTime(appointment.Start) Then
+                Return
+            End If
+            MyBase.SelectAppointment(appointment, extend)
+        End Sub
+````
 
+{{endregion}} 
 
-
-#### __[VB.NET] __
-
-{{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=SelectAppointment}}
-	
-	        Public Overrides Sub SelectAppointment(appointment As IEvent, extend As Boolean)
-	            Dim dayView As SchedulerDayView = Me.Scheduler.GetDayView()
-	
-	            If dayView.IsWorkTime(appointment.Start) Then
-	                Return
-	            End If
-	            MyBase.SelectAppointment(appointment, extend)
-	        End Sub
-	
-	{{endregion}}
 
 
 
 1. Apply this behavior to the __RadScheduler__:
+            #_[C#] _
+
+	
+
+
+
+{{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=ReplaceSelectionBehavior}} 
+{{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=ReplaceSelectionBehavior}} 
+
+````C#
             
+            this.radScheduler1.SelectionBehavior = new CustomSchedulerSelectionBehavior(this.radScheduler1);
+````
+````VB.NET
 
-#### __[C#] __
+        Me.RadScheduler1.SelectionBehavior = New CustomSchedulerSelectionBehavior(Me.RadScheduler1)
 
-{{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=ReplaceSelectionBehavior}}
-	            
-	            this.radScheduler1.SelectionBehavior = new CustomSchedulerSelectionBehavior(this.radScheduler1);
-	        
-	{{endregion}}
+        '
+````
 
+{{endregion}} 
 
-
-#### __[VB.NET] __
-
-{{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=ReplaceSelectionBehavior}}
-	
-	        Me.RadScheduler1.SelectionBehavior = New CustomSchedulerSelectionBehavior(Me.RadScheduler1)
-	
-	{{endregion}}
 
 

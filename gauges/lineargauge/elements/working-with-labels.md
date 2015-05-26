@@ -1,8 +1,8 @@
 ---
 title: Working with Labels
-page_title: Working with Labels
+page_title: Working with Labels | UI for WinForms Documentation
 description: Working with Labels
-slug: lineargauge-elements-working-with-labels
+slug: winforms/gauges/lineargauge/elements/working-with-labels
 tags: working,with,labels
 published: True
 position: 3

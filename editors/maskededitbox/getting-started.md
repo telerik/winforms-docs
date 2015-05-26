@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: editors-maskededitbox-getting-started
+slug: winforms/editors/maskededitbox/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -21,12 +21,12 @@ Here is how to quickly configure two __RadMaskedEditBox__ controls. One uses a c
 
 1. In the first __RadMaskedEditBox__set the __MaskType__ property to __Standard__ and the
               __Mask__ property to "(###) ###-###". *See 
-              *[Standard Masks]({%slug editors-maskededitbox-standart-masks%})* 
+              *[Standard Masks]({%slug winforms/editors/maskededitbox/standard-masks%})* 
                 for more information on how this mask is constructed.*
 
 1. In the second __RadMaskedEditBox__set the __MaskType__ property to __DateTime__ and the
               __Mask__ property to "d". *
-                See [Date and Time Masks]({%slug editors-maskededitbox-date-and-time-masks%})** for more information on how this mask is constructed.*
+                See [Date and Time Masks]({%slug winforms/editors/maskededitbox/date-and-time-masks%})** for more information on how this mask is constructed.*
 
 1. Press __F5__ to run the application. *
                 Notice the behavior in the first __RadMaskedEditBox__ where the literals "(" and ")" are jumped over and cannot be replaced by the user. Also notice that mask characters are represented by the character in the __PromptChar__ property (by default this is the underscore "_" character) when blank.

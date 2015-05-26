@@ -1,8 +1,8 @@
 ---
 title: Control Element Structure
-page_title: Control Element Structure
+page_title: Control Element Structure | UI for WinForms Documentation
 description: Control Element Structure
-slug: editors-textbox-control-element-structure
+slug: winforms/editors/textbox/control-element-structure
 tags: control,element,structure
 published: True
 position: 1
@@ -17,7 +17,7 @@ __RadTextBoxElement__ is created for the purpose of reusability, as it is not a
           Refer to [
             Telerik Presentation
             Framework
-          ]({%slug tpf-overview%}) section about the difference.
+          ]({%slug winforms/telerik-presentation-framework/overview%}) section about the difference.
         *) e.g. RadTextBoxElement can be used in RadGridView control.
       
 
@@ -39,20 +39,24 @@ This image shows the Control Element Structure of the Telerik RadTextBox as dis
                   mouse click in the text box field does not propagate to the root element (RadTextBox control).
                 
 
-You can use the following code snippet to access RadTextBoxItem and subscribe to the click event:
+You can use the following code snippet to access RadTextBoxItem and subscribe to the click event:#_[C#] Subscribing for the click event of the RadTextBoxItem_
 
-#### __[C#] Subscribing for the click event of the RadTextBoxItem__
-
-{{source=..\SamplesCS\Editors\TextBox1.cs region=subscribeForTextBoxItemClickEvent}}
-	            this.radTextBox1.TextBoxElement.TextBoxItem.Click += new EventHandler(TextBoxItem_Click);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Subscribing for the click event of the RadTextBoxItem__
+{{source=..\SamplesCS\Editors\TextBox1.cs region=subscribeForTextBoxItemClickEvent}} 
+{{source=..\SamplesVB\Editors\TextBox1.vb region=subscribeForTextBoxItemClickEvent}} 
 
-{{source=..\SamplesVB\Editors\TextBox1.vb region=subscribeForTextBoxItemClickEvent}}
-	        AddHandler RadTextBox1.TextBoxElement.TextBoxItem.Click, AddressOf TextBoxItem_Click
-	{{endregion}}
+````C#
+            this.radTextBox1.TextBoxElement.TextBoxItem.Click += new EventHandler(TextBoxItem_Click);
+````
+````VB.NET
+        AddHandler RadTextBox1.TextBoxElement.TextBoxItem.Click, AddressOf TextBoxItem_Click
+        '
+````
+
+{{endregion}} 
+
 
 

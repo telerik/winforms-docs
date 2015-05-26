@@ -1,8 +1,8 @@
 ---
 title: Sample Database
-page_title: Sample Database
+page_title: Sample Database | UI for WinForms Documentation
 description: Sample Database
-slug: scheduler-data-binding-sample-database
+slug: winforms/scheduler/data-binding/sample-database
 tags: sample,database
 published: True
 position: 12
@@ -35,9 +35,7 @@ The AppointmentsResources table has relations to the primary keys of the Appoint
 You can use schema script to automatically add the Scheduler data tables to an existing database. Here is the script that creates 
         the __AppointmentsResources__ data table:
 
-#### __[SQL] AppointmentsResources table__
-
-{{source=..\SamplesCS\DataSources\AppointmentsResources.sql region=ar}}
+````sql
 	
 	USE [SchedulerData]
 	
@@ -94,15 +92,13 @@ You can use schema script to automatically add the Scheduler data tables to an e
 	GO
 	
 	ALTER TABLE [dbo].[AppointmentsResources] CHECK CONSTRAINT [AppointmentsResources_Resources]
-	{{endregion}}
+````
 
 
 
 Here is the script that creates the __Resources__ data table:
 
-#### __[SQL] Resources table__
-
-{{source=..\SamplesCS\DataSources\Resources.sql region=r}}
+````sql
 	
 	USE [SchedulerData]
 	
@@ -146,16 +142,14 @@ Here is the script that creates the __Resources__ data table:
 	
 	SET ANSI_PADDING OFF
 	
-	{{endregion}}
+````
 
 
 
 Here is the script that creates the __Appointments__ data table:
         
 
-#### __[SQL] Appointments table__
-
-{{source=..\SamplesCS\DataSources\Appointments.sql region=a}}
+````sql
 	
 	USE [SchedulerData]
 	
@@ -201,6 +195,6 @@ Here is the script that creates the __Appointments__ data table:
 	
 	) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 	
-	{{endregion}}
+````
 
 

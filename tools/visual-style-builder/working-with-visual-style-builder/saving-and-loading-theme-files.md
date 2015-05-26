@@ -1,8 +1,8 @@
 ---
 title: Saving and Loading Theme Files
-page_title: Saving and Loading Theme Files
+page_title: Saving and Loading Theme Files | UI for WinForms Documentation
 description: Saving and Loading Theme Files
-slug: tools-visual-style-builder-working-with-visual-style-builder-saving-and-loading-theme-files
+slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files
 tags: saving,and,loading,theme,files
 published: True
 position: 3
@@ -20,8 +20,6 @@ The styles for each separate control are situated in a single XML
           briefly demonstrates the common structure of a XML theme file:
         
 
-#### __[XML] __
-
 
 
 
@@ -30,8 +28,6 @@ In general, the XML theme file contains Property Setting Groups that represent t
           One of the new concepts that are introduced is the Theme Repository. The idea behind it is to store common style property settings that can be easily reused throughout the whole theme. Modifying a single repository item will change the appearance of all elements/controls that use this repository item. In this way a theme can be created and modified in minutes. The repository can be reused throughout different themes. However, there can be only one repository associated with a specific theme. The association of a repository with a theme is made by giving assigning the same name to the repository and the theme.
           Each theme can have a repository containing items that can be reused throughout the theme. A theme and a repository are connected by using the same name both for the theme and for the repository. The repository is situated in a separate XML file that generally has the following structure:
         
-
-#### __[XML] __
 
 
 
@@ -90,6 +86,14 @@ The upper part of the dialog contains a Grid View that displays a row for each u
 After selecting a theme and pressing the Ok button,  the theme repositories found will be merged if needed and if there is already a loaded theme in the Visual Style Builder, the user will be prompted to safe their changes. After that, the old theme will be unloaded and the new theme will be loaded and applied to the controls accordingly. If the user clicks ‘Cancel’ on the save prompt, no action will be taken.
         
 
+>caution If you open the Visual Style Builder and load a single repository file, this file will be considered as a theme and the Visual Style Builder will display its name in the caption of the main form. After that, each time you load a new file that has the same theme name, it will be applied to the corresponding control. If you load another repository, it will be merged with the existing one.
+>
+
+
+>caution If you open the Visual Style Builder and load a theme (with or without repository), and after that try to load a file that has a different file name, the Visual Style Builder will prompt you to save any changes made to the initially loaded theme if needed, close the theme and load the new one.
+>
+
+
 ## Saving Themes
 
 When you choose the Save option, the Visual Style Builder automatically detects whether a theme has been opened and edited. If yes, it simply overwrites the already loaded files with the new XML data. However, if you created a new theme without loading files, the Visual Style Builder will display the Save As dialog and will ask you to choose location and theme name for the newly created theme and its repository:
@@ -111,7 +115,9 @@ When you click on the OK button all selected files will be saved. The repository
 
 *<ThemeName>_Repository.xml*
 
->If you chose *not* to save certain files, you should keep in mind that the Visual Style Builder does not currently keep track of changes in separate theme files and therefore if you close the Visual Style Builder after saving, any unchecked files will not be saved.
+>note If you chose *not* to save certain files, you should keep in mind that the Visual Style Builder does not currently keep track of changes in separate theme files and therefore if you close the Visual Style Builder after saving, any unchecked files will not be saved.
+>
+
 
 __Save as a theme package__
 
@@ -122,39 +128,47 @@ Below the grid that displays the XML files you can see a checkbox called ‘Save
 ThemeResolutionService exposes two methods that allow you to load a theme package:
 
 * LoadPackageResource. This method loads a theme package file that is contained in the project as an [EmbeddedResource](http://msdn.microsoft.com/en-us/library/0c6xyb66(VS.80).aspx). This is the preferable method for loading a theme package since the resource path to the package is not changed when the application is deployed. The path construction is *DefaultProjectNamespace.ThemeFolder.ThemePackageFile*. The *ThemeFolder* part should only be used if the package is contained in a folder under the main project directory and if the project programming language is C#. In VB.NET project you do not need to include *ThemeFolder* part even if the package file is contained in a folder.
-            
+            #_[C#] Loading package resource_
 
-#### __[C#] Loading package resource__
-
-{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=LoadPackageResource}}
-	            ThemeResolutionService.LoadPackageResource("SamplesCS.CustomTheme.tssp");
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Loading package resource__
+{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=LoadPackageResource}} 
+{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=LoadPackageResource}} 
 
-{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=LoadPackageResource}}
-	        ThemeResolutionService.LoadPackageResource("SamplesVB.CustomTheme.tssp")
-	{{endregion}}
+````C#
+            ThemeResolutionService.LoadPackageResource("SamplesCS.CustomTheme.tssp");
+````
+````VB.NET
+        ThemeResolutionService.LoadPackageResource("SamplesVB.CustomTheme.tssp")
+        '
+````
 
-
-
-* LoadPackageFile. This method loads a file from a specified directory on the system. Depending on how the directory is defined (full or relative), the path to the package may change when the application is deployed on another machine.
-
-#### __[C#] Loading package file__
-
-{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=LoadPackageFile}}
-	            ThemeResolutionService.LoadPackageFile(@"C:\CustomTheme.tssp");
-	{{endregion}}
+{{endregion}} 
 
 
 
-#### __[VB.NET] Loading package file__
 
-{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=LoadPackageFile}}
-	        ThemeResolutionService.LoadPackageFile("C:\CustomTheme.tssp")
-	{{endregion}}
+* LoadPackageFile. This method loads a file from a specified directory on the system. Depending on how the directory is defined (full or relative), the path to the package may change when the application is deployed on another machine.#_[C#] Loading package file_
+
+	
+
+
+
+{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=LoadPackageFile}} 
+{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=LoadPackageFile}} 
+
+````C#
+            ThemeResolutionService.LoadPackageFile(@"C:\CustomTheme.tssp");
+````
+````VB.NET
+        ThemeResolutionService.LoadPackageFile("C:\CustomTheme.tssp")
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -191,6 +205,8 @@ The second option means that destination (existing) items that have the same key
 The third option entirely ignores repository item conflicts. Items are overridden based on their position in the list as they are loaded from the XML file – the last item found with a conflicting key wins.
         
 
->Generally, repository item conflicts within the same repository should not happen. Since the Visual Style Builder checks for key uniqueness each time you add/edit repository items, it is not possible to save a repository that contains items with the same key.
+>note Generally, repository item conflicts within the same repository should not happen. Since the Visual Style Builder checks for key uniqueness each time you add/edit repository items, it is not possible to save a repository that contains items with the same key.
+>
+
 
 

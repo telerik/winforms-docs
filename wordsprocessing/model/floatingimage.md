@@ -1,8 +1,8 @@
 ---
 title: FloatingImage
-page_title: FloatingImage
+page_title: FloatingImage | UI for WinForms Documentation
 description: FloatingImage
-slug: wordsprocessing-model-floatingimage
+slug: winforms/wordsprocessing/model/floatingimage
 tags: floatingimage
 published: True
 position: 8
@@ -21,98 +21,115 @@ __FloatingImage__ is an inline-level anchor flow document element linked with a 
 
 ## Inserting a FloatingImage
 
-The following code snippet creates a FloatingImage and adds it to a [Paragraph]({%slug wordsprocessing-model-paragraph%}).
-        
+The following code snippet creates a FloatingImage and adds it to a [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}).
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingFloatingImage.cs region=radwordsprocessing-model-floatingimage_0}}
-	            FloatingImage floatingImage = new FloatingImage(document);
-	            paragraph.Inlines.Add(floatingImage);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingFloatingImage.cs region=radwordsprocessing-model-floatingimage_0}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_0}}
-	            Dim floatingImage As New FloatingImage(document)
-	            paragraph.Inlines.Add(floatingImage)
-	{{endregion}}
+````C#
+            FloatingImage floatingImage = new FloatingImage(document);
+            paragraph.Inlines.Add(floatingImage);
+````
+````VB.NET
+            Dim floatingImage As New FloatingImage(document)
+            paragraph.Inlines.Add(floatingImage)
+            '
+````
+
+{{endregion}} 
 
 
 
->tipThe parent __Paragraph__ should belong to the same document that is passed to the constructor of the __FloatingImage__.
-          
+
+>tip The parent __Paragraph__ should belong to the same document that is passed to the constructor of the __FloatingImage__ .
+>
+
 
 You can add an image at a specific index in the __Inlines__ collection of a paragraph using the __Insert()__
           method. Here is how to add a FloatingImage at the beginning of a paragraph:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingFloatingImage.cs region=radwordsprocessing-model-floatingimage_1}}
-	            FloatingImage floatingImage = new FloatingImage(document);
-	            paragraph.Inlines.Insert(0, floatingImage);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingFloatingImage.cs region=radwordsprocessing-model-floatingimage_1}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_1}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_1}}
-	            Dim floatingImage As New FloatingImage(document)
-	            paragraph.Inlines.Insert(0, floatingImage)
-	{{endregion}}
+````C#
+            FloatingImage floatingImage = new FloatingImage(document);
+            paragraph.Inlines.Insert(0, floatingImage);
+````
+````VB.NET
+            Dim floatingImage As New FloatingImage(document)
+            paragraph.Inlines.Insert(0, floatingImage)
+            '
+````
+
+{{endregion}} 
+
 
 
 
 You can also use the __AddFloatingImage()__ method of the __Inlines__ collection of a paragraph. The
           method creates a new __FloatingImage__, adds it to the paragraph and returns it.
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingFloatingImage.cs region=radwordsprocessing-model-floatingimage_2}}
-	            FloatingImage floatingImage = paragraph.Inlines.AddFloatingImage();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingFloatingImage.cs region=radwordsprocessing-model-floatingimage_2}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_2}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_2}}
-	            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
-	{{endregion}}
+````C#
+            FloatingImage floatingImage = paragraph.Inlines.AddFloatingImage();
+````
+````VB.NET
+            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
+            '
+````
+
+{{endregion}} 
+
 
 
 
 Inserting __FloatingImage__ element in RadFlowDocument can also be achieved with
-          [RadFlowDocumentEditor]({%slug wordsprocessing-editing-radflowdocumenteditor%}).
-        
+          [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%}).
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingFloatingImage.cs region=radwordsprocessing-model-floatingimage_3}}
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
 	
-	            using (Stream stream = this.GetResourceStream("Telerik_logo.png"))
-	            {
-	                editor.InsertFloatingImage(stream, "png", new Size(118, 28));
-	            }
-	{{endregion}}
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingFloatingImage.cs region=radwordsprocessing-model-floatingimage_3}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_3}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingFloatingImage.vb region=radwordsprocessing-model-floatingimage_3}}
-	            Dim editor As New RadFlowDocumentEditor(document)
-	
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertFloatingImage(stream, "png", New Size(118, 28))
-	            End Using
-	{{endregion}}
+````C#
+            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
+
+            using (Stream stream = this.GetResourceStream("Telerik_logo.png"))
+            {
+                editor.InsertFloatingImage(stream, "png", new Size(118, 28));
+            }
+````
+````VB.NET
+            Dim editor As New RadFlowDocumentEditor(document)
+
+            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
+                editor.InsertFloatingImage(stream, "png", New Size(118, 28))
+            End Using
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -208,10 +225,12 @@ The __FloatingImage__ element exposes the following properties:
 * __Offset__: Specifies the offset to be used if the position type is Offset.
                 
 
-# See Also[FloatingImage API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_shapes_floatingimage.html)
+# See Also
 
- * [Document model]({%slug wordsprocessing-model%})
+ * [FloatingImage API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_shapes_floatingimage.html)
 
- * [ImageInline]({%slug wordsprocessing-model-imageinline%})
+ * [Document model]({%slug winforms/wordsprocessing/model%})
 
- * [Paragraph]({%slug wordsprocessing-model-paragraph%})
+ * [ImageInline]({%slug winforms/wordsprocessing/model/imageinline%})
+
+ * [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%})

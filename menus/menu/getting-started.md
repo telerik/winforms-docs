@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: menus-menu-getting-started
+slug: winforms/menus/menu/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -102,21 +102,25 @@ The following tutorial demonstrates creating a RadMenu with standard menu items 
             
 
 1. In order to assign a shortcut to a RadMenuItem, go to the Code View of the form and set the Ctrl+N shortcut to the 'New' menu item. 
-            
+            #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Menus\Menu\MenuGettingStarted.cs region=shortcut}}
-	            radMenuItem3.Shortcuts.Add(new Telerik.WinControls.RadShortcut(Keys.Control, Keys.N));
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Menus\Menu\MenuGettingStarted.cs region=shortcut}} 
+{{source=..\SamplesVB\Menus\Menu\MenuGettingStarted.vb region=shortcut}} 
 
-{{source=..\SamplesVB\Menus\Menu\MenuGettingStarted.vb region=shortcut}}
-	        RadMenuItem3.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.N))
-	{{endregion}}
+````C#
+            radMenuItem3.Shortcuts.Add(new Telerik.WinControls.RadShortcut(Keys.Control, Keys.N));
+````
+````VB.NET
+        RadMenuItem3.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.N))
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -130,26 +134,30 @@ The following tutorial demonstrates creating a RadMenu with standard menu items 
             
 
 1. Replace the automatically-generated event handler with this code:
-            
+            #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Menus\Menu\MenuGettingStarted.cs region=clickHandler}}
-	        private void radMenuItem3_Click(object sender, EventArgs e)
-	        {
-	            MessageBox.Show("New File");
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Menus\Menu\MenuGettingStarted.cs region=clickHandler}} 
+{{source=..\SamplesVB\Menus\Menu\MenuGettingStarted.vb region=clickHandler}} 
 
-{{source=..\SamplesVB\Menus\Menu\MenuGettingStarted.vb region=clickHandler}}
-	    Private Sub RadMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadMenuItem3.Click
-	        MessageBox.Show("New File")
-	    End Sub
-	{{endregion}}
+````C#
+        private void radMenuItem3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New File");
+        }
+````
+````VB.NET
+    Private Sub RadMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadMenuItem3.Click
+        MessageBox.Show("New File")
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 

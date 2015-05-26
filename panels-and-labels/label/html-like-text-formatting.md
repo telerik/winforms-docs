@@ -1,8 +1,8 @@
 ---
 title: HTML-like Text Formatting
-page_title: HTML-like Text Formatting
+page_title: HTML-like Text Formatting | UI for WinForms Documentation
 description: HTML-like Text Formatting
-slug: panels-and-labels-label-html-like-text-formatting
+slug: winforms/panels-and-labels/label/html-like-text-formatting
 tags: html-like,text,formatting
 published: True
 position: 2
@@ -25,78 +25,39 @@ Telerik UI for WinForms provide an advanced text styling mechanism, which can be
         
 
 ## Supported Tags 
-<table><th><tr><td>
 
-<b>Tag</b></td><td>
 
-<b>End Tag</b></td><td>
-
-<b>Description</b></td></tr></th><tr><td>
-
-<b><font></b></td><td>
-
-N/A</td><td>
-
-Specifies the font family</td></tr><tr><td>
-
-<b><color></b></td><td>
-
-N/A</td><td>
-
-Specifies the text color.</td></tr><tr><td>
-
-<b><size></b></td><td>
-
-N/A</td><td>
-
-Specifies the font size.</td></tr><tr><td>
-
-<b><b></b></td><td>
-
-<b></b></b></td><td>
-
-Defines bold text.</td></tr><tr><td>
-
-<b><b><i></b></b></td><td>
-
-<b></i></b></td><td>
-
-Defines italic text.</td></tr><tr><td>
-
-<b><u></b></td><td>
-
-<b></u></b></td><td>
-
-Defines underlined text.</td></tr><tr><td>
-
-<b><br></b></td><td>
-
-N/A</td><td>
-
-Single line break.</td></tr><tr><td>
-
-<b><a></b></td><td>
-
-<b></a></b></td><td>
-
-Defines a hyperlink</td></tr></table>
+|  __Tag__  |  __End Tag__  |  __Description__  |
+| ------ | ------ | ------ |
+| __<font>__ |N/A|Specifies the font family|
+| __<color>__ |N/A|Specifies the text color.|
+| __<size>__ |N/A|Specifies the font size.|
+| __<b>__ | __</b>__ |Defines bold text.|
+| __ __<i>__ __ | __</i>__ |Defines italic text.|
+| __<u>__ | __</u>__ |Defines underlined text.|
+| __<br>__ |N/A|Single line break.|
+| __<a>__ | __</a>__ |Defines a hyperlink|
 
 ## Example
 
-The following code snippet will produce the result shown in the screen-shot below:
+The following code snippet will produce the result shown in the screen-shot below:#_[C#] Set HTML-like text formatting to RadLabel text_
 
-#### __[C#] Set HTML-like text formatting to RadLabel text__
-
-{{source=..\SamplesCS\PanelsAndLabels\Label\LabelHtmlLikeTextFormatting.cs region=setHtmlText}}
-	            this.radLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text";
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Set HTML-like text formatting to RadLabel text__
+{{source=..\SamplesCS\PanelsAndLabels\Label\LabelHtmlLikeTextFormatting.cs region=setHtmlText}} 
+{{source=..\SamplesVB\PanelsAndLabels\Label\LabelHtmlLikeTextFormatting.vb region=setHtmlText}} 
 
-{{source=..\SamplesVB\PanelsAndLabels\Label\LabelHtmlLikeTextFormatting.vb region=setHtmlText}}
-	        Me.RadLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text"
-	{{endregion}}
+````C#
+            this.radLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text";
+````
+````VB.NET
+        Me.RadLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text"
+        '
+````
+
+{{endregion}} 
+
 
 ![panels-and-labels-label-html-like-text-formatting 001](images/panels-and-labels-label-html-like-text-formatting001.png)

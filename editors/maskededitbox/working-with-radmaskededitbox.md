@@ -1,8 +1,8 @@
 ---
 title: Working with RadMaskedEditBox
-page_title: Working with RadMaskedEditBox
+page_title: Working with RadMaskedEditBox | UI for WinForms Documentation
 description: Working with RadMaskedEditBox
-slug: editors-maskededitbox-working-with-radmaskededitbox
+slug: winforms/editors/maskededitbox/working-with-radmaskededitbox
 tags: working,with,radmaskededitbox
 published: True
 position: 4
@@ -24,7 +24,7 @@ __RadMaskedEditBox__ descends from RadTextBox and so has the same properties, me
 * __None:__ the control acts like a text box.
                 
 
-* [Numeric:]({%slug editors-maskededitbox-numeric-masks%})
+* [Numeric:]({%slug winforms/editors/maskededitbox/numeric-masks%})
                   you can define
                   [
                       standard
@@ -32,7 +32,7 @@ __RadMaskedEditBox__ descends from RadTextBox and so has the same properties, me
                   numeric masks.
                 
 
-* [Standard:]({%slug editors-maskededitbox-standart-masks%})
+* [Standard:]({%slug winforms/editors/maskededitbox/standard-masks%})
                   you can define standard masks
                 
 
@@ -52,7 +52,7 @@ __RadMaskedEditBox__ descends from RadTextBox and so has the same properties, me
                 
 
 * __FreeFormatDateTime:__ with that mask type end-users are able to enter a date and time in a wide range of formats without having to conform to a specific mask.
-                  In the following article you can find more information how this DateTime parsing logic works: [Pasing Dates]({%slug editors-maskededitbox-parsing-dates%})
+                  In the following article you can find more information how this DateTime parsing logic works: [Pasing Dates]({%slug winforms/editors/maskededitbox/parsing-dates%})
 
 * __Mask:__ A string of characters that constrain user input. The Mask property may contain literals and special mask characters.
               The MaskType determines how the mask characters are interpreted. Use the backslash "\" character to escape any mask characters so
@@ -64,27 +64,30 @@ __RadMaskedEditBox__ descends from RadTextBox and so has the same properties, me
 
 * __Culture:__ This property allows you to set the current language and culture from a drop down list at design-time or assign a new
               __CultureInfo__ instance at run-time.
-            ![editors-maskededitbox-properties-and-events 001](images/editors-maskededitbox-properties-and-events001.png)
+            ![editors-maskededitbox-properties-and-events 001](images/editors-maskededitbox-properties-and-events001.png)#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Editors\MaskEditBox1.cs region=workingWithRadMaskedEditBox}}
-	            
-	            this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.DateTime;
-	            this.radMaskedEditBox1.Mask = "d";
-	            this.radMaskedEditBox1.Culture = new System.Globalization.CultureInfo("de-de");
 	
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Editors\MaskEditBox1.cs region=workingWithRadMaskedEditBox}} 
+{{source=..\SamplesVB\Editors\MaskEditBox1.vb region=workingWithRadMaskedEditBox}} 
 
-{{source=..\SamplesVB\Editors\MaskEditBox1.vb region=workingWithRadMaskedEditBox}}
-	        Me.RadMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.DateTime
-	        Me.RadMaskedEditBox1.Mask = "D"
-	        Me.RadMaskedEditBox1.Culture = New System.Globalization.CultureInfo("de-DE")
-	{{endregion}}
+````C#
+            
+            this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.DateTime;
+            this.radMaskedEditBox1.Mask = "d";
+            this.radMaskedEditBox1.Culture = new System.Globalization.CultureInfo("de-de");
+````
+````VB.NET
+        Me.RadMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.DateTime
+        Me.RadMaskedEditBox1.Mask = "D"
+        Me.RadMaskedEditBox1.Culture = New System.Globalization.CultureInfo("de-DE")
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -96,76 +99,15 @@ __RadMaskedEditBox__ descends from RadTextBox and so has the same properties, me
             
 
 ## MaskType and Mask Examples
-<table><th><tr><td>
 
-MaskType</td><td>
 
-Mask
-                </td><td>
-
-User Input</td><td>
-
-Displayed as Example</td></tr></th><tr><td>
-
-Standard
-              </td><td>
-
-\# ###
-              </td><td>
-
-12
-              </td><td>
-
-# 12_
-              </td></tr><tr><td>
-
-Standard
-              </td><td>
-
-###-##-####
-              </td><td>
-
-1234
-              </td><td>
-
-123-4_-____
-              </td></tr><tr><td>
-
-Standard
-              </td><td>
-
-aaaaa-aaaaa-aaaaa-aaaaa
-              </td><td>
-
-abc123
-              </td><td>
-
-abc12-3____-_____-_____
-              </td></tr><tr><td>
-
-DateTime
-              </td><td>
-
-d
-              </td><td>
-
-1 1 2007
-              </td><td>
-
-01/01/2007
-              </td></tr><tr><td>
-
-DateTime
-              </td><td>
-
-MMM dd
-              </td><td>
-
-Navigate with
-              </td><td>
-
-Dec 1
-              </td></tr></table>
+| MaskType | Mask | User Input | Displayed as Example |
+| ------ | ------ | ------ | ------ |
+|Standard|\# ###|12|# 12_|
+|Standard|###-##-####|1234|123-4_-____|
+|Standard|aaaaa-aaaaa-aaaaa-aaaaa|abc123|abc12-3____-_____-_____|
+|DateTime|d|1 1 2007|01/01/2007|
+|DateTime|MMM dd|Navigate with|Dec 1|
 
 ## Events
 

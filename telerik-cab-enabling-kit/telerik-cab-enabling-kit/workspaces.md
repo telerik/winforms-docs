@@ -1,8 +1,8 @@
 ---
 title: Workspaces
-page_title: Workspaces
+page_title: Workspaces | UI for WinForms Documentation
 description: Workspaces
-slug: telerik-cab-enabling-kit-telerik-cab-enabling-kit-workspaces
+slug: winforms/telerik-cab-enabling-kit/telerik-cab-enabling-kit/workspaces
 tags: workspaces
 published: True
 position: 1

@@ -1,8 +1,8 @@
 ---
 title: Scheduler Navigation
-page_title: Scheduler Navigation
+page_title: Scheduler Navigation | UI for WinForms Documentation
 description: Scheduler Navigation
-slug: scheduler-end-user-functionality-scheduler-navigation
+slug: winforms/scheduler/end-user-functionality/scheduler-navigation
 tags: scheduler,navigation
 published: True
 position: 0
@@ -18,14 +18,14 @@ Built with usability in mind, Telerik Scheduler grants the user with familiar Mi
         which means that no learning is required to work with the control.
 
 A __Scheduler Navigator__ control at the top allows for quick switching between the available
-        scheduler views ([Day]({%slug scheduler-views-day-view%}),
-        [Week]({%slug scheduler-views-week-view%}),
-        [Month]({%slug scheduler-views-month-view%}),
-        [Timeline]({%slug scheduler-views-timeline-view%})),
+        scheduler views ([Day]({%slug winforms/scheduler/views/day-view%}),
+        [Week]({%slug winforms/scheduler/views/week-view%}),
+        [Month]({%slug winforms/scheduler/views/month-view%}),
+        [Timeline]({%slug winforms/scheduler/views/timeline-view%})),
           and to toggle weekends on/off. It also navigates back and forth within a view and shows the current dates in a fully
           customizable and localizable Date Header. The time zones drop down list of RadSchedulerNavigator allows the user to see the
           appointments according to a time zone different than the local time zone.
-          [RadSchedulerNavigator]({%slug scheduler-scheduler-navigator-overview%}) can easily
+          [RadSchedulerNavigator]({%slug winforms/scheduler/scheduler-navigator/overview%}) can easily
         be bound to a RadScheduler instance both in the Visual Studio Designer and in runtime:
 
 ![scheduler-end-user-functionality-scheduler-navigation 001](images/scheduler-end-user-functionality-scheduler-navigation001.png)

@@ -1,8 +1,8 @@
 ---
 title: Virtual Mode
-page_title: Virtual Mode
+page_title: Virtual Mode | UI for WinForms Documentation
 description: Virtual Mode
-slug: gridview-virtual-mode
+slug: winforms/gridview/virtual-mode/virtual-mode
 tags: virtual,mode
 published: True
 position: 0
@@ -13,13 +13,11 @@ position: 0
 
 
 ## 
-<table><tr><td>
 
-RELATED VIDEOS</td></tr><tr><td>
 
-[Performance Binding and Virtual Mode ](http://tv.telerik.com/watch/winforms/radgridview/radgridview-for-winforms-performance-binding-virtual-mode)
 
-RadGridView for WinForms - Performance Binding and Virtual Mode(Runtime: 18:16)</td></tr></table>
+|RELATED VIDEOS|
+|[Performance Binding and Virtual Mode ](http://tv.telerik.com/watch/winforms/radgridview/radgridview-for-winforms-performance-binding-virtual-mode)RadGridView for WinForms - Performance Binding and Virtual Mode(Runtime: 18:16)|
 
 With virtual mode, you can implement your own data management operations.
 This is necessary to maintain the values of unbound columns in bound mode when
@@ -33,15 +31,13 @@ small, the cache should be similar in size to the number of rows currently
 displayed. When the user scrolls new rows into view, your code requests new
 data from the cache and optionally flushes old data from memory.
 
->The following data operations are not supported in Virtual Mode: 
-
+>note The following data operations are not supported in Virtual Mode:
+>
 * Grouping
-
 * Sorting
-
 * Filtering
+* Paging>
 
-* Paging
 
 When you are implementing virtual mode, you will need to track when a new
 row is needed in the data model and when to rollback the adding of the new row.
@@ -64,74 +60,78 @@ control and a custom data cache. To implement the virtual mode:
     that the grid will know how many rows/columns it needs to display.
 
 The following code snippet demonstrates how to implement the virtual mode
-with __MockIntegerDataSource__ (the implementation of this data source can be found in our examples application under the GridView >> Performance >> High Refresh example:
+with __MockIntegerDataSource__ (the implementation of this data source can be found in our examples application under the GridView >> Performance >> High Refresh example:#_[C#]  Implementing the Virtual Mode_
 
-#### __[C#]  Implementing the Virtual Mode__
-
-{{source=..\SamplesCS\GridView\VirtualMode\VirtualMode1.cs region=virtualMode}}
-	        public VirtualMode1()
-	        {
-	            InitializeComponent();
-	            this.radGridView1.EnableSorting = false;
-	            this.radGridView1.EnableFiltering = false;
-	            this.radGridView1.EnableGrouping = false;
 	
-	            this.Load += new EventHandler(Form1_Load);
-	        }
-	
-	        int COUNT = 100;
-	        MockIntegerDataSource dataSource;
-	
-	        void Form1_Load(object sender, EventArgs e)
-	        {
-	           dataSource = new MockIntegerDataSource(COUNT, COUNT);
-	           this.radGridView1.CellValueNeeded += new GridViewCellValueEventHandler(radGridView1_CellValueNeeded);
-	           this.radGridView1.CellValuePushed += new GridViewCellValueEventHandler(radGridView1_CellValuePushed);
-	           radGridView1.VirtualMode = true;
-	           radGridView1.ColumnCount = dataSource.Columns;
-	           this.radGridView1.RowCount = dataSource.Rows;
-	        }
-	
-	        void radGridView1_CellValuePushed(object sender, GridViewCellValueEventArgs e)
-	        {
-	
-	        }
-	        void radGridView1_CellValueNeeded(object sender, GridViewCellValueEventArgs e)
-	        {
-	            e.Value = this.dataSource.Source[e.RowIndex].Data[e.ColumnIndex];
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET]  Implementing the Virtual Mode__
+{{source=..\SamplesCS\GridView\VirtualMode\VirtualMode1.cs region=virtualMode}} 
+{{source=..\SamplesVB\GridView\VirtualMode\VirtualMode1.vb region=virtualMode}} 
 
-{{source=..\SamplesVB\GridView\VirtualMode\VirtualMode1.vb region=virtualMode}}
-	    Public Sub New()
-	        InitializeComponent()
-	        Me.RadGridView1.EnableSorting = False
-	        Me.RadGridView1.EnableFiltering = False
-	        Me.RadGridView1.EnableGrouping = False
-	    End Sub
-	
-	    Dim COUNT As Integer = 100
-	    Dim dataSource As MockIntegerDataSource
-	    Protected Overloads Overrides Sub OnLoad(ByVal e As EventArgs)
-	        MyBase.OnLoad(e)
-	        Me.dataSource = New MockIntegerDataSource(COUNT, COUNT)
-	        AddHandler Me.RadGridView1.CellValueNeeded, AddressOf radGridView1_CellValueNeeded
-	        AddHandler Me.RadGridView1.CellValuePushed, AddressOf radGridView1_CellValuePushed
-	        RadGridView1.VirtualMode = True
-	        RadGridView1.ColumnCount = Me.dataSource.Columns
-	        Me.RadGridView1.RowCount = Me.dataSource.Rows
-	    End Sub
-	
-	    Sub radGridView1_CellValuePushed(ByVal sender As Object, ByVal e As GridViewCellValueEventArgs)
-	    End Sub
-	    Sub radGridView1_CellValueNeeded(ByVal sender As Object, ByVal e As GridViewCellValueEventArgs)
-	        e.Value = Me.dataSource.Source(e.RowIndex).Data(e.ColumnIndex)
-	    End Sub
-	{{endregion}}
+````C#
+        public VirtualMode1()
+        {
+            InitializeComponent();
+            this.radGridView1.EnableSorting = false;
+            this.radGridView1.EnableFiltering = false;
+            this.radGridView1.EnableGrouping = false;
+
+            this.Load += new EventHandler(Form1_Load);
+        }
+
+        int COUNT = 100;
+        MockIntegerDataSource dataSource;
+
+        void Form1_Load(object sender, EventArgs e)
+        {
+           dataSource = new MockIntegerDataSource(COUNT, COUNT);
+           this.radGridView1.CellValueNeeded += new GridViewCellValueEventHandler(radGridView1_CellValueNeeded);
+           this.radGridView1.CellValuePushed += new GridViewCellValueEventHandler(radGridView1_CellValuePushed);
+           radGridView1.VirtualMode = true;
+           radGridView1.ColumnCount = dataSource.Columns;
+           this.radGridView1.RowCount = dataSource.Rows;
+        }
+
+        void radGridView1_CellValuePushed(object sender, GridViewCellValueEventArgs e)
+        {
+
+        }
+        void radGridView1_CellValueNeeded(object sender, GridViewCellValueEventArgs e)
+        {
+            e.Value = this.dataSource.Source[e.RowIndex].Data[e.ColumnIndex];
+        }
+````
+````VB.NET
+    Public Sub New()
+        InitializeComponent()
+        Me.RadGridView1.EnableSorting = False
+        Me.RadGridView1.EnableFiltering = False
+        Me.RadGridView1.EnableGrouping = False
+    End Sub
+
+    Dim COUNT As Integer = 100
+    Dim dataSource As MockIntegerDataSource
+    Protected Overloads Overrides Sub OnLoad(ByVal e As EventArgs)
+        MyBase.OnLoad(e)
+        Me.dataSource = New MockIntegerDataSource(COUNT, COUNT)
+        AddHandler Me.RadGridView1.CellValueNeeded, AddressOf radGridView1_CellValueNeeded
+        AddHandler Me.RadGridView1.CellValuePushed, AddressOf radGridView1_CellValuePushed
+        RadGridView1.VirtualMode = True
+        RadGridView1.ColumnCount = Me.dataSource.Columns
+        Me.RadGridView1.RowCount = Me.dataSource.Rows
+    End Sub
+
+    Sub radGridView1_CellValuePushed(ByVal sender As Object, ByVal e As GridViewCellValueEventArgs)
+    End Sub
+    Sub radGridView1_CellValueNeeded(ByVal sender As Object, ByVal e As GridViewCellValueEventArgs)
+        e.Value = Me.dataSource.Source(e.RowIndex).Data(e.ColumnIndex)
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -153,38 +153,27 @@ The following events are specific only to the grid virtual mode (i.e. when
 the __VirtualMode__ property is set to __true__):
 
 
-<table><th><tr><td>
 
-<b>Event</b></td><td>
 
-<b>Description</b></td></tr></th><tr><td>
-
-<b>CellValueNeeded</b></td><td>
-
-Used by the control to retrieve a cell value
+|  __Event__  |  __Description__  |
+| ------ | ------ |
+| __CellValueNeeded__ |Used by the control to retrieve a cell value
                 from the data cache for display. This event occurs only for
                 cells in unbound columns.
-              
 
->When
+>note When
                                 implementing
-                                the <b>CellValueNeeded</b> event
-                                you should have in mind that the
-                                <b>ColumnIndex</b> parameter depends
+                                the __CellValueNeeded__ event
+                                you should have in mind that the __ColumnIndex__ parameter depends
                                 on the current order of the columns as set by
                                 the user – reordering columns would change the
-                                column index.</td></tr><tr><td>
-
-<b>CellValuePushed</b></td><td>
-
-Used by the control to commit user input for a cell to the
+                                column index.
+>
+|
+| __CellValuePushed__ |Used by the control to commit user input for a cell to the
                 data cache. This event occurs only for cells in unbound
-                columns.
-
-Call the <b>UpdateCellValue</b>
-                method when changing a cached value outside of a
-                <b>CellValuePushed</b> event handler to ensure that the current
+                columns.Call the __UpdateCellValue__ method when changing a cached value outside of a __CellValuePushed__ event handler to ensure that the current
                 value is displayed in the control and to apply any automatic
-                sizing modes currently in effect.</td></tr></table>
+                sizing modes currently in effect.|
 
 

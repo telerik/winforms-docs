@@ -1,8 +1,8 @@
 ---
 title: Keyboard Navigation
-page_title: Keyboard Navigation
+page_title: Keyboard Navigation | UI for WinForms Documentation
 description: Keyboard Navigation
-slug: propertygrid-keyboard-navigation
+slug: winforms/propertygrid/keyboard-navigation
 tags: keyboard,navigation
 published: True
 position: 6
@@ -23,41 +23,49 @@ __RadPropertyGrid__ allows navigation through its item by using keyboard. Two sc
             
 
 To enable this functionality a single property setting is needed:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\PropertyGrid\PropertyGridKeyboardNavigation.cs region=KeyboardSearchEnabled}}
-	            radPropertyGrid1.KeyboardSearchEnabled = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\PropertyGrid\PropertyGridKeyboardNavigation.cs region=KeyboardSearchEnabled}} 
+{{source=..\SamplesVB\PropertyGrid\PropertyGridKeyboardNavigation.vb region=KeyboardSearchEnabled}} 
 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridKeyboardNavigation.vb region=KeyboardSearchEnabled}}
-	        radPropertyGrid1.KeyboardSearchEnabled = True
-	{{endregion}}
+````C#"
+            radPropertyGrid1.KeyboardSearchEnabled = true;
+````
+````VB.NET
+        radPropertyGrid1.KeyboardSearchEnabled = True
+        '
+````
+
+{{endregion}} 
+
 
 
 
 Another property of interest is the __KeyboardSearchResetInterval__. It is used to determine what time between keystrokes will be considered as typing.
           Consequent keystrokes with performed faster than the specified interval will be considered typing and once the time elapses, the matching item
           (if such) will be selected. Here is how to access this property to change the value of the timer:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\PropertyGrid\PropertyGridKeyboardNavigation.cs region=KeyboardSearchResetInterval}}
-	            radPropertyGrid1.KeyboardSearchResetInterval = 200;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\PropertyGrid\PropertyGridKeyboardNavigation.cs region=KeyboardSearchResetInterval}} 
+{{source=..\SamplesVB\PropertyGrid\PropertyGridKeyboardNavigation.vb region=KeyboardSearchResetInterval}} 
 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridKeyboardNavigation.vb region=KeyboardSearchResetInterval}}
-	        radPropertyGrid1.KeyboardSearchResetInterval = 200
-	{{endregion}}
+````C#
+            radPropertyGrid1.KeyboardSearchResetInterval = 200;
+````
+````VB.NET
+        radPropertyGrid1.KeyboardSearchResetInterval = 200
+        '
+````
+
+{{endregion}} 
+
 
 

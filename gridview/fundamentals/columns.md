@@ -1,8 +1,8 @@
 ---
 title: Columns
-page_title: Columns
+page_title: Columns | UI for WinForms Documentation
 description: Columns
-slug: gridview-fundamentals-columns
+slug: winforms/gridview/fundamentals/columns
 tags: columns
 published: True
 position: 3
@@ -22,21 +22,21 @@ RadGridView currently supports two main column types:
 
 The following are the available GridViewDataColumn descendants column types used in RadGridView:
 
-* [GridViewCheckBoxColumn](BCA512FB-1394-4EE4-98A2-9B81CA5DEB72)
+* [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%})
 
-* [GridViewCommandColumn]({%slug gridview-columns-gridviewcommandcolumn%})
+* [GridViewCommandColumn]({%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%})
 
-* [GridViewDateTimeColumn]({%slug gridview-columns-gridviewdatetimecolumn%})
+* [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%})
 
-* [GridViewDecimalColumn]({%slug gridview-columns-gridviewdecimalcolumn%})
+* [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
 
-* [GridViewImageColumn]({%slug gridview-columns-gridviewimagecolumn%})
+* [GridViewImageColumn]({%slug winforms/gridview/columns/column-types/gridviewimagecolumn%})
 
-* [GridViewTextBoxColumn]({%slug gridview-columns-gridviewtextboxcolumn%})
+* [GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%})
 
-* [GridViewComboBoxColumn]({%slug gridview-columns-gridviewcomboboxcolumn%})
+* [GridViewComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%})
 
-* [GridViewMaskBoxColumn]({%slug gridview-columns-gridviewmaskboxcolumn%})
+* [GridViewMaskBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewmaskboxcolumn%})
 
 ## Structure Columns
 

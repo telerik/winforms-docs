@@ -1,8 +1,8 @@
 ---
 title: Using Key Tips
-page_title: Using Key Tips
+page_title: Using Key Tips | UI for WinForms Documentation
 description: Using Key Tips
-slug: ribbonbar-end-user-capabilities-using-key-tips
+slug: winforms/ribbonbar/end-user-capabilities/using-key-tips
 tags: using,key,tips
 published: True
 position: 1

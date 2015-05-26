@@ -1,8 +1,8 @@
 ---
 title: Programming RadLabel
-page_title: Programming RadLabel
+page_title: Programming RadLabel | UI for WinForms Documentation
 description: Programming RadLabel
-slug: panels-and-labels-label-programming-radlabel
+slug: winforms/panels-and-labels/label/programming-radlabel
 tags: programming,radlabel
 published: True
 position: 0

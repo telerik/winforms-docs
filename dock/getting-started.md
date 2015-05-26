@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: dock-getting-started
+slug: winforms/dock/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -35,9 +35,10 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__
 1. In the RadRibbonBar on top, click the left green arrow to dock a new __ToolWindow__ to the left.
             ![dock-getting-started 001](images/dock-getting-started001.png)
 
->The list on the left side of the preview displays all created windows. From this list you can set the visibility of the ToolWindows to false,
-                if you do not need some of them visible at runtime initially. 
-              
+>note The list on the left side of the preview displays all created windows. From this list you can set the visibility of the ToolWindows to false,
+                if you do not need some of them visible at runtime initially.
+>
+
 
 1. Again from the RadRibbonBar, click on the __Add DocumentWindow__ button three times to add three __DocumentWindows__ instances.
             
@@ -46,6 +47,12 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__
             ![dock-getting-started 002](images/dock-getting-started002.png)For more complex scenarios RadDock advanced layout designer provides full drag and drop and user interaction support in the preview RadDock control.
               This allows you to the dock a ToolWindow to bottom-right, to set a ToolWindow in AutoHide mode or even to float a ToolWindow.
             
+
+>caution The real layout of RadDock which is displayed at runtime is available only through RadDock Advanced Layout Designer. I.e. if you have hidden,
+                auto-hidden or floating ToolWindows, they will be shown as such only in the advanced designer. In Visual Studio IDE we display ToolWindows in their docked state,
+                which allows you to place and layout your controls in them.
+>
+
 
 1. In the designer select the __ToolWindow__ on the left. You can verify this by checking that the currently selected
               component in the Properties Window of Visual Studio is __ToolWindow__.
@@ -74,23 +81,27 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__
               to __Fill.__
 
 1. Make sure that you have the __Telerik.Wincontrols.UI__ and __Telerik.Wincontrols.UI.Docking__ in the "using" (C#) or "Imports" (VB) section of the code.
-            
+            #_[C#] Include namespaces_
 
-#### __[C#] Include namespaces__
-
-{{source=..\SamplesCS\Dock\GettingStarted.cs region=namespace}}
-	using Telerik.WinControls.UI;
-	using Telerik.WinControls.UI.Docking;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Include namespaces__
+{{source=..\SamplesCS\Dock\GettingStarted.cs region=namespace}} 
+{{source=..\SamplesVB\Dock\GettingStarted.vb region=namespace}} 
 
-{{source=..\SamplesVB\Dock\GettingStarted.vb region=namespace}}
-	Imports Telerik.WinControls.UI
-	Imports Telerik.WinControls.UI.Docking
-	{{endregion}}
+````C#
+using Telerik.WinControls.UI;
+using Telerik.WinControls.UI.Docking;
+````
+````VB.NET
+Imports Telerik.WinControls.UI
+Imports Telerik.WinControls.UI.Docking
+'
+````
+
+{{endregion}} 
+
 
 
 
@@ -98,86 +109,94 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__
               structure and links the __Name__of each __DocumentWindow__ to the corresponding __Node Tag__ property.
               Each dockable object has a __Name__property, a __String__that uniquely identifies it. Later we use the
               __Name__to locate the __DocumentWindow__ and activate it.
-            
+            #_[C#] Initializing RadTreeView_
 
-#### __[C#] Initializing RadTreeView__
-
-{{source=..\SamplesCS\Dock\GettingStarted.cs region=settingUpTree}}
-	        void Form1_Load(object sender, EventArgs e)
-	        {
-	            RadTreeNode productNode = radTreeView1.Nodes.Add("Product Reports");
-	            RadTreeNode customerNode = radTreeView1.Nodes.Add("Customer Reports");
-	            RadTreeNode productListingNode = new RadTreeNode("Product Listing");
-	            productListingNode.Tag = dwProductListing.Name;
-	            RadTreeNode productCategoryNode = new RadTreeNode("Product By Category");
-	            productCategoryNode.Tag = dwProductByCategory.Name;
-	            RadTreeNode top10CustomerNode = new RadTreeNode("Top 10 Customers");
-	            top10CustomerNode.Tag = dwTop10Customers.Name;
-	            productNode.Nodes.Add(productListingNode);
-	            productNode.Nodes.Add(productCategoryNode);
-	            customerNode.Nodes.Add(top10CustomerNode);
-	            radTreeView1.ExpandAll();
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Initializing RadTreeView__
+{{source=..\SamplesCS\Dock\GettingStarted.cs region=settingUpTree}} 
+{{source=..\SamplesVB\Dock\GettingStarted.vb region=settingUpTree}} 
 
-{{source=..\SamplesVB\Dock\GettingStarted.vb region=settingUpTree}}
-	    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-	        Dim productNode As RadTreeNode = RadTreeView1.Nodes.Add("Product Reports")
-	        Dim customerNode As RadTreeNode = RadTreeView1.Nodes.Add("Customer Reports")
-	        Dim productListingNode As New RadTreeNode("Product Listing")
-	        productListingNode.Tag = dwProductListing.Name
-	        Dim productCategoryNode As New RadTreeNode("Product By Category")
-	        productCategoryNode.Tag = dwProductByCategory.Name
-	        Dim top10CustomerNode As New RadTreeNode("Top 10 Customers")
-	        top10CustomerNode.Tag = dwTop10Customers.Name
-	        productNode.Nodes.Add(productListingNode)
-	        productNode.Nodes.Add(productCategoryNode)
-	        customerNode.Nodes.Add(top10CustomerNode)
-	        RadTreeView1.ExpandAll()
-	    End Sub
-	{{endregion}}
+````C#
+        void Form1_Load(object sender, EventArgs e)
+        {
+            RadTreeNode productNode = radTreeView1.Nodes.Add("Product Reports");
+            RadTreeNode customerNode = radTreeView1.Nodes.Add("Customer Reports");
+            RadTreeNode productListingNode = new RadTreeNode("Product Listing");
+            productListingNode.Tag = dwProductListing.Name;
+            RadTreeNode productCategoryNode = new RadTreeNode("Product By Category");
+            productCategoryNode.Tag = dwProductByCategory.Name;
+            RadTreeNode top10CustomerNode = new RadTreeNode("Top 10 Customers");
+            top10CustomerNode.Tag = dwTop10Customers.Name;
+            productNode.Nodes.Add(productListingNode);
+            productNode.Nodes.Add(productCategoryNode);
+            customerNode.Nodes.Add(top10CustomerNode);
+            radTreeView1.ExpandAll();
+        }
+````
+````VB.NET
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Dim productNode As RadTreeNode = RadTreeView1.Nodes.Add("Product Reports")
+        Dim customerNode As RadTreeNode = RadTreeView1.Nodes.Add("Customer Reports")
+        Dim productListingNode As New RadTreeNode("Product Listing")
+        productListingNode.Tag = dwProductListing.Name
+        Dim productCategoryNode As New RadTreeNode("Product By Category")
+        productCategoryNode.Tag = dwProductByCategory.Name
+        Dim top10CustomerNode As New RadTreeNode("Top 10 Customers")
+        top10CustomerNode.Tag = dwTop10Customers.Name
+        productNode.Nodes.Add(productListingNode)
+        productNode.Nodes.Add(productCategoryNode)
+        customerNode.Nodes.Add(top10CustomerNode)
+        RadTreeView1.ExpandAll()
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
 1. Create an __SelectedNodeChanged__ event handler and add the following code to it. The code for this
               event handler verifies that the Tag of the selected node has a value. Further, if this value corresponds to the name of an existing window in RadDock,
               the appropriate DocumentWindow gets activated.
-            
+            #_[C#] Handling the RadTreeView SelectedNodeChanged event_
 
-#### __[C#] Handling the RadTreeView SelectedNodeChanged event__
-
-{{source=..\SamplesCS\Dock\GettingStarted.cs region=handlingSelectedNodeChanged}}
-	        void radTreeView1_SelectedNodeChanged(object sender, RadTreeViewEventArgs e)
-	        {            
-	            if (e.Node.Tag != null)
-	            {
-	                DockWindow dw = this.radDock1[e.Node.Tag.ToString()];
-	                if (dw != null)
-	                {
-	                    this.radDock1.ActiveWindow = dw;
-	                }
-	            }
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Handling the RadTreeView SelectedNodeChanged event__
+{{source=..\SamplesCS\Dock\GettingStarted.cs region=handlingSelectedNodeChanged}} 
+{{source=..\SamplesVB\Dock\GettingStarted.vb region=handlingSelectedNodeChanged}} 
 
-{{source=..\SamplesVB\Dock\GettingStarted.vb region=handlingSelectedNodeChanged}}
-	    Private Sub RadTreeView1_SelectedNodeChanged(ByVal sender As Object, ByVal e As RadTreeViewEventArgs)
-	        If Not e.Node.Tag Is Nothing Then
-	            Dim dw As DockWindow = Me.RadDock1(e.Node.Tag.ToString())
-	            If Not dw Is Nothing Then
-	                Me.RadDock1.ActiveWindow = dw
-	            End If
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        void radTreeView1_SelectedNodeChanged(object sender, RadTreeViewEventArgs e)
+        {            
+            if (e.Node.Tag != null)
+            {
+                DockWindow dw = this.radDock1[e.Node.Tag.ToString()];
+                if (dw != null)
+                {
+                    this.radDock1.ActiveWindow = dw;
+                }
+            }
+        }
+````
+````VB.NET
+    Private Sub RadTreeView1_SelectedNodeChanged(ByVal sender As Object, ByVal e As RadTreeViewEventArgs)
+        If Not e.Node.Tag Is Nothing Then
+            Dim dw As DockWindow = Me.RadDock1(e.Node.Tag.ToString())
+            If Not dw Is Nothing Then
+                Me.RadDock1.ActiveWindow = dw
+            End If
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -191,7 +210,7 @@ Press __F5__ to run the application. Try experimenting with...
             
 
 * Pressing __Ctrl-Tab__ to invoke the
-              [Quick Navigator]({%slug dock-architecture-and-features-quick-navigator%}).
+              [Quick Navigator]({%slug winforms/dock/architecture-and-features/quick-navigator%}).
             
 
 * Pinning and un-pinning the __DockWindow__.
@@ -199,35 +218,26 @@ Press __F5__ to run the application. Try experimenting with...
 
 * Using the __ToolWindow__ and __DocumentWindow__ menus by clicking the downward arrows.
             
-<table><th><tr><td>
 
-RELATED VIDEOS
-                </td><td></td></tr></th><tr><td>
 
-The new and
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|The new and
                 improved RadDock for WinForms has landed and this is your
                 opportunity to get a first look. Join Developer Evangelist John
                 Kellar as he shows you how quickly you can get up and running
                 with the new version of RadDock. John will cover the new
                 features so you know what to expect and how you can use RadDock
                 in your applications once it is officially released. (Runtime:
-                32:54)
-              
-
-[
+                32:54)[
                     Introducing the new RadDock for WinForms
-                  ](http://tv.telerik.com/winforms/raddock/introducing-new-raddock-winforms)![dock-getting-started 004](images/dock-getting-started004.png)</td><td>
-
-In this
+                  ](http://tv.telerik.com/winforms/raddock/introducing-new-raddock-winforms)![dock-getting-started 004](images/dock-getting-started004.png)|In this
                 video, you will learn how to get started with the run-time and
                 design-time features in the new RadDock for WinForms. You will
                 see the rich RadDock run-time features in action and you will
                 see how easy it is to get started with RadDock in Visual
                 Studio. You will also be introduced to the new Advanced Layout
                 Designer for RadDock, a design-time tool that makes it easy to
-                customize yoru RadDock layouts. (Runtime: 09:42)
-              
-
-[
+                customize yoru RadDock layouts. (Runtime: 09:42)[
                     Getting Started with RadDock for WinForms
-                  ](http://tv.telerik.com/winforms/raddock/getting-started-with-raddock-winforms)![dock-getting-started 005](images/dock-getting-started005.png)</td></tr></table>
+                  ](http://tv.telerik.com/winforms/raddock/getting-started-with-raddock-winforms)![dock-getting-started 005](images/dock-getting-started005.png)|

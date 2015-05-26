@@ -1,14 +1,14 @@
 ---
-title: Overview
-page_title: Overview
+title: Scheduler Navigator Overview
+page_title: Overview | UI for WinForms Documentation
 description: Overview
-slug: scheduler-scheduler-navigator-overview
+slug: winforms/scheduler/scheduler-navigator/overview
 tags: overview
 published: True
 position: 0
 ---
 
-# Overview
+# Scheduler Navigator Overview
 
 
 

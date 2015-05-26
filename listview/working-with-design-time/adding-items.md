@@ -1,8 +1,8 @@
 ---
 title: Adding items
-page_title: Adding items
+page_title: Adding items | UI for WinForms Documentation
 description: Adding items
-slug: listview-working-with-design-time-adding-items
+slug: winforms/listview/working-with-design-time/adding-items
 tags: adding,items
 published: True
 position: 2

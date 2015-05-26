@@ -1,8 +1,8 @@
 ---
 title: MDI
-page_title: MDI
+page_title: MDI | UI for WinForms Documentation
 description: MDI
-slug: forms-and-dialogs-form-mdi
+slug: winforms/forms-and-dialogs/form/mdi
 tags: mdi
 published: True
 position: 2
@@ -18,57 +18,61 @@ RadForm can be used in Multiple Document Interface (MDI) scenarios. With MDI, a 
 
 ## Adding MDI Child Forms to RadForm
 
-The following code snippet adds three __RadForm__instances to a MDI container and applies different theme to each child:
+The following code snippet adds three __RadForm__instances to a MDI container and applies different theme to each child:#_[C#] Adding RadForm MDI children to RadForm _
 
-#### __[C#] Adding RadForm MDI children to RadForm __
-
-{{source=..\SamplesCS\Forms and Dialogs\Form1.cs region=addingMDIChildFormsToAForm}}
-	            this.IsMdiContainer = true;
-	             
-	            RadForm form = new RadForm();
-	            form.Text = "MDI Child 1";
-	            form.MdiParent = this;
-	            form.ThemeName = "Desert";
-	            form.Show();
-	             
-	            form = new RadForm();
-	            form.Text = "MDI Child 2";
-	            form.MdiParent = this;
-	            form.ThemeName = "Office2007Black";
-	            form.Show();
-	             
-	            form = new RadForm();
-	            form.Text = "MDI Child 3";
-	            form.MdiParent = this;
-	            form.ThemeName = "TelerikMetro";
-	            form.Show();
-	{{endregion}}
-
-
-
-#### __[VB.NET] Adding RadForm MDI children to RadForm__
-
-{{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=addingMDIChildFormsToAForm}}
-	        Me.IsMdiContainer = True
 	
-	        Dim form As New RadForm()
-	        form.Text = "MDI Child 1"
-	        form.MdiParent = Me
-	        form.ThemeName = "Desert"
-	        form.Show()
-	
-	        form = New RadForm()
-	        form.Text = "MDI Child 2"
-	        form.MdiParent = Me
-	        form.ThemeName = "Office2007Black"
-	        form.Show()
-	
-	        form = New RadForm()
-	        form.Text = "MDI Child 3"
-	        form.MdiParent = Me
-	        form.ThemeName = "TelerikMetro"
-	        form.Show()
-	{{endregion}}
+
+
+
+{{source=..\SamplesCS\Forms and Dialogs\Form1.cs region=addingMDIChildFormsToAForm}} 
+{{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=addingMDIChildFormsToAForm}} 
+
+````C#
+            this.IsMdiContainer = true;
+             
+            RadForm form = new RadForm();
+            form.Text = "MDI Child 1";
+            form.MdiParent = this;
+            form.ThemeName = "Desert";
+            form.Show();
+             
+            form = new RadForm();
+            form.Text = "MDI Child 2";
+            form.MdiParent = this;
+            form.ThemeName = "Office2007Black";
+            form.Show();
+             
+            form = new RadForm();
+            form.Text = "MDI Child 3";
+            form.MdiParent = this;
+            form.ThemeName = "TelerikMetro";
+            form.Show();
+````
+````VB.NET
+        Me.IsMdiContainer = True
+
+        Dim form As New RadForm()
+        form.Text = "MDI Child 1"
+        form.MdiParent = Me
+        form.ThemeName = "Desert"
+        form.Show()
+
+        form = New RadForm()
+        form.Text = "MDI Child 2"
+        form.MdiParent = Me
+        form.ThemeName = "Office2007Black"
+        form.Show()
+
+        form = New RadForm()
+        form.Text = "MDI Child 3"
+        form.MdiParent = Me
+        form.ThemeName = "TelerikMetro"
+        form.Show()
+        '
+````
+
+{{endregion}} 
+
 
 
 

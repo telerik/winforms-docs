@@ -1,8 +1,8 @@
 ---
 title: Adding the Control Spy to Your Application
-page_title: Adding the Control Spy to Your Application
+page_title: Adding the Control Spy to Your Application | UI for WinForms Documentation
 description: Adding the Control Spy to Your Application
-slug: tools-controlspy-adding-the-control-spy-to-your-application
+slug: winforms/tools/controlspy/adding-the-control-spy-to-your-application
 tags: adding,the,control,spy,to,your,application
 published: True
 position: 2

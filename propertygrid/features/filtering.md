@@ -1,8 +1,8 @@
 ---
 title: Filtering
-page_title: Filtering
+page_title: Filtering | UI for WinForms Documentation
 description: Filtering
-slug: propertygrid-features-filtering
+slug: winforms/propertygrid/features/filtering
 tags: filtering
 published: True
 position: 0
@@ -40,22 +40,26 @@ You can filter by the following criteria’s:
 
 * __Description__ - this is determined by the property __Description__ attribute/
 
-* __OriginalValue__ - the value used when the property is initialized.
+* __OriginalValue__ - the value used when the property is initialized.#_[C#] Adding a filter descriptor_
 
-#### __[C#] Adding a filter descriptor__
-
-{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridFiltering.cs region=Filtering}}
-	            FilterDescriptor filter = new FilterDescriptor("Name", FilterOperator.Contains, "size");
-	            radPropertyGrid1.FilterDescriptors.Add(filter);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Adding a filter descriptor__
+{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridFiltering.cs region=Filtering}} 
+{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridFiltering.vb region=Filtering}} 
 
-{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridFiltering.vb region=Filtering}}
-	        Dim filter = New FilterDescriptor("Name", FilterOperator.Contains, "size")
-	        RadPropertyGrid1.FilterDescriptors.Add(filter)
-	{{endregion}}
+````C#
+            FilterDescriptor filter = new FilterDescriptor("Name", FilterOperator.Contains, "size");
+            radPropertyGrid1.FilterDescriptors.Add(filter);
+````
+````VB.NET
+        Dim filter = New FilterDescriptor("Name", FilterOperator.Contains, "size")
+        RadPropertyGrid1.FilterDescriptors.Add(filter)
+        '
+````
+
+{{endregion}} 
+
 
 ![propertygrid-features-filtering 002](images/propertygrid-features-filtering002.png)

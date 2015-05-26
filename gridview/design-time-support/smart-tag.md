@@ -1,8 +1,8 @@
 ---
 title: Smart Tag
-page_title: Smart Tag
+page_title: Smart Tag | UI for WinForms Documentation
 description: Smart Tag
-slug: gridview-design-time-support-smart-tag
+slug: winforms/gridview/design-time-support/smart-tag
 tags: smart,tag
 published: True
 position: 0
@@ -51,7 +51,7 @@ The Smart Tag for RadGridView lets you quickly access common tasks involved with
 
 * __Enable Column Reordering:__Lets the user to reorder the columns by his discretion.
 
-* __Open__[Property Builder]({%slug gridview-design-time-support-property-builder%}): 
+* __Open__[Property Builder]({%slug winforms/gridview/design-time-support/property-builder%}): 
             Use the Property Builder to quickly create and arrange grid structure and appearance.
 
 * __Best Fit Columns:__Sets the size of the columns to best fit to their content.

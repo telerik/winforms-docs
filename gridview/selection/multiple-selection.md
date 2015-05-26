@@ -1,8 +1,8 @@
 ---
 title: Multiple Selection
-page_title: Multiple Selection
+page_title: Multiple Selection | UI for WinForms Documentation
 description: Multiple Selection
-slug: gridview-selection-multiple-selection
+slug: winforms/gridview/selection/multiple-selection
 tags: multiple,selection
 published: True
 position: 1
@@ -21,23 +21,27 @@ RadGridView allows the user to select more than one item at a
 
 In order to enable multiple row selection, after setting the 
         MultiSelect property to true, you have
-        to set the SelectionMode to GridViewSelectionMode.FullRowSelect:
+        to set the SelectionMode to GridViewSelectionMode.FullRowSelect:#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=multipleRowSelection}}
-	            radGridView1.MultiSelect = true;
-	            radGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=multipleRowSelection}} 
+{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=multipleRowSelection}} 
 
-{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=multipleRowSelection}}
-	        RadGridView1.MultiSelect = True
-	        RadGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect
-	{{endregion}}
+````C#
+            radGridView1.MultiSelect = true;
+            radGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect;
+````
+````VB.NET
+        RadGridView1.MultiSelect = True
+        RadGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -58,23 +62,27 @@ All the selected rows are
 ## Multiple cell selection
 
 In order to enable multiple cell selection, after setting the MultiSelect property to true, 
-        you have to set the SelectionMode to GridViewSelectionMode.CellSelect:
+        you have to set the SelectionMode to GridViewSelectionMode.CellSelect:#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=multipleCellSelection}}
-	            radGridView1.MultiSelect = true;
-	            radGridView1.SelectionMode = GridViewSelectionMode.CellSelect;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=multipleCellSelection}} 
+{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=multipleCellSelection}} 
 
-{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=multipleCellSelection}}
-	        RadGridView1.MultiSelect = True
-	        RadGridView1.SelectionMode = GridViewSelectionMode.CellSelect
-	{{endregion}}
+````C#
+            radGridView1.MultiSelect = true;
+            radGridView1.SelectionMode = GridViewSelectionMode.CellSelect;
+````
+````VB.NET
+        RadGridView1.MultiSelect = True
+        RadGridView1.SelectionMode = GridViewSelectionMode.CellSelect
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -100,21 +108,25 @@ In case you do not want to see the TranslucentRectangle
       when making such a selection, but still have this functionality 
       working, simply set the __ShowTranslucentSelectionRectangle__
       property of the TableElement to *false*:
-      
+      #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=transRectangle}}
-	            radGridView1.TableElement.ShowTranslucentSelectionRectangle = false;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=transRectangle}} 
+{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=transRectangle}} 
 
-{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=transRectangle}}
-	        RadGridView1.TableElement.ShowTranslucentSelectionRectangle = False
-	{{endregion}}
+````C#
+            radGridView1.TableElement.ShowTranslucentSelectionRectangle = false;
+````
+````VB.NET
+        RadGridView1.TableElement.ShowTranslucentSelectionRectangle = False
+        '
+````
+
+{{endregion}} 
+
 
 
 

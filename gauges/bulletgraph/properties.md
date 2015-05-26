@@ -1,8 +1,8 @@
 ---
 title: Properties
-page_title: Properties
+page_title: Properties | UI for WinForms Documentation
 description: Properties
-slug: bulletgraph-properties
+slug: winforms/gauges/bulletgraph/properties
 tags: properties
 published: True
 position: 2

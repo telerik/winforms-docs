@@ -1,8 +1,8 @@
 ---
 title: Adding Appointments
-page_title: Adding Appointments
+page_title: Adding Appointments | UI for WinForms Documentation
 description: Adding Appointments
-slug: scheduler-end-user-functionality-adding-appointments
+slug: winforms/scheduler/end-user-functionality/adding-appointments
 tags: adding,appointments
 published: True
 position: 1
@@ -18,7 +18,9 @@ Much like Microsoft Outlook, RadScheduler for WinForms offers several ways of cr
 
 * By using the context menu.
 
->You can prohibit end-users from creating, moving, resizing, and copying scheduled appointments.
+>note You can prohibit end-users from creating, moving, resizing, and copying scheduled appointments.
+>
+
 
 ## Adding an appointment by double-clicking on the scheduler surface
 

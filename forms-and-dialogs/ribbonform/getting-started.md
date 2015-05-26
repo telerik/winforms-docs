@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: forms-and-dialogs-ribbonform-getting-started
+slug: winforms/forms-and-dialogs/ribbonform/getting-started
 tags: getting,started
 published: True
 position: 0

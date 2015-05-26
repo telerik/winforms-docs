@@ -1,8 +1,8 @@
 ---
 title: ZipLibrary
-page_title: ZipLibrary
+page_title: ZipLibrary | UI for WinForms Documentation
 description: ZipLibrary
-slug: ziplibrary
+slug: winforms/ziplibrary
 tags: ziplibrary
 published: True
 position: 49

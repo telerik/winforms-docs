@@ -1,8 +1,8 @@
 ---
 title: Creating a RadPanel with Gradient Background
-page_title: Creating a RadPanel with Gradient Background
+page_title: Creating a RadPanel with Gradient Background | UI for WinForms Documentation
 description: Creating a RadPanel with Gradient Background
-slug: panels-and-labels-panel-creating-a-radpanel-with-gradient-background
+slug: winforms/panels-and-labels/panel/creating-a-radpanel-with-gradient-background
 tags: creating,a,radpanel,with,gradient,background
 published: True
 position: 1

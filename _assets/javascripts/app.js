@@ -85,6 +85,42 @@ function onExpand(e) {
 }
 
 $(function(){
+	 $("div.tabbedCode").each(function() {
+        var container = $(this);
+        var langs = container.find("pre");
+        var tabs = $.map(langs, function(item) {
+            return $("<li>").text($(item).attr("lang"));
+        });
+
+        tabs[0].addClass("k-state-active");
+
+        var tabstrip = $("<div>")
+                        .append($("<ul>").append(tabs))
+                        .append(langs);
+
+        container.replaceWith(tabstrip);
+
+        langs.wrap("<div>");
+
+        tabstrip.kendoTabStrip({ animation: false });
+    });
+
+    var codeSampleMapper = {
+        'C#': 'cs',
+        'VB.NET': 'vb',
+        'VB': 'vb',
+        'JavaScript': 'js',
+        'ASPNET': 'html',
+        'XML': 'xml',
+        'TypeScript': 'commonjs',
+    }
+
+    $("pre").each(function(index) {
+        var langExtension = codeSampleMapper[$(this).attr('lang')];
+        $(this).addClass('lang-' + langExtension).addClass("prettyprint");
+    });
+	
+	
     $("pre").addClass("prettyprint");
 
     prettyPrint();

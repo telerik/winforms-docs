@@ -1,8 +1,8 @@
 ---
 title: Arranging DockWindows
-page_title: Arranging DockWindows
+page_title: Arranging DockWindows | UI for WinForms Documentation
 description: Arranging DockWindows
-slug: dock-architecture-and-features-arranging-dockwindows
+slug: winforms/dock/architecture-and-features/arranging-dockwindows
 tags: arranging,dockwindows
 published: True
 position: 1
@@ -24,7 +24,7 @@ A ToolTabStrip container can include one or more __ToolWindows__. You can drag
 
 * From a floating ToolTabStrip to a docked ToolTabStrip. 
 
-To move a __ToolWindow__, drag its title bar from the source location to the new target (or host) container. The [Docking Assistant]({%slug dock-architecture-and-features-docking-assistant%}) allows you to place the __ToolWindow__ in a specific relationship to the other panels.![dock-architecture-and-features-arranging-dockwindows 001](images/dock-architecture-and-features-arranging-dockwindows001.png)
+To move a __ToolWindow__, drag its title bar from the source location to the new target (or host) container. The [Docking Assistant]({%slug winforms/dock/architecture-and-features/docking-assistant%}) allows you to place the __ToolWindow__ in a specific relationship to the other panels.![dock-architecture-and-features-arranging-dockwindows 001](images/dock-architecture-and-features-arranging-dockwindows001.png)
 
 In addition to moving __ToolWindows__ in different ToolTabStrip containers, you can use the context menu or "pin" icon in the DockPanel title bar to make window auto-hidden. This mode collapses the window against an edge of the RadDock. Another option is to move a ToolWindow to a container with tabbed documents. Both of these options:
 
@@ -49,4 +49,7 @@ To complete the resize, release the mouse button, dropping the splitter bar in i
 ## Resize Floating Containers
 
 To resize a floating docking container, drag the edges of the floating window. __ToolWindow__ within the container can be resized in the same manner as within any other docking container.
-<table><tr><td>![dock-architecture-and-features-arranging-dockwindows 006](images/dock-architecture-and-features-arranging-dockwindows006.png)</td><td>![dock-architecture-and-features-arranging-dockwindows 007](images/dock-architecture-and-features-arranging-dockwindows007.png)</td></tr></table>
+
+
+
+|![dock-architecture-and-features-arranging-dockwindows 006](images/dock-architecture-and-features-arranging-dockwindows006.png)|![dock-architecture-and-features-arranging-dockwindows 007](images/dock-architecture-and-features-arranging-dockwindows007.png)|

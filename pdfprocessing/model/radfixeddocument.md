@@ -1,8 +1,8 @@
 ---
 title: RadFixedDocument
-page_title: RadFixedDocument
+page_title: RadFixedDocument | UI for WinForms Documentation
 description: RadFixedDocument
-slug: pdfprocessing-model-radfixeddocument
+slug: winforms/pdfprocessing/model/radfixeddocument
 tags: radfixeddocument
 published: True
 position: 0
@@ -12,7 +12,7 @@ position: 0
 
 
 
-__RadFixedDocument__ hosts fixed document content and is the root element in the document elements tree. It holds a collection of [RadFixedPage]({%slug pdfprocessing-model-radfixedpage%})  elements.
+__RadFixedDocument__ hosts fixed document content and is the root element in the document elements tree. It holds a collection of [RadFixedPage]({%slug winforms/pdfprocessing/model/radfixedpage%})  elements.
       
 
 This article will get you familiar with the basics of __RadFixedDocument__. It contains the following sections:
@@ -32,31 +32,35 @@ __RadFixedDocument__ is the root that contains all other elements in the __RadPd
 * __Pages__: The pages collection that contains all __RadFixedPages__ in the document.
             
 
-* __Annotations__: A read-only collection that contains all [Annotations]({%slug pdfprocessing-model-annotations-and-destinations%}) in the document.
+* __Annotations__: A read-only collection that contains all [Annotations]({%slug winforms/pdfprocessing/model/-annotations-and-destinations%}) in the document.
             
 
-* __Destinations__: A collection that contains all [Destinations]({%slug pdfprocessing-model-annotations-and-destinations%}) in the document.
+* __Destinations__: A collection that contains all [Destinations]({%slug winforms/pdfprocessing/model/-annotations-and-destinations%}) in the document.
             
 
 * __DocumentInfo__: Contains additional meta information about the document like author, title, etc. 
             
 
 __Example 1__ shows how you can create a new __RadFixedDocument__ instance.
-        
+        #_[C#] Example 1: Create RadFixedDocument_
 
-#### __[C#] Example 1: Create RadFixedDocument__
-
-{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=radpdfprocessing-model-radfixeddocument_0}}
-	            RadFixedDocument document = new RadFixedDocument();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 1: Create RadFixedDocument__
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=radpdfprocessing-model-radfixeddocument_0}} 
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_0}} 
 
-{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_0}}
-	        Dim document As RadFixedDocument = New RadFixedDocument()
-	{{endregion}}
+````C#
+            RadFixedDocument document = new RadFixedDocument();
+````
+````VB.NET
+        Dim document As RadFixedDocument = New RadFixedDocument()
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -66,21 +70,25 @@ There are different actions which you can execute with the help of a __RadFixedD
         
 
 __Example 2__ adds a page to the document created in __Example 1__.
-        
+        #_[C#] Example 2: Add page to RadFixedDocument_
 
-#### __[C#] Example 2: Add page to RadFixedDocument__
-
-{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=radpdfprocessing-model-radfixeddocument_1}}
-	            RadFixedPage page = document.Pages.AddPage();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 2: Add page to RadFixedDocument__
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=radpdfprocessing-model-radfixeddocument_1}} 
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_1}} 
 
-{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_1}}
-	        Dim page As RadFixedPage = document.Pages.AddPage()
-	{{endregion}}
+````C#
+            RadFixedPage page = document.Pages.AddPage();
+````
+````VB.NET
+        Dim page As RadFixedPage = document.Pages.AddPage()
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -88,23 +96,27 @@ Alternatively, you can create new __RadFixedPage__ and add it to the __Pages__ c
         
 
 __Example 3__ creates a page and adds it to the document created in __Example 1__.
-        
+        #_[C#] Example 3: Create and add a page to RadFixedDocument_
 
-#### __[C#] Example 3: Create and add a page to RadFixedDocument__
-
-{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=radpdfprocessing-model-radfixeddocument_2}}
-	            RadFixedPage page = new RadFixedPage();
-	            document.Pages.Add(page);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 3: Create and add a page to RadFixedDocument__
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=radpdfprocessing-model-radfixeddocument_2}} 
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_2}} 
 
-{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_2}}
-	        Dim page As RadFixedPage = New RadFixedPage()
-	        document.Pages.Add(page)
-	{{endregion}}
+````C#
+            RadFixedPage page = new RadFixedPage();
+            document.Pages.Add(page);
+````
+````VB.NET
+        Dim page As RadFixedPage = New RadFixedPage()
+        document.Pages.Add(page)
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -121,32 +133,36 @@ __RadFixedDocument__ exposes a __DocumentInfo__ property of type __RadFixedDocum
             
 
 * __Description__: Text that describes the content of the document.
-            
+            #_[C#] Example 4: Set DocumentInfo_
 
-#### __[C#] Example 4: Set DocumentInfo__
-
-{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=DocInfo}}
-	            document.DocumentInfo.Author = "Jane Doe";
-	            document.DocumentInfo.Title = "RadFixedDocument";
-	            document.DocumentInfo.Description = "This document is intended to explain the RadFixedDocument class from the RadPdfProcessing library";
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 4: Set DocumentInfo__
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=DocInfo}} 
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=DocInfo}} 
 
-{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=DocInfo}}
-	        document.DocumentInfo.Author = "Jane Doe"
-	        document.DocumentInfo.Title = "RadFixedDocument"
-	        document.DocumentInfo.Description = "This document is intended to explain the RadFixedDocument class from the RadPdfProcessing library"
-	{{endregion}}
+````C#
+            document.DocumentInfo.Author = "Jane Doe";
+            document.DocumentInfo.Title = "RadFixedDocument";
+            document.DocumentInfo.Description = "This document is intended to explain the RadFixedDocument class from the RadPdfProcessing library";
+````
+````VB.NET
+        document.DocumentInfo.Author = "Jane Doe"
+        document.DocumentInfo.Title = "RadFixedDocument"
+        document.DocumentInfo.Description = "This document is intended to explain the RadFixedDocument class from the RadPdfProcessing library"
+        '
+````
+
+{{endregion}} 
+
 
 
 
 # See Also
 
- * [Model]({%slug pdfprocessing-model%})
+ * [Model]({%slug winforms/pdfprocessing/model%})
 
- * [RadFixedPage]({%slug pdfprocessing-model-radfixedpage%})
+ * [RadFixedPage]({%slug winforms/pdfprocessing/model/radfixedpage%})
 
- * [ Annotations and Destinations]({%slug pdfprocessing-model-annotations-and-destinations%})
+ * [ Annotations and Destinations]({%slug winforms/pdfprocessing/model/-annotations-and-destinations%})

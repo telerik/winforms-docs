@@ -1,8 +1,8 @@
 ---
 title: End-user functionalities
-page_title: End-user functionalities
+page_title: End-user functionalities | UI for WinForms Documentation
 description: End-user functionalities
-slug: pivotgrid-end-user-functionalities
+slug: winforms/pivotgrid/end-user-functionalities
 tags: end-user,functionalities
 published: True
 position: 11

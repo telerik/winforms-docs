@@ -1,8 +1,8 @@
 ---
 title: PopupEditor
-page_title: PopupEditor
+page_title: PopupEditor | UI for WinForms Documentation
 description: PopupEditor
-slug: editors-popupeditor
+slug: winforms/editors/popupeditor
 tags: popupeditor
 published: False
 position: 10

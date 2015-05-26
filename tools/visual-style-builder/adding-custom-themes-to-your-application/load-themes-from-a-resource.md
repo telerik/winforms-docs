@@ -1,8 +1,8 @@
 ---
 title: Load Themes from a Resource
-page_title: Load Themes from a Resource
+page_title: Load Themes from a Resource | UI for WinForms Documentation
 description: Load Themes from a Resource
-slug: tools-visual-style-builder-adding-custom-themes-to-your-application-load-themes-from-a-resource
+slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-a-resource
 tags: load,themes,from,a,resource
 published: True
 position: 2

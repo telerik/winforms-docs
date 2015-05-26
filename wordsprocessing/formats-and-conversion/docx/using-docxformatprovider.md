@@ -1,8 +1,8 @@
 ---
 title: Using DocxFormatProvider
-page_title: Using DocxFormatProvider
+page_title: Using DocxFormatProvider | UI for WinForms Documentation
 description: Using DocxFormatProvider
-slug: wordsprocessing-formats-and-conversion-docx-using-docxformatprovider
+slug: winforms/wordsprocessing/formats-and-conversion/docx/using-docxformatprovider
 tags: using,docxformatprovider
 published: True
 position: 1
@@ -34,48 +34,44 @@ In order to import a docx document you need to use the __Import()__ method of __
         
 
 The following code snippet shows how to use __DocxFormatProvider__ to import a docx document from a file:
-        
+        #_[C#] Example 1:_
 
-#### __[C#] Example 1:__
-
-{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.cs region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_0}}
-	            
-	            DocxFormatProvider provider = new DocxFormatProvider();
-	            using (Stream input = File.OpenRead("Sample.docx"))
-	            {
-	                RadFlowDocument document = provider.Import(input);
-	            }
-	        
-	{{endregion}}
+	
 
 
 
-#### __[VB] Example 1:__
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.cs region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_0}} 
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.vb region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.vb region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_0}}
-	        Dim provider As New DocxFormatProvider()
-	        Using input As Stream = File.OpenRead("Sample.docx")
-	            Dim document As RadFlowDocument = provider.Import(input)
-	        End Using
-	{{endregion}}
+````C#
+            
+            DocxFormatProvider provider = new DocxFormatProvider();
+            using (Stream input = File.OpenRead("Sample.docx"))
+            {
+                RadFlowDocument document = provider.Import(input);
+            }
+````
+````VB.NET
+        Dim provider As New DocxFormatProvider()
+        Using input As Stream = File.OpenRead("Sample.docx")
+            Dim document As RadFlowDocument = provider.Import(input)
+        End Using
+        '
+````
+
+{{endregion}} 
+
 
 
 
 And here is how you can import a document from byte array containing the docx document:
-        
+        #_[C#] Example 2:_
 
-#### __[C#] Example 2:__
+	
 
+#_[VB] Example 2:_
 
-
-
-
-#### __[VB] Example 2:__
-
-{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.vb region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_1}}
-	        Dim provider As New DocxFormatProvider()
-	        Dim document As RadFlowDocument = provider.Import(input)
-	{{endregion}}
+	
 
 
 
@@ -88,43 +84,24 @@ In order to export a document to docx you need to use the __Export()__ method of
         
 
 The following snippet shows how to use __DocxFormatProvider__ to export __RadFlowDocument__ to a file.
-        
+        #_[C#] Example 3:_
 
-#### __[C#] Example 3:__
+	
 
+#_[VB] Example 3:_
 
-
-
-
-#### __[VB] Example 3:__
-
-{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.vb region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_2}}
-	        Dim provider As New DocxFormatProvider()
-	        Using output As Stream = File.OpenWrite("Sample.docx")
-	            Dim document As RadFlowDocument = CreateRadFlowDocument()
-	            provider.Export(document, output)
-	        End Using
-	{{endregion}}
+	
 
 
 
 You can also export the document to a byte array and preserve it in a database.
-        
+        #_[C#] Example 4:_
 
-#### __[C#] Example 4:__
-
-
-
-
-
-#### __[VB] Example 4:__
-
-{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.vb region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_3}}
-	        Dim provider As New DocxFormatProvider()
 	
-	        Dim document As RadFlowDocument = CreateRadFlowDocument()
-	        Dim output As Byte() = provider.Export(document)
-	{{endregion}}
+
+#_[VB] Example 4:_
+
+	
 
 
 

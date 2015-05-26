@@ -1,8 +1,8 @@
 ---
 title: Tutorial Creating a Slide Viewer with RadRotator
-page_title: Tutorial Creating a Slide Viewer with RadRotator
+page_title: Tutorial Creating a Slide Viewer with RadRotator | UI for WinForms Documentation
 description: Tutorial Creating a Slide Viewer with RadRotator
-slug: rotator-tutorial-creating-a-slide-viewer-with-radrotator
+slug: winforms/rotator/tutorial:-creating-a-slide-viewer-with-radrotator
 tags: tutorial,creating,a,slide,viewer,with,radrotator
 published: True
 position: 2
@@ -34,13 +34,9 @@ The following tutorial demonstrates programmatically loading images from your "M
 1. Navigate to the code view of the default form.
 
 1. *If you are working in C#* : Change the declaration of the form so that it derives from the __Telerik.WinControls.UI.RadForm__ class.
-            
+            #_[C#] Inherit from RadForm_
 
-#### __[C#] Inherit from RadForm__
-
-{{source=..\SamplesCS\Rotator\TutorialCreatingASlideViewerWithRadRotator.cs region=inheritFromRadForm}}
-	    public partial class TutorialCreatingASlideViewerWithRadRotator : RadForm
-	{{endregion}}
+	
 
 
 
@@ -57,12 +53,20 @@ The following tutorial demonstrates programmatically loading images from your "M
 1. Change the declaration in the Form1.Designer.vb file so that it derives from the __Telerik.WinControls.UI.RadForm__ class:
             
 
-#### __[VB.NET] Inherit from RadForm__
+{{source=..\SamplesCS\Rotator\TutorialCreatingASlideViewerWithRadRotator.cs region=inheritFromRadForm}} 
+{{source=..\SamplesVB\Rotator\TutorialCreatingASlideViewerWithRadRotator.Designer.vb region=inheritFromRadForm}} 
 
-{{source=..\SamplesVB\Rotator\TutorialCreatingASlideViewerWithRadRotator.Designer.vb region=inheritFromRadForm}}
-	Partial Class TutorialCreatingASlideViewerWithRadRotator
-	    Inherits Telerik.WinControls.UI.RadForm
-	{{endregion}}
+````C#
+    public partial class TutorialCreatingASlideViewerWithRadRotator : RadForm
+````
+````VB.NET
+Partial Class TutorialCreatingASlideViewerWithRadRotator
+    Inherits Telerik.WinControls.UI.RadForm
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -73,94 +77,98 @@ The following tutorial demonstrates programmatically loading images from your "M
                 The code here uses the System.IO Directory object GetFiles()
                 method to retrieve all "*.jpg" file paths. The file paths are passed to a GetThumbNail() method that will be described next. GetThumbNail() returns an ImageItem that is
                 added to the RadRotator items collection. Once the image items are loaded the Start() method is called to begin animation.
-              *
+              *#_[C#] Rotator example_
 
-#### __[C#] Rotator example__
-
-{{source=..\SamplesCS\Rotator\TutorialCreatingASlideViewerWithRadRotator.cs region=rotatorExample}}
-	        public TutorialCreatingASlideViewerWithRadRotator()
-	        {
-	            InitializeComponent();
-	            radRotator1.BeginRotate += new BeginRotateEventHandler(radRotator1_BeginRotate);
-	        }
 	
-	        private void TutorialCreatingASlideViewerWithRadRotator_Load(object sender, EventArgs e)
-	        {
-	            string myPicturesPath = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
-	            foreach (string fileName in Directory.GetFiles(myPicturesPath, "*.jpg"))
-	            {
-	                radRotator1.Items.Add(GetThumbNail(fileName));
-	            }
-	            radRotator1.Start(true);
-	            radRotator1.ShouldStopOnMouseOver = false;
-	        }
-	
-	        private RadImageItem GetThumbNail(string path)
-	        {
-	            RadImageItem imageItem = new RadImageItem();
-	            Image image = Image.FromFile(path);
-	            // workaround to prevent using internal image thumbnail
-	            image.RotateFlip(System.Drawing.RotateFlipType.Rotate180FlipNone);
-	            image.RotateFlip(System.Drawing.RotateFlipType.Rotate180FlipNone);
-	            // calculate aspect ratio so image is not distorted
-	            double ratio = 0;
-	            if (image.Width > image.Height)
-	            {
-	                ratio = ClientRectangle.Width / image.Width;
-	            }
-	            else
-	            {
-	                ratio = ClientRectangle.Height / image.Height;
-	            }
-	            int newWidth = (int)(image.Width * ratio);
-	            int newHeight = (int)(image.Height * ratio);
-	            imageItem.Image = image.GetThumbnailImage(newWidth, newHeight, null, IntPtr.Zero);
-	            return imageItem;
-	        }
-	
-	        void radRotator1_BeginRotate(object sender, BeginRotateEventArgs e)
-	        {
-	            radLabelElement1.Text = String.Format("Rotating from item {0} to {1}", e.From, e.To);
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET] Rotator example__
+{{source=..\SamplesCS\Rotator\TutorialCreatingASlideViewerWithRadRotator.cs region=rotatorExample}} 
+{{source=..\SamplesVB\Rotator\TutorialCreatingASlideViewerWithRadRotator.vb region=rotatorExample}} 
 
-{{source=..\SamplesVB\Rotator\TutorialCreatingASlideViewerWithRadRotator.vb region=rotatorExample}}
-	    Private Sub TutorialCreatingASlideViewerWithRadRotator_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.Load
-	        Dim myPicturesPath As String = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures)
-	        For Each fileName As String In Directory.GetFiles(myPicturesPath, "*.jpg")
-	            RadRotator1.Items.Add(GetThumbNail(fileName))
-	        Next
-	        RadRotator1.Start(True)
-	        RadRotator1.ShouldStopOnMouseOver = False
-	    End Sub
-	
-	    Private Function GetThumbNail(ByVal path As String) As RadImageItem
-	        Dim imageItem As New RadImageItem()
-	        Dim image As Image = image.FromFile(path)
-	        ' workaround to prevent using internal image thumbnail
-	        image.RotateFlip(System.Drawing.RotateFlipType.Rotate180FlipNone)
-	        image.RotateFlip(System.Drawing.RotateFlipType.Rotate180FlipNone)
-	        ' calculate aspect ratio so image is not distorted
-	        Dim ratio As Double = 0
-	        If image.Width > image.Height Then
-	            ratio = ClientRectangle.Width / image.Width
-	        Else
-	            ratio = ClientRectangle.Height / image.Height
-	        End If
-	        Dim newWidth As Integer = Convert.ToInt32(image.Width * ratio)
-	        Dim newHeight As Integer = Convert.ToInt32(image.Height * ratio)
-	        imageItem.Image = image.GetThumbnailImage(newWidth, newHeight, Nothing, IntPtr.Zero)
-	        Return imageItem
-	    End Function
-	
-	    Private Sub RadRotator1_BeginRotate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.BeginRotateEventArgs) Handles RadRotator1.BeginRotate
-	        RadLabelElement1.Text = [String].Format("Rotating from item {0} to {1}", e.From, e.[To])
-	    End Sub
-	{{endregion}}
+````C#
+        public TutorialCreatingASlideViewerWithRadRotator()
+        {
+            InitializeComponent();
+            radRotator1.BeginRotate += new BeginRotateEventHandler(radRotator1_BeginRotate);
+        }
+
+        private void TutorialCreatingASlideViewerWithRadRotator_Load(object sender, EventArgs e)
+        {
+            string myPicturesPath = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+            foreach (string fileName in Directory.GetFiles(myPicturesPath, "*.jpg"))
+            {
+                radRotator1.Items.Add(GetThumbNail(fileName));
+            }
+            radRotator1.Start(true);
+            radRotator1.ShouldStopOnMouseOver = false;
+        }
+
+        private RadImageItem GetThumbNail(string path)
+        {
+            RadImageItem imageItem = new RadImageItem();
+            Image image = Image.FromFile(path);
+            // workaround to prevent using internal image thumbnail
+            image.RotateFlip(System.Drawing.RotateFlipType.Rotate180FlipNone);
+            image.RotateFlip(System.Drawing.RotateFlipType.Rotate180FlipNone);
+            // calculate aspect ratio so image is not distorted
+            double ratio = 0;
+            if (image.Width > image.Height)
+            {
+                ratio = ClientRectangle.Width / image.Width;
+            }
+            else
+            {
+                ratio = ClientRectangle.Height / image.Height;
+            }
+            int newWidth = (int)(image.Width * ratio);
+            int newHeight = (int)(image.Height * ratio);
+            imageItem.Image = image.GetThumbnailImage(newWidth, newHeight, null, IntPtr.Zero);
+            return imageItem;
+        }
+
+        void radRotator1_BeginRotate(object sender, BeginRotateEventArgs e)
+        {
+            radLabelElement1.Text = String.Format("Rotating from item {0} to {1}", e.From, e.To);
+        }
+````
+````VB.NET
+    Private Sub TutorialCreatingASlideViewerWithRadRotator_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.Load
+        Dim myPicturesPath As String = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures)
+        For Each fileName As String In Directory.GetFiles(myPicturesPath, "*.jpg")
+            RadRotator1.Items.Add(GetThumbNail(fileName))
+        Next
+        RadRotator1.Start(True)
+        RadRotator1.ShouldStopOnMouseOver = False
+    End Sub
+
+    Private Function GetThumbNail(ByVal path As String) As RadImageItem
+        Dim imageItem As New RadImageItem()
+        Dim image As Image = image.FromFile(path)
+        ' workaround to prevent using internal image thumbnail
+        image.RotateFlip(System.Drawing.RotateFlipType.Rotate180FlipNone)
+        image.RotateFlip(System.Drawing.RotateFlipType.Rotate180FlipNone)
+        ' calculate aspect ratio so image is not distorted
+        Dim ratio As Double = 0
+        If image.Width > image.Height Then
+            ratio = ClientRectangle.Width / image.Width
+        Else
+            ratio = ClientRectangle.Height / image.Height
+        End If
+        Dim newWidth As Integer = Convert.ToInt32(image.Width * ratio)
+        Dim newHeight As Integer = Convert.ToInt32(image.Height * ratio)
+        imageItem.Image = image.GetThumbnailImage(newWidth, newHeight, Nothing, IntPtr.Zero)
+        Return imageItem
+    End Function
+
+    Private Sub RadRotator1_BeginRotate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.BeginRotateEventArgs) Handles RadRotator1.BeginRotate
+        RadLabelElement1.Text = [String].Format("Rotating from item {0} to {1}", e.From, e.[To])
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 

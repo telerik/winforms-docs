@@ -1,8 +1,8 @@
 ---
 title: Resizing Columns
-page_title: Resizing Columns
+page_title: Resizing Columns | UI for WinForms Documentation
 description: Resizing Columns
-slug: gridview-end-user-capabilities-resizing-columns
+slug: winforms/gridview/end-user-capabilities/resizing-columns
 tags: resizing,columns
 published: True
 position: 7

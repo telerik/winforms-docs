@@ -1,8 +1,8 @@
 ---
 title: Binding to XML Data
-page_title: Binding to XML Data
+page_title: Binding to XML Data | UI for WinForms Documentation
 description: Binding to XML Data
-slug: treeview-data-binding-binding-to-xml-data
+slug: winforms/treeview/data-binding/binding-to-xml-data
 tags: binding,to,xml,data
 published: True
 position: 4
@@ -17,14 +17,12 @@ position: 4
 RadTreeView can consume XML data both by directly loading it
           ([
             see Serialize/Deserialize to XML
-          ]({%slug treeview-data-binding-serialize-deserialize-to-xml%})) or by loading it to a __DataSet__for binding. 
+          ]({%slug winforms/treeview/data-binding/serialize/deserialize-to-xml%})) or by loading it to a __DataSet__for binding. 
           The following example uses a sample "Table of contents" XML.
           Each node element in the table of contents has a "Title" element, "id" and "parentid".
         
 
-#### __[XML]__
-
-{{source=..\SamplesCS\TreeView\DataBinding\toc.xml region=sampleToc}}
+````xml
 	<Toc>
 	  <Node>
 	    <Title>Main Title</Title>
@@ -37,7 +35,7 @@ RadTreeView can consume XML data both by directly loading it
 	    <parentId>1</parentId>
 	  </Node>
 	</Toc>
-	{{endregion}}
+````
 
 
 
@@ -48,32 +46,12 @@ Assuming that "toc.xml" is in the TreeView\DataBinding directory which is relati
           __DisplayMember__property "Title". The ValueMember property
           is set to the "id" element and it will be available in the Value property of each RadTreeNode at runtime.
           The ParentMember and ChildMember properties define the relation between the records in the data source object:
-        ![treeview-data-binding-binding-to-xml-data 001](images/treeview-data-binding-binding-to-xml-data001.png)
+        ![treeview-data-binding-binding-to-xml-data 001](images/treeview-data-binding-binding-to-xml-data001.png)#_[C#]_
 
-#### __[C#]__
+	
 
-{{source=..\SamplesCS\TreeView\DataBinding\BindingToXmlData.cs region=toc}}
-	            DataSet tocDataSet = new DataSet("Toc");
-	            tocDataSet.ReadXml("TreeView\\DataBinding\\toc.xml");
-	            this.radTreeView1.DataMember = "Node";
-	            this.radTreeView1.DisplayMember = "Title";
-	            this.radTreeView1.ChildMember = "id";
-	            this.radTreeView1.ParentMember = "parentId";
-	            this.radTreeView1.DataSource = tocDataSet;
-	{{endregion}}
+#_[VB.NET]_
 
-
-
-#### __[VB.NET]__
-
-{{source=..\SamplesVB\TreeView\DataBinding\BindingToXmlData.vb region=toc}}
-	        Dim tocDataSet As DataSet = New DataSet("Toc")
-	        tocDataSet.ReadXml("TreeView\DataBinding\toc.xml")
-	        Me.RadTreeView1.DataMember = "Node"
-	        Me.RadTreeView1.DisplayMember = "Title"
-	        Me.RadTreeView1.ChildMember = "id"
-	        Me.RadTreeView1.ParentMember = "parentId"
-	        Me.RadTreeView1.DataSource = tocDataSet
-	{{endregion}}
+	
 
 

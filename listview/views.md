@@ -1,8 +1,8 @@
 ---
 title: Views
-page_title: Views
+page_title: Views | UI for WinForms Documentation
 description: Views
-slug: listview-views
+slug: winforms/listview/views
 tags: views
 published: True
 position: 1

@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: track-and-status-controls-waitingbar-getting-started
+slug: winforms/track-and-status-controls/waitingbar/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -54,41 +54,45 @@ Double-click the Click event.
 1. 
 
 Replace the automatically-generated event handler with this code:
-     
+     #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\TrackAndStatus\WaitingBar\WaitingGettingStarted.cs region=click}}
-	        private void radButton1_Click(object sender, EventArgs e)
-	        {
-	            if (radWaitingBar1.IsWaiting)
-	            {
-	                radWaitingBar1.StopWaiting();
-	                this.radButton1.Text = "Start";
-	            }
-	            else
-	            {
-	                radWaitingBar1.StartWaiting();
-	                this.radButton1.Text = "Stop";
-	            }
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\TrackAndStatus\WaitingBar\WaitingGettingStarted.cs region=click}} 
+{{source=..\SamplesVB\TrackAndStatus\WaitingBar\WaitingGettingStarted.vb region=click}} 
 
-{{source=..\SamplesVB\TrackAndStatus\WaitingBar\WaitingGettingStarted.vb region=click}}
-	    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        If RadWaitingBar1.IsWaiting Then
-	            RadWaitingBar1.StopWaiting()
-	            Me.RadButton1.Text = "Start"
-	        Else
-	            RadWaitingBar1.StartWaiting()
-	            Me.RadButton1.Text = "Stop"
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        private void radButton1_Click(object sender, EventArgs e)
+        {
+            if (radWaitingBar1.IsWaiting)
+            {
+                radWaitingBar1.StopWaiting();
+                this.radButton1.Text = "Start";
+            }
+            else
+            {
+                radWaitingBar1.StartWaiting();
+                this.radButton1.Text = "Stop";
+            }
+        }
+````
+````VB.NET
+    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+        If RadWaitingBar1.IsWaiting Then
+            RadWaitingBar1.StopWaiting()
+            Me.RadButton1.Text = "Start"
+        Else
+            RadWaitingBar1.StartWaiting()
+            Me.RadButton1.Text = "Stop"
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: GridPrintStyle
-page_title: GridPrintStyle
+page_title: GridPrintStyle | UI for WinForms Documentation
 description: GridPrintStyle
-slug: gridview-printing-support-gridprintstyle
+slug: winforms/gridview/printing-support/gridprintstyle
 tags: gridprintstyle
 published: True
 position: 0
@@ -44,79 +44,86 @@ You can customize the settings of the grid print job by setting the __PrintStyle
 
 * You can also set the header cells font, data cells font, group cells font and summary cells font.
 
-## Customizing GridPrintStyle
+## Customizing GridPrintStyle#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Printing support\GridPrintStyle1.cs region=PrintStyle}}
-	            GridPrintStyle style = new GridPrintStyle();
 	
-	            style.FitWidthMode = PrintFitWidthMode.FitPageWidth;
-	            style.PrintGrouping = true;
-	            style.PrintSummaries = false;
-	            style.PrintHeaderOnEachPage = true;
-	            style.PrintHiddenColumns = false;
-	
-	            this.radGridView1.PrintStyle = style;
-	
-	            this.radGridView1.Print();
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Printing support\GridPrintStyle1.cs region=PrintStyle}} 
+{{source=..\SamplesVB\GridView\Printing support\GridPrintStyle1.vb region=PrintStyle}} 
 
-{{source=..\SamplesVB\GridView\Printing support\GridPrintStyle1.vb region=PrintStyle}}
-	        Dim style As New GridPrintStyle()
-	
-	        style.FitWidthMode = PrintFitWidthMode.FitPageWidth
-	        style.PrintGrouping = True
-	        style.PrintSummaries = False
-	        style.PrintHeaderOnEachPage = True
-	        style.PrintHiddenColumns = False
-	
-	        Me.RadGridView1.PrintStyle = style
-	
-	        Me.RadGridView1.Print()
-	{{endregion}}
+````C#
+            GridPrintStyle style = new GridPrintStyle();
+
+            style.FitWidthMode = PrintFitWidthMode.FitPageWidth;
+            style.PrintGrouping = true;
+            style.PrintSummaries = false;
+            style.PrintHeaderOnEachPage = true;
+            style.PrintHiddenColumns = false;
+
+            this.radGridView1.PrintStyle = style;
+
+            this.radGridView1.Print();
+````
+````VB.NET
+        Dim style As New GridPrintStyle()
+
+        style.FitWidthMode = PrintFitWidthMode.FitPageWidth
+        style.PrintGrouping = True
+        style.PrintSummaries = False
+        style.PrintHeaderOnEachPage = True
+        style.PrintHiddenColumns = False
+
+        Me.RadGridView1.PrintStyle = style
+
+        Me.RadGridView1.Print()
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-printing-support-gridprintstyle](images/gridview-printing-support-gridprintstyle.png)
 
 ## Multi-page printing
 
 Multi-page printing is supported for grids with ViewDefinition set to TableViewDefinition. To enable the functionality you should define the collection of columns each page will contain. For this purpose you can use the PrintPages collection of the TableViewDefinitionPrintRenderer. The PrintPages collection contains collections of columns, each representing a separate page. Here is an example which assumes the grid has 10 columns:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Printing support\GridPrintStyle1.cs region=MultiPagePrintingPrintStyle}}
-	            GridPrintStyle printStyle = new GridPrintStyle(this.radGridView1);
-	            TableViewDefinitionPrintRenderer renderer = new TableViewDefinitionPrintRenderer(this.radGridView1);
-	            renderer.PrintPages.Add(this.radGridView1.Columns[0], this.radGridView1.Columns[2], this.radGridView1.Columns[5]);
-	            renderer.PrintPages.Add(this.radGridView1.Columns[0], this.radGridView1.Columns[1], this.radGridView1.Columns[9]);
-	            renderer.PrintPages.Add(this.radGridView1.Columns[8], this.radGridView1.Columns[7]);
-	            renderer.PrintPages.Add(this.radGridView1.Columns[3], this.radGridView1.Columns[4], this.radGridView1.Columns[6]);
-	            printStyle.PrintRenderer = renderer;
-	            this.radGridView1.PrintStyle = printStyle;
 	
-	{{endregion}}
 
 
 
-#### __[VB]__
+{{source=..\SamplesCS\GridView\Printing support\GridPrintStyle1.cs region=MultiPagePrintingPrintStyle}} 
+{{source=..\SamplesVB\GridView\Printing support\GridPrintStyle1.vb region=MultiPagePrintingPrintStyle}} 
 
-{{source=..\SamplesVB\GridView\Printing support\GridPrintStyle1.vb region=MultiPagePrintingPrintStyle}}
-	        Dim printStyle As GridPrintStyle = New GridPrintStyle(RadGridView1)
-	        Dim renderer As TableViewDefinitionPrintRenderer = New TableViewDefinitionPrintRenderer(RadGridView1)
-	        renderer.PrintPages.Add(RadGridView1.Columns(0), RadGridView1.Columns(2), RadGridView1.Columns(5))
-	        renderer.PrintPages.Add(RadGridView1.Columns(0), RadGridView1.Columns(1), RadGridView1.Columns(9))
-	        renderer.PrintPages.Add(RadGridView1.Columns(8), RadGridView1.Columns(7))
-	        renderer.PrintPages.Add(RadGridView1.Columns(3), RadGridView1.Columns(4), RadGridView1.Columns(6))
-	        printStyle.PrintRenderer = renderer
-	        RadGridView1.PrintStyle = printStyle
-	        RadGridView1.PrintPreview()
-	
-	{{endregion}}
+````C#
+            GridPrintStyle printStyle = new GridPrintStyle(this.radGridView1);
+            TableViewDefinitionPrintRenderer renderer = new TableViewDefinitionPrintRenderer(this.radGridView1);
+            renderer.PrintPages.Add(this.radGridView1.Columns[0], this.radGridView1.Columns[2], this.radGridView1.Columns[5]);
+            renderer.PrintPages.Add(this.radGridView1.Columns[0], this.radGridView1.Columns[1], this.radGridView1.Columns[9]);
+            renderer.PrintPages.Add(this.radGridView1.Columns[8], this.radGridView1.Columns[7]);
+            renderer.PrintPages.Add(this.radGridView1.Columns[3], this.radGridView1.Columns[4], this.radGridView1.Columns[6]);
+            printStyle.PrintRenderer = renderer;
+            this.radGridView1.PrintStyle = printStyle;
+````
+````VB.NET
+        Dim printStyle As GridPrintStyle = New GridPrintStyle(RadGridView1)
+        Dim renderer As TableViewDefinitionPrintRenderer = New TableViewDefinitionPrintRenderer(RadGridView1)
+        renderer.PrintPages.Add(RadGridView1.Columns(0), RadGridView1.Columns(2), RadGridView1.Columns(5))
+        renderer.PrintPages.Add(RadGridView1.Columns(0), RadGridView1.Columns(1), RadGridView1.Columns(9))
+        renderer.PrintPages.Add(RadGridView1.Columns(8), RadGridView1.Columns(7))
+        renderer.PrintPages.Add(RadGridView1.Columns(3), RadGridView1.Columns(4), RadGridView1.Columns(6))
+        printStyle.PrintRenderer = renderer
+        RadGridView1.PrintStyle = printStyle
+        RadGridView1.PrintPreview()
+
+        '
+````
+
+{{endregion}} 
+
 
 
 

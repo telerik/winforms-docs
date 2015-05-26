@@ -1,8 +1,8 @@
 ---
 title: Checkboxes and editors
-page_title: Checkboxes and editors
+page_title: Checkboxes and editors | UI for WinForms Documentation
 description: Checkboxes and editors
-slug: listview-checkboxes-and-editors
+slug: winforms/listview/checkboxes-and-editors
 tags: checkboxes,and,editors
 published: True
 position: 7
@@ -52,33 +52,37 @@ By default RadListView allows editing of items. If the __AllowEditing__ property
 * Use the __CancelEdit()__ method to end editing and discard the edited value.
             
 
-The sample code below shows how to start editing using the API:
+The sample code below shows how to start editing using the API:#_[C#] Start editing_
 
-#### __[C#] Start editing__
-
-{{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=startEdit}}
-	            radListView1.AllowEdit = true;
-	            // set the SelectedItem - this item will be edited  
-	            // in DetailsView you might also want to set the CurrentColumn property – the value of the selected item in this column will be edited in DetailsView
-	            radListView1.SelectedItem = radListView1.Items[0];
-	            radListView1.CurrentColumn = radListView1.Columns[0];
-	            // this will start edit on selected item
-	            radListView1.BeginEdit();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Start editing__
+{{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=startEdit}} 
+{{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=startEdit}} 
 
-{{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=startEdit}}
-	        RadListView1.AllowEdit = True
-	        ' set the SelectedItem - this node will be edited  
-	        ' in DetailsView you might also want to set the CurrentColumn property – the value of the selected item in this column will be edited in DetailsView
-	        RadListView1.SelectedItem = RadListView1.Items(0)
-	        RadListView1.CurrentColumn = RadListView1.Columns(0)
-	        ' this will start edit on selected item
-	        RadListView1.BeginEdit()
-	{{endregion}}
+````C#
+            radListView1.AllowEdit = true;
+            // set the SelectedItem - this item will be edited  
+            // in DetailsView you might also want to set the CurrentColumn property – the value of the selected item in this column will be edited in DetailsView
+            radListView1.SelectedItem = radListView1.Items[0];
+            radListView1.CurrentColumn = radListView1.Columns[0];
+            // this will start edit on selected item
+            radListView1.BeginEdit();
+````
+````VB.NET
+        RadListView1.AllowEdit = True
+        ' set the SelectedItem - this node will be edited  
+        ' in DetailsView you might also want to set the CurrentColumn property – the value of the selected item in this column will be edited in DetailsView
+        RadListView1.SelectedItem = RadListView1.Items(0)
+        RadListView1.CurrentColumn = RadListView1.Columns(0)
+        ' this will start edit on selected item
+        RadListView1.BeginEdit()
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -126,48 +130,52 @@ When an item is brought out of edit mode, the following steps are performed:
             
 
 The Following example demonstrates the usage of __ItemValidating__ event to edit integer values:
-        
+        #_[C#] Validation_
 
-#### __[C#] Validation__
-
-{{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=ItemValidating}}
-	        void radListView1_ItemValidating(object sender, ListViewItemValidatingEventArgs e)
-	        {
-	            int newInt = 0;
-	            if (int.TryParse(Convert.ToString(e.NewValue), out newInt))
-	            {
-	                e.NewValue = newInt;
-	            }
-	            else
-	            {
-	                e.Cancel = true;
-	            }
-	        }
 	
-	        void radListView1_ValidationError(object sender, EventArgs e)
-	        {
-	            MessageBox.Show("Invalid Value");
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET] Validation__
+{{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=ItemValidating}} 
+{{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=ItemValidating}} 
 
-{{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=ItemValidating}}
-	    Private Sub radListView1_ItemValidating(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ListViewItemValidatingEventArgs) Handles RadListView1.ItemValidating
-	        Dim newInt As Integer = 0
-	        If Integer.TryParse(Convert.ToString(e.NewValue), newInt) Then
-	            e.NewValue = newInt
-	        Else
-	            e.Cancel = True
-	        End If
-	    End Sub
-	
-	    Private Sub radListView1_ValidationError(ByVal sender As Object, ByVal e As EventArgs) Handles RadListView1.ValidationError
-	        MessageBox.Show("Invalid Value")
-	    End Sub
-	{{endregion}}
+````C#
+        void radListView1_ItemValidating(object sender, ListViewItemValidatingEventArgs e)
+        {
+            int newInt = 0;
+            if (int.TryParse(Convert.ToString(e.NewValue), out newInt))
+            {
+                e.NewValue = newInt;
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
+
+        void radListView1_ValidationError(object sender, EventArgs e)
+        {
+            MessageBox.Show("Invalid Value");
+        }
+````
+````VB.NET
+    Private Sub radListView1_ItemValidating(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ListViewItemValidatingEventArgs) Handles RadListView1.ItemValidating
+        Dim newInt As Integer = 0
+        If Integer.TryParse(Convert.ToString(e.NewValue), newInt) Then
+            e.NewValue = newInt
+        Else
+            e.Cancel = True
+        End If
+    End Sub
+
+    Private Sub radListView1_ValidationError(ByVal sender As Object, ByVal e As EventArgs) Handles RadListView1.ValidationError
+        MessageBox.Show("Invalid Value")
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -180,58 +188,62 @@ When edit operation is about to begin, the __EditorRequired__ event is fired.
           __ListViewDateTimeEditor__. You can also provide a custom instance as an editor.
         
 
-The following example shows how you can use the predefined editors:
+The following example shows how you can use the predefined editors:#_[C#] Start editing_
 
-#### __[C#] Start editing__
-
-{{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=usePredefinedEditors}}
-	        void radListView1_EditorRequired(object sender, Telerik.WinControls.UI.ListViewItemEditorRequiredEventArgs e)
-	        {
-	            if (e.ListViewElement.CurrentColumn.FieldName == "CustomerName")
-	            {
-	                e.EditorType = typeof(ListViewTextBoxEditor);
-	            }
-	            else if (e.ListViewElement.CurrentColumn.FieldName == "ProductName")
-	            {
-	                ListViewDropDownListEditor editor = new ListViewDropDownListEditor();
-	                (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product1");
-	                (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product2");
-	                (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product3");
 	
-	                e.Editor = editor;
-	            }
-	            else if (e.ListViewElement.CurrentColumn.FieldName == "Quantity")
-	            {
-	                e.EditorType = typeof(ListViewSpinEditor);
-	            }
-	            else if (e.ListViewElement.CurrentColumn.FieldName == "OrderDate")
-	            {
-	                e.EditorType = typeof(ListViewDateTimeEditor);
-	            }
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET] Start editing__
+{{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=usePredefinedEditors}} 
+{{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=usePredefinedEditors}} 
 
-{{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=usePredefinedEditors}}
-	    Private Sub radListView1_EditorRequired(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ListViewItemEditorRequiredEventArgs)
-	        If e.ListViewElement.CurrentColumn.FieldName = "CustomerName" Then
-	            e.EditorType = GetType(ListViewTextBoxEditor)
-	        ElseIf e.ListViewElement.CurrentColumn.FieldName = "ProductName" Then
-	            Dim editor As New ListViewDropDownListEditor()
-	            TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Product1")
-	            TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Product2")
-	            TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Product3")
-	
-	            e.Editor = editor
-	        ElseIf e.ListViewElement.CurrentColumn.FieldName = "Quantity" Then
-	            e.EditorType = GetType(ListViewSpinEditor)
-	        ElseIf e.ListViewElement.CurrentColumn.FieldName = "OrderDate" Then
-	            e.EditorType = GetType(ListViewDateTimeEditor)
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        void radListView1_EditorRequired(object sender, Telerik.WinControls.UI.ListViewItemEditorRequiredEventArgs e)
+        {
+            if (e.ListViewElement.CurrentColumn.FieldName == "CustomerName")
+            {
+                e.EditorType = typeof(ListViewTextBoxEditor);
+            }
+            else if (e.ListViewElement.CurrentColumn.FieldName == "ProductName")
+            {
+                ListViewDropDownListEditor editor = new ListViewDropDownListEditor();
+                (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product1");
+                (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product2");
+                (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product3");
+
+                e.Editor = editor;
+            }
+            else if (e.ListViewElement.CurrentColumn.FieldName == "Quantity")
+            {
+                e.EditorType = typeof(ListViewSpinEditor);
+            }
+            else if (e.ListViewElement.CurrentColumn.FieldName == "OrderDate")
+            {
+                e.EditorType = typeof(ListViewDateTimeEditor);
+            }
+        }
+````
+````VB.NET
+    Private Sub radListView1_EditorRequired(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ListViewItemEditorRequiredEventArgs)
+        If e.ListViewElement.CurrentColumn.FieldName = "CustomerName" Then
+            e.EditorType = GetType(ListViewTextBoxEditor)
+        ElseIf e.ListViewElement.CurrentColumn.FieldName = "ProductName" Then
+            Dim editor As New ListViewDropDownListEditor()
+            TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Product1")
+            TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Product2")
+            TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Product3")
+
+            e.Editor = editor
+        ElseIf e.ListViewElement.CurrentColumn.FieldName = "Quantity" Then
+            e.EditorType = GetType(ListViewSpinEditor)
+        ElseIf e.ListViewElement.CurrentColumn.FieldName = "OrderDate" Then
+            e.EditorType = GetType(ListViewDateTimeEditor)
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 

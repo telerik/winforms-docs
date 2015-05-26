@@ -1,8 +1,8 @@
 ---
 title: Selection Rectangle
-page_title: Selection Rectangle
+page_title: Selection Rectangle | UI for WinForms Documentation
 description: Selection Rectangle
-slug: gridview-rows-selection-rectangle
+slug: winforms/gridview/rows/selection-rectangle
 tags: selection,rectangle
 published: True
 position: 10
@@ -20,20 +20,24 @@ Rows in RadGridView can be selected by a translucent rectangle selection. You s
 
 
 
-Use the __ShowTranslucentSelectionRecatangle__ of the __GridTableElement__ to enable or disable the selection rectangle:
+Use the __ShowTranslucentSelectionRecatangle__ of the __GridTableElement__ to enable or disable the selection rectangle:#_[C#] Disabling the selection rectangle_
 
-#### __[C#] Disabling the selection rectangle__
-
-{{source=..\SamplesCS\GridView\Rows\SelectionRectangle.cs region=selectionRectangle}}
-	            ((GridTableElement)this.radGridView1.TableElement).ShowTranslucentSelectionRectangle = false;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Disabling the selection rectangle__
+{{source=..\SamplesCS\GridView\Rows\SelectionRectangle.cs region=selectionRectangle}} 
+{{source=..\SamplesVB\GridView\Rows\SelectionRectangle.vb region=selectionRectangle}} 
 
-{{source=..\SamplesVB\GridView\Rows\SelectionRectangle.vb region=selectionRectangle}}
-	        DirectCast(Me.RadGridView1.TableElement, GridTableElement).ShowTranslucentSelectionRectangle = False
-	{{endregion}}
+````C#
+            ((GridTableElement)this.radGridView1.TableElement).ShowTranslucentSelectionRectangle = false;
+````
+````VB.NET
+        DirectCast(Me.RadGridView1.TableElement, GridTableElement).ShowTranslucentSelectionRectangle = False
+        '
+````
+
+{{endregion}} 
+
 
 

@@ -1,8 +1,8 @@
 ---
 title: Touch Support
-page_title: Touch Support
+page_title: Touch Support | UI for WinForms Documentation
 description: Touch Support
-slug: listview-touch-support
+slug: winforms/listview/touch-support
 tags: touch,support
 published: True
 position: 11
@@ -33,4 +33,6 @@ Resizing the columns is achieved by the zoom gesture applied to the desired colu
 
 And the result is:![listview-touch-support 006](images/listview-touch-support006.png)
 
-# See Also[Windows Touch Gestures](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx)
+# See Also
+
+ * [Windows Touch Gestures](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx)

@@ -1,8 +1,8 @@
 ---
 title: Colors and Color Spaces
-page_title: Colors and Color Spaces
+page_title: Colors and Color Spaces | UI for WinForms Documentation
 description: Colors and Color Spaces
-slug: pdfprocessing-concepts-colors-and-color-spaces
+slug: winforms/pdfprocessing/concepts/colors-and-color-spaces
 tags: colors,and,color,spaces
 published: True
 position: 0
@@ -39,28 +39,31 @@ __RgbColor__: Represents an ARGB (alpha, red, green, blue) color. The RgbColor c
 * __B__: The blue component value.
             
 
-__Example 1__ demonstrates how you can create an RgbColor and assign it as Fill of a [Path]({%slug pdfprocessing-model-path%}) element.
-        
+__Example 1__ demonstrates how you can create an RgbColor and assign it as Fill of a [Path]({%slug winforms/pdfprocessing/model/path%}) element.
+        #_[C#] Example 1: Create RgbColor_
 
-#### __[C#] Example 1: Create RgbColor__
-
-{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.cs region=radpdfprocessing-concepts-colors-and-color-spaces_0}}
-	            
-	            RgbColor magenta = new RgbColor(255, 0, 255);
-	            Path path = new Path();
-	            path.Fill = magenta;
-	        
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 1: Create RgbColor__
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.cs region=radpdfprocessing-concepts-colors-and-color-spaces_0}} 
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.vb region=radpdfprocessing-concepts-colors-and-color-spaces_0}} 
 
-{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.vb region=radpdfprocessing-concepts-colors-and-color-spaces_0}}
-	        Dim magenta As RgbColor = New RgbColor(255, 0, 255)
-	        Dim path As Path = New Path()
-	        path.Fill = magenta
-	{{endregion}}
+````C#
+            
+            RgbColor magenta = new RgbColor(255, 0, 255);
+            Path path = new Path();
+            path.Fill = magenta;
+````
+````VB.NET
+        Dim magenta As RgbColor = New RgbColor(255, 0, 255)
+        Dim path As Path = New Path()
+        path.Fill = magenta
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -109,46 +112,50 @@ The __Gradient__ class is inherited by the following classes
 * __EndRadius__: Decimal number determining the radius of the ending circle.
                     
 
-__Example 2__ shows hot to create a LinearGradient and assign it as the FillColor of a [FixedContentEditor]({%slug pdfprocessing-editing-fixedcontenteditor%}).
+__Example 2__ shows hot to create a LinearGradient and assign it as the FillColor of a [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}).
+            #_[C#] Example 2: Create LinearGradient_
+
+	
+
+
+
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.cs region=radpdfprocessing-concepts-colors-and-color-spaces_1}} 
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.vb region=radpdfprocessing-concepts-colors-and-color-spaces_1}} 
+
+````C#
             
+            FixedContentEditor containerEditor = new FixedContentEditor(container);
+            
+            LinearGradient linearGradient = new LinearGradient(new Point(0, 0), new Point(30, 30));
+            linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 207, 0), 0));
+            linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 102, 204), 0));
+            
+            containerEditor.GraphicProperties.FillColor = linearGradient;
+            containerEditor.DrawRectangle(new Rect(10, 10, 48, 29));
+````
+````VB.NET
 
-#### __[C#] Example 2: Create LinearGradient__
+        Dim containerEditor As New FixedContentEditor(container)
 
-{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.cs region=radpdfprocessing-concepts-colors-and-color-spaces_1}}
-	            
-	            FixedContentEditor containerEditor = new FixedContentEditor(container);
-	            
-	            LinearGradient linearGradient = new LinearGradient(new Point(0, 0), new Point(30, 30));
-	            linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 207, 0), 0));
-	            linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 102, 204), 0));
-	            
-	            containerEditor.GraphicProperties.FillColor = linearGradient;
-	            containerEditor.DrawRectangle(new Rect(10, 10, 48, 29));
-	        
-	{{endregion}}
+        Dim linearGradient As New LinearGradient(New Point(0, 0), New Point(30, 30))
+        linearGradient.GradientStops.Add(New GradientStop(New RgbColor(0, 207, 0), 0))
+        linearGradient.GradientStops.Add(New GradientStop(New RgbColor(0, 102, 204), 0))
 
+        containerEditor.GraphicProperties.FillColor = linearGradient
+        containerEditor.DrawRectangle(New Rect(10, 10, 48, 29))
+        '
+````
 
+{{endregion}} 
 
-#### __[VB.NET] Example 2: Create LinearGradient__
-
-{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.vb region=radpdfprocessing-concepts-colors-and-color-spaces_1}}
-	
-	        Dim containerEditor As New FixedContentEditor(container)
-	
-	        Dim linearGradient As New LinearGradient(New Point(0, 0), New Point(30, 30))
-	        linearGradient.GradientStops.Add(New GradientStop(New RgbColor(0, 207, 0), 0))
-	        linearGradient.GradientStops.Add(New GradientStop(New RgbColor(0, 102, 204), 0))
-	
-	        containerEditor.GraphicProperties.FillColor = linearGradient
-	        containerEditor.DrawRectangle(New Rect(10, 10, 48, 29))
-	{{endregion}}
 
 
 
 The gradient created in __Example 2__ is shown in __Figure 1__.
             
+>caption Figure 1: LinearGradient
 
-Figure 1: LinearGradient![pdf Processing-concepts-colors-and-color-spaces 001](images/pdfProcessing-concepts-colors-and-color-spaces001.png)
+![pdf Processing-concepts-colors-and-color-spaces 001](images/pdfProcessing-concepts-colors-and-color-spaces001.png)
 
 ### Tiling Pattern
 
@@ -196,52 +203,56 @@ The __TilingBase__ class is inherited from the following classes:
 * __UncoloredTiling__: Represents an uncolored tiling pattern. This type of tiling patterns can be defined with some specific content, and then reused with different color of their content. It exposes two additional properties - __Tiling__ which represents the tiling to be used and __Color__ representing the color of the content of the specified tiling.
                 
 
-Since the __TilingBase__ class implements the __IContentRootElement__ interface like [RadFixedPage]({%slug pdfprocessing-model-radfixedpage%}), the content of the tiling can be modified using the __FixedContentEditor__ class. __Example 3__ shows how a tiling pattern can be created:
+Since the __TilingBase__ class implements the __IContentRootElement__ interface like [RadFixedPage]({%slug winforms/pdfprocessing/model/radfixedpage%}), the content of the tiling can be modified using the __FixedContentEditor__ class. __Example 3__ shows how a tiling pattern can be created:
+            #_[C#] Example 3: Create Tiling_
+
+	
+
+
+
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.cs region=radpdfprocessing-concepts-colors-and-color-spaces_2}} 
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.vb region=radpdfprocessing-concepts-colors-and-color-spaces_2}} 
+
+````C#
             
+            FixedContentEditor containerEditor = new FixedContentEditor(container);
+            
+            Tiling tiling = new Tiling(new Rect(0, 0, 10, 10));
+            FixedContentEditor tilingEditor = new FixedContentEditor(tiling);
+            tilingEditor.GraphicProperties.IsStroked = false;
+            tilingEditor.GraphicProperties.FillColor = new RgbColor(128, 28, 43);
+            tilingEditor.DrawRectangle(new Rect(2, 2, 5, 7));
+    
+            containerEditor.GraphicProperties.FillColor = tiling;
+            containerEditor.DrawCircle(new Point(30, 30), 20);
+````
+````VB.NET
+        Dim containerEditor As FixedContentEditor = New FixedContentEditor(container)
 
-#### __[C#] Example 3: Create Tiling__
+        Dim tiling As Tiling = New Tiling(New Rect(0, 0, 10, 10))
+        Dim tilingEditor As FixedContentEditor = New FixedContentEditor(tiling)
+        tilingEditor.GraphicProperties.IsStroked = False
+        tilingEditor.GraphicProperties.FillColor = New RgbColor(128, 28, 43)
+        tilingEditor.DrawRectangle(New Rect(2, 2, 5, 7))
 
-{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.cs region=radpdfprocessing-concepts-colors-and-color-spaces_2}}
-	            
-	            FixedContentEditor containerEditor = new FixedContentEditor(container);
-	            
-	            Tiling tiling = new Tiling(new Rect(0, 0, 10, 10));
-	            FixedContentEditor tilingEditor = new FixedContentEditor(tiling);
-	            tilingEditor.GraphicProperties.IsStroked = false;
-	            tilingEditor.GraphicProperties.FillColor = new RgbColor(128, 28, 43);
-	            tilingEditor.DrawRectangle(new Rect(2, 2, 5, 7));
-	    
-	            containerEditor.GraphicProperties.FillColor = tiling;
-	            containerEditor.DrawCircle(new Point(30, 30), 20);
-	
-	{{endregion}}
+        containerEditor.GraphicProperties.FillColor = tiling
+        containerEditor.DrawCircle(New Point(30, 30), 20)
+        '
+````
 
+{{endregion}} 
 
-
-#### __[VB.NET] Example 3: Create Tiling__
-
-{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsColorsandColorSpaces.vb region=radpdfprocessing-concepts-colors-and-color-spaces_2}}
-	        Dim containerEditor As FixedContentEditor = New FixedContentEditor(container)
-	
-	        Dim tiling As Tiling = New Tiling(New Rect(0, 0, 10, 10))
-	        Dim tilingEditor As FixedContentEditor = New FixedContentEditor(tiling)
-	        tilingEditor.GraphicProperties.IsStroked = False
-	        tilingEditor.GraphicProperties.FillColor = New RgbColor(128, 28, 43)
-	        tilingEditor.DrawRectangle(New Rect(2, 2, 5, 7))
-	
-	        containerEditor.GraphicProperties.FillColor = tiling
-	        containerEditor.DrawCircle(New Point(30, 30), 20)
-	{{endregion}}
 
 
 
 The tiling created in __Example 3__ is shown in __Figure 2__.
             
+>caption Figure 2: Tiling
 
-Figure 2: Tiling![pdf Processing-concepts-colors-and-color-spaces 002](images/pdfProcessing-concepts-colors-and-color-spaces002.png)
+![pdf Processing-concepts-colors-and-color-spaces 002](images/pdfProcessing-concepts-colors-and-color-spaces002.png)
 
 # See Also
 
- * [Path]({%slug pdfprocessing-model-path%})
+ * [Path]({%slug winforms/pdfprocessing/model/path%})
 
- * [FixedContentEditor]({%slug pdfprocessing-editing-fixedcontenteditor%})
+ * [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%})

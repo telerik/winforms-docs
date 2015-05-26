@@ -1,8 +1,8 @@
 ---
 title: Structure
-page_title: Structure
+page_title: Structure | UI for WinForms Documentation
 description: Structure
-slug: track-and-status-controls-rating-structure
+slug: winforms/track-and-status-controls/rating/structure
 tags: structure
 published: True
 position: 0

@@ -1,8 +1,8 @@
 ---
 title: Adding and Customizing Elements
-page_title: Adding and Customizing Elements
+page_title: Adding and Customizing Elements | UI for WinForms Documentation
 description: Adding and Customizing Elements
-slug: ribbonbar-programming-radribbonbar-adding-and-customizing-elements
+slug: winforms/ribbonbar/programming-radribbonbar/adding-and-customizing-elements
 tags: adding,and,customizing,elements
 published: True
 position: 2
@@ -57,11 +57,16 @@ You can add a variety of elements to __RadRibbonBarGroup.Items__ or __RadRibbonB
 The button element represents a simple button displaying text, an image, or both. To customize the __RadButtonElement__, you can use these properties:
 
 
-<table><tr><td><b>DisplayStyle</b> property can be set to <b>Text</b>, <b>Image</b>, or <b>ImageAndText</b> to determine the visual appearance of the button.</td></tr><tr><td><b>Text</b> property sets the caption displayed on the button. </td></tr><tr><td>
 
-<b>Image</b>, <b>ImageIndex</b>, and <b>ImageKey</b> properties determine the image displayed on the button. </td></tr><tr><td>
 
-<b>TextImageRelation</b> property sets the relative position of the text and the image if <b>DisplayStyle</b> is set to <b>ImageAndText</b>. </td></tr><tr><td><b>ImageAlignment</b> property sets the alignment of the image displayed on the button. </td></tr><tr><td><b>TextAlignment</b> property sets the alignment of the text displayed on the button. </td></tr><tr><td><b>TextOrientation</b> property can be set to either to <b>Horizontal</b> or <b>Vertical</b>. </td></tr></table>
+
+| __DisplayStyle__ property can be set to __Text__ , __Image__ , or __ImageAndText__ to determine the visual appearance of the button.|
+| __Text__ property sets the caption displayed on the button.|
+| __Image__ , __ImageIndex__ , and __ImageKey__ properties determine the image displayed on the button.|
+| __TextImageRelation__ property sets the relative position of the text and the image if __DisplayStyle__ is set to __ImageAndText__ .|
+| __ImageAlignment__ property sets the alignment of the image displayed on the button.|
+| __TextAlignment__ property sets the alignment of the text displayed on the button.|
+| __TextOrientation__ property can be set to either to __Horizontal__ or __Vertical__ .|
 
 ## Customizing Check Box Elements
 

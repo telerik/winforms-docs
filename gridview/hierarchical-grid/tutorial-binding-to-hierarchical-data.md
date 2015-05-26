@@ -1,8 +1,8 @@
 ---
 title: Tutorial Binding to Hierarchical Data
-page_title: Tutorial Binding to Hierarchical Data
+page_title: Tutorial Binding to Hierarchical Data | UI for WinForms Documentation
 description: Tutorial Binding to Hierarchical Data
-slug: gridview-hierarchical-grid-tutorial-binding-to-hierarchical-data
+slug: winforms/gridview/hierarchical-grid/tutorial:-binding-to-hierarchical-data
 tags: tutorial,binding,to,hierarchical,data
 published: True
 position: 1
@@ -13,16 +13,14 @@ position: 1
 
 
 ## 
-<table><th><tr><td>
 
-RELATED VIDEOS</td><td></td></tr></th><tr><td>
 
-[RadGridView for WinForms Hierarchy Overview](http://tv.telerik.com/winforms/radgrid/radgridview-winforms-hierarchy-overview)
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[RadGridView for WinForms Hierarchy Overview](http://tv.telerik.com/winforms/radgrid/radgridview-winforms-hierarchy-overview)In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)|
+>caption 
 
-In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)
-              </td><td>
-
-![gridview-hierarchical-grid-binding-to-hierarchical-data 001](images/gridview-hierarchical-grid-binding-to-hierarchical-data001.png)</td></tr></table>
+![gridview-hierarchical-grid-binding-to-hierarchical-data 001](images/gridview-hierarchical-grid-binding-to-hierarchical-data001.png)|
 
 The following tutorial demonstrates configuring the grid to display multiple
           tables in a hierarchy. The example below uses the Northwind Categories table as

@@ -1,8 +1,8 @@
 ---
 title: Customizing the Stack Position
-page_title: Customizing the Stack Position
+page_title: Customizing the Stack Position | UI for WinForms Documentation
 description: Customizing the Stack Position
-slug: pageview-stackview-customizing-the-stack-position
+slug: winforms/pageview/stackview/customizing-the-stack-position
 tags: customizing,the,stack,position
 published: True
 position: 1
@@ -33,30 +33,37 @@ The *Bottom* position implies that the stack items are ordered starting from the
 
 Regardless the stack position, the content of the selected item is displayed at one place: where the content area resides.
 
->It is important to consider both the size of the control and the count of the pages added to maintain a reasonable amount of space for the content area.
+>note It is important to consider both the size of the control and the count of the pages added to maintain a reasonable amount of space for the content area.
+>
+#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\PageView\StackView.cs region=stackPosition}}
 	
-	            RadPageViewStackElement stackElement = this.radPageView1.ViewElement as RadPageViewStackElement;
-	            stackElement.StackPosition = StackViewPosition.Right;
-	
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\PageView\StackView.cs region=stackPosition}} 
+{{source=..\SamplesVB\PageView\StackView.vb region=stackPosition}} 
 
-{{source=..\SamplesVB\PageView\StackView.vb region=stackPosition}}
-	
-	        Dim stackElement As RadPageViewStackElement = TryCast(Me.radPageView1.ViewElement, RadPageViewStackElement)
-	        stackElement.StackPosition = StackViewPosition.Right
-	
-	{{endregion}}
+````C#
+
+            RadPageViewStackElement stackElement = this.radPageView1.ViewElement as RadPageViewStackElement;
+            stackElement.StackPosition = StackViewPosition.Right;
+````
+````VB.NET
+
+        Dim stackElement As RadPageViewStackElement = TryCast(Me.radPageView1.ViewElement, RadPageViewStackElement)
+        stackElement.StackPosition = StackViewPosition.Right
+
+        '
+````
+
+{{endregion}} 
 
 
 
->The ViewElement property of the RadPageView control returns a reference to the main element of the currently active view in the control.
+
+>note The ViewElement property of the RadPageView control returns a reference to the main element of the currently active view in the control.
           So, to cast the ViewElement to any an element representing a specific view type, you should make sure that you have set the ViewMode of the
           RadPageView control to this view type.
+>
+

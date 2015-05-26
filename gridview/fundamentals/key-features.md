@@ -1,8 +1,8 @@
 ---
 title: Key Features
-page_title: Key Features
+page_title: Key Features | UI for WinForms Documentation
 description: Key Features
-slug: gridview-fundamentals-key-features
+slug: winforms/gridview/fundamentals/key-features
 tags: key,features
 published: True
 position: 0
@@ -27,7 +27,7 @@ The highly optimized data layer of RadGridView uses a AVL tree which enables fas
 RadGridView can bind to different types of data sources including custom business objects, data sets and collections.
           The only requirement is that these objects must implement one of the following interfaces: IList, IEnumarable, or ICollection.
           Furthermore, RadGridView supports out-of-the-box binding to sub-objects, nullable properties and properties of sub-objects.
-          [Read more]({%slug gridview-populating-with-data-databinding-radgridview%})
+          [Read more]({%slug winforms/gridview/populating-with-data/databinding-radgridview%})
 
 ## Hierarchical data representation
 
@@ -36,7 +36,7 @@ RadGridView has the ability to represent hierarchical master-detail data.
           or handled automatically for you based on the structure of the data. RadGridView can present also multiple child views
           or a tree like (self-referencing) hierarchy.
           The provider based hierarchy model enables using load-on-demand and object-relational hierarchies.
-          [Read more]({%slug gridview-hierarchical-grid-binding-to-hierarchical-data%})![gridview-fundamentals-key-features 002](images/gridview-fundamentals-key-features002.png)
+          [Read more]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data%})![gridview-fundamentals-key-features 002](images/gridview-fundamentals-key-features002.png)
 
 ## Grouping
 
@@ -45,13 +45,13 @@ RadGridView allows for easy implementation of multilevel grouping of data from a
           holding the actual data records. Users can apply grouping with the help of a single drag and drop action.
           In addition, RadGridView supports fully customizable custom grouping,
           aggregate operations (e.g. sum, min, max, count, first and last) and custom formatted group headers.
-          [Read more]({%slug gridview-grouping-basic-grouping%})![gridview-fundamentals-key-features 004](images/gridview-fundamentals-key-features004.png)
+          [Read more]({%slug winforms/gridview/grouping/basic-grouping%})![gridview-fundamentals-key-features 004](images/gridview-fundamentals-key-features004.png)
 
 ## Sorting
 
 In addition to the simple one-column sorting which is enabled by default in RadGridView, you can sort data by several columns.
           RadGridView also enables applying sorting and custom soring programmatically.
-          [Read more]({%slug gridview-sorting-basic-sorting%})![gridview-fundamentals-key-features 003](images/gridview-fundamentals-key-features003.png)
+          [Read more]({%slug winforms/gridview/sorting/basic-sorting%})![gridview-fundamentals-key-features 003](images/gridview-fundamentals-key-features003.png)
 
 ## Filtering
 
@@ -60,23 +60,23 @@ RadGridView has a built-in filtering support it and can perform filtering operat
           and will allow for entering a filter condition. Clicking the filtering icon in the filter cell opens a menu
           with the available filter conditions (e.g. Contains, Starts with, Less than).
           Furthermore, filtering can be defined programmatically by using filter descriptors or custom filtering.
-          [Read more]({%slug gridview-filtering-basic-filtering%})![gridview-fundamentals-key-features 005](images/gridview-fundamentals-key-features005.png)
+          [Read more]({%slug winforms/gridview/filtering/basic-filtering%})![gridview-fundamentals-key-features 005](images/gridview-fundamentals-key-features005.png)
 
 ## Summary rows and totals row with Aggregate Functions
 
 RadGridView can show summary rows when grouping is applied or a totals row which contains
           values calculated from a variety of aggregate functions, such as Sum, Count, Min, Max, Average, etc.
           Of course, the representation of the aggregate result is fully customizable.
-          [Read more]({%slug gridview-rows-summary-rows%})![gridview-fundamentals-key-features 006](images/gridview-fundamentals-key-features006.png)
+          [Read more]({%slug winforms/gridview/rows/summary-rows%})![gridview-fundamentals-key-features 006](images/gridview-fundamentals-key-features006.png)
 
 ## Pinned (Frozen) columns and rows
 
 RadGridView allows you to keep a part of your data always visible while putting the rest
           of the data in context. To freeze columns, simply choose the Pin to left or Pin to right option from the context menu.
           RadGridView API allows for programmatically freezing columns or rows. Read more
-          [here]({%slug gridview-columns-pinning-and-unpinning-columns%})
+          [here]({%slug winforms/gridview/columns/pinning-and-unpinning-columns%})
           and
-          [here]({%slug gridview-rows-pinned-rows%})![gridview-fundamentals-key-features 007](images/gridview-fundamentals-key-features007.png)
+          [here]({%slug winforms/gridview/rows/pinned-rows%})![gridview-fundamentals-key-features 007](images/gridview-fundamentals-key-features007.png)
 
 ## Row and column reordering
 
@@ -85,9 +85,9 @@ RadGridView allows the user to reorder rows and columns with a single drag and d
           it cannot be preserved in the data source.
           Furthermore, RadGridView enables changing the order of all system rows with its flexible API.
           Read more
-          [here]({%slug gridview-rows-reordering-rows%})
+          [here]({%slug winforms/gridview/end-user-capabilities/reordering-rows%})
           and
-          [here]({%slug gridview-columns-reordering-columns%})![gridview-fundamentals-key-features 008](images/gridview-fundamentals-key-features008.png)
+          [here]({%slug winforms/gridview/columns/reordering-columns%})![gridview-fundamentals-key-features 008](images/gridview-fundamentals-key-features008.png)
 
 ## Column grouping and HTML table like layouts
 
@@ -115,32 +115,32 @@ RadGridView provides selection functionality, which allows single and multiple r
 
 RadGridView allows for exporting its data in different file formats.
           The supported formats include: PDF, HTML, CSV and Excel.
-          [Read more]({%slug gridview-exporting-data-overview%})
+          [Read more]({%slug winforms/gridview/exporting-data/overview%})
 
 ## Localization and support for right-to-left languages
 
 RadGridView provides advanced Localization support. All displayed strings can be customized by using localization providers.
           RadGridView has also a full support for right-to-left languages.
           Read more
-          [here]({%slug gridview-localization%})
+          [here]({%slug winforms/gridview/localization/localization%})
           and
-          [here]({%slug gridview-localization-rtl%})![gridview-fundamentals-key-features 012](images/gridview-fundamentals-key-features012.png)![gridview-fundamentals-key-features 013](images/gridview-fundamentals-key-features013.png)
+          [here]({%slug winforms/gridview/localization/right-to-left-support%})![gridview-fundamentals-key-features 012](images/gridview-fundamentals-key-features012.png)![gridview-fundamentals-key-features 013](images/gridview-fundamentals-key-features013.png)
 
 ## Easily customizable appearance and theming mechanism
 
 RadGridView is built on top of the Telerik Presentation Framework and enables easy styling without writing any
           code by using
-          [Visual Style Builder]({%slug tools-visual-style-builder-overview%}).
-          [Read more]({%slug gridview-styling-and-appearance-themes%})
+          [Visual Style Builder]({%slug winforms/tools/visual-style-builder%}).
+          [Read more]({%slug winforms/gridview/styling-and-appearance/themes%})
           In addition, it is fully customizable with its flexible API.
           The conditional formatting feature enables formatting of grid elements for enhanced readability and usability of the displayed data.
           It can be applied programmatically or by the user at run time.
-          [Read more]({%slug gridview-rows-conditional-formatting-rows%})
+          [Read more]({%slug winforms/gridview/rows/conditional-formatting-rows%})
           Read more
         
 
 # See Also
 
- * [Getting Started]({%slug gridview-getting-started%})
+ * [Getting Started]({%slug winforms/gridview/getting-started%})
 
- * [Databinding RadGridView]({%slug gridview-populating-with-data-databinding-radgridview%})[Visual Structure](c3744f84-3e80-4b59-8ea0-ce38723d4eca)
+ * [Databinding RadGridView]({%slug winforms/gridview/populating-with-data/databinding-radgridview%})[Visual Structure](c3744f84-3e80-4b59-8ea0-ce38723d4eca)

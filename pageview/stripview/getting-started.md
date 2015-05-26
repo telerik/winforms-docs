@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: pageview-stripview-getting-started
+slug: winforms/pageview/stripview/getting-started
 tags: getting,started
 published: True
 position: 0

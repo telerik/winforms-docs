@@ -1,8 +1,8 @@
 ---
 title: Fields
-page_title: Fields
+page_title: Fields | UI for WinForms Documentation
 description: Fields
-slug: wordsprocessing-concepts-fields
+slug: winforms/wordsprocessing/concepts/fields
 tags: fields
 published: True
 position: 0
@@ -15,7 +15,7 @@ position: 0
 __Fields__ in the __RadFlowDocument__ model are special constructions that hold data which can
         change/be updated – for example page numbers or merge fields. Fields consist of field code and field result. The field code fragment defines
         how the field result should be calculated when the field is updated. The field result fragment holds the latest calculated result. In the
-        model these two fragments are separated by a special type of inline – [FieldCharacter]({%slug wordsprocessing-model-fieldcharacter%}).
+        model these two fragments are separated by a special type of inline – [FieldCharacter]({%slug winforms/wordsprocessing/model/fieldcharacter%}).
         __FieldCharacters__ are 3 types:
       
 
@@ -43,76 +43,84 @@ In the document object model Fields are represented by the
 
 ## Inserting Fields
 
-The suggested way to insert field is to use the __InsertField()__ method of [RadFlowDocumentEditor]({%slug wordsprocessing-editing-radflowdocumenteditor%}) class. 
+The suggested way to insert field is to use the __InsertField()__ method of [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%}) class. 
           It takes care of creating and inserting the code and result fragments as well as placing the appropriate field character inlines to separate them. 
           The __InsertField()__ method returns an instance of the __FieldInfo__ class. It holds references to the start, 
           separate and end field characters and also provides an API for getting the code and result fragments and updating the field.
         
 
 Here is how to create a document with a single __Date__ field using __RadFlowDocumenteditor__:
-        
+        #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing-concepts-fields_0}}
-	            RadFlowDocument document = new RadFlowDocument();
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
-	            editor.InsertField("DATE", "10/11/2012");
-	{{endregion}}
+	
 
 
 
-#### __VB__
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing-concepts-fields_0}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_0}}
-	        Dim document As New RadFlowDocument()
-	        Dim editor As New RadFlowDocumentEditor(document)
-	        editor.InsertField("DATE", "10/11/2012")
-	{{endregion}}
+````C#
+            RadFlowDocument document = new RadFlowDocument();
+            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
+            editor.InsertField("DATE", "10/11/2012");
+````
+````VB.NET
+        Dim document As New RadFlowDocument()
+        Dim editor As New RadFlowDocumentEditor(document)
+        editor.InsertField("DATE", "10/11/2012")
+        '
+````
+
+{{endregion}} 
+
 
 
 
 You can also create and insert all the parts of the field manually by creating a __FieldInfo__ instance and adding all the inlines to 
           the document structure. Here is how to achieve the same result as in the previous example:
-        
+        #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing-concepts-fields_1}}
-	            // Create a document with paragraph            
-	            RadFlowDocument document = new RadFlowDocument();
-	            Paragraph paragraph = document.Sections.AddSection().Blocks.AddParagraph();
 	
-	            // Create the field info
-	            FieldInfo field = new FieldInfo(document);
-	
-	            // Create and add all the inlines to the paragraph.
-	            paragraph.Inlines.Add(field.Start);
-	            paragraph.Inlines.AddRun("AUTHOR");
-	            paragraph.Inlines.Add(field.Separator);
-	            paragraph.Inlines.AddRun("John Doe");
-	            paragraph.Inlines.Add(field.End);
-	{{endregion}}
 
 
 
-#### __VB__
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing-concepts-fields_1}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_1}} 
 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_1}}
-	        ' Create a document with paragraph 
-	        Dim document As New RadFlowDocument()
-	        Dim paragraph As Paragraph = document.Sections.AddSection().Blocks.AddParagraph()
-	
-	        ' Create the field info
-	        Dim field As New FieldInfo(document)
-	
-	        ' Create and add all the inlines to the paragraph.
-	        paragraph.Inlines.Add(field.Start)
-	        paragraph.Inlines.AddRun("AUTHOR")
-	        paragraph.Inlines.Add(field.Separator)
-	        paragraph.Inlines.AddRun("John Doe")
-	        paragraph.Inlines.Add(field.[End])
-	{{endregion}}
+````C#
+            // Create a document with paragraph            
+            RadFlowDocument document = new RadFlowDocument();
+            Paragraph paragraph = document.Sections.AddSection().Blocks.AddParagraph();
+
+            // Create the field info
+            FieldInfo field = new FieldInfo(document);
+
+            // Create and add all the inlines to the paragraph.
+            paragraph.Inlines.Add(field.Start);
+            paragraph.Inlines.AddRun("AUTHOR");
+            paragraph.Inlines.Add(field.Separator);
+            paragraph.Inlines.AddRun("John Doe");
+            paragraph.Inlines.Add(field.End);
+````
+````VB.NET
+        ' Create a document with paragraph 
+        Dim document As New RadFlowDocument()
+        Dim paragraph As Paragraph = document.Sections.AddSection().Blocks.AddParagraph()
+
+        ' Create the field info
+        Dim field As New FieldInfo(document)
+
+        ' Create and add all the inlines to the paragraph.
+        paragraph.Inlines.Add(field.Start)
+        paragraph.Inlines.AddRun("AUTHOR")
+        paragraph.Inlines.Add(field.Separator)
+        paragraph.Inlines.AddRun("John Doe")
+        paragraph.Inlines.Add(field.[End])
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -149,31 +157,13 @@ If the field type is not one of the above the result will not be updated and the
         
 
 Updating a single field is done with the __UpdateField()__ method of the __FieldInfo__ class:
-        
+        #_C#_
 
-#### __C#__
+	
 
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing-concepts-fields_2}}
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
-	            FieldInfo fieldInfo = editor.InsertField("DATE \\@ dd/MM/yyyy", "result");
-	            Console.WriteLine(fieldInfo.GetResult()); // Output: result
-	            fieldInfo.UpdateField();
-	            Console.WriteLine(fieldInfo.GetResult()); // Output: 06/06/2014
-	{{endregion}}
+#_C#_
 
-
-
-#### __C#__
-
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_2}}
-	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	        Dim fieldInfo As FieldInfo = editor.InsertField("DATE \@ dd/MM/yyyy", "result")
-	        Console.WriteLine(fieldInfo.GetResult())
-	        ' Output: result
-	        fieldInfo.UpdateField()
-	        Console.WriteLine(fieldInfo.GetResult())
-	        ' Output: 06/06/2014
-	{{endregion}}
+	
 
 
 
@@ -182,35 +172,13 @@ Note that field result is not automatically updated upon insertion. The initial 
         
 
 All fields in the document can be updated using __UpdateFields()__ of __RadFlowDocument__:
-        
+        #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing-concepts-fields_3}}
-	            RadFlowDocument document = new RadFlowDocument();
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
-	            FieldInfo fieldInfo = editor.InsertField("DATE \\@ dd/MM/yyyy", "result");
 	
-	            Console.WriteLine(fieldInfo.GetResult()); // Output: result
-	            document.UpdateFields();
-	            Console.WriteLine(fieldInfo.GetResult()); // Output: 06/06/2014
-	{{endregion}}
 
+#_C#_
 
-
-#### __C#__
-
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_3}}
-	        Dim document As New RadFlowDocument()
-	        Dim editor As New RadFlowDocumentEditor(document)
-	        Dim fieldInfo As FieldInfo = editor.InsertField("DATE \@ dd/MM/yyyy", "result")
 	
-	        Console.WriteLine(fieldInfo.GetResult())
-	        ' Output: result
-	        document.UpdateFields()
-	        Console.WriteLine(fieldInfo.GetResult())
-	        ' Output: 06/06/2014
-	{{endregion}}
 
 
 
@@ -248,50 +216,13 @@ Fields can also be nested in each other. If there are nested fields inside the c
         
 
 Here is an example of cratering a field which will be evaluated to appropriate greeting based on the time of the day.
-        
+        #_C#_
 
-#### __C#__
+	
 
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing-concepts-fields_4}}
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
-	
-	            // Create an outer field with empty code fragment
-	            FieldInfo outerFieldInfo = editor.InsertField(string.Empty, "if field result");
-	
-	            // Move the editor after the field start character
-	            editor.MoveToInlineEnd(outerFieldInfo.Start);
-	
-	            // Create the a code fragment with a nested TIME field
-	            editor.InsertText("IF ");
-	            editor.InsertField("TIME \\@ HH", "time field result");
-	            editor.InsertText(" < 12 \"Good morning!\" \"Good afternoon!\"");
-	
-	            outerFieldInfo.UpdateField();
-	            Console.WriteLine(outerFieldInfo.GetResult()); // Output: Good afternoon!
-	{{endregion}}
+#_C#_
 
-
-
-#### __C#__
-
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_4}}
-	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
 	
-	        ' Create an outer field with empty code fragment
-	        Dim outerFieldInfo As FieldInfo = editor.InsertField(String.Empty, "if field result")
-	
-	        ' Move the editor after the field start character
-	        editor.MoveToInlineEnd(outerFieldInfo.Start)
-	
-	        ' Create the a code fragment with a nested TIME field
-	        editor.InsertText("IF ")
-	        editor.InsertField("TIME \@ HH", "time field result")
-	        editor.InsertText(" < 12 ""Good morning!"" ""Good afternoon!""")
-	
-	        outerFieldInfo.UpdateField()
-	        Console.WriteLine(outerFieldInfo.GetResult())
-	        ' Output: Good afternoon!
-	{{endregion}}
 
 ![wordsprocessing-concepts-fields 002](images/wordsprocessing-concepts-fields002.png)
 
@@ -305,10 +236,11 @@ __FieldInfo__ is the main entry point when working with fields. It serves as "gl
           field characters of a fields. Each field character also holds a reference to its FieldInfo class through the FieldInfo property.
         
 
->The only way to create __FieldCharacter__ is by creating __FieldInfo__ instance. To preserve the document 
+>note The only way to create __FieldCharacter__ is by creating __FieldInfo__ instance. To preserve the document 
             integrity all field characters should be inserted and removed from the document together. If the RadFlowDocumentEditor class is used for insertion – this 
             is done automatically.
-          
+>
+
 
 __FieldInfo__ exposes several properties and methods for working with fields:
         
@@ -350,8 +282,8 @@ When exporting documents to DOCX format you can use the __IsDirty__ property of 
 
 # See Also
 
- * [Document model]({%slug wordsprocessing-model%})
+ * [Document model]({%slug winforms/wordsprocessing/model%})
 
- * [FieldCharacter]({%slug wordsprocessing-model-fieldcharacter%})
+ * [FieldCharacter]({%slug winforms/wordsprocessing/model/fieldcharacter%})
 
- * [RadFlowDocumentEditor]({%slug wordsprocessing-editing-radflowdocumenteditor%})
+ * [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%})

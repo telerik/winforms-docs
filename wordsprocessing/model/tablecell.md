@@ -1,8 +1,8 @@
 ---
 title: TableCell
-page_title: TableCell
+page_title: TableCell | UI for WinForms Documentation
 description: TableCell
-slug: wordsprocessing-model-tablecell
+slug: winforms/wordsprocessing/model/tablecell
 tags: tablecell
 published: True
 position: 6
@@ -13,8 +13,8 @@ position: 6
 
 
 __TableCell__ element is a __BlockContainer__ element and defines a cell of content within a
-        [Table]({%slug wordsprocessing-model-table%}). It contains __Block__ elements such as
-        [Paragraph]({%slug wordsprocessing-model-paragraph%}) and [Table]({%slug wordsprocessing-model-table%}).
+        [Table]({%slug winforms/wordsprocessing/model/table%}). It contains __Block__ elements such as
+        [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}) and [Table]({%slug winforms/wordsprocessing/model/table%}).
       
 
 * [Inserting a TableCell](#inserting-a-tablecell)
@@ -26,46 +26,54 @@ __TableCell__ element is a __BlockContainer__ element and defines a cell of cont
 ## Inserting a TableCell
 
 You can use the following code snippet to create a __TableCell__ and add it in a
-          [TableRow]({%slug wordsprocessing-model-tablerow%}).
-        
+          [TableRow]({%slug winforms/wordsprocessing/model/tablerow%}).
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableCell.cs region=radwordsprocessing-model-tablecell_0}}
-	            TableCell cell = new TableCell(document);
-	            row.Cells.Add(cell);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableCell.cs region=radwordsprocessing-model-tablecell_0}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_0}}
-	            Dim cell As New TableCell(document)
-	            row.Cells.Add(cell)
-	{{endregion}}
+````C#
+            TableCell cell = new TableCell(document);
+            row.Cells.Add(cell);
+````
+````VB.NET
+            Dim cell As New TableCell(document)
+            row.Cells.Add(cell)
+            '
+````
+
+{{endregion}} 
+
 
 
 
 To create a __TableCell__ and add it in the document tree in the same time, you can use the
           __AddTableCell()__ method:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableCell.cs region=radwordsprocessing-model-tablecell_1}}
-	            TableRow row = table.Rows.AddTableRow();
-	            TableCell cell = row.Cells.AddTableCell();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableCell.cs region=radwordsprocessing-model-tablecell_1}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_1}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_1}}
-	            Dim row As TableRow = table.Rows.AddTableRow()
-	            Dim cell As TableCell = row.Cells.AddTableCell()
-	{{endregion}}
+````C#
+            TableRow row = table.Rows.AddTableRow();
+            TableCell cell = row.Cells.AddTableCell();
+````
+````VB.NET
+            Dim row As TableRow = table.Rows.AddTableRow()
+            Dim cell As TableCell = row.Cells.AddTableCell()
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -77,7 +85,7 @@ The __TableCell__ element exposes several properties that allow you to customize
 * __Properties__: Retrieves all __TableCellProperties__. For more information read
               [
                 this article
-              ]({%slug wordsprocessing-concepts-style-properties%}).
+              ]({%slug winforms/wordsprocessing/concepts/style-properties%}).
             
 
 * __Row__: Represents the parent __TableRow__ of the cell.
@@ -133,34 +141,38 @@ The __TableCell__ element exposes several properties that allow you to customize
 * __GridRowIndex__: Represents the row index of the cell in the table grid.
             
 
->tipStyle properties are properties that can be inherited from a style. For more information about styles see
-            [this article]({%slug wordsprocessing-concepts-style-properties%}).
-          
+>tip Style properties are properties that can be inherited from a style. For more information about styles see[this article]({%slug winforms/wordsprocessing/concepts/style-properties%}).
+>
 
->tipThemable objects are objects that can be inherited from a theme. For more information about themes check
-            [this article]({%slug wordsprocessing-concepts-document-themes%}).
-          
+
+>tip Themable objects are objects that can be inherited from a theme. For more information about themes check[this article]({%slug winforms/wordsprocessing/concepts/document-themes%}).
+>
+
 
 ## Operating with a TableCell
 
 ### Add a Paragraph to a TableCell
 
 The following code snippet demonstrates how to add a __Paragraph__ to a __TableCell__:
-            
+            #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableCell.cs region=radwordsprocessing-model-tablecell_2}}
-	            Paragraph paragraph = cell.Blocks.AddParagraph();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableCell.cs region=radwordsprocessing-model-tablecell_2}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_2}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_2}}
-	            Dim paragraph As Paragraph = cell.Blocks.AddParagraph()
-	{{endregion}}
+````C#
+            Paragraph paragraph = cell.Blocks.AddParagraph();
+````
+````VB.NET
+            Dim paragraph As Paragraph = cell.Blocks.AddParagraph()
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -170,10 +182,12 @@ Through the __BlockCollection__ property of the __TableCell__ element you can ad
               element.
             
 
-# See Also[TableCell API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_tablecell.html)
+# See Also
 
- * [Document model]({%slug wordsprocessing-model%})
+ * [TableCell API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_tablecell.html)
 
- * [Table]({%slug wordsprocessing-model-table%})
+ * [Document model]({%slug winforms/wordsprocessing/model%})
 
- * [TableRow]({%slug wordsprocessing-model-tablerow%})
+ * [Table]({%slug winforms/wordsprocessing/model/table%})
+
+ * [TableRow]({%slug winforms/wordsprocessing/model/tablerow%})

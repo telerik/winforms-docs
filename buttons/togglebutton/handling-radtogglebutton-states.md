@@ -1,8 +1,8 @@
 ---
 title: Handling RadToggleButton States
-page_title: Handling RadToggleButton States
+page_title: Handling RadToggleButton States | UI for WinForms Documentation
 description: Handling RadToggleButton States
-slug: buttons-togglebutton-handling-radtogglebutton-states
+slug: winforms/buttons/togglebutton/handling-radtogglebutton-states
 tags: handling,radtogglebutton,states
 published: True
 position: 0
@@ -22,30 +22,33 @@ The __ToggleState__ property is responsible for getting or setting the state of 
 You can handle the __ToggleStateChanged__ event of __RadToggleButton__to take action when the user toggles the button. The event handler is passed a
           __StateChangedEventArgs__ parameter that includes a __ToggleState__
           member.
-        
+        #_[C#] Handling the ToggleStateChanged event_
 
-#### __[C#] Handling the ToggleStateChanged event__
-
-{{source=..\SamplesCS\Buttons\ToggleButton.cs region=handlingToggleStateChanged}}
 	
-	        void radToggleButton1_ToggleStateChanged(object sender, StateChangedEventArgs args)
-	        {
-	            MessageBox.Show(args.ToggleState.ToString());
-	        }
-	
-	{{endregion}}
 
 
 
-#### __[VB.NET] Handling the ToggleStateChanged event__
+{{source=..\SamplesCS\Buttons\ToggleButton.cs region=handlingToggleStateChanged}} 
+{{source=..\SamplesVB\Buttons\ToggleButton.vb region=handlingToggleStateChanged}} 
 
-{{source=..\SamplesVB\Buttons\ToggleButton.vb region=handlingToggleStateChanged}}
-	
-	    Private Sub radToggleButton1_ToggleStateChanged(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.StateChangedEventArgs)
-	        MessageBox.Show(args.ToggleState.ToString())
-	    End Sub
-	
-	{{endregion}}
+````C#
+
+        void radToggleButton1_ToggleStateChanged(object sender, StateChangedEventArgs args)
+        {
+            MessageBox.Show(args.ToggleState.ToString());
+        }
+````
+````VB.NET
+
+    Private Sub radToggleButton1_ToggleStateChanged(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.StateChangedEventArgs)
+        MessageBox.Show(args.ToggleState.ToString())
+    End Sub
+
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -69,50 +72,50 @@ The example below allows a __RadToggleButton__to toggle only
           state is __On__ and the __NewValue__ is __On__,
           then the toggle is canceled. The __ToggleStateChanged__event only fires
           and changes the __Text__property when __ToggleStateChangiing__does not cancel.
-        
+        #_[C#] Handling the ToggleStateChanging event_
 
-#### __[C#] Handling the ToggleStateChanging event__
-
-{{source=..\SamplesCS\Buttons\ToggleButton.cs region=handlingToggleStateChanging}}
 	
-	        private void radToggleButton2_ToggleStateChanging(object sender,
-	           Telerik.WinControls.UI.StateChangingEventArgs args)
-	        {
-	            bool attemptingOn = args.NewValue ==
-	                Telerik.WinControls.Enumerations.ToggleState.On;
-	            args.Cancel = true;
-	        }
-	
-	        private void radToggleButton2_ToggleStateChanged(object sender,
-	           Telerik.WinControls.UI.StateChangedEventArgs args)
-	        {
-	            radToggleButton1.Text = args.ToggleState.ToString();
-	        }
-	
-	{{endregion}}
 
 
 
-#### __[VB.NET] Handling the ToggleStateChanging event__
+{{source=..\SamplesCS\Buttons\ToggleButton.cs region=handlingToggleStateChanging}} 
+{{source=..\SamplesVB\Buttons\ToggleButton.vb region=handlingToggleStateChanging}} 
 
-{{source=..\SamplesVB\Buttons\ToggleButton.vb region=handlingToggleStateChanging}}
-	
-	    Private Sub radToggleButton2_ToggleStateChanging(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.StateChangingEventArgs)
-	        args.Cancel = True
-	    End Sub
-	
-	    Private Sub radToggleButton2_ToggleStateChanged(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.StateChangedEventArgs)
-	        radToggleButton1.Text = args.ToggleState.ToString()
-	    End Sub
-	
-	{{endregion}}
+````C#
+
+        private void radToggleButton2_ToggleStateChanging(object sender,
+           Telerik.WinControls.UI.StateChangingEventArgs args)
+        {
+            bool attemptingOn = args.NewValue ==
+                Telerik.WinControls.Enumerations.ToggleState.On;
+            args.Cancel = true;
+        }
+
+        private void radToggleButton2_ToggleStateChanged(object sender,
+           Telerik.WinControls.UI.StateChangedEventArgs args)
+        {
+            radToggleButton1.Text = args.ToggleState.ToString();
+        }
+````
+````VB.NET
+
+    Private Sub radToggleButton2_ToggleStateChanging(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.StateChangingEventArgs)
+        args.Cancel = True
+    End Sub
+
+    Private Sub radToggleButton2_ToggleStateChanged(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.StateChangedEventArgs)
+        radToggleButton1.Text = args.ToggleState.ToString()
+    End Sub
+
+    '
+````
+
+{{endregion}} 
 
 
 
->Due to the specifics of the
-            [simple data binding](http://msdn.microsoft.com/en-us/library/system.windows.forms.binding(v=vs.110).aspx)
 
-            we have introduced the __CheckChanging__ / __CheckChanged__ events together with the __CheckState__ property.
-            These events and property provide the same functionality as the __ToggleStateChanged__, __ToggleStateChanging__ and the
-            __ToggleState__ property, but give you the ability to simple data bind the control.
-          
+>note Due to the specifics of the[simple data binding](http://msdn.microsoft.com/en-us/library/system.windows.forms.binding(v=vs.110).aspx)we have introduced the __CheckChanging__ / __CheckChanged__ events together with the __CheckState__ property.
+            These events and property provide the same functionality as the __ToggleStateChanged__ , __ToggleStateChanging__ and the __ToggleState__ property, but give you the ability to simple data bind the control.
+>
+

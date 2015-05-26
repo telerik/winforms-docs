@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: ribbonbar-getting-started
+slug: winforms/ribbonbar/getting-started/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -91,57 +91,61 @@ Having done that a __RadButtonElement__ is added to the *button group* that you
 
 
 
-## Add the Code 
+## Add the Code #_[C#] Make text bold or italic_
 
-#### __[C#] Make text bold or italic__
-
-{{source=..\SamplesCS\RibbonBar\GettingStarted\RibbonGettingStarted.cs region=BoldAndItalicText}}
-	        private void TextBold_Click(object sender, EventArgs e)
-	        {
-	            if (richTextBox1.SelectionFont.Bold)     
-	            {
-	                richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, richTextBox1.SelectionFont.Style & ~FontStyle.Bold); 
-	            }     
-	            else   
-	            {
-	                richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, richTextBox1.SelectionFont.Style | FontStyle.Bold);   
-	            }
-	        }
-	         
-	        private void TextItalic_Click(object sender, EventArgs e)
-	        {
-	            if (richTextBox1.SelectionFont.Italic)     
-	            {
-	                richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, richTextBox1.SelectionFont.Style & ~FontStyle.Italic);     
-	            }     
-	            else       
-	            {
-	                richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, richTextBox1.SelectionFont.Style | FontStyle.Italic);
-	            }
-	        }
-	{{endregion}}
-
-
-
-#### __[VB.NET] Make text bold or italic__
-
-{{source=..\SamplesVB\RibbonBar\GettingStarted\RibbonGettingStarted.vb region=BoldAndItalicText}}
-	    Private Sub TextBold_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBold.Click
-	        If RichTextBox1.SelectionFont.Bold Then
-	            RichTextBox1.SelectionFont = New Font(RichTextBox1.SelectionFont, RichTextBox1.SelectionFont.Style And Not FontStyle.Bold)
-	        Else
-	            RichTextBox1.SelectionFont = New Font(RichTextBox1.SelectionFont, RichTextBox1.SelectionFont.Style Or FontStyle.Bold)
-	        End If
-	    End Sub
 	
-	    Private Sub TextItalic_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextItalic.Click
-	        If RichTextBox1.SelectionFont.Italic Then
-	            RichTextBox1.SelectionFont = New Font(RichTextBox1.SelectionFont, RichTextBox1.SelectionFont.Style And Not FontStyle.Italic)
-	        Else
-	            RichTextBox1.SelectionFont = New Font(RichTextBox1.SelectionFont, RichTextBox1.SelectionFont.Style Or FontStyle.Italic)
-	        End If
-	    End Sub
-	{{endregion}}
+
+
+
+{{source=..\SamplesCS\RibbonBar\GettingStarted\RibbonGettingStarted.cs region=BoldAndItalicText}} 
+{{source=..\SamplesVB\RibbonBar\GettingStarted\RibbonGettingStarted.vb region=BoldAndItalicText}} 
+
+````C#
+        private void TextBold_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.SelectionFont.Bold)     
+            {
+                richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, richTextBox1.SelectionFont.Style & ~FontStyle.Bold); 
+            }     
+            else   
+            {
+                richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, richTextBox1.SelectionFont.Style | FontStyle.Bold);   
+            }
+        }
+         
+        private void TextItalic_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.SelectionFont.Italic)     
+            {
+                richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, richTextBox1.SelectionFont.Style & ~FontStyle.Italic);     
+            }     
+            else       
+            {
+                richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, richTextBox1.SelectionFont.Style | FontStyle.Italic);
+            }
+        }
+````
+````VB.NET
+    Private Sub TextBold_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBold.Click
+        If RichTextBox1.SelectionFont.Bold Then
+            RichTextBox1.SelectionFont = New Font(RichTextBox1.SelectionFont, RichTextBox1.SelectionFont.Style And Not FontStyle.Bold)
+        Else
+            RichTextBox1.SelectionFont = New Font(RichTextBox1.SelectionFont, RichTextBox1.SelectionFont.Style Or FontStyle.Bold)
+        End If
+    End Sub
+
+    Private Sub TextItalic_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextItalic.Click
+        If RichTextBox1.SelectionFont.Italic Then
+            RichTextBox1.SelectionFont = New Font(RichTextBox1.SelectionFont, RichTextBox1.SelectionFont.Style And Not FontStyle.Italic)
+        Else
+            RichTextBox1.SelectionFont = New Font(RichTextBox1.SelectionFont, RichTextBox1.SelectionFont.Style Or FontStyle.Italic)
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 

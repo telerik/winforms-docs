@@ -1,8 +1,8 @@
 ---
 title: RadFlowDocumentEditor
-page_title: RadFlowDocumentEditor
+page_title: RadFlowDocumentEditor | UI for WinForms Documentation
 description: RadFlowDocumentEditor
-slug: wordsprocessing-editing-radflowdocumenteditor
+slug: winforms/wordsprocessing/editing/radflowdocumenteditor
 tags: radflowdocumenteditor
 published: True
 position: 1
@@ -28,99 +28,114 @@ Although __RadFlowDocument__ can be created and modified by using the style prop
 
 __RadFlowDocumentEditor__ is always associated to a single document which it takes as a constructor parameter when it is
           created:
-        
+        #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_0}}
-	            RadFlowDocument document = new RadFlowDocument();
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
-	{{endregion}}
+	
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_0}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_0}}
-	            Dim document As New RadFlowDocument()
-	            Dim editor As New RadFlowDocumentEditor(document)
-	{{endregion}}
+````C#
+            RadFlowDocument document = new RadFlowDocument();
+            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
+````
+````VB.NET
+            Dim document As New RadFlowDocument()
+            Dim editor As New RadFlowDocumentEditor(document)
+            '
+````
+
+{{endregion}} 
+
 
 
 
 The editor maintains an internal position inside the document. This position points either inside a paragraph (to an inline) or directly after
           the end of a table element. Here are the available methods for changing the position of the editor within a document:
-        
+        #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_1}}
-	            public void MoveToInlineStart(InlineBase inline);
-	            public void MoveToInlineEnd(InlineBase inline);
-	            public void MoveToParagraphStart(Paragraph paragraph);
-	            public void MoveToTableEnd(Table table);
-	{{endregion}}
+	
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_1}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_1}} 
 
-{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_1}}
-	        Public Sub MoveToInlineStart(inline As InlineBase)
-	        End Sub
-	        Public Sub MoveToInlineEnd(inline As InlineBase)
-	        End Sub
-	        Public Sub MoveToParagraphStart(paragraph As Paragraph)
-	        End Sub
-	        Public Sub MoveToTableEnd(table As Table)
-	        End Sub
-	{{endregion}}
+````C#
+            public void MoveToInlineStart(InlineBase inline);
+            public void MoveToInlineEnd(InlineBase inline);
+            public void MoveToParagraphStart(Paragraph paragraph);
+            public void MoveToTableEnd(Table table);
+````
+````VB.NET
+        Public Sub MoveToInlineStart(inline As InlineBase)
+        End Sub
+        Public Sub MoveToInlineEnd(inline As InlineBase)
+        End Sub
+        Public Sub MoveToParagraphStart(paragraph As Paragraph)
+        End Sub
+        Public Sub MoveToTableEnd(table As Table)
+        End Sub
+````
+
+{{endregion}} 
+
 
 
 
 Here is an example of how to position the editor after the second inline in the first paragraph of the document:
-        
+        #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_2}}
-	            Paragraph firstParagraph = document.EnumerateChildrenOfType<Paragraph>().First();
-	            editor.MoveToInlineEnd(firstParagraph.Inlines[1]);
-	{{endregion}}
+	
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_2}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_2}} 
 
-{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_2}}
-	            Dim firstParagraph As Paragraph = document.EnumerateChildrenOfType(Of Paragraph)().First()
-	            editor.MoveToInlineEnd(firstParagraph.Inlines(1))
-	{{endregion}}
+````C#
+            Paragraph firstParagraph = document.EnumerateChildrenOfType<Paragraph>().First();
+            editor.MoveToInlineEnd(firstParagraph.Inlines[1]);
+````
+````VB.NET
+            Dim firstParagraph As Paragraph = document.EnumerateChildrenOfType(Of Paragraph)().First()
+            editor.MoveToInlineEnd(firstParagraph.Inlines(1))
+            '
+````
+
+{{endregion}} 
+
 
 
 
 Note that it is possible to create a __RadFlowDocumentEditor__ for an empty document (one with no sections). In this case a
           section and paragraph are automatically created when you call an insert method. The following code creates a document with one section,
           containing one paragraph with the text "Hello word!":
-        
+        #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_3}}
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
-	            editor.InsertText("Hello word!");
-	            return editor.Document;
-	{{endregion}}
+	
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_3}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_3}} 
 
-{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_3}}
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	            editor.InsertText("Hello word!")
-	            Return editor.Document
-	{{endregion}}
+````C#
+            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+            editor.InsertText("Hello word!");
+            return editor.Document;
+````
+````VB.NET
+            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+            editor.InsertText("Hello word!")
+            Return editor.Document
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -135,11 +150,11 @@ Most of the insert methods of the __RadDocumentEditor__ return the newly inserte
 Inserting text [Runs](9fefa02d-b368-4d24-a6fd-5047712117fb) can be done with the following methods:
             
 
-* public Run InsertText(string text): Inserts a new __Run__ with the given text in the
+* `public Run InsertText(string text)`: Inserts a new __Run__ with the given text in the
                   current paragraph.
                 
 
-* public Run InsertLine(string text): Inserts a new __Run__ with the given text in the
+* `public Run InsertLine(string text)`: Inserts a new __Run__ with the given text in the
                   current paragraph and starts new paragraph.
                 
 
@@ -148,54 +163,62 @@ Both methods return the newly inserted __Run__ element. If, however, there are n
             
 
 The next snippet insert a run containing a new line:
-            
+            #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_4}}
-	            editor.InsertText("First" + Environment.NewLine + "Second");
-	{{endregion}}
+	
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_4}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_4}} 
 
-{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_4}}
-	            editor.InsertText("First" + Environment.NewLine + "Second")
-	{{endregion}}
+````C#
+            editor.InsertText("First" + Environment.NewLine + "Second");
+````
+````VB.NET
+            editor.InsertText("First" + Environment.NewLine + "Second")
+            '
+````
+
+{{endregion}} 
+
 
 
 
 The result looks like this:
             ![wordsprocessing-editing-radflowdocumenteditor 001](images/wordsprocessing-editing-radflowdocumenteditor001.png)
 
->The current [CharacterFormatting](#changing-current-styles) and [ParagraphFormatting](#changing-current-styles)
-                is applied for each Run and Paragraph that is created.
-              
+>note The current[CharacterFormatting](#changing-current-styles)and[ParagraphFormatting](#changing-current-styles)is applied for each Run and Paragraph that is created.
+>
+
 
 ### Inserting Paragraph
 
-You can start a new [Paragraph]({%slug wordsprocessing-model-paragraph%}) with the __InsertParagraph()__ method.
+You can start a new [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}) with the __InsertParagraph()__ method.
               The current __ParagraphFormatting__ is applied to the new paragraph and the paragraph is returned.
-            
+            #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_5}}
-	            editor.InsertText("First paragraph");
-	            editor.InsertParagraph();
-	            editor.InsertText("Second paragraph");
-	{{endregion}}
+	
 
 
 
-#### __ VB NET__
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_5}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_5}} 
 
-{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_5}}
-	            editor.InsertText("First paragraph")
-	            editor.InsertParagraph()
-	            editor.InsertText("Second paragraph")
-	{{endregion}}
+````C#
+            editor.InsertText("First paragraph");
+            editor.InsertParagraph();
+            editor.InsertText("Second paragraph");
+````
+````VB.NET
+            editor.InsertText("First paragraph")
+            editor.InsertParagraph()
+            editor.InsertText("Second paragraph")
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -211,22 +234,26 @@ If you call __InsertParagraph()__ method while the editor is positioned in the m
             Inserting Sections
           
 
-Inserting [Section]({%slug wordsprocessing-model-section%}) elements can be achieved with the __InsertSection()__ method. 
-            A paragraph with the new section’s properties will be added and the new __Section__ element will be returned.
+Inserting [Section]({%slug winforms/wordsprocessing/model/section%}) elements can be achieved with the __InsertSection()__ method. 
+            A paragraph with the new section’s properties will be added and the new __Section__ element will be returned.#_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=section}}
-	            editor.InsertSection();
-	{{endregion}}
+	
 
 
 
-#### __ VB NET__
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=section}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=section}} 
 
-{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=section}}
-	        editor.InsertSection()
-	{{endregion}}
+````C#
+            editor.InsertSection();
+````
+````VB.NET
+        editor.InsertSection()
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -239,30 +266,34 @@ If you call the __InsertSection()__ method while the editor is positioned in a T
 ### Inserting Hyperlinks
 
 __Hyperlinks__ in the __RadFlowDocument__ model are actually
-              [Fields]({%slug wordsprocessing-concepts-fields%}), which means they have code and result parts separated by
-              [FieldCharacter]({%slug wordsprocessing-model-fieldcharacter%}) inlines. Inserting hyperlinks is simplified with
+              [Fields]({%slug winforms/wordsprocessing/concepts/fields%}), which means they have code and result parts separated by
+              [FieldCharacter]({%slug winforms/wordsprocessing/model/fieldcharacter%}) inlines. Inserting hyperlinks is simplified with
               __RadFlowDocumentEditor.InsertHyperlink()__  method:
             
 
-public Hyperlink InsertHyperlink(string text, string uri, bool isAnchor, string toolTip)
+`public Hyperlink InsertHyperlink(string text, string uri, bool isAnchor, string toolTip)`
 
 It automatically applies "Hyperlink" built-in style to the inserted hyperlink if there is no explicitly set style in the
               __CharacterFormatting__ options of the editor.
-            
+            #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_6}}
-	            editor.InsertHyperlink("telerik", "http://www.telerik.com", false, "Telerik site");
-	{{endregion}}
+	
 
 
 
-#### __ VB NET__
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_6}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_6}} 
 
-{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_6}}
-	            editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
-	{{endregion}}
+````C#
+            editor.InsertHyperlink("telerik", "http://www.telerik.com", false, "Telerik site");
+````
+````VB.NET
+            editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
+            '
+````
+
+{{endregion}} 
+
 
 ![wordsprocessing-editing-radflowdocumenteditor 003](images/wordsprocessing-editing-radflowdocumenteditor003.png)
 
@@ -271,38 +302,42 @@ It automatically applies "Hyperlink" built-in style to the inserted hyperlink if
 Inserting fields can be done with the __InsertField()__ method, which accepts code and result fragments:
             
 
-public Field InsertField(string code, string result)
+`public Field InsertField(string code, string result)`
 
 Here is how to add page numbering in the header of document:
-            
+            #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_7}}
-	            // Create header and move the editor
-	            Header header = document.Sections[0].Headers.Add();
-	            editor.MoveToParagraphStart(header.Blocks.AddParagraph());
 	
-	            editor.InsertText("Page ");
-	            editor.InsertField("PAGE", "1");
-	            editor.InsertText(" of ");
-	            editor.InsertField("NUMPAGES", "1");
-	{{endregion}}
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_7}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_7}} 
 
-{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_7}}
-	            ' Create header and move the editor
-	            Dim header As Header = document.Sections(0).Headers.Add()
-	            editor.MoveToParagraphStart(header.Blocks.AddParagraph())
-	
-	            editor.InsertText("Page ")
-	            editor.InsertField("PAGE", "1")
-	            editor.InsertText(" of ")
-	            editor.InsertField("NUMPAGES", "1")
-	{{endregion}}
+````C#
+            // Create header and move the editor
+            Header header = document.Sections[0].Headers.Add();
+            editor.MoveToParagraphStart(header.Blocks.AddParagraph());
+
+            editor.InsertText("Page ");
+            editor.InsertField("PAGE", "1");
+            editor.InsertText(" of ");
+            editor.InsertField("NUMPAGES", "1");
+````
+````VB.NET
+            ' Create header and move the editor
+            Dim header As Header = document.Sections(0).Headers.Add()
+            editor.MoveToParagraphStart(header.Blocks.AddParagraph())
+
+            editor.InsertText("Page ")
+            editor.InsertField("PAGE", "1")
+            editor.InsertText(" of ")
+            editor.InsertField("NUMPAGES", "1")
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -313,67 +348,73 @@ Note that in this case the result is automatically updated when a document is op
               of the document.
             
 
->tipYou can find an extensive list of field codes in the Office Open XML standard documentation -
-                [ECMA-376](http://www.ecma-international.org/publications/standards/Ecma-376.htm)
-                4th edition, December 2012, Chapter 17.16.6 Field Definitions.
-              
+>tip You can find an extensive list of field codes in the Office Open XML standard documentation -[ECMA-376](http://www.ecma-international.org/publications/standards/Ecma-376.htm)4th edition, December 2012, Chapter 17.16.6 Field Definitions.
+>
+
 
 ### Inserting Images
 
-__RadFlowDocumentEditor__ provides several methods for inserting [ImageInline]({%slug wordsprocessing-model-imageinline%})
-              and [FloatingImage]({%slug wordsprocessing-model-floatingimage%}). All of them return the inserted image element, so that additional
+__RadFlowDocumentEditor__ provides several methods for inserting [ImageInline]({%slug winforms/wordsprocessing/model/imageinline%})
+              and [FloatingImage]({%slug winforms/wordsprocessing/model/floatingimage%}). All of them return the inserted image element, so that additional
               manipulations can be done with it:
-            
+            #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_8}}
-	        public ImageInline InsertImageInline(ImageSource source, Size size);
-	        public ImageInline InsertImageInline(Stream stream, string extension, Size size);
-	        public FloatingImage InsertFloatingImage(ImageSource source, Size size);
-	        public FloatingImage InsertFloatingImage(Stream stream, string extension, Size size);
-	{{endregion}}
+	
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_8}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_8}} 
 
-{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_8}}
-	        Public Function InsertImageInline(source As ImageSource, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertImageInline(stream As Stream, extension As String, size As Size) As ImageInline
-	        End Function
-	        Public Function InsertFloatingImage(source As ImageSource, size As Size) As FloatingImage
-	        End Function
-	        Public Function InsertFloatingImage(stream As Stream, extension As String, size As Size) As FloatingImage
-	        End Function
-	{{endregion}}
+````C#
+        public ImageInline InsertImageInline(ImageSource source, Size size);
+        public ImageInline InsertImageInline(Stream stream, string extension, Size size);
+        public FloatingImage InsertFloatingImage(ImageSource source, Size size);
+        public FloatingImage InsertFloatingImage(Stream stream, string extension, Size size);
+````
+````VB.NET
+        Public Function InsertImageInline(source As ImageSource, size As Size) As ImageInline
+        End Function
+        Public Function InsertImageInline(stream As Stream, extension As String, size As Size) As ImageInline
+        End Function
+        Public Function InsertFloatingImage(source As ImageSource, size As Size) As FloatingImage
+        End Function
+        Public Function InsertFloatingImage(stream As Stream, extension As String, size As Size) As FloatingImage
+        End Function
+````
+
+{{endregion}} 
+
 
 
 
 Here is how an image can be inserted using a stream:
-            
+            #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_9}}
-	            editor.InsertText("Image:");
-	            using (Stream stream = this.GetResourceStream("Telerik_logo.png"))
-	            {
-	                editor.InsertImageInline(stream, "png", new Size(118, 28));
-	            }
-	{{endregion}}
+	
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_9}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_9}} 
 
-{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_9}}
-	            editor.InsertText("Image:")
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertImageInline(stream, "png", New Size(118, 28))
-	            End Using
-	{{endregion}}
+````C#
+            editor.InsertText("Image:");
+            using (Stream stream = this.GetResourceStream("Telerik_logo.png"))
+            {
+                editor.InsertImageInline(stream, "png", new Size(118, 28));
+            }
+````
+````VB.NET
+            editor.InsertText("Image:")
+            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
+                editor.InsertImageInline(stream, "png", New Size(118, 28))
+            End Using
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -382,46 +423,51 @@ The result is as follows:
 
 ### Inserting Tables
 
-The following methods can be used to insert [Table]({%slug wordsprocessing-model-table%}) in the document:
+The following methods can be used to insert [Table]({%slug winforms/wordsprocessing/model/table%}) in the document:
             
 
-public Table InsertTable(): Inserts an empty table in the document.
+`public Table InsertTable()`: Inserts an empty table in the document.
             
 
-public Table InsertTable(int rows, int columns): Inserts table with specified number of rows and columns.
+`public Table InsertTable(int rows, int columns)`: Inserts table with specified number of rows and columns.
             
 
->The formatting specified with the [TableFormatting](#changing-current-styles) property is applied to the inserted
+>note The formatting specified with the[TableFormatting](#changing-current-styles)property is applied to the inserted
                 table. After the insert operation the editor is automatically placed directly __after__ the inserted table (not
                 inside it).
-              
+>
+
 
 Here is how to insert a table with the "TableGrid" built-in style:
-            
+            #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_10}}
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId);
-	            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId;
 	
-	            editor.InsertText("Before table.");
-	            editor.InsertTable(2, 4);
-	            editor.InsertText("After table.");
-	{{endregion}}
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_10}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_10}} 
 
-{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_10}}
-	            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-	            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId
-	
-	            editor.InsertText("Before table.")
-	            editor.InsertTable(2, 4)
-	            editor.InsertText("After table.")
-	{{endregion}}
+````C#
+            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId);
+            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId;
+
+            editor.InsertText("Before table.");
+            editor.InsertTable(2, 4);
+            editor.InsertText("After table.");
+````
+````VB.NET
+            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
+            editor.TableFormatting.StyleId = BuiltInStyleNames.TableGridStyleId
+
+            editor.InsertText("Before table.")
+            editor.InsertTable(2, 4)
+            editor.InsertText("After table.")
+            '
+````
+
+{{endregion}} 
+
 
 ![wordsprocessing-editing-radflowdocumenteditor 006](images/wordsprocessing-editing-radflowdocumenteditor006.png)
 
@@ -445,40 +491,46 @@ When you use the insert methods of the __RadFlowDocumentEditor__ the editor crea
 
 Formatting options are most useful when inserting multiple elements that should have consistent styling. For example the following code inserts
           multiple paragraphs with no spacing between them and with text (Runs) in "Consolas" font:
-        
+        #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_11}}
-	            // Set code block formatting
-	            var codeFont = new ThemableFontFamily(new FontFamily("Consolas"));
-	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont;
-	            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0;
 	
-	            editor.InsertLine("static void Main(string[] args)");
-	            editor.InsertLine("{");
-	            editor.InsertLine("    Console.WriteLine(\"Hello World\");");
-	            editor.InsertLine("}");
-	{{endregion}}
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_11}} 
+{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_11}} 
 
-{{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_11}}
-	            ' Set code block formatting
-	            Dim codeFont = New ThemableFontFamily(New FontFamily("Consolas"))
-	            editor.CharacterFormatting.FontFamily.LocalValue = codeFont
-	            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0
-	
-	            editor.InsertLine("static void Main(string[] args)")
-	            editor.InsertLine("{")
-	            editor.InsertLine(" Console.WriteLine(""Hello World"");")
-	            editor.InsertLine("}")
-	{{endregion}}
+````C#
+            // Set code block formatting
+            var codeFont = new ThemableFontFamily(new FontFamily("Consolas"));
+            editor.CharacterFormatting.FontFamily.LocalValue = codeFont;
+            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0;
+
+            editor.InsertLine("static void Main(string[] args)");
+            editor.InsertLine("{");
+            editor.InsertLine("    Console.WriteLine(\"Hello World\");");
+            editor.InsertLine("}");
+````
+````VB.NET
+            ' Set code block formatting
+            Dim codeFont = New ThemableFontFamily(New FontFamily("Consolas"))
+            editor.CharacterFormatting.FontFamily.LocalValue = codeFont
+            editor.ParagraphFormatting.SpacingAfter.LocalValue = 0
+
+            editor.InsertLine("static void Main(string[] args)")
+            editor.InsertLine("{")
+            editor.InsertLine(" Console.WriteLine(""Hello World"");")
+            editor.InsertLine("}")
+            '
+````
+
+{{endregion}} 
+
 
 ![wordsprocessing-editing-radflowdocumenteditor 007](images/wordsprocessing-editing-radflowdocumenteditor007.png)
 
-# See Also[RadFlowDocument API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_editing_radflowdocumenteditor.html)
+# See Also
 
- * [Document model]({%slug wordsprocessing-model%})
+ * [RadFlowDocument API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_editing_radflowdocumenteditor.html)
+
+ * [Document model]({%slug winforms/wordsprocessing/model%})

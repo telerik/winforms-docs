@@ -1,8 +1,8 @@
 ---
 title: Bindable Types
-page_title: Bindable Types
+page_title: Bindable Types | UI for WinForms Documentation
 description: Bindable Types
-slug: gridview-populating-with-data-bindable-types
+slug: winforms/gridview/populating-with-data/bindable-types
 tags: bindable,types
 published: True
 position: 1

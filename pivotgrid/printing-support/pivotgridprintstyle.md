@@ -1,8 +1,8 @@
 ---
 title: PivotGridPrintStyle
-page_title: PivotGridPrintStyle
+page_title: PivotGridPrintStyle | UI for WinForms Documentation
 description: PivotGridPrintStyle
-slug: pivotgrid-printing-support-pivotgridprintstyle
+slug: winforms/pivotgrid/printing-support/pivotgridprintstyle
 tags: pivotgridprintstyle
 published: True
 position: 0
@@ -20,135 +20,159 @@ Printing in RadPivotGrid is performed by a __PivotGridPrintStyle__ object. It pr
         
 
 You can modify the default font of the different cell types by using the following properties:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=PrintStyleFont}}
-	            this.radPivotGrid1.PrintStyle.DataCellsFont = new Font("Segoe UI Light", 8, FontStyle.Regular);
-	            this.radPivotGrid1.PrintStyle.HeaderCellsFont = new Font("Segoe UI Light", 8, FontStyle.Bold);
-	            this.radPivotGrid1.PrintStyle.DecriptorsFont = new Font("Segoe UI Light", 9, FontStyle.Regular);
-	            this.radPivotGrid1.PrintStyle.SubTotalCellsFont = new Font("Segoe UI Light", 8, FontStyle.Italic);
-	            this.radPivotGrid1.PrintStyle.GrandTotalCellsFont = new Font("Segoe UI Light", 8, FontStyle.Italic | FontStyle.Bold);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=PrintStyleFont}} 
+{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=PrintStyleFont}} 
 
-{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=PrintStyleFont}}
-	        Me.radPivotGrid1.PrintStyle.DataCellsFont = New Font("Segoe UI Light", 8, FontStyle.Regular)
-	        Me.radPivotGrid1.PrintStyle.HeaderCellsFont = New Font("Segoe UI Light", 8, FontStyle.Bold)
-	        Me.radPivotGrid1.PrintStyle.DecriptorsFont = New Font("Segoe UI Light", 9, FontStyle.Regular)
-	        Me.radPivotGrid1.PrintStyle.SubTotalCellsFont = New Font("Segoe UI Light", 8, FontStyle.Italic)
-	        Me.radPivotGrid1.PrintStyle.GrandTotalCellsFont = New Font("Segoe UI Light", 8, FontStyle.Italic Or FontStyle.Bold)
-	{{endregion}}
+````C#
+            this.radPivotGrid1.PrintStyle.DataCellsFont = new Font("Segoe UI Light", 8, FontStyle.Regular);
+            this.radPivotGrid1.PrintStyle.HeaderCellsFont = new Font("Segoe UI Light", 8, FontStyle.Bold);
+            this.radPivotGrid1.PrintStyle.DecriptorsFont = new Font("Segoe UI Light", 9, FontStyle.Regular);
+            this.radPivotGrid1.PrintStyle.SubTotalCellsFont = new Font("Segoe UI Light", 8, FontStyle.Italic);
+            this.radPivotGrid1.PrintStyle.GrandTotalCellsFont = new Font("Segoe UI Light", 8, FontStyle.Italic | FontStyle.Bold);
+````
+````VB.NET
+        Me.radPivotGrid1.PrintStyle.DataCellsFont = New Font("Segoe UI Light", 8, FontStyle.Regular)
+        Me.radPivotGrid1.PrintStyle.HeaderCellsFont = New Font("Segoe UI Light", 8, FontStyle.Bold)
+        Me.radPivotGrid1.PrintStyle.DecriptorsFont = New Font("Segoe UI Light", 9, FontStyle.Regular)
+        Me.radPivotGrid1.PrintStyle.SubTotalCellsFont = New Font("Segoe UI Light", 8, FontStyle.Italic)
+        Me.radPivotGrid1.PrintStyle.GrandTotalCellsFont = New Font("Segoe UI Light", 8, FontStyle.Italic Or FontStyle.Bold)
+        '
+````
+
+{{endregion}} 
+
 
 
 
 Similarly, you can modify the background color for the different cell types:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=PrintStyleColor}}
-	            this.radPivotGrid1.PrintStyle.CellBackColor = Color.Wheat;
-	            this.radPivotGrid1.PrintStyle.HeadersBackColor = Color.Gray;
-	            this.radPivotGrid1.PrintStyle.DescriptorsBackColor = Color.Yellow;
-	            this.radPivotGrid1.PrintStyle.SubTotalsBackColor = Color.LightBlue;
-	            this.radPivotGrid1.PrintStyle.GrandTotalsBackColor= Color.Blue;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=PrintStyleColor}} 
+{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=PrintStyleColor}} 
 
-{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=PrintStyleColor}}
-	        Me.radPivotGrid1.PrintStyle.CellBackColor = Color.Wheat
-	        Me.radPivotGrid1.PrintStyle.HeadersBackColor = Color.Gray
-	        Me.radPivotGrid1.PrintStyle.DescriptorsBackColor = Color.Yellow
-	        Me.radPivotGrid1.PrintStyle.SubTotalsBackColor = Color.LightBlue
-	        Me.radPivotGrid1.PrintStyle.GrandTotalsBackColor = Color.Blue
-	{{endregion}}
+````C#
+            this.radPivotGrid1.PrintStyle.CellBackColor = Color.Wheat;
+            this.radPivotGrid1.PrintStyle.HeadersBackColor = Color.Gray;
+            this.radPivotGrid1.PrintStyle.DescriptorsBackColor = Color.Yellow;
+            this.radPivotGrid1.PrintStyle.SubTotalsBackColor = Color.LightBlue;
+            this.radPivotGrid1.PrintStyle.GrandTotalsBackColor= Color.Blue;
+````
+````VB.NET
+        Me.radPivotGrid1.PrintStyle.CellBackColor = Color.Wheat
+        Me.radPivotGrid1.PrintStyle.HeadersBackColor = Color.Gray
+        Me.radPivotGrid1.PrintStyle.DescriptorsBackColor = Color.Yellow
+        Me.radPivotGrid1.PrintStyle.SubTotalsBackColor = Color.LightBlue
+        Me.radPivotGrid1.PrintStyle.GrandTotalsBackColor = Color.Blue
+        '
+````
+
+{{endregion}} 
+
 
 
 
 Sometimes the reports generated by RadPivotGrid can be larger than a single page. In this case you can choose
           to scale the report so that it fits the page area:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=ScaleMode}}
-	            this.radPivotGrid1.PrintStyle.ScaleMode = Telerik.WinControls.UI.PivotPrintScaleMode.FitAll;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=ScaleMode}} 
+{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=ScaleMode}} 
 
-{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=ScaleMode}}
-	        Me.radPivotGrid1.PrintStyle.ScaleMode = Telerik.WinControls.UI.PivotPrintScaleMode.FitAll
-	{{endregion}}
+````C#
+            this.radPivotGrid1.PrintStyle.ScaleMode = Telerik.WinControls.UI.PivotPrintScaleMode.FitAll;
+````
+````VB.NET
+        Me.radPivotGrid1.PrintStyle.ScaleMode = Telerik.WinControls.UI.PivotPrintScaleMode.FitAll
+        '
+````
+
+{{endregion}} 
+
 
 
 
 If you do not want to scale the report, you can choose the order in which pages are printed:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=PageOrder}}
-	            this.radPivotGrid1.PrintStyle.PageOrder = Telerik.WinControls.UI.PivotGridPrintPageOrder.DownThenOver;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=PageOrder}} 
+{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=PageOrder}} 
 
-{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=PageOrder}}
-	        Me.radPivotGrid1.PrintStyle.PageOrder = Telerik.WinControls.UI.PivotGridPrintPageOrder.DownThenOver
-	{{endregion}}
+````C#
+            this.radPivotGrid1.PrintStyle.PageOrder = Telerik.WinControls.UI.PivotGridPrintPageOrder.DownThenOver;
+````
+````VB.NET
+        Me.radPivotGrid1.PrintStyle.PageOrder = Telerik.WinControls.UI.PivotGridPrintPageOrder.DownThenOver
+        '
+````
+
+{{endregion}} 
+
 
 
 
 To save some spaces, you can enable __CompactLayout__ mode for the printed pages:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=Layout}}
-	            this.radPivotGrid1.PrintStyle.LayoutType = Telerik.WinControls.UI.PivotLayout.Compact;
-	            this.radPivotGrid1.PrintStyle.ComactLayoutIndent = 20;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=Layout}} 
+{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=Layout}} 
 
-{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=Layout}}
-	        Me.radPivotGrid1.PrintStyle.LayoutType = Telerik.WinControls.UI.PivotLayout.Compact
-	        Me.radPivotGrid1.PrintStyle.ComactLayoutIndent = 20
-	{{endregion}}
+````C#
+            this.radPivotGrid1.PrintStyle.LayoutType = Telerik.WinControls.UI.PivotLayout.Compact;
+            this.radPivotGrid1.PrintStyle.ComactLayoutIndent = 20;
+````
+````VB.NET
+        Me.radPivotGrid1.PrintStyle.LayoutType = Telerik.WinControls.UI.PivotLayout.Compact
+        Me.radPivotGrid1.PrintStyle.ComactLayoutIndent = 20
+        '
+````
+
+{{endregion}} 
+
 
 
 
 Additionally, if you do not want to print the entire report but only the selected parts,
           you can set the following property:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=PrintSelection}}
-	            this.radPivotGrid1.PrintStyle.PrintSelectionOnly = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=PrintSelection}} 
+{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=PrintSelection}} 
 
-{{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=PrintSelection}}
-	        Me.radPivotGrid1.PrintStyle.PrintSelectionOnly = True
-	{{endregion}}
+````C#
+            this.radPivotGrid1.PrintStyle.PrintSelectionOnly = true;
+````
+````VB.NET
+        Me.radPivotGrid1.PrintStyle.PrintSelectionOnly = True
+        '
+````
+
+{{endregion}} 
+
 
 

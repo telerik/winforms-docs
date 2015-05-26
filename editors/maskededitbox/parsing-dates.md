@@ -1,8 +1,8 @@
 ---
 title: Parsing Dates
-page_title: Parsing Dates
+page_title: Parsing Dates | UI for WinForms Documentation
 description: Parsing Dates
-slug: editors-maskededitbox-parsing-dates
+slug: winforms/editors/maskededitbox/parsing-dates
 tags: parsing,dates
 published: True
 position: 6
@@ -128,30 +128,20 @@ Besides the regular date parsing rules and heuristics described above, __RadMask
               If the both are greater than 12, the __RadMaskedEditBox__ will fail to parse the input string.
             
 
->If the current culture was __fr-CA__ (with short date format "yyyy-MM-dd" where the year slot is first) the input entry "20070507" would be evaluated properly
+>note If the current culture was __fr-CA__ (with short date format "yyyy-MM-dd" where the year slot is first) the input entry "20070507" would be evaluated properly
             as May 7th, 2007.
-          
-
 >
 
-* •	"moh-CA" culture has ‘’:" symbols in the MonthNames and DayNames which is used also as time separator symbol, which leads to incorrect parsing.
-            
 
+>note 
+* •	"moh-CA" culture has ‘’:" symbols in the MonthNames and DayNames which is used also as time separator symbol, which leads to incorrect parsing.
 * •	"gd-GB", "vi-VN", "so-SO" cultures have " "(white space) symbols in the MonthNames collection which is recognized as separator from parse
                 logic and month cannot be found correctly in some cases.
-              
-
 * •	"ja-JP","ko-KR","mn-MN"," ug-CN"," zh-CN"- in these cultures the MonthNames  or AbbreviatedMonthNames represent combination from digits and chars for example:"1月". 
                 The parse logic recognize this as two tokens which leads to incorrect result.
-              
-
 * •	These cultures "as-IN","bn-BD","bn-IN","bo-CN","dv-MV","hi-IN","km-KH","kh-IN","kn-IN","kok-IN","lo-LA","ml-IN", "mr-IN", "my-MM","ne-IN","ne-NP","nqo-GN",
                 "or-IN","pa-IN","qut-GT","sa-IN","si-LK", "ta-IN","ta-LK","te-IN", "tzm-Tfng-MA" , "zgh-Tfng-MA" - have unsupported chars.
-              
-
 * •	"br-FR" - has " ' " symbols in the MonthNames  which is not supported from parsing logic.
-              
-
 * •	"fy-NL" - in this culture for MonthNames  for March and May are "maa***" and "maa***", AbbreviatedMonthNames for May is "maa", when the date is enter with "maa",the parse 
-                logic searching first into long names and return March but the user want May and typed it in AbbreviatedMonthNames format which is not correct parsing.
-              
+                logic searching first into long names and return March but the user want May and typed it in AbbreviatedMonthNames format which is not correct parsing.>
+

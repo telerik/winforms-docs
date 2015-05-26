@@ -1,8 +1,8 @@
 ---
 title: New Row
-page_title: New Row
+page_title: New Row | UI for WinForms Documentation
 description: New Row
-slug: gridview-rows-new-row
+slug: winforms/gridview/rows/new-row
 tags: new,row
 published: True
 position: 13
@@ -22,64 +22,76 @@ RadGridView provides the end-users with a special row that allows them to add a 
 
 By default, the new row is visible to the end-user. You can explicitly set it to visible
           by setting the __AllowAddNewRow__ property to *true*:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=enablingNewRow}}
-	            this.radGridView1.AllowAddNewRow = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=enablingNewRow}} 
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=enablingNewRow}} 
 
-{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=enablingNewRow}}
-	        Me.RadGridView1.AllowAddNewRow = True
-	{{endregion}}
+````C#
+            this.radGridView1.AllowAddNewRow = true;
+````
+````VB.NET
+        Me.RadGridView1.AllowAddNewRow = True
+        '
+````
+
+{{endregion}} 
+
 
 
 
 If you want to hide the new row, just set the __AllowAddNewRow__ to *false*
           and RadGridView will look as shown below:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=disablingNewRow}}
-	            this.radGridView1.AllowAddNewRow = false;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=disablingNewRow}} 
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=disablingNewRow}} 
 
-{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=disablingNewRow}}
-	        Me.RadGridView1.AllowAddNewRow = False
-	{{endregion}}
+````C#
+            this.radGridView1.AllowAddNewRow = false;
+````
+````VB.NET
+        Me.RadGridView1.AllowAddNewRow = False
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-rows-new-row 004](images/gridview-rows-new-row004.png)
 
 ## Setting the new row text
 
 For the text displayed in the new row of __RadGridView__ you have the option to set it directly to the corresponding template. This allows you to have a different text on the new row of each level of your hierarchical grid.
-        
+        #_[C#] Change the new row text_
 
-#### __[C#] Change the new row text__
-
-{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=TemplateNewRowText}}
-	            this.radGridView1.MasterTemplate.NewRowText = "Click here to add a new category";
-	            this.radGridView1.MasterTemplate.Templates[0].NewRowText = "Click here to add a new product";
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Change the new row text__
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=TemplateNewRowText}} 
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=TemplateNewRowText}} 
 
-{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=TemplateNewRowText}}
-	        Me.RadGridView1.MasterTemplate.NewRowText = "Click here to add a new category"
-	        Me.RadGridView1.MasterTemplate.Templates(0).NewRowText = "Click here to add a new product"
-	{{endregion}}
+````C#
+            this.radGridView1.MasterTemplate.NewRowText = "Click here to add a new category";
+            this.radGridView1.MasterTemplate.Templates[0].NewRowText = "Click here to add a new product";
+````
+````VB.NET
+        Me.RadGridView1.MasterTemplate.NewRowText = "Click here to add a new category"
+        Me.RadGridView1.MasterTemplate.Templates(0).NewRowText = "Click here to add a new product"
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -87,40 +99,48 @@ For the text displayed in the new row of __RadGridView__ you have the option to 
 
 The new row can be pinned to top or bottom. By default, the new row is pinned to top. You
           can explicitly set its position to top by setting the __AddNewRowPosition__ to *Top*:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=positionTop}}
-	            this.radGridView1.AddNewRowPosition = SystemRowPosition.Top;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=positionTop}} 
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=positionTop}} 
 
-{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=positionTop}}
-	        Me.RadGridView1.AddNewRowPosition = SystemRowPosition.Top
-	{{endregion}}
+````C#
+            this.radGridView1.AddNewRowPosition = SystemRowPosition.Top;
+````
+````VB.NET
+        Me.RadGridView1.AddNewRowPosition = SystemRowPosition.Top
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-rows-new-row 002](images/gridview-rows-new-row002.png)
 
 In order to pin the new row to bottom, you should set the __AddNewRowPosition__ to *Bottom*:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=positionBottom}}
-	            this.radGridView1.AddNewRowPosition = SystemRowPosition.Bottom;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=positionBottom}} 
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=positionBottom}} 
 
-{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=positionBottom}}
-	        Me.RadGridView1.AddNewRowPosition = SystemRowPosition.Bottom
-	{{endregion}}
+````C#
+            this.radGridView1.AddNewRowPosition = SystemRowPosition.Bottom;
+````
+````VB.NET
+        Me.RadGridView1.AddNewRowPosition = SystemRowPosition.Bottom
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-rows-new-row 003](images/gridview-rows-new-row003.png)
 
@@ -129,21 +149,25 @@ In order to pin the new row to bottom, you should set the __AddNewRowPosition__ 
 If you, for some reason, want to access the New Row, you can do it by getting the __TableAddNewRow__ object from
           the *view* you are in. Let's say that you want to programmatically make the New Row current. Here is how to do that
           for the main view:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=makingNewRowCurrent}}
-	            this.radGridView1.CurrentRow = this.radGridView1.MasterView.TableAddNewRow;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=makingNewRowCurrent}} 
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=makingNewRowCurrent}} 
 
-{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=makingNewRowCurrent}}
-	        Me.RadGridView1.CurrentRow = Me.RadGridView1.MasterView.TableAddNewRow
-	{{endregion}}
+````C#
+            this.radGridView1.CurrentRow = this.radGridView1.MasterView.TableAddNewRow;
+````
+````VB.NET
+        Me.RadGridView1.CurrentRow = Me.RadGridView1.MasterView.TableAddNewRow
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -167,28 +191,32 @@ Let's have a RadGridView instance bound to the Employees table of the Northwind 
           have London as their city. Taking these assumptions into considerations, we will subscribe to the
           DefaultValuesNeeded event and will set the "Sales Representative"
           for the Title column and London for the City column:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=defaultValuesNeeded}}
-	        void radGridView1_DefaultValuesNeeded(object sender, GridViewRowEventArgs e)
-	        {
-	            e.Row.Cells["Title"].Value = "Sales Representative";
-	            e.Row.Cells["City"].Value = "London";
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=defaultValuesNeeded}} 
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=defaultValuesNeeded}} 
 
-{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=defaultValuesNeeded}}
-	    Private Sub RadGridView1_DefaultValuesNeeded(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewRowEventArgs) Handles RadGridView1.DefaultValuesNeeded
-	        e.Row.Cells("Title").Value = "Sales Representative"
-	        e.Row.Cells("City").Value = "London"
-	    End Sub
-	{{endregion}}
+````C#
+        void radGridView1_DefaultValuesNeeded(object sender, GridViewRowEventArgs e)
+        {
+            e.Row.Cells["Title"].Value = "Sales Representative";
+            e.Row.Cells["City"].Value = "London";
+        }
+````
+````VB.NET
+    Private Sub RadGridView1_DefaultValuesNeeded(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewRowEventArgs) Handles RadGridView1.DefaultValuesNeeded
+        e.Row.Cells("Title").Value = "Sales Representative"
+        e.Row.Cells("City").Value = "London"
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -203,21 +231,25 @@ In some cases, you may need RadGridView to create a record in the underlying dat
           immediately after the end-user starts editing the new row. RadGridView supports both modes. The behavior
           of RadGridView in this situation is determined by the __AddNewBoundRowBeforeEdit__
           property:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=addNewBoundRowBeforeEdit}}
-	            this.radGridView1.MasterTemplate.AddNewBoundRowBeforeEdit = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=addNewBoundRowBeforeEdit}} 
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=addNewBoundRowBeforeEdit}} 
 
-{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=addNewBoundRowBeforeEdit}}
-	        Me.RadGridView1.MasterTemplate.AddNewBoundRowBeforeEdit = True
-	{{endregion}}
+````C#
+            this.radGridView1.MasterTemplate.AddNewBoundRowBeforeEdit = true;
+````
+````VB.NET
+        Me.RadGridView1.MasterTemplate.AddNewBoundRowBeforeEdit = True
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -239,21 +271,25 @@ The Enter key may behave differently in the new row depending on the value of th
           property. By default, when the end-user presses Enter while being in the new row, the new row is
           committed, and the row next to the new row becomes current.
           Here is how the default value can be set explicitly:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=enterMovesToNextRow}}
-	            this.radGridView1.NewRowEnterKeyMode = RadGridViewNewRowEnterKeyMode.EnterMovesToNextRow;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=enterMovesToNextRow}} 
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=enterMovesToNextRow}} 
 
-{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=enterMovesToNextRow}}
-	        Me.RadGridView1.NewRowEnterKeyMode = RadGridViewNewRowEnterKeyMode.EnterMovesToNextRow
-	{{endregion}}
+````C#
+            this.radGridView1.NewRowEnterKeyMode = RadGridViewNewRowEnterKeyMode.EnterMovesToNextRow;
+````
+````VB.NET
+        Me.RadGridView1.NewRowEnterKeyMode = RadGridViewNewRowEnterKeyMode.EnterMovesToNextRow
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -297,38 +333,42 @@ __UserAddingRow__
           the end-user types 40 characters in the Address cell of the new row and tries to commit this row,
           he will get a warning message box that the length of his input exceeds the allowed one, and the new row will
           not be committed. This can be achieved with the following code snippet:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=userAddingRow}}
-	        void radGridView1_UserAddingRow(object sender, GridViewRowCancelEventArgs e)
-	        {
-	            if (e.Rows[0].Cells["Address"].Value != null)
-	            {
-	                if (e.Rows[0].Cells["Address"].Value.ToString().Length > 30)
-	                {
-	                    RadMessageBox.Show("The text in the Address field is long. Please provide shorter address.");
-	                    e.Cancel = true;
-	                }
-	            }
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=userAddingRow}} 
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=userAddingRow}} 
 
-{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=userAddingRow}}
-	    Private Sub RadGridView1_UserAddingRow(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewRowCancelEventArgs) Handles RadGridView1.UserAddingRow
-	        If e.Rows(0).Cells("Address").Value IsNot Nothing Then
-	            If e.Rows(0).Cells("Address").Value.ToString().Length > 30 Then
-	                RadMessageBox.Show("The text in the Address field is long. Please provide shorter address.")
-	                e.Cancel = True
-	            End If
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        void radGridView1_UserAddingRow(object sender, GridViewRowCancelEventArgs e)
+        {
+            if (e.Rows[0].Cells["Address"].Value != null)
+            {
+                if (e.Rows[0].Cells["Address"].Value.ToString().Length > 30)
+                {
+                    RadMessageBox.Show("The text in the Address field is long. Please provide shorter address.");
+                    e.Cancel = true;
+                }
+            }
+        }
+````
+````VB.NET
+    Private Sub RadGridView1_UserAddingRow(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewRowCancelEventArgs) Handles RadGridView1.UserAddingRow
+        If e.Rows(0).Cells("Address").Value IsNot Nothing Then
+            If e.Rows(0).Cells("Address").Value.ToString().Length > 30 Then
+                RadMessageBox.Show("The text in the Address field is long. Please provide shorter address.")
+                e.Cancel = True
+            End If
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -338,43 +378,47 @@ __UserAddedRow__
             we take the row that the end-user has just added, and we process it to the data base, by passing the row
             to the Update method of the TableAdapter:
             
-          
+          #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=userAddedRow}}
-	        void radGridView1_UserAddedRow(object sender, GridViewRowEventArgs e)
-	        {
-	            DataRow[] rows = new DataRow[e.Rows.Length];
-	            for (int i = 0; i < e.Rows.Length; i++)
-	            {
-	                DataRowView dataRowView = e.Rows[i].DataBoundItem as DataRowView;
-	                if (dataRowView != null)
-	                {
-	                    rows[i] = dataRowView.Row;
-	                }
-	            }
 	
-	            this.employeesTableAdapter.Update(rows);    
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=userAddedRow}} 
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=userAddedRow}} 
 
-{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=userAddedRow}}
-	    Private Sub RadGridView1_UserAddedRow(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewRowEventArgs) Handles RadGridView1.UserAddedRow
-	        Dim rows(e.Rows.Length - 1) As DataRow
-	        For i As Integer = 0 To e.Rows.Length - 1
-	            Dim dataRowView As DataRowView = TryCast(e.Rows(i).DataBoundItem, DataRowView)
-	            If dataRowView IsNot Nothing Then
-	                rows(i) = dataRowView.Row
-	            End If
-	        Next i
-	
-	        Me.EmployeesTableAdapter.Update(rows)
-	    End Sub
-	{{endregion}}
+````C#
+        void radGridView1_UserAddedRow(object sender, GridViewRowEventArgs e)
+        {
+            DataRow[] rows = new DataRow[e.Rows.Length];
+            for (int i = 0; i < e.Rows.Length; i++)
+            {
+                DataRowView dataRowView = e.Rows[i].DataBoundItem as DataRowView;
+                if (dataRowView != null)
+                {
+                    rows[i] = dataRowView.Row;
+                }
+            }
+
+            this.employeesTableAdapter.Update(rows);    
+        }
+````
+````VB.NET
+    Private Sub RadGridView1_UserAddedRow(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewRowEventArgs) Handles RadGridView1.UserAddedRow
+        Dim rows(e.Rows.Length - 1) As DataRow
+        For i As Integer = 0 To e.Rows.Length - 1
+            Dim dataRowView As DataRowView = TryCast(e.Rows(i).DataBoundItem, DataRowView)
+            If dataRowView IsNot Nothing Then
+                rows(i) = dataRowView.Row
+            End If
+        Next i
+
+        Me.EmployeesTableAdapter.Update(rows)
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 

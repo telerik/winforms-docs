@@ -1,8 +1,8 @@
 ---
 title: Using Themes with RadGridView
-page_title: Using Themes with RadGridView
+page_title: Using Themes with RadGridView | UI for WinForms Documentation
 description: Using Themes with RadGridView
-slug: gridview-styling-and-appearance-using-themes-with-radgridview
+slug: winforms/gridview/styling-and-appearance/using-themes-with-radgridview
 tags: using,themes,with,radgridview
 published: True
 position: 1
@@ -23,6 +23,7 @@ ControlDefault![gridview-styling-and-appearance-using-themes-with-radgridview 00
 Office2010![gridview-styling-and-appearance-using-themes-with-radgridview 002](images/gridview-styling-and-appearance-using-themes-with-radgridview002.png)
 
 Breeze
+>caption 
 
 ![gridview-styling-and-appearance-using-themes-with-radgridview 003](images/gridview-styling-and-appearance-using-themes-with-radgridview003.png)
 

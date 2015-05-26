@@ -1,8 +1,8 @@
 ---
 title: Themes
-page_title: Themes
+page_title: Themes | UI for WinForms Documentation
 description: Themes
-slug: forms-and-dialogs-form-themes
+slug: winforms/forms-and-dialogs/form/themes
 tags: themes
 published: True
 position: 3
@@ -25,22 +25,26 @@ The themes allow you to modify the look-and-feel of a __RadForm__ instance by s
 This section shows how to apply the Office2007Black theme to a __RadForm__ in the Visual Studio designer:
         
 
-1. Add a __RadForm__ item in your project or change the base class of an existing standard Windows Form to __Telerik.WinControls.UI.RadForm.__![forms-and-dialogs-form-themes 001](images/forms-and-dialogs-form-themes001.png)
+1. Add a __RadForm__ item in your project or change the base class of an existing standard Windows Form to __Telerik.WinControls.UI.RadForm.__![forms-and-dialogs-form-themes 001](images/forms-and-dialogs-form-themes001.png)#_[C#] Changing WinForms form to Telerik RadForm_
 
-#### __[C#] Changing WinForms form to Telerik RadForm__
-
-{{source=..\SamplesCS\Forms and Dialogs\Form1.Designer.cs region=radForm}}
-	    partial class Form1 : Telerik.WinControls.UI.RadForm
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Changing WinForms form to Telerik RadForm__
+{{source=..\SamplesCS\Forms and Dialogs\Form1.Designer.cs region=radForm}} 
+{{source=..\SamplesVB\Forms and Dialogs\Form1.Designer.vb region=radForm}} 
 
-{{source=..\SamplesVB\Forms and Dialogs\Form1.Designer.vb region=radForm}}
-	Partial Class Form1
-	    Inherits Telerik.WinControls.UI.RadForm
-	{{endregion}}
+````C#
+    partial class Form1 : Telerik.WinControls.UI.RadForm
+````
+````VB.NET
+Partial Class Form1
+    Inherits Telerik.WinControls.UI.RadForm
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -58,5 +62,6 @@ This section shows how to apply the Office2007Black theme to a __RadForm__ in th
 1. In order to apply the Office2007Black theme to RadForm, choose the *'Office2007Black'* option from the ThemeName drop-down:
             ![forms-and-dialogs-form-themes 003](images/forms-and-dialogs-form-themes003.png)
 
->tipYou do not need to add multiple Theme Components on each form which you would like to customize. By adding one Theme Component on a form, the theme is loaded in the memory and it becomes available for all __RadControls__ and __RadForms__ in your project.
-          
+>tip You do not need to add multiple Theme Components on each form which you would like to customize. By adding one Theme Component on a form, the theme is loaded in the memory and it becomes available for all __RadControls__ and __RadForms__ in your project.
+>
+

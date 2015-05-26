@@ -1,8 +1,8 @@
 ---
 title: GridViewHyperlinkColumn
-page_title: GridViewHyperlinkColumn
+page_title: GridViewHyperlinkColumn | UI for WinForms Documentation
 description: GridViewHyperlinkColumn
-slug: gridview-columns-gridviewhyperlinkcolumn
+slug: winforms/gridview/columns/column-types/gridviewhyperlinkcolumn
 tags: gridviewhyperlinkcolumn
 published: True
 position: 10
@@ -19,39 +19,43 @@ __GridViewHyperlinkColumn__ allows __RadGridView__ to display,
         	editor of the column is __RadTextBoxEditor__.
         
 
-Here is how to create and populate __GridViewHyperlinkColumn__
+Here is how to create and populate __GridViewHyperlinkColumn__#_[C#] Adding and populating GridViewHyperlinkColumn_
 
-#### __[C#] Adding and populating GridViewHyperlinkColumn__
-
-{{source=..\SamplesCS\GridView\Columns\GridViewHyperlinkColumn1.cs region=addHyperlinkColumn}}
-	            GridViewHyperlinkColumn column = new GridViewHyperlinkColumn("Hyperlink column");
-	            this.radGridView1.Columns.Add(column);
-	            
-	            this.radGridView1.Rows.Add("http://www.telerik.com");
-	            this.radGridView1.Rows.Add("http://www.microsoft.com");
-	            this.radGridView1.Rows.Add("http://www.google.com");
-	            this.radGridView1.Rows.Add("http://www.cnn.com");
-	            this.radGridView1.Rows.Add("http://www.bbc.com");
-	            this.radGridView1.Rows.Add("http://www.telerikwatch.com/");
-	            this.radGridView1.Rows.Add("http://www.wikipedia.com");
-	{{endregion}}
-
-
-
-#### __[VB.NET] Adding and populating GridViewHyperlinkColumn__
-
-{{source=..\SamplesVB\GridView\Columns\GridViewHyperlinkColumn1.vb region=addHyperlinkColumn}}
-	        Dim column As New GridViewHyperlinkColumn("Hyperlink column")
-	        Me.radGridView1.Columns.Add(column)
 	
-	        Me.radGridView1.Rows.Add("http://www.telerik.com")
-	        Me.radGridView1.Rows.Add("http://www.microsoft.com")
-	        Me.radGridView1.Rows.Add("http://www.google.com")
-	        Me.radGridView1.Rows.Add("http://www.cnn.com")
-	        Me.radGridView1.Rows.Add("http://www.bbc.com")
-	        Me.radGridView1.Rows.Add("http://www.telerikwatch.com/")
-	        Me.radGridView1.Rows.Add("http://www.wikipedia.com")
-	{{endregion}}
+
+
+
+{{source=..\SamplesCS\GridView\Columns\GridViewHyperlinkColumn1.cs region=addHyperlinkColumn}} 
+{{source=..\SamplesVB\GridView\Columns\GridViewHyperlinkColumn1.vb region=addHyperlinkColumn}} 
+
+````C#
+            GridViewHyperlinkColumn column = new GridViewHyperlinkColumn("Hyperlink column");
+            this.radGridView1.Columns.Add(column);
+            
+            this.radGridView1.Rows.Add("http://www.telerik.com");
+            this.radGridView1.Rows.Add("http://www.microsoft.com");
+            this.radGridView1.Rows.Add("http://www.google.com");
+            this.radGridView1.Rows.Add("http://www.cnn.com");
+            this.radGridView1.Rows.Add("http://www.bbc.com");
+            this.radGridView1.Rows.Add("http://www.telerikwatch.com/");
+            this.radGridView1.Rows.Add("http://www.wikipedia.com");
+````
+````VB.NET
+        Dim column As New GridViewHyperlinkColumn("Hyperlink column")
+        Me.radGridView1.Columns.Add(column)
+
+        Me.radGridView1.Rows.Add("http://www.telerik.com")
+        Me.radGridView1.Rows.Add("http://www.microsoft.com")
+        Me.radGridView1.Rows.Add("http://www.google.com")
+        Me.radGridView1.Rows.Add("http://www.cnn.com")
+        Me.radGridView1.Rows.Add("http://www.bbc.com")
+        Me.radGridView1.Rows.Add("http://www.telerikwatch.com/")
+        Me.radGridView1.Rows.Add("http://www.wikipedia.com")
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-columns-gridviewhyperlinkcolumn 001](images/gridview-columns-gridviewhyperlinkcolumn001.png)
 

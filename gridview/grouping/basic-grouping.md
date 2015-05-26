@@ -1,8 +1,8 @@
 ---
 title: Basic Grouping
-page_title: Basic Grouping
+page_title: Basic Grouping | UI for WinForms Documentation
 description: Basic Grouping
-slug: gridview-grouping-basic-grouping
+slug: winforms/gridview/grouping/basic-grouping
 tags: basic,grouping
 published: True
 position: 0
@@ -15,7 +15,7 @@ position: 0
 There is a special area at the top of the grid where grouping options are displayed. This is the __GridGroupingPanel__. When the grid
       is grouped, all group fields appear in this GroupPanel as elements along with the sort order, e.g. Country, Order Date. You can add or rearrange sorting fields by 
       dragging and dropping the header of the column you wish to use for grouping.
-      See the [End-user Capabilities Grouping]({%slug gridview-end-user-capabilities-grouping%}) topic 
+      See the [End-user Capabilities Grouping]({%slug winforms/gridview/end-user-capabilities/grouping%}) topic 
       for more on basic grouping behavior from the user perspective.
 
 The __GridViewTemplate__ properties that govern grouping behavior are:
@@ -28,45 +28,53 @@ The __GridViewTemplate__ properties that govern grouping behavior are:
 
 Once grouped, you can additionally sort the grid data, using the default sorting mechanism.
 
-The example below allows GroupDescriptors to be added programmatically, but does not allow the user to group via drag and drop. The groups are automatically expanded.![gridview-grouping-basic-grouping 001](images/gridview-grouping-basic-grouping001.png)
+The example below allows GroupDescriptors to be added programmatically, but does not allow the user to group via drag and drop. The groups are automatically expanded.![gridview-grouping-basic-grouping 001](images/gridview-grouping-basic-grouping001.png)#_[C#] Setting grouping properties_
 
-#### __[C#] Setting grouping properties__
-
-{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=settingGroupingProperties}}
-	            this.radGridView1.MasterTemplate.EnableGrouping = true;
-	            this.radGridView1.MasterTemplate.AllowDragToGroup = false;
-	            this.radGridView1.MasterTemplate.AutoExpandGroups = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Setting grouping properties__
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=settingGroupingProperties}} 
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=settingGroupingProperties}} 
 
-{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=settingGroupingProperties}}
-	        Me.RadGridView1.MasterTemplate.EnableGrouping = True
-	        Me.RadGridView1.MasterTemplate.AllowDragToGroup = False
-	        Me.RadGridView1.MasterTemplate.AutoExpandGroups = True
-	{{endregion}}
+````C#
+            this.radGridView1.MasterTemplate.EnableGrouping = true;
+            this.radGridView1.MasterTemplate.AllowDragToGroup = false;
+            this.radGridView1.MasterTemplate.AutoExpandGroups = true;
+````
+````VB.NET
+        Me.RadGridView1.MasterTemplate.EnableGrouping = True
+        Me.RadGridView1.MasterTemplate.AllowDragToGroup = False
+        Me.RadGridView1.MasterTemplate.AutoExpandGroups = True
+        '
+````
+
+{{endregion}} 
+
 
 
 
 ## GroupPanel
 
-You can hide the GroupPanel using the following code:
+You can hide the GroupPanel using the following code:#_[C#] Hide the group panel_
 
-#### __[C#] Hide the group panel__
-
-{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=hideTheGroupPanel}}
-	            this.radGridView1.ShowGroupPanel = false;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Hide the group panel__
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=hideTheGroupPanel}} 
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=hideTheGroupPanel}} 
 
-{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=hideTheGroupPanel}}
-	        Me.RadGridView1.ShowGroupPanel = False
-	{{endregion}}
+````C#
+            this.radGridView1.ShowGroupPanel = false;
+````
+````VB.NET
+        Me.RadGridView1.ShowGroupPanel = False
+        '
+````
+
+{{endregion}} 
+
 
 
 

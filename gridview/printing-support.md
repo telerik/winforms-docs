@@ -1,8 +1,8 @@
 ---
 title: Printing Support
-page_title: Printing Support
+page_title: Printing Support | UI for WinForms Documentation
 description: Printing Support
-slug: gridview-printing-support
+slug: winforms/gridview/printing-support
 tags: printing,support
 published: True
 position: 26
@@ -13,27 +13,25 @@ position: 26
 
 
 ## 
-<table><th><tr><td>
-
-RELATED VIDEOS</td><td></td></tr></th><tr><td>[Getting Started with Printing for RadGridView](http://tv.telerik.com/watch/winforms/getting-started-with-printing-for-radgridview-)
-
-This video demonstrates how to use the new Print features of RadGridView without the need to export to other formats. It also includes a tour of new end-user printing features.
-                </td><td>
 
 
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[Getting Started with Printing for RadGridView](http://tv.telerik.com/watch/winforms/getting-started-with-printing-for-radgridview-)This video demonstrates how to use the new Print features of RadGridView without the need to export to other formats. It also includes a tour of new end-user printing features.|
+>caption 
 
-![gridview-printing-support 003](images/gridview-printing-support003.png)</td></tr></table>
+![gridview-printing-support 003](images/gridview-printing-support003.png)|
 
 RadGridView provides printing support, which allows you to print the grid content by using
-          [RadPrintDocument.]({%slug tpf-printing-support-radprintdocument%})
+          [RadPrintDocument.]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%})
           You are able to print:
         
 
-* [ViewDefinitions]({%slug gridview-viewdefinitions-overview%})
+* [ViewDefinitions]({%slug winforms/gridview/view-definitions/overview%})
 
-* [Grouped grid]({%slug gridview-grouping-basic-grouping%})
+* [Grouped grid]({%slug winforms/gridview/grouping/basic-grouping%})
 
-* [Summaries]({%slug gridview-rows-summary-rows%})
+* [Summaries]({%slug winforms/gridview/rows/summary-rows%})
 
 * Hidden rows and Hidden columns
 
@@ -42,49 +40,57 @@ RadGridView provides printing support, which allows you to print the grid conten
 RadGridView has two public methods available for printing - __Print()__ and
           __PrintPreview()__. The first method will directly send a print job to the
           default printer with the settings currently saved in the
-          [PrintStyle]({%slug gridview-printing-support-gridprintstyle%})
+          [PrintStyle]({%slug winforms/gridview/printing-support/gridprintstyle%})
           property. This method has one overload available which can show a system
           __PrintDialog__ with the available printers and their options.
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Printing support\PrintingSupport.cs region=print}}
-	            this.radGridView1.Print();
 	
-	            this.radGridView1.Print(true);
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Printing support\PrintingSupport.cs region=print}} 
+{{source=..\SamplesVB\GridView\Printing support\PrintingSupport.vb region=print}} 
 
-{{source=..\SamplesVB\GridView\Printing support\PrintingSupport.vb region=print}}
-	        Me.RadGridView1.Print()
-	
-	        Me.RadGridView1.Print(True)
-	{{endregion}}
+````C#
+            this.radGridView1.Print();
+
+            this.radGridView1.Print(true);
+````
+````VB.NET
+        Me.RadGridView1.Print()
+
+        Me.RadGridView1.Print(True)
+        '
+````
+
+{{endregion}} 
+
 
 
 
 ![gridview-printing-support 001](images/gridview-printing-support001.png)
 
 The other available method is __PrintPreview())__, which opens
-          [RadPrintPreviewDialog.]({%slug tpf-printing-support-radprintpreviewdialog%})
+          [RadPrintPreviewDialog.]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%})#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Printing support\PrintingSupport.cs region=PrintPreview}}
-	            this.radGridView1.PrintPreview();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Printing support\PrintingSupport.cs region=PrintPreview}} 
+{{source=..\SamplesVB\GridView\Printing support\PrintingSupport.vb region=PrintPreview}} 
 
-{{source=..\SamplesVB\GridView\Printing support\PrintingSupport.vb region=PrintPreview}}
-	        Me.RadGridView1.PrintPreview()
-	{{endregion}}
+````C#
+            this.radGridView1.PrintPreview();
+````
+````VB.NET
+        Me.RadGridView1.PrintPreview()
+        '
+````
+
+{{endregion}} 
+
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: Property Builder
-page_title: Property Builder
+page_title: Property Builder | UI for WinForms Documentation
 description: Property Builder
-slug: treeview-design-time-property-builder
+slug: winforms/treeview/design-time/property-builder
 tags: property,builder
 published: True
 position: 1
@@ -17,7 +17,7 @@ position: 1
 To quickly create and arrange node structure and appearance invoke the 
         RadTreeView Property Builder from the context menu or the 
         [
-        Smart Tag]({%slug treeview-design-time-smart-tag%}).
+        Smart Tag]({%slug winforms/treeview/design-time/smart-tag%}).
 
 ![treeview-design-time-property-builder 001](images/treeview-design-time-property-builder001.png)
 

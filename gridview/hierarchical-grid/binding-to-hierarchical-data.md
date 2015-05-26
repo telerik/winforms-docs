@@ -1,8 +1,8 @@
 ---
 title: Binding to Hierarchical Data
-page_title: Binding to Hierarchical Data
+page_title: Binding to Hierarchical Data | UI for WinForms Documentation
 description: Binding to Hierarchical Data
-slug: gridview-hierarchical-grid-binding-to-hierarchical-data
+slug: winforms/gridview/hierarchical-grid/binding-to-hierarchical-data
 tags: binding,to,hierarchical,data
 published: True
 position: 0
@@ -13,21 +13,19 @@ position: 0
 
 
 ## 
-<table><th><tr><td>
 
-RELATED VIDEOS</td><td></td></tr></th><tr><td>
 
-[RadGridView for WinForms Hierarchy Overview](http://tv.telerik.com/winforms/radgrid/radgridview-winforms-hierarchy-overview)
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[RadGridView for WinForms Hierarchy Overview](http://tv.telerik.com/winforms/radgrid/radgridview-winforms-hierarchy-overview)In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)|
+>caption 
 
-In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)
-            		</td><td>
-
-![gridview-hierarchical-grid-binding-to-hierarchical-data 001](images/gridview-hierarchical-grid-binding-to-hierarchical-data001.png)</td></tr></table>
+![gridview-hierarchical-grid-binding-to-hierarchical-data 001](images/gridview-hierarchical-grid-binding-to-hierarchical-data001.png)|
 
 RadGridView can display hierarchical, master-detail data to an arbitrary number of levels. The hierarchical schema can be established at run-time or design-time.![gridview-hierarchical-grid-binding-to-hierarchical-data 002](images/gridview-hierarchical-grid-binding-to-hierarchical-data002.png)
 
 At run-time you can use the RadGridView.AutoGenerateHierarchyFromDataSet to 
-          [automatically create the hierarchy]({%slug gridview-hierarchical-grid-binding-to-hierarchical-data-automatically%}).
+          [automatically create the hierarchy]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%}).
         
 
 At design-time the steps are:
@@ -43,5 +41,5 @@ At design-time the steps are:
               object are set to the existing templates. __ParentColumnNames__ and __ChildColumnNames__ collections are 
               filled with the names of the fields of the corresponding data sources. See the topic 
               [Tutorial: 
-              Binding to Hierarchical Data]({%slug gridview-hierarchical-grid-tutorial-binding-to-hierarchical-data%}) for step by step instructions.
+              Binding to Hierarchical Data]({%slug winforms/gridview/hierarchical-grid/tutorial:-binding-to-hierarchical-data%}) for step by step instructions.
              

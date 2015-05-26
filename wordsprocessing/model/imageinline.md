@@ -1,8 +1,8 @@
 ---
 title: ImageInline
-page_title: ImageInline
+page_title: ImageInline | UI for WinForms Documentation
 description: ImageInline
-slug: wordsprocessing-model-imageinline
+slug: winforms/wordsprocessing/model/imageinline
 tags: imageinline
 published: True
 position: 7
@@ -21,98 +21,117 @@ __ImageInline__ element is an inline-level flow content element intended to cont
 
 ## Inserting an ImageInline
 
-You can use the following code snippet to create an ImageInline and add it to a [Paragraph]({%slug wordsprocessing-model-paragraph%}):
-        
+You can use the following code snippet to create an ImageInline and add it to a [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}):
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingImageInline.cs region=radwordsprocessing-model-imageinline_0}}
-	            ImageInline imageInline = new ImageInline(document);
-	            paragraph.Inlines.Add(imageInline);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingImageInline.cs region=radwordsprocessing-model-imageinline_0}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_0}}
-	            Dim imageInline As New ImageInline(document)
-	            paragraph.Inlines.Add(imageInline)
-	{{endregion}}
+````C#
+            ImageInline imageInline = new ImageInline(document);
+            paragraph.Inlines.Add(imageInline);
+````
+````VB.NET
+        Dim imageInline As New ImageInline(document)
+        paragraph.Inlines.Add(imageInline)
+        '
+````
+
+{{endregion}} 
 
 
 
->tipThe parent __Paragraph__ should belong to the same document that is passed to the constructor of the __ImageInline__.
-          
+
+>tip The parent __Paragraph__ should belong to the same document that is passed to the constructor of the __ImageInline__ .
+>
+
 
 You can add an image at a specific index in the __Inlines__ collection of a paragraph using the __Insert()__
           method. Here is how to add an ImageInline at the beginning of a paragraph:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingImageInline.cs region=radwordsprocessing-model-imageinline_1}}
-	            ImageInline imageInline = new ImageInline(document);
-	            paragraph.Inlines.Insert(0, imageInline);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingImageInline.cs region=radwordsprocessing-model-imageinline_1}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_1}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_1}}
-	            Dim imageInline As New ImageInline(document)
-	            paragraph.Inlines.Insert(0, imageInline)
-	{{endregion}}
+````C#
+            ImageInline imageInline = new ImageInline(document);
+            paragraph.Inlines.Insert(0, imageInline);
+````
+````VB.NET
+        Dim imageInline As New ImageInline(document)
+        paragraph.Inlines.Insert(0, imageInline)
+        '
+````
+
+{{endregion}} 
+
 
 
 
 You can also use the __AddImageInline()__ method of the __Inlines__ collection of a paragraph. The
           method creates a new ImageInline, adds it to the paragraph and returns it.
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingImageInline.cs region=radwordsprocessing-model-imageinline_2}}
-	            ImageInline imageInline = paragraph.Inlines.AddImageInline();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingImageInline.cs region=radwordsprocessing-model-imageinline_2}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_2}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_2}}
-	            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
-	{{endregion}}
+````C#
+            ImageInline imageInline = paragraph.Inlines.AddImageInline();
+````
+````VB.NET
+        Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
+        '
+````
+
+{{endregion}} 
+
 
 
 
 Inserting __ImageInline__ element in RadFlowDocument can also be achieved with
-          [RadFlowDocumentEditor]({%slug wordsprocessing-editing-radflowdocumenteditor%}).
-        
+          [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%}).
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingImageInline.cs region=radwordsprocessing-model-imageinline_3}}
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
 	
-	            using (Stream stream = this.GetResourceStream("Telerik_logo.png"))
-	            {
-	                editor.InsertImageInline(stream, "png", new Size(118, 28));
-	            }
-	{{endregion}}
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingImageInline.cs region=radwordsprocessing-model-imageinline_3}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_3}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_3}}
-	            Dim editor As New RadFlowDocumentEditor(document)
-	
-	            Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-	                editor.InsertImageInline(stream, "png", New Size(118, 28))
-	            End Using
-	{{endregion}}
+````C#
+            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
+           
+            using (MemoryStream ms = new MemoryStream())
+            {
+                System.Drawing.Image.FromFile(@"C:\img\delete.png").Save(ms, System.Drawing.Imaging.ImageFormat.Png);     
+                editor.InsertImageInline(ms, "png", new Size(118, 28));
+            }
+````
+````VB.NET
+        Dim editor As New RadFlowDocumentEditor(document)
+
+        Using ms As New MemoryStream()
+            Image.FromFile("C:\img\delete.png").Save(ms, System.Drawing.Imaging.ImageFormat.Png)
+            editor.InsertImageInline(ms, "png", New System.Windows.Size(118, 28))
+        End Using
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -146,10 +165,12 @@ The __ImageInline__ element exposes the following properties:
 * __RotationAngle__: Specifies the rotation angle of the image.
                 
 
-# See Also[ImageInline API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_shapes_imageinline.html)
+# See Also
 
- * [Document model]({%slug wordsprocessing-model%})
+ * [ImageInline API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_shapes_imageinline.html)
 
- * [FloatingImage]({%slug wordsprocessing-model-floatingimage%})
+ * [Document model]({%slug winforms/wordsprocessing/model%})
 
- * [Paragraph]({%slug wordsprocessing-model-paragraph%})
+ * [FloatingImage]({%slug winforms/wordsprocessing/model/floatingimage%})
+
+ * [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%})

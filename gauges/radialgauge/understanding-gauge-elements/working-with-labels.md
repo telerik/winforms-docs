@@ -1,8 +1,8 @@
 ---
 title: Working with labels
-page_title: Working with labels
+page_title: Working with labels | UI for WinForms Documentation
 description: Working with labels
-slug: radialgauge-understanding-gauge-elements-working-with-labels
+slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-labels
 tags: working,with,labels
 published: True
 position: 2
@@ -41,3 +41,8 @@ The following properties allow you to modify the labels' look:
 
 * __LabelsCount__ - controls how many labels will be displayed next ticks for the specified range.
             
+
+>note  __RadRadialGauge__ always displays one additional label to the __LabelsCount__ in order to
+                distribute the labels correctly on the arc.
+>
+

@@ -1,8 +1,8 @@
 ---
 title: Removing ToolWindow and DocumentWindow at Runtime
-page_title: Removing ToolWindow and DocumentWindow at Runtime
+page_title: Removing ToolWindow and DocumentWindow at Runtime | UI for WinForms Documentation
 description: Removing ToolWindow and DocumentWindow at Runtime
-slug: dock-object-model-removing-toolwindow-and-documentwindow-at-runtime
+slug: winforms/dock/object-model/removing-toolwindow-and-documentwindow-at-runtime
 tags: removing,toolwindow,and,documentwindow,at,runtime
 published: True
 position: 5

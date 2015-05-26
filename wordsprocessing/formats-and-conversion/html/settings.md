@@ -1,8 +1,8 @@
 ---
 title: Settings
-page_title: Settings
+page_title: Settings | UI for WinForms Documentation
 description: Settings
-slug: wordsprocessing-formats-and-conversion-html-settings
+slug: winforms/wordsprocessing/formats-and-conversion/html/settings
 tags: settings
 published: True
 position: 3
@@ -48,50 +48,53 @@ The event can be used to override the process of loading of external resources â
                 
 
 __Example 1__ shows how you can create and apply specific import settings.
-            
+            #_[C#] Example 1: Create HtmlImportSettings_
 
-#### __[C#] Example 1: Create HtmlImportSettings__
-
-{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Html\WordsProcessingSettings.cs region=radwordsprocessing-formats-and-conversion-html-settings_0}}
-	            HtmlFormatProvider provider = new HtmlFormatProvider();
-	            HtmlImportSettings importSettings = new HtmlImportSettings();
 	
-	            importSettings.GenericFonts.Serif = new ThemableFontFamily("Baskerville");
-	
-	            byte[] data = this.GetImageData();
-	            provider.ImportSettings.LoadFromUri += (s, e) =>
-	            {
-	                if (e.Uri == "test.jpg")
-	                {
-	                    e.SetData(data);
-	                }
-	            };
-	
-	            provider.ImportSettings = importSettings;
-	
-	{{endregion}}
 
 
 
-#### __[VB.NET] Example 1: Create HtmlImportSettings__
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Html\WordsProcessingSettings.cs region=radwordsprocessing-formats-and-conversion-html-settings_0}} 
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-html-settings_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-html-settings_0}}
-	            Dim provider As New HtmlFormatProvider()
-	            Dim importSettings As New HtmlImportSettings()
-	
-	            importSettings.GenericFonts.Serif = New ThemableFontFamily("Baskerville")
-	
-	            Dim data As Byte() = Me.GetImageData()
-	        AddHandler provider.ImportSettings.LoadFromUri, Sub(s, e)
-	                                                            e.SetData(data)
-	                                                            If e.Uri = "test.jpg" Then
-	                                                            End If
-	
-	                                                        End Sub
-	
-	            provider.ImportSettings = importSettings
-	
-	{{endregion}}
+````C#
+            HtmlFormatProvider provider = new HtmlFormatProvider();
+            HtmlImportSettings importSettings = new HtmlImportSettings();
+
+            importSettings.GenericFonts.Serif = new ThemableFontFamily("Baskerville");
+
+            byte[] data = this.GetImageData();
+            provider.ImportSettings.LoadFromUri += (s, e) =>
+            {
+                if (e.Uri == "test.jpg")
+                {
+                    e.SetData(data);
+                }
+            };
+
+            provider.ImportSettings = importSettings;
+````
+````VB.NET
+            Dim provider As New HtmlFormatProvider()
+            Dim importSettings As New HtmlImportSettings()
+
+            importSettings.GenericFonts.Serif = New ThemableFontFamily("Baskerville")
+
+            Dim data As Byte() = Me.GetImageData()
+        AddHandler provider.ImportSettings.LoadFromUri, Sub(s, e)
+                                                            e.SetData(data)
+                                                            If e.Uri = "test.jpg" Then
+                                                            End If
+
+                                                        End Sub
+
+            provider.ImportSettings = importSettings
+
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -155,7 +158,7 @@ The event is raised for every image in the document. The event argument exposes 
 
 ### StylesExportMode
 
-Specifies the export mode for the [styles in RadFlowdDocument's StyleRepository]({%slug wordsprocessing-concepts-styles%}), using the __StylesExportMode__ enumeration:
+Specifies the export mode for the [styles in RadFlowdDocument's StyleRepository]({%slug winforms/wordsprocessing/concepts/styles%}), using the __StylesExportMode__ enumeration:
             
 
 * __Embedded__: RadFlowDocument styles are exported as internal CSS â€“ selectors embedded into the HTML in 'style' element in the 'head' section. This is the default value of the property.
@@ -173,7 +176,7 @@ Specifies the export mode for the [styles in RadFlowdDocument's StyleRepository]
 * __Inline__: RadFlowDocument styles are exported as CSS properties in the 'style' attribute of the HTML elements. This ensures maximum compatibility with some applications that don't support external or embedded CSS, for example some email clients.
 				
 
-* __None__: RadFlowDocument styles are not exported. Note that the local values of [style properties]({%slug wordsprocessing-concepts-style-properties%}) of the DocumentElements are still exported as CSS properties in the 'style' attribute of the HTML elements.
+* __None__: RadFlowDocument styles are not exported. Note that the local values of [style properties]({%slug winforms/wordsprocessing/concepts/style-properties%}) of the DocumentElements are still exported as CSS properties in the 'style' attribute of the HTML elements.
 				
 
 ### StylesFilePath
@@ -201,52 +204,56 @@ The event is only raised when the __StylesExportMode__ property is set to __Exte
                 
 
 __Example 2__ demonstrates how you can create export settings.
-            
+            #_[C#] Example 2: Create HtmlExportSettings_
 
-#### __[C#] Example 2: Create HtmlExportSettings__
-
-{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Html\WordsProcessingSettings.cs region=radwordsprocessing-formats-and-conversion-html-settings_1}}
-	            HtmlFormatProvider provider = new HtmlFormatProvider();
-	            HtmlExportSettings exportSettings = new HtmlExportSettings();
 	
-	            byte[] data = null;
-	            exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment;
-	            exportSettings.IndentDocument = true;
-	            exportSettings.ImageExporting += (s, e) =>
-	            {
-	                e.Source = "test.jpg";
-	                data = e.Image.ImageSource.Data;
-	                e.Handled = true;
-	            };
-	
-	            provider.ExportSettings = exportSettings;
-	{{endregion}}
 
 
 
-#### __[VB.NET] Example 2: Create HtmlExportSettings__
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Html\WordsProcessingSettings.cs region=radwordsprocessing-formats-and-conversion-html-settings_1}} 
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-html-settings_1}} 
 
-{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-html-settings_1}}
-	            Dim provider As New HtmlFormatProvider()
-	            Dim exportSettings As New HtmlExportSettings()
-	
-	            Dim data As Byte() = Nothing
-	            exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment
-	            exportSettings.IndentDocument = True
-	        AddHandler exportSettings.ImageExporting, Sub(s, e)
-	                                                      e.Source = "test.jpg"
-	                                                      data = e.Image.ImageSource.Data
-	                                                      e.Handled = True
-	
-	                                                  End Sub
-	
-	            provider.ExportSettings = exportSettings
-	{{endregion}}
+````C#
+            HtmlFormatProvider provider = new HtmlFormatProvider();
+            HtmlExportSettings exportSettings = new HtmlExportSettings();
+
+            byte[] data = null;
+            exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment;
+            exportSettings.IndentDocument = true;
+            exportSettings.ImageExporting += (s, e) =>
+            {
+                e.Source = "test.jpg";
+                data = e.Image.ImageSource.Data;
+                e.Handled = true;
+            };
+
+            provider.ExportSettings = exportSettings;
+````
+````VB.NET
+            Dim provider As New HtmlFormatProvider()
+            Dim exportSettings As New HtmlExportSettings()
+
+            Dim data As Byte() = Nothing
+            exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment
+            exportSettings.IndentDocument = True
+        AddHandler exportSettings.ImageExporting, Sub(s, e)
+                                                      e.Source = "test.jpg"
+                                                      data = e.Image.ImageSource.Data
+                                                      e.Handled = True
+
+                                                  End Sub
+
+            provider.ExportSettings = exportSettings
+            '
+````
+
+{{endregion}} 
+
 
 
 
 # See Also
 
- * [Styles]({%slug wordsprocessing-concepts-styles%})
+ * [Styles]({%slug winforms/wordsprocessing/concepts/styles%})
 
- * [Style Properties]({%slug wordsprocessing-concepts-style-properties%})
+ * [Style Properties]({%slug winforms/wordsprocessing/concepts/style-properties%})

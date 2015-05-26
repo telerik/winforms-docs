@@ -1,8 +1,8 @@
 ---
 title: Fonts
-page_title: Fonts
+page_title: Fonts | UI for WinForms Documentation
 description: Fonts
-slug: pdfprocessing-concepts-fonts
+slug: winforms/pdfprocessing/concepts/fonts
 tags: fonts
 published: True
 position: 3
@@ -60,56 +60,68 @@ If you want to use a font which is not part of the standard ones you can registe
             
 
 __Example 1__ demonstrates how you can use the RegisterFont() method.
-            
+            #_[C#] Example 1: Register font_
 
-#### __[C#] Example 1: Register font__
-
-{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsFonts.cs region=radpdfprocessing-concepts-fonts_0}}
-	            FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 1: Register font__
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsFonts.cs region=radpdfprocessing-concepts-fonts_0}} 
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsFonts.vb region=radpdfprocessing-concepts-fonts_0}} 
 
-{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsFonts.vb region=radpdfprocessing-concepts-fonts_0}}
-	        FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data)
-	{{endregion}}
+````C#
+            FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data);
+````
+````VB.NET
+        FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data)
+        '
+````
+
+{{endregion}} 
+
 
 
 
 ### Creating a Font
 
-Each registered font can be obtained from the font repository as __FontBase__ object and applied to a [TextFragment]({%slug pdfprocessing-model-textfragment%}).
+Each registered font can be obtained from the font repository as __FontBase__ object and applied to a [TextFragment]({%slug winforms/pdfprocessing/model/textfragment%}).
             
 
 __Example 2__ shows how to create a font using the FontsRepository.
-            
+            #_[C#] Example 2: Create FontBase_
 
-#### __[C#] Example 2: Create FontBase__
-
-{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsFonts.cs region=radpdfprocessing-concepts-fonts_1}}
-	            FontBase font;
-	            bool success = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, out font);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 2: Create FontBase__
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsFonts.cs region=radpdfprocessing-concepts-fonts_1}} 
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsFonts.vb region=radpdfprocessing-concepts-fonts_1}} 
 
-{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsFonts.vb region=radpdfprocessing-concepts-fonts_1}}
-	        Dim font As FontBase
-	        Dim success As Boolean = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, font)
-	{{endregion}}
+````C#
+            FontBase font;
+            bool success = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, out font);
+````
+````VB.NET
+        Dim font As FontBase
+        Dim success As Boolean = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, font)
+        '
+````
+
+{{endregion}} 
+
 
 {% if site.site_name == 'Silverlight' %}
 
->Creating a font that is not present in the repository with the code from __Example 2__ is going to fail.
-                {% endif %}{% if site.site_name == 'WPF' %}
+>note Creating a font that is -not- present in the repository with the code from __Example 2__ is going to fail.
+>
+{% endif %}{% if site.site_name == 'WPF' %}
 
->You can create fonts that are not explicitly registered. Creating a font that is not registered in the repository with the code from __Example 2__ tries to find the font from the ones installed on the machine.
-                {% endif %}
+>note You can create fonts that are not explicitly registered. Creating a font that is not registered in the repository with the code from __Example 2__ tries to find the font from the ones installed on the machine.
+>
+{% endif %}
 
-# See Also[FontsRepository](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_fixed_model_fonts_fontsrepository.html)
+# See Also
 
- * [TextFragment]({%slug pdfprocessing-model-textfragment%})
+ * [FontsRepository](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_fixed_model_fonts_fontsrepository.html)
+
+ * [TextFragment]({%slug winforms/pdfprocessing/model/textfragment%})

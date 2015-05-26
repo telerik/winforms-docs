@@ -1,8 +1,8 @@
 ---
 title: Summary Rows
-page_title: Summary Rows
+page_title: Summary Rows | UI for WinForms Documentation
 description: Summary Rows
-slug: gridview-rows-summary-rows
+slug: winforms/gridview/rows/summary-rows
 tags: summary,rows
 published: True
 position: 11
@@ -23,37 +23,41 @@ Summary rows are RadGridView rows which allow you to display
 The following example demonstrates how to create a top
           pinned summary row,
           showing the count of the RadGridView rows:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=addingSummaryRow}}
-	            GridViewSummaryItem summaryItem = new GridViewSummaryItem();
-	            summaryItem.Name = "ShipName";
-	            summaryItem.Aggregate = GridAggregateFunction.Count;
 	
-	            GridViewSummaryRowItem summaryRowItem = new GridViewSummaryRowItem();
-	            summaryRowItem.Add(summaryItem);
-	
-	            this.radGridView1.SummaryRowsTop.Add(summaryRowItem);
-	            this.radGridView1.SummaryRowsBottom.Add(summaryRowItem);
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=addingSummaryRow}} 
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=addingSummaryRow}} 
 
-{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=addingSummaryRow}}
-	        Dim summaryItem As New GridViewSummaryItem()
-	        summaryItem.Name = "ShipName"
-	        summaryItem.Aggregate = GridAggregateFunction.Count
-	
-	        Dim summaryRowItem As New GridViewSummaryRowItem()
-	        summaryRowItem.Add(summaryItem)
-	
-	        Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
-	        Me.RadGridView1.SummaryRowsBottom.Add(summaryRowItem)
-	{{endregion}}
+````C#
+            GridViewSummaryItem summaryItem = new GridViewSummaryItem();
+            summaryItem.Name = "ShipName";
+            summaryItem.Aggregate = GridAggregateFunction.Count;
+
+            GridViewSummaryRowItem summaryRowItem = new GridViewSummaryRowItem();
+            summaryRowItem.Add(summaryItem);
+
+            this.radGridView1.SummaryRowsTop.Add(summaryRowItem);
+            this.radGridView1.SummaryRowsBottom.Add(summaryRowItem);
+````
+````VB.NET
+        Dim summaryItem As New GridViewSummaryItem()
+        summaryItem.Name = "ShipName"
+        summaryItem.Aggregate = GridAggregateFunction.Count
+
+        Dim summaryRowItem As New GridViewSummaryRowItem()
+        summaryRowItem.Add(summaryItem)
+
+        Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
+        Me.RadGridView1.SummaryRowsBottom.Add(summaryRowItem)
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-rows-summary-rows 001](images/gridview-rows-summary-rows001.png)
 
@@ -97,32 +101,36 @@ The predefined aggregates are:
 
 The following example demonstrates how to add several summary
           items in a summary row and how the FormatString is used:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=formatString}}
-	            GridViewSummaryItem summaryItemShipName = new GridViewSummaryItem("ShipName", "{0}", GridAggregateFunction.Last);
-	            GridViewSummaryItem summaryItemFreight = new GridViewSummaryItem("Freight", "Max Freight = {0}", GridAggregateFunction.Max);
 	
-	            GridViewSummaryRowItem summaryRowItem = new GridViewSummaryRowItem(
-	                new GridViewSummaryItem[] { summaryItemShipName, summaryItemFreight });
-	
-	            this.radGridView1.SummaryRowsTop.Add(summaryRowItem);
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=formatString}} 
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=formatString}} 
 
-{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=formatString}}
-	        Dim summaryItemShipName As New GridViewSummaryItem("ShipName", "{0}", GridAggregateFunction.Last)
-	        Dim summaryItemFreight As New GridViewSummaryItem("Freight", "Max Freight = {0}", GridAggregateFunction.Max)
-	
-	        Dim summaryRowItem As New GridViewSummaryRowItem(New GridViewSummaryItem() {summaryItemShipName, summaryItemFreight})
-	
-	        Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
-	{{endregion}}
+````C#
+            GridViewSummaryItem summaryItemShipName = new GridViewSummaryItem("ShipName", "{0}", GridAggregateFunction.Last);
+            GridViewSummaryItem summaryItemFreight = new GridViewSummaryItem("Freight", "Max Freight = {0}", GridAggregateFunction.Max);
+
+            GridViewSummaryRowItem summaryRowItem = new GridViewSummaryRowItem(
+                new GridViewSummaryItem[] { summaryItemShipName, summaryItemFreight });
+
+            this.radGridView1.SummaryRowsTop.Add(summaryRowItem);
+````
+````VB.NET
+        Dim summaryItemShipName As New GridViewSummaryItem("ShipName", "{0}", GridAggregateFunction.Last)
+        Dim summaryItemFreight As New GridViewSummaryItem("Freight", "Max Freight = {0}", GridAggregateFunction.Max)
+
+        Dim summaryRowItem As New GridViewSummaryRowItem(New GridViewSummaryItem() {summaryItemShipName, summaryItemFreight})
+
+        Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-rows-summary-rows 002](images/gridview-rows-summary-rows002.png)
 
@@ -130,33 +138,37 @@ The following example demonstrates how to add several summary
 
 The next example demonstrates how to use AggregateExpression to
           calculate an average value excluding the Max and Min value:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=aggregateExpression}}
-	            GridViewSummaryItem summaryItem = new GridViewSummaryItem();
-	            summaryItem.Name = "Freight";
-	            summaryItem.AggregateExpression = "(Sum(Freight) - Max(Freight) - Min(Freight)) / Count(Freight)";
 	
-	            GridViewSummaryRowItem summaryRowItem = new GridViewSummaryRowItem();
-	            summaryRowItem.Add(summaryItem);
-	            this.radGridView1.SummaryRowsTop.Add(summaryRowItem);
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=aggregateExpression}} 
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=aggregateExpression}} 
 
-{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=aggregateExpression}}
-	        Dim summaryItem As New GridViewSummaryItem()
-	        summaryItem.Name = "Freight"
-	        summaryItem.AggregateExpression = "(Sum(Freight) - Max(Freight) - Min(Freight)) / Count(Freight)"
-	
-	        Dim summaryRowItem As New GridViewSummaryRowItem()
-	        summaryRowItem.Add(summaryItem)
-	        Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
-	{{endregion}}
+````C#
+            GridViewSummaryItem summaryItem = new GridViewSummaryItem();
+            summaryItem.Name = "Freight";
+            summaryItem.AggregateExpression = "(Sum(Freight) - Max(Freight) - Min(Freight)) / Count(Freight)";
+
+            GridViewSummaryRowItem summaryRowItem = new GridViewSummaryRowItem();
+            summaryRowItem.Add(summaryItem);
+            this.radGridView1.SummaryRowsTop.Add(summaryRowItem);
+````
+````VB.NET
+        Dim summaryItem As New GridViewSummaryItem()
+        summaryItem.Name = "Freight"
+        summaryItem.AggregateExpression = "(Sum(Freight) - Max(Freight) - Min(Freight)) / Count(Freight)"
+
+        Dim summaryRowItem As New GridViewSummaryRowItem()
+        summaryRowItem.Add(summaryItem)
+        Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-rows-summary-rows 003](images/gridview-rows-summary-rows003.png)
 
@@ -171,33 +183,37 @@ When you use grouping, the summary rows are calculated for
         
 
 The next example demonstrates how to use summary rows in grouping:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=grouping}}
-	            this.radGridView1.MasterTemplate.ShowTotals = true;
 	
-	            GridViewSummaryItem summaryItem = new GridViewSummaryItem("Freight", "{0}", GridAggregateFunction.Max);
-	            GridViewSummaryRowItem summaryRowItem = new GridViewSummaryRowItem();
-	            summaryRowItem.Add(summaryItem);
-	
-	            this.radGridView1.SummaryRowsTop.Add(summaryRowItem);
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=grouping}} 
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=grouping}} 
 
-{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=grouping}}
-	        Me.RadGridView1.MasterTemplate.ShowTotals = True
-	
-	        Dim summaryItem As New GridViewSummaryItem("Freight", "{0}", GridAggregateFunction.Max)
-	        Dim summaryRowItem As New GridViewSummaryRowItem()
-	        summaryRowItem.Add(summaryItem)
-	
-	        Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
-	{{endregion}}
+````C#
+            this.radGridView1.MasterTemplate.ShowTotals = true;
+
+            GridViewSummaryItem summaryItem = new GridViewSummaryItem("Freight", "{0}", GridAggregateFunction.Max);
+            GridViewSummaryRowItem summaryRowItem = new GridViewSummaryRowItem();
+            summaryRowItem.Add(summaryItem);
+
+            this.radGridView1.SummaryRowsTop.Add(summaryRowItem);
+````
+````VB.NET
+        Me.RadGridView1.MasterTemplate.ShowTotals = True
+
+        Dim summaryItem As New GridViewSummaryItem("Freight", "{0}", GridAggregateFunction.Max)
+        Dim summaryRowItem As New GridViewSummaryRowItem()
+        summaryRowItem.Add(summaryItem)
+
+        Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-rows-summary-rows 004](images/gridview-rows-summary-rows004.png)
 
@@ -209,29 +225,33 @@ You can add summary rows in hierarchical views.
 
 The following example demonstrates how to add a summary row to the
           first level of RadGridView hierarchy:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=hierarchy}}
-	            GridViewSummaryItem summaryItem = new GridViewSummaryItem("Quantity", "Max quantity = {0}", GridAggregateFunction.Max);
-	            GridViewSummaryRowItem summaryRowItem = new GridViewSummaryRowItem();
-	            summaryRowItem.Add(summaryItem);
 	
-	            this.radGridView1.MasterTemplate.Templates[0].SummaryRowsTop.Add(summaryRowItem);
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=hierarchy}} 
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=hierarchy}} 
 
-{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=hierarchy}}
-	        Dim summaryItem As New GridViewSummaryItem("Quantity", "Max quantity = {0}", GridAggregateFunction.Max)
-	        Dim summaryRowItem As New GridViewSummaryRowItem()
-	        summaryRowItem.Add(summaryItem)
-	
-	        Me.RadGridView1.MasterTemplate.Templates(0).SummaryRowsTop.Add(summaryRowItem)
-	{{endregion}}
+````C#
+            GridViewSummaryItem summaryItem = new GridViewSummaryItem("Quantity", "Max quantity = {0}", GridAggregateFunction.Max);
+            GridViewSummaryRowItem summaryRowItem = new GridViewSummaryRowItem();
+            summaryRowItem.Add(summaryItem);
+
+            this.radGridView1.MasterTemplate.Templates[0].SummaryRowsTop.Add(summaryRowItem);
+````
+````VB.NET
+        Dim summaryItem As New GridViewSummaryItem("Quantity", "Max quantity = {0}", GridAggregateFunction.Max)
+        Dim summaryRowItem As New GridViewSummaryRowItem()
+        summaryRowItem.Add(summaryItem)
+
+        Me.RadGridView1.MasterTemplate.Templates(0).SummaryRowsTop.Add(summaryRowItem)
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-rows-summary-rows 005](images/gridview-rows-summary-rows005.png)
 

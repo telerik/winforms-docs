@@ -1,8 +1,8 @@
 ---
 title: Adding Other Controls to the RibbonBar
-page_title: Adding Other Controls to the RibbonBar
+page_title: Adding Other Controls to the RibbonBar | UI for WinForms Documentation
 description: Adding Other Controls to the RibbonBar
-slug: ribbonbar-adding-other-controls-to-the-ribbonbar
+slug: winforms/ribbonbar/getting-started/adding-other-controls-to-the-ribbonbar
 tags: adding,other,controls,to,the,ribbonbar
 published: True
 position: 7
@@ -14,7 +14,7 @@ position: 7
 
 ## 
 
-In addition to [groups and buttons]({%slug ribbonbar-adding-and-removing-groups-and-buttons%}), you can add a variety of other controls to ribbon groups and button groups within a Telerik RadRibbonBar:
+In addition to [groups and buttons]({%slug winforms/ribbonbar/getting-started/adding-and-removing-groups-and-buttons%}), you can add a variety of other controls to ribbon groups and button groups within a Telerik RadRibbonBar:
 
 * [RadCheckBoxElement](http://www.telerik.com/help/winforms/ui_radcheckboxoverview.html)
 
@@ -22,7 +22,7 @@ In addition to [groups and buttons]({%slug ribbonbar-adding-and-removing-groups-
 
 * [RadDropDownButtonElement](http://www.telerik.com/help/winforms/ui_raddropdownbuttonoverview.html)
 
-* [RadGalleryElement]({%slug ribbonbar-creating-a-gallery%})
+* [RadGalleryElement]({%slug winforms/ribbonbar/getting-started/creating-a-gallery%})
 
 * [RadImageButtonElement](http://www.telerik.com/help/winforms/ribbonbarprogrammingaddingandcustomizingelements.html)
 

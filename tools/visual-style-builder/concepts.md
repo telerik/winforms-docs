@@ -1,8 +1,8 @@
 ---
 title: Concepts
-page_title: Concepts
+page_title: Concepts | UI for WinForms Documentation
 description: Concepts
-slug: tools-visual-style-builder-concepts
+slug: winforms/tools/visual-style-builder/concepts
 tags: concepts
 published: True
 position: 1
@@ -38,23 +38,27 @@ Each RadItem instance may now enter different visual states, where each state is
 
 
 
-These are new IElementSelector implementations, which, much like in the CSS styling mechanism, allow an element to be chosen depending on its current parent. Previously supported were only TypeSelector and ClassSelector, which, while providing the styling basis, would not give you the flexibility of making an element look different on different parent elements. The most important benefit of these new selectors is the fact that we may define the style conditions at root level and omit the need of forcing child elements to know for their parent’s properties. For example, in order to style a RadButtonElement, all we need is to create a VisualStateSelector for the desired VisualState, assign the proper ChildSelector and specify the desired property settings. The following code snippet demonstrates how to create a selector for RadButtonElement, which selects its FillPrimitve child:
+These are new IElementSelector implementations, which, much like in the CSS styling mechanism, allow an element to be chosen depending on its current parent. Previously supported were only TypeSelector and ClassSelector, which, while providing the styling basis, would not give you the flexibility of making an element look different on different parent elements. The most important benefit of these new selectors is the fact that we may define the style conditions at root level and omit the need of forcing child elements to know for their parent’s properties. For example, in order to style a RadButtonElement, all we need is to create a VisualStateSelector for the desired VisualState, assign the proper ChildSelector and specify the desired property settings. The following code snippet demonstrates how to create a selector for RadButtonElement, which selects its FillPrimitve child:#_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\Tools\VisualStyleBuilder\Overview\Concepts.cs region=VisualStateSelector}}
-	            VisualStateSelector stateSelector = new VisualStateSelector("RadButtonElement");
-	            stateSelector.ChildSelector = new TypeSelector(typeof(FillPrimitive));
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\Tools\VisualStyleBuilder\Overview\Concepts.cs region=VisualStateSelector}} 
+{{source=..\SamplesVB\Tools\VisualStyleBuilder\Overview\Concepts.vb region=VisualStateSelector}} 
 
-{{source=..\SamplesVB\Tools\VisualStyleBuilder\Overview\Concepts.vb region=VisualStateSelector}}
-	        Dim stateSelector = New VisualStateSelector("RadButtonElement")
-	        stateSelector.ChildSelector = New TypeSelector(GetType(FillPrimitive))
-	{{endregion}}
+````C#
+            VisualStateSelector stateSelector = new VisualStateSelector("RadButtonElement");
+            stateSelector.ChildSelector = new TypeSelector(typeof(FillPrimitive));
+````
+````VB.NET
+        Dim stateSelector = New VisualStateSelector("RadButtonElement")
+        stateSelector.ChildSelector = New TypeSelector(GetType(FillPrimitive))
+        '
+````
+
+{{endregion}} 
+
 
 
 

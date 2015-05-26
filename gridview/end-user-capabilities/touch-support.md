@@ -1,8 +1,8 @@
 ---
 title: Touch Support
-page_title: Touch Support
+page_title: Touch Support | UI for WinForms Documentation
 description: Touch Support
-slug: gridview-end-user-capabilities-touch-support
+slug: winforms/gridview/end-user-capabilities/touch-support
 tags: touch,support
 published: True
 position: 8
@@ -44,4 +44,6 @@ Resizing the row is achieved by the zoom gesture applied to the desired row.![gr
 
 And the result is:![gridview-end-user-capabilities-touch-support 010](images/gridview-end-user-capabilities-touch-support010.png)
 
-# See Also[Windows Touch Gestures](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx)
+# See Also
+
+ * [Windows Touch Gestures](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx)

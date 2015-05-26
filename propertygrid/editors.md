@@ -1,8 +1,8 @@
 ---
 title: Editors
-page_title: Editors
+page_title: Editors | UI for WinForms Documentation
 description: Editors
-slug: propertygrid-editors
+slug: winforms/propertygrid/editors
 tags: editors
 published: True
 position: 9
@@ -44,57 +44,22 @@ You can configure RadPropertyGrid so that items enter edit mode directly when th
 
 There are a number of build-in ediotrs which are used for editing different data types. These editors can be customized 
      or can be replaced by custom editors all together. Here is a list of the build-in ediotrs and the data types they are used for: 
-<table><tr><td>
 
-PropertyGridBrowseEditor</td><td>
 
-Used for editing of type image.</td></tr><tr><td>
 
-PropertyGridColorEditor</td><td>
+|PropertyGridBrowseEditor|Used for editing of type image.|
+|PropertyGridColorEditor|Used for editing of type color.|
+|PropertyGridDateTimeEditor|Used for editing of type DateTime.|
+|PropertyGridDropDownListEditor|Used for editing of types that have a type converter supporting standart values and do not have a UITypeEditor.|
+|PropertyGridSpinEditor|Used for editing of numeric data types.|
+|PropertyGridTextBoxEditor|Used for editing all data types that are not covered by other editors.|
+|PropertyGridUITypeEditor|Used for editing data types that have a UITypeEditor and are not covered by other editors.|
 
-Used for editing of type color.</td></tr><tr><td>
 
-PropertyGridDateTimeEditor</td><td>
 
-Used for editing of type DateTime.</td></tr><tr><td>
-
-PropertyGridDropDownListEditor</td><td>
-
-Used for editing of types that have a type converter supporting standart values and do not have a UITypeEditor.</td></tr><tr><td>
-
-PropertyGridSpinEditor</td><td>
-
-Used for editing of numeric data types.</td></tr><tr><td>
-
-PropertyGridTextBoxEditor</td><td>
-
-Used for editing all data types that are not covered by other editors.</td></tr><tr><td>
-
-PropertyGridUITypeEditor</td><td>
-
-Used for editing data types that have a UITypeEditor and are not covered by other editors.</td></tr></table>
-<table><tr><td>
-
-[API]({%slug propertygrid-editors-api%})</td><td>
-
-Demonstrates how to control the editing process programmatically.</td></tr><tr><td>
-
-[Events]({%slug propertygrid-editors-events%})</td><td>
-
-Demonstrates all events that occur during this process.</td></tr><tr><td>
-
-[Data validation]({%slug propertygrid-editors-validation%})</td><td>
-
-Demonstrates how to validate data in RadPropertyGrid.</td></tr><tr><td>
-
-[Customizing editor behavior]({%slug propertygrid-editors-customizing-editor-behavior%})</td><td>
-
-Demonstrates how to change editor behavior.</td></tr><tr><td>
-
-[Using custom editors]({%slug propertygrid-editors-using-custom-editor%})</td><td>
-
-Demonstrates how to replace the standard editors with a custom one.</td></tr><tr><td>
-
-[Handling editor events]({%slug propertygrid-editors-handling-editors-events%})</td><td>
-
-Demonstrates how to handle editor events.</td></tr></table>
+|[API]({%slug winforms/propertygrid/editors/api%})|Demonstrates how to control the editing process programmatically.|
+|[Events]({%slug winforms/propertygrid/editors/events%})|Demonstrates all events that occur during this process.|
+|[Data validation]({%slug winforms/propertygrid/editors/validation%})|Demonstrates how to validate data in RadPropertyGrid.|
+|[Customizing editor behavior]({%slug winforms/propertygrid/editors/customizing-editor-behavior%})|Demonstrates how to change editor behavior.|
+|[Using custom editors]({%slug winforms/propertygrid/editors/using-custom-editor%})|Demonstrates how to replace the standard editors with a custom one.|
+|[Handling editor events]({%slug winforms/propertygrid/editors/handling-editors'-events%})|Demonstrates how to handle editor events.|

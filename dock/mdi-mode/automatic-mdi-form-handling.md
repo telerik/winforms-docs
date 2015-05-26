@@ -1,8 +1,8 @@
 ---
 title: Automatic MDI Form Handling
-page_title: Automatic MDI Form Handling
+page_title: Automatic MDI Form Handling | UI for WinForms Documentation
 description: Automatic MDI Form Handling
-slug: dock-mdi-mode-automatic-mdi-form-handling
+slug: winforms/dock/mdi-mode/automatic-mdi-form-handling
 tags: automatic,mdi,form,handling
 published: True
 position: 0
@@ -20,59 +20,67 @@ To configure your MDI application to use this feature:
           
 
 1. Drop a __RadDock__ onto the parent form and set the __AutoDetectMdiChildForms__ property to true. You may also want to set the __RadDock.Dock__ property to __Fill__ to get the best use of space on the form.
-          
+          #_[C#] Configuring the Parent Form_
 
-#### __[C#] Configuring the Parent Form__
-
-{{source=..\SamplesCS\Dock\MDIHandling1.cs region=initialization}}
-	        private void Form1_Load(object sender, EventArgs e)
-	        {
-	            this.IsMdiContainer = true;
-	            this.radDock1.AutoDetectMdiChildren = true;
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Configuring the Parent Form__
+{{source=..\SamplesCS\Dock\MDIHandling1.cs region=initialization}} 
+{{source=..\SamplesVB\Dock\MDIHandling1.vb region=initialization}} 
 
-{{source=..\SamplesVB\Dock\MDIHandling1.vb region=initialization}}
-	    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-	        Me.IsMdiContainer = True
-	        Me.RadDock1.AutoDetectMdiChildren = True
-	    End Sub
-	{{endregion}}
+````C#
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.IsMdiContainer = true;
+            this.radDock1.AutoDetectMdiChildren = true;
+        }
+````
+````VB.NET
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.IsMdiContainer = True
+        Me.RadDock1.AutoDetectMdiChildren = True
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
 1. Add a form to the project that will serve the role of child form. No properties, methods or event handlers need to be set for this form, except that you may want to add some content that will be visible when the child forms are displayed as tabbed documents.
 
-1. Add code to the parent form to create the child form and assign it an MDI parent:
+1. Add code to the parent form to create the child form and assign it an MDI parent:#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Dock\MDIHandling1.cs region=creatingChildForm}}
-	        private void radMenuItem1_Click(object sender, EventArgs e)
-	        {
-	            Form childForm = new Form();
-	            childForm.Text = "MDI Child " + DateTime.Now.ToShortTimeString();
-	            childForm.MdiParent = this;
-	            childForm.Show();
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Dock\MDIHandling1.cs region=creatingChildForm}} 
+{{source=..\SamplesVB\Dock\MDIHandling1.vb region=creatingChildForm}} 
 
-{{source=..\SamplesVB\Dock\MDIHandling1.vb region=creatingChildForm}}
-	    Private Sub RadMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadMenuItem1.Click
-	        Dim childForm As New Form()
-	        childForm.Text = "MDI Child " & DateTime.Now.ToShortTimeString()
-	        childForm.MdiParent = Me
-	        childForm.Show()
-	    End Sub
-	{{endregion}}
+````C#
+        private void radMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form childForm = new Form();
+            childForm.Text = "MDI Child " + DateTime.Now.ToShortTimeString();
+            childForm.MdiParent = this;
+            childForm.Show();
+        }
+````
+````VB.NET
+    Private Sub RadMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadMenuItem1.Click
+        Dim childForm As New Form()
+        childForm.Text = "MDI Child " & DateTime.Now.ToShortTimeString()
+        childForm.MdiParent = Me
+        childForm.Show()
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -86,21 +94,25 @@ This property allows you to determine the default type of the DockWindows that w
 
 
 
-However, you can set the default type to ToolWindow:
+However, you can set the default type to ToolWindow:#_[C#] Setting the default DockWindow type for MDI children forms_
 
-#### __[C#] Setting the default DockWindow type for MDI children forms__
-
-{{source=..\SamplesCS\Dock\MDIHandling1.cs region=mdiChildrenDockType}}
-	            this.radDock1.MdiChildrenDockType = DockType.ToolWindow;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Setting the default DockWindow type for MDI children forms__
+{{source=..\SamplesCS\Dock\MDIHandling1.cs region=mdiChildrenDockType}} 
+{{source=..\SamplesVB\Dock\MDIHandling1.vb region=mdiChildrenDockType}} 
 
-{{source=..\SamplesVB\Dock\MDIHandling1.vb region=mdiChildrenDockType}}
-	        Me.RadDock1.MdiChildrenDockType = DockType.ToolWindow
-	{{endregion}}
+````C#
+            this.radDock1.MdiChildrenDockType = DockType.ToolWindow;
+````
+````VB.NET
+        Me.RadDock1.MdiChildrenDockType = DockType.ToolWindow
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -137,34 +149,38 @@ This chain of events allows you to encapsulate all your business logic in the re
 
 The __CloseAllWindows__ returns bool value which indicates if the operation is successful (it will return true if all child windows are closed).
         This is allowing you to keep the main form opened if some of the MDI children cannot be closed for the moment. You can use the method as follows:      
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Dock\MDIHandling1.cs region=closing}}
-	        protected override void OnClosing(CancelEventArgs e)
-	        {
-	            bool canClose = radDock1.CloseAllWindows();
-	            e.Cancel = !canClose;
 	
-	            base.OnClosing(e);
-	
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Dock\MDIHandling1.cs region=closing}} 
+{{source=..\SamplesVB\Dock\MDIHandling1.vb region=closing}} 
 
-{{source=..\SamplesVB\Dock\MDIHandling1.vb region=closing}}
-	    Protected Overrides Sub OnClosing(ByVal e As CancelEventArgs)
-	        Dim canClose As Boolean = RadDock1.CloseAllWindows()
-	        e.Cancel = Not canClose
-	
-	        MyBase.OnClosing(e)
-	
-	    End Sub
-	{{endregion}}
+````C#
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            bool canClose = radDock1.CloseAllWindows();
+            e.Cancel = !canClose;
+
+            base.OnClosing(e);
+
+        }
+````
+````VB.NET
+    Protected Overrides Sub OnClosing(ByVal e As CancelEventArgs)
+        Dim canClose As Boolean = RadDock1.CloseAllWindows()
+        e.Cancel = Not canClose
+
+        MyBase.OnClosing(e)
+
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -185,4 +201,4 @@ A popular scenario for many applications is the use of singleton forms, where th
 		and adds HostWindows to the MainDocumentContainer.
 		
 		For more information about the non-MDI approach, please refer to 
-		  [this article]({%slug docking-usercontrols-and-forms-docking-singleton-forms%})
+		  [this article]({%slug winforms/dock/docking-usercontrols-and-forms/docking-singleton-forms%})

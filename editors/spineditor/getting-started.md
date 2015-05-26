@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: editors-spineditor-getting-started
+slug: winforms/editors/spineditor/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -31,26 +31,30 @@ __RadSpinEditor__.
 1. Click the Events tab of the Property Window, locate the
     __ValueChanged__ event and double-click it to create an event
     handler. Replace the event handler with the following code.
-      
+      #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Editors\SpinEditor1.cs region=spinEditorAndTrackBar}}
-	        void radSpinEditor1_ValueChanged(object sender, EventArgs e)
-	        {
-	            this.radTrackBar1.Value = Convert.ToInt32(radSpinEditor1.Value);
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Editors\SpinEditor1.cs region=spinEditorAndTrackBar}} 
+{{source=..\SamplesVB\Editors\SpinEditor1.vb region=spinEditorAndTrackBar}} 
 
-{{source=..\SamplesVB\Editors\SpinEditor1.vb region=spinEditorAndTrackBar}}
-	    Private Sub RadSpinEditor1_ValueChanged1(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadSpinEditor1.ValueChanged
-	        Me.RadTrackBar1.Value = Convert.ToInt32(RadSpinEditor1.Value)
-	    End Sub
-	{{endregion}}
+````C#
+        void radSpinEditor1_ValueChanged(object sender, EventArgs e)
+        {
+            this.radTrackBar1.Value = Convert.ToInt32(radSpinEditor1.Value);
+        }
+````
+````VB.NET
+    Private Sub RadSpinEditor1_ValueChanged1(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadSpinEditor1.ValueChanged
+        Me.RadTrackBar1.Value = Convert.ToInt32(RadSpinEditor1.Value)
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 

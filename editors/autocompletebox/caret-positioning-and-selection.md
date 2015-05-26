@@ -1,8 +1,8 @@
 ---
 title: Caret positioning and selection
-page_title: Caret positioning and selection
+page_title: Caret positioning and selection | UI for WinForms Documentation
 description: Caret positioning and selection
-slug: editors-autocompletebox-caret-positioning-and-selection
+slug: winforms/editors/autocompletebox/caret-positioning-and-selection
 tags: caret,positioning,and,selection
 published: True
 position: 2
@@ -34,56 +34,62 @@ The __SelectionStart__ property is an integer that indicates the insertion
 
 Setting the __SelectionLength__ to a number greater than 0 causes that number
           of characters to be selected, starting from the current insertion point.
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=SetSelection}}
-	        private void SetSelection()
-	        {
-	            this.radAutoCompleteBox1.Text = "Pepsi; Sprite; Coca-Cola;";
-	            this.radAutoCompleteBox1.SelectionStart = 6;
-	            this.radAutoCompleteBox1.SelectionLength = 7;
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=SetSelection}} 
+{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=SetSelection}} 
 
-{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=SetSelection}}
-	    Private Sub SetSelection()
-	        Me.RadAutoCompleteBox1.Text = "Pepsi; Sprite; Coca-Cola;"
-	        Me.RadAutoCompleteBox1.SelectionStart = 6
-	        Me.RadAutoCompleteBox1.SelectionLength = 7
-	    End Sub
-	{{endregion}}
+````C#
+        private void SetSelection()
+        {
+            this.radAutoCompleteBox1.Text = "Pepsi; Sprite; Coca-Cola;";
+            this.radAutoCompleteBox1.SelectionStart = 6;
+            this.radAutoCompleteBox1.SelectionLength = 7;
+        }
+````
+````VB.NET
+    Private Sub SetSelection()
+        Me.RadAutoCompleteBox1.Text = "Pepsi; Sprite; Coca-Cola;"
+        Me.RadAutoCompleteBox1.SelectionStart = 6
+        Me.RadAutoCompleteBox1.SelectionLength = 7
+    End Sub
+````
+
+{{endregion}} 
+
 
 
 
 Alternatively, you can use the __Select__ method to select the same part of the text:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=SetSelectionRange}}
-	        private void SetSelectionRange()
-	        {
-	            this.radAutoCompleteBox1.Text = "Pepsi;Sprite;Coca-Cola";
-	            this.radAutoCompleteBox1.Select(6, 7);
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=SetSelectionRange}} 
+{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=SetSelectionRange}} 
 
-{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=SetSelectionRange}}
-	    Private Sub SetSelectionRange()
-	        Me.RadAutoCompleteBox1.Text = "Pepsi;Sprite;Coca-Cola"
-	        Me.RadAutoCompleteBox1.[Select](6, 7)
-	    End Sub
-	{{endregion}}
+````C#
+        private void SetSelectionRange()
+        {
+            this.radAutoCompleteBox1.Text = "Pepsi;Sprite;Coca-Cola";
+            this.radAutoCompleteBox1.Select(6, 7);
+        }
+````
+````VB.NET
+    Private Sub SetSelectionRange()
+        Me.RadAutoCompleteBox1.Text = "Pepsi;Sprite;Coca-Cola"
+        Me.RadAutoCompleteBox1.[Select](6, 7)
+    End Sub
+````
+
+{{endregion}} 
+
 
 
 

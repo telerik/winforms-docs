@@ -1,8 +1,8 @@
 ---
 title: Tracking the ActiveWindow
-page_title: Tracking the ActiveWindow
+page_title: Tracking the ActiveWindow | UI for WinForms Documentation
 description: Tracking the ActiveWindow
-slug: dock-object-model-tracking-the-activewindow
+slug: winforms/dock/object-model/tracking-the-activewindow
 tags: tracking,the,activewindow
 published: True
 position: 11

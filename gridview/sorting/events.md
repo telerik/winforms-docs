@@ -1,8 +1,8 @@
 ---
 title: Events
-page_title: Events
+page_title: Events | UI for WinForms Documentation
 description: Events
-slug: gridview-sorting-events
+slug: winforms/gridview/sorting/events
 tags: events
 published: True
 position: 4
@@ -16,44 +16,17 @@ position: 4
 
 There are two events that are raised when the data in the RadGridView is sorted. The first one is the __SortChanging__ event which
         	is raised before the data is sorted. The second one is the __SortChanged__ event and it is raised after the data is sorted
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=SortingEvents}}
-	            radGridView1.SortChanged += new Telerik.WinControls.UI.GridViewCollectionChangedEventHandler(radGridView1_SortChanged);
-	            radGridView1.SortChanging += new Telerik.WinControls.UI.GridViewCollectionChangingEventHandler(radGridView1_SortChanging);
-	{{endregion}}
-
-
-
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=SortingEvents1}}
-	        void radGridView1_SortChanging(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
-	        {
 	
-	        }
-	
-	        void radGridView1_SortChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
-	        {
-	
-	        }
-	{{endregion}}
 
+#_[C#]_
 
+	
 
-#### __[VB.NET]__
+#_[VB.NET]_
 
-{{source=..\SamplesVB\GridView\Sorting\SortingEvents.vb region=SortingEvents}}
-	    Private Sub RadGridView1_SortChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.SortChanging
 	
-	    End Sub
-	
-	    Private Sub RadGridView1_SortChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles RadGridView1.SortChanged
-	
-	    End Sub
-	{{endregion}}
 
 
 
@@ -69,63 +42,81 @@ From the event arguments of both events you can access the following data:
 
 You are also able to cancel the sorting operation by setting the __Cancel__ property to *True*
 
-#### __[C#]__
+{{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=SortingEvents}} 
+{{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=SortingEvents1}} 
+{{source=..\SamplesVB\GridView\Sorting\SortingEvents.vb region=SortingEvents}} 
 
-{{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=CancelSorting}}
-	        private void radGridView1_SortChanging1(object sender, GridViewCollectionChangingEventArgs e)
-	        {
-	            e.Cancel = true;
-	        }
-	{{endregion}}
+{{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=CancelSorting}} 
+````C#
+        private void radGridView1_SortChanging1(object sender, GridViewCollectionChangingEventArgs e)
+        {
+            e.Cancel = true;
+        }
+````
+````VB.NET
+    Private Sub RadGridView1_SortChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.SortChanging
+
+    End Sub
+
+    Private Sub RadGridView1_SortChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles RadGridView1.SortChanged
+
+    End Sub
+    '
+````
+
+{{endregion}} 
 
 
+#_[VB.NET]_
 
-#### __[VB.NET]__
-
-{{source=..\SamplesVB\GridView\Sorting\SortingEvents.vb region=CancelSorting}}
-	    Private Sub RadGridView1_SortChanging1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.SortChanging
-	        e.Cancel = True
-	    End Sub
-	{{endregion}}
+	
 
 
 
 Since the __SortDescriptors__ collection implements the __INotifyPropertyChanged__ interface, you can use its __CollectionChanged__ event:
 
-#### __[C#]__
+{{source=..\SamplesVB\GridView\Sorting\SortingEvents.vb region=CancelSorting}} 
 
-{{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=CollectionChanged}}
-	            this.radGridView1.SortDescriptors.CollectionChanged += new Telerik.WinControls.Data.NotifyCollectionChangedEventHandler(SortDescriptors_CollectionChanged);
-	{{endregion}}
+{{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=CollectionChanged}} 
+````C#
+            this.radGridView1.SortDescriptors.CollectionChanged += new Telerik.WinControls.Data.NotifyCollectionChangedEventHandler(SortDescriptors_CollectionChanged);
+````
+````VB.NET
+    Private Sub RadGridView1_SortChanging1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.SortChanging
+        e.Cancel = True
+    End Sub
+    '
+````
 
-
-
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=CollectionChanged1}}
-	        void SortDescriptors_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
-	        {
-	            
-	        }
-	{{endregion}}
+{{endregion}} 
 
 
+#_[C#]_
 
-#### __[VB.NET]__
-
-{{source=..\SamplesVB\GridView\Sorting\SortingEvents.vb region=CollectionChanged}}
-	        AddHandler Me.RadGridView1.SortDescriptors.CollectionChanged, AddressOf SortDescriptors_CollectionChanged
-	{{endregion}}
-
-
-
-#### __[VB.NET]__
-
-{{source=..\SamplesVB\GridView\Sorting\SortingEvents.vb region=CollectionChanged1}}
-	    Private Sub SortDescriptors_CollectionChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
 	
-	    End Sub
-	{{endregion}}
+
+
+
+{{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=CollectionChanged1}} 
+{{source=..\SamplesVB\GridView\Sorting\SortingEvents.vb region=CollectionChanged}} 
+
+````C#
+        void SortDescriptors_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
+        {
+            
+        }
+````
+````VB.NET
+        AddHandler Me.RadGridView1.SortDescriptors.CollectionChanged, AddressOf SortDescriptors_CollectionChanged
+        '
+````
+
+{{endregion}} 
+
+
+#_[VB.NET]_
+
+	
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: GridViewComboBoxColumn
-page_title: GridViewComboBoxColumn
+page_title: GridViewComboBoxColumn | UI for WinForms Documentation
 description: GridViewComboBoxColumn
-slug: gridview-columns-gridviewcomboboxcolumn
+slug: winforms/gridview/columns/column-types/gridviewcomboboxcolumn
 tags: gridviewcomboboxcolumn
 published: True
 position: 6
@@ -26,8 +26,10 @@ __GridViewComboBoxColumn__ displays a set of predefined candidate text values i
         	__DataSource__ that should be used to update the cell within
         	the grid represented by the __FieldName__ property.
 
->Values will display in the column only if the value in __FieldName__ is within
+>note Values will display in the column only if the value in __FieldName__ is within
       	    the range of values provided by the __ValueMember__ field values.
+>
+
 
 Other important properties for __GridViewComboBoxColumn__ are:
       
@@ -43,43 +45,47 @@ Other important properties for __GridViewComboBoxColumn__ are:
 			  		Setting it to *true* will sort by __DisplayMember__,
 			  		otherwise the sorting will be executed according to the __ValueMember__
 
->By default, when sorting is executed on GridViewComboBoxColumn it is sorted according to its
-    		__ValueMember__ setting. However, if you need to perform the sorting according 
+>note By default, when sorting is executed on GridViewComboBoxColumn it is sorted according to its __ValueMember__ setting. However, if you need to perform the sorting according 
     		to the DisplayMember instead, you should set the __DisplayMemberSort__ property of the
-			column.    		
-		  
+			column.
+>
 
-__GridViewComboBoxColumn__ inherits from __GridViewDataColumn.__![gridview-columns-gridviewcomboboxcolumn 001](images/gridview-columns-gridviewcomboboxcolumn001.png)
 
-#### __[C#] Adding and binding GridViewComboBoxColumn__
+__GridViewComboBoxColumn__ inherits from __GridViewDataColumn.__![gridview-columns-gridviewcomboboxcolumn 001](images/gridview-columns-gridviewcomboboxcolumn001.png)#_[C#] Adding and binding GridViewComboBoxColumn_
 
-{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn1.cs region=addComboBoxColumn}}
-	            GridViewComboBoxColumn supplierColumn = new GridViewComboBoxColumn();
-	            supplierColumn.Name = "SupplierColumn";
-	            supplierColumn.HeaderText = "Supplier";
-	            supplierColumn.DataSource = this.suppliersBindingSource;
-	            supplierColumn.ValueMember = "SupplierID";
-	            supplierColumn.DisplayMember = "ContactName";
-	            supplierColumn.FieldName = "SupplierID";
-	            supplierColumn.Width = 200;
-	            this.radGridView1.Columns.Add(supplierColumn);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Adding and binding GridViewComboBoxColumn__
+{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn1.cs region=addComboBoxColumn}} 
+{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn1.vb region=addComboBoxColumn}} 
 
-{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn1.vb region=addComboBoxColumn}}
-	        Dim supplierColumn As GridViewComboBoxColumn = New GridViewComboBoxColumn
-	        supplierColumn.Name = "SupplierColumn"
-	        supplierColumn.HeaderText = "Supplier"
-	        supplierColumn.DataSource = Me.SuppliersBindingSource
-	        supplierColumn.ValueMember = "SupplierID"
-	        supplierColumn.DisplayMember = "ContactName"
-	        supplierColumn.FieldName = "SupplierID"
-	        supplierColumn.Width = 200
-	        Me.RadGridView1.Columns.Add(supplierColumn)
-	{{endregion}}
+````C#
+            GridViewComboBoxColumn supplierColumn = new GridViewComboBoxColumn();
+            supplierColumn.Name = "SupplierColumn";
+            supplierColumn.HeaderText = "Supplier";
+            supplierColumn.DataSource = this.suppliersBindingSource;
+            supplierColumn.ValueMember = "SupplierID";
+            supplierColumn.DisplayMember = "ContactName";
+            supplierColumn.FieldName = "SupplierID";
+            supplierColumn.Width = 200;
+            this.radGridView1.Columns.Add(supplierColumn);
+````
+````VB.NET
+        Dim supplierColumn As GridViewComboBoxColumn = New GridViewComboBoxColumn
+        supplierColumn.Name = "SupplierColumn"
+        supplierColumn.HeaderText = "Supplier"
+        supplierColumn.DataSource = Me.SuppliersBindingSource
+        supplierColumn.ValueMember = "SupplierID"
+        supplierColumn.DisplayMember = "ContactName"
+        supplierColumn.FieldName = "SupplierID"
+        supplierColumn.Width = 200
+        Me.RadGridView1.Columns.Add(supplierColumn)
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -94,33 +100,37 @@ In order to access the __RadDropDownListEditor__, you should subscribe to the
       	of the __RadDropDownListEditor__ gives you access to the
       	__RadDropDownListEditorElement__ which allows you to apply various customizations 
       	to the editor's element:
-      
+      #_[C#] Modify the DropDownList editor_
 
-#### __[C#] Modify the DropDownList editor__
-
-{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn1.cs region=modifyTheComboBoxEditor}}
-	        void radGridView1_CellEditorInitialized(object sender, GridViewCellEventArgs e)
-	        {
-	            RadDropDownListEditor editor = this.radGridView1.ActiveEditor as RadDropDownListEditor;
-	            if (editor != null)
-	            {
-	                ((RadDropDownListEditorElement)((RadDropDownListEditor)this.radGridView1.ActiveEditor).EditorElement).RightToLeft = true;
-	            }
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Modify the DropDownList editor__
+{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn1.cs region=modifyTheComboBoxEditor}} 
+{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn1.vb region=modifyTheComboBoxEditor}} 
 
-{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn1.vb region=modifyTheComboBoxEditor}}
-	    Private Sub RadGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs) Handles RadGridView1.CellEditorInitialized
-	        Dim editor As RadDropDownListEditor = TryCast(Me.RadGridView1.ActiveEditor, RadDropDownListEditor)
-	        If Not editor Is Nothing Then
-	            CType((CType(Me.RadGridView1.ActiveEditor, RadDropDownListEditor)).EditorElement, RadDropDownListEditorElement).RightToLeft = True
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        void radGridView1_CellEditorInitialized(object sender, GridViewCellEventArgs e)
+        {
+            RadDropDownListEditor editor = this.radGridView1.ActiveEditor as RadDropDownListEditor;
+            if (editor != null)
+            {
+                ((RadDropDownListEditorElement)((RadDropDownListEditor)this.radGridView1.ActiveEditor).EditorElement).RightToLeft = true;
+            }
+        }
+````
+````VB.NET
+    Private Sub RadGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs) Handles RadGridView1.CellEditorInitialized
+        Dim editor As RadDropDownListEditor = TryCast(Me.RadGridView1.ActiveEditor, RadDropDownListEditor)
+        If Not editor Is Nothing Then
+            CType((CType(Me.RadGridView1.ActiveEditor, RadDropDownListEditor)).EditorElement, RadDropDownListEditorElement).RightToLeft = True
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -130,67 +140,71 @@ The following example demonstrates a case where the combo box is bound to a colu
         	In this case the __DisplayMember__ and __ValueMember__ are the same, 
         	an you need just an array of strings as a datasource to the ComboBoxColumn (those strings should be equal to the possible
         	values in the data source):
-        
+        #_[C#] Bind to array of string_
 
-#### __[C#] Bind to array of string__
-
-{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn1.cs region=BindToArray}}
-	            //Create the data source and fill some data
-	            DataTable table = new DataTable();
-	            table.Columns.Add("Phone", typeof(string));
-	            table.Rows.Add("Mobile");
-	            table.Rows.Add("Business");
-	            table.Rows.Add("Business");
-	            table.Rows.Add("Fax");
-	            table.Rows.Add("Fax");
-	            table.Rows.Add("Fax");
 	
-	            //allow the grid to genetate its columns
-	            this.radGridView1.MasterTemplate.AutoGenerateColumns = false;
-	
-	            //set the grid data source
-	            this.radGridView1.DataSource = table;
-	            
-	            //create the combo box column
-	            GridViewComboBoxColumn comboColumn = new GridViewComboBoxColumn("Phone");
-	            //set the column data source - the possible column values
-	            comboColumn.DataSource = new String[] { "Mobile", "Business", "Fax" };
-	            //set the FieldName - the column will retrieve the value from "Phone" column in the data table
-	            comboColumn.FieldName = "Phone";
-	            //add the column to the grid
-	            radGridView1.Columns.Add(comboColumn);
-	{{endregion}}
 
 
 
-#### __[VB.NET] Bind to array of string__
+{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn1.cs region=BindToArray}} 
+{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn1.vb region=BindToArray}} 
 
-{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn1.vb region=BindToArray}}
-	        'Create the data source and fill some data
-	        Dim table As New DataTable()
-	        table.Columns.Add("Phone", GetType(String))
-	        table.Rows.Add("Mobile")
-	        table.Rows.Add("Business")
-	        table.Rows.Add("Business")
-	        table.Rows.Add("Fax")
-	        table.Rows.Add("Fax")
-	        table.Rows.Add("Fax")
-	
-	        'allow the grid to genetate its columns
-	        Me.RadGridView1.MasterTemplate.AutoGenerateColumns = False
-	
-	        'set the grid data source
-	        Me.RadGridView1.DataSource = table
-	
-	        'create the combo box column
-	        Dim comboColumn As New GridViewComboBoxColumn("Phone")
-	        'set the column data source - the possible column values
-	        comboColumn.DataSource = New [String]() {"Mobile", "Business", "Fax"}
-	        'set the FieldName - the column will retrieve the value from "Phone" column in the data table
-	        comboColumn.FieldName = "Phone"
-	        'add the column to the grid
-	        RadGridView1.Columns.Add(comboColumn)
-	{{endregion}}
+````C#
+            //Create the data source and fill some data
+            DataTable table = new DataTable();
+            table.Columns.Add("Phone", typeof(string));
+            table.Rows.Add("Mobile");
+            table.Rows.Add("Business");
+            table.Rows.Add("Business");
+            table.Rows.Add("Fax");
+            table.Rows.Add("Fax");
+            table.Rows.Add("Fax");
+
+            //allow the grid to genetate its columns
+            this.radGridView1.MasterTemplate.AutoGenerateColumns = false;
+
+            //set the grid data source
+            this.radGridView1.DataSource = table;
+            
+            //create the combo box column
+            GridViewComboBoxColumn comboColumn = new GridViewComboBoxColumn("Phone");
+            //set the column data source - the possible column values
+            comboColumn.DataSource = new String[] { "Mobile", "Business", "Fax" };
+            //set the FieldName - the column will retrieve the value from "Phone" column in the data table
+            comboColumn.FieldName = "Phone";
+            //add the column to the grid
+            radGridView1.Columns.Add(comboColumn);
+````
+````VB.NET
+        'Create the data source and fill some data
+        Dim table As New DataTable()
+        table.Columns.Add("Phone", GetType(String))
+        table.Rows.Add("Mobile")
+        table.Rows.Add("Business")
+        table.Rows.Add("Business")
+        table.Rows.Add("Fax")
+        table.Rows.Add("Fax")
+        table.Rows.Add("Fax")
+
+        'allow the grid to genetate its columns
+        Me.RadGridView1.MasterTemplate.AutoGenerateColumns = False
+
+        'set the grid data source
+        Me.RadGridView1.DataSource = table
+
+        'create the combo box column
+        Dim comboColumn As New GridViewComboBoxColumn("Phone")
+        'set the column data source - the possible column values
+        comboColumn.DataSource = New [String]() {"Mobile", "Business", "Fax"}
+        'set the FieldName - the column will retrieve the value from "Phone" column in the data table
+        comboColumn.FieldName = "Phone"
+        'add the column to the grid
+        RadGridView1.Columns.Add(comboColumn)
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-columns-gridviewcomboboxcolumn 002](images/gridview-columns-gridviewcomboboxcolumn002.png)
 
@@ -211,315 +225,323 @@ The example below extends the previous sample, where we bound the combo column t
         	we have set the __ValueMember__ to __"Id"__.
         	
         	You may use a DataTable in the same way like the BindingList.
-      	
+      	#_[C#] Binding to collection of custom object_
 
-#### __[C#] Binding to collection of custom object__
-
-{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn2.cs region=BindToObject}}
-	    public partial class GridViewComboBoxColumn2 : Form
-	    {
-	        public GridViewComboBoxColumn2()
-	        {
-	            InitializeComponent();
 	
-	            DataTable table = new DataTable();
-	
-	            table.Columns.Add("Text", typeof(string));
-	            table.Columns.Add("Phone", typeof(string));
-	            table.Columns.Add("Another ComboBox column", typeof(int));
-	
-	            table.Rows.Add("Text 1", "Mobile", 1);
-	            table.Rows.Add("Text 2", "Business", 1);
-	            table.Rows.Add("Text 3", "Business", 2);
-	            table.Rows.Add("Text 4", "Fax", 1);
-	
-	            this.radGridView1.MasterTemplate.AutoGenerateColumns = false;
-	            radGridView1.Columns.Add(new GridViewTextBoxColumn("Text"));
-	
-	            GridViewComboBoxColumn comboCol = new GridViewComboBoxColumn("Phone");
-	            comboCol.DataSource = new String[] { "Mobile", "Business", "Fax" };
-	            comboCol.FieldName = "Phone";
-	            radGridView1.Columns.Add(comboCol);
-	
-	            GridViewComboBoxColumn colboCol2 = new GridViewComboBoxColumn("Another ComboBox column");
-	            colboCol2.FieldName = "Another ComboBox column";
-	            colboCol2.ValueMember = "Id";
-	            colboCol2.DisplayMember = "MyString";
-	
-	            BindingList<ComboBoxDataSourceObject> list = new BindingList<ComboBoxDataSourceObject>();
-	
-	            ComboBoxDataSourceObject object1 = new ComboBoxDataSourceObject();
-	            object1.Id = 1;
-	            object1.MyString = "First object";
-	            list.Add(object1);
-	
-	            ComboBoxDataSourceObject object2 = new ComboBoxDataSourceObject();
-	            object2.Id = 2;
-	            object2.MyString = "Second object";
-	            list.Add(object2);
-	
-	            colboCol2.DataSource = list;
-	            radGridView1.Columns.Add(colboCol2);
-	            this.radGridView1.DataSource = table;
-	        }
-	    }
-	
-	    public class ComboBoxDataSourceObject
-	    {
-	        private string myString;
-	        public string MyString
-	        {
-	            get { return myString; }
-	            set { myString = value; }
-	        }
-	
-	        private int id;
-	        public int Id
-	        {
-	            get { return id; }
-	            set { id = value; }
-	        }
-	    }
-	{{endregion}}
 
 
 
-#### __[VB.NET] Binding to collection of custom object__
+{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn2.cs region=BindToObject}} 
+{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn2.vb region=BindToObject}} 
 
-{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn2.vb region=BindToObject}}
-	Public Class GridViewComboBoxColumn2
-	    Public Sub New()
-	        InitializeComponent()
-	
-	        Dim table As New DataTable()
-	
-	        table.Columns.Add("Text", GetType(String))
-	        table.Columns.Add("Phone", GetType(String))
-	        table.Columns.Add("Another ComboBox column", GetType(Integer))
-	
-	        table.Rows.Add("Text 1", "Mobile", 1)
-	        table.Rows.Add("Text 2", "Business", 1)
-	        table.Rows.Add("Text 3", "Business", 2)
-	        table.Rows.Add("Text 4", "Fax", 1)
-	
-	        Me.RadGridView1.MasterTemplate.AutoGenerateColumns = False
-	        RadGridView1.Columns.Add(New GridViewTextBoxColumn("Text"))
-	
-	        Dim comboCol As New GridViewComboBoxColumn("Phone")
-	        comboCol.DataSource = New [String]() {"Mobile", "Business", "Fax"}
-	        comboCol.FieldName = "Phone"
-	        RadGridView1.Columns.Add(comboCol)
-	
-	        Dim colboCol2 As New GridViewComboBoxColumn("Another ComboBox column")
-	        colboCol2.FieldName = "Another ComboBox column"
-	        colboCol2.ValueMember = "Id"
-	        colboCol2.DisplayMember = "MyString"
-	
-	        Dim list As New BindingList(Of ComboBoxDataSourceObject)()
-	
-	        Dim object1 As New ComboBoxDataSourceObject()
-	        object1.Id = 1
-	        object1.MyString = "First object"
-	        list.Add(object1)
-	
-	        Dim object2 As New ComboBoxDataSourceObject()
-	        object2.Id = 2
-	        object2.MyString = "Second object"
-	        list.Add(object2)
-	
-	        colboCol2.DataSource = list
-	        RadGridView1.Columns.Add(colboCol2)
-	        Me.RadGridView1.DataSource = table
-	    End Sub
-	End Class
-	
-	Public Class ComboBoxDataSourceObject
-	    Private myString_ As String
-	    Public Property MyString() As String
-	        Get
-	            Return myString_
-	        End Get
-	        Set(value As String)
-	            myString_ = value
-	        End Set
-	    End Property
-	
-	    Private m_id As Integer
-	    Public Property Id() As Integer
-	        Get
-	            Return m_id
-	        End Get
-	        Set(value As Integer)
-	            m_id = value
-	        End Set
-	    End Property
-	End Class
-	
-	{{endregion}}
+````C#
+    public partial class GridViewComboBoxColumn2 : Form
+    {
+        public GridViewComboBoxColumn2()
+        {
+            InitializeComponent();
+
+            DataTable table = new DataTable();
+
+            table.Columns.Add("Text", typeof(string));
+            table.Columns.Add("Phone", typeof(string));
+            table.Columns.Add("Another ComboBox column", typeof(int));
+
+            table.Rows.Add("Text 1", "Mobile", 1);
+            table.Rows.Add("Text 2", "Business", 1);
+            table.Rows.Add("Text 3", "Business", 2);
+            table.Rows.Add("Text 4", "Fax", 1);
+
+            this.radGridView1.MasterTemplate.AutoGenerateColumns = false;
+            radGridView1.Columns.Add(new GridViewTextBoxColumn("Text"));
+
+            GridViewComboBoxColumn comboCol = new GridViewComboBoxColumn("Phone");
+            comboCol.DataSource = new String[] { "Mobile", "Business", "Fax" };
+            comboCol.FieldName = "Phone";
+            radGridView1.Columns.Add(comboCol);
+
+            GridViewComboBoxColumn colboCol2 = new GridViewComboBoxColumn("Another ComboBox column");
+            colboCol2.FieldName = "Another ComboBox column";
+            colboCol2.ValueMember = "Id";
+            colboCol2.DisplayMember = "MyString";
+
+            BindingList<ComboBoxDataSourceObject> list = new BindingList<ComboBoxDataSourceObject>();
+
+            ComboBoxDataSourceObject object1 = new ComboBoxDataSourceObject();
+            object1.Id = 1;
+            object1.MyString = "First object";
+            list.Add(object1);
+
+            ComboBoxDataSourceObject object2 = new ComboBoxDataSourceObject();
+            object2.Id = 2;
+            object2.MyString = "Second object";
+            list.Add(object2);
+
+            colboCol2.DataSource = list;
+            radGridView1.Columns.Add(colboCol2);
+            this.radGridView1.DataSource = table;
+        }
+    }
+
+    public class ComboBoxDataSourceObject
+    {
+        private string myString;
+        public string MyString
+        {
+            get { return myString; }
+            set { myString = value; }
+        }
+
+        private int id;
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+    }
+````
+````VB.NET
+Public Class GridViewComboBoxColumn2
+    Public Sub New()
+        InitializeComponent()
+
+        Dim table As New DataTable()
+
+        table.Columns.Add("Text", GetType(String))
+        table.Columns.Add("Phone", GetType(String))
+        table.Columns.Add("Another ComboBox column", GetType(Integer))
+
+        table.Rows.Add("Text 1", "Mobile", 1)
+        table.Rows.Add("Text 2", "Business", 1)
+        table.Rows.Add("Text 3", "Business", 2)
+        table.Rows.Add("Text 4", "Fax", 1)
+
+        Me.RadGridView1.MasterTemplate.AutoGenerateColumns = False
+        RadGridView1.Columns.Add(New GridViewTextBoxColumn("Text"))
+
+        Dim comboCol As New GridViewComboBoxColumn("Phone")
+        comboCol.DataSource = New [String]() {"Mobile", "Business", "Fax"}
+        comboCol.FieldName = "Phone"
+        RadGridView1.Columns.Add(comboCol)
+
+        Dim colboCol2 As New GridViewComboBoxColumn("Another ComboBox column")
+        colboCol2.FieldName = "Another ComboBox column"
+        colboCol2.ValueMember = "Id"
+        colboCol2.DisplayMember = "MyString"
+
+        Dim list As New BindingList(Of ComboBoxDataSourceObject)()
+
+        Dim object1 As New ComboBoxDataSourceObject()
+        object1.Id = 1
+        object1.MyString = "First object"
+        list.Add(object1)
+
+        Dim object2 As New ComboBoxDataSourceObject()
+        object2.Id = 2
+        object2.MyString = "Second object"
+        list.Add(object2)
+
+        colboCol2.DataSource = list
+        RadGridView1.Columns.Add(colboCol2)
+        Me.RadGridView1.DataSource = table
+    End Sub
+End Class
+
+Public Class ComboBoxDataSourceObject
+    Private myString_ As String
+    Public Property MyString() As String
+        Get
+            Return myString_
+        End Get
+        Set(value As String)
+            myString_ = value
+        End Set
+    End Property
+
+    Private m_id As Integer
+    Public Property Id() As Integer
+        Get
+            Return m_id
+        End Get
+        Set(value As Integer)
+            m_id = value
+        End Set
+    End Property
+End Class
+
+'
+````
+
+{{endregion}} 
+
 
 ![gridview-columns-gridviewcomboboxcolumn 003](images/gridview-columns-gridviewcomboboxcolumn003.png)
 
 ##  Customizing DropDownList editors in RadGridView
 
 You have to handle the EditorRequired event. This event is fired every time when an editor needs to be shown.
-      	A sample code demonstrating this technique:
+      	A sample code demonstrating this technique:#_[C#] Customize the DropDownListEditor in GridViewComboBoxColumn_
 
-#### __[C#] Customize the DropDownListEditor in GridViewComboBoxColumn__
-
-{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn3.cs region=customizeDropDownListEditor}}
-	        public GridViewComboBoxColumn3()
-	        {
-	            InitializeComponent();
 	
-	            GridViewComboBoxColumn customerColumn = new GridViewComboBoxColumn();
-	            customerColumn.Name = "CustomerColumn";
-	            customerColumn.HeaderText = "Customer";
-	            customerColumn.DataSource = this.customersBindingSource;
-	            customerColumn.ValueMember = "CustomerID";
-	            customerColumn.DisplayMember = "ContactName";
-	            customerColumn.FieldName = "CustomerID";
-	            customerColumn.Width = 200;
-	            this.radGridView1.Columns.Add(customerColumn);
-	            radGridView1.EditorRequired += new EditorRequiredEventHandler(radGridView1_EditorRequired);
-	        }
-	
-	        MyDropDownListEditor myComboEditor = new MyDropDownListEditor();
-	
-	        void radGridView1_EditorRequired(object sender, EditorRequiredEventArgs e)
-	        {
-	            if (e.EditorType == typeof(RadDropDownListEditor))
-	            {
-	                e.Editor = new MyDropDownListEditor();
-	            }
-	        }
-	
-	        private void GridViewComboBoxColumn3_Load(object sender, EventArgs e)
-	        {
-	            // TODO: This line of code loads data into the 'nwindDataSet.Customers' table. You can move, or remove it, as needed.
-	            this.customersTableAdapter.Fill(this.nwindDataSet.Customers);
-	
-	        }
-	    }
-	
-	    public class MyDropDownListEditor : RadDropDownListEditor
-	    {
-	        protected override RadElement CreateEditorElement()
-	        {
-	            return new MyDropDownListEditorElement();
-	        }
-	    }
-	
-	    public class MyDropDownListEditorElement : RadDropDownListEditorElement
-	    {
-	        protected override void OnLoaded()
-	        {
-	            base.OnLoaded();
-	            this.ListElement.CreatingVisualItem += new CreatingVisualListItemEventHandler(ListElement_CreatingVisualItem);
-	            
-	        }
-	
-	        private void ListElement_CreatingVisualItem(object sender, CreatingVisualListItemEventArgs args)
-	        {
-	            // add button element
-	            RadListVisualItem visualItem = new RadListVisualItem();
-	            visualItem.Padding = new Padding(12, 0, 0, 0);
-	            visualItem.NumberOfColors = 1;
-	            visualItem.BackColor = Color.Yellow;
-	
-	            RadButtonElement button = new RadButtonElement();
-	            button.MinSize = new Size(12, 12);
-	            button.MaxSize = button.MinSize;
-	            button.Text = "x";
-	            button.TextAlignment = ContentAlignment.MiddleLeft;
-	            button.Click += new EventHandler(button_Click);
-	            visualItem.Children.Add(button);
-	            args.VisualItem = visualItem;
-	            
-	        }
-	
-	        private void button_Click(object sender, EventArgs e)
-	        {
-	            BindingSource source = (BindingSource)this.DataSource;
-	            source.Remove(source.Current);
-	            this.SelectedIndex = -1;
-	        }
-	    }
-	{{endregion}}
 
 
 
-#### __[VB.NET] Customize the DropDownListEditor in GridViewComboBoxColumn__
+{{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn3.cs region=customizeDropDownListEditor}} 
+{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn3.vb region=customizeDropDownListEditor}} 
 
-{{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn3.vb region=customizeDropDownListEditor}}
-	Public Class GridViewComboBoxColumn3
-	    Public Sub New()
-	        InitializeComponent()
-	
-	        Dim customerColumn As GridViewComboBoxColumn = New GridViewComboBoxColumn
-	        customerColumn.Name = "CustomerColumn"
-	        customerColumn.HeaderText = "Customer"
-	        customerColumn.DataSource = Me.CustomersBindingSource
-	        customerColumn.ValueMember = "CustomerID"
-	        customerColumn.DisplayMember = "ContactName"
-	        customerColumn.FieldName = "CustomerID"
-	        customerColumn.Width = 200
-	        Me.RadGridView1.Columns.Add(customerColumn)
-	
-	    End Sub
-	
-	    Private Sub GridViewComboBoxColumn3_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-	        'TODO: This line of code loads data into the 'NwindDataSet.Customers' table. You can move, or remove it, as needed.
-	        Me.CustomersTableAdapter.Fill(Me.NwindDataSet.Customers)
-	    End Sub
-	
-	
-	
-	    Private Sub RadGridView1_EditorRequired(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.EditorRequiredEventArgs) Handles RadGridView1.EditorRequired
-	        If e.EditorType Is GetType(RadDropDownListEditor) Then
-	            e.Editor = New MyDropDownListEditor()
-	        End If
-	    End Sub
-	End Class
-	
-	Public Class MyDropDownListEditor
-	    Inherits RadDropDownListEditor
-	    Protected Overrides Function CreateEditorElement() As RadElement
-	        Return New MyDropDownListEditorElement()
-	    End Function
-	End Class
-	
-	Public Class MyDropDownListEditorElement
-	    Inherits RadDropDownListEditorElement
-	    Protected Overrides Sub OnLoaded()
-	        MyBase.OnLoaded()
-	        AddHandler Me.ListElement.CreatingVisualItem, AddressOf ListElement_CreatingVisualItem
-	    End Sub
-	
-	    Private Sub ListElement_CreatingVisualItem(ByVal sender As Object, ByVal args As CreatingVisualListItemEventArgs)
-	        ' add button element
-	        Dim visualItem As New RadListVisualItem()
-	        visualItem.Padding = New Padding(12, 0, 0, 0)
-	        visualItem.NumberOfColors = 1
-	        visualItem.BackColor = Color.Yellow
-	
-	        Dim button As New RadButtonElement()
-	        button.MinSize = New Size(12, 12)
-	        button.MaxSize = button.MinSize
-	        button.Text = "x"
-	        button.TextAlignment = ContentAlignment.MiddleLeft
-	        AddHandler button.Click, AddressOf button_Click
-	        visualItem.Children.Add(button)
-	        args.VisualItem = visualItem
-	
-	    End Sub
-	
-	    Private Sub button_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        ' Remove the item from the DataSource collection
-	        Dim source = DirectCast(Me.DataSource, BindingSource)
-	        source.Remove(source.Current)
-	        Me.SelectedIndex = -1
-	    End Sub
-	End Class
-	{{endregion}}
+````C#
+        public GridViewComboBoxColumn3()
+        {
+            InitializeComponent();
+
+            GridViewComboBoxColumn customerColumn = new GridViewComboBoxColumn();
+            customerColumn.Name = "CustomerColumn";
+            customerColumn.HeaderText = "Customer";
+            customerColumn.DataSource = this.customersBindingSource;
+            customerColumn.ValueMember = "CustomerID";
+            customerColumn.DisplayMember = "ContactName";
+            customerColumn.FieldName = "CustomerID";
+            customerColumn.Width = 200;
+            this.radGridView1.Columns.Add(customerColumn);
+            radGridView1.EditorRequired += new EditorRequiredEventHandler(radGridView1_EditorRequired);
+        }
+
+        MyDropDownListEditor myComboEditor = new MyDropDownListEditor();
+
+        void radGridView1_EditorRequired(object sender, EditorRequiredEventArgs e)
+        {
+            if (e.EditorType == typeof(RadDropDownListEditor))
+            {
+                e.Editor = new MyDropDownListEditor();
+            }
+        }
+
+        private void GridViewComboBoxColumn3_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'nwindDataSet.Customers' table. You can move, or remove it, as needed.
+            this.customersTableAdapter.Fill(this.nwindDataSet.Customers);
+
+        }
+    }
+
+    public class MyDropDownListEditor : RadDropDownListEditor
+    {
+        protected override RadElement CreateEditorElement()
+        {
+            return new MyDropDownListEditorElement();
+        }
+    }
+
+    public class MyDropDownListEditorElement : RadDropDownListEditorElement
+    {
+        protected override void OnLoaded()
+        {
+            base.OnLoaded();
+            this.ListElement.CreatingVisualItem += new CreatingVisualListItemEventHandler(ListElement_CreatingVisualItem);
+            
+        }
+
+        private void ListElement_CreatingVisualItem(object sender, CreatingVisualListItemEventArgs args)
+        {
+            // add button element
+            RadListVisualItem visualItem = new RadListVisualItem();
+            visualItem.Padding = new Padding(12, 0, 0, 0);
+            visualItem.NumberOfColors = 1;
+            visualItem.BackColor = Color.Yellow;
+
+            RadButtonElement button = new RadButtonElement();
+            button.MinSize = new Size(12, 12);
+            button.MaxSize = button.MinSize;
+            button.Text = "x";
+            button.TextAlignment = ContentAlignment.MiddleLeft;
+            button.Click += new EventHandler(button_Click);
+            visualItem.Children.Add(button);
+            args.VisualItem = visualItem;
+            
+        }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            BindingSource source = (BindingSource)this.DataSource;
+            source.Remove(source.Current);
+            this.SelectedIndex = -1;
+        }
+    }
+````
+````VB.NET
+Public Class GridViewComboBoxColumn3
+    Public Sub New()
+        InitializeComponent()
+
+        Dim customerColumn As GridViewComboBoxColumn = New GridViewComboBoxColumn
+        customerColumn.Name = "CustomerColumn"
+        customerColumn.HeaderText = "Customer"
+        customerColumn.DataSource = Me.CustomersBindingSource
+        customerColumn.ValueMember = "CustomerID"
+        customerColumn.DisplayMember = "ContactName"
+        customerColumn.FieldName = "CustomerID"
+        customerColumn.Width = 200
+        Me.RadGridView1.Columns.Add(customerColumn)
+
+    End Sub
+
+    Private Sub GridViewComboBoxColumn3_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'NwindDataSet.Customers' table. You can move, or remove it, as needed.
+        Me.CustomersTableAdapter.Fill(Me.NwindDataSet.Customers)
+    End Sub
+
+
+
+    Private Sub RadGridView1_EditorRequired(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.EditorRequiredEventArgs) Handles RadGridView1.EditorRequired
+        If e.EditorType Is GetType(RadDropDownListEditor) Then
+            e.Editor = New MyDropDownListEditor()
+        End If
+    End Sub
+End Class
+
+Public Class MyDropDownListEditor
+    Inherits RadDropDownListEditor
+    Protected Overrides Function CreateEditorElement() As RadElement
+        Return New MyDropDownListEditorElement()
+    End Function
+End Class
+
+Public Class MyDropDownListEditorElement
+    Inherits RadDropDownListEditorElement
+    Protected Overrides Sub OnLoaded()
+        MyBase.OnLoaded()
+        AddHandler Me.ListElement.CreatingVisualItem, AddressOf ListElement_CreatingVisualItem
+    End Sub
+
+    Private Sub ListElement_CreatingVisualItem(ByVal sender As Object, ByVal args As CreatingVisualListItemEventArgs)
+        ' add button element
+        Dim visualItem As New RadListVisualItem()
+        visualItem.Padding = New Padding(12, 0, 0, 0)
+        visualItem.NumberOfColors = 1
+        visualItem.BackColor = Color.Yellow
+
+        Dim button As New RadButtonElement()
+        button.MinSize = New Size(12, 12)
+        button.MaxSize = button.MinSize
+        button.Text = "x"
+        button.TextAlignment = ContentAlignment.MiddleLeft
+        AddHandler button.Click, AddressOf button_Click
+        visualItem.Children.Add(button)
+        args.VisualItem = visualItem
+
+    End Sub
+
+    Private Sub button_Click(ByVal sender As Object, ByVal e As EventArgs)
+        ' Remove the item from the DataSource collection
+        Dim source = DirectCast(Me.DataSource, BindingSource)
+        source.Remove(source.Current)
+        Me.SelectedIndex = -1
+    End Sub
+End Class
+'
+````
+
+{{endregion}} 
+
 
 ![gridview-columns-gridviewcomboboxcolumn 004](images/gridview-columns-gridviewcomboboxcolumn004.png)

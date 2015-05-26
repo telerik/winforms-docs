@@ -1,8 +1,8 @@
 ---
 title: Performance Considerations
-page_title: Performance Considerations
+page_title: Performance Considerations | UI for WinForms Documentation
 description: Performance Considerations
-slug: carousel-using-radcarousel-performance-considerations
+slug: winforms/carousel/using-radcarousel/performance-considerations
 tags: performance,considerations
 published: True
 position: 4

@@ -1,8 +1,8 @@
 ---
 title: Working with Needle Indicator
-page_title: Working with Needle Indicator
+page_title: Working with Needle Indicator | UI for WinForms Documentation
 description: Working with Needle Indicator
-slug: lineargauge-elements-working-with-needle-indicator
+slug: winforms/gauges/lineargauge/elements/working-with-needle-indicator
 tags: working,with,needle,indicator
 published: True
 position: 4

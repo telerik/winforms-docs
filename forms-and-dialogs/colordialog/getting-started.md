@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: forms-and-dialogs-colordialog-getting-started
+slug: winforms/forms-and-dialogs/colordialog/getting-started
 tags: getting,started
 published: True
 position: 1
@@ -44,28 +44,32 @@ __false__.
 Change the __WebTabHeading__ property to read "Named Web
 Colors".
 
-Get the SelectedColor or SelectedHlsColor, check the returned DialogResult :
+Get the SelectedColor or SelectedHlsColor, check the returned DialogResult :#_[C#] Check the selected values in RadColorDialog_
 
-#### __[C#] Check the selected values in RadColorDialog__
-
-{{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=getTheSelectedColors}}
-	            if (radColorDialog1.ShowDialog() == DialogResult.OK)
-	            {
-	                Color color = radColorDialog1.SelectedColor;
-	                HslColor hslColor = radColorDialog1.SelectedHslColor;
-	            }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Check the selected values in RadColorDialog__
+{{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=getTheSelectedColors}} 
+{{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=getTheSelectedColors}} 
 
-{{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=getTheSelectedColors}}
-	        If RadColorDialog1.ShowDialog() = DialogResult.OK Then
-	            Dim color As Color = RadColorDialog1.SelectedColor
-	            Dim hslColor As Telerik.WinControls.HslColor = RadColorDialog1.SelectedHslColor
-	        End If
-	{{endregion}}
+````C#
+            if (radColorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Color color = radColorDialog1.SelectedColor;
+                HslColor hslColor = radColorDialog1.SelectedHslColor;
+            }
+````
+````VB.NET
+        If RadColorDialog1.ShowDialog() = DialogResult.OK Then
+            Dim color As Color = RadColorDialog1.SelectedColor
+            Dim hslColor As Telerik.WinControls.HslColor = RadColorDialog1.SelectedHslColor
+        End If
+        '
+````
+
+{{endregion}} 
+
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: Design-Time
-page_title: Design-Time
+page_title: Design-Time | UI for WinForms Documentation
 description: Design-Time
-slug: commandbar-design-time
+slug: winforms/commandbar/design-time
 tags: design-time
 published: True
 position: 1

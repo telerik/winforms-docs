@@ -1,8 +1,8 @@
 ---
 title: Backward Compatibility
-page_title: Backward Compatibility
+page_title: Backward Compatibility | UI for WinForms Documentation
 description: Backward Compatibility
-slug: pdfprocessing-backward-compatibility
+slug: winforms/pdfprocessing/changes-and-backward-compatibility/backward-compatibility
 tags: backward,compatibility
 published: True
 position: 1
@@ -37,7 +37,7 @@ Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties::TextBlockHeight an
 
 ### What to do now
 
-You can specify the block size when [ Measuring or Drawing the block]({%slug radpdfprocessing-editing-block%})
+You can specify the block size when [ Measuring or Drawing the block]({%slug winforms/pdfprocessing/editing/block%})
 
 ### Changed
 
@@ -46,7 +46,7 @@ Telerik.Windows.Documents.Fixed.Model.Editing.FixedContentEditor::BeginText() an
 
 ### What to do now
 
-Use [Block]({%slug radpdfprocessing-editing-block%}) class to create blocks of text and other flowing content.
+Use [Block]({%slug winforms/pdfprocessing/editing/block%}) class to create blocks of text and other flowing content.
             
 
 ### Changed

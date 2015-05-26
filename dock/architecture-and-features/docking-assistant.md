@@ -1,8 +1,8 @@
 ---
 title: Docking Assistant
-page_title: Docking Assistant
+page_title: Docking Assistant | UI for WinForms Documentation
 description: Docking Assistant
-slug: dock-architecture-and-features-docking-assistant
+slug: winforms/dock/architecture-and-features/docking-assistant
 tags: docking,assistant
 published: True
 position: 2
@@ -27,7 +27,10 @@ To use the Docking Assistant, use the mouse to select the title bar of the sourc
 In addition to the drop target icons,____the docking assistant displays docking hints. A docking hint is a visual preview of what space will be occupied by a __DockWindow__. Drop hints are enabled when you are in the process of moving the __DockWindow__ and while the mouse pointer is positioned over one of the drop targets. In the example below, the drop hint indicates that "ToolWindow4" will be situated to bottom of "ToolWindow5" and to the left of "ToolWindow3". After the drop is made, the __RadDock__ automatically resizes both windows' containers to fill the available space.
 
 
-<table><tr><td>![dock-architecture-and-features-docking-assistant 001](images/dock-architecture-and-features-docking-assistant001.png)</td><td>![dock-architecture-and-features-docking-assistant 002](images/dock-architecture-and-features-docking-assistant002.png)</td></tr></table>
+
+
+
+|![dock-architecture-and-features-docking-assistant 001](images/dock-architecture-and-features-docking-assistant001.png)|![dock-architecture-and-features-docking-assistant 002](images/dock-architecture-and-features-docking-assistant002.png)|
 
 
 
@@ -40,14 +43,20 @@ To place a __ToolWindow__ as a tab, use the drop target icon at the center of th
 In the example below, "ToolWindow4" is dropped into the space occupied by "ToolWindow5". After the drop, tabs for both "ToolWindow5" and "ToolWindow4" are displayed.
 
 
-<table><tr><td>![dock-architecture-and-features-docking-assistant 003](images/dock-architecture-and-features-docking-assistant003.png)</td><td>![dock-architecture-and-features-docking-assistant 004](images/dock-architecture-and-features-docking-assistant004.png)</td></tr></table>
+
+
+
+|![dock-architecture-and-features-docking-assistant 003](images/dock-architecture-and-features-docking-assistant003.png)|![dock-architecture-and-features-docking-assistant 004](images/dock-architecture-and-features-docking-assistant004.png)|
 
 
 
 To un-tab a __ToolWindow__, drag the __ToolWindow__ tab into a docking container using the docking assistant. In the screenshots below, the tab for "ToolWindow4" is dragged on to the docking assistant inner compass, indicating that it will be dropped to the left of "ToolWindow3".
 
 
-<table><tr><td>![dock-architecture-and-features-docking-assistant 005](images/dock-architecture-and-features-docking-assistant005.png)</td><td>![dock-architecture-and-features-docking-assistant 006](images/dock-architecture-and-features-docking-assistant006.png)</td></tr></table>
+
+
+
+|![dock-architecture-and-features-docking-assistant 005](images/dock-architecture-and-features-docking-assistant005.png)|![dock-architecture-and-features-docking-assistant 006](images/dock-architecture-and-features-docking-assistant006.png)|
 
 
 

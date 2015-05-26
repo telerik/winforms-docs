@@ -1,8 +1,8 @@
 ---
 title: Using custom themes
-page_title: Using custom themes
+page_title: Using custom themes | UI for WinForms Documentation
 description: Using custom themes
-slug: themes-using-custom-themes
+slug: winforms/themes/using-custom-themes
 tags: using,custom,themes
 published: True
 position: 3
@@ -35,111 +35,131 @@ When you choose the Save option, the Visual Style Builder automatically detects 
 ThemeResolutionService exposes two methods that allow you to load a theme package:
 
 * LoadPackageResource. This method loads a theme package file that is contained in the project as an [EmbeddedResource](http://msdn.microsoft.com/en-us/library/0c6xyb66(VS.80).aspx). This is the preferable method for loading a theme package since the resource path to the package is not changed when the application is deployed. The path construction is *DefaultProjectNamespace.ThemeFolder.ThemePackageFile*. The *ThemeFolder* part should only be used if the package is contained in a folder under the main project directory and if the project programming language is C#. In VB.NET project you do not need to include *ThemeFolder* part even if the package file is contained in a folder.
-            
+            #_[C#] Loading package resource_
 
-#### __[C#] Loading package resource__
-
-{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=LoadPackageResource}}
-	            ThemeResolutionService.LoadPackageResource("SamplesCS.CustomTheme.tssp");
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Loading package resource__
+{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=LoadPackageResource}} 
+{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=LoadPackageResource}} 
 
-{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=LoadPackageResource}}
-	        ThemeResolutionService.LoadPackageResource("SamplesVB.CustomTheme.tssp")
-	{{endregion}}
+````C#
+            ThemeResolutionService.LoadPackageResource("SamplesCS.CustomTheme.tssp");
+````
+````VB.NET
+        ThemeResolutionService.LoadPackageResource("SamplesVB.CustomTheme.tssp")
+        '
+````
 
-
-
-* LoadPackageFile. This method loads a file from a specified directory on the system. Depending on how the directory is defined (full or relative), the path to the package may change when the application is deployed on another machine.
-
-#### __[C#] Loading package file__
-
-{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=LoadPackageFile}}
-	            ThemeResolutionService.LoadPackageFile(@"C:\CustomTheme.tssp");
-	{{endregion}}
-
-
-
-#### __[VB.NET] Loading package file__
-
-{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=LoadPackageFile}}
-	        ThemeResolutionService.LoadPackageFile("C:\CustomTheme.tssp")
-	{{endregion}}
+{{endregion}} 
 
 
 
 
+* LoadPackageFile. This method loads a file from a specified directory on the system. Depending on how the directory is defined (full or relative), the path to the package may change when the application is deployed on another machine.#_[C#] Loading package file_
+
+	
 
 
 
-## Applying a theme to an entire application
+{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=LoadPackageFile}} 
+{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=LoadPackageFile}} 
 
-#### __[C#] __
+````C#
+            ThemeResolutionService.LoadPackageFile(@"C:\CustomTheme.tssp");
+````
+````VB.NET
+        ThemeResolutionService.LoadPackageFile("C:\CustomTheme.tssp")
+        '
+````
 
-{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=setting a theme for the whole application}}
-	            ThemeResolutionService.ApplicationThemeName = "CustomTheme";
-	{{endregion}}
-
-
-
-#### __[VB.NET] __
-
-{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=setting a theme for the whole application}}
-	        ThemeResolutionService.ApplicationThemeName = "CustomTheme"
-	{{endregion}}
+{{endregion}} 
 
 
 
-## Applying a theme to single control
-
-#### __[C#] __
-
-{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=setting a theme to single control instance}}
-	            radButton1.ThemeName = "CustomTheme";
-	{{endregion}}
 
 
 
-#### __[VB.NET] __
-
-{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=setting a theme to single control instance}}
-	        radButton1.ThemeName = "CustomTheme"
-	{{endregion}}
 
 
+## Applying a theme to an entire application#_[C#] _
 
-## Applying a theme to all instances of a specific control in a form
-
-#### __[C#] __
-
-{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=setting a theme to all controls from the same kind in a form}}
-	            foreach (Control control in this.Controls)
-	            {
-	                RadButton button = control as RadButton;
-	                if (button != null)
-	                {
-	                    button.ThemeName = "CustomTheme";
-	                }
-	            }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=setting a theme for the whole application}} 
+{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=setting a theme for the whole application}} 
 
-{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=setting a theme to all controls from the same kind in a form}}
-	        For Each button As RadButton In Me.Controls
-	            If button IsNot Nothing Then
-	                button.ThemeName = "CustomTheme"
-	            End If
-	        Next
-	{{endregion}}
+````C#
+            ThemeResolutionService.ApplicationThemeName = "CustomTheme";
+````
+````VB.NET
+        ThemeResolutionService.ApplicationThemeName = "CustomTheme"
+        '
+````
+
+{{endregion}} 
+
+
+
+
+## Applying a theme to single control#_[C#] _
+
+	
+
+
+
+{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=setting a theme to single control instance}} 
+{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=setting a theme to single control instance}} 
+
+````C#
+            radButton1.ThemeName = "CustomTheme";
+````
+````VB.NET
+        radButton1.ThemeName = "CustomTheme"
+        '
+````
+
+{{endregion}} 
+
+
+
+
+## Applying a theme to all instances of a specific control in a form#_[C#] _
+
+	
+
+
+
+{{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=setting a theme to all controls from the same kind in a form}} 
+{{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=setting a theme to all controls from the same kind in a form}} 
+
+````C#
+            foreach (Control control in this.Controls)
+            {
+                RadButton button = control as RadButton;
+                if (button != null)
+                {
+                    button.ThemeName = "CustomTheme";
+                }
+            }
+````
+````VB.NET
+        For Each button As RadButton In Me.Controls
+            If button IsNot Nothing Then
+                button.ThemeName = "CustomTheme"
+            End If
+        Next
+        '
+````
+
+{{endregion}} 
+
 
 
 
 # See Also
 
- * [Saving and Loading Theme Files]({%slug tools-visual-style-builder-working-with-visual-style-builder-saving-and-loading-theme-files%})
+ * [Saving and Loading Theme Files]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files%})

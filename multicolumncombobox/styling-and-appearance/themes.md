@@ -1,8 +1,8 @@
 ---
 title: Themes
-page_title: Themes
+page_title: Themes | UI for WinForms Documentation
 description: Themes
-slug: multicolumncombobox-styling-and-appearance-themes
+slug: winforms/multicolumncombobox/styling-and-appearance/themes
 tags: themes
 published: True
 position: 0
@@ -35,6 +35,6 @@ Since __RadMultiColumnComboBox__ is a compound control, it uses the theming of _
 
 # See Also
 
- * [Load Predfined Themes]({%slug tools-visual-style-builder-working-with-visual-style-builder-loading-predefined-themes%})
+ * [Load Predfined Themes]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%})
 
- * [Using Custom Themes]({%slug themes-using-custom-themes%})
+ * [Using Custom Themes]({%slug winforms/themes/using-custom-themes%})

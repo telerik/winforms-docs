@@ -1,8 +1,8 @@
 ---
 title: Structure
-page_title: Structure
+page_title: Structure | UI for WinForms Documentation
 description: Structure
-slug: bulletgraph-structure
+slug: winforms/gauges/bulletgraph/structure
 tags: structure
 published: True
 position: 1

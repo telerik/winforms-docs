@@ -1,8 +1,8 @@
 ---
 title: Keyboard Navigation
-page_title: Keyboard Navigation
+page_title: Keyboard Navigation | UI for WinForms Documentation
 description: Keyboard Navigation
-slug: menus-menu-usability-keyboard-navigation
+slug: winforms/menus/menu/usability/keyboard-navigation
 tags: keyboard,navigation
 published: True
 position: 0
@@ -22,22 +22,30 @@ Accelerators are a fast way to associate a keyboard shortcut to a menu item, for
 
 ## Mnemonics 
 
-You can assign mnemonics to menu items. For example, you can use the __N__key to invoke the command associated to the __New__menu item. To implement that you need to modify the __Text__property of the *New menu item *by preceding the character __N__ with the symbol __&__:
+You can assign mnemonics to menu items. For example, you can use the __N__key to invoke the command associated to the __New__menu item. To implement that you need to modify the __Text__property of the *New menu item *by preceding the character __N__ with the symbol __&__:#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=mnemonics}}
-	            radMenuItem1.Text = "&New";
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=mnemonics}} 
+{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=mnemonics}} 
 
-{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=mnemonics}}
-	        radMenuItem1.Text = "&New"
-	{{endregion}}
+````C#
+            radMenuItem1.Text = "&New";
+````
+````VB.NET
+        radMenuItem1.Text = "&New"
+        '
+````
 
+{{endregion}} 
+
+
+
+
+>note Mnemonics and accelerators are different features. For example, you need the accelerator ALT+F to open the file menu and the mnemonic N to invoke the event handler associated with the *New* menu item.
+>
 
 
 ##  F10

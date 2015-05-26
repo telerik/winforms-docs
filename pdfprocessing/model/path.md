@@ -1,8 +1,8 @@
 ---
 title: Path
-page_title: Path
+page_title: Path | UI for WinForms Documentation
 description: Path
-slug: pdfprocessing-model-path
+slug: winforms/pdfprocessing/model/path
 tags: path
 published: True
 position: 5
@@ -12,7 +12,7 @@ position: 5
 
 
 
-__Path__ is a content element that represents series of connected lines and curves. The shape in the path is specified by its [Geometry]({%slug pdfprocessing-concepts-geometry%}) property.
+__Path__ is a content element that represents series of connected lines and curves. The shape in the path is specified by its [Geometry]({%slug winforms/pdfprocessing/concepts/geometry%}) property.
       
 
 * [Inserting a Path](#inserting-a-path)
@@ -21,55 +21,64 @@ __Path__ is a content element that represents series of connected lines and curv
 
 ## Inserting a Path
 
-__Path__ is a content element that is designed to be added in the __Content__ collection of an __IContainerElement__ such [RadFixedPage]({%slug pdfprocessing-model-radfixedpage%}). There are several approaches which you can be adopt to achieve that.
+__Path__ is a content element that is designed to be added in the __Content__ collection of an __IContainerElement__ such [RadFixedPage]({%slug winforms/pdfprocessing/model/radfixedpage%}). There are several approaches which you can be adopt to achieve that.
         
 
 __Example 1__ shows how you can create a Path, using a predefined Geometry to it and add it in a container.
-        
+        #_[C#] Example 1: Create Path and add it to container._
 
-#### __[C#] Example 1: Create Path and add it to container.__
-
-{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelPath.cs region=radpdfprocessing-model-path_0}}
-	            Path path = new Path();
-	            path.Geometry = geometry;
-	            container.Content.Add(path);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 1: Create Path and add it to container.__
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelPath.cs region=radpdfprocessing-model-path_0}} 
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelPath.vb region=radpdfprocessing-model-path_0}} 
 
-{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelPath.vb region=radpdfprocessing-model-path_0}}
-	        Dim path As Path = New Path()
-	        path.Geometry = geometry
-	        container.Content.Add(path)
-	{{endregion}}
+````C#
+            Path path = new Path();
+            path.Geometry = geometry;
+            container.Content.Add(path);
+````
+````VB.NET
+        Dim path As Path = New Path()
+        path.Geometry = geometry
+        container.Content.Add(path)
+        '
+````
+
+{{endregion}} 
+
 
 
 
 __Example 2__ demonstrates how to use one of the factory methods of the __ContentElementCollection__ that creates a new path and inserts it into the document.
-        
+        #_[C#] Example 2: Add Path to container._
 
-#### __[C#] Example 2: Add Path to container.__
-
-{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelPath.cs region=radpdfprocessing-model-path_1}}
-	            Path path = container.Content.AddPath();
-	            path.Geometry = geometry;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 2: Add Path to container.__
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelPath.cs region=radpdfprocessing-model-path_1}} 
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelPath.vb region=radpdfprocessing-model-path_1}} 
 
-{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelPath.vb region=radpdfprocessing-model-path_1}}
-	        Dim path As Path = container.Content.AddPath()
-	        path.Geometry = geometry
-	{{endregion}}
+````C#
+            Path path = container.Content.AddPath();
+            path.Geometry = geometry;
+````
+````VB.NET
+        Dim path As Path = container.Content.AddPath()
+        path.Geometry = geometry
+        '
+````
+
+{{endregion}} 
 
 
 
->There are other methods that allow adding a path to a document. They can be taken advantage of when using [FixedContentEditor]({%slug pdfprocessing-editing-fixedcontenteditor%}).
-          
+
+>note There are other methods that allow adding a path to a document. They can be taken advantage of when using[FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}).
+>
+
 
 ## Modifying a Path
 
@@ -124,13 +133,13 @@ You can modify a __Path__ element using the properties the class exposes. The pr
 * __MiterLimit__: The limit of the thickness of the join on a mitered corner.
             
 
-* __Geometry__: The shape to be drawn. More information about geometries is available [here]({%slug pdfprocessing-concepts-geometry%}).
+* __Geometry__: The shape to be drawn. More information about geometries is available [here]({%slug winforms/pdfprocessing/concepts/geometry%}).
             
 
 # See Also
 
- * [Geometry]({%slug pdfprocessing-concepts-geometry%})
+ * [Geometry]({%slug winforms/pdfprocessing/concepts/geometry%})
 
- * [RadFixedPage]({%slug pdfprocessing-model-radfixedpage%})
+ * [RadFixedPage]({%slug winforms/pdfprocessing/model/radfixedpage%})
 
- * [FixedContentEditor]({%slug pdfprocessing-editing-fixedcontenteditor%})
+ * [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%})

@@ -1,8 +1,8 @@
 ---
 title: RadTextBoxControl vs RadTextBox
-page_title: RadTextBoxControl vs RadTextBox
+page_title: RadTextBoxControl vs RadTextBox | UI for WinForms Documentation
 description: RadTextBoxControl vs RadTextBox
-slug: editors-textboxcontrol-radtextboxcontrol-vs-radtextbox
+slug: winforms/editors/textboxcontrol/radtextboxcontrol-vs-radtextbox
 tags: radtextboxcontrol,vs,radtextbox
 published: True
 position: 0
@@ -13,7 +13,7 @@ position: 0
 
 
 This article will demonstrate the difference between
-        [RadTextBox]({%slug editors-textbox-overview%}) and RadTextBoxControl.
+        [RadTextBox]({%slug winforms/editors/textbox%}) and RadTextBoxControl.
       
 
 ## 
@@ -25,60 +25,20 @@ The main and most important difference between RadTextBox and RadTextBoxControl 
           clipping, higher memory usage, slower painting, etc.
           Follows a comparison table with the different features between these controls.
         
-<table><th><tr><td>
 
-RadTextBox</td><td>
 
-RadTextBoxControl</td></tr></th><tr><td>
-
-DefaultText</td><td>
-
-DefaultText</td></tr><tr><td>
-
-TextChanging</td><td>
-
-TextChanging</td></tr><tr><td>
-
-Only the borders can be themed</td><td>
-
-Fully themable</td></tr><tr><td>
-
-IME support</td><td>
-
-IME support</td></tr><tr><td>
-
-RTL support</td><td>
-
--</td></tr><tr><td>
-
--</td><td>
-
-[Easy customizations and enhancements]({%slug editors-textboxcontrol-creating-custom-blocks%})</td></tr><tr><td>
-
--</td><td>
-
-[TextBlock formatting and replacement]({%slug editors-textboxcontrol-formatting-blocks%})</td></tr><tr><td>
-
--</td><td>
-
-Localizable context menu</td></tr><tr><td>
-
--</td><td>
-
-Supports transparency, image or gradient as background</td></tr><tr><td>
-
--</td><td>
-
-Lightweight as it does not host control in it</td></tr><tr><td>
-
--</td><td>
-
-Lightweight as it does not host control in it</td></tr><tr><td>
-
--</td><td>
-
-Flexible and intuitive API</td></tr><tr><td>
-
--</td><td>
-
-AutoComplete with data binding</td></tr></table>
+| RadTextBox | RadTextBoxControl |
+| ------ | ------ |
+|DefaultText|DefaultText|
+|TextChanging|TextChanging|
+|Only the borders can be themed|Fully themable|
+|IME support|IME support|
+|RTL support|-|
+|-|[Easy customizations and enhancements]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})|
+|-|[TextBlock formatting and replacement]({%slug winforms/editors/textboxcontrol/formatting-blocks%})|
+|-|Localizable context menu|
+|-|Supports transparency, image or gradient as background|
+|-|Lightweight as it does not host control in it|
+|-|Lightweight as it does not host control in it|
+|-|Flexible and intuitive API|
+|-|AutoComplete with data binding|

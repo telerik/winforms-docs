@@ -1,8 +1,8 @@
 ---
 title: Selected rows and Current row
-page_title: Selected rows and Current row
+page_title: Selected rows and Current row | UI for WinForms Documentation
 description: Selected rows and Current row
-slug: gridview-rows-selected-rows-and-current-row
+slug: winforms/gridview/rows/selected-rows-and-current-row
 tags: selected,rows,and,current,row
 published: True
 position: 7
@@ -14,39 +14,47 @@ position: 7
 
 ## IsSelected
 
-The property __IsSelected__determines whether a row is selected. For example, to select a row programmatically use the following code snippet:  
+The property __IsSelected__determines whether a row is selected. For example, to select a row programmatically use the following code snippet:  #_[C#] Selecting a row_
 
-#### __[C#] Selecting a row__
-
-{{source=..\SamplesCS\GridView\Rows\SelectedRowAndCurrentRow.cs region=selectingARow}}
-	            rowToSelect.IsSelected = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Selecting a row__
+{{source=..\SamplesCS\GridView\Rows\SelectedRowAndCurrentRow.cs region=selectingARow}} 
+{{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=selectingARow}} 
 
-{{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=selectingARow}}
-	        rowToSelect.IsSelected = True
-	{{endregion}}
+````C#
+            rowToSelect.IsSelected = true;
+````
+````VB.NET
+        rowToSelect.IsSelected = True
+        '
+````
 
-
-
-All *currently* selected rows are included in the __SelectedRows__ collection. If you clear this collection and send an update message to RadGridView, this will essentially unselect all rows:
-
-#### __[C#] Clearing the selected rows__
-
-{{source=..\SamplesCS\GridView\Rows\SelectedRowAndCurrentRow.cs region=unselectAllRows}}
-	            radGridView1.ClearSelection();
-	{{endregion}}
+{{endregion}} 
 
 
 
-#### __[VB.NET] Clearing the selected rows__
 
-{{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=unselectAllRows}}
-	        Me.RadGridView1.ClearSelection()
-	{{endregion}}
+All *currently* selected rows are included in the __SelectedRows__ collection. If you clear this collection and send an update message to RadGridView, this will essentially unselect all rows:#_[C#] Clearing the selected rows_
+
+	
+
+
+
+{{source=..\SamplesCS\GridView\Rows\SelectedRowAndCurrentRow.cs region=unselectAllRows}} 
+{{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=unselectAllRows}} 
+
+````C#
+            radGridView1.ClearSelection();
+````
+````VB.NET
+        Me.RadGridView1.ClearSelection()
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -56,21 +64,25 @@ The property __IsCurrent__determines which row is the current one. There can be 
 
 Most themes visualizes it in a similar way to the way selected rows are visualized although technically IsCurrent and IsSelected are independent of one another. __IsCurrent__functionality is related to the keyboard support.
 
-Use the following code snippet to remove the current row:
+Use the following code snippet to remove the current row:#_[C#] Clearing the current row_
 
-#### __[C#] Clearing the current row__
-
-{{source=..\SamplesCS\GridView\Rows\SelectedRowAndCurrentRow.cs region=currentRow}}
-	            this.radGridView1.CurrentRow = null;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Clearing the current row__
+{{source=..\SamplesCS\GridView\Rows\SelectedRowAndCurrentRow.cs region=currentRow}} 
+{{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=currentRow}} 
 
-{{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=currentRow}}
-	        Me.RadGridView1.CurrentRow = Nothing
-	{{endregion}}
+````C#
+            this.radGridView1.CurrentRow = null;
+````
+````VB.NET
+        Me.RadGridView1.CurrentRow = Nothing
+        '
+````
+
+{{endregion}} 
+
 
 
 

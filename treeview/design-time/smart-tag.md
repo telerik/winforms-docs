@@ -1,8 +1,8 @@
 ---
 title: Smart Tag
-page_title: Smart Tag
+page_title: Smart Tag | UI for WinForms Documentation
 description: Smart Tag
-slug: treeview-design-time-smart-tag
+slug: winforms/treeview/design-time/smart-tag
 tags: smart,tag
 published: True
 position: 0
@@ -26,6 +26,6 @@ The Smart Tag for RadTreeView lets you quickly access common tasks involved with
 
 * __Search__: Search the Telerik site for a given string.
 
-* __Open__[Property Builder]({%slug treeview-design-time-property-builder%}): Use the Property Builder to quickly create and arrange node structure and appearance.
+* __Open__[Property Builder]({%slug winforms/treeview/design-time/property-builder%}): Use the Property Builder to quickly create and arrange node structure and appearance.
 
 * __Dock in parent container__: Docks RadTreeView into the parent container.

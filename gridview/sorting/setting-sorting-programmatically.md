@@ -1,8 +1,8 @@
 ---
 title: Setting Sorting Programmatically
-page_title: Setting Sorting Programmatically
+page_title: Setting Sorting Programmatically | UI for WinForms Documentation
 description: Setting Sorting Programmatically
-slug: gridview-sorting-setting-sorting-programmatically
+slug: winforms/gridview/sorting/setting-sorting-programmatically
 tags: setting,sorting,programmatically
 published: True
 position: 1
@@ -25,45 +25,53 @@ The RadGridView control includes __SortDescriptors__ property at the GridViewTem
 
 ## Using SortDescriptor 
 
-To enable sorting you need to set the EnableSorting property of the desired template:
+To enable sorting you need to set the EnableSorting property of the desired template:#_[C#] Enable sorting_
 
-#### __[C#] Enable sorting__
-
-{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=enableSorting}}
-	            this.radGridView1.MasterTemplate.EnableSorting = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Enable sorting__
+{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=enableSorting}} 
+{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=enableSorting}} 
 
-{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=enableSorting}}
-	        Me.RadGridView1.MasterTemplate.EnableSorting = True
-	{{endregion}}
+````C#
+            this.radGridView1.MasterTemplate.EnableSorting = true;
+````
+````VB.NET
+        Me.RadGridView1.MasterTemplate.EnableSorting = True
+        '
+````
 
-
-
-Here is how to create and add new SortDescriptor
-
-#### __[C#] Using SortDescriptor__
-
-{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=usingSortDescriptor}}
-	            SortDescriptor descriptor = new SortDescriptor();
-	            descriptor.PropertyName = "ShipCountry";
-	            descriptor.Direction = ListSortDirection.Ascending;
-	            this.radGridView1.MasterTemplate.SortDescriptors.Add(descriptor);
-	{{endregion}}
+{{endregion}} 
 
 
 
-#### __[Vb.NET] Using SortDescriptor__
 
-{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=usingSortDescriptor}}
-	        Dim descriptor As New SortDescriptor()
-	        descriptor.PropertyName = "ShipCountry"
-	        descriptor.Direction = ListSortDirection.Ascending
-	        Me.RadGridView1.MasterTemplate.SortDescriptors.Add(descriptor)
-	{{endregion}}
+Here is how to create and add new SortDescriptor#_[C#] Using SortDescriptor_
+
+	
+
+
+
+{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=usingSortDescriptor}} 
+{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=usingSortDescriptor}} 
+
+````C#
+            SortDescriptor descriptor = new SortDescriptor();
+            descriptor.PropertyName = "ShipCountry";
+            descriptor.Direction = ListSortDirection.Ascending;
+            this.radGridView1.MasterTemplate.SortDescriptors.Add(descriptor);
+````
+````VB.NET
+        Dim descriptor As New SortDescriptor()
+        descriptor.PropertyName = "ShipCountry"
+        descriptor.Direction = ListSortDirection.Ascending
+        Me.RadGridView1.MasterTemplate.SortDescriptors.Add(descriptor)
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -75,39 +83,45 @@ The __PropertyName__ property defines the property, by which the data will be so
 
 ## Sorting by two or more columns
 
-RadGridView supports sorting by one or more columns. Example of sorting by 2 columns:
+RadGridView supports sorting by one or more columns. Example of sorting by 2 columns:#_[C#] Sorting by two columns_
 
-#### __[C#] Sorting by two columns__
-
-{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=sortingByTwoOrMoreColumns}}
-	            SortDescriptor descriptorShipName = new SortDescriptor();
-	            descriptorShipName.PropertyName = "ShipName";
-	            descriptorShipName.Direction = ListSortDirection.Ascending;
-	            SortDescriptor descriptorFreight = new SortDescriptor();
-	            descriptorFreight.PropertyName = "Freight";
-	            descriptorFreight.Direction = ListSortDirection.Descending;
-	            this.radGridView1.SortDescriptors.Add(descriptorShipName);
-	            this.radGridView1.SortDescriptors.Add(descriptorFreight);
-	{{endregion}}
-
-
-
-#### __[VB.NET] Sorting by two columns__
-
-{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=sortingByTwoOrMoreColumns}}
-	        Dim descriptorShipName As New SortDescriptor()
-	        descriptorShipName.PropertyName = "ShipName"
-	        descriptorShipName.Direction = ListSortDirection.Ascending
 	
-	        Dim descriptorFreight As New SortDescriptor()
-	        descriptorFreight.PropertyName = "Freight"
-	        descriptorFreight.Direction = ListSortDirection.Descending
-	
-	        Me.RadGridView1.SortDescriptors.Add(descriptorShipName)
-	        Me.RadGridView1.SortDescriptors.Add(descriptorFreight)
-	{{endregion}}
+
+
+
+{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=sortingByTwoOrMoreColumns}} 
+{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=sortingByTwoOrMoreColumns}} 
+
+````C#
+            SortDescriptor descriptorShipName = new SortDescriptor();
+            descriptorShipName.PropertyName = "ShipName";
+            descriptorShipName.Direction = ListSortDirection.Ascending;
+            SortDescriptor descriptorFreight = new SortDescriptor();
+            descriptorFreight.PropertyName = "Freight";
+            descriptorFreight.Direction = ListSortDirection.Descending;
+            this.radGridView1.SortDescriptors.Add(descriptorShipName);
+            this.radGridView1.SortDescriptors.Add(descriptorFreight);
+````
+````VB.NET
+        Dim descriptorShipName As New SortDescriptor()
+        descriptorShipName.PropertyName = "ShipName"
+        descriptorShipName.Direction = ListSortDirection.Ascending
+
+        Dim descriptorFreight As New SortDescriptor()
+        descriptorFreight.PropertyName = "Freight"
+        descriptorFreight.Direction = ListSortDirection.Descending
+
+        Me.RadGridView1.SortDescriptors.Add(descriptorShipName)
+        Me.RadGridView1.SortDescriptors.Add(descriptorFreight)
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-sorting-setting-sorting-programmatically 001](images/gridview-sorting-setting-sorting-programmatically001.png)
 
->The order of adding the sort expressions to the SortDescriptors collections matters. 
+>note The order of adding the sort expressions to the SortDescriptors collections matters. 
             In the example above, the grid will be first sorted by the ShipName column and then each group will be sorted according to the Freight column.
+>
+

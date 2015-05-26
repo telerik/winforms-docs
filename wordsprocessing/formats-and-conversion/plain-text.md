@@ -1,8 +1,8 @@
 ---
 title: Plain text
-page_title: Plain text
+page_title: Plain text | UI for WinForms Documentation
 description: Plain text
-slug: wordsprocessing-formats-and-conversion-plain-text
+slug: winforms/wordsprocessing/formats-and-conversion/plain-text
 tags: plain,text
 published: True
 position: 4

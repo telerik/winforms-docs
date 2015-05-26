@@ -1,8 +1,8 @@
 ---
 title: Tutorial Binding to DataTable or DataSet
-page_title: Tutorial Binding to DataTable or DataSet
+page_title: Tutorial Binding to DataTable or DataSet | UI for WinForms Documentation
 description: Tutorial Binding to DataTable or DataSet
-slug: gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset
+slug: winforms/gridview/populating-with-data/tutorial:-binding-to-datatable-or-dataset
 tags: tutorial,binding,to,datatable,or,dataset
 published: True
 position: 5
@@ -14,7 +14,7 @@ position: 5
 
 ## 
 
-The following tutorial demonstrates binding to a single database table. For information on binding to multiple tables see the [Binding to Hierarchical Data]({%slug gridview-hierarchical-grid-binding-to-hierarchical-data%}) topic.
+The following tutorial demonstrates binding to a single database table. For information on binding to multiple tables see the [Binding to Hierarchical Data]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data%}) topic.
         ![gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset 001](images/gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset001.png)
 
 1. Place a RadGridView component on a form. Set the Dock property to Fill.
@@ -41,33 +41,37 @@ The following tutorial demonstrates binding to a single database table. For info
 
 1. The project design should look something like the screenshot below. Note the new data components in the component tray under the design surface.![gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset 009](images/gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset009.png)
 
-1. Replace the Form_Load event handler with the following code. *The "foreach" code iterates all the columns in the grid and calls BestFit() so that the columns will expand to show the data.*
+1. Replace the Form_Load event handler with the following code. *The "foreach" code iterates all the columns in the grid and calls BestFit() so that the columns will expand to show the data.*#_[C#] Best fit columns_
 
-#### __[C#] Best fit columns__
-
-{{source=..\SamplesCS\GridView\PopulatingWithData\TutorialBindingToDataTableOrDataSet.cs region=bestFitColumns}}
-	        private void TutorialBindingToDataTableOrDataSet_Load(object sender, EventArgs e)
-	        {
-	            this.categoriesTableAdapter.Fill(this.nwindDataSet.Categories);
-	            foreach (GridViewDataColumn column in radGridView1.Columns)
-	            {
-	                column.BestFit();
-	            }
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Best fit columns__
+{{source=..\SamplesCS\GridView\PopulatingWithData\TutorialBindingToDataTableOrDataSet.cs region=bestFitColumns}} 
+{{source=..\SamplesVB\GridView\PopulatingWithData\TutorialBindingToDataTableOrDataSet.vb region=bestFitColumns}} 
 
-{{source=..\SamplesVB\GridView\PopulatingWithData\TutorialBindingToDataTableOrDataSet.vb region=bestFitColumns}}
-	    Private Sub TutorialBindingToDataTableOrDataSet_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-	        Me.CategoriesTableAdapter.Fill(Me.NwindDataSet.Categories)
-	        For Each column As GridViewDataColumn In RadGridView1.Columns
-	            column.BestFit()
-	        Next
-	    End Sub
-	{{endregion}}
+````C#
+        private void TutorialBindingToDataTableOrDataSet_Load(object sender, EventArgs e)
+        {
+            this.categoriesTableAdapter.Fill(this.nwindDataSet.Categories);
+            foreach (GridViewDataColumn column in radGridView1.Columns)
+            {
+                column.BestFit();
+            }
+        }
+````
+````VB.NET
+    Private Sub TutorialBindingToDataTableOrDataSet_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.CategoriesTableAdapter.Fill(Me.NwindDataSet.Categories)
+        For Each column As GridViewDataColumn In RadGridView1.Columns
+            column.BestFit()
+        Next
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 

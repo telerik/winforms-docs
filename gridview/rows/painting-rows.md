@@ -1,8 +1,8 @@
 ---
 title: Painting Rows
-page_title: Painting Rows
+page_title: Painting Rows | UI for WinForms Documentation
 description: Painting Rows
-slug: gridview-rows-painting-rows
+slug: winforms/gridview/rows/painting-rows
 tags: painting,rows
 published: True
 position: 12
@@ -17,21 +17,25 @@ position: 12
 __RowPaint__ event occurs when a row needs to be painted. If you want to allow the event to fire, you should set
       	the __EnableCustomDrawing__ to *true* of the RadGridView control. The scenario for using
       	the __RowPaint__ event is applied when you want to apply custom painting to extend the row appearance.  
-      
+      #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\RowPainting.cs region=enableCustomDrawing}}
-	            radGridView1.EnableCustomDrawing = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\RowPainting.cs region=enableCustomDrawing}} 
+{{source=..\SamplesVB\GridView\Rows\RowPainting.vb region=enableCustomDrawing}} 
 
-{{source=..\SamplesVB\GridView\Rows\RowPainting.vb region=enableCustomDrawing}}
-	        RadGridView1.EnableCustomDrawing = True
-	{{endregion}}
+````C#
+            radGridView1.EnableCustomDrawing = true;
+````
+````VB.NET
+        RadGridView1.EnableCustomDrawing = True
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -41,55 +45,61 @@ The following code demonstrates how to use the __RowPaint__ event to set up the 
         	to show that this product units in stock is getting lower (less than *20*).
         
 
->importantWhen handling this event, you should access the row through the parameters of the event handler rather than access the row directly.
+>important When handling this event, you should access the row through the parameters of the event handler rather than access the row directly.
+>
+#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\GridView\Rows\RowPainting.cs region=handlingRowPaint}}
-	        private void radGridView1_RowPaint(object sender, GridViewRowPaintEventArgs e)
-	        {
-	            GridDataRowElement dataRow = e.Row as GridDataRowElement;
 	
-	            if (dataRow != null)
-	            {
-	                double value = Convert.ToDouble(dataRow.RowInfo.Cells["UnitsInStock"].Value);
-	
-	                if (value < 20)
-	                {
-	                    return;
-	                }
-	
-	                Pen pen = value < 0 ? Pens.Purple : Pens.RoyalBlue;
-	                Size rowSize = dataRow.Size;
-	                rowSize.Height -= 6;
-	                rowSize.Width -= 5;
-	                e.Graphics.DrawRectangle(pen, new Rectangle(new Point(2, 2), rowSize));
-	            }
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\GridView\Rows\RowPainting.cs region=handlingRowPaint}} 
+{{source=..\SamplesVB\GridView\Rows\RowPainting.vb region=handlingRowPaint}} 
 
-{{source=..\SamplesVB\GridView\Rows\RowPainting.vb region=handlingRowPaint}}
-	    Private Sub radGridView1_RowPaint(ByVal sender As Object, ByVal e As GridViewRowPaintEventArgs) Handles RadGridView1.RowPaint
-	        Dim dataRow As GridDataRowElement = TryCast(e.Row, GridDataRowElement)
-	
-	        If dataRow IsNot Nothing Then
-	            Dim value As Integer = Convert.ToInt32(dataRow.RowInfo.Cells("UnitsInStock").Value)
-	
-	            If value < 20 Then
-	                Return
-	            End If
-	
-	            Dim pen As Pen = If(value < 0, Pens.Purple, Pens.RoyalBlue)
-	            Dim rowSize As Size = dataRow.Size
-	            rowSize.Height -= 6
-	            rowSize.Width -= 5
-	            e.Graphics.DrawRectangle(pen, New Rectangle(New Point(2, 2), rowSize))
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        private void radGridView1_RowPaint(object sender, GridViewRowPaintEventArgs e)
+        {
+            GridDataRowElement dataRow = e.Row as GridDataRowElement;
+
+            if (dataRow != null)
+            {
+                double value = Convert.ToDouble(dataRow.RowInfo.Cells["UnitsInStock"].Value);
+
+                if (value < 20)
+                {
+                    return;
+                }
+
+                Pen pen = value < 0 ? Pens.Purple : Pens.RoyalBlue;
+                Size rowSize = dataRow.Size;
+                rowSize.Height -= 6;
+                rowSize.Width -= 5;
+                e.Graphics.DrawRectangle(pen, new Rectangle(new Point(2, 2), rowSize));
+            }
+        }
+````
+````VB.NET
+    Private Sub radGridView1_RowPaint(ByVal sender As Object, ByVal e As GridViewRowPaintEventArgs) Handles RadGridView1.RowPaint
+        Dim dataRow As GridDataRowElement = TryCast(e.Row, GridDataRowElement)
+
+        If dataRow IsNot Nothing Then
+            Dim value As Integer = Convert.ToInt32(dataRow.RowInfo.Cells("UnitsInStock").Value)
+
+            If value < 20 Then
+                Return
+            End If
+
+            Dim pen As Pen = If(value < 0, Pens.Purple, Pens.RoyalBlue)
+            Dim rowSize As Size = dataRow.Size
+            rowSize.Height -= 6
+            rowSize.Width -= 5
+            e.Graphics.DrawRectangle(pen, New Rectangle(New Point(2, 2), rowSize))
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 ![gridview-rows-painting-rows 001](images/gridview-rows-painting-rows001.png)

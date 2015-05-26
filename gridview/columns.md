@@ -1,8 +1,8 @@
 ---
 title: Columns
-page_title: Columns
+page_title: Columns | UI for WinForms Documentation
 description: Columns
-slug: gridview-columns
+slug: winforms/gridview/columns
 tags: columns
 published: True
 position: 2
@@ -18,76 +18,76 @@ The __Columns__ in RadGridView are the fundamental meta-objects for data source 
           structure according to which __rows__ are composed. The term __cell__ is often used interchangeably
           with __column__, although many consider it more correct to use __cell__ to refer specifically to the
           single item that exists at the intersection between a row and a column (see
-          [Rows]({%slug gridview-rows-gridviewrowinfo%})
+          [Rows]({%slug winforms/gridview/rows/gridviewrowinfo%})
           and
-          [Cells]({%slug gridview-cells-gridviewcellinfo%})
+          [Cells]({%slug winforms/gridview/cells/gridviewcellinfo%})
           topics for more information on these objects).
         
 
 This chapter gives you detailed information about the RadGridView columns. The covered topics are:
 
-* [GridViewColumn Base Class]({%slug gridview-columns-gridviewcolumn%})
+* [GridViewColumn Base Class]({%slug winforms/gridview/columns/column-types/gridviewcolumn%})
 
-* [GridViewDataColumn Base Class]({%slug gridview-columns-gridviewdatacolumn%})
+* [GridViewDataColumn Base Class]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%})
 
 * __Column types:__
 
-* [GridViewBrowseColumn]({%slug gridview-columns-gridviewbrowsecolumn%})
+* [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
 
-* [GridViewCalculatorColumn]({%slug gridview-columns-gridviewcalculatorcolumn%})
+* [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})
 
-* [GridViewCheckBoxColumn](BCA512FB-1394-4EE4-98A2-9B81CA5DEB72)
+* [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%})
 
-* [GridViewColorColumn]({%slug gridview-columns-gridviewcolorcolumn%})
+* [GridViewColorColumn]({%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%})
 
-* [GridViewComboBoxColumn]({%slug gridview-columns-gridviewcomboboxcolumn%})
+* [GridViewComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%})
 
-* [GridViewCommandColumn]({%slug gridview-columns-gridviewcommandcolumn%})
+* [GridViewCommandColumn]({%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%})
 
-* [GridViewDateTimeColumn]({%slug gridview-columns-gridviewdatetimecolumn%})
+* [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%})
 
-* [GridViewDecimalColumn]({%slug gridview-columns-gridviewdecimalcolumn%})
+* [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
 
-* [GridViewHyperlinkColumn]({%slug gridview-columns-gridviewhyperlinkcolumn%})
+* [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
 
-* [GridViewImageColumn]({%slug gridview-columns-gridviewimagecolumn%})
+* [GridViewImageColumn]({%slug winforms/gridview/columns/column-types/gridviewimagecolumn%})
 
-* [GridViewMaskBoxColumn]({%slug gridview-columns-gridviewmaskboxcolumn%})
+* [GridViewMaskBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewmaskboxcolumn%})
 
-* [GridViewMultiComboBoxColumn]({%slug gridview-columns-gridviewmulticomboboxcolumn%})
+* [GridViewMultiComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewmulticomboboxcolumn%})
 
-* [GridViewTextBoxColumn]({%slug gridview-columns-gridviewtextboxcolumn%})
+* [GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%})
 
-* [GridViewRatingColumn]({%slug gridview-columns-gridviewratingcolumn%})
+* [GridViewRatingColumn]({%slug winforms/gridview/columns/column-types/gridviewratingcolumn%})
 
-* [Generating columns ]({%slug gridview-columns-generating-columns%})
+* [Generating columns ]({%slug winforms/gridview/columns/generating-columns%})
               - define columns programmatically or automatically (Auto-generated and manually added columns)
             
 
-* [Data type conversion ]({%slug gridview-columns-converting-data-types%})
+* [Data type conversion ]({%slug winforms/gridview/columns/converting-data-types%})
               – convert your data using the data conversion layer
             
 
-* [Accessing and Iterating through Columns ]({%slug gridview-columns-iterating-columns%})
+* [Accessing and Iterating through Columns ]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
               – accessing and iterating through columns and hierarchical columns
             
 
-* [Column expressions ]({%slug gridview-columns-calculated-columns-(column-expressions)%})
+* [Column expressions ]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%})
               - find out more about the supported aggregate functions and calculated columns
             
 
-* [Resizing Columns ]({%slug gridview-columns-resizing-columns-programatically%})
+* [Resizing Columns ]({%slug winforms/gridview/columns/resizing-columns-programatically%})
               – everything about the different sizing modes
             
 
-* [Pinned columns ]({%slug gridview-columns-pinning-and-unpinning-columns%})
+* [Pinned columns ]({%slug winforms/gridview/columns/pinning-and-unpinning-columns%})
               - find out how to pin/unpin columns or how to disable this functionality
             
 
-* [Column Chooser ]({%slug gridview-columns-working-with-column-chooser%})
+* [Column Chooser ]({%slug winforms/gridview/columns/working-with-columnchooser%})
               - find out how to hide or show columns
             
 
-* [Column text properties ]({%slug gridview-columns-data-formatting%})- __WrapText__: wraps text if the text is wider than the column width.
+* [Column text properties ]({%slug winforms/gridview/columns/data-formatting%})- __WrapText__: wraps text if the text is wider than the column width.
             -	__TextAlignment__: defines the text alignment.
             

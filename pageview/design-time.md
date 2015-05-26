@@ -1,8 +1,8 @@
 ---
 title: Design-time
-page_title: Design-time
+page_title: Design-time | UI for WinForms Documentation
 description: Design-time
-slug: pageview-design-time
+slug: winforms/pageview/design-time
 tags: design-time
 published: True
 position: 2
@@ -83,3 +83,7 @@ There are also view-specific properties as shown below:
 ## Outlook view mode![](images/pageview-design-time003.png)
 
 There are no Outlook view related properties in the Action Menu of RadPageView.
+
+>caution In order to switch from one Action Menu to another, you should first close the menu by clicking on the Smart Tag and then reopen it again.
+>
+

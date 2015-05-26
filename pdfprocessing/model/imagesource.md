@@ -1,8 +1,8 @@
 ---
 title: ImageSource
-page_title: ImageSource
+page_title: ImageSource | UI for WinForms Documentation
 description: ImageSource
-slug: pdfprocessing-model-imagesource
+slug: winforms/pdfprocessing/model/imagesource
 tags: imagesource
 published: True
 position: 4
@@ -12,7 +12,7 @@ position: 4
 
 
 
-__ImageSource__ represents a single, constant set of pixels at a certain size. It can be used by multiple [Image]({%slug pdfprocessing-model-image%}) objects in order to be drawn in a PDF file.
+__ImageSource__ represents a single, constant set of pixels at a certain size. It can be used by multiple [Image]({%slug winforms/pdfprocessing/model/image%}) objects in order to be drawn in a PDF file.
       
 
 ## Creating ImageSource
@@ -21,64 +21,71 @@ The ImageSource class has two contrustor overloads and can be created from a [St
         
 
 __Example 1__ illustrates how you can create an ImageSource using a __FileStream__.
-        
+        #_[C#] Example 1: Create ImageSource from Stream_
 
-#### __[C#] Example 1: Create ImageSource from Stream__
-
-{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelImageSource.cs region=radpdfprocessing-model-imagesource_0}}
-	            
-	            using (FileStream source = File.Open(filename, FileMode.Open))
-	            {
-	                ImageSource imageSource = new ImageSource(source);
-	            }
-	        
-	{{endregion}}
+	
 
 
 
-#### __[VB] Example 1: Create ImageSource from Stream__
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelImageSource.cs region=radpdfprocessing-model-imagesource_0}} 
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImageSource.vb region=radpdfprocessing-model-imagesource_0}} 
 
-{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImageSource.vb region=radpdfprocessing-model-imagesource_0}}
-	        Using source As FileStream = File.Open(filename, FileMode.Open)
-	            Dim imageSource As New ImageSource(source)
-	        End Using
-	{{endregion}}
+````C#
+            
+            using (FileStream source = File.Open(filename, FileMode.Open))
+            {
+                ImageSource imageSource = new ImageSource(source);
+            }
+````
+````VB.NET
+        Using source As FileStream = File.Open(filename, FileMode.Open)
+            Dim imageSource As New ImageSource(source)
+        End Using
+        '
+````
+
+{{endregion}} 
+
 
 
 
 ## Extensions
 
 __RadPdfProcessing__ exposes an extension method allowing to convert every BitmapSource to an
-          ImageSource that can be used for the creation of   [FixedContentEditor]({%slug pdfprocessing-editing-fixedcontenteditor%}) elements.
+          ImageSource that can be used for the creation of   [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}) elements.
           __Example 2__ shows how you can use the ToImageSource() extension method over a previously created bitmap.
-        
+        #_[C#] Example 2: Create ImageSource with Extension Method_
 
-#### __[C#] Example 2: Create ImageSource with Extension Method__
-
-{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelImageSource.cs region=radpdfprocessing-model-imagesource_1}}
-	            BitmapImage bitmap = new BitmapImage();
-	            bitmap.BeginInit();
-	            bitmap.UriSource = new Uri(filename, UriKind.RelativeOrAbsolute);
-	            bitmap.EndInit();
-	        
-	            return bitmap.ToImageSource();
-	{{endregion}}
-
-
-
-#### __[VB] Example 2: Create ImageSource with Extension Method__
-
-{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImageSource.vb region=radpdfprocessing-model-imagesource_1}}
-	        Dim bitmap As New BitmapImage()
-	        bitmap.BeginInit()
-	        bitmap.UriSource = New Uri(filename, UriKind.RelativeOrAbsolute)
-	        bitmap.EndInit()
 	
-	        Return bitmap.ToImageSource()
-	{{endregion}}
+
+
+
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelImageSource.cs region=radpdfprocessing-model-imagesource_1}} 
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImageSource.vb region=radpdfprocessing-model-imagesource_1}} 
+
+````C#
+            BitmapImage bitmap = new BitmapImage();
+            bitmap.BeginInit();
+            bitmap.UriSource = new Uri(filename, UriKind.RelativeOrAbsolute);
+            bitmap.EndInit();
+        
+            return bitmap.ToImageSource();
+````
+````VB.NET
+        Dim bitmap As New BitmapImage()
+        bitmap.BeginInit()
+        bitmap.UriSource = New Uri(filename, UriKind.RelativeOrAbsolute)
+        bitmap.EndInit()
+
+        Return bitmap.ToImageSource()
+        '
+````
+
+{{endregion}} 
+
 
 
 
 # See Also
 
- * [Image]({%slug pdfprocessing-model-image%})
+ * [Image]({%slug winforms/pdfprocessing/model/image%})

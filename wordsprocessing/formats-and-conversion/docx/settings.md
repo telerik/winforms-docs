@@ -1,8 +1,8 @@
 ---
 title: Settings
-page_title: Settings
+page_title: Settings | UI for WinForms Documentation
 description: Settings
-slug: wordsprocessing-formats-and-conversion-docx-settings
+slug: winforms/wordsprocessing/formats-and-conversion/docx/settings
 tags: settings
 published: True
 position: 2
@@ -44,30 +44,33 @@ The __AutoUpdateFields__ setting indicates if fields should be auto-updated when
               
 
 The following code snippet shows how you can create and specify particular export settings to DocxFormatProvider.
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingWordsProcessingSettings.cs region=radwordsprocessing-formats-and-conversion-docx-settings_0}}
-	            
-	            DocxFormatProvider provider = new DocxFormatProvider();
-	            DocxExportSettings exportSettings = new DocxExportSettings();
-	            exportSettings.AutoUpdateFields = true;
-	            exportSettings.InvalidDocumentAction = InvalidDocumentAction.ThrowException;
-	            provider.ExportSettings = exportSettings;
-	        
-	{{endregion}}
+	
 
 
 
-#### __[VB]__
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingWordsProcessingSettings.cs region=radwordsprocessing-formats-and-conversion-docx-settings_0}} 
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingWordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-docx-settings_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingWordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-docx-settings_0}}
-	        Dim provider As New DocxFormatProvider()
-	        Dim exportSettings As New DocxExportSettings()
-	        exportSettings.AutoUpdateFields = True
-	        exportSettings.InvalidDocumentAction = InvalidDocumentAction.ThrowException
-	        provider.ExportSettings = exportSettings
-	{{endregion}}
+````C#
+            
+            DocxFormatProvider provider = new DocxFormatProvider();
+            DocxExportSettings exportSettings = new DocxExportSettings();
+            exportSettings.AutoUpdateFields = true;
+            exportSettings.InvalidDocumentAction = InvalidDocumentAction.ThrowException;
+            provider.ExportSettings = exportSettings;
+````
+````VB.NET
+        Dim provider As New DocxFormatProvider()
+        Dim exportSettings As New DocxExportSettings()
+        exportSettings.AutoUpdateFields = True
+        exportSettings.InvalidDocumentAction = InvalidDocumentAction.ThrowException
+        provider.ExportSettings = exportSettings
+        '
+````
+
+{{endregion}} 
+
 
 

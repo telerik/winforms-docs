@@ -1,8 +1,8 @@
 ---
 title: Filtering
-page_title: Filtering
+page_title: Filtering | UI for WinForms Documentation
 description: Filtering
-slug: listview-features-filtering
+slug: winforms/listview/features/filtering
 tags: filtering
 published: True
 position: 1
@@ -16,21 +16,25 @@ position: 1
 
 RadListView allows filtering operations in all views. To enable filtering operations use
         	the __EnableFiltering__ property of the control:
-        
+        #_[C#] Enable filtering_
 
-#### __[C#] Enable filtering__
-
-{{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=EnableFiltering}}
-	            radListView1.EnableFiltering = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Enable filtering__
+{{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=EnableFiltering}} 
+{{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=EnableFiltering}} 
 
-{{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=EnableFiltering}}
-	        RadListView1.EnableFiltering = True
-	{{endregion}}
+````C#
+            radListView1.EnableFiltering = true;
+````
+````VB.NET
+        RadListView1.EnableFiltering = True
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -38,23 +42,27 @@ Once the filtering is enabled, we have to create a new __FilterDescriptor__
 			and assign its __PropertyName__, __FilterOperator__ 
 			and __SearchCriteria__. First, let’s filter the items by their value and look
 			for items starting with *“Local”*.
-		
+		#_[C#] Filter by value_
 
-#### __[C#] Filter by value__
-
-{{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=FilterDescriptor}}
-	            FilterDescriptor valueFilter = new FilterDescriptor("Value", FilterOperator.StartsWith, "Local");
-	            radListView1.FilterDescriptors.Add(valueFilter);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Filter by value__
+{{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=FilterDescriptor}} 
+{{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=FilterDescriptor}} 
 
-{{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=FilterDescriptor}}
-	        Dim valueFilter As New FilterDescriptor("Value", FilterOperator.StartsWith, "Local")
-	        RadListView1.FilterDescriptors.Add(valueFilter)
-	{{endregion}}
+````C#
+            FilterDescriptor valueFilter = new FilterDescriptor("Value", FilterOperator.StartsWith, "Local");
+            radListView1.FilterDescriptors.Add(valueFilter);
+````
+````VB.NET
+        Dim valueFilter As New FilterDescriptor("Value", FilterOperator.StartsWith, "Local")
+        RadListView1.FilterDescriptors.Add(valueFilter)
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -62,23 +70,27 @@ Once the filtering is enabled, we have to create a new __FilterDescriptor__
 
 When a column name is specified as __PropertyName__ of the filter descriptor,
         	RadListView will filter by the values of the specified column:
-        
+        #_[C#] Filter by type_
 
-#### __[C#] Filter by type__
-
-{{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=FilterDescriptor1}}
-	            FilterDescriptor typeFilter = new FilterDescriptor("Type", FilterOperator.Contains, "Disk");
-	            radListView1.FilterDescriptors.Add(typeFilter);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Filter by type__
+{{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=FilterDescriptor1}} 
+{{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=FilterDescriptor1}} 
 
-{{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=FilterDescriptor1}}
-	        Dim typeFilter As New FilterDescriptor("Type", FilterOperator.Contains, "Disk")
-	        RadListView1.FilterDescriptors.Add(typeFilter)
-	{{endregion}}
+````C#
+            FilterDescriptor typeFilter = new FilterDescriptor("Type", FilterOperator.Contains, "Disk");
+            radListView1.FilterDescriptors.Add(typeFilter);
+````
+````VB.NET
+        Dim typeFilter As New FilterDescriptor("Type", FilterOperator.Contains, "Disk")
+        RadListView1.FilterDescriptors.Add(typeFilter)
+        '
+````
+
+{{endregion}} 
+
 
 
 

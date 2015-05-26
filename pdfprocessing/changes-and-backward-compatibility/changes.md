@@ -1,8 +1,8 @@
 ---
 title: Changes
-page_title: Changes
+page_title: Changes | UI for WinForms Documentation
 description: Changes
-slug: pdfprocessing-changes
+slug: winforms/pdfprocessing/changes-and-backward-compatibility/changes
 tags: changes
 published: True
 position: 0
@@ -19,11 +19,11 @@ This topic summarizes the new functionality introduced in the library with helpf
 
 __What's New__
 
-* RadFixedDocumentEditor class which creates fixed content in a flow-like manner. [Read more.]({%slug pdfprocessing-editing-radfixeddocumenteditor%})
+* RadFixedDocumentEditor class which creates fixed content in a flow-like manner. [Read more.]({%slug winforms/pdfprocessing/editing/radfixeddocumenteditor%})
 
-* Introduced Tables generator allowing easy export of tabular data content. [Read more.]({%slug pdfprocessing-editing-table%})
+* Introduced Tables generator allowing easy export of tabular data content. [Read more.]({%slug winforms/pdfprocessing/editing/table%})
 
-* Exposed Block class allowing to draw and split in parts groups of text, images and shapes. [Read more.]({%slug radpdfprocessing-editing-block%})
+* Exposed Block class allowing to draw and split in parts groups of text, images and shapes. [Read more.]({%slug winforms/pdfprocessing/editing/block%})
 
 * Introduced hyperlink concept that combines Link annotation and fixed content.
             

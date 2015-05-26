@@ -1,8 +1,8 @@
 ---
 title: Code Libraries
-page_title: Code Libraries
+page_title: Code Libraries | UI for WinForms Documentation
 description: Code Libraries
-slug: for-more-help-code-libraries
+slug: winforms/for-more-help/code-libraries
 tags: code,libraries
 published: True
 position: 3

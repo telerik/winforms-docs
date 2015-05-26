@@ -1,8 +1,8 @@
 ---
 title: Unsupported features
-page_title: Unsupported features
+page_title: Unsupported features | UI for WinForms Documentation
 description: Unsupported features
-slug: pdfviewer-unsupported-features
+slug: winforms/pdfviewer/unsupported-features
 tags: unsupported,features
 published: True
 position: 5

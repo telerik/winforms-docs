@@ -1,8 +1,8 @@
 ---
 title: RadReminder
-page_title: RadReminder
+page_title: RadReminder | UI for WinForms Documentation
 description: RadReminder
-slug: scheduler-reminders-radreminder
+slug: winforms/scheduler/reminders/radreminder
 tags: radreminder
 published: True
 position: 0
@@ -11,14 +11,11 @@ position: 0
 # RadReminder
 
 
-<table><th><tr><td>
 
-RELATED VIDEOS</td><td></td></tr></th><tr><td>
 
-[Getting Started with RadSchedulerReminder](http://tv.telerik.com/watch/winforms/getting-started-with-radschedulerreminder)
-
-In this video, you will learn how to notify users of upcoming appointments through the use of RadSchedulerReminder.
-            </td><td>![scheduler-reminders-radreminder 002](images/scheduler-reminders-radreminder002.png)</td></tr></table>
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[Getting Started with RadSchedulerReminder](http://tv.telerik.com/watch/winforms/getting-started-with-radschedulerreminder)In this video, you will learn how to notify users of upcoming appointments through the use of RadSchedulerReminder.|![scheduler-reminders-radreminder 002](images/scheduler-reminders-radreminder002.png)|
 
 ## Overview
 

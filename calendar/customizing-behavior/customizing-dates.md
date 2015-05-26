@@ -1,8 +1,8 @@
 ---
 title: Customizing Dates
-page_title: Customizing Dates
+page_title: Customizing Dates | UI for WinForms Documentation
 description: Customizing Dates
-slug: calendar-customizing-behavior-customizing-dates
+slug: winforms/calendar/customizing-behavior/customizing-dates
 tags: customizing,dates
 published: True
 position: 2

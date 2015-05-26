@@ -1,8 +1,8 @@
 ---
 title: Caret positioning and selection
-page_title: Caret positioning and selection
+page_title: Caret positioning and selection | UI for WinForms Documentation
 description: Caret positioning and selection
-slug: editors-textboxcontrol-caret-positioning-and-selection
+slug: winforms/editors/textboxcontrol/caret-positioning-and-selection
 tags: caret,positioning,and,selection
 published: True
 position: 3
@@ -35,55 +35,61 @@ The __SelectionStart__ property is a number that indicates the
 The __SelectionLength__ property is a numeric value that sets the
         	width of the insertion point. Setting the __SelectionLength__ to a number greater than 0 causes 
         	that number of characters to be selected, starting from the current insertion point.
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetSelection}}
-	        private void SetSelection()
-	        {
-	            this.radTextBoxControl1.Text = "Hello, John Green";
-	            this.radTextBoxControl1.SelectionStart = 7;
-	            this.radTextBoxControl1.SelectionLength = 4;
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetSelection}} 
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetSelection}} 
 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetSelection}}
-	    Private Sub SetSelection()
-	        Me.RadTextBoxControl1.Text = "Hello, John Green"
-	        Me.RadTextBoxControl1.SelectionStart = 7
-	        Me.RadTextBoxControl1.SelectionLength = 4
-	    End Sub
-	{{endregion}}
+````C#
+        private void SetSelection()
+        {
+            this.radTextBoxControl1.Text = "Hello, John Green";
+            this.radTextBoxControl1.SelectionStart = 7;
+            this.radTextBoxControl1.SelectionLength = 4;
+        }
+````
+````VB.NET
+    Private Sub SetSelection()
+        Me.RadTextBoxControl1.Text = "Hello, John Green"
+        Me.RadTextBoxControl1.SelectionStart = 7
+        Me.RadTextBoxControl1.SelectionLength = 4
+    End Sub
+````
 
-
-
-Alternatively, you can use the Select method to select the same part of the text:
-
-#### __[C#]__
-
-{{source=..\SamplesCS\Editors\TextBoxControl.cs region=Select}}
-	        private void SelectText()
-	        {
-	            this.radTextBoxControl1.Text = "Hello, John Green";
-	            this.radTextBoxControl1.Select(7, 4);
-	        }
-	{{endregion}}
+{{endregion}} 
 
 
 
-#### __[VB.NET]__
 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Select}}
-	    Private Sub SelectText()
-	        Me.RadTextBoxControl1.Text = "Hello, John Green"
-	        Me.RadTextBoxControl1.[Select](7, 4)
-	    End Sub
-	{{endregion}}
+Alternatively, you can use the Select method to select the same part of the text:#_[C#]_
+
+	
+
+
+
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=Select}} 
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Select}} 
+
+````C#
+        private void SelectText()
+        {
+            this.radTextBoxControl1.Text = "Hello, John Green";
+            this.radTextBoxControl1.Select(7, 4);
+        }
+````
+````VB.NET
+    Private Sub SelectText()
+        Me.RadTextBoxControl1.Text = "Hello, John Green"
+        Me.RadTextBoxControl1.[Select](7, 4)
+    End Sub
+````
+
+{{endregion}} 
+
 
 
 

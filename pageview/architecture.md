@@ -1,8 +1,8 @@
 ---
 title: Architecture
-page_title: Architecture
+page_title: Architecture | UI for WinForms Documentation
 description: Architecture
-slug: pageview-architecture
+slug: winforms/pageview/architecture
 tags: architecture
 published: True
 position: 1
@@ -42,4 +42,4 @@ The RadPageView control exposes events common for all view modes like SelectedPa
 
 ## Setting up RadPageView
 
-To use this new control, you can simply drag-and-drop it onto your form in the Visual Studio designer and use its [Smart Tag]({%slug pageview-design-time%}) to add pages. To switch between the different view-modes, you can set the ViewMode property in the Properties window of the control. To adjust properties of the specific view, you should find the __ViewElement__property in the property grid and expand its sub-properties where you can find settings specific to the currently active view. This is the general approach to set up the RadPageView control in the designer without considering the view mode.
+To use this new control, you can simply drag-and-drop it onto your form in the Visual Studio designer and use its [Smart Tag]({%slug winforms/pageview/design-time%}) to add pages. To switch between the different view-modes, you can set the ViewMode property in the Properties window of the control. To adjust properties of the specific view, you should find the __ViewElement__property in the property grid and expand its sub-properties where you can find settings specific to the currently active view. This is the general approach to set up the RadPageView control in the designer without considering the view mode.

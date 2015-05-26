@@ -1,8 +1,8 @@
 ---
 title: Hyperlinks
-page_title: Hyperlinks
+page_title: Hyperlinks | UI for WinForms Documentation
 description: Hyperlinks
-slug: wordsprocessing-concepts-hyperlinks
+slug: winforms/wordsprocessing/concepts/hyperlinks
 tags: hyperlinks
 published: True
 position: 1
@@ -12,7 +12,7 @@ position: 1
 
 
 
-__Hyperlinks__ are [Fields]({%slug wordsprocessing-concepts-fields%}) elements which point to a specific location.
+__Hyperlinks__ are [Fields]({%slug winforms/wordsprocessing/concepts/fields%}) elements which point to a specific location.
         The location can be a web page or a bookmark inside the document.
       
 
@@ -33,64 +33,47 @@ The __Hyperlink__ field exposes the following properties:
 
 ## Inserting a Hyperlink
 
-The suggested way to insert hyperlink is by using [RadFlowDocumentEditor]({%slug wordsprocessing-editing-radflowdocumenteditor%}). The
+The suggested way to insert hyperlink is by using [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%}). The
           __InsertHyperlink()__ method accepts the hyperlink text, URI, IsAnchor value and tooltip as parameters. Here is how to
           insert a hyperlink to *www.telerik.com*:
-        
+        #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingHyperlinks.cs region=radwordsprocessing-concepts-hyperlinks_0}}
-	            editor.InsertHyperlink("telerik", "http://www.telerik.com", false, "Telerik site");
-	{{endregion}}
+	
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingHyperlinks.cs region=radwordsprocessing-concepts-hyperlinks_0}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingHyperlink.vb region=radwordsprocessing-concepts-hyperlinks_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingHyperlink.vb region=radwordsprocessing-concepts-hyperlinks_0}}
-	        editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
-	{{endregion}}
+````C#
+            editor.InsertHyperlink("telerik", "http://www.telerik.com", false, "Telerik site");
+````
+````VB.NET
+        editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
+        '
+````
+
+{{endregion}} 
+
 
 
 
 The result looks like this:
         ![wordsprocessing-concepts-hyperlinks 001](images/wordsprocessing-concepts-hyperlinks001.png)
 
->tipThe  __InsertHyperlink()__ method also automatically applies the Hyperlink style to the result fragment of the inserted  field.
-            More information about styles is available in the [Styles]({%slug wordsprocessing-concepts-styles%}) article.
-          
+>tip The __InsertHyperlink()__ method also automatically applies the Hyperlink style to the result fragment of the inserted  field.
+            More information about styles is available in the[Styles]({%slug winforms/wordsprocessing/concepts/styles%})article.
+>
 
-Hyperlinks can also point to a [Boomark]({%slug wordsprocessing-model-bookmark%}) inside the document. Here is how to create a document containing a bookmark and a hyperlink pointing to that bookmark:
-        
 
-#### __C#__
+Hyperlinks can also point to a [Boomark]({%slug winforms/wordsprocessing/model/boomark%}) inside the document. Here is how to create a document containing a bookmark and a hyperlink pointing to that bookmark:
+        #_C#_
 
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingHyperlinks.cs region=radwordsprocessing-concepts-hyperlinks_1}}
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
 	
-	            // Insert bookmark.
-	            editor.InsertBookmark("DocumentStart");
-	            editor.InsertLine("Hello word!");
+
+#_VB NET_
+
 	
-	            // Insert hyperlink pointing to the bookmark.
-	            editor.InsertHyperlink("Go to start", "DocumentStart", true, "Document start");
-	{{endregion}}
-
-
-
-#### __VB NET__
-
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingHyperlink.vb region=radwordsprocessing-concepts-hyperlinks_1}}
-	        Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	
-	        ' Insert bookmark.
-	        editor.InsertBookmark("DocumentStart")
-	        editor.InsertLine("Hello word!")
-	
-	        ' Insert hyperlink pointing to the bookmark.
-	        editor.InsertHyperlink("Go to start", "DocumentStart", True, "Document start")
-	{{endregion}}
 
 
 
@@ -99,8 +82,8 @@ The result of the above snippet can be found below.
 
 # See Also
 
- * [Fields]({%slug wordsprocessing-concepts-fields%})
+ * [Fields]({%slug winforms/wordsprocessing/concepts/fields%})
 
- * [RadFlowDocumentEditor]({%slug wordsprocessing-editing-radflowdocumenteditor%})
+ * [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%})
 
- * [Boomark]({%slug wordsprocessing-model-bookmark%})
+ * [Boomark]({%slug winforms/wordsprocessing/model/boomark%})

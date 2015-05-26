@@ -1,8 +1,8 @@
 ---
 title: Using The Overflow Menu
-page_title: Using The Overflow Menu
+page_title: Using The Overflow Menu | UI for WinForms Documentation
 description: Using The Overflow Menu
-slug: pageview-outlookview-using-the-overflow-menu
+slug: winforms/pageview/outlookview/using-the-overflow-menu
 tags: using,the,overflow,menu
 published: True
 position: 1
@@ -24,38 +24,43 @@ The Overflow Menu of the RadPageView’s Outlook Mode allows for permanently hid
 
 As well as from the UI, you can check/uncheck items by using the RadPageViewOutlookElement’s API. To do so, you should use
         the ViewElement property of the RadPageView control, cast it to the RadPageViewOutlookElement type and call the corresponding API
-        methods as shown in the code snippet below:
+        methods as shown in the code snippet below:#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\PageView\OutlookView.cs region=programmingOverflow}}
 	
-	            RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
-	            //Hide the first item
-	            outlookElement.UncheckItem(this.radPageViewPage1.Item as RadPageViewOutlookItem);
-	            //Show the first item again
-	            outlookElement.CheckItem(this.radPageViewPage1.Item as RadPageViewOutlookItem);
-	
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\PageView\OutlookView.cs region=programmingOverflow}} 
+{{source=..\SamplesVB\PageView\OutlookView.vb region=programmingGrip}} 
 
-{{source=..\SamplesVB\PageView\OutlookView.vb region=programmingGrip}}
-	
-	        Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
-	        'Drags the sizing grip one item down.
-	        outlookElement.DragGripDown()
-	        'Drags the sizing grip one item up.
-	        outlookElement.DragGripUp()
-	
-	{{endregion}}
+````C#
+
+            RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
+            //Hide the first item
+            outlookElement.UncheckItem(this.radPageViewPage1.Item as RadPageViewOutlookItem);
+            //Show the first item again
+            outlookElement.CheckItem(this.radPageViewPage1.Item as RadPageViewOutlookItem);
+````
+````VB.NET
+
+        Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
+        'Drags the sizing grip one item down.
+        outlookElement.DragGripDown()
+        'Drags the sizing grip one item up.
+        outlookElement.DragGripUp()
+
+        '
+````
+
+{{endregion}} 
 
 
 
->The CheckItem/UncheckItem methods accept an instance of the RadPageViewOutlookItem class. Since the Item property of the
+
+>note The CheckItem/UncheckItem methods accept an instance of the RadPageViewOutlookItem class. Since the Item property of the
           RadPageViewPage class is of the RadPageViewItem type, you should cast the returned result to the required type.
+>
+
 
 ## Using the Overflow Menu’s Events
 

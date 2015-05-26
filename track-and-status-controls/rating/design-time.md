@@ -1,8 +1,8 @@
 ---
 title: Design time
-page_title: Design time
+page_title: Design time | UI for WinForms Documentation
 description: Design time
-slug: track-and-status-controls-rating-design-time
+slug: winforms/track-and-status-controls/rating/design-time
 tags: design,time
 published: True
 position: 2

@@ -1,8 +1,8 @@
 ---
 title: Compress a stream
-page_title: Compress a stream
+page_title: Compress a stream | UI for WinForms Documentation
 description: Compress a stream
-slug: ziplibrary-features-compress-a-stream
+slug: winforms/ziplibrary/features/compress-a-stream
 tags: compress,a,stream
 published: True
 position: 2
@@ -49,7 +49,7 @@ The parameters accepted by the constructors serve the following functions:
             
 
 * __CompressionSettings settings__: The settings used for the compression. The compression settings can be of type 
-              DeflateSettings, LzmaSettings and StoreSettings. You can read more on the topic in the [Compression settings]({%slug ziplibrary-features-compression-settings%}) article.
+              DeflateSettings, LzmaSettings and StoreSettings. You can read more on the topic in the [Compression settings]({%slug winforms/ziplibrary/features/compression-settings%}) article.
             
 
 * __bool useCrc32__: Indicates whether to use CRC32 (true) or Adler32 (false) checksum algorithm.
@@ -57,7 +57,7 @@ The parameters accepted by the constructors serve the following functions:
 
 * __EncryptionSettings encryptionSettings__: Specifies the encryptions settings that will be used. 
               If __null__ value is passed, encryption is not performed. More information on the topic is available in 
-              the [Protect ZipArchive]({%slug ziplibrary-features-protect-ziparchive%}) article.
+              the [Protect ZipArchive]({%slug winforms/ziplibrary/features/protect-ziparchive%}) article.
             
 
 ## Compressing a Stream
@@ -65,56 +65,62 @@ The parameters accepted by the constructors serve the following functions:
 You can create a compressed stream by initializing new instance of the __CompressedStream__ class and passing as a
           parameter the stream in which the compressed data will be written. You need to specify the operation mode to __Write__
           and the compression settings that should be used.
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\ZipLibrary\CompressStream.cs region=stream}}
-	            
-	            using (CompressedStream compressedStream = new CompressedStream(outputStream, StreamOperationMode.Write, new DeflateSettings()))
-	            {
-	                // write to compressed stream
-	            }
-	            
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\ZipLibrary\CompressStream.cs region=stream}} 
+{{source=..\SamplesVB\ZipLibrary\CompressStream.vb region=stream}} 
 
-{{source=..\SamplesVB\ZipLibrary\CompressStream.vb region=stream}}
-	        Using compressedStream As New CompressedStream(outputStream, StreamOperationMode.Write, New DeflateSettings())
-	            ' write to compressed stream
-	        End Using
-	{{endregion}}
+````C#
+            
+            using (CompressedStream compressedStream = new CompressedStream(outputStream, StreamOperationMode.Write, new DeflateSettings()))
+            {
+                // write to compressed stream
+            }
+````
+````VB.NET
+        Using compressedStream As New CompressedStream(outputStream, StreamOperationMode.Write, New DeflateSettings())
+            ' write to compressed stream
+        End Using
+        '
+````
+
+{{endregion}} 
+
 
 
 
 If you want to compress a specific stream (*inputStream*), you need to copy it to the compressed stream that you've created.
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\ZipLibrary\CompressStream.cs region=copy}}
-	            
-	            using (CompressedStream compressedStream = new CompressedStream(outputStream, StreamOperationMode.Write, new DeflateSettings()))
-	            {
-	                inputStream.CopyTo(compressedStream);
-	                compressedStream.Flush();
-	            }
-	                
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\ZipLibrary\CompressStream.cs region=copy}} 
+{{source=..\SamplesVB\ZipLibrary\CompressStream.vb region=copy}} 
 
-{{source=..\SamplesVB\ZipLibrary\CompressStream.vb region=copy}}
-	        Using compressedStream As New CompressedStream(outputStream, StreamOperationMode.Write, New DeflateSettings())
-	            inputStream.CopyTo(compressedStream)
-	            compressedStream.Flush()
-	        End Using
-	{{endregion}}
+````C#
+            
+            using (CompressedStream compressedStream = new CompressedStream(outputStream, StreamOperationMode.Write, new DeflateSettings()))
+            {
+                inputStream.CopyTo(compressedStream);
+                compressedStream.Flush();
+            }
+````
+````VB.NET
+        Using compressedStream As New CompressedStream(outputStream, StreamOperationMode.Write, New DeflateSettings())
+            inputStream.CopyTo(compressedStream)
+            compressedStream.Flush()
+        End Using
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -123,28 +129,31 @@ If you want to compress a specific stream (*inputStream*), you need to copy it t
 Decompressing a stream is just as simple as compressing it. All you need to do is to create new instance of __CompressedStream__ 
           class and pass it the stream from which the compressed data will be extracted, operation mode __Read__, and the compression settings
           that need to be used.
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\ZipLibrary\CompressStream.cs region=copyto}}
-	    
-	            using (CompressedStream compressedStream = new CompressedStream(inputStream, StreamOperationMode.Read, new DeflateSettings()))
-	            {
-	                compressedStream.CopyTo(outputStream);
-	            }
 	
-	{{endregion}}
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\ZipLibrary\CompressStream.cs region=copyto}} 
+{{source=..\SamplesVB\ZipLibrary\CompressStream.vb region=copyto}} 
 
-{{source=..\SamplesVB\ZipLibrary\CompressStream.vb region=copyto}}
-	        Using compressedStream As New CompressedStream(inputStream, StreamOperationMode.Read, New DeflateSettings())
-	            compressedStream.CopyTo(outputStream)
-	        End Using
-	{{endregion}}
+````C#
+    
+            using (CompressedStream compressedStream = new CompressedStream(inputStream, StreamOperationMode.Read, new DeflateSettings()))
+            {
+                compressedStream.CopyTo(outputStream);
+            }
+````
+````VB.NET
+        Using compressedStream As New CompressedStream(inputStream, StreamOperationMode.Read, New DeflateSettings())
+            compressedStream.CopyTo(outputStream)
+        End Using
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -170,6 +179,6 @@ The CompressedStream class derives from the Stream class and therefore it suppor
 
 # See Also
 
- * [Protect ZipArchive]({%slug ziplibrary-features-protect-ziparchive%})
+ * [Protect ZipArchive]({%slug winforms/ziplibrary/features/protect-ziparchive%})
 
- * [Compression settings]({%slug ziplibrary-features-compression-settings%})
+ * [Compression settings]({%slug winforms/ziplibrary/features/compression-settings%})

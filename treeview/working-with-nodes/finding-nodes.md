@@ -1,8 +1,8 @@
 ---
 title: Finding Nodes
-page_title: Finding Nodes
+page_title: Finding Nodes | UI for WinForms Documentation
 description: Finding Nodes
-slug: treeview-working-with-nodes-finding-nodes
+slug: winforms/treeview/working-with-nodes/finding-nodes
 tags: finding,nodes
 published: True
 position: 10
@@ -26,49 +26,35 @@ The following example demonstrates how to search for a single node by its text a
         	nodes whose __Tag__ is not null by using a __Predicate__:
         
 
+#_[C#]_
 
-
-#### __[C#]__
-
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=find}}
-	            RadTreeNode resultOfSearch = radTreeView1.Find("Child Node");
-	            
-	            Predicate<RadTreeNode> match = new Predicate<RadTreeNode>(delegate(RadTreeNode node)
-	            {
-	                return node.Tag != null ? true : false;
-	            });
 	
-	            RadTreeNode[] result = radTreeView1.FindNodes(match);
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=find}} 
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=find}} 
 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=find}}
-	        Dim resultOfSearch As RadTreeNode = RadTreeView1.Find("Child Node")
-	
-	        Dim match As New Predicate(Of RadTreeNode)(Function(node As RadTreeNode) If(node.Tag IsNot Nothing, True, False))
-	
-	        Dim result As RadTreeNode() = RadTreeView1.FindNodes(match)
-	        '#EndRegion
-	
-	        AddHandler RadTreeView1.DoubleClick, AddressOf radTreeView1_DoubleClick
-	    End Sub
-	
-	
-	#Region "NodeAdding"
-	
-	    Private Sub RadTreeView1_NodeAdding(sender As Object, e As RadTreeViewCancelEventArgs) Handles RadTreeView1.NodeAdding
-	        If e.Node.Text.Contains("Non-insertable") Then
-	            e.Cancel = True
-	        End If
-	    End Sub
-	
-	    Private Sub RadTreeView1_NodeAdded(sender As Object, e As RadTreeViewEventArgs) Handles RadTreeView1.NodeAdded
-	        RadMessageBox.Show("Node {" + e.Node.Text + "} was added")
-	    End Sub
-	
-	{{endregion}}
+````C#
+            RadTreeNode resultOfSearch = radTreeView1.Find("Child Node");
+            
+            Predicate<RadTreeNode> match = new Predicate<RadTreeNode>(delegate(RadTreeNode node)
+            {
+                return node.Tag != null ? true : false;
+            });
+
+            RadTreeNode[] result = radTreeView1.FindNodes(match);
+````
+````VB.NET
+        Dim resultOfSearch As RadTreeNode = RadTreeView1.Find("Child Node")
+
+        Dim match As New Predicate(Of RadTreeNode)(Function(node As RadTreeNode) If(node.Tag IsNot Nothing, True, False))
+
+        Dim result As RadTreeNode() = RadTreeView1.FindNodes(match)
+        '
+````
+
+{{endregion}} 
+
 
 

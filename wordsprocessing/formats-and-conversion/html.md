@@ -1,8 +1,8 @@
 ---
 title: Html
-page_title: Html
+page_title: Html | UI for WinForms Documentation
 description: Html
-slug: wordsprocessing-formats-and-conversion-html
+slug: winforms/wordsprocessing/formats-and-conversion/html
 tags: html
 published: True
 position: 2

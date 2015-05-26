@@ -1,8 +1,8 @@
 ---
 title: Print Support
-page_title: Print Support
+page_title: Print Support | UI for WinForms Documentation
 description: Print Support
-slug: scheduler-print-support
+slug: winforms/scheduler/print-support
 tags: print,support
 published: True
 position: 13
@@ -11,12 +11,11 @@ position: 13
 # Print Support
 
 
-<table><th><tr><td>
 
-RELATED VIDEOS</td><td></td></tr></th><tr><td>[Getting Started with Printing for RadScheduler](http://tv.telerik.com/watch/winforms/getting-started-with-printing-for-radscheduler)
 
-This video demonstrates how to use the new Print features of RadScheduler. It includes a tour of new end-user printing features as well as how to accomplish it programmatically.
-            </td><td>![scheduler-print-support 003](images/scheduler-print-support003.png)</td></tr></table>
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[Getting Started with Printing for RadScheduler](http://tv.telerik.com/watch/winforms/getting-started-with-printing-for-radscheduler)This video demonstrates how to use the new Print features of RadScheduler. It includes a tour of new end-user printing features as well as how to accomplish it programmatically.|![scheduler-print-support 003](images/scheduler-print-support003.png)|
 
 The printing support of RadScheduler, allows the end user to directly pass the RadScheduler data to
         the printer. Common features of the printing support in Telerik UI for WinForms suite are:
@@ -46,44 +45,52 @@ The RadScheduler has two public methods available for printing – __Print()__ a
           the default printer with the settings currently saved in the __PrintStyle__
           property. This method has one overload available which can show a system
           __PrintDialog__ with the available printers and their options.
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintSupport.cs region=print}}
-	            this.radScheduler1.Print();
 	
-	            this.radScheduler1.Print(true);
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintSupport.cs region=print}} 
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintSupport.vb region=print}} 
 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintSupport.vb region=print}}
-	        Me.RadScheduler1.Print()
-	
-	        Me.RadScheduler1.Print(True)
-	{{endregion}}
+````C#
+            this.radScheduler1.Print();
+
+            this.radScheduler1.Print(true);
+````
+````VB.NET
+        Me.RadScheduler1.Print()
+
+        Me.RadScheduler1.Print(True)
+        '
+````
+
+{{endregion}} 
+
 
 ![scheduler-print-support 001](images/scheduler-print-support001.png)
 
 The other available method is __PrintPreview()__. It opens a new
           RadPrintPreviewDialog which is discussed in details
-          [here.]({%slug tpf-printing-support-radprintpreviewdialog%})
+          [here.]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%})#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintSupport.cs region=PrintPreview}}
-	            this.radScheduler1.PrintPreview();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintSupport.cs region=PrintPreview}} 
+{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintSupport.vb region=PrintPreview}} 
 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintSupport.vb region=PrintPreview}}
-	        Me.RadScheduler1.PrintPreview()
-	{{endregion}}
+````C#
+            this.radScheduler1.PrintPreview();
+````
+````VB.NET
+        Me.RadScheduler1.PrintPreview()
+        '
+````
+
+{{endregion}} 
+
 
 ![scheduler-print-support 002](images/scheduler-print-support002.png)

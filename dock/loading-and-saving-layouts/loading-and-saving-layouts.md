@@ -1,8 +1,8 @@
 ---
 title: Loading And Saving Layouts
-page_title: Loading And Saving Layouts
+page_title: Loading And Saving Layouts | UI for WinForms Documentation
 description: Loading And Saving Layouts
-slug: dock-loading-and-saving-layouts
+slug: winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts
 tags: loading,and,saving,layouts
 published: True
 position: 0
@@ -22,81 +22,91 @@ __RadDock__ provides methods to save and load layouts. A layout
 ## To Save a Layout
 
 To save a layout, call the __RadDock.SaveToXML()__ method:
-        
+        #_[C#] SaveToXml_
 
-#### __[C#] SaveToXml__
-
-{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=saveLayout}}
-	            this.radDock1.SaveToXml("c:\\layout1.xml");
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] SaveToXml__
+{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=saveLayout}} 
+{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=saveLayout}} 
 
-{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=saveLayout}}
-	        Me.RadDock1.SaveToXml("c:\layout1.xml")
-	{{endregion}}
+````C#
+            this.radDock1.SaveToXml("c:\\layout1.xml");
+````
+````VB.NET
+        Me.RadDock1.SaveToXml("c:\layout1.xml")
+        '
+````
+
+{{endregion}} 
+
 
 
 
 You can use the __DockWindowSerializing__ event to exclude windows from the saved layout:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=Serializing}}
-	        void radDock1_DockWindowSerializing(object sender, DockWindowCancelEventArgs e)
-	        {
-	            if (e.NewWindow.Text == "Window Top")
-	            {
-	                e.Cancel = true;
-	            }
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=Serializing}} 
+{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=Serializing}} 
 
-{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=Serializing}}
-	    Private Sub radDock1_DockWindowSerializing(ByVal sender As Object, ByVal e As DockWindowCancelEventArgs)
-	        If e.NewWindow.Text = "Window Top" Then
-	            e.Cancel = True
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        void radDock1_DockWindowSerializing(object sender, DockWindowCancelEventArgs e)
+        {
+            if (e.NewWindow.Text == "Window Top")
+            {
+                e.Cancel = true;
+            }
+        }
+````
+````VB.NET
+    Private Sub radDock1_DockWindowSerializing(ByVal sender As Object, ByVal e As DockWindowCancelEventArgs)
+        If e.NewWindow.Text = "Window Top" Then
+            e.Cancel = True
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
 ## To Load a Layout
 
 To load a layout, call the __RadDock.LoadFromXML()__method:
-        
+        #_[C#] LoadFromXml_
 
-#### __[C#] LoadFromXml__
-
-{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=loadLayout}}
-	            this.radDock1.LoadFromXml("c:\\layout1.xml");
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] LoadFromXml__
+{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=loadLayout}} 
+{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=loadLayout}} 
 
-{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=loadLayout}}
-	        Me.RadDock1.LoadFromXml("c:\layout1.xml")
-	{{endregion}}
+````C#
+            this.radDock1.LoadFromXml("c:\\layout1.xml");
+````
+````VB.NET
+        Me.RadDock1.LoadFromXml("c:\layout1.xml")
+        '
+````
+
+{{endregion}} 
 
 
-<table><th><tr><td>
 
-RELATED VIDEOS</td><td></td></tr></th><tr><td>
 
-[Saving and Loading RadDock for WinForms Layouts](http://tv.telerik.com/watch/winforms/raddock/saving-loading-raddock-winforms-layouts)
 
-In this video, you will learn how to use the simple XML serialization features of RadDock for WinForms to easily save and load RadDock layouts.
-                (Runtime: 07:03)
-              </td><td>
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[Saving and Loading RadDock for WinForms Layouts](http://tv.telerik.com/watch/winforms/raddock/saving-loading-raddock-winforms-layouts)In this video, you will learn how to use the simple XML serialization features of RadDock for WinForms to easily save and load RadDock layouts.
+                (Runtime: 07:03)|
+>caption 
 
-![dock-loading-and-saving-layouts 001](images/dock-loading-and-saving-layouts001.png)</td></tr></table>
+![dock-loading-and-saving-layouts 001](images/dock-loading-and-saving-layouts001.png)|

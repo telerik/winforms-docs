@@ -1,8 +1,8 @@
 ---
 title: RadSchedulerReminder
-page_title: RadSchedulerReminder
+page_title: RadSchedulerReminder | UI for WinForms Documentation
 description: RadSchedulerReminder
-slug: scheduler-reminders-radschedulerreminder
+slug: winforms/scheduler/reminders/radschedulerreminder
 tags: radschedulerreminder
 published: True
 position: 1
@@ -38,92 +38,149 @@ In order to incorporate __RadSchedulerReminder__ in your application, please
         
 
 1. Initialize the RadSchedulerReminder from code or in the designer.
-            
+            #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=creating}}
-	            RadSchedulerReminder schedulerReminder = new RadSchedulerReminder();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=creating}} 
+{{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=creating}} 
 
-{{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=creating}}
-	        Dim schedulerReminder As New RadSchedulerReminder()
-	{{endregion}}
+````C#
+            RadSchedulerReminder schedulerReminder = new RadSchedulerReminder();
+````
+````VB.NET
+        Dim schedulerReminder As New RadSchedulerReminder()
+        '			#End Region
+
+        '			#Region "associatedScheduler"
+        schedulerReminder.AssociatedScheduler = Me.RadScheduler1
+        '			#End Region
+
+        '			#Region "interval"
+        schedulerReminder.StartReminderInterval = Date.Now
+        schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
+        '			#End Region
+        '#region reminder
+
+        Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
+        Dim dtEnd As DateTime = dtStart.AddHours(1)
+        Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
+        Me.RadScheduler1.Appointments.Add(appointment)
+
+        appointment.Reminder = New TimeSpan(10000)
+        '
+````
+
+{{endregion}} 
+
 
 
 
 1. Set __AssociatedScheduler__ property.
-            
+            #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=associatedScheduler}}
-	            schedulerReminder.AssociatedScheduler = this.radScheduler1;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=associatedScheduler}} 
+{{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=associatedScheduler}} 
 
-{{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=associatedScheduler}}
-	        schedulerReminder.AssociatedScheduler = Me.RadScheduler1
-	{{endregion}}
+````C#
+            schedulerReminder.AssociatedScheduler = this.radScheduler1;
+````
+````VB.NET
+        schedulerReminder.AssociatedScheduler = Me.RadScheduler1
+        '			#End Region
+
+        '			#Region "interval"
+        schedulerReminder.StartReminderInterval = Date.Now
+        schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
+        '			#End Region
+        '#region reminder
+
+        Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
+        Dim dtEnd As DateTime = dtStart.AddHours(1)
+        Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
+        Me.RadScheduler1.Appointments.Add(appointment)
+
+        appointment.Reminder = New TimeSpan(10000)
+        '
+````
+
+{{endregion}} 
 
 
 
-1. Set StartReminderInterval and EndReminderInterval.
 
-#### __[C#]__
+1. Set StartReminderInterval and EndReminderInterval.#_[C#]_
 
-{{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=interval}}
-	            schedulerReminder.StartReminderInterval = DateTime.Now;
-	            schedulerReminder.EndReminderInterval = DateTime.Now.AddDays(1);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=interval}} 
+{{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=interval}} 
 
-{{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=interval}}
-	        schedulerReminder.StartReminderInterval = Date.Now
-	        schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
-	{{endregion}}
+````C#
+            schedulerReminder.StartReminderInterval = DateTime.Now;
+            schedulerReminder.EndReminderInterval = DateTime.Now.AddDays(1);
+````
+````VB.NET
+        schedulerReminder.StartReminderInterval = Date.Now
+        schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
+        '			#End Region
+        '#region reminder
+
+        Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
+        Dim dtEnd As DateTime = dtStart.AddHours(1)
+        Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
+        Me.RadScheduler1.Appointments.Add(appointment)
+
+        appointment.Reminder = New TimeSpan(10000)
+        '
+````
+
+{{endregion}} 
+
 
 
 
 1. You should set the reminder property of the appointment. This property indicates how much time before the appointment start, the reminder will be shown. 
               For example you can initialize and add an appointment with the following code.
+            #_[C#]_
+
+	
+
+
+
+{{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=reminder}} 
+{{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=reminder}} 
+
+````C#
+
+            DateTime dtStart = DateTime.Now.AddMinutes(1);
+            DateTime dtEnd = dtStart.AddHours(1);
+            Appointment appointment = new Appointment(dtStart, dtEnd, "Appointment description");
+            this.radScheduler1.Appointments.Add(appointment);
             
+            appointment.Reminder = new TimeSpan(10000);
+````
+````VB.NET
 
-#### __[C#]__
+        Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
+        Dim dtEnd As DateTime = dtStart.AddHours(1)
+        Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
+        Me.RadScheduler1.Appointments.Add(appointment)
 
-{{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=reminder}}
-	
-	            DateTime dtStart = DateTime.Now.AddMinutes(1);
-	            DateTime dtEnd = dtStart.AddHours(1);
-	            Appointment appointment = new Appointment(dtStart, dtEnd, "Appointment description");
-	            this.radScheduler1.Appointments.Add(appointment);
-	            
-	            appointment.Reminder = new TimeSpan(10000);
-	{{endregion}}
+        appointment.Reminder = New TimeSpan(10000)
+        '
+````
 
+{{endregion}} 
 
-
-#### __[VB.NET]__
-
-{{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=reminder}}
-	
-	        Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
-	        Dim dtEnd As DateTime = dtStart.AddHours(1)
-	        Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
-	        Me.RadScheduler1.Appointments.Add(appointment)
-	
-	        appointment.Reminder = New TimeSpan(10000)
-	{{endregion}}
 
 Also you can set this in AppointmentEditDialog at runtime.![scheduler-reminders-radschedulerreminder 001](images/scheduler-reminders-radschedulerreminder001.png)
 

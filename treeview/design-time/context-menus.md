@@ -1,8 +1,8 @@
 ---
 title: Context Menus
-page_title: Context Menus
+page_title: Context Menus | UI for WinForms Documentation
 description: Context Menus
-slug: treeview-design-time-context-menus
+slug: winforms/treeview/design-time/context-menus
 tags: context,menus
 published: True
 position: 2

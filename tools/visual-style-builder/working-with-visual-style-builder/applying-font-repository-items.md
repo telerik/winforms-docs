@@ -1,8 +1,8 @@
 ---
 title: Applying Font repository items
-page_title: Applying Font repository items
+page_title: Applying Font repository items | UI for WinForms Documentation
 description: Applying Font repository items
-slug: tools-visual-style-builder-working-with-visual-style-builder-applying-font-repository-items
+slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/applying-font-repository-items
 tags: applying,font,repository,items
 published: True
 position: 6
@@ -67,12 +67,13 @@ Next, we should create Text repository items defining only the ForeColor. These 
 
 As a result you get a RadButton with customized text. But what is the benefit of creating a separate Text repository item that sets only the Font? And why we should drop this Text item to RootRadElement?
 
->
+>note 
 
 
 
 1. A separate repository item which sets only the Font should be created, because if we decide to change the font of a TextPrimitive, we should do it only in one repository items (but not in three, for example NormalText, MouseOverText and MouseDownText).
 
 2. In the cases where a control contains for than one TextPrimitive, setting a repository item at RootRadElement level will define to Font for all TextPrimitives, since the Font property is an ambient property.
+
 
  

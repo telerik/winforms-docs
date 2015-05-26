@@ -1,8 +1,8 @@
 ---
 title: Zooming
-page_title: Zooming
+page_title: Zooming | UI for WinForms Documentation
 description: Zooming
-slug: calendar-customizing-appearance-zooming
+slug: winforms/calendar/customizing-appearance/zooming
 tags: zooming
 published: True
 position: 4

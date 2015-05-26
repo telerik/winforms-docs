@@ -1,8 +1,8 @@
 ---
 title: Sorting Expressions
-page_title: Sorting Expressions
+page_title: Sorting Expressions | UI for WinForms Documentation
 description: Sorting Expressions
-slug: gridview-sorting-sorting-expressions
+slug: winforms/gridview/sorting/sorting-expressions
 tags: sorting,expressions
 published: True
 position: 2
@@ -23,38 +23,46 @@ The __SortDescriptors__ Collection exposes the __Expression__ property which is 
 
 ## Creating expressions
 
-Creating a simple expression:
+Creating a simple expression:#_[C#] Creating simple sorting expression_
 
-#### __[C#] Creating simple sorting expression__
-
-{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=creatingSimpleSortingExpression}}
-	            this.radGridView1.SortDescriptors.Expression = "ShipName ASC";
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Creating simple sorting expression__
+{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=creatingSimpleSortingExpression}} 
+{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=creatingSimpleSortingExpression}} 
 
-{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=creatingSimpleSortingExpression}}
-	        Me.RadGridView1.SortDescriptors.Expression = "ShipName ASC"
-	{{endregion}}
+````C#
+            this.radGridView1.SortDescriptors.Expression = "ShipName ASC";
+````
+````VB.NET
+        Me.RadGridView1.SortDescriptors.Expression = "ShipName ASC"
+        '
+````
 
-
-
-Sorting by two columns using expressions:
-
-#### __[C#] Sorting by two columns, using sorting expression__
-
-{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=sortingByTwoColumnsUsingExpression}}
-	            this.radGridView1.SortDescriptors.Expression = "ShipName ASC, Freight DESC";
-	{{endregion}}
+{{endregion}} 
 
 
 
-#### __[VB.NET] Sorting by two columns, using sorting expression__
 
-{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=sortingByTwoColumnsUsingExpression}}
-	        Me.RadGridView1.SortDescriptors.Expression = "ShipName ASC, Freight DESC"
-	{{endregion}}
+Sorting by two columns using expressions:#_[C#] Sorting by two columns, using sorting expression_
+
+	
+
+
+
+{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=sortingByTwoColumnsUsingExpression}} 
+{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=sortingByTwoColumnsUsingExpression}} 
+
+````C#
+            this.radGridView1.SortDescriptors.Expression = "ShipName ASC, Freight DESC";
+````
+````VB.NET
+        Me.RadGridView1.SortDescriptors.Expression = "ShipName ASC, Freight DESC"
+        '
+````
+
+{{endregion}} 
+
 
 

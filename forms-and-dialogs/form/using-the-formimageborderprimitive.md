@@ -1,8 +1,8 @@
 ---
 title: Using the FormImageBorderPrimitive
-page_title: Using the FormImageBorderPrimitive
+page_title: Using the FormImageBorderPrimitive | UI for WinForms Documentation
 description: Using the FormImageBorderPrimitive
-slug: forms-and-dialogs-form-using-the-formimageborderprimitive
+slug: winforms/forms-and-dialogs/form/using-the-formimageborderprimitive
 tags: using,the,formimageborderprimitive
 published: True
 position: 4

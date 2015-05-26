@@ -1,8 +1,8 @@
 ---
 title: Column Chooser
-page_title: Column Chooser
+page_title: Column Chooser | UI for WinForms Documentation
 description: Column Chooser
-slug: gridview-end-user-capabilities-column-chooser
+slug: winforms/gridview/end-user-capabilities/column-chooser
 tags: column,chooser
 published: True
 position: 3
@@ -22,4 +22,7 @@ The visibility of all columns can be managed by the end-user at runtime using __
 The user can then drag column headings to the __Column Chooser__ window and drop them there. This will remove the column 
       		from RadGridView and will place it in the __Column Chooser Window__. Columns can be dragged back to RadGridView:
         
-<table><th><tr><td>![](images/gridview-end-user-capabilities-column-chooser2.png)</td><td>![](images/gridview-end-user-capabilities-column-chooser3.png)</td></tr></th></table>
+
+
+| ![](images/gridview-end-user-capabilities-column-chooser2.png) | ![](images/gridview-end-user-capabilities-column-chooser3.png) |
+| ------ | ------ |

@@ -1,8 +1,8 @@
 ---
 title: CustomCodeField
-page_title: CustomCodeField
+page_title: CustomCodeField | UI for WinForms Documentation
 description: CustomCodeField
-slug: wordsprocessing-concepts-customcodefield
+slug: winforms/wordsprocessing/concepts/customcodefield
 tags: customcodefield
 published: True
 position: 2
@@ -13,8 +13,8 @@ position: 2
 
 
 __Fields__ in __RadFlowDocumet__ consist of code fragment and result fragment as explained in the
-        [Fields]({%slug wordsprocessing-concepts-fields%}) article. Some fields have direct representation in the document model – for example
-        [Hyperlinks]({%slug wordsprocessing-concepts-hyperlinks%}). For all other fields you can use the __CustomCodeField__ class –
+        [Fields]({%slug winforms/wordsprocessing/concepts/fields%}) article. Some fields have direct representation in the document model – for example
+        [Hyperlinks]({%slug winforms/wordsprocessing/concepts/hyperlinks%}). For all other fields you can use the __CustomCodeField__ class –
         however you will need some knowledge of how to correctly form the code of the field.
       
 
@@ -23,22 +23,22 @@ __Fields__ in __RadFlowDocumet__ consist of code fragment and result fragment as
 Here is the basic syntax of a field code:
         
 
-field-type [field-argument] [switches]
+`field-type [field-argument] [switches]`
 
-* field-type: The type of the field. For example: HYPERINK.
+* `field-type`: The type of the field. For example: HYPERINK.
             
 
-* argument: The argument of the field. This is optional as some of the fields do not require an argument.
+* `argument`: The argument of the field. This is optional as some of the fields do not require an argument.
             
 
-* switches: Switches define additional properties of the field. The syntax of a switch is the following:
-            \switch-character [switch-argument]
+* `switches`: Switches define additional properties of the field. The syntax of a switch is the following:
+            `\switch-character [switch-argument]`
 
-* switch-character: Character defining the switch. For example the "\o" switch for HYPERINK fields
+* `switch-character`: Character defining the switch. For example the "\o" switch for HYPERINK fields
                   defines the tooltip switch.
                 
 
-* switch-argument: The argument of the switch. The argument is optional as not all switches require an argument.
+* `switch-argument`: The argument of the switch. The argument is optional as not all switches require an argument.
                 
 
 Below is an example of field code:
@@ -46,7 +46,7 @@ Below is an example of field code:
 
 ## Inserting
 
-The suggested approach for inserting code fields is by using [RadFlowDocumentEditor]({%slug wordsprocessing-editing-radflowdocumenteditor%}). The
+The suggested approach for inserting code fields is by using [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%}). The
           __InsertField()__ method accepts code as a first argument and the result as a second argument.
         
 
@@ -54,29 +54,32 @@ Here are some commonly used fields. The complete list of field codes and the swi
           [Docx specification](http://www.ecma-international.org/publications/standards/Ecma-376.htm).
         
 
->In all examples the result fragment is also inserted. However, if you export the document to
-            [Docx format](97359ebe-08c6-4c81-a64a-d40270199454), you can make use of the __AutoUpdateFields__
-            property. It forces all fields to be updated when the document is opened in MS Word or another editor.
-          
+>note In all examples the result fragment is also inserted. However, if you export the document to[Docx format](97359ebe-08c6-4c81-a64a-d40270199454), you can make use of the __AutoUpdateFields__ property. It forces all fields to be updated when the document is opened in MS Word or another editor.
+>
+
 
 ### Inserting PAGE Field
 
 Here is how to insert __PAGE__ field representing the current page number in the document:
-            
+            #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_0}}
-	            editor.InsertField("PAGE  \\* ROMAN", "VII");
-	{{endregion}}
+	
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_0}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_0}}
-	        editor.InsertField("PAGE \* ROMAN", "VII")
-	{{endregion}}
+````C#
+            editor.InsertField("PAGE  \\* ROMAN", "VII");
+````
+````VB.NET
+        editor.InsertField("PAGE \* ROMAN", "VII")
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -87,48 +90,56 @@ The __\* ROMAN__ is general formatting switch that formats a numeric result usin
 
 Here is how a combination of __PAGE__ and __NUMPAGES__ fields can be inserted to show which is
               the current page as well as the total page count in the document:
-            
+            #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_1}}
-	            editor.InsertText("Page ");
-	            editor.InsertField("PAGE", "3");
-	            editor.InsertText(" of ");
-	            editor.InsertField("NUMPAGES", "5");
-	{{endregion}}
+	
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_1}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_1}} 
 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_1}}
-	        editor.InsertText("Page ")
-	        editor.InsertField("PAGE", "3")
-	        editor.InsertText(" of ")
-	        editor.InsertField("NUMPAGES", "5")
-	{{endregion}}
+````C#
+            editor.InsertText("Page ");
+            editor.InsertField("PAGE", "3");
+            editor.InsertText(" of ");
+            editor.InsertField("NUMPAGES", "5");
+````
+````VB.NET
+        editor.InsertText("Page ")
+        editor.InsertField("PAGE", "3")
+        editor.InsertText(" of ")
+        editor.InsertField("NUMPAGES", "5")
+        '
+````
+
+{{endregion}} 
+
 
 
 
 ### Inserting AUTHOR Field
 
 Here is how to insert __AUTHOR__ field showing the name of the author of the document.
-            
+            #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_3}}
-	            editor.InsertField("AUTHOR  \\* Upper", "JOHN DOE");
-	{{endregion}}
+	
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_3}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_3}} 
 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_3}}
-	        editor.InsertField("AUTHOR \* Upper", "JOHN DOE")
-	{{endregion}}
+````C#
+            editor.InsertField("AUTHOR  \\* Upper", "JOHN DOE");
+````
+````VB.NET
+        editor.InsertField("AUTHOR \* Upper", "JOHN DOE")
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -138,22 +149,26 @@ The __\* Upper__ switch will convert all letters in the result to uppercase.
 ### Inserting Table of Contents Field
 
 Here is how to insert table of contents (TOC) field:
-            
+            #_C#_
 
-#### __C#__
-
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_4}}
-	            FieldInfo tocField = editor.InsertField("TOC \\o \"1-3\" \\h \\z \\u", "result");
-	            tocField.IsDirty = true;
-	{{endregion}}
+	
 
 
 
-#### __VB NET__
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_4}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_4}} 
 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_4}}
-	        Dim tocField As FieldInfo = editor.InsertField("TOC \o ""1-3"" \h \z \u", "result")
-	{{endregion}}
+````C#
+            FieldInfo tocField = editor.InsertField("TOC \\o \"1-3\" \\h \\z \\u", "result");
+            tocField.IsDirty = true;
+````
+````VB.NET
+        Dim tocField As FieldInfo = editor.InsertField("TOC \o ""1-3"" \h \z \u", "result")
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -177,8 +192,8 @@ The __IsDirty__ property is set so that the TOC field is updated when the docume
 
 # See Also
 
- * [Fields]({%slug wordsprocessing-concepts-fields%})
+ * [Fields]({%slug winforms/wordsprocessing/concepts/fields%})
 
- * [RadFlowDocument]({%slug wordsprocessing-model-radflowdocument%})
+ * [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%})
 
- * [RadFlowDocumentEditor]({%slug wordsprocessing-editing-radflowdocumenteditor%})
+ * [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%})

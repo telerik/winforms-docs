@@ -1,8 +1,8 @@
 ---
 title: Grouping
-page_title: Grouping
+page_title: Grouping | UI for WinForms Documentation
 description: Grouping
-slug: propertygrid-features-grouping
+slug: winforms/propertygrid/features/grouping
 tags: grouping
 published: True
 position: 1
@@ -32,23 +32,27 @@ The predefined grouping can be called by the end user by clicking the group butt
 
 Additionally, you can tune the sort order by setting the __SortOrder__ property.
         	Here is an example of descending alphabetical category sorting:
-        
+        #_[C#] Setting default groups_
 
-#### __[C#] Setting default groups__
-
-{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridGrouping.cs region=PropertySort}}
-	            radPropertyGrid1.PropertySort = PropertySort.CategorizedAlphabetical;
-	            radPropertyGrid1.SortOrder = SortOrder.Descending;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Setting default groups__
+{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridGrouping.cs region=PropertySort}} 
+{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridGrouping.vb region=PropertySort}} 
 
-{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridGrouping.vb region=PropertySort}}
-	        RadPropertyGrid1.PropertySort = PropertySort.CategorizedAlphabetical
-	        RadPropertyGrid1.SortOrder = SortOrder.Descending
-	{{endregion}}
+````C#
+            radPropertyGrid1.PropertySort = PropertySort.CategorizedAlphabetical;
+            radPropertyGrid1.SortOrder = SortOrder.Descending;
+````
+````VB.NET
+        RadPropertyGrid1.PropertySort = PropertySort.CategorizedAlphabetical
+        RadPropertyGrid1.SortOrder = SortOrder.Descending
+        '
+````
+
+{{endregion}} 
+
 
 ![propertygrid-features-grouping 001](images/propertygrid-features-grouping001.png)
 
@@ -74,24 +78,28 @@ You can group by the following criteria’s:
 
 * __OriginalValue__ - the value used when the property is initialized.
 
-Here is an example of grouping by the formatted value:
+Here is an example of grouping by the formatted value:#_[C#] Adding a group descriptor_
 
-#### __[C#] Adding a group descriptor__
-
-{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridGrouping.cs region=GroupDescriptor}}
-	            radPropertyGrid1.EnableGrouping = true;
-	            GroupDescriptor group = new GroupDescriptor(new SortDescriptor[] { new SortDescriptor("FormattedValue", ListSortDirection.Ascending) });
-	            radPropertyGrid1.GroupDescriptors.Add(group);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Adding a group descriptor__
+{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridGrouping.cs region=GroupDescriptor}} 
+{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridGrouping.vb region=GroupDescriptor}} 
 
-{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridGrouping.vb region=GroupDescriptor}}
-	        RadPropertyGrid1.EnableGrouping = True
-	        Dim group = New GroupDescriptor(New SortDescriptor() {New SortDescriptor("FormattedValue", ListSortDirection.Ascending)})
-	        RadPropertyGrid1.GroupDescriptors.Add(group)
-	{{endregion}}
+````C#
+            radPropertyGrid1.EnableGrouping = true;
+            GroupDescriptor group = new GroupDescriptor(new SortDescriptor[] { new SortDescriptor("FormattedValue", ListSortDirection.Ascending) });
+            radPropertyGrid1.GroupDescriptors.Add(group);
+````
+````VB.NET
+        RadPropertyGrid1.EnableGrouping = True
+        Dim group = New GroupDescriptor(New SortDescriptor() {New SortDescriptor("FormattedValue", ListSortDirection.Ascending)})
+        RadPropertyGrid1.GroupDescriptors.Add(group)
+        '
+````
+
+{{endregion}} 
+
 
 ![propertygrid-features-grouping 002](images/propertygrid-features-grouping002.png)

@@ -1,8 +1,8 @@
 ---
 title: Auto-Complete
-page_title: Auto-Complete
+page_title: Auto-Complete | UI for WinForms Documentation
 description: Auto-Complete
-slug: editors-autocompletebox-auto-complete
+slug: winforms/editors/autocompletebox/auto-complete
 tags: auto-complete
 published: True
 position: 4
@@ -85,58 +85,61 @@ __AutoCompleteValueMember__: To set the
 To use auto-completion without specifying a data source, you need to populate
     	the items which will be used for completing the input string in RadAutoCompleteBox,
     	in the __Items__ collection of the control:
-    
+    #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=addItems}}
-	        private void AddAutoCompleteItems()
-	        {
-	            RadListDataItemCollection items = this.radAutoCompleteBox1.AutoCompleteItems;
 	
-	            items.Add(new RadListDataItem("Joe Smith", "joe@fakecompany.com"));
-	            items.Add(new RadListDataItem("Adam Petersen", "adam@qwerty.com"));
-	            items.Add(new RadListDataItem("Jack Russel", "jack@russel.nocom"));
-	            items.Add(new RadListDataItem("Daniel Finger", "daniel.pinger@gmail.com"));
-	            items.Add(new RadListDataItem("Richard Vail", "rvail@richardvail.com"));
-	            items.Add(new RadListDataItem("Sebastian Jonnson", "s.jonnson@sjonnson.com"));
-	            items.Add(new RadListDataItem("Lee Cooper", "lee.cooper@coopercoorp.com"));
-	            items.Add(new RadListDataItem("Kelvin Clain", "kclain@clainkevin.com"));
-	            items.Add(new RadListDataItem("Maria Jenson", "mjenson@mariajenson.com"));
-	            items.Add(new RadListDataItem("Chelsea Maarten", "chelsea@maarten.com"));
-	            items.Add(new RadListDataItem("Jenson Chew", "jenson.chew@nospam.com"));
-	            items.Add(new RadListDataItem("Martin Williams", "m.williams@martinandwilliams.com"));
-	            items.Add(new RadListDataItem("Telerik", "clientservice@telerik.com"));
-	            items.Add(new RadListDataItem("James Stone", "james.stone@manystones.com"));
-	            items.Add(new RadListDataItem("Samuel Jackson", "samuel.jackson@nojackson.com"));
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=addItems}} 
+{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=addItems}} 
 
-{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=addItems}}
-	    Private Sub AddAutoCompleteItems()
-	        Dim items As RadListDataItemCollection = Me.RadAutoCompleteBox1.AutoCompleteItems
-	
-	        items.Add(New RadListDataItem("Joe Smith", "joe@fakecompany.com"))
-	        items.Add(New RadListDataItem("Adam Petersen", "adam@qwerty.com"))
-	        items.Add(New RadListDataItem("Jack Russel", "jack@russel.nocom"))
-	        items.Add(New RadListDataItem("Daniel Finger", "daniel.pinger@gmail.com"))
-	        items.Add(New RadListDataItem("Richard Vail", "rvail@richardvail.com"))
-	        items.Add(New RadListDataItem("Sebastian Jonnson", "s.jonnson@sjonnson.com"))
-	        items.Add(New RadListDataItem("Lee Cooper", "lee.cooper@coopercoorp.com"))
-	        items.Add(New RadListDataItem("Kelvin Clain", "kclain@clainkevin.com"))
-	        items.Add(New RadListDataItem("Maria Jenson", "mjenson@mariajenson.com"))
-	        items.Add(New RadListDataItem("Chelsea Maarten", "chelsea@maarten.com"))
-	        items.Add(New RadListDataItem("Jenson Chew", "jenson.chew@nospam.com"))
-	        items.Add(New RadListDataItem("Martin Williams", "m.williams@martinandwilliams.com"))
-	        items.Add(New RadListDataItem("Telerik", "clientservice@telerik.com"))
-	        items.Add(New RadListDataItem("James Stone", "james.stone@manystones.com"))
-	        items.Add(New RadListDataItem("Samuel Jackson", "samuel.jackson@nojackson.com"))
-	    End Sub
-	{{endregion}}
+````C#
+        private void AddAutoCompleteItems()
+        {
+            RadListDataItemCollection items = this.radAutoCompleteBox1.AutoCompleteItems;
+
+            items.Add(new RadListDataItem("Joe Smith", "joe@fakecompany.com"));
+            items.Add(new RadListDataItem("Adam Petersen", "adam@qwerty.com"));
+            items.Add(new RadListDataItem("Jack Russel", "jack@russel.nocom"));
+            items.Add(new RadListDataItem("Daniel Finger", "daniel.pinger@gmail.com"));
+            items.Add(new RadListDataItem("Richard Vail", "rvail@richardvail.com"));
+            items.Add(new RadListDataItem("Sebastian Jonnson", "s.jonnson@sjonnson.com"));
+            items.Add(new RadListDataItem("Lee Cooper", "lee.cooper@coopercoorp.com"));
+            items.Add(new RadListDataItem("Kelvin Clain", "kclain@clainkevin.com"));
+            items.Add(new RadListDataItem("Maria Jenson", "mjenson@mariajenson.com"));
+            items.Add(new RadListDataItem("Chelsea Maarten", "chelsea@maarten.com"));
+            items.Add(new RadListDataItem("Jenson Chew", "jenson.chew@nospam.com"));
+            items.Add(new RadListDataItem("Martin Williams", "m.williams@martinandwilliams.com"));
+            items.Add(new RadListDataItem("Telerik", "clientservice@telerik.com"));
+            items.Add(new RadListDataItem("James Stone", "james.stone@manystones.com"));
+            items.Add(new RadListDataItem("Samuel Jackson", "samuel.jackson@nojackson.com"));
+        }
+````
+````VB.NET
+    Private Sub AddAutoCompleteItems()
+        Dim items As RadListDataItemCollection = Me.RadAutoCompleteBox1.AutoCompleteItems
+
+        items.Add(New RadListDataItem("Joe Smith", "joe@fakecompany.com"))
+        items.Add(New RadListDataItem("Adam Petersen", "adam@qwerty.com"))
+        items.Add(New RadListDataItem("Jack Russel", "jack@russel.nocom"))
+        items.Add(New RadListDataItem("Daniel Finger", "daniel.pinger@gmail.com"))
+        items.Add(New RadListDataItem("Richard Vail", "rvail@richardvail.com"))
+        items.Add(New RadListDataItem("Sebastian Jonnson", "s.jonnson@sjonnson.com"))
+        items.Add(New RadListDataItem("Lee Cooper", "lee.cooper@coopercoorp.com"))
+        items.Add(New RadListDataItem("Kelvin Clain", "kclain@clainkevin.com"))
+        items.Add(New RadListDataItem("Maria Jenson", "mjenson@mariajenson.com"))
+        items.Add(New RadListDataItem("Chelsea Maarten", "chelsea@maarten.com"))
+        items.Add(New RadListDataItem("Jenson Chew", "jenson.chew@nospam.com"))
+        items.Add(New RadListDataItem("Martin Williams", "m.williams@martinandwilliams.com"))
+        items.Add(New RadListDataItem("Telerik", "clientservice@telerik.com"))
+        items.Add(New RadListDataItem("James Stone", "james.stone@manystones.com"))
+        items.Add(New RadListDataItem("Samuel Jackson", "samuel.jackson@nojackson.com"))
+    End Sub
+````
+
+{{endregion}} 
+
 
 
 

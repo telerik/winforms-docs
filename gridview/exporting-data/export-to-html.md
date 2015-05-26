@@ -1,8 +1,8 @@
 ---
 title: Export to HTML
-page_title: Export to HTML
+page_title: Export to HTML | UI for WinForms Documentation
 description: Export to HTML
-slug: gridview-exporting-data-export-to-html
+slug: winforms/gridview/exporting-data/export-to-html
 tags: export,to,html
 published: True
 position: 5
@@ -11,64 +11,69 @@ position: 5
 # Export to HTML
 
 
-<table><th><tr><td>
 
-RELATED VIDEOS</td><td></td></tr></th><tr><td>
 
-[Exporting to HTML with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/exporting-to-html-with-radgridview-for-winforms)
-
-In this video, you will learn how to export RadGridView to the HTML file format.
-            </td><td>![gridview-exporting-data-export-to-html 001](images/gridview-exporting-data-export-to-html001.png)</td></tr></table>
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[Exporting to HTML with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/exporting-to-html-with-radgridview-for-winforms)In this video, you will learn how to export RadGridView to the HTML file format.|![gridview-exporting-data-export-to-html 001](images/gridview-exporting-data-export-to-html001.png)|
 
 ## Overview
 
 This method offers excellent export performance and creates an html formatted file, which can be opened in a browser or MS Word.
 
->The HTML export functionality is located in the __TelerikData.dll__ assembly.
+>note The HTML export functionality is located in the __TelerikData.dll__ assembly.
             You need to include the following namespaces in order to access the types contained in TelerikData:
-
+>
 * Telerik.WinControls.Data
+* Telerik.WinControls.UI.Export>
 
-* Telerik.WinControls.UI.Export
 
 ## Exporting Data
 
 __Initialize ExportToHTML object__
 
-Before running export to HTML, you have to initialize the ExportToHTML class. The constructor takes one parameter: the RadGridView that will be exported:
+Before running export to HTML, you have to initialize the ExportToHTML class. The constructor takes one parameter: the RadGridView that will be exported:#_[C#]  ExportToHTML initialization_
 
-#### __[C#]  ExportToHTML initialization__
-
-{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=exportToHtmlInitialization}}
-	            ExportToHTML exporter = new ExportToHTML(this.radGridView1);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]  ExportToHTML initialization__
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=exportToHtmlInitialization}} 
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=exportToHtmlInitialization}} 
 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=exportToHtmlInitialization}}
-	        Dim exporter As ExportToHTML = New ExportToHTML(Me.RadGridView1)
-	{{endregion}}
+````C#
+            ExportToHTML exporter = new ExportToHTML(this.radGridView1);
+````
+````VB.NET
+        Dim exporter As ExportToHTML = New ExportToHTML(Me.RadGridView1)
+        '
+````
+
+{{endregion}} 
+
 
 
 
 __File extension__
-        This property allows for changing the default (*.htm) file extension of the exported result file
+        This property allows for changing the default (*.htm) file extension of the exported result file#_[C#]  Setting the file extension_
 
-#### __[C#]  Setting the file extension__
-
-{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingTheFileExtention}}
-	            exporter.FileExtension = "";
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]  Setting the file extension__
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingTheFileExtention}} 
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingTheFileExtention}} 
 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingTheFileExtention}}
-	        exporter.FileExtension = ""
-	{{endregion}}
+````C#
+            exporter.FileExtension = "";
+````
+````VB.NET
+        exporter.FileExtension = ""
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -85,21 +90,25 @@ You can choose one of the three options below which will allow you to have a dif
 
 Please note that some browsers do not support hidden columns and if you open exported file you could see the hidden columns. 
       	To make sure that the hidden columns or rows in the exported html file will not be included, you should set
-      	__HiddenColumnOption__ or __HiddenRowOption__  property to *DoNotExport*:
+      	__HiddenColumnOption__ or __HiddenRowOption__  property to *DoNotExport*:#_[C#]  Setting the HiddenColumnOption_
 
-#### __[C#]  Setting the HiddenColumnOption__
-
-{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingTheHiddenColumnOption}}
-	            exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;    
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]  Setting the HiddenColumnOption__
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingTheHiddenColumnOption}} 
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingTheHiddenColumnOption}} 
 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingTheHiddenColumnOption}}
-	        exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
-	{{endregion}}
+````C#
+            exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;
+````
+````VB.NET
+        exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -110,41 +119,49 @@ __Columns Width options__
             a fixed width for all the columns. The columns will then take this width while keeping their aspect ratio. To set a fixed size for all columns use the
             __FitWidthSize__ option of the exporter.
           
-        
+        #_[C#] Setting FitWidthSize_
 
-#### __[C#] Setting FitWidthSize__
-
-{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingFixedColumnsWidth}}
-	            exporter.FitWidthSize = 1000;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Setting FitWidthSize__
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingFixedColumnsWidth}} 
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingFixedColumnsWidth}} 
 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingFixedColumnsWidth}}
-	        exporter.FitWidthSize = 1000
-	{{endregion}}
+````C#
+            exporter.FitWidthSize = 1000;
+````
+````VB.NET
+        exporter.FitWidthSize = 1000
+        '
+````
+
+{{endregion}} 
+
 
 
 
 The third option is to set the column widths to be auto calculated depending on the content of the cells in the column. For this option you can use the 
           __AutoSizeColumns__ property.
-        
+        #_[C#] Setting AutoSizeColumns_
 
-#### __[C#] Setting AutoSizeColumns__
-
-{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingAutoSizeColumns}}
-	            exporter.AutoSizeColumns = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Setting AutoSizeColumns__
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingAutoSizeColumns}} 
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingAutoSizeColumns}} 
 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingAutoSizeColumns}}
-	        exporter.AutoSizeColumns = True
-	{{endregion}}
+````C#
+            exporter.AutoSizeColumns = true;
+````
+````VB.NET
+        exporter.AutoSizeColumns = True
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -167,41 +184,49 @@ Using the ExportToHTML class allows you to export the visual settings (themes) t
       set to *true*. Note that it does not transfer the alternating row settings that come from control theme.
       RadGridView will also export the conditional formatting to the HTML file. The row height is exported with the default DPI transformation (60pixels = 72points).	 
 		  You can enable exporting visual settings through the __ExportVisualSettings__ property.
-      By default the value of this property is *false*.
+      By default the value of this property is *false*.#_[C#]  Setting ExportVisualSettings_
 
-#### __[C#]  Setting ExportVisualSettings__
-
-{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingExportVisualSettings}}
-	            exporter.ExportVisualSettings = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]  Setting ExportVisualSettings__
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingExportVisualSettings}} 
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingExportVisualSettings}} 
 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingExportVisualSettings}}
-	        exporter.ExportVisualSettings = True
-	{{endregion}}
+````C#
+            exporter.ExportVisualSettings = true;
+````
+````VB.NET
+        exporter.ExportVisualSettings = True
+        '
+````
+
+{{endregion}} 
+
 
 
 
 __HTML Table Caption__         
 		You can specify the table caption through __TableCaption__ property.
-		
+		#_[C#]  Setting the SheetName_
 
-#### __[C#]  Setting the SheetName__
-
-{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingTheSheetName}}
-	            exporter.TableCaption = "Table";
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]  Setting the SheetName__
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingTheSheetName}} 
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingTheSheetName}} 
 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingTheSheetName}}
-	        exporter.TableCaption = "Table"
-	{{endregion}}
+````C#
+            exporter.TableCaption = "Table";
+````
+````VB.NET
+        exporter.TableCaption = "Table"
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -216,21 +241,25 @@ __Summaries export option__
 
 * DoNotExport
 
+#_[C#]  Setting the SummariesExportOption_
 
-
-#### __[C#]  Setting the SummariesExportOption__
-
-{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingSummariesExportOptions}}
-	            exporter.SummariesExportOption = SummariesOption.DoNotExport;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]  Setting the SummariesExportOption__
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=settingSummariesExportOptions}} 
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingSummariesExportOptions}} 
 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingSummariesExportOptions}}
-	        exporter.SummariesExportOption = SummariesOption.DoNotExport
-	{{endregion}}
+````C#
+            exporter.SummariesExportOption = SummariesOption.DoNotExport;
+````
+````VB.NET
+        exporter.SummariesExportOption = SummariesOption.DoNotExport
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -240,23 +269,27 @@ Exporting data to HTML is done through the RunExport method of ExportToHTML obje
 
 * fileName - the name of the exported file
 
-Consider the code sample below:
+Consider the code sample below:#_[C#]  Export to HTML format_
 
-#### __[C#]  Export to HTML format__
-
-{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=exportToHtmlFormat}}
-	            string fileName = "c:\\ExportedData.htm";
-	            exporter.RunExport(fileName);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]  Export to HTML format__
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=exportToHtmlFormat}} 
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=exportToHtmlFormat}} 
 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=exportToHtmlFormat}}
-	        Dim fileName As String = "c:\\ExportedData.htm"
-	        exporter.RunExport(fileName)
-	{{endregion}}
+````C#
+            string fileName = "c:\\ExportedData.htm";
+            exporter.RunExport(fileName);
+````
+````VB.NET
+        Dim fileName As String = "c:\\ExportedData.htm"
+        exporter.RunExport(fileName)
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -267,65 +300,73 @@ Consider the code sample below:
 ## Events
 
 __HTMLCellFormating event__
-        It gives access to a single cell’s html element that allows you to make additional formatting for every html cell related to the exported RadGridView: 
+        It gives access to a single cell’s html element that allows you to make additional formatting for every html cell related to the exported RadGridView: #_[C#]  Handling the HTMLCellFormatting event_
 
-#### __[C#]  Handling the HTMLCellFormatting event__
-
-{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=handlingHtmlCellFormattingEvent}}
-	        void exporter_HTMLCellFormatting(object sender, Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs e)
-	        {
-	            if (e.GridColumnIndex == 1 && e.GridRowInfoType == typeof(GridViewDataRowInfo))
-	            {
-	                e.HTMLCellElement.Value = "Test value";
-	                e.HTMLCellElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Orange));
-	            }
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]  Handling the HTMLCellFormatting event__
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=handlingHtmlCellFormattingEvent}} 
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=handlingHtmlCellFormattingEvent}} 
 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=handlingHtmlCellFormattingEvent}}
-	    Private Sub exporter_HTMLCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs)
-	        If e.GridColumnIndex = 1 AndAlso e.GridRowInfoType.Equals(GetType(GridViewDataRowInfo)) Then
-	            e.HTMLCellElement.Value = "Test value"
-	            e.HTMLCellElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Orange))
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        void exporter_HTMLCellFormatting(object sender, Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs e)
+        {
+            if (e.GridColumnIndex == 1 && e.GridRowInfoType == typeof(GridViewDataRowInfo))
+            {
+                e.HTMLCellElement.Value = "Test value";
+                e.HTMLCellElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Orange));
+            }
+        }
+````
+````VB.NET
+    Private Sub exporter_HTMLCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs)
+        If e.GridColumnIndex = 1 AndAlso e.GridRowInfoType.Equals(GetType(GridViewDataRowInfo)) Then
+            e.HTMLCellElement.Value = "Test value"
+            e.HTMLCellElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Orange))
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
 __HTMLTableCaptionFormatting event__
-        HTMLTableCaptionFormatting event can be used to make an additional formatting on the html caption table element . You can access TableCaptionElement through event’s arguments and apply a valid html format.
+        HTMLTableCaptionFormatting event can be used to make an additional formatting on the html caption table element . You can access TableCaptionElement through event’s arguments and apply a valid html format.#_[C#]  Handling the HTMLTableCaptionFormatting event_
 
-#### __[C#]  Handling the HTMLTableCaptionFormatting event__
-
-{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=handlingHtmlTableCaptionFormattingEvent}}
-	        void exporter_HTMLTableCaptionFormatting(object sender, Telerik.WinControls.UI.Export.HTML.HTMLTableCaptionFormattingEventArgs e)
-	        {
-	            e.TableCaptionElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Red));
-	            e.TableCaptionElement.Styles.Add("font-size", "200%");
-	            e.TableCaptionElement.Styles.Add("color", ColorTranslator.ToHtml(Color.White));
-	            e.TableCaptionElement.Styles.Add("font-weight", "bold");
-	            e.CaptionText = "My Table Caption";
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]  Handling the HTMLTableCaptionFormatting event__
+{{source=..\SamplesCS\GridView\ExportingData\ExportToHTML1.cs region=handlingHtmlTableCaptionFormattingEvent}} 
+{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=handlingHtmlTableCaptionFormattingEvent}} 
 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=handlingHtmlTableCaptionFormattingEvent}}
-	    Private Sub exporter_HTMLTableCaptionFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.HTML.HTMLTableCaptionFormattingEventArgs)
-	        e.TableCaptionElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Red))
-	        e.TableCaptionElement.Styles.Add("font-size", "200%")
-	        e.TableCaptionElement.Styles.Add("color", ColorTranslator.ToHtml(Color.White))
-	        e.TableCaptionElement.Styles.Add("font-weight", "bold")
-	        e.CaptionText = "My Table Caption"
-	    End Sub
-	{{endregion}}
+````C#
+        void exporter_HTMLTableCaptionFormatting(object sender, Telerik.WinControls.UI.Export.HTML.HTMLTableCaptionFormattingEventArgs e)
+        {
+            e.TableCaptionElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Red));
+            e.TableCaptionElement.Styles.Add("font-size", "200%");
+            e.TableCaptionElement.Styles.Add("color", ColorTranslator.ToHtml(Color.White));
+            e.TableCaptionElement.Styles.Add("font-weight", "bold");
+            e.CaptionText = "My Table Caption";
+        }
+````
+````VB.NET
+    Private Sub exporter_HTMLTableCaptionFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.HTML.HTMLTableCaptionFormattingEventArgs)
+        e.TableCaptionElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Red))
+        e.TableCaptionElement.Styles.Add("font-size", "200%")
+        e.TableCaptionElement.Styles.Add("color", ColorTranslator.ToHtml(Color.White))
+        e.TableCaptionElement.Styles.Add("font-weight", "bold")
+        e.CaptionText = "My Table Caption"
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 

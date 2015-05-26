@@ -1,8 +1,8 @@
 ---
 title: Design Time
-page_title: Design Time
+page_title: Design Time | UI for WinForms Documentation
 description: Design Time
-slug: panorama-design-time
+slug: winforms/panorama/design-time
 tags: design,time
 published: True
 position: 1
@@ -90,7 +90,7 @@ Each __RadLiveTileElement__ properties can be customized via the
 * Row Span – define the item height by specifying how many rows it should take
 
 * Open Live Tile Editor – opens the 
-		  		[Live Tile Editor]({%slug panorama-live-tile-editor%}) 
+		  		[Live Tile Editor]({%slug winforms/panorama/live-tile-editor%}) 
 		  		, where you can customize the tile.
 		  	
 

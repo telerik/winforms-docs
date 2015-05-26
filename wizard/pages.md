@@ -1,8 +1,8 @@
 ---
 title: Pages
-page_title: Pages
+page_title: Pages | UI for WinForms Documentation
 description: Pages
-slug: wizard-pages
+slug: winforms/wizard/pages
 tags: pages
 published: True
 position: 2

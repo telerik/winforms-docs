@@ -1,8 +1,8 @@
 ---
 title: GridViewMaskBoxColumn
-page_title: GridViewMaskBoxColumn
+page_title: GridViewMaskBoxColumn | UI for WinForms Documentation
 description: GridViewMaskBoxColumn
-slug: gridview-columns-gridviewmaskboxcolumn
+slug: winforms/gridview/columns/column-types/gridviewmaskboxcolumn
 tags: gridviewmaskboxcolumn
 published: True
 position: 12
@@ -25,36 +25,45 @@ You can set a *mask* to GridViewMaskBoxColumn using its __Mask__and
       		RadMaskEditBox documentation section.
       	
 
-#### __[C#] Adding GridViewMaskBoxColumn__
+>caution You can use *FormatString* property to format the values of GridViewMaskBoxColumn cells not currently
+        	opened for editing.
+>
+#_[C#] Adding GridViewMaskBoxColumn_
 
-{{source=..\SamplesCS\GridView\Columns\GridViewMaskBoxColumn1.cs region=addMaskBoxColumn}}
-	            GridViewMaskBoxColumn maskBoxColumn = new GridViewMaskBoxColumn();
-	            maskBoxColumn.Name = "Price";
-	            maskBoxColumn.FieldName = "UnitPrice";
-	            maskBoxColumn.HeaderText = "Unit Price";
-	            maskBoxColumn.MaskType = MaskType.Numeric;
-	            maskBoxColumn.Mask = "C";
-	            maskBoxColumn.TextAlignment = ContentAlignment.BottomRight;
-	            maskBoxColumn.FormatString = "{0:C}";
-	            maskBoxColumn.DataType = typeof(decimal);
-	            radGridView1.MasterTemplate.Columns.Add(maskBoxColumn);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Adding GridViewMaskBoxColumn__
+{{source=..\SamplesCS\GridView\Columns\GridViewMaskBoxColumn1.cs region=addMaskBoxColumn}} 
+{{source=..\SamplesVB\GridView\Columns\GridViewMaskBoxColumn1.vb region=addMaskBoxColumn}} 
 
-{{source=..\SamplesVB\GridView\Columns\GridViewMaskBoxColumn1.vb region=addMaskBoxColumn}}
-	        Dim maskBoxColumn As New GridViewMaskBoxColumn()
-	        maskBoxColumn.Name = "Price"
-	        maskBoxColumn.FieldName = "UnitPrice"
-	        maskBoxColumn.HeaderText = "Unit Price"
-	        maskBoxColumn.MaskType = MaskType.Numeric
-	        maskBoxColumn.Mask = "C"
-	        maskBoxColumn.TextAlignment = ContentAlignment.BottomRight
-	        maskBoxColumn.FormatString = "{0:C}"
-	        maskBoxColumn.DataType = GetType(Decimal)
-	        RadGridView1.MasterTemplate.Columns.Add(maskBoxColumn)
-	{{endregion}}
+````C#
+            GridViewMaskBoxColumn maskBoxColumn = new GridViewMaskBoxColumn();
+            maskBoxColumn.Name = "Price";
+            maskBoxColumn.FieldName = "UnitPrice";
+            maskBoxColumn.HeaderText = "Unit Price";
+            maskBoxColumn.MaskType = MaskType.Numeric;
+            maskBoxColumn.Mask = "C";
+            maskBoxColumn.TextAlignment = ContentAlignment.BottomRight;
+            maskBoxColumn.FormatString = "{0:C}";
+            maskBoxColumn.DataType = typeof(decimal);
+            radGridView1.MasterTemplate.Columns.Add(maskBoxColumn);
+````
+````VB.NET
+        Dim maskBoxColumn As New GridViewMaskBoxColumn()
+        maskBoxColumn.Name = "Price"
+        maskBoxColumn.FieldName = "UnitPrice"
+        maskBoxColumn.HeaderText = "Unit Price"
+        maskBoxColumn.MaskType = MaskType.Numeric
+        maskBoxColumn.Mask = "C"
+        maskBoxColumn.TextAlignment = ContentAlignment.BottomRight
+        maskBoxColumn.FormatString = "{0:C}"
+        maskBoxColumn.DataType = GetType(Decimal)
+        RadGridView1.MasterTemplate.Columns.Add(maskBoxColumn)
+        '
+````
+
+{{endregion}} 
+
 
 

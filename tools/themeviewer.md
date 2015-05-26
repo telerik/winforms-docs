@@ -1,8 +1,8 @@
 ---
 title: ThemeViewer
-page_title: ThemeViewer
+page_title: ThemeViewer | UI for WinForms Documentation
 description: ThemeViewer
-slug: tools-themeviewer
+slug: winforms/tools/themeviewer
 tags: themeviewer
 published: True
 position: 4

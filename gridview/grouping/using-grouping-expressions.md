@@ -1,8 +1,8 @@
 ---
 title: Using Grouping Expressions
-page_title: Using Grouping Expressions
+page_title: Using Grouping Expressions | UI for WinForms Documentation
 description: Using Grouping Expressions
-slug: gridview-grouping-using-grouping-expressions
+slug: winforms/gridview/grouping/using-grouping-expressions
 tags: using,grouping,expressions
 published: True
 position: 2
@@ -21,80 +21,96 @@ The __GroupDescriptorCollection__ contains __Expression__ property which is used
 
 ## Creating expressions
 
-Creating a simple expression:
+Creating a simple expression:#_[C#] Creating simple grouping expression_
 
-#### __[C#] Creating simple grouping expression__
-
-{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=creatingSimpleExpression}}
-	            this.radGridView1.GroupDescriptors.Expression = "Country ASC";
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Creating simple grouping expression__
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=creatingSimpleExpression}} 
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=creatingSimpleExpression}} 
 
-{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=creatingSimpleExpression}}
-	        Me.RadGridView1.GroupDescriptors.Expression = "Country ASC"
-	{{endregion}}
+````C#
+            this.radGridView1.GroupDescriptors.Expression = "Country ASC";
+````
+````VB.NET
+        Me.RadGridView1.GroupDescriptors.Expression = "Country ASC"
+        '
+````
 
-
-
-
-
-Grouping by two properties using an expression:
-
-#### __[C#] Grouping by two columns, by using an expression__
-
-{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=groupingByToColumnsUsingExpression}}
-	            this.radGridView1.GroupDescriptors.Expression = "Country, ContactTitle DESC";
-	{{endregion}}
-
-
-
-#### __[VB.NET] Grouping by two columns, by using an expression__
-
-{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=groupingByToColumnsUsingExpression}}
-	        Me.RadGridView1.GroupDescriptors.Expression = "Country, ContactTitle DESC"
-	{{endregion}}
+{{endregion}} 
 
 
 
 
 
-Creating groups on two levels using an expression:
 
-#### __[C#] Creating group on two levels, by using an expression__
+Grouping by two properties using an expression:#_[C#] Grouping by two columns, by using an expression_
 
-{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=creatingGroupsOnTwoLevelsUsingExpression}}
-	            this.radGridView1.GroupDescriptors.Expression = "Country ASC; ContactTitle DESC";
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Creating group on two levels, by using an expression__
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=groupingByToColumnsUsingExpression}} 
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=groupingByToColumnsUsingExpression}} 
 
-{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=creatingGroupsOnTwoLevelsUsingExpression}}
-	        Me.RadGridView1.GroupDescriptors.Expression = "Country ASC; ContactTitle DESC"
-	{{endregion}}
+````C#
+            this.radGridView1.GroupDescriptors.Expression = "Country, ContactTitle DESC";
+````
+````VB.NET
+        Me.RadGridView1.GroupDescriptors.Expression = "Country, ContactTitle DESC"
+        '
+````
 
-
-
-
-
-Grouping by two properties on the first level and by one on the second:
-
-#### __[C#] Complex grouping__
-
-{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=complexGrouping}}
-	            this.radGridView1.GroupDescriptors.Expression = "Country, ContactTitle ASC; City DESC";
-	{{endregion}}
+{{endregion}} 
 
 
 
-#### __[VB.NET] Complex grouping__
 
-{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=complexGrouping}}
-	        Me.RadGridView1.GroupDescriptors.Expression = "Country, ContactTitle ASC; City DESC"
-	{{endregion}}
+
+
+Creating groups on two levels using an expression:#_[C#] Creating group on two levels, by using an expression_
+
+	
+
+
+
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=creatingGroupsOnTwoLevelsUsingExpression}} 
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=creatingGroupsOnTwoLevelsUsingExpression}} 
+
+````C#
+            this.radGridView1.GroupDescriptors.Expression = "Country ASC; ContactTitle DESC";
+````
+````VB.NET
+        Me.RadGridView1.GroupDescriptors.Expression = "Country ASC; ContactTitle DESC"
+        '
+````
+
+{{endregion}} 
+
+
+
+
+
+
+Grouping by two properties on the first level and by one on the second:#_[C#] Complex grouping_
+
+	
+
+
+
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=complexGrouping}} 
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=complexGrouping}} 
+
+````C#
+            this.radGridView1.GroupDescriptors.Expression = "Country, ContactTitle ASC; City DESC";
+````
+````VB.NET
+        Me.RadGridView1.GroupDescriptors.Expression = "Country, ContactTitle ASC; City DESC"
+        '
+````
+
+{{endregion}} 
+
 
 

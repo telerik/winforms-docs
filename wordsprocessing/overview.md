@@ -1,14 +1,14 @@
 ---
-title: Overview
-page_title: Overview
+title: WordsProcessing Overview
+page_title: Overview | UI for WinForms Documentation
 description: Overview
-slug: wordsprocessing-overview
+slug: winforms/wordsprocessing/overview
 tags: overview
 published: True
 position: 0
 ---
 
-# Overview
+# WordsProcessing Overview
 
 ![wordsprocessing-logo 002](images/wordsprocessing-logo002.png)
 

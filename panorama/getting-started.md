@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: panorama-getting-started
+slug: winforms/panorama/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -11,16 +11,13 @@ position: 0
 # Getting Started
 
 
-<table><th><tr><td>
 
-RELATED VIDEOS</td><td></td></tr></th><tr><td>
 
-[Getting started with RadPanorama ](http://tv.telerik.com/watch/winforms/getting-started-with-radpanorama)![panorama-getting-started 000](images/panorama-getting-started000.png)</td><td>
-
-In this video, we are going to see what it takes to get started with the RadPanorama. 
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[Getting started with RadPanorama ](http://tv.telerik.com/watch/winforms/getting-started-with-radpanorama)![panorama-getting-started 000](images/panorama-getting-started000.png)|In this video, we are going to see what it takes to get started with the RadPanorama. 
 		              RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner. 
-		              This control is inspired by the Metro Start Menu screen of Windows 8.
-                </td></tr></table>
+		              This control is inspired by the Metro Start Menu screen of Windows 8.|
 
 This article will demonstrate how to get started with RadPanorama control.
       	You will be guided through the process of creating a sample application step-by-step.
@@ -65,4 +62,4 @@ This article will demonstrate how to get started with RadPanorama control.
 1. The layout is done. You can customize each item according to your needs and also you can subscribe
 	  		to the __Click__ event of each of them, in order to perform some action upon click.
 	  		To customize RadLiveTileElements, you can use the 
-	  		[Live Tile Editor]({%slug panorama-live-tile-editor%})
+	  		[Live Tile Editor]({%slug winforms/panorama/live-tile-editor%})

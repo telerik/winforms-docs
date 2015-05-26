@@ -1,8 +1,8 @@
 ---
 title: Break
-page_title: Break
+page_title: Break | UI for WinForms Documentation
 description: Break
-slug: wordsprocessing-model-break
+slug: winforms/wordsprocessing/model/break
 tags: break
 published: True
 position: 11
@@ -29,24 +29,28 @@ __Break__ element is an inline-level flow content element which specifies that a
 All inline-level elements in a __RadFlowDocument__ need to be placed within another element.
         
 
-__Example 1__ shows how to create a __Break__ element and add it to a [Paragraph]({%slug wordsprocessing-model-paragraph%}).
-        
+__Example 1__ shows how to create a __Break__ element and add it to a [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}).
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_0}}
-	            Break br = new Break(document);
-	            paragraph.Inlines.Add(br);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_0}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_0}}
-	            Dim br As New Break(document)
-	            paragraph.Inlines.Add(br)
-	{{endregion}}
+````C#
+            Break br = new Break(document);
+            paragraph.Inlines.Add(br);
+````
+````VB.NET
+            Dim br As New Break(document)
+            paragraph.Inlines.Add(br)
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -54,45 +58,53 @@ Note, that the paragraph should belong to the same document that is passed to th
         
 
 __Example 2__ shows how you can change the type of the break created in __Example 1__.
-        
+        #_[C#] Example 2: Change BreakType_
 
-#### __[C#] Example 2: Change BreakType__
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_1}}
-	            br.BreakType = BreakType.PageBreak;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 2: Change BreakType__
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_1}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_1}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_1}}
-	            br.BreakType = BreakType.PageBreak
-	{{endregion}}
+````C#
+            br.BreakType = BreakType.PageBreak;
+````
+````VB.NET
+            br.BreakType = BreakType.PageBreak
+            '
+````
+
+{{endregion}} 
 
 
 
-Inserting a break in the document can also be done with the __InsertBreak()__ method of the [RadFlowDocument]({%slug wordsprocessing-model-radflowdocument%}) class.
+
+Inserting a break in the document can also be done with the __InsertBreak()__ method of the [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%}) class.
         
 
 __Example 3__ shows how you can insert a break through __RadFlowDocumentEditor__.
-        
+        #_[C#] Example 3: Insert break using RadFlowDocumentEditor_
 
-#### __[C#] Example 3: Insert break using RadFlowDocumentEditor__
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_2}}
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
-	            Break br = editor.InsertBreak(BreakType.PageBreak);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 3: Insert break using RadFlowDocumentEditor__
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_2}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_2}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_2}}
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	            Dim br As Break = editor.InsertBreak(BreakType.PageBreak)
-	{{endregion}}
+````C#
+            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+            Break br = editor.InsertBreak(BreakType.PageBreak);
+````
+````VB.NET
+            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+            Dim br As Break = editor.InsertBreak(BreakType.PageBreak)
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -120,36 +132,40 @@ The __Break__ element exposes several properties that allow you to customize it.
                 
 
 __Example 4__ shows how you can insert a Break through __RadFlowDocumentEditor__ and modify it later.
-        
+        #_[C#] Example 4: Customize a break_
 
-#### __[C#] Example 4: Customize a break__
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_3}}
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
 	
-	            Break br = editor.InsertBreak(BreakType.PageBreak);
-	            br.BreakType = BreakType.LineBreak;
-	            br.TextWrappingRestartLocation = TextWrappingRestartLocation.NextFullLine;
-	{{endregion}}
 
 
 
-#### __[VB.NET] Example 4: Customize a break__
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_3}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_3}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_3}}
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	
-	            Dim br As Break = editor.InsertBreak(BreakType.PageBreak)
-	            br.BreakType = BreakType.LineBreak
-	            br.TextWrappingRestartLocation = TextWrappingRestartLocation.NextFullLine
-	{{endregion}}
+````C#
+            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+
+            Break br = editor.InsertBreak(BreakType.PageBreak);
+            br.BreakType = BreakType.LineBreak;
+            br.TextWrappingRestartLocation = TextWrappingRestartLocation.NextFullLine;
+````
+````VB.NET
+            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+
+            Dim br As Break = editor.InsertBreak(BreakType.PageBreak)
+            br.BreakType = BreakType.LineBreak
+            br.TextWrappingRestartLocation = TextWrappingRestartLocation.NextFullLine
+            '
+````
+
+{{endregion}} 
+
 
 
 
 # See Also
 
- * [Model]({%slug wordsprocessing-model%})
+ * [Model]({%slug winforms/wordsprocessing/model%})
 
- * [Paragraph]({%slug wordsprocessing-model-paragraph%})
+ * [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%})
 
- * [RadFlowDocument]({%slug wordsprocessing-model-radflowdocument%})
+ * [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%})

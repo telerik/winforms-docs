@@ -1,8 +1,8 @@
 ---
 title: Themes
-page_title: Themes
+page_title: Themes | UI for WinForms Documentation
 description: Themes
-slug: gridview-styling-and-appearance-themes
+slug: winforms/gridview/styling-and-appearance/themes
 tags: themes
 published: True
 position: 5
@@ -15,7 +15,7 @@ position: 5
 RadGridView is built on top of the Telerik Presentation Framework and enables easy styling without
         writing any code. It ships with a set of predefined themes that you can easily use in your application
         as demonstrated
-        [here]({%slug themes-using-default-themes%}).
+        [here]({%slug winforms/themes/using-default-themes-%}).
       
 
 The built-in themes are:![gridview-styling-and-appearance-themes 001](images/gridview-styling-and-appearance-themes001.png)
@@ -44,11 +44,10 @@ The built-in themes are:![gridview-styling-and-appearance-themes 001](images/gri
 
 *High Contrast Black theme*
 
->You can preview the built-in themes using our
-            [Theme Viewer]({%slug tools-themeviewer%})
-            application.
-          
+>note You can preview the built-in themes using our[Theme Viewer]({%slug winforms/tools/themeviewer%})application.
+>
 
->You can edit the existing built-in themes or you can create brand new ones using
-            [Visual Style Builder]({%slug tools-visual-style-builder-overview%}).
-          
+
+>note You can edit the existing built-in themes or you can create brand new ones using[Visual Style Builder]({%slug winforms/tools/visual-style-builder%}).
+>
+

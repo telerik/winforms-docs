@@ -1,8 +1,8 @@
 ---
 title: Changes
-page_title: Changes
+page_title: Changes | UI for WinForms Documentation
 description: Changes
-slug: wordsprocessing-changes
+slug: winforms/wordsprocessing/changes-and-backward-compatibility/changes
 tags: changes
 published: True
 position: 0
@@ -18,9 +18,9 @@ This topic will summarize the new functionality introduced in the library with h
 
 __What's New__
 
-* Mail Merge support, which can be used to generate documents from a template document (containing merge fields) and data source. [Read more.]({%slug wordsprocessing-editing-mail-merge%})
+* Mail Merge support, which can be used to generate documents from a template document (containing merge fields) and data source. [Read more.]({%slug winforms/wordsprocessing/editing/mail-merge%})
 
-* Document Variables that enable users to define variables in the document and use document variable fields. [Read more.]({%slug radwordsprocessing-concepts-document-variables%})
+* Document Variables that enable users to define variables in the document and use document variable fields. [Read more.]({%slug winforms/wordsprocessing/concepts/fields/document-variables%})
 
 * Export of table styles to HTML.
             
@@ -106,10 +106,10 @@ __What's Fixed__
 
 * [Html Import/Export](89a612ca-fd29-481b-8f81-1517e559029d)
 
-* [Lists]({%slug wordsprocessing-concepts-lists%})
+* [Lists]({%slug winforms/wordsprocessing/concepts/lists%})
 
-* [Break]({%slug wordsprocessing-model-break%})
+* [Break]({%slug winforms/wordsprocessing/model/break%})
 
-* [Boomark]({%slug wordsprocessing-model-bookmark%})
+* [Boomark]({%slug winforms/wordsprocessing/model/boomark%})
 
-* [Comment]({%slug wordsprocessing-model-comment%})
+* [Comment]({%slug winforms/wordsprocessing/model/comment%})

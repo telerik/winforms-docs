@@ -1,8 +1,8 @@
 ---
 title: Breadcrumb
-page_title: Breadcrumb
+page_title: Breadcrumb | UI for WinForms Documentation
 description: Breadcrumb
-slug: treeview-breadcrumb
+slug: winforms/treeview/breadcrumb
 tags: breadcrumb
 published: True
 position: 12
@@ -22,20 +22,24 @@ __RadBreadCrumb__ control is specifically designed to help users with __RadTreeV
 
 Use __DefaultTreeView__ property of __RadBreadCrumb__ to associate the bread crumb with an instance
           of __RadTreeView__. 
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\TreeView\BreadCrumb.cs region=defaultTreeView}}
-	            radBreadCrumb1.DefaultTreeView = radTreeView1;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\TreeView\BreadCrumb.cs region=defaultTreeView}} 
+{{source=..\SamplesVB\TreeView\BreadCrumb.vb region=defaultTreeView}} 
 
-{{source=..\SamplesVB\TreeView\BreadCrumb.vb region=defaultTreeView}}
-	        RadBreadCrumb1.DefaultTreeView = RadTreeView1
-	{{endregion}}
+````C#
+            radBreadCrumb1.DefaultTreeView = radTreeView1;
+````
+````VB.NET
+        RadBreadCrumb1.DefaultTreeView = RadTreeView1
+        '
+````
+
+{{endregion}} 
+
 
 

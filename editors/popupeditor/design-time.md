@@ -1,8 +1,8 @@
 ---
 title: Design Time
-page_title: Design Time
+page_title: Design Time | UI for WinForms Documentation
 description: Design Time
-slug: editors-popupeditor-design-time
+slug: winforms/editors/popupeditor/design-time
 tags: design,time
 published: False
 position: 1

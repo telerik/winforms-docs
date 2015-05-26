@@ -1,8 +1,8 @@
 ---
 title: Mnemonics
-page_title: Mnemonics
+page_title: Mnemonics | UI for WinForms Documentation
 description: Mnemonics
-slug: buttons-mnemonics
+slug: winforms/buttons/mnemonics
 tags: mnemonics
 published: True
 position: 7
@@ -16,23 +16,26 @@ position: 7
 
 RadButton, RadCheckBox, RadRadioButton, and RadToggleButton support mnemonics. 
 
-All you need to do is to specify the character that will be used for a given control by placing the __&__character before the desired symbol. The following example demonstrates how the __r__key is used for radButton1 mnemonic:
+All you need to do is to specify the character that will be used for a given control by placing the __&__character before the desired symbol. The following example demonstrates how the __r__key is used for radButton1 mnemonic:#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Buttons\Button.cs region=mnemonics}}
 	
-	            this.radButton1.Text = "&radButton1";
-	
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Buttons\Button.cs region=mnemonics}} 
+{{source=..\SamplesVB\Buttons\Button.vb region=mnemonics}} 
 
-{{source=..\SamplesVB\Buttons\Button.vb region=mnemonics}}
-	        Me.radButton1.Text = "&radButton1"
-	{{endregion}}
+````C#
+
+            this.radButton1.Text = "&radButton1";
+````
+````VB.NET
+        Me.radButton1.Text = "&radButton1"
+        '
+````
+
+{{endregion}} 
+
 
 
 

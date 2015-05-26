@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: track-and-status-controls-progressbar-getting-started
+slug: winforms/track-and-status-controls/progressbar/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -32,39 +32,43 @@ Timer control.
 
 1. Replace the automatically-generated event handler with this code:
           
-            	
+            	#_[C#] Handling the Timer Tick event_
 
-#### __[C#] Handling the Timer Tick event__
-
-{{source=..\SamplesCS\TrackAndStatus\ProgressBar\ProgressGettingStarted.cs region=tick}}
-	        int ticks = 0;
-	        private void timer1_Tick(object sender, EventArgs e)
-	        {
-	            ticks++;
-	            radProgressBar1.Value1 = ticks;
-	            if (ticks == 100)
-	            {
-	                timer1.Enabled = false;
-	                ticks = 0;
-	            }
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Handling the Timer Tick event__
+{{source=..\SamplesCS\TrackAndStatus\ProgressBar\ProgressGettingStarted.cs region=tick}} 
+{{source=..\SamplesVB\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=tick}} 
 
-{{source=..\SamplesVB\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=tick}}
-	    Private ticks As Integer = 0
-	    Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs)
-	        ticks += 1
-	        RadProgressBar1.Value1 = ticks
-	        If ticks = 100 Then
-	            Timer1.Enabled = False
-	            ticks = 0
-	        End If
-	    End Sub
-	{{endregion}}
+````C#
+        int ticks = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            ticks++;
+            radProgressBar1.Value1 = ticks;
+            if (ticks == 100)
+            {
+                timer1.Enabled = false;
+                ticks = 0;
+            }
+        }
+````
+````VB.NET
+    Private ticks As Integer = 0
+    Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs)
+        ticks += 1
+        RadProgressBar1.Value1 = ticks
+        If ticks = 100 Then
+            Timer1.Enabled = False
+            ticks = 0
+        End If
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -82,26 +86,30 @@ Timer control.
 1. Replace the automatically-generated event handler with this code:
           
           
-          
+          #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\TrackAndStatus\ProgressBar\ProgressGettingStarted.cs region=click}}
-	        void radButton1_Click(object sender, EventArgs e)
-	        {
-	            timer1.Enabled = true;
-	        }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\TrackAndStatus\ProgressBar\ProgressGettingStarted.cs region=click}} 
+{{source=..\SamplesVB\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=click}} 
 
-{{source=..\SamplesVB\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=click}}
-	    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        Timer1.Enabled = True
-	    End Sub
-	{{endregion}}
+````C#
+        void radButton1_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+````
+````VB.NET
+    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+        Timer1.Enabled = True
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 

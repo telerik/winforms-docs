@@ -1,8 +1,8 @@
 ---
 title: GridViewRatingColumn
-page_title: GridViewRatingColumn
+page_title: GridViewRatingColumn | UI for WinForms Documentation
 description: GridViewRatingColumn
-slug: gridview-columns-gridviewratingcolumn
+slug: winforms/gridview/columns/column-types/gridviewratingcolumn
 tags: gridviewratingcolumn
 published: True
 position: 15
@@ -18,28 +18,13 @@ GridViewRatingColumn allows you to represent and edit numeric value as rating el
       ![gridview-columns-gridviewratingcolumn 001](images/gridview-columns-gridviewratingcolumn001.png)
 
 The following code snippet demonstrates how to create and add GridViewRatingColumn to RadGridView and also add some sample data in it:
-      
+      #__
 
-#### ____
-
-{{source=..\SamplesCS\GridView\Columns\GridViewRatingColumn1.cs region=RatingColumn}}
 	
-	            GridViewRatingColumn column = new GridViewRatingColumn("Rating Column");
-	            radGridView1.Columns.Add(column);
+
+#__
+
 	
-	            radGridView1.Rows.Add(20);
-	            radGridView1.Rows.Add(35);
-	            radGridView1.Rows.Add(70);
-	            radGridView1.Rows.Add(3);
-	            radGridView1.Rows.Add(18);
-	
-	{{endregion}}
-
-
-
-#### ____
-
-
 
 
 

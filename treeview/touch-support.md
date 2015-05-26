@@ -1,8 +1,8 @@
 ---
 title: Touch Support
-page_title: Touch Support
+page_title: Touch Support | UI for WinForms Documentation
 description: Touch Support
-slug: treeview-touch-support
+slug: winforms/treeview/touch-support
 tags: touch,support
 published: True
 position: 11
@@ -29,4 +29,6 @@ To drag a node together with its children to a new position, simply drag the des
 Here you can see the dragged "*Search Folders*" section from the bottom of the left tree to the top of the right one
             ![treeview-touch-support 004](images/treeview-touch-support004.png)
 
-# See Also[Windows Touch Gestures](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx)
+# See Also
+
+ * [Windows Touch Gestures](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx)

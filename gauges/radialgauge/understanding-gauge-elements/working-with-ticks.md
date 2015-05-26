@@ -1,8 +1,8 @@
 ---
 title: Working with ticks
-page_title: Working with ticks
+page_title: Working with ticks | UI for WinForms Documentation
 description: Working with ticks
-slug: radialgauge-understanding-gauge-elements-working-with-ticks
+slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-ticks
 tags: working,with,ticks
 published: True
 position: 3
@@ -21,7 +21,12 @@ The following properties allow you to modify the ticks' look:
 
 * __TicksCount__ - specifies how many ticks will be displayed. On the following picture
               the black ticks are 24, but the red ticks are 72.
-            ![radialgauge-understanding-gauge-elements-working-with-ticks 002](images/radialgauge-understanding-gauge-elements-working-with-ticks002.png)
+            
+
+>note  __RadRadialGauge__ always displays one additional tick to the __TicksCount__ in order to 
+                distribute the ticks correctly on the arc.
+>
+![radialgauge-understanding-gauge-elements-working-with-ticks 002](images/radialgauge-understanding-gauge-elements-working-with-ticks002.png)
 
 * __TickStartIndexVisibleRange__ - specifies at which index the visible ticks range will start. On the following picture
               the red ticks start from index 45:

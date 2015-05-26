@@ -1,8 +1,8 @@
 ---
 title: Validation
-page_title: Validation
+page_title: Validation | UI for WinForms Documentation
 description: Validation
-slug: propertygrid-editors-validation
+slug: winforms/propertygrid/editors/validation
 tags: validation
 published: True
 position: 2
@@ -34,52 +34,56 @@ The code snippet below demonstrates simple data validation scenario. It is perfo
 			event we check if an empty string is entered, if this is the case the validation fails, the error
 			indicator is shown and the event is canceled. If the value entered is valid in the 
 			__Edited__ event we reset the error text and the error indicator is hidden:
-		
+		#_[C#] Property validation_
 
-#### __[C#] Property validation__
-
-{{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridValidation.cs region=PropertyValidating}}
-	        void radPropertyGrid1_PropertyValidating(object sender, PropertyValidatingEventArgs e)
-	        {
-	            PropertyGridItem item = e.Item as PropertyGridItem;
 	
-	            if (item.PropertyType == typeof(string))
-	            {
-	                if (string.IsNullOrEmpty(e.NewValue.ToString()))
-	                {
-	                    item.ErrorMessage = "String value must not be an empty string!";
-	                    e.Cancel = true;
-	                }
-	            }
-	        }
-	
-	        void radPropertyGrid1_Edited(object sender, PropertyGridItemEditedEventArgs e)
-	        {
-	            PropertyGridItem item = e.Item as PropertyGridItem;
-	            item.ErrorMessage = "";
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET] Property validation__
+{{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridValidation.cs region=PropertyValidating}} 
+{{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridValidation.vb region=PropertyValidating}} 
 
-{{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridValidation.vb region=PropertyValidating}}
-	    Private Sub radPropertyGrid1_PropertyValidating(ByVal sender As Object, ByVal e As PropertyValidatingEventArgs)
-	        Dim item As PropertyGridItem = TryCast(e.Item, PropertyGridItem)
-	
-	        If item.PropertyType Is GetType(String) Then
-	            If String.IsNullOrEmpty(e.NewValue.ToString()) Then
-	                item.ErrorMessage = "String value must not be an empty string!"
-	                e.Cancel = True
-	            End If
-	        End If
-	    End Sub
-	
-	    Private Sub radPropertyGrid1_Edited(ByVal sender As Object, ByVal e As PropertyGridItemEditedEventArgs)
-	        Dim item As PropertyGridItem = TryCast(e.Item, PropertyGridItem)
-	        item.ErrorMessage = ""
-	    End Sub
-	{{endregion}}
+````C#
+        void radPropertyGrid1_PropertyValidating(object sender, PropertyValidatingEventArgs e)
+        {
+            PropertyGridItem item = e.Item as PropertyGridItem;
+
+            if (item.PropertyType == typeof(string))
+            {
+                if (string.IsNullOrEmpty(e.NewValue.ToString()))
+                {
+                    item.ErrorMessage = "String value must not be an empty string!";
+                    e.Cancel = true;
+                }
+            }
+        }
+
+        void radPropertyGrid1_Edited(object sender, PropertyGridItemEditedEventArgs e)
+        {
+            PropertyGridItem item = e.Item as PropertyGridItem;
+            item.ErrorMessage = "";
+        }
+````
+````VB.NET
+    Private Sub radPropertyGrid1_PropertyValidating(ByVal sender As Object, ByVal e As PropertyValidatingEventArgs)
+        Dim item As PropertyGridItem = TryCast(e.Item, PropertyGridItem)
+
+        If item.PropertyType Is GetType(String) Then
+            If String.IsNullOrEmpty(e.NewValue.ToString()) Then
+                item.ErrorMessage = "String value must not be an empty string!"
+                e.Cancel = True
+            End If
+        End If
+    End Sub
+
+    Private Sub radPropertyGrid1_Edited(ByVal sender As Object, ByVal e As PropertyGridItemEditedEventArgs)
+        Dim item As PropertyGridItem = TryCast(e.Item, PropertyGridItem)
+        item.ErrorMessage = ""
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 ![propertygrid-editors-validation](images/propertygrid-editors-validation.png)

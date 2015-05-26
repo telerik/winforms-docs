@@ -1,8 +1,8 @@
 ---
 title: Save and Load Layout
-page_title: Save and Load Layout
+page_title: Save and Load Layout | UI for WinForms Documentation
 description: Save and Load Layout
-slug: lineargauge-save-and-load-layout
+slug: winforms/gauges/lineargauge/save-and-load-layout
 tags: save,and,load,layout
 published: True
 position: 5
@@ -22,22 +22,26 @@ You can easily save/load the layout with the smart tag.![lineargauge-save-and-lo
 
 ## Run Time
 
-You can save/load the layout in code as well.
+You can save/load the layout in code as well.#_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\Gauges\LinearGauge\LinearGuageGettingStarted.cs region=code}}
-	            radLinearGauge1.SaveLayout("Layout.xml");
-	            radLinearGauge1.LoadLayout("Layout.xml");
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\Gauges\LinearGauge\LinearGuageGettingStarted.cs region=code}} 
+{{source=..\SamplesVB\Gauges\LinearGauge\LinearGuageGettingStarted.vb region=code}} 
 
-{{source=..\SamplesVB\Gauges\LinearGauge\LinearGuageGettingStarted.vb region=code}}
-	        radLinearGauge1.SaveLayout("Layout.xml")
-	        radLinearGauge1.LoadLayout("Layout.xml")
-	{{endregion}}
+````C#
+            radLinearGauge1.SaveLayout("Layout.xml");
+            radLinearGauge1.LoadLayout("Layout.xml");
+````
+````VB.NET
+        radLinearGauge1.SaveLayout("Layout.xml")
+        radLinearGauge1.LoadLayout("Layout.xml")
+        '
+````
+
+{{endregion}} 
+
 
 

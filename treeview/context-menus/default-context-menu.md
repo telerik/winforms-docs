@@ -1,8 +1,8 @@
 ---
 title: Default Context Menu
-page_title: Default Context Menu
+page_title: Default Context Menu | UI for WinForms Documentation
 description: Default Context Menu
-slug: treeview-context-menus-default-context-menu
+slug: winforms/treeview/context-menus/default-context-menu
 tags: default,context,menu
 published: True
 position: 0
@@ -49,21 +49,25 @@ __Enabling the default context menu__
 The default context menu is not enabled by default and if you
           right-click a node, it will not appear on the screen. In order to enable it, you should set the
           __AllowDefaultContextMenu__ property to *true*:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=defaultMenu}}
-	            this.radTreeView1.AllowDefaultContextMenu = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=defaultMenu}} 
+{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=defaultMenu}} 
 
-{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=defaultMenu}}
-	        Me.RadTreeView1.AllowDefaultContextMenu = True
-	{{endregion}}
+````C#
+            this.radTreeView1.AllowDefaultContextMenu = true;
+````
+````VB.NET
+        Me.RadTreeView1.AllowDefaultContextMenu = True
+        '
+````
+
+{{endregion}} 
+
 
 ![treeview-context-menus-default-context-menu 001](images/treeview-context-menus-default-context-menu001.png)
 
@@ -73,60 +77,72 @@ This will display only a small subset of all available menu items. Please note t
 
 
           To enable the New item, you should set the __AllowAdd__ property to *true*:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=allowAdd}}
-	            this.radTreeView1.AllowAdd = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=allowAdd}} 
+{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowAdd}} 
 
-{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowAdd}}
-	        Me.RadTreeView1.AllowAdd = True
-	{{endregion}}
+````C#
+            this.radTreeView1.AllowAdd = true;
+````
+````VB.NET
+        Me.RadTreeView1.AllowAdd = True
+        '
+````
+
+{{endregion}} 
+
 
 ![treeview-context-menus-default-context-menu 002](images/treeview-context-menus-default-context-menu002.png)
 
 __Enabling the Edit item__
           To enable the Edit item, you should set the __AllowEdit__ property to *true*:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=allowEdit}}
-	            this.radTreeView1.AllowEdit = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=allowEdit}} 
+{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowEdit}} 
 
-{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowEdit}}
-	        Me.RadTreeView1.AllowEdit = True
-	{{endregion}}
+````C#
+            this.radTreeView1.AllowEdit = true;
+````
+````VB.NET
+        Me.RadTreeView1.AllowEdit = True
+        '
+````
+
+{{endregion}} 
+
 
 ![treeview-context-menus-default-context-menu 005](images/treeview-context-menus-default-context-menu005.png)
 
 __Enabling the Delete item__
           To enable the Delete item, you should set the __AllowRemove__ property to *true*:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=allowRemove}}
-	            this.radTreeView1.AllowRemove = true;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=allowRemove}} 
+{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowRemove}} 
 
-{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowRemove}}
-	        Me.RadTreeView1.AllowRemove = True
-	{{endregion}}
+````C#
+            this.radTreeView1.AllowRemove = true;
+````
+````VB.NET
+        Me.RadTreeView1.AllowRemove = True
+        '
+````
+
+{{endregion}} 
+
 
 ![treeview-context-menus-default-context-menu 004](images/treeview-context-menus-default-context-menu004.png)

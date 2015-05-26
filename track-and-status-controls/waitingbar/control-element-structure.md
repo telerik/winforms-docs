@@ -1,8 +1,8 @@
 ---
 title: Control Element Structure
-page_title: Control Element Structure
+page_title: Control Element Structure | UI for WinForms Documentation
 description: Control Element Structure
-slug: track-and-status-controls-waitingbar-control-element-structure
+slug: winforms/track-and-status-controls/waitingbar/control-element-structure
 tags: control,element,structure
 published: True
 position: 2

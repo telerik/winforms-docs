@@ -1,8 +1,8 @@
 ---
 title: GridViewDataColumn
-page_title: GridViewDataColumn
+page_title: GridViewDataColumn | UI for WinForms Documentation
 description: GridViewDataColumn
-slug: gridview-columns-gridviewdatacolumn
+slug: winforms/gridview/columns/column-types/gridviewdatacolumn
 tags: gridviewdatacolumn
 published: True
 position: 1
@@ -31,6 +31,6 @@ __GridViewDataColumn__descends from GridViewColumn and is the base class for all
 
 * __FormatString__ allows you to tailor the output of strings, numbers and dates using standard formatting strings. 
 
-See [Iterating Columns]({%slug gridview-columns-iterating-columns%}) for an example of using GridViewDataColumn.
+See [Iterating Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%}) for an example of using GridViewDataColumn.
 
-See [Data Formatting]({%slug gridview-columns-data-formatting%}) for an example of formatting GridViewDataColumns.
+See [Data Formatting]({%slug winforms/gridview/columns/data-formatting%}) for an example of formatting GridViewDataColumns.

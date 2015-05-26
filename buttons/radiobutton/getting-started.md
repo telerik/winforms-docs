@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: buttons-radiobutton-getting-started
+slug: winforms/buttons/radiobutton/getting-started
 tags: getting,started
 published: True
 position: 0
@@ -34,30 +34,33 @@ The following tutorial demonstrates creating two groups of radio buttons that ac
 1. Click the __Events__ tab of the Properties Window.
 
 1. Double click the __ToggleStateChanged__ event to create an event handler. Replace the code with the following:
-          	
+          	#_[C#] Handling the ToggleStateChanged Event_
 
-#### __[C#] Handling the ToggleStateChanged Event__
-
-{{source=..\SamplesCS\Buttons\RadioButton.cs region=handlingToggleStateChanged}}
 	
-	        void radRadioButton1_ToggleStateChanged(object sender, StateChangedEventArgs args)
-	        {
-	 	        lblStatus.Text = (sender as RadRadioButton).Text + " is selected";
-	        }
-	
-	{{endregion}}
 
 
 
-#### __[VB.NET] Handling the ToggleStateChanged Event__
+{{source=..\SamplesCS\Buttons\RadioButton.cs region=handlingToggleStateChanged}} 
+{{source=..\SamplesVB\Buttons\RadioButton.vb region=handlingToggleStateChanged}} 
 
-{{source=..\SamplesVB\Buttons\RadioButton.vb region=handlingToggleStateChanged}}
-	
-	    Private Sub radRadioButton1_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
-	        lblStatus.Text = (TryCast(sender, RadRadioButton)).Text + " is selected"
-	    End Sub
-	
-	{{endregion}}
+````C#
+
+        void radRadioButton1_ToggleStateChanged(object sender, StateChangedEventArgs args)
+        {
+ 	        lblStatus.Text = (sender as RadRadioButton).Text + " is selected";
+        }
+````
+````VB.NET
+
+    Private Sub radRadioButton1_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
+        lblStatus.Text = (TryCast(sender, RadRadioButton)).Text + " is selected"
+    End Sub
+
+    '
+````
+
+{{endregion}} 
+
 
 
 

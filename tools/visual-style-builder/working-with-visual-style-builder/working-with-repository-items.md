@@ -1,8 +1,8 @@
 ---
 title: Working With Repository Items
-page_title: Working With Repository Items
+page_title: Working With Repository Items | UI for WinForms Documentation
 description: Working With Repository Items
-slug: tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items
+slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items
 tags: working,with,repository,items
 published: True
 position: 0
@@ -13,23 +13,18 @@ position: 0
 
 
 ## 
-<table><tr><td>
 
-RELATED VIDEOS</td></tr><tr><td>
 
-Introduction to the Visual Style Builder for
-                WinForms
-              
 
-In this recorded webinar, you will learn how
+|RELATED VIDEOS|
+|Introduction to the Visual Style Builder for
+                WinFormsIn this recorded webinar, you will learn how
               to build themes using the latest version of Visual Style
               Builder. You will also learn what Theme Repositories are
               and how they make creating themes easier. (Runtime:
-              42:56)![tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items 007](images/tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items007.png)
-
-[
+              42:56)![tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items 007](images/tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items007.png)[
                     Introduction to the New Visual Style Builder for WinForms
-                  ](http://tv.telerik.com/winforms/visualstylebuilder/introduction-new-visual-style-builder-winforms)</td></tr></table>
+                  ](http://tv.telerik.com/winforms/visualstylebuilder/introduction-new-visual-style-builder-winforms)|
 
 ## Overview
 
@@ -90,6 +85,27 @@ The LightVisualElement is a special type of primitive class that supports
           elements in the Visual Style Builder, the repository is filtered appropriately
           to display all repository items available.
         
+
+>caution It is important to
+            understand the difference between different primitives (Border, Fill, Arrow
+            etc.) and the LightVisualElement type. LightVisualElement supports multiple
+            types of repository items since it basically encapsulates the functionality
+            of a border, fill, text and image primitive. Therefore, when you select an
+            element in the Elements list that is actually an instance of the
+            LightVisualElement class (used in RadGridView, RadScheduler and
+            RadCalendar), you simply need to assign to it the different types of
+            repositories in order to style it according to your requirements, i.e. you
+            can associate a border repository item, fill and image simultaneously and
+            its appearance will be properly adjusted (the cells of a grid, scheduler,
+            or calendar).
+
+            This is not the case with elements made up of different primitives as
+            border, fill and image. You will need to separately select and style each
+            primitive from the Elements grid for the different states in this case (a
+            good example is RadButtonElement and its
+            children).
+>
+
 
 ## Associating Repository Items with Elements and States
 
@@ -172,10 +188,17 @@ The ‘Edit Repository Item ‘ dialog is automatically adjusted to show
 
 
 
->When defining
+>caution The properties in
+            bold have values defined in the repository item while the others have their
+            default values.
+>
+
+
+>note When defining
             repository item key you should make sure that the key is unique in order to
             create/save the item.
-          
+>
+
 
 The Animate State Transition checkbox determines whether the repository
           item’s property values will be animated when a state of the element, to which
@@ -188,6 +211,21 @@ The Animate State Transition checkbox determines whether the repository
           pressing the "Save As New" button. The "Save As New" button is only visible
           when an already existing repository item is opened for edit.
         
+
+>caution When changing a
+            repository item’s key it is important to know that each property setting
+            group (a group of style settings within a StyleSheet) that uses this
+            repository item should be updated to reference the new key. The Visual
+            Style Builder allows for renaming a repository item’s key and updates the
+            references of all property setting groups that are currently __ *loaded* __ . However, imagine that you create a
+            couple of themes that use the same repository and save them. After that
+            reopen them by selecting the repository and some of the files saved (not
+            all). If you now rename a repository item’s key, the Visual Style Builder
+            will update all references in the loaded StyleSheets but those left
+            unloaded will still continue using old keys which will break the
+            stylesheet.
+>
+
 
 
 

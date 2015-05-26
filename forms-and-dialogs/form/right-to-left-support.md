@@ -1,8 +1,8 @@
 ---
 title: Right-To-Left Support
-page_title: Right-To-Left Support
+page_title: Right-To-Left Support | UI for WinForms Documentation
 description: Right-To-Left Support
-slug: forms-and-dialogs-form-right-to-left-support
+slug: winforms/forms-and-dialogs/form/right-to-left-support
 tags: right-to-left,support
 published: True
 position: 5

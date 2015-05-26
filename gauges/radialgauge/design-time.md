@@ -1,8 +1,8 @@
 ---
 title: Design time
-page_title: Design time
+page_title: Design time | UI for WinForms Documentation
 description: Design time
-slug: radialgauge-design-time
+slug: winforms/gauges/radialgauge/design-time
 tags: design,time
 published: True
 position: 2

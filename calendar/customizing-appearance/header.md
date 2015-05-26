@@ -1,8 +1,8 @@
 ---
 title: Header
-page_title: Header
+page_title: Header | UI for WinForms Documentation
 description: Header
-slug: calendar-customizing-appearance-header
+slug: winforms/calendar/customizing-appearance/header
 tags: header
 published: True
 position: 2
@@ -82,7 +82,7 @@ Control title alignment using the __TitleAlign__ property.
 
 
 * 
-Control title format using the __TitleFormat__ property.  For details about available format characters see the [Date Format Pattern]({%slug calendar-localization-date-format-pattern%}) topic.
+Control title format using the __TitleFormat__ property.  For details about available format characters see the [Date Format Pattern]({%slug winforms/calendar/localization/date-format-pattern%}) topic.
 
 
 * 

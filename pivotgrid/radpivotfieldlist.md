@@ -1,8 +1,8 @@
 ---
 title: RadPivotFieldList
-page_title: RadPivotFieldList
+page_title: RadPivotFieldList | UI for WinForms Documentation
 description: RadPivotFieldList
-slug: pivotgrid-radpivotfieldlist
+slug: winforms/pivotgrid/radpivotfieldlist
 tags: radpivotfieldlist
 published: True
 position: 6

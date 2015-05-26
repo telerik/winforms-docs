@@ -1,8 +1,8 @@
 ---
 title: New Item
-page_title: New Item
+page_title: New Item | UI for WinForms Documentation
 description: New Item
-slug: pageview-stripview-new-item
+slug: winforms/pageview/stripview/new-item
 tags: new,item
 published: True
 position: 2
@@ -32,43 +32,27 @@ You can easily show the NewItem by setting the __NewItemVisibility__ property of
 * __End__: The NewItem appears at the end of the row of page items in the items strip area.
               ![pageview-stripview-new-item 003](images/pageview-stripview-new-item003.png)              
                 Here is how to set the NewItemVisibility property:
-                
+                #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\PageView\NewItem.cs region=settingNewItemVisibility}}
-	            RadPageViewStripElement stripElement = this.radPageView1.ViewElement as RadPageViewStripElement;
-	            stripElement.NewItemVisibility = StripViewNewItemVisibility.End;
-	{{endregion}}
-
-
-
-#### __[VB.NET]__
-
-{{source=..\SamplesVB\PageView\NewItem.vb region=settingNewItemVisibility}}
-	        Dim stripElement As RadPageViewStripElement = TryCast(Me.RadPageView1.ViewElement, RadPageViewStripElement)
-	        stripElement.NewItemVisibility = StripViewNewItemVisibility.End
-	        '#EndRegion
 	
-	        stripElement.NewItemVisibility = StripViewNewItemVisibility.Hidden
-	        stripElement.NewItemVisibility = StripViewNewItemVisibility.Front
-	
-	        AddHandler RadPageView1.NewPageRequested, AddressOf radPageView1_NewPageRequested
-	    End Sub
-	
-	    '#region newPageRequested
-	    Private Sub radPageView1_NewPageRequested(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim pageView As RadPageView = TryCast(sender, RadPageView)
-	        Dim stripElement As RadPageViewStripElement = TryCast(pageView.ViewElement, RadPageViewStripElement)
-	
-	        Dim page As New RadPageViewPage()
-	        page.Text = "New Page"
-	        pageView.Pages.Add(page)
-	
-	        pageView.SelectedPage = page
-	        pageView.ViewElement.EnsureItemVisible(stripElement.NewItem)
-	    End Sub
-	{{endregion}}
+
+
+
+{{source=..\SamplesCS\PageView\NewItem.cs region=settingNewItemVisibility}} 
+{{source=..\SamplesVB\PageView\NewItem.vb region=settingNewItemVisibility}} 
+
+````C#
+            RadPageViewStripElement stripElement = this.radPageView1.ViewElement as RadPageViewStripElement;
+            stripElement.NewItemVisibility = StripViewNewItemVisibility.End;
+````
+````VB.NET
+        Dim stripElement As RadPageViewStripElement = TryCast(Me.RadPageView1.ViewElement, RadPageViewStripElement)
+        stripElement.NewItemVisibility = StripViewNewItemVisibility.End
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -79,42 +63,46 @@ When the NewItem is clicked by the end-user, RadPageView throws an event called 
           create a new RadPageViewPage instance and add it to RadPageView. In the following code snippet we create a new RadPageViewPage,
           add it to RadPageView, select the newly created page, and make sure that the page item is fully visible by calling the
           EnsureItemVisible method.
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\PageView\NewItem.cs region=newPageRequested}}
-	        void radPageView1_NewPageRequested(object sender, EventArgs e)
-	        {
-	            RadPageView pageView = sender as RadPageView;
-	            RadPageViewStripElement stripElement = pageView.ViewElement as RadPageViewStripElement;
 	
-	            RadPageViewPage page = new RadPageViewPage();
-	            page.Text = "New Page";
-	            pageView.Pages.Add(page);
-	
-	            pageView.SelectedPage = page;
-	            pageView.ViewElement.EnsureItemVisible(stripElement.NewItem);
-	        }
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\PageView\NewItem.cs region=newPageRequested}} 
+{{source=..\SamplesVB\PageView\NewItem.vb region=newPageRequested}} 
 
-{{source=..\SamplesVB\PageView\NewItem.vb region=newPageRequested}}
-	    Private Sub radPageView1_NewPageRequested(ByVal sender As Object, ByVal e As EventArgs)
-	        Dim pageView As RadPageView = TryCast(sender, RadPageView)
-	        Dim stripElement As RadPageViewStripElement = TryCast(pageView.ViewElement, RadPageViewStripElement)
-	
-	        Dim page As New RadPageViewPage()
-	        page.Text = "New Page"
-	        pageView.Pages.Add(page)
-	
-	        pageView.SelectedPage = page
-	        pageView.ViewElement.EnsureItemVisible(stripElement.NewItem)
-	    End Sub
-	{{endregion}}
+````C#
+        void radPageView1_NewPageRequested(object sender, EventArgs e)
+        {
+            RadPageView pageView = sender as RadPageView;
+            RadPageViewStripElement stripElement = pageView.ViewElement as RadPageViewStripElement;
+
+            RadPageViewPage page = new RadPageViewPage();
+            page.Text = "New Page";
+            pageView.Pages.Add(page);
+
+            pageView.SelectedPage = page;
+            pageView.ViewElement.EnsureItemVisible(stripElement.NewItem);
+        }
+````
+````VB.NET
+    Private Sub radPageView1_NewPageRequested(ByVal sender As Object, ByVal e As EventArgs)
+        Dim pageView As RadPageView = TryCast(sender, RadPageView)
+        Dim stripElement As RadPageViewStripElement = TryCast(pageView.ViewElement, RadPageViewStripElement)
+
+        Dim page As New RadPageViewPage()
+        page.Text = "New Page"
+        pageView.Pages.Add(page)
+
+        pageView.SelectedPage = page
+        pageView.ViewElement.EnsureItemVisible(stripElement.NewItem)
+    End Sub
+    '
+````
+
+{{endregion}} 
+
 
 
 

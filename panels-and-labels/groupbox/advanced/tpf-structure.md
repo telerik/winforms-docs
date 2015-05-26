@@ -1,8 +1,8 @@
 ---
 title: TPF structure
-page_title: TPF structure
+page_title: TPF structure | UI for WinForms Documentation
 description: TPF structure
-slug: panels-and-labels-groupbox-advanced-tpf-structure
+slug: winforms/panels-and-labels/groupbox/advanced/tpf-structure
 tags: tpf,structure
 published: True
 position: 0
@@ -12,7 +12,9 @@ position: 0
 
 
 
->This is an advanced section. You should read this section if you want to create a custom theme or want to get to know better the internal structure of RadGroupBox.
+>note This is an advanced section. You should read this section if you want to create a custom theme or want to get to know better the internal structure of RadGroupBox.
+>
+
 
 Like all Telerik *WinForms* controls *RadGroupBox *is build upon *Telerik Presentation Framework *(TPF). TPF consists of various elements (such as primitives and layouts) that are the building blocks of the controls. The *RadGroupBox* tree structure is given on the screenshot below: ![panels-and-labels-groupbox-advanced-tpf-structure 001](images/panels-and-labels-groupbox-advanced-tpf-structure001.png)
 
@@ -38,52 +40,62 @@ Please refer to Architecture section for more information about the building bl
 
 ## Code samples
 
->The code samples below are just a demonstration of how you can set node properties programmatically. You will probably prefer to use
-          the Visual Style Builder to create your themes using no code. 
+>note The code samples below are just a demonstration of how you can set node properties programmatically. You will probably prefer to use
+          the Visual Style Builder to create your themes using no code.
+>
+
 
 ## Example 1
 
 The code sample below access the *FillPrimitive* of the header, changes the first two gradient stop colors to red and yellow,
         and then the gradient style to linear. *GroupBoxElement* property of the control returns the *RadGroupBoxElement*,
         then the code access the *GroupBoxHeader* - Children[1] - finally the code access the *FillPrimitive *-
-        Children[0] - which is cast to *FillPrimitive *so that you can use its properties like *GradientStyle*.
+        Children[0] - which is cast to *FillPrimitive *so that you can use its properties like *GradientStyle*.#_[C#] Change the GroupBox header color_
 
-#### __[C#] Change the GroupBox header color__
-
-{{source=..\SamplesCS\PanelsAndLabels\GroupBox\Advanced\TPFStructure.cs region=changeTheHeaderColor}}
-	            ((FillPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[0]).BackColor = Color.Red;
-	            ((FillPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[0]).BackColor2 = Color.Yellow;
-	            ((FillPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[0]).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Change the GroupBox header color__
+{{source=..\SamplesCS\PanelsAndLabels\GroupBox\Advanced\TPFStructure.cs region=changeTheHeaderColor}} 
+{{source=..\SamplesVB\PanelsAndLabels\GroupBox\Advanced\TPFStructure.vb region=changeTheHeaderColor}} 
 
-{{source=..\SamplesVB\PanelsAndLabels\GroupBox\Advanced\TPFStructure.vb region=changeTheHeaderColor}}
-	        DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(0), FillPrimitive).BackColor = Color.Red
-	        DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(0), FillPrimitive).BackColor2 = Color.Yellow
-	        DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(0), FillPrimitive).GradientStyle = Telerik.WinControls.GradientStyles.Linear
-	{{endregion}}
+````C#
+            ((FillPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[0]).BackColor = Color.Red;
+            ((FillPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[0]).BackColor2 = Color.Yellow;
+            ((FillPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[0]).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
+````
+````VB.NET
+        DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(0), FillPrimitive).BackColor = Color.Red
+        DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(0), FillPrimitive).BackColor2 = Color.Yellow
+        DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(0), FillPrimitive).GradientStyle = Telerik.WinControls.GradientStyles.Linear
+        '
+````
+
+{{endregion}} 
+
 
 
 
 ## Example 2
 
-The code snippet below makes the *BorderPrimitive* of the Header invisible:
+The code snippet below makes the *BorderPrimitive* of the Header invisible:#_[C#] Change the GroupBox header border_
 
-#### __[C#] Change the GroupBox header border__
-
-{{source=..\SamplesCS\PanelsAndLabels\GroupBox\Advanced\TPFStructure.cs region=changeTheHeaderBorder}}
-	            ((BorderPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[1]).Visibility = Telerik.WinControls.ElementVisibility.Hidden;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Change the GroupBox header border__
+{{source=..\SamplesCS\PanelsAndLabels\GroupBox\Advanced\TPFStructure.cs region=changeTheHeaderBorder}} 
+{{source=..\SamplesVB\PanelsAndLabels\GroupBox\Advanced\TPFStructure.vb region=changeTheHeaderBorder}} 
 
-{{source=..\SamplesVB\PanelsAndLabels\GroupBox\Advanced\TPFStructure.vb region=changeTheHeaderBorder}}
-	        DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(1), BorderPrimitive).Visibility = Telerik.WinControls.ElementVisibility.Hidden
-	{{endregion}}
+````C#
+            ((BorderPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[1]).Visibility = Telerik.WinControls.ElementVisibility.Hidden;
+````
+````VB.NET
+        DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(1), BorderPrimitive).Visibility = Telerik.WinControls.ElementVisibility.Hidden
+        '
+````
+
+{{endregion}} 
+
 
 

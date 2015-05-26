@@ -1,8 +1,8 @@
 ---
 title: Position
-page_title: Position
+page_title: Position | UI for WinForms Documentation
 description: Position
-slug: pdfprocessing-concepts-position
+slug: winforms/pdfprocessing/concepts/position
 tags: position
 published: True
 position: 4
@@ -15,8 +15,9 @@ position: 4
 The __Position__ property exposed by the __PositionContentElement__ abstract class is used for manipulating the position of elements.
       
 
->tipYou can find a diagram representing the structure in __RadPdfProcessing__[here]({%slug pdfprocessing-model%}).
-        
+>tip You can find a diagram representing the structure in __RadPdfProcessing__ [here]({%slug winforms/pdfprocessing/model%}).
+>
+
 
 The position is represented by the __IPosition__ interface which provides the following methods:
       
@@ -32,7 +33,7 @@ __void ScaleAt(double scaleX, double scaleY, double centerX, double centerY)__: 
 __void Rotate(double angle)__: Applies the specified rotation.
       
 
-__void RotateAt(double="" angle, double centerX, double centerY)__: Applies the specified rotation about the specified coordinates.
+__void RotateAt(double angle, double centerX, double centerY)__: Applies the specified rotation about the specified coordinates.
       
 
 __void Translate(double offsetX, double offsetY)__: Applies the specified translation.
@@ -54,7 +55,7 @@ IPosition interface is implemented by the following classes:
 
 * [SimplePosition](#simpleposition)
 
-By default, PositionContentElements use MatrixPosition, whereas [FixedContentEditor]({%slug pdfprocessing-editing-fixedcontenteditor%}) uses SimplePosition.
+By default, PositionContentElements use MatrixPosition, whereas [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}) uses SimplePosition.
       
 
 ## MatrixPosition
@@ -66,25 +67,29 @@ The __MatrixPosition__ class exposes a static __Default__ property, which repres
         
 
 __Example 1__ shows how transformations can be appended.
-        
+        #_[C#] Example 1: Trasform MatrixPosition_
 
-#### __[C#] Example 1: Trasform MatrixPosition__
-
-{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsPosition.cs region=radpdfprocessing-concepts-position_0}}
-	            MatrixPosition matrixPosition = new MatrixPosition();
-	            matrixPosition.Translate(20, 20); // Translates the position by (20, 20)
-	            matrixPosition.Translate(30, 30); // Translates the position by (30, 30).
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 1: Trasform MatrixPosition__
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsPosition.cs region=radpdfprocessing-concepts-position_0}} 
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsPosition.vb region=radpdfprocessing-concepts-position_0}} 
 
-{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsPosition.vb region=radpdfprocessing-concepts-position_0}}
-	        Dim matrixPosition As MatrixPosition = New MatrixPosition()
-	        matrixPosition.Translate(20, 20) ' Translates the position by (20, 20)
-	        matrixPosition.Translate(30, 30) ' Translates the position by (30, 30).
-	{{endregion}}
+````C#
+            MatrixPosition matrixPosition = new MatrixPosition();
+            matrixPosition.Translate(20, 20); // Translates the position by (20, 20)
+            matrixPosition.Translate(30, 30); // Translates the position by (30, 30).
+````
+````VB.NET
+        Dim matrixPosition As MatrixPosition = New MatrixPosition()
+        matrixPosition.Translate(20, 20) ' Translates the position by (20, 20)
+        matrixPosition.Translate(30, 30) ' Translates the position by (30, 30).
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -109,25 +114,29 @@ The __SimplePosition__ class exposes a static __Default__ property which represe
         
 
 __Example 2__ shows how transformations overwrite the previous transformations of the same type:
-        
+        #_[C#] Example 2: Trasform SimplePosition_
 
-#### __[C#] Example 2: Trasform SimplePosition__
-
-{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsPosition.cs region=radpdfprocessing-concepts-position_1}}
-	            SimplePosition simplePosition = new SimplePosition();
-	            simplePosition.Translate(20, 20); // Translates the position by (30, 30).
-	            simplePosition.Translate(30, 30); // Translates the position by (20, 20) overwriting the previous translations.
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Example 2: Trasform SimplePosition__
+{{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsPosition.cs region=radpdfprocessing-concepts-position_1}} 
+{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsPosition.vb region=radpdfprocessing-concepts-position_1}} 
 
-{{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsPosition.vb region=radpdfprocessing-concepts-position_1}}
-	        Dim simplePosition As SimplePosition = New SimplePosition()
-	        simplePosition.Translate(20, 20) ' Translates the position by (30, 30).
-	        simplePosition.Translate(30, 30) ' Translates the position by (20, 20) overwriting the previous translations.
-	{{endregion}}
+````C#
+            SimplePosition simplePosition = new SimplePosition();
+            simplePosition.Translate(20, 20); // Translates the position by (30, 30).
+            simplePosition.Translate(30, 30); // Translates the position by (20, 20) overwriting the previous translations.
+````
+````VB.NET
+        Dim simplePosition As SimplePosition = New SimplePosition()
+        simplePosition.Translate(20, 20) ' Translates the position by (30, 30).
+        simplePosition.Translate(30, 30) ' Translates the position by (20, 20) overwriting the previous translations.
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -136,6 +145,6 @@ The resulting simple position was translated both horizontally and vertically by
 
 # See Also
 
- * [Model]({%slug pdfprocessing-model%})
+ * [Model]({%slug winforms/pdfprocessing/model%})
 
- * [FixedContentEditor]({%slug pdfprocessing-editing-fixedcontenteditor%})
+ * [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%})

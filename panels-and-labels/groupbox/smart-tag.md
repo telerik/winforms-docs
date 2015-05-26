@@ -1,8 +1,8 @@
 ---
 title: Smart Tag
-page_title: Smart Tag
+page_title: Smart Tag | UI for WinForms Documentation
 description: Smart Tag
-slug: panels-and-labels-groupbox-smart-tag
+slug: winforms/panels-and-labels/groupbox/smart-tag
 tags: smart,tag
 published: True
 position: 2

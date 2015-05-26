@@ -1,8 +1,8 @@
 ---
 title: Customizing the Start Menu
-page_title: Customizing the Start Menu
+page_title: Customizing the Start Menu | UI for WinForms Documentation
 description: Customizing the Start Menu
-slug: ribbonbar-customizing-the-start-menu
+slug: winforms/ribbonbar/getting-started/customizing-the-start-menu
 tags: customizing,the,start,menu
 published: True
 position: 9
@@ -14,7 +14,7 @@ position: 9
 
 The Start Menu is a menu that is displayed when you click on the Office Button in the upper left corner of the Telerik RadRibbonBar:![ribbonbar-customizing-the-start-menu 002](images/ribbonbar-customizing-the-start-menu002.png)
 
-The Start Menu can contain the same elements as the [RadMenu]({%slug menus-menu-overview%}):
+The Start Menu can contain the same elements as the [RadMenu]({%slug winforms/menus/menu%}):
       
 
 * Menu items, displayed as either images, text, or both 
@@ -80,24 +80,30 @@ To handle events from a Start Menu item, follow these steps:
 
 ## Setting an Image to the RadRibbonBar Start Menu
 
-You can easily set an Image to the __RadRibbonBar__ Start Menu by accessing the __StartButtonImage__property of the __RadRibbonBar__control:
+You can easily set an Image to the __RadRibbonBar__ Start Menu by accessing the __StartButtonImage__property of the __RadRibbonBar__control:#_[C#] Set RibbonBar start button image_
 
-#### __[C#] Set RibbonBar start button image__
-
-{{source=..\SamplesCS\RibbonBar\GettingStarted\CustomizingTheStartMenu.cs region=StartButtonImage}}
-	            this.radRibbonBar1.StartButtonImage = startMenuButtonImage;
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Set RibbonBar start button image__
+{{source=..\SamplesCS\RibbonBar\GettingStarted\CustomizingTheStartMenu.cs region=StartButtonImage}} 
+{{source=..\SamplesVB\RibbonBar\GettingStarted\CustomizingTheStartMenu.vb region=StartButtonImage}} 
 
-{{source=..\SamplesVB\RibbonBar\GettingStarted\CustomizingTheStartMenu.vb region=StartButtonImage}}
-	        Me.RadRibbonBar1.StartButtonImage = startMenuButtonImage
-	{{endregion}}
+````C#
+            this.radRibbonBar1.StartButtonImage = startMenuButtonImage;
+````
+````VB.NET
+        Me.RadRibbonBar1.StartButtonImage = startMenuButtonImage
+        '
+````
+
+{{endregion}} 
 
 
 
 
 
->The size of the RadRibbonBar Start Button will be automatically adjusted to fit the size of the image set. Unappropriate image sizes might lead to undesired visual appearance of the button.
+
+>note The size of the RadRibbonBar Start Button will be automatically adjusted to fit the size of the image set. Unappropriate image sizes might lead to undesired visual appearance of the button.
+>
+

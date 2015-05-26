@@ -1,8 +1,8 @@
 ---
 title: Working with Bars
-page_title: Working with Bars
+page_title: Working with Bars | UI for WinForms Documentation
 description: Working with Bars
-slug: lineargauge-elements-working-with-bars
+slug: winforms/gauges/lineargauge/elements/working-with-bars
 tags: working,with,bars
 published: True
 position: 0

@@ -1,8 +1,8 @@
 ---
 title: Touch Support
-page_title: Touch Support
+page_title: Touch Support | UI for WinForms Documentation
 description: Touch Support
-slug: commandbar-touch-support
+slug: winforms/commandbar/touch-support
 tags: touch,support
 published: True
 position: 7
@@ -20,4 +20,6 @@ To drag a strip, perform a drag operation started at the he beginning of the des
 
 Here is the result of dragging the top strip to the right![commandbar-touch-support 002](images/commandbar-touch-support002.png)
 
-# See Also[Windows Touch Gestures](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx)
+# See Also
+
+ * [Windows Touch Gestures](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx)

@@ -1,8 +1,8 @@
 ---
 title: Localization Provider
-page_title: Localization Provider
+page_title: Localization Provider | UI for WinForms Documentation
 description: Localization Provider
-slug: calendar-localization-localization-provider
+slug: winforms/calendar/localization/localization-provider
 tags: localization,provider
 published: True
 position: 5
@@ -26,64 +26,72 @@ To localize RadCalendar to display control text and messages in a specific langu
 ## 
 
 Below is a sample implementation of an English localization provider:
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Calendar\Localization\LocalizationProvider.cs region=Localization}}
-	    public class MyEnglishCalendarLocalizationProvider : CalendarLocalizationProvider
-	    {
-	        public override string GetLocalizedString(string id)
-	        {
-	            switch (id)
-	            {
-	                case CalendarStringId.CalendarClearButton:
-	                    return "Close";
-	                case CalendarStringId.CalendarTodayButton:
-	                    return "Today";
-	                default:
-	                    return base.GetLocalizedString(id);
-	            }
-	        }
-	    }
-	{{endregion}}
+	
 
 
 
-#### __[VB]__
+{{source=..\SamplesCS\Calendar\Localization\LocalizationProvider.cs region=Localization}} 
+{{source=..\SamplesVB\Calendar\Localization\LocalizationProvider.vb region=Localization}} 
 
-{{source=..\SamplesVB\Calendar\Localization\LocalizationProvider.vb region=Localization}}
-	Public Class MyEnglishCalendarLocalizationProvider
-	    Inherits CalendarLocalizationProvider
-	    Public Overrides Function GetLocalizedString(id As String) As String
-	        Select Case id
-	            Case CalendarStringId.CalendarClearButton
-	                Return "Clear"
-	            Case CalendarStringId.CalendarTodayButton
-	                Return "Today"
-	            Case Else
-	                Return MyBase.GetLocalizedString(id)
-	        End Select
-	    End Function
-	End Class
-	{{endregion}}
+````C#
+    public class MyEnglishCalendarLocalizationProvider : CalendarLocalizationProvider
+    {
+        public override string GetLocalizedString(string id)
+        {
+            switch (id)
+            {
+                case CalendarStringId.CalendarClearButton:
+                    return "Close";
+                case CalendarStringId.CalendarTodayButton:
+                    return "Today";
+                default:
+                    return base.GetLocalizedString(id);
+            }
+        }
+    }
+````
+````VB.NET
+Public Class MyEnglishCalendarLocalizationProvider
+    Inherits CalendarLocalizationProvider
+    Public Overrides Function GetLocalizedString(id As String) As String
+        Select Case id
+            Case CalendarStringId.CalendarClearButton
+                Return "Clear"
+            Case CalendarStringId.CalendarTodayButton
+                Return "Today"
+            Case Else
+                Return MyBase.GetLocalizedString(id)
+        End Select
+    End Function
+End Class
+'
+````
+
+{{endregion}} 
 
 
 
-To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
-#### __[C#]__
+To apply the custom localization provider, instantiate and assign it to the current localization provider: #_[C#]_
 
-{{source=..\SamplesCS\Calendar\Localization\LocalizationProvider.cs region=Usage}}
-	            CalendarLocalizationProvider.CurrentProvider = new MyEnglishCalendarLocalizationProvider();
-	{{endregion}}
+	
 
 
 
-#### __[VB]__
+{{source=..\SamplesCS\Calendar\Localization\LocalizationProvider.cs region=Usage}} 
+{{source=..\SamplesVB\Calendar\Localization\LocalizationProvider.vb region=Usage}} 
 
-{{source=..\SamplesVB\Calendar\Localization\LocalizationProvider.vb region=Usage}}
-	        CalendarLocalizationProvider.CurrentProvider = New MyEnglishCalendarLocalizationProvider()
-	{{endregion}}
+````C#
+            CalendarLocalizationProvider.CurrentProvider = new MyEnglishCalendarLocalizationProvider();
+````
+````VB.NET
+        CalendarLocalizationProvider.CurrentProvider = New MyEnglishCalendarLocalizationProvider()
+        '
+````
+
+{{endregion}} 
+
 
 

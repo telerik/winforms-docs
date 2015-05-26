@@ -1,8 +1,8 @@
 ---
 title: Editing Themes
-page_title: Editing Themes
+page_title: Editing Themes | UI for WinForms Documentation
 description: Editing Themes
-slug: tools-visual-style-builder-adding-custom-themes-to-your-application-editing-themes
+slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/editing-themes
 tags: editing,themes
 published: True
 position: 3
@@ -44,3 +44,9 @@ To edit the list of themes loaded into a Theme Manager, follow these steps:
 
 1. Set the__StorageType__ and __ThemeLocation__ properties to your desired values. 
         
+
+>caution When setting the __ThemeLocation__ for a __Resource__ storage type be sure to include the project 
+            namespace. The naming convention for ThemeManager to find the resource is <my project namespace>.<theme name>.xml. In project
+            "MyProject" with theme resource file "MyTheme.xml", the fully qualified resource name should be entered as "MyProject.MyTheme.XML".
+>
+

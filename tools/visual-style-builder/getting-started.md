@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: tools-visual-style-builder-getting-started
+slug: winforms/tools/visual-style-builder/getting-started
 tags: getting,started
 published: True
 position: 3
@@ -39,23 +39,18 @@ In this article we are going to demonstrate how to create and apply a repository
 
 ## Creating a new Repository Item
 
->For more information or repository items, check the
-            [Theme Repository](47712B3D-4DF8-44F3-AA3F-8F354D53AA91) topic.
-          ![tools-visual-style-builder-getting-started 002](images/tools-visual-style-builder-getting-started002.png)
+>note For more information or repository items, check the[Theme Repository](47712B3D-4DF8-44F3-AA3F-8F354D53AA91)topic.
+>
+![tools-visual-style-builder-getting-started 002](images/tools-visual-style-builder-getting-started002.png)
 
 This is the Text Repository Item editor dialog. As discussed in the Theme Repository article, each repository item has a unique key and a display name. You can edit these properties by using the corresponding text boxes at the upper part of the form. In this demonstration, the repository item is called ‘WhiteSegoeUI12’. Its key is given the same value.
 
->tipNote: It is important to give your repository items clear and straightforward names related either to their appearance, or to the cases they are used in. Good repository item names might be:
-          
-
+>tip Note: It is important to give your repository items clear and straightforward names related either to their appearance, or to the cases they are used in. Good repository item names might be:
+>
 * PressedButtonFill
-              
-
 * OrangeLinearFill
-              
+* TransparentFill>
 
-* TransparentFill
-              
 
 In this way you will be able to quickly associate the repository item with the appearance it will give to the element or the case it is used in (pressed/hovered button etc.).
           In our case, the name of the Repository Item is ‘WhiteSegoeUI12’ and, obviously, it describes the settings contained in this item:
@@ -108,26 +103,30 @@ Now, by using the same approach demonstrated above, you can associate the reposi
 At the end, the Visual Style Builder main form should look the following way (the arrows demonstrate the repository item-state associations):![tools-visual-style-builder-getting-started 013](images/tools-visual-style-builder-getting-started013.png)
 
 With this, you have finished styling the RadButton control. Now, you can save the theme and use it throughout your application. For further information on how to handle loading/saving themes, read the Handling Themes help article.
-<table><th><tr><td>
 
-RELATED VIDEOS</td><td></td></tr></th><tr><td>[What's New in Visual Style Builder for Q1 2010](http://tv.telerik.com/winforms/visualstylebuilder/whats-new-visual-style-builder-q1-2010)
+>caution It is important to know that styles applied for a given state are not reset when the item goes to another state. This might confuse those who are not familiar with this behavior.
+> __Scenario:__ We have a button with Normal, MouseOver and Pressed states. We also have a couple of repository items which we use to style the button for the different states. Let’s say that the first repository item we assign fill to the button for its Normal state, which sets its BackColor, BackColor2, BackColor3, GradientStyle  and NumberOfColors properties. The NumberOfColors property is set to 3 and the GradientStyle property is set to Linear. After associating the repository item to the Normal state of the button, the styles are applied correctly. Now, let’s say that we associate another repository item with the MouseOver state of the button that defines settings for the BackColor, BackColor2, BackColor3, BackColor4 properties, also for the GradientStyle (=Linear), but does not define setting for the NumberOfColors property. In this case, when we hover the button, the fill will not look as expected since its BackColor4 property value will not be visible. The reason for this will be that the NumberOfColors property will remain set to 3 as defined by the repository item assigned to the Normal state of the item.
+> __The main conclusion that we should make here is that each state must be assigned a style that defines all properties needed for the expected appearance of the element.__ This is the general approach when styling items in order to avoid confusion.
+>For more information see[Precedence Example: Visibility Property]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/precedence-example:-visibility-property%})at the end of this tutorial.
+>
 
-In this video, you will learn about all of the incredible new features included with the Q1 2010 version of Visual Style Builder. (Runtime: 15:13)
-              </td><td>
 
-![tools-visual-style-builder-getting-started 0015](images/tools-visual-style-builder-getting-started0015.png)</td></tr><tr><td>[Styling Basics with Visual Style Builder for WinForms](http://tv.telerik.com/winforms/visualstylebuilder/styling-basics-with-visual-style-builder-winforms)
 
-In this video, you will learn how to create a basic theme using repositories in Visual Style Builder for WinForms. You will then learn how to use this theme in your Telerik UI for WinForms based applications. (Runtime: 09:12)
-              </td><td>
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[What's New in Visual Style Builder for Q1 2010](http://tv.telerik.com/winforms/visualstylebuilder/whats-new-visual-style-builder-q1-2010)In this video, you will learn about all of the incredible new features included with the Q1 2010 version of Visual Style Builder. (Runtime: 15:13)|
+>caption 
 
-![tools-visual-style-builder-getting-started 0016](images/tools-visual-style-builder-getting-started0016.png)</td></tr><tr><td>[Introduction to the Visual Style Builder for WinForms](http://tv.telerik.com/winforms/visualstylebuilder/introduction-new-visual-style-builder-winforms)
+![tools-visual-style-builder-getting-started 0015](images/tools-visual-style-builder-getting-started0015.png)|
+|[Styling Basics with Visual Style Builder for WinForms](http://tv.telerik.com/winforms/visualstylebuilder/styling-basics-with-visual-style-builder-winforms)In this video, you will learn how to create a basic theme using repositories in Visual Style Builder for WinForms. You will then learn how to use this theme in your Telerik UI for WinForms based applications. (Runtime: 09:12)|
+>caption 
 
-In this recorded webinar, you will learn how to build themes using the latest version of Visual Style Builder. You will also learn what Theme Repositories are and how they make creating themes easier. (Runtime: 42:56)
-              </td><td>
+![tools-visual-style-builder-getting-started 0016](images/tools-visual-style-builder-getting-started0016.png)|
+|[Introduction to the Visual Style Builder for WinForms](http://tv.telerik.com/winforms/visualstylebuilder/introduction-new-visual-style-builder-winforms)In this recorded webinar, you will learn how to build themes using the latest version of Visual Style Builder. You will also learn what Theme Repositories are and how they make creating themes easier. (Runtime: 42:56)|
+>caption 
 
-![tools-visual-style-builder-getting-started 0015](images/tools-visual-style-builder-getting-started0015.png)</td></tr><tr><td>[Changing Themes at Run Time with Telerik UI for WinForms](http://tv.telerik.com/winforms/visualstylebuilder/changing-themes-at-run-time-with-radcontrols-winforms)
+![tools-visual-style-builder-getting-started 0015](images/tools-visual-style-builder-getting-started0015.png)|
+|[Changing Themes at Run Time with Telerik UI for WinForms](http://tv.telerik.com/winforms/visualstylebuilder/changing-themes-at-run-time-with-radcontrols-winforms)In this video, you will learn how to give your users the ability to choose between Telerik themes and custom themes at run time. (Runtime: 08:42)|
+>caption 
 
-In this video, you will learn how to give your users the ability to choose between Telerik themes and custom themes at run time. (Runtime: 08:42)
-              </td><td>
-
-![tools-visual-style-builder-getting-started 0014](images/tools-visual-style-builder-getting-started0014.png)</td></tr></table>
+![tools-visual-style-builder-getting-started 0014](images/tools-visual-style-builder-getting-started0014.png)|

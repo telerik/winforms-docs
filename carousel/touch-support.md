@@ -1,8 +1,8 @@
 ---
 title: Touch support
-page_title: Touch support
+page_title: Touch support | UI for WinForms Documentation
 description: Touch support
-slug: carousel-touch-support
+slug: winforms/carousel/touch-support
 tags: touch,support
 published: True
 position: 4
@@ -22,4 +22,6 @@ As you can see on the following image, the planet that we touched is now selecte
 
 ![carousel-touch-support 002](images/carousel-touch-support002.png)
 
-# See Also[Windows Touch Gestures](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx)
+# See Also
+
+ * [Windows Touch Gestures](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx)

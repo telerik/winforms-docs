@@ -1,8 +1,8 @@
 ---
 title: Styles
-page_title: Styles
+page_title: Styles | UI for WinForms Documentation
 description: Styles
-slug: wordsprocessing-concepts-styles
+slug: winforms/wordsprocessing/concepts/styles
 tags: styles
 published: True
 position: 4
@@ -16,7 +16,7 @@ __RadFlowDocument__ includes repository of
         [Styles](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_styles_style.html)
         objects which contain sets of character, paragraph or table [style properties](f795e0b6-c807-4424-b4bb-bcb4625f475f). They provide
         rich editing capabilities with consistent look over different content inside the document. Styles allow formatting properties to be stored and managed
-        independently from the content. [RadFlowDocument]({%slug wordsprocessing-model-radflowdocument%}) keeps its styles in __StyleRepository__
+        independently from the content. [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%}) keeps its styles in __StyleRepository__
         object accessible through the __RadFlowDocument.StyleRepository__ property.
       
 
@@ -85,25 +85,25 @@ A style can contain one or more of five different sets of style properties, depe
           __TableCellProperties__. There are three types of styles:
         
 
-* __Character styles__: Used to contain properties of a [Run]({%slug wordsprocessing-model-run%}) such as:
+* __Character styles__: Used to contain properties of a [Run]({%slug winforms/wordsprocessing/model/run%}) such as:
               font style, font size, font family, font-weight, etc. Styles of this type contain only __CharacterProperties__> set of style properties.
             
 
-* __Paragraph styles__: Used to contain properties of a [Paragraph]({%slug wordsprocessing-model-paragraph%}) such as: text
+* __Paragraph styles__: Used to contain properties of a [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}) such as: text
               alignment, spacing (before and after), indentation, etc. Styles of this type contain __ParagraphProperties__ and
               __CharacterProperties__ sets of style properties, where character properties are used to format the __Runs__
               inside the styled __Paragraph__.
             
 
-* __Table styles__: Used to contain properties of a [Table]({%slug wordsprocessing-model-table%}) and table-related
-              document elements ([TableRow]({%slug wordsprocessing-model-tablerow%}) and [TableCell]({%slug wordsprocessing-model-tablecell%}) ), such as
+* __Table styles__: Used to contain properties of a [Table]({%slug winforms/wordsprocessing/model/table%}) and table-related
+              document elements ([TableRow]({%slug winforms/wordsprocessing/model/tablerow%}) and [TableCell]({%slug winforms/wordsprocessing/model/tablecell%}) ), such as
               borders, background, alignment, padding, etc. Styles of this type contain __TableProperties__, __TableRowProperties__,
               __TableCellProperties__, __ParagraphProperties__ and __CharacterProperties__ sets
               of style properties, where table row and table cell properties are used to format child __TableRows__ and __TableCells__,
               paragraph and character properties are used to format the __Paragraphs__ and __Runs__ in the styled table.
             
 
-* __Numbering styles__: Used to represent a [Lists]({%slug wordsprocessing-concepts-lists%}) in the user interface of an application. 
+* __Numbering styles__: Used to represent a [Lists]({%slug winforms/wordsprocessing/concepts/lists%}) in the user interface of an application. 
               Style with this type cannot be referenced directly by document elements. It holds only information about the associated list.
             
 
@@ -111,31 +111,13 @@ A style can contain one or more of five different sets of style properties, depe
 
 A style should be added to __RadFlowDocument__'s style repository in order to be further applied to elements and participate
           in style properties evaluation process. For example the following code creates a table style and adds it to the style repository:
-        
+        #_C#_
 
-#### __C#__
+	
 
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingStyles.cs region=radwordsprocessing-concepts-styles_0}}
-	            Style tableStyle = new Style("TableStyle", StyleType.Table);
-	            tableStyle.Name = "Table Style";
-	            tableStyle.TableProperties.Borders.LocalValue = new TableBorders(new Border(1, Telerik.Windows.Documents.Flow.Model.Styles.BorderStyle.Single, new ThemableColor(Colors.Blue)));
-	            tableStyle.TableProperties.Alignment.LocalValue = Alignment.Center;
-	            tableStyle.TableCellProperties.VerticalAlignment.LocalValue = VerticalAlignment.Center;
-	            document.StyleRepository.Add(tableStyle);
-	{{endregion}}
+#_C#_
 
-
-
-#### __C#__
-
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyles.vb region=radwordsprocessing-concepts-styles_0}}
-	            Dim tableStyle As New Style("TableStyle", StyleType.Table)
-	            tableStyle.Name = "Table Style"
-	            tableStyle.TableProperties.Borders.LocalValue = New TableBorders(New Border(1, Telerik.Windows.Documents.Flow.Model.Styles.BorderStyle.[Single], New ThemableColor(Colors.Blue)))
-	            tableStyle.TableProperties.Alignment.LocalValue = Alignment.Center
-	            tableStyle.TableCellProperties.VerticalAlignment.LocalValue = VerticalAlignment.Center
-	            document.StyleRepository.Add(tableStyle)
-	{{endregion}}
+	
 
 
 
@@ -154,11 +136,10 @@ Default style is style which, according to its style type , is applied to object
               __TableCell__ document elements.
             
 
->If you want to set default values for properties of all __Run__ and __Paragraph__ document elements, it is
-            convenient to use __CharacterPoperties__ and __ParagraphProperties__ stored in
-            __RadFlowDocument.DefaultStyle__ property. Setting default values for properties for all __Table__,
-            __TableRow__ and __TableCell__ document elements should be done in the default table style - "TableNormal".
-          
+>note If you want to set default values for properties of all __Run__ and __Paragraph__ document elements, it is
+            convenient to use __CharacterPoperties__ and __ParagraphProperties__ stored in __RadFlowDocument.DefaultStyle__ property. Setting default values for properties for all __Table__ , __TableRow__ and __TableCell__ document elements should be done in the default table style - "TableNormal".
+>
+
 
 ## Built-in Styles
 
@@ -169,23 +150,13 @@ Built-in styles are commonly used styles which are predefined for convenience. T
 [BuiltInStyleNames](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_styles_builtInstylenames.html)
           static class contains properties and methods for getting the IDs of all built-in styles. For example, the following code gets the ID of the
           "Heading 1" built-in style:
-        
+        #_C#_
 
-#### __C#__
+	
 
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingStyles.cs region=radwordsprocessing-concepts-styles_1}}
-	            string heading1StyleId = BuiltInStyleNames.GetHeadingStyleIdByIndex(1);
-	            Style heading1Style = document.StyleRepository.AddBuiltInStyle(heading1StyleId);
-	{{endregion}}
+#_C#_
 
-
-
-#### __C#__
-
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyles.vb region=radwordsprocessing-concepts-styles_1}}
-	            Dim heading1StyleId As String = BuiltInStyleNames.GetHeadingStyleIdByIndex(1)
-	            Dim heading1Style As Style = document.StyleRepository.AddBuiltInStyle(heading1StyleId)
-	{{endregion}}
+	
 
 
 
@@ -227,11 +198,13 @@ When evaluating the actual value of a style property in one of the style propert
               stored in RadFlowDocument.DefaultStyles property has local value, this value is used.
             
 
->__*__If a style is of character or paragraph style type it takes into consideration the default style only if it is based on it.
-          
+>note  __*__ If a style is of character or paragraph style type it takes into consideration the default style only if it is based on it.
+>
 
->tipSome of the style properties always have local value set.
-          
+
+>tip Some of the style properties always have local value set.
+>
+
 
 Corresponding style property of the base style is determined depending on the style type using the following rules:
         
@@ -310,14 +283,18 @@ Linked styles can be based on other linked styles or on paragraph styles.
 * Character properties inherit the character properties from the base linked character style.
                     
 
-# See Also[Styles API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_styles_style.html)
+# See Also
 
- * [RadFlowDocument]({%slug wordsprocessing-model-radflowdocument%})
+ * [Styles API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_styles_style.html)
 
- * [Run]({%slug wordsprocessing-model-run%})
+ * [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%})
 
- * [Paragraph]({%slug wordsprocessing-model-paragraph%})
+ * [Run]({%slug winforms/wordsprocessing/model/run%})
 
- * [Table]({%slug wordsprocessing-model-table%})[BuiltInStyleNames](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_styles_builtInstylenames.html)
+ * [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%})
 
- * [Lists]({%slug wordsprocessing-concepts-lists%})
+ * [Table]({%slug winforms/wordsprocessing/model/table%})
+
+ * [BuiltInStyleNames](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_styles_builtInstylenames.html)
+
+ * [Lists]({%slug winforms/wordsprocessing/concepts/lists%})

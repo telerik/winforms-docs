@@ -1,8 +1,8 @@
 ---
 title: Working with RadRotator
-page_title: Working with RadRotator
+page_title: Working with RadRotator | UI for WinForms Documentation
 description: Working with RadRotator
-slug: rotator-working-with-radrotator
+slug: winforms/rotator/working-with-radrotator
 tags: working,with,radrotator
 published: True
 position: 1
@@ -18,7 +18,7 @@ The significant properties unique to __RadRotator__ are:
 
 ## Items
 
-The __RadRotator Items collection__ can contain a wide array of possible __RadElement__types. To add to the collection at design-time, click the __Items__ property ellipses button to display the __Rad Items Collection Editor__. Use the __Add__ split button to locate and select one of the available item types. In particular, __RadImageItem__wraps a standard Image object (look for the __Image__ and __ImageIndex__ properties of __RadImageItem__), __RadWebBrowserItem__ can be used to display a web page by specifying the __Url__property. See the [Getting Started]({%slug rotator-getting-started%}) topic for an example using these properties.
+The __RadRotator Items collection__ can contain a wide array of possible __RadElement__types. To add to the collection at design-time, click the __Items__ property ellipses button to display the __Rad Items Collection Editor__. Use the __Add__ split button to locate and select one of the available item types. In particular, __RadImageItem__wraps a standard Image object (look for the __Image__ and __ImageIndex__ properties of __RadImageItem__), __RadWebBrowserItem__ can be used to display a web page by specifying the __Url__property. See the [Getting Started]({%slug winforms/rotator/getting-started%}) topic for an example using these properties.
 
 ## Running
 

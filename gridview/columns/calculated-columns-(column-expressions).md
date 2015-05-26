@@ -1,8 +1,8 @@
 ---
 title: Calculated Columns (Column Expressions)
-page_title: Calculated Columns (Column Expressions)
+page_title: Calculated Columns (Column Expressions) | UI for WinForms Documentation
 description: Calculated Columns (Column Expressions)
-slug: gridview-columns-calculated-columns-(column-expressions)
+slug: winforms/gridview/columns/calculated-columns-(column-expressions)
 tags: calculated,columns,(column,expressions)
 published: True
 position: 8
@@ -14,29 +14,33 @@ position: 8
 
 A calculated column is identified by an expression. The only condition necessary to make a regular column behave like a calculated column is to set an expression to it. 
 
-The following code snippet demonstrates how the standard deviation of the *Consumption *column can be computed for each month in the *Deviation *column.
+The following code snippet demonstrates how the standard deviation of the *Consumption *column can be computed for each month in the *Deviation *column.#_[C#] Creating a calculated column_
 
-#### __[C#] Creating a calculated column__
-
-{{source=..\SamplesCS\GridView\Columns\CalculatedColumn.cs region=calculatedColumn}}
-	            GridViewDecimalColumn col = new GridViewDecimalColumn();
-	            col.Name = "Calculated Column";
-	            col.HeaderText = "Order value";
-	            radGridView1.Columns.Add(col);
-	            radGridView1.Columns["Calculated Column"].Expression = "UnitsOnOrder * UnitPrice";
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Creating a calculated column__
+{{source=..\SamplesCS\GridView\Columns\CalculatedColumn.cs region=calculatedColumn}} 
+{{source=..\SamplesVB\GridView\Columns\CalculatedColumn.vb region=calculatedColumn}} 
 
-{{source=..\SamplesVB\GridView\Columns\CalculatedColumn.vb region=calculatedColumn}}
-	        Dim col = New GridViewDecimalColumn()
-	        col.Name = "Calculated Column"
-	        col.HeaderText = "Order value"
-	        RadGridView1.Columns.Add(col)
-	        RadGridView1.Columns("Calculated Column").Expression = "UnitsOnOrder * UnitPrice"
-	{{endregion}}
+````C#
+            GridViewDecimalColumn col = new GridViewDecimalColumn();
+            col.Name = "Calculated Column";
+            col.HeaderText = "Order value";
+            radGridView1.Columns.Add(col);
+            radGridView1.Columns["Calculated Column"].Expression = "UnitsOnOrder * UnitPrice";
+````
+````VB.NET
+        Dim col = New GridViewDecimalColumn()
+        col.Name = "Calculated Column"
+        col.HeaderText = "Order value"
+        RadGridView1.Columns.Add(col)
+        RadGridView1.Columns("Calculated Column").Expression = "UnitsOnOrder * UnitPrice"
+        '
+````
+
+{{endregion}} 
+
 
 ![gridview-columns-calculated-columns-column-expressions 001](images/gridview-columns-calculated-columns-column-expressions001.png)
 

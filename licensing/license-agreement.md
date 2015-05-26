@@ -1,8 +1,8 @@
 ---
 title: License Agreement
-page_title: License Agreement
+page_title: License Agreement | UI for WinForms Documentation
 description: License Agreement
-slug: licensing-license-agreement
+slug: winforms/licensing/license-agreement
 tags: license,agreement
 published: True
 position: 0

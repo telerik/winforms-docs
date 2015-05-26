@@ -1,8 +1,8 @@
 ---
 title: Working with RadSplitButton Items
-page_title: Working with RadSplitButton Items
+page_title: Working with RadSplitButton Items | UI for WinForms Documentation
 description: Working with RadSplitButton Items
-slug: buttons-splitbutton-working-with-radsplitbutton-items
+slug: winforms/buttons/splitbutton/working-with-radsplitbutton-items
 tags: working,with,radsplitbutton,items
 published: True
 position: 0
@@ -32,91 +32,97 @@ In the property grid you will find many of the standard control properties, incl
 
 ## Adding Items at Run Time in Code
 
-You can also add items to RadSplitButton in code at run time. The following example code illustrates programmatically adding a __RadMenuItem__ to your button.
+You can also add items to RadSplitButton in code at run time. The following example code illustrates programmatically adding a __RadMenuItem__ to your button.#_[C#] Adding a RadMenuItem_
 
-#### __[C#] Adding a RadMenuItem__
-
-{{source=..\SamplesCS\Buttons\SplitButton.cs region=items}}
 	
-	        private void Form1_Load(object sender, EventArgs e)
-	        {
-	            RadMenuItem myRadMenuItem = new RadMenuItem();
-	            myRadMenuItem.Text = "My New Item";
-	            myRadMenuItem.Click += new EventHandler(myRadMenuItem_Click);
-	            radSplitButton1.Items.Add(myRadMenuItem);
-	        }
+
+
+
+{{source=..\SamplesCS\Buttons\SplitButton.cs region=items}} 
+{{source=..\SamplesVB\Buttons\SplitButton.vb region=items}} 
+
+````C#
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            RadMenuItem myRadMenuItem = new RadMenuItem();
+            myRadMenuItem.Text = "My New Item";
+            myRadMenuItem.Click += new EventHandler(myRadMenuItem_Click);
+            radSplitButton1.Items.Add(myRadMenuItem);
+        }
+
+        void myRadMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show((sender as RadMenuItem).Text);
+        }
+````
+````VB.NET
+
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Dim myRadMenuItem As New RadMenuItem()
+        myRadMenuItem.Text = "My New Item"
+        AddHandler myRadMenuItem.Click, AddressOf myRadMenuItem_Click
+        radSplitButton1.Items.Add(myRadMenuItem)
+    End Sub
+
+    Sub myRadMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+        MessageBox.Show((TryCast(sender, RadMenuItem)).Text)
+    End Sub
+
+    '
+````
+
+{{endregion}} 
+
+
+
+
+Create item hierarchies in code by adding new __RadMenuItem__ objects to the __Items__ collection of your existing __RadMenuItem__.#_[C#] Adding a sub item_
+
 	
-	        void myRadMenuItem_Click(object sender, EventArgs e)
-	        {
-	            MessageBox.Show((sender as RadMenuItem).Text);
-	        }
-	
-	{{endregion}}
 
 
 
-#### __[VB.NET] Adding a RadMenuItem__
+{{source=..\SamplesCS\Buttons\SplitButton1.cs region=subitems}} 
+{{source=..\SamplesVB\Buttons\SplitButton1.vb region=subitems}} 
 
-{{source=..\SamplesVB\Buttons\SplitButton.vb region=items}}
-	
-	    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-	        Dim myRadMenuItem As New RadMenuItem()
-	        myRadMenuItem.Text = "My New Item"
-	        AddHandler myRadMenuItem.Click, AddressOf myRadMenuItem_Click
-	        radSplitButton1.Items.Add(myRadMenuItem)
-	    End Sub
-	
-	    Sub myRadMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        MessageBox.Show((TryCast(sender, RadMenuItem)).Text)
-	    End Sub
-	
-	{{endregion}}
+````C#
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            radSplitButton1.Items.Add(new RadMenuItem("AAA"));
 
+            RadMenuItem mySubMenuItem = new RadMenuItem();
+            mySubMenuItem.Text = "Submenu Item";
+            mySubMenuItem.Click += new EventHandler(mySubMenuItem_Click);
+            RadMenuItem mainItem = radSplitButton1.Items[0] as RadMenuItem;
+            mainItem.Items.Add(mySubMenuItem);
+        }
 
-Create item hierarchies in code by adding new __RadMenuItem__ objects to the __Items__ collection of your existing __RadMenuItem__.
+        void mySubMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show((sender as RadMenuItem).Text);
+        }
+````
+````VB.NET
 
-#### __[C#] Adding a sub item__
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Dim mySubMenuItem As New RadMenuItem()
+        mySubMenuItem.Text = "Submenu Item"
+        AddHandler mySubMenuItem.Click, AddressOf mySubMenuItem_Click
+        Dim mainItem As RadMenuItem = TryCast(radSplitButton1.Items(0), RadMenuItem)
+        mainItem.Items.Add(mySubMenuItem)
+    End Sub
 
-{{source=..\SamplesCS\Buttons\SplitButton1.cs region=subitems}}
-	
-	        private void Form1_Load(object sender, EventArgs e)
-	        {
-	            radSplitButton1.Items.Add(new RadMenuItem("AAA"));
-	
-	            RadMenuItem mySubMenuItem = new RadMenuItem();
-	            mySubMenuItem.Text = "Submenu Item";
-	            mySubMenuItem.Click += new EventHandler(mySubMenuItem_Click);
-	            RadMenuItem mainItem = radSplitButton1.Items[0] as RadMenuItem;
-	            mainItem.Items.Add(mySubMenuItem);
-	        }
-	
-	        void mySubMenuItem_Click(object sender, EventArgs e)
-	        {
-	            MessageBox.Show((sender as RadMenuItem).Text);
-	        }
-	
-	{{endregion}}
+    Sub mySubMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+        MessageBox.Show((TryCast(sender, RadMenuItem)).Text)
+    End Sub
 
+    '
+````
 
+{{endregion}} 
 
-#### __[VB.NET] Adding a sub item__
-
-{{source=..\SamplesVB\Buttons\SplitButton1.vb region=subitems}}
-	
-	    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-	        Dim mySubMenuItem As New RadMenuItem()
-	        mySubMenuItem.Text = "Submenu Item"
-	        AddHandler mySubMenuItem.Click, AddressOf mySubMenuItem_Click
-	        Dim mainItem As RadMenuItem = TryCast(radSplitButton1.Items(0), RadMenuItem)
-	        mainItem.Items.Add(mySubMenuItem)
-	    End Sub
-	
-	    Sub mySubMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-	        MessageBox.Show((TryCast(sender, RadMenuItem)).Text)
-	    End Sub
-	
-	{{endregion}}
 
 
 
@@ -134,24 +140,27 @@ To handle the __Click__ event of RadMenuItems on the drop down menu, locate the
 
 ## Setting the Default Item
 
-The default item is the item whose __Click__ event is triggered by the user pressing the button, instead of choosing from the menu. The DefaultItem can be assigned in code: 
+The default item is the item whose __Click__ event is triggered by the user pressing the button, instead of choosing from the menu. The DefaultItem can be assigned in code: #_[C#] Assigning the default item_
 
-#### __[C#] Assigning the default item__
-
-{{source=..\SamplesCS\Buttons\SplitButton1.cs region=mainItem}}
 	
-	            radSplitButton1.DefaultItem = mainItem;
-	
-	{{endregion}}
 
 
 
-#### __[VB.NET] Assigning the default item__
+{{source=..\SamplesCS\Buttons\SplitButton1.cs region=mainItem}} 
+{{source=..\SamplesVB\Buttons\SplitButton1.vb region=mainItem}} 
 
-{{source=..\SamplesVB\Buttons\SplitButton1.vb region=mainItem}}
-	
-	        radSplitButton1.DefaultItem = mainItem
-	
-	{{endregion}}
+````C#
+
+            radSplitButton1.DefaultItem = mainItem;
+````
+````VB.NET
+
+        radSplitButton1.DefaultItem = mainItem
+
+        '
+````
+
+{{endregion}} 
+
 
 

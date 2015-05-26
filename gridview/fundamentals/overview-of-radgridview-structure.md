@@ -1,8 +1,8 @@
 ---
 title: Overview of RadGridView Structure
-page_title: Overview of RadGridView Structure
+page_title: Overview of RadGridView Structure | UI for WinForms Documentation
 description: Overview of RadGridView Structure
-slug: gridview-fundamentals-overview-of-radgridview-structure
+slug: winforms/gridview/fundamentals/overview-of-radgridview-structure
 tags: overview,of,radgridview,structure
 published: True
 position: 1
@@ -26,7 +26,7 @@ Depending on the value of __GridViewTemplate.AddNewRowPosition__property, the ne
 
 ## FilteringRow
 
-*FilteringRow *appears automatically when you have [Filtering]({%slug gridview-filtering-basic-filtering%}) enabled by setting __RadGridView.EnableFiltering__ or __GridViewTemplate.EnableFiltering__ properties.![gridview-fundamentals-overview-of-radgridview-structure 004](images/gridview-fundamentals-overview-of-radgridview-structure004.png)
+*FilteringRow *appears automatically when you have [Filtering]({%slug winforms/gridview/filtering/basic-filtering%}) enabled by setting __RadGridView.EnableFiltering__ or __GridViewTemplate.EnableFiltering__ properties.![gridview-fundamentals-overview-of-radgridview-structure 004](images/gridview-fundamentals-overview-of-radgridview-structure004.png)
 
 ## GridViewIndentColumn
 

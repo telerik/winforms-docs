@@ -1,8 +1,8 @@
 ---
 title: Working with single label
-page_title: Working with single label
+page_title: Working with single label | UI for WinForms Documentation
 description: Working with single label
-slug: radialgauge-understanding-gauge-elements-working-with-single-label
+slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-single-label
 tags: working,with,single,label
 published: True
 position: 4

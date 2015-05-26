@@ -1,8 +1,8 @@
 ---
 title: Scheduler Cell Containers
-page_title: Scheduler Cell Containers
+page_title: Scheduler Cell Containers | UI for WinForms Documentation
 description: Scheduler Cell Containers
-slug: scheduler-views-scheduler-cell-containers
+slug: winforms/scheduler/views/scheduler-cell-containers
 tags: scheduler,cell,containers
 published: True
 position: 12
@@ -27,69 +27,76 @@ The __InitializeCells__ and __InitializeAppointments__ methods are used to refre
         and when a change that requires a refresh of the elements occurs (e.g. if you change the DayCount in day view).
         The __AppointmentsRefreshing__ and __CellsRefreshing__ events are fired by these methods before the refresh is performed. 
         These event allow you to cancel the refresh. The __AppointmentRefreshed__ and __CellsRefreshed__ events are fired after the
-        refresh is performed and allow you to do some custom operations over the newly created elements.
+        refresh is performed and allow you to do some custom operations over the newly created elements.#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=initializeSchedulerChildren}}
-	            DayViewAppointmentsTable table = ((SchedulerDayViewElement)this.radScheduler1.ViewElement).DataAreaElement.Table;
-	            table.CellsRefreshed +=table_CellsRefreshed;
-	            table.AppointmentsRefreshed +=table_AppointmentsRefreshed;
 	
-	            table.InitializeCells();
-	            table.InitializeAppointments();
-	            //or use the following method which calls both of the above methods
-	            table.InitializeChildren();
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=initializeSchedulerChildren}} 
+{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=initializeSchedulerChildren}} 
 
-{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=initializeSchedulerChildren}}
-	        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
-	        AddHandler table.CellsRefreshed, AddressOf table_CellsRefreshed
-	        AddHandler table.AppointmentsRefreshed, AddressOf table_AppointmentsRefreshed
+````C#
+            DayViewAppointmentsTable table = ((SchedulerDayViewElement)this.radScheduler1.ViewElement).DataAreaElement.Table;
+            table.CellsRefreshed +=table_CellsRefreshed;
+            table.AppointmentsRefreshed +=table_AppointmentsRefreshed;
+
+            table.InitializeCells();
+            table.InitializeAppointments();
+            //or use the following method which calls both of the above methods
+            table.InitializeChildren();
+````
+````VB.NET
+        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
+        AddHandler table.CellsRefreshed, AddressOf table_CellsRefreshed
+        AddHandler table.AppointmentsRefreshed, AddressOf table_AppointmentsRefreshed
+
+        table.InitializeCells()
+        table.InitializeAppointments()
+        'or use the following method which calls both of the above methods
+        table.InitializeChildren()
+        '
+````
+
+{{endregion}} 
+
+
+#_[C#]_
+
 	
-	        table.InitializeCells()
-	        table.InitializeAppointments()
-	        'or use the following method which calls both of the above methods
-	        table.InitializeChildren()
-	{{endregion}}
 
 
 
-#### __[C#]__
+{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=cellContainerEvents}} 
+{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=cellContainerEvents}} 
 
-{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=cellContainerEvents}}
-	
-	        void table_AppointmentsRefreshed(object sender, EventArgs e)
-	        {
-	            RadMessageBox.Show("Appointments were refreshed");
-	        }
-	
-	        void table_CellsRefreshed(object sender, EventArgs e)
-	        {
-	            RadMessageBox.Show("Cells were refreshed");
-	        }
-	
-	{{endregion}}
+````C#
 
+        void table_AppointmentsRefreshed(object sender, EventArgs e)
+        {
+            RadMessageBox.Show("Appointments were refreshed");
+        }
 
+        void table_CellsRefreshed(object sender, EventArgs e)
+        {
+            RadMessageBox.Show("Cells were refreshed");
+        }
+````
+````VB.NET
 
-#### __[VB.NET]__
+    Private Sub table_AppointmentsRefreshed(sender As Object, e As EventArgs)
+        RadMessageBox.Show("Appointments were refreshed")
+    End Sub
 
-{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=cellContainerEvents}}
-	
-	    Private Sub table_AppointmentsRefreshed(sender As Object, e As EventArgs)
-	        RadMessageBox.Show("Appointments were refreshed")
-	    End Sub
-	
-	    Private Sub table_CellsRefreshed(sender As Object, e As EventArgs)
-	        RadMessageBox.Show("Cells were refreshed")
-	    End Sub
-	
-	{{endregion}}
+    Private Sub table_CellsRefreshed(sender As Object, e As EventArgs)
+        RadMessageBox.Show("Cells were refreshed")
+    End Sub
+
+    '
+````
+
+{{endregion}} 
+
 
 
 
@@ -100,142 +107,162 @@ The __UpdateCells__ and __UpdateAppointments__ are called to synchronize the exi
           Unlike the Initialize methods, these methods leave the elements as they are and just update their properties.
           The Initialize methods call these methods when the new elements are created to update their properties.
           These methods cause the __CellFormatting__ and __AppointmentFormatting__ events respectively.
-        
+        #_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=updateSchedulerChildren}}
-	            DayViewAppointmentsTable table = ((SchedulerDayViewElement)this.radScheduler1.ViewElement).DataAreaElement.Table;
-	            table.UpdateCells();
-	            table.UpdateAppointments();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=updateSchedulerChildren}} 
+{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=updateSchedulerChildren}} 
 
-{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=updateSchedulerChildren}}
-	        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
-	        table.UpdateCells()
-	        table.UpdateAppointments()
-	{{endregion}}
+````C#
+            DayViewAppointmentsTable table = ((SchedulerDayViewElement)this.radScheduler1.ViewElement).DataAreaElement.Table;
+            table.UpdateCells();
+            table.UpdateAppointments();
+````
+````VB.NET
+        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
+        table.UpdateCells()
+        table.UpdateAppointments()
+        '
+````
+
+{{endregion}} 
+
 
 
 
 ## Getting the existing elements
 
 You can access the cell element and the appointment elements from a SchedulerCellContainer by using the __CellElements__  
-        and the __AppointmentElements__ collections.
+        and the __AppointmentElements__ collections.#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=cellContainerGetElements}}
-	            DayViewAppointmentsTable table = ((SchedulerDayViewElement)this.radScheduler1.ViewElement).DataAreaElement.Table;
-	            foreach (SchedulerCellElement cellElement in table.CellElements)
-	            {
-	                cellElement.BackColor = Color.Red;
-	            }
 	
-	            foreach (AppointmentElement appElement in table.AppointmentElements)
-	            {
-	                appElement.BackColor = Color.Green;
-	            }
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=cellContainerGetElements}} 
+{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=cellContainerGetElements}} 
 
-{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=cellContainerGetElements}}
-	        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
-	        For Each cellElement As SchedulerCellElement In table.CellElements
-	            cellElement.BackColor = Color.Red
-	        Next
-	
-	        For Each appElement As AppointmentElement In table.AppointmentElements
-	            appElement.BackColor = Color.Green
-	        Next
-	{{endregion}}
+````C#
+            DayViewAppointmentsTable table = ((SchedulerDayViewElement)this.radScheduler1.ViewElement).DataAreaElement.Table;
+            foreach (SchedulerCellElement cellElement in table.CellElements)
+            {
+                cellElement.BackColor = Color.Red;
+            }
+
+            foreach (AppointmentElement appElement in table.AppointmentElements)
+            {
+                appElement.BackColor = Color.Green;
+            }
+````
+````VB.NET
+        Dim table As DayViewAppointmentsTable = DirectCast(Me.radScheduler1.ViewElement, SchedulerDayViewElement).DataAreaElement.Table
+        For Each cellElement As SchedulerCellElement In table.CellElements
+            cellElement.BackColor = Color.Red
+        Next
+
+        For Each appElement As AppointmentElement In table.AppointmentElements
+            appElement.BackColor = Color.Green
+        Next
+        '
+````
+
+{{endregion}} 
+
 
 
 
 ## Accessing the containers from the ViewElement 
 
 The __SchedulerViewElement__ base type provides means for accessing the containers in the current view.
-        Using the __GetCellContainers__ method you can get all the containers in a list and perform for example an update operation over all of them:
+        Using the __GetCellContainers__ method you can get all the containers in a list and perform for example an update operation over all of them:#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=viewElementUpdateCells}}
-	            foreach (SchedulerCellContainer cellContainer in this.radScheduler1.ViewElement.GetCellContainers())
-	            {
-	                cellContainer.UpdateCells();
-	            }
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=viewElementUpdateCells}} 
+{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=viewElementUpdateCells}} 
 
-{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=viewElementUpdateCells}}
-	        For Each cellContainer As SchedulerCellContainer In Me.radScheduler1.ViewElement.GetCellContainers()
-	            cellContainer.UpdateCells()
-	        Next
-	{{endregion}}
+````C#
+            foreach (SchedulerCellContainer cellContainer in this.radScheduler1.ViewElement.GetCellContainers())
+            {
+                cellContainer.UpdateCells();
+            }
+````
+````VB.NET
+        For Each cellContainer As SchedulerCellContainer In Me.radScheduler1.ViewElement.GetCellContainers()
+            cellContainer.UpdateCells()
+        Next
+        '
+````
+
+{{endregion}} 
+
 
 
 
 For your convenience, there are the __InitializeCells__, __UpdateCells__, 
         __InitializeAppointmentElements__, __UpdateAppointmentElements__ methods of the
-        view element which you can use to perform the same operation over all of the child SchedulerCellContainers:
+        view element which you can use to perform the same operation over all of the child SchedulerCellContainers:#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=viewElementUpdateCellsDirect}}
-	            this.radScheduler1.ViewElement.UpdateCells();
-	            this.radScheduler1.ViewElement.UpdateAppointmentElements();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=viewElementUpdateCellsDirect}} 
+{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=viewElementUpdateCellsDirect}} 
 
-{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=viewElementUpdateCellsDirect}}
-	        Me.radScheduler1.ViewElement.UpdateCells()
-	        Me.radScheduler1.ViewElement.UpdateAppointmentElements()
-	{{endregion}}
+````C#
+            this.radScheduler1.ViewElement.UpdateCells();
+            this.radScheduler1.ViewElement.UpdateAppointmentElements();
+````
+````VB.NET
+        Me.radScheduler1.ViewElement.UpdateCells()
+        Me.radScheduler1.ViewElement.UpdateAppointmentElements()
+        '
+````
+
+{{endregion}} 
+
 
 
 
 Additionally, there are the __GetCellEments__ and the __GetAppointmentElements__ methods
-        which return a list of all cell or appointment elements from all containers in the view.
+        which return a list of all cell or appointment elements from all containers in the view.#_[C#]_
 
-#### __[C#]__
-
-{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=viewElementGetAllElements}}
-	            foreach (SchedulerCellElement cellElement in this.radScheduler1.ViewElement.GetCellElements())
-	            {
-	                cellElement.BackColor = Color.Red;
-	            }
 	
-	            foreach (AppointmentElement appElement in this.radScheduler1.ViewElement.GetAppointmentElements())
-	            {
-	                appElement.BackColor = Color.Green;
-	            }
-	{{endregion}}
 
 
 
-#### __[VB.NET]__
+{{source=..\SamplesCS\Scheduler\Views\SchedulerCellContainers.cs region=viewElementGetAllElements}} 
+{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=viewElementGetAllElements}} 
 
-{{source=..\SamplesVB\Scheduler\Views\SchedulerCellContainers.vb region=viewElementGetAllElements}}
-	        For Each cellElement As SchedulerCellElement In Me.radScheduler1.ViewElement.GetCellElements()
-	            cellElement.BackColor = Color.Red
-	        Next
-	
-	        For Each appElement As AppointmentElement In Me.radScheduler1.ViewElement.GetAppointmentElements()
-	            appElement.BackColor = Color.Green
-	        Next
-	{{endregion}}
+````C#
+            foreach (SchedulerCellElement cellElement in this.radScheduler1.ViewElement.GetCellElements())
+            {
+                cellElement.BackColor = Color.Red;
+            }
+
+            foreach (AppointmentElement appElement in this.radScheduler1.ViewElement.GetAppointmentElements())
+            {
+                appElement.BackColor = Color.Green;
+            }
+````
+````VB.NET
+        For Each cellElement As SchedulerCellElement In Me.radScheduler1.ViewElement.GetCellElements()
+            cellElement.BackColor = Color.Red
+        Next
+
+        For Each appElement As AppointmentElement In Me.radScheduler1.ViewElement.GetAppointmentElements()
+            appElement.BackColor = Color.Green
+        Next
+        '
+````
+
+{{endregion}} 
+
 
 

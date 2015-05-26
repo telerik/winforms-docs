@@ -1,8 +1,8 @@
 ---
 title: Save and Load layout
-page_title: Save and Load layout
+page_title: Save and Load layout | UI for WinForms Documentation
 description: Save and Load layout
-slug: radialgauge-save-and-load-layout
+slug: winforms/gauges/radialgauge/save-and-load-layout
 tags: save,and,load,layout
 published: True
 position: 5

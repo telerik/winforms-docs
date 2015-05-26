@@ -1,8 +1,8 @@
 ---
 title: Properties
-page_title: Properties
+page_title: Properties | UI for WinForms Documentation
 description: Properties
-slug: splitcontainer-properties
+slug: winforms/splitcontainer/properties
 tags: properties
 published: True
 position: 3

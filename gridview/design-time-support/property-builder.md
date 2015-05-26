@@ -1,8 +1,8 @@
 ---
 title: Property Builder
-page_title: Property Builder
+page_title: Property Builder | UI for WinForms Documentation
 description: Property Builder
-slug: gridview-design-time-support-property-builder
+slug: winforms/gridview/design-time-support/property-builder
 tags: property,builder
 published: True
 position: 1
@@ -15,8 +15,9 @@ position: 1
 ## 
 
 To quickly create and arrange node structure and appearance invoke the RadGridView Property Builder
-        from the context menu or the [Smart Tag]({%slug gridview-design-time-support-smart-tag%}).
+        from the context menu or the [Smart Tag]({%slug winforms/gridview/design-time-support/smart-tag%}).
         The figure below diagrams the general layout and functions of RadGridView Property Builder:
+>caption 
 
 ![gridview-design-time-support-property-builder 001](images/gridview-design-time-support-property-builder001.png)
 
@@ -24,18 +25,19 @@ __Command Bar__
 
 The command bar shows the main Property Builder commands:
 
-* *Build* will build [hierarchy]({%slug gridview-hierarchical-grid-binding-to-hierarchical-data%}),
+* *Build* will build [hierarchy]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data%}),
             depending on the __DataSource__ (should be a dataset) and __DataMemeber__ properties.
             The build command will find the relations automatically and will build the hierarchy;
 
 * *Save* and *Load *will save/load the current GridView layout into XML format.
             This allows for fine-grained control over which settings you want to include/exclude from the generated xml file. Thus, if you are using multiple
             grids, you can use the same settings over and over again which saves time.
-            See [Save/Load layout buttons in the Property Grid]({%slug gridview-save-and-load-layout-save-load-layout-buttons-in-the-property-grid%}) for more information;
+            See [Save/Load layout buttons in the Property Grid]({%slug winforms/gridview/save-and-load-layout/save/load-layout-buttons-in-the-property-grid%}) for more information;
 
 * *New* gives you the ability to add a custom unbound column or a new template to the GridView.
             The command will change its visibility based on selection in object tree. It is not visible when RadGridView is selected from the *Object Tree:
 		       *
+>caption 
 
 ![gridview-design-time-support-property-builder 002](images/gridview-design-time-support-property-builder002.png)  
           

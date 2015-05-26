@@ -1,8 +1,8 @@
 ---
 title: Customizations
-page_title: Customizations
+page_title: Customizations | UI for WinForms Documentation
 description: Customizations
-slug: desktopalert-customizations
+slug: winforms/desktopalert/customizations
 tags: customizations
 published: True
 position: 1
@@ -20,21 +20,25 @@ position: 1
 
 
 
-By default, RadDesktopAlert is initially shown with a predefined (default) size. You can, however, modify this size by using the __FixedSize__ property. If this property is set to a value different than empty size, this value will be considered as a size for the alert’s popup. This property can be set in the Visual Studio designer, as well as programmatically:
+By default, RadDesktopAlert is initially shown with a predefined (default) size. You can, however, modify this size by using the __FixedSize__ property. If this property is set to a value different than empty size, this value will be considered as a size for the alert’s popup. This property can be set in the Visual Studio designer, as well as programmatically:#_[C#] Setting FixedSize property_
 
-#### __[C#] Setting FixedSize property__
-
-{{source=..\SamplesCS\DesktopAlert\DesktopAlert1.cs region=fixedSize}}
-	            this.radDesktopAlert1.FixedSize = new Size(200, 200);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Setting FixedSize property__
+{{source=..\SamplesCS\DesktopAlert\DesktopAlert1.cs region=fixedSize}} 
+{{source=..\SamplesVB\DesktopAlert\DesktopAlert1.vb region=fixedSize}} 
 
-{{source=..\SamplesVB\DesktopAlert\DesktopAlert1.vb region=fixedSize}}
-	        Me.radDesktopAlert1.FixedSize = New Size(200, 200)
-	{{endregion}}
+````C#
+            this.radDesktopAlert1.FixedSize = new Size(200, 200);
+````
+````VB.NET
+        Me.radDesktopAlert1.FixedSize = New Size(200, 200)
+        '
+````
+
+{{endregion}} 
+
 
 
 
@@ -102,7 +106,9 @@ You can also use the __FadeAnimationFrames__ property to define the amount of fr
 The RadDesktopAlert appears on the screen with initial opacity of 80%. If you wish to modify this behavior, you can use the __Opacity__ property which accepts values in the range of 0.0 – 1.0 representing the alert’s opacity in percents.
 		
 
->The opacity of the RadDesktopAlert is changed to 100% when you hover it with the mouse cursor and reverted to its initial value when the mouse leaves its bounds.
+>note The opacity of the RadDesktopAlert is changed to 100% when you hover it with the mouse cursor and reverted to its initial value when the mouse leaves its bounds.
+>
+
 
 
 
@@ -120,6 +126,8 @@ You can easily display multiple alerts on the screen thanks to the DesktopAlertM
 
 RadDesktopAlert is designed to support multi-monitor environments. Currently, you can set the active monitor and all desktop alerts will be displayed on it. To do so, you need to specify which of your screens will be used as an active screen when positioning desktop alert popups. To do so, you can use the SetActiveScreen() method of the DesktopAlertManager class. This way all desktop alerts will be positioned on the specified screen regarding their __ScreenPosition__.
 
->When calling the SetActiveScreen() method all currently visible alerts are relocated to the newly specified screen whereby their ScreenPosition setting is considered.
+>note When calling the SetActiveScreen() method all currently visible alerts are relocated to the newly specified screen whereby their ScreenPosition setting is considered.
+>
+
 
 

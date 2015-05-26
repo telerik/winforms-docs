@@ -1,8 +1,8 @@
 ---
 title: Adding Key Tips
-page_title: Adding Key Tips
+page_title: Adding Key Tips | UI for WinForms Documentation
 description: Adding Key Tips
-slug: ribbonbar-adding-key-tips
+slug: winforms/ribbonbar/getting-started/adding-key-tips
 tags: adding,key,tips
 published: True
 position: 13

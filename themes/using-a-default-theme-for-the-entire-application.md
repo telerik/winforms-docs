@@ -1,8 +1,8 @@
 ---
 title: Using a default theme for the entire application
-page_title: Using a default theme for the entire application
+page_title: Using a default theme for the entire application | UI for WinForms Documentation
 description: Using a default theme for the entire application
-slug: themes-using-a-default-theme-for-the-entire-application
+slug: winforms/themes/using-a-default-theme-for-the-entire-application
 tags: using,a,default,theme,for,the,entire,application
 published: True
 position: 2
@@ -23,26 +23,31 @@ In the form constructor set the static __ThemeResolutionService.ApplicationTh
 You can watch the video
           [Telerik UI for WinForms Theme](http://tv.telerik.com/winforms/themes/radcontrols-winforms-theme)
           regarding the usage of theme components and __ApplicationThemeName__ property.
-        
+        #_[C#] Setting a theme for the entire application_
 
-#### __[C#] Setting a theme for the entire application__
-
-{{source=..\SamplesCS\Themes\UsingADefaultThemeForEntireApplication.cs region=setAThemeForEntireApplication}}
-	            ThemeResolutionService.ApplicationThemeName = "Office2007Black";
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] Setting a theme for the entire application__
+{{source=..\SamplesCS\Themes\UsingADefaultThemeForEntireApplication.cs region=setAThemeForEntireApplication}} 
+{{source=..\SamplesVB\Themes\UsingADefaultThemeForEntireApplication.vb region=setAThemeForEntireApplication}} 
 
-{{source=..\SamplesVB\Themes\UsingADefaultThemeForEntireApplication.vb region=setAThemeForEntireApplication}}
-	        ThemeResolutionService.ApplicationThemeName = "Office2007Black"
-	{{endregion}}
+````C#
+            ThemeResolutionService.ApplicationThemeName = "Office2007Black";
+````
+````VB.NET
+        ThemeResolutionService.ApplicationThemeName = "Office2007Black"
+        '
+````
+
+{{endregion}} 
 
 
 
->You still have to drop the theme component on the form (e.g. *Office2007Black* in the code samples above) or create an instance of the desired theme programatically.
-          
+
+>note You still have to drop the theme component on the form (e.g. *Office2007Black* in the code samples above) or create an instance of the desired theme programatically.
+>
+
 
 All your controls will use that specified theme which has precedence over the theme set locally to the control using __ThemeName__ property.
         
@@ -56,26 +61,30 @@ This section describes how you can change the theme for the entire application a
 This property indicates how the theme will be set to the control. If it is set to true (the default value) the control will have the theme
           that is globally set (with the __ApplicationThemeName__ property). If it is set to false, the theme, set with the ThemeName property will be respected.
           For example you can set the theme for the entire application except for one RadGridView control as follows:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\Themes\UsingADefaultThemeForEntireApplication.cs region=setThemeForSpesificControl}}
-	            ThemeResolutionService.ApplicationThemeName = "Office2010Blue";
 	
-	            radGridView1.ElementTree.EnableApplicationThemeName = false;
-	            radGridView1.ThemeName = "Office2010Silver";
-	{{endregion}}
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\Themes\UsingADefaultThemeForEntireApplication.cs region=setThemeForSpesificControl}} 
+{{source=..\SamplesVB\Themes\UsingADefaultThemeForEntireApplication.vb region=setThemeForSpesificControl}} 
 
-{{source=..\SamplesVB\Themes\UsingADefaultThemeForEntireApplication.vb region=setThemeForSpesificControl}}
-	        ThemeResolutionService.ApplicationThemeName = "Office2010Blue"
-	
-	        RadGridView1.ElementTree.EnableApplicationThemeName = False
-	        RadGridView1.ThemeName = "Office2010Silver"
-	{{endregion}}
+````C#
+            ThemeResolutionService.ApplicationThemeName = "Office2010Blue";
+
+            radGridView1.ElementTree.EnableApplicationThemeName = false;
+            radGridView1.ThemeName = "Office2010Silver";
+````
+````VB.NET
+        ThemeResolutionService.ApplicationThemeName = "Office2010Blue"
+
+        RadGridView1.ElementTree.EnableApplicationThemeName = False
+        RadGridView1.ThemeName = "Office2010Silver"
+        '
+````
+
+{{endregion}} 
+
 
 ![themes-using-a-default-theme-for-the-entire-application 001](images/themes-using-a-default-theme-for-the-entire-application001.png)

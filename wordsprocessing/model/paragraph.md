@@ -1,8 +1,8 @@
 ---
 title: Paragraph
-page_title: Paragraph
+page_title: Paragraph | UI for WinForms Documentation
 description: Paragraph
-slug: wordsprocessing-model-paragraph
+slug: winforms/wordsprocessing/model/paragraph
 tags: paragraph
 published: True
 position: 2
@@ -13,8 +13,8 @@ position: 2
 
 
 The __Paragraph__ class allows you to separate the content into paragraphs. It is responsible for displaying inline
-        elements such as [Run]({%slug wordsprocessing-model-run%}), [FloatingImage]({%slug wordsprocessing-model-floatingimage%}),
-        [ImageInline]({%slug wordsprocessing-model-imageinline%}) etc. It is also possible to configure the appearance of the paragraph by modifying
+        elements such as [Run]({%slug winforms/wordsprocessing/model/run%}), [FloatingImage]({%slug winforms/wordsprocessing/model/floatingimage%}),
+        [ImageInline]({%slug winforms/wordsprocessing/model/imageinline%}) etc. It is also possible to configure the appearance of the paragraph by modifying
         its parameters.
       
 
@@ -28,95 +28,112 @@ The __Paragraph__ class allows you to separate the content into paragraphs. It i
 
 Paragraphs can be added as a child of a
           [BlockContainer](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_blockcontainerbase.html)
-          element – [Section]({%slug wordsprocessing-model-section%}), [TableCell]({%slug wordsprocessing-model-tablecell%}),
-          [Headers and Footers]({%slug wordsprocessing-model-headers-and-footers%}), through the __Blocks__ collection.
+          element – [Section]({%slug winforms/wordsprocessing/model/section%}), [TableCell]({%slug winforms/wordsprocessing/model/tablecell%}),
+          [Headers and Footers]({%slug winforms/wordsprocessing/model/headers-and-footers%}), through the __Blocks__ collection.
         
 
 The following code snippet creates and inserts a Paragraph to a Section.
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_0}}
-	            Paragraph paragraph = new Paragraph(document);
-	            section.Blocks.Add(paragraph);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_0}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_0}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_0}}
-	            Dim paragraph As New Paragraph(document)
-	            section.Blocks.Add(paragraph)
-	{{endregion}}
+````C#
+            Paragraph paragraph = new Paragraph(document);
+            section.Blocks.Add(paragraph);
+````
+````VB.NET
+            Dim paragraph As New Paragraph(document)
+            section.Blocks.Add(paragraph)
+            '
+````
+
+{{endregion}} 
 
 
 
->tipThe parent BlockContainer element (in this case - the *section*) should belong to the same document that is
-            passed to the constructor of the __Paragraph__.
-          
+
+>tip The parent BlockContainer element (in this case - the *section* ) should belong to the same document that is
+            passed to the constructor of the __Paragraph__ .
+>
+
 
 You can add a paragraph at a specific index in the __Blocks__ collection of a __BlockContainer__
           using the __Insert()__ method. Here is how to add a paragraph at the beginning of a section:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_1}}
-	            Paragraph paragraph = new Paragraph(document);
-	            section.Blocks.Insert(0, paragraph);
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_1}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_1}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_1}}
-	            Dim paragraph As New Paragraph(document)
-	            section.Blocks.Insert(0, paragraph)
-	{{endregion}}
+````C#
+            Paragraph paragraph = new Paragraph(document);
+            section.Blocks.Insert(0, paragraph);
+````
+````VB.NET
+            Dim paragraph As New Paragraph(document)
+            section.Blocks.Insert(0, paragraph)
+            '
+````
+
+{{endregion}} 
+
 
 
 
 You can also use the __AddParagraph()__ method of the __Blocks__ collection of a __BlockContainer__.
           The method creates a new __Paragraph__ instance, adds it to the container and returns it:
-        
+        #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_2}}
-	            Paragraph paragraph = section.Blocks.AddParagraph();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_2}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_2}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_2}}
-	            Dim paragraph As Paragraph = section.Blocks.AddParagraph()
-	{{endregion}}
+````C#
+            Paragraph paragraph = section.Blocks.AddParagraph();
+````
+````VB.NET
+            Dim paragraph As Paragraph = section.Blocks.AddParagraph()
+            '
+````
 
-
-
-Inserting a new Paragraph in the document can also be achieved with the [RadFlowDocumentEditor]({%slug wordsprocessing-editing-radflowdocumenteditor%}) class:
-        
-
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_3}}
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
-	            Paragraph paragraph = editor.InsertParagraph();
-	{{endregion}}
+{{endregion}} 
 
 
 
-#### __[VB.NET] __
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_3}}
-	            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-	            Dim paragraph As Paragraph = editor.InsertParagraph()
-	{{endregion}}
+Inserting a new Paragraph in the document can also be achieved with the [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%}) class:
+        #_[C#] _
+
+	
+
+
+
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_3}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_3}} 
+
+````C#
+            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+            Paragraph paragraph = editor.InsertParagraph();
+````
+````VB.NET
+            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+            Dim paragraph As Paragraph = editor.InsertParagraph()
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -127,7 +144,7 @@ __Paragraph__ exposes several properties that allow you to customize the layout 
         
 
 * __Properties__:  Gets all paragraph properties as ParagraphProperties object. More info on how to use section properties can be
-              found in [Style Properties]({%slug wordsprocessing-concepts-style-properties%}) article.
+              found in [Style Properties]({%slug winforms/wordsprocessing/concepts/style-properties%}) article.
             
 
 * __StyleId__:  Represents the ID of the style applied on the Paragraph element.
@@ -212,21 +229,25 @@ You can add inline elements to a __Paragraph__ instance.
 ### Adding a Run
 
 The following code snippet adds a run to an existing paragraph:
-            
+            #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_4}}
-	            Run run = paragraph.Inlines.AddRun();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_4}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_4}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_4}}
-	            Dim run As Run = paragraph.Inlines.AddRun()
-	{{endregion}}
+````C#
+            Run run = paragraph.Inlines.AddRun();
+````
+````VB.NET
+            Dim run As Run = paragraph.Inlines.AddRun()
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -236,21 +257,25 @@ For more information about __Run__ element, you can read [this article](9fefa02d
 ### Adding an ImageInline
 
 The following code snippet adds an inline image to an existing paragraph:
-            
+            #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_5}}
-	            ImageInline imageInline = paragraph.Inlines.AddImageInline();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_5}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_5}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_5}}
-	            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
-	{{endregion}}
+````C#
+            ImageInline imageInline = paragraph.Inlines.AddImageInline();
+````
+````VB.NET
+            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
+            '
+````
+
+{{endregion}} 
+
 
 
 
@@ -260,33 +285,39 @@ For more information about __ImageInline__ element, you can read [this article](
 ### Adding a FloatingImage
 
 The following code snippet adds a floating image to an existing paragraph:
-            
+            #_[C#] _
 
-#### __[C#] __
-
-{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_6}}
-	            FloatingImage floatingImage = paragraph.Inlines.AddFloatingImage();
-	{{endregion}}
+	
 
 
 
-#### __[VB.NET] __
+{{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingParagraph.cs region=radwordsprocessing-model-paragraph_6}} 
+{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_6}} 
 
-{{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_6}}
-	            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
-	{{endregion}}
+````C#
+            FloatingImage floatingImage = paragraph.Inlines.AddFloatingImage();
+````
+````VB.NET
+            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
+            '
+````
+
+{{endregion}} 
+
 
 
 
 For more information about __ImageInline__ element, you can read [this article](1f7c39c0-9e82-44ac-bbe1-fa2c9a30577d).
             
 
-# See Also[Paragraph API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_paragraph.html)
+# See Also
 
- * [Section]({%slug wordsprocessing-model-section%})
+ * [Paragraph API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_paragraph.html)
 
- * [TableCell]({%slug wordsprocessing-model-tablecell%})
+ * [Section]({%slug winforms/wordsprocessing/model/section%})
 
- * [Headers and Footers]({%slug wordsprocessing-model-headers-and-footers%})
+ * [TableCell]({%slug winforms/wordsprocessing/model/tablecell%})
 
- * [Run]({%slug wordsprocessing-model-run%})
+ * [Headers and Footers]({%slug winforms/wordsprocessing/model/headers-and-footers%})
+
+ * [Run]({%slug winforms/wordsprocessing/model/run%})

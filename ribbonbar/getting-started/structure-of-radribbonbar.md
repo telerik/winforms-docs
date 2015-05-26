@@ -1,8 +1,8 @@
 ---
 title: Structure of RadRibbonBar
-page_title: Structure of RadRibbonBar
+page_title: Structure of RadRibbonBar | UI for WinForms Documentation
 description: Structure of RadRibbonBar
-slug: ribbonbar-structure-of-radribbonbar
+slug: winforms/ribbonbar/getting-started/structure-of-radribbonbar
 tags: structure,of,radribbonbar
 published: True
 position: 1
@@ -18,7 +18,7 @@ The Telerik RadRibbonBar control has a very complex structure. You can add a var
 
 The Quick Access Toolbar is an area at the top of the Telerik RadRibbonBar, above the tabs:![ribbonbar-structure-of-radribbonbar 001](images/ribbonbar-structure-of-radribbonbar001.png)
 
-The Quick Access Toolbar can contain the same elements as the  [RadMenu]({%slug menus-menu-overview%}):
+The Quick Access Toolbar can contain the same elements as the  [RadMenu]({%slug winforms/menus/menu%}):
 
 * Menu items, displayed as either images, text, or both 
 
@@ -32,7 +32,7 @@ The Quick Access Toolbar can contain the same elements as the  [RadMenu]({%slug
 
 The Start Menu is a menu that is displayed when you click on the Office Button in the upper left corner of the Telerik RadRibbonBar:![ribbonbar-structure-of-radribbonbar 002](images/ribbonbar-structure-of-radribbonbar002.png)
 
-The Start Menu includes two columns of items, each of which can contain the same elements as the [RadMenu]({%slug menus-menu-overview%}):
+The Start Menu includes two columns of items, each of which can contain the same elements as the [RadMenu]({%slug winforms/menus/menu%}):
 
 * Menu items, displayed as either images, text, or both
 

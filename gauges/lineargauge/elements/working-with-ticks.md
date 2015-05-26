@@ -1,8 +1,8 @@
 ---
 title: Working with Ticks
-page_title: Working with Ticks
+page_title: Working with Ticks | UI for WinForms Documentation
 description: Working with Ticks
-slug: lineargauge-elements-working-with-ticks
+slug: winforms/gauges/lineargauge/elements/working-with-ticks
 tags: working,with,ticks
 published: True
 position: 2

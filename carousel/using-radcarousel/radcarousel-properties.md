@@ -1,8 +1,8 @@
 ---
 title: RadCarousel Properties
-page_title: RadCarousel Properties
+page_title: RadCarousel Properties | UI for WinForms Documentation
 description: RadCarousel Properties
-slug: carousel-using-radcarousel-radcarousel-properties
+slug: winforms/carousel/using-radcarousel/radcarousel-properties
 tags: radcarousel,properties
 published: True
 position: 3
