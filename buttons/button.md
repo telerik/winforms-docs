@@ -19,7 +19,7 @@ __RadButton__is a replacement of the standard WinForms Button. __RadButton__supp
 
 * To programmatically add a RadButton to a form, create a new instance of a __RadButton__, and add it to the form __Controls__ collection.#_[C#] Adding a RadButton at runtime_
 
-	
+
 
 
 
