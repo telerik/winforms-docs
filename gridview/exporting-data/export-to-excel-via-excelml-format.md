@@ -17,7 +17,8 @@ position: 2
 ## Overview
 
 This method offers excellent  ng performance and does not require MS Office installation on users' machines. The __ExcelML__ format
-          can be read by MS Excel 2002 (MS Office XP) and above.
+          can be read by MS Excel 2002 (MS Office XP) and above. Direct export to the xlsx format is possible by utilizing our __RadSpreadProcessing__ libraries (see
+          [Spread Export]({%slug winforms/gridview/exporting-data/spread-export-%}) and [Async Spread Export](982fb094-ed37-4520-99db-b51487998d2a) articles for detailed information and examples).
         
 
 >note The HTML export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces

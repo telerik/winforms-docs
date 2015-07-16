@@ -18,12 +18,16 @@ This tutorial will walk you through the functionality and the main features of _
 >
 
 
-## RadDiagramConnection
+## Overview
 
 __RadDiagramConnection__ is basically an object that connects zero, one or two shapes:![diagram-diagram-items-connections 001](images/diagram-diagram-items-connections001.png)
 
-You can use its extensive API to configure its source and target points or shapes. You can also control the connection path by
-        using the __ConnectionPoints__ collection.
+You can use its extensive API to configure its source and target points or shapes. You can choose from a list of predefined cap types
+        thus customizing the start and end point of the connection to better fit in your application scenario. 
+        You can also control the type of a connection using the __ConnectionType__ property, 
+        add a custom content and customize the overall look and feel of the items.
+
+## Configure the Source and Target of a Connection
 
 The __RadDiagramConnection__
         class exposes the following properties that allow you to control the start and end points of a connection:
@@ -56,6 +60,16 @@ The __RadDiagramConnection__
 
 * __Bottom__ - use it to define the bottom connector of a shape as the source/target point of the connection
                 ![diagram-diagram-items-connections 009](images/diagram-diagram-items-connections009.png)
+
+* __SourceCapType/TargetCapType__ - both properties are an enumeration of type __CapType__
+              that allow you to choose a cap from a set of predefined Cap types. For more detailed information, please, view the CapTypes section below.           
+            ![diagram-diagram-items-connections 010](images/diagram-diagram-items-connections010.png)
+
+* __SourceCapSize/TargetCapSize__ - these properties are of type Size and they get or set the size of the
+              __SourceCap/TargetCap__.
+            ![diagram-diagram-items-connections 011](images/diagram-diagram-items-connections011.png)
+
+## Connection Types
 
 * __ConnectionPoints__ - if you want to change the route of the connection, you can add connection points 
               in code-behind through the RadDiagramConnection.__ConnectionPoints__ property. 
@@ -120,9 +134,9 @@ The __RadDiagramConnection__
             
             RadDiagramShape sourceShape = new RadDiagramShape()
             {
-                ShapeText = "source",
+                Text = "source",
                 ElementShape = new RoundRectShape(5),
-                InternalElementColor = Color.Red
+                BackColor = Color.Red
             };
             
             sourceShape.Position = new Telerik.Windows.Diagrams.Core.Point(150, 100);
@@ -130,9 +144,9 @@ The __RadDiagramConnection__
             
             RadDiagramShape targetShape = new RadDiagramShape()
             {
-                ShapeText = "target",
+                Text = "target",
                 ElementShape = new RoundRectShape(5),
-                InternalElementColor = Color.Red
+                BackColor = Color.Red
             };
             
             targetShape.Position = new Telerik.Windows.Diagrams.Core.Point(400, 300);
@@ -148,18 +162,18 @@ The __RadDiagramConnection__
 ````VB.NET
 
         Dim sourceShape As New RadDiagramShape() With { _
-            .ShapeText = "source", _
+            .Text = "source", _
             .ElementShape = New RoundRectShape(5), _
-            .InternalElementColor = Color.Red _
+            .BackColor = Color.Red _
         }
 
         sourceShape.Position = New Telerik.Windows.Diagrams.Core.Point(150, 100)
         RadDiagram1.Items.Add(sourceShape)
 
         Dim targetShape As New RadDiagramShape() With { _
-            .ShapeText = "target", _
+            .Text = "target", _
             .ElementShape = New RoundRectShape(5), _
-            .InternalElementColor = Color.Red _
+            .BackColor = Color.Red _
         }
 
         targetShape.Position = New Telerik.Windows.Diagrams.Core.Point(400, 300)
@@ -225,6 +239,7 @@ Sample of a curved Polyline connection:![diagram-diagram-items-connections 004](
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=BezierConnection}} 
 
 ````C#
+            
             RadDiagramConnection bezierConnection = new RadDiagramConnection() { Name = "connection1" };
             
             bezierConnection.Source = sourceShape;
@@ -319,4 +334,490 @@ By default, when you create a Bezier connection and attach its endpoints to __Ra
 {{endregion}} 
 
 
+
+
+## Cap Types
+
+__CapType__ enumeration members:
+
+* __None__:
+            ![diagram-diagram-items-connections 012](images/diagram-diagram-items-connections012.png)#_[C#] CapType.None_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeNone}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeNone}} 
+
+````C#
+            
+            connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.None;
+            connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.None;
+````
+````VB.NET
+
+        connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.None
+        connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.None
+
+        '
+````
+
+{{endregion}} 
+
+
+
+
+* __Arrow1__:
+            ![diagram-diagram-items-connections 013](images/diagram-diagram-items-connections013.png)#_[C#] CapType.Arrow1_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow1}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow1}} 
+
+````C#
+
+            connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow1;
+            connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow1;
+````
+````VB.NET
+
+        connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow1
+        connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow1
+
+        '
+````
+
+{{endregion}} 
+
+
+
+
+* __Arrow1Filled__:
+            ![diagram-diagram-items-connections 014](images/diagram-diagram-items-connections014.png)#_[C#] CapType.Arrow1Filled_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow1Filled}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow1Filled}} 
+
+````C#
+            
+            connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow1Filled;
+            connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow1Filled;
+````
+````VB.NET
+
+        connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow1Filled
+        connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow1Filled
+
+        '
+````
+
+{{endregion}} 
+
+
+
+
+* __Arrow2__:
+            ![diagram-diagram-items-connections 015](images/diagram-diagram-items-connections015.png)#_[C#] CapType.Arrow2_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow2}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow2}} 
+
+````C#
+            
+            connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow2;
+            connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow2;
+````
+````VB.NET
+
+        connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow2
+        connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow2
+
+        '
+````
+
+{{endregion}} 
+
+
+
+
+* __Arrow2Filled__:
+            ![diagram-diagram-items-connections 016](images/diagram-diagram-items-connections016.png)#_[C#] CapType.Arrow2Filled_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow2Filled}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow2Filled}} 
+
+````C#
+
+            connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow2Filled;
+            connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow2Filled;
+````
+````VB.NET
+
+        connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow2Filled
+        connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow2Filled
+
+        '
+````
+
+{{endregion}} 
+
+
+
+
+* __Arrow3__:
+            ![diagram-diagram-items-connections 017](images/diagram-diagram-items-connections017.png)#_[C#] CapType.Arrow3_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow3}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow3}} 
+
+````C#
+                
+            connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow3;
+            connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow3;
+````
+````VB.NET
+
+        connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow3
+        connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow3
+
+        '
+````
+
+{{endregion}} 
+
+
+
+
+* __Arrow4__:
+            ![diagram-diagram-items-connections 018](images/diagram-diagram-items-connections018.png)#_[C#] CapType.Arrow4_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow4}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow4}} 
+
+````C#
+                
+            connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow4;
+            connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow4;
+````
+````VB.NET
+
+        connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow4
+        connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow4
+
+        '
+````
+
+{{endregion}} 
+
+
+
+
+* __Arrow4Filled__:
+            ![diagram-diagram-items-connections 019](images/diagram-diagram-items-connections019.png)#_[C#] CapType.Arrow4Filled_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow4Filled}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow4Filled}} 
+
+````C#
+                
+            connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow4Filled;
+            connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow4Filled;
+````
+````VB.NET
+
+        connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow4Filled
+        connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow4Filled
+
+        '
+````
+
+{{endregion}} 
+
+
+
+
+* __Arrow5__:
+            ![diagram-diagram-items-connections 020](images/diagram-diagram-items-connections020.png)#_[C#] CapType.Arrow5_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow5}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow5}} 
+
+````C#
+                
+            connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow5;
+            connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow5;
+````
+````VB.NET
+
+        connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow5
+        connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow5
+
+        '
+````
+
+{{endregion}} 
+
+
+
+
+* __Arrow5Filled__:
+            ![diagram-diagram-items-connections 021](images/diagram-diagram-items-connections021.png)#_[C#] CapType.Arrow5Filled_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow5Filled}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow5Filled}} 
+
+````C#
+                
+            connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow5Filled;
+            connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow5Filled;
+````
+````VB.NET
+
+        connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow5Filled
+        connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow5Filled
+
+        '
+````
+
+{{endregion}} 
+
+
+
+
+* __Arrow6__:
+            ![diagram-diagram-items-connections 022](images/diagram-diagram-items-connections022.png)#_[C#] CapType.Arrow6_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow6}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow6}} 
+
+````C#
+                
+            connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow6;
+            connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow6;
+````
+````VB.NET
+
+        connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow6
+        connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow6
+
+        '
+````
+
+{{endregion}} 
+
+
+
+
+* __Arrow6Filled__:
+            ![diagram-diagram-items-connections 023](images/diagram-diagram-items-connections023.png)#_[C#] CapType.Arrow6Filled_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow6Filled}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow6Filled}} 
+
+````C#
+                
+            connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow6Filled;
+            connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow6Filled;
+````
+````VB.NET
+
+        connection1.SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow6Filled
+        connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow6Filled
+
+        '
+````
+
+{{endregion}} 
+
+
+
+
+## Set Content
+
+You can label a connection by setting its __Content__ property.
+        ![diagram-diagram-items-connections 024](images/diagram-diagram-items-connections024.png)#_[C#] Connection label_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=Content}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=Content}} 
+
+````C#
+            
+            connection1.Content = "connection label";
+````
+````VB.NET
+        connection1.Content = "connection label"
+        '
+````
+
+{{endregion}} 
+
+
+
+
+## Customize the Connection Appearance
+
+You can easily customize the visual appearance of the __RadDiagramConnection__ by using the following properties:
+
+* __BackColor__: gets or sets the color that specifies how the __RadDiagramConnection__ is painted.
+            ![diagram-diagram-items-connections 025](images/diagram-diagram-items-connections025.png)#_[C#] Connection back color_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=ConnectionBackColor}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=ConnectionBackColor}} 
+
+````C#
+            
+            connection1.BackColor = Color.Red;
+````
+````VB.NET
+        connection1.BackColor = Color.Red
+        '
+````
+
+{{endregion}} 
+
+
+
+
+* __StrokeThickness__: gets or sets the width of the __RadDiagramConnection__ outline.
+            ![diagram-diagram-items-connections 026](images/diagram-diagram-items-connections026.png)#_[C#] StrokeThickness_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=StrokeThickness}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=StrokeThickness}} 
+
+````C#
+
+            connection1.StrokeThickness = 5;
+````
+````VB.NET
+        connection1.StrokeThickness = 5
+        '
+````
+
+{{endregion}} 
+
+
+
+
+* __ForeColor__: gets or sets the color that specifies how the __RadDiagramConnection__'s text is painted.
+            ![diagram-diagram-items-connections 027](images/diagram-diagram-items-connections027.png)#_[C#] Connection fore color_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=ConnectionForeColor}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=ConnectionForeColor}} 
+
+````C#
+            
+            connection1.ForeColor = Color.Blue;
+````
+````VB.NET
+        connection1.ForeColor = Color.Blue
+        '
+````
+
+{{endregion}} 
+
+
+
+
+* __StrokeDashArray__: gets or sets a collection of Double values that indicate the pattern of dashes and gaps
+              that is used to outline the __RadDiagramConnection__.
+            #_[C#] StrokeDashArray_
+
+	
+
+
+
+{{source=..\SamplesCS\Diagram\DiagramItems.cs region=StrokeDashArray}} 
+{{source=..\SamplesVB\Diagram\DiagramItems.vb region=StrokeDashArray}} 
+
+````C#
+
+            connection1.StrokeDashArray = new Telerik.WinControls.UI.Diagrams.DoubleCollection(new List<float> { 2, 2, 2, 2 });
+````
+````VB.NET
+
+        connection1.StrokeDashArray = New Telerik.WinControls.UI.Diagrams.DoubleCollection(New List(Of Single)() From { _
+            2, _
+            2, _
+            2, _
+            2 _
+        })
+
+        '
+````
+
+{{endregion}} 
+
+
+![diagram-diagram-items-connections 029](images/diagram-diagram-items-connections029.png)
+
+## Connection Edit Mode
+
+You can set the __RadDiagramConnection__ in edit mode by using the __IsInEditMode__ property. 
+          By default, when an item enters edit mode, the RadDiagramConnection.__Content__ is displayed inside a TextBox control
+          so that you can change its value.
+        ![diagram-diagram-items-connections 028](images/diagram-diagram-items-connections028.png)
+
+>note Apart from setting the __IsInEditMode__ property to *true* ,
+            you can also enter edit mode by pressing F2 or double-clicking on the connection. For more information please refer to the[Editing]({%slug winforms/diagram-(beta)/items-manipulation/editing%})article.
+>
 

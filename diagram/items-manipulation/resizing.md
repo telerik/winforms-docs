@@ -41,6 +41,10 @@ By default, the __RadDiagram__ is enabled for resizing manipulation.
 
 
 
+## Manipulation adorner
+
+The __IsManipulationAdornerVisible__
+
 ## Width and Height
 
 You can resize shapes by using their __Width__ and __Height__ properties:

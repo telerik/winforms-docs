@@ -112,7 +112,7 @@ __RadDiagram__ provides a set of predefined commands for manipulating the select
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=CommandZIndex}} 
 
 ````C#
-                
+            
             RadDiagramShape shape1 = new RadDiagramShape()
             {
                 ShapeText = "shape1",
@@ -122,7 +122,7 @@ __RadDiagram__ provides a set of predefined commands for manipulating the select
             };
             shape1.Position = new Telerik.Windows.Diagrams.Core.Point(100, 10);
             radDiagram1.AddShape(shape1);
-                
+            
             RadDiagramShape shape2 = new RadDiagramShape()
             {
                 ShapeText = "shape2",
@@ -132,7 +132,7 @@ __RadDiagram__ provides a set of predefined commands for manipulating the select
             };
             shape2.Position = new Telerik.Windows.Diagrams.Core.Point(150, 80);
             radDiagram1.AddShape(shape2);
-                
+            
             RadDiagramShape shape3 = new RadDiagramShape()
             {
                 ShapeText = "shape3",

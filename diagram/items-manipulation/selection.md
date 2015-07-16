@@ -41,7 +41,7 @@ In order to change the way the Selection Adorner Rectangle behaves, you can use 
             
 
 * __Partial__ - the user selects all items that are completely or partially covered by the selection rectangle.
-            
+            ![diagram-items-manipulation-selection 004](images/diagram-items-manipulation-selection004.gif)
 
 ## Selection in code behind
 
@@ -114,7 +114,7 @@ When multiple items are selected, they are automatically added in one Selection 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=MultipleSelection}} 
 
 ````C#
-            
+                
             RadDiagramShape shape1 = new RadDiagramShape()
             {
                 ShapeText = "",
@@ -124,7 +124,7 @@ When multiple items are selected, they are automatically added in one Selection 
             };
             shape1.Position = new Telerik.Windows.Diagrams.Core.Point(10, 10);
             radDiagram1.AddShape(shape1);
-            
+                
             RadDiagramShape shape2 = new RadDiagramShape()
             {
                 ShapeText = "",
@@ -203,7 +203,7 @@ You are able to select all __RadDiagramItems__ interactively (by Mouse or by pre
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=SelectAllCommand}} 
 
 ````C#
-            
+        
             this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.SelectAll, "");
 ````
 ````VB.NET

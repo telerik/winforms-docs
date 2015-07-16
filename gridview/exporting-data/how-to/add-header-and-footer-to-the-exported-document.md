@@ -33,14 +33,16 @@ The [spread export]({%slug winforms/gridview/exporting-data/spread-export-%}) fu
 {{source=..\SamplesVB\GridView\ExportingData\HowTo\HeaderAndFooter.vb region=SetExporter}} 
 
 ````C#
-            SpreadExport spreadExporter = new SpreadExport(radGridView1);
-            spreadExporter.WorkbookCreated += spreadExporter_WorkbookCreated;
-            spreadExporter.RunExport(@"C:\exportedFile.xlsx");
+            GridViewSpreadExport spreadExporter = new GridViewSpreadExport(radGridView1);
+            SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
+            exportRenderer.WorkbookCreated += exportRenderer_WorkbookCreated;
+            spreadExporter.RunExport(@"C:\exportedFile.xlsx", exportRenderer);
 ````
 ````VB.NET
-        Dim spreadExporter As New SpreadExport(radGridView1)
-        AddHandler spreadExporter.WorkbookCreated, AddressOf spreadExporter_WorkbookCreated
-        spreadExporter.RunExport("C:\exportedFile.xlsx")
+        Dim spreadExporter As New GridViewSpreadExport(radGridView1)
+        Dim exportRenderer As New SpreadExportRenderer()
+        AddHandler exportRenderer.WorkbookCreated, AddressOf exportRenderer_WorkbookCreated
+        spreadExporter.RunExport("C:\exportedFile.xlsx", exportRenderer)
         '
 ````
 

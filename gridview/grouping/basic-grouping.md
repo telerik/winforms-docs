@@ -78,4 +78,37 @@ You can hide the GroupPanel using the following code:#_[C#] Hide the group panel
 
 
 
+The __ShowGroupPanelScrollbars__ property indicates whether the group panel will show scroll-bars or it will expand to show all group headers.  
+        #_[C#] Show the group panel scroll-bar_
 
+	
+
+
+
+{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=ShowGroupPanelScrollbars}} 
+{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=ShowGroupPanelScrollbars}} 
+
+````C#
+            this.radGridView1.ShowGroupPanelScrollbars = true;
+````
+````VB.NET
+        Me.RadGridView1.ShowGroupPanelScrollbars = True
+        '#End Region
+
+
+        '#region usingSimpleGroupDescriptor
+        Dim descriptor As New GroupDescriptor()
+        descriptor.GroupNames.Add("Country", ListSortDirection.Ascending)
+        Me.RadGridView1.GroupDescriptors.Add(descriptor)
+        '
+````
+
+{{endregion}} 
+
+
+
+
+
+
+|ShowGroupPanelScrollbars = *false* |ShowGroupPanelScrollbars = *true* |
+|![gridview-grouping-basic-grouping 002](images/gridview-grouping-basic-grouping002.png)|![gridview-grouping-basic-grouping 003](images/gridview-grouping-basic-grouping003.png)|

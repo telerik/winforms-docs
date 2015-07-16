@@ -105,6 +105,7 @@ Below is a sample implementation of an English localization provider:#_[C#] Loca
                 case RadGridStringId.CustomFilterDialogTrue: return "True";
                 case RadGridStringId.CustomFilterDialogFalse: return "False";
 
+                case RadGridStringId.FilterMenuBlanks: return "Empty";
                 case RadGridStringId.FilterMenuAvailableFilters: return "Available Filters";
                 case RadGridStringId.FilterMenuSearchBoxText: return "Search...";
                 case RadGridStringId.FilterMenuClearFilters: return "Clear Filter";
@@ -376,6 +377,8 @@ Public Class MyEnglishRadGridLocalizationProvider
             Case RadGridStringId.CustomFilterDialogFalse
                 Return "False"
 
+            Case RadGridStringId.FilterMenuBlanks
+                Return "Empty"
             Case RadGridStringId.FilterMenuAvailableFilters
                 Return "Available Filters"
             Case RadGridStringId.FilterMenuSearchBoxText

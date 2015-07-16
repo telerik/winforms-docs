@@ -5,7 +5,7 @@ description: Populating with data
 slug: winforms/diagram-(beta)/populating-with-data
 tags: populating,with,data
 published: True
-position: 4
+position: 6
 ---
 
 # Populating with data

@@ -68,84 +68,87 @@ navigation:
     gridview:
         title: GridView
         position: 24
+    layoutcontrol:
+        title: LayoutControl
+        position: 25
     listview:
         title: ListView
-        position: 25
+        position: 26
     menus:
         title: Menus
-        position: 26
+        position: 27
     multicolumncombobox:
         title: MultiColumnComboBox
-        position: 27
+        position: 28
     pageview:
         title: PageView
-        position: 28
+        position: 29
     panels-and-labels:
         title: Panels and Labels
-        position: 29
+        position: 30
     panorama:
         title: Panorama
-        position: 30
+        position: 31
     pdfprocessing:
         title: PdfProcessing 
-        position: 31
+        position: 32
     pdfviewer:
         title: PdfViewer
-        position: 32
+        position: 33
     pivotgrid:
         title: PivotGrid 
-        position: 33
+        position: 34
     propertygrid:
         title: PropertyGrid
-        position: 34
+        position: 35
     rangeselector:
         title: RangeSelector
-        position: 35
+        position: 36
     ribbonbar:
         title: RibbonBar
-        position: 36
+        position: 37
     richtextbox:
         title: RichTextBox (obsolote)
-        position: 37
+        position: 38
     richtexteditor:
         title: RichTextEditor
-        position: 38
+        position: 39
     rotator:
         title: Rotator
-        position: 39
+        position: 40
     scheduler:
         title: Scheduler
-        position: 40
+        position: 41
     shortcuts:
         title: Shortcuts
-        position: 41
+        position: 42
     spellchecker:
         title: SpellChecker
-        position: 42
+        position: 43
     splitcontainer:
         title: SplitContainer
-        position: 43
+        position: 44
     spread-processing:
         title: SpreadProcessing
-        position: 44
+        position: 45
     track-and-status-controls:
         title: Track and Status controls
-        position: 45
+        position: 46
     treeview:
         title: TreeView
-        position: 46
+        position: 47
     wizard:
         title: Wizzard
-        position: 47
+        position: 48
     wordsprocessing:
         title: WordsProcessing
-        position: 48
+        position: 49
     ziplibrary:
         title: ZipLibrary
-        position: 49
+        position: 50
     telerik-cab-enabling-kit:
         title: Telerik Cab Enabling Kit
-        position: 50
+        position: 51
     codedui:
         title: CodedUI 
         position: 52

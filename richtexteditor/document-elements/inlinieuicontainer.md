@@ -21,6 +21,10 @@ This topic will explain you how to:
 
 * [Add UI Element to an InlineUIContainer](#add-ui-element-to-an-inlineuicontainer)
 
+* [Import Export InlineUIContainers](#
+--------import-export-inlineuicontainers
+------)
+
 The __InlineUIContainer__ is an inline element, so it should be placed in a __Block__ that can contain inline
         elements (e.g. the __Paragraph__).
       
@@ -32,7 +36,7 @@ You can add any element that derives from the RadElement class inside the __RadE
         
 
 >note In order to utilize the __InlineUIContainer__ , you have to set its __Height__ and __Width__ explicitly
-            (or use the constructor that takes a __Size__ as a parameter). Otherwise, they will not be shown in the document.
+            (or use the constructor that takes a __Size__ as a parameter). Otherwise, it will not shown in the document.
 >
 #_C#_
 
@@ -81,4 +85,33 @@ You can add any element that derives from the RadElement class inside the __RadE
 {{endregion}} 
 
 
+
+
+## 
+        Import Export InlineUIContainers
+      
+
+Most features that __RadRichTextEditor__ provides are also supported in the format providers that it uses for export and import. Currently import/export UIElement
+          is only supported with HtmlFormatProvider.
+        
+
+* __Exporting with HtmlFormatProvider__ - the inline UI containers are serialized as XAML and are included in the HTML as comments. 
+              If the user handles the __InlineUIContainerExporting__ event, they can provide their own implementation for the export of the 
+              UI elements by accessing the properties of the __InlineUIContainerExportingEventArgs__ and setting the ones they need.
+              The CommentContent contains the XAML serialization and the __HtmlContent__ string property can be set to the desired 
+              user-defined HTML equivalent of the UI element. It will appear when the page is rendered outside RadRichTextEditor. 
+              The UI element can also be omitted from the document altogether.
+            
+>caption Figure 1: The  InlineUIContainerExporting event.
+
+![richtexteditor-document-elements-inlineuicontainer 001](images/richtexteditor-document-elements-inlineuicontainer001.png)
+
+* __Importing with HtmlFormatProvider__ – there is a property of the HtmlFormatProvider class called __HtmlImportSettings__,
+             which provides two events – __InlineUIContainerImporting__ and __InlineUIContainerImported__. 
+             The __EventArgs__ of these events have the same properties, as the ones that the __InlineUIContainerExporting__ event of __HtmlExportSettings__ has. 
+             Thus, even if you have not implemented custom export of inline UI containers, you can process the XAML comments on import and provide your own logic to create the serialized objects, set their properties and insert them in the Document.
+            
+
+>tip For more information on Import/Export, please refer to[this topic]({%slug winforms/richtexteditor-/import/export%}).
+>
 

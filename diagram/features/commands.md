@@ -43,6 +43,12 @@ The static __DiagramCommands__ class defines the following __RoutedUICommands__:
 * __Duplicate__- Duplicates selected item/s.
             
 
+* __Undo__- Undoes the last action.
+            
+
+* __Redo__- Redoes the last action.
+            
+
 * __BringToFront__- Brings to front selected diagram items.
             
 
@@ -56,6 +62,15 @@ The static __DiagramCommands__ class defines the following __RoutedUICommands__:
             
 
 * __Clear__- Clears the diagram.
+            
+
+* __BeginEdit__- Begins editing diagram item.
+            
+
+* __CommitEdit__- Commits the edited changes.
+            
+
+* __CancelEdit__- Cancels the edited changes.
             
 
 * __SelectAll__- Selects all shapes in the diagram.
@@ -121,7 +136,7 @@ Below is shown a sample code snippet how you can use some of the Diagram Command
         {
             this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste);
         }
-
+        
         private void radButton3_Click(object sender, EventArgs e)
         {
             this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left");

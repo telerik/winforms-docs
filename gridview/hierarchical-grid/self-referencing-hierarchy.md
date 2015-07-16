@@ -405,3 +405,50 @@ End Class
 
 
 This is it! In just a few steps we created a good looking self-referencing multi-column tree.
+
+It is possible to put the self-reference expander in any column by setting the __SelfReferenceExpanderColumn__ property 
+          of the __MasterTemplate__:
+        ![gridview-hierarchical-grid-self-referencing-hierarchy 003](images/gridview-hierarchical-grid-self-referencing-hierarchy003.png)#_[C#] Setting the SelfReferenceExpanderColumn_
+
+	
+
+
+
+{{source=..\SamplesCS\GridView\HierarchicalGrid\SelfReferencingHierarchy.cs region=SelfReferenceExpanderColumn}} 
+{{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=SelfReferenceExpanderColumn}} 
+
+````C#
+            this.radGridView1.MasterTemplate.SelfReferenceExpanderColumn = this.radGridView1.Columns["ParentFolderId"];
+````
+````VB.NET
+        Me.RadGridView1.MasterTemplate.SelfReferenceExpanderColumn = Me.RadGridView1.Columns("ParentFolderId")
+        '#End Region
+
+    End Sub
+
+    '#region fillingList
+    Private list As New BindingList(Of FileSystemItem)()
+    Private fileFolderIndex As Integer = 0
+
+    Public Sub GetFilesAndFolders(ByVal dir As String, ByVal parentId As Integer)
+        Dim di As New DirectoryInfo(dir)
+        Dim rgFiles() As FileInfo = di.GetFiles()
+        For Each fi As FileInfo In rgFiles
+            fileFolderIndex += 1
+            list.Add(New FileSystemItem(fileFolderIndex, "File", fi.Name, fi.CreationTime, parentId))
+        Next fi
+
+        Dim dirs() As DirectoryInfo = di.GetDirectories()
+        For Each d As DirectoryInfo In dirs
+            fileFolderIndex += 1
+            list.Add(New FileSystemItem(fileFolderIndex, "Folder", d.Name, d.CreationTime, parentId))
+            GetFilesAndFolders(d.FullName, fileFolderIndex)
+        Next d
+    End Sub
+    '
+````
+
+{{endregion}} 
+
+
+

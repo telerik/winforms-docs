@@ -35,9 +35,9 @@ __RadDiagramShape__ is an object that describes the nodes of the diagram.
             
             RadDiagramShape shape1 = new RadDiagramShape()
             {
-                ShapeText = "",
+                Text = "",
                 ElementShape = new AShape(),
-                InternalElementColor = Color.LimeGreen
+                BackColor = Color.LimeGreen
             };
             shape1.Position = new Telerik.Windows.Diagrams.Core.Point(100, 100);
             radDiagram1.Items.Add(shape1);
@@ -45,9 +45,9 @@ __RadDiagramShape__ is an object that describes the nodes of the diagram.
 ````VB.NET
 
         Dim shape1 As New RadDiagramShape() With { _
-            .ShapeText = "", _
+            .Text = "", _
             .ElementShape = New AShape(), _
-            .InternalElementColor = Color.LimeGreen _
+            .BackColor = Color.LimeGreen _
         }
         shape1.Position = New Telerik.Windows.Diagrams.Core.Point(100, 100)
         RadDiagram1.Items.Add(shape1)
@@ -67,7 +67,7 @@ __RadDiagramShape__ is an object that describes the nodes of the diagram.
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=AShape}} 
 
 ````C#
-        
+            
         public class AShape : ElementShape
         { 
             public override GraphicsPath CreatePath(Rectangle bounds)
@@ -109,9 +109,9 @@ or to use one of the predefined shapes:![diagram-diagram-items-shapes 002](image
             
             RadDiagramShape starShape = new RadDiagramShape()
             {
-                ShapeText = "",
+                Text = "",
                 ElementShape = new StarShape(),
-                InternalElementColor = Color.LimeGreen
+                BackColor = Color.LimeGreen
             };
             starShape.Position = new Telerik.Windows.Diagrams.Core.Point(400, 100);
             radDiagram1.Items.Add(starShape);
@@ -119,9 +119,9 @@ or to use one of the predefined shapes:![diagram-diagram-items-shapes 002](image
 ````VB.NET
 
         Dim starShape As New RadDiagramShape() With { _
-            .ShapeText = "", _
+            .Text = "", _
             .ElementShape = New StarShape(), _
-            .InternalElementColor = Color.LimeGreen _
+            .BackColor = Color.LimeGreen _
         }
         starShape.Position = New Telerik.Windows.Diagrams.Core.Point(100, 100)
         RadDiagram1.Items.Add(starShape)
