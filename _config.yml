@@ -110,9 +110,27 @@ navigation:
     richtextbox:
         title: RichTextBox (obsolote)
         position: 38
-    richtexteditor:
+    "richtexteditor":
         title: RichTextEditor
-        position: 39
+        position: 39  
+    richtexteditor/getting-started:
+        title: Getting Started
+        position: 2   
+    richtexteditor/document-elements:
+        title: Document Elements
+        postion: 4
+    richtexteditor/features:
+        title: Features
+        postion: 5
+    richtexteditor/import:
+        title: Import/Export
+        postion: 6
+    richtexteditor/ui-for-applying-rich-text-formatting:
+        title: UI for Applying Rich Text Formatting
+        postion: 7
+    richtexteditor/how-to:
+        title: How-To
+        postion: 14
     rotator:
         title: Rotator
         position: 40

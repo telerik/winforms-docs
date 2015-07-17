@@ -5,7 +5,7 @@ description: Upgrading to RadRichTextEditor
 slug: winforms/richtexteditor-/upgrading-to-radrichtexteditor
 tags: upgrading,to,radrichtexteditor
 published: True
-position: 0
+position: 1
 ---
 
 # Upgrading to RadRichTextEditor

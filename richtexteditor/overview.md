@@ -1,11 +1,11 @@
 ---
-title: RichTextEditor 
+title: Overview 
 page_title: RichTextEditor  | UI for WinForms Documentation
 description: RichTextEditor 
 slug: winforms/richtexteditor-
 tags: richtexteditor,
 published: True
-position: 38
+position: 0
 ---
 
 # RichTextEditor 

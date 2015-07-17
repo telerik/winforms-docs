@@ -5,7 +5,7 @@ description: Performance
 slug: winforms/richtexteditor-/performance
 tags: performance
 published: True
-position: 16
+position: 15
 ---
 
 # Performance

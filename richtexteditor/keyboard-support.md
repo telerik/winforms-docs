@@ -5,7 +5,7 @@ description: Keyboard Support
 slug: winforms/richtexteditor-/keyboard-support
 tags: keyboard,support
 published: True
-position: 9
+position: 10
 ---
 
 # Keyboard Support

@@ -5,7 +5,7 @@ description: UI Virtualization
 slug: winforms/richtexteditor-/ui-virtualization
 tags: ui,virtualization
 published: True
-position: 10
+position: 11
 ---
 
 # UI Virtualization

@@ -5,7 +5,7 @@ description: Events
 slug: winforms/richtexteditor-/events
 tags: events
 published: True
-position: 12
+position: 13
 ---
 
 # Events

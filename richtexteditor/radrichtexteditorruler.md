@@ -5,7 +5,7 @@ description: RadRichTextEditorRuler
 slug: winforms/richtexteditor-/radrichtexteditorruler-
 tags: radrichtexteditorruler,
 published: True
-position: 8
+position: 9
 ---
 
 # RadRichTextEditorRuler 
