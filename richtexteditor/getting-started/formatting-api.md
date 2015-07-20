@@ -5,7 +5,7 @@ description: Formatting API
 slug: winforms/richtexteditor-/getting-started/formatting-api
 tags: formatting,api
 published: True
-position: 1
+position: 2
 ---
 
 # Formatting API

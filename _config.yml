@@ -119,6 +119,18 @@ navigation:
     richtexteditor/document-elements:
         title: Document Elements
         postion: 4
+    richtexteditor/document-elements/annotations:		
+        title: Annotations
+        position: 8
+    richtexteditor/features/styles:
+        title: Styles
+        position: 13
+    richtexteditor/features/fields-and-document-variables:
+        title: Fields and Document Variables
+        position: 17
+    richtexteditor/features/references:
+        title: References
+        position: 18
     richtexteditor/features:
         title: Features
         postion: 5

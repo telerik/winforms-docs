@@ -5,7 +5,7 @@ description: Settings
 slug: winforms/richtexteditor-/import/export/settings
 tags: settings
 published: True
-position: 0
+position: 1
 ---
 
 # Settings

@@ -5,7 +5,7 @@ description: List Styles
 slug: winforms/richtexteditor-/features/styles/list-styles
 tags: list,styles
 published: True
-position: 0
+position: 1
 ---
 
 # List Styles

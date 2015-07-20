@@ -5,7 +5,7 @@ description: Use as Rich Content Viewer
 slug: winforms/richtexteditor-/getting-started/use-as-rich-content-viewer
 tags: use,as,rich,content,viewer
 published: True
-position: 2
+position: 3
 ---
 
 # Use as Rich Content Viewer

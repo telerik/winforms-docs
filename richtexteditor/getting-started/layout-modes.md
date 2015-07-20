@@ -5,7 +5,7 @@ description: Layout Modes
 slug: winforms/richtexteditor-/getting-started/layout-modes
 tags: layout,modes
 published: True
-position: 0
+position: 1
 ---
 
 # Layout Modes

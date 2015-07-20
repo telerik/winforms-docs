@@ -1,11 +1,11 @@
 ---
-title: Styles
+title: Styles Overview
 page_title: Styles | UI for WinForms Documentation
 description: Styles
-slug: winforms/richtexteditor-/features/styles
+slug: winforms/richtexteditor/features/styles
 tags: styles
 published: True
-position: 12
+position: 0
 ---
 
 # Styles

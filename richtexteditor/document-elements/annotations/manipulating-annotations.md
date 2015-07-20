@@ -5,7 +5,7 @@ description: Manipulating Annotations
 slug: winforms/richtexteditor-/document-elements/annotations/manipulating-annotations
 tags: manipulating,annotations
 published: True
-position: 0
+position: 1
 ---
 
 # Manipulating Annotations

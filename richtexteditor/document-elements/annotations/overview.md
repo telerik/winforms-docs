@@ -1,11 +1,11 @@
 ---
-title: Annotations
+title: Annotations Overview
 page_title: Annotations | UI for WinForms Documentation
 description: Annotations
 slug: winforms/richtexteditor-/document-elements/annotations
 tags: annotations
 published: True
-position: 7
+position: 0
 ---
 
 # Annotations

@@ -1,11 +1,11 @@
 ---
-title: Document Elements
+title: Elements Hierarchy
 page_title: Document Elements | UI for WinForms Documentation
 description: Document Elements
 slug: winforms/richtexteditor-/document-elements
 tags: document,elements
 published: True
-position: 3
+position: 0
 ---
 
 # Document Elements

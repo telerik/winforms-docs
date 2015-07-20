@@ -5,7 +5,7 @@ description: RadDocument
 slug: winforms/richtexteditor-/document-elements/raddocument
 tags: raddocument
 published: True
-position: 0
+position: 1
 ---
 
 # RadDocument

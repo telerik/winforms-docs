@@ -5,7 +5,7 @@ description: Style Sheets
 slug: winforms/richtexteditor-/features/styles/style-sheets
 tags: style,sheets
 published: True
-position: 1
+position: 2
 ---
 
 # Style Sheets

@@ -5,7 +5,7 @@ description: HTML support
 slug: winforms/richtexteditor-/import/export/html-support
 tags: html,support
 published: True
-position: 1
+position: 2
 ---
 
 # HTML support

@@ -5,7 +5,7 @@ description: Custom Annotations
 slug: winforms/richtexteditor-/document-elements/annotations/custom-annotations
 tags: custom,annotations
 published: True
-position: 1
+position: 2
 ---
 
 # Custom Annotations
