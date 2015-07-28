@@ -12,9 +12,7 @@ position: 9
 
 
 
-__RadRichTextEditorRuler__ is a control providing ruler functionality to 
-        [RadRichTextEditor]({%slug winforms/richtexteditor-%}). 
-        The rulers allow you to change the paragraph, page margins or align the paragraphs in the document.![richtexteditor-richtexteditorruler 001](images/richtexteditor-richtexteditorruler001.png)
+__RadRichTextEditorRuler__ is a control providing ruler functionality to [RadRichTextEditor]({%slug winforms/richtexteditor-%}).   The rulers allow you to change the paragraph, page margins or align the paragraphs in the document.![richtexteditor-richtexteditorruler 001](images/richtexteditor-richtexteditorruler001.png)
 
 >note Rulers only apply to the[Paged]({%slug winforms/richtexteditor-/document-elements/raddocument%})document layout mode of the __RadRichtextEditor.__ 
 >
@@ -22,8 +20,7 @@ __RadRichTextEditorRuler__ is a control providing ruler functionality to
 
 ## Using the RadRichTextEditorRuler at design time
 
-Since __RadRichTextEditorRuler__ is a separate control it is available in the toolbox. Here is how to put it in 
-        action:
+Since __RadRichTextEditorRuler__ is a separate control it is available in the toolbox. Here is how to put it in  action:
 
 1. Drag and drop __RadRichTextEditorRuler__ on the form.
 
@@ -31,16 +28,11 @@ Since __RadRichTextEditorRuler__ is a separate control it is available in the to
 
 1. Set the __AssociatedRichTextBox__ property in the properties window.![richtexteditor-richtexteditorruler 002](images/richtexteditor-richtexteditorruler002.png)
 
-1. Set the LayoutMode of the __RadRichTextEditor__ to 
-            [Paged]({%slug winforms/richtexteditor-/document-elements/raddocument%}).
+1. Set the LayoutMode of the __RadRichTextEditor__ to [Paged]({%slug winforms/richtexteditor-/document-elements/raddocument%}).
 
 ## Using the RadRichTextEditorRuler programmatically.
 
-You can add the control in code as well. The following snippet demonstrates how to add
-        __RadRichTextEditorRuler__ and __RadRichTextEditor__ to a form:#_[C#] _
-
-	
-
+You can add the control in code as well. The following snippet demonstrates how to add __RadRichTextEditorRuler__ and __RadRichTextEditor__ to a form:
 
 
 {{source=..\SamplesCS\RichTextEditor\RadRichTextEditorRulerCode.cs region=ruler}} 

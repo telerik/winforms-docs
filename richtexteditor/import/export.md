@@ -2,7 +2,7 @@
 title: Import/Export Overview
 page_title: Import/Export | UI for WinForms Documentation
 description: Import/Export
-slug: winforms/richtexteditor-/import/export
+slug: winforms/richtexteditor/import
 tags: import/export
 published: True
 position: 0

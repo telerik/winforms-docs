@@ -41,9 +41,7 @@ It is also possible to apply a style using the Styles dialog as shown in the pic
 
 Other than using the API to declare a style, you can also use the UI.
 
->tip More info on how to create a style from code can be found in the[
-              Styles article
-            ]({%slug winforms/richtexteditor-/features/styles%})
+>tip More info on how to create a style from code can be found in the[Styles article]({%slug winforms/richtexteditor/features/styles%})
 >
 ![richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-applying-styles 003](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-applying-styles003.png)
 
@@ -58,19 +56,15 @@ Clicking the *New* button on the Styles dialog invokes the __Create new style fr
 * __Style type__ - the Type of the style;
             
 
-* __Style based on__ - specifies that the current style inherits the StyleDefinition set to this property.
-              Corresponds to the BasedOn property;
+* __Style based on__ - specifies that the current style inherits the StyleDefinition set to this property. Corresponds to the BasedOn property;
             
 
-* __Style for following paragraph__ - specifies the style that will be applied to a newly created paragraph
-              following a paragraph with this style. The respective property is NextStyleName;
+* __Style for following paragraph__ - specifies the style that will be applied to a newly created paragraph following a paragraph with this style. The respective property is NextStyleName;
             
 
 You can also specify the wanted formatting as the dialog slightly changes depending on the type of style you are defining.
 
-The checkbox on the bottom - *Add to Quick Style list*, allows you to add custom styles to the Quick
-          Styles for easier access.
-        ![richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-applying-styles 004](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-applying-styles004.png)
+The checkbox on the bottom - *Add to Quick Style list*, allows you to add custom styles to the Quick Styles for easier access.![richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-applying-styles 004](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-applying-styles004.png)
 
 ## Modify Style
 
@@ -95,4 +89,4 @@ The predefined set of Styles in RadDocument cannot be deleted using the UI. Only
 
 # See Also
 
- * [Styles]({%slug winforms/richtexteditor-/features/styles%})
+ * [Styles]({%slug winforms/richtexteditor/features/styles%})
