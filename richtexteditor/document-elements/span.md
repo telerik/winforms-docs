@@ -23,7 +23,7 @@ This topic will explain you how to:
 
 ## Use Spans
 
-The __Spans__ can be used only in the context of the [Paragraph]({%Slug: winforms/richtexteditor-/document-elements/paragraph%}) element. The __Paragraph__ exposes a collection of Inlines, to which the spans can be added.
+The __Spans__ can be used only in the context of the [Paragraph]({%slug: winforms/richtexteditor-/document-elements/paragraph%}) element. The __Paragraph__ exposes a collection of Inlines, to which the spans can be added.
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\SpanCode.cs region=span}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\SpanCode.vb region=span}} 

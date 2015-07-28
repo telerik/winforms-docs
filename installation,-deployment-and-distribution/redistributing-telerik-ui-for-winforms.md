@@ -217,88 +217,83 @@ __Instructions__
 1. Uncomment the following line:
             
 
-	Before:
+Before:
 
-	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=CommentedIsValid}}
-	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=CommentedIsValid}}
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=CommentedIsValid}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=CommentedIsValid}}
 
-	````C#
-	        public static bool IsValid()
+````C#
+public static bool IsValid()
 	        {
 	            // Uncomment the following line
 	            // return ValidatePassPhrase();
 	            return true;
 	        }
-	````
-	````VB.NET
-		Public Shared Function IsValid() As Boolean
+````
+````VB.NET
+Public Shared Function IsValid() As Boolean
 	        ' Uncomment the following line
 	        ' return ValidatePassPhrase();
 	        Return True
 	    End Function
-	````
+````
 
-	{{endregion}}
+{{endregion}}
 
-	After:
 
-	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=UnCommentedIsValid}}
-	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=UnCommentedIsValid}}
+After:
 
-	````C#
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=UnCommentedIsValid}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=UnCommentedIsValid}}
 
-		 public static bool IsValid()
+````C#
+public static bool IsValid()
 	        {
 	            // Uncomment the following line
 	            return ValidatePassPhrase();
 	        }
-	````
-	````VB.NET
-	
-	    Public Shared Function IsValid() As Boolean
+````
+````VB.NET
+Public Shared Function IsValid() As Boolean
 	        ' Uncomment the following line
 	        Return ValidatePassPhrase()
 	    End Function
-	````
+````
 
-	{{endregion}}
+{{endregion}}
 
 1. Change the ApplicationName constant to match the name of your application:
 
-	Before:
+Before:
 
-	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=AppNameBefore}}
-	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=AppNameBefore}}
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=AppNameBefore}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=AppNameBefore}}
 
-	````C#
-	
-		internal const string ApplicationName = "MyApp";
-	````
+````C#
+	internal const string ApplicationName = "MyApp";
+````
+````VB.NET
+	Friend Const ApplicationName As String = "MyApp"
+````
 
-	````VB.NET
-
-		Friend Const ApplicationName As String = "MyApp"
-	````
-
-	{{endregion}}
+{{endregion}}
 
 
-	After:
+After:
 
-	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=AppNameAfter}}
-	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=AppNameAfter}}
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=AppNameAfter}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=AppNameAfter}}
 
-	````C#
+````C#
 
 		internal const string ApplicationName = "Sample Application Name v2.0 (tm)";
-	````
-
-	````VB.NET
+````
+````VB.NET
 
 		Friend Const ApplicationName As String = "Sample Application Name v2.0 (tm)"
-	````	
+````	
 
-	{{endregion}}
+{{endregion}}
 
 1. Save __AssemblyProtection.cs__ and rebuild.
             
