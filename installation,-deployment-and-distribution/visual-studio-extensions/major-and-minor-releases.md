@@ -5,7 +5,7 @@ description: Major and Minor releases
 slug: winforms/installation,-deployment-and-distribution/visual-studio-extensions/major-and-minor-releases
 tags: major,and,minor,releases
 published: True
-position: 7
+position: 8
 ---
 
 # Major and Minor releases

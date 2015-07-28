@@ -5,7 +5,7 @@ description: Upgrade wizard
 slug: winforms/installation,-deployment-and-distribution/visual-studio-extensions/upgrade-wizard
 tags: upgrade,wizard
 published: True
-position: 5
+position: 6
 ---
 
 # Upgrade wizard

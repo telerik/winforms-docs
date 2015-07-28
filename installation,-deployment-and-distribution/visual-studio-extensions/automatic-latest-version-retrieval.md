@@ -5,7 +5,7 @@ description: Automatic latest version retrieval
 slug: winforms/installation,-deployment-and-distribution/visual-studio-extensions/automatic-latest-version-retrieval
 tags: automatic,latest,version,retrieval
 published: True
-position: 6
+position: 7
 ---
 
 # Automatic latest version retrieval

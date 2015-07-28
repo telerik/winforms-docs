@@ -5,7 +5,7 @@ description: Creation and configuration wizard
 slug: winforms/installation,-deployment-and-distribution/visual-studio-extensions/creation-and-configuration-wizard
 tags: creation,and,configuration,wizard
 published: True
-position: 0
+position: 1
 ---
 
 # Creation and configuration wizard

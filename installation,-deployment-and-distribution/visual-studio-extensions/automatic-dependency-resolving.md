@@ -5,7 +5,7 @@ description: Automatic dependency resolving
 slug: winforms/installation,-deployment-and-distribution/visual-studio-extensions/automatic-dependency-resolving
 tags: automatic,dependency,resolving
 published: True
-position: 1
+position: 2
 ---
 
 # Automatic dependency resolving

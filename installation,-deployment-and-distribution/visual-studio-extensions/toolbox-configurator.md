@@ -5,7 +5,7 @@ description: Toolbox configurator
 slug: winforms/installation,-deployment-and-distribution/visual-studio-extensions/toolbox-configurator
 tags: toolbox,configurator
 published: True
-position: 4
+position: 5
 ---
 
 # Toolbox configurator

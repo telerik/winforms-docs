@@ -5,7 +5,7 @@ description: Design-time assembly handling
 slug: winforms/installation,-deployment-and-distribution/visual-studio-extensions/design-time-assembly-handling
 tags: design-time,assembly,handling
 published: True
-position: 2
+position: 3
 ---
 
 # Design-time assembly handling

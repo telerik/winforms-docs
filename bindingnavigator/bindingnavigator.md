@@ -1,11 +1,11 @@
 ---
-title: BindingNavigator
+title: Overview
 page_title: BindingNavigator | UI for WinForms Documentation
 description: BindingNavigator
 slug: winforms/bindingnavigator
 tags: bindingnavigator
 published: True
-position: 7
+position: 0
 ---
 
 # BindingNavigator

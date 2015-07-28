@@ -5,7 +5,7 @@ description: Options dialog
 slug: winforms/installation,-deployment-and-distribution/visual-studio-extensions/options-dialog
 tags: options,dialog
 published: True
-position: 3
+position: 4
 ---
 
 # Options dialog
