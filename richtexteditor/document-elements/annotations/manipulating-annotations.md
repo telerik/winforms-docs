@@ -28,18 +28,12 @@ The types of manipulations that can be performed on annotations include:
 
 ## Presentation
 
-By default all annotations are markup-only in the sense that they do not have any appearance. If you want to display a highlight, range brackets or 
-          anything else, you can use the UI layers feature of RadRichTextBox. You can read more about them in
-          [this article]({%slug winforms/richtexteditor-/how-to/customize-presentation-through-ui-layers%}).
+By default all annotations are markup-only in the sense that they do not have any appearance. If you want to display a highlight, range brackets or anything else, you can use the UI layers feature of RadRichTextBox. You can read more about them in [this article]({%slug winforms/richtexteditor-/how-to/customize-presentation-through-ui-layers%}).
         
 
 ## Methods for Retrieving Annotations
 
 * RadDocument exposes the following general methods for retrieving annotation markers or checking if such exist in the document at all:#_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=contains}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=contains}} 
@@ -61,15 +55,7 @@ By default all annotations are markup-only in the sense that they do not have an
 
 {{endregion}} 
 
-
-
-
-* Methods for retrieving the containing annotations around a particular inline. This is particularly convenient if you would like to perform checks 
-            against the position where the caret is at.First, you can obtain the current inline like this:#_[C#] _
-
-	
-
-
+* Methods for retrieving the containing annotations around a particular inline. This is particularly convenient if you would like to perform checks against the position where the caret is at.First, you can obtain the current inline like this:
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=inline}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=inline}} 
@@ -87,12 +73,7 @@ By default all annotations are markup-only in the sense that they do not have an
 
 {{endregion}} 
 
-
 and then, check if this inline is contained in a range using one of the methods below:#_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=inRange}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=inRange}} 
@@ -115,13 +96,7 @@ and then, check if this inline is contained in a range using one of the methods 
 {{endregion}} 
 
 
-
-
 * More finely tuned methods that filter the annotation ranges at the time of their retrieval include:#_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=inRange1}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=inRange1}} 
@@ -144,17 +119,10 @@ and then, check if this inline is contained in a range using one of the methods 
 {{endregion}} 
 
 
-
-
 ## Inserting Annotations
 
 Annotations can be inserted in the document using the following method of [RadDocumentEditor]({%slug winforms/richtexteditor-/features/raddocumenteditor%}).
-        #_[C#] _
-
-	
-
-
-
+ 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=insert}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=insert}} 
 
@@ -171,21 +139,12 @@ Annotations can be inserted in the document using the following method of [RadDo
 
 {{endregion}} 
 
-
-
-
 There are also some methods that insert specific types of annotations for the commonly used types, such as Hyperlinks, Comments, etc. 
         For more information, check the respective article.
 
 ## Deleting Annotations
 
-In order to delete an annotation, you need to obtain a reference to its range start first. After that, you can use the following 
-          method of [RadDocumentEditor]({%slug winforms/richtexteditor-/features/raddocumenteditor%}) to remove it.
-        #_[C#] _
-
-	
-
-
+In order to delete an annotation, you need to obtain a reference to its range start first. After that, you can use the following method of [RadDocumentEditor]({%slug winforms/richtexteditor-/features/raddocumenteditor%}) to remove it.
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=delete}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=delete}} 
@@ -203,15 +162,7 @@ In order to delete an annotation, you need to obtain a reference to its range st
 
 {{endregion}} 
 
-
-
-
-Note that this method will remove the annotation, but will keep its contents. In order to delete the contents as well, you can select it and use the 
-        Delete method of the editor:#_[C#] _
-
-	
-
-
+Note that this method will remove the annotation, but will keep its contents. In order to delete the contents as well, you can select it and use the Delete method of the editor:
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=delete1}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=delete1}} 
@@ -231,20 +182,11 @@ Note that this method will remove the annotation, but will keep its contents. In
 
 {{endregion}} 
 
-
-
-
-There are also some methods that remove specific types of annotations for the commonly used types, such as Hyperlinks, Comments, etc. For more 
-        information, check the respective article.
+There are also some methods that remove specific types of annotations for the commonly used types, such as Hyperlinks, Comments, etc. For more  information, check the respective article.
 
 ## Splitting Annotations
 
 Some user scenarios require that there would be an easy way to split annotation ranges. In such cases, one can use the following methods:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=split}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=split}} 
@@ -265,9 +207,6 @@ Some user scenarios require that there would be an easy way to split annotation 
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

@@ -27,20 +27,13 @@ The same approaches can be adopted when formatting the table:
 
 ## Creating a Table Programmatically via RadRichTextEditor's API
 
->tip To learn more about the __Formatting API__ of the __RadRichTextEditor__ , 
-          read[this topic]({%slug winforms/richtexteditor-/getting-started/formatting-api%}).
+>tip To learn more about the __Formatting API__ of the __RadRichTextEditor__ , read[this topic]({%slug winforms/richtexteditor-/getting-started/formatting-api%}).
 >
 
 
-The __RadRichTextEditor__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the 
-          __RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI.
-        
-
-Here is an example done in the code-behind.#_[C#] _
-
-	
-
-
+The __RadRichTextEditor__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the __RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI.
+ 
+Here is an example done in the code-behind.
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\TableCode.cs region=add}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\TableCode.vb region=add}} 
@@ -143,8 +136,6 @@ Here is an example done in the code-behind.#_[C#] _
 {{endregion}} 
 
 
-
-
 Here is a snapshot of the result.![richtexteditor-document-elements-table 001](images/richtexteditor-document-elements-table001.png)
 
 The __RadRichTextEditor__ exposes the following methods that regard the creation or deletion of a table:
@@ -182,38 +173,28 @@ The __RadRichTextEditor__ exposes the following methods that regard the creation
 
 ## Creating a Table via the Built-in UI
 
-You can enable the user to create a table via the built-in UI of the __RadRichTextEditor__. This is done by using 
-          the __RadRichTextEditorRibbonUI__, which exposes two different ways of creating a table by selection in the UI or on button click.           
-        ![richtexteditor-document-elements-table 002](images/richtexteditor-document-elements-table002.png)
+You can enable the user to create a table via the built-in UI of the __RadRichTextEditor__. This is done by using   the __RadRichTextEditorRibbonUI__, which exposes two different ways of creating a table by selection in the UI or on button click. ![richtexteditor-document-elements-table 002](images/richtexteditor-document-elements-table002.png)
 
-You can also use the __InsertTableDialog__, which comes out of the box. To show it upon a user action just call the
-          __ShowInsertTableDialog()__ method of the __RadRichTextEditor__. Here is a snapshot of it.
+You can also use the __InsertTableDialog__, which comes out of the box. To show it upon a user action just call the __ShowInsertTableDialog()__ method of the __RadRichTextEditor__. Here is a snapshot of it.
         
 
 >note The __RadRichTextEditorUI__ also uses this dialog.
 >
 ![richtexteditor-document-elements-table 003](images/richtexteditor-document-elements-table003.png)
 
->caution Inserting a table through the UI applies to it a __TableGrid style__ , which has a predefined set of borders.
-          However, a table created in code-behind is applied the __TableNormal__ style and does not have predefined borders.
+>caution Inserting a table through the UI applies to it a __TableGrid style__ , which has a predefined set of borders. However, a table created in code-behind is applied the __TableNormal__ style and does not have predefined borders.
 >
 
 
-A table could be deleted or modified via the Table Tools' contextual tab __Layout__. There are UI buttons for each of 
-          the API methods used for deleting and modifying a table.
-        ![richtexteditor-document-elements-table 004](images/richtexteditor-document-elements-table004.png)
+A table could be deleted or modified via the Table Tools' contextual tab __Layout__. There are UI buttons for each of the API methods used for deleting and modifying a table. ![richtexteditor-document-elements-table 004](images/richtexteditor-document-elements-table004.png)
 
 ## Formatting a Table at Runtime via RadRichTextEditor's API
 
->tip To learn more about the __Formatting API__ of the __RadRichTextEditor__ , 
-          read[this topic]({%slug winforms/richtexteditor-/getting-started/formatting-api%}).
+>tip To learn more about the __Formatting API__ of the __RadRichTextEditor__ , read[this topic]({%slug winforms/richtexteditor-/getting-started/formatting-api%}).
 >
 
 
-The __RadRichTextEditor__ exposes a rich API, which allows you to use various methods to add, modify or delete elements 
-          form the __RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this 
-          UI. The __RadRichTextEditor__ exposes the following methods that regard the modifying of a table:
-        
+The __RadRichTextEditor__ exposes a rich API, which allows you to use various methods to add, modify or delete elements  form the __RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this  UI. The __RadRichTextEditor__ exposes the following methods that regard the modifying of a table:
 
 * __ChangeTableBorders__ - modifies the borders of the currently selected table via a __TableBorders__ object.
             
@@ -241,21 +222,13 @@ The __RadRichTextEditor__ exposes a rich API, which allows you to use various me
 
 ## Formatting a Table via the Built-in UI
 
-You can enable the user to modify a table via the built-in UI of the __RadRichTextEditor__. This is done by using the 
-          __RadRichTextEditorRibbonUI__, which exposes a __Table Tools__ contextual menu with two tabs – 
-          __Design__ and __Layout__. They expose UI buttons for all API methods used for formatting and modifying a table. 
-          To learn more about how to use the __RadRichTextEditorRibbonUI__ read 
-          [this topic]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}).
-        ![richtexteditor-document-elements-table 005](images/richtexteditor-document-elements-table005.png)
+You can enable the user to modify a table via the built-in UI of the __RadRichTextEditor__. This is done by using the __RadRichTextEditorRibbonUI__, which exposes a __Table Tools__ contextual menu with two tabs –  __Design__ and __Layout__. They expose UI buttons for all API methods used for formatting and modifying a table.  To learn more about how to use the __RadRichTextEditorRibbonUI__ read  [this topic]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}). ![richtexteditor-document-elements-table 005](images/richtexteditor-document-elements-table005.png)
 
-The __Design__ contextual tab allows you to use a predefined set of formatting options called Table styles. 
-          The __TableStylesGallery__ offers a way to easily create, delete, modify and apply table styles in a document. To 
-          learn more about how to use the TableStylesGallery read [this topic]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/table-styles-gallery%}).
-        ![richtexteditor-document-elements-table 006](images/richtexteditor-document-elements-table006.png)
+The __Design__ contextual tab allows you to use a predefined set of formatting options called Table styles. The __TableStylesGallery__ offers a way to easily create, delete, modify and apply table styles in a document. To  learn more about how to use the TableStylesGallery read [this topic]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/table-styles-gallery%}). ![richtexteditor-document-elements-table 006](images/richtexteditor-document-elements-table006.png)
 
-Additionally the built-in context menu of the __RadRichTextEditor__ gives the user the possibility to open the 
-          __Table Properties__ and __Table Borders__ dialogs.
-        ![richtexteditor-document-elements-table 007](images/richtexteditor-document-elements-table007.png)
+Additionally the built-in context menu of the __RadRichTextEditor__ gives the user the possibility to open the   __Table Properties__ and __Table Borders__ dialogs.
+
+![richtexteditor-document-elements-table 007](images/richtexteditor-document-elements-table007.png)
 
 >tip To wire these dialogs to your own UI you can use the __ShowTablePropertiesDialog()__ method of __RadRichTextEditor__ or the __ShowTablePropertiesCommand__ .
 >
