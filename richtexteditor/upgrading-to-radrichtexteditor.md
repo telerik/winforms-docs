@@ -24,11 +24,6 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
             *Telerik.WinControls.RichTextEditor.dll*
 
 1. Replace the __RadRichTextBox__ type with __RadRichTextEditor__ (you can change the name as well)
-            #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\Upgrade.cs region=upgrade}} 
 {{source=..\SamplesVB\RichTextEditor\Upgrade.vb region=upgrade}} 
@@ -49,15 +44,9 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 {{endregion}} 
 
 
+1. __RadRichTextEditor__ supports all features that are supported in the RadRichTextBox (and much more), however some of them  may not be at the same place and some compile time errors may occur. The final step is to fix these errors, it can be achieved by  finding the new equivalents of the missing properties and method and replacing them. Should you have any issues finding a property or a method, feel free to submit a support ticket and we will help you find it.
 
-
-1. __RadRichTextEditor__ supports all features that are supported in the RadRichTextBox (and much more), however some of them 
-              may not be at the same place and some compile time errors may occur. The final step is to fix these errors, it can be achieved by 
-              finding the new equivalents of the missing properties and method and replacing them. Should you have any issues finding a property
-            or a method, feel free to submit a support ticket and we will help you find it.
-
->important  __RadRichTextEditor__ example provides you with a ribbon UI that can be easily used if you need 
-            a fully functional text editor.  Detailed information is available[here]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}).
+>important  __RadRichTextEditor__ example provides you with a ribbon UI that can be easily used if you need a fully functional text editor.  Detailed information is available [here]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}).
 >
 
 
@@ -72,11 +61,6 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
             
 
 * The __ShowInsertHyperlinkDialog__ method is moved to the control and now it can be used like this:
-            #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\ConvertToRadRichTextEditor.cs region=insertHyperlink}} 
 {{source=..\SamplesVB\RichTextEditor\ConvertToRadRichTextEditor.vb region=insertHyperlink}} 
@@ -95,14 +79,7 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 {{endregion}} 
 
 
-
-
 * The __ShowManageBookmarksDialog__ now can be used as follows:           
-           #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\ConvertToRadRichTextEditor.cs region=insertBookmark}} 
 {{source=..\SamplesVB\RichTextEditor\ConvertToRadRichTextEditor.vb region=insertBookmark}} 
@@ -121,13 +98,7 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 {{endregion}} 
 
 
-
-
-* When you are inserting an image it is mandatory to specify the extension:#_[C#] _
-
-	
-
-
+* When you are inserting an image it is mandatory to specify the extension:
 
 {{source=..\SamplesCS\RichTextEditor\ConvertToRadRichTextEditor.cs region=insertImage}} 
 {{source=..\SamplesVB\RichTextEditor\ConvertToRadRichTextEditor.vb region=insertImage}} 
@@ -146,13 +117,7 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 {{endregion}} 
 
 
-
-
-* Now you can insert table by using the built-in dialog rather than using InsertTableForm:#_[C#] _
-
-	
-
-
+* Now you can insert table by using the built-in dialog rather than using InsertTableForm:
 
 {{source=..\SamplesCS\RichTextEditor\ConvertToRadRichTextEditor.cs region=insertTable}} 
 {{source=..\SamplesVB\RichTextEditor\ConvertToRadRichTextEditor.vb region=insertTable}} 
@@ -168,8 +133,6 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 ````
 
 {{endregion}} 
-
-
 
 
 # See Also

@@ -126,7 +126,7 @@ __RadFixedDocument__ exposes a __DocumentInfo__ property of type __RadFixedDocum
           intended to hold additional information about the document. The __RadFixedDocumentInfo__ class allows to set the following properties:
         
 
-* __Auto__: The author of the document.
+* __Author__: The author of the document.
             
 
 * __Title__: The title of the document.
