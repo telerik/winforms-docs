@@ -5,7 +5,7 @@ description: Columns
 slug: winforms/gridview/columns
 tags: columns
 published: True
-position: 2
+position: 0
 ---
 
 # Columns

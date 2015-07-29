@@ -21,16 +21,16 @@ The __RadRichTextBox__ control raises the following specific events:
 * __CurrentEditingStyleChanged__ - occurs when the current editing style changes. The event handler receives two arguments: 
 				
 
-* The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.
+	* The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.
 
-* An __EventArgs__ object
+	* An __EventArgs__ object
 
 * __CurrentParagraphStyleChanged__ - occurs when the position of the caret goes to another paragraph. The event handler receives two arguments: 
 				
 
-* The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.
+	* The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.
 
-* An __EventArgs__ object.
+	* An __EventArgs__ object.
 
 * __CurrentSpanStyleChanged__ - occurs when the position of the caret goes to another word. The event handler receives two arguments: 
 				

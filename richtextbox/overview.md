@@ -1,11 +1,11 @@
 ---
-title: RichTextBox (Obsolete)
+title: Overview
 page_title: RichTextBox (Obsolete) | UI for WinForms Documentation
 description: RichTextBox (Obsolete)
 slug: winforms/richtextbox-(obsolete)
 tags: richtextbox,(obsolete)
 published: True
-position: 37
+position: 0
 ---
 
 # RichTextBox (Obsolete)
