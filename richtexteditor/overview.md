@@ -56,7 +56,7 @@ __RadRichTextEditor__ is a control that is able to display and edit rich-text co
 
 * __Rich-text clipboard –__ allows rich text copy/paste from Word, OpenOffice etc.[Read more](0696ADDB-DD5A-484D-B5C9-A8C90F6DA93D)
 
-* __Import/export__ - with Telerik __RadRichTextEditor__ control you can load XAML, HTML, RTF, DocX (rich-text) or TXT (plain text) into the control, you can format and edit it and then export it back to any of the above formats or PDF. [Read more]({%slug winforms/richtexteditor-/import/export%})
+* __Import/export__ - with Telerik __RadRichTextEditor__ control you can load XAML, HTML, RTF, DocX (rich-text) or TXT (plain text) into the control, you can format and edit it and then export it back to any of the above formats or PDF. [Read more]({%slug winforms/richtexteditor/import%})
 
 * __Headers and Footers__ - __RadRichTextEditor__ supports headers and footers in its document. [Read more]({%slug winforms/richtexteditor-/features/headers-and-footers%})
 
@@ -91,4 +91,4 @@ __RadRichTextEditor__ is a control that is able to display and edit rich-text co
 
  * [Getting Started]({%slug winforms/richtexteditor-/getting-started%})
 
- * [Events]({%slug winforms/richtexteditor-/events%})
+ * [Events]({%slug winforms/richtexteditor/events%})

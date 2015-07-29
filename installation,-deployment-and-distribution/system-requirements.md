@@ -14,7 +14,5 @@ position: 0
 
 ## 
 
-The following page describes the system requirements needed by Telerik UI for WinForms:
-          [Telerik UI for WinForms - System requirements](http://www.telerik.com/winforms/tech-sheets/system-requirements)
-          .
+The following page describes the system requirements needed by Telerik UI for WinForms: [Telerik UI for WinForms - System requirements](http://www.telerik.com/winforms/tech-sheets/system-requirements).
         

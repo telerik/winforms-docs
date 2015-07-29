@@ -12,23 +12,14 @@ position: 4
 
 
 
-The __InlineImage__ class allows images to be displayed inside the document. The __InlineImage__ can only be used 
-        in the context of a __Paragraph__ class. As it is an inline element, it gets placed after the previous inline element until the end of 
-        the line. If there is no space left, the element will be wrapped on the next line.
+The __InlineImage__ class allows images to be displayed inside the document. The __InlineImage__ can only be used  in the context of a __Paragraph__ class. As it is an inline element, it gets placed after the previous inline element until the end of the line. If there is no space left, the element will be wrapped on the next line.
       
-
 This topic will explain you how to use the __InlineImage__ element.
-      
 
 ## Add in Code Behind
 
 Here is an example of how to add an __InlineImage__ element in the code behind.
-        #_[C#] _
-
-	
-
-
-
+  
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\InlineImageCode.cs region=image}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\InlineImageCode.vb region=image}} 
 
@@ -68,22 +59,10 @@ Here is an example of how to add an __InlineImage__ element in the code behind.
 
 {{endregion}} 
 
-
-
-
 ## Add via UI
 
-Here is an example of how to allow the user to select an image and add it to the document. For that purpose a __RadButton__ 
-          and an __OpenFileDialog__ are used. When the file stream from the __OpenFileDialog__ gets obtained, it's 
-          passed to the __InsertImage()__ API method of the __RadRichTextEditor__. This method takes as an argument the 
-          extension of the image, which can be again obtained from the __FileInfo__ object. After calling the __InsertImage()__ 
-          method, the image will appear in the document with its default width and height.
-        #_[C#] _
-
-	
-
-
-
+Here is an example of how to allow the user to select an image and add it to the document. For that purpose a __RadButton__           and an __OpenFileDialog__ are used. When the file stream from the __OpenFileDialog__ gets obtained, it's           passed to the __InsertImage()__ API method of the __RadRichTextEditor__. This method takes as an argument the extension of the image, which can be again obtained from the __FileInfo__ object. After calling the __InsertImage()__ method, the image will appear in the document with its default width and height.
+   
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\InlineImageCode.cs region=insert}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\InlineImageCode.vb region=insert}} 
 
@@ -124,9 +103,6 @@ Here is an example of how to allow the user to select an image and add it to the
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

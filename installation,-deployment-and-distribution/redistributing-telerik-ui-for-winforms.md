@@ -44,12 +44,14 @@ In order to use this approach you need to set the __ResolverTypesInCurrentAssemb
         
 
 >Please make sure that you set the ResolverTypesInCurrentAssembly property in the __static__ constructor of the form. This approach will not work if the property is set somewhere else.
-          
 
-#### __[C#]__
 
 {{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=ResolveTypesInCurrentAssembly}}
-	        static RedestributingTelerikRadControls()
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=ResolveTypesInCurrentAssembly}}
+
+````C#
+
+      	static RedestributingTelerikRadControls()
 	        {
 	            Telerik.WinControls.RadTypeResolver.Instance.ResolveTypesInCurrentAssembly = true;
 	        }
@@ -58,13 +60,9 @@ In order to use this approach you need to set the __ResolverTypesInCurrentAssemb
 	        {
 	            InitializeComponent();
 	        }
-	{{endregion}}
+````
+````VB.NET
 
-
-
-#### __[VB.NET]__
-
-{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=ResolveTypesInCurrentAssembly}}
 	    Shared Sub New()
 	        Telerik.WinControls.RadTypeResolver.Instance.ResolveTypesInCurrentAssembly = True
 	    End Sub
@@ -74,9 +72,9 @@ In order to use this approach you need to set the __ResolverTypesInCurrentAssemb
 	        InitializeComponent()
 	        ' Add any initialization after the InitializeComponent() call.
 	    End Sub
-	{{endregion}}
+````
 
-
+{{endregion}}
 
 Next, you should build your solution and then ILMerge the built application executable with the Telerik assemblies:
 
@@ -121,15 +119,15 @@ Protecting Telerik UI for WinForms requires the Telerik assemblies to be built f
 
 1. In the properties for the Telerik.WinControls project, open the Build tab and add an OEM conditional compilation symbol, as shown below:
  
-Before:
+	Before:
              
- ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows001.png)
+ 	![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows001.png)
 
-After: 
+	After: 
 
-![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 002](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows002.png)
+	![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 002](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows002.png)
 
->Note: If you are building the .NET4.0 version of the assemblies, you need to use the Release40 build configuration. In this case, when you add the "OEM" symbol, you need to keep the existing NET4 symbol - "OEM; NET4".
+	>Note: If you are building the .NET4.0 version of the assemblies, you need to use the Release40 build configuration. In this case, when you add the "OEM" symbol, you need to keep the existing NET4 symbol - "OEM; NET4".
 
 1. Open C:\Telerik UI for WinForms Source\RadControl\TPF\Control\RadControl.cs in a text editor (notepad, Visual Studio etc).
             
@@ -219,87 +217,85 @@ __Instructions__
 1. Uncomment the following line:
             
 
-	#### __[C#] Before__
+Before:
 
-	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=CommentedIsValid}}
-	        public static bool IsValid()
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=CommentedIsValid}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=CommentedIsValid}}
+
+````C#
+public static bool IsValid()
 	        {
 	            // Uncomment the following line
 	            // return ValidatePassPhrase();
 	            return true;
 	        }
-	{{endregion}}
-
-
-
-	#### __[VB] Before__
-
-	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=CommentedIsValid}}
-	    Public Shared Function IsValid() As Boolean
+````
+````VB.NET
+Public Shared Function IsValid() As Boolean
 	        ' Uncomment the following line
 	        ' return ValidatePassPhrase();
 	        Return True
 	    End Function
-	{{endregion}}
+````
+
+{{endregion}}
 
 
+After:
 
-	#### __[C#] After__
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=UnCommentedIsValid}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=UnCommentedIsValid}}
 
-	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=UnCommentedIsValid}}
-	        public static bool IsValid()
+````C#
+public static bool IsValid()
 	        {
 	            // Uncomment the following line
 	            return ValidatePassPhrase();
 	        }
-	{{endregion}}
-
-
-
-	#### __[VB] After__
-
-	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=UnCommentedIsValid}}
-	    Public Shared Function IsValid() As Boolean
+````
+````VB.NET
+Public Shared Function IsValid() As Boolean
 	        ' Uncomment the following line
 	        Return ValidatePassPhrase()
 	    End Function
-	{{endregion}}
+````
+
+{{endregion}}
 
 1. Change the ApplicationName constant to match the name of your application:
 
-	#### __[C#] Before__
+Before:
 
-	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=AppNameBefore}}
-	        internal const string ApplicationName = "MyApp";
-	{{endregion}}
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=AppNameBefore}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=AppNameBefore}}
 
+````C#
+	internal const string ApplicationName = "MyApp";
+````
+````VB.NET
+	Friend Const ApplicationName As String = "MyApp"
+````
 
-
-	#### __[VB] Before__
-
-	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=AppNameBefore}}
-	    Friend Const ApplicationName As String = "MyApp"
-	{{endregion}}
-
-
-
-	#### __[C#] After__
-
-	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=AppNameAfter}}
-	        internal const string ApplicationName = "Sample Application Name v2.0 (tm)";
-	{{endregion}}
+{{endregion}}
 
 
+After:
 
-	### __[VB] After__
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=AppNameAfter}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=AppNameAfter}}
 
-	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=AppNameAfter}}
-	    Friend Const ApplicationName As String = "Sample Application Name v2.0 (tm)"
-	{{endregion}}
+````C#
 
+		internal const string ApplicationName = "Sample Application Name v2.0 (tm)";
+````
+````VB.NET
 
+		Friend Const ApplicationName As String = "Sample Application Name v2.0 (tm)"
+````	
 
-1. Save __AssemblyProtection.cs__and rebuild.
+{{endregion}}
+
+1. Save __AssemblyProtection.cs__ and rebuild.
             
 
 1. In your application replace the existing references to the Telerik assemblies with the ones built from the source code.
@@ -310,8 +306,7 @@ __Instructions__
 ## Using the images from the suite in your solutions
 
 When you install the suite together with the installation we deploy a few different kinds of images
-          - some come with the controls, others with the examples, with themes, etc. Following you can find information on which images can be reused in
-          your applications and how this can be done.
+          - some come with the controls, others with the examples, with themes, etc. Following you can find information on which images can be reused in your applications and how this can be done.
         
 
 * Images displayed in the examples __may not__ be used/reused at all by our Licensees.
@@ -320,15 +315,12 @@ When you install the suite together with the installation we deploy a few differ
 * Images and other resources provided in the core product __may not__ be used outside of the Telerik components.
             
 
-* Images from one Telerik control __can be reused in another Telerik control__ as long as the customer has
-              obtained licenses for both Telerik products.
+* Images from one Telerik control __can be reused in another Telerik control__ as long as the customer has obtained licenses for both Telerik products.
             
 
 ## Telerik UI for WinForms Assemblies
 
-When deploying your application on customer machines, you should make sure that the following assemblies are included
-          in the distribution, being merged with the application executable or being recompiled with the
-          special symbol set:
+When deploying your application on customer machines, you should make sure that the following assemblies are included in the distribution, being merged with the application executable or being recompiled with the special symbol set:
         
 
 __Assemblies that you should redistribute in all scenarios:__
@@ -339,11 +331,7 @@ __Assemblies that you should redistribute in all scenarios:__
 * Telerik.WinControls.dll
             
 
-If you are using the
-          [Telerik Analytics](http://www.telerik.com/analytics)
-          functionality you will also need to reference the __EQATEC.Analytics.Monitor.dll__ assembly.
-          For more information please check out the topic on
-          [Getting Started with Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction)
+If you are using the [Telerik Analytics](http://www.telerik.com/analytics) functionality you will also need to reference the __EQATEC.Analytics.Monitor.dll__ assembly. For more information please check out the topic on [Getting Started with Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction)
 
 __Assemblies that you need to redistribute depending on which controls you use in your application__
 <table><th>Control Name</th><th>Assembly</th>

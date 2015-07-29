@@ -8,6 +8,9 @@ navigation:
     installation,-deployment-and-distribution:
         title: Installation, Deployment and Distribution
         position: 4
+    installation,-deployment-and-distribution/visual-studio-extensions:
+        title: Visual Studio Extensions
+        position: 6
     licensing:
         title: Licensing
         position: 5

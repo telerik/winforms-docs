@@ -14,7 +14,6 @@ position: 2
 
 ## 
 
-Information about new features is available on Telerik's site, section Products > WinForms > What's New
-          [http://www.telerik.com/products/winforms/whats-new.aspx](http://www.telerik.com/products/winforms/whats-new.aspx)
+Information about new features is available on Telerik's site, section Products > WinForms > What's New [http://www.telerik.com/products/winforms/whats-new.aspx](http://www.telerik.com/products/winforms/whats-new.aspx)
           .
         

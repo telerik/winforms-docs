@@ -12,26 +12,16 @@ position: 1
 
 
 
->note  __RadRichTextEditor__ uses format providers in order to utilize import from and export to different file formats. 
-          You can learn more about the basics of using the format providers over[here]({%slug winforms/richtexteditor-/import/export%}).
+>note  __RadRichTextEditor__ uses format providers in order to utilize import from and export to different file formats. You can learn more about the basics of using the format providers over[here]({%slug winforms/richtexteditor/import%}).
 >
 
 
-As sometimes the formats may support several ways for presenting one and the same content, some customization options have been provided in 
-        order to specify the result which the user expects. This is achieved with the help of import and export settings, which some format providers expose
-        ([HtmlFormatProvider](#htmlformatprovider),
-        [PdfFormatProvider](#pdfformatprovider),
-        [RtfFormatProvider](#rtfformatprovider)
-        and
-        [DocxFormatProvider](#docxformatprovider)).
-        You need to create an instance of the settings and assign it to the property of the provider you will be using. Then, you can set (or retrieve) the
-        properties you need.
+As sometimes the formats may support several ways for presenting one and the same content, some customization options have been provided in  order to specify the result which the user expects. This is achieved with the help of import and export settings, which some format providers expose ([HtmlFormatProvider](#htmlformatprovider), [PdfFormatProvider](#pdfformatprovider),[RtfFormatProvider](#rtfformatprovider) and [DocxFormatProvider](#docxformatprovider)). You need to create an instance of the settings and assign it to the property of the provider you will be using. Then, you can set (or retrieve) the properties you need.
       
 
 ## HtmlFormatProvider
 
-__HtmlFormatProvider__ makes use of __HtmlExportSettings__ and __HtmlImportSettings__ to 
-          control import/export.
+__HtmlFormatProvider__ makes use of __HtmlExportSettings__ and __HtmlImportSettings__ to  control import/export.
         
 
 __HtmlExportSettings__ provide the following options:
