@@ -14,42 +14,22 @@ position: 1
 
 
 RELATED VIDEOS
-|[ Getting started with RadRichTextBox ](http://tv.telerik.com/watch/winforms/getting-started-with-teleriks-radrichtextbox)![richtextbox-getting-started 000](images/richtextbox-getting-started000.png)|In this video, we are going to see what it takes to get started with the RadRichTextBox. The RichTextBox 
-               		control offers broad editing and formatting capabilities with true Word-like experience. You can load 
-               		XAML, HTML, DOCX, RTF, or plain text document into the WinForms RichTextBox control. Each of these 
-               		formats will allow you to edit and format the document, which can then be exported to/saved as any 
-               		of the above mentioned supported formats, plus PDF. RadRichTextBox can also be used with RadRibbonBar 
-               		for Windows Forms to give an Microsoft Office style look to your WinForms application. Also included 
-               		is SpellChecking, Multi-region Selection and Editing and much much more.|
+|[ Getting started with RadRichTextBox ](http://tv.telerik.com/watch/winforms/getting-started-with-teleriks-radrichtextbox)![richtextbox-getting-started 000](images/richtextbox-getting-started000.png)|In this video, we are going to see what it takes to get started with the RadRichTextBox. The RichTextBox control offers broad editing and formatting capabilities with true Word-like experience. You can load XAML, HTML, DOCX, RTF, or plain text document into the WinForms RichTextBox control. Each of these formats will allow you to edit and format the document, which can then be exported to/saved as any of the above mentioned supported formats, plus PDF. RadRichTextBox can also be used with RadRibbonBar for Windows Forms to give an Microsoft Office style look to your WinForms application. Also included is SpellChecking, Multi-region Selection and Editing and much much more.|
 
-RadRichTextBox is a control that allows you to display rich text content including sections, paragraphs,
-          spans, italic text, bold text, in-line images etc. This topic will help you to quickly get started using
-          the control.
+RadRichTextBox is a control that allows you to display rich text content including sections, paragraphs, spans, italic text, bold text, in-line images etc. This topic will help you to quickly get started using the control.
       
-
-
+>caption 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with Telerik's RadRichTextBox](http://tv.telerik.com/watch/winforms/getting-started-with-teleriks-radrichtextbox)In this video, we are going to see what it takes to get started with the RadRichTextBox. 
-          			 The RichTextBox control offers broad editing and formatting capabilities with true 
-          			 Word-like experience. You can load XAML, HTML, DOCX, RTF, or plain text document 
-          			 into the WinForms RichTextBox control. Each of these formats will allow you to edit 
-          			 and format the document, which can then be exported to/saved as any of the above
-          			 mentioned supported formats, plus PDF. RadRichTextBox can also be used with 
-          			 RadRibbonBar for Windows Forms to give an Microsoft Office style look to your 
-          			 WinForms application. Also included is SpellChecking, Multi-region Selection and
-          			 Editing and much much more.|
->caption 
-
+|[Getting Started with Telerik's RadRichTextBox](http://tv.telerik.com/watch/winforms/getting-started-with-teleriks-radrichtextbox)
 ![richtextbox-getting-started 001](images/richtextbox-getting-started001.png)|
+
+In this video, we are going to see what it takes to get started with the RadRichTextBox. The RichTextBox control offers broad editing and formatting capabilities with true  Word-like experience. You can load XAML, HTML, DOCX, RTF, or plain text document  into the WinForms RichTextBox control. Each of these formats will allow you to edit and format the document, which can then be exported to/saved as any of the above mentioned supported formats, plus PDF. RadRichTextBox can also be used with  RadRibbonBar for Windows Forms to give an Microsoft Office style look to your  WinForms application. Also included is SpellChecking, Multi-region Selection and Editing and much much more.|
+
 
 ## Formatting at design time
 
-There are cases when you want to display a non-editable content that has been defined and
-        	formatted as far back as design time. In most of the cases the __TextBlock__
-        	control is used, but it doesn't provide you with a way to format your text in the same control 
-        	instance. Although the RadRichTextBox is a rich text input control, it can also be used as a rich
-        	text viewer. In order to format the text inside it you can use the following classes:
+There are cases when you want to display a non-editable content that has been defined and formatted as far back as design time. In most of the cases the __TextBlock__	control is used, but it doesn't provide you with a way to format your text in the same control instance. Although the RadRichTextBox is a rich text input control, it can also be used as a richtext viewer. In order to format the text inside it you can use the following classes:
         
 
 * Section
@@ -60,11 +40,7 @@ There are cases when you want to display a non-editable content that has been de
 
 * InlineImage
 
-As you can see the text is still editable. To make it read only you have to set the 
-			__IsReadOnly__ property of the RadRichTextBox to *True*.
-		#_[C#] Read only mode_
-
-	
+As you can see the text is still editable. To make it read only you have to set the __IsReadOnly__ property of the RadRichTextBox to *True*.
 
 
 
@@ -86,15 +62,7 @@ As you can see the text is still editable. To make it read only you have to set 
 
 ## Formatting via a sample UI
 
-If you want to allow the user to edit and format the content of the RadRichTextBox, you have to
-    	create a UI and use the API exposed by the RadRichTextBox. The API exposes methods 
-    	(like ToggleBold(), ToggleItalic() etc.) that modify the text in the control when called.
-    	Here is an example of creating a UI for making the text bold, italic and underlined.
-    #_[C#] Bold, Italic, Underline_
-
-	
-
-
+If you want to allow the user to edit and format the content of the RadRichTextBox, you have tocreate a UI and use the API exposed by the RadRichTextBox. The API exposes methods (like ToggleBold(), ToggleItalic() etc.) that modify the text in the control when called. Here is an example of creating a UI for making the text bold, italic and underlined.
 
 {{source=..\SamplesCS\RichTextBox\RichTextBoxGettingStarted.cs region=BoldItalicUnderline}} 
 {{source=..\SamplesVB\RichTextBox\RichTextBoxGettingStarted.vb region=BoldItalicUnderline}} 

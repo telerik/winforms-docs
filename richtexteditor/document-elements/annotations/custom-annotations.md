@@ -65,7 +65,7 @@ The most common scenarios for the use of custom annotations is for associating s
 
 {{endregion}} 
 
-* Override the CreateRangeStartInstance in the RangeEnd class.#_[C#] _
+* Override the CreateRangeStartInstance in the RangeEnd class.
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=instance}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=instance}} 
@@ -124,7 +124,7 @@ The behavior of the annotations when edited, copied and deleted is determined by
 
 * __DeleteBehavior, BackspaceBehavior, DeleteSelectedBehavior__ - you can customize these behaviors by choosing from the options in  the enum AnnotationMarkerDeleteBehavior: PreserveAnnotation, SelectAnnotation, RemoveAnnotation, SelectAnnotationMarker. For example hyperlinks keep the default settings in FieldRangeStart and FieldRangeEnd, which are: 
  
-	* HyperlinkRangeStart:
+HyperlinkRangeStart:
 
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=delete}} 
@@ -179,8 +179,7 @@ The behavior of the annotations when edited, copied and deleted is determined by
 
 {{endregion}} 
 
-
-	* HyperlinkRangeEnd:
+HyperlinkRangeEnd:
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=delete2}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=delete2}} 

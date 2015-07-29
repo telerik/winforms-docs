@@ -12,8 +12,7 @@ position: 16
 
 
 
-__Track Changes__ is a way for __RadRichTextEditor__ to keep track of the changes you make to a document.
-        You can then choose to accept or reject those changes.
+__Track Changes__ is a way for __RadRichTextEditor__ to keep track of the changes you make to a document. You can then choose to accept or reject those changes.
       
 
 * [Activating Track Changes](#activating-track-changes)
@@ -27,11 +26,6 @@ __Track Changes__ is a way for __RadRichTextEditor__ to keep track of the change
 ## Activating Track Changes
 
 You can activate change tracking through the __IsTrackChangesEnabled__ property of __RadRichTextEditor__:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\TrackChanges.cs region=enable}} 
 {{source=..\SamplesVB\RichTextEditor\Features\TrackChanges.vb region=enable}} 
@@ -50,8 +44,6 @@ You can activate change tracking through the __IsTrackChangesEnabled__ property 
 {{endregion}} 
 
 
-
-
 When change tracking is enabled all changes made in the document will be tracked. This includes: 
 
 * adding and removing text;
@@ -62,14 +54,7 @@ When change tracking is enabled all changes made in the document will be tracked
 
 ## Customizing Changes Visualization
 
-As you can see tracked changes are visualized inside the rich text box with different colors.
-          You can modify these colors by using the __TrackChangesOptions__ property of __RadRichTextEditor__.
-          Here is for example how to customize the look of the tracked changes so that insertions are shown in green,
-          deletions are shown in underlined orange and the vertical line indicating changes is red:
-        #_[C#] _
-
-	
-
+As you can see tracked changes are visualized inside the rich text box with different colors.  You can modify these colors by using the __TrackChangesOptions__ property of __RadRichTextEditor__. Here is for example how to customize the look of the tracked changes so that insertions are shown in green,  deletions are shown in underlined orange and the vertical line indicating changes is red:
 
 
 {{source=..\SamplesCS\RichTextEditor\Features\TrackChanges.cs region=options}} 
@@ -97,20 +82,14 @@ As you can see tracked changes are visualized inside the rich text box with diff
 {{endregion}} 
 
 
+The result is:
 
-
-The result is:![richtexteditor-features-track-changes 002](images/richtexteditor-features-track-changes002.png)
+![richtexteditor-features-track-changes 002](images/richtexteditor-features-track-changes002.png)
 
 ## Changing Current User
 
-All changes made while track changes are enabled are made on behalf of the current user. The current user can be changed by setting the __CurrentUser__
-          property of the __RadRichTextEditor__:
-        #_[C#] _
-
-	
-
-
-
+All changes made while track changes are enabled are made on behalf of the current user. The current user can be changed by setting the __CurrentUser__ property of the __RadRichTextEditor__:
+  
 {{source=..\SamplesCS\RichTextEditor\Features\TrackChanges.cs region=user}} 
 {{source=..\SamplesVB\RichTextEditor\Features\TrackChanges.vb region=user}} 
 
@@ -128,18 +107,16 @@ All changes made while track changes are enabled are made on behalf of the curre
 {{endregion}} 
 
 
+Here is the result:
 
+![richtexteditor-features-track-changes 003](images/richtexteditor-features-track-changes003.png)
 
-Here is the result:![richtexteditor-features-track-changes 003](images/richtexteditor-features-track-changes003.png)
-
-By default, insert and delete changes by different authors will be displayed in different colors. This can be changed through the
-          __TrackChangesOptions__ as described in the previous section.
+By default, insert and delete changes by different authors will be displayed in different colors. This can be changed through the __TrackChangesOptions__ as described in the previous section.
         
 
 ## Navigating through changes
 
-RadDocument provides a set of methods for navigating and getting revisions – a special class containing information for a single change in the document.
-          Revisions can be one of these 3 types:
+RadDocument provides a set of methods for navigating and getting revisions – a special class containing information for a single change in the document. Revisions can be one of these 3 types:
         
 
 * Structure – Inserted or deleted text.
@@ -148,13 +125,8 @@ RadDocument provides a set of methods for navigating and getting revisions – a
 
 * Table – added or removed table rows.
 
-All revision have a RevisionInfo object associated to them, which contains information about the user who made the change and the date and
-          time it was made. Revisions in the document can be accessed and selected with the following methods of RadDocument:
-        #_[C#] _
-
-	
-
-
+All revision have a RevisionInfo object associated to them, which contains information about the user who made the change and the date and time it was made. Revisions in the document can be accessed and selected with the following methods of RadDocument:
+ 
 
 {{source=..\SamplesCS\RichTextEditor\Features\TrackChanges.cs region=revision}} 
 {{source=..\SamplesVB\RichTextEditor\Features\TrackChanges.vb region=revision}} 
@@ -181,6 +153,3 @@ All revision have a RevisionInfo object associated to them, which contains infor
 ````
 
 {{endregion}} 
-
-
-

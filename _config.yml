@@ -95,6 +95,93 @@ navigation:
     gridview:
         title: GridView
         position: 24
+    gridview/fundamentals:
+        title: Fundamentals
+        position: 2
+    gridview/columns:
+        title: Columns
+        position: 3
+    gridview/columns/column-types:
+        title: Columns
+        position: 1
+    gridview/rows:
+        title: Rows
+        position: 4
+    gridview/cells:
+        title: Cells
+        position: 5
+    gridview/editors:
+        title: Editors
+        position: 6
+    gridview/editors/how-to:
+        title: How-To
+        position: 7
+    gridview/context-menus:
+        title: Context Menus
+        position: 7
+    gridview/populating-with-data:
+        title: Populating with Data
+        position: 8
+    gridview/hierarchical-grid:
+        title: Hierarchical Grid
+        position: 9
+    gridview/hierarchical-grid/how-to:
+        title: How-To
+        position: 10
+    gridview/selection:
+        title: Selection
+        position: 10
+    gridview/scrolling:
+        title: Scrolling
+        position: 12
+    gridview/sorting:
+        title: Sorting
+        position: 13
+    gridview/grouping:
+        title: Grouping
+        position: 14
+    gridview/filtering:
+        title: Filtering
+        position: 15
+    gridview/paging:
+        title: Paging
+        position: 16
+    gridview/expression-editor:
+        title: Expression Editor
+        position: 17
+    gridview/insert:
+        title: Insert/Update/Delete Records
+        position: 18
+    gridview/view-definitions:
+        title: View Definitions
+        position: 19
+    gridview/virtual-mode:
+        title: Virtual Mode
+        position: 20
+    gridview/exporting-data:
+        title: Exporting Data
+        position: 21
+    gridview/exporting-data/how-to:
+        title: How-To
+        position: 21
+    gridview/design-time-support:
+        title: Design-time Support
+        position: 22
+    gridview/end-user-capabilities:
+        title: End-user Capabilities
+        position: 23
+    gridview/styling-and-appearance:
+        title: Styling and Appearance
+        position: 24
+    gridview/localization:
+        title: Localization
+        position: 25
+    gridview/save-and-load-layout:
+        title: Save and Load Layout
+        position: 26
+    gridview/printing-support:
+        title: Printing Support
+        position: 27
     layoutcontrol:
         title: LayoutControl
         position: 25
@@ -137,9 +224,12 @@ navigation:
     richtextbox:
         title: RichTextBox (obsolote)
         position: 38
+    "richtextbox/features":
+        title: Features
+        position: 2 
     "richtexteditor":
         title: RichTextEditor
-        position: 39  
+        position: 39  		
     richtexteditor/getting-started:
         title: Getting Started
         position: 2   

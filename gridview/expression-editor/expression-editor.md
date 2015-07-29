@@ -5,7 +5,7 @@ description: Expression Editor
 slug: winforms/gridview/expression-editor
 tags: expression,editor
 published: True
-position: 16
+position: 0
 ---
 
 # Expression Editor

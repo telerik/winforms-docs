@@ -12,14 +12,13 @@ position: 11
 
 
 
-__RadRichTextEditor__ control provides functionality for inserting comment annotations inside the document. You can programmatically insert and
-        delete comments though the [RadDocumentEditor]({%slug winforms/richtexteditor-/features/raddocumenteditor%}) class.
+__RadRichTextEditor__ control provides functionality for inserting comment annotations inside the document. You can programmatically insert and delete comments though the [RadDocumentEditor]({%slug winforms/richtexteditor-/features/raddocumenteditor%}) class.
       
 
 ## UI and Commands
 
 Commenting functionality is available in the Review tab inside the RadRichTextEditorRibbonUI example:
-        ![richtexteditor-features-comments 001](images/richtexteditor-features-comments001.png)
+![richtexteditor-features-comments 001](images/richtexteditor-features-comments001.png)
 
 The following commands related to the commenting functionality are available in the Commands property of the RadRichTextEditor:
         
@@ -48,9 +47,7 @@ The following commands related to the commenting functionality are available in 
 
 ## Working with Comments Programmatically
 
-Comments inside the __RadDocument__ model are implemented using the __CommentRangeStart__
-          and __CommentRangeEnd__ annotations. The actual __Comment__ object which contains the content of the
-          comment is a property of the __CommentRangeEnd__.
+Comments inside the __RadDocument__ model are implemented using the __CommentRangeStart__ and __CommentRangeEnd__ annotations. The actual __Comment__ object which contains the content of the comment is a property of the __CommentRangeEnd__.
         
 
 Comments can be programmatically inserted/deleted using the following methods of __RadDocumentEditor__:
@@ -84,21 +81,12 @@ You can also programmatically navigate and select comments using the API of __Ra
 
 * __public CommentRangeStart GetCommentRangeStartByComment(Comment comment)__
 
-There are also __GoToNextComment()__ and __GoToPreviousComment()__ methods available in
-          __RadRichTextEditor__. They select the appropriate comment and place the focus inside the comment balloon if the comments are visible.
-          These methods also show a message box if no comment is found.
+There are also __GoToNextComment()__ and __GoToPreviousComment()__ methods available in __RadRichTextEditor__. They select the appropriate comment and place the focus inside the comment balloon if the comments are visible.  These methods also show a message box if no comment is found.
         
 
 ## Customizing Visualization
 
-You can customize the looks of the comments by attaching to the __CommentShowing__ event of __RadRichTextEditor__.
-          Inside the event handler you can access the __Comment__ and modify the __AppearanceSettings__ that are used to
-          visualize the comment. Here is an example:
-        #_[C#] _
-
-	
-
-
+You can customize the looks of the comments by attaching to the __CommentShowing__ event of __RadRichTextEditor__.   Inside the event handler you can access the __Comment__ and modify the __AppearanceSettings__ that are used to  visualize the comment. Here is an example:
 
 {{source=..\SamplesCS\RichTextEditor\Features\Comments.cs region=event}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Comments.vb region=event}} 
@@ -139,15 +127,11 @@ You can customize the looks of the comments by attaching to the __CommentShowing
 {{endregion}} 
 
 
-
-
 And the result looks like this:
-        ![richtexteditor-features-comments 002](images/richtexteditor-features-comments002.png)
+![richtexteditor-features-comments 002](images/richtexteditor-features-comments002.png)
 
-Note, that for performance reasons this event will be thrown only once per each comment – the first time it is shown. The
-          __AppearanceSettings__ will then be cached and used for the associated comment when needed.
+Note, that for performance reasons this event will be thrown only once per each comment – the first time it is shown. The __AppearanceSettings__ will then be cached and used for the associated comment when needed.
         
-
 # See Also
 
  * [RadDocumentEditor]({%slug winforms/richtexteditor-/features/raddocumenteditor%})

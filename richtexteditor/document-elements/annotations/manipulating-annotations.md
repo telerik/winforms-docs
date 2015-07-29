@@ -33,7 +33,7 @@ By default all annotations are markup-only in the sense that they do not have an
 
 ## Methods for Retrieving Annotations
 
-* RadDocument exposes the following general methods for retrieving annotation markers or checking if such exist in the document at all:#_[C#] _
+* RadDocument exposes the following general methods for retrieving annotation markers or checking if such exist in the document at all:
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=contains}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=contains}} 

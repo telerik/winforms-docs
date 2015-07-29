@@ -32,9 +32,6 @@ As explained in the previous section, the state of the document is essential for
 
 For example, you can build a RadDocument from scratch and add Sections to it in the following way:
 
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=init}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=init}} 
@@ -53,9 +50,6 @@ For example, you can build a RadDocument from scratch and add Sections to it in 
 ````
 
 {{endregion}} 
-
-
-
 
 Splitting an already measured document into two sections at the current caret position, on the other hand, can be done by inserting  a section break:
 
@@ -89,7 +83,7 @@ The method accept a parameter of type SectionBreakType. The possible values are:
 
 ## Customize a Section
 
-The __Section__exposes several properties that allow you to customize the layout of the elements placed underneath it.These properties can be set directly to the section when the document is created programmatically. If the changes should be applied to the document after it has been loaded in the editor, the respective methods and commands should be used.
+The __Section__ exposes several properties that allow you to customize the layout of the elements placed underneath it.These properties can be set directly to the section when the document is created programmatically. If the changes should be applied to the document after it has been loaded in the editor, the respective methods and commands should be used.
         
 
 Here is a list of these properties:

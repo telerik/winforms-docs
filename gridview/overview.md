@@ -1,11 +1,11 @@
 ---
-title: GridView
+title: Overview
 page_title: GridView | UI for WinForms Documentation
 description: GridView
 slug: winforms/gridview
 tags: gridview
 published: True
-position: 24
+position: 0
 ---
 
 # GridView
