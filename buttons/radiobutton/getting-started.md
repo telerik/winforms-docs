@@ -5,7 +5,7 @@ description: Getting Started
 slug: winforms/buttons/radiobutton/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
@@ -20,46 +20,40 @@ The following tutorial demonstrates creating two groups of radio buttons that ac
 
 1. Drop two __RadGroupBoxes__ on the form.
 
-1. Drop three __RadRadioButtons__ on the first groupbox. 
-          Set their __Text__ properties to "Small", "Medium" and "Large".
+1. Drop three __RadRadioButtons__ on the first groupbox. Set their __Text__ properties to "Small", "Medium" and "Large".
 
-1. Drop three __RadRadioButtons__ on the second groupbox. 
-          Set their Text properties to "Latte", "Mocha", and "Hot Chocolate".
+1. Drop three __RadRadioButtons__ on the second groupbox. Set their Text properties to "Latte", "Mocha", and "Hot Chocolate".
 
-1. Drop a __RadLabel__ on the form. 
-          Set the name of the RadLabel to "lblStatus".
+1. Drop a __RadLabel__ on the form. Set the name of the RadLabel to "lblStatus".
 
 1. Hold down the Shift key and select all six RadRadioButtons with the mouse.
 
 1. Click the __Events__ tab of the Properties Window.
 
 1. Double click the __ToggleStateChanged__ event to create an event handler. Replace the code with the following:
-          	#_[C#] Handling the ToggleStateChanged Event_
-
-	
-
+          	
+	__Handling the ToggleStateChanged Event__
 
 
-{{source=..\SamplesCS\Buttons\RadioButton.cs region=handlingToggleStateChanged}} 
-{{source=..\SamplesVB\Buttons\RadioButton.vb region=handlingToggleStateChanged}} 
 
-````C#
+	{{source=..\SamplesCS\Buttons\RadioButton.cs region=handlingToggleStateChanged}} 
+	{{source=..\SamplesVB\Buttons\RadioButton.vb region=handlingToggleStateChanged}} 
+
+	````C#
 
         void radRadioButton1_ToggleStateChanged(object sender, StateChangedEventArgs args)
         {
- 	        lblStatus.Text = (sender as RadRadioButton).Text + " is selected";
+	lblStatus.Text = (sender as RadRadioButton).Text + " is selected";
         }
-````
-````VB.NET
+	````
+	````VB.NET
 
     Private Sub radRadioButton1_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
         lblStatus.Text = (TryCast(sender, RadRadioButton)).Text + " is selected"
     End Sub
+	````
 
-    '
-````
-
-{{endregion}} 
+	{{endregion}} 
 
 
 

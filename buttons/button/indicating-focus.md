@@ -5,7 +5,7 @@ description: Indicating Focus
 slug: winforms/buttons/button/indicating-focus
 tags: indicating,focus
 published: True
-position: 1
+position: 2
 ---
 
 # Indicating Focus
@@ -17,5 +17,6 @@ position: 1
 RadButton has two ways to indicate that it is focused:
 
 * Showing a thin dotted rectangular frame. This feature could be enabled by setting __AllowShowFocusCues__ property to *true* (the default value is *true*). The style of the frame cannot be customized. 
-          ![buttons-button-indicating-focus 001](images/buttons-button-indicating-focus001.png) 
+ 
+![buttons-button-indicating-focus 001](images/buttons-button-indicating-focus001.png) 
           

@@ -1,11 +1,11 @@
 ---
-title: ToggleSwitch
+title: Overview
 page_title: ToggleSwitch | UI for WinForms Documentation
 description: ToggleSwitch
 slug: winforms/buttons/toggleswitch
 tags: toggleswitch
 published: True
-position: 8
+position: 0
 ---
 
 # ToggleSwitch

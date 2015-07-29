@@ -5,7 +5,7 @@ description: Right-to-Left support
 slug: winforms/buttons/splitbutton/right-to-left-support
 tags: right-to-left,support
 published: True
-position: 1
+position: 2
 ---
 
 # Right-to-Left support
@@ -15,11 +15,7 @@ position: 1
 ## 
 
 You can present the content of your grid instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*:
-        #_[C#]_
-
-	
-
-
+      
 
 {{source=..\SamplesCS\Buttons\SplitButton1.cs region=rtl}} 
 {{source=..\SamplesVB\Buttons\SplitButton1.vb region=rtl}} 

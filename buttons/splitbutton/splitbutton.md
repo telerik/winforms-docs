@@ -1,11 +1,11 @@
 ---
-title: SplitButton
+title: Overview
 page_title: SplitButton | UI for WinForms Documentation
 description: SplitButton
 slug: winforms/buttons/splitbutton
 tags: splitbutton
 published: True
-position: 5
+position: 0
 ---
 
 # SplitButton

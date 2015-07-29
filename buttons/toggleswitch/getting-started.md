@@ -5,7 +5,7 @@ description: Getting Started
 slug: winforms/buttons/toggleswitch/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
@@ -17,12 +17,10 @@ position: 0
 You can add a __RadToggleSwitch__ to your form either at design time or at run time:
         
 
-* Adding __RadToggleSwitch__ at design time: drag a __RadToggleSwitch__ from the
-              toolbox and drop it onto the surface of the form’s designer.
+* Adding __RadToggleSwitch__ at design time: drag a __RadToggleSwitch__ from the toolbox and drop it onto the surface of the form’s designer.
             
 
-* Adding __RadToggleSwitch__ programmatically: create a new instance of __RadToggleSwitch__
-              and add it to the Form.__Controls__ collection:
+* Adding __RadToggleSwitch__ programmatically: create a new instance of __RadToggleSwitch__ and add it to the Form.__Controls__ collection:
             #_[C#] Adding RadToggleSwitch programmatically_
 
 	

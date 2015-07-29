@@ -5,7 +5,7 @@ description: Working with RadDropDownButton Items
 slug: winforms/buttons/dropdownbutton/working-with-raddropdownbutton-items
 tags: working,with,raddropdownbutton,items
 published: True
-position: 0
+position: 1
 ---
 
 # Working with RadDropDownButton Items
@@ -16,25 +16,29 @@ The heart of RadDropDownButton is the __Items__ collection. This collection defi
 
 ## Adding Items at Design Time 
 
-To add menu items at Design Time, click on the __Items__ property(the ellipsis button) to launch the __RadElement Collection Editor__. Click the arrow next to the __Add__ button to add items to the menu. You can add a variety of items to the collection.![buttons-dropdownbutton-working-with-raddropdownbutton-items 001](images/buttons-dropdownbutton-working-with-raddropdownbutton-items001.png)
+To add menu items at Design Time, click on the __Items__ property(the ellipsis button) to launch the __RadElement Collection Editor__. Click the arrow next to the __Add__ button to add items to the menu. You can add a variety of items to the collection.
 
-Once you have added a __RadMenuItem__ to the collection, it will appear in the list on the left side of the dialog. Click the __RadMenuItem__ to edit its properties in the corresponding property grid on the right of the dialog.![buttons-dropdownbutton-working-with-raddropdownbutton-items 002](images/buttons-dropdownbutton-working-with-raddropdownbutton-items002.png)
+![buttons-dropdownbutton-working-with-raddropdownbutton-items 001](images/buttons-dropdownbutton-working-with-raddropdownbutton-items001.png)
 
-In the property grid you will find many of the standard control properties, including __Text__, to control the display text of the item and __ToolTipText__that displays when the mouse hovers over an item. Each __RadMenuItem__ you add also contains an __Items__ collection of its own, allowing you to create menu hierarchies in the __RadDropDownButton__. You can also do the following with each item:
+Once you have added a __RadMenuItem__ to the collection, it will appear in the list on the left side of the dialog. Click the __RadMenuItem__ to edit its properties in the corresponding property grid on the right of the dialog.
+
+![buttons-dropdownbutton-working-with-raddropdownbutton-items 002](images/buttons-dropdownbutton-working-with-raddropdownbutton-items002.png)
+
+In the property grid you will find many of the standard control properties, including __Text__, to control the display text of the item and __ToolTipText__ that displays when the mouse hovers over an item. Each __RadMenuItem__ you add also contains an __Items__ collection of its own, allowing you to create menu hierarchies in the __RadDropDownButton__. You can also do the following with each item:
 
 * Associate an image to an item using the __Image__ property or associate a standard __ImageList__ component to the __RadDropDownButton__ and use the __ImageIndex__ or __ImageKey__ properties for the item. 
 
-* __PopupDirection__determines the direction in which the sub items of a __RadMenuItem__will be displayed and can be __Left__, __Right__, __Up__or __Down.__
+* __PopupDirection__ determines the direction in which the sub items of a __RadMenuItem__ will be displayed and can be __Left__, __Right__, __Up__ or __Down__.
 
-* To display sub items in two columns set __HasTwoColumns__to true and add items to the __RightColumnItems__collection.
+* To display sub items in two columns set __HasTwoColumns__ to true and add items to the __RightColumnItems__ collection.
 
-* Use __CheckOnClick__to toggle a check mark next to a __RadMenuItem__. This property is appropriate to use when the item doesn't contain sub items.
+* Use __CheckOnClick__ to toggle a check mark next to a __RadMenuItem__. This property is appropriate to use when the item doesn't contain sub items.
 
 ## Adding Items at Run Time in Code
 
-You can also add __RadDropDownButton__ items in code at Run Time. The following example code illustrates how to programmatically add a __RadMenuItem__ to your button.#_[C#] Adding RadDropDownButton items_
+You can also add __RadDropDownButton__ items in code at Run Time. The following example code illustrates how to programmatically add a __RadMenuItem__ to your button.
 
-	
+__[C#] Adding RadDropDownButton items__
 
 
 
@@ -75,14 +79,9 @@ You can also add __RadDropDownButton__ items in code at Run Time. The following
 
 {{endregion}} 
 
+Similarly, you can create item hierarchies in code by adding new __RadMenuItem__ objects to the __Items__ collection of your existing __RadMenuItem__.
 
-
-
-Similarly, you can create item hierarchies in code by adding new __RadMenuItem__ objects to the __Items__ collection of your existing __RadMenuItem__.#_[C#] Adding sub items_
-
-	
-
-
+__[C#] Adding sub items__
 
 {{source=..\SamplesCS\Buttons\DropDownButton1.cs region=itemsHierarchy}} 
 {{source=..\SamplesVB\Buttons\DropDownButton1.vb region=itemsHierarchy}} 
@@ -142,9 +141,13 @@ End Namespace
 
 ## Displaying Images with Items
 
-You can display images and text on your menu items.![buttons-dropdownbutton-working-with-raddropdownbutton-items 003](images/buttons-dropdownbutton-working-with-raddropdownbutton-items003.png)
+You can display images and text on your menu items.
 
-To add an image to your menu item, click in the __Image__ property of the __RadMenuItem__, and then click the ellipsis button to launch the __Select Resource__ dialog. From this dialog you can select an image file from a project resource file or from an image resource on your local hard drive. ![buttons-dropdownbutton-working-with-raddropdownbutton-items 004](images/buttons-dropdownbutton-working-with-raddropdownbutton-items004.png)
+![buttons-dropdownbutton-working-with-raddropdownbutton-items 003](images/buttons-dropdownbutton-working-with-raddropdownbutton-items003.png)
+
+To add an image to your menu item, click in the __Image__ property of the __RadMenuItem__, and then click the ellipsis button to launch the __Select Resource__ dialog. From this dialog you can select an image file from a project resource file or from an image resource on your local hard drive. 
+
+![buttons-dropdownbutton-working-with-raddropdownbutton-items 004](images/buttons-dropdownbutton-working-with-raddropdownbutton-items004.png)
 
 ## Using the Click Event
 

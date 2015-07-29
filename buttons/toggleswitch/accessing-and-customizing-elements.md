@@ -5,7 +5,7 @@ description: Accessing and Customizing Elements
 slug: winforms/buttons/toggleswitch/accessing-and-customizing-elements
 tags: accessing,and,customizing,elements
 published: True
-position: 3
+position: 4
 ---
 
 # Accessing and Customizing Elements
@@ -14,10 +14,7 @@ position: 3
 
 ## Design time
 
-You can access and modify the style for different elements in __RadToggleSwitch__ by using the 
-        *Element hierarchy editor*. Before proceeding with this topic, it is recommended to get familiar with the
-          [visual structure]({%slug winforms/buttons/toggleswitch/structure%}) of
-        the __RadToggleSwitch__.
+You can access and modify the style for different elements in __RadToggleSwitch__ by using the *Element hierarchy editor*. Before proceeding with this topic, it is recommended to get familiar with the [visual structure]({%slug winforms/buttons/toggleswitch/structure%}) of the __RadToggleSwitch__.
         
 >caption Fig.1 Element hierarchy editor
 

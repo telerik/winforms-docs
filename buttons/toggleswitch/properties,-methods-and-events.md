@@ -5,7 +5,7 @@ description: Properties, Methods and Events
 slug: winforms/buttons/toggleswitch/properties,-methods-and-events
 tags: properties,,methods,and,events
 published: True
-position: 2
+position: 3
 ---
 
 # Properties, Methods and Events
@@ -101,8 +101,7 @@ position: 2
 
 
 
-* __SwitchElasticity__: determines how far the switch needs to be dragged before it snaps to the opposite side. 
-              Its default value is *0.5*
+* __SwitchElasticity__: determines how far the switch needs to be dragged before it snaps to the opposite side. Its default value is *0.5*
 
 * __Value__: gets or sets a boolean value. Its default value is *true*.
             
@@ -168,7 +167,7 @@ position: 2
 
 ````C#
             
-            this.radToggleSwitch1.Width = 100;
+        this.radToggleSwitch1.Width = 100;
 ````
 ````VB.NET
 
@@ -197,7 +196,7 @@ position: 2
 
 ````C#
             
-            this.radToggleSwitch1.Height = 50;
+        this.radToggleSwitch1.Height = 50;
 ````
 ````VB.NET
         

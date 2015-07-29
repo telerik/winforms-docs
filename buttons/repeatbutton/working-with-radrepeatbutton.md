@@ -5,7 +5,7 @@ description: Working with RadRepeatButton
 slug: winforms/buttons/repeatbutton/working-with-radrepeatbutton
 tags: working,with,radrepeatbutton
 published: True
-position: 0
+position: 1
 ---
 
 # Working with RadRepeatButton
@@ -14,16 +14,11 @@ position: 0
 
 ## 
 
-In addition to the standard properties shared by all buttons, notice a new 
-        property named __Interval__. This property determines the time, 
-        in milliseconds, between button click events after the control begins repeating events. 
-        The default value is 33.
+In addition to the standard properties shared by all buttons, notice a new property named __Interval__. This property determines the time, in milliseconds, between button click events after the control begins repeating events. The default value is 33.
 
 To begin the repeat process, use the __ButtonClick__ event instead of __Click__. To create an event handler for this event, change the filter in the Property Grid to __Events__ and find the entry for __ButtonClick__. Double-click in the empty value drop-down list for the property to have the designer create a method to handle __ButtonClick__.
 
-The following code illustrates the use of a __RadRepeatButton__ to manipulate a __ProgressBar__ control. At each interval the __ProgressBar__ value will increment. You do not need to write any additional code to handle the repeating event. As long as the mouse button is pressed down on the __RepeatButton__ control, the code in the __ButtonClick__ event handler will run at each interval.#_[C#]_
-
-	
+The following code illustrates the use of a __RadRepeatButton__ to manipulate a __ProgressBar__ control. At each interval the __ProgressBar__ value will increment. You do not need to write any additional code to handle the repeating event. As long as the mouse button is pressed down on the __RepeatButton__ control, the code in the __ButtonClick__ event handler will run at each interval. 
 
 
 
@@ -58,8 +53,6 @@ The following code illustrates the use of a __RadRepeatButton__ to manipulate a 
 ````
 
 {{endregion}} 
-
-
 
 
 ![buttons-repeatbutton-working-with-radrepeatbutton 001](images/buttons-repeatbutton-working-with-radrepeatbutton001.png)

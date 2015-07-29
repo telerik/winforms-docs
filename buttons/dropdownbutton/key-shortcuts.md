@@ -5,7 +5,7 @@ description: Key ShortCuts
 slug: winforms/buttons/dropdownbutton/key-shortcuts
 tags: key,shortcuts
 published: True
-position: 1
+position: 2
 ---
 
 # Key ShortCuts
@@ -14,11 +14,9 @@ position: 1
 
 ## 
 
-Use the code below to open the drop-down menu using shortcuts(*Please refer to the help section about adding shortcuts to controls for adding the shortcut itself*):#_[C#] Adding sub items_
+Use the code below to open the drop-down menu using shortcuts(*Please refer to the help section about adding shortcuts to controls for adding the shortcut itself*):
 
-	
-
-
+__[C#] Adding sub items__
 
 {{source=..\SamplesCS\Buttons\DropDownButton.cs region=keyShortcuts}} 
 {{source=..\SamplesVB\Buttons\DropDownButton.vb region=keyShortcuts}} 

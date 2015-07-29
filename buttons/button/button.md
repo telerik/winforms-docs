@@ -1,5 +1,5 @@
 ---
-title: Button
+title: Overview
 page_title: Button | UI for WinForms Documentation
 description: Button
 slug: winforms/buttons/button
@@ -12,16 +12,14 @@ position: 0
 
 ![buttons-button-overview 001](images/buttons-button-overview001.png)
 
-__RadButton__is a replacement of the standard WinForms Button. __RadButton__supports themes.
+__RadButton__ is a replacement of the standard WinForms Button. __RadButton__ supports themes.
         
 
 * To add a __RadButton__ to your form, drag a __RadButton__ from the toolbox onto the surface of the form designer.
 
-* To programmatically add a RadButton to a form, create a new instance of a __RadButton__, and add it to the form __Controls__ collection.#_[C#] Adding a RadButton at runtime_
+* To programmatically add a RadButton to a form, create a new instance of a __RadButton__, and add it to the form __Controls__ collection.
 
-
-
-
+__[C#] Adding a RadButton at runtime__
 
 {{source=..\SamplesCS\Buttons\Button.cs region=creatingbutton}} 
 {{source=..\SamplesVB\Buttons\Button.vb region=creatingbutton}} 
@@ -50,12 +48,7 @@ __RadButton__is a replacement of the standard WinForms Button. __RadButton__supp
 
 ## Antialiased text
 
-Use the following code snippet to set the __TextRenderingHint__property of the __TextPrimitive__to use antialiasing:
-        #_[C#]_
-
-	
-
-
+Use the following code snippet to set the __TextRenderingHint__ property of the __TextPrimitive__ to use antialiasing: 
 
 {{source=..\SamplesCS\Buttons\Button.cs region=textrenderinghint}} 
 {{source=..\SamplesVB\Buttons\Button.vb region=textrenderinghint}} 
@@ -70,8 +63,6 @@ Use the following code snippet to set the __TextRenderingHint__property of the _
 ````
 
 {{endregion}} 
-
-
 
 
 You can alternatively create a theme using the Visual Style Builder which sets the property for the TextPrimitive node.
