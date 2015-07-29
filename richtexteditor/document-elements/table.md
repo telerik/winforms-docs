@@ -27,7 +27,7 @@ The same approaches can be adopted when formatting the table:
 
 ## Creating a Table Programmatically via RadRichTextEditor's API
 
->tip To learn more about the __Formatting API__ of the __RadRichTextEditor__ , read[this topic]({%slug winforms/richtexteditor-/getting-started/formatting-api%}).
+>tip To learn more about the __Formatting API__ of the __RadRichTextEditor__ , read [this topic]({%slug winforms/richtexteditor-/getting-started/formatting-api%}).
 >
 
 

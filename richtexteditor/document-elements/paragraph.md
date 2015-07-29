@@ -58,7 +58,7 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug winforms
 
 ## Add inline elements to a Paragraph
 
-To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage you have to use the Inlines collection of the Paragraph.#_[C#] _
+To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage you have to use the Inlines collection of the Paragraph.
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ParagraphCode.cs region=inline}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ParagraphCode.vb region=inline}} 

@@ -20,14 +20,11 @@ Now the following functionality is supported in the __RadRichTextEditor__
 
 * making bookmarks in the document the targets of hyperlinks.
 
-The classes that encapsulate the functionality of hyperlinks are
-        [HyperlinkInfo](#hyperlinkinfo),
-        [HyperlinkRangeStart and HyperlinkRangeEnd](#hyperlinkrangestart-and-hyperlinkrangeend).
+The classes that encapsulate the functionality of hyperlinks are [HyperlinkInfo](#hyperlinkinfo),[HyperlinkRangeStart and HyperlinkRangeEnd](#hyperlinkrangestart-and-hyperlinkrangeend).
         
       
 
-[Other customization options](#othercustomizationoptions)
-        include setting the tool tip format and detecting the click of hyperlinks.
+[Other customization options](#othercustomizationoptions) include setting the tool tip format and detecting the click of hyperlinks.
       
 
 
@@ -43,10 +40,6 @@ More often than not, you would only need to use objects of type HyperlinkInfo. H
 * Target - determines if the link should be opened in another window (if set to HyperlinkTargets.Blank) or in the same frame (HyperlinkTargets.Self).
 
 For example, a link to our site can be inserted in the document programmatically as follows:#_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=insert}} 
 {{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=insert}} 
@@ -72,13 +65,7 @@ For example, a link to our site can be inserted in the document programmatically
 {{endregion}} 
 
 
-
-
-A link to a bookmark is inserted by specifying the bookmark's name as NavigateUri and setting the IsAnchor to true:#_[C#] _
-
-	
-
-
+A link to a bookmark is inserted by specifying the bookmark's name as NavigateUri and setting the IsAnchor to true:
 
 {{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=remove}} 
 {{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=remove}} 
@@ -97,32 +84,20 @@ A link to a bookmark is inserted by specifying the bookmark's name as NavigateUr
 {{endregion}} 
 
 
-
-
 You can also use the overloaded methods for inserting a hyperlink:
 
-* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, string hyperlinkText, StyleDefinition hyperlinkStyle) - insert a hyperlink
-              using a custom style, different from the default blue font color and single underline;
+* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, string hyperlinkText, StyleDefinition hyperlinkStyle) - insert a hyperlink using a custom style, different from the default blue font color and single underline;
             
 
-* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, IEnumerable<Inline> inlines) - insert a hyperlink which spans several
-              different adjacent inlines, e.g. part of the hyperlink text is Bold or there is an image inside the hyperlink;
+* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, IEnumerable<Inline> inlines) - insert a hyperlink which spans several different adjacent inlines, e.g. part of the hyperlink text is Bold or there is an image inside the hyperlink;
             
 
 * public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo) - create a hyperlink from the currently selected part of the document;
             
 
-* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, StyleDefinition hyperlinkStyle) - create a hyperlink from the currently selected
-              part of the document and change the style of the text to the style passed as second argument.
-            
+* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, StyleDefinition hyperlinkStyle) - create a hyperlink from the currently selected part of the document and change the style of the text to the style passed as second argument.
 
-
-
-Removing a hyperlink (and keeping the part of the document that the hyperlink spanned) can be done by positioning the caret in the hyperlink and invoking#_[C#] _
-
-	
-
-
+Removing a hyperlink (and keeping the part of the document that the hyperlink spanned) can be done by positioning the caret in the hyperlink and invoking.
 
 {{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=remove}} 
 {{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=remove}} 
@@ -141,21 +116,12 @@ Removing a hyperlink (and keeping the part of the document that the hyperlink sp
 {{endregion}} 
 
 
-
-
-
-
 ## HyperlinkRangeStart and HyperlinkRangeEnd
 
-HyperlinkRangeStart and HyperlinkRangeEnd are Inline DocumentElements and can be added to the inlines of a document, if you are building the contents of a
-          RadDocument in code-behind.
+HyperlinkRangeStart and HyperlinkRangeEnd are Inline DocumentElements and can be added to the inlines of a document, if you are building the contents of a RadDocument in code-behind.
         
 
-Here is an example that creates a document with a hyperlink spanning several paragraphs, including an image in one of the paragraphs:#_[C#] _
-
-	
-
-
+Here is an example that creates a document with a hyperlink spanning several paragraphs, including an image in one of the paragraphs:
 
 {{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=startend}} 
 {{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=startend}} 
@@ -224,19 +190,12 @@ Here is an example that creates a document with a hyperlink spanning several par
 
 {{endregion}} 
 
-
-
-
 The result (Ctrl + Click to follow):![richtexteditor-features-hyperlink 001](images/richtexteditor-features-hyperlink001.png)
 
-You will also need to use HyperlinkRangeStart and HyperlinkRangeEnd, if you are using hyperlinks for the implementation of a custom logic and want to get all
-          hyperlinks from the document, manipulate the properties of the HyperlinkInfo or the whole part of the document that is included in the hyperlink.
+You will also need to use HyperlinkRangeStart and HyperlinkRangeEnd, if you are using hyperlinks for the implementation of a custom logic and want to get all hyperlinks from the document, manipulate the properties of the HyperlinkInfo or the whole part of the document that is included in the hyperlink.
         
 
 For instance, here is how you can delete all hyperlinks in the document and replace them with some text:#_[C#] _
-
-	
-
 
 
 {{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=delete}} 
@@ -265,9 +224,6 @@ For instance, here is how you can delete all hyperlinks in the document and repl
 
 {{endregion}} 
 
-
-
-
 ## OtherCustomizationOptions
 
 __ToolTip__
@@ -284,11 +240,8 @@ You have control over it using the __HyperlinkToolTipFormatString__of RadRichTex
 
 __HyperlinkClicked__
 
-When you click on a hyperlink, the __HyperlinkClicked__event of __RadRichTextEditor__is fired. The sender of the event
-          is the document element, which you have clicked, e.g. a Span, an Image, InlineUIContainer, etc. The event args on the other hand, provide the possibility to mark
-          the event as handled and prevent the default action. Custom logic can also be implemented depending on the __HyperlinkTarget__and
-          __URL__, which are also visible as properties of the event args.
-        ![richtexteditor-features-hyperlink 002](images/richtexteditor-features-hyperlink002.png)
+When you click on a hyperlink, the __HyperlinkClicked__event of __RadRichTextEditor__is fired. The sender of the event is the document element, which you have clicked, e.g. a Span, an Image, InlineUIContainer, etc. The event args on the other hand, provide the possibility to markthe event as handled and prevent the default action. Custom logic can also be implemented depending on the __HyperlinkTarget__and __URL__, which are also visible as properties of the event args.
+![richtexteditor-features-hyperlink 002](images/richtexteditor-features-hyperlink002.png)
 
 # See Also
 

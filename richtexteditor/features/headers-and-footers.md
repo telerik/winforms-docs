@@ -12,7 +12,7 @@ position: 8
 
 
 
-__RadRichTextEditor__ supports Headers and Footers in its document when in Paged [layout mode](15C18CB6-50BA-4E9C-BF8B-ED9A2694A8EE).
+__RadRichTextEditor__ supports Headers and Footers in its document when in Paged [layout mode]({%slug winforms/richtexteditor-/document-elements/raddocument%}).
       
 
 >note Note that Headers and Footers are not persisted when exporting with HtmlFormatProvider. You can read more about this[here]({%slug winforms/richtexteditor/import%})

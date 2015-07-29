@@ -10,10 +10,7 @@ position: 19
 
 # Watermark
 
-
-
 Watermarks are text or pictures that appear behind document text. They often add interest or identify the document status. You can see watermarks in Paged layout mode; they can be printed and exported to all rich-text formats, except HTML.
-      
 
 >tip More on the specifics of the format providers you can find[here]({%slug winforms/richtexteditor/import%}).
 >
@@ -33,7 +30,7 @@ Alternatively, you can create your custom watermark from text or picture through
 
 There are two types of watermarks - text and image. Both of them are shown behind the contents of the documents - text, images, tables, etc. and are applied on a per document basis.
 
-There is also a set of predefined textual watermarks - the most commonly used ones like ASAP, Urgent, Confidential, etc., that can be easily set in the following way:#_[C#] _
+There is also a set of predefined textual watermarks - the most commonly used ones like ASAP, Urgent, Confidential, etc., that can be easily set in the following way:
 
 {{source=..\SamplesCS\RichTextEditor\Features\Watermark.cs region=set}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Watermark.vb region=set}} 
@@ -47,8 +44,6 @@ There is also a set of predefined textual watermarks - the most commonly used on
 ````
 
 {{endregion}} 
-
-
 
 
 You can create custom watermarks using the __WatermarkTextSettings__ and __WatermarkImageSettings__ classes and the respective methods of __RadRichTextEditor__ - __SetWatermarkText()__ and __SetWatermarkImage()__.

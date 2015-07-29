@@ -28,16 +28,10 @@ This article describes how this feature can be used in terms of UI and API of __
 
 ## Defining the Users
 
-The editing restrictions can be used with a set of users or groups.
-          When document protection is enforced, each user will be able to edit only the parts of the document he/she has rights for and the parts that are
-          editable by the group
-          he/she belongs to.
+The editing restrictions can be used with a set of users or groups. When document protection is enforced, each user will be able to edit only the parts of the document he/she has rights for and the parts that are editable by the group he/she belongs to.
         
 
 The users that will be able to edit the document and the groups they are in can be declared like this:#_[C#] _
-
-	
-
 
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=users}} 
@@ -64,26 +58,15 @@ The users that will be able to edit the document and the groups they are in can 
 {{endregion}} 
 
 
-
-
-This code determines 3 users and two groups but does not specify the relationship between the
-          users and the groups. This is so because users have the potential to change their groups.
+This code determines 3 users and two groups but does not specify the relationship between the users and the groups. This is so because users have the potential to change their groups.
         
 
-The collection kept in the Users property of __RadRichTextEditor__ is also used in the default
-          __ChangeEditingPermissionsDialog__
-          which creates the PermissionRangeInfos to be inserted in the document.
+The collection kept in the Users property of __RadRichTextEditor__ is also used in the default   __ChangeEditingPermissionsDialog__ which creates the PermissionRangeInfos to be inserted in the document.
         
 
 ## Changing the Current User
 
-The current user of the document is set using the __CurrentUser__ property of the editor.
-          It is of type UserInfo - here in addition to the name of the user, the group that the user belongs to can also be passed.
-        #_[C#] _
-
-	
-
-
+The current user of the document is set using the __CurrentUser__ property of the editor.  It is of type UserInfo - here in addition to the name of the user, the group that the user belongs to can also be passed.
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=current}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=current}} 
@@ -102,14 +85,7 @@ The current user of the document is set using the __CurrentUser__ property of th
 {{endregion}} 
 
 
-
-
-You can also create a collection with the UserInfos that will be interracting with the document and wire it with
-          some UI of yours. For example, if you set-up the collection as follows:
-        #_[C#] _
-
-	
-
+You can also create a collection with the UserInfos that will be interracting with the document and wire it with   some UI of yours. For example, if you set-up the collection as follows:
 
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=usersList}} 
@@ -137,14 +113,7 @@ You can also create a collection with the UserInfos that will be interracting wi
 
 {{endregion}} 
 
-
-
-
-you can declare a RadDropDownList which will be used to change the current user in the following way:#_[C#] _
-
-	
-
-
+You can declare a __RadDropDownList__ which will be used to change the current user in the following way:
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=combo1}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=combo1}} 
@@ -168,14 +137,7 @@ you can declare a RadDropDownList which will be used to change the current user 
 
 {{endregion}} 
 
-
-
-
-and populate it like this:#_[C#] _
-
-	
-
-
+and populate it like this:
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=combo2}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=combo2}} 
@@ -195,14 +157,7 @@ and populate it like this:#_[C#] _
 
 {{endregion}} 
 
-
-
-
 Then, when the selected item of the combo changes, the CurrentUser of the editor will be updated:#_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=combo3}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=combo3}} 
@@ -222,9 +177,6 @@ Then, when the selected item of the combo changes, the CurrentUser of the editor
 ````
 
 {{endregion}} 
-
-
-
 
 ## Toggling Document Protection
 
@@ -287,22 +239,14 @@ The reverse operations can be executed like this:#_[C#] _
 {{endregion}} 
 
 
-
-
 Note that the UnprotectDocument method will succeed only if the password you have passed as parameter matches the one used to protect the document.
 
 ## Creating and Modifying Document Protection Regions
 
-DocumentProtection regions can be most easily created and modified through the ChangeEditingPermissionsDialog which can be invoked through the
-          __ShowChangeEditingPermissionsDialogCommand__ of __RadRichTextEditor__.
-          They can also be edited in code-behind, using the API of RadRichTextEditor and RadDocument.
+DocumentProtection regions can be most easily created and modified through the ChangeEditingPermissionsDialog which can be invoked through the  __ShowChangeEditingPermissionsDialogCommand__ of __RadRichTextEditor__. They can also be edited in code-behind, using the API of RadRichTextEditor and RadDocument.
         
 
-Here is an example:#_[C#] _
-
-	
-
-
+Here is an example:
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=permissions}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=permissions}} 
@@ -328,11 +272,7 @@ Here is an example:#_[C#] _
 
 {{endregion}} 
 
-
-
-
-This code will insert a permission range around the current selection in the document.
-          The type of the permissionis Individual - meaning that only the CurrentUser will be able to edit the region.
+This code will insert a permission range around the current selection in the document. The type of the permission is Individual - meaning that only the CurrentUser will be able to edit the region.
         
 
 # See Also

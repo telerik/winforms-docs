@@ -12,30 +12,21 @@ position: 2
 
 
 
-Style sheets provide an easy way to change the look of documents without altering their content. They extend the support for predefined styles by
-        allowing the saving and loading of custom style sheets – a set of styles to be used throughout the document. What is particularly convenient about them
-        is that you can change the colors and sizes used for headings, TOC entries, etc. just by changing the style sheet.
-      
+Style sheets provide an easy way to change the look of documents without altering their content. They extend the support for predefined styles by allowing the saving and loading of custom style sheets – a set of styles to be used throughout the document. What is particularly convenient about them is that you can change the colors and sizes used for headings, TOC entries, etc. just by changing the style sheet.
 
-## 
 
-Instances of the __Stylesheet__ class contain __StyleDefinitions__ and __ListStyles__.
-          The class also exposes the __ApplyStylesheetToDocument__ and __ExtractStylesheetFromDocument__ methods used
-          respectively for applying and extracting a style sheet.
-        
+Instances of the __Stylesheet__ class contain __StyleDefinitions__ and __ListStyles__. The class also exposes the __ApplyStylesheetToDocument__ and __ExtractStylesheetFromDocument__ methods used respectively for applying and extracting a style sheet.
 
-Below you can see the result when the style sheet of a document is changed![richtexteditor-features-styles-style-sheets 001](images/richtexteditor-features-styles-style-sheets001.png)![richtexteditor-features-styles-style-sheets 002](images/richtexteditor-features-styles-style-sheets002.png)
+
+Below you can see the result when the style sheet of a document is changed
+
+![richtexteditor-features-styles-style-sheets 001](images/richtexteditor-features-styles-style-sheets001.png)![richtexteditor-features-styles-style-sheets 002](images/richtexteditor-features-styles-style-sheets002.png)
 
 ## Exporting and Importing Style sheets
 
 __XamlFormatProvider__ has been extended to import and export style sheets to back up this functionality.
         
-
 Here is an example of how to load a style sheet from a file using the __LoadStylesheet__ method of __XamlFormatProvider__:
-        #_[C#] _
-
-	
-
 
 
 {{source=..\SamplesCS\RichTextEditor\Features\StyleSheets.cs region=add}} 
@@ -71,14 +62,7 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
 {{endregion}} 
 
 
-
-
 This is how you can save a style sheet with the __SaveStyleSheet__ method of __XamlFormatProvider__:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\StyleSheets.cs region=save}} 
 {{source=..\SamplesVB\RichTextEditor\Features\StyleSheets.vb region=save}} 

@@ -42,7 +42,7 @@ __RadDocument__ exposes several properties that allow you to customize the layou
 >
 
 
-* __SectionDefaultPageMargin__ - defines the default margin for each of the sections in the RadDocument. To assign different margins for each of the sections use the respective property of the __Section__class.
+* __SectionDefaultPageMargin__ - defines the default margin for each of the sections in the RadDocument. To assign different margins for each of the sections use the respective property of the __Section__ class.
             
 
 * __ParagraphDefaultSpacingAfter__ - defines the default spacing after for each of the paragraphs in the   __RadDocument__. To assign different spacing after for each of the paragraphs use the respective property of the  __Paragraph__ class.

@@ -12,10 +12,7 @@ position: 3
 
 
 
-The __RadDocument__ class can track the history of any actions taken against its content. In this way it allows an undo and redo 
-        functionality to be easily implemented. The history is implemented via the __DocumentHistory__ class and the 
-        __RadDocument__ exposes the __History__ property of this type. The __RadRichTextEditor__ 
-        automatically adds and removes items from the history, when its API methods get called, but you are allowed to manually work with the history as well.
+The __RadDocument__ class can track the history of any actions taken against its content. In this way it allows an undo and redo  functionality to be easily implemented. The history is implemented via the __DocumentHistory__ class and the __RadDocument__ exposes the __History__ property of this type. The __RadRichTextEditor__  automatically adds and removes items from the history, when its API methods get called, but you are allowed to manually work with the history as well.
       
 
 This topic will explain you how to:
@@ -32,13 +29,7 @@ This topic will explain you how to:
 
 ## Enable/Disable History
 
-You can enable or disable the history for the __RadDocument__ via the __Enabled__ property of the 
-          __DocumentHistory__.
-        #_[C#] _
-
-	
-
-
+You can enable or disable the history for the __RadDocument__ via the __Enabled__ property of the  __DocumentHistory__.
 
 {{source=..\SamplesCS\RichTextEditor\Features\HistoryCode.cs region=enabled}} 
 {{source=..\SamplesVB\RichTextEditor\Features\HistoryCode.vb region=enabled}} 
@@ -57,17 +48,10 @@ You can enable or disable the history for the __RadDocument__ via the __Enabled_
 {{endregion}} 
 
 
-
-
 ## Clear History
 
 To clear the history you just have to call the __Clear()__ method of the __DocumentHistory__ class.
-        #_[C#] _
-
-	
-
-
-
+      
 {{source=..\SamplesCS\RichTextEditor\Features\HistoryCode.cs region=clear}} 
 {{source=..\SamplesVB\RichTextEditor\Features\HistoryCode.vb region=clear}} 
 
@@ -89,13 +73,7 @@ To clear the history you just have to call the __Clear()__ method of the __Docum
 
 ## Undo/Redo Actions
 
-To undo and redo some actions, you can call the __Undo()__ and __Redo()__ methods of the
-          __RadRichTextEditor__.
-        #_[C#] _
-
-	
-
-
+To undo and redo some actions, you can call the __Undo()__ and __Redo()__ methods of the __RadRichTextEditor__.
 
 {{source=..\SamplesCS\RichTextEditor\Features\HistoryCode.cs region=undo}} 
 {{source=..\SamplesVB\RichTextEditor\Features\HistoryCode.vb region=undo}} 
@@ -130,13 +108,7 @@ To undo and redo some actions, you can call the __Undo()__ and __Redo()__ method
 
 ## Change History Depth
 
-To change the history capacity you have to set the desired value of the __Depth__ property of the __DocumentHistory__. 
-          The default one is __1000__.
-        #_[C#] _
-
-	
-
-
+To change the history capacity you have to set the desired value of the __Depth__ property of the __DocumentHistory__. The default one is __1000__.
 
 {{source=..\SamplesCS\RichTextEditor\Features\HistoryCode.cs region=depth}} 
 {{source=..\SamplesVB\RichTextEditor\Features\HistoryCode.vb region=depth}} 
@@ -159,10 +131,7 @@ To change the history capacity you have to set the desired value of the __Depth_
 
 ## Preserve History Using RadDocumentEditor
 
-RadDocument has API of its own, but using it has a set of limitations. One of those limitations is that the methods of RadDocument
-          are not registered in the undo/redo stack. Thus, once such a method is used, the history stack is cleared and users will no longer
-          be able to undo and redo their previous changes. You can find detailed information on the topic
-          [here]({%slug winforms/richtexteditor-/features/raddocumenteditor%}).
+RadDocument has API of its own, but using it has a set of limitations. One of those limitations is that the methods of RadDocument are not registered in the undo/redo stack. Thus, once such a method is used, the history stack is cleared and users will no longer be able to undo and redo their previous changes. You can find detailed information on the topic [here]({%slug winforms/richtexteditor-/features/raddocumenteditor%}).
         
 
 # See Also
