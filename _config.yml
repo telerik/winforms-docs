@@ -17,6 +17,30 @@ navigation:
     buttons:
         title: Buttons
         position: 6
+    buttons/button:
+        title: Button
+        position: 0
+    buttons/checkbox:
+        title: CheckBox
+        position: 1
+    buttons/dropdownbutton:
+        title: DropDownButton
+        position: 2
+    buttons/radiobutton:
+        title: RadioButton
+        position: 3
+    buttons/repeatbutton:
+        title: RepeatButton
+        position: 4
+    buttons/splitbutton:
+        title: SplitButton
+        position: 5
+    buttons/togglebutton:
+        title: ToggleButton
+        position: 6
+    buttons/toggleswitch:
+        title: ToggleSwitch
+        position: 8
     bindingnavigator:
         title: BindingNavigator
         position: 7
