@@ -83,7 +83,7 @@ __RadRichTextEditor__ does not have a Text property because different formats fo
 
 * PdfFormatProvider - Telerik.WinForms.Documents.FormatProviders.Pdf; and Telerik.Windows.Zip.
 
-You can read more about the use of format providers [here]({%slug winforms/richtexteditor-/import/export%}). Overall, what you need to do to get the content of the document in a specific format is to create an instance of the corresponding provider and export the document. An example is illustrated below:
+You can read more about the use of format providers [here]({%slug winforms/richtexteditor/import%}). Overall, what you need to do to get the content of the document in a specific format is to create an instance of the corresponding provider and export the document. An example is illustrated below:
 
 {{source=..\SamplesCS\RichTextEditor\FAQ.cs region=xaml}} 
 {{source=..\SamplesVB\RichTextEditor\FAQ.vb region=xaml}} 

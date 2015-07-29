@@ -87,6 +87,6 @@ Most features that __RadRichTextEditor__ provides are also supported in the form
 * __Importing with HtmlFormatProvider__ – there is a property of the HtmlFormatProvider class called __HtmlImportSettings__, which provides two events – __InlineUIContainerImporting__ and __InlineUIContainerImported__.  The __EventArgs__ of these events have the same properties, as the ones that the __InlineUIContainerExporting__ event of __HtmlExportSettings__ has. Thus, even if you have not implemented custom export of inline UI containers, you can process the XAML comments on import and provide your own logic to create the serialized objects, set their properties and insert them in the Document.
             
 
->tip For more information on Import/Export, please refer to[this topic]({%slug winforms/richtexteditor-/import/export%}).
+>tip For more information on Import/Export, please refer to[this topic]({%winforms/richtexteditor/import%}).
 >
 

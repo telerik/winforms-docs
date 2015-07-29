@@ -338,7 +338,7 @@ Here is an example of a document created from code-behind#_[C#] _
 This document is editable.  To make it read only you have to set the __IsReadOnly__ property of the __RadRichTextEditor__ to __True__.
         
 
->tip To learn more about the read only feature read[this topic]({%slug winforms/richtexteditor/getting-started/use-as-rich-content-viewer%}).
+>tip To learn more about the read only feature read[this topic]({%slug winforms/richtexteditor-/getting-started/use-as-rich-content-viewer%}).
 >
 
 

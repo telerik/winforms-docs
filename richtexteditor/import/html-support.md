@@ -12,12 +12,7 @@ position: 2
 
 
 
-A major requirement for providing rich text editing capabilities is support for HTML. The __RadRichTextEditor__control is
-        designed to offer [import/export]({%slug winforms/richtexteditor-/import/export%}) functionality for __HTML__ out
-        of the box – through the __HtmlFormatProvider__. However, as __HTML__ is a diverse and complicated standard,
-        supporting it comes with certain limitations. __HtmlFormatProvider__ is designed to handle slightly
-        malformed __HTML__ (missing closing tags, missing quotes around attributes), however in this case correct parsing cannot
-        be guaranteed. For best results we recommend importing valid __XHTML__ content.
+A major requirement for providing rich text editing capabilities is support for HTML. The __RadRichTextEditor__control is designed to offer [import/export]({%slug winforms/richtexteditor/import%}) functionality for __HTML__ out of the box – through the __HtmlFormatProvider__. However, as __HTML__ is a diverse and complicated standard, supporting it comes with certain limitations. __HtmlFormatProvider__ is designed to handle slightly malformed __HTML__ (missing closing tags, missing quotes around attributes), however in this case correct parsing cannot be guaranteed. For best results we recommend importing valid __XHTML__ content.
       
 
 The purpose of this article is to outline which parts of the __HTML__ are supported.
@@ -25,9 +20,7 @@ The purpose of this article is to outline which parts of the __HTML__ are suppor
 
 ## Importing
 
-When the __HtmlFormatProvider__ imports an __HTML__ document, it parses it and converts the HTML
-          element tree to [RadDocument]({%slug winforms/richtexteditor-/document-elements/raddocument%}). Importing is basically made up of two parts –
-          content and styling.
+When the __HtmlFormatProvider__ imports an __HTML__ document, it parses it and converts the HTML element tree to [RadDocument]({%slug winforms/richtexteditor-/document-elements/raddocument%}). Importing is basically made up of two parts – content and styling.
         
 
 ## Content
@@ -72,8 +65,7 @@ Tags mapped to spans are:
 
 ## Styling
 
-Styling is supported through CSS styles (classes or inline) and a number of formatting tags (including __<font>__).
-          Although the __<font>__ tag has been deprecated, legacy software and markup requires support for it.
+Styling is supported through CSS styles (classes or inline) and a number of formatting tags (including __<font>__). Although the __<font>__ tag has been deprecated, legacy software and markup requires support for it.
         
 
 Supported formatting tags are:
@@ -133,10 +125,5 @@ Supported __<font>__ tag attributes are:
 
 ## Exporting
 
-When exporting to __HTML__, the __HtmlFormatProvider__ iterates
-          through the __RadDocument__ tree and generates __HTML__ nodes.
-          It is designed to generate valid __XHTML__ document in order to preserve the formatting as
-          much as possible. Styles are exported as CSS classes in the head of the document and used through the body. The
-          structure of the __HTML__ document closely resembles that of
-          __RadDocument__ – paragraphs and spans.
+When exporting to __HTML__, the __HtmlFormatProvider__ iterates through the __RadDocument__ tree and generates __HTML__ nodes. It is designed to generate valid __XHTML__ document in order to preserve the formatting as much as possible. Styles are exported as CSS classes in the head of the document and used through the body. The structure of the __HTML__ document closely resembles that of __RadDocument__ – paragraphs and spans.
         

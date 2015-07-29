@@ -54,6 +54,6 @@ You can export the __RadChartVew__ content by using one of the following
 
 ![chartview-features-export 001](images/chartview-features-export001.png)
 
->note If you need to export the chart data to a document, you can use a __RadDocument__ and[insert the exported image]({%slug winforms/richtexteditor-/document-elements/inline-image%})into it. Afterwards, you can use the __RadRichTextEditor__ 's[ export]({%slug winforms/richtexteditor-/import/export%})functionality.
+>note If you need to export the chart data to a document, you can use a __RadDocument__ and[insert the exported image]({%slug winforms/richtexteditor-/document-elements/inline-image%})into it. Afterwards, you can use the __RadRichTextEditor__ 's[ export]({%slug winforms/richtexteditor/import%})functionality.
 >
 

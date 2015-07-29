@@ -12,25 +12,15 @@ position: 2
 
 
 
-If you want to format the content of __RadRichTextEditor__ at run time, you have to use the API exposed by
-        __RadRichTextEditor__. This is essential, as the main purpose of __RadRichTextEditor__ is to allow the users to format
-        their input via UI. The UI should call the respective API methods of the control.
+If you want to format the content of __RadRichTextEditor__ at run time, you have to use the API exposed by __RadRichTextEditor__. This is essential, as the main purpose of __RadRichTextEditor__ is to allow the users to format their input via UI. The UI should call the respective API methods of the control.
       
 
 ## Changing the text formatting
 
-The __RadRichTextEditor__ exposes methods that change the style of the selected text or the paragraph. When a method is called, the
-          respective style is applied to the selected text. If there is no selection available, the style is applied to the word in which the caret is located.
+The __RadRichTextEditor__ exposes methods that change the style of the selected text or the paragraph. When a method is called, the respective style is applied to the selected text. If there is no selection available, the style is applied to the word in which the caret is located.
         
 
-Here is an example of a toggle button that upon checking should make the selection or the current word bold. In the handler of the
-          __Click__ event of the __RadToggleButton__, the __ToggleBold()__ method of
-          __RadRichTextEditor__ is called.
-        #_[C#] _
-
-	
-
-
+Here is an example of a toggle button that upon checking should make the selection or the current word bold. In the handler of the __Click__ event of the __RadToggleButton__, the __ToggleBold()__ method of__RadRichTextEditor__ is called.
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=bold}} 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=bold}} 
@@ -52,8 +42,6 @@ Here is an example of a toggle button that upon checking should make the selecti
 {{endregion}} 
 
 
-
-
 ## Using the active editor
 
 __RadRichTextEditor__ supports headers and footers. They are represented through separate instances of
@@ -65,11 +53,7 @@ __RadRichTextEditor__ supports headers and footers. They are represented through
 >
 
 
-The following example inserts the word "text" at the CaretPosition.#_[C#] _
-
-	
-
-
+The following example inserts the word "text" at the CaretPosition.
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=insert}} 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=insert}} 
@@ -87,9 +71,6 @@ The following example inserts the word "text" at the CaretPosition.#_[C#] _
 
 {{endregion}} 
 
-
-
-
 ## Creating a DocumentFragment
 
 One of the common uses of the API is creating and inserting a __DocumentFragment__. Currently you can create a fragment in two ways:
@@ -102,10 +83,6 @@ One of the common uses of the API is creating and inserting a __DocumentFragment
             
 
 Both approaches can be used to insert content at the caret position with the __InsertFragment__ method:
-        #_[C#] _
-
-	
-
 
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=fragment}} 
@@ -127,13 +104,7 @@ Both approaches can be used to insert content at the caret position with the __I
 
 Using the constructor of DocumentFragment
 
-If you create a fragment in this way, it will end with a new paragraph. This is convenient when you want to separate the inserted fragment and
-              end it with a new line. Furthermore, in this way if the last paragraph is in a list, it will appear properly in the new document.
-            #_[C#] _
-
-	
-
-
+If you create a fragment in this way, it will end with a new paragraph. This is convenient when you want to separate the inserted fragment and  end it with a new line. Furthermore, in this way if the last paragraph is in a list, it will appear properly in the new document.
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=insert1}} 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=insert1}} 
@@ -152,16 +123,9 @@ If you create a fragment in this way, it will end with a new paragraph. This is 
 {{endregion}} 
 
 
-
-
 This is also the suggested approach when merging several documents into one.Using the selection
 
-If you choose to use the document selection when creating a __DocumentFragment__, there will be no additional paragraph after
-              the fragment.
-            #_[C#] _
-
-	
-
+If you choose to use the document selection when creating a __DocumentFragment__, there will be no additional paragraph after the fragment.
 
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=selection}} 
@@ -185,4 +149,4 @@ If you choose to use the document selection when creating a __DocumentFragment__
 
 # See Also
 
- * [Import/Export]({%slug winforms/richtexteditor-/import/export%})
+ * [Import/Export]({%slug winforms/richtexteditor/import%})

@@ -12,11 +12,10 @@ position: 19
 
 
 
-Watermarks are text or pictures that appear behind document text. They often add interest or identify the document status. You can see watermarks
-        in Paged layout mode; they can be printed and exported to all rich-text formats, except HTML.
+Watermarks are text or pictures that appear behind document text. They often add interest or identify the document status. You can see watermarks in Paged layout mode; they can be printed and exported to all rich-text formats, except HTML.
       
 
->tip More on the specifics of the format providers you can find[here]({%slug winforms/richtexteditor-/import/export%}).
+>tip More on the specifics of the format providers you can find[here]({%slug winforms/richtexteditor/import%}).
 >
 
 
@@ -26,23 +25,15 @@ Watermarks are text or pictures that appear behind document text. They often add
 
 ## Using UI
 
-You ca easily insert bookmarks, for example you can use the __RichTextEditor__ and choose from several predefined watermarks:
-      ![richtexteditor-features-watermark 001](images/richtexteditor-features-watermark001.png)
+You ca easily insert bookmarks, for example you can use the __RichTextEditor__ and choose from several predefined watermarks: ![richtexteditor-features-watermark 001](images/richtexteditor-features-watermark001.png)
 
-Alternatively, you can create your custom watermark from text or picture through the *Insert custom watermark* option.
-        ![richtexteditor-features-watermark 002](images/richtexteditor-features-watermark002.png)
+Alternatively, you can create your custom watermark from text or picture through the *Insert custom watermark* option. ![richtexteditor-features-watermark 002](images/richtexteditor-features-watermark002.png)
 
 ## Manipulating Watermarks Programatically
 
-There are two types of watermarks - text and image. Both of them are shown behind the contents of the documents - text, images, tables, etc. and 
-        are applied on a per document basis.
+There are two types of watermarks - text and image. Both of them are shown behind the contents of the documents - text, images, tables, etc. and are applied on a per document basis.
 
-There is also a set of predefined textual watermarks - the most commonly used ones like ASAP, Urgent, Confidential, etc., that can be easily set
-        in the following way:#_[C#] _
-
-	
-
-
+There is also a set of predefined textual watermarks - the most commonly used ones like ASAP, Urgent, Confidential, etc., that can be easily set in the following way:#_[C#] _
 
 {{source=..\SamplesCS\RichTextEditor\Features\Watermark.cs region=set}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Watermark.vb region=set}} 
@@ -60,16 +51,10 @@ There is also a set of predefined textual watermarks - the most commonly used on
 
 
 
-You can create custom watermarks using the __WatermarkTextSettings__ and __WatermarkImageSettings__
-          classes and the respective methods of __RadRichTextEditor__ - __SetWatermarkText()__ and
-          __SetWatermarkImage()__.
+You can create custom watermarks using the __WatermarkTextSettings__ and __WatermarkImageSettings__ classes and the respective methods of __RadRichTextEditor__ - __SetWatermarkText()__ and __SetWatermarkImage()__.
         
 
-The following example demonstrates how to crate a text watermark and apply it to the document in the editor:#_[C#] _
-
-	
-
-
+The following example demonstrates how to crate a text watermark and apply it to the document in the editor:
 
 {{source=..\SamplesCS\RichTextEditor\Features\Watermark.cs region=settings}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Watermark.vb region=settings}} 
@@ -97,13 +82,7 @@ The following example demonstrates how to crate a text watermark and apply it to
 {{endregion}} 
 
 
-
-
 And this is how you create an image watermark and apply it:#_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\Watermark.cs region=image}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Watermark.vb region=image}} 
@@ -125,9 +104,6 @@ And this is how you create an image watermark and apply it:#_[C#] _
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 
