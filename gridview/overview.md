@@ -14,15 +14,11 @@ position: 0
 
 ## 
 
-Thank you for choosing Telerik RadGridView for WinForms.
+Thank you for choosing Telerik __RadGridView__ for WinForms.
 
-*RadGridView* is a grid component developed on top of
-          [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%})
-          which provides a combination of performance, extensibility, customizability, and ease of use. Its flexible hierarchy model allows for using
-          different data providers and creating highly interactive interfaces for display and management of large data without performance lost.
-        ![gridview-overview 001](images/gridview-overview001.png)
+__RadGridView__ is a grid component developed on top of [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}) which provides a combination of performance, extensibility, customizability, and ease of use. Its flexible hierarchy model allows for using different data providers and creating highly interactive interfaces for display and management of large data without performance lost. 
 
-
+![gridview-overview 001](images/gridview-overview001.png)
 
 ## Key Features
 
@@ -74,13 +70,15 @@ Thank you for choosing Telerik RadGridView for WinForms.
 * Flexible API
             
 
-__A complete list with all key features can be found__
+__A complete list with all key features can be found here__
 
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[RadGridView for WinForms Webinar](http://tv.telerik.com/winforms/webinar/radgridview-for-winforms-webinar)This video provides an in-depth overview of Telerik's RadGridView for WinForms|![gridview-overview 002](images/gridview-overview002.png)|
+|[RadGridView for WinForms Webinar](http://tv.telerik.com/winforms/webinar/radgridview-for-winforms-webinar)<br>This video provides an in-depth overview of Telerik's RadGridView for WinForms|![gridview-overview 002](images/gridview-overview002.png)|
 
 # See Also
 
- * [Getting started]({%slug winforms/gridview/getting-started%})[Key features](0eb28df6-b245-4c5c-a379-c83940290062)[Visual Structure](c3744f84-3e80-4b59-8ea0-ce38723d4eca)
+ * [Getting started]({%slug winforms/gridview/getting-started%})
+ * Key features
+ * Visual Structure

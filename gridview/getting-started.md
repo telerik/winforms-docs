@@ -16,12 +16,13 @@ position: 1
 
 
 
-|RELATED VIDEOS|
-|[RadGridView for WinForms Webinar](http://tv.telerik.com/winforms/webinar/radgridview-for-winforms-webinar)Lino Tadros from Falalel provides an in-depth overview of Telerik's RadGridView for WinForms (Runtime: 01:45:11)|
+| RELATED VIDEOS |  
+| ------ |
+|[RadGridView for WinForms Webinar](http://tv.telerik.com/winforms/webinar/radgridview-for-winforms-webinar)<br>Lino Tadros from Falalel provides an in-depth overview of Telerik's RadGridView for WinForms (Runtime: 01:45:11)|
 
-The example below demonstrates creating a hierarchical grid presenting two tables
-          *Product Category* and *Product Information*.
-        ![grid-getting-started 001](images/grid-getting-started001.png)
+The example below demonstrates creating a hierarchical grid presenting two tables *Product Category* and *Product Information*.
+
+![grid-getting-started 001](images/grid-getting-started001.png)
 
 ## Setting up the Form 
 
@@ -40,7 +41,7 @@ The example below demonstrates creating a hierarchical grid presenting two table
             
 
 1. In the Data Source Configuration Wizard, Choose a Data Source Type page, select the __Database__ icon, and click __Next__.
-            ![grid-getting-started 002](images/grid-getting-started002.png)
+![grid-getting-started 002](images/grid-getting-started002.png)
 
 1. In the Choose Your Data Connection page of the wizard, click on the __New Connection...__ button. This page displays the Add Connection dialog.
             
@@ -70,19 +71,19 @@ The example below demonstrates creating a hierarchical grid presenting two table
             
 
 1. In *Choose Database Objects* page of the dialog, select columns from the Categories table: "CategoryID", "CategoryName" and "Description". Select columns from the Products table: "ProductName", "CategoryID", "UnitsOnOrder" and "Discontinued".
-            ![grid-getting-started 003](images/grid-getting-started003.png)
+![grid-getting-started 003](images/grid-getting-started003.png)
 
 1. Click the __Finish__ button to close the *Data Source Configuration Wizard*.
             
 
 1. In the *Properties* window of Visual Studio, open the __DataSource__ property drop down and select Categories from the NwindDataSet data source. This step will create *categoriesBindingSource* and *categoriesTableAdapter* controls.
-            ![grid-getting-started 004](images/grid-getting-started004.png)
+![grid-getting-started 004](images/grid-getting-started004.png)
 
 1. Select the __DataSource__ property drop down a second time and select *Products* from *NwindDataSet* data source. This step will create *productsBindingSource* and *productsTableAdapter* controls.
             
 
 1. Select the __DataSource__ property drop down for the third time and select *NwindDataSet*. This step will assign the entire dataset to the grid.
-            ![grid-getting-started 005](images/grid-getting-started005.png)
+![grid-getting-started 005](images/grid-getting-started005.png)
 
 ## Setting Properties
 
