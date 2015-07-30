@@ -18,11 +18,7 @@ position: 3
             
 >caption Fig.1 RadToggleSwitch.OnText
 
-![buttons-toggleswitch-properties-methods-events 001](images/buttons-toggleswitch-properties-methods-events001.png)#_[C#] Set the OnText property_
-
-	
-
-
+![buttons-toggleswitch-properties-methods-events 001](images/buttons-toggleswitch-properties-methods-events001.png) 
 
 {{source=..\SamplesCS\Buttons\ToggleSwitch.cs region=OnText}} 
 {{source=..\SamplesVB\Buttons\ToggleSwitch.vb region=OnText}} 
@@ -47,11 +43,7 @@ position: 3
             
 >caption Fig.2 RadToggleSwitch.OffText
 
-![buttons-toggleswitch-properties-methods-events 002](images/buttons-toggleswitch-properties-methods-events002.png)#_[C#] Set the OffText property_
-
-	
-
-
+![buttons-toggleswitch-properties-methods-events 002](images/buttons-toggleswitch-properties-methods-events002.png) 
 
 {{source=..\SamplesCS\Buttons\ToggleSwitch.cs region=OffText}} 
 {{source=..\SamplesVB\Buttons\ToggleSwitch.vb region=OffText}} 
@@ -76,11 +68,7 @@ position: 3
             
 >caption Fig.3 RadToggleSwitch.ThumbTickness
 
-![buttons-toggleswitch-properties-methods-events 003](images/buttons-toggleswitch-properties-methods-events003.png)#_[C#] Set the ThumbTickness property_
-
-	
-
-
+![buttons-toggleswitch-properties-methods-events 003](images/buttons-toggleswitch-properties-methods-events003.png) 
 
 {{source=..\SamplesCS\Buttons\ToggleSwitch.cs region=ThumbTickness}} 
 {{source=..\SamplesVB\Buttons\ToggleSwitch.vb region=ThumbTickness}} 
@@ -110,11 +98,7 @@ position: 3
             
 >caption Fig.4 Set the AllowAnimation property
 
-![buttons-toggleswitch-properties-methods-events 004](images/buttons-toggleswitch-properties-methods-events004.gif)#_[C#] Set the AllowAnimation property_
-
-	
-
-
+![buttons-toggleswitch-properties-methods-events 004](images/buttons-toggleswitch-properties-methods-events004.gif) 
 
 {{source=..\SamplesCS\Buttons\ToggleSwitch.cs region=AllowAnimation}} 
 {{source=..\SamplesVB\Buttons\ToggleSwitch.vb region=AllowAnimation}} 
@@ -156,11 +140,7 @@ position: 3
             
 >caption Fig.5 Set the Width property
 
-![buttons-toggleswitch-properties-methods-events 005](images/buttons-toggleswitch-properties-methods-events005.png)#_[C#] Set the Width property_
-
-	
-
-
+![buttons-toggleswitch-properties-methods-events 005](images/buttons-toggleswitch-properties-methods-events005.png) 
 
 {{source=..\SamplesCS\Buttons\ToggleSwitch.cs region=Width}} 
 {{source=..\SamplesVB\Buttons\ToggleSwitch.vb region=Width}} 
@@ -185,11 +165,7 @@ position: 3
             
 >caption Fig.6 Set the Height property
 
-![buttons-toggleswitch-properties-methods-events 006](images/buttons-toggleswitch-properties-methods-events006.png)#_[C#] Set the Height property_
-
-	
-
-
+![buttons-toggleswitch-properties-methods-events 006](images/buttons-toggleswitch-properties-methods-events006.png) 
 
 {{source=..\SamplesCS\Buttons\ToggleSwitch.cs region=Height}} 
 {{source=..\SamplesVB\Buttons\ToggleSwitch.vb region=Height}} 

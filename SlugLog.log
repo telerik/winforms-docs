@@ -3338,6 +3338,14 @@ Slug: No page with slug `buttons-togglebutton-handling-radtogglebutton-states`
  in /buttons/togglebutton/togglebutton-overview.html. Consider fixing the slug or use normal link.
 >>>>>>> 1c94304922c16029299867ca57e97037d52b4118
 
+<<<<<<< HEAD
+Slug: No page with slug `licensing-license-agreement`
+ in /installation,-deployment-and-distribution/redistributing-telerik-ui-for-winforms.html. Consider fixing the slug or use normal link.
+
+Slug: No page with slug `licensing-license-agreement`
+ in /installation,-deployment-and-distribution/redistributing-telerik-ui-for-winforms.html. Consider fixing the slug or use normal link.
+
+=======
 Slug: No page with slug `buttons-checkbox-handling-radcheckbox-states`
  in /buttons/checkbox/checkbox-overview.html. Consider fixing the slug or use normal link.
 
@@ -3668,6 +3676,7 @@ Slug: No page with slug `buttons-splitbutton-working-with-radsplitbutton-items`
 Slug: No page with slug `buttons-togglebutton-handling-radtogglebutton-states`
  in /buttons/togglebutton/togglebutton-overview.html. Consider fixing the slug or use normal link.
 
+<<<<<<< HEAD
 Slug: No page with slug `licensing-license-agreement`
  in /installation,-deployment-and-distribution/redistributing-telerik-ui-for-winforms.html. Consider fixing the slug or use normal link.
 
@@ -3761,3 +3770,6 @@ Slug: No page with slug `licensing-license-agreement`
 Slug: No page with slug `licensing-license-agreement`
  in /installation,-deployment-and-distribution/redistributing-telerik-ui-for-winforms.html. Consider fixing the slug or use normal link.
 
+=======
+>>>>>>> a6f6ef80c6d121c677539de7649e2bb6edb8e17c
+>>>>>>> 1ca6101b84561538081c04b60f7e6d7e9e756a35
