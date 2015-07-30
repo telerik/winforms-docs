@@ -21,7 +21,9 @@ You can add a __RadToggleSwitch__ to your form either at design time or at run t
             
 
 * Adding __RadToggleSwitch__ programmatically: create a new instance of __RadToggleSwitch__ and add it to the Form.__Controls__ collection:
-            #_[C#] Adding RadToggleSwitch programmatically_
+            
+
+__Adding RadToggleSwitch programmatically__
 
 	
 

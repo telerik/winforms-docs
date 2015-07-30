@@ -14,7 +14,7 @@ position: 0
 
 ## 
 
-__RadToggleButton__is designed to manage states on your form. It shares many features with the [RadCheckBox]({%slug winforms/buttons/checkbox%}), but provides a different visual effect than the standard check mark. 
+__RadToggleButton__ is designed to manage states on your form. It shares many features with the [RadCheckBox]({%slug winforms/buttons/checkbox%}), but provides a different visual effect than the standard check mark. 
 
 ![buttons-togglebutton-overview 001](images/buttons-togglebutton-overview001.png)
 
