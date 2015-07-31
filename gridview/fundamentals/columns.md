@@ -10,8 +10,6 @@ position: 3
 
 # Columns
 
-
-
 RadGridView currently supports two main column types: 
 
 * __Data-bound columns__ - all columns in this list inherit __GridViewDataColumn__ class 
@@ -46,4 +44,4 @@ This column appears when the grid data is grouped or has a hierarchical struc
 
 ### GridViewRowHeaderColumn
 
-This column facilitates row resizing. When you move the cursor to an line in this column, the cursor changes to an arrow and you can resize the respective row.![gridview-fundamentals-columns 001](images/gridview-fundamentals-columns001.png)
+This column facilitates row resizing. When you move the cursor to an line in this column, the cursor changes to an arrow and you can resize the respective row. <br/>![gridview-fundamentals-columns 001](images/gridview-fundamentals-columns001.png)

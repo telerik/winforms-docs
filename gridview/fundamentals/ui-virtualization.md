@@ -12,32 +12,14 @@ position: 9
 
 
 
-RadGridView uses virtualization for its cells and rows. To put it simply, this means that when binding to a 
-        DataTable with 1000 rows, you get 1000 data row objects created in RadGridView 
-        (of type __GridViewDataRowInfo__).
-        However, not all data row objects can be visible at the same time in the RadGridView estate area in your application. 
-        This is why only the visual rows that can be shown in the estate area get created (these visual rows are of type 
-        __GridDataRowElement__), or about 20-30 rows for an average application with medium-sized RadGridView. 
-        These visual elements are reused during scrolling, filtering and other operations with the grid,
-        meaning dramatically improved performance and memory footprint as only a small number of visual items are created.        
+__RadGridView__ uses virtualization for its cells and rows. To put it simply, this means that when binding to a DataTable with 1000 rows, you get 1000 data row objects created in RadGridView (of type __GridViewDataRowInfo__). However, not all data row objects can be visible at the same time in the RadGridView estate area in your application. This is why only the visual rows that can be shown in the estate area get created (these visual rows are of type __GridDataRowElement__), or about 20-30 rows for an average application with medium-sized RadGridView. These visual elements are reused during scrolling, filtering and other operations with the grid, meaning dramatically improved performance and memory footprint as only a small number of visual items are created.        
         
 
 ## Formatting events
 
-Because of the virtualization you cannot access UI elements at design time or directly by using the
-          Element tree or a property. Instead, you have to use formatting events. These events in RadGridView are
-          __CellFormatting__ for data cells and __RowFormatting__ for data rows.
-          When customizing system rows and cells,
-          one should use __ViewCellFormatting__ and __ViewRowFormatting__ events instead.
-
-          [Read more]({%slug winforms/gridview/cells/formatting-cells%})
+Because of the virtualization you cannot access UI elements at design time or directly by using the Element tree or a property. Instead, you have to use formatting events. These events in RadGridView are __CellFormatting__ for data cells and __RowFormatting__ for data rows. When customizing system rows and cells, one should use __ViewCellFormatting__ and __ViewRowFormatting__ events instead. [Read more]({%slug winforms/gridview/cells/formatting-cells%})
 
 Here is a quick sample:
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=uiVirtualization}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=uiVirtualization}} 
@@ -110,16 +92,9 @@ Here is a quick sample:
 
 ## Style property
 
-Another solution is the __Style__ property which is available when accessing logical cell objects.
-        It allows for directly setting visual properties that will reflect the specified cell element.       
-         [Read more]({%slug winforms/gridview/cells/formatting-cells%})
+Another solution is the __Style__ property which is available when accessing logical cell objects. It allows for directly setting visual properties that will reflect the specified cell element. [Read more]({%slug winforms/gridview/cells/formatting-cells%})
 
 Here is a quick sample:
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=uiVirtStyle}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=uiVirtStyle}} 
@@ -162,15 +137,9 @@ Here is a quick sample:
 
 ## Conditional formatting
 
-Another feature that we provide is the conditional formatting which is available for end user via context menu. 
-         [Read more]({%slug winforms/gridview/cells/conditional-formatting-cells%})
+Another feature that we provide is the conditional formatting which is available for end user via context menu. [Read more]({%slug winforms/gridview/cells/conditional-formatting-cells%})
 
 Here is a quick sample of how conditional formatting can be set by code:
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\Cells\ConditionalFormattingCells.cs region=conditionalFormattingCells}} 
 {{source=..\SamplesVB\GridView\Cells\ConditionalFormattingCells.vb region=conditionalFormattingCells}} 

@@ -25,9 +25,9 @@ You can access and modify the style for different elements in __RadToggleSwitch_
 You can customize the nested elements at run time as well:
 >caption Fig.2
 
-![buttons-toggleswitch-accessing-and-customizing-elements 002](images/buttons-toggleswitch-accessing-and-customizing-elements002.gif)#_[C#] Customizing elements at run time_
+![buttons-toggleswitch-accessing-and-customizing-elements 002](images/buttons-toggleswitch-accessing-and-customizing-elements002.gif)
 
-	
+__Customizing elements at run time__
 
 
 

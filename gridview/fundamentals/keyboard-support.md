@@ -12,8 +12,7 @@ position: 7
 
 
 
-## 
-        Keyboard support
+## Keyboard support
       
 
 A typical business application needs to support "heads-down" data entry that avoids the use of the mouse. With RadGridView the user can:
@@ -25,10 +24,10 @@ A typical business application needs to support "heads-down" data entry that avo
 
 | Key | Description |
 | ------ | ------ |
-|Up Arrow|moves the selection up|
-|Down Arrow|moves the selection down|
-|Left Arrow|moves the selection left|
-|Right Arrow|moves the selection right|
+|Up Arrow|Moves the selection up|
+|Down Arrow|Moves the selection down|
+|Left Arrow|Moves the selection left|
+|Right Arrow|Moves the selection right|
 |Enter|Opens the cell editor / Commits the changes|
 |F2|Opens the cell editor|
 |Esc|Deactivates cell editor and discards the changes|

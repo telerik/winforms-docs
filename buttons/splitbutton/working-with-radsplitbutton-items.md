@@ -32,7 +32,7 @@ In the property grid you will find many of the standard control properties, incl
 
 * To display sub items in two columns set __HasTwoColumns__ to true and add items to the __RightColumnItems__ collection.
 
-* Use __CheckOnClick__to toggle a check mark next to a __RadMenuItem__. This property is appropriate to use when the item doesn't contain sub items.
+* Use __CheckOnClick__ to toggle a check mark next to a __RadMenuItem__. This property is appropriate to use when the item doesn't contain sub items.
 
 ## Adding Items at Run Time in Code
 
@@ -83,7 +83,7 @@ __Adding a RadMenuItem__
 
 Create item hierarchies in code by adding new __RadMenuItem__ objects to the __Items__ collection of your existing __RadMenuItem__.
 
-__[C#] Adding a sub item__
+__Adding a sub item__
 
 
 
@@ -150,7 +150,7 @@ To handle the __Click__ event of RadMenuItems on the drop down menu, locate the
 
 The default item is the item whose __Click__ event is triggered by the user pressing the button, instead of choosing from the menu. The DefaultItem can be assigned in code: 
 
-__Assigning the default item_
+__Assigning the default item__
 
 
 {{source=..\SamplesCS\Buttons\SplitButton1.cs region=mainItem}} 
