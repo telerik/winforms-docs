@@ -36,13 +36,8 @@ The programmatic selection gets implemented via the __DocumentSelection__ class.
 
 Here is an example of how to select the current word.
 
->tip To learn more about the __DocumentPosition__ read the[Positioning](F2431250-F52E-46B3-9DC0-7247B0A46610)topic.
+>tip To learn more about the __DocumentPosition__ read the [Positioning]({%slug winforms/richtexteditor-/features/positioning%}) topic.
 >
-#_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=position}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=position}} 
@@ -70,9 +65,6 @@ Here is an example of how to select the current word.
 ````
 
 {{endregion}} 
-
-
-
 
 ## Multi-Range Selection
 
@@ -118,7 +110,6 @@ Here is an example of selecting each "RadRichTextEditor" word in the text. This 
 ````
 
 {{endregion}} 
-
 
 ![richtexteditor-features-selection 001](images/richtexteditor-features-selection001.png)
 

@@ -21,7 +21,9 @@ Code blocks allow users to add source code fragments to their document and using
 
 ## User Interface
 
-The options in the dialog allow to select the desired code language, as well as whether you wish to display line numbers and alternate the formatting of the lines. ![richtexteditor-features-code-block 001](images/richtexteditor-features-code-block001.png)
+The options in the dialog allow to select the desired code language, as well as whether you wish to display line numbers and alternate the formatting of the lines.
+
+![richtexteditor-features-code-block 001](images/richtexteditor-features-code-block001.png)
 
 ## Insert and Delete code blocks
 
@@ -30,7 +32,6 @@ If you want to programmatically add code blocks to the document you should use t
 
 The constructor of __CodeFormattingSettings__ requires a code language to be specified.  These are the languages that are currently supported out-of-the-box:
         
-
 * CSharp
 
 * JavaScript
@@ -67,9 +68,6 @@ Additionally, you can enable the display of line numbers and the alternating lin
 
 {{endregion}} 
 
-
-
-
 The inner representation of the code block in the document is achieved by surrounding the content with __CodeAnnotationRangeStart__ and __CodeAnnotationRangeEnd__.
         
 
@@ -97,13 +95,11 @@ To remove the code block you can use the __DeleteCodeBlock()__ method of __RadRi
 {{endregion}} 
 
 The contents of a code block can be selected and copied, but cannot be edited. However, existing code blocks can be modified with the code block dialog.
-        
 
 ## Code Formatter
 
 Inside each __RadDocument__ there is an instance of the __CodeFromatter__ class which is used for formatting code blocks and is also an extensibility point for adding code languages. It is available through the __CodeFormatter__ property of the __RadDocument__.
         
-
 Inside the __CodeFormatter__, a classification tagger is registered for each supported code language. The role of the tagger is to identify ranges in the code which should be associated with particular classification type – i.e. keywords, comments, string literals etc. The __CodeFormatter__ class also holds information which style should be used for words identified with particular classification type.
         
 

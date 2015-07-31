@@ -158,7 +158,7 @@ The Citation field is a field not different from every other field. You can use 
 {{endregion}} 
 
 
-Insert Bibliography Field using code behind
+### Insert Bibliography Field using code behind
 
 The Bibliography field is a field not different from every other field. You can use the __InsertFIeld()__ method of
  __RadDocument__ to insert a citation:
@@ -180,7 +180,7 @@ The Bibliography field is a field not different from every other field. You can 
 {{endregion}} 
 
 
-Changing Bibliographic Style using code behind
+### Changing Bibliographic Style using code behind
 
 There is a method called __ChangeBibliographicStyle()__ on __RadRichTextEditor__. It accepts one argument of type __BibliographicReferenceStyleBase__. Changing the current style is as simple as:
 

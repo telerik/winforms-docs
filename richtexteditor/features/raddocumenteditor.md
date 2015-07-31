@@ -85,7 +85,7 @@ The newly created *documentEditor* instance now provides all capabilities that a
 {{endregion}} 
 
 
-You can also cancel the execution of the undo group, and it won't be recorded in the history:#_[C#] _
+You can also cancel the execution of the undo group, and it won't be recorded in the history:
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentEditorCode.cs region=cancel}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentEditorCode.vb region=cancel}} 

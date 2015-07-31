@@ -14,7 +14,7 @@ position: 6
 
 The __RadRichTextEditor__ control exposes a full set of commands that are exposed through its  __Commands__ property. For each of the [Formatting API]({%slug winforms/richtexteditor-/getting-started/formatting-api%}) methods there is a respective command.
         
-Here is an example with a __RadToggleButton__control.
+Here is an example with a __RadToggleButton__ control.
 
 {{source=..\SamplesCS\RichTextEditor\Features\Commands.cs region=init}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Commands.vb region=init}} 

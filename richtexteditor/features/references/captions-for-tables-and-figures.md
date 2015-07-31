@@ -52,7 +52,7 @@ You can control how the numbering is displayed by using the __Format__ ComboBox.
 
  ![richtexteditor-features-references-caption-for-tables-and-figures 005](images/richtexteditor-features-references-caption-for-tables-and-figures005.png)
 
-###Include chapter number
+### Include chapter number
 
 When the __Include chapter number__ checkbox is checked, every time you insert a __Caption__ in a new section, the numbering is restarted. That’s why the preview now looks like this:
 
@@ -65,7 +65,7 @@ A section is defined by the __Heading__ styles, but only when they are in a list
 
 ![richtexteditor-features-references-caption-for-tables-and-figures 006](images/richtexteditor-features-references-caption-for-tables-and-figures006.png)
 
-###Insert
+### Insert
 
 Clicking on the __OK__ button will insert the __Caption__. It would look like this:
 

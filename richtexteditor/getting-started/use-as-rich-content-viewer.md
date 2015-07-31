@@ -10,17 +10,9 @@ position: 3
 
 # Use as Rich Content Viewer
 
-
-
 ## 
 
-To use __RadRichTextEditor__ as a rich content viewer you have to disable the user from editing its content. This is done via the
-          __IsReadOnly__ property. You just have to set it to *true*.
-        #_[C#] _
-
-	
-
-
+To use __RadRichTextEditor__ as a rich content viewer you have to disable the user from editing its content. This is done via the __IsReadOnly__ property. You just have to set it to *true*.
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=readonly}} 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=readonly}} 
@@ -38,18 +30,10 @@ To use __RadRichTextEditor__ as a rich content viewer you have to disable the us
 
 {{endregion}} 
 
+In addition to the __IsReadOnly__ property, there are several other properties that can be used to control the response of __RadRichTextEditor__ towards the user actions against it:
 
+* __Enabled__ - setting this property to __False__ will disable the entire control. The user won't be able to enter any input in it and to scroll the contents.
 
+* __IsSelectionEnabled__ - setting this property to __False__ will disable the user to perform any selection inside the __RadRichTextEditor__ control.
 
-In addition to the __IsReadOnly__ property, there are several other properties that can be used to control the response of
-          __RadRichTextEditor__ towards the user actions against it:
-        
-
-* __Enabled__ - setting this property to __False__ will disable the entire control. The user won't be
-            able to enter any input in it and to scroll the contents.
-
-* __IsSelectionEnabled__ - setting this property to __False__ will disable the user to perform any selection
-            inside the __RadRichTextEditor__ control.
-
-* __Focusable__ - setting this property to __False__ will exclude the
-            __RadRichTextEditor__ control from the tab navigation.
+* __Focusable__ - setting this property to __False__ will exclude the __RadRichTextEditor__ control from the tab navigation.

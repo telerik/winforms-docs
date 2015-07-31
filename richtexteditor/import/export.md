@@ -10,13 +10,7 @@ position: 0
 
 # Import/Export
 
-
-
-__RadRichTextEditor__ allows you to export and import its content. This is useful in case you want to save the user's input into a
-        data base and then load it from there, or if you want to save/load the content of __RadRichTextEditor__ to/from a file. To import and export
-        you have to use a specific class that implements the __IDocumentFormatProvider__. You can find built-in classes, that implement this
-        interface, for each of the supported formats. Currently __RadRichTextEditor__ can export and import the following formats:
-      
+__RadRichTextEditor__ allows you to export and import its content. This is useful in case you want to save the user's input into a data base and then load it from there, or if you want to save/load the content of __RadRichTextEditor__ to/from a file. To import and export you have to use a specific class that implements the __IDocumentFormatProvider__. You can find built-in classes, that implement this interface, for each of the supported formats. Currently __RadRichTextEditor__ can export and import the following formats:
 
 * __XAML__ - to import/export __XAML__ documents you have to use the __XamlFormatProvider__ class.
           
@@ -38,51 +32,41 @@ __RadRichTextEditor__ allows you to export and import its content. This is usefu
 
 ## Specifics
 
-__RadRichTextEditor__'s format providers can import/export a wide variety of features supported by the control. However, features
-          which are not yet supported are stripped on import. Such examples are content controls like text boxes, check boxes, etc. which can be inserted in the
-          document in some rich text editors such as Microsoft Word or can be included in the HTML.
+__RadRichTextEditor__'s format providers can import/export a wide variety of features supported by the control. However, features which are not yet supported are stripped on import. Such examples are content controls like text boxes, check boxes, etc. which can be inserted in the document in some rich text editors such as Microsoft Word or can be included in the HTML.
         
 
 Overall, here are listed the specifics you need to know when choosing the appropriate format provider for you requirements:
-        XamlFormatProvider
 
-As the XAML format is closest to __RadDocument__'s structure,
-              all supported features are imported/exported without the need of additional handling.
-            DocxFormatProvider and RtfFormatProvider
+#### XamlFormatProvider
+
+As the XAML format is closest to __RadDocument__'s structure,all supported features are imported/exported without the need of additional handling.
+
+#### DocxFormatProvider and RtfFormatProvider
 
 Content controls such as Text Box, Combo Box and Date Picker that can be included are currently ignored.
-            HtmlFormatProvider
 
-As HTML's concept of headers and footers is different, when exporting with __RadRichTextEditor__headers and footers are ignored. When it comes to importing, the <header> and <footer>
-              tags are included in the content of the imported document, but are not interpreted as __Header__
-              and __Footer__ of __RadDocument__.
+#### HtmlFormatProvider
+
+As HTML's concept of headers and footers is different, when exporting with __RadRichTextEditor__headers and footers are ignored. When it comes to importing, the <header> and <footer> tags are included in the content of the imported document, but are not interpreted as __Header__ and __Footer__ of __RadDocument__.
             
 
-Moreover, the __HtmlFormatProvider__ ignores the concept of __Paged__[layout mode]({%slug winforms/richtexteditor-/getting-started/layout-modes%}) as a whole. Page breaks inserted in
-              HTML for printing purposes are also ignored.
-            TxtFormatProvider
+Moreover, the __HtmlFormatProvider__ ignores the concept of __Paged__[layout mode]({%slug winforms/richtexteditor-/getting-started/layout-modes%}) as a whole. Page breaks inserted in HTML for printing purposes are also ignored.
+            
+#### TxtFormatProvider
 
 Imports and exports only plain text.PdfFormatProvider
 
-The current version of __RadRichTextEditor__ can only __export__
-              to PDF, but __not import__.
+The current version of __RadRichTextEditor__ can only __export__ to PDF, but __not import__.
             
-
 ## Examples
 
 Here are some examples on how to export and import.
 
 >note The "Export to String" and "Import from String" examples are only valid for the text-based format providers (Html, Xaml, Rtf and TxtFormatProvider).
->The "Export to File" and "Import from File" are applicable to each of the format providers (save for PDF import). To use them with the desired format
-            just replace the format provider and change the settings of the __SaveFileDialog__ or the __OpenFileDialog__ .
+>The "Export to File" and "Import from File" are applicable to each of the format providers (save for PDF import). To use them with the desired format just replace the format provider and change the settings of the __SaveFileDialog__ or the __OpenFileDialog__ .
 >
 
-
-## Export to String#_[C#] _
-
-	
-
-
+## Export to String
 
 {{source=..\SamplesCS\RichTextEditor\ImportExport\ImportExportMain.cs region=xaml}} 
 {{source=..\SamplesVB\RichTextEditor\ImportExport\ImportExportMain.vb region=xaml}} 
@@ -103,14 +87,7 @@ Here are some examples on how to export and import.
 
 {{endregion}} 
 
-
-
-
-## Export to File#_[C#] _
-
-	
-
-
+## Export to File
 
 {{source=..\SamplesCS\RichTextEditor\ImportExport\ImportExportMain.cs region=docx}} 
 {{source=..\SamplesVB\RichTextEditor\ImportExport\ImportExportMain.vb region=docx}} 
@@ -151,14 +128,7 @@ Here are some examples on how to export and import.
 
 {{endregion}} 
 
-
-
-
-## Import from String#_[C#] _
-
-	
-
-
+## Import from String
 
 {{source=..\SamplesCS\RichTextEditor\ImportExport\ImportExportMain.cs region=importXAML}} 
 {{source=..\SamplesVB\RichTextEditor\ImportExport\ImportExportMain.vb region=importXAML}} 
@@ -179,14 +149,7 @@ Here are some examples on how to export and import.
 
 {{endregion}} 
 
-
-
-
-## Import from File#_[C#] _
-
-	
-
-
+## Import from File
 
 {{source=..\SamplesCS\RichTextEditor\ImportExport\ImportExportMain.cs region=importDocx}} 
 {{source=..\SamplesVB\RichTextEditor\ImportExport\ImportExportMain.vb region=importDocx}} 
@@ -229,14 +192,9 @@ Here are some examples on how to export and import.
 
 {{endregion}} 
 
-
-
-
->caution When importing a document, it is converted to RadDocument following the rules of the model that it defines.
-            Content that has no parallel in RadDocument is ignored and can no longer be restored.
+>caution When importing a document, it is converted to RadDocument following the rules of the model that it defines. Content that has no parallel in RadDocument is ignored and can no longer be restored.
 >When exporting the same document, the resulting docx/HTML/XAML/RTF will be different than the initial one.
 >
-
 
 # See Also
 

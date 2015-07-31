@@ -39,7 +39,7 @@ More often than not, you would only need to use objects of type HyperlinkInfo. H
 
 * Target - determines if the link should be opened in another window (if set to HyperlinkTargets.Blank) or in the same frame (HyperlinkTargets.Self).
 
-For example, a link to our site can be inserted in the document programmatically as follows:#_[C#] _
+For example, a link to our site can be inserted in the document programmatically as follows:
 
 {{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=insert}} 
 {{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=insert}} 
@@ -240,7 +240,7 @@ You have control over it using the __HyperlinkToolTipFormatString__of RadRichTex
 
 __HyperlinkClicked__
 
-When you click on a hyperlink, the __HyperlinkClicked__event of __RadRichTextEditor__is fired. The sender of the event is the document element, which you have clicked, e.g. a Span, an Image, InlineUIContainer, etc. The event args on the other hand, provide the possibility to markthe event as handled and prevent the default action. Custom logic can also be implemented depending on the __HyperlinkTarget__and __URL__, which are also visible as properties of the event args.
+When you click on a hyperlink, the __HyperlinkClicked__ event of __RadRichTextEditor__ is fired. The sender of the event is the document element, which you have clicked, e.g. a Span, an Image, InlineUIContainer, etc. The event args on the other hand, provide the possibility to markthe event as handled and prevent the default action. Custom logic can also be implemented depending on the __HyperlinkTarget__ and __URL__, which are also visible as properties of the event args.
 ![richtexteditor-features-hyperlink 002](images/richtexteditor-features-hyperlink002.png)
 
 # See Also

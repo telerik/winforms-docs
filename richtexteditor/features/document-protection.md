@@ -10,14 +10,10 @@ position: 14
 
 # Document Protection
 
-
-
 __Document Protection__ allows defining and enforcing different editing restrictions in the document for a set of users and groups.
       
-
 This article describes how this feature can be used in terms of UI and API of __RadRichTextEditor__.
-      
-
+ 
 * [Defining Users](#defining-the-users)
 
 * [Changing the Current User](#changing-the-current-user)
@@ -29,10 +25,8 @@ This article describes how this feature can be used in terms of UI and API of __
 ## Defining the Users
 
 The editing restrictions can be used with a set of users or groups. When document protection is enforced, each user will be able to edit only the parts of the document he/she has rights for and the parts that are editable by the group he/she belongs to.
-        
 
 The users that will be able to edit the document and the groups they are in can be declared like this:#_[C#] _
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=users}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=users}} 
@@ -57,12 +51,9 @@ The users that will be able to edit the document and the groups they are in can 
 
 {{endregion}} 
 
-
 This code determines 3 users and two groups but does not specify the relationship between the users and the groups. This is so because users have the potential to change their groups.
-        
 
 The collection kept in the Users property of __RadRichTextEditor__ is also used in the default   __ChangeEditingPermissionsDialog__ which creates the PermissionRangeInfos to be inserted in the document.
-        
 
 ## Changing the Current User
 
@@ -84,9 +75,7 @@ The current user of the document is set using the __CurrentUser__ property of th
 
 {{endregion}} 
 
-
 You can also create a collection with the UserInfos that will be interracting with the document and wire it with   some UI of yours. For example, if you set-up the collection as follows:
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=usersList}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=usersList}} 
@@ -180,22 +169,16 @@ Then, when the selected item of the combo changes, the CurrentUser of the editor
 
 ## Toggling Document Protection
 
-When document protection is enforced, the current user can modify the rights for editing the part of the document that he/she is entitled to editing.
-          When the protection is disabled, the editing rights for the document can be freely modified by all users.
+When document protection is enforced, the current user can modify the rights for editing the part of the document that he/she is entitled to editing. When the protection is disabled, the editing rights for the document can be freely modified by all users.
         
 
 The protection of the document can be turned on and off using the __ToggleDocumentProtectionCommand__ command of RadRichTextEditor.
         
 
-The command opens a dialog that allows you to enter a password. By clicking OK,
-          the document protection starts to be enforced.
+The command opens a dialog that allows you to enter a password. By clicking OK, the document protection starts to be enforced.
         
 
 It is also possible to toggle document protection in code-behind, without showing a dialog:#_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=password}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=password}} 
@@ -213,14 +196,7 @@ It is also possible to toggle document protection in code-behind, without showin
 
 {{endregion}} 
 
-
-
-
-The reverse operations can be executed like this:#_[C#] _
-
-	
-
-
+The reverse operations can be executed like this:
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=unprotect}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=unprotect}} 
@@ -236,15 +212,13 @@ The reverse operations can be executed like this:#_[C#] _
         '
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 Note that the UnprotectDocument method will succeed only if the password you have passed as parameter matches the one used to protect the document.
 
 ## Creating and Modifying Document Protection Regions
 
 DocumentProtection regions can be most easily created and modified through the ChangeEditingPermissionsDialog which can be invoked through the  __ShowChangeEditingPermissionsDialogCommand__ of __RadRichTextEditor__. They can also be edited in code-behind, using the API of RadRichTextEditor and RadDocument.
-        
 
 Here is an example:
 
@@ -274,7 +248,6 @@ Here is an example:
 
 This code will insert a permission range around the current selection in the document. The type of the permission is Individual - meaning that only the CurrentUser will be able to edit the region.
         
-
 # See Also
 
  * [Positioning]({%slug winforms/richtexteditor-/features/positioning%})

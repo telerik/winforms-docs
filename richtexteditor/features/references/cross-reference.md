@@ -10,8 +10,6 @@ position: 2
 
 # Cross Reference
 
-
-
 Cross-References represent fields that refer to a part of the document. When that part changes, these fields can be updated to reflect the change. You can have a Cross-Reference to a Caption, Heading or Bookmark. 
 
 You can insert a Cross-Reference from here:![richtexteditor-features-references-cross-reference 001](images/richtexteditor-features-references-cross-reference001.png)
@@ -68,13 +66,13 @@ These are the options you have when you select the __Figure__ reference type:
 
 * __Above/Below__ – inserts the position of the field relative to the part being referenced. For example if we have a __Caption__ on the first line of the page and we decide to insert a __Cross-Reference__ in the middle  of the same page to that __Caption__. We will get the following text – "Above".
                 
-###Table
+### Table
 
 __Table__ and __Figure__ are both __Captions__ so they have the same options.
 
 ![richtexteditor-features-references-cross-reference 004](images/richtexteditor-features-references-cross-reference004.png)
 
-###Heading
+### Heading
 
 These are the options when __Heading__ is selected:
 

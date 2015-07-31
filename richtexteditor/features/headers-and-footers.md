@@ -128,7 +128,7 @@ All header/footer types - Default, First and Even are set identically. The only 
 Setting the Footers can be done in the same way. Here is the respective code for footers:
         
 
-* Creating a Footer:#_[C#] _
+* Creating a Footer:
 
 {{source=..\SamplesCS\RichTextEditor\Features\HeadersAndFooters.cs region=footer}} 
 {{source=..\SamplesVB\RichTextEditor\Features\HeadersAndFooters.vb region=footer}} 

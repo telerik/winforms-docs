@@ -11,8 +11,7 @@ position: 0
 # Fields
 
 Fields are a convenient way to show non-static data in the document. In this way, you could present different data to the end-user without actually changing the document content.
-      
-
+    
 This topic contains the following sections:
 
 * [Field Types](#field-types)
@@ -72,32 +71,23 @@ In RadDocument the base class for all fields is __CodeBasedField__. It is an abs
 
 * __BibliographyField__: Inserted in the document when you want to add information about the bibliographic sources used in the document. Read more here: [Bibliographic References]({%slug winforms/richtexteditor-/features/references/bibliographic-references%}).
             
-
 ## Display Modes
 
 Fields normally have two modes – __Code__ and __Result__. When in code mode, they appear as `{<FieldTypeName> [<field parameter>] [<switch> <switch parameter>]*}`.
         
-
 For instance, Page Fields appear as `{ PAGE }`, Merge Fields as `{ MERGEFIELD FirstName }`
 or `{ MERGEFIELD FirstName \b "text that will appear before the merge field if it is not empty" }`.
         
-
 In result mode, all fields get evaluated depending on some conditions – the place in the document where they appear in the case of page fields,the current mail merge record for merge fields, etc.
         
 
 __MergeFields__ have one additional mode – __DisplayName__ that shows the property path they use in brackets of the type `<<[PropertyPathHere]>>`. Furthermore, there are specific methods and commands of the editor that change the display mode of merge fields or even remove them from the document altogether, replacing them with the ResultFragment. More information on this topic can be found in the [Mail Merge]({%slug winforms/richtexteditor-/features/mail-merge%}) article.
         
-
 ## Inserting a Field
 
 Inserting any type of field in the document of an editor can be done with the __InsertField()__ method.
-        
 
-Insert a page field:#_[C#] _
-
-	
-
-
+Insert a page field:
 
 {{source=..\SamplesCS\RichTextEditor\Features\Fields.cs region=insert}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Fields.vb region=insert}} 
@@ -153,8 +143,6 @@ Priority can specified through the __FieldsUpdateManager__ static class. The fol
 ````
 
 {{endregion}} 
-
-
 
 >warning Having many different values for field priory is not recommended and may lead to performance degradation of the UpdateAllFields() method. The reason for this is that all fields with the same priority are updated in a batch update. Having more priority groups leads to execution of more batch updates.
 >

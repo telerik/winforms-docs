@@ -10,11 +10,8 @@ position: 0
 
 # Getting Started
 
+__RadRichTexteditor__ is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc. This topic will help you to quickly get started using the control. It will focus on the following:
 
-
-__RadRichTexteditor__ is a control that allows you to display and edit rich text content including sections, paragraphs, spans,
-        italic text, bold text, inline images, tables etc. This topic will help you to quickly get started using the control. It will focus on the following:
-      
 
 * [Creating a RadRichTextEditor](#creating-a-radrichtexteditor)
 
@@ -25,11 +22,6 @@ __RadRichTexteditor__ is a control that allows you to display and edit rich text
 ## Creating a RadRichTextEditor
 
 You can declare a new __RadRichTextEditor__ as any normal WinForms control.
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\Main.cs region=declare}} 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=declare}} 
@@ -45,20 +37,9 @@ You can declare a new __RadRichTextEditor__ as any normal WinForms control.
 
 {{endregion}} 
 
-
-
-
 ## Formatting via a sample UI
 
-If you want to allow the user to edit and format the content of __RadRichTextEditor__, you have to create UI and use the API exposed
-          by __RadRichTextEditor__. The __API__ exposes methods (like __ToggleBold()__,
-          __ToggleItalic()__ etc.) that modify the text in the control when called. Here is an example of using the API for making the text bold,
-          italic and underlined.
-        #_[C#] _
-
-	
-
-
+If you want to allow the user to edit and format the content of __RadRichTextEditor__, you have to create UI and use the API exposed  by __RadRichTextEditor__. The __API__ exposes methods (like __ToggleBold()__,           __ToggleItalic()__ etc.) that modify the text in the control when called. Here is an example of using the API for making the text bold, italic and underlined.
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\Main.cs region=API}} 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=API}} 
@@ -101,17 +82,9 @@ If you want to allow the user to edit and format the content of __RadRichTextEdi
     End Sub
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 The UI should also respond when the caret is on a document position where the text is modified. For example, the BoldButton should be toggled if the caret is on bolded text. This can be done by handling the ToggleStateChanged event. Here is an example:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\Main.cs region=commands}} 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=commands}} 
@@ -168,9 +141,7 @@ The UI should also respond when the caret is on a document position where the te
 
 ## Creating a Document at run time
 
-One of the common uses of __RadRichTextEditor__ is to create a document programatically and show it in the editor. The root element -
-          [RadDocument]({%slug winforms/richtexteditor-/document-elements/raddocument%}) can contain several other elements:
-        
+One of the common uses of __RadRichTextEditor__ is to create a document programatically and show it in the editor. The root element - [RadDocument]({%slug winforms/richtexteditor-/document-elements/raddocument%}) can contain several other elements:
 
 * [Section]({%slug winforms/richtexteditor-/document-elements/section%})
 
@@ -186,11 +157,7 @@ One of the common uses of __RadRichTextEditor__ is to create a document programa
 
 The whole hierarchy of the elements can be found [here]({%slug winforms/richtexteditor-/document-elements%})
 
-Here is an example of a document created from code-behind#_[C#] _
-
-	
-
-
+Here is an example of a document created from code-behind:
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\Main.cs region=code}} 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=code}} 
@@ -332,15 +299,12 @@ Here is an example of a document created from code-behind#_[C#] _
 
 {{endregion}} 
 
-
 ![richtexteditor-getting-started 002](images/richtexteditor-getting-started002.png)
 
 This document is editable.  To make it read only you have to set the __IsReadOnly__ property of the __RadRichTextEditor__ to __True__.
-        
 
 >tip To learn more about the read only feature read[this topic]({%slug winforms/richtexteditor-/getting-started/use-as-rich-content-viewer%}).
 >
-
 
 # See Also
 

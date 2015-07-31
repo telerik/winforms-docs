@@ -10,23 +10,15 @@ position: 2
 
 # Repalce Default Dialogs
 
-
-
-This article will demonstrate how you can replace the default __FindAndRepacle__ dialog with a custom one. It will show which
-      dialogs can be replaced as well.
+This article will demonstrate how you can replace the default __FindAndRepacle__ dialog with a custom one. It will show which dialogs can be replaced as well.
 
 ## Create custom dialog
 
-1. Let's start by adding a simple RadForm to our project (the main form of the project should contain at least one RadRichTextEditor).
-              Make the form to look like in the following picture (you can leave the default control names).
-            ![richtexteditor-how-to-repalce-default-dialogs 001](images/richtexteditor-how-to-repalce-default-dialogs001.png)
+1\. Let's start by adding a simple RadForm to our project (the main form of the project should contain at least one RadRichTextEditor). Make the form to look like in the following picture (you can leave the default control names).
 
-1. Open the code behind and add event handler for the button. You can add a method that will perform the search as well:
-            #_[C#] _
+![richtexteditor-how-to-repalce-default-dialogs 001](images/richtexteditor-how-to-repalce-default-dialogs001.png)
 
-	
-
-
+2\. Open the code behind and add event handler for the button. You can add a method that will perform the search as well:
 
 {{source=..\SamplesCS\RichTextEditor\HowTo\FindAllDialog.cs region=search}} 
 {{source=..\SamplesVB\RichTextEditor\HowTo\FindAllDialog.vb region=search}} 
@@ -75,16 +67,7 @@ This article will demonstrate how you can replace the default __FindAndRepacle__
 
 {{endregion}} 
 
-
-
-
-1. The new dialog need to implement the __IFindReplaceDialog__ otherwise you cannot replace the default one.
-              So go ahead and add the interface to the form's class declaration:
-            #_[C#] _
-
-	
-
-
+3\. The new dialog need to implement the __IFindReplaceDialog__ otherwise you cannot replace the default one. So go ahead and add the interface to the form's class declaration:
 
 {{source=..\SamplesCS\RichTextEditor\HowTo\FindAllDialog.cs region=declare}} 
 {{source=..\SamplesVB\RichTextEditor\HowTo\FindAllDialog.vb region=declare}} 
@@ -102,12 +85,7 @@ Partial Public Class FindAllDialog
 
 {{endregion}} 
 
-
-Now you are ready to add the required fields, property and methods:#_[C#] _
-
-	
-
-
+Now you are ready to add the required fields, property and methods:
 
 {{source=..\SamplesCS\RichTextEditor\HowTo\FindAllDialog.cs region=interface}} 
 {{source=..\SamplesVB\RichTextEditor\HowTo\FindAllDialog.vb region=interface}} 
@@ -178,15 +156,7 @@ Now you are ready to add the required fields, property and methods:#_[C#] _
 
 {{endregion}} 
 
-
-
-
-1. The final step is to assign a new instance of the dialog to the corresponding property:
-            #_[C#] _
-
-	
-
-
+4\. The final step is to assign a new instance of the dialog to the corresponding property:
 
 {{source=..\SamplesCS\RichTextEditor\HowTo\ChangeDefaultDialogs.cs region=assign}} 
 {{source=..\SamplesVB\RichTextEditor\HowTo\ChangeDefaultDialogs.vb region=assign}} 
@@ -200,9 +170,6 @@ Now you are ready to add the required fields, property and methods:#_[C#] _
 ````
 
 {{endregion}} 
-
-
-
 
 ## Dialogs that can be replaced
 

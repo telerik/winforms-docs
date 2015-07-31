@@ -10,10 +10,12 @@ position: 39
 
 # Rotator
 
-
-
 ## 
 
-RadRotator is a multipurpose component for content rotation and personalization. Highly customizable, it delivers high interactivity and user involvement. You can display a series of images, web URLs or any collection of rad elements. ![rotator-overview 001](images/rotator-overview001.png)
+RadRotator is a multipurpose component for content rotation and personalization. Highly customizable, it delivers high interactivity and user involvement. You can display a series of images, web URLs or any collection of rad elements.
 
-Animation between frames can be opaque or transparent and the movement can be in any direction. You can adjust the level of granularity and interval between frames.![rotator-overview 002](images/rotator-overview002.png)
+![rotator-overview 001](images/rotator-overview001.png)
+
+Animation between frames can be opaque or transparent and the movement can be in any direction. You can adjust the level of granularity and interval between frames.
+
+![rotator-overview 002](images/rotator-overview002.png)

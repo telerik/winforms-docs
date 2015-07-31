@@ -10,10 +10,7 @@ position: 13
 
 # Mail Merge
 
-
-
 The general use of mail merge is the creation of a document serving as a template and filling in different data, e.g. the name of a person, their address, job title, etc. However, mail merge can be used in other scenarios as well, when some part of the document will be repeated several times with slight alterations. The template which stays mostly unchanged in all records is regarded as "Main Document". In addition to the static content, it also contains placeholders – "Merge Fields" – which represent the variable data and are replaced with the actual content upon performing the mail merge. The information used for filling up the Merge Fields is kept separately and is called "Data Source".
-      
 
 ## Setting up the Data Source
 
@@ -120,7 +117,6 @@ All that is left is to add the following line:
 
 {{endregion}} 
 
-
 ## Performing Mail Merge
 
 MailMerge can be done both [using the UI](#mailmerging-using-the-ui:) and [programmatically.](#programmatic-mail-merge)
@@ -130,17 +126,15 @@ MailMerge can be done both [using the UI](#mailmerging-using-the-ui:) and [progr
 RadRichTextEditor comes with a predefined UI for inserting merge fields, previewing the results and fulfilling the merge. It is separated in the  Mailings tab:
 ![richtexteditor-features-mail-merge 001](images/richtexteditor-features-mail-merge001.png)
 
-The options in the drop down button InsertMergeField are automatically populated to match the properties of the objects which are used as data source. You can also switch the display mode of the merge fields from FieldCodes (as in the picture) to FieldNames (e.g. “<<FirstName>>”) or preview the results.
+The options in the drop down button InsertMergeField are automatically populated to match the properties of the objects which are used as data source. You can also switch the display mode of the merge fields from FieldCodes (as in the picture) to FieldNames (e.g. "<<FirstName>>") or preview the results.
             
 
 If you click the "Preview Results" button, the fields will be replaced with the data from the current record, which by default is the first item from the data source. Then, you can further iterate through the records using the First, Last, Previous and Next buttons.
-            
-
+ 
 If you wish to save the document as a template, you can do so by executing the SaveFileCommand from the application menu in the ribbon bar. 
 
 >note The merge fields are persisted only in XAML and docx.
 >
-
 
 In the end, you can fulfill the mail merge from the MailMerge button, which executes the MailMergeCommand. A SaveFileDialog dialog will pop up prompting you to choose where you wish to save the document – result of mail merge and in what file format.
 
@@ -150,8 +144,6 @@ In the end, you can fulfill the mail merge from the MailMerge button, which exec
 This same scenario can be carried out programmatically just as easily. The methods that can be used are:
             
 ### Creating a MergeField:
-
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=field}} 
 {{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=field}} 
@@ -169,15 +161,9 @@ This same scenario can be carried out programmatically just as easily. The metho
 
 {{endregion}} 
 
-
-
 This fields will look for the value of the FirstName property of the Employee objects.
 
 ### Changing the display mode of merge fields:
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=mode}} 
 {{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=mode}} 
@@ -211,9 +197,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 {{endregion}} 
 
-
-### Inserting a MergeField at the current position of the caret:#_[C#] _
-
+### Inserting a MergeField at the current position of the caret:
 
 {{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=insert}} 
 {{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=insert}} 
@@ -235,11 +219,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 {{endregion}} 
 
-
-
-
-### Previewing the results of Mail Merge:#_[C#] _
-
+### Previewing the results of Mail Merge:
 
 {{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=preview}} 
 {{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=preview}} 
@@ -273,8 +253,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 {{endregion}} 
 
-
-### Performing MailMerge:#_[C#] _
+### Performing MailMerge:
 
 {{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=perform}} 
 {{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=perform}} 
@@ -315,6 +294,5 @@ This fields will look for the value of the FirstName property of the Employee ob
 ````
 
 {{endregion}} 
-
 
 You can further choose what you wish to do with the resulting RadDocument – assign it to a RadRichTextEditor’s Document property, export it, etc.

@@ -67,25 +67,20 @@ Each __StyleDefinition__ has the following properties:
 The style types that are most commonly used are Character styles and styles for Paragraph. 
 
 The former styles set values for the properties of Span, such as FontSize, ForeColor and FontWeight. These values are contained in the __SpanProperties__ of the style.  When such a style is applied to a document, it changes the formatting of the text in the selection or (if there is no selection) the formatting of the word that the Caret is positioned in.
-        
 
 Paragraph Styles include properties of a Paragraph, such as Background, TextAlignment, LineSpacing, SpacingAfter, etc.  The values of these properties are kept in the __ParagraphProperties__ of the StyleDefinition object. This type of styles can also contain values of Character styles in the __SpanProperties__ property. When applied, the values of the ParagraphProperties will be applied to the Paragraphs and the values of the SpanProperties - to all Spans in these Paragraphs.
-        
 
 You can have a Paragraph style linked to a Character style using the __LinkedStyle__ property. In this way, you can apply Paragraph and Span properties at the same time. The difference between this case and the Paragraph Styles that also set SpanProperties is the way they are applied.  With linked styles, if you have selection which includes text in only one Paragraph the Paragraph Style is not applied. In that case, the Character style is applied only on the selected part of the document.
-        
 
-Table styles include properties of Table, such as Borders and Background. They are contained in the __TableProperties__ of the style. When such style is applied to a document, it changes the formatting of the tables.
-        
+Table styles include properties of Table, such as Borders and Background. They are contained in the __TableProperties__ of the style. When such style is applied to a document, it changes the formatting of the tables.        
 
 ## Declaring New Styles
 
 New Styles can be declared and added to the StylesRepository of the document. In this way they will be discovered by the default UI and could be applied to parts of the document.
-        
 
 ### Declaring a Character Style
 
-This is how a Character style can be defined and registered:#_[C#] _
+This is how a Character style can be defined and registered:
 
 {{source=..\SamplesCS\RichTextEditor\Features\Styles.cs region=style}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=style}} 
@@ -125,7 +120,7 @@ This style will set "Calibri" as a FontFamily to the part of the document it is 
 
 ### Declaring a Paragraph Style
 
-A paragraph style can be defined as follows:#_[C#] _
+A paragraph style can be defined as follows:
 
 {{source=..\SamplesCS\RichTextEditor\Features\Styles.cs region=paragraph}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=paragraph}} 
@@ -335,7 +330,7 @@ Linked styles can be based on other linked styles or on paragraph styles.
 
 * Span properties are inherited from the span style part in its base linked style.
  
-###Table style
+### Table style
 
 Table styles can only be based on other table styles. The inheritance is as follows:
 
