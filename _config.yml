@@ -65,6 +65,12 @@ navigation:
     carousel:
         title: Carousel
         position: 9
+    carousel/using-radcarousel:
+        title: Using RadCarousel
+        position: 2
+    carousel/design-time:
+        title: Design-time
+        position: 3
     chart:
         title: Chart (obsolete)
         position: 10

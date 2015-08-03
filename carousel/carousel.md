@@ -1,11 +1,11 @@
 ---
-title: Carousel
+title: Overview
 page_title: Carousel | UI for WinForms Documentation
 description: Carousel
 slug: winforms/carousel
 tags: carousel
 published: True
-position: 9
+position: 0
 ---
 
 # Carousel
