@@ -14,12 +14,11 @@ position: 1
 
 ## 
 
-
-
-|RELATED VIDEOS|
-|Overview of RadCarousel for WinForms See how to quickly get started using the Telerik RadCarousel for WinForms. (Runtime: 07:18)[](http://tv.telerik.com/winforms/radcarousel/overview-radcarousel-winforms)|
-
-
+| RELATED VIDEOS |  |
+| ------ | ------ |
+|[Overview of RadCarousel for WinForms](http://tv.telerik.com/winforms/radcarousel/overview-radcarousel-winforms)
+ See how to quickly get started using the Telerik RadCarousel for WinForms. (Runtime: 07:18)|![carousel-overview 001](images/carousel-overview001 - Copy.png)|
+>caption 
 
 The minimum required to use RadCarousel is:
 
@@ -30,16 +29,15 @@ The minimum required to use RadCarousel is:
 
 The example below demonstrates [creating an elliptical path]({%slug winforms/carousel/using-radcarousel/carousel-path%}) and [populating the carousel items]({%slug winforms/carousel/using-radcarousel/carousel-items%}) with several button and one label elements.![carousel-getting-started 001](images/carousel-getting-started001.png)
 
-1. In a new Windows Application project, add a __RadCarousel__ control to the default form. Set the RadCarousel __Dock__ property to __Fill__. 
+1\. In a new Windows Application project, add a __RadCarousel__ control to the default form. Set the RadCarousel __Dock__ property to __Fill__. 
 
 
-1. Add __Telerik.WinControls.UI__ namespace to the "uses" (C#) or "Imports" (VB) section of the code. 
+2\. Add __Telerik.WinControls.UI__ namespace to the "uses" (C#) or "Imports" (VB) section of the code. 
 
 
-1. Add the following code to the Form_Load event handler:#_[C#] Defining the Path and Populating the Carousel Items_
+3\. Add the following code to the Form_Load event handler:
 
-	
-
+__Defining the Path and Populating the Carousel Items__
 
 
 {{source=..\SamplesCS\Carousel\CarouselGettingStarted.cs region=carouselGettingStarted}} 
@@ -97,4 +95,4 @@ The example below demonstrates [creating an elliptical path]({%slug winforms/car
 
 
 
-1. Press __F5__ to run the application.
+4\. Press __F5__ to run the application.

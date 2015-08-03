@@ -26,10 +26,9 @@ CarouselEllipsePath is a CarouselParameterPath descendant that defines a three d
 
 * __U, V:__ Two points in three dimensional space that describe the distance from the center of the ellipse.
 
-* __InitialAngle,____FinalAngle__: The starting and ending number of degrees of the arc that defines the ellipse.  For example an __InitialAngle__ of zero and a __FinalAngle__ of 360 describes a complete ellipse.#_[C#] Defining ellipse path_
+* __InitialAngle__, __FinalAngle__: The starting and ending number of degrees of the arc that defines the ellipse.  For example an __InitialAngle__ of zero and a __FinalAngle__ of 360 describes a complete ellipse.
 
-	
-
+__Defining ellipse path__
 
 
 {{source=..\SamplesCS\Carousel\CarouselPath.cs region=definingEllipsePath}} 
@@ -66,13 +65,15 @@ CarouselEllipsePath is a CarouselParameterPath descendant that defines a three d
 
 You can set the bezier path for the carousel using the Visual Studio designer.
 
-*  
-  	Drag the RadCarousel control in your form.
+*  Drag the RadCarousel control in your form.
   
 
-*  In Properties, set __CarouselPath__ to *newCarouselEllipsePath*![carousel-using-radcorousel-carousel-carousel-path 001](images/carousel-using-radcorousel-carousel-carousel-path001.png)
+*  In Properties, set __CarouselPath__ to *newCarouselEllipsePath*
+
+![carousel-using-radcorousel-carousel-carousel-path 001](images/carousel-using-radcorousel-carousel-carousel-path001.png)
 
 * Drag the two control points (U and V) and the center poing to set the ellipse as desired:
+
 ![carousel-using-radcorousel-carousel-carousel-path 002](images/carousel-using-radcorousel-carousel-carousel-path002.png)
 
 >note You can arrange the points only in 2D. The Z coordinate (if needed) should be set programmatically.
@@ -90,10 +91,9 @@ __CarouselBezierPath__ describes two end points and two "control" points in thr
 
 * __FirstPoint, LastPoint:__ These are the two end points for the Bezier curve. Both are __Point3D__ types having __X__, __Y__ and __Z__ properties.
 
-* __CtrlPoint1, CtrlPoint2:__ These are the two points that "pull" against the line described by FirstPoint and LastPoint to create the curve. Both are __Point3D__ types having __X__, __Y__ and __Z__ properties.#_[C#] Defining bezier path_
+* __CtrlPoint1, CtrlPoint2:__ These are the two points that "pull" against the line described by FirstPoint and LastPoint to create the curve. Both are __Point3D__ types having __X__, __Y__ and __Z__ properties.
 
-	
-
+__Defining bezier path__
 
 
 {{source=..\SamplesCS\Carousel\CarouselPath.cs region=definingBezierPath}} 

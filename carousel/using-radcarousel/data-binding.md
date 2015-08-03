@@ -27,10 +27,9 @@ This same pattern holds true, regardless of the type of data being bound to.
 
 ## Example
 
-The example below creates a generic list of an object called "Feature". "Feature" has "ID" and "Name" properties. In the __NewCarouselItemCreating__ event handler, RadButtonElement instances are created. In the __ItemDataBound__ event handler, the button text is assigned the "Name" property of the "Feature" object. The "ID" property of the "Feature" object is stored in the RadButtonElement Tag property for later use in the RadButtonElement __Click__ event.![carousel-using-radcorousel-carousel-data-binding 001](images/carousel-using-radcorousel-carousel-data-binding001.png)#_[C#] The Features Object_
+The example below creates a generic list of an object called "Feature". "Feature" has "ID" and "Name" properties. In the __NewCarouselItemCreating__ event handler, RadButtonElement instances are created. In the __ItemDataBound__ event handler, the button text is assigned the "Name" property of the "Feature" object. The "ID" property of the "Feature" object is stored in the RadButtonElement Tag property for later use in the RadButtonElement __Click__ event.![carousel-using-radcorousel-carousel-data-binding 001](images/carousel-using-radcorousel-carousel-data-binding001.png)
 
-	
-
+__The Features Object__
 
 
 {{source=..\SamplesCS\Carousel\CarouselDataBinding.cs region=createGenericListClass}} 
@@ -88,7 +87,7 @@ Public Class Features
 {{endregion}} 
 
 
-#_[C#] Binding RadCarousel to Generic List_
+__Binding RadCarousel to Generic List__
 
 	
 

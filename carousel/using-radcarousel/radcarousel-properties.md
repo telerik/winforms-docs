@@ -42,7 +42,7 @@ Some of the other significant properties for RadCarousel are:
               the items will pause for few seconds or until you move the cursor.This property sets internally __EnableLooping__to __true__. 
             
 
-* __EnableRelativePath__: When true, __RadCarousel__will recalculate and scale the path
+* __EnableRelativePath__: When true, __RadCarousel__ will recalculate and scale the path
               proportionally when the form is resized so that the path will keep its contour.
             
 
