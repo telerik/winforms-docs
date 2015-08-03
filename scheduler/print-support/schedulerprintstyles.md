@@ -5,7 +5,7 @@ description: SchedulerPrintStyles
 slug: winforms/scheduler/print-support/schedulerprintstyles
 tags: schedulerprintstyles
 published: True
-position: 0
+position: 1
 ---
 
 # SchedulerPrintStyles

@@ -5,54 +5,29 @@ description: Tutorial Creating a Slide Viewer with RadRotator
 slug: winforms/rotator/tutorial:-creating-a-slide-viewer-with-radrotator
 tags: tutorial,creating,a,slide,viewer,with,radrotator
 published: True
-position: 2
+position: 3
 ---
 
 # Tutorial: Creating a Slide Viewer with RadRotator
 
-
-
 ## 
 
-The following tutorial demonstrates programmatically loading images from your "My Documents\Pictures" directory for display in the RadRotator.
-          The tutorial will also integrate __RadStatusStrip__ control which contains RadLabelElement.
-        ![rotator-tutorial-creating-a-slide-viewer-with-radrotator 001](images/rotator-tutorial-creating-a-slide-viewer-with-radrotator001.png)
+The following tutorial demonstrates programmatically loading images from your "My Documents\Pictures" directory for display in the RadRotator. The tutorial will also integrate __RadStatusStrip__ control which contains RadLabelElement.
 
+![rotator-tutorial-creating-a-slide-viewer-with-radrotator 001](images/rotator-tutorial-creating-a-slide-viewer-with-radrotator001.png)
 
+1\. In the default form of a new Windows application:
 
-1. In the default form of a new Windows application:
-
-1. Drop a __RadStatusStrip__ to the form and set the __Dock__ property to __Bottom__.
+2\. Drop a __RadStatusStrip__ to the form and set the __Dock__ property to __Bottom__.
             
-
-1. Click the __RadStatusStrip__ downward pointing arrow and add a __RadLabelElement__.
+3\. Click the __RadStatusStrip__ downward pointing arrow and add a __RadLabelElement__.
             
-
-1. Drop a __RadRotator__ on the __Form__ and set its __Dock__ property to *Fill*.
+4\. Drop a __RadRotator__ on the __Form__ and set its __Dock__ property to *Fill*.
             
+5\. Navigate to the code view of the default form.
 
-1. Navigate to the code view of the default form.
-
-1. *If you are working in C#* : Change the declaration of the form so that it derives from the __Telerik.WinControls.UI.RadForm__ class.
-            #_[C#] Inherit from RadForm_
-
-	
-
-
-
-1. __If you are working in Visual Basic__:
+6\. Change the declaration of the form so that it derives from RadForm.
             
-
-1. Click the __Show All Files__ button in Solution Explorer.
-            
-
-1. Expand the Form1.vb node in Solution Explorer.
-
-1. Open the Form1.Designer.vb file by double-clicking it.
-
-1. Change the declaration in the Form1.Designer.vb file so that it derives from the __Telerik.WinControls.UI.RadForm__ class:
-            
-
 {{source=..\SamplesCS\Rotator\TutorialCreatingASlideViewerWithRadRotator.cs region=inheritFromRadForm}} 
 {{source=..\SamplesVB\Rotator\TutorialCreatingASlideViewerWithRadRotator.Designer.vb region=inheritFromRadForm}} 
 
@@ -64,24 +39,14 @@ Partial Class TutorialCreatingASlideViewerWithRadRotator
     Inherits Telerik.WinControls.UI.RadForm
     '
 ````
-
+	
 {{endregion}} 
 
+7\. Return to the design view of the form. Visual Studio will repaint the form.
 
+![rotator-tutorial-creating-a-slide-viewer-with-radrotator 002](images/rotator-tutorial-creating-a-slide-viewer-with-radrotator002.png)
 
-
-1. Return to the design view of the form. Visual Studio will repaint the form. ![rotator-tutorial-creating-a-slide-viewer-with-radrotator 002](images/rotator-tutorial-creating-a-slide-viewer-with-radrotator002.png)
-
-1. Click the __Events__ tab of the __Properties__ Window and navigate to the Forms __Load__ event.
-              Double click it to create a Load event handler and replace that code with the code below. *
-                The code here uses the System.IO Directory object GetFiles()
-                method to retrieve all "*.jpg" file paths. The file paths are passed to a GetThumbNail() method that will be described next. GetThumbNail() returns an ImageItem that is
-                added to the RadRotator items collection. Once the image items are loaded the Start() method is called to begin animation.
-              *#_[C#] Rotator example_
-
-	
-
-
+8\. Click the __Events__ tab of the __Properties__ Window and navigate to the Forms __Load__ event.  Double click it to create a Load event handler and replace that code with the code below. *The code here uses the System.IO Directory object GetFiles() method to retrieve all "*.jpg" file paths. The file paths are passed to a GetThumbNail() method that will be described next. GetThumbNail() returns an ImageItem that is added to the RadRotator items collection. Once the image items are loaded the Start() method is called to begin animation.
 
 {{source=..\SamplesCS\Rotator\TutorialCreatingASlideViewerWithRadRotator.cs region=rotatorExample}} 
 {{source=..\SamplesVB\Rotator\TutorialCreatingASlideViewerWithRadRotator.vb region=rotatorExample}} 
@@ -169,8 +134,5 @@ Partial Class TutorialCreatingASlideViewerWithRadRotator
 
 {{endregion}} 
 
-
-
-
-1. Press __F5__to run the application. 
+9\. Press __F5__ to run the application. 
             

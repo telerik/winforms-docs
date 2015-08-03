@@ -5,7 +5,7 @@ description: Rotator
 slug: winforms/rotator
 tags: rotator
 published: True
-position: 39
+position: 0
 ---
 
 # Rotator

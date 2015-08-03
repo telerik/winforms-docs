@@ -5,7 +5,7 @@ description: Events and Customization
 slug: winforms/scheduler/print-support/events-and-customization
 tags: events,and,customization
 published: True
-position: 1
+position: 2
 ---
 
 # Events and Customization

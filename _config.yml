@@ -281,6 +281,51 @@ navigation:
     scheduler:
         title: Scheduler
         position: 41
+    scheduler/appointments-and-dialogs:
+        title: Appointments and dialogs
+        position: 1
+    scheduler/fundamentals:
+        title: Fundamentals
+        position: 2
+    scheduler/views:
+        title: Views
+        position: 3
+    scheduler/data-binding:
+        title: Data Binding
+        position: 4
+    scheduler/drag-and-drop:
+        title: Drag and Drop
+        position: 5
+    scheduler/scheduler-navigator:
+        title: Scheduler Navigator
+        position: 6
+    scheduler/end-user-functionality:
+        title: End User Functionality
+        position: 7
+    scheduler/context-menu:
+        title: Context Menu
+        position: 8
+    scheduler/importing-and-exporting-appointments:
+        title: Importing and Exporting Appointments
+        position: 9
+    scheduler/localization:
+        title: Localization
+        position: 10
+    scheduler/reminders:
+        title: Reminders
+        position: 11
+    scheduler/appearance:
+        title: Appearance
+        position: 12
+    scheduler/how-to:
+        title: How-To
+        position: 13
+    scheduler/print-support:
+        title: Print Support
+        position: 14
+    scheduler:
+        title: Scheduler
+        position: 41
     shortcuts:
         title: Shortcuts
         position: 42
