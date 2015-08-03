@@ -14,10 +14,11 @@ position: 3
 
 ## 
 
-The __Culture__ property can be set using the drop down list in the Properties Window or set in code. The screenshot below shows the __Culture__ property set to "French (France)".![calendar-localization-globalization-properties 001](images/calendar-localization-globalization-properties001.png)#_[C#] Setting CultureInfo in code_
+The __Culture__ property can be set using the drop down list in the Properties Window or set in code. The screenshot below shows the __Culture__ property set to "French (France)".
 
-	
+![calendar-localization-globalization-properties 001](images/calendar-localization-globalization-properties001.png)
 
+__Setting CultureInfo in code__
 
 
 {{source=..\SamplesCS\Calendar\ColumnRowHeaders.cs region=globalization}} 
@@ -32,7 +33,6 @@ The __Culture__ property can be set using the drop down list in the Properties 
 ````
 
 {{endregion}} 
-
 
 
 

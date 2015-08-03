@@ -14,11 +14,7 @@ position: 0
 
 ## 
 
-To customize the day elements appearance of __RadCalendar__use __ElementRender__event as shown in the code snippet below:#_[C#]_
-
-	
-
-
+To customize the day elements appearance of __RadCalendar__ use __ElementRender__ event as shown in the code snippet below 
 
 {{source=..\SamplesCS\Calendar\Calendar1.cs region=elementRender}} 
 {{source=..\SamplesVB\Calendar\Calendar1.vb region=elementRender}} 
@@ -54,9 +50,6 @@ To customize the day elements appearance of __RadCalendar__use __ElementRender__
 
 {{endregion}} 
 
+ 
 
-
-
-
-
-Note: You should invalidate the calendar as shown in the __Load__event handler in the code above. 
+Note: You should invalidate the calendar as shown in the __Load__ event handler in the code above. 

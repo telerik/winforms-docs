@@ -26,25 +26,13 @@ The complete list of the predefined __CultureInfo__ names and identifiers can 
 
 The table below is a sample list of the names and identifiers found in the CultureInfo class.
 
-
-
-
-
-| __Culture Name__ | __Culture Identifier__ | __Language-Country/Region__ |
-|bg-BG|0x0402|Bulgarian - Bulgaria|
-|en-GB|0x0809|English - United Kingdom|
-|fr-FR|0x040C|French - France|
-|es-ES|0x0C0A|Spanish - Spain|
-
-
-
-
-
-
-
-
-
-
+<table>
+<th>Culture Name</th><th>Culture Identifier</th><th>Language-Country/Region</th>
+<tr><td>bg-BG</td><td>0x0402</td><td>Bulgarian - Bulgaria</td></tr>
+<tr><td>en-GB</td><td>0x0809</td><td>English - United Kingdom</td></tr>
+<tr><td>fr-FR</td><td>0x040C</td><td>French - France</td></tr>
+<tr><td>es-ES</td><td>0x0C0A</td><td>Spanish - Spain</td></tr>
+</table>
 
 ## RegionInfo
 

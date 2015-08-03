@@ -38,40 +38,40 @@ Use the the following properties to modify title appearance and functionality:
 *  __FastNavigationNextImage__ - gets or sets the image that is displayed for the fast next navigation control 
 
 
-*  __FastNavigationNextText -__gets or sets the text that is displayed for the fast next navigation control 
+*  __FastNavigationNextText__ - gets or sets the text that is displayed for the fast next navigation control 
 
 
-* __FastNavigationNextToolTip -__ gets or sets the tool tip that is displayed for the fast next navigation control 
+* __FastNavigationNextToolTip__ - gets or sets the tool tip that is displayed for the fast next navigation control 
 
 
-* __FastNavigationPrevImage -__ gets or sets the image that is displayed for the fast previous navigation control 
+* __FastNavigationPrevImage__ - gets or sets the image that is displayed for the fast previous navigation control 
 
 
-* __FastNavigationPrevText -__ gets or sets the text that is displayed for the fast previous navigation control 
+* __FastNavigationPrevText__ - gets or sets the text that is displayed for the fast previous navigation control 
 
 
-* __FastNavigationPrevToolTip -__ gets or sets the tool tip that is displayed for the fast previous navigation control 
+* __FastNavigationPrevToolTip__ - gets or sets the tool tip that is displayed for the fast previous navigation control 
 
 
-* __NavigationNextImage -__ gets or sets the image that is displayed for the navigation next  control 
+* __NavigationNextImage__ - gets or sets the image that is displayed for the navigation next  control 
 
 
-* __NavigationNextText -__gets or sets the text that is displayed for the navigation  next  control 
+* __NavigationNextText__ - gets or sets the text that is displayed for the navigation  next  control 
 
 
-* __NavigationNextToolTip -__gets or sets the tool tip that is displayed for the navigation next  control 
+* __NavigationNextToolTip__ - gets or sets the tool tip that is displayed for the navigation next  control 
 
 
-* __NavigationPrevImage -__ gets or sets the image that is displayed for the navigation previous control 
+* __NavigationPrevImage__ - gets or sets the image that is displayed for the navigation previous control 
 
 
-* __NavigationPrevText -__ gets or sets the text that is displayed for the navigation previous rev control 
+* __NavigationPrevText__ - gets or sets the text that is displayed for the navigation previous rev control 
 
 
-* __NavigationPrevToolTip -__ gets or sets the tool tip that is displayed for the navigation previous control 
+* __NavigationPrevToolTip__ - gets or sets the tool tip that is displayed for the navigation previous control 
 
 
-* __FastNavigationStep -__ gets or sets the number of views that will be scrolled when the user clicks on a fast navigation link
+* __FastNavigationStep__ - gets or sets the number of views that will be scrolled when the user clicks on a fast navigation link
 
 ## Title Properties
 

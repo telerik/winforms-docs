@@ -19,8 +19,7 @@ position: 6
 | ------ | ------ | ------ |
 |![calendar-customizing-behavior-keyboard-navigation 001](images/calendar-customizing-behavior-keyboard-navigation001.png)|PgUp key|Navigate to previous view|
 |![calendar-customizing-behavior-keyboard-navigation 002](images/calendar-customizing-behavior-keyboard-navigation002.png)|PgDown key|Navigate to next view|
-|![calendar-customizing-behavior-keyboard-navigation 003](images/calendar-customizing-behavior-keyboard-navigation003.png)|Up arrow key|Navigate to the previous week but preserving the day of the week. If the previous date is part of the previous month the calendar view changes to 
-                previous month.|
+|![calendar-customizing-behavior-keyboard-navigation 003](images/calendar-customizing-behavior-keyboard-navigation003.png)|Up arrow key|Navigate to the previous week but preserving the day of the week. If the previous date is part of the previous month the calendar view changes to previous month.|
 |![calendar-customizing-behavior-keyboard-navigation 004](images/calendar-customizing-behavior-keyboard-navigation004.png)|Down arrow key|Navigate to the next week but preserving the day of the week. If the next date is part of the next month the calendar view changes to next month.|
 |![calendar-customizing-behavior-keyboard-navigation 005](images/calendar-customizing-behavior-keyboard-navigation005.png)|Left arrow key|Navigate to the previous day. If the previous day is part of the previous month the calendar view changes to previous month.|
 |![calendar-customizing-behavior-keyboard-navigation 006](images/calendar-customizing-behavior-keyboard-navigation006.png)|Right arrow  key|Navigate to the next day. If the next day is part of the next month the calendar view changes to next month.|

@@ -16,7 +16,7 @@ position: 0
 
 __RadCalendar__ can be fully styled through the __Visual Style Builder__. 
 
-Every visual element is inherited from the __CalendarVisualElement.__Some of the most important properties are:
+Every visual element is inherited from the __CalendarVisualElement__. Some of the most important properties are:
 
 1. __BackColor__ - Gets or sets the back color which will be used in the gradient fill. 
 
@@ -64,7 +64,7 @@ Every visual element is inherited from the __CalendarVisualElement.__Some of the
 
 The __CalendarTableElement__ corresponds to a single month view in __RadCalendar__. The __CalendarTableElement__ is the container of RadCalendar cells that represent the days of the month.  
 
-Each day is represented by an instance of __CalendarCellElement.__The logical states of the day are embodied in the __CalendarCellElement__properties shown below. 
+Each day is represented by an instance of __CalendarCellElement__. The logical states of the day are embodied in the __CalendarCellElement__ properties shown below. 
 
 1. __WeekEnd -__ Indicates that the visual element is representing a week end day. 
 
