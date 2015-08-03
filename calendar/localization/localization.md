@@ -1,11 +1,11 @@
 ---
-title: Localization
+title: Overview
 page_title: Localization | UI for WinForms Documentation
 description: Localization
 slug: winforms/calendar/localization
 tags: localization
 published: True
-position: 7
+position: 0
 ---
 
 # Localization

@@ -5,7 +5,7 @@ description: Calendar Structure
 slug: winforms/calendar/calendar-structure
 tags: calendar,structure
 published: True
-position: 0
+position: 1
 ---
 
 # Calendar Structure
@@ -29,8 +29,8 @@ Most aspects of the calendar can be styled and the behavior customized to suit y
 
 1. __Row/Column Headers__ - when the __ShowRowHeaders__ and/or __ShowColumnHeaders__ properties are set to __true__, you can select a whole row/column of dates by clicking on the respective day/week button. To automatically display the day names and week numbers you need to also set the __AllowColumnHeaderSelectors__ properties to __true.__
 
-1. __View Selector__: Allows the user to select all cells in the current month. If multiple months are being displayed at one time, there will be one view selector per month. The visibility and behavior of this element is controlled by the __ShowViewSelector__and __AllowViewSelector__properties.
+1. __View Selector__: Allows the user to select all cells in the current month. If multiple months are being displayed at one time, there will be one view selector per month. The visibility and behavior of this element is controlled by the __ShowViewSelector__ and __AllowViewSelector__ properties.
 
-1. __StatusBar (Footer):__This is the area below the Main Calendar Area. It is often used for visual customization or for displaying additional information about the selected item. 
+1. __StatusBar (Footer):__ This is the area below the Main Calendar Area. It is often used for visual customization or for displaying additional information about the selected item. 
 
 1. __Fast Navigation Popup:__ Displays a popup window with the months and years surrounding the selected date (not visible on the screenshot)

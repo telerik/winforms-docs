@@ -86,7 +86,8 @@ Run the application. Notice the three selected and the highlighted special day. 
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Using RadCalendar for WinForms](http://tv.telerik.com/winforms/radcalendar/using-radcalendar-for-winforms)In this video, you'll get an overview of using RadCalendar for WinForms; configuring important properties; using Special Days and Selected Days; styling; responding to Events with style changes. (Runtime: 10:23)|
+|[Using RadCalendar for WinForms](http://tv.telerik.com/winforms/radcalendar/using-radcalendar-for-winforms) In this video, you'll get an overview of using RadCalendar for WinForms; configuring important properties; using Special Days and Selected Days; styling; responding to Events with style changes. (Runtime: 10:23)|![calendar-getting-started 005](images/calendar-getting-started005.png)|
+
 >caption 
 
-![calendar-getting-started 005](images/calendar-getting-started005.png)|
+

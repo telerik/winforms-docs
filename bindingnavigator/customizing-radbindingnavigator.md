@@ -5,7 +5,7 @@ description: Customizing RadBindingNavigator
 slug: winforms/bindingnavigator/customizing-radbindingnavigator-
 tags: customizing,radbindingnavigator,
 published: True
-position: 1
+position: 2
 ---
 
 # Customizing RadBindingNavigator 
@@ -14,15 +14,8 @@ position: 1
 
 ## 
 
-Each of the control's elements can be accessed and customized. Once you access the desired elements,
-          you can tweak its properties in order to modify it. In this tutorial, we will take a look at code snippet,
-          demonstrating how to add a button in the __RadBindingNavigator__ :
-        #_[C#] _
-
-	
-
-
-
+Each of the control's elements can be accessed and customized. Once you access the desired elements, you can tweak its properties in order to modify it. In this tutorial, we will take a look at code snippet, demonstrating how to add a button in the __RadBindingNavigator__ :
+        
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadBindingNavigatorForm.cs region=custradBindingNavigator1}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadBindingNavigatorForm.vb region=custradBindingNavigator1}} 
 

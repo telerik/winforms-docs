@@ -33,7 +33,7 @@ A purchased license of the Telerik UI for WinForms suite includes a run time roy
 
 * Open source products.
 
-For further details, please refer to the [license agreement]({%slug licensing-license-agreement%}), or send e-mail to <a href="mailto:sales@telerik.com?subject=Redistributing Telerik UI for WinForms">sales@telerik.com</a> to discuss your planned use of the controls.
+For further details, please refer to the [license agreement]({%slug winforms/licensing/license-agreement%}), or send e-mail to <a href="mailto:sales@telerik.com?subject=Redistributing Telerik UI for WinForms">sales@telerik.com</a> to discuss your planned use of the controls.
         
 
 ## ILMerge Telerik WinForms assemblies
