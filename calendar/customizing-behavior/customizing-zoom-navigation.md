@@ -14,13 +14,7 @@ position: 4
 
 ## 
 
-This article will guide you through the process of creating a month-year picker. For this purpose, it is necessary to set the __HeaderNavigationMode__
-        property to HeaderNavigationMode.*Zoom* and set the __ZoomLevel__ property to ZoomLevel.*Months*. 
-        This will allow the user to select a specific __CalendarCellElement__ and navigate upwards/downwards in the __RadCalendar__ similar to Windows calendar. #_[C#]_
-
-	
-
-
+This article will guide you through the process of creating a month-year picker. For this purpose, it is necessary to set the __HeaderNavigationMode__ property to HeaderNavigationMode.*Zoom* and set the __ZoomLevel__ property to ZoomLevel.*Months*. This will allow the user to select a specific __CalendarCellElement__ and navigate upwards/downwards in the __RadCalendar__ similar to Windows calendar. 
 
 {{source=..\SamplesCS\Calendar\Calendar1.cs region=monthYearPicker}} 
 {{source=..\SamplesVB\Calendar\Calendar1.vb region=monthYearPicker}} 
@@ -68,12 +62,8 @@ This article will guide you through the process of creating a month-year picker.
 ````
 
 {{endregion}} 
-
-
-
-
-In addition, you should subscribe to the __ZoomChanging__ event and stop navigation from the currently selected month to its days
-        representation and from a year to a range of years.#_[C#]_
+ 
+In addition, you should subscribe to the __ZoomChanging__ event and stop navigation from the currently selected month to its days representation and from a year to a range of years.#_[C#]_
 
 	
 

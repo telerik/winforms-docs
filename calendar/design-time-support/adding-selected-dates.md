@@ -14,7 +14,7 @@ position: 0
 
 ## 
 
-Click the ellipses in the Property Window to edit the __SelecteDates DateTime__collection at design-time. 
+Click the ellipses in the Property Window to edit the __SelecteDates DateTime__ collection at design-time. 
 
 * Use the Add button to add a DateTime value to the collection.
             
@@ -32,4 +32,5 @@ Click the ellipses in the Property Window to edit the __SelecteDates DateTime__c
 
 >note If you close the DateTime Collection Editor, reopen and see that only the last date has persisted in the collection, verify that __AllowMultipleSelect__ is set to true. If __AllowMultipleSelect__ is false the expected behavior is that only the last date in the collection is used.
 >
+
 ![calendar-design-time-support-adding-selected-dates 001](images/calendar-design-time-support-adding-selected-dates001.png)

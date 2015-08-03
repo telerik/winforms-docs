@@ -14,16 +14,15 @@ position: 1
 
 ## 
 
-RadCalendar can be configured to show more than one month in the calendar area. To enable this functionality set the __AllowMultipleView__ property to true, then set integer properties __MultiViewColumns__and __MultiViewRows__to the number of calendar month views you wish to have displayed.____The position of the month view that contains the selected date is controlled by the __CurrentViewRow__ and __CurrentViewColumn__ properties.
+RadCalendar can be configured to show more than one month in the calendar area. To enable this functionality set the __AllowMultipleView__ property to true, then set integer properties __MultiViewColumns__ and __MultiViewRows__ to the number of calendar month views you wish to have displayed. The position of the month view that contains the selected date is controlled by the __CurrentViewRow__ and __CurrentViewColumn__ properties.
 
 ![calendar-customizing-behavior-customizing-multi-view-mode 001](images/calendar-customizing-behavior-customizing-multi-view-mode001.png)
 
 The code sample below shows how multiple views can be configured and positioned.Here the CurrentViewRow and CurrentViewColumn are set to zero, i.e. that is the first row and column. The selected date is shown in the upper left month view. 
 
-![calendar-customizing-behavior-customizing-multi-view-mode 002](images/calendar-customizing-behavior-customizing-multi-view-mode002.png)#_[C#] Configuring multiple views_
+![calendar-customizing-behavior-customizing-multi-view-mode 002](images/calendar-customizing-behavior-customizing-multi-view-mode002.png)
 
-	
-
+__Configuring multiple views__
 
 
 {{source=..\SamplesCS\Calendar\MultiViewCalendar.cs region=multiView}} 

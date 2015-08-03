@@ -14,18 +14,12 @@ position: 0
 
 ## 
 
-RadCalendar supports row and column headers that can be enabled by setting the ShowRowHeaders,
-      ShowColumnHeaders and ShowViewSelector properties:
+RadCalendar supports row and column headers that can be enabled by setting the ShowRowHeaders, ShowColumnHeaders and ShowViewSelector properties:
        
 
 ![calendar-customizing-behavior-column-and-row-headers 001](images/calendar-customizing-behavior-column-and-row-headers001.png)
 
-#_[C#]_
-
-	
-
-
-
+ 
 {{source=..\SamplesCS\Calendar\ColumnRowHeaders.cs region=showingHeaders}} 
 {{source=..\SamplesVB\Calendar\ColumnRowHeaders.vb region=showingHeaders}} 
 
@@ -46,14 +40,7 @@ RadCalendar supports row and column headers that can be enabled by setting the S
 
 
 
-These headers can be used as selectors which               
-        which allow you to quickly select groups of days in multi-select mode. The View
-        Selector allows you to select the whole month view at once.
-
-#_[C#]_
-
-	
-
+These headers can be used as selectors which allow you to quickly select groups of days in multi-select mode. The View Selector allows you to select the whole month view at once.
 
 
 {{source=..\SamplesCS\Calendar\ColumnRowHeaders.cs region=allowMultiSelect}} 

@@ -26,12 +26,7 @@ To localize RadCalendar to display control text and messages in a specific langu
 ## 
 
 Below is a sample implementation of an English localization provider:
-        #_[C#]_
-
-	
-
-
-
+        
 {{source=..\SamplesCS\Calendar\Localization\LocalizationProvider.cs region=Localization}} 
 {{source=..\SamplesVB\Calendar\Localization\LocalizationProvider.vb region=Localization}} 
 
@@ -70,15 +65,8 @@ End Class
 ````
 
 {{endregion}} 
-
-
-
-
-To apply the custom localization provider, instantiate and assign it to the current localization provider: #_[C#]_
-
-	
-
-
+ 
+To apply the custom localization provider, instantiate and assign it to the current localization provider:  
 
 {{source=..\SamplesCS\Calendar\Localization\LocalizationProvider.cs region=Usage}} 
 {{source=..\SamplesVB\Calendar\Localization\LocalizationProvider.vb region=Usage}} 
