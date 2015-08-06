@@ -10,8 +10,6 @@ position: 1
 
 # Working with Recurring Appointments
 
-
-
 ## Overview
 
 RadScheduler includes support for recurring events on minutely, hourly, weekly, daily, monthly and yearly basis. __Exceptions__ to the recurrence rules are also permitted. To support this recurrence behavior, the __IEvent__ interface (which the __Appointment__ class implements) includes the __RecurrenceRule__, __MasterEvent__, __Occurrences__ and __Exceptions__ properties. When an appointment is assigned a recurrence rule it becomes a recurring appointment.
@@ -33,17 +31,10 @@ The __RecurrenceRule__ class is the engine for creating and evaluating recurrenc
 * YearlyRecurrenceRule
 
 Using the specialized classes makes it easier to define recurrence rules because only relevant parameters are specified in their constructors.
-		
 
 ## Recurring Appointments
 
-One of several constructor overloads lets you set the start time, duration and number of occurences. Then the rule can be assigned
-        to the appointments __RecurrenceRule__ property. The snippet below defines a rule that starts "now" and recurs every 
-        two hours and stops after the tenth occurence. #_[C#] Adding a RecurrenceRule_
-
-	
-
-
+One of several constructor overloads lets you set the start time, duration and number of occurences. Then the rule can be assigned to the appointments __RecurrenceRule__ property. The snippet below defines a rule that starts "now" and recurs every two hours and stops after the tenth occurence.
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\RecurringAppointments.cs region=addingRecRule}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=addingRecRule}} 
@@ -58,16 +49,7 @@ One of several constructor overloads lets you set the start time, duration and n
 
 {{endregion}} 
 
-
-
-
-The Appointment __Occurrences__ property lets you iterate a list of __IEvent__ instances. 
-        To get only some occurrences between specific starting and stopping times, use the Appointment __GetOccurrences()__
-          method.#_[C#] Iterating occurrences_
-
-	
-
-
+The Appointment __Occurrences__ property lets you iterate a list of __IEvent__ instances. To get only some occurrences between specific starting and stopping times, use the Appointment __GetOccurrences()__ method.
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\RecurringAppointments.cs region=iterating}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=iterating}} 
@@ -103,17 +85,7 @@ The Appointment __Occurrences__ property lets you iterate a list of __IEvent__ i
 
 {{endregion}} 
 
-
-
-
-When the user changes a specific occurrence and not the entire series, an "Exception" is created. "Exceptions" in this context refer 
-        to "Exceptions to a rule", not the .NET Exception class related to error handling. You can create exceptions programmatically by adding to 
-        the IEvent __MasterEvent.Exceptions__ collection. The snippet below changes the background and status of an IEvent 
-        instance and adds the IEvent to its own MasterEvent Exceptions collection.#_[C#] Adding rule exceptions_
-
-	
-
-
+When the user changes a specific occurrence and not the entire series, an "Exception" is created. "Exceptions" in this context refer to "Exceptions to a rule", not the .NET Exception class related to error handling. You can create exceptions programmatically by adding to the IEvent __MasterEvent.Exceptions__ collection. The snippet below changes the background and status of an IEvent instance and adds the IEvent to its own MasterEvent Exceptions collection.
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\RecurringAppointments.cs region=addingExceptions}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=addingExceptions}} 
@@ -132,16 +104,9 @@ When the user changes a specific occurrence and not the entire series, an "Excep
 
 {{endregion}} 
 
-
-
-
 ## Examples
 
-Here is an example using the __HourlyRecurrenceRule__ class:#_[C#]_
-
-	
-
-
+Here is an example using the __HourlyRecurrenceRule__ class:
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\RecurringAppointments.cs region=console}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=console}} 
@@ -198,12 +163,6 @@ Here is an example using the __HourlyRecurrenceRule__ class:#_[C#]_
 
 {{endregion}} 
 
-
-
-
-The __Occurrences__ property of the __Appointment__ class returns an enumerator that can 
-        be used to retrieve all the occurrences defined by the rule. Similarly the __GetOccurrences__ method of the 
-          __Appointment__ class can be used to retrieve all occurrences in a given interval. The example above produces 
-          the following output:
+The __Occurrences__ property of the __Appointment__ class returns an enumerator that can be used to retrieve all the occurrences defined by the rule. Similarly the __GetOccurrences__ method of the __Appointment__ class can be used to retrieve all occurrences in a given interval. The example above produces the following output:
 
 ![scheduler-appointments-and-dialogs-working-with-recurring-appointments 001](images/scheduler-appointments-and-dialogs-working-with-recurring-appointments001.jpg)

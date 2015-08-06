@@ -14,13 +14,10 @@ position: 0
 
 ## 
 
-The control is shipped with a rich set of themes that allow you to easily build slick interfaces with the look-and-feel of 
-          Windows, Office, Outlook, etc. The themes can be easily switched using a single property:
+The control is shipped with a rich set of themes that allow you to easily build slick interfaces with the look-and-feel of Windows, Office, Outlook, etc. The themes can be easily switched using a single property:
         
-        
-
-
-
+| Themes appearance |  |
+| ------ | ------ |
 |VisualStudio2012Dark![scheduler-appearance-themes-and-appearance 001](images/scheduler-appearance-themes-and-appearance001.png)|Office2013Light![scheduler-appearance-themes-and-appearance 002](images/scheduler-appearance-themes-and-appearance002.png)|
 |Breeze![scheduler-appearance-themes-and-appearance 003](images/scheduler-appearance-themes-and-appearance003.png)|Windows 7![scheduler-appearance-themes-and-appearance 004](images/scheduler-appearance-themes-and-appearance004.png)|
 |Aqua![scheduler-appearance-themes-and-appearance 005](images/scheduler-appearance-themes-and-appearance005.png)|TelerikMetroBlue![scheduler-appearance-themes-and-appearance 006](images/scheduler-appearance-themes-and-appearance006.png)|

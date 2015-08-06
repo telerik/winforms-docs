@@ -12,22 +12,17 @@ position: 0
 
 
 
-__RadScheduler__ gives you the ability to easily customize its default context menu. This can be achieve by using the 
-        __ContextMenuOppennig__ event.
-      ![scheduler-context-menu-customize-context-menu 001](images/scheduler-context-menu-customize-context-menu001.png)
+__RadScheduler__ gives you the ability to easily customize its default context menu. This can be achieve by using the __ContextMenuOppennig__ event.
+
+![scheduler-context-menu-customize-context-menu 001](images/scheduler-context-menu-customize-context-menu001.png)
 
 ## Replace the default and the appointments context menu.
 
-1. Create a __RadContextMenu__ and add the necessary items to it. Create another __RadContextMenu__ 
-            and fill it with items.
+1. Create a __RadContextMenu__ and add the necessary items to it. Create another __RadContextMenu__ and fill it with items.
 
 1. Subscribe to the __ContextMenuOpening__ event.
 
-1. In the __ContextMenuOpenning__ event handler replace the default context menus with the newly created ones.#_[C#]_
-
-	
-
-
+1. In the __ContextMenuOpenning__ event handler replace the default context menus with the newly created ones.
 
 {{source=..\SamplesCS\Scheduler\CustomizeContextMenu.cs region=contextMenuOpening}} 
 {{source=..\SamplesVB\Scheduler\CustomizeContextMenu.vb region=contextMenuOpening}} 
@@ -59,20 +54,15 @@ __RadScheduler__ gives you the ability to easily customize its default context m
 {{endregion}} 
 
 
+As you can see in the screenshots below, we can set different context menus depending on the element that invokes the context menu creation.
 
+![scheduler-context-menu-customize-context-menu 002](images/scheduler-context-menu-customize-context-menu002.png)
 
-As you can see in the screenshots below, we can set different context menus depending on the element that invokes the context menu creation.![scheduler-context-menu-customize-context-menu 002](images/scheduler-context-menu-customize-context-menu002.png)![scheduler-context-menu-customize-context-menu 003](images/scheduler-context-menu-customize-context-menu003.png)
+![scheduler-context-menu-customize-context-menu 003](images/scheduler-context-menu-customize-context-menu003.png)
 
 ## Change the default items or and disable the context menu.
 
-The __Menu__ property of the __SchedulerContextMenuOpeningEventArgs__ objects gives you the opportunity to change the existing
-        items of the context menu. Also you can entirely disable the context menu by setting the *Cancel*  property to true. 
-        For example you can change the context menu for the appointments and disable the default context menu as follows:
-      #_[C#]_
-
-	
-
-
+The __Menu__ property of the __SchedulerContextMenuOpeningEventArgs__ objects gives you the opportunity to change the existing items of the context menu. Also you can entirely disable the context menu by setting the *Cancel*  property to true.  For example you can change the context menu for the appointments and disable the default context menu as follows:
 
 {{source=..\SamplesCS\Scheduler\CustomizeContextMenu.cs region=contextMenuOpening1}} 
 {{source=..\SamplesVB\Scheduler\CustomizeContextMenu.vb region=contextMenuOpening1}} 

@@ -10,30 +10,20 @@ position: 2
 
 # Formatting appointments
 
-
-
-## 
-
+##
 Appointments appearance in __RadScheduler__ can be customized using the __AppointmentFormatting__ event.
 
->note Appointment elements are created only for the currently visible cells and are being reused when scrolling or navigating backwards/forwards in the __RadScheduler__ .
-          In order to prevent applying the formatting to other appointment elements, all styles should be reset for the rest of the appointment elements.
+>note Appointment elements are created only for the currently visible cells and are being reused when scrolling or navigating backwards/forwards in the __RadScheduler__ . In order to prevent applying the formatting to other appointment elements, all styles should be reset for the rest of the appointment elements.
 >
 
 
 The code snippet below demonstrates how to change the font, fore color, border color and text alignment for the selected appointment element:#_[C#] _
 
-	
-
-
-
 {{source=..\SamplesCS\Scheduler\Appearance\FormattingAppointments.cs region=AppointmentFormatting}} 
 {{source=..\SamplesVB\Scheduler\Appearance\FormattingAppointments.vb region=AppointmentFormatting}} 
 
 ````C#
-        
         Font font = new Font("Verdana", 10f, FontStyle.Bold);
-            
         private void radScheduler1_AppointmentFormatting(object sender, Telerik.WinControls.UI.SchedulerAppointmentEventArgs e)
         {
             if (e.AppointmentElement.Selected)
@@ -83,17 +73,10 @@ The code snippet below demonstrates how to change the font, fore color, border c
     End Sub
 ````
 
-{{endregion}} 
-
-
+{{endregion}}
 ![scheduler-appearance-formatting-appointments 001](images/scheduler-appearance-formatting-appointments001.png)
 
-It is possible to change the appointments’ shape setting the SchedulerElement.__AppointmentShape__ property to the desired shape.
-        Changing the __AppointmentShape__ will also change the shape of the shadow and the appointment type indicator (tentative/busy).#_[C#] _
-
-	
-
-
+It is possible to change the appointments’ shape setting the SchedulerElement.__AppointmentShape__ property to the desired shape. Changing the __AppointmentShape__ will also change the shape of the shadow and the appointment type indicator (tentative/busy).#_[C#] _
 
 {{source=..\SamplesCS\Scheduler\Appearance\FormattingAppointments.cs region=AppointmentShape}} 
 {{source=..\SamplesVB\Scheduler\Appearance\FormattingAppointments.vb region=AppointmentShape}} 

@@ -10,22 +10,14 @@ position: 6
 
 # Binding to Custom Fields
 
-
-
 ## 
 
-RadScheduler has full support for binding to custom fields i.e. RadScheduler can be bound to an email field in your data source. The process
-        consists of five steps:
+RadScheduler has full support for binding to custom fields i.e. RadScheduler can be bound to an email field in your data source. The process consists of five steps:
       
 
 1. Add your custom field to your data source.
 
 1. Add a custom appointment class that stores this additional data. Note: *The easiest way to do that is to inherit from the Appointment class that RadScheduler uses by default*.
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.cs region=appWithMail}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.vb region=appWithMail}} 
@@ -80,16 +72,9 @@ End Class
 
 {{endregion}} 
 
-
-
-
-1. Implement a simple appointment factory and inherit from the default appointment dialog and add some input controls and logic for your custom field.
-              The easiest way to do the latter is to create a form in Visual Studio that inherits from the standard *Edit Appointment *dialog, then open it in the designer, and add your custom UI. The extended form from the example is shown on the screenshot below (notice the Email field on it):
-             ![scheduler-data-binding-binding-to-custom-fields 001](images/scheduler-data-binding-binding-to-custom-fields001.png)#_[C#]_
-
-	
-
-
+1. Implement a simple appointment factory and inherit from the default appointment dialog and add some input controls and logic for your custom field. The easiest way to do the latter is to create a form in Visual Studio that inherits from the standard *Edit Appointment *dialog, then open it in the designer, and add your custom UI. The extended form from the example is shown on the screenshot below (notice the Email field on it):
+2. 
+3.  ![scheduler-data-binding-binding-to-custom-fields 001](images/scheduler-data-binding-binding-to-custom-fields001.png)
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.cs region=customAppFactory}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.vb region=customAppFactory}} 
@@ -116,12 +101,6 @@ End Class
 ````
 
 {{endregion}} 
-
-
-#_[C#]_
-
-	
-
 
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.cs region=customAppEditForm}} 
@@ -197,15 +176,9 @@ End Class
 
 Note that the inherits clause in VB is in the form designer#_[VB.NET]_
 
-	
-
-
-
 1. You should assign the custom AppointmentFactory to RadScheduler:
                 
-
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.Designer.vb region=inheritsInVB}} 
-
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=customFactory}} 
 ````C#
             this.radScheduler1.AppointmentFactory = new CustomAppointmentFactory();
@@ -219,19 +192,11 @@ Partial Class CustomAppointmentEditForm
 
 {{endregion}} 
 
-
-#_[VB.NET]_
-
-	
-
-
-
 1. You need to handle the AppointmentEditDialogShowing event of RadScheduler in order to replace the default appointment dialog with a custom one. You will also have to
               give an instance of your appointment factory to the RadScheduler so it can create instances of your custom appointment class:
             
 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=customFactory}} 
-
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=loadAndShowing}} 
 ````C#
         private IEditAppointmentDialog appointmentDialog = null;  
@@ -259,18 +224,9 @@ Partial Class CustomAppointmentEditForm
 
 {{endregion}} 
 
-
-#_[VB.NET]_
-
-	
-
-
-
 1. Finally, you have to add a mapping for your custom field to the appointment mapping info. Note that the same appointment factory instance is assigned to the event provider.
             
-
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=loadAndShowing}} 
-
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=mappings}} 
 ````C#
             SchedulerBindingDataSource dataSource = new SchedulerBindingDataSource(); 
@@ -297,10 +253,5 @@ Partial Class CustomAppointmentEditForm
 ````
 
 {{endregion}} 
-
-
-#_[VB.NET]_
-
-	
 
 
