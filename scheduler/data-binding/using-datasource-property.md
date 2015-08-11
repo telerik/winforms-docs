@@ -10,8 +10,6 @@ position: 3
 
 # Using DataSource property
 
-
-
 ## 
 
 RadScheduler's __DataSource__ property lets you bind to objects that inherit the base abstract __SchedulerDataSource__ class. The __SchedulerBindingDataSource__ implementation of SchedulerdataSource binds traditional data stores like lists of business objects and database tables. You can find the SchedulerBindingDataSource component in the Toolbox.
@@ -34,24 +32,15 @@ Here's a dataset design view for the SchedulerData.mdf database file that ships 
 
 The foreign key relationship between "TransientAppointmentsResources" and the "Appointments" table will also be defined in the AppointmentMappingInfo object.![scheduler-data-binding-using-datasource-property 002](images/scheduler-data-binding-using-datasource-property002.png)
 
->note You can find SchedulerData.mdb (Access) in the installation directory under \Examples\QuickStart\DataSources.
-            You can find SchedulerData.mdf (MS SQL database file)[here](http://www.telerik.com/docs/default-source/ui-for-winforms/schedulerdatasql.zip)
+>note You can find SchedulerData.mdb (Access) in the installation directory under \Examples\QuickStart\DataSources. You can find SchedulerData.mdf (MS SQL database file) [here](http://www.telerik.com/docs/default-source/ui-for-winforms/schedulerdatasql.zip)
 >
 
-
 Here's some example code that demonstrates loading the AppointmentMappingInfo fields with column names in a database table. The __Resources__ property is assigned the name of the foreign key that joins the Appointments and the "join table' that sits between the appointments and resources table. The __ResourceID__ property is assigned to the column in the "join table" of a unique resource identifier.
-        
 
 RadScheduler works from a provider model so that in the future, custom appointment and resource providers can be plugged in to replace the built-in providers. The AppointmentMappingInfo is assigned to the __Mapping__ property of the schedulers datasource event provider. Review the code below to see how this is done when binding to a database tables.
-        
 
 >note The __Exceptions__ and __Resources__ properties in the __AppointmentMappingInfo__ should be set to the names of the relations that are represented in the dataset.
 >
-#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\DataBinding\UsingDataSourceProperty.cs region=creatingAppointment}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\UsingDataSourceProperty.vb region=creatingAppointment}} 

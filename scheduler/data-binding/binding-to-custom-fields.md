@@ -72,9 +72,9 @@ End Class
 
 {{endregion}} 
 
-1. Implement a simple appointment factory and inherit from the default appointment dialog and add some input controls and logic for your custom field. The easiest way to do the latter is to create a form in Visual Studio that inherits from the standard *Edit Appointment *dialog, then open it in the designer, and add your custom UI. The extended form from the example is shown on the screenshot below (notice the Email field on it):
-2. 
-3.  ![scheduler-data-binding-binding-to-custom-fields 001](images/scheduler-data-binding-binding-to-custom-fields001.png)
+2\. Implement a simple appointment factory and inherit from the default appointment dialog and add some input controls and logic for your custom field. The easiest way to do the latter is to create a form in Visual Studio that inherits from the standard *Edit Appointment *dialog, then open it in the designer, and add your custom UI. The extended form from the example is shown on the screenshot below (notice the Email field on it):
+
+3\.  ![scheduler-data-binding-binding-to-custom-fields 001](images/scheduler-data-binding-binding-to-custom-fields001.png)
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.cs region=customAppFactory}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.vb region=customAppFactory}} 
@@ -176,7 +176,7 @@ End Class
 
 Note that the inherits clause in VB is in the form designer#_[VB.NET]_
 
-1. You should assign the custom AppointmentFactory to RadScheduler:
+4\. You should assign the custom AppointmentFactory to RadScheduler:
                 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.Designer.vb region=inheritsInVB}} 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=customFactory}} 
@@ -224,7 +224,7 @@ Partial Class CustomAppointmentEditForm
 
 {{endregion}} 
 
-1. Finally, you have to add a mapping for your custom field to the appointment mapping info. Note that the same appointment factory instance is assigned to the event provider.
+5\. Finally, you have to add a mapping for your custom field to the appointment mapping info. Note that the same appointment factory instance is assigned to the event provider.
             
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=loadAndShowing}} 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=mappings}} 

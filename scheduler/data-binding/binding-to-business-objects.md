@@ -14,7 +14,7 @@ What if your scheduling data originates from somewhere other than an easily acce
 
 Binding to objects follows the same basic pattern as binding to database tables. You must assign a collection of objects to an instance of SchedulerBindingDataSource. You also need to define mappings so that the appointment data expected in the scheduler (Start, End, Subject, etc.) is satisfied by specific properties in the bound objects.
 
-The code below is an example appointment. Keep in mind that the particular construction of the CustomAppointment class and the names of its properties are arbitrary. The mappings will decide where properties are used. Notice that the object implements the __INotifyPropertyChanged__ interface. Without this interface implementation the populated appointment object data will not show up in the scheduler.#_[C#] Sample appointment class_
+The code below is an example appointment. Keep in mind that the particular construction of the CustomAppointment class and the names of its properties are arbitrary. The mappings will decide where properties are used. Notice that the object implements the __INotifyPropertyChanged__ interface. Without this interface implementation the populated appointment object data will not show up in the scheduler.
 
 {{source=..\SamplesCS\Scheduler\DataBinding\CustomAppointment.cs region=customAppointment}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\CustomAppointment.vb region=customAppointment}} 
@@ -285,10 +285,7 @@ Public Class CustomAppointment
 
 {{endregion}} 
 
-
-
-
-To use your custom object, create CustomAppointment instances and place them in a generic list before mapping and binding to the SchedulerBindingDataSource component.#_[C#] Binding to a list of business objects_
+To use your custom object, create CustomAppointment instances and place them in a generic list before mapping and binding to the SchedulerBindingDataSource component.
 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=bindingToList}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=bindingToList}} 
@@ -451,16 +448,13 @@ To use your custom object, create CustomAppointment instances and place them in 
 
 {{endregion}} 
 
-
-
-
 When the application is run, a series of CustomAppointment objects show up in the scheduler.
 
 ![scheduler-data-binding-binding-to-business-objects 001](images/scheduler-data-binding-binding-to-business-objects001.png)
 
 ## Grouping by resources
 
-To use grouping by resource in this scenario, first you will need to create the business object that represents the resources:#_[C#] Create the resource object_
+To use grouping by resource in this scenario, first you will need to create the business object that represents the resources:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=create the resource object}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=create the resource object}} 
@@ -553,7 +547,7 @@ End Class
 
 {{endregion}} 
 
-Now we need to bind the __ResourceProvider__ of __SchedulerBindingDataSource__ to a collection of __CustomResource__ objects:#_[C#] Bind the ResourceProvider_
+Now we need to bind the __ResourceProvider__ of __SchedulerBindingDataSource__ to a collection of __CustomResource__ objects:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=bind the resource provider}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=bind the resource provider}} 
@@ -871,7 +865,7 @@ To map the new property, add the following setting to your __AppointmentMappingI
 
 {{endregion}} 
 
-To test this scenario, assign each appointment with a __ResourceId__ and enable grouping by setting RadScheduler’s __GroupType__ property:#_[C#] _
+To test this scenario, assign each appointment with a __ResourceId__ and enable grouping by setting RadScheduler’s __GroupType__ property:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=OneToMany3}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=OneToMany3}} 
@@ -976,7 +970,7 @@ In the __AppointmentMappingInfo__ settings the __ResourceId__ property should be
 
 {{endregion}} 
 
-Now we can add a resource to an appointment by adding its id in the __Resources__ collection of our business objects:#_[C#] _
+Now we can add a resource to an appointment by adding its id in the __Resources__ collection of our business objects:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=ManyToMany2}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=ManyToMany2}} 

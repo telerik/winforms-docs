@@ -10,25 +10,13 @@ position: 4
 
 # Using a Data Provider
 
-
-
 RadScheduler uses the Provider Design Pattern to allow for easy integration into existing applications. This allows to connect to various data sources. 
-		
 
-You can use one of the scheduler data source components supplied with RadScheduler or implement your own if you have more specific data binding needs. Each scheduler data source inherits from the __SchedulerDataSource__ abstract class and contains two providers – one for the appointment data and one for the resource data.
-		To bind RadScheduler to a provider, set its DataSource property to e specific scheduler data source. 
-		
+You can use one of the scheduler data source components supplied with RadScheduler or implement your own if you have more specific data binding needs. Each scheduler data source inherits from the __SchedulerDataSource__ abstract class and contains two providers – one for the appointment data and one for the resource data. To bind RadScheduler to a provider, set its DataSource property to e specific scheduler data source. 
 
 ## Example
 
-This example shows how to bind RadScheduler to a collection of custom objects that contain appointment data using the __SchedulerBindingDataSource__component. This data source component allows binding to a collection of objects and can be used to bind RadScheduler not only to a collection of business objects, but to a ADO.NET DataTable ot the results of a LINQ query.
-		First we have code out custom class that will contain the appointment data:
-
-#_[C#]_
-
-	
-
-
+This example shows how to bind RadScheduler to a collection of custom objects that contain appointment data using the __SchedulerBindingDataSource__component. This data source component allows binding to a collection of objects and can be used to bind RadScheduler not only to a collection of business objects, but to a ADO.NET DataTable ot the results of a LINQ query.First we have code out custom class that will contain the appointment data:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\MyAppointment.cs region=myAppointment}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\MyAppointment.vb region=myAppointment}} 
@@ -270,16 +258,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
 We will use a list to store our appointment data. For the purpose of this example we will populate the appointments collection with some dummy data in the OnLoad override of our form:
-          
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\DataBinding\UsingDataProvider.cs region=creatingAppointment}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\UsingDataProvider.vb region=creatingAppointment}} 
@@ -356,14 +335,7 @@ We will use a list to store our appointment data. For the purpose of this exampl
 
 {{endregion}} 
 
-
-
-
-And finally we will bind our RadScheduler instance to tha collection in the Click event handler of a button:#_[C#]_
-
-	
-
-
+And finally we will bind our RadScheduler instance to tha collection in the Click event handler of a button:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\UsingDataProvider.cs region=bindClick}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\UsingDataProvider.vb region=bindClick}} 
@@ -415,10 +387,7 @@ And finally we will bind our RadScheduler instance to tha collection in the Clic
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 In the above code we create a __SchedulerBindingDataSource__ component. Then create a __AppointmentMappingInfo__ in order to “tell” the appointment provider how the properties of objects from the data source (in our case the appointments collection) corresponds to properties of the __IEvent__ interface.
 
