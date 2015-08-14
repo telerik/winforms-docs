@@ -26,7 +26,7 @@ CarouselEllipsePath is a CarouselParameterPath descendant that defines a three d
 
 * __U, V:__ Two points in three dimensional space that describe the distance from the center of the ellipse.
 
-* __InitialAngle__, __FinalAngle__: The starting and ending number of degrees of the arc that defines the ellipse.  For example an __InitialAngle__ of zero and a __FinalAngle__ of 360 describes a complete ellipse.
+* __InitialAngle__ , __FinalAngle__: The starting and ending number of degrees of the arc that defines the ellipse.  For example an __InitialAngle__ of zero and a __FinalAngle__ of 360 describes a complete ellipse.
 
 __Defining ellipse path__
 

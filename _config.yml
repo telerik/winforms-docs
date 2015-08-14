@@ -74,6 +74,36 @@ navigation:
     chart:
         title: Chart (obsolete)
         position: 10
+    chart/getting-started:
+        title: Getting Started
+        position: 0
+    chart/changes-and-backward-compatibility:
+        title: Changes And Backward Compatibility
+        position: 1
+    chart/features:
+        title: Features
+        position: 2
+    chart/understanding-radchart-types:
+        title: Understanding RadChart Types
+        position: 3
+    chart/understanding-radchart-elements:
+        title: Understanding RadChart Elements
+        position: 4
+    chart/understanding-radchart-ui:
+        title: Understanding RadChart UI
+        position: 5
+    chart/building-radcharts:
+        title: Binding RadCharts
+        position: 6
+    chart/styling-radcharts:
+        title: Styling RadCharts
+        position: 7
+    chart/advanced-topics:
+        title: Advanced Topics
+        position: 8
+    chart/how-to:
+        title: How To
+        position: 8
     chartview:
         title: ChartView
         position: 11
