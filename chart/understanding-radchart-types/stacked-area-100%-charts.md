@@ -2,7 +2,7 @@
 title: Stacked Area 100% Charts
 page_title: Stacked Area 100% Charts | UI for WinForms Documentation
 description: Stacked Area 100% Charts
-slug: winforms/chart-(obsolete)/understanding-radchart-types/stacked-area-100%-charts
+slug: winforms/chart/understanding-radchart-types/stacked-area-100%-charts
 tags: stacked,area,100%,charts
 published: True
 position: 16

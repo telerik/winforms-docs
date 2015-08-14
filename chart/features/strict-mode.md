@@ -23,21 +23,20 @@ __Series 1__
 
 
 
-
-
-| __YValue__ | __XValue__ |
-|3|0|
-|3|1|
-|4|3|
-|3|3|
-|5|4|
+<table>
+<th>YValue</th><th>XValue</th>
+<tr><td>3</td><td>0</td></tr>
+<tr><td>3</td><td>1</td></tr>
+<tr><td>4</td><td>3</td></tr>
+<tr><td>3</td><td>3</td></tr>
+<tr><td>5</td><td>4</td></tr>
+</table>
 
 __Series 2__
 
+<table>
+<th>YValue</th><th>XValue</th>
+<tr><td>1</td><td>5</td></tr>
+<tr><td>2</td><td>4</td></tr>
+</table>
 
-
-
-
-| __YValue__ | __XValue__ |
-|1|5|
-|2|4|

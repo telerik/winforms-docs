@@ -2,7 +2,7 @@
 title: Stacked Spline Area 100% Charts
 page_title: Stacked Spline Area 100% Charts | UI for WinForms Documentation
 description: Stacked Spline Area 100% Charts
-slug: winforms/chart-(obsolete)/understanding-radchart-types/stacked-spline-area-100%-charts
+slug: winforms/chart/understanding-radchart-types/stacked-spline-area-100%-charts
 tags: stacked,spline,area,100%,charts
 published: True
 position: 12

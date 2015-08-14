@@ -2,7 +2,7 @@
 title: Line Charts
 page_title: Line Charts | UI for WinForms Documentation
 description: Line Charts
-slug: winforms/chart-(obsolete)/understanding-radchart-types/line-charts
+slug: winforms/chart/understanding-radchart-types/line-charts
 tags: line,charts
 published: True
 position: 13

@@ -12,8 +12,7 @@ position: 0
 
 
 
-This Quick Start tutorial is designed to have you quickly up and running with a working RadChart application.
-        	In the process of creating a basic bar chart you will be introduced to some of the features of RadChart. 
+This Quick Start tutorial is designed to have you quickly up and running with a working RadChart application. In the process of creating a basic bar chart you will be introduced to some of the features of RadChart. 
         	You will populate the chart with static data and modify several properties that affect chart appearance.
         
 
@@ -33,9 +32,7 @@ This Quick Start tutorial is designed to have you quickly up and running with a 
 
 1. Click "Series 1" in the members list on the left, then locate the __Name__ property in the property window.
 
-1. Change the __Name__ property to "Sales" and the __DefaultLabelValue__ to "#ITEM". __Name__ 
-				  	will be the series name that shows up in the legend. __DefaultLabelValue__ will display the name of each item in the 
-				  	series instead of the item value.
+1. Change the __Name__ property to "Sales" and the __DefaultLabelValue__ to "#ITEM". __Name__ will be the series name that shows up in the legend. __DefaultLabelValue__ will display the name of each item in the series instead of the item value.
           
 
 1. Locate the __Items__ property in the property window.
@@ -47,7 +44,7 @@ This Quick Start tutorial is designed to have you quickly up and running with a 
 1. In the property window for the new item, change the __Name__ property to "Beverages".
 
 1. Change the YValue property to "10000".
-            ![chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 003](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data003.png)
+ ![chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 003](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data003.png)
 
 1. Repeat the Add Item steps to add 3 new items.
 
@@ -68,7 +65,7 @@ This Quick Start tutorial is designed to have you quickly up and running with a 
 1. Click the __OK__ button to close the __ChartSeries Collection Editor__.
 
 1. The chart will display the new data using the default formatting.
-          ![chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 004](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data004.png)
+ ![chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 004](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data004.png)
 
 ## Format the Chart Using the SmartTag
 
@@ -88,24 +85,24 @@ This Quick Start tutorial is designed to have you quickly up and running with a 
 
 1. Locate the __Visual Properties__ section of the __Axis__ tab.
 
-1. On the __Select Axis drop down__list select the X Axis. In the __Axis Title__entry enter 
-				  	"Product Categories". Uncheck __Show Ticks__to remove the tick marks from the bottom of the chart.
+1. On the __Select Axis drop down__ list select the X Axis. In the __Axis Title__ entry enter "Product Categories". Uncheck __Show Ticks__ to remove the tick marks from the bottom of the chart.
 
-1. On the __Select Axis drop down__list select the Y Axis. Uncheck __Show Ticks__to remove the tick marks on the left hand side of the chart.
-            ![chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 006](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data006.png)
+1. On the __Select Axis drop down__ list select the Y Axis. Uncheck __Show Ticks__ to remove the tick marks on the left hand side of the chart.
+ ![chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 006](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data006.png)
 
 1. Click the __Labels, Legend and Title__ tab
 
 1. Locate the __Legend__ section.
 
 1. Uncheck the __Visible__ check box. This will remove the Sales legend from the right side of the graph
-            ![chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 007](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data007.png)
+ ![chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 007](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data007.png)
 
 1. On the __Skins__ tab select the __Deep Blue__ skin.
-            ![chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 008](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data008.png)
+ ![chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 008](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data008.png)
 
 1. Click the __OK__ button to close the wizard.
 
-1. In the properties window, locate __PlotArea.XAxis.AxisLabel.TextBlock.Visible__and set it to "True".![chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 009](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data009.png)
+1. In the properties window, locate __PlotArea.XAxis.AxisLabel.TextBlock.Visible__ and set it to "True".
+ ![chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 009](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data009.png)
 
 Run the application to view the finished chart.  It should look like the screen shot shown below. ![chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 010](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data010.png)

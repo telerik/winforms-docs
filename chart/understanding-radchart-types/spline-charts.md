@@ -2,7 +2,7 @@
 title: Spline Charts
 page_title: Spline Charts | UI for WinForms Documentation
 description: Spline Charts
-slug: winforms/chart-(obsolete)/understanding-radchart-types/spline-charts
+slug: winforms/chart/understanding-radchart-types/spline-charts
 tags: spline,charts
 published: True
 position: 7
@@ -26,6 +26,7 @@ To create a simple horizontal Spline Chart set the __SeriesOrientation__ proper
 
 
 | __YValue__ | __XValue__ |
+|----|----|
 |20|50|
 |50|-10|
 |70|100|
@@ -39,6 +40,7 @@ Another example showing the same Y data points as above, but with no X values de
 
 
 | __YValue__ |
+|----|
 |20|
 |50|
 |70|

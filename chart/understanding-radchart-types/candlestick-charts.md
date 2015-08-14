@@ -2,7 +2,7 @@
 title: CandleStick Charts
 page_title: CandleStick Charts | UI for WinForms Documentation
 description: CandleStick Charts
-slug: winforms/chart-(obsolete)/understanding-radchart-types/candlestick-charts
+slug: winforms/chart/understanding-radchart-types/candlestick-charts
 tags: candlestick,charts
 published: True
 position: 17
@@ -26,12 +26,12 @@ The __CandleStick__ chart combines bar and line chart styles to show a range of 
 
 The "bar" portion of each chart item is formed between the __YValue__ and __YValue2__ properties.  The "wick" portion of the chart is defined with the YValue3 and YValue4 chart item properties.
 
-To create a Vertical CandleStick Chart set the __SeriesOrientation__property to __Vertical__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __CandleStick__.
+To create a Vertical CandleStick Chart set the __SeriesOrientation__ property to __Vertical__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __CandleStick__.
 >caption 
 
 ![chart-undestanding-radchart-types-candlestick-charts 001](images/chart-undestanding-radchart-types-candlestick-charts001.png)
 
-To create a Vertical CandleStick Chart set the __SeriesOrientation__property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __CandleStick__.
+To create a Vertical CandleStick Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __CandleStick__.
 >caption 
 
 ![chart-undestanding-radchart-types-candlestick-charts 002](images/chart-undestanding-radchart-types-candlestick-charts002.png)
@@ -41,6 +41,7 @@ The screenshots above use the following data points:
 
 
 | __YValue__ | __YValue2__ | __YValue3__ | __YValue4__ |
+|----|----|----|----|
 |6|7.1|4.5|8|
 |5.5|7.7|3|6|
 |21|9|8|23|

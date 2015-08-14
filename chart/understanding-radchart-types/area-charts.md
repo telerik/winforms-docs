@@ -2,7 +2,7 @@
 title: Area Charts
 page_title: Area Charts | UI for WinForms Documentation
 description: Area Charts
-slug: winforms/chart-(obsolete)/understanding-radchart-types/area-charts
+slug: winforms/chart/understanding-radchart-types/area-charts
 tags: area,charts
 published: True
 position: 14
