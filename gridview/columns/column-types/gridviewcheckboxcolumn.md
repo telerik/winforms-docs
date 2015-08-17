@@ -12,13 +12,7 @@ position: 4
 
 
 
-__GridViewCheckBoxColumn__ displays and allows editing of boolean data. The values are shown as
-        check boxes and allow the user to set or clear the check boxes to toggle the underlying boolean data values.
-        __GridViewCheckBoxColumn__ inherits from __GridViewDataColumn.__![gridview-columns-gridviewcheckboxcolumn 001](images/gridview-columns-gridviewcheckboxcolumn001.png)#_[C#] Create and add GridViewCheckBoxColumn_
-
-	
-
-
+__GridViewCheckBoxColumn__ displays and allows editing of boolean data. The values are shown as check boxes and allow the user to set or clear the check boxes to toggle the underlying boolean data values. __GridViewCheckBoxColumn__ inherits from __GridViewDataColumn.__![gridview-columns-gridviewcheckboxcolumn 001](images/gridview-columns-gridviewcheckboxcolumn001.png)
 
 {{source=..\SamplesCS\GridView\Columns\GridViewCheckBoxColumn1.cs region=addCheckBoxColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=addCheckBoxColumn}} 
@@ -43,17 +37,7 @@ __GridViewCheckBoxColumn__ displays and allows editing of boolean data. The valu
 
 {{endregion}} 
 
-
-
-
-The column has also a built-in functionality for checking all check boxes in it, via check box placed in the column header cell.
-        By setting the __EnableHeaderCheckBox__ property to *true* you will 
-        enable the embedded in header cell RadCheckBoxElement. 
-      ![gridview-columns-gridviewcheckboxcolumn 002](images/gridview-columns-gridviewcheckboxcolumn002.png)#_[C#] Create and add GridViewCheckBoxColumn_
-
-	
-
-
+The column has also a built-in functionality for checking all check boxes in it, via check box placed in the column header cell. By setting the __EnableHeaderCheckBox__ property to *true* you will enable the embedded in header cell RadCheckBoxElement. ![gridview-columns-gridviewcheckboxcolumn 002](images/gridview-columns-gridviewcheckboxcolumn002.png)
 
 {{source=..\SamplesCS\GridView\Columns\GridViewCheckBoxColumn1.cs region=EnableHeaderCheckBox}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=EnableHeaderCheckBox}} 
@@ -96,13 +80,7 @@ The column has also a built-in functionality for checking all check boxes in it,
 
 ## ValueChanged event
 
-__ValueChanged__ event can be used in particular about check box
-          state change. You have to check the active editor type as in the example below:
-        #_[C#] _
-
-	
-
-
+__ValueChanged__ event can be used in particular about check box state change. You have to check the active editor type as in the example below:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewCheckBoxColumn1.cs region=valueChanged}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=valueChanged}} 
@@ -134,13 +112,7 @@ __ValueChanged__ event can be used in particular about check box
 
 ## HeaderCellToggleStateChanged event
 
-To handle the toggle state change of the embedded check box in the header cell you should use 
-          the __HeaderCellToggleStateChanged__ event of RadGridView.
-        #_[C#] _
-
-	
-
-
+To handle the toggle state change of the embedded check box in the header cell you should use the __HeaderCellToggleStateChanged__ event of RadGridView.
 
 {{source=..\SamplesCS\GridView\Columns\GridViewCheckBoxColumn1.cs region=HeaderCellToggleStateChanged}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=HeaderCellToggleStateChanged}} 
@@ -176,14 +148,7 @@ To handle the toggle state change of the embedded check box in the header cell y
 
 ## EditMode
 
-The __EditMode__ property controls when the value of the editor will be submitted to the cell. By default, the current behavior 
-          is kept (OnValidate) and the value will  be submitted only when the current cell changes or the grid looses focus. The new value (OnValueChange) will 
-          submit the value immediately after the editor value changes.         
-        #_[C#] _
-
-	
-
-
+The __EditMode__ property controls when the value of the editor will be submitted to the cell. By default, the current behavior is kept (OnValidate) and the value will  be submitted only when the current cell changes or the grid looses focus. The new value (OnValueChange) will submit the value immediately after the editor value changes.
 
 {{source=..\SamplesCS\GridView\Columns\GridViewCheckBoxColumn1.cs region=EditMode}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=EditMode}} 

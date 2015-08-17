@@ -14,15 +14,7 @@ position: 0
 
 ## 
 
-The __Columns__ in RadGridView are the fundamental meta-objects for data source representation. They provide the
-          structure according to which __rows__ are composed. The term __cell__ is often used interchangeably
-          with __column__, although many consider it more correct to use __cell__ to refer specifically to the
-          single item that exists at the intersection between a row and a column (see
-          [Rows]({%slug winforms/gridview/rows/gridviewrowinfo%})
-          and
-          [Cells]({%slug winforms/gridview/cells/gridviewcellinfo%})
-          topics for more information on these objects).
-        
+The __Columns__ in RadGridView are the fundamental meta-objects for data source representation. They provide the structure according to which __rows__ are composed. The term __cell__ is often used interchangeably with __column__, although many consider it more correct to use __cell__ to refer specifically to the single item that  [Rows]({%slug winforms/gridview/rows/gridviewrowinfo%}) and [Cells]({%slug winforms/gridview/cells/gridviewcellinfo%}) topics for more information on these objects).
 
 This chapter gives you detailed information about the RadGridView columns. The covered topics are:
 
@@ -32,62 +24,56 @@ This chapter gives you detailed information about the RadGridView columns. The c
 
 * __Column types:__
 
-* [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
+  * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
 
-* [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})
+  * [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})
 
-* [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%})
+  * [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%})
 
-* [GridViewColorColumn]({%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%})
+  * [GridViewColorColumn]({%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%})
 
-* [GridViewComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%})
+  * [GridViewComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%})
 
-* [GridViewCommandColumn]({%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%})
+  * [GridViewCommandColumn]({%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%})
 
-* [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%})
+  * [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%})
+  
+  * [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
+  
+  * [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
+  
+  * [GridViewImageColumn]({%slug winforms/gridview/columns/column-types/gridviewimagecolumn%})
+  
+  * [GridViewMaskBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewmaskboxcolumn%})
+  
+  * [GridViewMultiComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewmulticomboboxcolumn%})
+  
+  * [GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%})
+  
+  * [GridViewRatingColumn]({%slug winforms/gridview/columns/column-types/gridviewratingcolumn%})
 
-* [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
-
-* [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
-
-* [GridViewImageColumn]({%slug winforms/gridview/columns/column-types/gridviewimagecolumn%})
-
-* [GridViewMaskBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewmaskboxcolumn%})
-
-* [GridViewMultiComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewmulticomboboxcolumn%})
-
-* [GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%})
-
-* [GridViewRatingColumn]({%slug winforms/gridview/columns/column-types/gridviewratingcolumn%})
-
-* [Generating columns ]({%slug winforms/gridview/columns/generating-columns%})
-              - define columns programmatically or automatically (Auto-generated and manually added columns)
+* [Generating columns ]({%slug winforms/gridview/columns/generating-columns%}) - define columns programmatically or automatically (Auto-generated and manually added columns)
             
 
-* [Data type conversion ]({%slug winforms/gridview/columns/converting-data-types%})
-              – convert your data using the data conversion layer
+* [Data type conversion ]({%slug winforms/gridview/columns/converting-data-types%}) – convert your data using the data conversion layer
             
 
-* [Accessing and Iterating through Columns ]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
-              – accessing and iterating through columns and hierarchical columns
+* [Accessing and Iterating through Columns ]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%}) – accessing and iterating through columns and hierarchical columns
             
 
-* [Column expressions ]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%})
-              - find out more about the supported aggregate functions and calculated columns
+* [Column expressions ]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%}) - find out more about the supported aggregate functions and calculated columns
             
 
-* [Resizing Columns ]({%slug winforms/gridview/columns/resizing-columns-programatically%})
-              – everything about the different sizing modes
+* [Resizing Columns ]({%slug winforms/gridview/columns/resizing-columns-programatically%}) – everything about the different sizing modes
             
 
-* [Pinned columns ]({%slug winforms/gridview/columns/pinning-and-unpinning-columns%})
-              - find out how to pin/unpin columns or how to disable this functionality
+* [Pinned columns ]({%slug winforms/gridview/columns/pinning-and-unpinning-columns%}) - find out how to pin/unpin columns or how to disable this functionality
             
 
-* [Column Chooser ]({%slug winforms/gridview/columns/working-with-columnchooser%})
-              - find out how to hide or show columns
+* [Column Chooser ]({%slug winforms/gridview/columns/working-with-columnchooser%}) - find out how to hide or show columns
             
 
-* [Column text properties ]({%slug winforms/gridview/columns/data-formatting%})- __WrapText__: wraps text if the text is wider than the column width.
-            -	__TextAlignment__: defines the text alignment.
+* [Column text properties ]({%slug winforms/gridview/columns/data-formatting%})
+  - __WrapText__: Wraps text if the text is wider than the column width.
+  - __TextAlignment__: Defines the text alignment.
             

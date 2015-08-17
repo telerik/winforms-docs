@@ -12,17 +12,9 @@ position: 3
 
 
 
-__GridViewCalculatorColumn__ allows RadGridView to edit numbers using popup with calculator. 
-      	The default editor of the column is __RadCalculatorEditor__.
-      ![gridview-columns-gridviewcalculatorcolumn 001](images/gridview-columns-gridviewcalculatorcolumn001.png)
+__GridViewCalculatorColumn__ allows RadGridView to edit numbers using popup with calculator. The default editor of the column is __RadCalculatorEditor__. <br>![gridview-columns-gridviewcalculatorcolumn 001](images/gridview-columns-gridviewcalculatorcolumn001.png)
 
-__GridViewCalculatorColumn__ is never auto-generated. The following code snippet demonstrates how to create
-			and add the column to RadGridView and also add some sample data in it:
-		#_[C#] _
-
-	
-
-
+__GridViewCalculatorColumn__ is never auto-generated. The following code snippet demonstrates how to create and add the column to RadGridView and also add some sample data in it:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewCalculatorColumn1.cs region=addCalculatorColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewCalculatorColumn1.vb region=addCalculatorColumn}} 

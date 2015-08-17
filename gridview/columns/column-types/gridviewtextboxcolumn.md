@@ -14,15 +14,11 @@ position: 14
 
 ## 
 
-__GridViewTextBoxColumn__ displays and allows editing of text data. Each cell in __GridViewTextBoxColumn__ column displays the text of cell __Value__ property according to the settings of the __TextAlignment__ (default is __ContentAlignment.MiddleLeft__) and __WrapText__(default is __false__) properties. The displayed text is formatted according to the value of the __FormatString__ property.
+__GridViewTextBoxColumn__ displays and allows editing of text data. Each cell in __GridViewTextBoxColumn__ column displays the text of cell __Value__ property according to the settings of the __TextAlignment__ (default is __ContentAlignment.MiddleLeft__) and __WrapText__(default is *false*) properties. The displayed text is formatted according to the value of the __FormatString__ property.
 
 When a user begins editing a cell, a textbox editor is provided to handle the user’s input. The length of the text the user can enter is restricted to the value of __MaxLength__ property.
 
-![gridview-columns-gridviewtextboxcolumn 001](images/gridview-columns-gridviewtextboxcolumn001.png)#_[C#] Adding GridViewTextBoxColumn_
-
-	
-
-
+![gridview-columns-gridviewtextboxcolumn 001](images/gridview-columns-gridviewtextboxcolumn001.png)
 
 {{source=..\SamplesCS\GridView\Columns\GridViewTextBoxColumn1.cs region=addTextBoxColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewTextBoxColumn1.vb region=addTextBoxColumn}} 
@@ -54,11 +50,7 @@ When a user begins editing a cell, a textbox editor is provided to handle the us
 
 ## Character casing
 
-GridViewTextBoxColumn editor - *RadTextBoxEditor - *supports character casing. To enable this functionality you need to set *ColumnCharecterCasing* property of the desired GridViewTextBoxColumn column:#_[C#] Character casting in GridViewTextBoxColumn_
-
-	
-
-
+GridViewTextBoxColumn editor - *RadTextBoxEditor* - supports character casing. To enable this functionality you need to set *ColumnCharecterCasing* property of the desired GridViewTextBoxColumn column:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewTextBoxColumn1.cs region=characterCasting}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewTextBoxColumn1.vb region=characterCasting}} 

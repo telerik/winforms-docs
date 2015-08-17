@@ -12,17 +12,7 @@ position: 8
 
 
 
-__GridViewDateTimeColumn__ provides date entry and formatting for
-        DateTime data types. You may enter the date and time directly into the editor or drop down
-        the calendar to choose a date. The __FormatString__ property sets the
-        format of the date when the date is not currently being edited.
-        The __CustomFormat__ property is used to format the date once the user
-        clicks on the cell to invoke the editor.
-      ![gridview-columns-gridviewdatetimecolumn 002](images/gridview-columns-gridviewdatetimecolumn002.png)#_[C#] Instantiate GridViewDateTimeColumn_
-
-	
-
-
+__GridViewDateTimeColumn__ provides date entry and formatting for DateTime data types. You may enter the date and time directly into the editor or drop down the calendar to choose a date. The __FormatString__ property sets the format of the date when the date is not currently being edited. The __CustomFormat__ property is used to format the date once the user clicks on the cell to invoke the editor. <br>![gridview-columns-gridviewdatetimecolumn 002](images/gridview-columns-gridviewdatetimecolumn002.png)
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn1.cs region=addDateTimeColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn1.vb region=addDateTimeColumn}} 
@@ -46,15 +36,7 @@ __GridViewDateTimeColumn__ provides date entry and formatting for
 {{endregion}} 
 
 
-
-
-The formatting for date and time values also responds to globalization settings as
-        demonstrated in the example below where CultureInfo is set to French-Belgium.
-      ![gridview-columns-gridviewdatetimecolumn 003](images/gridview-columns-gridviewdatetimecolumn003.png)#_[C#] Set the CurrentCulture_
-
-	
-
-
+The formatting for date and time values also responds to globalization settings as demonstrated in the example below where CultureInfo is set to French-Belgium. <br>![gridview-columns-gridviewdatetimecolumn 003](images/gridview-columns-gridviewdatetimecolumn003.png)
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn2.cs region=settingCurrentCulture}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn2.vb region=settingCurrentCulture}} 
@@ -81,20 +63,7 @@ The formatting for date and time values also responds to globalization settings 
 
 {{endregion}} 
 
-
-
-
-The code below demonstrates how to change date formatting in edit mode (while the cell is
-        being edited). There are two ways to achieve that - by setting the __Format__ property of the column to *Custom*
-        and the __CustomFormat__ property of the column to a desired format, or by setting the same properties of the editor itself.
-        Please note that we are using the
-        __CellEditorInitialized__ event which is fired when the initialization
-        of an editor is done in order to access the editor:
-      #_[C#] Change the editor date format_
-
-	
-
-
+The code below demonstrates how to change date formatting in edit mode (while the cell is being edited). There are two ways to achieve that - by setting the __Format__ property of the column to *Custom* and the __CustomFormat__ property of the column to a desired format, or by setting the same properties of the editor itself. Please note that we are using the __CellEditorInitialized__ event which is fired when the initialization of an editor is done in order to access the editor:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn1.cs region=changeEditorDateFormat}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn1.vb region=changeEditorDateFormat}} 
@@ -122,12 +91,6 @@ The code below demonstrates how to change date formatting in edit mode (while th
 ````
 
 {{endregion}} 
-
-
-#_[C#] Change the editor format_
-
-	
-
 
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn1.cs region=changeEditorDateFormat1}} 
@@ -169,11 +132,6 @@ The code below demonstrates how to change date formatting in edit mode (while th
 If we do not use the CellEditorInitialized, but CellBeginEdit (CellBeginEdit is fired before CellEditorInitialized), our Format setting will be overridden by the initialization of the editor. 
 
 You can also change the way the dates in the column are filtered. This is how the column can be adjusted to filter only by __Dates__.
-      #_[C#] Change the filtering mode_
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn1.cs region=changeFilteringMode}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn1.vb region=changeFilteringMode}} 
@@ -193,8 +151,7 @@ You can also change the way the dates in the column are filtered. This is how th
 
 ## DateTimeKind property
 
-This property allows you to transform the date/time values from database to the local time. By default __RadGridView__ supposes that
-          the date/time values are stored in UTC in database.
+This property allows you to transform the date/time values from database to the local time. By default __RadGridView__ supposes that the date/time values are stored in UTC in database.
         
 
 
@@ -211,7 +168,7 @@ The __EditorType__ property allows you to easily change the editor type. It coul
 
 * __DateTimePicker__ - this is the default value and the editor will be a standard RadDateTimePicker.
 
-* __DateTimePicker__ - the editor will be a RadTimePicker.
+* __DateTimePicker__ - the editor will be a __RadTimePicker__.
             
 
 * __DateTimePickerSpinMode__ - this type of editor shows up/down buttons instead of a drop down with a calendar.

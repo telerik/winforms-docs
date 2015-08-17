@@ -26,11 +26,7 @@ Supported image formats are those supported by the Image class of .net framework
 
 
 
-![gridview-columns-gridviewimagecolumn 001](images/gridview-columns-gridviewimagecolumn001.png)#_[C#] Adding GridViewImageColumn_
-
-	
-
-
+![gridview-columns-gridviewimagecolumn 001](images/gridview-columns-gridviewimagecolumn001.png)
 
 {{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=addImageColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=addImageColumn}} 
@@ -60,16 +56,12 @@ Supported image formats are those supported by the Image class of .net framework
 
 ## Image Layout
 
-GridViewImageColumn also implements resizing functionality where sizing is controlled by the __ImageLayout__ property. __ImageLayout__can be set to one of the following: None, Tile, Center, Stretch and Zoom:
+GridViewImageColumn also implements resizing functionality where sizing is controlled by the __ImageLayout__ property. __ImageLayout__ can be set to one of the following: None, Tile, Center, Stretch and Zoom:
 
 * __None__ - Image is positioned at the upper left corner of the cell. This value can be used in a combination
   with the value of the ImageAlignment property to specify the position of an image in a cell:
   
-  ![gridview-columns-gridviewimagecolumn 002](images/gridview-columns-gridviewimagecolumn002.png)#_[C#]_
-
-	
-
-
+  ![gridview-columns-gridviewimagecolumn 002](images/gridview-columns-gridviewimagecolumn002.png)
 
 {{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=none}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=none}} 
@@ -89,12 +81,8 @@ GridViewImageColumn also implements resizing functionality where sizing is contr
 
 
 
-* __Tile__ - Image is repeated:
- ![gridview-columns-gridviewimagecolumn 003](images/gridview-columns-gridviewimagecolumn003.png)#_[C#]_
-
-	
-
-
+* __Tile__ - Image is repeated:<br>
+ ![gridview-columns-gridviewimagecolumn 003](images/gridview-columns-gridviewimagecolumn003.png)
 
 {{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=tile}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=tile}} 
@@ -109,11 +97,7 @@ GridViewImageColumn also implements resizing functionality where sizing is contr
 
 {{endregion}} 
 
-
-
-
-* __Center__ - Image is positioned at the cell center regardless of the ImageAlignment value:
-    ![gridview-columns-gridviewimagecolumn 004](images/gridview-columns-gridviewimagecolumn004.png)#_[C#]_
+* __Center__ - Image is positioned at the cell center regardless of the ImageAlignment value: <br>![gridview-columns-gridviewimagecolumn 004](images/gridview-columns-gridviewimagecolumn004.png)
 
 	
 
@@ -135,12 +119,7 @@ GridViewImageColumn also implements resizing functionality where sizing is contr
 
 
 
-* __Stretch__ - Image is stretched in the cell:
-  ![gridview-columns-gridviewimagecolumn 005](images/gridview-columns-gridviewimagecolumn005.png)#_[C#]_
-
-	
-
-
+* __Stretch__ - Image is stretched in the cell: <br>![gridview-columns-gridviewimagecolumn 005](images/gridview-columns-gridviewimagecolumn005.png)
 
 {{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=stretch}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=stretch}} 
@@ -156,14 +135,7 @@ GridViewImageColumn also implements resizing functionality where sizing is contr
 {{endregion}} 
 
 
-
-
-* __Zoom__ - Image is zoomed but the aspect ratio is preserved:
-    ![gridview-columns-gridviewimagecolumn 006](images/gridview-columns-gridviewimagecolumn006.png)#_[C#]_
-
-	
-
-
+* __Zoom__ - Image is zoomed but the aspect ratio is preserved: <br>![gridview-columns-gridviewimagecolumn 006](images/gridview-columns-gridviewimagecolumn006.png)
 
 {{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=zoom}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=zoom}} 

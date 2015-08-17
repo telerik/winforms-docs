@@ -14,22 +14,12 @@ position: 13
 
 ## 
 
-This column has RadMultiColumnComboBoxElement as an editor. It covers the features that the RadMultiColumnComboBox control has.
+This column has __RadMultiColumnComboBoxElement__ as an editor. It covers the features that the RadMultiColumnComboBox control has.
       	
 
-The following example demonstrates how to 
-      		[manually generate columns for RadGridView]({%slug winforms/gridview/columns/generating-columns%})
-      		in the dropdown and then make the dropdown autosize itself according to the width of the RadGridView columns.
+The following example demonstrates how to [manually generate columns for RadGridView]({%slug winforms/gridview/columns/generating-columns%}) in the dropdown and then make the dropdown autosize itself according to the width of the RadGridView columns.
 
-
-
-First of 
-      		all, we should bind the GridViewMultiComboBoxColumn:
-      	#_[C#] Creating and setting up GridViewMultiComboBoxColumn_
-
-	
-
-
+First of all, we should bind the GridViewMultiComboBoxColumn:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewMultiComboBoxColumn1.cs region=addColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewMultiComboBoxColumn1.vb region=addColumn}} 
@@ -110,18 +100,12 @@ Then, we make the necessary implementation in the CellBeginEdit event handler:#_
 
 
 
-Please note that we have a 'dirty' flag, because the editors in RadGridView are reused. If we do not have such a flag, new OrderID and Quantity columns will be added each time a RadMultiColumnComboBoxElement editor is opened.![gridview-columns-gridviewmulticomboboxcolumn 001](images/gridview-columns-gridviewmulticomboboxcolumn001.png)
+Please note that we have a 'dirty' flag, because the editors in RadGridView are reused. If we do not have such a flag, new OrderID and Quantity columns will be added each time a RadMultiColumnComboBoxElement editor is opened. <br>![gridview-columns-gridviewmulticomboboxcolumn 001](images/gridview-columns-gridviewmulticomboboxcolumn001.png)
 
 Other important properties for __GridViewMultiComboBoxColumn__ are:
         
 
-* __FilterMode__ - has two values __DisplayMember__ and
-			  		__ValueMember__, and as the name of the property speaks this setting will
-			  		determine whether the column will be filtered according to the __DisplayMember__
-			  		or the __ValueMember__.
+* __FilterMode__ - has two values __DisplayMember__ and __ValueMember__, and as the name of the property speaks this setting will determine whether the column will be filtered according to the __DisplayMember__ or the __ValueMember__.
 			  		
 
-* __DisplayMemberSort__ - this property will determine whether the column will
-			  		be sorted by the column's __DisplayMember__ or __ValueMember__. 
-			  		Setting it to *true* will sort by __DisplayMember__,
-			  		otherwise the sorting will be executed according to the __ValueMember__
+* __DisplayMemberSort__ - this property will determine whether the column will be sorted by the column's __DisplayMember__ or __ValueMember__.  Setting it to *true* will sort by __DisplayMember__, otherwise the sorting will be executed according to the __ValueMember__.

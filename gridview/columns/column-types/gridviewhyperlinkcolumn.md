@@ -14,16 +14,9 @@ position: 10
 
 ## 
 
-__GridViewHyperlinkColumn__ allows __RadGridView__ to display,
-        	format, edit and open hyperlinks as well as run executable files. The default
-        	editor of the column is __RadTextBoxEditor__.
-        
+__GridViewHyperlinkColumn__ allows __RadGridView__ to display, format, edit and open hyperlinks as well as run executable files. The default editor of the column is __RadTextBoxEditor__.
 
-Here is how to create and populate __GridViewHyperlinkColumn__#_[C#] Adding and populating GridViewHyperlinkColumn_
-
-	
-
-
+Here is how to create and populate __GridViewHyperlinkColumn__:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewHyperlinkColumn1.cs region=addHyperlinkColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewHyperlinkColumn1.vb region=addHyperlinkColumn}} 
@@ -61,9 +54,7 @@ Here is how to create and populate __GridViewHyperlinkColumn__#_[C#] Adding and 
 
 ## Behavior customization
 
-You can choose the action to open hyperlink or run executable using the
-        	__HyperlinkOpenAction__ property of the column. It is 
-        	an enumeration with the following members:
+You can choose the action to open hyperlink or run executable using the __HyperlinkOpenAction__ property of the column. It is an enumeration with the following members:
         
 
 * __SingleClick__ – opens the hyperlink on single mouse click
@@ -72,14 +63,12 @@ You can choose the action to open hyperlink or run executable using the
 
 * __None__ – the user cannot open the link.
 
-The __HyperlinkOpenArea__ property of the column determines whether
-        	to execute the hyperlink upon click on the cell or upon click on the text of the cell.
+The __HyperlinkOpenArea__ property of the column determines whether to execute the hyperlink upon click on the cell or upon click on the text of the cell.
         
 
 ## Appearance
 
-The __RadGridView__ theme could define 
-        	styles for the following __GridViewHyperlinkColumn__ cells states:
+The __RadGridView__ theme could define styles for the following __GridViewHyperlinkColumn__ cells states:
         
 
 * __Default (unvisited)__
@@ -90,8 +79,7 @@ The __RadGridView__ theme could define
 
 * __Visited__
 
-The mouse cursor transforms into ‘*hand*’ when hovering 
-			hyperlink from the column. 
+The mouse cursor transforms into ‘*hand*’ when hovering hyperlink from the column. 
 		
 
 ## Events

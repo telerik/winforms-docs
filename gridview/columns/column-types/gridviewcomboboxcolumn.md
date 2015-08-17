@@ -10,29 +10,18 @@ position: 6
 
 # GridViewComboBoxColumn
 
+__GridViewComboBoxColumn__ displays a set of predefined candidate text values in a drop down list. This column type is typically used to provide a lookup into some set of relatively static values. To use __GridViewComboBoxColumn:__
 
+* Set the __DataSource__ property to the data source that contains possible values to choose from.
 
-__GridViewComboBoxColumn__ displays a set of predefined candidate text values in a
-        drop down list. This column type is typically used to provide a lookup into some set of relatively static values.
-        To use __GridViewComboBoxColumn:__
+* Set the __DisplayMember__ property to the column of the __DataSource__ that should be displayed in the drop down list.
 
-* Set the __DataSource__ property to the data source that contains 
-        	possible values to choose from.
+* Set the __ValueMember__ property to the column of the __DataSource__ that should be used to update the cell within the grid represented by the __FieldName__ property.
 
-* Set the __DisplayMember__ property to the column of the 
-        	__DataSource__ that should be displayed in the drop down list.
-
-* Set the __ValueMember__ property to the column of the 
-        	__DataSource__ that should be used to update the cell within
-        	the grid represented by the __FieldName__ property.
-
->note Values will display in the column only if the value in __FieldName__ is within
-      	    the range of values provided by the __ValueMember__ field values.
+>note Values will display in the column only if the value in __FieldName__ is within he range of values provided by the __ValueMember__ field values.
 >
 
-
 Other important properties for __GridViewComboBoxColumn__ are:
-      
 
 * __FilterMode__ - has two values __DisplayMember__ and
 			  		__ValueMember__, and as the name of the property speaks this setting will
@@ -45,17 +34,11 @@ Other important properties for __GridViewComboBoxColumn__ are:
 			  		Setting it to *true* will sort by __DisplayMember__,
 			  		otherwise the sorting will be executed according to the __ValueMember__
 
->note By default, when sorting is executed on GridViewComboBoxColumn it is sorted according to its __ValueMember__ setting. However, if you need to perform the sorting according 
-    		to the DisplayMember instead, you should set the __DisplayMemberSort__ property of the
-			column.
+>note By default, when sorting is executed on GridViewComboBoxColumn it is sorted according to its __ValueMember__ setting. However, if you need to perform the sorting according to the DisplayMember instead, you should set the __DisplayMemberSort__ property of the column.
 >
 
 
-__GridViewComboBoxColumn__ inherits from __GridViewDataColumn.__![gridview-columns-gridviewcomboboxcolumn 001](images/gridview-columns-gridviewcomboboxcolumn001.png)#_[C#] Adding and binding GridViewComboBoxColumn_
-
-	
-
-
+__GridViewComboBoxColumn__ inherits from __GridViewDataColumn.__ <br>![gridview-columns-gridviewcomboboxcolumn 001](images/gridview-columns-gridviewcomboboxcolumn001.png)
 
 {{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn1.cs region=addComboBoxColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn1.vb region=addComboBoxColumn}} 
@@ -89,22 +72,10 @@ __GridViewComboBoxColumn__ inherits from __GridViewDataColumn.__![gridview-colum
 
 
 
-If you want to set initial values, you should match the __GridViewComboBoxColumn__ to 
-      	a column which has appropriate values in it. To do this, you should set the __FieldName__ 
-      	of the __GridViewComboBoxColumn__ to be the same as the name of the existing column.
+If you want to set initial values, you should match the __GridViewComboBoxColumn__ to a column which has appropriate values in it. To do this, you should set the __FieldName__ of the __GridViewComboBoxColumn__ to be the same as the name of the existing column.
       
 
-In order to access the __RadDropDownListEditor__, you should subscribe to the
-      	__CellEditorInitialized__ event of __RadGridView__. This event
-      	is fired when the initialization of an editor is done. The __EditorElement__ property
-      	of the __RadDropDownListEditor__ gives you access to the
-      	__RadDropDownListEditorElement__ which allows you to apply various customizations 
-      	to the editor's element:
-      #_[C#] Modify the DropDownList editor_
-
-	
-
-
+In order to access the __RadDropDownListEditor__, you should subscribe to the __CellEditorInitialized__ event of __RadGridView__. This event is fired when the initialization of an editor is done. The __EditorElement__ property of the __RadDropDownListEditor__ gives you access to the __RadDropDownListEditorElement__ which allows you to apply various customizations to the editor's element:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn1.cs region=modifyTheComboBoxEditor}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn1.vb region=modifyTheComboBoxEditor}} 
@@ -136,15 +107,7 @@ In order to access the __RadDropDownListEditor__, you should subscribe to the
 
 ## Binding to array of strings
 
-The following example demonstrates a case where the combo box is bound to a column with string values in the data source.        	
-        	In this case the __DisplayMember__ and __ValueMember__ are the same, 
-        	an you need just an array of strings as a datasource to the ComboBoxColumn (those strings should be equal to the possible
-        	values in the data source):
-        #_[C#] Bind to array of string_
-
-	
-
-
+The following example demonstrates a case where the combo box is bound to a column with string values in the data source. In this case the __DisplayMember__ and __ValueMember__ are the same, an you need just an array of strings as a datasource to the ComboBoxColumn (those strings should be equal to the possible values in the data source):
 
 {{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn1.cs region=BindToArray}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn1.vb region=BindToArray}} 
@@ -210,26 +173,7 @@ The following example demonstrates a case where the combo box is bound to a colu
 
 ## Binding to collection of custom object
 
-The example below extends the previous sample, where we bound the combo column to array of strings, by adding a text box column and
-        	another combo column, this time bound to a collection of custom object. The first step is to define your grid data source,
-      		fill in some data, and set column auto-generation to __false__ so that the grid does not generate 
-      		its columns from the data source. Next, the grid columns are created and mapped to the data base columns. Note that you have to define
-        	a __separate__ data source for each of your combo box columns different form the one of your grid. 
-        	This separate data sources have helper function, the actual data for your combobox columns is still in your grid data
-        	source as it is for any other type of column (e.g. decimal column). The data source for the first combo column is a string 
-        	array (from the previous example) and for the second combo column is a __BindingList__. 
-        	The BindingList consists of objects having properties for your value member and display member. In the sample code below,
-        	__Id__ is the ValueMember and __MyString__ the DisplayMember. The 
-        	*"Another ComboBox column"* in the grid data source is of type __int__ and our custom
-        	object has a property of type __int__. So in order to link the data source field to our custom object integer field, 
-        	we have set the __ValueMember__ to __"Id"__.
-        	
-        	You may use a DataTable in the same way like the BindingList.
-      	#_[C#] Binding to collection of custom object_
-
-	
-
-
+The example below extends the previous sample, where we bound the combo column to array of strings, by adding a text box column and another combo column, this time bound to a collection of custom object. The first step is to define your grid data source, fill in some data, and set column auto-generation to __false__ so that the grid does not generate its columns from the data source. Next, the grid columns are created and mapped to the data base columns. Note that you have to define a __separate__ data source for each of your combo box columns different form the one of your grid. This separate data sources have helper function, the actual data for your combobox columns is still in your grid data source as it is for any other type of column (e.g. decimal column). The data source for the first combo column is a string array (from the previous example) and for the second combo column is a __BindingList__. The BindingList consists of objects having properties for your value member and display member. In the sample code below, __Id__ is the ValueMember and __MyString__ the DisplayMember. The *"Another ComboBox column"* in the grid data source is of type __int__ and our custom object has a property of type __int__. So in order to link the data source field to our custom object integer field, we have set the __ValueMember__ to __"Id"__. You may use a DataTable in the same way like the BindingList.
 
 {{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn2.cs region=BindToObject}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn2.vb region=BindToObject}} 
@@ -379,12 +323,7 @@ End Class
 
 ##  Customizing DropDownList editors in RadGridView
 
-You have to handle the EditorRequired event. This event is fired every time when an editor needs to be shown.
-      	A sample code demonstrating this technique:#_[C#] Customize the DropDownListEditor in GridViewComboBoxColumn_
-
-	
-
-
+You have to handle the EditorRequired event. This event is fired every time when an editor needs to be shown. A sample code demonstrating this technique:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewComboBoxColumn3.cs region=customizeDropDownListEditor}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewComboBoxColumn3.vb region=customizeDropDownListEditor}} 

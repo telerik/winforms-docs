@@ -12,12 +12,7 @@ position: 9
 
 
 
-__GridViewDecimalColumn__ allows decimal data to be displayed and edited. __GridViewDecimalColumn__ can be bound to fields of any numeric type.
-      ![gridview-columns-gridviewdecimalcolumn 001](images/gridview-columns-gridviewdecimalcolumn001.png)#_[C#] Adding GridViewDecimalColumn_
-
-	
-
-
+__GridViewDecimalColumn__ allows decimal data to be displayed and edited. __GridViewDecimalColumn__ can be bound to fields of any numeric type. <br>![gridview-columns-gridviewdecimalcolumn 001](images/gridview-columns-gridviewdecimalcolumn001.png)
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDecimalColumn1.cs region=addingDecimalColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=addingDecimalColumn}} 
@@ -42,16 +37,9 @@ __GridViewDecimalColumn__ allows decimal data to be displayed and edited. __Grid
 
 {{endregion}} 
 
-
-
-
 ## Setting a default value for empty cells
 
-You may provide a default value using the following code:#_[C#] Setting the default value for empty cells_
-
-	
-
-
+You may provide a default value using the following code:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDecimalColumn1.cs region=settingTheDefaultValue}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=settingTheDefaultValue}} 
@@ -83,15 +71,9 @@ You may provide a default value using the following code:#_[C#] Setting the defa
 {{endregion}} 
 
 
-
-
 ##  Disable the up and down buttons of the spin editor
 
-The code below demonstrates how you can disable the up and down arrow buttons. Using the commented code you can completely hide them.#_[C#] Disable up and down arrow buttons_
-
-	
-
-
+The code below demonstrates how you can disable the up and down arrow buttons. Using the commented code you can completely hide them.
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDecimalColumn1.cs region=ShowUpDownButtons}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=ShowUpDownButtons}} 
@@ -122,19 +104,12 @@ The code below demonstrates how you can disable the up and down arrow buttons. U
 
 ## Setting decimal places
 
-The rich API of RadGridView allows you to define one value for the decimal places
-          that should be shown in the spin editor of the column and another value for the cells of the column.
+The rich API of RadGridView allows you to define one value for the decimal places that should be shown in the spin editor of the column and another value for the cells of the column.
           
 
 __Setting decimal places to the spin editor__
 
-You can define how many places after the decimal point the value in the spin editor should have
-            by setting the DecimalPlaces property of GridViewDecimalColumn:
-             #_[C#]_
-
-	
-
-
+You can define how many places after the decimal point the value in the spin editor should have by setting the DecimalPlaces property of GridViewDecimalColumn:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDecimalColumn1.cs region=decimalPlacesEditor}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=decimalPlacesEditor}} 
@@ -150,18 +125,9 @@ You can define how many places after the decimal point the value in the spin edi
 {{endregion}} 
 
 
-
-
 __Setting decimal places to the column cells__
 
-In order to define how the values should be displayed by the cells
-            of the GridViewDecimalColumn in the sense of their decimal places,
-            we should set the FormatString property of the column:
-          #_[C#]_
-
-	
-
-
+In order to define how the values should be displayed by the cellsof the GridViewDecimalColumn in the sense of their decimal places, we should set the FormatString property of the column:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDecimalColumn1.cs region=decimalPlacesCell}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=decimalPlacesCell}} 
@@ -179,9 +145,8 @@ In order to define how the values should be displayed by the cells
 
 
 
-Here is the result of setting the DecimalPlaces property to 3 and the FormatString property to {0:N2}:
-            ![gridview-columns-gridviewdecimalcolumn 002](images/gridview-columns-gridviewdecimalcolumn002.png)
+Here is the result of setting the DecimalPlaces property to 3 and the FormatString property to {0:N2}: <br>![gridview-columns-gridviewdecimalcolumn 002](images/gridview-columns-gridviewdecimalcolumn002.png)
 
->note For a list of the standard numeric format strings, see[Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)
+>note For a list of the standard numeric format strings, see [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)
 >
 
