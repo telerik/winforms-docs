@@ -11,9 +11,6 @@ position: 5
 # MultiDay View
 
 
-
-
-
 ## Overview
 
 
@@ -23,14 +20,7 @@ MultidayView shows multiple date-time intervals with appointments arranged one 
 ## Using MultidayView
 
 
-
-
-
-1. In order to set the current view of RadScheduler to MultidayView, use the ActiveViewType or ActiveView properties:#_[C#] Setting the current view to MultiDayView_
-
-	
-
-
+1. In order to set the current view of RadScheduler to MultidayView, use the ActiveViewType or ActiveView properties:
 
 {{source=..\SamplesCS\Scheduler\Views\MultiDayView.cs region=multiDay}} 
 {{source=..\SamplesVB\Scheduler\Views\MultiDayView.vb region=multiDay}} 
@@ -57,16 +47,9 @@ MultidayView shows multiple date-time intervals with appointments arranged one 
 
 {{endregion}} 
 
-
-
-
 1. To add, remove or modify a date-time __Interval__ in SchedulerMultiDayView instance use the __Intervals__ collection.
 
-1. To get all appointments in a particular interval, use the __GetAppointmentsInInterval__ helper method:#_[C#] Getting all appointments in a particular interval_
-
-	
-
-
+1. To get all appointments in a particular interval, use the __GetAppointmentsInInterval__ helper method:
 
 {{source=..\SamplesCS\Scheduler\Views\MultiDayView.cs region=interval}} 
 {{source=..\SamplesVB\Scheduler\Views\MultiDayView.vb region=interval}} 
@@ -84,9 +67,6 @@ MultidayView shows multiple date-time intervals with appointments arranged one 
 ````
 
 {{endregion}} 
-
-
-
 
 1. To get all appointments in the view, use the __Appointments__ collection.
 
