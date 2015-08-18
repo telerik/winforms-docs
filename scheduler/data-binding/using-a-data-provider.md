@@ -16,7 +16,7 @@ You can use one of the scheduler data source components supplied with RadSchedul
 
 ## Example
 
-This example shows how to bind RadScheduler to a collection of custom objects that contain appointment data using the __SchedulerBindingDataSource__component. This data source component allows binding to a collection of objects and can be used to bind RadScheduler not only to a collection of business objects, but to a ADO.NET DataTable ot the results of a LINQ query.First we have code out custom class that will contain the appointment data:
+This example shows how to bind RadScheduler to a collection of custom objects that contain appointment data using the __SchedulerBindingDataSource__ component. This data source component allows binding to a collection of objects and can be used to bind RadScheduler not only to a collection of business objects, but to a ADO.NET DataTable ot the results of a LINQ query.First we have code out custom class that will contain the appointment data:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\MyAppointment.cs region=myAppointment}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\MyAppointment.vb region=myAppointment}} 

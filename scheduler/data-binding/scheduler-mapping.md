@@ -10,21 +10,13 @@ position: 11
 
 # Scheduler Mapping
 
-
-
-The __SchedulerMapping__ class is responsible for mapping a single property from the data source to a
-        scheduler property, which allows you to specify convert callback methods in order to convert values to and from the data source if needed.
+The __SchedulerMapping__ class is responsible for mapping a single property from the data source to a scheduler property, which allows you to specify convert callback methods in order to convert values to and from the data source if needed.
       
-
 ## Overview
 
 To associate a field with a different type then the scheduler type, for example, a Background ID that is written as a string in the database:
 
-1. Create two methods with the following signatures:#_[C#]_
-
-	
-
-
+1\. Create two methods with the following signatures:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=backgroundCallback}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=backgroundCallback}} 
@@ -108,14 +100,7 @@ To associate a field with a different type then the scheduler type, for example,
 
 {{endregion}} 
 
-
-
-
-1. Apply settings of the BackgroundId mapping in the AppointmentMappingInfo:#_[C#]_
-
-	
-
-
+2\. Apply settings of the BackgroundId mapping in the AppointmentMappingInfo:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=background}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=background}} 
@@ -134,21 +119,11 @@ To associate a field with a different type then the scheduler type, for example,
 
 {{endregion}} 
 
-
-
-
 ## Null Fields in the Data Base
 
-If the database has fields that can be Null then you need to add converters for those fields. For example, let's
-          suppose that the database has a field "Location", which is a string and you wish to check whether its value is DBNull.
-          If it is DBNull you would want to convert it to null. Here are the steps:
+If the database has fields that can be Null then you need to add converters for those fields. For example, let's suppose that the database has a field "Location", which is a string and you wish to check whether its value is DBNull. If it is DBNull you would want to convert it to null. Here are the steps:
         
-
-1. Create a conversion method with the following signature:#_[C#]_
-
-	
-
-
+1\. Create a conversion method with the following signature:#_[C#]_
 
 {{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=locationCallback}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=locationCallback}} 
@@ -175,14 +150,7 @@ If the database has fields that can be Null then you need to add converters for 
 
 {{endregion}} 
 
-
-
-
-1. Apply the Location mapping settings in the AppointmentMappingInfo:#_[C#]_
-
-	
-
-
+2\. Apply the Location mapping settings in the AppointmentMappingInfo:#_[C#]_
 
 {{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=location}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=location}} 
@@ -203,25 +171,13 @@ If the database has fields that can be Null then you need to add converters for 
 
 {{endregion}} 
 
-
-
-             
-          
-
 ## The ID field is not a Guid, or is not read only in the Data base
 
-If the Id field type is different than a Guid, and/or it is not read only in the data table, then you will need to
-          add a converter to convert the type to a Guid. This case holds true for __Resources__ and
-          __Appointments__.
-        
+If the Id field type is different than a Guid, and/or it is not read only in the data table, then you will need to add a converter to convert the type to a Guid. This case holds true for __Resources__ and __Appointments__.
 
 If Id is read only in the data set, then the Scheduler will rely on the way the data set handles read only Id's.
 
-1. Create a methods with the following signatures#_[C#]_
-
-	
-
-
+1\. Create a methods with the following signatures
 
 {{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=NullFieldsInTheDataBase}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=NullFieldsInTheDataBase}} 
@@ -263,14 +219,7 @@ If Id is read only in the data set, then the Scheduler will rely on the way the 
 
 {{endregion}} 
 
-
-
-
-1. Apply the settings of the UniqueId mapping in the AppointmentMappingInfo: #_[C#]_
-
-	
-
-
+2\. Apply the settings of the UniqueId mapping in the AppointmentMappingInfo:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=ApplyUniqueId}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=ApplyUniqueId}} 

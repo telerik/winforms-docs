@@ -72,9 +72,9 @@ End Class
 
 {{endregion}} 
 
-2\. Implement a simple appointment factory and inherit from the default appointment dialog and add some input controls and logic for your custom field. The easiest way to do the latter is to create a form in Visual Studio that inherits from the standard *Edit Appointment *dialog, then open it in the designer, and add your custom UI. The extended form from the example is shown on the screenshot below (notice the Email field on it):
+3\. Implement a simple appointment factory and inherit from the default appointment dialog and add some input controls and logic for your custom field. The easiest way to do the latter is to create a form in Visual Studio that inherits from the standard *Edit Appointment *dialog, then open it in the designer, and add your custom UI. The extended form from the example is shown on the screenshot below (notice the Email field on it):
 
-3\.  ![scheduler-data-binding-binding-to-custom-fields 001](images/scheduler-data-binding-binding-to-custom-fields001.png)
+![scheduler-data-binding-binding-to-custom-fields 001](images/scheduler-data-binding-binding-to-custom-fields001.png)
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.cs region=customAppFactory}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.vb region=customAppFactory}} 
@@ -173,30 +173,24 @@ End Class
 
 {{endregion}} 
 
-
-Note that the inherits clause in VB is in the form designer#_[VB.NET]_
-
 4\. You should assign the custom AppointmentFactory to RadScheduler:
                 
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.Designer.vb region=inheritsInVB}} 
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=customFactory}} 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=customFactory}} 
 ````C#
             this.radScheduler1.AppointmentFactory = new CustomAppointmentFactory();
 ````
 ````VB.NET
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class CustomAppointmentEditForm
-    Inherits Telerik.WinControls.UI.Scheduler.Dialogs.EditAppointmentDialog
-    '
+
 ````
 
 {{endregion}} 
 
-1. You need to handle the AppointmentEditDialogShowing event of RadScheduler in order to replace the default appointment dialog with a custom one. You will also have to
+5\. You need to handle the AppointmentEditDialogShowing event of RadScheduler in order to replace the default appointment dialog with a custom one. You will also have to
               give an instance of your appointment factory to the RadScheduler so it can create instances of your custom appointment class:
             
 
-{{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=customFactory}} 
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=loadAndShowing}} 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=loadAndShowing}} 
 ````C#
         private IEditAppointmentDialog appointmentDialog = null;  
@@ -224,9 +218,9 @@ Partial Class CustomAppointmentEditForm
 
 {{endregion}} 
 
-5\. Finally, you have to add a mapping for your custom field to the appointment mapping info. Note that the same appointment factory instance is assigned to the event provider.
+6\. Finally, you have to add a mapping for your custom field to the appointment mapping info. Note that the same appointment factory instance is assigned to the event provider.
             
-{{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=loadAndShowing}} 
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=mappings}} 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=mappings}} 
 ````C#
             SchedulerBindingDataSource dataSource = new SchedulerBindingDataSource(); 

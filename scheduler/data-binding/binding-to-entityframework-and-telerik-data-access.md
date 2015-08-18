@@ -12,35 +12,17 @@ position: 13
 
 
 
-Binding to an ORM is similar to binding to a [DataSet]({%slug winforms/scheduler/data-binding/using-datasource-property%}). First you will need to create the models out of an existing database.
-        You can read how to do that for Entity Framework [
-            here
-          ](
-            http://msdn.microsoft.com/en-us/data/jj206878.aspx
-          ). And for Telerik Data Access [
-            here
-          ](
-            http://docs.telerik.com/data-access/getting-started/getting-started-root-generating-model-mappings-taking-database-first-approach
-          ).
-      
+Binding to an ORM is similar to binding to a [DataSet]({%slug winforms/scheduler/data-binding/using-datasource-property%}). First you will need to create the models out of an existing database. You can read how to do that for Entity Framework [here](http://msdn.microsoft.com/en-us/data/jj206878.aspx). And for Telerik Data Access [here](http://docs.telerik.com/data-access/getting-started/getting-started-root-generating-model-mappings-taking-database-first-approach).
 
-For the purpose of this tutorial you can download a sample database from the [
-            here
-          ](
-            http://www.telerik.com/docs/default-source/ui-for-winforms/schedulerdatasql.zip
-          ).
-      
+For the purpose of this tutorial you can download a sample database from the [ here]( http://www.telerik.com/docs/default-source/ui-for-winforms/schedulerdatasql.zip).
 
 ## 
 
-After you have mapped your database to local entities your tables should look like this:![scheduler data binding binding to entity framework and telerik data access001](images/scheduler-data-binding-binding-to-entity-framework-and-telerik-data-access001.png)
+After you have mapped your database to local entities your tables should look like this:
+
+![scheduler data binding binding to entity framework and telerik data access001](images/scheduler-data-binding-binding-to-entity-framework-and-telerik-data-access001.png)
 
 Now, you need to create a form and add a RadScheduler, in this tutorial it is named *scheduler*. After this we will need to access out data from the database. For this we will need a [DbContext](http://msdn.microsoft.com/en-us/library/system.data.entity.dbcontext(v=vs.113).aspx) reference. In my case my DbContext is of type __SchedulerDataEntities1__, so we can create it as follows:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=DbContext}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=DbContext}} 
@@ -54,15 +36,7 @@ Now, you need to create a form and add a RadScheduler, in this tutorial it is na
 
 {{endregion}} 
 
-
-
-
 Then, we will need a __SchedulerBindingDataSource__, __AppointmentMappingInfo__ and __ResourceMappingInfo__ which we will use to map our data. You can create them in the Form's constructor.
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=Mappings}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=Mappings}} 
@@ -81,18 +55,9 @@ Then, we will need a __SchedulerBindingDataSource__, __AppointmentMappingInfo__ 
 
 {{endregion}} 
 
-
-
-
 Now you just need to setup the mappings. The approaches for *Entity Framework* and *Telerik Data Access* are a bit different.
-        
 
 Below you can see the code you need to use with *Entity Framework*:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=EFCode}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=EFCode}} 
@@ -159,19 +124,10 @@ Below you can see the code you need to use with *Entity Framework*:
 
 {{endregion}} 
 
-
-
-
 >important In order to use the __Load__ extension method you need to add *System.Data.Entity* to your usings(C#) or Imports(VB).
 >
 
-
 And the following code needs to be used with *Telerik Data Access*:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=TDACode}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=TDACode}} 
@@ -228,15 +184,7 @@ And the following code needs to be used with *Telerik Data Access*:
 
 {{endregion}} 
 
-
-
-
 The last step that you need to take in order to complete the binding process is to assign the DataSource property of RadScheduler and group it by resource:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=DataSourceAndGroup}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=DataSourceAndGroup}} 
@@ -252,15 +200,7 @@ The last step that you need to take in order to complete the binding process is 
 
 {{endregion}} 
 
-
-
-
 Saving changes to the database happens when the __SaveChanges__ method of the DbContext is invoked. You can invoke it on a button click or when the form is closing:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=Closing}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=Closing}} 

@@ -81,17 +81,19 @@ This tutorial will show you how to bind RadScheduler from the Visual Studio desi
 
 1. While still in the __SchedulerBindingDataSource__ ActionList, click on the *Edit Appointment Mapping* link.![scheduler-data-binding-codeless-data-binding 007](images/scheduler-data-binding-codeless-data-binding007.png) This will invoke the *Appointment Mapping Dialog* which provides you with an easy and intuitive UI for mapping __Appointment__ properties with __DataSource__ properties. Map all of the properties with their respective counterpart, whereas:
 
-1. __UniqueID__ is the ID of your appointments
+  1. __UniqueID__ is the ID of your appointments
 
-1. __[Resources]({%slug winforms/scheduler/data-binding/working-with-resources%})__ is a relation in the dataset, in this case __AppointmentsAppointmentsResources__
+  1. __[Resources]({%slug winforms/scheduler/data-binding/working-with-resources%})__ is a relation in the dataset, in this case __AppointmentsAppointmentsResources__
 
-1. __[Exceptions]({%slug winforms/scheduler/data-binding/working-with-exceptions%})__ is a self-relation in the dataset, in this case __AppointmentsAppointments__. At the end the *Appointment Mapping Dialog* should look like the following screenshot. Save and Close the dialog when done:
+  1. __[Exceptions]({%slug winforms/scheduler/data-binding/working-with-exceptions%})__ is a self-relation in the dataset, in this case __AppointmentsAppointments__. At the end the *Appointment Mapping Dialog* should look like the following screenshot. Save and Close the dialog when done:
 
-  ![scheduler-data-binding-codeless-data-binding 008](images/scheduler-data-binding-codeless-data-binding008.png)  
+    ![scheduler-data-binding-codeless-data-binding 008](images/scheduler-data-binding-codeless-data-binding008.png)  
 
 1. By using the __SchedulerBindingDataSource__ ActionList, click on the *Edit Resource Mapping* link to edit the ResourceMappingInfo:![scheduler-data-binding-codeless-data-binding 009](images/scheduler-data-binding-codeless-data-binding009.png)
 
-1. Select the ID and ResourceName for the respective properties and close the dialog:![scheduler-data-binding-codeless-data-binding 010](images/scheduler-data-binding-codeless-data-binding010.png)
+1. Select the ID and ResourceName for the respective properties and close the dialog:
+
+  ![scheduler-data-binding-codeless-data-binding 010](images/scheduler-data-binding-codeless-data-binding010.png)
 
 1. Fill the data tables in the data set:
 
@@ -118,7 +120,7 @@ This tutorial will show you how to bind RadScheduler from the Visual Studio desi
 
 {{endregion}} 
 
-1. Use the __Rebind__ method of the SchedulerBindingDataSource object if the dataset is filled after applying the event provider data source:
+20\. Use the __Rebind__ method of the SchedulerBindingDataSource object if the dataset is filled after applying the event provider data source:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=Rebind}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=Rebind}} 
@@ -133,4 +135,4 @@ This tutorial will show you how to bind RadScheduler from the Visual Studio desi
 
 {{endregion}} 
 
-23\. Run the project.
+21\. Run the project.

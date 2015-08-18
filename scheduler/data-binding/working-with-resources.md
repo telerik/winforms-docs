@@ -10,8 +10,6 @@ position: 8
 
 # Working with Resources
 
-
-
 ## Overview
 
 For the end-user, RadScheduler resources can be company resources, such as conference rooms, vehicles, laptops, or AV equipment, which can be booked and assigned to a particular event.
@@ -25,9 +23,6 @@ See the [Using DataSource property]({%slug winforms/scheduler/data-binding/using
 >Do not set the __Resources__ property of the AppointmentMappingInfo object to "Resources" if the data bound object has a property that has no Resources collection, but has only a __ResourceId__ property.
 >
 
-
-
-
 ## Adding Resources Manually
 
 To add resources to RadScheduler's Resource drop down (visible in the appointment dialog by default), you need to use the Resources collection's __Add()__ method and to pass a new Resource instance. Pass a unique ID and a description in the constructor:
@@ -35,11 +30,6 @@ To add resources to RadScheduler's Resource drop down (visible in the appointmen
 
 >note A Resource object also has an __Image__ property that is not displayed as of this writing. In the near future, resource images will be displayed by the scheduler in the resource selection control.
 >
-#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithResources.cs region=loadResources}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithResources.vb region=loadResources}} 
@@ -68,6 +58,5 @@ To add resources to RadScheduler's Resource drop down (visible in the appointmen
 ````
 
 {{endregion}} 
-
 
 ![scheduler-data-binding-working-with-resources 001](images/scheduler-data-binding-working-with-resources001.png)
