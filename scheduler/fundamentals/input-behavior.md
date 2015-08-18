@@ -10,8 +10,6 @@ position: 1
 
 # Input behavior
 
-
-
 The __SchedulerInputBehavior__ is responsible for processing the keyboard and mouse input in RadScheduler. 
 
 ## 
@@ -40,16 +38,7 @@ Below are the methods which handle the respective events:
 
 * HandleCellElementKeyPress
 
-Every one of these methods can be overridden and the instance of the __SchedulerInputBehavior__ used 
-          in RadScheduler can be replaced with a custom one. This allows you to modify the default behavior 
-          of RadScheduler. The following example demonstrates how to modify 
-          the default behavior to allow moving appointments via CTRL + arrow keys. 
-          In order to accomplish this, we will need to create a descendant of SchedulerInputBehavior and override the HandleKeyDown method:
-        #_[C#] _
-
-	
-
-
+Every one of these methods can be overridden and the instance of the __SchedulerInputBehavior__ used in RadScheduler can be replaced with a custom one. This allows you to modify the default behavior of RadScheduler. The following example demonstrates how to modify the default behavior to allow moving appointments via CTRL + arrow keys. In order to accomplish this, we will need to create a descendant of SchedulerInputBehavior and override the HandleKeyDown method:
 
 {{source=..\SamplesCS\Scheduler\Fundamentals\InputBehavior.cs region=Behavior}} 
 {{source=..\SamplesVB\Scheduler\Fundamentals\InputBehavior.vb region=Behavior}} 
@@ -112,15 +101,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
 Now we need to assign this new input behavior to the __SchedulerInputBehavior__ property of RadScheduler:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\Fundamentals\InputBehavior.cs region=SetBehavior}} 
 {{source=..\SamplesVB\Scheduler\Fundamentals\InputBehavior.vb region=SetBehavior}} 
@@ -135,8 +116,6 @@ Now we need to assign this new input behavior to the __SchedulerInputBehavior__ 
 
 {{endregion}} 
 
-
-
-
 You can see the result below:
-        ![scheduler-fundamentals-input-behavior 001](images/scheduler-fundamentals-input-behavior001.gif)
+
+![scheduler-fundamentals-input-behavior 001](images/scheduler-fundamentals-input-behavior001.gif)

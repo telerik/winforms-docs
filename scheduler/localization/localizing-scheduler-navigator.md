@@ -10,18 +10,9 @@ position: 1
 
 # Localizing Scheduler Navigator
 
-
-
 ## 
 
-The __RadSchedulerNavigator__ control uses the __SchedulerNavigatorLocalizationProvider__ class to define the default
-          values for all strings that are displayed to the user.  You can easily override the default localization by inheriting from the
-          __SchedulerNavigatorLocalizationProvider__ class and override its __GetLocalizedString__ method: 
-        #_[C#]_
-
-	
-
-
+The __RadSchedulerNavigator__ control uses the __SchedulerNavigatorLocalizationProvider__ class to define the default values for all strings that are displayed to the user.  You can easily override the default localization by inheriting from the __SchedulerNavigatorLocalizationProvider__ class and override its __GetLocalizedString__ method:
 
 {{source=..\SamplesCS\Scheduler\Localization\CustomNavigatorLocalizationProvider.cs region=navigatorProvider}} 
 {{source=..\SamplesVB\Scheduler\Localization\CustomNavigatorLocalizationProvider.vb region=navigatorProvider}} 
@@ -102,16 +93,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-In order to utilize the new Localization Provider, you should create an instance of the new provider and assign it to the static
-          __CurrentProvider__ property of __SchedulerNavigatorLocalizationProvider__ class:
-        #_[C#]_
-
-	
-
-
+In order to utilize the new Localization Provider, you should create an instance of the new provider and assign it to the static __CurrentProvider__ property of __SchedulerNavigatorLocalizationProvider__ class:
 
 {{source=..\SamplesCS\Scheduler\Localization\AssignProviders.cs region=assignNavigatorProvider}} 
 {{source=..\SamplesVB\Scheduler\Localization\AssignProviders.vb region=assignNavigatorProvider}} 
@@ -124,7 +106,4 @@ In order to utilize the new Localization Provider, you should create an instance
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

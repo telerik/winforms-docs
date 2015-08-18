@@ -10,25 +10,13 @@ position: 2
 
 # Combining RadDragDropService and OLE drag-and-drop
 
+This article demonstrates a sample approach how to achieve drag and drop functionality between __RadScheduler__ and __RadListControl__. For this purpose, we will use a combination between the __RadDragDropService__, supported by the __RadScheduler__ control, and the OLE drag-and-drop, which is supported by all controls from the Telerik UI for WinForms suite.
 
-
-This article demonstrates a sample approach how to achieve drag and drop functionality between __RadScheduler__ and __RadListControl__.
-      For this purpose, we will use a combination between the __RadDragDropService__, supported by the __RadScheduler__ control, and the OLE drag-and-drop,
-      which is supported by all controls from the Telerik UI for WinForms suite.
-
-Let’s assume that our __RadScheduler__ is in  [bound mode]({%slug winforms/scheduler/data-binding/data-binding-walkthrough%}) 
-        and the __RadListControl__ is populated manually with items. Set the __AllowDrop__ property to *true* for both of the controls.
+Let’s assume that our __RadScheduler__ is in  [bound mode]({%slug winforms/scheduler/data-binding/data-binding-walkthrough%}) and the __RadListControl__ is populated manually with items. Set the __AllowDrop__ property to *true* for both of the controls.
 
 ## Drag and drop from RadScheduler to RadListControl using RadDragDropService
 
-To implement drag and drop functionality for this scenario, we will use the SchedulerElement.__DragDropBehavior__,
-        which is a derivative of the __RadDragDropService__. Subscribe to its __PreviewDragOver__ and __PreviewDragDrop__ events.
-        In the __PreviewDragOver__ event allow dropping over a __RadListElement__. The __PreviewDragDrop__ event performs the actual
-        inserting of the dragged appointment into the __RadListControl.Items__ collection:#_[C#]_
-
-	
-
-
+To implement drag and drop functionality for this scenario, we will use the SchedulerElement.__DragDropBehavior__, which is a derivative of the __RadDragDropService__. Subscribe to its __PreviewDragOver__ and __PreviewDragDrop__ events. In the __PreviewDragOver__ event allow dropping over a __RadListElement__. The __PreviewDragDrop__ event performs the actual inserting of the dragged appointment into the __RadListControl.Items__ collection:
 
 {{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToListControl.cs region=RadSchedulerToRadListControl}} 
 {{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToListControl.vb region=RadSchedulerToRadListControl}} 
@@ -196,20 +184,12 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 
 ![scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop 001](images/scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop001.gif)
 
->note As we remove the dragged appointment,it is necessary to save the performed changes in the data source.
-          Please refer to[Data Binding Walkthrough]({%slug winforms/scheduler/data-binding/data-binding-walkthrough%})>> Updating the database.
+>note As we remove the dragged appointment,it is necessary to save the performed changes in the data source.Please refer to [Data Binding Walkthrough]({%slug winforms/scheduler/data-binding/data-binding-walkthrough%}) article.
 >
-
 
 ## Drag and drop from RadListControl to RadScheduler using the OLE drag-and-drop
 
-1. Firstly, we should start the drag and drop operation using the RadListControl.__MouseMove__ event when the left mouse button is pressed.
-            Afterwards, allow dragging over the __RadScheduler__ via the __Effect__ argument of the __DragEventArgs__
-              in the RadScheduler.__DragEnter__ event handler:#_[C#]_
-
-	
-
-
+1. Firstly, we should start the drag and drop operation using the RadListControl.__MouseMove__ event when the left mouse button is pressed.  Afterwards, allow dragging over the __RadScheduler__ via the __Effect__ argument of the __DragEventArgs__ in the RadScheduler.__DragEnter__ event handler:
 
 {{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToListControl.cs region=StartDragDrop}} 
 {{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToListControl.vb region=StartDragDrop}} 
@@ -301,16 +281,7 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 
 {{endregion}} 
 
-
-
-
-1. In the RadScheduler.__DragDrop__ event you need to get the location of the mouse and convert it to a point
-            that the scheduler can use to get the cell element underneath the mouse.
-            This __MonthCellElement__ is passed to a private method __GetCellAppointment()__ that we will write next:#_[C#]_
-
-	
-
-
+2\. In the RadScheduler.__DragDrop__ event you need to get the location of the mouse and convert it to a point that the scheduler can use to get the cell element underneath the mouse. This __MonthCellElement__ is passed to a private method __GetCellAppointment__ that we will write next:
 
 {{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToListControl.cs region=DoDragDrop}} 
 {{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToListControl.vb region=DoDragDrop}} 
@@ -372,15 +343,7 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 
 {{endregion}} 
 
-
-
-
-1. The helper method __CreateAppointment()__ creates an appointment, starting at the cell where the __RadListControl__ item is dropped.
-            This appointment gets its data from the dragged item.#_[C#]_
-
-	
-
-
+3\. The helper method __CreateAppointment()__ creates an appointment, starting at the cell where the __RadListControl__ item is dropped. This appointment gets its data from the dragged item.
 
 {{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToListControl.cs region=DragHelper}} 
 {{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToListControl.vb region=DragHelper}} 
@@ -520,6 +483,5 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 ````
 
 {{endregion}} 
-
 
 ![scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop 002](images/scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop002.gif)

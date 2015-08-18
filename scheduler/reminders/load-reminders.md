@@ -10,16 +10,9 @@ position: 3
 
 # Save/Load reminders
 
-
-
 ## 
 
-__RadScheduler__ allows you to save and load the reminders set for appointments.
-          Reminders are saved into an xml file format to a user provider file path or stream. To save the reminders
-          for a given scheduler you should call the __SaveRemidners__ method of __RadScheduler__ and provide a path where the file should be saved:#_[C#]_
-
-	
-
+__RadScheduler__ allows you to save and load the reminders set for appointments. Reminders are saved into an xml file format to a user provider file path or stream. To save the reminders for a given scheduler you should call the __SaveRemidners__ method of __RadScheduler__ and provide a path where the file should be saved:
 
 
 {{source=..\SamplesCS\Scheduler\Reminders\SaveLoadReminders.cs region=SaveReminders}} 
@@ -35,18 +28,10 @@ __RadScheduler__ allows you to save and load the reminders set for appointments.
 
 {{endregion}} 
 
-
-
-
 >note When you load reminders you should first have the appointments loaded in __RadScheduler__ so the load mechanism can identify them and restore their reminders.
 >
 
-
-You can load saved reminders into RadScheduler is by calling the LoadReminders method:#_[C#]_
-
-	
-
-
+You can load saved reminders into RadScheduler is by calling the LoadReminders method:
 
 {{source=..\SamplesCS\Scheduler\Reminders\SaveLoadReminders.cs region=LoadReminders}} 
 {{source=..\SamplesVB\Scheduler\Reminders\SaveLoadReminders.vb region=LoadReminders}} 
@@ -62,28 +47,14 @@ You can load saved reminders into RadScheduler is by calling the LoadReminders m
 {{endregion}} 
 
 
-
-
-__SchedulerSaveLoadRemindersBehavior__ is the class that handles the saving and loading of reminders inside __RadScheduler__.
-      You can inherit this class and provide your own custom logic for saving and loading appointments. 
-      After you have your custom implementation all you have to do is assign it to the __SaveLoadRemindersBehavior__  property of __RadScheduler__:#_[C#]_
-
-	
-
-#_[C#]_
-
-	
-
-#_[VB.NET]_
-
-	
-
-
+__SchedulerSaveLoadRemindersBehavior__ is the class that handles the saving and loading of reminders inside __RadScheduler__. You can inherit this class and provide your own custom logic for saving and loading appointments. After you have your custom implementation all you have to do is assign it to the __SaveLoadRemindersBehavior__  property of __RadScheduler__:
 
 {{source=..\SamplesCS\Scheduler\Reminders\SaveLoadReminders.cs region=CustomSaveLoadRemindersBehavior}} 
-{{source=..\SamplesCS\Scheduler\Reminders\SaveLoadReminders.cs region=SetRemindersBehavior}} 
 {{source=..\SamplesVB\Scheduler\Reminders\SaveLoadReminders.vb region=CustomSaveLoadRemindersBehavior}} 
 
+{{endregion}} 
+
+{{source=..\SamplesCS\Scheduler\Reminders\SaveLoadReminders.cs region=SetRemindersBehavior}} 
 {{source=..\SamplesVB\Scheduler\Reminders\SaveLoadReminders.vb region=SetRemindersBehavior}} 
 
 ````C#

@@ -10,20 +10,11 @@ position: 0
 
 # Import from ICalendar
 
-
-
-## 
-
-
-
 |RELATED VIDEOS|
-|Using RadScheduler for WinFormsHave you had a need to build scheduler functionality into your applications? If so, then this webinar is for you, where Telerik Evangelist John Kellar shows a variety of features like iCal support, multiple view options, strong data binding support, and an out of the box appointment dialogs. (Runtime: 32:46)[](http://tv.telerik.com/winforms/radscheduler/scheduler)|
+|----|
+|Have you had a need to build scheduler functionality into your applications? If so, then this webinar is for you, where Telerik Evangelist John Kellar shows a variety of features like iCal support, multiple view options, strong data binding support, and an out of the box appointment dialogs.[(Runtime: 32:46)](http://www.telerik.com/videos/winforms/using-radscheduler-for-winforms)|
 
-RadScheduler allows you to import appointments from the industry-standard ICalendar format by using the __Import__ method of the __RadScheduler__ class. Using this method you can very easily Import the appointments from a given SchedulerICalendarImporter instance and a string:#_[C#]_
-
-	
-
-
+RadScheduler allows you to import appointments from the industry-standard ICalendar format by using the __Import__ method of the __RadScheduler__ class. Using this method you can very easily Import the appointments from a given SchedulerICalendarImporter instance and a string:
 
 {{source=..\SamplesCS\Scheduler\ImportExport\ImEx.cs region=iCalImport}} 
 {{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=iCalImport}} 
@@ -40,14 +31,7 @@ RadScheduler allows you to import appointments from the industry-standard ICalen
 
 {{endregion}} 
 
-
-
-
-Another override of the __Import__ method allows you to read appointment data from a Stream:#_[C#]_
-
-	
-
-
+Another override of the __Import__ method allows you to read appointment data from a Stream:
 
 {{source=..\SamplesCS\Scheduler\ImportExport\ImEx.cs region=iCalIFile}} 
 {{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=iCalIFile}} 
@@ -65,9 +49,5 @@ Another override of the __Import__ method allows you to read appointment data fr
         '
 ````
 
-{{endregion}} 
-
-
-
-
+{{endregion}}
 

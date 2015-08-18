@@ -10,54 +10,28 @@ position: 3
 
 # Scheduler Selection
 
-
-
 ## Cell selection
 
-The end user is allowed to perform a single cell selection pressing the left/right mouse button. In order to select a range of cells,
-          it is necessary to hold the Shift key pressed while pressing the mouse button over a specific cell or by dragging through a range of cells.
-          The __CellSelectionChanging__ and the __CellSelectionChanged__ events are fired when the cell
-          selection is altered. The __SchedulerCellSelectingEventArgs__ gives you additional information for the selection range.
-        
+The end user is allowed to perform a single cell selection pressing the left/right mouse button. In order to select a range of cells, it is necessary to hold the Shift key pressed while pressing the mouse button over a specific cell or by dragging through a range of cells. The __CellSelectionChanging__ and the __CellSelectionChanged__ events are fired when the cell selection is altered. The __SchedulerCellSelectingEventArgs__ gives you additional information for the selection range.
 
 ## Appointment selection
 
-The end user is allowed to perform a single appointment selection pressing the left/right mouse button. In order to select a range of appointments,
-        it is necessary to set the __AllowAppointmentsMultiSelect__ property to *true* and hold the Ctrl key 
-        pressed while pressing the mouse button over a certain appointment. You can track the appointments selection changes using the __AppointmentSelecting__ and the
-        __AppointmentSelected__ events. The __SchedulerAppointmentCancelEventArgs__ and the __SchedulerAppointmentSelectedEventArgs__
-        give you additional information about the performed selection.
+The end user is allowed to perform a single appointment selection pressing the left/right mouse button. In order to select a range of appointments, it is necessary to set the __AllowAppointmentsMultiSelect__ property to *true* and hold the Ctrl key  pressed while pressing the mouse button over a certain appointment. You can track the appointments selection changes using the __AppointmentSelecting__ and the __AppointmentSelected__ events. The __SchedulerAppointmentCancelEventArgs__ and the __SchedulerAppointmentSelectedEventArgs__ give you additional information about the performed selection.
 
 ## Using the SelectionBehavior
 
-__SchedulerSelectionBehavior__ performs selection operations and provides information about
-          the current selection of cells and appointments in __RadScheduler__.
+__SchedulerSelectionBehavior__ performs selection operations and provides information about the current selection of cells and appointments in __RadScheduler__.
 
-* Getting the current cell selection: the SelectionBehavior.__CurrentCell__ and the SelectionBehavior.
-            __CurrentCellElement__ properties return the current cell position and the currently 
-            selected __SchedulerCellElement__ respectively. In addition, it is possible to access the range of the selected cells.
-            The SelectionBehavior.__SelectionStartDate__ property returns the start date of the currently selected cell/cell range.
-              The SelectionBehavior.__SelectionEndDate__ property returns the end date of the currently selected cell/cell range.
-              In order to detect whether there are selected cells, use the __HasCellsSelected__ property.
+* Getting the current cell selection: the SelectionBehavior.__CurrentCell__ and the SelectionBehavior. __CurrentCellElement__ properties return the current cell position and the currently  selected __SchedulerCellElement__ respectively. In addition, it is possible to access the range of the selected cells. The SelectionBehavior.__SelectionStartDate__ property returns the start date of the currently selected cell/cell range. The SelectionBehavior.__SelectionEndDate__ property returns the end date of the currently selected cell/cell range. In order to detect whether there are selected cells, use the __HasCellsSelected__ property.
             
 
-* Getting the selected appointment and selected appointments: the SelectionBehavior.__SelectedAppointment__
-              property returns the currently selected appointment. If the __AllowAppointmentsMultiSelect__ property is
-              set to *true*, you can use the SelectionBehavior.__SelectedAppointments__
-              property, which returns a collection the currently selected appointments. In order to detect whether there are selected appointments,
-              use the __HasAppointmentsSelected__ property.
+* Getting the selected appointment and selected appointments: the SelectionBehavior.__SelectedAppointment__ property returns the currently selected appointment. If the __AllowAppointmentsMultiSelect__ property is set to *true*, you can use the SelectionBehavior.__SelectedAppointments__ property, which returns a collection the currently selected appointments. In order to detect whether there are selected appointments, use the __HasAppointmentsSelected__ property.
             
-
 * Programmatically selecting cells and appointments: there are several methods, which allows you to modify the selection.
-
 
 | Method | Description |
 | ------ | ------ |
-|SelectAppointment(IEvent appointment, bool extend)|Selects an appointment given as parameter. The *extend* parameter indicates whether the selection will be extended or not.
-                  If multiple selection is allowed and the *extend* parameter is true, the appointment, given as parameter, will be added to the __SelectedAppointments__ collection. If this appointment is currently selected, calling the __SelectAppointment__ method will unselect it. If the *extend* parameter is false, the appointment,
-                  given as parameter, will remain the only selected appointment, no matter if it is currently selected or not. 
-                  If multiple selection is not allowed, the appointment, given as parameter, will remain the
-                  only selected appointment.|
+|SelectAppointment(IEvent appointment, bool extend)|Selects an appointment given as parameter. The *extend* parameter indicates whether the selection will be extended or not.If multiple selection is allowed and the *extend* parameter is true, the appointment, given as parameter, will be added to the __SelectedAppointments__ collection. If this appointment is currently selected, calling the __SelectAppointment__ method will unselect it. If the *extend* parameter is false, the appointment, given as parameter, will remain the only selected appointment, no matter if it is currently selected or not.  If multiple selection is not allowed, the appointment, given as parameter, will remain the only selected appointment.|
 |UnselectAppointment(IEvent appointment)|Unselects the specific appointment.|
 |ResetAppointmentSelection|Clears all selected appointments.|
 |IsAppointmentSelected(IEvent appointment)|Indicates whether a specific appointment is selected or not.|
@@ -73,16 +47,10 @@ __SchedulerSelectionBehavior__ performs selection operations and provides inform
 
 ## Custom SelectionBehavior
 
-The default behavior of the
-          __RadScheduler__ selection can be modified programmatically.
+The default behavior of the  __RadScheduler__ selection can be modified programmatically.
         
 
-1. This can be achieved by creating a derivative of the __SchedulerSelectionBehavior__:
-            #_[C#] _
-
-	
-
-
+1\. This can be achieved by creating a derivative of the __SchedulerSelectionBehavior__:
 
 {{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=SchedulerSelectionBehavior}} 
 {{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=SchedulerSelectionBehavior}} 
@@ -108,15 +76,7 @@ The default behavior of the
 
 {{endregion}} 
 
-
-
-
-1. Override the __SelectAppointment__ method and allow selection only for appointments off work hours:
-            #_[C#] _
-
-	
-
-
+2\. Override the __SelectAppointment__ method and allow selection only for appointments off work hours:
 
 {{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=SelectAppointment}} 
 {{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=SelectAppointment}} 
@@ -148,15 +108,7 @@ The default behavior of the
 
 {{endregion}} 
 
-
-
-
-1. Apply this behavior to the __RadScheduler__:
-            #_[C#] _
-
-	
-
-
+3\. Apply this behavior to the __RadScheduler__:
 
 {{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=ReplaceSelectionBehavior}} 
 {{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=ReplaceSelectionBehavior}} 

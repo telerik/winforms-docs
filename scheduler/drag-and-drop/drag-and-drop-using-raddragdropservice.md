@@ -10,24 +10,13 @@ position: 1
 
 # Drag and Drop using RadDragDropService
 
-
-
-This article will guide you through the process of achieving drag and drop functionality from __RadScheduler__ to __RadGridView__ and vice versa.
-      For this purpose, we will use the __RadDragDropService__, supported by both of the controls.
+This article will guide you through the process of achieving drag and drop functionality from __RadScheduler__ to __RadGridView__ and vice versa. For this purpose, we will use the __RadDragDropService__, supported by both of the controls.
 
 Let’s assume that our __RadScheduler__ is in unbound mode and the __RadGridView__ control is bound to *Appointments* data table. 
 
 ## Drag and Drop from RadGridView to RadScheduler
 
-1. The first thing we need to do is to start the __RadGridView__’s
-              drag and drop service when a user clicks on a row with the left mouse down.
-              For this purpose we should create a custom
-              [grid behavior]({%slug winforms/gridview/rows/row-behaviors%}):
-            #_[C#]_
-
-	
-
-
+1. The first thing we need to do is to start the __RadGridView__’s drag and drop service when a user clicks on a row with the left mouse down. For this purpose we should create a custom [grid behavior]({%slug winforms/gridview/rows/row-behaviors%}):
 
 {{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToGrid.cs region=CustomRowGridBehavior}} 
 {{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToGrid.vb region=CustomRowGridBehavior}} 
@@ -67,14 +56,7 @@ Let’s assume that our __RadScheduler__ is in unbound mode and the __RadGridVie
 
 {{endregion}} 
 
-
-
-
-1. Next, we should register this behavior in our grid:#_[C#]_
-
-	
-
-
+2\. Next, we should register this behavior in our grid:
 
 {{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToGrid.cs region=RegisterGridBehavior}} 
 {{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToGrid.vb region=RegisterGridBehavior}} 
@@ -97,17 +79,7 @@ Let’s assume that our __RadScheduler__ is in unbound mode and the __RadGridVie
 
 {{endregion}} 
 
-
-
-
-1. It is necessary to subscribe to the __PreviewDragStart__, __PreviewDragOver__ and __PreviewDragDrop__ events of the grid’s 
-            __RadDragDropService__. The __PreviewDragStart__ event is fired once the drag and drop service on the grid is started. 
-            We should notify the service that the drag and drop operation can move forward. In the __PreviewDragOver__ event you can control on what targets to allow dropping the dragged row.
-            The __PreviewDragDrop__ event performs the actual move of the row from the __RadGridView__ to the __RadScheduler__.#_[C#]_
-
-	
-
-
+3\. It is necessary to subscribe to the __PreviewDragStart__, __PreviewDragOver__ and __PreviewDragDrop__ events of the grid’s __RadDragDropService__. The __PreviewDragStart__ event is fired once the drag and drop service on the grid is started. We should notify the service that the drag and drop operation can move forward. In the __PreviewDragOver__ event you can control on what targets to allow dropping the dragged row. The __PreviewDragDrop__ event performs the actual move of the row from the __RadGridView__ to the __RadScheduler__.
 
 {{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToGrid.cs region=RadDragDropService}} 
 {{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToGrid.vb region=RadDragDropService}} 
@@ -132,13 +104,6 @@ Let’s assume that our __RadScheduler__ is in unbound mode and the __RadGridVie
 ````
 
 {{endregion}} 
-
-
-#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToGrid.cs region=PerformGridToSchedulerDragDrop}} 
 {{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToGrid.vb region=PerformGridToSchedulerDragDrop}} 
@@ -257,24 +222,14 @@ Let’s assume that our __RadScheduler__ is in unbound mode and the __RadGridVie
 
 {{endregion}} 
 
-
-
-
->note The start date of the created appointment is in correspondence with the cell where the row is dropped.
-          The appointment’s duration is relevant to the original duration.
+>note The start date of the created appointment is in correspondence with the cell where the row is dropped. The appointment’s duration is relevant to the original duration.
 >
+
 ![scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice 001](images/scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice001.gif)
 
 ## Drag and Drop from RadScheduler to RadGridView
 
-To implement drag and drop functionality for this scenario, we will use the SchedulerElement.__DragDropBehavior__,
-        which is a derivative of the __RadDragDropService__. Subscribe to its __PreviewDragOver__ and __PreviewDragDrop__ events.
-        In the __PreviewDragOver__ event allow dropping over a row element or over the table element. The __PreviewDragDrop__
-        event performs the actual inserting of the dragged appointment into the __RadGridView__’s data source:#_[C#]_
-
-	
-
-
+To implement drag and drop functionality for this scenario, we will use the SchedulerElement.__DragDropBehavior__, which is a derivative of the __RadDragDropService__. Subscribe to its __PreviewDragOver__ and __PreviewDragDrop__ events. In the __PreviewDragOver__ event allow dropping over a row element or over the table element. The __PreviewDragDrop__ event performs the actual inserting of the dragged appointment into the __RadGridView__’s data source:
 
 {{source=..\SamplesCS\Scheduler\DragDrop\SchedulerToGrid.cs region=SchedulerToGrid}} 
 {{source=..\SamplesVB\Scheduler\DragDrop\SchedulerToGrid.vb region=SchedulerToGrid}} 
@@ -434,6 +389,5 @@ To implement drag and drop functionality for this scenario, we will use the Sche
 ````
 
 {{endregion}} 
-
 
 ![scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice 002](images/scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice002.gif)

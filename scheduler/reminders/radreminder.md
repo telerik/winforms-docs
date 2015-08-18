@@ -11,37 +11,25 @@ position: 0
 # RadReminder
 
 
-
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with RadSchedulerReminder](http://tv.telerik.com/watch/winforms/getting-started-with-radschedulerreminder)In this video, you will learn how to notify users of upcoming appointments through the use of RadSchedulerReminder.|![scheduler-reminders-radreminder 002](images/scheduler-reminders-radreminder002.png)|
+|[Getting Started with RadSchedulerReminder](http://tv.telerik.com/watch/winforms/getting-started-with-radschedulerreminder) In this video, you will learn how to notify users of upcoming appointments through the use of RadSchedulerReminder.|![scheduler-reminders-radreminder 002](images/scheduler-reminders-radreminder002.png)|
 
 ## Overview
 
-__RadReminder__ is a component that reminds you of an object that you pass to it. This object should implement __IRemindObject__ and depending on the values that you set in the implementation of the __IRemindObject__ interface, 
-            __RadReminder__ throws an event. When the event is fired, you can show an appropriate message
-          to the user using
-          [
-              RadDesktopAlert
-            ](http://www.telerik.com/help/winforms/alert_overview.html)
-          or another alert implementation of your choice.
-        ![scheduler-reminders-radreminder 001](images/scheduler-reminders-radreminder001.png)
+__RadReminder__ is a component that reminds you of an object that you pass to it. This object should implement __IRemindObject__ and depending on the values that you set in the implementation of the __IRemindObject__ interface, __RadReminder__ throws an event. When the event is fired, you can show an appropriate message to the user using [RadDesktopAlert](http://www.telerik.com/help/winforms/alert_overview.html) or another alert implementation of your choice.
+
+![scheduler-reminders-radreminder 001](images/scheduler-reminders-radreminder001.png)
 
 ## Properties
 
-
-
-* __TimeInterval__: Determines the interval in which __IRemindObject__ should be notified. The default value is 60000 milliseconds
-              (a minute).
+* __TimeInterval__: Determines the interval in which __IRemindObject__ should be notified. The default value is 60000 milliseconds (a minute).
             
 
 * __ThemeName__: Determines the theme which should be applied to the alarm form.
             
 
 ## Public Methods
-
-
 
 * __StartReminder:__ Starts the reminder.
             
@@ -67,46 +55,23 @@ __RadReminder__ is a component that reminds you of an object that you pass to it
 ## Protected Methods
 
 
-
 * __GetDefaultOwner__: Returns the container form of the RadReminder events.
             
-
-
-
-
 
 ## Events
 
 
-
-* __AlarmFormShowing__: This event is fired before the
-              notification form is shown. *RadAlarmFormShowingArgs* are passed as
-              a parameter of the event. You can use this event to replace the default
-              notification form.
+* __AlarmFormShowing__: This event is fired before the notification form is shown. *RadAlarmFormShowingArgs* are passed as a parameter of the event. You can use this event to replace the default notification form.
             
+* __ItemOpened__: This event is fired when the user tries to open the item from the notification form. RadOpenItemArgs are passed as a parameter of the event. These arguments contain the IRemindObject.
 
-* __ItemOpened__: This event is fired when the user tries to
-              open the item from the notification form. RadOpenItemArgs are passed as a
-              parameter of the event. These arguments contain the IRemindObject.
-            
+* __DataFormatting__: This event is fired on each change of the DueIn property of the RadReminderBindableObject. DueInEventsArgs are passed as a parameter of the event. You can use this event to change the formatting of the DueIn that is represented on the notification form.
 
-* __DataFormatting__: This event is fired on each change of
-              the DueIn property of the RadReminderBindableObject. DueInEventsArgs are
-              passed as a parameter of the event. You can use this event to change the
-              formatting of the DueIn that is represented on the notification form.
-            
-
-* __RemindObjectShown__: This event is fired for each
-              IRemindObject that the reminder should show. RadShowRemindObjectArgs are
-              passed as a parameter of the event. They contain the IRemindObject that
-              should be shown.
-            
+* __RemindObjectShown__: This event is fired for each IRemindObject that the reminder should show. RadShowRemindObjectArgs are passed as a parameter of the event. They contain the IRemindObject that should be shown.
 
 ## IRemindObject
 
 The IRemindObject interface has the following properties that must be implemented in a descendant class.
-          
-        
 
 * __Reminder__: Gets or sets a time span value indicating how much time before the StartDateTime the reminder event should be raised.
           

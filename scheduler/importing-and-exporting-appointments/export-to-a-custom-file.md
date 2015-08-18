@@ -10,19 +10,11 @@ position: 2
 
 # Import/Export to a Custom File
 
-
-
 ## 
 
 In order to import/export the scheduler appointments to a custom file you should:
 
-1. Create custom classes for import and export:
-        		
-          	#_[C#]_
-
-	
-
-
+1\. Create custom classes for import and export:
 
 {{source=..\SamplesCS\Scheduler\ImportExport\CustomImporterExporter.cs region=importExport}} 
 {{source=..\SamplesVB\Scheduler\ImportExport\CustomImporterExporter.vb region=importExport}} 
@@ -92,19 +84,7 @@ End Class
 
 {{endregion}} 
 
-
-
-  
-        	
-		 
-
-1. Then you need to pass the instances of these classes to the Import and Export methods of the scheduler:
-        		
-        	#_[C#]_
-
-	
-
-
+2\. Then you need to pass the instances of these classes to the Import and Export methods of the scheduler:
 
 {{source=..\SamplesCS\Scheduler\ImportExport\ImEx.cs region=imEx}} 
 {{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=imEx}} 
@@ -134,6 +114,4 @@ End Class
 ````
 
 {{endregion}} 
-
-
 

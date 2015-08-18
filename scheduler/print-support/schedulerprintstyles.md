@@ -10,24 +10,12 @@ position: 1
 
 # SchedulerPrintStyles
 
-
-
-Printing in RadScheduler is performed by objects of type __SchedulerPrintStyle__.
-        SchedulerPrintStyle provides a set of options that define the date range of printing
-        and the appearance of the printed pages.
+Printing in RadScheduler is performed by objects of type __SchedulerPrintStyle__. SchedulerPrintStyle provides a set of options that define the date range of printing and the appearance of the printed pages.
       
 
-SchedulerPrintStyle is an abstract class and cannot be instantiated directly.
-        You should use one of the following implementations: __SchedulerDailyPrintStyle__,
-        __SchedulerWeeklyPrintStyle__, __SchedulerMonthlyPrintStyle__,
-        __SchedulerDetailsPrintStyle__.
-      
+SchedulerPrintStyle is an abstract class and cannot be instantiated directly. You should use one of the following implementations: __SchedulerDailyPrintStyle__,__SchedulerWeeklyPrintStyle__, __SchedulerMonthlyPrintStyle__, __SchedulerDetailsPrintStyle__.
 
-To set a RadScheduler with a print style:#_[C#]_
-
-	
-
-
+To set a RadScheduler with a print style:
 
 {{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SetPrintStyle}} 
 {{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SetPrintStyle}} 
@@ -44,18 +32,9 @@ To set a RadScheduler with a print style:#_[C#]_
 
 {{endregion}} 
 
-
-
-
 SchedulerPrintStyle has the following properties:
 
-* __DateStartRange__ and __DateEndRange__ - allows
-            you to specify the date range which should be printed:
-          #_[C#]_
-
-	
-
-
+* __DateStartRange__ and __DateEndRange__ - allows you to specify the date range which should be printed:
 
 {{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SpeficyDateRange}} 
 {{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SpeficyDateRange}} 
@@ -72,17 +51,7 @@ SchedulerPrintStyle has the following properties:
 
 {{endregion}} 
 
-
-
-
-* __TimeStartRange__ and __TimeEndRange__ - allows
-            you to specify the time frame which for every day in the date range - i.e. the time frame which will be
-            printed for each date in the date range period:
-          #_[C#]_
-
-	
-
-
+* __TimeStartRange__ and __TimeEndRange__ - allows you to specify the time frame which for every day in the date range - i.e. the time frame which will be printed for each date in the date range period:
 
 {{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SpecifyTimeFrame}} 
 {{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SpecifyTimeFrame}} 
@@ -99,16 +68,7 @@ SchedulerPrintStyle has the following properties:
 
 {{endregion}} 
 
-
-
-
-* AppointmentFont, DateHeadingFont and PageHeadingFont allow you to specify the fonts for the appointments,
-            dates and page headers respectively:
-          #_[C#]_
-
-	
-
-
+* AppointmentFont, DateHeadingFont and PageHeadingFont allow you to specify the fonts for the appointments, dates and page headers respectively:
 
 {{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SetFonts}} 
 {{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SetFonts}} 
@@ -127,16 +87,7 @@ SchedulerPrintStyle has the following properties:
 
 {{endregion}} 
 
-
-
-
-* You can also specify which __visual parts__ of the page to be printed - page title, calendar in the
-            page title, notes area, etc:
-          #_[C#]_
-
-	
-
-
+* You can also specify which __visual parts__ of the page to be printed - page title, calendar in the page title, notes area, etc:
 
 {{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SpeficyVisualElements}} 
 {{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SpeficyVisualElements}} 
@@ -157,15 +108,7 @@ SchedulerPrintStyle has the following properties:
 
 {{endregion}} 
 
-
-
-
 * To modify the size of the visual areas use:
-          #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=ModifyVisualElements}} 
 {{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=ModifyVisualElements}} 
@@ -182,22 +125,11 @@ SchedulerPrintStyle has the following properties:
 
 {{endregion}} 
 
+## DailyStyle
 
+![scheduler-print-support-schedulerprintstyle-dailystyle](images/scheduler-print-support-schedulerprintstyle-dailystyle.png)
 
-
-## DailyStyle![scheduler-print-support-schedulerprintstyle-dailystyle](images/scheduler-print-support-schedulerprintstyle-dailystyle.png)
-
-The SchedulerDailyPrintStyle class defines printing of RadScheduler in a daily manner.
-          Each day is displayed on a separate page. The appointments are arranged in a grid similarly
-          to the SchedulerDayView. The SchedulerDailyPrintStyle provides properties for changing
-          the size of its specific visual parts: the hours column on the left and the area for all
-          day appointments. Additionally, you can allow printing two pages per day. The second page in
-          the mode is reserved for notes.
-        #_[C#]_
-
-	
-
-
+The SchedulerDailyPrintStyle class defines printing of RadScheduler in a daily manner. Each day is displayed on a separate page. The appointments are arranged in a grid similarly to the SchedulerDayView. The SchedulerDailyPrintStyle provides properties for changing the size of its specific visual parts: the hours column on the left and the area for all day appointments. Additionally, you can allow printing two pages per day. The second page in the mode is reserved for notes.
 
 {{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=DailyStyle}} 
 {{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=DailyStyle}} 
@@ -220,14 +152,11 @@ The SchedulerDailyPrintStyle class defines printing of RadScheduler in a daily m
 
 {{endregion}} 
 
+## WeeklyCalendarStyle
 
+![scheduler-print-support-schedulerprintstyle 001](images/scheduler-print-support-schedulerprintstyle001.png)
 
-
-## WeeklyCalendarStyle![scheduler-print-support-schedulerprintstyle 001](images/scheduler-print-support-schedulerprintstyle001.png)
-
-In the WeeklyCalendarPrintStyle the appointments are arranged in a grid where each column represents a day. And each row represents a specific time frame.
-          This style provides properties for changing the dimensions of its visual parts and the font for the header cells.      
-        
+In the WeeklyCalendarPrintStyle the appointments are arranged in a grid where each column represents a day. And each row represents a specific time frame.  This style provides properties for changing the dimensions of its visual parts and the font for the header cells. 
 
 * __HeaderCellFont__ - Allows the font of the header row to be changed.
             
@@ -240,13 +169,7 @@ In the WeeklyCalendarPrintStyle the appointments are arranged in a grid where ea
 
 * __AllDayAppointmentHeight__ - Controls the width of the all day appointments section.
             
-
 * __MaxAllDayAreaHeight__ - Sets the maximum height all day appointments section. The default value is 180 pixels.
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=WeeklyCalendarStyle}} 
 {{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=WeeklyCalendarStyle}} 
@@ -267,29 +190,19 @@ In the WeeklyCalendarPrintStyle the appointments are arranged in a grid where ea
 
 {{endregion}} 
 
+## WeeklyStyle
 
+![scheduler-print-support-schedulerprintstyle-weeklystyle](images/scheduler-print-support-schedulerprintstyle-weeklystyle.png)
 
-
-## WeeklyStyle![scheduler-print-support-schedulerprintstyle-weeklystyle](images/scheduler-print-support-schedulerprintstyle-weeklystyle.png)
-
-The SchedulerWeeklyPrintStyle class defines printing of RadScheduler in a weekly manner.
-          Each week is displayed on a separate page. The appointments are arranged in a grid in
-          which each cell represents a day of the week. The SchedulerWeeklyPrint provides
-          properties for changing the height of the appointments and the layout of its visual parts.
+The SchedulerWeeklyPrintStyle class defines printing of RadScheduler in a weekly manner. Each week is displayed on a separate page. The appointments are arranged in a grid in which each cell represents a day of the week. The SchedulerWeeklyPrint provides properties for changing the height of the appointments and the layout of its visual parts.
         
-
 * __ExcludeNonWorkingDays__ - disables printing of non-working days
             
 
 * __DaysLayout__ - defines the flow direction of the cells
             
 
-* __TwoPagesPerWeek__ - allows printing a week in two pages separating the week in two
-            #_[C#]_
-
-	
-
-
+* __TwoPagesPerWeek__ - allows printing a week in two pages separating the week in two.
 
 {{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=WeeklyStyle}} 
 {{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=WeeklyStyle}} 
@@ -310,16 +223,12 @@ The SchedulerWeeklyPrintStyle class defines printing of RadScheduler in a weekly
 
 {{endregion}} 
 
+## MonthlyStyle
 
+![scheduler-print-support-schedulerprintstyle-monthlystyle](images/scheduler-print-support-schedulerprintstyle-monthlystyle.png)
 
-
-## MonthlyStyle![scheduler-print-support-schedulerprintstyle-monthlystyle](images/scheduler-print-support-schedulerprintstyle-monthlystyle.png)
-
-The SchedulerMonthlyPrintStyle class defines printing of RadScheduler in a monthly manner.
-          Each month is displayed on a separate page. The appointments are arranged in a grid in
-          which each cell represents a day of the month.
+The SchedulerMonthlyPrintStyle class defines printing of RadScheduler in a monthly manner. Each month is displayed on a separate page. The appointments are arranged in a grid in  which each cell represents a day of the month.
         
-
 In this mode you can take advantage of the following properties:
 
 * __ExcludeNonWorkingDays__ - disable printing of non-working days
@@ -341,10 +250,6 @@ In this mode you can take advantage of the following properties:
             
 
 * __CellHeaderHeight__ - sets cell header height
-            #_[C#]_
-
-	
-
 
 
 {{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=MonthlyStyle}} 
@@ -374,20 +279,14 @@ In this mode you can take advantage of the following properties:
 
 {{endregion}} 
 
+## DetailsStyle
 
+![scheduler-print-support-schedulerprintstyle-detailsstyle](images/scheduler-print-support-schedulerprintstyle-detailsstyle.png)
 
-
-## DetailsStyle![scheduler-print-support-schedulerprintstyle-detailsstyle](images/scheduler-print-support-schedulerprintstyle-detailsstyle.png)
-
-The SchedulerDetailsPrintStyle defines printing of RadScheduler in a continuous manner.
-          Appointments are printed in ascending order of their start date. This mode does not
-          provide page headers.
+The SchedulerDetailsPrintStyle defines printing of RadScheduler in a continuous manner.  Appointments are printed in ascending order of their start date. This mode does not provide page headers.
         
 
-Similar to the previous modes, you can set properties that define the size of specific visual parts
-          of the page. You can also specify the condition under which the printing should continue on the next
-          page. Four page break modes are available:
-        
+Similar to the previous modes, you can set properties that define the size of specific visual parts  of the page. You can also specify the condition under which the printing should continue on the next page. Four page break modes are available:
 
 * __Default__ – the printing continues to the next page there is no space left on the current page.
             
@@ -399,11 +298,6 @@ Similar to the previous modes, you can set properties that define the size of sp
             
 
 * __Month__ – the printing continues to the next page when the next appointment is in a different month or there is no space left on the current page.
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=DetailsStyle}} 
 {{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=DetailsStyle}} 
@@ -425,6 +319,3 @@ Similar to the previous modes, you can set properties that define the size of sp
 ````
 
 {{endregion}} 
-
-
-

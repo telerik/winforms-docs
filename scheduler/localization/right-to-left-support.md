@@ -10,15 +10,9 @@ position: 3
 
 # Right-to-Left support
 
-
-
 ## 
 
-Enabling the RightToLeft mode of RadScheduler is achieved by setting the __RightToLeft__ property to *Yes*#_[C#] Setting RadScheduler in RighToLeft_
-
-	
-
-
+Enabling the RightToLeft mode of RadScheduler is achieved by setting the __RightToLeft__ property to *Yes*:
 
 {{source=..\SamplesCS\Scheduler\Localization\SchedulerRightToLeft.cs region=RTL}} 
 {{source=..\SamplesVB\Scheduler\Localization\SchedulerRightToLeft.vb region=RTL}} 
@@ -33,7 +27,6 @@ Enabling the RightToLeft mode of RadScheduler is achieved by setting the __Right
 
 {{endregion}} 
 
+Here is how your scheduler will look like in this mode:
 
-
-
-Here is how your scheduler will look like in this mode![scheduler-localization-right-to-left](images/scheduler-localization-right-to-left.png)
+![scheduler-localization-right-to-left](images/scheduler-localization-right-to-left.png)

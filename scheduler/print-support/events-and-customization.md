@@ -10,8 +10,6 @@ position: 2
 
 # Events and Customization
 
-
-
 Required introduction
 
 ## 
@@ -36,11 +34,7 @@ __PaintEvents__
 
 Here is an example. The comments are inline:
 
-![scheduler-print-support-events](images/scheduler-print-support-events.png)#_[C#]_
-
-	
-
-
+![scheduler-print-support-events](images/scheduler-print-support-events.png)
 
 {{source=..\SamplesCS\Scheduler\Print support\SchedulerEventsAndCustomization.cs region=Customize}} 
 {{source=..\SamplesVB\Scheduler\Print support\SchedulerEventsAndCustomization.vb region=Customize}} 
@@ -176,6 +170,3 @@ Here is an example. The comments are inline:
 ````
 
 {{endregion}} 
-
-
-

@@ -10,9 +10,6 @@ position: 2
 
 # Editing Appointments 
 
-
-
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[In-Place Editors with RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/in-place-editors-with-radscheduler-for-winforms)In this video, you will learn how to use the new in-place editors feature of RadScheduler for WinForms.|![scheduler-end-user-functionality-editing-appointments 004](images/scheduler-end-user-functionality-editing-appointments004.png)|
@@ -30,43 +27,27 @@ When a change in an appointment's property occurs, the __AppointmentChanged__ ev
 
 ## Using EditAppointmentDialog
 
-The EditAppointmentDialog allows for editing all the properties that an appointment exposes.
-          To edit an appointment once it has been created:
-        
+The EditAppointmentDialog allows for editing all the properties that an appointment exposes. To edit an appointment once it has been created:
 
 1. Double-click an appointment and the "Editor Appointment Dialog" is shown if the appointment is not recurring.![scheduler-end-user-functionality-editing-appointments 001](images/scheduler-end-user-functionality-editing-appointments001.png)
 
-1. If the appointment is recurring, the "Editing a recurring appointment" pop-up appears, where you can specify whether you
-              want to edit only the selected occurrence of the appointment, or edit the entire series:
-            ![scheduler-end-user-functionality-editing-appointments 005](images/scheduler-end-user-functionality-editing-appointments005.png)Choose which you want to edit and press OK to open the "Editor Appointment Dialog". You can also press Cancel to cancel the edit entirely.
+1. If the appointment is recurring, the "Editing a recurring appointment" pop-up appears, where you can specify whether you want to edit only the selected occurrence of the appointment, or edit the entire series:
+    ![scheduler-end-user-functionality-editing-appointments 005](images/scheduler-end-user-functionality-editing-appointments005.png)
+
+    Choose which you want to edit and press OK to open the "Editor Appointment Dialog". You can also press Cancel to cancel the edit entirely.
             
 
-1. To change the recurrence rules press the Recurrence button in the "Editor Appointment Dialog" and the "Edit Recurrence Dialog" will appear.
-              Make the desired changes to the appointment and click OK to save the changes or Cancel to cancel them.
+1. To change the recurrence rules press the Recurrence button in the "Editor Appointment Dialog" and the "Edit Recurrence Dialog" will appear. Make the desired changes to the appointment and click OK to save the changes or Cancel to cancel them.
             
-
-1. Exceptions to recurring appointments
-              When you edit a single instance of a recurring appointment, you create an exception.
-              This indicates that the appointment is still part of a recurring sequence, but that it differs in
-              some details from the master recurring appointment. Exceptions can reflect any change to the appointment including its subject,
-              time, duration, or any custom resources or attributes.
+1. Exceptions to recurring appointments When you edit a single instance of a recurring appointment, you create an exception. This indicates that the appointment is still part of a recurring sequence, but that it differs in some details from the master recurring appointment. Exceptions can reflect any change to the appointment including its subject, time, duration, or any custom resources or attributes.
             
-
-## 
-        Using In-place editors
+## Using In-place editors
       
 
-In-place editors provide a quick and easy way to edit a small number of the appointment's properties. There are
-          three options for the behavior of the in-place editor:
+In-place editors provide a quick and easy way to edit a small number of the appointment's properties. There are three options for the behavior of the in-place editor:
         
 
-* The in-place editor opens in the area of the appointment.
-              By default this editor edits the Summary (subject) property of the appointment in which it is opened.
-            #_[C#]_
-
-	
-
-
+* The in-place editor opens in the area of the appointment.By default this editor edits the Summary (subject) property of the appointment in which it is opened.
 
 {{source=..\SamplesCS\Scheduler\EndUserFunctionality\EditingAppointments.cs region=editorViewModeEditor}} 
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorViewModeEditor}} 
@@ -84,13 +65,7 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 
 ![scheduler-end-user-functionality-editing-appointments 001](images/scheduler-end-user-functionality-editing-appointments001.png)
 
-* The in-place editor behaves as a composite dialog editor that appears next to the appointment in the view.
-              This editor allows for editing more properties of the appointment at once.
-            #_[C#]_
-
-	
-
-
+* The in-place editor behaves as a composite dialog editor that appears next to the appointment in the view. This editor allows for editing more properties of the appointment at once.
 
 {{source=..\SamplesCS\Scheduler\EndUserFunctionality\EditingAppointments.cs region=editorViewModeEditorDialog}} 
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorViewModeEditorDialog}} 
@@ -105,14 +80,9 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 
 {{endregion}} 
 
-
 ![scheduler-end-user-functionality-editing-appointments 002](images/scheduler-end-user-functionality-editing-appointments002.png)
 
-* All in-place editors are disabled. This is the default behavior.#_[C#]_
-
-	
-
-
+* All in-place editors are disabled. This is the default behavior.
 
 {{source=..\SamplesCS\Scheduler\EndUserFunctionality\EditingAppointments.cs region=editorViewModeEditorNone}} 
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorViewModeEditorNone}} 
@@ -127,21 +97,9 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 
 {{endregion}} 
 
+##  Customizing the in-place editors
 
-
-
-## 
-        Customizing the in-place editors
-      
-
-You are able to change the default editors in the EditorRequired event of the RadScheduler.
-          For example, if you want to modify the Description value instead of the Summary value, you should
-          inherit RadSchedulerTextBoxEditor and override two of its methods - BeginEditorEdit and Save.
-        #_[C#]_
-
-	
-
-
+You are able to change the default editors in the EditorRequired event of the RadScheduler. For example, if you want to modify the Description value instead of the Summary value, you should inherit RadSchedulerTextBoxEditor and override two of its methods - BeginEditorEdit and Save.
 
 {{source=..\SamplesCS\Scheduler\EndUserFunctionality\CustomSchedulerTextBoxEditor.cs region=customSchedulerTextBoxEditor}} 
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\CustomSchedulerTextBoxEditor.vb region=customSchedulerTextBoxEditor}} 
@@ -200,16 +158,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-After creating the custom editor that edits Description property of the appointment, you should
-          replace the default editor. This has to be done on EditorRequired event of RadScheduler.
-        #_[C#]_
-
-	
-
-
+After creating the custom editor that edits Description property of the appointment, you should replace the default editor. This has to be done on EditorRequired event of RadScheduler.
 
 {{source=..\SamplesCS\Scheduler\EndUserFunctionality\EditingAppointments.cs region=editorRequired}} 
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorRequired}} 
@@ -229,10 +178,8 @@ After creating the custom editor that edits Description property of the appointm
 
 {{endregion}} 
 
-
-
-
 The result is shown on the screenshot below:
-        ![scheduler-end-user-functionality-editing-appointments 003](images/scheduler-end-user-functionality-editing-appointments003.png)
+
+![scheduler-end-user-functionality-editing-appointments 003](images/scheduler-end-user-functionality-editing-appointments003.png)
 
 In this the EditorRequired event you can also change the in-place editor dialog if the editor mode is EditorDialog.

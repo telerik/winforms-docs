@@ -16,20 +16,12 @@ position: 2
 
 To localize __RadReminder__ to display control text and messages in a specific language:
 
-* Start by creating a descendant of the __RadReminderLocalizationProvider__class.
+* Start by creating a descendant of the __RadReminderLocalizationProvider__ class.
             
 
-* Override the __GetLocalizedString(string id)__ method and provide a translation for the label and user messages.
-              If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base
-              __GetLocalizedString__method in the __default__clause of the __switch__statement
-              in the example.
-            
+* Override the __GetLocalizedString(string id)__ method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the __default__ clause of the __switch__ statement in the example.
 
-Below is a sample implementation of an English localization provider:#_[C#] Localizing RadReminder Strings_
-
-	
-
-
+Below is a sample implementation of an English localization provider:
 
 {{source=..\SamplesCS\Scheduler\Reminders\EnglishReminderLocalizationProvider.cs region=englishLocalizationProvider}} 
 {{source=..\SamplesVB\Scheduler\Reminders\EnglishReminderLocalizationProvider.vb region=englishLocalizationProvider}} 
@@ -204,14 +196,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-To apply the custom localization provider, instantiate and assign it to the current localization provider: #_[C#] Assigning the Current Localization Provider_
-
-	
-
-
+To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
 {{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=usingReminderLocalization}} 
 {{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=usingReminderLocalization}} 
@@ -225,9 +210,6 @@ To apply the custom localization provider, instantiate and assign it to the cur
 ````
 
 {{endregion}} 
-
-
-
 
 The code provided above illustrates the approach to be used to localize the __RadReminder__ and is not intended as a full translation.
         

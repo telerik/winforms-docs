@@ -10,17 +10,9 @@ position: 2
 
 # Localizing Dialog Strings
 
-
-
 ## 
 
-__RadScheduler__ has a built-in LocalizationProvider. You can use it in order to localize your strings. However, when you implement a custom dialog, 
-        you can create a custom localization logic. The __LocalizeDialog__ method is called when the dialog strings need to be localized. This method is part of the 
-      __RadSchedulerDialog__ base class implementation. Take a look at the default implementation:#_[C#]_
-
-	
-
-
+__RadScheduler__ has a built-in LocalizationProvider. You can use it in order to localize your strings. However, when you implement a custom dialog, you can create a custom localization logic. The __LocalizeDialog__ method is called when the dialog strings need to be localized. This method is part of the __RadSchedulerDialog__ base class implementation. Take a look at the default implementation:
 
 {{source=..\SamplesCS\Scheduler\Localization\LocAppointmentEditForm.cs region=localizeDialog}} 
 {{source=..\SamplesVB\Scheduler\Localization\LocAppointmentEditForm.vb region=localizeDialog}} 
@@ -71,6 +63,3 @@ End Class
 ````
 
 {{endregion}} 
-
-
-

@@ -10,21 +10,13 @@ position: 1
 
 # Export to ICalendar
 
-
-
 ## 
 
-
-
 |RELATED VIDEOS|
-|Using RadScheduler for WinFormsHave you had a need to build scheduler functionality into your applications? If so, then this webinar is for you, where Telerik Evangelist John Kellar shows a variety of features like iCal support, multiple view options, strong data binding support, and an out of the box appointment dialogs. (Runtime: 32:46)[](http://tv.telerik.com/winforms/radscheduler/scheduler)|
+|-----|
+|Have you had a need to build scheduler functionality into your applications? If so, then this webinar is for you, where Telerik Evangelist John Kellar shows a variety of features like iCal support, multiple view options, strong data binding support, and an out of the box appointment dialogs.[(Runtime: 32:46)](http://www.telerik.com/videos/winforms/using-radscheduler-for-winforms)|
 
 RadScheduler allows you to export appointments in the industry-standard ICalendar format. For that purpose you need to use the __Export__ method of the RadScheduler class. By using this method you can easily export the appointments in a given SchedulerICalendarExporter instance to a string:
-		 #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\ImportExport\ImEx.cs region=iCalExport}} 
 {{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=iCalExport}} 
@@ -39,14 +31,7 @@ RadScheduler allows you to export appointments in the industry-standard ICalenda
 
 {{endregion}} 
 
-
-
-
-Another override of the __Export__ method allows writing the appointment data to a Stream. The following example demonstrates how easy it is to export the appointment data contained in a RadScheduler instance to a file:#_[C#]_
-
-	
-
-
+Another override of the __Export__ method allows writing the appointment data to a Stream. The following example demonstrates how easy it is to export the appointment data contained in a RadScheduler instance to a file:
 
 {{source=..\SamplesCS\Scheduler\ImportExport\ImEx.cs region=iCalEFile}} 
 {{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=iCalEFile}} 
@@ -64,7 +49,4 @@ Another override of the __Export__ method allows writing the appointment data to
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

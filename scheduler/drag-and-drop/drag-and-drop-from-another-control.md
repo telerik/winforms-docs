@@ -15,19 +15,12 @@ position: 0
 >note Similar approach is demonstrated in the *Demos, section Scheduler >> Drag&Drop.* 
 >
 
-
-__RadScheduler__ supports drag and drop from another control, such as dragging appointment subjects from a ListBox.
-        It is necessary to set the __AllowDrop__ property to *true*.
+__RadScheduler__ supports drag and drop from another control, such as dragging appointment subjects from a ListBox. It is necessary to set the __AllowDrop__ property to *true*.
       
 
 ## Drag and drop from ListBox to RadScheduler
 
-Firstly, we should start the drag and drop operation using the ListBox.__MouseMove__ event when the left mouse button is pressed.
-          Afterwards, allow dragging over the __RadScheduler__ via the __Effect__ argument of the __DragEventArgs__ in the RadScheduler.__DragEnter__ event handler:
-        #_[C#]_
-
-	
-
+Firstly, we should start the drag and drop operation using the ListBox.__MouseMove__ event when the left mouse button is pressed. Afterwards, allow dragging over the __RadScheduler__ via the __Effect__ argument of the __DragEventArgs__ in the RadScheduler.__DragEnter__ event handler:
 
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\DragDropFromControl.cs region=ListBoxToSchedulerStart}} 
@@ -112,19 +105,11 @@ Firstly, we should start the drag and drop operation using the ListBox.__MouseMo
 
 {{endregion}} 
 
+In order to use this feature, we will need to find the scheduler cell when the item is dropped onto the scheduler surface. Once you have the scheduler cell you can get the date and create an appointment for it.
 
-
-
-In order to use this feature, we will need to find the scheduler cell when the item is dropped onto the scheduler surface. Once you have the scheduler cell
-          you can get the date and create an appointment for it.
-        ![scheduler-drag-and-drop-drag-and-drop-from-another-control 001](images/scheduler-drag-and-drop-drag-and-drop-from-another-control001.gif)
+![scheduler-drag-and-drop-drag-and-drop-from-another-control 001](images/scheduler-drag-and-drop-drag-and-drop-from-another-control001.gif)
 
 In the RadScheduler __DragDrop__ event handler you need to get the location of the mouse and convert it to a point that the scheduler can use to get the cell element underneath the mouse. This __MonthCellElement__ is passed to a private method __GetCellAppointment()__ that we will write next.
-        #_[C#] Drop to the month cell element_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\DragDropFromControl.cs region=dropToCell}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\DragDropFromControl.vb region=dropToCell}} 
@@ -183,15 +168,7 @@ In the RadScheduler __DragDrop__ event handler you need to get the location of t
 
 {{endregion}} 
 
-
-
-
 The helper method __CreateAppointment()__ creates an appontment starting at the cell where the ListBox item is dropped. This appointment gets its data from the dragged item.
-        #_[C#] Creating an appointment_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\DragDropFromControl.cs region=createAppointment}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\DragDropFromControl.vb region=createAppointment}} 
@@ -265,19 +242,9 @@ The helper method __CreateAppointment()__ creates an appontment starting at the 
 
 {{endregion}} 
 
-
-
-
 ## Drag and drop from RadScheduler to ListBox
 
-In order to enable dragging an appointment from __RadScheduler__ and dropping it onto the ListBox, it is necessary to set the ListBox.__AllowDrop__
-          property to *true*. Use the RadScheduler.__MouseMove__ event to start the drag and drop operation. In the ListBox.__DragOver__
-          event you should allow the drop operation:
-        #_[C#]_
-
-	
-
-
+In order to enable dragging an appointment from __RadScheduler__ and dropping it onto the ListBox, it is necessary to set the ListBox.__AllowDrop__ property to *true*. Use the RadScheduler.__MouseMove__ event to start the drag and drop operation. In the ListBox.__DragOver__ event you should allow the drop operation:
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\DragDropFromControl.cs region=SchedulerToListBoxStart}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\DragDropFromControl.vb region=SchedulerToListBoxStart}} 
@@ -346,17 +313,9 @@ In order to enable dragging an appointment from __RadScheduler__ and dropping it
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 Finally, perform the exact drag and drop operation via inserting a new item in the ListBox in the __DragDrop__ event:
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\DragDropFromControl.cs region=SchedulerToListBoxDrop}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\DragDropFromControl.vb region=SchedulerToListBoxDrop}} 
@@ -408,6 +367,5 @@ Finally, perform the exact drag and drop operation via inserting a new item in t
 ````
 
 {{endregion}} 
-
 
 ![scheduler-drag-and-drop-drag-and-drop-from-another-control 002](images/scheduler-drag-and-drop-drag-and-drop-from-another-control002.gif)

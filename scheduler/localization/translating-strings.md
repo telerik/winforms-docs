@@ -10,29 +10,17 @@ position: 0
 
 # Translating Strings
 
-
-
 ## 
 
 To localize __RadScheduler__ to display control text and messages in a specific language:
-        
 
 * All required classes for localization are defined in __Telerik.WinControls.UI.Localization__ namespace.
-            
 
 * Start by creating a descendant of the __RadSchedulerLocalizationProvider__ class.
-            
 
-* Override the __GetLocalizedString(string id)__ method and provide a translation for the messages.
-              If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the
-              base __GetLocalizedString__ method in the default clause of the switch statement in the example.
-            
+* Override the __GetLocalizedString(string id)__ method and provide a translation for the messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the default clause of the switch statement in the example.
 
-Below is a sample implementation of a custom localization provider: #_[C#]_
-
-	
-
-
+Below is a sample implementation of a custom localization provider:
 
 {{source=..\SamplesCS\Scheduler\Localization\CustomSchedulerLocalizationProvider.cs region=schedulerProvider}} 
 {{source=..\SamplesVB\Scheduler\Localization\CustomSchedulerLocalizationProvider.vb region=schedulerProvider}} 
@@ -605,14 +593,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-To apply the custom localization provider, instantiate and assign it to the current localization provider:#_[C#]_
-
-	
-
-
+To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
 {{source=..\SamplesCS\Scheduler\Localization\AssignProviders.cs region=assignSchedulerProvider}} 
 {{source=..\SamplesVB\Scheduler\Localization\AssignProviders.vb region=assignSchedulerProvider}} 

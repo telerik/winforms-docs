@@ -10,20 +10,11 @@ position: 0
 
 # Scheduler Element Provider 
 
-
-
 Use __SchedulerElementProvider__ Class to Change the Default RadSheduler Elements.![scheduler-fundamentals-scheduler-element-provider 002](images/scheduler-fundamentals-scheduler-element-provider002.png)
 
 ## 
 
-If you need to customize any of the  __RadSheduler__ elements you can use the __SchedulerElementProvider__ 
-          class. It allows you to replace the default elements with custom ones. This can be achieved by creating  __SchedulerElementProvider__
-          descendant class and overriding the corresponding methods.
-        #_[C#] _
-
-	
-
-
+If you need to customize any of the  __RadSheduler__ elements you can use the __SchedulerElementProvider__ class. It allows you to replace the default elements with custom ones. This can be achieved by creating  __SchedulerElementProvider__ descendant class and overriding the corresponding methods.
 
 {{source=..\SamplesCS\Scheduler\Fundamentals\SchedulerElementProviderSample.cs region=SchedulerElementProvider}} 
 {{source=..\SamplesVB\Scheduler\Fundamentals\SchedulerElementProviderSample.vb region=SchedulerElementProvider}} 
@@ -84,15 +75,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
 Your custom elements should be ancestors of the default ones. For example, you can create custom elements and override some of their default properties as follows.
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\Fundamentals\SchedulerElementProviderSample.cs region=elements}} 
 {{source=..\SamplesVB\Scheduler\Fundamentals\SchedulerElementProviderSample.vb region=elements}} 
@@ -186,12 +169,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
 The following elements can be changed in the __CreateElement__ method.
-        
-
 
 | Element |
 | ------ |
