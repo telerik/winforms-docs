@@ -5,24 +5,14 @@ description: Getting Started (RadButtons)
 slug: winforms/shortcuts/getting-started-(radbuttons)
 tags: getting,started,(radbuttons)
 published: True
-position: 1
+position: 2
 ---
 
 # Getting Started (RadButtons)
 
-
-
 ## 
 
-As stated in the [Overview]({%slug winforms/shortcuts%}) 
-          article, RadShortcuts are assigned at RadItem level. That said, you can't assign a shortcut directly to a
-          RadControl (RadButton for example). Instead, you should assign the shortcut to the main element of a RadControl. 
-          For example, considering our buttons, you can assign shortcuts to them as it is shown below:
-        #_[C#]_
-
-	
-
-
+As stated in the [Overview]({%slug winforms/shortcuts%}) article, RadShortcuts are assigned at RadItem level. That said, you can't assign a shortcut directly to a RadControl (RadButton for example). Instead, you should assign the shortcut to the main element of a RadControl. For example, considering our buttons, you can assign shortcuts to them as it is shown below:
 
 {{source=..\SamplesCS\Shortcuts\Form2.cs region=buttonsShortcuts}} 
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=buttonsShortcuts}} 

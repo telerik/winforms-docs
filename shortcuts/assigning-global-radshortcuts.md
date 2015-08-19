@@ -5,25 +5,16 @@ description: Assigning Global RadShortcuts
 slug: winforms/shortcuts/assigning-global-radshortcuts
 tags: assigning,global,radshortcuts
 published: True
-position: 2
+position: 3
 ---
 
 # Assigning Global RadShortcuts
-
-
 
 ## 
 
 RadItem allows you to add shortcuts which will generate a Click event for that item, allowing you to perform specific action, associated with that item. This approach however has some requirements such as you need a RadItem instance and some restrictions such as each shortcut, registered with RadItem is processed only if the item resides on the currently active form within the Application. In order to create a custom shortcuts behavior, you may provide your own IShortcutProvider implementation and to handle its callback methods to provide completely customized shortcut support for your Application, including “Global” shortcuts – that is a shortcut which is not bound to the currently active form. The following code snippet demonstrates how this can be done:
 
-
-
-1. Implement a custom IShortcutProvider: 
-#_[C#]_
-
-	
-
-
+1\. Implement a custom IShortcutProvider: 
 
 {{source=..\SamplesCS\Shortcuts\MyShortcutProvider.cs region=customProvider}} 
 {{source=..\SamplesVB\Shortcuts\MyShortcutProvider.vb region=customProvider}} 
@@ -140,15 +131,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-1. And here is how we utilize the custom shortcut provider: 
-#_[C#]_
-
-	
-
-
+2\. And here is how we utilize the custom shortcut provider: 
 
 {{source=..\SamplesCS\Shortcuts\Form2.cs region=globalShortcut}} 
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=globalShortcut}} 
@@ -176,12 +159,7 @@ End Class
     '
 ````
 
-{{endregion}} 
-
-
-
-
-
+{{endregion}}
 
 >caution The shortcut providers that implement IShortcutProvider interface are registered as WeakReferences. So, if you declare the MyShortcutProvider variable in the scope of the constructor or in another method (for example Form_Load) the Garbage collection may collect the shortcut provider reference at a certain moment. To prevent this from happening, you need to declare the MyShortcutProvider variable globally.
 >

@@ -1,32 +1,24 @@
 ---
-title: Shortcuts
+title: Overview
 page_title: Shortcuts | UI for WinForms Documentation
 description: Shortcuts
 slug: winforms/shortcuts
 tags: shortcuts
 published: True
-position: 41
+position: 0
 ---
 
 # Shortcuts
 
-
-
 ## Overview
 
-Almost each application uses the so called “Shortcuts” – a keyboard combination that triggers a specific action. For a valid shortcut is considered any keyboard combination where a Modifier Key (CTRL, ALT and SHIFT or a combination of these) is down and other key(s) is pressed.  This semantic is available out-of-the-box in our framework and allows you to seamlessly plug any valid keys combination as an action accelerator. Supported are also the so called multi-keys shortcuts where the Keys member of each shortcut may be more than one key – e.g. Ctrl + A, S is recognized by the framework. Shortcuts without modifier keys are also supported, but they should be used with caution, since they may be in conflict with other controls which intercept keyboard input.
-
-
+Almost each application uses the so called “Shortcuts” – a keyboard combination that triggers a specific action. For a valid shortcut is considered any keyboard combination where a Modifier Key (CTRL, ALT and SHIFT or a combination of these) is down and other key(s) is pressed.  This semantic is available out-of-the-box in our framework and allows you to seamlessly plug any valid keys combination as an action accelerator. Supported are also the so called multi-keys shortcuts where the Keys member of each shortcut may be more than one key – e.g. Ctrl + A, S is recognized by the framework. Shortcuts without modifier keys are also supported, but they should be used with caution,since they may be in conflict with other controls which intercept keyboard input.
 
 ## How is it done?
 
-
-
 The following diagram illustrates the object model and class hierarchy that lie behind each RadShortcut:
 
-![](images/ShortcutsStructure001.png)
-
-
+![images/ShortcutsStructure001.png](images/ShortcutsStructure001.png)
 
 The entire mechanism is controlled by several interfaces and classes which provide very easy and intuitive way to register different shortcuts.
 

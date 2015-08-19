@@ -5,31 +5,26 @@ description: Getting Started (RadMenuItems)
 slug: winforms/shortcuts/getting-started-(radmenuitems)
 tags: getting,started,(radmenuitems)
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started (RadMenuItems)
-
-
 
 ## 
 
 1. In a new Windows Application add a RadMenu to the form.
 
 1. On the RadMenu that reads "*Type here*" enter "*New*". This will automatically create a menu item object "radMenuItem1":
-            ![shortcuts-getting-started-(radmenuitems)001](images/shortcuts-getting-started-(radmenuitems)001.png)
+
+    ![shortcuts-getting-started-(radmenuitems)001](images/shortcuts-getting-started-(radmenuitems)001.png)
 
 1. Click and the newly created item to open the dropdown menu and create a submenu item. By default, the text of the new item will be set to *radMenuItem2*. Change it to *File*:
-            ![shortcuts-getting-started-(radmenuitems)002](images/shortcuts-getting-started-(radmenuitems)002.png)
+
+    ![shortcuts-getting-started-(radmenuitems)002](images/shortcuts-getting-started-(radmenuitems)002.png)
 
 1. In the Properties Window locate the Click events for radMenuItem1 and radMenuItem2 and double-click them to create event handlers.
 
 1. Inside the event handlers add the following code:
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Shortcuts\Form2.cs region=handlingClickEvent}} 
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=handlingClickEvent}} 
@@ -58,15 +53,7 @@ position: 0
 
 {{endregion}} 
 
-
-
-
-1. Now all you have to do is to add the shortcuts to the desired items
-            #_[C#]_
-
-	
-
-
+6\. Now all you have to do is to add the shortcuts to the desired items
 
 {{source=..\SamplesCS\Shortcuts\Form2.cs region=menuShortcuts}} 
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=menuShortcuts}} 
@@ -83,21 +70,12 @@ position: 0
 
 {{endregion}} 
 
-
-
-
 >note In the constructor of RadShortcut, you should first pass the key modifier as a parameter and then an array of the key mappings.
 >
 
-
 As a result, you will get this picture runtime. As you can see, the shortcuts are automatically displayed for the RadMenuItems:![shortcuts-getting-started-(radmenuitems)003](images/shortcuts-getting-started-(radmenuitems)003.png)
 
-Interesting functionality to mention is the ability to set your own custom text to describe the shortcut added. 
-          This can be achieved via the __HintText__ property of the menu item#_[C#]_
-
-	
-
-
+Interesting functionality to mention is the ability to set your own custom text to describe the shortcut added. This can be achieved via the __HintText__ property of the menu item:
 
 {{source=..\SamplesCS\Shortcuts\Form2.cs region=SetHintText}} 
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=SetHintText}} 
@@ -111,6 +89,5 @@ Interesting functionality to mention is the ability to set your own custom text 
 ````
 
 {{endregion}} 
-
 
 ![shortcuts-getting-started-(radmenuitems)004](images/shortcuts-getting-started-(radmenuitems)004.png)
