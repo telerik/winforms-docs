@@ -128,7 +128,7 @@ navigation:
     desktopalert:
         title: DesktopAlert
         position: 18
-    dropdown-and-listcontrol:
+    dropdown,-listcontrol-and-checkeddropdownlist:
         title: DropDown and ListControl
         position: 19
     editors:
