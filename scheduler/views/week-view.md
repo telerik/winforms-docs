@@ -10,24 +10,15 @@ position: 6
 
 # Week View
 
-
-
 ## Overview
 
-The Week view by default shows a full seven-day week week at a time, which can be set to start at a predefined day
-          (say Monday, or Sunday). To move to the next or previous week, you can use the back and forward keyboard arrows, or the [SchedulerNavigator]({%slug winforms/scheduler/scheduler-navigator/overview%}) control, which also allows you to control whether to show weekends or not.
-        
->caption 
+The Week view by default shows a full seven-day week week at a time, which can be set to start at a predefined day (say Monday, or Sunday). To move to the next or previous week, you can use the back and forward keyboard arrows, or the [SchedulerNavigator]({%slug winforms/scheduler/scheduler-navigator/overview%}) control, which also allows you to control whether to show weekends or not.
 
 ![scheduler-views-week-view 001](images/scheduler-views-week-view001.png)
 
 ## Setting Week View
 
-To explicitly set the Work Week to be the default view which the user sees on the form:#_[C#]_
-
-	
-
-
+To explicitly set the Work Week to be the default view which the user sees on the form:
 
 {{source=..\SamplesCS\Scheduler\Views\WeekView.cs region=activeViewType}} 
 {{source=..\SamplesVB\Scheduler\Views\WeekView.vb region=activeViewType}} 
@@ -42,21 +33,11 @@ To explicitly set the Work Week to be the default view which the user sees on 
 
 {{endregion}} 
 
-
-
-
-
-
 ## Getting Week View
 
 To get the instance to the SchedulerWeek view from the RadScheduler object, either:
 
 * use the __GetDayView__ method:
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\Views\WeekView.cs region=weekView}} 
 {{source=..\SamplesVB\Scheduler\Views\WeekView.vb region=weekView}} 
@@ -71,44 +52,27 @@ To get the instance to the SchedulerWeek view from the RadScheduler object, eith
 
 {{endregion}} 
 
-
-
-
 >note This method returns null if the active view of the scheduler is not SchedulerWeekView.
 >
 
-
 * use the RadScheduler __ActiveView__ property:             
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\Views\WeekView.cs region=activeView}} 
 {{source=..\SamplesVB\Scheduler\Views\WeekView.vb region=activeView}} 
 
-````C#ype
+````C#
             this.radScheduler1.ActiveViewType = SchedulerViewType.Week;
 ````
-````VB.NEType
+````VB.NET
         Me.RadScheduler1.ActiveViewType = SchedulerViewType.Week
         '
 ````
 
 {{endregion}} 
 
-
-
-
 ## Showing/hiding the weekend
 
-By default the weekends are shown, but you can hide them by using the __ShowWeekend__ property: 
-        #_[C#]_
-
-	
-
-
+By default the weekends are shown, but you can hide them by using the __ShowWeekend__ property:
 
 {{source=..\SamplesCS\Scheduler\Views\WeekView.cs region=showWeekend}} 
 {{source=..\SamplesVB\Scheduler\Views\WeekView.vb region=showWeekend}} 
@@ -122,9 +86,6 @@ By default the weekends are shown, but you can hide them by using the __ShowWee
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

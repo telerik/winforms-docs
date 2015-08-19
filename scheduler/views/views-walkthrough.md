@@ -12,9 +12,7 @@ position: 3
 
 
 
-In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial](http://www.telerik.com/support/documentation-and-tutorials/step-by-step-tutorial-for-winforms.aspx)) you will
-        dynamically change the view, change some of the view specific properties and
-        handle the ActiveViewChanging event.
+In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial](http://www.telerik.com/support/documentation-and-tutorials/step-by-step-tutorial-for-winforms.aspx)) you will dynamically change the view, change some of the view specific properties and handle the ActiveViewChanging event.
       
 
 ## Project Setup
@@ -25,58 +23,23 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 1. Also in the Solution Explorer, right-click the project and select __Add | New Item...__ from the context menu.
             
-
 1. Select the "Telerik RadForm" template and click the __Add__ button to close the dialog.
-            
 
 1. Add the __DesertTheme__ from the ToolBox to the form.
-            
 
 1. In the Properties window, set the form __ThemeName__ to __Desert__.
-            
 
-1. Add a __RadStatusStrip__ to the form. Set the
-              __ThemeName__ to __Desert__. Add a
-              RadLabelElement to the status strip. Set the __Name__ property
-              to "lblStatus" and the __Text__ to "".
-            
+1. Add a __RadStatusStrip__ to the form. Set the __ThemeName__ to __Desert__. Add a RadLabelElement to the status strip. Set the __Name__ property to "lblStatus" and the __Text__ to "".     
 
 1. Add a RadCommandBar to the form. Add elements to the bar:
-
-* Add a
-                  __RadCommandBarDropDownListItem__. Set the
-                  __Name__ to "ddlActiveViewType" and
-                  __Text__ to "".
-                
-
-* Add a
-                  __RadCommandBarDropDownListItem__. Set the
-                  __Name__ to "ddlRange" and __Text__ to
-                  "".
-                
-
-* Add a
-                  __RadCommandBarDropDownListItem__. Set the
-                  __Name__ to "ddlACount" and __Text__ to
-                  "".
-                
-
+    - Add a __RadCommandBarDropDownListItem__. Set the  __Name__ to "ddlActiveViewType" and __Text__ to "".
+    - Add a __RadCommandBarDropDownListItem__. Set the __Name__ to "ddlRange" and __Text__ to "".
+    - Add a __RadCommandBarDropDownListItem__. Set the __Name__ to "ddlACount" and __Text__ to "".              
 1. Change the new RadForm1 to be the startup form.
 
-1. From the Toolbox, add a __RadScheduler__ to the form and
-              set the __Dock__ property to "Fill" and the
-              __ThemeName__ to __Desert__.
-            
+1. From the Toolbox, add a __RadScheduler__ to the form and set the __Dock__ property to "Fill" and the __ThemeName__ to __Desert__.
 
-1. Add code to the form load that will add values to the combo boxes in
-              the tool strip for __SchedulerViewType__ and
-              __ScaleRange__ enumerations. Also, add a simple range of
-              integers to the "count" combo box.
-            #_[C#]_
-
-	
-
-
+1. Add code to the form load that will add values to the combo boxes in the tool strip for __SchedulerViewType__ and __ScaleRange__ enumerations. Also, add a simple range of integers to the "count" combo box.
 
 {{source=..\SamplesCS\Scheduler\Views\ViewsWalkthrough.cs region=addingValues}} 
 {{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=addingValues}} 
@@ -128,16 +91,7 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 {{endregion}} 
 
-
-
-
-1. Next add a SelectedIndexChanged event handler for the
-              ddlActiveViewType combo box:
-            #_[C#] Set the current ActiveViewType_
-
-	
-
-
+12\. Next add a SelectedIndexChanged event handler for the ddlActiveViewType combo box:
 
 {{source=..\SamplesCS\Scheduler\Views\ViewsWalkthrough.cs region=selectedIndexChanged}} 
 {{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=selectedIndexChanged}} 
@@ -159,16 +113,7 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 {{endregion}} 
 
-
-
-
-1. Add another SelectedIndexChanged event handler for the ddlRange combo
-              box element:
-            #_[C#] Set the RangeFactor_
-
-	
-
-
+13\. Add another SelectedIndexChanged event handler for the ddlRange combo box element:
 
 {{source=..\SamplesCS\Scheduler\Views\ViewsWalkthrough.cs region=rangeChanged}} 
 {{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=rangeChanged}} 
@@ -213,16 +158,7 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 {{endregion}} 
 
-
-
-
-1. Add another SelectedIndexChanged event handler for the ddlCount combo
-              box element:
-            #_[C#] Set the DayCount or WeekCount_
-
-	
-
-
+14\. Add another SelectedIndexChanged event handler for the ddlCount combo box element:
 
 {{source=..\SamplesCS\Scheduler\Views\ViewsWalkthrough.cs region=countChanged}} 
 {{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=countChanged}} 
@@ -266,17 +202,7 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 {{endregion}} 
 
-
-
-
-1. Handle the RadScheduler ActiveViewChanging event. Use the
-              SchedulerViewChangingEventArgs OldView and NewView to display in the
-              status label.
-            #_[C#] Handling the ActiveViewChanging event_
-
-	
-
-
+15\. Handle the RadScheduler ActiveViewChanging event. Use the SchedulerViewChangingEventArgs OldView and NewView to display in the status label.
 
 {{source=..\SamplesCS\Scheduler\Views\ViewsWalkthrough.cs region=activeViewChanging}} 
 {{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=activeViewChanging}} 
@@ -297,9 +223,6 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 
 {{endregion}} 
 
+16\. Run the application and test the various combinations of settings.
 
-
-
-1. Run the application and test the various combinations of
-              settings.
-            ![scheduler-views-views-walkthrough 001](images/scheduler-views-views-walkthrough001.png)
+![scheduler-views-views-walkthrough 001](images/scheduler-views-views-walkthrough001.png)

@@ -10,33 +10,15 @@ position: 2
 
 # Working with Views
 
-
-
 ## Working with Views
 
-The scheduler displays dates and times using a "view" that can be
-          [Day]({%slug winforms/scheduler/views/day-view%}),
-          [MultiDay]({%slug winforms/scheduler/views/multiday-view%}),
-          [Week]({%slug winforms/scheduler/views/week-view%}), 
-          [Work Week]({%slug winforms/scheduler/views/work-week-view%}), 
-          [Month]({%slug winforms/scheduler/views/month-view%}) and
-          [Timeline]({%slug winforms/scheduler/views/timeline-view%}).
+The scheduler displays dates and times using a "view" that can be [Day]({%slug winforms/scheduler/views/day-view%}), [MultiDay]({%slug winforms/scheduler/views/multiday-view%}), [Week]({%slug winforms/scheduler/views/week-view%}),  [Work Week]({%slug winforms/scheduler/views/work-week-view%}), [Month]({%slug winforms/scheduler/views/month-view%}) and [Timeline]({%slug winforms/scheduler/views/timeline-view%}).
         
 
->note The difference between a day view and a multi-day view is that while the day view is constrained to showing a single sequence of
-            consecutive days (for example 7th through 10th, or 10th through 12th, or just the 15th), the multi-day view can display all of the above sequences at once.
+>note The difference between a day view and a multi-day view is that while the day view is constrained to showing a single sequence of consecutive days (for example 7th through 10th, or 10th through 12th, or just the 15th), the multi-day view can display all of the above sequences at once.
 >
 
-
-At any one time the scheduler displays a view using a descendant of the SchedulerView class: __SchedulerDayView__,
-          __SchedulerWeekView,____SchedulerMonthView,__ and __SchedulerTimelineView__.
-          Each view has special properties particular to the view. Use the RadScheduler __GetDayView()__, __GetWeekView(),____GetMonthView()__ and __GetTimelineView()__ methods to get the respective views. Here's an
-          example that retrieves the day view and sets the ruler to start at the second hour and stop at the fifth hour:
-        #_[C#] Using the GetDatView method_
-
-	
-
-
+At any one time the scheduler displays a view using a descendant of the SchedulerView class: __SchedulerDayView, SchedulerWeekView, SchedulerMonthView__ and __SchedulerTimelineView__. Each view has special properties particular to the view. Use the RadScheduler __GetDayView()__, __GetWeekView(),__  __GetMonthView()__ and __GetTimelineView()__ methods to get the respective views. Here's an example that retrieves the day view and sets the ruler to start at the second hour and stop at the fifth hour:
 
 {{source=..\SamplesCS\Scheduler\Views\WorkingWithViews.cs region=getDayView}} 
 {{source=..\SamplesVB\Scheduler\Views\WorkingWithViews.vb region=getDayView}} 
@@ -55,17 +37,11 @@ At any one time the scheduler displays a view using a descendant of the Schedule
 
 {{endregion}} 
 
+After running the code, the day view for the scheduler looks like this screenshot:
 
-
-
-After running the code, the day view for the scheduler looks like this screenshot:![scheduler-views-working-with-views 001](images/scheduler-views-working-with-views001.png)
+![scheduler-views-working-with-views 001](images/scheduler-views-working-with-views001.png)
 
 Change between views by changing the __ActiveViewType__ property to one of the __SchedulerViewType__ enumeration members.
-        #_[C#] Assigning the ActiveViewType_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\Views\WorkingWithViews.cs region=activeViewType}} 
 {{source=..\SamplesVB\Scheduler\Views\WorkingWithViews.vb region=activeViewType}} 
@@ -80,14 +56,7 @@ Change between views by changing the __ActiveViewType__ property to one of the _
 
 {{endregion}} 
 
-
-
-
-Retrieve the view that is currently being displayed by using the ActiveView property, cast it to be the ActiveViewType#_[C#] Using the ActiveView property_
-
-	
-
-
+Retrieve the view that is currently being displayed by using the ActiveView property, cast it to be the ActiveViewType
 
 {{source=..\SamplesCS\Scheduler\Views\WorkingWithViews.cs region=weekCount}} 
 {{source=..\SamplesVB\Scheduler\Views\WorkingWithViews.vb region=weekCount}} 
@@ -108,11 +77,6 @@ Retrieve the view that is currently being displayed by using the ActiveView prop
 ![scheduler-views-working-with-views 002](images/scheduler-views-working-with-views002.png)
 
 Detect changes to the view by handling the __ActiveViewChanging__ and __ActiveViewChanged__ events. As always, the "Changing" event arguments provide the ability to cancel the view change, but also the "old" and "new" views before and after the view changes transpires:
-        #_[C#] Handling the ActiveViewChanging event_
-
-	
-
-
 
 {{source=..\SamplesCS\Scheduler\Views\WorkingWithViews.cs region=activeViewChanging}} 
 {{source=..\SamplesVB\Scheduler\Views\WorkingWithViews.vb region=activeViewChanging}} 
@@ -132,6 +96,3 @@ Detect changes to the view by handling the __ActiveViewChanging__ and __ActiveVi
 ````
 
 {{endregion}} 
-
-
-

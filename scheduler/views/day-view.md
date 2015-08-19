@@ -59,10 +59,10 @@ To get the instance to the SchedulerDayView from the RadScheduler object, either
 {{source=..\SamplesCS\Scheduler\Views\DayView.cs region=activeView}} 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=activeView}} 
 
-````C#ype
+````C#
             this.radScheduler1.ActiveViewType = SchedulerViewType.Day;
 ````
-````VB.NEType
+````VB.NET
         Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day
         '
 ````

@@ -12,9 +12,9 @@ position: 0
 
 ## Overview
 
-|[Using RadScheduler for WinForms](http://tv.telerik.com/winforms/radscheduler/scheduler)Have you had a need to build scheduler functionality into your applications? If so, then this webinar is for you, where Telerik Evangelist John Kellar shows a variety of features like iCal support, multiple view options, strong data binding support, and an out of the box appointment dialogs. (Runtime: 32:46)|
-
-![scheduler-introduction 001](images/scheduler-introduction001.png)|
+|Related Videos|  |
+|-------|------|
+|[Using RadScheduler for WinForms](http://tv.telerik.com/winforms/radscheduler/scheduler) Have you had a need to build scheduler functionality into your applications? If so, then this webinar is for you, where Telerik Evangelist John Kellar shows a variety of features like iCal support, multiple view options, strong data binding support, and an out of the box appointment dialogs. (Runtime: 32:46)|![scheduler-introduction 001](images/scheduler-introduction001.png)|
 
 A first-rate scheduling component should offer intuitive, simple, and familiar interface, to help the user review all events in  a fast and efficient manner. Telerik Windows Forms Scheduler provides simplistic, but powerful interface, following closely the established UI standards.
         
@@ -34,7 +34,7 @@ RadScheduler displays all of its events in a __Time table__. The time table cons
 * The top of the scheduler is the __Header__ and displays dates that appointments can be created in.
             
 
-* Below the Header are the __All Day Appointments__ that have no specific duration in hours__.__
+* Below the Header are the __All Day Appointments__ that have no specific duration in hours.
 
 * Underneath the All Day Appointments is the __Appointment Area__ that contains any number of __Appointments__.
             
@@ -47,12 +47,12 @@ RadScheduler displays all of its events in a __Time table__. The time table cons
 
 * __Current Day__ is highlighted in most scheduler views for a better visual presentation.
 
-![scheduler-views-overview-and-structure 002](images/scheduler-views-overview-and-structure002.png)
+    ![scheduler-views-overview-and-structure 002](images/scheduler-views-overview-and-structure002.png)
 
 * In addition, __Navigation Elements__ let the user jump forward or backwards to the nearest appointment.
 
 
-![scheduler-views-overview-and-structure 003](images/scheduler-views-overview-and-structure003.png)
+    ![scheduler-views-overview-and-structure 003](images/scheduler-views-overview-and-structure003.png)
 
 ## Structure of Month View
 

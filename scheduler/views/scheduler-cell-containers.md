@@ -10,8 +10,6 @@ position: 12
 
 # Scheduler Cell Containers
 
-
-
 The cell containers in __RadScheduler__ are the elements which contain cells and appointments. The cells and the appointments are dynamic elements which get recycled and updated under various conditions. The cell containers are responsible for handling this. All cell containers inherit from the abstract __SchedulerCellContainer__ class. Elements that implement this type are: __DayViewAllDayHeader__, __DayViewAppointmentsTable__, __DayViewHeader__, __MonthViewAreaElement__, __MonthViewHeader__, __MonthViewVerticalHeader__, __TimelineAppointmentsPresenter__, __TimelineHeader__.
 
 ## Initializing the elements

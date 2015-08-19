@@ -13,14 +13,12 @@ position: 5
 
 ## Overview
 
-
-
 MultidayView shows multiple date-time intervals with appointments arranged one next to another. In the screenshot below we have MultidayView with two intervals – the first one starts from July 03 with duration of two days and the second on starts from July 07 with duration of 3 days.![scheduler-views-multiday-view 001](images/scheduler-views-multiday-view001.png)
 
 ## Using MultidayView
 
 
-1. In order to set the current view of RadScheduler to MultidayView, use the ActiveViewType or ActiveView properties:
+1\. In order to set the current view of RadScheduler to MultidayView, use the ActiveViewType or ActiveView properties:
 
 {{source=..\SamplesCS\Scheduler\Views\MultiDayView.cs region=multiDay}} 
 {{source=..\SamplesVB\Scheduler\Views\MultiDayView.vb region=multiDay}} 
@@ -47,9 +45,9 @@ MultidayView shows multiple date-time intervals with appointments arranged one 
 
 {{endregion}} 
 
-1. To add, remove or modify a date-time __Interval__ in SchedulerMultiDayView instance use the __Intervals__ collection.
+2\. To add, remove or modify a date-time __Interval__ in SchedulerMultiDayView instance use the __Intervals__ collection.
 
-1. To get all appointments in a particular interval, use the __GetAppointmentsInInterval__ helper method:
+3\. To get all appointments in a particular interval, use the __GetAppointmentsInInterval__ helper method:
 
 {{source=..\SamplesCS\Scheduler\Views\MultiDayView.cs region=interval}} 
 {{source=..\SamplesVB\Scheduler\Views\MultiDayView.vb region=interval}} 
@@ -68,7 +66,7 @@ MultidayView shows multiple date-time intervals with appointments arranged one 
 
 {{endregion}} 
 
-1. To get all appointments in the view, use the __Appointments__ collection.
+4\. To get all appointments in the view, use the __Appointments__ collection.
 
 >note  __SchedulerMultiDayView__ inherits the rest of its properties from the base __SchedulerDayView__ and therefore you can refer to the[Day View]({%slug winforms/scheduler/views/day-view%})article for additional options.
 >
