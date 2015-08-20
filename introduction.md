@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-#Telerik UI for WinForms
+# Telerik UI for WinForms
 
 ## Performance you demand, UI you can't believe
 

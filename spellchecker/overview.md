@@ -1,27 +1,21 @@
 ---
-title: SpellChecker
+title: Overview
 page_title: SpellChecker | UI for WinForms Documentation
 description: SpellChecker
 slug: winforms/spellchecker
 tags: spellchecker
 published: True
-position: 42
+position: 0
 ---
 
 # SpellChecker
 
+RadSpellChecker enables developers to add multilingual spell checking capabilities to their WinForms applications. The component is completely customizable and can be attached to any text-editing RadControl. You can also use it together with the standard Microsoft text-editing controls. It currently supports dozens of languages and can have custom user dictionaries for every language.
 
-
-RadSpellChecker enables developers to add multilingual spell checking capabilities to
-        their WinForms applications. The component is completely customizable and can be attached
-        to any text-editing RadControl. You can also use it together with the standard
-        Microsoft text-editing controls. It currently supports dozens of languages and can
-        have custom user dictionaries for every language.
-      ![spellchecker-overview 001](images/spellchecker-overview001.png)
+![spellchecker-overview 001](images/spellchecker-overview001.png)
 
 >note RadSpellChecker requires .NET 4.0 Framework
 >
-
 
 The end-user can check a given text for errors using one of the following modes:
 

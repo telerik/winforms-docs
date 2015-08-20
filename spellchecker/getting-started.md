@@ -5,7 +5,7 @@ description: Getting Started
 slug: winforms/spellchecker/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
@@ -13,12 +13,10 @@ position: 0
 
 
 The following tutorial demonstrates how you can make RadSpellChecker
-        check a simple text-editing control - RadTextBox.
+check a simple text-editing control - RadTextBox.
       
 
->note Before executing the following steps, please make sure that the
-          target framework of the project in which you are going to use RadSpellChecker
-          is .NET Framework 4.0. This will allow you to see RadSpellChecker in your Toolbox and work with it.
+>note Before executing the following steps, please make sure that the target framework of the project in which you are going to use RadSpellChecker is .NET Framework 4.0. This will allow you to see RadSpellChecker in your Toolbox and work with it.
 >
 
 
@@ -26,16 +24,10 @@ The following tutorial demonstrates how you can make RadSpellChecker
 
 1. Drag and drop RadSpellChecker from your Toolbox to your form.
 
-1. Drag and drop RadButton from your Toolbox to your form. When clicked this
-            button will invoke the spell-checking capabilities of RadSpellChecker.
+1. Drag and drop RadButton from your Toolbox to your form. When clicked this button will invoke the spell-checking capabilities of RadSpellChecker.
           
 
 1. Set the text of RadTextBox so that it contains some typos, for example:
-          #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=settingText}} 
 {{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=settingText}} 
@@ -51,15 +43,7 @@ The following tutorial demonstrates how you can make RadSpellChecker
 {{endregion}} 
 
 
-
-
-1. Subscribe to the Click event of the button. In the event handler call the Check
-            method of RadSpellChecker and pass the RadTextBox instance as a parameter:
-          #_[C#]_
-
-	
-
-
+5\. Subscribe to the Click event of the button. In the event handler call the Check method of RadSpellChecker and pass the RadTextBox instance as a parameter:
 
 {{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=callingCheck}} 
 {{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=callingCheck}} 
@@ -79,10 +63,6 @@ The following tutorial demonstrates how you can make RadSpellChecker
 
 {{endregion}} 
 
+Now when you press the button, RadSpellChecker form will appear with the appropriate suggestions for the mistaken words:
 
-
-
-Now when you
-        press the button, RadSpellChecker form will appear with the appropriate suggestions
-        for the mistaken words:
-      ![spellchecker-overview 001](images/spellchecker-overview001.png)
+![spellchecker-overview 001](images/spellchecker-overview001.png)

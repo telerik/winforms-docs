@@ -10,23 +10,17 @@ position: 5
 
 # Localization
 
-
-
 ## 
 
 To localize RadSpellChecker to display control text and messages in a specific language:
 
 * All required classes for localization are defined in __Telerik.WinControls.UI.Localization__ namespace.
 
-* Start by creating a descendant of the __RadSpellCheckerLocalizationProvider__class. 
+* Start by creating a descendant of the __RadSpellCheckerLocalizationProvider__ class. 
 
-* Override the __GetLocalizedString(string id)__method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__method in the __default__clause of the __switch__statement in the example. 
+* Override the __GetLocalizedString(string id)__ method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the __default__ clause of the __switch__ statement in the example. 
 
-Below is a sample implementation of an English localization provider:#_[C#] Localizing RadSpellChecker Strings_
-
-	
-
-
+Below is a sample implementation of an English localization provider:
 
 {{source=..\SamplesCS\SpellChecker\SpellCheckerLocalization.cs region=myEnglishLocalizationProvider}} 
 {{source=..\SamplesVB\SpellChecker\SpellCheckerLocalization.vb region=myEnglishLocalizationProvider}} 
@@ -102,14 +96,9 @@ End Class
 
 {{endregion}} 
 
+To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
-
-
-To apply the custom localization provider, instantiate and assign it to the current localization provider: #_[C#] Assigning the Current Localization Provider_
-
-	
-
-
+#### Assigning the Current Localization Provider
 
 {{source=..\SamplesCS\SpellChecker\SpellCheckerLocalization.cs region=localizeSpellChecker}} 
 {{source=..\SamplesVB\SpellChecker\SpellCheckerLocalization.vb region=localizeSpellChecker}} 
@@ -124,7 +113,4 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 {{endregion}} 
 
-
-
-
-The code provided above illustrates the approach to be used to localize the __RadSpellChecker__and is not intended as a full translation.
+The code provided above illustrates the approach to be used to localize the __RadSpellChecker__ and is not intended as a full translation.

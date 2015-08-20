@@ -5,17 +5,12 @@ description: Dictionaries
 slug: winforms/spellchecker/dictionaries
 tags: dictionaries
 published: True
-position: 4
+position: 5
 ---
 
 # Dictionaries
 
-
-
-RadSpellChecker comes with one predefined dictionary which checks the English language.
-        In case you need a dictionary for another language, you check the [Dictinaries for RadSpellChecker](http://www.telerik.com/community/code-library/winforms/localization-providers/dictionaries-for-radspellchecker.aspx)
-        article where our customers have provided their own implementation of dictionaries for the different languages.
-        The following section demonstrates how you can load one of these dictionaries in your own project.
+RadSpellChecker comes with one predefined dictionary which checks the English language. In case you need a dictionary for another language, you check the [Dictinaries for RadSpellChecker](http://www.telerik.com/community/code-library/winforms/localization-providers/dictionaries-for-radspellchecker.aspx) article where our customers have provided their own implementation of dictionaries for the different languages.The following section demonstrates how you can load one of these dictionaries in your own project.
       
 
 ## Loading a custom dictionary
@@ -27,19 +22,10 @@ RadSpellChecker comes with one predefined dictionary which checks the English la
 1. Let's say that you have chosen one of the dictionary files provided in [this article](http://www.telerik.com/community/code-library/winforms/localization-providers/dictionaries-for-radspellchecker.aspx), for example, the German (Germany) (de-DE) dictionary.
             
 
-1. Now let's load the dictionary file (*.TDF) in our project as a
-              [project resource](http://msdn.microsoft.com/en-us/library/3bka19x4(v=vs.100).aspx).
+1. Now let's load the dictionary file (*.TDF) in our project as a [project resource](http://msdn.microsoft.com/en-us/library/3bka19x4(v=vs.100).aspx).
             
 
-1. Further, we should create a WordDictionary descendant. Let's call the descendant GermanDictionary. In this class
-              we should override the EnsureDictionaryLoadedOverride method, create a MemoryStream based on the
-              TDF resource and call the Load method of the WordDictionary class passing the MemoryStream as a parameter. Assuming
-              that our CSharp project is called SamplesCS the code looks as shown below:
-            #_[C#]_
-
-	
-
-
+1. Further, we should create a WordDictionary descendant. Let's call the descendant GermanDictionary. In this class we should override the EnsureDictionaryLoadedOverride method, create a MemoryStream based on the TDF resource and call the Load method of the WordDictionary class passing the MemoryStream as a parameter. Assuming that our CSharp project is called SamplesCS the code looks as shown below:
 
 {{source=..\SamplesCS\SpellChecker\GermanDictionary.cs region=germanDictionary}} 
 {{source=..\SamplesVB\SpellChecker\GermanDictionary.vb region=germanDictionary}} 
@@ -70,21 +56,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-1. Next, we should add the custom dictionary to our RadSpellChecker. Please note,
-              that dictionaries are added per control types basis using the __GetControlSpellChecker__ method.
-              This way, using just one RadSpellChecker instance you can
-              add different dictionaries of one and the same language in the context of different controls that need to be
-              spell checked. For example, here we are going to add a Dictionary that will be used only for RadTextBox instances.
-              In addition, we need to define a CultureInfo that will be stored together with the dictionary in the list of
-              dictionaries. This culture will serve as a primary key for the respective dictionary in the dictionaries collection.
-            #_[C#] Defining a culture_
-
-	
-
-
+4\. Next, we should add the custom dictionary to our RadSpellChecker. Please note, that dictionaries are added per control types basis using the __GetControlSpellChecker__ method. This way, using just one RadSpellChecker instance you can add different dictionaries of one and the same language in the context of different controls that need to be spell checked. For example, here we are going to add a Dictionary that will be used only for RadTextBox instances. In addition, we need to define a CultureInfo that will be stored together with the dictionary in the list of dictionaries. This culture will serve as a primary key for the respective dictionary in the dictionaries collection.
 
 {{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=defineCulture}} 
 {{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=defineCulture}} 
@@ -97,14 +69,9 @@ End Class
     '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-#_[C#] Adding a dictionary_
-
-	
-
-
+#### Adding a dictionary
 
 {{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=addingDictionary}} 
 {{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=addingDictionary}} 
@@ -123,16 +90,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-1. Now, we have to set the __SpellCheckingCulture__ property that will determine which of the available dictionaries will
-              be used (in case dictionaries of different languages are added).
-            #_[C#] Setting the culture_
-
-	
-
-
+5\. Now, we have to set the __SpellCheckingCulture__ property that will determine which of the available dictionaries will be used (in case dictionaries of different languages are added).  
 
 {{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=settingCulture}} 
 {{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=settingCulture}} 
@@ -148,7 +106,5 @@ End Class
 {{endregion}} 
 
 
-If this property is not set, RadSpellChecker will
-              try check if there is a dictionary whose culture is the CurrentUICulture of the application. If such a dictionary is found, RadSpellChecker
-              will use that dictionary.
+If this property is not set, RadSpellChecker will try check if there is a dictionary whose culture is the CurrentUICulture of the application. If such a dictionary is found, RadSpellChecker will use that dictionary.
             
