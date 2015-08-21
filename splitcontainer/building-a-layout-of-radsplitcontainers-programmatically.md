@@ -10,15 +10,9 @@ position: 1
 
 # Building a layout of RadSplitContainers programmatically
 
-
-
 ## 
 
-You can programmatically build a layout of panels using RadSplitContainer. To do so, refer to the code snippet below:#_[C#]_
-
-	
-
-
+You can programmatically build a layout of panels using RadSplitContainer. To do so, refer to the code snippet below:
 
 {{source=..\SamplesCS\SplitContainer\BuildingLayout.cs region=basicLayout}} 
 {{source=..\SamplesVB\SplitContainer\BuildingLayout.vb region=basicLayout}} 
@@ -100,10 +94,9 @@ You can programmatically build a layout of panels using RadSplitContainer. To d
 
 {{endregion}} 
 
+The result is shown on the screenshot below:
 
-
-
-The result is shown on the screenshot below:![splitcontainer-building-a-layout-of-radsplitcontainers-programmatically 001](images/splitcontainer-building-a-layout-of-radsplitcontainers-programmatically001.png)
+![splitcontainer-building-a-layout-of-radsplitcontainers-programmatically 001](images/splitcontainer-building-a-layout-of-radsplitcontainers-programmatically001.png)
 
 >tip You can find advanced layouts created with RadSplitContainers in the Telerik UI for WinForms Demo application, section *SplitContainer >> Layout* . You can find it at *Start >> Programs >> Telerik >> UI for WinForms [version] >> Run Demos* (Please note that you should have the Telerik UI for WinForms suite installed).
 >

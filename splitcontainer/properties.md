@@ -5,12 +5,10 @@ description: Properties
 slug: winforms/splitcontainer/properties
 tags: properties
 published: True
-position: 3
+position: 4
 ---
 
 # Properties
-
-
 
 This article provides description for the most important properties of the __RadSplitContainer__
 

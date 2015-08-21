@@ -1,16 +1,14 @@
 ---
-title: SplitContainer
+title: Overview
 page_title: SplitContainer | UI for WinForms Documentation
 description: SplitContainer
 slug: winforms/splitcontainer
 tags: splitcontainer
 published: True
-position: 43
+position: 0
 ---
 
 # SplitContainer
-
-
 
 ## 
 

@@ -5,31 +5,20 @@ description: Building Advanced Layouts
 slug: winforms/splitcontainer/building-advanced-layouts
 tags: building,advanced,layouts
 published: True
-position: 2
+position: 3
 ---
 
 # Building Advanced Layouts
 
 
+## Building Advanced Layouts
 
+![splitcontainer-building-advanced-layouts 001](images/splitcontainer-building-advanced-layouts001.png)
 
-
-## Building Advanced Layouts![splitcontainer-building-advanced-layouts 001](images/splitcontainer-building-advanced-layouts001.png)
-
-*
-            A 5*5 Grid of SplitPanel instances, with the center panel’s SizeMode set
-            to SplitPanelSizeMode.Fill
-          *
-
-
-
+* A 5*5 Grid of SplitPanel instances, with the center panel’s SizeMode set to SplitPanelSizeMode.Fill
+          
 In order to achieve the layout on the top screen, refer to the code snippet
-          below:
-        #_[C#]_
-
-	
-
-
+ below:
 
 {{source=..\SamplesCS\SplitContainer\BuildingLayout.cs region=advancedLayout}} 
 {{source=..\SamplesVB\SplitContainer\BuildingLayout.vb region=advancedLayout}} 
@@ -108,34 +97,18 @@ In order to achieve the layout on the top screen, refer to the code snippet
 {{endregion}} 
 
 
-
-
-What we are doing here is to create a number (specified by the "rows"
-          parameter) of split containers and for each container to add the desired number
-          (defined by the "cols" parameter) split panels. When we have a descendant split
-          panel with Size Mode set to fill, then all other descendants are sized
-          absolutely to allow the Fill panel occupy entire remaining size. The layout
-          engine is smart enough to traverse the entire layout tree, thus allowing the
-          fill panel to reside at any branch.
+What we are doing here is to create a number (specified by the "rows" parameter) of split containers and for each container to add the desired number(defined by the "cols" parameter) split panels. When we have a descendant split panel with Size Mode set to fill, then all other descendants are sized absolutely to allow the Fill panel occupy entire remaining size. The layout engine is smart enough to traverse the entire layout tree, thus allowing the fill panel to reside at any branch.
         
 
-If we do not apply the Fill size mode to the center panel, then we have
-          evenly auto-sized panels.
-        ![splitcontainer-building-advanced-layouts 002](images/splitcontainer-building-advanced-layouts002.png)
+If we do not apply the Fill size mode to the center panel, then we have evenly auto-sized panels.
+
+![splitcontainer-building-advanced-layouts 002](images/splitcontainer-building-advanced-layouts002.png)
 
 *A 3*3 Grid of SplitPanel instances, all auto-sized*
 
-
-
 ## Size Restrictions
 
-Each SplitPanelSizeInfo instance has MinimumSize and MaximumSize members,
-          which control the allowed size boundaries for the owning SplitPanel instance.
-          The following code demonstrates how to utilize these features:
-        #_[C#]_
-
-	
-
+Each SplitPanelSizeInfo instance has MinimumSize and MaximumSize members, which control the allowed size boundaries for the owning SplitPanel instance. The following code demonstrates how to utilize these features:
 
 
 {{source=..\SamplesCS\SplitContainer\BuildingLayout.cs region=panelRestrictions}} 
@@ -163,12 +136,7 @@ Each SplitPanelSizeInfo instance has MinimumSize and MaximumSize members,
 
 ![splitcontainer-building-advanced-layouts 003](images/splitcontainer-building-advanced-layouts003.png)
 
-*
-            The green panel in the center is with applied size
-            restrictions.
-          *
-
-These settings are considered by both the layout engine and the splitter
-          logic, which will clamp the drag hint to visually emphasize on the
-          restrictions.
+*The green panel in the center is with applied size restrictions.
+         
+These settings are considered by both the layout engine and the splitterlogic, which will clamp the drag hint to visually emphasize on the restrictions.
         
