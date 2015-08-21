@@ -5,7 +5,7 @@ description: Getting Started
 slug: winforms/spread-processing/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
@@ -68,12 +68,9 @@ The following .NET assemblies are required as well"
 The document model allows you to instantiate a new [workbook]({%slug winforms/spread-processing/working-with-workbooks/whats-is-a-workbook?%}) and populate it with any data you want.
         
 
-__Example 1__ shows how you can create a workbook and add a new worksheet to it.
-        #_[C#] Example 1: Create Workbook_
+__Example 1__ shows how you can create a workbook and add a new worksheet to it. _
 
-	
-
-
+#### Example 1: Create Workbook
 
 {{source=..\SamplesCS\RadSpreadProcessing\RadSpreadProcessingGettingStarted.cs region=radspreadprocessing-getting-started_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\RadSpreadProcessingGettingStarted.vb region=radspreadprocessing-getting-started_0}} 
@@ -90,15 +87,9 @@ __Example 1__ shows how you can create a workbook and add a new worksheet to it.
 
 {{endregion}} 
 
-
-
-
 You can then create a [CellSelection]({%slug winforms/spread-processing/working-with-cells/get,-set-and-clear-cell-properties%}) and set any value to the selected cells. __Example 2__ shows how you can create a cell and set a string value to it.
-        #_[C#] Example 2: Set Value of Cell_
 
-	
-
-
+#### Example 2: Set Value of Cell
 
 {{source=..\SamplesCS\RadSpreadProcessing\RadSpreadProcessingGettingStarted.cs region=radspreadprocessing-getting-started_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\RadSpreadProcessingGettingStarted.vb region=radspreadprocessing-getting-started_1}} 
@@ -115,17 +106,12 @@ You can then create a [CellSelection]({%slug winforms/spread-processing/working-
 
 {{endregion}} 
 
-
-
-
 ## Exporting
 
 The __RadSpreadProcessing__ library supports a variety of formats to which you can export the contents of a workbook. __Example 3__ shows how you can export the previously created workbook to Xlsx format.
-        #_[C#] Example 3: Export to Xlsx_
-
-	
 
 
+#### Example 3: Export to Xlsx
 
 {{source=..\SamplesCS\RadSpreadProcessing\RadSpreadProcessingGettingStarted.cs region=radspreadprocessing-getting-started_2}} 
 {{source=..\SamplesVB\RadSpreadProcessing\RadSpreadProcessingGettingStarted.vb region=radspreadprocessing-getting-started_2}} 
@@ -150,9 +136,6 @@ The __RadSpreadProcessing__ library supports a variety of formats to which you c
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

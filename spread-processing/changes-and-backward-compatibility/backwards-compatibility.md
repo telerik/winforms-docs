@@ -10,17 +10,13 @@ position: 1
 
 # Backwards Compatibility
 
-
-
 This article will list the breaking changes and how they can be fixed when upgrading from a specific version of the controls to the next one.
-      
 
 ## What's Different in 2014 Q3
 
 __Changed__
 
 The default value of the IsEnabled property of the WorkbookHistory class is changed to false.
-        
 
 __What to do now__
 

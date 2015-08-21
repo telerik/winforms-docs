@@ -374,6 +374,27 @@ navigation:
     spread-processing:
         title: SpreadProcessing
         position: 45
+    spread-processing/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 2
+    spread-processing/working-with-workbooks:
+        title: Workingwith Workbooks
+        position: 3
+    spread-processing/working-with-worksheets:
+        title: Working with Worksheets
+        position: 4
+    spread-processing/working-with-rows-and-columns:
+        title: Working with Rows and Columns
+        position: 5
+    spread-processing/working-with-cells:
+        title: Working with Cells
+        position: 6
+    spread-processing/formats-and-conversion:
+        title: Formats and Conversion
+        position: 7
+    spread-processing/features:
+        title: Features
+        position: 8
     track-and-status-controls:
         title: Track and Status controls
         position: 46
