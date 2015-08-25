@@ -10,8 +10,6 @@ position: 3
 
 # CAB Application Classes
 
-
-
 ## RadWindowsFormsApplication
 
 This class inherits from the original WindowsFormsApplication class. It controls the elements that are added to the application in its AfterShellCreated method by:
