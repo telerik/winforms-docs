@@ -10,13 +10,7 @@ position: 1
 
 # Iterating Rows
 
-
-
-You can iterate through grid rows using the __Rows__ collection of __GridViewRowInfo__ objects. The example below selects the last row, then iterates looking for selected rows. When the selected row is found, the __GridViewRowInfo EnsureVisible()__ method scrolls the row into view:#_[C#] Iterating RadGridView rows_
-
-	
-
-
+You can iterate through grid rows using the __Rows__ collection of __GridViewRowInfo__ objects. The example below selects the last row, then iterates looking for selected rows. When the selected row is found, the __GridViewRowInfo.EnsureVisible()__ method scrolls the row into view:
 
 {{source=..\SamplesCS\GridView\Rows\IteratingRows.cs region=iteratingRows}} 
 {{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=iteratingRows}} 
@@ -46,21 +40,9 @@ You can iterate through grid rows using the __Rows__ collection of __GridViewRow
 
 {{endregion}} 
 
-
-
-
-
-
 ## Finding a grid row by a value of one of its cells
 
-You could search for specific value in __RadGridView__by iterating through the rows and compare cells value. In the example below, you search for __searchedStr__in __MyColumnName__ column:
-          
-          
-        #_[C#] Fill RadGridView with hierarchical data_
-
-	
-
-
+You could search for specific value in __RadGridView__ by iterating through the rows and compare cells value. In the example below, you search for __searchedStr__ in __MyColumnName__ column:
 
 {{source=..\SamplesCS\GridView\Rows\IteratingRows.cs region=findAGridRowByCellValue}} 
 {{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=findAGridRowByCellValue}} 
@@ -89,18 +71,9 @@ You could search for specific value in __RadGridView__by iterating through the r
 
 {{endregion}} 
 
-
-
-
-
-
 ## Iterating all rows in a hierarchical RadGridView
 
-When you have a hierarchical grid with many templates you can use a recursive method to iterate trough all rows:#_[C#]_
-
-	
-
-
+When you have a hierarchical grid with many templates you can use a recursive method to iterate trough all rows:
 
 {{source=..\SamplesCS\GridView\Rows\IteratingRows.cs region=hierarchy}} 
 {{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=hierarchy}} 

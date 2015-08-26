@@ -14,11 +14,7 @@ position: 9
 
 ## 
 
-Each row has a *Tag *property associated with it of type object where you can store a custom object.#_[C#] Setting the Tag property of a row_
-
-	
-
-
+Each row has a *Tag* property associated with it of type object where you can store a custom object.
 
 {{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=assignTagProperty}} 
 {{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=assignTagProperty}} 
@@ -36,11 +32,7 @@ Each row has a *Tag *property associated with it of type object where you can st
 
 
 
-#_[C#] Setting the Tag property of cells in CellFormatting event_
-
-	
-
-
+Setting the Tag property of cells in __CellFormatting__ event.
 
 {{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=setTagInCellFormatting}} 
 {{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=setTagInCellFormatting}} 
@@ -74,11 +66,7 @@ Each row has a *Tag *property associated with it of type object where you can st
 
 
 
-The most natural place to use the tag is in some of the row/cell events. For example, to make the content of certain cells invisible use the following code:#_[C#] Collapsing all rows with the specified tag_
-
-	
-
-
+The most natural place to use the tag is in some of the row/cell events. For example, to make the content of certain cells invisible use the following code:
 
 {{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=hideRowsWithSpecifiedTag}} 
 {{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=hideRowsWithSpecifiedTag}} 
@@ -106,8 +94,6 @@ The most natural place to use the tag is in some of the row/cell events. For exa
 
 
 
->note 
-
-Note: Cells also have Tag property but it differs substantially from rows one because of the UI Virtualization. Cells are reused and when you scroll the tag value remains unchanged while cell data value is updated.
+>note Cells also have Tag property but it differs substantially from rows one because of the UI Virtualization. Cells are reused and when you scroll the tag value remains unchanged while cell data value is updated.
 >
 

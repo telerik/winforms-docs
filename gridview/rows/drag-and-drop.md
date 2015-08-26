@@ -23,17 +23,10 @@ This help article demonstrates how to extend the RadGridView control to enable d
 To get started:
 
 1. Open Visual Studio 2012 and create a new Telerik UI for WinForms project.
-            
 
 1. Add a new class called “DragAndDropRadGrid.cs”.
-            
 
 1. Modify the class to extend the RadGridView control through inheritance.
-            #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=Definition}} 
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=Definition}} 
@@ -49,17 +42,7 @@ Public Class DragAndDropRadGrid
 
 {{endregion}} 
 
-
-
-
-The drag and drop functionality is made easy using the built-in RadGridViewDragDropService as the plumbing code is already handled, you only need to handle events emanating from this
-          service. Create a default constructor for the DragAndDropRadGrid class. In this constructor we will grab a reference to the RadGridView RadDragDropService and generate event handler
-          stubs for a few of the service’s events.
-        #_[C#] _
-
-	
-
-
+The drag and drop functionality is made easy using the built-in RadGridViewDragDropService as the plumbing code is already handled, you only need to handle events emanating from this service. Create a default constructor for the DragAndDropRadGrid class. In this constructor we will grab a reference to the RadGridView RadDragDropService and generate event handler stubs for a few of the service’s events.
 
 {{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=Constructor}} 
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=Constructor}} 
@@ -108,14 +91,7 @@ The drag and drop functionality is made easy using the built-in RadGridViewDragD
 
 ## Starting the Drag and Drop Service using behaviors
 
-In order to start the drag and drop service when the user clicks on a row with the left mouse button, it is necessary to create a custom grid behavior.
-        To do this, create a new class that inherits the GridDataRowBehavior class. In addition the drag and drop service allows you to disable the auto scrolling while 
-        dragging functionality:
-      #_[C#] _
-
-	
-
-
+In order to start the drag and drop service when the user clicks on a row with the left mouse button, it is necessary to create a custom grid behavior. To do this, create a new class that inherits the GridDataRowBehavior class. In addition the drag and drop service allows you to disable the auto scrolling while dragging functionality:
 
 {{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=GridBehavior}} 
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=GridBehavior}} 
@@ -160,15 +136,11 @@ End Class
 
 
 
-It is important to register this behavior in our grid. Build the solution and our custom grid is now setup and ready to use. You can locate it in the Visual Studio toolbox when in the design view of a form. ![gridview-rows-drag-and-drop 003](images/gridview-rows-drag-and-drop003.png)
+It is important to register this behavior in our grid. Build the solution and our custom grid is now setup and ready to use. You can locate it in the Visual Studio toolbox when in the design view of a form.<br> ![gridview-rows-drag-and-drop 003](images/gridview-rows-drag-and-drop003.png)
 
 ## Drag and Drop events
 
-The PreviewDragStart event is fired once the Drag and Drop service on the grid is started. In this case, we simply want to tell the drag and drop service if the drag operation can move forward. Implement the PreviewDragStart event handler as follows:#_[C#] _
-
-	
-
-
+The PreviewDragStart event is fired once the Drag and Drop service on the grid is started. In this case, we simply want to tell the drag and drop service if the drag operation can move forward. Implement the PreviewDragStart event handler as follows:
 
 {{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=PreviewDragStart}} 
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=PreviewDragStart}} 
@@ -189,14 +161,7 @@ The PreviewDragStart event is fired once the Drag and Drop service on the grid i
 
 {{endregion}} 
 
-
-
-
-The next event we will handle is the PreviewDragOver event. This event allows you to control on what targets the row being dragged can be dropped on. In this case, as long as it’s being dropped somewhere on the target grid, we are good with it. Implement the handler as follows:#_[C#] _
-
-	
-
-
+The next event we will handle is the PreviewDragOver event. This event allows you to control on what targets the row being dragged can be dropped on. In this case, as long as it’s being dropped somewhere on the target grid, we are good with it. Implement the handler as follows:
 
 {{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=PreviewDragOver}} 
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=PreviewDragOver}} 
@@ -225,13 +190,7 @@ The next event we will handle is the PreviewDragOver event. This event allows yo
 {{endregion}} 
 
 
-
-
-The last event we want to handle in our implementation is the PreviewDragDrop event. This event allows you to get a handle on all the aspects of the drag and drop operation, the source (drag) grid, the destination (target) grid, as well as the row being dragged. This is where we will initiate the actual physical move of the row(s) from one grid to the other. Implement the handler as follows:#_[C#] _
-
-	
-
-
+The last event we want to handle in our implementation is the PreviewDragDrop event. This event allows you to get a handle on all the aspects of the drag and drop operation, the source (drag) grid, the destination (target) grid, as well as the row being dragged. This is where we will initiate the actual physical move of the row(s) from one grid to the other. Implement the handler as follows:
 
 {{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=PreviewDragDrop}} 
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=PreviewDragDrop}} 
@@ -316,9 +275,6 @@ The last event we want to handle in our implementation is the PreviewDragDrop ev
 
 {{endregion}} 
 
-
-
-
 ## Moving the data from one source to the other
 
 You will notice at the end of the PreviewDragDrop handler that we need to create a MoveRows function that will handle the actual moving the data from the source to the destination. As mentioned at the beginning of the article, three distinct data scenarios will be handled:
@@ -329,11 +285,7 @@ You will notice at the end of the PreviewDragDrop handler that we need to create
 
 * Bound to a DataSet
 
-It is in the MoveRows method where the physical moving of the data happens. Basically what we need in this method is to add the data into the target data source, and remove it from the source data source in order to complete the drag and drop operation under the covers. Implement the MoveRows method as follows:#_[C#] _
-
-	
-
-
+It is in the MoveRows method where the physical moving of the data happens. Basically what we need in this method is to add the data into the target data source, and remove it from the source data source in order to complete the drag and drop operation under the covers. Implement the MoveRows method as follows:
 
 {{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=MoveRows}} 
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=MoveRows}} 
@@ -453,18 +405,11 @@ It is in the MoveRows method where the physical moving of the data happens. Basi
 
 {{endregion}} 
 
-
-
-
 ## Using our new control
 
 Open the designer for Form1 and layout your form by dragging two instances of our DragAndDropRadGrid control (name them leftGrid and rightGrid respectively). Then drag three RadButton instances and name them btnUnbound, btnBoundObjects, and btnBoundDataSet. Visually layout the form and label your form elements in the designer as follows:![gridview-rows-drag-and-drop 004](images/gridview-rows-drag-and-drop004.png)
 
-Initialize some settings of the grids in the default constructor of the form as follows, we’ll also add a method to reset the grids:#_[C#] _
-
-	
-
-
+Initialize some settings of the grids in the default constructor of the form as follows, we’ll also add a method to reset the grids:
 
 {{source=..\SamplesCS\GridView\Rows\DragAndDropRadGridForm1.cs region=Form1}} 
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGridForm1.vb region=Form1}} 
@@ -514,14 +459,7 @@ Initialize some settings of the grids in the default constructor of the form as 
 
 {{endregion}} 
 
-
-
-
-First we will implement the usage of our custom grid in an unbound scenario. To do this, double-click on the Unbound button to implement its click event handler as follows:#_[C#] _
-
-	
-
-
+First we will implement the usage of our custom grid in an unbound scenario. To do this, double-click on the Unbound button to implement its click event handler as follows:
 
 {{source=..\SamplesCS\GridView\Rows\DragAndDropRadGridForm1.cs region=Unbound}} 
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGridForm1.vb region=Unbound}} 
@@ -579,14 +517,7 @@ First we will implement the usage of our custom grid in an unbound scenario. To 
 
 {{endregion}} 
 
-
-
-
-Next we will implement the usage of our grid when it is bound to a BindingList. Double-click on the Bound to Objects button, and implement it as follows:#_[C#] _
-
-	
-
-
+Next we will implement the usage of our grid when it is bound to a BindingList. Double-click on the Bound to Objects button, and implement it as follows:
 
 {{source=..\SamplesCS\GridView\Rows\DragAndDropRadGridForm1.cs region=BoundObjects}} 
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGridForm1.vb region=BoundObjects}} 
@@ -648,13 +579,7 @@ Next we will implement the usage of our grid when it is bound to a BindingList. 
 {{endregion}} 
 
 
-
-
-Add a Player class to the Form1.cs source file to support this scenario defined as the following:#_[C#] _
-
-	
-
-
+Add a Player class to the Form1.cs source file to support this scenario defined as the following:
 
 {{source=..\SamplesCS\GridView\Rows\DragAndDropRadGridForm1.cs region=Player}} 
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGridForm1.vb region=Player}} 
@@ -692,13 +617,7 @@ Add a Player class to the Form1.cs source file to support this scenario defined 
 {{endregion}} 
 
 
-
-
-Lastly we will implement the scenario of when the grids are bound to a DataSet. Implement the click event handler of the Bound to DataSet button as follows:#_[C#] _
-
-	
-
-
+Lastly we will implement the scenario of when the grids are bound to a DataSet. Implement the click event handler of the Bound to DataSet button as follows:
 
 {{source=..\SamplesCS\GridView\Rows\DragAndDropRadGridForm1.cs region=DataSet}} 
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGridForm1.vb region=DataSet}} 
@@ -762,8 +681,5 @@ Lastly we will implement the scenario of when the grids are bound to a DataSet. 
 ````
 
 {{endregion}} 
-
-
-
 
 Go ahead and build and run the application. You are now able to use drag and drop functionality in bound and unbound modes. You are also able to select multiple rows using either the shift or control key, and holding the key down while you drag the rows between the grids.

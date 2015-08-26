@@ -12,19 +12,12 @@ position: 17
 
 
 
-__RadGridView__ provides a variety of visual cells per row with different functionality and purpose.
-        However, in some cases you may need to display custom elements, not a single cell per column. This article demonstrates
-        a sample approach how to create a custom row element.
+__RadGridView__ provides a variety of visual cells per row with different functionality and purpose. However, in some cases you may need to display custom elements, not a single cell per column. This article demonstrates a sample approach how to create a custom row element.
     
 
 ## Custom new row
 
-Consider the __RadGridView__ is populated with data form Northwind.Products table.
-        #_[C#]_
-
-	
-
-
+Consider the __RadGridView__ is populated with data form Northwind.Products table. 
 
 {{source=..\SamplesCS\GridView\Rows\CreateCustomNewRow.cs region=PopulateData}} 
 {{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=PopulateData}} 
@@ -59,28 +52,18 @@ Consider the __RadGridView__ is populated with data form Northwind.Products tabl
 
 {{endregion}} 
 
-
-
-
 >note In order to enlarge the new row's height, you can set the TableElement.ViewInfo.TableAddNewRow. __Height__ property.
 >
 
 
-On the new row we will display a __RadChartViewElement__ visualizing the Products data. For
-        this purpose we should follow the steps below:
-      
+On the new row we will display a __RadChartViewElement__ visualizing the Products data. For this purpose we should follow the steps below:
 
 >note You can replace the __RadChartViewElement__ with any __RadElement__ or a set of elements.
 >
+
 ![gridview-rows-custom-rows 001](images/gridview-rows-custom-rows001.png)
 
-1. Create a descendant of the __GridRowElement__ and override its __CreateChildElements__
-            where you should add a single __GridCellElement__ that contains the chart. The __IsCompatible__
-            method  determines for which __GridViewRowInfo__ the custom row element is applicable:#_[C#]_
-
-	
-
-
+1\. Create a descendant of the __GridRowElement__ and override its __CreateChildElements__ where you should add a single __GridCellElement__ that contains the chart. The __IsCompatible__ method  determines for which __GridViewRowInfo__ the custom row element is applicable:
 
 {{source=..\SamplesCS\GridView\Rows\CreateCustomNewRow.cs region=RowElement}} 
 {{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=RowElement}} 
@@ -169,15 +152,7 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 
 {{endregion}} 
 
-
-
-
-1. Create a descendant of the __GridViewNewRowInfo__ and specify that it uses the row element from the previous step
-            by overriding its __RowElementType__ property#_[C#]_
-
-	
-
-
+2\. Create a descendant of the __GridViewNewRowInfo__ and specify that it uses the row element from the previous step by overriding its __RowElementType__ property
 
 {{source=..\SamplesCS\GridView\Rows\CreateCustomNewRow.cs region=RowInfo}} 
 {{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=RowInfo}} 
@@ -219,16 +194,7 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 
 {{endregion}} 
 
-
-
-
-1. The last step is to subscribe to the RadGridView.__CreateRowInfo__ event at design time and replace
-            the default __GridViewNewRowInfo__ with your custom one:
-          #_[C#]_
-
-	
-
-
+3\. The last step is to subscribe to the RadGridView.__CreateRowInfo__ event at design time and replace the default __GridViewNewRowInfo__ with your custom one:
 
 {{source=..\SamplesCS\GridView\Rows\CreateCustomNewRow.cs region=ReplaceRow}} 
 {{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=ReplaceRow}} 

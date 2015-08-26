@@ -20,11 +20,7 @@ Rows in RadGridView can be selected by a translucent rectangle selection. You s
 
 
 
-Use the __ShowTranslucentSelectionRecatangle__ of the __GridTableElement__ to enable or disable the selection rectangle:#_[C#] Disabling the selection rectangle_
-
-	
-
-
+Use the __ShowTranslucentSelectionRecatangle__ of the __GridTableElement__ to enable or disable the selection rectangle:
 
 {{source=..\SamplesCS\GridView\Rows\SelectionRectangle.cs region=selectionRectangle}} 
 {{source=..\SamplesVB\GridView\Rows\SelectionRectangle.vb region=selectionRectangle}} 

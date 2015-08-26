@@ -48,11 +48,7 @@ The __ConditionalFormattingObject__ also contains formatting properties for the 
 
 ## Conditional Formatting Rows
 
-This example looks for the same condition as the [cell formatting example]({%slug winforms/gridview/cells/conditional-formatting-cells%}). The difference is that the last parameter ("ApplyToRow") passed to the __ConditionalFormattingObject__is set to true, allowing the __RowBackColor__ property to be recognized.  ![gridview-rows-conditional-formatting-rows 001](images/gridview-rows-conditional-formatting-rows001.png)#_[C#] Conditional formatting rows_
-
-	
-
-
+This example looks for the same condition as the [cell formatting example]({%slug winforms/gridview/cells/conditional-formatting-cells%}). The difference is that the last parameter ("ApplyToRow") passed to the __ConditionalFormattingObject__ is set to true, allowing the __RowBackColor__ property to be recognized.  ![gridview-rows-conditional-formatting-rows 001](images/gridview-rows-conditional-formatting-rows001.png)
 
 {{source=..\SamplesCS\GridView\Rows\ConditionalFormattingRows.cs region=conditionalFormatting}} 
 {{source=..\SamplesVB\GridView\Rows\ConditionalFormattingRows.vb region=conditionalFormatting}} 
@@ -72,8 +68,6 @@ This example looks for the same condition as the [cell formatting example]({%slu
 ````
 
 {{endregion}} 
-
-
 
 
 >caution The declarative nature of Conditional Formatting limits the situations in which it can be used. While the provided functionality covers most scenarios, there are situations in which you will need to use[events]({%slug winforms/gridview/rows/formatting-rows%}).

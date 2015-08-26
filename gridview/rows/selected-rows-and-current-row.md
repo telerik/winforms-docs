@@ -14,11 +14,7 @@ position: 7
 
 ## IsSelected
 
-The property __IsSelected__determines whether a row is selected. For example, to select a row programmatically use the following code snippet:  #_[C#] Selecting a row_
-
-	
-
-
+The property __IsSelected__ determines whether a row is selected. For example, to select a row programmatically use the following code snippet:
 
 {{source=..\SamplesCS\GridView\Rows\SelectedRowAndCurrentRow.cs region=selectingARow}} 
 {{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=selectingARow}} 
@@ -33,14 +29,7 @@ The property __IsSelected__determines whether a row is selected. For example, to
 
 {{endregion}} 
 
-
-
-
-All *currently* selected rows are included in the __SelectedRows__ collection. If you clear this collection and send an update message to RadGridView, this will essentially unselect all rows:#_[C#] Clearing the selected rows_
-
-	
-
-
+All *currently* selected rows are included in the __SelectedRows__ collection. If you clear this collection and send an update message to __RadGridView__, this will essentially unselect all rows:
 
 {{source=..\SamplesCS\GridView\Rows\SelectedRowAndCurrentRow.cs region=unselectAllRows}} 
 {{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=unselectAllRows}} 
@@ -60,15 +49,11 @@ All *currently* selected rows are included in the __SelectedRows__ collection. I
 
 ## IsCurrent
 
-The property __IsCurrent__determines which row is the current one. There can be only one current row or no current row if IsCurrent is set to null. 
+The property __IsCurrent__ determines which row is the current one. There can be only one current row or no current row if IsCurrent is set to null. 
 
-Most themes visualizes it in a similar way to the way selected rows are visualized although technically IsCurrent and IsSelected are independent of one another. __IsCurrent__functionality is related to the keyboard support.
+Most themes visualizes it in a similar way to the way selected rows are visualized although technically IsCurrent and IsSelected are independent of one another. __IsCurrent__ functionality is related to the keyboard support.
 
-Use the following code snippet to remove the current row:#_[C#] Clearing the current row_
-
-	
-
-
+Use the following code snippet to remove the current row:
 
 {{source=..\SamplesCS\GridView\Rows\SelectedRowAndCurrentRow.cs region=currentRow}} 
 {{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=currentRow}} 

@@ -12,22 +12,12 @@ position: 11
 
 
 
-Summary rows are RadGridView rows which allow you to display
-        information about the data in the control such as first item, last item,
-        count of items, etc. The summary rows are top and bottom pinned rows.
-        They can be used in a flat RadGridView or in groups and hierarchical views.
+Summary rows are RadGridView rows which allow you to display information about the data in the control such as first item, last item, count of items, etc. The summary rows are top and bottom pinned rows. They can be used in a flat RadGridView or in groups and hierarchical views.
       
 
 ## Basic Example
 
-The following example demonstrates how to create a top
-          pinned summary row,
-          showing the count of the RadGridView rows:
-        #_[C#]_
-
-	
-
-
+The following example demonstrates how to create a top pinned summary row, showing the count of the RadGridView rows:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=addingSummaryRow}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=addingSummaryRow}} 
@@ -99,13 +89,7 @@ The predefined aggregates are:
 
 ## Using the FormatString
 
-The following example demonstrates how to add several summary
-          items in a summary row and how the FormatString is used:
-        #_[C#]_
-
-	
-
-
+The following example demonstrates how to add several summary items in a summary row and how the FormatString is used:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=formatString}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=formatString}} 
@@ -136,13 +120,7 @@ The following example demonstrates how to add several summary
 
 ## Using an AggregateExpression
 
-The next example demonstrates how to use AggregateExpression to
-          calculate an average value excluding the Max and Min value:
-        #_[C#]_
-
-	
-
-
+The next example demonstrates how to use AggregateExpression to calculate an average value excluding the Max and Min value:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=aggregateExpression}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=aggregateExpression}} 
@@ -174,20 +152,9 @@ The next example demonstrates how to use AggregateExpression to
 
 ## Summary rows in grouped RadGridView
 
-When you use grouping, the summary rows are calculated for
-          each group child rows and displayed as top or bottom pinned rows
-          in each group. Using the template property ShowTotals you can
-          define if total summary rows will be shown. They are calculated
-          for the child rows of all groups and pinned at the top or bottom
-          of all groups.
-        
+When you use grouping, the summary rows are calculated for each group child rows and displayed as top or bottom pinned rows in each group. Using the template property ShowTotals you can define if total summary rows will be shown. They are calculated for the child rows of all groups and pinned at the top or bottom of all groups.
 
 The next example demonstrates how to use summary rows in grouping:
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=grouping}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=grouping}} 
@@ -219,17 +186,10 @@ The next example demonstrates how to use summary rows in grouping:
 
 ## Summary rows in hierarchical RadGridView
 
-You can add summary rows in hierarchical views.
-          They are calculated for the child rows in the current view.
+You can add summary rows in hierarchical views. They are calculated for the child rows in the current view.
         
 
-The following example demonstrates how to add a summary row to the
-          first level of RadGridView hierarchy:
-        #_[C#]_
-
-	
-
-
+The following example demonstrates how to add a summary row to the first level of RadGridView hierarchy:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=hierarchy}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=hierarchy}} 
@@ -257,38 +217,17 @@ The following example demonstrates how to add a summary row to the
 
 ## Customizing the summary row
 
-The GroupSummaryEvaluate event is fired after a summary item is
-          calculated and before the summary row is displayed.
-          You can use it to apply custom formatting to the summary row:
-        #_[C#]_
-
-	
-
-#_[VB.NET]_
-
-	
+The GroupSummaryEvaluate event is fired after a summary item is calculated and before the summary row is displayed. You can use it to apply custom formatting to the summary row:	
 
 ![gridview-rows-summary-rows 006](images/gridview-rows-summary-rows006.png)
 
-The same event is used to format the group header so it is important
-          to check the Parent in the event arguments, as shown in the above example.
+The same event is used to format the group header so it is important to check the Parent in the event arguments, as shown in the above example.
         
 
 ## Extending the GridViewSummaryItem
 
-You can write your own logic for summary items evaluation
-          by inheriting the GridViewSummaryItem class and overriding the
-          Evaluate event.
-        
+You can write your own logic for summary items evaluation by inheriting the GridViewSummaryItem class and overriding the Evaluate event.
 
-The following example demonstrates how to create a custom summary
-          item which calculates the count of orders with Freight is less than 50:
-        #_[C#]_
-
-	
-
-#_[VB.NET]_
-
-	
+The following example demonstrates how to create a custom summaryitem which calculates the count of orders with Freight is less than 50:
 
 ![gridview-rows-summary-rows 007](images/gridview-rows-summary-rows007.png)
