@@ -10,41 +10,27 @@ position: 0
 
 # Building the Telerik CAB Enabling Kit
 
-
-
-## Building the Telerik CAB Enabling Kit
-
-Telerik CAB Enabling Kit can be downloaded from
-          [Codeplex](http://telerikcab.codeplex.com/)
-
-          . The kit comes with Visual Studio 2010 solution file in
-          *CABKit* folder. The solution contains of the
-          __Telerik.WinControls.CompositeUI__ project where the RadControls workspaces,
-          adapters, etc are located. Additionally, in the solution, you can find two sample applications created with
-          Telerik CAB Enabling kit – BankTeller and Finance.
-        
+Telerik CAB Enabling Kit can be downloaded from[Codeplex](http://telerikcab.codeplex.com/). The kit comes with Visual Studio 2010 solution file in *CABKit* folder. The solution contains of the __Telerik.WinControls.CompositeUI__ project where the RadControls workspaces, adapters, etc are located. Additionally, in the solution, you can find two sample applications created with Telerik CAB Enabling kit – BankTeller and Finance.
 
 In order to build the Telerik CAB Enabling Kit you will need:
 
 * The following Microsoft assemblies (Included in the package):
-
-* Microsoft.Practices.CompositeUI
-
-* Microsoft.Practices.CompositeUI.Winforms
-
-* Microsoft.Practices.ObjectBuilder
+	
+	* Microsoft.Practices.CompositeUI
+	
+	* Microsoft.Practices.CompositeUI.Winforms
+	
+	* Microsoft.Practices.ObjectBuilder
 
 * The following Telerik assemblies:
 
-* Telerik.WinControls
+	* Telerik.WinControls
+	
+	* Telerik.WinControls.RadDock
+	
+	* Telerik.WinControls.UI
+	
+	* TelerikCommon
 
-* Telerik.WinControls.RadDock
-
-* Telerik.WinControls.UI
-
-* TelerikCommon
-
-After building the project it will output the Telerik.WinControls.CompositeUI assembly,
-          which you can add as reference in your application and start building CAB applications
-          empowered by the Telerik UI for WinForms suite.
+After building the project it will output the Telerik.WinControls.CompositeUI assembly, which you can add as reference in your application and start building CAB applications empowered by the Telerik UI for WinForms suite.
         

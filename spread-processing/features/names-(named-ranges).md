@@ -85,14 +85,12 @@ __Defined name__: A name that can contain any value that can be stored in a cell
 ## Add and Use a Defined Name
 
 __Example 1__ demonstrates how to add and use defined names. The code creates a workbook with one worksheet containing four values. Further, the example adds one global name called CorporateTax containing a constant value of 16 percent and a local GrossProfit name referring to the four values stored in Sheet1. Also, the cell A5 is assigned a value that uses a both GrossProfit and CorporateTax names.
-        #_[C#] Example 1: Add and use names_
 
-	
-
-
+#### Example 1: Add and use names
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingNamedRanges.cs region=radspreadprocessing-features-named-ranges_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingNamedRanges.vb region=radspreadprocessing-features-named-ranges_0}} 
+
 
 ````C#
             Workbook workbook = new Workbook();
@@ -131,22 +129,17 @@ __Example 1__ demonstrates how to add and use defined names. The code creates a 
 {{endregion}} 
 
 
-
-
 ## Remove Defined Names
 
 The NameCollection class exposes a __Remove()__ method that takes a string parameter specifying the name of the name which can be used to delete names. Note that after you delete the names, all names that contain them in their values will return the __#NAME? error__.
-        
 
 __Example 2__ shows how to remove one of the names added in __Example 1__.
-        #_[C#] Example 2: Remove name_
 
-	
-
-
+#### Example 2: Remove name
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingNamedRanges.cs region=radspreadprocessing-features-named-ranges_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingNamedRanges.vb region=radspreadprocessing-features-named-ranges_1}} 
+
 
 ````C#
             workbook.Names.Remove("CorporateTax");
@@ -159,6 +152,4 @@ __Example 2__ shows how to remove one of the names added in __Example 1__.
 ````
 
 {{endregion}} 
-
-
 

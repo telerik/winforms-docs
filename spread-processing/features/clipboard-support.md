@@ -10,22 +10,15 @@ position: 4
 
 # Clipboard Support
 
-
-
 The document model offers an easy way to copy and paste multiple values. The control provides flexible API that allows you to choose the content and formatting that gets included in the pasted region. This article demonstrates how to copy and paste data with different paste options.
-      
 
 ## Copy
 
 In order to copy values that appear in your worksheet, create a __CellSelection__ for the desired cell region and invoke its __Copy()__ method. The method returns a __WorksheetFragment__ instance that holds only the values you copied. The __WorksheetFragment__ is a piece of worksheet designed to keep the data you copy and its properties. You can later pass the worksheet fragment to the __Paste()__ method in order to get the values pasted in another worksheet.
-        
 
 __Example 1__ creates a new workbook with a single worksheet and assigns some sample values to the A1:B3 region. Further, the code creates a selection for the cell region and calls its __Copy()__ method. The returned __WorksheetFragment__ can later be used for pasting operation.
-        #_[C#] Example 1: Copy Selected Cells_
-
-	
-
-
+        
+#### Example 1: Copy Selected Cells
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingClipboardSupport.cs region=radspreadprocessing-features-clipboard-support_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingClipboardSupport.vb region=radspreadprocessing-features-clipboard-support_0}} 
@@ -62,13 +55,10 @@ __Example 1__ creates a new workbook with a single worksheet and assigns some sa
 
 {{endregion}} 
 
-
-
-
 ## Paste
 
 The document model provides control over the content and the formatting included in the pasted region. The __Paste()__ method requires two arguments: a __WorksheetFragment__ that contains the values to be pasted and a __PasteOptions__ instance that determines the type of information that will be pasted from the fragment. The __PasteOptions__ class introduces a __PasteType__ property that indicates the type of the paste. These are the supported paste types:
-        
+
 
 * __All__: Pastes everything, including text, numbers, formulas and their formatting.
             
@@ -89,14 +79,10 @@ The document model provides control over the content and the formatting included
             
 
 * __Formatting__: Pastes only the formatting of the copied cells to the pasted cells.
-            
 
 __Example 2__ creates a new workbook with an empty worksheet. Further, the example sets the __Value__ of cell *A1* to =CONCATENATE("Rad" ,"Spreadsheet") and its __ForeColor__ to green. The code copies the contents of *A1* and pastes it in *A2* using __All__ PasteType.
-        #_[C#] Copy All_
 
-	
-
-
+#### Example 2 Copy All
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingClipboardSupport.cs region=radspreadprocessing-features-clipboard-support_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingClipboardSupport.vb region=radspreadprocessing-features-clipboard-support_1}} 
@@ -129,15 +115,9 @@ __Example 2__ creates a new workbook with an empty worksheet. Further, the examp
 
 {{endregion}} 
 
-
-
-
 Using different __PasteType__, however, produces different output. __Example 3__ pastes the contents of *A1* with __Values__ PasteType which results in a value "RadSpreadsheet" instead of =CONCATENATE("Rad" ,"Spreadsheet") and default __ForeColor__ instead of green:
-        #_[C#] Example 3: Paste Values_
 
-	
-
-
+#### Example 3: Paste Values
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingClipboardSupport.cs region=radspreadprocessing-features-clipboard-support_2}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingClipboardSupport.vb region=radspreadprocessing-features-clipboard-support_2}} 
@@ -154,18 +134,12 @@ Using different __PasteType__, however, produces different output. __Example 3__
 
 {{endregion}} 
 
-
-
-
 If you would like to paste the formula contained in *A1*, not only its result, and keep its formatting, combine the __Values__ and __Formats__ paste types:
         
 
 __Example 4__ combines the Value and Formats paste types and preserves both the contents and formatting of the copied cell selection.
-        #_[C#] Example 4: Combine Values and Formats PasteType_
 
-	
-
-
+#### Example 4: Combine Values and Formats PasteType
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingClipboardSupport.cs region=radspreadprocessing-features-clipboard-support_3}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingClipboardSupport.vb region=radspreadprocessing-features-clipboard-support_3}} 
@@ -182,9 +156,6 @@ __Example 4__ combines the Value and Formats paste types and preserves both the 
 
 {{endregion}} 
 
-
-
-
 # See Also
 
- * [CellSelection]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%})
+* [CellSelection]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%})

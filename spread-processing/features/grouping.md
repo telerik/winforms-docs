@@ -10,10 +10,7 @@ position: 15
 
 # Grouping
 
-
-
-The purpose of this article is to describe what is grouping and how to work with it through the __RadSpreadProcessing__ model.
-        It contains the following sections:
+The purpose of this article is to describe what is grouping and how to work with it through the __RadSpreadProcessing__ model. It contains the following sections:
       
 
 * [What is Grouping?](#what-is-grouping?)
@@ -36,19 +33,14 @@ Each row or column which is part of a group is assigned an outline level, which 
 ![spreadprocessing-features-grouping 001](images/spreadprocessing-features-grouping001.png)
 
 In __Figure 1__, the rows 1, 2, 4 and 8 have outline level value of 1. Rows 5, 6, and 7 have outline level 2. Rows 3 and 9 do not participate in the grouping and have the default value of 0.
-        
 
 The maximum outline level is 7.
-        
 
 ## Grouping rows or columns
 
 There are two available options when grouping. The first option is to simply assign the outline level property of the rows or columns:
-        #_[C#] Example 1: Grouping Columns Using Outline Level_
 
-	
-
-
+#### Example 1: Grouping Columns Using Outline Level
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.cs region=radspreadprocessing-features-grouping_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.vb region=radspreadprocessing-features-grouping_0}} 
@@ -74,15 +66,9 @@ There are two available options when grouping. The first option is to simply ass
 
 {{endregion}} 
 
-
-
-
 The other option is to use the Group method exposed by the row/column selection classes.
-        #_[C#] Example 2: Grouping Columns Using the Group Method_
 
-	
-
-
+#### Example 2: Grouping Columns Using the Group Method
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.cs region=radspreadprocessing-features-grouping_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.vb region=radspreadprocessing-features-grouping_1}} 
@@ -106,9 +92,6 @@ The other option is to use the Group method exposed by the row/column selection 
 
 {{endregion}} 
 
-
-
-
 Both approaches will result in the following file:
         
 >caption Figure 2
@@ -124,11 +107,9 @@ The following code snippets exemplify the two approaches to make these changes i
         
 >caption Figure 3
 
-![spreadprocessing-features-grouping 003](images/spreadprocessing-features-grouping003.png)#_[C#] Example 3: Ungrouping Columns Using Ouline Level_
+![spreadprocessing-features-grouping 003](images/spreadprocessing-features-grouping003.png)
 
-	
-
-
+#### Example 3: Ungrouping Columns Using Ouline Level
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.cs region=radspreadprocessing-features-grouping_2}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.vb region=radspreadprocessing-features-grouping_2}} 
@@ -146,15 +127,9 @@ The following code snippets exemplify the two approaches to make these changes i
 
 {{endregion}} 
 
-
-
-
 You can achieve the same result with the code in __Example 4__:
-        #_[C#] Example 4: Ungrouping Columns Using the Ungroup Method_
 
-	
-
-
+#### Example 4: Ungrouping Columns Using the Ungroup Method
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.cs region=radspreadprocessing-features-grouping_3}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.vb region=radspreadprocessing-features-grouping_3}} 
@@ -172,17 +147,11 @@ You can achieve the same result with the code in __Example 4__:
 
 {{endregion}} 
 
-
-
-
 ## Getting the Outline Level
 
 You can get the outline level of a row/column or a group of rows/columns using the code in __Example 5__:
-        #_[C#] Example 5: Getting the OutlineLevel_
 
-	
-
-
+#### Example 5: Getting the OutlineLevel
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.cs region=radspreadprocessing-features-grouping_4}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.vb region=radspreadprocessing-features-grouping_4}} 
@@ -199,9 +168,6 @@ You can get the outline level of a row/column or a group of rows/columns using t
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

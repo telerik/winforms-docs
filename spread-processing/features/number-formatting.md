@@ -10,10 +10,7 @@ position: 11
 
 # Number Formatting
 
-
-
 Applying different formats to a number changes the appearance of the number. It is important to note, however, that a format does not change the value it is applied to. It only changes the way the value appears in the cell.
-      
 
 ## Available Number Formats
 
@@ -76,8 +73,7 @@ __Number__ formatting is not restricted to number values. The following example 
 
 ![spreadprocessing-features-number-formatting 003](images/spreadprocessing-features-number-formatting003.png)
 
-To alter the values, so that each of them contains the string "apple" after the number, you can use the "@ apples" format string.
-          The "@" wild card is replaced with the text of the cell in the result string. The result will be the following:
+To alter the values, so that each of them contains the string "apple" after the number, you can use the "@ apples" format string. The "@" wild card is replaced with the text of the cell in the result string. The result will be the following:
         
 >caption Figure 3: Textual representation in Number format with format string
 
@@ -89,11 +85,8 @@ The number format is represented by the __CellValueFormat__ class. You can set i
         
 
 __Exam0ple 1__ demonstrates how to apply scientific format to cell *A1* and percentage format to the *A2:B3* cell range in the __ActiveWorksheet__:
-        #_[C#] Example 1: Apply format_
 
-	
-
-
+#### Example 1: Apply format
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingNumberFormatting.cs region=radspreadprocessing-features-number-formats_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingNumberFormatting.vb region=radspreadprocessing-features-number-formats_0}} 
@@ -132,25 +125,16 @@ __Exam0ple 1__ demonstrates how to apply scientific format to cell *A1* and perc
 
 {{endregion}} 
 
-
-
-
 You can retrieve the number format of any cell selection using the __GetFormat()__ method of __CellSelection__ class. The method returns an object of type __RangePropertyValue<CellValueFormat>__, which exposes two properties:
-        
 
 * __IsIndeterminate__: Determines if the __CellValueFormat__ is consistent among all cells in the specified __CellSelection__. If the __CellValueFormat__ is one and the same for all cells, __IsIndeterminate__ is set to false. However, if the __CellValueFormat__ varies throughout the cells in the __CellSelection__, the __IsIndetermine__ property is set to true and the __Value__ property of the __RangePropertyValue<T>__ object is set to its default value.
-            
 
 * __Value__: Holds the __CellValueFormat__ for the cells. If the __IsIndeterminate__ property is set to false, __Value__ contains __CellValueFormat__ of the whole __CellSelection__ region. If the __IsIndeterminate__ property is set to true, this indicates that the __CellValueFormat__ is not the same for all cells in the __CellSelection__ and the __Value__ property is set to the default __CellValueFormat__.
             
 
-__Example 2__ demonstrates how to get the __Number__ format of cell *A1* and cell range
-          *A2:B3*:
-        #_[C#] Example 2: Get Number format_
+__Example 2__ demonstrates how to get the __Number__ format of cell *A1* and cell range *A2:B3*:
 
-	
-
-
+#### Example 2: Get Number format
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingNumberFormatting.cs region=radspreadprocessing-features-number-formats_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingNumberFormatting.vb region=radspreadprocessing-features-number-formats_1}} 
@@ -182,7 +166,4 @@ __Example 2__ demonstrates how to get the __Number__ format of cell *A1* and cel
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

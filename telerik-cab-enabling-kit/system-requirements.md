@@ -5,7 +5,7 @@ description: System Requirements
 slug: winforms/telerik-cab-enabling-kit/system-requirements
 tags: system,requirements
 published: True
-position: 0
+position: 1
 ---
 
 # System Requirements

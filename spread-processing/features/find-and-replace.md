@@ -10,10 +10,7 @@ position: 5
 
 # Find and Replace
 
-
-
 The document model offers a convenient way to find and replace text and numbers in a workbook, worksheet or a specified range of cells. This article provides information about the options of the find and replace features and demonstrates how they can be used.
-      
 
 * [Find and FindAll](#find-and-findall)
 
@@ -49,11 +46,8 @@ Both Workbook and Worksheet classes expose methods that search their contents fo
             
 
 __Example 1__ creates a new workbook with two empty worksheets and assigns sample values to the sheets. The __FindOptions__ created below specifies that the search will be conducted for the whole workbook and will start from cell A1 of the first worksheet. The sample snippet illustrates how to use __Find()__ and __FindAll()__ methods.
-        #_[C#] Example 1: Perform find an find all_
 
-	
-
-
+#### Example 1: Perform find an find all
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFindAndReplace.cs region=radspreadprocessing-features-find-and-replace_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFindAndReplace.vb region=radspreadprocessing-features-find-and-replace_0}} 
@@ -107,23 +101,15 @@ __Example 1__ creates a new workbook with two empty worksheets and assigns sampl
 
 {{endregion}} 
 
-
-
-
 ## Replace and ReplaceAll
 
 As a supplement to the __Find()__ and __FindAll()__ methods, the Workbook and Worksheet classes offer two more methods that allow you to alter the found strings: __Replace()__ and __ReplaceAll()__. The former method replaces the string of the first occurrence while the latter alters all encountered occurrences. The two methods take one argument of type __ReplaceOptions__ that specifies how the search is performed and also the string that should replace the occurrences. The class derives from __FindOptions__ and defines one more property:
         
-
 * __ReplaceWith__: Specifies the string that will replace any found value.
-            
 
 __Example 2__ creates a workbook from scratch with two empty worksheet and adds some sample values. The __ReplaceOptions__ instance specifies that the replace is performed on the whole workbook and includes formula values. The operation starts from cell A1 of the first worksheet and the search is done by columns.
-        #_[C#] Example 2: Perform replace and replace all_
 
-	
-
-
+#### Example 2: Perform replace and replace all
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFindAndReplace.cs region=radspreadprocessing-features-find-and-replace_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFindAndReplace.vb region=radspreadprocessing-features-find-and-replace_1}} 
@@ -193,9 +179,6 @@ __Example 2__ creates a workbook from scratch with two empty worksheet and adds 
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

@@ -10,10 +10,7 @@ position: 7
 
 # History
 
-
-
 The document model maintains a history stack that tracks all changes to the content of the workbook. The history is implemented via the __WorkbookHistory__ class and the __Workbook__ exposes a property of this type. All changes introduced to the workbook are automatically recorded, however, the model also allows manual control over the history.
-      
 
 * [Undo / Redo Actions](#undo-/-redo-actions)
 
@@ -26,14 +23,10 @@ The document model maintains a history stack that tracks all changes to the cont
 ## Enable / Disable History
 
 By default the __WorkbookHistory__ class does not record all changes introduced to the workbook, but there are scenarios that need the history feature. For example, if you construct an entire document from code behind, you do not need to record each action you perform. In such cases you do not need to enable the history for the workbook via the __IsEnabled__ property of the __WorkbookHistory__ class. However, if you want to be able to undo one or several of the recent changes, you would need to enable the history.
-        
 
 __Example 1__ enables the history of a workbook.
-        #_[C#] Example 1: Enable history_
 
-	
-
-
+#### Example 1: Enable history
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingHistory.cs region=radspreadprocessing-features-history_2}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHistory.vb region=radspreadprocessing-features-history_2}} 
@@ -50,12 +43,8 @@ __Example 1__ enables the history of a workbook.
 
 {{endregion}} 
 
-
-
-
 >warning The default value of the IsEnabled property was changed in Q3 2014. In versions prior that one, the history is enabled by default.
 >
-
 
 ## Undo / Redo Actions
 
@@ -63,11 +52,8 @@ Once the hisory is enabled you can invoke its __Undo()__ and __Redo()__ methods 
         
 
 __Example 2__ creates a new workbook with a single worksheet and sets the value of cell *A1* twice. Further, the snippet performs the undo and redo actions.
-        #_[C#] Example 2: Perform undo and redo_
 
-	
-
-
+#### Example 2: Perform undo and redo
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingHistory.cs region=radspreadprocessing-features-history_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHistory.vb region=radspreadprocessing-features-history_0}} 
@@ -98,20 +84,13 @@ __Example 2__ creates a new workbook with a single worksheet and sets the value 
 
 {{endregion}} 
 
-
-
-
 ## Smart Undo
 
 The __Workbook__ history offers a friendly API that allows grouping multiple changes into one undo step. For example, you may want to set the value of a cell and apply formatting to the same cell, and treat these two actions as a single undo operation. This can be easily achieved through enclosing the assignments with __BeginUndoGroup()__ and __EndUndoGroup()__ methods.
-        
 
 __Example 3__ demonstrates how to create an undo group:
-        #_[C#] Example 3: Create undo group_
-
-	
-
-
+        
+#### Example 3: Create undo group
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingHistory.cs region=radspreadprocessing-features-history_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHistory.vb region=radspreadprocessing-features-history_1}} 
@@ -150,20 +129,13 @@ __Example 3__ demonstrates how to create an undo group:
 
 {{endregion}} 
 
-
-
-
 ## Clear History
 
 To clear the history you just have to call the __Clear()__ method of the __WorkbookHistory__ class. Note that you cannot clear the history if you are recording an undo group. If you attempt to call the method after invoking __BeginUndoGroup()__ an exception is be thrown. The following snippet illustrates how to clear workbook's history.
-        
 
 __Example 4__ clears the history of a workbook.
-        #_[C#] Example 4: Clear history. _
 
-	
-
-
+#### Example 4: Clear history.
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingHistory.cs region=radspreadprocessing-features-history_3}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHistory.vb region=radspreadprocessing-features-history_3}} 
@@ -178,7 +150,4 @@ __Example 4__ clears the history of a workbook.
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

@@ -392,6 +392,18 @@ navigation:
     spread-processing/formats-and-conversion:
         title: Formats and Conversion
         position: 7
+    spread-processing/formats-and-conversion/xlsx:
+        title: Xlsx
+        position: 2
+    spread-processing/formats-and-conversion/pdf:
+        title: PDF
+        position: 3
+    spread-processing/formats-and-conversion/csv:
+        title: Csv
+        position: 4
+    spread-processing/formats-and-conversion/txt:
+        title: Txt
+        position: 5
     spread-processing/features:
         title: Features
         position: 8
@@ -411,6 +423,12 @@ navigation:
         title: ZipLibrary
         position: 50
     telerik-cab-enabling-kit:
+        title: Telerik Cab Enabling Kit
+        position: 51
+    telerik-cab-enabling-kit/getting-started:
+        title: Getting Started
+        position: 3
+    telerik-cab-enabling-kit/telerik-cab-enabling-kit:
         title: Telerik Cab Enabling Kit
         position: 51
     codedui:

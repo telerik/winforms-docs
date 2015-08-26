@@ -10,8 +10,6 @@ position: 17
 
 # Data Validation
 
-
-
 __Data validation__ is used to control the type of data or the values that users enter into a cell. Compared to [Protection]({%slug winforms/spread-processing/features/protection/workbook-protection%}), data validation does not restrict the user input, but ensures that the entered data complies with certain rules. For example the user may be restricted to enter data only within a certain range of dates, whole numbers, decimal numbers, or from a list of predefined values.
       
 
@@ -26,31 +24,31 @@ You have the ability to specify how the user will be notified if the rule is not
 * __Error__: If the user enters invalid data, a message box gives him the following choice:
             
 
-* Retry: Try again.
-                
+    - Retry: Try again.
+                    
 
-* Cancel the change.
+    - Cancel the change.
                 
 
 * __Cancel__: If the user enters invalid data, a message box gives him the following choice:
             
 
-* Yes: Override the warning and apply the change.
-                
+    - Yes: Override the warning and apply the change.
+                    
 
-* No: Try again.
-                
+    - No: Try again.
+                    
 
-* Cancel: Revert the change.
+    - Cancel: Revert the change.
                 
 
 * __Information__: If the user enters invalid data, a message box gives him the following choice:
             
 
-* OK: Override the warning and apply the change.
-                
+    - OK: Override the warning and apply the change.
+                    
 
-* Cancel: Revert the change.
+    - Cancel: Revert the change.
                 
 
 ## Data Validation Rule Types
@@ -147,11 +145,8 @@ The any value data validation rule is the default rule. It is applied to all cel
         
 
 __Example 1__ shows hot to create any value validation rule and set it to a cell.
-        #_[C#] Example 1: Apply Any Value Rule_
 
-	
-
-
+#### Example 1: Apply Any Value Rule
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_0}} 
@@ -176,9 +171,6 @@ __Example 1__ shows hot to create any value validation rule and set it to a cell
 
 {{endregion}} 
 
-
-
-
 The result from the code snippet in __Example 1__ is shown on the snapshot in __Figure 1__.
         
 >caption Figure 1: Any Value Rule
@@ -191,11 +183,8 @@ The whole number data validation rule allows you to restrict the user input to w
         
 
 The code snippet in __Example 2__ shows how to create a whole number data validation rule that restricts the user input using two arguments to the range between 0 and 100 and considers blank values as invalid.
-        #_[C#] Example 2: Apply Whole Number Rule with Two Arguments_
 
-	
-
-
+#### Example 2: Apply Whole Number Rule with Two Arguments_
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_1}} 
@@ -240,9 +229,6 @@ The code snippet in __Example 2__ shows how to create a whole number data valida
 
 {{endregion}} 
 
-
-
-
 The result from __Example 2__ is shown in __Figure 1__.
         
 >caption Figure 2: Whole Number Rule
@@ -256,11 +242,8 @@ The result from entering value *“test”* in the cell containing the data vali
 ![spreadprocessing-features-data-validation 003](images/spreadprocessing-features-data-validation003.png)
 
 The code snippet in __Example 3__ shows how to create a whole number data validation rule that restricts the user input with one argument to numbers that are greater than 100.
-        #_[C#] Example 3: Apply Whole Number Rule with One Argument_
 
-	
-
-
+#### Example 3: Apply Whole Number Rule with One Argument
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_2}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_2}} 
@@ -301,15 +284,9 @@ The code snippet in __Example 3__ shows how to create a whole number data valida
 
 {{endregion}} 
 
-
-
-
 You are allowed to enter any valid [formula]({%slug winforms/spread-processing/features/formulas%}) as a rule argument that returns a number. __Example 4__ shows how to restrict the user input to the values less than the sum of the values in cells A1 and B1.
-        #_[C#] Example 4: Apply Whole Number Rule with Formula_
 
-	
-
-
+#### Example 4: Apply Whole Number Rule with Formula
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_3}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_3}} 
@@ -360,8 +337,6 @@ You are allowed to enter any valid [formula]({%slug winforms/spread-processing/f
 
 {{endregion}} 
 
-
-
 >caption Figure 4: Whole Number Rule Based on Formula
 
 ![spreadprocessing-features-data-validation 004](images/spreadprocessing-features-data-validation004.png)
@@ -369,18 +344,14 @@ You are allowed to enter any valid [formula]({%slug winforms/spread-processing/f
 >note Note that the cell index that is passed to the constructor of the __NumberDataValidationRuleContext__ is the cell for which the rule is created. Consider the case in which an area from A2 to C5 is selected using the UI and the active cell is A2. You create the same rule as in __Example 4__ but apply it not just for cell A2, but for the cell range A2:C5. The formula “=SUM(A1+B1)” contains two relative cell references – A1 and B1. If you select the cell C5 and open the data validation dialog you will see that the formula that specifies the minimum value is “=SUM(C4+D4)” instead of “=SUM(A1+B1)”. The relative references in the formula are translated relatively to the cell passed in the constructor of the data validation rule context.
 >
 
-
 ## Decimal Rule
 
 The decimal data validation rule allows you to restrict the user input to decimal numbers in a certain range which is specified using two arguments and a comparison operator. The difference from the whole number Rule is that the decimal rule allows whole and decimal numbers to be entered in the cells.
         
 
 __Example 5__ demonstrates how to create a decimal data validation rule that restricts the user input to be outside the range between 0 and 100.
-        #_[C#] Example 5: Apply Decimal Rule_
-
-	
-
-
+       
+#### Example 5: Apply Decimal Rule
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_4}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_4}} 
@@ -423,20 +394,13 @@ __Example 5__ demonstrates how to create a decimal data validation rule that res
 
 {{endregion}} 
 
-
-
-
 ## List Rule
 
 The list data validation rule allows you to restrict the user input to a predefined set of values. Using the __InCellDropdown__ property you can specify if a drop-down list containing the values will be shown next to the cell.
-        
 
 __Example 6__ shows the creation of a list data validation rule that restricts the user input to a day of the week.
-        #_[C#] Example 6: Apply List Rule_
 
-	
-
-
+#### Example 6: Apply List Rule
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_5}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_5}} 
@@ -477,9 +441,6 @@ __Example 6__ shows the creation of a list data validation rule that restricts t
 
 {{endregion}} 
 
-
-
-
 __Figure 5__ shows the result from __Example 6__.
         
 >caption Figure 5: List Rule
@@ -492,11 +453,8 @@ The date rule allows you to restrict the user input to a certain range of dates 
         
 
 __Example 7__ shows how to restrict the user input to the dates in the range between 12 February 2013 and 22 May 2017.
-        #_[C#] Example 7: Apply List Rule_
 
-	
-
-
+#### Example 7: Apply List Rule
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_6}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_6}} 
@@ -537,22 +495,15 @@ __Example 7__ shows how to restrict the user input to the dates in the range bet
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Time Rule
 
 The time rule allows you to restrict the user input to a certain range of times which is specified using two arguments and a comparison operator.
-        
 
 The code snippet in __Example 8__ shows how to restrict the user input to the range between 10:25 AM and 3:45 PM:
-        #_[C#] Example 8: Apply Time Rule_
 
-	
-
-
+#### Example 8: Apply Time Rule
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_7}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_7}} 
@@ -595,20 +546,13 @@ The code snippet in __Example 8__ shows how to restrict the user input to the ra
 
 {{endregion}} 
 
-
-
-
 ## Time Length Rule
 
 The text length rule allows you to restrict the user input to text with length in a certain range specified using two arguments and a comparison operator.
-        
 
 __Example 9__ shows how to restrict the user input to text with length between 5 and 10 symbols.
-        #_[C#] Example 9: Apply Text Length Rule_
 
-	
-
-
+#### Example 9: Apply Text Length Rule
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_8}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_8}} 
@@ -651,20 +595,13 @@ __Example 9__ shows how to restrict the user input to text with length between 5
 
 {{endregion}} 
 
-
-
-
 ## Custom Rule
 
 The custom rule allows you to restrict the user input with a custom condition specified with a formula which results in a __Boolean__ value.
-        
 
 The code snippet in __Example 10__ shows how to restrict the user input to values that are greater or equal to the sum of the values in the cells A1 and B1.
-        #_[C#] Example 10: Apply Custom Rule_
 
-	
-
-
+#### Example 10: Apply Custom Rule
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_9}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_9}} 
@@ -703,20 +640,13 @@ The code snippet in __Example 10__ shows how to restrict the user input to value
 
 {{endregion}} 
 
-
-
-
 ## Evaluate Rule
 
 In order to check if the cell value satisfies a rule, you have to evaluate the rule using the desired cell value. Each data validation rule implements the __DataValidationRule__ interface which exposes the __Evaluate()__ method. The method receives as parameters the worksheet in which the value is located, the cell index in which the value will be placed or in which the value is contained, and the value itself.
-        
 
 __Example 11__ demonstrates how to evaluate a rule using the __Evaluate()__ method.
-        #_[C#] Example 11: Evaluate Rule_
 
-	
-
-
+#### Example 11: Evaluate Rule
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.cs region=radspreadprocessing-features-data-validation_10}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_10}} 
@@ -740,11 +670,8 @@ __Example 11__ demonstrates how to evaluate a rule using the __Evaluate()__ meth
 
 {{endregion}} 
 
-
-
-
 # See Also
 
- * [Workbook Protection]({%slug winforms/spread-processing/features/protection/workbook-protection%})
+* [Workbook Protection]({%slug winforms/spread-processing/features/protection/workbook-protection%})
 
- * [Formulas]({%slug winforms/spread-processing/features/formulas%})
+* [Formulas]({%slug winforms/spread-processing/features/formulas%})

@@ -10,11 +10,7 @@ position: 3
 
 # Get, Set and Clear Cell Properties
 
-
-
-Cells are the atomic parts of a worksheet and its basic data units. Each cell can be assigned a value, borders, fill, format, style and much more. This article aims to 
-        describe the properties offered by cells and demonstrate how to retrieve and change them. It contains the following sections:
-      
+Cells are the atomic parts of a worksheet and its basic data units. Each cell can be assigned a value, borders, fill, format, style and much more. This article aims to describe the properties offered by cells and demonstrate how to retrieve and change them. It contains the following sections:
 
 * [Get Set and Clear Methods](#get,-set-and-clear-methods)
 
@@ -30,17 +26,12 @@ Cells are the atomic parts of a worksheet and its basic data units. Each cell ca
 
 ## Get, Set and Clear Methods
 
-In order to access cell properties, you have to create a __CellSelection__ object that contains the region of cells you would like to change. 
-          More information about retrieving __CellSelection__ instances is available in the [Accessing Cells of a Worksheet]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%}) 
-          article.
+In order to access cell properties, you have to create a __CellSelection__ object that contains the region of cells you would like to change. More information about retrieving __CellSelection__ instances is available in the [Accessing Cells of a Worksheet]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%}) article.
         
 
 __Example 1__ creates a selection for cells in the range A1:F6.
-        #_[C#] Example 1: Create CellSelection A1:F6_
 
-	
-
-
+#### Example 1: Create CellSelection A1:F6
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_0}} 
@@ -59,33 +50,21 @@ __Example 1__ creates a selection for cells in the range A1:F6.
 
 {{endregion}} 
 
-
-
-
-Once you have a __CellSelection__ instance, you can easily set and retrieve the properties of its cells. Each property is manipulated through 
-          three methods that get, set and clear the value of the property, respectively. Typically, the set methods take a single argument, which indicates the value to be set. Similarly, the clear methods have no parameters and reset the properties to their default values. The get methods, however, require more attention.
+Once you have a __CellSelection__ instance, you can easily set and retrieve the properties of its cells. Each property is manipulated through three methods that get, set and clear the value of the property, respectively. Typically, the set methods take a single argument, which indicates the value to be set. Similarly, the clear methods have no parameters and reset the properties to their default values. The get methods, however, require more attention.
         
 
-With one minor exception, the get methods of all cell properties return an object of type __RangePropertyValue<T>__. The class exposes two 
-          properties that indicate the value of the property for the cell range:
+With one minor exception, the get methods of all cell properties return an object of type __RangePropertyValue<T>__. The class exposes two  properties that indicate the value of the property for the cell range:
         
 
-* __IsIndeterminate__: Indicates whether the value of the retrieved property is consistent among all cells in the specified CellSelection. 
-              If the property has one and the same value for all cells, __IsIndeterminate__ is set to false. However, if the value of the retrieved property 
-              varies throughout the cells in the CellSelection, the __IsIndetermine__ property is set to true and the __Value__ 
-              property of the __RangePropertyValue<T>__ class is set to its default value.
+* __IsIndeterminate__: Indicates whether the value of the retrieved property is consistent among all cells in the specified CellSelection. If the property has one and the same value for all cells, __IsIndeterminate__ is set to false. However, if the value of the retrieved property  varies throughout the cells in the CellSelection, the __IsIndetermine__ property is set to true and the __Value__  property of the __RangePropertyValue<T>__ class is set to its default value.
             
 
-* __Value__: Contains the value of the retrieved property. If the __IsIndeterminate__ property is set to false, 
-              __Value__ contains the value of the retrieved property for the whole CellSelection region. If the __IsIndeterminate__ 
-              property is set to true, the __Value__ property is set to its default value.
+* __Value__: Contains the value of the retrieved property. If the __IsIndeterminate__ property is set to false, __Value__ contains the value of the retrieved property for the whole CellSelection region. If the __IsIndeterminate__  property is set to true, the __Value__ property is set to its default value.
             
 
 ## Cell Properties
 
-Cells in __RadSpreadsheet__ offer a number of properties that allow you to change their content and appearance. The following list outlines 
-          all cell properties:
-        
+Cells in __RadSpreadsheet__ offer a number of properties that allow you to change their content and appearance. The following list outlines all cell properties:
 
 * Value
 
@@ -119,18 +98,12 @@ Cells in __RadSpreadsheet__ offer a number of properties that allow you to chang
 
 * IsLocked
 
-As already mentioned, the __CellSelection__ class exposes methods that get, set and clear methods for each of the above properties. 
-          The names of the methods are constructed through concatenation of the action the method executes (Get, Set, Clear) and the name of the property. For example, 
-          the methods that get, set and clear the __IsBolod__ property are respectively, __GetIsBold()__,
-          __SetIsBold()__ and __ClearIsBold()__.
+As already mentioned, the __CellSelection__ class exposes methods that get, set and clear methods for each of the above properties. The names of the methods are constructed through concatenation of the action the method executes (Get, Set, Clear) and the name of the property. For example, the methods that get, set and clear the __IsBolod__ property are respectively, __GetIsBold()__, __SetIsBold()__ and __ClearIsBold()__.
         
 
 __Example 2__ illustrates how to use these methods on the region A1:F6:
-        #_[C#] Example 2: Use GetIsBold(), SetIsBold() and ClearIsBold() methods_
 
-	
-
-
+#### Example 2: Use GetIsBold(), SetIsBold() and ClearIsBold() methods
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_1}} 
@@ -155,36 +128,19 @@ __Example 2__ illustrates how to use these methods on the region A1:F6:
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-Using the above approach you can set the value of almost all cell properties. There are a few exceptions to the general get, set and clear rule, though, and each
-          of them is described into one of the following sections.
+Using the above approach you can set the value of almost all cell properties. There are a few exceptions to the general get, set and clear rule, though, and each of them is described into one of the following sections.
         
 
 ## Value Property
 
-The __Value__ property uses an instance of __ICellValue__ to retrieve and change its value. The property has support for 
-          the following types of cell values, all of which conform to the ICellValue interface: *EmptyCellValue*, 
-          *NumberCellValue*, *BooleanCellValue*, *TextCellValue*, 
-          *FormulaCellValue*. Similarly to the other properties, __Value__ has three methods that control the property: 
-          __GetValue()__, __SetValue()__ and __ClearValue()__. More information about different value types 
-          is available in the [Cell Value Types]({%slug winforms/spread-processing/working-with-cells/cell-value-types%}) article.
-        
+The __Value__ property uses an instance of __ICellValue__ to retrieve and change its value. The property has support for  the following types of cell values, all of which conform to the ICellValue interface: *EmptyCellValue*, *NumberCellValue*, *BooleanCellValue*, *TextCellValue*, *FormulaCellValue*. Similarly to the other properties, __Value__ has three methods that control the property: __GetValue()__, __SetValue()__ and __ClearValue()__. More information about different value types is available in the [Cell Value Types]({%slug winforms/spread-processing/working-with-cells/cell-value-types%}) article.
 
-The __GetValue()__ method retrieves the value of the property and returns an instance of 
-          __RangePropertyValue<ICellValue>__. The __Value__ property of the __RangePropertyValue__ 
-          instance returns the actual value of the selected region.
-        
-
+The __GetValue()__ method retrieves the value of the property and returns an instance of __RangePropertyValue<ICellValue>__. The __Value__ property of the __RangePropertyValue__ instance returns the actual value of the selected region.
 __Example 3__ illustrates who to retrieve the value of cell B2:
-        #_[C#] Example 3: Retrieve value of cell_
 
-	
-
-
+#### Example 3: Retrieve value of cell
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_7}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_7}} 
@@ -207,21 +163,11 @@ __Example 3__ illustrates who to retrieve the value of cell B2:
 
 {{endregion}} 
 
-
-
-
-As the document model supports different types of cell values, the CellSelection class offers multiple overloads of the __SetValue()__ 
-          method that allow you to produce different types of values. For example, if you choose the method that accepts a double instance, the __Value__ 
-          of the cell will be an instance of NumberCellValue. The __SetValue()__  method has three more overloads that take DateTime, string and ICellValue, 
-          respectively.
-        
+As the document model supports different types of cell values, the CellSelection class offers multiple overloads of the __SetValue()__  method that allow you to produce different types of values. For example, if you choose the method that accepts a double instance, the __Value__ of the cell will be an instance of NumberCellValue. The __SetValue()__  method has three more overloads that take DateTime, string and ICellValue, respectively.
 
 __Example 4__ demonstrates how to set the value of a given selection.
-        #_[C#] Example 4: Set value of CellSelection_
-
-	
-
-
+        
+#### Example 4: Set value of CellSelection
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_2}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_2}} 
@@ -264,23 +210,14 @@ __Example 4__ demonstrates how to set the value of a given selection.
 
 {{endregion}} 
 
-
-
-
 ## Borders Property
 
-The __Borders__ property uses a __CellBorders__ object for getting and setting its property value. 
-          The __CellBorders__ class contains eight instances of type __CellBorder__ that describe respectively the left, 
-          top, right, bottom, inside horizontal, inside vertical, diagonal up, and diagonal down borders. In turn the __CellBorder__ object holds 
-          information about the style and color of the border. The __GetBorders()__ method returns an instance of RangePropertyValue<CellBorders>.
+The __Borders__ property uses a __CellBorders__ object for getting and setting its property value. The __CellBorders__ class contains eight instances of type __CellBorder__ that describe respectively the left, top, right, bottom, inside horizontal, inside vertical, diagonal up, and diagonal down borders. In turn the __CellBorder__ object holds information about the style and color of the border. The __GetBorders()__ method returns an instance of RangePropertyValue<CellBorders>.
         
 
 __Example 5__ demonstrates how to set the value of the Borders of the regions B2:C4 and E2:F4.
-        #_[C#] Example 5: Set value of Borders_
 
-	
-
-
+#### Example 5: Set value of Borders
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_3}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_3}} 
@@ -331,9 +268,6 @@ __Example 5__ demonstrates how to set the value of the Borders of the regions B2
 
 {{endregion}} 
 
-
-
-
 The result of __Example 5__ is demonstrated in __Figure 1__:
         
 >caption Figure 1: Resulting Borders
@@ -342,23 +276,13 @@ The result of __Example 5__ is demonstrated in __Figure 1__:
 
 ## Fill Property
 
-The __Fill__ property uses an __IFill__ object for getting and setting its property value. 
-          The document model supports two types of fills that are represented through the __PatternFill__ and __GradientFill__ 
-          classes, both of which conform to the __IFill__ interface.
-        
+The __Fill__ property uses an __IFill__ object for getting and setting its property value. The document model supports two types of fills that are represented through the __PatternFill__ and __GradientFill__ classes, both of which conform to the __IFill__ interface.
 
-As its name suggests, the __PatternFill__ object is used to fill the background of a region of cells using a repeated pattern of shapes. 
-          To create a PatternFill instance, you need to specify the type of the pattern, the background color and pattern color of the fill. You can choose between
-          [ eighteen types of patterns](http://www.telerik.com/help/winforms/t_telerik_windows_documents_spreadsheet_model_patterntype.html)
-          , such as HorizontalStripe, DiagonalCrossHatch, Gray75Percent and many more. The PatternFill object also allows you to set the background of a cell to a solid color.
-        
+As its name suggests, the __PatternFill__ object is used to fill the background of a region of cells using a repeated pattern of shapes.  To create a PatternFill instance, you need to specify the type of the pattern, the background color and pattern color of the fill. You can choose between [eighteen types of patterns](http://www.telerik.com/help/winforms/t_telerik_windows_documents_spreadsheet_model_patterntype.html) , such as HorizontalStripe, DiagonalCrossHatch, Gray75Percent and many more. The PatternFill object also allows you to set the background of a cell to a solid color.
 
 __Example 6__ creates two PatternFill objects with a DiagonalStripe and Solid PatternType respectively.
-        #_[C#] Example 6: Create and set PatternFill_
-
-	
-
-
+       
+#### Example 6: Create and set PatternFill
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_4}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_4}} 
@@ -387,10 +311,8 @@ __Example 6__ creates two PatternFill objects with a DiagonalStripe and Solid Pa
 
 {{endregion}} 
 
+The result of Example 6 is illustrated in __Figure 2__
 
-
-
-The result of >Example 6 is illustrated in __Figure 2__
 >caption Figure 2: Applied PatternFill
 
 ![spreadprocessing-working-with-cells-get-set-and-clear-cell-properties 002](images/spreadprocessing-working-with-cells-get-set-and-clear-cell-properties002.png)
@@ -402,11 +324,8 @@ The __GradientFill__ is used to set the background of a region of cell to a grad
         
 
 __Example 7__ assigns the region A1:F1 a smooth horizontal green gradient.
-        #_[C#] Example 7: Create and set GradientFill_
 
-	
-
-
+#### Example 7: Create and set GradientFill
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_5}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_5}} 
@@ -431,9 +350,6 @@ __Example 7__ assigns the region A1:F1 a smooth horizontal green gradient.
 
 {{endregion}} 
 
-
-
-
 The result of __Example 7__ is illustrated in __Figure 3__:
         
 >caption Figure 3: Applied GradientFill
@@ -448,10 +364,8 @@ In addition to the __GetIndent()__, __SetIndent()__ and __ClearIndent()__ method
         
 
 __Example 8__ snippet shows how to use those methods:
-        #_[C#] Example 8: Increase and decrease indent_
 
-	
-
+#### Example 8: Increase and decrease indent
 
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.cs region=radspreadprocessing-working-with-cells-get-set-clear-properties_6}} 
@@ -476,9 +390,6 @@ __Example 8__ snippet shows how to use those methods:
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

@@ -1,54 +1,26 @@
 ---
-title: Telerik Analytics Integration
+title: Overview
 page_title: Telerik Analytics Integration | UI for WinForms Documentation
 description: Telerik Analytics Integration
 slug: winforms/telerik-analytics-integration
 tags: telerik,analytics,integration
 published: True
-position: 56
+position: 0
 ---
 
 # Telerik Analytics Integration
 
-
-
 ## 
 
-When you are creating an application for a broad audience, integrating some kind of analytics framework is crucial,
-          because you will need to analyze the usage data of the application and its features and most probably you will need to know
-          about any application crashes or other errors occurred during the execution. With the Q1 2014 release UI for WinForms provides
-          integrated support for
-          [
-              Telerik Analytics
-            ](http://www.telerik.com/analytics)
-          . Using Analytics you will be able to trace certain features of the controls and get statistics about their usage.
-          By default we have implemented the most used features of our controls (enlisted below) and of course you are enabled to
-          track your own features that will better suit your needs. In advance, you can disable the features we track per control.
-        
+When you are creating an application for a broad audience, integrating some kind of analytics framework is crucial, because you will need to analyze the usage data of the application and its features and most probably you will need to know about any application crashes or other errors occurred during the execution. With the Q1 2014 release UI for WinForms provides integrated support for [ Telerik Analytics](http://www.telerik.com/analytics). Using Analytics you will be able to trace certain features of the controls and get statistics about their usage. By default we have implemented the most used features of our controls (enlisted below) and of course you are enabled to track your own features that will better suit your needs. In advance, you can disable the features we track per control.
 
-In order to use this service, first you should log into the
-          [
-              analytics dashboard
-            ](https://analytics.telerik.com/)
-          , register your application and obtain a __product key__.
-          For more information please check out the topic on
-          [
-              Getting Started with Telerik Analytics.
-            ](http://www.telerik.com/analytics/resources/getting-started)
-          Then you can create a new Telerik WinForms Application with enabled Analytics support or you can enable it in an existing project.
-          Both options are explained in details below.
-        ![eqatec-analitics-application-integration 001](images/eqatec-analitics-application-integration001.png)
+In order to use this service, first you should log into the [analytics dashboard](https://analytics.telerik.com/), register your application and obtain a __product key__. For more information please check out the topic on[Getting Started with Telerik Analytics. ](http://www.telerik.com/analytics/resources/getting-started) Then you can create a new Telerik WinForms Application with enabled Analytics support or you can enable it in an existing project. Both options are explained in details below.
+
+![eqatec-analitics-application-integration 001](images/eqatec-analitics-application-integration001.png)
 
 ## How to add support to existing applications
 
-First, you will need to reference the EQATEC.Analytics.Monitor.dll in your application. Note that this dll is distributed together with
-          the other assemblies in the UI for WinForms suite.
-          Then in order to configure the project to support Analytics, please add the following code in the constructor of the Main Form class or static Main function:
-        #_[C#] _
-
-	
-
-
+First, you will need to reference the EQATEC.Analytics.Monitor.dll in your application. Note that this dll is distributed together with the other assemblies in the UI for WinForms suite. Then in order to configure the project to support Analytics, please add the following code in the constructor of the Main Form class or static Main function:
 
 {{source=..\SamplesCS\Eqatec\Eqatec.cs region=key}} 
 {{source=..\SamplesVB\Eqatec\Eqatec.vb region=key}} 
@@ -63,23 +35,11 @@ First, you will need to reference the EQATEC.Analytics.Monitor.dll in your appli
 
 {{endregion}} 
 
-
-
-
-Where "product_key" should be replaced with the product key you got after registering your application on
-          [
-              https://analytics.telerik.com
-            ](https://analytics.telerik.com)
+Where "product_key" should be replaced with the product key you got after registering your application on [https://analytics.telerik.com ](https://analytics.telerik.com)
 
 ## Disable analytics per control
 
-You can disable the analytics functionality for particular controls with their __EnabeleAnalytics__ property.
-          Additionally you can customize the analytics data with the __AnalyticsName__ property:
-        #_[C#] _
-
-	
-
-
+You can disable the analytics functionality for particular controls with their __EnabeleAnalytics__ property. Additionally you can customize the analytics data with the __AnalyticsName__ property:
 
 {{source=..\SamplesCS\Eqatec\Eqatec.cs region=properties}} 
 {{source=..\SamplesVB\Eqatec\Eqatec.vb region=properties}} 
@@ -121,123 +81,60 @@ To trace features please follow the next steps:
 * Go to the Telerik Analytics Dashboard
             
 
-* Expand the AnalyticsTestApp from the DashBoards panel on the left and select __Live__:
-            The next screen will list the live usage sessions:
-            ![eqatec-analitics-application-integration 003](images/eqatec-analitics-application-integration003.png)
+* Expand the AnalyticsTestApp from the DashBoards panel on the left and select __Live__. The next screen will list the live usage sessions:
 
-Clicking __View__ will show additional details about the session including the exact features used:
-        ![eqatec-analitics-application-integration 002](images/eqatec-analitics-application-integration002.png)![eqatec-analitics-application-integration 004](images/eqatec-analitics-application-integration004.png)![eqatec-analitics-application-integration 005](images/eqatec-analitics-application-integration005.png)
+	![eqatec-analitics-application-integration 003](images/eqatec-analitics-application-integration003.png)
+
+Clicking __View__ will show additional details about the session including the exact features used: 
+
+![eqatec-analitics-application-integration 002](images/eqatec-analitics-application-integration002.png)
+
+![eqatec-analitics-application-integration 004](images/eqatec-analitics-application-integration004.png)
+
+![eqatec-analitics-application-integration 005](images/eqatec-analitics-application-integration005.png)
 
 ## Traceable features in UI for WinForms
 
-Currently only few controls support analytics out of the box. Note that only user interactions will be tracked - initial values and values from Bindings are not supported.
-          You can find below a list of the controls and their features that support tracing:
-        
-
+Currently only few controls support analytics out of the box. Note that only user interactions will be tracked - initial values and values from Bindings are not supported. You can find below a list of the controls and their features that support tracing:
 
 | Control | Traceable events and methods |
 | ------ | ------ |
 |ColorPicker|SelectionChanged|
 |RadAutocompleteBox|InsertText|
 |RadBindingNavigator|MoveToFirst, 
-                MoveToPrevious, 
-                MoveToNext, 
-                MoveToLast|
+MoveToPrevious, MoveToNext, MoveToLast|
 |RadButton|Click|
-|RadCalendar|SelectionChaned, 
-                Navigation,  
-                ViewChanged|
+|RadCalendar|SelectionChaned, Navigation, ViewChanged|
 |RadCarousel|Selection|
-|RadChartView|Zoom, 
-                Pan, 
-                SelectionChanged|
-|RadCollapsiblePanel|Expand, 
-                Collapse|
+|RadChartView|Zoom, Pan, SelectionChanged|
+|RadCollapsiblePanel|Expand, Collapse|
 |RadColorBox|SelectionChanged|
-|RadContextMenu|Open,
-                Close,
-                Click (RadContextMenu.DropDown)|
-|RadDataEntry|Editing, 
-                Insert/Delete, 
-                MoveToFirst, 
-                MoveToPrevious, 
-                MoveToNext, 
-                MoveToLast|
+|RadContextMenu|Open, Close,Click (RadContextMenu.DropDown)|
+|RadDataEntry|Editing, Insert/Delete, MoveToFirst, MoveToPrevious, MoveToNext, MoveToLast|
 |RadDateTimePicker|ValueChanged|
-|RadDock|Save layout, 
-                Load layout, 
-                Float a pane, 
-                Dock a pane, 
-                Add window, 
-                Remove window|
-|RadDropDownButton|DropDownOpened, 
-                DropDownClosed|
-|RadDropdownList|SelectionChanged, 
-                DropDownOpened, 
-                DropDownClosed|
-|RadForm|SelectionChanged, 
-                DropDownOpened, 
-                DropDownClosed|
-|RadGanttView|Collapse task, 
-                Expand task, 
-                Edit task, 
-                Selected task|
-|RadGridView|MoveToFirst, 
-                MoveToPrevious, 
-                MoveToNext, 
-                MoveToLast,|
-|RadGridView - Paging|MoveToFirst, 
-                MoveToPrevious, 
-                MoveToNext, 
-                MoveToLast|
+|RadDock|Save layout, Load layout, Float a pane, Dock a pane, Add window,  Remove window|
+|RadDropDownButton|DropDownOpened, DropDownClosed|
+|RadDropdownList|SelectionChanged, DropDownOpened, DropDownClosed|
+|RadForm|SelectionChanged, DropDownOpened, DropDownClosed|
+|RadGanttView|Collapse task, Expand task, Edit task, Selected task|
+|RadGridView|MoveToFirst, MoveToPrevious, MoveToNext, MoveToLast,|
+|RadGridView - Paging|MoveToFirst, MoveToPrevious, MoveToNext,  MoveToLast|
 |RadListControl|SelectionChanged|
 |RadMasketEditBox|SelectionChanged|
 |RadMenu|Click|
-|RadPageView - ExplorerBar|Expand, 
-                Collapse, 
-                SelectionChanged|
-|RadPageView - Outlook|Expand, 
-                Collapse, 
-                SelectionChanged|
+|RadPageView - ExplorerBar|Expand,  Collapse,   SelectionChanged|
+|RadPageView - Outlook|Expand, Collapse, SelectionChanged|
 |RadPageView - Strip|SelectionChanged|
-|RadPanorama|Reordering, 
-                Scrolling|
-|RadPdfViewer|Load Document, 
-                Print, 
-                Print Preview|
-|RadPivotGrid|Begin refresh, 
-                Complete refresh, 
-                Expand group header, 
-                Collapse group header, 
-                DragDrop field, 
-                Export|
-|RadPropertyGrid|Sorting, 
-                Grouping, 
-                Editing, 
-                Searching, 
-                Expanding Groups, 
-                Expanding nested definition|
-|RadRadioButton|Checked,
-                Unchecked|
+|RadPanorama|Reordering, Scrolling|
+|RadPdfViewer|Load Document,   Print, Print Preview|
+|RadPivotGrid|Begin refresh,  Complete refresh, Expand group header,  Collapse group header, DragDrop field, Export|
+|RadPropertyGrid|Sorting, Grouping, Editing, Searching, Expanding Groups, Expanding nested definition|
+|RadRadioButton|Checked, Unchecked|
 |RadRibbonBar|SelectionChanged|
-|RadRichTextBox|Open Document, 
-                    Save Document|
-|RadScheduler|ViewChanged,
-                Import,
-                Export,
-                Editing,
-                Creating,
-                DragAndDrop,
-                Resize,
-                ShowDialog|
+|RadRichTextBox|Open Document, Save Document|
+|RadScheduler|ViewChanged, Import, Export, Editing, Creating, DragAndDrop,  Resize, ShowDialog|
 |RadSpinEditor|SelectionChanged|
-|RadToggleButton|Checked, 
-                Unchecked|
+|RadToggleButton|Checked, Unchecked|
 |RadTrackBar|SelectionChanged|
-|RadTreeView|SelectExpand, 
-                    Collapse, 
-                    SelectionChanged, 
-                    Edit, 
-                    RemoveionChanged|
-|RadWaitingBar|StartWaiting, 
-                EndWaiting|
+|RadTreeView|SelectExpand, Collapse, SelectionChanged, Edit, RemoveionChanged|
+|RadWaitingBar|StartWaiting, EndWaiting|

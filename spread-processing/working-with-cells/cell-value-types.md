@@ -10,10 +10,7 @@ position: 4
 
 # Cell Value Types
 
-
-
 This article briefly describes how to work with the __Value__ property of the cells in the document model and focuses on the different supported types of values. It contains the following sections:
-      
 
 * [Working with the Value Property of Cells](#working-with-the-value-property-of-cells)
 
@@ -47,12 +44,7 @@ To access the Value property of cells, first you need to create a CellSelection 
 The SetValue() method has multiple overloads that allow you to pass a double, a string, a Boolean value, a DateTime instance or an ICellValue object.
         
 
-__Example 1__ sets the Value of cell A1 to "Total":
-        #_[C#] Example 1: Set string value_
-
-	
-
-
+#### Example 1 sets the Value of cell A1 to "Total":
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_16}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_16}} 
@@ -73,18 +65,9 @@ __Example 1__ sets the Value of cell A1 to "Total":
 
 {{endregion}} 
 
-
-
-
 Another option for setting the cell value is to use the Create() method of the CellValueFactory class to produce an ICellValue and then assign the value using the SetValue(ICellValue) method. Similarly to SetValue(), the method Create() has multiple overloads that allow you to enter a string, double or Boolean value.
-        
 
-__Example 2__ creates a NumberCellValue with value 3.14 and assigns it to cell A1.
-        #_[C#] Example 2: Create NumberCellValue_
-
-	
-
-
+#### Example 2 Creates a NumberCellValue with value 3.14 and assigns it to cell A1.
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_5}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_5}} 
@@ -107,18 +90,9 @@ __Example 2__ creates a NumberCellValue with value 3.14 and assigns it to cell A
 
 {{endregion}} 
 
-
-
-
 If you now retrieve the Value of cell A1, the GetValue() method will return an instance of NumberCellValue with RawValue equal to "3.14" and both ValueType and ResultValueType equal to Number.
-        
 
-__Example 3__ retrieves the value created in Example 2.
-        #_[C#] Example 3: Retrieve cell value_
-
-	
-
-
+#### Example 3. Retrieves the value created in Example 2.
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_17}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_17}} 
@@ -134,9 +108,6 @@ __Example 3__ retrieves the value created in Example 2.
 ````
 
 {{endregion}} 
-
-
-
 
 Note that the GetValue() method does not return an ICellValue directly, but it provides an RangePropertyValue<ICellValue> instance. The RangePropertyValue is used to determine whether the value of a region of cells is homogeneous. In other words, if you attempt to retrieve the value of the cell region A1:B2 and the values in these cells are different, the RangePropertyValue will specify that the values vary. The class exposes two properties that describe the values in the chosen cell range:
         
@@ -156,13 +127,8 @@ __EmptyCellValue__ is the default cell value type. When an empty worksheet is ad
 If a cell already contains another value, you can set an empty value for it using the __ClearValue()__ method.
         
 
-__Example 4__ clears the value of cell A1:
-        #_[C#] Example 4: Clear value_
-
-	
-
-
-
+#### Example 4. Clear the value of cell A1:
+       
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_1}} 
 
@@ -180,20 +146,12 @@ __Example 4__ clears the value of cell A1:
 
 {{endregion}} 
 
-
-
-
 ## Boolean Cell Value
 
 As its name suggests, the __BooleanCellValue__ type contains a value of type bool. The RawValue of each BooleanCellValue is either "TRUE" or "FALSE" and the ValueType is Boolean. You can easily assign to a cell a BooleanCellValue using the SetValue(bool) overload.
         
 
-__Example 5__ sets the values of cells A1 and B1 to true and false BooleanCellValues, respectively.
-        #_[C#] Example 5: Set boolean value_
-
-	
-
-
+#### Example 5. Set the values of cells A1 and B1 to true and false BooleanCellValues, respectively.
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_2}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_2}} 
@@ -214,18 +172,10 @@ __Example 5__ sets the values of cells A1 and B1 to true and false BooleanCellVa
 
 {{endregion}} 
 
-
-
-
 Another way to assign cells Boolean values is through using the static __Create()__ method of the __CellValueFactory__ class to produce a BooleanCellValue and then passing this cell value instance to the __SetValue()__ method.
         
 
-__Example 6__ illustrates how to create a BooleanCellValue using the CellValueFactory class.
-        #_[C#] Example 6: Create a BooleanCellValue using CellValueFactory_
-
-	
-
-
+#### Example 6 illustrates how to create a BooleanCellValue using the CellValueFactory class.
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_3}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_3}} 
@@ -250,31 +200,14 @@ __Example 6__ illustrates how to create a BooleanCellValue using the CellValueFa
 
 {{endregion}} 
 
-
-
-
 ## Number Cell Value
 
-The __NumberCellValue__ contains a value of type double. The ValueType of each NumberCellValue instance 
-          is Number and the RawValue is the string representation of the double it holds internally. Note that the RawValue of the 
-          NumberCellValue may be different from the value that appears in the cell since a cell value format may be applied. 
-          For example, if two cells present to the user "50.00%" and "5.00E-01", actually they both contain a 
-          NumberCellValue with a RawValue "0.5". The values appear differently, because percentage format has been 
-          applied to the first cell and scientific format – to the second cell. In fact, dates are also number values presented in date format.
-          For example, 16 September 2020 is actually the number 44090. 
-          You can find detailed description of the possible number formats and examples of their automatic assigning in 
-          the [Number Formatting]({%slug winforms/spread-processing/features/number-formatting%}) article.
+The __NumberCellValue__ contains a value of type double. The ValueType of each NumberCellValue instance  is Number and the RawValue is the string representation of the double it holds internally. Note that the RawValue of the  NumberCellValue may be different from the value that appears in the cell since a cell value format may be applied.  For example, if two cells present to the user "50.00%" and "5.00E-01", actually they both contain a  NumberCellValue with a RawValue "0.5". The values appear differently, because percentage format has been  applied to the first cell and scientific format – to the second cell. In fact, dates are also number values presented in date format. For example, 16 September 2020 is actually the number 44090.  You can find detailed description of the possible number formats and examples of their automatic assigning in the [Number Formatting]({%slug winforms/spread-processing/features/number-formatting%}) article.
         
-
 The __SetValue()__ method has several overloads that produce a NumberCellValue. You can use SetValue(double) and pass the double value or SetValue(DateTime) and hand in the a DateTime instance that will be internally converted to a number. Also, you can use the SetValue(string) and pass the string representation of the number you would like to set. Note that the SetValue(string) method attempts to parse the string you provide to all values and turns it into a __TextCellValue__ only if it cannot produce any of the other types of values.
-        
+ 
 
-__Example 7__ shows how to set the value of cell A1 to 1.23.
-        #_[C#] Example 7: Set number cell value_
-
-	
-
-
+#### Example 7 shows how to set the value of cell A1 to 1.23.
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_4}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_4}} 
@@ -293,18 +226,11 @@ __Example 7__ shows how to set the value of cell A1 to 1.23.
 
 {{endregion}} 
 
-
-
-
 You can use the SetValue(string) method to assign dates.
-        
-
+   
 __Example 8__ sets the value of cell A1 to 6 October 1987 (in culture "en-US"). Once set, the value of A1 is a NumberCellValue with RawValue 32056. Because the document model detects that this is a date string, a date format is automatically applied to the cell, so that the value appears as a date.
-        #_[C#] Example 8: Set date as number cell value_
 
-	
-
-
+#### Example 8. Set date as number cell value.
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_8}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_8}} 
@@ -323,37 +249,22 @@ __Example 8__ sets the value of cell A1 to 6 October 1987 (in culture "en-US"). 
 
 {{endregion}} 
 
-
-
-
 Contained double value:   32056
-        
 
 Applied format:   m/d/yyyy
-        
 
 ## Formula Cell Value
 
 The __FormulaCellValue__ contains a value of type __RadExpression__, which represents an arithmetic expression, built-up by constants, operators, cell references and functions. The CellValueType of FormulaCellValues is Formula and their RawValue should start with an equal sign (=).
         
 
-Again, there are a couple of approaches to set a FormulaCellValue to a cell: invoking the __Setvalue()__ method 
-          with a string and passing to the SetValue() method an ICellValue instance that is retrieved through the __Create()__ 
-          method of the __CellValueFactory__ class. Note, however, that both methods produce a FormulaCellValue only if the current 
-          CellValueFormat is not Text. If the format of the cell is Text, the
-          SetValue() and Create() methods produce a TextCellValue. That said, if you would like to use present formula values as strings, you can 
-          set the CellValueFormat property of the specified cell before you input the values.
+Again, there are a couple of approaches to set a FormulaCellValue to a cell: invoking the __Setvalue()__ method  with a string and passing to the SetValue() method an ICellValue instance that is retrieved through the __Create()__  method of the __CellValueFactory__ class. Note, however, that both methods produce a FormulaCellValue only if the current  CellValueFormat is not Text. If the format of the cell is Text, the SetValue() and Create() methods produce a TextCellValue. That said, if you would like to use present formula values as strings, you can set the CellValueFormat property of the specified cell before you input the values.
         
 
 You can set a FormulaCellValue through the SetValue() method by passing a string that starts with an equal sign (=).
         
 
-__Example 9__ shows how you can create a formula that refers to another cell.
-        #_[C#] Example 9: Create formula referring to another cell_
-
-	
-
-
+#### Example 9 shows how you can create a formula that refers to another cell.
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_13}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_13}} 
@@ -372,23 +283,13 @@ __Example 9__ shows how you can create a formula that refers to another cell.
 
 {{endregion}} 
 
-
-
-
-After this code is executed the value of cell *A1* will be the same as the value of cell A2. When the value of A2 is 
-          modified, the change will be reflected in A1 automatically.
+After this code is executed the value of cell *A1* will be the same as the value of cell A2. When the value of A2 is modified, the change will be reflected in A1 automatically.
         
 
-An expression can also contain a predefined function that performs a given calculation. The document model offers a number of built-in 
-          functions. You can read more about the available functions in the [Functions]({%slug winforms/spread-processing/features/formulas/functions%}) article. Note that if the current CellValueFormat of the cell is Text ("@"), the method will produce a TextCellValue instead of a FormulaCellValue.
+An expression can also contain a predefined function that performs a given calculation. The document model offers a number of built-in functions. You can read more about the available functions in the [Functions]({%slug winforms/spread-processing/features/formulas/functions%}) article. Note that if the current CellValueFormat of the cell is Text ("@"), the method will produce a TextCellValue instead of a FormulaCellValue.
         
 
-__Example 10__ illustrates the use of the SUM built-in function.
-        #_[C#] Example 10: Use built-in function_
-
-	
-
-
+#### Example 10 illustrates the use of the SUM built-in function.
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_14}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_14}} 
@@ -407,18 +308,10 @@ __Example 10__ illustrates the use of the SUM built-in function.
 
 {{endregion}} 
 
-
-
-
 Another way of setting a FormulaCellValue is passing an __ICellValue__ object to the __SetValue()__ method. Once again, the CellValueFactory's Create() method is used. Note that unlike the BooleanCellValue and the NumberCellValue, you need to pass the Worksheet and the CellIndex instances as parameters. These two arguments are required in case the RadExpression contains references to cells in the other worksheets. Additionally, this overload of the Create() method requires the current cell value format to be passed as a parameter, and based on its value, the method provides the new cell value format value that should be applied. Note that if the current CellValueFormat is Text ("@"), the method produces a TextCellValue instead of a FormulaCellValue.
         
 
-__Example 11__ creates a FormulaCellValue using the CellValueFactory class.
-        #_[C#] Example 11: Create FormulaCellValue_
-
-	
-
-
+#### Example 11 creates a FormulaCellValue using the CellValueFactory class.
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_18}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_18}} 
@@ -447,16 +340,9 @@ __Example 11__ creates a FormulaCellValue using the CellValueFactory class.
 
 {{endregion}} 
 
+Using the __SetValue()__ method executes internal checks for the current cell value type using the current format and other conditions. If you are sure that the passed value is a formula, you can use the __SetValueAsFormula(string text)__ method directly which will improve the performance.
 
-
-
-Using the __SetValue()__ method executes internal checks for the current cell value type using the current format and other conditions.
-          If you are sure that the passed value is a formula, you can use the __SetValueAsFormula(string text)__ method directly which will improve the performance.
-        #_[C#] Example 12 shows how you can use the method_
-
-	
-
-
+#### Example 12 shows how you can use the method.
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=example12}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=example12}} 
@@ -479,23 +365,13 @@ Using the __SetValue()__ method executes internal checks for the current cell va
 
 {{endregion}} 
 
-
-
-
 ## Text Cell Value
 
 As its name suggests, the __TextCellValue__ contains a value of type string and its ValueType is Text.
-        
 
 You can set a TextCellValue using the __SetValue(string)__ method. Note that before producing a TextCellValue, the SetValue() method attempts to parse the incoming string to all other cell value types. That said, if you pass the string "true", the cell will be assigned a BooleanCellValue. If you would like the cell to contain the string "true", pass the SetValue(string) method the string ="true".
-        
 
-__Example 12__ sets the value of cell A1 to the string "some test":
-        #_[C#] Example 13: Set TextCellValue_
-
-	
-
-
+#### Example 13 sets the value of cell A1 to the string "some test":
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_19}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_19}} 
@@ -514,18 +390,11 @@ __Example 12__ sets the value of cell A1 to the string "some test":
 
 {{endregion}} 
 
-
-
-
 If you would like to avoid the default parsing of the input string and always produce a TextCellValue, you need to set the CellValueFormat of the cells to Text ("@") and then enter the values.
+
+__Example 14__ enters the string "=1+2" into a cell, however, because of the applied cell value format, the cell is assigned a TextCellValue instead of a FormulaCellValue.
         
-
-__Example 13__ enters the string "=1+2" into a cell, however, because of the applied cell value format, the cell is assigned a TextCellValue instead of a FormulaCellValue.
-        #_[C#] Example 14: Explicitly apply text value type_
-
-	
-
-
+#### Example 14: Explicitly apply text value type.
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_20}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_20}} 
@@ -546,19 +415,10 @@ __Example 13__ enters the string "=1+2" into a cell, however, because of the app
 
 {{endregion}} 
 
-
-
-
 The same result could be achieved using the __Create()__ method of the __CellValueFactory__ class:
         
-
-__Example 14__ enters the string "=1+2" into a cell and applies cell value format.
-        #_[C#] Example 15: Creates TextCellValue_
-
-	
-
-
-
+#### Example 15 enters the string "=1+2" into a cell and applies cell value format.
+        
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=radspreadprocessing-working-with-cells-cell-value-types_21}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_21}} 
 
@@ -586,16 +446,9 @@ __Example 14__ enters the string "=1+2" into a cell and applies cell value forma
 
 {{endregion}} 
 
+If you are sure that the value is a string and need to create a text cell value, you can use the __SetValueAsText(string text)__ method directly.This would avoid the internal checks and parsing that are usually executed and improve the performance.
 
-
-
-If you are sure that the value is a string and need to create a text cell value, you can use the __SetValueAsText(string text)__ method directly. 
-          This would avoid the internal checks and parsing that are usually executed and improve the performance.
-        #_[C#] Example 16 shows how to utilize the SetValueAsText() method._
-
-	
-
-
+#### Example 16 shows how to utilize the SetValueAsText() method.
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.cs region=example16}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=example16}} 
@@ -618,9 +471,6 @@ If you are sure that the value is a string and need to create a text cell value,
 
 {{endregion}} 
 
-
-
-
 # See Also
 
- * [Accessing Cells of a Worksheet]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%})
+* [Accessing Cells of a Worksheet]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%})
