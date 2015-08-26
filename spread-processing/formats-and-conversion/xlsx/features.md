@@ -5,18 +5,14 @@ description: Features
 slug: winforms/spread-processing/formats-and-conversion/xlsx/features
 tags: features
 published: True
-position: 0
+position: 1
 ---
 
 # Features
 
-
-
 Below you can find list with all features that are supported by XlsxFormatProvider.
-      
 
 ## 
-
 
 | Feature | Supported | Comment |
 | ------ | ------ | ------ |

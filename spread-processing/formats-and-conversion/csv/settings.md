@@ -5,7 +5,7 @@ description: Settings
 slug: winforms/spread-processing/formats-and-conversion/csv/settings
 tags: settings
 published: True
-position: 1
+position: 2
 ---
 
 # Settings
@@ -13,7 +13,6 @@ position: 1
 
 
 __CsvFormatProvider__ allows to import and export CSV documents. Additionally, there are a number of settings that allow you to modify the import/export. The current article outlines the available settings.
-			
 
 ## 
 
@@ -33,12 +32,13 @@ __CsvFormatProvider__ exposes a __Settings__ property of type __CsvSettings__. T
 						
 
 __Example 1__ shows how to create and specify particular setting to a CsvFormatProvider.
-				#_[C#] Example 1: Use CsvSettings_
+
+
+#### Example 1: Use CsvSettings
 
 	
-
-#_[VB NET] Example 1: Use CsvSettings_
-
-	
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingCsvSettings.cs region=radspreadprocessing-formats-and-conversion-csv-settings_0}} 
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingCsvSettings.vb region=radspreadprocessing-formats-and-conversion-csv-settings_0}} 
 
 
+{{endregion}} 

@@ -10,19 +10,14 @@ position: 4
 
 # Iterate Through Worksheets
 
-
-
 In a number of scenarios you may need to iterate through all worksheets in a given workbook. The API of the __Workbook__ class exposes a __Worksheets__ collection that allows you to retrieve worksheets both by name and index. Also, the collection allows you to iterate all worksheets effortlessly.
       
 
 ## 
 
 __Example 1__ illustrates how to retrieve worksheets that have already been added to the workbook:
-        #_[C#] Example 1: Retrieve worksheet_
-
-	
-
-
+       
+#### Example 1: Retrieve worksheet
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingIterateThroughWorksheets.cs region=radspreadprocessing-working-with-worksheets-iterate-through-worksheets_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingIterateThroughWorksheets.vb region=radspreadprocessing-working-with-worksheets-iterate-through-worksheets_0}} 
@@ -51,15 +46,9 @@ __Example 1__ illustrates how to retrieve worksheets that have already been adde
 
 {{endregion}} 
 
-
-
-
 __Example 2__ creates a new workbook with three worksheets. The code further iterates through all worksheets and sets the value of cell *A1* to the name of the corresponding worksheet. The example also sets the ForeColor and BackgrounFill of the cell:
-        #_[C#] Example 2: Iterate worksheets_
-
-	
-
-
+        
+#### Example 2: Iterate worksheets
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingIterateThroughWorksheets.cs region=radspreadprocessing-working-with-worksheets-iterate-through-worksheets_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingIterateThroughWorksheets.vb region=radspreadprocessing-working-with-worksheets-iterate-through-worksheets_1}} 
@@ -103,7 +92,4 @@ __Example 2__ creates a new workbook with three worksheets. The code further ite
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

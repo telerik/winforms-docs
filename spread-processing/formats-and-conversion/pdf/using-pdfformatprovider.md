@@ -5,7 +5,7 @@ description: Using PdfFormatProvider
 slug: winforms/spread-processing/formats-and-conversion/pdf/using-pdfformatprovider
 tags: using,pdfformatprovider
 published: True
-position: 1
+position: 2
 ---
 
 # Using PdfFormatProvider
@@ -36,11 +36,8 @@ In order to use __PdfFormatProvider__ you need to add references to the assembli
 ## Export
 
 __Example 1__ shows how to use __PdfFormatProvider__ to export a Workbook to a file.
-        #_[C#] Example 1: PdfFormatProvider Export Example_
 
-	
-
-
+#### Example 1: PdfFormatProvider Export Example_
 
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingUsingPdfFormatProvider.cs region=radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingUsingPdfFormatProvider.vb region=radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider_0}} 
@@ -65,20 +62,15 @@ __Example 1__ shows how to use __PdfFormatProvider__ to export a Workbook to a f
 
 {{endregion}} 
 
-
-
-
 The result from the export method is a document that can be opened in any application that supports PDF documents.
-        #_[C#] Example 2: Export to RadFixedDocument_
 
-	
+#### Example 2: Export to RadFixedDocument
 
-#_[VB NET] Example 2: Export to RadFixedDocument_
+{{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingUsingPdfFormatProvider.cs region=radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider_0}} 
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingUsingPdfFormatProvider.vb region=radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider_0}} 
 
-	
+{{endregion}} 
 
-
-
->tip  __RadFixedDocument__ is the base class of the __RadPdfProcessing__ library. Additional information on the library and its functionality can be found[here]({%slug winforms/pdfprocessing%})
+>tip  __RadFixedDocument__ is the base class of the __RadPdfProcessing__ library. Additional information on the library and its functionality can be found [here]({%slug winforms/pdfprocessing%})
 >
 

@@ -10,8 +10,6 @@ position: 12
 
 # Shapes and Images
 
-
-
 This article briefly describes what are shapes and images, and how to create and work with them.  It contains the following sections:
 
 * [What Are Shapes and Images?](#what-are-shapes-and-images?)
@@ -96,11 +94,8 @@ To insert an image into a worksheet do the following:
             
 
 In order to create an instance of __FloatingImage__ you need the worksheet in which you want to insert the image, the cell index and the offset.
-        #_[C#] Example 1: Create FloatingImage_
 
-	
-
-
+#### Example 1: Create FloatingImage
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.cs region=radspreadprocessing-features-shapes-and-images_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_0}} 
@@ -117,15 +112,9 @@ In order to create an instance of __FloatingImage__ you need the worksheet in wh
 
 {{endregion}} 
 
-
-
-
 The next step is to configure the other properties of the image as needed.
-        #_[C#] Example 2: Configure image properties_
 
-	
-
-
+#### Example 2: Configure image properties
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.cs region=radspreadprocessing-features-shapes-and-images_01}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_01}} 
@@ -160,15 +149,9 @@ The next step is to configure the other properties of the image as needed.
 
 {{endregion}} 
 
-
-
-
 Insert the image into the collection of shapes of the worksheet.  Note that the worksheet needs to be the same as the one passed in the FloatingImage constructor, otherwise an exception is thrown.
-        #_[C#] Example 3: Add image to worksheet_
 
-	
-
-
+#### Example 3: Add image to worksheet
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.cs region=radspreadprocessing-features-shapes-and-images_02}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_02}} 
@@ -185,20 +168,14 @@ Insert the image into the collection of shapes of the worksheet.  Note that the 
 
 {{endregion}} 
 
-
-
-
 ## Deleting a Shape
 
 In order to delete a shape from a worksheet, you need the shape's instance. The collection of shapes of the worksheet exposes a __Remove()__ method with two overloads which you can use.
         
 
 __Example 4__ demonstrates how you can remove the image added in __Example 3__.
-        #_[C#] Delete shape_
 
-	
-
-
+#### Delete shape
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.cs region=radspreadprocessing-features-shapes-and-images_03}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_03}} 
@@ -215,20 +192,14 @@ __Example 4__ demonstrates how you can remove the image added in __Example 3__.
 
 {{endregion}} 
 
-
-
-
 ## Changing the Shape's Position and Size
 
 After the initial values of the properties of the shapes have been assigned, they can always be changed in order to reposition, resize and rotate the shape. You can change the following characteristics of the shapes:
         
 
 1. Repositioning the shape
-            #_[C#] Example 5: Move image_
 
-	
-
-
+#### Example 5: Move image
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.cs region=radspreadprocessing-features-shapes-and-images_04}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_04}} 
@@ -253,11 +224,8 @@ After the initial values of the properties of the shapes have been assigned, the
 
 
 1. Changing the shape's width and height
-            #_[C#] Example 6: Change width and height_
 
-	
-
-
+#### Example 6: Change width and height
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.cs region=radspreadprocessing-features-shapes-and-images_05}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_05}} 
@@ -276,7 +244,6 @@ After the initial values of the properties of the shapes have been assigned, the
 
 {{endregion}} 
 
-
 The Width and Height properties do not take the LockAspectRatio property into account. If you would like more control on whether the aspect ratio of the shape should be observed, you can also use the following methods.
             
 
@@ -284,11 +251,8 @@ The Width and Height properties do not take the LockAspectRatio property into ac
                 
 
 * void SetHeight(bool respectLockAspectRatio, double height, bool adjustCellIndex = false)
-                #_[C#] Example 7: Set width and whether lock aspect ratio is respected_
 
-	
-
-
+#### Example 7: Set width and whether lock aspect ratio is respected
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.cs region=radspreadprocessing-features-shapes-and-images_08}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_08}} 
@@ -308,16 +272,11 @@ The Width and Height properties do not take the LockAspectRatio property into ac
 
 {{endregion}} 
 
-
 These two methods will be further explained in the next section.
-            
 
 1. Rotating the shape
-            #_[C#] Example 7: Rotate_
 
-	
-
-
+#### Example 7: Rotate
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.cs region=radspreadprocessing-features-shapes-and-images_06}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_06}} 
@@ -339,11 +298,7 @@ The rotation angle of the shape can affect the __CellIndexM__ property and the o
             
 
 1. Flipping the shape
-            #_[C#] Example 8: Flip_
-
-	
-
-
+#### Example 8: Flip
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.cs region=radspreadprocessing-features-shapes-and-images_07}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_07}} 
@@ -359,9 +314,6 @@ The rotation angle of the shape can affect the __CellIndexM__ property and the o
 ````
 
 {{endregion}} 
-
-
-
 
 ## Relationship Between the Cell Index of the Shape and Its Rotation Angle
 

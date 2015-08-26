@@ -45,7 +45,7 @@ Now the project is ready and it can be used for monitoring the user activities i
 
 In the Program.cs file you will notice that the initialization code for the Analytics monitor is automatically added.	
 
-	![telerik-analytics-integration-getting-started 008](images/telerik-analytics-integration-getting-started008.png)
+![telerik-analytics-integration-getting-started 008](images/telerik-analytics-integration-getting-started008.png)
 
 This is all that is necessary to start monitoring your application. By default the controls that have integrated support for analytics willstart automatically to capture and send data. And when you start your application it will automatically send data to the Telerik Platform. In case you want to disable this for a particular control you can set its __EnableAnalytics__ property to *false*.
 

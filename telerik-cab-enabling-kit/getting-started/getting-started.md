@@ -39,15 +39,11 @@ Here is how to start building CAB application in just a few steps, by using the 
 1. The Telerik.WinControls.CompositeUI assembly will be copied to the selected project(s) directory and will be referenced in the project(s).
 
 1. Add references to the used in the CAB kit assemblies:
-            
 	* Telerik.WinControls
-	
 	* Telerik.WinControls.RadDock
-	
 	* Telerik.WinControls.UI
-	
 	* TelerikCommon
 
-1. Now you can start using Telerik CAB Enabling Kit.
+9\. Now you can start using Telerik CAB Enabling Kit.
 
-	 ![telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit 004](images/telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit004.png)
+![telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit 004](images/telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit004.png)

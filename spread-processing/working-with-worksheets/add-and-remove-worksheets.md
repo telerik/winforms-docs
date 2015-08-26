@@ -10,29 +10,20 @@ position: 1
 
 # Add and Remove Worksheets
 
-
-
 This article demonstrates how to add and remove worksheets from a workbook.
-      
-
+  
 * [Add Worksheets](#add-worksheets)
 
 * [Remove Worksheets](#remove-worksheets)
 
 ## Add Worksheets
 
-Adding a new worksheet to a workbook can be easily achieved through its __Worksheets__ collection. The collection exposes an __Add()__ method
-          that does not take arguments and returns the instance of the newly created worksheet. By default worksheets are assigned the first available name in the sequence Sheet1, Sheet2, Sheet3… You
-          can easily change the name of the worksheet through the __Worksheet.Name__ property. More information about renaming a worksheet is available in the 
-          [Rename a Worksheet]({%slug winforms/spread-processing/working-with-worksheets/rename-a-worksheet%}) article.
+Adding a new worksheet to a workbook can be easily achieved through its __Worksheets__ collection. The collection exposes an __Add()__ method that does not take arguments and returns the instance of the newly created worksheet. By default worksheets are assigned the first available name in the sequence Sheet1, Sheet2, Sheet3… You can easily change the name of the worksheet through the __Worksheet.Name__ property. More information about renaming a worksheet is available in the [Rename a Worksheet]({%slug winforms/spread-processing/working-with-worksheets/rename-a-worksheet%}) article.
         
 
 __Example 1__ creates a workbook from scratch and adds a single worksheet to it. Since this is the first worksheet in the workbook, it is also set as the active worksheet. All worksheets added after it will not become active.
-        #_[C#] Example 1: Create a workbook and add a worksheet to it_
-
-	
-
-
+      
+#### Example 1: Create a workbook and add a worksheet to it
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingAddAndRemoveWorksheets.cs region=radspreadprocessing-working-with-worksheets-add-remove-worksheets_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingAddAndRemoveWorksheets.vb region=radspreadprocessing-working-with-worksheets-add-remove-worksheets_0}} 
@@ -49,26 +40,16 @@ __Example 1__ creates a workbook from scratch and adds a single worksheet to it.
 
 {{endregion}} 
 
-
-
-
 ## Remove Worksheets
 
-The __Worksheets__ collection of the workbook offers two methods for removing worksheets: __Remove()__ and __RemoveAt()__. The former 
-          method requires the worksheet name or the worksheet instance to be passed as an argument. The latter allows you specify the index of the worksheet you would like to remove.
-        
+The __Worksheets__ collection of the workbook offers two methods for removing worksheets: __Remove()__ and __RemoveAt()__. The former method requires the worksheet name or the worksheet instance to be passed as an argument. The latter allows you specify the index of the worksheet you would like to remove.
 
 >caution Each workbook must contain at least one worksheet. If you attempt to remove the last worksheet in the __Worksheets__ collection, an exception is raised.
 >
 
+__Example 2__ creates a workbook and adds four worksheets. All worksheets are with their default names: Sheet1, Sheet2, Sheet3 and Sheet4. The code further demonstrates how to remove three worksheets using all of the aforementioned remove methods:
 
-__Example 2__ creates a workbook and adds four worksheets. All worksheets are with their default names: Sheet1, Sheet2, Sheet3 and Sheet4. The code further demonstrates how
-          to remove three worksheets using all of the aforementioned remove methods:
-        #_[C#] Example 2: Add and remove worksheets_
-
-	
-
-
+#### Example 2: Add and remove worksheets
 
 {{source=..\SamplesCS\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingAddAndRemoveWorksheets.cs region=radspreadprocessing-working-with-worksheets-add-remove-worksheets_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingAddAndRemoveWorksheets.vb region=radspreadprocessing-working-with-worksheets-add-remove-worksheets_1}} 
@@ -98,7 +79,4 @@ __Example 2__ creates a workbook and adds four worksheets. All worksheets are wi
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
