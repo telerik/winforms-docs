@@ -217,7 +217,12 @@ The following example demonstrates how to add a summary row to the first level o
 
 ## Customizing the summary row
 
-The GroupSummaryEvaluate event is fired after a summary item is calculated and before the summary row is displayed. You can use it to apply custom formatting to the summary row:	
+The GroupSummaryEvaluate event is fired after a summary item is calculated and before the summary row is displayed. You can use it to apply custom formatting to the summary row:
+
+{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=customFormatting}} 
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=customFormatting}} 
+
+{{endregion}}	
 
 ![gridview-rows-summary-rows 006](images/gridview-rows-summary-rows006.png)
 
@@ -229,5 +234,10 @@ The same event is used to format the group header so it is important to check th
 You can write your own logic for summary items evaluation by inheriting the GridViewSummaryItem class and overriding the Evaluate event.
 
 The following example demonstrates how to create a custom summaryitem which calculates the count of orders with Freight is less than 50:
+
+{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=customSummaryItemUsage}} 
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=customSummaryItemUsage}} 
+
+{{endregion}}
 
 ![gridview-rows-summary-rows 007](images/gridview-rows-summary-rows007.png)
