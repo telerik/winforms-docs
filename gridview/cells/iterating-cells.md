@@ -12,13 +12,7 @@ position: 2
 
 
 
-You can iterate through the cells of each row using the __Cells__ collection of 
-    		[GridViewCellInfo]({%slug winforms/gridview/cells/gridviewcellinfo%}). 
-    	The example below firstly iterates the rows of the grid, then the cells for each row:#_[C#] Iterating cells_
-
-	
-
-
+You can iterate through the cells of each row using the __Cells__ collection of [GridViewCellInfo]({%slug winforms/gridview/cells/gridviewcellinfo%}). The example below firstly iterates the rows of the grid, then the cells for each row:
 
 {{source=..\SamplesCS\GridView\Cells\IteratingCells.cs region=iteratingCells}} 
 {{source=..\SamplesVB\GridView\Cells\IteratingCells.vb region=iteratingCells}} 
@@ -51,13 +45,10 @@ You can iterate through the cells of each row using the __Cells__ collection of
 
 {{endregion}} 
 
-
-
-
 >note  __RadGridView__ uses virtualization for its visual elements. This means that only the rows that are currently visible have a visual element. When the grid is scrolled up and down the visual elements are reused. Because of the virtualization, it is safe to use the __CellElement__ only inside the __CellFormatting__ event and only for the current cell.
 >
 
 
-Before![gridview-cells-iterating-cells 001](images/gridview-cells-iterating-cells001.png)
+Before<br>![gridview-cells-iterating-cells 001](images/gridview-cells-iterating-cells001.png)
 
-After![gridview-cells-iterating-cells 002](images/gridview-cells-iterating-cells002.png)
+After<br>![gridview-cells-iterating-cells 002](images/gridview-cells-iterating-cells002.png)

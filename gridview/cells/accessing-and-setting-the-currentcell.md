@@ -14,11 +14,7 @@ position: 6
 
 ## 
 
-In order to set the current cell of RadGridView, set the CurrentRow and CurrentColumn properties to respective row and column which cross at the desired cell:#_[C#] Setting the current cell_
-
-	
-
-
+In order to set the current cell of RadGridView, set the CurrentRow and CurrentColumn properties to respective row and column which cross at the desired cell:
 
 {{source=..\SamplesCS\GridView\Cells\SetttingCurrentCell.cs region=settingTheCurrentCell}} 
 {{source=..\SamplesVB\GridView\Cells\SettingCurrentCell.vb region=settingTheCurrentCell}} 
@@ -44,11 +40,7 @@ In order to set the current cell of RadGridView, set the CurrentRow and CurrentC
 
 ## Accessing the current cell
 
-To get an instance of the current cell simply create a variable of type GridDataCellElement and assign to it the current cell:#_[C#] Accessing the current cell_
-
-	
-
-
+To get an instance of the current cell simply create a variable of type GridDataCellElement and assign to it the current cell:
 
 {{source=..\SamplesCS\GridView\Cells\SetttingCurrentCell.cs region=readingTheCurrentCell}} 
 {{source=..\SamplesVB\GridView\Cells\SettingCurrentCell.vb region=readingTheCurrentCell}} 
