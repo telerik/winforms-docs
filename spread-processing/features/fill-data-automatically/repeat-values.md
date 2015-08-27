@@ -10,10 +10,7 @@ position: 0
 
 # Repeat Values
 
-
-
 The document model allows you to automatically repeat data that has already been entered in your worksheet. The auto fill feature is very useful when you would like to copy the contents of a row or a column into its adjacent rows or columns respectively. Thus you can easily spread the values into a specified range instead of populating the cells manually.
-      
 
 ## 
 
@@ -33,11 +30,8 @@ To repeat the values, first you need to create a [CellSelection]({%slug winforms
             
 
 __Example 1__ illustrates how the contents of column *A* can be copied to the rest of the columns in the range *A1:D4*. The code creates a new worksheet and populates the cells *A1*, *A2*, *A3* and *A4* with the values 5, 8, 13 and 21 respectively. Further, it invokes the __FillData()__ method for the specified range with __FillDirection Right__.
-        #_[C#] Example 1: Fill Right_
-
-	
-
-
+        
+#### Example 1: Fill Right
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingRepeatValues.cs region=radspreadprocessing-features-fill-data-automatically-repeat-values_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingRepeatValues.vb region=radspreadprocessing-features-fill-data-automatically-repeat-values_0}} 
@@ -71,9 +65,6 @@ __Example 1__ illustrates how the contents of column *A* can be copied to the re
 
 {{endregion}} 
 
-
-
-
 __Figure 1__ demonstrates the result of __Example 1__.
         
 >caption Figure 1: Data Filled Right
@@ -84,11 +75,8 @@ Similarly, you can automatically copy the values of a row to its adjacent rows.
         
 
 __Example 2__ invokes the __FillData()__ method with __FillDirection Down__ for the range *B2:D4*. The sample code creates an empty worksheet and enters values in the range *B2:D2*. These values are propagated to the rest of the rows in the specified region.
-        #_[C#] Example 2: Fill Down_
 
-	
-
-
+#### Example 2: Fill Down
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingRepeatValues.cs region=radspreadprocessing-features-fill-data-automatically-repeat-values_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingRepeatValues.vb region=radspreadprocessing-features-fill-data-automatically-repeat-values_1}} 
@@ -119,9 +107,6 @@ __Example 2__ invokes the __FillData()__ method with __FillDirection Down__ for 
 ````
 
 {{endregion}} 
-
-
-
 
 __Figure 2__ demonstrates the result of __Example 2__.
         

@@ -190,8 +190,7 @@ __Figure 4__ shows that this condition will sort the range by putting all cells 
 
 ## Setting Sorting Conditions
 
-There are two ways to sort a range on a worksheet: using the __SortState__ property of the worksheet, or through the cell selection. 
-          In both cases you need to create a sort condition and then apply it.
+There are two ways to sort a range on a worksheet: using the __SortState__ property of the worksheet, or through the cell selection. In both cases you need to create a sort condition and then apply it.
         
 
 Note that unlike the case with [Filtering]({%slug winforms/spread-processing/features/filtering%}) , you can apply more than one sort condition on one column. In fact, this is what you need to do if you'd like to sort by more than one color.

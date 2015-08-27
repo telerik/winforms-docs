@@ -10,8 +10,6 @@ position: 1
 
 # Series
 
-
-
 The document model has the ability to automatically construct series of data using a specified pattern or data that is already in the worksheet. The Auto Fill feature can continue series of numbers, dates, time periods, or number and text combinations based on start and step values. The automatic fill supports the following series: linear, growth, date and auto fill.
       
 
@@ -45,11 +43,8 @@ The __FillDataSeriesLinear()__ method of the __CellSelection__ class constructs 
         
 
 __Example 1__ creates a new worksheet that has the value *1* in cell *A1* and *3* in *B1*. The __FillDataSeriesLinear()__ method is invoked for the cell region *A1:F1*. Thus, the values *1, 3, 5, 7, 9 and 11* appear in the range *A1:F1*.
-        #_[C#] Example 1: Fill Linear Series_
 
-	
-
-
+#### Example 1: Fill Linear Series
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.cs region=radspreadprocessing-features-fill-data-automatically-series_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_0}} 
@@ -81,9 +76,6 @@ __Example 1__ creates a new worksheet that has the value *1* in cell *A1* and *3
 
 {{endregion}} 
 
-
-
-
 __Figure 1__ demonstrates the result of __Example 1__.
         
 >caption Figure 1: Linear Series
@@ -96,11 +88,8 @@ The __FillDataSeriesLinearTrend()__ method produces series using a linear fittin
         
 
 __Example 2__ shows how to use __FillDataSeriesLinearTrend()__ to continue series values *1, 5* from the range *A1:B1* and result will be series *1, 5, 9, 13, 17, 21* in the range *A1:F1*.
-        #_[C#] Example 2: Fill Linear Trend Series_
 
-	
-
-
+#### Example 2: Fill Linear Trend Series
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.cs region=radspreadprocessing-features-fill-data-automatically-series_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_1}} 
@@ -136,10 +125,7 @@ __Example 2__ shows how to use __FillDataSeriesLinearTrend()__ to continue serie
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 __Figure 2__ demonstrates the result of __Example 2__.
         
@@ -159,11 +145,8 @@ The __FillDataSeriesExponential()__ method calculates the values of each cell af
         
 
 __Example 3__ shows how to use the __FillDataSeriesExponential()__ method to continue series with initial values *1 and 3* that appear in cells *A1 and B1* respectively. After the method is invoked the region *A1:F1* contains the following values: *1, 4, 16, 64, 256 and 1024*.
-        #_[C#] Example 3: Fill Exponential Series_
 
-	
-
-
+#### Example 3: Fill Exponential Series
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.cs region=radspreadprocessing-features-fill-data-automatically-series_2}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_2}} 
@@ -193,10 +176,7 @@ __Example 3__ shows how to use the __FillDataSeriesExponential()__ method to con
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 __Figure 4__ demonstrates the result of __Example 3__.
         
@@ -210,11 +190,8 @@ The __FillDataSeriesExponentialTrend()__ method calculates the values of the ser
         
 
 __Example 4__ shows how to use the __FillDataSeriesLinearTrend()__ method to continue series with initial values *1 and 5* that appear in cells *A1 and B1* respectively. After the linear trend is applied the range *A1:F1* holds the following values: *1, 5, 25, 125, 625 and 3125*.
-        #_[C#] Example 4: Exponential Trend Series_
 
-	
-
-
+#### Example 4: Exponential Trend Series
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.cs region=radspreadprocessing-features-fill-data-automatically-series_3}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_3}} 
@@ -250,9 +227,6 @@ __Example 4__ shows how to use the __FillDataSeriesLinearTrend()__ method to con
 
 {{endregion}} 
 
-
-
-
 __Figure 5__ demonstrates the result of __Example 4__.
         
 >caption Figure 5: Exponential Trend Series
@@ -271,11 +245,8 @@ The __FillDataSeriesDate()__ method is used to fill date values incrementally us
         
 
 __Example 5__ shows how to construct series that use *5/28/2013* as a starting point and add two weekdays for each consecutive value:
-        #_[C#] Example 5: Fill Date Series_
 
-	
-
-
+#### Example 5: Fill Date Series
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.cs region=radspreadprocessing-features-fill-data-automatically-series_4}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_4}} 
@@ -305,9 +276,6 @@ __Example 5__ shows how to construct series that use *5/28/2013* as a starting p
 
 {{endregion}} 
 
-
-
-
 __Figure 7__ demonstrates the result of __Example 5__.
         
 >caption Figure 7: Date Series
@@ -320,7 +288,6 @@ Taking a closer look at the result shows that 5/28/2013 is *Tuesday*, 5/30/2013 
 ## Auto Fill Series
 
 The __FillDataSeriesAuto()__ method automatically constructs complex patterns of numbers, number and text combinations, dates, or time periods. For most cases it uses linear fitting algorithm to find the next value of the series. The method can fill different types of data automatically. For example, if you input *1, 2 and 3* in consecutive cells and use *AutoFill*, the result will be *4, 5, 6 and 7*. Here is a list with supported data for auto fill:
-        
 
 
 | Initial Selection | Extended Series |
@@ -346,11 +313,8 @@ Similarly to the rest auto filling methods, __FillDataSeriesAuto()__ takes three
         
 
 __Example 6__ shows how to use the __FillDataSeriesAuto()__ method for initial value *1st* set in the cell *A1*. The resulting series filled in the range *A1:F1* are as follows: *1st, 2nd, 3rd, 4th, 5th and 6th*.
-        #_[C#] Example 6: Auto Fill_
 
-	
-
-
+#### Example 6: Auto Fill
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.cs region=radspreadprocessing-features-fill-data-automatically-series_5}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_5}} 
@@ -380,9 +344,6 @@ __Example 6__ shows how to use the __FillDataSeriesAuto()__ method for initial v
 
 {{endregion}} 
 
-
-
-
 __Figure 8__ demonstrates the result of __Example 6__.
         
 >caption Figure 8: Auto Fill
@@ -390,11 +351,8 @@ __Figure 8__ demonstrates the result of __Example 6__.
 ![spreadprocessing-features-fill-data-automatically-series 008](images/spreadprocessing-features-fill-data-automatically-series008.png)
 
 __Example 7__ that demonstrates the behavior of the __FillDataSeriesAuto()__ method. This time the initial value *6th* appears in cell *F1* and the applied auto fill is with reversed direction. Note that the constructed __CellRange__ is actually *F1:A1*, instead of *A1:F1*. The resulting series are: *11th, 12th, 9th, 8th, 7th and 6th*.
-        #_[C#] Example 7: Auto Fill Reversed Direction_
 
-	
-
-
+#### Example 7: Auto Fill Reversed Direction
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.cs region=radspreadprocessing-features-fill-data-automatically-series_6}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_6}} 
@@ -422,10 +380,7 @@ __Example 7__ that demonstrates the behavior of the __FillDataSeriesAuto()__ met
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 __Figure 9__ demonstrates the result of __Example 7__.
         

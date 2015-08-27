@@ -10,60 +10,37 @@ position: 4
 
 # Custom Functions
 
-
-
 This article provides information about the possible approaches for creating a custom function. It contains the following sections:
-      
 
-* [
-              Inheriting FunctionBase Abstract Class
-            ](#inheriting-functionbase-abstract-class)
+* [Inheriting FunctionBase Abstract Class](#inheriting-functionbase-abstract-class)
 
-* [
-              Functions Inheritance Tree
-            ](#functions-inheritance-tree)
+* [Functions Inheritance Tree](#functions-inheritance-tree)
 
-* [
-              ArgumentConversionRules
-            ](#argumentconversionrules)
+* [ArgumentConversionRules](#argumentconversionrules)
 
-* [
-              FunctionInfo
-            ](#functioninfo)
+* [ FunctionInfo](#functioninfo)
 
-* [
-              Custom Function Examples
-            ](#custom-function-examples)
+* [Custom Function Examples](#custom-function-examples)
 
 ## Inheriting FunctionBase abstract class
 
 The document model provides powerful API for creating custom functions. All functions must inherit from the abstract __FunctionBase__ class, providing basic methods and properties for each function instance.
-        
 
 These are the basic __FunctionBase__ members:
-        
 
 * __Name__: Property of type String, defining the name of the function. The property is used for registering the function, so the name of the function must be unique (case insensitive). If a function with repeating name is registered, it overrides the previous function registered with this name.
-            
 
 * __FunctionInfo__: Property of type FunctionInfo providing description of the function and its arguments. For more detailed description of this class you may follow [this](#functioninfo) link.
-            
 
 * __ArgumentConversionRules__: Property describing the way different argument types are interpreted. The functions API works with 5 argument types (Logical, Number, Text, Reference and Array) and each function may interpret each of this argument types differently. For more information you may follow [this](#argumentconversionrules) link.
-            
 
 * __Evaluate__ and __EvaluateOverride methods__: The methods where the function calculations take place. In order to define custom function you need to override the __EvaluateOverride__ method so that later you may obtain function calculations value through the __Evaluate__ method.
-            
 
 Additionally each custom function needs to be registered through the __FunctionManager__ class. This is easily done by passing an instance of the function class to the static __Register()__ method.
-        
 
 __Example 1__ shows how to register a function class ArgumentsFunction, inheritor of FunctionBase.
-        #_[C#] Example 1: Register custom function_
-
-	
-
-
+       
+#### Example 1: Register custom function
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.cs region=radspreadprocessing-features-formulas-custom-functions_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_0}} 
@@ -78,13 +55,9 @@ __Example 1__ shows how to register a function class ArgumentsFunction, inherito
 
 {{endregion}} 
 
-
-
-
 ## Functions Inheritance Tree
 
 The document model provides an inheritance tree of classes providing ready to use functionalities for different function types depending on the function arguments and the desired result.
-        
 
 __Figure 1__ the base abstract function classes.
         
@@ -153,11 +126,8 @@ The value of these properties are from the enumerations
         
 
 __Example 2__ creates an instance of ArgumentConversionRules:
-        #_[C#] Example 2: Create ArgumentConversionRules_
 
-	
-
-
+#### Example 2: Create ArgumentConversionRules
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.cs region=radspreadprocessing-features-formulas-custom-functions_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_1}} 
@@ -176,9 +146,6 @@ __Example 2__ creates an instance of ArgumentConversionRules:
 ````
 
 {{endregion}} 
-
-
-
 
 ## FunctionInfo
 
@@ -232,11 +199,8 @@ __FunctionInfo__ has the following properties:
             
 
 __Example 3__ shows how to create an instance of FunctionInfo class.
-        #_[C#] Example 3: Create FunctionInfo_
 
-	
-
-
+#### Example 3: Create FunctionInfo
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.cs region=radspreadprocessing-features-formulas-custom-functions_2}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_2}} 
@@ -275,9 +239,6 @@ __Example 3__ shows how to create an instance of FunctionInfo class.
 
 {{endregion}} 
 
-
-
-
 ## Custom Function Examples
 
 The next example is of a custom function named __"ARGUMENTS"__ inheriting from the __FunctionBase__ class. In the __FunctionInfo__ definition you can see that the function has three required arguments and three optional arguments with __optionalArgumentsRepeatsCount__ equal to 3.
@@ -287,11 +248,8 @@ The result of the function's calculations is the number of arguments passed to t
         
 
 __Example 4__ shows how to create the 'ARGUMENTS' function.
-        #_[C#] Example 4: Create ARGUMENTS function_
 
-	
-
-
+#### Example 4: Create ARGUMENTS function
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.cs region=radspreadprocessing-features-formulas-custom-functions_3}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_3}} 
@@ -383,18 +341,12 @@ __Example 4__ shows how to create the 'ARGUMENTS' function.
 
 {{endregion}} 
 
-
-
-
 The next example is of a custom function named "E" that inherits from the __FunctionBase__ class. The function takes no arguments and it always returns the Napier's constant.
         
 
 __Example 5__ shows how to create the 'E' function.
-        #_[C#] Example 5: Create E function_
 
-	
-
-
+#### Example 5: Create E function
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.cs region=radspreadprocessing-features-formulas-custom-functions_4}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_4}} 
@@ -465,9 +417,6 @@ __Example 5__ shows how to create the 'E' function.
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

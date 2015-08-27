@@ -318,10 +318,12 @@ The rotation angle of the shape can affect the __CellIndexM__ property and the o
 ## Relationship Between the Cell Index of the Shape and Its Rotation Angle
 
 The __CellIndex__ of the shape and the cell index where the top left corner of the shape is visually located do not necessarily coincide when there is rotation applied. Consider the following image which has CellIndex B8.
-        ![spreadprocessing-features-shapes-and-images 001](images/spreadprocessing-features-shapes-and-images001.png)
+
+![spreadprocessing-features-shapes-and-images 001](images/spreadprocessing-features-shapes-and-images001.png)
 
 If we increase the rotation angle of the image, it will be visualized differently.
-        ![spreadprocessing-features-shapes-and-images 002](images/spreadprocessing-features-shapes-and-images002.png)
+
+![spreadprocessing-features-shapes-and-images 002](images/spreadprocessing-features-shapes-and-images002.png)
 
 It appears that the top left cell index is B5, however, the CellIndex property of the image will remain unchanged, B8, as will the offset.
         
@@ -330,10 +332,12 @@ This set up is convenient as it allows for more intuitive rotation of the shapes
         
 
 This is illustrated in the following images:
-        ![spreadprocessing-features-shapes-and-images 003](images/spreadprocessing-features-shapes-and-images003.png)
+
+![spreadprocessing-features-shapes-and-images 003](images/spreadprocessing-features-shapes-and-images003.png)
 
 At this point, the CellIndex property of the shape is D1 and the offset is also recalculated accordingly.
-        ![spreadprocessing-features-shapes-and-images 004](images/spreadprocessing-features-shapes-and-images004.png)
+
+![spreadprocessing-features-shapes-and-images 004](images/spreadprocessing-features-shapes-and-images004.png)
 
 As rotation increases, the CellIndex of the shape will switch between B8 and D1, depending on what is closer to the visual top left corner of the shape. The result will be the following:
         
@@ -349,13 +353,11 @@ As rotation increases, the CellIndex of the shape will switch between B8 and D1,
 * 315° (included) - 360°: __B8__
 
 Another occasion when adjustments to the top left cell index and offset of a shape might be necessary is when the size of a rotated image is changed. Changing the top left position of the image might be necessary if it is desired that the visual top left corner of the shape remains unmoved.
-        
+
 
 Additionally, if the size and the rotation angle of the image will result in a top left position outside of the worksheet, the position needs to be automatically adjusted to fit inside it.
-        
 
 In order to provide more flexibility, the model gives the option to have these changes of the top left position of the shape automatically performed or not. The properties __RotationAngle__, __Width__ and __Height__ do not make any adjustments to the position of the shape. If you would like to enable the adjustments, you can use the following methods:
-        
 
 * void SetWidth(bool respectLockAspectRatio, double width, bool adjustCellIndex = false)
             

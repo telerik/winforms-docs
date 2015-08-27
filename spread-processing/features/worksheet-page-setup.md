@@ -29,50 +29,35 @@ This article aims to present the WorksheetPageSetup API and demonstrate how to u
 Through the Worksheet's __WorksheetPageSetup__ property you may change the following worksheet's page setup properties:
         
 
-* __PaperType__: Specify paper type using the
-              [PaperType](http://www.telerik.com/help/wpf/t_telerik_windows_documents_model_papertypes.html)
-              enumeration.
-            
+* __PaperType__: Specify paper type using the [PaperType](http://www.telerik.com/help/wpf/t_telerik_windows_documents_model_papertypes.html) enumeration.
 
 * __PageOrientation__: Specify whether the page orientation should be Portrait or Landscape.
-            
 
 * __Margins__: Specify the sizes of the page margins.
-            
 
 * __PageOrder__: Specify whether the page order should be "Down, then over" or "Over, then down".
-            
 
 * __CenterHorizontally__: Specify whether the print content should be centered horizontally within the area between the page margins.
-            
 
 * __CenterVertically__: Specify whether the print content should be centered vertically within the area between the page margins.
-            
 
 * __ScaleFactor__: Specify the scale factor to print with value in range from 50% to 400%.
-            
 
 * __PrintOptions__: Specify print options such as whether to print gridlines or row and column headings.
-            
 
 * __PrintArea__: Change the print area in the selected worksheet.
-            
 
 * __PageBreaks__: Change the page breaks collection in the selected worksheet.
-            
 
 __Figures 1 and 2__ show an example of Worksheet's page setup usage. In the example we have spreadsheet data that has bigger width than height. Previewing the print pages with the default settings we can see that it doesn't fit well as the print content is split in 2 pages.
-        
+ 
 >caption Figure 1: Initial Print Preview of Data
 
 ![spreadprocessing-features-worksheetpagesetup 001](images/spreadprocessing-features-worksheetpagesetup001.png)
 
 In order to fit the print content better we use the Worksheet's page setup and change page orientation as well as the scale factor and some additional print settings. __Example 1__ shows the code that needs to be executed.
-        #_[C#] Example 1: Use WorksheetPageSetup_
-
-	
-
-
+       
+#### Example 1: Use WorksheetPageSetup
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.cs region=radspreadprocessing-features-worksheetpagesetup_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.vb region=radspreadprocessing-features-worksheetpagesetup_0}} 
@@ -96,9 +81,6 @@ In order to fit the print content better we use the Worksheet's page setup and c
 ````
 
 {{endregion}} 
-
-
-
 
 As a result we managed to fit the data in to a single page with size A4 as shown in __Figure 2__.
         
@@ -127,11 +109,8 @@ Through WorksheetPageSetup's __PrintArea__ property you can access the print are
             
 
 The example shown in __Figures 3__ demonstrates how to use Worksheet's print area. In the example we have a big table with data and we want to print only two specific ranges. To achieve that the print area is set with these cell ranges in __Example 2__ code snippet.
-        #_[C#] Example 2: Set PrintArea_
-
-	
-
-
+        
+#### Example 2: Set PrintArea
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.cs region=radspreadprocessing-features-worksheetpagesetup_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.vb region=radspreadprocessing-features-worksheetpagesetup_1}} 
@@ -153,8 +132,6 @@ The example shown in __Figures 3__ demonstrates how to use Worksheet's print are
 ````
 
 {{endregion}} 
-
-
 
 >caption Figure 3: Resulting PrintArea Preview
 
@@ -199,11 +176,8 @@ __Figure 4__ shows a preview of large amount of data.
 ![spreadprocessing-features-worksheetpagesetup 004](images/spreadprocessing-features-worksheetpagesetup004.png)
 
 In order to separate semantically-correct the print data onto several pages we are going to place horizontal page breaks at the place where we need the splitting to happen. __Example 3__ shows exactly how this can be achieved:
-        #_[C#] Example 3: Insert PageBreaks_
 
-	
-
-
+#### Example 3: Insert PageBreaks
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.cs region=radspreadprocessing-features-worksheetpagesetup_2}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.vb region=radspreadprocessing-features-worksheetpagesetup_2}} 
@@ -233,9 +207,6 @@ In order to separate semantically-correct the print data onto several pages we a
 ````
 
 {{endregion}} 
-
-
-
 
 As a result from inserting these horizontal page breaks we have eight pages to print. The first one is shown in __Figure 5__.
         

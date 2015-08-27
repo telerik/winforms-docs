@@ -10,8 +10,6 @@ position: 10
 
 # Names (Named Ranges)
 
-
-
 This article introduces the concept of Names (Named Ranges) in the document model and demonstrates how to add, use and remove names. It contains the following sections:
       
 
@@ -54,7 +52,7 @@ There are several syntax rules for name object's __Name__ property:
 * Each name should be unique in its scope. Names are case insensitive, so two name objects with names 'range1' and 'RANGE1' cannot reside within the same scope.
                 
 
-* The first letter of a name can be a letter, an underscore character (_), or a backslash (\).
+* The first letter of a name can be a letter, an underscore character (_), or a backslash (\\).
                 
 
 * The names cannot be cell references such as  A1, D$2.
