@@ -10,16 +10,11 @@ position: 0
 
 # Operator
 
-
-
 This article lists and explains all supported operators.
-      
 
 ## Supported Operators
 
 The document model supports four groups of operators: arithmetic, comparison, text and reference.
-        
-
 
 | Arithmetic Operators |  |
 | ------ | ------ |
@@ -54,9 +49,6 @@ The document model supports four groups of operators: arithmetic, comparison, te
 ## Operator Precedence
 
 If you combine multiple operators in a single formula, the expression is evaluated in order determined by the precedence of the operators. If two operators have equal precedence, they are evaluated from left to right. The following table contains all operators sorted by precedence in descending order:
-        
-
-
 
 |: (Colon) , (Space)|Reference Operators|
 |- (Minus)|Negation (-2)|

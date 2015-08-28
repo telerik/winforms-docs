@@ -67,13 +67,13 @@ In order to describe fully the state of the frozen panes the following need to b
 
 ## Freezing panes
 
-* __FreezePanes methods__Panes can be frozen through the ViewState property of the Worksheet. It is of type WorksheetViewState and exposes the following overloads of the FreezePanes method:
+* __FreezePanes methods__ Panes can be frozen through the ViewState property of the Worksheet. It is of type WorksheetViewState and exposes the following overloads of the FreezePanes method:
 
-* void FreezePanes(int frozenRowsCount, int frozenColumnsCount)
+    - void FreezePanes(int frozenRowsCount, int frozenColumnsCount)
 
-* void FreezePanes(CellIndex fixedPaneTopLeftCellIndex, int frozenRowsCount, int frozenColumnsCount)
+    - void FreezePanes(CellIndex fixedPaneTopLeftCellIndex, int frozenRowsCount, int frozenColumnsCount)
 
-* void FreezePanes(CellIndex fixedPaneTopLeftCellIndex, int frozenRowsCount, int frozenColumnsCount, CellIndex scrollableTopLeftCellIndex)If the top left cell indices of the fixed pane and of the scrollable pane are not specified, it will be assumed that the top left index of the fixed pane is the current top left index of the viewport and that the scrollable pane is not scrolled.The result from the image above can be achieved with the following code:#_[C#]_
+    - void FreezePanes(CellIndex fixedPaneTopLeftCellIndex, int frozenRowsCount, int frozenColumnsCount, CellIndex scrollableTopLeftCellIndex)If the top left cell indices of the fixed pane and of the scrollable pane are not specified, it will be assumed that the top left index of the fixed pane is the current top left index of the viewport and that the scrollable pane is not scrolled.The result from the image above can be achieved with the following code:
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.cs region=FreezingPanes}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.vb region=FreezingPanes}} 
@@ -93,7 +93,7 @@ In order to describe fully the state of the frozen panes the following need to b
 
 {{endregion}} 
 
-* __Horizontal and vertical split__If you would like to create a vertical or horizontal split, all you need to do is  specify either the row count or the column count to be equal to zero.
+* __Horizontal and vertical split__ If you would like to create a vertical or horizontal split, all you need to do is  specify either the row count or the column count to be equal to zero.
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.cs region=HorizontalVerticalSplit}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.vb region=HorizontalVerticalSplit}} 
@@ -114,7 +114,7 @@ In order to describe fully the state of the frozen panes the following need to b
 
 This code will result in the following:![spreadprocessing-features-freeze-panes 004](images/spreadprocessing-features-freeze-panes004.png)Since the two panes present are only vertical scrollable and scrollable the columns A and B will remain unreachable. However, the user will be able to scroll to the first two rows. Even though there are two rows from the start of the document at the time of freezing, the document will not be split horizontally.
 
-* __The Pane class__Another option to freeze the panes in a worksheet is to use the Pane property of type Pane of the WorksheetViewState. The functionality you can achieve is almost identical to the FreezePanes() methods. The Pane class has the following properties:
+* __The Pane class__ Another option to freeze the panes in a worksheet is to use the Pane property of type Pane of the WorksheetViewState. The functionality you can achieve is almost identical to the FreezePanes() methods. The Pane class has the following properties:
 
 * __TopLeftCellIndex__: The top left cell index of the scrollable pane
                 
@@ -151,7 +151,7 @@ This code will result in the following:![spreadprocessing-features-freeze-panes 
 
 ## Unfreezing panes
 
-In order to unfreeze the panes of the worksheet you need to use the same methods as above but specify zero for number of frozen rows and columns.#_[C#]_
+In order to unfreeze the panes of the worksheet you need to use the same methods as above but specify zero for number of frozen rows and columns.
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.cs region=UnfreezingPanes}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.vb region=UnfreezingPanes}} 

@@ -37,7 +37,7 @@ In order to use __PdfFormatProvider__ you need to add references to the assembli
 
 __Example 1__ shows how to use __PdfFormatProvider__ to export a Workbook to a file.
 
-#### Example 1: PdfFormatProvider Export Example_
+#### Example 1: PdfFormatProvider Export Example
 
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingUsingPdfFormatProvider.cs region=radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingUsingPdfFormatProvider.vb region=radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider_0}} 

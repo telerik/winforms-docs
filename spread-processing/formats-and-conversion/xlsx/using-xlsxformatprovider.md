@@ -35,7 +35,7 @@ __Example 1__ shows how to import an xlsx file using a FileStream. The code assu
 
 __Example 2__ demonstrates how to export an existing Workbook to an xlsx file. The snippet creates a new workbook with a single worksheet. Further, the example creates an __XlsxFormatProvider__ and invokes its __Export()__ method:
 
-#### Example 2: Export Xlsx File_
+#### Example 2: Export Xlsx File
 
 
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Xlsx\RadSpreadProcessingUsingXlsxFormatProvider.cs region=radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_1}} 

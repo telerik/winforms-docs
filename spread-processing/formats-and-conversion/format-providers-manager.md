@@ -25,13 +25,9 @@ __RadSpreadprocessing__  contains a __WorkbookFormatProvidersManager__ class tha
 The __WorkbookFormatProvidersManager__ class contains two methods that allow you to register and unregister format providers respectively. The manager has the csv and txt format providers registered by default. The following snippet illustrates how to register the xlsx format provider.
 
 >note Unlike the __CsvFormatProvider__ and __TxtFormatProvider__ classes, using __XlsxFormatProvider__ requires references to the following assemblies:
-
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
 * Telerik.Windows.Zip.dll>
-
 >
-
-
 
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.cs region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.vb region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_0}} 
@@ -78,7 +74,7 @@ You can also unregister format providers using the UnregisterFormatProvider() me
 
 The format providers manager exposes an Import() method that takes one string argument, which specifies the extension of the file to be imported,  and a Stream argument, which provides access to the file. The method tries to find a registered format provider that can handle the extension of the file you would like to import, and if such a provider is registered the file is imported. If the manager does not have an appropriate format registered, an __UnsupportedFileFormatException__ is thrown.
 
-The following example demonstrates how to present the user with an OpenFileDialog and try to import the selected file. Note that you can use the __GetOpenFileDialogFilter__ () method of the __FileDialogHelper__ class to constructs the correct filter for all registered format providers.#_[C#]_
+The following example demonstrates how to present the user with an OpenFileDialog and try to import the selected file. Note that you can use the __GetOpenFileDialogFilter__ () method of the __FileDialogHelper__ class to constructs the correct filter for all registered format providers.
 
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.cs region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_2}} 
 {{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.vb region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_2}} 
@@ -168,4 +164,4 @@ You can achieve the same result through using the __SaveFile__ command. In fact,
 
 ## Retrieve Registered Providers and Supported Extensions
 
-The __WorkbookFormatProvidersManager__ class offers several approaches to retrieve the registered format providers. The class offers the GetProviderByName() static method that searches through the registered providers to find a provider with a specific name. Also, the manager exposes the __GetProvderByExtension__ extension. The class also contains a static method ____xGetSupportedExtensions()__ that returns an IEnumeable of the currently supported file extensions.
+The __WorkbookFormatProvidersManager__ class offers several approaches to retrieve the registered format providers. The class offers the GetProviderByName() static method that searches through the registered providers to find a provider with a specific name. Also, the manager exposes the __GetProvderByExtension__ extension. The class also contains a static method __xGetSupportedExtensions()__ that returns an IEnumeable of the currently supported file extensions.

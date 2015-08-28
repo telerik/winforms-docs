@@ -407,6 +407,18 @@ navigation:
     spread-processing/features:
         title: Features
         position: 8
+    spread-processing/features/fill-data-automatically:
+        title: Fill Data Automatically
+        position: 0
+    spread-processing/features/formulas:
+        title: Formulas
+        position: 1
+    spread-processing/features/protection:
+        title: Protection
+        position: 2
+    spread-processing/features/styling:
+        title: Styling
+        position: 3
     track-and-status-controls:
         title: Track and Status controls
         position: 46

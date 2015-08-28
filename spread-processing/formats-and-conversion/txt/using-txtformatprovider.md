@@ -23,7 +23,7 @@ In order to import and export txt files you need an instance of __TxtFormatProvi
 __Example 1__ shows how to import a txt file using a FileStream. The sample instantiates a __TxtFormatProvider__ and passes a FileStream to its __Import()__ method:
 
 
- #### Example 1: Import TXT File
+#### Example 1: Import TXT File
 
 	
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingUsingTxtFormatProvider.cs region=radspreadprocessing-formats-and-conversion-txt-txtformatprovider_0}} 

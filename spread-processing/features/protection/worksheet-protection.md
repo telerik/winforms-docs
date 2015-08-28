@@ -11,9 +11,7 @@ position: 1
 # Worksheet Protection
 
 
-
 __Worksheet__ protection is designed to restrict the user from modifying the content and structure of the worksheet. When a worksheet is protected the user can edit the contents only of the cells that were explicitly marked as unlocked. Additionally, the model offers protection options that let you choose a set of commands that will be available to the user when protection is enabled.
-      
 
 You can enforce worksheet protection with or without a password and you can always unprotect the workbook as needed. You can also let the user remove the protection by entering the correct password.
       
@@ -24,11 +22,8 @@ The __Worksheet__ class exposes a __Protect()__ method that takes two parameters
         
 
 __Example 1__ sets the __IsLocked__ property of cell A1 to false and protects the worksheet using a password and the default protection options. Since by default all cells are locked, after the sheet is protected, the user will be able to edit the value only in cell A1 as it is explicitly marked as unlocked.
-        #_[C#] Example 1: Protect a Worksheet_
 
-	
-
-
+#### Example 1: Protect a Worksheet
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.cs region=radspreadprocessing-features-protection-worksheet_0}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.vb region=radspreadprocessing-features-protection-worksheet_0}} 
@@ -60,11 +55,8 @@ Use the __Unprotect(string)__ method of the Worksheet class to remove the protec
         
 
 __Example 2__ demonstrates how to unprotect a worksheet:
-        #_[C#] Example 2: Unprotect a Worksheet_
-
-	
-
-
+        
+#### Example 2: Unprotect a Worksheet
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.cs region=radspreadprocessing-features-protection-worksheet_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.vb region=radspreadprocessing-features-protection-worksheet_1}} 
@@ -87,9 +79,6 @@ __Example 2__ demonstrates how to unprotect a worksheet:
 
 {{endregion}} 
 
-
-
-
 ## Protection options
 
 The worksheet protection feature lets specify a set of options that will be available to the user when protection is enforced. For example, you may want to allow the user to insert and delete rows, but restrict the insertion and deletion of columns.
@@ -99,11 +88,8 @@ To achieve that, you need to pass a __WorksheetProtectionOptions__ instance as t
         
 
 __Example 3__ demonstrates how to protect a worksheet using WorksheetProtectionOptions.
-        #_[C#] Example 3: Protect Worksheet with WorksheetProtectionOptions_
 
-	
-
-
+#### Example 3: Protect Worksheet with WorksheetProtectionOptions
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.cs region=radspreadprocessing-features-protection-worksheet_2}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.vb region=radspreadprocessing-features-protection-worksheet_2}} 
@@ -123,9 +109,6 @@ __Example 3__ demonstrates how to protect a worksheet using WorksheetProtectionO
 ````
 
 {{endregion}} 
-
-
-
 
 The __WorksheetProtectionOptions__ class exposes the following options:
         

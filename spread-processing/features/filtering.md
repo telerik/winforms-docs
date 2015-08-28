@@ -224,7 +224,7 @@ Other than the members of the __IFilter__ interface, the __TopFilter__ class exp
 
 __Example 3__ shows how to create a top filter.
 
-#### Example 3: Create TopFilter_
+#### Example 3: Create TopFilter
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.cs region=radspreadprocessing-features-filtering_2}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_2}} 
@@ -251,7 +251,7 @@ Other than the members of the __IFilter__ interface, the __DynamicFilter__ class
 
 __Example 4__ demonstrates how to create a dynamic filter.
 
-#### Example 4: Create DynamicFilter_
+#### Example 4: Create DynamicFilter
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.cs region=radspreadprocessing-features-filtering_3}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFiltering.vb region=radspreadprocessing-features-filtering_3}} 
@@ -330,7 +330,7 @@ This filter will hide all cells whose fill is not solid red.
 
 In order to set a filter on a range, you need to follow the steps below:
 
-1. Set the filter range.
+1\. Set the filter range.
 
 #### Example 7: Set FilterRange
 
@@ -353,7 +353,7 @@ In order to set a filter on a range, you need to follow the steps below:
 
 {{endregion}} 
 
-1. Create a filter.
+2\. Create a filter.
 
 #### Example 8: Create DynamicFilter_
 
@@ -373,7 +373,7 @@ In order to set a filter on a range, you need to follow the steps below:
 The relative index specified in the constructor is 1, which means that the filter will be set on the second column of the range, that is, column C.
             
 
-1. Set the filter on the necessary column.
+3\. Set the filter on the necessary column.
 
 #### Example 9: Set Filter
 

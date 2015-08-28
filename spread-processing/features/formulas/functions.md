@@ -10,22 +10,15 @@ position: 2
 
 # Functions
 
-
-
 The document model provides a number of built-in functions that you can use in formula values.
-      
 
 The model offers functions in the following categories: Date and Time, Financial, Information, Logical, Lookup and Reference, Math and Trigonometry, Statistical, and Text. To use a predefined function in a formula, enter its name followed by opening bracket. Further, if the function has parameters, list the arguments separated by the current culture list separator. Finally, add the closing bracket.
-      
 
 For example, the formula *=SUM(1, A2)* adds one to the value of cell A2. Note that if the function does not have parameters, you still have to place the opening and closing brackets after its name, e.g. *=PI()*. Functions can be used as standalone values, operands and arguments of other functions.
-      
 
 ## Supported Functions
 
 The document model supports the following functions:
-        
-
 
 | Date and Time Functions |  |
 | ------ | ------ |
@@ -40,7 +33,6 @@ The document model supports the following functions:
 |TIMEVALUE|Converts a time in the form of text to a serial number|
 |TODAY|Returns the serial number of today's date|
 |YEAR|Converts a serial number to a year|
-
 
 | Engineering Functions |  |
 | ------ | ------ |
@@ -98,7 +90,6 @@ The document model supports the following functions:
 |OCT2BIN|Converts an octal number to binary|
 |OCT2DEC|Converts an octal number to decimal|
 |OCT2HEX|Converts an octal number to hexadecimal|
-
 
 | Financial Functions |  |
 | ------ | ------ |

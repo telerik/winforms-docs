@@ -12,13 +12,10 @@ position: 0
 
 
 
-A cell style is a predefined set of formatting options, such as cell borders, fonts, font sizes and number formats. 
-        Using cell styles allows you to apply multiple format options in one step and also offers an easy approach to achieve consistency in cell formatting.
-        The document model has a number of built-in cell styles that you can modify or apply directly. Its API allows you to duplicate an existing style or create a new one according to your preferences.
+A cell style is a predefined set of formatting options, such as cell borders, fonts, font sizes and number formats. Using cell styles allows you to apply multiple format options in one step and also offers an easy approach to achieve consistency in cell formatting. The document model has a number of built-in cell styles that you can modify or apply directly. Its API allows you to duplicate an existing style or create a new one according to your preferences.
       
 
->note You can create cell styles that are dependent on the current document theme. Such styles are updated automatically when you change the selected document theme.
-          You can read more about document themes and dependent cell styles in the[Document Themes]({%slug winforms/spread-processing/features/styling/document-themes%})article.
+>note You can create cell styles that are dependent on the current document theme. Such styles are updated automatically when you change the selected document theme. You can read more about document themes and dependent cell styles in the[Document Themes]({%slug winforms/spread-processing/features/styling/document-themes%})article.
 >
 
 
@@ -32,8 +29,7 @@ A cell style is a predefined set of formatting options, such as cell borders, fo
 
 ## Cell Style Properties
 
-A cell style is represented by the __CellStyle__ class. The properties of the class can be categorized in five groups: number, alignment,
-          font, border and fill. Following are all properties distributed in their corresponding groups:
+A cell style is represented by the __CellStyle__ class. The properties of the class can be categorized in five groups: number, alignment, font, border and fill. Following are all properties distributed in their corresponding groups:
         
 
 * Number group
@@ -99,10 +95,8 @@ When you apply a style to a cell with locally set properties, the end result is 
         
 
 __Example 1__ shows what including the __Number__ group looks like.
-        #_[C#] Example 1: Include Number group in CellStyle_
 
-	
-
+#### Example 1: Include Number group in CellStyle
 
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.cs region=radspreadprocessing-features-styling-cell-styles_0}} 
@@ -122,9 +116,6 @@ __Example 1__ shows what including the __Number__ group looks like.
 
 {{endregion}} 
 
-
-
-
 Using the API you can add, modify or remove styles from the __Styles__ collection residing in the worksheet.
         
 
@@ -134,11 +125,8 @@ Creating a new style is pretty straight-forward. All you have to do is use the _
         
 
 __Example 2__ creates a new style and applies it to cell *A1*.
-        #_[C#] Example 2: Create a style_
 
-	
-
-
+#### Example 2: Create a style
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.cs region=radspreadprocessing-features-styling-cell-styles_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.vb region=radspreadprocessing-features-styling-cell-styles_1}} 
@@ -203,20 +191,14 @@ __Example 2__ creates a new style and applies it to cell *A1*.
 
 {{endregion}} 
 
-
-
-
 ## Modify Cell Style
 
 Modifying a style is even easier than creating one. All you need to do is retrieve the style from the __Styles__ collection and set the properties you need.
         
 
 __Example 3__ obtains the Bad style from the styles collection of a workbook and modifies it.
-        #_[C#] Example 3: Modify a style_
 
-	
-
-
+#### Example 3: Modify a style
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.cs region=radspreadprocessing-features-styling-cell-styles_2}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.vb region=radspreadprocessing-features-styling-cell-styles_2}} 
@@ -253,23 +235,11 @@ __Example 3__ obtains the Bad style from the styles collection of a workbook and
 
 {{endregion}} 
 
-
-
-
 ## Remove Cell Style
 
 You can also remove a style from the __Styles__ collection. It is as easy as removing an object from a list, you simply use the __Remove()__ method which returns a Bolean value. When there is such style to be removed the method returns true.
-        
 
-__Example 4__#_[C#] Example 4: Remove a style_
-
-	
-
-#_VB_
-
-	
-
-
+#### Example 4: Remove a style
 
 # See Also
 

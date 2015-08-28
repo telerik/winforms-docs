@@ -24,10 +24,8 @@ To protect a workbook, use the __Protect(string)__ method of the __Workbook__ cl
         
 
 __Example 1__ illustrates how to create a workbook from scratch and protect it using a password:
-        #_[C#] Example 1: Password-protect a Workbook_
-
-	
-
+       
+#### Example 1: Password-protect a Workbook
 
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorkbookProtection.cs region=radspreadprocessing-features-protection-workbook_0}} 
@@ -50,20 +48,14 @@ __Example 1__ illustrates how to create a workbook from scratch and protect it u
 
 {{endregion}} 
 
-
-
-
 ## How to Unprotect a Workbook
 
 Use the __Unprotect(string)__ method of the __Workbook__ class to remove the workbook protection. The method returns a Boolean value that indicates whether the workbook is successfully unprotected.
         
 
 __Example 2__ demonstrates how to unprotect a workbook:
-        #_[C#] Example 2: Unprotect a Workbook_
-
-	
-
-
+      
+#### Example 2: Unprotect a Workbook
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorkbookProtection.cs region=radspreadprocessing-features-protection-workbook_1}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorkbookProtection.vb region=radspreadprocessing-features-protection-workbook_1}} 
@@ -88,9 +80,6 @@ __Example 2__ demonstrates how to unprotect a workbook:
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

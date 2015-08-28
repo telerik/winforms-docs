@@ -37,46 +37,46 @@ The image is a kind of shape which is characterized by having an image source. T
 Shapes have the following properties:
         
 
-* __CellIndex:__The cell index where the top left corner of the shape is located when the shape is not rotated.
+* __CellIndex:__ The cell index where the top left corner of the shape is located when the shape is not rotated.
             
 
-* __OffsetX:__The offset between the left side of the shape and the left side of the cell index.
+* __OffsetX:__ The offset between the left side of the shape and the left side of the cell index.
             
 
-* __OffsetY:__The offset between the top of the shape and the top of the cell index.
+* __OffsetY:__ The offset between the top of the shape and the top of the cell index.
             
 
-* __Width:__The width of the shape.
+* __Width:__ The width of the shape.
             
 
-* __Height:__The height of the shape.
+* __Height:__ The height of the shape.
             
 
-* __RotationAngle:__The angle (in degrees) by which the shape is rotated about its center.
+* __RotationAngle:__ The angle (in degrees) by which the shape is rotated about its center.
             
 
-* __IsHorizontallyFlipped:__Indicates whether the shape has been flipped across the y-axis.
+* __IsHorizontallyFlipped:__ Indicates whether the shape has been flipped across the y-axis.
             
 
-* __IsVerticallyFlipped:__Indicates whether the shape has been flipped across the x-axis.
+* __IsVerticallyFlipped:__ Indicates whether the shape has been flipped across the x-axis.
             
 
-* __Name:__The name of the shape.
+* __Name:__ The name of the shape.
             
 
 * __LockAspectRatio__: Determines whether the aspect ratio between the width and the height of the image will be preserved.
             
 
-* __Id:__A unique number assigned to the image after it has been added to a worksheet.
+* __Id:__ A unique number assigned to the image after it has been added to a worksheet.
             
 
-* __Worksheet:__The worksheet in which the shape is or will be inserted.
+* __Worksheet:__ The worksheet in which the shape is or will be inserted.
             
 
 Images have one additional property:
         
 
-* __ImageSource:__Represents the source of the image.
+* __ImageSource:__ Represents the source of the image.
             
 
 ## Creating and Inserting an Image
@@ -197,7 +197,7 @@ __Example 4__ demonstrates how you can remove the image added in __Example 3__.
 After the initial values of the properties of the shapes have been assigned, they can always be changed in order to reposition, resize and rotate the shape. You can change the following characteristics of the shapes:
         
 
-1. Repositioning the shape
+1\. Repositioning the shape
 
 #### Example 5: Move image
 
@@ -220,10 +220,7 @@ After the initial values of the properties of the shapes have been assigned, the
 
 {{endregion}} 
 
-
-
-
-1. Changing the shape's width and height
+2\. Changing the shape's width and height
 
 #### Example 6: Change width and height
 
@@ -274,7 +271,7 @@ The Width and Height properties do not take the LockAspectRatio property into ac
 
 These two methods will be further explained in the next section.
 
-1. Rotating the shape
+3\. Rotating the shape
 
 #### Example 7: Rotate
 
@@ -297,7 +294,8 @@ These two methods will be further explained in the next section.
 The rotation angle of the shape can affect the __CellIndexM__ property and the offset. The relationship between these properties is described in more detail in the next section of this article.
             
 
-1. Flipping the shape
+4\. Flipping the shape
+
 #### Example 8: Flip
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.cs region=radspreadprocessing-features-shapes-and-images_07}} 
