@@ -10,15 +10,9 @@ position: 7
 
 # BasePrimitive
 
-
-
 ## 
 
-BasePrimitive is a [VisualElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/visualelement%}) descendant that Implements the IPrimitive interface. IPrimitive adds a single boolean property ShouldPaint and a PaintPrimitive() method that draws a primitive to the screen. Descendants of BasePrimitive override the PaintPrimitive() method to represent some atomic visual component like text, fill, checkbox, arrows, etc. The following code is an example PaintPrimitive() method for the TextPrimitive class:#_[C#]_
-
-	
-
-
+BasePrimitive is a [VisualElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/visualelement%}) descendant that Implements the IPrimitive interface. IPrimitive adds a single boolean property ShouldPaint and a PaintPrimitive() method that draws a primitive to the screen. Descendants of BasePrimitive override the PaintPrimitive() method to represent some atomic visual component like text, fill, checkbox, arrows, etc. The following code is an example PaintPrimitive() method for the TextPrimitive class:
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\BasePrimitiveForm.cs region=Paint}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\BasePrimitiveForm.vb region=Paint}} 
@@ -44,6 +38,3 @@ BasePrimitive is a [VisualElement]({%slug winforms/telerik-presentation-framewor
 ````
 
 {{endregion}} 
-
-
-

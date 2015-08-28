@@ -10,8 +10,6 @@ position: 16
 
 # Painting Logic
 
-
-
 Painting is initiated by [RadControl]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcontrol%}). When the __OnPaint__ event inherited from __ScrollableWindow__ fires, the __RootElement Paint()__ method is called, followed by the inherited __OnPaint()__ method.
 
 RadElement Paint() performs the following:

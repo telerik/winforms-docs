@@ -10,13 +10,7 @@ position: 51
 
 # Section 508 Compliance
 
-
-
-
->caption 
-          Summary Table: Voluntary Product Accessibility Template
-           
-        
+>caption  Summary Table: Voluntary Product Accessibility Template
 
 | Criteria | Result |
 | ------ | ------ |
@@ -30,9 +24,6 @@ position: 51
 |Section 1194.41 Information, Documentation and Support|Supported. Check the detailed description.|
 
 ##  Section 1194.21 Software Applications and Operating Systems Accessibility
-
-
->caption  
 
 | Criteria | Overall Result | Additional Comments |
 | ------ | ------ | ------ |
@@ -49,12 +40,7 @@ position: 51
 |(k) Software shall not use flashing or blinking text, objects, or other elements having a flash or blink frequency greater than 2 Hz and lower than 55 Hz.|Fully Supported: The controls from UI for WinForms provide functionality that conforms to these criteria.|The controls from UI for WinForms does not use flashing or blinking with the specified frequency range.|
 |(l) When electronic forms are used, the form shall allow people using Assistive Technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues.|Fully Supported: The controls from UI for WinForms provide functionality that conforms to these criteria.||
 
-
-
 ## Section 1194.31 Functional Performance Criteria
-
-
->caption  
 
 | Criteria | Overall Result | Additional Comments |
 | ------ | ------ | ------ |
@@ -66,9 +52,6 @@ position: 51
 |(f) At least one mode of operation and information retrieval that does not require fine motor control or simultaneous actions and that is operable with limited reach and strength shall be provided.|Partially Supported. The text representation of a user element can be obtained via the MSAA support of UI for WinForms.|More info on which controls support UI automation you can find[here]({%slug winforms/telerik-presentation-framework/microsoft-active-accessibility-support%}).|
 
 ## Section 1194.41 Information, Documentation and Support
-
-
->caption  
 
 | Criteria | Overall Result |
 | ------ | ------ |

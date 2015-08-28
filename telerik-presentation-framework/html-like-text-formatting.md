@@ -10,34 +10,18 @@ position: 9
 
 # HTML-like Text Formatting
 
-
-
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Enhanced HTML-like Markup Support](http://tv.telerik.com/winforms/utility/enhanced-html-like-markup-support)This video goes over the new text rendering tags provided with the Q3 2009 release. It also shows the RadMarkupEditor and gives an
-              example of how to use it from within your own applications. (Runtime: 04:11)|
->caption 
-
-![tpf-html-like-text-formatting 001](images/tpf-html-like-text-formatting001.png)|
+|[Enhanced HTML-like Markup Support](http://tv.telerik.com/winforms/utility/enhanced-html-like-markup-support)This video goes over the new text rendering tags provided with the Q3 2009 release. It also shows the RadMarkupEditor and gives an example of how to use it from within your own applications. (Runtime: 04:11)|![tpf-html-like-text-formatting 001](images/tpf-html-like-text-formatting001.png)|
 
 ## Introduction
 
-
-
-Telerik UI for WinForms provide an advance text styling mechanism which can be applied to all Telerik controls for WinForms and their elements,
-          because it enhances one of the smallest element in Telerik Presentation Framework -- the text primitive. The new rich text formatting mechanism uses
-          plain HTML tags to display formatted text such as font style, font color, font size, etc.
+Telerik UI for WinForms provide an advance text styling mechanism which can be applied to all Telerik controls for WinForms and their elements, because it enhances one of the smallest element in Telerik Presentation Framework -- the text primitive. The new rich text formatting mechanism uses plain HTML tags to display formatted text such as font style, font color, font size, etc.
         
 
-Your text must start with the __<html>__ tag so that Html-like formatting is activated. The list of supported markup
-          tags is given below:
-        
+Your text must start with the __<html>__ tag so that Html-like formatting is activated. The list of supported markup tags is given below:
 
 ## Supported Tags 
-
-
-
 
 | Tag | End Tag | Description |
 | ------ | ------ | ------ |
@@ -58,10 +42,6 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 | __<a>__ | __</a>__ |Link|
 | __<img>__ |N/A|Image|
 
-
-
-
-
 * __Bold, italic, and underline__In the example below the first word is italic and the second one is both bold and italic. The third and the forth words are underlined.
 
 ````xml
@@ -69,8 +49,6 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 	    <b>some <i> text </i></b><u> some text </u>
 	  </html>
 ````
-
-
 
 * __Paragraphs__
 
@@ -82,9 +60,7 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 ````
 
 
-
 * __Font color__Font color using color name e.g. *red* or using hex color e.g. *0000FF*.
-            
 
 ````xml
 	  <html>
@@ -99,7 +75,6 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
               absolute valid values are: xx-small, x-small, small, medium, large, x-large, and xx-large. The default value is *medium*.
               Font size can also be set in pt(s). The default font size in Windows Forms on most computers is *8.25pt* i.e. the font
               size returned by *SystemFonts.DefaultFont* property.
-            
 
 ````xml
 	  <html>
@@ -118,14 +93,11 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 ````
 
 
-
 * __Font family__
 
 ````xml
 	<html><span style="font-family:georgia">Font Family</span></html>
 ````
-
-
 
 * __Striked text__
 
@@ -134,14 +106,11 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 ````
 
 
-
 * __Links__
 
 ````xml
 	<html><a href="<externalLink><linkText>www.telerik.com</linkText><linkUri>http://www.telerik.com</linkUri></externalLink>"> Telerik Corporation</a></html>
 ````
-
-
 
 * __Images__
 
@@ -150,15 +119,12 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 ````
 
 The image path can be a resource or file on the disk.To specify a resource, you can use the __res__ keyword:
-            
 
 ````xml
 	<img src="res:Telerik.Examples.WinControls.SomeImage.jpg">
 ````
 
-To specify a file on the disk you have to specify the disk path e.g. src="C:\some path\image.png" or use the ~ to specify the current directory
-              e.g. src= "~\some path\image.gif".
-            All image types supported by .net framework class *Image* are supported as well by the img tag.
+To specify a file on the disk you have to specify the disk path e.g. src="C:\some path\image.png" or use the ~ to specify the current directory e.g. src= "~\some path\image.gif". All image types supported by .net framework class *Image* are supported as well by the img tag.
             
 
 ## RadMarkupEditor specifics
@@ -166,21 +132,12 @@ To specify a file on the disk you have to specify the disk path e.g. src="C:\som
 You can also use some tags that are not present in Html but are currently supported by the TextPrimitive.
         
 
->note please refer to the[RadMarkupDialog]({%slug winforms/telerik-presentation-framework/radmarkupdialog%})article
-            about the list of supported tags; *font* , *color* and *size* tags are
-            not supported by RadMarkupDialog, but can be rendered by TextPrimitive.
+>note please refer to the[RadMarkupDialog]({%slug winforms/telerik-presentation-framework/radmarkupdialog%})article about the list of supported tags; *font* , *color* and *size* tags are not supported by RadMarkupDialog, but can be rendered by TextPrimitive.
 >
 
+You can use <size=[+|-]value> to set font size use, and __<br>__ to create new line feed. To set bold, underline, and italic text use the corresponding opening and closing tags. Font family is set through __<font=Family>__. 
 
-You can use <size=[+|-]value> to set font size use, and __<br>__ to create new line feed. To set bold, underline,
-          and italic text use the corresponding opening and closing tags. Font family is set through __<font=Family>__. 
-        
-
-The following code snippet will produce the result shown in the screen-shot below:#_[C#]_
-
-	
-
-
+The following code snippet will produce the result shown in the screen-shot below:
 
 {{source=..\SamplesCS\TPF\HTMLFormatting.cs region=labelFormatting}} 
 {{source=..\SamplesVB\TPF\HTMLFormatting.vb region=labelFormatting}} 
@@ -196,16 +153,9 @@ The following code snippet will produce the result shown in the screen-shot belo
 
 {{endregion}} 
 
-
 ![tpf-html-like-text-formatting 002](images/tpf-html-like-text-formatting002.png)
 
-By using the HTML-like text formatting functionality, the __RadLabel__ can display several hyperlinks. Here is a sample
-          code snippet:
-        #_[C#]_
-
-	
-
-
+By using the HTML-like text formatting functionality, the __RadLabel__ can display several hyperlinks. Here is a sample code snippet:
 
 {{source=..\SamplesCS\TPF\HTMLFormatting.cs region=Hyperlinks}} 
 {{source=..\SamplesVB\TPF\HTMLFormatting.vb region=Hyperlinks}} 
@@ -225,18 +175,9 @@ By using the HTML-like text formatting functionality, the __RadLabel__ can displ
 
 {{endregion}} 
 
-
 ![tpf-html-like-text-formatting 003](images/tpf-html-like-text-formatting003.png)
 
-It is possible to detect which link among several ones is clicked within the __RadLabel__.
-          For this purpose we will use the TextPrimitiveHtmlImpl.TextBlock.__Lines__ collection,
-          which represents the available text lines in the __RadLabel__. Each __TextLine__ consists of
-          __FormattedText__  parts. This __FormattedText__ containing the mouse is associated with the clicked hyperlink:
-        #_[C#]_
-
-	
-
-
+It is possible to detect which link among several ones is clicked within the __RadLabel__. For this purpose we will use the TextPrimitiveHtmlImpl.TextBlock.__Lines__ collection, which represents the available text lines in the __RadLabel__. Each __TextLine__ consists of __FormattedText__  parts. This __FormattedText__ containing the mouse is associated with the clicked hyperlink:
 
 {{source=..\SamplesCS\TPF\HTMLFormatting.cs region=MouseDown}} 
 {{source=..\SamplesVB\TPF\HTMLFormatting.vb region=MouseDown}} 
@@ -308,7 +249,4 @@ It is possible to detect which link among several ones is clicked within the __R
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

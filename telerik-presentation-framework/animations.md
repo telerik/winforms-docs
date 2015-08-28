@@ -12,9 +12,7 @@ position: 14
 
 
 
-Using the [Telerik Presentation Framework](87f43b63-7fff-4b3c-b7c7-4830f1e63903) you 
-        can animate almost any element property. To do this you should use the __AnimatedPropertySetting__ class.
-        The class constructors takes five arguments:
+Using the [Telerik Presentation Framework](87f43b63-7fff-4b3c-b7c7-4830f1e63903) you can animate almost any element property. To do this you should use the __AnimatedPropertySetting__ class. The class constructors takes five arguments:
         
 
 * The first argument of the AnimatedPropertySetting is the __RadProperty__ to animate
@@ -29,13 +27,10 @@ Using the [Telerik Presentation Framework](87f43b63-7fff-4b3c-b7c7-4830f1e63903)
 
 ## Animate opacity
 
-The following example animates the __Opacity__ property of the RadButton's fill primitive,
-          changing it from 1 to 0 (full transparent) and vice versa:
-        ![tpf-animations 001](images/tpf-animations001.gif)#_[C#] Animate button's Opacity property_
+The following example animates the __Opacity__ property of the RadButton's fill primitive, changing it from 1 to 0 (full transparent) and vice versa:
+![tpf-animations 001](images/tpf-animations001.gif)
 
-	
-
-
+#### Animate button's Opacity property
 
 {{source=..\SamplesCS\TPF\Animations.cs region=AnimateOpacity}} 
 {{source=..\SamplesVB\TPF\Animations.vb region=AnimateOpacity}} 
@@ -71,17 +66,11 @@ The following example animates the __Opacity__ property of the RadButton's fill 
 
 {{endregion}} 
 
-
-
-
 ## Animate margin
 
 Here is how to animate the __Margin__ property of the RadButton's fill primitive:
-        ![tpf-animations 002](images/tpf-animations002.gif)#_[C#] Animate button's Margin property_
 
-	
-
-
+![tpf-animations 002](images/tpf-animations002.gif)#_[C#] Animate button's Margin property
 
 {{source=..\SamplesCS\TPF\Animations.cs region=AnimateMargin}} 
 {{source=..\SamplesVB\TPF\Animations.vb region=AnimateMargin}} 
@@ -113,17 +102,13 @@ Here is how to animate the __Margin__ property of the RadButton's fill primitive
 
 {{endregion}} 
 
-
-
-
 ## Animate bounds
 
 You can also animate the __Bounds__ property of a control. Here is how to create a fly-out animation with RadPanel:
-        ![tpf-animations 003](images/tpf-animations003.gif)#_[C#] Animate button's Bounds property_
 
-	
+![tpf-animations 003](images/tpf-animations003.gif)
 
-
+#### Animate button's Bounds property
 
 {{source=..\SamplesCS\TPF\Animations.cs region=AnimateBounds}} 
 {{source=..\SamplesVB\TPF\Animations.vb region=AnimateBounds}} 
@@ -172,8 +157,4 @@ You can also animate the __Bounds__ property of a control. Here is how to create
     End Sub
     '
 ````
-
-{{endregion}} 
-
-
-
+{{endregion}}

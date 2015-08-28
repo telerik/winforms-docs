@@ -12,25 +12,13 @@ position: 12
 
 
 
-The Telerik UI for WinForms suite provide full multi-touch support.
-        All controls in the suite are exposing several events which grant the developer
-        the ability to easily handle gestures on a touch input device.
-        This functionality is currently supported under Windows7 and Windows8 Developer Preview
-        Some of the controls in our suite have built-in functionality that responds to touch gestures.
-        For example, you can use the Pan gesture to scroll through the RadGridView’s rows,
-        group by a column or change the order of its columns.
-        Similar functionality is available out-of-the-box for RadTreeView,
-        RadListView, RadPropertyGrid, RadListControl, RadCarousel and RadCommandBar. Additionally,
-        the developer can use the gesture events to implement his custom logic.
+The Telerik UI for WinForms suite provide full multi-touch support. All controls in the suite are exposing several events which grant the developer the ability to easily handle gestures on a touch input device. This functionality is currently supported under Windows7 and Windows8 Developer Preview Some of the controls in our suite have built-in functionality that responds to touch gestures. For example, you can use the Pan gesture to scroll through the RadGridView’s rows, group by a column or change the order of its columns. Similar functionality is available out-of-the-box for RadTreeView, RadListView, RadPropertyGrid, RadListControl, RadCarousel and RadCommandBar. Additionally, the developer can use the gesture events to implement his custom logic.
       
 
 ## Touch Events in RadControls
 
-To enable or disable a gesture,
-          use the __EnableGesture__ and __DisableGesture__ functions
-          passing a member of the GestureType enumerator:
+To enable or disable a gesture,use the __EnableGesture__ and __DisableGesture__ functions passing a member of the GestureType enumerator:
         
-
 * All
 
 * Pan
@@ -41,11 +29,9 @@ To enable or disable a gesture,
 
 * TwoFingerTap
 
-* PressAndTap#_[C#] Cascade layout example_
+* PressAndTap
 
-	
-
-
+#### Cascade layout example
 
 {{source=..\SamplesCS\TPF\Touch\TouchGesturesForm.cs region=callingMethods}} 
 {{source=..\SamplesVB\TPF\Touch\TouchGesturesForm.vb region=callingMethods}} 
@@ -62,56 +48,43 @@ To enable or disable a gesture,
 
 {{endregion}} 
 
-
-
-
 >note An explanation of the different gestures can be found in[this MSDN article](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx).
 >
 
 
 You can use the following events to handle gesture events:
 
-* __PanGesture__:
-              Fires when the user slides with his finger across the area of the control.
+* __PanGesture__: Fires when the user slides with his finger across the area of the control.
             
 
-* __ZoomGesture__:
-              Fires when the user slides with his two fingers in opposite directions.
+* __ZoomGesture__: Fires when the user slides with his two fingers in opposite directions.
             
 
-* __RotateGesture__:
-              Fires when the user slides with his two fingers in a circular direction.
+* __RotateGesture__: Fires when the user slides with his two fingers in a circular direction.
             
 
-* __TwoFingerTapGesture__:
-              Fires when the user taps the screen with his two fingers at the same time.
+* __TwoFingerTapGesture__: Fires when the user taps the screen with his two fingers at the same time.
             
 
-* __PressAndTapGesture__:
-              Fires when the user has pressed the screen with a finger and taps with a second finger.
+* __PressAndTapGesture__: Fires when the user has pressed the screen with a finger and taps with a second finger.
             
 
 All these events provide event arguments that inherit from the GestureEventArgs type, hence the share the following properties:
         
 
-* __IsBegin__:
-              Indicates that the gesture is starting.
+* __IsBegin__: Indicates that the gesture is starting.
             
 
-* __IsEnd__:
-              Indicates that the gesture is ending.
+* __IsEnd__: Indicates that the gesture is ending.
             
 
-* __IsInertia__:
-              Indicates that the event is caused by inertia.
+* __IsInertia__: Indicates that the event is caused by inertia.
             
 
-* __Location__:
-              Indicates the location in control coordinates at which the gesture has occurred.
+* __Location__:  Indicates the location in control coordinates at which the gesture has occurred.
             
 
-* __Handled__:
-              Indicates if the event has already been handled by some of the elements in the control.
+* __Handled__: Indicates if the event has already been handled by some of the elements in the control.
             
 
 * Item 2
@@ -121,20 +94,12 @@ The inheritors of this type also provide gesture-specific arguments like Offset,
 
 ## Touch Events in RadItems
 
-All the above mentioned events are also valid for all RadItems.
-          This means you can use them
-          for different items in RadRibbonBar, RadCommandBar, RadMenu, etc.
+All the above mentioned events are also valid for all RadItems. This means you can use them for different items in RadRibbonBar, RadCommandBar, RadMenu, etc.
         
 
 ## Example of Using Touch Events
 
-The following example will demonstrate how we can use this functionality to drag,
-          rotate and resize RadButtonElement within a simple panel:
-        #_[C#]_
-
-	
-
-
+The following example will demonstrate how we can use this functionality to drag, rotate and resize RadButtonElement within a simple panel:
 
 {{source=..\SamplesCS\TPF\Touch\CustomPanel.cs region=touchPanel}} 
 {{source=..\SamplesVB\TPF\Touch\CustomPanel.vb region=touchPanel}} 
@@ -237,9 +202,6 @@ End Class
 ````
 
 {{endregion}} 
-
-
-
 
 Thanks to the code above, the end-user will be able to do the following operations with his/her fingers:![tpf-touch-support 001](images/tpf-touch-support001.png)![tpf-touch-support 002](images/tpf-touch-support002.png)![tpf-touch-support 003](images/tpf-touch-support003.png)
 
