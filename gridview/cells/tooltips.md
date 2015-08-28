@@ -12,19 +12,12 @@ position: 5
 
 
 
-There are two ways to assign tooltips to cells in RadGridView, namely setting the __ToolTipText__ property of a
-        *CellElement* in the __CellFormatting__ event handler, or as in most of the RadControls by using the
-        __ToolTipTextNeeded__ event of RadGridView.
+There are two ways to assign tooltips to cells in RadGridView, namely setting the __ToolTipText__ property of a *CellElement* in the __CellFormatting__ event handler, or as in most of the RadControls by using the __ToolTipTextNeeded__ event of RadGridView.
       
 
 ## Setting tooltips in the CellFormatting event handler
 
 The code snippet below demonstrates how you can assign a tooltip to a data cell in RadGridView.
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\Cells\ToolTips1.cs region=CellFormatting}} 
 {{source=..\SamplesVB\GridView\Cells\ToolTips1.vb region=CellFormatting}} 
@@ -54,11 +47,7 @@ The code snippet below demonstrates how you can assign a tooltip to a data cell 
 
 ## Setting tooltips in the ToolTipTextNeeded event
 
-The code snippet below demonstrates how you can use ToolTipTextNeeded event handler to set ToolTipText for the given CellElement.#_[C#] _
-
-	
-
-
+The code snippet below demonstrates how you can use ToolTipTextNeeded event handler to set ToolTipText for the given CellElement.
 
 {{source=..\SamplesCS\GridView\Cells\ToolTips1.cs region=ToolTipTextNeeded}} 
 {{source=..\SamplesVB\GridView\Cells\ToolTips1.vb region=ToolTipTextNeeded}} 

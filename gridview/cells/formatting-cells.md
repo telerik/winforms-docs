@@ -19,31 +19,15 @@ position: 4
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Formatting Data In RadGridView for WinForms](http://tv.telerik.com/radtips/radgrid/formatting-data-in-radgridview)In this RadTip, John Kellar demonstrates how you can apply custom formatting to data within a RadGridView for Windows Forms. (Runtime: 09:14)|
->caption 
+|[Formatting Data In RadGridView for WinForms](http://tv.telerik.com/radtips/radgrid/formatting-data-in-radgridview)<br>In this RadTip, John Kellar demonstrates how you can apply custom formatting to data within a RadGridView for Windows Forms. (Runtime: 09:14)|![gridview-cells-formatting-cells 006](images/gridview-cells-formatting-cells006.png)|
 
-![gridview-cells-formatting-cells 006](images/gridview-cells-formatting-cells006.png)|
+__CellFormatting__ event is used to add formatting to grid *data* cells including the *new row cells*. For example, the code sample below changes the ForeColor in all cells in the "KBytes" column to red:
 
-__CellFormatting__ event is used to add formatting to grid *data* cells including the
-          *new row cells*. For example, the code sample below changes the ForeColor in all cells in the "KBytes" column
-          to red:
-        
-
->note Due to the UI virtualization in RadGridView, cell elements are created only for currently visible cells and are being reused
-            during operations like scrolling, filtering, grouping and so on.
->In order to prevent applying the formatting to other columns' cell elements (because of the cell reuse) all customization should be
-            reset for the rest of the cell elements
->Please refer to the Fundamentals[topic]({%slug winforms/gridview/fundamentals/logical-vs.-visual-grid-structure%})for more information.
->
+>note Due to the UI virtualization in RadGridView, cell elements are created only for currently visible cells and are being reused during operations like scrolling, filtering, grouping and so on.
+>In order to prevent applying the formatting to other columns' cell elements (because of the cell reuse) all customization should be reset for the rest of the cell elements. Please refer to the Fundamentals [topic]({%slug winforms/gridview/fundamentals/logical-vs.-visual-grid-structure%}) for more information.
 
 
-## 
-        Example: Changing the data cells font color
-      #_[C#] Formatting cells fore color_
-
-	
-
-
+## Example: Changing the data cells font color
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=cellFormattingExample1}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=cellFormattingExample1}} 
@@ -77,20 +61,11 @@ __CellFormatting__ event is used to add formatting to grid *data* cells includin
 
 ![gridview-cells-formatting-cells 001](images/gridview-cells-formatting-cells001.png)
 
-## 
-        Example: Cells background formatting
+## Example: Cells background formatting
       
 
-This is an advanced example of using *CellFormatting* event to highlight certain cells in red color based on
-          the values of cells in the same row but *different* column. In the example, the values in the first column are
-          highlighted if the value in the check box column returns true:
-        
-
-![gridview-cells-formatting-cells 002](images/gridview-cells-formatting-cells002.png)#_[C#] Formatting cells_
-
-	
-
-
+This is an advanced example of using *CellFormatting* event to highlight certain cells in red color based on the values of cells in the same row but *different* column. In the example, the values in the first column are  highlighted if the value in the check box column returns true:
+![gridview-cells-formatting-cells 002](images/gridview-cells-formatting-cells002.png)#_[C#]
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=cellFormattingExample2}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=cellFormattingExample2}} 
@@ -160,19 +135,13 @@ This is an advanced example of using *CellFormatting* event to highlight certain
 
 ## ViewCellFormatting - formatting non-data cells
 
-While CellFormatting event is fired only for data cells, ViewCellFormatting is fired for all RadGridView cells.
-          So if you want to format the grouping row or the header cells, you should use the ViewCellFormatting event.
+While CellFormatting event is fired only for data cells, ViewCellFormatting is fired for all RadGridView cells. So if you want to format the grouping row or the header cells, you should use the ViewCellFormatting event.
         
 
-## 
-        Example: Change group and header cells font and removing the default filter operator text
+## Example: Change group and header cells font and removing the default filter operator text
       
 
-For example, to change the font of the header cells and the group cells use the following code:#_[C#] Formatting non-data rows_
-
-	
-
-
+For example, to change the font of the header cells and the group cells use the following code:
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=viewCellFormatting1}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=viewCellFormatting1}} 
@@ -226,15 +195,9 @@ For example, to change the font of the header cells and the group cells use th
 
 ![gridview-cells-formatting-cells 003](images/gridview-cells-formatting-cells003.png)
 
-## 
-        Example 2: Change TextAlignment and BackColor of group rows
-      
+## Example 2: Change TextAlignment and BackColor of group rows
 
-To modify the text alignment and the back color in the group rows use the following code snippet:#_[C#] Formatting non-data rows_
-
-	
-
-
+To modify the text alignment and the back color in the group rows use the following code snippet:
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=viewCellFormatting2}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=viewCellFormatting2}} 
@@ -280,33 +243,16 @@ To modify the text alignment and the back color in the group rows use the follo
 
 ![gridview-cells-formatting-cells 004](images/gridview-cells-formatting-cells004.png)
 
->note In certain cases, where a custom layout is needed (for example, when you want to place RadCheckBoxElement in a specific place in a header cell) 
-            you should create your own type of cell instead of using ViewCellFormatting. Such an example is demonstrated in[this knowledge base article](http://www.telerik.com/support/kb/winforms/gridview/add-check-uncheck-all-check-box-in-the-header-cell.aspx).
+>note In certain cases, where a custom layout is needed (for example, when you want to place RadCheckBoxElement in a specific place in a header cell) you should create your own type of cell instead of using ViewCellFormatting. Such an example is demonstrated in [this knowledge base article](http://www.telerik.com/support/kb/winforms/gridview/add-check-uncheck-all-check-box-in-the-header-cell.aspx).
 >
 
 
-## 
-        Example 3: Change the appearance of the buttons in GridViewCommandColumn
+## Example 3: Change the appearance of the buttons in GridViewCommandColumn
       
 
-Sometimes, you may need to change the appearance of the buttons that appear in the cells of
-          the GridViewCommandColumn. These buttons are children of the RadGridView cells, so in order to access them,
-          you should take them from the Children collection of the visual cells. We will demonstrate how this should be
-          done by analyzing the following case.
-        
+Sometimes, you may need to change the appearance of the buttons that appear in the cells of the GridViewCommandColumn. These buttons are children of the RadGridView cells, so in order to access them, you should take them from the Children collection of the visual cells. We will demonstrate how this should be done by analyzing the following case.
 
-Let's say that you have a number of employees. Only one employee is Vice President of the company,
-          while the others are managers and sales representatives. In RadGridView you have a
-          GridViewCommandColumn, the buttons of which allow
-          the end-users to edit the details of all records, except the one that belongs to the Vice President.
-          So, depending on the value of the Title cell, you should set the __Enabled__ property
-          of the respective RadButtonElement to *true* or *false*.
-          Here is how we can achieve that:
-        #_[C#]_
-
-	
-
-
+Let's say that you have a number of employees. Only one employee is Vice President of the company, while the others are managers and sales representatives. In RadGridView you have a GridViewCommandColumn, the buttons of which allow the end-users to edit the details of all records, except the one that belongs to the Vice President. So, depending on the value of the Title cell, you should set the __Enabled__ property of the respective RadButtonElement to *true* or *false*. Here is how we can achieve that:
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCellsButtons.cs region=buttonCell}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCellsButtons.vb region=buttonCell}} 
@@ -358,29 +304,15 @@ Let's say that you have a number of employees. Only one employee is Vice Preside
 
 
 
-And this is how the result looks:
-        ![gridview-cells-formatting-cells 009](images/gridview-cells-formatting-cells009.png)
+And this is how the result looks:<br>![gridview-cells-formatting-cells 009](images/gridview-cells-formatting-cells009.png)
 
 ## Example 4: Hiding child tabs when no data is available
 
-When __RadGridView__ displays hierarchical data, you expand/collapse child levels in the hierarchy with the help of
-          __GridGroupExpanderCellElement__ containing an expand/collapse image. If you have more than one template at a specific child level,
-          these templates are displayed by using the __GridDetailViewCellElement__. Consider the __RadGridView__ has two
-          child templates under the master template. If you expand the parent row, two tabs will be displayed for the respective child level.
-          However, some of the child tabs may not contain any data. This example demonstrates a sample approach how to hide the child tabs if no data is available.
-          If none of the child tabs for a specific parent row contains any data, the expander image will be hidden.
-        
+When __RadGridView__ displays hierarchical data, you expand/collapse child levels in the hierarchy with the help of __GridGroupExpanderCellElement__ containing an expand/collapse image. If you have more than one template at a specific child level, these templates are displayed by using the __GridDetailViewCellElement__. Consider the __RadGridView__ has two child templates under the master template. If you expand the parent row, two tabs will be displayed for the respective child level. However, some of the child tabs may not contain any data. This example demonstrates a sample approach how to hide the child tabs if no data is available. If none of the child tabs for a specific parent row contains any data, the expander image will be hidden.
 
->note In order for a GridDetailViewCellElement to display a page view instead of a single table element, either the template of the row holding
-            it has to have more than one child template, or its __ShowChildViewCaptions__ should be *true* .
-            Once there is a page view, the tabs in it will be visible at all times, except when some of the templates has no rows and __AllowAddNewRow__ for it is *false* – if it does not have any rows and the user cannot add row,
-            it is considered that there is no need from it.
->
-![gridview-cells-formatting-cells 010](images/gridview-cells-formatting-cells010.png)#_[C#]_
+>note In order for a GridDetailViewCellElement to display a page view instead of a single table element, either the template of the row holding it has to have more than one child template, or its __ShowChildViewCaptions__ should be *true* . Once there is a page view, the tabs in it will be visible at all times, except when some of the templates has no rows and __AllowAddNewRow__ for it is *false* – if it does not have any rows and the user cannot add row, it is considered that there is no need from it.
 
-	
-
-
+![gridview-cells-formatting-cells 010](images/gridview-cells-formatting-cells010.png)
 
 {{source=..\SamplesCS\GridView\Cells\HideChildTabs.cs region=HideTabs}} 
 {{source=..\SamplesVB\GridView\Cells\HideChildTabs.vb region=HideTabs}} 
@@ -485,24 +417,13 @@ When __RadGridView__ displays hierarchical data, you expand/collapse child level
 
 
 
-## 
-        Formatting cells on demand
+## Formatting cells on demand
       
 
-Sometimes you may need to format the cells on a specific user action, for example, on a button click.
-          Let's take the following scenario: you have a search box (RadTextBox) above RadGridView and a RadButton.
-          When you click the button, RadGridView should highlight the cells that match the text typed in the RadTextBox.
-          Here is how to do it:
+Sometimes you may need to format the cells on a specific user action, for example, on a button click. Let's take the following scenario: you have a search box (RadTextBox) above RadGridView and a RadButton. When you click the button, RadGridView should highlight the cells that match the text typed in the RadTextBox. Here is how to do it:
         
 
-* First, you should handle the CellFormatting event of RadGridView, setting
-              the back color of those cells that have text that matches the text of RadTextBox
-            #_[C#]_
-
-	
-
-
-
+* First, you should handle the CellFormatting event of RadGridView, setting the back color of those cells that have text that matches the text of RadTextBox
 {{source=..\SamplesCS\GridView\Cells\FormattingCellsOnDemand.cs region=cellFormatting}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCellsOnDemand.vb region=cellFormatting}} 
 
@@ -540,17 +461,7 @@ Sometimes you may need to format the cells on a specific user action, for exampl
 
 {{endregion}} 
 
-
-
-
-* Now comes the tricky part. The user types some text, but then we should somehow
-              notify RadGridView that it needs to refresh itself. This is done by calling the Update
-              method of the TableElement, passing the *StateChanged* argument as a parameter.
-            #_[C#]_
-
-	
-
-
+* Now comes the tricky part. The user types some text, but then we should somehow notify RadGridView that it needs to refresh itself. This is done by calling the Update method of the TableElement, passing the *StateChanged* argument as a parameter.
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCellsOnDemand.cs region=buttonClick}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCellsOnDemand.vb region=buttonClick}} 
@@ -571,26 +482,17 @@ Sometimes you may need to format the cells on a specific user action, for exampl
 {{endregion}} 
 
 
-
-
-As a result of the Update call, the CellFormatting (and the other formatting events as well) will be fired and you will
-          get the screenshot shown below:
-        ![gridview-cells-formatting-cells 007](images/gridview-cells-formatting-cells007.png)
+As a result of the Update call, the CellFormatting (and the other formatting events as well) will be fired and you will get the screenshot shown below:<br> ![gridview-cells-formatting-cells 007](images/gridview-cells-formatting-cells007.png)
 
 ## Format cell with Style property
 
-The GridViewCellInfo __Style__ property gives direct access to the
-          cell’s visual properties. It makes it possible to set styles to cells in runtime without
-          using events like __CellFormatting__ or the __ConditionalFormattingObject__.
-        
+The GridViewCellInfo __Style__ property gives direct access to the cell’s visual properties. It makes it possible to set styles to cells in runtime without using events like __CellFormatting__ or the __ConditionalFormattingObject__.
 
->note This approach lets you customize visual properties which are defined by the theme.
-            All changes set this way will have a greater priority than the theme.
+>note This approach lets you customize visual properties which are defined by the theme. All changes set this way will have a greater priority than the theme.
 >
 
 
-The first thing to do for using the cell’s __Style__ is to
-          define what custom visual properties will use this cell. You can define that the cell will:
+The first thing to do for using the cell’s __Style__ is to define what custom visual properties will use this cell. You can define that the cell will:
         
 
 * __CustomizeFill__
@@ -608,13 +510,7 @@ Using the __Style__ property allows you to define cell’s style properties:
 
 * __ForeColor__
 
-The example below shows how to customize the __Font__ and
-          __BackColor__ of RadGridView cell.
-        #_[C#] Formatting cells vie Style property_
-
-	
-
-
+The example below shows how to customize the __Font__ and __BackColor__ of RadGridView cell.
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=CellStyleMethod}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=CellStyleMethod}} 
@@ -660,14 +556,7 @@ The example below shows how to customize the __Font__ and
 
 {{endregion}} 
 
-
-
-
-Here is how to call this method of a certain cell:#_[C#] Call StyleCell method_
-
-	
-
-
+Here is how to call this method of a certain cell:
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=CellStyleMethodCall}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=CellStyleMethodCall}} 
