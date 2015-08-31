@@ -21,7 +21,7 @@ To create a vertical Gantt Chart set the __SeriesOrientation__ property to __Ver
 
 ![chart-undestanding-radchart-types-gantt-charts 001](images/chart-undestanding-radchart-types-gantt-charts001.png)
 
-To create a horizontal Gantt Chart set the __SeriesOrientation__ property to __Horizontal__. Set the __RadChart DefaultType__ property or __ChartSeries.Type__ to *Gantt*.
+To create a horizontal Gantt Chart set the __SeriesOrientation__  property to __Horizontal__. Set the __RadChart DefaultType__ property or __ChartSeries.Type__ to *Gantt*.
 >caption 
 
 ![chart-undestanding-radchart-types-gantt-charts 002](images/chart-undestanding-radchart-types-gantt-charts002.png)

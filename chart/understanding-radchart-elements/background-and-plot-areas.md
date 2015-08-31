@@ -2,7 +2,7 @@
 title: Background and Plot Areas
 page_title: Background and Plot Areas | UI for WinForms Documentation
 description: Background and Plot Areas
-slug: winforms/chart-(obsolete)/understanding-radchart-elements/background-and-plot-areas
+slug: winforms/chart/understanding-radchart-elements/background-and-plot-areas
 tags: background,and,plot,areas
 published: True
 position: 1
@@ -14,7 +14,7 @@ position: 1
 
 ## Chart Background
 
-The background of the chart is the outermost rectangle that encloses all other elements of the chart. It stretches for the whole width and length of the output image of the chart. Using the __Appearance______property of the chart you can fully customize the chart background look and feel including: 
+The background of the chart is the outermost rectangle that encloses all other elements of the chart. It stretches for the whole width and length of the output image of the chart. Using the __Appearance__ property of the chart you can fully customize the chart background look and feel including: 
 
 * __Border__
              visibility, color, pen style and width. 
@@ -34,16 +34,16 @@ The plot area is the working rectangular area between X and Y axes where data is
 * __SeriesOrientation__ is an enumeration that orients the entire __PlotArea__ either Vertical or Horizontal. 
 
 
-* __XAxis__, __YAxis__, and __YAxis2__ properties.  These axis properties control the scale and appearance of both axes. See the [Axes]({%slug winforms/chart-(obsolete)/understanding-radchart-elements/axes%}) topic for more information. 
+* __XAxis__, __YAxis__, and __YAxis2__ properties.  These axis properties control the scale and appearance of both axes. See the [Axes]({%slug winforms/chart/understanding-radchart-elements/axes%}) topic for more information. 
 
 
-* [EmptySeriesMessage](CC5AF201-9BF3-4696-BC86-0D46A61F7C0B): The predefined message that displays in the __PlotArea__ when there is no series data defined for the chart. 
+* EmptySeriesMessage: The predefined message that displays in the __PlotArea__ when there is no series data defined for the chart. 
 
 >caption 
 
 ![chart-undestanding-radchart-elements-background-and-plot-areas 001](images/chart-undestanding-radchart-elements-background-and-plot-areas001.png)
 
-Like the __RadChart__ as a whole, __PlotArea______has an __Appearance__ property allowing customization:
+Like the __RadChart__ as a whole, __PlotArea__ has an __Appearance__ property allowing customization:
 
 * __Border__ 
             visibility,color, pen style and width. 
@@ -54,9 +54,9 @@ Like the __RadChart__ as a whole, __PlotArea______has an __Appearance__ property
 * __FillStyle__ controls the fill color and type (solid, hatched, image, gradient). 
 
 
-* The __Dimensions______property provides control of __Width__, __Height__, __Margins__, __Paddings__ and if you want the dimensions to __Autosize____.__
+* The __Dimensions__ property provides control of __Width__, __Height__, __Margins__, __Paddings__ and if you want the dimensions to __Autosize__.
 
-* __SeriesPalette______is a property of the chart that lets you to choose a predefined skin color palette for each series.  This can help provide a distinct look to differentiate each series. 
+* __SeriesPalette__ is a property of the chart that lets you to choose a predefined skin color palette for each series.  This can help provide a distinct look to differentiate each series. 
 
 
-* The __Shadow__ property lets you control shadow __Blur__, shadow __Color__, shadow __Distance______and __Position__ relative to the plot area.
+* The __Shadow__ property lets you control shadow __Blur__, shadow __Color__, shadow __Distance__ and __Position__ relative to the plot area.

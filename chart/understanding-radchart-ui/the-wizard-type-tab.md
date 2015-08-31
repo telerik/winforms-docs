@@ -2,7 +2,7 @@
 title: The Wizard Type Tab
 page_title: The Wizard Type Tab | UI for WinForms Documentation
 description: The Wizard Type Tab
-slug: winforms/chart-(obsolete)/understanding-radchart-ui/the-wizard-type-tab
+slug: winforms/chart/understanding-radchart-ui/the-wizard-type-tab
 tags: the,wizard,type,tab
 published: True
 position: 3

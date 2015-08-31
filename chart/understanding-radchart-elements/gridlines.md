@@ -2,7 +2,7 @@
 title: Gridlines
 page_title: Gridlines | UI for WinForms Documentation
 description: Gridlines
-slug: winforms/chart-(obsolete)/understanding-radchart-elements/gridlines
+slug: winforms/chart/understanding-radchart-elements/gridlines
 tags: gridlines
 published: True
 position: 4
@@ -14,9 +14,9 @@ position: 4
 
 Gridlines are auxiliary lines that form a grid for easier reading of the chart. Gridlines can be vertical or horizontal. Vertical gridlines are controlled by the __XAxis__ and horizontal gridlines are controlled by __YAxis__ and __YAxis2__. Gridlines can be "major", e.g. falling on the labeled axis __Step__ values.  "Minor" gridlines appear for __YAxis__ and __YAxis2__ that fall between __Step__ values. See the figure below where major gridlines fall on 20 and 40 of the YAxis and minor gridlines fall between the major gridlines. 
 
-To control the visibility and general appearance of gridlines use the the PlotArea.<axis>.Appearance property to reach __MajorGridLines__ and __MinorGridlines__ properties.  __XAxis__ has only __MajorGridLines__ while __YAxis__ and __YAxis2__ have both __MajorGridLines______and __MinorGridlines______properties.  Both major and minor gridline objects include the following properties: 
+To control the visibility and general appearance of gridlines use the the PlotArea.<axis>.Appearance property to reach __MajorGridLines__ and __MinorGridlines__ properties.  __XAxis__ has only __MajorGridLines__ while __YAxis__ and __YAxis2__ have both __MajorGridLines__ and __MinorGridlines__ properties.  Both major and minor gridline objects include the following properties: 
 
-* __Visible______
+* __Visible__ 
 
 * __Color__
 

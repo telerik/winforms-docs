@@ -2,7 +2,7 @@
 title: RadChart Types Overview
 page_title: RadChart Types Overview | UI for WinForms Documentation
 description: RadChart Types Overview
-slug: winforms/chart-(obsolete)/understanding-radchart-types/radchart-types-overview
+slug: winforms/chart/understanding-radchart-types/radchart-types-overview
 tags: radchart,types,overview
 published: True
 position: 0

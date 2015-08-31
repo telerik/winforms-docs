@@ -2,7 +2,7 @@
 title: DefaultLabelValue
 page_title: DefaultLabelValue | UI for WinForms Documentation
 description: DefaultLabelValue
-slug: winforms/chart-(obsolete)/understanding-radchart-elements/defaultlabelvalue
+slug: winforms/chart/understanding-radchart-elements/defaultlabelvalue
 tags: defaultlabelvalue
 published: True
 position: 12
