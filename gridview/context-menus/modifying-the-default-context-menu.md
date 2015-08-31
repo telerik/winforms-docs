@@ -20,13 +20,7 @@ The default RadGridView context menu can be customized in the ContextMenuOpenin
 
 
 
-In order to remove an item, you need to make a loop iterating the __e.ContextMenu.Items__ and check if the __e.ContextMenu.Items[index].Text__ 
-        is equal to the text of the menu item that you want to hide. If so, just set the __Visibility__ of the 
-        menu item to *Collapsed:*#_[C#] Removing context menu items_
-
-	
-
-
+In order to remove an item, you need to make a loop iterating the __e.ContextMenu.Items__ and check if the __e.ContextMenu.Items[index].Text__ is equal to the text of the menu item that you want to hide. If so, just set the __Visibility__ of the menu item to *Collapsed*:
 
 {{source=..\SamplesCS\GridView\ContextMenus\ModifingTheDefaultContextMenu.cs region=removeContextMenuItem}} 
 {{source=..\SamplesVB\GridView\ContextMenus\ModifingTheDefaultContextMenu.vb region=removeContextMenuItem}} 
@@ -65,19 +59,9 @@ In order to remove an item, you need to make a loop iterating the __e.ContextMen
 {{endregion}} 
 
 
-
-
-
-
-
-
 ## Adding menu items to the default RadGridView context menu
 
-In order to add custom menu items to the default context menu, *you should create menu item instances in the ContextMenuOpening event handler* and add them to the __e.ContextMenu.Items:__#_[C#] Adding context menu items_
-
-	
-
-
+In order to add custom menu items to the default context menu, *you should create menu item instances in the ContextMenuOpening event handler* and add them to the __e.ContextMenu.Items:__
 
 {{source=..\SamplesCS\GridView\ContextMenus\ModifingTheDefaultContextMenu.cs region=addContextMenuOption}} 
 {{source=..\SamplesVB\GridView\ContextMenus\ModifingTheDefaultContextMenu.vb region=addContextMenuOption}} 
@@ -106,10 +90,6 @@ In order to add custom menu items to the default context menu, *you should creat
 ````
 
 {{endregion}} 
-
-
-
-
 
 
 The result of combining the approaches from this article is shown on the screenshot below:![gridview-context-menus-modifying-the-default-context-menu 001](images/gridview-context-menus-modifying-the-default-context-menu001.png)

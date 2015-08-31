@@ -16,9 +16,9 @@ position: 2
 
 The following events occur during the editing process:
 
-__EditorRequired__– This is the first event that fires when a cell is to become editable (edit mode). 
+__EditorRequired__ – This is the first event that fires when a cell is to become editable (edit mode). 
 
->note This is the right place to replace the editor with a custom one.[Here]({%slug winforms/gridview/editors/using-custom-editors%})is an example of this behavior.
+>note This is the right place to replace the editor with a custom one.[Here]({%slug winforms/gridview/editors/using-custom-editors%}) is an example of this behavior.
 >
 
 

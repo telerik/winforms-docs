@@ -15,7 +15,7 @@ position: 0
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Binding RadGridView for WinForms to OpenAccess](http://tv.telerik.com/watch/winforms/binding-radgridview-for-winforms-to-openaccess)In this video, you will learn how to bind RadGridView for WinForms to OpenAccess entities.|![gridview-populating-with-data-databinding-radgridview 001](images/gridview-populating-with-data-databinding-radgridview001.png)|
+|[Binding RadGridView for WinForms to OpenAccess](http://tv.telerik.com/watch/winforms/binding-radgridview-for-winforms-to-openaccess)<br>In this video, you will learn how to bind RadGridView for WinForms to OpenAccess entities.|![gridview-populating-with-data-databinding-radgridview 001](images/gridview-populating-with-data-databinding-radgridview001.png)|
 
 ## 
 
@@ -27,9 +27,7 @@ RadGridView binds to collections of [bindable types]({%slug winforms/gridview/p
 
 * [BindingList]({%slug winforms/gridview/populating-with-data/binding-to-bindinglist%}) or other IBindingList implementations.
 
-* Database data using [DataTable,
-            DataSet]({%slug winforms/gridview/populating-with-data/tutorial:-binding-to-datatable-or-dataset%}) or [DataReader]({%slug winforms/gridview/populating-with-data/binding-to-datareader%})
-            components from a wide range of providers (MS SQL, Oracle, Access, anything accessible through OleDb).
+* Database data using [DataTable, DataSet]({%slug winforms/gridview/populating-with-data/tutorial:-binding-to-datatable-or-dataset%}) or [DataReader]({%slug winforms/gridview/populating-with-data/binding-to-datareader%}) components from a wide range of providers (MS SQL, Oracle, Access, anything accessible through OleDb).
 
 RadGridView can bind to a single level of data or multiple levels of [hierarchical data]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data%}). 
 

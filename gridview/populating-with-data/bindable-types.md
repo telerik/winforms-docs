@@ -14,27 +14,27 @@ position: 1
 
 ## 
 
-You can bind __RadGridView to__ a wide variety of data-sources. The data-source must implement __IEnumerable__interface in general. You can further customize the binding of __RadGridView__ using __ITypedList/ICustomTypeDescriptor/INotifyPropertyChange__interfaces together with your business objects.
+You can bind __RadGridView to__ a wide variety of data-sources. The data-source must implement __IEnumerable__ interface in general. You can further customize the binding of __RadGridView__ using __ITypedList/ICustomTypeDescriptor/INotifyPropertyChange__ interfaces together with your business objects.
 
-* __RadGridView__follows the standard Windows Forms data-binding model. It can data bind to any *data-source *implementing one of the following interfaces:       
-
-
-* __IList__ interface for one-dimensional arrays. 
+* __RadGridView__ follows the standard Windows Forms data-binding model. It can data bind to any *data-source *implementing one of the following interfaces:       
 
 
-* __IListSource__ interface (like DataTable and DataSet classes). 
+    * __IList__ interface for one-dimensional arrays. 
 
 
-* __IBindingList__ interface. For example the generic BindingList<> class. 
+    * __IListSource__ interface (like DataTable and DataSet classes). 
 
 
-* __IBindingListView__interface. For example BindingSource class.
+    * __IBindingList__ interface. For example the generic BindingList<> class. 
+
+
+    * __IBindingListView__ interface. For example BindingSource class.
 
 * Simple collections, such as arrays, containing elements of the same type.
 
 
 
-RadGridView____ understands the following bindable property types:
+__RadGridView__ understands the following bindable property types:
 
 * All primitive types - __bool__, __byte__, __sbyte__, __char__, __short__, __ushort__, __int__, __uint__, __long__, __ulong__, __decimal__, __double__, __float__, __DateTime__, etc. 
 

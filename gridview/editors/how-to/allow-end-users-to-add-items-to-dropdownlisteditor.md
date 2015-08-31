@@ -12,21 +12,15 @@ position: 0
 
 
 
-The purpose of this article is to demonstrate how you can implement a scenario
-        in which the end-users are able not only to choose from a predefined list of values
-        represented by RadDropDownListEditor, but to add their own values to that list.
+The purpose of this article is to demonstrate how you can implement a scenario in which the end-users are able not only to choose from a predefined list of values represented by RadDropDownListEditor, but to add their own values to that list.
       
 
-In order to achieve this goal, you need to add the value typed by the end-user to the
-        datasource of the GridViewComboBoxColumn. This will allow the end-user to use the typed
-        value in his/her further operations with the RadComboBoxEditor of the GridViewComboBoxColumn.
+In order to achieve this goal, you need to add the value typed by the end-user to the datasource of the GridViewComboBoxColumn. This will allow the end-user to use the typed value in his/her further operations with the RadComboBoxEditor of the GridViewComboBoxColumn.
       
 
 ## Implementing a custom RadDropDownListEditor
 
-For the purposes for the example, we will build our custom RadComboBoxEditor in the context
-          of a sample scenario where RadGridView is bound to the Products table of the popular Northwind
-          database and where we have a GridViewComboBoxColumn bound to the Categories table of the same database.
+For the purposes for the example, we will build our custom RadComboBoxEditor in the context of a sample scenario where RadGridView is bound to the Products table of the popular Northwind database and where we have a GridViewComboBoxColumn bound to the Categories table of the same database.
         
 
 Let's assume that:
@@ -39,15 +33,7 @@ Let's assume that:
 
 * The AutoIncrementStep of the CategoryID of the Category table is set to one.
 
-1. First, we need to create a GridViewComboBoxColumn that will later display our custom editor.
-              This column should be bound to the binding source of the Categories table. For additional information about GridViewComboBoxColumn
-              and its specifics, you can read [this article]({%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%}). The result of adding the GridViewComboBoxColumn should lead to the
-              result shown below:
-            #_[C#]_
-
-	
-
-
+1\. First, we need to create a GridViewComboBoxColumn that will later display our custom editor. This column should be bound to the binding source of the Categories table. For additional information about GridViewComboBoxColumn and its specifics, you can read [this article]({%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%}). The result of adding the GridViewComboBoxColumn should lead to the result shown below:
 
 {{source=..\SamplesCS\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.cs region=comboColumn}} 
 {{source=..\SamplesVB\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.vb region=comboColumn}} 
@@ -81,13 +67,7 @@ Let's assume that:
 
 
 
-1. Since we will need to get the instances of the DataSet and the TableAdapters of the Category table outside the context
-              of the main form, let's expose two properties in the body of the form:
-            #_[C#]_
-
-	
-
-
+2\. Since we will need to get the instances of the DataSet and the TableAdapters of the Category table outside the context of the main form, let's expose two properties in the body of the form:
 
 {{source=..\SamplesCS\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.cs region=properties}} 
 {{source=..\SamplesVB\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.vb region=properties}} 
@@ -129,26 +109,12 @@ Let's assume that:
 
 
 
-1. Now it is time to create our custom editor. For the purposes of our goal, we need to
-              create a class that derives from __RadDropDownListEditor__ and override the __EndEdit__ method.
-              #__
-
-	
-
-#__
-
-	
+3\. Now it is time to create our custom editor. For the purposes of our goal, we need to create a class that derives from __RadDropDownListEditor__ and override the __EndEdit__ method.
 
 We are going to replace the "TO DO" comment with the code snippets provided at 4) and 5).
             
 
-1. In the EndEdit method, we first need to check whether the value typed by the user exists or not in the datasource of the GridViewComboBoxColumn.
-              If it exists, we should terminate the execution of the EndEdit method:
-            #_[C#]_
-
-	
-
-
+4\. In the EndEdit method, we first need to check whether the value typed by the user exists or not in the datasource of the GridViewComboBoxColumn. If it exists, we should terminate the execution of the EndEdit method:
 
 {{source=..\SamplesCS\GridView\Editors\How-To\CustomDropDownEditor.cs region=checkValue}} 
 {{source=..\SamplesVB\GridView\Editors\How-To\CustomDropDownEditor.vb region=checkValue}} 
@@ -219,13 +185,7 @@ Namespace SamplesCS.GridView.Editors.How_To1
 
 
 
-1. If the typed value is not found in the datasource, we continue with the execution of our code in the EndEdit method.
-              Since the typed value does not exist, we should add it to the data source. Here you can add it to the database as well:
-            #_[C#]_
-
-	
-
-
+5\. If the typed value is not found in the datasource, we continue with the execution of our code in the EndEdit method. Since the typed value does not exist, we should add it to the data source. Here you can add it to the database as well:
 
 {{source=..\SamplesCS\GridView\Editors\How-To\CustomDropDownEditor.cs region=addValue}} 
 {{source=..\SamplesVB\GridView\Editors\How-To\CustomDropDownEditor.vb region=addValue}} 
@@ -282,14 +242,7 @@ Namespace SamplesCS.GridView.Editors.How_To1
 
 
 
-1. The Tag value saved in the previous code snippet is used in the CellEndEdit event handler of RadGridView. It helps us
-              to set the ID of the newly created record to the cell that the end-user has just edited. As a consequence, the
-              correct string value is displayed in the cell of RadGridView.
-               #_[C#]_
-
-	
-
-
+6\. The Tag value saved in the previous code snippet is used in the CellEndEdit event handler of RadGridView. It helps us to set the ID of the newly created record to the cell that the end-user has just edited. As a consequence, the correct string value is displayed in the cell of RadGridView.
 
 {{source=..\SamplesCS\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.cs region=cellEndEdit}} 
 {{source=..\SamplesVB\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.vb region=cellEndEdit}} 
@@ -319,13 +272,7 @@ Namespace SamplesCS.GridView.Editors.How_To1
 
 
 
-1. Finally, we need to attach the custom editor to RadGridView. This is done in the EditorRequired event handler. Let's assume that
-              the class of our custom editor is called CustomDropDownEditor:
-               #_[C#]_
-
-	
-
-
+7\. Finally, we need to attach the custom editor to RadGridView. This is done in the EditorRequired event handler. Let's assume that the class of our custom editor is called CustomDropDownEditor:
 
 {{source=..\SamplesCS\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.cs region=editorRequired}} 
 {{source=..\SamplesVB\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.vb region=editorRequired}} 
@@ -355,10 +302,4 @@ Namespace SamplesCS.GridView.Editors.How_To1
 
 ## End-user experience
 
-So, how should this implementation work? Let's say that we have a list of categories available at each product
-          in RadGridView. However, we decide that this list does not cover the range of products, so
-          we have to add the category 'SpaceFood'. We should just start editing the appropriate cell in the GridViewComboBoxColumn
-          and type 'SpaceFood'. Then we can press Enter or we have press Tab to go to the next cell and the 'SpaceFood' value will be added.
-          As you can see in the screenshot below, the record 'SpaceFood' receives a new CategoryID 9, which is saved in the appropriate
-          RadGridView cell under the CategoryID column:
-        ![gridview-editors-howto-allow-end-users-to-add-items-to-dropdownlisteditor 001](images/gridview-editors-howto-allow-end-users-to-add-items-to-dropdownlisteditor001.png)
+So, how should this implementation work? Let's say that we have a list of categories available at each product in RadGridView. However, we decide that this list does not cover the range of products, so we have to add the category 'SpaceFood'. We should just start editing the appropriate cell in the GridViewComboBoxColumn and type 'SpaceFood'. Then we can press Enter or we have press Tab to go to the next cell and the 'SpaceFood' value will be added. As you can see in the screenshot below, the record 'SpaceFood' receives a new CategoryID 9, which is saved in the appropriate RadGridView cell under the CategoryID column:<br> ![gridview-editors-howto-allow-end-users-to-add-items-to-dropdownlisteditor 001](images/gridview-editors-howto-allow-end-users-to-add-items-to-dropdownlisteditor001.png)

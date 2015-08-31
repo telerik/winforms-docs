@@ -18,12 +18,6 @@ This following snippet demonstrates how to replace the standard spin editor with
 
 All grid editors inherit from __BaseGridEditor__. So, you have to inherit from this class and override several methods:
 
-#_[C#] Creating the custom editor_
-
-	
-
-
-
 {{source=..\SamplesCS\GridView\Editors\UsingCustomEditors.cs region=trackBarEditor}} 
 {{source=..\SamplesVB\GridView\Editors\UsingCustomEditors.vb region=trackBarEditor}} 
 
@@ -116,12 +110,6 @@ End Class
 
 We use the standard __RadTrackBar__ element in this example with some modification to enable keyboard navigation:
 
-#_[C#] Creating the custom editor element_
-
-	
-
-
-
 {{source=..\SamplesCS\GridView\Editors\UsingCustomEditors.cs region=trackBarEditorElement}} 
 {{source=..\SamplesVB\GridView\Editors\UsingCustomEditors.vb region=trackBarEditorElement}} 
 
@@ -199,12 +187,6 @@ End Class
 
 The __EditorRequired__ event is the correct place to replace the default editor:
 
-#_[C#] Changing the current editor_
-
-	
-
-
-
 {{source=..\SamplesCS\GridView\Editors\UsingCustomEditors.cs region=changingTheEditor}} 
 {{source=..\SamplesVB\GridView\Editors\UsingCustomEditors.vb region=changingTheEditor}} 
 
@@ -229,12 +211,6 @@ The __EditorRequired__ event is the correct place to replace the default editor:
 {{endregion}} 
 
 
-
-
-
-
->note 
-
-You can find a working version of this sample in our Demo application ( *GridView -> Custom Editors* )
+>note You can find a working version of this sample in our Demo application ( *GridView -> Custom Editors* )
 >
 

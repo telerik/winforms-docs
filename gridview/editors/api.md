@@ -11,7 +11,6 @@ position: 1
 # API
 
 
-
 ## 
 
 The editing process can be controlled by using the following methods:

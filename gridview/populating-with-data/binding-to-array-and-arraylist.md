@@ -12,8 +12,7 @@ position: 2
 
 
 
-The examples below demonstrate binding to a generic list, an arrays of custom objects, and an ArrayList of custom objects. 
-        This collections have limitations when used as a datasource in which case a __BindingList__ must be used. 
+The examples below demonstrate binding to a generic list, an arrays of custom objects, and an ArrayList of custom objects. This collections have limitations when used as a datasource in which case a __BindingList__ must be used. 
       
 
 >note Note: BindingList is the preferred collection since its changes are automatically reflected on the data-bound control.
@@ -22,13 +21,7 @@ The examples below demonstrate binding to a generic list, an arrays of custom ob
 
 ## Binding to a Generic List
 
-The example below creates an __ArrayList__ of generic objects initialized with five values and
-          assigned as a __DataSource__ to the __RadGridView__.
-        ![gridview-populating-with-data-binding-to-array-and-arraylist 001](images/gridview-populating-with-data-binding-to-array-and-arraylist001.png)#_[C#] Simple array class_
-
-	
-
-
+The example below creates an __ArrayList__ of generic objects initialized with five values and assigned as a __DataSource__ to the __RadGridView__.<br> ![gridview-populating-with-data-binding-to-array-and-arraylist 001](images/gridview-populating-with-data-binding-to-array-and-arraylist001.png)
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=bindingToSimpleArrayClass}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToSimpleArrayClass}} 
@@ -74,13 +67,6 @@ The example below creates an __ArrayList__ of generic objects initialized with f
 
 {{endregion}} 
 
-
-#_[C#] Binding to simple array_
-
-	
-
-
-
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=bindingToSimpleArray}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToSimpleArray}} 
 
@@ -111,20 +97,10 @@ The example below creates an __ArrayList__ of generic objects initialized with f
 
 ## Binding to an Array of Objects
 
-Arrays of objects containing
-          [bindable types]({%slug winforms/gridview/populating-with-data/bindable-types%}) can be bound to 
-          RadGridView by assigning the array to the __DataSource__property of the grid. 
+Arrays of objects containing [bindable types]({%slug winforms/gridview/populating-with-data/bindable-types%}) can be bound to RadGridView by assigning the array to the __DataSource__ property of the grid. 
         
 
-The example below defines a "MyObject" class containing one integer and one string property. The snippet of code at end of the example
-          creates an array of MyObject, initializes the array with two objects and assigns the array to the __DataSource__.
-          The MyObject class would typically be placed in its own separate class file and the array creation, initialization and assignment code might
-          be placed in a Form_Load event handler.
-        ![gridview-populating-with-data-binding-to-array-and-arraylist 002](images/gridview-populating-with-data-binding-to-array-and-arraylist002.png)#_[C#] Simple object class_
-
-	
-
-
+The example below defines a "MyObject" class containing one integer and one string property. The snippet of code at end of the example creates an array of MyObject, initializes the array with two objects and assigns the array to the __DataSource__. The MyObject class would typically be placed in its own separate class file and the array creation, initialization and assignment code might be placed in a Form_Load event handler.<br> ![gridview-populating-with-data-binding-to-array-and-arraylist 002](images/gridview-populating-with-data-binding-to-array-and-arraylist002.png)
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=bindingToArrayOfObjectsClass}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToArrayOfObjectsClass}} 
@@ -181,13 +157,6 @@ The example below defines a "MyObject" class containing one integer and one stri
 
 {{endregion}} 
 
-
-#_[C#] Binding to object array_
-
-	
-
-
-
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=bindingToArrayOfObjects}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToArrayOfObjects}} 
 
@@ -209,11 +178,6 @@ The example below defines a "MyObject" class containing one integer and one stri
 ## Binding to ArrayList
 
 The code below demonstrates how to use an __ArrayList__ for RadGridView structure generation(*note: the sample object is used from the previous example*):
-        #_[C#] Binding to array list_
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=BindingToArrayList}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=BindingToArrayList}} 

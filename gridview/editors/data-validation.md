@@ -28,11 +28,7 @@ __RowValidated__ – Fires after a row has finished validating.
 
 The __GridViewDataRowInfo.ErrorText__ property can be used to indicate validation errors. It will show an error indicator at the row header when you set this property to a non empty string.
 
-The code snippet below demonstrates simple data validation scenario. It is enabled in a textbox column to enter only non-empty strings. When the string is empty, the validation fails and the error indicator at the row header is shown:#_[C#] Cell validation_
-
-	
-
-
+The code snippet below demonstrates simple data validation scenario. It is enabled in a textbox column to enter only non-empty strings. When the string is empty, the validation fails and the error indicator at the row header is shown:
 
 {{source=..\SamplesCS\GridView\Editors\DataValidation1.cs region=dataValidation}} 
 {{source=..\SamplesVB\GridView\Editors\DataValidation1.vb region=dataValidation}} 
@@ -75,6 +71,6 @@ The code snippet below demonstrates simple data validation scenario. It is enabl
 
 
 
->note You can watch the movie[Validation with RadGridView for WinForms](http://tv.telerik.com/winforms/radgridview/validation-with-radgridview-winforms)regarding the usage of RadGridView built-in validation.
+>note You can watch the movie [Validation with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/radgridview/validation-with-radgridview-winforms) regarding the usage of RadGridView built-in validation.
 >
 
