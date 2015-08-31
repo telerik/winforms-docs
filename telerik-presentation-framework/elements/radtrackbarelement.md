@@ -10,15 +10,11 @@ position: 2
 
 # RadTrackBarElement
 
-
-
 ## 
 
-RadTrackBarElement contains the logic and user interface for RadTrackBar. ![tpf-elements-radtrackbar 001](images/tpf-elements-radtrackbar001.png)#_[C#]_
+RadTrackBarElement contains the logic and user interface for RadTrackBar. 
 
-	
-
-
+![tpf-elements-radtrackbar 001](images/tpf-elements-radtrackbar001.png)
 
 {{source=..\SamplesCS\TPF\Elements\MyTrackBarControl.cs region=myTrackBarControl}} 
 {{source=..\SamplesVB\TPF\Elements\MyTrackBarControl.vb region=myTrackBarControl}} 
@@ -60,7 +56,4 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

@@ -10,36 +10,23 @@ position: 4
 
 # BoxLayout
 
-
-
-## 
-
-__BoxLayout__ is a panel that arranges its items according to three predefined settings: 
-	       	__Proportion__, __Orientation__ and __StripPosition__.
+__BoxLayout__ is a panel that arranges its items according to three predefined settings:__Proportion__, __Orientation__ and __StripPosition__.
 	   
 
 __Methods and properties:__
 
-* __SetProportion(RadElement element, float proportion)__ - is a static
-		  		method that sets the proportion of the total area each element will cover.
+* __SetProportion(RadElement element, float proportion)__ - is a static method that sets the proportion of the total area each element will cover.
 		  	
 
-* __Orientation__ - is a property that indicates whether 
-		  		the panel should stack its items horizontally (from left to right) or vertically (from top to bottom).
+* __Orientation__ - is a property that indicates whether the panel should stack its items horizontally (from left to right) or vertically (from top to bottom).
 		  	
 
-* __StripPosition__ - is a static property that specifies whether
-		  		each element will be treated as first or last child. When the Orientation is horizontal,
-		  		a child with StripPosition First will be positioned to the most left, while a child with 
-		  		StripPosition Last will be positioned to the most right. Respectively, when the Orientation
-		  		is vertical, the First child is positioned at the top, while the Last child appears at the bottom.
+* __StripPosition__ - is a static property that specifies whether each element will be treated as first or last child. When the Orientation is horizontal, a child with StripPosition First will be positioned to the most left, while a child with  StripPosition Last will be positioned to the most right. Respectively, when the Orientation is vertical, the First child is positioned at the top, while the Last child appears at the bottom.
 		  	
 
-Here is how to create a element with BoxLayout and set the Proportion#_[C#] Creating box layout panel element_
+Here is how to create a element with BoxLayout and set the Proportion:
 
-	
-
-
+#### Creating box layout panel element
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.cs region=myBoxLayoutPanelElement}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.vb region=myBoxLayoutPanelElement}} 
@@ -85,14 +72,9 @@ Public Class MyBoxLayoutPanelElement
 
 {{endregion}} 
 
+And here is how to embed this element in a class:
 
-
-
-And here is how to embed this element in a class#_[C#] Using the element in a control_
-
-	
-
-
+#### Using the element in a control
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.cs region=boxLayoutClass}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.vb region=boxLayoutClass}} 
@@ -121,22 +103,15 @@ End Class
 
 {{endregion}} 
 
-
-
-
 ![tpf-layout-predefined-layout-panels-boxlayout 001](images/tpf-layout-predefined-layout-panels-boxlayout001.png)
 
-Because the proportion of button1 and button2 is 1:3, button1 covers exactly one quarter of the panel and button2 
-			fills the remaining three quarters. Changing the proportion to 1:2 will make the two buttons become one third and two thirds respectively:
+Because the proportion of button1 and button2 is 1:3, button1 covers exactly one quarter of the panel and button2 fills the remaining three quarters. Changing the proportion to 1:2 will make the two buttons become one third and two thirds respectively:
 		
-
 ![tpf-layout-predefined-layout-panels-boxlayout 002](images/tpf-layout-predefined-layout-panels-boxlayout002.png)
 
-To arrange the elements in the panel vertically set the __Orientation__ of the BoxLayout to Vertical:#_[C#] Set orientation_
+To arrange the elements in the panel vertically set the __Orientation__ of the BoxLayout to Vertical:
 
-	
-
-
+#### Set orientation
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.cs region=orientation}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.vb region=orientation}} 
@@ -151,26 +126,13 @@ To arrange the elements in the panel vertically set the __Orientation__ of the B
 
 {{endregion}} 
 
-
-
-
 ![tpf-layout-predefined-layout-panels-boxlayout 003](images/tpf-layout-predefined-layout-panels-boxlayout003.png)
 
-The __StripPosition__ property allows the BoxLayout to treat each element as
-        	*First* or *Last*. Children with __StripPosition__ 
-        	set to *First* are always positioned to the left when the __Orientation__ 
-        	is horizontal and the top when the __Orientation__ is vertical. Children with __StripPosition__ 
-        	set to *Last* are always located to the right, when the __Orientation__ is horizontal and 
-        	to the bottom when the __Orientation__ is vertical.
-        
+The __StripPosition__ property allows the BoxLayout to treat each element as *First* or *Last*. Children with __StripPosition__ set to *First* are always positioned to the left when the __Orientation__ is horizontal and the top when the __Orientation__ is vertical. Children with __StripPosition__ set to *Last* are always located to the right, when the __Orientation__ is horizontal and to the bottom when the __Orientation__ is vertical.
 
-For example, two if RadButtonElements, one *First* and the other 
-        	*Last*, are added to a BoxLayout, the result will be the following:
-        #_[C#] Set position_
+For example, two if RadButtonElements, one *First* and the other *Last*, are added to a BoxLayout, the result will be the following:
 
-	
-
-
+#### Set position
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.cs region=position1}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.vb region=position1}} 
@@ -213,9 +175,6 @@ For example, two if RadButtonElements, one *First* and the other
 ````
 
 {{endregion}} 
-
-
-
 
 ![tpf-layout-predefined-layout-panels-boxlayout 004](images/tpf-layout-predefined-layout-panels-boxlayout004.png)
 

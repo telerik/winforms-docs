@@ -10,19 +10,13 @@ position: 2
 
 # RadProperty
 
-
-
 ## 
 
 RadProperty encapsulates properties used in RadObject and support [dependency properties]({%slug winforms/telerik-presentation-framework/dependency-properties%}). Each RadProperty has a name, type, owner and [metadata]({%slug winforms/telerik-presentation-framework/class-hierarchy/radpropertymetadata%}), i.e. information about the property. Each RadProperty has mechanisms for synchronizing with other properties in the system and for validating itself.
 
 The RadProperty __AddOwner()__ method associates the owner's type and potentially merges the owners metadata. 
 
-The static RadProperty __Register()__ method creates an instance of a RadProperty and is used to make the property known to TPF. Typically the property is then wrapped in a standard CLR style property as a convenience. In the wrapper property, RadObject methods __GetValue()__ and __SetValue()__communicate with TPF. The example below shows a "phone" property being registered, and then being wrapped as a standard CLR string property. Note: The standard naming convention for dependency properties is <Property name> + "Property".#_[C#]_
-
-	
-
-
+The static RadProperty __Register()__ method creates an instance of a RadProperty and is used to make the property known to TPF. Typically the property is then wrapped in a standard CLR style property as a convenience. In the wrapper property, RadObject methods __GetValue()__ and __SetValue()__ communicate with TPF. The example below shows a "phone" property being registered, and then being wrapped as a standard CLR string property. Note: The standard naming convention for dependency properties is <Property name> + "Property".
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\RadPropertyForm.cs region=RadProperty}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadPropertyForm.vb region=RadProperty}} 
@@ -59,7 +53,4 @@ The static RadProperty __Register()__ method creates an instance of a RadPropert
     End Property
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

@@ -10,8 +10,6 @@ position: 10
 
 # RadItem
 
-
-
 ## 
 
 RadItem represents a visual element that can be added to an ItemsCollection and can be selected, deleted or moved in Visual Studio at design time. Other characteristics introduced by RadItem:

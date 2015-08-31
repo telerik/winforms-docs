@@ -10,13 +10,11 @@ position: 7
 
 # Dependency Properties
 
-##
-
 RadControls support the Telerik Presentation Framework (TPF) dependency property system. Dependency properties are properties that depend on the values of other inputs. Unlike the standard Common Language Runtime (CLR) properties, dependency properties may get their input from multiple sources like themes, animation, databinding, or through parent-child relationships with other elements in the element tree.
 
 The naming convention for the property is a descriptive property name followed by "Property", i.e. for a "Height" property the dependency property name is "HeightProperty".
 
-Dependency properties are static and are created using the static [RadProperty]({%slug winforms/telerik-presentation-framework/class-hierarchy/radproperty%}) Register() method. The Register method describes the name of the property, owner type, property type and meta data for the property. Typically, the property is then wrapped as a standard CLR type property using the [RadObject]({%slug winforms/telerik-presentation-framework/class-hierarchy/radobject%})__GetValue()__and __SetValue()__ methods.
+Dependency properties are static and are created using the static [RadProperty]({%slug winforms/telerik-presentation-framework/class-hierarchy/radproperty%}) Register() method. The Register method describes the name of the property, owner type, property type and meta data for the property. Typically, the property is then wrapped as a standard CLR type property using the [RadObject]({%slug winforms/telerik-presentation-framework/class-hierarchy/radobject%}) __GetValue()__ and __SetValue()__ methods.
 
 The example below registers a new IsDefaultButtonProperty, wraps the dependency property as a standard CLR property "IsDefaultButton". In addition the property meta data sets the default value and the callback method (this method will be executed when the property is changed).
 

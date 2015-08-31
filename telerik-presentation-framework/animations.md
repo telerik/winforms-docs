@@ -10,8 +10,6 @@ position: 14
 
 # Animations
 
-
-
 Using the [Telerik Presentation Framework](87f43b63-7fff-4b3c-b7c7-4830f1e63903) you can animate almost any element property. To do this you should use the __AnimatedPropertySetting__ class. The class constructors takes five arguments:
         
 
@@ -70,7 +68,9 @@ The following example animates the __Opacity__ property of the RadButton's fill 
 
 Here is how to animate the __Margin__ property of the RadButton's fill primitive:
 
-![tpf-animations 002](images/tpf-animations002.gif)#_[C#] Animate button's Margin property
+![tpf-animations 002](images/tpf-animations002.gif)
+
+#### Animate button's Margin property
 
 {{source=..\SamplesCS\TPF\Animations.cs region=AnimateMargin}} 
 {{source=..\SamplesVB\TPF\Animations.vb region=AnimateMargin}} 

@@ -11,14 +11,9 @@ position: 0
 # CLR Events
 
 
+[RadControl]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcontrol%}) inherits from the standard __Windows Forms ScrollableControl__,  and so has access to the principal mouse, keyboard, font, sizing, layout and painting events. These events are captured and passed to the element tree where appropriate. For example, the __OnMouseEnter__ event inherited from __ScrollableControl__ first notifies the __RootElement__ that a the mouse is over the control, then invokes the standard __OnMouseEnter__ behavior from __ScrollableControl__.
 
-## 
-
-[RadControl]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcontrol%}) inherits from the standard __Windows Forms ScrollableControl__, and so has access to the principal mouse, keyboard, font, sizing, layout and painting events. These events are captured and passed to the element tree where appropriate. For example, the __OnMouseEnter__event inherited from __ScrollableControl__ first notifies the __RootElement__ that a the mouse is over the control, then invokes the standard __OnMouseEnter__ behavior from __ScrollableControl__.#_[C#] OnMouseEnter_
-
-	
-
-
+#### OnMouseEnter
 
 {{source=..\SamplesCS\TPF\Events.cs region=onMouseEnter}} 
 {{source=..\SamplesVB\TPF\Events.vb region=onMouseEnter}} 
@@ -45,9 +40,4 @@ position: 0
     '
 ````
 
-{{endregion}} 
-
-
-
-
-
+{{endregion}}

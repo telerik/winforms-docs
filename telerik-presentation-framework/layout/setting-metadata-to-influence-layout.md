@@ -10,8 +10,6 @@ position: 10
 
 # Setting Metadata to Influence Layout
 
-
-
 ## 
 
 When a property of an element has an effect on the size of the element or the ordering of its children, appropriate metadata has to be added to its declaration as a dependency property to trigger the appropriate stage of the layout process.
@@ -24,11 +22,9 @@ When a property of an element has an effect on the size of the element or the or
 
 * __AffectsArrange:__ Equivalent to AffectsLayout.
 
-The example code below shows a __RightToLeft__ dependency property with the __AffectsLayout__and __InvalidatesLayout__included in the call to __RadPropertyRegister()__. #_[C#] Adding metadata_
+The example code below shows a __RightToLeft__ dependency property with the __AffectsLayout__ and __InvalidatesLayout__ included in the call to __RadPropertyRegister()__. 
 
-	
-
-
+#### Adding metadata
 
 {{source=..\SamplesCS\TPF\Layouts\CascadeLayoutPanel.cs region=addingMetadata}} 
 {{source=..\SamplesVB\TPF\Layouts\CascadeLayoutPanel.vb region=addingMetadata}} 
@@ -44,9 +40,6 @@ The example code below shows a __RightToLeft__ dependency property with the __Af
 ````
 
 {{endregion}} 
-
-
-
 
 >note The metadata is consumed when the RadElement __OnPropertyChanged__ method is fired, the RadElement __RadPropertyMetaData__ is evaluated and methods are called based on the type of metadata present.
 >

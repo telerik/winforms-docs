@@ -12,7 +12,7 @@ position: 9
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Enhanced HTML-like Markup Support](http://tv.telerik.com/winforms/utility/enhanced-html-like-markup-support)This video goes over the new text rendering tags provided with the Q3 2009 release. It also shows the RadMarkupEditor and gives an example of how to use it from within your own applications. (Runtime: 04:11)|![tpf-html-like-text-formatting 001](images/tpf-html-like-text-formatting001.png)|
+|[Enhanced HTML-like Markup Support](http://tv.telerik.com/winforms/utility/enhanced-html-like-markup-support) This video goes over the new text rendering tags provided with the Q3 2009 release. It also shows the RadMarkupEditor and gives an example of how to use it from within your own applications. (Runtime: 04:11)|![tpf-html-like-text-formatting 001](images/tpf-html-like-text-formatting001.png)|
 
 ## Introduction
 
@@ -25,24 +25,23 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 
 | Tag | End Tag | Description |
 | ------ | ------ | ------ |
-| __<font>__ |N/A|Font Family. Please use the span tag since the font tag is not supported by RadMarkupEditor.|
-| __<color>__ |N/A|Text color. Please use the span tag since the color tag is not supported by RadMarkupEditor.|
-| __<size>__ |N/A|Font size. Please use the span tag since the size tag is not supported by RadMarkupEditor.|
-| __<b>, <strong>__ | __</b>, </strong>__ |Bold|
-| __<i>, <em>__ | __</i>, </em>__ |Italic|
-| __<u>__ | __</u>__ |Underlined text|
-| __<br>__ |N/A|Line break|
-| __<p>__ | __</p>__ |Paragraph|
-| __<span>__ | __</span>__ |Span. There is limited support of the style attribute and the CSS properties: font-family, font-size, color, and background-color. Refer
-                to the example below. The *Span* tag is preferable to font, color, and size tags.|
-| __<ol>__ | __</ol>__ |Ordered list|
-| __<ul>__ | __</ul>__ |Unordered list|
-| __<li>__ | __</li>__ |List item. Defines a list item in an ordered or unordered list.|
-| __<strike>__ | __</strike>__ |Striked text.|
-| __<a>__ | __</a>__ |Link|
-| __<img>__ |N/A|Image|
+| __\<font\>__ |N/A|Font Family. Please use the span tag since the font tag is not supported by RadMarkupEditor.|
+| __\<color\>__ |N/A|Text color. Please use the span tag since the color tag is not supported by RadMarkupEditor.|
+| __\<size\>__ |N/A|Font size. Please use the span tag since the size tag is not supported by RadMarkupEditor.|
+| __\<b\>, \<strong\>__ | __\</b\>, \</strong\>__ |Bold|
+| __\<i\>, \<em\>__ | __\</i\>, \</em\>__ |Italic|
+| __\<u\>__ | __\</u\>__ |Underlined text|
+| __\<br\>__ |N/A|Line break|
+| __\<p\>__ | __\</p\>__ |Paragraph|
+| __\<span\>__ | __\</span\>__ |Span. There is limited support of the style attribute and the CSS properties: font-family, font-size, color, and background-color. Refer to the example below. The *Span* tag is preferable to font, color, and size tags.|
+| __\<ol\>__ | __\</ol\>__ |Ordered list|
+| __\<ul\>__ | __\</ul\>__ |Unordered list|
+| __\<li\>__ | __\</li\>__ |List item. Defines a list item in an ordered or unordered list.|
+| __\<strike\>__ | __\</strike\>__ |Striked text.|
+| __\<a\>__ | __\</a\>__ |Link|
+| __\<img\>__ |N/A|Image|
 
-* __Bold, italic, and underline__In the example below the first word is italic and the second one is both bold and italic. The third and the forth words are underlined.
+* __Bold, italic, and underline__ In the example below the first word is italic and the second one is both bold and italic. The third and the forth words are underlined.
 
 ````xml
 	  <html>
@@ -60,7 +59,7 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 ````
 
 
-* __Font color__Font color using color name e.g. *red* or using hex color e.g. *0000FF*.
+* __Font color__ Font color using color name e.g. *red* or using hex color e.g. *0000FF*.
 
 ````xml
 	  <html>
@@ -71,7 +70,7 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 
 
 
-* __Font size__Absolute and relative font sizes. The valid relative values are *larger* and *smaller*. The
+* __Font size__ Absolute and relative font sizes. The valid relative values are *larger* and *smaller*. The
               absolute valid values are: xx-small, x-small, small, medium, large, x-large, and xx-large. The default value is *medium*.
               Font size can also be set in pt(s). The default font size in Windows Forms on most computers is *8.25pt* i.e. the font
               size returned by *SystemFonts.DefaultFont* property.
@@ -135,7 +134,7 @@ You can also use some tags that are not present in Html but are currently suppor
 >note please refer to the[RadMarkupDialog]({%slug winforms/telerik-presentation-framework/radmarkupdialog%})article about the list of supported tags; *font* , *color* and *size* tags are not supported by RadMarkupDialog, but can be rendered by TextPrimitive.
 >
 
-You can use <size=[+|-]value> to set font size use, and __<br>__ to create new line feed. To set bold, underline, and italic text use the corresponding opening and closing tags. Font family is set through __<font=Family>__. 
+You can use \<size=[+|-]value\> to set font size use, and __\<br\>__ to create new line feed. To set bold, underline, and italic text use the corresponding opening and closing tags. Font family is set through __\<font=Family\>__. 
 
 The following code snippet will produce the result shown in the screen-shot below:
 

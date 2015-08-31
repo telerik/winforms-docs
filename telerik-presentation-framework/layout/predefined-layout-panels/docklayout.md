@@ -14,27 +14,15 @@ position: 5
 
 ## 
 
-__DockLayoutPanel__ is a panel that docks its child elements to a predefined-position.
-	        The possible Dock positions are *Left*, *Top*,
-	        *Right* and *Bottom*.
-        
+__DockLayoutPanel__ is a panel that docks its child elements to a predefined-position. The possible Dock positions are *Left*, *Top*, *Right* and *Bottom*.
 
 __Methods and properties:__
 
 * __SetDock(RadElement element, Dock dock)__ - is a static method that assigns an element a given docking position.
-		  	
 
-* __LastChildFill__ - indicates whether the dock position of the last child should be ignored, 
-		  		so that the element stretches to fill the area left by the other children elements. When this property is set to 
-		  		*false* the dock position of the last child is taken under consideration, 
-		  		thus leaving an empty area in the center of the panel.
-		  	
+* __LastChildFill__ - indicates whether the dock position of the last child should be ignored, so that the element stretches to fill the area left by the other children elements. When this property is set to	*false* the dock position of the last child is taken under consideration, thus leaving an empty area in the center of the panel.
 
-The Dock of each element is set through the static method of DockLayoutPanel __SetDock__.#_[C#] _
-
-	
-
-
+The Dock of each element is set through the static method of DockLayoutPanel __SetDock__.
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.cs region=snippet1}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.vb region=snippet1}} 
@@ -102,15 +90,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-Essential for the final layout of the DockLayoutPanel is the sequence in which elements are added to the panel. Consider the following four RadButtonElements: 
-		#_[C#] _
-
-	
-
-
+Essential for the final layout of the DockLayoutPanel is the sequence in which elements are added to the panel. Consider the following four RadButtonElements:
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.cs region=snippet2}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.vb region=snippet2}} 
@@ -182,14 +162,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-Adding the above in the following order results in the layout below:#_[C#] _
-
-	
-
-
+Adding the above in the following order results in the layout below:
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.cs region=snippet3}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.vb region=snippet3}} 
@@ -241,16 +214,9 @@ End Class
 
 {{endregion}} 
 
-
-
-
 ![tpf-layout-predefined-layout-panels-docklayout 001](images/tpf-layout-predefined-layout-panels-docklayout001.png)
 
-However, if the same elements are added in a reversed order, the outcome will be different:#_[C#] _
-
-	
-
-
+However, if the same elements are added in a reversed order, the outcome will be different:
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.cs region=snippet4}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.vb region=snippet4}} 
@@ -287,13 +253,9 @@ End Class
 
 {{endregion}} 
 
-
-
-
 ![tpf-layout-predefined-layout-panels-docklayout 002](images/tpf-layout-predefined-layout-panels-docklayout002.png)
 
->note In both examples above the Dock setting of the last added child is ignored, i.e. in the first example *button4* is docked, so that it fills the area left by the other buttons. In the second example *button1* docking setting is 
-		  	not taken under consideration and the element fills the empty panel area. Setting the __LastChildFill__ property to *false* , however, transforms the above layouts, so that the last added children are not stretched:
+>note In both examples above the Dock setting of the last added child is ignored, i.e. in the first example *button4* is docked, so that it fills the area left by the other buttons. In the second example *button1* docking setting is not taken under consideration and the element fills the empty panel area. Setting the __LastChildFill__ property to *false* , however, transforms the above layouts, so that the last added children are not stretched:
 >
 
 
@@ -301,11 +263,7 @@ End Class
 
 ![tpf-layout-predefined-layout-panels-docklayout 004](images/tpf-layout-predefined-layout-panels-docklayout004.png)
 
-Here is an example of creating a control holding custom DockPanelElement:#_[C#] _
-
-	
-
-
+Here is an example of creating a control holding custom DockPanelElement:
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.cs region=dockLayoutClass}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.vb region=dockLayoutClass}} 
@@ -334,14 +292,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-And here is the element itself:#_[C#] _
-
-	
-
-
+And here is the element itself:
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.cs region=myDockLayoutPanelElement}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.vb region=myDockLayoutPanelElement}} 
@@ -396,7 +347,4 @@ Public Class MyDockLayoutPanelElement
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

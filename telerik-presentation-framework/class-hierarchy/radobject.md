@@ -10,16 +10,12 @@ position: 4
 
 # RadObject
 
-
-
 RadObject represents a base class for all elements that need to interact with the dependency property system of Telerik Presentation Framework. For instance, RadElement class derives from RadObject so it participates in that system. 
 
 The main RadObject functionality is:
 
-
-
-
-
+|Method|Description|
+|-----|-----|
 |GetValue|Retrieves the stored value for a given dependency property.|
 |SetValue|Sets a value for a given dependency property.|
 |ResetValue|Resets the value of a given dependency property. There are several reset options specified in *ValueResetFlags* enumeration.|
@@ -28,20 +24,12 @@ The main RadObject functionality is:
 |BindProperty|Creates a binding between two properties.|
 |UnbindProperty|Destroys an existing binding between two properties.|
 
-
-
 >caution Dependency properties are registered using[RadProperty]({%slug winforms/telerik-presentation-framework/dependency-properties%})class. Refer to this article if you need to create a dependency property but you need not create a custom object that will participate in the hierarchy of visual elements, i.e. custom fill primitive that does not derive from the existing one.
 >
 
-
 ## Getting and Setting Values
 
-__GetValue__and __SetValue__methods are used for getting and setting *local *values. Usually you have to define a CLR property for each declared __RadProperty__whose setter calls __GetValue__ and whose getter calls __SetValue__:
-				#_[C#]_
-
-	
-
-
+__GetValue__ and __SetValue__ methods are used for getting and setting *local *values. Usually you have to define a CLR property for each declared __RadProperty__whose setter calls __GetValue__ and whose getter calls __SetValue__:
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=MyRadObject}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=MyRadObject}} 
@@ -86,19 +74,11 @@ __GetValue__and __SetValue__methods are used for getting and setting *local *val
 
 {{endregion}} 
 
-
-
-
 ## Resetting Values
 
 If the value is inherited, the inherited value becomes the new value. Otherwise, the value is reset to the default value.
 
 The code snippet below reset the value of the *HeightProperty *declared in *MyRadObject *class:
-				#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=ResetValue}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=ResetValue}} 
@@ -113,15 +93,7 @@ The code snippet below reset the value of the *HeightProperty *declared in *MyRa
 
 {{endregion}} 
 
-
-
-
 You can pass a second parameter to the __ResetValue__method to specify a reset flag:
-				#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=ValueResetFlags}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=ValueResetFlags}} 
@@ -158,16 +130,9 @@ You can pass a second parameter to the __ResetValue__method to specify a reset f
 
 {{endregion}} 
 
-
-
-
 ## Updating Values
 
-Re-evaluates the property specified as a parameter. In the example below, the HeightProperty is re-evaluated:#_[C#]_
-
-	
-
-
+Re-evaluates the property specified as a parameter. In the example below, the HeightProperty is re-evaluated:
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=UpdateValue}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=UpdateValue}} 
@@ -182,17 +147,9 @@ Re-evaluates the property specified as a parameter. In the example below, the He
 
 {{endregion}} 
 
-
-
-
 ## Getting Value Source
 
 The value source is the reason for the current value. __GetValueSource__method returns the __ValueSource__enumeration which describes the value sources:
-				#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=ValueSource}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=ValueSource}} 
@@ -281,16 +238,9 @@ The value source is the reason for the current value. __GetValueSource__method r
 
 {{endregion}} 
 
-
-
-
 ## Binding and Unbinding Properties
 
-Properties can be bound to other properties either one-way or two-way. The code snippet below binds two properties one-way: #_[C#]_
-
-	
-
-
+Properties can be bound to other properties either one-way or two-way. The code snippet below binds two properties one-way: 
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=BindingProperties}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=BindingProperties}} 
@@ -310,20 +260,14 @@ Properties can be bound to other properties either one-way or two-way. The code 
 
 {{endregion}} 
 
-
-
-
 If the binding is one way the source property is the one passed as a parameter to __BindProperty__method.
-				
 
 ## Values Precedence
 
 Dependency properties are more advanced than the ordinary properties; they support advance features such as inheritance, and animation. For this reason, precedence rules have to be established. The table below summarizes the precedence rules from highest precedence to lowest:
 
-
-
-
-
+|Value|Description|
+|------|--------|
 |Coercion|This is the final step when you can change the value of a given property. Please refer to the subsection below about implementing value coercion.|
 |Animation|When the animation is finished, you can either store the last value or remove it and therefore allow previous modifiers to participate in value composition. This behavior is controlled by __AnimatedPropertySetting.RemoveAfterApply__ property.Note: Animation in TPF is controlled by __AnimatedPropertySetting__ object which value has different meanings depending on whether it is specified through StyleSheet or not. If the latter is true, the animation is treated as *Style Setting* rather than animation.|
 |Binding|Properties can be bound either one-way or two way. Refer to the subsection about binding below.|
@@ -335,11 +279,6 @@ Dependency properties are more advanced than the ordinary properties; they suppo
 ## Coercion
 
 You need to override *CoerceValue *method:
-				#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=Coercion}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=Coercion}} 
@@ -368,24 +307,13 @@ You need to override *CoerceValue *method:
 
 {{endregion}} 
 
-
-
-
 In the example above, the value of the Height property is coerced to 105 (Height is an integer property). 
 
 Note: Coercion is seldom used.
 
-## Animation
-
-
-
 ## Binding
 
 A property of one RadObject instance can be bound to a property of another RadObject instance. There are two binding models:
-
-
-
-
 
 |One way|Change in the source triggers change in the bound target property. The only exception to this case is that animation in progress can change the value of the bound property.|
 |Two ways|Value change in one of the properties triggers change in the other.|
@@ -393,11 +321,6 @@ A property of one RadObject instance can be bound to a property of another RadOb
 ## Local Value
 
 Local values are set and get using __SetValue__and __GetValue__methods:
-				#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=MyRadObject}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=MyRadObject}} 
@@ -442,16 +365,9 @@ Local values are set and get using __SetValue__and __GetValue__methods:
 
 {{endregion}} 
 
-
-
-
 ## Default Value 
 
-When you define a dependency property, you create a RadElementPropertyMetadata whose first constructor argument is default value:#_[C#]_
-
-	
-
-
+When you define a dependency property, you create a RadElementPropertyMetadata whose first constructor argument is default value:
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=DefaultValueProp}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=DefaultValueProp}} 
@@ -469,15 +385,7 @@ When you define a dependency property, you create a RadElementPropertyMetadata w
 
 {{endregion}} 
 
-
-
-
 In some rare cases, you might want to override the __GetDefaultValue__and specify the default value there:
-				#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=DefaultValueMethod}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=DefaultValueMethod}} 
@@ -503,7 +411,4 @@ In some rare cases, you might want to override the __GetDefaultValue__and specif
         End Function
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

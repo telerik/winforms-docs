@@ -10,8 +10,6 @@ position: 2
 
 # Layout Structure
 
-
-
 Telerik Presentation Foundation layout follows the [W3C](http://www.w3.org/)[box model](http://www.w3.org/TR/REC-CSS2/box.html) standard. The diagram below shows the basic structure and naming conventions of the box model.
 
 ![](images/Structure001.png)
@@ -32,11 +30,9 @@ The border of an element is typically rendered by a [BorderPrimitive]({%slug win
 
 Margin is the area outside an element. Margin affects the spacing between elements. For example, if an element with a non-zero left margin is next to an element with a non-zero right margin, the total margins the sum of the two fields as shown in the figure below. Margins are always transparent. The RadElement __Margin__property is a Padding type and represents the rectangle dimensions. In the example below the control on the left has no margins. The control on the right has ten pixel margins. 
 
-![](images/Structure002.png)#_[C#] Two elements with margins_
+![](images/Structure002.png)
 
-	
-
-
+#### Two elements with margins
 
 {{source=..\SamplesCS\TPF\Layouts\LayoutStructure.cs region=layoutStructure}} 
 {{source=..\SamplesVB\TPF\Layouts\LayoutStructure.vb region=layoutStructure}} 
@@ -96,7 +92,4 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

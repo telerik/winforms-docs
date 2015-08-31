@@ -473,6 +473,9 @@ navigation:
     telerik-presentation-framework/printing-support:
         title: Printing Support
         position: 13
+    telerik-presentation-framework/layout/predefined-layout-panels:
+        title: Predefined Layout Panels
+        position: 5
     themes:
         title: Themes
         position: 54

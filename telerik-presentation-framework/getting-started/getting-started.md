@@ -10,8 +10,6 @@ position: 0
 
 # Getting Started
 
-
-
 The following tutorial demonstrates:
 
 * Using primitives to build a custom panel element.
@@ -20,12 +18,13 @@ The following tutorial demonstrates:
 
 * Using dependency properties.
 
-The example control will contain a filled area and a centered text primitive. A timer will update the text to reflect the current date and time.![tpf-getting-started 001](images/tpf-getting-started001.png)
+The example control will contain a filled area and a centered text primitive. A timer will update the text to reflect the current date and time.
+
+![tpf-getting-started 001](images/tpf-getting-started001.png)
 
 ## Create the Element Class
 
 1. In Visual Studio, create a new __Windows Controls Library__. In this example the library will be named "RadControlLib001".
-          
 
 1. Add references to Telerik.WinControls.UI.dll, TelerikCommon.dll and Telerik.WinControls.dll
 
@@ -36,17 +35,13 @@ The example control will contain a filled area and a centered text primitive. 
 1. Replace the MyPanelElement.cs code with the code below.
 
 >note Notice in the code below:
->
 * MyPanelElement descends from RadItem so that it can be used in the designer.
 * In the CreateChildElements() method the Class property of each primitive is assigned. This allows Telerik Presentation Foundation to apply themes to specific parts of the control.
 * In the CreateChildElements() method the TextPrimitive Text property is bound to the CurrentTimeProperty.
 * A standard CLR style property is defined for CurrentTime that wraps the Dependency property.>The effect of this configuration of properties is that when the CurrentTime property is changed, either by a timer or elsewhere in the code, the dependency property CurrentTimeProperty value changes, the bound TextPrimitive Text property is assigned the CurrentTimeProperty value and the display updates to show the new time.
 >
-#_[C#] Creating MyPanelElement_
 
-	
-
-
+#### Creating MyPanelElement
 
 {{source=..\SamplesCS\TPF\GettingStarted\MyPanelElement.cs region=myPanelElement}} 
 {{source=..\SamplesVB\TPF\GettingStarted\MyPanelElement.vb region=myPanelElement}} 
@@ -164,9 +159,6 @@ End Class
 
 {{endregion}} 
 
-
-
-
 ## Create the Control Class
 
 1. Add a second class to the control library and name it "MyPanel.cs".
@@ -178,11 +170,8 @@ End Class
 * MyPanel descends from RadControl.
 * The PanelElement property surfaces the underlying element for general purpose uses. In this example the PanelElement property is used in the theme designer.
 * In the CreateChildItems() method, MyPanelElement is created and added to the root element Children collection.>
-#_[C#] Creating MyPanel control_
 
-	
-
-
+#### Creating MyPanel control
 
 {{source=..\SamplesCS\TPF\GettingStarted\MyPanel.cs region=myPanel}} 
 {{source=..\SamplesVB\TPF\GettingStarted\MyPanel.vb region=myPanel}} 
@@ -271,15 +260,14 @@ End Class
 
 {{endregion}} 
 
-
-
-
 ## Testing the Control
 
 1. Add a new __Windows Forms__ project to the solution to test the control library.
           
 
-1. Add a reference to the control library.![tpf-getting-started 002](images/tpf-getting-started002.png) 
+1. Add a reference to the control library.
+
+    ![tpf-getting-started 002](images/tpf-getting-started002.png) 
           
 
 1. Drop the __MyPanel__ control from the __ToolBox__ to the form.
@@ -288,4 +276,6 @@ End Class
 1. In the Properties Window set the __Active__ property for MyPanel to __True__.
           
 
-The control should now look something like this:![tpf-getting-started 003](images/tpf-getting-started003.png)
+The control should now look something like this:
+
+![tpf-getting-started 003](images/tpf-getting-started003.png)

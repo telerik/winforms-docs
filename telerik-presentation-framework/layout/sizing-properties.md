@@ -10,8 +10,6 @@ position: 7
 
 # Sizing Properties
 
-
-
 ## Stretching
 
 Arrange allocates a cell in which the item child be positioned. If the child is not stretchable there are two possible scenarios:
@@ -48,20 +46,20 @@ The desired size returned by the measure stage of the layout process can be igno
 
 The RadElement __FitToSizeMode__ property controls the area that a child element may paint itself. By default all children are placed in the parent content area and can paint in that area only. __FitToSizeMode__ is taken into account when measuring and arranging elements during layout.
 
-* __FitToParentContent:__The __FitToSizeMode__ for all elements by default is __FitToParentContent__ where the child fills and paints in the parent content area only.
+* __FitToParentContent:__ The __FitToSizeMode__ for all elements by default is __FitToParentContent__ where the child fills and paints in the parent content area only.
 
-* __FitToParentPadding:__If child element __FitToSizeMode__ is __FitToParentPadding__, the child fills the padding area of its parent and can paint in both content and padding areas. [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%}) and [LinePrimitive]({%slug winforms/telerik-presentation-framework/primitives/lineprimitive%}) use this setting.
+* __FitToParentPadding:__ If child element __FitToSizeMode__ is __FitToParentPadding__, the child fills the padding area of its parent and can paint in both content and padding areas. [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%}) and [LinePrimitive]({%slug winforms/telerik-presentation-framework/primitives/lineprimitive%}) use this setting.
 
-* __FitToParentBounds:__When __FitToSizeMode__ is set to __FitToParentBounds__ the child fills and can paint within the parent border. [BorderPrimitive]({%slug winforms/telerik-presentation-framework/primitives/borderprimitive%}) and [FocusPrimitive]({%slug winforms/telerik-presentation-framework/primitives/focusprimitive%}) use this setting.
+* __FitToParentBounds:__ When __FitToSizeMode__ is set to __FitToParentBounds__ the child fills and can paint within the parent border. [BorderPrimitive]({%slug winforms/telerik-presentation-framework/primitives/borderprimitive%}) and [FocusPrimitive]({%slug winforms/telerik-presentation-framework/primitives/focusprimitive%}) use this setting.
 
 ## BoundingRectangle
 
-The __BoundingRectangle__ property stores the bounds of an element relative to its parent element. The transformations applied to the element are stored in its __TransformationMatrix__property, again relative to its parent element.
+The __BoundingRectangle__ property stores the bounds of an element relative to its parent element. The transformations applied to the element are stored in its __TransformationMatrix__ property, again relative to its parent element.
 
 ## ControlBoundingRectangle
 
-The __ConrolBoundingRectangle__property stores the bounds of an element relative to the root of the element tree, i.e. the control hosting the element tree. The transformations applied to the element relative to the root of the element tree are stored in the __TotalTransformationMatrix__ property.
+The __ConrolBoundingRectangle__ property stores the bounds of an element relative to the root of the element tree, i.e. the control hosting the element tree. The transformations applied to the element relative to the root of the element tree are stored in the __TotalTransformationMatrix__ property.
 
 ## DesiredSize
 
-The __DesiredSize__property is the size returned by the MeasureOverride() method of an element.  It indicates how much space is needed by the children of the element to be ordered according to the logic implemented in the MeasureOverride() method. __DesiredSize__is equal to __BoundingRectangle.Size__.
+The __DesiredSize__ property is the size returned by the MeasureOverride() method of an element.  It indicates how much space is needed by the children of the element to be ordered according to the logic implemented in the MeasureOverride() method. __DesiredSize__ is equal to __BoundingRectangle.Size__.

@@ -10,8 +10,6 @@ position: 15
 
 # RadToolTip
 
-
-
 __RadToolTip__ is a class derived from the standard __ToolTip__ class in the __System.Windows.Forms__ namespace. The need of a derived class arisen from the fact that the ToolTips needs a Control in order to be shown. __RadToolTip__ encapsulates all that functionality inside of it, which makes it very flexible, requiring only the most basic parameters in order to be shown, even only the text is enough.
       
 

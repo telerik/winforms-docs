@@ -10,8 +10,6 @@ position: 3
 
 # GridLayout
 
-
-
 ## 
 
 ![tpf-layout-predefined-layout-panels-gridlayoutpanel 001](images/tpf-layout-predefined-layout-panels-gridlayoutpanel001.png)
@@ -20,28 +18,16 @@ The GridLayout has to be populated with columns and rows when it is being initia
         	
 		
 
-* 
+* __Fixed__:  The column/row is sized with a fixed width/height determined by the FixedWidth/FixedHeight property.
 
-__Fixed__:  The column/row is sized with a fixed width/height determined by the FixedWidth/FixedHeight property.
+* __Proportional__: The column/row is sized proportionally according to the other proportional rows/columns. In this case the available width/height is split proportionally to each column/row according to the ProportionalWidthWeight/ProportionalHeightWeigh property.
 
-* 
-
-__Proportional__: The column/row is sized proportionally according to the other proportional rows/columns. In this case the available width/height is split proportionally to each column/row according to the ProportionalWidthWeight/ProportionalHeightWeigh property.
-
-* 
-
-__Auto__: In this mode the column/row has the width/height of the largest item in it.
-
-
-        	To determine the cell coordinates of each element added to the GridLayout, you should set the RowIndex/ColumnIndex properties.
-        	Also, each element has a RowSpan/ColSpan property, which determines how many rows/columns the element occupies:
+* __Auto__: In this mode the column/row has the width/height of the largest item in it. To determine the cell coordinates of each element added to the GridLayout, you should set the RowIndex/ColumnIndex properties.Also, each element has a RowSpan/ColSpan property, which determines how many rows/columns the element occupies:
         
 
-Here is a sample:#_[C#] Using WrapLayoutPanel_
+Here is a sample:
 
-	
-
-
+#### Using WrapLayoutPanel
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyGridLayoutPanelElement.cs region=GridLayout}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyGridLayoutPanelElement.vb region=GridLayout}} 
@@ -171,7 +157,4 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
