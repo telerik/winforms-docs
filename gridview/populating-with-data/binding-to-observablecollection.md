@@ -14,29 +14,18 @@ position: 14
 
 ## 
 
-The example bellow demonstrates how to bind the __RadGridView__ to an ObservableCollection. This collection represents a dynamic data 
-        collection that provides notification when changes (add, move, remove) occur.
+The example bellow demonstrates how to bind the __RadGridView__ to an ObservableCollection. This collection represents a dynamic data collection that provides notification when changes (add, move, remove) occur.
         
 
->note This collection is available in .NET version 4.0 and above. For this reason it is only supported in the .NET4.0 version of our assemblies
-            (the ones with suffix .40), so please make sure you use those in order to take advantage of this functionality.
+>note This collection is available in .NET version 4.0 and above. For this reason it is only supported in the .NET4.0 version of our assemblies (the ones with suffix .40), so please make sure you use those in order to take advantage of this functionality.
 >
 
 
-The example creates an ObservableCollection of Person, initializes the collection and assigns it to the grid DataSource property.
-        There are also three buttons allowing the user to add, remove and move items from and in the collection. 
-        The changes in the collection are automatically reflected by the grid.
-        ![gridview-populating-with-data-binding-to- observable-collection 001](images/gridview-populating-with-data-binding-to- observable-collection001.png)
+The example creates an ObservableCollection of Person, initializes the collection and assigns it to the grid DataSource property. There are also three buttons allowing the user to add, remove and move items from and in the collection. The changes in the collection are automatically reflected by the grid.<br>![gridview-populating-with-data-binding-to- observable-collection 001](images/gridview-populating-with-data-binding-to- observable-collection001.png)
 
-1. First place a RadGridView and 3 buttons on a blank form. Name the buttons accordingly:
-            ![gridview-populating-with-data-binding-to- observable-collection 002](images/gridview-populating-with-data-binding-to- observable-collection002.png)
+1\. First place a RadGridView and 3 buttons on a blank form. Name the buttons accordingly:<br>![gridview-populating-with-data-binding-to- observable-collection 002](images/gridview-populating-with-data-binding-to- observable-collection002.png)
 
-1. Add the following sample class to the project:
-            #_[C#] Creating sample class _
-
-	
-
-
+2\. Add the following sample class to the project:
 
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=SampleClass}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=SampleClass}} 
@@ -101,15 +90,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-1. Define the collection along with the function that initializes it:
-            #_[C#] Defining the collection_
-
-	
-
-
+3\. Define the collection along with the function that initializes it:
 
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Collection}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Collection}} 
@@ -141,15 +122,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-1. Add the following event handlers for the buttons:
-            #_[C#] Add new record to the collection_
-
-	
-
-
+4\. Add the following event handlers for the buttons:
 
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Add}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Add}} 
@@ -168,13 +141,6 @@ End Class
 ````
 
 {{endregion}} 
-
-
-#_[C#] Remove a record from the collection_
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Remove}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Remove}} 
@@ -199,13 +165,6 @@ End Class
 
 {{endregion}} 
 
-
-#_[C#] Change a record position_
-
-	
-
-
-
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Move}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Move}} 
 
@@ -227,12 +186,7 @@ End Class
 
 
 
-1. Finally just call the InitializeCollection method to populate the collection and bind the __RadGridView__ to it:
-            #_[C#] Binding to the collection_
-
-	
-
-
+5\. Finally just call the InitializeCollection method to populate the collection and bind the __RadGridView__ to it
 
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Binding}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Binding}} 
@@ -253,9 +207,6 @@ End Class
 ````
 
 {{endregion}} 
-
-
-
 
 Now each change you introduce to the collection by pressing the buttons will be automatically reflected in __RadGridView__.
         

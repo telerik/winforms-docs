@@ -17,27 +17,13 @@ position: 3
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[RadGridView for WinForms Hierarchy Overview](http://tv.telerik.com/winforms/radgrid/radgridview-winforms-hierarchy-overview)In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)|
->caption 
+|[RadGridView for WinForms Hierarchy Overview](http://tv.telerik.com/watch/winforms/radgrid/radgridview-winforms-hierarchy-overview)<br>In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)|![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 001](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically001.png)|
 
-![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 001](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically001.png)|
-
-There are many cases when you wouldn't want to include the whole dataset and
-          hierarchy in your application. In such cases you cannot use the automatically
-          mode for hierarchical data binding and you will need to set up the hierarchy in
-          code manually.
-        
+There are many cases when you wouldn't want to include the whole dataset and hierarchy in your application. In such cases you cannot use the automatically mode for hierarchical data binding and you will need to set up the hierarchy in code manually.
 
 ## Setting the hierarchical grid in bound mode
 
-For setting the hierarchy, you will need the special
-          __GridViewRelation__ class, which defines the related field in
-          parent and child tables. Consider the sample below:
-        #_[C#] Setting the hierarchical grid in bound mode_
-
-	
-
-
+For setting the hierarchy, you will need the special __GridViewRelation__ class, which defines the related field in parent and child tables. Consider the sample below:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\BindingToHierarchicalGridProgramatically.cs region=BindingToHierarchicalGridProgramatically}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\BindingToHierarchicalGridProgramatically.vb region=BindingToHierarchicalGridProgramatically}} 
@@ -89,19 +75,11 @@ For setting the hierarchy, you will need the special
 
 
 
-You can also set the relation in design-time, using the provided collection
-          editor as in the figure below:
-        ![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 005](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically005.png)
+You can also set the relation in design-time, using the provided collection editor as in the figure below:<br>![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 005](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically005.png)
 
 ## Setting the Multi-Level hierarchy in bound mode
 
-It is possible to manually set up the child templates and the relations between them in order to build a Multi-level hierarchy as well.
-          The code snippet below demonstrates the approach, which uses three data tables from the Northwind database:
-        ![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 002](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically002.png)#_[C#] Creating Three-level hierarchical grid in bound mode_
-
-	
-
-
+It is possible to manually set up the child templates and the relations between them in order to build a Multi-level hierarchy as well. The code snippet below demonstrates the approach, which uses three data tables from the Northwind database:<br>![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 002](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically002.png)
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\BindingToHierarchicalGridProgramatically.cs region=creatingMultiLevelHierarchicalGridInUnboundMode}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\BindingToHierarchicalGridProgramatically.vb region=creatingMultiLevelHierarchicalGridInUnboundMode}} 
@@ -179,20 +157,10 @@ It is possible to manually set up the child templates and the relations between 
 
 ## Hierarchical Grid in Unbound mode
 
-Setting the hierarchical grid in unbound mode is quite similar to that for the bound mode with only difference is
-          setting the unbound mode itself. First of all you need to create and the columns you need. After that set up the
-          relation and finally load the data.
-        
+Setting the hierarchical grid in unbound mode is quite similar to that for the bound mode with only difference is setting the unbound mode itself. First of all you need to create and the columns you need. After that set up the relation and finally load the data.
 
->note Note that the GridViewRelation is created by using the GridViewDataColumn.Name, not the FieldName. As in the example below
-            it is best if you create the column and pass the FieldName in the column's constructor. This will automatically set its Name
-            to the same value.
+>note Note that the GridViewRelation is created by using the GridViewDataColumn.Name, not the FieldName. As in the example below it is best if you create the column and pass the FieldName in the column's constructor. This will automatically set its Name to the same value.
 >
-#_[C#] Creating hierarchical grid in unbound mode_
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\UnboundMode.cs region=creatingHierarchicalGridInUnboundMode}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\UnboundMode.vb region=creatingHierarchicalGridInUnboundMode}} 
@@ -387,17 +355,9 @@ Setting the hierarchical grid in unbound mode is quite similar to that for the b
 
 {{endregion}} 
 
-
-
-
 ## Multi-level hierarchical Grid in Unbound mode
 
 Following the introduced approach in the previous section, the three-level hierarchy can be loaded in unbound mode as follows:
-        #_[C#] Creating Three-level hierarchical grid in unbound mode_
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\UnboundMode.cs region=creatingMultiLevelHierarchicalGridInUnboundMode}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\UnboundMode.vb region=creatingMultiLevelHierarchicalGridInUnboundMode}} 

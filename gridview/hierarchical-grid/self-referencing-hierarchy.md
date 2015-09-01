@@ -15,33 +15,17 @@ position: 9
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Binding RadGridView for WinForms to a Self Referencing Hierarchy](http://tv.telerik.com/watch/winforms/binding-radgridview-for-winforms-to-self-referencing-hierarchy)In this video, you will learn how to display a self referencing hierarchy inside of RadGridView for WinForms.|![gridview-hierarchical-grid-self-referencing-hierarchy 002](images/gridview-hierarchical-grid-self-referencing-hierarchy002.png)|
+|[Binding RadGridView for WinForms to a Self Referencing Hierarchy](http://tv.telerik.com/watch/winforms/binding-radgridview-for-winforms-to-self-referencing-hierarchy)<br>In this video, you will learn how to display a self referencing hierarchy inside of RadGridView for WinForms.|![gridview-hierarchical-grid-self-referencing-hierarchy 002](images/gridview-hierarchical-grid-self-referencing-hierarchy002.png)|
 
-Except displaying hierarchical data and applying some custom criteria about when the subset
-        of data to be displayed, the RadGridView allows you to define a relation that points back to
-        the same table. In the cases when the hierarchical data is build from one type of items you can
-        use a self referencing RadGridView to display the data.
-      
+Except displaying hierarchical data and applying some custom criteria about when the subset of data to be displayed, the RadGridView allows you to define a relation that points back to the same table. In the cases when the hierarchical data is build from one type of items you can use a self referencing RadGridView to display the data.
 
 ## Self-Referencing Example
 
-The following example demonstrates how RadGridView displays a hierarchy based on the
-          data provided by the file system where one folder can have files and folders that can have
-          other files and folders, etc.
-        ![gridview-hierarchical-grid-self-referencing-hierarchy 001](images/gridview-hierarchical-grid-self-referencing-hierarchy001.png)
+The following example demonstrates how RadGridView displays a hierarchy based on the data provided by the file system where one folder can have files and folders that can have other files and folders, etc.<br>![gridview-hierarchical-grid-self-referencing-hierarchy 001](images/gridview-hierarchical-grid-self-referencing-hierarchy001.png)
 
-In order to achieve the look of the RadGridView from the screenshot above, we
-          need to follow these steps:
-        
+In order to achieve the look of the RadGridView from the screenshot above, we need to follow these steps:
 
-1. Create a datasource with an appropriate structure where each data record contains Id
-              that serves as a unique identifier for the record and ParentId that determines the parent of the data record.
-              In our case this is a business object of type FileSystemItem that can serve as a folder and as a document.
-            #_[C#]_
-
-	
-
-
+1\. Create a datasource with an appropriate structure where each data record contains Id that serves as a unique identifier for the record and ParentId that determines the parent of the data record. In our case this is a business object of type FileSystemItem that can serve as a folder and as a document.
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\FileSystemItem.cs region=fileSystemItem}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\FileSystemItem.vb region=fileSystemItem}} 
@@ -192,16 +176,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-1. Fill a BindingList with objects of type FileSystemItem. The content of the list will depend on the
-              content of the "C:\Program Files (x86)\Telerik" folder:
-            #_[C#]_
-
-	
-
-
+2\. Fill a BindingList with objects of type FileSystemItem. The content of the list will depend on the content of the "C:\Program Files (x86)\Telerik" folder:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\SelfReferencingHierarchy.cs region=fillingList}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=fillingList}} 
@@ -253,18 +228,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-1. The most important step of this example - setting up the Self Referencing mode of RadGridView. To do this, you should
-              call the __AddSelfReference__ method of the __Relations__ collection
-              passing the template that should reflect the structure of the business object and the properties that should
-              determine the parent-child relation:
-            #_[C#]_
-
-	
-
-
+3\. The most important step of this example - setting up the Self Referencing mode of RadGridView. To do this, you should call the __AddSelfReference__ method of the __Relations__ collection passing the template that should reflect the structure of the business object and the properties that should determine the parent-child relation:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\SelfReferencingHierarchy.cs region=addSelfReference}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=addSelfReference}} 
@@ -281,16 +245,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-1. Hide the columns that are not useful to your clients. These columns in our case are Id, ParentFolderId and
-              FileSystemInfoType:
-            #_[C#]_
-
-	
-
-
+4\. Hide the columns that are not useful to your clients. These columns in our case are Id, ParentFolderId and FileSystemInfoType:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\SelfReferencingHierarchy.cs region=hideColumns}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=hideColumns}} 
@@ -309,18 +264,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-1. Last, but not least, you may want to show different images depending on the actual file system types of the data records.
-              To do this, you should handle the CellFormatting event, check if the FileSystemInfoType is
-              *File* or *Folder* and
-              set the appropriate image accordingly:
-            #_[C#]_
-
-	
-
-
+5\. Last, but not least, you may want to show different images depending on the actual file system types of the data records. To do this, you should handle the CellFormatting event, check if the FileSystemInfoType is *File* or *Folder* and set the appropriate image accordingly:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\SelfReferencingHierarchy.cs region=settingImagesToCells}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=settingImagesToCells}} 
@@ -401,18 +345,9 @@ End Class
 
 {{endregion}} 
 
-
-
-
 This is it! In just a few steps we created a good looking self-referencing multi-column tree.
 
-It is possible to put the self-reference expander in any column by setting the __SelfReferenceExpanderColumn__ property 
-          of the __MasterTemplate__:
-        ![gridview-hierarchical-grid-self-referencing-hierarchy 003](images/gridview-hierarchical-grid-self-referencing-hierarchy003.png)#_[C#] Setting the SelfReferenceExpanderColumn_
-
-	
-
-
+It is possible to put the self-reference expander in any column by setting the __SelfReferenceExpanderColumn__ property  of the __MasterTemplate__: <br>![gridview-hierarchical-grid-self-referencing-hierarchy 003](images/gridview-hierarchical-grid-self-referencing-hierarchy003.png)
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\SelfReferencingHierarchy.cs region=SelfReferenceExpanderColumn}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=SelfReferenceExpanderColumn}} 

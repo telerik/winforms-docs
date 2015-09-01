@@ -19,10 +19,7 @@ position: 8
 
 ## 
 
-In many cases you may need to load your data not when RadGridView is being initialized, but at a later moment, when you interact with
-          RadGridView or with your application. For example, a child template can be loaded on demand to delay the initialization of a
-          resource-demanding feature of the application until it is required.
-          In order to load a GridViewTemplate on demand, you should follow these high-level steps:
+In many cases you may need to load your data not when RadGridView is being initialized, but at a later moment, when you interact with RadGridView or with your application. For example, a child template can be loaded on demand to delay the initialization of a resource-demanding feature of the application until it is required. In order to load a GridViewTemplate on demand, you should follow these high-level steps:
         
 
 1. Create and define a columns schema for the presented data at the first level of the hierarchy.
@@ -35,20 +32,12 @@ In many cases you may need to load your data not when RadGridView is being initi
 
 ## Sample load-on-demand scenario
 
-The following example shows a load-on-demand scenario using a typed DataSet.
-          Let have the following Products data from the AdventureWorks database:
-        ![gridview-hierarchical-grid-load-on-demand-hierarchy 001](images/gridview-hierarchical-grid-load-on-demand-hierarchy001.png)
+The following example shows a load-on-demand scenario using a typed DataSet.  Let have the following Products data from the AdventureWorks database:<br>![gridview-hierarchical-grid-load-on-demand-hierarchy 001](images/gridview-hierarchical-grid-load-on-demand-hierarchy001.png)
 
 Steps to create a Load-On-Demand hierarchy mode:
         
 
-1. First, create a columns schema for the first (parent) level of the hierarchy. If RadGridView is in a data-bound mode and we do not need to set a
-            custom schema, we can just set the DataSource property of RadGridView which will set the schema and will populate the parent level with data. 
-            You can also set the AutoSizeColumnsMode to Fill to get a better view of the data:#_[C#] Defining the child template_
-
-	
-
-
+1\. First, create a columns schema for the first (parent) level of the hierarchy. If RadGridView is in a data-bound mode and we do not need to set a custom schema, we can just set the DataSource property of RadGridView which will set the schema and will populate the parent level with data. You can also set the AutoSizeColumnsMode to Fill to get a better view of the data:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\LoadOnDemandHierarchy.cs region=bindingRadGridView}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\LoadOnDemandHierarchy.vb region=bindingRadGridView}} 
@@ -65,14 +54,7 @@ Steps to create a Load-On-Demand hierarchy mode:
 
 {{endregion}} 
 
-
-
-
-1. Then, create a Child template and a columns schema for the "Product" data:#_[C#] Defining the child template_
-
-	
-
-
+2\. Then, create a Child template and a columns schema for the "Product" data:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\LoadOnDemandHierarchy.cs region=childTemplate}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\LoadOnDemandHierarchy.vb region=childTemplate}} 
@@ -122,14 +104,7 @@ Steps to create a Load-On-Demand hierarchy mode:
 
 {{endregion}} 
 
-
-
-
-1. Setup the load-on-demand mode by using GridViewEventDataProvider and RowSourceNeeded event:#_[C#] Setting up the load-on-demand mode_
-
-	
-
-
+3\. Setup the load-on-demand mode by using GridViewEventDataProvider and RowSourceNeeded event:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\LoadOnDemandHierarchy.cs region=loadOnDemandMode}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\LoadOnDemandHierarchy.vb region=loadOnDemandMode}} 
@@ -166,16 +141,9 @@ Steps to create a Load-On-Demand hierarchy mode:
 
 
 
-1. Load the data on demand for an expanded parent row by using the RowSourceNeeded event:
+4\. Load the data on demand for an expanded parent row by using the RowSourceNeeded event:
 
->important You should make sure that there is a relation between the tables in the dataset. In the bellow example the relation name is
-                "ProductModel_Product" and the relation is between the ProductModelID field in both tables.
->
-#_[C#] Handling RowSourceNeeded event_
-
-	
-
-
+>important You should make sure that there is a relation between the tables in the dataset. In the bellow example the relation name is "ProductModel_Product" and the relation is between the ProductModelID field in both tables.
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\LoadOnDemandHierarchy.cs region=handlingRowSourceNeeded}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\LoadOnDemandHierarchy.vb region=handlingRowSourceNeeded}} 
@@ -223,8 +191,5 @@ Steps to create a Load-On-Demand hierarchy mode:
 ````
 
 {{endregion}} 
-
-
-
 
 This new event based hierarchy mode can be used in different lazy loading scenarios including ORM frameworks, WCF services or complex business objects.

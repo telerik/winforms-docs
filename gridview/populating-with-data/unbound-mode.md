@@ -24,11 +24,7 @@ When in unbound mode of RadGridView does not use a data source to generate its
 
 You can create a grid with empty rows and columns and let the user fill the data. You should add columns to the __Columns__ collection of the corresponding __GridViewTemplate__ (or __RadGridView__ in cases of flat grid). Then you should set the __RowCount__ property to the number of desired rows. The grid does take into account the number of the rows that are already set (as described further in this topic). If you have explicitly set 5 rows and set __RowCount__ to 10, __RadGridView__ will add 5 more empty rows so that the total number will be 10. 
 
-The following code demonstrates how to create a grid with two columns and ten rows: #_[C#] Creating empty grid_
-
-	
-
-
+The following code demonstrates how to create a grid with two columns and ten rows: 
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\UnboundMode.cs region=creatingEmptyGrid}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\UnboundMode.vb region=creatingEmptyGrid}} 
@@ -50,21 +46,11 @@ The following code demonstrates how to create a grid with two columns and ten ro
 
 {{endregion}} 
 
-
-
-
-The result from the code above is on the screenshot below:
->caption 
-
-![gridview-populating-with-data-unbound-mode 001](images/gridview-populating-with-data-unbound-mode001.png)
+The result from the code above is on the screenshot below:<br>![gridview-populating-with-data-unbound-mode 001](images/gridview-populating-with-data-unbound-mode001.png)
 
 ## Adding rows programmatically (through Cells collection)
 
-In this scenario, you should add the data for each cell in the row, specifying the cell index or the column name. Note that you should first create the columns:#_[C#] Adding rows through Cells collection_
-
-	
-
-
+In this scenario, you should add the data for each cell in the row, specifying the cell index or the column name. Note that you should first create the columns:
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\UnboundMode.cs region=addingRowsThroughCellsCollection}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\UnboundMode.vb region=addingRowsThroughCellsCollection}} 
@@ -96,25 +82,13 @@ In this scenario, you should add the data for each cell in the row, specifying t
 
 {{endregion}} 
 
-
-
-
-The code above results in the following grid: 
-
-
->caption 
-
-![gridview-populating-with-data-unbound-mode 002](images/gridview-populating-with-data-unbound-mode002.png)
+The code above results in the following grid:<br>![gridview-populating-with-data-unbound-mode 002](images/gridview-populating-with-data-unbound-mode002.png)
 
 
 
 ## Adding rows programmatically (through Rows collection)
 
-You can have the same result as the picture above by adding the rows data using the Add method of the Rows collection: #_[C#] Adding data through Rows collection_
-
-	
-
-
+You can have the same result as the picture above by adding the rows data using the Add method of the Rows collection: 
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\UnboundMode.cs region=addingRowsThroughRowsCollection}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\UnboundMode.vb region=addingRowsThroughRowsCollection}} 
@@ -138,17 +112,9 @@ You can have the same result as the picture above by adding the rows data using 
 
 {{endregion}} 
 
-
-
-
 ## Hierarchical Grid in Unbound mode
 
 Setting the hierarchical grid in unbound mode is quite similar to that for the bound mode with only difference is setting the unbound mode itself. First of all you need to create and the columns you need. After that set up the relation and finally load the data.
-  #_[C#] Creating hierarchical grid in unbound mode_
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\UnboundMode.cs region=creatingHierarchicalGridInUnboundMode}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\UnboundMode.vb region=creatingHierarchicalGridInUnboundMode}} 

@@ -14,11 +14,7 @@ position: 0
 
 ## 
 
-You can programmatically access your child templates using __RadGridView.MasterGridViewTemplate.ChildGridViewTemplates__templates collection. For example to modify __AutoSizeColumnsMode__to __Fill__ in the first child template use the following code:#_[C#] Accessing child templates_
-
-	
-
-
+You can programmatically access your child templates using __RadGridView.MasterGridViewTemplate.ChildGridViewTemplates__ templates collection. For example to modify __AutoSizeColumnsMode__ to __Fill__ in the first child template use the following code:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=AccessingChildTemplates}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=AccessingChildTemplates}} 

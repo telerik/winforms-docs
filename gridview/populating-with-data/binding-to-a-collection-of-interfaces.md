@@ -12,18 +12,11 @@ position: 15
 
 
 
-There may be a case where you want to bind RadGridView to a collection of interfaces in order to be as abstract as possible or due to other reasons.
-        RadGridView does not support this out of the box since when a new item is added its parameterless constructor is being invoked and interfaces cannot be created
-        in such a way. The solution is to override the __AddNew__ method of the __GridViewListSource__.
-      
+There may be a case where you want to bind RadGridView to a collection of interfaces in order to be as abstract as possible or due to other reasons. adGridView does not support this out of the box since when a new item is added its parameterless constructor is being invoked and interfaces cannot be created in such a way. The solution is to override the __AddNew__ method of the __GridViewListSource__.
 
 ## 
 
-First, we will need to create a custom GridViewListSource:#_[C#] Creating sample class _
-
-	
-
-
+First, we will need to create a custom GridViewListSource:
 
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToCollectionOfInterfaces.cs region=GridCode}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToCollectionOfInterfaces.vb region=GridCode}} 
@@ -140,14 +133,7 @@ First, we will need to create a custom GridViewListSource:#_[C#] Creating sample
 
 {{endregion}} 
 
-
-
-
-The GridObj type is a type, which inherits from the interface, which you have bound your RadGridView. Consider the following example:#_[C#] Creating sample class _
-
-	
-
-
+The GridObj type is a type, which inherits from the interface, which you have bound your RadGridView. Consider the following example:
 
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToCollectionOfInterfaces.cs region=ExampleCode}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToCollectionOfInterfaces.vb region=ExampleCode}} 
@@ -237,9 +223,6 @@ The GridObj type is a type, which inherits from the interface, which you have bo
 ````
 
 {{endregion}} 
-
-
-
 
 You will notice that we are creating a __BindingList__ of __IGridObject__, because the new items are manually added and this way the grid will be notified for the new objects.
           

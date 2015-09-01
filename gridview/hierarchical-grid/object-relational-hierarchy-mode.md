@@ -19,7 +19,7 @@ position: 7
 | ------ | ------ |
 |[Creating Object Relational Hierarchies in RadGridView for WinForms](http://tv.telerik.com/watch/winforms/creating-object-relational-hierarchies-in-radgridview-for-winforms)In this video, you will learn how to automatically and manually create object relational hierarchies in RadGridView for WinForms.|![gridview-hierarchical-grid-object-relational-hierarchy-mode 005](images/gridview-hierarchical-grid-object-relational-hierarchy-mode005.png)|
 
->note In case you are using Telerik Open Access ORM, here you can find additional information regarding[Creating New Domain Model](http://documentation.telerik.com/openaccess-orm/developers-guide/openaccess-orm-domain-model/model-definition-basics/openaccess-tasks-update-schema-mechanisms-update-db-from-model)
+>note In case you are using Telerik Open Access ORM, here you can find additional information regarding [Creating New Domain Model](http://documentation.telerik.com/openaccess-orm/developers-guide/openaccess-orm-domain-model/model-definition-basics/openaccess-tasks-update-schema-mechanisms-update-db-from-model)
 >
 
 
@@ -29,11 +29,7 @@ The Object-Relational Hierarchy mode is used to show hierarchy based on a comple
 
 In order to create an Object-Relational Hierarchy automatically in this scenario, you must set only the DataSource and the AutoGenerateHierarachy properties of RadGridView.
 
-Here is an example with an entity model using the Northwind database:![](images/gridview-hierarchical-grid-object-relational-hierarchy-mode001.png)#_[C#] Example of automatically generating hierarchy mode_
-
-	
-
-
+Here is an example with an entity model using the Northwind database:<br>![](images/gridview-hierarchical-grid-object-relational-hierarchy-mode001.png)
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\AutoGenerateObjectRelationHierarchyMode.cs region=AutoGenerateObjectRelationHierarchyMode}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\AutoGenerateObjectRelationHierarchyMode.vb region=AutoGenerateObjectRelationHierarchyMode}} 
@@ -72,11 +68,7 @@ The Object-Relational hierarchy mode can be setup manually by creating the Child
 >
 
 
-The following example demonstrates how you can manually build an Object-Relational Hierarchy using the "Customers" entity model from the Northwind database:![](images/gridview-hierarchical-grid-object-relational-hierarchy-mode003.png)#_[C#] Example of manually generating hierarchy mode_
-
-	
-
-
+The following example demonstrates how you can manually build an Object-Relational Hierarchy using the "Customers" entity model from the Northwind database:<br>![](images/gridview-hierarchical-grid-object-relational-hierarchy-mode003.png)
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\ManualGenerateObjectRelationalMode.cs region=ManualGenerateObjectRelationalMode}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\ManualGenerateObjectRelationalMode.vb region=ManualGenerateObjectRelationalMode}} 

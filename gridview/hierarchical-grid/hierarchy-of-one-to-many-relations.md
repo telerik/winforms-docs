@@ -14,7 +14,7 @@ position: 6
 
 ## 
 
-__RadGridView__ supports binding to a hierarchy containing one to many relations. The result is presented in tabs inside child views.![grid-hierarchical-grid-hierarchy-of-one-to-many-relations 001](images/grid-hierarchical-grid-hierarchy-of-one-to-many-relations001.png)
+__RadGridView__ supports binding to a hierarchy containing one to many relations. The result is presented in tabs inside child views.<br>![grid-hierarchical-grid-hierarchy-of-one-to-many-relations 001](images/grid-hierarchical-grid-hierarchy-of-one-to-many-relations001.png)
 
 Follow these steps to setup the hierarchy:
 
@@ -25,11 +25,6 @@ __2.__ Add at least two child templates and set their data source.
 __3.__ Add relations to connect the child templates with the master template.
 
 __4.__ Run the project.
-        #_[C#] Hierarchy of one to many relation_
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HierarchyOfOneToManyRelation.cs region=HierarchyOfOneToManyRelation}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HierarchyOfOneToManyRelation.vb region=HierarchyOfOneToManyRelation}} 
@@ -110,35 +105,13 @@ __4.__ Run the project.
 ````
 
 {{endregion}} 
-
-
-
-
 >note There is an example demonstrating how to build hierarchy containing one-to-many relations in the demo application.
 >
 
 
-## 
-    Formatting tabs
-    
-    
+## Formatting tabs
 
-In some cases you may want to set custom text to the tabs of the child views different than
-    the text of the template's caption. In this case, the solution is to use the 
-    [
-    
-    
-    Formatting events]({%slug winforms/gridview/cells/formatting-cells%})
-    that RadGridView exposes, and more specifically, the ViewCellFormatting event. This event will give you
-    access to the detail cell that contains the whole RadPageViewElement and from this element you will be
-    able to set the text of each tab separately. For example, if we need to display the count of the 
-    rows in each view, we can use the following code snippet in order to apply our custom text:
-    
-    #_[C#]_
-
-	
-
-
+In some cases you may want to set custom text to the tabs of the child views different than the text of the template's caption. In this case, the solution is to use the [Formatting events]({%slug winforms/gridview/cells/formatting-cells%}) that RadGridView exposes, and more specifically, the ViewCellFormatting event. This event will give you access to the detail cell that contains the whole RadPageViewElement and from this element you will be able to set the text of each tab separately. For example, if we need to display the count of the rows in each view, we can use the following code snippet in order to apply our custom text:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HierarchyOfOneToManyRelation.cs region=formattingTabs}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HierarchyOfOneToManyRelation.vb region=formattingTabs}} 
@@ -176,8 +149,4 @@ In some cases you may want to set custom text to the tabs of the child views dif
 
 {{endregion}} 
 
-
-
-
-The result is shown on the screenshot below:
-    ![gridview-hirarchical-grid-hierarchy-of-one-to-many-relations 002](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations002.png)
+The result is shown on the screenshot below:<br>![gridview-hirarchical-grid-hierarchy-of-one-to-many-relations 002](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations002.png)

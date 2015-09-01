@@ -14,10 +14,7 @@ position: 7
 
 ## 
 
-RadGridView supports out-of-the-box binding to sub objects by intuitive and simple 
-        	__dot (.)__ syntax (specified through the __FieldName__ 
-        	property of declaratively bound columns). The example below includes a "Person" class that has three 
-        	properties, one of which is a reference type "Car":
+RadGridView supports out-of-the-box binding to sub objects by intuitive and simple __dot (.)__ syntax (specified through the __FieldName__ property of declaratively bound columns). The example below includes a "Person" class that has three properties, one of which is a reference type "Car":
         
 
 * Name - string
@@ -27,10 +24,6 @@ RadGridView supports out-of-the-box binding to sub objects by intuitive and sim
 * Car - object Car
 
 Follows the implementation of the Person and the Car classes:#_[C#] Defining the Class and Sub Class_
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToSubObjects.cs region=classes}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToSubObjects.vb region=classes}} 
@@ -179,14 +172,7 @@ Follows the implementation of the Person and the Car classes:#_[C#] Defining the
 Lets populate a BindingList of Person with some objects and bind RadGridView.
         
 
-Binding RadGridView to "Person" automatically creates three columns for all properties of the Person object.
-        	The value properties are displayed correctly, but the reference proerty is displayed in "dot" notation 
-        	(see the third (Car) column in the screenshot below).
-        #_[C#] Binding RadGridView_
-
-	
-
-
+Binding RadGridView to "Person" automatically creates three columns for all properties of the Person object. The value properties are displayed correctly, but the reference proerty is displayed in "dot" notation (see the third (Car) column in the screenshot below).
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToSubObjects.cs region=bind radgridview}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToSubObjects.vb region=bind radgridview}} 
@@ -215,20 +201,9 @@ Binding RadGridView to "Person" automatically creates three columns for all prop
 
 {{endregion}} 
 
-
-
-
 ![gridview-populating-with-data-binding-to-subobjects 001](images/gridview-populating-with-data-binding-to-subobjects001.png)
 
-Now to setup the sub-property binding of the Car column, all you have to do is to declare in the 
-        	__FieldName__ property of the column, the name of the Car object property
-        	that you want to bind the column to (Model or Year), using the __dot__ notation:
-        	
-        #_[C#] Binding to Objects with Sub Objects_
-
-	
-
-
+Now to setup the sub-property binding of the Car column, all you have to do is to declare in the __FieldName__ property of the column, the name of the Car object property that you want to bind the column to (Model or Year), using the __dot__ notation:
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToSubObjects.cs region=add sub property binding}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToSubObjects.vb region=add sub property binding}} 
@@ -242,9 +217,6 @@ Now to setup the sub-property binding of the Car column, all you have to do is t
 ````
 
 {{endregion}} 
-
-
-
 
 The result is that the Car column is now bound to the Model property of the Car object
 

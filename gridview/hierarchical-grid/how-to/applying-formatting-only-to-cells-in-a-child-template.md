@@ -12,15 +12,11 @@ position: 3
 
 
 
-If the parent of the *view template *is not null, the cell element is located in a child template. 
+If the parent of the *view template* is not null, the cell element is located in a child template. 
 
 ## Example 1
 
-This idea is used in the code snippet below so that the backcolor of the cells located only in the child templates is changed:#_[C#] Changing the cells backcolor for cells located in a child template_
-
-	
-
-
+This idea is used in the code snippet below so that the backcolor of the cells located only in the child templates is changed:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=example1}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=example1}} 
@@ -54,11 +50,7 @@ This idea is used in the code snippet below so that the backcolor of the cells l
 
 ##  Example 2
 
-You can use the following code snippet to change the header height of the first level child template:#_[C#] Changing the child template header row height_
-
-	
-
-
+You can use the following code snippet to change the header height of the first level child template:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=example2}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=example2}} 

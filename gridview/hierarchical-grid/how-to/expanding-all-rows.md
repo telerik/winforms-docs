@@ -14,12 +14,7 @@ position: 1
 
 ## 
 
-In order to expand all rows in __RadGridView__ you have to iterate through them and set the __IsExpanded__ 
-        property to __true__:#_[C#] Expanding all rows of RadGridView_
-
-	
-
-
+In order to expand all rows in __RadGridView__ you have to iterate through them and set the __IsExpanded__ property to __true__:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=expandAllRows}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=expandAllRows}} 

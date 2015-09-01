@@ -12,40 +12,22 @@ position: 12
 
 
 
-RadGridView can display data in bound mode, unbound mode and virtual mode. 
-      The bound mode is suitable for managing data using automatic interaction with the data store. 
-      One very common use of the RadGridView control is binding to a table from a database.
-      
+RadGridView can display data in bound mode, unbound mode and virtual mode. The bound mode is suitable for managing data using automatic interaction with the data store. One very common use of the RadGridView control is binding to a table from a database.
 
-However, the workflow and the specifications of the various applications can be different. 
-      Some applications may require updating the data base when the end-user is up to exit the applications. 
-      In other cases the end-user may be required to click a special button in order to update the database. 
-      
+However, the workflow and the specifications of the various applications can be different. Some applications may require updating the data base when the end-user is up to exit the applications. In other cases the end-user may be required to click a special button in order to update the database. 
 
-In the third type of cases, on which are going to focus this article, you may need to update the data base
-      right after the end-user finishes modifying a single value of RadGridView. 
-      In order to be able to implement this functionality, you can handle the events of
-      RadGridView or its BindingSource.
+In the third type of cases, on which are going to focus this article, you may need to update the data base right after the end-user finishes modifying a single value of RadGridView. In order to be able to implement this functionality, you can handle the events ofRadGridView or its BindingSource.
       
 
 In the following sample scenario we are going to demonstrate how the implementation can be achieved.
       
 
-Let's assume that we have an ADO.NET DataTable that loads its data from a SqlDataAdapter and it 
-      is bound to a BindingSource component. Further, the BindingSource component is bound to RadGridView control. 
+Let's assume that we have an ADO.NET DataTable that loads its data from a SqlDataAdapter and it is bound to a BindingSource component. Further, the BindingSource component is bound to RadGridView control. 
       
 
 ## Updating the database when the current row is changed
 
-This approach allows us to update the database when the end-user 
-        changes the current row in RadGridView. To commit the data to the database in this case, 
-        we can use the BindingSource CurrentItemChanged event, but we also need to use one 
-        additional member to save the last edited row instance. Here is a solution using this approach:
-        #_[C#]_
-
-	
-
-
+This approach allows us to update the database when the end-user changes the current row in RadGridView. To commit the data to the database in this case, we can use the BindingSource CurrentItemChanged event, but we also need to use one additional member to save the last edited row instance. Here is a solution using this approach:
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\AutoSavingDataBSEventsForm.cs region=bindingSource}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\AutoSavingDataBSEventsForm.vb region=bindingSource}} 
@@ -120,20 +102,10 @@ This approach allows us to update the database when the end-user
 
 ## Updating the database on row added/deleted or when the current row is changed
 
-In the context of RadGridView, we can use a combination of events to produce 
-        optimized codebase to support the auto-saving feature. 
-        These events are UserAddedRow, UserDeletingRow, UserDeletedRow and CurrentRowChanged.
+In the context of RadGridView, we can use a combination of events to produce optimized codebase to support the auto-saving feature. These events are UserAddedRow, UserDeletingRow, UserDeletedRow and CurrentRowChanged.
         
 
-Here is how we can update the database when the end-user __deletes__ a row. Basically,
-          we need to handle the UserDeletingRow and UserDeletedRows events. If several rows are selected
-          and deleted at once, these events will be fired only once and their e.Rows collection will contain
-          all the deleted rows:
-        #_[C#]_
-
-	
-
-
+Here is how we can update the database when the end-user __deletes__ a row. Basically, we need to handle the UserDeletingRow and UserDeletedRows events. If several rows are selected and deleted at once, these events will be fired only once and their e.Rows collection will contain all the deleted rows:
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\AutoSavingDataGridEvents.cs region=deletingRows}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\AutoSavingDataGridEvents.vb region=deletingRows}} 
@@ -196,13 +168,7 @@ Here is how we can update the database when the end-user __deletes__ a row. Basi
 
 
 
-And this is how we can update the database when the user __adds__ a new row. The UserAddedRow event
-        should be handled in this case:
-        #_[C#]_
-
-	
-
-
+And this is how we can update the database when the user __adds__ a new row. The UserAddedRow event should be handled in this case:
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\AutoSavingDataGridEvents.cs region=addingRows}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\AutoSavingDataGridEvents.vb region=addingRows}} 
@@ -228,17 +194,7 @@ And this is how we can update the database when the user __adds__ a new row. The
 
 {{endregion}} 
 
-
-
-
-When the user __changes the current__ row, you can update the database not only by using 
-        the CurrentItemChanged event of the BindingSource, but by handling the CurrentRowChanged
-        event of RadGridView as well:
-        #_[C#]_
-
-	
-
-
+When the user __changes the current__ row, you can update the database not only by using the CurrentItemChanged event of the BindingSource, but by handling the CurrentRowChanged event of RadGridView as well:
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\AutoSavingDataGridEvents.cs region=changingCurrentRow}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\AutoSavingDataGridEvents.vb region=changingCurrentRow}} 
@@ -286,15 +242,7 @@ When the user __changes the current__ row, you can update the database not only 
 
 ## Updating the database when a single cell value is changed
 
-The above solutions will come in handy in many cases. However, in some
-          scenarios the database may have to be updated immediately after the user edits a single cell,
-          without changing the current row. For this case, you have to handle the CellValueChanged
-          event as shown below:
-        #_[C#]_
-
-	
-
-
+The above solutions will come in handy in many cases. However, in some scenarios the database may have to be updated immediately after the user edits a single cell, without changing the current row. For this case, you have to handle the CellValueChanged event as shown below:
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\AutoSavingDataGridEvents.cs region=changingValue}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\AutoSavingDataGridEvents.vb region=changingValue}} 
@@ -332,13 +280,5 @@ The above solutions will come in handy in many cases. However, in some
 
 {{endregion}} 
 
-
-
-
-IEditableObject provides functionality to commit or rollback changes to an object that is used
-        as a data source. The DataTable object supports this functionality. If the current item is
-        changed in the associated CurrencyManager, the EndEdit operation is called automatically -
-        it is processed when there the current row of RadGridView is changed (to another row).
-        The EndEdit operation in this implementation is needed to commit the changes that happen
-        in the current row itself even if the current row of RadGridView is not changed (to another row).
+IEditableObject provides functionality to commit or rollback changes to an object that is used as a data source. The DataTable object supports this functionality. If the current item is changed in the associated CurrencyManager, the EndEdit operation is called automatically - it is processed when there the current row of RadGridView is changed (to another row). The EndEdit operation in this implementation is needed to commit the changes that happen in the current row itself even if the current row of RadGridView is not changed (to another row).
         

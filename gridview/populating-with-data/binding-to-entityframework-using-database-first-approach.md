@@ -12,25 +12,13 @@ position: 13
 
 
 
-This article demonstrates how to build a hierarchical Grid using Entity Framework and Database first approach.
-      ![gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach 001](images/gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach001.png)
+This article demonstrates how to build a hierarchical Grid using Entity Framework and Database first approach.<br>![gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach 001](images/gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach001.png)
 
 ## Installing and Configuring Entity Framework
 
-In order to download Entity Framework you can follow this MSDN article - 
-          [
-              Get Entity Framework
-            ](
-            http://msdn.microsoft.com/en-us/data/ee712906.aspx
-          ). If you are using Visual Studio version below 2012 you may need to install the NuGet package manager -
-          [
-              Installing NuGet
-            ](
-            http://docs.nuget.org/docs/start-here/installing-nuget
-          )
+In order to download Entity Framework you can follow this MSDN article - [Get Entity Framework](http://msdn.microsoft.com/en-us/data/ee712906.aspx). If you are using Visual Studio version below 2012 you may need to install the NuGet package manager - [Installing NuGet](http://docs.nuget.org/docs/start-here/installing-nuget)
 
 After you have installed Entity Framework, follow these steps:
-        
 
 1. Right-click on your Project in Visual Studio and choose Add > New Item
             ![gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach 002](images/gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach002.png)
@@ -51,12 +39,7 @@ Now our Models should be generated.
 
 ## Configure RadGridView to work with EntityFramework
 
-1. Add RadGridView to the Form and then in the code behind add an instance of the DbContext which will provide us access to the data in the database
-            #_[C#]_
-
-	
-
-
+1\. Add RadGridView to the Form and then in the code behind add an instance of the DbContext which will provide us access to the data in the database
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.cs region=addDbContext}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=addDbContext}} 
@@ -74,16 +57,11 @@ Now our Models should be generated.
 
 
 
->note When binding RadGridView we will be using the Local property of DbSet. The Local property provides access to the data without a query being sent to the database.  It is also in sync with the
-                DbSet. For example, if an entry is deleted from the Local property,  the next time a query is executed it will be deleted from the database.
+>note When binding RadGridView we will be using the Local property of DbSet. The Local property provides access to the data without a query being sent to the database.  It is also in sync with the DbSet. For example, if an entry is deleted from the Local property,  the next time a query is executed it will be deleted from the database.
 >
 
 
-1. Add the following code to your Form’s constructor:#_[C#]_
-
-	
-
-
+2\. Add the following code to your Form’s constructor:
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.cs region=addDataSource}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=addDataSource}} 
@@ -101,21 +79,13 @@ Now our Models should be generated.
 {{endregion}} 
 
 
-These extension methods are located in the System.Data.Entity namespace. As the Local property represents the local data, we need to first Load the data from the Database. Then by calling
-              ToBindingList we make sure that our RadGridView and the Local data will be in sync.
-            
+These extension methods are located in the System.Data.Entity namespace. As the Local property represents the local data, we need to first Load the data from the Database. Then by calling ToBindingList we make sure that our RadGridView and the Local data will be in sync.
 
 >note When adding new rows in RadGridView by default the Id cell of the new rows will be 0 since the data was not send to the database, therefore no UniqueId has been assigned yet.
 >
 
 
-1. Now we just need to add the the relation between the Customers and Orders tables:
-
-            #_[C#]_
-
-	
-
-
+3\. Now we just need to add the the relation between the Customers and Orders tables:
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.cs region=addRelation}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=addRelation}} 
@@ -155,12 +125,7 @@ These extension methods are located in the System.Data.Entity namespace. As the 
 
 
 
-1. The final step is to save the changes to the database when the form closes. For this purpose we need to subscribe to the FormClosing event of the Form and add the following code in the event handle:
-            #_[C#]_
-
-	
-
-
+4\. The final step is to save the changes to the database when the form closes. For this purpose we need to subscribe to the FormClosing event of the Form and add the following code in the event handle:
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.cs region=saveChanges}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=saveChanges}} 
@@ -174,8 +139,5 @@ These extension methods are located in the System.Data.Entity namespace. As the 
 ````
 
 {{endregion}} 
-
-
-
 
 Now, if you run your application you should see the hierarchical data.
