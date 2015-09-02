@@ -15,25 +15,14 @@ position: 0
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with the WinForms RadPdfViewer](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-the-winforms-radpdfviewer)RadPdfViewer enables you to easily load and display PDF documents natively in your app without
-              using any third-party tools except Telerik’s WinForms toolbox. Thanks to its built-in UI virtualization,
-              RadPdfViewer delivers a performant solution in every scenario. This component will come as a nice addition
-              to your Content Management Systems and Reporting applications, let’s see what RadPdfViewer provides as a feature set.|![pdfviewer-getting-started 003](images/pdfviewer-getting-started003.png)|
+|[Getting Started with the WinForms RadPdfViewer](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-the-winforms-radpdfviewer)RadPdfViewer enables you to easily load and display PDF documents natively in your app without using any third-party tools except Telerik’s WinForms toolbox. Thanks to its built-in UI virtualization, RadPdfViewer delivers a performant solution in every scenario. This component will come as a nice addition to your Content Management Systems and Reporting applications, let’s see what RadPdfViewer provides as a feature set.|![pdfviewer-getting-started 003](images/pdfviewer-getting-started003.png)|
 
 ## 
 
-This article will help you quickly get started with RadPdfViewer. To start off, drag and drop a RadPdfViewer control from the toolbox to your form.
-          Open its smart tag menu and you will find two important settings: __ReadingMode__ and __ViewerMode__.
-        ![pdfviewer-getting-started 001](images/pdfviewer-getting-started001.png)
+This article will help you quickly get started with RadPdfViewer. To start off, drag and drop a RadPdfViewer control from the toolbox to your form. Open its smart tag menu and you will find the __ViewerMode__ setting.
+![pdfviewer-getting-started 001](images/pdfviewer-getting-started001.png)
 
-The __ReadingMode__ defines how the contents a document will be read. AllAtOnce means that all the content will be loaded initially. 
-          As a result the initial loading time might be increased but the initial render time of a page will be shorter. __OnDemand__ means 
-          that the contents of the page will be loaded when it initially comes into view. This will result in fast initial loading of the document but slower 
-          initial page rendering. Also, the initial memory footprint will be less.
-        
-
-The __ViewerMode__ specifies the behavior of RadPdfViewer when you left-click in the document and drag across the document.
-          There are three viewer modes:
+The __ViewerMode__ specifies the behavior of RadPdfViewer when you left-click in the document and drag across the document. There are three viewer modes:
         
 
 * *None* - the control does nothing
@@ -45,7 +34,7 @@ The __ViewerMode__ specifies the behavior of RadPdfViewer when you left-click in
 * *TextSelection* - selection is initiated, which stops when you release the button of the mouse
             
 
-There are also properties for the above settings which you can set in your code:#_[C#] _
+There is also a property for the above setting which you can set in your code:#_[C#] _
 
 	
 
@@ -56,12 +45,12 @@ There are also properties for the above settings which you can set in your code:
 
 ````C#
 
-            this.radPdfViewer1.ReadingMode = ReadingMode.OnDemand;
+            //this.radPdfViewer1.ReadingMode = ReadingMode.OnDemand;
             this.radPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection;
 ````
 ````VB.NET
 
-        Me.RadPdfViewer1.ReadingMode = ReadingMode.OnDemand
+        'Me.RadPdfViewer1.ReadingMode = ReadingMode.OnDemand
         Me.RadPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection
 
         '
