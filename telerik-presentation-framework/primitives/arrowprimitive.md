@@ -14,16 +14,11 @@ position: 1
 
 ## 
 
-The __ArrowPrimitive__ draws a filled triangular polygon. Orientation is controlled by the 
-          __Direction__ property with possible __ArrowDirection__ enumeration values of
-          __Up__, __Down__, __Left__ or __Right__.
-          The arrow is filled with the __ForeColor__ property value. The example below draws a border primitive and
-          an ArrowPrimitive.
-        ![tpf-primitives-arrowprimitive 001](images/tpf-primitives-arrowprimitive001.png)#_[C#] Creating an ArrowPrimitive_
+The __ArrowPrimitive__ draws a filled triangular polygon. Orientation is controlled by the __Direction__ property with possible __ArrowDirection__ enumeration values of __Up__, __Down__, __Left__ or __Right__. The arrow is filled with the __ForeColor__ property value. The example below draws a border primitive and an ArrowPrimitive.
 
-	
+![tpf-primitives-arrowprimitive 001](images/tpf-primitives-arrowprimitive001.png)
 
-
+Creating an ArrowPrimitive
 
 {{source=..\SamplesCS\TPF\Primitives\ArrowPrimitive1\MyArrowPrimitiveElement.cs region=myArrowPrimitiveElement}} 
 {{source=..\SamplesVB\TPF\Primitives\ArrowPrimitive1\MyArrowPrimitiveElement.vb region=myArrowPrimitiveElement}} 
@@ -77,7 +72,4 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

@@ -5,32 +5,20 @@ description: StackLayoutPanel
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/stacklayoutpanel
 tags: stacklayoutpanel
 published: True
-position: 2
+position: 3
 ---
 
 # StackLayoutPanel
 
-
-
-StackLayoutPanel is a panel that handles the layout of multiple elements in a vertical or horizontal row.
-        The following example demonstrate how you can easily emply this layout to work for you
-      
+StackLayoutPanel is a panel that handles the layout of multiple elements in a vertical or horizontal row. The following example demonstrate how you can easily emply this layout to work for you
 
 ## StackLayoutPanel example
 
-With this example we create a RadElement which contains a StackLayoutPanel. The StackLayoutPanel
-          instance is filled with several RadTextBoxElements ordered vertically. The RadElement that we create
-          can be hosted in a RadControl as described
-          [
-            here
-          ]({%slug winforms/telerik-presentation-framework/getting-started/getting-started%}).
-          
+With this example we create a RadElement which contains a StackLayoutPanel. The StackLayoutPanelinstance is filled with several RadTextBoxElements ordered vertically. The RadElement that we create can be hosted in a RadControl as described [here]({%slug winforms/telerik-presentation-framework/getting-started/getting-started%}).
 
-![tpf-layout-predefined-layout-panels-stacklayoutpanel 001](images/tpf-layout-predefined-layout-panels-stacklayoutpanel001.png)#_[C#] Using StackLayoutPanel_
+![tpf-layout-predefined-layout-panels-stacklayoutpanel 001](images/tpf-layout-predefined-layout-panels-stacklayoutpanel001.png)
 
-	
-
-
+#### Using StackLayoutPanel
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyStackLayoutPanelElement.cs region=myStackLayoutPanelElement}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyStackLayoutPanelElement.vb region=myStackLayoutPanelElement}} 
@@ -90,7 +78,4 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

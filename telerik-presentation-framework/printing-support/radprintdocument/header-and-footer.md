@@ -5,7 +5,7 @@ description: Header and Footer
 slug: winforms/telerik-presentation-framework/printing-support/radprintdocument/header-and-footer
 tags: header,and,footer
 published: True
-position: 1
+position: 2
 ---
 
 # Header and Footer
@@ -14,8 +14,7 @@ position: 1
 
 ## 
 
-The RadPrintDocument has a build in header and footer print capabilities.
-          Here is a list of the available properties which allow you to customize the header and footer:
+The RadPrintDocument has a build in header and footer print capabilities. Here is a list of the available properties which allow you to customize the header and footer:
         
 
 * __HeaderHeight__ – the height of the header in pixels
@@ -54,15 +53,10 @@ The RadPrintDocument has a build in header and footer print capabilities.
 * __ReverseFooterOnEvenPages__ - swaps the places of the left and right footer texts on even pages
             
 
-* __Logo__ - allows you to add logo to the header or footer. Please note that the header/footer text should contain 
-              __"[Logo]"__ in its text in order the logo to appear.
+* __Logo__ - allows you to add logo to the header or footer. Please note that the header/footer text should contain __"[Logo]"__ in its text in order the logo to appear.
             
 
-Is an example demonstrating how to customize the header and footer:#_[C#]_
-
-	
-
-
+Is an example demonstrating how to customize the header and footer:
 
 {{source=..\SamplesCS\TPF\Printing support\RadPrintDocument1.cs region=HeaderAndFooter}} 
 {{source=..\SamplesVB\TPF\Printing support\RadPrintDocument1.vb region=HeaderAndFooter}} 
@@ -138,11 +132,7 @@ The header and footer have some predefined special strings which can be set to a
 * __[User Name]__ – Prints the username associated with the current thread (the current Windows login))
             
 
-Here is a sample:#_[C#]_
-
-	
-
-
+Here is a sample:
 
 {{source=..\SamplesCS\TPF\Printing support\RadPrintDocument1.cs region=SpecialStrings}} 
 {{source=..\SamplesVB\TPF\Printing support\RadPrintDocument1.vb region=SpecialStrings}} 

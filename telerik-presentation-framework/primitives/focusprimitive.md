@@ -10,13 +10,13 @@ position: 5
 
 # FocusPrimitive
 
-
-
 ## 
 
-FocusPrimitive supplies user interface cues that an element has received focus. The constructor for FocusPrimitive takes a
-          BorderPrimitive that provides the basic dimensions. Fore colors and inner colors may be set explicitly or default control colors are used.
-        ![tpf-primitives-focusprimitive 001](images/tpf-primitives-focusprimitive001.png)#_[C#] Creating a FocusPrimitive_
+FocusPrimitive supplies user interface cues that an element has received focus. The constructor for FocusPrimitive takes a  BorderPrimitive that provides the basic dimensions. Fore colors and inner colors may be set explicitly or default control colors are used.
+
+![tpf-primitives-focusprimitive 001](images/tpf-primitives-focusprimitive001.png)
+
+#### Creating a FocusPrimitive
 
 	
 
@@ -62,7 +62,4 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

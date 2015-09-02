@@ -10,74 +10,52 @@ position: 4
 
 # FillPrimitive
 
-
-
 ## 
 
-The __FillPrimitive__ class is responsible for filling in an area on the screen. It has a variety of
-          properties that allow you to control the style of the fill:
+The __FillPrimitive__ class is responsible for filling in an area on the screen. It has a variety of properties that allow you to control the style of the fill:
         
 
-* __GradientStyle__allows you to select from solid, linear, radial, glass, office glass, office glass
-            rectangle, gel, and vista styles.
+* __GradientStyle__ allows you to select from solid, linear, radial, glass, office glass, office glass rectangle, gel, and vista styles.
           
 
 * __Solid__: The color of the fill is set by the __BackColor__ property.
           
 
-* __Linear__: The shading of the fill is set by the __BackColor__, 
-            __BackColor2__, __BackColor3__, and __BackColor4__ properties. 
-            The angle of the shading is set by the __GradientAngle__ property.
+* __Linear__: The shading of the fill is set by the __BackColor__, __BackColor2__, __BackColor3__, and __BackColor4__ properties. The angle of the shading is set by the __GradientAngle__ property.
           
 
-* __Radial__: The shading of the fill is set by the __BackColor__, 
-            __BackColor2__, and __BackColor3__ properties. The 
-            __GradientPercentage__ property controls the width of the outer color band and the
-            __GradientPercentage2__ property controls the width of the middle color band.
+* __Radial__: The shading of the fill is set by the __BackColor__, __BackColor2__, and __BackColor3__ properties. The __GradientPercentage__ property controls the width of the outer color band and the __GradientPercentage2__ property controls the width of the middle color band.
           
 
-* __Glass:__The shading of the fill is set by the __BackColor__, 
-            __BackColor2__, __BackColor3__, and __BackColor4__ 
-            properties. The __GradientPercentage__ property controls the position of the horizontal dividing line in the fill.
+* __Glass:__ The shading of the fill is set by the __BackColor__,  __BackColor2__, __BackColor3__, and __BackColor4__ properties. The __GradientPercentage__ property controls the position of the horizontal dividing line in the fill.
           
 
-* __OfficeGlass__: The shading of the fill is set by the __BackColor__, 
-            __BackColor2__, __BackColor3__, and __BackColor4__
-            properties. The __GradientPercentage__ and __GradientPercentage2__ properties 
-            control the relative amounts of the different colors in the fill.
+* __OfficeGlass__: The shading of the fill is set by the __BackColor__,  __BackColor2__, __BackColor3__, and __BackColor4__ properties. The __GradientPercentage__ and __GradientPercentage2__ properties control the relative amounts of the different colors in the fill.
           
 
-* __OfficeGlassRect:__The shading of the fill is set by the __BackColor__, 
-            __BackColor2__, __BackColor3__, and __BackColor4__ 
-            properties. The __GradientPercentage__ and __GradientPercentage2__ properties 
-            control the relative amounts of the different colors in the fill.
+* __OfficeGlassRect:__ The shading of the fill is set by the __BackColor__, __BackColor2__, __BackColor3__, and __BackColor4__  properties. The __GradientPercentage__ and __GradientPercentage2__ properties control the relative amounts of the different colors in the fill.
           
 
-* __Gel__: The shading of the fill is set by the __BackColor__ and 
-            __BackColor2__ properties. The __GradientPercentage__ property controls the height of the highlight bubble.
+* __Gel__: The shading of the fill is set by the __BackColor__ and __BackColor2__ properties. The __GradientPercentage__ property controls the height of the highlight bubble.
           
 
-* __Vista__: The shading of the fill is set by the __BackColor__, 
-            __BackColor2__, __BackColor3__, and __BackColor4__ 
-            properties. The __GradientPercentage__ and __GradientPercentage2__ properties
-            control the position of the horizontal lines in the fill.
+* __Vista__: The shading of the fill is set by the __BackColor__, __BackColor2__, __BackColor3__, and __BackColor4__ properties. The __GradientPercentage__ and __GradientPercentage2__ properties control the position of the horizontal lines in the fill.
           
 
-* __BackColor__, __BackColor2__, __BackColor3__, and 
-            __BackColor4__ are combined in various ways depending on the gradient style that you have selected.
+* __BackColor__, __BackColor2__, __BackColor3__, and  __BackColor4__ are combined in various ways depending on the gradient style that you have selected.
           
 
-* __GradientAngle__sets the angle of the linear gradient.
+* __GradientAngle__ sets the angle of the linear gradient.
           
 
-* __GradientPercentage__ and __GradientPercentage2__adjust drawing parameters for the various styles.
+* __GradientPercentage__ and __GradientPercentage2__ adjust drawing parameters for the various styles.
           
 
-The example below iterates the GradientStyles enumeration and creates a FillPrimitive sample for each value.![tpf-primitives-fillprimitive 001](images/tpf-primitives-fillprimitive001.png)#_[C#] Creating a FillPrimitive_
+The example below iterates the GradientStyles enumeration and creates a FillPrimitive sample for each value.
 
-	
+![tpf-primitives-fillprimitive 001](images/tpf-primitives-fillprimitive001.png)
 
-
+#### Creating a FillPrimitive
 
 {{source=..\SamplesCS\TPF\Primitives\FillPrimitive1\MyFillPrimitiveElement.cs region=myFillPrimitiveElement}} 
 {{source=..\SamplesVB\TPF\Primitives\FillPrimitive1\MyFillPrimitiveElement.vb region=myFillPrimitiveElement}} 
@@ -160,7 +138,4 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

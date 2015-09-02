@@ -10,22 +10,13 @@ position: 11
 
 # ProgressBarPrimitive
 
-
-
 ## 
 
-ProgressBarPrimitive is a specialized descendant of [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%}) that 
-        indicates the state of progress in a long running process. The fill area is controlled by the __GradientStyle__and the 
-          __BackColor__..__BackColor4__ properties. The fill covers the percentage area between 
-          __Minimum__and __Maximum__specified by the __Value1__property. 
-          __Value1__ is rendered using up to all four colors. __Value2__ displays in the __BackColor__ at 
-          25% opacity. __Orientation__controls the starting point of the fill and can originate from __Left__, 
-          __Right__, __Top__or __Bottom__. The example below shows a Linear fill for 
-          __Value1__(set to 20), and a pale Aqua for __Value2__(set to 70).![tpf-primitives-progressprimitive 001](images/tpf-primitives-progressprimitive001.png)#_[C#] Creating a ProgressBarPrimitive_
+ProgressBarPrimitive is a specialized descendant of [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%}) that  indicates the state of progress in a long running process. The fill area is controlled by the __GradientStyle__ and the __BackColor..BackColor4__ properties. The fill covers the percentage area between __Minimum__ and __Maximum__ specified by the __Value1__ property. __Value1__ is rendered using up to all four colors. __Value2__ displays in the __BackColor__ at 25% opacity. __Orientation__ controls the starting point of the fill and can originate from __Left__,  __Right__, __Top__ or __Bottom__. The example below shows a Linear fill for  __Value1__(set to 20), and a pale Aqua for __Value2__(set to 70).
 
-	
+![tpf-primitives-progressprimitive 001](images/tpf-primitives-progressprimitive001.png)
 
-
+#### Creating a ProgressBarPrimitive
 
 {{source=..\SamplesCS\TPF\Primitives\ProgressBarPrimitive1\MyProgressBarPrimitiveElement.cs region=myProgressBarPrimitiveElement}} 
 {{source=..\SamplesVB\TPF\Primitives\ProgressBarPrimitive1\MyProgressBarPrimitiveElement.vb region=myProgressBarPrimitiveElement}} 
@@ -89,7 +80,4 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

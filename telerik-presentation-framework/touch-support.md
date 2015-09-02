@@ -85,9 +85,6 @@ All these events provide event arguments that inherit from the GestureEventArgs 
             
 
 * __Handled__: Indicates if the event has already been handled by some of the elements in the control.
-            
-
-* Item 2
 
 The inheritors of this type also provide gesture-specific arguments like Offset, ZoomFactor, Angle etc.
         

@@ -10,8 +10,6 @@ position: 1
 
 # Introducing the Telerik Presentation Framework
 
-
-
 Controls in the Telerik UI for WinForms suite have both a general shared architecture and a specific internal structure.
 
 ## Shared Control Architecture

@@ -11,35 +11,25 @@ position: 7
 # ImagePrimitive
 
 
-
-## 
-
-Use the __ImagePrimitive__ class whenever you need to draw an image as part of rendering a control. 
-          The properties specific to displaying images are:
-        
+Use the __ImagePrimitive__ class whenever you need to draw an image as part of rendering a control. The properties specific to displaying images are:
 
 * __Image:__ a Windows Forms standard __Image__ object.
-          
 
 * __ImageKey:__ the key of an image in an __ImageList__ control.
-          
 
 * __ImageIndex:__ the index of an image in an __ImageList__ control.
-          
 
-* __ImageScaling:__ either __None__ or __ScaleToFit__ controls whether
-            the image should be scaled to fit the available space.
+* __ImageScaling:__ either __None__ or __ScaleToFit__ controls whether the image should be scaled to fit the available space.
           
 
 >note The __ImageList__ property is introduced in the RadControl class.
 >
 
+The example below loads a series of images from a directory and creates an ImagePrimitive for each.
 
-The example below loads a series of images from a directory and creates an ImagePrimitive for each.![tpf-primitives-imageprimitive 001](images/tpf-primitives-imageprimitive001.png)#_[C#] Creating an ImagePrimitive_
+![tpf-primitives-imageprimitive 001](images/tpf-primitives-imageprimitive001.png)
 
-	
-
-
+#### Creating an ImagePrimitive
 
 {{source=..\SamplesCS\TPF\Primitives\ImagePrimitive1\MyImagePrimitiveElement.cs region=myImagePrimitiveElement}} 
 {{source=..\SamplesVB\TPF\Primitives\ImagePrimitive1\MyImagePrimitiveElement.vb region=myImagePrimitiveElement}} 
@@ -106,7 +96,4 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

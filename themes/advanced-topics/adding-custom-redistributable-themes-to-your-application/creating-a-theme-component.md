@@ -14,23 +14,16 @@ position: 0
 
 ## Creating a theme component:
 
-This article demonstrates how to isolate a theme in a separate class library project. This class library project is actually the theme component,
-          which you can later use in your main project.
-          This approach greatly simplifies the way of adding and removing themes to your project and helps in displaying the themes in design-time.
-        
+This article demonstrates how to isolate a theme in a separate class library project. This class library project is actually the theme component,  which you can later use in your main project. This approach greatly simplifies the way of adding and removing themes to your project and helps in displaying the themes in design-time.
+
 
 1. Add a new Class Library project to your current solution.
-            
 
 1. Add your theme files and their Build Action to Embedded Resource.
-            
 
 1. Add a new class to represent your theme component to the project:
-            #_[C#] Creating custom theme component_
 
-	
-
-
+#### Creating custom theme component
 
 {{source=..\SamplesCS\Themes\AdvancedTopics\AddingCustomRedistributableThemesToYourApplication\CustomTheme.cs region=creatingThemeComponent}} 
 {{source=..\SamplesVB\Themes\AdvancedTopics\AddingCustomRedistributableThemesToYourApplication\CustomTheme.vb region=creatingThemeComponent}} 
@@ -90,15 +83,7 @@ End Class
 
 {{endregion}} 
 
+Please note that your class should inherit RadThemeComponentBase. As to the path string, it is constructed as follows: *"ProjectDefaultNamespace.ContainingFolderName.CustomTheme.tssp"* . The ContainingFolderName is only needed if the tssp file is in folder in the project structure (C# only). Regarding VB.NET, even if the theme file is in a folder, you should not include the folder name in the path string.
 
-
-
-Please note that your class should inherit RadThemeComponentBase. As to the path string, it is constructed as follows:
-          *"ProjectDefaultNamespace.ContainingFolderName.CustomTheme.tssp"* . The ContainingFolderName is only
-          needed if the tssp file is in folder in the project structure (C# only). Regarding VB.NET, even if the theme file is in a folder,
-          you should not include the folder name in the path string.
-        
-
-When you compile the project, you will be able to drag this component to the forms
-          in all the projects in you solution which will load the corresponding theme, both runtime and design time.
+When you compile the project, you will be able to drag this component to the forms in all the projects in you solution which will load the corresponding theme, both runtime and design time.
         

@@ -10,17 +10,13 @@ position: 3
 
 # CheckPrimitive
 
-
-
 ## 
 
-The __CheckPrimitive__ is painted as three sets of angled lines and is colored using
-        the __ForeColor__ property. The three sets of lines are easier to see when the primitive is 
-        scaled up. The example below creates two CheckPrimitives, one at the default size and the second scaled up by a factor of 5.![tpf-primitives-checkprimitive 001](images/tpf-primitives-checkprimitive001.png)#_[C#] Creating a CheckPrimitive_
+The __CheckPrimitive__ is painted as three sets of angled lines and is colored using the __ForeColor__ property. The three sets of lines are easier to see when the primitive is scaled up. The example below creates two CheckPrimitives, one at the default size and the second scaled up by a factor of 5.
 
-	
+![tpf-primitives-checkprimitive 001](images/tpf-primitives-checkprimitive001.png)
 
-
+#### Creating a CheckPrimitive
 
 {{source=..\SamplesCS\TPF\Primitives\CheckPrimitive1\MyCheckPrimitiveElement.cs region=myCheckPrimitiveElement}} 
 {{source=..\SamplesVB\TPF\Primitives\CheckPrimitive1\MyCheckPrimitiveElement.vb region=myCheckPrimitiveElement}} 
@@ -74,7 +70,4 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

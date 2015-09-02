@@ -5,7 +5,7 @@ description: Watermark
 slug: winforms/telerik-presentation-framework/printing-support/radprintdocument/watermark
 tags: watermark
 published: True
-position: 2
+position: 3
 ---
 
 # Watermark
@@ -14,17 +14,10 @@ position: 2
 
 ## 
 
-The RadPrintDocument has a build in watermark support. The RadPrintDocument supports both text watermark
-        	and image watermark.
+The RadPrintDocument has a build in watermark support. The RadPrintDocument supports both text watermark and image watermark.
         
 
 To get the watermark to show you have to set it up using the __Watermark__ property:
-        	
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TPF\Printing support\RadPrintDocument1.cs region=Watermark}} 
 {{source=..\SamplesVB\TPF\Printing support\RadPrintDocument1.vb region=Watermark}} 
@@ -48,11 +41,6 @@ To get the watermark to show you have to set it up using the __Watermark__ prope
 {{endregion}} 
 
 
-
-
-Alternatively you can create an instance of the __RadPrintWatermark__, 
-    		set its properties and then assign it to the __Watermark__ property of RadPrintDocument
-    		(this is useful when you want to use the same watermark in multiple documents).
-    	
+Alternatively you can create an instance of the __RadPrintWatermark__, set its properties and then assign it to the __Watermark__ property of RadPrintDocument(this is useful when you want to use the same watermark in multiple documents).
 
 ![tpf-printing-support-radprintdocument-watermark](images/tpf-printing-support-radprintdocument-watermark.png)

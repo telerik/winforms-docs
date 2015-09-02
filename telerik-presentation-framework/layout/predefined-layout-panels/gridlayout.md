@@ -5,7 +5,7 @@ description: GridLayout
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/gridlayout
 tags: gridlayout
 published: True
-position: 3
+position: 6
 ---
 
 # GridLayout

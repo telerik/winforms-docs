@@ -13,9 +13,7 @@ position: 15
 
 
 __LightVisualElement__ is a lightweight element which is capable of displaying Text, Border and Images and can be easily customized. Here is a list of its properties allowing for fine tuning the element:
-      
 
-## 
 
 * __ShouldPaint__ - Indicates whether the element should be painted. Children visibility would not be affected.
           
@@ -129,15 +127,12 @@ __LightVisualElement__ is a lightweight element which is capable of displaying T
           
 
 * __TextParams__ - Gets the *TextParams* object which defines some text settings
-          
 
 The following example will show you how to make a simple image gallery with three LightVisualElements inside a DockLayoutPanel.
 
-![tpf-primitives-lightvisualelement 001](images/tpf-primitives-lightvisualelement001.png)#_[C#] Creating a simple control with LightVisualElements_
+![tpf-primitives-lightvisualelement 001](images/tpf-primitives-lightvisualelement001.png)
 
-	
-
-
+#### Creating a simple control with LightVisualElements
 
 {{source=..\SamplesCS\TPF\Primitives\LightVisualElement1\MyLightVisualElement.cs region=MyLightVisualElement}} 
 {{source=..\SamplesVB\TPF\Primitives\LightVisualElement1\MyLightVisualElement.vb region=MyLightVisualElement}} 
@@ -275,7 +270,4 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

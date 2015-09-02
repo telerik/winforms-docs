@@ -5,7 +5,7 @@ description: ImageAndTextLayoutPanel
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/imageandtextlayoutpanel
 tags: imageandtextlayoutpanel
 published: True
-position: 0
+position: 1
 ---
 
 # ImageAndTextLayoutPanel
@@ -85,6 +85,8 @@ __ImageAlignment__ – determines the position of the image. It has the followin
 
 * *BottomRight* - aligns the image bottom-right in the image box.
 
+|    |    |    |
+|----|----|----|
 |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 010](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel010.png) *TopLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 011](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel011.png) *TopCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 012](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel012.png) *TopRight* |
 |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 013](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel013.png) *MiddleLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 014](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel014.png) *MiddleCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 015](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel015.png) *MiddleRight* |
 |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 016](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel016.png) *BottomLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 017](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel017.png) *BottomCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 018](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel018.png) *BottomLeft* |
@@ -120,7 +122,7 @@ __TextAlignment__ - determines the position of the text.  It has the following v
 
 As mentioned at the beginning of the article, ImageAndTextLayoutPanel defines the layout of an ImagePrimitive (for the image) and TextPrimitive (for the text). However, the layout panel does contain these two primitives by default. Moreover, an ImageAndTextLayoutPanel is usable only when it resides in a RadControl. The purpose of this section is to demonstrate how you can add ImagePrimitive and TextPrimitive to the layout panel and how you can add the panel to your own RadControl.
         
-1. First, we have to create a RadElement descendant and put an ImageAndTextLayoutPanel instance in it.   In addition, we should create one TextPrimitive instance and one ImagePrimitive instance. In order to make  the ImageAndTextLayoutPanel recognize the TextPrimitive and ImagePrimitve as the primitives that it should arrange, we have to call the __SetValue__ method of the primitives, passing *ImageAndTextLayoutPanel.IsImagePrimitiveProperty* and *ImageAndTextLayoutPanel.IsTextPrimitiveProperty* for the ImagePrimitive and TextPrimitive receptively. Finally, the primitives should be added to the ImageAndTextLayoutPanel. All these actions should happen in the CreateChildElements method. (The BorderPrimitive is added just to outline the whole ImageAndTextLayoutPanelElement):
+1\. First, we have to create a RadElement descendant and put an ImageAndTextLayoutPanel instance in it.   In addition, we should create one TextPrimitive instance and one ImagePrimitive instance. In order to make  the ImageAndTextLayoutPanel recognize the TextPrimitive and ImagePrimitve as the primitives that it should arrange, we have to call the __SetValue__ method of the primitives, passing *ImageAndTextLayoutPanel.IsImagePrimitiveProperty* and *ImageAndTextLayoutPanel.IsTextPrimitiveProperty* for the ImagePrimitive and TextPrimitive receptively. Finally, the primitives should be added to the ImageAndTextLayoutPanel. All these actions should happen in the CreateChildElements method. (The BorderPrimitive is added just to outline the whole ImageAndTextLayoutPanelElement):
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\ImageAndTextLayoutPanelElement.cs region=imageAndTextElement}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\ImageAndTextLayoutPanelElement.vb region=imageAndTextElement}} 
@@ -232,7 +234,7 @@ End Class
 
 {{endregion}} 
 
-1. In order to be able to use our ImageAndTextLayoutPanelElement, we can either add it in an existing RadControl, or encapsulate it in a new RadControl descendant:
+2\. In order to be able to use our ImageAndTextLayoutPanelElement, we can either add it in an existing RadControl, or encapsulate it in a new RadControl descendant:
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\ImageAndTextLayoutPanelElement.cs region=imageAndTextControl}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\ImageAndTextLayoutPanelElement.vb region=imageAndTextControl}} 

@@ -14,9 +14,7 @@ position: 0
 
 ## 
 
-This example shows how you can implement printable panel. This can be very useful when you want to print several controls at once.
-          To achieve this you can create a custom panel that inherits from RadPanel and implements the __IPrintable__ interface. This
-          interface contains four methods:
+This example shows how you can implement printable panel. This can be very useful when you want to print several controls at once. To achieve this you can create a custom panel that inherits from RadPanel and implements the __IPrintable__ interface. This interface contains four methods:
         
 
 * __BeginPrint__ - Called when the printing begins.
@@ -31,11 +29,7 @@ This example shows how you can implement printable panel. This can be very usefu
 * __GetSettingsDialog__ - Gets a print settings dialog that is specific for the printable object.
             
 
-The first step would be to just create the custom class#_[C#]_
-
-	
-
-
+The first step would be to just create the custom class:
 
 {{source=..\SamplesCS\TPF\Printing support\CreatePrintablePanel.cs region=class}} 
 {{source=..\SamplesVB\TPF\Printing support\CreatePrintablePanel.vb region=class}} 
@@ -55,15 +49,7 @@ Public Class PrintablePanel
 
 {{endregion}} 
 
-
-
-
 For the current example the __BeginPrint__ and __EndPrint__ methods should just return a hard-coded values:
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TPF\Printing support\CreatePrintablePanel.cs region=beginEnd}} 
 {{source=..\SamplesVB\TPF\Printing support\CreatePrintablePanel.vb region=beginEnd}} 
@@ -96,15 +82,7 @@ For the current example the __BeginPrint__ and __EndPrint__ methods should just 
 
 {{endregion}} 
 
-
-
-
 In the __GetSettingsDialog__ method you should just return an new settings dialog:
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TPF\Printing support\CreatePrintablePanel.cs region=dialog}} 
 {{source=..\SamplesVB\TPF\Printing support\CreatePrintablePanel.vb region=dialog}} 
@@ -127,15 +105,7 @@ In the __GetSettingsDialog__ method you should just return an new settings dialo
 
 {{endregion}} 
 
-
-
-
 The __PrintPage__ method is the place where the panel actual would be converted to image and drawn:
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TPF\Printing support\CreatePrintablePanel.cs region=page}} 
 {{source=..\SamplesVB\TPF\Printing support\CreatePrintablePanel.vb region=page}} 
@@ -165,15 +135,7 @@ The __PrintPage__ method is the place where the panel actual would be converted 
 
 {{endregion}} 
 
-
-
-
 Besides the interface methods implementation you can create the __Print__ and __PrintPreview__ methods:
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TPF\Printing support\CreatePrintablePanel.cs region=print}} 
 {{source=..\SamplesVB\TPF\Printing support\CreatePrintablePanel.vb region=print}} 
@@ -218,11 +180,6 @@ Besides the interface methods implementation you can create the __Print__ and __
 
 
 The final method left is the __CreatePrintDocument__. It returns a new RadPrintDocument associated with the current instance:
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TPF\Printing support\CreatePrintablePanel.cs region=create}} 
 {{source=..\SamplesVB\TPF\Printing support\CreatePrintablePanel.vb region=create}} 
@@ -247,7 +204,5 @@ The final method left is the __CreatePrintDocument__. It returns a new RadPrintD
     '
 ````
 
-{{endregion}} 
-
-
+{{endregion}}
 

@@ -5,7 +5,7 @@ description: BoxLayout
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/boxlayout
 tags: boxlayout
 published: True
-position: 4
+position: 5
 ---
 
 # BoxLayout
@@ -22,7 +22,6 @@ __Methods and properties:__
 		  	
 
 * __StripPosition__ - is a static property that specifies whether each element will be treated as first or last child. When the Orientation is horizontal, a child with StripPosition First will be positioned to the most left, while a child with  StripPosition Last will be positioned to the most right. Respectively, when the Orientation is vertical, the First child is positioned at the top, while the Last child appears at the bottom.
-		  	
 
 Here is how to create a element with BoxLayout and set the Proportion:
 
