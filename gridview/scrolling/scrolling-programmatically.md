@@ -10,17 +10,11 @@ position: 1
 
 # Scrolling Programmatically
 
+## Scrolling programmatically
 
+You can scroll programmatically using the following functions:
 
-## 
-        Scrolling programmatically
-      
-
-You can scroll programmatically using the following functions:#_[C#] ScrollTo_
-
-	
-
-
+#### ScrollTo
 
 {{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=ScrollTo}} 
 {{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=ScrollTo}} 
@@ -51,11 +45,7 @@ You can scroll programmatically using the following functions:#_[C#] ScrollTo_
 {{endregion}} 
 
 
-#_[C#] ScrollToColumn_
-
-	
-
-
+#### ScrollToColumn
 
 {{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=Column}} 
 {{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=Column}} 
@@ -82,11 +72,7 @@ You can scroll programmatically using the following functions:#_[C#] ScrollTo_
 {{endregion}} 
 
 
-#_[C#] ScrollToRow_
-
-	
-
-
+#### ScrollToRow
 
 {{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=Row}} 
 {{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=Row}} 
@@ -108,12 +94,7 @@ You can scroll programmatically using the following functions:#_[C#] ScrollTo_
 
 {{endregion}} 
 
-
-
-
-## 
-        Properties
-      
+## Properties
 
 The following properties are useful when you need to control the scrolling functionality:
 

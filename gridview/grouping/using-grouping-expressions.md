@@ -14,18 +14,13 @@ position: 2
 
 ## Overview
 
-The __GroupDescriptorCollection__ contains __Expression__ property which is used to create flexible grouping conditions.
-		Expression is a string that contains the column name followed by "ASC" (ascending) or "DESC" (descending). Columns are sorted ascending by default. Multiple columns can be separated by commas. Multiple grouping descriptors can be separated by semi column symbol.
-
-
+The __GroupDescriptorCollection__ contains __Expression__ property which is used to create flexible grouping conditions. Expression is a string that contains the column name followed by "ASC" (ascending) or "DESC" (descending). Columns are sorted ascending by default. Multiple columns can be separated by commas. Multiple grouping descriptors can be separated by semi column symbol.
 
 ## Creating expressions
 
-Creating a simple expression:#_[C#] Creating simple grouping expression_
+Creating a simple expression:
 
-	
-
-
+#### Creating simple grouping expression
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=creatingSimpleExpression}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=creatingSimpleExpression}} 
@@ -40,16 +35,9 @@ Creating a simple expression:#_[C#] Creating simple grouping expression_
 
 {{endregion}} 
 
+Grouping by two properties using an expression:
 
-
-
-
-
-Grouping by two properties using an expression:#_[C#] Grouping by two columns, by using an expression_
-
-	
-
-
+#### Grouping by two columns, by using an expression
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=groupingByToColumnsUsingExpression}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=groupingByToColumnsUsingExpression}} 
@@ -62,18 +50,11 @@ Grouping by two properties using an expression:#_[C#] Grouping by two columns, 
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+Creating groups on two levels using an expression:
 
-
-
-
-
-Creating groups on two levels using an expression:#_[C#] Creating group on two levels, by using an expression_
-
-	
-
-
+#### Creating group on two levels, by using an expression
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=creatingGroupsOnTwoLevelsUsingExpression}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=creatingGroupsOnTwoLevelsUsingExpression}} 
@@ -88,16 +69,9 @@ Creating groups on two levels using an expression:#_[C#] Creating group on two l
 
 {{endregion}} 
 
+Grouping by two properties on the first level and by one on the second:
 
-
-
-
-
-Grouping by two properties on the first level and by one on the second:#_[C#] Complex grouping_
-
-	
-
-
+#### Complex grouping
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=complexGrouping}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=complexGrouping}} 

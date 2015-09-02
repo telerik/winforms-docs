@@ -49,6 +49,8 @@ Where hierarchical data is shown in the grid, the structure changes slightly:
 
 This logical tree structure allows you to traverse down through the cell level using RadGridView collections. For example, to traverse starting at the MasterGridViewTemplate rows and through every cell to perform some arbitrary operation:
 
+#### Iterate the MasterGridViewTemplate cells
+
 {{source=..\SamplesCS\GridView\Fundamentials\LogicalVsVisualStructure.cs region=iterateMasterGridViewTemplate}} 
 {{source=..\SamplesVB\GridView\Fundamentials\LogicalVsVisualStructure.vb region=iterateMasterGridViewTemplate}} 
 
@@ -78,10 +80,9 @@ This logical tree structure allows you to traverse down through the cell level u
 
 {{endregion}} 
 
-
-
-
 ...or to iterate all the columns of each child template within the master template:
+
+#### Iterate the child templates cells
 
 {{source=..\SamplesCS\GridView\Fundamentials\LogicalVsVisualStructure.cs region=iterateChildTemplates}} 
 {{source=..\SamplesVB\GridView\Fundamentials\LogicalVsVisualStructure.vb region=iterateChildTemplates}} 
@@ -112,6 +113,8 @@ __RadGridView__ uses virtualization for its visual elements. This means that onl
       	
 
 RadGridView has several events that allow you to access the visual elements of the grid: CreateCell, CellPaint, RowPaint, CellFormatting and RowFormatting. These events pass references to TPF elements that represent rows and cells. For example, the abbreviated example below adds a RadProgressBarElement to cell elements in the grid (see [Filtering]({%slug winforms/gridview/cells/creating-custom-cells%}) for the full example).
+
+#### Iterating all cells by using CellFormatting event
 
 {{source=..\SamplesCS\GridView\Fundamentials\LogicalVsVisualStructure.cs region=cellFormatting}} 
 {{source=..\SamplesVB\GridView\Fundamentials\LogicalVsVisualStructure.vb region=cellFormatting}} 

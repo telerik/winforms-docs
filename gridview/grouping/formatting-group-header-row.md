@@ -14,18 +14,11 @@ position: 4
 
 ## 
 
-__GroupSummaryEvaluate__allows to modify the header text of the group rows. The event is fired when the group header row text is needed.
-          So if you want to modify the group’s text, first you have to subscribe to the __GroupSummaryEvaluate__ event and then perform the actual
-          grouping, because when the __GroupContentCellElement__ (the group header row) is being displayed, the event is fired and if you are
-          not subscribed for it, it will apply its default settings.
-         
+__GroupSummaryEvaluate__ allows to modify the header text of the group rows. The event is fired when the group header row text is needed. So if you want to modify the group’s text, first you have to subscribe to the __GroupSummaryEvaluate__ event and then perform the actual grouping, because when the __GroupContentCellElement__ (the group header row) is being displayed, the event is fired and if you are  not subscribed for it, it will apply its default settings.
 
 The example below demonstrates how you can change the group header text of each group if grouping is based on some specific column:
-		#_[C#] Change group header text_
 
-	
-
-
+#### Change group header text
 
 {{source=..\SamplesCS\GridView\Grouping\FormattingGroupHeaderRow.cs region=groupHeaderText}} 
 {{source=..\SamplesVB\GridView\Grouping\FormattingGroupHeaderRow.vb region=groupHeaderText}} 
@@ -53,11 +46,9 @@ The example below demonstrates how you can change the group header text of each 
 
 ![gridview-grouping-formatting-group-header-row 001](images/gridview-grouping-formatting-group-header-row001.png)
 
-The following example demonstrates formatting of group header which uses data from the group rows:#_[C#] Formatting group header by using data grom data rows_
+The following example demonstrates formatting of group header which uses data from the group rows:
 
-	
-
-
+#### Formatting group header by using data grom data rows
 
 {{source=..\SamplesCS\GridView\Grouping\FormattingGroupHeaderRow.cs region=formatGroupHeaderWhichUsersDataFromGroupRows}} 
 {{source=..\SamplesVB\GridView\Grouping\FormattingGroupHeaderRow.vb region=formatGroupHeaderWhichUsersDataFromGroupRows}} 
@@ -97,6 +88,5 @@ The following example demonstrates formatting of group header which uses data fr
 ````
 
 {{endregion}} 
-
 
 ![gridview-grouping-formatting-group-header-row 002](images/gridview-grouping-formatting-group-header-row002.png)

@@ -12,11 +12,7 @@ position: 0
 
 
 
-There is a special area at the top of the grid where grouping options are displayed. This is the __GridGroupingPanel__. When the grid
-      is grouped, all group fields appear in this GroupPanel as elements along with the sort order, e.g. Country, Order Date. You can add or rearrange sorting fields by 
-      dragging and dropping the header of the column you wish to use for grouping.
-      See the [End-user Capabilities Grouping]({%slug winforms/gridview/end-user-capabilities/grouping%}) topic 
-      for more on basic grouping behavior from the user perspective.
+There is a special area at the top of the grid where grouping options are displayed. This is the __GridGroupingPanel__. When the grid is grouped, all group fields appear in this GroupPanel as elements along with the sort order, e.g. Country, Order Date. You can add or rearrange sorting fields by dragging and dropping the header of the column you wish to use for grouping. See the [End-user Capabilities Grouping]({%slug winforms/gridview/end-user-capabilities/grouping%}) topic for more on basic grouping behavior from the user perspective.
 
 The __GridViewTemplate__ properties that govern grouping behavior are:
 
@@ -24,15 +20,13 @@ The __GridViewTemplate__ properties that govern grouping behavior are:
 
 * __AllowDragToGroup__: Allows the end-user to drag column headers to the grouping panel. By default this property is __True__.
 
-* __AutoExpandGroups__: Groups are automatically expanded as grouping expressions are added either programmatically or by drag-and-drop. This property is __False__by default.
+* __AutoExpandGroups__: Groups are automatically expanded as grouping expressions are added either programmatically or by drag-and-drop. This property is __False__ by default.
 
 Once grouped, you can additionally sort the grid data, using the default sorting mechanism.
 
-The example below allows GroupDescriptors to be added programmatically, but does not allow the user to group via drag and drop. The groups are automatically expanded.![gridview-grouping-basic-grouping 001](images/gridview-grouping-basic-grouping001.png)#_[C#] Setting grouping properties_
+The example below allows GroupDescriptors to be added programmatically, but does not allow the user to group via drag and drop. The groups are automatically expanded.<br>![gridview-grouping-basic-grouping 001](images/gridview-grouping-basic-grouping001.png)
 
-	
-
-
+#### Setting grouping properties
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=settingGroupingProperties}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=settingGroupingProperties}} 
@@ -51,16 +45,11 @@ The example below allows GroupDescriptors to be added programmatically, but doe
 
 {{endregion}} 
 
-
-
-
 ## GroupPanel
 
-You can hide the GroupPanel using the following code:#_[C#] Hide the group panel_
+You can hide the GroupPanel using the following code:
 
-	
-
-
+#### Hide the group panel
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=hideTheGroupPanel}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=hideTheGroupPanel}} 
@@ -75,15 +64,9 @@ You can hide the GroupPanel using the following code:#_[C#] Hide the group panel
 
 {{endregion}} 
 
-
-
-
 The __ShowGroupPanelScrollbars__ property indicates whether the group panel will show scroll-bars or it will expand to show all group headers.  
-        #_[C#] Show the group panel scroll-bar_
 
-	
-
-
+#### Show the group panel scroll-bar
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=ShowGroupPanelScrollbars}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=ShowGroupPanelScrollbars}} 
@@ -104,11 +87,6 @@ The __ShowGroupPanelScrollbars__ property indicates whether the group panel will
 ````
 
 {{endregion}} 
-
-
-
-
-
-
 |ShowGroupPanelScrollbars = *false* |ShowGroupPanelScrollbars = *true* |
+| ------ | ------ |
 |![gridview-grouping-basic-grouping 002](images/gridview-grouping-basic-grouping002.png)|![gridview-grouping-basic-grouping 003](images/gridview-grouping-basic-grouping003.png)|

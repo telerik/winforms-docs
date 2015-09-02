@@ -10,13 +10,9 @@ position: 3
 
 # Groups Collection
 
+When a group is created it is added to the *Groups* collection of the corresponding template. You can access the groups collection in the following way:
 
-
-When a group is created it is added to the *Groups* collection of the corresponding template. You can access the groups collection in the following way:#_[C#] Accessing groups_
-
-	
-
-
+#### Accessing groups
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=accessGroups}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=accessGroups}} 
@@ -31,14 +27,9 @@ When a group is created it is added to the *Groups* collection of the correspond
 
 {{endregion}} 
 
+You can expand and collapse groups programmatically. The code blocks below demonstrate how you can expand and collapse the first group in the *Groups* collection.
 
-
-
-You can expand and collapse groups programmatically. The code blocks below demonstrate how you can expand and collapse the first group in the *Groups* collection.#_[C#] Expanding groups_
-
-	
-
-
+#### Expanding groups
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=expandGroups}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=expandGroups}} 
@@ -54,11 +45,7 @@ You can expand and collapse groups programmatically. The code blocks below demon
 {{endregion}} 
 
 
-#_[C#] Collapse groups_
-
-	
-
-
+#### Collapse groups
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=collapseGroups}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=collapseGroups}} 
@@ -71,16 +58,11 @@ You can expand and collapse groups programmatically. The code blocks below demon
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+You can use __AllowGroup__ property of each column to indicate whether the user will be able to group by this column or not. The default value is *true*.
 
-
-
-You can use __AllowGroup__ property of each column to indicate whether the user will be able to group by this column or not. The default value is *true*.#_[C#] Allow groups_
-
-	
-
-
+#### Allow groups
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=allowGroup}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=allowGroup}} 
@@ -95,16 +77,11 @@ You can use __AllowGroup__ property of each column to indicate whether the user
 
 {{endregion}} 
 
-
-
-
 ## DataGroup class
 
-DataGroup collections have hierarchical structure. One or more group levels could be created. Properties of the DataGroup give access to its *Level*, *Parent* and *Child* groups:#_[C#] Accessing parent/child groups_
+DataGroup collections have hierarchical structure. One or more group levels could be created. Properties of the DataGroup give access to its *Level*, *Parent* and *Child* groups:
 
-	
-
-
+#### Accessing parent/child groups
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=accessingParentChildGroups}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=accessingParentChildGroups}} 
@@ -123,15 +100,9 @@ DataGroup collections have hierarchical structure. One or more group levels coul
 
 {{endregion}} 
 
+The header row of a group (*GridViewGroupRowInfo*) can be accessed using the __GroupRow__ property for a particular data group, for example:
 
-
-
-The header row of a group (*GridViewGroupRowInfo*) can be accessed using the __GroupRow__ property
-      	for a particular data group, for example:#_[C#] Accessing group header row_
-
-	
-
-
+#### Accessing group header row
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=groupHeaderRow}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=groupHeaderRow}} 

@@ -17,22 +17,13 @@ By default, when you perform grouping, __RadGridView__ sorts the created group r
 
 ## 
 
-Consider the __RadGridView__ is [bound]({%slug winforms/gridview/populating-with-data/binding-to-generic-lists%})
-          to a list of custom objects. If you group by __DepartmentId__ column you will notice that the group rows are sorted alphabetically 
-          as this property is *typeof(string)*.
+Consider the __RadGridView__ is [bound]({%slug winforms/gridview/populating-with-data/binding-to-generic-lists%}) to a list of custom objects. If you group by __DepartmentId__ column you will notice that the group rows are sorted alphabetically as this property is *typeof(string)*.
         
->caption Fig.1 Alphabetical sort order
+>caption Fig.1 Alphabetical sort order<br>![gridview-grouping-sorting-group-rows 001](images/gridview-grouping-sorting-group-rows001.png)
 
-![gridview-grouping-sorting-group-rows 001](images/gridview-grouping-sorting-group-rows001.png)
+However, you can change this sort order by using a group comparer. It is necessary to create a class that implements the  __IComparer<Group<GridViewRowInfo>>__ interface where you should return an integer number in the implemented __Compare__ method. The following code snippet illustrates how to order the group rows considering the integer value, not the string:
 
-However, you can change this sort order by using a group comparer. It is necessary to create a class that implements the 
-         __IComparer<Group<GridViewRowInfo>>__ interface where you should return an integer number in the implemented __Compare__
-          method. The following code snippet illustrates how to order the group rows considering the integer value, not the string:
-        #_[C#] Custom group comparer_
-
-	
-
-
+#### Custom group comparer
 
 {{source=..\SamplesCS\GridView\Grouping\SortingGroupRows.cs region=GroupComparer}} 
 {{source=..\SamplesVB\GridView\Grouping\SortingGroupRows.vb region=GroupComparer}} 
@@ -72,14 +63,9 @@ However, you can change this sort order by using a group comparer. It is necessa
 
 {{endregion}} 
 
+The last thing you need to do is to replace the default MasterTemplate.__GroupComparer__ with your custom one:
 
-
-
-The last thing you need to do is to replace the default MasterTemplate.__GroupComparer__ with your custom one:#_[C#] Custom group comparer_
-
-	
-
-
+#### Custom group comparer
 
 {{source=..\SamplesCS\GridView\Grouping\SortingGroupRows.cs region=Replace}} 
 {{source=..\SamplesVB\GridView\Grouping\SortingGroupRows.vb region=Replace}} 
@@ -94,8 +80,4 @@ The last thing you need to do is to replace the default MasterTemplate.__GroupCo
 
 {{endregion}} 
 
-
-
->caption Fig.2 Custom sort order of group rows
-
-![gridview-grouping-sorting-group-rows 002](images/gridview-grouping-sorting-group-rows002.png)
+>caption Fig.2 Custom sort order of group rows<br>![gridview-grouping-sorting-group-rows 002](images/gridview-grouping-sorting-group-rows002.png)

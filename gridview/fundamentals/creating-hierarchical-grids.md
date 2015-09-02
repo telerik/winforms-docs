@@ -14,6 +14,8 @@ position: 6
 
 __RadGridView__ has the ability to represent hierarchical master-detail data. Its hierarchical schema set up either at design-time or at runtime using the control API. You can also set the __AutoGenerateHierarchy__ property to *True* and bind to a __System.Data.DataSet__ type data source to have __RadGridView__ automatically build a hierarchical schema.
 
+#### Create hierarchical grid
+
 {{source=..\SamplesCS\GridView\Fundamentials\CreatingHierarchicalGrid.cs region=AutoGenerateHierarchy}} 
 {{source=..\SamplesVB\GridView\Fundamentials\CreatingHierarchicalGrid.vb region=AutoGenerateHierarchy}} 
 

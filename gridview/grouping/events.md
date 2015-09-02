@@ -14,41 +14,11 @@ position: 7
 
 ## 
 
-There are two events that are raised, when the data in the RadGridView is grouped. The first one is the __GroupByChanging__ 
-        	event which is raised before the data is grouped and he second one is the __GroupByChanged__ event raised after the data is grouped.
-        #_[C#]_
+There are two events that are raised, when the data in the RadGridView is grouped. The first one is the __GroupByChanging__ event which is raised before the data is grouped and he second one is the __GroupByChanged__ event raised after the data is grouped.
 
-	
-
-#_[C#]_
-
-	
-
-#_[VB.NET]_
-
-	
-
-
-
-From the event arguments of both events you can access the following data:
-
-* __Action__ - an enumeration with values: *Add*, *Remove*, 
-		  		*ItemChanged* and *Reset*.The __Action__ property notifies if
-		  		a __GroupDescriptor__ is added, removed, modified or the __GroupDescriptors__ collection is cleared.
-		  
-
-* __NewItems__ - a List of *added*, *edited* or 
-		  	*removed*__GroupDescriptors__. For each __GroupDescriptor__ 
-		  	you can get its __GroupNames__, __Format__, __Aggregates__ and __Expression__.
-		 
-
-You are also able to cancel the grouping operation by setting the __Cancel__ property to *True*
-
-{{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=subscribeToEvents}} 
 {{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=eventHandlers}} 
-{{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=eventHandlers}} 
+{{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=eventHandlers}}
 
-{{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=cancelGrouping}} 
 ````C#
         void radGridView1_GroupByChanging1(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
         {
@@ -68,20 +38,39 @@ You are also able to cancel the grouping operation by setting the __Cancel__ pro
 
 {{endregion}} 
 
+From the event arguments of both events you can access the following data:
 
-#_[VB.NET]_
+* __Action__ - an enumeration with values: *Add*, *Remove*, *ItemChanged* and *Reset*.The __Action__ property notifies if a __GroupDescriptor__ is added, removed, modified or the __GroupDescriptors__ collection is cleared.
+		  
+* __NewItems__ - a List of *added*, *edited* or *removed*__GroupDescriptors__. For each __GroupDescriptor__ you can get its __GroupNames__, __Format__, __Aggregates__ and __Expression__.
 
-	
+You are also able to cancel the grouping operation by setting the __Cancel__ property to *True*
 
+{{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=cancelGrouping}} 
+{{source=..\SamplesCS\GridView\Grouping\GroupingEvents.vb region=cancelGrouping}} 
+````C#
+        void radGridView1_GroupByChanging1(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
+        {
+            e.Cancel = true;
+        }
+````
+````VB.NET
+    Private Sub RadGridView1_GroupByChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles RadGridView1.GroupByChanged
 
+    End Sub
 
-Since the __GroupDescriptors__ collection implements the __INotifyPropertyChanged__ interface, 
-			you can use its __CollectionChanged__ event:
-		
+    Private Sub RadGridView1_GroupByChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.GroupByChanging
 
-{{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=cancelGrouping}} 
+    End Sub
+    '
+````
 
-{{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=subscribeToCollectionChanged}} 
+{{endregion}} 
+
+Since the __GroupDescriptors__ collection implements the __INotifyPropertyChanged__ interface, you can use its __CollectionChanged__ event:
+
+{{source=..\SamplesVB\GridView\Grouping\GroupingEvents.cs region=subscribeToCollectionChanged}} 
+{{source=..\SamplesCS\GridView\Grouping\GroupingEvents.vb region=subscribeToCollectionChanged}} 
 ````C#
             radGridView1.GroupDescriptors.CollectionChanged += new Telerik.WinControls.Data.NotifyCollectionChangedEventHandler(GroupDescriptors_CollectionChanged);
 ````
@@ -95,14 +84,8 @@ Since the __GroupDescriptors__ collection implements the __INotifyPropertyChange
 {{endregion}} 
 
 
-#_[C#]_
-
-	
-
-
-
 {{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=CollectionChangedHandler}} 
-{{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=subscribeToCollectionChanged}} 
+{{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=CollectionChangedHandler}} 
 
 ````C#
         void GroupDescriptors_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
@@ -116,12 +99,5 @@ Since the __GroupDescriptors__ collection implements the __INotifyPropertyChange
 ````
 
 {{endregion}} 
-
-
-#_[VB.NET]_
-
-	
-
-
 
 The arguments of this event provide the same data as the __GroupByChanged__ event.

@@ -14,19 +14,13 @@ position: 1
 
 ## Overview
 
-RadGridView has a __GroupDescriptors__ property at the GridViewTemplate level which is exposed in RadGridView class
-    			for MasterTemplate instance. This collection allows you to use descriptors which define the grouping criteria and the group's sorting 
-    			direction for the data that is bound to the RadGridView.
+RadGridView has a __GroupDescriptors__ property at the GridViewTemplate level which is exposed in RadGridView class for MasterTemplate instance. This collection allows you to use descriptors which define the grouping criteria and the group's sorting direction for the data that is bound to the RadGridView.
 
-As this is a collection, you are able not only to add, but to remove or clear the its entries as well. 
-      			Adding descriptors to the collection makes the current view display the items sorted and divided into groups. 
-      	
+As this is a collection, you are able not only to add, but to remove or clear the its entries as well. Adding descriptors to the collection makes the current view display the items sorted and divided into groups. 
 
-## Using GroupDescriptors#_[C#] Using simple group descriptor_
+## Using GroupDescriptors
 
-	
-
-
+#### Using simple group descriptor
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=usingSimpleGroupDescriptor}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=usingSimpleGroupDescriptor}} 
@@ -45,20 +39,13 @@ As this is a collection, you are able not only to add, but to remove or clear th
 
 {{endregion}} 
 
-
 ![gridview-grouping-setting-groups-programmatically 001](images/gridview-grouping-setting-groups-programmatically001.png)
-
-
 
 The __GroupNames__ property defines the property, by which the data will be grouped. The __GroupName__ is a __SortDescriptorCollection__ and defines group names for one grouping criteria.
 
+RadGridView supports grouping using one or more property names. The following example demonstrates how you can group by two properties:
 
-
-RadGridView supports grouping using one or more property names. The following example demonstrates how you can group by two properties:#_[C#] Grouping by more than one column name_
-
-	
-
-
+#### Grouping by more than one column name
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=groupingByMoreThanOneColumnName}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=groupingByMoreThanOneColumnName}} 
@@ -82,13 +69,9 @@ RadGridView supports grouping using one or more property names. The following ex
 
 ![gridview-grouping-setting-groups-programmatically 002](images/gridview-grouping-setting-groups-programmatically002.png)
 
+RadGridView supports grouping on one or more levels. The following example demonstrates how you can group on two levels:
 
-
-RadGridView supports grouping on one or more levels. The following example demonstrates how you can group on two levels:#_[C#] Grouping on one or more levels_
-
-	
-
-
+#### Grouping on one or more levels
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=groupingOnOneOrMoreLevels}} 
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=groupingOnOneOrMoreLevels}} 
@@ -112,6 +95,5 @@ RadGridView supports grouping on one or more levels. The following example demon
 ````
 
 {{endregion}} 
-
 
 ![gridview-grouping-setting-groups-programmatically 003](images/gridview-grouping-setting-groups-programmatically003.png)

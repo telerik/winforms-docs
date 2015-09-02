@@ -10,24 +10,15 @@ position: 2
 
 # Sorting Expressions
 
-
-
-
-
 ## Overview
 
-The __SortDescriptors__ Collection exposes the __Expression__ property which is used to create
-        flexible sorting conditions.
-		Expression is a string that contains the column name followed by "ASC" (ascending) or "DESC" (descending). 
-    Columns are sorted ascending by default. Multiple columns can be separated by commas.
+The __SortDescriptors__ Collection exposes the __Expression__ property which is used to create flexible sorting conditions. Expression is a string that contains the column name followed by "ASC" (ascending) or "DESC" (descending). Columns are sorted ascending by default. Multiple columns can be separated by commas.
 
 ## Creating expressions
 
-Creating a simple expression:#_[C#] Creating simple sorting expression_
+Creating a simple expression:
 
-	
-
-
+#### Creating simple sorting expression
 
 {{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=creatingSimpleSortingExpression}} 
 {{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=creatingSimpleSortingExpression}} 
@@ -42,14 +33,9 @@ Creating a simple expression:#_[C#] Creating simple sorting expression_
 
 {{endregion}} 
 
+Sorting by two columns using expressions:
 
-
-
-Sorting by two columns using expressions:#_[C#] Sorting by two columns, using sorting expression_
-
-	
-
-
+#### Sorting by two columns, using sorting expression
 
 {{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=sortingByTwoColumnsUsingExpression}} 
 {{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=sortingByTwoColumnsUsingExpression}} 
@@ -63,6 +49,3 @@ Sorting by two columns using expressions:#_[C#] Sorting by two columns, using so
 ````
 
 {{endregion}} 
-
-
-

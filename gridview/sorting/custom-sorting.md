@@ -12,12 +12,9 @@ position: 3
 
 
 
-Custom sorting is a flexible mechanism for sorting RadGridView rows using custom logic. It has a higher priority than the applied
-      	__SortDescriptors__ (added either by code or by clicking the header row).
-      
+Custom sorting is a flexible mechanism for sorting RadGridView rows using custom logic. It has a higher priority than the applied __SortDescriptors__ (added either by code or by clicking the header row).
 
-Custom sorting is applied if user sorting is enabled by the __RadGridView.EnableSorting__ or 
-      	__GridViewTemplate.EnableSorting__properties. By default, sorting is enabled at all levels.
+Custom sorting is applied if user sorting is enabled by the __RadGridView.EnableSorting__ or  __GridViewTemplate.EnableSorting__properties. By default, sorting is enabled at all levels.
       
 
 RadGridView provides two mechanisms for custom sorting:
@@ -33,35 +30,30 @@ The CustomSorting event is fired if custom sorting is enabled. The arguments of 
 * __Template__ – the template that holds the rows which are going to be sorted 
 
 * __Row1, Row2__ – the rows to be compared
-        
 
 * __SortResult__ – returns negative value when Row1 is before Row2, positive value if Row1 is after Row2 and zero if the rows are have equal values in a specified column.
-        
 
 * __Handled__ – defines if the comparison of the two rows is processed by the custom algorithm or by the applied sort descriptors.
-        
 
-The following example demonstrates how to handle the __CustomSorting__ event sorting the RadGridView rows 
-			ascending by the values of the Freight column. The defined __SortOrder__ for the Freight column in this 
-			example assumes that rows sorting is not applied. All RadGridView rows are processed by the custom logic.
-		#_[C#]_
-
-	
-
-#_[C#]_
-
-	
-
-#_[VB.NET]_
-
-	
-
-
+The following example demonstrates how to handle the __CustomSorting__ event sorting the RadGridView rows ascending by the values of the Freight column. The defined __SortOrder__ for the Freight column in this example assumes that rows sorting is not applied. All RadGridView rows are processed by the custom logic.
 
 {{source=..\SamplesCS\GridView\Sorting\CustomSorting.cs region=usingCustomSorting}} 
-{{source=..\SamplesCS\GridView\Sorting\CustomSorting.cs region=usingCustomSorting1}} 
-{{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingCustomSorting}} 
+{{source=..\SamplesCS\GridView\Sorting\CustomSorting.vb region=usingCustomSorting}} 
+````C#
+    this.radGridView1.EnableCustomSorting = true;
+    this.radGridView1.CustomSorting += new GridViewCustomSortingEventHandler(radGridView1_CustomSorting);
+    
+    this.radGridView1.Columns["Freight"].SortOrder = RadSortOrder.Ascending;
+````
+````VB.NET
+     Me.RadGridView1.EnableCustomSorting = TrueRadGridView1.CustomSorting
+     Me.RadGridView1.Columns("Freight").SortOrder = RadSortOrder.Ascending
+    '
+````
 
+{{endregion}}
+
+{{source=..\SamplesVB\GridView\Sorting\CustomSorting.cs region=usingCustomSorting1}} 
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingCustomSorting1}} 
 
 ````C#
@@ -104,28 +96,58 @@ The following example demonstrates how to handle the __CustomSorting__ event sor
 
 ![gridview-sorting-custom-sorting 001](images/gridview-sorting-custom-sorting001.png)
 
-The following example demonstrates the usage of the __Handled__ property of the __CustomSorting__
-			event arguments. It uses custom sorting to sort the rows ascending by the values of the Freight column. This sorting is applied to the rows 
-			that have a value in the Freight column greater than "0.33". The rest are handled by the defined __SortDescriptor__ 
-			and sorted descending by the values of the Freight column.
-		#_[C#]_
-
-	
-
-#_[C#]_
-
-	
-
-#_[VB.NET]_
-
-	
-
-
+The following example demonstrates the usage of the __Handled__ property of the __CustomSorting__ event arguments. It uses custom sorting to sort the rows ascending by the values of the Freight column. This sorting is applied to the rows that have a value in the Freight column greater than "0.33". The rest are handled by the defined __SortDescriptor__ and sorted descending by the values of the Freight column.
 
 {{source=..\SamplesCS\GridView\Sorting\CustomSorting1.cs region=usingCustomSortingPlusHandled}} 
-{{source=..\SamplesCS\GridView\Sorting\CustomSorting1.cs region=usingCustomSortingPlusHandled1}} 
-{{source=..\SamplesVB\GridView\Sorting\CustomSorting1.vb region=usingCustomSortingPlusHandled}} 
+{{source=..\SamplesCS\GridView\Sorting\CustomSorting1.vb region=usingCustomSortingPlusHandled}} 
 
+````C#
+        public class CustomComparer : IComparer<GridViewRowInfo>
+        {
+            public int Compare(GridViewRowInfo x, GridViewRowInfo y)
+            {
+                int row1ShipCityLenght = x.Cells["ShipCity"].Value.ToString().Length;
+                int row2ShipCityLenght = y.Cells["ShipCity"].Value.ToString().Length;
+
+                int result = 0;
+                if (row1ShipCityLenght > row2ShipCityLenght)
+                {
+                    result = 1;
+                }
+                else if (row1ShipCityLenght < row2ShipCityLenght)
+                {
+                    result = -1;
+                }
+
+                return result;
+            }
+        }
+````
+````VB.NET
+    Public Class CustomComparer
+        Implements IComparer(Of GridViewRowInfo)
+
+        Public Function Compare(ByVal x As GridViewRowInfo, ByVal y As GridViewRowInfo) As Integer Implements System.Collections.Generic.IComparer(Of Telerik.WinControls.UI.GridViewRowInfo).Compare
+            Dim row1ShipCityLenght As Integer = x.Cells("ShipCity").Value.ToString().Length
+            Dim row2ShipCityLenght As Integer = y.Cells("ShipCity").Value.ToString().Length
+
+            Dim result As Integer = 0
+            If row1ShipCityLenght > row2ShipCityLenght Then
+                result = 1
+            ElseIf row1ShipCityLenght < row2ShipCityLenght Then
+                result = -1
+            End If
+
+            Return result
+        End Function
+    End Class
+
+    '
+````
+
+{{endregion}} 
+
+{{source=..\SamplesVB\GridView\Sorting\CustomSorting1.vb region=usingCustomSortingPlusHandled1}} 
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting1.vb region=usingCustomSortingPlusHandled1}} 
 
 ````C#
@@ -182,30 +204,61 @@ The following example demonstrates the usage of the __Handled__ property of the 
 
 ## Implementing sorting mechanism by using SortComparer
 
-You can replace the sorting mechanism in RadGridView with a custom one by setting the __SortComparer__ of the
- 	       __GridViewTemplate__.
-        
+You can replace the sorting mechanism in RadGridView with a custom one by setting the __SortComparer__ of the __GridViewTemplate__.
 
-The following example demonstrates how to use a custom sorting mechanism in RadGridView to sort the RadGridView rows
-        	ascending by the length of the ShipCity column:
-        #_[C#]_
-
-	
-
-#_[C#]_
-
-	
-
-#_[VB.NET]_
-
-	
-
-
+The following example demonstrates how to use a custom sorting mechanism in RadGridView to sort the RadGridView rows ascending by the length of the ShipCity column:
 
 {{source=..\SamplesCS\GridView\Sorting\CustomSorting.cs region=usingSortComparer}} 
-{{source=..\SamplesCS\GridView\Sorting\CustomSorting.cs region=usingSortComparer1}} 
-{{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingSortComparer}} 
+{{source=..\SamplesCS\GridView\Sorting\CustomSorting.vb region=usingSortComparer}} 
 
+````C#
+        public class CustomComparer : IComparer<GridViewRowInfo>
+        {
+            public int Compare(GridViewRowInfo x, GridViewRowInfo y)
+            {
+                int row1ShipCityLenght = x.Cells["ShipCity"].Value.ToString().Length;
+                int row2ShipCityLenght = y.Cells["ShipCity"].Value.ToString().Length;
+
+                int result = 0;
+                if (row1ShipCityLenght > row2ShipCityLenght)
+                {
+                    result = 1;
+                }
+                else if (row1ShipCityLenght < row2ShipCityLenght)
+                {
+                    result = -1;
+                }
+
+                return result;
+            }
+        }
+````
+````VB.NET
+    Public Class CustomComparer
+        Implements IComparer(Of GridViewRowInfo)
+
+        Public Function Compare(ByVal x As GridViewRowInfo, ByVal y As GridViewRowInfo) As Integer Implements System.Collections.Generic.IComparer(Of Telerik.WinControls.UI.GridViewRowInfo).Compare
+            Dim row1ShipCityLenght As Integer = x.Cells("ShipCity").Value.ToString().Length
+            Dim row2ShipCityLenght As Integer = y.Cells("ShipCity").Value.ToString().Length
+
+            Dim result As Integer = 0
+            If row1ShipCityLenght > row2ShipCityLenght Then
+                result = 1
+            ElseIf row1ShipCityLenght < row2ShipCityLenght Then
+                result = -1
+            End If
+
+            Return result
+        End Function
+    End Class
+
+    '
+````
+
+{{endregion}} 
+
+
+{{source=..\SamplesVB\GridView\Sorting\CustomSorting.cs region=usingSortComparer1}}
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingSortComparer1}} 
 
 ````C#
@@ -257,20 +310,10 @@ The following example demonstrates how to use a custom sorting mechanism in RadG
 
 ![gridview-sorting-custom-sorting 003](images/gridview-sorting-custom-sorting003.png)
 
-## 
-        Create custom sort order criteria for a particular column.
+## Create custom sort order criteria for a particular column.
       
 
-You can use the custom sorting functionality to change the default sorting behavior for a particular column.
-          This will leave the sorting functionality for the other columns intact and the user will be able to sort them in the usual way. 
-          However when the user presses the column header cell for the column that we have changed the sort criteria, it will be sorted by the custom criteria.
-          To achieve this we can use the __SortDescriptors__ collection of __RadGridView__.
-          For example you can order the rows by the text length in the *Customer* column with the following code:
-      #_[C#]_
-
-	
-
-
+You can use the custom sorting functionality to change the default sorting behavior for a particular column. This will leave the sorting functionality for the other columns intact and the user will be able to sort them in the usual way. However when the user presses the column header cell for the column that we have changed the sort criteria, it will be sorted by the custom criteria. To achieve this we can use the __SortDescriptors__ collection of __RadGridView__. For example you can order the rows by the text length in the *Customer* column with the following code:
 
 {{source=..\SamplesCS\GridView\Sorting\CustomSorting2.cs region=SortByCustomCriteria}} 
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting2.vb region=SortByCustomCriteria}} 

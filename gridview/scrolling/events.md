@@ -14,11 +14,9 @@ position: 0
 
 ## 
 
-There are a vertical and a horizontal scroll bar objects for the vertical and horizontal scrollbars respectively. For instance, to subscribe to *ValueChanged *event of the vertical scroll bar use the following code:#_[C#] ScrollBar value changed event_
+There are a vertical and a horizontal scroll bar objects for the vertical and horizontal scrollbars respectively. For instance, to subscribe to *ValueChanged* event of the vertical scroll bar use the following code:
 
-	
-
-
+#### ScrollBar value changed event
 
 {{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=scrollBarValueChanged}} 
 {{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=scrollBarValueChanged}} 
@@ -37,9 +35,6 @@ There are a vertical and a horizontal scroll bar objects for the vertical and h
 ````
 
 {{endregion}} 
-
-
-
 
 >caution Please note that RadGridView Scroll event is NOT used.
 >

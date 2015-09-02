@@ -22,17 +22,7 @@ The text of the group header row is a formatted string with the following parame
 
 * __{2}, {3} …__ - __Aggregates values__
 
-You can define the format of the group header row by using the __GroupDescriptor Format__ property.
-			Its default value is __“{0}: {1}”__. The following two examples demonstrate how you can use the group aggregates. 
-      Full list of the available expressions can be found here:
-      [
-       http://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression.aspx
-      
-      ](http://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression.aspx)#_[C#]_
-
-	
-
-
+You can define the format of the group header row by using the __GroupDescriptor Format__ property. Its default value is __“{0}: {1}”__. The following two examples demonstrate how you can use the group aggregates. Full list of the available expressions can be found here:[http://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression.aspx](http://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression.aspx)
 
 {{source=..\SamplesCS\GridView\Grouping\GroupAggregates.cs region=GroupAggregates}} 
 {{source=..\SamplesVB\GridView\Grouping\GroupAggregates.vb region=GroupAggregates}} 
@@ -57,12 +47,7 @@ You can define the format of the group header row by using the __GroupDescriptor
 
 {{endregion}} 
 
-
-![gridview-group-aggregates 001](images/gridview-group-aggregates001.png)#_[C#]_
-
-	
-
-
+![gridview-group-aggregates 001](images/gridview-group-aggregates001.png)
 
 {{source=..\SamplesCS\GridView\Grouping\GroupAggregates1.cs region=GroupAggregates1}} 
 {{source=..\SamplesVB\GridView\Grouping\GroupAggregates1.vb region=GroupAggregates1}} 
