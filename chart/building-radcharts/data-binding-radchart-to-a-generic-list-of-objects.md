@@ -2,7 +2,7 @@
 title: Data Binding RadChart to a Generic List of Objects
 page_title: Data Binding RadChart to a Generic List of Objects | UI for WinForms Documentation
 description: Data Binding RadChart to a Generic List of Objects
-slug: winforms/chart-(obsolete)/building-radcharts/data-binding-radchart-to-a-generic-list-of-objects
+slug: winforms/chart/building-radcharts/data-binding-radchart-to-a-generic-list-of-objects
 tags: data,binding,radchart,to,a,generic,list,of,objects
 published: True
 position: 9
@@ -21,11 +21,7 @@ You can bind to a [generic lists](http://msdn2.microsoft.com/en-us/library/6sh2e
 
 ![chart-building-radcharts-data-binding-radchart-to-a-generic-list-of-objects 001](images/chart-building-radcharts-data-binding-radchart-to-a-generic-list-of-objects001.png)
 
-The Product object is defined with a constructor that passes both Name and QuantityInStock: #_[C#] The Product class_
-
-	
-
-
+The Product object is defined with a constructor that passes both Name and QuantityInStock:  
 
 {{source=..\SamplesCS\Chart\DataBindingToGenericListOfObject.cs region=product}} 
 {{source=..\SamplesVB\Chart\DataBindingToGenericListOfObject.vb region=product}} 
@@ -90,18 +86,14 @@ After the Product object is defined the following steps configure and bind to th
 1. A generic List of Product objects is created and assigned to the __RadChart__ __DataSource__ property.   
 
 
-1. The __DataYColumn______property of the series is assigned the numeric "QuantityInStock" property of the Product object.  
+1. The __DataYColumn__ property of the series is assigned the numeric "QuantityInStock" property of the Product object.  
 
 
-1. The __XAxis____DataLabelsColumn__ is assigned the "Name" property of the the Product object.  
+1. The __XAxisDataLabelsColumn__ is assigned the "Name" property of the the Product object.  
 
 
-1. The __RadChart__ DataBind() method is called.#_[C#] Binding to object_
-
-	
-
-
-
+1. The __RadChart__ DataBind() method is called. 
+2. 
 {{source=..\SamplesCS\Chart\DataBindingToGenericListOfObject.cs region=bindingToObject}} 
 {{source=..\SamplesVB\Chart\DataBindingToGenericListOfObject.vb region=bindingToObject}} 
 

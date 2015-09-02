@@ -2,7 +2,7 @@
 title: Intelligent Labels
 page_title: Intelligent Labels | UI for WinForms Documentation
 description: Intelligent Labels
-slug: winforms/chart-(obsolete)/features/intelligent-labels
+slug: winforms/chart/features/intelligent-labels
 tags: intelligent,labels
 published: True
 position: 4

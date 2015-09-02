@@ -23,7 +23,7 @@ Legends are symbols and text used to provide additional information about the ch
 * __Items__: A collection containing the individual legend text and symbols for each series.  Add to this collection to create your own custom legends. 
 
 
-* __Marker__: A visual marker for the legend as a whole. Use the marker __Appearance__ property to control properties like __FillStyle__, __Dimensions__ and __Position__ . To assign an image to the marker use the marker Appearance.FillStyle property to set __FillType__ to __Image__and FillSettings.BackgroundImage to the path of the image. 
+* __Marker__: A visual marker for the legend as a whole. Use the marker __Appearance__ property to control properties like __FillStyle__, __Dimensions__ and __Position__ . To assign an image to the marker use the marker Appearance.FillStyle property to set __FillType__ to __Image__ and FillSettings.BackgroundImage to the path of the image. 
 
 
 * __TextBlock__ : Use TextBlock to control the default text and appearance.

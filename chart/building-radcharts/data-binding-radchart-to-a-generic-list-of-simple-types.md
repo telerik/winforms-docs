@@ -2,7 +2,7 @@
 title: Data Binding RadChart to a Generic List of Simple Types
 page_title: Data Binding RadChart to a Generic List of Simple Types | UI for WinForms Documentation
 description: Data Binding RadChart to a Generic List of Simple Types
-slug: winforms/chart-(obsolete)/building-radcharts/data-binding-radchart-to-a-generic-list-of-simple-types
+slug: winforms/chart/building-radcharts/data-binding-radchart-to-a-generic-list-of-simple-types
 tags: data,binding,radchart,to,a,generic,list,of,simple,types
 published: True
 position: 8
@@ -12,16 +12,10 @@ position: 8
 
 
 
-The example below is the result of binding a [generic List<>](http://msdn2.microsoft.com/en-us/library/6sh2ey19.aspx)
-        of double to the __RadChart__ __DataSource__ property and calling the DataBind() method.
+The example below is the result of binding a [generic List<>](http://msdn2.microsoft.com/en-us/library/6sh2ey19.aspx) of double to the __RadChart__ __DataSource__ property and calling the DataBind() method.
 >caption 
 
 ![chart-building-radcharts-data-binding-radchart-to-a-generic-list-of-simple-types 001](images/chart-building-radcharts-data-binding-radchart-to-a-generic-list-of-simple-types001.png)
-
-#_[C#] Binding to generic list of simple types_
-
-	
-
 
 
 {{source=..\SamplesCS\Chart\DataBindingToGenericListOfSimpleTypes.cs region=bindToGenericListOfSimpleTypes}} 

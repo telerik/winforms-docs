@@ -2,7 +2,7 @@
 title: Multiple Chart Types in a Single Chart
 page_title: Multiple Chart Types in a Single Chart | UI for WinForms Documentation
 description: Multiple Chart Types in a Single Chart
-slug: winforms/chart-(obsolete)/advanced-topics/multiple-chart-types-in-a-single-chart
+slug: winforms/chart/advanced-topics/multiple-chart-types-in-a-single-chart
 tags: multiple,chart,types,in,a,single,chart
 published: True
 position: 3
@@ -14,9 +14,9 @@ position: 3
 
 ## 
 
-RadChart allows you to combine several [chart types]({%slug winforms/chart-(obsolete)/understanding-radchart-types/radchart-types-overview%}) in a single chart. You can use the __ChartSeries__ Collection Editor at design-time to create the __ChartSeries__ and set the respective __ChartSeriesType__. You can also add chart series and set chart type programmatically.
+RadChart allows you to combine several [chart types]({%slug winforms/chart/understanding-radchart-types/radchart-types-overview%}) in a single chart. You can use the __ChartSeries__ Collection Editor at design-time to create the __ChartSeries__ and set the respective __ChartSeriesType__. You can also add chart series and set chart type programmatically.
 
-To designate dissimilar [chart types]({%slug winforms/chart-(obsolete)/understanding-radchart-types/radchart-types-overview%}) in a single chart at design time, click on a series, then select the __Type__ property from the drop down list.
+To designate dissimilar [chart types]({%slug winforms/chart/understanding-radchart-types/radchart-types-overview%}) in a single chart at design time, click on a series, then select the __Type__ property from the drop down list.
 
 
 >caption 
@@ -25,11 +25,7 @@ To designate dissimilar [chart types]({%slug winforms/chart-(obsolete)/understa
 
 
 
-To assign chart types to a series at run-time programmatically you can pass the __ChartSeriesType__ in the constructor or assign the __ChartSeriesType__ after the series is constructed.  The example below passes three chart series types to the constructor. #_[C#] Setting chart types_
-
-	
-
-
+To assign chart types to a series at run-time programmatically you can pass the __ChartSeriesType__ in the constructor or assign the __ChartSeriesType__ after the series is constructed.  The example below passes three chart series types to the constructor. 
 
 {{source=..\SamplesCS\Chart\MultipleChartTypes.cs region=settingChartTypes}} 
 {{source=..\SamplesVB\Chart\MultipleChartTypes.vb region=settingChartTypes}} 
@@ -57,13 +53,7 @@ Use the Axis.Range property to set minimum values, maximum values and step amou
 >caption 
 
 ![chart-advanced-topics-multiple-chart-types-in-a-single-chart 002](images/chart-advanced-topics-multiple-chart-types-in-a-single-chart002.png)
-
-#_[C#] Using different chart types_
-
-	
-
-
-
+ 
 {{source=..\SamplesCS\Chart\MultipleChartTypes.cs region=differentChartSeries}} 
 {{source=..\SamplesVB\Chart\MultipleChartTypes.vb region=differentChartSeries}} 
 

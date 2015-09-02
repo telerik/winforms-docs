@@ -28,7 +28,7 @@ __Layout:__
 
 __Appearance__: 
 
-* __Title text__: Set the chart title using the "Title text" entry. If you need more control over the title appearance, content and position see the [Titles]({%slug winforms/chart-(obsolete)/understanding-radchart-elements/titles%}) help topic. 
+* __Title text__: Set the chart title using the "Title text" entry. If you need more control over the title appearance, content and position see the [Titles]({%slug winforms/chart/understanding-radchart-elements/titles%}) help topic. 
 
 
 * __Chart Series Orientation:__ Choose Horizontal or Vertical orientation for the chart from the drop down list. 

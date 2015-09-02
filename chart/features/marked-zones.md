@@ -2,7 +2,7 @@
 title: Marked Zones
 page_title: Marked Zones | UI for WinForms Documentation
 description: Marked Zones
-slug: winforms/chart-(obsolete)/features/marked-zones
+slug: winforms/chart/features/marked-zones
 tags: marked,zones
 published: True
 position: 6

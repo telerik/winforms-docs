@@ -2,7 +2,7 @@
 title: The Wizard Axis Tab
 page_title: The Wizard Axis Tab | UI for WinForms Documentation
 description: The Wizard Axis Tab
-slug: winforms/chart-(obsolete)/understanding-radchart-ui/the-wizard-axis-tab
+slug: winforms/chart/understanding-radchart-ui/the-wizard-axis-tab
 tags: the,wizard,axis,tab
 published: True
 position: 7

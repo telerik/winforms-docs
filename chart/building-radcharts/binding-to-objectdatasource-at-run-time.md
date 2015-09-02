@@ -2,7 +2,7 @@
 title: Binding to ObjectDataSource at Run-Time
 page_title: Binding to ObjectDataSource at Run-Time | UI for WinForms Documentation
 description: Binding to ObjectDataSource at Run-Time
-slug: winforms/chart-(obsolete)/building-radcharts/binding-to-objectdatasource-at-run-time
+slug: winforms/chart/building-radcharts/binding-to-objectdatasource-at-run-time
 tags: binding,to,objectdatasource,at,run-time
 published: True
 position: 12
@@ -16,20 +16,14 @@ position: 12
 
 Once a business object with appropriate attributes has been created you can bind to it in code at run-time. The steps are:
 
-* 
-						Set the [ObjectDataSource](http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.aspx) [TypeName](http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.typename.aspx) property to name of the object class, in this example "RadChartBinding.ProductsBO" (Be sure to qualify the class name with the namespace).  
+* Set the [ObjectDataSource](http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.aspx) [TypeName](http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.typename.aspx) property to name of the object class, in this example "RadChartBinding.ProductsBO" (Be sure to qualify the class name with the namespace).  
 					
 
-* 
-						Set the [SelectMethod](http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.selectmethod.aspx) to the method marked by the [DataObjectMethodAttribute](http://msdn2.microsoft.com/en-us/library/system.componentmodel.dataobjectmethodattribute.aspx).
+* Set the [SelectMethod](http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.selectmethod.aspx) to the method marked by the [DataObjectMethodAttribute](http://msdn2.microsoft.com/en-us/library/system.componentmodel.dataobjectmethodattribute.aspx).
 					
 
-The code below demonstrates binding to an [ObjectDataSource](http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.aspx) that consumes an example object defined in the topic "[Creating an Object that can be consumed by ObjectDataSource]({%slug winforms/chart-(obsolete)/building-radcharts/creating-an-object-that-can-be-consumed-by-objectdatasource%})".
-				#_[C#] Binding to ObjectDataSource_
-
-	
-
-
+The code below demonstrates binding to an [ObjectDataSource](http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.aspx) that consumes an example object defined in the topic "[Creating an Object that can be consumed by ObjectDataSource]({%slug winforms/chart/building-radcharts/creating-an-object-that-can-be-consumed-by-objectdatasource%})".
+				 
 
 {{source=..\SamplesCS\Chart\BindingToObjectDataSourceAtRunTime.cs region=BindingToObjectDataSource}} 
 {{source=..\SamplesVB\Chart\BindingToObjectDataSourceAtRunTime.vb region=BindingToObjectDataSource}} 

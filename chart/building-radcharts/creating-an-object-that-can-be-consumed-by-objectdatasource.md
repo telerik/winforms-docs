@@ -2,7 +2,7 @@
 title: Creating an Object that can be Consumed by ObjectDataSource
 page_title: Creating an Object that can be Consumed by ObjectDataSource | UI for WinForms Documentation
 description: Creating an Object that can be Consumed by ObjectDataSource
-slug: winforms/chart-(obsolete)/building-radcharts/creating-an-object-that-can-be-consumed-by-objectdatasource
+slug: winforms/chart/building-radcharts/creating-an-object-that-can-be-consumed-by-objectdatasource
 tags: creating,an,object,that,can,be,consumed,by,objectdatasource
 published: True
 position: 11
@@ -14,11 +14,7 @@ position: 11
 
 ## 
 
-See the code below for an example object that can be consumed by [ObjectDataSource](http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.aspx).  Your object needs to be marked with the [DataObjectAttribute](http://msdn2.microsoft.com/en-us/library/system.componentmodel.dataobjectattribute.aspx) for the object to be seen by Data Source Configuration Wizard. It also needs a method to select data marked by the [DataObjectMethodAttribute](http://msdn2.microsoft.com/en-us/library/system.componentmodel.dataobjectmethodattribute.aspx) (see GetProducts() method in the code sample). #_[C#] Creating an object that can be consumed by object data source_
-
-	
-
-
+See the code below for an example object that can be consumed by [ObjectDataSource](http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.aspx).  Your object needs to be marked with the [DataObjectAttribute](http://msdn2.microsoft.com/en-us/library/system.componentmodel.dataobjectattribute.aspx) for the object to be seen by Data Source Configuration Wizard. It also needs a method to select data marked by the [DataObjectMethodAttribute](http://msdn2.microsoft.com/en-us/library/system.componentmodel.dataobjectmethodattribute.aspx) (see GetProducts() method in the code sample).  
 
 {{source=..\SamplesCS\Chart\CreatingAnObjectThatCanBeConsumedByObjectDataSource.cs region=createObject}} 
 {{source=..\SamplesVB\Chart\CreatingAnObjectThatCanBeConsumedByObjectDataSource.vb region=createObject}} 

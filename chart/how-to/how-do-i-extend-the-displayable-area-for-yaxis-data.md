@@ -2,7 +2,7 @@
 title: How Do I extend the Displayable Area for YAxis Data?
 page_title: How Do I extend the Displayable Area for YAxis Data? | UI for WinForms Documentation
 description: How Do I extend the Displayable Area for YAxis Data?
-slug: winforms/chart-(obsolete)/how-to/how-do-i-extend-the-displayable-area-for-yaxis-data?
+slug: winforms/chart/how-to/how-do-i-extend-the-displayable-area-for-yaxis-data?
 tags: how,do,i,extend,the,displayable,area,for,yaxis,data?
 published: True
 position: 0
@@ -18,7 +18,9 @@ position: 0
 
 Assign the YAxis __AxisMode__ property.  By default the __ChartYAxisMode__ property value is Normal and the YAxis data fills the available space.
 
-myChart.PlotArea.YAxis.AxisMode = ChartYAxisMode.Normal;CS
+myChart.PlotArea.YAxis.AxisMode = ChartYAxisMode.Normal;
+
+CS
 
 
 >caption 
@@ -29,7 +31,9 @@ myChart.PlotArea.YAxis.AxisMode = ChartYAxisMode.Normal;CS
 
 If you set the __ChartYAxisMode__ to __Extended,__ additional area is placed above the highest data point to make the chart easier to read.
 
-myChart.PlotArea.YAxis.AxisMode = ChartYAxisMode.Extended;CS
+myChart.PlotArea.YAxis.AxisMode = ChartYAxisMode.Extended;
+
+CS
 >caption 
 
 ![chart-how-to-extend-the-displayable-area-for-yaxus-data 002](images/chart-how-to-extend-the-displayable-area-for-yaxus-data002.png)

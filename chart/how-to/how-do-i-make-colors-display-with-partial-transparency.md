@@ -2,7 +2,7 @@
 title: How do I make colors display with partial transparency?
 page_title: How do I make colors display with partial transparency? | UI for WinForms Documentation
 description: How do I make colors display with partial transparency?
-slug: winforms/chart-(obsolete)/how-to/how-do-i-make-colors-display-with-partial-transparency?
+slug: winforms/chart/how-to/how-do-i-make-colors-display-with-partial-transparency?
 tags: how,do,i,make,colors,display,with,partial,transparency?
 published: True
 position: 3

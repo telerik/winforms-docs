@@ -2,7 +2,7 @@
 title: Data Binding RadChart
 page_title: Data Binding RadChart | UI for WinForms Documentation
 description: Data Binding RadChart
-slug: winforms/chart-(obsolete)/building-radcharts/data-binding-radchart
+slug: winforms/chart/building-radcharts/data-binding-radchart
 tags: data,binding,radchart
 published: True
 position: 4
@@ -36,7 +36,7 @@ You can also bind __RadChart__ to a data source that implements one of the foll
 
 Some of the implementations of these interfaces include: 
 
-* [Array](http://msdn2.microsoft.com/en-us/library/system.array(VS.71).aspx): See [Data Binding RadChart to an Array]({%slug winforms/chart-(obsolete)/building-radcharts/data-binding-radchart-to-an-array%}) for an example. 
+* [Array](http://msdn2.microsoft.com/en-us/library/system.array(VS.71).aspx): See [Data Binding RadChart to an Array]({%slug winforms/chart/building-radcharts/data-binding-radchart-to-an-array%}) for an example. 
 
 
 * [ArrayList](http://msdn2.microsoft.com/en-us/library/system.collections.arraylist(VS.71).aspx). 
@@ -45,10 +45,10 @@ Some of the implementations of these interfaces include:
 * [CollectionBase](http://msdn2.microsoft.com/en-us/library/system.collections.collectionbase(VS.71).aspx) Objects. 
 
 
-* [DataView](http://msdn2.microsoft.com/en-us/library/system.data.dataview(VS.71).aspx), [DataTable](http://msdn2.microsoft.com/en-us/library/system.data.datatable.aspx), [DataSet](http://msdn2.microsoft.com/en-us/library/system.data.dataset.aspx): See [Data Bindng to a Database Object]({%slug winforms/chart-(obsolete)/building-radcharts/data-binding-radchart-to-a-database-object%}), [Data binding RadChart to an ObjectDatasource]({%slug winforms/chart-(obsolete)/building-radcharts/data-binding-radchart-to-an-objectdatasource%}), __DataBinding to an XML file__ examples. 
+* [DataView](http://msdn2.microsoft.com/en-us/library/system.data.dataview(VS.71).aspx), [DataTable](http://msdn2.microsoft.com/en-us/library/system.data.datatable.aspx), [DataSet](http://msdn2.microsoft.com/en-us/library/system.data.dataset.aspx): See [Data Bindng to a Database Object]({%slug winforms/chart/building-radcharts/data-binding-radchart-to-a-database-object%}), [Data binding RadChart to an ObjectDatasource]({%slug winforms/chart/building-radcharts/data-binding-radchart-to-an-objectdatasource%}), __DataBinding to an XML file__ examples. 
 
 
-* [Generic List class](http://msdn2.microsoft.com/en-us/library/6sh2ey19.aspx): See [Data Binding RadChart to a Generic List]({%slug winforms/chart-(obsolete)/building-radcharts/data-binding-radchart-to-a-generic-list%}) for an example of binding to a generic list.
+* [Generic List class](http://msdn2.microsoft.com/en-us/library/6sh2ey19.aspx): See [Data Binding RadChart to a Generic List]({%slug winforms/chart/building-radcharts/data-binding-radchart-to-a-generic-list%}) for an example of binding to a generic list.
 
 
 

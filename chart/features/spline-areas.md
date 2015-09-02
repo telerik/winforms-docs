@@ -2,7 +2,7 @@
 title: Spline Areas
 page_title: Spline Areas | UI for WinForms Documentation
 description: Spline Areas
-slug: winforms/chart-(obsolete)/features/spline-areas
+slug: winforms/chart/features/spline-areas
 tags: spline,areas
 published: True
 position: 0

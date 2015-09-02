@@ -2,7 +2,7 @@
 title: Binding to XML Directly at Run-Time
 page_title: Binding to XML Directly at Run-Time | UI for WinForms Documentation
 description: Binding to XML Directly at Run-Time
-slug: winforms/chart-(obsolete)/building-radcharts/binding-to-xml-directly-at-run-time
+slug: winforms/chart/building-radcharts/binding-to-xml-directly-at-run-time
 tags: binding,to,xml,directly,at,run-time
 published: True
 position: 16
@@ -14,11 +14,7 @@ position: 16
 
 ## 
 
-The example below demonstrates binding RadChart to an XML file:#_[C#] Binding to XML_
-
-	
-
-
+The example below demonstrates binding RadChart to an XML file:
 
 {{source=..\SamplesCS\Chart\DataBindingToXMLAtRunTime.cs region=bindingToXML}} 
 {{source=..\SamplesVB\Chart\DataBindingToXMLAtRunTime.vb region=bindingToXML}} 
@@ -67,9 +63,7 @@ The example below demonstrates binding RadChart to an XML file:#_[C#] Binding to
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 The running application looks something like the figure shown below.
 

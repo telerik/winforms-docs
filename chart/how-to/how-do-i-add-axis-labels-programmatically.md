@@ -2,7 +2,7 @@
 title: How Do I add Axis Labels Programmatically?
 page_title: How Do I add Axis Labels Programmatically? | UI for WinForms Documentation
 description: How Do I add Axis Labels Programmatically?
-slug: winforms/chart-(obsolete)/how-to/how-do-i-add-axis-labels-programmatically?
+slug: winforms/chart/how-to/how-do-i-add-axis-labels-programmatically?
 tags: how,do,i,add,axis,labels,programmatically?
 published: True
 position: 1
@@ -27,11 +27,7 @@ To add labels along an Axis programmatically:
 
 >caption 
 
-![chart-how-to-add-axis-labels-programmatically 001](images/chart-how-to-add-axis-labels-programmatically001.png)#_[C#] Add Axis labels_
-
-	
-
-
+![chart-how-to-add-axis-labels-programmatically 001](images/chart-how-to-add-axis-labels-programmatically001.png) 
 
 {{source=..\SamplesCS\Chart\AddAxisLabelsProgrammaticaly.cs region=addAxisLabels}} 
 {{source=..\SamplesVB\Chart\AddAxisLabelsProgrammaticaly.vb region=addAxisLabels}} 

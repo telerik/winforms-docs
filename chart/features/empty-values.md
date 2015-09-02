@@ -2,7 +2,7 @@
 title: Empty Values
 page_title: Empty Values | UI for WinForms Documentation
 description: Empty Values
-slug: winforms/chart-(obsolete)/features/empty-values
+slug: winforms/chart/features/empty-values
 tags: empty,values
 published: True
 position: 1

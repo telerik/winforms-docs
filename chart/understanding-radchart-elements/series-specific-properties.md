@@ -12,11 +12,11 @@ position: 10
 
 
 
-The following are properties specific to the __series appearance__ of specific [chart types]({%slug winforms/chart-(obsolete)/understanding-radchart-types/radchart-types-overview%}).
+The following are properties specific to the __series appearance__ of specific [chart types]({%slug winforms/chart/understanding-radchart-types/radchart-types-overview%}).
 
 ## Bubble
 
-The __BubbleSize__ property is specific to the [Bubble]({%slug winforms/chart-(obsolete)/understanding-radchart-types/bubble-charts%}) chart type and allows you to increase or decrease bubble size without distorting the shape.
+The __BubbleSize__ property is specific to the [Bubble]({%slug winforms/chart/understanding-radchart-types/bubble-charts%}) chart type and allows you to increase or decrease bubble size without distorting the shape.
 
 ## Lines and Splines
 

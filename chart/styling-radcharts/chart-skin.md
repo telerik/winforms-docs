@@ -2,7 +2,7 @@
 title: Chart Skin
 page_title: Chart Skin | UI for WinForms Documentation
 description: Chart Skin
-slug: winforms/chart-(obsolete)/styling-radcharts/chart-skin
+slug: winforms/chart/styling-radcharts/chart-skin
 tags: chart,skin
 published: True
 position: 3

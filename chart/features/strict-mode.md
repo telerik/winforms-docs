@@ -2,7 +2,7 @@
 title: Strict Mode
 page_title: Strict Mode | UI for WinForms Documentation
 description: Strict Mode
-slug: winforms/chart-(obsolete)/features/strict-mode
+slug: winforms/chart/features/strict-mode
 tags: strict,mode
 published: True
 position: 5

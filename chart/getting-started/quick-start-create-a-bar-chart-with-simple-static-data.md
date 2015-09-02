@@ -2,7 +2,7 @@
 title: Quick Start Create a Bar Chart with Simple Static Data
 page_title: Quick Start Create a Bar Chart with Simple Static Data | UI for WinForms Documentation
 description: Quick Start Create a Bar Chart with Simple Static Data
-slug: winforms/chart-(obsolete)/getting-started/quick-start:-create-a-bar-chart-with-simple-static-data
+slug: winforms/chart/getting-started/quick-start:-create-a-bar-chart-with-simple-static-data
 tags: quick,start,create,a,bar,chart,with,simple,static,data
 published: True
 position: 0
@@ -48,13 +48,10 @@ This Quick Start tutorial is designed to have you quickly up and running with a 
 
 1. Repeat the Add Item steps to add 3 new items.
 
-1. Replace the properties for the three new items as follows.:
-
-* __Label__=Produce, __YValue__ =7500
-
-* __Label__=Poultry, __YValue__ =9000
-
-* __Label__=Grains, __YValue__ =11200   
+1. Replace the properties for the three new items as follows:
+	* __Label__=Produce, __YValue__ =7500
+	* __Label__=Poultry, __YValue__ =9000
+	* __Label__=Grains, __YValue__ =11200   
 
 1. Click __OK__ to close the __ChartSeriesItem Collection Editor__.
 

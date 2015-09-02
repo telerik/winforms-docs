@@ -2,7 +2,7 @@
 title: Changes and Backwards Compatibility
 page_title: Changes and Backwards Compatibility | UI for WinForms Documentation
 description: Changes and Backwards Compatibility
-slug: winforms/chart-(obsolete)/changes-and-backward-compatibility/changes-and-backwards-compatibility
+slug: winforms/chart/changes-and-backward-compatibility/changes-and-backwards-compatibility
 tags: changes,and,backwards,compatibility
 published: True
 position: 0

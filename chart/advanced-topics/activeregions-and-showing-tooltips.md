@@ -2,7 +2,7 @@
 title: ActiveRegions and Showing ToolTips
 page_title: ActiveRegions and Showing ToolTips | UI for WinForms Documentation
 description: ActiveRegions and Showing ToolTips
-slug: winforms/chart-(obsolete)/advanced-topics/activeregions-and-showing-tooltips
+slug: winforms/chart/advanced-topics/activeregions-and-showing-tooltips
 tags: activeregions,and,showing,tooltips
 published: True
 position: 0
@@ -12,7 +12,7 @@ position: 0
 
 
 
-The __ActiveRegion__property corresponds to the bounds of a RadChart's item. It is useful to show tooltips and it also contains an additional string property named __Url__.  __ActiveRegion__ appears for many of the UI elements in the chart including __labels__, __chart series__, __chart series items__, __chart title__, __legend__, __axis items__ and the __empty series message__. 
+The __ActiveRegion__ property corresponds to the bounds of a RadChart's item. It is useful to show tooltips and it also contains an additional string property named __Url__.  __ActiveRegion__ appears for many of the UI elements in the chart including __labels__, __chart series__, __chart series items__, __chart title__, __legend__, __axis items__ and the __empty series message__. 
 
 The __ActiveRegion__ property has two significant for WinForms properties: 
 
@@ -27,7 +27,7 @@ The __ActiveRegion__ property has two significant for WinForms properties:
 
 To set a ToolTip, select an item that you are interested in.  Then navigate to its __ActiveRegion__ property. In the __ToolTip__ enter descriptive text.
 
-Below is the __ActiveRegion__ for a [chart series item]({%slug winforms/chart-(obsolete)/understanding-radchart-elements/series-items%}). If the mouse hovers over that area in the chart the tool tip "Sales - January" will display.
+Below is the __ActiveRegion__ for a [chart series item]({%slug winforms/chart/understanding-radchart-elements/series-items%}). If the mouse hovers over that area in the chart the tool tip "Sales - January" will display.
 >caption 
 
 ![chart-advanced-topics-active-regions-and-showing-tooltips 001](images/chart-advanced-topics-active-regions-and-showing-tooltips001.png)

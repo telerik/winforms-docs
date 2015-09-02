@@ -12,7 +12,7 @@ position: 2
 
 
 
-X and Y axes are included in all chart types but the [Pie]({%slug winforms/char/understanding-radchart-types/pie-charts%}) chart. Typically the __YAxis__ displays values and the __XAxis__ displays categories.  For example, the __YAxis__ might show "items sold" or "revenue", while the __XAxis__ might show "Months" or "Products". The X axis can also display values. A second "Y" axis property __YAxis2__ is provided for displaying a second scale of measurements. 
+X and Y axes are included in all chart types but the [Pie]({%slug winforms/chart/understanding-radchart-types/pie-charts%}) chart. Typically the __YAxis__ displays values and the __XAxis__ displays categories.  For example, the __YAxis__ might show "items sold" or "revenue", while the __XAxis__ might show "Months" or "Products". The X axis can also display values. A second "Y" axis property __YAxis2__ is provided for displaying a second scale of measurements. 
 >caption 
 
 ![chart-undestanding-radchart-elements-axes 001](images/chart-undestanding-radchart-elements-axes001.png)

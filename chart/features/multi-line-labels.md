@@ -2,7 +2,7 @@
 title: Multi-Line Labels
 page_title: Multi-Line Labels | UI for WinForms Documentation
 description: Multi-Line Labels
-slug: winforms/chart-(obsolete)/features/multi-line-labels
+slug: winforms/chart/features/multi-line-labels
 tags: multi-line,labels
 published: True
 position: 3

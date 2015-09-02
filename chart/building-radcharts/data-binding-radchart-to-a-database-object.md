@@ -2,7 +2,7 @@
 title: Data Binding RadChart to a Database Object
 page_title: Data Binding RadChart to a Database Object | UI for WinForms Documentation
 description: Data Binding RadChart to a Database Object
-slug: winforms/chart-(obsolete)/building-radcharts/data-binding-radchart-to-a-database-object
+slug: winforms/chart/building-radcharts/data-binding-radchart-to-a-database-object
 tags: data,binding,radchart,to,a,database,object
 published: True
 position: 6
@@ -14,27 +14,22 @@ position: 6
 
 ## 
 
-To bind to a database, create a data source object, assign the data source to the __RadChart__ and call the __RadChart__ DataBind() method.
+To bind to a database, create a data source object, assign the data source to the __RadChart__ and call the RadChart __DataBind()__ method.
 >caption 
 
 ![chart-building-radcharts-data-binding-radchart-to-a-database-object 001](images/chart-building-radcharts-data-binding-radchart-to-a-database-object001.png)
 
 The figure above shows a running example that starts with a default __RadChart__ with a single Series. The example code: 
 
-* Creates a [SqlDataSource](http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.sqldatasource.aspx)__,__ adds it to the page, assigns the __RadChart____DataSourceID__property and finally binds to the datasource. 
+* Creates a [SqlDataSource](http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.sqldatasource.aspx), adds it to the page, assigns the __RadChartDataSourceID__ property and finally binds to the datasource. 
 
 
-* Displays data for a database column by assigning the series __DataYColumn______or __DataXColumn______properties. In the example the "TotalSales" column is assigned to the __DataYColumn__ property. 
+* Displays data for a database column by assigning the series __DataYColumn__ or __DataXColumn__  properties. In the example the "TotalSales" column is assigned to the __DataYColumn__ property. 
 
 
-* Displays database column data in the X axis labels by assigning the column name to the __DataLabelsColumn____.__The example assigns "CategoryName" to the __DataLabelsColumn__ property.
+* Displays database column data in the X axis labels by assigning the column name to the __DataLabelsColumn__. The example assigns "CategoryName" to the __DataLabelsColumn__ property.
 
 >note Also note how the example sets the PlotArea.Appearance.Dimensions.Margins.Bottom to 30% and the PlotArea.XAxis.Appearance.LabelAppearance.RotationAngle to 300 in order to provide room for the axis labels.
->
-#_[C#] Binding to data base_
-
-	
-
 
 
 {{source=..\SamplesCS\Chart\DataBindingToDataBaseObject.cs region=bindToDataBase}} 

@@ -2,7 +2,7 @@
 title: Understanding Wizard Values Data Table Tab
 page_title: Understanding Wizard Values Data Table Tab | UI for WinForms Documentation
 description: Understanding Wizard Values Data Table Tab
-slug: winforms/chart-(obsolete)/understanding-radchart-ui/understanding-wizard-values-data-table-tab
+slug: winforms/chart/understanding-radchart-ui/understanding-wizard-values-data-table-tab
 tags: understanding,wizard,values,data,table,tab
 published: True
 position: 8
@@ -12,7 +12,7 @@ position: 8
 
 
 
-The __Values Data Table__ tab of the Wizard controls the general look and positioning of the [chart data table](269499D0-9C06-4CAE-93C5-3795AA892331). 
+The __Values Data Table__ tab of the Wizard controls the general look and positioning of the chart data table. 
 
 ## Visual Properties
 

@@ -2,7 +2,7 @@
 title: How Do I Assign Individual Colors to Bars?
 page_title: How Do I Assign Individual Colors to Bars? | UI for WinForms Documentation
 description: How Do I Assign Individual Colors to Bars?
-slug: winforms/chart-(obsolete)/how-to/how-do-i-assign-individual-colors-to-bars?
+slug: winforms/chart/how-to/how-do-i-assign-individual-colors-to-bars?
 tags: how,do,i,assign,individual,colors,to,bars?
 published: True
 position: 2
@@ -21,11 +21,7 @@ By default __RadChart__ is designed so that all bars from a series have the same
 
 >caption 
 
-![chart-how-to-assign-individual-colors-to-bars 001](images/chart-how-to-assign-individual-colors-to-bars001.png)#_[C#] Assigning colors to bars_
-
-	
-
-
+![chart-how-to-assign-individual-colors-to-bars 001](images/chart-how-to-assign-individual-colors-to-bars001.png) 
 
 {{source=..\SamplesCS\Chart\AddIndividualColorsToBars.cs region=assignColors}} 
 {{source=..\SamplesVB\Chart\AddIndividualColorsToBars.vb region=assignColors}} 
