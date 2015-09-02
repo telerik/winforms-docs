@@ -27,7 +27,7 @@ To localize the print dialogs to display text and messages in a specific languag
 *  Override the __GetLocalizedString(string id)__ method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the __default__ clause of the __switch__ statement in the example.
 
 Below is a sample implementation of an English localization provider:
-       
+
 
 #### Localizing print dialogs
 

@@ -10,36 +10,22 @@ position: 3
 
 # Using custom themes
 
-
-
-Since version Q1 2010 of the WinForms Visual Style Builder we have introduced a new theming
-        mechanism, which allows you to create or modify one theme at a time, but for all Rad Controls
-        simultaneously. Once the theming process is finished here is how save the theme and apply it in your
-        application:
+Since version Q1 2010 of the WinForms Visual Style Builder we have introduced a new theming mechanism, which allows you to create or modify one theme at a time, but for all Rad Controls simultaneously. Once the theming process is finished here is how save the theme and apply it in your application:
       
 
 ## Saving a custom theme
 
-When you choose the Save option, the Visual Style Builder automatically detects whether a
-          theme has been opened and edited. If yes, it simply overwrites the already loaded files with
-          the new XML data. However, if you created a new theme without loading files, the
-          Visual Style Builder will display the Save As dialog and will ask you to choose location
-          and theme name for the newly created theme and its repository. What is important is to set
-          the __ThemeName__ and to check the __Save As Package__ checkmark, which will save the theme as .tssp file:
-        ![themes-using-custom-themes](images/themes-using-custom-themes.png)
+When you choose the Save option, the Visual Style Builder automatically detects whether a theme has been opened and edited. If yes, it simply overwrites the already loaded files with the new XML data. However, if you created a new theme without loading files, the Visual Style Builder will display the Save As dialog and will ask you to choose location and theme name for the newly created theme and its repository. What is important is to set the __ThemeName__ and to check the __Save As Package__ checkmark, which will save the theme as .tssp file:
+
+![themes-using-custom-themes](images/themes-using-custom-themes.png)
 
 ## Loading theme package
-
-
 
 ThemeResolutionService exposes two methods that allow you to load a theme package:
 
 * LoadPackageResource. This method loads a theme package file that is contained in the project as an [EmbeddedResource](http://msdn.microsoft.com/en-us/library/0c6xyb66(VS.80).aspx). This is the preferable method for loading a theme package since the resource path to the package is not changed when the application is deployed. The path construction is *DefaultProjectNamespace.ThemeFolder.ThemePackageFile*. The *ThemeFolder* part should only be used if the package is contained in a folder under the main project directory and if the project programming language is C#. In VB.NET project you do not need to include *ThemeFolder* part even if the package file is contained in a folder.
-            #_[C#] Loading package resource_
-
-	
-
-
+            
+#### Loading package resource
 
 {{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=LoadPackageResource}} 
 {{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=LoadPackageResource}} 
@@ -54,14 +40,9 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 
 {{endregion}} 
 
+* LoadPackageFile. This method loads a file from a specified directory on the system. Depending on how the directory is defined (full or relative), the path to the package may change when the application is deployed on another machine.
 
-
-
-* LoadPackageFile. This method loads a file from a specified directory on the system. Depending on how the directory is defined (full or relative), the path to the package may change when the application is deployed on another machine.#_[C#] Loading package file_
-
-	
-
-
+#### Loading package file
 
 {{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=LoadPackageFile}} 
 {{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=LoadPackageFile}} 
@@ -76,18 +57,7 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 
 {{endregion}} 
 
-
-
-
-
-
-
-
-## Applying a theme to an entire application#_[C#] _
-
-	
-
-
+## Applying a theme to an entire application
 
 {{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=setting a theme for the whole application}} 
 {{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=setting a theme for the whole application}} 
@@ -102,14 +72,7 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 
 {{endregion}} 
 
-
-
-
-## Applying a theme to single control#_[C#] _
-
-	
-
-
+## Applying a theme to single control
 
 {{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=setting a theme to single control instance}} 
 {{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=setting a theme to single control instance}} 
@@ -124,14 +87,7 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 
 {{endregion}} 
 
-
-
-
-## Applying a theme to all instances of a specific control in a form#_[C#] _
-
-	
-
-
+## Applying a theme to all instances of a specific control in a form
 
 {{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=setting a theme to all controls from the same kind in a form}} 
 {{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=setting a theme to all controls from the same kind in a form}} 
@@ -156,9 +112,6 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

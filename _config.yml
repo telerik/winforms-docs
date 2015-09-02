@@ -488,6 +488,10 @@ navigation:
     themes:
         title: Themes
         position: 54
+    themes/advanced-topics:
+        title: Advanced Topics
+    themes/advanced-topics/adding-custom-redistributable-themes-to-your-application:
+        title: Adding Custom Redistributable Themes to your Application
     tools:
         title: Tools
         position: 55
