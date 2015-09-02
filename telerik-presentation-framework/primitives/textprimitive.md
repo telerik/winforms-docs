@@ -11,15 +11,10 @@ position: 13
 # TextPrimitive
 
 
-
-## 
-
-Use the __TextPrimitive__ class whenever you need to display text as part of rendering a control.
-          Color for the font in the primitive is set by the __ForeColor__property. TextPrimitive also supplies other
-          properties specific to displaying text, including:
+Use the __TextPrimitive__ class whenever you need to display text as part of rendering a control. Color for the font in the primitive is set by the __ForeColor__ property. TextPrimitive also supplies other properties specific to displaying text, including:
         
 
-* __Text:__The actual text to display.
+* __Text:__ The actual text to display.
             
 
 * __TextAlignment:__ An enumeration that controls the alignment of the text in the primitive.
@@ -34,12 +29,11 @@ Use the __TextPrimitive__ class whenever you need to display text as part of ren
 * __Shadow:__ An object that lets you set shadowing color, depth, and thickness.
             
 
-* __TextRenderingHint:__An____enumeration defining the text antialiasing.
-            ![tpf-primitives-textprimitive 001](images/tpf-primitives-textprimitive001.png)#_[C#] Creating a TextPrimitive_
+* __TextRenderingHint:__ An enumeration defining the text antialiasing.
 
-	
+![tpf-primitives-textprimitive 001](images/tpf-primitives-textprimitive001.png)
 
-
+#### Creating a TextPrimitive
 
 {{source=..\SamplesCS\TPF\Primitives\TextPrimitive1\MyTextPrimitiveElement.cs region=myTextPrimitiveElement}} 
 {{source=..\SamplesVB\TPF\Primitives\TextPrimitive1\MyTextPrimitiveElement.vb region=myTextPrimitiveElement}} 
@@ -83,7 +77,4 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

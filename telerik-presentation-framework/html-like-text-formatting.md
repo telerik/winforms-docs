@@ -44,28 +44,28 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 * __Bold, italic, and underline__ In the example below the first word is italic and the second one is both bold and italic. The third and the forth words are underlined.
 
 ````xml
-	  <html>
-	    <b>some <i> text </i></b><u> some text </u>
-	  </html>
+<html>
+	<b>some <i> text </i></b><u> some text </u>
+</html>
 ````
 
 * __Paragraphs__
 
 ````xml
-	  <html>
-	    <p>First paragraph</p>
-	    <p>Second paragraph</p>
-	  </html>
+<html>
+	<p>First paragraph</p>
+	<p>Second paragraph</p>
+</html>
 ````
 
 
 * __Font color__ Font color using color name e.g. *red* or using hex color e.g. *0000FF*.
 
 ````xml
-	  <html>
-	    <span style="color:red">font color (color name) </span>
-	    <span style="color:#0000FF">font color (hex color) </span>
-	  </html>
+<html>
+	<span style="color:red">font color (color name) </span>
+	<span style="color:#0000FF">font color (hex color) </span>
+</html>
 ````
 
 
@@ -76,11 +76,11 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
               size returned by *SystemFonts.DefaultFont* property.
 
 ````xml
-	  <html>
-	    <span style="font-size:large">font size(absolute) </span>
-	    <span style="font-size:12">font size in pt(s) (absolute) </span>
-	    <span style="font-size:smaller">font size(absolute) </span>
-	  </html>
+<html>
+    <span style="font-size:large">font size(absolute) </span>
+	<span style="font-size:12">font size in pt(s) (absolute) </span>
+	<span style="font-size:smaller">font size(absolute) </span>
+</html>
 ````
 
 
@@ -88,39 +88,39 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 * __Highlighted text__
 
 ````xml
-	<html><span style="background-color:red">Highlighted Text</span></html>
+<html><span style="background-color:red">Highlighted Text</span></html>
 ````
 
 
 * __Font family__
 
 ````xml
-	<html><span style="font-family:georgia">Font Family</span></html>
+<html><span style="font-family:georgia">Font Family</span></html>
 ````
 
 * __Striked text__
 
 ````xml
-	<html><strike> Some text </strike></html>
+<html><strike> Some text </strike></html>
 ````
 
 
 * __Links__
 
 ````xml
-	<html><a href="<externalLink><linkText>www.telerik.com</linkText><linkUri>http://www.telerik.com</linkUri></externalLink>"> Telerik Corporation</a></html>
+<html><a href="<externalLink><linkText>www.telerik.com</linkText><linkUri>http://www.telerik.com</linkUri></externalLink>"> Telerik Corporation</a></html>
 ````
 
 * __Images__
 
 ````xml
-	<html><img src="ImagePath"></html>
+<html><img src="ImagePath"></html>
 ````
 
 The image path can be a resource or file on the disk.To specify a resource, you can use the __res__ keyword:
 
 ````xml
-	<img src="res:Telerik.Examples.WinControls.SomeImage.jpg">
+<img src="res:Telerik.Examples.WinControls.SomeImage.jpg">
 ````
 
 To specify a file on the disk you have to specify the disk path e.g. src="C:\some path\image.png" or use the ~ to specify the current directory e.g. src= "~\some path\image.gif". All image types supported by .net framework class *Image* are supported as well by the img tag.

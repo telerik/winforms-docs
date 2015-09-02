@@ -16,13 +16,7 @@ position: 0
 
 ![tpf-printing-support-radprintpreviewdialog 001](images/tpf-printing-support-end-user-functionality-radprintpreviewdialog001.png)
 
-By using RadPrintPreviewDialog you can preview how the RadPrintDocument will appear when printed. 
-        	To create and show a RadPrintPreviewDialog you can use:
-        #_[C#]_
-
-	
-
-
+By using RadPrintPreviewDialog you can preview how the RadPrintDocument will appear when printed. To create and show a RadPrintPreviewDialog you can use:
 
 {{source=..\SamplesCS\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.cs region=CreateAndShow1}} 
 {{source=..\SamplesVB\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.vb region=CreateAndShow1}} 
@@ -41,14 +35,7 @@ By using RadPrintPreviewDialog you can preview how the RadPrintDocument will app
 
 {{endregion}} 
 
-
-
-
-You can also pass the RadPrintDocument to the RadPrintPreviewDialog via its constructor:#_[C#]_
-
-	
-
-
+You can also pass the RadPrintDocument to the RadPrintPreviewDialog via its constructor:
 
 {{source=..\SamplesCS\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.cs region=CreateAndShow2}} 
 {{source=..\SamplesVB\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.vb region=CreateAndShow2}} 
@@ -65,18 +52,7 @@ You can also pass the RadPrintDocument to the RadPrintPreviewDialog via its cons
 
 {{endregion}} 
 
-
-
-
-The User Interface of RadPrintPreviewDialog is built on top of RadMenu and RadCommandBar. 
-    		By default the menu is hidden and the command bar is enabled. You can access and customize
-    		both controls from the ToolMenu and ToolCommandBar properties. Here is a sample demonstrating
-    		how to show the menu and hide the command bar:
-    	#_[C#]_
-
-	
-
-
+The User Interface of RadPrintPreviewDialog is built on top of RadMenu and RadCommandBar. By default the menu is hidden and the command bar is enabled. You can access and customizeboth controls from the ToolMenu and ToolCommandBar properties. Here is a sample demonstrating how to show the menu and hide the command bar:
 
 {{source=..\SamplesCS\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.cs region=ShowHideMenuAndCommandBar}} 
 {{source=..\SamplesVB\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.vb region=ShowHideMenuAndCommandBar}} 
@@ -94,27 +70,14 @@ The User Interface of RadPrintPreviewDialog is built on top of RadMenu and RadCo
 {{endregion}} 
 
 
+RadPrintPreviewDialog allows zooming and navigating through the pages via the menu and the tool strips. In addition, the end user can use mouse drag to scroll through	the current view and __Ctrl + Mouse Wheel__ to zoom in or out of it.
 
-
-RadPrintPreviewDialog allows zooming and navigating through the pages via the menu 
-    		and the tool strips. In addition, the end user can use mouse drag to scroll through 
-    		the current view and __Ctrl + Mouse Wheel__ to zoom in or out of it.
-    	
-
-The RadPrintPreviewDialog can also be used for editing the print document. When the 
-    		__Print Settings__ button is clicked,
-    		 [RadPrintSettingsDialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-settings-dialog%})
-    		is opened, allowing the end user to edit a variety of settings related to the printed object.
-    		Also, when the __Watermark__ button is clicked, the end user can place a 
-    		watermark on some of the pages by using the
-    		 [WatermarkSettingsDialog]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument/watermark%}).
-    	
+The RadPrintPreviewDialog can also be used for editing the print document. When the __Print Settings__ button is clicked, [RadPrintSettingsDialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-settings-dialog%})is opened, allowing the end user to edit a variety of settings related to the printed object.Also, when the __Watermark__ button is clicked, the end user can place a watermark on some of the pages by using the [WatermarkSettingsDialog]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument/watermark%}).
 
 ![tpf-printing-support-radprintpreviewdialog 002](images/tpf-printing-support-end-user-functionality-radprintpreviewdialog002.png)
 
 ![tpf-printing-support-radprintpreviewdialog 003](images/tpf-printing-support-end-user-functionality-radprintpreviewdialog003.png)
 
->note The RadPrintPreviewDialog is also used at design time to edit and serialize the properties of
-		  	RadPrintDocument. For more information refer to the[RadPrintDocument article.]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%})
+>note The RadPrintPreviewDialog is also used at design time to edit and serialize the properties of	RadPrintDocument. For more information refer to the[RadPrintDocument article.]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%})
 >
 

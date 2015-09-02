@@ -5,7 +5,7 @@ description: DockLayout
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/docklayout
 tags: docklayout
 published: True
-position: 5
+position: 6
 ---
 
 # DockLayout

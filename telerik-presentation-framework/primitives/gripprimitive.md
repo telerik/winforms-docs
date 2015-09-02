@@ -10,18 +10,11 @@ position: 6
 
 # GripPrimitive
 
+GripPrimitive displays a vertical row of dots as a visual cue to users that this is an area that can be gripped and dragged. Grip dots are displayed using __BackColor__ and __BackColor2__ colors. __BackColor2__ represents a shadow to set the dots off the background, particularly when the dots and the background contain some of the same colors.
 
+![tpf-primitives-gripprimitive 001](images/tpf-primitives-gripprimitive001.png)
 
-## 
-
-GripPrimitive displays a vertical row of dots as a visual cue to users that this is an area that can be gripped and dragged. 
-        Grip dots are displayed using __BackColor__ and __BackColor2__ colors.
-        __BackColor2__ represents a shadow to set the dots off the background, particularly when the dots and the 
-        background contain some of the same colors.![tpf-primitives-gripprimitive 001](images/tpf-primitives-gripprimitive001.png)#_[C#] Creating a GripPrimitive_
-
-	
-
-
+#### Creating a GripPrimitive
 
 {{source=..\SamplesCS\TPF\Primitives\GripPrimitive1\MyGripPrimitiveElement.cs region=myGripPrimitiveElement}} 
 {{source=..\SamplesVB\TPF\Primitives\GripPrimitive1\MyGripPrimitiveElement.vb region=myGripPrimitiveElement}} 
@@ -74,6 +67,3 @@ End Class
 ````
 
 {{endregion}} 
-
-
-

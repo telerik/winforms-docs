@@ -14,17 +14,7 @@ position: 0
 
 ## 
 
-Primitives are the elements in the control element tree that are painted to the screen when Windows displays a 
-          form containing a Telerik RadControl. All primitives 
-          are derived from [BasePrimitive]({%slug winforms/telerik-presentation-framework/class-hierarchy/baseprimitive%}), a 
-          subclass of [VisualElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/visualelement%}). 
-          [BasePrimitive]({%slug winforms/telerik-presentation-framework/class-hierarchy/baseprimitive%}) adds the virtual 
-          __PaintPrimitive()__method to 
-          [VisualElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/visualelement%}).
-          The descendants of [BasePrimitive]({%slug winforms/telerik-presentation-framework/class-hierarchy/baseprimitive%}) 
-          override this virtual function to draw themselves. Individual primitive classes expose additional properties. For example, the 
-          __TextPrimitive__ class includes a __Text__ property, which specifies the text that it 
-          will place on the screen. The Telerik Presentation Framework includes these primitives:
+Primitives are the elements in the control element tree that are painted to the screen when Windows displays a form containing a Telerik RadControl. All primitives are derived from [BasePrimitive]({%slug winforms/telerik-presentation-framework/class-hierarchy/baseprimitive%}), a  subclass of [VisualElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/visualelement%}). [BasePrimitive]({%slug winforms/telerik-presentation-framework/class-hierarchy/baseprimitive%}) adds the virtual  __PaintPrimitive()__ method to [VisualElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/visualelement%}). The descendants of [BasePrimitive]({%slug winforms/telerik-presentation-framework/class-hierarchy/baseprimitive%}) override this virtual function to draw themselves. Individual primitive classes expose additional properties. For example, the __TextPrimitive__ class includes a __Text__ property, which specifies the text that it will place on the screen. The Telerik Presentation Framework includes these primitives:
         
 
 * [ArrowPrimitive]({%slug winforms/telerik-presentation-framework/primitives/arrowprimitive%}) represents an arrow on screen, such as the arrow in a RadDropDownButton control.

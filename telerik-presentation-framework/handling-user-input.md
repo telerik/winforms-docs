@@ -12,7 +12,7 @@ position: 8
 
 ## 
 
-Mouse and keyboard user input is accepted from Windows event notification in __RadControl__, but actually handled in __RadElement__ and __RadItem__objects.
+Mouse and keyboard user input is accepted from Windows event notification in __RadControl__, but actually handled in __RadElement__ and __RadItem__ objects.
         
 
 * __RadControl__ is the object that is first notified of Windows events, i.e. mouse over, keypress, etc., and calls corresponding methods of RadElement through the RadControl __RadRootElement__ property.

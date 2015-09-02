@@ -5,23 +5,18 @@ description: WrapLayoutPanel
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/wraplayoutpanel
 tags: wraplayoutpanel
 published: True
-position: 1
+position: 2
 ---
 
 # WrapLayoutPanel
 
-
-
 ## 
 
 WrapLayoutPanel is a panel that handles the layout of elements in a vertical or horizontal row and wraps to additional lines.
-          
 
-![tpf-layout-predefined-layout-panels-wraplayoutpanel 001](images/tpf-layout-predefined-layout-panels-wraplayoutpanel001.png)#_[C#] Using WrapLayoutPanel_
+![tpf-layout-predefined-layout-panels-wraplayoutpanel 001](images/tpf-layout-predefined-layout-panels-wraplayoutpanel001.png)
 
-	
-
-
+#### Using WrapLayoutPanel
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyWrapLayoutPanelElement.cs region=myWrapLayoutPanelElement}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyWrapLayoutPanelElement.vb region=myWrapLayoutPanelElement}} 
@@ -81,7 +76,4 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

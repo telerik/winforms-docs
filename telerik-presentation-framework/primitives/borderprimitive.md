@@ -12,21 +12,15 @@ position: 2
 
 
 
-The __BorderPrimitive__ class is responsible for drawing the border around an area on the screen.
-        __BorderPrimitive__ is automatically sized to the inner edges of the parent element. The __BoxStyle__ property
-        controls display characteristics and can be set to __SingleBorder, FourBorders__ and
-        __OuterInnerBorders__.
-      
+The __BorderPrimitive__ class is responsible for drawing the border around an area on the screen. __BorderPrimitive__ is automatically sized to the inner edges of the parent element. The __BoxStyle__ property controls display characteristics and can be set to __SingleBorder, FourBorders__ and __OuterInnerBorders__.
 
 ## SingleBorder
 
+![tpf-primitives-borderprimitive 002](images/tpf-primitives-borderprimitive002.png)
 
+All four sides of the border are drawn with the same properties except color. Color is controlled by the __GradientStyles__ property. To get all colors in the border to display the same, use the __GrandientStyles.Solid__ enumeration member. The example below displays a red, 3 pixel border box.
 
-|![tpf-primitives-borderprimitive 002](images/tpf-primitives-borderprimitive002.png)|All four sides of the border are drawn with the same properties except color. Color is controlled by the __GradientStyles__ property. To get all colors in the border to display the same, use the __GrandientStyles.Solid__ enumeration member. The example below displays a red, 3 pixel border box.|#_[C#] Creating a BorderPrimitive with SingleBorder_
-
-	
-
-
+#### Creating a BorderPrimitive with SingleBorder
 
 {{source=..\SamplesCS\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveSElement.cs region=myBorderPrimitiveSElement}} 
 {{source=..\SamplesVB\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveSElement.vb region=myBorderPrimitiveSElement}} 
@@ -66,20 +60,13 @@ End Class
 
 {{endregion}} 
 
-
-
-
 ## FourBorders
 
+![tpf-primitives-borderprimitive 001](images/tpf-primitives-borderprimitive001.png)
 
+Each side of the border can be tailored individually. __ForeColor__ , __Width__ and __GradientStyle__ properties are ignored in favor of width and color properties for each side. The example code below describes a box with the left and bottom sides displaying a 3 pixel blue line and the upper and right hand sides displaying a 1 pixel red border.
 
-|![tpf-primitives-borderprimitive 001](images/tpf-primitives-borderprimitive001.png)|Each side of the border can be tailored individually. __ForeColor__ , __Width__ and __GradientStyle__ properties are ignored in favor of width and color properties for each side. The example
-                code below describes a box with the left and bottom sides displaying a 3 pixel blue line and the upper and right hand sides displaying a
-                1 pixel red border.|#_[C#] Creating a BorderPrimitive with FourBorders_
-
-	
-
-
+#### Creating a BorderPrimitive with FourBorders
 
 {{source=..\SamplesCS\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveFBElement.cs region=myBorderPrimitiveFBElement}} 
 {{source=..\SamplesVB\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveFBElement.vb region=myBorderPrimitiveFBElement}} 
@@ -129,22 +116,11 @@ End Class
 
 {{endregion}} 
 
-
-
-
 ## OuterInnerBorders
 
+![tpf-primitives-borderprimitive 003](images/tpf-primitives-borderprimitive003.png)Inner and outer colors can be specified using the __ForeColor__ and __InnerColor__ property families. The __GradientStyle__ property determines how the primitive colors are displayed. A Solid __GradientStyle__ will only take the ForeColor and InnerColor properties into account. The code example below sets a 1 pixel width, sets the GradientStyle to Linear, sets the ForeColor related properties to blue and green colors and the InnerColor related properties to light blue and green colors
 
-
-|![tpf-primitives-borderprimitive 003](images/tpf-primitives-borderprimitive003.png)|Inner and outer colors can be specified using the __ForeColor__ and __InnerColor__ property
-              families. The __GradientStyle__ property determines how the primitive colors are displayed. 
-              A Solid __GradientStyle__ will only take the ForeColor and InnerColor properties into account. The 
-              code example below sets a 1 pixel width, sets the GradientStyle to Linear, sets the ForeColor related properties to blue 
-              and green colors and the InnerColor related properties to light blue and green colors|#_[C#] Creating a BorderPrimitive with OuterInnerBorders_
-
-	
-
-
+#### Creating a BorderPrimitive with OuterInnerBorders
 
 {{source=..\SamplesCS\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveOIElement.cs region=myBorderPrimitiveOIElement}} 
 {{source=..\SamplesVB\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveOIElement.vb region=myBorderPrimitiveOIElement}} 
@@ -196,7 +172,4 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

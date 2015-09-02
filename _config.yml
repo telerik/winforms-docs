@@ -476,6 +476,15 @@ navigation:
     telerik-presentation-framework/layout/predefined-layout-panels:
         title: Predefined Layout Panels
         position: 5
+    telerik-presentation-framework/printing-support/radprintdocument:
+        title: RadPrintDocument
+        position: 0
+    telerik-presentation-framework/printing-support/end-user-functionality:
+        title: End-User Functionality
+        position: 1
+    telerik-presentation-framework/printing-support/how-to:
+        title: How-To
+        position: 2
     themes:
         title: Themes
         position: 54
