@@ -5,20 +5,14 @@ description: Starting the Control Spy
 slug: winforms/tools/controlspy/starting-the-control-spy
 tags: starting,the,control,spy
 published: True
-position: 1
+position: 2
 ---
 
 # Starting the Control Spy
 
+To start the Control Spy, create and display a new instance of the __RadControlSpyForm__contained in the Control Spy library:
 
-
-## 
-
-To start the Control Spy, create and display a new instance of the __RadControlSpyForm__contained in the Control Spy library:#_[C#] Using RadControlSpy_
-
-	
-
-
+#### Using RadControlSpy
 
 {{source=..\SamplesCS\Tools\Spy\UsingTheControlSpy.cs region=usingRadControlSpy}} 
 {{source=..\SamplesVB\Tools\Spy\UsingTheControlSpy.vb region=usingRadControlSpy}} 
@@ -38,7 +32,4 @@ To start the Control Spy, create and display a new instance of the __RadControlS
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

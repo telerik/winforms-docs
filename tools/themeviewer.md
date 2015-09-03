@@ -10,17 +10,11 @@ position: 4
 
 # ThemeViewer
 
-
-
-## 
-
 ThemeViewer is a tool that gives you the ability to preview a custom or a predifined theme for all themable controls of the suite.
-        
 
 ![tools-themeviewer 001](images/tools-themeviewer001.png)
 
 The controls are placed on different pages which can be selected from the left panel and some controls are placed on separate forms in order to be displayed correctly.
-		
 
 ![tools-themeviewer 002](images/tools-themeviewer002.png)
 
