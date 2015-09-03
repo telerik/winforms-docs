@@ -200,7 +200,7 @@ navigation:
     gridview/expression-editor:
         title: Expression Editor
         position: 17
-    gridview/insert:
+    gridview/insert-update-delete-records:
         title: Insert/Update/Delete Records
         position: 18
     gridview/view-definitions:

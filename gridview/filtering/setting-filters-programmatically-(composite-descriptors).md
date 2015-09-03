@@ -15,11 +15,8 @@ position: 3
 ## Using CompositeFilterDescriptor
 
 To filter a single data field by multiple values, you have to use the __CompositeFilterDescriptor__ object. It contains a collection of filter descriptors objects and the logical operator for that filters.
-        #_[C#] Setting composite filter descriptors_
 
-	
-
-
+#### Setting composite filter descriptors
 
 {{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=settingCompositeFilterDescriptors}} 
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=settingCompositeFilterDescriptors}} 
@@ -42,25 +39,15 @@ To filter a single data field by multiple values, you have to use the __Composit
 
 {{endregion}} 
 
+The composite FilterDescriptors supports *__And__* and *__Or__* logical operators. Result of the above example using *__And__* logical operator:<BR>![gridview-filtering-setting-filters-programmatically-composite-descriptors 001](images/gridview-filtering-setting-filters-programmatically-composite-descriptors001.png)
 
-
-
-The composite FilterDescriptors supports __And__ and __Or__ logical operators. Result of the above example using __And__ logical operator:
-        ![gridview-filtering-setting-filters-programmatically-composite-descriptors 001](images/gridview-filtering-setting-filters-programmatically-composite-descriptors001.png)
-
-
-
-Result of the above example using *__Or__* logical operator:
-        ![gridview-filtering-setting-filters-programmatically-composite-descriptors 002](images/gridview-filtering-setting-filters-programmatically-composite-descriptors002.png)
+Result of the above example using *__Or__* logical operator:<br>![gridview-filtering-setting-filters-programmatically-composite-descriptors 002](images/gridview-filtering-setting-filters-programmatically-composite-descriptors002.png)
 
 ## More Complex Composite Filters
 
 The composite filters allow you to create more complex filtering expressions. Such a complex filtering expression might include filters for multiple fields combined with different logical operators, like __(UnitsOnOrder= 0 AND (UnitsInStock> 100 OR ProductName.StartsWith(“G”)))__.
-        #_[C#] Setting complex composite filter descriptors_
 
-	
-
-
+#### Setting complex composite filter descriptors
 
 {{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=settingComplexCompositeFilterDescriptors}} 
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=settingComplexCompositeFilterDescriptors}} 

@@ -14,44 +14,10 @@ position: 7
 
 ## 
 
-There are two events that are raised  when the data in the RadGridView is filtered. The first one is the __FilterChanging__ event
-          and it is raised before the data is filtered. The second one is the __FilterChanged__ event which is raised after
-          the data is filtered.
-        #_[C#]_
+There are two events that are raised  when the data in the RadGridView is filtered. The first one is the __FilterChanging__ event and it is raised before the data is filtered. The second one is the __FilterChanged__ event which is raised after the data is filtered.
 
-	
-
-#_[C#]_
-
-	
-
-#_[VB.NET]_
-
-	
-
-
-
-From the event arguments of both events you can access the following data:
-
-* __Action__ – an enumeration with values: *Add*, *Remove*,
-              *ItemChanged* and *Reset*. The __Action__ property notifies
-              if a __FilterDescriptor__ is *added*, *removed*,
-              *modified* or the __FilterDescriptors__ collection is *cleared*.
-            
-
-* __NewItems__ - List of added, edited or removed __FilterDescriptors__.
-              For each __FilterDescriptor__ you can get its *PropertyName*, *Operator*,
-              *Value* and *Expression*.
-            
-
-You are also able to cancel the filtering operation by setting the __Cancel__ property to *True*.
-        
-
-{{source=..\SamplesCS\GridView\Filtering\Filtering Events.cs region=events}} 
 {{source=..\SamplesCS\GridView\Filtering\Filtering Events.cs region=events1}} 
-{{source=..\SamplesVB\GridView\Filtering\Filtering Events.vb region=events}} 
-
-{{source=..\SamplesCS\GridView\Filtering\Filtering Events.cs region=cancelFilteringEvent}} 
+{{source=..\SamplesCS\GridView\Filtering\Filtering Events.vb region=events}} 
 ````C#
         void radGridView1_FilterChanging1(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
         {
@@ -71,20 +37,39 @@ You are also able to cancel the filtering operation by setting the __Cancel__ pr
 
 {{endregion}} 
 
+From the event arguments of both events you can access the following data:
 
-#_[VB.NET]_
+* __Action__ – an enumeration with values: *Add*, *Remove*, *ItemChanged* and *Reset*. The __Action__ property notifies if a __FilterDescriptor__ is *added*, *removed*, *modified* or the __FilterDescriptors__ collection is *cleared*.
 
-	
+* __NewItems__ - List of added, edited or removed __FilterDescriptors__. For each __FilterDescriptor__ you can get its *PropertyName*, *Operator*, *Value* and *Expression*.
 
+You are also able to cancel the filtering operation by setting the __Cancel__ property to *True*.
 
+{{source=..\SamplesCS\GridView\Filtering\Filtering Events.cs region=cancelFilteringEvent}} 
+{{source=..\SamplesCS\GridView\Filtering\Filtering Events.vb region=cancelFilteringEvent}} 
+````C#
+        void radGridView1_FilterChanging1(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
+        {
+            e.Cancel = true;
+        }
+````
+````VB.NET
+    Private Sub RadGridView1_FilterChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.FilterChanging
 
-Since the __FilterDescriptors__ collection implements the __INotifyCollectionChanged__ interface,
-          you can use its __CollectionChanged__ event:
-        
+    End Sub
 
-{{source=..\SamplesVB\GridView\Filtering\Filtering Events.vb region=cancelFilteringEvent}} 
+    Private Sub RadGridView1_FilterChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles RadGridView1.FilterChanged
 
-{{source=..\SamplesCS\GridView\Filtering\Filtering Events.cs region=collectionChanged}} 
+    End Sub
+    '
+````
+
+{{endregion}} 
+
+Since the __FilterDescriptors__ collection implements the __INotifyCollectionChanged__ interface, you can use its __CollectionChanged__ event:
+
+{{source=..\SamplesVB\GridView\Filtering\Filtering Events.cs region=collectionChanged}} 
+{{source=..\SamplesCS\GridView\Filtering\Filtering Events.vb region=collectionChanged}} 
 ````C#
             this.radGridView1.FilterDescriptors.CollectionChanged += new Telerik.WinControls.Data.NotifyCollectionChangedEventHandler(FilterDescriptors_CollectionChanged);
 ````
@@ -97,15 +82,8 @@ Since the __FilterDescriptors__ collection implements the __INotifyCollectionCha
 
 {{endregion}} 
 
-
-#_[C#]_
-
-	
-
-
-
 {{source=..\SamplesCS\GridView\Filtering\Filtering Events.cs region=collectionChanged1}} 
-{{source=..\SamplesVB\GridView\Filtering\Filtering Events.vb region=collectionChanged}} 
+{{source=..\SamplesVB\GridView\Filtering\Filtering Events.vb region=collectionChanged1}} 
 
 ````C#
         void FilterDescriptors_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
@@ -119,13 +97,6 @@ Since the __FilterDescriptors__ collection implements the __INotifyCollectionCha
 ````
 
 {{endregion}} 
-
-
-#_[VB.NET]_
-
-	
-
-
 
 The arguments of this event provide the same data as the __FilterChanged__ event.
         

@@ -14,16 +14,11 @@ position: 1
 
 ## 
 
-The __GridFilterRowElement__ is the row that holds the filtering boxes. It appears automatically when you enable filtering (__GridViewTemplate.EnableFiltering = true__). __GridFilterRowElement__ could be pinned at the top or bottom as well as made scrollable.
-        ![gridview-filtering-filtering-row 001](images/gridview-filtering-filtering-row001.png)
+The __GridFilterRowElement__ is the row that holds the filtering boxes. It appears automatically when you enable filtering (__GridViewTemplate.EnableFiltering = true__). __GridFilterRowElement__ could be pinned at the top or bottom as well as made scrollable.<br>![gridview-filtering-filtering-row 001](images/gridview-filtering-filtering-row001.png)
 
-You can hide the operator text of the filter cells by setting the
-          __ShowFilterCellOperator__ property to *false*:
-        #_[C#] Hide filter row_
+You can hide the operator text of the filter cells by setting the __ShowFilterCellOperator__ property to *false*:
 
-	
-
-
+#### Hide filter row
 
 {{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=filterOperatorText}} 
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=filterOperatorText}} 
@@ -38,15 +33,11 @@ You can hide the operator text of the filter cells by setting the
 
 {{endregion}} 
 
-
 ![gridview-filtering-filtering-row 002](images/gridview-filtering-filtering-row002.png)
 
 You can also hide the entire __GridFilterRowElement__: 
-        #_[C#] Hide filter row_
 
-	
-
-
+#### Hide filter row
 
 {{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=hidingTheFilterRow}} 
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=hidingTheFilterRow}} 
@@ -61,16 +52,11 @@ You can also hide the entire __GridFilterRowElement__: 
 
 {{endregion}} 
 
-
-
-
 >note You can still add FilterDescriptors programmatically when the __GridFilterRowElement__ is hidden.
->
 
 
 >caution Filtering strings not allowed are: " LIKE ", " AND ", " OR ", "\"", ">", "<", "<>", "%", " NULL ", " IS ". Note: the spaces are important (e.g. " LIKE " compared to "LIKE").
 >
 
 
-You can customize the __GridFilterRowElement__ by using the __Visual Style Builder__.
-        ![gridview-filtering-filtering-row 003](images/gridview-filtering-filtering-row003.png)
+You can customize the __GridFilterRowElement__ by using the __Visual Style Builder__.<br>![gridview-filtering-filtering-row 003](images/gridview-filtering-filtering-row003.png)

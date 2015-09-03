@@ -14,13 +14,9 @@ position: 2
 
 ## 
 
-Just as its name says, this view enables grouping of columns. Every column group can have an unlimited number of subgroups or
-          rows containing columns. In the following example, the grid is bound to the Customers table from the Northwind data base. 
-          First instantiate ColumnGroupsViewDefinition and add some groups first:#_[C#] Create groups_
+Just as its name says, this view enables grouping of columns. Every column group can have an unlimited number of subgroups or rows containing columns. In the following example, the grid is bound to the Customers table from the Northwind data base. First instantiate ColumnGroupsViewDefinition and add some groups first:
 
-	
-
-
+#### Create groups
 
 {{source=..\SamplesCS\GridView\ViewDefinitions\ColumnGroupsView.cs region=createGroups}} 
 {{source=..\SamplesVB\GridView\ViewDefinitions\ColumnGroupsView.vb region=createGroups}} 
@@ -43,14 +39,9 @@ Just as its name says, this view enables grouping of columns. Every column group
 
 {{endregion}} 
 
+Then add at least one row. This row will contain the desired columns:
 
-
-
-Then add at least one row. This row will contain the desired columns:#_[C#] Add rows to groups_
-
-	
-
-
+#### Add rows to groups
 
 {{source=..\SamplesCS\GridView\ViewDefinitions\ColumnGroupsView.cs region=addRows}} 
 {{source=..\SamplesVB\GridView\ViewDefinitions\ColumnGroupsView.vb region=addRows}} 
@@ -89,14 +80,9 @@ Then add at least one row. This row will contain the desired columns:#_[C#] Add 
 
 {{endregion}} 
 
+At the end simply set the ViewDefinitions property of RadGridView to the newly created ViewDefinition
 
-
-
-At the end simply set the ViewDefinitions property of RadGridView to the newly created ViewDefinition#_[C#] Set the ViewDefinition property of RadGridView_
-
-	
-
-
+#### Set the ViewDefinition property of RadGridView
 
 {{source=..\SamplesCS\GridView\ViewDefinitions\ColumnGroupsView.cs region=setTheViewDefinition}} 
 {{source=..\SamplesVB\GridView\ViewDefinitions\ColumnGroupsView.vb region=setTheViewDefinition}} 
@@ -111,7 +97,4 @@ At the end simply set the ViewDefinitions property of RadGridView to the newly c
 
 {{endregion}} 
 
-
-
-
-The result is:![gridview-viewdefinitions-column-groups-view 001](images/gridview-viewdefinitions-column-groups-view001.jpg)
+The result is:<br>![gridview-viewdefinitions-column-groups-view 001](images/gridview-viewdefinitions-column-groups-view001.jpg)

@@ -10,18 +10,12 @@ position: 0
 
 # Exporting Data Overview
 
-
-
 ## 
 
-
-
 |RELATED VIDEOS|
-|[Export to Excel with RadGridView for WinForms](http://tv.telerik.com/radtips/radgrid/grid-to-excel)In this RadTip, John Kellar demonstrates how you can export data stored in a RadGridView for Windows Forms to Excel using the ExcelML export options. (Runtime: 08:53)|
+|[Export to Excel with RadGridView for WinForms](http://tv.telerik.com/radtips/radgrid/grid-to-excel)<br>In this RadTip, John Kellar demonstrates how you can export data stored in a RadGridView for Windows Forms to Excel using the ExcelML export options. (Runtime: 08:53)|
 
 __RadGridView__ supports several built-in methods for exporting data:
-
-
 
 * [Export to Excel via ExcelML]({%slug winforms/gridview/exporting-data/export-to-excel-via-excelml-format%})
 
@@ -31,10 +25,8 @@ __RadGridView__ supports several built-in methods for exporting data:
 
 * [Export to PDF]({%slug winforms/gridview/exporting-data/export-to-pdf%})
 
-You can also [export RadGridView data to
-        a Telerik Reporting report](264B2878-1CE7-4B81-B956-3FE643669057) for printing purposes.
+You can also RadGridView data to a Telerik Reporting report for printing purposes.
 
->note As of Q1 2012 RadGridView
-        natively supports printing. More information about this feature can be found[here]({%slug winforms/gridview/printing-support%}).
+>note As of Q1 2012 RadGridView natively supports printing. More information about this feature can be found [here]({%slug winforms/gridview/printing-support%}).
 >
 

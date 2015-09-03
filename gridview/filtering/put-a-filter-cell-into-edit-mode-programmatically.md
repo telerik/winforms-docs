@@ -14,11 +14,9 @@ position: 4
 
 ## 
 
-You can easily put a filter cell into edit mode by code. You should simply call the BeginEdit method of the desired cell:#_[C#] Put a filter cell in edit mode programmatically_
+You can easily put a filter cell into edit mode by code. You should simply call the BeginEdit method of the desired cell:
 
-	
-
-
+#### Put a filter cell in edit mode programmatically
 
 {{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=putFilterCellIntoEditModeProgramatically}} 
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=putFilterCellIntoEditModeProgramatically}} 
@@ -31,7 +29,6 @@ You can easily put a filter cell into edit mode by code. You should simply call 
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-![gridview-filtering-put-a-filter-cell-into-edit-mode-programatically 001](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically001.png)![gridview-filtering-put-a-filter-cell-into-edit-mode-programatically 002](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically002.png)
+![gridview-filtering-put-a-filter-cell-into-edit-mode-programatically 001](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically001.png)<br>![gridview-filtering-put-a-filter-cell-into-edit-mode-programatically 002](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically002.png)

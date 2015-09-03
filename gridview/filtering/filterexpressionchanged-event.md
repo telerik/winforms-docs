@@ -14,13 +14,9 @@ position: 5
 
 ## 
 
-This event is the only place in *RadGridView* API where you can access the final filtering expression as a string.
-          This string value is produced by all items in filtering expressions collection. The expression applies to the whole grid template(single table if hierarchy is used).
-        #_[C#] Filter expression changed event_
+This event is the only place in *RadGridView* API where you can access the final filtering expression as a string. This string value is produced by all items in filtering expressions collection. The expression applies to the whole grid template(single table if hierarchy is used).
 
-	
-
-
+#### Filter expression changed event
 
 {{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=filterExpressionChangedEvent}} 
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=filterExpressionChangedEvent}} 
@@ -40,18 +36,12 @@ This event is the only place in *RadGridView* API where you can access the fina
 
 {{endregion}} 
 
-
-
-
 This event is also the final place where the filtering expression can be changed before it is evaluated. 
 
->caution It is preferable to use the filtering expression objects and modify the filtering string only if you want to access functionality not provided by the
-            filtering expressions API.
+>caution It is preferable to use the filtering expression objects and modify the filtering string only if you want to access functionality not provided by the filtering expressions API.
 >
 
-
->caution If the expression cannot be evaluated, *ArgumentException* is thrown. The inner exception describes the concrete reason for the
-            problem.
+>caution If the expression cannot be evaluated, *ArgumentException* is thrown. The inner exception describes the concrete reason for the problem.
 >
 
 

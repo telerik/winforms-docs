@@ -10,15 +10,11 @@ position: 2
 
 # Insert/Update/Delete Using Controls API
 
-
-
 ## Insert rows
 
-Two general approaches in adding new rows exist. The first one is to add rows directly into the data source assigned to the grid (see [RadGridView data binding]({%slug winforms/gridview/populating-with-data/databinding-radgridview%})). The second approach is to use the __Add__method of the __Rows__collection of __RadGridView__.#_[C#] Adding rows to the rows collection_
+Two general approaches in adding new rows exist. The first one is to add rows directly into the data source assigned to the grid (see [RadGridView data binding]({%slug winforms/gridview/populating-with-data/databinding-radgridview%})). The second approach is to use the __Add__ method of the __Rows__ collection of __RadGridView__.
 
-	
-
-
+#### Adding rows to the rows collection
 
 {{source=..\SamplesCS\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.cs region=addingToTheRowsCollection}} 
 {{source=..\SamplesVB\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.vb region=addingToTheRowsCollection}} 
@@ -47,18 +43,13 @@ Two general approaches in adding new rows exist. The first one is to add rows di
 
 {{endregion}} 
 
-
-
-
 ## Update rows
 
-The data in a row can be updated by assigning the new value to the __GridViewCellInfo.Value__ property. The access to the __GridViewCellInfos__is through the __Cells__collection of each row (type__GridViewRowInfo)__.
+The data in a row can be updated by assigning the new value to the __GridViewCellInfo.Value__ property. The access to the __GridViewCellInfos__ is through the __Cells__ collection of each row (type __GridViewRowInfo__).
 
-Before the value is set __RadGridView.Validating__ event is fired. This event could be __canceled__ to prevent updating the value in the cell. After the value update __RadGridView.Validated__ event is fired.#_[C#] Assigning value to a cell_
+Before the value is set __RadGridView.Validating__ event is fired. This event could be __canceled__ to prevent updating the value in the cell. After the value update __RadGridView.Validated__ event is fired.
 
-	
-
-
+#### Assigning value to a cell
 
 {{source=..\SamplesCS\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.cs region=assigningACellValue}} 
 {{source=..\SamplesVB\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.vb region=assigningACellValue}} 
@@ -75,16 +66,11 @@ Before the value is set __RadGridView.Validating__ event is fired. This event co
 
 {{endregion}} 
 
-
-
-
 ## Delete rows
 
-To delete row call __GridViewRowCollection__.__Remove__(GridViewRowInfo value) or __GridViewRowCollection__.__RemoveAt__(rowIndex). #_[C#] Removing a row from the rows collection_
+To delete row call __GridViewRowCollection__.__Remove__(GridViewRowInfo value) or __GridViewRowCollection__.__RemoveAt__(rowIndex).
 
-	
-
-
+#### Removing a row from the rows collection
 
 {{source=..\SamplesCS\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.cs region=removingARowFromTheRowsCollection}} 
 {{source=..\SamplesVB\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.vb region=removingARowFromTheRowsCollection}} 
