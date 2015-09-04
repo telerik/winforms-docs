@@ -16,33 +16,26 @@ position: 2
 
 ## Overview
 
-This method offers excellent  ng performance and does not require MS Office installation on users' machines. The __ExcelML__ format
-          can be read by MS Excel 2002 (MS Office XP) and above. Direct export to the xlsx format is possible by utilizing our __RadSpreadProcessing__ libraries (see
-          [Spread Export]({%slug winforms/gridview/exporting-data/spread-export-%}) and [Async Spread Export](982fb094-ed37-4520-99db-b51487998d2a) articles for detailed information and examples).
-        
+This method offers excellent  ng performance and does not require MS Office installation on users' machines. The __ExcelML__ format can be read by MS Excel 2002 (MS Office XP) and above. Direct export to the xlsx format is possible by utilizing our __RadSpreadProcessing__ libraries (see [Spread Export]({%slug winforms/gridview/exporting-data/spread-export-%}) and Async Spread Export articles for detailed information and examples).
 
->note The HTML export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces
-            in order to access the types contained in TelerikData:
->
+>note The HTML export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
 * Telerik.WinControls.Data
 * Telerik.WinControls.UI.Export>
-
+>
 
 ## Exporting Data
 
 __Initialize ExportToExcelML object__
 
-Before running export to ExcelML, you have to initialize the ExportToExcelML class. The constructor takes one parameter: the RadGridView that will be exported:#_[C#]  ExportToExcelIML initialization_
+Before running export to ExcelML, you have to initialize the ExportToExcelML class. The constructor takes one parameter: the RadGridView that will be exported:
 
-	
-
-
+####  ExportToExcelIML initialization
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=ExportToExcelMLInitialization}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=ExportToExcelMLInitialization}} 
 
 ````C#
-            ExportToExcelML exporter = new ExportToExcelML(this.radGridView1);
+        ExportToExcelML exporter = new ExportToExcelML(this.radGridView1);
 ````
 ````VB.NET
         Dim exporter As ExportToExcelML = New ExportToExcelML(Me.RadGridView1)
@@ -51,14 +44,9 @@ Before running export to ExcelML, you have to initialize the ExportToExcelML cla
 
 {{endregion}} 
 
-
-
-
 __Hidden columns and rows option__
 
-You can choose one of the three options below which will allow you to have different behavior for the hidden column/rows.
-          You can choose these options by __HiddenColumnOption__ and __HiddenRowOption__ properties:
-        
+You can choose one of the three options below which will allow you to have different behavior for the hidden column/rows. You can choose these options by __HiddenColumnOption__ and __HiddenRowOption__ properties:
 
 * ExportAlways
 
@@ -66,14 +54,9 @@ You can choose one of the three options below which will allow you to have diffe
 
 * ExportAsHidden (default)
 
-MS Excel does not support other ways of hiding a column different from setting its width to zero.
-          To avoid including hidden columns or rows in the exported excel file you could set __HiddenColumnOption__
-          or __HiddenRowOption__  property to __DoNotExport__:
-        #_[C#]  Setting the hidden column option_
+MS Excel does not support other ways of hiding a column different from setting its width to zero. To avoid including hidden columns or rows in the exported excel file you could set __HiddenColumnOption__ or __HiddenRowOption__  property to __DoNotExport__:
 
-	
-
-
+####  Setting the hidden column option
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=settingTheHiddenColumnOption}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingTheHiddenColumnOption}} 
@@ -88,23 +71,13 @@ MS Excel does not support other ways of hiding a column different from setting i
 
 {{endregion}} 
 
-
-
-
 __Exporting Visual Settings__
 
-Using the ExcelML method allows you to export the visual settings (themes) to the Excel file. ExcelML has also a visual representation of the alternating row color.
-          This feature works only if __EnableAlternatingRow__ property is set to *true*.
-          Note that it does not transfer the alternating row settings that come from control theme. RadGridView will also export all conditional formatting to the Excel file.
-          The row height is exported with the default DPI transformation (60pixels = 72points).
-        
+Using the ExcelML method allows you to export the visual settings (themes) to the Excel file. ExcelML has also a visual representation of the alternating row color. This feature works only if __EnableAlternatingRow__ property is set to *true*. Note that it does not transfer the alternating row settings that come from control theme. RadGridView will also export all conditional formatting to the Excel file. The row height is exported with the default DPI transformation (60pixels = 72points).
 
-You can enable exporting visual settings through the ExportVisualSettings property. By default the value of this property is false.
-          __ExportVisualSettings__*false*#_[C#] Setting ExportVisualSettings_
+You can enable exporting visual settings through the ExportVisualSettings property. By default the value of this property is false. __ExportVisualSettings__*false*
 
-	
-
-
+#### Setting ExportVisualSettings
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=exportVisualSettings}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=exportVisualSettings}} 
@@ -119,20 +92,15 @@ You can enable exporting visual settings through the ExportVisualSettings proper
 
 {{endregion}} 
 
-
-
-
 __MS Excel Max Rows Settings__
 
 RadGridView splits data on separate sheets if the number of rows is greater than Excel maximum. You can control the maximum number of rows through a SheetMaxRows property:
 
 * 1048576 (Max rows for Excel 2007)
 
-* 65536 (Max rows for previous versions of Excel) (default)#_[C#] Setting Maximum Number of Rows_
-
-	
-
-
+* 65536 (Max rows for previous versions of Excel) (default)
+ 
+#### Setting Maximum Number of Rows
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=settingMaximumNumberOfRows}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingMaximumNumberOfRows}} 
@@ -147,16 +115,9 @@ RadGridView splits data on separate sheets if the number of rows is greater tha
 
 {{endregion}} 
 
+__MS Excel Sheet Name__ You can specify the sheet name through __SheetName__ property. If your data is large enough to be split on more than one sheets, then the export method adds index to the names of the next sheets.
 
-
-
-__MS Excel Sheet Name__
-          You can specify the sheet name through __SheetName__ property. If your data is large enough to be split on more than one sheets, then the export method adds index to the names of the next sheets.
-        #_[C#] Setting the SheetName_
-
-	
-
-
+#### Setting the SheetName
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=settingTheSheetName}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingTheSheetName}} 
@@ -171,13 +132,9 @@ __MS Excel Sheet Name__
 
 {{endregion}} 
 
-
-
-
 __Summaries export option__
 
 You can use __SummariesExportOption__ property to specify how to export summary items. There are fourth option to chose:
-        
 
 * ExportAll (default)
 
@@ -185,11 +142,9 @@ You can use __SummariesExportOption__ property to specify how to export summary 
 
 * ExportOnlyBottom
 
-* DoNotExport#_[C#] Setting SummariesExportOption_
+* DoNotExport
 
-	
-
-
+#### Setting SummariesExportOption
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=settingSumariesExportOption}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingSumariesExportOption}} 
@@ -204,22 +159,15 @@ You can use __SummariesExportOption__ property to specify how to export summary 
 
 {{endregion}} 
 
-
-
-
 ## RunExport method
 
 Exporting data to Excel is done through the __RunExport__ method of __ExportToExcelML__ object. The RunExport method accepts the following parameter:
-        
 
 * __fileName__ - the name of the exported file
-            
 
-Consider the code sample below:#_[C#] Export to Excel in ExcelML format_
+Consider the code sample below:
 
-	
-
-
+#### Export to Excel in ExcelML format
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=runExport}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=runExport}} 
@@ -236,22 +184,13 @@ Consider the code sample below:#_[C#] Export to Excel in ExcelML format_
 
 {{endregion}} 
 
-
-
-
 ## Format Codes
 
-There are two properties in GridViewDataColumn object: ExcelExportType and ExcelExportFormatString.
-          You can use them to specify the format of the exported column in the result excel file. To get the desired formatting in Excel, the ExcelExportFormatString should
-          be set to a valid Excel format code. A list of all format codes for Excel is available on the following link –
-          [Microsoft Office Excel Format Codes](https://support.office.com/en-US/Article/Number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68)
+There are two properties in GridViewDataColumn object: ExcelExportType and ExcelExportFormatString. You can use them to specify the format of the exported column in the result excel file. To get the desired formatting in Excel, the ExcelExportFormatString should be set to a valid Excel format code. A list of all format codes for Excel is available on the following link – [Microsoft Office Excel Format Codes](https://support.office.com/en-US/Article/Number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68)
 
 Here is an example for a date time formatting:
-        #_[C#] Fomatting dates_
 
-	
-
-
+#### Fomatting dates
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=formattingCodes}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=formattingCodes}} 
@@ -268,21 +207,14 @@ Here is an example for a date time formatting:
 
 {{endregion}} 
 
-
-
-
 ## Events
 
 __ExcelCellFormating__ event:
         
 
-It gives an access to a single cell’s  __SingleStyleElement__ that allows you to make additional formatting
-          (adding border, setting alignment, text font, colors, changing cell value, etc.) for every excel cell related to the exported RadGridView:
-        #_[C#]  Handling the ExcelCellFormatting event_
+It gives an access to a single cell’s  __SingleStyleElement__ that allows you to make additional formatting (adding border, setting alignment, text font, colors, changing cell value, etc.) for every excel cell related to the exported RadGridView:
 
-	
-
-
+#### Handling the ExcelCellFormatting event
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=ExcelCellFormatting}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=ExcelCellFormatting}} 
@@ -325,20 +257,11 @@ It gives an access to a single cell’s  __SingleStyleElement__ that allows you 
 
 {{endregion}} 
 
-
-
-
 __ExcelTableCreated event:__
 
-It can be used in together with the public method __AddCustomExcelRow__. It allows adding and formatting new custom
-          rows on the top of the every sheet (it could be specified as a header in the excel sheet):
-        
+It can be used in together with the public method __AddCustomExcelRow__. It allows adding and formatting new custom rows on the top of the every sheet (it could be specified as a header in the excel sheet):
 
-____#_[C#]  Handling the ExcelTableCreated event_
-
-	
-
-
+#### Handling the ExcelTableCreated event
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=ExcelTableCreated}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=ExcelTableCreated}} 
@@ -374,17 +297,8 @@ ____#_[C#]  Handling the ExcelTableCreated event_
 
 {{endregion}} 
 
-
-
-
-
-
 ## 
-
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Export to Excel with RadGridView for WinForms](http://tv.telerik.com/radtips/radgrid/grid-to-excel)In this RadTip, John Kellar demonstrates how you can export data stored in a RadGridView for Windows Forms to Excel using the ExcelML export options. (Runtime: 08:53)|
->caption 
-
-![gridview-exporting-data-export-to-excel-via-excelml-format 001](images/gridview-exporting-data-export-to-excel-via-excelml-format001.png)|
+|[Export to Excel with RadGridView for WinForms](http://tv.telerik.com/radtips/radgrid/grid-to-excel)<br>In this RadTip, John Kellar demonstrates how you can export data stored in a RadGridView for Windows Forms to Excel using the ExcelML export options. (Runtime: 08:53)|![gridview-exporting-data-export-to-excel-via-excelml-format 001](images/gridview-exporting-data-export-to-excel-via-excelml-format001.png)|

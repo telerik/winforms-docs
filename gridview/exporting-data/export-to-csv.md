@@ -15,36 +15,24 @@ position: 4
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Exporting to CSV with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/exporting-to-csv-with-radgridview-for-winforms)In this video, you will learn how to export RadGridView for WinForms to the CSV file format.|![exporting-to-csv-with-radgridview-for-winforms 001](images/exporting-to-csv-with-radgridview-for-winforms001.png)|
+|[Exporting to CSV with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/exporting-to-csv-with-radgridview-for-winforms)<br>In this video, you will learn how to export RadGridView for WinForms to the CSV file format.|![exporting-to-csv-with-radgridview-for-winforms 001](images/exporting-to-csv-with-radgridview-for-winforms001.png)|
 
 ## Overview
 
-
-
-
-
 This method offers excellent export performance. It creates a csv file and supports formatting events to allow customizing exported data.
 
->note The CSV export functionality is located in the __TelerikData.dll__ assembly.
-     You need to include the following namespaces in order to access the types contained in TelerikData:
->
+>note The CSV export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
 * Telerik.WinControls.Data
 * Telerik.WinControls.UI.Export>
-
-
-
+>
 
 ## Exporting Data
 
-
-
 __Initialize ExportToCSV object__
 
-Before running export to CSV, you have to initialize the ExportToCSV class. The constructor takes one parameter: the RadGridView that will be exported:#_[C#]  ExportToCSV initialization_
+Before running export to CSV, you have to initialize the ExportToCSV class. The constructor takes one parameter: the RadGridView that will be exported:
 
-	
-
-
+####  ExportToCSV initialization
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToCSV1.cs region=exportToCsvInitialization}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=exportToCsvInitialization}} 
@@ -59,18 +47,11 @@ Before running export to CSV, you have to initialize the ExportToCSV class. The 
 
 {{endregion}} 
 
-
-
-
-
-
 __File extension__
 
-This property allows for changing the default (*.csv) file extension of the exported result file:#_[C#]  Setting the file extension_
+This property allows for changing the default (*.csv) file extension of the exported result file:
 
-	
-
-
+####  Setting the file extension
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToCSV1.cs region=settingTheFileExtention}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=settingTheFileExtention}} 
@@ -84,11 +65,6 @@ This property allows for changing the default (*.csv) file extension of the expo
 ````
 
 {{endregion}} 
-
-
-
-
-
 
 __Hidden columns and rows option__
 
@@ -110,11 +86,9 @@ You can use __SummariesExportOption__ property to specify how to export summary 
 
 * ExportOnlyBottom
 
-* DoNotExport#_[C#]  Setting summaries to export_
+* DoNotExport
 
-	
-
-
+####  Setting summaries to export
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToCSV1.cs region=settingSummariesToExport}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=settingSummariesToExport}} 
@@ -129,18 +103,13 @@ You can use __SummariesExportOption__ property to specify how to export summary 
 
 {{endregion}} 
 
-
-
-
 ## RunExport method
 
 Exporting data to CSV file is done through the RunExport method of ExportToCSV object. The RunExport method accepts the following parameter:
 
-* fileName: the name of the exported file#_[C#]  Export to CVS format_
+* fileName: the name of the exported file
 
-	
-
-
+####  Export to CVS format
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToCSV1.cs region=exportToCsvFormat}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=exportToCsvFormat}} 
@@ -165,11 +134,8 @@ Exporting data to CSV file is done through the RunExport method of ExportToCSV o
 __CSVCellFormating event__
 
 It gives access to a single cell’s element that allows you to replace the actual value for every cell related to the exported RadGridView:
- #_[C#]  Handling the CSVCellFormatting event_
 
-	
-
-
+#### Handling the CSVCellFormatting event
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToCSV1.cs region=handlingTheCsvCellFormattingEvent}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=handlingTheCsvCellFormattingEvent}} 
@@ -199,11 +165,9 @@ It gives access to a single cell’s element that allows you to replace the actu
 
 __CSVTableCreated event__:
 
-It can be used together with the public method AddCustomCSVRow. It allows for adding and formatting new custom rows on the top of the csv file :#_[C#] Handling the CSVTableCreated event_
+It can be used together with the public method AddCustomCSVRow. It allows for adding and formatting new custom rows on the top of the csv file :
 
-	
-
-
+#### Handling the CSVTableCreated event
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToCSV1.cs region=handlingTheCsvTableCreatedevent}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=handlingTheCsvTableCreatedevent}} 

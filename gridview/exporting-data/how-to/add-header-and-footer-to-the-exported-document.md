@@ -10,24 +10,18 @@ position: 0
 
 # Add Header and Footer to the Exported Document
 
+This article will show how you can add header and footer to your exported document. After the document is exported it will look like in figure 1.
 
-
-This article will show how you can add header and footer to your exported document. After the document is exported it will look like in figure 1.![radgridview-exporting-data-how-to-add-header-and-footer 001](images/radgridview-exporting-data-how-to-add-header-and-footer001.png)
-
-Figure 1. The final exported document.
+>caption Fig.1 The final exported document.
+![radgridview-exporting-data-how-to-add-header-and-footer 001](images/radgridview-exporting-data-how-to-add-header-and-footer001.png)
 
 ## 
 
-The [spread export]({%slug winforms/gridview/exporting-data/spread-export-%}) functionality gives you access to the exported document.
-        It can be accessed in the __WorkbookCreated__ event. The following steps are showing 
-        how you can use this event to add header and footer.
+The [spread export]({%slug winforms/gridview/exporting-data/spread-export-%}) functionality gives you access to the exported document. It can be accessed in the __WorkbookCreated__ event. The following steps are showing how you can use this event to add header and footer.
 
-1. You can use the following code to initialize the exporter and subscribe to the event.
-            #_[C#] Initialize the exporter_
+1\. You can use the following code to initialize the exporter and subscribe to the event.
 
-	
-
-
+#### Initialize the exporter
 
 {{source=..\SamplesCS\GridView\ExportingData\HowTo\HeaderAndFooter.cs region=SetExporter}} 
 {{source=..\SamplesVB\GridView\ExportingData\HowTo\HeaderAndFooter.vb region=SetExporter}} 
@@ -48,15 +42,9 @@ The [spread export]({%slug winforms/gridview/exporting-data/spread-export-%}) fu
 
 {{endregion}} 
 
+2\. Before adding the header you should declare the two elements which will be used later for the cell value format and the background color.
 
-
-
-1. Before adding the header you should declare the two elements which will be used later for the cell value format and the background color.
-          #_[C#] Define styles and formats _
-
-	
-
-
+#### Define styles and formats
 
 {{source=..\SamplesCS\GridView\ExportingData\HowTo\HeaderAndFooter.cs region=StlylesAndFormats}} 
 {{source=..\SamplesVB\GridView\ExportingData\HowTo\HeaderAndFooter.vb region=StlylesAndFormats}} 
@@ -73,16 +61,9 @@ The [spread export]({%slug winforms/gridview/exporting-data/spread-export-%}) fu
 
 {{endregion}} 
 
+3\. Now you can add the header, first you need to insert a new row on top of the document. Then you can merge the all the cells above the grid and set the new cell value and styles.
 
-
-
-1. Now you can add the header, first you need to insert a new row on top of the document. Then you can merge the all the cells above the grid
-            and set the new cell value and styles.
-          #_[C#] Add header_
-
-	
-
-
+#### Add header
 
 {{source=..\SamplesCS\GridView\ExportingData\HowTo\HeaderAndFooter.cs region=Header}} 
 {{source=..\SamplesVB\GridView\ExportingData\HowTo\HeaderAndFooter.vb region=Header}} 
@@ -132,16 +113,9 @@ The [spread export]({%slug winforms/gridview/exporting-data/spread-export-%}) fu
 
 {{endregion}} 
 
+4\. The final part is adding the footer. For example you can select the left most and right most cells below the actual grid data and set styles and value. At the end you can set the fill for the entire row.
 
-
-
-1. The final part is adding the footer. For example you can select the left most and right most cells below the actual grid data and set styles and value. 
-            At the end you can set the fill for the entire row.
-          #_[C#] Add footer_
-
-	
-
-
+#### Add footer
 
 {{source=..\SamplesCS\GridView\ExportingData\HowTo\HeaderAndFooter.cs region=Footer}} 
 {{source=..\SamplesVB\GridView\ExportingData\HowTo\HeaderAndFooter.vb region=Footer}} 

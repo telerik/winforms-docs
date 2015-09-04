@@ -14,16 +14,9 @@ position: 3
 
 ## 
 
-Sometimes you may need to export just the data in a group in a grouped RadGridView. 
-      	This is possible by using the context menu and its API:
+Sometimes you may need to export just the data in a group in a grouped RadGridView. This is possible by using the context menu and its API:
 
-1. Create RadContextMenu and get the right-clicked group header row by using the __MouseDown__event and the
-        		__GetGridGroupHeaderRowElement__ method. After determining the clicked group row, you can get its child rows. Then simply show the 
-            context menu:#_[C#]_
-
-	
-
-
+1\. Create RadContextMenu and get the right-clicked group header row by using the __MouseDown__ event and the __GetGridGroupHeaderRowElement__ method. After determining the clicked group row, you can get its child rows. Then simply show the context menu:
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportDataInAGroupToExcel.cs region=createContextMenuAndGetTheGroupChildRows}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportDataInAGroupToExcel.vb region=createContextMenuAndGetTheGroupChildRows}} 
@@ -114,22 +107,9 @@ Sometimes you may need to export just the data in a group in a grouped RadGridVi
 
 {{endregion}} 
 
+2\. Since the export to excel methods do not support exporting only specified records, you can work-around this if you temporarily hide the unnecessary rows and use [ExportToExcelML]({%slug winforms/gridview/exporting-data/export-to-excel-via-excelml-format%}) class with the __DonNotExport__ for __HiddenRowOption__ properties.
 
-
-
-1. Since the export to excel methods do not support exporting only specified records,
-            you can work-around this if you temporarily hide the unnecessary rows and use
-        		[ExportToExcelML]({%slug winforms/gridview/exporting-data/export-to-excel-via-excelml-format%}) class with the 
-          	__DonNotExport__ for __HiddenRowOption__ properties.
-
-1. In the click event of the context menu item, mark the rows in the RadGridView.Rows collection that match the rows of the child collection by 
-            setting their
-        		__IsVisible__ property to *true*, and all the rest to *false*. 
-          	Then simply export RadGridView with __HiddenRowOption__ set to *HiddenOption.DoNotExport*:#_[C#]_
-
-	
-
-
+3\. In the click event of the context menu item, mark the rows in the RadGridView.Rows collection that match the rows of the child collection by setting their __IsVisible__ property to *true*, and all the rest to *false*. Then simply export RadGridView with __HiddenRowOption__ set to *HiddenOption.DoNotExport*:
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportDataInAGroupToExcel.cs region=markTheUnnesseceryRowsAndExportTheRestOfThem}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportDataInAGroupToExcel.vb region=markTheUnnesseceryRowsAndExportTheRestOfThem}} 
@@ -222,11 +202,7 @@ Sometimes you may need to export just the data in a group in a grouped RadGridVi
 
 
 
-1. If you need to get the text from the GroupRowHeader, use the following snippet:#_[C#]_
-
-	
-
-
+4\. If you need to get the text from the GroupRowHeader, use the following snippet:
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportDataInAGroupToExcel.cs region=getTheGroupLineText}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportDataInAGroupToExcel.vb region=getTheGroupLineText}} 

@@ -26,11 +26,7 @@ Images cannot be exported to MS Excel, because Excel does not support embedded i
 
 ## Exporting data programmatically creates a blank Excel document
 
-Since ExportToExcelML iterates through the grid elements, it does not export anything if the grid has not created its child elements yet (i.e. if there is a grid instance but it is not shown on a form). The solution is to use the __LoadElementTree__ method before running the export: #_[C#] _
-
-	
-
-
+Since ExportToExcelML iterates through the grid elements, it does not export anything if the grid has not created its child elements yet (i.e. if there is a grid instance but it is not shown on a form). The solution is to use the __LoadElementTree__ method before running the export: 
 
 {{source=..\SamplesCS\GridView\ExportingData\Troubleshooting.cs region=inCaseOfBlankExcelDocument}} 
 {{source=..\SamplesVB\GridView\ExportingData\Troubleshooting.vb region=inCaseOfBlankExcelDocument}} 
@@ -56,11 +52,7 @@ RadGridView does not supports exporting data from two or more grids in one and t
 
 ## MS Excel does not open the file directly after exporting the data from RadGridView (it prompts to save the file instead)
 
-The ExportToExcelML class does not support opening the excel file directly. However, you can easily implement similar functionality through the __Process.Start__ method:#_[C#]_
-
-	
-
-
+The ExportToExcelML class does not support opening the excel file directly. However, you can easily implement similar functionality through the __Process.Start__ method:
 
 {{source=..\SamplesCS\GridView\ExportingData\Troubleshooting.cs region=openTheFileAfterExport}} 
 {{source=..\SamplesVB\GridView\ExportingData\Troubleshooting.vb region=openTheFileAfterExport}} 
@@ -78,9 +70,6 @@ The ExportToExcelML class does not support opening the excel file directly. Howe
 ````
 
 {{endregion}} 
-
-
-
 
 ## Wrong text alignment for rows with conditional formatting
 

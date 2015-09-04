@@ -20,27 +20,19 @@ __RadGridView__ can export its contents to PDF using two separate mecahnisms.
 * The __GridViewPdfExport__ object utilizes the powerful [RadPdfProcessing]({%slug winforms/pdfprocessing%}) library and exports __RadGridView__`s data natively to the PDF format.
 
 * The __ExportToPdf__ object on the other hand first renders __RadGridView__ as an XHTML table and the export process will convert that table to a PDF document. That said, Export to PDF supports all of the ExportToHTML settings, but it also adds some PDF specific ones.
-            
 
->note The PDF export functionality is located in the __TelerikData.dll__ assembly. You need to include the following
-            namespaces in order to access the types contained in TelerikData:
->
+>note The PDF export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
 * Telerik.WinControls.Data
 * Telerik.WinControls.UI.Export>
-
-
-
+>
 
 ## Exporting Data using GridViewPdfExport object
 
 __Initialization__
 
 Before running export to PDF, you have to initialize the __GridViewPdfExport__ class. The constructor takes one parameter: __RadGridView__ which will be exported:
-        #_[C#]  GridViewPdfExport initialization_
 
-	
-
-
+####  GridViewPdfExport initialization
 
 {{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=InitializePdfExporter}} 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=InitializePdfExporter}} 
@@ -55,17 +47,11 @@ Before running export to PDF, you have to initialize the __GridViewPdfExport__ c
 
 {{endregion}} 
 
-
-
-
 __File Extension__
 
 The __FileExtension__ property allows you to change the default (*.pdf) file extension of the exported file:
-        #_[C#]  Setting the file extension_
 
-	
-
-
+#### Setting the file extension
 
 {{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=SetFileExtension}} 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetFileExtension}} 
@@ -80,25 +66,18 @@ The __FileExtension__ property allows you to change the default (*.pdf) file ext
 
 {{endregion}} 
 
-
-
-
 __Hidden columns and rows option__
 
-__GridViewPdfExport__ uses the default enumeration of hidden column and row settings. You can choose one of the three options
-          by setting __HiddenColumnOption__and __HiddenRowOption__properties. However, PDF do not support real hidden columns,
-          so choosing the ExportAsHidden will not behave the same as ExportAlways.
-        
+__GridViewPdfExport__ uses the default enumeration of hidden column and row settings. You can choose one of the three options by setting __HiddenColumnOption__ and __HiddenRowOption__ properties. However, PDF do not support real hidden columns, so choosing the ExportAsHidden will not behave the same as ExportAlways.
 
 * ExportAlways
 
 * DoNotExport (default)
 
-* ExportAsHidden  (brings the same result as ExportAlways option)#_[C#]  Setting the HiddenColumnOption_
-
-	
+* ExportAsHidden  (brings the same result as ExportAlways option)
 
 
+####  Setting the HiddenColumnOption
 
 {{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=SetHiddenPref}} 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetHiddenPref}} 
@@ -113,17 +92,11 @@ __GridViewPdfExport__ uses the default enumeration of hidden column and row sett
 
 {{endregion}} 
 
-
-
-
 __Header and Footer__
 
 Bofore applying customizations to the headers and footers we need to enable them:
-        #_[C#]  Enabling headers and footers_
 
-	
-
-
+####  Enabling headers and footers
 
 {{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=ShowHeaderAndFooter}} 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=ShowHeaderAndFooter}} 
@@ -139,11 +112,7 @@ Bofore applying customizations to the headers and footers we need to enable them
 {{endregion}} 
 
 
-#_[C#]  Customizing headers and footers_
-
-	
-
-
+####  Customizing headers and footers
 
 {{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=CustomizeHeaderAndFooter}} 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=CustomizeHeaderAndFooter}} 
@@ -184,13 +153,9 @@ Bofore applying customizations to the headers and footers we need to enable them
 
 {{endregion}} 
 
-
-
-
 __Summaries export option__
 
 The __SummariesExportOption__ property to specifies how to export summary items. There are four options to choose:
-        
 
 * ExportAll (default)
 
@@ -198,11 +163,9 @@ The __SummariesExportOption__ property to specifies how to export summary items.
 
 * ExportOnlyBottom
 
-* DoNotExport#_[C#]  Setting summary items_
+* DoNotExport
 
-	
-
-
+####  Setting summary items
 
 {{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=SetSummaryItems}} 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetSummaryItems}} 
@@ -217,16 +180,11 @@ The __SummariesExportOption__ property to specifies how to export summary items.
 
 {{endregion}} 
 
-
-
-
 __Fit to page__
 
-Use this property to make the grid fits to the PDF page width.#_[C#]  Setting FitToPageWidth_
+Use this property to make the grid fits to the PDF page width.
 
-	
-
-
+####  Setting FitToPageWidth
 
 {{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=SetFitToPage}} 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetFitToPage}} 
@@ -241,17 +199,11 @@ Use this property to make the grid fits to the PDF page width.#_[C#]  Setting Fi
 
 {{endregion}} 
 
+__Scale__ 
 
+You can use __Scale__ to change the grid size on the pdf. For example if __Scale__ = 1.2f means the grid will be 20% bigger.
 
-
-__Scale__
-
-You can use __Scale__to change the grid size on the pdf. For example if __Scale__= 1.2f means the grid will be 20% bigger.
-        #_[C#]  Setting scale_
-
-	
-
-
+####  Setting scale
 
 {{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=SetScale}} 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetScale}} 
@@ -266,23 +218,17 @@ You can use __Scale__to change the grid size on the pdf. For example if __Scale_
 
 {{endregion}} 
 
+__PDF Export Settings__ 
 
-
-
-__PDF Export Settings__
-
-The __PDFExportSettings__property supports various settings on PDF file level. You can set the following:
-        
+The __PDFExportSettings__ property supports various settings on PDF file level. You can set the following:
 
 * Author
 
 * Title
 
-* Description#_[C#]  Using export settings_
+* Description
 
-	
-
-
+####  Using export settings
 
 {{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=ExportSettings}} 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=ExportSettings}} 
@@ -297,19 +243,13 @@ The __PDFExportSettings__property supports various settings on PDF file level. Y
 
 {{endregion}} 
 
-
-
-
 ## Exporting to PDF
 
-Two methods are responsible for exporting data to PDF. Both receive as a parameter the file name.
-        
+Two methods are responsible for exporting data to PDF. Both receive as a parameter the file name.     
 
-* RunExport: Runs synchronously.#_[C#]  Running export synchronously_
+* RunExport: Runs synchronously.
 
-	
-
-
+####  Running export synchronously
 
 {{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=RunExport}} 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=RunExport}} 
@@ -326,14 +266,9 @@ Two methods are responsible for exporting data to PDF. Both receive as a paramet
 
 {{endregion}} 
 
+* RunExportAsync: Runs on a thread different than the UI thread.
 
-
-
-* RunExportAsync: Runs on a thread different than the UI thread.#_[C#]  Running export asynchronously_
-
-	
-
-
+#### Running export asynchronously
 
 {{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=RunExportAsync}} 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=RunExportAsync}} 
@@ -350,9 +285,6 @@ Two methods are responsible for exporting data to PDF. Both receive as a paramet
 
 {{endregion}} 
 
-
-
-
 ## Events
 
 * CellFormatting: Fires for every cell which is being exported
@@ -365,12 +297,9 @@ Two methods are responsible for exporting data to PDF. Both receive as a paramet
 
 __Initialization__
 
-Before running export to PDF, you have to initialize the __ExportToPD__F class. The constructor takes one parameter: __RadGridView__ which will be exported:
-        #_[C#]  ExportToPDF initialization_
+Before running export to PDF, you have to initialize the __ExportToPDF__ class. The constructor takes one parameter: __RadGridView__ which will be exported: 
 
-	
-
-
+####  ExportToPDF initialization
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=exportToPdfInitialization}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=exportToPdfInitialization}} 
@@ -378,23 +307,18 @@ Before running export to PDF, you have to initialize the __ExportToPD__F class. 
 ````C#
             ExportToPDF exporter = new ExportToPDF(this.radGridView1);
 ````
-````VB.NET        Dim exporter As New ExportToPDF(Me.RadGridView1)
+````VB.NET       
+            Dim exporter As New ExportToPDF(Me.RadGridView1)
         '
 ````
 
 {{endregion}} 
 
-
-
-
 __File Extension__
 
 The __FileExtension__ property allows you to change the default (*.pdf) file extension of the exported file:
-        #_[C#]  Setting the FileExtension_
 
-	
-
-
+####  Setting the FileExtension
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=settingTheFileExtension}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingTheFileExtension}} 
@@ -402,31 +326,24 @@ The __FileExtension__ property allows you to change the default (*.pdf) file ext
 ````C#
             exporter.FileExtension = "pdf";
 ````
-````VB.NET        exporter.FileExtension = "pdf"
+````VB.NET        
+        exporter.FileExtension = "pdf"
         '
 ````
 
 {{endregion}} 
 
-
-
-
 __Hidden columns and rows option__
 
-ExportToPDF uses the default enumeration of hidden column and row settings. You can choose one of the three options
-          by setting __HiddenColumnOption__and __HiddenRowOption__properties. However, PDF do not support real hidden columns,
-          so choosing the ExportAsHidden will not behave the same as ExportAlways.
-        
+ExportToPDF uses the default enumeration of hidden column and row settings. You can choose one of the three options by setting __HiddenColumnOption__ and __HiddenRowOption__ properties. However, PDF do not support real hidden columns, so choosing the ExportAsHidden will not behave the same as ExportAlways.
 
 * ExportAlways
 
 * DoNotExport (default)
 
-* ExportAsHidden  (brings the same result as ExportAlways option)#_[C#]  Setting the HiddenColumnOption_
+* ExportAsHidden  (brings the same result as ExportAlways option)
 
-	
-
-
+####  Setting the HiddenColumnOption
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=settingTheHiddenColumnOption}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingTheHiddenColumnOption}} 
@@ -434,27 +351,18 @@ ExportToPDF uses the default enumeration of hidden column and row settings. You 
 ````C#
             exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;
 ````
-````VB.NET        exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
+````VB.NET        
+         exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
         '
 ````
 
 {{endregion}} 
 
-
-
-
 __Exporting Visual Settings__
 
-Using the ExportToPDF class allows you to export the visual settings (themes) to the PDF file. ExportToPDF also provides
-          a visual representation of the alternating row color. This feature works only if __EnableAlternatingRow__ property
-          is set to *true*. Note that it does not transfer the alternating row settings that come from the theme of the control.
-          RadGridView will also export the conditional formatting to the PDF file.
-          You can enable exporting visual settings through the ExportVisualSettings property. The default value of this property is *false*.
-        #_[C#]  Setting the ExportVisualSettings_
+Using the ExportToPDF class allows you to export the visual settings (themes) to the PDF file. ExportToPDF also provides a visual representation of the alternating row color. This feature works only if __EnableAlternatingRow__ property is set to *true*. Note that it does not transfer the alternating row settings that come from the theme of the control. RadGridView will also export the conditional formatting to the PDF file. You can enable exporting visual settings through the ExportVisualSettings property. The default value of this property is *false*. 
 
-	
-
-
+####  Setting the ExportVisualSettings
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=settingExportVisualSettings}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingExportVisualSettings}} 
@@ -462,23 +370,18 @@ Using the ExportToPDF class allows you to export the visual settings (themes) to
 ````C#
             exporter.ExportVisualSettings = true;
 ````
-````VB.NET        exporter.ExportVisualSettings = True
+````VB.NET       
+         exporter.ExportVisualSettings = True
         '
 ````
 
 {{endregion}} 
 
-
-
-
 __Page Title__
 
 You can add a page title which will be presented on every page of the PDF document through __PageTitle__property.
-        #_[C#]  Setting the PageTitle_
 
-	
-
-
+#### Setting the PageTitle
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=settingThePageTitleProperty}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingThePageTitleProperty}} 
@@ -486,19 +389,16 @@ You can add a page title which will be presented on every page of the PDF docume
 ````C#
             exporter.PageTitle = "Title";
 ````
-````VB.NET        exporter.PageTitle = "Title"
+````VB.NET        
+         exporter.PageTitle = "Title"
         '
 ````
 
 {{endregion}} 
 
-
-
-
 __Summaries export option__
 
 You can use __SummariesExportOption__ property to specify how to export summary items. There are four options to choose:
-        
 
 * ExportAll (default)
 
@@ -506,11 +406,9 @@ You can use __SummariesExportOption__ property to specify how to export summary 
 
 * ExportOnlyBottom
 
-* DoNotExport#_[C#]  Setting the SummariesExportOption_
+* DoNotExport
 
-	
-
-
+####  Setting the SummariesExportOption
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=settingSummariesExportOption}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingSummariesExportOption}} 
@@ -518,22 +416,18 @@ You can use __SummariesExportOption__ property to specify how to export summary 
 ````C#
             exporter.SummariesExportOption = SummariesOption.ExportAll;
 ````
-````VB.NET        exporter.SummariesExportOption = SummariesOption.ExportAll
+````VB.NET       
+        exporter.SummariesExportOption = SummariesOption.ExportAll
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 __Fit to page__
 
-Use this property to make the grid fits to the PDF page width.#_[C#]  Setting the FitToPageWidth_
+Use this property to make the grid fits to the PDF page width.
 
-	
-
-
+####  Setting the FitToPageWidth
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=settingFitToPageWidth}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingFitToPageWidth}} 
@@ -541,23 +435,18 @@ Use this property to make the grid fits to the PDF page width.#_[C#]  Setting th
 ````C#
             exporter.FitToPageWidth = true;
 ````
-````VB.NET        exporter.FitToPageWidth = True
+````VB.NET        
+        exporter.FitToPageWidth = True
         '
 ````
 
 {{endregion}} 
 
-
-
-
 __Scale__
 
-You can use __Scale__to change the grid size on the pdf. For example if __Scale__= 1.2f means the grid will be 20% bigger.
-        #_[C#]  Setting the Scale_
+You can use __Scale__ to change the grid size on the pdf. For example if __Scale__ = 1.2f means the grid will be 20% bigger.
 
-	
-
-
+####  Setting the Scale
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=settingScale}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingScale}} 
@@ -565,24 +454,18 @@ You can use __Scale__to change the grid size on the pdf. For example if __Scale_
 ````C#
             exporter.Scale = 1.2f;
 ````
-````VB.NET        exporter.Scale = 1.2F
+````VB.NET        
+        exporter.Scale = 1.2F
         '
 ````
 
 {{endregion}} 
 
-
-
-
-
-
 __TableBorderThickness__
 
-This property controls the thickness of the table border. The default value is 0 and border is not drawn. #_[C#]  Setting the TableBorderTickness_
+This property controls the thickness of the table border. The default value is 0 and border is not drawn. 
 
-	
-
-
+####  Setting the TableBorderTickness
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=settingTableBorderTickness}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingTableBorderTickness}} 
@@ -590,19 +473,16 @@ This property controls the thickness of the table border. The default value is 0
 ````C#
             exporter.TableBorderThickness = 1;
 ````
-````VB.NET        exporter.TableBorderThickness = 1
+````VB.NET      
+        exporter.TableBorderThickness = 1
         '
 ````
 
 {{endregion}} 
 
-
-
-
 __PDF Export Settings__
 
-The __PDFExportSettings__property supports various settings on PDF file level. You can set the following:
-        
+The __PDFExportSettings__ property supports various settings on PDF file level. You can set the following:       
 
 * Author
 
@@ -628,11 +508,9 @@ The __PDFExportSettings__property supports various settings on PDF file level. Y
 
 * Subject
 
-* Title#_[C#]  Setting the PDFDocumentSettings_
+* Title
 
-	
-
-
+#### Setting the PDFDocumentSettings
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=pdfDocumentSettings}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=pdfDocumentSettings}} 
@@ -641,33 +519,23 @@ The __PDFExportSettings__property supports various settings on PDF file level. Y
             exporter.PdfExportSettings.PageHeight = 210;
             exporter.PdfExportSettings.PageWidth = 297;
 ````
-````VB.NET        exporter.PdfExportSettings.PageHeight = 210
+````VB.NET
+        exporter.PdfExportSettings.PageHeight = 210
         exporter.PdfExportSettings.PageWidth = 297
         '
 ````
 
 {{endregion}} 
 
-
-
-
-
-
 ## RunExport method
 
-
-
 Exporting data to PDF is done through the __RunExport__ method of ExportToPDF object. The RunExport method accepts the following parameter:
-        
 
 * __fileName__ - the name of the exported file
-            
 
-Consider the code sample below:#_[C#]  Exporting to PDF format_
+Consider the code sample below:
 
-	
-
-
+####  Exporting to PDF format
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=exportingToPdfFormat}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=exportingToPdfFormat}} 
@@ -676,26 +544,19 @@ Consider the code sample below:#_[C#]  Exporting to PDF format_
             string fileName = "c:\\ExportedData.pdf";
             exporter.RunExport(fileName);
 ````
-````VB.NET        Dim fileName As String = "c:\ExportedData.pdf"
+````VB.NET
+        Dim fileName As String = "c:\ExportedData.pdf"
         exporter.RunExport(fileName)
         '
 ````
 
 {{endregion}} 
 
-
-
-
 ## Events
 
-__HTMLCellFormating__event:
-          Since the the export process first renders RadGridView in XHTML format you can use the event which comes from ExportToHTML class: __HTMLCellFormatting__.
-          It gives access to a single cell’s  html element that allows you to make additional formatting for every html cell related to the exported RadGridView:
-        #_[C#]  Handling the HTMLCellFormatting event_
+__HTMLCellFormating__ event: Since the the export process first renders RadGridView in XHTML format you can use the event which comes from ExportToHTML class: __HTMLCellFormatting__.  It gives access to a single cell’s  html element that allows you to make additional formatting for every html cell related to the exported RadGridView:
 
-	
-
-
+####  Handling the HTMLCellFormatting event
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=hanglingHtmlCellFormattingEvent}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=hanglingHtmlCellFormattingEvent}} 
@@ -722,24 +583,9 @@ __HTMLCellFormating__event:
 
 {{endregion}} 
 
-
-
-
 ## Fonts / Unicode support
 
-ExportToPDF supports all left-to-right languages when the
-          appropriate Unicode font is set. The most common international font is [Arial Unicode MS](http://support.microsoft.com/kb/287247)
-          ,
-          because it covers all Unicode characters. Of course, you can use other
-          language-specific fonts such as [Batang](http://www.ascenderfonts.com/font/batang-korean.aspx)
-          for Korean, [SimSun](http://www.ascenderfonts.com/font/simsun-simplified-chinese.aspx)
-          for Chinese, [MS Mincho](http://www.ascenderfonts.com/font/ms-mincho-japanese.aspx)
-          for Japanese, etc.
-        #_[C#]_
-
-	
-
-
+ExportToPDF supports all left-to-right languages when the appropriate Unicode font is set. The most common international font is [Arial Unicode MS](http://support.microsoft.com/kb/287247), because it covers all Unicode characters. Of course, you can use other-specific fonts such as [Batang](http://www.ascenderfonts.com/font/batang-korean.aspx) for Korean, [SimSun](http://www.ascenderfonts.com/font/simsun-simplified-chinese.aspx) for Chinese, [MS Mincho](http://www.ascenderfonts.com/font/ms-mincho-japanese.aspx) for Japanese, etc.
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=htmlCellFormattingUnicode}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=htmlCellFormattingUnicode}} 
@@ -762,6 +608,3 @@ ExportToPDF supports all left-to-right languages when the
 ````
 
 {{endregion}} 
-
-
-
