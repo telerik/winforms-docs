@@ -10,8 +10,6 @@ position: 1
 
 # Moving and Locking Points
 
-
-
 ## Moving Points
 
 Points are the basic unit of functionality in the Shape Editor. Points on the drawing surface are represented by black dots for the end points and red dots for the control points of Bezier curves. To move points:
