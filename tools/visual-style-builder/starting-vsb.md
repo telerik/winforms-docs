@@ -5,18 +5,14 @@ description: Starting VSB
 slug: winforms/tools/visual-style-builder/starting-vsb
 tags: starting,vsb
 published: True
-position: 0
+position: 1
 ---
 
 # Starting VSB
 
-
-
 ## 
 
 The new Visual Style Builder can be started from:
-           
-        
 
 * Start menu (Start >> Programs >> Telerik >> UI for WinForms [version] >> Tools)
 

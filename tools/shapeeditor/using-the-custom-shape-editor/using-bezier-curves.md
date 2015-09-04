@@ -10,11 +10,11 @@ position: 3
 
 # Using Bezier Curves
 
-
-
 You can use the Shape Editor to create curved designs using Bézier curves. A Bézier curve is created with two regular points and two control points. The position of the control points relative to the endpoints dictates the arc of the curve. 
 
-In the screenshot below the two control points are dragged down below the middle of the horizontal center point, causing the curve to bulge in the lower half of the shape drawing area.![tools-shapeeditor-using-the-custom-shape-editor-using-bezier-curves 001](images/tools-shapeeditor-using-the-custom-shape-editor-using-bezier-curves001.png)
+In the screenshot below the two control points are dragged down below the middle of the horizontal center point, causing the curve to bulge in the lower half of the shape drawing area.
+
+![tools-shapeeditor-using-the-custom-shape-editor-using-bezier-curves 001](images/tools-shapeeditor-using-the-custom-shape-editor-using-bezier-curves001.png)
 
 ## Creating Bézier Curves
 

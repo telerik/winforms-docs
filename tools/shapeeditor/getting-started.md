@@ -33,18 +33,24 @@ This tutorial demonstrates modifying the shape of a __RadButton__.
 1.  Right-click the left line and select __Insert Point__.
           
 
-1. Move the upper left corner in to form a new shape (see screen shot below).![tools-getting-started 001](images/tools-getting-started001.png)
+1. Move the upper left corner in to form a new shape (see screen shot below).
+
+    ![tools-getting-started 001](images/tools-getting-started001.png)
 
 1. Right-click the bottom line and select __Convert__ from the context menu.  This step converts the line to a [Bezier curve]({%slug winforms/tools/shapeeditor/using-the-custom-shape-editor/using-bezier-curves%}).
           
 
-1.  Drag the two control points up slightly.![tools-getting-started 002](images/tools-getting-started002.png)>
+1.  Drag the two control points up slightly.
+    
+    ![tools-getting-started 002](images/tools-getting-started002.png)>
           
 
 1.  Click __OK__ to close the __Custom Shape Editor__ dialog.
           
 
-1.  In the Visual Style Builder Control Structure pane, select the Border Primitive from the control tree. ![tools-getting-started 003](images/tools-getting-started003.png)
+1.  In the Visual Style Builder Control Structure pane, select the Border Primitive from the control tree. 
+
+    ![tools-getting-started 003](images/tools-getting-started003.png)
 
 1.  In the Expert Mode pane, set the Visibility property to Hidden.
           

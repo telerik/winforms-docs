@@ -495,6 +495,27 @@ navigation:
     tools:
         title: Tools
         position: 55
+    tools/controlspy:
+        title: ControlSpy
+        position: 0
+    tools/shapeeditor:
+        title: ShapeEditor
+        position: 1
+    tools/visual-style-builder:
+        title: Visual Style Builder
+        position: 2
+    tools/visual-style-builder/working-with-visual-style-builder:
+        title: Working With Visual Style Builder
+        position: 5
+    tools/visual-style-builder/adding-custom-themes-to-your-application:
+        title: Adding Custom Themes to your Application
+        position: 6
+    tools/visual-style-builder/control-specific-theme-tutorials:
+        title: Control Specific Theme Tutorials
+        position: 7
+    tools/shapeeditor/using-the-custom-shape-editor:
+        title: Using the Custom Shape Editor
+        position: 3
     telerik-analytics-integration:
         title: Telerik Analytics Intergration
         position: 56
