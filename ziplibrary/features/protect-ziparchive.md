@@ -10,17 +10,9 @@ position: 1
 
 # Protect ZipArchive
 
+__RadZipLibrary__ lets you protect a ZIP archive with a password. This help article will teach you to use __RadZipLibrary__ to password protect files and how to open files that are protected with a password. To protect a ZIP archive and all __ZipArchiveEntry__ items in it you should specify encryption settings when creating the [ZipArchive]({%slug winforms/ziplibrary/getting-started%}) object.
 
-
-__RadZipLibrary__ lets you protect a ZIP archive with a password. This help article will teach you to use 
-        __RadZipLibrary__ to password protect files and how to open files that are protected with a password. To protect a ZIP archive 
-        and all __ZipArchiveEntry__ items in it you should specify encryption settings when creating 
-        the [ZipArchive]({%slug winforms/ziplibrary/getting-started%}) object.
-      
-
-__RadZipLibrary__ supports traditional PKWARE encryption only. The settings for this encryption type are represented by 
-        the __DefaultEncryptionSettings__ class.
-      
+__RadZipLibrary__ supports traditional PKWARE encryption only. The settings for this encryption type are represented by the __DefaultEncryptionSettings__ class.
 
 * [Create a Password-protected ZipArchive](#create-a-password-protected-ziparchive)
 
@@ -28,19 +20,11 @@ __RadZipLibrary__ supports traditional PKWARE encryption only. The settings for 
 
 ## Create a Password-protected ZipArchive
 
-In order to create a password-protected ZIP archive you need to pass a __DefaultEncryptionSettings__ object to the 
-          __ZipArchive__'s constructor along with the __ZipArchiveMode.Create__ parameter.
-        
+In order to create a password-protected ZIP archive you need to pass a __DefaultEncryptionSettings__ object to the __ZipArchive__'s constructor along with the __ZipArchiveMode.Create__ parameter.
 
 __DefaultEncryptionSettings__ has a __Password__ property of type string which represents the used password.
-        
 
 __Example 1__: Create a password-protected ZIP archive:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\ZipLibrary\ProtectArchive.cs region=stream}} 
 {{source=..\SamplesVB\ZipLibrary\ProtectArchive.vb region=stream}} 
@@ -79,26 +63,14 @@ __Example 1__: Create a password-protected ZIP archive:
 
 {{endregion}} 
 
-
-
-
->tip You must always dispose of the ZIP archive object when all operations that use it are competed. Telerik Support recommends that you declare and 
-            instantiate the ZIP archive object in a using statement. If it is not possible for some reason, then do not forget to call the __Dispose()__ method when you complete all operations.
+>tip You must always dispose of the ZIP archive object when all operations that use it are competed. Telerik Support recommends that you declare and   instantiate the ZIP archive object in a using statement. If it is not possible for some reason, then do not forget to call the __Dispose()__ method when you complete all operations.
 >
-
 
 ## Read a Password-protected ZipArchive
 
-In order to open a password-protected __ZipArchive__ you need to pass a __DefaultEncryptionSettings__ 
-          object with the password that was used to create the archive in the first place.
-        
+In order to open a password-protected __ZipArchive__ you need to pass a __DefaultEncryptionSettings__ object with the password that was used to create the archive in the first place.
 
 __Example 2__: Open and read a password-protected ZIP archive.
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\ZipLibrary\ProtectArchive.cs region=read}} 
 {{source=..\SamplesVB\ZipLibrary\ProtectArchive.vb region=read}} 
@@ -131,16 +103,11 @@ __Example 2__: Open and read a password-protected ZIP archive.
 
 {{endregion}} 
 
-
-
-
->tip You must always dispose of the ZIP archive object when all operations that use it are competed. Telerik Support recommends that you declare and 
-            instantiate the ZIP archive object in a using statement. If it is not possible for some reason, then do not forget to call the __Dispose()__ method when you complete all operations.
+>tip You must always dispose of the ZIP archive object when all operations that use it are competed. Telerik Support recommends that you declare and  instantiate the ZIP archive object in a using statement. If it is not possible for some reason, then do not forget to call the __Dispose()__ method when you complete all operations.
 >
-
 
 # See Also
 
- * [Getting Started]({%slug winforms/ziplibrary/getting-started%})
+* [Getting Started]({%slug winforms/ziplibrary/getting-started%})
 
- * [Update ZipArchive]({%slug winforms/ziplibrary/features/update-ziparchive%})
+* [Update ZipArchive]({%slug winforms/ziplibrary/features/update-ziparchive%})

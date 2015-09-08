@@ -10,22 +10,11 @@ position: 0
 
 # Update ZipArchive
 
-
-
 With __RadZipLibrary__ you can update existing ZIP archive in order to add new entries to it, delete or update existing entries.
-      
 
-The __ZipArchive__ class provides three modes: *Read*, *Create* and
-        *Update*. More information on creating and reading an archive 
-        is available [here]({%slug winforms/ziplibrary/features/update-ziparchive%}).
-      
+The __ZipArchive__ class provides three modes: *Read*, *Create* and *Update*. More information on creating and reading an archive is available [here]({%slug winforms/ziplibrary/features/update-ziparchive%}).
 
 The following code snippet opens a ZIP archive in update mode using __ZipArchive__ class:
-      #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\ZipLibrary\UpdateZipArchive.cs region=stream}} 
 {{source=..\SamplesVB\ZipLibrary\UpdateZipArchive.vb region=stream}} 
@@ -52,35 +41,20 @@ The following code snippet opens a ZIP archive in update mode using __ZipArchive
 
 {{endregion}} 
 
-
-
-
->note You must always dispose the ZIP archive object when all update operations (add/delete/update) are competed. The best practice is declaration 
-          and instantiation of the ZIP archive object in a using statement. If it is not possible for some reason then do not forget to call __Dispose()__ method when you complete all operations.
+>note You must always dispose the ZIP archive object when all update operations (add/delete/update) are competed. The best practice is declaration  and instantiation of the ZIP archive object in a using statement. If it is not possible for some reason then do not forget to call __Dispose()__ method when you complete all operations.
 >
-
 
 ## Add Entry
 
 In order to add a new entry into the ZIP archive you should perform the following steps:
         
-
 1. Use __CreateEntry()__ method of the __ZipArchive__ object to create a new entry.
-            
 
 1. Open the entry to obtain stream for writing.
-            
 
 1. Write necessary information into the entry.
-            
 
-1. Dispose entry when all necessary information is written. In the *Update* mode this step is optional. You can omit it
-              if you are going to add/delete/update other entries in the archive.
-            #_[C#] _
-
-	
-
-
+1. Dispose entry when all necessary information is written. In the *Update* mode this step is optional. You can omit it if you are going to add/delete/update other entries in the archive.
 
 {{source=..\SamplesCS\ZipLibrary\UpdateZipArchive.cs region=flush}} 
 {{source=..\SamplesVB\ZipLibrary\UpdateZipArchive.vb region=flush}} 
@@ -105,27 +79,15 @@ In order to add a new entry into the ZIP archive you should perform the followin
 
 {{endregion}} 
 
-
-
-
->note If you are using __StremWriter__ to write information into the entry stream (the stream opened using entry.Open() method) then you
-            must use __Flush()__ method when you finish writing. However, do not dispose the entry stream or writer which uses it as this can 
-            cause unpredictable result. The entry stream is disposed automatically when you dispose the entry or archive opened in the *Update* mode.
+>note If you are using __StremWriter__ to write information into the entry stream (the stream opened using entry.Open() method) then you  must use __Flush()__ method when you finish writing. However, do not dispose the entry stream or writer which uses it as this can  cause unpredictable result. The entry stream is disposed automatically when you dispose the entry or archive opened in the *Update* mode.
 >
 
 
 ## Delete Entry
 
-The __ZipArchive__ class provides a __GetEntry()__ method which allows you access to a particular entry in 
-          the archive.
-        
+The __ZipArchive__ class provides a __GetEntry()__ method which allows you access to a particular entry in the archive.
 
 The following code snippet obtains an entry and deletes it from the ZIP archive using the __Delete()__ method:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\ZipLibrary\UpdateZipArchive.cs region=delete}} 
 {{source=..\SamplesVB\ZipLibrary\UpdateZipArchive.vb region=delete}} 
@@ -148,29 +110,17 @@ The following code snippet obtains an entry and deletes it from the ZIP archive 
 
 {{endregion}} 
 
-
-
-
 ## Update Entry
 
 In order to update an existing entry in the ZIP archive you should perform the following steps:
-        
 
 1. Use __GetEntry()__ method of the __ZipArchive__ object to obtain existing entry.
-            
 
 1. Open entry to get stream for reading/writing.
-            
 
 1. Read/Write necessary information from/to the entry.
-            
 
-1. Dispose entry when all necessary information is written. In the __Update__ mode this step is optional. You can omit it if you 
-              are going to add/delete/update other entries in the archive.
-            #_[C#] _
-
-	
-
+1. Dispose entry when all necessary information is written. In the __Update__ mode this step is optional. You can omit it if you are going to add/delete/update other entries in the archive.
 
 
 {{source=..\SamplesCS\ZipLibrary\UpdateZipArchive.cs region=entry}} 
@@ -209,13 +159,8 @@ In order to update an existing entry in the ZIP archive you should perform the f
 {{endregion}} 
 
 
-
-
->note If you are using __StremWriter__ to write information into the entry stream (the stream opened using entry.Open() method) then you
-            must use __Flush()__ method when you finish writing. However, do not dispose the entry stream or writer which uses it as this can 
-            cause unpredictable result. The entry stream is disposed automatically when you dispose the entry or archive opened in the *Update* mode.
+>note If you are using __StremWriter__ to write information into the entry stream (the stream opened using entry.Open() method) then you must use __Flush()__ method when you finish writing. However, do not dispose the entry stream or writer which uses it as this can cause unpredictable result. The entry stream is disposed automatically when you dispose the entry or archive opened in the *Update* mode.
 >
-
 
 # See Also
 

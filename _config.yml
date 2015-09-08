@@ -446,6 +446,8 @@ navigation:
     ziplibrary:
         title: ZipLibrary
         position: 50
+    ziplibrary/features:
+        title: Features
     telerik-cab-enabling-kit:
         title: Telerik Cab Enabling Kit
         position: 51

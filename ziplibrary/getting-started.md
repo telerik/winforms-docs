@@ -5,38 +5,26 @@ description: Getting Started
 slug: winforms/ziplibrary/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
 
 
 
-The __Zip Library__ allows you to load data from existing ZIP archives or create and edit ZIPs that can be used by other applications.
-        You can also create ZIP archives in memory or use a stream to get data and add it to a ZIP archive.
-      
+The __Zip Library__ allows you to load data from existing ZIP archives or create and edit ZIPs that can be used by other applications. You can also create ZIP archives in memory or use a stream to get data and add it to a ZIP archive.
 
 The ZIP archive is represented by __ZipArchive__ class. It can be used in 3 modes:
-      
 
 * __Read__: Allows reading of the existing ZIP archive. In this mode it is not possible to add or update archive entries.
-          
 
-* __Create__: Allows creation of a new archive. In this mode you can add new entries in the archive but cannot read or update
-            content of the entries which have been written already.
-          
+* __Create__: Allows creation of a new archive. In this mode you can add new entries in the archive but cannot read or update content of the entries which have been written already.
 
 * __Update__: Allows update of the existing ZIP archive. In this mode you can add new entries, read and update existing entries.
-          
 
 ## Open Zip Archive
 
 The following code snippet demonstrates how to open existing Zip archive using the __ZipArchive__ class.
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\ZipLibrary\GettingStarted.cs region=stream}} 
 {{source=..\SamplesVB\ZipLibrary\GettingStartedZipCode.vb region=stream}} 
@@ -62,23 +50,12 @@ The following code snippet demonstrates how to open existing Zip archive using t
 
 {{endregion}} 
 
-
-
-
-The *archive* variable holds the files that are compressed in the selected zip. You can access the list of these files
-          through the __ZipArchive.Entries__ property. It holds a collection of __ZipArchiveEntry__ elements - the
-          elements that describe the files archived in the zip file. You can use these elements to get the name of the compressed file, its uncompressed and
-          compressed size and other file attributes.
+The *archive* variable holds the files that are compressed in the selected zip. You can access the list of these files through the __ZipArchive.Entries__ property. It holds a collection of __ZipArchiveEntry__ elements - the  elements that describe the files archived in the zip file. You can use these elements to get the name of the compressed file, its uncompressed and  compressed size and other file attributes.
         
 
 ## Create Zip Archive
 
 The example below shows how to create a new Zip archive using the __ZipArchive__ class and place a text file in it.
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\ZipLibrary\GettingStarted.cs region=create}} 
 {{source=..\SamplesVB\ZipLibrary\GettingStartedZipCode.vb region=create}} 
@@ -113,13 +90,8 @@ The example below shows how to create a new Zip archive using the __ZipArchive__
 
 {{endregion}} 
 
-
-
-
->tip If you use __StreamWriter__ to write content to the stream you should call the Flush() method in order to flush the data to
-            the stream.
+>tip If you use __StreamWriter__ to write content to the stream you should call the Flush() method in order to flush the data to the stream.
 >
-
 
 >note Do not close the stream opened by the __ZipArchiveEntry.Open()__ method. Otherwise the result is unpredictable.
 >
