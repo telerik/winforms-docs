@@ -14,12 +14,7 @@ position: 1
 
 ## 
 
-You can present the content of your grid instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*:                
-         #_[C#]_
-
-	
-
-
+You can present the content of your grid instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*:
 
 {{source=..\SamplesCS\GridView\Localization\Localization1.cs region=rtl}} 
 {{source=..\SamplesVB\GridView\Localization\Localization1.vb region=rtl}} 
@@ -33,6 +28,5 @@ You can present the content of your grid instance in a right-to-left direction b
 ````
 
 {{endregion}} 
-
 
 ![gridview-localization-rtl 001](images/gridview-localization-rtl001.png)

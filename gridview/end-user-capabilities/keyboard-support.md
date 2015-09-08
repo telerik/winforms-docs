@@ -18,13 +18,10 @@ A typical business application needs to support "heads-down" data entry that avo
 
 * Navigate the grid using only the arrow keys.
 
-* Edit rows using the __F2__ or __Enter__ keys, depending on the __BeginEditMode__value.
-
-
-
-
+* Edit rows using the __F2__ or __Enter__ keys, depending on the __BeginEditMode__ value.
 
 || __Key__ | __Description__ |
+| --- | ------- | ------- |
 ||Up Arrow|moves the selection up|
 ||Down Arrow|moves the selection down|
 ||Left Arrow|moves the selection left|

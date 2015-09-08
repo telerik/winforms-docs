@@ -14,13 +14,11 @@ position: 2
 
 ## 
 
-Html-like formatting is a feature of Telerik Presentation Framework and therefore it can be also used in RadGridView. The screenshot below demonstrates the color tag applied to RadGridView cells: ![gridview-styling-and-appearance-html-like-text-formatting 001](images/gridview-styling-and-appearance-html-like-text-formatting001.png)
+Html-like formatting is a feature of Telerik Presentation Framework and therefore it can be also used in RadGridView. The screenshot below demonstrates the color tag applied to RadGridView cells:<br>![gridview-styling-and-appearance-html-like-text-formatting 001](images/gridview-styling-and-appearance-html-like-text-formatting001.png)
 
-Tags are only parsed if DisableHTMLRendering is set to __false__. If you skip that, all tags will be shown as text. In the code snippet, HTML rendering is only enabled for the first column:#_[C#] HTML-like text formatting_
+Tags are only parsed if __DisableHTMLRendering__ is set to *false*. If you skip that, all tags will be shown as text. In the code snippet, HTML rendering is only enabled for the first column:
 
-	
-
-
+#### HTML-like text formatting
 
 {{source=..\SamplesCS\GridView\StylingAndAppearance\HtmlLikeTextFormatting.cs region=htmlLikeTextFormatting}} 
 {{source=..\SamplesVB\GridView\StylingAndAppearance\HtmlLikeTextFormatting.vb region=htmlLikeTextFormatting}} 
@@ -46,9 +44,6 @@ Tags are only parsed if DisableHTMLRendering is set to __false__. If you skip th
 ````
 
 {{endregion}} 
-
-
-
 
 >note Please refer to *HTML-like Text formatting* topic in *Telerik Presentation Framework* section for the list of support tags.
 >

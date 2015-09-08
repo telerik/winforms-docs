@@ -17,15 +17,9 @@ position: 0
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with Printing for RadGridView](http://tv.telerik.com/watch/winforms/getting-started-with-printing-for-radgridview-)This video demonstrates how to use the new Print features of RadGridView without the need to export to other formats. It also includes a tour of new end-user printing features.|
->caption 
+|[Getting Started with Printing for RadGridView](http://tv.telerik.com/watch/winforms/getting-started-with-printing-for-radgridview-)<br>This video demonstrates how to use the new Print features of RadGridView without the need to export to other formats. It also includes a tour of new end-user printing features.|![gridview-printing-support 003](images/gridview-printing-support003.png)|
 
-![gridview-printing-support 003](images/gridview-printing-support003.png)|
-
-RadGridView provides printing support, which allows you to print the grid content by using
-          [RadPrintDocument.]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%})
-          You are able to print:
-        
+RadGridView provides printing support, which allows you to print the grid content by using [RadPrintDocument.]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%}) You are able to print:
 
 * [ViewDefinitions]({%slug winforms/gridview/view-definitions/overview%})
 
@@ -37,17 +31,7 @@ RadGridView provides printing support, which allows you to print the grid conten
 
 * Header on each page
 
-RadGridView has two public methods available for printing - __Print()__ and
-          __PrintPreview()__. The first method will directly send a print job to the
-          default printer with the settings currently saved in the
-          [PrintStyle]({%slug winforms/gridview/printing-support/gridprintstyle%})
-          property. This method has one overload available which can show a system
-          __PrintDialog__ with the available printers and their options.
-        #_[C#]_
-
-	
-
-
+RadGridView has two public methods available for printing - __Print()__ and  __PrintPreview()__. The first method will directly send a print job to the default printer with the settings currently saved in the [PrintStyle]({%slug winforms/gridview/printing-support/gridprintstyle%}) property. This method has one overload available which can show a system __PrintDialog__ with the available printers and their options.
 
 {{source=..\SamplesCS\GridView\Printing support\PrintingSupport.cs region=print}} 
 {{source=..\SamplesVB\GridView\Printing support\PrintingSupport.vb region=print}} 
@@ -66,17 +50,9 @@ RadGridView has two public methods available for printing - __Print()__ and
 
 {{endregion}} 
 
-
-
-
 ![gridview-printing-support 001](images/gridview-printing-support001.png)
 
-The other available method is __PrintPreview())__, which opens
-          [RadPrintPreviewDialog.]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%})#_[C#]_
-
-	
-
-
+The other available method is __PrintPreview())__, which opens [RadPrintPreviewDialog.]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%})
 
 {{source=..\SamplesCS\GridView\Printing support\PrintingSupport.cs region=PrintPreview}} 
 {{source=..\SamplesVB\GridView\Printing support\PrintingSupport.vb region=PrintPreview}} 
@@ -90,8 +66,5 @@ The other available method is __PrintPreview())__, which opens
 ````
 
 {{endregion}} 
-
-
-
 
 ![gridview-printing-support 002](images/gridview-printing-support002.png)

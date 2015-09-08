@@ -1,9 +1,9 @@
 ---
-title: Save and Load Layout Overview
-page_title: Overview | UI for WinForms Documentation
-description: Overview
+title: Save and Load Layout
+page_title: Save and Load Layout | UI for WinForms Documentation
+description: Save and Load Layout
 slug: winforms/gridview/save-and-load-layout/overview
-tags: overview
+tags: save-and-load-layout
 published: True
 position: 0
 ---
@@ -16,11 +16,9 @@ position: 0
 
 Save/Load layout functionality gives your applications the opportunity to preserve user grid settings such as column order and restore them later. Those layout settings are written in a xml file.
 
-Here is a sample demonstrating how you can implement a *Save Layout* button event handler:#_[C#] Save layout_
+Here is a sample demonstrating how you can implement a *Save Layout* button event handler:
 
-	
-
-
+#### Save layout
 
 {{source=..\SamplesCS\GridView\SaveLoadLayout\SaveLoadLayoutOverview.cs region=saveLayout}} 
 {{source=..\SamplesVB\GridView\SaveLoadLayout\SaveLoadLayoutOverview.vb region=saveLayout}} 
@@ -55,14 +53,9 @@ Here is a sample demonstrating how you can implement a *Save Layout* button even
 
 {{endregion}} 
 
+The code snippets below demonstrates how you can implement a *Load Layout* button event handler: 
 
-
-
-The code snippets below demonstrates how you can implement a *Load Layout* button event handler: #_[C#] Load layout_
-
-	
-
-
+#### Load layout
 
 {{source=..\SamplesCS\GridView\SaveLoadLayout\SaveLoadLayoutOverview.cs region=loadLayout}} 
 {{source=..\SamplesVB\GridView\SaveLoadLayout\SaveLoadLayoutOverview.vb region=loadLayout}} 
@@ -96,9 +89,6 @@ The code snippets below demonstrates how you can implement a *Load Layout* butto
 ````
 
 {{endregion}} 
-
-
-
 
 >note Once the layout is being loaded the __LayoutLoaded__ event is being thrown in order to notify that the load process is being finished.
 >

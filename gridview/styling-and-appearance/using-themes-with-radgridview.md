@@ -14,29 +14,24 @@ position: 1
 
 ## 
 
-Use the __ThemeName__property to select a theme to alter the visual style for the entire grid. You can design your own themes using Visual Style Builder or select from one of the predefined themes: 
+Use the __ThemeName__ property to select a theme to alter the visual style for the entire grid. You can design your own themes using Visual Style Builder or select from one of the predefined themes: 
 
+ControlDefault<br>![gridview-styling-and-appearance-using-themes-with-radgridview 001](images/gridview-styling-and-appearance-using-themes-with-radgridview001.png)
 
+Office2010<br>![gridview-styling-and-appearance-using-themes-with-radgridview 002](images/gridview-styling-and-appearance-using-themes-with-radgridview002.png)
 
-ControlDefault![gridview-styling-and-appearance-using-themes-with-radgridview 001](images/gridview-styling-and-appearance-using-themes-with-radgridview001.png)
+Breeze<br>![gridview-styling-and-appearance-using-themes-with-radgridview 003](images/gridview-styling-and-appearance-using-themes-with-radgridview003.png)
 
-Office2010![gridview-styling-and-appearance-using-themes-with-radgridview 002](images/gridview-styling-and-appearance-using-themes-with-radgridview002.png)
+Windows 7<br>![gridview-styling-and-appearance-using-themes-with-radgridview 004](images/gridview-styling-and-appearance-using-themes-with-radgridview004.png)
 
-Breeze
->caption 
+Aqua<br>![gridview-styling-and-appearance-using-themes-with-radgridview 005](images/gridview-styling-and-appearance-using-themes-with-radgridview005.png)
 
-![gridview-styling-and-appearance-using-themes-with-radgridview 003](images/gridview-styling-and-appearance-using-themes-with-radgridview003.png)
+BreezeExtended<br>![gridview-styling-and-appearance-using-themes-with-radgridview 006](images/gridview-styling-and-appearance-using-themes-with-radgridview006.png)
 
-Windows 7![gridview-styling-and-appearance-using-themes-with-radgridview 004](images/gridview-styling-and-appearance-using-themes-with-radgridview004.png)
+Desert<br>![gridview-styling-and-appearance-using-themes-with-radgridview 007](images/gridview-styling-and-appearance-using-themes-with-radgridview007.png)
 
-Aqua![gridview-styling-and-appearance-using-themes-with-radgridview 005](images/gridview-styling-and-appearance-using-themes-with-radgridview005.png)
+Telerik<br>![gridview-styling-and-appearance-using-themes-with-radgridview 008](images/gridview-styling-and-appearance-using-themes-with-radgridview008.png)
 
-BreezeExtended![gridview-styling-and-appearance-using-themes-with-radgridview 006](images/gridview-styling-and-appearance-using-themes-with-radgridview006.png)
+Office2007Silver<br>![gridview-styling-and-appearance-using-themes-with-radgridview 009](images/gridview-styling-and-appearance-using-themes-with-radgridview009.png)
 
-Desert![gridview-styling-and-appearance-using-themes-with-radgridview 007](images/gridview-styling-and-appearance-using-themes-with-radgridview007.png)
-
-Telerik![gridview-styling-and-appearance-using-themes-with-radgridview 008](images/gridview-styling-and-appearance-using-themes-with-radgridview008.png)
-
-Office2007Silver![gridview-styling-and-appearance-using-themes-with-radgridview 009](images/gridview-styling-and-appearance-using-themes-with-radgridview009.png)
-
-Office2007Black![gridview-styling-and-appearance-using-themes-with-radgridview 010](images/gridview-styling-and-appearance-using-themes-with-radgridview010.png)
+Office2007Black<br>![gridview-styling-and-appearance-using-themes-with-radgridview 010](images/gridview-styling-and-appearance-using-themes-with-radgridview010.png)

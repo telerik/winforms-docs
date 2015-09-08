@@ -279,9 +279,7 @@ The following events provide information about the state of the export operation
 
 This example will demonstrate how the async spread export feature can be combined with a __RadProgressBar__ control to deliver better user experience.
         
->caption Fig.1 Exporting Data Asynchronously
-
-![gridview-exporting-data-async-spread-export 001](images/gridview-exporting-data-async-spread-export001.gif)
+>caption Fig.1 Exporting Data Asynchronously<br>![gridview-exporting-data-async-spread-export 001](images/gridview-exporting-data-async-spread-export001.gif)
 
 1\. Bind __RadGridView__ and define initial settings.
 

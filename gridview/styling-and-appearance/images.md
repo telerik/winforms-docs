@@ -24,11 +24,9 @@ RadGridView displays several images to indicate the status of a row:
 
 ## Changing the images programmatically
 
-You can change the images using the properties shown below:#_[C#] Changing the current row image_
+You can change the images using the properties shown below:
 
-	
-
-
+#### Changing the current row image
 
 {{source=..\SamplesCS\GridView\StylingAndAppearance\ChangingTheCurrentRowIndicator.cs region=changeTheCurrentRowImage}} 
 {{source=..\SamplesVB\GridView\StylingAndAppearance\ChangingTheCurrentRowIndicator.vb region=changeTheCurrentRowImage}} 
@@ -49,18 +47,11 @@ You can change the images using the properties shown below:#_[C#] Changing the c
 
 {{endregion}} 
 
-
-
-
-
-
 ## Setting an image in a column header
 
-The following code snippet demonstrates how to set an image for a certain column:#_[C#] Set an image in a column header_
+The following code snippet demonstrates how to set an image for a certain column:
 
-	
-
-
+#### Set an image in a column header
 
 {{source=..\SamplesCS\GridView\StylingAndAppearance\ChangingTheCurrentRowIndicator.cs region=setColumnHeaderImage}} 
 {{source=..\SamplesVB\GridView\StylingAndAppearance\ChangingTheCurrentRowIndicator.vb region=setColumnHeaderImage}} 

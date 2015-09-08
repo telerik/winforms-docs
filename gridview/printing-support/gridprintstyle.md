@@ -5,50 +5,36 @@ description: GridPrintStyle
 slug: winforms/gridview/printing-support/gridprintstyle
 tags: gridprintstyle
 published: True
-position: 0
+position: 1
 ---
 
 # GridPrintStyle
 
 
 
-You can customize the settings of the grid print job by setting the __PrintStyle__
-        property of the RadGridView to a new instance of the __GridPrintStyle__ class
-        or editing the current one. The available properties are:
-      
+You can customize the settings of the grid print job by setting the __PrintStyle__ property of the RadGridView to a new instance of the __GridPrintStyle__ class or editing the current one. The available properties are:
 
 * __PrintGrouping__ – determines if grouping will be printed.
-          
 
 * __PrintSummaries__ – determines if summary rows will be printed.
-          
 
 * __PrintHiddenRows__ – determines if hidden rows will be printed.
-          
 
 * __PrintHiddenColumns__ – determines if hidden columns will be printed.
-          
 
 * __PrintHeaderOnEachPage__ – determines if header cells will be printed on each page.
-          
 
-* __FitWidthMode__ – determines how the RadGridView will be positioned
-            on the page. There are three possible settings for this property:
-          
+* __FitWidthMode__ – determines how the RadGridView will be positioned on the page. There are three possible settings for this property:
 
-* NoFit – the grid is aligned to the left and its size is not changed
+    * NoFit – the grid is aligned to the left and its size is not changed
 
-* NoFitCentered – the grid is center aligned and its size is not changed
+    * NoFitCentered – the grid is center aligned and its size is not changed
 
-* FitPageWidth – the grid is resized, keeping the columns width ratios, so it would fill the whole page.
+    * FitPageWidth – the grid is resized, keeping the columns width ratios, so it would fill the whole page.
 
-* You can also set the header cells font, data cells font, group cells font and summary cells font.
+    * You can also set the header cells font, data cells font, group cells font and summary cells font.
 
-## Customizing GridPrintStyle#_[C#]_
-
-	
-
-
+## Customizing GridPrintStyle
 
 {{source=..\SamplesCS\GridView\Printing support\GridPrintStyle1.cs region=PrintStyle}} 
 {{source=..\SamplesVB\GridView\Printing support\GridPrintStyle1.vb region=PrintStyle}} 
@@ -83,17 +69,11 @@ You can customize the settings of the grid print job by setting the __PrintStyle
 
 {{endregion}} 
 
-
 ![gridview-printing-support-gridprintstyle](images/gridview-printing-support-gridprintstyle.png)
 
 ## Multi-page printing
 
 Multi-page printing is supported for grids with ViewDefinition set to TableViewDefinition. To enable the functionality you should define the collection of columns each page will contain. For this purpose you can use the PrintPages collection of the TableViewDefinitionPrintRenderer. The PrintPages collection contains collections of columns, each representing a separate page. Here is an example which assumes the grid has 10 columns:
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\GridView\Printing support\GridPrintStyle1.cs region=MultiPagePrintingPrintStyle}} 
 {{source=..\SamplesVB\GridView\Printing support\GridPrintStyle1.vb region=MultiPagePrintingPrintStyle}} 
@@ -124,9 +104,6 @@ Multi-page printing is supported for grids with ViewDefinition set to TableViewD
 
 {{endregion}} 
 
-
-
-
 This code defines four pages where the content of the pages is as follows:
 
 * Page 1 will contain the grid columns at indexes 0, 2 and 5.
@@ -139,7 +116,5 @@ This code defines four pages where the content of the pages is as follows:
             
 
 * Page 4 will contain the grid columns at indexes 3, 4 and 6.
-            
 
-You should note that one column can appear on several pages. Here is the result of the above code when previewed in the PrintPreviewDialog:
-        ![gridview-printing-support-gridprintstyle 002](images/gridview-printing-support-gridprintstyle002.png)
+You should note that one column can appear on several pages. Here is the result of the above code when previewed in the PrintPreviewDialog:<br>![gridview-printing-support-gridprintstyle 002](images/gridview-printing-support-gridprintstyle002.png)

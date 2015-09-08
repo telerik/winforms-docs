@@ -24,12 +24,11 @@ To begin editing using the mouse:
 
 To edit using the keyboard:
 
-* Depending of the value of __RadGridView.BeginEditMode__property,
-            start editing by pressing __F2, Enter__or by any __keystroke__.
+* Depending of the value of __RadGridView.BeginEditMode__property, start editing by pressing __F2, Enter__or by any __keystroke__.
 
 * Press __Escape__ to cancel editing or __Enter__ to confirm the new value.
 
-* While in edit mode, use __Tab__and __Shift-Tab__ to navigate to the next and previous cells of the current row. 
+* While in edit mode, use __Tab__ and __Shift-Tab__ to navigate to the next and previous cells of the current row. 
 
 * Use the __arrow keys__ to change the current row.
 
