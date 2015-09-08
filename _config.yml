@@ -275,21 +275,24 @@ navigation:
     richtextbox:
         title: RichTextBox (obsolote)
         position: 38
-    "richtextbox/features":
+    richtextbox/features:
         title: Features
         position: 2 
-    "richtexteditor":
+    richtexteditor:
         title: RichTextEditor
         position: 39  		
     richtexteditor/getting-started:
         title: Getting Started
         position: 2   
-    richtexteditor/document-elements:
+    richtexteditor/document_elements:
         title: Document Elements
         postion: 4
     richtexteditor/document-elements/annotations:		
         title: Annotations
         position: 8
+    richtexteditor/features:
+        title: Features
+        postion: 5
     richtexteditor/features/styles:
         title: Styles
         position: 13
@@ -299,9 +302,6 @@ navigation:
     richtexteditor/features/references:
         title: References
         position: 18
-    richtexteditor/features:
-        title: Features
-        postion: 5
     richtexteditor/import:
         title: Import/Export
         postion: 6
@@ -359,9 +359,6 @@ navigation:
     scheduler/print-support:
         title: Print Support
         position: 14
-    scheduler:
-        title: Scheduler
-        position: 41
     shortcuts:
         title: Shortcuts
         position: 42
@@ -422,6 +419,21 @@ navigation:
     track-and-status-controls:
         title: Track and Status controls
         position: 46
+    track-and-status-controls/progressbar:
+        title: ProgressBar
+        position: 0
+    track-and-status-controls/scrollbar:
+        title: ScrollBar
+        position: 1
+    track-and-status-controls/trackbar:
+        title: TrackBar
+        position: 2
+    track-and-status-controls/waitingbar:
+        title: WaitingBar
+        position: 4
+    track-and-status-controls/rating:
+        title: Raiting
+        position: 5
     treeview:
         title: TreeView
         position: 47

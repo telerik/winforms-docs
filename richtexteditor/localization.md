@@ -5,7 +5,7 @@ description: Localization
 slug: winforms/richtexteditor-/localization
 tags: localization
 published: True
-position: 11
+position: 12
 ---
 
 # Localization

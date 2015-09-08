@@ -5,7 +5,7 @@ description: Getting Started
 slug: winforms/track-and-status-controls/waitingbar/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
@@ -16,49 +16,23 @@ position: 0
 
 This tutorial illustrates how to start and stop the animation of RadWaitingBar.
 
+1. Place a RadWaitingBar control and a RadButton control on a form.
 
+1. Select the RadWaitingBar control.
 
+1. In the Properties window set the WaitingDirection property to Bottom.
 
-1. 
+1. Resize the RadWaitingBar so that its height is larger than its width.
 
-Place a RadWaitingBar control and a RadButton control on a form.
+1. Select the RadButton control.
 
-1. 
+1. Set the Text property to Start.
 
-Select the RadWaitingBar control.
+1. In the Properties window click the events button.
 
-1. 
+1. Double-click the Click event.
 
-In the Properties window set the WaitingDirection property to Bottom.
-
-1. 
-
-Resize the RadWaitingBar so that its height is larger than its width.
-
-1. 
-
-Select the RadButton control.
-
-1. 
-
-Set the Text property to Start.
-
-1. 
-
-In the Properties window click the events button.
-
-1. 
-
-Double-click the Click event.
-
-1. 
-
-Replace the automatically-generated event handler with this code:
-     #_[C#]_
-
-	
-
-
+1. Replace the automatically-generated event handler with this code:
 
 {{source=..\SamplesCS\TrackAndStatus\WaitingBar\WaitingGettingStarted.cs region=click}} 
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\WaitingGettingStarted.vb region=click}} 
@@ -93,14 +67,11 @@ Replace the automatically-generated event handler with this code:
 
 {{endregion}} 
 
-
-
-
-1. 
+10\. 
 
 Press __F5__ to run the project.
 
-1. 
+11\. 
 
 Click the Start button to start and stop the animation.
 

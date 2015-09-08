@@ -5,21 +5,14 @@ description: Customization
 slug: winforms/track-and-status-controls/rating/customization
 tags: customization
 published: True
-position: 4
+position: 5
 ---
 
 # Customization
 
-
-
 ## Hover, selected and selecting Background
 
-__RadRating__ introduces an easy way to customize the item’s BackColor when hovering,
-        selecting, selected a value:#_[C#]_
-
-	
-
-
+__RadRating__ introduces an easy way to customize the item’s BackColor when hovering, selecting, selected a value:
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Background}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Background}} 
@@ -58,19 +51,11 @@ __RadRating__ introduces an easy way to customize the item’s BackColor when ho
 
 {{endregion}} 
 
-
 ![rating-customization 001](images/rating-customization001.png)![rating-customization 002](images/rating-customization002.png)
 
 ## Custom Shape
 
-By default __RadRating__ supports three main element shapes: Stars, Diamonds and Hearts.
-          If a different kind of shape is needed, __RadRating__ allows you to create and use your own custom visual
-          elements. The following example demonstrates creating a circle visual element:
-        #_[C#]_
-
-	
-
-
+By default __RadRating__ supports three main element shapes: Stars, Diamonds and Hearts. If a different kind of shape is needed, __RadRating__ allows you to create and use your own custom visual elements. The following example demonstrates creating a circle visual element:
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=CustomShape}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=CustomShape}} 
@@ -111,14 +96,7 @@ By default __RadRating__ supports three main element shapes: Stars, Diamonds and
         '
 ````
 
-{{endregion}} 
-
-
-#_[C#]_
-
-	
-
-
+{{endregion}}
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=CustomShapeClasses}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=CustomShapeClasses}} 
@@ -179,6 +157,5 @@ By default __RadRating__ supports three main element shapes: Stars, Diamonds and
 ````
 
 {{endregion}} 
-
 
 ![rating-customization 003](images/rating-customization003.png)

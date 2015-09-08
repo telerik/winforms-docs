@@ -11,7 +11,7 @@ position: 0
 # ControlSpy
 
 | RELATED VIDEOS |  |
-| ------ | ------ |
+| ------ | ------:|
 |[Introduction to RadControlSpyForm](http://tv.telerik.com/watch/winforms/utility/radcontrols-for-winforms-introduction-to-radcontrolspyr)|![tools-controlspy-overview 001](images/tools-controlspy-overview001.png)|
 
 ## 

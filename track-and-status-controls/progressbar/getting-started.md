@@ -5,12 +5,10 @@ description: Getting Started
 slug: winforms/track-and-status-controls/progressbar/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
-
-
 
 ## 
 
@@ -18,25 +16,17 @@ In this tutorial, you will use a Telerik RadProgressBar to show the progress
 of a long-running operation. The long-running operation is simulated with a
 Timer control.
 
-1. Place a __RadProgressBar__ control, a
-    __RadButton__ control, and a standard __Timer__
-    control on a form.
+1\. Place a __RadProgressBar__ control, a __RadButton__ control, and a standard __Timer__ control on a form.
 
-1. Set the __Timer__ control __Interval__
-    property to __50__.
+2\. Set the __Timer__ control __Interval__  property to __50__.
 
-1. In the __Properties__ window, click the events
-    button.
+3\. In the __Properties__ window, click the events button.
 
-1. Double-click the __Tick__ event.
+4\. Double-click the __Tick__ event.
 
-1. Replace the automatically-generated event handler with this code:
+5\. Replace the automatically-generated event handler with this code:
           
-            	#_[C#] Handling the Timer Tick event_
-
-	
-
-
+#### Handling the Timer Tick event
 
 {{source=..\SamplesCS\TrackAndStatus\ProgressBar\ProgressGettingStarted.cs region=tick}} 
 {{source=..\SamplesVB\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=tick}} 
@@ -69,28 +59,15 @@ Timer control.
 
 {{endregion}} 
 
+6\. In the design view of the form, select the __RadButton__ control.
 
+7\. In the __Properties__ window set the __Text__ property to "Go!".
 
+8\. In the __Properties__ window, click the events button.
 
-1. In the design view of the form, select the __RadButton__
-    control.
+9\. Double-click the __Click__ event.
 
-1. In the __Properties__ window set the __Text__
-    property to "Go!".
-
-1. In the __Properties__ window, click the events
-    button.
-
-1. Double-click the __Click__ event.
-
-1. Replace the automatically-generated event handler with this code:
-          
-          
-          #_[C#]_
-
-	
-
-
+10\. Replace the automatically-generated event handler with this code:
 
 {{source=..\SamplesCS\TrackAndStatus\ProgressBar\ProgressGettingStarted.cs region=click}} 
 {{source=..\SamplesVB\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=click}} 
@@ -110,28 +87,24 @@ Timer control.
 
 {{endregion}} 
 
+11\. In the design view of the form select the __RadProgressBar__ control.
 
+12\. Set __Dash__ to __true__.
 
+13\. Set __Text__ to an empty string.
 
-1. In the design view of the form select the
-    __RadProgressBar__ control.
+14\. Set __SeparatorColor1__ to __Yellow__.
 
-1. Set __Dash__ to __true__.
+15\. Set __SeparatorColor2__ to __Gold__.
 
-1. Set __Text__ to an empty string.
+16\. Set __SeparatorWidth__ to __6__.
 
-1. Set __SeparatorColor1__ to __Yellow__.
+17\. Set __StepWidth__ to __12__.
 
-1. Set __SeparatorColor2__ to __Gold__.
+18\. Set __SweepAngle__ to __210__.
 
-1. Set __SeparatorWidth__ to __6__.
+19\. Press __F5__ to run the project.
 
-1. Set __StepWidth__ to __12__.
+20\. Click the __Go__ Button to see the Telerik RadProgressBar animation.
 
-1. Set __SweepAngle__ to __210__.
-
-1. Press __F5__ to run the project.
-
-1. Click the __Go__ Button to see the Telerik RadProgressBar
-    animation.
-    ![track-and-status-controls-progressbar-getting-started 001](images/track-and-status-controls-progressbar-getting-started001.png)
+![track-and-status-controls-progressbar-getting-started 001](images/track-and-status-controls-progressbar-getting-started001.png)

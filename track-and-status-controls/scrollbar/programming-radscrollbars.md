@@ -5,21 +5,17 @@ description: Programming RadScrollBars
 slug: winforms/track-and-status-controls/scrollbar/programming-radscrollbars
 tags: programming,radscrollbars
 published: True
-position: 1
+position: 2
 ---
 
 # Programming RadScrollBars
-
-
 
 __RadHScrollBar__ and __RadVScrollBar__ share the same properties. The only difference between the two is that the former is displayed horizontally while the latter is displayed vertically.
 
 The most important properties are:
 
-
-
-
-
+|Property|Description|
+|-----|-----|
 | __Value__ |Gets the current value for the thumb position|
 | __Minimum__ |Gets or sets the minimum value of the control when the thumb is at the start|
 | __Maximum__ |Gets or sets the maximum value of the control when the thumb is at the end|
@@ -34,6 +30,4 @@ The most important properties are:
 
 ## Scroll Event
 
-You have to handle the __Scroll__event to track scrollbar changes. Use the __Value__property to determine the current thumb position. In general, you have to assign the negated __Value__to the Top property of the control that is to be scrolled. Please refer to [Getting Started]({%slug winforms/track-and-status-controls/scrollbar/getting-started%}) section about using this event.
-
-
+You have to handle the __Scroll__ event to track scrollbar changes. Use the __Value__ property to determine the current thumb position. In general, you have to assign the negated __Value__ to the Top property of the control that is to be scrolled. Please refer to [Getting Started]({%slug winforms/track-and-status-controls/scrollbar/getting-started%}) section about using this event.

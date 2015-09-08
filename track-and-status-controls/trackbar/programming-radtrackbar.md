@@ -5,12 +5,10 @@ description: Programming RadTrackBar
 slug: winforms/track-and-status-controls/trackbar/programming-radtrackbar
 tags: programming,radtrackbar
 published: True
-position: 2
+position: 3
 ---
 
 # Programming RadTrackBar
-
-
 
 ## Properties
 
@@ -18,11 +16,6 @@ Here are the most important RadTrackBar properties that you can use to change it
         
 
 * The __Minimum__ and __Maximum__ properties specify the lower end and upper end of the range which thumbs can scroll over.
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=minMax}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=minMax}} 
@@ -39,15 +32,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 {{endregion}} 
 
-
-
-
 * The __Value__ property sets or gets the value of the thumb in *SingleThumb* mode of RadTrackBar
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=Value}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=Value}} 
@@ -63,17 +48,11 @@ Here are the most important RadTrackBar properties that you can use to change it
 {{endregion}} 
 
 
-
-
 * The __TickStyle__ property controls whether the tick marks are drawn on one or both sides of the control.
               The default value is *Both*.
             
 
 * Setting __TickStyle__ to *None* will disable the ticks.
-                #_[C#]_
-
-	
-
 
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=tickStyleNone}} 
@@ -93,11 +72,6 @@ Here are the most important RadTrackBar properties that you can use to change it
 ![track-and-status-controls-trackbar-programming-radtrackbar 001](images/track-and-status-controls-trackbar-programming-radtrackbar001.png)![track-and-status-controls-trackbar-programming-radtrackbar 002](images/track-and-status-controls-trackbar-programming-radtrackbar002.png)
 
 * Setting __TickStyle__ to *Both* will enable ticks on both sides.
-                #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=tickStyleBoth}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=tickStyleBoth}} 
@@ -115,12 +89,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 ![track-and-status-controls-trackbar-programming-radtrackbar 003](images/track-and-status-controls-trackbar-programming-radtrackbar003.png)![track-and-status-controls-trackbar-programming-radtrackbar 004](images/track-and-status-controls-trackbar-programming-radtrackbar004.png)
 
-* Setting __TickStyle__ to *TopLeft* will show only the ticks on the top side,
-                  when the Orientation is Horizontal. If the Orientation is set to Vertical, only the ticks on the left side will be shown:
-                #_[C#]_
-
-	
-
+* Setting __TickStyle__ to *TopLeft* will show only the ticks on the top side, when the Orientation is Horizontal. If the Orientation is set to Vertical, only the ticks on the left side will be shown:
 
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=tickStyleTop}} 
@@ -139,14 +108,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 ![track-and-status-controls-trackbar-programming-radtrackbar 005](images/track-and-status-controls-trackbar-programming-radtrackbar005.png)![track-and-status-controls-trackbar-programming-radtrackbar 006](images/track-and-status-controls-trackbar-programming-radtrackbar006.png)
 
-* Setting __TickStyle__ to *BottomRight* will
-                  show only the ticks on the down side, when the Orientation is Horizontal.
-                  If the Orientation is set to Vertical, only the ticks on the right side will be shown:
-                #_[C#]_
-
-	
-
-
+* Setting __TickStyle__ to *BottomRight* will show only the ticks on the down side, when the Orientation is Horizontal. If the Orientation is set to Vertical, only the ticks on the right side will be shown:
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=tickStyleBottom}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=tickStyleBottom}} 
@@ -164,14 +126,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 ![track-and-status-controls-trackbar-programming-radtrackbar 007](images/track-and-status-controls-trackbar-programming-radtrackbar007.png)![track-and-status-controls-trackbar-programming-radtrackbar 008](images/track-and-status-controls-trackbar-programming-radtrackbar008.png)
 
-* The __Orientation__ property can be set to __Horizontal__ or __Vertical__
-              to determine the overall orientation of the control. The default value is *Horizontal*, but if you set it
-              to *Vertical*, you will get the following result:
-            #_[C#]_
-
-	
-
-
+* The __Orientation__ property can be set to __Horizontal__ or __Vertical__ to determine the overall orientation of the control. The default value is *Horizontal*, but if you set it to *Vertical*, you will get the following result:
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=orientationVertical}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=orientationVertical}} 
@@ -189,15 +144,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 ![track-and-status-controls-trackbar-programming-radtrackbar 009](images/track-and-status-controls-trackbar-programming-radtrackbar009.png)
 
-* The __LargeChange__ property sets the change in value that one click of the mouse outside of the slider makes.
-              Let's say that the position of your thumb is at the beginning of the RadTrackBar (at position 0), the value of this property is
-              *5* and you click on tick number 14. The thumb will reposition itself to tick number *5*,
-              following the step determined by the __LargeChange__ property. However, if the __LargeChange__
-              has value 0, the thumb will move to position 14.
-            #_[C#]_
-
-	
-
+* The __LargeChange__ property sets the change in value that one click of the mouse outside of the slider makes.  Let's say that the position of your thumb is at the beginning of the RadTrackBar (at position 0), the value of this property is *5* and you click on tick number 14. The thumb will reposition itself to tick number *5*, following the step determined by the __LargeChange__ property. However, if the __LargeChange__  has value 0, the thumb will move to position 14.
 
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=largeChange}} 
@@ -213,16 +160,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 {{endregion}} 
 
-
-
-
-* The __TextOrientation__ property controls the orientation of the associated texts, whether they should appear
-              horizontally or vertically.  The default value is Horizontal, here is how to change it to vertical:
-            #_[C#]_
-
-	
-
-
+* The __TextOrientation__ property controls the orientation of the associated texts, whether they should appear horizontally or vertically.  The default value is Horizontal, here is how to change it to vertical:
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=textorientation}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=textorientation}} 
@@ -237,17 +175,11 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 {{endregion}} 
 
-
 ![track-and-status-controls-trackbar-programming-radtrackbar 010](images/track-and-status-controls-trackbar-programming-radtrackbar010.png)
 
 * The __LabelStyle__ property controls whether the labels should be drawn. The default value is None.
-            
 
 * __Both__ - will show the labels on both sides
-                #_[C#]_
-
-	
-
 
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=labelsStyleBoth}} 
@@ -266,13 +198,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 ![track-and-status-controls-trackbar-programming-radtrackbar 011](images/track-and-status-controls-trackbar-programming-radtrackbar011.png)
 
-* __TopLeft__ - will show only the labels on the top side, when the Orientation is Horizontal.
-                  If the Orientation is set to Vertical, only the labels on the left side will be shown:
-                #_[C#]_
-
-	
-
-
+* __TopLeft__ - will show only the labels on the top side, when the Orientation is Horizontal. If the Orientation is set to Vertical, only the labels on the left side will be shown:
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=labelsStyleTopLeft}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=labelsStyleTopLeft}} 
@@ -290,12 +216,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 ![track-and-status-controls-trackbar-programming-radtrackbar 012](images/track-and-status-controls-trackbar-programming-radtrackbar012.png)
 
-* __BottomRight__ - will show only the labels on the bottom side, when the Orientation is Horizontal.
-                  If the Orientation is set to Vertical, only the labels on the right side will be shown:
-                #_[C#]_
-
-	
-
+* __BottomRight__ - will show only the labels on the bottom side, when the Orientation is Horizontal.  If the Orientation is set to Vertical, only the labels on the right side will be shown:
 
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=labelsStyleBottomRight}} 
@@ -314,13 +235,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 ![track-and-status-controls-trackbar-programming-radtrackbar 013](images/track-and-status-controls-trackbar-programming-radtrackbar013.png)
 
-* The __ShowButtons__ property controls the visibility of the navigation buttons in RadTrackBar.
-              By default these buttons are not displayed. To show them, set the property to true.
-            #_[C#]_
-
-	
-
-
+* The __ShowButtons__ property controls the visibility of the navigation buttons in RadTrackBar. By default these buttons are not displayed. To show them, set the property to true.
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=ShowButtons}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=ShowButtons}} 
@@ -339,11 +254,6 @@ Here are the most important RadTrackBar properties that you can use to change it
 ![track-and-status-controls-trackbar-programming-radtrackbar 014](images/track-and-status-controls-trackbar-programming-radtrackbar014.png)
 
 * The __LargeTickFrequency__ property sets the spacing between the large tick marks. The default value is 5.
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=LargeTickFrequency}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=LargeTickFrequency}} 
@@ -362,11 +272,6 @@ Here are the most important RadTrackBar properties that you can use to change it
 ![track-and-status-controls-trackbar-programming-radtrackbar 015](images/track-and-status-controls-trackbar-programming-radtrackbar015.png)
 
 * The __SmallTickFrequency__ property sets the spacing between the small tick marks. The default value is 1.
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=SmallTickFrequency}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=SmallTickFrequency}} 
@@ -384,15 +289,10 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 ![track-and-status-controls-trackbar-programming-radtrackbar 016](images/track-and-status-controls-trackbar-programming-radtrackbar016.png)
 
-* The __TrackBarMode__ property determinates in which mode the control will operate.
-              Each [mode]({%slug winforms/track-and-status-controls/trackbar/modes%}) has different functionality and behavior.
+* The __TrackBarMode__ property determinates in which mode the control will operate.  Each [mode]({%slug winforms/track-and-status-controls/trackbar/modes%}) has different functionality and behavior.
             
 
-* __SingleThumb__#_[C#]_
-
-	
-
-
+* __SingleThumb__
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=TrackBarModeSingleThumb}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=TrackBarModeSingleThumb}} 
@@ -410,11 +310,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 ![track-and-status-controls-trackbar-programming-radtrackbar 017](images/track-and-status-controls-trackbar-programming-radtrackbar017.png)
 
-* __StartFromTheBeggining__#_[C#]_
-
-	
-
-
+* __StartFromTheBeggining__
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=TrackBarModeStartFromTheBeginning}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=TrackBarModeStartFromTheBeginning}} 
@@ -436,11 +332,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 ![track-and-status-controls-trackbar-programming-radtrackbar 018](images/track-and-status-controls-trackbar-programming-radtrackbar018.png)
 
-* __Range__#_[C#]_
-
-	
-
-
+* __Range__
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=TrackBarModeRange}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=TrackBarModeRange}} 
@@ -461,17 +353,9 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 {{endregion}} 
 
-
 ![track-and-status-controls-trackbar-programming-radtrackbar 019](images/track-and-status-controls-trackbar-programming-radtrackbar019.png)
 
-* The __SnapMode__ property controls the way the thumb is moving in RadTrackBar.
-              When this property is set to *SnapToTicks* the thumb is moving only at tick positions.
-              When the value is set to __None__ the slider is moving freely.
-            #_[C#]_
-
-	
-
-
+* The __SnapMode__ property controls the way the thumb is moving in RadTrackBar. When this property is set to *SnapToTicks* the thumb is moving only at tick positions.  When the value is set to __None__ the slider is moving freely.
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=SnapModeOff}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=SnapModeOff}} 
@@ -484,17 +368,11 @@ Here are the most important RadTrackBar properties that you can use to change it
         '
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![track-and-status-controls-trackbar-programming-radtrackbar 020](images/track-and-status-controls-trackbar-programming-radtrackbar020.png)
 
 * The __ThumbSize__ property sets the size of the thumbs.
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=ThumbSize}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=ThumbSize}} 
@@ -512,13 +390,7 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 ![track-and-status-controls-trackbar-programming-radtrackbar 021](images/track-and-status-controls-trackbar-programming-radtrackbar021.png)
 
-* The __ShowSlideArea__ property controls whether the line down the middle of the
-              control where the slider rides is drawn. The default value is *true*. Setting it
-              to false will produce the following result:
-            #_[C#]_
-
-	
-
+* The __ShowSlideArea__ property controls whether the line down the middle of the control where the slider rides is drawn. The default value is *true*. Setting it to false will produce the following result:
 
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=showSlideAreaFalse}} 
@@ -541,17 +413,10 @@ Here are the most important RadTrackBar properties that you can use to change it
 
 There are several events that you will find useful in the context of RadTrackBar:
 
-* __ValueChanged__ event is fired after the user drags
-              the thumb and __drops__ it somewhere on the slider area, or when the __Value__ property is set.
-              In this event, you can get the value of RadTrackBar from its __Value__ property.
+* __ValueChanged__ event is fired after the user drags  the thumb and __drops__ it somewhere on the slider area, or when the __Value__ property is set. In this event, you can get the value of RadTrackBar from its __Value__ property.
             
 
 * __LableFormatting__ event is used to formatt the labels.
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=TickFormattingEvent}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=TickFormattingEvent}} 
@@ -574,11 +439,6 @@ There are several events that you will find useful in the context of RadTrackBar
 ![track-and-status-controls-trackbar-programming-radtrackbar 023](images/track-and-status-controls-trackbar-programming-radtrackbar023.png)
 
 * __TickFormatting__ event is used format the ticks. For example, the code sample below changes the color of the ticks to red:
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=LabelFormattingEvent}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=LabelFormattingEvent}} 
@@ -596,6 +456,5 @@ There are several events that you will find useful in the context of RadTrackBar
 ````
 
 {{endregion}} 
-
 
 ![track-and-status-controls-trackbar-programming-radtrackbar 024](images/track-and-status-controls-trackbar-programming-radtrackbar024.png)

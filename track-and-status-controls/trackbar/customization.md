@@ -5,23 +5,14 @@ description: Customization
 slug: winforms/track-and-status-controls/trackbar/customization
 tags: customization
 published: True
-position: 4
+position: 5
 ---
 
 # Customization
 
-
-
 ## 
 
-RadTrackBar introduces TickFormatting and LableFormatting events in order to facilitate the standard customization through the element tree of the control.
-          Below you will find a scenario that will increase your knowledge about RadTrackBar's API. Basically, we will customize RadTrackBar to use it as a 
-          selection tool for dates in a month:
-        #_[C#]_
-
-	
-
-
+RadTrackBar introduces TickFormatting and LableFormatting events in order to facilitate the standard customization through the element tree of the control. Below you will find a scenario that will increase your knowledge about RadTrackBar's API. Basically, we will customize RadTrackBar to use it as a  selection tool for dates in a month:
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarCustomization.cs region=calendarExample}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarCustomization.vb region=calendarExample}} 
@@ -139,7 +130,6 @@ RadTrackBar introduces TickFormatting and LableFormatting events in order to fac
     End Sub
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![track-and-status-controls-trackbar-customization 001](images/track-and-status-controls-trackbar-customization001.png)

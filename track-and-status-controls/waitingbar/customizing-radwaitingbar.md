@@ -5,37 +5,18 @@ description: Customizing RadWaitingBar
 slug: winforms/track-and-status-controls/waitingbar/customizing-radwaitingbar
 tags: customizing,radwaitingbar
 published: True
-position: 4
+position: 5
 ---
 
 # Customizing RadWaitingBar
 
 
-
-RadWaitingBar introduces rich API which allows you to easily customize 
-      the visual appearance of RadWaitingBar programmatically. Below you will find scenarios that
-      will increase your knowledge about RadWaitingBar's API, hence you will be able to
-      customize it according to your requirements.      
+RadWaitingBar introduces rich API which allows you to easily customize  the visual appearance of RadWaitingBar programmatically. Below you will find scenarios that will increase your knowledge about RadWaitingBar's API, hence you will be able to customize it according to your requirements.      
       
 
 ## How to customize the text of RadWaitingBar
 
-The text of RadWaitingBar is not displayed by default. To show the text, set the 
-        __ShowText__ property of RadWaitingBar to true.
-        To change the text content, use the
-        __Text__ property of RadWaitingBar. To customize the text orientation,
-        set the
-        __AngleTransform__ property of the RadWaitingBarElement.TextElement. 
-        To modify the text position,
-        change the __TextAlignment__ property of RadWaitingBarElement.TextElement.        
-        Here is a sample snippet:                 
-			
-
-#_[C#]_
-
-	
-
-
+The text of RadWaitingBar is not displayed by default. To show the text, set the __ShowText__ property of RadWaitingBar to true.  To change the text content, use the __Text__ property of RadWaitingBar. To customize the text orientation, set the __AngleTransform__ property of the RadWaitingBarElement.TextElement. To modify the text position, change the __TextAlignment__ property of RadWaitingBarElement.TextElement. Here is a sample snippet:
 
 {{source=..\SamplesCS\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.cs region=text}} 
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=text}} 
@@ -56,24 +37,11 @@ The text of RadWaitingBar is not displayed by default. To show the text, set the
 
 {{endregion}} 
 
-
-
-
 ![track-and-status-controls-waitingbar-customizing-radwaitingbar 001](images/track-and-status-controls-waitingbar-customizing-radwaitingbar001.png)
 
 ## How to customize RadWaitingBar’s Dash style 
 
-To set the RadWaitingBar in dash style set the __WaitingStyle__
-        property to __Dash__.
-        To customize the appearance of the stripes-pattern, you need to access
-        the RadWaitingBarElement.SeparatorElement. Here is a sample scenario:                         
-			 
-
-#_[C#]_
-
-	
-
-
+To set the RadWaitingBar in dash style set the __WaitingStyle__ property to __Dash__.  To customize the appearance of the stripes-pattern, you need to access the RadWaitingBarElement.SeparatorElement. Here is a sample scenario:
 
 {{source=..\SamplesCS\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.cs region=dash}} 
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=dash}} 
@@ -104,23 +72,11 @@ To set the RadWaitingBar in dash style set the __WaitingStyle__
 
 {{endregion}} 
 
-
-
-
 ![track-and-status-controls-waitingbar-customizing-radwaitingbar 002](images/track-and-status-controls-waitingbar-customizing-radwaitingbar002.png)
 
 ## How to set Dash style only for the waiting indicators
 
-The waiting indicators also support dash style. To customize the appearance of
-        the indicators’ stripes-pattern, you need to access the SeparatorElements of all indicators.
-        By default, the Indicators collection contains two indicators. Here is a sample scenario:
-			 
-
-#_[C#]_
-
-	
-
-
+The waiting indicators also support dash style. To customize the appearance of the indicators’ stripes-pattern, you need to access the SeparatorElements of all indicators. By default, the Indicators collection contains two indicators. Here is a sample scenario:
 
 {{source=..\SamplesCS\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.cs region=waitingIndicators}} 
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=waitingIndicators}} 
@@ -183,23 +139,11 @@ The waiting indicators also support dash style. To customize the appearance of
 
 {{endregion}} 
 
-
-
-
 ![track-and-status-controls-waitingbar-customizing-radwaitingbar 003](images/track-and-status-controls-waitingbar-customizing-radwaitingbar003.png)
 
 ## How to customize the shape of RadWatingBar
 
-Different shapes can be applied to both the WaitingBarElement and 
-        the waiting indicator. In the following example
-        the WaitingBarElement and the waiting indicator have elliptical shape:        
-         	  
-
-#_[C#]_
-
-	
-
-
+Different shapes can be applied to both the WaitingBarElement and the waiting indicator. In the following example the WaitingBarElement and the waiting indicator have elliptical shape:
 
 {{source=..\SamplesCS\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.cs region=shape}} 
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=shape}} 
@@ -221,8 +165,5 @@ Different shapes can be applied to both the WaitingBarElement and
 ````
 
 {{endregion}} 
-
-
-
 
 ![track-and-status-controls-waitingbar-customizing-radwaitingbar 004](images/track-and-status-controls-waitingbar-customizing-radwaitingbar004.png)

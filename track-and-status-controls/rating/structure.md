@@ -10,8 +10,6 @@ position: 0
 
 # Structure
 
-
-
 ## ![rating-structure 001](images/rating-structure001.png)
 
 1. Caption Element (Light Visual Element) 

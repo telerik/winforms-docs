@@ -11,22 +11,17 @@ position: 1
 # Getting Started
 
 
-
-## 
-
 Below are the basic steps needed to get started with __RadRating__ control in Visual Studio:
 
-1. Drag __RadRating__ from the Visual Studio Toolbox to the form.![rating-getting-started 001](images/rating-getting-started001.png)
+1. Drag __RadRating__ from the Visual Studio Toolbox to the form.
+
+    ![rating-getting-started 001](images/rating-getting-started001.png)
 
 1. Set the *Caption* to “The best movie ever”.
 
 1. Set the *SelctionMode* to “HalfItem”.
 
-1. In the code behind subscribe to the *ValueChanged* event, where you can calculate and display the average rating:#_[C#]_
-
-	
-
-
+1. In the code behind subscribe to the *ValueChanged* event, where you can calculate and display the average rating:
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=GettingStarted}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=GettingStarted}} 
@@ -85,7 +80,6 @@ Below are the basic steps needed to get started with __RadRating__ control in Vi
 
 {{endregion}} 
 
+5\. Press F5 to run the application.
 
-
-
-1. Press F5 to run the application.![rating-getting-started 002](images/rating-getting-started002.png)
+![rating-getting-started 002](images/rating-getting-started002.png)

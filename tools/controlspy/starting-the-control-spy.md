@@ -10,7 +10,7 @@ position: 2
 
 # Starting the Control Spy
 
-To start the Control Spy, create and display a new instance of the __RadControlSpyForm__contained in the Control Spy library:
+To start the Control Spy, create and display a new instance of the __RadControlSpyForm__ contained in the Control Spy library:
 
 #### Using RadControlSpy
 

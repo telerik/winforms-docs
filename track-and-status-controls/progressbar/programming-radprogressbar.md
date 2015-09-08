@@ -14,7 +14,7 @@ position: 1
 
 ## 
 
-You can customize the look of __RadProgressBar__through a rich set of properties:
+You can customize the look of __RadProgressBar__ through a rich set of properties:
         
 
 * __Dash__ and __Hatch__ properties control the drawing style of the active portion of the progress bar. If __Dash__ is set to __False__ (whatever the __Hatch__ setting), the active portion of the progress bar will be drawn in a solid color set by the __BackColor__ property. If __Dash__ is set to __True__ and __Hatch__ is set to __False__, the active portion of the progress bar will be draw in a striped pattern. The stripes will fade from the __Separator1__ color to the __Separator2__ color. If __Dash__ is set to __True__ and __Hatch__ is set to __True__, the active portion of the progress bar will be drawn in a cross-hatched pattern. The cross hatches will fade from the __Separator1__ color to the __Separator2__ color.

@@ -5,12 +5,10 @@ description: Getting Started
 slug: winforms/track-and-status-controls/trackbar/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
-
-
 
 ## 
 
@@ -36,11 +34,6 @@ This tutorial demonstrates connecting a RadTrackBar to a RadTextBox control. Se
             
 
 1. Replace the automatically-generated event handler with the following code:
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackGettingStarted.cs region=valueChanged}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackGettingStarted.vb region=valueChanged}} 
@@ -60,11 +53,8 @@ This tutorial demonstrates connecting a RadTrackBar to a RadTextBox control. Se
 
 {{endregion}} 
 
+8\. Press __F5__ to run the project.
 
+9\. Move the slider on the trackbar using the mouse. The text box will update to show the new slider position.
 
-
-1. Press __F5__ to run the project.
-            
-
-1. Move the slider on the trackbar using the mouse. The text box will update to show the new slider position.
-            ![track-and-status-controls-trackbar-getting-started 001](images/track-and-status-controls-trackbar-getting-started001.png)
+ ![track-and-status-controls-trackbar-getting-started 001](images/track-and-status-controls-trackbar-getting-started001.png)

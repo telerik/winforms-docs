@@ -5,23 +5,14 @@ description: Properties and events
 slug: winforms/track-and-status-controls/rating/properties-and-events
 tags: properties,and,events
 published: True
-position: 3
+position: 4
 ---
 
 # Properties and events
 
-
-
-
-
 ## Properties
 
-* *ShowItemToolTips* - by default __RadRating__ shows tooltips when hovering the items.
-            The user can disable this functionality by setting *ShowItemToolTips* property to False:#_[C#]_
-
-	
-
-
+* *ShowItemToolTips* - by default __RadRating__ shows tooltips when hovering the items. The user can disable this functionality by setting *ShowItemToolTips* property to False:
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=ShowItemToolTips}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=ShowItemToolTips}} 
@@ -40,12 +31,7 @@ position: 3
 
 ![rating-properties-and-events 001](images/rating-properties-and-events001.png)![rating-properties-and-events 002](images/rating-properties-and-events002.png)
 
-* *RightToLeft* - __RadRating__ supports RightToLeft functionality. It is disabled by default,
-            so you should enable it:#_[C#]_
-
-	
-
-
+* *RightToLeft* - __RadRating__ supports RightToLeft functionality. It is disabled by default, so you should enable it:
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=RightToLeft}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=RightToLeft}} 
@@ -65,11 +51,7 @@ position: 3
 
 ![rating-properties-and-events 003](images/rating-properties-and-events003.png)
 
-* *Direction* property can be used to control the hover direction. #_[C#]_
-
-	
-
-
+* *Direction* property can be used to control the hover direction.
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Direction}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Direction}} 
@@ -88,12 +70,7 @@ position: 3
 
 ![rating-properties-and-events 004](images/rating-properties-and-events004.png)
 
-* *Orientation* - the default __RadRating__ orientation is Horizontal. It is allowed to change it
-            to Vertical:#_[C#]_
-
-	
-
-
+* *Orientation* - the default __RadRating__ orientation is Horizontal. It is allowed to change it to Vertical:
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Orientation}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Orientation}} 
@@ -116,11 +93,7 @@ position: 3
 
 ![rating-properties-and-events 005](images/rating-properties-and-events005.png)
 
-* *Caption, Subcaption and Description* – specify texts for the captions of __RadRating__:#_[C#]_
-
-	
-
-
+* *Caption, Subcaption and Description* – specify texts for the captions of __RadRating__:
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Captions}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Captions}} 
@@ -143,11 +116,7 @@ position: 3
 
 ![rating-properties-and-events 002](images/rating-properties-and-events002.png)
 
-* *SelectionMode* - determines how precisely the user will select the value:#_[C#]_
-
-	
-
-
+* *SelectionMode* - determines how precisely the user will select the value:
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=SelectionPrecise}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=SelectionPrecise}} 
@@ -166,11 +135,7 @@ position: 3
 {{endregion}} 
 
 
-![rating-properties-and-events 006](images/rating-properties-and-events006.png)#_[C#]_
-
-	
-
-
+![rating-properties-and-events 006](images/rating-properties-and-events006.png)
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=SelectionHalfItem}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=SelectionHalfItem}} 
@@ -189,11 +154,7 @@ position: 3
 {{endregion}} 
 
 
-![rating-properties-and-events 007](images/rating-properties-and-events007.png)#_[C#]_
-
-	
-
-
+![rating-properties-and-events 007](images/rating-properties-and-events007.png)
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=SelectionFullItem}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=SelectionFullItem}} 
@@ -216,10 +177,6 @@ position: 3
 
 * *Minimum* and *Maximum* – specifies the range of __RadRating__:#_[C#]_
 
-	
-
-
-
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Ranges}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Ranges}} 
 
@@ -236,14 +193,9 @@ position: 3
 
 {{endregion}} 
 
-
 ![rating-properties-and-events 009](images/rating-properties-and-events009.png)![rating-properties-and-events 010](images/rating-properties-and-events010.png)
 
-* *Value* - sets or gets the value of the __RadRating__:#_[C#]_
-
-	
-
-
+* *Value* - sets or gets the value of the __RadRating__:
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Value}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Value}} 
@@ -259,9 +211,6 @@ position: 3
 ````
 
 {{endregion}} 
-
-
-
 
 ## Events
 

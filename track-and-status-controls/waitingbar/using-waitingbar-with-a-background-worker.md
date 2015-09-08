@@ -5,43 +5,22 @@ description: Using WaitingBar with a Background Worker
 slug: winforms/track-and-status-controls/waitingbar/using-waitingbar-with-a-background-worker
 tags: using,waitingbar,with,a,background,worker
 published: True
-position: 3
+position: 4
 ---
 
 # Using WaitingBar with a Background Worker
 
+RadWaitingBar is a useful control for indicating that a long-running operation is  undergoing. When using this control, however, many users face a similar issue: once the time-consuming operation is started, the control does not move its indicators and literally freezes. Such cases occur when the long-running operation is executed on the same thread as the RadWaitingBar waiting process: the primary UI Thread. The operation does not allow the form to update its UI and as a result the control does not perform any waiting animation.
 
-
-RadWaitingBar is a useful control for indicating that a long-running operation is 
-    undergoing. When using this control, however, many users face a similar issue:
-    once the time-consuming operation is started, the control does not move its
-    indicators and literally freezes. Such cases occur when the long-running operation 
-    is executed on the same thread as the RadWaitingBar waiting process: the primary UI Thread. 
-    The operation does not allow the form to update its UI and as a result the control does 
-    not perform any waiting animation.
-
-One obvious solution is to start the time-consuming operation in a new thread. 
-    The following example illustrates how to achieve this through a BackgroundWorker.
+One obvious solution is to start the time-consuming operation in a new thread. The following example illustrates how to achieve this through a BackgroundWorker.
 
 ## BackgroundWorker solution
 
-The aim of the sample application is to calculate numbers of the Fibonacci sequence. In a straight-forward scenario, the user selects the position of the Fibonacci number through a RadSpinEditor and clicks the Start RadButton to trigger the time-consuming operation. While the calculations are undergoing the RadWaitingBar smoothly animates its waiting indicators and the RadForm remains responsive. Once the number is calculated, the result is displayed and the RadWaitingBar control is stopped.
-			Below you will find snippets and comments which provide a detailed description of the sample application. Also, feel free to download the example project files appearing at the end of this tutorial. 
-			
-					 
-    		 
+The aim of the sample application is to calculate numbers of the Fibonacci sequence. In a straight-forward scenario, the user selects the position of the Fibonacci number through a RadSpinEditor and clicks the Start RadButton to trigger the time-consuming operation. While the calculations are undergoing the RadWaitingBar smoothly animates its waiting indicators and the RadForm remains responsive. Once the number is calculated, the result is displayed and the RadWaitingBar control is stopped. Below you will find snippets and comments which provide a detailed description of the sample application. Also, feel free to download the example project files appearing at the end of this tutorial. 
 
 ![track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker 001](images/track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker001.png)
 
-1. 
-
-When the form is loaded the BackgroundWorker instance should be initialized. Additionally, you should subscribe to two of its events: DoWork() and RunWorkerCompleted().
-
-#_[C#]_
-
-	
-
-
+1\. When the form is loaded the BackgroundWorker instance should be initialized. Additionally, you should subscribe to two of its events: DoWork() and RunWorkerCompleted().
 
 {{source=..\SamplesCS\TrackAndStatus\WaitingBar\BGWorkerForm.cs region=initialization}} 
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\BGWorkerForm.vb region=initialization}} 
@@ -91,18 +70,7 @@ When the form is loaded the BackgroundWorker instance should be initialized. Add
 
 {{endregion}} 
 
-
-
-
-1. 
-
-When the user clicks the Start RadButton, you should run the BackgroundWorker through the RunWorkerAsync() method and, also, start the RadWaitingBar waiting process using the StartWaiting() method.
-
-#_[C#]_
-
-	
-
-
+2\. When the user clicks the Start RadButton, you should run the BackgroundWorker through the RunWorkerAsync() method and, also, start the RadWaitingBar waiting process using the StartWaiting() method.
 
 {{source=..\SamplesCS\TrackAndStatus\WaitingBar\BGWorkerForm.cs region=startingWorker}} 
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\BGWorkerForm.vb region=startingWorker}} 
@@ -135,22 +103,11 @@ When the user clicks the Start RadButton, you should run the BackgroundWorker th
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ![track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker 002](images/track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker002.png)
 
-1. 
-
-In the DoWork event handler you should execute the time-consuming operation, i.e. calculate the required Fibonacci number.
-
-#_[C#]_
-
-	
-
-
+3\. In the DoWork event handler you should execute the time-consuming operation, i.e. calculate the required Fibonacci number.
 
 {{source=..\SamplesCS\TrackAndStatus\WaitingBar\BGWorkerForm.cs region=working}} 
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\BGWorkerForm.vb region=working}} 
@@ -206,18 +163,7 @@ In the DoWork event handler you should execute the time-consuming operation, i.e
 
 {{endregion}} 
 
-
-
-
-1. 
-
-When the long-running operation has completed, you should stop the RadWaitingBar control waiting process through the StopWaiting() method. Additionally, you should display the result to the user.
-
-#_[C#]_
-
-	
-
-
+4\. When the long-running operation has completed, you should stop the RadWaitingBar control waiting process through the StopWaiting() method. Additionally, you should display the result to the user.
 
 {{source=..\SamplesCS\TrackAndStatus\WaitingBar\BGWorkerForm.cs region=workCompleted}} 
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\BGWorkerForm.vb region=workCompleted}} 
@@ -272,9 +218,6 @@ When the long-running operation has completed, you should stop the RadWaitingBar
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ![track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker 003](images/track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker003.png)

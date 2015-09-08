@@ -5,12 +5,10 @@ description: Getting Started
 slug: winforms/track-and-status-controls/scrollbar/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
-
-
 
 ## 
 
@@ -28,10 +26,7 @@ Add another RadPanel in the already added one and set its height to the *tot
 
 ![track-and-status-controls-scroll-bar-getting-started 003](images/track-and-status-controls-scroll-bar-getting-started003.png)
 
-The next step is to add controls to the second RadPanel (the controls which are to be scrolled):#_[C#]_
-
-	
-
+The next step is to add controls to the second RadPanel (the controls which are to be scrolled):
 
 
 {{source=..\SamplesCS\TrackAndStatus\ScrollBar\ScrollGettingStarted.cs region=buttons}} 
@@ -60,19 +55,12 @@ The next step is to add controls to the second RadPanel (the controls which are 
 
 {{endregion}} 
 
-
-
-
 >note You can add controls by drag and drop at design time as well.
 >
-
 
 ![track-and-status-controls-scroll-bar-getting-started 004](images/track-and-status-controls-scroll-bar-getting-started004.png)
 
 Then subscribe to the Scroll event of the vertical scrollbar and assign its negated value to the Top property of the second RadPanel:#_[C#]_
-
-	
-
 
 
 {{source=..\SamplesCS\TrackAndStatus\ScrollBar\ScrollGettingStarted.cs region=scroll}} 
@@ -94,12 +82,7 @@ Then subscribe to the Scroll event of the vertical scrollbar and assign its nega
 {{endregion}} 
 
 
-
-
-The last required step is to set the __Maximum__property of the scrollbar to reflect the size of the __scrollable height__ which is the __total height__of the scrollable content minus the __visible height__. For the example of this section in particular, that is the height of the second panel minus the height of the first panel.#_[C#]_
-
-	
-
+The last required step is to set the __Maximum__ property of the scrollbar to reflect the size of the __scrollable height__ which is the __total height__ of the scrollable content minus the __visible height__. For the example of this section in particular, that is the height of the second panel minus the height of the first panel.
 
 
 {{source=..\SamplesCS\TrackAndStatus\ScrollBar\ScrollGettingStarted.cs region=maximum}} 
@@ -115,9 +98,4 @@ The last required step is to set the __Maximum__property of the scrollbar to ref
 
 {{endregion}} 
 
-
-
-
 ![track-and-status-controls-scroll-bar-getting-started 005](images/track-and-status-controls-scroll-bar-getting-started005.png)
-
-

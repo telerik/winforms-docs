@@ -5,16 +5,16 @@ description: Control Element Structure
 slug: winforms/track-and-status-controls/scrollbar/control-element-structure
 tags: control,element,structure
 published: True
-position: 2
+position: 3
 ---
 
 # Control Element Structure
 
-
-
 ## 
 
-This image shows the __Control Element Structure__of __RadScrollBar__as displayed by __Visual Style Builder__:![track-and-status-controls-scrollbar-control-element-structure 001](images/track-and-status-controls-scrollbar-control-element-structure001.png)
+This image shows the __Control Element Structure__of __RadScrollBar__as displayed by __Visual Style Builder__:
+
+![track-and-status-controls-scrollbar-control-element-structure 001](images/track-and-status-controls-scrollbar-control-element-structure001.png)
 
 As every control which is build with Telerik Presentation Framework, __RadVScrollBar__and __RadHScrollBar__consist of building elements order in a tree where property values are inherited in direction from the root to the leaves. The rest of the article discusses the most important nodes for the scrollbar controls.
 
