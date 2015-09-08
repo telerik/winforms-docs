@@ -12,8 +12,7 @@ position: 3
 
 ## Anatomy of Visual Style Builder
 
-Visual Style Builder is an end-user application that allows for fast and intuitive styling of all controls in the Windows Forms suite. Application is divided into the
-following major parts:
+Visual Style Builder is an end-user application that allows for fast and intuitive styling of all controls in the Windows Forms suite. Application is divided into the following major parts:
 
 ## Control Metadata Tree
 

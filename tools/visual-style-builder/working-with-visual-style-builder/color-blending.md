@@ -10,22 +10,13 @@ position: 7
 
 # Color Blending
 
-
-
 ## Overview
 
 Visual Style Builder provides a color blending functionality making it easy to completely transform an existing theme. While preserving the overall look of the selected theme this feature allows you to define a new color, blend it with an existing one and at the end apply it to a single control or to all the controls from the suite. The pictures below show the result after modifying the __TelerikMetro__ theme.
-        
 
-
-
-|
->caption Fig.1 TelerikMetro before change
-
-![tools-visual-style-builder-working-with-visual-style-builder-color-blending 001](images/tools-visual-style-builder-working-with-visual-style-builder-color-blending001.png)|
->caption Fig.2 TelerikMetro after change
-
-![tools-visual-style-builder-working-with-visual-style-builder-color-blending 002](images/tools-visual-style-builder-working-with-visual-style-builder-color-blending002.png)|
+|TelerikMetro before change | TelerikMetro after change|
+|----|----|
+![tools-visual-style-builder-working-with-visual-style-builder-color-blending 001](images/tools-visual-style-builder-working-with-visual-style-builder-color-blending001.png)|![tools-visual-style-builder-working-with-visual-style-builder-color-blending 002](images/tools-visual-style-builder-working-with-visual-style-builder-color-blending002.png)|
 
 ## Color Settings
 
@@ -50,10 +41,10 @@ The items in this group specify how exactly the blending process will be perform
 ![tools-visual-style-builder-working-with-visual-style-builder-color-blending 004](images/tools-visual-style-builder-working-with-visual-style-builder-color-blending004.png)
 
 * __Image Threshold__: Blends the destination color to images used in the themes having the source color as background.
-            
+   
 
 * __Color Mix__: Specifies the weight with which the destination color will be blended to the source color.
-            
+  
 
 * __Color Sensitivity__: Defines a factor determining how colors different than the source and destination will be affected by the blending operation.
             
