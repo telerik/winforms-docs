@@ -5,7 +5,7 @@ description: Localization
 slug: winforms/layoutcontrol/localization
 tags: localization
 published: True
-position: 7
+position: 8
 ---
 
 # Localization
@@ -16,19 +16,13 @@ position: 7
 
 To localize __RadLayoutControl__ to display any text and messages in a specific language:
 
-* Create a custom __LayoutControlLocalizationProvider__ class.
-            
+* Create a custom __LayoutControlLocalizationProvider__ class.        
 
-* Override the __GetLocalizedString(string id)__ method and provide a translation for the labels and user messages.
-              If a translation is not provided, the default value will be returned.
-            
+* Override the __GetLocalizedString(string id)__ method and provide a translation for the labels and user messages. If a translation is not provided, the default value will be returned.
 
 Below is a sample implementation of an English localization provider:
-        #_[C#] Localizing RadPivotGrid Strings._
 
-	
-
-
+#### Localizing RadPivotGrid Strings.
 
 {{source=..\SamplesCS\LayoutControl\LayoutControlLocalization.cs region=Localization}} 
 {{source=..\SamplesVB\LayoutControl\LayoutControlLocalization.vb region=Localization}} 
@@ -185,15 +179,9 @@ End Class
 
 {{endregion}} 
 
-
-
-
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
-        #_[C#] Assigning the Current Localization Provider_
 
-	
-
-
+#### Assigning the Current Localization Provider
 
 {{source=..\SamplesCS\LayoutControl\LayoutControlLocalization.cs region=SetProvider}} 
 {{source=..\SamplesVB\LayoutControl\LayoutControlLocalization.vb region=SetProvider}} 
@@ -208,6 +196,3 @@ To apply the custom localization provider, instantiate and assign it to the curr
 ````
 
 {{endregion}} 
-
-
-

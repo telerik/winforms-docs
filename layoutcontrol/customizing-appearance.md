@@ -5,7 +5,7 @@ description: Customizing Appearance
 slug: winforms/layoutcontrol/customizing-appearance
 tags: customizing,appearance
 published: True
-position: 6
+position: 7
 ---
 
 # Customizing Appearance
@@ -17,13 +17,9 @@ This article demonstrates how you can customize the appearance of the __RadLayou
 
 ## Customizing RadLayoutControl
 
-You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__
-          properties to customize the drag and drop preview rectangle fill and stroke.
-        #_[C#] Setting PreviewRectangleFill and PreviewRectangleStroke._
+You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__  properties to customize the drag and drop preview rectangle fill and stroke.
 
-	
-
-
+#### Setting PreviewRectangleFill and PreviewRectangleStroke.
 
 {{source=..\SamplesCS\LayoutControl\CustomizeLayoutControl.cs region=FillStroke}} 
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=FillStroke}} 
@@ -40,22 +36,13 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__
 
 {{endregion}} 
 
+>caption Figure 1: Changed PreviewRectangleFill and PreviewRectangleStroke.<br>![layoutcontrol-customize-appearance 001](images/layoutcontrol-customize-appearance001.png)
 
-
->caption Figure 1: Changed PreviewRectangleFill and PreviewRectangleStroke.
-
-![layoutcontrol-customize-appearance 001](images/layoutcontrol-customize-appearance001.png)
-
-## 
-        Customizing items
-      
+## Customizing items
 
 * __LayoutControlLabelItem:__ The following snipped shows how you can change the font and the __BackColor__ of this item.
-            #_[C#] Change item BackColor and font._
 
-	
-
-
+#### Change item BackColor and font.
 
 {{source=..\SamplesCS\LayoutControl\CustomizeLayoutControl.cs region=LabelItem}} 
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=LabelItem}} 
@@ -76,15 +63,9 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__
 
 {{endregion}} 
 
-
-
-
 * __LayoutControlSeparatorItem:__ By default this item shows only a single line, however you can customize its __Thickness__ and __BackColor__.
-            #_[C#] Customize separator item._
 
-	
-
-
+#### Customize separator item.
 
 {{source=..\SamplesCS\LayoutControl\CustomizeLayoutControl.cs region=Separator}} 
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=Separator}} 
@@ -106,15 +87,9 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__
 
 {{endregion}} 
 
-
-
-
 * __LayoutControlSplitterItem:__ By default this element does not draw its fill. The following snippet shows how you can change its __BackColor__ and __Thickness__.
-            #_[C#] Customize splitter item._
 
-	
-
-
+#### Customize splitter item.
 
 {{source=..\SamplesCS\LayoutControl\CustomizeLayoutControl.cs region=Splitter}} 
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=Splitter}} 
@@ -136,15 +111,9 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__
 
 {{endregion}} 
 
-
-
-
 * __LayoutControlGroupItem:__ The following code shows how you can access and customize the group item header.
-            #_[C#] Customize group header._
 
-	
-
-
+#### Customize group header.
 
 {{source=..\SamplesCS\LayoutControl\CustomizeLayoutControl.cs region=Group}} 
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=Group}} 
@@ -170,15 +139,9 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__
 
 {{endregion}} 
 
-
-
-
 * __LayoutControlTabbedGroup:__ this item gives you access to the underlying TabStrip, this way you can customize its appearance.
-            #_[C#] Customize tabs._
 
-	
-
-
+#### Customize tabs.
 
 {{source=..\SamplesCS\LayoutControl\CustomizeLayoutControl.cs region=Tab}} 
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=Tab}} 
@@ -199,9 +162,6 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

@@ -12,21 +12,11 @@ position: 2
 
 
 
-The print events in RadGridView allow the developer to customize the print output for 
-        	each individual cell. There are two events namely __PrintCellFormatting__ 
-        	and __PrintCellPaint__.
-        
+The print events in RadGridView allow the developer to customize the print output for each individual cell. There are two events namely __PrintCellFormatting__ and __PrintCellPaint__.
 
 ## PrintCellFormatting
 
-Just like the other formatting events of RadGridView, this event allows you to format the appearance of 
-     		the cells in the printed document. Here is a very simple example, which demonstrates how to customize
-     		the appearance of the header and the summary rows:
-     	#_[C#]_
-
-	
-
-
+Just like the other formatting events of RadGridView, this event allows you to format the appearance of the cells in the printed document. Here is a very simple example, which demonstrates how to customize the appearance of the header and the summary rows:
 
 {{source=..\SamplesCS\GridView\Printing support\EventsAndCustomization.cs region=PrintCellFormatting}} 
 {{source=..\SamplesVB\GridView\Printing support\EventsAndCustomization.vb region=PrintCellFormatting}} 
@@ -70,12 +60,7 @@ Just like the other formatting events of RadGridView, this event allows you to f
 
 ## PrintCellPaint
 
-This event allow you to access the cell and to paint in it whatever you need. Here is a sample, where
-        we will paint a green dot when the product quantity is more than 20 and a red dot if it is less:#_[C#]_
-
-	
-
-
+This event allow you to access the cell and to paint in it whatever you need. Here is a sample, where we will paint a green dot when the product quantity is more than 20 and a red dot if it is less:
 
 {{source=..\SamplesCS\GridView\Printing support\EventsAndCustomization.cs region=PrintCellPaint}} 
 {{source=..\SamplesVB\GridView\Printing support\EventsAndCustomization.vb region=PrintCellPaint}} 
@@ -128,6 +113,5 @@ This event allow you to access the cell and to paint in it whatever you need. He
 ````
 
 {{endregion}} 
-
 
 ![gridview-printing-support-events 002](images/gridview-printing-support-events002.png)

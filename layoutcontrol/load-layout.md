@@ -2,10 +2,10 @@
 title: Save/Load Layout
 page_title: Save/Load Layout | UI for WinForms Documentation
 description: Save/Load Layout
-slug: winforms/layoutcontrol/save/load-layout
+slug: winforms/layoutcontrol/load-layout
 tags: save/load,layout
 published: True
-position: 3
+position: 4
 ---
 
 # Save/Load Layout
@@ -14,14 +14,9 @@ position: 3
 
 ## 
 
-__RadLayoutControl__ allows layout changes at runtime. To preserve the changed layout you can use the predefined
-          __SaveLayout__ and __LoadLayout__ methods. Both methods can take path, stream or XmlWriter as parameters.
-          The following example demonstrates the functionality:
-        #_[C#] Save Layout_
+__RadLayoutControl__ allows layout changes at runtime. To preserve the changed layout you can use the predefined __SaveLayout__ and __LoadLayout__ methods. Both methods can take path, stream or XmlWriter as parameters. The following example demonstrates the functionality:
 
-	
-
-
+#### Save Layout
 
 {{source=..\SamplesCS\LayoutControl\LoadSaveLayout.cs region=SaveLayout}} 
 {{source=..\SamplesVB\LayoutControl\LoadSaveLayout.vb region=SaveLayout}} 
@@ -57,12 +52,7 @@ __RadLayoutControl__ allows layout changes at runtime. To preserve the changed l
 
 {{endregion}} 
 
-
-#_[C#] Load Layout_
-
-	
-
-
+#### Load Layout
 
 {{source=..\SamplesCS\LayoutControl\LoadSaveLayout.cs region=LoadLayout}} 
 {{source=..\SamplesVB\LayoutControl\LoadSaveLayout.vb region=LoadLayout}} 
@@ -97,9 +87,6 @@ __RadLayoutControl__ allows layout changes at runtime. To preserve the changed l
 ````
 
 {{endregion}} 
-
-
-
 
 The layout can be saved/loaded with the [customize dialog]({%slug winforms/layoutcontrol/customize-layout-mode%}) as well.
       
