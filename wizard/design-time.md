@@ -5,14 +5,12 @@ description: Design Time
 slug: winforms/wizard/design-time
 tags: design,time
 published: True
-position: 4
+position: 5
 ---
 
 # Design Time
 
 
-
-## 
 
 __RadWizard__ provides handful __Smart Tag menu__ and __Pages Collection Editor__ in design time.
 

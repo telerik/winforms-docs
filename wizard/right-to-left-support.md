@@ -5,25 +5,18 @@ description: Right-to-Left support
 slug: winforms/wizard/right-to-left-support
 tags: right-to-left,support
 published: True
-position: 5
+position: 6
 ---
 
 # Right-to-Left support
 
-
-
-## 
-
 The __RadWizard__ control also supports __RightToLeft__ alignment of its elements:
 
 ![wizard-structure 003](images/wizard-structure003.png)
+
+You can enable the RightToLeft functionality, by setting the __RightToLeft__ property to *True*:
 			
-			You can enable the RightToLeft functionality, by setting the __RightToLeft__ property to *True*:
-			#_[C#] Setting Right-to-Left mode_
-
-	
-
-
+#### Setting Right-to-Left mode
 
 {{source=..\SamplesCS\Wizard\WizardStructure.cs region=RTL}} 
 {{source=..\SamplesVB\Wizard\WizardStructure.vb region=RTL}} 
@@ -43,6 +36,4 @@ The __RadWizard__ control also supports __RightToLeft__ alignment of its element
 ````
 
 {{endregion}} 
-
-
 

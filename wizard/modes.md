@@ -5,22 +5,16 @@ description: Modes
 slug: winforms/wizard/modes
 tags: modes
 published: True
-position: 1
+position: 2
 ---
 
 # Modes
 
 
-
-## 
-
-__RadWizard__ supports both* Wizard 97* and* Wizard Aero* specifications..
-        	You can set the mode of the control using its __Mode__ property:
-        #_[C#] Setting modes_
-
-	
+__RadWizard__ supports both* Wizard 97* and* Wizard Aero* specifications..	You can set the mode of the control using its __Mode__ property:
 
 
+#### Setting modes
 
 {{source=..\SamplesCS\Wizard\Modes.cs region=settingMode}} 
 {{source=..\SamplesVB\Wizard\Modes.vb region=settingMode}} 
@@ -35,18 +29,11 @@ __RadWizard__ supports both* Wizard 97* and* Wizard Aero* specifications..
 
 {{endregion}} 
 
-
-
-
 ![wizard-mode 001](images/wizard-mode001.png)
 
-The __Aero style__of __Wizard Aero mode__ can be enabled (for Windows Vista and later versions) or disabled.
-			You can achieve it using the __EnableAeroStyle__ property of __RadWizard__.
-		#_[C#] Enabling aero style_
+The __Aero style__ of __Wizard Aero mode__ can be enabled (for Windows Vista and later versions) or disabled. You can achieve it using the __EnableAeroStyle__ property of __RadWizard__.
 
-	
-
-
+#### Enabling aero style
 
 {{source=..\SamplesCS\Wizard\Modes.cs region=EnableAeroStyle}} 
 {{source=..\SamplesVB\Wizard\Modes.vb region=EnableAeroStyle}} 
@@ -63,16 +50,9 @@ The __Aero style__of __Wizard Aero mode__ can be enabled (for Windows Vista and 
 
 {{endregion}} 
 
-
-
-
 ![wizard-mode 001](images/wizard-mode001.png)
 
-Disable __Aero Style__#_[C#] Disable aero style_
-
-	
-
-
+#### Disable __Aero Style__
 
 {{source=..\SamplesCS\Wizard\Modes.cs region=disableAeroStyle}} 
 {{source=..\SamplesVB\Wizard\Modes.vb region=disableAeroStyle}} 
@@ -89,9 +69,6 @@ Disable __Aero Style__#_[C#] Disable aero style_
 
 {{endregion}} 
 
-
-
-
-When __RadWizard__ is in __Aero mode__ with disabled __Aero style__,
-			the appearance of the control is defined by the styles in its theme.
+When __RadWizard__ is in __Aero mode__ with disabled __Aero style__, 
+the appearance of the control is defined by the styles in its theme.
 		

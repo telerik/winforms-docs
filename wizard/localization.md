@@ -5,12 +5,10 @@ description: Localization
 slug: winforms/wizard/localization
 tags: localization
 published: True
-position: 6
+position: 7
 ---
 
 # Localization
-
-
 
 ## 
 
@@ -20,13 +18,11 @@ To localize RadWizard to display control text and messages in a specific languag
 
 * Start by creating a descendant of the __RadWizardLocalizationProvider__class. 
 
-* Override the __GetLocalizedString(string id)__method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__method in the __default__clause of the __switch__statement in the example. 
+* Override the __GetLocalizedString(string id)__ method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the __default__ clause of the __switch__ statement in the example. 
 
-Below is a sample implementation of an English localization provider:#_[C#] Localizing RadWizard Strings_
+Below is a sample implementation of an English localization provider:
 
-	
-
-
+#### Localizing RadWizard Strings
 
 {{source=..\SamplesCS\Wizard\WizardLocalization.cs region=CustomLocalizationProvider}} 
 {{source=..\SamplesVB\Wizard\WizardLocalization.vb region=CustomLocalizationProvider}} 
@@ -75,13 +71,9 @@ Below is a sample implementation of an English localization provider:#_[C#] Loca
 
 {{endregion}} 
 
+To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
-
-
-To apply the custom localization provider, instantiate and assign it to the current localization provider: #_[C#] Assigning the Current Localization Provider_
-
-	
-
+#### Assigning the Current Localization Provider
 
 
 {{source=..\SamplesCS\Wizard\WizardLocalization.cs region=settingTheProvider}} 
@@ -96,8 +88,6 @@ To apply the custom localization provider, instantiate and assign it to the cur
 ````
 
 {{endregion}} 
-
-
 
 
 The code provided above illustrates the approach to be used to localize the __RadWizard__ and is not intended as a full translation.
