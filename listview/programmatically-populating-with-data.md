@@ -5,7 +5,7 @@ description: Programmatically populating with data
 slug: winforms/listview/programmatically-populating-with-data
 tags: programmatically,populating,with,data
 published: True
-position: 5
+position: 6
 ---
 
 # Programmatically populating with data
@@ -14,14 +14,9 @@ position: 5
 
 ## Adding items
 
-The columns of RadListView are stored in a collection that is accessible through the 
-        	__Items__ property. Columns can be added to RadListView using one
-        	of the overloads of the __Add__ method.
-        #_[C#] Adding items_
+The columns of RadListView are stored in a collection that is accessible through the __Items__ property. Columns can be added to RadListView using one of the overloads of the __Add__ method.
 
-	
-
-
+#### Adding items
 
 {{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=addItems}} 
 {{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=addItems}} 
@@ -38,20 +33,11 @@ The columns of RadListView are stored in a collection that is accessible through
 
 {{endregion}} 
 
-
-
-
 ## Adding columns
 
-The columns of RadListView are stored in a collection that is accessible through the 
-        	__Columns__ property. Columns can be added to RadListView using one
-        	of the three overloads of the __Add__ method as it is shown below. 
-        	Each column must have unique name because columns are distinguished by their __Name__ property.
-        #_[C#] Adding columns_
+The columns of RadListView are stored in a collection that is accessible through the __Columns__ property. Columns can be added to RadListView using one of the three overloads of the __Add__ method as it is shown below. Each column must have unique name because columns are distinguished by their __Name__ property. 
 
-	
-
-
+#### Adding columns
 
 {{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=addColumns}} 
 {{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=addColumns}} 
@@ -70,17 +56,9 @@ The columns of RadListView are stored in a collection that is accessible through
 
 {{endregion}} 
 
+The columns are visualized when RadListView is in __DetailView__ mode. You can set cell values to the items of RadListView using their indexers. The keys can be either the index of the column, the name of the column, or the column itself.
 
-
-
-The columns are visualized when RadListView is in __DetailView__ mode. You can 
-        	set cell values to the items of RadListView using their indexers. The keys can be either the index 
-        	of the column, the name of the column, or the column itself.
-        #_[C#] Populating cells_
-
-	
-
-
+#### Populating cells
 
 {{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=populateCells}} 
 {{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=populateCells}} 
@@ -107,22 +85,15 @@ The columns are visualized when RadListView is in __DetailView__ mode. You can
 
 {{endregion}} 
 
-
-
-
 >note To use these indexers the item must have a valid owner e.g. it first has to be added to the __Items__ collection of the RadListView.
 >
 
 
 ## Adding Groups
 
-Aside from using __GroupDescriptors__, custom groups can also be added to RadListView.
-        	This is done by using the __Add__ method of the __Groups__ collection of RadListView.
-       	#_[C#] Adding groups_
+Aside from using __GroupDescriptors__, custom groups can also be added to RadListView. This is done by using the __Add__ method of the __Groups__ collection of RadListView.
 
-	
-
-
+#### Adding groups
 
 {{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=addGroups}} 
 {{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=addGroups}} 
@@ -139,14 +110,9 @@ Aside from using __GroupDescriptors__, custom groups can also be added to RadLis
 
 {{endregion}} 
 
+In order to assign an item to a group, you should set the item’s __Group__ property:
 
-
-
-In order to assign an item to a group, you should set the item’s __Group__ property:#_[C#] Assign item to a group_
-
-	
-
-
+#### Assign item to a group
 
 {{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=assignItemToAGroup}} 
 {{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=assignItemToAGroup}} 
@@ -167,14 +133,8 @@ In order to assign an item to a group, you should set the item’s __Group__ pro
 
 {{endregion}} 
 
-
-
-
-In order to enable this kind of grouping the __EnableCustomGrouping__ property needs 
-			to be set to *true*. In order to display the groups the 
-			__ShowGroups__ property needs to be set to *true*.
+In order to enable this kind of grouping the __EnableCustomGrouping__ property needs to be set to *true*. In order to display the groups the __ShowGroups__ property needs to be set to *true*.
 		
 
-You can check which items belong to a given group by iterating trough the __Items__ collection
-			of a __ListViewDataItemGroup__:
+You can check which items belong to a given group by iterating trough the __Items__ collection of a __ListViewDataItemGroup__:
 		

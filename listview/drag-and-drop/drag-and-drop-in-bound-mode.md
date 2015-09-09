@@ -12,19 +12,11 @@ position: 0
 
 
 
-When the __RadListView__ is in bound mode, it does not support drag and drop functionality due to the specificity of the data source. 
-        However, this can be easily achieved using the built-in __ListViewDragDropService__. 
-        You only need to handle events, emanating from this service.
-      ![listview-drag-and-drop-drag-and-drop-in-bound-mode 001](images/listview-drag-and-drop-drag-and-drop-in-bound-mode001.gif)
+When the __RadListView__ is in bound mode, it does not support drag and drop functionality due to the specificity of the data source. However, this can be easily achieved using the built-in __ListViewDragDropService__. You only need to handle events, emanating from this service.<br>![listview-drag-and-drop-drag-and-drop-in-bound-mode 001](images/listview-drag-and-drop-drag-and-drop-in-bound-mode001.gif)
 
 ## 
 
-1. Let’s start with populating the __RadListView__ with data. For this purpose we will create
-            a class Item and fill a BindingList with items:#_[C#] _
-
-	
-
-
+1\. Let’s start with populating the __RadListView__ with data. For this purpose we will create a class Item and fill a BindingList with items:
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropInBoundMode.cs region=CreateItem}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropInBoundMode.vb region=CreateItem}} 
@@ -131,15 +123,7 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 
 {{endregion}} 
 
-
-
-
-1. In order to enable the drag and drop functionality, set the RadListView.__AllowDragDrop__ property to
-            *true*:#_[C#] _
-
-	
-
-
+2\. In order to enable the drag and drop functionality, set the RadListView.__AllowDragDrop__ property to *true*:
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropInBoundMode.cs region=EnableDragDrop}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropInBoundMode.vb region=EnableDragDrop}} 
@@ -157,15 +141,7 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 
 {{endregion}} 
 
-
-
-
-1. Use the ListViewElement.DragDropService.__PreviewDragStart__ event to get the dragged item. Subscribe to the ListViewElement.DragDropService.__PreviewDragOver__ event, 
-            which allows you to control on what targets the item, being dragged, can be dropped on:#_[C#] _
-
-	
-
-
+3\. Use the ListViewElement.DragDropService.__PreviewDragStart__ event to get the dragged item. Subscribe to the ListViewElement.DragDropService.__PreviewDragOver__ event, which allows you to control on what targets the item, being dragged, can be dropped on:
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropInBoundMode.cs region=DragStartOver}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropInBoundMode.vb region=DragStartOver}} 
@@ -214,15 +190,7 @@ When the __RadListView__ is in bound mode, it does not support drag and drop fun
 
 {{endregion}} 
 
-
-
-
-1. The last event we need to handle in our implementation is the ListViewElement.DragDropService.__PreviewDragDrop__ event.
-            This is where we will initiate the actual physical move of the item from one position to another. Implement the handler as follows:#_[C#] _
-
-	
-
-
+4\. The last event we need to handle in our implementation is the ListViewElement.DragDropService.__PreviewDragDrop__ event. This is where we will initiate the actual physical move of the item from one position to another. Implement the handler as follows:
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropInBoundMode.cs region=DragDrop}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropInBoundMode.vb region=DragDrop}} 

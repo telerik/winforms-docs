@@ -1,5 +1,5 @@
 ---
-title: LayoutControl
+title: Overview
 page_title: LayoutControl | UI for WinForms Documentation
 description: LayoutControl
 slug: winforms/layoutcontrol

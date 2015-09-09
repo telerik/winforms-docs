@@ -5,7 +5,7 @@ description: Custom items
 slug: winforms/listview/custom-items
 tags: custom,items
 published: True
-position: 9
+position: 10
 ---
 
 # Custom items
@@ -17,15 +17,11 @@ __RadListView__ allows you to create and use your own custom visual items. This 
 
 ## Custom items in ListView ViewType
 
-This can be done by making use of the __VisualItemCreating__ event. The following 
-	    	example demonstrates creating a visual item with two buttons in it.
-      ![listview-custom-items 001](images/listview-custom-items001.png)
+This can be done by making use of the __VisualItemCreating__ event. The following example demonstrates creating a visual item with two buttons in it.<br>![listview-custom-items 001](images/listview-custom-items001.png)
 
-First let's create a custom visual item by inheriting from the __SimpleListViewVisualItem__ class:#_[C#] Creating custom item_
+First let's create a custom visual item by inheriting from the __SimpleListViewVisualItem__ class:
 
-	
-
-
+#### Creating custom item
 
 {{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=CustomItem}} 
 {{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=CustomItem}} 
@@ -143,16 +139,9 @@ First let's create a custom visual item by inheriting from the __SimpleListViewV
 
 {{endregion}} 
 
+To use the newly created items, you should handle the __VisualItemCreating__ event as shown below:
 
-
-
-To use the newly created items, you should handle the __VisualItemCreating__ event 
-			as shown below:
-		#_[C#] Use the custom item_
-
-	
-
-
+#### Use the custom item
 
 {{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=UseCustomItem}} 
 {{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=UseCustomItem}} 
@@ -178,18 +167,13 @@ To use the newly created items, you should handle the __VisualItemCreating__ eve
 
 {{endregion}} 
 
+## Custom items in IconsView ViewType
 
+![listview-custom-items 003](images/listview-custom-items003.png)
 
+We should create a custom visual item inheriting the __IconListViewVisualItem__. The following example demonstrates how to add custom elements to the IconListViewVisualItem.__Children__ collection:
 
-## Custom items in IconsView ViewType![listview-custom-items 003](images/listview-custom-items003.png)
-
-We should create a custom visual item inheriting the __IconListViewVisualItem__. The following example demonstrates how to 
-          add custom elements to the IconListViewVisualItem.__Children__ collection:
-        #_[C#] Creating custom item_
-
-	
-
-
+#### Creating custom item
 
 {{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=CustomIconListViewVisualItem}} 
 {{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=CustomIconListViewVisualItem}} 
@@ -274,15 +258,7 @@ We should create a custom visual item inheriting the __IconListViewVisualItem__.
 
 {{endregion}} 
 
-
-
-
-To use the newly created item, you should subscribe to the __VisualItemCreating__ event 
-			    and replace the default item with your custom one: #_[C#]_
-
-	
-
-
+To use the newly created item, you should subscribe to the __VisualItemCreating__ event and replace the default item with your custom one: 
 
 {{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=UseCustomIconItem}} 
 {{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=UseCustomIconItem}} 
@@ -310,22 +286,11 @@ To use the newly created item, you should subscribe to the __VisualItemCreating_
 
 {{endregion}} 
 
-
-
-
 ## Custom items in DetailsView ViewType
 
-Since the *DetailsView* provides a grid-like interface, it displays a cell for each data field. In order to create
-          custom cells you need to subscribe to the __CellCreating__ event and replace the default __DetailListViewDataCellElement__
-          with your own cell implementation.
-        ![listview-custom-items 002](images/listview-custom-items002.png)
+Since the *DetailsView* provides a grid-like interface, it displays a cell for each data field. In order to create custom cells you need to subscribe to the __CellCreating__ event and replace the default __DetailListViewDataCellElement__ with your own cell implementation.<br>![listview-custom-items 002](images/listview-custom-items002.png)
 
-First let's populate the __RadListView__ with items and set its __ViewType__ property to *DetailsView*: 
-        #_[C#]_
-
-	
-
-
+First let's populate the __RadListView__ with items and set its __ViewType__ property to *DetailsView*:
 
 {{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=FillData}} 
 {{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=FillData}} 
@@ -363,13 +328,7 @@ First let's populate the __RadListView__ with items and set its __ViewType__ pro
 
 
 
-Now let`s create our custom cell element containing a __RadButtonElement__. Additionally,
-          we should inherit the __DetailListViewDataCellElement__ class:
-        #_[C#]_
-
-	
-
-
+Now let`s create our custom cell element containing a __RadButtonElement__. Additionally, we should inherit the __DetailListViewDataCellElement__ class:
 
 {{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=CustomCell}} 
 {{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=CustomCell}} 
@@ -462,15 +421,7 @@ Now let`s create our custom cell element containing a __RadButtonElement__. Addi
 
 {{endregion}} 
 
-
-
-
 Finally, we should handle the __CellCreating__ event and substitute the default cell element with our own:
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=ReplaceCell}} 
 {{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=ReplaceCell}} 

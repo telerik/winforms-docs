@@ -5,7 +5,7 @@ description: Grouping
 slug: winforms/listview/features/grouping
 tags: grouping
 published: True
-position: 2
+position: 3
 ---
 
 # Grouping
@@ -14,16 +14,9 @@ position: 2
 
 ## 
 
-RadListView supports both custom grouping and automatic grouping based on a certain property.
-          The latter is achievable by enabling the __EnableGrouping__ and
-          __ShowGroups__ properties and then adding the desired
-          __GroupDescriptors__ to the __GroupDescriptors__
-          collection of the control. The following code will group the items according to their __Value__ property:
-        #_[C#] Group by value_
+RadListView supports both custom grouping and automatic grouping based on a certain property. The latter is achievable by enabling the __EnableGrouping__ and __ShowGroups__ properties and then adding the desired __GroupDescriptors__ to the __GroupDescriptors__ collection of the control. The following code will group the items according to their __Value__ property:
 
-	
-
-
+#### Group by value
 
 {{source=..\SamplesCS\ListView\Features\ListViewGrouping.cs region=groupByValue}} 
 {{source=..\SamplesVB\ListView\Features\ListViewGrouping.vb region=groupByValue}} 
@@ -72,17 +65,11 @@ RadListView supports both custom grouping and automatic grouping based on a cert
 
 {{endregion}} 
 
-
-
-
 ![listview-features-grouping 001](images/listview-features-grouping001.png)
 
 And here is how you can group by a certain column when __DetailsView__ is used:
-        #_[C#] Group by column_
 
-	
-
-
+#### Group by column
 
 {{source=..\SamplesCS\ListView\Features\ListViewGrouping.cs region=groupByColumn}} 
 {{source=..\SamplesVB\ListView\Features\ListViewGrouping.vb region=groupByColumn}} 
@@ -127,19 +114,12 @@ And here is how you can group by a certain column when __DetailsView__ is used:
 
 {{endregion}} 
 
-
-
-
 ![listview-features-grouping 002](images/listview-features-grouping002.png)
 
-To take advantage of the custom grouping feature of RadListView, just enable the
-          __EnableCustomGrouping__ property and add the desired descriptor.
-          Here is an example for custom grouping:
-        #_[C#] Custom grouping_
-
-	
+To take advantage of the custom grouping feature of RadListView, just enable the __EnableCustomGrouping__ property and add the desired descriptor. Here is an example for custom grouping:
 
 
+#### Custom grouping
 
 {{source=..\SamplesCS\ListView\Features\ListViewGrouping.cs region=customGrouping}} 
 {{source=..\SamplesVB\ListView\Features\ListViewGrouping.vb region=customGrouping}} 
@@ -187,21 +167,13 @@ To take advantage of the custom grouping feature of RadListView, just enable the
 
 {{endregion}} 
 
-
-
-
-Please note, that if you are using data binding, you can use the __ItemDataBound__ event,
-          to assign certain item to a certain group.
-        
+Please note, that if you are using data binding, you can use the __ItemDataBound__ event,  to assign certain item to a certain group.
 
 ![listview-features-grouping 003](images/listview-features-grouping003.png)
 
 When grouping is enabled you have the option to quickly expand or collapse all groups in __RadListView__ throught the __ExpandAll__ and __CollapseAll__ methods:
-        #_[C#] Expand and collapse all groups_
 
-	
-
-
+#### Expand and collapse all groups
 
 {{source=..\SamplesCS\ListView\Features\ListViewGrouping.cs region=ExpandCollapseAll}} 
 {{source=..\SamplesVB\ListView\Features\ListViewGrouping.vb region=ExpandCollapseAll}} 

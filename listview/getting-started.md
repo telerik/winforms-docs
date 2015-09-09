@@ -5,7 +5,7 @@ description: Getting started
 slug: winforms/listview/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting started
@@ -14,83 +14,31 @@ position: 0
 
 ## 
 
-This article will demonstrate the basic capabilities of RadListView, like filtering, grouping, sorting,
-          customizing items, etc. and it will show you in a step-by-step manner how to start creating applications
-          with RadListView.
-        ![listview-getting-started 001](images/listview-getting-started001.png)
+This article will demonstrate the basic capabilities of RadListView, like filtering, grouping, sorting, customizing items, etc. and it will show you in a step-by-step manner how to start creating applications with RadListView. ![listview-getting-started 001](images/listview-getting-started001.png)
 
-For the sake of this example we are going to use a DataTable containing data about Artists, Albums, Songs and Image.
-        ![listview-getting-started 002](images/listview-getting-started002.png)
+For the sake of this example we are going to use a DataTable containing data about Artists, Albums, Songs and Image. ![listview-getting-started 002](images/listview-getting-started002.png)
 
-First let’s create a form with
-          [RadCommandBar]({%slug winforms/commandbar%})
-          docked *Top* and RadListView docked *Fill*. Add a
-          __Strip__ to
-          [RadCommandBar]({%slug winforms/commandbar%})
-          and populate it with the following items:
-        
+First let’s create a form with [RadCommandBar]({%slug winforms/commandbar%}) docked *Top* and RadListView docked *Fill*. Add a __Strip__ to [RadCommandBar]({%slug winforms/commandbar%}) and populate it with the following items:
 
-
-
-| __CommandBarLabel__ |
-
-* Text: “Sort By:”|
-| __CommandBarDropDownList__ |
-
-* Name: commandBarDropDownSort
-
-* Text: ""
-
-* Items: None, Song Name, Artist, Album|
+|   |   |
+|---|---|
+| __CommandBarLabel__ |<ul><li>Text: “Sort By:”</li><ul>|
+| __CommandBarDropDownList__ |<ul><li>Name: commandBarDropDownSort</li><li>Text: ""</li><li>Items: None, Song Name, Artist, Album</li></ul>|
 | __CommandBarSeparatorItem__ ||
-| __CommandBarLabel__ |
-
-* Text: “Group By:”|
-| __CommandBarDropDownList__ |
-
-* Name: commandBarDropDownGroup
-
-* Text: ""
-
-* Items: None, Album, Artist|
+| __CommandBarLabel__ |<ul><li>Text: “Group By:”</li></ul>|
+| __CommandBarDropDownList__ |<ul><li>Name: commandBarDropDownGroup</li><li>Text: ""</li><li>Items: None, Album, Artist</li></ul>|
 | __CommandBarSeparatorItem__ ||
-| __CommandBarToggleButton__ |
-
-* Name: commandBarToggleButtonList
-
-* ToolTipText: “ListView”
-
-* Image: Some image representing ListView|
-| __CommandBarToggleButton__ |
-
-* Name: commandBarToggleButtonTiles
-
-* ToolTipText: “IconsView”
-
-* Image: Some image representing IconsView|
-| __CommandBarToggleButton__ |
-
-* Name: commandBarToggleButtonDetails
-
-* ToolTipText: “DetailsView”
-
-* Image: Some image representing DetailsView|
+| __CommandBarToggleButton__ |<ul><li>Name: commandBarToggleButtonList</li><li>ToolTipText: “ListView”</li><li>Image: Some image representing ListView</li></ul>|
+| __CommandBarToggleButton__ |<ul><li>Name: commandBarToggleButtonTiles</li><li>ToolTipText: “IconsView”</li><li>Image: Some image representing IconsView</li></ul>|
+| __CommandBarToggleButton__ |<ul><li>Name: commandBarToggleButtonDetails</li><li>ToolTipText: “DetailsView”</li><li>Image: Some image representing DetailsView</li></ul>|
 | __CommandBarSeparatorItem__ ||
-| __CommandBarTextBox__ |
+| __CommandBarTextBox__ |<ul><li>Name: commandBarTextBoxFilter</li><li>Text: “”</li></ul>|
 
-* Name: commandBarTextBoxFilter
+At this point the form should like something similar to this:<br>![listview-getting-started 003](images/listview-getting-started003.png)
 
-* Text: “”|
+Now let continue with setting the control __DataSource__, allow edit and remove operations and subscribe to the events that we are going to use in this example.
 
-At this point the form should like something similar to this:![listview-getting-started 003](images/listview-getting-started003.png)
-
-Now let continue with setting the control __DataSource__, allow edit and remove
-          operations and subscribe to the events that we are going to use in this example.
-        #_[C#] Initial settings_
-
-	
-
-
+#### Initial settings
 
 {{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=initialSettings}} 
 {{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=initialSettings}} 
@@ -127,16 +75,9 @@ Now let continue with setting the control __DataSource__, allow edit and remove
 
 {{endregion}} 
 
+Now, lets handle those events. In the event handler for the __ItemDataBound__ event, we will take the corresponding item image from the data source and we will assign it to the ListViewDataItem.
 
-
-
-Now, lets handle those events. In the event handler for the __ItemDataBound__ event, we
-          will take the corresponding item image from the data source and we will assign it to the ListViewDataItem.
-        #_[C#] Set the item image to the data item_
-
-	
-
-
+#### Set the item image to the data item
 
 {{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=ItemDataBound}} 
 {{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=ItemDataBound}} 
@@ -160,17 +101,9 @@ Now, lets handle those events. In the event handler for the __ItemDataBound__ ev
 
 {{endregion}} 
 
+Next lets hand the __VisualItemFormatting__ event, where we will set the visual item image. Additionally, for IconsView we will set the visual item text to a html-like combination of the *AlbumName*, *ArtistName* and *SongName*.
 
-
-
-Next lets hand the __VisualItemFormatting__ event, where we will set the visual item
-          image. Additionally, for IconsView we will set the visual item text to a html-like combination
-          of the *AlbumName*, *ArtistName* and *SongName*.
-        #_[C#] Customize visual item_
-
-	
-
-
+#### Customize visual item
 
 {{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=VisualItemFormatting}} 
 {{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=VisualItemFormatting}} 
@@ -212,16 +145,9 @@ Next lets hand the __VisualItemFormatting__ event, where we will set the visual 
 
 {{endregion}} 
 
+The __CellFormatting__ event is handled in order to customize the appearance of the cells, when RadListView is in __DetailsView__. Here we will set the cell image.
 
-
-
-The __CellFormatting__ event is handled in order to customize the appearance
-          of the cells, when RadListView is in __DetailsView__. Here we will set the cell image.
-        #_[C#] Set the cell image_
-
-	
-
-
+#### Set the cell image
 
 {{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=CellFormatting}} 
 {{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=CellFormatting}} 
@@ -246,16 +172,9 @@ The __CellFormatting__ event is handled in order to customize the appearance
 
 {{endregion}} 
 
+The __ColumnCreating__ event is fired when a column is being created. This is convenient event to hide unwanted columns. Additionally, we will use this event to set some more user friendly column headers.
 
-
-
-The __ColumnCreating__ event is fired when a column is being created. This is convenient event to hide unwanted columns.
-          Additionally, we will use this event to set some more user friendly column headers.
-        #_[C#] Customize columns_
-
-	
-
-
+#### Customize columns
 
 {{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=ColumnCreating}} 
 {{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=ColumnCreating}} 
@@ -310,29 +229,17 @@ The __ColumnCreating__ event is fired when a column is being created. This is co
 
 
 
-The last event of RadListView, which we are going to handle is the ViewTypeChanged event - fired when
-          the ViewType of the control is changed. This event is convenient to set view specific settings.
-          To handle the event, we will create three helper methods:
-        
+The last event of RadListView, which we are going to handle is the ViewTypeChanged event - fired when the ViewType of the control is changed. This event is convenient to set view specific settings. To handle the event, we will create three helper methods:
 
-* __SetupDetailsView__ - here we will set the __AllowArbitraryItemHeight__,
-              property to *true*, in order to allow the items to size themselves in height,
-              according to their content.
-            
+* __SetupDetailsView__ - here we will set the __AllowArbitraryItemHeight__,  property to *true*, in order to allow the items to size themselves in height, according to their content.
 
-* __SetupIconsView__ - here we will define a custom size for the items, set some
-              spacing between the items and again set the __AllowArbitraryItemHeight__,
-              property to *true*
+* __SetupIconsView__ - here we will define a custom size for the items, set some spacing between the items and again set the __AllowArbitraryItemHeight__, property to *true*
 
-* __SetupSimpleListView__ - in this method we will only set the __AllowArbitraryItemHeight__,
-              property to *true*.
-            
+* __SetupSimpleListView__ - in this method we will only set the __AllowArbitraryItemHeight__, property to *true*.
 
-In the ViewTypeChanged event handler, we will simply check which is the new view and call the corresponding setup method#_[C#] Handling view type changes_
+In the ViewTypeChanged event handler, we will simply check which is the new view and call the corresponding setup method.
 
-	
-
-
+#### Handling view type changes
 
 {{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=ViewTypeChanged}} 
 {{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=ViewTypeChanged}} 
@@ -407,16 +314,9 @@ In the ViewTypeChanged event handler, we will simply check which is the new view
 
 
 
-Now we only need to fill up the __RadCommandBar__ elements functionality.
-          First we are going to handle the view changing buttons. For this purpose, subscribe for the
-          __ToggleStateChanged__ and __ToggleStateChanging__ events
-          of all the __CommandBarToggleButtons__ that we have added earlier. In the ToggleStateChanged
-          event handler, check which is the clicked button, and set the rest of the buttons to *Off*. Additionally, set the __RadListView____ViewType__ according to the pressed button.
-        #_[C#] Handle the toggle buttons_
+Now we only need to fill up the __RadCommandBar__ elements functionality.  First we are going to handle the view changing buttons. For this purpose, subscribe for the __ToggleStateChanged__ and __ToggleStateChanging__ events of all the __CommandBarToggleButtons__ that we have added earlier. In the ToggleStateChanged event handler, check which is the clicked button, and set the rest of the buttons to *Off*. Additionally, set the __RadListView____ViewType__ according to the pressed button.
 
-	
-
-
+#### Handle the toggle buttons
 
 {{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=toggleButtons}} 
 {{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=toggleButtons}} 
@@ -525,15 +425,9 @@ Now we only need to fill up the __RadCommandBar__ elements functionality.
 
 
 
-Next, subscribe to the __SelectedIndexChanged__ event of
-          *commandBarDropDownSort*__CommandBarDropDownList__. In the
-          event handler, we are going to add the desired __SortDescriptors__, according to the
-          selected item in the drop down.
-        #_[C#] Handle sorting functionality_
+Next, subscribe to the __SelectedIndexChanged__ event of *commandBarDropDownSort*__CommandBarDropDownList__. In the event handler, we are going to add the desired __SortDescriptors__, according to the selected item in the drop down.
 
-	
-
-
+#### Handle sorting functionality
 
 {{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=sort}} 
 {{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=sort}} 
@@ -582,17 +476,9 @@ Next, subscribe to the __SelectedIndexChanged__ event of
 
 {{endregion}} 
 
+To add the grouping functionality, subscribe to the __SelectedIndexChanged__ event of *commandBarDropDownGroup*, __CommandBarDropDownList__. Similar to the sorting functionality, add the desired __GroupDescriptors__ according to the selected item.
 
-
-
-To add the grouping functionality, subscribe to the __SelectedIndexChanged__ event of
-          *commandBarDropDownGroup*, __CommandBarDropDownList__. Similar
-          to the sorting functionality, add the desired __GroupDescriptors__ according to the selected item.
-        #_[C#] Handle grouping functionality_
-
-	
-
-
+#### Handle grouping functionality
 
 {{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=group}} 
 {{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=group}} 
@@ -650,14 +536,9 @@ To add the grouping functionality, subscribe to the __SelectedIndexChanged__ eve
 
 
 
-Lastly, lets subscribe ot the __TextChanged__ event of
-          *commandBarTextBoxFilter*__CommandBarTextBox__. Here we will
-          add __FilterDescriptor__ according to the text entered in the text box:
-        #_[C#] Handle filtering functionality_
+Lastly, lets subscribe ot the __TextChanged__ event of *commandBarTextBoxFilter*__CommandBarTextBox__. Here we will  add __FilterDescriptor__ according to the text entered in the text box:
 
-	
-
-
+#### Handle filtering functionality
 
 {{source=..\SamplesCS\ListView\ListViewGettingStarted.cs region=filter}} 
 {{source=..\SamplesVB\ListView\ListViewGettingStarted.vb region=filter}} 
@@ -700,7 +581,4 @@ Lastly, lets subscribe ot the __TextChanged__ event of
 
 {{endregion}} 
 
-
-
-
-Run the application and try the different functionalties:![listview-getting-started 005](images/listview-getting-started005.png)
+Run the application and try the different functionalties:<br>![listview-getting-started 005](images/listview-getting-started005.png)

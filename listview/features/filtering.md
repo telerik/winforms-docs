@@ -5,7 +5,7 @@ description: Filtering
 slug: winforms/listview/features/filtering
 tags: filtering
 published: True
-position: 1
+position: 2
 ---
 
 # Filtering
@@ -14,13 +14,9 @@ position: 1
 
 ## 
 
-RadListView allows filtering operations in all views. To enable filtering operations use
-        	the __EnableFiltering__ property of the control:
-        #_[C#] Enable filtering_
+RadListView allows filtering operations in all views. To enable filtering operations use the __EnableFiltering__ property of the control: 
 
-	
-
-
+#### Enable filtering
 
 {{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=EnableFiltering}} 
 {{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=EnableFiltering}} 
@@ -35,18 +31,9 @@ RadListView allows filtering operations in all views. To enable filtering operat
 
 {{endregion}} 
 
+Once the filtering is enabled, we have to create a new __FilterDescriptor__ and assign its __PropertyName__, __FilterOperator__ and __SearchCriteria__. First, let’s filter the items by their value and look for items starting with *“Local”*.
 
-
-
-Once the filtering is enabled, we have to create a new __FilterDescriptor__ 
-			and assign its __PropertyName__, __FilterOperator__ 
-			and __SearchCriteria__. First, let’s filter the items by their value and look
-			for items starting with *“Local”*.
-		#_[C#] Filter by value_
-
-	
-
-
+#### Filter by value
 
 {{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=FilterDescriptor}} 
 {{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=FilterDescriptor}} 
@@ -63,18 +50,11 @@ Once the filtering is enabled, we have to create a new __FilterDescriptor__
 
 {{endregion}} 
 
-
-
-
 ![listview-features-filtering 001](images/listview-features-filtering001.png)
 
-When a column name is specified as __PropertyName__ of the filter descriptor,
-        	RadListView will filter by the values of the specified column:
-        #_[C#] Filter by type_
+When a column name is specified as __PropertyName__ of the filter descriptor, RadListView will filter by the values of the specified column:
 
-	
-
-
+#### Filter by type
 
 {{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=FilterDescriptor1}} 
 {{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=FilterDescriptor1}} 
@@ -90,8 +70,5 @@ When a column name is specified as __PropertyName__ of the filter descriptor,
 ````
 
 {{endregion}} 
-
-
-
 
 ![listview-features-filtering 002](images/listview-features-filtering002.png)

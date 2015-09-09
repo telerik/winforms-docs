@@ -1,5 +1,5 @@
 ---
-title: Expression Editor
+title: Overview
 page_title: Expression Editor | UI for WinForms Documentation
 description: Expression Editor
 slug: winforms/gridview/expression-editor

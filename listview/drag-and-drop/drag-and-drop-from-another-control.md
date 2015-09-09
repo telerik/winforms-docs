@@ -12,21 +12,13 @@ position: 1
 
 
 
-__RadListView__  supports drag and drop functionality from another control, 
-        such as dragging and dropping items from a Microsoft ListBox. It is necessary to set the __AllowDrop__ 
-        property to *true* for both of the controls.
+__RadListView__  supports drag and drop functionality from another control, such as dragging and dropping items from a Microsoft ListBox. It is necessary to set the __AllowDrop__ property to *true* for both of the controls.
 
-## Drag and drop from ListBox to RadListView ![listview-drag-and-drop-drag-and-drop-from-another-control 001](images/listview-drag-and-drop-drag-and-drop-from-another-control001.gif)
+## Drag and drop from ListBox to RadListView
 
-1. Firstly, we should start the drag and drop operation, using the ListBox.__MouseMove__ event
-              when the left mouse button is pressed. We should keep the mouse down location in the ListBox.__MouseDown__ event.
-              Afterwards, allow dragging over the __RadListView__  via the
-            __Effect__ argument of the __DragEventArgs__ in the RadListView.__DragEnter__ 
-              event handler:#_[C#] _
+![listview-drag-and-drop-drag-and-drop-from-another-control 001](images/listview-drag-and-drop-drag-and-drop-from-another-control001.gif)
 
-	
-
-
+1\. Firstly, we should start the drag and drop operation, using the ListBox.__MouseMove__ event when the left mouse button is pressed. We should keep the mouse down location in the ListBox.__MouseDown__ event. Afterwards, allow dragging over the __RadListView__  via the __Effect__ argument of the __DragEventArgs__ in the RadListView.__DragEnter__ event handler:
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropFromAnotherControl.cs region=ListBoxToListViewStart}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropFromAnotherControl.vb region=ListBoxToListViewStart}} 
@@ -130,17 +122,7 @@ __RadListView__  supports drag and drop functionality from another control,
 
 {{endregion}} 
 
-
-
-
-1. In the RadListView.__DragDrop__ event handler you need to get the location of the mouse and convert
-            it to a point that the __RadListView__ can use to get the target item underneath the mouse. 
-            Afterwards, insert the dragged item at the specific position in the RadListView.__Items__ collection 
-            and remove it from the ListBox. We should reset the stored mouse down location as well.#_[C#] _
-
-	
-
-
+2\. In the RadListView.__DragDrop__ event handler you need to get the location of the mouse and convert it to a point that the __RadListView__ can use to get the target item underneath the mouse. Afterwards, insert the dragged item at the specific position in the RadListView.__Items__ collection and remove it from the ListBox. We should reset the stored mouse down location as well.
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropFromAnotherControl.cs region=ListBoxToListViewDragDrop}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropFromAnotherControl.vb region=ListBoxToListViewDragDrop}} 
@@ -212,18 +194,9 @@ __RadListView__  supports drag and drop functionality from another control,
 
 {{endregion}} 
 
-
-
-
 ## Drag and drop from RadListView to ListBox![listview-drag-and-drop-drag-and-drop-from-another-control 002](images/listview-drag-and-drop-drag-and-drop-from-another-control002.gif)
 
-1. In order to enable dragging an item from the __RadListView__ and dropping it onto the ListBox,
-            it is necessary to use the RadListView.__MouseDown__ and the RadListView.__MouseMove__ events to start
-            the drag and drop operation. In the ListBox.__DragOver__ event you should allow the drop operation:#_[C#] _
-
-	
-
-
+1\. In order to enable dragging an item from the __RadListView__ and dropping it onto the ListBox, it is necessary to use the RadListView.__MouseDown__ and the RadListView.__MouseMove__ events to start the drag and drop operation. In the ListBox.__DragOver__ event you should allow the drop operation:
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropFromAnotherControl.cs region=ListViewToListBoxStart}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropFromAnotherControl.vb region=ListViewToListBoxStart}} 
@@ -301,15 +274,7 @@ __RadListView__  supports drag and drop functionality from another control,
 
 {{endregion}} 
 
-
-
-
-1. Finally, perform the exact drag and drop operation via inserting a new item in the ListBox in the __DragDrop__ event. 
-            We should reset the stored mouse down location as well:#_[C#] _
-
-	
-
-
+2\. Finally, perform the exact drag and drop operation via inserting a new item in the ListBox in the __DragDrop__ event. We should reset the stored mouse down location as well:
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropFromAnotherControl.cs region=ListViewToListBoxDrop}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropFromAnotherControl.vb region=ListViewToListBoxDrop}} 

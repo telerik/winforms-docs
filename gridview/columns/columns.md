@@ -1,5 +1,5 @@
 ---
-title: Columns
+title: Overview
 page_title: Columns | UI for WinForms Documentation
 description: Columns
 slug: winforms/gridview/columns

@@ -1,5 +1,5 @@
 ---
-title: Printing Support
+title: Overview
 page_title: Printing Support | UI for WinForms Documentation
 description: Printing Support
 slug: winforms/gridview/printing-support

@@ -5,7 +5,7 @@ description: Sorting
 slug: winforms/listview/features/sorting
 tags: sorting
 published: True
-position: 3
+position: 4
 ---
 
 # Sorting
@@ -14,18 +14,12 @@ position: 3
 
 ## 
 
-Sorting is possible in two ways either programmatically by adding the appropriate 
-        	__SortDescriptor__ to the __SortDescriptors__ collection 
-        	of RadListView, or by enabling the user to sort by clicking a column header in __DetailsView__.
+Sorting is possible in two ways either programmatically by adding the appropriate __SortDescriptor__ to the __SortDescriptors__ collection of RadListView, or by enabling the user to sort by clicking a column header in __DetailsView__.
         
 
-Enabling sorting on header click is done by setting both __EnableSorting__ and
-            __EnableColumnSort__ property to *true*.
-        #_[C#] Enable column sorting_
+Enabling sorting on header click is done by setting both __EnableSorting__ and __EnableColumnSort__ property to *true*.
 
-	
-
-
+#### Enable column sorting
 
 {{source=..\SamplesCS\ListView\Features\ListViewSorting.cs region=EnableColumnSort}} 
 {{source=..\SamplesVB\ListView\Features\ListViewSorting.vb region=EnableColumnSort}} 
@@ -42,14 +36,9 @@ Enabling sorting on header click is done by setting both __EnableSorting__ and
 
 {{endregion}} 
 
+The following code demonstrates how to add __SortDescriptor__ to RadListView:
 
-
-
-The following code demonstrates how to add __SortDescriptor__ to RadListView:#_[C#] Adding SortDescriptors_
-
-	
-
-
+#### Adding SortDescriptors
 
 {{source=..\SamplesCS\ListView\Features\ListViewSorting.cs region=SortDescriptor}} 
 {{source=..\SamplesVB\ListView\Features\ListViewSorting.vb region=SortDescriptor}} 
@@ -67,9 +56,6 @@ The following code demonstrates how to add __SortDescriptor__ to RadListView:#_[
 ````
 
 {{endregion}} 
-
-
-
 
 Here is the sorted data:
 

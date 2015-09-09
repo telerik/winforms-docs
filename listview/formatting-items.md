@@ -5,7 +5,7 @@ description: Formatting Items
 slug: winforms/listview/formatting-items
 tags: formatting,items
 published: True
-position: 8
+position: 9
 ---
 
 # Formatting Items
@@ -14,20 +14,14 @@ position: 8
 
 ## Formatting items in ListView and IconsView modes 
 
-Items appearance in __RadListView__ can be customized by making use of the
-          __VisualItemFormatting__ event. The following example,
-          demonstrates how you can change the color of an item which is being selected
-        
+Items appearance in __RadListView__ can be customized by making use of the __VisualItemFormatting__ event. The following example, demonstrates how you can change the color of an item which is being selected.
 
->note By using this event to customize the items appearance, you should always provide an else clause,
-            where you reset the appearance settings which you have introduced. This is necessary since __RadListView__ uses data virtualization, which might lead to unpredicted appearance results
-            when items are being reused.
->
-![listview-formatting-items 001](images/listview-formatting-items001.png)#_[C#] Customizing items_
-
-	
+>note By using this event to customize the items appearance, you should always provide an else clause,  where you reset the appearance settings which you have introduced. This is necessary since __RadListView__ uses data virtualization, which might lead to unpredicted appearance results when items are being reused.
 
 
+![listview-formatting-items 001](images/listview-formatting-items001.png)
+
+#### Customizing items
 
 {{source=..\SamplesCS\ListView\ListViewFormattingItems.cs region=VisualItemFormatting}} 
 {{source=..\SamplesVB\ListView\ListViewFormattingItems.vb region=VisualItemFormatting}} 
@@ -78,26 +72,17 @@ Items appearance in __RadListView__ can be customized by making use of the
 
 {{endregion}} 
 
-
-
-
 ## Formatting cells in DetailsView mode
 
-The __DetailsView__ of __RadListView__ provides a grid-like interface for displaying items with more than one data field.
-        It is possible to customize each cell element, using the __CellFormatting__ event.
+The __DetailsView__ of __RadListView__ provides a grid-like interface for displaying items with more than one data field. It is possible to customize each cell element, using the __CellFormatting__ event.
 
->note Cell elements are created only for currently visible cells and they are being reused, when scrolling. In order to
-            prevent applying the formatting to other cell elements, all applied styles should be reset for the rest of the cell elements.
+>note Cell elements are created only for currently visible cells and they are being reused, when scrolling. In order to prevent applying the formatting to other cell elements, all applied styles should be reset for the rest of the cell elements.
 >
 
 
-Let’s assume that the __RadListView__ is bound to the *Products* table from the *Northwind* database.
-          The code snippet below demonstrates how to apply different colors and font for the data cells in the control, considering the *“Discontinued”* cell’s value:
-        ![listview-formatting-items 002](images/listview-formatting-items002.png)#_[C#] Customizing cells_
+Let’s assume that the __RadListView__ is bound to the *Products* table from the *Northwind* database. The code snippet below demonstrates how to apply different colors and font for the data cells in the control, considering the *“Discontinued”* cell’s value:<br>![listview-formatting-items 002](images/listview-formatting-items002.png)
 
-	
-
-
+#### Customizing cells
 
 {{source=..\SamplesCS\ListView\ListViewFormattingItems.cs region=CellFormatting}} 
 {{source=..\SamplesVB\ListView\ListViewFormattingItems.vb region=CellFormatting}} 

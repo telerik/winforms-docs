@@ -1,5 +1,5 @@
 ---
-title: View Definitions Overview
+title: Overview
 page_title: Overview | UI for WinForms Documentation
 description: Overview
 slug: winforms/gridview/view-definitions/overview

@@ -12,17 +12,7 @@ position: 2
 
 
 
-This article will guide you through the process of achieving drag and drop functionality from
-        __RadListView__ to __RadGridView__ and vice versa. 
-        For this purpose, we will use the __RadDragDropService__, supported by both of the controls.
-        Let’s assume that the __RadListView__  is in unbound mode and the __ViewType__ 
-        property is set to *DetailsView*. The __RadGridView__ is bound to a
-        DataTable with identical columns as the manually added ones to the __RadListView__.
-         #_[C#] _
-
-	
-
-
+This article will guide you through the process of achieving drag and drop functionality from __RadListView__ to __RadGridView__ and vice versa. For this purpose, we will use the __RadDragDropService__, supported by both of the controls. Let’s assume that the __RadListView__  is in unbound mode and the __ViewType__ property is set to *DetailsView*. The __RadGridView__ is bound to a DataTable with identical columns as the manually added ones to the __RadListView__.
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropRadDragDropService.cs region=PopulateWithData}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropRadDragDropService.vb region=PopulateWithData}} 
@@ -103,15 +93,7 @@ This article will guide you through the process of achieving drag and drop funct
 
 ## Drag and Drop from RadGridView to RadListView![listview-drag-and-drop-drag-and-drop-using-raddragdropservice 001](images/listview-drag-and-drop-drag-and-drop-using-raddragdropservice001.gif)
 
-1. The first thing we need to do is to start the __RadGridView__’s
-              drag and drop service when a user clicks on a row with the left mouse down.
-              For this purpose we should create a custom
-              [grid behavior]({%slug winforms/gridview/rows/row-behaviors%}):
-            #_[C#] _
-
-	
-
-
+1\. The first thing we need to do is to start the __RadGridView__’s drag and drop service when a user clicks on a row with the left mouse down. For this purpose we should create a custom [grid behavior]({%slug winforms/gridview/rows/row-behaviors%}):
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropRadDragDropService.cs region=RowBehavior}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropRadDragDropService.vb region=RowBehavior}} 
@@ -154,15 +136,7 @@ This article will guide you through the process of achieving drag and drop funct
 
 {{endregion}} 
 
-
-
-
-1. Next, we should register this behavior in our grid:
-            #_[C#] _
-
-	
-
-
+2\. Next, we should register this behavior in our grid:
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropRadDragDropService.cs region=RegisterRowBehavior}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropRadDragDropService.vb region=RegisterRowBehavior}} 
@@ -186,19 +160,7 @@ This article will guide you through the process of achieving drag and drop funct
 
 {{endregion}} 
 
-
-
-
-1. It is necessary to subscribe to the __PreviewDragStart__, __PreviewDragOver__ and __PreviewDragDrop__ 
-              events of the grid’s __RadDragDropService__. The __PreviewDragStart__ event is fired once the drag and drop service
-              on the grid is started. We should notify the service that the drag and drop operation can move forward. In the __PreviewDragOver__  
-              event you can control on what targets to allow dropping the dragged row. The __PreviewDragDrop__ event performs the actual 
-              move of the row from the __RadGridView__ to the __RadListView__.
-            #_[C#] _
-
-	
-
-
+3\. It is necessary to subscribe to the __PreviewDragStart__, __PreviewDragOver__ and __PreviewDragDrop__ events of the grid’s __RadDragDropService__. The __PreviewDragStart__ event is fired once the drag and drop service on the grid is started. We should notify the service that the drag and drop operation can move forward. In the __PreviewDragOver__  event you can control on what targets to allow dropping the dragged row. The __PreviewDragDrop__ event performs the actual move of the row from the __RadGridView__ to the __RadListView__.
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropRadDragDropService.cs region=GridViewToListView}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropRadDragDropService.vb region=GridViewToListView}} 
@@ -295,23 +257,13 @@ This article will guide you through the process of achieving drag and drop funct
 
 {{endregion}} 
 
+## Drag and Drop from RadListView to RadGridView
 
+![listview-drag-and-drop-drag-and-drop-using-raddragdropservice 002](images/listview-drag-and-drop-drag-and-drop-using-raddragdropservice002.gif)
 
+1\. In order to enable dragging an item from the __RadListView__ and dropping it onto the __RadGridView__, it is necessary to set the RadListView.__AllowDragDrop__ property to *true*.
 
-## Drag and Drop from RadListView to RadGridView![listview-drag-and-drop-drag-and-drop-using-raddragdropservice 002](images/listview-drag-and-drop-drag-and-drop-using-raddragdropservice002.gif)
-
-1. In order to enable dragging an item from the __RadListView__ and dropping it onto the __RadGridView__, 
-            it is necessary to set the RadListView.__AllowDragDrop__ property to *true*.
-
-1. To implement drag and drop functionality for this scenario, we will use the ListViewElement.__DragDropService__, 
-            which is a derivative of the __RadDragDropService__ . Subscribe to its __PreviewDragOver__  and
-            __PreviewDragDrop__ events. In the __PreviewDragOver__ event allow dropping over a row element or
-            over the table element. The __PreviewDragDrop__ event performs the actual inserting of the dragged item into the
-            __RadGridView__’s data source:#_[C#] _
-
-	
-
-
+2\. To implement drag and drop functionality for this scenario, we will use the ListViewElement.__DragDropService__, which is a derivative of the __RadDragDropService__ . Subscribe to its __PreviewDragOver__  and __PreviewDragDrop__ events. In the __PreviewDragOver__ event allow dropping over a row element or over the table element. The __PreviewDragDrop__ event performs the actual inserting of the dragged item into the __RadGridView__’s data source:
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropRadDragDropService.cs region=ListViewToGridView}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropRadDragDropService.vb region=ListViewToGridView}} 

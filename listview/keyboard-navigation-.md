@@ -5,7 +5,7 @@ description: Keyboard Navigation
 slug: winforms/listview/keyboard-navigation-
 tags: keyboard,navigation,
 published: True
-position: 10
+position: 11
 ---
 
 # Keyboard Navigation 
@@ -15,7 +15,6 @@ position: 10
 ## 
 
 __RadListView__ allows navigation through its item by using keyboard. Two scenarios are supported by default:
-        
 
 * Pressing a character will select consequently each item starting with this character
 
@@ -23,11 +22,6 @@ __RadListView__ allows navigation through its item by using keyboard. Two scenar
             
 
 To enable this functionality a single property setting is needed:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\ListView\ListViewKeyboardNavigation.cs region=KeyboardSearchEnabled}} 
 {{source=..\SamplesVB\ListView\ListViewKeyboardNavigation.vb region=KeyboardSearchEnabled}} 
@@ -49,19 +43,9 @@ To enable this functionality a single property setting is needed:
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-Another property of interest is the __KeyboardSearchResetInterval__. It is used to determine what time between keystrokes will be considered as typing. 
-          Consequent keystrokes with performed faster than the specified interval will be considered typing and once the time elapses, the matching item 
-          (if such) will be selected. Here is how to access this property to change the value of the timer:
-        #_[C#] _
-
-	
-
-
+Another property of interest is the __KeyboardSearchResetInterval__. It is used to determine what time between keystrokes will be considered as typing. Consequent keystrokes with performed faster than the specified interval will be considered typing and once the time elapses, the matching item (if such) will be selected. Here is how to access this property to change the value of the timer:
 
 {{source=..\SamplesCS\ListView\ListViewKeyboardNavigation.cs region=KeyboardSearchResetInterval}} 
 {{source=..\SamplesVB\ListView\ListViewKeyboardNavigation.vb region=KeyboardSearchResetInterval}} 

@@ -5,7 +5,7 @@ description: Checkboxes and editors
 slug: winforms/listview/checkboxes-and-editors
 tags: checkboxes,and,editors
 published: True
-position: 7
+position: 8
 ---
 
 # Checkboxes and editors
@@ -14,49 +14,31 @@ position: 7
 
 ## Checkboxes
 
-RadListViews' items have built-in checkboxes which can be shown by setting the
-          __ShowCheckBoxes__ property of RadListView to *true*.
-        
+RadListViews' items have built-in checkboxes which can be shown by setting the __ShowCheckBoxes__ property of RadListView to *true*.
 
 When checkboxes are enabled, you have several options to handle the checked items:
 
 * You can check or uncheck items via the checkbox that is shown in each item
 
-* You can get or set the checked state of the __ListViewDataItem__ directly via
-              its __CheckedState__ property
-            
+* You can get or set the checked state of the __ListViewDataItem__ directly via its __CheckedState__ property
 
 * You can get the checked items in RadListView via its __CheckedItems__ collection
-            
 
-* You can listen for changes in the check state of the items via the __ItemCheckedChanging__
-              and __ItemCheckedChanged__ events.
-            
+* You can listen for changes in the check state of the items via the __ItemCheckedChanging__ and __ItemCheckedChanged__ events.
 
 ## Editors
 
-By default RadListView allows editing of items. If the __AllowEditing__ property is
-          set to *true*, the user may select a item and press __F2 key__
-          to initiate editing. By default a text editor is invoked and allows the editing of the items' label.
-          When the edit process ends the entered value is assigned to the items' __Value__ property.
-          If the user cancels editing by pressing __Escape key__ the value is not persisted.
-          Editing can also be initiated and canceled programmatically.
-        
+By default RadListView allows editing of items. If the __AllowEditing__ property is set to *true*, the user may select a item and press __F2 key__ to initiate editing. By default a text editor is invoked and allows the editing of the items' label. When the edit process ends the entered value is assigned to the items' __Value__ property. If the user cancels editing by pressing __Escape key__ the value is not persisted. Editing can also be initiated and canceled programmatically.
 
 * Use the __BeginEdit()__ method to initiate editing on the selected item
-            
 
 * Use the __EndEdit()__ method to end editing and save the edited value.
-            
 
 * Use the __CancelEdit()__ method to end editing and discard the edited value.
-            
 
-The sample code below shows how to start editing using the API:#_[C#] Start editing_
+The sample code below shows how to start editing using the API:
 
-	
-
-
+#### Start editing
 
 {{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=startEdit}} 
 {{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=startEdit}} 
@@ -83,58 +65,33 @@ The sample code below shows how to start editing using the API:#_[C#] Start edit
 
 {{endregion}} 
 
-
-
-
 ## Editing lifecycle
 
-When an item is displayed in RadListView and the user presses __F2 key__ to enter edit mode,
-          the following steps are performed:
-        
+When an item is displayed in RadListView and the user presses __F2 key__ to enter edit mode, the following steps are performed:
 
 * The __BeginEdit()__ method is called internally
-            
 
-* The __ItemEditing__ event is fired. This event is cancelable and
-              you can prevent the edit operation from continuing by setting the Cancel property from the arguments to
-              *false*.
-            
+* The __ItemEditing__ event is fired. This event is cancelable and you can prevent the edit operation from continuing by setting the Cancel property from the arguments to *false*.
 
-* .A text box editor appears in the selected item.
+* A text box editor appears in the selected item.
 
 When an item is brought out of edit mode, the following steps are performed:
 
 * The editor determines if it wants to handle the keystroke - for example Esc - cancels editing, Enter ends editing and submits changes.
 
-* The editor instance performs the action it has defined for the __Enter__ key.
-              Typically this indicates that edit mode should be exited and any changes made during the edit session
-              should be saved.
-            
+* The editor instance performs the action it has defined for the __Enter__ key. Typically this indicates that edit mode should be exited and any changes made during the edit session should be saved.
 
-* In response to the action described in the previous step the __EndEdit()__ method is
-              called internally and the __ItemValidating__ event is fired.
-            
+* In response to the action described in the previous step the __EndEdit()__ method is called internally and the __ItemValidating__ event is fired.
 
-* The __ValueValidating__ event allows the user to hook up custom logic for verification.
-              If the __ValueValidating__ event does not succeed (*e.Cancel is true*),
-              __ValidationError__ event is fired to notify all listeners that the validation
-              has failed.
-            
+* The __ValueValidating__ event allows the user to hook up custom logic for verification. If the __ValueValidating__ event does not succeed (*e.Cancel is true*), __ValidationError__ event is fired to notify all listeners that the validation has failed.
 
-* Follows the __ItemValueChanging__ event via which you can cancel
-              assigning a new value to the item.
-            
+* Follows the __ItemValueChanging__ event via which you can cancel assigning a new value to the item.
 
-* If the previous event was not canceled, the new value is assigned to the item
-              and the __ItemValueChanged__ event is fired.
-            
+* If the previous event was not canceled, the new value is assigned to the item and the __ItemValueChanged__ event is fired.
 
-The Following example demonstrates the usage of __ItemValidating__ event to edit integer values:
-        #_[C#] Validation_
+The Following example demonstrates the usage of __ItemValidating__ event to edit integer values: 
 
-	
-
-
+#### Validation
 
 {{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=ItemValidating}} 
 {{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=ItemValidating}} 
@@ -174,25 +131,15 @@ The Following example demonstrates the usage of __ItemValidating__ event to edit
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Switching Editors
 
-When edit operation is about to begin, the __EditorRequired__ event is fired.
-          By using this event, you can replace the default text box editor with one of the four built-in editors
-          that RadListView provides: __ListViewTextBoxEditor__;
-          __ListViewDropDownListEditor__; __ListViewSpinEditor__;
-          __ListViewDateTimeEditor__. You can also provide a custom instance as an editor.
-        
+When edit operation is about to begin, the __EditorRequired__ event is fired. By using this event, you can replace the default text box editor with one of the four built-in editors that RadListView provides: __ListViewTextBoxEditor__; __ListViewDropDownListEditor__; __ListViewSpinEditor__; __ListViewDateTimeEditor__. You can also provide a custom instance as an editor.
 
-The following example shows how you can use the predefined editors:#_[C#] Start editing_
+The following example shows how you can use the predefined editors:
 
-	
-
-
+#### Start editing
 
 {{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=usePredefinedEditors}} 
 {{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=usePredefinedEditors}} 

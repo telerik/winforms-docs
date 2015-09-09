@@ -239,6 +239,15 @@ navigation:
     listview:
         title: ListView
         position: 26
+    listview/working-with-design-time:
+        title: Working with design time
+        position: 3
+    listview/features:
+        title: Features
+        position: 4
+    listview/drag-and-drop:
+        title: Drag and Drop
+        position: 7
     menus:
         title: Menus
         position: 27
