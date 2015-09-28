@@ -25,12 +25,7 @@ Here is how to read the values of an __Hlc__ point:
 | ------ |
 |![chartview-series-types-hlc 001](images/chartview-series-types-hlc001.png)|
 
-Here is how to setup the __Hlc__ series:
-    #_[C#] _
-
-	
-
-
+Here is how to setup the __Hlc__ series: 
 
 {{source=..\SamplesCS\ChartView\Series\HlcSeriesForm.cs region=hlc}} 
 {{source=..\SamplesVB\ChartView\Series\HlcSeriesForm.vb region=hlc}} 

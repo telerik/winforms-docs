@@ -12,16 +12,10 @@ position: 4
 
 
 
-RadChartView areas, which support axes, can render a grid that facilitate the process of determining the values 
-      	of points afar from the axes. Since Pie area does not use axes, the grid is valid only the context of Cartesian and Polar areas.
-      	Here is how to set up the grid of both areas:
+RadChartView areas, which support axes, can render a grid that facilitate the process of determining the values of points afar from the axes. Since Pie area does not use axes, the grid is valid only the context of Cartesian and Polar areas. Here is how to set up the grid of both areas:
       
 
-## Cartesian Grid#_[C#] _
-
-	
-
-
+## Cartesian Grid  
 
 {{source=..\SamplesCS\ChartView\ChartGrid.cs region=cartesian}} 
 {{source=..\SamplesVB\ChartView\ChartGrid.vb region=cartesian}} 
@@ -90,11 +84,7 @@ The essential properties of CartesianGrid are the following:
 
 * __AlternatingBackColor2__ – the property sets the color of the fill of the alternating horizontal sectors. The property takes effect only when the AlternatingHorizontalColor and DrawHorizontalFills properties are set to true;
 
-## Polar Grid#_[C#] _
-
-	
-
-
+## Polar Grid 
 
 {{source=..\SamplesCS\ChartView\ChartGrid.cs region=polar}} 
 {{source=..\SamplesVB\ChartView\ChartGrid.vb region=polar}} 

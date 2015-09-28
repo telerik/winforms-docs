@@ -14,25 +14,10 @@ position: 4
 
 ## 
 
-Along with tooltip and pan/zoom controllers, RadChartView provides a trackball
-          behavior through the __ChartTrackballController__ class.
-          This controller can display a vertical line across the chart plot area and
-          also to display little visual indicators (circles by default) at points where
-          the trackball line crosses the visualization of a series object.
-          For example when the trackball line crosses a line series line segment,
-          a small circle is drawn highlighting the value of the series at this point.
-          The last capability of the trackball behavior is to display a small popup,
-          similar to the tooltip, in order to provide more detailed information
-          about the closest points to the track ball line's cross section.
+Along with tooltip and pan/zoom controllers, RadChartView provides a trackball behavior through the __ChartTrackballController__ class. This controller can display a vertical line across the chart plot area and also to display little visual indicators (circles by default) at points where the trackball line crosses the visualization of a series object. For example when the trackball line crosses a line series line segment, a small circle is drawn highlighting the value of the series at this point. The last capability of the trackball behavior is to display a small popup, similar to the tooltip, in order to provide more detailed information about the closest points to the track ball line's cross section.
         
 
-In order to utilize this behavior users simply have to
-          add it to the chart's __Controllers__ collection. For example:
-        #_[C#] _
-
-	
-
-
+In order to utilize this behavior users simply have to add it to the chart's __Controllers__ collection. For example: 
 
 {{source=..\SamplesCS\ChartView\Features\Trackball.cs region=controller}} 
 {{source=..\SamplesVB\ChartView\Features\Trackball.vb region=controller}} 
@@ -46,17 +31,9 @@ In order to utilize this behavior users simply have to
 ````
 
 {{endregion}} 
+ 
 
-
-
-
-The ChartTrackballController will be added automatically if the __ShowTrackBall__ property of RadChartView control is set to *true*:
-        
-        #_[C#] _
-
-	
-
-
+The ChartTrackballController will be added automatically if the __ShowTrackBall__ property of RadChartView control is set to *true*: 
 
 {{source=..\SamplesCS\ChartView\Features\Trackball.cs region=showTrackBall}} 
 {{source=..\SamplesVB\ChartView\Features\Trackball.vb region=showTrackBall}} 
@@ -70,16 +47,9 @@ The ChartTrackballController will be added automatically if the __ShowTrackBall_
 ````
 
 {{endregion}} 
+ 
 
-
-
-
-A sample is shown below:
-        #_[C#] _
-
-	
-
-
+A sample is shown below: 
 
 {{source=..\SamplesCS\ChartView\Features\Trackball.cs region=example}} 
 {{source=..\SamplesVB\ChartView\Features\Trackball.vb region=example}} 

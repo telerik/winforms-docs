@@ -14,17 +14,8 @@ position: 4
 
 ## 
 
-Unlike Categorical series, __ScatterSeries__ plots its data upon two numerical axes.
-          Scatter series identify the position of each __ScatterDataPoint__ using two numerical values
-          - *XValue* and *YValue* for the horizontal and vertical axes
-          respectively, just like in the typical Cartesian coordinate system. Here is how to create two ScatterSeries
-          and populate them manually:
-
-        #_[C#] _
-
-	
-
-
+Unlike Categorical series, __ScatterSeries__ plots its data upon two numerical axes. Scatter series identify the position of each __ScatterDataPoint__ using two numerical values - *XValue* and *YValue* for the horizontal and vertical axes respectively, just like in the typical Cartesian coordinate system. Here is how to create two ScatterSeries and populate them manually:
+ 
 
 {{source=..\SamplesCS\ChartView\Series\ScatterSeriesForm.cs region=scatter}} 
 {{source=..\SamplesVB\ChartView\Series\ScatterSeriesForm.vb region=scatter}} 
@@ -90,12 +81,7 @@ __ScatterSeries__ have few important properties:
 * __YValueMember__ – if a DataSource is set, the property determines the name of the field that holds the YValue.
             
 
-* __Shape__ – to change the shape of a series points use the Shape property of the series
-            #_[C#] _
-
-	
-
-
+* __Shape__ – to change the shape of a series points use the Shape property of the series 
 
 {{source=..\SamplesCS\ChartView\Series\ScatterSeriesForm.cs region=shape}} 
 {{source=..\SamplesVB\ChartView\Series\ScatterSeriesForm.vb region=shape}} 

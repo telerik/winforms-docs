@@ -12,17 +12,11 @@ position: 7
 
 
 
-The Bezier chart displays a series of points on a curved line.  Two "control points" determine the position and amount of curvature
-      in the line between end points.![chartview-series-types-bezier 001](images/chartview-series-types-bezier001.png)
+The Bezier chart displays a series of points on a curved line.  Two "control points" determine the position and amount of curvature in the line between end points.
+![chartview-series-types-bezier 001](images/chartview-series-types-bezier001.png)
 
 ## 
-
-#_[C#] _
-
-	
-
-
-
+ 
 {{source=..\SamplesCS\ChartView\Series\BezierSeriesForm.cs region=Bezier}} 
 {{source=..\SamplesVB\ChartView\Series\BezierSeriesForm.vb region=Bezier}} 
 
@@ -61,10 +55,7 @@ The Bezier chart displays a series of points on a curved line.  Two "control poi
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 Here are some of the important properties of __BezierSeries__:
         
 

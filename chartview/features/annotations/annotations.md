@@ -39,4 +39,4 @@ The __RadChartView__ provides the following types of annotations:
           
 
 * Radial Axis PlotBand (associated with the radial axis)
-          ![chartview-annotations 001](images/chartview-annotations001.png)
+![chartview-annotations 001](images/chartview-annotations001.png)

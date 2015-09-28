@@ -1,11 +1,11 @@
 ---
-title: DataBinding
+title: Overview
 page_title: DataBinding | UI for WinForms Documentation
 description: DataBinding
 slug: winforms/chartview-/databinding
 tags: databinding
 published: True
-position: 7
+position: 0
 ---
 
 # DataBinding
@@ -14,13 +14,10 @@ position: 7
 
 ## 
 
-RadChartView can be bound to a wide variety of data-sources. The data-source must implement __IEnumerable__ interface
-          in general. You can further customize the binding of __RadChartView__ using
-          __ITypedList/ICustomTypeDescriptor/INotifyPropertyChange__ interfaces together with your business objects.
+RadChartView can be bound to a wide variety of data-sources. The data-source must implement __IEnumerable__ interface in general. You can further customize the binding of __RadChartView__ using __ITypedList/ICustomTypeDescriptor/INotifyPropertyChange__ interfaces together with your business objects.
         
 
-RadChartView follows the standard Windows Forms data-binding model. It can data bind to any data-source implementing one
-              of the following interfaces:
+RadChartView follows the standard Windows Forms data-binding model. It can data bind to any data-source implementing one of the following interfaces:
             
 
 * __IList__ interface for one-dimensional arrays.
@@ -35,8 +32,7 @@ RadChartView follows the standard Windows Forms data-binding model. It can data 
 * __IBindingListView__ interface. For example BindingSource class.
                 
 
-The actual binding is performed on the desired __ChartSeries__ descendant. Here is a list of the series types together
-          with the properties needed for successful binding:
+The actual binding is performed on the desired __ChartSeries__ descendant. Here is a list of the series types together with the properties needed for successful binding:
         
 
 * __BarSeries__ - DataSource and ValueMember are the necessary properties. CategoryMember is optional - if it is not set, the categories will be automatically numerated.

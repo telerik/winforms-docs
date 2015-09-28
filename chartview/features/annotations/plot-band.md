@@ -36,10 +36,7 @@ Cartesian plot band annotation is either a horizontal or a vertical stripe that 
       
 
 Here is what __CartesianPlotBandAnnotation__ looks like:
-      ![chartview-annotations-plotband-annotations 001](images/chartview-annotations-plotband-annotations001.png)#_[C#] _
-
-	
-
+![chartview-annotations-plotband-annotations 001](images/chartview-annotations-plotband-annotations001.png)
 
 
 {{source=..\SamplesCS\ChartView\Annotations\PlotBand.cs region=CartesianPlotBand}} 
@@ -86,9 +83,7 @@ Here is what __CartesianPlotBandAnnotation__ looks like:
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 Properties:
         
@@ -108,10 +103,7 @@ The Polar axis plot band annotation resembles a donut.
       
 
 Here is what __PolarAxisPlotBandAnnotation__ looks like:
-      ![chartview-annotations-plotband-annotations 002](images/chartview-annotations-plotband-annotations002.png)#_[C#] _
-
-	
-
+![chartview-annotations-plotband-annotations 002](images/chartview-annotations-plotband-annotations002.png)
 
 
 {{source=..\SamplesCS\ChartView\Annotations\PlotBand.cs region=PolarPlotBand}} 
@@ -159,9 +151,7 @@ Radial axis plot band annotations represent visually a sector of the circle (pie
       
 
 A plot band starting from *180* degrees and ending in *270* degrees will look like this:
-      ![chartview-annotations-plotband-annotations 003](images/chartview-annotations-plotband-annotations003.png)#_[C#] _
-
-	
+![chartview-annotations-plotband-annotations 003](images/chartview-annotations-plotband-annotations003.png)
 
 
 
@@ -186,12 +176,8 @@ A plot band starting from *180* degrees and ending in *270* degrees will look li
 
 
 
-
 If you wonder how to annotate the bigger segment from the image above, then you should use the __From__ and __To__ values.
-      ![chartview-annotations-plotband-annotations 004](images/chartview-annotations-plotband-annotations004.png)#_[C#] _
-
-	
-
+![chartview-annotations-plotband-annotations 004](images/chartview-annotations-plotband-annotations004.png)
 
 
 {{source=..\SamplesCS\ChartView\Annotations\PlotBand.cs region=RadialPlotBand2}} 
@@ -212,9 +198,6 @@ If you wonder how to annotate the bigger segment from the image above, then you 
 ````
 
 {{endregion}} 
-
-
-
 
 Properties:
         

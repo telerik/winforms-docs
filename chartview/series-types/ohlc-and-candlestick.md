@@ -10,30 +10,20 @@ position: 13
 
 # Ohlc and Candlestick
 
-
-
+ 
 ## 
 
-RadChartView introduces support for stock series – both __Ohlc (Open-High-Low-Close)__ and
-          __Candlestick__. These series operate with special data points which hold information about
-          each the following parameters: *open, high, low, close*. As members of the
-          __Categorical__ series, stock series plot their data upon a categorical (or __DateTimeCategorical__) axis.
+RadChartView introduces support for stock series – both __Ohlc (Open-High-Low-Close)__ and __Candlestick__. These series operate with special data points which hold information about each the following parameters: *open, high, low, close*. As members of the __Categorical__ series, stock series plot their data upon a categorical (or __DateTimeCategorical__) axis.
         
 
-__Ohlc__ and __Candlestick__ series are indeed two alternative ways to visualize
-          the same data. Here is how to read the values of an __Ohlc__ and __Candlestick__ point:
-        
-
+__Ohlc__ and __Candlestick__ series are indeed two alternative ways to visualize the same data. Here is how to read the values of an __Ohlc__ and __Candlestick__ point:
+ 
 
 |  __Ohlc__  |  __Candlestick__  |
 | ------ | ------ |
 |![chartview-series-types-ohlc-and-candlestick 001](images/chartview-series-types-ohlc-and-candlestick001.png)|![chartview-series-types-ohlc-and-candlestick 002](images/chartview-series-types-ohlc-and-candlestick002.png)|
 
-Here is how to setup Ohlc series:#_[C#] _
-
-	
-
-
+Here is how to setup Ohlc series: 
 
 {{source=..\SamplesCS\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.cs region=ohlc}} 
 {{source=..\SamplesVB\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.vb region=ohlc}} 

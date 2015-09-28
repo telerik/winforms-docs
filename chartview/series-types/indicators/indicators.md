@@ -9,25 +9,12 @@ position: 0
 ---
 
 # Indicators
-
-
-
+ 
 ## 
 
-RadChartView offers more than 20 of the most frequently used technical indicators out of the box. The indicators compilation
-          contains representatives of the moving average, momentum, volatility, and band categories. In their essence, indicators are
-          line series that calculate each of their values using predefined interpretations of the incoming data. The simplest example
-          would be the Moving Average, aka. Simple Moving Average, indicator, which averages the data for a certain number of past days.
-          Each indicator type introduces a specific set of properties that allows you to change the parameters of the built-in formula.
-          This article demonstrates how to setup two of the most popular indicators - Moving Average (MA) and Bollinger Bands.
-        
+RadChartView offers more than 20 of the most frequently used technical indicators out of the box. The indicators compilation contains representatives of the moving average, momentum, volatility, and band categories. In their essence, indicators are line series that calculate each of their values using predefined interpretations of the incoming data. The simplest example would be the Moving Average, aka. Simple Moving Average, indicator, which averages the data for a certain number of past days. Each indicator type introduces a specific set of properties that allows you to change the parameters of the built-in formula. This article demonstrates how to setup two of the most popular indicators - Moving Average (MA) and Bollinger Bands. 
 
-Let's start with creating some meaningful data that will be used by both indicators
-        #_[C#] _
-
-	
-
-
+Let's start with creating some meaningful data that will be used by both indicators 
 
 {{source=..\SamplesCS\ChartView\Series\Indicators\IndicatorsOverviewForm.cs region=IndicatorsCommonData}} 
 {{source=..\SamplesVB\ChartView\Series\Indicators\IndicatorsOverviewForm.vb region=IndicatorsCommonData}} 
@@ -62,18 +49,10 @@ Let's start with creating some meaningful data that will be used by both indicat
 
 {{endregion}} 
 
-
-
-
+ 
 ## Moving Average Indicator
 
-Each value of MA is the average of past __n__ days, where __n__ is a parameter
-          defined by the __Period__ property.
-        #_[C#] _
-
-	
-
-
+Each value of MA is the average of past __n__ days, where __n__ is a parameter defined by the __Period__ property. 
 
 {{source=..\SamplesCS\ChartView\Series\Indicators\IndicatorsOverviewForm.cs region=ma}} 
 {{source=..\SamplesVB\ChartView\Series\Indicators\IndicatorsOverviewForm.vb region=ma}} 
@@ -131,9 +110,7 @@ Each value of MA is the average of past __n__ days, where __n__ is a parameter
 
 ## Bollinger Bands Indicator
 
-The indicator consists of two bands that aim to provide a relative definition of high and low.
-          The indicator uses a simple __Moving Average__ as a starting point and forms its
-          two bands using the following formulas:
+The indicator consists of two bands that aim to provide a relative definition of high and low. The indicator uses a simple __Moving Average__ as a starting point and forms its two bands using the following formulas:
         
 
 * __Upper band__: N-period MA + (N-period standard deviation * K)
@@ -145,12 +122,7 @@ The indicator consists of two bands that aim to provide a relative definition of
 * __N__ is defined by the Period property. A typical value for N is 20.
             
 
-* __K__ is defined by the StandardDeviations property. A typical value for K is 2.
-            #_[C#] _
-
-	
-
-
+* __K__ is defined by the StandardDeviations property. A typical value for K is 2. 
 
 {{source=..\SamplesCS\ChartView\Series\Indicators\IndicatorsOverviewForm.cs region=Bands}} 
 {{source=..\SamplesVB\ChartView\Series\Indicators\IndicatorsOverviewForm.vb region=Bands}} 

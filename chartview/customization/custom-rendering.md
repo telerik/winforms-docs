@@ -43,12 +43,7 @@ For the purpose of the article, let us make the following assumptions:
 
 The following image illustrates the desired outcome:![chartview-customization-custom-rendering 001](images/chartview-customization-custom-rendering001.png)
 
-The starting point of the article is a form with one RadChartView on it. In the form’s Load event handler create a LineSeries instance and add categorical data points. The current example generates random values that fall in the range of 0 – 30. After adding the series to the RadChartView.Series collection, set the LabelFormat and LabelFitMode of the HorizontalAxis and VerticalAxis properties of the series to appropriate values. Further, subscribe to the CreateRenderer of the RadChartView and instantiate the Renderer property of the event arguments to a new CustomCartesianRederer instance. The CreateRenderer event allows you to plug any custom implementation of chart renderer. Here is how your snippet should look like:
-        #_[C#] _
-
-	
-
-
+The starting point of the article is a form with one RadChartView on it. In the form’s Load event handler create a LineSeries instance and add categorical data points. The current example generates random values that fall in the range of 0 – 30. After adding the series to the RadChartView.Series collection, set the LabelFormat and LabelFitMode of the HorizontalAxis and VerticalAxis properties of the series to appropriate values. Further, subscribe to the CreateRenderer of the RadChartView and instantiate the Renderer property of the event arguments to a new CustomCartesianRederer instance. The CreateRenderer event allows you to plug any custom implementation of chart renderer. Here is how your snippet should look like: 
 
 {{source=..\SamplesCS\ChartView\Customization\CustomRenderer.cs region=CustomRendererRegion}} 
 {{source=..\SamplesVB\ChartView\Customization\CustomRenderer.vb region=CustomRendererRegion}} 
@@ -114,16 +109,9 @@ End Class
 ````
 
 {{endregion}} 
+ 
 
-
-
-
-Now you need to create a CustomCartesianRenderer class that inherits CartesianRenderer and overrides the Initialize method. The Initialize method creates and arranges draw parts responsible for the rendering of each RadChartView segment. After calling the base method, the DrawParts collection contains objects that know how to draw axes, labels, series etc. The particular draw part you would like to replace is of type LineSeriesDrawPart. Your code should be like the following:
-        #_[C#] _
-
-	
-
-
+Now you need to create a CustomCartesianRenderer class that inherits CartesianRenderer and overrides the Initialize method. The Initialize method creates and arranges draw parts responsible for the rendering of each RadChartView segment. After calling the base method, the DrawParts collection contains objects that know how to draw axes, labels, series etc. The particular draw part you would like to replace is of type LineSeriesDrawPart. Your code should be like the following: 
 
 {{source=..\SamplesCS\ChartView\Customization\CustomRenderer.cs region=CustomCartesianRendererRegion}} 
 {{source=..\SamplesVB\ChartView\Customization\CustomRenderer.vb region=CustomCartesianRendererRegion}} 
@@ -172,16 +160,9 @@ End Class
 ````
 
 {{endregion}} 
+ 
 
-
-
-
-Let us further focus on the CustomLineSeriesDrawPart implementation. To introduce custom rendering of the line you need to override the DrawLine method and use the GraphicsPath provided by the GetLinePath method. In order to draw a path with gradient colors, you need to use a LinearGradientBrush and use its ColorBlend to set appropriate positions and colors. So, before we get to the CustomLineSeriesDrawPart class, let us create a class that will let us easily store Color-Position couples:
-        #_[C#] _
-
-	
-
-
+Let us further focus on the CustomLineSeriesDrawPart implementation. To introduce custom rendering of the line you need to override the DrawLine method and use the GraphicsPath provided by the GetLinePath method. In order to draw a path with gradient colors, you need to use a LinearGradientBrush and use its ColorBlend to set appropriate positions and colors. So, before we get to the CustomLineSeriesDrawPart class, let us create a class that will let us easily store Color-Position couples: 
 
 {{source=..\SamplesCS\ChartView\Customization\CustomRenderer.cs region=ColorPositionBlendRegion}} 
 {{source=..\SamplesVB\ChartView\Customization\CustomRenderer.vb region=ColorPositionBlendRegion}} 
@@ -256,17 +237,9 @@ End Class
 '
 ````
 
-{{endregion}} 
+{{endregion}}  
 
-
-
-
-Getting back to the CustomLineSeriesDrawPart, you need to create a method which calculates the positions and colors that need to be assigned to the ColorBlend of the brush. Additionally, you have to calculate the color of the points that fall between two predefined values, e.g. if the input value is 16, the color should be one fifth orange and four fifths red. Further, you have to make sure that the line segments between each two consecutive points are colored properly, regardless of points’ values. For example, if a point with value 0 is followed by a point with value 30, you need to ensure that the line that connects them does not go from green to dark red directly, but contains also orange and red when it crosses 15 and 20, respectively. Here is one possible implementation of the above scenario:
-        #_[C#] _
-
-	
-
-
+Getting back to the CustomLineSeriesDrawPart, you need to create a method which calculates the positions and colors that need to be assigned to the ColorBlend of the brush. Additionally, you have to calculate the color of the points that fall between two predefined values, e.g. if the input value is 16, the color should be one fifth orange and four fifths red. Further, you have to make sure that the line segments between each two consecutive points are colored properly, regardless of points’ values. For example, if a point with value 0 is followed by a point with value 30, you need to ensure that the line that connects them does not go from green to dark red directly, but contains also orange and red when it crosses 15 and 20, respectively. Here is one possible implementation of the above scenario: 
 
 {{source=..\SamplesCS\ChartView\Customization\CustomRenderer.cs region=CustomLineSeriesDrawPartRegion}} 
 {{source=..\SamplesVB\ChartView\Customization\CustomRenderer.vb region=CustomLineSeriesDrawPartRegion}} 
@@ -502,8 +475,7 @@ End Class
 ````
 
 {{endregion}} 
+ 
 
-
-
-
-After you compile the project, you should get a result similar to the screenshot below:![chartview-customization-custom-rendering 002](images/chartview-customization-custom-rendering002.png)
+After you compile the project, you should get a result similar to the screenshot below:
+![chartview-customization-custom-rendering 002](images/chartview-customization-custom-rendering002.png)

@@ -12,21 +12,12 @@ position: 6
 
 
 
-RadChartView has built-in support for legends – descriptions about the charts on the plot. The items displayed in the legend 
-        are series specific i.e. for the pie chart the data points are shown in the legend, whereas for line series only one item is shown for each series.
+RadChartView has built-in support for legends – descriptions about the charts on the plot. The items displayed in the legend are series specific i.e. for the pie chart the data points are shown in the legend, whereas for line series only one item is shown for each series. 
+
+## Show Legend
       
 
-## 
-        Show Legend
-      
-
-The __ShowLegend__ property of RadChartView controls whether the legend is visible or not. The default value is 
-          *false*. The legend supports showing a legend title, which text can be set via the __LegendTitle__ property.
-        #_[C#] _
-
-	
-
-
+The __ShowLegend__ property of RadChartView controls whether the legend is visible or not. The default value is *false*. The legend supports showing a legend title, which text can be set via the __LegendTitle__ property. 
 
 {{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=ShowLegend}} 
 {{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=ShowLegend}} 
@@ -47,17 +38,10 @@ The __ShowLegend__ property of RadChartView controls whether the legend is visib
 
 ![chartview-features-legend 001](images/chartview-features-legend001.png)
 
-## 
-        Customize legend
+##  Customize legend
       
 
-The location of the title can be modified by the __TitlePosition__ property. Additional modification of
-            the title can be introduced by using the __TitleElement__:
-          #_[C#] _
-
-	
-
-
+The location of the title can be modified by the __TitlePosition__ property. Additional modification of the title can be introduced by using the __TitleElement__: 
 
 {{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=CustomizeLegendTitle}} 
 {{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=CustomizeLegendTitle}} 
@@ -80,9 +64,7 @@ The location of the title can be modified by the __TitlePosition__ property. Add
 
 ![chartview-features-legend 002](images/chartview-features-legend002.png)
 
-You can dock the legend to each of the four sides of the control by setting the __LegendPosition__ property.#_[C#] _
-
-	
+You can dock the legend to each of the four sides of the control by setting the __LegendPosition__ property. 
 
 
 
@@ -103,17 +85,11 @@ You can dock the legend to each of the four sides of the control by setting the 
 
 ![chartview-features-legend 003](images/chartview-features-legend003.png)
 
-Alternatively, you can set it to float over the chart view. Here is how to set the legend to stay at position 
-          *200 , 0* over the chart area.
+Alternatively, you can set it to float over the chart view. Here is how to set the legend to stay at position  *200 , 0* over the chart area.
         
 
->note The __LegendOffset__ property is only taken into consideration when 
-            the __LegendPosition__ is set to *“Float”* .
->
-#_[C#] _
-
-	
-
+>note The __LegendOffset__ property is only taken into consideration when the __LegendPosition__ is set to *“Float”* .
+> 
 
 
 {{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=LegendPositionFloat}} 
@@ -135,19 +111,10 @@ Alternatively, you can set it to float over the chart view. Here is how to set t
 
 ![chartview-features-legend 004](images/chartview-features-legend004.png)
 
-## 
-        Setup LegendItem
+## Setup LegendItem
       
 
-The elements that provide legend items in the case of the Pie chart are the individual data points. 
-          In all other cases it is the series that provide legend items. You can set two properties to each 
-          provider which controls their representation in the legend. These two properties are 
-          __IsVisibleInLegend__ and __LegendTitle__.
-        #_[C#] _
-
-	
-
-
+The elements that provide legend items in the case of the Pie chart are the individual data points. In all other cases it is the series that provide legend items. You can set two properties to each provider which controls their representation in the legend. These two properties are __IsVisibleInLegend__ and __LegendTitle__. 
 
 {{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=LegendProperties}} 
 {{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=LegendProperties}} 
@@ -170,21 +137,10 @@ The elements that provide legend items in the case of the Pie chart are the indi
 
 ![chartview-features-legend 005](images/chartview-features-legend005.png)
 
-## 
-        Modify LegendItem title
+## Modify LegendItem title
       
 
-You have access to the items displayed in the legend through the __Items__ property of 
-          the chart legend. This collection gives you access to the actual legend items that the provider creates.
-          This means that if you change the text in the legend item, the text in the provider (data point or series),
-          will also change. Let’s say you have added the line series from the previous example to the chart and you
-          change the title of the legend item through the legend’s __Items__ collection with the
-          following code, this will actually change the value in the series legend item:
-        #_[C#] _
-
-	
-
-
+You have access to the items displayed in the legend through the __Items__ property of the chart legend. This collection gives you access to the actual legend items that the provider creates. This means that if you change the text in the legend item, the text in the provider (data point or series), will also change. Let’s say you have added the line series from the previous example to the chart and you change the title of the legend item through the legend’s __Items__ collection with the following code, this will actually change the value in the series legend item: 
 
 {{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=ChangeLegendItemText}} 
 {{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=ChangeLegendItemText}} 
@@ -203,18 +159,10 @@ You have access to the items displayed in the legend through the __Items__ prope
 
 ![chartview-features-legend 006](images/chartview-features-legend006.png)
 
-## 
-        Add/Remove LegendItems
+## Add/Remove LegendItems
       
 
-You can add and remove items from the legend through the __Items__ collection. You have to create a new instance of 
-            __LegendItem__ which you will add to the __Items__ collection. You can set the desired style of 
-            the marker through the __Element__ property of the __LegendItem__.
-        #_[C#] _
-
-	
-
-
+You can add and remove items from the legend through the __Items__ collection. You have to create a new instance of __LegendItem__ which you will add to the __Items__ collection. You can set the desired style of the marker through the __Element__ property of the __LegendItem__. 
 
 {{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=AddLegendItem}} 
 {{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=AddLegendItem}} 
@@ -241,25 +189,10 @@ You can add and remove items from the legend through the __Items__ collection. Y
 
 ![chartview-features-legend 007](images/chartview-features-legend007.png)
 
-## 
-        Custom Legend item
+## Custom Legend item
       
 
-You can use your own legend item elements by handling the __VisualItemCreating__ event of the legend.
-          This allows you to change the way legend items are represented in the legend:
-        #_[C#] _
-
-	
-
-#_[C#] _
-
-	
-
-#_[VB.NET] _
-
-	
-
-
+You can use your own legend item elements by handling the __VisualItemCreating__ event of the legend. This allows you to change the way legend items are represented in the legend:  
 
 {{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=CustomLegendItem1}} 
 {{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=CustomLegendItem2}} 

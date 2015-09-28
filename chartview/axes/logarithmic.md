@@ -49,11 +49,7 @@ Valid only in the context of Cartesian Area, Logarithmic axis can be used to plo
 
 Additionally, LinearAxis inherits all properties of the Axis class.
 
-Logarithmic axis is not added by default to Cartesian series. For this reason you will need to create an instance of the LogarithmicAxis class and assign it to the VerticalAxis property of the series, before it is added to the chart. Here is a sample snippet:#_[C#] _
-
-	
-
-
+Logarithmic axis is not added by default to Cartesian series. For this reason you will need to create an instance of the LogarithmicAxis class and assign it to the VerticalAxis property of the series, before it is added to the chart. Here is a sample snippet: 
 
 {{source=..\SamplesCS\ChartView\Axes\LogarithmicAxisForm.cs region=axis}} 
 {{source=..\SamplesVB\ChartView\Axes\LogarithmicAxisForm.vb region=axis}} 

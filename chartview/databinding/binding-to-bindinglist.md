@@ -5,7 +5,7 @@ description: Binding to BindingList
 slug: winforms/chartview-/databinding/binding-to-bindinglist
 tags: binding,to,bindinglist
 published: True
-position: 1
+position: 2
 ---
 
 # Binding to BindingList
@@ -14,14 +14,7 @@ position: 1
 
 ## 
 
-BindingList is a generic list type, that provides additional control over list items, i.e. they can be edited, removed or added.
-          BindingList also surfaces events that notify when the list has been changed. The example below creates a list of MyCustomObject,
-          initializes the list and assigns it to the BarSeries object in RadChartView.
-        #_[C#]_
-
-	
-
-
+BindingList is a generic list type, that provides additional control over list items, i.e. they can be edited, removed or added. BindingList also surfaces events that notify when the list has been changed. The example below creates a list of MyCustomObject, initializes the list and assigns it to the BarSeries object in RadChartView. 
 
 {{source=..\SamplesCS\ChartView\DataBinding\ChartViewDataBindingToBindingList.cs region=binding}} 
 {{source=..\SamplesVB\ChartView\DataBinding\ChartViewDataBindingToBindingList.vb region=binding}} 
@@ -79,12 +72,7 @@ BindingList is a generic list type, that provides additional control over list i
 
 ![chartview-databinding-binding-to-bindinglist 001](images/chartview-databinding-binding-to-bindinglist001.png)
 
-In order to allow RadChartView to automatically reflect changes in the DataSource, your object should implement the INotifyPropertyChanged interface:
-        #_[C#]_
-
-	
-
-
+In order to allow RadChartView to automatically reflect changes in the DataSource, your object should implement the INotifyPropertyChanged interface: 
 
 {{source=..\SamplesCS\ChartView\DataBinding\ChartViewDataBindingToBindingList.cs region=customClass}} 
 {{source=..\SamplesVB\ChartView\DataBinding\ChartViewDataBindingToBindingList.vb region=customClass}} 
@@ -176,13 +164,7 @@ End Class
 
 
 
-Once the interface is implemented and your collection implement IBindingList, just like the BindingList does, changes are automatically reflected.
-        	Here is a sample of adding a new record:
-        #_[C#]_
-
-	
-
-
+Once the interface is implemented and your collection implement IBindingList, just like the BindingList does, changes are automatically reflected. Here is a sample of adding a new record: 
 
 {{source=..\SamplesCS\ChartView\DataBinding\ChartViewDataBindingToBindingList.cs region=addingNewRecord}} 
 {{source=..\SamplesVB\ChartView\DataBinding\ChartViewDataBindingToBindingList.vb region=addingNewRecord}} 

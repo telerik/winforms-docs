@@ -14,13 +14,8 @@ position: 5
 
 ## 
 
-__ScatterAreaSeries__ plot their data using two numerical values. Once positioned on a plane the points are connected to form a line. 
-          Further, the area enclosed by this line and the categorical axis is filled. Below is a sample snippet that demonstrates how to set up two ScaterArea series: 
-        ![chartview-series-scatterarea 001](images/chartview-series-scatterarea001.png)#_[C#]_
-
-	
-
-
+__ScatterAreaSeries__ plot their data using two numerical values. Once positioned on a plane the points are connected to form a line. Further, the area enclosed by this line and the categorical axis is filled. Below is a sample snippet that demonstrates how to set up two ScaterArea series: 
+![chartview-series-scatterarea 001](images/chartview-series-scatterarea001.png) 
 
 {{source=..\SamplesCS\ChartView\Series\ScatterAreraCode.cs region=Area}} 
 {{source=..\SamplesVB\ChartView\Series\ScatterAreraCode.vb region=Area}} 
@@ -82,7 +77,7 @@ The following list shows the most important properties of the ScaterArea series
 
 * __SplineTension:__ The property sets the tension of the spline. The property will have effect only if the Spline property is set to true.
 
-* __StrokeMode:__ This property controls what part of the area border should be marked with line.![chartview-series-scatterarea 002](images/chartview-series-scatterarea002.png)#_[C#]_
+* __StrokeMode:__ This property controls what part of the area border should be marked with line.![chartview-series-scatterarea 002](images/chartview-series-scatterarea002.png) 
 
 	
 

@@ -14,14 +14,10 @@ position: 11
 
 ## 
 
-RadChartView support empty values in the series.
-          In general empty values means missing Y value for a particular X value.        
+RadChartView support empty values in the series. In general empty values means missing Y value for a particular X value.        
         
 
-Missing item in a column 4.#_[C#] _
-
-	
-
+Missing item in a column 4. 
 
 
 {{source=..\SamplesCS\ChartView\Features\NullValues.cs region=NULLVALUES}} 
@@ -59,12 +55,10 @@ Missing item in a column 4.#_[C#] _
 
 ![chartview-null-values-support 001](images/chartview-null-values-support001.png)
 
-The empty Y value is skipped from drawing.
-          NullValues is supported only for Cartesian series like Bar, Line, Spline, Area and SplineArea.
+The empty Y value is skipped from drawing. NullValues is supported only for Cartesian series like Bar, Line, Spline, Area and SplineArea.
         
 
->caution Empty values for financial series is unsupported scenario. OHLC and Candlestick series always know their Open, Close, High and Low values, so 
-            there is no valid scenario with empty values for this type of visualization.
+>caution Empty values for financial series is unsupported scenario. OHLC and Candlestick series always know their Open, Close, High and Low values, so  there is no valid scenario with empty values for this type of visualization.
 >Empty values for pie chart are unsupported as well. Pie slices should always make up to 360 degrees when combined.
 >
 

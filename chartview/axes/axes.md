@@ -66,14 +66,9 @@ Each RadChartView area type uses a different set of axes to plot its data points
             
 
 * __BorderWidth__  – the property specifies the width of the axis
-            ![chartview-axes 001](images/chartview-axes001.png)
+![chartview-axes 001](images/chartview-axes001.png)
 
-The following example demonstrates how some of the above properties are set:
-        #_[C#] _
-
-	
-
-
+The following example demonstrates how some of the above properties are set: 
 
 {{source=..\SamplesCS\ChartView\Axes\AxisForm.cs region=axis}} 
 {{source=..\SamplesVB\ChartView\Axes\AxisForm.vb region=axis}} 
