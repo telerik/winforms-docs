@@ -5,7 +5,7 @@ description: Grid line
 slug: winforms/chartview-/features/annotations/grid-line
 tags: grid,line
 published: True
-position: 0
+position: 1
 ---
 
 # Grid line

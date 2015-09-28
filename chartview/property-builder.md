@@ -5,7 +5,7 @@ description: Property Builder
 slug: winforms/chartview-/property-builder
 tags: property,builder
 published: True
-position: 2
+position: 3
 ---
 
 # Property Builder

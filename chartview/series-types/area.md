@@ -5,7 +5,7 @@ description: Area
 slug: winforms/chartview-/series-types/area
 tags: area
 published: True
-position: 0
+position: 1
 ---
 
 # Area

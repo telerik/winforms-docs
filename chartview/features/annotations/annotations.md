@@ -1,11 +1,11 @@
 ---
-title: Annotations
+title: Overview
 page_title: Annotations | UI for WinForms Documentation
 description: Annotations
 slug: winforms/chartview-/features/annotations
 tags: annotations
 published: True
-position: 10
+position: 0
 ---
 
 # Annotations

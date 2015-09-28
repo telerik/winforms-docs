@@ -5,7 +5,7 @@ description: Design time
 slug: winforms/chartview-/design-time
 tags: design,time
 published: True
-position: 1
+position: 2
 ---
 
 # Design time

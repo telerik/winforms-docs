@@ -1,11 +1,11 @@
 ---
-title: Series Types
+title: Overview
 page_title: Series Types | UI for WinForms Documentation
 description: Series Types
 slug: winforms/chartview-/series-types
 tags: series,types
 published: True
-position: 4
+position: 0
 ---
 
 # Series Types

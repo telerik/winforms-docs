@@ -5,7 +5,7 @@ description: Categorical
 slug: winforms/chartview-/axes/categorical
 tags: categorical
 published: True
-position: 0
+position: 1
 ---
 
 # Categorical

@@ -5,7 +5,7 @@ description: Chart Grid
 slug: winforms/chartview-/chart-grid
 tags: chart,grid
 published: True
-position: 3
+position: 4
 ---
 
 # Chart Grid

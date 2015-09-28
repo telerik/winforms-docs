@@ -2,10 +2,10 @@
 title: ChartView 
 page_title: ChartView  | UI for WinForms Documentation
 description: ChartView 
-slug: winforms/chartview-
+slug: winforms/chartview
 tags: chartview,
 published: True
-position: 11
+position: 0
 ---
 
 # ChartView 

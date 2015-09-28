@@ -5,7 +5,7 @@ description: RadChartView vs RadChart
 slug: winforms/chartview-/radchartview-vs-radchart
 tags: radchartview,vs,radchart
 published: True
-position: 0
+position: 1
 ---
 
 # RadChartView vs RadChart

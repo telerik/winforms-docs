@@ -1,11 +1,11 @@
 ---
-title: Indicators
+title: Overview
 page_title: Indicators | UI for WinForms Documentation
 description: Indicators
 slug: winforms/chartview-/series-types/indicators
 tags: indicators
 published: True
-position: 18
+position: 0
 ---
 
 # Indicators
