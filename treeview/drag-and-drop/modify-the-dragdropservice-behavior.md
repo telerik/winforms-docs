@@ -12,23 +12,15 @@ position: 2
 
 
 
-This article demonstrates how to customize the TreeViewDragDropService behavior and more precisely 
-		how to customize it to copy the nodes when dropped, instead of moving them.
-      ![treeview-drag-and-drop-modify-the-drag-drop-service-behavior 001](images/treeview-drag-and-drop-modify-the-drag-drop-service-behavior001.gif)
+This article demonstrates how to customize the TreeViewDragDropService behavior and more precisely how to customize it to copy the nodes when dropped, instead of moving them.
 
-## 
+![treeview-drag-and-drop-modify-the-drag-drop-service-behavior 001](images/treeview-drag-and-drop-modify-the-drag-drop-service-behavior001.gif)
 
-To achieve this scenario we will need to create a descendant of TreeViewDragDropService (lets call it CustomDragDropService)
-          where we will expose the RadTreeViewElement as a field, so we can use it later. This field will be assigned in the CustomDragDropService class constructor.
-          We will also need another field of type RadTreeNode which will hold the dragged node. The latter will be assigned in the PerformStart method and will be cleared in the PerformStop method.
+
+To achieve this scenario we will need to create a descendant of TreeViewDragDropService (lets call it CustomDragDropService) where we will expose the RadTreeViewElement as a field, so we can use it later. This field will be assigned in the CustomDragDropService class constructor. We will also need another field of type RadTreeNode which will hold the dragged node. The latter will be assigned in the PerformStart method and will be cleared in the PerformStop method.
         
 
 Next we need to override the OnPreviewDragOver method, where we will specify upon what conditions a drop will be allowed and finally, in the OnPreviewDragDrop override, we will add the logic for copying the selected nodes instead of moving them:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\CustomDragDropService.cs region=CustomDragDropService}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\CustomDragDropService.vb region=CustomDragDropService}} 
@@ -207,15 +199,7 @@ Next we need to override the OnPreviewDragOver method, where we will specify upo
 
 {{endregion}} 
 
-
-
-
 After the custom drag and drop behavior is created, we need to replace the default one. This can be achieved in the CreateDragDropService method of RadTreeViewElement, so we create a new element for the purpose:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\CustomTreeViewElement.cs region=CustomTreeViewElement}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\CustomTreeViewElement.vb region=CustomTreeViewElement}} 
@@ -257,16 +241,9 @@ After the custom drag and drop behavior is created, we need to replace the defau
     '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-Now we need to use this CustomTreeViewElement in the tree. To do that we need to pass a new instance of this element in the CreateTreeViewElement of RadTreeView decendant:#_[C#] _
-
-	
-
-
+Now we need to use this CustomTreeViewElement in the tree. To do that we need to pass a new instance of this element in the CreateTreeViewElement of RadTreeView decendant:
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\CustomTreeView.cs region=CustomTreeView}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\CustomTreeView.vb region=CustomTreeView}} 
@@ -312,16 +289,9 @@ Now we need to use this CustomTreeViewElement in the tree. To do that we need to
     '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-Finally, lets populate the tree and test the new behavior:#_[C#] _
-
-	
-
-
+Finally, lets populate the tree and test the new behavior:
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\ModifyTheDragDropServiceBehavior.cs region=PopulateTheTree}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\ModifyTheDragDropServiceBehavior\ModifyTheDragDropServiceBehavior.vb region=PopulateTheTree}} 
@@ -354,8 +324,5 @@ Finally, lets populate the tree and test the new behavior:#_[C#] _
 ````
 
 {{endregion}} 
-
-
-
 
 The result can be observed at the screen shot at the top.

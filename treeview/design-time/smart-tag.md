@@ -11,9 +11,6 @@ position: 0
 # Smart Tag
 
 
-
-## 
-
 The Smart Tag for RadTreeView lets you quickly access common tasks involved with building RadTreeView elements and customizing appearance through themes.
 
 ![treeview-design-time-smart-tag 001](images/treeview-design-time-smart-tag001.png)

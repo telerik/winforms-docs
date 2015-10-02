@@ -5,7 +5,7 @@ description: Touch Support
 slug: winforms/treeview/touch-support
 tags: touch,support
 published: True
-position: 11
+position: 12
 ---
 
 # Touch Support
@@ -16,18 +16,23 @@ RadTreeView supports both scrolling and dragging operations via touch interface.
 
 ## Scrolling
 
-To scroll the nodes simply drag the whole control to the desired location (left, right, up, down).![treeview-touch-support 001](images/treeview-touch-support001.png)
+To scroll the nodes simply drag the whole control to the desired location (left, right, up, down).
 
-Here is the result of scrolling the control down![treeview-touch-support 002](images/treeview-touch-support002.png)
+![treeview-touch-support 001](images/treeview-touch-support001.png)
+
+Here is the result of scrolling the control down:
+
+![treeview-touch-support 002](images/treeview-touch-support002.png)
 
 ## Dragging
 
-To drag a node together with its children to a new position, simply drag the desired node to the desired
-              position and it will be moved there together with its children if such exists
-            ![treeview-touch-support 003](images/treeview-touch-support003.png)
+To drag a node together with its children to a new position, simply drag the desired node to the desired position and it will be moved there together with its children if such exists
+
+![treeview-touch-support 003](images/treeview-touch-support003.png)
 
 Here you can see the dragged "*Search Folders*" section from the bottom of the left tree to the top of the right one
-            ![treeview-touch-support 004](images/treeview-touch-support004.png)
+
+![treeview-touch-support 004](images/treeview-touch-support004.png)
 
 # See Also
 

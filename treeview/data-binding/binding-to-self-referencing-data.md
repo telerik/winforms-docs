@@ -12,25 +12,15 @@ position: 3
 
 
 
-Binding RadTreeView to self referencing data differs form 
-      [
-      binding to related data]({%slug winforms/treeview/data-binding/binding-to-object-relational-data%}) in that RadTreeView is bound to a single list instead of multiple related lists.
+Binding RadTreeView to self referencing data differs form [binding to related data]({%slug winforms/treeview/data-binding/binding-to-object-relational-data%}) in that RadTreeView is bound to a single list instead of multiple related lists.
       
 
-In order to set the parent-child relation between the records of the data source,
-		we should set the ParentMember and ChildMember properties to the respective fields this data source.
-		If the parent ID for a record does not have a respective value in the child ID field of the records, 
-		then that record is considered to have no parents.
+In order to set the parent-child relation between the records of the data source,we should set the ParentMember and ChildMember properties to the respective fields this data source.If the parent ID for a record does not have a respective value in the child ID field of the records, then that record is considered to have no parents.
 		
 
 ## Minimal example
 
 The following example demonstrates how to bind RadTreeView to a self referencing DataTable.
-      #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TreeView\DataBinding\BindingToSelfRefData.cs region=selfRef}} 
 {{source=..\SamplesVB\TreeView\DataBinding\BindingToSelfRefData.vb region=selfRef}} 
@@ -188,21 +178,13 @@ The following example demonstrates how to bind RadTreeView to a self referencing
 
 {{endregion}} 
 
-
-
-
 As a result we get the hierarchy of nodes shown below:![treeview-data-binding-binding-to-self-referencing-data 001](images/treeview-data-binding-binding-to-self-referencing-data001.png)
 
 ## Binding check boxes
 
-Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify
-          the RadTreeView.__CheckedMember__ property. The following code snippet demonstrates how to setup a self referencing hierarchy in the
-          tree and bind the check boxes:
-        ![treeview-data-binding-binding-to-self-referencing-data 002](images/treeview-data-binding-binding-to-self-referencing-data002.png)#_[C#]_
+Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify the RadTreeView.__CheckedMember__ property. The following code snippet demonstrates how to setup a self referencing hierarchy in the tree and bind the check boxes:
 
-	
-
-
+![treeview-data-binding-binding-to-self-referencing-data 002](images/treeview-data-binding-binding-to-self-referencing-data002.png)
 
 {{source=..\SamplesCS\TreeView\DataBinding\BindingToSelfRefData.cs region=CheckedMember}} 
 {{source=..\SamplesVB\TreeView\DataBinding\BindingToSelfRefData.vb region=CheckedMember}} 
@@ -266,7 +248,4 @@ Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
