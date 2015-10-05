@@ -36,11 +36,11 @@ __Structure tab__: The Structure tab on the right side of the dialog allows you 
 
 The basic properties for RadTreeView are: 
 
-* __Item Height__in pixels.
+* __Item Height__ in pixels.
 
-* __Tree Indentation__in pixels
+* __Tree Indentation__ in pixels
 
-* __Context Menu__can be associated with the RadTreeView as a whole. Any RadDropDownMenu components on the form will be displayed in the drop down list for selection. 
+* __Context Menu__ can be associated with the RadTreeView as a whole. Any RadDropDownMenu components on the form will be displayed in the drop down list for selection. 
 
 * __TreeView Features__ lets you allow Drag & Drop, Load on Demand, Checkboxes, TriState Checkboxes and Label Editing.
 
@@ -57,9 +57,9 @@ The basic properties for each of the selected nodes in the preview are:
 
 * __Font__ that the node will be displayed in. Use the __Select Font__ button to set the font, font style, size, font effects and font script.
 
-* __Context Menu__can be associated with each node in the RadTreeView. Any RadDropDownMenu controls on the form will be displayed in the drop down list for selection.
+* __Context Menu__ can be associated with each node in the RadTreeView. Any RadDropDownMenu controls on the form will be displayed in the drop down list for selection.
 
-* __Image Index__or __Image Key__ are used to select images from a  standard Windows forms ImageList component. To use these properties add a ImageList component from the "All Windows Forms" area of the Toolbox and add to the Images collection.
+* __Image Index__ or __Image Key__ are used to select images from a  standard Windows forms ImageList component. To use these properties add a ImageList component from the "All Windows Forms" area of the Toolbox and add to the Images collection.
 
 __Appearance tab__: This tab lets you set the visual style of the RadTreeView as a whole. The tab lets you choose the __Theme__. You can select the __Show Lines__ checkbox to display the lines that connect the nodes and set the line style and color.
 

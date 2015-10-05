@@ -18,19 +18,14 @@ To localize RadTreeView to display control text and messages in a specific langu
 
 * All required classes for localization are defined in __Telerik.WinControls.UI__ namespace.
 
-* Start by creating a descendant of the __TreeViewLocalizationProvider__class. 
+* Start by creating a descendant of the __TreeViewLocalizationProvider__ class. 
 
-* Override the __GetLocalizedString(string id)__method and provide a translation for the label and user messages.
-          If a translation is not provided, the default value will be returned. 
-          This behavior is guaranteed by the call to the base __GetLocalizedString__method 
-          in the __default__clause of the __switch__statement in the example. 
+* Override the __GetLocalizedString(string id)__ method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the __default__ clause of the __switch__ statement in the example. 
           
 
-Below is a sample implementation of an English localization provider:#_[C#] Localizing RadTreeView Strings_
+Below is a sample implementation of an English localization provider:
 
-	
-
-
+#### Localizing RadTreeView Strings
 
 {{source=..\SamplesCS\TreeView\MyEnglishTreeViewLocalizationProvider.cs region=provider}} 
 {{source=..\SamplesVB\TreeView\MyEnglishTreeViewLocalizationProvider.vb region=provider}} 
@@ -80,14 +75,9 @@ Below is a sample implementation of an English localization provider:#_[C#] Loca
 
 {{endregion}} 
 
+To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
-
-
-To apply the custom localization provider, instantiate and assign it to the current localization provider: #_[C#] Assigning the Current Localization Provider_
-
-	
-
-
+#### Assigning the Current Localization Provider_
 
 {{source=..\SamplesCS\TreeView\TreeLocalization.cs region=localization}} 
 {{source=..\SamplesVB\TreeView\TreeLocalization.vb region=localization}} 
@@ -102,7 +92,4 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 {{endregion}} 
 
-
-
-
-The code provided above illustrates the approach to be used to localize the __RadTreeView__and is not intended as a full translation.
+The code provided above illustrates the approach to be used to localize the __RadTreeView__ and is not intended as a full translation.

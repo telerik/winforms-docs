@@ -14,23 +14,9 @@ position: 10
 
 ## 
 
-When searching for node(s) you have two options that you can use - the *Find* 
-        	method of RadTreeView which searches for a specific node by __text__ or a predefined
-        	__Predicate__ and returns the first node that matches the search criteria, or to
-        	use the *FindNodes* method of the control which also provides overloads 
-        	to search by __text__ or a __Predicate__ and returns an 
-        	array of nodes as a result.
-        
+When searching for node(s) you have two options that you can use - the *Find* method of RadTreeView which searches for a specific node by __text__ or a predefined __Predicate__ and returns the first node that matches the search criteria, or to use the *FindNodes* method of the control which also provides overloads to search by __text__ or a __Predicate__ and returns an array of nodes as a result. 
 
-The following example demonstrates how to search for a single node by its text and how to get all 
-        	nodes whose __Tag__ is not null by using a __Predicate__:
-        
-
-#_[C#]_
-
-	
-
-
+The following example demonstrates how to search for a single node by its text and how to get all nodes whose __Tag__ is not null by using a __Predicate__:
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=find}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=find}} 
@@ -54,7 +40,4 @@ The following example demonstrates how to search for a single node by its text a
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

@@ -11,9 +11,6 @@ position: 6
 # Events
 
 
-
-## 
-
 __RadTreeView__ provides a large set of events which allows you to respond to node interactions. 
 
 * NodeAdded/NodeAdding - the events occur before and after node is added.
@@ -24,8 +21,7 @@ __RadTreeView__ provides a large set of events which allows you to respond to no
 
 * NodeExpandedChanged/NodeExpandedChanging - the events occur before and after node is expanded or collapsed.
 
-The above events are using __RadTreeViewEventArgs__ and __RadTreeViewCancelEventArgs__ objects to provide you with useful information inside the events.
-          The main difference is that you can cancel the interaction in the second case. These objects are exposing the following information:
+The above events are using __RadTreeViewEventArgs__ and __RadTreeViewCancelEventArgs__ objects to provide you with useful information inside the events. The main difference is that you can cancel the interaction in the second case. These objects are exposing the following information:
         
 
 

@@ -11,15 +11,10 @@ position: 0
 # Themes
 
 
+The control is shipped with a rich set of themes that allow you to easily build slick interfaces with the look-and-feel of Windows, Office, Outlook, etc. The themes can be easily switched using a single property:
 
-## 
-
-The control is shipped with a rich set of themes that allow you to easily build slick interfaces with the look-and-feel of Windows, Office, Outlook,
-          etc. The themes can be easily switched using a single property:
-        
-
-
-
+|    |    |
+|----|----|
 |TelerikMetro![treeview-styling-and-appearance-themes 001](images/treeview-styling-and-appearance-themes001.png)|Office2013Dark![treeview-styling-and-appearance-themes 002](images/treeview-styling-and-appearance-themes002.png)|Office2013Light![treeview-styling-and-appearance-themes 003](images/treeview-styling-and-appearance-themes003.png)|
 |Windows 8![treeview-styling-and-appearance-themes 004](images/treeview-styling-and-appearance-themes004.png)|VisualStudio2012Dark![treeview-styling-and-appearance-themes 005](images/treeview-styling-and-appearance-themes005.png)|VisualStudio2012Light![treeview-styling-and-appearance-themes 006](images/treeview-styling-and-appearance-themes006.png)|
 |TelerikMetroBlue![treeview-styling-and-appearance-themes 007](images/treeview-styling-and-appearance-themes007.png)|Office2010Black![treeview-styling-and-appearance-themes 008](images/treeview-styling-and-appearance-themes008.png)|Office2010Silver![treeview-styling-and-appearance-themes 009](images/treeview-styling-and-appearance-themes009.png)|

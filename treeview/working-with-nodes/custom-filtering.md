@@ -10,24 +10,13 @@ position: 11
 
 # Custom Filtering
 
-
-
-## 
-
-Custom filtering is a flexible mechanism for filtering RadTreeView nodes by using custom logic.
-        	It has a higher priority than the applied FilterDescriptors.
+Custom filtering is a flexible mechanism for filtering RadTreeView nodes by using custom logic.It has a higher priority than the applied FilterDescriptors.
         
 
-In order to apply custom logic for filtering, you have to create a 
-        	[Predicate](http://msdn.microsoft.com/en-us/library/bfcke1bz.aspx). Here is an example of a __Predicate__ which will return just the
-		nodes which text is longer than one char:
+In order to apply custom logic for filtering, you have to create a [Predicate](http://msdn.microsoft.com/en-us/library/bfcke1bz.aspx). Here is an example of a __Predicate__ which will return just the nodes which text is longer than one char:
         
 
-#_[C#] Creating predicate_
-
-	
-
-
+#### Creating predicate
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\TreeCustomFiltering.cs region=CustomFiltering2}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\TreeCustomFiltering.vb region=CustomFiltering2}} 
@@ -56,18 +45,9 @@ In order to apply custom logic for filtering, you have to create a
 
 {{endregion}} 
 
-
-
-
-To set the __Predicate__ to RadTreeView, use the
-    	__FilterPredicate__ property of the control:
+To set the __Predicate__ to RadTreeView, use the __FilterPredicate__ property of the control:
     	
-
-#_[C#] Applying predicate_
-
-	
-
-
+#### Applying predicate
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\TreeCustomFiltering.cs region=CustomFiltering1}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\TreeCustomFiltering.vb region=CustomFiltering1}} 
@@ -80,20 +60,11 @@ To set the __Predicate__ to RadTreeView, use the
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-At the end, in order to apply the filter to the control, just set the __Filter__
-    		property to any string, which will invoke the filtering operation:
+At the end, in order to apply the filter to the control, just set the __Filter__ property to any string, which will invoke the filtering operation:
     	
-
-#_[C#] Invoke filtering_
-
-	
-
-
+#### Invoke filtering
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\TreeCustomFiltering.cs region=CustomFiltering3}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\TreeCustomFiltering.vb region=CustomFiltering3}} 
@@ -112,10 +83,6 @@ At the end, in order to apply the filter to the control, just set the __Filter__
 ````
 
 {{endregion}} 
-
-
-
-
 
 | Here you have nodes from 1-100 | After the filtering the nodes are only from 10-100, since nodes 1-9 contain just one char as text |
 | ------ | ------ |

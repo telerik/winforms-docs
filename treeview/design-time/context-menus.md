@@ -43,6 +43,6 @@ In addition, __RadTreeView__ has a built-in context menu which is disabled by de
 
 1. Delete -  deletes the current node
 
-Add or remove "New" and "Delete from the context menu by setting the __AllowAddNewInContextMenu__ and __AllowDeleteInContextMenu__properties of RadTreeView.
+Add or remove "New" and "Delete from the context menu by setting the __AllowAddNewInContextMenu__ and __AllowDeleteInContextMenu__ properties of RadTreeView.
 
 ![treeview-design-time-context-menus 003](images/treeview-design-time-context-menus003.png)

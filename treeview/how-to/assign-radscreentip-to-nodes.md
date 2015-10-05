@@ -11,24 +11,11 @@ position: 0
 # Assign RadScreenTip to nodes
 
 
-
-
-
-## Assign RadScreenTip to nodes
-
-
-
 In order to assign RadScreenTip to the nodes of RadTreeView you should use the ScreenTipNeeded event of RadTreeView.
 
 If the Item which needs a ScreenTip is a TreeNodeElement, you set the necessary properties of the globally instanciated RadOffice2007ScreenTip:
 
-
-
-![treeview-how-to-assign-radscreentip-to-nodes 001](images/treeview-how-to-assign-radscreentip-to-nodes001.png)#_[C#]_
-
-	
-
-
+![treeview-how-to-assign-radscreentip-to-nodes 001](images/treeview-how-to-assign-radscreentip-to-nodes001.png)
 
 {{source=..\SamplesCS\TreeView\HowTo\TreeScreenTips.cs region=screenTip}} 
 {{source=..\SamplesVB\TreeView\HowTo\TreeScreenTips.vb region=screenTip}} 
@@ -83,7 +70,3 @@ If the Item which needs a ScreenTip is a TreeNodeElement, you set the necessary 
 
 {{endregion}} 
 
-
-
-
- 

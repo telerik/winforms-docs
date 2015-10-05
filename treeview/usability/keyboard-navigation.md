@@ -10,14 +10,9 @@ position: 0
 
 # Keyboard Navigation
 
-
-
 ## Keyboard Navigation
 
 The user can navigate __RadTreeView__ and control treeview modes using the following keyboard commands:  
-        
-
-
 
 || __Key__ | __Description__ |
 |![treeview-usability-keyboard-navigation 001](images/treeview-usability-keyboard-navigation001.png)|Up Arrow|moves the selection up in the nodes hierarchy|

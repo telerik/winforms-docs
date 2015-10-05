@@ -18,7 +18,7 @@ The key RadTreeView boolean properties enable Drag and Drop functionality: __All
 * __AllowDragDrop__ enables the drag and drop functionality for a tree view control. Drag and drop functionality can also be used to reorder nodes.
           
 
-* __AllowDrop__when true accepts data that the user drags onto it. This event is used to interact with drag and drop for standard Windows controls.
+* __AllowDrop__ when true accepts data that the user drags onto it. This event is used to interact with drag and drop for standard Windows controls.
           
 
 >note Multiple nodes can be dragged if the RadTreeView __AllowMultiSelect__ property is true.
@@ -43,7 +43,7 @@ __AllowDrop__ when true enables RadTreeView to accept data dropped onto it. Thi
 
 To implement this functionality:
 
-* Set __AllowDrop__for both RadTreeView and the RadTextBox control to true.
+* Set __AllowDrop__ for both RadTreeView and the RadTextBox control to true.
             
 
 * Code the MouseDown event handler of the RadTextBox HostedControl to call the control's __DoDragDrop()__ method.
