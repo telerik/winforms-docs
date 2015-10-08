@@ -58,17 +58,11 @@ The default context menu is not enabled by default and if you right-click a node
 
 ![treeview-context-menus-default-context-menu 001](images/treeview-context-menus-default-context-menu001.png)
 
-This will display only a small subset of all available menu items. Please note that only the *Expand/Collapse*
-          item is enabled. All the other items are disabled and below you will see how to enable them.
-          __Enabling the New item__
+This will display only a small subset of all available menu items. Please note that only the *Expand/Collapse* item is enabled. All the other items are disabled and below you will see how to enable them.
 
+__Enabling the New item__
 
-          To enable the New item, you should set the __AllowAdd__ property to *true*:
-        #_[C#]_
-
-	
-
-
+To enable the New item, you should set the __AllowAdd__ property to *true*:
 
 {{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=allowAdd}} 
 {{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowAdd}} 

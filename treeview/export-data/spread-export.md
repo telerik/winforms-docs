@@ -20,10 +20,11 @@ Here is how the following RadTreeView, looks when it is exported.
       
 >caption Figure 1: Before and after export
 
-![treeview-export-data-spread-export 001](images/treeview-export-data-spread-export001.png)![treeview-export-data-spread-export 002](images/treeview-export-data-spread-export002.png)
+![treeview-export-data-spread-export 001](images/treeview-export-data-spread-export001.png)
 
->note The spread export functionality is located in the __TelerikExport.dll__ assembly.
-          You need to include the following namespace in order to access the types contained in TelerikExport:
+![treeview-export-data-spread-export 002](images/treeview-export-data-spread-export002.png)
+
+>note The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
 >
 * Telerik.WinControls.TelerikExport>
 
@@ -187,7 +188,7 @@ The following example will demonstrate how the async spread export feature can b
 
 {{endregion}} 
 
-2/. Handle the notification events and report progress.
+2\. Handle the notification events and report progress.
 
 {{source=..\SamplesCS\TreeView\SpreadExportCode.cs region=ReportProgress}} 
 {{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=ReportProgress}} 

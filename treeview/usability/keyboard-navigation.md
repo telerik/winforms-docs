@@ -15,6 +15,7 @@ position: 0
 The user can navigate __RadTreeView__ and control treeview modes using the following keyboard commands:  
 
 || __Key__ | __Description__ |
+|-----|-----|-----|
 |![treeview-usability-keyboard-navigation 001](images/treeview-usability-keyboard-navigation001.png)|Up Arrow|moves the selection up in the nodes hierarchy|
 |![treeview-usability-keyboard-navigation 002](images/treeview-usability-keyboard-navigation002.png)|Down Arrow|moves the selection down in the nodes hierarchy|
 |![treeview-usability-keyboard-navigation 003](images/treeview-usability-keyboard-navigation003.png)|Left Arrow|collapses a node|
@@ -30,22 +31,17 @@ The user can navigate __RadTreeView__ and control treeview modes using the follo
 
 ## Keyboard Search
 
-RadTreeView allows navigation through the visible nodes by using keyboard. Two scenarios are
-          supported by default:
+RadTreeView allows navigation through the visible nodes by using keyboard. Two scenarios are supported by default:
         
 
 * Pressing a character will select consequently each node starting with this character
             
 
-* Typing more than one character will navigate to the first node matching the typed string
-            ![treeview-usability-keyboard-navigation 012](images/treeview-usability-keyboard-navigation012.gif)
+* Typing more than one character will navigate to the first node matching the typed string 
+
+    ![treeview-usability-keyboard-navigation 012](images/treeview-usability-keyboard-navigation012.gif)
 
 To enable this functionality a single property setting is needed:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\TreeView\Usability1\TreeViewUsabilityKeyboardNavigation.cs region=KeyboardSearchEnabled}} 
 {{source=..\SamplesVB\TreeView\Usability1\TreeViewUsabilityKeyboardNavigation.vb region=KeyboardSearchEnabled}} 
@@ -64,17 +60,7 @@ To enable this functionality a single property setting is needed:
 
 {{endregion}} 
 
-
-
-
-Another property of interest is the __KeyboardSearchResetInterval__. It is used to determine what time between keystrokes will be considered as typing.
-          Consequent keystrokes with performed faster than the specified interval will be considered typing and once the time elapses, the matching node (if such)
-          will be selected. Here is how to access this property to change the value of the timer:
-        #_[C#] _
-
-	
-
-
+Another property of interest is the __KeyboardSearchResetInterval__. It is used to determine what time between keystrokes will be considered as typing. Consequent keystrokes with performed faster than the specified interval will be considered typing and once the time elapses, the matching node (if such) will be selected. Here is how to access this property to change the value of the timer:
 
 {{source=..\SamplesCS\TreeView\Usability1\TreeViewUsabilityKeyboardNavigation.cs region=KeyboardSearchResetInterval}} 
 {{source=..\SamplesVB\TreeView\Usability1\TreeViewUsabilityKeyboardNavigation.vb region=KeyboardSearchResetInterval}} 
@@ -87,7 +73,5 @@ Another property of interest is the __KeyboardSearchResetInterval__. It is used 
         '
 ````
 
-{{endregion}} 
-
-
+{{endregion}}
 

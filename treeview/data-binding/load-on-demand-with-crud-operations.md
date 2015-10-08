@@ -420,8 +420,8 @@ After we have this method and our tree view set up, we can actually create the h
 {{endregion}} 
 
 You see at the bottom that we are adding the __Teams__ to the __Nodes__ collection of the __RadTreeView__. They will be our base and when expanded we will load their children.
-A
-s we speak about loading children, you need to subscribe to the __NodesNeeded__ event.  In the event handler we will check for the __Tag__ of the parent node and of the current node. This will allow us to get the appropriate type and load its children. For example, If the parent is a __Team__ then we need to load this __Team’s TeamMembers__ and __Tasks__:
+
+As we speak about loading children, you need to subscribe to the __NodesNeeded__ event.  In the event handler we will check for the __Tag__ of the parent node and of the current node. This will allow us to get the appropriate type and load its children. For example, If the parent is a __Team__ then we need to load this __Team’s TeamMembers__ and __Tasks__:
 
 {{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=NodesNeeded}} 
 {{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=NodesNeeded}} 
@@ -486,7 +486,9 @@ s we speak about loading children, you need to subscribe to the __NodesNeeded__ 
 
 {{endregion}} 
 
-![treeview-data-binding-load-on-demand-with-crud-operations 002](images/treeview-data-binding-load-on-demand-with-crud-operations002.png) If you run the application now, you will notice that the nodes are loading their children, however there is something which we do not really like. We know that the __Tasks__ do not have any children, yet, they have expanders in front of them. We can easily correct that by using the __NodeFormatting__ event. In the event handler we simply check if the node’s __Tag__ is a __Task__ and if it is __TeamMember__, whether it has any __Tasks__, and if it is a __Team__, whether it has any __TeamMembers__ or __Tasks__ and hide the expander appropriately.
+![treeview-data-binding-load-on-demand-with-crud-operations 002](images/treeview-data-binding-load-on-demand-with-crud-operations002.png) 
+
+If you run the application now, you will notice that the nodes are loading their children, however there is something which we do not really like. We know that the __Tasks__ do not have any children, yet, they have expanders in front of them. We can easily correct that by using the __NodeFormatting__ event. In the event handler we simply check if the node’s __Tag__ is a __Task__ and if it is __TeamMember__, whether it has any __Tasks__, and if it is a __Team__, whether it has any __TeamMembers__ or __Tasks__ and hide the expander appropriately.
 
 {{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=NodeFormatting}} 
 {{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=NodeFormatting}} 
@@ -654,5 +656,5 @@ Now, our hierarchy is properly visualized, all we have left to do is to implemen
 
 {{endregion}} 
 
- And to handle the case where something is modified in the data source, we will need to subscribe to the __ListChanged__ event of the __BindingList__ and rebuild the __RadTreeView__ by clearing the nodes and re-adding the first level nodes.  You can optionally save the expanded node’s state as per  [this article](http://www.telerik.com/help/winforms/treeview-how-to-keep-radtreeview-states-on-reset.html). This solution is implemented in the attached projects.
+ And to handle the case where something is modified in the data source, we will need to subscribe to the __ListChanged__ event of the __BindingList__ and rebuild the __RadTreeView__ by clearing the nodes and re-adding the first level nodes.  You can optionally save the expanded node’s state as per [this article](http://www.telerik.com/help/winforms/treeview-how-to-keep-radtreeview-states-on-reset.html). 
         

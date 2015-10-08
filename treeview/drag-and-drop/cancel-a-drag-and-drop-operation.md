@@ -39,7 +39,7 @@ You can interrupt a drag and drop operation by setting the __AllowDrop__ propert
 
 ## Restrict the user from changing the node hierarchy level with drag and drop 
 
-1. With the following code we will add some parent and child nodes to the tree view:
+1\. With the following code we will add some parent and child nodes to the tree view:
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\CancelDragAndDropOperation.cs region=Tag}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\CancelDragAndDropOperation.vb region=Tag}} 
@@ -84,7 +84,7 @@ You can interrupt a drag and drop operation by setting the __AllowDrop__ propert
 {{endregion}} 
 
 
-1. Now we can subscribe to the __DragEnding__ event and cancel the drop operation if the dragged node and target node have different hierarchy levels. Also we will show an appropriate message:
+1\. Now we can subscribe to the __DragEnding__ event and cancel the drop operation if the dragged node and target node have different hierarchy levels. Also we will show an appropriate message:
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\CancelDragAndDropOperation.cs region=DragEnding}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\CancelDragAndDropOperation.vb region=DragEnding}} 

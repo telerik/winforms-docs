@@ -178,7 +178,9 @@ The following example demonstrates how to bind RadTreeView to a self referencing
 
 {{endregion}} 
 
-As a result we get the hierarchy of nodes shown below:![treeview-data-binding-binding-to-self-referencing-data 001](images/treeview-data-binding-binding-to-self-referencing-data001.png)
+As a result we get the hierarchy of nodes shown below:
+
+![treeview-data-binding-binding-to-self-referencing-data 001](images/treeview-data-binding-binding-to-self-referencing-data001.png)
 
 ## Binding check boxes
 

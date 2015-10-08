@@ -215,7 +215,7 @@ The following code snippet demonstrates how to populate the __RadTreeView__ with
 On the left figure, you can see the tree with some selected and expanded nodes and the scroll bar in the middle of the tree. On the right figure, you see how the tree is collapsed after we add a node to its data source.
 
 |Initial state|After a change in the data source occurs|
-
+|-----|-----|
 |![treeview-how-to-keep-radtreeview-states-on-reset 001](images/treeview-how-to-keep-radtreeview-states-on-reset001.png)|![treeview-how-to-keep-radtreeview-states-on-reset 002](images/treeview-how-to-keep-radtreeview-states-on-reset002.png)|
 
 Unfortunately, a solution of this cannot be added to the control as it depends on the case and there has to be logic added for the specific case to be handled.To keep the expanded and selected state of RadTreeView after a change in the data source occurs, we can use a Dictionary with some unique value for a key i.e. this could be the node’s Text, DataBoundItem, Value, or even an ID taken from the DataBoundItem and store the state for the node in it. The following example demonstrates how to create a simple structure State, which will hold and describe the state of a node. The SaveExpandedStates method is used to recursively iterate all nodes in RadTreeView and populate a dictionary with the nodes information. The RestoreExpandedStates is used to read the saved states from the dictionary, find the respective node and restore its state.

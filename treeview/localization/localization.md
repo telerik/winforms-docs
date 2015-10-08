@@ -77,7 +77,7 @@ Below is a sample implementation of an English localization provider:
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
-#### Assigning the Current Localization Provider_
+#### Assigning the Current Localization Provider
 
 {{source=..\SamplesCS\TreeView\TreeLocalization.cs region=localization}} 
 {{source=..\SamplesVB\TreeView\TreeLocalization.vb region=localization}} 

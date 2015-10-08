@@ -29,7 +29,7 @@ The data relations in the case of custom objects are represented by properties w
 
 The two steps that must be done are these:
 
-1. Set the DataSource of RadTreeView to a collection of your root objects (a collection of Customer object in this case):
+1\. Set the DataSource of RadTreeView to a collection of your root objects (a collection of Customer object in this case):
 
 {{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=customers}} 
 {{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=customers}} 
@@ -52,7 +52,7 @@ The two steps that must be done are these:
 
 {{endregion}} 
 
-1. Set DisplayMember corresponding to the DisplayMembers of the different types of objects and set the ChildMember corresponding to the names of the properties that represent the collections of sub objects.
+2\. Set DisplayMember corresponding to the DisplayMembers of the different types of objects and set the ChildMember corresponding to the names of the properties that represent the collections of sub objects.
 
 {{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=relationClasses}} 
 {{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=relationClasses}} 

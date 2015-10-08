@@ -17,7 +17,7 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 ![treeview-drag-and-drop-drag-and-drop-in-bound-mode 001](images/treeview-drag-and-drop-drag-and-drop-in-bound-mode001.gif)
 
 
-1. Consider the __RadTreeView__ is bound to the following [self-referencing data]({%slug winforms/treeview/data-binding/binding-to-self-referencing-data%}).
+1\. Consider the __RadTreeView__ is bound to the following [self-referencing data]({%slug winforms/treeview/data-binding/binding-to-self-referencing-data%}).
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\DragAndDropInBoundMode.cs region=SelfRefData}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\DragAndDropInBoundMode.vb region=SelfRefData}} 
@@ -394,7 +394,7 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 >note When a change in the underlying data source occurs, the tree needs to repopulate itself in order to get the latest changes. As a result, the expanded state of the available nodes, selection and scroll bar position are not kept.[Keep RadTreeView states on reset]({%slug winforms/treeview/how-to/keep-radtreeview-states-on-reset%})help article explains how to save the tree state prior the change and restore it afterwards.
 >
 
-1. The custom __TreeViewDragDropService__ is ready. Now, we need to replace the default one. For this purpose, it is necessary to create a derivative of the __RadTreeViewElement__ and override the __CreateDragDropService__ method. 
+2\. The custom __TreeViewDragDropService__ is ready. Now, we need to replace the default one. For this purpose, it is necessary to create a derivative of the __RadTreeViewElement__ and override the __CreateDragDropService__ method. 
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\DragAndDropInBoundMode.cs region=CustomTreeViewElement}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\DragAndDropInBoundMode.vb region=CustomTreeViewElement}} 
@@ -435,7 +435,7 @@ When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. I
 
 {{endregion}} 
 
-1. Finally, replace the default __RadTreeViewElement__ in the tree with the custom one.
+3\. Finally, replace the default __RadTreeViewElement__ in the tree with the custom one.
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\DragAndDropInBoundMode.cs region=TreeView}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\DragAndDropInBoundMode.vb region=TreeView}} 
