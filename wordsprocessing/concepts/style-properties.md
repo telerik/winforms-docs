@@ -12,10 +12,7 @@ position: 5
 
 
 
-__Style property__ is part of the style system, used to hold information about a formatting value of the document elements. It
-        can be used to check if the value is local or it is inherited from base style. Information about how the style system works and how values are
-        inherited from base styles can be found in the Style Evaluation and Inheritance section of the [Styles]({%slug winforms/wordsprocessing/concepts/styles%})
-        article.
+__Style property__ is part of the style system, used to hold information about a formatting value of the document elements. It can be used to check if the value is local or it is inherited from base style. Information about how the style system works and how values are inherited from base styles can be found in the Style Evaluation and Inheritance section of the [Styles]({%slug winforms/wordsprocessing/concepts/styles%}) article.
       
 
 * [Style Property Implementation Overview](#style-property-implementation-overview)
@@ -28,11 +25,7 @@ __Style property__ is part of the style system, used to hold information about a
 
 ## Style Property Implementation Overview
 
-Style properties are exposed through
-          [IStyleProperty<T>](
-              http://www.telerik.com/help/winforms/t_telerik_windows_documents_flow_model_styles_core_istyleproperty.html
-            )
-          interface, which contains the following properties and methods:
+Style properties are exposed through [IStyleProperty<T>]( http://www.telerik.com/help/winforms/t_telerik_windows_documents_flow_model_styles_core_istyleproperty.html) interface, which contains the following properties and methods:
         
 
 * __LocalValue__: Used to get or set the local value. If it is not set, the value is __null__.
@@ -41,18 +34,13 @@ Style properties are exposed through
 * __HasLocalValue__: Returns value indicating whether the style property has local value.
             
 
-* __GetActualValue()__: Returns the actual value of the property. This value is evaluated on every call by the style system
-              using the evaluation rules described [Styles]({%slug winforms/wordsprocessing/concepts/styles%}).
+* __GetActualValue()__: Returns the actual value of the property. This value is evaluated on every call by the style system using the evaluation rules described [Styles]({%slug winforms/wordsprocessing/concepts/styles%}).
             
 
 * __ClearValue()__: Clears the local value.
             
 
-* __PropertyDefinition__: The [property definition](#style-property-definitions) is exposed through the
-              [IStylePropertyDefinition](
-                  http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html
-                )
-              interface and specifies some details for the style property as:
+* __PropertyDefinition__: The [property definition](#style-property-definitions) is exposed through the [IStylePropertyDefinition](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html) interface and specifies some details for the style property as:
             
 
 * __PropertyName__: Returns the name of the style property.
@@ -67,18 +55,12 @@ Style properties are exposed through
 * __GetDefaultValueAsObject()__: This method returns the default value as object.
                 
 
-Some of the style properties always contain local value and are normally referred to as local style properties. They are used only by the document
-          elements and their values are not respected by styles and style inheritance .
+Some of the style properties always contain local value and are normally referred to as local style properties. They are used only by the document elements and their values are not respected by styles and style inheritance .
         
 
 ## Style Property Definitions
 
-Style property definition is represented from the __StylePropertyDefinition<T>__ class and can be accessed from the style
-          property itself (through its base interface __IStylePropertyDefinition__) or as a static member of
-          [Run]({%slug winforms/wordsprocessing/model/run%}), [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}),
-          [Table]({%slug winforms/wordsprocessing/model/table%}), [TableRow]({%slug winforms/wordsprocessing/model/tablerow%}) and
-          [TableCell]({%slug winforms/wordsprocessing/model/tablecell%}) document elements. Style property definitions specify the following details of the style
-          property:
+Style property definition is represented from the __StylePropertyDefinition<T>__ class and can be accessed from the style property itself (through its base interface __IStylePropertyDefinition__) or as a static member of [Run]({%slug winforms/wordsprocessing/model/run%}), [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}), [Table]({%slug winforms/wordsprocessing/model/table%}), [TableRow]({%slug winforms/wordsprocessing/model/tablerow%}) and [TableCell]({%slug winforms/wordsprocessing/model/tablecell%}) document elements. Style property definitions specify the following details of the style property:
         
 
 * __PropertyName__: Specifies the name of the style property.
@@ -87,9 +69,7 @@ Style property definition is represented from the __StylePropertyDefinition<T>__
 * __efaultValue__: Specifies the default value of the style property.
             
 
-* __StylePropertyType__: Specifies the type of the style property as
-              [StylePropertyType](http://www.telerik.com/help/winforms/t_telerik_windows_documents_flow_model_styles_core_stylepropertytype.html)
-              enumeration.
+* __StylePropertyType__: Specifies the type of the style property as[StylePropertyType](http://www.telerik.com/help/winforms/t_telerik_windows_documents_flow_model_styles_core_stylepropertytype.html) enumeration.
             
 
 * __Validation__: Used to determine if a value is valid for the style property associated with this style property definition.
@@ -99,17 +79,9 @@ Style property definition is represented from the __StylePropertyDefinition<T>__
 
 ### Style properties in document elements
 
-Document elements expose sets of style properties through the __Properties__ property. For convenience style properties can
-              be also used through CLR shorthand properties exposed directly from the document elements. Shorthand property getter gets the
-              *actual value* of the property, while property setter sets the *local* value of the property.
-            
+Document elements expose sets of style properties through the __Properties__ property. For convenience style properties can be also used through CLR shorthand properties exposed directly from the document elements. Shorthand property getter gets the *actual value* of the property, while property setter sets the *local* value of the property.
 
 Here is example for equivalent getting of a value with CLR property and style property:
-            #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingStyleProperties.cs region=radwordsprocessing-concepts-style-properties_0}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_0}} 
@@ -124,17 +96,9 @@ Here is example for equivalent getting of a value with CLR property and style pr
             '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 Here is example for equivalent setting of a value with CLR property and style property:
-            #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingStyleProperties.cs region=radwordsprocessing-concepts-style-properties_1}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_1}} 
@@ -151,22 +115,11 @@ Here is example for equivalent setting of a value with CLR property and style pr
 
 {{endregion}} 
 
-
-
-
 ### Style properties in styles
 
-The style properties in a style are accessible through the following property sets: __CharacterProperties__,
-              __ParagraphProperties__, __TableProperties__, __TableRowProperties__ and
-              __TableCellProperties__.
-            
+The style properties in a style are accessible through the following property sets: __CharacterProperties__, __ParagraphProperties__, __TableProperties__, __TableRowProperties__ and __TableCellProperties__.
 
 Here is a code snippet illustrating how to get the local value of a style property in style:
-            #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingStyleProperties.cs region=radwordsprocessing-concepts-style-properties_2}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_2}} 
@@ -181,15 +134,7 @@ Here is a code snippet illustrating how to get the local value of a style proper
 
 {{endregion}} 
 
-
-
-
 Here is a code snippet illustrating how to get the actual value of style property in style:
-            #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingStyleProperties.cs region=radwordsprocessing-concepts-style-properties_3}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_3}} 
@@ -204,21 +149,11 @@ Here is a code snippet illustrating how to get the actual value of style propert
 
 {{endregion}} 
 
-
-
-
 ## Style Properties Default Values
 
-The default values of all style properties are available in their [StylePropertyDefinitions](Style_Property_Definitions) and
-          cannot be changed. To set the default values of properties for particular document you can change the default styles for the document.
-        
+The default values of all style properties are available in their [StylePropertyDefinitions](Style_Property_Definitions) and cannot be changed. To set the default values of properties for particular document you can change the default styles for the document.
 
 The following code snippet illustrates how to get the default value for a style property:
-        #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingStyleProperties.cs region=radwordsprocessing-concepts-style-properties_4}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_4}} 
@@ -233,11 +168,7 @@ The following code snippet illustrates how to get the default value for a style 
 
 {{endregion}} 
 
-
-
-
 Following is a list of all available style properties and their default values:
-        
 
 
 | Name | Description | Default Value |
@@ -260,29 +191,24 @@ Following is a list of all available style properties and their default values:
 |FlowDirection|The flow direction.|LeftToRight|
 |TextAlignment|The paragraph text alignment.|Left|
 |SpacingBefore|The spacing that should be added above the first line in a paragraph.|0|
-|AutomaticSpacingBefore|A value indicating whether a consumer shall automatically determine the spacing
-                before the paragraph based on its contents the automatic spacing after.|False|
+|AutomaticSpacingBefore|A value indicating whether a consumer shall automatically determine the spacing before the paragraph based on its contents the automatic spacing after.|False|
 |SpacingAfter|The spacing that should be added after the last line in a paragraph.|0|
-|AutomaticSpacingAfter|A value indicating whether a consumer shall automatically determine the spacing
-                after the paragraph based on its contents the automatic spacing after.|False|
+|AutomaticSpacingAfter|A value indicating whether a consumer shall automatically determine the spacing after the paragraph based on its contents the automatic spacing after.|False|
 |LineSpacing|The value indicating the amount of vertical spacing between lines of text within a paragraph.|1.15|
 |LineSpacingType|The value indicating how the spacing between lines is calculated.|Auto|
 |KeepOnOnePage|A value indicating if this paragraph should be rendered on one page when the document is shown in page view mode.|False|
-|KeepWithNextParagraph|A value indicating if this paragraph should be rendered at least partly on the one page with
-                the following paragraph when this is possible and when the document is shown in page view mode.|False|
+|KeepWithNextParagraph|A value indicating if this paragraph should be rendered at least partly on the one page with the following paragraph when this is possible and when the document is shown in page view mode.|False|
 |OutlineLevel|A value indicating the outline level. The outline level defines the level of this paragraph in TOC field.|None|
 |ApplyEastAsianLineBreakingRules|A value indicating whether East-Asian line breaking rules are applied to this paragraph.|True|
 |PageBreakBefore|A value indicating if this paragraph should be rendered on new page when the document is shown in page view mode.|False|
 |Borders|The paragraph borders.|None|
-|ContextualSpacing|A value indicating whether spacing before/after are ignored
-                when preceding/following paragraph has same paragraph style.|False|
+|ContextualSpacing|A value indicating whether spacing before/after are ignored when preceding/following paragraph has same paragraph style.|False|
 |MirrorIndents|A value indicating whether left and right indents should be swapped on odd pages.|False|
 |BackgroundColor|The color of the background.|Transparent|
 |ShadingPatternColor|A value indicating the color for any foreground pattern used in this shading.|Transparent|
 |ShadingPattern|A value indicating the pattern which shall be used to lay the pattern color over the background color for this shading.|Clear|
 |FirstLineIndent|A value indicating the additional indentation which shall be applied to the first line of the paragraph.|0|
-|HangingIndent|A value which shall be removed from the indentation of the first line of the paragraph,
-                by moving the indentation on the first line back towards the beginning of the direction of text flow.|0|
+|HangingIndent|A value which shall be removed from the indentation of the first line of the paragraph, by moving the indentation on the first line back towards the beginning of the direction of text flow.|0|
 |LeftIndent|A value indicating the indentation which shall be applied to the left side of the whole paragraph.|0|
 |RightIndent|A value indicating the indentation which shall be applied to the right side of the whole paragraph.|0|
 |AllowOverflowPunctuation|A value indicating whether the last punctuation character on a line can overflow in paragraph margin/indent.|True|
@@ -335,8 +261,6 @@ Following is a list of all available style properties and their default values:
 
  * [Styles]({%slug winforms/wordsprocessing/concepts/styles%})
 
- * [IStyleProperty<T> API Reference](
-          http://www.telerik.com/help/winforms/t_telerik_windows_documents_flow_model_styles_core_istyleproperty.html
-        )
+ * [IStyleProperty<T> API Reference]( http://www.telerik.com/help/winforms/t_telerik_windows_documents_flow_model_styles_core_istyleproperty.html)
 
  * [IStylePropertyDefinition API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html)

@@ -12,10 +12,7 @@ position: 2
 
 
 
-__Fields__ in __RadFlowDocumet__ consist of code fragment and result fragment as explained in the
-        [Fields]({%slug winforms/wordsprocessing/concepts/fields%}) article. Some fields have direct representation in the document model – for example
-        [Hyperlinks]({%slug winforms/wordsprocessing/concepts/hyperlinks%}). For all other fields you can use the __CustomCodeField__ class –
-        however you will need some knowledge of how to correctly form the code of the field.
+__Fields__ in __RadFlowDocumet__ consist of code fragment and result fragment as explained in the [Fields]({%slug winforms/wordsprocessing/concepts/fields%}) article. Some fields have direct representation in the document model – for example [Hyperlinks]({%slug winforms/wordsprocessing/concepts/hyperlinks%}). For all other fields you can use the __CustomCodeField__ class – however you will need some knowledge of how to correctly form the code of the field.
       
 
 ## Syntax
@@ -31,27 +28,24 @@ Here is the basic syntax of a field code:
 * `argument`: The argument of the field. This is optional as some of the fields do not require an argument.
             
 
-* `switches`: Switches define additional properties of the field. The syntax of a switch is the following:
-            `\switch-character [switch-argument]`
+* `switches`: Switches define additional properties of the field. The syntax of a switch is the following: `\switch-character [switch-argument]`
 
-* `switch-character`: Character defining the switch. For example the "\o" switch for HYPERINK fields
-                  defines the tooltip switch.
+* `switch-character`: Character defining the switch. For example the "\o" switch for HYPERINK fields defines the tooltip switch.
                 
 
 * `switch-argument`: The argument of the switch. The argument is optional as not all switches require an argument.
                 
 
 Below is an example of field code:
-        ![wordsprocessing-concepts-customcodefield 001](images/wordsprocessing-concepts-customcodefield001.png)
+
+![wordsprocessing-concepts-customcodefield 001](images/wordsprocessing-concepts-customcodefield001.png)
 
 ## Inserting
 
-The suggested approach for inserting code fields is by using [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%}). The
-          __InsertField()__ method accepts code as a first argument and the result as a second argument.
+The suggested approach for inserting code fields is by using [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%}). The __InsertField()__ method accepts code as a first argument and the result as a second argument.
         
 
-Here are some commonly used fields. The complete list of field codes and the switches for each of them can be found in the
-          [Docx specification](http://www.ecma-international.org/publications/standards/Ecma-376.htm).
+Here are some commonly used fields. The complete list of field codes and the switches for each of them can be found in the [Docx specification](http://www.ecma-international.org/publications/standards/Ecma-376.htm).
         
 
 >note In all examples the result fragment is also inserted. However, if you export the document to[Docx format](97359ebe-08c6-4c81-a64a-d40270199454), you can make use of the __AutoUpdateFields__ property. It forces all fields to be updated when the document is opened in MS Word or another editor.
@@ -61,11 +55,6 @@ Here are some commonly used fields. The complete list of field codes and the swi
 ### Inserting PAGE Field
 
 Here is how to insert __PAGE__ field representing the current page number in the document:
-            #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_0}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_0}} 
@@ -81,20 +70,12 @@ Here is how to insert __PAGE__ field representing the current page number in the
 {{endregion}} 
 
 
-
-
 The __\* ROMAN__ is general formatting switch that formats a numeric result using uppercase Roman numerals.
             
 
 ### Inserting NUMPAGE Field
 
-Here is how a combination of __PAGE__ and __NUMPAGES__ fields can be inserted to show which is
-              the current page as well as the total page count in the document:
-            #_C#_
-
-	
-
-
+Here is how a combination of __PAGE__ and __NUMPAGES__ fields can be inserted to show which is the current page as well as the total page count in the document:
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_1}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_1}} 
@@ -115,17 +96,9 @@ Here is how a combination of __PAGE__ and __NUMPAGES__ fields can be inserted to
 
 {{endregion}} 
 
-
-
-
 ### Inserting AUTHOR Field
 
 Here is how to insert __AUTHOR__ field showing the name of the author of the document.
-            #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_3}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_3}} 
@@ -140,20 +113,11 @@ Here is how to insert __AUTHOR__ field showing the name of the author of the doc
 
 {{endregion}} 
 
-
-
-
 The __\* Upper__ switch will convert all letters in the result to uppercase.
-            
 
 ### Inserting Table of Contents Field
 
 Here is how to insert table of contents (TOC) field:
-            #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingCustomCodeField.cs region=radwordsprocessing-concepts-customcodefield_4}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingCustomCodeField.vb region=radwordsprocessing-concepts-customcodefield_4}} 
@@ -167,13 +131,9 @@ Here is how to insert table of contents (TOC) field:
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 There are several switches which can be used for this field:
-            
 
 * __\o "1-3"__: Specifies that the first 3 heading levels should be included in the table of contents.
                 

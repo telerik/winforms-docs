@@ -12,12 +12,10 @@ position: 4
 
 
 
-RadWordsProcessing does not need any external dependencies in order to convert documents from/to the supported formats. The document model
-        is independent from UI and can be used on the server side as well as on the client.
+RadWordsProcessing does not need any external dependencies in order to convert documents from/to the supported formats. The document model is independent from UI and can be used on the server side as well as on the client.
       
 
-You can use RadWordsProcessing to convert among variety of formats. Below you can see a feature / format matrix that describes supported
-        features by file format. The currently supported format are Docx, RTF and plain text, as plain text is excluded from the comparison.
+You can use RadWordsProcessing to convert among variety of formats. Below you can see a feature / format matrix that describes supported features by file format. The currently supported format are Docx, RTF and plain text, as plain text is excluded from the comparison.
       
 
 ## 

@@ -12,10 +12,7 @@ position: 3
 
 
 
-Document themes enables you to specify colors, fonts and a variety of graphic effects in a document and affect the look and feel of the whole
-        document. Each theme contains a color scheme and a font scheme and is represented by the __DocumentTheme__ class and can be
-        modified by the __Theme__ property of [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%}). Document theme contains two
-        parts – color scheme – responsible for the colors, and font scheme – responsible for the fonts.
+Document themes enables you to specify colors, fonts and a variety of graphic effects in a document and affect the look and feel of the whole document. Each theme contains a color scheme and a font scheme and is represented by the __DocumentTheme__ class and can be modified by the __Theme__ property of [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%}). Document theme contains two parts – color scheme – responsible for the colors, and font scheme – responsible for the fonts.
       
 
 * [Color Schemes](#color-schemes)
@@ -28,9 +25,7 @@ Document themes enables you to specify colors, fonts and a variety of graphic ef
 
 ## Color Schemes
 
-A color scheme has a unique name and contains a number of predefined colors. Its representation in __RadFlowDocument__'s
-          model is the __ThemeColorScheme__ class. A scheme defines twelve colors and each of these is assigned a sole
-          __ThemeColorType__. The following list contains all __ThemeColorType__ values:
+A color scheme has a unique name and contains a number of predefined colors. Its representation in __RadFlowDocument__'s model is the __ThemeColorScheme__ class. A scheme defines twelve colors and each of these is assigned a sole __ThemeColorType__. The following list contains all __ThemeColorType__ values:
         
 
 * background1
@@ -57,19 +52,10 @@ A color scheme has a unique name and contains a number of predefined colors. Its
 
 * followed hyperlink
 
-The twelve color types above are used for creating __ThemableColor__ objects. They determine the color of the scheme that
-          appears as the actual color of the __ThemableColor__ instance. As you change the theme or the color scheme, the actual color
-          of the __ThemeableColor__ object changes as well. For example, if you set the fill of a cell to be a
-          __ThemableColor__, applying a new theme or another scheme also affects the solid fill.
+The twelve color types above are used for creating __ThemableColor__ objects. They determine the color of the scheme that  appears as the actual color of the __ThemableColor__ instance. As you change the theme or the color scheme, the actual color of the __ThemeableColor__ object changes as well. For example, if you set the fill of a cell to be a __ThemableColor__, applying a new theme or another scheme also affects the solid fill.
         
 
-The following sample demonstrates how to create a __ThemeColorScheme__ object. Note that the example passes a name and
-          twelve colors to the constructor. Every color has a comment next to it, so you can see its corresponding __ThemeColorType__.
-        #_C#_
-
-	
-
-
+The following sample demonstrates how to create a __ThemeColorScheme__ object. Note that the example passes a name and twelve colors to the constructor. Every color has a comment next to it, so you can see its corresponding __ThemeColorType__.
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingDocumentThemes.cs region=radwordsprocessing-concepts-document-themes_0}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_0}} 
@@ -109,10 +95,7 @@ The following sample demonstrates how to create a __ThemeColorScheme__ object. N
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 There are several ways to create a __ThemableColor__ object:
         
@@ -121,7 +104,6 @@ There are several ways to create a __ThemableColor__ object:
             
 
 * __ThemeColorType__ is an enum which has twelve possible values (the aforementioned color types).
-                
 
 * The second parameter is of type __double__ and should be between -1 and 1. It represents the tint and shade to
                   be applied on the selected color.
@@ -133,13 +115,7 @@ There are several ways to create a __ThemableColor__ object:
 * __ThemeColorType__ is the same as in the previously mentioned constructor.
                 
 
-In order to create colors that depend on the current document theme, you need to use __ThemableColor__ objects. Here is
-          how you create one:
-        #_C#_
-
-	
-
-
+In order to create colors that depend on the current document theme, you need to use __ThemableColor__ objects. Here is how you create one:
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingDocumentThemes.cs region=radwordsprocessing-concepts-document-themes_1}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_1}} 
@@ -152,29 +128,17 @@ In order to create colors that depend on the current document theme, you need to
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Font Schemes
 
-A font scheme is represented by the __ThemeFontScheme__ class. Every font scheme consists of a name and a number of
-          predefined font families. Each font family corresponds to one of two font types:
-        
+A font scheme is represented by the __ThemeFontScheme__ class. Every font scheme consists of a name and a number of predefined font families. Each font family corresponds to one of two font types:
 
 * Major
 
 * Minor
 
-The next snippet illustrates how to create a __ThemeFontScheme__ object. A name and two font family names are passed to
-          the font scheme constructor. The former font family name corresponds to the Major ThemeFontType and the latter -
-          to the Minor.
-        #_C#_
-
-	
-
-
+The next snippet illustrates how to create a __ThemeFontScheme__ object. A name and two font family names are passed to the font scheme constructor. The former font family name corresponds to the Major ThemeFontType and the latter - to the Minor.
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingDocumentThemes.cs region=radwordsprocessing-concepts-document-themes_2}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_2}} 
@@ -194,28 +158,16 @@ The next snippet illustrates how to create a __ThemeFontScheme__ object. A name 
 
 {{endregion}} 
 
-
-
-
-In order to use the document theme's fonts you need to use __ThemableFontFamily__ objects. Again, there are several
-          ways you can create one:
+In order to use the document theme's fonts you need to use __ThemableFontFamily__ objects. Again, there are several ways you can create one:
         
 
-* Passing a __ThemeFontType__ object as a constructor parameter – this way you will bind the object being created to
-              the currently selected document theme.
+* Passing a __ThemeFontType__ object as a constructor parameter – this way you will bind the object being created to the currently selected document theme.
             
 
-* Passing a __FontFamily__ object or a string representing a FontFamily name – the result would be a static FontFamily,
-              meaning it will not be changed when the document theme is changed.
+* Passing a __FontFamily__ object or a string representing a FontFamily name – the result would be a static FontFamily, meaning it will not be changed when the document theme is changed.
             
 
-When you need to create font that depends on the current document theme, you need to use __ThemableFontFamily__ objects.
-          You can create one this way:
-        #_C#_
-
-	
-
-
+When you need to create font that depends on the current document theme, you need to use __ThemableFontFamily__ objects. You can create one this way:
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingDocumentThemes.cs region=radwordsprocessing-concepts-document-themes_3}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_3}} 
@@ -230,18 +182,9 @@ When you need to create font that depends on the current document theme, you nee
 
 {{endregion}} 
 
-
-
-
 ## Document Themes
 
-Now that you have a color and a font schemes, you can create a new __DocumentTheme__. You need to specify a name and pass
-          the already created color and font schemes.
-        #_C#_
-
-	
-
-
+Now that you have a color and a font schemes, you can create a new __DocumentTheme__. You need to specify a name and pass the already created color and font schemes.
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingDocumentThemes.cs region=radwordsprocessing-concepts-document-themes_4}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_4}} 
@@ -256,17 +199,7 @@ Now that you have a color and a font schemes, you can create a new __DocumentThe
 
 {{endregion}} 
 
-
-
-
-There are a number of predefined color and font schemes. You can find them in a static class called
-          [PredefinedThemeSchemes](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_spreadsheet_theming_predefinedthemeschemes.html). The class exposes the properties __ColorSchemes__ and __FontSchemes__ that hold all
-          predefined schemes.
-        #_C#_
-
-	
-
-
+There are a number of predefined color and font schemes. You can find them in a static class called [PredefinedThemeSchemes](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_spreadsheet_theming_predefinedthemeschemes.html). The class exposes the properties __ColorSchemes__ and __FontSchemes__ that hold all predefined schemes.
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingDocumentThemes.cs region=radwordsprocessing-concepts-document-themes_5}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_5}} 
@@ -279,17 +212,9 @@ There are a number of predefined color and font schemes. You can find them in a 
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 Changing the current document theme is as easy as setting a single property:
-        #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingDocumentThemes.cs region=radwordsprocessing-concepts-document-themes_6}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_6}} 
@@ -306,26 +231,9 @@ Changing the current document theme is as easy as setting a single property:
 
 {{endregion}} 
 
-
-
-
 ## Getting Actual Values
 
-In order to get the actual value from __ThemableColor__ or __ThemableFontFamily__ you need to call
-          the __GetActualValue()__ method on the corresponding object.
-        #_C#_
-
-	
-
-#_C#_
-
-	
-
-#_VB NET_
-
-	
-
-
+In order to get the actual value from __ThemableColor__ or __ThemableFontFamily__ you need to call the __GetActualValue()__ method on the corresponding object.
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingDocumentThemes.cs region=radwordsprocessing-concepts-document-themes_7}} 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingDocumentThemes.cs region=radwordsprocessing-concepts-document-themes_8}} 
@@ -346,9 +254,6 @@ In order to get the actual value from __ThemableColor__ or __ThemableFontFamily_
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 
