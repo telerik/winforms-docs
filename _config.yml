@@ -251,6 +251,27 @@ navigation:
     menus:
         title: Menus
         position: 27
+    menus/menu:
+        title: Menu
+        position: 0
+    menus/contextmenu:
+        title: ContextMenu
+        position: 2
+    menus/menu/usability:
+        title: Usability
+        position: 2
+    menus/menu/design-time:
+        title: Design Time
+        position: 3
+    menus/menu/working-with-radmenu-items:
+        title: Working with RadMenu Items
+        position: 4
+    menus/menu/styling-and-appearance:
+        title: Styling and Apppearance
+        position: 5
+    menus/menu/menu-merge:
+        title: Menu Merge
+        position: 6
     multicolumncombobox:
         title: MultiColumnComboBox
         position: 28
