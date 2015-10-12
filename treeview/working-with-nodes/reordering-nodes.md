@@ -21,11 +21,7 @@ There are two methods for reordering nodes:
 
 ## Programmatic Reordering
 
-Use the __Insert()__and __Add()__methods of the RadTreeView Nodes collection to reorder nodes programmatically. The code snippet below demonstrates how this is done using the __Add()__method.#_[C#]_
-
-	
-
-
+Use the __Insert()__ and __Add()__ methods of the RadTreeView Nodes collection to reorder nodes programmatically. The code snippet below demonstrates how this is done using the __Add()__ method.
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=reordering}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=reordering}} 
@@ -99,24 +95,15 @@ Use the __Insert()__and __Add()__methods of the RadTreeView Nodes collection to 
 
 {{endregion}} 
 
-
-
-
-
-
 The highlights of the code snippet are the last three lines where a __RadTreeNode__ is created, added to the "First Parent", then added to the "Second Parent". The result is that the "Child Node" is moved to the nodes collection of the "Second Parent".
 
 ![treeview-working-with-nodes-reordering-nodes 001](images/treeview-working-with-nodes-reordering-nodes001.png)
 
-To move a node into a collection of multiple nodes instead of adding it to the bottom of the collection, use the __Insert()__method of the __Nodes__collection. The Insert() method takes as parameters the index that the node should be placed in and a reference to the node that will be inserted. The code snippet below shows how to reposition a node using the __Insert()__ method.
+To move a node into a collection of multiple nodes instead of adding it to the bottom of the collection, use the __Insert()__ method of the __Nodes__ collection. The Insert() method takes as parameters the index that the node should be placed in and a reference to the node that will be inserted. The code snippet below shows how to reposition a node using the __Insert()__ method.
 
 In the sample code below, two parent nodes are created, a single node is added to the the first parent and multiple nodes are added to the second parent. Then the single child node is inserted to the second parent. The result is that the child node is moved to the "Second Parent" nodes collection. Notice that the nodes collection is zero based so that an index parameter of "1" places the node to the second position in the nodes collection.
 
-![](images/treeview-working-with-nodes-reordering-nodes002.png)#_[C#]_
-
-	
-
-
+![](images/treeview-working-with-nodes-reordering-nodes002.png)
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=insertingNodes}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=insertingNodes}} 
@@ -170,6 +157,4 @@ In the sample code below, two parent nodes are created, a single node is added t
 ````
 
 {{endregion}} 
-
-
 

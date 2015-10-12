@@ -13,7 +13,7 @@ position: 2
 
 
 The __CartesianMarkedzoneAnnotation__ is a rectangle defined by the __HorizontalFrom/To__ and __VerticalFrom/To__ properties.
-      ![chartview-annotations-markedzone-annotations 001](images/chartview-annotations-markedzone-annotations001.png)
+![chartview-annotations-markedzone-annotations 001](images/chartview-annotations-markedzone-annotations001.png)
 
 ## Properties
 
@@ -35,10 +35,7 @@ Besides the __HorizontalFrom/To__ and __VerticalFrom/To__ properties that are us
 ## Examples
 
 In the following example additional styling is applied to the default look of the annotation.
-      ![chartview-annotations-markedzone-annotations 002](images/chartview-annotations-markedzone-annotations002.png)#_[C#] _
-
-	
-
+![chartview-annotations-markedzone-annotations 002](images/chartview-annotations-markedzone-annotations002.png)
 
 
 {{source=..\SamplesCS\ChartView\Annotations\MarkedZones.cs region=CartesianMarkedZone}} 
@@ -77,10 +74,7 @@ In the following example additional styling is applied to the default look of th
 {{endregion}} 
 
 
-
-
-The flexible design of the marked zone annotation allows the user to omit one (or more) of the four __HorizontalFrom/To__ and __VerticalFrom/To__ properties. 
-        The following table details the relationship between the specified properties and the occupied interval on the axis:
+The flexible design of the marked zone annotation allows the user to omit one (or more) of the four __HorizontalFrom/To__ and __VerticalFrom/To__ properties. The following table details the relationship between the specified properties and the occupied interval on the axis:
       
 
 
@@ -90,11 +84,7 @@ The flexible design of the marked zone annotation allows the user to omit one (o
 | __Only From__ |[From,+∞]|
 | __Only To__ |[-∞, To]|
 
-Here is the previous example with some of the settings commented
-      #_[C#] _
-
-	
-
+Here is the previous example with some of the settings commented 
 
 
 {{source=..\SamplesCS\ChartView\Annotations\MarkedZones.cs region=CartesianMarkedZone2}} 

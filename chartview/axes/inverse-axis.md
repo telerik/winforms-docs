@@ -12,17 +12,12 @@ position: 9
 
 
 
-The __isInverse__ property of the abstract __LineAxis__ class determines whether an axis
-        of a __RadChartView__ will be reversed. In certain areas in engineering or physics it is a standard for some data representation an axis to 
-        be inverse. 
+The __isInverse__ property of the abstract __LineAxis__ class determines whether an axis of a __RadChartView__ will be reversed. In certain areas in engineering or physics it is a standard for some data representation an axis to be inverse. 
       
 
 ## Vertical Axis Inversion
 
-This example will demosntrate the depths of crude oil wells in the period between 1988 and 2008.![chartview-axes-inverse-axis 001](images/chartview-axes-inverse-axis001.png)#_[C#] _
-
-	
-
+This example will demosntrate the depths of crude oil wells in the period between 1988 and 2008.![chartview-axes-inverse-axis 001](images/chartview-axes-inverse-axis001.png) 
 
 
 {{source=..\SamplesCS\ChartView\Axes\InverseAxisForm.cs region=inverse-axis}} 

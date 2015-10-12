@@ -9,23 +9,10 @@ position: 11
 ---
 
 # Polar
-
-
-
+ 
 ## 
 
-__Polar series__ consists of a group of classes that plot data in radial plot area in polar coordinates.
-          Valid only in the context of Polar AreaType, __Polar series__ have three implementations – __PolarLineSeries__,
-          __PolarAreaSeries__ and __PolarPointSeries__. When working in unbound mode, the polar series are filled with
-          PolarDataPoint objects which define __Angle__ and __Value__ properties which unambiguously
-          determine a point's location in the polar coordinate system defined by the polar and numeric radial axes.
-          Below is an example of RadPolarChart with different Polar series:
-          
-       #_[C#] PolarPointSeries _
-
-	
-
-
+__Polar series__ consists of a group of classes that plot data in radial plot area in polar coordinates. Valid only in the context of Polar AreaType, __Polar series__ have three implementations – __PolarLineSeries__, __PolarAreaSeries__ and __PolarPointSeries__. When working in unbound mode, the polar series are filled with PolarDataPoint objects which define __Angle__ and __Value__ properties which unambiguously determine a point's location in the polar coordinate system defined by the polar and numeric radial axes. Below is an example of RadPolarChart with different Polar series: 
 
 {{source=..\SamplesCS\ChartView\Series\PolarSeriesForm.cs region=polarPointSeries}} 
 {{source=..\SamplesVB\ChartView\Series\PolarSeriesForm.vb region=polarPointSeries}} 
@@ -78,10 +65,7 @@ __Polar series__ consists of a group of classes that plot data in radial plot ar
 {{endregion}} 
 
 
-![](images/chartview-series-types-polar001.png)#_[C#] PolarLineSeries_
-
-	
-
+![](images/chartview-series-types-polar001.png) 
 
 
 {{source=..\SamplesCS\ChartView\Series\PolarSeriesForm.cs region=polarLineSeries}} 
@@ -135,12 +119,8 @@ __Polar series__ consists of a group of classes that plot data in radial plot ar
 {{endregion}} 
 
 
-![True](images/chartview-series-types-polar002.png)#_[C#] PolarAreaSeries_
-
-	
-
-
-
+![True](images/chartview-series-types-polar002.png) 
+ 
 {{source=..\SamplesCS\ChartView\Series\PolarSeriesForm.cs region=polarAreaSeries}} 
 {{source=..\SamplesVB\ChartView\Series\PolarSeriesForm.vb region=polarAreaSeries}} 
 

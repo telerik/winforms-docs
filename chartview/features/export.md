@@ -17,8 +17,7 @@ __RadChartView__ supports export to image functionality.
 
 ## 
 
-You can export the __RadChartVew__ content by using one of the following
-        overloads of the __ExportToImage__ method:
+You can export the __RadChartVew__ content by using one of the following overloads of the __ExportToImage__ method:
       
 
 * ExportToImage(Stream stream, Size size)
@@ -27,11 +26,7 @@ You can export the __RadChartVew__ content by using one of the following
 
 * ExportToImage(Stream stream, Size size)
 
-* ExportToImage(Stream stream, Size size, ImageFormat imageFormat)#_[C#]_
-
-	
-
-
+* ExportToImage(Stream stream, Size size, ImageFormat imageFormat) 
 
 {{source=..\SamplesCS\ChartView\ChartViewExport.cs region=ExportToImage}} 
 {{source=..\SamplesVB\ChartView\ChartViewExport.vb region=ExportToImage}} 
@@ -54,6 +49,6 @@ You can export the __RadChartVew__ content by using one of the following
 
 ![chartview-features-export 001](images/chartview-features-export001.png)
 
->note If you need to export the chart data to a document, you can use a __RadDocument__ and[insert the exported image]({%slug winforms/richtexteditor-/document-elements/inline-image%})into it. Afterwards, you can use the __RadRichTextEditor__ 's[ export]({%slug winforms/richtexteditor/import%})functionality.
+>note If you need to export the chart data to a document, you can use a __RadDocument__ and [insert the exported image]({%slug winforms/richtexteditor-/document-elements/inline-image%}) into it. Afterwards, you can use the __RadRichTextEditor__ 's[ export]({%slug winforms/richtexteditor/import%}) functionality.
 >
 

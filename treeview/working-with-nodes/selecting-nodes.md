@@ -14,13 +14,7 @@ position: 4
 
 ## Selecting a Single Node
 
-To select a node use the __Selected__
-        property of __RadTreeNode__. 
-        The following example demonstrates how to do it.#_[C#]_
-
-	
-
-
+To select a node use the __Selected__ property of __RadTreeNode__. The following example demonstrates how to do it.
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=selectedNode}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=selectedNode}} 
@@ -53,31 +47,20 @@ To select a node use the __Selected__
 
 {{endregion}} 
 
-
-
-
 ## Selecting Multiple Nodes
 
-To enable the multiple selection the __MultiSelect__ property of 
-        __RadTreeView__ must be set to __true.__The default value is __false__.
-
-
-
+To enable the multiple selection the __MultiSelect__ property of   __RadTreeView__ must be set to __true.__ The default value is __false__.
 
 
 | __Selection__ | __Example__ | __Description__ |
+|---------------|-------------|-----------------|
 | __Single Selection__ |![](images/treeview-working-with-nodes-selecting-nodes001.png)|The user can select a single node by clicking the node.|
 | __Multiple Selection using the Shift key__ |![](images/treeview-working-with-nodes-selecting-nodes002.png)|To select a continuous series of multiple nodes at one time hold the Shift key and click on a node using the mouse. That will select all nodes between the first selected node and the node that was just clicked. The screenshot shows nodes selected between "Deleted Items" and "Large Mail".|
 | __Multiple Selection using the Ctrl key__ |![treeview-working-with-nodes-selecting-nodes 003](images/treeview-working-with-nodes-selecting-nodes003.png)|To select multiple nodes in distributed throughout the RadTreeView, hold the Ctrl key and click on each node using the mouse. That will select the clicked node but not unselect the previously selected nodes. The screenshot shows the "Deleted Items" and "Send Items" nodes selected.|
 
 ## Selecting Multiple Nodes Programmatically
 
-To select multiple nodes through the API, just set the Selected property of the desired nodes
-        to true. The example below adds four nodes, then selects the last two nodes.#_[C#]_
-
-	
-
-
+To select multiple nodes through the API, just set the Selected property of the desired nodes to true. The example below adds four nodes, then selects the last two nodes.
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=selectMultiNodes}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=selectMultiNodes}} 
@@ -114,7 +97,4 @@ To select multiple nodes through the API, just set the Selected property of the 
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

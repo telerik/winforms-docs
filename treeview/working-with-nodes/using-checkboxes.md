@@ -10,39 +10,27 @@ position: 5
 
 # Using Checkboxes
 
-
-
-Enable checkboxes by setting the RadTreeView __CheckBoxes__ boolean property to true. By default all nodes display checkboxes if 
-      the __Checkboxes__property is true. To suppress showing a checkbox next to a particular RadTreeNode set the node 
-        __CheckType__ property to *None*. To check a node programmatically, use the __Checked__ or 
-        __CheckState__ property of RadTreeNode. When the user clicks a checkbox the __NodeCheckChanged__event 
-        fires passing in a RadTreeViewEventArgs that contains the checked Node.
+Enable checkboxes by setting the RadTreeView __CheckBoxes__ boolean property to true. By default all nodes display checkboxes if the __Checkboxes__ property is true. To suppress showing a checkbox next to a particular RadTreeNode set the node __CheckType__ property to *None*. To check a node programmatically, use the __Checked__ or __CheckState__ property of RadTreeNode. When the user clicks a checkbox the __NodeCheckChanged__ event fires passing in a RadTreeViewEventArgs that contains the checked Node.
 
 ## Tri-State Checkboxes
 
-Tri-state checkboxes in addition to having checked and unchecked states also have a "indeterminate" state. To enable this
-        feature set the __TriStateMode__ property of RadTreeView to true. The screen shot below shows that "Node1" is in 
-          __Indeterminate__ state to indicate that its children are not all checked.![treeview-working-with-nodes-using-checkboxes 001](images/treeview-working-with-nodes-using-checkboxes001.png)
+Tri-state checkboxes in addition to having checked and unchecked states also have a "indeterminate" state. To enable this feature set the __TriStateMode__ property of RadTreeView to true. The screen shot below shows that "Node1" is in __Indeterminate__ state to indicate that its children are not all checked.
+
+![treeview-working-with-nodes-using-checkboxes 001](images/treeview-working-with-nodes-using-checkboxes001.png)
 
 >note When __TriStateMode__ is set to true, the __CheckBoxes__ property is also set to true automatically.
 >
 
 
-To programmatically set the state when __TriStateMode__ is true assign the __CheckState__ 
-        property one of the __ToggleState__ enumeration values.![treeview-working-with-nodes-using-checkboxes 002](images/treeview-working-with-nodes-using-checkboxes002.png)
+To programmatically set the state when __TriStateMode__ is true assign the __CheckState__  property one of the __ToggleState__ enumeration values.
+
+![treeview-working-with-nodes-using-checkboxes 002](images/treeview-working-with-nodes-using-checkboxes002.png)
 
 ## Option Tree Support
 
-__RadTreeView__ the supports option trees that allows radio buttons and
-            check boxes to be mixed in order to form an arbitrary complex option tree.
-            The only limitation is that all sibling nodes must have either check boxes or radio buttons.
-            Check boxes and radio buttons can be mixed in a single __RadTreeNodeCollection__.
-        The __RadTreeNode__property that control the type of option element to 
-        be shown (check box or radio button) is __CheckType:__![treeview-working-with-nodes-using-checkboxes 003](images/treeview-working-with-nodes-using-checkboxes003.png)#_[C#]_
+__RadTreeView__ the supports option trees that allows radio buttons and check boxes to be mixed in order to form an arbitrary complex option tree. The only limitation is that all sibling nodes must have either check boxes or radio buttons. Check boxes and radio buttons can be mixed in a single __RadTreeNodeCollection__. The __RadTreeNode__ property that control the type of option element to be shown (check box or radio button) is __CheckType:__
 
-	
-
-
+![treeview-working-with-nodes-using-checkboxes 003](images/treeview-working-with-nodes-using-checkboxes003.png)
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=optionList}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=optionList}} 
@@ -73,7 +61,4 @@ __RadTreeView__ the supports option trees that allows radio buttons and
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

@@ -20,14 +20,7 @@ position: 0
 
 ## Merging Documents
 
-__RadWordsProcessing__ allows you to merge two __RadFlowDocument__ instance using the
-          __Merge()__ method overloads. The document to which you wish to add content is called *target*
-          and the document from which you wish to take the content is called source.
-        #_C#_
-
-	
-
-
+__RadWordsProcessing__ allows you to merge two __RadFlowDocument__ instance using the __Merge()__ method overloads. The document to which you wish to add content is called *target* and the document from which you wish to take the content is called source.
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingCloneAndMerge.cs region=radwordsprocessing-editing-clone-and-merge_0}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingCloneAndMerge.vb region=radwordsprocessing-editing-clone-and-merge_0}} 
@@ -50,11 +43,7 @@ __RadWordsProcessing__ allows you to merge two __RadFlowDocument__ instance usin
 
 {{endregion}} 
 
-
-
-
 Merge method performs two distinctive operations:
-        
 
 * Adds all sections from the source document after the sections of the target document.
             
@@ -79,11 +68,6 @@ __MergeOptions__ parameter can be passed as an argument to the __Merge()__ metho
                 
 
 The following snippet shows how to merge documents by specifying the used __MergeOptions__:
-        #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingCloneAndMerge.cs region=radwordsprocessing-editing-clone-and-merge_1}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingCloneAndMerge.vb region=radwordsprocessing-editing-clone-and-merge_1}} 
@@ -111,18 +95,9 @@ The following snippet shows how to merge documents by specifying the used __Merg
 
 {{endregion}} 
 
-
-
-
 ## Cloning RadFlowDocument
 
-__RadFlowDocument__ provides __Clone()__ method, which creates deep copy of the whole document
-          structure, including all document elements and styles:
-        #_C#_
-
-	
-
-
+__RadFlowDocument__ provides __Clone()__ method, which creates deep copy of the whole document structure, including all document elements and styles:
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingCloneAndMerge.cs region=radwordsprocessing-editing-clone-and-merge_2}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingCloneAndMerge.vb region=radwordsprocessing-editing-clone-and-merge_2}} 
@@ -135,10 +110,7 @@ __RadFlowDocument__ provides __Clone()__ method, which creates deep copy of the 
             '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Cloning Document Elements
 
@@ -170,14 +142,7 @@ __Clone()__ method has two overloads:
 * __Clone()__: Create a deep copy of the document element and associates it with the same document.
             
 
-* __Clone(RadFlowDocument)__: Creates a deep copy of the element and associates it with the provided
-              __RadFlowDocument__. This allows cloned elements to be added in the element tree of the provided RadFlowDocument at
-              later time and is convenient if you want to "move" an element from one document to another.
-            #_C#_
-
-	
-
-
+* __Clone(RadFlowDocument)__: Creates a deep copy of the element and associates it with the provided __RadFlowDocument__. This allows cloned elements to be added in the element tree of the provided RadFlowDocument at later time and is convenient if you want to "move" an element from one document to another.
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingCloneAndMerge.cs region=radwordsprocessing-editing-clone-and-merge_3}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingCloneAndMerge.vb region=radwordsprocessing-editing-clone-and-merge_3}} 
@@ -190,10 +155,7 @@ __Clone()__ method has two overloads:
             '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 # See Also
 

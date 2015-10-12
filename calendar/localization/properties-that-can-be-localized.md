@@ -26,7 +26,7 @@ The following properties can be localized:
 |NavigationPrevToolTip|Gets or sets the text displayed as a tooltip for the previous month navigation control.|
 |NavigationNextToolTip|Gets or sets the text displayed as a tooltip for the next month navigation control.|
 |FastNavigationPrevToolTip|Gets or sets the text displayed as a tooltip for the fast navigation previous month control.|
-|FastNavigationNextToolTip|Gets or sets the text displayed as a tooltip for the fast navigation previous month control.|
+|FastNavigationNextToolTip|Gets or sets the text displayed as a tooltip for the fast navigation next month control.|
 |RowHeaderText|Provides custom text for the row header cells.|
 |ColumnHeaderText|Provides custom text for the column header cells.|
 |ViewSelectorText|The text displayed in the view selector cell.|

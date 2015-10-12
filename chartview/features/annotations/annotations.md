@@ -1,11 +1,11 @@
 ---
-title: Annotations
+title: Overview
 page_title: Annotations | UI for WinForms Documentation
 description: Annotations
 slug: winforms/chartview-/features/annotations
 tags: annotations
 published: True
-position: 10
+position: 0
 ---
 
 # Annotations
@@ -39,4 +39,4 @@ The __RadChartView__ provides the following types of annotations:
           
 
 * Radial Axis PlotBand (associated with the radial axis)
-          ![chartview-annotations 001](images/chartview-annotations001.png)
+![chartview-annotations 001](images/chartview-annotations001.png)

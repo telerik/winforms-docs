@@ -14,17 +14,10 @@ position: 2
 
 ## 
 
-This help topic will demonstrate how you can make your charts more interactive
-          by adding a selection behavior.
+This help topic will demonstrate how you can make your charts more interactive by adding a selection behavior.
         
 
-In order to utilize this behavior users simply have to add it to the
-          chart's __Controllers__ collection. For example:
-        #_[C#] _
-
-	
-
-
+In order to utilize this behavior users simply have to add it to the chart's __Controllers__ collection. For example: 
 
 {{source=..\SamplesCS\ChartView\Features\ChartSelection.cs region=controller}} 
 {{source=..\SamplesVB\ChartView\Features\ChartSelection.vb region=controller}} 
@@ -47,13 +40,7 @@ In order to utilize this behavior users simply have to add it to the
 
 
 
-The ChartSelectionController will be added automatically if the
-          __SelectionMode__ property of RadChartView control is set to one of available options.
-        #_[C#] _
-
-	
-
-
+The ChartSelectionController will be added automatically if the __SelectionMode__ property of RadChartView control is set to one of available options. 
 
 {{source=..\SamplesCS\ChartView\Features\ChartSelection.cs region=selectionMode}} 
 {{source=..\SamplesVB\ChartView\Features\ChartSelection.vb region=selectionMode}} 
@@ -68,17 +55,9 @@ The ChartSelectionController will be added automatically if the
         '
 ````
 
-{{endregion}} 
+{{endregion}}  
 
-
-
-
-Here is a sample using PieSeries and multiple selection. When a slice is selected, it is being offsetted from the center:
-        #_[C#] _
-
-	
-
-
+Here is a sample using PieSeries and multiple selection. When a slice is selected, it is being offsetted from the center: 
 
 {{source=..\SamplesCS\ChartView\Features\ChartSelection.cs region=example}} 
 {{source=..\SamplesVB\ChartView\Features\ChartSelection.vb region=example}} 

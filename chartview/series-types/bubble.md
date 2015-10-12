@@ -14,13 +14,10 @@ position: 8
 
 ## 
 
-__BubbleSeries__ are used to visualize data points as points with coordinates and size defined by their items' values.
-        You might think of a Bubble chart as a variation of the Scatter chart, in which the data points are replaced with bubbles. ![chartview-series-types-bubble 001](images/chartview-series-types-bubble001.png)#_[C#] _
+__BubbleSeries__ are used to visualize data points as points with coordinates and size defined by their items' values. You might think of a Bubble chart as a variation of the Scatter chart, in which the data points are replaced with bubbles. 
+![chartview-series-types-bubble 001](images/chartview-series-types-bubble001.png) 
 
-	
-
-
-
+ 
 {{source=..\SamplesCS\ChartView\Series\BubbleSeriesForm.cs region=Bubble}} 
 {{source=..\SamplesVB\ChartView\Series\BubbleSeriesForm.vb region=Bubble}} 
 
@@ -68,9 +65,7 @@ __BubbleSeries__ are used to visualize data points as points with coordinates an
 
 {{endregion}} 
 
-
-
-
+ 
 Here are some of the important properties of __BubbleSeries__:
 
 * __XValueMember__ - if a DataSource is set, the property determines the name of the field that holds the XValue.

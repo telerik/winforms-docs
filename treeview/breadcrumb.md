@@ -5,27 +5,20 @@ description: Breadcrumb
 slug: winforms/treeview/breadcrumb
 tags: breadcrumb
 published: True
-position: 12
+position: 13
 ---
 
 # Breadcrumb
 
 
 
-__RadBreadCrumb__ control is specifically designed to help users with __RadTreeView__ navigation. Breadcrumbs are
-        most appropriate when your data has a deep hierarchical structure with many levels. When you select a node in __RadTreeView__ 
-        the breadcrumb component will show the path to the node as a sequence of drop down buttons. It will also allow you to navigate in the tree view by selecting
-        specific item. 
-      ![treeview-breadcrumb 003](images/treeview-breadcrumb003.png)
+__RadBreadCrumb__ control is specifically designed to help users with __RadTreeView__ navigation. Breadcrumbs are most appropriate when your data has a deep hierarchical structure with many levels. When you select a node in __RadTreeView__  the breadcrumb component will show the path to the node as a sequence of drop down buttons. It will also allow you to navigate in the tree view by selecting specific item. 
+
+![treeview-breadcrumb 003](images/treeview-breadcrumb003.png)
 
 ## 
 
-Use __DefaultTreeView__ property of __RadBreadCrumb__ to associate the bread crumb with an instance
-          of __RadTreeView__. 
-        #_[C#] _
-
-	
-
+Use __DefaultTreeView__ property of __RadBreadCrumb__ to associate the bread crumb with an instance of __RadTreeView__. 
 
 
 {{source=..\SamplesCS\TreeView\BreadCrumb.cs region=defaultTreeView}} 
@@ -39,7 +32,4 @@ Use __DefaultTreeView__ property of __RadBreadCrumb__ to associate the bread cr
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

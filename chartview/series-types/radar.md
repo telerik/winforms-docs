@@ -9,20 +9,10 @@ position: 12
 ---
 
 # Radar
-
-
-
+ 
 ## 
 
-The radar chart is a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point.
-          As a derivative of PolarSeries, __RadarSeries__ are valid only the context of Polar AreaType. RadChartView supports the following
-          RadarSeries implementations out of the box: __RadarPointSeries__, __RadarLineSeries__ and
-          __RadarAreaSeries__. Below are three snippets that illustrate how to set up each of these series:
-          #_[C#] RadarPointSeries_
-
-	
-
-
+The radar chart is a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point. As a derivative of PolarSeries, __RadarSeries__ are valid only the context of Polar AreaType. RadChartView supports the following RadarSeries implementations out of the box: __RadarPointSeries__, __RadarLineSeries__ and __RadarAreaSeries__. Below are three snippets that illustrate how to set up each of these series: 
 
 {{source=..\SamplesCS\ChartView\Series\RadarSeriesForm.cs region=radarPointSeries}} 
 {{source=..\SamplesVB\ChartView\Series\RadarSeriesForm.vb region=radarPointSeries}} 
@@ -60,9 +50,7 @@ The radar chart is a two-dimensional chart of three or more quantitative variabl
 {{endregion}} 
 
 
-![](images/chartview-series-types-radar001.png)#_[C#] RadarLineSeries_
-
-	
+![](images/chartview-series-types-radar001.png)  
 
 
 
@@ -102,11 +90,7 @@ The radar chart is a two-dimensional chart of three or more quantitative variabl
 {{endregion}} 
 
 
-![](images/chartview-series-types-radar002.png)#_[C#] RadarAreaSeries_
-
-	
-
-
+![](images/chartview-series-types-radar002.png) 
 
 {{source=..\SamplesCS\ChartView\Series\RadarSeriesForm.cs region=radarAreaSeries}} 
 {{source=..\SamplesVB\ChartView\Series\RadarSeriesForm.vb region=radarAreaSeries}} 
@@ -171,13 +155,7 @@ Here are some of the important properties all __PolarSeries__ share:
 
 ## RadarSplineSeries
 
-When you have __RadarLineSeries__ or __RadarAreaSeries__ you can set the Spline property and smoth the values
-          transition (the SplineTension property):
-        #_[C#] RadarAreaSeries_
-
-	
-
-
+When you have __RadarLineSeries__ or __RadarAreaSeries__ you can set the Spline property and smoth the values transition (the SplineTension property): 
 
 {{source=..\SamplesCS\ChartView\Series\RadarSeriesForm.cs region=spline}} 
 {{source=..\SamplesVB\ChartView\Series\RadarSeriesForm.vb region=spline}} 

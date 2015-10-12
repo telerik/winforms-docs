@@ -14,19 +14,7 @@ position: 3
 
 ## 
 
-RadChartView provides a tooltip interactivity  with the
-          __ChartTooltipController__ class and can be used to visualize
-          arbitrary information related to a data point. If the user
-          hovers directly over a data point, the tooltip will display
-          information for this particular data point, otherwise it will
-          display information for the closest data point to the hold
-          location.In order to utilize this behavior users simply have to
-          add it to the chart's __Controllers__ collection. For example:
-          #_[C#] _
-
-	
-
-
+RadChartView provides a tooltip interactivity  with the __ChartTooltipController__ class and can be used to visualize arbitrary information related to a data point. If the user hovers directly over a data point, the tooltip will display information for this particular data point, otherwise it will display information for the closest data point to the hold location.In order to utilize this behavior users simply have to add it to the chart's __Controllers__ collection. For example: 
 
 {{source=..\SamplesCS\ChartView\Features\ChartTooltip.cs region=controller}} 
 {{source=..\SamplesVB\ChartView\Features\ChartTooltip.vb region=controller}} 
@@ -44,13 +32,7 @@ RadChartView provides a tooltip interactivity  with the
 
 
 
-The ChartTooltipController will be added automatically if
-          the __ShowToolTip__ property of RadChartView control is set to *true*:
-          #_[C#] _
-
-	
-
-
+The ChartTooltipController will be added automatically if the __ShowToolTip__ property of RadChartView control is set to *true*: 
 
 {{source=..\SamplesCS\ChartView\Features\ChartTooltip.cs region=showToolTip}} 
 {{source=..\SamplesVB\ChartView\Features\ChartTooltip.vb region=showToolTip}} 
@@ -68,12 +50,7 @@ The ChartTooltipController will be added automatically if
 
 
 
-A sample is shown below:
-        #_[C#] _
-
-	
-
-
+A sample is shown below: 
 
 {{source=..\SamplesCS\ChartView\Features\ChartTooltip.cs region=example}} 
 {{source=..\SamplesVB\ChartView\Features\ChartTooltip.vb region=example}} 

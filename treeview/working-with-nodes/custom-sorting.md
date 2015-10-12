@@ -10,25 +10,11 @@ position: 9
 
 # Custom Sorting
 
+Custom sorting is a flexible mechanism which allows you to replace the default sorting logic with your own logic. The custom sorting operation has higher priority that the default sorting.
 
+To apply your own logic for sorting, you have to create a class which inherits from __TreeNodeComparer__ and override its __Compare__ method, where you can add your custom logic. Here is a sample where we will reverse the sorting of the tree i.e. when sorting *Ascending* we will actually sort in *Descending* order and vice versa. 
 
-## 
-
-Custom sorting is a flexible mechanism which allows you to replace the default sorting 
-      		logic with your own logic. The custom sorting operation has higher priority that the default sorting.
-       
-
-To apply your own logic for sorting, you have to create a class which inherits from __TreeNodeComparer__
-        	and override its __Compare__ method, where you can add your custom logic. Here is a sample
-        	where we will reverse the sorting of the tree i.e. when sorting *Ascending* 
-        	we will actually sort in *Descending* order and vice versa. 
-        
-
-#_[C#] Creating custom comparer_
-
-	
-
-
+#### Creating custom comparer
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\TreeCustomSorting.cs region=CustomSorting3}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\TreeCustomSorting.vb region=CustomSorting3}} 
@@ -74,16 +60,9 @@ To apply your own logic for sorting, you have to create a class which inherits f
 
 {{endregion}} 
 
-
-
-
 Once the comparer is created we have to assign it to the RadTreeView control:
 
-#_[C#] Assign the custom comparer_
-
-	
-
-
+#### Assign the custom comparer
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\TreeCustomSorting.cs region=CustomSorting1}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\TreeCustomSorting.vb region=CustomSorting1}} 
@@ -98,19 +77,7 @@ Once the comparer is created we have to assign it to the RadTreeView control:
 
 {{endregion}} 
 
-
-
-
-That is all that you have to do. To test this scenario, you can add a button and a label
-    		to the form, where you will change and print the sort order. This will allow you to check
-    		whether the sorting is reversed:
-    	
-
-#_[C#]_
-
-	
-
-
+That is all that you have to do. To test this scenario, you can add a button and a label to the form, where you will change and print the sort order. This will allow you to check whether the sorting is reversed:
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\TreeCustomSorting.cs region=CustomSorting2}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\TreeCustomSorting.vb region=CustomSorting2}} 
@@ -153,9 +120,4 @@ That is all that you have to do. To test this scenario, you can add a button and
 
 {{endregion}} 
 
-
-
-
-
-
-|![treeview-working-with-nodes-custom-sorting 001](images/treeview-working-with-nodes-custom-sorting001.png)|![treeview-working-with-nodes-custom-sorting 002](images/treeview-working-with-nodes-custom-sorting002.png)|
+![treeview-working-with-nodes-custom-sorting 001](images/treeview-working-with-nodes-custom-sorting001.png)![treeview-working-with-nodes-custom-sorting 002](images/treeview-working-with-nodes-custom-sorting002.png)

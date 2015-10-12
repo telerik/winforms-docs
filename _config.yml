@@ -107,6 +107,42 @@ navigation:
     chartview:
         title: ChartView
         position: 11
+    chartview/series-types:
+        title: Series Types
+        position: 5
+    chartview/series-types/series-types:
+        title: Overview
+        position: 0		
+    chartview/series-types/indicators:
+        title: Indicators
+        position: 19
+    chartview/series-types/indicators/indicators:
+        title: Overview
+        position: 0
+    chartview/axes:
+        title: Axes
+        position: 6
+    chartview/axes/axes:
+        title: Overview
+        position: 0
+    chartview/features:
+        title: Features
+        position: 7			
+    chartview/features/annotations:
+        title: Annotations
+        position: 10	
+    chartview/features/annotations/annotations:
+        title: Overview
+        position: 0
+    chartview/databinding:
+        title: DataBinding
+        position: 8		
+    chartview/customization:
+        title: Customization
+        position: 9	
+    chartview/printing-support:
+        title: Printing Support
+        position: 10
     checkedlistbox:
         title: ChekedListBox
         position: 12
@@ -467,6 +503,39 @@ navigation:
     treeview:
         title: TreeView
         position: 47
+    treeview/design-time:
+        title: Design-Time
+        position: 2
+    treeview/working-with-nodes:
+        title: Working with Nodes
+        position: 3
+    treeview/editing:
+        title: Editing
+        position: 4
+    treeview/data-binding:
+        title: Data Binding
+        position: 5
+    treeview/drag-and-drop:
+        title: Drag and Drop
+        position: 6
+    treeview/context-menus:
+        title: Context Menus
+        position: 7
+    treeview/styling-and-appearance:
+        title: Styling and Appearance
+        position: 8
+    treeview/export-data:
+        title: Export Data
+        position: 9
+    treeview/how-to:
+        title: How-To
+        position: 10
+    treeview/localization:
+        title: Localization
+        position: 11
+    treeview/usability:
+        title: Usability
+        position: 12
     wizard:
         title: Wizzard
         position: 48

@@ -14,8 +14,7 @@ position: 6
 
 ## 
 
-The PlotMode property appears only in the Categorical, DateTimeCategorical and DateTimeContinuous axes. It defines the AxisPlotMode
-          used by the axis to plot the data. Possible values are BetweenTicks, OnTicks, OnTicksPadded, where:
+The PlotMode property appears only in the Categorical, DateTimeCategorical and DateTimeContinuous axes. It defines the AxisPlotMode used by the axis to plot the data. Possible values are BetweenTicks, OnTicks, OnTicksPadded, where:
         
 
 * __BetweenTicks__  plots points in the middle of the range, defined by two ticks.
@@ -27,14 +26,7 @@ The PlotMode property appears only in the Categorical, DateTimeCategorical and D
 * __OnTicksPadded__ plots points over each tick with half a step padding applied on both ends of the axis.
             
 
-The following example creates a CategoricalAxis and assigns it to a BarSeries before the series is added to the RadChartView. 
-            If the HorizontalAxis property of the series is assigned at the moment of inserting it in the Series collection, the chart will use
-            the axis determined by the property. Alternatively, if the property is null, the chart will create and assign a default axis. The following 
-            snippet sets the PlotMode of the horizontalAxis to BetweenTicks and the GapLength to 0.3. Mode information on the GapLength can be found under the 
-            [Series Types / BarSeries article.]({%slug winforms/chartview-/series-types/bar%})#_[C#] _
-
-	
-
+The following example creates a CategoricalAxis and assigns it to a BarSeries before the series is added to the RadChartView. If the HorizontalAxis property of the series is assigned at the moment of inserting it in the Series collection, the chart will use the axis determined by the property. Alternatively, if the property is null, the chart will create and assign a default axis. The following snippet sets the PlotMode of the horizontalAxis to BetweenTicks and the GapLength to 0.3. Mode information on the GapLength can be found under the [Series Types / BarSeries article.]({%slug winforms/chartview-/series-types/bar%}) 
 
 
 {{source=..\SamplesCS\ChartView\Axes\PlotModeForm.cs region=axis}} 
@@ -75,12 +67,7 @@ The following example creates a CategoricalAxis and assigns it to a BarSeries be
 
 ![chartview-axes-plot-mode 001](images/chartview-axes-plot-mode001.png)
 
-You can always change the PlotMode property, even if the CategoricalAxis was auto-generated, using the Get() method of the Axes collection. The following snippet changes the PlotMode to OnTicks:
-        #_[C#] _
-
-	
-
-
+You can always change the PlotMode property, even if the CategoricalAxis was auto-generated, using the Get() method of the Axes collection. The following snippet changes the PlotMode to OnTicks: 
 
 {{source=..\SamplesCS\ChartView\Axes\PlotModeForm.cs region=axis2}} 
 {{source=..\SamplesVB\ChartView\Axes\PlotModeForm.vb region=axis2}} 
@@ -100,12 +87,7 @@ You can always change the PlotMode property, even if the CategoricalAxis was aut
 
 ![chartview-axes-plot-mode 002](images/chartview-axes-plot-mode002.png)
 
-Using the aforementioned approach you can set the PlotMode property to OnTicksPadded:
-        #_[C#] _
-
-	
-
-
+Using the aforementioned approach you can set the PlotMode property to OnTicksPadded: 
 
 {{source=..\SamplesCS\ChartView\Axes\PlotModeForm.cs region=axis3}} 
 {{source=..\SamplesVB\ChartView\Axes\PlotModeForm.vb region=axis3}} 

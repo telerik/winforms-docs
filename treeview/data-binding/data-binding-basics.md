@@ -20,23 +20,7 @@ Set the __DisplayMember__ to the name of the field that you want visible in the 
 
 ## 
 
-The example below binds a generic list of "Product" objects and displays
-          only a single level of data.
-          "Product" has an integer field, a float field and a string field. In this example, we set the
-          ValueMember to the int field and the DisplayMember to the string field:
-        #__
-
-	
-
-#__
-
-	
-
-#__
-
-	
-
-
+The example below binds a generic list of "Product" objects and displays only a single level of data. "Product" has an integer field, a float field and a string field. In this example, we set the ValueMember to the int field and the DisplayMember to the string field:
 
 {{source=..\SamplesCS\TreeView\DataBinding\DataBindingBasics.cs region=dataBindingBasics}} 
 {{source=..\SamplesCS\TreeView\DataBinding\Product.cs region=product}} 
@@ -122,20 +106,9 @@ The example below binds a generic list of "Product" objects and displays
 
 {{endregion}} 
 
-
-
-
 ## Getting the data bound object
 
-To extend the previous example, let's get the price of a product when we
-          select the node of that product. Obviously, RadTreeNode contains information only about
-          the ID and the Description of a Product. So, in order to be able to retrieve the
-          Price value, we need to get the DataBoundItem of the RadTreeNode as shown below:
-        #_[C#]_
-
-	
-
-
+To extend the previous example, let's get the price of a product when we select the node of that product. Obviously, RadTreeNode contains information only about the ID and the Description of a Product. So, in order to be able to retrieve the Price value, we need to get the DataBoundItem of the RadTreeNode as shown below:
 
 {{source=..\SamplesCS\TreeView\DataBinding\DataBindingBasics.cs region=dataBoundItem}} 
 {{source=..\SamplesVB\TreeView\DataBinding\DataBindingBasics.vb region=dataBoundItem}} 
@@ -162,21 +135,11 @@ To extend the previous example, let's get the price of a product when we
 
 {{endregion}} 
 
+As a result, when we select a node, we will get a message box showing the price of the product related to the currently selected node:
 
+![treeview-data-binding-data-binding-basics 001](images/treeview-data-binding-data-binding-basics001.png)
 
-
-As a result, when we select a node, we will get a message box showing the price of
-          the product related to the currently selected node:
-        ![treeview-data-binding-data-binding-basics 001](images/treeview-data-binding-data-binding-basics001.png)
-
-When a __RadTreeNode__ is assigned with a data-bound item for the first time, the
-          __NodeDataBound__ event is fired. This event can be useful in situations where you 
-          need to sync properties of RadTreeNode with properties of the data bound item.
-        #_[C#]_
-
-	
-
-
+When a __RadTreeNode__ is assigned with a data-bound item for the first time, the __NodeDataBound__ event is fired. This event can be useful in situations where you  need to sync properties of RadTreeNode with properties of the data bound item.
 
 {{source=..\SamplesCS\TreeView\DataBinding\DataBindingBasics.cs region=nodeDataBoundEvent}} 
 {{source=..\SamplesVB\TreeView\DataBinding\DataBindingBasics.vb region=nodeDataBoundEvent}} 
@@ -212,38 +175,16 @@ When a __RadTreeNode__ is assigned with a data-bound item for the first time, th
 
 {{endregion}} 
 
-
-
-
 ## Binding and Displaying Hierarchical data
 
-The great value of RadTreeView is the ability to display hierarchical data.
-          It supports binding to and displaying Database hierarchy and hierarchy of custom objects which have member collections of related objects (ORM generated classes for example).
+The great value of RadTreeView is the ability to display hierarchical data. It supports binding to and displaying Database hierarchy and hierarchy of custom objects which have member collections of related objects (ORM generated classes for example).
         
 
 The next example extends the previous examples to include a new "Category" parent level where each category contains multiple products. "Categories" has a single "Name" property and a list of products.
-        ![treeview-data-binding-data-binding-basics 002](images/treeview-data-binding-data-binding-basics002.png)
 
-In order to display the hierarchy of business objects, we just need to
-          set appropriate DisplayMember and ChildMember values. The DisplayMember value is built from the
-          display members of the respective objects joined with the '\\' symbol ('\' for VB.NET).
-          The ChildMember is built from the names of the properties that represent the collections
-          of sub objects. Just like in the case of the DisplayMember, the names of these properties
-          are joined with the '\\' symbol ('\' for VB.NET). The first member of the ChildMember string
-          should represent the parent level of hierarchy and you can set it to a value of your choice.
-          For example, in our case we set this member to "Categories", but we could also set it to "MyCategories":
-        #_[C#]_
+![treeview-data-binding-data-binding-basics 002](images/treeview-data-binding-data-binding-basics002.png)
 
-	
-
-#_[C#]_
-
-	
-
-#_[C#]_
-
-	
-
+In order to display the hierarchy of business objects, we just need to set appropriate DisplayMember and ChildMember values. The DisplayMember value is built from the display members of the respective objects joined with the '\\' symbol ('\' for VB.NET). The ChildMember is built from the names of the properties that represent the collections of sub objects. Just like in the case of the DisplayMember, the names of these properties are joined with the '\\' symbol ('\' for VB.NET). The first member of the ChildMember string should represent the parent level of hierarchy and you can set it to a value of your choice. For example, in our case we set this member to "Categories", but we could also set it to "MyCategories":
 
 
 {{source=..\SamplesCS\TreeView\DataBinding\BasicsHierarchyForm.cs region=hierarchy}} 
@@ -301,27 +242,11 @@ In order to display the hierarchy of business objects, we just need to
 
 {{endregion}} 
 
-
-#_[VB.NET]_
-
-	
-
-#_[VB.NET]_
-
-	
-
-
-
 ## Binding check boxes
 
-Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify 
-        the RadTreeView.__CheckedMember__ property. The following code snippet demonstrates how to setup hierarchical tree by using
-        two separate DataTables:
-        ![treeview-data-binding-data-binding-basics 003](images/treeview-data-binding-data-binding-basics003.png)#__
+Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify   the RadTreeView. __CheckedMember__ property. The following code snippet demonstrates how to setup hierarchical tree by using two separate DataTables:
 
-	
-
-
+![treeview-data-binding-data-binding-basics 003](images/treeview-data-binding-data-binding-basics003.png)
 
 {{source=..\SamplesVB\TreeView\DataBinding\Product.vb region=product}} 
 
@@ -399,7 +324,4 @@ Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a
             '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

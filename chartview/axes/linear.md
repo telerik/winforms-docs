@@ -14,9 +14,7 @@ position: 2
 
 ## 
 
-RadChartView uses Linear axes to plot data containing numerical values. Valid only in the context of Cartesian Area,
-          this axis is created by default when you add Bar, Line, Area and Scatter series. It automatically calculates the Maximum,
-          Minimum and MajorStep properties, based on the incoming data. Here is a list of all LinearAxis properties:
+RadChartView uses Linear axes to plot data containing numerical values. Valid only in the context of Cartesian Area, this axis is created by default when you add Bar, Line, Area and Scatter series. It automatically calculates the Maximum, Minimum and MajorStep properties, based on the incoming data. Here is a list of all LinearAxis properties:
         
 
 * __ActualRange__  – the property provides the actual range (the minimum and maximum) used by the axis to plot data points.
@@ -48,11 +46,7 @@ RadChartView uses Linear axes to plot data containing numerical values. Valid on
 
 Additionally, LinearAxis inherits all properties of the Axis class.
 
-Here is how to set properties of the LinearAxes:#_[C#] _
-
-	
-
-
+Here is how to set properties of the LinearAxes: 
 
 {{source=..\SamplesCS\ChartView\Axes\LinearAxisForm.cs region=axis}} 
 {{source=..\SamplesVB\ChartView\Axes\LinearAxisForm.vb region=axis}} 

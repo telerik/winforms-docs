@@ -13,11 +13,6 @@ position: 3
 
 
 __SteplineSeries__ plot their Categorical data points on Cartesian Area using one categorical and one numerical axis. Points are connected with two straight lines one horizontal and one vertical with an 90° angle between them. Here is how to set up two stepline series:
-      #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\ChartView\Series\SteplineSeriesForm.cs region=Initialize}} 
 {{source=..\SamplesVB\ChartView\Series\SteplineSeriesForm.vb region=Initialize}} 

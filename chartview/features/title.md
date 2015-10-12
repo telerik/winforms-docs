@@ -14,12 +14,7 @@ position: 5
 
 ## 
 
-To show the title in RadChartView you need to set the __ShowTitle__ property to *true* 
-        		(by default is *false*) and also to set the desired title text in the __Title__ property:
-        #_[C#] _
-
-	
-
+To show the title in RadChartView you need to set the __ShowTitle__ property to *true* (by default is *false*) and also to set the desired title text in the __Title__ property: 
 
 
 {{source=..\SamplesCS\ChartView\Features\ChartViewTitle.cs region=ShowTitle}} 
@@ -40,13 +35,7 @@ To show the title in RadChartView you need to set the __ShowTitle__ property to 
 
 ![chartview-features-title 001](images/chartview-features-title001.png)
 
-The title can be moved to all four sides of the chart using the __TitleLocation__ property. Also, you can access the title 
-          element, which allows you to set various options:
-        #_[C#] _
-
-	
-
-
+The title can be moved to all four sides of the chart using the __TitleLocation__ property. Also, you can access the title element, which allows you to set various options: 
 
 {{source=..\SamplesCS\ChartView\Features\ChartViewTitle.cs region=CustomizeTitle}} 
 {{source=..\SamplesVB\ChartView\Features\ChartViewTitle.vb region=CustomizeTitle}} 

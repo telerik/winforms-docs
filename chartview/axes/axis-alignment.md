@@ -12,8 +12,7 @@ position: 8
 
 
 
-The __StartPositionAxis__ and the __StartPositionValue__ properties of the abstract __CartesianAxis__ class provide a
-        functionality for fine positioning of the axes of a __RadChartView__.
+The __StartPositionAxis__ and the __StartPositionValue__ properties of the abstract __CartesianAxis__ class provide a functionality for fine positioning of the axes of a __RadChartView__.
       
 
 ## 
@@ -26,12 +25,7 @@ The __StartPositionAxis__ and the __StartPositionValue__ properties of the abstr
 
 ## One Axis Offset
 
-This example sets offset of the horizontal axis along the vertical axis.
-        #_[C#] _
-
-	
-
-
+This example sets offset of the horizontal axis along the vertical axis. 
 
 {{source=..\SamplesCS\ChartView\Axes\AxisAlignmentForm.cs region=one-axis-offset}} 
 {{source=..\SamplesVB\ChartView\Axes\AxisAlignmentForm.vb region=one-axis-offset}} 
@@ -92,12 +86,7 @@ This example sets offset of the horizontal axis along the vertical axis.
 
 ## Two Axes Offset
 
-This example sets offset offset of the two axes of the __RadChartView__.
-        #_[C#] _
-
-	
-
-
+This example sets offset offset of the two axes of the __RadChartView__. 
 
 {{source=..\SamplesCS\ChartView\Axes\AxisAlignmentForm.cs region=two-axes-offset}} 
 {{source=..\SamplesVB\ChartView\Axes\AxisAlignmentForm.vb region=two-axes-offset}} 

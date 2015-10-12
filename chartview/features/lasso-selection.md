@@ -12,17 +12,11 @@ position: 1
 
 
 
-__RadChartView__ provides lasso zoom (zoom to selection) functionality by selecting a rectangle on the surface of the control 
-      and then zoom in automatically based on the selected *Cartesian area*. 
+__RadChartView__ provides lasso zoom (zoom to selection) functionality by selecting a rectangle on the surface of the control and then zoom in automatically based on the selected *Cartesian area*. 
 
 ## 
 
-First let’s start by adding some data points to the __RadChartView__ and __LassoZoomController__:
-        #_[C#] _
-
-	
-
-
+First let’s start by adding some data points to the __RadChartView__ and __LassoZoomController__: 
 
 {{source=..\SamplesCS\ChartView\Features\LassoSelection.cs region=AddController}} 
 {{source=..\SamplesVB\ChartView\Features\LassoSelection.vb region=AddController}} 
@@ -85,17 +79,13 @@ First let’s start by adding some data points to the __RadChartView__ and __Las
 
 ![chartview-features-lasso-selection 001](images/chartview-features-lasso-selection001.png)
 
-Now, let’s select some area:![chartview-features-lasso-selection 002](images/chartview-features-lasso-selection002.png)
+Now, let’s select some area:
+![chartview-features-lasso-selection 002](images/chartview-features-lasso-selection002.png)
 
-And the chart will automatically zoom to the selected area:![chartview-features-lasso-selection 003](images/chartview-features-lasso-selection003.png)
+And the chart will automatically zoom to the selected area:
+![chartview-features-lasso-selection 003](images/chartview-features-lasso-selection003.png)
 
-__LassoZoomController__ supports zoom and pan functionality programmatically via the *ZoomAndPan*  method, 
-        which allows specifying the exact *from* and *to* percentage. The following code will zoom the first half of the chart:
-        #_[C#] _
-
-	
-
-
+__LassoZoomController__ supports zoom and pan functionality programmatically via the *ZoomAndPan*  method, which allows specifying the exact *from* and *to* percentage. The following code will zoom the first half of the chart: 
 
 {{source=..\SamplesCS\ChartView\Features\LassoSelection.cs region=ZoomFirst}} 
 {{source=..\SamplesVB\ChartView\Features\LassoSelection.vb region=ZoomFirst}} 

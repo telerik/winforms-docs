@@ -15,13 +15,9 @@ position: 15
 ## Range series
 
 The __Range__ series allows you to define range with each data point. 
-        ![chartview-series-types-range 001](images/chartview-series-types-range001.png)
+![chartview-series-types-range 001](images/chartview-series-types-range001.png)
 
-You can use the following code to display a simple RangeSeries#_[C#] _
-
-	
-
-
+You can use the following code to display a simple RangeSeries 
 
 {{source=..\SamplesCS\ChartView\Series\RangeAndRangeBarSeries.cs region=Range}} 
 {{source=..\SamplesVB\ChartView\Series\RangeAndRangeBarSeries.vb region=Range}} 
@@ -50,22 +46,16 @@ You can use the following code to display a simple RangeSeries#_[C#] _
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}  
 
 ## RangeBar series
 
 This series is visualized on the screen as separate rectangles representing each of the DataPoints. 
-       ![chartview-series-types-range 002](images/chartview-series-types-range002.png)
+![chartview-series-types-range 002](images/chartview-series-types-range002.png)
 
-You can use the following code to display a simple RangeBarSeries#_[C#] _
+You can use the following code to display a simple RangeBarSeries 
 
-	
-
-
-
+ 
 {{source=..\SamplesCS\ChartView\Series\RangeAndRangeBarSeries.cs region=Bar}} 
 {{source=..\SamplesVB\ChartView\Series\RangeAndRangeBarSeries.vb region=Bar}} 
 

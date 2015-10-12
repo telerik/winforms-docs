@@ -21,7 +21,7 @@ Telerik UI for WinForms includes over 110 UI controls that you can use to easily
 * [BulletGraph]({%slug winforms/gauges/bulletgraph%})
 * [Calendar]({%slug winforms/calendar%})
 * [Carousel]({%slug winforms/carousel%})
-* [ChartView]({%slug winforms/chartview-%})
+* [ChartView]({%slug winforms/chartview%})
 * [CheckedListBox]({%slug winforms/checkedlistbox%})
 * [CommandBar]({%slug winforms/commandbar%})
 * [DropDownList]({%slug winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist%})

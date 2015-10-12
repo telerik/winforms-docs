@@ -10,10 +10,7 @@ position: 1
 
 # Custom Editors
 
-
-
 By default RadTreeView uses a text box editor for editing the node __Text__. However, you might want to replace the default editor with your own. When an editor is invoked the __EditorRequired__ event fires allowing the editor instance to be replaced by a custom one.
-      
 
 ## 
 
@@ -21,17 +18,13 @@ Below you will find an example on how to implement a custom editor and use it wi
         
 
 In this example we will implement an editor, showing a US state name with text and its abbreviation in a drop down next to the text.
-        ![treeview-editing-custom-editors 001](images/treeview-editing-custom-editors001.png)
+
+![treeview-editing-custom-editors 001](images/treeview-editing-custom-editors001.png)
 
 Our editor and its element will derive from __BaseTextBoxEditor__ and __BaseTextBoxEditorElement__ respectively.
         
 
 In the __EditorElement__ we will add a __RadDropDownListElement__. The DropDownList will be bound to the same data source as the RadTreeView control for the purpose of the example follows the EditorElement:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\EditingNodes.cs region=CustomTreeViewEditorElement}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\EditingNodes.vb region=CustomTreeViewEditorElement}} 
@@ -108,15 +101,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
 The __EditorElement__ encapsulates the visual appearance of the element, we will need the actual editor which will encapsulate the functionality:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\EditingNodes.cs region=CustomTreeViewEditor}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\EditingNodes.vb region=CustomTreeViewEditor}} 
@@ -210,15 +195,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
 Now all that is left is to drag a RadTreeView to a form, populate it with data and enable the custom editor.
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\EditingNodes.cs region=Initialization}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\EditingNodes.vb region=Initialization}} 
@@ -285,7 +262,4 @@ Now all that is left is to drag a RadTreeView to a form, populate it with data a
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

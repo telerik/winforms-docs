@@ -12,10 +12,7 @@ position: 1
 
 
 
-Although __RadFlowDocument__ can be created and modified by using the style properties and child collections of the document
-        elements this can be quite cumbersome. __RadFlowDocumentEditor__ is utility class that is intended to simplify this process
-        and achieve the same results with less amount of code. It is also useful when a couple of document elements should be inserted in the right order
-        to ensure the document integrity – for example when inserting fields, hyperlinks, images etc.
+Although __RadFlowDocument__ can be created and modified by using the style properties and child collections of the document  elements this can be quite cumbersome. __RadFlowDocumentEditor__ is utility class that is intended to simplify this process and achieve the same results with less amount of code. It is also useful when a couple of document elements should be inserted in the right order to ensure the document integrity – for example when inserting fields, hyperlinks, images etc.
       
 
 * [Creating and Positioning](#creating-and-positioning)
@@ -26,13 +23,7 @@ Although __RadFlowDocument__ can be created and modified by using the style prop
 
 ## Creating and Positioning
 
-__RadFlowDocumentEditor__ is always associated to a single document which it takes as a constructor parameter when it is
-          created:
-        #_C#_
-
-	
-
-
+__RadFlowDocumentEditor__ is always associated to a single document which it takes as a constructor parameter when it is created:
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_0}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_0}} 
@@ -47,18 +38,9 @@ __RadFlowDocumentEditor__ is always associated to a single document which it tak
             '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-The editor maintains an internal position inside the document. This position points either inside a paragraph (to an inline) or directly after
-          the end of a table element. Here are the available methods for changing the position of the editor within a document:
-        #_C#_
-
-	
-
-
+The editor maintains an internal position inside the document. This position points either inside a paragraph (to an inline) or directly after the end of a table element. Here are the available methods for changing the position of the editor within a document:
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_1}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_1}} 
@@ -82,15 +64,7 @@ The editor maintains an internal position inside the document. This position poi
 
 {{endregion}} 
 
-
-
-
 Here is an example of how to position the editor after the second inline in the first paragraph of the document:
-        #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_2}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_2}} 
@@ -107,16 +81,7 @@ Here is an example of how to position the editor after the second inline in the 
 
 {{endregion}} 
 
-
-
-
-Note that it is possible to create a __RadFlowDocumentEditor__ for an empty document (one with no sections). In this case a
-          section and paragraph are automatically created when you call an insert method. The following code creates a document with one section,
-          containing one paragraph with the text "Hello word!":
-        #_C#_
-
-	
-
+Note that it is possible to create a __RadFlowDocumentEditor__ for an empty document (one with no sections). In this case a section and paragraph are automatically created when you call an insert method. The following code creates a document with one section, containing one paragraph with the text "Hello word!":
 
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_3}} 
@@ -136,38 +101,21 @@ Note that it is possible to create a __RadFlowDocumentEditor__ for an empty docu
 
 {{endregion}} 
 
-
-
-
 ## Inserting Document Elements
 
-Most of the insert methods of the __RadDocumentEditor__ return the newly inserted element. This way you can set some
-          additional properties of the element if desired.
-        
+Most of the insert methods of the __RadDocumentEditor__ return the newly inserted element. This way you can set some additional properties of the element if desired.     
 
 ### Inserting Text
 
 Inserting text [Runs](9fefa02d-b368-4d24-a6fd-5047712117fb) can be done with the following methods:
-            
 
-* `public Run InsertText(string text)`: Inserts a new __Run__ with the given text in the
-                  current paragraph.
-                
+* `public Run InsertText(string text)`: Inserts a new __Run__ with the given text in the current paragraph.
 
-* `public Run InsertLine(string text)`: Inserts a new __Run__ with the given text in the
-                  current paragraph and starts new paragraph.
-                
+* `public Run InsertLine(string text)`: Inserts a new __Run__ with the given text in the current paragraph and starts new paragraph.
 
-Both methods return the newly inserted __Run__ element. If, however, there are new lines in the text parameter – a new
-              paragraph is also inserted for each new line. In this case the returned run is the last one that is inserted.
-            
+Both methods return the newly inserted __Run__ element. If, however, there are new lines in the text parameter – a new paragraph is also inserted for each new line. In this case the returned run is the last one that is inserted.
 
 The next snippet insert a run containing a new line:
-            #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_4}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_4}} 
@@ -182,11 +130,9 @@ The next snippet insert a run containing a new line:
 
 {{endregion}} 
 
-
-
-
 The result looks like this:
-            ![wordsprocessing-editing-radflowdocumenteditor 001](images/wordsprocessing-editing-radflowdocumenteditor001.png)
+
+![wordsprocessing-editing-radflowdocumenteditor 001](images/wordsprocessing-editing-radflowdocumenteditor001.png)
 
 >note The current[CharacterFormatting](#changing-current-styles)and[ParagraphFormatting](#changing-current-styles)is applied for each Run and Paragraph that is created.
 >
@@ -194,13 +140,7 @@ The result looks like this:
 
 ### Inserting Paragraph
 
-You can start a new [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}) with the __InsertParagraph()__ method.
-              The current __ParagraphFormatting__ is applied to the new paragraph and the paragraph is returned.
-            #_C#_
-
-	
-
-
+You can start a new [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}) with the __InsertParagraph()__ method. The current __ParagraphFormatting__ is applied to the new paragraph and the paragraph is returned.
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_5}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_5}} 
@@ -219,27 +159,15 @@ You can start a new [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%
 
 {{endregion}} 
 
-
-
-
 The result looks like this:
-            ![wordsprocessing-editing-radflowdocumenteditor 002](images/wordsprocessing-editing-radflowdocumenteditor002.png)
 
-If you call __InsertParagraph()__ method while the editor is positioned in the middle of a paragraph all the inlines
-              after the position are moved inside the new paragraph. The effect is the same as pressing Enter key while the cursor is in the middle of a
-              paragraph in a text editor application.
-            
+![wordsprocessing-editing-radflowdocumenteditor 002](images/wordsprocessing-editing-radflowdocumenteditor002.png)
 
-### 
-            Inserting Sections
-          
+If you call __InsertParagraph()__ method while the editor is positioned in the middle of a paragraph all the inlines after the position are moved inside the new paragraph. The effect is the same as pressing Enter key while the cursor is in the middle of a paragraph in a text editor application.
 
-Inserting [Section]({%slug winforms/wordsprocessing/model/section%}) elements can be achieved with the __InsertSection()__ method. 
-            A paragraph with the new section’s properties will be added and the new __Section__ element will be returned.#_C#_
+### Inserting Sections
 
-	
-
-
+Inserting [Section]({%slug winforms/wordsprocessing/model/section%}) elements can be achieved with the __InsertSection()__ method. A paragraph with the new section’s properties will be added and the new __Section__ element will be returned.
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=section}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=section}} 
@@ -254,32 +182,16 @@ Inserting [Section]({%slug winforms/wordsprocessing/model/section%}) elements ca
 
 {{endregion}} 
 
-
-
-
-If you call the __InsertSection()__ method while the editor is positioned in a TableCell, the Table will be split at the current row. 
-              This means that if the table contains 3 rows, and the editor is positioned in a cell which is on the second row, 
-              the table will be split into two tables – one with one row, which will be added to the previous section and one with 2 rows 
-              (containing the TableCell where the editor position was). The later will be added to the newly inserted Section.
-            
+If you call the __InsertSection()__ method while the editor is positioned in a TableCell, the Table will be split at the current row. This means that if the table contains 3 rows, and the editor is positioned in a cell which is on the second row,  the table will be split into two tables – one with one row, which will be added to the previous section and one with 2 rows (containing the TableCell where the editor position was). The later will be added to the newly inserted Section.
 
 ### Inserting Hyperlinks
 
-__Hyperlinks__ in the __RadFlowDocument__ model are actually
-              [Fields]({%slug winforms/wordsprocessing/concepts/fields%}), which means they have code and result parts separated by
-              [FieldCharacter]({%slug winforms/wordsprocessing/model/fieldcharacter%}) inlines. Inserting hyperlinks is simplified with
-              __RadFlowDocumentEditor.InsertHyperlink()__  method:
+__Hyperlinks__ in the __RadFlowDocument__ model are actually [Fields]({%slug winforms/wordsprocessing/concepts/fields%}), which means they have code and result parts separated by[FieldCharacter]({%slug winforms/wordsprocessing/model/fieldcharacter%}) inlines. Inserting hyperlinks is simplified with __RadFlowDocumentEditor.InsertHyperlink()__  method:
             
 
 `public Hyperlink InsertHyperlink(string text, string uri, bool isAnchor, string toolTip)`
 
-It automatically applies "Hyperlink" built-in style to the inserted hyperlink if there is no explicitly set style in the
-              __CharacterFormatting__ options of the editor.
-            #_C#_
-
-	
-
-
+It automatically applies "Hyperlink" built-in style to the inserted hyperlink if there is no explicitly set style in the __CharacterFormatting__ options of the editor.
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_6}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_6}} 
@@ -294,22 +206,15 @@ It automatically applies "Hyperlink" built-in style to the inserted hyperlink if
 
 {{endregion}} 
 
-
 ![wordsprocessing-editing-radflowdocumenteditor 003](images/wordsprocessing-editing-radflowdocumenteditor003.png)
 
 ### Inserting Code Fields
 
 Inserting fields can be done with the __InsertField()__ method, which accepts code and result fragments:
-            
 
 `public Field InsertField(string code, string result)`
 
 Here is how to add page numbering in the header of document:
-            #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_7}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_7}} 
@@ -338,14 +243,11 @@ Here is how to add page numbering in the header of document:
 
 {{endregion}} 
 
-
-
-
 The result is:
-            ![wordsprocessing-editing-radflowdocumenteditor 004](images/wordsprocessing-editing-radflowdocumenteditor004.png)
 
-Note that in this case the result is automatically updated when a document is opened in MS Word, because the page fields are in the header
-              of the document.
+![wordsprocessing-editing-radflowdocumenteditor 004](images/wordsprocessing-editing-radflowdocumenteditor004.png)
+
+Note that in this case the result is automatically updated when a document is opened in MS Word, because the page fields are in the header of the document.
             
 
 >tip You can find an extensive list of field codes in the Office Open XML standard documentation -[ECMA-376](http://www.ecma-international.org/publications/standards/Ecma-376.htm)4th edition, December 2012, Chapter 17.16.6 Field Definitions.
@@ -354,14 +256,7 @@ Note that in this case the result is automatically updated when a document is op
 
 ### Inserting Images
 
-__RadFlowDocumentEditor__ provides several methods for inserting [ImageInline]({%slug winforms/wordsprocessing/model/imageinline%})
-              and [FloatingImage]({%slug winforms/wordsprocessing/model/floatingimage%}). All of them return the inserted image element, so that additional
-              manipulations can be done with it:
-            #_C#_
-
-	
-
-
+__RadFlowDocumentEditor__ provides several methods for inserting [ImageInline]({%slug winforms/wordsprocessing/model/imageinline%}) and [FloatingImage]({%slug winforms/wordsprocessing/model/floatingimage%}). All of them return the inserted image element, so that additional manipulations can be done with it:
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_8}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_8}} 
@@ -385,15 +280,7 @@ __RadFlowDocumentEditor__ provides several methods for inserting [ImageInline]({
 
 {{endregion}} 
 
-
-
-
 Here is how an image can be inserted using a stream:
-            #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_9}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_9}} 
@@ -415,11 +302,9 @@ Here is how an image can be inserted using a stream:
 
 {{endregion}} 
 
-
-
-
 The result is as follows:
-            ![wordsprocessing-editing-radflowdocumenteditor 005](images/wordsprocessing-editing-radflowdocumenteditor005.png)
+
+![wordsprocessing-editing-radflowdocumenteditor 005](images/wordsprocessing-editing-radflowdocumenteditor005.png)
 
 ### Inserting Tables
 
@@ -432,18 +317,9 @@ The following methods can be used to insert [Table]({%slug winforms/wordsprocess
 `public Table InsertTable(int rows, int columns)`: Inserts table with specified number of rows and columns.
             
 
->note The formatting specified with the[TableFormatting](#changing-current-styles)property is applied to the inserted
-                table. After the insert operation the editor is automatically placed directly __after__ the inserted table (not
-                inside it).
+>note The formatting specified with the[TableFormatting](#changing-current-styles)property is applied to the inserted table. After the insert operation the editor is automatically placed directly __after__ the inserted table (not inside it).
 >
-
-
 Here is how to insert a table with the "TableGrid" built-in style:
-            #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_10}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_10}} 
@@ -468,34 +344,23 @@ Here is how to insert a table with the "TableGrid" built-in style:
 
 {{endregion}} 
 
-
 ![wordsprocessing-editing-radflowdocumenteditor 006](images/wordsprocessing-editing-radflowdocumenteditor006.png)
 
 ## Changing Current Styles
 
-When you use the insert methods of the __RadFlowDocumentEditor__ the editor creates different document elements. You can
-          control the formatting of the newly created elements with the following properties:
+When you use the insert methods of the __RadFlowDocumentEditor__ the editor creates different document elements. You can control the formatting of the newly created elements with the following properties:
         
 
-* __CharacterFormatting__: This formatting is applied to all newly created __Run__ elements. When
-              inserting hyperlinks the "Hyperlink" built-in style is applied to the resulting fragment only if no style is set in the
-              __CharacterFormatting__.
+* __CharacterFormatting__: This formatting is applied to all newly created __Run__ elements. When inserting hyperlinks the "Hyperlink" built-in style is applied to the resulting fragment only if no style is set in the __CharacterFormatting__.
             
 
-* __ParagraphFormatting__: This formatting is applied to all newly created __Paragraph__ elements.
-              This also includes paragraphs that are inserted through __InsertText()__ and __InsertLine()__ methods.
+* __ParagraphFormatting__: This formatting is applied to all newly created __Paragraph__ elements. This also includes paragraphs that are inserted through __InsertText()__ and __InsertLine()__ methods.
             
 
 * __TableFormatting__: This formatting is applied to all newly created __Table__ elements.
             
 
-Formatting options are most useful when inserting multiple elements that should have consistent styling. For example the following code inserts
-          multiple paragraphs with no spacing between them and with text (Runs) in "Consolas" font:
-        #_C#_
-
-	
-
-
+Formatting options are most useful when inserting multiple elements that should have consistent styling. For example the following code inserts multiple paragraphs with no spacing between them and with text (Runs) in "Consolas" font:
 
 {{source=..\SamplesCS\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.cs region=radwordsprocessing-editing-radflowdocumenteditor_11}} 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingRadFlowDocumentEditor.vb region=radwordsprocessing-editing-radflowdocumenteditor_11}} 
@@ -525,7 +390,6 @@ Formatting options are most useful when inserting multiple elements that should 
 ````
 
 {{endregion}} 
-
 
 ![wordsprocessing-editing-radflowdocumenteditor 007](images/wordsprocessing-editing-radflowdocumenteditor007.png)
 

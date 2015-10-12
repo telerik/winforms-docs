@@ -5,7 +5,7 @@ description: Getting Started
 slug: winforms/treeview/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
@@ -24,19 +24,14 @@ The following tutorial will help you get started working with the __RadTreeView_
 
 1. Create a new Windows Forms Application.
 
-1. On the form add a __RadBreadCrumb__and __RadTreeView__.
+1. On the form add a __RadBreadCrumb__ and __RadTreeView__.
             
 
-1. In the Properties Window  for the __RadBreadCrumb__Set the __DefaultTreeView__property
-              to point to the __RadTreeView__.
-            
+1. In the Properties Window  for the __RadBreadCrumb__. Set the __DefaultTreeView__ property to point to the __RadTreeView__. The design should now look something like this.
+    
+    ![treeview-getting-started 001](images/treeview-getting-started001.png)
 
-The design should now look something like this.![treeview-getting-started 001](images/treeview-getting-started001.png)
-
-1. Right click the __RadTreeView__ and select __Open Property Builder__from the context menu. 
-              You will see a set of buttons on the left side of the __RadTreeView__ Property Builder and a preview of the tree view below the buttons.
-              See [Property Builder]({%slug winforms/treeview/design-time/property-builder%}) topic 
-              for a complete  tour of functionality.
+1. Right click the __RadTreeView__ and select __Open Property Builder__ from the context menu. You will see a set of buttons on the left side of the __RadTreeView__ Property Builder and a preview of the tree view below the buttons. See [Property Builder]({%slug winforms/treeview/design-time/property-builder%}) topic for a complete  tour of functionality.
             
 
 1. Click the far left button (a green "Plus" button that adds nodes) three times to add three nodes.
@@ -54,18 +49,13 @@ The design should now look something like this.![treeview-getting-started 001](i
 1. Check the __Show Lines__.
             
 
-1. Click OK to close the Property Builder.
+1. Click OK to close the Property Builder.The design should now look something like the screenshot below.
 
-The design should now look something like the screenshot below.![treeview-getting-started 002](images/treeview-getting-started002.png)
+    ![treeview-getting-started 002](images/treeview-getting-started002.png)
 
 1. In the form code add a "using" statement for Telerik.WinControls.UI
 
-1. In the form's constructor add the code appearing below the __InitializeComponent()__ method call.
-              This code creates new __RadTreeNode__ objects, populates them with text and attaches them to parent nodes.
-            #_[C#] _
-
-	
-
+1. In the form's constructor add the code appearing below the __InitializeComponent()__ method call. This code creates new __RadTreeNode__ objects, populates them with text and attaches them to parent nodes.
 
 
 {{source=..\SamplesCS\TreeView\GettingStarted.cs region=GettingStarted}} 
@@ -107,7 +97,6 @@ The design should now look something like the screenshot below.![treeview-gettin
 
 {{endregion}} 
 
+14\. Run the application.
 
-
-
-1. Run the application.![treeview-getting-started 003](images/treeview-getting-started003.png)
+![treeview-getting-started 003](images/treeview-getting-started003.png)

@@ -12,14 +12,13 @@ position: 0
 
 
 
-The key RadTreeView boolean properties enable Drag and Drop functionality: __AllowDragDrop__,
-        and __AllowDrop__.
+The key RadTreeView boolean properties enable Drag and Drop functionality: __AllowDragDrop__, and __AllowDrop__.
       
 
 * __AllowDragDrop__ enables the drag and drop functionality for a tree view control. Drag and drop functionality can also be used to reorder nodes.
           
 
-* __AllowDrop__when true accepts data that the user drags onto it. This event is used to interact with drag and drop for standard Windows controls.
+* __AllowDrop__ when true accepts data that the user drags onto it. This event is used to interact with drag and drop for standard Windows controls.
           
 
 >note Multiple nodes can be dragged if the RadTreeView __AllowMultiSelect__ property is true.
@@ -29,26 +28,22 @@ The key RadTreeView boolean properties enable Drag and Drop functionality: __All
 ## AllowDragDrop
 
 __AllowDragDrop__ when true enables fully automatic drag and drop. The selected node and child nodes are all moved to the target location with user interaction only.  No code is required. The following screenshots show drag and drop behaviors. Notice the visual cues that assist the user in navigating the tree.
-        
-
-
-
 
 
 | __Description__ | __User Action__ |
+|-----|-----|
 |"Node"2" is dropped on "Node8". The result is that "Node2" is added as a child node of "Node8".|![treeview-drag-and-drop-enabling-drag-and-drop 001](images/treeview-drag-and-drop-enabling-drag-and-drop001.gif)|
-|For the other cases the dashed line described there the dragged node will be inserted. In this case "Node9" is going to me placed between
-                nodes "Node5.2" and "Node5.3". The result is that "Node9" will be added as a sibling of "Node5.2" and located just above "Node5.3".|![treeview-drag-and-drop-enabling-drag-and-drop 002](images/treeview-drag-and-drop-enabling-drag-and-drop002.gif)|
+|For the other cases the dashed line described there the dragged node will be inserted. In this case "Node9" is going to me placed between nodes "Node5.2" and "Node5.3". The result is that "Node9" will be added as a sibling of "Node5.2" and located just above "Node5.3".|![treeview-drag-and-drop-enabling-drag-and-drop 002](images/treeview-drag-and-drop-enabling-drag-and-drop002.gif)|
 
 ## AllowDrop 
 
-__AllowDrop__ when true enables RadTreeView to accept data dropped onto it. This event can be used to allow interaction between standard Windows controls
-          and RadTreeView. In the example below a RadTextBox control is dragged to a RadTreeNode.
-        ![treeview-drag-and-drop-enabling-drag-and-drop 005](images/treeview-drag-and-drop-enabling-drag-and-drop005.png)
+__AllowDrop__ when true enables RadTreeView to accept data dropped onto it. This event can be used to allow interaction between standard Windows controls  and RadTreeView. In the example below a RadTextBox control is dragged to a RadTreeNode.
+
+![treeview-drag-and-drop-enabling-drag-and-drop 005](images/treeview-drag-and-drop-enabling-drag-and-drop005.png)
 
 To implement this functionality:
 
-* Set __AllowDrop__for both RadTreeView and the RadTextBox control to true.
+* Set __AllowDrop__ for both RadTreeView and the RadTextBox control to true.
             
 
 * Code the MouseDown event handler of the RadTextBox HostedControl to call the control's __DoDragDrop()__ method.
@@ -59,11 +54,6 @@ To implement this functionality:
             
 
 * Code the RadTreeView DragDrop event handler to react to the drop operation. In the code sample below the RadTreeView __PointToClient()__ and __GetNodeAt()__ methods are used to retrieve the dropped node.
-         #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\EnablingDragAndDrop.cs region=dragDrop}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\EnablingDragAndDrop.vb region=dragDrop}} 
@@ -146,7 +136,4 @@ To implement this functionality:
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

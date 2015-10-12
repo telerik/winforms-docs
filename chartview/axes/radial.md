@@ -23,15 +23,9 @@ CategoricalRadialAxis introduces the following property:
 * __MajorTickInterval__ – defines the step at which ticks are positioned. The value indicates that the first of n axis ticks is visible, where n is the value of the property.
             
 
-Additionally, CategoricalRadialAxis inherits all properties of the 
-          [Axis class.]({%slug winforms/chartview-/axes%})
+Additionally, CategoricalRadialAxis inherits all properties of the [Axis class.]({%slug winforms/chartview-/axes%})
 
-CategoricalRadial axis is added automatically when you add RadarPoint, RadarLine or RadarArea series to RadChartView. The following example illustrates that once you add a Radar series, you are able to get the CategoricalRadial axis using the RadialAxis property of the RadarSeries instance:
-        #_[C#] _
-
-	
-
-
+CategoricalRadial axis is added automatically when you add RadarPoint, RadarLine or RadarArea series to RadChartView. The following example illustrates that once you add a Radar series, you are able to get the CategoricalRadial axis using the RadialAxis property of the RadarSeries instance: 
 
 {{source=..\SamplesCS\ChartView\Axes\RadialAxisForm.cs region=radialCategoricalAxis}} 
 {{source=..\SamplesVB\ChartView\Axes\RadialAxisForm.vb region=radialCategoricalAxis}} 
@@ -86,15 +80,9 @@ NumericRadialAxis contains the following important properties:
 * __RangeExtendDirection__  – gets or sets a value that specifies how the auto-range of this axis is extended so that each data point is visualized in the best way. Possible values are None, Positive, Negative, Both. None sets the range minimum to the minimum data point value and the range maximum to the maximum data point value. Positive extends the range maximum with one major step if necessary. Negative extends the range minimum with one major step if necessary. Both extend the range in both negative and positive direction.
             
 
-Additionally, NumericRadialAxis inherits all properties of the
-          [Axis class.]({%slug winforms/chartview-/axes%})
+Additionally, NumericRadialAxis inherits all properties of the [Axis class.]({%slug winforms/chartview-/axes%})
 
-NumericRadial axis is added automatically when you add PolarPoint, PolarLine or PolarArea series to RadChartView. The following example illustrates that once you add a Polar series, you are able to get the NumericRadial axis using the RadialAxis property of the PolarSeries instance:
-        #_[C#] _
-
-	
-
-
+NumericRadial axis is added automatically when you add PolarPoint, PolarLine or PolarArea series to RadChartView. The following example illustrates that once you add a Polar series, you are able to get the NumericRadial axis using the RadialAxis property of the PolarSeries instance: 
 
 {{source=..\SamplesCS\ChartView\Axes\RadialAxisForm.cs region=radialNumericalAxis}} 
 {{source=..\SamplesVB\ChartView\Axes\RadialAxisForm.vb region=radialNumericalAxis}} 

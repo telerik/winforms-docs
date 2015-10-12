@@ -15,18 +15,14 @@ position: 12
 ## 
 
 With __RadTreeView__ you can create custom nodes and display them instead of the default ones. This can be done by creating a custom __TreeNodeElement__, which will replace the default one in the __CreateNodeElement__ event handler. This article demonstrates how this approach can be implemented.
-        ![treeview-working-with-nodes-custom-nodes 001](images/treeview-working-with-nodes-custom-nodes001.png)
+
+![treeview-working-with-nodes-custom-nodes 001](images/treeview-working-with-nodes-custom-nodes001.png)
 
 >note To create this example you can first prepare a project by following the steps in[this article]({%slug winforms/treeview/data-binding/binding-to-database-data%})
 >
 
 
-1. First we can create a custom __TreeNodeContentElement__ class which contains the main elements for the custom node. These elements are created and initialized in the __CreateChildElements__ method. Also the __Synchronize__ method is overridden for setting the elements properties in accordance with the corresponding data:
-            #_[C#]_
-
-	
-
-
+1\. First we can create a custom __TreeNodeContentElement__ class which contains the main elements for the custom node. These elements are created and initialized in the __CreateChildElements__ method. Also the __Synchronize__ method is overridden for setting the elements properties in accordance with the corresponding data:
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\CustomNodes.cs region=CustomContentElement}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\CustomNodes.vb region=CustomContentElement}} 
@@ -260,15 +256,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-1. Now we can use the already created __CustomContentElement__ and create a custom __TreeNodeElement__ class. Also here the __Synchronize__ method is overridden in order to set the picture of the node:
-            #_[C#]_
-
-	
-
-
+2\. Now we can use the already created __CustomContentElement__ and create a custom __TreeNodeElement__ class. Also here the __Synchronize__ method is overridden in order to set the picture of the node:
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\CustomNodes.cs region=CustomTreeNodeElement}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\CustomNodes.vb region=CustomTreeNodeElement}} 
@@ -341,15 +329,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-1. Finally, we can add a little bit more customization by setting some of the __RadTreeView__ properties in the form's Load event handler. And also we need to subscribe to the __CreateNodeElement__ event in order to use the newly created custom nodes:
-            #_[C#]_
-
-	
-
-
+3\. Finally, we can add a little bit more customization by setting some of the __RadTreeView__ properties in the form's Load event handler. And also we need to subscribe to the __CreateNodeElement__ event in order to use the newly created custom nodes:
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\CustomNodes.cs region=CustomNodesLoad}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\CustomNodes.vb region=CustomNodesLoad}} 
@@ -425,7 +405,4 @@ End Class
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

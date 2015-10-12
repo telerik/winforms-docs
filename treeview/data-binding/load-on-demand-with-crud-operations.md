@@ -12,21 +12,13 @@ position: 7
 
 
 
-If you have a complex hierarchy, which includes business objects of different types,
-      some of them have children and some - do not and you need to visualize it using RadTreeView while keeping the __CRUD__ operations, then this article is for you.![treeview-data-binding-load-on-demand-with-crud-operations 001](images/treeview-data-binding-load-on-demand-with-crud-operations001.png)
+If you have a complex hierarchy, which includes business objects of different types, some of them have children and some - do not and you need to visualize it using RadTreeView while keeping the __CRUD__ operations, then this article is for you.
 
-## 
+![treeview-data-binding-load-on-demand-with-crud-operations 001](images/treeview-data-binding-load-on-demand-with-crud-operations001.png)
 
-In this example, we will use the following scenario: A hierarchy, which has __Teams__, each __Team__ has __TeamMembers__ and __Tasks__, and each __TeamMember__ has his own __Tasks__ Every __Team__,
-          __TeamMember__ and __Task__ have names which will be displayed in the __RadTreeView__.
+In this example, we will use the following scenario: A hierarchy, which has __Teams__, each __Team__ has __TeamMembers__ and __Tasks__, and each __TeamMember__ has his own __Tasks__ Every __Team__, __TeamMember__ and __Task__ have names which will be displayed in the __RadTreeView__.
 
-          Below you can see the implementation of these types. Note that their child collections are __BindingLists__ and that every type implements __INotifyPropertyChanged__. 
-          We will use this approach so that every property change will bubble up to the top-most collection which we will monitor:
-        #_[C#]_
-
-	
-
-
+Below you can see the implementation of these types. Note that their child collections are __BindingLists__ and that every type implements __INotifyPropertyChanged__. We will use this approach so that every property change will bubble up to the top-most collection which we will monitor:
 
 {{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=Models}} 
 {{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=Models}} 
@@ -283,14 +275,7 @@ In this example, we will use the following scenario: A hierarchy, which has __Te
 
 {{endregion}} 
 
-
-
-          Now, we need to initialize the __RadTreeView__, which will visualize our business objects:
-        #_[C#]_
-
-	
-
-
+Now, we need to initialize the __RadTreeView__, which will visualize our business objects:
 
 {{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=InitilaizeTreeView}} 
 {{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=InitilaizeTreeView}} 
@@ -313,14 +298,7 @@ In this example, we will use the following scenario: A hierarchy, which has __Te
 
 {{endregion}} 
 
-
-
-          Since we will not bind our objects to __RadTreeView__, we will use the __Tag__ property to save the business object. The following method will be very helpful further in this article:
-        #_[C#]_
-
-	
-
-
+Since we will not bind our objects to __RadTreeView__, we will use the __Tag__ property to save the business object. The following method will be very helpful further in this article:
 
 {{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=CreateNode}} 
 {{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=CreateNode}} 
@@ -343,12 +321,7 @@ In this example, we will use the following scenario: A hierarchy, which has __Te
 
 {{endregion}} 
 
-
-After we have this method and our tree view set up, we can actually create the hierarchy:#_[C#]_
-
-	
-
-
+After we have this method and our tree view set up, we can actually create the hierarchy:
 
 {{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=InitializeHierarchy}} 
 {{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=InitializeHierarchy}} 
@@ -446,17 +419,9 @@ After we have this method and our tree view set up, we can actually create the h
 
 {{endregion}} 
 
+You see at the bottom that we are adding the __Teams__ to the __Nodes__ collection of the __RadTreeView__. They will be our base and when expanded we will load their children.
 
-
-          You see at the bottom that we are adding the __Teams__ to the __Nodes__ collection of the __RadTreeView__. They will be our base and when expanded we will load their children.
-        
-          As we speak about loading children, you need to subscribe to the __NodesNeeded__ event. 
-          In the event handler we will check for the __Tag__ of the parent node and of the current node. This will allow us to get the appropriate type and load its children. For example, If the parent is a __Team__ then we need to load this __Team’s TeamMembers__ and __Tasks__:
-        #_[C#]_
-
-	
-
-
+As we speak about loading children, you need to subscribe to the __NodesNeeded__ event.  In the event handler we will check for the __Tag__ of the parent node and of the current node. This will allow us to get the appropriate type and load its children. For example, If the parent is a __Team__ then we need to load this __Team’s TeamMembers__ and __Tasks__:
 
 {{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=NodesNeeded}} 
 {{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=NodesNeeded}} 
@@ -521,18 +486,9 @@ After we have this method and our tree view set up, we can actually create the h
 
 {{endregion}} 
 
+![treeview-data-binding-load-on-demand-with-crud-operations 002](images/treeview-data-binding-load-on-demand-with-crud-operations002.png) 
 
-![treeview-data-binding-load-on-demand-with-crud-operations 002](images/treeview-data-binding-load-on-demand-with-crud-operations002.png)
-          If you run the application now, you will notice that the nodes are loading their children, however there is something which we do not really like. 
-          We know that the __Tasks__ do not have any children, yet, they have expanders in front of them. We can easily correct that by using the __NodeFormatting__ event. 
-          In the event handler we simply check if the node’s __Tag__ is a __Task__ and if it is __TeamMember__, 
-          whether it has any __Tasks__, and if it is a __Team__, whether it has any 
-          __TeamMembers__ or __Tasks__ and hide the expander appropriately.
-        #_[C#]_
-
-	
-
-
+If you run the application now, you will notice that the nodes are loading their children, however there is something which we do not really like. We know that the __Tasks__ do not have any children, yet, they have expanders in front of them. We can easily correct that by using the __NodeFormatting__ event. In the event handler we simply check if the node’s __Tag__ is a __Task__ and if it is __TeamMember__, whether it has any __Tasks__, and if it is a __Team__, whether it has any __TeamMembers__ or __Tasks__ and hide the expander appropriately.
 
 {{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=NodeFormatting}} 
 {{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=NodeFormatting}} 
@@ -568,19 +524,7 @@ After we have this method and our tree view set up, we can actually create the h
 
 {{endregion}} 
 
-
-
-          Now, our hierarchy is properly visualized, all we have left to do is to implement the CRUD 
-          operations which will keep the __RadTreeView__ and the __BindingList__ synchronized. 
-          To handle the case where a node is removed/added from/to __RadTreeView__ you will need to 
-          subscribe to the __NodeRemoving__ and __NodeAdded__ event handlers, respectively. 
-          What will happen in these event handlers is very similar to what is happening in 
-          the __NodesNeeded__ event handler from before, where we check the parent and modify its children:
-        #_[C#]_
-
-	
-
-
+Now, our hierarchy is properly visualized, all we have left to do is to implement the CRUD operations which will keep the __RadTreeView__ and the __BindingList__ synchronized. To handle the case where a node is removed/added from/to __RadTreeView__ you will need to subscribe to the __NodeRemoving__ and __NodeAdded__ event handlers, respectively. What will happen in these event handlers is very similar to what is happening in the __NodesNeeded__ event handler from before, where we check the parent and modify its children:
 
 {{source=..\SamplesCS\TreeView\DataBinding\LoadOnDemandWithCrudOperations.cs region=NodeAddedAndNodeRemoving}} 
 {{source=..\SamplesVB\TreeView\DataBinding\LoadOnDemandWithCrudOperations.vb region=NodeAddedAndNodeRemoving}} 
@@ -712,11 +656,5 @@ After we have this method and our tree view set up, we can actually create the h
 
 {{endregion}} 
 
-
-
-          And to handle the case where something is modified in the data source, we will need to subscribe to the 
-          __ListChanged__ event of the __BindingList__ and rebuild the __RadTreeView__ by clearing the nodes and re-adding the
-          first level nodes.  You can optionally save the expanded node’s state as per 
-          [this article](http://www.telerik.com/help/winforms/treeview-how-to-keep-radtreeview-states-on-reset.html) .
-          This solution is implemented in the attached projects.
+ And to handle the case where something is modified in the data source, we will need to subscribe to the __ListChanged__ event of the __BindingList__ and rebuild the __RadTreeView__ by clearing the nodes and re-adding the first level nodes.  You can optionally save the expanded node’s state as per [this article](http://www.telerik.com/help/winforms/treeview-how-to-keep-radtreeview-states-on-reset.html). 
         

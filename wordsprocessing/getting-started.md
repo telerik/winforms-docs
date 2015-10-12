@@ -13,7 +13,6 @@ position: 1
 
 
 This tutorial will take you through the creation of a sample application that uses RadWordsProcessing.
-      
 
 * [Assembly Reference](#assembly-references)
 
@@ -24,7 +23,6 @@ This tutorial will take you through the creation of a sample application that us
 ## Assembly References
 
 Here is a list of assemblies that contain the __RadWordsProcessing__ functionality and need to be referenced in your project:
-        
 
 * Telerik.Windows.Documents.Core
             
@@ -48,11 +46,6 @@ Here is a list of assemblies that contain the __RadWordsProcessing__ functionali
 ## Creating RadFlowDocument from Code
 
 Here is how to create a [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%}) and insert some text content.
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\WordsProcessingGettingStarted.cs region=radwordsprocessing-getting-started_0}} 
 {{source=..\SamplesVB\WordsProcessing\WordsProcessingGettingStarted.vb region=radwordsprocessing-getting-started_0}} 
@@ -71,9 +64,6 @@ Here is how to create a [RadFlowDocument]({%slug winforms/wordsprocessing/model/
 
 {{endregion}} 
 
-
-
-
 You need to add using directive to the following namespaces:
         
 
@@ -85,13 +75,7 @@ You need to add using directive to the following namespaces:
 
 ## Exporting RadFlowDocument to Docx
 
-Exporting the document to Docx file can be achieved with the [DocxFormatProvider]({%slug winforms/wordsprocessing/formats-and-conversion/docx/using-docxformatprovider%}). Here
-          is how to create a provider instance and save a document with it:
-        #_[C#] _
-
-	
-
-
+Exporting the document to Docx file can be achieved with the [DocxFormatProvider]({%slug winforms/wordsprocessing/formats-and-conversion/docx/using-docxformatprovider%}). Here is how to create a provider instance and save a document with it:
 
 {{source=..\SamplesCS\WordsProcessing\WordsProcessingGettingStarted.cs region=radwordsprocessing-getting-started_1}} 
 {{source=..\SamplesVB\WordsProcessing\WordsProcessingGettingStarted.vb region=radwordsprocessing-getting-started_1}} 
@@ -111,10 +95,7 @@ Exporting the document to Docx file can be achieved with the [DocxFormatProvider
             '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 More information about the supported formats and features can be found [here](b61690b2-afed-4616-be13-20a38078c066).
         

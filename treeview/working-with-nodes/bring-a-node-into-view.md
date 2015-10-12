@@ -11,14 +11,7 @@ position: 3
 # Bring a Node into View
 
 
-
-## 
-
-In cases where you have a treeview with many nodes and limited space on the form, you need to scroll the control in order to find a specific node. __RadTreeView__ control handles this automatically for you. To scroll the control to a node use the __BringIntoView()__ method of __RadTreeView__:#_[C#]_
-
-	
-
-
+In cases where you have a treeview with many nodes and limited space on the form, you need to scroll the control in order to find a specific node. __RadTreeView__ control handles this automatically for you. To scroll the control to a node use the __BringIntoView()__ method of __RadTreeView__:
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=bringIntoView}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=bringIntoView}} 
@@ -63,10 +56,7 @@ In cases where you have a treeview with many nodes and limited space on the fo
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 >note Note that the BringIntoView() method does not select the node!
 >

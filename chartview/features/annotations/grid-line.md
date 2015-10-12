@@ -5,7 +5,7 @@ description: Grid line
 slug: winforms/chartview-/features/annotations/grid-line
 tags: grid,line
 published: True
-position: 0
+position: 1
 ---
 
 # Grid line
@@ -33,9 +33,7 @@ In the case of the Cartesian chart, the grid line represents a vertical or horiz
         
 
 Here is what __CartesianGridLineAnnotation__ looks like:
-        ![chartview-annotations-gridline-annotations 001](images/chartview-annotations-gridline-annotations001.png)#_[C#] _
-
-	
+![chartview-annotations-gridline-annotations 001](images/chartview-annotations-gridline-annotations001.png)
 
 
 
@@ -80,9 +78,7 @@ Here is what __CartesianGridLineAnnotation__ looks like:
 
 {{endregion}} 
 
-
-
-
+ 
 Properties:
         
 
@@ -98,10 +94,8 @@ Polar axis grid lines represent concentric circles that cross the Polar axis at 
         
 
 Here is what __PolarAxisGridLineAnnotation__ looks like:
-        ![chartview-annotations-gridline-annotations 002](images/chartview-annotations-gridline-annotations002.png)#_[C#] _
 
-	
-
+![chartview-annotations-gridline-annotations 002](images/chartview-annotations-gridline-annotations002.png) 
 
 
 {{source=..\SamplesCS\ChartView\Annotations\GridLine.cs region=PolarGridLine}} 
@@ -153,13 +147,9 @@ Here is what __PolarAxisGridLineAnnotation__ looks like:
         '
 ````
 
-{{endregion}} 
+{{endregion}}  
 
-
-
-
-Property:
-        
+Property: 
 
 * __Value__ (of type double) - specifies the location on the Polar axis (the radius), where the grid line will cross
             
@@ -170,9 +160,7 @@ Radial axis grid lines basically represent the radius of the polar chart.
         
 
 Here is what __RadialAxisGridLineAnnotation__ looks like:
-        ![chartview-annotations-gridline-annotations 003](images/chartview-annotations-gridline-annotations003.png)#_[C#] _
-
-	
+![chartview-annotations-gridline-annotations 003](images/chartview-annotations-gridline-annotations003.png)
 
 
 
@@ -226,9 +214,7 @@ Here is what __RadialAxisGridLineAnnotation__ looks like:
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 Property:
         

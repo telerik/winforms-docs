@@ -17,28 +17,19 @@ position: 2
 RadTreeView has the ability to bind to related data of custom objects which have member collections of related objects (ORM generated classes for example).
         
 
-Consider the following class diagram: ![treeview-data-binding-binding-to-object-relational-data 004](images/treeview-data-binding-binding-to-object-relational-data004.png)
+Consider the following class diagram: 
 
-There are three classes named __Customer__, __Order__ and
-          __Order_Detail__. The __Customer__ class represents a custom.
+![treeview-data-binding-binding-to-object-relational-data 004](images/treeview-data-binding-binding-to-object-relational-data004.png)
+
+There are three classes named __Customer__, __Order__ and __Order_Detail__. The __Customer__ class represents a custom.
         
 
-The data relations in the case of custom objects are represented by properties which provide references
-          to collections of related objects. In this case the __Customer__ class has a property
-          named __Orders__ which is a collection of __Order__ objects.
-          This is the first relation. The second relation is the __Order_Details__ property
-          in the __Order__ class, it offers a reference to a collection of
-          __Order_Details__. Once you have such class composition, it is trivial
-          for RadTreeView to represent it visually in your application.
+The data relations in the case of custom objects are represented by properties which provide references to collections of related objects. In this case the __Customer__ class has a property named __Orders__ which is a collection of __Order__ objects. This is the first relation. The second relation is the __Order_Details__ property in the __Order__ class, it offers a reference to a collection of __Order_Details__. Once you have such class composition, it is trivial for RadTreeView to represent it visually in your application.
         
 
 The two steps that must be done are these:
 
-1. Set the DataSource of RadTreeView to a collection of your root objects (a collection of Customer object in this case):#_[C#]_
-
-	
-
-
+1\. Set the DataSource of RadTreeView to a collection of your root objects (a collection of Customer object in this case):
 
 {{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=customers}} 
 {{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=customers}} 
@@ -61,17 +52,7 @@ The two steps that must be done are these:
 
 {{endregion}} 
 
-
-
-
-1. Set DisplayMember corresponding to the DisplayMembers of the different types of objects
-              and set the ChildMember corresponding to the names of the properties that represent the
-              collections of sub objects.
-              #_[C#]_
-
-	
-
-
+2\. Set DisplayMember corresponding to the DisplayMembers of the different types of objects and set the ChildMember corresponding to the names of the properties that represent the collections of sub objects.
 
 {{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=relationClasses}} 
 {{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=relationClasses}} 
@@ -89,26 +70,17 @@ The two steps that must be done are these:
 
 {{endregion}} 
 
-
-
-
 As a result, we get the following hierarchy in RadTreeView:
-        ![treeview-data-binding-binding-to-object-relational-data 001](images/treeview-data-binding-binding-to-object-relational-data001.png)
+
+![treeview-data-binding-binding-to-object-relational-data 001](images/treeview-data-binding-binding-to-object-relational-data001.png)
 
 ## Binding check boxes
 
-Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify
-          the RadTreeView.__CheckedMember__ property in addition to the necessary information described above. 
-        
+Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify the RadTreeView. __CheckedMember__ property in addition to the necessary information described above. 
 
 Consider the following diagram which can be illustrated with the sample classes below: ![treeview-data-binding-binding-to-object-relational-data 002](images/treeview-data-binding-binding-to-object-relational-data002.png)
 
 Note that the *IsActive* and the *Status* properties represent boolean data. 
-      #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=DataClasses}} 
 {{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=DataClasses}} 
@@ -256,14 +228,9 @@ Note that the *IsActive* and the *Status* properties represent boolean data.
 
 {{endregion}} 
 
+The code snippet below illustrates how to bind the check-boxes coming from the described properties:
 
-
-
-The code snippet below illustrates how to bind the check-boxes coming from the described properties:![treeview-data-binding-binding-to-object-relational-data 003](images/treeview-data-binding-binding-to-object-relational-data003.png)#_[C#]_
-
-	
-
-
+![treeview-data-binding-binding-to-object-relational-data 003](images/treeview-data-binding-binding-to-object-relational-data003.png)
 
 {{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=CheckedMember}} 
 {{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=CheckedMember}} 
@@ -327,7 +294,4 @@ The code snippet below illustrates how to bind the check-boxes coming from the d
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
