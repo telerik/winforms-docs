@@ -16,97 +16,87 @@ position: 1
 
 The following tutorial demonstrates creating a RadMenu with standard menu items with shortcuts, ComboBox menu elements and also shows how to apply a theme to RadMenu.
 
-1. Drag a __RadMenu__ control from the toolbox to a form.
+1\. Drag a __RadMenu__ control from the toolbox to a form.
             
 
-1. Click in the area labeled __Type Here__ and type "File".
+2\. Click in the area labeled __Type Here__ and type "File".
               
 
-1. Press __Enter__.
-            ![menus-menu-getting-started 001](images/menus-menu-getting-started001.png)
+3\. Press __Enter__.<br /> ![menus-menu-getting-started 001](images/menus-menu-getting-started001.png)
 
-1. Click in the area labeled __Type Here__ and type "Help".
+4\. Click in the area labeled __Type Here__ and type "Help".
             
 
-1. Press __Enter__.
+5\. Press __Enter__.
             
 
-1. Drag Office2010Black theme component from your ToolBox to your form.
+6\. Drag Office2010Black theme component from your ToolBox to your form.
             
 
-1. Select the __RadMenu__ control.
+7\. Select the __RadMenu__ control.
             
 
-1. Set the __ThemeName__ property to __Office2010Black__.
+8\. Set the __ThemeName__ property to __Office2010Black__.
             
 
-1. Select the "File" menu item.
+9\. Select the "File" menu item.
             
 
-1. In the __Properties__ window, click in the __Items__ property.
+10\. In the __Properties__ window, click in the __Items__ property.
             
 
-1. Click the ellipsis button.
+11\. Click the ellipsis button.
             
 
-1. In the __RadItem Collection Editor__, click the drop-down arrow on the __Add__ button. Select the __RadMenuItem__.
+12\. In the __RadItem Collection Editor__, click the drop-down arrow on the __Add__ button. Select the __RadMenuItem__.
             
 
-1. Set the __Text__ property of the new __RadMenuItem__ to "New".
-            ![menus-menu-getting-started 002](images/menus-menu-getting-started002.png)
+13\. Set the __Text__ property of the new __RadMenuItem__ to "New".<br/>![menus-menu-getting-started 002](images/menus-menu-getting-started002.png)
 
-1. Add two more RadMenuItems. Set their __Text__ properties to "Open" and "Save".
+14\. Add two more RadMenuItems. Set their __Text__ properties to "Open" and "Save".
             
 
-1. Click __OK__.
+15\. Click __OK__.
             
 
-1. Select the "Help" menu item.
+16\. Select the "Help" menu item.
             
 
-1. In the __Properties__ window, click in the __Items__ property.
+17\. In the __Properties__ window, click in the __Items__ property.
             
 
-1. Click the ellipsis button.
+18\. Click the ellipsis button.
             
 
-1. In the __RadItem Collection Editor__, click the drop-down arrow on the __Add__ button.
-              Select the __RadMenuComboItem__.
+19\. In the __RadItem Collection Editor__, click the drop-down arrow on the __Add__ button. Select the __RadMenuComboItem__.
             
 
-1. Clear the __Text__ property of the new RadMenuComboItem.
+20\. Clear the __Text__ property of the new RadMenuComboItem.
             
 
-1. Expand the __ComboBoxElement__ property of the RadMenuComboItem.
+21\. Expand the __ComboBoxElement__ property of the RadMenuComboItem.
             
 
-1. Click in the __Items__ property of the ComboBoxElement.
+22\. Click in the __Items__ property of the ComboBoxElement.
             
 
-1. Click the ellipsis button.
+23\. Click the ellipsis button.
             
 
-1. In the __RadListDataItem Collection Editor__, click the __Add__ button.
+24\. In the __RadListDataItem Collection Editor__, click the __Add__ button.
             
 
-1. Set the __Text__ property of the new RadComboBoxItem to "Forums".
+25\. Set the __Text__ property of the new RadComboBoxItem to "Forums".
+ 
+26\. Add two more RadComboBoxItems. Set their __Text__ properties to "Support" and "Knowledge Base".<br/>![menus-menu-getting-started 003](images/menus-menu-getting-started003.png)
+
+27\. Click __OK__ to close the RadListDataItem Collection Editor.
             
 
-1. Add two more RadComboBoxItems. Set their __Text__ properties to "Support" and "Knowledge Base".
-            ![menus-menu-getting-started 003](images/menus-menu-getting-started003.png)
-
-1. Click __OK__ to close the RadListDataItem Collection Editor.
+28\. Click __OK__ to close the RadItem Collection Editor.
             
 
-1. Click __OK__ to close the RadItem Collection Editor.
-            
-
-1. In order to assign a shortcut to a RadMenuItem, go to the Code View of the form and set the Ctrl+N shortcut to the 'New' menu item. 
-            #_[C#]_
-
-	
-
-
+29\. In order to assign a shortcut to a RadMenuItem, go to the Code View of the form and set the Ctrl+N shortcut to the 'New' menu item. 
 
 {{source=..\SamplesCS\Menus\Menu\MenuGettingStarted.cs region=shortcut}} 
 {{source=..\SamplesVB\Menus\Menu\MenuGettingStarted.vb region=shortcut}} 
@@ -121,24 +111,16 @@ The following tutorial demonstrates creating a RadMenu with standard menu items 
 
 {{endregion}} 
 
-
-
-
-1. Go to the Design View of the form and select the 'New' menu item.
+30\. Go to the Design View of the form and select the 'New' menu item.
             
 
-1. In the __Properties__ window, click the events toolbar button.
+31\. In the __Properties__ window, click the events toolbar button.
             
 
-1. Double-click the __Click__ event.
+32\. Double-click the __Click__ event.
             
 
-1. Replace the automatically-generated event handler with this code:
-            #_[C#]_
-
-	
-
-
+33\. Replace the automatically-generated event handler with this code:
 
 {{source=..\SamplesCS\Menus\Menu\MenuGettingStarted.cs region=clickHandler}} 
 {{source=..\SamplesVB\Menus\Menu\MenuGettingStarted.vb region=clickHandler}} 
@@ -158,11 +140,6 @@ The following tutorial demonstrates creating a RadMenu with standard menu items 
 
 {{endregion}} 
 
+34\. Return to the Design View of the form.
 
-
-
-1. Return to the Design View of the form.
-            
-
-1. Press __F5__ to run the project. Notice the menu styling, the use of Ctrl+N to trigger the message box, and the combo box in the Help menu.
-            ![menus-menu-getting-started 004](images/menus-menu-getting-started004.png)
+35\. Press __F5__ to run the project. Notice the menu styling, the use of Ctrl+N to trigger the message box, and the combo box in the Help menu. </br>![menus-menu-getting-started 004](images/menus-menu-getting-started004.png)

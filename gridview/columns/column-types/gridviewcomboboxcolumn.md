@@ -23,16 +23,10 @@ __GridViewComboBoxColumn__ displays a set of predefined candidate text values i
 
 Other important properties for __GridViewComboBoxColumn__ are:
 
-* __FilterMode__ - has two values __DisplayMember__ and
-			  		__ValueMember__, and as the name of the property speaks this setting will
-			  		determine whether the column will be filtered according to the __DisplayMember__
-			  		or the __ValueMember__.
+* __FilterMode__ - has two values __DisplayMember__ and determine whether the column will be filtered according to the __DisplayMember__ or the __ValueMember__.
 			  		
 
-* __DisplayMemberSort__ - this property will determine whether the column will
-			  		be sorted by the column's __DisplayMember__ or __ValueMember__. 
-			  		Setting it to *true* will sort by __DisplayMember__,
-			  		otherwise the sorting will be executed according to the __ValueMember__
+* __DisplayMemberSort__ - this property will determine whether the column will be sorted by the column's __DisplayMember__ or __ValueMember__. Setting it to *true* will sort by __DisplayMember__, otherwise the sorting will be executed according to the __ValueMember__
 
 >note By default, when sorting is executed on GridViewComboBoxColumn it is sorted according to its __ValueMember__ setting. However, if you need to perform the sorting according to the DisplayMember instead, you should set the __DisplayMemberSort__ property of the column.
 >
