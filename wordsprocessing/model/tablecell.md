@@ -10,12 +10,7 @@ position: 6
 
 # TableCell
 
-
-
-__TableCell__ element is a __BlockContainer__ element and defines a cell of content within a
-        [Table]({%slug winforms/wordsprocessing/model/table%}). It contains __Block__ elements such as
-        [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}) and [Table]({%slug winforms/wordsprocessing/model/table%}).
-      
+__TableCell__ element is a __BlockContainer__ element and defines a cell of content within a [Table]({%slug winforms/wordsprocessing/model/table%}). It contains __Block__ elements such as [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}) and [Table]({%slug winforms/wordsprocessing/model/table%}).
 
 * [Inserting a TableCell](#inserting-a-tablecell)
 
@@ -25,13 +20,7 @@ __TableCell__ element is a __BlockContainer__ element and defines a cell of cont
 
 ## Inserting a TableCell
 
-You can use the following code snippet to create a __TableCell__ and add it in a
-          [TableRow]({%slug winforms/wordsprocessing/model/tablerow%}).
-        #_[C#] _
-
-	
-
-
+You can use the following code snippet to create a __TableCell__ and add it in a [TableRow]({%slug winforms/wordsprocessing/model/tablerow%}).
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableCell.cs region=radwordsprocessing-model-tablecell_0}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_0}} 
@@ -48,16 +37,7 @@ You can use the following code snippet to create a __TableCell__ and add it in a
 
 {{endregion}} 
 
-
-
-
-To create a __TableCell__ and add it in the document tree in the same time, you can use the
-          __AddTableCell()__ method:
-        #_[C#] _
-
-	
-
-
+To create a __TableCell__ and add it in the document tree in the same time, you can use the  __AddTableCell()__ method:
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableCell.cs region=radwordsprocessing-model-tablecell_1}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_1}} 
@@ -72,55 +52,36 @@ To create a __TableCell__ and add it in the document tree in the same time, you 
             '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Modifying a TableCell
 
 The __TableCell__ element exposes several properties that allow you to customize its layout.
         
 
-* __Properties__: Retrieves all __TableCellProperties__. For more information read
-              [
-                this article
-              ]({%slug winforms/wordsprocessing/concepts/style-properties%}).
-            
+* __Properties__: Retrieves all __TableCellProperties__. For more information read [this article]({%slug winforms/wordsprocessing/concepts/style-properties%}).
 
 * __Row__: Represents the parent __TableRow__ of the cell.
-            
 
 * __Table__: Represents the parent __Table__ of the cell.
-            
 
 * __Borders__: Specifies the borders of the cell. *Style property.*
 
-* __Shading__: Represents the shading applied to the cell. It is a composite object and is read-only. You can obtain the
-              following properties from it:
+* __Shading__: Represents the shading applied to the cell. It is a composite object and is read-only. You can obtain the following properties from it:
             
 
-* __BackgroundColor__: Specifies the background color for the shading. *
-                    Style property. The value is
-                    themable object.
-                  *
+* __BackgroundColor__: Specifies the background color for the shading. *Style property. The value is themable object.*
 
-* __PatternColor__: Specifies the pattern color for the shading. *
-                    Style property. The value is themable
-                    object.
-                  *
+* __PatternColor__: Specifies the pattern color for the shading. *Style property. The value is themable object.*
 
-* __Pattern__: Specifies the pattern which is used to lay the pattern color over the background color for the shading.
-                  *Style property.*
+* __Pattern__: Specifies the pattern which is used to lay the pattern color over the background color for the shading. *Style property.*
 
 * __Padding__: Specifies the padding of the cell. *Style property.*
 
-* __ColumnSpan__: Indicates the total number of columns that the __TableCell__ spans within a
-              __TableRow__.
+* __ColumnSpan__: Indicates the total number of columns that the __TableCell__ spans within a __TableRow__.
             
 
-* __RowSpan__: Specifies the total number of rows that the __TableCell__ spans within a
-              __Table__.
+* __RowSpan__: Specifies the total number of rows that the __TableCell__ spans within a __Table__.
             
 
 * __IgnoreCellMarkerInRowHeightCalculation__: Specifies whether cell marker is ignored when row height is calculated.
@@ -154,11 +115,6 @@ The __TableCell__ element exposes several properties that allow you to customize
 ### Add a Paragraph to a TableCell
 
 The following code snippet demonstrates how to add a __Paragraph__ to a __TableCell__:
-            #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTableCell.cs region=radwordsprocessing-model-tablecell_2}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_2}} 
@@ -173,15 +129,8 @@ The following code snippet demonstrates how to add a __Paragraph__ to a __TableC
 
 {{endregion}} 
 
-
-
-
-Through the __BlockCollection__ property of the __TableCell__ element you can add a
-              __Table__ or any other
-              [BlockBase](http://www.telerik.com/help/winforms/t_telerik_windows_documents_flow_model_blockbase.html)
-              element.
+Through the __BlockCollection__ property of the __TableCell__ element you can add a __Table__ or any other [BlockBase](http://www.telerik.com/help/winforms/t_telerik_windows_documents_flow_model_blockbase.html) element.
             
-
 # See Also
 
  * [TableCell API Reference](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_tablecell.html)

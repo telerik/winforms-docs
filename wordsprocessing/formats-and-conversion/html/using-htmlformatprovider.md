@@ -27,11 +27,8 @@ In order to import an HTML document you can use the overloads of the __HtmlForma
         
 
 __Example 1__ shows how to use HtmlFormatProvider to import an HTML document from a file.
-        #_[C#] Example 1: Import HTML File _
 
-	
-
-
+#### Example 1: Import HTML File
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.cs region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_0}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.vb region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_0}} 
@@ -57,11 +54,8 @@ __Example 1__ shows how to use HtmlFormatProvider to import an HTML document fro
 
 
 __Example 2__ shows how you can import an HTML string.
-        #_[C#] Example 2: Import HTML String_
 
-	
-
-
+#### Example 2: Import HTML String
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.cs region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_1}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.vb region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_1}} 
@@ -80,9 +74,6 @@ __Example 2__ shows how you can import an HTML string.
 
 {{endregion}} 
 
-
-
-
 The resulting __RadFlowDocument__ can be used like any code-generated document.
         
 
@@ -92,11 +83,8 @@ In order to export a document to HTML you can use the overloads of the__HtmlForm
         
 
 __Example 3__ shows how to use the HtmlFormatProvider to export an instance of RadFlowDocument to a file:
-        #_[C#] Example 3: Export HTML to File_
 
-	
-
-
+#### Example 3: Export HTML to File
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.cs region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_2}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.vb region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_2}} 
@@ -124,11 +112,8 @@ __Example 3__ shows how to use the HtmlFormatProvider to export an instance of R
 
 
 You can also export the document to a string variable like shown in __Example 4__.
-        #_[C#] Example 4: Export HTML to String_
 
-	
-
-
+#### Example 4: Export HTML to String
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.cs region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_3}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.vb region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_3}} 
@@ -145,7 +130,4 @@ You can also export the document to a string variable like shown in __Example 4_
             '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

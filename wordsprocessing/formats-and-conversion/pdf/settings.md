@@ -17,8 +17,7 @@ __PdfFormatProvider__ allows to export of __RadFlowDocument__ to PDF. Using the 
 
 ## Export Settings
 
-The __PdfExportSettings__ class derives from the __Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export.PdfExportSettings__ class
-          related to the [RadPdfProcessing]({%slug winforms/pdfprocessing%}) library. Thus, the export allows you to controls the encryption, image quality and other PDF format related properties. More information on the settings are available in the [export settings article for RadPdfProcessing]({%slug winforms/pdfprocessing/formats-and-conversion/pdf/settings%}).
+The __PdfExportSettings__ class derives from the __Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export.PdfExportSettings__ class related to the [RadPdfProcessing]({%slug winforms/pdfprocessing%}) library. Thus, the export allows you to controls the encryption, image quality and other PDF format related properties. More information on the settings are available in the [export settings article for RadPdfProcessing]({%slug winforms/pdfprocessing/formats-and-conversion/pdf/settings%}).
         
 
 __Example 1__ demonstrates how to export a __RadFlowDocument__ instance to PDF and specify that it needs to be PDF/A compliant.
@@ -26,11 +25,8 @@ __Example 1__ demonstrates how to export a __RadFlowDocument__ instance to PDF a
 
 >tip In order to specify export settings to the PdfFormatProvider you need to add both the Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export and Telerik.Windows.Documents.Flow.FormatProviders.Pdf.Export namespaces. In __Example 1__ the *Fixed* alias corresponds to the *Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export* namespace.
 >
-#_[C#] Example 1: Export PDF/A Compliant Document_
 
-	
-
-
+#### Example 1: Export PDF/A Compliant Document
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingPdfSettings.cs region=radwordsprocessing-formats-and-conversion-pdf-settings_0}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingPdfSettings.vb region=radwordsprocessing-formats-and-conversion-pdf-settings_0}} 
@@ -66,12 +62,8 @@ __Example 1__ demonstrates how to export a __RadFlowDocument__ instance to PDF a
 
 {{endregion}} 
 
-
-
-
 >note PDF/A standard requires documents to contain all fonts used in them within the document. RadPdfProcessing does not support embedding of the standard 14 fonts used in PDF documents that are listed[here]({%slug winforms/pdfprocessing/concepts/fonts%}), so using them will prevent the document from complying with the standard.
 >
-
 
 ## Extensibility Manager
 
@@ -82,11 +74,8 @@ ExtensibilityManager provides an option to control how lists with different __Nu
         
 
 __Example 2__ shows how to register a custom *ChineseCountingConverter* class instance that converts a number with NumberingStyle.ChineseCounting.
-        #_[C#] Example 2: Register Numbering Style Converter_
 
-	
-
-
+#### Example 2: Register Numbering Style Converter
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingPdfSettings.cs region=radwordsprocessing-formats-and-conversion-pdf-settings_1}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingPdfSettings.vb region=radwordsprocessing-formats-and-conversion-pdf-settings_1}} 
@@ -100,9 +89,6 @@ __Example 2__ shows how to register a custom *ChineseCountingConverter* class in
 ````
 
 {{endregion}} 
-
-
-
 
 >note PDF/A standard requires documents to contain all fonts used in them within the document. RadPdfProcessing does not support embedding of the standard 14 fonts used in PDF documents that are listed[here]({%slug winforms/pdfprocessing/concepts/fonts%}), so using them will prevent the document from complying with the standard.
 >

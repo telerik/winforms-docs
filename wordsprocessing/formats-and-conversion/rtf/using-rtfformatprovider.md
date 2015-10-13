@@ -10,11 +10,7 @@ position: 1
 
 # Using RtfFormatProvider
 
-
-
-__RtfFormatProvider__ makes it easy to import and export __RadFlowDocument__ to/from RTF format,
-        preserving the entire document structure and formatting.
-      
+__RtfFormatProvider__ makes it easy to import and export __RadFlowDocument__ to/from RTF format, preserving the entire document structure and formatting.
 
 All you have to do in order to use __RtfFormatProvider__ is add references to the assemblies listed below:
       
@@ -28,14 +24,8 @@ All you have to do in order to use __RtfFormatProvider__ is add references to th
 ## Import
 
 In order to import an RTF document you need to use the __Import()__ method of __RtfFormatProvider__.
-        
 
 The following code snippet shows how to use __RtfFormatProvider__ to import an RTF document from a file:
-        #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingUsingrtfFormatProvider.cs region=radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_0}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingUsingrtfFormatProvider.vb region=radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_0}} 
@@ -57,15 +47,7 @@ The following code snippet shows how to use __RtfFormatProvider__ to import an R
 
 {{endregion}} 
 
-
-
-
 And here is how you can import a document from string containing the RTF document:
-        #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingUsingrtfFormatProvider.cs region=radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_1}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingUsingrtfFormatProvider.vb region=radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_1}} 
@@ -82,23 +64,13 @@ And here is how you can import a document from string containing the RTF documen
 
 {{endregion}} 
 
-
-
-
 The resulting __RadFlowDocument__ can be used like any code-generated document.
-        
 
 ## Export
 
 In order to export a document to RTF you need to use the __Export()__ method of __RtfFormatProvider__.
-        
 
 The following snippet shows how to use __RtfFormatProvider__ to export __RadFlowDocument__ to a file.
-        #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingUsingrtfFormatProvider.cs region=radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_2}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingUsingrtfFormatProvider.vb region=radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_2}} 
@@ -122,15 +94,7 @@ The following snippet shows how to use __RtfFormatProvider__ to export __RadFlow
 
 {{endregion}} 
 
-
-
-
 You can also export the document to a string and preserve it in a database.
-        #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingUsingrtfFormatProvider.cs region=radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_3}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingUsingrtfFormatProvider.vb region=radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_3}} 
@@ -148,9 +112,6 @@ You can also export the document to a string and preserve it in a database.
 ````
 
 {{endregion}} 
-
-
-
 
 The resulting documents can be opened in any application that supports RTF documents.
         

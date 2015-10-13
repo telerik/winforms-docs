@@ -12,8 +12,7 @@ position: 0
 
 
 
-__TxtFormatProvider__ makes it easy to import and export __RadFlowDocument__ to/from plain text format,
-        preserving the document structure.
+__TxtFormatProvider__ makes it easy to import and export __RadFlowDocument__ to/from plain text format, preserving the document structure.
       
 
 All you have to do in order to use __TxtFormatProvider__ is add references to the assemblies listed below:
@@ -31,11 +30,6 @@ In order to import a plain text document you need to use the __Import()__ method
         
 
 The following code snippet shows how to use __TxtFormatProvider__ to import a document from a file:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.cs region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_0}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.vb region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_0}} 
@@ -55,17 +49,9 @@ The following code snippet shows how to use __TxtFormatProvider__ to import a do
             '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 And here is how you can import a document from string:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.cs region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_1}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.vb region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_1}} 
@@ -82,11 +68,7 @@ And here is how you can import a document from string:
 
 {{endregion}} 
 
-
-
-
 The resulting __RadFlowDocument__ can be manipulatedused like any code-generated document.
-        
 
 ## Export
 
@@ -94,11 +76,6 @@ In order to export a document to plain text you need to use the __Export()__ met
         
 
 The following snippet shows how to use __TxtFormatProvider__ to export __RadFlowDocument__ to a file.
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.cs region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_2}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.vb region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_2}} 
@@ -122,15 +99,7 @@ The following snippet shows how to use __TxtFormatProvider__ to export __RadFlow
 
 {{endregion}} 
 
-
-
-
 You can also export the document to a string and preserve it in a database.
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.cs region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_3}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\PlainText\WordsProcessingUsingTxtFormatProvider.vb region=radwordsprocessing-formats-and-conversion-txt-txtformatprovider_3}} 
@@ -148,6 +117,4 @@ You can also export the document to a string and preserve it in a database.
 ````
 
 {{endregion}} 
-
-
 

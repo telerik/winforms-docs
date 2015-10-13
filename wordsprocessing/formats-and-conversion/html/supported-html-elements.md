@@ -13,17 +13,12 @@ position: 1
 
 
 This article lists all HTML elements that are supported by __HtmlFormatProvider__.
-      
-
-## 
-
+ 
+ ##
 
 | HTML Element | Supported | Comment |
 | ------ | ------ | ------ |
 |
-
-
-
 | __Text Formatting__ |
 |html|
 |head|

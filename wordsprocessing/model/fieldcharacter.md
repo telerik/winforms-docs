@@ -10,33 +10,21 @@ position: 10
 
 # FieldCharacter
 
-
-
-__FieldCharacter__ is an inline element. It is a special character which delimits the start and end of a field or separates
-        its field codes from its current field result.
-      
+__FieldCharacter__ is an inline element. It is a special character which delimits the start and end of a field or separates its field codes from its current field result.
 
 ## Inserting a FieldCharacter
 
-__FieldCharacter__ element is created when InsertField(string code, string result) method of
-          [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%}) is called.
-        
+__FieldCharacter__ element is created when InsertField(string code, string result) method of[RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%}) is called.
 
 These are the possible __FieldCharacterTypes__
 
 * __Start__: Specifies that the character is a start character, which defines the start of a complex field.
-            
 
 * __End__: Specifies that the character is an end character, which defines the end of a complex field.
-            
 
-* __Separator__: Specifies that the character is a separator character, which defines the end of the field codes
-              and the start of the field result for a complex field.
-            
+* __Separator__: Specifies that the character is a separator character, which defines the end of the field codes and the start of the field result for a complex field.
 
-__FieldCharacter__ has a __FieldInfo__ property which points to its associated
-          [FieldInfo]({%slug winforms/wordsprocessing/concepts/fields%}) object.
-        
+__FieldCharacter__ has a __FieldInfo__ property which points to its associated[FieldInfo]({%slug winforms/wordsprocessing/concepts/fields%}) object.
 
 # See Also
 

@@ -10,8 +10,6 @@ position: 12
 
 # Boomark
 
-
-
 A __Bookmark__ refers to a location in the document and has a unique name, which identifies it. Every __Bookmark__ has a corresponding __BookmarkRangeStart__ and __BookmarkRangeEnd__, which are inline elements. These two elements specify the Bookmark's location as follows:
       
 
@@ -24,10 +22,8 @@ A __Bookmark__ refers to a location in the document and has a unique name, which
 ## Inserting a Bookmark
 
 __Example 1__ shows how to create a __Bookmark__ and add its BookmarkRangeStart and BookmarkRangeEnd elements in a [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}):
-        #_[C#] Example 1: Add Bookmark to Paragraph_
 
-	
-
+#### Example 1: Add Bookmark to Paragraph
 
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBookmark.cs region=radwordsprocessing-model-bookmark_0}} 
@@ -49,18 +45,11 @@ __Example 1__ shows how to create a __Bookmark__ and add its BookmarkRangeStart 
 
 {{endregion}} 
 
-
-
-
 Note, that the paragraph should belong to the same document that is passed to the constructor of the __Bookmark__ object, otherwise an exception is thrown. The bookmark's location is specified around a run with text "text".
-        
 
 Inserting a __Bookmark__ in the document can also be done with through the [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%}) class like shown in __Example 2__:
-        #_[C#] Example 2: Insert Bookmark using RadFlowDocumentEditor_
 
-	
-
-
+#### Example 2: Insert Bookmark using RadFlowDocumentEditor
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBookmark.cs region=radwordsprocessing-model-bookmark_1}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBookmark.vb region=radwordsprocessing-model-bookmark_1}} 
@@ -77,11 +66,7 @@ Inserting a __Bookmark__ in the document can also be done with through the [RadF
 
 {{endregion}} 
 
-
-
-
 The __InsertBookmark()__ method from __Example 2__ creates a Bookmark with name "MyBookmark" and inserts one after another its BookmarkRangeStart and BookmarkRangeEnd elements.
-        
 
 ## Removing a Bookmark 
 
@@ -89,11 +74,8 @@ You can remove an inserted __Bookmark__ by using __RadFlowDocumentEditor__'s __D
         
 
 __Example 3__ demonstrates how you can delete the bookmark created in __Example 2__.
-        #_[C#] Example 3: Delete Bookmark using RadFlowDocumentEditor_
 
-	
-
-
+#### Example 3: Delete Bookmark using RadFlowDocumentEditor
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBookmark.cs region=radwordsprocessing-model-bookmark_2}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBookmark.vb region=radwordsprocessing-model-bookmark_2}} 
@@ -107,9 +89,6 @@ __Example 3__ demonstrates how you can delete the bookmark created in __Example 
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

@@ -12,8 +12,7 @@ position: 1
 
 
 
-__DocxFormatProvider__ makes it easy to import and export __RadFlowDocument__ to/from docx format,
-        preserving the entire document structure and formatting.
+__DocxFormatProvider__ makes it easy to import and export __RadFlowDocument__ to/from docx format, preserving the entire document structure and formatting.
       
 
 All you have to do in order to use __DocxFormatProvider__ is add references to the assemblies listed below:
@@ -31,14 +30,10 @@ All you have to do in order to use __DocxFormatProvider__ is add references to t
 ## Import
 
 In order to import a docx document you need to use the __Import()__ method of __DocxFormatProvider__.
-        
 
 The following code snippet shows how to use __DocxFormatProvider__ to import a docx document from a file:
-        #_[C#] Example 1:_
 
-	
-
-
+#### Example 1:
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.cs region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_0}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.vb region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_0}} 
@@ -61,19 +56,9 @@ The following code snippet shows how to use __DocxFormatProvider__ to import a d
 
 {{endregion}} 
 
-
-
-
 And here is how you can import a document from byte array containing the docx document:
-        #_[C#] Example 2:_
-
-	
-
-#_[VB] Example 2:_
-
-	
-
-
+       
+#### Example 2:
 
 The resulting __RadFlowDocument__ can be manipulatedused like any code-generated document.
         
@@ -84,26 +69,12 @@ In order to export a document to docx you need to use the __Export()__ method of
         
 
 The following snippet shows how to use __DocxFormatProvider__ to export __RadFlowDocument__ to a file.
-        #_[C#] Example 3:_
 
-	
-
-#_[VB] Example 3:_
-
-	
-
-
+#### Example 3:
 
 You can also export the document to a byte array and preserve it in a database.
-        #_[C#] Example 4:_
 
-	
-
-#_[VB] Example 4:_
-
-	
-
-
+#### Example 4:
 
 The resulting documents can be opened in any application that supports docx documents.
         

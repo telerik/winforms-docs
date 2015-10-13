@@ -10,8 +10,6 @@ position: 11
 
 # Break
 
-
-
 __Break__ element is an inline-level flow content element which specifies that a break should be placed at the current location. There are three types of breaks:
       
 
@@ -30,10 +28,6 @@ All inline-level elements in a __RadFlowDocument__ need to be placed within anot
         
 
 __Example 1__ shows how to create a __Break__ element and add it to a [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%}).
-        #_[C#] _
-
-	
-
 
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_0}} 
@@ -51,18 +45,12 @@ __Example 1__ shows how to create a __Break__ element and add it to a [Paragraph
 
 {{endregion}} 
 
-
-
-
 Note, that the paragraph should belong to the same document that is passed to the constructor of the __Break__ element. The code in __Example 1__ inserts a Break element of the default break type – Line break. You can change the type of a Break through its __BreakType__ property.
         
 
 __Example 2__ shows how you can change the type of the break created in __Example 1__.
-        #_[C#] Example 2: Change BreakType_
-
-	
-
-
+    
+#### Example 2: Change BreakType
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_1}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_1}} 
@@ -77,18 +65,12 @@ __Example 2__ shows how you can change the type of the break created in __Exampl
 
 {{endregion}} 
 
-
-
-
 Inserting a break in the document can also be done with the __InsertBreak()__ method of the [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%}) class.
-        
+
 
 __Example 3__ shows how you can insert a break through __RadFlowDocumentEditor__.
-        #_[C#] Example 3: Insert break using RadFlowDocumentEditor_
 
-	
-
-
+#### Example 3: Insert break using RadFlowDocumentEditor
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_2}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_2}} 
@@ -104,9 +86,6 @@ __Example 3__ shows how you can insert a break through __RadFlowDocumentEditor__
 ````
 
 {{endregion}} 
-
-
-
 
 ## Modifying a Break
 
@@ -132,11 +111,8 @@ The __Break__ element exposes several properties that allow you to customize it.
                 
 
 __Example 4__ shows how you can insert a Break through __RadFlowDocumentEditor__ and modify it later.
-        #_[C#] Example 4: Customize a break_
 
-	
-
-
+#### Example 4: Customize a break
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingBreak.cs region=radwordsprocessing-model-break_3}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBreak.vb region=radwordsprocessing-model-break_3}} 
@@ -158,9 +134,6 @@ __Example 4__ shows how you can insert a Break through __RadFlowDocumentEditor__
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

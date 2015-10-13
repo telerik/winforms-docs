@@ -10,12 +10,9 @@ position: 0
 
 # Features
 
-
-
 Below you can find list with all features that are supported by HtmlFormatProvider.
 
 ## 
-
 
 | Feature | Supported | Comment |
 | ------ | ------ | ------ |

@@ -12,9 +12,7 @@ position: 4
 
 
 
-__Table__ element is a __Block__ element that provides a grid-based organization. It accepts
-        [TableRow]({%slug winforms/wordsprocessing/model/tablerow%}) objects as children. The __TableRow__ object contains
-        [TableCell]({%slug winforms/wordsprocessing/model/tablecell%}).
+__Table__ element is a __Block__ element that provides a grid-based organization. It accepts [TableRow]({%slug winforms/wordsprocessing/model/tablerow%}) objects as children. The __TableRow__ object contains [TableCell]({%slug winforms/wordsprocessing/model/tablecell%}).
       
 
 * [Inserting a Table](#inserting-a-table)
@@ -25,18 +23,9 @@ __Table__ element is a __Block__ element that provides a grid-based organization
 
 ## Inserting a Table
 
-Tables can be added as a child of a
-          [BlockContainer](http://www.telerik.com/help/winforms/t_telerik_windows_documents_flow_model_blockcontainerbase.html)
-          element – [Section]({%slug winforms/wordsprocessing/model/section%}), [TableCell]({%slug winforms/wordsprocessing/model/tablecell%}),
-          [Headers and Footers]({%slug winforms/wordsprocessing/model/headers-and-footers%}), through the __Blocks__ collection.
-        
+Tables can be added as a child of a [BlockContainer](http://www.telerik.com/help/winforms/t_telerik_windows_documents_flow_model_blockcontainerbase.html) element – [Section]({%slug winforms/wordsprocessing/model/section%}), [TableCell]({%slug winforms/wordsprocessing/model/tablecell%}), [Headers and Footers]({%slug winforms/wordsprocessing/model/headers-and-footers%}), through the __Blocks__ collection.
 
 The following code snippet creates and inserts a Table to a Section.
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTable.cs region=radwordsprocessing-model-table_0}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_0}} 
@@ -62,21 +51,10 @@ The following code snippet creates and inserts a Table to a Section.
 
 {{endregion}} 
 
-
-
-
->tip The parent BlockContainer element (in this case - the *section* ) should belong to the same document that is
-            passed to the constructor of the __Table__ .
+>tip The parent BlockContainer element (in this case - the *section* ) should belong to the same document that is passed to the constructor of the __Table__.
 >
 
-
-You can add a table at a specific index in the __Blocks__ collection of a __BlockContainer__
-          using the __Insert()__ method. Here is how to add a table at the beginning of a section:
-        #_[C#] _
-
-	
-
-
+You can add a table at a specific index in the __Blocks__ collection of a __BlockContainer__ using the __Insert()__ method. Here is how to add a table at the beginning of a section:
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTable.cs region=radwordsprocessing-model-table_1}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_1}} 
@@ -93,16 +71,7 @@ You can add a table at a specific index in the __Blocks__ collection of a __Bloc
 
 {{endregion}} 
 
-
-
-
-You can also use the __AddTable()__ method of the __Blocks__ collection of a __BlockContainer__.
-          The method creates a new __Table__ instance, adds it to the container and returns it:
-        #_[C#] _
-
-	
-
-
+You can also use the __AddTable()__ method of the __Blocks__ collection of a __BlockContainer__. The method creates a new __Table__ instance, adds it to the container and returns it:
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTable.cs region=radwordsprocessing-model-table_2}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_2}} 
@@ -117,15 +86,7 @@ You can also use the __AddTable()__ method of the __Blocks__ collection of a __B
 
 {{endregion}} 
 
-
-
-
 Inserting a new Table in the document can also be achieved with the [RadFlowDocumentEditor]({%slug winforms/wordsprocessing/editing/radflowdocumenteditor%}) class:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTable.cs region=radwordsprocessing-model-table_3}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_3}} 
@@ -142,17 +103,12 @@ Inserting a new Table in the document can also be achieved with the [RadFlowDocu
 
 {{endregion}} 
 
-
-
-
 ## Modifying a Table
 
-__Properties__ exposes several properties that allow you to customize the layout of the elements placed underneath it. Here is a list
-          of them:
+__Properties__ exposes several properties that allow you to customize the layout of the elements placed underneath it. Here is a list of them:
         
 
-* __Properties__:  Gets all table properties as TableProperties object. More info on how to use table properties can be
-              found in [Style Properties]({%slug winforms/wordsprocessing/concepts/style-properties%}) article.
+* __Properties__:  Gets all table properties as TableProperties object. More info on how to use table properties can be found in [Style Properties]({%slug winforms/wordsprocessing/concepts/style-properties%}) article.
             
 
 * __Rows__: Represents __TableRowCollection__ of the Table.
@@ -165,18 +121,14 @@ __Properties__ exposes several properties that allow you to customize the layout
 
 * __Borders__: Specifies the borders of the Table. *Style property.*
 
-* __Shading__: Represents the shading applied to the table. It is a composite object and is read-only.
-              You can obtain the following properties from it:
+* __Shading__: Represents the shading applied to the table. It is a composite object and is read-only. You can obtain the following properties from it:
             
 
-* __BackgroundColor__: Specifies the background color for the shading.
-                  *Style property. The value is themable object.*
+* __BackgroundColor__: Specifies the background color for the shading.*Style property. The value is themable object.*
 
-* __PatternColor__: Specifies the pattern color for the shading.
-                  *Style property. The value is themable object.*
+* __PatternColor__: Specifies the pattern color for the shading. *Style property. The value is themable object.*
 
-* __Pattern__: Specifies the pattern which is used to lay the pattern color over the background color for the shading.
-                  *Style property.*
+* __Pattern__: Specifies the pattern which is used to lay the pattern color over the background color for the shading. *Style property.*
 
 * __GridColumnsCount__: Returns the number of the columns in the table grid.
             
@@ -184,17 +136,14 @@ __Properties__ exposes several properties that allow you to customize the layout
 * __GridRowsCount__: Returns the number of the rows in the table grid.
             
 
-* __TableCellSpacing__: Specifies the spacing between adjacent cells and the edges of the table.
-              *Style property.*
+* __TableCellSpacing__: Specifies the spacing between adjacent cells and the edges of the table.*Style property.*
 
 * __HasCellSpacing__: Indicates whether there is TableCellSpacing applied in the table.
             
 
-* __TableCellPadding__: Specifies the default padding of the cells inside the table.
-              *Style property.*
+* __TableCellPadding__: Specifies the default padding of the cells inside the table.  *Style property.*
 
-* __Indent__: Represents the size of the indent added before the leading edge of the table.
-              *Style property.*
+* __Indent__: Represents the size of the indent added before the leading edge of the table. *Style property.*
 
 * __FlowDirection__: Represents the flow direction of cells inside the table. The default value is LeftToRight.
             
@@ -205,8 +154,7 @@ __Properties__ exposes several properties that allow you to customize the layout
 * __Looks__: Specifies the value indicating which components of the conditional style should be applied if such exists.
             
 
-* __LayoutType__: Specifies the algorithm which is used to lay out the contants of this table. The possible values are
-              __FixedWidth__ or __AutoFit__. The default is __AutoFit__.
+* __LayoutType__: Specifies the algorithm which is used to lay out the contants of this table. The possible values are __FixedWidth__ or __AutoFit__. The default is __AutoFit__.
             
 
 * __Overlap__: Indicates whether this floating table allows other floating tables to overlap its extents.
@@ -219,18 +167,11 @@ __Properties__ exposes several properties that allow you to customize the layout
 >tip Themable objects are objects that can be inherited from a theme. For more information about themes check[this article]({%slug winforms/wordsprocessing/concepts/document-themes%}).
 >
 
-
 ## Operating with a Table
 
 ### Creating a Table with Content
 
-The following code snippet demonstrates how to add a __Table__ with 5 rows and 10 columns to a
-              __RadFlowDocument__:
-            #_[C#] _
-
-	
-
-
+The following code snippet demonstrates how to add a __Table__ with 5 rows and 10 columns to a __RadFlowDocument__:
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingTable.cs region=radwordsprocessing-model-table_4}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_4}} 
@@ -280,9 +221,6 @@ The following code snippet demonstrates how to add a __Table__ with 5 rows and 1
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

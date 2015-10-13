@@ -10,10 +10,7 @@ position: 1
 
 # Using PdfFormatProvider
 
-
-
-__PdfFormatProvider__ makes it easy to import and export __RadFlowDocument__ to PDF format,
-        preserving the entire document structure and formatting.
+__PdfFormatProvider__ makes it easy to import and export __RadFlowDocument__ to PDF format, preserving the entire document structure and formatting.
       
 
 All you have to do in order to use __PdfFormatProvider__ is add references to the assemblies listed below:
@@ -40,22 +37,12 @@ In order to export a document to PDF you need to use the __Export()__ method of 
       
 
 The code snippet in __Example 1__ shows how to create a __PdfFormatProvider__ instance and use it to export __RadFlowDocument__ to a file.
-      #_[C#] Example 1: Export to PDF File_
 
-	
-
-#_[VB] Example 1: Export to PDF File_
-
-	
-
-
+#### Example 1: Export to PDF File
 
 The result from the method is a document that can be opened in any application that supports PDF documents.
-      #_[C#] Example 2: Export to RadFixedDocument_
-
-	
-
-
+     
+#### Example 2: Export to RadFixedDocument
 
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingUsingPdfFormatProvider.cs region=radwordsprocessing-formats-and-conversion-pdf-pdfformatprovider_0}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingUsingPdfFormatProvider.vb region=radwordsprocessing-formats-and-conversion-pdf-pdfformatprovider_0}} 
@@ -79,13 +66,8 @@ The result from the method is a document that can be opened in any application t
 
 {{endregion}} 
 
-
-
-
->tip  __RadFixedDocument__ is the base class of the __RadPdfProcessing__ library. 
-          Additional information on the library and its functionality can be found[here]({%slug winforms/pdfprocessing%})
+>tip  __RadFixedDocument__ is the base class of the __RadPdfProcessing__ library.  Additional information on the library and its functionality can be found[here]({%slug winforms/pdfprocessing%})
 >
-
 
 # See Also
 

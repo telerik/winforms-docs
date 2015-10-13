@@ -10,8 +10,6 @@ position: 0
 
 # Features
 
-
-
 Below you can find a list of all the features that are supported by DocxFormatProvider.
 
 ## 

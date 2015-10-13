@@ -16,7 +16,6 @@ Below you can find a list of all the features that are supported by PdfFormatPro
 
 ## 
 
-
 | Feature | Supported | Comment |
 | ------ | ------ | ------ |
 | __Text Formatting__ |||
