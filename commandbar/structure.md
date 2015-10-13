@@ -5,7 +5,7 @@ description: Structure
 slug: winforms/commandbar/structure
 tags: structure
 published: True
-position: 0
+position: 1
 ---
 
 # Structure

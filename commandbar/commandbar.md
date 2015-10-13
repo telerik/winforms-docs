@@ -1,11 +1,11 @@
 ---
-title: CommandBar
+title: Oveview
 page_title: CommandBar | UI for WinForms Documentation
 description: CommandBar
 slug: winforms/commandbar
 tags: commandbar
 published: True
-position: 14
+position: 0
 ---
 
 # CommandBar

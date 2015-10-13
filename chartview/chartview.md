@@ -1,5 +1,5 @@
 ---
-title: ChartView 
+title: Overview 
 page_title: ChartView  | UI for WinForms Documentation
 description: ChartView 
 slug: winforms/chartview

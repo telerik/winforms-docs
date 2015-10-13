@@ -5,7 +5,7 @@ description: Properties and Methods
 slug: winforms/checkedlistbox/properties-and-methods
 tags: properties,and,methods
 published: True
-position: 2
+position: 3
 ---
 
 # Properties and Methods
@@ -25,8 +25,7 @@ This section demonstrates specific for the __RadCheckedListBox__ control propert
 
 * __SecondClick__ – click over unselected item selects it. If item is selected each next click toggles its checkbox.
 
-1. __CheckBoxesAlignment__ - this new property comes in order to extend the __CheckBoxesPosition__,
-            which supports 4 positions (Left, Right, Top, Bottom). CheckBoxesAlignment gives the user full control over the CheckBoxes alignment within the item.
+1. __CheckBoxesAlignment__ - this new property comes in order to extend the __CheckBoxesPosition__, which supports 4 positions (Left, Right, Top, Bottom). CheckBoxesAlignment gives the user full control over the CheckBoxes alignment within the item.
             
 
 * __Near__ – when CheckBoxesPosition is set to Left or Right it means Top alignment. When CheckBoxesPosition is set to Top or Bottom it means Left.
@@ -39,18 +38,15 @@ This section demonstrates specific for the __RadCheckedListBox__ control propert
 >
 
 
-## 
-        Using the Space Bar
+## Using the Space Bar
       
 
-The space bar allows you to toggle selected items check state with a single hit. Pressing space bar selects 
-          current item if it is not selected. When current item is selected and the space bar key is pressed there are two cases:
+The space bar allows you to toggle selected items check state with a single hit. Pressing space bar selects current item if it is not selected. When current item is selected and the space bar key is pressed there are two cases:
         
 
 * Toggle selected items, if all items CheckStates are equal.
 
-* Check selected items, if at least one item has different CheckState.
-            ![checkedlistbox-features 001](images/checkedlistbox-features001.gif)
+* Check selected items, if at least one item has different CheckState. ![checkedlistbox-features 001](images/checkedlistbox-features001.gif)
 
 
 
@@ -62,8 +58,7 @@ The space bar allows you to toggle selected items check state with a single hit.
 
 1. Toggles selected items CheckState.
 
-## 
-        Methods
+## Methods
       
 
 * __CheckAllItems__ – Checks all items.

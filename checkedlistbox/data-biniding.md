@@ -5,7 +5,7 @@ description: Data Biniding
 slug: winforms/checkedlistbox/data-biniding
 tags: data,biniding
 published: True
-position: 1
+position: 2
 ---
 
 # Data Biniding
@@ -14,8 +14,7 @@ position: 1
 
 ## Supported Bindable Types
 
-As an inheritor of __RadListView__, __RadCheckedListBox__ extends its functionality and provides a way to bind your
-        __RadCheckedListBox__ check boxes to a data source. There are several types of data that __CheckedMember__ can be bound to:
+As an inheritor of __RadListView__, __RadCheckedListBox__ extends its functionality and provides a way to bind your __RadCheckedListBox__ check boxes to a data source. There are several types of data that __CheckedMember__ can be bound to:
 
 * __Boolean__ – True represents ToggleState.On and False – ToggleState.Off.
             
@@ -29,8 +28,7 @@ As an inheritor of __RadListView__, __RadCheckedListBox__ extends its functional
 * __CheckState__ enumeration.
             
 
-* __String__ – representing CheckBox ToggleState.On state with values
-              like: "True", "On" and "T", ToggleState.Indeterminate state with value "indeterminate", ToggleState.Off state with any other value.
+* __String__ – representing CheckBox ToggleState.On state with values like: "True", "On" and "T", ToggleState.Indeterminate state with value "indeterminate", ToggleState.Off state with any other value.
             
 
 >note Information about __RadListView__ data binding is available here:[RadListView Data Binding]({%slug winforms/listview/databinding%}).
@@ -39,29 +37,22 @@ As an inheritor of __RadListView__, __RadCheckedListBox__ extends its functional
 
 ## Design Time
 
-To data bind the checkboxes of __RadCheckedListBox__ you need to set __CheckedMember__ using
-          the smart tag or the properties window.
-        ![checkedlistbox-data-binding 001](images/checkedlistbox-data-binding001.png)
+To data bind the checkboxes of __RadCheckedListBox__ you need to set __CheckedMember__ using the smart tag or the properties window. ![checkedlistbox-data-binding 001](images/checkedlistbox-data-binding001.png)
 
 The result is data bound __CheckedListBox__![checkedlistbox-data-binding 002](images/checkedlistbox-data-binding002.png)
 
 ## Binding Programmatically
 
-The following example demonstrates how you can bind the control by using the __CheckedMember__ property. 
-            This example uses the __CheckState__ property of the business object.
+The following example demonstrates how you can bind the control by using the __CheckedMember__ property. This example uses the __CheckState__ property of the business object.
           
 
 1. Initially let’s create collection of objects.
-            #_[C#] SimpleObject class._
-
-	
 
 
+	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=SimpleObject}} 
+	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=SimpleObject}} 
 
-{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=SimpleObject}} 
-{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=SimpleObject}} 
-
-````C#
+	````C#
     public class SimpleObject
     {
         public int Id { get; set; }
@@ -70,9 +61,9 @@ The following example demonstrates how you can bind the control by using the __C
 
         public CheckState CheckState { get; set; }
     }
-````
-````VB.NET
-Public Class SimpleObject
+	````
+	````VB.NET
+	Public Class SimpleObject
     Public Property Id() As Integer
         Get
             Return m_Id
@@ -102,23 +93,16 @@ Public Class SimpleObject
         End Set
     End Property
     Private m_CheckState As CheckState
-End Class
-'
-````
+	End Class
+	'
+	````
 
-{{endregion}} 
+	{{endregion}} 
+ 
+	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=CreateSimpleObjects}} 
+	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=CreateSimpleObjects}} 
 
-
-#_[C#] Create Simple Objects collection._
-
-	
-
-
-
-{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=CreateSimpleObjects}} 
-{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=CreateSimpleObjects}} 
-
-````C#
+	````C#
         private IEnumerable<SimpleObject> CreateSimpleObjects()
         {
             List<SimpleObject> data = new List<SimpleObject>()
@@ -133,8 +117,8 @@ End Class
 
             return data;
         }
-````
-````VB.NET
+	````
+	````VB.NET
     Private Function CreateSimpleObjects() As IEnumerable(Of SimpleObject)
         Dim data As New List(Of SimpleObject)() From { _
             New SimpleObject() With { _
@@ -172,62 +156,49 @@ End Class
         Return data
     End Function
     '
-````
+	````
 
-{{endregion}} 
+	{{endregion}} 
 
 
 
 
 1. To support three state check boxes we need to set the __ThreeStateMode__ property:
-            #_[C#] ThreeStateMode._
+            
 
-	
+	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=ThreeStateMode}} 
+	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=ThreeStateMode}} 
 
-
-
-{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=ThreeStateMode}} 
-{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=ThreeStateMode}} 
-
-````C#
+	````C#
             this.radCheckedListBox1.ThreeStateMode = true;
-````
-````VB.NET
+	````
+	````VB.NET
         Me.RadCheckedListBox1.ThreeStateMode = True
         '
-````
+	````
 
-{{endregion}} 
+	{{endregion}} 
+ 
+1. And finally set programmatically the __DataSource__, __DisplayMember__, __ValueMember__ and __CheckedMember__ properties. 
 
+	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=ProgramaticallyDatabind}} 
+	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=ProgramaticallyDatabind}} 
 
-
-
-1. And finally set programmatically the __DataSource__, __DisplayMember__,
-              __ValueMember__ and __CheckedMember__ properties.
-            #_[C#] Programmatically data bind._
-
-	
-
-
-
-{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=ProgramaticallyDatabind}} 
-{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=ProgramaticallyDatabind}} 
-
-````C#
+	````C#
             this.radCheckedListBox1.DataSource = this.CreateSimpleObjects();
             this.radCheckedListBox1.DisplayMember = "Name";
             this.radCheckedListBox1.ValueMember = "Id";
             this.radCheckedListBox1.CheckedMember = "CheckState";
-````
-````VB.NET
+	````
+	````VB.NET
         Me.RadCheckedListBox1.DataSource = Me.CreateSimpleObjects()
         Me.RadCheckedListBox1.DisplayMember = "Name"
         Me.RadCheckedListBox1.ValueMember = "Id"
         Me.RadCheckedListBox1.CheckedMember = "CheckState"
         '
-````
+		````
 
-{{endregion}} 
+	{{endregion}} 
 
 
 ![checkedlistbox-data-binding 003](images/checkedlistbox-data-binding003.png)

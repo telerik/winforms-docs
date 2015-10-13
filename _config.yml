@@ -152,6 +152,12 @@ navigation:
     commandbar:
         title: CommandBar
         position: 14
+    commandbar/how-to:
+        title: How To
+        position: 6
+    commandbar/localization:
+        title: Localization
+        position: 7
     dataentry:
         title: DataEntry
         position: 15

@@ -5,12 +5,10 @@ description: Getting Started
 slug: winforms/checkedlistbox/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
-
-
 
 ## 
 
@@ -23,20 +21,15 @@ The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
 1. Add two panels to the split container. For example by using the smart tag.
             
 
-1. Add  __RadLabel__, __RadCheckedListBox__ and a __RadButton__ to each of the panels.
-            At this point the form should look like this:
-            ![checkedlistbox-getting-started 001](images/checkedlistbox-getting-started001.png)
+1. Add  __RadLabel__, __RadCheckedListBox__ and a __RadButton__ to each of the panels. At this point the form should look like this: ![checkedlistbox-getting-started 001](images/checkedlistbox-getting-started001.png)
 
-1. Now you are ready to bind the control. Open the code behind and add the following: #_[C#] Add columns to CheckedListBox and subscribe to events._
-
-	
+1. Now you are ready to bind the control. Open the code behind and add the following:  
 
 
+	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=Initialization}} 
+	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=Initialization}} 
 
-{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=Initialization}} 
-{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=Initialization}} 
-
-````C#
+	````C#
             this.radCheckedListBox1.DataSource = this.CreatePhoneBookEntries();
             this.radCheckedListBox1.VisualItemFormatting += radCheckedListBox1_VisualItemFormatting;
 
@@ -49,8 +42,8 @@ The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
 
             this.radButtonAddToContacts.Click += radButtonAddToContacts_Click;
             this.radButtonRemoveFromContacts.Click += radButtonRemoveFromContacts_Click;
-````
-````VB.NET
+	````
+	````VB.NET
         Me.RadCheckedListBox1.DataSource = Me.CreatePhoneBookEntries()
         AddHandler Me.RadCheckedListBox1.VisualItemFormatting, AddressOf radCheckedListBox1_VisualItemFormatting
 
@@ -64,23 +57,18 @@ The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
         AddHandler Me.radButtonAddToContacts.Click, AddressOf radButtonAddToContacts_Click
         AddHandler Me.radButtonRemoveFromContacts.Click, AddressOf radButtonRemoveFromContacts_Click
         '
-````
+	````
 
-{{endregion}} 
-
-
+	{{endregion}} 
 
 
-1. The example uses the following sample business object:#_[C#] PhonebookEntry class_
-
+1. The example uses the following sample business object: 
 	
 
+	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=PhonebookEntry}} 
+	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=PhonebookEntry}} 
 
-
-{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=PhonebookEntry}} 
-{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=PhonebookEntry}} 
-
-````C#
+	````C#
     public class PhonebookEntry
     {
         public string FirstName { get; set; }
@@ -93,9 +81,9 @@ The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
 
         public Image Image { get; set; }
     }
-````
-````VB.NET
-Public Class PhonebookEntry
+	````	
+	````VB.NET
+	Public Class PhonebookEntry
     Public Property FirstName() As String
         Get
             Return m_FirstName
@@ -146,25 +134,19 @@ Public Class PhonebookEntry
     End Property
     Private m_Image As Image
 
-End Class
-'
-````
+	End Class
+	'
+	````
 
-{{endregion}} 
-
-
+	{{endregion}} 
 
 
-1. Now you can create a collection of PhonebookEntry business objects:#_[C#] Create a collection of PhonebookEntry objects_
-
-	
-
-
+1. Now you can create a collection of PhonebookEntry business objects:
 
 {{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=CreatePhonebookEntries}} 
 {{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=CreatePhonebookEntries}} 
 
-````C#
+	````C#
         private IEnumerable<PhonebookEntry> CreatePhoneBookEntries()
         {
             List<PhonebookEntry> entries = new List<PhonebookEntry>() 
@@ -182,8 +164,8 @@ End Class
 
             return entries;
         }
-````
-````VB.NET
+	````
+	````VB.NET
     Private Function CreatePhoneBookEntries() As IEnumerable(Of PhonebookEntry)
         Dim entries As New List(Of PhonebookEntry)() From { _
             New PhonebookEntry() With { _
@@ -254,23 +236,17 @@ End Class
         Return entries
     End Function
     '
-````
+	````
 
-{{endregion}} 
-
-
+	{{endregion}} 
 
 
-1. The next step is to create click event handlers for the buttons:#_[C#] Create buttons' event hendlers._
+1. The next step is to create click event handlers for the buttons:
 
-	
+	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=ClickEvents}} 
+	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=ClickEvents}} 
 
-
-
-{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=ClickEvents}} 
-{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=ClickEvents}} 
-
-````C#
+	````C#
         void radButtonAddToContacts_Click(object sender, EventArgs e)
         {
             foreach (ListViewDataItem item in this.radCheckedListBox1.CheckedItems)
@@ -290,9 +266,9 @@ End Class
             {
                 this.radCheckedListBox2.Items.Remove(this.radCheckedListBox2.CheckedItems[0]);
             }
-        }
-````
-````VB.NET
+	        }
+	````	
+	````VB.NET
     Private Sub radButtonAddToContacts_Click(sender As Object, e As EventArgs)
         For Each item As ListViewDataItem In Me.RadCheckedListBox1.CheckedItems
             Dim contactItem As New ListViewDataItem()
@@ -310,25 +286,17 @@ End Class
         End While
     End Sub
     '
-````
+	````
 
-{{endregion}} 
-
-
+	{{endregion}} 
 
 
-1. The final step is to use the VisualItemFormatting event to style the items in the first __RadCheckedListBox__.
-              Please note that the checkbox position is changed.
-            #_[C#] Customize visual item._
-
-	
-
-
-
+1. The final step is to use the VisualItemFormatting event to style the items in the first __RadCheckedListBox__. Please note that the checkbox position is changed.
+            
 {{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=VisualItemFormatting}} 
 {{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=VisualItemFormatting}} 
 
-````C#
+	````C#
             BaseListViewVisualItem item = e.VisualItem;
             PhonebookEntry entry = item.Data.Value as PhonebookEntry;
             item.Image = entry.Image.GetThumbnailImage(80, 80, null, IntPtr.Zero);
@@ -343,8 +311,8 @@ End Class
                 ListViewItemCheckbox checkBoxItem = item.Children[0] as ListViewItemCheckbox;
                 checkBoxItem.Margin = new Padding(2);
             }
-````
-````VB.NET
+	````
+	````VB.NET
         Dim item As BaseListViewVisualItem = e.VisualItem
         Dim entry As PhonebookEntry = TryCast(item.Data.Value, PhonebookEntry)
         item.Image = entry.Image.GetThumbnailImage(80, 80, Nothing, IntPtr.Zero)
@@ -356,9 +324,9 @@ End Class
             checkBoxItem.Margin = New Padding(2)
         End If
         '
-````
+	````
 
-{{endregion}} 
+	{{endregion}} 
 
 
 ![checkedlistbox-getting-started 002](images/checkedlistbox-getting-started002.png)
