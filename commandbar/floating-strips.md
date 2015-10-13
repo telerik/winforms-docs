@@ -5,44 +5,30 @@ description: Floating Strips
 slug: winforms/commandbar/floating-strips
 tags: floating,strips
 published: True
-position: 4
+position: 5
 ---
 
 # Floating Strips
 
 
 
-A CommandBarStripElement object can be docked to the commandbar or floated 
-      above the form. In addition, a CommandBarStripElement can be dragged from
-      the RadCommandBar control that currently hosts it and docked to another.
+A CommandBarStripElement object can be docked to the commandbar or floated above the form. In addition, a CommandBarStripElement can be dragged from the RadCommandBar control that currently hosts it and docked to another.
 
 ## Basics
 
-The ability of a CommandBarStripElement object to float is controlled by the commandbar's 
-        __EnableDragging__ and __EnableFloating__ properties. 
-        In order to allow a CommandBarStripElement to float,
-        both the __EnableDragging__ and __EnableFloating__ properties
-        must be set to *True*. Setting only the
-        __EnableFloating__ property to *True* has no effect on 
-        the floating behavior.
-        The image below shows a RadCommandBar with two strips one of which is floating:
-        ![commandbar-floating-strips 001](images/commandbar-floating-strips001.png)
+The ability of a CommandBarStripElement object to float is controlled by the commandbar's __EnableDragging__ and __EnableFloating__ properties.  In order to allow a CommandBarStripElement to float, both the __EnableDragging__ and __EnableFloating__ properties must be set to *True*. Setting only the __EnableFloating__ property to *True* has no effect on the floating behavior. The image below shows a RadCommandBar with two strips one of which is floating:
+ 
+![commandbar-floating-strips 001](images/commandbar-floating-strips001.png)
 
-A CommandBarStrip element is made floating when it is dragged outside the area of its control. 
-        You can dock it again by moving it with mouse over any RadCommandBar control.
+A CommandBarStrip element is made floating when it is dragged outside the area of its control. You can dock it again by moving it with mouse over any RadCommandBar control.
 
 ## Events
 
 There are some events that provide you with control over the floating/docking process.
        
 
-* __FloatingStripCreating__ event is fired when a strip is about to be made floating.
-       The following example shows how to prevent the strip “OptionsStrip” from becoming floating.
- 	 #_[C#]_
-
-	
-
-
+* __FloatingStripCreating__ event is fired when a strip is about to be made floating. The following example shows how to prevent the strip “OptionsStrip” from becoming floating.
+ 	 
 
 {{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripCreating}} 
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripCreating}} 
@@ -66,17 +52,11 @@ There are some events that provide you with control over the floating/docking pr
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 * __FloatingStripCreated__ event is fired when the floating form is shown.
   The following example shows how to set the caption text of the floating form:#_[C#]_
-
-	
-
-
-
+ 
 {{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripCreated}} 
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripCreated}} 
 
@@ -94,17 +74,11 @@ There are some events that provide you with control over the floating/docking pr
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 * __FloatingStripDocking__ event is fired when a floating strip is about to be docked to a RadCommandBar control. 
 The following example shows how to prevent the strip with name “OptionsStrip” from being docked.#_[C#]_
-
-	
-
-
-
+ 
 {{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripDocking}} 
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripDocking}} 
 
@@ -127,17 +101,11 @@ The following example shows how to prevent the strip with name “OptionsStrip�
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 * __FloatingStripDocked__ event is fired when a floating strip has docked to a RadCommandBar control.
  The following example shows a sample usage of this event.
-  #_[C#]_
-
-	
-
-
+   
 
 {{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripDocked}} 
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripDocked}} 

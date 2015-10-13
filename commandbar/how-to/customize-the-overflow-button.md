@@ -14,27 +14,15 @@ position: 0
 
 ## 
 
-This article will demonstrate how to access the __Overflow__ button
-        	in RadCommandBar and how to customize its items.
-        ![commandbar-howto-customize-the-overflow-button 001](images/commandbar-howto-customize-the-overflow-button001.png)
+This article will demonstrate how to access the __Overflow__ button in RadCommandBar and how to customize its items.
+ 
+![commandbar-howto-customize-the-overflow-button 001](images/commandbar-howto-customize-the-overflow-button001.png)
 
-Each [CommandBarStripElement]({%slug winforms/commandbar/structure%})
-			has its own __Overflow__ button. This button has a drop down, which  
-			contains of __"Add or Remove Buttons"__ menu item, 
-			__"Customize..."__ menu item and 
-			__RadMenuSeparatorItems__ items.
-			Additionally, if there is not enough space on the control to fit all the items, they will be displayed
-			in the drop down menu as well.
-		![commandbar-howto-customize-the-overflow-button 002](images/commandbar-howto-customize-the-overflow-button002.png)
+Each [CommandBarStripElement]({%slug winforms/commandbar/structure%}) has its own __Overflow__ button. This button has a drop down, which contains of __"Add or Remove Buttons"__ menu item, __"Customize..."__ menu item and  __RadMenuSeparatorItems__ items. Additionally, if there is not enough space on the control to fit all the items, they will be displayed in the drop down menu as well.
+ 
+![commandbar-howto-customize-the-overflow-button 002](images/commandbar-howto-customize-the-overflow-button002.png)
 
-The following example, demonstrates how to access the __RadMenuItems__ of the 
-			__Overflow__ button. For your convenience we have exposed the
-			__CustomizeButtonMenuItem__ and the __AddRemoveButtonsMenuItem__.
-		#_[C#] Customize overflow button drop down menu_
-
-	
-
-
+The following example, demonstrates how to access the __RadMenuItems__ of the __Overflow__ button. For your convenience we have exposed the __CustomizeButtonMenuItem__ and the __AddRemoveButtonsMenuItem__. 
 
 {{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=HideMenuItems}} 
 {{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=HideMenuItems}} 
@@ -78,12 +66,8 @@ The following example, demonstrates how to access the __RadMenuItems__ of the
 
 ![commandbar-howto-customize-the-overflow-button 003](images/commandbar-howto-customize-the-overflow-button003.png)
 
-Alternatively, if you need to hide the whole __Overflow__ button, simply set
-			its Visibility property to *Collapsed*#_[C#] Hide the overflow button_
-
-	
-
-
+Alternatively, if you need to hide the whole __Overflow__ button, simply set its Visibility property to *Collapsed* 
+ 
 
 {{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=HideTheOverFlowButton}} 
 {{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=HideTheOverFlowButton}} 

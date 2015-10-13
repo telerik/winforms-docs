@@ -5,7 +5,7 @@ description: Touch Support
 slug: winforms/commandbar/touch-support
 tags: touch,support
 published: True
-position: 7
+position: 8
 ---
 
 # Touch Support

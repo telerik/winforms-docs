@@ -14,19 +14,15 @@ position: 2
 
 ## 
 
-Currently, RadCommandBar receives the focus. One can easily override this behavior and do not allow 
-        	the control to become focused. Here are the three simple steps that need to be followed:
+Currently, RadCommandBar receives the focus. One can easily override this behavior and do not allow the control to become focused. Here are the three simple steps that need to be followed:
         
 
 1. Create a custom class that derives from RadCommandBar;
 
 1. Override the ThemeClassName property, so that the theming mechanism can recognize the new control as a RadCommandBar;
 
-1. Override the ProcessFocusRequested method and return false.#_[C#] _
-
-	
-
-
+1. Override the ProcessFocusRequested method and return false. 
+ 
 
 {{source=..\SamplesCS\CommandBar\HowTo\MakeRadCommandBarUnfocusable.cs region=ForbidFocus}} 
 {{source=..\SamplesVB\CommandBar\HowTo\MakeRadCommandBarUnfocusable.vb region=ForbidFocus}} 

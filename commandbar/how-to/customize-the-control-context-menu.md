@@ -14,29 +14,11 @@ position: 1
 
 ## 
 
-When the RadCommandBar control is right clicked, a context menu enlisting the strips in the control together
-        with __Customize__ menu option (allowing to customize the strips) is being shown. This 
-        context menu is being populated by the time of its opening and in order to customize its items, you should do that
-        from within the __DropDownOpening__ event of this context menu. Here is how to subscribe to this 
-        event and how add your custom item and how to remove the __Customize__ option:
-        #_[C#] Subscribe to the context menu opening event_
-
-	
-
-#_[C#] Customize drop down menu_
-
-	
-
-#_[VB.NET] Subscribe to the context menu opening event_
-
-	
-
-
-
+When the RadCommandBar control is right clicked, a context menu enlisting the strips in the control together with __Customize__ menu option (allowing to customize the strips) is being shown. This context menu is being populated by the time of its opening and in order to customize its items, you should do that from within the __DropDownOpening__ event of this context menu. Here is how to subscribe to this event and how add your custom item and how to remove the __Customize__ option:
+      
 {{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=subscribeToContextMenuOpening}} 
-{{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=CustomizeTheContextMenu}} 
+{{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=CustomizeTheContextMenu}}  
 {{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=subscribeToContextMenuOpening}} 
-
 {{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=CustomizeTheContextMenu}} 
 
 ````C#

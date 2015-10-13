@@ -144,7 +144,7 @@ navigation:
         title: Printing Support
         position: 10
     checkedlistbox:
-        title: ChekedListBox
+        title: CheckedListBox
         position: 12
     clock:
         title: Clock
@@ -161,6 +161,9 @@ navigation:
     dataentry:
         title: DataEntry
         position: 15
+    dataentry/how-to:
+        title: How To
+        position: 7
     diagram:
         title: Diagram(beta)
         position: 16

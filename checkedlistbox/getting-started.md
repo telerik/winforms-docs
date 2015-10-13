@@ -69,8 +69,8 @@ The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
 	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=PhonebookEntry}} 
 
 	````C#
-    public class PhonebookEntry
-    {
+    	public class PhonebookEntry
+    	{
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
@@ -80,61 +80,61 @@ The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
         public string Address { get; set; }
 
         public Image Image { get; set; }
-    }
+    	}
 	````	
 	````VB.NET
-	Public Class PhonebookEntry
-    Public Property FirstName() As String
+		Public Class PhonebookEntry
+    	Public Property FirstName() As String
         Get
             Return m_FirstName
         End Get
         Set(value As String)
             m_FirstName = value
         End Set
-    End Property
-    Private m_FirstName As String
+    	End Property
+    	Private m_FirstName As String
 
-    Public Property LastName() As String
+    	Public Property LastName() As String
         Get
             Return m_LastName
         End Get
         Set(value As String)
             m_LastName = value
         End Set
-    End Property
-    Private m_LastName As String
+		End Property
+    	Private m_LastName As String
 
-    Public Property PhoneNumber() As String
+    	Public Property PhoneNumber() As String
         Get
             Return m_PhoneNumber
         End Get
         Set(value As String)
             m_PhoneNumber = value
         End Set
-    End Property
-    Private m_PhoneNumber As String
+    	End Property
+    	Private m_PhoneNumber As String
 
-    Public Property Address() As String
+    	Public Property Address() As String
         Get
             Return m_Address
         End Get
         Set(value As String)
             m_Address = value
         End Set
-    End Property
-    Private m_Address As String
+    	End Property
+    	Private m_Address As String
 
-    Public Property Image() As Image
+    	Public Property Image() As Image
         Get
             Return m_Image
         End Get
         Set(value As Image)
             m_Image = value
         End Set
-    End Property
-    Private m_Image As Image
+    	End Property
+    	Private m_Image As Image
 
-	End Class
+		End Class
 	'
 	````
 
@@ -143,12 +143,12 @@ The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
 
 1. Now you can create a collection of PhonebookEntry business objects:
 
-{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=CreatePhonebookEntries}} 
-{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=CreatePhonebookEntries}} 
+	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=CreatePhonebookEntries}} 
+	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=CreatePhonebookEntries}} 
 
 	````C#
-        private IEnumerable<PhonebookEntry> CreatePhoneBookEntries()
-        {
+        	private IEnumerable<PhonebookEntry> CreatePhoneBookEntries()
+        	{
             List<PhonebookEntry> entries = new List<PhonebookEntry>() 
             {
                 new PhonebookEntry() { FirstName = "Anne", LastName = "Dodsworth", PhoneNumber = "(71) 555-4444", Address = "7 Houndstooth Rd.", Image = Resources.anne},
@@ -163,11 +163,11 @@ The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
             };
 
             return entries;
-        }
+        	}
 	````
 	````VB.NET
-    Private Function CreatePhoneBookEntries() As IEnumerable(Of PhonebookEntry)
-        Dim entries As New List(Of PhonebookEntry)() From { _
+    	Private Function CreatePhoneBookEntries() As IEnumerable(Of PhonebookEntry)
+        	Dim entries As New List(Of PhonebookEntry)() From { _
             New PhonebookEntry() With { _
                 .FirstName = "Anne", _
                 .LastName = "Dodsworth", _
@@ -233,8 +233,8 @@ The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
             } _
         }
 
-        Return entries
-    End Function
+        	Return entries
+    	End Function
     '
 	````
 
@@ -247,8 +247,8 @@ The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
 	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=ClickEvents}} 
 
 	````C#
-        void radButtonAddToContacts_Click(object sender, EventArgs e)
-        {
+        	void radButtonAddToContacts_Click(object sender, EventArgs e)
+        	{
             foreach (ListViewDataItem item in this.radCheckedListBox1.CheckedItems)
             {
                 ListViewDataItem contactItem = new ListViewDataItem();
@@ -258,10 +258,10 @@ The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
                 contactItem["Name"] = entry.FirstName + " " + entry.LastName;
                 contactItem["Phone"] = entry.PhoneNumber;
             }
-        }
+        	}
 
-        void radButtonRemoveFromContacts_Click(object sender, EventArgs e)
-        {
+        	void radButtonRemoveFromContacts_Click(object sender, EventArgs e)
+        	{
             while (this.radCheckedListBox2.CheckedItems.Count > 0)
             {
                 this.radCheckedListBox2.Items.Remove(this.radCheckedListBox2.CheckedItems[0]);
@@ -269,22 +269,22 @@ The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
 	        }
 	````	
 	````VB.NET
-    Private Sub radButtonAddToContacts_Click(sender As Object, e As EventArgs)
-        For Each item As ListViewDataItem In Me.RadCheckedListBox1.CheckedItems
+    	Private Sub radButtonAddToContacts_Click(sender As Object, e As EventArgs)
+       	 For Each item As ListViewDataItem In Me.RadCheckedListBox1.CheckedItems
             Dim contactItem As New ListViewDataItem()
             Me.RadCheckedListBox2.Items.Add(contactItem)
             'here you can add logic to avoid duplicating contacts
             Dim entry As PhonebookEntry = TryCast(item.Value, PhonebookEntry)
             contactItem("Name") = entry.FirstName & " " & entry.LastName
             contactItem("Phone") = entry.PhoneNumber
-        Next
-    End Sub
+        	Next
+    	End Sub
 
-    Private Sub radButtonRemoveFromContacts_Click(sender As Object, e As EventArgs)
+    	Private Sub radButtonRemoveFromContacts_Click(sender As Object, e As EventArgs)
         While Me.RadCheckedListBox2.CheckedItems.Count > 0
             Me.RadCheckedListBox2.Items.Remove(Me.RadCheckedListBox2.CheckedItems(0))
         End While
-    End Sub
+    	End Sub
     '
 	````
 
@@ -293,8 +293,8 @@ The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
 
 1. The final step is to use the VisualItemFormatting event to style the items in the first __RadCheckedListBox__. Please note that the checkbox position is changed.
             
-{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=VisualItemFormatting}} 
-{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=VisualItemFormatting}} 
+	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=VisualItemFormatting}} 
+	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=VisualItemFormatting}} 
 
 	````C#
             BaseListViewVisualItem item = e.VisualItem;

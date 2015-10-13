@@ -5,12 +5,10 @@ description: Item Types
 slug: winforms/commandbar/item-types
 tags: item,types
 published: True
-position: 2
+position: 3
 ---
 
 # Item Types
-
-
 
 You can add these item types to the CommandBarStripElement from the context menu or the RadElement Collection Editor:
 
@@ -19,12 +17,8 @@ You can add these item types to the CommandBarStripElement from the context menu
 
 | Name | Example | Description |
 | ------ | ------ | ------ |
-|CommandBarButton|![commandbar-item-types 001](images/commandbar-item-types001.png)|Displays a button containing text, an image, or both. Set the DrawText
-                property to true to display the text of the button. Use the TextImageRelation
-                property to control the layout of image and text: Overlay, ImageAboveText,
-                TextAboveImage, ImageBeforeText, TextBeforeImage.|
-|CommandBarToggleButton|![commandbar-item-types 002](images/commandbar-item-types002.png)|Displays a button that can toggle between "pressed" and "unpressed" states. The button element
-                ToggleState property indicates the current condition of the button.|
+|CommandBarButton|![commandbar-item-types 001](images/commandbar-item-types001.png)|Displays a button containing text, an image, or both. Set the DrawText property to true to display the text of the button. Use the TextImageRelation property to control the layout of image and text: Overlay, ImageAboveText, TextAboveImage, ImageBeforeText, TextBeforeImage.|
+|CommandBarToggleButton|![commandbar-item-types 002](images/commandbar-item-types002.png)|Displays a button that can toggle between "pressed" and "unpressed" states. The button element ToggleState property indicates the current condition of the button.|
 |CommandBarTextBox|![commandbar-item-types 003](images/commandbar-item-types003.png)|Displays a text box that can accept user input. Use the Text property to get and set its content.|
 |CommandBarDropDownList|![commandbar-item-types 004](images/commandbar-item-types004.png)|Displays a dropdown list. Use the SelectedIndexChanged and SelectedValueChanged events to respond to user choices.|
 |CommandBarLabel|![commandbar-item-types 005](images/commandbar-item-types005.png)|Displays static text on a strip element. Set the Text property to change the content.|

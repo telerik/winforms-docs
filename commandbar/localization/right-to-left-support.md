@@ -14,12 +14,7 @@ position: 1
 
 ## 
 
-You can present the content of your commandbar instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*:
-        #_[C#]_
-
-	
-
-
+You can present the content of your commandbar instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*: 
 
 {{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=rtl}} 
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=rtl}} 

@@ -5,7 +5,7 @@ description: Design-Time
 slug: winforms/commandbar/design-time
 tags: design-time
 published: True
-position: 1
+position: 2
 ---
 
 # Design-Time
@@ -34,7 +34,9 @@ Alternatively, follow these steps to edit line elements:
 
 ## Adding a RadCommandBarStripElement to a RadCommandBarRowElement
 
-To add a strip element to a row element, click on the button marked with +.![commandbar-design-time 004](images/commandbar-design-time004.png)
+To add a strip element to a row element, click on the button marked with +.
+
+![commandbar-design-time 004](images/commandbar-design-time004.png)
 
 Alternatively, follow these steps to edit strip elements:
 
@@ -46,7 +48,9 @@ Alternatively, follow these steps to edit strip elements:
 
 * Click the Add button in the RadElement Collection Editor to add a new strip element.
 
-* Click OK.![commandbar-design-time 005](images/commandbar-design-time005.png)![commandbar-design-time 006](images/commandbar-design-time006.png)
+* Click OK.
+
+![commandbar-design-time 005](images/commandbar-design-time005.png)![commandbar-design-time 006](images/commandbar-design-time006.png)
 
 ## Adding an item to a RadCommandBarStripElement
 
@@ -62,4 +66,6 @@ Alternatively, follow these steps to edit items:
 
 1. Click the Add button in the RadElement Collection Editor to add one of the possible items.
 
-1. Click OK.![commandbar-design-time 008](images/commandbar-design-time008.png)
+1. Click OK.
+
+![commandbar-design-time 008](images/commandbar-design-time008.png)
