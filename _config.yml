@@ -320,6 +320,9 @@ navigation:
     multicolumncombobox:
         title: MultiColumnComboBox
         position: 28
+    multicolumncombobox/styling-and-appearance:
+        title: Styling and Appearance
+        position: 6		
     pageview:
         title: PageView
         position: 29

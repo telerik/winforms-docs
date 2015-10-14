@@ -5,7 +5,7 @@ description: Filtering
 slug: winforms/multicolumncombobox/filtering
 tags: filtering
 published: True
-position: 2
+position: 3
 ---
 
 # Filtering
@@ -14,15 +14,10 @@ position: 2
 
 ## Using simple FilterDescriptor
 
-Filtering operation in __RadMultiColumnComboBox__is controlled by the boolean __AutoFilter__property. The data is filtered by the field specified as __DisplayMember__. In addtion you should set the filter expression (telling the control the rules it should use to filter the data) and add that expression to __MasterTemplate__: 
+Filtering operation in __RadMultiColumnComboBox__ is controlled by the boolean __AutoFilter__ property. The data is filtered by the field specified as __DisplayMember__. In addtion you should set the filter expression (telling the control the rules it should use to filter the data) and add that expression to __MasterTemplate__: 
 
 >note Please note that by default the FilterDescriptor.Value is an empty string and it should remain with this value.
 >
-#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=filtering}} 
 {{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=filtering}} 
@@ -48,21 +43,11 @@ Filtering operation in __RadMultiColumnComboBox__is controlled by the boolean 
 
 {{endregion}} 
 
-
-
-
-The code above will result in the following multi-column combobox: ![multicolumncombobox-filtering 001](images/multicolumncombobox-filtering001.png)
-
-
+The code above will result in the following multi-column combobox: <br>![multicolumncombobox-filtering 001](images/multicolumncombobox-filtering001.png)
 
 ## Using CompositeFilterDescriptor
 
-You can filter data records by multiple values. For this purpose you have to use the __CompositeFilterDescriptor__ object.
-        It contains a collection of filter descriptors objects and the logical operator for that filters.![multicolumncombobox-filtering 002](images/multicolumncombobox-filtering002.png)#_[C#]_
-
-	
-
-
+You can filter data records by multiple values. For this purpose you have to use the __CompositeFilterDescriptor__ object. It contains a collection of filter descriptors objects and the logical operator for that filters.<br>![multicolumncombobox-filtering 002](images/multicolumncombobox-filtering002.png)
 
 {{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=CompositeFilters}} 
 {{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=CompositeFilters}} 
@@ -94,9 +79,6 @@ You can filter data records by multiple values. For this purpose you have to use
 ````
 
 {{endregion}} 
-
-
-
 
 >note The composite filters allow you to create more complex filtering expressions. Note that this feature is supported for text columns only as the __RadMultiColumnComboBox__ has one common text input for the filtering operation and it is not possible to convert input data to different data formats automatically.
 >

@@ -1,11 +1,11 @@
 ---
-title: MultiColumnComboBox
+title: Overview
 page_title: MultiColumnComboBox | UI for WinForms Documentation
 description: MultiColumnComboBox
 slug: winforms/multicolumncombobox
 tags: multicolumncombobox
 published: True
-position: 27
+position: 0
 ---
 
 # MultiColumnComboBox

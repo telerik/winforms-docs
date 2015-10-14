@@ -5,7 +5,7 @@ description: DataBinding
 slug: winforms/multicolumncombobox/databinding
 tags: databinding
 published: True
-position: 3
+position: 4
 ---
 
 # DataBinding
@@ -14,14 +14,13 @@ position: 3
 
 ## Design-time Binding
 
-The easiest way to bind the combobox in by setting the DataSource in design-time:![multicolumncombobox-databinding 001](images/multicolumncombobox-databinding001.png)
+The easiest way to bind the combobox in by setting the DataSource in design-time:<br>![multicolumncombobox-databinding 001](images/multicolumncombobox-databinding001.png)
 
 This will cause the RadGridView (contained in multi-column combobox) auto-generate columns for each field in the specified datasource. 
 
 ##  Columns collection
 
-You can set your own columns list using the Columns collection editor of RadGridView:
->caption 
+You can set your own columns list using the Columns collection editor of __RadGridView__:
 
 ![multicolumncombobox-databinding 002](images/multicolumncombobox-databinding002.png)
 
@@ -31,11 +30,7 @@ The collection editor is accessible through:
 
 ## Programmatically Binding the ComboBox
 
-You can bind the combobox control programmatically in your application code. The important point is to turn of the automatic generation of columns, otherwise you will have your columns duplicated in runtime. #_[C#]_
-
-	
-
-
+You can bind the combobox control programmatically in your application code. The important point is to turn of the automatic generation of columns, otherwise you will have your columns duplicated in runtime.
 
 {{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=setUp}} 
 {{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=setUp}} 

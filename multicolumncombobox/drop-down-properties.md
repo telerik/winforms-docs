@@ -5,18 +5,14 @@ description: Drop down properties
 slug: winforms/multicolumncombobox/drop-down-properties
 tags: drop,down,properties
 published: True
-position: 0
+position: 1
 ---
 
 # Drop down properties
 
 
 
-## Drop down Height#_[C#]_
-
-	
-
-
+## Drop down Height
 
 {{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=dropDownHeight}} 
 {{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=dropDownHeight}} 
@@ -35,11 +31,7 @@ position: 0
 
 
 
-## Drop down Width#_[C#]_
-
-	
-
-
+## Drop down Width
 
 {{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=dropDownWidth}} 
 {{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=dropDownWidth}} 
