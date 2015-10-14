@@ -326,6 +326,27 @@ navigation:
     pageview:
         title: PageView
         position: 29
+    pageview/stripview:
+        title: StripView
+        position: 4
+    pageview/outlookview:
+        title: OutlookView
+        position: 5
+    pageview/explorerbarview:
+        title: ExplorerBarView
+        position: 6
+    pageview/stackview:
+        title: StackView
+        position: 7
+    pageview/backstageview:
+        title: BackStageView
+        position: 8
+    pageview/how-to:
+        title: How-To
+        position: 9
+    pageview/localization:
+        title: Localization
+        position: 10		
     panels-and-labels:
         title: Panels and Labels
         position: 30

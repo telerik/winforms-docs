@@ -5,7 +5,7 @@ description: Design-time
 slug: winforms/pageview/design-time
 tags: design-time
 published: True
-position: 2
+position: 3
 ---
 
 # Design-time

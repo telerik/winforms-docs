@@ -5,7 +5,7 @@ description: Upgrading to RadPageView
 slug: winforms/pageview/upgrading-to-radpageview
 tags: upgrading,to,radpageview
 published: True
-position: 0
+position: 1
 ---
 
 # Upgrading to RadPageView
