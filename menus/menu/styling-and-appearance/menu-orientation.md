@@ -16,11 +16,9 @@ The __Orientation__ property of the RadMenu control and the __TextOrientation__ 
 
 ## Default Menu
 
-The __RadMenu__ default settings are: __Orientation__ = Horizontal, __TextOrientation__ = Horizontal, __FlipText__ = False. The resulting menu is arranged as shown in the figure below:![menus-menu-styling-and-appearance-menu-orientation 001](images/menus-menu-styling-and-appearance-menu-orientation001.png)#_[C#] Default orientation_
+The __RadMenu__ default settings are: __Orientation__ = Horizontal, __TextOrientation__ = Horizontal, __FlipText__ = False. The resulting menu is arranged as shown in the figure below:<br>![menus-menu-styling-and-appearance-menu-orientation 001](images/menus-menu-styling-and-appearance-menu-orientation001.png)
 
-	
-
-
+#### Default orientation
 
 {{source=..\SamplesCS\Menus\Menu\MenuOrientation.cs region=default}} 
 {{source=..\SamplesVB\Menus\Menu\MenuOrientation.vb region=default}} 
@@ -51,16 +49,11 @@ The __RadMenu__ default settings are: __Orientation__ = Horizontal, __TextOrient
 
 {{endregion}} 
 
-
-
-
 ## Horizontal Menu with Vertical Items
 
-The menu can be oriented horizontally with menu items arranged vertically:![menus-menu-styling-and-appearance-menu-orientation 002](images/menus-menu-styling-and-appearance-menu-orientation002.png)#_[C#] Vertical text orientation_
+The menu can be oriented horizontally with menu items arranged vertically:<br>![menus-menu-styling-and-appearance-menu-orientation 002](images/menus-menu-styling-and-appearance-menu-orientation002.png)
 
-	
-
-
+#### Vertical text orientation
 
 {{source=..\SamplesCS\Menus\Menu\MenuOrientation.cs region=textVertical}} 
 {{source=..\SamplesVB\Menus\Menu\MenuOrientation.vb region=textVertical}} 
@@ -91,16 +84,11 @@ The menu can be oriented horizontally with menu items arranged vertically:![menu
 
 {{endregion}} 
 
-
-
-
 ## Sideways Menu
 
-The menu can be oriented vertically with menu items arranged horizontally to create a "sideways" menu:![menus-menu-styling-and-appearance-menu-orientation 003](images/menus-menu-styling-and-appearance-menu-orientation003.png)#_[C#] Vertical menu with horizontal text_
+The menu can be oriented vertically with menu items arranged horizontally to create a "sideways" menu:<br>![menus-menu-styling-and-appearance-menu-orientation 003](images/menus-menu-styling-and-appearance-menu-orientation003.png)
 
-	
-
-
+#### Vertical menu with horizontal text
 
 {{source=..\SamplesCS\Menus\Menu\MenuOrientation.cs region=menuVertical}} 
 {{source=..\SamplesVB\Menus\Menu\MenuOrientation.vb region=menuVertical}} 
@@ -130,17 +118,12 @@ The menu can be oriented vertically with menu items arranged horizontally to cre
 ````
 
 {{endregion}} 
-
-
-
 
 ## 
 
-__Stacked Vertical Menu__![menus-menu-styling-and-appearance-menu-orientation 004](images/menus-menu-styling-and-appearance-menu-orientation004.png)#_[C#] Vertical menu with vertical text_
+__Stacked Vertical Menu__ <br>![menus-menu-styling-and-appearance-menu-orientation 004](images/menus-menu-styling-and-appearance-menu-orientation004.png)
 
-	
-
-
+#### Vertical menu with vertical text
 
 {{source=..\SamplesCS\Menus\Menu\MenuOrientation.cs region=menuVertical}} 
 {{source=..\SamplesVB\Menus\Menu\MenuOrientation.vb region=menuVertical}} 
@@ -169,7 +152,4 @@ __Stacked Vertical Menu__![menus-menu-styling-and-appearance-menu-orientation 00
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

@@ -14,18 +14,11 @@ position: 3
 
 ## 
 
-This tutorial demonstrates adding a page view to a RadMenu. Each page will contain a populated drop down list.
-          Clicking the drop down list items displays a message box with the current selection text.
-        ![menus-menu-working-with-radmenu-items-nesting-controls-tutorial 001](images/menus-menu-working-with-radmenu-items-nesting-controls-tutorial001.png)
+This tutorial demonstrates adding a page view to a RadMenu. Each page will contain a populated drop down list. Clicking the drop down list items displays a message box with the current selection text. <br>![menus-menu-working-with-radmenu-items-nesting-controls-tutorial 001](images/menus-menu-working-with-radmenu-items-nesting-controls-tutorial001.png)
 
-1. Add a __RadMenu__ to the form. No other design time work needs to be done.
-            
+1\. Add a __RadMenu__ to the form. No other design time work needs to be done.
 
-1. Add the necessary items definitions along with string array for the months and seasons.#_[C#] _
-
-	
-
-
+2\. Add the necessary items definitions along with string array for the months and seasons.
 
 {{source=..\SamplesCS\Menus\Menu\NestingControlsTutorial.cs region=data}} 
 {{source=..\SamplesVB\Menus\Menu\NestingControlsTutorial.vb region=data}} 
@@ -53,16 +46,7 @@ This tutorial demonstrates adding a page view to a RadMenu. Each page will conta
 
 {{endregion}} 
 
-
-
-
-1. Create a private method that builds and returns a __RadDropDownList__. In addition you can display the selected item text
-              by using the SelectedIndexChanged event.
-            #_[C#] _
-
-	
-
-
+3\. Create a private method that builds and returns a __RadDropDownList__. In addition you can display the selected item text by using the SelectedIndexChanged event.
 
 {{source=..\SamplesCS\Menus\Menu\NestingControlsTutorial.cs region=CreaateDDL}} 
 {{source=..\SamplesVB\Menus\Menu\NestingControlsTutorial.vb region=CreaateDDL}} 
@@ -112,16 +96,7 @@ This tutorial demonstrates adding a page view to a RadMenu. Each page will conta
 
 {{endregion}} 
 
-
-
-
-1. Create a form __Load__ event handler. In addition you should add the event prevent the drop down from closing when one is working with the page view.
-              The exit item can be used for closing the drop down in this case.
-            #_[C#] _
-
-	
-
-
+4\. Create a form __Load__ event handler. In addition you should add the event prevent the drop down from closing when one is working with the page view. The exit item can be used for closing the drop down in this case.
 
 {{source=..\SamplesCS\Menus\Menu\NestingControlsTutorial.cs region=main}} 
 {{source=..\SamplesVB\Menus\Menu\NestingControlsTutorial.vb region=main}} 
@@ -219,7 +194,6 @@ This tutorial demonstrates adding a page view to a RadMenu. Each page will conta
 
 {{endregion}} 
 
-
 This Load event handler performs the main work of the application. 
 
 * A __RadDropDpwnList__ is created and populated with the months of the year.
@@ -234,14 +208,9 @@ This Load event handler performs the main work of the application.
 * A __RadMenuHostItem__ is created to contain the page view.
                 
 
-* A __RadPageView__ is created. Two pages are added to the page view. Each one contains the corresponding drop down list. 
-                  Then the page view is added to the __RadMenuHostItem__. In this example
-                  the drop down lists are providing choices while the pages allows the tabs to be switched.
-                
+* A __RadPageView__ is created. Two pages are added to the page view. Each one contains the corresponding drop down list. Then the page view is added to the __RadMenuHostItem__. In this example the drop down lists are providing choices while the pages allows the tabs to be switched.
 
 * The __RadMenuHostItem__ is inserted into the second position in the menu.
-                
 
-Press __F5__to run the application. Notice the behavior when clicking the tabs and when clicking the items
-          in the combo boxes.
+Press __F5__ to run the application. Notice the behavior when clicking the tabs and when clicking the items in the combo boxes.
         

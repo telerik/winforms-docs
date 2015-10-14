@@ -14,13 +14,11 @@ position: 2
 
 ## 
 
-The __RadMenuContentItem__ is a container control that allows you to build up custom menu items from other controls. You can assign any RadElement based control to the __ContentElement__ property of a RadMenuContentItem. The example below demonstrates dynamically creating two main menu items that contain RadTextBox and RadButton elements. When the button is clicked a message box displays the text.
+The __RadMenuContentItem__ is a container control that allows you to build up custom menu items from other controls. You can assign any RadElement based control to the __ContentElement__ property of a RadMenuContentItem. The example below demonstrates dynamically creating two main menu items that contain __RadTextBox__ and __RadButton__ elements. When the button is clicked a message box displays the text.
 
-![menus-menu-working-with-radmenu-items-nesting-controls-in-menu-items 001](images/menus-menu-working-with-radmenu-items-nesting-controls-in-menu-items001.png)#_[C#] Adding content items_
+![menus-menu-working-with-radmenu-items-nesting-controls-in-menu-items 001](images/menus-menu-working-with-radmenu-items-nesting-controls-in-menu-items001.png)
 
-	
-
-
+#### Adding content items
 
 {{source=..\SamplesCS\Menus\Menu\NestingControls.cs region=nestingControls}} 
 {{source=..\SamplesVB\Menus\Menu\NestingControls.vb region=nestingControls}} 

@@ -14,18 +14,11 @@ position: 4
 
 ## 
 
-The __Text__for __RadMenuItem__ can be displayed on multiple lines as shown in the screenshot below.
-				![menus-menu-working-with-radmenu-items-multi-line-menu-item-text 001](images/menus-menu-working-with-radmenu-items-multi-line-menu-item-text001.png)
+The __Text__ for __RadMenuItem__ can be displayed on multiple lines as shown in the screenshot below. <br>![menus-menu-working-with-radmenu-items-multi-line-menu-item-text 001](images/menus-menu-working-with-radmenu-items-multi-line-menu-item-text001.png)
 
-In the Property Window for a __RadMenuItem__use the drop down list to invoke the editor for multiple lines. __Ctrl-Shift__ creates a new line in the editor.  __Ctrl-Enter__ accepts changes and closes the editor. __Esc__ cancels changes and closes the editor. 
-				![menus-menu-working-with-radmenu-items-multi-line-menu-item-text 002](images/menus-menu-working-with-radmenu-items-multi-line-menu-item-text002.png)
+In the Property Window for a __RadMenuItem__ use the drop down list to invoke the editor for multiple lines. __Ctrl-Shift__ creates a new line in the editor.  __Ctrl-Enter__ accepts changes and closes the editor. __Esc__ cancels changes and closes the editor. <br>![menus-menu-working-with-radmenu-items-multi-line-menu-item-text 002](images/menus-menu-working-with-radmenu-items-multi-line-menu-item-text002.png)
 
 In code use __Environment.NewLine__ to separate strings:
-				#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=multiline}} 
 {{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=multiline}} 
@@ -42,17 +35,9 @@ In code use __Environment.NewLine__ to separate strings:
 
 {{endregion}} 
 
-
-
-
 ## Menu Item Height
 
 The __AllItemsEqualHeight__ property controls whether the RadMenu allows some menu items to be taller than others. By default, menu items with multiple lines of text are taller than menu items with single lines of text. If you set this property to True, the height of all items increases to match that of the tallest items.
-				#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Menus\Menu\WorkingWithRadMenuItems\MultilineMenuItemText.cs region=Height}} 
 {{source=..\SamplesVB\Menus\Menu\WorkingWithRadMenuItems\MultilineMenuItemText.vb region=Height}} 

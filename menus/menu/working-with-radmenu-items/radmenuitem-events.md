@@ -16,23 +16,11 @@ Typically you will handle the events of the objects that make up a menu, not the
 
 ## RadMenuItem Events
 
-The key event for the __RadMenuItem__ object is the
-        __Click__ event, which is fired when the user selects the menu item 
-        or presses the associated shortcut key. If the menu item is designed to display check marks, 
-        then the __ToggleStateChanging__ and __ToggleStateChanged__ 
-        events fire when a check mark is applied to or removed from the RadMenuItem object.
+The key event for the __RadMenuItem__ object is the __Click__ event, which is fired when the user selects the menu item or presses the associated shortcut key. If the menu item is designed to display check marks, then the __ToggleStateChanging__ and __ToggleStateChanged__  events fire when a check mark is applied to or removed from the RadMenuItem object.
 
-* __ToggleStateChanging:__Passes a __StateChangingEventArgs__ parameter with properties for __NewValue__, 
-            __OldValue__ and __Cancel__.
-            Both __NewValue__ and __OldValue__ are 
-            __ToggleState__enumeration types with values __Intermediate__, __On__ and __Off__. 
-            If __Canceled__is set to true the checkbox does not change state
-            and the __ToggleStatedChanged__event does not fire.
-            #_[C#] Handling the ToggleStateChanging event_
+* __ToggleStateChanging:__ Passes a __StateChangingEventArgs__ parameter with properties for __NewValue__, __OldValue__ and __Cancel__. Both __NewValue__ and __OldValue__ are __ToggleState__ enumeration types with values __Intermediate__, __On__ and __Off__. If __Canceled__ is set to true the checkbox does not change state and the __ToggleStatedChanged__ event does not fire.
 
-	
-
-
+#### Handling the ToggleStateChanging event
 
 {{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=toggleStateChanging}} 
 {{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=toggleStateChanging}} 
@@ -60,16 +48,10 @@ The key event for the __RadMenuItem__ object is the
 
 
 
-* __ToggleStateChanged__: This event fires when the checkbox state changes
-            between one of the __ToggleState__enumeration values of 
-            __On__, __Off__ or __Intermediate__.
-            The __StateChangedEventaArgs__passed to this event handler contain the
-            __ToggleState__property.
-            #_[C#] Handling the ToggleStateChanged event_
-
-	
+* __ToggleStateChanged__: This event fires when the checkbox state changes between one of the __ToggleState__ enumeration values of __On__, __Off__ or __Intermediate__. The __StateChangedEventaArgs__ passed to this event handler contain the __ToggleState__ property.
 
 
+#### Handling the ToggleStateChanged event
 
 {{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=toggleStateChanged}} 
 {{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=toggleStateChanged}} 
@@ -89,16 +71,11 @@ The key event for the __RadMenuItem__ object is the
 
 {{endregion}} 
 
-
-
-
 ## RadMenuComboItem Events
 
-For the __RadMenuComboItem__, you will probably want to work with the events of the embedded __ComboBoxElement__property. The example below uses the __ComboBoxElement____SelectedIndexChanged__ event to get the currently selected combo box value.#_[C#] Handling the SelectedIndexChanged event of RadMenuComboItem_
+For the __RadMenuComboItem__, you will probably want to work with the events of the embedded __ComboBoxElement__ property. The example below uses the __ComboBoxElement.SelectedIndexChanged__ event to get the currently selected combo box value.
 
-	
-
-
+#### Handling the SelectedIndexChanged event of RadMenuComboItem
 
 {{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=comboEvent}} 
 {{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=comboEvent}} 
@@ -129,16 +106,11 @@ For the __RadMenuComboItem__, you will probably want to work with the events of 
 
 {{endregion}} 
 
-
-
-
 ## RadMenuContentItem
 
-Handle the events for the control assigned to __RadMenuContentItem ContentElement__, not the content item itself. In the example below an event handler is attached to the __Click__of a button.#_[C#] Handling events for controls embedded in RadMenuContentItem_
+Handle the events for the control assigned to __RadMenuContentItem ContentElement__, not the content item itself. In the example below an event handler is attached to the __Click__ of a button.
 
-	
-
-
+#### Handling events for controls embedded in RadMenuContentItem
 
 {{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=contentItem}} 
 {{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=contentItem}} 

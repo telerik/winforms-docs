@@ -14,13 +14,11 @@ position: 1
 
 ## Adding Menu Items
 
-To add top level "main" menu items use the __RadMenu Items__collection and the __RadMenuItem Items__collection for sub menu items. Here are a few examples using overloads of the __RadMenuItem__. The first uses a parameter-less constructor, assigns the __RadMenuItem Text__property and finally adds the menu item to the __RadMenu Items__collection. The second example uses the easiest way to include and add menu items all at one time where a constructor that has a single string __Text__parameter. The last example uses a constructor with a second object __Tag__parameter that you can store any arbitrary data in.
+To add top level "main" menu items use the __RadMenu Items__ collection and the __RadMenuItem Items__ collection for sub menu items. Here are a few examples using overloads of the __RadMenuItem__. The first uses a parameter-less constructor, assigns the __RadMenuItem Text__ property and finally adds the menu item to the __RadMenu Items__ collection. The second example uses the easiest way to include and add menu items all at one time where a constructor that has a single string __Text__ parameter. The last example uses a constructor with a second object __Tag__ parameter that you can store any arbitrary data in.
 
-![menus-menu-working-with-radmenu-items-adding-and-removing-items 001](images/menus-menu-working-with-radmenu-items-adding-and-removing-items001.png)#_[C#] Constructing and adding menu items_
+![menus-menu-working-with-radmenu-items-adding-and-removing-items 001](images/menus-menu-working-with-radmenu-items-adding-and-removing-items001.png)
 
-	
-
-
+#### Constructing and adding menu items
 
 {{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=menuItems}} 
 {{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=menuItems}} 
@@ -47,18 +45,13 @@ To add top level "main" menu items use the __RadMenu Items__collection and the _
 
 {{endregion}} 
 
-
-
-
 ## Adding Sub Menu Items
 
-Adding sub menu items plays by the same rules as adding items to the __RadMenu____Items__ collection except here we use the Items collection of another __RadMenuItem__. In the code example below a reference to the first menu item "Books" is retrieved and several __RadMenuItems__ are added to the "Books" menu __Items__collection. Also notice that a Click event handler is attached to the last "Bargains" menu item.
+Adding sub menu items plays by the same rules as adding items to the __RadMenu.Items__ collection except here we use the Items collection of another __RadMenuItem__. In the code example below a reference to the first menu item "Books" is retrieved and several __RadMenuItems__ are added to the "Books" menu __Items__ collection. Also notice that a Click event handler is attached to the last "Bargains" menu item.
 
-![menus-menu-working-with-radmenu-items-adding-and-removing-items 002](images/menus-menu-working-with-radmenu-items-adding-and-removing-items002.png)#_[C#] Adding menu sub items_
+![menus-menu-working-with-radmenu-items-adding-and-removing-items 002](images/menus-menu-working-with-radmenu-items-adding-and-removing-items002.png)
 
-	
-
-
+#### Adding menu sub items
 
 {{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=subItems}} 
 {{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=subItems}} 
@@ -101,18 +94,13 @@ Adding sub menu items plays by the same rules as adding items to the __RadMenu__
 
 {{endregion}} 
 
-
-
-
 ## Adding a RadMenuComboItem
 
 RadMenuComboItems are constructed with no parameters and then the ComboBoxElement Items collection is used to populate the drop-down list.
 
-![menus-menu-working-with-radmenu-items-adding-and-removing-items 003](images/menus-menu-working-with-radmenu-items-adding-and-removing-items003.png)#_[C#] Adding sub items_
+![menus-menu-working-with-radmenu-items-adding-and-removing-items 003](images/menus-menu-working-with-radmenu-items-adding-and-removing-items003.png)
 
-	
-
-
+#### Adding sub items
 
 {{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=comboItem}} 
 {{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=comboItem}} 
@@ -139,16 +127,11 @@ RadMenuComboItems are constructed with no parameters and then the ComboBoxElemen
 
 {{endregion}} 
 
-
-
-
 ## Performance
 
-For best performance when performing long running operations, such as loading a number of menu items from a database, call the __BeginInit()__ and __EndInit()__ methods to suspend layout of the menu. #_[C#] Suspending the layout_
+For best performance when performing long running operations, such as loading a number of menu items from a database, call the __BeginInit()__ and __EndInit()__ methods to suspend layout of the menu. 
 
-	
-
-
+#### Suspending the layout
 
 {{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=performance}} 
 {{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=performance}} 
@@ -165,18 +148,13 @@ For best performance when performing long running operations, such as loading a 
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Removing Menu Items
 
-Remove items from the items collection using __Remove()__ or __RemoveAt()__ methods. __RemoveAt()__ takes integer position of the item in the collection, __Remove()__ takes a reference to the menu item to be removed.#_[C#] Removing items_
+Remove items from the items collection using __Remove()__ or __RemoveAt()__ methods. __RemoveAt()__ takes integer position of the item in the collection, __Remove()__ takes a reference to the menu item to be removed.
 
-	
-
-
+#### Removing items
 
 {{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=removingItems}} 
 {{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=removingItems}} 
@@ -195,7 +173,4 @@ Remove items from the items collection using __Remove()__ or __RemoveAt()__ meth
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

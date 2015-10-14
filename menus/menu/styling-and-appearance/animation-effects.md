@@ -18,9 +18,7 @@ Three properties control the animation behavior for expand and collapse effects 
 
 * The __DropDownAnimationEnabled__ property controls whether the expand and collapse will be animated at all. Set this property to __True__ to enable animation. 
 
-
 * The __DropDownAnimationEasing__ property specifies the precise animation effect that will be applied. You can choose from a number of predefined effects including linear, exponential, elastic, and so on. 
-
 
 * The __DropDownAnimationFrames__ property specifies the length of the animation. The higher the value of this property, the longer the animation will take. Experiment by setting this value higher so that the animation effects are easier to see.
 
@@ -32,21 +30,15 @@ The controls used in the example are:
 
 * __RadMenu__ to display some arbitrary menu items (see the [Menu Designer]({%slug winforms/menus/menu/design-time/menu-designer%}) topic for more information on adding menu items at design time).
 
-* __RadCheckBox__named "cbEnabled".
+* __RadCheckBox__ named "cbEnabled".
 
-* __RadLabel__named "lblFrames".
+* __RadLabel__ named "lblFrames".
 
-* __RadTrackBar__named "tbFrames".
+* __RadTrackBar__ named "tbFrames".
 
 * __RadDropDownList__ named "ddlAnimation".  
 
 To load the __RadDropDownList__with members of the __RadEasingType__ enumeration add the following code to a __Form Load__event handler. This code iterations the enumeration and adds both the string representation and the enumerated value itself. 
-
-#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Menus\Menu\AnimationEffects.cs region=easingTypes}} 
 {{source=..\SamplesVB\Menus\Menu\AnimationEffects.vb region=easingTypes}} 
@@ -74,24 +66,15 @@ To load the __RadDropDownList__with members of the __RadEasingType__ enumeration
 
 {{endregion}} 
 
-
-
-
 The example requires event handlers for: 
 
-* __RadDropDownList SelectedIndexChanged__event.
+* __RadDropDownList SelectedIndexChanged__ event.
 
-* __RadCheckBox ToggleStateChanged__event.
+* __RadCheckBox ToggleStateChanged__ event.
 
-* __RadTrackBar ValueChanged__event.
+* __RadTrackBar ValueChanged__ event.
 
 When the __RadDropDownList__ selection changes the __RadEasingType__ enumeration value is assigned to the __RadMenu____DropDownAnimationEasing__ property. The __RadCheckBox____Click__ event handler toggles the __DropDownAnimationEnabled__ property. The __RadTrackBar____ValueChanged__ event handler sets the __DropDownAnimationFrames__ property and displays the current value in the label. 
-
-#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\Menus\Menu\AnimationEffects.cs region=eventHandlers}} 
 {{source=..\SamplesVB\Menus\Menu\AnimationEffects.vb region=eventHandlers}} 

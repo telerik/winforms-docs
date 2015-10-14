@@ -42,7 +42,7 @@ The RadMenuItem represents a standard menu item. Some of its properties include:
 
 ![menus-menu-working-with-radmenu-items-radmenuitem 001](images/menus-menu-working-with-radmenu-items-radmenuitem001.png)
 
-* __Enabled__ when set to false shows the menu item as grayed out and does not react to mouse clicks. To allow non-standard painting when the menu item is not enabled set the __UseDefaultDisabledPaint__property to false and then use the __Visual Style Builder__ to customize the appearance of this state.  
+* __Enabled__ when set to false shows the menu item as grayed out and does not react to mouse clicks. To allow non-standard painting when the menu item is not enabled set the __UseDefaultDisabledPaint__ property to false and then use the __Visual Style Builder__ to customize the appearance of this state.  
 
 * __FlipText__ flips the text of the item vertically if set to True. 
 
