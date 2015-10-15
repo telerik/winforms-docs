@@ -1,11 +1,11 @@
 ---
-title: Model
+title: Overview
 page_title: Model | UI for WinForms Documentation
 description: Model
 slug: winforms/wordsprocessing/model
 tags: model
 published: True
-position: 3
+position: 0
 ---
 
 # Model

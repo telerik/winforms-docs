@@ -575,6 +575,36 @@ navigation:
     wordsprocessing:
         title: WordsProcessing
         position: 49
+    wordsprocessing/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 2
+    wordsprocessing/model:
+        title: Model
+        position: 3
+    wordsprocessing/formats-and-conversion:
+        title: Formats and Conversion
+        position: 4
+    wordsprocessing/formats-and-conversion/docx:
+        title: Docx
+        position: 1
+    wordsprocessing/formats-and-conversion/rtf:
+        title: Rtf
+        position: 2
+    wordsprocessing/formats-and-conversion/html:
+        title: Html
+        position: 3
+    wordsprocessing/formats-and-conversion/pdf:
+        title: Pdf
+        position: 4
+    wordsprocessing/formats-and-conversion/plain-text:
+        title: Plain Text
+        position: 5
+    wordsprocessing/features:
+        title: Features
+        position: 5
+    wordsprocessing/concepts:
+        title: Concepts
+        position: 6
     ziplibrary:
         title: ZipLibrary
         position: 50
