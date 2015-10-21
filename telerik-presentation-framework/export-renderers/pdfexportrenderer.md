@@ -1,0 +1,23 @@
+---
+title: PdfExportRenderer
+page_title: PdfExportRenderer | UI for WinForms Documentation
+description: PdfExportRenderer
+slug: winforms/telerik-presentation-framework/export-renderers/pdfexportrenderer
+tags: pdfexportrenderer
+published: True
+position: 1
+---
+
+# PdfExportRenderer
+
+
+The __PdfExportRenderer__ class gives you access to the exported document and provides you with the ability to change it before it is saved.
+        
+
+The __PdfExportRenderer__ API gives you the ability to manipulate the document. The following two events are giving you the ability to make some final changes: 
+        
+
+* __PageExported:__ occurs when each page is exported. The __PageExportedEventArgs__ object gives you access to the [editor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}) which you can use to paint on the page.
+            
+
+* __PdfExporting:__ occurs before the export process is completed. This event gives you access to the exported document and at this point you can manipulate it using the [PdfProcessing Library]({%slug winforms/pdfprocessing%})
