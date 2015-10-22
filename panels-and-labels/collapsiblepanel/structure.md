@@ -5,14 +5,12 @@ description: Structure
 slug: winforms/panels-and-labels/collapsiblepanel/structure
 tags: structure
 published: True
-position: 0
+position: 1
 ---
 
 # Structure
 
-
-
-Below is the structure of __RadCollapsiblePanel__.![panels-and-labels-collapsible-panel-structure 001](images/panels-and-labels-collapsible-panel-structure001.png)
+Below is the structure of __RadCollapsiblePanel__.<br>![panels-and-labels-collapsible-panel-structure 001](images/panels-and-labels-collapsible-panel-structure001.png)
 
 ## 
 

@@ -5,20 +5,14 @@ description: Scrolling
 slug: winforms/panorama/scrolling
 tags: scrolling
 published: True
-position: 5
+position: 6
 ---
 
 # Scrolling
 
+The scroll bar alignment is controlled by the __ScrollBarAlignment__ property:
 
-
-## Scrolling
-
-The scroll bar alignment is controlled by the __ScrollBarAlignment__ property:#_[C#] Set scroll bar alignment_
-
-	
-
-
+#### Set scroll bar alignment
 
 {{source=..\SamplesCS\Panorama\PanoramaGettingStarted.cs region=ScrollBarAlignment}} 
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=ScrollBarAlignment}} 
@@ -31,16 +25,11 @@ The scroll bar alignment is controlled by the __ScrollBarAlignment__ property:#_
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+The thickness of the scroll bar can be changed by modifying the __ScrollBarThickness__ property of the control:
 
-
-
-The thickness of the scroll bar can be changed by modifying the __ScrollBarThickness__ property of the control:#_[C#] Modify scroll bar thickness_
-
-	
-
-
+#### Modify scroll bar thickness
 
 {{source=..\SamplesCS\Panorama\PanoramaGettingStarted.cs region=ScrollThickness}} 
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=ScrollThickness}} 
@@ -55,20 +44,9 @@ The thickness of the scroll bar can be changed by modifying the __ScrollBarThick
 
 {{endregion}} 
 
+To change the background image of the view, set the __PanelImage__ property with the desired image. To enable scrolling the background image along with the view, set the __ScrollingBackground__ property to *true*. You will also need to set the __PanelImageSize__ property. Usually, to achieve smooth background scrolling, the width of the panel image should be larger than the client width of the control and smaller than the total width of the tile layout. To edit more properties of the image, you can access its element via the __PanoramaElement.BackgroundImagePrimitive__ property. The following code demonstrates how to setup a tiling background image and a background scrolling:
 
-
-
-To change the background image of the view, set the __PanelImage__ property with the desired image. To enable 
-			scrolling the background image along with the view, set the __ScrollingBackground__ property to *true*. 
-			You will also need to set the __PanelImageSize__ property. Usually, to achieve smooth background scrolling, the width 
-			of the panel image should be larger than the client width of the control and smaller than the total width of the tile layout.
-			To edit more properties of the image, you can access its element via the __PanoramaElement.BackgroundImagePrimitive__ property. 
-			The following code demonstrates how to setup a tiling background image and a background scrolling:
-		#_[C#] Set tiling backgroung image_
-
-	
-
-
+#### Set tiling backgroung image
 
 {{source=..\SamplesCS\Panorama\PanoramaGettingStarted.cs region=SetTilingBackground}} 
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=SetTilingBackground}} 
@@ -138,7 +116,4 @@ To change the background image of the view, set the __PanelImage__ property with
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

@@ -10,16 +10,13 @@ position: 4
 
 # Separator
 
-
-
 ## 
 
-RadSeparator is a control that gives you the ability to divide your forms into logical parts. 
-        By default it contains of two lines.![panels-and-labels-separator 001](images/panels-and-labels-separator001.png)
+RadSeparator is a control that gives you the ability to divide your forms into logical parts. By default it contains of two lines.<br>![panels-and-labels-separator 001](images/panels-and-labels-separator001.png)
 
 The control have several properties that you might find interesting:
 
-* __Orientation__ - gets or sets the control orientation to Vertical or Horizontal![panels-and-labels-separator 002](images/panels-and-labels-separator002.png)
+* __Orientation__ - gets or sets the control orientation to Vertical or Horizontal<br>![panels-and-labels-separator 002](images/panels-and-labels-separator002.png)
 
 * __ShadowOffset__ - gets or sets the offset of the both lines, both horizontal and vertical
 
@@ -27,11 +24,9 @@ The control have several properties that you might find interesting:
 
 * __SeparatorElement__ - the element that holds the lines. Gives you the ability to access and customize them
 
-Follows a small sample, which demonstrates how to take advantage of the functionalities of RadSeparator#_[C#] Customize RadSeparator_
+Follows a small sample, which demonstrates how to take advantage of the functionalities of RadSeparator
 
-	
-
-
+#### Customize RadSeparator
 
 {{source=..\SamplesCS\PanelsAndLabels\Separator\Separator.cs region=separatorExample}} 
 {{source=..\SamplesVB\PanelsAndLabels\Separator\Separator.vb region=separatorExample}} 
@@ -82,7 +77,4 @@ Follows a small sample, which demonstrates how to take advantage of the function
 
 {{endregion}} 
 
-
-
-
-Here is the result of the following code:	![panels-and-labels-separator 003](images/panels-and-labels-separator003.png)
+Here is the result of the following code:<br>![panels-and-labels-separator 003](images/panels-and-labels-separator003.png)

@@ -350,6 +350,21 @@ navigation:
     panels-and-labels:
         title: Panels and Labels
         position: 30
+    panels-and-labels/groupbox:
+        title: GroupBox
+        position: 0
+    panels-and-labels/label:
+        title: Label
+        position: 1
+    panels-and-labels/panel:
+        title: Panel
+        position: 2
+    panels-and-labels/collapsiblepanel:
+        title: Collapsible Panel
+        position: 3
+    panels-and-labels/groupbox/advanced:
+        title: Advanced
+        position: 4		
     panorama:
         title: Panorama
         position: 31

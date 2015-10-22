@@ -5,7 +5,7 @@ description: Panorama
 slug: winforms/panorama
 tags: panorama
 published: True
-position: 30
+position: 0
 ---
 
 # Panorama
@@ -14,9 +14,7 @@ position: 30
 
 ## 
 
-RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner. This control is inspired by
-        	the Metro Start Menu screen of Windows 8. Main features of the control are:
-        
+RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner. This control is inspired by the Metro Start Menu screen of Windows 8. Main features of the control are:
 
 * Grouped and ungrouped view
 
@@ -26,4 +24,6 @@ RadPanorama is a control that displays elements of type RadTileElement in a mosa
 
 * Extendable tile elements 
 
-* Live tiles ![panorama-overview](images/panorama-overview.png)
+* Live tiles
+
+![panorama-overview](images/panorama-overview.png)
