@@ -17,14 +17,8 @@ RadPageView, when its ViewMode is set to Strip allows you to change the behavior
 ## 
 
 The main property that controls the behavior of the tabs is the __ItemMode__ property of the __RadPageViewStripElement__.
-        
 
 * *None* - Each item uses its desired size.
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PageView\StripViewFittingItems.cs region=ModeNone}} 
 {{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeNone}} 
@@ -45,11 +39,6 @@ The main property that controls the behavior of the tabs is the __ItemMode__ pro
 ![pageview-strip-view-fitting-items 001](images/pageview-strip-view-fitting-items001.png)
 
 * *Shrink* - Items are shrinked if their size exceeds the available one.
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PageView\StripViewFittingItems.cs region=ModeShrink}} 
 {{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeShrink}} 
@@ -70,11 +59,6 @@ The main property that controls the behavior of the tabs is the __ItemMode__ pro
 ![pageview-strip-view-fitting-items 002](images/pageview-strip-view-fitting-items002.gif)
 
 * *Fill* - Items are expanded if their size is less than the available one.
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PageView\StripViewFittingItems.cs region=ModeFill}} 
 {{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeFill}} 
@@ -95,10 +79,6 @@ The main property that controls the behavior of the tabs is the __ItemMode__ pro
 ![pageview-strip-view-fitting-items 003](images/pageview-strip-view-fitting-items003.gif)
 
 * *ShrinkAndFill* - Items are either shrinked or expanded when needed.
-            #_[C#]_
-
-	
-
 
 
 {{source=..\SamplesCS\PageView\StripViewFittingItems.cs region=ModeShrinkAndFill}} 
@@ -120,11 +100,6 @@ The main property that controls the behavior of the tabs is the __ItemMode__ pro
 ![pageview-strip-view-fitting-items 004](images/pageview-strip-view-fitting-items004.gif)
 
 * *FillHeight* - Items are stretched in the available height of their parent container.
-            #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PageView\StripViewFittingItems.cs region=ModeFillHeight}} 
 {{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeFillHeight}} 
@@ -145,14 +120,7 @@ The main property that controls the behavior of the tabs is the __ItemMode__ pro
 
 ![pageview-strip-view-fitting-items 005](images/pageview-strip-view-fitting-items005.png)
 
-* *MultiLine* - Items are arranged in multiLine layout. 
-              You can also set the *MultiLineItemFitMode* property to *None* or *Reflow*.
-            If you set the __MultiLineItemFitMode__ to *None* you will manually need to set the Row of the items:
-            #_[C#]_
-
-	
-
-
+* *MultiLine* - Items are arranged in multiLine layout. You can also set the *MultiLineItemFitMode* property to *None* or *Reflow*. If you set the __MultiLineItemFitMode__ to *None* you will manually need to set the Row of the items:
 
 {{source=..\SamplesCS\PageView\PageViewMultiLine.cs region=PageViewMultiLineItemFitModeNone}} 
 {{source=..\SamplesVB\PageView\PageViewMultiLine.vb region=PageViewMultiLineItemFitModeNone}} 
@@ -187,12 +155,9 @@ The main property that controls the behavior of the tabs is the __ItemMode__ pro
 {{endregion}} 
 
 
-![pageview-strip-view-fitting-items 006](images/pageview-strip-view-fitting-items006.gif)If the property is set to *Reflow*, the layout will automatically calculate these settings:
-            #_[C#]_
+![pageview-strip-view-fitting-items 006](images/pageview-strip-view-fitting-items006.gif)
 
-	
-
-
+If the property is set to *Reflow*, the layout will automatically calculate these settings:
 
 {{source=..\SamplesCS\PageView\PageViewMultiLine.cs region=PageViewMultiLineItemFitModeReflow}} 
 {{source=..\SamplesVB\PageView\PageViewMultiLine.vb region=PageViewMultiLineItemFitModeReflow}} 

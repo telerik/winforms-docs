@@ -14,14 +14,9 @@ position: 1
 
 ## Programmatically adding RadPageViewPages to RadPageView
 
-This help article will demonstrate __RadPageViewPages__can be added to __RadPageView__ programmatically.
-        Simply all that has to be done is to create an instance of __RadPageViewPage__, set the desired properties (i.e *Text*,
-        *Font* etc), and add the instance to the *Pages* collection of the __RadPageView__.
-        The following code snippet demonstrated this behavior:#_[C#] Adding pages_
+This help article will demonstrate __RadPageViewPages__can be added to __RadPageView__ programmatically. Simply all that has to be done is to create an instance of __RadPageViewPage__, set the desired properties (i.e *Text*, *Font* etc), and add the instance to the *Pages* collection of the __RadPageView__. The following code snippet demonstrated this behavior:
 
-	
-
-
+#### Adding pages
 
 {{source=..\SamplesCS\PageView\HowTo.cs region=addingPages}} 
 {{source=..\SamplesVB\PageView\HowTo.vb region=addingPages}} 
@@ -51,17 +46,11 @@ This help article will demonstrate __RadPageViewPages__can be added to __RadPage
 
 {{endregion}} 
 
-
-
-
 ## Adding Controls to RadPageViewPage
 
-Additionally adding other controls to a specified __RadPageViewPage__ programmatically, can be achieve by simply adding the
-        desired coontrol to the Controls collection of the desired page, as shown in the next example:#_[C#] Adding controls_
+Additionally adding other controls to a specified __RadPageViewPage__ programmatically, can be achieve by simply adding the desired coontrol to the Controls collection of the desired page, as shown in the next example:
 
-	
-
-
+#### Adding controls
 
 {{source=..\SamplesCS\PageView\HowTo.cs region=addingControls}} 
 {{source=..\SamplesVB\PageView\HowTo.vb region=addingControls}} 
@@ -82,6 +71,3 @@ Additionally adding other controls to a specified __RadPageViewPage__ programma
 ````
 
 {{endregion}} 
-
-
-

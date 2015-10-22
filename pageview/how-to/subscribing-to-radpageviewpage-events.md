@@ -14,26 +14,28 @@ position: 2
 
 ## Subscribing to RadPageViewPage events
 
-Subscribing to RadPageViewPage event is no different then subscribing to any other event. Following is an example code snippet:#_[C#]_
-
-	
-
-#_[C#]_
-
-	
-
-
-
-#_[VB.NET]_
-
-	
-
-
+Subscribing to RadPageViewPage event is no different then subscribing to any other event. Following is an example code snippet:
 
 {{source=..\SamplesCS\PageView\HowTo.cs region=subscribeToEvents}} 
-{{source=..\SamplesCS\PageView\HowTo.cs region=eventHandlers}} 
-{{source=..\SamplesVB\PageView\HowTo.vb region=subscribeToEvents}} 
+{{source=..\SamplesVB\PageView\HowTo.vb region=subscribeToEvents}}
 
+````C#
+
+       radPageViewPage1.MouseClick += new MouseEventHandler(radPageViewPage1_MouseClick);
+       radPageViewPage1.MouseDoubleClick += new MouseEventHandler(radPageViewPage1_MouseDoubleClick);
+
+````
+````VB.NET
+
+      AddHandler radPageViewPage1.MouseClick, AddressOf radPageViewPage1_MouseClick
+      AddHandler radPageViewPage1.MouseDoubleClick, AddressOf radPageViewPage1_MouseDoubleClic
+
+    '
+````
+
+{{endregion}} 
+
+{{source=..\SamplesCS\PageView\HowTo.cs region=eventHandlers}} 
 {{source=..\SamplesVB\PageView\HowTo.vb region=eventHandlers}} 
 
 ````C#

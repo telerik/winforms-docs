@@ -5,7 +5,7 @@ description: ExplorerBarView
 slug: winforms/pageview/explorerbarview
 tags: explorerbarview
 published: True
-position: 5
+position: 0
 ---
 
 # ExplorerBarView
@@ -24,4 +24,6 @@ The ExplorerBar mode of the RadPageView control is designed to handle multiple v
 
 * Top
 
-* Left![pageview-explorerbarview-overview 001](images/pageview-explorerbarview-overview001.png)
+* Left
+ 
+![pageview-explorerbarview-overview 001](images/pageview-explorerbarview-overview001.png)

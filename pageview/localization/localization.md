@@ -20,15 +20,11 @@ To localize RadPageView to display control text and messages in a specific langu
 
 * Start by creating a descendant of the __RadPageViewLocalizationProvider__ class.
 
-* Override the __GetLocalizedString(string id)__ method and provide a translation for the label and user messages.
-            If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base
-            __GetLocalizedString__ method in the __default__ clause of the __switch__ statement in the example.
+* Override the __GetLocalizedString(string id)__ method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the __default__ clause of the __switch__ statement in the example.
 
-Below is a sample implementation of a custom localization provider, which returns translations of the default values in German:#_[C#] Localizing RadPageView strings_
+Below is a sample implementation of a custom localization provider, which returns translations of the default values in German:
 
-	
-
-
+#### Localizing RadPageView strings
 
 {{source=..\SamplesCS\PageView\Localization.cs region=localizationImpl}} 
 {{source=..\SamplesVB\PageView\Localization.vb region=localizationImpl}} 
@@ -99,14 +95,9 @@ Below is a sample implementation of a custom localization provider, which return
 
 {{endregion}} 
 
+To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
-
-
-To apply the custom localization provider, instantiate and assign it to the current localization provider:#_[C#] Using the custom localization provider_
-
-	
-
-
+#### Using the custom localization provider
 
 {{source=..\SamplesCS\PageView\Localization.cs region=localizationUsage}} 
 {{source=..\SamplesVB\PageView\Localization.vb region=localizationUsage}} 
@@ -122,9 +113,6 @@ To apply the custom localization provider, instantiate and assign it to the cur
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 The code provided above illustrates the approach to be used to localize the __RadPageView__ and is not intended as a full translation.

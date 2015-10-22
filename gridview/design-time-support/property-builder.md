@@ -22,9 +22,9 @@ The command bar shows the main Property Builder commands:
 
 * *Build* will build [hierarchy]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data%}), depending on the __DataSource__ (should be a dataset) and __DataMemeber__ properties. The build command will find the relations automatically and will build the hierarchy;
 
-* *Save* and *Load* will save/load the current GridView layout into XML format. This allows for fine-grained control over which settings you want to include/exclude from the generated xml file. Thus, if you are using multiple grids, you can use the same settings over and over again which saves time. See [Save/Load layout buttons in the Property Grid]({%slug winforms/gridview/save-and-load-layout/save/load-layout-buttons-in-the-property-grid%}) for more information;
+* *Save* and *Load* will save/load the current GridView layout into XML format. This allows for fine-grained control over which settings you want to include/exclude from the generated xml file. Thus, if you are using multiple grids, you can use the same settings over and over again which saves time. See [Save/Load layout buttons in the Property Grid]({%slug winforms/gridview/save-and-load-layout/load-layout-buttons-in-the-property-grid%}) for more information;
 
-* *New* gives you the ability to add a custom unbound column or a new template to the GridView. The command will change its visibility based on selection in object tree. It is not visible when RadGridView is selected from the *Object Tree:*<br>![gridview-design-time-support-property-builder 002](images/gridview-design-time-support-property-builder002.png)  
+* *New* gives you the ability to add a custom unbound column or a new template to the GridView. The command will change its visibility based on selection in object tree. It is not visible when RadGridView is selected from the *Object Tree:*<br>![gridview-design-time-support-property-builder 002](images/gridview-design-time-support-property-builder002.png)  ****
 
 * *Delete* will delete the currently selected item in the *Object Tree*. The command will change its visibility based on selection in object tree. It is not visible when RadGridView is selected from the *Object Tree*.
 

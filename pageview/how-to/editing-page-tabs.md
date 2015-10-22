@@ -12,10 +12,7 @@ position: 3
 
 
 
-By default __RadPageView__ does not allow modifying of the current page tab text. If the __AllowEdit__ property
-      of the ViewElement is set to true, the user may select a page item and press F2 to initiate editing. Double click also enables editing. By default a text editor is invoked and allows the 
-      editing of the page tab text. If the user cancels editing by pressing Escape the value is not persisted. Editing can also be initiated and cancelled 
-      programmatically.
+By default __RadPageView__ does not allow modifying of the current page tab text. If the __AllowEdit__ property of the ViewElement is set to true, the user may select a page item and press F2 to initiate editing. Double click also enables editing. By default a text editor is invoked and allows the editing of the page tab text. If the user cancels editing by pressing Escape the value is not persisted. Editing can also be initiated and cancelled programmatically.
 
 * Use the __BeginEdit()__ method to initiate editing on the selected page tab
 
@@ -25,11 +22,7 @@ By default __RadPageView__ does not allow modifying of the current page tab text
 
 ## 
 
-The sample code demonstrates how to start editing:#_[C#]_
-
-	
-
-
+The sample code demonstrates how to start editing:
 
 {{source=..\SamplesCS\PageView\EditingRadPageViewElement\EditingRadPageViewElement.cs region=EnableEditing}} 
 {{source=..\SamplesVB\PageView\EditingRadPageViewElement\EditingRadPageViewElement.vb region=EnableEditing}} 
@@ -60,30 +53,21 @@ The sample code demonstrates how to start editing:#_[C#]_
 
 ## The Editing process and events
 
-* A page that is being displayed by the __RadPageView__ control is selected and the user presses the F2 key to
-            bring the page tab into edit mode.
+* A page that is being displayed by the __RadPageView__ control is selected and the user presses the F2 key to bring the page tab into edit mode.
 
-* The __RadPageView__ control calls the __BeginEdit()__ method and a new editor instance is initialized. It is 
-            available publicly through the *ActiveEditor* property in __RadPageView__ ViewElement and it is associated with the page tab that is about to be edited.  
+* The __RadPageView__ control calls the __BeginEdit()__ method and a new editor instance is initialized. It is available publicly through the *ActiveEditor* property in __RadPageView__ ViewElement and it is associated with the page tab that is about to be edited.  
 
 * A text box based editor appears for input.
 
-* The editor triggers its __ValueChanging__ event when the editor’s value is being changed. This is a cancelable event,
-            which can prevent editor’s value changing in some cases.
+* The editor triggers its __ValueChanging__ event when the editor’s value is being changed. This is a cancelable event, which can prevent editor’s value changing in some cases.
 
-* The editor instance performs the action it has defined for the Enter key. Typically this indicates that edit mode
-            should be exited and any changes made during the edit session should be applied to the page tab text.
+* The editor instance performs the action it has defined for the Enter key. Typically this indicates that edit mode should be exited and any changes made during the edit session should be applied to the page tab text.
 
-* The __ActiveEditor__ fires the __Validating__ event which allows the user to hook up custom logic for verification.
-            If the __Validating__ event does not succeed (e.Cancel is true), __ValidationError__ event is fired to notify all listeners that the validation has failed.
+* The __ActiveEditor__ fires the __Validating__ event which allows the user to hook up custom logic for verification. If the __Validating__ event does not succeed (e.Cancel is true), __ValidationError__ event is fired to notify all listeners that the validation has failed.
 
 * The __RadPageView__ control sets the page label text to the string representation of the editor __Value__ property in case of successful validation.
 
-The sample code below demonstrates how to forbid the user to clear the text in the page tab when pressing Enter:#_[C#]_
-
-	
-
-
+The sample code below demonstrates how to forbid the user to clear the text in the page tab when pressing Enter:
 
 {{source=..\SamplesCS\PageView\EditingRadPageViewElement\EditingRadPageViewElement.cs region=Edit}} 
 {{source=..\SamplesVB\PageView\EditingRadPageViewElement\EditingRadPageViewElement.vb region=Edit}} 
@@ -100,13 +84,6 @@ The sample code below demonstrates how to forbid the user to clear the text in t
 ````
 
 {{endregion}} 
-
-
-#_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PageView\EditingRadPageViewElement\EditingRadPageViewElement.cs region=EditContinuation}} 
 {{source=..\SamplesVB\PageView\EditingRadPageViewElement\EditingRadPageViewElement.vb region=EditContinuation}} 
@@ -164,7 +141,6 @@ The sample code below demonstrates how to forbid the user to clear the text in t
     '
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![pageview-how-to-editing-radpageviewelement 002](images/pageview-how-to-editing-radpageviewelement002.png)![pageview-how-to-editing-radpageviewelement 003](images/pageview-how-to-editing-radpageviewelement003.png)

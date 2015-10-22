@@ -14,15 +14,9 @@ position: 0
 
 ## 
 
-This help article will demonstrate you how to add custom __RadContextMenu__ to __RadPageViewPages'__ tabs,
-        as shown in the following image.![](images/pageview-how-to-add-contextmenu-to-radpageview-tabs001.png)
+This help article will demonstrate you how to add custom __RadContextMenu__ to __RadPageViewPages'__ tabs, as shown in the following image.![](images/pageview-how-to-add-contextmenu-to-radpageview-tabs001.png)
 
-To create your custom __RadContextMenu__, add its' __RadMenuItems__, set their properties and add them
-        to the __RadContextMenu__*Items* collection:#_[C#]_
-
-	
-
-
+To create your custom __RadContextMenu__, add its' __RadMenuItems__, set their properties and add them to the __RadContextMenu__*Items* collection:
 
 {{source=..\SamplesCS\PageView\HowTo.cs region=createContextMenu}} 
 {{source=..\SamplesVB\PageView\HowTo.vb region=createContextMenu}} 
@@ -79,14 +73,7 @@ To create your custom __RadContextMenu__, add its' __RadMenuItems__, set their p
 
 {{endregion}} 
 
-
-
-
-In the following code snippet you can observe, how to add the most common items functionalities:#_[C#]_
-
-	
-
-
+In the following code snippet you can observe, how to add the most common items functionalities:
 
 {{source=..\SamplesCS\PageView\HowTo.cs region=eventHandlerImpl}} 
 {{source=..\SamplesVB\PageView\HowTo.vb region=eventHandlerImpl}} 
@@ -150,14 +137,7 @@ In the following code snippet you can observe, how to add the most common items 
 
 {{endregion}} 
 
-
-
-
-After the context menu is created it have to be associated with __RadPageViewPages__ tabs. This can be done by subscribing to the __RadPageView__ instance' __MouseClick__ event:#_[C#]_
-
-	
-
-
+After the context menu is created it have to be associated with __RadPageViewPages__ tabs. This can be done by subscribing to the __RadPageView__ instance' __MouseClick__ event:
 
 {{source=..\SamplesCS\PageView\HowTo.cs region=mouseClick}} 
 {{source=..\SamplesVB\PageView\HowTo.vb region=mouseClick}} 
@@ -186,6 +166,3 @@ After the context menu is created it have to be associated with __RadPageViewP
 ````
 
 {{endregion}} 
-
-
-
