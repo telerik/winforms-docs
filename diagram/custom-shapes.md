@@ -5,7 +5,7 @@ description: Custom shapes
 slug: winforms/diagram-(beta)/custom-shapes
 tags: custom,shapes
 published: True
-position: 10
+position: 15
 ---
 
 # Custom shapes

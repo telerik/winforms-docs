@@ -165,8 +165,26 @@ navigation:
         title: How To
         position: 7
     diagram:
-        title: Diagram(beta)
+        title: Diagram
         position: 16
+    diagram/diagram-items:
+        title: Diagram Items
+        position: 8
+    diagram/diagram-items:
+        title: Diagram Items
+        position: 10 
+    diagram/items-manipulation:
+        title: Items Manipulation
+        position: 11
+    diagram/features:
+        title: Features
+        position: 12
+    diagram/events:
+        title: Events
+        position: 13
+    diagram/diagram-tools:
+        title: Diagram Tools
+        position: 14
     dock:
         title: Dock
         position: 17

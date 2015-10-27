@@ -5,7 +5,7 @@ description: Background Grid
 slug: winforms/diagram-(beta)/background-grid
 tags: background,grid
 published: True
-position: 4
+position: 7
 ---
 
 # Background Grid
@@ -17,14 +17,8 @@ position: 4
 You can control the background settings of the diagramming surface through the following properties:
         
 
-* __IsBackgroundSurfaceVisible__: a boolean property that determines whether the background surface of the __RadDiagram__ 
-              should be displayed. Its default value is *true*.
-            #_[C#] Show the background grid_
-
-	
-
-
-
+* __IsBackgroundSurfaceVisible__: a boolean property that determines whether the background surface of the __RadDiagram__  should be displayed. Its default value is *true*. 
+* 
 {{source=..\SamplesCS\Diagram\DiagramBackgroundGrid.cs region=IsBackgroundSurfaceVisible}} 
 {{source=..\SamplesVB\Diagram\DiagramBackgroundGrid.vb region=IsBackgroundSurfaceVisible}} 
 
@@ -41,22 +35,14 @@ You can control the background settings of the diagramming surface through the f
 
 {{endregion}} 
 
-
-
-
-
+ 
 
 | __IsBackgroundSurfaceVisible__ = *true* | __IsBackgroundSurfaceVisible__ = *false* |
+|----|----|
 |![diagram-backgroundgrid 001](images/diagram-backgroundgrid001.png)|![diagram-backgroundgrid 002](images/diagram-backgroundgrid002.png)|
 
-* __Background__: this property is of type *Brush* and it controls the fill of
-              the __RadDiagram__ background.
-            #_[C#] Set the Background_
-
-	
-
-
-
+* __Background__: this property is of type *Brush* and it controls the fill of the __RadDiagram__ background.
+            
 {{source=..\SamplesCS\Diagram\DiagramBackgroundGrid.cs region=Background}} 
 {{source=..\SamplesVB\Diagram\DiagramBackgroundGrid.vb region=Background}} 
 
@@ -81,18 +67,12 @@ You can control the background settings of the diagramming surface through the f
 
 You can access the __BackgroundGrid__ properties:
 
-* __CellSize__: this property is of type *Telerik.Windows.Diagrams.Core.Size* and
-              it controls the size of the cells in the __RadDiagram__ surface. The default value of this property is a
-              size of *20x20 * units.
+* __CellSize__: this property is of type *Telerik.Windows.Diagrams.Core.Size* and it controls the size of the cells in the __RadDiagram__ surface. The default value of this property is a size of *20x20 * units.
             
 >caption Figure. 2 CellSize
 
 ![diagram-backgroundgrid 004](images/diagram-backgroundgrid004.png)#_[C#] Set the CellSize_
-
-	
-
-
-
+ 
 {{source=..\SamplesCS\Diagram\DiagramBackgroundGrid.cs region=CellSize}} 
 {{source=..\SamplesVB\Diagram\DiagramBackgroundGrid.vb region=CellSize}} 
 
@@ -141,16 +121,11 @@ You can access the __BackgroundGrid__ properties:
 
 
 
-* __LineStrokeThickness__: this property is of type *double* and it 
-              gets or sets the thickness of the __RadDiagram__ background grid lines.
+* __LineStrokeThickness__: this property is of type *double* and it gets or sets the thickness of the __RadDiagram__ background grid lines.
             
 >caption Figure. 4 LineStrokeThickness
 
-![diagram-backgroundgrid 006](images/diagram-backgroundgrid006.png)#_[C#] Set the LineStrokeThickness_
-
-	
-
-
+![diagram-backgroundgrid 006](images/diagram-backgroundgrid006.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramBackgroundGrid.cs region=LineStrokeThickness}} 
 {{source=..\SamplesVB\Diagram\DiagramBackgroundGrid.vb region=LineStrokeThickness}} 

@@ -12,58 +12,45 @@ position: 1
 
 
 
-This article will walk you through the process of changing the default editor to a bound drop down list, where the current value corresponds
-        to a value within the drop down list data source. The case where the corresponding values are nullable is also handled.
-      ![dataentry-how-to-change-editor-to-drop-down-list 001](images/dataentry-how-to-change-editor-to-drop-down-list001.png)
+This article will walk you through the process of changing the default editor to a bound drop down list, where the current value corresponds to a value within the drop down list data source. The case where the corresponding values are nullable is also handled. 
+
+![dataentry-how-to-change-editor-to-drop-down-list 001](images/dataentry-how-to-change-editor-to-drop-down-list001.png)
 
 ## 
 
-1. First you can subscribe to the __BindingCreating__, __BindingCreated__ and
-              __EditorInitializing__ events of __RadDataEntry__
-              (please note that this should be done before the data entry control is being data bound).
-            #_[C#] _
+1. First you can subscribe to the __BindingCreating__, __BindingCreated__ and __EditorInitializing__ events of __RadDataEntry__ (please note that this should be done before the data entry control is being data bound). 
 
-	
+	{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=subscribe}} 
+	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=subscribe}} 
 
-
-
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=subscribe}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=subscribe}} 
-
-````C#
+	````C#
             radDataEntry1.EditorInitializing += radDataEntry1_EditorInitializing;
             radDataEntry1.BindingCreating += radDataEntry1_BindingCreating;
             radDataEntry1.BindingCreated += radDataEntry1_BindingCreated;
         
             radDataEntry1.DataSource = productsBinding;
-````
-````VB.NET
+	````
+	````VB.NET
         AddHandler radDataEntry1.EditorInitializing, AddressOf radDataEntry1_EditorInitializing
         AddHandler radDataEntry1.BindingCreating, AddressOf radDataEntry1_BindingCreating
         AddHandler radDataEntry1.BindingCreated, AddressOf radDataEntry1_BindingCreated
 
         radDataEntry1.DataSource = productsBinding
         '
-````
+	````
 
-{{endregion}} 
-
-
-
-
-1. In the __EditorInitializing__ event handler, you will be able to change the automatically generated editor with RadDropDownList.
-              In addition, you should set it up as needed. In this case we will set the __DataSource__, __DisplayMember__ and 
-              __ValueMenber__ properties.
-            #_[C#] _
-
-	
+	{{endregion}} 
 
 
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=editor}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=editor}} 
 
-````C#
+1. In the __EditorInitializing__ event handler, you will be able to change the automatically generated editor with RadDropDownList. In addition, you should set it up as needed. In this case we will set the __DataSource__, __DisplayMember__ and  __ValueMenber__ properties. 
+
+
+	{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=editor}} 
+	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=editor}} 
+
+	````C#
         RadDropDownList radDropDownList1;
 
         void radDataEntry1_EditorInitializing(object sender, Telerik.WinControls.UI.EditorInitializingEventArgs e)
@@ -79,8 +66,8 @@ This article will walk you through the process of changing the default editor to
                 e.Editor = radDropDownList1;
             }
         }
-````
-````VB.NET
+	````
+	````VB.NET
     Private radDropDownList1 As RadDropDownList
 
     Private Sub radDataEntry1_EditorInitializing(sender As Object, e As Telerik.WinControls.UI.EditorInitializingEventArgs)
@@ -95,25 +82,20 @@ This article will walk you through the process of changing the default editor to
         End If
     End Sub
     '
-````
+	````
 
-{{endregion}} 
-
-
-
-
-1. In order the values to be synchronized correctly, the bound property should be set in the __BindingCreating__ event handler.
-              In this case it should be set to the __SelectedValue__ property.
-            #_[C#] _
-
-	
+	{{endregion}} 
 
 
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=creating}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=creating}} 
 
-````C#
+1. In order the values to be synchronized correctly, the bound property should be set in the __BindingCreating__ event handler. In this case it should be set to the __SelectedValue__ property.
+             
+
+	{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=creating}} 
+	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=creating}} 
+
+	````C#
         void radDataEntry1_BindingCreating(object sender, Telerik.WinControls.UI.BindingCreatingEventArgs e)
         {
             if (e.DataMember == "SupplierID")
@@ -121,34 +103,27 @@ This article will walk you through the process of changing the default editor to
                 e.PropertyName = "SelectedValue";
             }
         }
-````
-````VB.NET
+	````
+	````VB.NET
     Private Sub radDataEntry1_BindingCreating(sender As Object, e As Telerik.WinControls.UI.BindingCreatingEventArgs)
         If e.DataMember = "SupplierID" Then
             e.PropertyName = "SelectedValue"
         End If
     End Sub
     '
-````
+	````
 
-{{endregion}} 
-
-
-
-
-1. When the data source is using nullable values in order the user to be able to change the current value via the drop down list, the result
-              value should be manually parsed. This can be done in the binding's __Parse__ event.
-              You can subscribe to this event in the __BindingCreated__ event handler (in order this event to fire the formatting should be enabled).
-            #_[C#] _
-
-	
+	{{endregion}} 
 
 
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=created}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=created}} 
 
-````C#
+1. When the data source is using nullable values in order the user to be able to change the current value via the drop down list, the result value should be manually parsed. This can be done in the binding's __Parse__ event. You can subscribe to this event in the __BindingCreated__ event handler (in order this event to fire the formatting should be enabled). 
+
+	{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=created}} 
+	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=created}} 
+
+	````C#
         void radDataEntry1_BindingCreated(object sender, BindingCreatedEventArgs e)
         {
             if (e.DataMember == "SupplierID")
@@ -165,8 +140,8 @@ This article will walk you through the process of changing the default editor to
 
             e.Value = result;
         }
-````
-````VB.NET
+	````
+	````VB.NET
     Private Sub radDataEntry1_BindingCreated(sender As Object, e As BindingCreatedEventArgs)
         If e.DataMember = "SupplierID" Then
             e.Binding.FormattingEnabled = True
@@ -182,24 +157,16 @@ This article will walk you through the process of changing the default editor to
         e.Value = result
     End Sub
     '
-````
+	````
 
-{{endregion}} 
+	{{endregion}} 
+ 
+	To make the example complete you can use the following classes.
+        
+	{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=data}} 
+	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=data}} 
 
-
-
-
-To make the example complete you can use the following classes.
-        #_[C#] _
-
-	
-
-
-
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=data}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=data}} 
-
-````C#
+	````C#
     public class Product
     {
         private int? _supplierID;
@@ -271,9 +238,9 @@ To make the example complete you can use the following classes.
             }
         }
     }
-````
-````VB.NET
-Public Class Product
+	````
+	````VB.NET
+	Public Class Product
     Private _supplierID As System.Nullable(Of Integer)
     Private _productName As String
 
@@ -299,9 +266,9 @@ Public Class Product
             Me._productName = value
         End Set
     End Property
-End Class
+	End Class
 
-Partial Public Class Supplier
+	Partial Public Class Supplier
     Private _supplierID As System.Nullable(Of Integer)
     Private _companyName As String
 
@@ -327,26 +294,21 @@ Partial Public Class Supplier
             Me._companyName = value
         End Set
     End Property
-End Class
-'
-````
+	End Class
+	'
+	````
 
-{{endregion}} 
+	{{endregion}} 
 
-
-
+ 
 
 You can initialize the data sources in the Form’s constructor.
-        #_[C#] _
+        
 
-	
+	{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=init}} 
+	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=init}} 
 
-
-
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=init}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=init}} 
-
-````C#
+	````C#
         List<Product> productList;
         List<Supplier> suplierList;
         BindingSource productsBinding;
@@ -378,8 +340,8 @@ You can initialize the data sources in the Form’s constructor.
             productsBinding = new BindingSource();
             productsBinding.DataSource = productList;
         }
-````
-````VB.NET
+	````
+	````VB.NET
     Private productList As List(Of Product)
     Private suplierList As List(Of Supplier)
     Private productsBinding As BindingSource
@@ -411,9 +373,9 @@ You can initialize the data sources in the Form’s constructor.
         productsBinding.DataSource = productList
     End Sub
     '
-````
+	````
 
-{{endregion}} 
+	{{endregion}} 
 
 
 

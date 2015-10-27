@@ -1,19 +1,18 @@
 ---
-title: Diagram (beta)
+title: Overview
 page_title: Diagram (beta) | UI for WinForms Documentation
 description: Diagram (beta)
 slug: winforms/diagram-(beta)
 tags: diagram,(beta)
 published: True
-position: 16
+position: 0
 ---
 
-# Diagram (beta)
+# Diagram 
 
 
 
-__RadDiagram__ offers flexible and interactive diagramming layouts for your rich data-visualization applications.
-        The framework tool set enables you to:
+__RadDiagram__ offers flexible and interactive diagramming layouts for your rich data-visualization applications. The framework tool set enables you to:
 
 * Design work-flows in which case shapes and connections are tightly bound to an underlying API
 
@@ -21,7 +20,10 @@ __RadDiagram__ offers flexible and interactive diagramming layouts for your rich
 
 * Architect data-visualization and data analysis diagramming structures
 
-* Further enhance and customize your geographic maps solutions![diagram-overview 001](images/diagram-overview001.png)![diagram-overview 002](images/diagram-overview002.png)
+* Further enhance and customize your geographic maps solutions
+
+![diagram-overview 001](images/diagram-overview001.png)
+![diagram-overview 002](images/diagram-overview002.png)
 
 ## Diagram features
 
@@ -51,13 +53,11 @@ Here is a list with short descriptions of the top-of-the-line features of __RadD
 * __Undo and Redo__ - __RadDiagram__ supports Undo and Redo operations.
             
 
-* __Serialization__ - __RadDiagram__ supports serializing and deserializing diagramming objects into
-              and from XML documents.
+* __Serialization__ - __RadDiagram__ supports serializing and deserializing diagramming objects into and from XML documents.
             
 
 * __Mouse tools__ - __RadDiagram__ exposes a set of mouse tools - selection and connection.
             
 
-* __Diagram commands__ - __RadDiagram__ exposes a set of commands that allow you to easily implement
-              interaction logic in MVVM solutions.
+* __Diagram commands__ - __RadDiagram__ exposes a set of commands that allow you to easily implement interaction logic in MVVM solutions.
           

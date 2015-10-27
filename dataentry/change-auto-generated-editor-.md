@@ -5,7 +5,7 @@ description: Change auto generated editor
 slug: winforms/dataentry/change-auto-generated-editor-
 tags: change,auto,generated,editor,
 published: True
-position: 2
+position: 3
 ---
 
 # Change auto generated editor 
@@ -14,39 +14,29 @@ position: 2
 
 ## 
 
-By default __RadDataEntry__ generates several different editors according to the data type of the property that it should edit.
-          The following table demonstrates the default editors that __RadDataEntry__ can create.
-        
-
-
-
+By default __RadDataEntry__ generates several different editors according to the data type of the property that it should edit. The following table demonstrates the default editors that __RadDataEntry__ can create.
+ 
 |enum|RadDropDownList|
+|----|----|
 |DateTime|RadDateTimePicker|
 |Boolean|RadCheckBox|
 |Color|RadColorBox|
 |Image|PictureBox|
 |string|RadTextBox|
 
->note 
-          For any type that is not represented in this table  __RadDataEntry__  generates  __RadTextBox__ .
-        
-
+>note For any type that is not represented in this table  __RadDataEntry__  generates  __RadTextBox__ .
+ 
 
 In the following example it will be demonstrated how to change default editor with the custom one.
         
 
-1. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties.
-             By binding __RadDataEntry__ to object from this type we will generate several items.
-            #_[C#] _
+1. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties. By binding __RadDataEntry__ to object from this type we will generate several items.
+            
 
-	
+	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}} 
+	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}} 
 
-
-
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}} 
-
-````C#
+	````C#
         private class Employee
         {
             public string FirstName
@@ -91,8 +81,8 @@ In the following example it will be demonstrated how to change default editor wi
             Female,
             Male
         }
-````
-````VB.NET
+	````
+	````VB.NET
         Private Class Employee
             Public Property FirstName() As String
                 Get
@@ -163,21 +153,16 @@ In the following example it will be demonstrated how to change default editor wi
             Female
             Male
         End Enum
-````
+	````
 
-{{endregion}} 
-
-
-#_[C#] _
-
-	
+	{{endregion}} 
 
 
+ 
+	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
+	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
-
-````C#
+	````C#
             this.radDataEntry1.DataSource = new Employee() 
             { 
                 FirstName = "Sarah",
@@ -187,8 +172,8 @@ In the following example it will be demonstrated how to change default editor wi
                 IsMarried = true, 
                 Salary = 3500, Gender = Gender.Female 
             };
-````
-````VB.NET
+	````
+	````VB.NET
             Me.radDataEntry1.DataSource = New Employee() With { _
               .FirstName = "Sarah", _
               .LastName = "Blake", _
@@ -199,25 +184,19 @@ In the following example it will be demonstrated how to change default editor wi
               .Gender = Gender.Female _
              }
             '
-````
+	````
 
-{{endregion}} 
-
-
-![dataentry-overview-change-auto-generated-editor 001](images/dataentry-overview-change-auto-generated-editor001.png)
-
-1. To change the default __RadTextBox__ editor of the “Salary” property with __RadMaskedEditBox__ 
-              we will subscribe to *EditorInitializing* event of __RadDataEntry__.
-          #_[C#] _
-
-	
+	{{endregion}} 
 
 
+	![dataentry-overview-change-auto-generated-editor 001](images/dataentry-overview-change-auto-generated-editor001.png)
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=EditorInitializing}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=EditorInitializing}} 
+1. To change the default __RadTextBox__ editor of the “Salary” property with __RadMaskedEditBox__ we will subscribe to *EditorInitializing* event of __RadDataEntry__.
+           
+	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=EditorInitializing}} 
+	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=EditorInitializing}} 
 
-````C#
+	````C#
         void radDataEntry1_EditorInitializing(object sender, Telerik.WinControls.UI.EditorInitializingEventArgs e)
         {
             if (e.Property.Name == "Salary")
@@ -229,8 +208,8 @@ In the following example it will be demonstrated how to change default editor wi
                 e.Editor = radMaskedEditBox;
             }
         }
-````
-````VB.NET
+	````
+	````VB.NET
         Private Sub radDataEntry1_EditorInitializing(sender As Object, e As Telerik.WinControls.UI.EditorInitializingEventArgs)
             If e.[Property].Name = "Salary" Then
                 Dim radMaskedEditBox As New RadMaskedEditBox()
@@ -240,31 +219,20 @@ In the following example it will be demonstrated how to change default editor wi
                 e.Editor = radMaskedEditBox
             End If
         End Sub
-````
+	````
 
-{{endregion}} 
-
-
-![dataentry-overview-change-auto-generated-editor 002](images/dataentry-overview-change-auto-generated-editor002.png)
-
-1. To achieve working binding for this new editor we should subscribe to the *BindingCreated* event where we will
-              subscribe to the *Parse* event of the Binding object. You can read more about *Format*
-              and *Parse* events of Binding object and why we should use them
-              [
-                here
-                ](
-                http://msdn.microsoft.com/en-us/library/system.windows.forms.binding_events%28v=vs.110%29.aspx
-              ).
-          #_[C#] _
-
-	
+	{{endregion}} 
 
 
+	![dataentry-overview-change-auto-generated-editor 002](images/dataentry-overview-change-auto-generated-editor002.png)
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=BindingCreated}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=BindingCreated}} 
+1. To achieve working binding for this new editor we should subscribe to the *BindingCreated* event where we will subscribe to the *Parse* event of the Binding object. You can read more about *Format* and *Parse* events of Binding object and why we should use them [here](http://msdn.microsoft.com/en-us/library/system.windows.forms.binding_events%28v=vs.110%29.aspx).
+          
 
-````C#
+	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=BindingCreated}} 
+	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=BindingCreated}} 
+
+	````C#
         void radDataEntry1_BindingCreated(object sender, BindingCreatedEventArgs e)
         {
             if (e.DataMember == "Salary")
@@ -278,8 +246,8 @@ In the following example it will be demonstrated how to change default editor wi
             int salary = int.Parse(e.Value.ToString(), NumberStyles.Currency);
             e.Value = salary;
         }
-````
-````VB.NET
+	````
+	````VB.NET
         Private Sub radDataEntry1_BindingCreated(sender As Object, e As BindingCreatedEventArgs)
             If e.DataMember = "Salary" Then
                 AddHandler e.Binding.Parse, AddressOf Binding_Parse
@@ -290,9 +258,9 @@ In the following example it will be demonstrated how to change default editor wi
             Dim salary As Integer = Integer.Parse(e.Value.ToString(), NumberStyles.Currency)
             e.Value = salary
         End Sub
-````
+	````
 
-{{endregion}} 
+	{{endregion}} 
 
 
 
