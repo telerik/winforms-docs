@@ -2,7 +2,7 @@
 title: Populating with data
 page_title: Populating with data | UI for WinForms Documentation
 description: Populating with data
-slug: winforms/diagram-(beta)/populating-with-data
+slug: winforms/diagram/populating-with-data
 tags: populating,with,data
 published: True
 position: 9

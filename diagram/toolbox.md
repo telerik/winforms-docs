@@ -2,7 +2,7 @@
 title: Toolbox
 page_title: Toolbox | UI for WinForms Documentation
 description: Toolbox
-slug: winforms/diagram-(beta)/toolbox
+slug: winforms/diagram/toolbox
 tags: toolbox
 published: True
 position: 3

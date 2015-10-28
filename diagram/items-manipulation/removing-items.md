@@ -2,7 +2,7 @@
 title: Removing items
 page_title: Removing items | UI for WinForms Documentation
 description: Removing items
-slug: winforms/diagram-(beta)/items-manipulation/removing-items
+slug: winforms/diagram/items-manipulation/removing-items
 tags: removing,items
 published: True
 position: 4

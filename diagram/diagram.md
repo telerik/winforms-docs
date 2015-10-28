@@ -2,7 +2,7 @@
 title: Overview
 page_title: Diagram (beta) | UI for WinForms Documentation
 description: Diagram (beta)
-slug: winforms/diagram-(beta)
+slug: winforms/diagram
 tags: diagram,(beta)
 published: True
 position: 0

@@ -2,7 +2,7 @@
 title: Background Grid
 page_title: Background Grid | UI for WinForms Documentation
 description: Background Grid
-slug: winforms/diagram-(beta)/background-grid
+slug: winforms/diagram/background-grid
 tags: background,grid
 published: True
 position: 7

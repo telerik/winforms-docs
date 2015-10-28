@@ -2,7 +2,7 @@
 title: Shapes
 page_title: Shapes | UI for WinForms Documentation
 description: Shapes
-slug: winforms/diagram-(beta)/diagram-items/shapes
+slug: winforms/diagram/diagram-items/shapes
 tags: shapes
 published: True
 position: 0
@@ -14,7 +14,7 @@ position: 0
 
 This tutorial will walk you through the functionality and the main features of __RadDiagramShape__.
 
->note Before proceeding with this topic, it is recommended to get familiar with the[visual structure]({%slug winforms/diagram-(beta)/structure%})of the __RadDiagram__ .
+>note Before proceeding with this topic, it is recommended to get familiar with the[visual structure]({%slug winforms/diagram/structure%})of the __RadDiagram__ .
 >
 
 

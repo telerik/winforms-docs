@@ -170,8 +170,8 @@ navigation:
     diagram/diagram-items:
         title: Diagram Items
         position: 8
-    diagram/diagram-items:
-        title: Diagram Items
+    diagram/data-binding:
+        title: Data Binding
         position: 10 
     diagram/items-manipulation:
         title: Items Manipulation

@@ -25,7 +25,7 @@ Telerik UI for WinForms includes over 110 UI controls that you can use to easily
 * [CheckedListBox]({%slug winforms/checkedlistbox%})
 * [CommandBar]({%slug winforms/commandbar%})
 * [DropDownList]({%slug winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist%})
-* [ContextMenu + ContextMenuManager]({%slug winforms/menus/menu%})[Diagram]({%slug winforms/diagram-(beta)%})
+* [ContextMenu + ContextMenuManager]({%slug winforms/menus/menu%})[Diagram]({%slug winforms/diagram%})
 * [Dock]({%slug winforms/dock%})
 * [GridView]({%slug winforms/gridview%})
 * [ListControl]({%slug winforms/dropdown,-listcontrol-and-checkeddropdownlist/listcontrol%})

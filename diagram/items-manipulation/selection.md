@@ -2,7 +2,7 @@
 title: Selection
 page_title: Selection | UI for WinForms Documentation
 description: Selection
-slug: winforms/diagram-(beta)/items-manipulation/selection
+slug: winforms/diagram/items-manipulation/selection
 tags: selection
 published: True
 position: 2
@@ -13,7 +13,7 @@ position: 2
 
 
 __RadDiagram__ gives you the ability to select __RadDiagramItems__ in code behind,
-        interactively or by invoking [RadDiagramCommand]({%slug winforms/diagram-(beta)/features/commands%}).
+        interactively or by invoking [RadDiagramCommand]({%slug winforms/diagram/features/commands%}).
 
 The following tutorial will show you how to select items, work with different selection modes and set up selection commands and events.
 

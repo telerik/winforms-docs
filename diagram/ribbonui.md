@@ -2,7 +2,7 @@
 title: RibbonUI
 page_title: RibbonUI | UI for WinForms Documentation
 description: RibbonUI
-slug: winforms/diagram-(beta)/ribbonui
+slug: winforms/diagram/ribbonui
 tags: ribbonui
 published: True
 position: 4

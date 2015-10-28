@@ -2,7 +2,7 @@
 title: Editing
 page_title: Editing | UI for WinForms Documentation
 description: Editing
-slug: winforms/diagram-(beta)/items-manipulation/editing
+slug: winforms/diagram/items-manipulation/editing
 tags: editing
 published: True
 position: 6
@@ -14,7 +14,7 @@ position: 6
 
 __RadDiagram__ gives you the ability to edit the content of its items. 
       You can double-click items in order to edit them or use 
-      [RadDiagramCommand]({%slug winforms/diagram-(beta)/features/commands%}).
+      [RadDiagramCommand]({%slug winforms/diagram/features/commands%}).
 
 ## Enable/Disable Editing
 

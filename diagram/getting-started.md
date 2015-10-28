@@ -2,7 +2,7 @@
 title: Getting Started
 page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: winforms/diagram-(beta)/getting-started
+slug: winforms/diagram)/getting-started
 tags: getting,started
 published: True
 position: 2
@@ -48,7 +48,7 @@ In order to populate __RadDiagram__ with __RadDiagramItems__ you can add __RadDi
 
 ![diagram-getting-started 003](images/diagram-getting-started003.png)
 
-The Property Builder allows you to drag a shapes from the [RadDiagramToolbox]({%slug winforms/diagram-(beta)/toolbox%}) and drop it onto the __RadDiagram__ surface. Afterwards, you can connect several shapes by using the connectors. The [RadDiagramRibbonBar]({%slug winforms/diagram-(beta)/ribbonui%}) gives you a set of options to customize the diagram and save the changes as well.
+The Property Builder allows you to drag a shapes from the [RadDiagramToolbox]({%slug winforms/diagram/toolbox%}) and drop it onto the __RadDiagram__ surface. Afterwards, you can connect several shapes by using the connectors. The [RadDiagramRibbonBar]({%slug winforms/diagram/ribbonui%}) gives you a set of options to customize the diagram and save the changes as well.
       
 
 In order to create a diagram describing the flow of an "if-else" operator, you will need 4 shapes - two will represent the statements, one will describe the condition and one will represent the final result of the operator.

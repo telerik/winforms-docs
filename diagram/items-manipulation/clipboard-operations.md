@@ -2,7 +2,7 @@
 title: Clipboard operations
 page_title: Clipboard operations | UI for WinForms Documentation
 description: Clipboard operations
-slug: winforms/diagram-(beta)/items-manipulation/clipboard-operations
+slug: winforms/diagram/items-manipulation/clipboard-operations
 tags: clipboard,operations
 published: True
 position: 3

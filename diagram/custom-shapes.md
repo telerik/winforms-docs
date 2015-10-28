@@ -2,7 +2,7 @@
 title: Custom shapes
 page_title: Custom shapes | UI for WinForms Documentation
 description: Custom shapes
-slug: winforms/diagram-(beta)/custom-shapes
+slug: winforms/diagram/custom-shapes
 tags: custom,shapes
 published: True
 position: 15

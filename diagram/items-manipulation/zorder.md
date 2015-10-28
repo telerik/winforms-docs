@@ -2,7 +2,7 @@
 title: ZOrder
 page_title: ZOrder | UI for WinForms Documentation
 description: ZOrder
-slug: winforms/diagram-(beta)/items-manipulation/zorder
+slug: winforms/diagram/items-manipulation/zorder
 tags: zorder
 published: True
 position: 5

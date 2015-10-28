@@ -2,7 +2,7 @@
 title: Connections
 page_title: Connections | UI for WinForms Documentation
 description: Connections
-slug: winforms/diagram-(beta)/diagram-items/connections
+slug: winforms/diagram/diagram-items/connections
 tags: connections
 published: True
 position: 1
@@ -14,7 +14,7 @@ position: 1
 
 This tutorial will walk you through the functionality and the main features of __RadDiagramConnection__.
 
->note Before proceeding with this topic, it is recommended to get familiar with the[visual structure]({%slug winforms/diagram-(beta)/structure%})of the __RadDiagram__ .
+>note Before proceeding with this topic, it is recommended to get familiar with the[visual structure]({%slug winforms/diagram/structure%})of the __RadDiagram__ .
 >
 
 
@@ -110,7 +110,7 @@ The __RadDiagramConnection__
 
 ![diagram-diagram-items-connections 002](images/diagram-diagram-items-connections002.png)
 
->note You can refer to the[Shapes]({%slug winforms/diagram-(beta)/diagram-items/shapes%})article where the shapes are defined.
+>note You can refer to the[Shapes]({%slug winforms/diagram/diagram-items/shapes%})article where the shapes are defined.
 >
 
 
@@ -818,6 +818,6 @@ You can set the __RadDiagramConnection__ in edit mode by using the __IsInEditMod
         ![diagram-diagram-items-connections 028](images/diagram-diagram-items-connections028.png)
 
 >note Apart from setting the __IsInEditMode__ property to *true* ,
-            you can also enter edit mode by pressing F2 or double-clicking on the connection. For more information please refer to the[Editing]({%slug winforms/diagram-(beta)/items-manipulation/editing%})article.
+            you can also enter edit mode by pressing F2 or double-clicking on the connection. For more information please refer to the[Editing]({%slug winforms/diagram/items-manipulation/editing%})article.
 >
 

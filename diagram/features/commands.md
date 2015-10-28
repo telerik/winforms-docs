@@ -2,7 +2,7 @@
 title: Commands
 page_title: Commands | UI for WinForms Documentation
 description: Commands
-slug: winforms/diagram-(beta)/features/commands
+slug: winforms/diagram/features/commands
 tags: commands
 published: True
 position: 0

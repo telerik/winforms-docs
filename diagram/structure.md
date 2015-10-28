@@ -2,7 +2,7 @@
 title: Structure
 page_title: Structure | UI for WinForms Documentation
 description: Structure
-slug: winforms/diagram-(beta)/structure
+slug: winforms/diagram/structure
 tags: structure
 published: True
 position: 1

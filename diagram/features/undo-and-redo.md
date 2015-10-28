@@ -2,7 +2,7 @@
 title: Undo and Redo
 page_title: Undo and Redo | UI for WinForms Documentation
 description: Undo and Redo
-slug: winforms/diagram-(beta)/features/undo-and-redo
+slug: winforms/diagram/features/undo-and-redo
 tags: undo,and,redo
 published: True
 position: 3
@@ -70,7 +70,7 @@ Telerik Diagramming Framework exposes a set of commands that allow you to easily
         __DiagramCommands.Redo__ commands. Please keep in mind that in order to use those commands for reverting back and forward
         __RadDiagram__ operations, you need to explicitly set the diagram as the target of the commands.
 
->note For a full list of the __DiagramCommands__ , please refer to the[Commands]({%slug winforms/diagram-(beta)/features/commands%})tutorial.
+>note For a full list of the __DiagramCommands__ , please refer to the[Commands]({%slug winforms/diagram/features/commands%})tutorial.
 >
 #_[C#] Undo/Redo_
 
