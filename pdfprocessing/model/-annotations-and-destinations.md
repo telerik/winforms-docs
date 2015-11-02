@@ -5,7 +5,7 @@ description:  Annotations and Destinations
 slug: winforms/pdfprocessing/model/-annotations-and-destinations
 tags: annotations,and,destinations
 published: True
-position: 6
+position: 7
 ---
 
 #  Annotations and Destinations

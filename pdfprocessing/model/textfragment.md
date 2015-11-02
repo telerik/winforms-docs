@@ -5,7 +5,7 @@ description: TextFragment
 slug: winforms/pdfprocessing/model/textfragment
 tags: textfragment
 published: True
-position: 2
+position: 3
 ---
 
 # TextFragment

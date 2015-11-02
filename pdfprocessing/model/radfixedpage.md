@@ -5,7 +5,7 @@ description: RadFixedPage
 slug: winforms/pdfprocessing/model/radfixedpage
 tags: radfixedpage
 published: True
-position: 1
+position: 2
 ---
 
 # RadFixedPage

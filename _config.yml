@@ -389,6 +389,27 @@ navigation:
     pdfprocessing:
         title: PdfProcessing 
         position: 32
+    pdfprocessing/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility 
+        position: 1
+    pdfprocessing/model:
+        title: Model
+        position: 3
+    pdfprocessing/formats-and-conversion:
+        title: Formats and Conversion
+        position: 4
+    pdfprocessing/formats-and-conversion/pdf:
+        title: Pdf
+        position: 0	
+    pdfprocessing/editing:
+        title: Editing
+        position: 5
+    pdfprocessing/concepts:
+        title: Concepts
+        position: 6
+    pdfprocessing/how-to:
+        title: How To
+        position: 7		
     pdfviewer:
         title: PdfViewer
         position: 33
