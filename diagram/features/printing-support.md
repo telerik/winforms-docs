@@ -12,18 +12,12 @@ position: 5
 
 
 
-__RadDiagram__ provides options to print its content by using a 
-        [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%}).
+__RadDiagram__ provides options to print its content by using a [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%}).
       
 
 ## RadDiagram Print Support
 
-__RadDiagram__ has two public methods available for printing - __Print()__ and __PrintPreview()__. 
-          The first method will directly send a print job to the default printer with the settings currently saved in the __PrintStyle__ property. This method has one overload available which can show a system PrintDialog with the available printers and their options.#_[C#] Print_
-
-	
-
-
+__RadDiagram__ has two public methods available for printing - __Print()__ and __PrintPreview()__. The first method will directly send a print job to the default printer with the settings currently saved in the __PrintStyle__ property. This method has one overload available which can show a system PrintDialog with the available printers and their options. 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=Print}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=Print}} 
@@ -41,15 +35,9 @@ __RadDiagram__ has two public methods available for printing - __Print()__ and _
         '
 ````
 
-{{endregion}} 
+{{endregion}}  
 
-
-
-
-The other available method is __PrintPreview()__, which opens  [RadPrintPreviewDialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%}).  #_[C#] PrintPreview_
-
-	
-
+The other available method is __PrintPreview()__, which opens  [RadPrintPreviewDialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%}).   
 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=PrintPreview}} 
@@ -85,12 +73,10 @@ In order to modify it, you can change some or all of the following properties:
 * __LineStroke__ - this property is of type *Brush* and it specifies how the PagesPreview canvas outline is painted.
             
 
-* __LineStrokeDashArray__ - this property gets or sets a collection of *Double* values that indicate the pattern
-              of dashes and gaps that is used to outline the DiagramElement.__BackgroundPageGrid__.
+* __LineStrokeDashArray__ - this property gets or sets a collection of *Double* values that indicate the pattern of dashes and gaps that is used to outline the DiagramElement.__BackgroundPageGrid__.
             
 
-* __LineStrokeThickness__ - this property is of type double and it gets or sets the thickness of the 
-              DiagramElement.__BackgroundPageGrid__.
+* __LineStrokeThickness__ - this property is of type double and it gets or sets the thickness of the DiagramElement.__BackgroundPageGrid__.
             
 
 * __PageSize__ - controls the size of the DiagramElement.__BackgroundPageGrid__.
@@ -100,4 +86,6 @@ In order to modify it, you can change some or all of the following properties:
 >
 
 
-If you place shapes on different pages, these pages will be printed as well:![diagram-features-printing-support 003](images/diagram-features-printing-support003.png)![diagram-features-printing-support 004](images/diagram-features-printing-support004.png)
+If you place shapes on different pages, these pages will be printed as well:
+![diagram-features-printing-support 003](images/diagram-features-printing-support003.png)
+![diagram-features-printing-support 004](images/diagram-features-printing-support004.png)

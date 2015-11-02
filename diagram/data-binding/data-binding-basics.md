@@ -12,8 +12,7 @@ position: 0
 
 
 
-In this article you can check how to data bind __RadDiagram__. To make data binding work, minimally you must assign the
-        __DataSource__ property of __RadDiagram__ and the member properties explained below.
+In this article you can check how to data bind __RadDiagram__. To make data binding work, minimally you must assign the __DataSource__ property of __RadDiagram__ and the member properties explained below.
 
 ## 
 
@@ -59,12 +58,7 @@ In this article you can check how to data bind __RadDiagram__. To make data bind
 * __ConnectionSourceConnectorMember__ – set this to the name of the field that will be used as connector for the source shape for a connection.
             
 
-* __ConnectionTargetConnectorMember__ – set this to the name of the field that will be used as connector for the target shape for a connection.
-            #_[C#] Bind to DataSet_
-
-	
-
-
+* __ConnectionTargetConnectorMember__ – set this to the name of the field that will be used as connector for the target shape for a connection. 
 
 {{source=..\SamplesCS\Diagram\DiagramDataBinding.cs region=DataTable}} 
 {{source=..\SamplesVB\Diagram\DiagramDataBinding.vb region=DataTable}} 

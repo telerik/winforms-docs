@@ -12,8 +12,7 @@ position: 0
 
 
 
-__RadDiagram__ provides a powerful set of __RoutedUICommands__ that help you 
-        work with your __RadDiagram__ and its items easily and build better MVVM applications.
+__RadDiagram__ provides a powerful set of __RoutedUICommands__ that help you work with your __RadDiagram__ and its items easily and build better MVVM applications.
 
 ## RadDiagram Commands
 
@@ -76,9 +75,7 @@ The static __DiagramCommands__ class defines the following __RoutedUICommands__:
 * __SelectAll__- Selects all shapes in the diagram.
             
 
-* __Nudge__- Moves selected item/s in a specific direction. 
-              You can pass more specifics about the nudge operation through the __CommandParameter__.
-            This parameter can be a single string representing the direction of the nudge:
+* __Nudge__- Moves selected item/s in a specific direction. You can pass more specifics about the nudge operation through the __CommandParameter__. This parameter can be a single string representing the direction of the nudge:
 
 * __Left__
 
@@ -86,24 +83,16 @@ The static __DiagramCommands__ class defines the following __RoutedUICommands__:
 
 * __Up__
 
-* __Down__It can also be a string in the form of __"direction; amount"__, the 
-                  __'direction'__ being a value from the above list of direction strings. The __'amount'__  options are:
+* __Down__ - it can also be a string in the form of __"direction; amount"__, the __'direction'__ being a value from the above list of direction strings. The __'amount'__  options are:
                
 
-* __Small__ - if the RadDiagram.__IsSnapToGridEnabled__ property is set to *true*
-                  then this amount would mean that the nudge should happen once to the appointed direction using the SnapX/Y value as a step. The snap settings can
-                  be applied in the __RadDiagram__ definition. If the RadDiagram.__IsSnapToGridEnabled__ property is
-                  *false*, a *"Small"* amount indicates a step of 5 pixels;
+* __Small__ - if the RadDiagram.__IsSnapToGridEnabled__ property is set to *true* then this amount would mean that the nudge should happen once to the appointed direction using the SnapX/Y value as a step. The snap settings can be applied in the __RadDiagram__ definition. If the RadDiagram.__IsSnapToGridEnabled__ property is *false*, a *"Small"* amount indicates a step of 5 pixels;
                 
 
-* __Large__ - if the RadDiagram.__IsSnapToGridEnabled__ property is set to *true* 
-                  then this amount would mean that the nudge should happen once to the appointed direction using 5*SnapX/Y value as a step. 
-                  The snap settings can be applied in the __RadDiagram__ definition. If the RadDiagram.__IsSnapToGridEnabled__ property
-                  is *false*, a *"Large"* amount indicates a step of 10 pixels;
+* __Large__ - if the RadDiagram.__IsSnapToGridEnabled__ property is set to *true* then this amount would mean that the nudge should happen once to the appointed direction using 5*SnapX/Y value as a step. The snap settings can be applied in the __RadDiagram__ definition. If the RadDiagram.__IsSnapToGridEnabled__ property is *false*, a *"Large"* amount indicates a step of 10 pixels;
                 
 
-* __any number__ - if you provide a number in the __CommandParameter__, this number would indicate the number of
-                  pixels to be used as a step for the Nudge command.
+* __any number__ - if you provide a number in the __CommandParameter__, this number would indicate the number of pixels to be used as a step for the Nudge command.
                 
 
 * __Group__- Groups the selected items.
@@ -114,13 +103,7 @@ The static __DiagramCommands__ class defines the following __RoutedUICommands__:
 
 ## Using Diagram Commands
 
-Below is shown a sample code snippet how you can use some of the Diagram Commands in an application by using the 
-          DiagramElement.__TryExecuteCommand__ method:
-        #_[C#] _
-
-	
-
-
+Below is shown a sample code snippet how you can use some of the Diagram Commands in an application by using the DiagramElement.__TryExecuteCommand__ method: 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=CommandsExample}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=CommandsExample}} 

@@ -12,23 +12,19 @@ position: 4
 
 
 
-__RadDiagram__ gives you the ability to remove __RadDiagramItems__ interactively, 
-        programmatically or with __DiagramCommands__.
+__RadDiagram__ gives you the ability to remove __RadDiagramItems__ interactively, programmatically or with __DiagramCommands__.
 
 ## Removing Items Interactively
 
 You can remove the selected __RadDiagramItems__ by pressing the Delete Key.
 
-Below you can see the result of delete operation over the selected __RadDiagramItems__:![diagram-items-manipulation-removing-items 001](images/diagram-items-manipulation-removing-items001.gif)
+Below you can see the result of delete operation over the selected __RadDiagramItems__:
+
+![diagram-items-manipulation-removing-items 001](images/diagram-items-manipulation-removing-items001.gif)
 
 ## Removing Items in code behind
 
-You can remove __RadDiagramItems__ in code behind by using the RadDiagram.__Items__ 
-        collection and its __Remove()__ or __RemoveAt()__ methods:#_[C#] _
-
-	
-
-
+You can remove __RadDiagramItems__ in code behind by using the RadDiagram.__Items__ collection and its __Remove()__ or __RemoveAt()__ methods: 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=RemoveItems}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=RemoveItems}} 
@@ -46,16 +42,10 @@ You can remove __RadDiagramItems__ in code behind by using the RadDiagram.__Item
 
 {{endregion}} 
 
-
-
-
+ 
 ## Delete with DiagramCommands
 
-You can use the __DiagramCommand__ "Delete" in order to remove the selected __RadDiagramItems__.#_[C#] _
-
-	
-
-
+You can use the __DiagramCommand__ "Delete" in order to remove the selected __RadDiagramItems__. 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=DeleteCommands}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=DeleteCommands}} 

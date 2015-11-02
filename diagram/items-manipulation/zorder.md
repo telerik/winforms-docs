@@ -12,17 +12,11 @@ position: 5
 
 
 
-__RadDiagram__ gives you the ability to control the Z-Order of shapes and connections 
-        by using their __ZIndex__ property. You can also use __RadDiagramCommands__ 
-        in order to increase/decrease __ZIndex__ of the selected __RadDiagramItems__ simultaneously.
+__RadDiagram__ gives you the ability to control the Z-Order of shapes and connections by using their __ZIndex__ property. You can also use __RadDiagramCommands__ in order to increase/decrease __ZIndex__ of the selected __RadDiagramItems__ simultaneously.
 
 ## Using the ZIndex property
 
-Consider the following code:#_[C#] _
-
-	
-
-
+Consider the following code: 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=ZOrder}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=ZOrder}} 
@@ -92,21 +86,13 @@ Consider the following code:#_[C#] _
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 We have reversed the natural ZOrder of the 3 Shapes. ![diagram-items-manipulation-zorder 001](images/diagram-items-manipulation-zorder001.png)
 
 ## Using the RadDiagram Commands
 
-__RadDiagram__ provides a set of predefined commands for manipulating the selected items' ZIndices.
-          "BringForward" and "SendBackward" allow you to increase/decrease the Z-Indices of the selected __RadDiagramItems__.
-          If you need to bring the selected item(s) on top of all other items or below them, you can use "BringToFront" and "SentToback":#_[C#] _
-
-	
-
-
+__RadDiagram__ provides a set of predefined commands for manipulating the selected items' ZIndices. "BringForward" and "SendBackward" allow you to increase/decrease the Z-Indices of the selected __RadDiagramItems__. If you need to bring the selected item(s) on top of all other items or below them, you can use "BringToFront" and "SentToback": 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=CommandZIndex}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=CommandZIndex}} 
@@ -221,12 +207,13 @@ __RadDiagram__ provides a set of predefined commands for manipulating the select
 
 
 
-This way configured, the items in __RadDiagram__ are ordered as illustrated below: ![diagram-items-manipulation-zorder 002](images/diagram-items-manipulation-zorder002.png)
+This way configured, the items in __RadDiagram__ are ordered as illustrated below: 
 
-Here is the result of selecting the first shape and executing the DiagramCommands.__BringToFront__:![diagram-items-manipulation-zorder 003](images/diagram-items-manipulation-zorder003.png)#_[C#] _
+![diagram-items-manipulation-zorder 002](images/diagram-items-manipulation-zorder002.png)
 
-	
+Here is the result of selecting the first shape and executing the DiagramCommands.__BringToFront__:
 
+![diagram-items-manipulation-zorder 003](images/diagram-items-manipulation-zorder003.png) 
 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=BringToFront}} 
@@ -246,15 +233,11 @@ Here is the result of selecting the first shape and executing the DiagramCommand
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 Here is the result of selecting the third shape and executing the DiagramCommands.__SendToBack__:
-        ![diagram-items-manipulation-zorder 004](images/diagram-items-manipulation-zorder004.png)#_[C#] _
 
-	
-
+![diagram-items-manipulation-zorder 004](images/diagram-items-manipulation-zorder004.png) 
 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=SendToBack}} 

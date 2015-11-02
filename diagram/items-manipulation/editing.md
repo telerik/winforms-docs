@@ -12,21 +12,15 @@ position: 6
 
 
 
-__RadDiagram__ gives you the ability to edit the content of its items. 
-      You can double-click items in order to edit them or use 
-      [RadDiagramCommand]({%slug winforms/diagram/features/commands%}).
+__RadDiagram__ gives you the ability to edit the content of its items. You can double-click items in order to edit them or use [RadDiagramCommand]({%slug winforms/diagram/features/commands%}).
 
 ## Enable/Disable Editing
 
-By default, the __RadDiagramItems__ are enabled for editing. In order to disable this functionality,
-        you can use the __IsEditable__ property:
+By default, the __RadDiagramItems__ are enabled for editing. In order to disable this functionality, you can use the __IsEditable__ property:
+
 >caption Fig1. IsEditable
 
-![diagram-items-manipulation-editing 001](images/diagram-items-manipulation-editing001.png)#_[C#] Setting the IsEditable property_
-
-	
-
-
+![diagram-items-manipulation-editing 001](images/diagram-items-manipulation-editing001.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=IsEditable}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=IsEditable}} 
@@ -41,9 +35,7 @@ By default, the __RadDiagramItems__ are enabled for editing. In order to disable
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 ## Start Editing By Using Keyboard
 
@@ -52,8 +44,7 @@ Once the edit behavior is enabled, you can start the editing process by selectin
 
 ## Controlling Editing in Code Behind
 
-In order to start/end editing a __RadDiagramItem__, you can set __IsInEditMode__ property to
-          *true*/*false*.
+In order to start/end editing a __RadDiagramItem__, you can set __IsInEditMode__ property to *true*/*false*.
         
 
 __RadDiagramItem__ also provides four editing events:
@@ -72,15 +63,11 @@ __RadDiagramItem__ also provides four editing events:
 
 ## Edit using Commands
 
-__RadDiagram__ provides three predefined commands for editing the selected item - __BeginEdit__,
-          __CommitEdit__ and __CancelEdit__.
+__RadDiagram__ provides three predefined commands for editing the selected item - __BeginEdit__, __CommitEdit__ and __CancelEdit__.
+
 >caption Fig2. Editing by commands
 
-![diagram-items-manipulation-editing 002](images/diagram-items-manipulation-editing002.gif)#_[C#] Edit commands_
-
-	
-
-
+![diagram-items-manipulation-editing 002](images/diagram-items-manipulation-editing002.gif) 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=EditCommands}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EditCommands}} 

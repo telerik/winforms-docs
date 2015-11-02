@@ -12,8 +12,7 @@ position: 2
 
 
 
-__RadDiagram__ gives you the ability to select __RadDiagramItems__ in code behind,
-        interactively or by invoking [RadDiagramCommand]({%slug winforms/diagram/features/commands%}).
+__RadDiagram__ gives you the ability to select __RadDiagramItems__ in code behind, interactively or by invoking [RadDiagramCommand]({%slug winforms/diagram/features/commands%}).
 
 The following tutorial will show you how to select items, work with different selection modes and set up selection commands and events.
 
@@ -27,12 +26,10 @@ __RadDiagram__ has four different __Selection Modes__ which determine the way a 
 * __None__ - the user cannot select any items.
             
 
-* __Extended__ - the user can select/deselect multiple items using the combinations (Ctrl Key+ Mouse Left Button) 
-              or (Ctr + Key A). 
+* __Extended__ - the user can select/deselect multiple items using the combinations (Ctrl Key+ Mouse Left Button) or (Ctr + Key A). 
             
 
-* __Multiple__ - the user can select/deselect multiple items using only left button or the combinations
-              (Ctrl Key+ Mouse Left Button) and (Ctr + Key A).
+* __Multiple__ - the user can select/deselect multiple items using only left button or the combinations (Ctrl Key+ Mouse Left Button) and (Ctr + Key A).
             
 
 In order to change the way the Selection Adorner Rectangle behaves, you can use the __RectSelectionMode__ property:
@@ -41,16 +38,14 @@ In order to change the way the Selection Adorner Rectangle behaves, you can use 
             
 
 * __Partial__ - the user selects all items that are completely or partially covered by the selection rectangle.
-            ![diagram-items-manipulation-selection 004](images/diagram-items-manipulation-selection004.gif)
+
+![diagram-items-manipulation-selection 004](images/diagram-items-manipulation-selection004.gif)
 
 ## Selection in code behind
 
-In order to select items programmatically, you only need to set their __IsSelected__ property to
-        *true*:![diagram-items-manipulation-selection 001](images/diagram-items-manipulation-selection001.png)#_[C#] _
+In order to select items programmatically, you only need to set their __IsSelected__ property to *true*:
 
-	
-
-
+![diagram-items-manipulation-selection 001](images/diagram-items-manipulation-selection001.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=IsSelected}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=IsSelected}} 
@@ -99,15 +94,11 @@ In order to select items programmatically, you only need to set their __IsSelect
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 When multiple items are selected, they are automatically added in one Selection Adorner: 
-        ![diagram-items-manipulation-selection 002](images/diagram-items-manipulation-selection002.png)#_[C#] _
 
-	
-
+![diagram-items-manipulation-selection 002](images/diagram-items-manipulation-selection002.png) 
 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=MultipleSelection}} 
@@ -163,12 +154,9 @@ When multiple items are selected, they are automatically added in one Selection 
 
 
 
-You may also want to use the __SelectedIndex__ or the __SelectedItem__ property
-        of the __RadDiagram__:![diagram-items-manipulation-selection 003](images/diagram-items-manipulation-selection003.png)#_[C#] _
+You may also want to use the __SelectedIndex__ or the __SelectedItem__ property of the __RadDiagram__:
 
-	
-
-
+![diagram-items-manipulation-selection 003](images/diagram-items-manipulation-selection003.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=SelectedIndex}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=SelectedIndex}} 
@@ -190,14 +178,7 @@ You may also want to use the __SelectedIndex__ or the __SelectedItem__ property
 
 ## Select All
 
-You are able to select all __RadDiagramItems__ interactively (by Mouse or by pressing Ctrl + A),
-          programmatically (via the __SelectAll__ method), set the __IsSelected__ property 
-          to every Shape and Connection. Below is demonstrated how you can use the __SelectAll__ command:
-        #_[C#] _
-
-	
-
-
+You are able to select all __RadDiagramItems__ interactively (by Mouse or by pressing Ctrl + A), programmatically (via the __SelectAll__ method), set the __IsSelected__ property to every Shape and Connection. Below is demonstrated how you can use the __SelectAll__ command: 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=SelectAllCommand}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=SelectAllCommand}} 
@@ -213,10 +194,7 @@ You are able to select all __RadDiagramItems__ interactively (by Mouse or by pre
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 ## Selections events
 
 __RadDiagram__ provides the following selection events:

@@ -96,11 +96,7 @@ You can access the __BackgroundGrid__ properties:
             
 >caption Figure. 3 LineStroke
 
-![diagram-backgroundgrid 005](images/diagram-backgroundgrid005.png)#_[C#] Set the LineStroke_
-
-	
-
-
+![diagram-backgroundgrid 005](images/diagram-backgroundgrid005.png)  
 
 {{source=..\SamplesCS\Diagram\DiagramBackgroundGrid.cs region=LineStroke}} 
 {{source=..\SamplesVB\Diagram\DiagramBackgroundGrid.vb region=LineStroke}} 
@@ -117,10 +113,7 @@ You can access the __BackgroundGrid__ properties:
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 * __LineStrokeThickness__: this property is of type *double* and it gets or sets the thickness of the __RadDiagram__ background grid lines.
             
 >caption Figure. 4 LineStrokeThickness

@@ -12,51 +12,32 @@ position: 6
 
 
 
-Routing is a mechanism using algorithms to make sure that the connections don't cross each 
-      other while building links/paths between the shapes.
+Routing is a mechanism using algorithms to make sure that the connections don't cross each other while building links/paths between the shapes.
 
 ## Default Routing
 
-Routing in __RadDiagram__ is only available if the RadDiagram.__RouteConnections__ 
-        property is set to *true*. Please note that its default value is False and you need to explicitly declare you want to enable the routing features.
+Routing in __RadDiagram__ is only available if the RadDiagram.__RouteConnections__ property is set to *true*. Please note that its default value is False and you need to explicitly declare you want to enable the routing features.
 >caption Fig.1 Routing
 
 ![diagram-features-routing 001](images/diagram-features-routing001.gif)
 
-The routing algorithm can be parametrized using the DiagramConstants.__RoutingGridSize__ 
-          constant that has a default value of 40 units. This value indicates the size of the cells of the underlying 
-          grid used by the algorithm:
+The routing algorithm can be parametrized using the DiagramConstants.__RoutingGridSize__ constant that has a default value of 40 units. This value indicates the size of the cells of the underlying grid used by the algorithm:
         
 
-* A bigger value will decrease the time to compute the optimal path and will diminish the possible wiggling
-            of the connection path due to obstacles (other shapes). On the other hand, a bigger value will not necessarily 
-            lead to an optimal solution in certain circumstances. That is, if your diagram involves a lot of shapes and a 
-            high complexity a bigger __RoutingGridSize__ will not find a path through the maze of shapes.
+* A bigger value will decrease the time to compute the optimal path and will diminish the possible wiggling of the connection path due to obstacles (other shapes). On the other hand, a bigger value will not necessarily lead to an optimal solution in certain circumstances. That is, if your diagram involves a lot of shapes and a high complexity a bigger __RoutingGridSize__ will not find a path through the maze of shapes.
 
-* A smaller value will increase the time tom compute the optimal path and increase the set of 
-            possible solutions for the path constraints. On the other hand, a small value leads usually to a 
-            lot of stairs/wiggling in the connection's path.
+* A smaller value will increase the time tom compute the optimal path and increase the set of possible solutions for the path constraints. On the other hand, a small value leads usually to a lot of stairs/wiggling in the connection's path.
 
 ## OrgTreeRouter
 
-The __OrgTreeRouter__ is a __LayoutType__ - based router that performs
-          a hierarchical routing between parent and child shape. When a shape is being dragged, it removes only the crossings
-          between the connection and its source and target shapes. It should be used when following conditions are satisfied:
+The __OrgTreeRouter__ is a __LayoutType__ - based router that performs a hierarchical routing between parent and child shape. When a shape is being dragged, it removes only the crossings between the connection and its source and target shapes. It should be used when following conditions are satisfied:
         
 
 * The __IsConnectorsManipulationEnabled__  is set to *false*.
 
-* The __LayoutType__ is among the following 5 - *TipOverTree*, 
-            *TreeDown*, *TreeUp*, *TreeLeft*,
-              *TreeRight*.
+* The __LayoutType__ is among the following 5 - *TipOverTree*, *TreeDown*, *TreeUp*, *TreeLeft*, *TreeRight*.
 
-In order to use the __OrgTreeRouter__, you have to instantiate an __OrgTreeRouter__ 
-        object and set it as current __Router__ of the __RadDiagram__ via the
-          __RoutingService__:#_[C#] OrgTreeRouter_
-
-	
-
-
+In order to use the __OrgTreeRouter__, you have to instantiate an __OrgTreeRouter__ object and set it as current __Router__ of the __RadDiagram__ via the __RoutingService__: 
 
 {{source=..\SamplesCS\Diagram\DiagramRouting.cs region=OrgTreeRouter}} 
 {{source=..\SamplesVB\Diagram\DiagramRouting.vb region=OrgTreeRouter}} 
@@ -86,9 +67,7 @@ In order to use the __OrgTreeRouter__, you have to instantiate an __OrgTreeRoute
 
 
 
-The __TreeLayoutType__ points to the type of Layout you wish to use. The routing logic is based 
-          on this __LayoutType__. The __ConnectionOuterSpacing__ is the minimum margin
-          between the Parent/Child Shape and the connection.
+The __TreeLayoutType__ points to the type of Layout you wish to use. The routing logic is based on this __LayoutType__. The __ConnectionOuterSpacing__ is the minimum margin between the Parent/Child Shape and the connection.
         
 
 Below you can see these shapes after *TreeDown* Layout operation performed on the __RadDiagram__.
@@ -98,17 +77,9 @@ Below you can see these shapes after *TreeDown* Layout operation performed on th
 
 ## OrgTreeRouter: TipOverTreeRouter
 
-When the __TreeLayoutType__ is set to *TipOverTree*, the __OrgTreeRouter__ 
-        uses a special kind of router - the __TipOverTreeRouter__. It produces best visual results when a custom connectors are added in
-        the bottom-left part of the shapes.
+When the __TreeLayoutType__ is set to *TipOverTree*, the __OrgTreeRouter__ uses a special kind of router - the __TipOverTreeRouter__. It produces best visual results when a custom connectors are added in the bottom-left part of the shapes.
 
-Here is a sample code snippet demonstrating how to create and configure __TreeLayoutSettings__ and create and assign a 
-        __Router__ to be the default one.
-        #_[C#] TipOverTreeRouter_
-
-	
-
-
+Here is a sample code snippet demonstrating how to create and configure __TreeLayoutSettings__ and create and assign a __Router__ to be the default one. 
 
 {{source=..\SamplesCS\Diagram\DiagramRouting.cs region=TipOverTreeRouter}} 
 {{source=..\SamplesVB\Diagram\DiagramRouting.vb region=TipOverTreeRouter}} 
@@ -164,8 +135,7 @@ The following screenshot illustrates the result:
 
 ## AStarRouter
 
-As the name suggests, this is a connection router that uses a version of the A* search algorithm to find the best route between two points.
-        There are several ways to parameterize the algorithm:
+As the name suggests, this is a connection router that uses a version of the A* search algorithm to find the best route between two points. There are several ways to parameterize the algorithm:
 
 * __Using Diagram Constants__
 
@@ -180,19 +150,16 @@ As the name suggests, this is a connection router that uses a version of the A* 
 
 * __Using properties of the router__
 
-* __AvoidShapes__ - boolean property controlling the logic that makes the connections go around the shapes. This property is 
-                  *false* by default.
+* __AvoidShapes__ - boolean property controlling the logic that makes the connections go around the shapes. This property is *false* by default.
                 
 >caption Fig.5 AvoidShapes
 
 ![diagram-features-routing 005](images/diagram-features-routing005.png)
 
-* __WallOptimization__- boolean property controlling router optimization logic. If you set this property to
-                  *true* the router will try to optimize some of the steps so that there are the least corners.
+* __WallOptimization__- boolean property controlling router optimization logic. If you set this property to *true* the router will try to optimize some of the steps so that there are the least corners.
                 
 
-* __Using virtual methods__If the customization provided by these properties does not cover your requirements, you can create your custom router deriving from ours.
-            This will allow you to customize the algorithm by overriding the following methods:
+* __Using virtual methods__ - if the customization provided by these properties does not cover your requirements, you can create your custom router deriving from ours. This will allow you to customize the algorithm by overriding the following methods:
 
 * __GetSiblingNodes__ - this method receives the current state and the end target and should return the next possible nodes
                 
@@ -201,12 +168,10 @@ As the name suggests, this is a connection router that uses a version of the A* 
 >
 
 
-* __CalculateWallPenalty__ - this method calculates the penalty for the node that we give it. By default
-                  if the node is inside a shape we return the penaltyBaseValue which is the heuristic distance to the endpoint.
+* __CalculateWallPenalty__ - this method calculates the penalty for the node that we give it. By default if the node is inside a shape we return the penaltyBaseValue which is the heuristic distance to the endpoint.
                 
 
-* __CalculateBendAlteration__ - this method calculates the bend alteration. By default the 
-                  result value can be positive - a penalty for changing the direction or negative - a bonus for keeping the direction.
+* __CalculateBendAlteration__ - this method calculates the bend alteration. By default the result value can be positive - a penalty for changing the direction or negative - a bonus for keeping the direction.
                 
 
 >note If the source and target positions of your connections are Auto this router will adjust them so that the path is minimal.
@@ -215,18 +180,13 @@ As the name suggests, this is a connection router that uses a version of the A* 
 
 ## InflatedRectRouter
 
-The __InflatedRectRouter__ is a simple connection router whose goal is to create a route with least bends.
-        This router doesn't try go around shapes except the start and end shape.
+The __InflatedRectRouter__ is a simple connection router whose goal is to create a route with least bends. This router doesn't try go around shapes except the start and end shape.
 
 ## Custom Router
 
 In the following section we will create a custom Router. This way we will be able to set the routing points of our Polyline Connections.
 
-Let's first create some items:#_[C#] PopulateItems_
-
-	
-
-
+Let's first create some items: 
 
 {{source=..\SamplesCS\Diagram\DiagramRouting.cs region=PopulateItems}} 
 {{source=..\SamplesVB\Diagram\DiagramRouting.vb region=PopulateItems}} 
@@ -286,15 +246,8 @@ Let's first create some items:#_[C#] PopulateItems_
 ````
 
 {{endregion}} 
-
-
-
-
-Now we have to create class that implements the __IRouter__ interface and override the GetRoutePoints() method:#_[C#] CustomRouter_
-
-	
-
-
+ 
+Now we have to create class that implements the __IRouter__ interface and override the GetRoutePoints() method: 
 
 {{source=..\SamplesCS\Diagram\DiagramRouting.cs region=CustomRouter}} 
 {{source=..\SamplesVB\Diagram\DiagramRouting.vb region=CustomRouter}} 
@@ -339,18 +292,11 @@ Now we have to create class that implements the __IRouter__ interface and overri
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 Please note that we only have to add in the list the route points, no need to add the start and the end point of the connection.   
         
 
-The final step is to make our router the current one of the __RadDiagram__. This is done via Diagram's Routing Service:#_[C#] Set CustomRouter_
-
-	
-
-
+The final step is to make our router the current one of the __RadDiagram__. This is done via Diagram's Routing Service: 
 
 {{source=..\SamplesCS\Diagram\DiagramRouting.cs region=SetCustomRouter}} 
 {{source=..\SamplesVB\Diagram\DiagramRouting.vb region=SetCustomRouter}} 

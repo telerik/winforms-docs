@@ -22,19 +22,12 @@ To localize __RadDiagramRibbonBar__ to display control text and messages in a sp
 1. Start by creating a descendant of the __DiagramRibbonBarLocalizationProvider__ class.
             
 
-1. Override the __GetLocalizedString(string id)__ method and provide a translation for the texts.
-              If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base
-              __GetLocalizedString__ method in the default clause of the switch statement in the example.
-            Below is a sample implementation of a custom localization provider:#_[C#] _
+1. Override the __GetLocalizedString(string id)__ method and provide a translation for the texts. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the default clause of the switch statement in the example. Below is a sample implementation of a custom localization provider: 
 
-	
+	{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=RibbonUILocalization}} 
+	{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=RibbonUILocalization}} 
 
-
-
-{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=RibbonUILocalization}} 
-{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=RibbonUILocalization}} 
-
-````C#
+	````C#
         
         public class MyDiagramRibbonBarLocalizationProvider : DiagramRibbonBarLocalizationProvider
         {
@@ -51,8 +44,8 @@ To localize __RadDiagramRibbonBar__ to display control text and messages in a sp
                 }
             }
         }
-````
-````VB.NET
+	````
+	````VB.NET
 
     Public Class MyDiagramRibbonBarLocalizationProvider
         Inherits DiagramRibbonBarLocalizationProvider
@@ -69,38 +62,33 @@ To localize __RadDiagramRibbonBar__ to display control text and messages in a sp
     End Class
 
     '
-````
+	````
 
-{{endregion}} 
-
-
-
-
-1. To apply the custom localization provider, instantiate and assign it to the current localization provider:
-            #_[C#] _
-
-	
+	{{endregion}} 
 
 
 
-{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=SetRibbonUILocalization}} 
-{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=SetRibbonUILocalization}} 
 
-````C#
+1. To apply the custom localization provider, instantiate and assign it to the current localization provider: 
+
+	{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=SetRibbonUILocalization}} 
+	{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=SetRibbonUILocalization}} 
+
+	````C#
             
             DiagramRibbonBarLocalizationProvider.CurrentProvider = new MyDiagramRibbonBarLocalizationProvider();
-````
-````VB.NET
+	````
+	````VB.NET
 
         DiagramRibbonBarLocalizationProvider.CurrentProvider = New MyDiagramRibbonBarLocalizationProvider()
 
         '
-````
+	````
 
-{{endregion}} 
+	{{endregion}} 
 
 
-![diagram-localization 001](images/diagram-localization001.png)
+	![diagram-localization 001](images/diagram-localization001.png)
 
 ## Localizing SettingsPane
 
@@ -110,19 +98,12 @@ To localize __RadDiagramSettingsPane__ to display control text and messages in a
 1. Start by creating a descendant of the __DiagramSettingsPaneLocalizationProvider__ class.
             
 
-1. Override the __GetLocalizedString(string id)__ method and provide a translation for the texts.
-              If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base
-              __GetLocalizedString__ method in the default clause of the switch statement in the example.
-            #_[C#] _
+1. Override the __GetLocalizedString(string id)__ method and provide a translation for the texts. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the default clause of the switch statement in the example. 
 
+	{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=SettingsPaneLocalization}} 
+	{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=SettingsPaneLocalization}} 
 	
-
-
-
-{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=SettingsPaneLocalization}} 
-{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=SettingsPaneLocalization}} 
-
-````C#
+	````C#
         
         public class MyDiagramSettingsPaneLocalizationProvider : DiagramSettingsPaneLocalizationProvider
         {
@@ -143,8 +124,8 @@ To localize __RadDiagramSettingsPane__ to display control text and messages in a
                 }
             }
         }
-````
-````VB.NET
+	````
+	````VB.NET
 
     Public Class MyDiagramSettingsPaneLocalizationProvider
         Inherits DiagramSettingsPaneLocalizationProvider
@@ -165,34 +146,29 @@ To localize __RadDiagramSettingsPane__ to display control text and messages in a
     End Class
 
     '
-````
+	````
 
-{{endregion}} 
-
-
-
-
-1. To apply the custom localization provider, instantiate and assign it to the current localization provider:
-            #_[C#] _
-
-	
+	{{endregion}} 
 
 
 
-{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=SetSettingsPaneLocalization}} 
-{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=SetSettingsPaneLocalization}} 
 
-````C#
+1. To apply the custom localization provider, instantiate and assign it to the current localization provider: 
+
+	{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=SetSettingsPaneLocalization}} 
+	{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=SetSettingsPaneLocalization}} 
+
+	````C#
             
             DiagramSettingsPaneLocalizationProvider.CurrentProvider = new MyDiagramSettingsPaneLocalizationProvider();
-````
-````VB.NET
+	````
+	````VB.NET
 
         DiagramSettingsPaneLocalizationProvider.CurrentProvider = New MyDiagramSettingsPaneLocalizationProvider()
         '
-````
+	````
 
-{{endregion}} 
+	{{endregion}} 
 
 
-![diagram-localization 002](images/diagram-localization002.png)
+	![diagram-localization 002](images/diagram-localization002.png)

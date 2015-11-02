@@ -16,13 +16,7 @@ This article will walk you through the functionality and the main features of th
 
 ## Overview
 
-__RadDiagramContainerShape__ allows you to place multiple shapes into one container shape. 
-          __RadDiagramContainerShapes__ are much like groups , a way to logically combine other shapes but add to this the
-          capability to have a visual wrapper including a header. You can drag shapes in and out of a container shape at run-time and take advantage
-          of its built-in auto-sizing logic that can extend the size of a container to wrap a shape. __RadDiagram__
-          provides a visual feedback when a shape is being dragged over a  __RadDiagramContainerShape__ and even if part 
-          of the shape is outside the bounds of the container, the framework internally handles the drop and expands the size of the container
-          to place the shape inside the content area of the container.
+__RadDiagramContainerShape__ allows you to place multiple shapes into one container shape. __RadDiagramContainerShapes__ are much like groups , a way to logically combine other shapes but add to this the capability to have a visual wrapper including a header. You can drag shapes in and out of a container shape at run-time and take advantage of its built-in auto-sizing logic that can extend the size of a container to wrap a shape. __RadDiagram__ provides a visual feedback when a shape is being dragged over a  __RadDiagramContainerShape__ and even if part  of the shape is outside the bounds of the container, the framework internally handles the drop and expands the size of the container to place the shape inside the content area of the container.
         
 >caption Fig.1 Illustration of the ContainerShape auto-sizing capabilities
 
@@ -30,18 +24,13 @@ __RadDiagramContainerShape__ allows you to place multiple shapes into one contai
 
 A container can be connected and handled like other shapes.
 
->note  __RadDiagramContainerShape__ derives from the __RadDiagramShapeBase__ class 
-            and that is why it exposes similar properties to those of the __RadDiagramShape__ . To get familiar with the __RadDiagramShape__ features and properties, please refer to the[Shapes]({%slug winforms/diagram/diagram-items/shapes%})article.
+>note  __RadDiagramContainerShape__ derives from the __RadDiagramShapeBase__ class and that is why it exposes similar properties to those of the __RadDiagramShape__ . To get familiar with the __RadDiagramShape__ features and properties, please refer to the [Shapes]({%slug winforms/diagram/diagram-items/shapes%}) article.
 >
 
 
 ## Setting a header
 
-__RadDiagramContainerShape__ header is controlled via the __Content__ property:#_[C#] ContainerShape's content_
-
-	
-
-
+__RadDiagramContainerShape__ header is controlled via the __Content__ property: 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=ContainersContent}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=ContainersContent}} 
@@ -71,24 +60,16 @@ __RadDiagramContainerShape__ header is controlled via the __Content__ property:#
 
 ## Edit Mode
 
-By default you can edit the header of the __RadDiagramContainerShape__ out-of-the-box by double-clicking on the container 
-          or by hitting F2. If you'd like to disable the editing functionality, you can set the __IsEditable__ property to 
-          *false* .
+By default you can edit the header of the __RadDiagramContainerShape__ out-of-the-box by double-clicking on the container  or by hitting F2. If you'd like to disable the editing functionality, you can set the __IsEditable__ property to *false*.
 
-          You can manually put the __RadDiagramContainerShape__ in edit mode by setting its __IsInEditMode__ property to 
-          *true*. This is the property that gets and sets the edit mode of the container.
+You can manually put the __RadDiagramContainerShape__ in edit mode by setting its __IsInEditMode__ property to *true*. This is the property that gets and sets the edit mode of the container.
         
 
 ## Populating with data
 
-The main purpose of the __RadDiagramContainerShape__ is to allow you to drop shapes on it thus grouping them in one container. 
-        This is why dragging and dropping shapes onto the container is the main approach for populating its __Items__ collection.
+The main purpose of the __RadDiagramContainerShape__ is to allow you to drop shapes on it thus grouping them in one container. This is why dragging and dropping shapes onto the container is the main approach for populating its __Items__ collection.
 
-You can also populate it manually in code-behind:#_[C#] RadDiagramContainerShape.Items_
-
-	
-
-
+You can also populate it manually in code-behind: 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=ContainerItems}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=ContainerItems}} 
@@ -136,8 +117,7 @@ You can also populate it manually in code-behind:#_[C#] RadDiagramContainerShape
 
 
 
->note Note that it is important to add the __RadDiagramShape__ to __RadDiagram__ before adding it 
-            to the __RadDiagramContainerShape__ .
+>note Note that it is important to add the __RadDiagramShape__ to __RadDiagram__ before adding it to the __RadDiagramContainerShape__ .
 >
 
 >caption Fig.3 RadDiagramContainerShape.Items
@@ -146,8 +126,7 @@ You can also populate it manually in code-behind:#_[C#] RadDiagramContainerShape
 
 ## Container Bounds
 
-You can get the bounds of the __RadDiagramContainerShape__ through the __Bounds__ property,
-          which is of type __Telerik.Windows.Diagrams.Core.Rect__ and it gets the width, height and location of the container’s bounds.
+You can get the bounds of the __RadDiagramContainerShape__ through the __Bounds__ property, which is of type __Telerik.Windows.Diagrams.Core.Rect__ and it gets the width, height and location of the container’s bounds.
 
 ## Collapsible ContainerShapes
 
@@ -178,15 +157,10 @@ Below you can find a list of the interactions supported by the __RadDiagramConta
 * __Resizing__ - you can resize only the __RadDiagramContainerShape__ without affecting its children size.
             
 
-* __Cut and Copy__ - these clipboard operations work only on the __RadDiagramContainerShape__. 
-              The shapes inside the container won't be cut or copied. You can find more information about the clipboard operations supported in the 
-              __RadDiagram__ in the 
-              [Clipboard operations]({%slug winforms/diagram/items-manipulation/clipboard-operations%}).
+* __Cut and Copy__ - these clipboard operations work only on the __RadDiagramContainerShape__. The shapes inside the container won't be cut or copied. You can find more information about the clipboard operations supported in the __RadDiagram__ in the [Clipboard operations]({%slug winforms/diagram/items-manipulation/clipboard-operations%}).
             
 
->note If you do wish to resize and cut or copy both the container and its children simultaneously, 
-              you can do so by dragging a selection rectangle around the container (instead of just clicking-selecting the container). 
-              This selection will contain both the container and the children thus allowing you to perform the aforementioned actions on all items at the same time.
+>note If you do wish to resize and cut or copy both the container and its children simultaneously, you can do so by dragging a selection rectangle around the container (instead of just clicking-selecting the container). This selection will contain both the container and the children thus allowing you to perform the aforementioned actions on all items at the same time.
 >
 
 

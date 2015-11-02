@@ -12,8 +12,7 @@ position: 3
 
 
 
-__Telerik Diagramming Framework__ exposes Undo/Redo functionality. The framework allows you to keep track of the
-      changes made in a Diagramming structure and trigger an undo or redo action using commands, methods or keyboard shortcuts.
+__Telerik Diagramming Framework__ exposes Undo/Redo functionality. The framework allows you to keep track of the changes made in a Diagramming structure and trigger an undo or redo action using commands, methods or keyboard shortcuts.
 
 ## Undo/Redo methods
 
@@ -23,11 +22,7 @@ __RadDiagram__ class exposes two methods that allow you to take advantage of the
             
 
 * __Redo()__: this method reapplies the last operation that was undone in the __RadDiagram__.
-            #_[C#] Undo/Redo_
-
-	
-
-
+            
 
 {{source=..\SamplesCS\Diagram\DiagramUndoRedo.cs region=UndoRedo}} 
 {{source=..\SamplesVB\Diagram\DiagramUndoRedo.vb region=UndoRedo}} 
@@ -65,18 +60,11 @@ __RadDiagram__ class exposes two methods that allow you to take advantage of the
 
 ## Undo/Redo commands
 
-Telerik Diagramming Framework exposes a set of commands that allow you to easily implement __RadDiagram__ interaction 
-        logic in MVVM solutions. In order to trigger the Undo/Redo functionality you can use the __DiagramCommands.Undo__ and
-        __DiagramCommands.Redo__ commands. Please keep in mind that in order to use those commands for reverting back and forward
-        __RadDiagram__ operations, you need to explicitly set the diagram as the target of the commands.
+Telerik Diagramming Framework exposes a set of commands that allow you to easily implement __RadDiagram__ interaction logic in MVVM solutions. In order to trigger the Undo/Redo functionality you can use the __DiagramCommands.Undo__ and __DiagramCommands.Redo__ commands. Please keep in mind that in order to use those commands for reverting back and forward __RadDiagram__ operations, you need to explicitly set the diagram as the target of the commands.
 
->note For a full list of the __DiagramCommands__ , please refer to the[Commands]({%slug winforms/diagram/features/commands%})tutorial.
+>note For a full list of the __DiagramCommands__ , please refer to the [Commands]({%slug winforms/diagram/features/commands%})tutorial.
 >
-#_[C#] Undo/Redo_
-
-	
-
-
+ 
 
 {{source=..\SamplesCS\Diagram\DiagramUndoRedo.cs region=CommandsUndoRedo}} 
 {{source=..\SamplesVB\Diagram\DiagramUndoRedo.vb region=CommandsUndoRedo}} 
@@ -98,8 +86,7 @@ Telerik Diagramming Framework exposes a set of commands that allow you to easily
 
 ## UndoRedoService
 
-You can further extend the undo/redo functionality of your Diagramming solution using the RadDiagram.__UndoRedoService__ 
-        property. It exposes the following properties:
+You can further extend the undo/redo functionality of your Diagramming solution using the RadDiagram.__UndoRedoService__ property. It exposes the following properties:
 
 * __RedoStack__: use it to get the __IEnumerable__ collection of redid actions.
             
@@ -127,8 +114,7 @@ The __UndoRedoService__ also exposes undo/redo methods:
 * __Undo()__: this method reverts the last operation in the __RadDiagram__.
             
 
-* __ExecuteCommand()__: this method allows you to execute a custom command. It takes as an argument a
-              __Telerik.Windows.Diagrams.Core.ICommand__ command and it also allows you to pass a state parameter as its second argument.
+* __ExecuteCommand()__: this method allows you to execute a custom command. It takes as an argument a __Telerik.Windows.Diagrams.Core.ICommand__ command and it also allows you to pass a state parameter as its second argument.
             
 
 ## Keyboard support

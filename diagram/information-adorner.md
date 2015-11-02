@@ -12,18 +12,12 @@ position: 6
 
 
 
-__RadDiagram__ shows information tool-tips that appear below the manipulation 
-        adorner when you resize, rotate or drag a shape or group of shapes and connections.
+__RadDiagram__ shows information tool-tips that appear below the manipulation adorner when you resize, rotate or drag a shape or group of shapes and connections.
       
 
 ## 
 
-__RadDiagram__ uses the __ItemInformationAdorner__ to visualize information 
-          regarding the position, size and rotation angle of its shapes. #_[C#] Enable Information Adorner_
-
-	
-
-
+__RadDiagram__ uses the __ItemInformationAdorner__ to visualize information regarding the position, size and rotation angle of its shapes.  
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=EnableInformationAdorner}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EnableInformationAdorner}} 
@@ -42,22 +36,14 @@ __RadDiagram__ uses the __ItemInformationAdorner__ to visualize information
 
 
 
-Fig.1 visualizes the X and Y component of the current position of the shape when moving. It also visualizes the angle that the shape is rotated to and
-        the current Width and Height of the corresponding shape when resizing.
+Fig.1 visualizes the X and Y component of the current position of the shape when moving. It also visualizes the angle that the shape is rotated to and the current Width and Height of the corresponding shape when resizing.
 >caption Fig.1 Information Adorner
 
 ![diagram-information-adorner 001](images/diagram-information-adorner001.gif)
 
 ## Custom ItemInformationAdorner 
 
-__ItemInformationAdorner__ can be customized in order to display additional elements, e.g. a button. To achieve it,
-          you should create a derivative of the __Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner__ class and
-        override its __CreateChildElements__ method. Here is demonstrated a sample code snippet:
-        #_[C#] Custom Information Adorner_
-
-	
-
-
+__ItemInformationAdorner__ can be customized in order to display additional elements, e.g. a button. To achieve it, you should create a derivative of the __Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner__ class and override its __CreateChildElements__ method. Here is demonstrated a sample code snippet: 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=CustomItemInformationAdorner}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=CustomItemInformationAdorner}} 
@@ -123,12 +109,7 @@ __ItemInformationAdorner__ can be customized in order to display additional elem
 
 
 
-Now, you should apply the custom __ItemInformationAdorner__ to __DiagramElement__:
-        #_[C#] Apply Custom Information Adorner_
-
-	
-
-
+Now, you should apply the custom __ItemInformationAdorner__ to __DiagramElement__: 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=AssignCustomItemInformationAdorner}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=AssignCustomItemInformationAdorner}} 
