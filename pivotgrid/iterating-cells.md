@@ -10,17 +10,7 @@ position: 15
 
 # Iterating Cells
 
-
-
-## 
-
-To iterate thought the cells in __RadPivotGrid__ you should first retrieve all row and column groups. This will allow you to create a
-          loop and get all cells values for example:
-        #_C#_
-
-	
-
-
+To iterate thought the cells in __RadPivotGrid__ you should first retrieve all row and column groups. This will allow you to create a loop and get all cells values for example:
 
 {{source=..\SamplesCS\PivotGrid\IteratingCells.cs region=IterateCells}} 
 {{source=..\SamplesVB\PivotGrid\PivotIteratingCells.vb region=IterateCells}} 
@@ -57,17 +47,9 @@ To iterate thought the cells in __RadPivotGrid__ you should first retrieve all r
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 Using the above approach you can determine if a cell is selected or programmatically select it as well:
-        #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\PivotGrid\IteratingCells.cs region=select}} 
 {{source=..\SamplesVB\PivotGrid\PivotIteratingCells.vb region=select}} 
@@ -98,7 +80,4 @@ Using the above approach you can determine if a cell is selected or programmatic
                     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

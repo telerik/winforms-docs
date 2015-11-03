@@ -18,16 +18,11 @@ To localize __RadPivotGrid__ to display any text and messages in a specific lang
 
 * Create a custom __PivotGridLocalizationProvider__ class.
 
-* Override the GetLocalizedString(string id) method and provide a translation for the label and user messages.
-            If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base
-            __GetLocalizedString__ method in the default clause of the switch statement in the example.
-            
+* Override the GetLocalizedString(string id) method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base  __GetLocalizedString__ method in the default clause of the switch statement in the example.
 
-Below is a sample implementation of an English localization provider:#_[C#] Localizing RadPivotGrid Strings_
+Below is a sample implementation of an English localization provider:
 
-	
-
-
+#### Localizing RadPivotGrid Strings
 
 {{source=..\SamplesCS\PivotGrid\Localization\Localization1.cs region=CustomProvider}} 
 {{source=..\SamplesVB\PivotGrid\Localization\PivotGridLocalization.vb region=CustomProvider}} 
@@ -652,16 +647,11 @@ End Class
 '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
-
-
-To apply the custom localization provider, instantiate and assign it to the current localization provider: #_[C#] Assigning the Current Localization Provider_
-
-	
-
-
+#### Assigning the Current Localization Provider
 
 {{source=..\SamplesCS\PivotGrid\Localization\Localization1.cs region=LocalizePivot}} 
 {{source=..\SamplesVB\PivotGrid\Localization\PivotGridLocalization.vb region=LocalizePivot}} 
@@ -674,10 +664,6 @@ To apply the custom localization provider, instantiate and assign it to the curr
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 The code provided above illustrates the approach to be used to localize the __RadPivotGrid__ and is not intended as a full translation.
-        

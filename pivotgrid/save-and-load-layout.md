@@ -10,19 +10,9 @@ position: 23
 
 # Save and Load Layout
 
+__RadPivotGrid__ supports save and load layout functionality, which gives your applications the opportunity to preserve user  __RadPivotGrid__ settings such as group descriptors and restore them later. Those layout settings are written in a xml file.
 
-
-## 
-
-__RadPivotGrid__ supports save and load layout functionality, which gives your applications the opportunity to preserve user 
-          __RadPivotGrid__ settings such as group descriptors and restore them later. Those layout settings are written in a xml file.
-        
-
-Here is a sample demonstrating how you can implement a Save Layout button event handler:#_[C#]_
-
-	
-
-
+Here is a sample demonstrating how you can implement a Save Layout button event handler:
 
 {{source=..\SamplesCS\PivotGrid\PivotGridSaveLoadLayout.cs region=SaveLayout}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridSaveLoadLayout.vb region=SaveLayout}} 
@@ -56,16 +46,9 @@ Here is a sample demonstrating how you can implement a Save Layout button event 
     End Sub
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-The code snippet below demonstrates how you can implement a Load Layout button event handler: #_[C#]_
-
-	
-
-
+The code snippet below demonstrates how you can implement a Load Layout button event handler: 
 
 {{source=..\SamplesCS\PivotGrid\PivotGridSaveLoadLayout.cs region=LoadLayout}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridSaveLoadLayout.vb region=LoadLayout}} 
@@ -99,7 +82,4 @@ The code snippet below demonstrates how you can implement a Load Layout button e
     End Sub
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
