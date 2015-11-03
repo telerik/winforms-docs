@@ -10,13 +10,9 @@ position: 0
 
 # FixedContentEditor
 
-
-
 __FixedContentEditor__ is utility class that is intended to simplify the process of creating and editing the content of an __IContentRootElement__ such as [RadFixedPage]({%slug winforms/pdfprocessing/model/radfixedpage%}).
-      
 
 The current article will get you familiar with the following topics:
-      
 
 * [Creating FixedContentEditor](#creating-fixedcontenteditor)
 
@@ -29,11 +25,8 @@ The current article will get you familiar with the following topics:
 ## Creating FixedContentEditor
 
 __FixedContentEditor__ is always associated to a single __IContentRootElement__ which it takes as a constructor parameter when it is created. __Example 1__ shows how you can create an editor.
-        #_[C#] Example 1: Create FixedContentEditor_
 
-	
-
-
+#### Example 1: Create FixedContentEditor
 
 {{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_0}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_0}} 
@@ -47,20 +40,13 @@ __FixedContentEditor__ is always associated to a single __IContentRootElement__ 
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 The editor maintains an internal [Position]({%slug winforms/pdfprocessing/concepts/position%}) inside the content root element. When a new element is created, its position is being set to the current position of the editor. The initial position of the editor can be specified when it is created.
-        
 
 __Example 2__ demonstrates how you can create а FixedContentEditor with specific initial position.
-        #_[C#] Example 2: Create FixedContentEditor with Specific IPosition_
 
-	
-
-
+#### Example 2: Create FixedContentEditor with Specific IPosition
 
 {{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_1}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_1}} 
@@ -74,24 +60,17 @@ __Example 2__ demonstrates how you can create а FixedContentEditor with specifi
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Inserting Elements
 
 Composing a [RadFixedDocument]({%slug winforms/pdfprocessing/model/radfixeddocument%}) normally requires to create all elements and specify exactly how they should look. The __FixedContentEditor__ takes care of most things for you. This section explains how you can add different type of elements.
-        
 
 ### Inserting Text
 
-Inserting а [TextFragment]({%slug winforms/pdfprocessing/model/textfragment%}) can be done with the __public void DrawText(string text)__ method. __Example 3__ inserts a fragment with content "First text fragment.".
-            #_[C#] Example 3: Insert TextFragment_
+Inserting а [TextFragment]({%slug winforms/pdfprocessing/model/textfragment%}) can be done with the __public void DrawText(string text)__ method. __Example 3__ inserts a fragment with content "First text fragment".
 
-	
-
-
+#### Example 3: Insert TextFragment
 
 {{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_2}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_2}} 
@@ -105,10 +84,7 @@ Inserting а [TextFragment]({%slug winforms/pdfprocessing/model/textfragment%}) 
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 __Figure 1__ shows the result of __Example 3__.
             
@@ -119,11 +95,8 @@ __Figure 1__ shows the result of __Example 3__.
 ### Inserting Paragraph
 
 __Example 4__ shows how you can use the __Block__ object to draw a paragraph.
-            #_[C#] Example 4: Insert Paragraph_
 
-	
-
-
+#### Example 4: Insert Paragraph
 
 {{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_3}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_3}} 
@@ -143,10 +116,7 @@ __Example 4__ shows how you can use the __Block__ object to draw a paragraph.
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 __Figure 2__ shows the result of __Example 4__.
             
@@ -157,11 +127,9 @@ __Figure 2__ shows the result of __Example 4__.
 >tip Building a paragraph with the FixedContentEditor is much simpler than creating TextFragments yourself. The[Block]({%slug winforms/pdfprocessing/editing/block%})object would flow the content of a paragraph for you if this is necessary.
 >
 
-
 ### Inserting Image
 
-__FixedContentEditor__ provides several overloads for inserting an [Image]({%slug winforms/pdfprocessing/model/image%}).
-            
+__FixedContentEditor__ provides several overloads for inserting an [Image]({%slug winforms/pdfprocessing/model/image%}).  
 
 __public void DrawImage(Stream stream);__
 
@@ -176,11 +144,8 @@ __public void DrawImage(ImageSource source, Size size);__
 __public void DrawImage(ImageSource source, double width, double height);__
 
 __Example 5__ shows how you can add an image created from a Stream.
-            #_[C#] Example 5: Insert Image_
 
-	
-
-
+#### Example 5: Insert Image
 
 {{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_4}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_4}} 
@@ -199,9 +164,7 @@ __Example 5__ shows how you can add an image created from a Stream.
         '
 ````
 
-{{endregion}} 
-
-
+{{endregion}}
 
 >caption Figure 3: Image Result
 
@@ -210,29 +173,20 @@ __Example 5__ shows how you can add an image created from a Stream.
 ### Inserting Geometries
 
 The following methods can be used to insert different [Geometries]({%slug winforms/pdfprocessing/concepts/geometry%}) in the document:
-            
 
 __public void DrawLine(Point point1, Point point2)__: Inserts a line between the specified points.
-            
 
 __public void DrawRectangle(Rect rectangle)__: Inserts a rectangle.
-            
 
 __public void DrawEllipse(Point center, double radiusX, double radiusY)__: Inserts an ellipse.
-            
 
 __public void DrawCircle(Point center, double radius)__: Inserts a circle.
-            
 
 __public void DrawPath(PathGeometry pathGeometry)__: Inserts a custom path geometry.
-            
 
 __Example 6__ shows how you can add an ellipse using one of FixedContentEditor's methods.
-            #_[C#] Example 6: Insert Ellipse_
 
-	
-
-
+#### Example 6: Insert Ellipse
 
 {{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_5}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_5}} 
@@ -246,34 +200,23 @@ __Example 6__ shows how you can add an ellipse using one of FixedContentEditor's
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ### Inserting Clipping
 
 __FixedContentEditor__ exposes a __Clipping__ property which defines the [Clipping]({%slug winforms/pdfprocessing/concepts/clipping%}) to be used for the inserted content elements. The following methods can be used to push and pop clippings:
-            
 
 __public IDisposable PushClipping(GeometryBase clip)__: Inserts a new clipping defined from the specified geometry.
-            
 
 __public IDisposable PushClipping(Rect clip)__: Inserts a new clipping defined from the specified rectangle.
-            
 
 __public Clipping PopClipping()__: Pops the last clipping, which was inserted with the editor.
-            
 
 When the returned __IDisposable__ object from the __PushClipping()__ method is disposed, the clipping is popped from the clippings in the editor.
-            
 
 When a new clipping is pushed, it is set as a clipping to the current clipping in the editor. __Example 7__ shows how a clipping can be pushed:
-            #_[C#] Example 7: Push Clipping_
 
-	
-
-
+#### Example 7: Push Clipping
 
 {{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_6}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_6}} 
@@ -305,10 +248,7 @@ When a new clipping is pushed, it is set as a clipping to the current clipping i
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 __Figure 4__ shows the result of __Example 7__.
             
@@ -318,15 +258,11 @@ __Figure 4__ shows the result of __Example 7__.
 
 ### Inserting Table
 
-__FixedContentEditor__ exposes __DrawTable()__ method which allows you to easily 
-              position and draw tabular data in the PDF document. You can specify the size you need to fit the table in by using the 
-              appropriate overload of the __DrawTable()__ method.
+__FixedContentEditor__ exposes __DrawTable()__ method which allows you to easily position and draw tabular data in the PDF document. You can specify the size you need to fit the table in by using the appropriate overload of the __DrawTable()__ method.
 
-__Example 8__ generates a table and draws it in some fixed size.#_[C#] Example 8: Insert Table_
+__Example 8__ generates a table and draws it in some fixed size.
 
-	
-
-
+#### Example 8: Insert Table
 
 {{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_8}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_8}} 
@@ -378,7 +314,6 @@ __Example 8__ generates a table and draws it in some fixed size.#_[C#] Example 8
 
 {{endregion}} 
 
-
 ![pdf Processing-editing-Fixed Content Editor 006](images/pdfProcessing-editing-FixedContentEditor006.png)
 
 More detailed information about tables is available in the [Table]({%slug winforms/pdfprocessing/editing/table%}) documentation article.
@@ -389,11 +324,8 @@ The [Position]({%slug winforms/pdfprocessing/concepts/position%})  property expo
         
 
 The code in __Example 8__ shows how to manipulate the position of the inserted content elements and __Figure 5__ shows the result of the code.
-        #_[C#] Example 8: Scale and Rotate Content_
 
-	
-
-
+#### Example 8: Scale and Rotate Content
 
 {{source=..\SamplesCS\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.cs region=radpdfprocessing-editing-fixedcontenteditor_7}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_7}} 
@@ -420,9 +352,7 @@ The code in __Example 8__ shows how to manipulate the position of the inserted c
         '
 ````
 
-{{endregion}} 
-
-
+{{endregion}}
 
 >caption Figure 5: Positioning Result
 
@@ -431,28 +361,20 @@ The code in __Example 8__ shows how to manipulate the position of the inserted c
 ## Changing Current Styles
 
 __FixedContentEditor__ has some properties and methods that affect how it will be rendered:
-        
 
 * __TextProperties and GraphicProperties__: Responsible for the properties of text and graphics. For more information see the text and graphic properties article.
-              
 
 * __SaveTextProperties()__: Saves the TextProperties. It returns an IDisposable object which calls RestoreTextProperties() when disposed and can be used in using statement.
-            
 
 * __RestoreTextProperties()__: Restores the TextProperties.
-            
 
 * __SaveGraphicProperties()__: Saves the GraphicProperties. It returns an IDisposable object which calls RestoreGraphicProperties() when disposed and can be used in using statement.
-            
 
 * __RestoreGraphicProperties()__: Restores the GrahpicProperties.
-            
 
 * __SaveProperties()__: Saves both the text and the graphic properties. It returns an IDisposable object which calls RestoreProperties() when disposed and can be used in using statement.
-            
 
 * __RestoreProperties()__: Restores both text and graphic properties.
-            
 
 # See Also
 

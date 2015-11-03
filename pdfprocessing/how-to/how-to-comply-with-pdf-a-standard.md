@@ -12,20 +12,9 @@ position: 0
 
 
 
-[
-              PDF/A
-            ](
-            http://en.wikipedia.org/?title=PDF/A
-          )
-      is an ISO-standardized version of the PDF (Portable Document Format) specialized 
-      for the digital preservation of electronic documents.
+[PDF/A](http://en.wikipedia.org/?title=PDF/A) is an ISO-standardized version of the PDF (Portable Document Format) specialized for the digital preservation of electronic documents. 
 
-PDF/A standard is designed to use the PDF format for achieving documents.
-        This means that the compliant documents should contain all the information necessary
-        for displaying the document embedded in the file. This includes all content, fonts, and color information.
-        A PDF/A document is not permitted to rely on information from external sources. Other key elements to
-        PDF/A conformance include:
-      
+PDF/A standard is designed to use the PDF format for achieving documents. This means that the compliant documents should contain all the information necessary for displaying the document embedded in the file. This includes all content, fonts, and color information. A PDF/A document is not permitted to rely on information from external sources. Other key elements to PDF/A conformance include:
 
 * Audio and video content is forbidden.
 
@@ -47,56 +36,40 @@ PDF/A standard is designed to use the PDF format for achieving documents.
 
 There are three major versions of the standard – PDF/A-1 (2005), PDF/A-2 (2011), PDF/A-3 (2013).
 
-* __PDF/A-1__ PDF/A-1 standard uses the PDF Reference 1.4 and specifies two levels of compliance.
-            
+### PDF/A-2
 
-* __PDF/A-1b__Its goal is to ensure reliable reproduction of the visual appearance of the document.
-
-* __PDF/A-1a__Its objective is to ensure that documents content can be searched and re-purposed. 
-                This compliance level has some additional requirements:
-
-* Document structure must be included.
-
-* Tagged PDF.
-
-* Unicode character maps
-
-* Language specification.
-
->note  __RadPdfProcessing__ does not support PDF/A-1a level of compliance.
->
-
-
-* __PDF/A-2__Pdf/A-2 standard uses the PDF Reference 1.7. In addition it has the following features:
+Pdf/A-2 standard uses the PDF Reference 1.7. In addition it has the following features:
 
 * Support for JPEG2000 image compression.
+* Support for transparency effects and layers.
 
-* Support for transparency effects and layers.It defines three conformance levels.
+It defines three conformance levels.
 
-* __PDF/A-2a__Corresponding to the PDF/A-1a
+__PDF/A-2a__
 
->note  __RadPdfProcessing__ does not support PDF/A-2a level of compliance.
->
+Corresponding to the PDF/A-1a
 
+>__RadPdfProcessing__ does not support PDF/A-2a level of compliance.
 
-* __PDF/A-2b__This level corresponds to the PDF/A-1b.
+__PDF/A-2b__
 
-* __PDF/A-2u__Similar to PDF/A-2b level with the additional requirement that all text in the document has Unicode mapping.
+This level corresponds to the PDF/A-1b.
 
-* __PDF/A-3__PDF/A-3 differs from PDF/A-2 in only one regard – it allows embedding of arbitrary file formats into the PDF file.
+__PDF/A-2u__
+
+Similar to PDF/A-2b level with the additional requirement that all text in the document has Unicode mapping.
+
+### PDF/A-3
+
+PDF/A-3 differs from PDF/A-2 in only one regard – it allows embedding of arbitrary file formats into the PDF file.
 
 ## How to Conform to PDF/A Standard
 
-The __PdfFormatProvider__ class allows to export a __RadFixedDocument__
-          to PDF and specify some specific settings when doing so. More information about the available export settings can be
-          found in the  [Settings article]({%slug winforms/pdfprocessing/formats-and-conversion/pdf/settings%}).
+The __PdfFormatProvider__ class allows to export a __RadFixedDocument__ to PDF and specify some specific settings when doing so. More information about the available export settings can be found in the  [Settings article]({%slug winforms/pdfprocessing/formats-and-conversion/pdf/settings%}).
 
-To comply with one of the versions of the standard you need to specify __ComplianceLevel__ different from 
-        *None*. The snippet in Example 1 shows how this can be achieved.#_[C#] Example 1_
+To comply with one of the versions of the standard you need to specify __ComplianceLevel__ different from *None*. The snippet in Example 1 shows how this can be achieved.
 
-	
-
-
+#### Example 1
 
 {{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-complianceLevel}} 
 {{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-complianceLevel}} 
@@ -117,18 +90,12 @@ To comply with one of the versions of the standard you need to specify __Complia
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+__RadPdfProcessing__  will do the rest for you. If you also specify encryption for the document, this setting will be ignored since the standard does not allow documents to be encrypted.
 
-
-
-__RadPdfProcessing__  will do the rest for you. If you also specify encryption for the document,
-          this setting will be ignored since the standard does not allow documents to be encrypted.
-
->note PDF/A standard requires documents to contain all fonts used in them. __RadPdfProcessing__ does not support embedding of the standard 14 fonts used in PDF documents,
-            so using them will prevent the document from complying with the standard. More information about font embedding is available in the[Fonts]({%slug winforms/pdfprocessing/concepts/fonts%})article.
+>note PDF/A standard requires documents to contain all fonts used in them. __RadPdfProcessing__ does not support embedding of the standard 14 fonts used in PDF documents, so using them will prevent the document from complying with the standard. More information about font embedding is available in the[Fonts]({%slug winforms/pdfprocessing/concepts/fonts%})article.
 >
-
 
 # See Also
 

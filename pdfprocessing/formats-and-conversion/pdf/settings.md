@@ -29,8 +29,6 @@ __Example 1__ shows how you can create a __PdfImportSettings__ object and assign
 {{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_0}}
 {{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_0}}
 
-
-
 {{endregion}}
 
 {{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_0Handler}} 
@@ -54,31 +52,25 @@ __Example 1__ shows how you can create a __PdfImportSettings__ object and assign
 ## Export Settings
 
 In order to modify the way content is exported you can set the __ExportSettings__ property of __PdfFormatProvider__. These are the modification options you can use:
-        
 
 __IsEncrypted__
 
 This property specifies if the document should be encrypted. The default value is False.
-        
 
 >note This setting is ignored when __ComplianceLevel__ differs from None as PDF/A compliant documents do not allow encryption.
 >
 
-
 __UserPassword__
 
 The password to be used if the document is encrypted. The default password is empty string.
-        
 
 __ImageQuality__
 
 The ImageQuality property specifies the quality with which images are exported to PDF. The higher the quality, the bigger the PDF document. Possible values for this property are High, Medium, and Low. The default quality is Medium.
-        
 
 __ComplianceLevel__
 
-Specifies the PDF/A compliance level. It can have one of the following values:        
-        
+Specifies the PDF/A compliance level. It can have one of the following values:     
 
 * __None__: Specify no compliance level.
             
@@ -101,11 +93,8 @@ Specifies the PDF/A compliance level. It can have one of the following values:
 The default value is *None*. For more information on PDF/A compliance check the PDF/A Compliance article.
 
 __Example 2__ shows ow you can create a __PdfExportSettings__ object and assign it to a PdfFormatProvider.
-        #_[C#] Example 2: Export Settings_
 
-	
-
-
+#### Example 2: Export Settings
 
 {{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_1}} 
 {{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_1}} 
@@ -132,10 +121,7 @@ __Example 2__ shows ow you can create a __PdfExportSettings__ object and assign 
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 # See Also
 

@@ -10,10 +10,7 @@ position: 5
 
 # TableCell
 
-
-
 __TableCell__ class represents a single cell in a [Table]({%slug winforms/pdfprocessing/editing/table%}). Cells are added to a [TableRow]({%slug winforms/pdfprocessing/editing/tablerow%}) instance in the rows collection of a table. The main purpose of the cell is to contain, organize and layout tabular data.
-      
 
 * [Inserting a TableCell](#inserting-a-tablecell)
 
@@ -24,14 +21,10 @@ __TableCell__ class represents a single cell in a [Table]({%slug winforms/pdfpro
 ## Inserting a TableCell
 
 In order to add a cell to а __Тable__ you should add it in the __TableCellCollection__ of a __TableRow__.
-        
 
 The code snippet in __Example 1__ shows how to create a table with a single row and add a cell in the first row.
-        #_[C#] Example 1: Create TableCell_
 
-	
-
-
+#### Example 1: Create TableCell
 
 {{source=..\SamplesCS\PdfProcessing\Editing\TableCell1.cs region=radpdfprocessing-editing-tablecell_0}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\TableCell1.vb region=radpdfprocessing-editing-tablecell_0}} 
@@ -48,22 +41,15 @@ The code snippet in __Example 1__ shows how to create a table with a single row 
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Adding Cell Content
 
 Using __TableCell__'s __Blocks__ property you can easily add one or several __IBlockElement__ instances to the cell.
-        
 
 __Example 2__ shows how to create a cell with a single [Block]({%slug winforms/pdfprocessing/editing/block%}) in it.
-        #_[C#] Example 2: Add Content to TableCell_
 
-	
-
-
+#### Example 2: Add Content to TableCell
 
 {{source=..\SamplesCS\PdfProcessing\Editing\TableCell1.cs region=radpdfprocessing-editing-tablecell_1}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\TableCell1.vb region=radpdfprocessing-editing-tablecell_1}} 
@@ -78,40 +64,27 @@ __Example 2__ shows how to create a cell with a single [Block]({%slug winforms/p
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Modifying a TableCell
 
 You can easily change the cell's presentation by using the following properties:
-        
 
 * __RowSpan__: Defines the number or rows that the TableCell instance should occupy.
-            
 
 * __ColumnSpan__: Defines the number of columns that the TableCell instance should occupy.
-            
 
 * __Padding__: Specifies the distances between the cells borders inner contour and the cell content. If the value is null, the cell will use the padding from the table's DefaultCellProperties.
-            
 
 * __Borders__: Specifies the borders of the cells. If the value is null the cell uses the value from table's DefaultCellProperties.
-            
 
 * __Background__: Specifies the background of the cell. If null the cell uses the background from table's DefaultCellProperties.
-            
 
 * __PreferredWidth__: Specifies the preferred width of the cell. The final width of the cell may be bigger of the set value in case when other cell from the same column requires bigger PreferredWidth.
-            
 
 __Example 3__ demonstrates how to set locally the cell properties to a specific cell. This helps achieve different appearance for this cell by changing its borders and background. Additionally the cell will span onto two rows and two columns.
-        #_[C#] Example 2: Change TableCell Appearance_
 
-	
-
-
+#### Example 2: Change TableCell Appearance
 
 {{source=..\SamplesCS\PdfProcessing\Editing\TableCell1.cs region=radpdfprocessing-editing-tablecell_2}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\TableCell1.vb region=radpdfprocessing-editing-tablecell_2}} 
@@ -130,10 +103,7 @@ __Example 3__ demonstrates how to set locally the cell properties to a specific 
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 The result from __Example 3__ may be observed on __Figure 1__.
         

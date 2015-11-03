@@ -10,14 +10,9 @@ position: 4
 
 # Table
 
-
-
-__Table__ is а utility class that helps you easily create tabular data content. All you need to do is to define the table content and pass a Table instance to a 
-        [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}) or a [RadFixedDocumentEditor]({%slug winforms/pdfprocessing/editing/radfixeddocumenteditor%}). From then on these editors are responsible for positioning, measuring, drawing and splitting the table onto pages.
-      ![pdfprocessing-editing-table 001](images/pdfprocessing-editing-table001.png)
+__Table__ is а utility class that helps you easily create tabular data content. All you need to do is to define the table content and pass a Table instance to a [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}) or a [RadFixedDocumentEditor]({%slug winforms/pdfprocessing/editing/radfixeddocumenteditor%}). From then on these editors are responsible for positioning, measuring, drawing and splitting the table onto pages. <br>![pdfprocessing-editing-table 001](images/pdfprocessing-editing-table001.png)
 
 This article aims to present the table related API in __RadPdfProcessing__. It contains the following sections:
-      
 
 * [Defining Table Content](#defining-table-content)
 
@@ -32,14 +27,10 @@ This article aims to present the table related API in __RadPdfProcessing__. It c
 ## Defining Table Content
 
 Each table contains a series of [TableRow]({%slug winforms/pdfprocessing/editing/tablerow%}) instances each of which contains a series of [TableCell]({%slug winforms/pdfprocessing/editing/tablecell%}) instances. In order to define a simple table you need to generate the table cells and add some content to them.
-        
 
-__Example 1__ shows how to generate a simple table with two rows and three columns with some sample text in each table cell.
-        #_[C#] Create Simple Table_
+__Example 1__ shows how to generate a simple table with two rows and three columns with some sample text in each table cell. 
 
-	
-
-
+#### Create Simple Table
 
 {{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_0}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_0}} 
@@ -72,10 +63,7 @@ __Example 1__ shows how to generate a simple table with two rows and three colum
             '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 The result table is shown in __Figure 1__ below.
         
@@ -86,31 +74,22 @@ The result table is shown in __Figure 1__ below.
 ## Using DefaultCellProperties
 
 If you want to apply default styling to all the cells in a table you can use Table's __DefaultCellProperties__ property. This allows to easily modify the default cell presentation.
-        
 
-* __Padding__: - specifies the algorithm which shall be used to layout table contents.
-              There are two options available in the __TableLayoutType__ enumeration:
-            
+* __Padding__: - specifies the algorithm which shall be used to layout table contents. There are two options available in the __TableLayoutType__ enumeration:
 
 * __TableLayoutType.AutoFit__ – The table width fits the content unless the needed width is bigger than the available measuring width.
 
 * __TableLayoutType.FixedWidth__ – The table width always fits the available measuring width.
 
 * __LayoutType__: Specifies the distances between the inner cell border contour and the cell content.
-            
 
 * __Borders__: Property of type __TableCellBorders__ which specifies the borders of a single cell. The available borders are left, right, top, bottom, diagonal up and diagonal down.
-            
 
 * __Background__: Specifies the background of the cell.
-            
 
 __Еxample 2__ shows how to use the __DefaultCellProperties__ of a table
-        #_[C#] Example 2: Use DefaultCellProperties of Table_
 
-	
-
-
+#### Example 2: Use DefaultCellProperties of Table
 
 {{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_1}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_1}} 
@@ -151,10 +130,7 @@ __Еxample 2__ shows how to use the __DefaultCellProperties__ of a table
             '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 The result of the snippet in __Example 2__ is demonstrated on __Figure 2__.
         
@@ -165,32 +141,22 @@ The result of the snippet in __Example 2__ is demonstrated on __Figure 2__.
 ## Modifying a Table
 
 There are several factors that affect tables measuring calculations. Some of them are listed and explained bellow:
-        
 
 * __Margin__: Specifies the distances between the table borders outline and the rest of the document's content.
-            
 
 * __Padding__: Set through the TableCell's Padding property, it specifies the distances between cell borders inner contour and the cell content.
-            
 
 * __BorderSpacing__: Specifies the distance between all the borders in the table. This distance is measured differently depending on the __BorderCollapse__ option.
-            
 
 * __BorderCollapse__: Specifies the way the border spacing calculations should be done. There are two options:
-            
 
 * __Collapse__: The distance between borders is measured from the middle lines of the borders.
-                
 
 * __Separate__: The distance between borders is measured from the outer border contour.
-                
 
 The next example aims to demonstrate how border calculations occur with different __BorderCollapse__ option. The code in __Example 3__ creates an empty table and sets default cell padding and red table border with thickness 10 to it.
-        #_[C#] Example 3: Create Table with Red Border_
 
-	
-
-
+#### Example 3: Create Table with Red Border
 
 {{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_2}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_2}} 
@@ -209,17 +175,11 @@ The next example aims to demonstrate how border calculations occur with differen
             '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+__Example 4__ adds a single row with two cells to the table from __Example 3__. The first cell has green border with thickness 5, while the second cell has blue border with thickness 3. 
 
-
-
-__Example 4__ adds a single row with two cells to the table from __Example 3__. The first cell has green border with thickness 5, while the second cell has blue border with thickness 3.
-        #_[C#] Example 2: Example 4: Add Green and Blue Cells_
-
-	
-
-
+#### Example 2: Example 4: Add Green and Blue Cells
 
 {{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_3}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_3}} 
@@ -252,17 +212,11 @@ __Example 4__ adds a single row with two cells to the table from __Example 3__. 
             '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+__Figure 3__ shows the table from Example 3 and 4 with BorderCollapse property set to Collapse - all borders are drawn so that their middle lines coincide. 
 
-
-
-__Figure 3__ shows the table from Example 3 and 4 with BorderCollapse property set to Collapse - all borders are drawn so that their middle lines coincide.
-        #_[C#] Example 5: Collapse Border_
-
-	
-
-
+#### Example 5: Collapse Border
 
 {{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_4}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_4}} 
@@ -284,11 +238,8 @@ __Figure 3__ shows the table from Example 3 and 4 with BorderCollapse property s
 ![pdfprocessing-editing-table 004](images/pdfprocessing-editing-table004.png)
 
 __Figure 4__ shows the same table with BorderCollapse property set to Separate - all borders are drawn so that their outer contour coincide.
-        #_[C#] Example 6: Separate Border_
 
-	
-
-
+#### Example 6: Separate Border
 
 {{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_5}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_5}} 
@@ -303,8 +254,6 @@ __Figure 4__ shows the same table with BorderCollapse property set to Separate -
 
 {{endregion}} 
 
-
-
 >caption Figure 4: Separate Border
 
 ![pdfprocessing-editing-table 005](images/pdfprocessing-editing-table005.png)
@@ -312,24 +261,16 @@ __Figure 4__ shows the same table with BorderCollapse property set to Separate -
 ## Drawing Table with RadFixedDocumentEditor
 
 When a table is generated it may be inserted in the PDF document using the __RadFixedDocumentEditor__'s __InsertTable()__ method. This way the table is inserted in the document and split onto pages if necessary. Additionally you may specify the table __LayoutType__ using RadFixedDocumentEditor's __TableProperties__. There are two available options in the __TableLayoutType__ enumeration:
-        
 
 * __FixedWidth__: Table width is always equal to the available page width.
-            
 
 * __AutoFit__: The table auto fits its width based on the content.
-            
 
-When a table is generated it may be inserted in the PDF document using the __RadFixedDocumentEditor__'s __InsertTable()__ method.
-          This way the table is inserted in the document and split onto pages if necessary.
-        
+When a table is generated it may be inserted in the PDF document using the __RadFixedDocumentEditor__'s __InsertTable()__ method. This way the table is inserted in the document and split onto pages if necessary.
 
 __Example 7__ generates a simple table with two cells.
-        #_[C#] Example 7: Create Table_
 
-	
-
-
+#### Example 7: Create Table
 
 {{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_6}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_6}} 
@@ -364,17 +305,11 @@ __Example 7__ generates a simple table with two cells.
             '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 __Example 8__ inserts the table from __Example 7__ in a RadFixedDocumentEditor and specifies the table layout type to AutoFit.
-        #_[C#] Example 8: Insert AutoFit Table_
 
-	
-
-
+#### Example 8: Insert AutoFit Table
 
 {{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_7}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_7}} 
@@ -391,10 +326,7 @@ __Example 8__ inserts the table from __Example 7__ in a RadFixedDocumentEditor a
             '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 The result is that the table width is exactly as needed for fitting the cells content as visible in __Figure 5__.
         
@@ -403,11 +335,8 @@ The result is that the table width is exactly as needed for fitting the cells co
 ![pdfprocessing-editing-table 006](images/pdfprocessing-editing-table006.png)
 
 Specifying FixedWidth layout option produces different results.
-        #_[C#] Example 9: Insert FixedWidth Table_
 
-	
-
-
+#### Example 9: Insert FixedWidth Table
 
 {{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_8}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_8}} 
@@ -422,9 +351,7 @@ Specifying FixedWidth layout option produces different results.
             '
 ````
 
-{{endregion}} 
-
-
+{{endregion}}
 
 >caption Figure 6: FixedWidth Table
 
@@ -433,18 +360,13 @@ Specifying FixedWidth layout option produces different results.
 ## Drawing Table with FixedContentEditor
 
 When in need of more customization options, you can use the __DrawTable()__ method of __FixedContentEditor__ instead of __RadFixedDocumentEditor__.
-        
 
 >warning FixedContentEditor __does not__ automatically split content into pages as opposed to RadFixedDocumentEditor.
 >
 
-
 __Example 10__ shows how to draw a rotated table with the help of FixedContentEditor.
-        #_[C#] Example 9: Insert FixedWidth Table_
 
-	
-
-
+#### Example 9: Insert FixedWidth Table
 
 {{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_9}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_9}} 
@@ -473,10 +395,7 @@ __Example 10__ shows how to draw a rotated table with the help of FixedContentEd
             '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 As a result on __Figure 7__ you can see a 45-degree rotated table similar to the one on Figure 5.
         
