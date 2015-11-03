@@ -10,41 +10,30 @@ position: 3
 
 # Settings
 
-
-
 __PdfFormatProvider__ provides you with the ability to import/export PDF documents. Additionally, you can take advantage of the import/export settings that give you modification options.
-      
 
 ## Import Settings
 
 You can specify the import settings you wish through the __ImportSettings__ property of __PdfFormatProvider__.The available import settings are these:
-        
 
 __UserPasswordNeeded__
 
 The event is fired when a user password is needed to open the document. The password can be specified in the __PasswordNeededEventArgs.Password__ property.
-        
 
 __Example 1__ shows how you can create a __PdfImportSettings__ object and assign it to a PdfFormatProvider.
-        #_[C#] Example 1: Import Settings_
 
-	
+#### Example 1: Import Settings
 
-#_[C#] Example 1: Import Settings Event Handler_
+#### Example 1: Import Settings Event Handler
 
-	
-
-#_[VB.NET] Example 1: Import Settings_
-
-	
+{{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_0}}
+{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_0}}
 
 
+{{endregion}}
 
-{{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_0}} 
 {{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_0Handler}} 
-{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_0}} 
-
-{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_0Handler}} 
+{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_0Handler}}
 
 ````C#
         private void settings_UserPasswordNeeded(object sender, PasswordNeededEventArgs e)
@@ -59,10 +48,7 @@ __Example 1__ shows how you can create a __PdfImportSettings__ object and assign
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Export Settings
 
