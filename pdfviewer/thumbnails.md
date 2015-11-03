@@ -5,22 +5,16 @@ description: Thumbnails
 slug: winforms/pdfviewer/thumbnails
 tags: thumbnails
 published: True
-position: 6
+position: 8
 ---
 
 # Thumbnails
-
-
 
 RadPdfViewer providers options to display the pdf pages as thumbnails for easier navigation.![pdfviewer-thumbnails 001](images/pdfviewer-thumbnails001.png)
 
 ## Thumbnails API
 
-You can show or hide the thumbnails programmatically with following methods ShowThumbnails, HideThumbnails:#_[C#] _
-
-	
-
-
+You can show or hide the thumbnails programmatically with following methods ShowThumbnails, HideThumbnails:
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ShowHideThumbnails}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ShowHideThumbnails}} 
@@ -37,16 +31,9 @@ You can show or hide the thumbnails programmatically with following methods Show
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-You can customize the size of the thumbnails with __ThumbnailsScaleFactor__ property. This property sets the size of the thumbnails between 0 and 1 where 1 is the page in full size. By default this property is set to 0.15 which means 15% of the normal page size.#_[C#] _
-
-	
-
-
+You can customize the size of the thumbnails with __ThumbnailsScaleFactor__ property. This property sets the size of the thumbnails between 0 and 1 where 1 is the page in full size. By default this property is set to 0.15 which means 15% of the normal page size.
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ThumbnailsScaleFactor}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ThumbnailsScaleFactor}} 
@@ -59,16 +46,9 @@ You can customize the size of the thumbnails with __ThumbnailsScaleFactor__ prop
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-You can customize the width of the thumbnails list with the __ThumbnailListWidth__ property. Default value of this property is 200.#_[C#] _
-
-	
-
-
+You can customize the width of the thumbnails list with the __ThumbnailListWidth__ property. Default value of this property is 200.
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ThumbnailsScaleFactor}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ThumbnailsScaleFactor}} 
@@ -81,7 +61,4 @@ You can customize the width of the thumbnails list with the __ThumbnailListWidth
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

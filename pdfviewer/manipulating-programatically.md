@@ -5,25 +5,16 @@ description: Manipulating programatically
 slug: winforms/pdfviewer/manipulating-programatically
 tags: manipulating,programatically
 published: True
-position: 2
+position: 3
 ---
 
 # Manipulating programatically
 
-
-
 Using the public API of RadPdfViewerElement you can do various manipulations in your application.
-      
 
 ## Navigating
 
-You can use the __PageUp__, __PageDown__, __GoToPage__ methods to navigate through
-          the document programmatically:
-        #_[C#] _
-
-	
-
-
+You can use the __PageUp__, __PageDown__, __GoToPage__ methods to navigate through the document programmatically:
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=PageNavigation}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=PageNavigation}} 
@@ -60,18 +51,9 @@ You can use the __PageUp__, __PageDown__, __GoToPage__ methods to navigate throu
     End Sub
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-Additionally, you can control the precise scroll position by using the __Scroll__ method which scrolls the view with
-          a specified offset or the __ScrollTo__ method which scrolls the view to an exact position:
-        #_[C#] _
-
-	
-
-
+Additionally, you can control the precise scroll position by using the __Scroll__ method which scrolls the view with a specified offset or the __ScrollTo__ method which scrolls the view to an exact position:
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=Scrolling}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=Scrolling}} 
@@ -99,21 +81,13 @@ Additionally, you can control the precise scroll position by using the __Scroll_
     End Sub
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Text Manipulations
 
 There are various methods in the API of RadPdfViewerElement which you can use to manipulate the text selection.
-        
 
-The __SelectAll__, __DeselectAll__, __Select__ methods allow you to set the selection programmatically:#_[C#] _
-
-	
-
-
+The __SelectAll__, __DeselectAll__, __Select__ methods allow you to set the selection programmatically:
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=Select}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=Select}} 
@@ -162,20 +136,9 @@ The __SelectAll__, __DeselectAll__, __Select__ methods allow you to set the sele
     End Sub
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-You can use the __GetSelectedText__, __GetSelectedTextAsync__ methods to get the currently selected text.
-          The __GetSelectedTextAsync__ method does this operation asynchronously and calls the specified callback function when ready.
-          The __Copy__ method copies the current selection to the clipboard. It executes the operation in the background, so the text is
-          not copied to the clipboard until the waiting indicator is visible.The following sample demonstrates using these methods:
-        #_[C#] _
-
-	
-
-
+You can use the __GetSelectedText__, __GetSelectedTextAsync__ methods to get the currently selected text. The __GetSelectedTextAsync__ method does this operation asynchronously and calls the specified callback function when ready. The __Copy__ method copies the current selection to the clipboard. It executes the operation in the background, so the text is not copied to the clipboard until the waiting indicator is visible.The following sample demonstrates using these methods:
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=GetSelectedText}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=GetSelectedText}} 
@@ -214,18 +177,9 @@ You can use the __GetSelectedText__, __GetSelectedTextAsync__ methods to get the
     End Sub
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-The __Find__, __FindPrevious__ are used to perform text search forwards or backwards respectively. 
-          These methods return the result in a special __SearchResult__ structure which provides information about the result:
-        #_[C#] _
-
-	
-
-
+The __Find__, __FindPrevious__ are used to perform text search forwards or backwards respectively. These methods return the result in a special __SearchResult__ structure which provides information about the result:
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=Search}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=Search}} 
@@ -272,20 +226,11 @@ The __Find__, __FindPrevious__ are used to perform text search forwards or backw
     End Sub
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Context Menu
 
-RadPdfViewer has a default context menu - __PdfViewerContextMenu__ which provides a quick way of performing a number of commands.
-          However, you can replace this menu with any custom one by setting the __RadContextMenu__ property of the RadPdfViewer.
-        #_[C#] _
-
-	
-
-
+RadPdfViewer has a default context menu - __PdfViewerContextMenu__ which provides a quick way of performing a number of commands. However, you can replace this menu with any custom one by setting the __RadContextMenu__ property of the RadPdfViewer.
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ChangeContextMenu}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ChangeContextMenu}} 
@@ -307,17 +252,9 @@ RadPdfViewer has a default context menu - __PdfViewerContextMenu__ which provide
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 You can also use the __ShowMenu__ method to show the context menu programmatically at a specified location.
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ShowContextMenu}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ShowContextMenu}} 
@@ -336,21 +273,11 @@ You can also use the __ShowMenu__ method to show the context menu programmatical
     End Sub
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Annotations
 
-Annotations are hyperlinks inside a document which when clicked depending on their type can either open an external web page or navigate inside the document. 
-          By handling the __AnnotationClicked__ event you can customize the default action associated with the link. The following code snippet
-          demonstrates how to add a question dialog when opening external links:
-        #_[C#] _
-
-	
-
-
+Annotations are hyperlinks inside a document which when clicked depending on their type can either open an external web page or navigate inside the document. By handling the __AnnotationClicked__ event you can customize the default action associated with the link. The following code snippet demonstrates how to add a question dialog when opening external links:
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=AnnotationClicked}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=AnnotationClicked}} 
@@ -380,19 +307,11 @@ Annotations are hyperlinks inside a document which when clicked depending on the
     End Sub
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Thumbnails
 
 You can control whether the thumbnail element is visible by setting the __EnableThumbnail__ property. You can read about thumbnails [here]({%slug winforms/pdfviewer/thumbnails%}). 
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=EnableThumbnails}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=EnableThumbnails}} 
@@ -405,7 +324,4 @@ You can control whether the thumbnail element is visible by setting the __Enable
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

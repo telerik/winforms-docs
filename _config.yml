@@ -413,6 +413,9 @@ navigation:
     pdfviewer:
         title: PdfViewer
         position: 33
+    pdfviewer/text:
+        title: Text
+        position: 5		
     pivotgrid:
         title: PivotGrid 
         position: 34

@@ -5,32 +5,18 @@ description: Localization
 slug: winforms/pdfviewer/localization
 tags: localization
 published: True
-position: 7
+position: 9
 ---
 
 # Localization
 
-
-
-## 
-
 To localize __RadPdfViewer__ to display any text and messages in a specific language:
-        
 
 * Create a custom __PdfViewerLocalizationProvider__ class.
-            
 
-* Override the __GetLocalizedString(string id)__ method and provide a translation for the label and user messages. If a
-              translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base
-              __GetLocalizedString__ method in the default clause of the switch statement in the example.
-            
+* Override the __GetLocalizedString(string id)__ method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the default clause of the switch statement in the example.
 
 Below is a sample implementation of an English localization provider:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\PdfViewer\PdfLocalization.cs region=localization}} 
 {{source=..\SamplesVB\PdfViewer\PdfLocalization.vb region=localization}} 
@@ -170,17 +156,9 @@ End Class
 '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\PdfViewer\PdfLocalization.cs region=change}} 
 {{source=..\SamplesVB\PdfViewer\PdfLocalization.vb region=change}} 
@@ -193,7 +171,4 @@ To apply the custom localization provider, instantiate and assign it to the curr
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

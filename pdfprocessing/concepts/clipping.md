@@ -20,7 +20,7 @@ The __Clipping__ element exposes a single property.
 
 __Example 1__ demonstrates how you can create a Clipping element and assign a __RectangeGeometry__ to its Clip property.
 
-#_[C#] Example 1: Create Clipping
+#### Example 1: Create Clipping
 
 {{source=..\SamplesCS\PdfProcessing\Concepts\PdfProcessingConceptsClipping.cs region=radpdfprocessing-concepts-clipping_0}} 
 {{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsClipping.vb region=radpdfprocessing-concepts-clipping_0}} 

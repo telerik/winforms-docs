@@ -5,20 +5,14 @@ description: Keyboard and mouse support
 slug: winforms/pdfviewer/keyboard-and-mouse-support
 tags: keyboard,and,mouse,support
 published: True
-position: 3
+position: 5
 ---
 
 # Keyboard and mouse support
 
-
-
 RadPdfViewer supports a set of predefined input commands.
 
-## 
-
 Here is a list of the supported keyboard commands:
-        
-
 
 |  __Key combination__  |  __Action__  |
 | ------ | ------ |
@@ -38,8 +32,6 @@ Here is a list of the supported keyboard commands:
 |Ctrl + End|Move caret to the document end|
 
 Following is a list of supported mouse actions:
-        
-
 
 |  __Key combination__  |  __Action__  |
 | ------ | ------ |
