@@ -5,7 +5,7 @@ description: Calculated fields
 slug: winforms/pivotgrid/calculated-fields
 tags: calculated,fields
 published: True
-position: 9
+position: 10
 ---
 
 # Calculated fields

@@ -5,7 +5,7 @@ description: Formatting appearance
 slug: winforms/pivotgrid/formatting-appearance
 tags: formatting,appearance
 published: True
-position: 4
+position: 5
 ---
 
 # Formatting appearance

@@ -2,10 +2,10 @@
 title: Export to Excel
 page_title: Export to Excel | UI for WinForms Documentation
 description: Export to Excel
-slug: winforms/pivotgrid/export-to-excel
+slug: winforms/pivotgrid/exporting-data/export-to-excel
 tags: export,to,excel
 published: True
-position: 17
+position: 0
 ---
 
 # Export to Excel

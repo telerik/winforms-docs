@@ -5,7 +5,7 @@ description: RadPivotFieldList
 slug: winforms/pivotgrid/radpivotfieldlist
 tags: radpivotfieldlist
 published: True
-position: 6
+position: 7
 ---
 
 # RadPivotFieldList

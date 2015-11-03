@@ -5,7 +5,7 @@ description: Dialogs
 slug: winforms/pivotgrid/dialogs
 tags: dialogs
 published: True
-position: 15
+position: 0
 ---
 
 # Dialogs

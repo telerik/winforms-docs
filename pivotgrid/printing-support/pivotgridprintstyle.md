@@ -5,7 +5,7 @@ description: PivotGridPrintStyle
 slug: winforms/pivotgrid/printing-support/pivotgridprintstyle
 tags: pivotgridprintstyle
 published: True
-position: 0
+position: 1
 ---
 
 # PivotGridPrintStyle

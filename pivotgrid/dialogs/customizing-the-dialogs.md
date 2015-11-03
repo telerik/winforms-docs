@@ -5,7 +5,7 @@ description: Customizing the Dialogs
 slug: winforms/pivotgrid/dialogs/customizing-the-dialogs
 tags: customizing,the,dialogs
 published: True
-position: 0
+position: 1
 ---
 
 # Customizing the Dialogs

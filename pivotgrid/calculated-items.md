@@ -5,7 +5,7 @@ description: Calculated items
 slug: winforms/pivotgrid/calculated-items
 tags: calculated,items
 published: True
-position: 10
+position: 11
 ---
 
 # Calculated items

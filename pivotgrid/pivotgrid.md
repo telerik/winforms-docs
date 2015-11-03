@@ -5,7 +5,7 @@ description: PivotGrid
 slug: winforms/pivotgrid
 tags: pivotgrid
 published: True
-position: 33
+position: 0
 ---
 
 # PivotGrid

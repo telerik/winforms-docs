@@ -5,7 +5,7 @@ description: Property Builder
 slug: winforms/pivotgrid/property-builder
 tags: property,builder
 published: True
-position: 1
+position: 2
 ---
 
 # Property Builder

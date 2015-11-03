@@ -5,7 +5,7 @@ description: Save and Load Layout
 slug: winforms/pivotgrid/save-and-load-layout
 tags: save,and,load,layout
 published: True
-position: 18
+position: 23
 ---
 
 # Save and Load Layout

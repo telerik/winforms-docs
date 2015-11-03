@@ -5,7 +5,7 @@ description: Sorting
 slug: winforms/pivotgrid/sorting
 tags: sorting
 published: True
-position: 8
+position: 9
 ---
 
 # Sorting

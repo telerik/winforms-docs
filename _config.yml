@@ -437,6 +437,24 @@ navigation:
     pivotgrid:
         title: PivotGrid 
         position: 34
+    pivotgrid/populating-with-data:
+        title: Populating with Data
+        position: 3
+    pivotgrid/filtering:
+        title: Filtering
+        position: 8
+    pivotgrid/printing-support:
+        title: Printing Support
+        position: 14
+    pivotgrid/dialogs:
+        title: Dialogs
+        position: 20
+    pivotgrid/localization:
+        title: Localization
+        position: 21
+    pivotgrid/exporting-data:
+        title: Exporting Data
+        position: 22		
     propertygrid:
         title: PropertyGrid
         position: 35

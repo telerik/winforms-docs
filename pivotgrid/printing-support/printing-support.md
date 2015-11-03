@@ -5,7 +5,7 @@ description: Printing Support
 slug: winforms/pivotgrid/printing-support
 tags: printing,support
 published: True
-position: 13
+position: 0
 ---
 
 # Printing Support
