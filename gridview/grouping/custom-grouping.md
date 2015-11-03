@@ -41,7 +41,7 @@ The __CustomGrouping__ event is fired if custom grouping is enabled through the 
 The following example demonstrates how to handle the __CustomGrouping__ event to group the RadGridView rows by the values of the Country column creating groups only for predefined countries:
 
 {{source=..\SamplesCS\GridView\Grouping\CustomGrouping.cs region=usingCustomGrouping}} 
-{{source=..\SamplesCS\GridView\Grouping\CustomGrouping.vb region=usingCustomGrouping}} 
+{{source=..\SamplesVB\GridView\Grouping\CustomGrouping.vb region=usingCustomGrouping}} 
 
 ````C#
         private void radGridView1_CustomGrouping(object sender, GridViewCustomGroupingEventArgs e)
@@ -103,7 +103,7 @@ The following example demonstrates how to handle the __CustomGrouping__ event to
 
 
 
-{{source=..\SamplesVB\GridView\Grouping\CustomGrouping.cs region=usingCustomGrouping1}} 
+{{source=..\SamplesCS\GridView\Grouping\CustomGrouping.cs region=usingCustomGrouping1}} 
 {{source=..\SamplesVB\GridView\Grouping\CustomGrouping.vb region=usingCustomGrouping1}} 
 
 ````C#
@@ -169,14 +169,13 @@ The following example demonstrates how to handle the __CustomGrouping__ event to
 
 ## Implementing grouping mechanism by using GroupPredicate
 
-You can replace the grouping mechanism in RadGridView with a custom one by setting the __GroupPredicate__ of the
-          __GridViewTemplate__.
+You can replace the grouping mechanism in RadGridView with a custom one by setting the __GroupPredicate__ of the __GridViewTemplate__.
         
 
 The following example demonstrates how to use a custom grouping mechanism in RadGridView to group the rows by the values of the ContactTitle column, creating groups only for the desired contact title categories:
 
 {{source=..\SamplesCS\GridView\Grouping\CustomGrouping1.cs region=usingGroupPredicate}} 
-{{source=..\SamplesCS\GridView\Grouping\CustomGrouping1.vb region=usingGroupPredicate}} 
+{{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=usingGroupPredicate}} 
 
 ````C#
         private object PerformGrouping(GridViewRowInfo row, int level)
@@ -239,7 +238,7 @@ The following example demonstrates how to use a custom grouping mechanism in Rad
 {{endregion}} 
 
 
-{{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.cs region=usingGroupPredicate1}} 
+{{source=..\SamplesCS\GridView\Grouping\CustomGrouping1.cs region=usingGroupPredicate1}} 
 {{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=usingGroupPredicate1}} 
 
 ````C#

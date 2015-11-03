@@ -10,8 +10,6 @@ position: 0
 
 # Changes
 
-
-
 This topic summarizes the new functionality introduced in the library with helpful links to places in the documentation that describe in greater detail the new functionality and how it can be used.
       
 
@@ -26,7 +24,6 @@ __What's New__
 * Exposed Block class allowing to draw and split in parts groups of text, images and shapes. [Read more.]({%slug winforms/pdfprocessing/editing/block%})
 
 * Introduced hyperlink concept that combines Link annotation and fixed content.
-            
 
 __What's Fixed__
 

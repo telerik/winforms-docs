@@ -10,22 +10,15 @@ position: 5
 
 # ImageSource
 
-
-
 __ImageSource__ represents a single, constant set of pixels at a certain size. It can be used by multiple [Image]({%slug winforms/pdfprocessing/model/image%}) objects in order to be drawn in a PDF file.
-      
 
 ## Creating ImageSource
 
 The ImageSource class has two contrustor overloads and can be created from a [Stream](http://msdn.microsoft.com/en-us/library/system.io.stream(v=vs.110).aspx) that contains image or from a [BitmapSource](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.bitmapsource(v=vs.110).aspx) object.
-        
 
 __Example 1__ illustrates how you can create an ImageSource using a __FileStream__.
-        #_[C#] Example 1: Create ImageSource from Stream_
 
-	
-
-
+#### Example 1: Create ImageSource from Stream
 
 {{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelImageSource.cs region=radpdfprocessing-model-imagesource_0}} 
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImageSource.vb region=radpdfprocessing-model-imagesource_0}} 
@@ -44,21 +37,13 @@ __Example 1__ illustrates how you can create an ImageSource using a __FileStream
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Extensions
 
-__RadPdfProcessing__ exposes an extension method allowing to convert every BitmapSource to an
-          ImageSource that can be used for the creation of   [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}) elements.
-          __Example 2__ shows how you can use the ToImageSource() extension method over a previously created bitmap.
-        #_[C#] Example 2: Create ImageSource with Extension Method_
+__RadPdfProcessing__ exposes an extension method allowing to convert every BitmapSource to an ImageSource that can be used for the creation of   [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}) elements. __Example 2__ shows how you can use the ToImageSource() extension method over a previously created bitmap.
 
-	
-
-
+#### Example 2: Create ImageSource with Extension Method
 
 {{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelImageSource.cs region=radpdfprocessing-model-imagesource_1}} 
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImageSource.vb region=radpdfprocessing-model-imagesource_1}} 
@@ -82,9 +67,6 @@ __RadPdfProcessing__ exposes an extension method allowing to convert every Bitma
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

@@ -10,13 +10,9 @@ position: 1
 
 # RadFixedDocument
 
-
-
 __RadFixedDocument__ hosts fixed document content and is the root element in the document elements tree. It holds a collection of [RadFixedPage]({%slug winforms/pdfprocessing/model/radfixedpage%})  elements.
-      
 
 This article will get you familiar with the basics of __RadFixedDocument__. It contains the following sections:
-      
 
 * [What Is RadFixedDocument](#what-is-radfixeddocument)
 
@@ -27,26 +23,18 @@ This article will get you familiar with the basics of __RadFixedDocument__. It c
 ## What Is RadFixedDocument
 
 __RadFixedDocument__ is the root that contains all other elements in the __RadPdfProcessing__ model. It exposes the following properties:
-        
 
 * __Pages__: The pages collection that contains all __RadFixedPages__ in the document.
-            
 
 * __Annotations__: A read-only collection that contains all [Annotations]({%slug winforms/pdfprocessing/model/-annotations-and-destinations%}) in the document.
-            
 
 * __Destinations__: A collection that contains all [Destinations]({%slug winforms/pdfprocessing/model/-annotations-and-destinations%}) in the document.
-            
 
-* __DocumentInfo__: Contains additional meta information about the document like author, title, etc. 
-            
+* __DocumentInfo__: Contains additional meta information about the document like author, title, etc.
 
 __Example 1__ shows how you can create a new __RadFixedDocument__ instance.
-        #_[C#] Example 1: Create RadFixedDocument_
 
-	
-
-
+#### Example 1: Create RadFixedDocument
 
 {{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=radpdfprocessing-model-radfixeddocument_0}} 
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_0}} 
@@ -59,22 +47,15 @@ __Example 1__ shows how you can create a new __RadFixedDocument__ instance.
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Operating with RadFixedDocument
 
 There are different actions which you can execute with the help of a __RadFixedDocument__. For example, you can add a __RadFixedPage__ to an existing document.
-        
 
 __Example 2__ adds a page to the document created in __Example 1__.
-        #_[C#] Example 2: Add page to RadFixedDocument_
 
-	
-
-
+#### Example 2: Add page to RadFixedDocument
 
 {{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=radpdfprocessing-model-radfixeddocument_1}} 
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_1}} 
@@ -89,18 +70,11 @@ __Example 2__ adds a page to the document created in __Example 1__.
 
 {{endregion}} 
 
-
-
-
 Alternatively, you can create new __RadFixedPage__ and add it to the __Pages__ collection of a document.
-        
 
 __Example 3__ creates a page and adds it to the document created in __Example 1__.
-        #_[C#] Example 3: Create and add a page to RadFixedDocument_
 
-	
-
-
+#### Example 3: Create and add a page to RadFixedDocument
 
 {{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=radpdfprocessing-model-radfixeddocument_2}} 
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_2}} 
@@ -115,29 +89,19 @@ __Example 3__ creates a page and adds it to the document created in __Example 1_
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ##  Document Information
 
-__RadFixedDocument__ exposes a __DocumentInfo__ property of type __RadFixedDocumentInfo__, 
-          intended to hold additional information about the document. The __RadFixedDocumentInfo__ class allows to set the following properties:
-        
+__RadFixedDocument__ exposes a __DocumentInfo__ property of type __RadFixedDocumentInfo__, intended to hold additional information about the document. The __RadFixedDocumentInfo__ class allows to set the following properties:
 
 * __Author__: The author of the document.
-            
 
 * __Title__: The title of the document.
-            
 
 * __Description__: Text that describes the content of the document.
-            #_[C#] Example 4: Set DocumentInfo_
 
-	
-
-
+#### Example 4: Set DocumentInfo
 
 {{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.cs region=DocInfo}} 
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=DocInfo}} 
@@ -154,10 +118,7 @@ __RadFixedDocument__ exposes a __DocumentInfo__ property of type __RadFixedDocum
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 # See Also
 
