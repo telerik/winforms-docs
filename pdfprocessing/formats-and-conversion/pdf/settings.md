@@ -29,7 +29,20 @@ __Example 1__ shows how you can create a __PdfImportSettings__ object and assign
 {{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_0}}
 {{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_0}}
 
+````C#
+PdfFormatProvider provider = new PdfFormatProvider();
+PdfImportSettings settings = new PdfImportSettings();
+settings.UserPasswordNeeded += new EventHandler<PasswordNeededEventArgs>(settings_UserPasswordNeeded);
+provider.ImportSettings = settings;
 
+````
+````VB.NET
+andler
+    Private Sub UserPasswordNeeded_EventHandler(sender As Object, e As PasswordNeededEventArgs)
+        e.Password = "D0cum3ntP4ssw0rd"
+    End Sub
+
+````
 
 {{endregion}}
 
@@ -37,16 +50,17 @@ __Example 1__ shows how you can create a __PdfImportSettings__ object and assign
 {{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_0Handler}}
 
 ````C#
-        private void settings_UserPasswordNeeded(object sender, PasswordNeededEventArgs e)
-        {
-            e.Password = "D0cum3ntP4ssw0rd";
-        }
+private void settings_UserPasswordNeeded(object sender, PasswordNeededEventArgs e)
+{
+    e.Password = "D0cum3ntP4ssw0rd";
+}
+
 ````
 ````VB.NET
-    Private Sub UserPasswordNeeded_EventHandler(sender As Object, e As PasswordNeededEventArgs)
-        e.Password = "D0cum3ntP4ssw0rd"
-    End Sub
-    '
+Private Sub UserPasswordNeeded_EventHandler(sender As Object, e As PasswordNeededEventArgs)
+    e.Password = "D0cum3ntP4ssw0rd"
+End Sub
+
 ````
 
 {{endregion}}
@@ -101,41 +115,33 @@ Specifies the PDF/A compliance level. It can have one of the following values:
 The default value is *None*. For more information on PDF/A compliance check the PDF/A Compliance article.
 
 __Example 2__ shows ow you can create a __PdfExportSettings__ object and assign it to a PdfFormatProvider.
-        #_[C#] Example 2: Export Settings_
 
-	
-
+#### Example 2: Export Settings
 
 
 {{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.cs region=radpdfprocessing-formats-and-conversion-pdf-settings_1}} 
 {{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfSettings.vb region=radpdfprocessing-formats-and-conversion-pdf-settings_1}} 
 
 ````C#
-            PdfFormatProvider provider = new PdfFormatProvider();
-            PdfExportSettings settings = new PdfExportSettings();
-            settings.IsEncrypted = true;
-            settings.UserPassword = "D0cum3ntP4ssw0rd";
-            settings.ImageQuality = ImageQuality.High;
-            settings.ComplianceLevel = PdfComplianceLevel.PdfA2B;
+PdfFormatProvider provider = new PdfFormatProvider();
+PdfExportSettings settings = new PdfExportSettings();
+settings.IsEncrypted = true;
+settings.UserPassword = "D0cum3ntP4ssw0rd";          
+settings.ComplianceLevel = PdfComplianceLevel.PdfA2B;
+provider.ExportSettings = settings;
 
-            provider.ExportSettings = settings;
 ````
 ````VB.NET
-        Dim provider As PdfFormatProvider = New PdfFormatProvider()
-        Dim settings As PdfExportSettings = New PdfExportSettings()
-        settings.IsEncrypted = True
-        settings.UserPassword = "D0cum3ntP4ssw0rd"
-        settings.ImageQuality = ImageQuality.High
-        settings.ComplianceLevel = PdfComplianceLevel.PdfA2B
+Dim provider As PdfFormatProvider = New PdfFormatProvider()
+Dim settings As PdfExportSettings = New PdfExportSettings()
+settings.IsEncrypted = True
+settings.UserPassword = "D0cum3ntP4ssw0rd"     
+settings.ComplianceLevel = PdfComplianceLevel.PdfA2B
+provider.ExportSettings = settings
 
-        provider.ExportSettings = settings
-        '
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 
