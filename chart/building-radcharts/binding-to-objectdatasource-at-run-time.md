@@ -29,27 +29,26 @@ The code below demonstrates binding to an [ObjectDataSource](http://msdn2.micros
 {{source=..\SamplesVB\Chart\BindingToObjectDataSourceAtRunTime.vb region=BindingToObjectDataSource}} 
 
 ````C#
-            ObjectDataSource ods = new ObjectDataSource();
-            ods.SelectMethod = "GetProducts";
-            ods.TypeName = "RadChartBinding.ProductsBO";
-            RadChart1.DataSource = ods.Select();
-            RadChart1.Series[0].DataYColumn = "QuantityInStock";
-            RadChart1.PlotArea.XAxis.DataLabelsColumn = "Name";
-            RadChart1.PlotArea.XAxis.Appearance.TextAppearance.TextProperties.Font = new System.Drawing.Font("Ariel", 8);
+ObjectDataSource ods = new ObjectDataSource();
+ods.SelectMethod = "GetProducts";
+ods.TypeName = "RadChartBinding.ProductsBO";
+RadChart1.DataSource = ods.Select();
+RadChart1.Series[0].DataYColumn = "QuantityInStock";
+RadChart1.PlotArea.XAxis.DataLabelsColumn = "Name";
+RadChart1.PlotArea.XAxis.Appearance.TextAppearance.TextProperties.Font = new System.Drawing.Font("Ariel", 8);
+RadChart1.DataBind();
 
-            RadChart1.DataBind();
 ````
 ````VB.NET
-        Dim ods As New ObjectDataSource()
-        ods.SelectMethod = "GetProducts"
-        ods.TypeName = "RadChartBinding.ProductsBO"
-        RadChart1.DataSource = ods.[Select]()
-        RadChart1.Series(0).DataYColumn = "QuantityInStock"
-        RadChart1.PlotArea.XAxis.DataLabelsColumn = "Name"
-        RadChart1.PlotArea.XAxis.Appearance.TextAppearance.TextProperties.Font = New System.Drawing.Font("Ariel", 8)
+Dim ods As New ObjectDataSource()
+ods.SelectMethod = "GetProducts"
+ods.TypeName = "RadChartBinding.ProductsBO"
+RadChart1.DataSource = ods.[Select]()
+RadChart1.Series(0).DataYColumn = "QuantityInStock"
+RadChart1.PlotArea.XAxis.DataLabelsColumn = "Name"
+RadChart1.PlotArea.XAxis.Appearance.TextAppearance.TextProperties.Font = New System.Drawing.Font("Ariel", 8)
+RadChart1.DataBind()
 
-        RadChart1.DataBind()
-        '
 ````
 
 {{endregion}} 

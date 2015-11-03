@@ -25,11 +25,12 @@ __Setting CultureInfo in code__
 {{source=..\SamplesVB\Calendar\ColumnRowHeaders.vb region=globalization}} 
 
 ````C#
-            radCalendar1.Culture = CultureInfo.GetCultureInfo("fr-FR");
+radCalendar1.Culture = CultureInfo.GetCultureInfo("fr-FR");
+
 ````
 ````VB.NET
-        RadCalendar1.Culture = CultureInfo.GetCultureInfo("fr-FR")
-        '
+RadCalendar1.Culture = CultureInfo.GetCultureInfo("fr-FR")
+
 ````
 
 {{endregion}} 

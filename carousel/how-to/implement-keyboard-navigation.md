@@ -24,49 +24,48 @@ In order to implement keyboard navigation for rotating and selecting the carouse
 {{source=..\SamplesVB\Carousel\CarouselImplementKeyboardNavigation.vb region=keyboardNavigation}} 
 
 ````C#
-        public CarouselImplementKeyboardNavigation()
+public CarouselImplementKeyboardNavigation()
+{
+    InitializeComponent();
+    this.radCarousel1.KeyUp += new KeyEventHandler(radCarousel1_KeyUp);
+}
+void radCarousel1_KeyUp(object sender, KeyEventArgs e)
+{
+    if (e.KeyCode == Keys.Left)
+    {
+        this.radCarousel1.SelectedIndex--;
+    }
+    else if (e.KeyCode == Keys.Right)
+    {
+        this.radCarousel1.SelectedIndex++;
+    }
+    else if (e.KeyCode == Keys.Enter)
+    {
+        if (this.radCarousel1.SelectedItem != null)
         {
-            InitializeComponent();
-            this.radCarousel1.KeyUp += new KeyEventHandler(radCarousel1_KeyUp);
+            ((RadButtonElement)this.radCarousel1.SelectedItem).PerformClick();
         }
+    }
+}
 
-        void radCarousel1_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Left)
-            {
-                this.radCarousel1.SelectedIndex--;
-            }
-            else if (e.KeyCode == Keys.Right)
-            {
-                this.radCarousel1.SelectedIndex++;
-            }
-            else if (e.KeyCode == Keys.Enter)
-            {
-                if (this.radCarousel1.SelectedItem != null)
-                {
-                    ((RadButtonElement)this.radCarousel1.SelectedItem).PerformClick();
-                }
-            }
-        }
 ````
 ````VB.NET
-    Public Sub New()
-        InitializeComponent()
-        AddHandler Me.RadCarousel1.KeyUp, AddressOf radCarousel1_KeyUp
-    End Sub
-
-    Private Sub radCarousel1_KeyUp(ByVal sender As Object, ByVal e As KeyEventArgs)
-        If e.KeyCode = Keys.Left Then
-            Me.RadCarousel1.SelectedIndex -= 1
-        ElseIf e.KeyCode = Keys.Right Then
-            Me.RadCarousel1.SelectedIndex += 1
-        ElseIf e.KeyCode = Keys.Enter Then
-            If Me.RadCarousel1.SelectedItem IsNot Nothing Then
-                DirectCast(Me.RadCarousel1.SelectedItem, RadButtonElement).PerformClick()
-            End If
+Public Sub New()
+    InitializeComponent()
+    AddHandler Me.RadCarousel1.KeyUp, AddressOf radCarousel1_KeyUp
+End Sub
+Private Sub radCarousel1_KeyUp(ByVal sender As Object, ByVal e As KeyEventArgs)
+    If e.KeyCode = Keys.Left Then
+        Me.RadCarousel1.SelectedIndex -= 1
+    ElseIf e.KeyCode = Keys.Right Then
+        Me.RadCarousel1.SelectedIndex += 1
+    ElseIf e.KeyCode = Keys.Enter Then
+        If Me.RadCarousel1.SelectedItem IsNot Nothing Then
+            DirectCast(Me.RadCarousel1.SelectedItem, RadButtonElement).PerformClick()
         End If
-    End Sub
-    '
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

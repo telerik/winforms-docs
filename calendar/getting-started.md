@@ -11,11 +11,6 @@ position: 3
 # Getting Started
 
 
-
-## 
-
-
-
 This tutorial will demonstrate adding selected and special days to the calendar at design time, then iterating and displaying those dates at runtime.![calendar-getting-started 004](images/calendar-getting-started004.png)
 
 
@@ -40,40 +35,40 @@ This tutorial will demonstrate adding selected and special days to the calendar 
 
 1. Set the __Disabled__ property to true and the __Recurring__ property to __DayInMonth.__![calendar-getting-started 003](images/calendar-getting-started003.png)
 
-1. Double-Click the __RadButton__ in the designer and add the following code to the __Click__ event handler. This code will iterate and list results for the __SelectedDates__ and __SpecialDays__ collections.#_[C#] Iterating the SelectedDates and SpecialDates collections_
-
-	
+1. Double-Click the __RadButton__ in the designer and add the following code to the __Click__ event handler. This code will iterate and list results for the __SelectedDates__ and __SpecialDays__ collections.
 
 
+#### Iterating the SelectedDates and SpecialDates collections
 
 {{source=..\SamplesCS\Calendar\Calendar1.cs region=iteratingSpecialSelected}} 
 {{source=..\SamplesVB\Calendar\Calendar1.vb region=iteratingSpecialSelected}} 
 
 ````C#
-        private void radButton1_Click(object sender, EventArgs e)
-        {
-            foreach (DateTime dateTime in radCalendar1.SelectedDates)
-            {
-                radListControl1.Items.Add(
-                  new RadListDataItem("Selected: " + dateTime.ToShortDateString()));
-            }
-            foreach (RadCalendarDay day in radCalendar1.SpecialDays)
-            {
-                radListControl1.Items.Add(
-                  new RadListDataItem("Special: " + day.Date.ToShortDateString()));
-            }
-        }
+private void radButton1_Click(object sender, EventArgs e)
+{
+    foreach (DateTime dateTime in radCalendar1.SelectedDates)
+    {
+        radListControl1.Items.Add(
+          new RadListDataItem("Selected: " + dateTime.ToShortDateString()));
+    }
+    foreach (RadCalendarDay day in radCalendar1.SpecialDays)
+    {
+        radListControl1.Items.Add(
+          new RadListDataItem("Special: " + day.Date.ToShortDateString()));
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-        For Each dateTime As DateTime In RadCalendar1.SelectedDates
-            RadListControl1.Items.Add(New RadListDataItem("Selected: " + dateTime.ToShortDateString()))
-        Next
-        For Each day As RadCalendarDay In RadCalendar1.SpecialDays
-            RadListControl1.Items.Add(New RadListDataItem("Special: " + day.[Date].ToShortDateString()))
-        Next
-    End Sub
-    '
+Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    For Each dateTime As DateTime In RadCalendar1.SelectedDates
+        RadListControl1.Items.Add(New RadListDataItem("Selected: " + dateTime.ToShortDateString()))
+    Next
+    For Each day As RadCalendarDay In RadCalendar1.SpecialDays
+        RadListControl1.Items.Add(New RadListDataItem("Special: " + day.[Date].ToShortDateString()))
+    Next
+End Sub
+
 ````
 
 {{endregion}} 

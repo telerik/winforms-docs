@@ -33,27 +33,28 @@ To add labels along an Axis programmatically:
 {{source=..\SamplesVB\Chart\AddAxisLabelsProgrammaticaly.vb region=addAxisLabels}} 
 
 ````C#
-            radChart1.PlotArea.XAxis.AutoScale = false;
-            radChart1.PlotArea.XAxis.AddRange(1, 7, 1);
-            radChart1.PlotArea.XAxis[0].TextBlock.Text = "Mon";
-            radChart1.PlotArea.XAxis[1].TextBlock.Text = "Tue";
-            radChart1.PlotArea.XAxis[2].TextBlock.Text = "Wed";
-            radChart1.PlotArea.XAxis[3].TextBlock.Text = "Thu";
-            radChart1.PlotArea.XAxis[4].TextBlock.Text = "Fri";
-            radChart1.PlotArea.XAxis[5].TextBlock.Text = "Sat";
-            radChart1.PlotArea.XAxis[6].TextBlock.Text = "Sun";
+radChart1.PlotArea.XAxis.AutoScale = false;
+radChart1.PlotArea.XAxis.AddRange(1, 7, 1);
+radChart1.PlotArea.XAxis[0].TextBlock.Text = "Mon";
+radChart1.PlotArea.XAxis[1].TextBlock.Text = "Tue";
+radChart1.PlotArea.XAxis[2].TextBlock.Text = "Wed";
+radChart1.PlotArea.XAxis[3].TextBlock.Text = "Thu";
+radChart1.PlotArea.XAxis[4].TextBlock.Text = "Fri";
+radChart1.PlotArea.XAxis[5].TextBlock.Text = "Sat";
+radChart1.PlotArea.XAxis[6].TextBlock.Text = "Sun";
+
 ````
 ````VB.NET
-        radChart1.PlotArea.XAxis.AutoScale = False
-        radChart1.PlotArea.XAxis.AddRange(1, 7, 1)
-        radChart1.PlotArea.XAxis(0).TextBlock.Text = "Mon"
-        radChart1.PlotArea.XAxis(1).TextBlock.Text = "Tue"
-        radChart1.PlotArea.XAxis(2).TextBlock.Text = "Wed"
-        radChart1.PlotArea.XAxis(3).TextBlock.Text = "Thu"
-        radChart1.PlotArea.XAxis(4).TextBlock.Text = "Fri"
-        radChart1.PlotArea.XAxis(5).TextBlock.Text = "Sat"
-        radChart1.PlotArea.XAxis(6).TextBlock.Text = "Sun"
-        '
+radChart1.PlotArea.XAxis.AutoScale = False
+radChart1.PlotArea.XAxis.AddRange(1, 7, 1)
+radChart1.PlotArea.XAxis(0).TextBlock.Text = "Mon"
+radChart1.PlotArea.XAxis(1).TextBlock.Text = "Tue"
+radChart1.PlotArea.XAxis(2).TextBlock.Text = "Wed"
+radChart1.PlotArea.XAxis(3).TextBlock.Text = "Thu"
+radChart1.PlotArea.XAxis(4).TextBlock.Text = "Fri"
+radChart1.PlotArea.XAxis(5).TextBlock.Text = "Sat"
+radChart1.PlotArea.XAxis(6).TextBlock.Text = "Sun"
+
 ````
 
 {{endregion}} 

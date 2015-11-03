@@ -20,23 +20,25 @@ See the code below for an example object that can be consumed by [ObjectDataSour
 {{source=..\SamplesVB\Chart\CreatingAnObjectThatCanBeConsumedByObjectDataSource.vb region=createObject}} 
 
 ````C#
-    [DataObjectAttribute]
-    public class ProductsBO
+[DataObjectAttribute]
+public class ProductsBO
+{
+    [DataObjectMethodAttribute(DataObjectMethodType.Select, true)]
+    public static IEnumerable GetProducts()
     {
-        [DataObjectMethodAttribute(DataObjectMethodType.Select, true)]
-        public static IEnumerable GetProducts()
-        {
-            SqlCommand command = new SqlCommand();
-            String connectionString = @"Integrated Security=SSPI;Persist Security Info=False; Initial Catalog=Northwind;Data Source=.\sqlexpress";
-            command.Connection = new SqlConnection(connectionString);
-            command.CommandText = "SELECT CategoryName, SUM(ProductSales) AS TotalSales FROM [Product Sales for 1997] GROUP BY CategoryName";
-            command.Connection.Open();
-            SqlDataReader reader = command.ExecuteReader();
-            return reader;
-        }
+        SqlCommand command = new SqlCommand();
+        String connectionString = @"Integrated Security=SSPI;Persist Security Info=False; Initial Catalog=Northwind;Data Source=.\sqlexpress";
+        command.Connection = new SqlConnection(connectionString);
+        command.CommandText = "SELECT CategoryName, SUM(ProductSales) AS TotalSales FROM [Product Sales for 1997] GROUP BY CategoryName";
+        command.Connection.Open();
+        SqlDataReader reader = command.ExecuteReader();
+        return reader;
     }
+}
+
 ````
-````VB.NET    <DataObjectAttribute()> _
+````VB.NET
+<DataObjectAttribute()> _
     Public Class ProductsBO
         <DataObjectMethodAttribute(DataObjectMethodType.[Select], True)> _
         Public Shared Function GetProducts() As IEnumerable
@@ -49,7 +51,7 @@ See the code below for an example object that can be consumed by [ObjectDataSour
             Return reader
         End Function
     End Class
-    '
+
 ````
 
 {{endregion}} 

@@ -27,42 +27,42 @@ By default __RadChart__ is designed so that all bars from a series have the same
 {{source=..\SamplesVB\Chart\AddIndividualColorsToBars.vb region=assignColors}} 
 
 ````C#
-        void Form1_Load(object sender, EventArgs e)
-        {
-            Color[] barColors = new Color[8]{
-                Color.Purple,
-                Color.SteelBlue,
-                Color.Aqua,
-                Color.Yellow,
-                Color.Navy,
-                Color.Green,
-                Color.Blue,
-                Color.Red
-            };
-            int i = 0;
+void Form1_Load(object sender, EventArgs e)
+{
+    Color[] barColors = new Color[8]{
+        Color.Purple,
+        Color.SteelBlue,
+        Color.Aqua,
+        Color.Yellow,
+        Color.Navy,
+        Color.Green,
+        Color.Blue,
+        Color.Red
+    };
+    int i = 0;
+    radChart1.DataSource = "..\\..\\Chart\\ChartXML.xml";
+    radChart1.DataBind();
+    radChart1.Series[0].Name = "Units by Category";
+    foreach (ChartSeriesItem item in radChart1.Series[0].Items)
+    {
+        item.Appearance.FillStyle.MainColor = barColors[i++];
+    }
+}
 
-            radChart1.DataSource = "..\\..\\Chart\\ChartXML.xml";
-            radChart1.DataBind();
-            radChart1.Series[0].Name = "Units by Category";
-            foreach (ChartSeriesItem item in radChart1.Series[0].Items)
-            {
-                item.Appearance.FillStyle.MainColor = barColors[i++];
-            }
-        }
 ````
 ````VB.NET
-    Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Dim barColors As Color()
-        barColors = New Color() {Color.Purple, Color.SteelBlue, Color.Aqua, Color.Yellow, Color.Navy, Color.Green, Color.Blue, Color.Red}
-        Dim i As Integer = 0
-        radChart1.DataSource = "..\..\Chart\ChartXML.xml"
-        radChart1.DataBind()
-        radChart1.Series(0).Name = "Units by Category"
-        For Each item As ChartSeriesItem In radChart1.Series(0).Items
-            item.Appearance.FillStyle.MainColor = barColors(System.Math.Max(System.Threading.Interlocked.Increment(i), i - 1))
-        Next
-    End Sub
-    '
+Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+    Dim barColors As Color()
+    barColors = New Color() {Color.Purple, Color.SteelBlue, Color.Aqua, Color.Yellow, Color.Navy, Color.Green, Color.Blue, Color.Red}
+    Dim i As Integer = 0
+    radChart1.DataSource = "..\..\Chart\ChartXML.xml"
+    radChart1.DataBind()
+    radChart1.Series(0).Name = "Units by Category"
+    For Each item As ChartSeriesItem In radChart1.Series(0).Items
+        item.Appearance.FillStyle.MainColor = barColors(System.Math.Max(System.Threading.Interlocked.Increment(i), i - 1))
+    Next
+End Sub
+
 ````
 
 {{endregion}} 

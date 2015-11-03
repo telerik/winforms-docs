@@ -38,25 +38,20 @@ __TodayButton__
 | ------ | ------ |
 |Text|Gets or sets the text associated with Today button.|#_[C#] Assigning the TodayButton Text_
 
-	
-
-
 
 {{source=..\SamplesCS\Calendar\Calendar1.cs region=localizingText}} 
 {{source=..\SamplesVB\Calendar\Calendar1.vb region=localizingText}} 
 
 ````C#
-            this.radCalendar1.TodayButton.Text = "Aujourd'hui";
+this.radCalendar1.TodayButton.Text = "Aujourd'hui";
+
 ````
 ````VB.NET
-        Me.RadCalendar1.TodayButton.Text = "Aujourd'hui"
-        '
+Me.RadCalendar1.TodayButton.Text = "Aujourd'hui"
+
 ````
 
 {{endregion}} 
-
-
-
 
 __ClearButton__
 

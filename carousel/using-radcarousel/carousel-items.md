@@ -27,37 +27,38 @@ To add items to the carousel without [data binding]({%slug winforms/carousel/usi
 {{source=..\SamplesVB\Carousel\CarouselItems.vb region=carouselItems}} 
 
 ````C#
-            radCarousel1.Items.Add(new RadButtonElement("My Button"));
-            RadCheckBoxElement checkbox = new RadCheckBoxElement();
-            checkbox.Text = "My Checkbox";
-            radCarousel1.Items.Add(checkbox);
-            RadRadioButtonElement radio1 = new RadRadioButtonElement();
-            radio1.Text = "Choice 1";
-            radio1.ToggleState = ToggleState.On;
-            RadRadioButtonElement radio2 = new RadRadioButtonElement();
-            radio2.Text = "Choice 2";
-            RadRadioButtonElement radio3 = new RadRadioButtonElement();
-            radio3.Text = "Choice 3";
-            radCarousel1.Items.Add(radio1);
-            radCarousel1.Items.Add(radio2);
-            radCarousel1.Items.Add(radio3);
+radCarousel1.Items.Add(new RadButtonElement("My Button"));
+RadCheckBoxElement checkbox = new RadCheckBoxElement();
+checkbox.Text = "My Checkbox";
+radCarousel1.Items.Add(checkbox);
+RadRadioButtonElement radio1 = new RadRadioButtonElement();
+radio1.Text = "Choice 1";
+radio1.ToggleState = ToggleState.On;
+RadRadioButtonElement radio2 = new RadRadioButtonElement();
+radio2.Text = "Choice 2";
+RadRadioButtonElement radio3 = new RadRadioButtonElement();
+radio3.Text = "Choice 3";
+radCarousel1.Items.Add(radio1);
+radCarousel1.Items.Add(radio2);
+radCarousel1.Items.Add(radio3);
+
 ````
 ````VB.NET
-        RadCarousel1.Items.Add(New RadButtonElement("My Button"))
-        Dim checkbox As New RadCheckBoxElement()
-        checkbox.Text = "My Checkbox"
-        RadCarousel1.Items.Add(checkbox)
-        Dim radio1 As New RadRadioButtonElement()
-        radio1.Text = "Choice 1"
-        radio1.ToggleState = ToggleState.On
-        Dim radio2 As New RadRadioButtonElement()
-        radio2.Text = "Choice 2"
-        Dim radio3 As New RadRadioButtonElement()
-        radio3.Text = "Choice 3"
-        RadCarousel1.Items.Add(radio1)
-        RadCarousel1.Items.Add(radio2)
-        RadCarousel1.Items.Add(radio3)
-        '
+RadCarousel1.Items.Add(New RadButtonElement("My Button"))
+Dim checkbox As New RadCheckBoxElement()
+checkbox.Text = "My Checkbox"
+RadCarousel1.Items.Add(checkbox)
+Dim radio1 As New RadRadioButtonElement()
+radio1.Text = "Choice 1"
+radio1.ToggleState = ToggleState.On
+Dim radio2 As New RadRadioButtonElement()
+radio2.Text = "Choice 2"
+Dim radio3 As New RadRadioButtonElement()
+radio3.Text = "Choice 3"
+RadCarousel1.Items.Add(radio1)
+RadCarousel1.Items.Add(radio2)
+RadCarousel1.Items.Add(radio3)
+
 ````
 
 {{endregion}} 
@@ -86,13 +87,14 @@ __Deleting Carousel Items__
 {{source=..\SamplesVB\Carousel\CarouselItems.vb region=carouselDeletingItems}} 
 
 ````C#
-            radCarousel1.Items.Remove(radCarousel1.Items[0]);
-            radCarousel1.Items.RemoveAt(0);
+radCarousel1.Items.Remove(radCarousel1.Items[0]);
+radCarousel1.Items.RemoveAt(0);
+
 ````
 ````VB.NET
-        RadCarousel1.Items.Remove(RadCarousel1.Items(0))
-        RadCarousel1.Items.RemoveAt(0)
-        '
+RadCarousel1.Items.Remove(RadCarousel1.Items(0))
+RadCarousel1.Items.RemoveAt(0)
+
 ````
 
 {{endregion}} 

@@ -38,11 +38,12 @@ Other Gantt chart issues:
 {{source=..\SamplesVB\Chart\GanttChart.vb region=valueFormat}} 
 
 ````C#
-            radChart1.PlotArea.YAxis.Appearance.ValueFormat = Telerik.Charting.Styles.ChartValueFormat.ShortDate;
+radChart1.PlotArea.YAxis.Appearance.ValueFormat = Telerik.Charting.Styles.ChartValueFormat.ShortDate;
+
 ````
 ````VB.NET
-        RadChart1.PlotArea.YAxis.Appearance.ValueFormat = Telerik.Charting.Styles.ChartValueFormat.ShortDate
-        '
+RadChart1.PlotArea.YAxis.Appearance.ValueFormat = Telerik.Charting.Styles.ChartValueFormat.ShortDate
+
 ````
 
 {{endregion}} 

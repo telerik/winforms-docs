@@ -11,9 +11,6 @@ position: 3
 # Footer
 
 
-
-## 
-
 The Footer/Status bar area of __RadCalendar__ is located below the main calendar content area. 
 
 ![calendar-customizing-appearance-footer 003](images/calendar-customizing-appearance-footer003.png)
@@ -34,13 +31,14 @@ By default the footer contains a string showing the current date and time and tw
 {{source=..\SamplesVB\Calendar\Calendar1.vb region=usingTodayButton}} 
 
 ````C#
-            radCalendar1.TodayButton.Text = "Go to Today";
-            radCalendar1.TodayButton.Image = imageList1.Images[0];
+radCalendar1.TodayButton.Text = "Go to Today";
+radCalendar1.TodayButton.Image = imageList1.Images[0];
+
 ````
 ````VB.NET
-        RadCalendar1.TodayButton.Text = "Go to Today"
-        RadCalendar1.TodayButton.Image = ImageList1.Images(0)
-        '
+RadCalendar1.TodayButton.Text = "Go to Today"
+RadCalendar1.TodayButton.Image = ImageList1.Images(0)
+
 ````
 
 {{endregion}} 

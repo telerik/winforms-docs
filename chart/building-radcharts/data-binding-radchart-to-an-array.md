@@ -25,13 +25,14 @@ To bind a __RadChart__ to an [Array](http://msdn2.microsoft.com/en-us/library/
 {{source=..\SamplesVB\Chart\DataBindingToArray.vb region=bindToArray}} 
 
 ````C#
-            int[] intArray = new int[4] { 10, 12, 13, 5 };
-            radChart1.DataSource = intArray;
+int[] intArray = new int[4] { 10, 12, 13, 5 };
+radChart1.DataSource = intArray;
+
 ````
 ````VB.NET
-        RadChart1.DataSource = New Double() {1.4, 1.9, 3.6, 3.6, 4.1}
-        RadChart1.ChartTitle.TextBlock.Text = "Units Purchased (Thousands)"
-        '
+RadChart1.DataSource = New Double() {1.4, 1.9, 3.6, 3.6, 4.1}
+RadChart1.ChartTitle.TextBlock.Text = "Units Purchased (Thousands)"
+
 ````
 
 {{endregion}} 

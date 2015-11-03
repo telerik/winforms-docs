@@ -33,17 +33,18 @@ __Selecting dates__
 {{source=..\SamplesVB\Calendar\Calendar1.vb region=selectingDates}} 
 
 ````C#
-            radCalendar1.AllowMultipleSelect = true;
-            radCalendar1.SelectedDates.Add(new DateTime(2006, 10, 20, 0, 0, 0, 0));
-            radCalendar1.SelectedDates.Add(new DateTime(2006, 10, 19, 0, 0, 0, 0));
-            radCalendar1.SelectedDates.Add(new DateTime(2006, 10, 18, 0, 0, 0, 0));
+radCalendar1.AllowMultipleSelect = true;
+radCalendar1.SelectedDates.Add(new DateTime(2006, 10, 20, 0, 0, 0, 0));
+radCalendar1.SelectedDates.Add(new DateTime(2006, 10, 19, 0, 0, 0, 0));
+radCalendar1.SelectedDates.Add(new DateTime(2006, 10, 18, 0, 0, 0, 0));
+
 ````
 ````VB.NET
-        RadCalendar1.AllowMultipleSelect = True
-        RadCalendar1.SelectedDates.Add(New DateTime(2006, 10, 20, 0, 0, 0, 0))
-        RadCalendar1.SelectedDates.Add(New DateTime(2006, 10, 19, 0, 0, 0, 0))
-        RadCalendar1.SelectedDates.Add(New DateTime(2006, 10, 18, 0, 0, 0, 0))
-        '
+RadCalendar1.AllowMultipleSelect = True
+RadCalendar1.SelectedDates.Add(New DateTime(2006, 10, 20, 0, 0, 0, 0))
+RadCalendar1.SelectedDates.Add(New DateTime(2006, 10, 19, 0, 0, 0, 0))
+RadCalendar1.SelectedDates.Add(New DateTime(2006, 10, 18, 0, 0, 0, 0))
+
 ````
 
 {{endregion}} 
@@ -57,13 +58,14 @@ __Using SelectedDates.AddRange()__
 {{source=..\SamplesVB\Calendar\Calendar1.vb region=usingAddRange}} 
 
 ````C#
-            radCalendar1.SelectedDate = new System.DateTime(2007, 9, 17, 0, 0, 0, 0);
-            radCalendar1.SelectedDates.AddRange(new DateTime[] { new DateTime(2007, 9, 17, 0, 0, 0, 0) });
+radCalendar1.SelectedDate = new System.DateTime(2007, 9, 17, 0, 0, 0, 0);
+radCalendar1.SelectedDates.AddRange(new DateTime[] { new DateTime(2007, 9, 17, 0, 0, 0, 0) });
+
 ````
 ````VB.NET
-        RadCalendar1.SelectedDate = New Date(2007, 9, 17, 0, 0, 0, 0)
-        RadCalendar1.SelectedDates.AddRange(New Date() {New Date(2007, 9, 17, 0, 0, 0, 0)})
-        '
+RadCalendar1.SelectedDate = New Date(2007, 9, 17, 0, 0, 0, 0)
+RadCalendar1.SelectedDates.AddRange(New Date() {New Date(2007, 9, 17, 0, 0, 0, 0)})
+
 ````
 
 {{endregion}} 

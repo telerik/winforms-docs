@@ -22,23 +22,24 @@ The example below is the result of binding a [generic List<>](http://msdn2.micro
 {{source=..\SamplesVB\Chart\DataBindingToGenericListOfSimpleTypes.vb region=bindToGenericListOfSimpleTypes}} 
 
 ````C#
-            List<double> chartData = new List<double>();
-            chartData.Add(34);
-            chartData.Add(45);
-            chartData.Add(56);
-            chartData.Add(67);
-            chartData.Add(78);
-            radChart1.DataSource = chartData;
+List<double> chartData = new List<double>();
+chartData.Add(34);
+chartData.Add(45);
+chartData.Add(56);
+chartData.Add(67);
+chartData.Add(78);
+radChart1.DataSource = chartData;
+
 ````
 ````VB.NET
-        Dim chartData As New List(Of Double)()
-        chartData.Add(34)
-        chartData.Add(45)
-        chartData.Add(56)
-        chartData.Add(67)
-        chartData.Add(78)
-        RadChart1.DataSource = chartData
-        '
+Dim chartData As New List(Of Double)()
+chartData.Add(34)
+chartData.Add(45)
+chartData.Add(56)
+chartData.Add(67)
+chartData.Add(78)
+RadChart1.DataSource = chartData
+
 ````
 
 {{endregion}} 

@@ -31,21 +31,22 @@ Below is a sample implementation of an English localization provider:
 {{source=..\SamplesVB\Calendar\Localization\LocalizationProvider.vb region=Localization}} 
 
 ````C#
-    public class MyEnglishCalendarLocalizationProvider : CalendarLocalizationProvider
+public class MyEnglishCalendarLocalizationProvider : CalendarLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
     {
-        public override string GetLocalizedString(string id)
+        switch (id)
         {
-            switch (id)
-            {
-                case CalendarStringId.CalendarClearButton:
-                    return "Close";
-                case CalendarStringId.CalendarTodayButton:
-                    return "Today";
-                default:
-                    return base.GetLocalizedString(id);
-            }
+            case CalendarStringId.CalendarClearButton:
+                return "Close";
+            case CalendarStringId.CalendarTodayButton:
+                return "Today";
+            default:
+                return base.GetLocalizedString(id);
         }
     }
+}
+
 ````
 ````VB.NET
 Public Class MyEnglishCalendarLocalizationProvider
@@ -61,7 +62,7 @@ Public Class MyEnglishCalendarLocalizationProvider
         End Select
     End Function
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -72,11 +73,12 @@ To apply the custom localization provider, instantiate and assign it to the curr
 {{source=..\SamplesVB\Calendar\Localization\LocalizationProvider.vb region=Usage}} 
 
 ````C#
-            CalendarLocalizationProvider.CurrentProvider = new MyEnglishCalendarLocalizationProvider();
+CalendarLocalizationProvider.CurrentProvider = new MyEnglishCalendarLocalizationProvider();
+
 ````
 ````VB.NET
-        CalendarLocalizationProvider.CurrentProvider = New MyEnglishCalendarLocalizationProvider()
-        '
+CalendarLocalizationProvider.CurrentProvider = New MyEnglishCalendarLocalizationProvider()
+
 ````
 
 {{endregion}} 

@@ -25,11 +25,12 @@ __Assigning RightToLeft__
 {{source=..\SamplesVB\Calendar\ColumnRowHeaders.vb region=rtl}} 
 
 ````C#
-            radCalendar1.RightToLeft = RightToLeft.Yes;
+radCalendar1.RightToLeft = RightToLeft.Yes;
+
 ````
 ````VB.NET
-        RadCalendar1.RightToLeft = RightToLeft.Yes
-        '
+RadCalendar1.RightToLeft = RightToLeft.Yes
+
 ````
 
 {{endregion}} 

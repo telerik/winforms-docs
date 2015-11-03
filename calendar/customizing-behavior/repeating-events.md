@@ -44,19 +44,20 @@ __Configuring a recurring event__
 {{source=..\SamplesVB\Calendar\Calendar1.vb region=calendarDays}} 
 
 ````C#
-            RadCalendarDay day = new RadCalendarDay();
-            day.Date = new DateTime(2011, 2, 5, 0, 0, 0, 0);
-            day.Recurring = RecurringEvents.DayInMonth;
-            day.Selectable = false;
-            radCalendar1.SpecialDays.Add(day);
+RadCalendarDay day = new RadCalendarDay();
+day.Date = new DateTime(2011, 2, 5, 0, 0, 0, 0);
+day.Recurring = RecurringEvents.DayInMonth;
+day.Selectable = false;
+radCalendar1.SpecialDays.Add(day);
+
 ````
 ````VB.NET
-        Dim day As New RadCalendarDay()
-        day.Date = New DateTime(2011, 2, 5, 0, 0, 0, 0)
-        day.Recurring = RecurringEvents.DayInMonth
-        day.Selectable = False
-        RadCalendar1.SpecialDays.Add(day)
-        '
+Dim day As New RadCalendarDay()
+day.Date = New DateTime(2011, 2, 5, 0, 0, 0, 0)
+day.Recurring = RecurringEvents.DayInMonth
+day.Selectable = False
+RadCalendar1.SpecialDays.Add(day)
+
 ````
 
 {{endregion}} 

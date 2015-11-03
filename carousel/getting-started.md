@@ -44,50 +44,51 @@ __Defining the Path and Populating the Carousel Items__
 {{source=..\SamplesVB\Carousel\CarouselGettingStarted.vb region=carouselGettingStarted}} 
 
 ````C#
-        private void CarouselGettingStarted_Load(object sender, EventArgs e)
-        {
-             // define an elliptical path
-            CarouselEllipsePath path = new CarouselEllipsePath();
-            // put the center point of the path in the center of the form
-            path.Center = new Telerik.WinControls.UI.Point3D(50, 50, 0);
-            path.FinalAngle = -100;
-            path.InitialAngle = -90;
-            path.U = new Telerik.WinControls.UI.Point3D(-20, -17, -50);
-            path.V = new Telerik.WinControls.UI.Point3D(30, -25, -60);
-            this.radCarousel1.CarouselPath = path;
-            // populate carousel items
-            radCarousel1.Items.Add(new RadButtonElement("Products"));
-            radCarousel1.Items.Add(new RadButtonElement("Services"));
-            radCarousel1.Items.Add(new RadButtonElement("Consulting"));
-            radCarousel1.Items.Add(new RadButtonElement("Support"));
-            RadLabelElement label = new RadLabelElement();
-            label.Text = "Preferences";
-            label.Font = new Font("Arial", 7, FontStyle.Italic | FontStyle.Bold);
-            radCarousel1.Items.Add(label);
-        }
+private void CarouselGettingStarted_Load(object sender, EventArgs e)
+{
+     // define an elliptical path
+    CarouselEllipsePath path = new CarouselEllipsePath();
+    // put the center point of the path in the center of the form
+    path.Center = new Telerik.WinControls.UI.Point3D(50, 50, 0);
+    path.FinalAngle = -100;
+    path.InitialAngle = -90;
+    path.U = new Telerik.WinControls.UI.Point3D(-20, -17, -50);
+    path.V = new Telerik.WinControls.UI.Point3D(30, -25, -60);
+    this.radCarousel1.CarouselPath = path;
+    // populate carousel items
+    radCarousel1.Items.Add(new RadButtonElement("Products"));
+    radCarousel1.Items.Add(new RadButtonElement("Services"));
+    radCarousel1.Items.Add(new RadButtonElement("Consulting"));
+    radCarousel1.Items.Add(new RadButtonElement("Support"));
+    RadLabelElement label = new RadLabelElement();
+    label.Text = "Preferences";
+    label.Font = new Font("Arial", 7, FontStyle.Italic | FontStyle.Bold);
+    radCarousel1.Items.Add(label);
+}
+
 ````
 ````VB.NET
-    Private Sub CarouselGettingStarted_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        ' define an elliptical path
-        Dim path As New CarouselEllipsePath()
-        ' put the center point of the path in the center of the form
-        path.Center = New Point3D(50, 50, 0)
-        path.InitialAngle = -100
-        path.FinalAngle = -90
-        path.U = New Point3D(-20, -17, -50)
-        path.V = New Point3D(30, -25, -60)
-        radCarousel1.CarouselPath = path
-        ' populate carousel items
-        radCarousel1.Items.Add(New RadButtonElement("Products"))
-        radCarousel1.Items.Add(New RadButtonElement("Services"))
-        radCarousel1.Items.Add(New RadButtonElement("Consulting"))
-        radCarousel1.Items.Add(New RadButtonElement("Support"))
-        Dim label As New RadLabelElement()
-        label.Text = "Preferences"
-        label.Font = New Font("Arial", 7, FontStyle.Italic Or FontStyle.Bold)
-        radCarousel1.Items.Add(label)
-    End Sub
-    '
+Private Sub CarouselGettingStarted_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    ' define an elliptical path
+    Dim path As New CarouselEllipsePath()
+    ' put the center point of the path in the center of the form
+    path.Center = New Point3D(50, 50, 0)
+    path.InitialAngle = -100
+    path.FinalAngle = -90
+    path.U = New Point3D(-20, -17, -50)
+    path.V = New Point3D(30, -25, -60)
+    radCarousel1.CarouselPath = path
+    ' populate carousel items
+    radCarousel1.Items.Add(New RadButtonElement("Products"))
+    radCarousel1.Items.Add(New RadButtonElement("Services"))
+    radCarousel1.Items.Add(New RadButtonElement("Consulting"))
+    radCarousel1.Items.Add(New RadButtonElement("Support"))
+    Dim label As New RadLabelElement()
+    label.Text = "Preferences"
+    label.Font = New Font("Arial", 7, FontStyle.Italic Or FontStyle.Bold)
+    radCarousel1.Items.Add(label)
+End Sub
+
 ````
 
 {{endregion}} 
