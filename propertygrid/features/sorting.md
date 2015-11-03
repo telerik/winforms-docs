@@ -10,20 +10,9 @@ position: 3
 
 # Sorting
 
+The sorting capabilities can be controlled either by using the predefined sorting options in the __PropertySort__ property together with the __SortOrder__ property, or you can use your own sorting by adding a predefined __SortDescriptor__ to the __SortDescriptor__ collection of RadPropertyGrid. The first code snippet demonstrates how to sort the items programmatically in a descending order:
 
-
-## 
-
-The sorting capabilities can be controlled either by using the predefined sorting options in the 
-        	__PropertySort__ property together with the 
-        	__SortOrder__ property, or you can use your own sorting by adding a predefined
-        	__SortDescriptor__ to the __SortDescriptor__ collection of RadPropertyGrid.
-        	The first code snippet demonstrates how to sort the items programmatically in a descending order:
-        #_[C#] Default sorting_
-
-	
-
-
+#### Default sorting
 
 {{source=..\SamplesCS\PropertyGrid\Features\PropertyGridSorting.cs region=Sorting}} 
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridSorting.vb region=Sorting}} 
@@ -43,10 +32,7 @@ The sorting capabilities can be controlled either by using the predefined sortin
 
 ![propertygrid-features-sorting 001](images/propertygrid-features-sorting001.png)
 
-Another way to sort the items is to create a __SortDescriptor__ and add it to the
-        	__SortDescriptors__ collection of the control. Additionally, to enable sorting with sort descriptors,
-        	you have to set the __EnableSorting__ property to *true*.
-        
+Another way to sort the items is to create a __SortDescriptor__ and add it to the __SortDescriptors__ collection of the control. Additionally, to enable sorting with sort descriptors, you have to set the __EnableSorting__ property to *true*.
 
 You can sort by the following criteria’s:      
 
@@ -58,19 +44,15 @@ You can sort by the following criteria’s:
 
 * __FormattedValue__ - the value of the property converted to string.
 
-* __Label__ - by default this is identical to the property name, unless
-        				changed by setting the __Label__ property of the item.
+* __Label__ - by default this is identical to the property name, unless changed by setting the __Label__ property of the item.
 
 * __Description__ - this is determined by the property __Description__ attribute/
 
 * __OriginalValue__ - the value used when the property is initialized.
 
 Here is an example of sorting the items by their value in ascending order:
-        #_[C#] Sorting with SortDescriptors_
 
-	
-
-
+#### Sorting with SortDescriptors
 
 {{source=..\SamplesCS\PropertyGrid\Features\PropertyGridSorting.cs region=SortDescriptor}} 
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridSorting.vb region=SortDescriptor}} 
@@ -87,7 +69,6 @@ Here is an example of sorting the items by their value in ascending order:
         '
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![propertygrid-features-sorting 002](images/propertygrid-features-sorting002.png)

@@ -458,6 +458,15 @@ navigation:
     propertygrid:
         title: PropertyGrid
         position: 35
+    propertygrid/editors:
+        title: Editors
+        position: 10
+    propertygrid/export-data:
+        title: Export Data
+        position: 11
+    propertygrid/features:
+        title: Features
+        position: 13		
     rangeselector:
         title: RangeSelector
         position: 36

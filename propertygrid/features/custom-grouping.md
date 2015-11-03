@@ -10,22 +10,13 @@ position: 2
 
 # Custom Grouping
 
-
-
-Custom grouping is a flexible mechanism for creating RadPropertyGrid groups by using custom logic. It has a higher
-      	priority than the applied __GroupDescriptors__. Grouping is applied if user grouping is enabled through the 
-      	__RadPropertyGrid.EnableGrouping__ or __PropertyGridElement.EnableGrouping__ properties.
-      	By default, grouping is enabled.
-      
+Custom grouping is a flexible mechanism for creating RadPropertyGrid groups by using custom logic. It has a higher priority than the applied __GroupDescriptors__. Grouping is applied if user grouping is enabled through the __RadPropertyGrid.EnableGrouping__ or __PropertyGridElement.EnableGrouping__ properties. By default, grouping is enabled.
 
 You can use the __ItemFormatting__ event to format the group text of the created custom groups.
 
 ## Using the CustomGrouping event
 
-The __CustomGrouping__ event is fired if custom grouping is enabled through the 
-        	__RadPropertyGrid.EnableCustomGrouping__or __PropertyGridElement.EnableCustomGrouping__
-        	properties. By default, custom grouping is disabled.
-        
+The __CustomGrouping__ event is fired if custom grouping is enabled through the __RadPropertyGrid.EnableCustomGrouping__ or __PropertyGridElement.EnableCustomGrouping__ properties. By default, custom grouping is disabled.
 
 * __PropertyGridTable__ – the table while holds the items that will be grouped
 
@@ -35,11 +26,9 @@ The __CustomGrouping__ event is fired if custom grouping is enabled through the
 
 * __Handled__ – defines whether the item is processed by the custom algorithm or by the applied group descriptors.
 
-The following example demonstrates how to handle the __CustomGrouping__ event to group the RadPropertyGrid items by the type of the property:#_[C#] Custom grouping_
+The following example demonstrates how to handle the __CustomGrouping__ event to group the RadPropertyGrid items by the type of the property:
 
-	
-
-
+#### Custom grouping
 
 {{source=..\SamplesCS\PropertyGrid\Features\PropertyGridCustomGrouping.cs region=CustomGrouping}} 
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridCustomGrouping.vb region=CustomGrouping}} 
@@ -119,7 +108,6 @@ The following example demonstrates how to handle the __CustomGrouping__ event to
     '
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![propertygrid-features-custom-grouping 001](images/propertygrid-features-custom-grouping001.png)

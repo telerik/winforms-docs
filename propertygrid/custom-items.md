@@ -5,24 +5,14 @@ description: Custom items
 slug: winforms/propertygrid/custom-items
 tags: custom,items
 published: True
-position: 5
+position: 6
 ---
 
 # Custom items
 
+__RadPropertyGrid__ allows you to create and use your own custom value items, allowing you to add the desired editors to fit your business need. In the following example, we will add two radio buttons as value editor for a property grid item.<br>![propertygrid-custom-items 001](images/propertygrid-custom-items001.gif)
 
-
-__RadPropertyGrid__ allows you to create and use your own custom value items, allowing you to add the desired editors to fit your business need.
-        In the following example, we will add two radio buttons as value editor for a property grid item.![propertygrid-custom-items 001](images/propertygrid-custom-items001.gif)
-
-## 
-
-Let’s start by specifying the RadPropertyGrid.__SelectedObject__ property, so out controls gets populated with some data. 
-        For this purpose, we will use the *Item* class which is defined below:#_[C#]_
-
-	
-
-
+Let’s start by specifying the RadPropertyGrid.__SelectedObject__ property, so out controls gets populated with some data. For this purpose, we will use the *Item* class which is defined below:
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=ClassItem}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=ClassItem}} 
@@ -99,17 +89,9 @@ Let’s start by specifying the RadPropertyGrid.__SelectedObject__ property, so 
     '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-Next, we should create a custom __PropertyGridValueElement__ which is purposed to be used in a derived __PropertyGridItemElement__. 
-        Our custom implementation of the __PropertyGridValueElement__ will demonstrate how to insert radio buttons for the Item.__DeliveryType__ property. #_[C#]_
-
-	
-
-
+Next, we should create a custom __PropertyGridValueElement__ which is purposed to be used in a derived __PropertyGridItemElement__. Our custom implementation of the __PropertyGridValueElement__ will demonstrate how to insert radio buttons for the Item.__DeliveryType__ property.
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=PropertyGridValueElement}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=PropertyGridValueElement}} 
@@ -202,17 +184,9 @@ Next, we should create a custom __PropertyGridValueElement__ which is purposed t
     '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-To put this value element in action, we will create a descendant of __PropertyGridItemElement__, and we will override its 
-        __CreatePropertyGridValueElement__ method:#_[C#]_
-
-	
-
-
+To put this value element in action, we will create a descendant of __PropertyGridItemElement__, and we will override its __CreatePropertyGridValueElement__ method:
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=PropertyGridItemElement}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=PropertyGridItemElement}} 
@@ -253,17 +227,9 @@ To put this value element in action, we will create a descendant of __PropertyGr
     '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-Back to the control, let’s subscribe to the RadPropertyGrid.__CreateItemElement__ event which gives you the opportunity to replace the
-        item created for the __DeliveryType__ property with your custom one:#_[C#]_
-
-	
-
-
+Back to the control, let’s subscribe to the RadPropertyGrid.__CreateItemElement__ event which gives you the opportunity to replace the item created for the __DeliveryType__ property with your custom one:
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=CreateItemElement}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=CreateItemElement}} 
@@ -290,21 +256,12 @@ Back to the control, let’s subscribe to the RadPropertyGrid.__CreateItemElemen
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 >note In order to avoid reusing of the custom element for other items, you can override the PropertyGridItemElement. __IsCompatible__ method and control whether the custom element is applicable for the specific __PropertyGridItem__ .
 >
 
-
-The next thing we need to do is to stop entering edit mode when clicking over one of the radio buttons by using the RadPropertyGrid.__Editing__ event. 
-        Thus, the user will be allowed to select directly the preferred delivery type without necessity to enter edit mode. #_[C#]_
-
-	
-
-
+The next thing we need to do is to stop entering edit mode when clicking over one of the radio buttons by using the RadPropertyGrid.__Editing__ event. Thus, the user will be allowed to select directly the preferred delivery type without necessity to enter edit mode.
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=Editing}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=Editing}} 
@@ -331,16 +288,9 @@ The next thing we need to do is to stop entering edit mode when clicking over on
     '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-The last thing we should update is to adjust the PropertyGridElement.PropertyTableElement.__ItemHeight__ property with such a value to fit the available content:#_[C#]_
-
-	
-
-
+The last thing we should update is to adjust the PropertyGridElement.PropertyTableElement.__ItemHeight__ property with such a value to fit the available content:
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=ItemHeight}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=ItemHeight}} 
@@ -355,7 +305,4 @@ The last thing we should update is to adjust the PropertyGridElement.PropertyTab
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
