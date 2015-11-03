@@ -15,25 +15,7 @@ position: 0
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|The new and
-                improved RadDock for WinForms has landed and this is your
-                opportunity to get a first look. Join Developer Evangelist John
-                Kellar as he shows you how quickly you can get up and running
-                with the new version of RadDock. John will cover the new
-                features so you know what to expect and how you can use RadDock
-                in your applications once it is officially released. (Runtime:
-                32:54)[
-                Introducing the new RadDock for WinForms
-                ](http://tv.telerik.com/winforms/raddock/introducing-new-raddock-winforms)![dock-architecture-and-features-understanding-raddock 001](images/dock-architecture-and-features-understanding-raddock001.png)|In this
-                video, you will learn how to get started with the run-time and
-                design-time features in the new RadDock for WinForms. You will
-                see the rich RadDock run-time features in action and you will
-                see how easy it is to get started with RadDock in Visual
-                Studio. You will also be introduced to the new Advanced Layout
-                Designer for RadDock, a design-time tool that makes it easy to
-                customize your RadDock layouts. (Runtime: 09:42)[
-                Getting Started with RadDock for WinForms
-                ](http://tv.telerik.com/winforms/raddock/getting-started-with-raddock-winforms)![dock-architecture-and-features-understanding-raddock 002](images/dock-architecture-and-features-understanding-raddock002.png)|
+|The new and improved RadDock for WinForms has landed and this is your opportunity to get a first look. Join Developer Evangelist John Kellar as he shows you how quickly you can get up and running with the new version of RadDock. John will cover the new features so you know what to expect and how you can use RadDock in your applications once it is officially released. (Runtime: 32:54)[ Introducing the new RadDock for WinForms ](http://tv.telerik.com/winforms/raddock/introducing-new-raddock-winforms)![dock-architecture-and-features-understanding-raddock 001](images/dock-architecture-and-features-understanding-raddock001.png)|In this video, you will learn how to get started with the run-time and design-time features in the new RadDock for WinForms. You will see the rich RadDock run-time features in action and you will see how easy it is to get started with RadDock in Visual Studio. You will also be introduced to the new Advanced Layout Designer for RadDock, a design-time tool that makes it easy to customize your RadDock layouts. (Runtime: 09:42)[ Getting Started with RadDock for WinForms ](http://tv.telerik.com/winforms/raddock/getting-started-with-raddock-winforms)![dock-architecture-and-features-understanding-raddock 002](images/dock-architecture-and-features-understanding-raddock002.png)|
 
 ## Anatomy of RadDock
 
@@ -65,16 +47,22 @@ __RadDock__ provides the end user a great deal of control over the placement of 
 
 * __RadSplitters__ are shown between dock containers (ToolTabStrips, DocumentTabStrips) to allow you to resize these containers.
 
-Both __ToolWindow__ and __DocumentWindow__ host other controls and provide two different approaches to managing layout.![dock-architecture-and-features-understanding-raddock 003](images/dock-architecture-and-features-understanding-raddock003.png)
+Both __ToolWindow__ and __DocumentWindow__ host other controls and provide two different approaches to managing layout.
+
+![dock-architecture-and-features-understanding-raddock 003](images/dock-architecture-and-features-understanding-raddock003.png)
 
 ## Document Outline tool
 
-You can inspect the hierarchy of the elements at design-time by using the Visual Studio Document Outline tool. In order to use it, simply go to View >> Other Windows >> Document Outline or press Ctrl+Alt+T. The screenshot below represents a RadDock instance at design-time and its corresponding hierarchy of elements in the Document Outline tool:![dock-architecture-and-features-understanding-raddock 004](images/dock-architecture-and-features-understanding-raddock004.png)
+You can inspect the hierarchy of the elements at design-time by using the Visual Studio Document Outline tool. In order to use it, simply go to View >> Other Windows >> Document Outline or press Ctrl+Alt+T. The screenshot below represents a RadDock instance at design-time and its corresponding hierarchy of elements in the Document Outline tool:
 
-
+![dock-architecture-and-features-understanding-raddock 004](images/dock-architecture-and-features-understanding-raddock004.png)
 
 ## Context Menus
 
-Differences in the behavior of __DocumentWindow__ vs. __ToolWindow__ are reflected in their context menus. __DocumentWindow__ has commands for closing windows, creating new horizontal and vertical tab groups and for moving windows between groups.![dock-architecture-and-features-understanding-raddock 006](images/dock-architecture-and-features-understanding-raddock006.png)
+Differences in the behavior of __DocumentWindow__ vs. __ToolWindow__ are reflected in their context menus. __DocumentWindow__ has commands for closing windows, creating new horizontal and vertical tab groups and for moving windows between groups.
 
-The __ToolWindow__ context menu has commands that allow the panel to be __Floating__ away from the form, __Dockable__ (causes the panel to dock) or __Tabbed Document__.  If __Tabbed Document__ is selected the __ToolWindow__ becomes hosted in a __DocumentTabStrip__ container along with the tabbed documents. __Auto Hide__ causes the panel to be unpinned and collapsed against the nearest edge of the __RadDock__ (see the diagram in "Anatomy of RadDock" above). __Hide__ makes the panel invisible. By default, hidden __ToolWindows__ are still part of the [RadDock]({%slug winforms/dock/object-model/raddock-properties-and-methods%}) ToolWindows collection.![dock-architecture-and-features-understanding-raddock 005](images/dock-architecture-and-features-understanding-raddock005.png)
+![dock-architecture-and-features-understanding-raddock 006](images/dock-architecture-and-features-understanding-raddock006.png)
+
+The __ToolWindow__ context menu has commands that allow the panel to be __Floating__ away from the form, __Dockable__ (causes the panel to dock) or __Tabbed Document__.  If __Tabbed Document__ is selected the __ToolWindow__ becomes hosted in a __DocumentTabStrip__ container along with the tabbed documents. __Auto Hide__ causes the panel to be unpinned and collapsed against the nearest edge of the __RadDock__ (see the diagram in "Anatomy of RadDock" above). __Hide__ makes the panel invisible. By default, hidden __ToolWindows__ are still part of the [RadDock]({%slug winforms/dock/object-model/raddock-properties-and-methods%}) ToolWindows collection.
+
+![dock-architecture-and-features-understanding-raddock 005](images/dock-architecture-and-features-understanding-raddock005.png)

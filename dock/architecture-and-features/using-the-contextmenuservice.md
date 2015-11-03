@@ -9,34 +9,22 @@ position: 9
 ---
 
 # Using the ContextMenuService
-
-
-
-
-
+ 
 ## Overview
-
-
-
+ 
 All context menu related operations are handled by a stand alone service, registered with RadDock - ContextMenuService. Each context menu request is passed to the service, which on its hand creates the appropriate menu items and raises several events, which allows users to modify existing items, add their own or even cancel the request.
-
-
-
-
-
+ 
 ## Modifying the existing context menus
+ 
 
+The following example demonstrates how you can hide the 'close' options from the DocumentWindow context menu. By default the menu looks like this:
 
+![dock-architecture-and-features-using-the-contextmenuservice 001](images/dock-architecture-and-features-using-the-contextmenuservice001.png)
 
-The following example demonstrates how you can hide the 'close' options from the DocumentWindow context menu. By default the menu looks like this:![dock-architecture-and-features-using-the-contextmenuservice 001](images/dock-architecture-and-features-using-the-contextmenuservice001.png)
+ 
+Let's get the ContextMenuService and subscribe to its ContextMenuDisplaying event:
 
-
-
-Let's get the ContextMenuService and subscribe to its ContextMenuDisplaying event:#_[C#] Getting the ContextMenuService_
-
-	
-
-
+#### Getting the ContextMenuService 
 
 {{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=gettingContextMenuService}} 
 {{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=gettingContextMenuService}} 
@@ -51,18 +39,11 @@ Let's get the ContextMenuService and subscribe to its ContextMenuDisplaying eve
         '
 ````
 
-{{endregion}} 
+{{endregion}}  
 
+Then, hide the 'close' options in the ContextMenuDisplaying event handler:
 
-
-
-
-
-Then, hide the 'close' options in the ContextMenuDisplaying event handler:#_[C#] Hiding the 'close' menu items_
-
-	
-
-
+#### Hiding the 'close' menu items 
 
 {{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=handlingContextMenuDisplaying}} 
 {{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=handlingContextMenuDisplaying}} 
@@ -110,26 +91,15 @@ Then, hide the 'close' options in the ContextMenuDisplaying event handler:#_[C#]
 ````
 
 {{endregion}} 
+ 
+The result is shown on the screenshot below:
 
-
-
-
-The result is shown on the screenshot below:![dock-architecture-and-features-using-the-contextmenuservice 002](images/dock-architecture-and-features-using-the-contextmenuservice002.png)
-
-
-
-
-
-## Menu items' names
-
-
+![dock-architecture-and-features-using-the-contextmenuservice 002](images/dock-architecture-and-features-using-the-contextmenuservice002.png)
+ 
+## Menu items' names 
 
 You can notice in the code snippet above that we are using the Name property of the items instead of the Text property. This allows you to handle the case even when a custom [RadDockLocalization]({%slug winforms/dock/localization/localization%}) provider is applied. The names for the menu items in RadDock are:
-
-
-
-
-
+ 
 | __Text__ | __Name__ |
 |Close|CloseWindow|
 |Close All But This|CloseAllButThis|

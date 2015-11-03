@@ -9,17 +9,10 @@ position: 8
 ---
 
 # AllowedDockStates
+ 
+__AllowedDockState__ property gives you the ability to determine the available dock states per ToolWindow. There are several options for this properties which can be combined by bitwise operations, for example:
 
-
-
-## 
-
-__AllowedDockState__ property gives you the ability to determine the available dock states per ToolWindow. There are several options for this properties which can be combined by bitwise operations, for example:#_[C#] Setting AllowedDockState property_
-
-	
-
-
-
+#### Setting AllowedDockState property 
 {{source=..\SamplesCS\Dock\CreatingRadDock.cs region=allowedDockState}} 
 {{source=..\SamplesVB\Dock\CreatingRadDock.vb region=allowedDockState}} 
 
@@ -32,17 +25,14 @@ __AllowedDockState__ property gives you the ability to determine the available d
 ````
 
 {{endregion}} 
+ 
+This automatically will remove the caption buttons that may be responsible for an unwanted state, for example closed. In addition, the unwanted menu items from the context menu will be disabled:
 
+![dock-object-model-allowed-dock-states 001](images/dock-object-model-allowed-dock-states001.png)
 
+The following setting will disable the Floating option:
 
-
-This automatically will remove the caption buttons that may be responsible for an unwanted state, for example closed. In addition, the unwanted menu items from the context menu will be disabled:![dock-object-model-allowed-dock-states 001](images/dock-object-model-allowed-dock-states001.png)
-
-The following setting will disable the Floating option:#_[C#] Setting the AllowedDockState property_
-
-	
-
-
+#### Setting the AllowedDockState property 
 
 {{source=..\SamplesCS\Dock\CreatingRadDock.cs region=notFloating}} 
 {{source=..\SamplesVB\Dock\CreatingRadDock.vb region=notFloating}} 

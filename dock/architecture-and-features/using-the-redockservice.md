@@ -12,52 +12,24 @@ position: 10
 
 
 
-RedockService comes in handy when you want to save the dock state of your 
-      DockWindows and restore this state later.
+RedockService comes in handy when you want to save the dock state of your DockWindows and restore this state later.
 
 ## Using the RedockService
 
 Let's take a look at the following scenario: 
-        
-        
-
-
-1. 
-
-We have a RadDock instance
-        containing several docked ToolWindows as shown below:        
+         
+1. We have a RadDock instance containing several docked ToolWindows as shown below:        
         
 
-![dock-architecture-and-features-using-the-redockservice 001](images/dock-architecture-and-features-using-the-redockservice001.png)
+	![dock-architecture-and-features-using-the-redockservice 001](images/dock-architecture-and-features-using-the-redockservice001.png)
 
-1. 
-
-
-  
-The end-user decides to float some of the ToolWindows:
+1. The end-user decides to float some of the ToolWindows:
    
 
-![dock-architecture-and-features-using-the-redockservice 002](images/dock-architecture-and-features-using-the-redockservice002.png)
+	![dock-architecture-and-features-using-the-redockservice 002](images/dock-architecture-and-features-using-the-redockservice002.png)
 
-1. 
-
-
-  
-
-  Now comes the time when the user wants to redock the floating ToolWindows. However,
-  the user does not only want to dock the ToolWindows, he/she want to achieve the layout that he/she 
-  had at the beginning. For that purpose, we can have a button or a menu item on the Click of which we
-  get the RedockService and return the floating windows to their original docked state by calling the
-  RestoreMethod of the service. When the user
-  clicks that button, he/she will get the layout below, which as you can see is the same as the layout that we 
-  had at the beginning:
-  
-      	#_[C#]_
-
-	
-
-
-
+1. Now comes the time when the user wants to redock the floating ToolWindows. However, the user does not only want to dock the ToolWindows, he/she want to achieve the layout that he/she had at the beginning. For that purpose, we can have a button or a menu item on the Click of which we get the RedockService and return the floating windows to their original docked state by calling the RestoreMethod of the service. When the user clicks that button, he/she will get the layout below, which as you can see is the same as the layout that we  had at the beginning:
+   
 {{source=..\SamplesCS\Dock\UsingTheRedockService.cs region=redockService}} 
 {{source=..\SamplesVB\Dock\UsingTheRedockService.vb region=redockService}} 
 
@@ -87,10 +59,7 @@ The end-user decides to float some of the ToolWindows:
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 ![dock-architecture-and-features-using-the-redockservice 001](images/dock-architecture-and-features-using-the-redockservice001.png)
 
 # See Also
