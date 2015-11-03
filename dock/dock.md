@@ -1,11 +1,11 @@
 ---
-title: Dock
+title: Overview
 page_title: Dock | UI for WinForms Documentation
 description: Dock
 slug: winforms/dock
 tags: dock
 published: True
-position: 17
+position: 0
 ---
 
 # Dock
