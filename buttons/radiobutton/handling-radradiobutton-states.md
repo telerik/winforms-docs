@@ -29,25 +29,20 @@ __Handling ToggleStateChanged event__
 {{source=..\SamplesVB\Buttons\RadioButton.vb region=handlingToggleStateChangedWithArgs}} 
 
 ````C#
+void radRadioButton2_ToggleStateChanged(object sender, StateChangedEventArgs args)
+{
+    MessageBox.Show(args.ToggleState.ToString());
+}
 
-        void radRadioButton2_ToggleStateChanged(object sender, StateChangedEventArgs args)
-        {
-            MessageBox.Show(args.ToggleState.ToString());
-        }
 ````
 ````VB.NET
+Private Sub radRadioButton2_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
+    MessageBox.Show(args.ToggleState.ToString())
+End Sub
 
-    Private Sub radRadioButton2_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
-        MessageBox.Show(args.ToggleState.ToString())
-    End Sub
-
-    '
 ````
 
 {{endregion}} 
-
-
-
 
 You can also handle the __ToggleStateChanging__ event. This event provides an opportunity to cancel the toggle state change. The __StateChangingEventArgs__ passed as a parameter to the event handler have NewValue and OldValue ToggleState members and a Boolean Cancel member.  __NewValue__ holds the value of __ToggleState__ that will be applied when the event is completed without being canceled. __OldValue__ holds the value of __ToggleState__ at the time the state change was initiated. __Canceled__ controls which value of __ToggleState__ is applied when the event completes. The default is __false__. Setting __Cancel__ to __true__ will prevent __ToggleStateChanged__ from firing and will leave the __ToggleState__ value as it was prior to the event.  In the example below the StateChangedEvent does not fire.
        
@@ -59,28 +54,24 @@ __[C#] Handling ToggleStateChanging event__
 {{source=..\SamplesVB\Buttons\RadioButton.vb region=StateChanging}} 
 
 ````C#
+void radRadioButton3_ToggleStateChanging(object sender, StateChangingEventArgs args)
+{
+    args.Cancel = true;
+}
+void radRadioButton3_ToggleStateChanged(object sender, StateChangedEventArgs args)
+{
+    this.radRadioButton3.Text = args.ToggleState.ToString();
+}
 
-        void radRadioButton3_ToggleStateChanging(object sender, StateChangingEventArgs args)
-        {
-            args.Cancel = true;
-        }
-
-        void radRadioButton3_ToggleStateChanged(object sender, StateChangedEventArgs args)
-        {
-            this.radRadioButton3.Text = args.ToggleState.ToString();
-        }
 ````
 ````VB.NET
+Private Sub radRadioButton3_ToggleStateChanging(ByVal sender As Object, ByVal args As StateChangingEventArgs)
+    args.Cancel = True
+End Sub
+Private Sub radRadioButton3_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
+    radRadioButton3.Text = args.ToggleState.ToString()
+End Sub
 
-    Private Sub radRadioButton3_ToggleStateChanging(ByVal sender As Object, ByVal args As StateChangingEventArgs)
-        args.Cancel = True
-    End Sub
-
-    Private Sub radRadioButton3_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
-        radRadioButton3.Text = args.ToggleState.ToString()
-    End Sub
-
-    '
 ````
 
 {{endregion}} 

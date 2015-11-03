@@ -21,14 +21,12 @@ You can present the content of your grid instance in a right-to-left direction b
 {{source=..\SamplesVB\Buttons\SplitButton1.vb region=rtl}} 
 
 ````C#
+radSplitButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
-            radSplitButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 ````
 ````VB.NET
+radSplitButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
-        radSplitButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-
-        '
 ````
 
 {{endregion}} 

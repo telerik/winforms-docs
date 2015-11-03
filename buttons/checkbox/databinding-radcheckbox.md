@@ -31,27 +31,24 @@ You can also add __DataBindings__ to your control programmatically. The followin
 {{source=..\SamplesVB\Buttons\CheckBox.vb region=databinding}} 
 
 ````C#
+this.radCheckBox1.IsThreeState = false;
+DataTable t = new DataTable();
+t.Columns.Add("A", typeof(bool));
+t.Rows.Add(true);
+t.Rows.Add(false);
+t.Rows.Add(true);
+this.radCheckBox1.DataBindings.Add(new Binding("IsChecked", t, "A"));
 
-            this.radCheckBox1.IsThreeState = false;
-            DataTable t = new DataTable();
-            t.Columns.Add("A", typeof(bool));
-            t.Rows.Add(true);
-            t.Rows.Add(false);
-            t.Rows.Add(true);
-
-            this.radCheckBox1.DataBindings.Add(new Binding("IsChecked", t, "A"));
 ````
 ````VB.NET
+Me.radCheckBox1.IsThreeState = False
+Dim t As New DataTable
+t.Columns.Add("A", GetType(Boolean))
+t.Rows.Add(True)
+t.Rows.Add(False)
+t.Rows.Add(True)
+Me.radCheckBox1.DataBindings.Add(New Binding("IsChecked", t, "A"))
 
-        Me.radCheckBox1.IsThreeState = False
-        Dim t As New DataTable
-        t.Columns.Add("A", GetType(Boolean))
-        t.Rows.Add(True)
-        t.Rows.Add(False)
-        t.Rows.Add(True)
-        Me.radCheckBox1.DataBindings.Add(New Binding("IsChecked", t, "A"))
-
-        '
 ````
 
 {{endregion}} 

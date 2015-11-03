@@ -25,20 +25,20 @@ __[C#] Adding a RadButton at runtime__
 {{source=..\SamplesVB\Buttons\Button.vb region=creatingbutton}} 
 
 ````C#
+RadButton myNewRadButton = new RadButton();
+myNewRadButton.Text = "My New RadButton";
+myNewRadButton.Width = 150;
+myNewRadButton.Height = 50;
+this.Controls.Add(myNewRadButton);
 
-            RadButton myNewRadButton = new RadButton();
-            myNewRadButton.Text = "My New RadButton";
-            myNewRadButton.Width = 150;
-            myNewRadButton.Height = 50;
-            this.Controls.Add(myNewRadButton);
 ````
 ````VB.NET
-        Dim myNewRadButton As New RadButton()
-        myNewRadButton.Text = "My New RadButton"
-        myNewRadButton.Width = 150
-        myNewRadButton.Height = 50
-        Me.Controls.Add(myNewRadButton)
-        '
+Dim myNewRadButton As New RadButton()
+myNewRadButton.Text = "My New RadButton"
+myNewRadButton.Width = 150
+myNewRadButton.Height = 50
+Me.Controls.Add(myNewRadButton)
+
 ````
 
 {{endregion}} 
@@ -54,12 +54,12 @@ Use the following code snippet to set the __TextRenderingHint__ property of the 
 {{source=..\SamplesVB\Buttons\Button.vb region=textrenderinghint}} 
 
 ````C#
+((TextPrimitive)myNewRadButton.ButtonElement.Children[1].Children[1]).TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
 
-            ((TextPrimitive)myNewRadButton.ButtonElement.Children[1].Children[1]).TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
 ````
 ````VB.NET
-        DirectCast(myNewRadButton.ButtonElement.Children(1).Children(1), TextPrimitive).TextRenderingHint = Drawing.Text.TextRenderingHint.AntiAlias
-        '
+DirectCast(myNewRadButton.ButtonElement.Children(1).Children(1), TextPrimitive).TextRenderingHint = Drawing.Text.TextRenderingHint.AntiAlias
+
 ````
 
 {{endregion}} 

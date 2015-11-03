@@ -22,18 +22,15 @@ All you need to do is to specify the character that will be used for a given co
 {{source=..\SamplesVB\Buttons\Button.vb region=mnemonics}} 
 
 ````C#
+this.radButton1.Text = "&radButton1";
 
-            this.radButton1.Text = "&radButton1";
 ````
 ````VB.NET
-        Me.radButton1.Text = "&radButton1"
-        '
+Me.radButton1.Text = "&radButton1"
+
 ````
 
 {{endregion}} 
-
-
-
 
 __UseMnemonic__ is a boolean property which controls whether the __&__ character is displayed as the symbol itself or whether it is used to designate a mnemonic (visualized as an underscore). Its default value is __true__ i.e. mnemonics are used by default.
 

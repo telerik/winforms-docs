@@ -12,8 +12,6 @@ position: 1
 
 
 
-## 
-
 __RadBindingNavigator__ extends [RadCommandBar]({%slug winforms/commandbar%}) control, so most of its ways for customization at runtime and design time will be valid here as well. __RadBindingNavigator__ displays two sets of buttons separated into two __CommandBarStripElement__ according to the purpose of their commands: Navigation and Editing.
         
 
@@ -45,32 +43,30 @@ Adding a __RadBindingNavigator__ control to a form and binding it to a data sour
 
 1. Setup the DataSource property of the BindingSource and the BindingSource property of __RadBindingNaviagator__:
           
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadBindingNavigatorForm.cs region=radBindingNavigator1}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadBindingNavigatorForm.vb region=radBindingNavigator1}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadBindingNavigatorForm.cs region=radBindingNavigator1}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadBindingNavigatorForm.vb region=radBindingNavigator1}} 
 
-	````C#
-            this.bindingSource1.DataSource = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8 };
-            this.radBindingNavigator1.BindingSource = this.bindingSource1;
-	````
-	````VB.NET
-            Me.bindingSource1.DataSource = New List(Of Integer)() From { _
-             1, _
-             2, _
-             3, _
-             4, _
-             5, _
-             6, _
-             7, _
-             8 _
-            }
-            Me.radBindingNavigator1.BindingSource = Me.bindingSource1
-            '
-	````
+````C#
+this.bindingSource1.DataSource = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8 };
+this.radBindingNavigator1.BindingSource = this.bindingSource1;
 
-	{{endregion}} 
+````
+````VB.NET
+Me.bindingSource1.DataSource = New List(Of Integer)() From { _
+ 1, _
+ 2, _
+ 3, _
+ 4, _
+ 5, _
+ 6, _
+ 7, _
+ 8 _
+}
+Me.radBindingNavigator1.BindingSource = Me.bindingSource1
 
+````
 
-
+{{endregion}} 
 
 1. Press F5 to run the project and you should see the following:
 

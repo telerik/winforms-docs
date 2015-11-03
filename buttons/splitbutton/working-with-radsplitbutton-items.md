@@ -40,40 +40,34 @@ You can also add items to RadSplitButton in code at run time. The following exam
 
 __Adding a RadMenuItem__
 
-
-
 {{source=..\SamplesCS\Buttons\SplitButton.cs region=items}} 
 {{source=..\SamplesVB\Buttons\SplitButton.vb region=items}} 
 
 ````C#
+private void Form1_Load(object sender, EventArgs e)
+{
+    RadMenuItem myRadMenuItem = new RadMenuItem();
+    myRadMenuItem.Text = "My New Item";
+    myRadMenuItem.Click += new EventHandler(myRadMenuItem_Click);
+    radSplitButton1.Items.Add(myRadMenuItem);
+}
+void myRadMenuItem_Click(object sender, EventArgs e)
+{
+    MessageBox.Show((sender as RadMenuItem).Text);
+}
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            RadMenuItem myRadMenuItem = new RadMenuItem();
-            myRadMenuItem.Text = "My New Item";
-            myRadMenuItem.Click += new EventHandler(myRadMenuItem_Click);
-            radSplitButton1.Items.Add(myRadMenuItem);
-        }
-
-        void myRadMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show((sender as RadMenuItem).Text);
-        }
 ````
 ````VB.NET
+Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Dim myRadMenuItem As New RadMenuItem()
+    myRadMenuItem.Text = "My New Item"
+    AddHandler myRadMenuItem.Click, AddressOf myRadMenuItem_Click
+    radSplitButton1.Items.Add(myRadMenuItem)
+End Sub
+Sub myRadMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+    MessageBox.Show((TryCast(sender, RadMenuItem)).Text)
+End Sub
 
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Dim myRadMenuItem As New RadMenuItem()
-        myRadMenuItem.Text = "My New Item"
-        AddHandler myRadMenuItem.Click, AddressOf myRadMenuItem_Click
-        radSplitButton1.Items.Add(myRadMenuItem)
-    End Sub
-
-    Sub myRadMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-        MessageBox.Show((TryCast(sender, RadMenuItem)).Text)
-    End Sub
-
-    '
 ````
 
 {{endregion}} 
@@ -91,38 +85,33 @@ __Adding a sub item__
 {{source=..\SamplesVB\Buttons\SplitButton1.vb region=subitems}} 
 
 ````C#
+private void Form1_Load(object sender, EventArgs e)
+{
+    radSplitButton1.Items.Add(new RadMenuItem("AAA"));
+    RadMenuItem mySubMenuItem = new RadMenuItem();
+    mySubMenuItem.Text = "Submenu Item";
+    mySubMenuItem.Click += new EventHandler(mySubMenuItem_Click);
+    RadMenuItem mainItem = radSplitButton1.Items[0] as RadMenuItem;
+    mainItem.Items.Add(mySubMenuItem);
+}
+void mySubMenuItem_Click(object sender, EventArgs e)
+{
+    MessageBox.Show((sender as RadMenuItem).Text);
+}
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            radSplitButton1.Items.Add(new RadMenuItem("AAA"));
-
-            RadMenuItem mySubMenuItem = new RadMenuItem();
-            mySubMenuItem.Text = "Submenu Item";
-            mySubMenuItem.Click += new EventHandler(mySubMenuItem_Click);
-            RadMenuItem mainItem = radSplitButton1.Items[0] as RadMenuItem;
-            mainItem.Items.Add(mySubMenuItem);
-        }
-
-        void mySubMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show((sender as RadMenuItem).Text);
-        }
 ````
 ````VB.NET
+Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Dim mySubMenuItem As New RadMenuItem()
+    mySubMenuItem.Text = "Submenu Item"
+    AddHandler mySubMenuItem.Click, AddressOf mySubMenuItem_Click
+    Dim mainItem As RadMenuItem = TryCast(radSplitButton1.Items(0), RadMenuItem)
+    mainItem.Items.Add(mySubMenuItem)
+End Sub
+Sub mySubMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+    MessageBox.Show((TryCast(sender, RadMenuItem)).Text)
+End Sub
 
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Dim mySubMenuItem As New RadMenuItem()
-        mySubMenuItem.Text = "Submenu Item"
-        AddHandler mySubMenuItem.Click, AddressOf mySubMenuItem_Click
-        Dim mainItem As RadMenuItem = TryCast(radSplitButton1.Items(0), RadMenuItem)
-        mainItem.Items.Add(mySubMenuItem)
-    End Sub
-
-    Sub mySubMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-        MessageBox.Show((TryCast(sender, RadMenuItem)).Text)
-    End Sub
-
-    '
 ````
 
 {{endregion}} 
@@ -157,14 +146,12 @@ __Assigning the default item__
 {{source=..\SamplesVB\Buttons\SplitButton1.vb region=mainItem}} 
 
 ````C#
+radSplitButton1.DefaultItem = mainItem;
 
-            radSplitButton1.DefaultItem = mainItem;
 ````
 ````VB.NET
+radSplitButton1.DefaultItem = mainItem
 
-        radSplitButton1.DefaultItem = mainItem
-
-        '
 ````
 
 {{endregion}} 

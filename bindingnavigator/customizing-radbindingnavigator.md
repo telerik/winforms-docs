@@ -20,23 +20,20 @@ Each of the control's elements can be accessed and customized. Once you access t
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadBindingNavigatorForm.vb region=custradBindingNavigator1}} 
 
 ````C#
+CommandBarButton newButton = new CommandBarButton();
+newButton.Image = Properties.Resources.details_icon;
+newButton.Click += new EventHandler(newButton_Click);
+this.radBindingNavigator1.Rows[0].Strips[1].Items.Add(new CommandBarSeparator());
+this.radBindingNavigator1.Rows[0].Strips[1].Items.Add(newButton);
 
-            CommandBarButton newButton = new CommandBarButton();
-            newButton.Image = Properties.Resources.details_icon;
-            newButton.Click += new EventHandler(newButton_Click);
-
-            this.radBindingNavigator1.Rows[0].Strips[1].Items.Add(new CommandBarSeparator());
-            this.radBindingNavigator1.Rows[0].Strips[1].Items.Add(newButton);
 ````
 ````VB.NET
+Dim newButton As New CommandBarButton()
+newButton.Image = My.Resources.details_icon
+AddHandler newButton.Click, AddressOf newButton_Click
+Me.radBindingNavigator1.Rows(0).Strips(1).Items.Add(New CommandBarSeparator())
+Me.radBindingNavigator1.Rows(0).Strips(1).Items.Add(newButton)
 
-            Dim newButton As New CommandBarButton()
-            newButton.Image = My.Resources.details_icon
-            AddHandler newButton.Click, AddressOf newButton_Click
-
-            Me.radBindingNavigator1.Rows(0).Strips(1).Items.Add(New CommandBarSeparator())
-            Me.radBindingNavigator1.Rows(0).Strips(1).Items.Add(newButton)
-            '
 ````
 
 {{endregion}} 

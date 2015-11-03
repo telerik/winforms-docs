@@ -36,13 +36,14 @@ Use the __TextImageRelation__ property to align the image with text. Note that t
 {{source=..\SamplesVB\Buttons\RadioButtonDesigning.vb region=alignments}} 
 
 ````C#
-            this.radRadioButton10.RadioCheckAlignment = ContentAlignment.MiddleRight;
-            this.radRadioButton10.TextImageRelation = TextImageRelation.TextBeforeImage;
+this.radRadioButton10.RadioCheckAlignment = ContentAlignment.MiddleRight;
+this.radRadioButton10.TextImageRelation = TextImageRelation.TextBeforeImage;
+
 ````
 ````VB.NET
-        Me.radRadioButton10.RadioCheckAlignment = ContentAlignment.MiddleRight
-        Me.radRadioButton10.TextImageRelation = TextImageRelation.TextBeforeImage
-        '
+Me.radRadioButton10.RadioCheckAlignment = ContentAlignment.MiddleRight
+Me.radRadioButton10.TextImageRelation = TextImageRelation.TextBeforeImage
+
 ````
 
 {{endregion}} 
@@ -61,11 +62,12 @@ __[C#] Adding multiple lines__
 {{source=..\SamplesVB\Buttons\RadioButtonDesigning.vb region=settingText}} 
 
 ````C#
-            radRadioButton1.Text = "One line" + System.Environment.NewLine + "Another line";
+radRadioButton1.Text = "One line" + System.Environment.NewLine + "Another line";
+
 ````
 ````VB.NET
-        RadRadioButton1.Text = "One line" + System.Environment.NewLine + "Another line"
-        '
+RadRadioButton1.Text = "One line" + System.Environment.NewLine + "Another line"
+
 ````
 
 {{endregion}} 

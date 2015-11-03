@@ -10,8 +10,6 @@ position: 1
 
 # Working with RadDropDownButton Items
 
-
-
 The heart of RadDropDownButton is the __Items__ collection. This collection defines the menu items that appear when the RadDropDownButton is clicked. To get started, drag a __RadDropDownButton__ on the surface of your form from the Toolbox. There are two ways to add items to your new button.
 
 ## Adding Items at Design Time 
@@ -41,40 +39,35 @@ You can also add __RadDropDownButton__ items in code at Run Time. The following
 __[C#] Adding RadDropDownButton items__
 
 
-
 {{source=..\SamplesCS\Buttons\DropDownButton.cs region=creatingMenuItem}} 
 {{source=..\SamplesVB\Buttons\DropDownButton.vb region=creatingMenuItem}} 
 
 ````C#
+void Form1_Load(object sender, EventArgs e)
+{
+    RadMenuItem myRadMenuItem = new RadMenuItem();
+    myRadMenuItem.Text = "My New Item";
+    radDropDownButton1.Items.Add(myRadMenuItem);
+    myRadMenuItem.Click += new EventHandler(myRadMenuItem_Click);
+}
+void myRadMenuItem_Click(object sender, EventArgs e)
+{
+    MessageBox.Show((sender as Telerik.WinControls.UI.RadMenuItem).Text +
+        " was clicked.");
+}
 
-        void Form1_Load(object sender, EventArgs e)
-        {
-            RadMenuItem myRadMenuItem = new RadMenuItem();
-            myRadMenuItem.Text = "My New Item";
-            radDropDownButton1.Items.Add(myRadMenuItem);
-            myRadMenuItem.Click += new EventHandler(myRadMenuItem_Click);
-        }
-
-        void myRadMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show((sender as Telerik.WinControls.UI.RadMenuItem).Text +
-                " was clicked.");
-        }
 ````
 ````VB.NET
+Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Dim myRadMenuItem As New RadMenuItem()
+    myRadMenuItem.Text = "My New Item"
+    radDropDownButton1.Items.Add(myRadMenuItem)
+    AddHandler myRadMenuItem.Click, AddressOf myRadMenuItem_Click
+End Sub
+Sub myRadMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+    MessageBox.Show((TryCast(sender, RadMenuItem)).Text + " was clicked.")
+End Sub
 
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Dim myRadMenuItem As New RadMenuItem()
-        myRadMenuItem.Text = "My New Item"
-        radDropDownButton1.Items.Add(myRadMenuItem)
-        AddHandler myRadMenuItem.Click, AddressOf myRadMenuItem_Click
-    End Sub
-
-    Sub myRadMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-        MessageBox.Show((TryCast(sender, RadMenuItem)).Text + " was clicked.")
-    End Sub
-
-    '
 ````
 
 {{endregion}} 
@@ -87,9 +80,7 @@ __[C#] Adding sub items__
 {{source=..\SamplesVB\Buttons\DropDownButton1.vb region=itemsHierarchy}} 
 
 ````C#
-
 using Telerik.WinControls.UI;
-
 namespace RadDropDownButtonDemo
 {
     public partial class Form1 : Form
@@ -109,13 +100,11 @@ namespace RadDropDownButtonDemo
         }
     }
 }
+
 ````
 ````VB.NET
-
 Imports System.Windows.Forms
-
 Imports Telerik.WinControls.UI
-
 Namespace RadDropDownButtonDemo
     Public Class Form1
         Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
@@ -131,7 +120,6 @@ Namespace RadDropDownButtonDemo
     End Class
 End Namespace
 
-'
 ````
 
 {{endregion}} 

@@ -25,24 +25,20 @@ You can add a __RadToggleSwitch__ to your form either at design time or at run t
 
 __Adding RadToggleSwitch programmatically__
 
-	
-
-
 
 {{source=..\SamplesCS\Buttons\ToggleSwitch.cs region=AddProgrammatically}} 
 {{source=..\SamplesVB\Buttons\ToggleSwitch.vb region=AddProgrammatically}} 
 
 ````C#
             
-            Telerik.WinControls.UI.RadToggleSwitch toggleSwitch = new Telerik.WinControls.UI.RadToggleSwitch();
-            this.Controls.Add(toggleSwitch);
+Telerik.WinControls.UI.RadToggleSwitch toggleSwitch = new Telerik.WinControls.UI.RadToggleSwitch();
+this.Controls.Add(toggleSwitch);
+
 ````
 ````VB.NET
+Dim toggleSwitch As New Telerik.WinControls.UI.RadToggleSwitch()
+Me.Controls.Add(toggleSwitch)
 
-        Dim toggleSwitch As New Telerik.WinControls.UI.RadToggleSwitch()
-        Me.Controls.Add(toggleSwitch)
-
-        '
 ````
 
 {{endregion}} 

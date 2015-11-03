@@ -25,13 +25,12 @@ position: 3
 
 ````C#
             
-            this.radToggleSwitch1.OnText = "True";
+this.radToggleSwitch1.OnText = "True";
+
 ````
 ````VB.NET
+Me.RadToggleSwitch1.OnText = "True"
 
-        Me.RadToggleSwitch1.OnText = "True"
-
-        '
 ````
 
 {{endregion}} 
@@ -50,13 +49,12 @@ position: 3
 
 ````C#
             
-            this.radToggleSwitch1.OffText = "False";
+this.radToggleSwitch1.OffText = "False";
+
 ````
 ````VB.NET
+Me.RadToggleSwitch1.OffText = "False"
 
-        Me.RadToggleSwitch1.OffText = "False"
-
-        '
 ````
 
 {{endregion}} 
@@ -75,13 +73,12 @@ position: 3
 
 ````C#
             
-            this.radToggleSwitch1.ThumbTickness = 10;
+this.radToggleSwitch1.ThumbTickness = 10;
+
 ````
 ````VB.NET
+Me.RadToggleSwitch1.ThumbTickness = 10
 
-        Me.RadToggleSwitch1.ThumbTickness = 10
-
-        '
 ````
 
 {{endregion}} 
@@ -105,15 +102,14 @@ position: 3
 
 ````C#
             
-            this.radToggleSwitch1.AllowAnimation = false;
-            this.radToggleSwitch2.AllowAnimation = true;
+this.radToggleSwitch1.AllowAnimation = false;
+this.radToggleSwitch2.AllowAnimation = true;
+
 ````
 ````VB.NET
+Me.RadToggleSwitch1.AllowAnimation = False
+Me.RadToggleSwitch2.AllowAnimation = True
 
-        Me.RadToggleSwitch1.AllowAnimation = False
-        Me.RadToggleSwitch2.AllowAnimation = True
-
-        '
 ````
 
 {{endregion}} 
@@ -147,13 +143,12 @@ position: 3
 
 ````C#
             
-        this.radToggleSwitch1.Width = 100;
+this.radToggleSwitch1.Width = 100;
+
 ````
 ````VB.NET
+Me.RadToggleSwitch1.Width = 100
 
-        Me.RadToggleSwitch1.Width = 100
-
-        '
 ````
 
 {{endregion}} 
@@ -172,13 +167,13 @@ position: 3
 
 ````C#
             
-        this.radToggleSwitch1.Height = 50;
+this.radToggleSwitch1.Height = 50;
+
 ````
 ````VB.NET
         
-        Me.RadToggleSwitch1.Height = 50
+Me.RadToggleSwitch1.Height = 50
 
-        '
 ````
 
 {{endregion}} 

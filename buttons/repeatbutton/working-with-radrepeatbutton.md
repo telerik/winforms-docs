@@ -26,30 +26,28 @@ The following code illustrates the use of a __RadRepeatButton__ to manipulate a 
 {{source=..\SamplesVB\Buttons\RepeatButton.vb region=handlingClickEvent}} 
 
 ````C#
+void radRepeatButton1_Click(object sender, EventArgs e)
+{
+    if (radProgressBar1.Value1 < radProgressBar1.Maximum)
+    {
+        radProgressBar1.Value1++;
+    }
+    else
+    {
+        radProgressBar1.Value1 = radProgressBar1.Minimum;
+    }
+}
 
-        void radRepeatButton1_Click(object sender, EventArgs e)
-        {
-            if (radProgressBar1.Value1 < radProgressBar1.Maximum)
-            {
-                radProgressBar1.Value1++;
-            }
-            else
-            {
-                radProgressBar1.Value1 = radProgressBar1.Minimum;
-            }
-        }
 ````
 ````VB.NET
+Private Sub radRepeatButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    If radProgressBar1.Value1 < radProgressBar1.Maximum Then
+        System.Math.Max(System.Threading.Interlocked.Increment(radProgressBar1.Value1), radProgressBar1.Value1 - 1)
+    Else
+        radProgressBar1.Value1 = radProgressBar1.Minimum
+    End If
+End Sub
 
-    Private Sub radRepeatButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-        If radProgressBar1.Value1 < radProgressBar1.Maximum Then
-            System.Math.Max(System.Threading.Interlocked.Increment(radProgressBar1.Value1), radProgressBar1.Value1 - 1)
-        Else
-            radProgressBar1.Value1 = radProgressBar1.Minimum
-        End If
-    End Sub
-
-    '
 ````
 
 {{endregion}} 

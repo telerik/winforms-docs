@@ -32,28 +32,28 @@ The following tutorial demonstrates creating two groups of radio buttons that ac
 
 1. Double click the __ToggleStateChanged__ event to create an event handler. Replace the code with the following:
           	
-	__Handling the ToggleStateChanged Event__
+__Handling the ToggleStateChanged Event__
 
 
 
-	{{source=..\SamplesCS\Buttons\RadioButton.cs region=handlingToggleStateChanged}} 
-	{{source=..\SamplesVB\Buttons\RadioButton.vb region=handlingToggleStateChanged}} 
+{{source=..\SamplesCS\Buttons\RadioButton.cs region=handlingToggleStateChanged}} 
+{{source=..\SamplesVB\Buttons\RadioButton.vb region=handlingToggleStateChanged}} 
 
-	````C#
+````C#
+void radRadioButton1_ToggleStateChanged(object sender, StateChangedEventArgs args)
+{
+  lblStatus.Text = (sender as RadRadioButton).Text + " is selected";
+}
 
-        void radRadioButton1_ToggleStateChanged(object sender, StateChangedEventArgs args)
-        {
-	lblStatus.Text = (sender as RadRadioButton).Text + " is selected";
-        }
-	````
-	````VB.NET
+````
+````VB.NET
+Private Sub radRadioButton1_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
+    lblStatus.Text = (TryCast(sender, RadRadioButton)).Text + " is selected"
+End Sub
 
-    Private Sub radRadioButton1_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
-        lblStatus.Text = (TryCast(sender, RadRadioButton)).Text + " is selected"
-    End Sub
-	````
+````
 
-	{{endregion}} 
+{{endregion}} 
 
 
 
