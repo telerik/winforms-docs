@@ -16,7 +16,7 @@ position: 4
 
 There are two events that are raised when the data in the RadGridView is sorted. The first one is the __SortChanging__ event which is raised before the data is sorted. The second one is the __SortChanged__ event and it is raised after the data is sorted.
 
-{{source=..\SamplesVB\GridView\Sorting\SortingEvents.cs region=SortingEvents1}} 
+{{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=SortingEvents1}} 
 {{source=..\SamplesVB\GridView\Sorting\SortingEvents.vb region=SortingEvents}} 
 
 ````C#
@@ -51,8 +51,8 @@ From the event arguments of both events you can access the following data:
 
 You are also able to cancel the sorting operation by setting the __Cancel__ property to *True*
  
-{{source=..\SamplesVB\GridView\Sorting\SortingEvents.cs region=CancelSorting}} 
-{{source=..\SamplesCS\GridView\Sorting\SortingEvents.vb region=CancelSorting}} 
+{{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=CancelSorting}} 
+{{source=..\SamplesVB\GridView\Sorting\SortingEvents.vb region=CancelSorting}} 
 ````C#
     private void radGridView1_SortChanging1(object sender, GridViewCollectionChangingEventArgs e)
     {
@@ -70,8 +70,8 @@ You are also able to cancel the sorting operation by setting the __Cancel__ prop
 
 Since the __SortDescriptors__ collection implements the __INotifyPropertyChanged__ interface, you can use its __CollectionChanged__ event:
 
-{{source=..\SamplesVB\GridView\Sorting\SortingEvents.cs region=CollectionChanged}} 
-{{source=..\SamplesCS\GridView\Sorting\SortingEvents.vb region=CollectionChanged}} 
+{{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=CollectionChanged}} 
+{{source=..\SamplesVB\GridView\Sorting\SortingEvents.vb region=CollectionChanged}} 
 ````C#
     this.radGridView1.SortDescriptors.CollectionChanged += new Telerik.WinControls.Data.NotifyCollectionChangedEventHandler(SortDescriptors_CollectionChanged);
 ````

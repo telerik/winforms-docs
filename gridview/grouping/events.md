@@ -47,7 +47,7 @@ From the event arguments of both events you can access the following data:
 You are also able to cancel the grouping operation by setting the __Cancel__ property to *True*
 
 {{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=cancelGrouping}} 
-{{source=..\SamplesCS\GridView\Grouping\GroupingEvents.vb region=cancelGrouping}} 
+{{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=cancelGrouping}} 
 ````C#
         void radGridView1_GroupByChanging1(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
         {
@@ -69,8 +69,8 @@ You are also able to cancel the grouping operation by setting the __Cancel__ pro
 
 Since the __GroupDescriptors__ collection implements the __INotifyPropertyChanged__ interface, you can use its __CollectionChanged__ event:
 
-{{source=..\SamplesVB\GridView\Grouping\GroupingEvents.cs region=subscribeToCollectionChanged}} 
-{{source=..\SamplesCS\GridView\Grouping\GroupingEvents.vb region=subscribeToCollectionChanged}} 
+{{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=subscribeToCollectionChanged}} 
+{{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=subscribeToCollectionChanged}} 
 ````C#
             radGridView1.GroupDescriptors.CollectionChanged += new Telerik.WinControls.Data.NotifyCollectionChangedEventHandler(GroupDescriptors_CollectionChanged);
 ````
