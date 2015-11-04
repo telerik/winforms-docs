@@ -10,22 +10,11 @@ position: 6
 
 # InlineImage
 
-
-
-The __InlineImage__ class allows images to be displayed inside the document. The __InlineImage__ 
-      	can only be used in the context of a __Paragraph__ class. As it is an inline element, it gets placed after the previous
-      	inline element untill the end of the line. If there is no space left, the element will be wrapped on the next line.
-      
+The __InlineImage__ class allows images to be displayed inside the document. The __InlineImage__ can only be used in the context of a __Paragraph__ class. As it is an inline element, it gets placed after the previous inline element untill the end of the line. If there is no space left, the element will be wrapped on the next line.
 
 This topic will explain you how to use the __InlineImage__ element.
 
-## 
-
-Here is an example of how to add an __InlineImage__ element in the code behind.#_C#_
-
-	
-
-
+Here is an example of how to add an __InlineImage__ element in the code behind.
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxInnerImage.cs region=AddInlineImageViaCode}} 
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxInnerImage.vb region=AddInlineImageViaCode}} 
@@ -51,25 +40,11 @@ Here is an example of how to add an __InlineImage__ element in the code behind.#
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Add via UI
 
-Here is an example of how to allow the user to select an image and add it to the document. 
-        	For that purpose a __RadButton__ and an __OpenFileDialog__ are used.
-        	When the file path from the __OpenFileDialog__ is obtained, create a new Bitmap with the file 
-        	path to the image, and pass the image to the
-        	__InsertImage()__ method of the __RadRichTextBox__.
-        	After calling the __InsertImage()__ method,
-        	the image will appear in the document with its default width and height.
-        #_C#_
-
-	
-
-
+Here is an example of how to allow the user to select an image and add it to the document. For that purpose a __RadButton__ and an __OpenFileDialog__ are used. When the file path from the __OpenFileDialog__ is obtained, create a new Bitmap with the file path to the image, and pass the image to the __InsertImage()__ method of the __RadRichTextBox__. After calling the __InsertImage()__ method, the image will appear in the document with its default width and height.
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxInnerImage.cs region=AddInlineImageViaUI}} 
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxInnerImage.vb region=AddInlineImageViaUI}} 
@@ -100,7 +75,4 @@ Here is an example of how to allow the user to select an image and add it to the
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

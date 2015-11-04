@@ -10,41 +10,24 @@ position: 3
 
 # Selection
 
-
-
-## 
-
 The RadRichTextBox supports not only selection via the UI, but also programmatic selection. This topic will explain you how to:
 
 ### UI Selection
 
-The user is able to select the content of the RadRichTextBox in the same way as in MS Word. This is done by clicking on
-                  	the desired position and dragging to the desired end of the selection. A multiple ranges selection is also allowed. 
-                  	This one is done by holding the __Ctrl__ key while selecting the different ranges.
-                  
+The user is able to select the content of the RadRichTextBox in the same way as in MS Word. This is done by clicking on the desired position and dragging to the desired end of the selection. A multiple ranges selection is also allowed. This one is done by holding the __Ctrl__ key while selecting the different ranges.
 
 ### Programmatic Selection
 
-The developer is allowed to work with the selection programmatically. This can be used when having a 
-                  	__Find__ functionality in your RadRichtextBox and you want to select the found string.
-                  	Examples that involve the programmatic selection can be found in the How To section.
+The developer is allowed to work with the selection programmatically. This can be used when having a __Find__ functionality in your RadRichtextBox and you want to select the found string. Examples that involve the programmatic selection can be found in the How To section.
 
-The programmatic selection gets implemented via the __DocumentSelection__ class.
-                  	The instance of the class gets associated with the __RadDocument__ of the 
-                  	RadRichTextBox and allows you to specify selection starts and ends, selection ranges and other.
-                  	You can manage the selection by either using the __Selection__ property of the 
-                  	__RadDocument__ or by creating an instance of the __DocumentSelection__ class.
-                  
+The programmatic selection gets implemented via the __DocumentSelection__ class. The instance of the class gets associated with the __RadDocument__ of the RadRichTextBox and allows you to specify selection starts and ends, selection ranges and other. You can manage the selection by either using the __Selection__ property of the __RadDocument__ or by creating an instance of the __DocumentSelection__ class.
 
 Here is an example of how to select the current word.
 
 >note To learn more about the __DocumentPosition__ read the Positioning topic.
 >
-#_[C#] Select the current word_
 
-	
-
-
+#### Select the current word
 
 {{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSelection.cs region=selection}} 
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSelection.vb region=selection}} 
@@ -68,22 +51,15 @@ Here is an example of how to select the current word.
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ### Multi-Range Selection
 
-You can implement Multi-Range Selection by either calling multiple times the __AddSelectionStart()__ 
-                  	and __AddSelectionEnd()__ methods or by working with the __Ranges__ collection.
-                  
+You can implement Multi-Range Selection by either calling multiple times the __AddSelectionStart()__ and __AddSelectionEnd()__ methods or by working with the __Ranges__ collection.
 
-Here is an example of selecting each "RadRichTextBox" word in the text. This example uses the first approach.#_[C#] Multi selection_
+Here is an example of selecting each "RadRichTextBox" word in the text. This example uses the first approach.
 
-	
-
-
+#### Multi selection
 
 {{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSelection.cs region=MultiSelection}} 
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSelection.vb region=MultiSelection}} 
@@ -120,7 +96,4 @@ Here is an example of selecting each "RadRichTextBox" word in the text. This exa
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

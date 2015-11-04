@@ -10,21 +10,13 @@ position: 6
 
 # History
 
-
-
-## 
-
 The RadRichTextBox supports not only selection via the UI, but also programmatic selection. This topic will explain you how to:
 
 ### Enable/Disable History
 
-You can enable or disable the history for the __RadDocument__ via the
-                 	__Enabled__ property of the __DocumentHistory__.
-                 #_[C#] Enable history_
+You can enable or disable the history for the __RadDocument__ via the __Enabled__ property of the __DocumentHistory__.
 
-	
-
-
+#### Enable history
 
 {{source=..\SamplesCS\RichTextBox\Features\RichTextBoxHistory.cs region=Enable}} 
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxHistory.vb region=Enable}} 
@@ -37,19 +29,13 @@ You can enable or disable the history for the __RadDocument__ via the
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ### Clear History
 
 To clear the history you just have to call the __Clear()__ method of the __DocumentHistory__ class.
-                  #_[C#] Clear history_
 
-	
-
-
+#### Clear history
 
 {{source=..\SamplesCS\RichTextBox\Features\RichTextBoxHistory.cs region=Clear}} 
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxHistory.vb region=Clear}} 
@@ -62,19 +48,13 @@ To clear the history you just have to call the __Clear()__ method of the __Docum
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ### Undo/Redo
 
 To undo and redo some actions, you can call the __Undo()__ and __Redo()__ methods of the RadRichTextBox.
-                  #_[C#] Undo/Redo history_
 
-	
-
-
+#### Undo/Redo history
 
 {{source=..\SamplesCS\RichTextBox\Features\RichTextBoxHistory.cs region=UndoRedo}} 
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxHistory.vb region=UndoRedo}} 
@@ -91,20 +71,13 @@ To undo and redo some actions, you can call the __Undo()__ and __Redo()__ method
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ### Change History Depth
 
-To change the history capacity you have to set the desired value of the __Depth__ property of the 
-                  	__DocumentHistory__. The default one is __1000__.
-                  #_[C#] History depth_
+To change the history capacity you have to set the desired value of the __Depth__ property of the __DocumentHistory__. The default one is __1000__.
 
-	
-
-
+#### History depth
 
 {{source=..\SamplesCS\RichTextBox\Features\RichTextBoxHistory.cs region=Depth}} 
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxHistory.vb region=Depth}} 
@@ -117,7 +90,4 @@ To change the history capacity you have to set the desired value of the __Depth_
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

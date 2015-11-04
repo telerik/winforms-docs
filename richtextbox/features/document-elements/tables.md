@@ -10,29 +10,14 @@ position: 7
 
 # Tables
 
-
-
 The __RadRichTextBox__ is capable of displaying tables. To add a table to the document you can use the provided API.
 
-## 
-
-The tables inside the __RadRichTextBox__ are constructed using the __Table__,
-        	__TableRow__ and __TableCell__ classes. The defining of a table is very similar to the one in HTML. 
-        	The __Table__ class define the table itself and it accepts __TableRow__objects as children. 
-        	The __TableRow__ on its hand accepts __TableCell__ objects as children. 
-        	The __TableCell__ accepts Block elements as children, so to specify its contents of a cell use such one 
-        	(e.g. a Paragraph) to wrap it.
-        
+The tables inside the __RadRichTextBox__ are constructed using the __Table__, __TableRow__ and __TableCell__ classes. The defining of a table is very similar to the one in HTML. The __Table__ class define the table itself and it accepts __TableRow__ objects as children. The __TableRow__ on its hand accepts __TableCell__ objects as children. The __TableCell__ accepts Block elements as children, so to specify its contents of a cell use such one (e.g. a Paragraph) to wrap it.
 
 >note  __Tables__ are block elements.
 >
 
-
-Here is a simple example.#_C#_
-
-	
-
-
+Here is a simple example.
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxTables.cs region=AddTable}} 
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxTables.vb region=AddTable}} 
@@ -107,17 +92,11 @@ Here is a simple example.#_C#_
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ![richtextbox-features-document-elements-tables 001](images/richtextbox-features-document-elements-tables001.png)
 
-Additionally you can span cells in columns and rows. This is done by using the __RowSpan__ and
-        	__ColumnSpan__ properties of the __TableCell__ object. 
-        	Also you can specify the layout mode for the table via the __LayoutMode__ property. it can have one of the following values:
-        
+Additionally you can span cells in columns and rows. This is done by using the __RowSpan__ and __ColumnSpan__ properties of the __TableCell__ object. Also you can specify the layout mode for the table via the __LayoutMode__ property. it can have one of the following values:
 
 * __Fixed__ - specifies that the table should have width equal to the value of its __PrefferedWidth__ property.
 
@@ -125,10 +104,7 @@ Additionally you can span cells in columns and rows. This is done by using the _
 
 >tip To learn more about the  __Formatting API__  of the  __RadRichTextBox__ , read [this topic]({%slug winforms/richtextbox-(obsolete)/features/formatting-api%}).
 
-
-The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the 
-        	__RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI.
-        	The __RadRichTextBox__ exposes the following methods that regard the creation or deletion of a table:
+The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the __RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. The __RadRichTextBox__ exposes the following methods that regard the creation or deletion of a table:
 
 * __DeleteTable__ - deletes the currently selected table.
 
@@ -157,7 +133,6 @@ You can use the __InsertTableDialog__, which comes out of the box. To show it up
 >note The __RadRichTextBoxUI__ also uses this dialog.
 >
 
-
 ![richtextbox-features-document-elements-tables 002](images/richtextbox-features-document-elements-tables002.png)
 
 ## Formatting a Table at Runtime via RadRichTextBox's API
@@ -165,10 +140,7 @@ You can use the __InsertTableDialog__, which comes out of the box. To show it up
 >tip To learn more about the  __Formatting API__  of the  __RadRichTextBox__ , read [this topic]({%slug winforms/richtextbox-(obsolete)/features/formatting-api%}).
 
 
-The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, 
-        	modify or delete elements form the __RadDocument__. The methods exposed by the API can be wired
-        	to a UI and get executed upon user interaction with this UI. The __RadRichTextBox__ exposes the 
-        	following methods that regard the modifying of a table:
+The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the __RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. The __RadRichTextBox__ exposes the following methods that regard the modifying of a table:
 
 * __ChangeTableBorders__ - modifies the borders of the currently selected table via a __TableBorders__ object.
 

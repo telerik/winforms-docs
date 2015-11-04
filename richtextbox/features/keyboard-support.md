@@ -10,15 +10,9 @@ position: 13
 
 # Keyboard support
 
+Telerik __RichTextBox__ supports keyboard shortcuts that trigger different commands of the control. The default key-bindings defined for the most widely used commands, are:
 
-
-## 
-
-Telerik __RichTextBox__ supports keyboard shortcuts that trigger different commands of the control.
-          The default key-bindings defined for the most widely used commands, are:
-
-
->caption Keyboard shortcuts 
+>caption Keyboard shortcuts
 
 |  __Action__  |  __Hot key__  |
 | ------ | ------ |

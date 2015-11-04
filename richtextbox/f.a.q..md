@@ -14,13 +14,7 @@ position: 1
 
 ## How to Get and Set the Text of RadRichTextBox
 
-RadRichTextBox does not have a Text property because different formats for import and export
-        	of documents are supported – RTF, HTML, XAML, docX, plain text and PDF (export only).
-        	In order to set the contents of the document, it should be clear what format the data is in. 
-        	For easier extensibility and separation of concerns, format providers that deal with the import and
-        	export of the documents are used. Here is a list of the currently available format providers
-        	and the assemblies they are included in:
-        
+RadRichTextBox does not have a Text property because different formats for import and export of documents are supported – RTF, HTML, XAML, docX, plain text and PDF (export only). In order to set the contents of the document, it should be clear what format the data is in. For easier extensibility and separation of concerns, format providers that deal with the import and export of the documents are used. Here is a list of the currently available format providers and the assemblies they are included in:
 
 * TxtFormatProvider (plain text) – Telerik.WinControls.RichTextBox.FormatProviders.Txt; 
 
@@ -34,18 +28,11 @@ RadRichTextBox does not have a Text property because different formats for impor
 
 * PdfFormatProvider - Telerik.WinControls.RichTextBox.FileFormats.Pdf.
 
-You can read more about the use of format providers 
-      [here]({%slug winforms/richtextbox-(obsolete)/features/import/export/import/export%}) 
-      . Overall, what you need to do to get
-			the content of the document in a specific format is to create an instance of the corresponding
-			provider and export the document.
-		
+You can read more about the use of format providers [here]({%slug winforms/richtextbox-(obsolete)/features/import/export/import/export%}). Overall, what you need to do to get the content of the document in a specific format is to create an instance of the corresponding provider and export the document.
 
-An example is illustrated below:#_[C#] Export XAML file_
+An example is illustrated below:
 
-	
-
-
+#### Export XAML file
 
 {{source=..\SamplesCS\RichTextBox\RichTextBoxFAQ.cs region=GetXAML}} 
 {{source=..\SamplesVB\RichTextBox\RichTextBoxFAQ.vb region=GetXAML}} 
@@ -65,22 +52,13 @@ An example is illustrated below:#_[C#] Export XAML file_
     '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+To get the text stripped of all formatting, you can use __TxtFormatProvider__.
 
+Setting the content of RadRichTextBox can be done in the same manner, if you have the content in one of these formats. For example, importing an HTML string in the document of a RadRichTextBox can be done as follows: 
 
-
-To get the text stripped of all formatting, you can use __TxtFormatProvider__. 
-		
-
-Setting the content of RadRichTextBox can be done in the same manner, if you have the content
-			in one of these formats. For example, importing an HTML string in the document of a RadRichTextBox
-			can be done as follows:
-		#_[C#] Load HTML file_
-
-	
-
-
+#### Load HTML file
 
 {{source=..\SamplesCS\RichTextBox\RichTextBoxFAQ.cs region=ImportHtml}} 
 {{source=..\SamplesVB\RichTextBox\RichTextBoxFAQ.vb region=ImportHtml}} 
@@ -100,32 +78,18 @@ Setting the content of RadRichTextBox can be done in the same manner, if you hav
     '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-If you wish to preserve the initial content of the document and insert text at different positions
-			in the document, you can use the __Insert__ methods of RadDocument and RadRichTextBox.
-			The __Insert__ method of RadRichTextBox uses the current span style of the document,
-			i.e. the text is included in the document just as it would have been if you typed it at that position. 
-			With the method of RadDocument, you need to explicitly create a __StyleDefinition__ and
-			fill it up with the property values of the text that you are inserting – __FontSize__, 
-			__FontFamily__, __colors__, etc.
-		
+If you wish to preserve the initial content of the document and insert text at different positions in the document, you can use the __Insert__ methods of RadDocument and RadRichTextBox. The __Insert__ method of RadRichTextBox uses the current span style of the document, i.e. the text is included in the document just as it would have been if you typed it at that position. With the method of RadDocument, you need to explicitly create a __StyleDefinition__ and fill it up with the property values of the text that you are inserting – __FontSize__, __FontFamily__, __colors__, etc.
 
 Here are some examples:
 
->note The Insert method will work after the document object model is created. Please note that the DOM will be created only
-           after RadRichTextBox is being measured. Simply said, The insert command will not work in the form constructor.
+>note The Insert method will work after the document object model is created. Please note that the DOM will be created only after RadRichTextBox is being measured. Simply said, The insert command will not work in the form constructor.
 >
 
+1. Inserting text in RadRichTextBox at caret position:
 
-1. Inserting text in RadRichTextBox at caret position:#_[C#] Insert text in RadRichTextBox_
-
-	
-
-
+#### Insert text in RadRichTextBox
 
 {{source=..\SamplesCS\RichTextBox\RichTextBoxFAQ.cs region=InsertTextInRadRichTextBox}} 
 {{source=..\SamplesVB\RichTextBox\RichTextBoxFAQ.vb region=InsertTextInRadRichTextBox}} 
@@ -138,18 +102,13 @@ Here are some examples:
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+You can manipulate the caret position before invoking the insert method in order to change the position where you wish the text to appear. You can find more information on document positions and their usage here. 
 
-You can manipulate the caret position before invoking the insert method in order to change the
-		  		position where you wish the text to appear. You can find more information on document positions
-		  		and their usage here. 
+1. Inserting text in a custom style using RadDocument‘s method:
 
-1. Inserting text in a custom style using RadDocument‘s method:#_[C#] Insert text in RadDocument_
-
-	
-
-
+#### Insert text in RadDocument
 
 {{source=..\SamplesCS\RichTextBox\RichTextBoxFAQ.cs region=InsertTextInDocument}} 
 {{source=..\SamplesVB\RichTextBox\RichTextBoxFAQ.vb region=InsertTextInDocument}} 
@@ -175,16 +134,11 @@ You can manipulate the caret position before invoking the insert method in order
     '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+In case you wish to insert the text in the current editing style of the rich text box, you can do that in the following manner: 
 
-In case you wish to insert the text in the current editing style of the rich text box, you can do
-				that in the following manner:
-			#_[C#] Insert text in RadDocument_
-
-	
-
-
+#### Insert text in RadDocument
 
 {{source=..\SamplesCS\RichTextBox\RichTextBoxFAQ.cs region=InsertTextInDocumentInCurrentSpanStyle}} 
 {{source=..\SamplesVB\RichTextBox\RichTextBoxFAQ.vb region=InsertTextInDocumentInCurrentSpanStyle}} 
@@ -208,21 +162,14 @@ In case you wish to insert the text in the current editing style of the rich tex
 
 {{endregion}} 
 
-
-
-
->note Using methods from RadDocument's API to apply changes to the document clears the history stack
-		  	 	and the undo function will not be able to restore the document before this change.
+>note Using methods from RadDocument's API to apply changes to the document clears the history stack and the undo function will not be able to restore the document before this change.
 >
-
 
 ## Setting the Margins of the Document
 
-With paged layout mode, you can set the margin of the document like this:#_[C#] Change page margin_
+With paged layout mode, you can set the margin of the document like this:
 
-	
-
-
+#### Change page margin
 
 {{source=..\SamplesCS\RichTextBox\RichTextBoxFAQ.cs region=SectionDefaultPageMargin}} 
 {{source=..\SamplesVB\RichTextBox\RichTextBoxFAQ.vb region=SectionDefaultPageMargin}} 
@@ -237,7 +184,4 @@ With paged layout mode, you can set the margin of the document like this:#_[C#] 
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
