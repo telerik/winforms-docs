@@ -5,18 +5,11 @@ description: RangeSelector
 slug: winforms/rangeselector-
 tags: rangeselector,
 published: True
-position: 35
+position: 0
 ---
 
-# RangeSelector 
+# RangeSelector
 
+__RadRangeSelector__ provides an elegant solution for end-users to select range (in percentages) and these percentages could be mapped to any kind of visually represented data. Developers can easily set the associated object that will be used as background of __RadRangeSelector__. The associated object should confront with specific interfaces thanks to which it will be able to communicate with __RadRangeSelector.__
 
-
-## 
-
-__RadRangeSelector__ provides an elegant solution for end-users to select range (in percentages) and these percentages could be mapped to any
-          kind of visually represented data. Developers can easily set the associated object that will be used as background of __RadRangeSelector__.
-          The associated object should confront with specific interfaces thanks to which it will be able to communicate with __RadRangeSelector.__
-
-Currently, __RadRangeSelector__ works out of the box together with __RadChartView__.
-        ![rangeselector-overview 001](images/rangeselector-overview001.png)
+Currently, __RadRangeSelector__ works out of the box together with __RadChartView__.<br>![rangeselector-overview 001](images/rangeselector-overview001.png)

@@ -9,9 +9,7 @@ position: 6
 ---
 
 # Keyboard And Mouse Support
-
-
-
+ 
 ## Keyboard Support
 
 __Ctrl+Tab:__ Opens the [QuickNavigator]({%slug winforms/dock/architecture-and-features/quick-navigator%}). [QuickNavigator]({%slug winforms/dock/architecture-and-features/quick-navigator%}) scrolls through a list of docking panels handled by RadDock.

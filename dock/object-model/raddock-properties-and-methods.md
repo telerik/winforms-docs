@@ -50,7 +50,7 @@ __RadDock__controls the overall behavior of __ToolWindows__and __DocumentWindows
 * __ActivateWindow(DockWindow window):__ Activates a DockWindow.
              
 
-* __AddDocument(DockWindow window):__Adds a DockWindow as a DocumentWindow in RadDock. 
+* __AddDocument(DockWindow window):__ Adds a DockWindow as a DocumentWindow in RadDock. 
             
 
 * __AutoHideWindow(DockWindow window):__ Makes the specified DockWindow auto-hidden.
@@ -71,7 +71,7 @@ __RadDock__controls the overall behavior of __ToolWindows__and __DocumentWindows
 * __DockWindow(DockWindow window, DockWindow target, DockPosition position):__ Docks a DockWindow at a position relative to the specified target DockWindow.
             
 
-* __FloatToolTabStrip(ToolTabStrip strip, Rectangle bounds):__ Floats a ToolTabStrip with ToolWindows in a new form. The form has bounds specified by the __bounds__parameter.
+* __FloatToolTabStrip(ToolTabStrip strip, Rectangle bounds):__ Floats a ToolTabStrip with ToolWindows in a new form. The form has bounds specified by the __bounds__ parameter.
             
 
 * __FloatWindow(DockWindow window):__ Floats the specified DockWindow in a new form.
@@ -80,9 +80,9 @@ __RadDock__controls the overall behavior of __ToolWindows__and __DocumentWindows
 * __FloatWindow(DockWindow window, Rectangle bounds):__ Floats the specified DockWindow in a new form. The form has bounds specified by the __bounds__ parameter.
             
 
-* __LoadFromXml(fileName)__: Deserializes __RadDock__ layout structure__.__
+* __LoadFromXml(fileName)__: Deserializes __RadDock__ layout structure.
 
-* __SaveToXml(fileName):__ Serializes the __RadDock__layout structure. This method does not save content. See [Loading and Saving Layouts]({%slug winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts%}) for more information.
+* __SaveToXml(fileName):__ Serializes the __RadDock__ layout structure. This method does not save content. See [Loading and Saving Layouts]({%slug winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts%}) for more information.
             
 
 * __RemoveWindow(DockWindow window)__: Removes a __ToolWindow__ or __DocumentWindow__ from the list of managed dockables.

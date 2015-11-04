@@ -9,17 +9,12 @@ position: 4
 ---
 
 # Creating ToolWindow and DocumentWindow at Runtime
-
-
-
+ 
 ## Creating ToolWindow at Runtime
 
 To create a new __ToolWindow__, construct a __ToolWindow__ instance, set properties and call the __RadDock DockWindow()__ method, passing a reference to the __ToolWindow__ and a __DockPosition__ enumeration value.
-        #_[C#] Creating a ToolWindow_
 
-	
-
-
+#### Creating a ToolWindow 
 
 {{source=..\SamplesCS\Dock\CreatingWindows.cs region=creatingToolWindow}} 
 {{source=..\SamplesVB\Dock\CreatingWindows.vb region=creatingToolWindow}} 
@@ -37,18 +32,12 @@ To create a new __ToolWindow__, construct a __ToolWindow__ instance, set proper
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 ## Creating DocumentWindow at Runtime
 
 To create a __DocumentWindow__, construct an instance of __DocumentWindow__, assign properties and call the __RadDock Add____Document()__ method, passing the __DocumentWindow__ instance.
-        #_[C#] Creating a DocumentWindow_
 
-	
-
-
+#### Creating a DocumentWindow 
 
 {{source=..\SamplesCS\Dock\CreatingWindows.cs region=creatingDocumentWindow}} 
 {{source=..\SamplesVB\Dock\CreatingWindows.vb region=creatingDocumentWindow}} 
@@ -67,16 +56,14 @@ To create a __DocumentWindow__, construct an instance of __DocumentWindow__, ass
 
 {{endregion}} 
 
-
-
-
+ 
 ## Example: Creating Multiple ToolWindow and DocumentWindow at Runtime
 
-The following example creates multiple panels and document panes at runtime.![dock-object-model-creating-toolwindow-and-documentwindow-at-runtime 001](images/dock-object-model-creating-toolwindow-and-documentwindow-at-runtime001.png)#_[C#] Creating ToolWindows and DocumentWindows_
+The following example creates multiple panels and document panes at runtime.
 
-	
+![dock-object-model-creating-toolwindow-and-documentwindow-at-runtime 001](images/dock-object-model-creating-toolwindow-and-documentwindow-at-runtime001.png)
 
-
+#### Creating ToolWindows and DocumentWindows 
 
 {{source=..\SamplesCS\Dock\CreatingWindows.cs region=winInitialization}} 
 {{source=..\SamplesVB\Dock\CreatingWindows.vb region=winInitialization}} 
@@ -123,23 +110,15 @@ The following example creates multiple panels and document panes at runtime.![do
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}  
 
 ## Creating and docking multiple windows in a single strip
 
-There are cases in which you might prefer docking two or more windows to the right edge of RadDock only, so that these right-edged windows are tabbed in a single container.
-          For example, let’s say that we have Team Explorer, Solution Explorer and Server Explorer windows and they are all initially closed. We also have a menu that allows us to open these windows, and after clicking all the corresponding menu items we want to get this picture:
-        ![dock-how-to-docking-windows-in-a-single-strip 001](images/dock-how-to-docking-windows-in-a-single-strip001.png)
+There are cases in which you might prefer docking two or more windows to the right edge of RadDock only, so that these right-edged windows are tabbed in a single container. For example, let’s say that we have Team Explorer, Solution Explorer and Server Explorer windows and they are all initially closed. We also have a menu that allows us to open these windows, and after clicking all the corresponding menu items we want to get this picture:
 
-At first, let’s try a solution that seems to be the easiest one:
-        #_[C#]_
+![dock-how-to-docking-windows-in-a-single-strip 001](images/dock-how-to-docking-windows-in-a-single-strip001.png)
 
-	
-
-
+At first, let’s try a solution that seems to be the easiest one: 
 
 {{source=..\SamplesCS\Dock\How-To\DockingWindowsToRight.cs region=wrongApproach}} 
 {{source=..\SamplesVB\Dock\How-To\DockingWindowsToRight.vb region=wrongApproach}} 
@@ -193,19 +172,12 @@ At first, let’s try a solution that seems to be the easiest one:
     '
 ````
 
-{{endregion}} 
-
-
-
-
+{{endregion}}  
 However, this API makes RadDock dock the window to right of RadDock itself, not taking into consideration other right-docked windows:
-        ![dock-object-model-creating-toolwindow-and-documentwindow-at-runtime 002](images/dock-object-model-creating-toolwindow-and-documentwindow-at-runtime002.png)
+
+![dock-object-model-creating-toolwindow-and-documentwindow-at-runtime 002](images/dock-object-model-creating-toolwindow-and-documentwindow-at-runtime002.png)
 
 So, we need to follow another approach. What we need to do is to globally define a ToolTabStrip variable that would be set the first time a window is right-docked. Then, the next time we dock a window, we will do it in the context of the already created ToolTabStrip. Here is what should be done in code on click of the menu items:
-        #_[C#]_
-
-	
-
 
 
 {{source=..\SamplesCS\Dock\How-To\DockingWindowsToRight.cs region=menuItemsClick}} 

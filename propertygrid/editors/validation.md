@@ -5,21 +5,12 @@ description: Validation
 slug: winforms/propertygrid/editors/validation
 tags: validation
 published: True
-position: 2
+position: 3
 ---
 
 # Validation
 
-
-
-## 
-
-RadPropertyGrid provides a convenient way to perform validation before data is committed.
-        	You can validate data by handling __PropertyValidating__ event which
-        	is raised by RadPropertyGrid when the current item changes or when the item loses input focus
-        	(when pressing __Enter__ key). Canceling this event prevents the user
-        	from exiting the item until a valid editor value is entered or the edit process is canceled.
-        
+RadPropertyGrid provides a convenient way to perform validation before data is committed. You can validate data by handling __PropertyValidating__ event which is raised by RadPropertyGrid when the current item changes or when the item loses input focus (when pressing __Enter__ key). Canceling this event prevents the user from exiting the item until a valid editor value is entered or the edit process is canceled.
 
 Here is a list of all validation events:
 
@@ -29,16 +20,9 @@ Here is a list of all validation events:
 
 You can use the error indicator of the item to visualize error when such occurs.
 
-The code snippet below demonstrates simple data validation scenario. It is performed on a string 
-			property to do not allow entering an empty string. In the __PropertyValidating__
-			event we check if an empty string is entered, if this is the case the validation fails, the error
-			indicator is shown and the event is canceled. If the value entered is valid in the 
-			__Edited__ event we reset the error text and the error indicator is hidden:
-		#_[C#] Property validation_
+The code snippet below demonstrates simple data validation scenario. It is performed on a string property to do not allow entering an empty string. In the __PropertyValidating__ event we check if an empty string is entered, if this is the case the validation fails, the error indicator is shown and the event is canceled. If the value entered is valid in the __Edited__ event we reset the error text and the error indicator is hidden:
 
-	
-
-
+#### Property validation
 
 {{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridValidation.cs region=PropertyValidating}} 
 {{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridValidation.vb region=PropertyValidating}} 
@@ -83,7 +67,6 @@ The code snippet below demonstrates simple data validation scenario. It is perfo
     '
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![propertygrid-editors-validation](images/propertygrid-editors-validation.png)

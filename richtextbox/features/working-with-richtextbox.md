@@ -10,44 +10,26 @@ position: 0
 
 # Working with RichTextBox
 
-
-
 The RadRichTextBox is a control that allows you to visualize rich text content and allows the user to format it.
-      
 
 ## RadRichTextBox API
 
-Instead of visualizing a static rich content, you may want to use the RadRichTextBox as an input control.
-          In this case, in order to provide the user with the ability to format the inputted content, you have to
-          provide a UI that communicates with the RadRichTextBox. For that purpose the RadRichTextBox exposes an API,
-          which contains various methods that can apply different formatting to the inputted content.
-          To learn more about the API methods read this topic.
-          To see an example of a RadRichTextBox that allows to apply bold, italic and underline formatting, take a look at this topic.
+Instead of visualizing a static rich content, you may want to use the RadRichTextBox as an input control. In this case, in order to provide the user with the ability to format the inputted content, you have to provide a UI that communicates with the RadRichTextBox. For that purpose the RadRichTextBox exposes an API, which contains various methods that can apply different formatting to the inputted content. To learn more about the API methods read this topic. To see an example of a RadRichTextBox that allows to apply bold, italic and underline formatting, take a look at this topic.
 
 ## Scrolling
 
-When the available size for the control becomes less than the size of the content, the RadRichTextBox
-          will automatically display horizontal or vertical scrollbars respectively.
-        
+When the available size for the control becomes less than the size of the content, the RadRichTextBox will automatically display horizontal or vertical scrollbars respectively.
 
 ## Current Span
 
-The __CurrentEditingStyle__ property returns an instance of the
-          __StyleDefinition__ class, which allows you to get information abou
-          the current element. You can combine the usage of this property with the usage of the
-          __CurrentSpanStyleChanged__ event in order to update the UI
-          (if any) when the text style changes.
-        
+The __CurrentEditingStyle__ property returns an instance of the __StyleDefinition__ class, which allows you to get information about the current element. You can combine the usage of this property with the usage of the __CurrentSpanStyleChanged__ event in order to update the UI (if any) when the text style changes.
 
 >note The same approach can be used for the __CurrentParagraphStyleChanged__ event.
 >
 
+For example, you have a button that makes the text bold:
 
-For example, you have a button that makes the text bold:#_[C#] Bold text_
-
-	
-
-
+#### Bold text
 
 {{source=..\SamplesCS\RichTextBox\Features\RichTextBoxWorkingWithRichTextBox.cs region=boldText}} 
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxWorkingWithRichTextBox.vb region=boldText}} 
@@ -65,17 +47,11 @@ For example, you have a button that makes the text bold:#_[C#] Bold text_
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 In the event handler for the __CurrentSpanStyleChanged__ you can do the following:
-        #_[C#] Bold text_
 
-	
-
-
+#### Bold text
 
 {{source=..\SamplesCS\RichTextBox\Features\RichTextBoxWorkingWithRichTextBox.cs region=CurrentSpanStyleChanged}} 
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxWorkingWithRichTextBox.vb region=CurrentSpanStyleChanged}} 
@@ -97,9 +73,6 @@ In the event handler for the __CurrentSpanStyleChanged__ you can do the followin
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 This will keep the button synchronized with the current position of the caret.

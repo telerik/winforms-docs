@@ -5,7 +5,7 @@ description: Customizing RadRangeSelector
 slug: winforms/rangeselector-/customizing-radrangeselector-
 tags: customizing,radrangeselector,
 published: True
-position: 4
+position: 5
 ---
 
 # Customizing RadRangeSelector 

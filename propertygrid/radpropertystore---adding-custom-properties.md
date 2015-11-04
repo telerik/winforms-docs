@@ -5,14 +5,10 @@ description: RadPropertyStore - adding custom properties
 slug: winforms/propertygrid/radpropertystore---adding-custom-properties
 tags: radpropertystore,-,adding,custom,properties
 published: True
-position: 2
+position: 3
 ---
 
 # RadPropertyStore - adding custom properties
-
-
-
-## 
 
 To get started with the RadPropertyStore follow these three steps:
 
@@ -20,11 +16,9 @@ To get started with the RadPropertyStore follow these three steps:
 
 * Fill it with PropertyStoreItems.
 
-* Set it as SelectedObject of RadPropertyGrid.#_[C#] Using RadPropertyStore_
+* Set it as SelectedObject of RadPropertyGrid.
 
-	
-
-
+#### Using RadPropertyStore
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridRadPropertyStore.cs region=RadPropertyStore}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridRadPropertyStore.vb region=RadPropertyStore}} 
@@ -59,21 +53,13 @@ To get started with the RadPropertyStore follow these three steps:
         '
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![propertygrid-radpropertystore 001](images/propertygrid-radpropertystore001.png)
 
-You can then use the RadPropertyGrid to edit the PropertyStoreItems values as if they
-        	were properties of an object. You can also change the value of a given property in the 
-        	RadPropertyStore and the change will be reflected immediately in the RadPropertyGrid.
-        	Additionally you can also add or remove items from the RadPropertyStore during runtime
-        	and again all changes will be reflected in the RadGridView.
-        #_[C#] Add/Remove/Edit PropertyStoreItems through code_
+You can then use the RadPropertyGrid to edit the PropertyStoreItems values as if they were properties of an object. You can also change the value of a given property in the RadPropertyStore and the change will be reflected immediately in the RadPropertyGrid. Additionally you can also add or remove items from the RadPropertyStore during runtime and again all changes will be reflected in the RadGridView.
 
-	
-
-
+#### Add/Remove/Edit PropertyStoreItems through code
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridRadPropertyStore.cs region=modifyStore}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridRadPropertyStore.vb region=modifyStore}} 
@@ -92,15 +78,9 @@ You can then use the RadPropertyGrid to edit the PropertyStoreItems values as if
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-You have to provide a value of the same type as the PropertyStoreItem or a value that can be 
-        	converted through the TypeConverter of the type of the property. Otherwise the value would 
-        	not be stored in the item.
-        
+You have to provide a value of the same type as the PropertyStoreItem or a value that can be converted through the TypeConverter of the type of the property. Otherwise the value would not be stored in the item.
 
 # See Also
 

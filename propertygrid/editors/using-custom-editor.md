@@ -5,25 +5,16 @@ description: Using custom editor
 slug: winforms/propertygrid/editors/using-custom-editor
 tags: using,custom,editor
 published: True
-position: 4
+position: 5
 ---
 
 # Using custom editor
 
-
-
-## 
-
 This following snippet demonstrates how to create and replace the standard spin editor with a track bar editor.
-        
 
-All property grid editors inherit from __BaseInputEditor__. So, you have to inherit from
-        	this class and override several methods:
-        #_[C#] Creating custom editor_
+All property grid editors inherit from __BaseInputEditor__. So, you have to inherit from this class and override several methods:
 
-	
-
-
+#### Creating custom editor
 
 {{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridUsingCustomEditor.cs region=CustomEditor}} 
 {{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridUsingCustomEditor.vb region=CustomEditor}} 
@@ -129,16 +120,11 @@ End Class
 '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+The __EditorRequired__ event is the correct place to replace the default editor:
 
-
-
-The __EditorRequired__ event is the correct place to replace the default editor:#_[C#] Replace editor_
-
-	
-
-
+#### Replace editor
 
 {{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridUsingCustomEditor.cs region=replaceEditor}} 
 {{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridUsingCustomEditor.vb region=replaceEditor}} 
@@ -162,7 +148,6 @@ The __EditorRequired__ event is the correct place to replace the default editor:
     '
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![propertygrid-editors-using-custom-editor](images/propertygrid-editors-using-custom-editor.png)

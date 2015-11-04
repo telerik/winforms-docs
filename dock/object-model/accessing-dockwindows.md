@@ -14,8 +14,7 @@ position: 2
 
 ## 
 
-The DockWindows property returns an array of all DockWindow in a RadDock
-          instance and gives you two useful properties and one method:
+The DockWindows property returns an array of all DockWindow in a RadDock instance and gives you two useful properties and one method:
         
 
 * __ToolWindows__ property:
@@ -31,15 +30,8 @@ The DockWindows property returns an array of all DockWindow in a RadDock
 * __GetWindows(DockState state)__ method:
             
 
-* Returns an array of DockWindows that are put in a specific
-              DockState. For example, the following code snippet will return an array
-              of DockWindows that are currently hidden:
-            #_[C#]_
-
-	
-
-
-
+* Returns an array of DockWindows that are put in a specific DockState. For example, the following code snippet will return an array of DockWindows that are currently hidden: 
+* 
 {{source=..\SamplesCS\Dock\CreatingWindows.cs region=gettingHiddenWindows}} 
 {{source=..\SamplesVB\Dock\CreatingWindows.vb region=gettingHiddenWindows}} 
 
@@ -52,17 +44,9 @@ The DockWindows property returns an array of all DockWindow in a RadDock
 ````
 
 {{endregion}} 
-
-
-
-
-You can get a desired ToolWindow\DocumentWindow by specifying its
-          __Name__ as an index:
-        #_[C#]_
-
-	
-
-
+ 
+You can get a desired ToolWindow\DocumentWindow by specifying its __Name__ as an index:
+        
 
 {{source=..\SamplesCS\Dock\CreatingWindows.cs region=gettingWindowByName}} 
 {{source=..\SamplesVB\Dock\CreatingWindows.vb region=gettingWindowByName}} 

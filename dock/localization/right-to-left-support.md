@@ -9,17 +9,8 @@ position: 1
 ---
 
 # Right-to-left support
-
-
-
-## 
-
-You can present the content of your dock instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*:
-            #_[C#]_
-
-	
-
-
+ 
+You can present the content of your dock instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*: 
 
 {{source=..\SamplesCS\Dock\CustomDockProvider.cs region=rtl}} 
 {{source=..\SamplesVB\Dock\CustomDockProvider.vb region=rtl}} 

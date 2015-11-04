@@ -10,24 +10,13 @@ position: 5
 
 # Hyperlink
 
+The classes that encapsulate the functionality of hyperlinks are [HyperlinkInfo](#hyperlinkinfo), [HyperlinkRangeStart and HyperlinkRangeEnd](#hyperlinkrangestart-and-hyperlinkrangeend).
 
-
-The classes that encapsulate the functionality of hyperlinks are
-        [HyperlinkInfo](#hyperlinkinfo),
-        [HyperlinkRangeStart and HyperlinkRangeEnd](#hyperlinkrangestart-and-hyperlinkrangeend).
-      
-
-[Other customization options](#othercustomizationoptions)
-        include setting the tool tip format of hyperlinks.
-      
-
-
+[Other customization options](#othercustomizationoptions) include setting the tool tip format of hyperlinks.
 
 ## HyperlinkInfo
 
-More often than not, you would only need to use objects of type HyperlinkInfo.
-          HyperlinkInfo objects have the following properties:
-        
+More often than not, you would only need to use objects of type HyperlinkInfo. HyperlinkInfo objects have the following properties:
 
 * IsAnchor - a boolean property determining if the hyperlink points to a URL or a bookmark;
 
@@ -36,11 +25,6 @@ More often than not, you would only need to use objects of type HyperlinkInfo.
 * Target - determines if the link should be opened in another window (if set to HyperlinkTargets.Blank) or in the same frame (HyperlinkTargets.Self).
 
 For example, a link to our Telerik UI for WinForms demo page can be inserted in the document programmatically as follows:
-        #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.cs region=AddLinkToSite}} 
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=AddLinkToSite}} 
@@ -77,17 +61,9 @@ For example, a link to our Telerik UI for WinForms demo page can be inserted in 
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 A link to a bookmark is inserted by specifying the bookmark's name as NavigateUri and setting the IsAnchor to true:
-        #_C#_
-
-	
-
-
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.cs region=AddLinkToBookmark}} 
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=AddLinkToBookmark}} 
@@ -115,30 +91,19 @@ A link to a bookmark is inserted by specifying the bookmark's name as NavigateUr
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 You can also use the overloaded methods for inserting a hyperlink:
 
-* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, string hyperlinkText, StyleDefinition hyperlinkStyle) - insert a hyperlink using a custom style, different from the default blue font color and single underline;
-            
+* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, string hyperlinkText, StyleDefinition hyperlinkStyle) - insert a hyperlink using a custom style, different from the default blue font color and single underline;  
 
 * public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, IEnumerable<Inline> inlines) - insert a hyperlink which spans several different adjacent inlines, e.g. part of the hyperlink text is Bold or there is an image inside the hyperlink;
-            
 
 * public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo) - create a hyperlink from the currently selected part of the document;
-            
 
 * public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, StyleDefinition hyperlinkStyle) - create a hyperlink from the currently selected part of the document and change the style of the text to the style passed as second argument.
-            
 
-Removing a hyperlink (and keeping the part of the document that the hyperlink spanned) can be done by positioning the caret in the hyperlink and invoking#_C#_
-
-	
-
-
+Removing a hyperlink (and keeping the part of the document that the hyperlink spanned) can be done by positioning the caret in the hyperlink and invoking
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.cs region=RemoveHyperlink}} 
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=RemoveHyperlink}} 
@@ -151,20 +116,13 @@ Removing a hyperlink (and keeping the part of the document that the hyperlink sp
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## HyperlinkRangeStart and HyperlinkRangeEnd
 
 HyperlinkRangeStart and HyperlinkRangeEnd are Inline DocumentElements and can be added to the inlines of a document.
 
-Here is an example that creates a document with a hyperlink spanning several paragraphs, including an image in one of the paragraphs:#_C#_
-
-	
-
-
+Here is an example that creates a document with a hyperlink spanning several paragraphs, including an image in one of the paragraphs:
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.cs region=HyperlinkRegionStartEnd}} 
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=HyperlinkRegionStartEnd}} 
@@ -224,20 +182,13 @@ Here is an example that creates a document with a hyperlink spanning several par
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-The result:![richtextbox-features-document-elements-hyperlink 001](images/richtextbox-features-document-elements-hyperlink001.png)
+The result:<br>![richtextbox-features-document-elements-hyperlink 001](images/richtextbox-features-document-elements-hyperlink001.png)
 
 You will also need to use HyperlinkRangeStart and HyperlinkRangeEnd, if you are using hyperlinks for the implementation of a custom logic and want to get all hyperlinks from the document, manipulate the properties of the HyperlinkInfo or the whole part of the document that is included in the hyperlink.
 
-For instance, here is how you can delete all hyperlinks in the document and replace them with some text:#_C#_
-
-	
-
-
+For instance, here is how you can delete all hyperlinks in the document and replace them with some text:
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.cs region=RemoveHyperlinksAndReplaceThemWithText}} 
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=RemoveHyperlinksAndReplaceThemWithText}} 
@@ -263,10 +214,7 @@ For instance, here is how you can delete all hyperlinks in the document and repl
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## OtherCustomizationOptions
 
@@ -278,15 +226,8 @@ By default hyperlinks take a fixed string as a tool tip. The default format is:
 >{1} to follow link
 >
 
-
-You have control over it using the __HyperlinkToolTipFormatString__of RadRichTextBox, which will set the format for all hyperlinks in the document.
-        
+You have control over it using the __HyperlinkToolTipFormatString__ of RadRichTextBox, which will set the format for all hyperlinks in the document.
 
 __HyperlinkClicked__
 
-When you click on a hyperlink, the __HyperlinkClicked__ event of __RadRichTextBox__ is fired.
-          The sender of the event is the document element, which you have clicked, e.g. a Span, an Image, InlineUIContainer, etc.
-          The event args on the other hand, provide the possibility to mark the event as handled and prevent the default action.
-          Custom logic can also be implemented depending on the __HyperlinkTarget__ and __URL__, which
-          are also visible as properties of the event args.
-        ![richtextbox-features-document-elements-hyperlink 002](images/richtextbox-features-document-elements-hyperlink002.png)
+When you click on a hyperlink, the __HyperlinkClicked__ event of __RadRichTextBox__ is fired. The sender of the event is the document element, which you have clicked, e.g. a Span, an Image, InlineUIContainer, etc. The event args on the other hand, provide the possibility to mark the event as handled and prevent the default action. Custom logic can also be implemented depending on the __HyperlinkTarget__ and __URL__, which are also visible as properties of the event args.<br>![richtextbox-features-document-elements-hyperlink 002](images/richtextbox-features-document-elements-hyperlink002.png)

@@ -9,9 +9,7 @@ position: 5
 ---
 
 # Removing ToolWindow and DocumentWindow at Runtime
-
-
-
+ 
 RadDock has two different methods which you can call if you want to remove a ToolWindow/DocumentWindow. The of from these methods depends on the __CloseAction__ property which can have one of these values
 
 * __Close.__ When a __DockWindow__ has its __CloseAction__ set to __Close__, this window is closed and detached (but not disposed) from its __RadDock__. You cannot manage it from __RadDock__ collections anymore.
@@ -21,22 +19,15 @@ RadDock has two different methods which you can call if you want to remove a Too
           
 
 * __CloseAndDispose.__ When a __DockWindow__ has its __CloseAction__ set to __CloseAndDispose__, this window is closed and then disposed.
-          
-
-
-
+           
 ## RemoveWindow
 
-This method closes and detaches (but does not dispose) a __DockWindow__ regardless of its __CloseAction__ property. This will happen if you pass only a DockWindow as a parameter. In addition, you can pass a __CloseAction__ parameter in the RemoveWindow method. In this case, the RemoveWindow method will act differently in accordance with this parameter.
-
-
+This method closes and detaches (but does not dispose) a __DockWindow__ regardless of its __CloseAction__ property. This will happen if you pass only a DockWindow as a parameter. In addition, you can pass a __CloseAction__ parameter in the RemoveWindow method. In this case, the RemoveWindow method will act differently in accordance with this parameter. 
 
 ## CloseWindow
 
 This method has a different result on a DockWindow instance, in accordance with the __CloseAction__ property of this instance. 
-
-
-
+ 
 ## Default behavior
 
 __DocumentWindow__: If you do not set the __CloseAction__ for a DocumentWindow and you close this DocumentWindow from the UI, this window is closed with __CloseAction__ set to *CloseAndDispose*, i.e. the DocumentWindow is disposed and you cannot reuse it.

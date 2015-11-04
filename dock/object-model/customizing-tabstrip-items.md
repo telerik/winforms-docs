@@ -9,22 +9,13 @@ position: 10
 ---
 
 # Customizing TabStrip Items
-
-
-
+ 
 This article demonstrates how you can customize or replace the TabStrip items.
 
-## 
-        Using the TabStripItemCreating event
+##  Using the TabStripItemCreating event
       
 
-The above examples are using the __TabStripItemCreating__ event. This event cannot be accessed via the RadDock instance.
-          You can subscribe to the event by using the static __RadDockEvents__ class. You should do that before the InitializeComponent method call:
-        #_[C#]_
-
-	
-
-
+The above examples are using the __TabStripItemCreating__ event. This event cannot be accessed via the RadDock instance. You can subscribe to the event by using the static __RadDockEvents__ class. You should do that before the InitializeComponent method call: 
 
 {{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=subscribe}} 
 {{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=subscribe}} 
@@ -46,14 +37,8 @@ The above examples are using the __TabStripItemCreating__ event. This event cann
 
 {{endregion}} 
 
-
-
-
-Please note that when such static events are used it is mandatory to unsubscribe from the event. If you do not do that the form would not be disposed properly:#_[C#]_
-
-	
-
-
+ 
+Please note that when such static events are used it is mandatory to unsubscribe from the event. If you do not do that the form would not be disposed properly: 
 
 {{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=closed}} 
 {{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=closed}} 
@@ -75,18 +60,10 @@ Please note that when such static events are used it is mandatory to unsubscribe
 
 {{endregion}} 
 
-
-
-
+ 
 ## Adding element to the TabStrip item
 
-The TabStripItemCreating event can be used for adding any kind of RadElement to the TabStrip.
-          For example the following code adds text box to each TabStrip item:
-        #_[C#]_
-
-	
-
-
+The TabStripItemCreating event can be used for adding any kind of RadElement to the TabStrip. For example the following code adds text box to each TabStrip item: 
 
 {{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=element}} 
 {{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=element}} 
@@ -111,21 +88,13 @@ The TabStripItemCreating event can be used for adding any kind of RadElement to 
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 The tabs will look like this:![dock-object-model-customizing-tabstrip-items 001](images/dock-object-model-customizing-tabstrip-items001.png)
 
-## 
-        Replacing the entire TabStrip element.
+## Replacing the entire TabStrip element.
       
 
-The TabStripItemCreating event can be used for replacing the entire element as well. First you need to create a TabStripItem class descendant#_[C#]_
-
-	
-
-
+The TabStripItemCreating event can be used for replacing the entire element as well. First you need to create a TabStripItem class descendant 
 
 {{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=Item}} 
 {{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=Item}} 
@@ -208,16 +177,9 @@ End Class
 ````
 
 {{endregion}} 
+ 
 
-
-
-
-Then you can just replace the default item:
-        #_[C#]_
-
-	
-
-
+Then you can just replace the default item: 
 
 {{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=replace}} 
 {{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=replace}} 
@@ -236,27 +198,19 @@ Then you can just replace the default item:
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 The tabs will look like in the following image:
-        ![dock-object-model-customizing-tabstrip-items 002](images/dock-object-model-customizing-tabstrip-items002.png)
+![dock-object-model-customizing-tabstrip-items 002](images/dock-object-model-customizing-tabstrip-items002.png)
 
-## 
-        DocumentTabStrip Multi Line Row Layout with a Custom Tab Shape
+## DocumentTabStrip Multi Line Row Layout with a Custom Tab Shape
       
 
 The tab items of the __DocumentWindows__ in __RadDock__ have a predefined shape applied (*TabVsShape*). The following example will demonstrate how the default layout can be modified so the tabs are displayed in a multi row layout and how a custom shape can be set to the tab items. For the purpose we have to subscribe to the static __TabStripItemCreating__ event (where we will change the __Shape__ property) and access the __DocumentTabStrip__ in order to set the desired __StripViewItemFitMode__.
         
 
 >note Since the __TabStripItemCreating__ event is static the event subscription have to be defined before the call to the InitializeComponent method.
->
-#_[C#]_
-
-	
-
-
+> 
 
 {{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=MultiLineRowLayoutInit}} 
 {{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=MultiLineRowLayoutInit}} 
@@ -300,18 +254,10 @@ The tab items of the __DocumentWindows__ in __RadDock__ have a predefined shape 
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}  
 
 >note Because we are subscribing to a static event, we need to take care of the unscibription as well. Otherwise the form would not be disposed properly.
->
-#_[C#]_
-
-	
-
-
+> 
 
 {{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=closed}} 
 {{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=closed}} 
@@ -331,10 +277,8 @@ The tab items of the __DocumentWindows__ in __RadDock__ have a predefined shape 
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}  
 
 Here is the outcome of the code above:
-        ![dock-object-model-customizing-tabstrip-items 003](images/dock-object-model-customizing-tabstrip-items003.png)
+
+![dock-object-model-customizing-tabstrip-items 003](images/dock-object-model-customizing-tabstrip-items003.png)

@@ -9,20 +9,17 @@ position: 7
 ---
 
 # Using the DragDropService
-
-
-
+ 
 ## Overview
 
 The new docking framework introduces service-based semantic, which allows for granular and pluggable functionality per RadDock instance. Entire drag-and-drop functionality is handled by the registered DragDropService instance, which simply receives drag requests and instantiates the appropriate operation. The service is responsible for drop target hit-testing, displaying docking guides and docking hints as well as for processing user input while dragging is in progress.![dock-architecture-and-features-using-the-dragdropservice 001](images/dock-architecture-and-features-using-the-dragdropservice001.png)
 
 ## Canceling Drag-and-drop operation
 
-A running drag-and-drop operation (DDO) may be easily canceled by either pressing the ESAPE key or manually, by calling the following method:#_[C#] Canceling Drag-and-drop operation_
+A running drag-and-drop operation (DDO) may be easily canceled by either pressing the ESAPE key or manually, by calling the following method:
 
-	
-
-
+#### Canceling Drag-and-drop operation 
+ 
 
 {{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=cancellingService}} 
 {{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=cancellingService}} 
@@ -38,10 +35,7 @@ A running drag-and-drop operation (DDO) may be easily canceled by either pressin
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 The Boolean parameter determines whether the operation should be committed (applied) or not.
 
 ## Drag-and-drop Modes
@@ -49,15 +43,11 @@ The Boolean parameter determines whether the operation should be committed (appl
 The service can operate in two modes: Immediate and Preview. The Immediate mode is the default one and it means that when a drag-and-drop operation is instantiated, the dragged window will be immediately detached from its current DockTabStrip and will become floating. On the contrary, in Preview mode the DockWindow will not be detached but rather a semi-translucent rectangle will be displayed, indicating the floating position it would take if the operation is committed. The major benefit of this new mode is that the operation is completely cancelable. The Preview mode is currently used by the framework at design-time.![dock-architecture-and-features-using-the-dragdropservice 002](images/dock-architecture-and-features-using-the-dragdropservice002.png)
 
 *ToolWindow3 is being dragged and the service is in Preview mode. The semi-translucent rectangle indicates the floating bounds the window will occupy if the operation is committed.*
+ 
+You can switch between *Preview* and *Immediate* modes by setting the __DragDropMode__ property of RadDock:
 
-
-
-You can switch between *Preview* and *Immediate* modes by setting the __DragDropMode__ property of RadDock:#_[C#] Setting DragDropMode_
-
-	
-
-
-
+#### Setting DragDropMode 
+ 
 {{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=dragDropMode}} 
 {{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=dragDropMode}} 
 
@@ -70,17 +60,12 @@ You can switch between *Preview* and *Immediate* modes by setting the __DragDro
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 ## AllowedDockStates
 
-The service may be told which dock states are allowed to be hit-tested. For example we may exclude any floating window from hit-testing by simply specifying the following:#_[C#] Setting AllowedStates_
+The service may be told which dock states are allowed to be hit-tested. For example we may exclude any floating window from hit-testing by simply specifying the following:
 
-	
-
-
+#### Setting AllowedStates 
 
 {{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=dragDropAllowedStates}} 
 {{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=dragDropAllowedStates}} 
@@ -96,14 +81,7 @@ The service may be told which dock states are allowed to be hit-tested. For exam
 ````
 
 {{endregion}} 
-
-
-
-
-
-
-
-
+ 
 ## Extending Service’s Behavior by Handling Events
 
 * __Starting__: Notifies that the service is about to start. The drag context is passed as an event argument, which allows listeners to examine it and optionally cancel undesired operation.
@@ -124,11 +102,10 @@ The service may be told which dock states are allowed to be hit-tested. For exam
 
 
 
-The following example demonstrates how to allow only DockPosition.Bottom for the MainDocumentContainer:#_[C#] Handling DragDropService events_
-
-	
+The following example demonstrates how to allow only DockPosition.Bottom for the MainDocumentContainer:
 
 
+#### Handling DragDropService events 
 
 {{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=initDragDropEvents}} 
 {{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=initDragDropEvents}} 
@@ -163,23 +140,16 @@ The following example demonstrates how to allow only DockPosition.Bottom for the
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 ![dock-architecture-and-features-using-the-dragdropservice 003](images/dock-architecture-and-features-using-the-dragdropservice003.png)
 
 *Only DockPosition.Bottom is allowed for the MainDocumentContainer.*
-
-
-
+ 
 ## Allowed Dock Manager Edges
 
-The service may be told which edges of the owning RadDock instance are allowed for dock operation. The following example demonstrates how to set only left and right edges as allowed:#_[C#] Setting AllowedDockManagerEdges_
+The service may be told which edges of the owning RadDock instance are allowed for dock operation. The following example demonstrates how to set only left and right edges as allowed:
 
-	
-
-
+#### Setting AllowedDockManagerEdges 
 
 {{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=initDragDropProperties}} 
 {{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=initDragDropProperties}} 

@@ -9,11 +9,7 @@ position: 0
 ---
 
 # Localization
-
-
-
-## 
-
+ 
 To localize RadDock to display control text and messages in a specific language:
 
 * All required classes for localization are defined in __Telerik.WinControls.UI.Localization__namespace. 
@@ -22,11 +18,9 @@ To localize RadDock to display control text and messages in a specific language:
 
 * Override the __GetLocalizedString(string id)__ method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the __default__ clause of the switch statement in the example. 
 
-Below is a sample implementation of a custom localization provider, which returns translations of the default values in German:#_[C#] Localizing RadDock Strings_
+Below is a sample implementation of a custom localization provider, which returns translations of the default values in German:
 
-	
-
-
+#### Localizing RadDock Strings 
 
 {{source=..\SamplesCS\Dock\CustomDockProvider.cs region=customProvider}} 
 {{source=..\SamplesVB\Dock\CustomDockProvider.vb region=customProvider}} 
@@ -132,15 +126,11 @@ End Class
 ````
 
 {{endregion}} 
+ 
 
+To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
-
-
-To apply the custom localization provider, instantiate and assign it to the current localization provider:#_[C#] Localizing RadDock Strings_
-
-	
-
-
+#### Localizing RadDock Strings 
 
 {{source=..\SamplesCS\Dock\CustomDockProvider.cs region=settingCustomProvider}} 
 {{source=..\SamplesVB\Dock\CustomDockProvider.vb region=settingCustomProvider}} 
@@ -155,7 +145,5 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 {{endregion}} 
 
-
-
-
+ 
 The code provided above illustrates the approach to be used to localize the RadDock and is not intended as a full translation.

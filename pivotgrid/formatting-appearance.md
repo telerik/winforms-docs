@@ -10,19 +10,11 @@ position: 5
 
 # Formatting appearance
 
-
-
 This article shows how you can change the appearance of specific cells.
 
 ## CellFormatting
 
-Using the CellFormatting event you can also set various properties of the PivotGridCellElement to modify its appearance. The following example
-          colors the cells in August in Lime color and those in November in Yellow color:
-        #_[C#] _
-
-	
-
-
+Using the CellFormatting event you can also set various properties of the PivotGridCellElement to modify its appearance. The following example colors the cells in August in Lime color and those in November in Yellow color:
 
 {{source=..\SamplesCS\PivotGrid\PivotGridFormattingAppearance.cs region=CellFormatting}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridFormattingAppearance.vb region=CellFormatting}} 
@@ -65,17 +57,11 @@ Using the CellFormatting event you can also set various properties of the PivotG
 
 {{endregion}} 
 
-
 ![pivotgrid-formatting-appearance 001](images/pivotgrid-formatting-appearance001.png)
 
 ## GroupElementFormatting
 
 The GroupElementFormatting event can be used for styling the group cells:
-        #_[C#] _
-
-	
-
-
 
 {{source=..\SamplesCS\PivotGrid\PivotGridFormattingAppearance.cs region=Group}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridFormattingAppearance.vb region=Group}} 
@@ -120,21 +106,13 @@ The GroupElementFormatting event can be used for styling the group cells:
     '
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![pivotgrid-formatting-appearance 002](images/pivotgrid-formatting-appearance002.png)
 
 ##  ErrorString and EmpltyValueString
 
-Using the __ErrorString__ and __EmpltyValueString__ properties of RadPivotGrid,
-          you can set the strings that will appears correspondingly if an error occurs during the calculation of a cell value or if
-          there is no data for a given cell. An error can occur for example if you try to sum a text column.
-        #_[C#] _
-
-	
-
-
+Using the __ErrorString__ and __EmpltyValueString__ properties of RadPivotGrid, you can set the strings that will appears correspondingly if an error occurs during the calculation of a cell value or if there is no data for a given cell. An error can occur for example if you try to sum a text column.
 
 {{source=..\SamplesCS\PivotGrid\PivotGridFormattingAppearance.cs region=SetFormatStrings}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridFormattingAppearance.vb region=SetFormatStrings}} 
@@ -149,7 +127,4 @@ Using the __ErrorString__ and __EmpltyValueString__ properties of RadPivotGrid,
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

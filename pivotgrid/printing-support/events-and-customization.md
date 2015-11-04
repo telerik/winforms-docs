@@ -10,21 +10,7 @@ position: 2
 
 # Events and Customization
 
-
-
-## 
-
-RadPivotGrid exposes two events which you can use to format the appearance and add custom painting to your printed
-          cells: the __PrintElementFormatting__ and the __PrintElementPaint__ events.
-          The following sample demonstrates how you can mark in __red__ the cells with value that is less than
-          __100__ and in __green__ the cells with value greater than
-          __500__. Additionally, the cells that __do not contain any value are grayed out with a hatch brush__.
-
-        #_[C#] _
-
-	
-
-
+RadPivotGrid exposes two events which you can use to format the appearance and add custom painting to your printed cells: the __PrintElementFormatting__ and the __PrintElementPaint__ events. The following sample demonstrates how you can mark in __red__ the cells with value that is less than __100__ and in __green__ the cells with value greater than __500__. Additionally, the cells that __do not contain any value are grayed out with a hatch brush__.
 
 {{source=..\SamplesCS\PivotGrid\PivotGridPrinting.cs region=Formatting}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=Formatting}} 
@@ -77,7 +63,4 @@ RadPivotGrid exposes two events which you can use to format the appearance and a
 
 {{endregion}} 
 
-
-
-
-Here is how the result of the above code would look like:![pivotgrid-printing-support-events-and-customization 001](images/pivotgrid-printing-support-events-and-customization001.png)
+Here is how the result of the above code would look like:<br>![pivotgrid-printing-support-events-and-customization 001](images/pivotgrid-printing-support-events-and-customization001.png)

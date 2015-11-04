@@ -5,14 +5,10 @@ description: API
 slug: winforms/propertygrid/editors/api
 tags: api
 published: True
-position: 0
+position: 1
 ---
 
 # API
-
-
-
-## 
 
 The editing process can be controlled by using the following methods:
 
@@ -26,7 +22,5 @@ The editing process can be controlled by using the following methods:
 
 * __IsInEditMode__ - Indicates whether the property grid is in edit mode.
 
-All editors used in RadPropertyGrid inherit from __BaseInputEditor__ class.
-			This class does not inherit from __RadElement__. You should use its 
-			__EditorElement__ property if you want to customize any element properties.
+All editors used in RadPropertyGrid inherit from __BaseInputEditor__ class. This class does not inherit from __RadElement__. You should use its __EditorElement__ property if you want to customize any element properties.
 		

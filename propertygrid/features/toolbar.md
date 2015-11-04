@@ -10,19 +10,9 @@ position: 5
 
 # ToolBar
 
+RadPropertyGrid offers a toolbar with out of the box functionality, which appears on the top of the control. This toolbar contains predefined functions to sort the items, to group the items or to filter them by a string entered in the text box. You can enable this tool bar by setting the __ToolBarVisible__ property to *true*:
 
-
-## 
-
-RadPropertyGrid offers a toolbar with out of the box functionality, which appears on the top of the control.
-        	This toolbar contains predefined functions to sort the items, to group the items or to filter them by a 
-        	string entered in the text box. You can enable this tool bar by setting the __ToolBarVisible__
-        	property to *true*:
-        #_[C#] Enabling the tool bar_
-
-	
-
-
+#### Enabling the tool bar
 
 {{source=..\SamplesCS\PropertyGrid\Features\PropertyGridToolbar.cs region=ToolbarVisible}} 
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=ToolbarVisible}} 
@@ -37,15 +27,11 @@ RadPropertyGrid offers a toolbar with out of the box functionality, which appear
 
 {{endregion}} 
 
-
 ![propertygrid-features-toolbar 001](images/propertygrid-features-toolbar001.png)
 
 You can set the predefined filter operator and property by making use of the following properties:
-        #_[C#] Customizing default filtering_
 
-	
-
-
+#### Customizing default filtering
 
 {{source=..\SamplesCS\PropertyGrid\Features\PropertyGridToolbar.cs region=FilterProperties}} 
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=FilterProperties}} 
@@ -60,18 +46,11 @@ You can set the predefined filter operator and property by making use of the fol
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+The toolbar consists of a __StackLayoutPanel__, which allow you to easily add additional elements or modify the existing once. You can access the existing items as follows:
 
-
-
-The toolbar consists of a __StackLayoutPanel__, which allow you to easily add additional elements 
-			or modify the existing once. You can access the existing items as follows:
-		#_[C#] Accessing toolbar elements_
-
-	
-
-
+#### Accessing toolbar elements
 
 {{source=..\SamplesCS\PropertyGrid\Features\PropertyGridToolbar.cs region=accessingItems}} 
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=accessingItems}} 
@@ -88,18 +67,11 @@ The toolbar consists of a __StackLayoutPanel__, which allow you to easily add ad
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+If you want to add a new element in the toolbar, just add it to the __Children__ collection of __ToolbarElement__:
 
-
-
-If you want to add a new element in the toolbar, just add it to the __Children__ 
-			collection of __ToolbarElement__:
-		#_[C#] Add element to toolbar_
-
-	
-
-
+#### Add element to toolbar
 
 {{source=..\SamplesCS\PropertyGrid\Features\PropertyGridToolbar.cs region=addElement}} 
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=addElement}} 
@@ -120,7 +92,6 @@ If you want to add a new element in the toolbar, just add it to the __Children__
         '
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![propertygrid-features-toolbar 002](images/propertygrid-features-toolbar002.png)

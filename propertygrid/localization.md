@@ -5,35 +5,22 @@ description: Localization
 slug: winforms/propertygrid/localization
 tags: localization
 published: True
-position: 7
+position: 8
 ---
 
 # Localization
 
-
-
-## 
-
 To localize RadPropertyGrid to display control text and messages in a specific language, please consider the following:
-        
 
 * All required classes for localization are defined in __Telerik.WinConrtols.UI.Localization__ namespace.
-            
 
 * Start by creating a descendant of the __PropertyGridLocalizationProvider__ class.
-            
 
-* Override the __GetLocalizedString(string id)__ method and provide a translation for the label
-              and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed
-              by the call to the base __GetLocalizedString__ method in the default clause of the switch statement
-              in the example.
-            
+* Override the __GetLocalizedString(string id)__ method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the default clause of the switch statement in the example.
 
-Below is a sample implementation of an English localization provider:#_[C#] Creating English localization provider_
+Below is a sample implementation of an English localization provider:
 
-	
-
-
+#### Creating English localization provider
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridLocalization.cs region=localizationProvider}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridLocalization.vb region=localizationProvider}} 
@@ -99,16 +86,11 @@ End Class
 '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
-
-
-To apply the custom localization provider, instantiate and assign it to the current localization provider:#_[C#] Changing the localization provider_
-
-	
-
-
+#### Changing the localization provider
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridLocalization.cs region=changeLocalization}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridLocalization.vb region=changeLocalization}} 
@@ -121,7 +103,4 @@ To apply the custom localization provider, instantiate and assign it to the curr
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

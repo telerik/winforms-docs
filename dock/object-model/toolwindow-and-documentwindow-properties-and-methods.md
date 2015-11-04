@@ -9,9 +9,7 @@ position: 3
 ---
 
 # ToolWindow and DocumentWindow Properties and Methods
-
-
-
+ 
 ## ToolWindow and DocumentWindow Properties
 
 __ToolWindow__ and __DocumentWindow__ both implement the same interfaces, such as __IDockWindow__ and have a common set of properties even though their runtime behavior differs.
@@ -40,11 +38,9 @@ __Close():__ Closes a ToolWindow or a DocumentWindow. The ToolWindow/DocumentWin
 
 __Show():__ Shows a hidden ToolWindow or DocumentWindow.
 
-__DockTo(DockWindow window, DockPosition dockPosition):__ Docks a window with another window in the same container. The example below docks "Bottom Window" to the container of "Top Window".![dock-object-model-toolwindow-and-documentwindow-properties-at-runtime 001](images/dock-object-model-toolwindow-and-documentwindow-properties-at-runtime001.png)#_[C#] Using DockTo()_
+__DockTo(DockWindow window, DockPosition dockPosition):__ Docks a window with another window in the same container. The example below docks "Bottom Window" to the container of "Top Window".![dock-object-model-toolwindow-and-documentwindow-properties-at-runtime 001](images/dock-object-model-toolwindow-and-documentwindow-properties-at-runtime001.png)
 
-	
-
-
+#### Using DockTo() 
 
 {{source=..\SamplesCS\Dock\CreatingWindows.cs region=usingDockTo}} 
 {{source=..\SamplesVB\Dock\CreatingWindows.vb region=usingDockTo}} 

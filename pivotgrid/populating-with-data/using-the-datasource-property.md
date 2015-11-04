@@ -10,18 +10,7 @@ position: 1
 
 # Using the DataSource property
 
-
-
-## 
-
-Similarly to other WinForms data controls, RadPivotGrid can be populated with data by setting its DataSource 
-	        and DataMember properties. However, you also need to add the appropriate descriptions in order to define the 
-	        structure of the data that is going to be displayed. More information about the different types of descriptions 
-	        can be found in the  [Using LocalDataSourceProvider article]({%slug winforms/pivotgrid/populating-with-data/using-the-localsourcedataprovider%})#_[C#] _
-
-	
-
-
+Similarly to other WinForms data controls, RadPivotGrid can be populated with data by setting its DataSource and DataMember properties. However, you also need to add the appropriate descriptions in order to define the structure of the data that is going to be displayed. More information about the different types of descriptions can be found in the [Using LocalDataSourceProvider article]({%slug winforms/pivotgrid/populating-with-data/using-the-localsourcedataprovider%})
 
 {{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheDataSourceProperty.cs region=FillWithData}} 
 {{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheDataSourceProperty.vb region=FillWithData}} 
@@ -92,10 +81,7 @@ Similarly to other WinForms data controls, RadPivotGrid can be populated with da
 
 {{endregion}} 
 
-
-
-
->note When you set the DataSource and DataMember properties, RadPivotGrid 
-		  will automatically prepare a LocalDataSourceProvider and use it internally.
+>note When you set the DataSource and DataMember properties, RadPivotGrid will automatically prepare a LocalDataSourceProvider and use it internally.
 >
+
 ![pivotgrid-populating-with-datausing-the-datasource-property](images/pivotgrid-populating-with-datausing-the-datasource-property.png)

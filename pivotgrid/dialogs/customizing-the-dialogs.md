@@ -14,13 +14,7 @@ position: 1
 
 ## 
 
-To customize the dialogs in RadPivotGrid/RadPivotFieldList, you can either inherit from them to override/extend
-          the base functionality or you can create an entirely custom dialogs by implementing the corresponding dialog interface.
-        #_[C#] _
-
-	
-
-
+To customize the dialogs in RadPivotGrid/RadPivotFieldList, you can either inherit from them to override/extend the base functionality or you can create an entirely custom dialogs by implementing the corresponding dialog interface.
 
 {{source=..\SamplesCS\PivotGrid\PivotGridDialogs.cs region=MyAggregateOptionsDialog}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridDialogs.vb region=MyAggregateOptionsDialog}} 
@@ -45,19 +39,9 @@ Class MyAggregateOptionsDialog
 End Class
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-When RadPivotGrid and RadPivotFieldList need a dialog, they use the __PivotGridDialogsFactory__ to
-          create an instance of a dialog. To replace the default dialogs with your custom ones, you need to implement a
-          custom factory as show below.
-        #_[C#] _
-
-	
-
-
+When RadPivotGrid and RadPivotFieldList need a dialog, they use the __PivotGridDialogsFactory__ to create an instance of a dialog. To replace the default dialogs with your custom ones, you need to implement a custom factory as show below.
 
 {{source=..\SamplesCS\PivotGrid\PivotGridDialogs.cs region=MyDialogsFactory}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridDialogs.vb region=MyDialogsFactory}} 
@@ -80,16 +64,9 @@ Class MyDialogsFactory
 End Class
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-Then, you need to assign it to RadPivotGrid and RadPivotFieldList:#_[C#] _
-
-	
-
-
+Then, you need to assign it to RadPivotGrid and RadPivotFieldList:
 
 {{source=..\SamplesCS\PivotGrid\PivotGridDialogs.cs region=SetFactories}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridDialogs.vb region=SetFactories}} 
@@ -105,6 +82,5 @@ Then, you need to assign it to RadPivotGrid and RadPivotFieldList:#_[C#] _
 ````
 
 {{endregion}} 
-
 
 ![pivotgrid-dialogs-customizing-the-dialogs 001](images/pivotgrid-dialogs-customizing-the-dialogs001.png)

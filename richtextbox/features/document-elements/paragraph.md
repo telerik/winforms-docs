@@ -10,13 +10,7 @@ position: 3
 
 # Paragraph
 
-
-
-The paragraph class allows you to separate the content into paragraphs. It is responsible for displaying 
-      	inline elements such as __Span__, __HyperlinkRangeStart__ and
-      	__End__, __InlineImage__ etc. You are also able to configure the
-      	appearance of the paragraph by modifying its parameters.
-      
+The paragraph class allows you to separate the content into paragraphs. It is responsible for displaying inline elements such as __Span__, __HyperlinkRangeStart__ and __End__, __InlineImage__ etc. You are also able to configure the appearance of the paragraph by modifying its parameters.
 
 This topic will explain you how to:
 
@@ -28,15 +22,7 @@ This topic will explain you how to:
 
 ## Use Paragraphs
 
-The __Paragraph__ can be used only in the context of a
-        	[Section]({%slug winforms/richtextbox-(obsolete)/features/document-elements/section%}) 
-        	or a TableCell element. The section exposes a collection of Blocks, to which the paragraphs
-        	can be added.
-        #_C#_
-
-	
-
-
+The __Paragraph__ can be used only in the context of a [Section]({%slug winforms/richtextbox-(obsolete)/features/document-elements/section%}) or a TableCell element. The section exposes a collection of Blocks, to which the paragraphs can be added.
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxParagraph.cs region=UseParagraphs}} 
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxParagraph.vb region=UseParagraphs}} 
@@ -55,19 +41,11 @@ The __Paragraph__ can be used only in the context of a
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Add inline elements to a Paragraph
 
-To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage you have to use the Inlines 
-        	collection of the Paragraph. #_C#_
-
-	
-
-
+To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage you have to use the Inlines collection of the Paragraph. 
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxParagraph.cs region=AddInlineElementsToParagraph}} 
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxParagraph.vb region=AddInlineElementsToParagraph}} 
@@ -90,19 +68,13 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Customize the Paragraph
 
-The __Paragraph__exposes several properties that allow you to customize the layout
-        	of the elements placed underneath it. Here is a list of them:
+The __Paragraph__ exposes several properties that allow you to customize the layout of the elements placed underneath it. Here is a list of them:
 
-* __FontSize__ - represents the font size of the text inside the 
-          	__Paragraph__. If not explicitly set to its child elements, they inherit its value.
-          
+* __FontSize__ - represents the font size of the text inside the __Paragraph__. If not explicitly set to its child elements, they inherit its value.
 
 * __LineSpacing__ - specifies the value for the space between the lines.
 
@@ -112,7 +84,7 @@ The __Paragraph__exposes several properties that allow you to customize the layo
 
 * __Auto -__ the space between the lines is determined automatically.
 
-* __Exact -__ the space between the lines should equal to the value of the __LineSpacing__ property__.__
+* __Exact -__ the space between the lines should equal to the value of the __LineSpacing__ property.
 
 * __LeftIndent -__ represents the size of the indent to the left size of the __Paragraph__. The indent gets applied together with the respective margins to the layout.
 

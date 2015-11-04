@@ -5,18 +5,12 @@ description: Customization
 slug: winforms/propertygrid/customization
 tags: customization
 published: True
-position: 4
+position: 5
 ---
 
 # Customization
 
-
-
-## 
-
-Customizing the appearance of the items in RadPropertyGrid is controlled by a few properties and the 
-        	__ItemFormatting__ event. The properties that you can use to customize the item appearance are:
-        	
+Customizing the appearance of the items in RadPropertyGrid is controlled by a few properties and the __ItemFormatting__ event. The properties that you can use to customize the item appearance are:
 
 * __ItemHeight__- sets the height of the items.
 
@@ -24,18 +18,12 @@ Customizing the appearance of the items in RadPropertyGrid is controlled by a fe
 
 * __ItemIndent__- increases the indent before the items. Valid for all levels.
 
->caution Since the control uses data virtualization (just like RadGridView and RadListControl) and you should always reset the values
-		    of the customized properties, in order to to prevent applying the formatting to other items (because of the item reuse).
+>caution Since the control uses data virtualization (just like RadGridView and RadListControl) and you should always reset the values of the customized properties, in order to to prevent applying the formatting to other items (because of the item reuse).
 >
 
+Here is an example on how you can change the back color of the subitems and also to change the colors of the items with values *True* and *False*:
 
-Here is an example on how you can change the back color of the subitems and also to change the colors 
-			of the items with values *True* and *False*:
-		#_[C#] Customizing items_
-
-	
-
-
+#### Customizing items
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridCustomization.cs region=itemFormatting}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomization.vb region=itemFormatting}} 
@@ -97,6 +85,5 @@ Here is an example on how you can change the back color of the subitems and also
 ````
 
 {{endregion}} 
-
 
 ![propertygrid-customization](images/propertygrid-customization.png)

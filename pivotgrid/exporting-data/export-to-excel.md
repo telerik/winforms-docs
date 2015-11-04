@@ -10,18 +10,11 @@ position: 0
 
 # Export to Excel
 
-
-
 This method offers exporting functionality and does not require MS Office installation on users' machines. The __PivotExcelML__ format can be read by MS Excel 2002 (MS Office XP) and above.
 
 ## Exporting Data
 
 Before running export to ExcelML, you have to initialize the PivotExportToExcelML class. The constructor takes one parameter: the RadPivotGrid that will be exported:
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PivotGrid\PivotGridExport.cs region=ExportToExcelIMLInitialization}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=ExportToExcelIMLInitialization}} 
@@ -36,18 +29,9 @@ Before running export to ExcelML, you have to initialize the PivotExportToExcelM
 
 {{endregion}} 
 
-
-
-
 ## Exporting Visual Settings
 
-Using the PivotExcelML method allows you to export the visual settings (themes) to the Excel file. ExcelML has also a visual representation of the alternating column color. The row height is exported with the default DPI transformation (60pixels = 72points).
-          You can enable exporting visual settings through the ExportVisualSettings property. By default the value of this property is true:
-        #_[C#]_
-
-	
-
-
+Using the PivotExcelML method allows you to export the visual settings (themes) to the Excel file. ExcelML has also a visual representation of the alternating column color. The row height is exported with the default DPI transformation (60pixels = 72points). You can enable exporting visual settings through the ExportVisualSettings property. By default the value of this property is true:
 
 {{source=..\SamplesCS\PivotGrid\PivotGridExport.cs region=SettingExportVisualSettings}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=SettingExportVisualSettings}} 
@@ -60,19 +44,11 @@ Using the PivotExcelML method allows you to export the visual settings (themes) 
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Setting the sheet name
 
 You can specify the sheet name through __SheetName__ property. If your data is large enough to be split on more than one sheet, then the export method adds index to the names of the next sheets.
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PivotGrid\PivotGridExport.cs region=SettingTheSheetName}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=SettingTheSheetName}} 
@@ -87,17 +63,9 @@ You can specify the sheet name through __SheetName__ property. If your data is l
 
 {{endregion}} 
 
-
-
-
 ## RunExport method
 
 Exporting data to Excel is done through the __RunExport__ method of  __PivotExportToExcelML__ object. The RunExport method accepts a string parameter with a valid file path. Consider the code sample below:
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PivotGrid\PivotGridExport.cs region=ExportToExcelInExcelMLFormat}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=ExportToExcelInExcelMLFormat}} 
@@ -112,20 +80,11 @@ Exporting data to Excel is done through the __RunExport__ method of  __PivotExpo
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Events
 
-__ExcelCellFormating__ event:
-          It gives an access to a single cell’s __SingleStyleElement__ that allows you to make additional formatting (adding border, setting alignment, text font, colors, changing cell value, etc.) for every excel cell related to the exported RadPivotGrid:
-        #_[C#]_
-
-	
-
-
+__ExcelCellFormating__ event: It gives an access to a single cell’s __SingleStyleElement__ that allows you to make additional formatting (adding border, setting alignment, text font, colors, changing cell value, etc.) for every excel cell related to the exported RadPivotGrid:
 
 {{source=..\SamplesCS\PivotGrid\PivotGridExport.cs region=ExcelCellFormating}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=ExcelCellFormating}} 
@@ -156,7 +115,6 @@ __ExcelCellFormating__ event:
     '
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![pivotgrid-export-to-excel 001](images/pivotgrid-export-to-excel001.png)

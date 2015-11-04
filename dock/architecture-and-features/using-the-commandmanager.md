@@ -9,9 +9,7 @@ position: 8
 ---
 
 # Using the CommandManager
-
-
-
+ 
 ## Predefined Commands
 
 * __DisplayQuickNavigator (CTRL+TAB)__: Displays the window activation tool (quick navigator)
@@ -21,20 +19,14 @@ position: 8
 * __NextDocument (CTRL+F6)__: Sends the currently active document to the back of the activation order list and activates the next one.
 
 * __PreviousDocument (CTRL+SHIFT+F6)__ Puts the last document in the activation order list in front and activates it.
-
-
+ 
 
 The names of all predefined commands may be found in the static PredefinedCommandNames class.
-
-
+ 
 
 ## Providing Custom Shortcuts
 
-You may easily specify custom shortcut for any of the predefined commands like this:#_[C#] _
-
-	
-
-
+You may easily specify custom shortcut for any of the predefined commands like this: 
 
 {{source=..\SamplesCS\Dock\UsingCommandManager.cs region=Shortcut}} 
 {{source=..\SamplesVB\Dock\UsingCommandManager.vb region=Shortcut}} 
@@ -56,20 +48,15 @@ You may easily specify custom shortcut for any of the predefined commands like t
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}  
 
 The above code specifies the SHIFT+A+S as a valid key combination that will trigger the NextDocument command.
 
 ## Registering Custom Command
 
-The completely transparent object model of the command manager allows you to create and register completely custom command and associate it with the desired key combination. The following code demonstrates how to create custom command that floats the currently active tool window and is associated with the CTRL+F shortcut:#_[C#] Define the custom command class_
+The completely transparent object model of the command manager allows you to create and register completely custom command and associate it with the desired key combination. The following code demonstrates how to create custom command that floats the currently active tool window and is associated with the CTRL+F shortcut:
 
-	
-
-
+#### Define the custom command class 
 
 {{source=..\SamplesCS\Dock\UsingCommandManager.cs region=RadDockCommand}} 
 {{source=..\SamplesVB\Dock\UsingCommandManager.vb region=RadDockCommand}} 
@@ -138,11 +125,7 @@ End Class
 {{endregion}} 
 
 
-#_[C#] Register the custom command_
-
-	
-
-
+#### Register the custom command 
 
 {{source=..\SamplesCS\Dock\UsingCommandManager.cs region=RegisterCustomCommand}} 
 {{source=..\SamplesVB\Dock\UsingCommandManager.vb region=RegisterCustomCommand}} 
@@ -161,12 +144,8 @@ End Class
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 ## Enable Disable the Command Manager
-
-
+ 
 
 You may easily disable the command manager, using its __Enabled__ property. Alternatively, you may either clear all commands or clear any shortcut associated with these commands.

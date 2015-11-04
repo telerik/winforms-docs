@@ -14,44 +14,28 @@ position: 0
 
 ## 
 
-The RadRichTextBox allows you to export and import its content. This is useful in case you want to save the user's input
-        	into a data base and then load it from there, or if you want to save/load the content of the RadRichTextBox to/from a file.
-        	To import and export you have to use a specific class that implements the __Telerik.WinControls.RichTextBox.FormatProviders.IDocumentFormatProvider__.
-        	You can find built-in classes, that implement this interface, for each of the supported formats. Currently the RadRichTextBox 
-        	can export and import the following formats:
-        
+The RadRichTextBox allows you to export and import its content. This is useful in case you want to save the user's input into a data base and then load it from there, or if you want to save/load the content of the RadRichTextBox to/from a file. To import and export you have to use a specific class that implements the __Telerik.WinControls.RichTextBox.FormatProviders.IDocumentFormatProvider__. You can find built-in classes, that implement this interface, for each of the supported formats. Currently the RadRichTextBox can export and import the following formats:
 
 * __XAML__ - to import/export __XAML__ documents you have to use the __XamlFormatProvider__ class from the Telerik.WinControls.RichTextBox.FileFormats.Xaml namespace.
-      
 
 * __DOCX__ - to import/export __DOCX__ documents you have to use the __DocxFormatProvider__ class from the Telerik.WinControls.RichTextBox.FileFormats.OpenXml.Docx namespace.
-      
 
 * __HTML__ - to import/export __HTML__ documents you have to use the __HtmlFormatProvider__ class from the Telerik.WinControls.RichTextBox.FileFormats.Html namespace.
-      
 
 * __RTF__ - to import/export __RTF__ documents you have to use the __RtfFormatProvider__ class from the Telerik.WinControls.RichTextBox.FileFormats.Rtf namespace.
-			
 
 * __Plain text__ - to import/export plain text documents you have to use the __TxtFormatProvider__ class from the Telerik.WinControls.RichTextBox.FormatProviders.Txt namespace.
-      
 
 * __PDF__ - to export documents to __PDF__ you have to use the __PdfFormatProvider__ class from the Telerik.WinControls.RichTextBox.FileFormats.Pdf namespace.
-      
 
 Here are some examples on how to export and import.
 
->note The "Export to String" and "Import from String" examples are only valid for the text-based format providers (Html, Xaml, Rtf and TxtFormatProvider). 
-			The "Export to File" and "Import from File" are applicable to each of the format providers (save for PDF import). 
-			To use them with the desired format just replace the format provider and change the settings of the __SaveFileDialog__ or the __OpenFileDialog__ When importing, simply set the returned document to the __RadRichTextBox1.Document__ .
+>note The "Export to String" and "Import from String" examples are only valid for the text-based format providers (Html, Xaml, Rtf and TxtFormatProvider). The "Export to File" and "Import from File" are applicable to each of the format providers (save for PDF import). To use them with the desired format just replace the format provider and change the settings of the __SaveFileDialog__ or the __OpenFileDialog__ When importing, simply set the returned document to the __RadRichTextBox1.Document__ .
 >
 
+__Export to String__
 
-__Export to String__#_[C#] Export to String_
-
-	
-
-
+#### Export to String
 
 {{source=..\SamplesCS\RichTextBox\Features\ImportExport\RichTextBoxImportExport.cs region=ExportToXAML}} 
 {{source=..\SamplesVB\RichTextBox\Features\ImportExport\RichTextBoxImportExport.vb region=ExportToXAML}} 
@@ -71,16 +55,11 @@ __Export to String__#_[C#] Export to String_
     '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+__Export to File__
 
-
-
-__Export to File__#_[C#] Export to File_
-
-	
-
-
+#### Export to File
 
 {{source=..\SamplesCS\RichTextBox\Features\ImportExport\RichTextBoxImportExport.cs region=ExportToDocx}} 
 {{source=..\SamplesVB\RichTextBox\Features\ImportExport\RichTextBoxImportExport.vb region=ExportToDocx}} 
@@ -120,16 +99,11 @@ __Export to File__#_[C#] Export to File_
     '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+__Import from String__
 
-
-
-__Import from String__#_[C#] Import from String_
-
-	
-
-
+#### Import from String
 
 {{source=..\SamplesCS\RichTextBox\Features\ImportExport\RichTextBoxImportExport.cs region=ImportXaml}} 
 {{source=..\SamplesVB\RichTextBox\Features\ImportExport\RichTextBoxImportExport.vb region=ImportXaml}} 
@@ -151,14 +125,9 @@ __Import from String__#_[C#] Import from String_
 
 {{endregion}} 
 
+__Import from File__
 
-
-
-__Import from File__#_[C#] Import from File_
-
-	
-
-
+#### Import from File
 
 {{source=..\SamplesCS\RichTextBox\Features\ImportExport\RichTextBoxImportExport.cs region=ImportDocx}} 
 {{source=..\SamplesVB\RichTextBox\Features\ImportExport\RichTextBoxImportExport.vb region=ImportDocx}} 
@@ -200,7 +169,4 @@ __Import from File__#_[C#] Import from File_
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

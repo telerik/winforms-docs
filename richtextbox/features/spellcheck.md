@@ -12,48 +12,27 @@ position: 12
 
 
 
-The RadRichTextBox control is designed to support "spell checking as you type" by setting a single property and
-        specifying a proper dictionary to it. This topic will explain you the following:
-      
-
-## 
+The RadRichTextBox control is designed to support "spell checking as you type" by setting a single property and specifying a proper dictionary to it. This topic will explain you the following:
 
 ### Enabling SpellCheck
 
-To enable or disable the spell checking functionality (present as red wavy underlines below unrecognized words),
-              you can use the __IsSpellCheckingEnabled__ property on the RadRichTextBox. When the property
-              is *False*, no dictionaries are loaded and no overhead is incurred for spell checking.
-            
+To enable or disable the spell checking functionality (present as red wavy underlines below unrecognized words), you can use the __IsSpellCheckingEnabled__ property on the RadRichTextBox. When the property is *False*, no dictionaries are loaded and no overhead is incurred for spell checking.
 
-You can customize the spell checker by using the __SpellChecker__ property of RadRichTextBox.
-              It’s of type __ISpellChecker__. By default an object of type __DocumentSpellChecker__
-              that implements the interface, is used for this property. You can either use it or provide your custom class that implements
-              the __ISpellChecker__ interface.
-            
+You can customize the spell checker by using the __SpellChecker__ property of RadRichTextBox. It’s of type __ISpellChecker__. By default an object of type __DocumentSpellChecker__ that implements the interface, is used for this property. You can either use it or provide your custom class that implements the __ISpellChecker__ interface.
 
 ### Dictionaries
 
-The dictionaries in RadRichTextBox implement the __IWordDictionary__ interface. Easy interoperability
-              with dictionaries from __RadSpell__ for ASP.NET is achieved through the __WordDictionary__
-              class, which supports the loading of a dictionary directly from the __*.tdf__ files, used with
-              __RadSpell__.
-            
+The dictionaries in RadRichTextBox implement the __IWordDictionary__ interface. Easy interoperability with dictionaries from __RadSpell__ for ASP.NET is achieved through the __WordDictionary__ class, which supports the loading of a dictionary directly from the __*.tdf__ files, used with __RadSpell__.
 
 Here is an example of a __WordDictionary__ loaded from a __TDF__ file.
-            
 
->note When adding a __WordDictionary__ or similar object use the __AddDictionary(IWordDictionary dictionary, CultureInfo culture)__ method of the __DocumentSpellChecker__ . You can also associate a dictionary with a specific culture.
-                The method to remove this dictionary is __RemoveDictionary(CultureInfo culture)__ .
+>note When adding a __WordDictionary__ or similar object use the __AddDictionary(IWordDictionary dictionary, CultureInfo culture)__ method of the __DocumentSpellChecker__ . You can also associate a dictionary with a specific culture. The method to remove this dictionary is __RemoveDictionary(CultureInfo culture)__ .
 >
-
 
 >note The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__ .
 >
-#_[C#] Load dictionary_
 
-	
-
-
+#### Load dictionary
 
 {{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSpellCheck.cs region=LoadDictionary}} 
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSpellCheck.vb region=LoadDictionary}} 
@@ -75,32 +54,20 @@ Here is an example of a __WordDictionary__ loaded from a __TDF__ file.
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ### Adding a Word
 
-To add a word to a dictionary you can either use the __AddWord()__ method of the
-              __DocumentSpellChecker__ or of the dictionary itself. Using the first one you can
-              add a word to multiple dictionaries associated to the same culture. This done done by passing the desired
-              culture as parameter to the method.
-            
+To add a word to a dictionary you can either use the __AddWord()__ method of the __DocumentSpellChecker__ or of the dictionary itself. Using the first one you can add a word to multiple dictionaries associated to the same culture. This done done by passing the desired culture as parameter to the method.
 
->note Using the overload of the __AddWord()__ method that takes only the word as argument is
-                equal to using the second overload and passing __CultureInfo.InvariantCulture__ as argument.
+>note Using the overload of the __AddWord()__ method that takes only the word as argument is equal to using the second overload and passing __CultureInfo.InvariantCulture__ as argument.
 >
 
-
 Using the __AddWord()__ method of the dictionary itself will add the word only to the respective dictionary.
-            
 
-Here is an example:#_[C#] Add word to dictionary_
+Here is an example:
 
-	
-
-
+#### Add word to dictionary
 
 {{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSpellCheck.cs region=AddWord}} 
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSpellCheck.vb region=AddWord}} 
@@ -113,25 +80,16 @@ Here is an example:#_[C#] Add word to dictionary_
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ### Internationalization
 
-The spell checking component is designed to suit scenarios where different cultures take place in the same application.
-              Internationalization is achieved through associating each dictionary and custom dictionary with a specific culture
-              (or the __InvariantCulture__ as the default one).
-            
+The spell checking component is designed to suit scenarios where different cultures take place in the same application. Internationalization is achieved through associating each dictionary and custom dictionary with a specific culture (or the __InvariantCulture__ as the default one).
 
 >note The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__ .
 >
-#_[C#] Load international dictionary _
 
-	
-
-
+#### Load international dictionary
 
 {{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSpellCheck.cs region=LoadDictionaryDE}} 
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSpellCheck.vb region=LoadDictionaryDE}} 
@@ -153,7 +111,4 @@ The spell checking component is designed to suit scenarios where different cultu
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

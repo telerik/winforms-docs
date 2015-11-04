@@ -9,24 +9,15 @@ position: 0
 ---
 
 # Loading And Saving Layouts
+ 
 
-
-
-__RadDock__ provides methods to save and load layouts. A layout
-        records the size and arrangement of all __DockWindows__ within
-        __RadDock__. This saves all managed dockables
-        (__ToolWindow__ and __DocumentWindow__) regardless of
-        state (i.e. a window may be hidden or floating and still be saved). 
-      
-
+__RadDock__ provides methods to save and load layouts. A layout records the size and arrangement of all __DockWindows__ within __RadDock__. This saves all managed dockables (__ToolWindow__ and __DocumentWindow__) regardless of state (i.e. a window may be hidden or floating and still be saved). 
+       
 ## To Save a Layout
 
 To save a layout, call the __RadDock.SaveToXML()__ method:
-        #_[C#] SaveToXml_
 
-	
-
-
+#### SaveToXml 
 
 {{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=saveLayout}} 
 {{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=saveLayout}} 
@@ -40,16 +31,8 @@ To save a layout, call the __RadDock.SaveToXML()__ method:
 ````
 
 {{endregion}} 
-
-
-
-
-You can use the __DockWindowSerializing__ event to exclude windows from the saved layout:
-        #_[C#]_
-
-	
-
-
+ 
+You can use the __DockWindowSerializing__ event to exclude windows from the saved layout: 
 
 {{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=Serializing}} 
 {{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=Serializing}} 
@@ -80,11 +63,7 @@ You can use the __DockWindowSerializing__ event to exclude windows from the save
 ## To Load a Layout
 
 To load a layout, call the __RadDock.LoadFromXML()__method:
-        #_[C#] LoadFromXml_
-
-	
-
-
+#### LoadFromXml 
 
 {{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=loadLayout}} 
 {{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=loadLayout}} 
@@ -98,15 +77,11 @@ To load a layout, call the __RadDock.LoadFromXML()__method:
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Saving and Loading RadDock for WinForms Layouts](http://tv.telerik.com/watch/winforms/raddock/saving-loading-raddock-winforms-layouts)In this video, you will learn how to use the simple XML serialization features of RadDock for WinForms to easily save and load RadDock layouts.
-                (Runtime: 07:03)|
+|[Saving and Loading RadDock for WinForms Layouts](http://tv.telerik.com/watch/winforms/raddock/saving-loading-raddock-winforms-layouts)In this video, you will learn how to use the simple XML serialization features of RadDock for WinForms to easily save and load RadDock layouts. (Runtime: 07:03)|
 >caption 
 
 ![dock-loading-and-saving-layouts 001](images/dock-loading-and-saving-layouts001.png)|

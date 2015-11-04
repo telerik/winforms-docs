@@ -5,24 +5,16 @@ description: Attributes
 slug: winforms/propertygrid/attributes
 tags: attributes
 published: True
-position: 1
+position: 2
 ---
 
 # Attributes
 
-
-
 This article contains a list of some of the more important and more commonly used attributes used with RadPropertyGrid.
-      
 
 ## EditorAttribute
 
 With the editor attribute you can specify __UITypeEditor__ as well as __BaseInputEditor__ (since Q1 2013) to be used for a given property.
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=EditorAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=EditorAttribute}} 
@@ -52,11 +44,6 @@ With the editor attribute you can specify __UITypeEditor__ as well as __BaseInpu
 ## RadRangeAttribute 
 
 The range attribute allows you to set a minimum and maximum value to be used for a property that is edited with a RadSpinEditor.
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=RadRangeAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=RadRangeAttribute}} 
@@ -78,19 +65,11 @@ The range attribute allows you to set a minimum and maximum value to be used for
     Private m_DoorsCount As Byte
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## BrowsableAttribute  
 
 Determines whether the property will be included in the collection of properties RadPropertyGridSHows.
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=BrowsableAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=BrowsableAttribute}} 
@@ -130,11 +109,6 @@ Determines whether the property will be included in the collection of properties
 ## ReadOnlyAttribute   
 
 Determines whether a property can be edited in RadPropertyGrid or not.
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=ReadOnlyAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=ReadOnlyAttribute}} 
@@ -158,17 +132,9 @@ Determines whether a property can be edited in RadPropertyGrid or not.
 
 {{endregion}} 
 
-
-
-
 ## DisplayNameAttribute
 
 Determines the text that will be show for a given property. You can also alter the text for a property by setting its Label.
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=DisplayNameAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=DisplayNameAttribute}} 
@@ -198,11 +164,6 @@ Determines the text that will be show for a given property. You can also alter t
 ## DescriptionAttribute
 
 Defines the text that is displayed for a given property in the help bar of RadPropertyGrid.
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=DescriptionAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=DescriptionAttribute}} 
@@ -232,11 +193,6 @@ Defines the text that is displayed for a given property in the help bar of RadPr
 ## PasswordPropertyTextAttribute
 
 Determines whether a text property will be edited as a password.
-        #_[C#]_
-
-	
-
-
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=PasswordPropertyTextAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=PasswordPropertyTextAttribute}} 
@@ -275,13 +231,7 @@ Determines whether a text property will be edited as a password.
 
 ## DefaultValueAttribute
 
-Defines the default value to which the property will reset. When the property value is set to something different that the default value, 
-          it will be marked as modified.
-        #_[C#]_
-
-	
-
-
+Defines the default value to which the property will reset. When the property value is set to something different that the default value, it will be marked as modified.
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=DefaultValueAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=DefaultValueAttribute}} 
@@ -303,20 +253,13 @@ Defines the default value to which the property will reset. When the property va
     Private m_Length As Decimal
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![propertygrid-attributes 006](images/propertygrid-attributes006.png)
 
 ## CategoryAttribute
 
-Defines the category to which the property will be grouped when properties are shown categorized. Any property that does not 
-          have this attribute will be categorized in the Misc category.
-        #_[C#]_
-
-	
-
-
+Defines the category to which the property will be grouped when properties are shown categorized. Any property that does not have this attribute will be categorized in the Misc category.
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=CategoryAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=CategoryAttribute}} 
@@ -355,14 +298,7 @@ Defines the category to which the property will be grouped when properties are s
 
 ## RadSortOrderAttribute
 
-Defines the order in which items would be ordered when no other ordering is applied (Alphabetical or Categorical alphabetical).
-      The order can also be manipulated through the SortOrder property of PropertyGridItem. Setting the property would override the value from 
-      the attribute.
-        #_[C#]_
-
-	
-
-
+Defines the order in which items would be ordered when no other ordering is applied (Alphabetical or Categorical alphabetical). The order can also be manipulated through the SortOrder property of PropertyGridItem. Setting the property would override the value from the attribute.
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=RadSortOrderAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=RadSortOrderAttribute}} 
@@ -408,7 +344,6 @@ Defines the order in which items would be ordered when no other ordering is appl
     Private m_CProperty As String
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![propertygrid-attributes 008](images/propertygrid-attributes008.png)
