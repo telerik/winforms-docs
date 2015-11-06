@@ -212,6 +212,18 @@ navigation:
     dropdown,-listcontrol-and-checkeddropdownlist:
         title: DropDown and ListControl
         position: 19
+    dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist:
+        title: DropDownList
+        position: 1
+    dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data:
+        title: Populating with Data
+        position: 5
+    dropdown,-listcontrol-and-checkeddropdownlist/listcontrol:
+        title: ListControl
+        position: 2
+    dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist:
+        title: CheckedDropDownList
+        position: 3
     editors:
         title: Editors
         position: 20
