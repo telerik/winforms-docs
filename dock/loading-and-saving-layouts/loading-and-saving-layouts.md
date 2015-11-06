@@ -56,13 +56,11 @@ You can use the __DockWindowSerializing__ event to exclude windows from the save
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 ## To Load a Layout
 
-To load a layout, call the __RadDock.LoadFromXML()__method:
+To load a layout, call the __RadDock.LoadFromXML()__ method:
 #### LoadFromXml 
 
 {{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=loadLayout}} 

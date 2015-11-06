@@ -38,7 +38,9 @@ __Close():__ Closes a ToolWindow or a DocumentWindow. The ToolWindow/DocumentWin
 
 __Show():__ Shows a hidden ToolWindow or DocumentWindow.
 
-__DockTo(DockWindow window, DockPosition dockPosition):__ Docks a window with another window in the same container. The example below docks "Bottom Window" to the container of "Top Window".![dock-object-model-toolwindow-and-documentwindow-properties-at-runtime 001](images/dock-object-model-toolwindow-and-documentwindow-properties-at-runtime001.png)
+__DockTo(DockWindow window, DockPosition dockPosition):__ Docks a window with another window in the same container. The example below docks "Bottom Window" to the container of "Top Window".
+
+![dock-object-model-toolwindow-and-documentwindow-properties-at-runtime 001](images/dock-object-model-toolwindow-and-documentwindow-properties-at-runtime001.png)
 
 #### Using DockTo() 
 
