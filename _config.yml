@@ -221,9 +221,15 @@ navigation:
     dropdown,-listcontrol-and-checkeddropdownlist/listcontrol:
         title: ListControl
         position: 2
+    dropdown,-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop:
+        title: Drag and Drop
+        position: 5
     dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist:
         title: CheckedDropDownList
         position: 3
+    dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/how-to:
+        title: How-To
+        position: 7
     editors:
         title: Editors
         position: 20

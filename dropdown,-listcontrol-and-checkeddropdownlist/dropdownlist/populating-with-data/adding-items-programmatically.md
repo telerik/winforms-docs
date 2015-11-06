@@ -12,9 +12,7 @@ position: 1
 
 
 
-__RadDropDownList__ supports adding items at run time, which means that you can manually 
-        populate it with data. The following example demonstrates how to add two different items to the RadDropDownList.__Items__ 
-    collection. 
+__RadDropDownList__ supports adding items at run time, which means that you can manually populate it with data. The following example demonstrates how to add two different items to the RadDropDownList.__Items__  collection. 
 
 ## 
 
@@ -23,15 +21,13 @@ You can use one of the following item types:
 * __RadListDataItem__ – it represents a logical data item which can display specific text and image.             
               
 
-* __DescriptionTextListDataItem__ – similar to the __RadListDataItem__. In addition,
-                it displays some description below the item’s text.
-              ![dropdown-and-listcontrol-dropdownlist-populating-with-data-adding-items-programmatically 001](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-adding-items-programmatically001.png)
-
-Figure 1. Sample RadListDataItem and DescriptionTextListDataItem#_[C#] Add items programmatically_
-
-	
+* __DescriptionTextListDataItem__ – similar to the __RadListDataItem__. In addition, it displays some description below the item’s text.
 
 
+>caption Figure 1. Sample RadListDataItem and DescriptionTextListDataItem
+![dropdown-and-listcontrol-dropdownlist-populating-with-data-adding-items-programmatically 001](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-adding-items-programmatically001.png)
+
+#### Add items programmatically 
 
 {{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=AddItemsProgrammatically}} 
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=AddItemsProgrammatically}} 

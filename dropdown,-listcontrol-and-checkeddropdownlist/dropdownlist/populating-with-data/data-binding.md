@@ -9,9 +9,7 @@ position: 2
 ---
 
 # Data binding
-
-
-
+ 
 Data binding is a mechanism for automatic population of the __RadDropDownList__ with items, based on the provided data structure. Three properties control the data binding:
 
 * __DataSource__ - specifies the data structure to be bound.
@@ -29,29 +27,27 @@ You can set the __DataSource__ property at design time in the *Properties* windo
 
 1. Select the __DataSource__ property and click the drop-down arrow to display all existing data sources on the form. 
 
-1. Click the *Add Project Data Source…* link and follow the instructions in the *Data Source Configuration Wizard* 
-          to add a data source to your project. You can use a single database table. 
->caption Fig.1 Setting the DataSource at Design time
+1. Click the *Add Project Data Source…* link and follow the instructions in the *Data Source Configuration Wizard*  to add a data source to your project. You can use a single database table. 
 
-![dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding 001](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding001.png)
+	>caption Fig.1 Setting the DataSource at Design time
+
+	![dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding 001](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding001.png)
 
 1. Afterwards, you need to specify the __DisplayMember__ and __ValueMember__ properties.
->caption Fig.2 Setting the DisplayMember and ValueMember properties at Design time
 
-![dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding 002](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding002.png)
->caption Fig.3 RadDropDownList bound at Design time
+	>caption Fig.2 Setting the DisplayMember and ValueMember properties at Design time
 
-![dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding 003](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding003.png)
+	![dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding 002](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding002.png)
+
+	>caption Fig.3 RadDropDownList bound at Design time
+
+	![dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding 003](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding003.png)
 
 ## Data binding at run time
 
-You can bind __RadDropDownList__ programmatically as well. The following code snippet demonstrates how
-          to bind it to a collection of custom objects:
-        #_[C#] Data binding at run time_
+You can bind __RadDropDownList__ programmatically as well. The following code snippet demonstrates how to bind it to a collection of custom objects:
 
-	
-
-
+#### Data binding at run time 
 
 {{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=Binding}} 
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=Binding}} 
@@ -125,9 +121,7 @@ You can bind __RadDropDownList__ programmatically as well. The following code sn
 ````
 
 {{endregion}} 
-
-
-
+ 
 >caption Fig.4 RadDropDownList bound at Run time
 
 ![dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding 004](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding004.png)
