@@ -5,25 +5,20 @@ description: AutoCompleteModes
 slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/autocompletemodes
 tags: autocompletemodes
 published: True
-position: 4
+position: 5
 ---
 
 # AutoCompleteModes
-
-
-
-__RadCheckedDropDownList__ provides two AutoCompleteModes: *Suggest* and *Append*. You can change the way items are filtered
-        e.g. *Contains* or *StartsWith* comparer.
+ 
+__RadCheckedDropDownList__ provides two AutoCompleteModes: *Suggest* and *Append*. You can change the way items are filtered e.g. *Contains* or *StartsWith* comparer.
       
 
 ## 
 
-You can set the __AutoCompleteMode__ as follows:#_[C#] Set AutoCompleteMode_
+You can set the __AutoCompleteMode__ as follows:
 
-	
-
-
-
+#### Set AutoCompleteMode 
+ 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.cs region=SetMode}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SetMode}} 
 
@@ -41,11 +36,8 @@ You can set the __AutoCompleteMode__ as follows:#_[C#] Set AutoCompleteMode_
 
 
 Changing the filter for the __AutoCompleteSuggest__ is as easy as setting the __SuggestMode__ property:
-        #_[C#] Set AutoCompleteMode_
 
-	
-
-
+#### Set AutoCompleteMode 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.cs region=SuggestMode}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SuggestMode}} 
@@ -59,16 +51,10 @@ Changing the filter for the __AutoCompleteSuggest__ is as easy as setting the __
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 In order to customize the __AutoCompleteAppendHelper__ you need to create a descendant class and override the DefaultCompare method:
-        #_[C#] Set CustomHelper_
 
-	
-
-
+#### Set CustomHelper 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.cs region=CustomHelper}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=CustomHelper}} 
@@ -103,11 +89,8 @@ In order to customize the __AutoCompleteAppendHelper__ you need to create a desc
 {{endregion}} 
 
 
-#_[C#] Set SetAppendHelper_
-
-	
-
-
+#### Set SetAppendHelper 
+ 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.cs region=SetAppendHelper}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SetAppendHelper}} 
@@ -121,10 +104,7 @@ In order to customize the __AutoCompleteAppendHelper__ you need to create a desc
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 >note You can also create a custom __AutoCompleteSuggestHelper__ and override the __DefaultFilter__ method to achieve similar effect.
 >
 

@@ -232,7 +232,46 @@ navigation:
         position: 7
     editors:
         title: Editors
-        position: 20
+        position: 20		
+    editors/autocompletebox:
+        title: AutoCompleteBox
+        position: 0		
+    editors/browse-editor:
+        title: BrowseEditor
+        position: 1
+    editors/calculatordropdown:
+        title: CalculatorDropDown
+        position: 2
+    editors/colorbox:
+        title: ColorBox 
+        position: 3
+    editors/datetimepicker:
+        title: DateTimePicker 
+        position: 4
+    editors/datetimepicker/internationalization:
+        title: Internationalization 
+        position: 5
+    editors/datetimepicker/how-to:
+        title: How-to 
+        position: 6
+    editors/maskededitbox:
+        title: MaskedEditBox
+        position: 5
+    editors/spineditor:
+        title: SpinEditor
+        position: 6
+    editors/textbox:
+        title: TextBox
+        position: 7
+    editors/textboxcontrol:
+        title: TextBoxControl
+        position: 8
+    editors/time-picker:
+        title: TimePicker
+        position: 9
+    editors/popupeditor:
+        title: PopupEditor 
+        position: 10
     forms-and-dialogs:
         title: Forms and Dialogs
         position: 21

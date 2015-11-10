@@ -4,7 +4,7 @@ page_title: PopupEditor | UI for WinForms Documentation
 description: PopupEditor
 slug: winforms/editors/popupeditor
 tags: popupeditor
-published: True
+published: False
 position: 10
 ---
 
@@ -12,26 +12,10 @@ position: 10
 
 
 
-__RadPopupEditor__ control allows you to show any predefined or custom controls in its popup. 
-      By default the control should be associated with a __RadPopupContainer__. 
-      __RadPoupContainer__ on the other hand allows you to build your layout at design time. 
-      The controls added to the container will be shown in the popup window when the popup is opened. 
->caption Figure 1: RadPopupEditor
+Required introduction
 
-![editors-popupeditor 001](images/editors-popupeditor001.png)
+## Optional section title
 
-## 
+Add one or more sections with content
 
-Features:
-
-* With this control you can easily create custom drop down editor which contains complex custom layout.
-            
-
-* Resizing the popup at runtime.
-            
-
-* Adding and arranging controls at design time.
-            
-
-* Display a value in the control text box.
-            
+# See Also

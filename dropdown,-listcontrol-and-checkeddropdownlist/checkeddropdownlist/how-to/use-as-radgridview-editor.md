@@ -9,26 +9,20 @@ position: 1
 ---
 
 # Use as RadGridView editor
+ 
+As many other RadControls __RadCheckedDropDownList__ can also be used as [editor]({%slug winforms/gridview/editors/editors%}) in [RadGridView]({%slug winforms/gridview%}). This article will show you how to achieve the following result.
 
-
-
-As many other RadControls __RadCheckedDropDownList__ can also be used as [editor]({%slug winforms/gridview/editors/editors%}) in
-        [RadGridView]({%slug winforms/gridview%}). This article will show you how to achieve the following result.
-      ![dropdown-and-listcontrol-checkeddropdownlist-how-to-use-as-radgridview-editor 001](images/dropdown-and-listcontrol-checkeddropdownlist-how-to-use-as-radgridview-editor001.png)
+![dropdown-and-listcontrol-checkeddropdownlist-how-to-use-as-radgridview-editor 001](images/dropdown-and-listcontrol-checkeddropdownlist-how-to-use-as-radgridview-editor001.png)
 
 ## 
 
-Add a __RadGridView__ to a Form and add a regular text box column which will use the new editor. You can bind the gird to 
-          a list of sample data and you can create the data source for __RadCheckedDropDownList__:
+Add a __RadGridView__ to a Form and add a regular text box column which will use the new editor. You can bind the gird to a list of sample data and you can create the data source for __RadCheckedDropDownList__:
         
 
 >note The "Part" class contains a singe public property named "CurrentParts" and a constructor that sets this property.
 >
-#_[C#] Initialize_
 
-	
-
-
+#### Initialize 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\How-To\UseAsRadGridViewEditor1.cs region=InitGrid}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\UseAsRadGridViewEditor1.vb region=InitGrid}} 
@@ -98,17 +92,10 @@ Add a __RadGridView__ to a Form and add a regular text box column which will use
 ````
 
 {{endregion}} 
+ 
+The next step is to replace the editor the default editor. This can be achieved in EditorReqired event handler of the grid. This is the place where the data source should be set as well.  
 
-
-
-
-The next step is to replace the editor the default editor. This can be achieved in EditorReqired event handler of the grid. This is the place where the data
-          source should be set as well.  
-        #_[C#] Change Editor_
-
-	
-
-
+#### Change Editor 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\How-To\UseAsRadGridViewEditor1.cs region=Required}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\UseAsRadGridViewEditor1.vb region=Required}} 
@@ -139,17 +126,10 @@ The next step is to replace the editor the default editor. This can be achieved 
 ````
 
 {{endregion}} 
+ 
+The final step is the creating of the editor. This can be achieved by creating a descendant of __RadCheckedDropDownListElement__ and overriding its __Value__ property.
 
-
-
-
-The final step is the creating of the editor. This can be achieved by creating a descendant of __RadCheckedDropDownListElement__ 
-          and overriding its __Value__ property.
-        #_[C#] Editor_
-
-	
-
-
+#### Editor 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\How-To\UseAsRadGridViewEditor1.cs region=Editor}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\UseAsRadGridViewEditor1.vb region=Editor}} 

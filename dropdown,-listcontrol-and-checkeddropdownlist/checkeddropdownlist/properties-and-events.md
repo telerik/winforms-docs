@@ -5,13 +5,11 @@ description: Properties and Events
 slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/properties-and-events
 tags: properties,and,events
 published: True
-position: 5
+position: 6
 ---
 
 # Properties and Events
-
-
-
+ 
 ## RadCheckedDropDownList
 
 __Properties:__
@@ -34,8 +32,7 @@ __Properties:__
 * __CheckedItems__: Gets a collection representing the checked items contained in this RadCheckedDropDownList.
             
 
-* __CheckedMember__: Gets or sets a string which will be used to get a description text string for each visual item. This property can not be set to null. Setting 
-              it to null will cause it to contain an empty string.
+* __CheckedMember__: Gets or sets a string which will be used to get a description text string for each visual item. This property can not be set to null. Setting it to null will cause it to contain an empty string.
             
 
 __Events:__
