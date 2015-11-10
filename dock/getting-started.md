@@ -7,9 +7,7 @@ tags: getting,started
 published: 1
 ---
 
-# Getting Started
-
-
+# Getting Started 
 
 This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on the left represents a list of reports. The right side of the form in __RadDock__ contains three __DocumentWindows__, each representing a report. This tutorial demonstrates the layout of __ToolWindow__ and __DocumentWindows__. It also demonstrates adding a RadTreeView control to one of the created windows and synchronizing the active DockWindow with the selection in the RadTreeView instance. 
 
@@ -83,7 +81,7 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on 
 
 	{{endregion}} 
  
-1. Create a __Form Load__ event handler and copy the code below to it. This code builds the __TreeView__ node structure and links the __Name__of each __DocumentWindow__ to the corresponding __Node Tag__ property. Each dockable object has a __Name__ property, a __String__ that uniquely identifies it. Later we use the __Name__ to locate the __DocumentWindow__ and activate it.
+1. Create a __Form Load__ event handler and copy the code below to it. This code builds the __TreeView__ node structure and links the __Name__ of each __DocumentWindow__ to the corresponding __Node Tag__ property. Each dockable object has a __Name__ property, a __String__ that uniquely identifies it. Later we use the __Name__ to locate the __DocumentWindow__ and activate it.
 
 	#### Initializing RadTreeView 
  

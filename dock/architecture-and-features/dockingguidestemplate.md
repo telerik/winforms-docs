@@ -12,9 +12,13 @@ position: 12
  
 RadDock comes with two predefined docking guides templates:
 
-* Visual Studio 2008 ![dock-architecture-and-features-docking-guides-template 001](images/dock-architecture-and-features-docking-guides-template001.png)
+* Visual Studio 2008 
 
-* Visual Studio 2010 ![dock-architecture-and-features-docking-guides-template 002](images/dock-architecture-and-features-docking-guides-template002.png)
+![dock-architecture-and-features-docking-guides-template 001](images/dock-architecture-and-features-docking-guides-template001.png)
+
+* Visual Studio 2010 
+
+![dock-architecture-and-features-docking-guides-template 002](images/dock-architecture-and-features-docking-guides-template002.png)
 
 By default, RadDock uses the VS2010 template. In order to use the VS2008 template, you can set it as shown below: 
 
@@ -36,7 +40,7 @@ By default, RadDock uses the VS2010 template. In order to use the VS2008 templat
  
 ## Creating a custom docking guides template
 
-RadDock gives you the ability to create and use your own __DockingGuidesTemplates.__The following example explains what is contained in a DockingGuidesTemplate and how it should be set up.
+RadDock gives you the ability to create and use your own __DockingGuidesTemplates.__ The following example explains what is contained in a DockingGuidesTemplate and how it should be set up.
           
 For our custom DockingGuidesTemplate we will use the following images (used in VS2008 template): 
 

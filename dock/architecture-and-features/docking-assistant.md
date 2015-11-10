@@ -14,7 +14,7 @@ The Docking Assistant indicates the relationship of a dragged panel to the rest 
 
 ## Component Parts of the Docking Assistant
 
-This tool is made up of an outer zone and an inner zone of controls. The outer zone consists of four satellite grips, situated at the four points of a virtual compass over the docking container. It is used for positioning a __DockWindow__relative to the primary host container. The inner zone has a center compass with icons for positioning a __DockWindow__in the underlying docking container or in another docking container relative to the underlying one. All of these icons represent a drop target, i.e. the destination for the DockWindow you are moving.
+This tool is made up of an outer zone and an inner zone of controls. The outer zone consists of four satellite grips, situated at the four points of a virtual compass over the docking container. It is used for positioning a __DockWindow__ relative to the primary host container. The inner zone has a center compass with icons for positioning a __DockWindow__ in the underlying docking container or in another docking container relative to the underlying one. All of these icons represent a drop target, i.e. the destination for the DockWindow you are moving.
 
 ## Using the Docking Assistant
 

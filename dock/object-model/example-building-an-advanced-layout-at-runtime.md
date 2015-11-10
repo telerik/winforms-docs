@@ -26,20 +26,20 @@ So, let's start building the layout:
 
 2. Next, we are going to make to ToolWindows. The first one will be docked left, and the other will be docked left-bottom. For this case we need to give the first ToolWindow as a target in the DockWindow method responsible for docking the second ToolWindow:
 
-#### Docking two ToolWindows 
+	#### Docking two ToolWindows 
 
-{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=dockingTwoToolWindows}} 
-{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=dockingTwoToolWindows}} 
+	{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=dockingTwoToolWindows}} 
+	{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=dockingTwoToolWindows}} 
 
-````C#
+	````C#
             ToolWindow window1 = new ToolWindow();
             window1.Name = "window1";
             this.radDock1.DockWindow(window1, DockPosition.Left);
             ToolWindow window2 = new ToolWindow();
             window2.Name = "window2";
             this.radDock1.DockWindow(window2, window1, DockPosition.Bottom);
-````
-````VB.NET
+	````
+	````VB.NET
         Dim window1 As ToolWindow = New ToolWindow()
         window1.Name = "window1"
         Me.RadDock1.DockWindow(window1, DockPosition.Left)
@@ -47,48 +47,48 @@ So, let's start building the layout:
         window2.Name = "window2"
         Me.RadDock1.DockWindow(window2, window1, DockPosition.Bottom)
         '
-````
+	````
 
-{{endregion}} 
+	{{endregion}} 
 
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 002](images/dock-object-model-example-building-an-advanced-layout-at-runtime002.png)
+	![dock-object-model-example-building-an-advanced-layout-at-runtime 002](images/dock-object-model-example-building-an-advanced-layout-at-runtime002.png)
 
 3. Next, let's make the height of window2's TabStrip relative to the height of the window1's TabStrip:
 
-#### Setting relative size 
+	#### Setting relative size 
 
-{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=settingRelativeSize}} 
-{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=settingRelativeSize}} 
+	{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=settingRelativeSize}} 
+	{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=settingRelativeSize}} 
 
-````C#
+	````C#
             window2.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Relative;
             window2.TabStrip.SizeInfo.RelativeRatio = new SizeF(0, 0.33f);
-````
-````VB.NET
+	````
+	````VB.NET
         window2.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Relative
         window2.TabStrip.SizeInfo.RelativeRatio = New System.Drawing.SizeF(0, 0.33F)
         '
-````
+	````
 
-{{endregion}} 
+	{{endregion}} 
  
-The result is shown on the picture below:
+	The result is shown on the picture below:
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 003](images/dock-object-model-example-building-an-advanced-layout-at-runtime003.png)
+	![dock-object-model-example-building-an-advanced-layout-at-runtime 003](images/dock-object-model-example-building-an-advanced-layout-at-runtime003.png)
 
-Now if we decide to resize the form, the ration of the TabStrips' Height will be kept:
+	Now if we decide to resize the form, the ration of the TabStrips' Height will be kept:
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 004](images/dock-object-model-example-building-an-advanced-layout-at-runtime004.png)
+	![dock-object-model-example-building-an-advanced-layout-at-runtime 004](images/dock-object-model-example-building-an-advanced-layout-at-runtime004.png)
  
 4. Let's add two more windows:
 
-#### Setting absolute size 
+	#### Setting absolute size 
 
-{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=settingAbsoliteSize}} 
-{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=settingAbsoliteSize}} 
+	{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=settingAbsoliteSize}} 
+	{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=settingAbsoliteSize}} 
 
-````C#
+	````C#
             ToolWindow window3 = new ToolWindow();
             window3.Name = "window3";
             this.radDock1.DockWindow(window3, DockPosition.Bottom);
@@ -97,8 +97,8 @@ Now if we decide to resize the form, the ration of the TabStrips' Height will be
             this.radDock1.DockWindow(window4, window3, DockPosition.Right);
             window4.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Absolute;
             window4.TabStrip.SizeInfo.AbsoluteSize = new Size(150, 0);
-````
-````VB.NET
+	````
+	````VB.NET
         Dim window3 As ToolWindow = New ToolWindow()
         window3.Name = "window3"
         Me.RadDock1.DockWindow(window3, DockPosition.Bottom)
@@ -108,32 +108,32 @@ Now if we decide to resize the form, the ration of the TabStrips' Height will be
         window4.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Absolute
         window4.TabStrip.SizeInfo.AbsoluteSize = New Size(150, 0)
         '
-````
+	````
 
-{{endregion}} 
+	{{endregion}} 
  
-This time we set to Width of the window4's TabStrip to an absolute value of 150 pixels. Now when we resize the form, window4's TabStrip will not change its Width, but the window3's TabStrip will change its Width.
+	This time we set to Width of the window4's TabStrip to an absolute value of 150 pixels. Now when we resize the form, window4's TabStrip will not change its Width, but the window3's TabStrip will change its Width.
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 005](images/dock-object-model-example-building-an-advanced-layout-at-runtime005.png)
+	![dock-object-model-example-building-an-advanced-layout-at-runtime 005](images/dock-object-model-example-building-an-advanced-layout-at-runtime005.png)
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 006](images/dock-object-model-example-building-an-advanced-layout-at-runtime006.png)
+	![dock-object-model-example-building-an-advanced-layout-at-runtime 006](images/dock-object-model-example-building-an-advanced-layout-at-runtime006.png)
 
 5. Add two more ToolWindows. The interesting thing here is that these ToolWindows will be in a Floating DockState. Please note that you can give the size and location of the form that will host the ToolWindows:
 
-#### Floating ToolWindows 
+	#### Floating ToolWindows 
 
-{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=floatingWindows}} 
-{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=floatingWindows}} 
-
-````C#
+	{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=floatingWindows}} 
+	{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=floatingWindows}} 
+	
+	````C#
             ToolWindow window5 = new ToolWindow();
             window5.Name = "window5";
             this.radDock1.FloatWindow(window5, new Rectangle(250, 250, 300, 150));
             ToolWindow window6 = new ToolWindow();
             window6.Name = "window6";
             this.radDock1.DockWindow(window6, window5, DockPosition.Right);
-````
-````VB.NET
+	````
+	````VB.NET
         Dim window5 As ToolWindow = New ToolWindow()
         window5.Name = "window5"
         Me.RadDock1.FloatWindow(window5, New Rectangle(250, 250, 300, 150))
@@ -141,60 +141,62 @@ This time we set to Width of the window4's TabStrip to an absolute value of 150 
         window6.Name = "window6"
         Me.RadDock1.DockWindow(window6, window5, DockPosition.Right)
         '
-````
+	````
 
-{{endregion}} 
+	{{endregion}} 
 
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 007](images/dock-object-model-example-building-an-advanced-layout-at-runtime007.png) 
+	![dock-object-model-example-building-an-advanced-layout-at-runtime 007](images/dock-object-model-example-building-an-advanced-layout-at-runtime007.png) 
 
 6. We will add one more ToolWindow. The specific thing here is that although the ToolWindow should be auto-hidden to Bottom if the user decides to click the 'pin' button, this window will be auto-hidden to Top. This is done with the help of AutoHidePosition property of the TabStrip which hosts the ToolWindow. In addition, this auto-hidden window will have a specific size of (200, 200). Since the AutoHidePosition is set to Top, Height of the given size will be taken into consideration:
 
-#### Setting the AutoHidePosition and AutoHideSize properties 
+	#### Setting the AutoHidePosition and AutoHideSize properties 
 
-{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=autoHide}} 
-{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=autoHide}} 
+	{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=autoHide}} 
+	{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=autoHide}} 
 
-````C#
+	````C#
             ToolWindow window7 = new ToolWindow();
             window7.Name = "window7";
             window7.AutoHideSize = new Size(100, 100);
             this.radDock1.DockWindow(window7, window4, DockPosition.Bottom);
             ((ToolTabStrip)window7.TabStrip).AutoHidePosition = AutoHidePosition.Top;
-````
-````VB.NET
+	````
+	````VB.NET
         Dim window7 As ToolWindow = New ToolWindow()
         window7.Name = "window7"
         window7.AutoHideSize = New Drawing.Size(100, 100)
         Me.RadDock1.DockWindow(window7, window4, DockPosition.Bottom)
         CType(window7.TabStrip, ToolTabStrip).AutoHidePosition = AutoHidePosition.Top
         '
-````
+	````
 
-{{endregion}}  
+	{{endregion}}  
 
-Initially, the layout will look like this:
-![dock-object-model-example-building-an-advanced-layout-at-runtime 008](images/dock-object-model-example-building-an-advanced-layout-at-runtime008.png) 
+	Initially, the layout will look like this:
 
-If the user clicks the 'pin' button of window7, window7 will become auto-hidden to the Top. Next, when the user hovers the window7 tab, a window with 100 pixels in Height is shown:
-![dock-object-model-example-building-an-advanced-layout-at-runtime 009](images/dock-object-model-example-building-an-advanced-layout-at-runtime009.png)
+	![dock-object-model-example-building-an-advanced-layout-at-runtime 008](images/dock-object-model-example-building-an-advanced-layout-at-runtime008.png) 
+
+	If the user clicks the 'pin' button of window7, window7 will become auto-hidden to the Top. Next, when the user hovers the window7 tab, a window with 100 pixels in Height is shown:
+
+	![dock-object-model-example-building-an-advanced-layout-at-runtime 009](images/dock-object-model-example-building-an-advanced-layout-at-runtime009.png)
 
 7. Finally, we should decide if we want to show several DocumentWindows. If 'yes', we can add them as shown below:
 
-#### Adding DocumentWindows 
+	#### Adding DocumentWindows 
 
-{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=addingDocumentWindows}} 
-{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=addingDocumentWindows}} 
+	{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=addingDocumentWindows}} 
+	{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=addingDocumentWindows}} 
 
-````C#
+	````C#
             DocumentWindow document1 = new DocumentWindow();
             document1.Name = "document1";
             this.radDock1.AddDocument(document1);
             DocumentWindow document2 = new DocumentWindow();
             document2.Name = "document2";
             this.radDock1.AddDocument(document2, document1, DockPosition.Bottom);
-````
-````VB.NET
+	````
+	````VB.NET
         Dim document1 As DocumentWindow = New DocumentWindow()
         document1.Name = "document1"
         Me.RadDock1.AddDocument(document1)
@@ -202,29 +204,29 @@ If the user clicks the 'pin' button of window7, window7 will become auto-hidden 
         document2.Name = "document2"
         Me.RadDock1.AddDocument(document2, document1, DockPosition.Bottom)
         '
-````
+	````
 
-{{endregion}} 
+	{{endregion}} 
 
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 010](images/dock-object-model-example-building-an-advanced-layout-at-runtime010.png)
+	![dock-object-model-example-building-an-advanced-layout-at-runtime 010](images/dock-object-model-example-building-an-advanced-layout-at-runtime010.png)
 
-However, you may not want to have any documents. In this can set the __MainDocumentContainerVisible__ property to *false*:
+	However, you may not want to have any documents. In this can set the __MainDocumentContainerVisible__ property to *false*:
 
-#### Hiding the main DocumentContainer 
+	#### Hiding the main DocumentContainer 
 
-{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=dockContainerVisible}} 
-{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=dockContainerVisible}} 
+	{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=dockContainerVisible}} 
+	{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=dockContainerVisible}} 
 
-````C#
+	````C#
             this.radDock1.MainDocumentContainerVisible = false;
-````
-````VB.NET
+	````
+	````VB.NET
         Me.RadDock1.MainDocumentContainerVisible = False
         '
-````
+	````
 
-{{endregion}} 
+	{{endregion}} 
 
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 011](images/dock-object-model-example-building-an-advanced-layout-at-runtime011.png)
+	![dock-object-model-example-building-an-advanced-layout-at-runtime 011](images/dock-object-model-example-building-an-advanced-layout-at-runtime011.png)

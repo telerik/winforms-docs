@@ -12,7 +12,7 @@ position: 0
  
 To localize RadDock to display control text and messages in a specific language:
 
-* All required classes for localization are defined in __Telerik.WinControls.UI.Localization__namespace. 
+* All required classes for localization are defined in __Telerik.WinControls.UI.Localization__ namespace. 
 
 * Start by creating a descendant of the RadDockLocalizationProvider class.    
 

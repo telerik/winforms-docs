@@ -101,6 +101,7 @@ The result is shown on the screenshot below:
 You can notice in the code snippet above that we are using the Name property of the items instead of the Text property. This allows you to handle the case even when a custom [RadDockLocalization]({%slug winforms/dock/localization/localization%}) provider is applied. The names for the menu items in RadDock are:
  
 | __Text__ | __Name__ |
+|----|----|
 |Close|CloseWindow|
 |Close All But This|CloseAllButThis|
 |Close All|CloseAll|

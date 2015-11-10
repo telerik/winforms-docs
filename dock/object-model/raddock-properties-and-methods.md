@@ -12,7 +12,7 @@ position: 0
 
 
 
-__RadDock__controls the overall behavior of __ToolWindows__and __DocumentWindows__that it manages. This includes enabling basic capabilities of docking, floating and hiding, handling tabbed document behavior, serialization of layout and providing access to collections of managed dockable objects.
+__RadDock__ controls the overall behavior of __ToolWindows__ and __DocumentWindows__ that it manages. This includes enabling basic capabilities of docking, floating and hiding, handling tabbed document behavior, serialization of layout and providing access to collections of managed dockable objects.
 
 ## RadDock Properties
 

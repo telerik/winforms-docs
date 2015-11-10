@@ -5,19 +5,18 @@ description: Structure
 slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/structure
 tags: structure
 published: True
-position: 0
+position: 1
 ---
 
 # Structure
-
-
-
+ 
 ## RadDropDownList structure
 
 This article describes the inner structure and organization of the elements which build the __RadDropDownList__ control.
-        ![dropdown-and-listcontrol-dropdownlist-structure 001](images/dropdown-and-listcontrol-dropdownlist-structure001.png)
+        
+>caption Figure 1. RadDropDownList visual structure
 
-Figure 1. RadDropDownList visual strucutre
+![dropdown-and-listcontrol-dropdownlist-structure 001](images/dropdown-and-listcontrol-dropdownlist-structure001.png)
 
 1. __StackLayoutElement__: Serves as a container element defining a stack layout.
             

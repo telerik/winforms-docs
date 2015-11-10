@@ -35,7 +35,7 @@ To create a new __ToolWindow__, construct a __ToolWindow__ instance, set proper
  
 ## Creating DocumentWindow at Runtime
 
-To create a __DocumentWindow__, construct an instance of __DocumentWindow__, assign properties and call the __RadDock Add____Document()__ method, passing the __DocumentWindow__ instance.
+To create a __DocumentWindow__, construct an instance of __DocumentWindow__, assign properties and call the __RadDock Add__ __Document()__ method, passing the __DocumentWindow__ instance.
 
 #### Creating a DocumentWindow 
 
