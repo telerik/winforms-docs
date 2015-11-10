@@ -5,40 +5,26 @@ description: Caret positioning and selection
 slug: winforms/editors/autocompletebox/caret-positioning-and-selection
 tags: caret,positioning,and,selection
 published: True
-position: 2
+position: 3
 ---
 
 # Caret positioning and selection
-
-
-
+ 
 ## 
 
-The positioning and selection in RadAutoCompleteBox can be performed programmatically
-          as well as by using the keyboard and mouse input.
+The positioning and selection in RadAutoCompleteBox can be performed programmatically as well as by using the keyboard and mouse input.
         
 
-the keyboard (up, down, left, right buttons).
-          To select text you can press the shift key followed by left mouse button or one of the navigation keys of
+the keyboard (up, down, left, right buttons). To select text you can press the shift key followed by left mouse button or one of the navigation keys of
         
 
-Programmatic selection can be performed by using the __SelectionStart__
-          and __SelectionLength__ properties of RadAutoCompleteBox.
+Programmatic selection can be performed by using the __SelectionStart__ and __SelectionLength__ properties of RadAutoCompleteBox.
         
 
-The __SelectionStart__ property is an integer that indicates the insertion
-          point within the string of text, with 0 being the left-most position. If the
-          __SelectionStart__ property is set to a value equal to or greater
-          than the number of characters in the text box, the insertion point is placed after the last character.
+The __SelectionStart__ property is an integer that indicates the insertion point within the string of text, with 0 being the left-most position. If the __SelectionStart__ property is set to a value equal to or greater than the number of characters in the text box, the insertion point is placed after the last character.
         
 
-Setting the __SelectionLength__ to a number greater than 0 causes that number
-          of characters to be selected, starting from the current insertion point.
-        #_[C#] _
-
-	
-
-
+Setting the __SelectionLength__ to a number greater than 0 causes that number of characters to be selected, starting from the current insertion point. 
 
 {{source=..\SamplesCS\editors\AutoCompleteBox.cs region=SetSelection}} 
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=SetSelection}} 
@@ -59,17 +45,9 @@ Setting the __SelectionLength__ to a number greater than 0 causes that number
     End Sub
 ````
 
-{{endregion}} 
+{{endregion}}  
 
-
-
-
-Alternatively, you can use the __Select__ method to select the same part of the text:
-        #_[C#] _
-
-	
-
-
+Alternatively, you can use the __Select__ method to select the same part of the text: 
 
 {{source=..\SamplesCS\editors\AutoCompleteBox.cs region=SetSelectionRange}} 
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=SetSelectionRange}} 
@@ -88,9 +66,8 @@ Alternatively, you can use the __Select__ method to select the same part of the 
     End Sub
 ````
 
-{{endregion}} 
+{{endregion}}  
 
+The both approaches produce same result:
 
-
-
-The both approaches produce same result:![editors-autocompletebox-caret-positioning-and-selection 001](images/editors-autocompletebox-caret-positioning-and-selection001.png)
+![editors-autocompletebox-caret-positioning-and-selection 001](images/editors-autocompletebox-caret-positioning-and-selection001.png)

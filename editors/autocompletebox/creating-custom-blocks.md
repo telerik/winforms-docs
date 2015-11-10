@@ -5,30 +5,17 @@ description: Creating Custom Blocks
 slug: winforms/editors/autocompletebox/creating-custom-blocks
 tags: creating,custom,blocks
 published: True
-position: 6
+position: 7
 ---
 
 # Creating Custom Blocks
-
-
-
+ 
 ## 
 
-The RadAutoCompleteBox allows not only appearance customization via the formatting event,
-          but also replacement of the default UI block representation. The __CreateTextBlock__ event
-          exposes this possibility.
+The RadAutoCompleteBox allows not only appearance customization via the formatting event, but also replacement of the default UI block representation. The __CreateTextBlock__ event exposes this possibility.
         
 
-You should create a custom text block that inherits from __ITextBlock__
-          and any inheritor of RadElement. Let’s extend the default
-          __TokenizedTextBlockElement__ by adding
-          a check box. We don’t need to implement the __ITextBlock__ interface,
-          because it is already defined in the base class:
-        #_[C#]_
-
-	
-
-
+You should create a custom text block that inherits from __ITextBlock__ and any inheritor of RadElement. Let’s extend the default __TokenizedTextBlockElement__ by adding a check box. We don’t need to implement the __ITextBlock__ interface, because it is already defined in the base class: 
 
 {{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=customTokens}} 
 {{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=customTokens}} 
@@ -81,18 +68,9 @@ You should create a custom text block that inherits from __ITextBlock__
     End Class
 ````
 
-{{endregion}} 
+{{endregion}}  
 
-
-
-
-Then you should replace the default text block in the __CreateTextBlock__
-          event handler, in the following manner:
-        #_[C#]_
-
-	
-
-
+Then you should replace the default text block in the __CreateTextBlock__ event handler, in the following manner: 
 
 {{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=replaceTokens}} 
 {{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=replaceTokens}} 
@@ -115,32 +93,27 @@ Then you should replace the default text block in the __CreateTextBlock__
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 Finally, the text property should be set:
 
 >note The subscription to the event, should be introduced before setting the text of the control.
 >
-#_[C#]_
-
-	
-
-#_[C#]_
-
-	
-
-#_[VB.NET]_
-
-	
-
-
+ 
 
 {{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=subscribeToFormatting}} 
-{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=formatting}} 
 {{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=subscribeToFormatting}} 
+````C#
+        this.radAutoCompleteBox1.TextBlockFormatting += new TextBlockFormattingEventHandler(radAutoCompleteBox1_TextBlockFormatting);
+        this.radAutoCompleteBox1.Text = "Euro;USD;GBP;";
+````
+````VB.NET
+        AddHandler RadAutoCompleteBox1.TextBlockFormatting, AddressOf radAutoCompleteBox1_TextBlockFormatting
+        Me.RadAutoCompleteBox1.Text = "Euro;USD;GBP;"
+````
 
+{{endregion}} 
+
+{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=formatting}}
 {{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=formatting}} 
 
 ````C#
@@ -167,6 +140,6 @@ Finally, the text property should be set:
 {{endregion}} 
 
 
+The following screen demonstrates the final result:
 
-
-The following screen demonstrates the final result:![editors-autocompletebox-creating-custom-blocks 001](images/editors-autocompletebox-creating-custom-blocks001.png)
+![editors-autocompletebox-creating-custom-blocks 001](images/editors-autocompletebox-creating-custom-blocks001.png)
