@@ -5,29 +5,20 @@ description: Creating custom blocks
 slug: winforms/editors/textboxcontrol/creating-custom-blocks
 tags: creating,custom,blocks
 published: True
-position: 7
+position: 8
 ---
 
 # Creating custom blocks
-
-
-
+ 
 ## 
 
-The RadTextBoxControl allows not only appearance customizations via the formatting event,
-        	but also a replacement of the default UI block representation.
-        	The __CreateTextBlock__ event exposes this possibility.
+The RadTextBoxControl allows not only appearance customizations via the formatting event, but also a replacement of the default UI block representation. The __CreateTextBlock__ event exposes this possibility.
         
 
-You should create a custom text block that inherits from __ITextBlock__ and any inheritor 
-        	of RadElement. Let’s create a button text block that should be created for each occurrence of the string here:
+You should create a custom text block that inherits from __ITextBlock__ and any inheritor of RadElement. Let’s create a button text block that should be created for each occurrence of the string here:
         
 
-First, you should create a button that implements __ITextBlock__ interface:#_[C#]_
-
-	
-
-
+First, you should create a button that implements __ITextBlock__ interface: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=customTextBlock}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=customTextBlock}} 
@@ -194,30 +185,21 @@ First, you should create a button that implements __ITextBlock__ interface:#_[C#
 ````
 
 {{endregion}} 
-
-
-
-
-Then you should subscribe to the __CreateTextBlock__ event
-			before initializing the __Text__ property of RadTextBoxControl:
-		#_[C#]_
-
-	
-
-#_[C#]_
-
-	
-
-#_[VB.NET]_
-
-	
-
-
+ 
+Then you should subscribe to the __CreateTextBlock__ event before initializing the __Text__ property of RadTextBoxControl: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=applyCustomTextBlock1}} 
-{{source=..\SamplesCS\Editors\TextBoxControl.cs region=applyCustomTextBlock2}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=applyCustomTextBlock1}} 
+````C#
+        radTextBoxControl1.CreateTextBlock += new CreateTextBlockEventHandler(radTextBoxControl1_CreateTextBlock);
+````
+````VB.NET
+   AddHandler RadTextBoxControl1.CreateTextBlock, AddressOf radTextBoxControl1_CreateTextBlock
+````
 
+{{endregion}} 
+
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=applyCustomTextBlock2}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=applyCustomTextBlock2}} 
 
 ````C#
@@ -238,15 +220,8 @@ Then you should subscribe to the __CreateTextBlock__ event
 ````
 
 {{endregion}} 
-
-
-
-
-Finally, the text property should be set:#_[C#]_
-
-	
-
-
+ 
+Finally, the text property should be set: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=applyCustomTextBlock3}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=applyCustomTextBlock3}} 

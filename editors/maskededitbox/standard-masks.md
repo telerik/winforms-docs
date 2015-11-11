@@ -5,26 +5,21 @@ description: Standard Masks
 slug: winforms/editors/maskededitbox/standard-masks
 tags: standard,masks
 published: True
-position: 1
+position: 2
 ---
 
 # Standard Masks
-
-
-
+ 
 ## 
 
-The table below describe the mask characters that can be used when the __MaskType__property
-            is set to __Standard__.
-        
-
-
+The table below describe the mask characters that can be used when the __MaskType__property is set to __Standard__.
+         
 
 | __Mask Character__ | __Description__ |
+|----|----|
 |0|Digit, required. This element will accept any single digit between 0 and 9.|
 |9|Digit or space, optional.|
-|#|Digit or space, optional. If this position is blank in the mask, it will be rendered as the character in the[PromptChar]({%slug winforms/editors/maskededitbox/working-with-radmaskededitbox%})property. For example, "$######.##" displays as a literal "$", accepts a numeric amount with six places and two
-                places to the right of the decimal, i.e. $123456.56.|
+|#|Digit or space, optional. If this position is blank in the mask, it will be rendered as the character in the[PromptChar]({%slug winforms/editors/maskededitbox/working-with-radmaskededitbox%})property. For example, "$######.##" displays as a literal "$", accepts a numeric amount with six places and two places to the right of the decimal, i.e. $123456.56.|
 |L|Accepts letters only.|
 |?|Letter, optional.|
 |&|Character, required.|
@@ -42,7 +37,6 @@ The table below describe the mask characters that can be used when the __MaskTyp
 |\|Escape. Escapes a mask character, turning it into a literal. "\\" is the escape sequence for a backslash.|
 |All other characters|All non-mask elements will appear as themselves within __RadMaskedEditBox__ . Literals always occupy a static position in the mask at run time, and cannot be moved or deleted by the user|
 
->note By default, when the user is typing before already typed text, the text is overridden. If the *Insert* key is pressed you can
-          insert characters instead of replacing them.
+>note By default, when the user is typing before already typed text, the text is overridden. If the *Insert* key is pressed you can insert characters instead of replacing them.
 >
 

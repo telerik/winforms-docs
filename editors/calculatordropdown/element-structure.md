@@ -5,7 +5,7 @@ description: Element structure
 slug: winforms/editors/calculatordropdown/element-structure
 tags: element,structure
 published: True
-position: 0
+position: 1
 ---
 
 # Element structure
@@ -15,7 +15,8 @@ position: 0
 ## 
 
 __RadCalculatorDropDown__ consist of two parts - editable part which is the actual editor and a popup which hosts the calculator.
-        ![editors-calculator-element-structure 001](images/editors-calculator-element-structure001.png)
+
+![editors-calculator-element-structure 001](images/editors-calculator-element-structure001.png)
 
 ## Editable area
 
@@ -32,8 +33,7 @@ The editable area consists of three elements:
 
 ## Dropdown
 
-The popup contains two main elements: __RadCalculatorContentElement__ which holds all elements that makeup the calculator and a __SizeGridElement__ 
-          which allows resizing of the dropdown. 
+The popup contains two main elements: __RadCalculatorContentElement__ which holds all elements that makeup the calculator and a __SizeGridElement__ which allows resizing of the dropdown. 
         
 
 Here is a detailed list of the elements in __RadCalculatorContentElement__

@@ -5,28 +5,17 @@ description: Text editing
 slug: winforms/editors/textboxcontrol/text-editing
 tags: text,editing
 published: True
-position: 4
+position: 5
 ---
 
 # Text editing
-
-
-
+ 
 ## 
 
-The editing point is determined by the caret position and selection in RadTextBoxControl.
-        	The editing position is visible only if the control is focused.
+The editing point is determined by the caret position and selection in RadTextBoxControl. The editing position is visible only if the control is focused.
         
 
-You can insert text programmatically at concrete position by using the __Insert__ method.
-        	At that case, the text is inserted at the position determined by the 
-        	__SelectionStart__ property. If the __SelectionLength__
-        	property is greater than zero, the inserted text replaces the selected text.
-        #_[C#]_
-
-	
-
-
+You can insert text programmatically at concrete position by using the __Insert__ method. At that case, the text is inserted at the position determined by the __SelectionStart__ property. If the __SelectionLength__ property is greater than zero, the inserted text replaces the selected text. 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=Insert}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=Insert}} 
@@ -48,19 +37,10 @@ You can insert text programmatically at concrete position by using the __Insert_
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 The code above produces the following result:![editors-textboxcontrol-text-editing 001](images/editors-textboxcontrol-text-editing001.png)
 
-Alternatively, you can insert text at the end of the RadTextBoxControl 
-			content by using the __AppendText__ method:
-		#_[C#]_
-
-	
-
-
+Alternatively, you can insert text at the end of the RadTextBoxControl content by using the __AppendText__ method: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=AppendText}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=AppendText}} 
@@ -80,18 +60,11 @@ Alternatively, you can insert text at the end of the RadTextBoxControl
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 The appended text is inserted at the end:![editors-textboxcontrol-text-editing 002](images/editors-textboxcontrol-text-editing002.png)
 
-You can delete the selected text or character at the caret position by using the __Delete__ method:
-		#_[C#]_
-
-	
-
-
+You can delete the selected text or character at the caret position by using the __Delete__ method: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=Delete}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=Delete}} 
@@ -113,20 +86,11 @@ You can delete the selected text or character at the caret position by using the
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 After the deletion of the first word the text control looks like:![editors-textboxcontrol-text-editing 003](images/editors-textboxcontrol-text-editing003.png)
 
-Each editing operation raises the __TextChanging__ and 
- 	        __TextChanged__ events. Notice that you can prevent successful finishing
- 	        of operation by subscribing to the __TextChanging__ event:
- 	      #_[C#]_
-
-	
-
-
+Each editing operation raises the __TextChanging__ and __TextChanged__ events. Notice that you can prevent successful finishing of operation by subscribing to the __TextChanging__ event: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=TextChanging}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=TextChanging}} 
@@ -144,8 +108,5 @@ Each editing operation raises the __TextChanging__ and
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 The code above prevent deleting in RadTextBoxControl.

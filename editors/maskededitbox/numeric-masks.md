@@ -5,17 +5,14 @@ description: Numeric Masks
 slug: winforms/editors/maskededitbox/numeric-masks
 tags: numeric,masks
 published: True
-position: 3
+position: 4
 ---
 
 # Numeric Masks
-
-
-
+ 
 ## 
 
-The purpose of this tutorial is to show you how to use __Numeric__ mask with RadMaskedTextBox.
-          The numeric mask is used when you need to display:
+The purpose of this tutorial is to show you how to use __Numeric__ mask with RadMaskedTextBox. The numeric mask is used when you need to display:
         
 
 * Percent values.

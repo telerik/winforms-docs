@@ -5,33 +5,19 @@ description: Getting Started
 slug: winforms/editors/textboxcontrol/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 2
 ---
 
 # Getting Started
-
-
-
+ 
 ## 
 
-The RadTextBoxControl is used to get input from the user or to display text.
-          The control can display multiple lines, wrap text to the size of the control,
-          add basic formatting, use themes, and the main differences with RadTextBox -
-          can be transparent and use gradients. The text box control provides a single format
-          style for the text displayed or entered.
+The RadTextBoxControl is used to get input from the user or to display text. The control can display multiple lines, wrap text to the size of the control, add basic formatting, use themes, and the main differences with RadTextBox - can be transparent and use gradients. The text box control provides a single format style for the text displayed or entered.
+         
+The text displayed by the control resides in the Text property. It can be set at design time via the Properties window in Visual Studio, at run time in code, or by user input at run time. The current contents of a text box can be retrieved at run time by via the Text property.
         
 
-The text displayed by the control resides in the Text property. It can be set at
-          design time via the Properties window in Visual Studio, at run time in code,
-          or by user input at run time. The current contents of a text box can be retrieved at
-          run time by via the Text property.
-        
-
-The code below sets text in the control at run time:#_[C#] _
-
-	
-
-
+The code below sets text in the control at run time: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetText}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetText}} 
@@ -53,11 +39,7 @@ The code below sets text in the control at run time:#_[C#] _
 
 ![editors-textboxcontrol-getting-started 001](images/editors-textboxcontrol-getting-started001.png)
 
-You can also define the lines in the text box at run time:#_[C#] _
-
-	
-
-
+You can also define the lines in the text box at run time: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=Lines}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=Lines}} 
@@ -86,13 +68,7 @@ You can also define the lines in the text box at run time:#_[C#] _
 
 ![editors-textboxcontrol-getting-started 002](images/editors-textboxcontrol-getting-started002.png)
 
-By setting the __NullText__ property, the control will display a custom
-          string when the __Text__ property is empty or null:
-        #_[C#] _
-
-	
-
-
+By setting the __NullText__ property, the control will display a custom string when the __Text__ property is empty or null: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetNullText}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetNullText}} 
@@ -114,12 +90,7 @@ By setting the __NullText__ property, the control will display a custom
 
 ![editors-textboxcontrol-getting-started 003](images/editors-textboxcontrol-getting-started003.png)
 
-Based on the value set to the __TextAlign__ property, the control will display its conentent aligned to the left, center or right:
-        #_[C#] _
-
-	
-
-
+Based on the value set to the __TextAlign__ property, the control will display its conentent aligned to the left, center or right: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetTextAlign}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetTextAlign}} 

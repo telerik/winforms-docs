@@ -5,13 +5,11 @@ description: Getting Started
 slug: winforms/editors/spineditor/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
-
-
-
+ 
 ## 
 
 The following tutorial demonstrates changing the thumb position on a
@@ -22,20 +20,11 @@ __RadSpinEditor__.
 
 
 
-1. Drop a __RadSpinEditor__ and a
-    __RadTrackbar__ on a form.
+1\. Drop a __RadSpinEditor__ and a __RadTrackbar__ on a form.
 
-1. In the Property Window, set the __RadSpinEditor Maximum__
-    property to "20".
+2\. In the Property Window, set the __RadSpinEditor Maximum__ property to "20".
 
-1. Click the Events tab of the Property Window, locate the
-    __ValueChanged__ event and double-click it to create an event
-    handler. Replace the event handler with the following code.
-      #_[C#]_
-
-	
-
-
+3\. Click the Events tab of the Property Window, locate the  __ValueChanged__ event and double-click it to create an event handler. Replace the event handler with the following code. 
 
 {{source=..\SamplesCS\Editors\SpinEditor1.cs region=spinEditorAndTrackBar}} 
 {{source=..\SamplesVB\Editors\SpinEditor1.vb region=spinEditorAndTrackBar}} 
@@ -54,11 +43,8 @@ __RadSpinEditor__.
 ````
 
 {{endregion}} 
-
-
-
-
-1. Press __F5__ to run the application. Experiment with the
+ 
+4\. Press __F5__ to run the application. Experiment with the
     behavior of the RadSpinEdit by both typing values directly to the editor,
     by clicking the up and down arrows, and by pressing the up and down arrow
     keys.

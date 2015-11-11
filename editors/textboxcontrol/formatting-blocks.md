@@ -5,36 +5,30 @@ description: Formatting blocks
 slug: winforms/editors/textboxcontrol/formatting-blocks
 tags: formatting,blocks
 published: True
-position: 6
+position: 7
 ---
 
 # Formatting blocks
-
-
+ 
 
 ## 
 
-The RadTextBoxControl allow appearance customization of each instance of 
-        	__ITextBlock__. This can be easily achieved by subscribing 
-        	to the __FormattingTextBlock__ event:
-        #_[C#]_
-
-	
-
-#_[C#]_
-
-	
-
-#_[VB.NET]_
-
-	
-
-
+The RadTextBoxControl allow appearance customization of each instance of __ITextBlock__. This can be easily achieved by subscribing to the __FormattingTextBlock__ event: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=Formatting1}} 
-{{source=..\SamplesCS\Editors\TextBoxControl.cs region=formatting2}} 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Formatting1}} 
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Formatting1}}
+````C#
+        this.radTextBoxControl1.TextBlockFormatting += this.OnTextBlockFormatting;
+		this.radTextBoxControl1.Text = "This is important text.";
+````
+````VB.NET
+     AddHandler Me.RadTextBoxControl1.TextBlockFormatting, AddressOf Me.OnTextBlockFormatting
+	 Me.RadTextBoxControl1.Text = "This is important text."
+````
 
+{{endregion}} 
+
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=formatting2}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=formatting2}} 
 
 ````C#
@@ -63,7 +57,5 @@ The RadTextBoxControl allow appearance customization of each instance of
 
 ![editors-textboxcontrol-formatting-blocks 001](images/editors-textboxcontrol-formatting-blocks001.png)
 
-Notice that the event occurs when the text blocks are repositioned. This happens in different cases:
-        	editing, control resizing and etc. Hence, you should subscribe to the event before initializing
-        	the __Text__ property.
+Notice that the event occurs when the text blocks are repositioned. This happens in different cases: editing, control resizing and etc. Hence, you should subscribe to the event before initializing the __Text__ property.
         

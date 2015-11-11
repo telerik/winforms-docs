@@ -1,17 +1,15 @@
 ---
-title: DateTimePicker
+title: Overview
 page_title: DateTimePicker | UI for WinForms Documentation
 description: DateTimePicker
 slug: winforms/editors/datetimepicker
 tags: datetimepicker
 published: True
-position: 4
+position: 0
 ---
 
 # DateTimePicker
-
-
-
+ 
 ## 
 
 __RadDateTimePicker__ allows interactive selection of dates using a drop down calendar. Features of __RadDateTimePicker__ include:

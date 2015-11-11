@@ -5,13 +5,11 @@ description: Working with RadSpinEditor
 slug: winforms/editors/spineditor/working-with-radspineditor
 tags: working,with,radspineditor
 published: True
-position: 1
+position: 2
 ---
 
 # Working with RadSpinEditor
-
-
-
+ 
 ## Properties
 
 __InterceptArrowKeys__: This property when true (the default) allows the user to press the UP ARROW and DOWN ARROW keys to select values. The focus must be on the control for this functionality. 
@@ -24,11 +22,11 @@ __Value, Minimum, Maximum__: The number displayed in the edit can be set or retu
 
 __Increment__: The amount incremented or decremented when the user clicks the up or down arrow buttons. By default this value is "1".
 
-__ThousandsSeparator__: This property when true displays a thousands separator. By default this property is set to false. The __ThousandsSeparator__display respects current culture settings as in the example below where the culture is set to German, __ThousandsSeparator__ is true and __DecimalPlaces__ is set to "2".![editors-spineditor-working-with-radspineditor 001](images/editors-spineditor-working-with-radspineditor001.png)#_[C#] Setting the Thousands separator_
+__ThousandsSeparator__: This property when true displays a thousands separator. By default this property is set to false. The __ThousandsSeparator__display respects current culture settings as in the example below where the culture is set to German, __ThousandsSeparator__ is true and __DecimalPlaces__ is set to "2".
 
-	
+![editors-spineditor-working-with-radspineditor 001](images/editors-spineditor-working-with-radspineditor001.png)
 
-
+#### Setting the Thousands separator 
 
 {{source=..\SamplesCS\Editors\SpinEditor1.cs region=thousandsSeparator}} 
 {{source=..\SamplesVB\Editors\SpinEditor1.vb region=thousandsSeparator}} 
@@ -51,17 +49,12 @@ __ThousandsSeparator__: This property when true displays a thousands separator.
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 ## Events
 
-__ValueChanging__: This event fires before the value has changed and allows you to prevent a given value from being entered. The event passes a __ValueChangingEventArgs__ parameter that includes the __OldValue__, __NewValue__ and __Cancel__ properties. Set __Cancel__ to true to prevent the change to the __NewValue__. The example below stops the value from changing if the new value is greater than twice the size of the old value.#_[C#] Cancel changing the value_
+__ValueChanging__: This event fires before the value has changed and allows you to prevent a given value from being entered. The event passes a __ValueChangingEventArgs__ parameter that includes the __OldValue__, __NewValue__ and __Cancel__ properties. Set __Cancel__ to true to prevent the change to the __NewValue__. The example below stops the value from changing if the new value is greater than twice the size of the old value.
 
-	
-
-
+#### Cancel changing the value 
 
 {{source=..\SamplesCS\Editors\SpinEditor1.cs region=cancelChanging}} 
 {{source=..\SamplesVB\Editors\SpinEditor1.vb region=cancelChanging}} 
@@ -80,8 +73,5 @@ __ValueChanging__: This event fires before the value has changed and allows you
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 __ValueChanged__: This event fires when the number has already changed. Use the __Value__property to get the current number in the __RadSpinEditor__.

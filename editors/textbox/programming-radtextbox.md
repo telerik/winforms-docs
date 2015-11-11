@@ -5,7 +5,7 @@ description: Programming RadTextBox
 slug: winforms/editors/textbox/programming-radtextbox
 tags: programming,radtextbox
 published: True
-position: 0
+position: 1
 ---
 
 # Programming RadTextBox

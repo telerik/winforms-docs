@@ -5,25 +5,21 @@ description: Date and Time Masks
 slug: winforms/editors/maskededitbox/date-and-time-masks
 tags: date,and,time,masks
 published: True
-position: 2
+position: 3
 ---
 
 # Date and Time Masks
-
-
-
-The tables below describe the mask characters that can be used when the __MaskType__ is __DateTime__.
-        Note that the format characters are case sensitive.
+ 
+The tables below describe the mask characters that can be used when the __MaskType__ is __DateTime__. Note that the format characters are case sensitive.
       
 
 ## Standard Date Format codes
 
-Full list of the supported masks can be found in the following MSDN article:
-          [Standard DateTime masks](http://msdn.microsoft.com/en-us/library/az4se3k1(v=VS.71).aspx)
+Full list of the supported masks can be found in the following MSDN article: [Standard DateTime masks](http://msdn.microsoft.com/en-us/library/az4se3k1(v=VS.71).aspx)
 
-
-
+ 
 | __Format Character__ | __Description__ |
+|----|----|
 |d|Short date pattern|
 |D|Long date pattern|
 |f|Full date and time (long date and short time)|
@@ -41,14 +37,13 @@ Full list of the supported masks can be found in the following MSDN article:
 Where standard date codes are too restrictive, create your own custom formats using the format patterns listed below.
         
 
-Full list of the supported masks can be found in the following MSDN article:
-          [Custom DateTime masks](http://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.71).aspx)
+Full list of the supported masks can be found in the following MSDN article: [Custom DateTime masks](http://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.71).aspx)
 
 For example, a DateFormat of "ddd, MMMM yyyy - dd" might display:![editors-maskededitbox-date-and-time-masks 001](images/editors-maskededitbox-date-and-time-masks001.png)
-
-
+ 
 
 | __Format Pattern__ | __Description__ |
+|----|----|
 |dd|The numeric day of the month.|
 |ddd|The abbreviated name of the day of the week.|
 |M|The month name followed by the numeric day.|
@@ -71,12 +66,7 @@ For example, a DateFormat of "ddd, MMMM yyyy - dd" might display:![editors-maske
 
 ## Accessing the MaskDateTimeProvider
 
-When the mask type is set to *DateTime* you can access the MaskDateTimeProvider by casting to that appropriate type.
-        #_[C#]_
-
-	
-
-
+When the mask type is set to *DateTime* you can access the MaskDateTimeProvider by casting to that appropriate type. 
 
 {{source=..\SamplesCS\Editors\MaskEditBox1.cs region=provider}} 
 {{source=..\SamplesVB\Editors\MaskEditBox1.vb region=provider}} 
@@ -97,8 +87,5 @@ When the mask type is set to *DateTime* you can access the MaskDateTimeProvider 
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 More information about this provider can be found in the last section of the following article: [RadDateTimePicker Properties]({%slug winforms/editors/datetimepicker/raddatetimepicker-properties%})

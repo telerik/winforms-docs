@@ -9,18 +9,13 @@ position: 2
 ---
 
 # Date Formats
-
-
-
+ 
 ## 
 
 The table below displays a list of the standard format characters supported by __RadDateTimePicker__. The format characters are case-sensitive; for example, 'f' and 'F' represent different patterns.
-
-
-
-
-
+ 
 | __Format Character__ | __Associated Property/ Description__ |
+|----|----|
 |d|ShortDatePattern|
 |D|LongDatePattern|
 |f|Full date and time (long date and short time)|
@@ -36,12 +31,10 @@ The table below displays a list of the standard format characters supported by 
 |U|Full date and time (long date and long time) using universal time|
 
 The table below shows a list of patterns that can be combined to create custom patterns. The patterns are case-sensitive; for example, "MM" is recognized, but "mm" is not. If the custom pattern contains white-space characters or characters enclosed in single quotation marks, the output string will also contain those characters. Characters not defined as part of a format pattern or as format characters are reproduced literally.
-
-
-
-
+ 
 
 | __Format Pattern__ | __Description__ |
+|----|----|
 |dd|The day of the month. Single-digit days will have a leading zero.|
 |ddd|The abbreviated name of the day of the week, as defined in AbbreviatedDayNames.|
 |M|The full name of the day of the week, as defined in DayNames.|

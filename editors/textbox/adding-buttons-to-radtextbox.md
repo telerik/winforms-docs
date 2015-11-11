@@ -5,33 +5,22 @@ description: Adding Buttons to RadTextBox
 slug: winforms/editors/textbox/adding-buttons-to-radtextbox
 tags: adding,buttons,to,radtextbox
 published: True
-position: 2
+position: 3
 ---
 
 # Adding Buttons to RadTextBox
+ 
 
-
-
-Telerik UI for WinForms are based on a special framework called
-       [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}).
-        This framework allows for great customizations in the element structure of a control.
-      The purpose of this article is to demonstrate how you can easily add buttons to RadTextBox.
-      ![editors-textbox-adding-buttons-to-radtextbox 001](images/editors-textbox-adding-buttons-to-radtextbox001.png)
+Telerik UI for WinForms are based on a special framework called [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}). This framework allows for great customizations in the element structure of a control. The purpose of this article is to demonstrate how you can easily add buttons to RadTextBox.
+      
+![editors-textbox-adding-buttons-to-radtextbox 001](images/editors-textbox-adding-buttons-to-radtextbox001.png)
 
 ## Adding buttons to RadTextBox
 
 In this particular case we are going to add three buttons to RadTextBox:
         
 
-1. First, let's create three buttons. In order to arrange
-        them in stacked formation, we need to add them to a        
-         [StackLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels%})     
-        element:
-            #_[C#]_
-
-	
-
-
+1\. First, let's create three buttons. In order to arrange them in stacked formation, we need to add them to a [StackLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels%}) element: 
 
 {{source=..\SamplesCS\Editors\TextBoxWithButtons.cs region=creatingButtons}} 
 {{source=..\SamplesVB\Editors\TextBoxWithButtons.vb region=creatingButtons}} 
@@ -93,19 +82,10 @@ In this particular case we are going to add three buttons to RadTextBox:
 {{endregion}} 
 
 
-As you can see, we are also setting Padding of the buttons. This allows us to set some size
-              to these buttons bigger than the default one. In addition, we are setting Margin of the buttons,
-        so that there is some space between them.
+As you can see, we are also setting Padding of the buttons. This allows us to set some size to these buttons bigger than the default one. In addition, we are setting Margin of the buttons, so that there is some space between them.
             
 
-1. Now we should place the StackLayoutPanel in RadTextBox. In order to achieve the proper layout
-        between the textbox part of RadTextBox and the buttons, we need to put the item responsible 
-        for the textbox part and the StackLayoutPanel in a DockLayoutPanel:
-            #_[C#]_
-
-	
-
-
+2\. Now we should place the StackLayoutPanel in RadTextBox. In order to achieve the proper layout between the textbox part of RadTextBox and the buttons, we need to put the item responsible for the textbox part and the StackLayoutPanel in a DockLayoutPanel: 
 
 {{source=..\SamplesCS\Editors\TextBoxWithButtons.cs region=dockLayoutPanel}} 
 {{source=..\SamplesVB\Editors\TextBoxWithButtons.vb region=dockLayoutPanel}} 
@@ -135,17 +115,9 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 ````
 
 {{endregion}} 
+ 
 
-
-
-
-1. We are setting some Margin and Padding properties to the elements of RadTextBox which
-              centers the buttons and the text vertically:
-            #_[C#]_
-
-	
-
-
+3\. We are setting some Margin and Padding properties to the elements of RadTextBox which centers the buttons and the text vertically: 
 
 {{source=..\SamplesCS\Editors\TextBoxWithButtons.cs region=finalPadding}} 
 {{source=..\SamplesVB\Editors\TextBoxWithButtons.vb region=finalPadding}} 
@@ -161,16 +133,8 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 ````
 
 {{endregion}} 
-
-
-
-
-1. To complete the scenario, here is the event handler implementation for the Click event:
-            #_[C#]_
-
-	
-
-
+ 
+4\. To complete the scenario, here is the event handler implementation for the Click event: 
 
 {{source=..\SamplesCS\Editors\TextBoxWithButtons.cs region=clickHandler}} 
 {{source=..\SamplesVB\Editors\TextBoxWithButtons.vb region=clickHandler}} 
@@ -191,8 +155,5 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 This is it! Now you have a good-looking RadTextBox with buttons!

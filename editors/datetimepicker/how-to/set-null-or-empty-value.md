@@ -9,20 +9,12 @@ position: 0
 ---
 
 # Set null or empty value
-
-
-
+ 
 ## 
 
-__RadDateTimePicker__ now has __NullableValue__ property which supports *null* value
-          (The default Value property is of type DateTime which is value type and it cannot be set to *null*).
-          The __NullableValue__ property can be set to *null* as any other reference type, the built-in __SetToNullValue__ 
-          method can be used as well:
-      #_[C#] Set to null_
+__RadDateTimePicker__ now has __NullableValue__ property which supports *null* value (The default Value property is of type DateTime which is value type and it cannot be set to *null*). The __NullableValue__ property can be set to *null* as any other reference type, the built-in __SetToNullValue__ method can be used as well:
 
-	
-
-
+#### Set to null 
 
 {{source=..\SamplesCS\Editors\DateTimePicker1.cs region=SetToNullValue}} 
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=SetToNullValue}} 
@@ -38,17 +30,10 @@ __RadDateTimePicker__ now has __NullableValue__ property which supports *null* v
 ````
 
 {{endregion}} 
+ 
+If you set the __NullText__ property, you can conditionally display a text based on the selected date. The null text will be displayed when the __NullableValue__ is null or when the __NullDate__ property value matches the current value.
 
-
-
-
-If you set the __NullText__ property, you can conditionally display a text based on the selected date. The null text will be displayed 
-          when the __NullableValue__ is null or when the __NullDate__ property value matches the current value.
-        #_[C#] Setting the NullText property of RadDateTimePicker_
-
-	
-
-
+#### Setting the NullText property of RadDateTimePicker 
 
 {{source=..\SamplesCS\Editors\DateTimePicker1.cs region=NullText}} 
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=NullText}} 
@@ -62,18 +47,10 @@ If you set the __NullText__ property, you can conditionally display a text based
 ````
 
 {{endregion}} 
+ 
+When the__NullDate__ property value is equal to the control value no text will be displayed in the text box part (if the NullText is set it will appear). The default value of the property is __MinDate__, which is *1/1/1900*. Below is the code snippet for setting __NullDate__to a specific date (*01-01-2000*):
 
-
-
-
-When the__NullDate__ property value is equal to the control value no text will be displayed in the text box part (if the NullText is set it will appear).
-         The default value of the property is __MinDate__, which is *1/1/1900*.
-          Below is the code snippet for setting __NullDate__to a specific date (*01-01-2000*):
-        #_[C#] Setting the NullDate property of RadDateTimePicker_
-
-	
-
-
+#### Setting the NullDate property of RadDateTimePicker 
 
 {{source=..\SamplesCS\Editors\DateTimePicker1.cs region=NullDate}} 
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=NullDate}} 

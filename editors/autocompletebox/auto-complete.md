@@ -1,5 +1,5 @@
 ---
-title: Auto-Complete
+title: Overview
 page_title: Auto-Complete | UI for WinForms Documentation
 description: Auto-Complete
 slug: winforms/editors/autocompletebox/auto-complete

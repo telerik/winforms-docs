@@ -5,21 +5,14 @@ description: Customization
 slug: winforms/editors/calculatordropdown/customization
 tags: customization
 published: True
-position: 1
+position: 2
 ---
 
 # Customization
-
-
-
+ 
 This topic will demonstrate how to access different element in the control in order to change their appearance.
       
-
-## Modify the appearance of the memory element#_[C#] _
-
-	
-
-
+## Modify the appearance of the memory element 
 
 {{source=..\SamplesCS\Editors\RadCalculatorDropDownCustomization.cs region=ChangeTheImageOfMemoryElement}} 
 {{source=..\SamplesVB\Editors\RadCalculatorDropDownCustomization.vb region=ChangeTheImageOfMemoryElement}} 
@@ -37,11 +30,7 @@ This topic will demonstrate how to access different element in the control in or
 
 ![editors-calculatordropdown-customization 001](images/editors-calculatordropdown-customization001.png)
 
-## Modify the appearance of the  of the text box#_[C#] _
-
-	
-
-
+## Modify the appearance of the  of the text box 
 
 {{source=..\SamplesCS\Editors\RadCalculatorDropDownCustomization.cs region=ChangeTheBackColorOfTheTextBox}} 
 {{source=..\SamplesVB\Editors\RadCalculatorDropDownCustomization.vb region=ChangeTheBackColorOfTheTextBox}} 
@@ -61,11 +50,7 @@ This topic will demonstrate how to access different element in the control in or
 
 ![editors-calculatordropdown-customization 002](images/editors-calculatordropdown-customization002.png)
 
-## Modify the appearance of the calculator in the popup#_[C#] _
-
-	
-
-
+## Modify the appearance of the calculator in the popup 
 
 {{source=..\SamplesCS\Editors\RadCalculatorDropDownCustomization.cs region=ChangeTheBackColorOfTheCalculator}} 
 {{source=..\SamplesVB\Editors\RadCalculatorDropDownCustomization.vb region=ChangeTheBackColorOfTheCalculator}} 
@@ -83,11 +68,7 @@ This topic will demonstrate how to access different element in the control in or
 
 ![editors-calculatordropdown-customization 003](images/editors-calculatordropdown-customization003.png)
 
-## Modify the appearance of the of the buttons#_[C#] _
-
-	
-
-
+## Modify the appearance of the of the buttons 
 
 {{source=..\SamplesCS\Editors\RadCalculatorDropDownCustomization.cs region=ChangeTheBackColorOfButtons}} 
 {{source=..\SamplesVB\Editors\RadCalculatorDropDownCustomization.vb region=ChangeTheBackColorOfButtons}} 

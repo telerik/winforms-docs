@@ -5,28 +5,17 @@ description: TextMaskFormat Property
 slug: winforms/editors/maskededitbox/textmaskformat-property
 tags: textmaskformat,property
 published: True
-position: 5
+position: 6
 ---
 
 # TextMaskFormat Property
+ 
+While working with RadMaskedEditBox you may come to a case where you want to get a Value that differs from what the end-user sees in the editor, or, in other words, from what the Text property provides. In such cases the you will find the __TextMaskFormat__ property useful. It allows you to get variations of of the Text property value taking into account whether you want to get the prompt characters, and the literals used in the mask. The type of the TextMaskFormat property is the MaskFormat enum which provides the following values: 
 
-
-
-While working with RadMaskedEditBox you may come to a case where you want to get
-        a Value that differs from what the end-user sees in the editor, or, in other words,
-        from what the Text property provides. In such cases the you will find the
-        __TextMaskFormat__ property useful. It allows you to get variations of
-        of the Text property value taking into account whether you want to get the prompt characters,
-        and the literals used in the mask. The type of the TextMaskFormat property is the
-        MaskFormat enum which provides the following values:
-      
-
-* __IncludePromptAndLiterals__ (default value): The Value property returns Return the text input by the user as well as any literal characters
-            defined in the mask and any instances of the prompt character.
+* __IncludePromptAndLiterals__ (default value): The Value property returns Return the text input by the user as well as any literal characters defined in the mask and any instances of the prompt character.
           
 
-* __ExcludePromptAndLiterals__: The Value property returns only
-            the text input by the user.
+* __ExcludePromptAndLiterals__: The Value property returns only the text input by the user.
           
 
 * __IncludePrompt__: The Value property returns the text input by the user as well as any instances of the prompt character.
@@ -40,12 +29,7 @@ Let's now analyze how this property works in the context of several popular mask
 
 ## Using Phone mask
 
-1. First, we need to define our mask:
-            #_[C#]_
-
-	
-
-
+1\. First, we need to define our mask: 
 
 {{source=..\SamplesCS\Editors\MaskEditBox1.cs region=phoneMask}} 
 {{source=..\SamplesVB\Editors\MaskEditBox1.vb region=phoneMask}} 
@@ -64,14 +48,11 @@ Let's now analyze how this property works in the context of several popular mask
 ````
 
 {{endregion}} 
+ 
 
+2\. Then, let's assume that the user types "123123123". As you can notice, the number of digits is smaller than the provided prompt places by one and this is for demonstration purposes. The result in the UI of RadMaskedEditBox will look like this:
 
-
-
-1. Then, let's assume that the user types "123123123". As you can notice, the number of digits
-              is smaller than the provided prompt places by one and this is for demonstration purposes.
-              The result in the UI of RadMaskedEditBox will look like this:
-            ![editors-maskededitbox-textmaskformat 001](images/editors-maskededitbox-textmaskformat001.png)
+![editors-maskededitbox-textmaskformat 001](images/editors-maskededitbox-textmaskformat001.png)
 
 So, here we have:
         
@@ -99,12 +80,7 @@ And here is what the __Value__ property of RadMaskedEditBox will return dependin
 
 ## Using Currency mask
 
-1. Define the Current mask as show below:
-            #_[C#]_
-
-	
-
-
+3\. Define the Current mask as show below: 
 
 {{source=..\SamplesCS\Editors\MaskEditBox1.cs region=currencyMask}} 
 {{source=..\SamplesVB\Editors\MaskEditBox1.vb region=currencyMask}} 
@@ -121,13 +97,11 @@ And here is what the __Value__ property of RadMaskedEditBox will return dependin
 ````
 
 {{endregion}} 
+ 
 
-
-
-
-1. Now, assume that the user types "-1234.12". The UI of RadMaskedEditBox in this case
-              look like this:
-            ![editors-maskededitbox-textmaskformat 002](images/editors-maskededitbox-textmaskformat002.png)
+4\. Now, assume that the user types "-1234.12". The UI of RadMaskedEditBox in this case look like this:
+            
+![editors-maskededitbox-textmaskformat 002](images/editors-maskededitbox-textmaskformat002.png)
 
 So, here we have:
         
