@@ -5,13 +5,11 @@ description: Customizing Items (visual appearance)
 slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/listcontrol/customizing-items-(visual-appearance)
 tags: customizing,items,(visual,appearance)
 published: True
-position: 6
+position: 7
 ---
 
 # Customizing Items (visual appearance)
-
-
-
+ 
 ## 
 
 You can use the __ItemDataBound__ event to change item content based on the data that is bound to each item. The __ListItemDataBoundEventArgs__ include properties for the native DataBoundItem (a DataRowView object, which provides access to the entire row being bound) and the data item of RadListControl. In the example below the DisplayName property is "FirstName". Two other columns, "FirstName" and "TitleOfCourtesy", are pre-pended to the data list item.
@@ -24,12 +22,8 @@ The aim of this article is to demonstrate how you can achieve to look shown belo
 
 
 
-1. Handle the ItemDataBound event to fill the data list items with custom data. 
-#_[C#] Handling the ItemDataBound event_
-
-	
-
-
+1\. Handle the ItemDataBound event to fill the data list items with custom data. 
+#### Handling the ItemDataBound event 
 
 {{source=..\SamplesCS\DropDownListControl\ListControl\CustomizingItems.cs region=itemDataBound}} 
 {{source=..\SamplesVB\DropDownListControl\ListControl\CustomizingItems.vb region=itemDataBound}} 
@@ -59,11 +53,7 @@ The aim of this article is to demonstrate how you can achieve to look shown belo
 {{endregion}} 
 
 
-#_[C#] Image helper method_
-
-	
-
-
+#### Image helper method 
 
 {{source=..\SamplesCS\DropDownListControl\ListControl\CustomizingItems.cs region=getImageData}} 
 {{source=..\SamplesVB\DropDownListControl\ListControl\CustomizingItems.vb region=getImageData}} 
@@ -113,16 +103,9 @@ The aim of this article is to demonstrate how you can achieve to look shown belo
 
 {{endregion}} 
 
-
-
-
-1. Since the *<br>* tag will split the __Text__ value in different lines, it is essential to set the __AutoSizeItems__ of RadListControl to *true*:
+2\. Since the *<br>* tag will split the __Text__ value in different lines, it is essential to set the __AutoSizeItems__ of RadListControl to *true*:
         	
-        	#_[C#] Setting AutoSizeItems_
-
-	
-
-
+#### Setting AutoSizeItems 
 
 {{source=..\SamplesCS\DropDownListControl\ListControl\CustomizingItems.cs region=autoSizeItems}} 
 {{source=..\SamplesVB\DropDownListControl\ListControl\CustomizingItems.vb region=autoSizeItems}} 
@@ -136,16 +119,11 @@ The aim of this article is to demonstrate how you can achieve to look shown belo
 ````
 
 {{endregion}} 
+ 
 
+3\. Should you want to have apply some padding to the visual items, you should do it on CreatingVisualListItem event: 
 
-
-
-1. Should you want to have apply some padding to the visual items, you should do it on CreatingVisualListItem event: 
-#_[C#] Applying Padding to the visual list items_
-
-	
-
-
+#### Applying Padding to the visual list items 
 
 {{source=..\SamplesCS\DropDownListControl\ListControl\CustomizingItems.cs region=creatingVisualListItem}} 
 {{source=..\SamplesVB\DropDownListControl\ListControl\CustomizingItems.vb region=creatingVisualListItem}} 

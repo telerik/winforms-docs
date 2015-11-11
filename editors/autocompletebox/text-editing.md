@@ -5,28 +5,17 @@ description: Text Editing
 slug: winforms/editors/autocompletebox/text-editing
 tags: text,editing
 published: True
-position: 3
+position: 4
 ---
 
 # Text Editing
-
-
-
+ 
 ## 
 
-The editing point is determined by the caret position and selection in RadAutoCompleteBox.
-        	The editing position is visible only if the control is focused.
+The editing point is determined by the caret position and selection in RadAutoCompleteBox. The editing position is visible only if the control is focused.
         
 
-You can insert text programmatically at concrete position by using the 
-        	__Insert__ method. In this case, the text is inserted at the position 
-        	determined by the __SelectionStart__ property. If the
-        	__SelectionLength__ property is greater than zero, the inserted text replaces the selected text.
-        #_[C#] _
-
-	
-
-
+You can insert text programmatically at concrete position by using the __Insert__ method. In this case, the text is inserted at the position determined by the __SelectionStart__ property. If the __SelectionLength__ property is greater than zero, the inserted text replaces the selected text. 
 
 {{source=..\SamplesCS\editors\AutoCompleteBox.cs region=insert}} 
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=insert}} 
@@ -48,19 +37,12 @@ You can insert text programmatically at concrete position by using the
 ````
 
 {{endregion}} 
+ 
+The code above produces the following result:
 
+![editors-autocompletebox-text-editing 001](images/editors-autocompletebox-text-editing001.png)
 
-
-
-The code above produces the following result:![editors-autocompletebox-text-editing 001](images/editors-autocompletebox-text-editing001.png)
-
-Alternatively, you can insert text at the end of the RadAutoCompleteBox content 
-			by using the __AppendText__ method:
-		#_[C#] _
-
-	
-
-
+Alternatively, you can insert text at the end of the RadAutoCompleteBox content by using the __AppendText__ method: 
 
 {{source=..\SamplesCS\editors\AutoCompleteBox.cs region=Append}} 
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=Append}} 
@@ -80,19 +62,12 @@ Alternatively, you can insert text at the end of the RadAutoCompleteBox content
 ````
 
 {{endregion}} 
+ 
+The appended text is inserted at the end:
 
+![editors-autocompletebox-text-editing 002](images/editors-autocompletebox-text-editing002.png)
 
-
-
-The appended text is inserted at the end:![editors-autocompletebox-text-editing 002](images/editors-autocompletebox-text-editing002.png)
-
-You can delete the selected text or character at the caret position by using the 
-			__Delete__ method:
-		#_[C#] _
-
-	
-
-
+You can delete the selected text or character at the caret position by using the __Delete__ method: 
 
 {{source=..\SamplesCS\editors\AutoCompleteBox.cs region=Delete}} 
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=Delete}} 
@@ -114,20 +89,12 @@ You can delete the selected text or character at the caret position by using the
 ````
 
 {{endregion}} 
+ 
+After the deletion of the first word the text control looks like:
 
+![editors-autocompletebox-text-editing 003](images/editors-autocompletebox-text-editing003.png)
 
-
-
-After the deletion of the first word the text control looks like:![editors-autocompletebox-text-editing 003](images/editors-autocompletebox-text-editing003.png)
-
-Each editing operation raises the __TextChanging__ and 
-			__TextChanged__ events. Notice that you can prevent successful
-			finishing of operation by subscribing to the __TextChanging__ event:
-		#_[C#] _
-
-	
-
-
+Each editing operation raises the __TextChanging__ and __TextChanged__ events. Notice that you can prevent successful finishing of operation by subscribing to the __TextChanging__ event: 
 
 {{source=..\SamplesCS\editors\AutoCompleteBox.cs region=PreventDeleteOfTokens}} 
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=PreventDeleteOfTokens}} 
@@ -144,9 +111,6 @@ Each editing operation raises the __TextChanging__ and
     End Sub
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}  
 
 The code above prevents deleting a tokenized text blocks in RadAutoCompleteBox.

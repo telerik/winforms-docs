@@ -5,23 +5,14 @@ description: Formatting Blocks
 slug: winforms/editors/autocompletebox/formatting-blocks
 tags: formatting,blocks
 published: True
-position: 5
+position: 6
 ---
 
 # Formatting Blocks
-
-
-
+ 
 ## 
 
-The RadAutoCompleteBox allows appearance customization of each instance of
-			 __ITextBlock__. This can be easily achieved by subscribing 
-			 to the __FormattingTextBlock__ event:
-        #_[C#]_
-
-	
-
-
+The RadAutoCompleteBox allows appearance customization of each instance of __ITextBlock__. This can be easily achieved by subscribing to the __FormattingTextBlock__ event: 
 
 {{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=formatting}} 
 {{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=formatting}} 
@@ -52,7 +43,5 @@ The RadAutoCompleteBox allows appearance customization of each instance of
 
 ![editors-autocompletebox-formatting-blocks 001](images/editors-autocompletebox-formatting-blocks001.png)
 
-Note that the event occurs when the text blocks are repositioned. This happens in
-			different cases - editing, control resizing and etc. Hence, you should subscribe to 
-			the event before initializing the Text property.
+Note that the event occurs when the text blocks are repositioned. This happens in different cases - editing, control resizing and etc. Hence, you should subscribe to the event before initializing the Text property.
 		

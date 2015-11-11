@@ -5,24 +5,19 @@ description: Customization
 slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/customization
 tags: customization
 published: True
-position: 3
+position: 4
 ---
 
 # Customization
-
-
-
+ 
 Customizing __RadCheckedDropDownList__ is easy and can be separated in two parts:
       
 
 ## Customizing the editable area
 
 In order to customize the editable area you must subscribe to the __TextBlockFormatting__ and modify the properties of the __TokenizedTextBlockElement__:
-        #_[C#] Subscribe to TextBlockFormatting_
 
-	
-
-
+#### Subscribe to TextBlockFormatting 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\Customization1.cs region=TextBlockFormattingSubscribe}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=TextBlockFormattingSubscribe}} 
@@ -38,11 +33,7 @@ In order to customize the editable area you must subscribe to the __TextBlockFor
 {{endregion}} 
 
 
-#_[C#] Modify properties_
-
-	
-
-
+#### Modify properties 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\Customization1.cs region=TextBlockFormattingHandler}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=TextBlockFormattingHandler}} 
@@ -81,11 +72,8 @@ In order to customize the editable area you must subscribe to the __TextBlockFor
 ## Customizing the drop down items
 
 Customizing the drop down items is similar. Subscribe to the __VisualListItemFormatting__:
-        #_[C#] Subscribe to VisualListItemFormatting_
 
-	
-
-
+#### Subscribe to VisualListItemFormatting 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\Customization1.cs region=VisualListItemFormattingSubscribe}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=VisualListItemFormattingSubscribe}} 
@@ -101,11 +89,7 @@ Customizing the drop down items is similar. Subscribe to the __VisualListItemFor
 {{endregion}} 
 
 
-#_[C#] Modify properties_
-
-	
-
-
+#### Modify properties 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\Customization1.cs region=VisualListItemFormattingHandler}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=VisualListItemFormattingHandler}} 

@@ -5,24 +5,18 @@ description: Data Representation
 slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/listcontrol/data-representation
 tags: data,representation
 published: True
-position: 3
+position: 4
 ---
 
 # Data Representation
-
-
-
+ 
 ## 
 
 This article requires that readers are familiar with the workings of the TPF property system.
 
 RadListControl  represents a data source by creating an internal logical item that is associated with every data record. This logical item is of type RadListDataItem and it inherits from RadObject which means that it offers the full power and flexibility that the TPF property system provides.
 
-RadListDataItem initially has the most basic visual properties required which are used for synchronization between the visuals and the data when a RadListVisualItem is mapped to the data item.  These properties are TextImageRelation, ImageAlignment, TextAlignment, TextOrientation, Image, Font and ForeColor. Users can add additional properties by inheriting from RadListDataItem declaring them in the custom data item. For example:#_[C#]_
-
-	
-
-
+RadListDataItem initially has the most basic visual properties required which are used for synchronization between the visuals and the data when a RadListVisualItem is mapped to the data item.  These properties are TextImageRelation, ImageAlignment, TextAlignment, TextOrientation, Image, Font and ForeColor. Users can add additional properties by inheriting from RadListDataItem declaring them in the custom data item. For example: 
 
 {{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=customDataItem}} 
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=customDataItem}} 
@@ -61,17 +55,8 @@ End Class
 ````
 
 {{endregion}} 
-
-
-
-
-
-
-Once we have the custom data item with the additional information we can convince RadListControl to use our class when creating logical items by using the ItemDataBinding event. Consider the following code snippet: #_[C#]_
-
-	
-
-
+ 
+Once we have the custom data item with the additional information we can convince RadListControl to use our class when creating logical items by using the ItemDataBinding event. Consider the following code snippet:  
 
 {{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=itemDataBinding}} 
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=itemDataBinding}} 
@@ -90,8 +75,5 @@ Once we have the custom data item with the additional information we can convinc
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 With this in place we have modified RadListControl to use our type of logical objects which will provide the ability to display custom visual elements, a checkbox for example, in the visual representation of the data items. The next topic describes how to extend the visual items and how to provide the visual synchronization of the additional properties defined for the data item.

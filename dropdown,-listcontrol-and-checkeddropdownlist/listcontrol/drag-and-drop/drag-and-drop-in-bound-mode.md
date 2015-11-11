@@ -12,28 +12,23 @@ position: 0
 
 
 
-This article demonstrates how you can implement drag and drop operation between two bound __RadListControl__ controls. This example is using the [
-            ole drag and drop
-          ](https://msdn.microsoft.com/en-us/library/96826a87.aspx)
+This article demonstrates how you can implement drag and drop operation between two bound __RadListControl__ controls. This example is using the [ole drag and drop](https://msdn.microsoft.com/en-us/library/96826a87.aspx)
 
-Figure 1. The final result.![dropdown-and-listcontrol-listcontrol-drag-and-drop 001](images/dropdown-and-listcontrol-listcontrol-drag-and-drop001.gif)
+Figure 1. The final result.
+
+![dropdown-and-listcontrol-listcontrol-drag-and-drop 001](images/dropdown-and-listcontrol-listcontrol-drag-and-drop001.gif)
 
 ## 
 
 The drag and drop functionality is achieved with the help of four events:
 
-* __MouseDown, MouseMove:__ The MouseDown event is used for saving the position of the clicked element. It will be used later for getting the element under the mouse.
-              The MouseMove event can be used to start the drag and drop operation. It is started with the __DoDragDrop__ method
-              only if the left mouse button is used and a valid item is clicked.
+* __MouseDown, MouseMove:__ The MouseDown event is used for saving the position of the clicked element. It will be used later for getting the element under the mouse. The MouseMove event can be used to start the drag and drop operation. It is started with the __DoDragDrop__ method only if the left mouse button is used and a valid item is clicked.
             
 
 >note The __IsRealDrag__ method returns true only if the mouse have moved certain amount of pixels (determined by the operating system).
 >
-#_[C#] MouseDown and MouseMove._
 
-	
-
-
+#### MouseDown and MouseMove 
 
 {{source=..\SamplesCS\DropDownListControl\ListControl\DragAndDrop.cs region=MouseDownMove}} 
 {{source=..\SamplesVB\DropDownListControl\ListControl\DragAndDrop.vb region=MouseDownMove}} 
@@ -93,17 +88,10 @@ The drag and drop functionality is achieved with the help of four events:
 ````
 
 {{endregion}} 
+ 
+* __DragEnter:__ This event will fire when the mouse is hovering over a control that allows the dropping. Here you can use it to disable the drop operation within the same control.
 
-
-
-
-* __DragEnter:__ This event will fire when the mouse is hovering over a control that allows the dropping. Here you can use it to
-              disable the drop operation within the same control.
-            #_[C#] The DragEnter event handler._
-
-	
-
-
+#### The DragEnter event handler 
 
 {{source=..\SamplesCS\DropDownListControl\ListControl\DragAndDrop.cs region=DragEnter}} 
 {{source=..\SamplesVB\DropDownListControl\ListControl\DragAndDrop.vb region=DragEnter}} 
@@ -140,18 +128,10 @@ The drag and drop functionality is achieved with the help of four events:
 ````
 
 {{endregion}} 
+ 
+* __DragDrop:__ This is the most important event. In it you have access to both, the dragged element and the control where the item is dropped. This allows you to handle the drop operation appropriately according to your specific requirements. In this case the both controls are bound, and this allows you to just add/remove items from/to their data source (the changes will be immediately reflected by the controls).
 
-
-
-
-* __DragDrop:__ This is the most important event. In it you have access to both, the dragged element and the control where the item is dropped.
-              This allows you to handle the drop operation appropriately according to your specific requirements. In this case the both controls are bound, and this allows you to
-              just add/remove items from/to their data source (the changes will be immediately reflected by the controls).
-            #_[C#] The DragDrop event handler._
-
-	
-
-
+#### The DragDrop event handler 
 
 {{source=..\SamplesCS\DropDownListControl\ListControl\DragAndDrop.cs region=DragDrop}} 
 {{source=..\SamplesVB\DropDownListControl\ListControl\DragAndDrop.vb region=DragDrop}} 
@@ -196,17 +176,11 @@ The drag and drop functionality is achieved with the help of four events:
 ````
 
 {{endregion}} 
+ 
 
+Additionally you should set the __AllowDrop__ property of both controls. With this example you can move from the first __RadListView__ to the second and vice versa. Along with this the following snippet shows how you can bind the controls and subscribe to the events. The same events are used for both controls. 
 
-
-
-Additionally you should set the __AllowDrop__ property of both controls. With this example you can move from the first __RadListView__
-          to the second and vice versa. Along with this the following snippet shows how you can bind the controls and subscribe to the events. The same events are used for both controls. 
-        #_[C#] Controls initialization._
-
-	
-
-
+#### Controls initialization 
 
 {{source=..\SamplesCS\DropDownListControl\ListControl\DragAndDrop.cs region=Initialize}} 
 {{source=..\SamplesVB\DropDownListControl\ListControl\DragAndDrop.vb region=Initialize}} 
@@ -290,16 +264,11 @@ Additionally you should set the __AllowDrop__ property of both controls. With th
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 To complete the example you can use the following sample class.
-        #_[C#] Sample business object for the example._
 
-	
-
-
+#### Sample business object for the example 
 
 {{source=..\SamplesCS\DropDownListControl\ListControl\DragAndDrop.cs region=CustomObject}} 
 {{source=..\SamplesVB\DropDownListControl\ListControl\DragAndDrop.vb region=CustomObject}} 

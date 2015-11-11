@@ -5,28 +5,22 @@ description: DataBinding
 slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/databinding
 tags: databinding
 published: True
-position: 2
+position: 3
 ---
 
 # DataBinding
-
-
-
+ 
 __RadCheckedDropDownList__ provides the same DataBinding support as __RadDropDownList__ but extended, to support the checking of items.
       
 
 ## 
 
-In the below example we will observe a case where we bind __RadCheckedDropDownList__ to a collection of items. __RadCheckedDropDownList__
-        has to be able to update its state properly when the relevant property in our model changes.
+In the below example we will observe a case where we bind __RadCheckedDropDownList__ to a collection of items. __RadCheckedDropDownList__ has to be able to update its state properly when the relevant property in our model changes.
        
 
 First, our model. It must implement the __INotifyPropertyChanged__ interface, so __RadCheckedDropDownList__ can get notifications.
-        #_[C#] Model_
 
-	
-
-
+#### Model 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\DataBinding1.cs region=Model}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\DataBinding1.vb region=Model}} 
@@ -114,16 +108,10 @@ First, our model. It must implement the __INotifyPropertyChanged__ interface, so
 
 {{endregion}} 
 
+ 
+Now drag a __RadCheckedDropDownList__ to the form and a __RadButton__. The button will be used to check a random item in our data source. In order to bind __RadCheckedDropDownList__ we must assign it a __BindingList__ filled with items and set its *Checked*, *Dsplay* and *Value* members:
 
-
-
-Now drag a __RadCheckedDropDownList__ to the form and a __RadButton__. The button will be used to check a random item in our data source. In order to bind
-          __RadCheckedDropDownList__ we must assign it a __BindingList__ filled with items and set its *Checked*, *Dsplay* and *Value* members:
-        #_[C#] Model_
-
-	
-
-
+#### Model 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\DataBinding1.cs region=DataAndBinding}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\DataBinding1.vb region=DataAndBinding}} 

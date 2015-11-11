@@ -9,21 +9,14 @@ position: 0
 ---
 
 # Add non-existing Items
-
-
-
+ 
 There are cases where the item which your user is typing is not in your current list of items. In this case you can manually add it.
 
 ## 
 
-For this purpose __RadCheckedDropDownList__ has the __TokenValidating__ event. It gives you information whether the token being
-          validated is valid and its text. You can use this to check whether the item is already present in  the items of the __RadCheckedDropDownList__
-          and make the token valid:
-        #_[C#] Subscibe for TokenValidating_
+For this purpose __RadCheckedDropDownList__ has the __TokenValidating__ event. It gives you information whether the token being validated is valid and its text. You can use this to check whether the item is already present in  the items of the __RadCheckedDropDownList__ and make the token valid:
 
-	
-
-
+#### Subscibe for TokenValidating 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.cs region=Subscribe}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.vb region=Subscribe}} 
@@ -39,11 +32,7 @@ For this purpose __RadCheckedDropDownList__ has the __TokenValidating__ event. I
 {{endregion}} 
 
 
-#_[C#] Add non-existing items_
-
-	
-
-
+#### Add non-existing items 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.cs region=Handler}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.vb region=Handler}} 
