@@ -43,23 +43,22 @@ void radChart1_DataBound(object sender, EventArgs e)
 ````
 ````VB.NET
 Private radChart1 As New RadChart()
-    Public Sub New()
-        Me.Controls.Add(radChart1)
-        InitializeComponent()
-        ' assign the data source
-        AddHandler radChart1.DataBound, AddressOf radChart1_DataBound
-        radChart1.DataSource = "..\..\Chart\ChartXML.xml"
-    End Sub
-
-    Private Sub radChart1_DataBound(ByVal sender As Object, ByVal e As EventArgs)
-        radChart1.Series(0).DataYColumn = "QuantityInStock"
-        radChart1.PlotArea.XAxis.DataLabelsColumn = "Name"
-        ' assign appearance related properties
-        radChart1.PlotArea.XAxis.Appearance.LabelAppearance.RotationAngle = 300
-        radChart1.PlotArea.XAxis.Appearance.TextAppearance.TextProperties.Font = New System.Drawing.Font("Verdana", 6, System.Drawing.FontStyle.Bold)
-        radChart1.PlotArea.XAxis.Appearance.TextAppearance.TextProperties.Color = System.Drawing.Color.BlueViolet
-        radChart1.PlotArea.Appearance.Dimensions.Margins.Bottom = Telerik.Charting.Styles.Unit.Percentage(20)
-    End Sub
+Public Sub New()
+    Me.Controls.Add(radChart1)
+    InitializeComponent()
+    ' assign the data source
+    AddHandler radChart1.DataBound, AddressOf radChart1_DataBound
+    radChart1.DataSource = "..\..\Chart\ChartXML.xml"
+End Sub
+Private Sub radChart1_DataBound(ByVal sender As Object, ByVal e As EventArgs)
+    radChart1.Series(0).DataYColumn = "QuantityInStock"
+    radChart1.PlotArea.XAxis.DataLabelsColumn = "Name"
+    ' assign appearance related properties
+    radChart1.PlotArea.XAxis.Appearance.LabelAppearance.RotationAngle = 300
+    radChart1.PlotArea.XAxis.Appearance.TextAppearance.TextProperties.Font = New System.Drawing.Font("Verdana", 6, System.Drawing.FontStyle.Bold)
+    radChart1.PlotArea.XAxis.Appearance.TextAppearance.TextProperties.Color = System.Drawing.Color.BlueViolet
+    radChart1.PlotArea.Appearance.Dimensions.Margins.Bottom = Telerik.Charting.Styles.Unit.Percentage(20)
+End Sub
 
 ````
 
