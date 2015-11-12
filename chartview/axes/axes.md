@@ -74,53 +74,50 @@ The following example demonstrates how some of the above properties are set:
 {{source=..\SamplesVB\ChartView\Axes\AxisForm.vb region=axis}} 
 
 ````C#
-            BarSeries series = new BarSeries();
-            series.DataPoints.Add(new CategoricalDataPoint(10, "First"));
-            series.DataPoints.Add(new CategoricalDataPoint(30, "Second"));
-            series.DataPoints.Add(new CategoricalDataPoint(22, "Third"));
-            series.DataPoints.Add(new CategoricalDataPoint(15, "Fourth"));
-            series.DataPoints.Add(new CategoricalDataPoint(40, "Fifth"));
-            series.DataPoints.Add(new CategoricalDataPoint(80, "Sixth"));
-            this.radChartView1.Series.Add(series);
+BarSeries series = new BarSeries();
+series.DataPoints.Add(new CategoricalDataPoint(10, "First"));
+series.DataPoints.Add(new CategoricalDataPoint(30, "Second"));
+series.DataPoints.Add(new CategoricalDataPoint(22, "Third"));
+series.DataPoints.Add(new CategoricalDataPoint(15, "Fourth"));
+series.DataPoints.Add(new CategoricalDataPoint(40, "Fifth"));
+series.DataPoints.Add(new CategoricalDataPoint(80, "Sixth"));
+this.radChartView1.Series.Add(series);
+CategoricalAxis categoricalAxis = radChartView1.Axes[0] as CategoricalAxis;
+categoricalAxis.PlotMode = AxisPlotMode.OnTicksPadded;
+categoricalAxis.LabelFitMode = AxisLabelFitMode.Rotate;
+categoricalAxis.LabelRotationAngle = 310;
+LinearAxis verticalAxis = radChartView1.Axes[1] as LinearAxis;
+verticalAxis.ForeColor = Color.Green;
+verticalAxis.BorderColor = Color.DarkOrange;
+verticalAxis.MajorStep = 10;
+verticalAxis.Maximum = 100;
+verticalAxis.Minimum = 0;
+verticalAxis.LabelInterval = 2;
+verticalAxis.LabelFormat = "{0:c}";
 
-            CategoricalAxis categoricalAxis = radChartView1.Axes[0] as CategoricalAxis;
-            categoricalAxis.PlotMode = AxisPlotMode.OnTicksPadded;
-            categoricalAxis.LabelFitMode = AxisLabelFitMode.Rotate;
-            categoricalAxis.LabelRotationAngle = 310;
-
-            LinearAxis verticalAxis = radChartView1.Axes[1] as LinearAxis;
-            verticalAxis.ForeColor = Color.Green;
-            verticalAxis.BorderColor = Color.DarkOrange;
-            verticalAxis.MajorStep = 10;
-            verticalAxis.Maximum = 100;
-            verticalAxis.Minimum = 0;
-            verticalAxis.LabelInterval = 2;
-            verticalAxis.LabelFormat = "{0:c}";
 ````
 ````VB.NET
-        Dim series As New BarSeries()
-        series.DataPoints.Add(New CategoricalDataPoint(10, "First"))
-        series.DataPoints.Add(New CategoricalDataPoint(30, "Second"))
-        series.DataPoints.Add(New CategoricalDataPoint(22, "Third"))
-        series.DataPoints.Add(New CategoricalDataPoint(15, "Fourth"))
-        series.DataPoints.Add(New CategoricalDataPoint(40, "Fifth"))
-        series.DataPoints.Add(New CategoricalDataPoint(80, "Sixth"))
-        Me.RadChartView1.Series.Add(series)
+Dim series As New BarSeries()
+series.DataPoints.Add(New CategoricalDataPoint(10, "First"))
+series.DataPoints.Add(New CategoricalDataPoint(30, "Second"))
+series.DataPoints.Add(New CategoricalDataPoint(22, "Third"))
+series.DataPoints.Add(New CategoricalDataPoint(15, "Fourth"))
+series.DataPoints.Add(New CategoricalDataPoint(40, "Fifth"))
+series.DataPoints.Add(New CategoricalDataPoint(80, "Sixth"))
+Me.RadChartView1.Series.Add(series)
+Dim categoricalAxis As CategoricalAxis = TryCast(RadChartView1.Axes(0), CategoricalAxis)
+categoricalAxis.PlotMode = AxisPlotMode.OnTicksPadded
+categoricalAxis.LabelFitMode = AxisLabelFitMode.Rotate
+categoricalAxis.LabelRotationAngle = 310
+Dim verticalAxis As LinearAxis = TryCast(RadChartView1.Axes(1), LinearAxis)
+verticalAxis.ForeColor = Color.Green
+verticalAxis.BorderColor = Color.DarkOrange
+verticalAxis.MajorStep = 10
+verticalAxis.Maximum = 100
+verticalAxis.Minimum = 0
+verticalAxis.LabelInterval = 2
+verticalAxis.LabelFormat = "{0:c}"
 
-        Dim categoricalAxis As CategoricalAxis = TryCast(RadChartView1.Axes(0), CategoricalAxis)
-        categoricalAxis.PlotMode = AxisPlotMode.OnTicksPadded
-        categoricalAxis.LabelFitMode = AxisLabelFitMode.Rotate
-        categoricalAxis.LabelRotationAngle = 310
-
-        Dim verticalAxis As LinearAxis = TryCast(RadChartView1.Axes(1), LinearAxis)
-        verticalAxis.ForeColor = Color.Green
-        verticalAxis.BorderColor = Color.DarkOrange
-        verticalAxis.MajorStep = 10
-        verticalAxis.Maximum = 100
-        verticalAxis.Minimum = 0
-        verticalAxis.LabelInterval = 2
-        verticalAxis.LabelFormat = "{0:c}"
-        '
 ````
 
 {{endregion}} 

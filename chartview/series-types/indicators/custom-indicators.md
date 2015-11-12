@@ -34,18 +34,17 @@ Now that we have all variables from the formula above, let us start constructing
 {{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsDIForm.vb region=DIIndicator}} 
 
 ````C#
-    public class DisparityIndexIndicator: ExponentialMovingAverageIndicator
+public class DisparityIndexIndicator: ExponentialMovingAverageIndicator
+{
+    public override double GetProcessedValue(int currentIndex)
     {
-        public override double GetProcessedValue(int currentIndex)
-        {
-            double close = (this.DataPoints[currentIndex] as IndicatorValueDataPoint).BaseValue;
-            double ema = base.GetProcessedValue(currentIndex);
-
-            double result = ((close - ema) / ema) * 100;
-
-            return result;
-        }
+        double close = (this.DataPoints[currentIndex] as IndicatorValueDataPoint).BaseValue;
+        double ema = base.GetProcessedValue(currentIndex);
+        double result = ((close - ema) / ema) * 100;
+        return result;
     }
+}
+
 ````
 ````VB.NET
 Public Class DisparityIndexIndicator
@@ -53,12 +52,11 @@ Public Class DisparityIndexIndicator
     Public Overrides Function GetProcessedValue(currentIndex As Integer) As Double
         Dim close As Double = TryCast(Me.DataPoints(currentIndex), IndicatorValueDataPoint).BaseValue
         Dim ema As Double = MyBase.GetProcessedValue(currentIndex)
-
         Dim result As Double = ((close - ema) / ema) * 100
         Return result
     End Function
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -70,57 +68,64 @@ Now let’s a new __DI__ indicator instance and add it to our __RadChartView__. 
 
 {{source=..\SamplesCS\ChartView\Series\Indicators\CustomIndicatorsDIForm.cs region=CustomObject}} 
 {{source=..\SamplesCS\ChartView\Series\Indicators\CustomIndicatorsDIForm.cs region=CreateData}} 
-{{source=..\SamplesCS\ChartView\Series\Indicators\CustomIndicatorsDIForm.cs region=SetupDIIndicator}} 
-{{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsDIForm.vb region=CustomObject}} 
-
 ````C#
-            DisparityIndexIndicator indicator = new DisparityIndexIndicator();
-            indicator.ValueMember = "Close";
-            indicator.CategoryMember = "Date";
-            indicator.DataSource = dataSource;
-            indicator.Period = 5;
-            indicator.BorderColor = Color.Red;
-            indicator.PointSize = SizeF.Empty;
-            this.radChartView1.Series.Add(indicator);
+public class ClosingPriceObject : INotifyPropertyChanged
+{
+    private double close;
+    private DateTime date;
+    public ClosingPriceObject(double close, DateTime date)
+    {
+        this.close = close;
+        this.date = date;
+    }
+    public double Close
+    {
+        get
+        {
+            return this.close;
+        }
+        set
+        {
+            this.close = value;
+            OnNotifyPropertyChanged("Close");
+        }
+    }
+    public DateTime Date
+    {
+        get
+        {
+            return this.date;
+        }
+        set
+        {
+            this.date = value;
+            OnNotifyPropertyChanged("Date");
+        }
+    }
+    public event PropertyChangedEventHandler PropertyChanged;
+    public void OnNotifyPropertyChanged(string propertyName)
+    {
+        PropertyChangedEventHandler handler = PropertyChanged;
+        if (handler != null)
+        {
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
+}
+
 ````
 ````VB.NET
-Public Class ClosingPriceObject
-    Implements INotifyPropertyChanged
+BindingList<ClosingPriceObject> dataSource = new BindingList<ClosingPriceObject>();
+dataSource.Add(new ClosingPriceObject(4, DateTime.Now));
+dataSource.Add(new ClosingPriceObject(7, DateTime.Now.AddDays(1)));
+dataSource.Add(new ClosingPriceObject(4, DateTime.Now.AddDays(2)));
+dataSource.Add(new ClosingPriceObject(2, DateTime.Now.AddDays(3)));
+dataSource.Add(new ClosingPriceObject(6, DateTime.Now.AddDays(4)));
+dataSource.Add(new ClosingPriceObject(7, DateTime.Now.AddDays(5)));
+dataSource.Add(new ClosingPriceObject(4, DateTime.Now.AddDays(6)));
+dataSource.Add(new ClosingPriceObject(3, DateTime.Now.AddDays(7)));
+dataSource.Add(new ClosingPriceObject(7, DateTime.Now.AddDays(8)));
 
-    Private m_close As Double
-    Private m_date As DateTime
-
-    Public Property Close() As Double
-        Get
-            Return Me.m_close
-        End Get
-        Set(value As Double)
-            Me.m_close = value
-            OnNotifyPropertyChanged("Close")
-        End Set
-    End Property
-    Public Property [Date]() As DateTime
-        Get
-            Return Me.m_date
-        End Get
-        Set(value As DateTime)
-            Me.m_date = value
-            OnNotifyPropertyChanged("Date")
-        End Set
-    End Property
-
-    Public Sub New(close As Double, [date] As DateTime)
-        Me.Close = close
-        Me.[Date] = [date]
-    End Sub
-
-    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
-
-    Public Sub OnNotifyPropertyChanged(propertyName As String)
-        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-    End Sub
-End Class
-'
 ````
 
 {{endregion}}  
@@ -145,42 +150,29 @@ Because __Moving Average Envelopes__ requires a property that sets the bands per
 
 {{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsDIForm.vb region=SetupDIIndicator}} 
 
-{{source=..\SamplesCS\ChartView\Series\Indicators\CustomIndicatorsMAForm.cs region=MAEBase}} 
-{{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsMAForm.vb region=MAEBase}} 
-
 ````C#
-    public class MovingAverageEnvelopeBase : MovingAverageIndicator
-    {
-        public static readonly RadProperty PercentProperty = RadProperty.Register("Percent", typeof(double), typeof(MovingAverageEnvelopeBase), new RadPropertyMetadata(0d));
+Dim dataSource As New BindingList(Of ClosingPriceObject)()
+dataSource.Add(New ClosingPriceObject(4, DateTime.Now))
+dataSource.Add(New ClosingPriceObject(7, DateTime.Now.AddDays(1)))
+dataSource.Add(New ClosingPriceObject(4, DateTime.Now.AddDays(2)))
+dataSource.Add(New ClosingPriceObject(2, DateTime.Now.AddDays(3)))
+dataSource.Add(New ClosingPriceObject(6, DateTime.Now.AddDays(4)))
+dataSource.Add(New ClosingPriceObject(7, DateTime.Now.AddDays(5)))
+dataSource.Add(New ClosingPriceObject(4, DateTime.Now.AddDays(6)))
+dataSource.Add(New ClosingPriceObject(3, DateTime.Now.AddDays(7)))
+dataSource.Add(New ClosingPriceObject(7, DateTime.Now.AddDays(8)))
 
-        public double Percent
-        {
-            get
-            {
-                return (double)GetValue(PercentProperty);
-            }
-            set
-            {
-                SetValue(PercentProperty, value);
-            }
-        }
-    }
 ````
 ````VB.NET
-Public Class MovingAverageEnvelopeBase
-    Inherits MovingAverageIndicator
-    Public Shared ReadOnly PercentProperty As RadProperty = RadProperty.Register("Percent", GetType(Double), GetType(MovingAverageEnvelopeBase), New RadPropertyMetadata(0.0))
+Dim indicator As New DisparityIndexIndicator
+indicator.Period = 5
+indicator.ValueMember = "Close"
+indicator.CategoryMember = "Date"
+indicator.DataSource = dataSource
+indicator.BorderColor = Color.Red
+indicator.PointSize = SizeF.Empty
+Me.RadChartView1.Series.Add(indicator)
 
-    Public Property Percent() As Double
-        Get
-            Return CDbl(GetValue(PercentProperty))
-        End Get
-        Set(value As Double)
-            SetValue(PercentProperty, value)
-        End Set
-    End Property
-End Class
-'
 ````
 
 {{endregion}}  
@@ -191,55 +183,46 @@ Let’s now create two classes: __MovingAverageEnvelopeChild__, containing the l
 {{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsMAForm.vb region=MAEChild}} 
 
 ````C#
-    public class MovingAverageEnvelopeChild : MovingAverageEnvelopeBase, IChildIndicator
+public class MovingAverageEnvelopeChild : MovingAverageEnvelopeBase, IChildIndicator
+{
+    MovingAverageEnvelopeIndicator owner;
+    public MovingAverageEnvelopeChild(MovingAverageEnvelopeIndicator owner)
     {
-        MovingAverageEnvelopeIndicator owner;
-
-        public MovingAverageEnvelopeChild(MovingAverageEnvelopeIndicator owner)
-        {
-            this.owner = owner;
-        }
-
-        public IndicatorBase OwnerIndicator
-        {
-            get { return this.owner; }
-        }
-
-        public override double GetProcessedValue(int currentIndex)
-        {
-            double movingAverage = base.GetProcessedValue(currentIndex);
-
-            double result = movingAverage - (movingAverage * this.Percent);
-            return result;
-        }
+        this.owner = owner;
     }
+    public IndicatorBase OwnerIndicator
+    {
+        get { return this.owner; }
+    }
+    public override double GetProcessedValue(int currentIndex)
+    {
+        double movingAverage = base.GetProcessedValue(currentIndex);
+        double result = movingAverage - (movingAverage * this.Percent);
+        return result;
+    }
+}
+
 ````
 ````VB.NET
 Public Class MovingAverageEnvelopeChild
     Inherits MovingAverageEnvelopeBase
     Implements IChildIndicator
-
     Private owner As MovingAverageEnvelopeIndicator
-
     Public Sub New(owner As MovingAverageEnvelopeIndicator)
         Me.owner = owner
     End Sub
-
     Public ReadOnly Property OwnerIndicator() As IndicatorBase Implements IChildIndicator.OwnerIndicator
         Get
             Return Me.owner
         End Get
     End Property
-
     Public Overrides Function GetProcessedValue(currentIndex As Integer) As Double
         Dim movingAverage As Double = MyBase.GetProcessedValue(currentIndex)
-
         Dim result As Double = movingAverage - (movingAverage * Me.Percent)
         Return result
     End Function
-
 End Class
-'
+
 ````
 
 {{endregion}}  
@@ -251,100 +234,86 @@ The __MovingAverageEnvelopeIndicator__ class requires a bit more steps that the 
 {{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsMAForm.vb region=MAEIndicator}} 
 
 ````C#
-    public class MovingAverageEnvelopeIndicator : MovingAverageEnvelopeBase, IParentIndicator
+public class MovingAverageEnvelopeIndicator : MovingAverageEnvelopeBase, IParentIndicator
+{
+    MovingAverageEnvelopeChild childIndicator;
+    public MovingAverageEnvelopeIndicator()
     {
-        MovingAverageEnvelopeChild childIndicator;
-
-        public MovingAverageEnvelopeIndicator()
+        childIndicator = new MovingAverageEnvelopeChild(this);
+    }
+    public IndicatorBase ChildIndicator
+    {
+        get { return this.childIndicator; }
+    }
+    public override double GetProcessedValue(int currentIndex)
+    {
+        double movingAverage = base.GetProcessedValue(currentIndex);
+        double result = movingAverage + (movingAverage * this.Percent);
+        return result;
+    }
+    protected override void OnAttached(UIChartElement parent)
+    {
+        base.OnAttached(parent);
+        this.ChildIndicator.Attach(parent);
+    }
+    protected override void OnDettached()
+    {
+        base.OnDettached();
+        this.ChildIndicator.Dettach();
+    }
+    protected override void OnNotifyPropertyChanged(System.ComponentModel.PropertyChangedEventArgs e)
+    {
+        base.OnNotifyPropertyChanged(e);
+        if (e.PropertyName == "DataSource")
         {
-            childIndicator = new MovingAverageEnvelopeChild(this);
+            this.childIndicator.DataSource = this.DataSource;
         }
-
-        public IndicatorBase ChildIndicator
+        if (e.PropertyName == "CategoryMember")
         {
-            get { return this.childIndicator; }
+            this.childIndicator.CategoryMember = this.CategoryMember;
         }
-
-        public override double GetProcessedValue(int currentIndex)
+        if (e.PropertyName == "ValueMember")
         {
-            double movingAverage = base.GetProcessedValue(currentIndex);
-
-            double result = movingAverage + (movingAverage * this.Percent);
-            return result;
+            this.childIndicator.ValueMember = this.ValueMember;
         }
-
-        protected override void OnAttached(UIChartElement parent)
+        if (e.PropertyName == "Period")
         {
-            base.OnAttached(parent);
-            this.ChildIndicator.Attach(parent);
+            this.childIndicator.Period = this.Period;
         }
-
-        protected override void OnDettached()
+        if (e.PropertyName == "Percent")
         {
-            base.OnDettached();
-            this.ChildIndicator.Dettach();
-        }
-
-        protected override void OnNotifyPropertyChanged(System.ComponentModel.PropertyChangedEventArgs e)
-        {
-            base.OnNotifyPropertyChanged(e);
-            if (e.PropertyName == "DataSource")
-            {
-                this.childIndicator.DataSource = this.DataSource;
-            }
-            if (e.PropertyName == "CategoryMember")
-            {
-                this.childIndicator.CategoryMember = this.CategoryMember;
-            }
-            if (e.PropertyName == "ValueMember")
-            {
-                this.childIndicator.ValueMember = this.ValueMember;
-            }
-            if (e.PropertyName == "Period")
-            {
-                this.childIndicator.Period = this.Period;
-            }
-            if (e.PropertyName == "Percent")
-            {
-                this.childIndicator.Percent = this.Percent;
-            }
+            this.childIndicator.Percent = this.Percent;
         }
     }
+}
+
 ````
 ````VB.NET
 Public Class MovingAverageEnvelopeIndicator
     Inherits MovingAverageEnvelopeBase
     Implements IParentIndicator
-
     Private m_childIndicator As MovingAverageEnvelopeChild
-
     Public Sub New()
         m_childIndicator = New MovingAverageEnvelopeChild(Me)
     End Sub
-
     Public ReadOnly Property ChildIndicator() As IndicatorBase Implements IParentIndicator.ChildIndicator
         Get
             Return Me.m_childIndicator
         End Get
     End Property
-
     Public Overrides Function GetProcessedValue(currentIndex As Integer) As Double
         Dim movingAverage As Double = MyBase.GetProcessedValue(currentIndex)
-
         Dim result As Double = movingAverage + (movingAverage * Me.Percent)
         Return result
     End Function
-
     Protected Overrides Sub OnAttached(parent As UIChartElement)
         MyBase.OnAttached(parent)
         Me.ChildIndicator.Attach(parent)
     End Sub
-
     Protected Overrides Sub OnDettached()
         MyBase.OnDettached()
         Me.ChildIndicator.Dettach()
     End Sub
-
     Protected Overrides Sub OnNotifyPropertyChanged(e As System.ComponentModel.PropertyChangedEventArgs)
         MyBase.OnNotifyPropertyChanged(e)
         If e.PropertyName = "DataSource" Then
@@ -365,7 +334,6 @@ Public Class MovingAverageEnvelopeIndicator
     End Sub
 End Class
 
-'
 ````
 
 {{endregion}}  
@@ -374,110 +342,140 @@ Now that we have the __MovingAverageEnvelopeIndicator__ ready, let us set up som
 
 {{source=..\SamplesCS\ChartView\Series\Indicators\IndicatorsOverViewForm.cs region=CustomObject}} 
 {{source=..\SamplesCS\ChartView\Series\Indicators\CustomIndicatorsMAForm.cs region=CreateDataAndSetupIndicator}} 
-{{source=..\SamplesVB\ChartView\Series\Indicators\IndicatorsOverViewForm.vb region=CustomObject}} 
-
-{{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsMAForm.vb region=CreateDataAndSetupIndicator}} 
-
 ````C#
-            BindingList<OhlcObject> dataSource = new BindingList<OhlcObject>();
-            dataSource.Add(new OhlcObject(17, 18, 12, 14, DateTime.Now));
-            dataSource.Add(new OhlcObject(16, 17, 11, 17, DateTime.Now.AddDays(1)));
-            dataSource.Add(new OhlcObject(18, 19, 12, 14, DateTime.Now.AddDays(2)));
-            dataSource.Add(new OhlcObject(15, 15, 12, 12, DateTime.Now.AddDays(3)));
-            dataSource.Add(new OhlcObject(15, 18, 15, 16, DateTime.Now.AddDays(4)));
-            dataSource.Add(new OhlcObject(15, 17, 11, 17, DateTime.Now.AddDays(5)));
-            dataSource.Add(new OhlcObject(12, 15, 12, 14, DateTime.Now.AddDays(6)));
-            dataSource.Add(new OhlcObject(15, 15, 12, 13, DateTime.Now.AddDays(7)));
-            dataSource.Add(new OhlcObject(15, 18, 15, 17, DateTime.Now.AddDays(8)));
-            dataSource.Add(new OhlcObject(15, 17, 11, 17, DateTime.Now.AddDays(9)));
-            dataSource.Add(new OhlcObject(12, 15, 12, 14, DateTime.Now.AddDays(10)));
-            dataSource.Add(new OhlcObject(17, 18, 12, 14, DateTime.Now.AddDays(11)));
-            dataSource.Add(new OhlcObject(15, 18, 15, 17, DateTime.Now.AddDays(12)));
-            dataSource.Add(new OhlcObject(15, 18, 15, 16, DateTime.Now.AddDays(13)));
-            dataSource.Add(new OhlcObject(17, 18, 12, 14, DateTime.Now.AddDays(14)));
+public class OhlcObject : INotifyPropertyChanged
+{
+    private double open;
+    private double high;
+    private double low;
+    private double close;
+    private DateTime date;
+    public OhlcObject(double open, double high, double low, double close, DateTime date)
+    {
+        this.Open = open;
+        this.High = high;
+        this.Low = low;
+        this.Close = close;
+        this.Date = date;
+    }
+    public double Open
+    {
+        get
+        {
+            return this.open;
+        }
+        set
+        {
+            this.open = value;
+            OnNotifyPropertyChanged("Open");
+        }
+    }
+    public double High
+    {
+        get
+        {
+            return this.high;
+        }
+        set
+        {
+            this.high = value;
+            OnNotifyPropertyChanged("High");
+        }
+    }
+    public double Low
+    {
+        get
+        {
+            return this.low;
+        }
+        set
+        {
+            this.low = value;
+            OnNotifyPropertyChanged("Low");
+        }
+    }
+    public double Close
+    {
+        get
+        {
+            return this.close;
+        }
+        set
+        {
+            this.close = value;
+            OnNotifyPropertyChanged("Close");
+        }
+    }
+    public DateTime Date
+    {
+        get
+        {
+            return this.date;
+        }
+        set
+        {
+            this.date = value;
+            OnNotifyPropertyChanged("Date");
+        }
+    }
+    public event PropertyChangedEventHandler PropertyChanged;
+    public void OnNotifyPropertyChanged(string propertyName)
+    {
+        PropertyChangedEventHandler handler = PropertyChanged;
+        if (handler != null)
+        {
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
+}
 
-            MovingAverageIndicator maIndicator = new MovingAverageIndicator();
-            maIndicator.ValueMember = "Close";
-            maIndicator.CategoryMember = "Date";
-            maIndicator.DataSource = dataSource;
-            maIndicator.Period = 5;
-            maIndicator.BorderColor = Color.Red;
-            maIndicator.PointSize = SizeF.Empty;
-            this.radChartView1.Series.Add(maIndicator);
-
-            MovingAverageEnvelopeIndicator envelopeIndicator = new MovingAverageEnvelopeIndicator();
-            envelopeIndicator.ValueMember = "Close";
-            envelopeIndicator.CategoryMember = "Date";
-            envelopeIndicator.DataSource = dataSource;
-            envelopeIndicator.Period = 5;
-            envelopeIndicator.BorderColor = Color.Green;
-            envelopeIndicator.ChildIndicator.BorderColor = Color.Black;
-            envelopeIndicator.PointSize = SizeF.Empty;
-            envelopeIndicator.Percent = 0.25;
-            this.radChartView1.Series.Add(envelopeIndicator);
-
-            CandlestickSeries series = new CandlestickSeries();
-            series.OpenValueMember = "Open";
-            series.CloseValueMember = "Close";
-            series.HighValueMember = "High";
-            series.LowValueMember = "Low";
-            series.CategoryMember = "Date";
-            series.DataSource = dataSource;
-            this.radChartView1.Series.Add(series);
-
-            this.radChartView1.Axes[0].LabelFormat = "{0:dd}";
-            (this.radChartView1.Axes[1] as LinearAxis).Minimum = 5;
 ````
 ````VB.NET
-        Dim dataSource As New BindingList(Of OhlcObject)()
-        dataSource.Add(New OhlcObject(17, 18, 12, 14, DateTime.Now))
-        dataSource.Add(New OhlcObject(16, 17, 11, 17, DateTime.Now.AddDays(1)))
-        dataSource.Add(New OhlcObject(18, 19, 12, 14, DateTime.Now.AddDays(2)))
-        dataSource.Add(New OhlcObject(15, 15, 12, 12, DateTime.Now.AddDays(3)))
-        dataSource.Add(New OhlcObject(15, 18, 15, 16, DateTime.Now.AddDays(4)))
-        dataSource.Add(New OhlcObject(15, 17, 11, 17, DateTime.Now.AddDays(5)))
-        dataSource.Add(New OhlcObject(12, 15, 12, 14, DateTime.Now.AddDays(6)))
-        dataSource.Add(New OhlcObject(15, 15, 12, 13, DateTime.Now.AddDays(7)))
-        dataSource.Add(New OhlcObject(15, 18, 15, 17, DateTime.Now.AddDays(8)))
-        dataSource.Add(New OhlcObject(15, 17, 11, 17, DateTime.Now.AddDays(9)))
-        dataSource.Add(New OhlcObject(12, 15, 12, 14, DateTime.Now.AddDays(10)))
-        dataSource.Add(New OhlcObject(17, 18, 12, 14, DateTime.Now.AddDays(11)))
-        dataSource.Add(New OhlcObject(15, 18, 15, 17, DateTime.Now.AddDays(12)))
-        dataSource.Add(New OhlcObject(15, 18, 15, 16, DateTime.Now.AddDays(13)))
-        dataSource.Add(New OhlcObject(17, 18, 12, 14, DateTime.Now.AddDays(14)))
+BindingList<OhlcObject> dataSource = new BindingList<OhlcObject>();
+dataSource.Add(new OhlcObject(17, 18, 12, 14, DateTime.Now));
+dataSource.Add(new OhlcObject(16, 17, 11, 17, DateTime.Now.AddDays(1)));
+dataSource.Add(new OhlcObject(18, 19, 12, 14, DateTime.Now.AddDays(2)));
+dataSource.Add(new OhlcObject(15, 15, 12, 12, DateTime.Now.AddDays(3)));
+dataSource.Add(new OhlcObject(15, 18, 15, 16, DateTime.Now.AddDays(4)));
+dataSource.Add(new OhlcObject(15, 17, 11, 17, DateTime.Now.AddDays(5)));
+dataSource.Add(new OhlcObject(12, 15, 12, 14, DateTime.Now.AddDays(6)));
+dataSource.Add(new OhlcObject(15, 15, 12, 13, DateTime.Now.AddDays(7)));
+dataSource.Add(new OhlcObject(15, 18, 15, 17, DateTime.Now.AddDays(8)));
+dataSource.Add(new OhlcObject(15, 17, 11, 17, DateTime.Now.AddDays(9)));
+dataSource.Add(new OhlcObject(12, 15, 12, 14, DateTime.Now.AddDays(10)));
+dataSource.Add(new OhlcObject(17, 18, 12, 14, DateTime.Now.AddDays(11)));
+dataSource.Add(new OhlcObject(15, 18, 15, 17, DateTime.Now.AddDays(12)));
+dataSource.Add(new OhlcObject(15, 18, 15, 16, DateTime.Now.AddDays(13)));
+dataSource.Add(new OhlcObject(17, 18, 12, 14, DateTime.Now.AddDays(14)));
+MovingAverageIndicator maIndicator = new MovingAverageIndicator();
+maIndicator.ValueMember = "Close";
+maIndicator.CategoryMember = "Date";
+maIndicator.DataSource = dataSource;
+maIndicator.Period = 5;
+maIndicator.BorderColor = Color.Red;
+maIndicator.PointSize = SizeF.Empty;
+this.radChartView1.Series.Add(maIndicator);
+MovingAverageEnvelopeIndicator envelopeIndicator = new MovingAverageEnvelopeIndicator();
+envelopeIndicator.ValueMember = "Close";
+envelopeIndicator.CategoryMember = "Date";
+envelopeIndicator.DataSource = dataSource;
+envelopeIndicator.Period = 5;
+envelopeIndicator.BorderColor = Color.Green;
+envelopeIndicator.ChildIndicator.BorderColor = Color.Black;
+envelopeIndicator.PointSize = SizeF.Empty;
+envelopeIndicator.Percent = 0.25;
+this.radChartView1.Series.Add(envelopeIndicator);
+CandlestickSeries series = new CandlestickSeries();
+series.OpenValueMember = "Open";
+series.CloseValueMember = "Close";
+series.HighValueMember = "High";
+series.LowValueMember = "Low";
+series.CategoryMember = "Date";
+series.DataSource = dataSource;
+this.radChartView1.Series.Add(series);
+this.radChartView1.Axes[0].LabelFormat = "{0:dd}";
+(this.radChartView1.Axes[1] as LinearAxis).Minimum = 5;
 
-        Dim maIndicator As New MovingAverageIndicator()
-        maIndicator.ValueMember = "Close"
-        maIndicator.CategoryMember = "Date"
-        maIndicator.DataSource = dataSource
-        maIndicator.Period = 5
-        maIndicator.BorderColor = Color.Red
-        maIndicator.PointSize = SizeF.Empty
-        Me.RadChartView1.Series.Add(maIndicator)
-
-        Dim envelopeIndicator As New MovingAverageEnvelopeIndicator()
-        envelopeIndicator.ValueMember = "Close"
-        envelopeIndicator.CategoryMember = "Date"
-        envelopeIndicator.DataSource = dataSource
-        envelopeIndicator.Period = 5
-        envelopeIndicator.BorderColor = Color.Green
-        envelopeIndicator.ChildIndicator.BorderColor = Color.Black
-        envelopeIndicator.PointSize = SizeF.Empty
-        envelopeIndicator.Percent = 0.25
-        Me.RadChartView1.Series.Add(envelopeIndicator)
-
-        Dim series As New CandlestickSeries()
-        series.OpenValueMember = "Open"
-        series.CloseValueMember = "Close"
-        series.HighValueMember = "High"
-        series.LowValueMember = "Low"
-        series.CategoryMember = "Date"
-        series.DataSource = dataSource
-        Me.RadChartView1.Series.Add(series)
-
-        Me.RadChartView1.Axes(0).LabelFormat = "{0:dd}"
-        TryCast(Me.RadChartView1.Axes(1), LinearAxis).Minimum = 5
-        '
 ````
 
 {{endregion}} 

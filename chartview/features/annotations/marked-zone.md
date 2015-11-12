@@ -42,33 +42,32 @@ In the following example additional styling is applied to the default look of th
 {{source=..\SamplesVB\ChartView\Annotations\MarkedZones.vb region=CartesianMarkedZone}} 
 
 ````C#
+CartesianMarkedZoneAnnotation annotation = new CartesianMarkedZoneAnnotation();
+annotation.HorizontalFrom = 4;
+annotation.HorizontalTo = 9;
+annotation.VerticalFrom = 10;
+annotation.VerticalTo = 35;
+annotation.BackColor = Color.FromArgb(50, 37, 160, 219);
+annotation.BorderDashStyle = DashStyle.Custom;
+annotation.BorderDashPattern = new float[] { 9, 3, 2, 4 };
+annotation.BorderColor = Color.Orange;
+annotation.BorderWidth = 3;
+this.radChartView1.Annotations.Add(annotation);
 
-            CartesianMarkedZoneAnnotation annotation = new CartesianMarkedZoneAnnotation();
-            annotation.HorizontalFrom = 4;
-            annotation.HorizontalTo = 9;
-            annotation.VerticalFrom = 10;
-            annotation.VerticalTo = 35;
-            annotation.BackColor = Color.FromArgb(50, 37, 160, 219);
-            annotation.BorderDashStyle = DashStyle.Custom;
-            annotation.BorderDashPattern = new float[] { 9, 3, 2, 4 };
-            annotation.BorderColor = Color.Orange;
-            annotation.BorderWidth = 3;
-            this.radChartView1.Annotations.Add(annotation);
 ````
 ````VB.NET
+Dim annotation As New CartesianMarkedZoneAnnotation()
+annotation.HorizontalFrom = 4
+annotation.HorizontalTo = 9
+annotation.VerticalFrom = 10
+annotation.VerticalTo = 35
+annotation.BackColor = Color.FromArgb(50, 37, 160, 219)
+annotation.BorderDashStyle = DashStyle.[Custom]
+annotation.BorderDashPattern = New Single() {9, 3, 2, 4}
+annotation.BorderColor = Color.Orange
+annotation.BorderWidth = 3
+Me.radChartView1.Annotations.Add(annotation)
 
-        Dim annotation As New CartesianMarkedZoneAnnotation()
-        annotation.HorizontalFrom = 4
-        annotation.HorizontalTo = 9
-        annotation.VerticalFrom = 10
-        annotation.VerticalTo = 35
-        annotation.BackColor = Color.FromArgb(50, 37, 160, 219)
-        annotation.BorderDashStyle = DashStyle.[Custom]
-        annotation.BorderDashPattern = New Single() {9, 3, 2, 4}
-        annotation.BorderColor = Color.Orange
-        annotation.BorderWidth = 3
-        Me.radChartView1.Annotations.Add(annotation)
-        '
 ````
 
 {{endregion}} 
@@ -91,31 +90,32 @@ Here is the previous example with some of the settings commented
 {{source=..\SamplesVB\ChartView\Annotations\MarkedZones.vb region=CartesianMarkedZone2}} 
 
 ````C#
-            CartesianMarkedZoneAnnotation annotation = new CartesianMarkedZoneAnnotation();
-            annotation.HorizontalFrom = 4;
-            annotation.HorizontalTo = 9;
-            //annotation.VerticalFrom = 10;
-            //annotation.VerticalTo = 35;
-            annotation.BackColor = Color.FromArgb(50, 37, 160, 219);
-            //annotation.BorderDashStyle = DashStyle.Custom;
-            //annotation.BorderDashPattern = new float[] { 9, 3, 2, 4 };
-            annotation.BorderColor = Color.Orange;
-            annotation.BorderWidth = 1;
-            this.radChartView1.Annotations.Add(annotation);
+CartesianMarkedZoneAnnotation annotation = new CartesianMarkedZoneAnnotation();
+annotation.HorizontalFrom = 4;
+annotation.HorizontalTo = 9;
+//annotation.VerticalFrom = 10;
+//annotation.VerticalTo = 35;
+annotation.BackColor = Color.FromArgb(50, 37, 160, 219);
+//annotation.BorderDashStyle = DashStyle.Custom;
+//annotation.BorderDashPattern = new float[] { 9, 3, 2, 4 };
+annotation.BorderColor = Color.Orange;
+annotation.BorderWidth = 1;
+this.radChartView1.Annotations.Add(annotation);
+
 ````
 ````VB.NET
-        Dim annotation As New CartesianMarkedZoneAnnotation()
-        annotation.HorizontalFrom = 4
-        annotation.HorizontalTo = 9
-        'annotation.VerticalFrom = 10;
-        'annotation.VerticalTo = 35;
-        annotation.BackColor = Color.FromArgb(50, 37, 160, 219)
-        'annotation.BorderDashStyle = DashStyle.Custom;
-        'annotation.BorderDashPattern = new float[] { 9, 3, 2, 4 };
-        annotation.BorderColor = Color.Orange
-        annotation.BorderWidth = 1
-        Me.radChartView1.Annotations.Add(annotation)
-        '
+Dim annotation As New CartesianMarkedZoneAnnotation()
+annotation.HorizontalFrom = 4
+annotation.HorizontalTo = 9
+'annotation.VerticalFrom = 10;
+'annotation.VerticalTo = 35;
+annotation.BackColor = Color.FromArgb(50, 37, 160, 219)
+'annotation.BorderDashStyle = DashStyle.Custom;
+'annotation.BorderDashPattern = new float[] { 9, 3, 2, 4 };
+annotation.BorderColor = Color.Orange
+annotation.BorderWidth = 1
+Me.radChartView1.Annotations.Add(annotation)
+
 ````
 
 {{endregion}} 

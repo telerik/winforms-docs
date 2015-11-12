@@ -22,18 +22,18 @@ This article demonstrates how to change the labels styles and text. The series l
 	{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=ShowLabels}} 
 
 	````C#
-     	       foreach (var series in radChartView1.Series)
-        	    {
-            	    series.ShowLabels = true;
-           	 }
-	````
-	````VB.NET
-     	   For Each series In RadChartView1.Series
+foreach (var series in radChartView1.Series)
+{
+    series.ShowLabels = true;
+}
 
-          	  series.ShowLabels = True
-        	Next
-       	 '
-	````
+````
+````VB.NET
+For Each series In RadChartView1.Series
+    series.ShowLabels = True
+Next
+
+````
 
 	{{endregion}} 
  
@@ -44,38 +44,32 @@ This article demonstrates how to change the labels styles and text. The series l
 	{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=LabelFormatting}} 
 
 	````C#
+private Font font1 = new Font("Segoe Script", 12, FontStyle.Regular);
+private void radChartView1_LabelFormatting(object sender, ChartViewLabelFormattingEventArgs e)
+{
+    e.LabelElement.BackColor = ColorTranslator.FromHtml("#005BBc");
+    e.LabelElement.ForeColor = ColorTranslator.FromHtml("#91c930");
+    e.LabelElement.BorderColor = ColorTranslator.FromHtml("#ee8310");
+    e.LabelElement.Font = font1;
+    CategoricalPointElement element = (CategoricalPointElement)e.LabelElement.Parent;
+    CategoricalDataPoint dataPoint = (CategoricalDataPoint)element.DataPoint;
+    e.LabelElement.Text = string.Format("Category: {0}, Value: {1}", dataPoint.Category, dataPoint.Value);
+}
 
-        	private Font font1 = new Font("Segoe Script", 12, FontStyle.Regular);
+````
+````VB.NET
+Private font1 As New Font("Segoe Script", 12, FontStyle.Regular)
+Private Sub radChartView1_LabelFormatting(sender As Object, e As ChartViewLabelFormattingEventArgs)
+    e.LabelElement.BackColor = ColorTranslator.FromHtml("#005BBc")
+    e.LabelElement.ForeColor = ColorTranslator.FromHtml("#91c930")
+    e.LabelElement.BorderColor = ColorTranslator.FromHtml("#ee8310")
+    e.LabelElement.Font = font1
+    Dim element As CategoricalPointElement = DirectCast(e.LabelElement.Parent, CategoricalPointElement)
+    Dim dataPoint As CategoricalDataPoint = DirectCast(element.DataPoint, CategoricalDataPoint)
+    e.LabelElement.Text = String.Format("Category: {0}, " & vbLf & "Value: {1}", dataPoint.Category, dataPoint.Value)
+End Sub
 
-        	private void radChartView1_LabelFormatting(object sender, ChartViewLabelFormattingEventArgs e)
-        	{
-         	   e.LabelElement.BackColor = ColorTranslator.FromHtml("#005BBc");
-         	   e.LabelElement.ForeColor = ColorTranslator.FromHtml("#91c930");
-         	   e.LabelElement.BorderColor = ColorTranslator.FromHtml("#ee8310");
-          	  e.LabelElement.Font = font1;
-
-           	 CategoricalPointElement element = (CategoricalPointElement)e.LabelElement.Parent;
-           	 CategoricalDataPoint dataPoint = (CategoricalDataPoint)element.DataPoint;
-
-           	 e.LabelElement.Text = string.Format("Category: {0}, Value: {1}", dataPoint.Category, dataPoint.Value);
-       		 }
-	````
-	````VB.NET
-    	Private font1 As New Font("Segoe Script", 12, FontStyle.Regular)
-
-    	Private Sub radChartView1_LabelFormatting(sender As Object, e As ChartViewLabelFormattingEventArgs)
-       	 e.LabelElement.BackColor = ColorTranslator.FromHtml("#005BBc")
-       	 e.LabelElement.ForeColor = ColorTranslator.FromHtml("#91c930")
-        	e.LabelElement.BorderColor = ColorTranslator.FromHtml("#ee8310")
-       	 e.LabelElement.Font = font1
-
-        	Dim element As CategoricalPointElement = DirectCast(e.LabelElement.Parent, CategoricalPointElement)
-       	 Dim dataPoint As CategoricalDataPoint = DirectCast(element.DataPoint, CategoricalDataPoint)
-
-       	 e.LabelElement.Text = String.Format("Category: {0}, " & vbLf & "Value: {1}", dataPoint.Category, dataPoint.Value) 
-	End Sub 
-	'
-	````
+````
 
 	{{endregion}} 
  

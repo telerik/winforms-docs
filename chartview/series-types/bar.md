@@ -20,43 +20,42 @@ BarSeries are used to visualize data points as bar blocks where the height of ea
 {{source=..\SamplesVB\ChartView\Series\BarSeriesForm.vb region=bar}} 
 
 ````C#
-            BarSeries barSeries = new BarSeries("Performance", "RepresentativeName");
-            barSeries.Name = "Q1";
-            barSeries.DataPoints.Add(new CategoricalDataPoint(177, "Harley"));
-            barSeries.DataPoints.Add(new CategoricalDataPoint(128, "White"));
-            barSeries.DataPoints.Add(new CategoricalDataPoint(143, "Smith"));
-            barSeries.DataPoints.Add(new CategoricalDataPoint(111, "Jones"));
-            barSeries.DataPoints.Add(new CategoricalDataPoint(118, "Marshall")); 
-            this.radChartView1.Series.Add(barSeries);
+BarSeries barSeries = new BarSeries("Performance", "RepresentativeName");
+barSeries.Name = "Q1";
+barSeries.DataPoints.Add(new CategoricalDataPoint(177, "Harley"));
+barSeries.DataPoints.Add(new CategoricalDataPoint(128, "White"));
+barSeries.DataPoints.Add(new CategoricalDataPoint(143, "Smith"));
+barSeries.DataPoints.Add(new CategoricalDataPoint(111, "Jones"));
+barSeries.DataPoints.Add(new CategoricalDataPoint(118, "Marshall")); 
+this.radChartView1.Series.Add(barSeries);
+BarSeries barSeries2 = new BarSeries("Performance", "RepresentativeName");
+barSeries2.Name = "Q2";
+barSeries2.DataPoints.Add(new CategoricalDataPoint(153, "Harley"));
+barSeries2.DataPoints.Add(new CategoricalDataPoint(141, "White"));
+barSeries2.DataPoints.Add(new CategoricalDataPoint(130, "Smith"));
+barSeries2.DataPoints.Add(new CategoricalDataPoint(88, "Jones"));
+barSeries2.DataPoints.Add(new CategoricalDataPoint(109, "Marshall"));
+this.radChartView1.Series.Add(barSeries2);
 
-            BarSeries barSeries2 = new BarSeries("Performance", "RepresentativeName");
-            barSeries2.Name = "Q2";
-            barSeries2.DataPoints.Add(new CategoricalDataPoint(153, "Harley"));
-            barSeries2.DataPoints.Add(new CategoricalDataPoint(141, "White"));
-            barSeries2.DataPoints.Add(new CategoricalDataPoint(130, "Smith"));
-            barSeries2.DataPoints.Add(new CategoricalDataPoint(88, "Jones"));
-            barSeries2.DataPoints.Add(new CategoricalDataPoint(109, "Marshall"));
-            this.radChartView1.Series.Add(barSeries2);
 ````
 ````VB.NET
-        Dim barSeries As New Telerik.WinControls.UI.BarSeries("Performance", "RepresentativeName")
-        barSeries.Name = "Q1"
-        barSeries.DataPoints.Add(New CategoricalDataPoint(177, "Harley"))
-        barSeries.DataPoints.Add(New CategoricalDataPoint(128, "White"))
-        barSeries.DataPoints.Add(New CategoricalDataPoint(143, "Smith"))
-        barSeries.DataPoints.Add(New CategoricalDataPoint(111, "Jones"))
-        barSeries.DataPoints.Add(New CategoricalDataPoint(118, "Marshall"))
-        Me.RadChartView1.Series.Add(barSeries)
+Dim barSeries As New Telerik.WinControls.UI.BarSeries("Performance", "RepresentativeName")
+barSeries.Name = "Q1"
+barSeries.DataPoints.Add(New CategoricalDataPoint(177, "Harley"))
+barSeries.DataPoints.Add(New CategoricalDataPoint(128, "White"))
+barSeries.DataPoints.Add(New CategoricalDataPoint(143, "Smith"))
+barSeries.DataPoints.Add(New CategoricalDataPoint(111, "Jones"))
+barSeries.DataPoints.Add(New CategoricalDataPoint(118, "Marshall"))
+Me.RadChartView1.Series.Add(barSeries)
+Dim barSeries2 As New Telerik.WinControls.UI.BarSeries("Performance", "RepresentativeName")
+barSeries2.Name = "Q2"
+barSeries2.DataPoints.Add(New CategoricalDataPoint(153, "Harley"))
+barSeries2.DataPoints.Add(New CategoricalDataPoint(141, "White"))
+barSeries2.DataPoints.Add(New CategoricalDataPoint(130, "Smith"))
+barSeries2.DataPoints.Add(New CategoricalDataPoint(88, "Jones"))
+barSeries2.DataPoints.Add(New CategoricalDataPoint(109, "Marshall"))
+Me.RadChartView1.Series.Add(barSeries2)
 
-        Dim barSeries2 As New Telerik.WinControls.UI.BarSeries("Performance", "RepresentativeName")
-        barSeries2.Name = "Q2"
-        barSeries2.DataPoints.Add(New CategoricalDataPoint(153, "Harley"))
-        barSeries2.DataPoints.Add(New CategoricalDataPoint(141, "White"))
-        barSeries2.DataPoints.Add(New CategoricalDataPoint(130, "Smith"))
-        barSeries2.DataPoints.Add(New CategoricalDataPoint(88, "Jones"))
-        barSeries2.DataPoints.Add(New CategoricalDataPoint(109, "Marshall"))
-        Me.RadChartView1.Series.Add(barSeries2)
-        '
 ````
 
 {{endregion}} 
@@ -78,11 +77,12 @@ BarSeries could be customized using the following properties:
 {{source=..\SamplesVB\ChartView\Series\BarSeriesForm.vb region=gapLength}} 
 
 ````C#
-            (barSeries.HorizontalAxis as CategoricalAxis).GapLength = 0.75;
+(barSeries.HorizontalAxis as CategoricalAxis).GapLength = 0.75;
+
 ````
 ````VB.NET
-        TryCast(barSeries.HorizontalAxis, CategoricalAxis).GapLength = 0.75
-        '
+TryCast(barSeries.HorizontalAxis, CategoricalAxis).GapLength = 0.75
+
 ````
 
 {{endregion}} 

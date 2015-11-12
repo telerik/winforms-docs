@@ -23,44 +23,43 @@ __BubbleSeries__ are used to visualize data points as points with coordinates an
 
 ````C#
             
-            BubbleSeries bubbleSeries = new BubbleSeries();
-            bubbleSeries.Name = "Q1";
-            bubbleSeries.DataPoints.Add(new BubbleDataPoint(15, 19,3));
-            bubbleSeries.DataPoints.Add(new BubbleDataPoint(18, 10,15));
-            bubbleSeries.DataPoints.Add(new BubbleDataPoint(13, 15,8));
-            bubbleSeries.DataPoints.Add(new BubbleDataPoint(10, 8,4));
-            bubbleSeries.DataPoints.Add(new BubbleDataPoint(5, 12,3)); 
-            this.radChartView1.Series.Add(bubbleSeries);
+BubbleSeries bubbleSeries = new BubbleSeries();
+bubbleSeries.Name = "Q1";
+bubbleSeries.DataPoints.Add(new BubbleDataPoint(15, 19,3));
+bubbleSeries.DataPoints.Add(new BubbleDataPoint(18, 10,15));
+bubbleSeries.DataPoints.Add(new BubbleDataPoint(13, 15,8));
+bubbleSeries.DataPoints.Add(new BubbleDataPoint(10, 8,4));
+bubbleSeries.DataPoints.Add(new BubbleDataPoint(5, 12,3)); 
+this.radChartView1.Series.Add(bubbleSeries);
             
-            BubbleSeries bubbleSeries2 = new BubbleSeries();
-            bubbleSeries2.Name = "Q2";
-            bubbleSeries2.DataPoints.Add(new BubbleDataPoint(20, 20,4));
-            bubbleSeries2.DataPoints.Add(new BubbleDataPoint(15, 10,3));
-            bubbleSeries2.DataPoints.Add(new BubbleDataPoint(7, 6,6));
-            bubbleSeries2.DataPoints.Add(new BubbleDataPoint(18, 22,2));
-            bubbleSeries2.DataPoints.Add(new BubbleDataPoint(10, 10,4));
-            this.radChartView1.Series.Add(bubbleSeries2);
+BubbleSeries bubbleSeries2 = new BubbleSeries();
+bubbleSeries2.Name = "Q2";
+bubbleSeries2.DataPoints.Add(new BubbleDataPoint(20, 20,4));
+bubbleSeries2.DataPoints.Add(new BubbleDataPoint(15, 10,3));
+bubbleSeries2.DataPoints.Add(new BubbleDataPoint(7, 6,6));
+bubbleSeries2.DataPoints.Add(new BubbleDataPoint(18, 22,2));
+bubbleSeries2.DataPoints.Add(new BubbleDataPoint(10, 10,4));
+this.radChartView1.Series.Add(bubbleSeries2);
+
 ````
 ````VB.NET
+Dim bubbleSeries As New BubbleSeries()
+bubbleSeries.Name = "Q1"
+bubbleSeries.DataPoints.Add(New BubbleDataPoint(15, 19, 3))
+bubbleSeries.DataPoints.Add(New BubbleDataPoint(18, 10, 15))
+bubbleSeries.DataPoints.Add(New BubbleDataPoint(13, 15, 8))
+bubbleSeries.DataPoints.Add(New BubbleDataPoint(10, 8, 4))
+bubbleSeries.DataPoints.Add(New BubbleDataPoint(5, 12, 3))
+Me.RadChartView1.Series.Add(bubbleSeries)
+Dim bubbleSeries2 As New BubbleSeries()
+bubbleSeries2.Name = "Q2"
+bubbleSeries2.DataPoints.Add(New BubbleDataPoint(20, 20, 4))
+bubbleSeries2.DataPoints.Add(New BubbleDataPoint(15, 10, 3))
+bubbleSeries2.DataPoints.Add(New BubbleDataPoint(7, 6, 6))
+bubbleSeries2.DataPoints.Add(New BubbleDataPoint(18, 22, 2))
+bubbleSeries2.DataPoints.Add(New BubbleDataPoint(10, 10, 4))
+Me.RadChartView1.Series.Add(bubbleSeries2)
 
-        Dim bubbleSeries As New BubbleSeries()
-        bubbleSeries.Name = "Q1"
-        bubbleSeries.DataPoints.Add(New BubbleDataPoint(15, 19, 3))
-        bubbleSeries.DataPoints.Add(New BubbleDataPoint(18, 10, 15))
-        bubbleSeries.DataPoints.Add(New BubbleDataPoint(13, 15, 8))
-        bubbleSeries.DataPoints.Add(New BubbleDataPoint(10, 8, 4))
-        bubbleSeries.DataPoints.Add(New BubbleDataPoint(5, 12, 3))
-        Me.RadChartView1.Series.Add(bubbleSeries)
-
-        Dim bubbleSeries2 As New BubbleSeries()
-        bubbleSeries2.Name = "Q2"
-        bubbleSeries2.DataPoints.Add(New BubbleDataPoint(20, 20, 4))
-        bubbleSeries2.DataPoints.Add(New BubbleDataPoint(15, 10, 3))
-        bubbleSeries2.DataPoints.Add(New BubbleDataPoint(7, 6, 6))
-        bubbleSeries2.DataPoints.Add(New BubbleDataPoint(18, 22, 2))
-        bubbleSeries2.DataPoints.Add(New BubbleDataPoint(10, 10, 4))
-        Me.RadChartView1.Series.Add(bubbleSeries2)
-        '
 ````
 
 {{endregion}} 

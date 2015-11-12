@@ -21,25 +21,26 @@ Unlike all other series, __PieSeries__ do not require axes. They visualize each 
 {{source=..\SamplesVB\ChartView\Series\PieSeriesForm.vb region=pie}} 
 
 ````C#
-            this.radChartView1.AreaType = ChartAreaType.Pie;
-            PieSeries series = new PieSeries();
-            series.DataPoints.Add(new PieDataPoint(50, "Germany"));
-            series.DataPoints.Add(new PieDataPoint(70, "United States"));
-            series.DataPoints.Add(new PieDataPoint(40, "France"));
-            series.DataPoints.Add(new PieDataPoint(25, "United Kingdom"));
-            series.ShowLabels = true;
-            this.radChartView1.Series.Add(series);
+this.radChartView1.AreaType = ChartAreaType.Pie;
+PieSeries series = new PieSeries();
+series.DataPoints.Add(new PieDataPoint(50, "Germany"));
+series.DataPoints.Add(new PieDataPoint(70, "United States"));
+series.DataPoints.Add(new PieDataPoint(40, "France"));
+series.DataPoints.Add(new PieDataPoint(25, "United Kingdom"));
+series.ShowLabels = true;
+this.radChartView1.Series.Add(series);
+
 ````
 ````VB.NET
-        Me.RadChartView1.AreaType = ChartAreaType.Pie
-        Dim series As New PieSeries()
-        series.DataPoints.Add(New PieDataPoint(50, "Germany"))
-        series.DataPoints.Add(New PieDataPoint(70, "United States"))
-        series.DataPoints.Add(New PieDataPoint(40, "France"))
-        series.DataPoints.Add(New PieDataPoint(25, "United Kingdom"))
-        series.ShowLabels = True
-        Me.RadChartView1.Series.Add(series)
-        '
+Me.RadChartView1.AreaType = ChartAreaType.Pie
+Dim series As New PieSeries()
+series.DataPoints.Add(New PieDataPoint(50, "Germany"))
+series.DataPoints.Add(New PieDataPoint(70, "United States"))
+series.DataPoints.Add(New PieDataPoint(40, "France"))
+series.DataPoints.Add(New PieDataPoint(25, "United Kingdom"))
+series.ShowLabels = True
+Me.RadChartView1.Series.Add(series)
+
 ````
 
 {{endregion}} 
@@ -56,13 +57,14 @@ __PieSeries__ can be customized using the following properties:
 {{source=..\SamplesVB\ChartView\Series\PieSeriesForm.vb region=angleRange}} 
 
 ````C#
-            AngleRange range = new AngleRange(270, 300);
-            series.Range = range;
+AngleRange range = new AngleRange(270, 300);
+series.Range = range;
+
 ````
 ````VB.NET
-        Dim range As New AngleRange(270, 300)
-        series.Range = range
-        '
+Dim range As New AngleRange(270, 300)
+series.Range = range
+
 ````
 
 {{endregion}} 
@@ -82,18 +84,19 @@ __PieSeries__ can be customized using the following properties:
 {{source=..\SamplesVB\ChartView\Series\PieSeriesForm.vb region=offset}} 
 
 ````C#
-            PieDataPoint point = series.DataPoints[3] as PieDataPoint;
-            if (point != null)
-            {
-                point.OffsetFromCenter = 0.1;
-            }
+PieDataPoint point = series.DataPoints[3] as PieDataPoint;
+if (point != null)
+{
+    point.OffsetFromCenter = 0.1;
+}
+
 ````
 ````VB.NET
-        Dim point As PieDataPoint = TryCast(series.DataPoints(3), PieDataPoint)
-        If point IsNot Nothing Then
-            point.OffsetFromCenter = 0.1
-        End If
-        '
+Dim point As PieDataPoint = TryCast(series.DataPoints(3), PieDataPoint)
+If point IsNot Nothing Then
+    point.OffsetFromCenter = 0.1
+End If
+
 ````
 
 {{endregion}} 

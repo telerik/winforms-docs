@@ -19,25 +19,26 @@ Similarly to Pie series, Donut series do not use axes. They visualize each data 
 {{source=..\SamplesVB\ChartView\Series\DonutSeriesForm.vb region=donut}} 
 
 ````C#
-            this.radChartView1.AreaType = ChartAreaType.Pie;
-            DonutSeries series = new DonutSeries();
-            series.DataPoints.Add(new PieDataPoint(50, "Germany"));
-            series.DataPoints.Add(new PieDataPoint(70, "United States"));
-            series.DataPoints.Add(new PieDataPoint(40, "France"));
-            series.DataPoints.Add(new PieDataPoint(25, "United Kingdom"));
-            series.ShowLabels = true;
-            this.radChartView1.Series.Add(series);
+this.radChartView1.AreaType = ChartAreaType.Pie;
+DonutSeries series = new DonutSeries();
+series.DataPoints.Add(new PieDataPoint(50, "Germany"));
+series.DataPoints.Add(new PieDataPoint(70, "United States"));
+series.DataPoints.Add(new PieDataPoint(40, "France"));
+series.DataPoints.Add(new PieDataPoint(25, "United Kingdom"));
+series.ShowLabels = true;
+this.radChartView1.Series.Add(series);
+
 ````
 ````VB.NET
-        Me.RadChartView1.AreaType = ChartAreaType.Pie
-        Dim series As New DonutSeries()
-        series.DataPoints.Add(New PieDataPoint(50, "Germany"))
-        series.DataPoints.Add(New PieDataPoint(70, "United States"))
-        series.DataPoints.Add(New PieDataPoint(40, "France"))
-        series.DataPoints.Add(New PieDataPoint(25, "United Kingdom"))
-        series.ShowLabels = True
-        Me.RadChartView1.Series.Add(series)
-        '
+Me.RadChartView1.AreaType = ChartAreaType.Pie
+Dim series As New DonutSeries()
+series.DataPoints.Add(New PieDataPoint(50, "Germany"))
+series.DataPoints.Add(New PieDataPoint(70, "United States"))
+series.DataPoints.Add(New PieDataPoint(40, "France"))
+series.DataPoints.Add(New PieDataPoint(25, "United Kingdom"))
+series.ShowLabels = True
+Me.RadChartView1.Series.Add(series)
+
 ````
 
 {{endregion}} 
@@ -53,13 +54,14 @@ DonutSeries can be customized using the following properties:
 {{source=..\SamplesVB\ChartView\Series\DonutSeriesForm.vb region=donutAngleRange}} 
 
 ````C#
-            AngleRange range = new AngleRange(270, 300);
-            series.Range = range;
+AngleRange range = new AngleRange(270, 300);
+series.Range = range;
+
 ````
 ````VB.NET
-        Dim range As New AngleRange(270, 300)
-        series.Range = range
-        '
+Dim range As New AngleRange(270, 300)
+series.Range = range
+
 ````
 
 {{endregion}} 
@@ -82,18 +84,19 @@ Additionally, DonutSeries allows offsetting a pie segment from the rest of the s
 {{source=..\SamplesVB\ChartView\Series\DonutSeriesForm.vb region=donutOffset}} 
 
 ````C#
-            PieDataPoint point = series.DataPoints[3] as PieDataPoint;
-            if (point != null)
-            {
-                point.OffsetFromCenter = 0.1;
-            }
+PieDataPoint point = series.DataPoints[3] as PieDataPoint;
+if (point != null)
+{
+    point.OffsetFromCenter = 0.1;
+}
+
 ````
 ````VB.NET
-        Dim point As PieDataPoint = TryCast(series.DataPoints(3), PieDataPoint)
-        If point IsNot Nothing Then
-            point.OffsetFromCenter = 0.1
-        End If
-        '
+Dim point As PieDataPoint = TryCast(series.DataPoints(3), PieDataPoint)
+If point IsNot Nothing Then
+    point.OffsetFromCenter = 0.1
+End If
+
 ````
 
 {{endregion}} 

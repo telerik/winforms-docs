@@ -23,55 +23,52 @@ First let’s start by adding some data points to the __RadChartView__ and __Las
 
 ````C#
         
-        public LassoSelection()
-        {
-            InitializeComponent();
-            
-            LineSeries lineSeries = new LineSeries();
-            lineSeries.DataPoints.Add(new CategoricalDataPoint(20, "Jan"));
-            lineSeries.DataPoints.Add(new CategoricalDataPoint(22, "Apr"));
-            lineSeries.DataPoints.Add(new CategoricalDataPoint(12, "Jul"));
-            lineSeries.DataPoints.Add(new CategoricalDataPoint(19, "Oct"));
-            lineSeries.PointSize = new SizeF(10,10);
-            radChartView1.Series.Add(lineSeries);
-            
-            LineSeries lineSeries2 = new LineSeries();
-            lineSeries2.DataPoints.Add(new CategoricalDataPoint(18, "Jan"));
-            lineSeries2.DataPoints.Add(new CategoricalDataPoint(15, "Apr"));
-            lineSeries2.DataPoints.Add(new CategoricalDataPoint(17, "Jul"));
-            lineSeries2.DataPoints.Add(new CategoricalDataPoint(22, "Oct"));
-            lineSeries2.PointSize = new SizeF(10,10);            
-            radChartView1.Series.Add(lineSeries2);
-            
-            LassoZoomController lassoZoomController = new LassoZoomController();
-            radChartView1.Controllers.Add(lassoZoomController);
-        }
+public LassoSelection()
+{
+    InitializeComponent();
+    
+    LineSeries lineSeries = new LineSeries();
+    lineSeries.DataPoints.Add(new CategoricalDataPoint(20, "Jan"));
+    lineSeries.DataPoints.Add(new CategoricalDataPoint(22, "Apr"));
+    lineSeries.DataPoints.Add(new CategoricalDataPoint(12, "Jul"));
+    lineSeries.DataPoints.Add(new CategoricalDataPoint(19, "Oct"));
+    lineSeries.PointSize = new SizeF(10,10);
+    radChartView1.Series.Add(lineSeries);
+    
+    LineSeries lineSeries2 = new LineSeries();
+    lineSeries2.DataPoints.Add(new CategoricalDataPoint(18, "Jan"));
+    lineSeries2.DataPoints.Add(new CategoricalDataPoint(15, "Apr"));
+    lineSeries2.DataPoints.Add(new CategoricalDataPoint(17, "Jul"));
+    lineSeries2.DataPoints.Add(new CategoricalDataPoint(22, "Oct"));
+    lineSeries2.PointSize = new SizeF(10,10);            
+    radChartView1.Series.Add(lineSeries2);
+    
+    LassoZoomController lassoZoomController = new LassoZoomController();
+    radChartView1.Controllers.Add(lassoZoomController);
+}
+
 ````
 ````VB.NET
-    Public Sub New()
+Public Sub New()
+    InitializeComponent()
+    Dim lineSeries As New LineSeries()
+    lineSeries.DataPoints.Add(New CategoricalDataPoint(20, "Jan"))
+    lineSeries.DataPoints.Add(New CategoricalDataPoint(22, "Apr"))
+    lineSeries.DataPoints.Add(New CategoricalDataPoint(12, "Jul"))
+    lineSeries.DataPoints.Add(New CategoricalDataPoint(19, "Oct"))
+    lineSeries.PointSize = New SizeF(10, 10)
+    RadChartView1.Series.Add(lineSeries)
+    Dim lineSeries2 As New LineSeries()
+    lineSeries2.DataPoints.Add(New CategoricalDataPoint(18, "Jan"))
+    lineSeries2.DataPoints.Add(New CategoricalDataPoint(15, "Apr"))
+    lineSeries2.DataPoints.Add(New CategoricalDataPoint(17, "Jul"))
+    lineSeries2.DataPoints.Add(New CategoricalDataPoint(22, "Oct"))
+    lineSeries2.PointSize = New SizeF(10, 10)
+    RadChartView1.Series.Add(lineSeries2)
+    Dim lassoZoomController As New LassoZoomController()
+    RadChartView1.Controllers.Add(lassoZoomController)
+End Sub
 
-        InitializeComponent()
-
-        Dim lineSeries As New LineSeries()
-        lineSeries.DataPoints.Add(New CategoricalDataPoint(20, "Jan"))
-        lineSeries.DataPoints.Add(New CategoricalDataPoint(22, "Apr"))
-        lineSeries.DataPoints.Add(New CategoricalDataPoint(12, "Jul"))
-        lineSeries.DataPoints.Add(New CategoricalDataPoint(19, "Oct"))
-        lineSeries.PointSize = New SizeF(10, 10)
-        RadChartView1.Series.Add(lineSeries)
-
-        Dim lineSeries2 As New LineSeries()
-        lineSeries2.DataPoints.Add(New CategoricalDataPoint(18, "Jan"))
-        lineSeries2.DataPoints.Add(New CategoricalDataPoint(15, "Apr"))
-        lineSeries2.DataPoints.Add(New CategoricalDataPoint(17, "Jul"))
-        lineSeries2.DataPoints.Add(New CategoricalDataPoint(22, "Oct"))
-        lineSeries2.PointSize = New SizeF(10, 10)
-        RadChartView1.Series.Add(lineSeries2)
-
-        Dim lassoZoomController As New LassoZoomController()
-        RadChartView1.Controllers.Add(lassoZoomController)
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -92,23 +89,24 @@ __LassoZoomController__ supports zoom and pan functionality programmatically via
 
 ````C#
         
-        private void LassoSelection_Load(object sender, EventArgs e)
-        {
-            LassoZoomController lassoZoomController = radChartView1.Controllers[1] as LassoZoomController;
-            if (lassoZoomController != null)
-            {
-                lassoZoomController.ZoomAndPan(0, 50);
-            }
-        }
+private void LassoSelection_Load(object sender, EventArgs e)
+{
+    LassoZoomController lassoZoomController = radChartView1.Controllers[1] as LassoZoomController;
+    if (lassoZoomController != null)
+    {
+        lassoZoomController.ZoomAndPan(0, 50);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub LassoSelection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim lassoZoomController As LassoZoomController = TryCast(RadChartView1.Controllers(1), LassoZoomController)
-        If lassoZoomController IsNot Nothing Then
-            lassoZoomController.ZoomAndPan(0, 50)
-        End If
-    End Sub
-    '
+Private Sub LassoSelection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Dim lassoZoomController As LassoZoomController = TryCast(RadChartView1.Controllers(1), LassoZoomController)
+    If lassoZoomController IsNot Nothing Then
+        lassoZoomController.ZoomAndPan(0, 50)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

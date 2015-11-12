@@ -31,34 +31,31 @@ CategoricalRadial axis is added automatically when you add RadarPoint, RadarLine
 {{source=..\SamplesVB\ChartView\Axes\RadialAxisForm.vb region=radialCategoricalAxis}} 
 
 ````C#
-            RadarAreaSeries areaSeries = new RadarAreaSeries();
-            areaSeries.DataPoints.Add(new CategoricalDataPoint(4, "Bread"));
-            areaSeries.DataPoints.Add(new CategoricalDataPoint(7, "Fruit"));
-            areaSeries.DataPoints.Add(new CategoricalDataPoint(7, "Meat"));
+RadarAreaSeries areaSeries = new RadarAreaSeries();
+areaSeries.DataPoints.Add(new CategoricalDataPoint(4, "Bread"));
+areaSeries.DataPoints.Add(new CategoricalDataPoint(7, "Fruit"));
+areaSeries.DataPoints.Add(new CategoricalDataPoint(7, "Meat"));
+radChartView1.AreaType = ChartAreaType.Polar;
+radChartView1.Series.Add(areaSeries);
+CategoricalRadialAxis categoricalAxis = areaSeries.RadialAxis as CategoricalRadialAxis;
+if (categoricalAxis != null)
+{
+    categoricalAxis.BorderColor = Color.DarkGray;
+}
 
-            radChartView1.AreaType = ChartAreaType.Polar;
-            radChartView1.Series.Add(areaSeries);
-
-            CategoricalRadialAxis categoricalAxis = areaSeries.RadialAxis as CategoricalRadialAxis;
-            if (categoricalAxis != null)
-            {
-                categoricalAxis.BorderColor = Color.DarkGray;
-            }
 ````
 ````VB.NET
-        Dim areaSeries As New RadarAreaSeries()
-        areaSeries.DataPoints.Add(New CategoricalDataPoint(4, "Bread"))
-        areaSeries.DataPoints.Add(New CategoricalDataPoint(7, "Fruit"))
-        areaSeries.DataPoints.Add(New CategoricalDataPoint(7, "Meat"))
+Dim areaSeries As New RadarAreaSeries()
+areaSeries.DataPoints.Add(New CategoricalDataPoint(4, "Bread"))
+areaSeries.DataPoints.Add(New CategoricalDataPoint(7, "Fruit"))
+areaSeries.DataPoints.Add(New CategoricalDataPoint(7, "Meat"))
+RadChartView1.AreaType = ChartAreaType.Polar
+RadChartView1.Series.Add(areaSeries)
+Dim categoricalAxis As CategoricalRadialAxis = TryCast(areaSeries.RadialAxis, CategoricalRadialAxis)
+If categoricalAxis IsNot Nothing Then
+    categoricalAxis.BorderColor = Color.DarkGray
+End If
 
-        RadChartView1.AreaType = ChartAreaType.Polar
-        RadChartView1.Series.Add(areaSeries)
-
-        Dim categoricalAxis As CategoricalRadialAxis = TryCast(areaSeries.RadialAxis, CategoricalRadialAxis)
-        If categoricalAxis IsNot Nothing Then
-            categoricalAxis.BorderColor = Color.DarkGray
-        End If
-        '
 ````
 
 {{endregion}} 
@@ -88,58 +85,52 @@ NumericRadial axis is added automatically when you add PolarPoint, PolarLine or 
 {{source=..\SamplesVB\ChartView\Axes\RadialAxisForm.vb region=radialNumericalAxis}} 
 
 ````C#
-            PolarAreaSeries series = new PolarAreaSeries();
-            PolarDataPoint pt = new PolarDataPoint();
-            pt.Angle = 30;
-            pt.Value = 4;
-            series.DataPoints.Add(pt);
+PolarAreaSeries series = new PolarAreaSeries();
+PolarDataPoint pt = new PolarDataPoint();
+pt.Angle = 30;
+pt.Value = 4;
+series.DataPoints.Add(pt);
             
-            pt = new PolarDataPoint();
-            pt.Angle = 135;
-            pt.Value = 7;
-            series.DataPoints.Add(pt);
+pt = new PolarDataPoint();
+pt.Angle = 135;
+pt.Value = 7;
+series.DataPoints.Add(pt);
+pt = new PolarDataPoint();
+pt.Angle = 270;
+pt.Value = 9;
+series.DataPoints.Add(pt);
+radChartView1.AreaType = ChartAreaType.Polar;
+radChartView1.Series.Add(series);
+NumericRadialAxis numericalAxis = series.RadialAxis as NumericRadialAxis;
+if (numericalAxis != null)
+{
+    numericalAxis.BorderColor = Color.DarkGray;
+    numericalAxis.MajorStep = 45;
+}
 
-            pt = new PolarDataPoint();
-            pt.Angle = 270;
-            pt.Value = 9;
-            series.DataPoints.Add(pt);
-
-            radChartView1.AreaType = ChartAreaType.Polar;
-            radChartView1.Series.Add(series);
-
-            NumericRadialAxis numericalAxis = series.RadialAxis as NumericRadialAxis;
-            if (numericalAxis != null)
-            {
-                numericalAxis.BorderColor = Color.DarkGray;
-                numericalAxis.MajorStep = 45;
-            }
 ````
 ````VB.NET
-        Dim series As New PolarAreaSeries()
-        Dim pt As New PolarDataPoint()
-        pt.Angle = 30
-        pt.Value = 4
-        series.DataPoints.Add(pt)
+Dim series As New PolarAreaSeries()
+Dim pt As New PolarDataPoint()
+pt.Angle = 30
+pt.Value = 4
+series.DataPoints.Add(pt)
+pt = New PolarDataPoint()
+pt.Angle = 135
+pt.Value = 7
+series.DataPoints.Add(pt)
+pt = New PolarDataPoint()
+pt.Angle = 270
+pt.Value = 9
+series.DataPoints.Add(pt)
+RadChartView1.AreaType = ChartAreaType.Polar
+RadChartView1.Series.Add(series)
+Dim numericalAxis As NumericRadialAxis = TryCast(series.RadialAxis, NumericRadialAxis)
+If numericalAxis IsNot Nothing Then
+    numericalAxis.BorderColor = Color.DarkGray
+    numericalAxis.MajorStep = 45
+End If
 
-        pt = New PolarDataPoint()
-        pt.Angle = 135
-        pt.Value = 7
-        series.DataPoints.Add(pt)
-
-        pt = New PolarDataPoint()
-        pt.Angle = 270
-        pt.Value = 9
-        series.DataPoints.Add(pt)
-
-        RadChartView1.AreaType = ChartAreaType.Polar
-        RadChartView1.Series.Add(series)
-
-        Dim numericalAxis As NumericRadialAxis = TryCast(series.RadialAxis, NumericRadialAxis)
-        If numericalAxis IsNot Nothing Then
-            numericalAxis.BorderColor = Color.DarkGray
-            numericalAxis.MajorStep = 45
-        End If
-        '
 ````
 
 {{endregion}} 

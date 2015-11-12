@@ -33,15 +33,14 @@ You can export the __RadChartVew__ content by using one of the following overloa
 
 ````C#
             
-            string filePath = @"..\..\..\exprtedChart.png";
-            this.radChartView1.ExportToImage(filePath, this.radChartView1.Size, System.Drawing.Imaging.ImageFormat.Png);
+string filePath = @"..\..\..\exprtedChart.png";
+this.radChartView1.ExportToImage(filePath, this.radChartView1.Size, System.Drawing.Imaging.ImageFormat.Png);
+
 ````
 ````VB.NET
+Dim filePath As String = "..\..\..\exprtedChart.png"
+Me.RadChartView1.ExportToImage(filePath, Me.RadChartView1.Size, System.Drawing.Imaging.ImageFormat.Png)
 
-        Dim filePath As String = "..\..\..\exprtedChart.png"
-        Me.RadChartView1.ExportToImage(filePath, Me.RadChartView1.Size, System.Drawing.Imaging.ImageFormat.Png)
-
-        '
 ````
 
 {{endregion}} 

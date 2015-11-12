@@ -19,47 +19,44 @@ __Polar series__ consists of a group of classes that plot data in radial plot ar
 
 ````C#
             
-            this.radChartView1.AreaType = ChartAreaType.Polar;
-            PolarPointSeries polarPointSeries = new PolarPointSeries();
+this.radChartView1.AreaType = ChartAreaType.Polar;
+PolarPointSeries polarPointSeries = new PolarPointSeries();
             
-            PolarDataPoint dataPoint = new PolarDataPoint();
-            dataPoint.Value = 40;
-            dataPoint.Angle = 200;
-            polarPointSeries.DataPoints.Add(dataPoint);
+PolarDataPoint dataPoint = new PolarDataPoint();
+dataPoint.Value = 40;
+dataPoint.Angle = 200;
+polarPointSeries.DataPoints.Add(dataPoint);
             
-            dataPoint = new PolarDataPoint();
-            dataPoint.Value = 35;
-            dataPoint.Angle = 50;
-            polarPointSeries.DataPoints.Add(dataPoint);
+dataPoint = new PolarDataPoint();
+dataPoint.Value = 35;
+dataPoint.Angle = 50;
+polarPointSeries.DataPoints.Add(dataPoint);
             
-            dataPoint = new PolarDataPoint();
-            dataPoint.Value = 55;
-            dataPoint.Angle = 320;
-            polarPointSeries.DataPoints.Add(dataPoint);
+dataPoint = new PolarDataPoint();
+dataPoint.Value = 55;
+dataPoint.Angle = 320;
+polarPointSeries.DataPoints.Add(dataPoint);
             
-            this.radChartView1.Series.Add(polarPointSeries);
+this.radChartView1.Series.Add(polarPointSeries);
+
 ````
 ````VB.NET
-        Me.RadChartView1.AreaType = ChartAreaType.Polar
-        Dim polarPointSeries As New PolarPointSeries()
+Me.RadChartView1.AreaType = ChartAreaType.Polar
+Dim polarPointSeries As New PolarPointSeries()
+Dim dataPoint As New PolarDataPoint()
+dataPoint.Value = 40
+dataPoint.Angle = 200
+polarPointSeries.DataPoints.Add(dataPoint)
+dataPoint = New PolarDataPoint()
+dataPoint.Value = 35
+dataPoint.Angle = 50
+polarPointSeries.DataPoints.Add(dataPoint)
+dataPoint = New PolarDataPoint()
+dataPoint.Value = 55
+dataPoint.Angle = 320
+polarPointSeries.DataPoints.Add(dataPoint)
+Me.RadChartView1.Series.Add(polarPointSeries)
 
-        Dim dataPoint As New PolarDataPoint()
-        dataPoint.Value = 40
-        dataPoint.Angle = 200
-        polarPointSeries.DataPoints.Add(dataPoint)
-
-        dataPoint = New PolarDataPoint()
-        dataPoint.Value = 35
-        dataPoint.Angle = 50
-        polarPointSeries.DataPoints.Add(dataPoint)
-
-        dataPoint = New PolarDataPoint()
-        dataPoint.Value = 55
-        dataPoint.Angle = 320
-        polarPointSeries.DataPoints.Add(dataPoint)
-
-        Me.RadChartView1.Series.Add(polarPointSeries)
-        '
 ````
 
 {{endregion}} 
@@ -72,48 +69,43 @@ __Polar series__ consists of a group of classes that plot data in radial plot ar
 {{source=..\SamplesVB\ChartView\Series\PolarSeriesForm.vb region=polarLineSeries}} 
 
 ````C#
+this.radChartView1.AreaType = ChartAreaType.Polar;
+PolarLineSeries polarLineSeries = new PolarLineSeries();
+            
+PolarDataPoint point = new PolarDataPoint();
+point.Value = 35;
+point.Angle = 50;
+polarLineSeries.DataPoints.Add(point);
+            
+point = new PolarDataPoint();
+point.Value = 40;
+point.Angle = 200;
+polarLineSeries.DataPoints.Add(point);
+            
+point = new PolarDataPoint();
+point.Value = 55;
+point.Angle = 320;
+polarLineSeries.DataPoints.Add(point);
+this.radChartView1.Series.Add(polarLineSeries);
 
-            this.radChartView1.AreaType = ChartAreaType.Polar;
-            PolarLineSeries polarLineSeries = new PolarLineSeries();
-            
-            PolarDataPoint point = new PolarDataPoint();
-            point.Value = 35;
-            point.Angle = 50;
-            polarLineSeries.DataPoints.Add(point);
-            
-            point = new PolarDataPoint();
-            point.Value = 40;
-            point.Angle = 200;
-            polarLineSeries.DataPoints.Add(point);
-            
-            point = new PolarDataPoint();
-            point.Value = 55;
-            point.Angle = 320;
-            polarLineSeries.DataPoints.Add(point);
-
-            this.radChartView1.Series.Add(polarLineSeries);
 ````
 ````VB.NET
-        Me.RadChartView1.AreaType = ChartAreaType.Polar
-        Dim polarLineSeries As New PolarLineSeries()
+Me.RadChartView1.AreaType = ChartAreaType.Polar
+Dim polarLineSeries As New PolarLineSeries()
+Dim point As New PolarDataPoint()
+point.Value = 35
+point.Angle = 50
+polarLineSeries.DataPoints.Add(point)
+point = New PolarDataPoint()
+point.Value = 40
+point.Angle = 200
+polarLineSeries.DataPoints.Add(point)
+point = New PolarDataPoint()
+point.Value = 55
+point.Angle = 320
+polarLineSeries.DataPoints.Add(point)
+Me.RadChartView1.Series.Add(polarLineSeries)
 
-        Dim point As New PolarDataPoint()
-        point.Value = 35
-        point.Angle = 50
-        polarLineSeries.DataPoints.Add(point)
-
-        point = New PolarDataPoint()
-        point.Value = 40
-        point.Angle = 200
-        polarLineSeries.DataPoints.Add(point)
-
-        point = New PolarDataPoint()
-        point.Value = 55
-        point.Angle = 320
-        polarLineSeries.DataPoints.Add(point)
-
-        Me.RadChartView1.Series.Add(polarLineSeries)
-        '
 ````
 
 {{endregion}} 
@@ -126,52 +118,45 @@ __Polar series__ consists of a group of classes that plot data in radial plot ar
 
 ````C#
             
-            this.radChartView1.AreaType = ChartAreaType.Polar;
-            PolarAreaSeries polarAreaSeries = new PolarAreaSeries();
-
-            PolarDataPoint polarPoint = new PolarDataPoint();
-            polarPoint.Value = 35;
-            polarPoint.Angle = 50;
-            polarAreaSeries.DataPoints.Add(polarPoint);
-
-            polarPoint = new PolarDataPoint();
-            polarPoint.Value = 40;
-            polarPoint.Angle = 200;
-            polarAreaSeries.DataPoints.Add(polarPoint);
-
-            polarPoint = new PolarDataPoint();
-            polarPoint.Value = 55;
-            polarPoint.Angle = 320;
-            polarAreaSeries.DataPoints.Add(polarPoint);
+this.radChartView1.AreaType = ChartAreaType.Polar;
+PolarAreaSeries polarAreaSeries = new PolarAreaSeries();
+PolarDataPoint polarPoint = new PolarDataPoint();
+polarPoint.Value = 35;
+polarPoint.Angle = 50;
+polarAreaSeries.DataPoints.Add(polarPoint);
+polarPoint = new PolarDataPoint();
+polarPoint.Value = 40;
+polarPoint.Angle = 200;
+polarAreaSeries.DataPoints.Add(polarPoint);
+polarPoint = new PolarDataPoint();
+polarPoint.Value = 55;
+polarPoint.Angle = 320;
+polarAreaSeries.DataPoints.Add(polarPoint);
         
-            this.radChartView1.Series.Add(polarAreaSeries);
+this.radChartView1.Series.Add(polarAreaSeries);
+
 ````
 ````VB.NET
-        Me.RadChartView1.AreaType = ChartAreaType.Polar
-        Dim polarAreaSeries As New PolarAreaSeries()
+Me.RadChartView1.AreaType = ChartAreaType.Polar
+Dim polarAreaSeries As New PolarAreaSeries()
+Dim polarPoint As New PolarDataPoint()
+polarPoint.Value = 35
+polarPoint.Angle = 50
+polarAreaSeries.DataPoints.Add(polarPoint)
+polarPoint = New PolarDataPoint()
+polarPoint.Value = 25
+polarPoint.Angle = 130
+polarAreaSeries.DataPoints.Add(polarPoint)
+polarPoint = New PolarDataPoint()
+polarPoint.Value = 40
+polarPoint.Angle = 200
+polarAreaSeries.DataPoints.Add(polarPoint)
+polarPoint = New PolarDataPoint()
+polarPoint.Value = 55
+polarPoint.Angle = 320
+polarAreaSeries.DataPoints.Add(polarPoint)
+Me.RadChartView1.Series.Add(polarAreaSeries)
 
-        Dim polarPoint As New PolarDataPoint()
-        polarPoint.Value = 35
-        polarPoint.Angle = 50
-        polarAreaSeries.DataPoints.Add(polarPoint)
-
-        polarPoint = New PolarDataPoint()
-        polarPoint.Value = 25
-        polarPoint.Angle = 130
-        polarAreaSeries.DataPoints.Add(polarPoint)
-
-        polarPoint = New PolarDataPoint()
-        polarPoint.Value = 40
-        polarPoint.Angle = 200
-        polarAreaSeries.DataPoints.Add(polarPoint)
-
-        polarPoint = New PolarDataPoint()
-        polarPoint.Value = 55
-        polarPoint.Angle = 320
-        polarAreaSeries.DataPoints.Add(polarPoint)
-
-        Me.RadChartView1.Series.Add(polarAreaSeries)
-        '
 ````
 
 {{endregion}} 

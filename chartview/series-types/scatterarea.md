@@ -21,43 +21,40 @@ __ScatterAreaSeries__ plot their data using two numerical values. Once positione
 {{source=..\SamplesVB\ChartView\Series\ScatterAreraCode.vb region=Area}} 
 
 ````C#
-            ScatterAreaSeries scatterSeries = new ScatterAreaSeries();
-            scatterSeries.DataPoints.Add(new ScatterDataPoint(15, 19));
-            scatterSeries.DataPoints.Add(new ScatterDataPoint(18, 10));
-            scatterSeries.DataPoints.Add(new ScatterDataPoint(13, 15));
-            scatterSeries.DataPoints.Add(new ScatterDataPoint(10, 8));
-            scatterSeries.DataPoints.Add(new ScatterDataPoint(5, 2));
+ScatterAreaSeries scatterSeries = new ScatterAreaSeries();
+scatterSeries.DataPoints.Add(new ScatterDataPoint(15, 19));
+scatterSeries.DataPoints.Add(new ScatterDataPoint(18, 10));
+scatterSeries.DataPoints.Add(new ScatterDataPoint(13, 15));
+scatterSeries.DataPoints.Add(new ScatterDataPoint(10, 8));
+scatterSeries.DataPoints.Add(new ScatterDataPoint(5, 2));
+this.radChartView1.Series.Add(scatterSeries);
+ScatterAreaSeries scatterSeries2 = new ScatterAreaSeries();
+scatterSeries2.DataPoints.Add(new ScatterDataPoint(2, 24));
+scatterSeries2.DataPoints.Add(new ScatterDataPoint(7, 12));
+scatterSeries2.DataPoints.Add(new ScatterDataPoint(15, 10));
+scatterSeries2.DataPoints.Add(new ScatterDataPoint(18, 22));
+scatterSeries2.DataPoints.Add(new ScatterDataPoint(19, 19));
+scatterSeries2.Spline = true;
+this.radChartView1.Series.Add(scatterSeries2);
 
-            this.radChartView1.Series.Add(scatterSeries);
-
-            ScatterAreaSeries scatterSeries2 = new ScatterAreaSeries();
-            scatterSeries2.DataPoints.Add(new ScatterDataPoint(2, 24));
-            scatterSeries2.DataPoints.Add(new ScatterDataPoint(7, 12));
-            scatterSeries2.DataPoints.Add(new ScatterDataPoint(15, 10));
-            scatterSeries2.DataPoints.Add(new ScatterDataPoint(18, 22));
-            scatterSeries2.DataPoints.Add(new ScatterDataPoint(19, 19));
-            scatterSeries2.Spline = true;
-            this.radChartView1.Series.Add(scatterSeries2);
 ````
 ````VB.NET
-        Dim scatterSeries As New ScatterAreaSeries()
-        scatterSeries.DataPoints.Add(New ScatterDataPoint(15, 19))
-        scatterSeries.DataPoints.Add(New ScatterDataPoint(18, 10))
-        scatterSeries.DataPoints.Add(New ScatterDataPoint(13, 15))
-        scatterSeries.DataPoints.Add(New ScatterDataPoint(10, 8))
-        scatterSeries.DataPoints.Add(New ScatterDataPoint(5, 2))
+Dim scatterSeries As New ScatterAreaSeries()
+scatterSeries.DataPoints.Add(New ScatterDataPoint(15, 19))
+scatterSeries.DataPoints.Add(New ScatterDataPoint(18, 10))
+scatterSeries.DataPoints.Add(New ScatterDataPoint(13, 15))
+scatterSeries.DataPoints.Add(New ScatterDataPoint(10, 8))
+scatterSeries.DataPoints.Add(New ScatterDataPoint(5, 2))
+Me.radChartView1.Series.Add(scatterSeries)
+Dim scatterSeries2 As New ScatterAreaSeries()
+scatterSeries2.DataPoints.Add(New ScatterDataPoint(2, 24))
+scatterSeries2.DataPoints.Add(New ScatterDataPoint(7, 12))
+scatterSeries2.DataPoints.Add(New ScatterDataPoint(15, 10))
+scatterSeries2.DataPoints.Add(New ScatterDataPoint(18, 22))
+scatterSeries2.DataPoints.Add(New ScatterDataPoint(19, 19))
+scatterSeries2.Spline = True
+Me.radChartView1.Series.Add(scatterSeries2)
 
-        Me.radChartView1.Series.Add(scatterSeries)
-
-        Dim scatterSeries2 As New ScatterAreaSeries()
-        scatterSeries2.DataPoints.Add(New ScatterDataPoint(2, 24))
-        scatterSeries2.DataPoints.Add(New ScatterDataPoint(7, 12))
-        scatterSeries2.DataPoints.Add(New ScatterDataPoint(15, 10))
-        scatterSeries2.DataPoints.Add(New ScatterDataPoint(18, 22))
-        scatterSeries2.DataPoints.Add(New ScatterDataPoint(19, 19))
-        scatterSeries2.Spline = True
-        Me.radChartView1.Series.Add(scatterSeries2)
-        '
 ````
 
 {{endregion}} 
@@ -87,11 +84,12 @@ The following list shows the most important properties of the ScaterArea series
 {{source=..\SamplesVB\ChartView\Series\ScatterAreraCode.vb region=Stroke}} 
 
 ````C#
-            scatterSeries.StrokeMode = AreaSeriesStrokeMode.Points;
+scatterSeries.StrokeMode = AreaSeriesStrokeMode.Points;
+
 ````
 ````VB.NET
-        scatterSeries2.StrokeMode = AreaSeriesStrokeMode.Points
-        '
+scatterSeries2.StrokeMode = AreaSeriesStrokeMode.Points
+
 ````
 
 {{endregion}} 

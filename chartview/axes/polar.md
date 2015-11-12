@@ -36,55 +36,46 @@ Polar axis is created by default when you add Polar or Radar series to the Polar
 {{source=..\SamplesVB\ChartView\Axes\PolarAxisForm.vb region=axis}} 
 
 ````C#
-            PolarAreaSeries series = new PolarAreaSeries();
+PolarAreaSeries series = new PolarAreaSeries();
+PolarDataPoint pt = new PolarDataPoint();
+pt.Angle = 30;
+pt.Value = 4;
+series.DataPoints.Add(pt);
+pt = new PolarDataPoint();
+pt.Angle = 135;
+pt.Value = 7;
+series.DataPoints.Add(pt);
+pt = new PolarDataPoint();
+pt.Angle = 270;
+pt.Value = 9;
+series.DataPoints.Add(pt);
+radChartView1.AreaType = ChartAreaType.Polar;
+radChartView1.Series.Add(series);
+PolarAxis axis = radChartView1.Axes.Get<PolarAxis>(0);
+axis.MajorStep = 4;
+axis.Maximum = 12;
 
-            PolarDataPoint pt = new PolarDataPoint();
-            pt.Angle = 30;
-            pt.Value = 4;
-            series.DataPoints.Add(pt);
-
-            pt = new PolarDataPoint();
-            pt.Angle = 135;
-            pt.Value = 7;
-            series.DataPoints.Add(pt);
-
-            pt = new PolarDataPoint();
-            pt.Angle = 270;
-            pt.Value = 9;
-            series.DataPoints.Add(pt);
-
-            radChartView1.AreaType = ChartAreaType.Polar;
-            radChartView1.Series.Add(series);
-
-            PolarAxis axis = radChartView1.Axes.Get<PolarAxis>(0);
-            axis.MajorStep = 4;
-            axis.Maximum = 12;
 ````
 ````VB.NET
-        Dim series As New PolarAreaSeries()
+Dim series As New PolarAreaSeries()
+Dim pt As New PolarDataPoint()
+pt.Angle = 30
+pt.Value = 4
+series.DataPoints.Add(pt)
+pt = New PolarDataPoint()
+pt.Angle = 135
+pt.Value = 7
+series.DataPoints.Add(pt)
+pt = New PolarDataPoint()
+pt.Angle = 270
+pt.Value = 9
+series.DataPoints.Add(pt)
+RadChartView1.AreaType = ChartAreaType.Polar
+RadChartView1.Series.Add(series)
+Dim axis As PolarAxis = RadChartView1.Axes.[Get](Of PolarAxis)(0)
+axis.MajorStep = 4
+axis.Maximum = 12
 
-        Dim pt As New PolarDataPoint()
-        pt.Angle = 30
-        pt.Value = 4
-        series.DataPoints.Add(pt)
-
-        pt = New PolarDataPoint()
-        pt.Angle = 135
-        pt.Value = 7
-        series.DataPoints.Add(pt)
-
-        pt = New PolarDataPoint()
-        pt.Angle = 270
-        pt.Value = 9
-        series.DataPoints.Add(pt)
-
-        RadChartView1.AreaType = ChartAreaType.Polar
-        RadChartView1.Series.Add(series)
-
-        Dim axis As PolarAxis = RadChartView1.Axes.[Get](Of PolarAxis)(0)
-        axis.MajorStep = 4
-        axis.Maximum = 12
-        '
 ````
 
 {{endregion}} 

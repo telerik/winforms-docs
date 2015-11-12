@@ -38,34 +38,33 @@ RadChartView uses Categorical axes to plot data that contains categorical values
 {{source=..\SamplesVB\ChartView\Axes\CategoricalAxisForm.vb region=catAxis}} 
 
 ````C#
-            LineSeries series = new LineSeries();
-            series.DataPoints.Add(new CategoricalDataPoint(20, "Jackets and Flackets"));
-            series.DataPoints.Add(new CategoricalDataPoint(40, "Accessories and Watches"));
-            series.DataPoints.Add(new CategoricalDataPoint(35, "Long Sleeve Tees"));
-            series.DataPoints.Add(new CategoricalDataPoint(45, "Dresses and Skirts"));
-            radChartView1.Series.Add(series);
+LineSeries series = new LineSeries();
+series.DataPoints.Add(new CategoricalDataPoint(20, "Jackets and Flackets"));
+series.DataPoints.Add(new CategoricalDataPoint(40, "Accessories and Watches"));
+series.DataPoints.Add(new CategoricalDataPoint(35, "Long Sleeve Tees"));
+series.DataPoints.Add(new CategoricalDataPoint(45, "Dresses and Skirts"));
+radChartView1.Series.Add(series);
+CategoricalAxis horizontalAxis = series.HorizontalAxis as CategoricalAxis;
+if (horizontalAxis != null)
+{
+    horizontalAxis.PlotMode = AxisPlotMode.BetweenTicks;
+    horizontalAxis.LabelFitMode = AxisLabelFitMode.MultiLine;
+}
 
-            CategoricalAxis horizontalAxis = series.HorizontalAxis as CategoricalAxis;
-            if (horizontalAxis != null)
-            {
-                horizontalAxis.PlotMode = AxisPlotMode.BetweenTicks;
-                horizontalAxis.LabelFitMode = AxisLabelFitMode.MultiLine;
-            }
 ````
 ````VB.NET
-        Dim series As New LineSeries()
-        series.DataPoints.Add(New CategoricalDataPoint(20, "Jackets and Flackets"))
-        series.DataPoints.Add(New CategoricalDataPoint(40, "Accessories and Watches"))
-        series.DataPoints.Add(New CategoricalDataPoint(35, "Long Sleeve Tees"))
-        series.DataPoints.Add(New CategoricalDataPoint(45, "Dresses and Skirts"))
-        RadChartView1.Series.Add(series)
+Dim series As New LineSeries()
+series.DataPoints.Add(New CategoricalDataPoint(20, "Jackets and Flackets"))
+series.DataPoints.Add(New CategoricalDataPoint(40, "Accessories and Watches"))
+series.DataPoints.Add(New CategoricalDataPoint(35, "Long Sleeve Tees"))
+series.DataPoints.Add(New CategoricalDataPoint(45, "Dresses and Skirts"))
+RadChartView1.Series.Add(series)
+Dim horizontalAxis As CategoricalAxis = TryCast(series.HorizontalAxis, CategoricalAxis)
+If horizontalAxis IsNot Nothing Then
+    horizontalAxis.PlotMode = AxisPlotMode.BetweenTicks
+    horizontalAxis.LabelFitMode = AxisLabelFitMode.MultiLine
+End If
 
-        Dim horizontalAxis As CategoricalAxis = TryCast(series.HorizontalAxis, CategoricalAxis)
-        If horizontalAxis IsNot Nothing Then
-            horizontalAxis.PlotMode = AxisPlotMode.BetweenTicks
-            horizontalAxis.LabelFitMode = AxisLabelFitMode.MultiLine
-        End If
-        '
 ````
 
 {{endregion}} 

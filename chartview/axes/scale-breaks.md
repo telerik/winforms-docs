@@ -25,39 +25,32 @@ To add a scale break you show use the __ScaleBreaks__ collection of the axis. Fi
 {{source=..\SamplesVB\ChartView\Axes\ScaleBreaksCode.vb region=Break1}} 
 
 ````C#
-            LinearAxis verticalAxis = radChartView1.Axes.Get<LinearAxis>(1);
+LinearAxis verticalAxis = radChartView1.Axes.Get<LinearAxis>(1);
+AxisScaleBreak scaleBreakItem = new AxisScaleBreak();
+scaleBreakItem.Name = "Item1";
+scaleBreakItem.From = 200d;
+scaleBreakItem.To = 900d;
+verticalAxis.ScaleBreaks.Add(scaleBreakItem);
+AxisScaleBreak scaleBreakItem1 = new AxisScaleBreak();
+scaleBreakItem.Name = "Item2";
+scaleBreakItem1.From = 2100d;
+scaleBreakItem1.To = 4900;
+verticalAxis.ScaleBreaks.Add(scaleBreakItem1);
 
-            AxisScaleBreak scaleBreakItem = new AxisScaleBreak();
-            scaleBreakItem.Name = "Item1";
-            scaleBreakItem.From = 200d;
-            scaleBreakItem.To = 900d;
-
-            verticalAxis.ScaleBreaks.Add(scaleBreakItem);
-
-            AxisScaleBreak scaleBreakItem1 = new AxisScaleBreak();
-            scaleBreakItem.Name = "Item2";
-            scaleBreakItem1.From = 2100d;
-            scaleBreakItem1.To = 4900;
-
-            verticalAxis.ScaleBreaks.Add(scaleBreakItem1);
 ````
 ````VB.NET
-        Dim verticalAxis As LinearAxis = radChartView1.Axes.Get(Of LinearAxis)(1)
+Dim verticalAxis As LinearAxis = radChartView1.Axes.Get(Of LinearAxis)(1)
+Dim scaleBreakItem As New AxisScaleBreak()
+scaleBreakItem.Name = "Item1"
+scaleBreakItem.From = 200.0R
+scaleBreakItem.To = 900.0R
+verticalAxis.ScaleBreaks.Add(scaleBreakItem)
+Dim scaleBreakItem1 As New AxisScaleBreak()
+scaleBreakItem.Name = "Item2"
+scaleBreakItem1.From = 2100.0R
+scaleBreakItem1.To = 4900
+verticalAxis.ScaleBreaks.Add(scaleBreakItem1)
 
-        Dim scaleBreakItem As New AxisScaleBreak()
-        scaleBreakItem.Name = "Item1"
-        scaleBreakItem.From = 200.0R
-        scaleBreakItem.To = 900.0R
-
-        verticalAxis.ScaleBreaks.Add(scaleBreakItem)
-
-        Dim scaleBreakItem1 As New AxisScaleBreak()
-        scaleBreakItem.Name = "Item2"
-        scaleBreakItem1.From = 2100.0R
-        scaleBreakItem1.To = 4900
-
-        verticalAxis.ScaleBreaks.Add(scaleBreakItem1)
-        '
 ````
 
 {{endregion}}  
@@ -91,22 +84,20 @@ The following example shows how you can set the scale breaks settings:
 {{source=..\SamplesVB\ChartView\Axes\ScaleBreaksCode.vb region=Settings}} 
 
 ````C#
-            LinearAxis verticalAxis = radChartView1.Axes.Get<LinearAxis>(1);
+LinearAxis verticalAxis = radChartView1.Axes.Get<LinearAxis>(1);
+verticalAxis.ScaleBreakStyle = ScaleBreakStyle.Waved;
+verticalAxis.ScaleBreakBackColor = Color.Silver;
+verticalAxis.ScaleBreakBorderColor = Color.Red;
+verticalAxis.ScaleBreakSize = 10;
 
-            verticalAxis.ScaleBreakStyle = ScaleBreakStyle.Waved;
-            verticalAxis.ScaleBreakBackColor = Color.Silver;
-            verticalAxis.ScaleBreakBorderColor = Color.Red;
-            verticalAxis.ScaleBreakSize = 10;
 ````
 ````VB.NET
-        Dim verticalAxis As LinearAxis = radChartView1.Axes.Get(Of LinearAxis)(1)
+Dim verticalAxis As LinearAxis = radChartView1.Axes.Get(Of LinearAxis)(1)
+verticalAxis.ScaleBreakStyle = ScaleBreakStyle.Waved
+verticalAxis.ScaleBreakBackColor = Color.Silver
+verticalAxis.ScaleBreakBorderColor = Color.Red
+verticalAxis.ScaleBreakSize = 10
 
-        verticalAxis.ScaleBreakStyle = ScaleBreakStyle.Waved
-        verticalAxis.ScaleBreakBackColor = Color.Silver
-        verticalAxis.ScaleBreakBorderColor = Color.Red
-        verticalAxis.ScaleBreakSize = 10
-
-        '
 ````
 
 {{endregion}} 

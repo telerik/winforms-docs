@@ -20,31 +20,32 @@ Let's start with creating some meaningful data that will be used by both indicat
 {{source=..\SamplesVB\ChartView\Series\Indicators\IndicatorsOverviewForm.vb region=IndicatorsCommonData}} 
 
 ````C#
-            //Create data
-            BindingList<OhlcObject> dataSource = new BindingList<OhlcObject>();
-            dataSource.Add(new OhlcObject(7, 8, 2, 4, DateTime.Now));
-            dataSource.Add(new OhlcObject(6, 7, 1, 7, DateTime.Now.AddDays(1)));
-            dataSource.Add(new OhlcObject(8, 9, 2, 4, DateTime.Now.AddDays(2)));
-            dataSource.Add(new OhlcObject(5, 5, 2, 2, DateTime.Now.AddDays(3)));
-            dataSource.Add(new OhlcObject(5, 8, 5, 6, DateTime.Now.AddDays(4)));
-            dataSource.Add(new OhlcObject(5, 7, 1, 7, DateTime.Now.AddDays(5)));
-            dataSource.Add(new OhlcObject(2, 5, 2, 4, DateTime.Now.AddDays(6)));
-            dataSource.Add(new OhlcObject(5, 5, 2, 3, DateTime.Now.AddDays(7)));
-            dataSource.Add(new OhlcObject(5, 8, 5, 7, DateTime.Now.AddDays(8)));
+//Create data
+BindingList<OhlcObject> dataSource = new BindingList<OhlcObject>();
+dataSource.Add(new OhlcObject(7, 8, 2, 4, DateTime.Now));
+dataSource.Add(new OhlcObject(6, 7, 1, 7, DateTime.Now.AddDays(1)));
+dataSource.Add(new OhlcObject(8, 9, 2, 4, DateTime.Now.AddDays(2)));
+dataSource.Add(new OhlcObject(5, 5, 2, 2, DateTime.Now.AddDays(3)));
+dataSource.Add(new OhlcObject(5, 8, 5, 6, DateTime.Now.AddDays(4)));
+dataSource.Add(new OhlcObject(5, 7, 1, 7, DateTime.Now.AddDays(5)));
+dataSource.Add(new OhlcObject(2, 5, 2, 4, DateTime.Now.AddDays(6)));
+dataSource.Add(new OhlcObject(5, 5, 2, 3, DateTime.Now.AddDays(7)));
+dataSource.Add(new OhlcObject(5, 8, 5, 7, DateTime.Now.AddDays(8)));
+
 ````
 ````VB.NET
-        'Create data
-        Dim dataSource As New BindingList(Of OhlcObject)()
-        dataSource.Add(New OhlcObject(7, 8, 2, 4, DateTime.Now))
-        dataSource.Add(New OhlcObject(6, 7, 1, 7, DateTime.Now.AddDays(1)))
-        dataSource.Add(New OhlcObject(8, 9, 2, 4, DateTime.Now.AddDays(2)))
-        dataSource.Add(New OhlcObject(5, 5, 2, 2, DateTime.Now.AddDays(3)))
-        dataSource.Add(New OhlcObject(5, 8, 5, 6, DateTime.Now.AddDays(4)))
-        dataSource.Add(New OhlcObject(5, 7, 1, 7, DateTime.Now.AddDays(5)))
-        dataSource.Add(New OhlcObject(2, 5, 2, 4, DateTime.Now.AddDays(6)))
-        dataSource.Add(New OhlcObject(5, 5, 2, 3, DateTime.Now.AddDays(7)))
-        dataSource.Add(New OhlcObject(5, 8, 5, 7, DateTime.Now.AddDays(8)))
-        '
+'Create data
+Dim dataSource As New BindingList(Of OhlcObject)()
+dataSource.Add(New OhlcObject(7, 8, 2, 4, DateTime.Now))
+dataSource.Add(New OhlcObject(6, 7, 1, 7, DateTime.Now.AddDays(1)))
+dataSource.Add(New OhlcObject(8, 9, 2, 4, DateTime.Now.AddDays(2)))
+dataSource.Add(New OhlcObject(5, 5, 2, 2, DateTime.Now.AddDays(3)))
+dataSource.Add(New OhlcObject(5, 8, 5, 6, DateTime.Now.AddDays(4)))
+dataSource.Add(New OhlcObject(5, 7, 1, 7, DateTime.Now.AddDays(5)))
+dataSource.Add(New OhlcObject(2, 5, 2, 4, DateTime.Now.AddDays(6)))
+dataSource.Add(New OhlcObject(5, 5, 2, 3, DateTime.Now.AddDays(7)))
+dataSource.Add(New OhlcObject(5, 8, 5, 7, DateTime.Now.AddDays(8)))
+
 ````
 
 {{endregion}} 
@@ -58,49 +59,48 @@ Each value of MA is the average of past __n__ days, where __n__ is a parameter d
 {{source=..\SamplesVB\ChartView\Series\Indicators\IndicatorsOverviewForm.vb region=ma}} 
 
 ````C#
-            //Create and add Moving Average indicator
-            MovingAverageIndicator maIndicator = new MovingAverageIndicator();
-            maIndicator.ValueMember = "Close";
-            maIndicator.CategoryMember = "Date";
-            maIndicator.DataSource = dataSource;
-            maIndicator.Period = 2;
-            maIndicator.BorderColor = Color.Red;
-            maIndicator.PointSize = SizeF.Empty;
-            this.radChartView1.Series.Add(maIndicator);
+//Create and add Moving Average indicator
+MovingAverageIndicator maIndicator = new MovingAverageIndicator();
+maIndicator.ValueMember = "Close";
+maIndicator.CategoryMember = "Date";
+maIndicator.DataSource = dataSource;
+maIndicator.Period = 2;
+maIndicator.BorderColor = Color.Red;
+maIndicator.PointSize = SizeF.Empty;
+this.radChartView1.Series.Add(maIndicator);
+//Create and add Ohlc series
+OhlcSeries series = new OhlcSeries();
+series.OpenValueMember = "Open";
+series.CloseValueMember = "Close";
+series.HighValueMember = "High";
+series.LowValueMember = "Low";
+series.CategoryMember = "Date";
+series.DataSource = dataSource;
+series.BorderColor = Color.Black;
+this.radChartView1.Series.Add(series);
 
-            //Create and add Ohlc series
-            OhlcSeries series = new OhlcSeries();
-            series.OpenValueMember = "Open";
-            series.CloseValueMember = "Close";
-            series.HighValueMember = "High";
-            series.LowValueMember = "Low";
-            series.CategoryMember = "Date";
-            series.DataSource = dataSource;
-            series.BorderColor = Color.Black;
-            this.radChartView1.Series.Add(series);
 ````
 ````VB.NET
-        'Create and add Moving Average indicator
-        Dim maIndicator As New MovingAverageIndicator()
-        maIndicator.ValueMember = "Close"
-        maIndicator.CategoryMember = "Date"
-        maIndicator.DataSource = dataSource
-        maIndicator.Period = 2
-        maIndicator.BorderColor = Color.Red
-        maIndicator.PointSize = SizeF.Empty
-        Me.RadChartView1.Series.Add(maIndicator)
+'Create and add Moving Average indicator
+Dim maIndicator As New MovingAverageIndicator()
+maIndicator.ValueMember = "Close"
+maIndicator.CategoryMember = "Date"
+maIndicator.DataSource = dataSource
+maIndicator.Period = 2
+maIndicator.BorderColor = Color.Red
+maIndicator.PointSize = SizeF.Empty
+Me.RadChartView1.Series.Add(maIndicator)
+'Create and add Ohlc series
+Dim series As New OhlcSeries()
+series.OpenValueMember = "Open"
+series.CloseValueMember = "Close"
+series.HighValueMember = "High"
+series.LowValueMember = "Low"
+series.CategoryMember = "Date"
+series.DataSource = dataSource
+series.BorderColor = Color.Black
+Me.RadChartView1.Series.Add(series)
 
-        'Create and add Ohlc series
-        Dim series As New OhlcSeries()
-        series.OpenValueMember = "Open"
-        series.CloseValueMember = "Close"
-        series.HighValueMember = "High"
-        series.LowValueMember = "Low"
-        series.CategoryMember = "Date"
-        series.DataSource = dataSource
-        series.BorderColor = Color.Black
-        Me.RadChartView1.Series.Add(series)
-        '
 ````
 
 {{endregion}} 
@@ -128,53 +128,52 @@ The indicator consists of two bands that aim to provide a relative definition of
 {{source=..\SamplesVB\ChartView\Series\Indicators\IndicatorsOverviewForm.vb region=Bands}} 
 
 ````C#
-            //Create and add Bollinger Bands indicator
-            BollingerBandsIndicator bollIndicator = new BollingerBandsIndicator();
-            bollIndicator.ValueMember = "Close";
-            bollIndicator.CategoryMember = "Date";
-            bollIndicator.DataSource = dataSource;
-            bollIndicator.StandardDeviations = 2;
-            bollIndicator.Period = 5;
-            bollIndicator.InnerIndicator.BorderColor = Color.DarkGray;
-            bollIndicator.BorderColor = Color.Red;
-            bollIndicator.PointSize = SizeF.Empty;
-            this.radChartView1.Series.Add(bollIndicator);
+//Create and add Bollinger Bands indicator
+BollingerBandsIndicator bollIndicator = new BollingerBandsIndicator();
+bollIndicator.ValueMember = "Close";
+bollIndicator.CategoryMember = "Date";
+bollIndicator.DataSource = dataSource;
+bollIndicator.StandardDeviations = 2;
+bollIndicator.Period = 5;
+bollIndicator.InnerIndicator.BorderColor = Color.DarkGray;
+bollIndicator.BorderColor = Color.Red;
+bollIndicator.PointSize = SizeF.Empty;
+this.radChartView1.Series.Add(bollIndicator);
+//Create and add Ohlc series
+OhlcSeries ohlcSeries = new OhlcSeries();
+ohlcSeries.OpenValueMember = "Open";
+ohlcSeries.CloseValueMember = "Close";
+ohlcSeries.HighValueMember = "High";
+ohlcSeries.LowValueMember = "Low";
+ohlcSeries.CategoryMember = "Date";
+ohlcSeries.DataSource = dataSource;
+ohlcSeries.BorderColor = Color.Black;
+this.radChartView1.Series.Add(ohlcSeries);
 
-            //Create and add Ohlc series
-            OhlcSeries ohlcSeries = new OhlcSeries();
-            ohlcSeries.OpenValueMember = "Open";
-            ohlcSeries.CloseValueMember = "Close";
-            ohlcSeries.HighValueMember = "High";
-            ohlcSeries.LowValueMember = "Low";
-            ohlcSeries.CategoryMember = "Date";
-            ohlcSeries.DataSource = dataSource;
-            ohlcSeries.BorderColor = Color.Black;
-            this.radChartView1.Series.Add(ohlcSeries);
 ````
 ````VB.NET
-        'Create and add Bollinger Bands indicator
-        Dim bollIndicator As New BollingerBandsIndicator()
-        bollIndicator.ValueMember = "Close"
-        bollIndicator.CategoryMember = "Date"
-        bollIndicator.DataSource = dataSource
-        bollIndicator.StandardDeviations = 2
-        bollIndicator.Period = 5
-        bollIndicator.InnerIndicator.BorderColor = Color.DarkGray
-        bollIndicator.BorderColor = Color.Red
-        bollIndicator.PointSize = SizeF.Empty
-        Me.RadChartView1.Series.Add(bollIndicator)
+'Create and add Bollinger Bands indicator
+Dim bollIndicator As New BollingerBandsIndicator()
+bollIndicator.ValueMember = "Close"
+bollIndicator.CategoryMember = "Date"
+bollIndicator.DataSource = dataSource
+bollIndicator.StandardDeviations = 2
+bollIndicator.Period = 5
+bollIndicator.InnerIndicator.BorderColor = Color.DarkGray
+bollIndicator.BorderColor = Color.Red
+bollIndicator.PointSize = SizeF.Empty
+Me.RadChartView1.Series.Add(bollIndicator)
+'Create and add Ohlc series
+Dim ohlcSeries As New OhlcSeries()
+ohlcSeries.OpenValueMember = "Open"
+ohlcSeries.CloseValueMember = "Close"
+ohlcSeries.HighValueMember = "High"
+ohlcSeries.LowValueMember = "Low"
+ohlcSeries.CategoryMember = "Date"
+ohlcSeries.DataSource = dataSource
+ohlcSeries.BorderColor = Color.Black
+Me.RadChartView1.Series.Add(ohlcSeries)
 
-        'Create and add Ohlc series
-        Dim ohlcSeries As New OhlcSeries()
-        ohlcSeries.OpenValueMember = "Open"
-        ohlcSeries.CloseValueMember = "Close"
-        ohlcSeries.HighValueMember = "High"
-        ohlcSeries.LowValueMember = "Low"
-        ohlcSeries.CategoryMember = "Date"
-        ohlcSeries.DataSource = dataSource
-        ohlcSeries.BorderColor = Color.Black
-        Me.RadChartView1.Series.Add(ohlcSeries)
-        '
 ````
 
 {{endregion}} 

@@ -55,35 +55,33 @@ Logarithmic axis is not added by default to Cartesian series. For this reason yo
 {{source=..\SamplesVB\ChartView\Axes\LogarithmicAxisForm.vb region=axis}} 
 
 ````C#
-            BarSeries series = new BarSeries();
-            series.DataPoints.Add(new CategoricalDataPoint(10000, "Category 1"));
-            series.DataPoints.Add(new CategoricalDataPoint(100, "Category 2"));
-            series.DataPoints.Add(new CategoricalDataPoint(1000, "Category 3"));
-            series.DataPoints.Add(new CategoricalDataPoint(10, "Category 4"));
-
-            LogarithmicAxis verticalAxis = new LogarithmicAxis();
-            verticalAxis.AxisType = AxisType.Second;
-            verticalAxis.LogarithmBase = 10;
+BarSeries series = new BarSeries();
+series.DataPoints.Add(new CategoricalDataPoint(10000, "Category 1"));
+series.DataPoints.Add(new CategoricalDataPoint(100, "Category 2"));
+series.DataPoints.Add(new CategoricalDataPoint(1000, "Category 3"));
+series.DataPoints.Add(new CategoricalDataPoint(10, "Category 4"));
+LogarithmicAxis verticalAxis = new LogarithmicAxis();
+verticalAxis.AxisType = AxisType.Second;
+verticalAxis.LogarithmBase = 10;
             
-            //First assign the axis to the VerticalAxis property and then add the series to the chart
-            series.VerticalAxis = verticalAxis;
-            radChartView1.Series.Add(series);
+//First assign the axis to the VerticalAxis property and then add the series to the chart
+series.VerticalAxis = verticalAxis;
+radChartView1.Series.Add(series);
+
 ````
 ````VB.NET
-       Dim series As New BarSeries()
-        series.DataPoints.Add(New CategoricalDataPoint(10000, "Category 1"))
-        series.DataPoints.Add(New CategoricalDataPoint(100, "Category 2"))
-        series.DataPoints.Add(New CategoricalDataPoint(1000, "Category 3"))
-        series.DataPoints.Add(New CategoricalDataPoint(10, "Category 4"))
+   Dim series As New BarSeries()
+    series.DataPoints.Add(New CategoricalDataPoint(10000, "Category 1"))
+    series.DataPoints.Add(New CategoricalDataPoint(100, "Category 2"))
+    series.DataPoints.Add(New CategoricalDataPoint(1000, "Category 3"))
+    series.DataPoints.Add(New CategoricalDataPoint(10, "Category 4"))
+    Dim verticalAxis As New LogarithmicAxis()
+    verticalAxis.AxisType = AxisType.Second
+    verticalAxis.LogarithmBase = 10
+    'First assign the axis to the VerticalAxis property and then add the series to the chart
+    series.VerticalAxis = verticalAxis
+    RadChartView1.Series.Add(series)
 
-        Dim verticalAxis As New LogarithmicAxis()
-        verticalAxis.AxisType = AxisType.Second
-        verticalAxis.LogarithmBase = 10
-
-        'First assign the axis to the VerticalAxis property and then add the series to the chart
-        series.VerticalAxis = verticalAxis
-        RadChartView1.Series.Add(series)
-        '
 ````
 
 {{endregion}} 

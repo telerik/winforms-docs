@@ -36,33 +36,30 @@ The following example shows how you can add funnel series in code.
 {{source=..\SamplesVB\ChartView\Series\FunnelSeriesCode.vb region=funnel}} 
 
 ````C#
-            radChartView1.AreaType = Telerik.WinControls.UI.ChartAreaType.Funnel;
-            FunnelSeries funnelSeries = new FunnelSeries();
+radChartView1.AreaType = Telerik.WinControls.UI.ChartAreaType.Funnel;
+FunnelSeries funnelSeries = new FunnelSeries();
+funnelSeries.DataPoints.Add(new FunnelDataPoint(5442, "Visited the website"));
+funnelSeries.DataPoints.Add(new FunnelDataPoint(1519, "Watched the demos"));
+funnelSeries.DataPoints.Add(new FunnelDataPoint(1131, "Downloaded a trial"));
+funnelSeries.DataPoints.Add(new FunnelDataPoint(811, "Purchased a license"));
+funnelSeries.DataPoints.Add(new FunnelDataPoint(704, "Renewed a license"));
+funnelSeries.ShowLabels = true;
+radChartView1.ShowLegend = true;
+radChartView1.Series.Add(funnelSeries);
 
-            funnelSeries.DataPoints.Add(new FunnelDataPoint(5442, "Visited the website"));
-            funnelSeries.DataPoints.Add(new FunnelDataPoint(1519, "Watched the demos"));
-            funnelSeries.DataPoints.Add(new FunnelDataPoint(1131, "Downloaded a trial"));
-            funnelSeries.DataPoints.Add(new FunnelDataPoint(811, "Purchased a license"));
-            funnelSeries.DataPoints.Add(new FunnelDataPoint(704, "Renewed a license"));
-            funnelSeries.ShowLabels = true;
-
-            radChartView1.ShowLegend = true;
-            radChartView1.Series.Add(funnelSeries);
 ````
 ````VB.NET
-        radChartView1.AreaType = Telerik.WinControls.UI.ChartAreaType.Funnel
-        Dim funnelSeries As New FunnelSeries()
+radChartView1.AreaType = Telerik.WinControls.UI.ChartAreaType.Funnel
+Dim funnelSeries As New FunnelSeries()
+funnelSeries.DataPoints.Add(New FunnelDataPoint(5442, "Visited the website"))
+funnelSeries.DataPoints.Add(New FunnelDataPoint(1519, "Watched the demos"))
+funnelSeries.DataPoints.Add(New FunnelDataPoint(1131, "Downloaded a trial"))
+funnelSeries.DataPoints.Add(New FunnelDataPoint(811, "Purchased a license"))
+funnelSeries.DataPoints.Add(New FunnelDataPoint(704, "Renewed a license"))
+funnelSeries.ShowLabels = True
+radChartView1.ShowLegend = True
+radChartView1.Series.Add(funnelSeries)
 
-        funnelSeries.DataPoints.Add(New FunnelDataPoint(5442, "Visited the website"))
-        funnelSeries.DataPoints.Add(New FunnelDataPoint(1519, "Watched the demos"))
-        funnelSeries.DataPoints.Add(New FunnelDataPoint(1131, "Downloaded a trial"))
-        funnelSeries.DataPoints.Add(New FunnelDataPoint(811, "Purchased a license"))
-        funnelSeries.DataPoints.Add(New FunnelDataPoint(704, "Renewed a license"))
-        funnelSeries.ShowLabels = True
-
-        radChartView1.ShowLegend = True
-        radChartView1.Series.Add(funnelSeries)
-        '
 ````
 
 {{endregion}} 

@@ -23,16 +23,16 @@ In order to utilize this behavior users simply have to add it to the chart's __C
 {{source=..\SamplesVB\ChartView\Features\ChartSelection.vb region=controller}} 
 
 ````C#
-            radChartView1.Controllers.Add(new ChartSelectionController());
-            radChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint;
-            radChartView1.SelectedPointChanged += new ChartViewSelectedChangedEventHandler(radChartView1_SelectedPointChanged);
+radChartView1.Controllers.Add(new ChartSelectionController());
+radChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint;
+radChartView1.SelectedPointChanged += new ChartViewSelectedChangedEventHandler(radChartView1_SelectedPointChanged);
+
 ````
 ````VB.NET
-        RadChartView1.Controllers.Add(New ChartSelectionController())
-        RadChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint
-        AddHandler RadChartView1.SelectedPointChanged, AddressOf RadChartView1_SelectedPointChanged
+RadChartView1.Controllers.Add(New ChartSelectionController())
+RadChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint
+AddHandler RadChartView1.SelectedPointChanged, AddressOf RadChartView1_SelectedPointChanged
 
-        '
 ````
 
 {{endregion}} 
@@ -46,13 +46,14 @@ The ChartSelectionController will be added automatically if the __SelectionMode_
 {{source=..\SamplesVB\ChartView\Features\ChartSelection.vb region=selectionMode}} 
 
 ````C#
-            radChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint;
-            radChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints;
+radChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint;
+radChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints;
+
 ````
 ````VB.NET
-        radChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint
-        radChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints
-        '
+radChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint
+radChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints
+
 ````
 
 {{endregion}}  
@@ -63,96 +64,95 @@ Here is a sample using PieSeries and multiple selection. When a slice is selecte
 {{source=..\SamplesVB\ChartView\Features\ChartSelection.vb region=example}} 
 
 ````C#
-        public ChartSelection()
+public ChartSelection()
+{
+    InitializeComponent();
+    radChartView1.AreaType = ChartAreaType.Pie;
+    PieSeries pieSeries = new PieSeries();
+    pieSeries.ShowLabels = true;
+    pieSeries.PointSize = new SizeF(15, 15);
+    pieSeries.DataPoints.Add(new PieDataPoint(10));
+    pieSeries.DataPoints.Add(new PieDataPoint(5));
+    pieSeries.DataPoints.Add(new PieDataPoint(40));
+    pieSeries.DataPoints.Add(new PieDataPoint(22));
+    pieSeries.DataPoints.Add(new PieDataPoint(11));
+    pieSeries.DataPoints.Add(new PieDataPoint(20));
+    radChartView1.Series.Add(pieSeries);
+    radChartView1.Controllers.Add(new ChartSelectionController());
+    radChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints;
+    radChartView1.SelectedPointChanged += new ChartViewSelectedChangedEventHandler(radChartView1_SelectedPointChanged);
+}
+void radChartView1_SelectedPointChanged(object sender, ChartViewSelectedPointChangedEventArgs args)
+{
+    if (args.NewSelectedPoint != null)
+    {
+        UpdateSelectedPoint(args.NewSelectedPoint);
+    }
+    if (args.OldSelectedPoint != null)
+    {
+        UpdateSelectedPoint(args.OldSelectedPoint);
+    }
+}
+void UpdateSelectedPoint(DataPoint point)
+{
+    PieDataPoint pieDataPoint = point as PieDataPoint;
+    if (pieDataPoint != null)
+    {
+        if (pieDataPoint.IsSelected)
         {
-            InitializeComponent();
-
-            radChartView1.AreaType = ChartAreaType.Pie;
-            PieSeries pieSeries = new PieSeries();
-            pieSeries.ShowLabels = true;
-            pieSeries.PointSize = new SizeF(15, 15);
-            pieSeries.DataPoints.Add(new PieDataPoint(10));
-            pieSeries.DataPoints.Add(new PieDataPoint(5));
-            pieSeries.DataPoints.Add(new PieDataPoint(40));
-            pieSeries.DataPoints.Add(new PieDataPoint(22));
-            pieSeries.DataPoints.Add(new PieDataPoint(11));
-            pieSeries.DataPoints.Add(new PieDataPoint(20));
-            radChartView1.Series.Add(pieSeries);
-
-            radChartView1.Controllers.Add(new ChartSelectionController());
-            radChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints;
-            radChartView1.SelectedPointChanged += new ChartViewSelectedChangedEventHandler(radChartView1_SelectedPointChanged);
+            pieDataPoint.OffsetFromCenter = 0.1;
         }
-
-        void radChartView1_SelectedPointChanged(object sender, ChartViewSelectedPointChangedEventArgs args)
+        else
         {
-            if (args.NewSelectedPoint != null)
-            {
-                UpdateSelectedPoint(args.NewSelectedPoint);
-            }
-            if (args.OldSelectedPoint != null)
-            {
-                UpdateSelectedPoint(args.OldSelectedPoint);
-            }
+            pieDataPoint.OffsetFromCenter = 0;
         }
+    }
+}
 
-        void UpdateSelectedPoint(DataPoint point)
-        {
-            PieDataPoint pieDataPoint = point as PieDataPoint;
-            if (pieDataPoint != null)
-            {
-                if (pieDataPoint.IsSelected)
-                {
-                    pieDataPoint.OffsetFromCenter = 0.1;
-                }
-                else
-                {
-                    pieDataPoint.OffsetFromCenter = 0;
-                }
-            }
-        }
 ````
 ````VB.NET
-    Public Sub New()
-        InitializeComponent()
-
-        radChartView1.AreaType = ChartAreaType.Pie
-        Dim pieSeries As New PieSeries()
-        pieSeries.ShowLabels = True
-        pieSeries.PointSize = New SizeF(15, 15)
-        pieSeries.DataPoints.Add(New PieDataPoint(10))
-        pieSeries.DataPoints.Add(New PieDataPoint(5))
-        pieSeries.DataPoints.Add(New PieDataPoint(40))
-        pieSeries.DataPoints.Add(New PieDataPoint(22))
-        pieSeries.DataPoints.Add(New PieDataPoint(11))
-        pieSeries.DataPoints.Add(New PieDataPoint(20))
-        radChartView1.Series.Add(pieSeries)
-
-        RadChartView1.Controllers.Add(New ChartSelectionController())
-        RadChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints
-        AddHandler RadChartView1.SelectedPointChanged, AddressOf RadChartView1_SelectedPointChanged
-
-    End Sub
-
-    Private Sub RadChartView1_SelectedPointChanged(sender As Object, args As ChartViewSelectedPointChangedEventArgs)
-        If args.NewSelectedPoint IsNot Nothing Then
-            UpdateSelectedPoint(args.NewSelectedPoint)
+Public Sub New()
+    InitializeComponent()
+    radChartView1.AreaType = ChartAreaType.Pie
+    Dim pieSeries As New PieSeries()
+    pieSeries.ShowLabels = True
+    pieSeries.PointSize = New SizeF(15, 15)
+    pieSeries.DataPoints.Add(New PieDataPoint(10))
+    pieSeries.DataPoints.Add(New PieDataPoint(5))
+    pieSeries.DataPoints.Add(New PieDataPoint(40))
+    pieSeries.DataPoints.Add(New PieDataPoint(22))
+    pieSeries.DataPoints.Add(New PieDataPoint(11))
+    pieSeries.DataPoints.Add(New PieDataPoint(20))
+    radChartView1.Series.Add(pieSeries)
+    RadChartView1.Controllers.Add(New ChartSelectionController())
+    RadChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints
+    AddHandler RadChartView1.SelectedPointChanged, AddressOf RadChartView1_SelectedPointChanged
+End Sub
+Private Sub RadChartView1_SelectedPointChanged(sender As Object, args As ChartViewSelectedPointChangedEventArgs)
+    If args.NewSelectedPoint IsNot Nothing Then
+        UpdateSelectedPoint(args.NewSelectedPoint)
+    End If
+    If args.OldSelectedPoint IsNot Nothing Then
+        UpdateSelectedPoint(args.OldSelectedPoint)
+    End If
+End Sub
+Private Sub UpdateSelectedPoint(point As DataPoint)
+    Dim pieDataPoint As PieDataPoint = TryCast(point, PieDataPoint)
+    If pieDataPoint IsNot Nothing Then
+        If pieDataPoint.IsSelected Then
+            pieDataPoint.OffsetFromCenter = 0.1
+        Else
+            pieDataPoint.OffsetFromCenter = 0
         End If
-        If args.OldSelectedPoint IsNot Nothing Then
-            UpdateSelectedPoint(args.OldSelectedPoint)
-        End If
-    End Sub
+    End If
+End Sub
+ Region
+Private Sub snippets()
+    '#Region "controller"
+    RadChartView1.Controllers.Add(New ChartSelectionController())
+    RadChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint
+    AddHandler RadChartView1.SelectedPointChanged, AddressOf RadChartView1_SelectedPointChanged
 
-    Private Sub UpdateSelectedPoint(point As DataPoint)
-        Dim pieDataPoint As PieDataPoint = TryCast(point, PieDataPoint)
-        If pieDataPoint IsNot Nothing Then
-            If pieDataPoint.IsSelected Then
-                pieDataPoint.OffsetFromCenter = 0.1
-            Else
-                pieDataPoint.OffsetFromCenter = 0
-            End If
-        End If
-    End Sub
 ````
 
 {{endregion}} 

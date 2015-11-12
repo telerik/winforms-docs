@@ -20,11 +20,12 @@ RadChartView provides a built-in mechanism for resolving labels overlapping with
 {{source=..\SamplesVB\ChartView\Features\SmartLabels.vb region=AddSmartLabelsController}} 
 
 ````C#
-            this.radChartView1.Controllers.Add(new SmartLabelsController());
+this.radChartView1.Controllers.Add(new SmartLabelsController());
+
 ````
 ````VB.NET
-        Me.radChartView1.Controllers.Add(New SmartLabelsController())
-        '
+Me.radChartView1.Controllers.Add(New SmartLabelsController())
+
 ````
 
 {{endregion}}  
@@ -35,11 +36,12 @@ Alternatively, you can leave RadChartView do this for you by setting the __ShowS
 {{source=..\SamplesVB\ChartView\Features\SmartLabels.vb region=EnableSmartLabels}} 
 
 ````C#
-            this.radChartView1.ShowSmartLabels = true;
+this.radChartView1.ShowSmartLabels = true;
+
 ````
 ````VB.NET
-        Me.radChartView1.ShowSmartLabels = True
-        '
+Me.radChartView1.ShowSmartLabels = True
+
 ````
 
 {{endregion}} 

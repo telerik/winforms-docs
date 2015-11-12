@@ -23,51 +23,45 @@ Here is a sample demonstrating how to bind [LineSeries]({%slug winforms/chartvie
 {{source=..\SamplesVB\ChartView\DataBinding\ChartViewDataBindingToDataTable.vb region=binding}} 
 
 ````C#
-        DataTable table;
+DataTable table;
+protected override void OnLoad(EventArgs e)
+{
+    base.OnLoad(e);
+    table = new DataTable();
+    table.Columns.Add("Value", typeof(double));
+    table.Columns.Add("Name", typeof(string));
+    table.Rows.Add(1, "John");
+    table.Rows.Add(3, "Adam");
+    table.Rows.Add(5, "Peter");
+    table.Rows.Add(12, "Sam");
+    table.Rows.Add(6, "Paul");
+    LineSeries lineSeria = new LineSeries();
+    radChartView1.Series.Add(lineSeria);
+    lineSeria.ValueMember = "Value";
+    lineSeria.CategoryMember = "Name";
+    lineSeria.DataSource = table;
+}
 
-        protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
-
-            table = new DataTable();
-            table.Columns.Add("Value", typeof(double));
-            table.Columns.Add("Name", typeof(string));
-            table.Rows.Add(1, "John");
-            table.Rows.Add(3, "Adam");
-            table.Rows.Add(5, "Peter");
-            table.Rows.Add(12, "Sam");
-            table.Rows.Add(6, "Paul");
-
-            LineSeries lineSeria = new LineSeries();
-            radChartView1.Series.Add(lineSeria);
-
-            lineSeria.ValueMember = "Value";
-            lineSeria.CategoryMember = "Name";
-            lineSeria.DataSource = table;
-        }
 ````
 ````VB.NET
-    Private table As DataTable
+Private table As DataTable
+Protected Overrides Sub OnLoad(e As EventArgs)
+    MyBase.OnLoad(e)
+    table = New DataTable()
+    table.Columns.Add("Value", GetType(Double))
+    table.Columns.Add("Name", GetType(String))
+    table.Rows.Add(1, "John")
+    table.Rows.Add(3, "Adam")
+    table.Rows.Add(5, "Peter")
+    table.Rows.Add(12, "Sam")
+    table.Rows.Add(6, "Paul")
+    Dim lineSeria As New LineSeries()
+    RadChartView1.Series.Add(lineSeria)
+    lineSeria.ValueMember = "Value"
+    lineSeria.CategoryMember = "Name"
+    lineSeria.DataSource = table
+End Sub
 
-    Protected Overrides Sub OnLoad(e As EventArgs)
-        MyBase.OnLoad(e)
-
-        table = New DataTable()
-        table.Columns.Add("Value", GetType(Double))
-        table.Columns.Add("Name", GetType(String))
-        table.Rows.Add(1, "John")
-        table.Rows.Add(3, "Adam")
-        table.Rows.Add(5, "Peter")
-        table.Rows.Add(12, "Sam")
-        table.Rows.Add(6, "Paul")
-
-        Dim lineSeria As New LineSeries()
-        RadChartView1.Series.Add(lineSeria)
-
-        lineSeria.ValueMember = "Value"
-        lineSeria.CategoryMember = "Name"
-        lineSeria.DataSource = table
-    End Sub
 ````
 
 {{endregion}} 

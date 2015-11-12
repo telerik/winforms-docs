@@ -18,35 +18,34 @@ __SteplineSeries__ plot their Categorical data points on Cartesian Area using on
 {{source=..\SamplesVB\ChartView\Series\SteplineSeriesForm.vb region=Initialize}} 
 
 ````C#
-            SteplineSeries lineSeries = new SteplineSeries();
-            lineSeries.DataPoints.Add(new CategoricalDataPoint(20, "Jan"));
-            lineSeries.DataPoints.Add(new CategoricalDataPoint(22, "Apr"));
-            lineSeries.DataPoints.Add(new CategoricalDataPoint(12, "Jul"));
-            lineSeries.DataPoints.Add(new CategoricalDataPoint(19, "Oct"));
-            this.radChartView1.Series.Add(lineSeries);
+SteplineSeries lineSeries = new SteplineSeries();
+lineSeries.DataPoints.Add(new CategoricalDataPoint(20, "Jan"));
+lineSeries.DataPoints.Add(new CategoricalDataPoint(22, "Apr"));
+lineSeries.DataPoints.Add(new CategoricalDataPoint(12, "Jul"));
+lineSeries.DataPoints.Add(new CategoricalDataPoint(19, "Oct"));
+this.radChartView1.Series.Add(lineSeries);
+SteplineSeries lineSeries2 = new SteplineSeries();
+lineSeries2.DataPoints.Add(new CategoricalDataPoint(18, "Jan"));
+lineSeries2.DataPoints.Add(new CategoricalDataPoint(15, "Apr"));
+lineSeries2.DataPoints.Add(new CategoricalDataPoint(17, "Jul"));
+lineSeries2.DataPoints.Add(new CategoricalDataPoint(22, "Oct"));
+this.radChartView1.Series.Add(lineSeries2);
 
-            SteplineSeries lineSeries2 = new SteplineSeries();
-            lineSeries2.DataPoints.Add(new CategoricalDataPoint(18, "Jan"));
-            lineSeries2.DataPoints.Add(new CategoricalDataPoint(15, "Apr"));
-            lineSeries2.DataPoints.Add(new CategoricalDataPoint(17, "Jul"));
-            lineSeries2.DataPoints.Add(new CategoricalDataPoint(22, "Oct"));
-            this.radChartView1.Series.Add(lineSeries2);
 ````
 ````VB.NET
-        Dim lineSeries As New SteplineSeries()
-        lineSeries.DataPoints.Add(New CategoricalDataPoint(20, "Jan"))
-        lineSeries.DataPoints.Add(New CategoricalDataPoint(22, "Apr"))
-        lineSeries.DataPoints.Add(New CategoricalDataPoint(12, "Jul"))
-        lineSeries.DataPoints.Add(New CategoricalDataPoint(19, "Oct"))
-        Me.RadChartView1.Series.Add(lineSeries)
+Dim lineSeries As New SteplineSeries()
+lineSeries.DataPoints.Add(New CategoricalDataPoint(20, "Jan"))
+lineSeries.DataPoints.Add(New CategoricalDataPoint(22, "Apr"))
+lineSeries.DataPoints.Add(New CategoricalDataPoint(12, "Jul"))
+lineSeries.DataPoints.Add(New CategoricalDataPoint(19, "Oct"))
+Me.RadChartView1.Series.Add(lineSeries)
+Dim lineSeries2 As New SteplineSeries()
+lineSeries2.DataPoints.Add(New CategoricalDataPoint(18, "Jan"))
+lineSeries2.DataPoints.Add(New CategoricalDataPoint(15, "Apr"))
+lineSeries2.DataPoints.Add(New CategoricalDataPoint(17, "Jul"))
+lineSeries2.DataPoints.Add(New CategoricalDataPoint(22, "Oct"))
+Me.RadChartView1.Series.Add(lineSeries2)
 
-        Dim lineSeries2 As New SteplineSeries()
-        lineSeries2.DataPoints.Add(New CategoricalDataPoint(18, "Jan"))
-        lineSeries2.DataPoints.Add(New CategoricalDataPoint(15, "Apr"))
-        lineSeries2.DataPoints.Add(New CategoricalDataPoint(17, "Jul"))
-        lineSeries2.DataPoints.Add(New CategoricalDataPoint(22, "Oct"))
-        Me.RadChartView1.Series.Add(lineSeries2)
-        '
 ````
 
 {{endregion}} 

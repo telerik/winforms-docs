@@ -52,47 +52,44 @@ Here is how to set properties of the LinearAxes:
 {{source=..\SamplesVB\ChartView\Axes\LinearAxisForm.vb region=axis}} 
 
 ````C#
-            ScatterSeries series = new ScatterSeries();
-            series.DataPoints.Add(new ScatterDataPoint(5, 5));
-            series.DataPoints.Add(new ScatterDataPoint(4, 2));
-            series.DataPoints.Add(new ScatterDataPoint(-1, 3));
-            series.DataPoints.Add(new ScatterDataPoint(11, 4));
-            radChartView1.Series.Add(series);
+ScatterSeries series = new ScatterSeries();
+series.DataPoints.Add(new ScatterDataPoint(5, 5));
+series.DataPoints.Add(new ScatterDataPoint(4, 2));
+series.DataPoints.Add(new ScatterDataPoint(-1, 3));
+series.DataPoints.Add(new ScatterDataPoint(11, 4));
+radChartView1.Series.Add(series);
+LinearAxis horizontalAxis = radChartView1.Axes.Get<LinearAxis>(0);
+// or horizontalAxis = series.HorizontalAxis as LinearAxis;
+horizontalAxis.Minimum = -5;
+horizontalAxis.Maximum = 15;
+horizontalAxis.MajorStep = 5;
+LinearAxis verticalAxis = radChartView1.Axes.Get<LinearAxis>(1);
+// or verticalAxis = series.VerticalAxis as LinearAxis;
+verticalAxis.Minimum = 1;
+verticalAxis.Maximum = 7;
+verticalAxis.MajorStep = 2;
+verticalAxis.HorizontalLocation = AxisHorizontalLocation.Right;
 
-            LinearAxis horizontalAxis = radChartView1.Axes.Get<LinearAxis>(0);
-            // or horizontalAxis = series.HorizontalAxis as LinearAxis;
-            horizontalAxis.Minimum = -5;
-            horizontalAxis.Maximum = 15;
-            horizontalAxis.MajorStep = 5;
-
-            LinearAxis verticalAxis = radChartView1.Axes.Get<LinearAxis>(1);
-            // or verticalAxis = series.VerticalAxis as LinearAxis;
-            verticalAxis.Minimum = 1;
-            verticalAxis.Maximum = 7;
-            verticalAxis.MajorStep = 2;
-            verticalAxis.HorizontalLocation = AxisHorizontalLocation.Right;
 ````
 ````VB.NET
-        Dim series As New ScatterSeries()
-        series.DataPoints.Add(New ScatterDataPoint(5, 5))
-        series.DataPoints.Add(New ScatterDataPoint(4, 2))
-        series.DataPoints.Add(New ScatterDataPoint(-1, 3))
-        series.DataPoints.Add(New ScatterDataPoint(11, 4))
-        RadChartView1.Series.Add(series)
+Dim series As New ScatterSeries()
+series.DataPoints.Add(New ScatterDataPoint(5, 5))
+series.DataPoints.Add(New ScatterDataPoint(4, 2))
+series.DataPoints.Add(New ScatterDataPoint(-1, 3))
+series.DataPoints.Add(New ScatterDataPoint(11, 4))
+RadChartView1.Series.Add(series)
+Dim horizontalAxis As LinearAxis = RadChartView1.Axes.[Get](Of LinearAxis)(0)
+'or horizontalAxis = TryCast(series.HorizontalAxis, LinearAxis)
+horizontalAxis.Minimum = -5
+horizontalAxis.Maximum = 15
+horizontalAxis.MajorStep = 5
+Dim verticalAxis As LinearAxis = RadChartView1.Axes.[Get](Of LinearAxis)(1)
+' or verticalAxis = TryCast(series.VerticalAxis, LinearAxis)
+verticalAxis.Minimum = 1
+verticalAxis.Maximum = 7
+verticalAxis.MajorStep = 2
+verticalAxis.HorizontalLocation = AxisHorizontalLocation.Right
 
-        Dim horizontalAxis As LinearAxis = RadChartView1.Axes.[Get](Of LinearAxis)(0)
-        'or horizontalAxis = TryCast(series.HorizontalAxis, LinearAxis)
-        horizontalAxis.Minimum = -5
-        horizontalAxis.Maximum = 15
-        horizontalAxis.MajorStep = 5
-
-        Dim verticalAxis As LinearAxis = RadChartView1.Axes.[Get](Of LinearAxis)(1)
-        ' or verticalAxis = TryCast(series.VerticalAxis, LinearAxis)
-        verticalAxis.Minimum = 1
-        verticalAxis.Maximum = 7
-        verticalAxis.MajorStep = 2
-        verticalAxis.HorizontalLocation = AxisHorizontalLocation.Right
-        '
 ````
 
 {{endregion}} 
