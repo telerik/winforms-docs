@@ -29,25 +29,25 @@ __RadDiagram__ class exposes two methods that allow you to take advantage of the
 
 ````C#
         
-        private void radButtonUndo_Click(object sender, EventArgs e)
-        {
-            this.radDiagram1.Undo();
-        }
+private void radButtonUndo_Click(object sender, EventArgs e)
+{
+    this.radDiagram1.Undo();
+}
         
-        private void radButtonRedo_Click(object sender, EventArgs e)
-        {
-            this.radDiagram1.Redo();
-        }
+private void radButtonRedo_Click(object sender, EventArgs e)
+{
+    this.radDiagram1.Redo();
+}
+
 ````
 ````VB.NET
-    Private Sub RadButtonUndo_Click(sender As Object, e As EventArgs) Handles RadButtonUndo.Click
-        Me.RadDiagram1.Undo()
-    End Sub
+Private Sub RadButtonUndo_Click(sender As Object, e As EventArgs) Handles RadButtonUndo.Click
+    Me.RadDiagram1.Undo()
+End Sub
+Private Sub RadButtonRedo_Click(sender As Object, e As EventArgs) Handles RadButtonRedo.Click
+    Me.RadDiagram1.Redo()
+End Sub
 
-    Private Sub RadButtonRedo_Click(sender As Object, e As EventArgs) Handles RadButtonRedo.Click
-        Me.RadDiagram1.Redo()
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -70,13 +70,14 @@ Telerik Diagramming Framework exposes a set of commands that allow you to easily
 {{source=..\SamplesVB\Diagram\DiagramUndoRedo.vb region=CommandsUndoRedo}} 
 
 ````C#
-            this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Undo);
-            this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Redo);
+this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Undo);
+this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Redo);
+
 ````
 ````VB.NET
-        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Undo)
-        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Redo)
-        '
+Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Undo)
+Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Redo)
+
 ````
 
 {{endregion}} 

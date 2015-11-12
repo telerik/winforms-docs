@@ -51,46 +51,44 @@ In order to select items programmatically, you only need to set their __IsSelect
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=IsSelected}} 
 
 ````C#
+            
+RadDiagramShape shape1 = new RadDiagramShape()
+{
+    Text = "",
+    IsSelected = true,
+    ElementShape = new RoundRectShape(5),
+    BackColor = System.Drawing.Color.LightBlue
+};
+shape1.Position = new Telerik.Windows.Diagrams.Core.Point(10, 10);
+radDiagram1.AddShape(shape1);
+            
+RadDiagramShape shape2 = new RadDiagramShape()
+{
+    Text = "",
+    ElementShape = new RoundRectShape(5),
+    BackColor = System.Drawing.Color.LightGreen
+};
+shape2.Position = new Telerik.Windows.Diagrams.Core.Point(180, 10);
+radDiagram1.AddShape(shape2);
 
-            RadDiagramShape shape1 = new RadDiagramShape()
-            {
-                ShapeText = "",
-                IsSelected = true,
-                ElementShape = new RoundRectShape(5),
-                InternalElementColor = System.Drawing.Color.LightBlue
-            };
-            shape1.Position = new Telerik.Windows.Diagrams.Core.Point(10, 10);
-            radDiagram1.AddShape(shape1);
-
-            RadDiagramShape shape2 = new RadDiagramShape()
-            {
-                ShapeText = "",
-                ElementShape = new RoundRectShape(5),
-                InternalElementColor = System.Drawing.Color.LightGreen
-            };
-            shape2.Position = new Telerik.Windows.Diagrams.Core.Point(180, 10);
-            radDiagram1.AddShape(shape2);
 ````
 ````VB.NET
+Dim shape1 As New RadDiagramShape() With { _
+    .Text = "", _
+    .IsSelected = True, _
+    .ElementShape = New RoundRectShape(5), _
+    .BackColor = System.Drawing.Color.LightBlue _
+}
+shape1.Position = New Telerik.Windows.Diagrams.Core.Point(10, 10)
+RadDiagram1.AddShape(shape1)
+Dim shape2 As New RadDiagramShape() With { _
+    .Text = "", _
+    .ElementShape = New RoundRectShape(5), _
+    .BackColor = System.Drawing.Color.LightGreen _
+}
+shape2.Position = New Telerik.Windows.Diagrams.Core.Point(180, 10)
+RadDiagram1.AddShape(shape2)
 
-        Dim shape1 As New RadDiagramShape() With { _
-            .ShapeText = "", _
-            .IsSelected = True, _
-            .ElementShape = New RoundRectShape(5), _
-            .InternalElementColor = System.Drawing.Color.LightBlue _
-        }
-        shape1.Position = New Telerik.Windows.Diagrams.Core.Point(10, 10)
-        RadDiagram1.AddShape(shape1)
-
-        Dim shape2 As New RadDiagramShape() With { _
-            .ShapeText = "", _
-            .ElementShape = New RoundRectShape(5), _
-            .InternalElementColor = System.Drawing.Color.LightGreen _
-        }
-        shape2.Position = New Telerik.Windows.Diagrams.Core.Point(180, 10)
-        RadDiagram1.AddShape(shape2)
-
-        '
 ````
 
 {{endregion}} 
@@ -105,48 +103,46 @@ When multiple items are selected, they are automatically added in one Selection 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=MultipleSelection}} 
 
 ````C#
-                
-            RadDiagramShape shape1 = new RadDiagramShape()
-            {
-                ShapeText = "",
-                IsSelected = true,
-                ElementShape = new RoundRectShape(5),
-                InternalElementColor = System.Drawing.Color.LightBlue
-            };
-            shape1.Position = new Telerik.Windows.Diagrams.Core.Point(10, 10);
-            radDiagram1.AddShape(shape1);
-                
-            RadDiagramShape shape2 = new RadDiagramShape()
-            {
-                ShapeText = "",
-                IsSelected = true,
-                ElementShape = new RoundRectShape(5),
-                InternalElementColor = System.Drawing.Color.LightGreen
-            };
-            shape2.Position = new Telerik.Windows.Diagrams.Core.Point(180, 10);
-            radDiagram1.AddShape(shape2);
+            
+RadDiagramShape shape1 = new RadDiagramShape()
+{
+    Text = "",
+    IsSelected = true,
+    ElementShape = new RoundRectShape(5),
+    BackColor = System.Drawing.Color.LightBlue
+};
+shape1.Position = new Telerik.Windows.Diagrams.Core.Point(10, 10);
+radDiagram1.AddShape(shape1);
+            
+RadDiagramShape shape2 = new RadDiagramShape()
+{
+    Text = "",
+    IsSelected = true,
+    ElementShape = new RoundRectShape(5),
+    BackColor = System.Drawing.Color.LightGreen
+};
+shape2.Position = new Telerik.Windows.Diagrams.Core.Point(180, 10);
+radDiagram1.AddShape(shape2);
+
 ````
 ````VB.NET
+Dim shape1 As New RadDiagramShape() With { _
+    .Text = "", _
+    .IsSelected = True, _
+    .ElementShape = New RoundRectShape(5), _
+    .BackColor = System.Drawing.Color.LightBlue _
+}
+shape1.Position = New Telerik.Windows.Diagrams.Core.Point(10, 10)
+RadDiagram1.AddShape(shape1)
+Dim shape2 As New RadDiagramShape() With { _
+    .Text = "", _
+    .IsSelected = True, _
+    .ElementShape = New RoundRectShape(5), _
+    .BackColor = System.Drawing.Color.LightGreen _
+}
+shape2.Position = New Telerik.Windows.Diagrams.Core.Point(180, 10)
+RadDiagram1.AddShape(shape2)
 
-        Dim shape1 As New RadDiagramShape() With { _
-            .ShapeText = "", _
-            .IsSelected = True, _
-            .ElementShape = New RoundRectShape(5), _
-            .InternalElementColor = System.Drawing.Color.LightBlue _
-        }
-        shape1.Position = New Telerik.Windows.Diagrams.Core.Point(10, 10)
-        RadDiagram1.AddShape(shape1)
-
-        Dim shape2 As New RadDiagramShape() With { _
-            .ShapeText = "", _
-            .IsSelected = True, _
-            .ElementShape = New RoundRectShape(5), _
-            .InternalElementColor = System.Drawing.Color.LightGreen _
-        }
-        shape2.Position = New Telerik.Windows.Diagrams.Core.Point(180, 10)
-        RadDiagram1.AddShape(shape2)
-
-        '
 ````
 
 {{endregion}} 
@@ -163,12 +159,12 @@ You may also want to use the __SelectedIndex__ or the __SelectedItem__ property 
 
 ````C#
             
-            this.radDiagram1.SelectedIndex = 1;
+this.radDiagram1.SelectedIndex = 1;
+
 ````
 ````VB.NET
+Me.RadDiagram1.SelectedIndex = 1
 
-        Me.RadDiagram1.SelectedIndex = 1
-        '
 ````
 
 {{endregion}} 
@@ -184,13 +180,13 @@ You are able to select all __RadDiagramItems__ interactively (by Mouse or by pre
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=SelectAllCommand}} 
 
 ````C#
-        
-            this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.SelectAll, "");
+            
+this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.SelectAll, "");
+
 ````
 ````VB.NET
-        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.SelectAll, "")
+Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.SelectAll, "")
 
-        '
 ````
 
 {{endregion}} 

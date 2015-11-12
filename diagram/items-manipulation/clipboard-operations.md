@@ -38,23 +38,25 @@ You can use the __DiagramCommands__ "Cut", "Copy" and "Paste" in order to perfor
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=ClipboardCommands}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=ClipboardCommands}} 
 
-````C# 
+````C#
+ 
             
-            this.radDiagram1.SelectedItem = shape1;
-            this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Copy, "");
-            this.radDiagram2.DiagramElement.TryExecuteCommand(DiagramCommands.Paste, "");
-            this.radDiagram1.SelectedItem = shape2;
-            this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Cut, "");
-            this.radDiagram2.DiagramElement.TryExecuteCommand(DiagramCommands.Paste, "");
+this.radDiagram1.SelectedItem = shape1;
+this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Copy, "");
+this.radDiagram2.DiagramElement.TryExecuteCommand(DiagramCommands.Paste, "");
+this.radDiagram1.SelectedItem = shape2;
+this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Cut, "");
+this.radDiagram2.DiagramElement.TryExecuteCommand(DiagramCommands.Paste, "");
+
 ````
 ````VB.NET
-        Me.RadDiagram1.SelectedItem = shape1
-        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Copy, "")
-        Me.RadDiagram2.DiagramElement.TryExecuteCommand(DiagramCommands.Paste, "")
-        Me.RadDiagram1.SelectedItem = shape2
-        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Cut, "")
-        Me.RadDiagram2.DiagramElement.TryExecuteCommand(DiagramCommands.Paste, "")
-        '
+Me.RadDiagram1.SelectedItem = shape1
+Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Copy, "")
+Me.RadDiagram2.DiagramElement.TryExecuteCommand(DiagramCommands.Paste, "")
+Me.RadDiagram1.SelectedItem = shape2
+Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Cut, "")
+Me.RadDiagram2.DiagramElement.TryExecuteCommand(DiagramCommands.Paste, "")
+
 ````
 
 {{endregion}} 

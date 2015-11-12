@@ -28,37 +28,34 @@ The following example, demonstrates how to access the __RadMenuItems__ of the __
 {{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=HideMenuItems}} 
 
 ````C#
-            //Change the font of the AddRemoveButtonMenuItem
-            radCommandBarStripElement1.OverflowButton.AddRemoveButtonsMenuItem.Font = new System.Drawing.Font("Arial", 12f);
+//Change the font of the AddRemoveButtonMenuItem
+radCommandBarStripElement1.OverflowButton.AddRemoveButtonsMenuItem.Font = new System.Drawing.Font("Arial", 12f);
+//Change the font of the CustomizeButtonMenuItem
+radCommandBarStripElement1.OverflowButton.CustomizeButtonMenuItem.Font = new System.Drawing.Font("Segoe UI", 10f, FontStyle.Bold);
+//hide the separators
+foreach (var item in radCommandBarStripElement1.OverflowButton.DropDownMenu.Items)
+{
+    RadMenuSeparatorItem separator = item as RadMenuSeparatorItem;
+    if (separator != null)
+    {
+        separator.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+    }
+}
 
-            //Change the font of the CustomizeButtonMenuItem
-            radCommandBarStripElement1.OverflowButton.CustomizeButtonMenuItem.Font = new System.Drawing.Font("Segoe UI", 10f, FontStyle.Bold);
-
-            //hide the separators
-            foreach (var item in radCommandBarStripElement1.OverflowButton.DropDownMenu.Items)
-            {
-                RadMenuSeparatorItem separator = item as RadMenuSeparatorItem;
-                if (separator != null)
-                {
-                    separator.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
-                }
-            }
 ````
 ````VB.NET
-        'Change the font of the AddRemoveButtonMenuItem
-        CommandBarStripElement1.OverflowButton.AddRemoveButtonsMenuItem.Font = New System.Drawing.Font("Arial", 12.0F)
+'Change the font of the AddRemoveButtonMenuItem
+CommandBarStripElement1.OverflowButton.AddRemoveButtonsMenuItem.Font = New System.Drawing.Font("Arial", 12.0F)
+'Change the font of the CustomizeButtonMenuItem
+CommandBarStripElement1.OverflowButton.CustomizeButtonMenuItem.Font = New System.Drawing.Font("Segoe UI", 10.0F, FontStyle.Bold)
+'hide the separators
+For Each item In CommandBarStripElement1.OverflowButton.DropDownMenu.Items
+    Dim separator As RadMenuSeparatorItem = TryCast(item, RadMenuSeparatorItem)
+    If separator IsNot Nothing Then
+        separator.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
+    End If
+Next
 
-        'Change the font of the CustomizeButtonMenuItem
-        CommandBarStripElement1.OverflowButton.CustomizeButtonMenuItem.Font = New System.Drawing.Font("Segoe UI", 10.0F, FontStyle.Bold)
-
-        'hide the separators
-        For Each item In CommandBarStripElement1.OverflowButton.DropDownMenu.Items
-            Dim separator As RadMenuSeparatorItem = TryCast(item, RadMenuSeparatorItem)
-            If separator IsNot Nothing Then
-                separator.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
-            End If
-        Next
-        '
 ````
 
 {{endregion}} 
@@ -73,11 +70,12 @@ Alternatively, if you need to hide the whole __Overflow__ button, simply set its
 {{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=HideTheOverFlowButton}} 
 
 ````C#
-            radCommandBarStripElement1.OverflowButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+radCommandBarStripElement1.OverflowButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+
 ````
 ````VB.NET
-        CommandBarStripElement1.OverflowButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
-        '
+CommandBarStripElement1.OverflowButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
+
 ````
 
 {{endregion}} 

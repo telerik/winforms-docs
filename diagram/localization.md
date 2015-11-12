@@ -29,40 +29,39 @@ To localize __RadDiagramRibbonBar__ to display control text and messages in a sp
 
 	````C#
         
-        public class MyDiagramRibbonBarLocalizationProvider : DiagramRibbonBarLocalizationProvider
+public class MyDiagramRibbonBarLocalizationProvider : DiagramRibbonBarLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
+    {
+        switch (id)
         {
-            public override string GetLocalizedString(string id)
-            {
-                switch (id)
-                {
-                    case DiagramRibbonBarStringId.DiagramRibbonBarHomeTab:
-                        return "MyHome";
-                    case DiagramRibbonBarStringId.DiagramRibbonBarButtonOpen:
-                        return "MyOpen";
-                    default:
-                        return base.GetLocalizedString(id);
-                }
-            }
+            case DiagramRibbonBarStringId.DiagramRibbonBarHomeTab:
+                return "MyHome";
+            case DiagramRibbonBarStringId.DiagramRibbonBarButtonOpen:
+                return "MyOpen";
+            default:
+                return base.GetLocalizedString(id);
         }
-	````
-	````VB.NET
+    }
+}
 
-    Public Class MyDiagramRibbonBarLocalizationProvider
-        Inherits DiagramRibbonBarLocalizationProvider
-        Public Overrides Function GetLocalizedString(id As String) As String
-            Select Case id
-                Case DiagramRibbonBarStringId.DiagramRibbonBarHomeTab
-                    Return "MyHome"
-                Case DiagramRibbonBarStringId.DiagramRibbonBarButtonOpen
-                    Return "MyOpen"
-                Case Else
-                    Return MyBase.GetLocalizedString(id)
-            End Select
-        End Function
-    End Class
+````
+````VB.NET
+Public Class MyDiagramRibbonBarLocalizationProvider
+    Inherits DiagramRibbonBarLocalizationProvider
+    Public Overrides Function GetLocalizedString(id As String) As String
+        Select Case id
+            Case DiagramRibbonBarStringId.DiagramRibbonBarHomeTab
+                Return "MyHome"
+            Case DiagramRibbonBarStringId.DiagramRibbonBarButtonOpen
+                Return "MyOpen"
+            Case Else
+                Return MyBase.GetLocalizedString(id)
+        End Select
+    End Function
+End Class
 
-    '
-	````
+````
 
 	{{endregion}} 
 
@@ -76,14 +75,13 @@ To localize __RadDiagramRibbonBar__ to display control text and messages in a sp
 
 	````C#
             
-            DiagramRibbonBarLocalizationProvider.CurrentProvider = new MyDiagramRibbonBarLocalizationProvider();
-	````
-	````VB.NET
+DiagramRibbonBarLocalizationProvider.CurrentProvider = new MyDiagramRibbonBarLocalizationProvider();
 
-        DiagramRibbonBarLocalizationProvider.CurrentProvider = New MyDiagramRibbonBarLocalizationProvider()
+````
+````VB.NET
+DiagramRibbonBarLocalizationProvider.CurrentProvider = New MyDiagramRibbonBarLocalizationProvider()
 
-        '
-	````
+````
 
 	{{endregion}} 
 
@@ -105,48 +103,47 @@ To localize __RadDiagramSettingsPane__ to display control text and messages in a
 	
 	````C#
         
-        public class MyDiagramSettingsPaneLocalizationProvider : DiagramSettingsPaneLocalizationProvider
+public class MyDiagramSettingsPaneLocalizationProvider : DiagramSettingsPaneLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
+    {
+        switch (id)
         {
-            public override string GetLocalizedString(string id)
-            {
-                switch (id)
-                {
-                    case DiagramSettingsPaneStringId.LabelCopy:
-                        return "MyCopy";
-                    case DiagramSettingsPaneStringId.LabelPaste:
-                        return "MyPaste";
-                    case DiagramSettingsPaneStringId.LabelCut:
-                        return "MyCut";
-                    case DiagramSettingsPaneStringId.LabelDelete:
-                        return "MyDelete";
-                    default:
-                        return base.GetLocalizedString(id);
-                }
-            }
+            case DiagramSettingsPaneStringId.LabelCopy:
+                return "MyCopy";
+            case DiagramSettingsPaneStringId.LabelPaste:
+                return "MyPaste";
+            case DiagramSettingsPaneStringId.LabelCut:
+                return "MyCut";
+            case DiagramSettingsPaneStringId.LabelDelete:
+                return "MyDelete";
+            default:
+                return base.GetLocalizedString(id);
         }
-	````
-	````VB.NET
+    }
+}
 
-    Public Class MyDiagramSettingsPaneLocalizationProvider
-        Inherits DiagramSettingsPaneLocalizationProvider
-        Public Overrides Function GetLocalizedString(id As String) As String
-            Select Case id
-                Case DiagramSettingsPaneStringId.LabelCopy
-                    Return "MyCopy"
-                Case DiagramSettingsPaneStringId.LabelPaste
-                    Return "MyPaste"
-                Case DiagramSettingsPaneStringId.LabelCut
-                    Return "MyCut"
-                Case DiagramSettingsPaneStringId.LabelDelete
-                    Return "MyDelete"
-                Case Else
-                    Return MyBase.GetLocalizedString(id)
-            End Select
-        End Function
-    End Class
+````
+````VB.NET
+Public Class MyDiagramSettingsPaneLocalizationProvider
+    Inherits DiagramSettingsPaneLocalizationProvider
+    Public Overrides Function GetLocalizedString(id As String) As String
+        Select Case id
+            Case DiagramSettingsPaneStringId.LabelCopy
+                Return "MyCopy"
+            Case DiagramSettingsPaneStringId.LabelPaste
+                Return "MyPaste"
+            Case DiagramSettingsPaneStringId.LabelCut
+                Return "MyCut"
+            Case DiagramSettingsPaneStringId.LabelDelete
+                Return "MyDelete"
+            Case Else
+                Return MyBase.GetLocalizedString(id)
+        End Select
+    End Function
+End Class
 
-    '
-	````
+````
 
 	{{endregion}} 
 
@@ -160,13 +157,13 @@ To localize __RadDiagramSettingsPane__ to display control text and messages in a
 
 	````C#
             
-            DiagramSettingsPaneLocalizationProvider.CurrentProvider = new MyDiagramSettingsPaneLocalizationProvider();
-	````
-	````VB.NET
+DiagramSettingsPaneLocalizationProvider.CurrentProvider = new MyDiagramSettingsPaneLocalizationProvider();
 
-        DiagramSettingsPaneLocalizationProvider.CurrentProvider = New MyDiagramSettingsPaneLocalizationProvider()
-        '
-	````
+````
+````VB.NET
+DiagramSettingsPaneLocalizationProvider.CurrentProvider = New MyDiagramSettingsPaneLocalizationProvider()
+
+````
 
 	{{endregion}} 
 

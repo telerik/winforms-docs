@@ -27,13 +27,12 @@ The __TextTool__ allows you to enter the edit mode of a __RadDiagramItem__
 
 ````C#
             
-            this.radDiagram1.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.TextTool;
+this.radDiagram1.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.TextTool;
+
 ````
 ````VB.NET
+Me.RadDiagram1.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.TextTool
 
-        Me.RadDiagram1.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.TextTool
-        
-        '
 ````
 
 {{endregion}} 

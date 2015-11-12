@@ -28,27 +28,28 @@ Below is a sample implementation of an English localization provider:
 {{source=..\SamplesVB\CommandBar\MyEnglishCommandBarLocalizationProvider.vb region=provider}} 
 
 ````C#
-    public class MyEnglishCommandBarLocalizationProvider : CommandBarLocalizationProvider
+public class MyEnglishCommandBarLocalizationProvider : CommandBarLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
     {
-        public override string GetLocalizedString(string id)
+        switch (id)
         {
-            switch (id)
-            {
-                case CommandBarStringId.CustomizeDialogChooseToolstripLabelText: return "Choose a toolstrip to rearrange:";
-                case CommandBarStringId.CustomizeDialogCloseButtonText: return "Close";
-                case CommandBarStringId.CustomizeDialogItemsPageTitle: return "Items";
-                case CommandBarStringId.CustomizeDialogMoveDownButtonText: return "Move Down";
-                case CommandBarStringId.CustomizeDialogMoveUpButtonText: return "Move Up";
-                case CommandBarStringId.CustomizeDialogResetButtonText: return "Reset";
-                case CommandBarStringId.CustomizeDialogTitle: return "Customize1";
-                case CommandBarStringId.CustomizeDialogToolstripsPageTitle: return "Toolstrips";
-                case CommandBarStringId.OverflowMenuAddOrRemoveButtonsText: return "Add or Remove Buttons";
-                case CommandBarStringId.OverflowMenuCustomizeText: return "Customize...";
-                case CommandBarStringId.ContextMenuCustomizeText: return "Customize...";
-                default: return base.GetLocalizedString(id);
-            }
+            case CommandBarStringId.CustomizeDialogChooseToolstripLabelText: return "Choose a toolstrip to rearrange:";
+            case CommandBarStringId.CustomizeDialogCloseButtonText: return "Close";
+            case CommandBarStringId.CustomizeDialogItemsPageTitle: return "Items";
+            case CommandBarStringId.CustomizeDialogMoveDownButtonText: return "Move Down";
+            case CommandBarStringId.CustomizeDialogMoveUpButtonText: return "Move Up";
+            case CommandBarStringId.CustomizeDialogResetButtonText: return "Reset";
+            case CommandBarStringId.CustomizeDialogTitle: return "Customize1";
+            case CommandBarStringId.CustomizeDialogToolstripsPageTitle: return "Toolstrips";
+            case CommandBarStringId.OverflowMenuAddOrRemoveButtonsText: return "Add or Remove Buttons";
+            case CommandBarStringId.OverflowMenuCustomizeText: return "Customize...";
+            case CommandBarStringId.ContextMenuCustomizeText: return "Customize...";
+            default: return base.GetLocalizedString(id);
         }
     }
+}
+
 ````
 ````VB.NET
 Public Class MyEnglishCommandBarLocalizationProvider
@@ -68,12 +69,10 @@ Public Class MyEnglishCommandBarLocalizationProvider
             Case CommandBarStringId.ContextMenuCustomizeText : Return "Customize..."
             Case Else : Return MyBase.GetLocalizedString(id)
         End Select
-
         Return String.Empty
-
     End Function
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -89,11 +88,12 @@ To apply the custom localization provider, instantiate and assign it to the cur
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=usingProvider}} 
 
 ````C#
-            CommandBarLocalizationProvider.CurrentProvider = new MyEnglishCommandBarLocalizationProvider();
+CommandBarLocalizationProvider.CurrentProvider = new MyEnglishCommandBarLocalizationProvider();
+
 ````
 ````VB.NET
-        CommandBarLocalizationProvider.CurrentProvider = New MyEnglishCommandBarLocalizationProvider()
-        '
+CommandBarLocalizationProvider.CurrentProvider = New MyEnglishCommandBarLocalizationProvider()
+
 ````
 
 {{endregion}} 

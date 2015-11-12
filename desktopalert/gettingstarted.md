@@ -31,25 +31,26 @@ position: 1
 	{{source=..\SamplesVB\DesktopAlert\DesktopAlert1.vb region=showingAlert}} 
 
 	````C#
-        void radButton1_Click(object sender, EventArgs e)
-        {
-           // this.radDesktopAlert1.ContentImage = envelopeImage;
-            this.radDesktopAlert1.CaptionText = "New E-mail Notification";
-            this.radDesktopAlert1.ContentText = "Hello Jack, I am writing to inform you " +
-                "that the planning meeting scheduled for Wednesday has been postponed and" +
-                "it will eventually be rescheduled, possibly for the next Tuesday";
-            this.radDesktopAlert1.Show();
-        }
-	````
-	````VB.NET
-    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Me.radDesktopAlert1.ContentImage = envelopeImage
-        Me.radDesktopAlert1.CaptionText = "New E-mail Notification"
-        Me.radDesktopAlert1.ContentText = "Hello Jack, I am writing to inform you " & "that the planning meeting scheduled for Wednesday has been postponed and" & "it will eventually be rescheduled, possibly for the next Tuesday"
-        Me.radDesktopAlert1.Show()
-    End Sub
-    '
-	````
+void radButton1_Click(object sender, EventArgs e)
+{
+   // this.radDesktopAlert1.ContentImage = envelopeImage;
+    this.radDesktopAlert1.CaptionText = "New E-mail Notification";
+    this.radDesktopAlert1.ContentText = "Hello Jack, I am writing to inform you " +
+        "that the planning meeting scheduled for Wednesday has been postponed and" +
+        "it will eventually be rescheduled, possibly for the next Tuesday";
+    this.radDesktopAlert1.Show();
+}
+
+````
+````VB.NET
+Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Me.radDesktopAlert1.ContentImage = envelopeImage
+    Me.radDesktopAlert1.CaptionText = "New E-mail Notification"
+    Me.radDesktopAlert1.ContentText = "Hello Jack, I am writing to inform you " & "that the planning meeting scheduled for Wednesday has been postponed and" & "it will eventually be rescheduled, possibly for the next Tuesday"
+    Me.radDesktopAlert1.Show()
+End Sub
+
+````
 
 	{{endregion}} 
 

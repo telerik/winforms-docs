@@ -25,13 +25,12 @@ By default, the __RadDiagram__ is enabled for rotation manipulation. In order to
 
 ````C#
             
-            this.radDiagram1.IsRotationEnabled = false;
+this.radDiagram1.IsRotationEnabled = false;
+
 ````
 ````VB.NET
+Me.RadDiagram1.IsRotationEnabled = False
 
-        Me.RadDiagram1.IsRotationEnabled = False
-
-        '
 ````
 
 {{endregion}} 
@@ -46,23 +45,23 @@ You can rotate shapes by using their __RotationAngle__ property: ![diagram-items
 
 ````C#
             
-            RadDiagramShape sourceShape = new RadDiagramShape()
-            {
-                ShapeText = "Text",
-                InternalElementColor = System.Drawing.Color.LightBlue,
-                ElementShape = new TabVsShape(),
-            };
-            sourceShape.RotationAngle = 45;
+RadDiagramShape sourceShape = new RadDiagramShape()
+{
+    Text = "Text",
+    BackColor = System.Drawing.Color.LightBlue,
+    ElementShape = new TabVsShape(),
+};
+sourceShape.RotationAngle = 45;
+
 ````
 ````VB.NET
+Dim sourceShape As New RadDiagramShape() With { _
+    .Text = "Text", _
+    .BackColor = System.Drawing.Color.LightBlue, _
+    .ElementShape = New TabVsShape() _
+}
+sourceShape.RotationAngle = 45
 
-        Dim sourceShape As New RadDiagramShape() With { _
-            .ShapeText = "Text", _
-            .InternalElementColor = System.Drawing.Color.LightBlue, _
-            .ElementShape = New TabVsShape() _
-        }
-        sourceShape.RotationAngle = 45
-        '
 ````
 
 {{endregion}} 

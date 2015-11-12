@@ -24,20 +24,20 @@ This article will walk you through the process of changing the default editor to
 	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=subscribe}} 
 
 	````C#
-            radDataEntry1.EditorInitializing += radDataEntry1_EditorInitializing;
-            radDataEntry1.BindingCreating += radDataEntry1_BindingCreating;
-            radDataEntry1.BindingCreated += radDataEntry1_BindingCreated;
+radDataEntry1.EditorInitializing += radDataEntry1_EditorInitializing;
+radDataEntry1.BindingCreating += radDataEntry1_BindingCreating;
+radDataEntry1.BindingCreated += radDataEntry1_BindingCreated;
         
-            radDataEntry1.DataSource = productsBinding;
-	````
-	````VB.NET
-        AddHandler radDataEntry1.EditorInitializing, AddressOf radDataEntry1_EditorInitializing
-        AddHandler radDataEntry1.BindingCreating, AddressOf radDataEntry1_BindingCreating
-        AddHandler radDataEntry1.BindingCreated, AddressOf radDataEntry1_BindingCreated
+radDataEntry1.DataSource = productsBinding;
 
-        radDataEntry1.DataSource = productsBinding
-        '
-	````
+````
+````VB.NET
+AddHandler radDataEntry1.EditorInitializing, AddressOf radDataEntry1_EditorInitializing
+AddHandler radDataEntry1.BindingCreating, AddressOf radDataEntry1_BindingCreating
+AddHandler radDataEntry1.BindingCreated, AddressOf radDataEntry1_BindingCreated
+radDataEntry1.DataSource = productsBinding
+
+````
 
 	{{endregion}} 
 
@@ -51,38 +51,33 @@ This article will walk you through the process of changing the default editor to
 	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=editor}} 
 
 	````C#
-        RadDropDownList radDropDownList1;
+RadDropDownList radDropDownList1;
+void radDataEntry1_EditorInitializing(object sender, Telerik.WinControls.UI.EditorInitializingEventArgs e)
+{
+    if (e.Property.Name == "SupplierID")
+    {
+        radDropDownList1 = new RadDropDownList();
+        radDropDownList1.DataSource = suplierList;
+        radDropDownList1.ValueMember = "SupplierID";
+        radDropDownList1.DisplayMember = "CompanyName";
+        e.Editor = radDropDownList1;
+    }
+}
 
-        void radDataEntry1_EditorInitializing(object sender, Telerik.WinControls.UI.EditorInitializingEventArgs e)
-        {
-            if (e.Property.Name == "SupplierID")
-            {
-                radDropDownList1 = new RadDropDownList();
+````
+````VB.NET
+Private radDropDownList1 As RadDropDownList
+Private Sub radDataEntry1_EditorInitializing(sender As Object, e As Telerik.WinControls.UI.EditorInitializingEventArgs)
+    If e.[Property].Name = "SupplierID" Then
+        radDropDownList1 = New RadDropDownList()
+        radDropDownList1.DataSource = suplierList
+        radDropDownList1.ValueMember = "SupplierID"
+        radDropDownList1.DisplayMember = "CompanyName"
+        e.Editor = radDropDownList1
+    End If
+End Sub
 
-                radDropDownList1.DataSource = suplierList;
-                radDropDownList1.ValueMember = "SupplierID";
-                radDropDownList1.DisplayMember = "CompanyName";
-
-                e.Editor = radDropDownList1;
-            }
-        }
-	````
-	````VB.NET
-    Private radDropDownList1 As RadDropDownList
-
-    Private Sub radDataEntry1_EditorInitializing(sender As Object, e As Telerik.WinControls.UI.EditorInitializingEventArgs)
-        If e.[Property].Name = "SupplierID" Then
-            radDropDownList1 = New RadDropDownList()
-
-            radDropDownList1.DataSource = suplierList
-            radDropDownList1.ValueMember = "SupplierID"
-            radDropDownList1.DisplayMember = "CompanyName"
-
-            e.Editor = radDropDownList1
-        End If
-    End Sub
-    '
-	````
+````
 
 	{{endregion}} 
 
@@ -96,22 +91,23 @@ This article will walk you through the process of changing the default editor to
 	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=creating}} 
 
 	````C#
-        void radDataEntry1_BindingCreating(object sender, Telerik.WinControls.UI.BindingCreatingEventArgs e)
-        {
-            if (e.DataMember == "SupplierID")
-            {
-                e.PropertyName = "SelectedValue";
-            }
-        }
-	````
-	````VB.NET
-    Private Sub radDataEntry1_BindingCreating(sender As Object, e As Telerik.WinControls.UI.BindingCreatingEventArgs)
-        If e.DataMember = "SupplierID" Then
-            e.PropertyName = "SelectedValue"
-        End If
-    End Sub
-    '
-	````
+void radDataEntry1_BindingCreating(object sender, Telerik.WinControls.UI.BindingCreatingEventArgs e)
+{
+    if (e.DataMember == "SupplierID")
+    {
+        e.PropertyName = "SelectedValue";
+    }
+}
+
+````
+````VB.NET
+Private Sub radDataEntry1_BindingCreating(sender As Object, e As Telerik.WinControls.UI.BindingCreatingEventArgs)
+    If e.DataMember = "SupplierID" Then
+        e.PropertyName = "SelectedValue"
+    End If
+End Sub
+
+````
 
 	{{endregion}} 
 
@@ -124,40 +120,37 @@ This article will walk you through the process of changing the default editor to
 	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=created}} 
 
 	````C#
-        void radDataEntry1_BindingCreated(object sender, BindingCreatedEventArgs e)
-        {
-            if (e.DataMember == "SupplierID")
-            {
-                e.Binding.FormattingEnabled = true;
-                e.Binding.Parse += new ConvertEventHandler(Binding_Parse);
-            }
-        }
+void radDataEntry1_BindingCreated(object sender, BindingCreatedEventArgs e)
+{
+    if (e.DataMember == "SupplierID")
+    {
+        e.Binding.FormattingEnabled = true;
+        e.Binding.Parse += new ConvertEventHandler(Binding_Parse);
+    }
+}
        
-        private void Binding_Parse(object sender, ConvertEventArgs e)
-        {
-            int tmpvalue;
-            int? result = int.TryParse(e.Value.ToString(), out tmpvalue) ? tmpvalue : (int?)null;
+private void Binding_Parse(object sender, ConvertEventArgs e)
+{
+    int tmpvalue;
+    int? result = int.TryParse(e.Value.ToString(), out tmpvalue) ? tmpvalue : (int?)null;
+    e.Value = result;
+}
 
-            e.Value = result;
-        }
-	````
-	````VB.NET
-    Private Sub radDataEntry1_BindingCreated(sender As Object, e As BindingCreatedEventArgs)
-        If e.DataMember = "SupplierID" Then
-            e.Binding.FormattingEnabled = True
-            AddHandler e.Binding.Parse, AddressOf Binding_Parse
-        End If
-    End Sub
+````
+````VB.NET
+Private Sub radDataEntry1_BindingCreated(sender As Object, e As BindingCreatedEventArgs)
+    If e.DataMember = "SupplierID" Then
+        e.Binding.FormattingEnabled = True
+        AddHandler e.Binding.Parse, AddressOf Binding_Parse
+    End If
+End Sub
+Private Sub Binding_Parse(sender As Object, e As ConvertEventArgs)
+    Dim tmpvalue As Integer
+    Dim result As System.Nullable(Of Integer) = If(Integer.TryParse(e.Value.ToString(), tmpvalue), tmpvalue, DirectCast(Nothing, System.Nullable(Of Integer)))
+    e.Value = result
+End Sub
 
-
-    Private Sub Binding_Parse(sender As Object, e As ConvertEventArgs)
-        Dim tmpvalue As Integer
-        Dim result As System.Nullable(Of Integer) = If(Integer.TryParse(e.Value.ToString(), tmpvalue), tmpvalue, DirectCast(Nothing, System.Nullable(Of Integer)))
-
-        e.Value = result
-    End Sub
-    '
-	````
+````
 
 	{{endregion}} 
  
@@ -167,88 +160,80 @@ This article will walk you through the process of changing the default editor to
 	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=data}} 
 
 	````C#
-    public class Product
+public class Product
+{
+    private int? _supplierID;
+    private string _productName;
+    public Product(int? supplierID, string productName)
     {
-        private int? _supplierID;
-        private string _productName;
-
-        public Product(int? supplierID, string productName)
+        this._supplierID = supplierID;
+        this._productName = productName;
+    }
+    public int? SupplierID
+    {
+        get
         {
-            this._supplierID = supplierID;
-            this._productName = productName;
+            return this._supplierID;
         }
-
-        public int? SupplierID
+        set
         {
-            get
-            {
-                return this._supplierID;
-            }
-            set
-            {
-                this._supplierID = value;
-            }
-        }
-
-        public string ProductName
-        {
-            get
-            {
-                return this._productName;
-            }
-            set
-            {
-                this._productName = value;
-            }
+            this._supplierID = value;
         }
     }
-
-    public partial class Supplier
+    public string ProductName
     {
-        private int? _supplierID;
-        private string _companyName;
-
-        public Supplier(int? supplierID, string companyName)
+        get
         {
-            this._supplierID = supplierID;
-            this._companyName = companyName;
+            return this._productName;
         }
-
-        public int? SupplierID
+        set
         {
-            get
-            {
-                return this._supplierID;
-            }
-            set
-            {
-                this._supplierID = value;
-            }
-        }
-
-        public string CompanyName
-        {
-            get
-            {
-                return this._companyName;
-            }
-            set
-            {
-                this._companyName = value;
-            }
+            this._productName = value;
         }
     }
-	````
-	````VB.NET
-	Public Class Product
+}
+public partial class Supplier
+{
+    private int? _supplierID;
+    private string _companyName;
+    public Supplier(int? supplierID, string companyName)
+    {
+        this._supplierID = supplierID;
+        this._companyName = companyName;
+    }
+    public int? SupplierID
+    {
+        get
+        {
+            return this._supplierID;
+        }
+        set
+        {
+            this._supplierID = value;
+        }
+    }
+    public string CompanyName
+    {
+        get
+        {
+            return this._companyName;
+        }
+        set
+        {
+            this._companyName = value;
+        }
+    }
+}
+
+````
+````VB.NET
+Public Class Product
     Private _supplierID As System.Nullable(Of Integer)
     Private _productName As String
-
     Public Sub New(supplierID As System.Nullable(Of Integer), productName As String)
         Me._supplierID = supplierID
         Me._productName = productName
     End Sub
-
     Public Property SupplierID() As System.Nullable(Of Integer)
         Get
             Return Me._supplierID
@@ -257,7 +242,6 @@ This article will walk you through the process of changing the default editor to
             Me._supplierID = value
         End Set
     End Property
-
     Public Property ProductName() As String
         Get
             Return Me._productName
@@ -266,17 +250,14 @@ This article will walk you through the process of changing the default editor to
             Me._productName = value
         End Set
     End Property
-	End Class
-
-	Partial Public Class Supplier
+End Class
+Partial Public Class Supplier
     Private _supplierID As System.Nullable(Of Integer)
     Private _companyName As String
-
     Public Sub New(supplierID As System.Nullable(Of Integer), companyName As String)
         Me._supplierID = supplierID
         Me._companyName = companyName
     End Sub
-
     Public Property SupplierID() As System.Nullable(Of Integer)
         Get
             Return Me._supplierID
@@ -285,7 +266,6 @@ This article will walk you through the process of changing the default editor to
             Me._supplierID = value
         End Set
     End Property
-
     Public Property CompanyName() As String
         Get
             Return Me._companyName
@@ -294,9 +274,9 @@ This article will walk you through the process of changing the default editor to
             Me._companyName = value
         End Set
     End Property
-	End Class
-	'
-	````
+End Class
+
+````
 
 	{{endregion}} 
 
@@ -309,71 +289,64 @@ You can initialize the data sources in the Form’s constructor.
 	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=init}} 
 
 	````C#
-        List<Product> productList;
-        List<Supplier> suplierList;
-        BindingSource productsBinding;
+List<Product> productList;
+List<Supplier> suplierList;
+BindingSource productsBinding;
+public ChangeEditorToDropDownList()
+{
+    InitializeComponent();
+    productList = new List<Product>();
+    suplierList = new List<Supplier>();
+    productList.Add(new Product(1, "Chai"));
+    productList.Add(new Product(2, "Chang"));
+    productList.Add(new Product(3, "Aniseed Syrup"));
+    productList.Add(new Product(4, "Chef Anton's Gumbo Mix"));
+    productList.Add(new Product(5, "Tofu"));
+    productList.Add(new Product(null, "Sir Rodney's Marmalade"));
+    productList.Add(new Product(6, "Boston Crab Meat"));
+    productList.Add(new Product(5, "Chartreuse verte"));
+    productList.Add(new Product(2, "Ravioli Angelo"));
+    productList.Add(new Product(4, "Perth Pasties"));
+    suplierList.Add(new Supplier(1, "Exotic Liquids"));
+    suplierList.Add(new Supplier(2, "New Orleans Cajun Delights"));
+    suplierList.Add(new Supplier(3, "Tokyo Traders"));
+    suplierList.Add(new Supplier(4, "Norske Meierier"));
+    suplierList.Add(new Supplier(5, "New England Seafood Cannery"));
+    suplierList.Add(new Supplier(6, "Leka Trading"));
+    productsBinding = new BindingSource();
+    productsBinding.DataSource = productList;
+}
 
-        public ChangeEditorToDropDownList()
-        {
-            InitializeComponent();
-            productList = new List<Product>();
-            suplierList = new List<Supplier>();
+````
+````VB.NET
+Private productList As List(Of Product)
+Private suplierList As List(Of Supplier)
+Private productsBinding As BindingSource
+Public Sub New()
+    InitializeComponent()
+    productList = New List(Of Product)()
+    suplierList = New List(Of Supplier)()
+    productList.Add(New Product(1, "Chai"))
+    productList.Add(New Product(2, "Chang"))
+    productList.Add(New Product(3, "Aniseed Syrup"))
+    productList.Add(New Product(4, "Chef Anton's Gumbo Mix"))
+    productList.Add(New Product(5, "Tofu"))
+    productList.Add(New Product(Nothing, "Sir Rodney's Marmalade"))
+    productList.Add(New Product(6, "Boston Crab Meat"))
+    productList.Add(New Product(5, "Chartreuse verte"))
+    productList.Add(New Product(2, "Ravioli Angelo"))
+    productList.Add(New Product(4, "Perth Pasties"))
+    suplierList.Add(New Supplier(1, "Exotic Liquids"))
+    suplierList.Add(New Supplier(2, "New Orleans Cajun Delights"))
+    suplierList.Add(New Supplier(3, "Tokyo Traders"))
+    suplierList.Add(New Supplier(4, "Norske Meierier"))
+    suplierList.Add(New Supplier(5, "New England Seafood Cannery"))
+    suplierList.Add(New Supplier(6, "Leka Trading"))
+    productsBinding = New BindingSource()
+    productsBinding.DataSource = productList
+End Sub
 
-            productList.Add(new Product(1, "Chai"));
-            productList.Add(new Product(2, "Chang"));
-            productList.Add(new Product(3, "Aniseed Syrup"));
-            productList.Add(new Product(4, "Chef Anton's Gumbo Mix"));
-            productList.Add(new Product(5, "Tofu"));
-            productList.Add(new Product(null, "Sir Rodney's Marmalade"));
-            productList.Add(new Product(6, "Boston Crab Meat"));
-            productList.Add(new Product(5, "Chartreuse verte"));
-            productList.Add(new Product(2, "Ravioli Angelo"));
-            productList.Add(new Product(4, "Perth Pasties"));
-
-            suplierList.Add(new Supplier(1, "Exotic Liquids"));
-            suplierList.Add(new Supplier(2, "New Orleans Cajun Delights"));
-            suplierList.Add(new Supplier(3, "Tokyo Traders"));
-            suplierList.Add(new Supplier(4, "Norske Meierier"));
-            suplierList.Add(new Supplier(5, "New England Seafood Cannery"));
-            suplierList.Add(new Supplier(6, "Leka Trading"));
-
-            productsBinding = new BindingSource();
-            productsBinding.DataSource = productList;
-        }
-	````
-	````VB.NET
-    Private productList As List(Of Product)
-    Private suplierList As List(Of Supplier)
-    Private productsBinding As BindingSource
-
-    Public Sub New()
-        InitializeComponent()
-        productList = New List(Of Product)()
-        suplierList = New List(Of Supplier)()
-
-        productList.Add(New Product(1, "Chai"))
-        productList.Add(New Product(2, "Chang"))
-        productList.Add(New Product(3, "Aniseed Syrup"))
-        productList.Add(New Product(4, "Chef Anton's Gumbo Mix"))
-        productList.Add(New Product(5, "Tofu"))
-        productList.Add(New Product(Nothing, "Sir Rodney's Marmalade"))
-        productList.Add(New Product(6, "Boston Crab Meat"))
-        productList.Add(New Product(5, "Chartreuse verte"))
-        productList.Add(New Product(2, "Ravioli Angelo"))
-        productList.Add(New Product(4, "Perth Pasties"))
-
-        suplierList.Add(New Supplier(1, "Exotic Liquids"))
-        suplierList.Add(New Supplier(2, "New Orleans Cajun Delights"))
-        suplierList.Add(New Supplier(3, "Tokyo Traders"))
-        suplierList.Add(New Supplier(4, "Norske Meierier"))
-        suplierList.Add(New Supplier(5, "New England Seafood Cannery"))
-        suplierList.Add(New Supplier(6, "Leka Trading"))
-
-        productsBinding = New BindingSource()
-        productsBinding.DataSource = productList
-    End Sub
-    '
-	````
+````
 
 	{{endregion}} 
 

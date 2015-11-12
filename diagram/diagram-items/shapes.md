@@ -30,25 +30,25 @@ __RadDiagramShape__ is an object that describes the nodes of the diagram. You ca
 
 ````C#
             
-            RadDiagramShape shape1 = new RadDiagramShape()
-            {
-                Text = "",
-                Shape = new AShape(),
-                BackColor = Color.LimeGreen
-            };
-            shape1.Position = new Telerik.Windows.Diagrams.Core.Point(100, 100);
-            radDiagram1.AddShape(shape1);
+RadDiagramShape shape1 = new RadDiagramShape()
+{
+    Text = "",
+    Shape = new AShape(),
+    BackColor = Color.LimeGreen
+};
+shape1.Position = new Telerik.Windows.Diagrams.Core.Point(100, 100);
+radDiagram1.AddShape(shape1);
+
 ````
 ````VB.NET
+Dim shape1 As New RadDiagramShape() With { _
+    .Text = "", _
+    .Shape = New AShape(), _
+    .BackColor = Color.LimeGreen _
+}
+shape1.Position = New Telerik.Windows.Diagrams.Core.Point(100, 100)
+RadDiagram1.AddShape(shape1)
 
-        Dim shape1 As New RadDiagramShape() With { _
-            .Text = "", _
-            .Shape = New AShape(), _
-            .BackColor = Color.LimeGreen _
-        }
-        shape1.Position = New Telerik.Windows.Diagrams.Core.Point(100, 100)
-        RadDiagram1.AddShape(shape1)
-        '
 ````
 
 {{endregion}}  
@@ -57,28 +57,28 @@ __RadDiagramShape__ is an object that describes the nodes of the diagram. You ca
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=AShape}} 
 
 ````C#
-            
-        public class AShape : ElementShape
-        { 
-            public override GraphicsPath CreatePath(Rectangle bounds)
-            {
-                GraphicsPath path = new GraphicsPath();
-                path.AddString("A", new FontFamily("Arial"), 0, 122, Point.Empty, StringFormat.GenericTypographic);
-                return path;
-            }
-        }
+    
+public class AShape : ElementShape
+{ 
+    public override GraphicsPath CreatePath(Rectangle bounds)
+    {
+        GraphicsPath path = new GraphicsPath();
+        path.AddString("A", new FontFamily("Arial"), 0, 122, Point.Empty, StringFormat.GenericTypographic);
+        return path;
+    }
+}
+
 ````
 ````VB.NET
+Public Class AShape
+Inherits ElementShape
+    Public Overrides Function CreatePath(bounds As Rectangle) As GraphicsPath
+        Dim path As New GraphicsPath()
+        path.AddString("A", New FontFamily("Arial"), 0, 122, Point.Empty, StringFormat.GenericTypographic)
+        Return path
+    End Function
+End Class
 
-    Public Class AShape
-    Inherits ElementShape
-        Public Overrides Function CreatePath(bounds As Rectangle) As GraphicsPath
-            Dim path As New GraphicsPath()
-            path.AddString("A", New FontFamily("Arial"), 0, 122, Point.Empty, StringFormat.GenericTypographic)
-            Return path
-        End Function
-    End Class
-    '
 ````
 
 {{endregion}} 
@@ -95,26 +95,25 @@ or to use one of the predefined shapes:
 
 ````C#
             
-            RadDiagramShape starShape = new RadDiagramShape()
-            {
-                Text = "",
-                Shape = new StarShape(),
-                BackColor = Color.LimeGreen
-            };
-            starShape.Position = new Telerik.Windows.Diagrams.Core.Point(400, 100);
-            radDiagram1.AddShape(starShape);
+RadDiagramShape starShape = new RadDiagramShape()
+{
+    Text = "",
+    Shape = new StarShape(),
+    BackColor = Color.LimeGreen
+};
+starShape.Position = new Telerik.Windows.Diagrams.Core.Point(400, 100);
+radDiagram1.AddShape(starShape);
+
 ````
 ````VB.NET
+Dim starShape As New RadDiagramShape() With { _
+    .Text = "", _
+    .Shape = New StarShape(), _
+    .BackColor = Color.LimeGreen _
+}
+starShape.Position = New Telerik.Windows.Diagrams.Core.Point(100, 100)
+RadDiagram1.AddShape(starShape)
 
-        Dim starShape As New RadDiagramShape() With { _
-            .Text = "", _
-            .Shape = New StarShape(), _
-            .BackColor = Color.LimeGreen _
-        }
-        starShape.Position = New Telerik.Windows.Diagrams.Core.Point(100, 100)
-        RadDiagram1.AddShape(starShape)
-
-        '
 ````
 
 {{endregion}} 
@@ -200,15 +199,14 @@ You can easily customize the visual appearance of the __RadDiagramShape__ by usi
 
 ````C#
             
-            shape1.BorderBrush = new System.Drawing.SolidBrush(System.Drawing.Color.Red);
-            shape1.DrawBorder = true;
+shape1.BorderBrush = new System.Drawing.SolidBrush(System.Drawing.Color.Red);
+shape1.DrawBorder = true;
+
 ````
 ````VB.NET
+shape1.BorderBrush = New System.Drawing.SolidBrush(System.Drawing.Color.Red)
+shape1.DrawBorder = True
 
-        shape1.BorderBrush = New System.Drawing.SolidBrush(System.Drawing.Color.Red)
-        shape1.DrawBorder = True
-
-        '
 ````
 
 {{endregion}} 
@@ -226,18 +224,19 @@ You can easily customize the visual appearance of the __RadDiagramShape__ by usi
 
 ````C#
             
-            shape.StrokeDashArray = new Telerik.WinControls.UI.Diagrams.DoubleCollection(new List<float> { 2, 2, 2, 2 });
+shape.StrokeDashArray = new Telerik.WinControls.UI.Diagrams.DoubleCollection(new List<float> { 2, 2, 2, 2 });
+
 ````
 ````VB.NET
         
-        shape.StrokeDashArray = New Telerik.WinControls.UI.Diagrams.DoubleCollection(New List(Of Single)() From { _
-            2, _
-            2, _
-            2, _
-            2 _
-        })
-    End Sub
-    '
+shape.StrokeDashArray = New Telerik.WinControls.UI.Diagrams.DoubleCollection(New List(Of Single)() From { _
+    2, _
+    2, _
+    2, _
+    2 _
+})
+End Sub
+
 ````
 
 {{endregion}} 

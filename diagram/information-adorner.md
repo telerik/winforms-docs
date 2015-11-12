@@ -22,13 +22,15 @@ __RadDiagram__ uses the __ItemInformationAdorner__ to visualize information rega
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=EnableInformationAdorner}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EnableInformationAdorner}} 
 
-````C#           
+````C#
+           
             
-            this.radDiagram1.IsInformationAdornerVisible = true;
+this.radDiagram1.IsInformationAdornerVisible = true;
+
 ````
 ````VB.NET
-        Me.RadDiagram1.IsInformationAdornerVisible = True
-        '
+Me.RadDiagram1.IsInformationAdornerVisible = True
+
 ````
 
 {{endregion}} 
@@ -49,59 +51,56 @@ __ItemInformationAdorner__ can be customized in order to display additional elem
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=CustomItemInformationAdorner}} 
 
 ````C#
-            
-        class MyItemInformationAdorner : Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner
-        {
-            public MyItemInformationAdorner(RadDiagramElement diagram)
-            {
-                this.Diagram = diagram;                 
-            }
-                
-            protected override void CreateChildElements()
-            {
-                base.CreateChildElements();
-                RadButtonElement button = new RadButtonElement() { Text = "Click me!", AutoSize = true, TextAlignment = ContentAlignment.MiddleRight };
-                this.InformationTipPanel.Children.First().Visibility = ElementVisibility.Collapsed;
-                this.InformationTipPanel.Children.Add(button);
-                button.ButtonFillElement.BackColor = System.Drawing.Color.Red;
-                button.ButtonFillElement.GradientStyle = GradientStyles.Solid;
-                button.Click += button_Click;
-            }
     
-            void button_Click(object sender, EventArgs e)
-            {
-                MessageBox.Show("Hello");
-            }
-        }
+class MyItemInformationAdorner : Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner
+{
+    public MyItemInformationAdorner(RadDiagramElement diagram)
+    {
+        this.Diagram = diagram;                 
+    }
+        
+    protected override void CreateChildElements()
+    {
+        base.CreateChildElements();
+        RadButtonElement button = new RadButtonElement() { Text = "Click me!", AutoSize = true, TextAlignment = ContentAlignment.MiddleRight };
+        this.InformationTipPanel.Children.First().Visibility = ElementVisibility.Collapsed;
+        this.InformationTipPanel.Children.Add(button);
+        button.ButtonFillElement.BackColor = System.Drawing.Color.Red;
+        button.ButtonFillElement.GradientStyle = GradientStyles.Solid;
+        button.Click += button_Click;
+    }
+    void button_Click(object sender, EventArgs e)
+    {
+        MessageBox.Show("Hello");
+    }
+}
+
 ````
 ````VB.NET
-
-    Class MyItemInformationAdorner
-    Inherits Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner
-        Public Sub New(diagram As RadDiagramElement)
-            Me.Diagram = diagram
-        End Sub
+Class MyItemInformationAdorner
+Inherits Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner
+    Public Sub New(diagram As RadDiagramElement)
+        Me.Diagram = diagram
+    End Sub
  
-        Protected Overrides Sub CreateChildElements()
-            MyBase.CreateChildElements()
-            Dim button As New RadButtonElement() With { _
-                .Text = "Click me!", _
-                .AutoSize = True, _
-                .TextAlignment = ContentAlignment.MiddleRight _
-            }
-            Me.InformationTipPanel.Children.First().Visibility = ElementVisibility.Collapsed
-            Me.InformationTipPanel.Children.Add(Button)
-            Button.ButtonFillElement.BackColor = System.Drawing.Color.Red
-            Button.ButtonFillElement.GradientStyle = GradientStyles.Solid
-            AddHandler Button.Click, AddressOf button_Click
-        End Sub
+    Protected Overrides Sub CreateChildElements()
+        MyBase.CreateChildElements()
+        Dim button As New RadButtonElement() With { _
+            .Text = "Click me!", _
+            .AutoSize = True, _
+            .TextAlignment = ContentAlignment.MiddleRight _
+        }
+        Me.InformationTipPanel.Children.First().Visibility = ElementVisibility.Collapsed
+        Me.InformationTipPanel.Children.Add(Button)
+        Button.ButtonFillElement.BackColor = System.Drawing.Color.Red
+        Button.ButtonFillElement.GradientStyle = GradientStyles.Solid
+        AddHandler Button.Click, AddressOf button_Click
+    End Sub
+    Private Sub button_Click(sender As Object, e As EventArgs)
+        MessageBox.Show("Hello")
+    End Sub
+End Class
 
-        Private Sub button_Click(sender As Object, e As EventArgs)
-            MessageBox.Show("Hello")
-        End Sub
-    End Class
-
-    '
 ````
 
 {{endregion}} 
@@ -116,19 +115,18 @@ Now, you should apply the custom __ItemInformationAdorner__ to __DiagramElement_
 
 ````C#
             
-            this.radDiagram1.DiagramElement.ItemInformationAdorner = new MyItemInformationAdorner(this.radDiagram1.DiagramElement);
-            Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner item = this.radDiagram1.DiagramElement.ItemInformationAdorner;
-            item.Width = 100;
-            item.Height = 20;
+this.radDiagram1.DiagramElement.ItemInformationAdorner = new MyItemInformationAdorner(this.radDiagram1.DiagramElement);
+Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner item = this.radDiagram1.DiagramElement.ItemInformationAdorner;
+item.Width = 100;
+item.Height = 20;
+
 ````
 ````VB.NET
+Me.RadDiagram1.DiagramElement.ItemInformationAdorner = New MyItemInformationAdorner(Me.RadDiagram1.DiagramElement)
+Dim item As Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner = Me.RadDiagram1.DiagramElement.ItemInformationAdorner
+item.Width = 100
+item.Height = 20
 
-        Me.RadDiagram1.DiagramElement.ItemInformationAdorner = New MyItemInformationAdorner(Me.RadDiagram1.DiagramElement)
-        Dim item As Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner = Me.RadDiagram1.DiagramElement.ItemInformationAdorner
-        item.Width = 100
-        item.Height = 20
-
-        '
 ````
 
 {{endregion}} 

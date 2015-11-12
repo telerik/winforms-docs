@@ -109,35 +109,34 @@ Below is shown a sample code snippet how you can use some of the Diagram Command
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=CommandsExample}} 
 
 ````C#
-            
-        private void radButton1_Click(object sender, EventArgs e)
-        {
-            this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy);
-        }
-            
-        private void radButton2_Click(object sender, EventArgs e)
-        {
-            this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste);
-        }
+    
+private void radButton1_Click(object sender, EventArgs e)
+{
+    this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy);
+}
+    
+private void radButton2_Click(object sender, EventArgs e)
+{
+    this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste);
+}
         
-        private void radButton3_Click(object sender, EventArgs e)
-        {
-            this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left");
-        }
+private void radButton3_Click(object sender, EventArgs e)
+{
+    this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left");
+}
+
 ````
 ````VB.NET
-    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
-        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
-    End Sub
+Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+    Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
+End Sub
+Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
+    Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
+End Sub
+Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
+    Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
+End Sub
 
-    Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
-        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
-    End Sub
-
-    Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
-        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
-    End Sub
-    '
 ````
 
 {{endregion}} 

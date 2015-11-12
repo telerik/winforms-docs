@@ -53,17 +53,16 @@ The following example demonstrates how you can bind the control by using the __C
 	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=SimpleObject}} 
 
 	````C#
-    public class SimpleObject
-    {
-        public int Id { get; set; }
+public class SimpleObject
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public CheckState CheckState { get; set; }
+}
 
-        public string Name { get; set; }
-
-        public CheckState CheckState { get; set; }
-    }
-	````
-	````VB.NET
-	Public Class SimpleObject
+````
+````VB.NET
+Public Class SimpleObject
     Public Property Id() As Integer
         Get
             Return m_Id
@@ -73,7 +72,6 @@ The following example demonstrates how you can bind the control by using the __C
         End Set
     End Property
     Private m_Id As Integer
-
     Public Property Name() As String
         Get
             Return m_Name
@@ -83,7 +81,6 @@ The following example demonstrates how you can bind the control by using the __C
         End Set
     End Property
     Private m_Name As String
-
     Public Property CheckState() As CheckState
         Get
             Return m_CheckState
@@ -93,9 +90,9 @@ The following example demonstrates how you can bind the control by using the __C
         End Set
     End Property
     Private m_CheckState As CheckState
-	End Class
-	'
-	````
+End Class
+
+````
 
 	{{endregion}} 
  
@@ -103,60 +100,59 @@ The following example demonstrates how you can bind the control by using the __C
 	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=CreateSimpleObjects}} 
 
 	````C#
-        private IEnumerable<SimpleObject> CreateSimpleObjects()
+private IEnumerable<SimpleObject> CreateSimpleObjects()
+{
+    List<SimpleObject> data = new List<SimpleObject>()
         {
-            List<SimpleObject> data = new List<SimpleObject>()
-                {
-                    new SimpleObject() { Id = 1, Name = "Item1", CheckState = CheckState.Unchecked },
-                    new SimpleObject() { Id = 2, Name = "Item2", CheckState = CheckState.Checked },
-                    new SimpleObject() { Id = 3, Name = "Item3", CheckState = CheckState.Indeterminate },
-                    new SimpleObject() { Id = 4, Name = "Item4", CheckState = CheckState.Unchecked },
-                    new SimpleObject() { Id = 5, Name = "Item5", CheckState = CheckState.Unchecked },
-                    new SimpleObject() { Id = 6, Name = "Item6", CheckState = CheckState.Checked }
-                };
+            new SimpleObject() { Id = 1, Name = "Item1", CheckState = CheckState.Unchecked },
+            new SimpleObject() { Id = 2, Name = "Item2", CheckState = CheckState.Checked },
+            new SimpleObject() { Id = 3, Name = "Item3", CheckState = CheckState.Indeterminate },
+            new SimpleObject() { Id = 4, Name = "Item4", CheckState = CheckState.Unchecked },
+            new SimpleObject() { Id = 5, Name = "Item5", CheckState = CheckState.Unchecked },
+            new SimpleObject() { Id = 6, Name = "Item6", CheckState = CheckState.Checked }
+        };
+    return data;
+}
 
-            return data;
-        }
-	````
-	````VB.NET
-    Private Function CreateSimpleObjects() As IEnumerable(Of SimpleObject)
-        Dim data As New List(Of SimpleObject)() From { _
-            New SimpleObject() With { _
-                .Id = 1, _
-                .Name = "Item1", _
-                .CheckState = CheckState.Unchecked _
-            }, _
-            New SimpleObject() With { _
-                .Id = 2, _
-                .Name = "Item2", _
-                .CheckState = CheckState.Checked _
-            }, _
-            New SimpleObject() With { _
-                .Id = 3, _
-                .Name = "Item3", _
-                .CheckState = CheckState.Indeterminate _
-            }, _
-            New SimpleObject() With { _
-                .Id = 4, _
-                .Name = "Item4", _
-                .CheckState = CheckState.Unchecked _
-            }, _
-            New SimpleObject() With { _
-                .Id = 5, _
-                .Name = "Item5", _
-                .CheckState = CheckState.Unchecked _
-            }, _
-            New SimpleObject() With { _
-                .Id = 6, _
-                .Name = "Item6", _
-                .CheckState = CheckState.Checked _
-            } _
-        }
+````
+````VB.NET
+Private Function CreateSimpleObjects() As IEnumerable(Of SimpleObject)
+    Dim data As New List(Of SimpleObject)() From { _
+        New SimpleObject() With { _
+            .Id = 1, _
+            .Name = "Item1", _
+            .CheckState = CheckState.Unchecked _
+        }, _
+        New SimpleObject() With { _
+            .Id = 2, _
+            .Name = "Item2", _
+            .CheckState = CheckState.Checked _
+        }, _
+        New SimpleObject() With { _
+            .Id = 3, _
+            .Name = "Item3", _
+            .CheckState = CheckState.Indeterminate _
+        }, _
+        New SimpleObject() With { _
+            .Id = 4, _
+            .Name = "Item4", _
+            .CheckState = CheckState.Unchecked _
+        }, _
+        New SimpleObject() With { _
+            .Id = 5, _
+            .Name = "Item5", _
+            .CheckState = CheckState.Unchecked _
+        }, _
+        New SimpleObject() With { _
+            .Id = 6, _
+            .Name = "Item6", _
+            .CheckState = CheckState.Checked _
+        } _
+    }
+    Return data
+End Function
 
-        Return data
-    End Function
-    '
-	````
+````
 
 	{{endregion}} 
 
@@ -170,12 +166,13 @@ The following example demonstrates how you can bind the control by using the __C
 	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=ThreeStateMode}} 
 
 	````C#
-            this.radCheckedListBox1.ThreeStateMode = true;
-	````
-	````VB.NET
-        Me.RadCheckedListBox1.ThreeStateMode = True
-        '
-	````
+this.radCheckedListBox1.ThreeStateMode = true;
+
+````
+````VB.NET
+Me.RadCheckedListBox1.ThreeStateMode = True
+
+````
 
 	{{endregion}} 
  
@@ -185,18 +182,19 @@ The following example demonstrates how you can bind the control by using the __C
 	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=ProgramaticallyDatabind}} 
 
 	````C#
-            this.radCheckedListBox1.DataSource = this.CreateSimpleObjects();
-            this.radCheckedListBox1.DisplayMember = "Name";
-            this.radCheckedListBox1.ValueMember = "Id";
-            this.radCheckedListBox1.CheckedMember = "CheckState";
-	````
-	````VB.NET
-        Me.RadCheckedListBox1.DataSource = Me.CreateSimpleObjects()
-        Me.RadCheckedListBox1.DisplayMember = "Name"
-        Me.RadCheckedListBox1.ValueMember = "Id"
-        Me.RadCheckedListBox1.CheckedMember = "CheckState"
-        '
-		````
+this.radCheckedListBox1.DataSource = this.CreateSimpleObjects();
+this.radCheckedListBox1.DisplayMember = "Name";
+this.radCheckedListBox1.ValueMember = "Id";
+this.radCheckedListBox1.CheckedMember = "CheckState";
+
+````
+````VB.NET
+Me.RadCheckedListBox1.DataSource = Me.CreateSimpleObjects()
+Me.RadCheckedListBox1.DisplayMember = "Name"
+Me.RadCheckedListBox1.ValueMember = "Id"
+Me.RadCheckedListBox1.CheckedMember = "CheckState"
+
+````
 
 	{{endregion}} 
 

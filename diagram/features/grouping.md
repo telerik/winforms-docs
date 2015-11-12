@@ -80,32 +80,31 @@ Let's first create some random shapes:
 
 ````C#
             
-            Random random = new Random();
-            for (int i = 0; i < 21; i++)
-            {
-                RadDiagramShape s = new RadDiagramShape() { Width = 30, Height = 30, Content = i };
-                s.Shape = new Telerik.WinControls.RoundRectShape(5);
-                s.BackColor = System.Drawing.Color.CadetBlue;
-                s.Position = new Telerik.Windows.Diagrams.Core.Point(random.Next(0, 900), random.Next(0, 200));
-                this.radDiagram1.Items.Add(s);
-            }
+Random random = new Random();
+for (int i = 0; i < 21; i++)
+{
+    RadDiagramShape s = new RadDiagramShape() { Width = 30, Height = 30, Content = i };
+    s.Shape = new Telerik.WinControls.RoundRectShape(5);
+    s.BackColor = System.Drawing.Color.CadetBlue;
+    s.Position = new Telerik.Windows.Diagrams.Core.Point(random.Next(0, 900), random.Next(0, 200));
+    this.radDiagram1.Items.Add(s);
+}
+
 ````
 ````VB.NET
+Dim random As New Random()
+For i As Integer = 0 To 20
+    Dim s As New RadDiagramShape() With { _
+        .Width = 30, _
+        .Height = 30, _
+        .Content = i _
+    }
+    s.Shape = New Telerik.WinControls.RoundRectShape(5)
+    s.BackColor = Color.CadetBlue
+    s.Position = New Telerik.Windows.Diagrams.Core.Point(random.[Next](0, 900), random.[Next](0, 200))
+    Me.RadDiagram1.Items.Add(s)
+Next
 
-        Dim random As New Random()
-        For i As Integer = 0 To 20
-            Dim s As New RadDiagramShape() With { _
-                .Width = 30, _
-                .Height = 30, _
-                .Content = i _
-            }
-            s.Shape = New Telerik.WinControls.RoundRectShape(5)
-            s.BackColor = Color.CadetBlue
-            s.Position = New Telerik.Windows.Diagrams.Core.Point(random.[Next](0, 900), random.[Next](0, 200))
-            Me.RadDiagram1.Items.Add(s)
-        Next
-
-        '
 ````
 
 {{endregion}} 
@@ -118,19 +117,18 @@ Now let's implement some grouping logic:
 
 ````C#
             
-            IShape[] evenShapes = this.radDiagram1.Shapes.Where(x => int.Parse(x.Content.ToString()) % 2 == 0).ToArray<IShape>();
-            IShape[] oddShapes = this.radDiagram1.Shapes.Where(x => int.Parse(x.Content.ToString()) % 2 == 1).ToArray<IShape>();
-            this.radDiagram1.Group("Even", evenShapes);
-            this.radDiagram1.Group("Odd", oddShapes);
+IShape[] evenShapes = this.radDiagram1.Shapes.Where(x => int.Parse(x.Content.ToString()) % 2 == 0).ToArray<IShape>();
+IShape[] oddShapes = this.radDiagram1.Shapes.Where(x => int.Parse(x.Content.ToString()) % 2 == 1).ToArray<IShape>();
+this.radDiagram1.Group("Even", evenShapes);
+this.radDiagram1.Group("Odd", oddShapes);
+
 ````
 ````VB.NET
+Dim evenShapes As IShape() = Me.RadDiagram1.Shapes.Where(Function(x) Integer.Parse(x.Content.ToString()) Mod 2 = 0).ToArray()
+Dim oddShapes As IShape() = Me.RadDiagram1.Shapes.Where(Function(x) Integer.Parse(x.Content.ToString()) Mod 2 = 1).ToArray()
+Me.RadDiagram1.Group("Even", evenShapes)
+Me.RadDiagram1.Group("Odd", oddShapes)
 
-        Dim evenShapes As IShape() = Me.RadDiagram1.Shapes.Where(Function(x) Integer.Parse(x.Content.ToString()) Mod 2 = 0).ToArray()
-        Dim oddShapes As IShape() = Me.RadDiagram1.Shapes.Where(Function(x) Integer.Parse(x.Content.ToString()) Mod 2 = 1).ToArray()
-        Me.RadDiagram1.Group("Even", evenShapes)
-        Me.RadDiagram1.Group("Odd", oddShapes)
-
-        '
 ````
 
 {{endregion}} 
@@ -154,15 +152,15 @@ Now let's play with grouping and upgrouping. Below are some code examples and th
 
 ````C#
             
-            this.radDiagram1.Group("123", this.radDiagram1.Shapes[1], this.radDiagram1.Shapes[2], this.radDiagram1.Shapes[3]);
-            this.radDiagram1.Group("345", this.radDiagram1.Shapes[3], this.radDiagram1.Shapes[4], this.radDiagram1.Shapes[5]);
+this.radDiagram1.Group("123", this.radDiagram1.Shapes[1], this.radDiagram1.Shapes[2], this.radDiagram1.Shapes[3]);
+this.radDiagram1.Group("345", this.radDiagram1.Shapes[3], this.radDiagram1.Shapes[4], this.radDiagram1.Shapes[5]);
+
 ````
 ````VB.NET
         
-        Me.RadDiagram1.Group("123", Me.RadDiagram1.Shapes(1), Me.RadDiagram1.Shapes(2), Me.RadDiagram1.Shapes(3))
-        Me.RadDiagram1.Group("345", Me.RadDiagram1.Shapes(3), Me.RadDiagram1.Shapes(4), Me.RadDiagram1.Shapes(5))
+Me.RadDiagram1.Group("123", Me.RadDiagram1.Shapes(1), Me.RadDiagram1.Shapes(2), Me.RadDiagram1.Shapes(3))
+Me.RadDiagram1.Group("345", Me.RadDiagram1.Shapes(3), Me.RadDiagram1.Shapes(4), Me.RadDiagram1.Shapes(5))
 
-        '
 ````
 
 {{endregion}} 
@@ -178,15 +176,14 @@ Alternatively if we use one name in the method:
 
 ````C#
             
-            this.radDiagram1.Group("123", this.radDiagram1.Shapes[1], this.radDiagram1.Shapes[2], this.radDiagram1.Shapes[3]);
-            this.radDiagram1.Group("123", this.radDiagram1.Shapes[3], this.radDiagram1.Shapes[4], this.radDiagram1.Shapes[5]);
+this.radDiagram1.Group("123", this.radDiagram1.Shapes[1], this.radDiagram1.Shapes[2], this.radDiagram1.Shapes[3]);
+this.radDiagram1.Group("123", this.radDiagram1.Shapes[3], this.radDiagram1.Shapes[4], this.radDiagram1.Shapes[5]);
+
 ````
 ````VB.NET
+Me.RadDiagram1.Group("123", Me.RadDiagram1.Shapes(1), Me.RadDiagram1.Shapes(2), Me.RadDiagram1.Shapes(3))
+Me.RadDiagram1.Group("123", Me.RadDiagram1.Shapes(3), Me.RadDiagram1.Shapes(4), Me.RadDiagram1.Shapes(5))
 
-        Me.RadDiagram1.Group("123", Me.RadDiagram1.Shapes(1), Me.RadDiagram1.Shapes(2), Me.RadDiagram1.Shapes(3))
-        Me.RadDiagram1.Group("123", Me.RadDiagram1.Shapes(3), Me.RadDiagram1.Shapes(4), Me.RadDiagram1.Shapes(5))
-
-        '
 ````
 
 {{endregion}} 
@@ -205,17 +202,17 @@ Below is an example of creating a subgroups and a parent group.
 
 ````C#
             
-            IGroup groupA = this.radDiagram1.Group("1-2", this.radDiagram1.Shapes[1], this.radDiagram1.Shapes[2]);
-            IGroup groupB = this.radDiagram1.Group("3-4", this.radDiagram1.Shapes[3], this.radDiagram1.Shapes[4]);
-            IGroup parentGroup = this.radDiagram1.Group("1-2-3-4", groupA, groupB);
+IGroup groupA = this.radDiagram1.Group("1-2", this.radDiagram1.Shapes[1], this.radDiagram1.Shapes[2]);
+IGroup groupB = this.radDiagram1.Group("3-4", this.radDiagram1.Shapes[3], this.radDiagram1.Shapes[4]);
+IGroup parentGroup = this.radDiagram1.Group("1-2-3-4", groupA, groupB);
+
 ````
 ````VB.NET
         
-        Dim groupA As IGroup = Me.RadDiagram1.Group("1-2", Me.RadDiagram1.Shapes(1), Me.RadDiagram1.Shapes(2))
-        Dim groupB As IGroup = Me.RadDiagram1.Group("3-4", Me.RadDiagram1.Shapes(3), Me.RadDiagram1.Shapes(4))
-        Dim parentGroup As IGroup = Me.RadDiagram1.Group("1-2-3-4", groupA, groupB)
+Dim groupA As IGroup = Me.RadDiagram1.Group("1-2", Me.RadDiagram1.Shapes(1), Me.RadDiagram1.Shapes(2))
+Dim groupB As IGroup = Me.RadDiagram1.Group("3-4", Me.RadDiagram1.Shapes(3), Me.RadDiagram1.Shapes(4))
+Dim parentGroup As IGroup = Me.RadDiagram1.Group("1-2-3-4", groupA, groupB)
 
-        '
 ````
 
 {{endregion}} 
@@ -240,15 +237,14 @@ What will happen if we try to create parent group then create subgroups?
 
 ````C#
             
-            this.radDiagram1.Group("1-2-3-4", this.radDiagram1.Shapes[1], this.radDiagram1.Shapes[2], this.radDiagram1.Shapes[3], this.radDiagram1.Shapes[4]);
-            this.radDiagram1.Group("1-2", this.radDiagram1.Shapes[1], this.radDiagram1.Shapes[2]);
+this.radDiagram1.Group("1-2-3-4", this.radDiagram1.Shapes[1], this.radDiagram1.Shapes[2], this.radDiagram1.Shapes[3], this.radDiagram1.Shapes[4]);
+this.radDiagram1.Group("1-2", this.radDiagram1.Shapes[1], this.radDiagram1.Shapes[2]);
+
 ````
 ````VB.NET
+Me.RadDiagram1.Group("1-2-3-4", Me.RadDiagram1.Shapes(1), Me.RadDiagram1.Shapes(2), Me.RadDiagram1.Shapes(3), Me.RadDiagram1.Shapes(4))
+Me.RadDiagram1.Group("1-2", Me.RadDiagram1.Shapes(1), Me.RadDiagram1.Shapes(2))
 
-        Me.RadDiagram1.Group("1-2-3-4", Me.RadDiagram1.Shapes(1), Me.RadDiagram1.Shapes(2), Me.RadDiagram1.Shapes(3), Me.RadDiagram1.Shapes(4))
-        Me.RadDiagram1.Group("1-2", Me.RadDiagram1.Shapes(1), Me.RadDiagram1.Shapes(2))
-
-        '
 ````
 
 {{endregion}} 
@@ -268,15 +264,14 @@ You can Ungroup one or several groups with the __Ungroup__ method of __RadDiagra
 
 ````C#
             
-            this.radDiagram1.Ungroup(groupA, groupB);
-            this.radDiagram1.Ungroup(this.radDiagram1.Groups.ToArray());
+this.radDiagram1.Ungroup(groupA, groupB);
+this.radDiagram1.Ungroup(this.radDiagram1.Groups.ToArray());
+
 ````
 ````VB.NET
+Me.RadDiagram1.Ungroup(groupA, groupB)
+Me.RadDiagram1.Ungroup(Me.RadDiagram1.Groups.ToArray())
 
-        Me.RadDiagram1.Ungroup(groupA, groupB)
-        Me.RadDiagram1.Ungroup(Me.RadDiagram1.Groups.ToArray())
-
-        '
 ````
 
 {{endregion}} 
@@ -290,18 +285,16 @@ Using the DiagramCommands __Group__ and __Ungroup__ is straightforward. __Group_
 {{source=..\SamplesVB\Diagram\DiagramGrouping.vb region=CommandsGrouping}} 
 
 ````C#
+this.radDiagram1.DiagramElement.ServiceLocator.GetService<ISelectionService<IDiagramItem>>().SelectItem(this.radDiagram1.Shapes[1],true);
+this.radDiagram1.DiagramElement.ServiceLocator.GetService<ISelectionService<IDiagramItem>>().SelectItem(this.radDiagram1.Shapes[5],true);
+this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Group);
 
-            this.radDiagram1.DiagramElement.ServiceLocator.GetService<ISelectionService<IDiagramItem>>().SelectItem(this.radDiagram1.Shapes[1],true);
-            this.radDiagram1.DiagramElement.ServiceLocator.GetService<ISelectionService<IDiagramItem>>().SelectItem(this.radDiagram1.Shapes[5],true);
-            this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Group);
 ````
 ````VB.NET
+Me.RadDiagram1.DiagramElement.ServiceLocator.GetService(Of ISelectionService(Of IDiagramItem))().SelectItem(Me.RadDiagram1.Shapes(1), True)
+Me.RadDiagram1.DiagramElement.ServiceLocator.GetService(Of ISelectionService(Of IDiagramItem))().SelectItem(Me.RadDiagram1.Shapes(5), True)
+Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Group)
 
-        Me.RadDiagram1.DiagramElement.ServiceLocator.GetService(Of ISelectionService(Of IDiagramItem))().SelectItem(Me.RadDiagram1.Shapes(1), True)
-        Me.RadDiagram1.DiagramElement.ServiceLocator.GetService(Of ISelectionService(Of IDiagramItem))().SelectItem(Me.RadDiagram1.Shapes(5), True)
-        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Group)
-
-        '
 ````
 
 {{endregion}} 

@@ -24,15 +24,14 @@ __RadDiagram__ has two public methods available for printing - __Print()__ and _
 
 ````C#
             
-            this.radDiagram1.Print();
-            this.radDiagram1.Print(true);
+this.radDiagram1.Print();
+this.radDiagram1.Print(true);
+
 ````
 ````VB.NET
+Me.RadDiagram1.Print()
+Me.RadDiagram1.Print(True)
 
-        Me.RadDiagram1.Print()
-        Me.RadDiagram1.Print(True)
-
-        '
 ````
 
 {{endregion}}  
@@ -45,13 +44,12 @@ The other available method is __PrintPreview()__, which opens  [RadPrintPreviewD
 
 ````C#
             
-            this.radDiagram1.PrintPreview();
+this.radDiagram1.PrintPreview();
+
 ````
 ````VB.NET
+Me.RadDiagram1.PrintPreview()
 
-        Me.RadDiagram1.PrintPreview()
-
-        '
 ````
 
 {{endregion}} 

@@ -20,11 +20,12 @@ By default, RadDesktopAlert is initially shown with a predefined (default) size.
 {{source=..\SamplesVB\DesktopAlert\DesktopAlert1.vb region=fixedSize}} 
 
 ````C#
-            this.radDesktopAlert1.FixedSize = new Size(200, 200);
+this.radDesktopAlert1.FixedSize = new Size(200, 200);
+
 ````
 ````VB.NET
-        Me.radDesktopAlert1.FixedSize = New Size(200, 200)
-        '
+Me.radDesktopAlert1.FixedSize = New Size(200, 200)
+
 ````
 
 {{endregion}} 

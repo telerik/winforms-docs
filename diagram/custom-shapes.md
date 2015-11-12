@@ -22,29 +22,28 @@ In order to create a custom shape, you need to define a custom shape class deriv
 {{source=..\SamplesVB\Diagram\DiagramCustomShapes.vb region=MyShape}} 
 
 ````C#
-            
-        public class MyShape : ElementShape
-        {
-            public override GraphicsPath CreatePath(System.Drawing.Rectangle bounds)
-            {
-                GraphicsPath path = new GraphicsPath();
-                path.AddString("Custom", new System.Drawing.FontFamily("Arial"), 0, bounds.Width, Point.Empty, StringFormat.GenericTypographic);
-                return path;
-            }
-        }
+    
+public class MyShape : ElementShape
+{
+    public override GraphicsPath CreatePath(System.Drawing.Rectangle bounds)
+    {
+        GraphicsPath path = new GraphicsPath();
+        path.AddString("Custom", new System.Drawing.FontFamily("Arial"), 0, bounds.Width, Point.Empty, StringFormat.GenericTypographic);
+        return path;
+    }
+}
+
 ````
 ````VB.NET
+Public Class MyShape
+Inherits ElementShape
+    Public Overrides Function CreatePath(bounds As System.Drawing.Rectangle) As GraphicsPath
+        Dim path As New GraphicsPath()
+        path.AddString("Custom", New System.Drawing.FontFamily("Arial"), 0, bounds.Width, Point.Empty, StringFormat.GenericTypographic)
+        Return path
+    End Function
+End Class
 
-    Public Class MyShape
-    Inherits ElementShape
-        Public Overrides Function CreatePath(bounds As System.Drawing.Rectangle) As GraphicsPath
-            Dim path As New GraphicsPath()
-            path.AddString("Custom", New System.Drawing.FontFamily("Arial"), 0, bounds.Width, Point.Empty, StringFormat.GenericTypographic)
-            Return path
-        End Function
-    End Class
-
-    '
 ````
 
 {{endregion}} 
@@ -55,41 +54,36 @@ In order to create a custom shape, you need to define a custom shape class deriv
 
 ````C#
             
-            RadDiagramShape shape1 = new RadDiagramShape()
-            {
-                ShapeText = "",
-                ElementShape = new MyShape(),
-                InternalElementColor = System.Drawing.Color.LightBlue
-            };
-            shape1.Position = new Telerik.Windows.Diagrams.Core.Point(100, 80);
-            radDiagram1.AddShape(shape1);
+RadDiagramShape shape1 = new RadDiagramShape()
+{
+    ShapeText = "",
+    ElementShape = new MyShape(),
+    InternalElementColor = System.Drawing.Color.LightBlue
+};
+shape1.Position = new Telerik.Windows.Diagrams.Core.Point(100, 80);
+radDiagram1.AddShape(shape1);
+
 ````
 ````VB.NET
+Dim shape1 As New RadDiagramShape() With { _
+    .ShapeText = "", _
+    .ElementShape = New MyShape(), _
+    .InternalElementColor = System.Drawing.Color.LightBlue _
+}
+shape1.Position = New Telerik.Windows.Diagrams.Core.Point(100, 80)
+'#Region ""
+RadDiagram1.AddShape(shape1)
+End Sub
+'#Region "MyShape"
+Public Class MyShape
+Inherits ElementShape
+Public Overrides Function CreatePath(bounds As System.Drawing.Rectangle) As GraphicsPath
+    Dim path As New GraphicsPath()
+    path.AddString("Custom", New System.Drawing.FontFamily("Arial"), 0, bounds.Width, Point.Empty, StringFormat.GenericTypographic)
+    Return path
+End Function
+End Class
 
-        Dim shape1 As New RadDiagramShape() With { _
-            .ShapeText = "", _
-            .ElementShape = New MyShape(), _
-            .InternalElementColor = System.Drawing.Color.LightBlue _
-        }
-        shape1.Position = New Telerik.Windows.Diagrams.Core.Point(100, 80)
-
-        '#Region ""
-
-        RadDiagram1.AddShape(shape1)
-    End Sub
-
-    '#Region "MyShape"
-
-    Public Class MyShape
-    Inherits ElementShape
-        Public Overrides Function CreatePath(bounds As System.Drawing.Rectangle) As GraphicsPath
-            Dim path As New GraphicsPath()
-            path.AddString("Custom", New System.Drawing.FontFamily("Arial"), 0, bounds.Width, Point.Empty, StringFormat.GenericTypographic)
-            Return path
-        End Function
-    End Class
-
-    '
 ````
 
 {{endregion}} 

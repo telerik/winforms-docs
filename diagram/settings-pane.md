@@ -25,11 +25,12 @@ The __SettingsPane__ control allows the users to examine and modify the settings
 
 ````C#
             
-            this.radDiagram1.IsSettingsPaneEnabled = true;
+this.radDiagram1.IsSettingsPaneEnabled = true;
+
 ````
 ````VB.NET
-        Me.RadDiagram1.IsSettingsPaneEnabled = True
-        '
+Me.RadDiagram1.IsSettingsPaneEnabled = True
+
 ````
 
 {{endregion}} 
@@ -56,16 +57,15 @@ In order to display the DiagramElement.__SettingsPane__ in your application, you
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=AdditionalContent}} 
 
 ````C#
-                
-            RadButtonElement additionalContent = Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner.GetAdditionalContent(
-                this.radDiagram1.DiagramElement.ItemInformationAdorner) as RadButtonElement;
+    
+RadButtonElement additionalContent = Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner.GetAdditionalContent(
+    this.radDiagram1.DiagramElement.ItemInformationAdorner) as RadButtonElement;
+
 ````
 ````VB.NET
+Dim additionalContent As RadButtonElement = TryCast(Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner.GetAdditionalContent( _
+Me.RadDiagram1.DiagramElement.ItemInformationAdorner), RadButtonElement)
 
-        Dim additionalContent As RadButtonElement = TryCast(Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner.GetAdditionalContent( _
-        Me.RadDiagram1.DiagramElement.ItemInformationAdorner), RadButtonElement)
-
-        '
 ````
 
 {{endregion}} 
@@ -87,19 +87,18 @@ The __SettingsPane__ has a default view that can be used out-of-the-box in scena
 
 ````C#
             
-            this.radDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Remove(this.radDiagram1.DiagramElement.SettingsPane.RadPageViewPageHome);
-            RadPageViewPage toolsPage = new RadPageViewPage();
-            toolsPage.Text = "Tools";
-            this.radDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Add(toolsPage);
+this.radDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Remove(this.radDiagram1.DiagramElement.SettingsPane.RadPageViewPageHome);
+RadPageViewPage toolsPage = new RadPageViewPage();
+toolsPage.Text = "Tools";
+this.radDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Add(toolsPage);
+
 ````
 ````VB.NET
+Me.RadDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Remove(Me.RadDiagram1.DiagramElement.SettingsPane.RadPageViewPageHome)
+Dim toolsPage As New RadPageViewPage()
+toolsPage.Text = "Tools"
+Me.RadDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Add(toolsPage)
 
-        Me.RadDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Remove(Me.RadDiagram1.DiagramElement.SettingsPane.RadPageViewPageHome)
-        Dim toolsPage As New RadPageViewPage()
-        toolsPage.Text = "Tools"
-        Me.RadDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Add(toolsPage)
-
-        '
 ````
 
 {{endregion}} 
@@ -133,25 +132,23 @@ The __SettingsPane__ has a default view that can be used out-of-the-box in scena
 
 ````C#
             
-            this.radDiagram1.DiagramElement.SettingsPane.RadButtonCopy.Enabled = false;
-            RadButton myButton = new RadButton();
-            myButton.Text = "New";
-            myButton.Size = this.radDiagram1.DiagramElement.SettingsPane.RadButtonCut.Size;
-            myButton.Location = this.radDiagram1.DiagramElement.SettingsPane.RadButtonCut.Location;
-            this.radDiagram1.DiagramElement.SettingsPane.PanelCopyCutPaste.Controls.Add(myButton);        
-            this.radDiagram1.DiagramElement.SettingsPane.RadButtonCut.Visible = false;
+RadButton myButton = new RadButton();
+myButton.Text = "New";
+myButton.Size = this.radDiagram1.DiagramElement.SettingsPane.RadButtonCut.Size;
+myButton.Location = this.radDiagram1.DiagramElement.SettingsPane.RadButtonCut.Location;
+this.radDiagram1.DiagramElement.SettingsPane.PanelCopyCutPaste.Controls.Add(myButton);        
+this.radDiagram1.DiagramElement.SettingsPane.RadButtonCut.Visible = false;
+
 ````
 ````VB.NET
+ 
+Dim myButton As New RadButton()
+myButton.Text = "New"
+myButton.Size = Me.RadDiagram1.DiagramElement.SettingsPane.RadButtonCut.Size
+myButton.Location = Me.RadDiagram1.DiagramElement.SettingsPane.RadButtonCut.Location
+Me.RadDiagram1.DiagramElement.SettingsPane.PanelCopyCutPaste.Controls.Add(myButton)
+Me.RadDiagram1.DiagramElement.SettingsPane.RadButtonCut.Visible = False
 
-        Me.RadDiagram1.DiagramElement.SettingsPane.RadButtonCopy.Enabled = False
-        Dim myButton As New RadButton()
-        myButton.Text = "New"
-        myButton.Size = Me.RadDiagram1.DiagramElement.SettingsPane.RadButtonCut.Size
-        myButton.Location = Me.RadDiagram1.DiagramElement.SettingsPane.RadButtonCut.Location
-        Me.RadDiagram1.DiagramElement.SettingsPane.PanelCopyCutPaste.Controls.Add(myButton)
-        Me.RadDiagram1.DiagramElement.SettingsPane.RadButtonCut.Visible = False
-
-        '
 ````
 
 {{endregion}} 

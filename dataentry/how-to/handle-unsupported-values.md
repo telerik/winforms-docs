@@ -28,22 +28,23 @@ The following example demonstrates how to do that:
 	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=BindingCreating}} 
 
 	````C#
-        void radDataEntry1_BindingCreating(object sender, BindingCreatingEventArgs e)
-        {
-            if (e.DataMember == "DateTime")
-            {
-                e.PropertyName = "NullableValue";
-            }
-        }
-	````
-	````VB.NET
-    Private Sub radDataEntry1_BindingCreating(sender As Object, e As BindingCreatingEventArgs)
-        If e.DataMember = "DateTime" Then
-            e.PropertyName = "NullableValue"
-        End If
-    End Sub
-    '
-	````
+void radDataEntry1_BindingCreating(object sender, BindingCreatingEventArgs e)
+{
+    if (e.DataMember == "DateTime")
+    {
+        e.PropertyName = "NullableValue";
+    }
+}
+
+````
+````VB.NET
+Private Sub radDataEntry1_BindingCreating(sender As Object, e As BindingCreatingEventArgs)
+    If e.DataMember = "DateTime" Then
+        e.PropertyName = "NullableValue"
+    End If
+End Sub
+
+````
 
 	{{endregion}} 
 
@@ -54,24 +55,25 @@ The following example demonstrates how to do that:
 	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=BindingCreated}} 
 
 	````C#
-        void radDataEntry1_BindingCreated(object sender, BindingCreatedEventArgs e)
-        {
-            if (e.DataMember == "DateTime")
-            {
-                e.Binding.FormattingEnabled = true;
-                e.Binding.Format += Binding_Format;
-            }
-        }
-	````
-	````VB.NET
-    Private Sub radDataEntry1_BindingCreated(sender As Object, e As BindingCreatedEventArgs)
-        If e.DataMember = "DateTime" Then
-            e.Binding.FormattingEnabled = True
-            AddHandler e.Binding.Format, AddressOf Binding_Format
-        End If
-    End Sub
-    '
-	````
+void radDataEntry1_BindingCreated(object sender, BindingCreatedEventArgs e)
+{
+    if (e.DataMember == "DateTime")
+    {
+        e.Binding.FormattingEnabled = true;
+        e.Binding.Format += Binding_Format;
+    }
+}
+
+````
+````VB.NET
+Private Sub radDataEntry1_BindingCreated(sender As Object, e As BindingCreatedEventArgs)
+    If e.DataMember = "DateTime" Then
+        e.Binding.FormattingEnabled = True
+        AddHandler e.Binding.Format, AddressOf Binding_Format
+    End If
+End Sub
+
+````
 
 	{{endregion}} 
 
@@ -85,22 +87,23 @@ The following example demonstrates how to do that:
 	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=Format}} 
 
 	````C#
-        void Binding_Format(object sender, ConvertEventArgs e)
-        {
-            if (e.Value.Equals(DBNull.Value))
-            {
-                e.Value = null;
-            }
-        }
-	````
-	````VB.NET
-    Private Sub Binding_Format(sender As Object, e As ConvertEventArgs)
-        If e.Value.Equals(DBNull.Value) Then
-            e.Value = Nothing
-        End If
-    End Sub
-    '
-	````
+void Binding_Format(object sender, ConvertEventArgs e)
+{
+    if (e.Value.Equals(DBNull.Value))
+    {
+        e.Value = null;
+    }
+}
+
+````
+````VB.NET
+Private Sub Binding_Format(sender As Object, e As ConvertEventArgs)
+    If e.Value.Equals(DBNull.Value) Then
+        e.Value = Nothing
+    End If
+End Sub
+
+````
 
 	{{endregion}} 
 

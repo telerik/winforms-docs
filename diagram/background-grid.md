@@ -24,13 +24,12 @@ You can control the background settings of the diagramming surface through the f
 
 ````C#
             
-            this.radDiagram1.DiagramElement.IsBackgroundSurfaceVisible = true;
+this.radDiagram1.DiagramElement.IsBackgroundSurfaceVisible = true;
+
 ````
 ````VB.NET
+Me.RadDiagram1.DiagramElement.IsBackgroundSurfaceVisible = True
 
-        Me.RadDiagram1.DiagramElement.IsBackgroundSurfaceVisible = True
-
-        '
 ````
 
 {{endregion}} 
@@ -48,13 +47,12 @@ You can control the background settings of the diagramming surface through the f
 
 ````C#
         
-            this.radDiagram1.DiagramElement.BackgroundGrid.Background = new System.Drawing.SolidBrush(Color.LightYellow);
+this.radDiagram1.DiagramElement.BackgroundGrid.Background = new System.Drawing.SolidBrush(Color.LightYellow);
+
 ````
 ````VB.NET
+Me.RadDiagram1.DiagramElement.BackgroundGrid.Background = New System.Drawing.SolidBrush(Color.LightYellow)
 
-        Me.RadDiagram1.DiagramElement.BackgroundGrid.Background = New System.Drawing.SolidBrush(Color.LightYellow)
-
-        '
 ````
 
 {{endregion}} 
@@ -78,13 +76,12 @@ You can access the __BackgroundGrid__ properties:
 
 ````C#
             
-            this.radDiagram1.DiagramElement.BackgroundGrid.CellSize = new Telerik.Windows.Diagrams.Core.Size(40, 40);
+this.radDiagram1.DiagramElement.BackgroundGrid.CellSize = new Telerik.Windows.Diagrams.Core.Size(40, 40);
+
 ````
 ````VB.NET
+Me.RadDiagram1.DiagramElement.BackgroundGrid.CellSize = New Telerik.Windows.Diagrams.Core.Size(40, 40)
 
-        Me.RadDiagram1.DiagramElement.BackgroundGrid.CellSize = New Telerik.Windows.Diagrams.Core.Size(40, 40)
-
-        '
 ````
 
 {{endregion}} 
@@ -103,13 +100,12 @@ You can access the __BackgroundGrid__ properties:
 
 ````C#
             
-            this.radDiagram1.DiagramElement.BackgroundGrid.LineStroke = new System.Drawing.SolidBrush(Color.Red);
+this.radDiagram1.DiagramElement.BackgroundGrid.LineStroke = new System.Drawing.SolidBrush(Color.Red);
+
 ````
 ````VB.NET
+Me.RadDiagram1.DiagramElement.BackgroundGrid.LineStroke = New System.Drawing.SolidBrush(Color.Red)
 
-        Me.RadDiagram1.DiagramElement.BackgroundGrid.LineStroke = New System.Drawing.SolidBrush(Color.Red)
-
-        '
 ````
 
 {{endregion}} 
@@ -125,13 +121,12 @@ You can access the __BackgroundGrid__ properties:
 
 ````C#
         
-            this.radDiagram1.DiagramElement.BackgroundGrid.LineStrokeThickness = 5;
+this.radDiagram1.DiagramElement.BackgroundGrid.LineStrokeThickness = 5;
+
 ````
 ````VB.NET
+Me.RadDiagram1.DiagramElement.BackgroundGrid.LineStrokeThickness = 5
 
-        Me.RadDiagram1.DiagramElement.BackgroundGrid.LineStrokeThickness = 5
-
-        '
 ````
 
 {{endregion}} 

@@ -31,13 +31,14 @@ You can remove __RadDiagramItems__ in code behind by using the RadDiagram.__Item
 
 ````C#
             
-            this.radDiagram1.Items.RemoveAt(2);
-            this.radDiagram1.Items.Remove(shape1);
+this.radDiagram1.Items.RemoveAt(2);
+this.radDiagram1.Items.Remove(shape1);
+
 ````
 ````VB.NET
-        Me.RadDiagram1.Items.RemoveAt(2)
-        Me.RadDiagram1.Items.Remove(shape1)
-        '
+Me.RadDiagram1.Items.RemoveAt(2)
+Me.RadDiagram1.Items.Remove(shape1)
+
 ````
 
 {{endregion}} 
@@ -52,15 +53,14 @@ You can use the __DiagramCommand__ "Delete" in order to remove the selected __Ra
 
 ````C#
             
-            this.radDiagram1.SelectedItem = shape1;
-            this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Delete, "");
+this.radDiagram1.SelectedItem = shape1;
+this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Delete, "");
+
 ````
 ````VB.NET
+Me.RadDiagram1.SelectedItem = shape1
+Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Delete, "")
 
-        Me.RadDiagram1.SelectedItem = shape1
-        Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Delete, "")
-
-        '
 ````
 
 {{endregion}} 

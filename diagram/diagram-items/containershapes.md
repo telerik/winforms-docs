@@ -37,17 +37,16 @@ __RadDiagramContainerShape__ header is controlled via the __Content__ property:
 
 ````C#
             
-            RadDiagramContainerShape container = new RadDiagramContainerShape();
-            container.Content = "Container header";
-            this.radDiagram1.Items.Add(container);
+RadDiagramContainerShape container = new RadDiagramContainerShape();
+container.Content = "Container header";
+this.radDiagram1.Items.Add(container);
+
 ````
 ````VB.NET
+Dim container As New RadDiagramContainerShape()
+container.Content = "Container header"
+Me.RadDiagram1.Items.Add(container)
 
-        Dim container As New RadDiagramContainerShape()
-        container.Content = "Container header"
-        Me.RadDiagram1.Items.Add(container)
-
-        '
 ````
 
 {{endregion}} 
@@ -76,40 +75,38 @@ You can also populate it manually in code-behind:
 
 ````C#
             
-            RadDiagramShape shape = new RadDiagramShape()
-            {
-                Text = "Shape1",
-                Shape = new RoundRectShape(4),
-                BackColor = Color.LimeGreen
-            };
-            shape.Position = new Telerik.Windows.Diagrams.Core.Point(100, 100);
-            this.radDiagram1.AddShape(shape);
+RadDiagramShape shape = new RadDiagramShape()
+{
+    Text = "Shape1",
+    Shape = new RoundRectShape(4),
+    BackColor = Color.LimeGreen
+};
+shape.Position = new Telerik.Windows.Diagrams.Core.Point(100, 100);
+this.radDiagram1.AddShape(shape);
             
-            RadDiagramContainerShape containerShape = new RadDiagramContainerShape();
-            containerShape.Content = "Container header";
-            containerShape.Location = new Point(10,10);
-            containerShape.DrawBorder = true;
-            this.radDiagram1.Items.Add(containerShape);    
-            containerShape.Items.Add(shape);
+RadDiagramContainerShape containerShape = new RadDiagramContainerShape();
+containerShape.Content = "Container header";
+containerShape.Location = new Point(10,10);
+containerShape.DrawBorder = true;
+this.radDiagram1.Items.Add(containerShape);    
+containerShape.Items.Add(shape);
+
 ````
 ````VB.NET
+Dim shape As New RadDiagramShape() With { _
+    .Text = "Shape1", _
+    .Shape = New RoundRectShape(4), _
+    .BackColor = Color.LimeGreen _
+}
+shape.Position = New Telerik.Windows.Diagrams.Core.Point(100, 100)
+Me.RadDiagram1.AddShape(shape)
+Dim containerShape As New RadDiagramContainerShape()
+containerShape.Content = "Container header"
+containerShape.Location = New Point(10, 10)
+containerShape.DrawBorder = True
+Me.RadDiagram1.Items.Add(containerShape)
+containerShape.Items.Add(shape)
 
-        Dim shape As New RadDiagramShape() With { _
-            .Text = "Shape1", _
-            .Shape = New RoundRectShape(4), _
-            .BackColor = Color.LimeGreen _
-        }
-        shape.Position = New Telerik.Windows.Diagrams.Core.Point(100, 100)
-        Me.RadDiagram1.AddShape(shape)
-
-        Dim containerShape As New RadDiagramContainerShape()
-        containerShape.Content = "Container header"
-        containerShape.Location = New Point(10, 10)
-        containerShape.DrawBorder = True
-        Me.RadDiagram1.Items.Add(containerShape)
-        containerShape.Items.Add(shape)
-
-        '
 ````
 
 {{endregion}} 
@@ -186,17 +183,16 @@ You can easily customize the visual appearance of the __RadDiagramContainerShape
 
 ````C#
             
-            container.BackColor = Color.Yellow;
-            container.BorderThickness = new Padding(3);
-            container.BorderBrush = new System.Drawing.SolidBrush(Color.Fuchsia);
+container.BackColor = Color.Yellow;
+container.BorderThickness = new Padding(3);
+container.BorderBrush = new System.Drawing.SolidBrush(Color.Fuchsia);
+
 ````
 ````VB.NET
+container.BackColor = Color.Yellow
+container.BorderThickness = New System.Windows.Forms.Padding(3)
+container.BorderBrush = New System.Drawing.SolidBrush(Color.Fuchsia)
 
-        container.BackColor = Color.Yellow
-        container.BorderThickness = New System.Windows.Forms.Padding(3)
-        container.BorderBrush = New System.Drawing.SolidBrush(Color.Fuchsia)
-
-        '
 ````
 
 {{endregion}} 

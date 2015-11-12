@@ -29,34 +29,33 @@ Initially the layout looks like this:
 {{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=saveLayout}} 
 
 ````C#
-        private void radButton1_Click(object sender, EventArgs e)
-        {
-            string s = "default.xml";
-            SaveFileDialog dialog = new SaveFileDialog();
-            dialog.Filter =
-               "xml files (*.xml)|*.xml|All files (*.*)|*.*";
-            dialog.Title = "Select a xml file";
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                s = dialog.FileName;
-            }
+private void radButton1_Click(object sender, EventArgs e)
+{
+    string s = "default.xml";
+    SaveFileDialog dialog = new SaveFileDialog();
+    dialog.Filter =
+       "xml files (*.xml)|*.xml|All files (*.*)|*.*";
+    dialog.Title = "Select a xml file";
+    if (dialog.ShowDialog() == DialogResult.OK)
+    {
+        s = dialog.FileName;
+    }
+    this.radCommandBar1.CommandBarElement.SaveLayout(s);
+}
 
-            this.radCommandBar1.CommandBarElement.SaveLayout(s);
-        }
 ````
 ````VB.NET
-    Private Sub RadButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
-        Dim s As String = "default.xml"
-        Dim dialog As New SaveFileDialog()
-        dialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*"
-        dialog.Title = "Select a xml file"
-        If dialog.ShowDialog() = DialogResult.OK Then
-            s = dialog.FileName
-        End If
+Private Sub RadButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
+    Dim s As String = "default.xml"
+    Dim dialog As New SaveFileDialog()
+    dialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*"
+    dialog.Title = "Select a xml file"
+    If dialog.ShowDialog() = DialogResult.OK Then
+        s = dialog.FileName
+    End If
+    Me.RadCommandBar1.CommandBarElement.SaveLayout(s)
+End Sub
 
-        Me.RadCommandBar1.CommandBarElement.SaveLayout(s)
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -69,34 +68,33 @@ The code snippets below demonstrate how you can implement a *Load Layout* button
 {{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=loadLayout}} 
 
 ````C#
-        private void radButton2_Click(object sender, EventArgs e)
-        {
-            string s = "default.xml";
-            OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter =
-               "xml files (*.xml)|*.xml|All files (*.*)|*.*";
-            dialog.Title = "Select a xml file";
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                s = dialog.FileName;
-            }
+private void radButton2_Click(object sender, EventArgs e)
+{
+    string s = "default.xml";
+    OpenFileDialog dialog = new OpenFileDialog();
+    dialog.Filter =
+       "xml files (*.xml)|*.xml|All files (*.*)|*.*";
+    dialog.Title = "Select a xml file";
+    if (dialog.ShowDialog() == DialogResult.OK)
+    {
+        s = dialog.FileName;
+    }
+    this.radCommandBar1.CommandBarElement.LoadLayout(s);
+}
 
-            this.radCommandBar1.CommandBarElement.LoadLayout(s);
-        }
 ````
 ````VB.NET
-    Private Sub RadButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton2.Click
-        Dim s As String = "default.xml"
-        Dim dialog As New OpenFileDialog()
-        dialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*"
-        dialog.Title = "Select a xml file"
-        If dialog.ShowDialog() = DialogResult.OK Then
-            s = dialog.FileName
-        End If
+Private Sub RadButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton2.Click
+    Dim s As String = "default.xml"
+    Dim dialog As New OpenFileDialog()
+    dialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*"
+    dialog.Title = "Select a xml file"
+    If dialog.ShowDialog() = DialogResult.OK Then
+        s = dialog.FileName
+    End If
+    Me.RadCommandBar1.CommandBarElement.LoadLayout(s)
+End Sub
 
-        Me.RadCommandBar1.CommandBarElement.LoadLayout(s)
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -118,21 +116,22 @@ The following example demonstrates how you can save the layout settings of a Rad
 {{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=autoLoadLayoutOnFormLoad}} 
 
 ````C#
-        private void SaveAndLoadLayout1_Load(object sender, EventArgs e)
-        {
-            if (File.Exists("MyLayout.xml"))
-            {
-                this.radCommandBar1.CommandBarElement.LoadLayout("MyLayout.xml");
-            }
-        }
+private void SaveAndLoadLayout1_Load(object sender, EventArgs e)
+{
+    if (File.Exists("MyLayout.xml"))
+    {
+        this.radCommandBar1.CommandBarElement.LoadLayout("MyLayout.xml");
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub SaveAndLoadLayout_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        If File.Exists("MyLayout.xml") Then
-            Me.RadCommandBar1.CommandBarElement.LoadLayout("MyLayout.xml")
-        End If
-    End Sub
-    '
+Private Sub SaveAndLoadLayout_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    If File.Exists("MyLayout.xml") Then
+        Me.RadCommandBar1.CommandBarElement.LoadLayout("MyLayout.xml")
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

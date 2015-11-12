@@ -27,11 +27,12 @@ By default, the __RadDiagramItems__ are enabled for editing. In order to disable
 
 ````C#
             
-            this.radDiagram1.IsEditable = true;
+this.radDiagram1.IsEditable = true;
+
 ````
 ````VB.NET
-        Me.RadDiagram1.IsEditable = True
-        '
+Me.RadDiagram1.IsEditable = True
+
 ````
 
 {{endregion}} 
@@ -73,35 +74,34 @@ __RadDiagram__ provides three predefined commands for editing the selected item 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EditCommands}} 
 
 ````C#
-            
-        private void radButtonEdit_Click(object sender, EventArgs e)
-        {
-            this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.BeginEdit);
-        }
-            
-        private void radButtonConfirm_Click(object sender, EventArgs e)
-        {
-            this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.CommitEdit);
-        }
+    
+private void radButtonEdit_Click(object sender, EventArgs e)
+{
+    this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.BeginEdit);
+}
+    
+private void radButtonConfirm_Click(object sender, EventArgs e)
+{
+    this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.CommitEdit);
+}
+        
+private void radButtonCancel_Click(object sender, EventArgs e)
+{
+    this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.CancelEdit);
+}
 
-        private void radButtonCancel_Click(object sender, EventArgs e)
-        {
-            this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.CancelEdit);
-        }
 ````
 ````VB.NET
-    Private Sub RadButtonEdit_Click(sender As Object, e As EventArgs) Handles RadButtonEdit.Click
-        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.BeginEdit)
-    End Sub
+Private Sub RadButtonEdit_Click(sender As Object, e As EventArgs) Handles RadButtonEdit.Click
+    Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.BeginEdit)
+End Sub
+Private Sub RadButtonConfirm_Click(sender As Object, e As EventArgs) Handles RadButtonConfirm.Click
+    Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.CommitEdit)
+End Sub
+Private Sub RadButtonCancel_Click(sender As Object, e As EventArgs) Handles RadButtonCancel.Click
+    Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.CancelEdit)
+End Sub
 
-    Private Sub RadButtonConfirm_Click(sender As Object, e As EventArgs) Handles RadButtonConfirm.Click
-        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.CommitEdit)
-    End Sub
-
-    Private Sub RadButtonCancel_Click(sender As Object, e As EventArgs) Handles RadButtonCancel.Click
-        Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.CancelEdit)
-    End Sub
-    '
 ````
 
 {{endregion}} 

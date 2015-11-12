@@ -22,27 +22,28 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
 
 ````C#
-            this.radDataEntry1.DataSource = new Employee() 
-            { 
-                FirstName = "Sarah",
-                LastName = "Blake",
-                Occupation = "Supplied Manager", 
-                StartingDate = new DateTime(2005, 04, 12),
-                IsMarried = true, 
-                Salary = 3500, Gender = Gender.Female 
-            };
+this.radDataEntry1.DataSource = new Employee() 
+{ 
+    FirstName = "Sarah",
+    LastName = "Blake",
+    Occupation = "Supplied Manager", 
+    StartingDate = new DateTime(2005, 04, 12),
+    IsMarried = true, 
+    Salary = 3500, Gender = Gender.Female 
+};
+
 ````
 ````VB.NET
-            Me.radDataEntry1.DataSource = New Employee() With { _
-              .FirstName = "Sarah", _
-              .LastName = "Blake", _
-              .Occupation = "Supplied Manager", _
-              .StartingDate = New DateTime(2005, 4, 12), _
-              .IsMarried = True, _
-              .Salary = 3500, _
-              .Gender = Gender.Female _
-             }
-            '
+Me.radDataEntry1.DataSource = New Employee() With { _
+  .FirstName = "Sarah", _
+  .LastName = "Blake", _
+  .Occupation = "Supplied Manager", _
+  .StartingDate = New DateTime(2005, 4, 12), _
+  .IsMarried = True, _
+  .Salary = 3500, _
+  .Gender = Gender.Female _
+ }
+
 ````
 
 {{endregion}} 
@@ -56,11 +57,12 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=NumberOfColumns}} 
 
 ````C#
-            this.radDataEntry1.ColumnCount = 2;
+this.radDataEntry1.ColumnCount = 2;
+
 ````
 ````VB.NET
-            Me.radDataEntry1.ColumnCount = 2
-            '
+Me.radDataEntry1.ColumnCount = 2
+
 ````
 
 {{endregion}} 
@@ -74,11 +76,12 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=FitToParentWidth}} 
 
 ````C#
-            this.radDataEntry1.FitToParentWidth = true;
+this.radDataEntry1.FitToParentWidth = true;
+
 ````
 ````VB.NET
-            Me.radDataEntry1.FitToParentWidth = True
-            '
+Me.radDataEntry1.FitToParentWidth = True
+
 ````
 
 {{endregion}} 
@@ -93,30 +96,26 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ShowValidationPanel}} 
 
 ````C#
+this.radDataEntry1.ShowValidationPanel = true;
+RadLabel label = new RadLabel();
+label.Name = "First Name";
+label.Text = "<html><size=10><b>First Name : </b>First Name should be between 2 and 15 chars long.";
+label.Dock = DockStyle.Top;
+label.AutoSize = false;
+label.BackColor = Color.Transparent;
+this.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label);
 
-            this.radDataEntry1.ShowValidationPanel = true;
-
-            RadLabel label = new RadLabel();
-            label.Name = "First Name";
-            label.Text = "<html><size=10><b>First Name : </b>First Name should be between 2 and 15 chars long.";
-            label.Dock = DockStyle.Top;
-            label.AutoSize = false;
-            label.BackColor = Color.Transparent;
-            this.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label);
 ````
 ````VB.NET
+Me.radDataEntry1.ShowValidationPanel = True
+Dim label As New RadLabel()
+label.Name = "First Name"
+label.Text = "<html><size=10><b>First Name : </b>First Name should be between 2 and 15 chars long."
+label.Dock = DockStyle.Top
+label.AutoSize = False
+label.BackColor = Color.Transparent
+Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
 
-            Me.radDataEntry1.ShowValidationPanel = True
-
-            Dim label As New RadLabel()
-            label.Name = "First Name"
-            label.Text = "<html><size=10><b>First Name : </b>First Name should be between 2 and 15 chars long."
-            label.Dock = DockStyle.Top
-            label.AutoSize = False
-            label.BackColor = Color.Transparent
-            Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
-
-            '
 ````
 
 {{endregion}} 
@@ -130,13 +129,14 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=FillingOrder1}} 
 
 ````C#
-            this.radDataEntry1.ColumnCount = 2;
-            this.radDataEntry1.FlowDirection = FlowDirection.TopDown;
+this.radDataEntry1.ColumnCount = 2;
+this.radDataEntry1.FlowDirection = FlowDirection.TopDown;
+
 ````
 ````VB.NET
-            Me.radDataEntry1.ColumnCount = 2
-            Me.radDataEntry1.FlowDirection = FlowDirection.TopDown
-            '
+Me.radDataEntry1.ColumnCount = 2
+Me.radDataEntry1.FlowDirection = FlowDirection.TopDown
+
 ````
 
 {{endregion}} 
@@ -151,11 +151,12 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ItemSpace}} 
 
 ````C#
-            this.radDataEntry1.ItemSpace = 10;
+this.radDataEntry1.ItemSpace = 10;
+
 ````
 ````VB.NET
-            Me.radDataEntry1.ItemSpace = 10
-            '
+Me.radDataEntry1.ItemSpace = 10
+
 ````
 
 {{endregion}} 
@@ -169,11 +170,12 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ItemDefaultSize}} 
 
 ````C#
-            this.radDataEntry1.ItemDefaultSize = new Size(300, 30);
+this.radDataEntry1.ItemDefaultSize = new Size(300, 30);
+
 ````
 ````VB.NET
-            Me.radDataEntry1.ItemDefaultSize = New Size(300, 30)
-            '
+Me.radDataEntry1.ItemDefaultSize = New Size(300, 30)
+
 ````
 
 {{endregion}} 
@@ -187,11 +189,12 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ResizeLabels}} 
 
 ````C#
-            this.radDataEntry1.AutoSizeLabels = false;
+this.radDataEntry1.AutoSizeLabels = false;
+
 ````
 ````VB.NET
-            Me.radDataEntry1.AutoSizeLabels = False
-            '
+Me.radDataEntry1.AutoSizeLabels = False
+
 ````
 
 {{endregion}} 
@@ -239,24 +242,116 @@ With the __Browsable__ attribute users can easily control which properties shoul
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=Browsable}} 
 
 ````C#
-            [Browsable(false)]
-            public string PhoneNumber
-            {
-                get;
-                set;
-            }
+[Browsable(false)]
+public string PhoneNumber
+{
+    get;
+    set;
+}
+
 ````
 ````VB.NET
-            <Browsable(False)> _
-            Public Property PhoneNumber() As String
-                Get
-                    Return m_PhoneNumber
-                End Get
-                Set(value As String)
-                    m_PhoneNumber = Value
-                End Set
-            End Property
-            Private m_PhoneNumber As String
+<Browsable(False)> _
+Public Property PhoneNumber() As String
+    Get
+        Return m_PhoneNumber
+    End Get
+    Set(value As String)
+        m_PhoneNumber = Value
+    End Set
+End Property
+Private m_PhoneNumber As String
+#End Region
+playName"
+<DisplayName("family name")> _
+Public Property LastName() As String
+    Get
+        Return m_LastName
+    End Get
+    Set(value As String)
+        m_LastName = Value
+    End Set
+End Property
+Private m_LastName As String
+#End Region
+Public Property Occupation() As String
+    Get
+        Return m_Occupation
+    End Get
+    Set(value As String)
+        m_Occupation = Value
+    End Set
+End Property
+Private m_Occupation As String
+Public Property StartingDate() As DateTime
+    Get
+        Return m_StartingDate
+    End Get
+    Set(value As DateTime)
+        m_StartingDate = Value
+    End Set
+End Property
+Private m_StartingDate As DateTime
+Public Property IsMarried() As Boolean
+    Get
+        Return m_IsMarried
+    End Get
+    Set(value As Boolean)
+        m_IsMarried = Value
+    End Set
+End Property
+Private m_IsMarried As Boolean
+Range"
+<RadRange(1500, 2000)> _
+Public Property Salary() As Integer
+    Get
+        Return m_Salary
+    End Get
+    Set(value As Integer)
+        m_Salary = Value
+    End Set
+End Property
+Private m_Salary As Integer
+#End Region
+Public Property Gender() As Gender
+    Get
+        Return m_Gender
+    End Get
+    Set(value As Gender)
+        m_Gender = Value
+    End Set
+End Property
+Private m_Gender As Gender
+End Class
+Private Enum Gender
+Female
+Male
+End Enum
+Public Sub New()
+InitializeComponent()
+End Sub
+Private Sub RadDataEntryProgram_Load(sender As Object, e As EventArgs) Handles Me.Load
+'SetNumberOfColumns();
+'SetFitToParentWidth();
+'SetShowValidationPanel();
+'SetFillingOrder();
+'SetItemSpace();
+'SetItemDefaultSize();
+'SetResizeLabels();
+Me.radDataEntry1.DataSource = New Employee() With { _
+  .FirstName = "Sarah", _
+  .LastName = "Blake", _
+  .Occupation = "Supplied Manager", _
+  .StartingDate = New DateTime(2005, 4, 12), _
+  .IsMarried = True, _
+  .Salary = 3500, _
+  .Gender = Gender.Female _
+}
+End Sub
+Private Sub SetResizeLabels()
+'#Region "ResizeLabels"
+Me.radDataEntry1.AutoSizeLabels = False
+
 ````
 
 {{endregion}} 
@@ -268,24 +363,104 @@ The __DisplayName__ attribute defines what text should be displayed in the label
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=DisplayName}} 
 
 ````C#
-            //[DisplayName("family name")]
-            public string LastName
-            {
-                get;
-                set;
-            }
+//[DisplayName("family name")]
+public string LastName
+{
+    get;
+    set;
+}
+
 ````
 ````VB.NET
-            <DisplayName("family name")> _
-            Public Property LastName() As String
-                Get
-                    Return m_LastName
-                End Get
-                Set(value As String)
-                    m_LastName = Value
-                End Set
-            End Property
-            Private m_LastName As String
+<DisplayName("family name")> _
+Public Property LastName() As String
+    Get
+        Return m_LastName
+    End Get
+    Set(value As String)
+        m_LastName = Value
+    End Set
+End Property
+Private m_LastName As String
+#End Region
+Public Property Occupation() As String
+    Get
+        Return m_Occupation
+    End Get
+    Set(value As String)
+        m_Occupation = Value
+    End Set
+End Property
+Private m_Occupation As String
+Public Property StartingDate() As DateTime
+    Get
+        Return m_StartingDate
+    End Get
+    Set(value As DateTime)
+        m_StartingDate = Value
+    End Set
+End Property
+Private m_StartingDate As DateTime
+Public Property IsMarried() As Boolean
+    Get
+        Return m_IsMarried
+    End Get
+    Set(value As Boolean)
+        m_IsMarried = Value
+    End Set
+End Property
+Private m_IsMarried As Boolean
+Range"
+<RadRange(1500, 2000)> _
+Public Property Salary() As Integer
+    Get
+        Return m_Salary
+    End Get
+    Set(value As Integer)
+        m_Salary = Value
+    End Set
+End Property
+Private m_Salary As Integer
+#End Region
+Public Property Gender() As Gender
+    Get
+        Return m_Gender
+    End Get
+    Set(value As Gender)
+        m_Gender = Value
+    End Set
+End Property
+Private m_Gender As Gender
+End Class
+Private Enum Gender
+Female
+Male
+End Enum
+Public Sub New()
+InitializeComponent()
+End Sub
+Private Sub RadDataEntryProgram_Load(sender As Object, e As EventArgs) Handles Me.Load
+'SetNumberOfColumns();
+'SetFitToParentWidth();
+'SetShowValidationPanel();
+'SetFillingOrder();
+'SetItemSpace();
+'SetItemDefaultSize();
+'SetResizeLabels();
+Me.radDataEntry1.DataSource = New Employee() With { _
+  .FirstName = "Sarah", _
+  .LastName = "Blake", _
+  .Occupation = "Supplied Manager", _
+  .StartingDate = New DateTime(2005, 4, 12), _
+  .IsMarried = True, _
+  .Salary = 3500, _
+  .Gender = Gender.Female _
+}
+End Sub
+Private Sub SetResizeLabels()
+'#Region "ResizeLabels"
+Me.radDataEntry1.AutoSizeLabels = False
+
 ````
 
 {{endregion}} 
@@ -299,24 +474,65 @@ With __RadRangeAttribute__ attribute users can define range that can be used int
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=RadRange}} 
 
 ````C#
-            [RadRange(1500,2000)]
-            public int Salary
-            {
-                get;
-                set;
-            }
+[RadRange(1500,2000)]
+public int Salary
+{
+    get;
+    set;
+}
+
 ````
 ````VB.NET
-            <RadRange(1500, 2000)> _
-            Public Property Salary() As Integer
-                Get
-                    Return m_Salary
-                End Get
-                Set(value As Integer)
-                    m_Salary = Value
-                End Set
-            End Property
-            Private m_Salary As Integer
+<RadRange(1500, 2000)> _
+Public Property Salary() As Integer
+    Get
+        Return m_Salary
+    End Get
+    Set(value As Integer)
+        m_Salary = Value
+    End Set
+End Property
+Private m_Salary As Integer
+#End Region
+Public Property Gender() As Gender
+    Get
+        Return m_Gender
+    End Get
+    Set(value As Gender)
+        m_Gender = Value
+    End Set
+End Property
+Private m_Gender As Gender
+End Class
+Private Enum Gender
+Female
+Male
+End Enum
+Public Sub New()
+InitializeComponent()
+End Sub
+Private Sub RadDataEntryProgram_Load(sender As Object, e As EventArgs) Handles Me.Load
+'SetNumberOfColumns();
+'SetFitToParentWidth();
+'SetShowValidationPanel();
+'SetFillingOrder();
+'SetItemSpace();
+'SetItemDefaultSize();
+'SetResizeLabels();
+Me.radDataEntry1.DataSource = New Employee() With { _
+  .FirstName = "Sarah", _
+  .LastName = "Blake", _
+  .Occupation = "Supplied Manager", _
+  .StartingDate = New DateTime(2005, 4, 12), _
+  .IsMarried = True, _
+  .Salary = 3500, _
+  .Gender = Gender.Female _
+}
+End Sub
+Private Sub SetResizeLabels()
+'#Region "ResizeLabels"
+Me.radDataEntry1.AutoSizeLabels = False
+
 ````
 
 {{endregion}} 
