@@ -26,57 +26,52 @@ In this particular case we are going to add three buttons to RadTextBox:
 {{source=..\SamplesVB\Editors\TextBoxWithButtons.vb region=creatingButtons}} 
 
 ````C#
-            RadButtonElement button = new RadButtonElement();
-            button.Click += new EventHandler(button_Click);
-            button.Padding = new Padding(2, 0, 2, -2);
-            button.Margin = new Padding(0, 0, 0, 0);
-            button.Text = "...";
+RadButtonElement button = new RadButtonElement();
+button.Click += new EventHandler(button_Click);
+button.Padding = new Padding(2, 0, 2, -2);
+button.Margin = new Padding(0, 0, 0, 0);
+button.Text = "...";
+RadButtonElement button2 = new RadButtonElement();
+button2.Click += new EventHandler(button_Click);
+button2.Padding = new Padding(2, 0, 2, -2);
+button2.Margin = new Padding(1, 0, 2, 0);
+button2.Text = "///";
+RadButtonElement button3 = new RadButtonElement();
+button3.Click += new EventHandler(button_Click);
+button3.Padding = new Padding(2, 0, 2, -2);
+button3.Margin = new Padding(1, 0, 1, 0);
+button3.Text = @"\\\";
+StackLayoutElement stackPanel = new StackLayoutElement();
+stackPanel.Orientation = Orientation.Horizontal;
+stackPanel.Margin = new Padding(1, 0, 1, 0);
+stackPanel.Children.Add(button);
+stackPanel.Children.Add(button2);
+stackPanel.Children.Add(button3);
 
-            RadButtonElement button2 = new RadButtonElement();
-            button2.Click += new EventHandler(button_Click);
-            button2.Padding = new Padding(2, 0, 2, -2);
-            button2.Margin = new Padding(1, 0, 2, 0);
-            button2.Text = "///";
-
-            RadButtonElement button3 = new RadButtonElement();
-            button3.Click += new EventHandler(button_Click);
-            button3.Padding = new Padding(2, 0, 2, -2);
-            button3.Margin = new Padding(1, 0, 1, 0);
-            button3.Text = @"\\\";
-
-            StackLayoutElement stackPanel = new StackLayoutElement();
-            stackPanel.Orientation = Orientation.Horizontal;
-            stackPanel.Margin = new Padding(1, 0, 1, 0);
-            stackPanel.Children.Add(button);
-            stackPanel.Children.Add(button2);
-            stackPanel.Children.Add(button3);
 ````
 ````VB.NET
-        Dim button As New RadButtonElement()
-        AddHandler button.Click, AddressOf button_Click
-        button.Padding = New Padding(2, 0, 2, -2)
-        button.Margin = New Padding(0, 0, 0, 0)
-        button.Text = "..."
+Dim button As New RadButtonElement()
+AddHandler button.Click, AddressOf button_Click
+button.Padding = New Padding(2, 0, 2, -2)
+button.Margin = New Padding(0, 0, 0, 0)
+button.Text = "..."
+Dim button2 As New RadButtonElement()
+AddHandler button2.Click, AddressOf button_Click
+button2.Padding = New Padding(2, 0, 2, -2)
+button2.Margin = New Padding(1, 0, 2, 0)
+button2.Text = "///"
+Dim button3 As New RadButtonElement()
+AddHandler button3.Click, AddressOf button_Click
+button3.Padding = New Padding(2, 0, 2, -2)
+button3.Margin = New Padding(1, 0, 1, 0)
+button3.Text = "\\\"
+Dim stackPanel As New StackLayoutElement()
+stackPanel.Orientation = Orientation.Horizontal
+stackPanel.Margin = New Padding(1, 0, 1, 0)
+stackPanel.Children.Add(button)
+stackPanel.Children.Add(button2)
+stackPanel.Children.Add(button3)
 
-        Dim button2 As New RadButtonElement()
-        AddHandler button2.Click, AddressOf button_Click
-        button2.Padding = New Padding(2, 0, 2, -2)
-        button2.Margin = New Padding(1, 0, 2, 0)
-        button2.Text = "///"
-
-        Dim button3 As New RadButtonElement()
-        AddHandler button3.Click, AddressOf button_Click
-        button3.Padding = New Padding(2, 0, 2, -2)
-        button3.Margin = New Padding(1, 0, 1, 0)
-        button3.Text = "\\\"
-
-        Dim stackPanel As New StackLayoutElement()
-        stackPanel.Orientation = Orientation.Horizontal
-        stackPanel.Margin = New Padding(1, 0, 1, 0)
-        stackPanel.Children.Add(button)
-        stackPanel.Children.Add(button2)
-        stackPanel.Children.Add(button3)
-        '
 ````
 
 {{endregion}} 
@@ -91,27 +86,26 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 {{source=..\SamplesVB\Editors\TextBoxWithButtons.vb region=dockLayoutPanel}} 
 
 ````C#
-            RadTextBoxItem tbItem = this.radTextBox1.TextBoxElement.TextBoxItem;
-            this.radTextBox1.TextBoxElement.Children.Remove(tbItem);
+RadTextBoxItem tbItem = this.radTextBox1.TextBoxElement.TextBoxItem;
+this.radTextBox1.TextBoxElement.Children.Remove(tbItem);
+DockLayoutPanel dockPanel = new DockLayoutPanel();
+dockPanel.Children.Add(stackPanel);
+dockPanel.Children.Add(tbItem);
+DockLayoutPanel.SetDock(tbItem, Telerik.WinControls.Layouts.Dock.Left);
+DockLayoutPanel.SetDock(stackPanel, Telerik.WinControls.Layouts.Dock.Right);
+this.radTextBox1.TextBoxElement.Children.Add(dockPanel);
 
-            DockLayoutPanel dockPanel = new DockLayoutPanel();
-            dockPanel.Children.Add(stackPanel);
-            dockPanel.Children.Add(tbItem);
-            DockLayoutPanel.SetDock(tbItem, Telerik.WinControls.Layouts.Dock.Left);
-            DockLayoutPanel.SetDock(stackPanel, Telerik.WinControls.Layouts.Dock.Right);
-            this.radTextBox1.TextBoxElement.Children.Add(dockPanel);
 ````
 ````VB.NET
-        Dim tbItem As RadTextBoxItem = Me.RadTextBox1.TextBoxElement.TextBoxItem
-        Me.RadTextBox1.TextBoxElement.Children.Remove(tbItem)
+Dim tbItem As RadTextBoxItem = Me.RadTextBox1.TextBoxElement.TextBoxItem
+Me.RadTextBox1.TextBoxElement.Children.Remove(tbItem)
+Dim dockPanel As New DockLayoutPanel()
+dockPanel.Children.Add(stackPanel)
+dockPanel.Children.Add(tbItem)
+DockLayoutPanel.SetDock(tbItem, Telerik.WinControls.Layouts.Dock.Left)
+DockLayoutPanel.SetDock(stackPanel, Telerik.WinControls.Layouts.Dock.Right)
+Me.RadTextBox1.TextBoxElement.Children.Add(dockPanel)
 
-        Dim dockPanel As New DockLayoutPanel()
-        dockPanel.Children.Add(stackPanel)
-        dockPanel.Children.Add(tbItem)
-        DockLayoutPanel.SetDock(tbItem, Telerik.WinControls.Layouts.Dock.Left)
-        DockLayoutPanel.SetDock(stackPanel, Telerik.WinControls.Layouts.Dock.Right)
-        Me.RadTextBox1.TextBoxElement.Children.Add(dockPanel)
-        '
 ````
 
 {{endregion}} 
@@ -123,13 +117,14 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 {{source=..\SamplesVB\Editors\TextBoxWithButtons.vb region=finalPadding}} 
 
 ````C#
-            this.radTextBox1.TextBoxElement.Padding = new Padding(1, 1, 1, 1);
-            tbItem.Margin = new Padding(0, 1, 0, 0);
+this.radTextBox1.TextBoxElement.Padding = new Padding(1, 1, 1, 1);
+tbItem.Margin = new Padding(0, 1, 0, 0);
+
 ````
 ````VB.NET
-        Me.RadTextBox1.TextBoxElement.Padding = New Padding(1, 1, 1, 1)
-        tbItem.Margin = New Padding(0, 1, 0, 0)
-        '
+Me.RadTextBox1.TextBoxElement.Padding = New Padding(1, 1, 1, 1)
+tbItem.Margin = New Padding(0, 1, 0, 0)
+
 ````
 
 {{endregion}} 
@@ -140,18 +135,19 @@ As you can see, we are also setting Padding of the buttons. This allows us to se
 {{source=..\SamplesVB\Editors\TextBoxWithButtons.vb region=clickHandler}} 
 
 ````C#
-        void button_Click(object sender, EventArgs e)
-        {
-            RadButtonElement button = sender as RadButtonElement;
-            RadMessageBox.Show("Clicked! " + button.Text);
-        }
+void button_Click(object sender, EventArgs e)
+{
+    RadButtonElement button = sender as RadButtonElement;
+    RadMessageBox.Show("Clicked! " + button.Text);
+}
+
 ````
 ````VB.NET
-    Private Sub button_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Dim button As RadButtonElement = TryCast(sender, RadButtonElement)
-        RadMessageBox.Show("Clicked! " & button.Text)
-    End Sub
-    '
+Private Sub button_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Dim button As RadButtonElement = TryCast(sender, RadButtonElement)
+    RadMessageBox.Show("Clicked! " & button.Text)
+End Sub
+
 ````
 
 {{endregion}} 

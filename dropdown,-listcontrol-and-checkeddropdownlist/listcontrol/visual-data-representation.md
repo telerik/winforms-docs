@@ -26,28 +26,29 @@ Here is how our visual item class could look like:
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=customVisualItem}} 
 
 ````C#
-    public class CustomVisualItem : RadListVisualItem
+public class CustomVisualItem : RadListVisualItem
+{
+    private RadCheckBoxElement checkBox = null;
+    static CustomVisualItem()
     {
-        private RadCheckBoxElement checkBox = null;
-        static CustomVisualItem()
+        RadListVisualItem.SynchronizationProperties.Add(CustomDataItem.AvailableProperty);
+    }
+    protected override void PropertySynchronized(RadProperty property)
+    {
+        base.PropertySynchronized(property);
+        if (property == CustomDataItem.AvailableProperty)
         {
-            RadListVisualItem.SynchronizationProperties.Add(CustomDataItem.AvailableProperty);
-        }
-        protected override void PropertySynchronized(RadProperty property)
-        {
-            base.PropertySynchronized(property);
-            if (property == CustomDataItem.AvailableProperty)
-            {
-                this.checkBox.Checked = (bool)this.GetValue(property);
-            }
-        }
-        protected override void CreateChildElements()
-        {
-            base.CreateChildElements();
-            this.checkBox = new RadCheckBoxElement();
-            this.Children.Add(checkBox);
+            this.checkBox.Checked = (bool)this.GetValue(property);
         }
     }
+    protected override void CreateChildElements()
+    {
+        base.CreateChildElements();
+        this.checkBox = new RadCheckBoxElement();
+        this.Children.Add(checkBox);
+    }
+}
+
 ````
 ````VB.NET
 Public Class CustomVisualItem
@@ -68,7 +69,7 @@ Public Class CustomVisualItem
         Me.Children.Add(checkBox)
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -84,16 +85,17 @@ Once we have created a custom visual item, we need to subscribe to the CreatingV
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=creatingVisualListItem}} 
 
 ````C#
-        void radListControl1_CreatingVisualListItem(object sender, CreatingVisualListItemEventArgs args)
-        {
-            args.VisualItem = new CustomVisualItem();
-        }
+void radListControl1_CreatingVisualListItem(object sender, CreatingVisualListItemEventArgs args)
+{
+    args.VisualItem = new CustomVisualItem();
+}
+
 ````
 ````VB.NET
-    Private Sub radListControl1_CreatingVisualListItem(ByVal sender As Object, ByVal args As CreatingVisualListItemEventArgs)
-        args.VisualItem = New CustomVisualItem()
-    End Sub
-    '
+Private Sub radListControl1_CreatingVisualListItem(ByVal sender As Object, ByVal args As CreatingVisualListItemEventArgs)
+    args.VisualItem = New CustomVisualItem()
+End Sub
+
 ````
 
 {{endregion}}  

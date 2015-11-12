@@ -93,11 +93,12 @@ This article describes the most commonly used properties, events and methods.
 {{source=..\SamplesVB\Editors\PopupEditor\PopupEditorCode.vb region=close}} 
 
 ````C#
-            radPopupEditor1.PopupEditorElement.ClosePopup(RadPopupCloseReason.CloseCalled);
+radPopupEditor1.PopupEditorElement.ClosePopup(RadPopupCloseReason.CloseCalled);
+
 ````
 ````VB.NET
-        radPopupEditor1.PopupEditorElement.ClosePopup(RadPopupCloseReason.CloseCalled)
-        '
+radPopupEditor1.PopupEditorElement.ClosePopup(RadPopupCloseReason.CloseCalled)
+
 ````
 
 {{endregion}} 
@@ -116,11 +117,12 @@ This article describes the most commonly used properties, events and methods.
 {{source=..\SamplesVB\Editors\PopupEditor\PopupEditorCode.vb region=show}} 
 
 ````C#
-            radPopupEditor1.PopupEditorElement.ShowPopup();
+radPopupEditor1.PopupEditorElement.ShowPopup();
+
 ````
 ````VB.NET
-        radPopupEditor1.PopupEditorElement.ShowPopup()
-        '
+radPopupEditor1.PopupEditorElement.ShowPopup()
+
 ````
 
 {{endregion}} 

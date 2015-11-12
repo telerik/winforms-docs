@@ -24,14 +24,14 @@ By default, all items in __RadDropDownList__ have equal height, 18px. You can se
 
 ````C#
             
-            this.radDropDownList1.DropDownListElement.ListElement.Font = new Font("Arial", 18f);
-            this.radDropDownList1.ListElement.ItemHeight = 40;
+this.radDropDownList1.DropDownListElement.ListElement.Font = new Font("Arial", 18f);
+this.radDropDownList1.ListElement.ItemHeight = 40;
+
 ````
 ````VB.NET
+Me.RadDropDownList1.DropDownListElement.ListElement.Font = New Font("Arial", 18.0F)
+Me.RadDropDownList1.ListElement.ItemHeight = 40
 
-        Me.RadDropDownList1.DropDownListElement.ListElement.Font = New Font("Arial", 18.0F)
-        Me.RadDropDownList1.ListElement.ItemHeight = 40
-        '
 ````
 
 {{endregion}} 
@@ -51,16 +51,14 @@ RadDropDownList.__AutoSizeItems__ property indicates whether items will be sized
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=AutoSizeItems}} 
 
 ````C#
+this.radDropDownList1.DropDownListElement.ListElement.Font = new Font("Arial", 8f);
+this.radDropDownList1.AutoSizeItems = true;
 
-            this.radDropDownList1.DropDownListElement.ListElement.Font = new Font("Arial", 8f);
-            this.radDropDownList1.AutoSizeItems = true;
 ````
 ````VB.NET
+Me.RadDropDownList1.DropDownListElement.ListElement.Font = New Font("Arial", 8.0F)
+Me.RadDropDownList1.AutoSizeItems = True
 
-        Me.RadDropDownList1.DropDownListElement.ListElement.Font = New Font("Arial", 8.0F)
-        Me.RadDropDownList1.AutoSizeItems = True
-
-        '
 ````
 
 {{endregion}} 
@@ -79,37 +77,36 @@ If this property is set to *false* the user can set the __Height__ property of e
 
 ````C#
             
-            this.radDropDownList1.AutoSizeItems = false;
-            StringBuilder sb;
-            for (int i = 0; i < 10; i++)
-            {
-                RadListDataItem item = new RadListDataItem();
-                sb = new StringBuilder();
-                for (int j = 0; j < i + 1; j++)
-                {
-                    sb.AppendLine("Item" + i + " Line" + j);
-                }
-                item.Text = sb.ToString();
-                item.Height = this.radDropDownList1.ListElement.ItemHeight * (i + 1);
-                this.radDropDownList1.Items.Add(item);
-            }
+this.radDropDownList1.AutoSizeItems = false;
+StringBuilder sb;
+for (int i = 0; i < 10; i++)
+{
+    RadListDataItem item = new RadListDataItem();
+    sb = new StringBuilder();
+    for (int j = 0; j < i + 1; j++)
+    {
+        sb.AppendLine("Item" + i + " Line" + j);
+    }
+    item.Text = sb.ToString();
+    item.Height = this.radDropDownList1.ListElement.ItemHeight * (i + 1);
+    this.radDropDownList1.Items.Add(item);
+}
+
 ````
 ````VB.NET
+Me.RadDropDownList1.AutoSizeItems = False
+Dim sb As StringBuilder
+For i As Integer = 0 To 9
+    Dim item As New RadListDataItem()
+    sb = New StringBuilder()
+    For j As Integer = 0 To i
+        sb.AppendLine("Item" & i & " Line" & j)
+    Next
+    item.Text = sb.ToString()
+    item.Height = Me.RadDropDownList1.ListElement.ItemHeight * (i + 1)
+    Me.RadDropDownList1.Items.Add(item)
+Next
 
-        Me.RadDropDownList1.AutoSizeItems = False
-        Dim sb As StringBuilder
-        For i As Integer = 0 To 9
-            Dim item As New RadListDataItem()
-            sb = New StringBuilder()
-            For j As Integer = 0 To i
-                sb.AppendLine("Item" & i & " Line" & j)
-            Next
-            item.Text = sb.ToString()
-            item.Height = Me.RadDropDownList1.ListElement.ItemHeight * (i + 1)
-            Me.RadDropDownList1.Items.Add(item)
-        Next
-
-        '
 ````
 
 {{endregion}} 
@@ -128,14 +125,14 @@ When the RadDropDownList.__AutoCompleteMode__ property is set to *Suggest* or *S
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=AutoCompleteItemsHeight}} 
 
 ````C#
+this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+this.radDropDownList1.DropDownListElement.AutoCompleteSuggest.DropDownList.ListElement.ItemHeight = 40;
 
-            this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            this.radDropDownList1.DropDownListElement.AutoCompleteSuggest.DropDownList.ListElement.ItemHeight = 40;
 ````
 ````VB.NET
-        Me.RadDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
-        Me.RadDropDownList1.DropDownListElement.AutoCompleteSuggest.DropDownList.ListElement.ItemHeight = 40
-        '
+Me.RadDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
+Me.RadDropDownList1.DropDownListElement.AutoCompleteSuggest.DropDownList.ListElement.ItemHeight = 40
+
 ````
 
 {{endregion}} 

@@ -33,11 +33,12 @@ The RadDropDownList.__AutoCompleteMode__ property controls auto-complete behavio
 
 ````C#
             
-            this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.None;
+this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.None;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.None
-        '
+Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.None
+
 ````
 
 {{endregion}} 
@@ -53,11 +54,12 @@ The RadDropDownList.__AutoCompleteMode__ property controls auto-complete behavio
 
 ````C#
             
-            this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Suggest;
+this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Suggest;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Suggest
-        '
+Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Suggest
+
 ````
 
 {{endregion}} 
@@ -74,11 +76,12 @@ The RadDropDownList.__AutoCompleteMode__ property controls auto-complete behavio
 
 ````C#
             
-            this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Append;
+this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Append;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Append
-        '
+Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Append
+
 ````
 
 {{endregion}} 
@@ -94,11 +97,12 @@ The RadDropDownList.__AutoCompleteMode__ property controls auto-complete behavio
 
 ````C#
             
-            this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
-        '
+Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
+
 ````
 
 {{endregion}} 
@@ -120,12 +124,12 @@ The RadDropDownList.__AutoCompleteMode__ property controls auto-complete behavio
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=autoCsuggestMode}} 
 
 ````C#
+this.radDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = Telerik.WinControls.UI.SuggestMode.Contains;
 
-            this.radDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = Telerik.WinControls.UI.SuggestMode.Contains;
 ````
 ````VB.NET
-        Me.radDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = Telerik.WinControls.UI.SuggestMode.Contains
-        '
+Me.radDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = Telerik.WinControls.UI.SuggestMode.Contains
+
 ````
 
 {{endregion}} 
@@ -145,12 +149,12 @@ The RadDropDownList.__AutoCompleteMode__ property controls auto-complete behavio
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=autoClimitToList}} 
 
 ````C#
+this.radDropDownList1.DropDownListElement.AutoCompleteAppend.LimitToList = true;
 
-            this.radDropDownList1.DropDownListElement.AutoCompleteAppend.LimitToList = true;
 ````
 ````VB.NET
-        Me.radDropDownList1.DropDownListElement.AutoCompleteAppend.LimitToList = True
-        '
+Me.radDropDownList1.DropDownListElement.AutoCompleteAppend.LimitToList = True
+
 ````
 
 {{endregion}} 
@@ -169,61 +173,59 @@ By default, the items displayed in the __AutoCompleteSuggestHelper__’s pop-up 
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=CustomComparer}} 
 
 ````C#
-            
-        public void ApplyComparer()
-        { 
-            this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Suggest;        
-            this.radDropDownList1.DropDownListElement.AutoCompleteSuggest = new CustomAutoCompleteSuggestHelper(this.radDropDownList1.DropDownListElement);
-            this.radDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains;
-        }
-            
-        public class CustomAutoCompleteSuggestHelper : AutoCompleteSuggestHelper
-        {
-            public CustomAutoCompleteSuggestHelper(RadDropDownListElement owner) : base(owner)
-            {
-            }
-                
-            public override void ApplyFilterToDropDown(string filter)
-            {
-                base.ApplyFilterToDropDown(filter);
-                this.DropDownList.ListElement.DataLayer.DataView.Comparer = new CustomComparer();
-            }
-        }
-            
-        public class CustomComparer: IComparer<RadListDataItem>
-        {
-            public int Compare(RadListDataItem x, RadListDataItem y)
-            {
-                return x.Text.Length.CompareTo(y.Text.Length);
-            }
-        }
+    
+public void ApplyComparer()
+{ 
+    this.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Suggest;        
+    this.radDropDownList1.DropDownListElement.AutoCompleteSuggest = new CustomAutoCompleteSuggestHelper(this.radDropDownList1.DropDownListElement);
+    this.radDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains;
+}
+    
+public class CustomAutoCompleteSuggestHelper : AutoCompleteSuggestHelper
+{
+    public CustomAutoCompleteSuggestHelper(RadDropDownListElement owner) : base(owner)
+    {
+    }
+        
+    public override void ApplyFilterToDropDown(string filter)
+    {
+        base.ApplyFilterToDropDown(filter);
+        this.DropDownList.ListElement.DataLayer.DataView.Comparer = new CustomComparer();
+    }
+}
+    
+public class CustomComparer: IComparer<RadListDataItem>
+{
+    public int Compare(RadListDataItem x, RadListDataItem y)
+    {
+        return x.Text.Length.CompareTo(y.Text.Length);
+    }
+}
+
 ````
 ````VB.NET
-
-    Public Sub ApplyComparer()
-        Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Suggest
-        Me.radDropDownList1.DropDownListElement.AutoCompleteSuggest = New CustomAutoCompleteSuggestHelper(Me.radDropDownList1.DropDownListElement)
-        Me.radDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains
+Public Sub ApplyComparer()
+    Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Suggest
+    Me.radDropDownList1.DropDownListElement.AutoCompleteSuggest = New CustomAutoCompleteSuggestHelper(Me.radDropDownList1.DropDownListElement)
+    Me.radDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains
+End Sub
+Public Class CustomAutoCompleteSuggestHelper
+Inherits AutoCompleteSuggestHelper
+    Public Sub New(owner As RadDropDownListElement)
+        MyBase.New(owner)
     End Sub
+    Public Overrides Sub ApplyFilterToDropDown(filter As String)
+        MyBase.ApplyFilterToDropDown(filter)
+        Me.DropDownList.ListElement.DataLayer.DataView.Comparer = New CustomComparer()
+    End Sub
+End Class
+Public Class CustomComparer
+Implements IComparer(Of RadListDataItem)
+    Public Function [Compare](x As RadListDataItem, y As RadListDataItem) As Integer Implements IComparer(Of RadListDataItem).[Compare]
+        Return x.Text.Length.CompareTo(y.Text.Length)
+    End Function
+End Class
 
-    Public Class CustomAutoCompleteSuggestHelper
-    Inherits AutoCompleteSuggestHelper
-        Public Sub New(owner As RadDropDownListElement)
-            MyBase.New(owner)
-        End Sub
-
-        Public Overrides Sub ApplyFilterToDropDown(filter As String)
-            MyBase.ApplyFilterToDropDown(filter)
-            Me.DropDownList.ListElement.DataLayer.DataView.Comparer = New CustomComparer()
-        End Sub
-    End Class
-
-    Public Class CustomComparer
-    Implements IComparer(Of RadListDataItem)
-        Public Function [Compare](x As RadListDataItem, y As RadListDataItem) As Integer Implements IComparer(Of RadListDataItem).[Compare]
-            Return x.Text.Length.CompareTo(y.Text.Length)
-        End Function
-    End Class
 ````
 
 {{endregion}} 

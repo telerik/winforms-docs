@@ -23,11 +23,12 @@ To save a layout, call the __RadDock.SaveToXML()__ method:
 {{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=saveLayout}} 
 
 ````C#
-            this.radDock1.SaveToXml("c:\\layout1.xml");
+this.radDock1.SaveToXml("c:\\layout1.xml");
+
 ````
 ````VB.NET
-        Me.RadDock1.SaveToXml("c:\layout1.xml")
-        '
+Me.RadDock1.SaveToXml("c:\layout1.xml")
+
 ````
 
 {{endregion}} 
@@ -38,21 +39,22 @@ You can use the __DockWindowSerializing__ event to exclude windows from the save
 {{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=Serializing}} 
 
 ````C#
-        void radDock1_DockWindowSerializing(object sender, DockWindowCancelEventArgs e)
-        {
-            if (e.NewWindow.Text == "Window Top")
-            {
-                e.Cancel = true;
-            }
-        }
+void radDock1_DockWindowSerializing(object sender, DockWindowCancelEventArgs e)
+{
+    if (e.NewWindow.Text == "Window Top")
+    {
+        e.Cancel = true;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radDock1_DockWindowSerializing(ByVal sender As Object, ByVal e As DockWindowCancelEventArgs)
-        If e.NewWindow.Text = "Window Top" Then
-            e.Cancel = True
-        End If
-    End Sub
-    '
+Private Sub radDock1_DockWindowSerializing(ByVal sender As Object, ByVal e As DockWindowCancelEventArgs)
+    If e.NewWindow.Text = "Window Top" Then
+        e.Cancel = True
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -67,11 +69,12 @@ To load a layout, call the __RadDock.LoadFromXML()__ method:
 {{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=loadLayout}} 
 
 ````C#
-            this.radDock1.LoadFromXml("c:\\layout1.xml");
+this.radDock1.LoadFromXml("c:\\layout1.xml");
+
 ````
 ````VB.NET
-        Me.RadDock1.LoadFromXml("c:\layout1.xml")
-        '
+Me.RadDock1.LoadFromXml("c:\layout1.xml")
+
 ````
 
 {{endregion}} 

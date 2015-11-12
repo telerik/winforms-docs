@@ -40,11 +40,12 @@ You can use the following code snippet to access RadTextBoxItem and subscribe to
 {{source=..\SamplesVB\Editors\TextBox1.vb region=subscribeForTextBoxItemClickEvent}} 
 
 ````C#
-            this.radTextBox1.TextBoxElement.TextBoxItem.Click += new EventHandler(TextBoxItem_Click);
+this.radTextBox1.TextBoxElement.TextBoxItem.Click += new EventHandler(TextBoxItem_Click);
+
 ````
 ````VB.NET
-        AddHandler RadTextBox1.TextBoxElement.TextBoxItem.Click, AddressOf TextBoxItem_Click
-        '
+AddHandler RadTextBox1.TextBoxElement.TextBoxItem.Click, AddressOf TextBoxItem_Click
+
 ````
 
 {{endregion}} 

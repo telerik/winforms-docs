@@ -23,11 +23,12 @@ You can set the __AutoCompleteMode__ as follows:
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SetMode}} 
 
 ````C#
-            this.radCheckedDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+this.radCheckedDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+
 ````
 ````VB.NET
-        Me.RadCheckedDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
-        '
+Me.RadCheckedDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
+
 ````
 
 {{endregion}} 
@@ -43,11 +44,12 @@ Changing the filter for the __AutoCompleteSuggest__ is as easy as setting the __
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SuggestMode}} 
 
 ````C#
-            this.radCheckedDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains;
+this.radCheckedDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains;
+
 ````
 ````VB.NET
-        Me.RadCheckedDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains
-        '
+Me.RadCheckedDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains
+
 ````
 
 {{endregion}} 
@@ -60,30 +62,30 @@ In order to customize the __AutoCompleteAppendHelper__ you need to create a desc
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=CustomHelper}} 
 
 ````C#
-        class MyAutoCompleteAppendHelper : AutoCompleteAppendHelper
-        {
-            public MyAutoCompleteAppendHelper(RadDropDownListElement ddList)
-                : base(ddList)
-            {
-            }
+class MyAutoCompleteAppendHelper : AutoCompleteAppendHelper
+{
+    public MyAutoCompleteAppendHelper(RadDropDownListElement ddList)
+        : base(ddList)
+    {
+    }
+    protected override bool DefaultCompare(RadListDataItem item)
+    {
+        return item.Text == this.FindString;
+    }
+}
 
-            protected override bool DefaultCompare(RadListDataItem item)
-            {
-                return item.Text == this.FindString;
-            }
-        }
 ````
 ````VB.NET
-    Private Class MyAutoCompleteAppendHelper
-        Inherits AutoCompleteAppendHelper
-        Public Sub New(ddList As RadDropDownListElement)
-            MyBase.New(ddList)
-        End Sub
+Private Class MyAutoCompleteAppendHelper
+    Inherits AutoCompleteAppendHelper
+    Public Sub New(ddList As RadDropDownListElement)
+        MyBase.New(ddList)
+    End Sub
+    Protected Overrides Function DefaultCompare(item As RadListDataItem) As Boolean
+        Return item.Text = Me.FindString
+    End Function
+End Class
 
-        Protected Overrides Function DefaultCompare(item As RadListDataItem) As Boolean
-            Return item.Text = Me.FindString
-        End Function
-    End Class
 ````
 
 {{endregion}} 
@@ -96,11 +98,12 @@ In order to customize the __AutoCompleteAppendHelper__ you need to create a desc
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SetAppendHelper}} 
 
 ````C#
-            this.radCheckedDropDownList1.DropDownListElement.AutoCompleteAppend = new MyAutoCompleteAppendHelper(this.radCheckedDropDownList1.DropDownListElement);
+this.radCheckedDropDownList1.DropDownListElement.AutoCompleteAppend = new MyAutoCompleteAppendHelper(this.radCheckedDropDownList1.DropDownListElement);
+
 ````
 ````VB.NET
-        Me.RadCheckedDropDownList1.DropDownListElement.AutoCompleteAppend = New MyAutoCompleteAppendHelper(Me.RadCheckedDropDownList1.DropDownListElement)
-        '
+Me.RadCheckedDropDownList1.DropDownListElement.AutoCompleteAppend = New MyAutoCompleteAppendHelper(Me.RadCheckedDropDownList1.DropDownListElement)
+
 ````
 
 {{endregion}} 

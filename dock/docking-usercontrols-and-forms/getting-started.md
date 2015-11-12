@@ -24,19 +24,20 @@ For example, the following code snippet will result in the screenshot shown belo
 {{source=..\SamplesVB\Dock\DockingForms.vb region=dockingForm}} 
 
 ````C#
-            Form form = new Form();
-            form.BackColor = Color.Pink;
-            form.Text = "My Form";
-            this.radDock1.DockControl(form, DockPosition.Left);
-            form.Show();
+Form form = new Form();
+form.BackColor = Color.Pink;
+form.Text = "My Form";
+this.radDock1.DockControl(form, DockPosition.Left);
+form.Show();
+
 ````
 ````VB.NET
-        Dim form As Form = New Form()
-        form.BackColor = Color.Pink
-        form.Text = "My Form"
-        Me.RadDock1.DockControl(form, DockPosition.Left)
-        form.Show()
-        '
+Dim form As Form = New Form()
+form.BackColor = Color.Pink
+form.Text = "My Form"
+Me.RadDock1.DockControl(form, DockPosition.Left)
+form.Show()
+
 ````
 
 {{endregion}} 

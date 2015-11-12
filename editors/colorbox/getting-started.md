@@ -27,16 +27,17 @@ The following example demonstrates how to change the __ForeColor__  of __RadLabe
 {{source=..\SamplesVB\Editors\ColorBox1.vb region=colorBoxValueChanged}} 
 
 ````C#
-        private void radColorBox1_ValueChanged(object sender, EventArgs e)
-        {
-            this.radLabel1.ForeColor = this.radColorBox1.Value;
-        }
+private void radColorBox1_ValueChanged(object sender, EventArgs e)
+{
+    this.radLabel1.ForeColor = this.radColorBox1.Value;
+}
+
 ````
 ````VB.NET
-    Private Sub RadColorBox1_ValueChanged(sender As Object, e As EventArgs)
-        Me.RadLabel1.ForeColor = Me.RadColorBox1.Value
-    End Sub
-    '
+Private Sub RadColorBox1_ValueChanged(sender As Object, e As EventArgs)
+    Me.RadLabel1.ForeColor = Me.RadColorBox1.Value
+End Sub
+
 ````
 
 {{endregion}} 

@@ -22,21 +22,22 @@ RadListDataItem initially has the most basic visual properties required which ar
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=customDataItem}} 
 
 ````C#
-    public class CustomDataItem : RadListDataItem
+public class CustomDataItem : RadListDataItem
+{
+    public static readonly RadProperty AvailableProperty = RadProperty.Register("Available", typeof(bool), typeof(CustomDataItem), new RadElementPropertyMetadata(false));
+    public bool Available
     {
-        public static readonly RadProperty AvailableProperty = RadProperty.Register("Available", typeof(bool), typeof(CustomDataItem), new RadElementPropertyMetadata(false));
-        public bool Available
+        get
         {
-            get
-            {
-                return (bool)this.GetValue(CustomDataItem.AvailableProperty);
-            }
-            set
-            {
-                this.SetValue(CustomDataItem.AvailableProperty, value);
-            }
+            return (bool)this.GetValue(CustomDataItem.AvailableProperty);
+        }
+        set
+        {
+            this.SetValue(CustomDataItem.AvailableProperty, value);
         }
     }
+}
+
 ````
 ````VB.NET
 Public Class CustomDataItem
@@ -51,7 +52,7 @@ Public Class CustomDataItem
         End Set
     End Property
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -62,16 +63,17 @@ Once we have the custom data item with the additional information we can convinc
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=itemDataBinding}} 
 
 ````C#
-        void radListControl1_ItemDataBinding(object sender, ListItemDataBindingEventArgs args)
-        {
-            args.NewItem = new CustomDataItem();
-        }
+void radListControl1_ItemDataBinding(object sender, ListItemDataBindingEventArgs args)
+{
+    args.NewItem = new CustomDataItem();
+}
+
 ````
 ````VB.NET
-    Private Sub radListControl1_ItemDataBinding(ByVal sender As Object, ByVal args As ListItemDataBindingEventArgs)
-        args.NewItem = New CustomDataItem()
-    End Sub
-    '
+Private Sub radListControl1_ItemDataBinding(ByVal sender As Object, ByVal args As ListItemDataBindingEventArgs)
+    args.NewItem = New CustomDataItem()
+End Sub
+
 ````
 
 {{endregion}} 

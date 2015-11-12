@@ -28,15 +28,21 @@ The code below sets text in the control at run time:
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=SetText}} 
 
 ````C#
-        private void SetText()
-        {
-            this.radAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;";
-        }
+private void SetText()
+{
+    this.radAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;";
+}
+
 ````
 ````VB.NET
-    Private Sub SetText()
-        Me.RadAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;"
-    End Sub
+Private Sub SetText()
+    Me.RadAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;"
+End Sub
+ Region
+Private Sub ShowRemoveButton()
+    '#Region "ShowRemoveButton"
+    Me.RadAutoCompleteBox1.ShowRemoveButton = False
+
 ````
 
 {{endregion}} 
@@ -50,11 +56,12 @@ You can determine the visibility of the remove button by changing the __ShowRemo
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=ShowRemoveButton}} 
 
 ````C#
-            this.radAutoCompleteBox1.ShowRemoveButton = false;
+this.radAutoCompleteBox1.ShowRemoveButton = false;
+
 ````
 ````VB.NET
-        Me.RadAutoCompleteBox1.ShowRemoveButton = False
-        '
+Me.RadAutoCompleteBox1.ShowRemoveButton = False
+
 ````
 
 {{endregion}} 
@@ -68,11 +75,12 @@ To access the tokenized items use the __Items__ collection property of RadAutoCo
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=AccessToken}} 
 
 ````C#
-            RadTokenizedTextItem thirdToken = radAutoCompleteBox1.Items[2];
+RadTokenizedTextItem thirdToken = radAutoCompleteBox1.Items[2];
+
 ````
 ````VB.NET
-        Dim thirdToken As RadTokenizedTextItem = RadAutoCompleteBox1.Items(2)
-        '
+Dim thirdToken As RadTokenizedTextItem = RadAutoCompleteBox1.Items(2)
+
 ````
 
 {{endregion}} 

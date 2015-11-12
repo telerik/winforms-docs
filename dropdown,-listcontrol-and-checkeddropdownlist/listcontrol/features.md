@@ -24,11 +24,12 @@ Sorting in RadListControl is controlled via the __SortStyle__ property. It suppo
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=sorting}} 
 
 ````C#
-            radListControl1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending;
+radListControl1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending;
+
 ````
 ````VB.NET
-        radListControl1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending
-        '
+radListControl1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending
+
 ````
 
 {{endregion}} 
@@ -46,16 +47,17 @@ RadListControl can filter which items are currently visible by using the __Filte
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=filteringMethod}} 
 
 ````C#
-        private bool FilterMethod(RadListDataItem itemToFilter)
-        {
-            return itemToFilter.Text.EndsWith("SomeString");
-        }
+private bool FilterMethod(RadListDataItem itemToFilter)
+{
+    return itemToFilter.Text.EndsWith("SomeString");
+}
+
 ````
 ````VB.NET
-    Private Function FilterMethod(ByVal itemToFilter As RadListDataItem) As Boolean
-        Return itemToFilter.Text.EndsWith("SomeString")
-    End Function
-    '
+Private Function FilterMethod(ByVal itemToFilter As RadListDataItem) As Boolean
+    Return itemToFilter.Text.EndsWith("SomeString")
+End Function
+
 ````
 
 {{endregion}} 
@@ -67,11 +69,12 @@ RadListControl can filter which items are currently visible by using the __Filte
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=filtering}} 
 
 ````C#
-            radListControl1.Filter = FilterMethod;
+radListControl1.Filter = FilterMethod;
+
 ````
 ````VB.NET
-        radListControl1.Filter = AddressOf FilterMethod
-        '
+radListControl1.Filter = AddressOf FilterMethod
+
 ````
 
 {{endregion}} 
@@ -89,11 +92,12 @@ RadListControl can search for an item with the FindString() and FindStringExact(
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=searching}} 
 
 ````C#
-            int index = radListControl1.FindString("someitem");
+int index = radListControl1.FindString("someitem");
+
 ````
 ````VB.NET
-        Dim index As Integer = radListControl1.FindString("someitem")
-        '
+Dim index As Integer = radListControl1.FindString("someitem")
+
 ````
 
 {{endregion}} 
@@ -106,11 +110,12 @@ This method call will return the index of the first item with "someitem" as its 
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=index}} 
 
 ````C#
-            int index = radListControl1.FindString("someitem", 5);
+int index = radListControl1.FindString("someitem", 5);
+
 ````
 ````VB.NET
-        Dim index As Integer = radListControl1.FindString("someitem", 5)
-        '
+Dim index As Integer = radListControl1.FindString("someitem", 5)
+
 ````
 
 {{endregion}} 
@@ -144,20 +149,20 @@ __RadListControl__ supports alternating item color which can be easily enabled b
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=alternating}} 
 
 ````C#
-            radListControl1.EnableAlternatingItemColor = true;
-            radListControl1.ListElement.AlternatingItemColor = Color.Red;
+radListControl1.EnableAlternatingItemColor = true;
+radListControl1.ListElement.AlternatingItemColor = Color.Red;
+
 ````
 ````VB.NET
-        radListControl1.EnableAlternatingItemColor = True
-        radListControl1.ListElement.AlternatingItemColor = Color.Red
-        '#End Region
-    End Sub
+radListControl1.EnableAlternatingItemColor = True
+radListControl1.ListElement.AlternatingItemColor = Color.Red
+'#End Region
+End Sub
+'#region creatingVisualListItem
+Private Sub radListControl1_CreatingVisualListItem(ByVal sender As Object, ByVal args As CreatingVisualListItemEventArgs)
+args.VisualItem = New CustomVisualItem()
+End Sub
 
-    '#region creatingVisualListItem
-    Private Sub radListControl1_CreatingVisualListItem(ByVal sender As Object, ByVal args As CreatingVisualListItemEventArgs)
-        args.VisualItem = New CustomVisualItem()
-    End Sub
-    '
 ````
 
 {{endregion}} 

@@ -30,19 +30,73 @@ The __SelectionLength__ property is a numeric value that sets the width of the i
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetSelection}} 
 
 ````C#
-        private void SetSelection()
-        {
-            this.radTextBoxControl1.Text = "Hello, John Green";
-            this.radTextBoxControl1.SelectionStart = 7;
-            this.radTextBoxControl1.SelectionLength = 4;
-        }
+private void SetSelection()
+{
+    this.radTextBoxControl1.Text = "Hello, John Green";
+    this.radTextBoxControl1.SelectionStart = 7;
+    this.radTextBoxControl1.SelectionLength = 4;
+}
+
 ````
 ````VB.NET
-    Private Sub SetSelection()
-        Me.RadTextBoxControl1.Text = "Hello, John Green"
-        Me.RadTextBoxControl1.SelectionStart = 7
-        Me.RadTextBoxControl1.SelectionLength = 4
-    End Sub
+Private Sub SetSelection()
+    Me.RadTextBoxControl1.Text = "Hello, John Green"
+    Me.RadTextBoxControl1.SelectionStart = 7
+    Me.RadTextBoxControl1.SelectionLength = 4
+End Sub
+ Region
+ion "Select"
+Private Sub SelectText()
+    Me.RadTextBoxControl1.Text = "Hello, John Green"
+    Me.RadTextBoxControl1.[Select](7, 4)
+End Sub
+ Region
+ion "Insert"
+Private Sub Insert()
+    Me.RadTextBoxControl1.Text = "Green"
+    Me.RadTextBoxControl1.CaretIndex = 0
+    Me.RadTextBoxControl1.Insert("John ")
+End Sub
+ Region
+ion "AppendText"
+Private Sub AppendText()
+    Me.RadTextBoxControl1.Text = "Samuel"
+    Me.RadTextBoxControl1.AppendText(" Jackson")
+End Sub
+ Region
+ion "Delete"
+Private Sub DeleteSelection()
+    Me.RadTextBoxControl1.Text = "John Green"
+    Me.RadTextBoxControl1.[Select](0, 4)
+    Me.RadTextBoxControl1.Delete()
+End Sub
+ Region
+ion "TextChanging"
+Private Sub radTextBoxControl1_TextChanging(sender As Object, e As Telerik.WinControls.TextChangingEventArgs)
+    e.Cancel = String.IsNullOrEmpty(e.NewValue)
+End Sub
+ Region
+ion "AddAutoCompleteItems"
+Private Sub AddAutoCompleteItems()
+    Me.RadTextBoxControl1.AutoCompleteMode = AutoCompleteMode.Suggest
+    Dim autoCompleteItems As RadListDataItemCollection = Me.RadTextBoxControl1.AutoCompleteItems
+    autoCompleteItems.Add(New RadListDataItem("Luke"))
+    autoCompleteItems.Add(New RadListDataItem("Max"))
+    autoCompleteItems.Add(New RadListDataItem("Adam"))
+    autoCompleteItems.Add(New RadListDataItem("Henry"))
+    autoCompleteItems.Add(New RadListDataItem("Jack"))
+    autoCompleteItems.Add(New RadListDataItem("Ben"))
+    autoCompleteItems.Add(New RadListDataItem("Tyler"))
+    autoCompleteItems.Add(New RadListDataItem("Ethan"))
+    autoCompleteItems.Add(New RadListDataItem("David"))
+    autoCompleteItems.Add(New RadListDataItem("Mike"))
+End Sub
+ Region
+Private Sub formatting1()
+    '#Region "Formatting1"
+    AddHandler Me.RadTextBoxControl1.TextBlockFormatting, AddressOf Me.OnTextBlockFormatting
+    Me.RadTextBoxControl1.Text = "This is important text."
+
 ````
 
 {{endregion}} 
@@ -53,17 +107,65 @@ Alternatively, you can use the Select method to select the same part of the text
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=Select}} 
 
 ````C#
-        private void SelectText()
-        {
-            this.radTextBoxControl1.Text = "Hello, John Green";
-            this.radTextBoxControl1.Select(7, 4);
-        }
+private void SelectText()
+{
+    this.radTextBoxControl1.Text = "Hello, John Green";
+    this.radTextBoxControl1.Select(7, 4);
+}
+
 ````
 ````VB.NET
-    Private Sub SelectText()
-        Me.RadTextBoxControl1.Text = "Hello, John Green"
-        Me.RadTextBoxControl1.[Select](7, 4)
-    End Sub
+Private Sub SelectText()
+    Me.RadTextBoxControl1.Text = "Hello, John Green"
+    Me.RadTextBoxControl1.[Select](7, 4)
+End Sub
+ Region
+ion "Insert"
+Private Sub Insert()
+    Me.RadTextBoxControl1.Text = "Green"
+    Me.RadTextBoxControl1.CaretIndex = 0
+    Me.RadTextBoxControl1.Insert("John ")
+End Sub
+ Region
+ion "AppendText"
+Private Sub AppendText()
+    Me.RadTextBoxControl1.Text = "Samuel"
+    Me.RadTextBoxControl1.AppendText(" Jackson")
+End Sub
+ Region
+ion "Delete"
+Private Sub DeleteSelection()
+    Me.RadTextBoxControl1.Text = "John Green"
+    Me.RadTextBoxControl1.[Select](0, 4)
+    Me.RadTextBoxControl1.Delete()
+End Sub
+ Region
+ion "TextChanging"
+Private Sub radTextBoxControl1_TextChanging(sender As Object, e As Telerik.WinControls.TextChangingEventArgs)
+    e.Cancel = String.IsNullOrEmpty(e.NewValue)
+End Sub
+ Region
+ion "AddAutoCompleteItems"
+Private Sub AddAutoCompleteItems()
+    Me.RadTextBoxControl1.AutoCompleteMode = AutoCompleteMode.Suggest
+    Dim autoCompleteItems As RadListDataItemCollection = Me.RadTextBoxControl1.AutoCompleteItems
+    autoCompleteItems.Add(New RadListDataItem("Luke"))
+    autoCompleteItems.Add(New RadListDataItem("Max"))
+    autoCompleteItems.Add(New RadListDataItem("Adam"))
+    autoCompleteItems.Add(New RadListDataItem("Henry"))
+    autoCompleteItems.Add(New RadListDataItem("Jack"))
+    autoCompleteItems.Add(New RadListDataItem("Ben"))
+    autoCompleteItems.Add(New RadListDataItem("Tyler"))
+    autoCompleteItems.Add(New RadListDataItem("Ethan"))
+    autoCompleteItems.Add(New RadListDataItem("David"))
+    autoCompleteItems.Add(New RadListDataItem("Mike"))
+End Sub
+ Region
+Private Sub formatting1()
+    '#Region "Formatting1"
+    AddHandler Me.RadTextBoxControl1.TextBlockFormatting, AddressOf Me.OnTextBlockFormatting
+    Me.RadTextBoxControl1.Text = "This is important text."
+
 ````
 
 {{endregion}} 

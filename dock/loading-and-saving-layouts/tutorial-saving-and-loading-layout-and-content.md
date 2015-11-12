@@ -28,12 +28,13 @@ As stated in [this documentation article]({%slug winforms/dock/loading-and-savin
 	{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=paths}} 
 
 	````C#
-        private string dockLayoutPath = Application.StartupPath + "\\dock.xml";
-	````
-	````VB.NET
-    Private dockLayoutPath As String = Application.StartupPath & "\dock.xml"
-    '
-	````
+private string dockLayoutPath = Application.StartupPath + "\\dock.xml";
+
+````
+````VB.NET
+Private dockLayoutPath As String = Application.StartupPath & "\dock.xml"
+
+````
 
 	{{endregion}} 
  
@@ -43,53 +44,50 @@ As stated in [this documentation article]({%slug winforms/dock/loading-and-savin
 	{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=formLoad}} 
 
 	````C#
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            if (!File.Exists(dockLayoutPath))
-            {
-                InitializeLayout();
-            }
-            else
-            {
-                this.radDock1.LoadFromXml(dockLayoutPath);
-                LoadContent();
-            }
-        }
+private void MainForm_Load(object sender, EventArgs e)
+{
+    if (!File.Exists(dockLayoutPath))
+    {
+        InitializeLayout();
+    }
+    else
+    {
+        this.radDock1.LoadFromXml(dockLayoutPath);
+        LoadContent();
+    }
+}
+private void InitializeLayout()
+{
+    this.radDock1.MainDocumentContainerVisible = false;
+    HostWindow afW = this.radDock1.DockControl(new AvailableFlights(), DockPosition.Left);
+    afW.Text = "Available Flights";
+    HostWindow bfW = this.radDock1.DockControl(new BookFlight(), DockPosition.Left);
+    bfW.Text = "Book a Flight";
+    HostWindow fsW = this.radDock1.DockControl(new FlightsSummary(), DockPosition.Left);
+    fsW.Text = "Flight Summary";
+}
 
-        private void InitializeLayout()
-        {
-            this.radDock1.MainDocumentContainerVisible = false;
+````
+````VB.NET
+Private Sub MainForm_Load(ByVal sender As Object, ByVal e As EventArgs)
+    If Not File.Exists(dockLayoutPath) Then
+        InitializeLayout()
+    Else
+        Me.RadDock1.LoadFromXml(dockLayoutPath)
+        LoadContent()
+    End If
+End Sub
+Private Sub InitializeLayout()
+    Me.RadDock1.MainDocumentContainerVisible = False
+    Dim afW As HostWindow = Me.RadDock1.DockControl(New AvailableFlights(), DockPosition.Left)
+    afW.Text = "Available Flights"
+    Dim bfW As HostWindow = Me.RadDock1.DockControl(New BookFlight(), DockPosition.Left)
+    bfW.Text = "Book a Flight"
+    Dim fsW As HostWindow = Me.RadDock1.DockControl(New FlightsSummary(), DockPosition.Left)
+    fsW.Text = "Flight Summary"
+End Sub
 
-            HostWindow afW = this.radDock1.DockControl(new AvailableFlights(), DockPosition.Left);
-            afW.Text = "Available Flights";
-            HostWindow bfW = this.radDock1.DockControl(new BookFlight(), DockPosition.Left);
-            bfW.Text = "Book a Flight";
-            HostWindow fsW = this.radDock1.DockControl(new FlightsSummary(), DockPosition.Left);
-            fsW.Text = "Flight Summary";
-        }
-	````
-	````VB.NET
-    Private Sub MainForm_Load(ByVal sender As Object, ByVal e As EventArgs)
-        If Not File.Exists(dockLayoutPath) Then
-            InitializeLayout()
-        Else
-            Me.RadDock1.LoadFromXml(dockLayoutPath)
-            LoadContent()
-        End If
-    End Sub
-
-    Private Sub InitializeLayout()
-        Me.RadDock1.MainDocumentContainerVisible = False
-
-        Dim afW As HostWindow = Me.RadDock1.DockControl(New AvailableFlights(), DockPosition.Left)
-        afW.Text = "Available Flights"
-        Dim bfW As HostWindow = Me.RadDock1.DockControl(New BookFlight(), DockPosition.Left)
-        bfW.Text = "Book a Flight"
-        Dim fsW As HostWindow = Me.RadDock1.DockControl(New FlightsSummary(), DockPosition.Left)
-        fsW.Text = "Flight Summary"
-    End Sub
-    '
-	````
+````
 
 	{{endregion}} 
 
@@ -106,17 +104,18 @@ As stated in [this documentation article]({%slug winforms/dock/loading-and-savin
 	{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=formClosing}} 
 
 	````C#
-        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            this.radDock1.SaveToXml(dockLayoutPath);
-        }
-	````
-	````VB.NET
-    Private Sub MainForm_FormClosing(ByVal sender As Object, ByVal e As FormClosingEventArgs)
-        Me.RadDock1.SaveToXml(dockLayoutPath)
-    End Sub
-    '
-	````
+private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+{
+    this.radDock1.SaveToXml(dockLayoutPath);
+}
+
+````
+````VB.NET
+Private Sub MainForm_FormClosing(ByVal sender As Object, ByVal e As FormClosingEventArgs)
+    Me.RadDock1.SaveToXml(dockLayoutPath)
+End Sub
+
+````
 
 	{{endregion}} 
  
@@ -132,58 +131,55 @@ As stated in [this documentation article]({%slug winforms/dock/loading-and-savin
 	{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=loadContent}} 
 
 	````C#
-        private void LoadContent()
+private void LoadContent()
+{
+    for (int i = 0; i < this.radDock1.DockWindows.Count; i++)
+    {
+        HostWindow hw = this.radDock1.DockWindows[i] as HostWindow;
+        if (hw != null)
         {
-            for (int i = 0; i < this.radDock1.DockWindows.Count; i++)
+            if (hw.Name.StartsWith("Available"))
             {
-                HostWindow hw = this.radDock1.DockWindows[i] as HostWindow;
-                if (hw != null)
-                {
-                    if (hw.Name.StartsWith("Available"))
-                    {
-                        hw.LoadContent(new AvailableFlights());
-                        hw.Text = "Available Flights";
-                    }
-
-                    if (hw.Name.StartsWith("Book"))
-                    {
-                        hw.LoadContent(new BookFlight());
-                        hw.Text = "Book a Flight";
-                    }
-
-                    if (hw.Name.StartsWith("Flight"))
-                    {
-                        hw.LoadContent(new FlightsSummary());
-                        hw.Text = "Flight Summary";
-                    }
-                }
+                hw.LoadContent(new AvailableFlights());
+                hw.Text = "Available Flights";
+            }
+            if (hw.Name.StartsWith("Book"))
+            {
+                hw.LoadContent(new BookFlight());
+                hw.Text = "Book a Flight";
+            }
+            if (hw.Name.StartsWith("Flight"))
+            {
+                hw.LoadContent(new FlightsSummary());
+                hw.Text = "Flight Summary";
             }
         }
-	````
-	````VB.NET
-    Private Sub LoadContent()
-        For i As Integer = 0 To Me.RadDock1.DockWindows.Count - 1
-            Dim hw As HostWindow = TryCast(Me.RadDock1.DockWindows(i), HostWindow)
-            If hw IsNot Nothing Then
-                If hw.Name.StartsWith("Available") Then
-                    hw.LoadContent(New AvailableFlights())
-                    hw.Text = "Available Flights"
-                End If
+    }
+}
 
-                If hw.Name.StartsWith("Book") Then
-                    hw.LoadContent(New BookFlight())
-                    hw.Text = "Book a Flight"
-                End If
-
-                If hw.Name.StartsWith("Flight") Then
-                    hw.LoadContent(New FlightsSummary())
-                    hw.Text = "Flight Summary"
-                End If
+````
+````VB.NET
+Private Sub LoadContent()
+    For i As Integer = 0 To Me.RadDock1.DockWindows.Count - 1
+        Dim hw As HostWindow = TryCast(Me.RadDock1.DockWindows(i), HostWindow)
+        If hw IsNot Nothing Then
+            If hw.Name.StartsWith("Available") Then
+                hw.LoadContent(New AvailableFlights())
+                hw.Text = "Available Flights"
             End If
-        Next i
-    End Sub
-    '
-	````
+            If hw.Name.StartsWith("Book") Then
+                hw.LoadContent(New BookFlight())
+                hw.Text = "Book a Flight"
+            End If
+            If hw.Name.StartsWith("Flight") Then
+                hw.LoadContent(New FlightsSummary())
+                hw.Text = "Flight Summary"
+            End If
+        End If
+    Next i
+End Sub
+
+````
 
 	{{endregion}} 
  

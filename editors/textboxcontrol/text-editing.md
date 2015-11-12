@@ -21,19 +21,60 @@ You can insert text programmatically at concrete position by using the __Insert_
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=Insert}} 
 
 ````C#
-        private void Insert()
-        {
-            this.radTextBoxControl1.Text = "Green";
-            this.radTextBoxControl1.CaretIndex = 0;
-            this.radTextBoxControl1.Insert("John ");
-        }
+private void Insert()
+{
+    this.radTextBoxControl1.Text = "Green";
+    this.radTextBoxControl1.CaretIndex = 0;
+    this.radTextBoxControl1.Insert("John ");
+}
+
 ````
 ````VB.NET
-    Private Sub Insert()
-        Me.RadTextBoxControl1.Text = "Green"
-        Me.RadTextBoxControl1.CaretIndex = 0
-        Me.RadTextBoxControl1.Insert("John ")
-    End Sub
+Private Sub Insert()
+    Me.RadTextBoxControl1.Text = "Green"
+    Me.RadTextBoxControl1.CaretIndex = 0
+    Me.RadTextBoxControl1.Insert("John ")
+End Sub
+ Region
+ion "AppendText"
+Private Sub AppendText()
+    Me.RadTextBoxControl1.Text = "Samuel"
+    Me.RadTextBoxControl1.AppendText(" Jackson")
+End Sub
+ Region
+ion "Delete"
+Private Sub DeleteSelection()
+    Me.RadTextBoxControl1.Text = "John Green"
+    Me.RadTextBoxControl1.[Select](0, 4)
+    Me.RadTextBoxControl1.Delete()
+End Sub
+ Region
+ion "TextChanging"
+Private Sub radTextBoxControl1_TextChanging(sender As Object, e As Telerik.WinControls.TextChangingEventArgs)
+    e.Cancel = String.IsNullOrEmpty(e.NewValue)
+End Sub
+ Region
+ion "AddAutoCompleteItems"
+Private Sub AddAutoCompleteItems()
+    Me.RadTextBoxControl1.AutoCompleteMode = AutoCompleteMode.Suggest
+    Dim autoCompleteItems As RadListDataItemCollection = Me.RadTextBoxControl1.AutoCompleteItems
+    autoCompleteItems.Add(New RadListDataItem("Luke"))
+    autoCompleteItems.Add(New RadListDataItem("Max"))
+    autoCompleteItems.Add(New RadListDataItem("Adam"))
+    autoCompleteItems.Add(New RadListDataItem("Henry"))
+    autoCompleteItems.Add(New RadListDataItem("Jack"))
+    autoCompleteItems.Add(New RadListDataItem("Ben"))
+    autoCompleteItems.Add(New RadListDataItem("Tyler"))
+    autoCompleteItems.Add(New RadListDataItem("Ethan"))
+    autoCompleteItems.Add(New RadListDataItem("David"))
+    autoCompleteItems.Add(New RadListDataItem("Mike"))
+End Sub
+ Region
+Private Sub formatting1()
+    '#Region "Formatting1"
+    AddHandler Me.RadTextBoxControl1.TextBlockFormatting, AddressOf Me.OnTextBlockFormatting
+    Me.RadTextBoxControl1.Text = "This is important text."
+
 ````
 
 {{endregion}} 
@@ -46,17 +87,52 @@ Alternatively, you can insert text at the end of the RadTextBoxControl content b
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=AppendText}} 
 
 ````C#
-        private void AppendText()
-        {
-            this.radTextBoxControl1.Text = "Samuel";
-            this.radTextBoxControl1.AppendText(" Jackson");
-        }
+private void AppendText()
+{
+    this.radTextBoxControl1.Text = "Samuel";
+    this.radTextBoxControl1.AppendText(" Jackson");
+}
+
 ````
 ````VB.NET
-    Private Sub AppendText()
-        Me.RadTextBoxControl1.Text = "Samuel"
-        Me.RadTextBoxControl1.AppendText(" Jackson")
-    End Sub
+Private Sub AppendText()
+    Me.RadTextBoxControl1.Text = "Samuel"
+    Me.RadTextBoxControl1.AppendText(" Jackson")
+End Sub
+ Region
+ion "Delete"
+Private Sub DeleteSelection()
+    Me.RadTextBoxControl1.Text = "John Green"
+    Me.RadTextBoxControl1.[Select](0, 4)
+    Me.RadTextBoxControl1.Delete()
+End Sub
+ Region
+ion "TextChanging"
+Private Sub radTextBoxControl1_TextChanging(sender As Object, e As Telerik.WinControls.TextChangingEventArgs)
+    e.Cancel = String.IsNullOrEmpty(e.NewValue)
+End Sub
+ Region
+ion "AddAutoCompleteItems"
+Private Sub AddAutoCompleteItems()
+    Me.RadTextBoxControl1.AutoCompleteMode = AutoCompleteMode.Suggest
+    Dim autoCompleteItems As RadListDataItemCollection = Me.RadTextBoxControl1.AutoCompleteItems
+    autoCompleteItems.Add(New RadListDataItem("Luke"))
+    autoCompleteItems.Add(New RadListDataItem("Max"))
+    autoCompleteItems.Add(New RadListDataItem("Adam"))
+    autoCompleteItems.Add(New RadListDataItem("Henry"))
+    autoCompleteItems.Add(New RadListDataItem("Jack"))
+    autoCompleteItems.Add(New RadListDataItem("Ben"))
+    autoCompleteItems.Add(New RadListDataItem("Tyler"))
+    autoCompleteItems.Add(New RadListDataItem("Ethan"))
+    autoCompleteItems.Add(New RadListDataItem("David"))
+    autoCompleteItems.Add(New RadListDataItem("Mike"))
+End Sub
+ Region
+Private Sub formatting1()
+    '#Region "Formatting1"
+    AddHandler Me.RadTextBoxControl1.TextBlockFormatting, AddressOf Me.OnTextBlockFormatting
+    Me.RadTextBoxControl1.Text = "This is important text."
+
 ````
 
 {{endregion}} 
@@ -70,19 +146,47 @@ You can delete the selected text or character at the caret position by using the
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=Delete}} 
 
 ````C#
-        private void DeleteSelection()
-        {
-            this.radTextBoxControl1.Text = "John Green";
-            this.radTextBoxControl1.Select(0, 4);
-            this.radTextBoxControl1.Delete();
-        }
+private void DeleteSelection()
+{
+    this.radTextBoxControl1.Text = "John Green";
+    this.radTextBoxControl1.Select(0, 4);
+    this.radTextBoxControl1.Delete();
+}
+
 ````
 ````VB.NET
-    Private Sub DeleteSelection()
-        Me.RadTextBoxControl1.Text = "John Green"
-        Me.RadTextBoxControl1.[Select](0, 4)
-        Me.RadTextBoxControl1.Delete()
-    End Sub
+Private Sub DeleteSelection()
+    Me.RadTextBoxControl1.Text = "John Green"
+    Me.RadTextBoxControl1.[Select](0, 4)
+    Me.RadTextBoxControl1.Delete()
+End Sub
+ Region
+ion "TextChanging"
+Private Sub radTextBoxControl1_TextChanging(sender As Object, e As Telerik.WinControls.TextChangingEventArgs)
+    e.Cancel = String.IsNullOrEmpty(e.NewValue)
+End Sub
+ Region
+ion "AddAutoCompleteItems"
+Private Sub AddAutoCompleteItems()
+    Me.RadTextBoxControl1.AutoCompleteMode = AutoCompleteMode.Suggest
+    Dim autoCompleteItems As RadListDataItemCollection = Me.RadTextBoxControl1.AutoCompleteItems
+    autoCompleteItems.Add(New RadListDataItem("Luke"))
+    autoCompleteItems.Add(New RadListDataItem("Max"))
+    autoCompleteItems.Add(New RadListDataItem("Adam"))
+    autoCompleteItems.Add(New RadListDataItem("Henry"))
+    autoCompleteItems.Add(New RadListDataItem("Jack"))
+    autoCompleteItems.Add(New RadListDataItem("Ben"))
+    autoCompleteItems.Add(New RadListDataItem("Tyler"))
+    autoCompleteItems.Add(New RadListDataItem("Ethan"))
+    autoCompleteItems.Add(New RadListDataItem("David"))
+    autoCompleteItems.Add(New RadListDataItem("Mike"))
+End Sub
+ Region
+Private Sub formatting1()
+    '#Region "Formatting1"
+    AddHandler Me.RadTextBoxControl1.TextBlockFormatting, AddressOf Me.OnTextBlockFormatting
+    Me.RadTextBoxControl1.Text = "This is important text."
+
 ````
 
 {{endregion}} 
@@ -96,15 +200,38 @@ Each editing operation raises the __TextChanging__ and __TextChanged__ events. N
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=TextChanging}} 
 
 ````C#
-        private void radTextBoxControl1_TextChanging(object sender, Telerik.WinControls.TextChangingEventArgs e)
-        {
-            e.Cancel = string.IsNullOrEmpty(e.NewValue);
-        }
+private void radTextBoxControl1_TextChanging(object sender, Telerik.WinControls.TextChangingEventArgs e)
+{
+    e.Cancel = string.IsNullOrEmpty(e.NewValue);
+}
+
 ````
 ````VB.NET
-    Private Sub radTextBoxControl1_TextChanging(sender As Object, e As Telerik.WinControls.TextChangingEventArgs)
-        e.Cancel = String.IsNullOrEmpty(e.NewValue)
-    End Sub
+Private Sub radTextBoxControl1_TextChanging(sender As Object, e As Telerik.WinControls.TextChangingEventArgs)
+    e.Cancel = String.IsNullOrEmpty(e.NewValue)
+End Sub
+ Region
+ion "AddAutoCompleteItems"
+Private Sub AddAutoCompleteItems()
+    Me.RadTextBoxControl1.AutoCompleteMode = AutoCompleteMode.Suggest
+    Dim autoCompleteItems As RadListDataItemCollection = Me.RadTextBoxControl1.AutoCompleteItems
+    autoCompleteItems.Add(New RadListDataItem("Luke"))
+    autoCompleteItems.Add(New RadListDataItem("Max"))
+    autoCompleteItems.Add(New RadListDataItem("Adam"))
+    autoCompleteItems.Add(New RadListDataItem("Henry"))
+    autoCompleteItems.Add(New RadListDataItem("Jack"))
+    autoCompleteItems.Add(New RadListDataItem("Ben"))
+    autoCompleteItems.Add(New RadListDataItem("Tyler"))
+    autoCompleteItems.Add(New RadListDataItem("Ethan"))
+    autoCompleteItems.Add(New RadListDataItem("David"))
+    autoCompleteItems.Add(New RadListDataItem("Mike"))
+End Sub
+ Region
+Private Sub formatting1()
+    '#Region "Formatting1"
+    AddHandler Me.RadTextBoxControl1.TextBlockFormatting, AddressOf Me.OnTextBlockFormatting
+    Me.RadTextBoxControl1.Text = "This is important text."
+
 ````
 
 {{endregion}} 

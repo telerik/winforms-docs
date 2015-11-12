@@ -30,16 +30,17 @@ __RadSpinEditor__.
 {{source=..\SamplesVB\Editors\SpinEditor1.vb region=spinEditorAndTrackBar}} 
 
 ````C#
-        void radSpinEditor1_ValueChanged(object sender, EventArgs e)
-        {
-            this.radTrackBar1.Value = Convert.ToInt32(radSpinEditor1.Value);
-        }
+void radSpinEditor1_ValueChanged(object sender, EventArgs e)
+{
+    this.radTrackBar1.Value = Convert.ToInt32(radSpinEditor1.Value);
+}
+
 ````
 ````VB.NET
-    Private Sub RadSpinEditor1_ValueChanged1(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadSpinEditor1.ValueChanged
-        Me.RadTrackBar1.Value = Convert.ToInt32(RadSpinEditor1.Value)
-    End Sub
-    '
+Private Sub RadSpinEditor1_ValueChanged1(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadSpinEditor1.ValueChanged
+    Me.RadTrackBar1.Value = Convert.ToInt32(RadSpinEditor1.Value)
+End Sub
+
 ````
 
 {{endregion}} 

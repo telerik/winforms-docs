@@ -34,28 +34,29 @@ Let's take a look at the following scenario:
 {{source=..\SamplesVB\Dock\UsingTheRedockService.vb region=redockService}} 
 
 ````C#
-        void radButton1_Click(object sender, EventArgs e)
+void radButton1_Click(object sender, EventArgs e)
+{
+    RedockService service = this.radDock1.GetService<RedockService>();
+    foreach (DockWindow window in this.radDock1.DockWindows)
+    {
+        if (window.DockState == DockState.Floating)
         {
-            RedockService service = this.radDock1.GetService<RedockService>();
-            foreach (DockWindow window in this.radDock1.DockWindows)
-            {
-                if (window.DockState == DockState.Floating)
-                {
-                    service.RestoreState(window, DockState.Docked, true);
-                }
-            }
+            service.RestoreState(window, DockState.Docked, true);
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Dim service As RedockService = Me.RadDock1.GetService(Of RedockService)()
-        For Each window As DockWindow In Me.RadDock1.DockWindows
-            If window.DockState = DockState.Floating Then
-                service.RestoreState(window, DockState.Docked, True)
-            End If
-        Next window
-    End Sub
-    '
+Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Dim service As RedockService = Me.RadDock1.GetService(Of RedockService)()
+    For Each window As DockWindow In Me.RadDock1.DockWindows
+        If window.DockState = DockState.Floating Then
+            service.RestoreState(window, DockState.Docked, True)
+        End If
+    Next window
+End Sub
+
 ````
 
 {{endregion}} 

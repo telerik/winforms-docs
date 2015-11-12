@@ -32,20 +32,21 @@ You may easily specify custom shortcut for any of the predefined commands like t
 {{source=..\SamplesVB\Dock\UsingCommandManager.vb region=Shortcut}} 
 
 ````C#
-        private void ChangeNextDocumentShortcut()
-        {
-            RadDockCommand command = this.radDock1.CommandManager.FindCommandByName(PredefinedCommandNames.NextDocument);
-            command.Shortcuts.Clear();
-            command.Shortcuts.Add(new RadShortcut(Keys.Shift, Keys.A, Keys.S));
-        }
+private void ChangeNextDocumentShortcut()
+{
+    RadDockCommand command = this.radDock1.CommandManager.FindCommandByName(PredefinedCommandNames.NextDocument);
+    command.Shortcuts.Clear();
+    command.Shortcuts.Add(new RadShortcut(Keys.Shift, Keys.A, Keys.S));
+}
+
 ````
 ````VB.NET
-    Private Sub ChangeNextDocumentShortcut()
-        Dim command As RadDockCommand = Me.radDock1.CommandManager.FindCommandByName(PredefinedCommandNames.NextDocument)
-        command.Shortcuts.Clear()
-        command.Shortcuts.Add(New RadShortcut(Keys.Shift, Keys.A, Keys.S))
-    End Sub
-    '
+Private Sub ChangeNextDocumentShortcut()
+    Dim command As RadDockCommand = Me.radDock1.CommandManager.FindCommandByName(PredefinedCommandNames.NextDocument)
+    command.Shortcuts.Clear()
+    command.Shortcuts.Add(New RadShortcut(Keys.Shift, Keys.A, Keys.S))
+End Sub
+
 ````
 
 {{endregion}}  
@@ -62,36 +63,35 @@ The completely transparent object model of the command manager allows you to cre
 {{source=..\SamplesVB\Dock\UsingCommandManager.vb region=RadDockCommand}} 
 
 ````C#
-    public class FloatWindowCommand : RadDockCommand
+public class FloatWindowCommand : RadDockCommand
+{
+    public FloatWindowCommand()
     {
-        public FloatWindowCommand()
-        {
-            this.Name = "FloatWindow";
-            this.Shortcuts.Add(new RadShortcut(Keys.Control, Keys.F));
-        }
-
-        public override bool CanExecute(object parameter)
-        {
-            RadDock dock = parameter as RadDock;
-            if (dock == null)
-            {
-                return false;
-            }
-            return dock.ActiveWindow is ToolWindow;
-        }
-
-        public override object Execute(params object[] settings)
-        {
-            RadDock dock = settings[0] as RadDock;
-            Debug.Assert(dock != null, "Invalid execute parameter!");
-            ToolWindow toolWindow = dock.ActiveWindow as ToolWindow;
-            if (toolWindow != null)
-            {
-                dock.FloatWindow(toolWindow);
-            }
-            return base.Execute(settings);
-        }  
+        this.Name = "FloatWindow";
+        this.Shortcuts.Add(new RadShortcut(Keys.Control, Keys.F));
     }
+    public override bool CanExecute(object parameter)
+    {
+        RadDock dock = parameter as RadDock;
+        if (dock == null)
+        {
+            return false;
+        }
+        return dock.ActiveWindow is ToolWindow;
+    }
+    public override object Execute(params object[] settings)
+    {
+        RadDock dock = settings[0] as RadDock;
+        Debug.Assert(dock != null, "Invalid execute parameter!");
+        ToolWindow toolWindow = dock.ActiveWindow as ToolWindow;
+        if (toolWindow != null)
+        {
+            dock.FloatWindow(toolWindow);
+        }
+        return base.Execute(settings);
+    }  
+}
+
 ````
 ````VB.NET
 Public Class FloatWindowCommand
@@ -100,7 +100,6 @@ Public Class FloatWindowCommand
         Me.Name = "FloatWindow"
         Me.Shortcuts.Add(New RadShortcut(Keys.Control, Keys.F))
     End Sub
-
     Public Overrides Function CanExecute(parameter As Object) As Boolean
         Dim dock As RadDock = TryCast(parameter, RadDock)
         If dock Is Nothing Then
@@ -108,7 +107,6 @@ Public Class FloatWindowCommand
         End If
         Return TypeOf dock.ActiveWindow Is ToolWindow
     End Function
-
     Public Overrides Function Execute(ParamArray settings As Object()) As Object
         Dim dock As RadDock = TryCast(settings(0), RadDock)
         Debug.Assert(dock IsNot Nothing, "Invalid execute parameter!")
@@ -119,7 +117,7 @@ Public Class FloatWindowCommand
         Return MyBase.Execute(settings)
     End Function
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -131,16 +129,17 @@ End Class
 {{source=..\SamplesVB\Dock\UsingCommandManager.vb region=RegisterCustomCommand}} 
 
 ````C#
-        private void RegisterCustomCommand()
-        {
-            this.radDock1.CommandManager.RegisterCommand(new FloatWindowCommand());
-        }
+private void RegisterCustomCommand()
+{
+    this.radDock1.CommandManager.RegisterCommand(new FloatWindowCommand());
+}
+
 ````
 ````VB.NET
-    Private Sub RegisterCustomCommand()
-        Me.radDock1.CommandManager.RegisterCommand(New FloatWindowCommand())
-    End Sub
-    '
+Private Sub RegisterCustomCommand()
+    Me.radDock1.CommandManager.RegisterCommand(New FloatWindowCommand())
+End Sub
+
 ````
 
 {{endregion}} 

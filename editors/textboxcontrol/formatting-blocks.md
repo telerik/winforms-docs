@@ -18,12 +18,14 @@ The RadTextBoxControl allow appearance customization of each instance of __IText
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=Formatting1}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=Formatting1}}
 ````C#
-        this.radTextBoxControl1.TextBlockFormatting += this.OnTextBlockFormatting;
-		this.radTextBoxControl1.Text = "This is important text.";
+this.radTextBoxControl1.TextBlockFormatting += this.OnTextBlockFormatting;
+this.radTextBoxControl1.Text = "This is important text.";
+
 ````
 ````VB.NET
-     AddHandler Me.RadTextBoxControl1.TextBlockFormatting, AddressOf Me.OnTextBlockFormatting
-	 Me.RadTextBoxControl1.Text = "This is important text."
+AddHandler Me.RadTextBoxControl1.TextBlockFormatting, AddressOf Me.OnTextBlockFormatting
+Me.RadTextBoxControl1.Text = "This is important text."
+
 ````
 
 {{endregion}} 
@@ -32,24 +34,28 @@ The RadTextBoxControl allow appearance customization of each instance of __IText
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=formatting2}} 
 
 ````C#
-        private void OnTextBlockFormatting(object sender, Telerik.WinControls.UI.TextBlockFormattingEventArgs e)
-        {
-            TextBlockElement textBlock = e.TextBlock as TextBlockElement;
+private void OnTextBlockFormatting(object sender, Telerik.WinControls.UI.TextBlockFormattingEventArgs e)
+{
+    TextBlockElement textBlock = e.TextBlock as TextBlockElement;
+    if (textBlock != null && e.TextBlock.Text == "important")
+    {
+        textBlock.ForeColor = Color.Red;
+    }
+}
 
-            if (textBlock != null && e.TextBlock.Text == "important")
-            {
-                textBlock.ForeColor = Color.Red;
-            }
-        }
 ````
 ````VB.NET
-    Private Sub OnTextBlockFormatting(sender As Object, e As Telerik.WinControls.UI.TextBlockFormattingEventArgs)
-        Dim textBlock As TextBlockElement = TryCast(e.TextBlock, TextBlockElement)
+Private Sub OnTextBlockFormatting(sender As Object, e As Telerik.WinControls.UI.TextBlockFormattingEventArgs)
+    Dim textBlock As TextBlockElement = TryCast(e.TextBlock, TextBlockElement)
+    If textBlock IsNot Nothing AndAlso e.TextBlock.Text = "important" Then
+        textBlock.ForeColor = Color.Red
+    End If
+End Sub
+ Region
+Private Sub applyCustomTextBlock1()
+    '#Region "applyCustomTextBlock1"
+    AddHandler RadTextBoxControl1.CreateTextBlock, AddressOf radTextBoxControl1_CreateTextBlock
 
-        If textBlock IsNot Nothing AndAlso e.TextBlock.Text = "important" Then
-            textBlock.ForeColor = Color.Red
-        End If
-    End Sub
 ````
 
 {{endregion}} 

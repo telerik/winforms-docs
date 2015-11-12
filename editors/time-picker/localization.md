@@ -32,39 +32,38 @@ Below is a sample implementation of an English localization provider:#_[C#] Loca
 {{source=..\SamplesVB\Editors\TimePicker1.vb region=LocalizationProvider}} 
 
 ````C#
-        class MyTimePickerLocalizationProvider : RadTimePickerLocalizationProvider
+class MyTimePickerLocalizationProvider : RadTimePickerLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
+    {
+        switch (id)
         {
-            public override string GetLocalizedString(string id)
-            {
-                switch (id)
-                {
-                    case RadTimePickerStringId.HourHeaderText: return "Hours";
-                    case RadTimePickerStringId.MinutesHeaderText: return "Minutes";
-                    case RadTimePickerStringId.CloseButtonText: return "Close";
-                    default: return string.Empty;
-                }
-            }
+            case RadTimePickerStringId.HourHeaderText: return "Hours";
+            case RadTimePickerStringId.MinutesHeaderText: return "Minutes";
+            case RadTimePickerStringId.CloseButtonText: return "Close";
+            default: return string.Empty;
         }
+    }
+}
+
 ````
 ````VB.NET
-    Class MyTimePickerLocalizationProvider
-        Inherits RadTimePickerLocalizationProvider
+Class MyTimePickerLocalizationProvider
+    Inherits RadTimePickerLocalizationProvider
+    Public Overrides Function GetLocalizedString(id As String) As String
+        Select Case id
+            Case RadTimePickerStringId.HourHeaderText
+                Return "Hours"
+            Case RadTimePickerStringId.MinutesHeaderText
+                Return "Minutes"
+            Case RadTimePickerStringId.CloseButtonText
+                Return "Close"
+            Case Else
+                Return String.Empty
+        End Select
+    End Function
+End Class
 
-        Public Overrides Function GetLocalizedString(id As String) As String
-            Select Case id
-                Case RadTimePickerStringId.HourHeaderText
-                    Return "Hours"
-                Case RadTimePickerStringId.MinutesHeaderText
-                    Return "Minutes"
-                Case RadTimePickerStringId.CloseButtonText
-                    Return "Close"
-                Case Else
-                    Return String.Empty
-            End Select
-        End Function
-
-    End Class
-    '
 ````
 
 {{endregion}} 
@@ -82,11 +81,12 @@ To apply the custom localization provider, instantiate and assign it to the cur
 {{source=..\SamplesVB\Editors\TimePicker1.vb region=settingTheLocalizationProvider}} 
 
 ````C#
-            RadTimePickerLocalizationProvider.CurrentProvider = new MyTimePickerLocalizationProvider();
+RadTimePickerLocalizationProvider.CurrentProvider = new MyTimePickerLocalizationProvider();
+
 ````
 ````VB.NET
-        RadTimePickerLocalizationProvider.CurrentProvider = New MyTimePickerLocalizationProvider()
-        '
+RadTimePickerLocalizationProvider.CurrentProvider = New MyTimePickerLocalizationProvider()
+
 ````
 
 {{endregion}} 

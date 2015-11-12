@@ -72,18 +72,16 @@ When the mask type is set to *DateTime* you can access the MaskDateTimeProvider 
 {{source=..\SamplesVB\Editors\MaskEditBox1.vb region=provider}} 
 
 ````C#
+radMaskedEditBox1.MaskType = MaskType.DateTime;
+MaskDateTimeProvider provider = this.radMaskedEditBox1.MaskedEditBoxElement.Provider as MaskDateTimeProvider;
+provider.AutoSelectNextPart = true;
 
-            radMaskedEditBox1.MaskType = MaskType.DateTime;
-            MaskDateTimeProvider provider = this.radMaskedEditBox1.MaskedEditBoxElement.Provider as MaskDateTimeProvider;
-            provider.AutoSelectNextPart = true;
 ````
 ````VB.NET
+RadMaskedEditBox1.MaskType = MaskType.DateTime
+Dim provider As MaskDateTimeProvider = TryCast(Me.RadMaskedEditBox1.MaskedEditBoxElement.Provider, MaskDateTimeProvider)
+provider.AutoSelectNextPart = True
 
-        RadMaskedEditBox1.MaskType = MaskType.DateTime
-        Dim provider As MaskDateTimeProvider = TryCast(Me.RadMaskedEditBox1.MaskedEditBoxElement.Provider, MaskDateTimeProvider)
-        provider.AutoSelectNextPart = True
-
-        '
 ````
 
 {{endregion}} 

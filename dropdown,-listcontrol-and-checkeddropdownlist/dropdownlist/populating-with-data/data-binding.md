@@ -53,71 +53,68 @@ You can bind __RadDropDownList__ programmatically as well. The following code sn
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=Binding}} 
 
 ````C#
-            
-        public class Item
-        {
-            public int Id { get; set; }
-            
-            public string Description { get; set; }
-                
-            public Item(int id, string description)
-            {
-                this.Id = id;
-                this.Description = description;
-            }
-        }
-            
-        public void Bind()
-        {
-            List<Item> items = new List<Item>();
-            for (int i = 0; i < 10; i++)
-            {
-                items.Add(new Item(i,"Data" + i));
-            }
-            this.radDropDownList1.DataSource = items;
-            this.radDropDownList1.DisplayMember = "Description";
-            this.radDropDownList1.ValueMember = "Id";
-        }
+    
+public class Item
+{
+    public int Id { get; set; }
+    
+    public string Description { get; set; }
+        
+    public Item(int id, string description)
+    {
+        this.Id = id;
+        this.Description = description;
+    }
+}
+    
+public void Bind()
+{
+    List<Item> items = new List<Item>();
+    for (int i = 0; i < 10; i++)
+    {
+        items.Add(new Item(i,"Data" + i));
+    }
+    this.radDropDownList1.DataSource = items;
+    this.radDropDownList1.DisplayMember = "Description";
+    this.radDropDownList1.ValueMember = "Id";
+}
+
 ````
 ````VB.NET
-
-    Public Class Item
-        Public Property Id() As Integer
-            Get
-                Return m_Id
-            End Get
-            Set(value As Integer)
-                m_Id = value
-            End Set
-        End Property
-        Private m_Id As Integer
-        
-        Public Property Description() As String
-            Get
-                Return m_Description
-            End Get
-            Set(value As String)
-                m_Description = value
-            End Set
-        End Property
-        Private m_Description As String
-        
-        Public Sub New(id As Integer, description As String)
-            Me.Id = id
-            Me.Description = description
-        End Sub
-    End Class
-
-    Public Sub Bind()
-        Dim items As New List(Of Item)()
-        For i As Integer = 0 To 9
-            items.Add(New Item(i, "Data" + i))
-        Next
-        Me.radDropDownList1.DataSource = items
-        Me.radDropDownList1.DisplayMember = "Description"
-        Me.radDropDownList1.ValueMember = "Id"
+Public Class Item
+    Public Property Id() As Integer
+        Get
+            Return m_Id
+        End Get
+        Set(value As Integer)
+            m_Id = value
+        End Set
+    End Property
+    Private m_Id As Integer
+    Public Property Description() As String
+        Get
+            Return m_Description
+        End Get
+        Set(value As String)
+            m_Description = value
+        End Set
+    End Property
+    Private m_Description As String
+    Public Sub New(id As Integer, description As String)
+        Me.Id = id
+        Me.Description = description
     End Sub
-    '
+End Class
+Public Sub Bind()
+    Dim items As New List(Of Item)()
+    For i As Integer = 0 To 9
+        items.Add(New Item(i, "Data" + i))
+    Next
+    Me.radDropDownList1.DataSource = items
+    Me.radDropDownList1.DisplayMember = "Description"
+    Me.radDropDownList1.ValueMember = "Id"
+End Sub
+
 ````
 
 {{endregion}} 

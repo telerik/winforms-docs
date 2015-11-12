@@ -22,15 +22,16 @@ As a prerequisite for the example, RadDateTimePicker should of course show minut
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=prerequisite}} 
 
 ````C#
-            this.radDateTimePicker1.CustomFormat = "hh:mm";
-            this.radDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.radDateTimePicker1.ShowUpDown = true;
+this.radDateTimePicker1.CustomFormat = "hh:mm";
+this.radDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+this.radDateTimePicker1.ShowUpDown = true;
+
 ````
 ````VB.NET
-        Me.RadDateTimePicker1.CustomFormat = "hh:mm"
-        Me.RadDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.RadDateTimePicker1.ShowUpDown = True
-        '
+Me.RadDateTimePicker1.CustomFormat = "hh:mm"
+Me.RadDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+Me.RadDateTimePicker1.ShowUpDown = True
+
 ````
 
 {{endregion}} 
@@ -44,24 +45,46 @@ Here is the approach divided into separate steps:
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=initialization}} 
 
 ````C#
-        DateTime initialDateTime;
+DateTime initialDateTime;
+private void Form1_Load(object sender, EventArgs e)
+{
+    initialDateTime = this.radDateTimePicker1.Value;
+    this.radDateTimePicker1.ValueChanged += new EventHandler(radDateTimePicker1_ValueChanged);
+}
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            initialDateTime = this.radDateTimePicker1.Value;
-
-            this.radDateTimePicker1.ValueChanged += new EventHandler(radDateTimePicker1_ValueChanged);
-        }
 ````
 ````VB.NET
-    Private initialDateTime As Date
+Private initialDateTime As Date
+Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
+    initialDateTime = Me.RadDateTimePicker1.Value
+    AddHandler RadDateTimePicker1.ValueChanged, AddressOf radDateTimePicker1_ValueChanged
+End Sub
+'#End Region
+'#region valueChanged
+Private suspendValueChanged As Boolean = False
+Private Sub radDateTimePicker1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+    Dim dt As Date = Me.RadDateTimePicker1.Value
+    Dim sp As TimeSpan = dt.Subtract(initialDateTime)
+    If Not suspendValueChanged Then
+        Dim provider As MaskDateTimeProvider = (TryCast(Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider, MaskDateTimeProvider))
+        If provider.List(provider.SelectedItemIndex).type = PartTypes.Minutes Then
+            suspendValueChanged = True
+            If sp.Ticks < 0 Then
+                For i As Integer = 0 To 3
+                    Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Down()
+                Next i
+            End If
+            If sp.Ticks > 0 Then
+                For i As Integer = 0 To 3
+                    Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Up()
+                Next i
+            End If
+            initialDateTime = Me.RadDateTimePicker1.Value
+            suspendValueChanged = False
+        End If
+    End If
+End Sub
 
-    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
-        initialDateTime = Me.RadDateTimePicker1.Value
-
-        AddHandler RadDateTimePicker1.ValueChanged, AddressOf radDateTimePicker1_ValueChanged
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -72,74 +95,63 @@ Here is the approach divided into separate steps:
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=valueChanged}} 
 
 ````C#
-        bool suspendValueChanged = false;
-
-        void radDateTimePicker1_ValueChanged(object sender, EventArgs e)
+bool suspendValueChanged = false;
+void radDateTimePicker1_ValueChanged(object sender, EventArgs e)
+{
+    DateTime dt = this.radDateTimePicker1.Value;
+    TimeSpan sp = dt - initialDateTime;
+    if (!suspendValueChanged)
+    {
+        MaskDateTimeProvider provider = (this.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider as MaskDateTimeProvider);
+        if (provider.List[provider.SelectedItemIndex].type == PartTypes.Minutes)
         {
-            DateTime dt = this.radDateTimePicker1.Value;
-            TimeSpan sp = dt - initialDateTime;
-
-            if (!suspendValueChanged)
+            suspendValueChanged = true;
+            if (sp.Ticks < 0)
             {
-                MaskDateTimeProvider provider = (this.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider as MaskDateTimeProvider);
-                if (provider.List[provider.SelectedItemIndex].type == PartTypes.Minutes)
+                for (int i = 0; i < 4; ++i)
                 {
-                    suspendValueChanged = true;
-
-                    if (sp.Ticks < 0)
-                    {
-                        for (int i = 0; i < 4; ++i)
-                        {
-                            this.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Down();
-                        }
-                    }
-
-                    if (sp.Ticks > 0)
-                    {
-                        for (int i = 0; i < 4; ++i)
-                        {
-                            this.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Up();
-                        }
-                    }
-
-                    initialDateTime = this.radDateTimePicker1.Value;
-
-                    suspendValueChanged = false;
+                    this.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Down();
                 }
             }
+            if (sp.Ticks > 0)
+            {
+                for (int i = 0; i < 4; ++i)
+                {
+                    this.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Up();
+                }
+            }
+            initialDateTime = this.radDateTimePicker1.Value;
+            suspendValueChanged = false;
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private suspendValueChanged As Boolean = False
-
-    Private Sub radDateTimePicker1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-        Dim dt As Date = Me.RadDateTimePicker1.Value
-        Dim sp As TimeSpan = dt.Subtract(initialDateTime)
-
-        If Not suspendValueChanged Then
-            Dim provider As MaskDateTimeProvider = (TryCast(Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider, MaskDateTimeProvider))
-            If provider.List(provider.SelectedItemIndex).type = PartTypes.Minutes Then
-                suspendValueChanged = True
-
-                If sp.Ticks < 0 Then
-                    For i As Integer = 0 To 3
-                        Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Down()
-                    Next i
-                End If
-
-                If sp.Ticks > 0 Then
-                    For i As Integer = 0 To 3
-                        Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Up()
-                    Next i
-                End If
-
-                initialDateTime = Me.RadDateTimePicker1.Value
-
-                suspendValueChanged = False
+Private suspendValueChanged As Boolean = False
+Private Sub radDateTimePicker1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+    Dim dt As Date = Me.RadDateTimePicker1.Value
+    Dim sp As TimeSpan = dt.Subtract(initialDateTime)
+    If Not suspendValueChanged Then
+        Dim provider As MaskDateTimeProvider = (TryCast(Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider, MaskDateTimeProvider))
+        If provider.List(provider.SelectedItemIndex).type = PartTypes.Minutes Then
+            suspendValueChanged = True
+            If sp.Ticks < 0 Then
+                For i As Integer = 0 To 3
+                    Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Down()
+                Next i
             End If
+            If sp.Ticks > 0 Then
+                For i As Integer = 0 To 3
+                    Me.RadDateTimePicker1.DateTimePickerElement.TextBoxElement.Up()
+                Next i
+            End If
+            initialDateTime = Me.RadDateTimePicker1.Value
+            suspendValueChanged = False
         End If
-    End Sub
-    '
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

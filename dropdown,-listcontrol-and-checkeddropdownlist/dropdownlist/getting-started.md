@@ -42,25 +42,26 @@ The following tutorial demonstrates how to add items and images to a RadDropDown
 	{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=handlingSelectedIndexChanged}} 
 
 	````C#
-            
-        void radDropDownList1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
-        {
-            if (this.radDropDownList1.SelectedIndex > -1)
-            {
-                this.radLabelElement1.Text = this.radDropDownList1.SelectedItem.Text;
-                this.radImageButtonElement1.Image = this.radDropDownList1.SelectedItem.Image;
-            }
-        }
-	````
-	````VB.NET
-    Private Sub radDropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-        If Me.radDropDownList1.SelectedIndex > -1 Then
-            radLabelElement1.Text = Me.radDropDownList1.SelectedItem.Text
-            Me.radImageButtonElement1.Image = Me.radDropDownList1.SelectedItem.Image
-        End If
-    End Sub
-    '
-	````
+    
+void radDropDownList1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
+{
+    if (this.radDropDownList1.SelectedIndex > -1)
+    {
+        this.radLabelElement1.Text = this.radDropDownList1.SelectedItem.Text;
+        this.radImageButtonElement1.Image = this.radDropDownList1.SelectedItem.Image;
+    }
+}
+
+````
+````VB.NET
+Private Sub radDropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
+    If Me.radDropDownList1.SelectedIndex > -1 Then
+        radLabelElement1.Text = Me.radDropDownList1.SelectedItem.Text
+        Me.radImageButtonElement1.Image = Me.radDropDownList1.SelectedItem.Image
+    End If
+End Sub
+
+````
 
 	{{endregion}} 
  

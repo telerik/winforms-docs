@@ -18,14 +18,12 @@ The embedded __RadCalendar__ has HeaderNavigationMode property, which determines
 {{source=..\SamplesVB\Editors\DateTimePicker2.vb region=HeaderNavigationMode}} 
 
 ````C#
+this.radDateTimePicker1.DateTimePickerElement.Calendar.HeaderNavigationMode = HeaderNavigationMode.Zoom;
 
-            this.radDateTimePicker1.DateTimePickerElement.Calendar.HeaderNavigationMode = HeaderNavigationMode.Zoom;
 ````
 ````VB.NET
+Me.radDateTimePicker1.DateTimePickerElement.Calendar.HeaderNavigationMode = HeaderNavigationMode.Zoom
 
-        Me.radDateTimePicker1.DateTimePickerElement.Calendar.HeaderNavigationMode = HeaderNavigationMode.Zoom
-
-        '
 ````
 
 {{endregion}} 

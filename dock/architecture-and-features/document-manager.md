@@ -23,13 +23,14 @@ This property allows you to get the currently active document among the document
 {{source=..\SamplesVB\Dock\DocumentManager1.vb region=activeWindows}} 
 
 ````C#
-            DockWindow activeDocument = this.radDock1.DocumentManager.ActiveDocument; //documentWindow2
-            DockWindow activeWindow = this.radDock1.ActiveWindow; //toolWindow2
+DockWindow activeDocument = this.radDock1.DocumentManager.ActiveDocument; //documentWindow2
+DockWindow activeWindow = this.radDock1.ActiveWindow; //toolWindow2
+
 ````
 ````VB.NET
-        Dim activeDocument As DockWindow = Me.RadDock1.DocumentManager.ActiveDocument 'documentWindow2
-        Dim activeWindow As DockWindow = Me.RadDock1.ActiveWindow 'toolWindow2
-        '
+Dim activeDocument As DockWindow = Me.RadDock1.DocumentManager.ActiveDocument 'documentWindow2
+Dim activeWindow As DockWindow = Me.RadDock1.ActiveWindow 'toolWindow2
+
 ````
 
 {{endregion}} 
@@ -46,11 +47,12 @@ Determines whether the currently active document's Text will be displayed in bo
 {{source=..\SamplesVB\Dock\DocumentManager1.vb region=boldActive}} 
 
 ````C#
-            this.radDock1.DocumentManager.BoldActiveDocument = false;
+this.radDock1.DocumentManager.BoldActiveDocument = false;
+
 ````
 ````VB.NET
-        Me.RadDock1.DocumentManager.BoldActiveDocument = False
-        '
+Me.RadDock1.DocumentManager.BoldActiveDocument = False
+
 ````
 
 {{endregion}} 
@@ -68,11 +70,12 @@ Gets or sets the insert order to be used when adding new documents. By default t
 {{source=..\SamplesVB\Dock\DocumentManager2.vb region=insertOrderInFront}} 
 
 ````C#
-            this.radDock1.DocumentManager.DocumentInsertOrder = DockWindowInsertOrder.InFront;
+this.radDock1.DocumentManager.DocumentInsertOrder = DockWindowInsertOrder.InFront;
+
 ````
 ````VB.NET
-        Me.RadDock1.DocumentManager.DocumentInsertOrder = DockWindowInsertOrder.InFront
-        '
+Me.RadDock1.DocumentManager.DocumentInsertOrder = DockWindowInsertOrder.InFront
+
 ````
 
 {{endregion}} 
@@ -86,11 +89,12 @@ The other available option for this property is *ToBack.* The behavior of Docume
 {{source=..\SamplesVB\Dock\DocumentManager2.vb region=insertOrderToBack}} 
 
 ````C#
-            this.radDock1.DocumentManager.DocumentInsertOrder = DockWindowInsertOrder.ToBack;
+this.radDock1.DocumentManager.DocumentInsertOrder = DockWindowInsertOrder.ToBack;
+
 ````
 ````VB.NET
-        Me.RadDock1.DocumentManager.DocumentInsertOrder = DockWindowInsertOrder.ToBack
-        '
+Me.RadDock1.DocumentManager.DocumentInsertOrder = DockWindowInsertOrder.ToBack
+
 ````
 
 {{endregion}} 

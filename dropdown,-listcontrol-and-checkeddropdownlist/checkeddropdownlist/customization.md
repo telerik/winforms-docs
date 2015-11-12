@@ -23,11 +23,12 @@ In order to customize the editable area you must subscribe to the __TextBlockFor
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=TextBlockFormattingSubscribe}} 
 
 ````C#
-            this.radCheckedDropDownList1.TextBlockFormatting += radCheckedDropDownList1_TextBlockFormatting;
+this.radCheckedDropDownList1.TextBlockFormatting += radCheckedDropDownList1_TextBlockFormatting;
+
 ````
 ````VB.NET
-        AddHandler Me.RadCheckedDropDownList1.TextBlockFormatting, AddressOf radCheckedDropDownList1_TextBlockFormatting
-        '
+AddHandler Me.RadCheckedDropDownList1.TextBlockFormatting, AddressOf radCheckedDropDownList1_TextBlockFormatting
+
 ````
 
 {{endregion}} 
@@ -39,29 +40,30 @@ In order to customize the editable area you must subscribe to the __TextBlockFor
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=TextBlockFormattingHandler}} 
 
 ````C#
-        void radCheckedDropDownList1_TextBlockFormatting(object sender, TextBlockFormattingEventArgs e)
-        {
-            TokenizedTextBlockElement token = e.TextBlock as TokenizedTextBlockElement;
-            if (token != null)
-            {
-                token.ForeColor = Color.DarkBlue;
-                token.DrawFill = false;
-                token.BorderColor = Color.DarkRed;
-                token.BorderWidth = 1.3f;
-            }
-        }
+void radCheckedDropDownList1_TextBlockFormatting(object sender, TextBlockFormattingEventArgs e)
+{
+    TokenizedTextBlockElement token = e.TextBlock as TokenizedTextBlockElement;
+    if (token != null)
+    {
+        token.ForeColor = Color.DarkBlue;
+        token.DrawFill = false;
+        token.BorderColor = Color.DarkRed;
+        token.BorderWidth = 1.3f;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radCheckedDropDownList1_TextBlockFormatting(sender As Object, e As TextBlockFormattingEventArgs)
-        Dim token As TokenizedTextBlockElement = TryCast(e.TextBlock, TokenizedTextBlockElement)
-        If token IsNot Nothing Then
-            token.ForeColor = Color.DarkBlue
-            token.DrawFill = False
-            token.BorderColor = Color.DarkRed
-            token.BorderWidth = 1.3F
-        End If
-    End Sub
-    '
+Private Sub radCheckedDropDownList1_TextBlockFormatting(sender As Object, e As TextBlockFormattingEventArgs)
+    Dim token As TokenizedTextBlockElement = TryCast(e.TextBlock, TokenizedTextBlockElement)
+    If token IsNot Nothing Then
+        token.ForeColor = Color.DarkBlue
+        token.DrawFill = False
+        token.BorderColor = Color.DarkRed
+        token.BorderWidth = 1.3F
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -79,11 +81,12 @@ Customizing the drop down items is similar. Subscribe to the __VisualListItemFor
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=VisualListItemFormattingSubscribe}} 
 
 ````C#
-            this.radCheckedDropDownList1.VisualListItemFormatting += radCheckedDropDownList1_VisualListItemFormatting;
+this.radCheckedDropDownList1.VisualListItemFormatting += radCheckedDropDownList1_VisualListItemFormatting;
+
 ````
 ````VB.NET
-        AddHandler Me.RadCheckedDropDownList1.VisualListItemFormatting, AddressOf radCheckedDropDownList1_VisualListItemFormatting
-        '
+AddHandler Me.RadCheckedDropDownList1.VisualListItemFormatting, AddressOf radCheckedDropDownList1_VisualListItemFormatting
+
 ````
 
 {{endregion}} 
@@ -95,29 +98,30 @@ Customizing the drop down items is similar. Subscribe to the __VisualListItemFor
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=VisualListItemFormattingHandler}} 
 
 ````C#
-        void radCheckedDropDownList1_VisualListItemFormatting(object sender, VisualItemFormattingEventArgs args)
-        {
-            bool itemChecked = ((RadCheckedListDataItem)args.VisualItem.Data).Checked;
-            if (itemChecked)
-            {
-                args.VisualItem.ForeColor = Color.Green;
-            }
-            else
-            {
-                args.VisualItem.ForeColor = Color.Red;
-            }
-        }
+void radCheckedDropDownList1_VisualListItemFormatting(object sender, VisualItemFormattingEventArgs args)
+{
+    bool itemChecked = ((RadCheckedListDataItem)args.VisualItem.Data).Checked;
+    if (itemChecked)
+    {
+        args.VisualItem.ForeColor = Color.Green;
+    }
+    else
+    {
+        args.VisualItem.ForeColor = Color.Red;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radCheckedDropDownList1_VisualListItemFormatting(sender As Object, args As VisualItemFormattingEventArgs)
-        Dim itemChecked As Boolean = DirectCast(args.VisualItem.Data, RadCheckedListDataItem).Checked
-        If itemChecked Then
-            args.VisualItem.ForeColor = Color.Green
-        Else
-            args.VisualItem.ForeColor = Color.Red
-        End If
-    End Sub
-    '
+Private Sub radCheckedDropDownList1_VisualListItemFormatting(sender As Object, args As VisualItemFormattingEventArgs)
+    Dim itemChecked As Boolean = DirectCast(args.VisualItem.Data, RadCheckedListDataItem).Checked
+    If itemChecked Then
+        args.VisualItem.ForeColor = Color.Green
+    Else
+        args.VisualItem.ForeColor = Color.Red
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

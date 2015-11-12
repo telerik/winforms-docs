@@ -27,11 +27,12 @@ This feature ensures that the control is ready for modern touch-screen applicati
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListScrolling.vb region=KineticScrolling}} 
 
 ````C#
-            this.radDropDownList1.EnableKineticScrolling = true;
+this.radDropDownList1.EnableKineticScrolling = true;
+
 ````
 ````VB.NET
-        Me.RadDropDownList1.EnableKineticScrolling = True
-        '
+Me.RadDropDownList1.EnableKineticScrolling = True
+
 ````
 
 {{endregion}} 
@@ -56,11 +57,12 @@ __RadDropDownList__ provides out of the box functionality for programmatically s
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListScrolling.vb region=ScrollToItem}} 
 
 ````C#
-            this.radDropDownList1.DropDownListElement.ListElement.ScrollToItem(this.radDropDownList1.Items.Last());
+this.radDropDownList1.DropDownListElement.ListElement.ScrollToItem(this.radDropDownList1.Items.Last());
+
 ````
 ````VB.NET
-        Me.RadDropDownList1.DropDownListElement.ListElement.ScrollToItem(Me.RadDropDownList1.Items.Last())
-        '
+Me.RadDropDownList1.DropDownListElement.ListElement.ScrollToItem(Me.RadDropDownList1.Items.Last())
+
 ````
 
 {{endregion}} 
@@ -76,11 +78,12 @@ __RadDropDownList__ provides out of the box functionality for programmatically s
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListScrolling.vb region=ScrollToActiveItem}} 
 
 ````C#
-            this.radDropDownList1.DropDownListElement.ListElement.ScrollToActiveItem();
+this.radDropDownList1.DropDownListElement.ListElement.ScrollToActiveItem();
+
 ````
 ````VB.NET
-        Me.RadDropDownList1.DropDownListElement.ListElement.ScrollToActiveItem()
-        '
+Me.RadDropDownList1.DropDownListElement.ListElement.ScrollToActiveItem()
+
 ````
 
 {{endregion}} 
@@ -109,11 +112,12 @@ The __ListElement__ contained in the popup of __RadDropDownList__ supports three
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListScrolling.vb region=DiscreteScrolling}} 
 
 ````C#
-            this.radDropDownList1.DropDownListElement.ListElement.ScrollMode = ItemScrollerScrollModes.Discrete;
+this.radDropDownList1.DropDownListElement.ListElement.ScrollMode = ItemScrollerScrollModes.Discrete;
+
 ````
 ````VB.NET
-        Me.RadDropDownList1.DropDownListElement.ListElement.ScrollMode = ItemScrollerScrollModes.Discrete
-        '
+Me.RadDropDownList1.DropDownListElement.ListElement.ScrollMode = ItemScrollerScrollModes.Discrete
+
 ````
 
 {{endregion}} 
@@ -130,11 +134,12 @@ The __ListElement__ contained in the popup of __RadDropDownList__ supports three
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListScrolling.vb region=SmoothScrolling}} 
 
 ````C#
-            this.radDropDownList1.DropDownListElement.ListElement.ScrollMode = ItemScrollerScrollModes.Smooth;
+this.radDropDownList1.DropDownListElement.ListElement.ScrollMode = ItemScrollerScrollModes.Smooth;
+
 ````
 ````VB.NET
-        Me.RadDropDownList1.DropDownListElement.ListElement.ScrollMode = ItemScrollerScrollModes.Smooth
-        '
+Me.RadDropDownList1.DropDownListElement.ListElement.ScrollMode = ItemScrollerScrollModes.Smooth
+
 ````
 
 {{endregion}} 
@@ -149,11 +154,12 @@ The __ListElement__ contained in the popup of __RadDropDownList__ supports three
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListScrolling.vb region=DeferredScrolling}} 
 
 ````C#
-            this.radDropDownList1.DropDownListElement.ListElement.ScrollMode = ItemScrollerScrollModes.Deferred;
+this.radDropDownList1.DropDownListElement.ListElement.ScrollMode = ItemScrollerScrollModes.Deferred;
+
 ````
 ````VB.NET
-        Me.RadDropDownList1.DropDownListElement.ListElement.ScrollMode = ItemScrollerScrollModes.Deferred
-        '
+Me.RadDropDownList1.DropDownListElement.ListElement.ScrollMode = ItemScrollerScrollModes.Deferred
+
 ````
 
 {{endregion}} 

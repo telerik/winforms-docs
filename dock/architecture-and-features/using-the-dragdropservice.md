@@ -27,13 +27,14 @@ A running drag-and-drop operation (DDO) may be easily canceled by either pressin
 {{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=cancellingService}} 
 
 ````C#
-            DragDropService service = this.radDock1.GetService<DragDropService>();
-            service.Stop(false);
+DragDropService service = this.radDock1.GetService<DragDropService>();
+service.Stop(false);
+
 ````
 ````VB.NET
-        Dim service As DragDropService = Me.RadDock1.GetService(Of DragDropService)()
-        service.Stop(False)
-        '
+Dim service As DragDropService = Me.RadDock1.GetService(Of DragDropService)()
+service.Stop(False)
+
 ````
 
 {{endregion}} 
@@ -54,11 +55,12 @@ You can switch between *Preview* and *Immediate* modes by setting the __DragDro
 {{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=dragDropMode}} 
 
 ````C#
-            this.radDock1.DragDropMode = DragDropMode.Preview;
+this.radDock1.DragDropMode = DragDropMode.Preview;
+
 ````
 ````VB.NET
-        Me.RadDock1.DragDropMode = DragDropMode.Preview
-        '
+Me.RadDock1.DragDropMode = DragDropMode.Preview
+
 ````
 
 {{endregion}} 
@@ -73,13 +75,14 @@ The service may be told which dock states are allowed to be hit-tested. For exam
 {{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=dragDropAllowedStates}} 
 
 ````C#
-            DragDropService service = this.radDock1.GetService<DragDropService>();
-            service.AllowedStates &= ~AllowedDockState.Floating;
+DragDropService service = this.radDock1.GetService<DragDropService>();
+service.AllowedStates &= ~AllowedDockState.Floating;
+
 ````
 ````VB.NET
-        Dim service As DragDropService = Me.RadDock1.GetService(Of DragDropService)()
-        service.AllowedStates = service.AllowedStates And Not AllowedDockState.Floating
-        '
+Dim service As DragDropService = Me.RadDock1.GetService(Of DragDropService)()
+service.AllowedStates = service.AllowedStates And Not AllowedDockState.Floating
+
 ````
 
 {{endregion}} 
@@ -113,32 +116,32 @@ The following example demonstrates how to allow only DockPosition.Bottom for the
 {{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=initDragDropEvents}} 
 
 ````C#
-        private void InitDragDropEvents()
-        {
-            DragDropService service = this.radDock1.GetService<DragDropService>();
-            service.PreviewDockPosition += new DragDropDockPositionEventHandler(service_PreviewDockPosition);
-        }
+private void InitDragDropEvents()
+{
+    DragDropService service = this.radDock1.GetService<DragDropService>();
+    service.PreviewDockPosition += new DragDropDockPositionEventHandler(service_PreviewDockPosition);
+}
       
-        private void service_PreviewDockPosition(object sender, DragDropDockPositionEventArgs e)
-        {
-            if (e.DropTarget == this.radDock1.MainDocumentContainer)
-            {
-                e.AllowedDockPosition = AllowedDockPosition.Bottom;
-            }
-        }
+private void service_PreviewDockPosition(object sender, DragDropDockPositionEventArgs e)
+{
+    if (e.DropTarget == this.radDock1.MainDocumentContainer)
+    {
+        e.AllowedDockPosition = AllowedDockPosition.Bottom;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub InitDragDropEvents()
-        Dim service As DragDropService = Me.RadDock1.GetService(Of DragDropService)()
-        AddHandler service.PreviewDockPosition, AddressOf service_PreviewDockPosition
-    End Sub
+Private Sub InitDragDropEvents()
+    Dim service As DragDropService = Me.RadDock1.GetService(Of DragDropService)()
+    AddHandler service.PreviewDockPosition, AddressOf service_PreviewDockPosition
+End Sub
+Private Sub service_PreviewDockPosition(ByVal sender As Object, ByVal e As DragDropDockPositionEventArgs)
+    If e.DropTarget Is Me.RadDock1.MainDocumentContainer Then
+        e.AllowedDockPosition = AllowedDockPosition.Bottom
+    End If
+End Sub
 
-    Private Sub service_PreviewDockPosition(ByVal sender As Object, ByVal e As DragDropDockPositionEventArgs)
-        If e.DropTarget Is Me.RadDock1.MainDocumentContainer Then
-            e.AllowedDockPosition = AllowedDockPosition.Bottom
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -157,18 +160,19 @@ The service may be told which edges of the owning RadDock instance are allowed f
 {{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=initDragDropProperties}} 
 
 ````C#
-        private void InitDragDropProperties()
-        {
-            DragDropService service = this.radDock1.GetService<DragDropService>();
-            service.AllowedDockManagerEdges = AllowedDockPosition.Left | AllowedDockPosition.Right;
-        }
+private void InitDragDropProperties()
+{
+    DragDropService service = this.radDock1.GetService<DragDropService>();
+    service.AllowedDockManagerEdges = AllowedDockPosition.Left | AllowedDockPosition.Right;
+}
+
 ````
 ````VB.NET
-    Private Sub InitDragDropProperties()
-        Dim service As DragDropService = Me.RadDock1.GetService(Of DragDropService)()
-        service.AllowedDockManagerEdges = AllowedDockPosition.Left Or AllowedDockPosition.Right
-    End Sub
-    '
+Private Sub InitDragDropProperties()
+    Dim service As DragDropService = Me.RadDock1.GetService(Of DragDropService)()
+    service.AllowedDockManagerEdges = AllowedDockPosition.Left Or AllowedDockPosition.Right
+End Sub
+
 ````
 
 {{endregion}} 

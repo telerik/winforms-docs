@@ -30,19 +30,21 @@ Setting the __SelectionLength__ to a number greater than 0 causes that number of
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=SetSelection}} 
 
 ````C#
-        private void SetSelection()
-        {
-            this.radAutoCompleteBox1.Text = "Pepsi; Sprite; Coca-Cola;";
-            this.radAutoCompleteBox1.SelectionStart = 6;
-            this.radAutoCompleteBox1.SelectionLength = 7;
-        }
+private void SetSelection()
+{
+    this.radAutoCompleteBox1.Text = "Pepsi; Sprite; Coca-Cola;";
+    this.radAutoCompleteBox1.SelectionStart = 6;
+    this.radAutoCompleteBox1.SelectionLength = 7;
+}
+
 ````
 ````VB.NET
-    Private Sub SetSelection()
-        Me.RadAutoCompleteBox1.Text = "Pepsi; Sprite; Coca-Cola;"
-        Me.RadAutoCompleteBox1.SelectionStart = 6
-        Me.RadAutoCompleteBox1.SelectionLength = 7
-    End Sub
+Private Sub SetSelection()
+    Me.RadAutoCompleteBox1.Text = "Pepsi; Sprite; Coca-Cola;"
+    Me.RadAutoCompleteBox1.SelectionStart = 6
+    Me.RadAutoCompleteBox1.SelectionLength = 7
+End Sub
+
 ````
 
 {{endregion}}  
@@ -53,17 +55,19 @@ Alternatively, you can use the __Select__ method to select the same part of the 
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=SetSelectionRange}} 
 
 ````C#
-        private void SetSelectionRange()
-        {
-            this.radAutoCompleteBox1.Text = "Pepsi;Sprite;Coca-Cola";
-            this.radAutoCompleteBox1.Select(6, 7);
-        }
+private void SetSelectionRange()
+{
+    this.radAutoCompleteBox1.Text = "Pepsi;Sprite;Coca-Cola";
+    this.radAutoCompleteBox1.Select(6, 7);
+}
+
 ````
 ````VB.NET
-    Private Sub SetSelectionRange()
-        Me.RadAutoCompleteBox1.Text = "Pepsi;Sprite;Coca-Cola"
-        Me.RadAutoCompleteBox1.[Select](6, 7)
-    End Sub
+Private Sub SetSelectionRange()
+    Me.RadAutoCompleteBox1.Text = "Pepsi;Sprite;Coca-Cola"
+    Me.RadAutoCompleteBox1.[Select](6, 7)
+End Sub
+
 ````
 
 {{endregion}}  

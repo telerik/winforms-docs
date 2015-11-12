@@ -33,11 +33,12 @@ __RadDropDownList__ supports three types of selection modes:
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListSelection.vb region=MultiExtendedSelection}} 
 
 ````C#
-            this.radDropDownList1.DropDownListElement.SelectionMode = SelectionMode.MultiExtended;
+this.radDropDownList1.DropDownListElement.SelectionMode = SelectionMode.MultiExtended;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.DropDownListElement.SelectionMode = SelectionMode.MultiExtended
-        '
+Me.radDropDownList1.DropDownListElement.SelectionMode = SelectionMode.MultiExtended
+
 ````
 
 {{endregion}} 
@@ -56,11 +57,12 @@ __RadDropDownList__ can automatically select the next item when a double click i
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListSelection.vb region=NextItemSelection}} 
 
 ````C#
-            this.radDropDownList1.SelectNextOnDoubleClick = true;
+this.radDropDownList1.SelectNextOnDoubleClick = true;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.SelectNextOnDoubleClick = True
-        '
+Me.radDropDownList1.SelectNextOnDoubleClick = True
+
 ````
 
 {{endregion}} 

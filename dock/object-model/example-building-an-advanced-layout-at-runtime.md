@@ -32,22 +32,23 @@ So, let's start building the layout:
 	{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=dockingTwoToolWindows}} 
 
 	````C#
-            ToolWindow window1 = new ToolWindow();
-            window1.Name = "window1";
-            this.radDock1.DockWindow(window1, DockPosition.Left);
-            ToolWindow window2 = new ToolWindow();
-            window2.Name = "window2";
-            this.radDock1.DockWindow(window2, window1, DockPosition.Bottom);
-	````
-	````VB.NET
-        Dim window1 As ToolWindow = New ToolWindow()
-        window1.Name = "window1"
-        Me.RadDock1.DockWindow(window1, DockPosition.Left)
-        Dim window2 As ToolWindow = New ToolWindow()
-        window2.Name = "window2"
-        Me.RadDock1.DockWindow(window2, window1, DockPosition.Bottom)
-        '
-	````
+ToolWindow window1 = new ToolWindow();
+window1.Name = "window1";
+this.radDock1.DockWindow(window1, DockPosition.Left);
+ToolWindow window2 = new ToolWindow();
+window2.Name = "window2";
+this.radDock1.DockWindow(window2, window1, DockPosition.Bottom);
+
+````
+````VB.NET
+Dim window1 As ToolWindow = New ToolWindow()
+window1.Name = "window1"
+Me.RadDock1.DockWindow(window1, DockPosition.Left)
+Dim window2 As ToolWindow = New ToolWindow()
+window2.Name = "window2"
+Me.RadDock1.DockWindow(window2, window1, DockPosition.Bottom)
+
+````
 
 	{{endregion}} 
 
@@ -62,14 +63,15 @@ So, let's start building the layout:
 	{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=settingRelativeSize}} 
 
 	````C#
-            window2.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Relative;
-            window2.TabStrip.SizeInfo.RelativeRatio = new SizeF(0, 0.33f);
-	````
-	````VB.NET
-        window2.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Relative
-        window2.TabStrip.SizeInfo.RelativeRatio = New System.Drawing.SizeF(0, 0.33F)
-        '
-	````
+window2.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Relative;
+window2.TabStrip.SizeInfo.RelativeRatio = new SizeF(0, 0.33f);
+
+````
+````VB.NET
+window2.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Relative
+window2.TabStrip.SizeInfo.RelativeRatio = New System.Drawing.SizeF(0, 0.33F)
+
+````
 
 	{{endregion}} 
  
@@ -89,26 +91,27 @@ So, let's start building the layout:
 	{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=settingAbsoliteSize}} 
 
 	````C#
-            ToolWindow window3 = new ToolWindow();
-            window3.Name = "window3";
-            this.radDock1.DockWindow(window3, DockPosition.Bottom);
-            ToolWindow window4 = new ToolWindow();
-            window4.Name = "window4";
-            this.radDock1.DockWindow(window4, window3, DockPosition.Right);
-            window4.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Absolute;
-            window4.TabStrip.SizeInfo.AbsoluteSize = new Size(150, 0);
-	````
-	````VB.NET
-        Dim window3 As ToolWindow = New ToolWindow()
-        window3.Name = "window3"
-        Me.RadDock1.DockWindow(window3, DockPosition.Bottom)
-        Dim window4 As ToolWindow = New ToolWindow()
-        window4.Name = "window4"
-        Me.RadDock1.DockWindow(window4, window3, DockPosition.Right)
-        window4.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Absolute
-        window4.TabStrip.SizeInfo.AbsoluteSize = New Size(150, 0)
-        '
-	````
+ToolWindow window3 = new ToolWindow();
+window3.Name = "window3";
+this.radDock1.DockWindow(window3, DockPosition.Bottom);
+ToolWindow window4 = new ToolWindow();
+window4.Name = "window4";
+this.radDock1.DockWindow(window4, window3, DockPosition.Right);
+window4.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Absolute;
+window4.TabStrip.SizeInfo.AbsoluteSize = new Size(150, 0);
+
+````
+````VB.NET
+Dim window3 As ToolWindow = New ToolWindow()
+window3.Name = "window3"
+Me.RadDock1.DockWindow(window3, DockPosition.Bottom)
+Dim window4 As ToolWindow = New ToolWindow()
+window4.Name = "window4"
+Me.RadDock1.DockWindow(window4, window3, DockPosition.Right)
+window4.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Absolute
+window4.TabStrip.SizeInfo.AbsoluteSize = New Size(150, 0)
+
+````
 
 	{{endregion}} 
  
@@ -126,22 +129,23 @@ So, let's start building the layout:
 	{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=floatingWindows}} 
 	
 	````C#
-            ToolWindow window5 = new ToolWindow();
-            window5.Name = "window5";
-            this.radDock1.FloatWindow(window5, new Rectangle(250, 250, 300, 150));
-            ToolWindow window6 = new ToolWindow();
-            window6.Name = "window6";
-            this.radDock1.DockWindow(window6, window5, DockPosition.Right);
-	````
-	````VB.NET
-        Dim window5 As ToolWindow = New ToolWindow()
-        window5.Name = "window5"
-        Me.RadDock1.FloatWindow(window5, New Rectangle(250, 250, 300, 150))
-        Dim window6 As ToolWindow = New ToolWindow()
-        window6.Name = "window6"
-        Me.RadDock1.DockWindow(window6, window5, DockPosition.Right)
-        '
-	````
+ToolWindow window5 = new ToolWindow();
+window5.Name = "window5";
+this.radDock1.FloatWindow(window5, new Rectangle(250, 250, 300, 150));
+ToolWindow window6 = new ToolWindow();
+window6.Name = "window6";
+this.radDock1.DockWindow(window6, window5, DockPosition.Right);
+
+````
+````VB.NET
+Dim window5 As ToolWindow = New ToolWindow()
+window5.Name = "window5"
+Me.RadDock1.FloatWindow(window5, New Rectangle(250, 250, 300, 150))
+Dim window6 As ToolWindow = New ToolWindow()
+window6.Name = "window6"
+Me.RadDock1.DockWindow(window6, window5, DockPosition.Right)
+
+````
 
 	{{endregion}} 
 
@@ -156,20 +160,21 @@ So, let's start building the layout:
 	{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=autoHide}} 
 
 	````C#
-            ToolWindow window7 = new ToolWindow();
-            window7.Name = "window7";
-            window7.AutoHideSize = new Size(100, 100);
-            this.radDock1.DockWindow(window7, window4, DockPosition.Bottom);
-            ((ToolTabStrip)window7.TabStrip).AutoHidePosition = AutoHidePosition.Top;
-	````
-	````VB.NET
-        Dim window7 As ToolWindow = New ToolWindow()
-        window7.Name = "window7"
-        window7.AutoHideSize = New Drawing.Size(100, 100)
-        Me.RadDock1.DockWindow(window7, window4, DockPosition.Bottom)
-        CType(window7.TabStrip, ToolTabStrip).AutoHidePosition = AutoHidePosition.Top
-        '
-	````
+ToolWindow window7 = new ToolWindow();
+window7.Name = "window7";
+window7.AutoHideSize = new Size(100, 100);
+this.radDock1.DockWindow(window7, window4, DockPosition.Bottom);
+((ToolTabStrip)window7.TabStrip).AutoHidePosition = AutoHidePosition.Top;
+
+````
+````VB.NET
+Dim window7 As ToolWindow = New ToolWindow()
+window7.Name = "window7"
+window7.AutoHideSize = New Drawing.Size(100, 100)
+Me.RadDock1.DockWindow(window7, window4, DockPosition.Bottom)
+CType(window7.TabStrip, ToolTabStrip).AutoHidePosition = AutoHidePosition.Top
+
+````
 
 	{{endregion}}  
 
@@ -189,22 +194,23 @@ So, let's start building the layout:
 	{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=addingDocumentWindows}} 
 
 	````C#
-            DocumentWindow document1 = new DocumentWindow();
-            document1.Name = "document1";
-            this.radDock1.AddDocument(document1);
-            DocumentWindow document2 = new DocumentWindow();
-            document2.Name = "document2";
-            this.radDock1.AddDocument(document2, document1, DockPosition.Bottom);
-	````
-	````VB.NET
-        Dim document1 As DocumentWindow = New DocumentWindow()
-        document1.Name = "document1"
-        Me.RadDock1.AddDocument(document1)
-        Dim document2 As DocumentWindow = New DocumentWindow()
-        document2.Name = "document2"
-        Me.RadDock1.AddDocument(document2, document1, DockPosition.Bottom)
-        '
-	````
+DocumentWindow document1 = new DocumentWindow();
+document1.Name = "document1";
+this.radDock1.AddDocument(document1);
+DocumentWindow document2 = new DocumentWindow();
+document2.Name = "document2";
+this.radDock1.AddDocument(document2, document1, DockPosition.Bottom);
+
+````
+````VB.NET
+Dim document1 As DocumentWindow = New DocumentWindow()
+document1.Name = "document1"
+Me.RadDock1.AddDocument(document1)
+Dim document2 As DocumentWindow = New DocumentWindow()
+document2.Name = "document2"
+Me.RadDock1.AddDocument(document2, document1, DockPosition.Bottom)
+
+````
 
 	{{endregion}} 
 
@@ -219,12 +225,13 @@ So, let's start building the layout:
 	{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=dockContainerVisible}} 
 
 	````C#
-            this.radDock1.MainDocumentContainerVisible = false;
-	````
-	````VB.NET
-        Me.RadDock1.MainDocumentContainerVisible = False
-        '
-	````
+this.radDock1.MainDocumentContainerVisible = false;
+
+````
+````VB.NET
+Me.RadDock1.MainDocumentContainerVisible = False
+
+````
 
 	{{endregion}} 
 

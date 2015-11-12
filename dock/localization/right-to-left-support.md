@@ -16,11 +16,12 @@ You can present the content of your dock instance in a right-to-left direction b
 {{source=..\SamplesVB\Dock\CustomDockProvider.vb region=rtl}} 
 
 ````C#
-            radDock1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+radDock1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+
 ````
 ````VB.NET
-        Me.radDock1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        '
+Me.radDock1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+
 ````
 
 {{endregion}} 

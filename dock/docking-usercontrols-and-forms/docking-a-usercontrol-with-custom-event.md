@@ -40,14 +40,15 @@ This tutorial walks you through a real-world scenario that you can have in your 
 	{{source=..\SamplesVB\Dock\CalendarPanel.vb region=definingDelegates}} 
 
 	````C#
-        public delegate void DateChangedHandler(DateTime date);
-        public event DateChangedHandler DateChanged;
-	````
-	````VB.NET
-    Public Delegate Sub DateChangedHandler(ByVal [date] As DateTime)
-    Public Event DateChanged As DateChangedHandler
-    '
-	````
+public delegate void DateChangedHandler(DateTime date);
+public event DateChangedHandler DateChanged;
+
+````
+````VB.NET
+Public Delegate Sub DateChangedHandler(ByVal [date] As DateTime)
+Public Event DateChanged As DateChangedHandler
+
+````
 
 	{{endregion}} 
 
@@ -59,20 +60,21 @@ This tutorial walks you through a real-world scenario that you can have in your 
 	{{source=..\SamplesVB\Dock\CalendarPanel.vb region=handlingSelectionChanged}} 
 
 	````C#
-        private void radCalendar1_SelectionChanged(object sender, EventArgs e)
-        {
-            if (DateChanged != null)
-            {
-                DateChanged((sender as Telerik.WinControls.UI.RadCalendar).SelectedDate);
-            }
-        }
-	````
-	````VB.NET
-    Private Sub RadCalendar1_SelectionChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadCalendar1.SelectionChanged
-        RaiseEvent DateChanged((TryCast(sender, RadCalendar)).SelectedDate)
-    End Sub
-    '
-	````
+private void radCalendar1_SelectionChanged(object sender, EventArgs e)
+{
+    if (DateChanged != null)
+    {
+        DateChanged((sender as Telerik.WinControls.UI.RadCalendar).SelectedDate);
+    }
+}
+
+````
+````VB.NET
+Private Sub RadCalendar1_SelectionChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadCalendar1.SelectionChanged
+    RaiseEvent DateChanged((TryCast(sender, RadCalendar)).SelectedDate)
+End Sub
+
+````
 
 	{{endregion}} 
 
@@ -89,18 +91,19 @@ This tutorial walks you through a real-world scenario that you can have in your 
 	{{source=..\SamplesVB\Dock\DockingForms.vb region=creatingCalendarPanel}} 
 	
 	````C#
-            CalendarPanel calendarPanel = new CalendarPanel();
-            HostWindow host = this.radDock1.DockControl(calendarPanel, Telerik.WinControls.UI.Docking.DockPosition.Left);
-            host.Text = "Calendar";
-            calendarPanel.DateChanged += calendarPanel_DateChanged;
-	````
-	````VB.NET
-        Dim calendarPanel As New CalendarPanel()
-        Dim host As HostWindow = Me.RadDock1.DockControl(calendarPanel, Telerik.WinControls.UI.Docking.DockPosition.Left)
-        host.Text = "Calendar"
-        AddHandler calendarPanel.DateChanged, AddressOf calendarPanel_DateChanged
-        '
-	````
+CalendarPanel calendarPanel = new CalendarPanel();
+HostWindow host = this.radDock1.DockControl(calendarPanel, Telerik.WinControls.UI.Docking.DockPosition.Left);
+host.Text = "Calendar";
+calendarPanel.DateChanged += calendarPanel_DateChanged;
+
+````
+````VB.NET
+Dim calendarPanel As New CalendarPanel()
+Dim host As HostWindow = Me.RadDock1.DockControl(calendarPanel, Telerik.WinControls.UI.Docking.DockPosition.Left)
+host.Text = "Calendar"
+AddHandler calendarPanel.DateChanged, AddressOf calendarPanel_DateChanged
+
+````
 
 	{{endregion}} 
  
@@ -111,17 +114,18 @@ This tutorial walks you through a real-world scenario that you can have in your 
 	{{source=..\SamplesVB\Dock\DockingForms.vb region=handlingDateChanged}} 
 
 	````C#
-        void calendarPanel_DateChanged(DateTime date)
-        {
-            RadMessageBox.Show("Selected date is: " + date.ToShortDateString());
-        }
-	````
-	````VB.NET
-    Sub calendarPanel_DateChanged(ByVal [date] As DateTime)
-        RadMessageBox.Show("Selected date is: " + [date].ToShortDateString())
-    End Sub
-    '
-	````
+void calendarPanel_DateChanged(DateTime date)
+{
+    RadMessageBox.Show("Selected date is: " + date.ToShortDateString());
+}
+
+````
+````VB.NET
+Sub calendarPanel_DateChanged(ByVal [date] As DateTime)
+    RadMessageBox.Show("Selected date is: " + [date].ToShortDateString())
+End Sub
+
+````
 
 	{{endregion}} 
  

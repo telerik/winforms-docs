@@ -70,14 +70,15 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on 
 	{{source=..\SamplesVB\Dock\GettingStarted.vb region=namespace}} 
 
 	````C#
-	using Telerik.WinControls.UI;
-	using Telerik.WinControls.UI.Docking;
-	````
-	````VB.NET
-	Imports Telerik.WinControls.UI
-	Imports Telerik.WinControls.UI.Docking
-		'
-	````
+using Telerik.WinControls.UI;
+using Telerik.WinControls.UI.Docking;
+
+````
+````VB.NET
+Imports Telerik.WinControls.UI
+Imports Telerik.WinControls.UI.Docking
+
+````
 
 	{{endregion}} 
  
@@ -89,39 +90,40 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on 
 	{{source=..\SamplesVB\Dock\GettingStarted.vb region=settingUpTree}} 
 
 	````C#
-        void Form1_Load(object sender, EventArgs e)
-        {
-            RadTreeNode productNode = radTreeView1.Nodes.Add("Product Reports");
-            RadTreeNode customerNode = radTreeView1.Nodes.Add("Customer Reports");
-            RadTreeNode productListingNode = new RadTreeNode("Product Listing");
-            productListingNode.Tag = dwProductListing.Name;
-            RadTreeNode productCategoryNode = new RadTreeNode("Product By Category");
-            productCategoryNode.Tag = dwProductByCategory.Name;
-            RadTreeNode top10CustomerNode = new RadTreeNode("Top 10 Customers");
-            top10CustomerNode.Tag = dwTop10Customers.Name;
-            productNode.Nodes.Add(productListingNode);
-            productNode.Nodes.Add(productCategoryNode);
-            customerNode.Nodes.Add(top10CustomerNode);
-            radTreeView1.ExpandAll();
-        }
-	````
-	````VB.NET
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Dim productNode As RadTreeNode = RadTreeView1.Nodes.Add("Product Reports")
-        Dim customerNode As RadTreeNode = RadTreeView1.Nodes.Add("Customer Reports")
-        Dim productListingNode As New RadTreeNode("Product Listing")
-        productListingNode.Tag = dwProductListing.Name
-        Dim productCategoryNode As New RadTreeNode("Product By Category")
-        productCategoryNode.Tag = dwProductByCategory.Name
-        Dim top10CustomerNode As New RadTreeNode("Top 10 Customers")
-        top10CustomerNode.Tag = dwTop10Customers.Name
-        productNode.Nodes.Add(productListingNode)
-        productNode.Nodes.Add(productCategoryNode)
-        customerNode.Nodes.Add(top10CustomerNode)
-        RadTreeView1.ExpandAll()
-    End Sub
-    '
-	````
+void Form1_Load(object sender, EventArgs e)
+{
+    RadTreeNode productNode = radTreeView1.Nodes.Add("Product Reports");
+    RadTreeNode customerNode = radTreeView1.Nodes.Add("Customer Reports");
+    RadTreeNode productListingNode = new RadTreeNode("Product Listing");
+    productListingNode.Tag = dwProductListing.Name;
+    RadTreeNode productCategoryNode = new RadTreeNode("Product By Category");
+    productCategoryNode.Tag = dwProductByCategory.Name;
+    RadTreeNode top10CustomerNode = new RadTreeNode("Top 10 Customers");
+    top10CustomerNode.Tag = dwTop10Customers.Name;
+    productNode.Nodes.Add(productListingNode);
+    productNode.Nodes.Add(productCategoryNode);
+    customerNode.Nodes.Add(top10CustomerNode);
+    radTreeView1.ExpandAll();
+}
+
+````
+````VB.NET
+Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Dim productNode As RadTreeNode = RadTreeView1.Nodes.Add("Product Reports")
+    Dim customerNode As RadTreeNode = RadTreeView1.Nodes.Add("Customer Reports")
+    Dim productListingNode As New RadTreeNode("Product Listing")
+    productListingNode.Tag = dwProductListing.Name
+    Dim productCategoryNode As New RadTreeNode("Product By Category")
+    productCategoryNode.Tag = dwProductByCategory.Name
+    Dim top10CustomerNode As New RadTreeNode("Top 10 Customers")
+    top10CustomerNode.Tag = dwTop10Customers.Name
+    productNode.Nodes.Add(productListingNode)
+    productNode.Nodes.Add(productCategoryNode)
+    customerNode.Nodes.Add(top10CustomerNode)
+    RadTreeView1.ExpandAll()
+End Sub
+
+````
 
 	{{endregion}} 
  
@@ -135,29 +137,30 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on 
 	{{source=..\SamplesVB\Dock\GettingStarted.vb region=handlingSelectedNodeChanged}} 
 
 	````C#
-        void radTreeView1_SelectedNodeChanged(object sender, RadTreeViewEventArgs e)
-        {            
-            if (e.Node.Tag != null)
-            {
-                DockWindow dw = this.radDock1[e.Node.Tag.ToString()];
-                if (dw != null)
-                {
-                    this.radDock1.ActiveWindow = dw;
-                }
-            }
+void radTreeView1_SelectedNodeChanged(object sender, RadTreeViewEventArgs e)
+{            
+    if (e.Node.Tag != null)
+    {
+        DockWindow dw = this.radDock1[e.Node.Tag.ToString()];
+        if (dw != null)
+        {
+            this.radDock1.ActiveWindow = dw;
         }
-	````
-	````VB.NET
-    Private Sub RadTreeView1_SelectedNodeChanged(ByVal sender As Object, ByVal e As RadTreeViewEventArgs)
-        If Not e.Node.Tag Is Nothing Then
-            Dim dw As DockWindow = Me.RadDock1(e.Node.Tag.ToString())
-            If Not dw Is Nothing Then
-                Me.RadDock1.ActiveWindow = dw
-            End If
+    }
+}
+
+````
+````VB.NET
+Private Sub RadTreeView1_SelectedNodeChanged(ByVal sender As Object, ByVal e As RadTreeViewEventArgs)
+    If Not e.Node.Tag Is Nothing Then
+        Dim dw As DockWindow = Me.RadDock1(e.Node.Tag.ToString())
+        If Not dw Is Nothing Then
+            Me.RadDock1.ActiveWindow = dw
         End If
-    End Sub
-    '
-	````
+    End If
+End Sub
+
+````
 
 	{{endregion}} 
  

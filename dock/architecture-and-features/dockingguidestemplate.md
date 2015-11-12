@@ -27,13 +27,12 @@ By default, RadDock uses the VS2010 template. In order to use the VS2008 templat
 
 ````C#
             
-            this.radDock1.DockingGuidesTemplate = PredefinedDockingGuidesTemplate.VS2008;
+this.radDock1.DockingGuidesTemplate = PredefinedDockingGuidesTemplate.VS2008;
+
 ````
 ````VB.NET
+Me.RadDock1.DockingGuidesTemplate = PredefinedDockingGuidesTemplate.VS2008
 
-        Me.RadDock1.DockingGuidesTemplate = PredefinedDockingGuidesTemplate.VS2008
-
-        '
 ````
 
 {{endregion}} 
@@ -56,71 +55,64 @@ We should first create a DockingGuidesTemplate object and then set the images an
 {{source=..\SamplesVB\Dock\dock-architecture-and-features-docking-guides-template.vb region=Template}} 
 
 ````C#
-
-        DockingGuidesTemplate template;
+DockingGuidesTemplate template;
        
-        void Form1_Load(object sender, EventArgs e)
-        {
-            template = new DockingGuidesTemplate();
-             
-            template.DockingHintBackColor = Color.FromArgb(30, Color.Green);
-            template.DockingHintBorderColor = Color.FromArgb(30, Color.DarkGreen);
-            
-            template.LeftImage.Image = Properties.Resources.Left;
-            template.TopImage.Image = Properties.Resources.Top;
-            template.RightImage.Image = Properties.Resources.Right;
-            template.BottomImage.Image = Properties.Resources.Bottom;
-            template.FillImage.Image = Properties.Resources.Fill;
-            
-            template.LeftImage.HotImage = Properties.Resources.LeftHot;
-            template.TopImage.HotImage = Properties.Resources.TopHot;
-            template.RightImage.HotImage = Properties.Resources.RightHot;
-            template.BottomImage.HotImage = Properties.Resources.BottomHot;
-            template.FillImage.HotImage = Properties.Resources.FillHot;
-            
-            template.CenterBackgroundImage.Image = Properties.Resources.Center;
-            
-            template.LeftImage.LocationOnCenterGuide = new Point(0, 28);
-            template.TopImage.LocationOnCenterGuide = new Point(28, 0);
-            template.RightImage.LocationOnCenterGuide = new Point(65, 28);
-            template.BottomImage.LocationOnCenterGuide = new Point(28, 65);
-            template.FillImage.LocationOnCenterGuide = new Point(28, 28);
+void Form1_Load(object sender, EventArgs e)
+{
+    template = new DockingGuidesTemplate();
+     
+    template.DockingHintBackColor = Color.FromArgb(30, Color.Green);
+    template.DockingHintBorderColor = Color.FromArgb(30, Color.DarkGreen);
+    
+    template.LeftImage.Image = Properties.Resources.Left;
+    template.TopImage.Image = Properties.Resources.Top;
+    template.RightImage.Image = Properties.Resources.Right;
+    template.BottomImage.Image = Properties.Resources.Bottom;
+    template.FillImage.Image = Properties.Resources.Fill;
+    
+    template.LeftImage.HotImage = Properties.Resources.LeftHot;
+    template.TopImage.HotImage = Properties.Resources.TopHot;
+    template.RightImage.HotImage = Properties.Resources.RightHot;
+    template.BottomImage.HotImage = Properties.Resources.BottomHot;
+    template.FillImage.HotImage = Properties.Resources.FillHot;
+    
+    template.CenterBackgroundImage.Image = Properties.Resources.Center;
+    
+    template.LeftImage.LocationOnCenterGuide = new Point(0, 28);
+    template.TopImage.LocationOnCenterGuide = new Point(28, 0);
+    template.RightImage.LocationOnCenterGuide = new Point(65, 28);
+    template.BottomImage.LocationOnCenterGuide = new Point(28, 65);
+    template.FillImage.LocationOnCenterGuide = new Point(28, 28);
         
-            this.radDock1.DockingGuidesTemplate = template;
-        }
+    this.radDock1.DockingGuidesTemplate = template;
+}
+
 ````
 ````VB.NET
-    Private template As DockingGuidesTemplate
+Private template As DockingGuidesTemplate
+Private Sub Form1_Load(sender As Object, e As EventArgs)
+    template = New DockingGuidesTemplate()
+    template.DockingHintBackColor = Color.FromArgb(30, Color.Green)
+    template.DockingHintBorderColor = Color.FromArgb(30, Color.DarkGreen)
+    template.LeftImage.Image = Resources.Left
+    template.TopImage.Image = Resources.Top
+    template.RightImage.Image = Resources.Right
+    template.BottomImage.Image = Resources.Bottom
+    template.FillImage.Image = Resources.Fill
+    template.LeftImage.HotImage = Resources.LeftHot
+    template.TopImage.HotImage = Resources.TopHot
+    template.RightImage.HotImage = Resources.RightHot
+    template.BottomImage.HotImage = Resources.BottomHot
+    template.FillImage.HotImage = Resources.FillHot
+    template.CenterBackgroundImage.Image = Resources.Center
+    template.LeftImage.LocationOnCenterGuide = New Point(0, 28)
+    template.TopImage.LocationOnCenterGuide = New Point(28, 0)
+    template.RightImage.LocationOnCenterGuide = New Point(65, 28)
+    template.BottomImage.LocationOnCenterGuide = New Point(28, 65)
+    template.FillImage.LocationOnCenterGuide = New Point(28, 28)
+    Me.RadDock1.DockingGuidesTemplate = template
+End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs)
-        template = New DockingGuidesTemplate()
-
-        template.DockingHintBackColor = Color.FromArgb(30, Color.Green)
-        template.DockingHintBorderColor = Color.FromArgb(30, Color.DarkGreen)
-
-        template.LeftImage.Image = Resources.Left
-        template.TopImage.Image = Resources.Top
-        template.RightImage.Image = Resources.Right
-        template.BottomImage.Image = Resources.Bottom
-        template.FillImage.Image = Resources.Fill
-
-        template.LeftImage.HotImage = Resources.LeftHot
-        template.TopImage.HotImage = Resources.TopHot
-        template.RightImage.HotImage = Resources.RightHot
-        template.BottomImage.HotImage = Resources.BottomHot
-        template.FillImage.HotImage = Resources.FillHot
-
-        template.CenterBackgroundImage.Image = Resources.Center
-
-        template.LeftImage.LocationOnCenterGuide = New Point(0, 28)
-        template.TopImage.LocationOnCenterGuide = New Point(28, 0)
-        template.RightImage.LocationOnCenterGuide = New Point(65, 28)
-        template.BottomImage.LocationOnCenterGuide = New Point(28, 65)
-        template.FillImage.LocationOnCenterGuide = New Point(28, 28)
-
-        Me.RadDock1.DockingGuidesTemplate = template
-    End Sub
-    '
 ````
 
 {{endregion}}  

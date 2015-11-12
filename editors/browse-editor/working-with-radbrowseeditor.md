@@ -31,16 +31,17 @@ __ValueChanging__: This event fires before the value changes and allows you to p
 {{source=..\SamplesVB\Editors\BrowseEditor1.vb region=browseEditorValueChanging}} 
 
 ````C#
-        private void radBrowseEditor1_ValueChanging(object sender, ValueChangingEventArgs e)
-        {
-            e.Cancel = !File.Exists(e.NewValue.ToString());
-        }
+private void radBrowseEditor1_ValueChanging(object sender, ValueChangingEventArgs e)
+{
+    e.Cancel = !File.Exists(e.NewValue.ToString());
+}
+
 ````
 ````VB.NET
-    Private Sub RadBrowseEditor1_ValueChanging(sender As Object, e As Telerik.WinControls.UI.ValueChangingEventArgs)
-        e.Cancel = Not System.IO.File.Exists(e.NewValue.ToString())
-    End Sub
-    '
+Private Sub RadBrowseEditor1_ValueChanging(sender As Object, e As Telerik.WinControls.UI.ValueChangingEventArgs)
+    e.Cancel = Not System.IO.File.Exists(e.NewValue.ToString())
+End Sub
+
 ````
 
 {{endregion}} 

@@ -21,19 +21,21 @@ You can insert text programmatically at concrete position by using the __Insert_
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=insert}} 
 
 ````C#
-        private void Insert()
-        {
-            this.radAutoCompleteBox1.Text = "USA;";
-            this.radAutoCompleteBox1.CaretIndex = 0;
-            this.radAutoCompleteBox1.Insert("Canada;");
-        }
+private void Insert()
+{
+    this.radAutoCompleteBox1.Text = "USA;";
+    this.radAutoCompleteBox1.CaretIndex = 0;
+    this.radAutoCompleteBox1.Insert("Canada;");
+}
+
 ````
 ````VB.NET
-    Private Sub Insert()
-        Me.RadAutoCompleteBox1.Text = "USA;"
-        Me.RadAutoCompleteBox1.CaretIndex = 0
-        Me.RadAutoCompleteBox1.Insert("Canada;")
-    End Sub
+Private Sub Insert()
+    Me.RadAutoCompleteBox1.Text = "USA;"
+    Me.RadAutoCompleteBox1.CaretIndex = 0
+    Me.RadAutoCompleteBox1.Insert("Canada;")
+End Sub
+
 ````
 
 {{endregion}} 
@@ -48,17 +50,19 @@ Alternatively, you can insert text at the end of the RadAutoCompleteBox content 
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=Append}} 
 
 ````C#
-        private void Append()
-        {
-            this.radAutoCompleteBox1.Text = "IT Department;";
-            this.radAutoCompleteBox1.AppendText("Marketing Team;");
-        }
+private void Append()
+{
+    this.radAutoCompleteBox1.Text = "IT Department;";
+    this.radAutoCompleteBox1.AppendText("Marketing Team;");
+}
+
 ````
 ````VB.NET
-    Private Sub Append()
-        Me.RadAutoCompleteBox1.Text = "IT Department;"
-        Me.RadAutoCompleteBox1.AppendText("Marketing Team;")
-    End Sub
+Private Sub Append()
+    Me.RadAutoCompleteBox1.Text = "IT Department;"
+    Me.RadAutoCompleteBox1.AppendText("Marketing Team;")
+End Sub
+
 ````
 
 {{endregion}} 
@@ -73,19 +77,21 @@ You can delete the selected text or character at the caret position by using the
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=Delete}} 
 
 ````C#
-        private void DeleteText()
-        {
-            this.radAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;";
-            this.radAutoCompleteBox1.Select(0, 8);
-            this.radAutoCompleteBox1.Delete();
-        }
+private void DeleteText()
+{
+    this.radAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;";
+    this.radAutoCompleteBox1.Select(0, 8);
+    this.radAutoCompleteBox1.Delete();
+}
+
 ````
 ````VB.NET
-    Private Sub DeleteText()
-        Me.RadAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;"
-        Me.RadAutoCompleteBox1.[Select](0, 8)
-        Me.RadAutoCompleteBox1.Delete()
-    End Sub
+Private Sub DeleteText()
+    Me.RadAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;"
+    Me.RadAutoCompleteBox1.[Select](0, 8)
+    Me.RadAutoCompleteBox1.Delete()
+End Sub
+
 ````
 
 {{endregion}} 
@@ -100,15 +106,26 @@ Each editing operation raises the __TextChanging__ and __TextChanged__ events. N
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=PreventDeleteOfTokens}} 
 
 ````C#
-        void radAutoCompleteBox1_TextChanging(object sender, Telerik.WinControls.TextChangingEventArgs e)
-        {
-            e.Cancel = string.IsNullOrEmpty(e.NewValue) && e.OldValue.Contains(this.radAutoCompleteBox1.Delimiter.ToString());
-        }
+void radAutoCompleteBox1_TextChanging(object sender, Telerik.WinControls.TextChangingEventArgs e)
+{
+    e.Cancel = string.IsNullOrEmpty(e.NewValue) && e.OldValue.Contains(this.radAutoCompleteBox1.Delimiter.ToString());
+}
+
 ````
 ````VB.NET
-    Private Sub radAutoCompleteBox1_TextChanging(sender As Object, e As Telerik.WinControls.TextChangingEventArgs)
-        e.Cancel = String.IsNullOrEmpty(e.NewValue) AndAlso e.OldValue.Contains(Me.RadAutoCompleteBox1.Delimiter.ToString())
-    End Sub
+Private Sub radAutoCompleteBox1_TextChanging(sender As Object, e As Telerik.WinControls.TextChangingEventArgs)
+    e.Cancel = String.IsNullOrEmpty(e.NewValue) AndAlso e.OldValue.Contains(Me.RadAutoCompleteBox1.Delimiter.ToString())
+End Sub
+ Region
+ion "SetText"
+Private Sub SetText()
+    Me.RadAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;"
+End Sub
+ Region
+Private Sub ShowRemoveButton()
+    '#Region "ShowRemoveButton"
+    Me.RadAutoCompleteBox1.ShowRemoveButton = False
+
 ````
 
 {{endregion}}  

@@ -36,11 +36,12 @@ __RadDropDownList__ fully supports right-to-left (RTL) language locales. You can
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListRightToLeft.vb region=SetRightToLeft}} 
 
 ````C#
-            this.radDropDownList1.RightToLeft = RightToLeft.Yes;
+this.radDropDownList1.RightToLeft = RightToLeft.Yes;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.RightToLeft = RightToLeft.Yes
-        '
+Me.radDropDownList1.RightToLeft = RightToLeft.Yes
+
 ````
 
 {{endregion}} 

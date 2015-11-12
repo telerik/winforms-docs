@@ -20,28 +20,29 @@ In order to do this, you should first subscribe to the ActiveWindowChanged event
 {{source=..\SamplesVB\Dock\DockingForms.vb region=handlingActiveWindowChanged}} 
 
 ````C#
-        void radDock1_ActiveWindowChanged(object sender, Telerik.WinControls.UI.Docking.DockWindowEventArgs e)
+void radDock1_ActiveWindowChanged(object sender, Telerik.WinControls.UI.Docking.DockWindowEventArgs e)
+{
+    HostWindow hostWin = e.DockWindow as HostWindow;
+    if (hostWin != null)
+    {
+        if (hostWin.Content is VegetablesForm)
         {
-            HostWindow hostWin = e.DockWindow as HostWindow;
-            if (hostWin != null)
-            {
-                if (hostWin.Content is VegetablesForm)
-                {
-                    // custom implementation here
-                }
-            }
+            // custom implementation here
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radDock1_ActiveWindowChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Docking.DockWindowEventArgs)
-        Dim hostWin As HostWindow = TryCast(e.DockWindow, HostWindow)
-        If Not hostWin Is Nothing Then
-            If TypeOf hostWin.Content Is VegetablesForm Then
-                ' custom implementation here
-            End If
+Private Sub radDock1_ActiveWindowChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Docking.DockWindowEventArgs)
+    Dim hostWin As HostWindow = TryCast(e.DockWindow, HostWindow)
+    If Not hostWin Is Nothing Then
+        If TypeOf hostWin.Content Is VegetablesForm Then
+            ' custom implementation here
         End If
-    End Sub
-    '
+    End If
+End Sub
+
 ````
 
 {{endregion}}  
@@ -54,11 +55,12 @@ In order to get a HostWindow that hosts a particular form/user control instance,
 {{source=..\SamplesVB\Dock\DockingForms.vb region=gettingWindow}} 
 
 ````C#
-            HostWindow vegetablesWindow = this.radDock1.GetHostWindow(vegetablesForm);
+HostWindow vegetablesWindow = this.radDock1.GetHostWindow(vegetablesForm);
+
 ````
 ````VB.NET
-        Dim vegetablesWindow As HostWindow = Me.RadDock1.GetHostWindow(VegetablesForm)
-        '
+Dim vegetablesWindow As HostWindow = Me.RadDock1.GetHostWindow(VegetablesForm)
+
 ````
 
 {{endregion}} 

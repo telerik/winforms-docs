@@ -84,11 +84,12 @@ To enable the Visual Studio 2008-like docking behavior, set the SingleScreen pro
 {{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=floatingTabsMode}} 
 
 ````C#
-            this.radDock1.SingleScreen = true;
+this.radDock1.SingleScreen = true;
+
 ````
 ````VB.NET
-        Me.RadDock1.SingleScreen = True
-        '
+Me.RadDock1.SingleScreen = True
+
 ````
 
 {{endregion}} 

@@ -26,53 +26,55 @@ Below is a sample implementation of a custom localization provider, which return
 {{source=..\SamplesVB\Dock\CustomDockProvider.vb region=customProvider}} 
 
 ````C#
-    public class EnglishDockLocalizationProvider : RadDockLocalizationProvider
+public class EnglishDockLocalizationProvider : RadDockLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
     {
-        public override string GetLocalizedString(string id)
+        switch (id)
         {
-            switch (id)
-            {
-                case RadDockStringId.ContextMenuFloating:
-                    return "Floating";
-                case RadDockStringId.ContextMenuDockable:
-                    return "Dockable";
-                case RadDockStringId.ContextMenuTabbedDocument:
-                    return "Tabbed Document";
-                case RadDockStringId.ContextMenuAutoHide:
-                    return "Auto Hide";
-                case RadDockStringId.ContextMenuHide:
-                    return "Hide";
-                case RadDockStringId.ContextMenuClose:
-                    return "Close";
-                case RadDockStringId.ContextMenuCloseAll:
-                    return "Close All";
-                case RadDockStringId.ContextMenuCloseAllButThis:
-                    return "Close All But This";
-                case RadDockStringId.ContextMenuMoveToPreviousTabGroup:
-                    return "Move to Previous Tab Group";
-                case RadDockStringId.ContextMenuMoveToNextTabGroup:
-                    return "Move to Next Tab Group";
-                case RadDockStringId.ContextMenuNewHorizontalTabGroup:
-                    return "New Horizontal Tab Group";
-                case RadDockStringId.ContextMenuNewVerticalTabGroup:
-                    return "New Vertical Tab Group";
-                case RadDockStringId.ToolTabStripCloseButton:
-                    return "Close Window";
-                case RadDockStringId.ToolTabStripDockStateButton:
-                    return "Window State";
-                case RadDockStringId.ToolTabStripUnpinButton:
-                    return "Auto Hide";
-                case RadDockStringId.ToolTabStripPinButton:
-                    return "Docked";
-                case RadDockStringId.DocumentTabStripCloseButton:
-                    return "Close Document";
-                case RadDockStringId.DocumentTabStripListButton:
-                    return "Active Documents";
-            }
-
-            return string.Empty;
+            case RadDockStringId.ContextMenuFloating:
+                return "Floating";
+            case RadDockStringId.ContextMenuDockable:
+                return "Dockable";
+            case RadDockStringId.ContextMenuTabbedDocument:
+                return "Tabbed Document";
+            case RadDockStringId.ContextMenuAutoHide:
+                return "Auto Hide";
+            case RadDockStringId.ContextMenuHide:
+                return "Hide";
+            case RadDockStringId.ContextMenuClose:
+                return "Close";
+            case RadDockStringId.ContextMenuCloseAll:
+                return "Close All";
+            case RadDockStringId.ContextMenuCloseAllButThis:
+                return "Close All But This";
+            case RadDockStringId.ContextMenuMoveToPreviousTabGroup:
+                return "Move to Previous Tab Group";
+            case RadDockStringId.ContextMenuMoveToNextTabGroup:
+                return "Move to Next Tab Group";
+            case RadDockStringId.ContextMenuNewHorizontalTabGroup:
+                return "New Horizontal Tab Group";
+            case RadDockStringId.ContextMenuNewVerticalTabGroup:
+                return "New Vertical Tab Group";
+            case RadDockStringId.ToolTabStripCloseButton:
+                return "Close Window";
+            case RadDockStringId.ToolTabStripDockStateButton:
+                return "Window State";
+            case RadDockStringId.ToolTabStripUnpinButton:
+                return "Auto Hide";
+            case RadDockStringId.ToolTabStripPinButton:
+                return "Docked";
+            case RadDockStringId.DocumentTabStripCloseButton:
+                return "Close Document";
+            case RadDockStringId.DocumentTabStripListButton:
+                return "Active Documents";
+            case RadDockStringId.ContextMenuCloseAllButPinned:
+                return "Close All but Pinned";
         }
+        return string.Empty;
     }
+}
+
 ````
 ````VB.NET
 Public Class EnglishDockLocalizationProvider
@@ -115,14 +117,13 @@ Public Class EnglishDockLocalizationProvider
                 Return "Close Document"
             Case RadDockStringId.DocumentTabStripListButton
                 Return "Active Documents"
+            Case RadDockStringId.ContextMenuCloseAllButPinned
+                Return "Close All but Pinned"
         End Select
-
         Return String.Empty
     End Function
 End Class
 
-
-'
 ````
 
 {{endregion}} 
@@ -136,11 +137,12 @@ To apply the custom localization provider, instantiate and assign it to the curr
 {{source=..\SamplesVB\Dock\CustomDockProvider.vb region=settingCustomProvider}} 
 
 ````C#
-            RadDockLocalizationProvider.CurrentProvider = new EnglishDockLocalizationProvider();
+RadDockLocalizationProvider.CurrentProvider = new EnglishDockLocalizationProvider();
+
 ````
 ````VB.NET
-        RadDockLocalizationProvider.CurrentProvider = New EnglishDockLocalizationProvider()
-        '
+RadDockLocalizationProvider.CurrentProvider = New EnglishDockLocalizationProvider()
+
 ````
 
 {{endregion}} 

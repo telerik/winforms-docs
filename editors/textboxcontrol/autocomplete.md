@@ -72,39 +72,44 @@ To use auto-completion without specifying a data source, you need to populate th
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=AddAutoCompleteItems}} 
 
 ````C#
-        private void AddAutoCompleteItems()
-        {
-            this.radTextBoxControl1.AutoCompleteMode = AutoCompleteMode.Suggest;
-            RadListDataItemCollection autoCompleteItems = this.radTextBoxControl1.AutoCompleteItems;
+private void AddAutoCompleteItems()
+{
+    this.radTextBoxControl1.AutoCompleteMode = AutoCompleteMode.Suggest;
+    RadListDataItemCollection autoCompleteItems = this.radTextBoxControl1.AutoCompleteItems;
+    autoCompleteItems.Add(new RadListDataItem("Luke"));
+    autoCompleteItems.Add(new RadListDataItem("Max"));
+    autoCompleteItems.Add(new RadListDataItem("Adam"));
+    autoCompleteItems.Add(new RadListDataItem("Henry"));
+    autoCompleteItems.Add(new RadListDataItem("Jack"));
+    autoCompleteItems.Add(new RadListDataItem("Ben"));
+    autoCompleteItems.Add(new RadListDataItem("Tyler"));
+    autoCompleteItems.Add(new RadListDataItem("Ethan"));
+    autoCompleteItems.Add(new RadListDataItem("David"));
+    autoCompleteItems.Add(new RadListDataItem("Mike"));
+}
 
-            autoCompleteItems.Add(new RadListDataItem("Luke"));
-            autoCompleteItems.Add(new RadListDataItem("Max"));
-            autoCompleteItems.Add(new RadListDataItem("Adam"));
-            autoCompleteItems.Add(new RadListDataItem("Henry"));
-            autoCompleteItems.Add(new RadListDataItem("Jack"));
-            autoCompleteItems.Add(new RadListDataItem("Ben"));
-            autoCompleteItems.Add(new RadListDataItem("Tyler"));
-            autoCompleteItems.Add(new RadListDataItem("Ethan"));
-            autoCompleteItems.Add(new RadListDataItem("David"));
-            autoCompleteItems.Add(new RadListDataItem("Mike"));
-        }
 ````
 ````VB.NET
-    Private Sub AddAutoCompleteItems()
-        Me.RadTextBoxControl1.AutoCompleteMode = AutoCompleteMode.Suggest
-        Dim autoCompleteItems As RadListDataItemCollection = Me.RadTextBoxControl1.AutoCompleteItems
+Private Sub AddAutoCompleteItems()
+    Me.RadTextBoxControl1.AutoCompleteMode = AutoCompleteMode.Suggest
+    Dim autoCompleteItems As RadListDataItemCollection = Me.RadTextBoxControl1.AutoCompleteItems
+    autoCompleteItems.Add(New RadListDataItem("Luke"))
+    autoCompleteItems.Add(New RadListDataItem("Max"))
+    autoCompleteItems.Add(New RadListDataItem("Adam"))
+    autoCompleteItems.Add(New RadListDataItem("Henry"))
+    autoCompleteItems.Add(New RadListDataItem("Jack"))
+    autoCompleteItems.Add(New RadListDataItem("Ben"))
+    autoCompleteItems.Add(New RadListDataItem("Tyler"))
+    autoCompleteItems.Add(New RadListDataItem("Ethan"))
+    autoCompleteItems.Add(New RadListDataItem("David"))
+    autoCompleteItems.Add(New RadListDataItem("Mike"))
+End Sub
+ Region
+Private Sub formatting1()
+    '#Region "Formatting1"
+    AddHandler Me.RadTextBoxControl1.TextBlockFormatting, AddressOf Me.OnTextBlockFormatting
+    Me.RadTextBoxControl1.Text = "This is important text."
 
-        autoCompleteItems.Add(New RadListDataItem("Luke"))
-        autoCompleteItems.Add(New RadListDataItem("Max"))
-        autoCompleteItems.Add(New RadListDataItem("Adam"))
-        autoCompleteItems.Add(New RadListDataItem("Henry"))
-        autoCompleteItems.Add(New RadListDataItem("Jack"))
-        autoCompleteItems.Add(New RadListDataItem("Ben"))
-        autoCompleteItems.Add(New RadListDataItem("Tyler"))
-        autoCompleteItems.Add(New RadListDataItem("Ethan"))
-        autoCompleteItems.Add(New RadListDataItem("David"))
-        autoCompleteItems.Add(New RadListDataItem("Mike"))
-    End Sub
 ````
 
 {{endregion}} 

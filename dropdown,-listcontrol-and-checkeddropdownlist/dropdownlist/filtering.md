@@ -21,10 +21,33 @@ __RadDropDownList__ supports filtering of its items. In order to apply a filter,
 
 ````C#
             
-            this.radDropDownList1.Filter = FilterItem;
+this.radDropDownList1.Filter = FilterItem;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.Filter = AddressOf FilterItem
+Me.radDropDownList1.Filter = AddressOf FilterItem
+'#End Region
+'#Region "FilteringExpression"
+Me.radDropDownList1.FilterExpression = "Country LIKE 'Argentina'"
+'#End Region
+End Sub
+'#Region "FilteringPredicate"
+Private Function FilterItem(item As RadListDataItem) As Boolean
+If item.Text.StartsWith("L") Then
+    Return True
+End If
+        
+Return False
+End Function
+'#End Region
+'#region handlingSelectedIndexChanged
+Private Sub radDropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
+If Me.radDropDownList1.SelectedIndex > -1 Then
+    radLabelElement1.Text = Me.radDropDownList1.SelectedItem.Text
+    Me.radImageButtonElement1.Image = Me.radDropDownList1.SelectedItem.Image
+End If
+End Sub
+
 ````        
 
 {{endregion}} 
@@ -36,26 +59,33 @@ __RadDropDownList__ supports filtering of its items. In order to apply a filter,
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=FilteringPredicate}} 
 
 ````C#
-            
-        private bool FilterItem(RadListDataItem item)
-        {
-            if (item.Text.StartsWith("L"))
-            {
-                return true;
-            }
+    
+private bool FilterItem(RadListDataItem item)
+{
+    if (item.Text.StartsWith("L"))
+    {
+        return true;
+    }
+    return false;
+}
 
-            return false;
-        }
 ````
 ````VB.NET
-
-    Private Function FilterItem(item As RadListDataItem) As Boolean
-        If item.Text.StartsWith("L") Then
-            Return True
-        End If
-        
-        Return False
-    End Function
+Private Function FilterItem(item As RadListDataItem) As Boolean
+    If item.Text.StartsWith("L") Then
+        Return True
+    End If
+    
+    Return False
+End Function
+'#End Region
+'#region handlingSelectedIndexChanged
+Private Sub radDropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
+    If Me.radDropDownList1.SelectedIndex > -1 Then
+        radLabelElement1.Text = Me.radDropDownList1.SelectedItem.Text
+        Me.radImageButtonElement1.Image = Me.radDropDownList1.SelectedItem.Image
+    End If
+End Sub
 
 ```` 
 {{endregion}} 
@@ -75,10 +105,30 @@ Another option to filter the items is to specify the __FilterExpression__ proper
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=FilteringExpression}} 
 
 ````C#
-            this.radDropDownList1.FilterExpression = "Country LIKE 'Argentina'";
+this.radDropDownList1.FilterExpression = "Country LIKE 'Argentina'";
+
 ````
 ````VB.NET
-        Me.radDropDownList1.FilterExpression = "Country LIKE 'Argentina'"
+Me.radDropDownList1.FilterExpression = "Country LIKE 'Argentina'"
+'#End Region
+End Sub
+'#Region "FilteringPredicate"
+Private Function FilterItem(item As RadListDataItem) As Boolean
+If item.Text.StartsWith("L") Then
+    Return True
+End If
+        
+Return False
+End Function
+'#End Region
+'#region handlingSelectedIndexChanged
+Private Sub radDropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
+If Me.radDropDownList1.SelectedIndex > -1 Then
+    radLabelElement1.Text = Me.radDropDownList1.SelectedItem.Text
+    Me.radImageButtonElement1.Image = Me.radDropDownList1.SelectedItem.Image
+End If
+End Sub
+
 ````
 
 {{endregion}} 

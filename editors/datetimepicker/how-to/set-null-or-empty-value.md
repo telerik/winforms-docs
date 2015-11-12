@@ -20,13 +20,14 @@ __RadDateTimePicker__ now has __NullableValue__ property which supports *null* v
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=SetToNullValue}} 
 
 ````C#
-            this.radDateTimePicker1.NullableValue = null;
-            this.radDateTimePicker1.SetToNullValue();
+this.radDateTimePicker1.NullableValue = null;
+this.radDateTimePicker1.SetToNullValue();
+
 ````
 ````VB.NET
-        Me.RadDateTimePicker1.NullableValue = Nothing
-        Me.RadDateTimePicker1.DateTimePickerElement.SetToNullValue()
-        '
+Me.RadDateTimePicker1.NullableValue = Nothing
+Me.RadDateTimePicker1.DateTimePickerElement.SetToNullValue()
+
 ````
 
 {{endregion}} 
@@ -39,11 +40,12 @@ If you set the __NullText__ property, you can conditionally display a text based
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=NullText}} 
 
 ````C#
-            this.radDateTimePicker1.NullText = "No date selected";
+this.radDateTimePicker1.NullText = "No date selected";
+
 ````
 ````VB.NET
-        Me.RadDateTimePicker1.NullText = "No date selected"
-        '
+Me.RadDateTimePicker1.NullText = "No date selected"
+
 ````
 
 {{endregion}} 
@@ -56,11 +58,12 @@ When the__NullDate__ property value is equal to the control value no text will b
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=NullDate}} 
 
 ````C#
-            this.radDateTimePicker1.DateTimePickerElement.NullDate = new DateTime(2000, 01, 01);
+this.radDateTimePicker1.DateTimePickerElement.NullDate = new DateTime(2000, 01, 01);
+
 ````
 ````VB.NET
-        Me.RadDateTimePicker1.DateTimePickerElement.NullDate = New DateTime(2000, 1, 1)
-        '
+Me.RadDateTimePicker1.DateTimePickerElement.NullDate = New DateTime(2000, 1, 1)
+
 ````
 
 {{endregion}} 

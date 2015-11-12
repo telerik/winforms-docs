@@ -20,21 +20,22 @@ To create a __RadDock__ in code, construct a __RadDock__, set properties and add
 {{source=..\SamplesVB\Dock\CreatingRadDock.vb region=creatingDock}} 
 
 ````C#
-            RadDock radDock1 = new RadDock();
-            radDock1.Dock = DockStyle.Fill;
-            this.Controls.Add(radDock1);
-            ToolWindow toolWindow1 = new ToolWindow();
-            toolWindow1.Text = "A ToolWindow";
-            radDock1.DockWindow(toolWindow1, DockPosition.Left);
+RadDock radDock1 = new RadDock();
+radDock1.Dock = DockStyle.Fill;
+this.Controls.Add(radDock1);
+ToolWindow toolWindow1 = new ToolWindow();
+toolWindow1.Text = "A ToolWindow";
+radDock1.DockWindow(toolWindow1, DockPosition.Left);
+
 ````
 ````VB.NET
-        Dim radDock1 As RadDock = New RadDock()
-        radDock1.Dock = DockStyle.Fill
-        Me.Controls.Add(radDock1)
-        Dim toolWindow1 As ToolWindow = New ToolWindow()
-        toolWindow1.Text = "A ToolWindow"
-        radDock1.DockWindow(toolWindow1, DockPosition.Left)
-        '
+Dim radDock1 As RadDock = New RadDock()
+radDock1.Dock = DockStyle.Fill
+Me.Controls.Add(radDock1)
+Dim toolWindow1 As ToolWindow = New ToolWindow()
+toolWindow1.Text = "A ToolWindow"
+radDock1.DockWindow(toolWindow1, DockPosition.Left)
+
 ````
 
 {{endregion}}  

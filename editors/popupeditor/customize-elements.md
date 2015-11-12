@@ -27,13 +27,14 @@ You can access the text box by using the __TextBoxElement__ property.
 {{source=..\SamplesVB\Editors\PopupEditor\PopupEditorCode.vb region=TextBox}} 
 
 ````C#
-            radPopupEditor1.TextBoxElement.Font = new Font("Arial", 12, FontStyle.Regular);
-            radPopupEditor1.TextBoxElement.ForeColor = ColorTranslator.FromHtml("#008de7");
+radPopupEditor1.TextBoxElement.Font = new Font("Arial", 12, FontStyle.Regular);
+radPopupEditor1.TextBoxElement.ForeColor = ColorTranslator.FromHtml("#008de7");
+
 ````
 ````VB.NET
-        radPopupEditor1.TextBoxElement.Font = New Font("Arial", 12, FontStyle.Regular)
-        radPopupEditor1.TextBoxElement.ForeColor = ColorTranslator.FromHtml("#008de7")
-        '
+radPopupEditor1.TextBoxElement.Font = New Font("Arial", 12, FontStyle.Regular)
+radPopupEditor1.TextBoxElement.ForeColor = ColorTranslator.FromHtml("#008de7")
+
 ````
 
 {{endregion}} 
@@ -58,13 +59,14 @@ The arrow button can be accessed via the __ArrowButtonElement__ property.
 {{source=..\SamplesVB\Editors\PopupEditor\PopupEditorCode.vb region=Button}} 
 
 ````C#
-            radPopupEditor1.PopupEditorElement.ArrowButtonElement.Fill.BackColor = ColorTranslator.FromHtml("#009de1");
-            radPopupEditor1.PopupEditorElement.ArrowButtonElement.Fill.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+radPopupEditor1.PopupEditorElement.ArrowButtonElement.Fill.BackColor = ColorTranslator.FromHtml("#009de1");
+radPopupEditor1.PopupEditorElement.ArrowButtonElement.Fill.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+
 ````
 ````VB.NET
-        radPopupEditor1.PopupEditorElement.ArrowButtonElement.Fill.BackColor = ColorTranslator.FromHtml("#009de1")
-        radPopupEditor1.PopupEditorElement.ArrowButtonElement.Fill.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-        '
+radPopupEditor1.PopupEditorElement.ArrowButtonElement.Fill.BackColor = ColorTranslator.FromHtml("#009de1")
+radPopupEditor1.PopupEditorElement.ArrowButtonElement.Fill.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+
 ````
 
 {{endregion}} 
@@ -89,16 +91,17 @@ The popup can be access with the __Popup__ property. This gives you access to al
 {{source=..\SamplesVB\Editors\PopupEditor\PopupEditorCode.vb region=DropDown}} 
 
 ````C#
-        void RadForm1_Load(object sender, EventArgs e)
-        {
-            radPopupEditor1.Popup.BackColor = ColorTranslator.FromHtml("#009de1");
-        }
+void RadForm1_Load(object sender, EventArgs e)
+{
+    radPopupEditor1.Popup.BackColor = ColorTranslator.FromHtml("#009de1");
+}
+
 ````
 ````VB.NET
-    Private Sub RadForm1_Load(ByVal sender As Object, ByVal e As EventArgs)
-        radPopupEditor1.Popup.BackColor = ColorTranslator.FromHtml("#009de1")
-    End Sub
-    '
+Private Sub RadForm1_Load(ByVal sender As Object, ByVal e As EventArgs)
+    radPopupEditor1.Popup.BackColor = ColorTranslator.FromHtml("#009de1")
+End Sub
+
 ````
 
 {{endregion}} 

@@ -26,19 +26,20 @@ To configure your MDI application to use this feature:
 	{{source=..\SamplesVB\Dock\MDIHandling1.vb region=initialization}} 
 
 	````C#
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            this.IsMdiContainer = true;
-            this.radDock1.AutoDetectMdiChildren = true;
-        }
-	````
-	````VB.NET
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.IsMdiContainer = True
-        Me.RadDock1.AutoDetectMdiChildren = True
-    End Sub
-    '
-	````
+private void Form1_Load(object sender, EventArgs e)
+{
+    this.IsMdiContainer = true;
+    this.radDock1.AutoDetectMdiChildren = true;
+}
+
+````
+````VB.NET
+Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Me.IsMdiContainer = True
+    Me.RadDock1.AutoDetectMdiChildren = True
+End Sub
+
+````
 
 	{{endregion}} 
  
@@ -51,23 +52,24 @@ To configure your MDI application to use this feature:
 	{{source=..\SamplesVB\Dock\MDIHandling1.vb region=creatingChildForm}} 
 
 	````C#
-        private void radMenuItem1_Click(object sender, EventArgs e)
-        {
-            Form childForm = new Form();
-            childForm.Text = "MDI Child " + DateTime.Now.ToShortTimeString();
-            childForm.MdiParent = this;
-            childForm.Show();
-        }
-	````
-	````VB.NET
-    Private Sub RadMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadMenuItem1.Click
-        Dim childForm As New Form()
-        childForm.Text = "MDI Child " & DateTime.Now.ToShortTimeString()
-        childForm.MdiParent = Me
-        childForm.Show()
-    End Sub
-    '
-	````
+private void radMenuItem1_Click(object sender, EventArgs e)
+{
+    Form childForm = new Form();
+    childForm.Text = "MDI Child " + DateTime.Now.ToShortTimeString();
+    childForm.MdiParent = this;
+    childForm.Show();
+}
+
+````
+````VB.NET
+Private Sub RadMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadMenuItem1.Click
+    Dim childForm As New Form()
+    childForm.Text = "MDI Child " & DateTime.Now.ToShortTimeString()
+    childForm.MdiParent = Me
+    childForm.Show()
+End Sub
+
+````
 
 	{{endregion}}  
 
@@ -84,11 +86,12 @@ However, you can set the default type to ToolWindow:
 {{source=..\SamplesVB\Dock\MDIHandling1.vb region=mdiChildrenDockType}} 
 
 ````C#
-            this.radDock1.MdiChildrenDockType = DockType.ToolWindow;
+this.radDock1.MdiChildrenDockType = DockType.ToolWindow;
+
 ````
 ````VB.NET
-        Me.RadDock1.MdiChildrenDockType = DockType.ToolWindow
-        '
+Me.RadDock1.MdiChildrenDockType = DockType.ToolWindow
+
 ````
 
 {{endregion}}  
@@ -125,24 +128,21 @@ The __CloseAllWindows__ returns bool value which indicates if the operation is s
 {{source=..\SamplesVB\Dock\MDIHandling1.vb region=closing}} 
 
 ````C#
-        protected override void OnClosing(CancelEventArgs e)
-        {
-            bool canClose = radDock1.CloseAllWindows();
-            e.Cancel = !canClose;
+protected override void OnClosing(CancelEventArgs e)
+{
+    bool canClose = radDock1.CloseAllWindows();
+    e.Cancel = !canClose;
+    base.OnClosing(e);
+}
 
-            base.OnClosing(e);
-
-        }
 ````
 ````VB.NET
-    Protected Overrides Sub OnClosing(ByVal e As CancelEventArgs)
-        Dim canClose As Boolean = RadDock1.CloseAllWindows()
-        e.Cancel = Not canClose
+Protected Overrides Sub OnClosing(ByVal e As CancelEventArgs)
+    Dim canClose As Boolean = RadDock1.CloseAllWindows()
+    e.Cancel = Not canClose
+    MyBase.OnClosing(e)
+End Sub
 
-        MyBase.OnClosing(e)
-
-    End Sub
-    '
 ````
 
 {{endregion}} 

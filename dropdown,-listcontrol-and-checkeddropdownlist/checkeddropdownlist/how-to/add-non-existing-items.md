@@ -22,11 +22,12 @@ For this purpose __RadCheckedDropDownList__ has the __TokenValidating__ event. I
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.vb region=Subscribe}} 
 
 ````C#
-            this.radCheckedDropDownList1.TokenValidating += radCheckedDropDownList1_TokenValidating;
+this.radCheckedDropDownList1.TokenValidating += radCheckedDropDownList1_TokenValidating;
+
 ````
 ````VB.NET
-        AddHandler Me.RadCheckedDropDownList1.TokenValidating, AddressOf radCheckedDropDownList1_TokenValidating
-        '
+AddHandler Me.RadCheckedDropDownList1.TokenValidating, AddressOf radCheckedDropDownList1_TokenValidating
+
 ````
 
 {{endregion}} 
@@ -38,29 +39,31 @@ For this purpose __RadCheckedDropDownList__ has the __TokenValidating__ event. I
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.vb region=Handler}} 
 
 ````C#
-        void radCheckedDropDownList1_TokenValidating(object sender, TokenValidatingEventArgs e)
+void radCheckedDropDownList1_TokenValidating(object sender, TokenValidatingEventArgs e)
+{
+    if (!e.IsValidToken)
+    {
+        AutoCompleteBoxViewElement textBox = sender as AutoCompleteBoxViewElement;
+        if (this.radCheckedDropDownList1.DropDownListElement.FindStringExact(e.Text) == -1)
         {
-            if (!e.IsValidToken)
-            {
-                AutoCompleteBoxViewElement textBox = sender as AutoCompleteBoxViewElement;
-                if (this.radCheckedDropDownList1.DropDownListElement.FindStringExact(e.Text) == -1)
-                {
-                    this.radCheckedDropDownList1.Items.Add(new RadCheckedListDataItem(e.Text, false));
-                    e.IsValidToken = true;
-                }
-            }
+            this.radCheckedDropDownList1.Items.Add(new RadCheckedListDataItem(e.Text, false));
+            e.IsValidToken = true;
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radCheckedDropDownList1_TokenValidating(sender As Object, e As TokenValidatingEventArgs)
-        If Not e.IsValidToken Then
-            Dim textBox As AutoCompleteBoxViewElement = TryCast(sender, AutoCompleteBoxViewElement)
-            If Me.RadCheckedDropDownList1.DropDownListElement.FindStringExact(e.Text) = -1 Then
-                Me.RadCheckedDropDownList1.Items.Add(New RadCheckedListDataItem(e.Text, False))
-                e.IsValidToken = True
-            End If
+Private Sub radCheckedDropDownList1_TokenValidating(sender As Object, e As TokenValidatingEventArgs)
+    If Not e.IsValidToken Then
+        Dim textBox As AutoCompleteBoxViewElement = TryCast(sender, AutoCompleteBoxViewElement)
+        If Me.RadCheckedDropDownList1.DropDownListElement.FindStringExact(e.Text) = -1 Then
+            Me.RadCheckedDropDownList1.Items.Add(New RadCheckedListDataItem(e.Text, False))
+            e.IsValidToken = True
         End If
-    End Sub
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

@@ -34,34 +34,28 @@ You can customize the nested elements at run time as well:
 
 ````C#
             
-            this.radDropDownList1.DropDownListElement.ArrowButton.Fill.BackColor = Color.Aqua;
-            this.radDropDownList1.DropDownListElement.EditableElement.ForeColor = Color.Red;
+this.radDropDownList1.DropDownListElement.ArrowButton.Fill.BackColor = Color.Aqua;
+this.radDropDownList1.DropDownListElement.EditableElement.ForeColor = Color.Red;
+
 ````
 ````VB.NET
+Me.radDropDownList1.DropDownListElement.ArrowButton.Fill.BackColor = Color.Aqua
+Me.radDropDownList1.DropDownListElement.EditableElement.ForeColor = Color.Red
+'#End Region
+'#Region "AddItemsProgrammatically"
+Dim descriptionItem As New DescriptionTextListDataItem()
+descriptionItem.Text = "Chicken wings"
+descriptionItem.Image = My.Resources.chicken_wings
+descriptionItem.DescriptionText = "some description"
+Me.radDropDownList1.Items.Add(descriptionItem)
+Dim dataItem As New RadListDataItem()
+dataItem.Text = "Chicken toast"
+dataItem.Image = My.Resources.chicken_toast
+Me.radDropDownList1.Items.Add(dataItem)
+'#End Region
+'#region autoCNone
+Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.None
 
-        Me.radDropDownList1.DropDownListElement.ArrowButton.Fill.BackColor = Color.Aqua
-        Me.radDropDownList1.DropDownListElement.EditableElement.ForeColor = Color.Red
-
-        '#End Region
-
-        '#Region "AddItemsProgrammatically"
-
-        Dim descriptionItem As New DescriptionTextListDataItem()
-        descriptionItem.Text = "Chicken wings"
-        descriptionItem.Image = My.Resources.chicken_wings
-        descriptionItem.DescriptionText = "some description"
-        Me.radDropDownList1.Items.Add(descriptionItem)
-
-        Dim dataItem As New RadListDataItem()
-        dataItem.Text = "Chicken toast"
-        dataItem.Image = My.Resources.chicken_toast
-        Me.radDropDownList1.Items.Add(dataItem)
-
-        '#End Region
-
-        '#region autoCNone
-        Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.None
-        '
 ````
 
 {{endregion}} 

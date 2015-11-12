@@ -31,11 +31,12 @@ The __SizingMode__ enumeration has the following members:
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=None}} 
 
 ````C#
-            this.radDropDownList1.DropDownSizingMode = SizingMode.None;
+this.radDropDownList1.DropDownSizingMode = SizingMode.None;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.DropDownSizingMode = SizingMode.None
-        '
+Me.radDropDownList1.DropDownSizingMode = SizingMode.None
+
 ````
 
 {{endregion}} 
@@ -52,11 +53,12 @@ The __SizingMode__ enumeration has the following members:
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=RightBottom}} 
 
 ````C#
-            this.radDropDownList1.DropDownSizingMode = SizingMode.RightBottom;
+this.radDropDownList1.DropDownSizingMode = SizingMode.RightBottom;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.DropDownSizingMode = SizingMode.RightBottom
-        '
+Me.radDropDownList1.DropDownSizingMode = SizingMode.RightBottom
+
 ````
 
 {{endregion}} 
@@ -74,11 +76,12 @@ The __SizingMode__ enumeration has the following members:
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=UpDown}} 
 
 ````C#
-            this.radDropDownList1.DropDownSizingMode = SizingMode.UpDown;
+this.radDropDownList1.DropDownSizingMode = SizingMode.UpDown;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.DropDownSizingMode = SizingMode.UpDown
-        '
+Me.radDropDownList1.DropDownSizingMode = SizingMode.UpDown
+
 ````
 
 {{endregion}} 
@@ -96,11 +99,12 @@ The __SizingMode__ enumeration has the following members:
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=UpDownAndRightBottom}} 
 
 ````C#
-            this.radDropDownList1.DropDownSizingMode = SizingMode.UpDownAndRightBottom;
+this.radDropDownList1.DropDownSizingMode = SizingMode.UpDownAndRightBottom;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.DropDownSizingMode = SizingMode.UpDownAndRightBottom
-        '
+Me.radDropDownList1.DropDownSizingMode = SizingMode.UpDownAndRightBottom
+
 ````
 
 {{endregion}} 
@@ -120,11 +124,12 @@ You can specify a fixed height or width of the drop-down by setting the __DropDo
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=DropDownHeight}} 
 
 ````C#
-            this.radDropDownList1.DropDownListElement.DropDownHeight = 400;
+this.radDropDownList1.DropDownListElement.DropDownHeight = 400;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.DropDownListElement.DropDownHeight = 400
-        '
+Me.radDropDownList1.DropDownListElement.DropDownHeight = 400
+
 ````
 
 {{endregion}} 
@@ -139,11 +144,12 @@ You can specify a fixed height or width of the drop-down by setting the __DropDo
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=DropDownWidth}} 
 
 ````C#
-            this.radDropDownList1.DropDownListElement.DropDownWidth = 400;
+this.radDropDownList1.DropDownListElement.DropDownWidth = 400;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.DropDownListElement.DropDownWidth = 400
-        '
+Me.radDropDownList1.DropDownListElement.DropDownWidth = 400
+
 ````
 
 {{endregion}} 
@@ -161,11 +167,12 @@ You can set the __DropDownMinSize__ property in order to specify the exact minim
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=DropDownMinSize}} 
 
 ````C#
-            this.radDropDownList1.DropDownMinSize = new Size(400, 400);
+this.radDropDownList1.DropDownMinSize = new Size(400, 400);
+
 ````
 ````VB.NET
-        Me.radDropDownList1.DropDownMinSize = New Size(400, 400)
-        '
+Me.radDropDownList1.DropDownMinSize = New Size(400, 400)
+
 ````
 
 {{endregion}} 
@@ -185,11 +192,12 @@ By default, __RadDropDownList__ displays 6 items in the pop-up. In case you need
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=DefaultItemsCountInDropDown}} 
 
 ````C#
-            this.radDropDownList1.DropDownListElement.DefaultItemsCountInDropDown = 3;
+this.radDropDownList1.DropDownListElement.DefaultItemsCountInDropDown = 3;
+
 ````
 ````VB.NET
-        Me.radDropDownList1.DropDownListElement.DefaultItemsCountInDropDown = 3
-        '
+Me.radDropDownList1.DropDownListElement.DefaultItemsCountInDropDown = 3
+
 ````
 
 {{endregion}} 

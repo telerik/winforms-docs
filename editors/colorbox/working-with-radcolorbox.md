@@ -40,16 +40,17 @@ __ValueChanging__: This event fires before the value is changed and allows you t
 {{source=..\SamplesVB\Editors\ColorBox1.vb region=colorBoxValueChanging}} 
 
 ````C#
-        private void radColorBox1_ValueChanging(object sender, Telerik.WinControls.UI.ValueChangingEventArgs e)
-        {
-            e.Cancel = !((Color)e.NewValue).IsNamedColor;
-        }
+private void radColorBox1_ValueChanging(object sender, Telerik.WinControls.UI.ValueChangingEventArgs e)
+{
+    e.Cancel = !((Color)e.NewValue).IsNamedColor;
+}
+
 ````
 ````VB.NET
-    Private Sub RadColorBox1_ValueChanging(sender As Object, e As Telerik.WinControls.UI.ValueChangingEventArgs)
-        e.Cancel = Not DirectCast(e.NewValue, System.Drawing.Color).IsNamedColor
-    End Sub
-    '
+Private Sub RadColorBox1_ValueChanging(sender As Object, e As Telerik.WinControls.UI.ValueChangingEventArgs)
+    e.Cancel = Not DirectCast(e.NewValue, System.Drawing.Color).IsNamedColor
+End Sub
+
 ````
 
 {{endregion}} 

@@ -29,16 +29,17 @@ The following example demonstrates how to change the image of a __RadButton__ us
 {{source=..\SamplesVB\Editors\BrowseEditor1.vb region=browseEditorValueChanged}} 
 
 ````C#
-        private void radBrowseEditor1_ValueChanged(object sender, EventArgs e)
-        {
-            this.radButton1.Image = Image.FromFile(this.radBrowseEditor1.Value);
-        }
+private void radBrowseEditor1_ValueChanged(object sender, EventArgs e)
+{
+    this.radButton1.Image = Image.FromFile(this.radBrowseEditor1.Value);
+}
+
 ````
 ````VB.NET
-    Private Sub RadBrowseEditor1_ValueChanged(sender As Object, e As EventArgs)
-        Me.RadButton1.Image = System.Drawing.Image.FromFile(Me.RadBrowseEditor1.Value)
-    End Sub
-    '
+Private Sub RadBrowseEditor1_ValueChanged(sender As Object, e As EventArgs)
+    Me.RadButton1.Image = System.Drawing.Image.FromFile(Me.RadBrowseEditor1.Value)
+End Sub
+
 ````
 
 {{endregion}} 

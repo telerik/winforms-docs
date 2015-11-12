@@ -36,15 +36,16 @@ Let's now analyze how this property works in the context of several popular mask
 
 ````C#
             
-            this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard;
-            this.radMaskedEditBox1.Mask = "(000) 000-0000";
-            this.radMaskedEditBox1.PromptChar = '_';
+this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard;
+this.radMaskedEditBox1.Mask = "(000) 000-0000";
+this.radMaskedEditBox1.PromptChar = '_';
+
 ````
 ````VB.NET
-        Me.RadMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard
-        Me.RadMaskedEditBox1.Mask = "(000) 000-0000"
-        Me.RadMaskedEditBox1.PromptChar = "_"
-        '
+Me.RadMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard
+Me.RadMaskedEditBox1.Mask = "(000) 000-0000"
+Me.RadMaskedEditBox1.PromptChar = "_"
+
 ````
 
 {{endregion}} 
@@ -87,13 +88,14 @@ And here is what the __Value__ property of RadMaskedEditBox will return dependin
 
 ````C#
             
-            this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
-            this.radMaskedEditBox1.Mask = "C2";
+this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
+this.radMaskedEditBox1.Mask = "C2";
+
 ````
 ````VB.NET
-        Me.RadMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Numeric
-        Me.RadMaskedEditBox1.Mask = "C2"
-        '
+Me.RadMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Numeric
+Me.RadMaskedEditBox1.Mask = "C2"
+
 ````
 
 {{endregion}} 

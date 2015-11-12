@@ -32,20 +32,21 @@ __ThousandsSeparator__: This property when true displays a thousands separator.
 {{source=..\SamplesVB\Editors\SpinEditor1.vb region=thousandsSeparator}} 
 
 ````C#
-        void Form1_Load(object sender, EventArgs e)
-        {
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
-            radSpinEditor1.DecimalPlaces = 2;
-            radSpinEditor1.ThousandsSeparator = true;
-        }
+void Form1_Load(object sender, EventArgs e)
+{
+    Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
+    radSpinEditor1.DecimalPlaces = 2;
+    radSpinEditor1.ThousandsSeparator = true;
+}
+
 ````
 ````VB.NET
-    Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Thread.CurrentThread.CurrentCulture = New CultureInfo("de-DE")
-        RadSpinEditor1.DecimalPlaces = 2
-        RadSpinEditor1.ThousandsSeparator = True
-    End Sub
-    '
+Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+    Thread.CurrentThread.CurrentCulture = New CultureInfo("de-DE")
+    RadSpinEditor1.DecimalPlaces = 2
+    RadSpinEditor1.ThousandsSeparator = True
+End Sub
+
 ````
 
 {{endregion}} 
@@ -60,16 +61,17 @@ __ValueChanging__: This event fires before the value has changed and allows you
 {{source=..\SamplesVB\Editors\SpinEditor1.vb region=cancelChanging}} 
 
 ````C#
-        void radSpinEditor1_ValueChanging(object sender, Telerik.WinControls.UI.ValueChangingEventArgs e)
-        {
-            e.Cancel = Convert.ToDecimal(e.NewValue) * 2 > Convert.ToDecimal(e.OldValue);
-        }
+void radSpinEditor1_ValueChanging(object sender, Telerik.WinControls.UI.ValueChangingEventArgs e)
+{
+    e.Cancel = Convert.ToDecimal(e.NewValue) * 2 > Convert.ToDecimal(e.OldValue);
+}
+
 ````
 ````VB.NET
-    Private Sub RadSpinEditor1_ValueChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ValueChangingEventArgs) Handles RadSpinEditor1.ValueChanging
-        e.Cancel = Convert.ToDecimal(e.NewValue) * 2 > Convert.ToDecimal(e.OldValue)
-    End Sub
-    '
+Private Sub RadSpinEditor1_ValueChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ValueChangingEventArgs) Handles RadSpinEditor1.ValueChanging
+    e.Cancel = Convert.ToDecimal(e.NewValue) * 2 > Convert.ToDecimal(e.OldValue)
+End Sub
+
 ````
 
 {{endregion}} 
