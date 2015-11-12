@@ -20,11 +20,15 @@ The property __IsSelected__ determines whether a row is selected. For example, t
 {{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=selectingARow}} 
 
 ````C#
-            rowToSelect.IsSelected = true;
+rowToSelect.IsSelected = true;
+
 ````
 ````VB.NET
-        rowToSelect.IsSelected = True
-        '
+rowToSelect.IsSelected = True
+' #endregion
+'#region unselectAllRows
+Me.RadGridView1.ClearSelection()
+
 ````
 
 {{endregion}} 
@@ -35,11 +39,12 @@ All *currently* selected rows are included in the __SelectedRows__ collection. I
 {{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=unselectAllRows}} 
 
 ````C#
-            radGridView1.ClearSelection();
+radGridView1.ClearSelection();
+
 ````
 ````VB.NET
-        Me.RadGridView1.ClearSelection()
-        '
+Me.RadGridView1.ClearSelection()
+
 ````
 
 {{endregion}} 
@@ -59,11 +64,12 @@ Use the following code snippet to remove the current row:
 {{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=currentRow}} 
 
 ````C#
-            this.radGridView1.CurrentRow = null;
+this.radGridView1.CurrentRow = null;
+
 ````
 ````VB.NET
-        Me.RadGridView1.CurrentRow = Nothing
-        '
+Me.RadGridView1.CurrentRow = Nothing
+
 ````
 
 {{endregion}} 

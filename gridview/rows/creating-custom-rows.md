@@ -23,31 +23,28 @@ Consider the __RadGridView__ is populated with data form Northwind.Products tabl
 {{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=PopulateData}} 
 
 ````C#
-        public static object DataSource;
+public static object DataSource;
+private void CreateCustomNewRow_Load(object sender, EventArgs e)
+{
+    this.productsTableAdapter.Fill(this.nwindDataSet.Products);
+    DataSource = this.nwindDataSet.Products.Take(20);
+ 
+    this.radGridView1.TableElement.ViewInfo.TableAddNewRow.Height = 250;
+    this.radGridView1.DataSource = this.nwindDataSet.Products;
+    this.radGridView1.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+}
 
-        private void CreateCustomNewRow_Load(object sender, EventArgs e)
-        {
-            this.productsTableAdapter.Fill(this.nwindDataSet.Products);
-
-            DataSource = this.nwindDataSet.Products.Take(20);
-         
-            this.radGridView1.TableElement.ViewInfo.TableAddNewRow.Height = 250;
-            this.radGridView1.DataSource = this.nwindDataSet.Products;
-            this.radGridView1.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-        }
 ````
 ````VB.NET
-    Public Shared DataSource As Object
-    Private Sub CreateCustomNewRow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
+Public Shared DataSource As Object
+Private Sub CreateCustomNewRow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
+    DataSource = Me.NwindDataSet.Products.Take(20)
+    Me.RadGridView1.TableElement.ViewInfo.TableAddNewRow.Height = 250
+    Me.RadGridView1.DataSource = Me.NwindDataSet.Products
+    Me.RadGridView1.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill
+End Sub
 
-        DataSource = Me.NwindDataSet.Products.Take(20)
-
-        Me.RadGridView1.TableElement.ViewInfo.TableAddNewRow.Height = 250
-        Me.RadGridView1.DataSource = Me.NwindDataSet.Products
-        Me.RadGridView1.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -69,85 +66,74 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 {{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=RowElement}} 
 
 ````C#
+public class CustomGridRowElement : GridRowElement
+{
+    private GridCellElement cellElement;
+    private RadChartElement radChartElement;
+    
+    public CustomGridRowElement()
+    {
+    }
+        
+    protected override void CreateChildElements()
+    {
+        base.CreateChildElements();
+        this.cellElement = new GridCellElement(null, this);
+        this.cellElement.StretchHorizontally = true;
+        this.cellElement.StretchVertically = true;
+        this.Children.Add(cellElement);
+        
+        this.radChartElement = new RadChartElement();
+        
+        LineSeries series = new LineSeries();
+        
+        this.radChartElement.View.ShowSmartLabels = true;
+        this.radChartElement.ShowLegend = true;
+        this.radChartElement.View.Series.Add(series);
+        this.cellElement.Children.Add(this.radChartElement);
+        this.cellElement.ClipDrawing = true;
+        
+        series.CategoryMember = "CategoryID";
+        series.ValueMember = "UnitPrice";
+        series.DataSource = DataSource;
+    }
+        
+    public override bool IsCompatible(GridViewRowInfo data, object context)
+    {
+        return data is CustomGridViewRowInfo;
+    }
+}
 
-        public class CustomGridRowElement : GridRowElement
-        {
-            private GridCellElement cellElement;
-            private RadChartElement radChartElement;
-            
-            public CustomGridRowElement()
-            {
-            }
-                
-            protected override void CreateChildElements()
-            {
-                base.CreateChildElements();
-                this.cellElement = new GridCellElement(null, this);
-                this.cellElement.StretchHorizontally = true;
-                this.cellElement.StretchVertically = true;
-                this.Children.Add(cellElement);
-                
-                this.radChartElement = new RadChartElement();
-                
-                LineSeries series = new LineSeries();
-                
-                this.radChartElement.View.ShowSmartLabels = true;
-                this.radChartElement.ShowLegend = true;
-                this.radChartElement.View.Series.Add(series);
-
-                this.cellElement.Children.Add(this.radChartElement);
-                this.cellElement.ClipDrawing = true;
-                
-                series.CategoryMember = "CategoryID";
-                series.ValueMember = "UnitPrice";
-                series.DataSource = DataSource;
-            }
-                
-            public override bool IsCompatible(GridViewRowInfo data, object context)
-            {
-                return data is CustomGridViewRowInfo;
-            }
-        }
 ````
 ````VB.NET
+Public Class CustomGridRowElement
+    Inherits GridRowElement
+    Private cellElement As GridCellElement
+    Private radChartElement As RadChartElement
+    Public Sub New()
+    End Sub
+    Protected Overrides Sub CreateChildElements()
+        MyBase.CreateChildElements()
+        Me.cellElement = New GridCellElement(Nothing, Me)
+        Me.cellElement.StretchHorizontally = True
+        Me.cellElement.StretchVertically = True
+        Me.Children.Add(cellElement)
+        Me.radChartElement = New RadChartElement()
+        Dim series As New LineSeries()
+        Me.radChartElement.View.ShowSmartLabels = True
+        Me.radChartElement.ShowLegend = True
+        Me.radChartElement.View.Series.Add(series)
+        Me.cellElement.Children.Add(Me.radChartElement)
+        Me.cellElement.ClipDrawing = True
+        series.CategoryMember = "CategoryID"
+        series.ValueMember = "UnitPrice"
+        series.DataSource = DataSource
+    End Sub
+    Public Overrides Function IsCompatible(data As GridViewRowInfo, context As Object) As Boolean
+        Return TypeOf data Is CustomGridViewRowInfo
+    End Function
+End Class
 
-    Public Class CustomGridRowElement
-        Inherits GridRowElement
-        Private cellElement As GridCellElement
-        Private radChartElement As RadChartElement
-
-        Public Sub New()
-        End Sub
-
-        Protected Overrides Sub CreateChildElements()
-            MyBase.CreateChildElements()
-            Me.cellElement = New GridCellElement(Nothing, Me)
-            Me.cellElement.StretchHorizontally = True
-            Me.cellElement.StretchVertically = True
-            Me.Children.Add(cellElement)
-
-            Me.radChartElement = New RadChartElement()
-
-            Dim series As New LineSeries()
-
-            Me.radChartElement.View.ShowSmartLabels = True
-            Me.radChartElement.ShowLegend = True
-            Me.radChartElement.View.Series.Add(series)
-
-            Me.cellElement.Children.Add(Me.radChartElement)
-            Me.cellElement.ClipDrawing = True
-
-            series.CategoryMember = "CategoryID"
-            series.ValueMember = "UnitPrice"
-            series.DataSource = DataSource
-        End Sub
-
-        Public Overrides Function IsCompatible(data As GridViewRowInfo, context As Object) As Boolean
-            Return TypeOf data Is CustomGridViewRowInfo
-        End Function
-    End Class
-
-    '
 ````
 
 {{endregion}} 
@@ -158,38 +144,36 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 {{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=RowInfo}} 
 
 ````C#
-            
-        public class CustomGridViewRowInfo : GridViewNewRowInfo
+    
+public class CustomGridViewRowInfo : GridViewNewRowInfo
+{
+    public CustomGridViewRowInfo(GridViewInfo viewInfo) : base(viewInfo)
+    {
+    }
+        
+    public override Type RowElementType
+    {
+        get
         {
-            public CustomGridViewRowInfo(GridViewInfo viewInfo) : base(viewInfo)
-            {
-            }
-                
-            public override Type RowElementType
-            {
-                get
-                {
-                    return typeof(CustomGridRowElement);
-                }
-            }
+            return typeof(CustomGridRowElement);
         }
+    }
+}
+
 ````
 ````VB.NET
+Public Class CustomGridViewRowInfo
+    Inherits GridViewNewRowInfo
+    Public Sub New(viewInfo As GridViewInfo)
+        MyBase.New(viewInfo)
+    End Sub
+    Public Overrides ReadOnly Property RowElementType() As Type
+        Get
+            Return GetType(CustomGridRowElement)
+        End Get
+    End Property
+End Class
 
-    Public Class CustomGridViewRowInfo
-        Inherits GridViewNewRowInfo
-        Public Sub New(viewInfo As GridViewInfo)
-            MyBase.New(viewInfo)
-        End Sub
-
-        Public Overrides ReadOnly Property RowElementType() As Type
-            Get
-                Return GetType(CustomGridRowElement)
-            End Get
-        End Property
-    End Class
-
-    '
 ````
 
 {{endregion}} 
@@ -200,24 +184,23 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 {{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=ReplaceRow}} 
 
 ````C#
-                
-        private void radGridView1_CreateRowInfo(object sender, GridViewCreateRowInfoEventArgs e)
-        {
-            if (e.RowInfo is GridViewNewRowInfo)
-            {
-                e.RowInfo = new CustomGridViewRowInfo(e.ViewInfo);
-            }
-        }
+        
+private void radGridView1_CreateRowInfo(object sender, GridViewCreateRowInfoEventArgs e)
+{
+    if (e.RowInfo is GridViewNewRowInfo)
+    {
+        e.RowInfo = new CustomGridViewRowInfo(e.ViewInfo);
+    }
+}
+
 ````
 ````VB.NET
+Private Sub radGridView1_CreateRowInfo(sender As Object, e As GridViewCreateRowInfoEventArgs) Handles RadGridView1.CreateRowInfo
+    If TypeOf e.RowInfo Is GridViewNewRowInfo Then
+        e.RowInfo = New CustomGridViewRowInfo(e.ViewInfo)
+    End If
+End Sub
 
-    Private Sub radGridView1_CreateRowInfo(sender As Object, e As GridViewCreateRowInfoEventArgs) Handles RadGridView1.CreateRowInfo
-        If TypeOf e.RowInfo Is GridViewNewRowInfo Then
-            e.RowInfo = New CustomGridViewRowInfo(e.ViewInfo)
-        End If
-    End Sub
-
-    '
 ````
 
 {{endregion}} 

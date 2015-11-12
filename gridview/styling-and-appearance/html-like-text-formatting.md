@@ -24,23 +24,24 @@ Tags are only parsed if __DisableHTMLRendering__ is set to *false*. If you skip 
 {{source=..\SamplesVB\GridView\StylingAndAppearance\HtmlLikeTextFormatting.vb region=htmlLikeTextFormatting}} 
 
 ````C#
-            DataTable t = new DataTable();
-            t.Columns.Add("A");
-            t.Rows.Add("<html> ID: <color= 0, 0, 255> 1");
-            t.Rows.Add("<html> ID: <color= 0, 255, 0> 2");
-            t.Rows.Add("<html> ID: <color= 255, 0, 0> 3");
-            this.radGridView1.DataSource = t;
-            this.radGridView1.Columns[0].DisableHTMLRendering = false;
+DataTable t = new DataTable();
+t.Columns.Add("A");
+t.Rows.Add("<html> ID: <color= 0, 0, 255> 1");
+t.Rows.Add("<html> ID: <color= 0, 255, 0> 2");
+t.Rows.Add("<html> ID: <color= 255, 0, 0> 3");
+this.radGridView1.DataSource = t;
+this.radGridView1.Columns[0].DisableHTMLRendering = false;
+
 ````
 ````VB.NET
-        Dim t As New DataTable()
-        t.Columns.Add("A")
-        t.Rows.Add("<html> ID: <color= 0, 0, 255> 1")
-        t.Rows.Add("<html> ID: <color= 0, 255, 0> 2")
-        t.Rows.Add("<html> ID: <color= 255, 0, 0> 3")
-        Me.RadGridView1.DataSource = t
-        Me.RadGridView1.Columns(0).DisableHTMLRendering = False
-        '
+Dim t As New DataTable()
+t.Columns.Add("A")
+t.Rows.Add("<html> ID: <color= 0, 0, 255> 1")
+t.Rows.Add("<html> ID: <color= 0, 255, 0> 2")
+t.Rows.Add("<html> ID: <color= 255, 0, 0> 3")
+Me.RadGridView1.DataSource = t
+Me.RadGridView1.Columns(0).DisableHTMLRendering = False
+
 ````
 
 {{endregion}} 

@@ -23,21 +23,22 @@ The code snippet below demonstrates how you can assign a tooltip to a data cell 
 {{source=..\SamplesVB\GridView\Cells\ToolTips1.vb region=CellFormatting}} 
 
 ````C#
-        void radGridView1_CellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
-        {
-            if (e.Row is GridViewDataRowInfo)
-            {
-                e.CellElement.ToolTipText = "Tooltip: " + e.CellElement.Text;
-            }
-        }
+void radGridView1_CellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
+{
+    if (e.Row is GridViewDataRowInfo)
+    {
+        e.CellElement.ToolTipText = "Tooltip: " + e.CellElement.Text;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
-        If TypeOf e.Row Is GridViewDataRowInfo Then
-            e.CellElement.ToolTipText = "Tooltip: " & e.CellElement.Text
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
+    If TypeOf e.Row Is GridViewDataRowInfo Then
+        e.CellElement.ToolTipText = "Tooltip: " & e.CellElement.Text
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -53,25 +54,24 @@ The code snippet below demonstrates how you can use ToolTipTextNeeded event hand
 {{source=..\SamplesVB\GridView\Cells\ToolTips1.vb region=ToolTipTextNeeded}} 
 
 ````C#
-        private void radGridView1_ToolTipTextNeeded(object sender, Telerik.WinControls.ToolTipTextNeededEventArgs e)
-        {
-            GridDataCellElement cell = sender as GridDataCellElement;
+private void radGridView1_ToolTipTextNeeded(object sender, Telerik.WinControls.ToolTipTextNeededEventArgs e)
+{
+    GridDataCellElement cell = sender as GridDataCellElement;
+    if (cell != null && cell.ColumnInfo.Name == "Name")
+    {
+        e.ToolTipText = cell.Value.ToString();
+    }
+}
 
-            if (cell != null && cell.ColumnInfo.Name == "Name")
-            {
-                e.ToolTipText = cell.Value.ToString();
-            }
-        }
 ````
 ````VB.NET
-    Private Sub RadGridView1_ToolTipTextNeeded(sender As Object, e As Telerik.WinControls.ToolTipTextNeededEventArgs) Handles RadGridView1.ToolTipTextNeeded
-        Dim cell As GridDataCellElement = TryCast(sender, GridDataCellElement)
+Private Sub RadGridView1_ToolTipTextNeeded(sender As Object, e As Telerik.WinControls.ToolTipTextNeededEventArgs) Handles RadGridView1.ToolTipTextNeeded
+    Dim cell As GridDataCellElement = TryCast(sender, GridDataCellElement)
+    If cell IsNot Nothing AndAlso cell.ColumnInfo.Name = "Name" Then
+        e.ToolTipText = cell.Value.ToString()
+    End If
+End Sub
 
-        If cell IsNot Nothing AndAlso cell.ColumnInfo.Name = "Name" Then
-            e.ToolTipText = cell.Value.ToString()
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 

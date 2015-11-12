@@ -22,11 +22,12 @@ RadGridView supports data sorting. Set RadGridView.__EnableSorting__ or __GridVi
 {{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=enableSorting}} 
 
 ````C#
-            this.radGridView1.MasterTemplate.EnableSorting = true;
+this.radGridView1.MasterTemplate.EnableSorting = true;
+
 ````
 ````VB.NET
-        Me.RadGridView1.MasterTemplate.EnableSorting = True
-        '
+Me.RadGridView1.MasterTemplate.EnableSorting = True
+
 ````
 
 {{endregion}} 

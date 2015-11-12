@@ -22,11 +22,12 @@ You can change __RadGridView__ visual appearance and behavior by using a view 
 {{source=..\SamplesVB\GridView\ViewDefinitions\Overview.vb region=ViewDefinition}} 
 
 ````C#
-            this.radGridView1.ViewDefinition = myDefinition;
+this.radGridView1.ViewDefinition = myDefinition;
+
 ````
 ````VB.NET
-        Me.RadGridView1.ViewDefinition = myDefinition
-        '
+Me.RadGridView1.ViewDefinition = myDefinition
+
 ````
 
 {{endregion}} 

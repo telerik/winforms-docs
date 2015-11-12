@@ -38,21 +38,22 @@ The __ValueChanged__ event fires when the __Value__ of the control is changed.
 {{source=..\SamplesVB\Gauges\LinearGauge\LinearGuageGettingStarted.vb region=value}} 
 
 ````C#
-        void radLinearGauge2_ValueChanged(object sender, EventArgs e)
-        {
-            if ( radLinearGauge2.Value > radLinearGauge2.RangeEnd - 10)
-            {
-                RadMessageBox.Show("Detected value that is close to the maximum!");
-            }
-        }
+void radLinearGauge2_ValueChanged(object sender, EventArgs e)
+{
+    if ( radLinearGauge2.Value > radLinearGauge2.RangeEnd - 10)
+    {
+        RadMessageBox.Show("Detected value that is close to the maximum!");
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radLinearGauge1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-        If radLinearGauge2.Value > radLinearGauge2.RangeEnd - 10 Then
-            RadMessageBox.Show("Detected value that is close to the maximum!")
-        End If
-    End Sub
-    '
+Private Sub radLinearGauge1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+    If radLinearGauge2.Value > radLinearGauge2.RangeEnd - 10 Then
+        RadMessageBox.Show("Detected value that is close to the maximum!")
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

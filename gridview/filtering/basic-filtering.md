@@ -27,13 +27,14 @@ User filtering in RadGridView is enabled using RadGridView.__EnableFiltering__ o
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=enableFiltering}} 
 
 ````C#
-            this.radGridView1.EnableFiltering = true;
-            this.radGridView1.MasterTemplate.EnableFiltering = true;
+this.radGridView1.EnableFiltering = true;
+this.radGridView1.MasterTemplate.EnableFiltering = true;
+
 ````
 ````VB.NET
-        Me.RadGridView1.EnableFiltering = True
-        Me.RadGridView1.MasterTemplate.EnableFiltering = True
-        '
+Me.RadGridView1.EnableFiltering = True
+Me.RadGridView1.MasterTemplate.EnableFiltering = True
+
 ````
 
 {{endregion}} 

@@ -39,13 +39,14 @@ Here is a snippet which prepares the SerializationMedata for customization:#_[C#
 {{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=preparation}} 
 
 ````C#
-            this.radGridView1.XmlSerializationInfo.DisregardOriginalSerializationVisibility = true;
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Clear();
+this.radGridView1.XmlSerializationInfo.DisregardOriginalSerializationVisibility = true;
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Clear();
+
 ````
 ````VB.NET
-        Me.RadGridView1.XmlSerializationInfo.DisregardOriginalSerializationVisibility = True
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Clear()
-        '
+Me.RadGridView1.XmlSerializationInfo.DisregardOriginalSerializationVisibility = True
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Clear()
+
 ````
 
 {{endregion}} 
@@ -63,11 +64,12 @@ The first property to add for serialization is the MasterGridViewTemplate, which
 {{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=SerializationMetadataRadGridView}} 
 
 ````C#
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(RadGridView),"MasterTemplate",DesignerSerializationVisibilityAttribute.Content);
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(RadGridView),"MasterTemplate",DesignerSerializationVisibilityAttribute.Content);
+
 ````
 ````VB.NET
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(RadGridView), "MasterTemplate", DesignerSerializationVisibilityAttribute.Content)
-        '
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(RadGridView), "MasterTemplate", DesignerSerializationVisibilityAttribute.Content)
+
 ````
 
 {{endregion}} 
@@ -85,13 +87,14 @@ You can use the same approach to add the child templates. Additionally, you may 
 {{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=SerializationMetadataChildTemplates}} 
 
 ````C#
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "Templates", DesignerSerializationVisibilityAttribute.Content);
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "Caption", DesignerSerializationVisibilityAttribute.Visible);
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "Templates", DesignerSerializationVisibilityAttribute.Content);
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "Caption", DesignerSerializationVisibilityAttribute.Visible);
+
 ````
 ````VB.NET
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "Templates", DesignerSerializationVisibilityAttribute.Content)
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "Caption", DesignerSerializationVisibilityAttribute.Visible)
-        '
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "Templates", DesignerSerializationVisibilityAttribute.Content)
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "Caption", DesignerSerializationVisibilityAttribute.Visible)
+
 ````
 
 {{endregion}} 
@@ -109,15 +112,16 @@ Since the Columns property points to a complex object, you should set the Design
 {{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=SerializationMetadataGridViewDataColumn}} 
 
 ````C#
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "Columns", DesignerSerializationVisibilityAttribute.Content);
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewDataColumn), "Name", DesignerSerializationVisibilityAttribute.Visible);
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewDataColumn), "Width", DesignerSerializationVisibilityAttribute.Visible);
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "Columns", DesignerSerializationVisibilityAttribute.Content);
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewDataColumn), "Name", DesignerSerializationVisibilityAttribute.Visible);
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewDataColumn), "Width", DesignerSerializationVisibilityAttribute.Visible);
+
 ````
 ````VB.NET
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "Columns", DesignerSerializationVisibilityAttribute.Content)
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewDataColumn), "Name", DesignerSerializationVisibilityAttribute.Visible)
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewDataColumn), "Width", DesignerSerializationVisibilityAttribute.Visible)
-        '
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "Columns", DesignerSerializationVisibilityAttribute.Content)
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewDataColumn), "Name", DesignerSerializationVisibilityAttribute.Visible)
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewDataColumn), "Width", DesignerSerializationVisibilityAttribute.Visible)
+
 ````
 
 {{endregion}} 
@@ -135,34 +139,35 @@ Further, you may want to save information concerning grouping, sorting, filterin
 {{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=SerializationMetadataOperations}} 
 
 ````C#
-            //Groups Descriptors	            
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "GroupDescriptors", DesignerSerializationVisibilityAttribute.Content);
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GroupDescriptor), "GroupNames", DesignerSerializationVisibilityAttribute.Content);
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(SortDescriptor), "PropertyName", DesignerSerializationVisibilityAttribute.Visible);
-            //Sort Descriptors            
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "SortDescriptors", DesignerSerializationVisibilityAttribute.Content);
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(SortDescriptor), "Direction", DesignerSerializationVisibilityAttribute.Visible);
-            //Filter Descriptors           
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "FilterDescriptors", DesignerSerializationVisibilityAttribute.Content);
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(FilterDescriptor), "PropertyName", DesignerSerializationVisibilityAttribute.Visible);
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(FilterDescriptor), "Operator", DesignerSerializationVisibilityAttribute.Visible);
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(FilterDescriptor), "Value", DesignerSerializationVisibilityAttribute.Visible);
-            this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(FilterDescriptor), "IsFilterEditor", DesignerSerializationVisibilityAttribute.Visible);
+//Groups Descriptors	            
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "GroupDescriptors", DesignerSerializationVisibilityAttribute.Content);
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GroupDescriptor), "GroupNames", DesignerSerializationVisibilityAttribute.Content);
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(SortDescriptor), "PropertyName", DesignerSerializationVisibilityAttribute.Visible);
+//Sort Descriptors            
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "SortDescriptors", DesignerSerializationVisibilityAttribute.Content);
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(SortDescriptor), "Direction", DesignerSerializationVisibilityAttribute.Visible);
+//Filter Descriptors           
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(GridViewTemplate), "FilterDescriptors", DesignerSerializationVisibilityAttribute.Content);
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(FilterDescriptor), "PropertyName", DesignerSerializationVisibilityAttribute.Visible);
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(FilterDescriptor), "Operator", DesignerSerializationVisibilityAttribute.Visible);
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(FilterDescriptor), "Value", DesignerSerializationVisibilityAttribute.Visible);
+this.radGridView1.XmlSerializationInfo.SerializationMetadata.Add(typeof(FilterDescriptor), "IsFilterEditor", DesignerSerializationVisibilityAttribute.Visible);
+
 ````
 ````VB.NET
-        'Groups Descriptors
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "GroupDescriptors", DesignerSerializationVisibilityAttribute.Content)
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GroupDescriptor), "GroupNames", DesignerSerializationVisibilityAttribute.Content)
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(SortDescriptor), "PropertyName", DesignerSerializationVisibilityAttribute.Visible)
-        'Sort Descriptors            
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "SortDescriptors", DesignerSerializationVisibilityAttribute.Content)
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(SortDescriptor), "Direction", DesignerSerializationVisibilityAttribute.Visible)
-        'Filter Descriptors           
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "FilterDescriptors", DesignerSerializationVisibilityAttribute.Content)
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(FilterDescriptor), "PropertyName", DesignerSerializationVisibilityAttribute.Content)
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(FilterDescriptor), "Operator", DesignerSerializationVisibilityAttribute.Content)
-        Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(FilterDescriptor), "Value", DesignerSerializationVisibilityAttribute.Visible)
-        '
+'Groups Descriptors
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "GroupDescriptors", DesignerSerializationVisibilityAttribute.Content)
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GroupDescriptor), "GroupNames", DesignerSerializationVisibilityAttribute.Content)
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(SortDescriptor), "PropertyName", DesignerSerializationVisibilityAttribute.Visible)
+'Sort Descriptors            
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "SortDescriptors", DesignerSerializationVisibilityAttribute.Content)
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(SortDescriptor), "Direction", DesignerSerializationVisibilityAttribute.Visible)
+'Filter Descriptors           
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewTemplate), "FilterDescriptors", DesignerSerializationVisibilityAttribute.Content)
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(FilterDescriptor), "PropertyName", DesignerSerializationVisibilityAttribute.Content)
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(FilterDescriptor), "Operator", DesignerSerializationVisibilityAttribute.Content)
+Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(FilterDescriptor), "Value", DesignerSerializationVisibilityAttribute.Visible)
+
 ````
 
 {{endregion}} 

@@ -26,11 +26,12 @@ Use the __ShowTranslucentSelectionRecatangle__ of the __GridTableElement__ to en
 {{source=..\SamplesVB\GridView\Rows\SelectionRectangle.vb region=selectionRectangle}} 
 
 ````C#
-            ((GridTableElement)this.radGridView1.TableElement).ShowTranslucentSelectionRectangle = false;
+((GridTableElement)this.radGridView1.TableElement).ShowTranslucentSelectionRectangle = false;
+
 ````
 ````VB.NET
-        DirectCast(Me.RadGridView1.TableElement, GridTableElement).ShowTranslucentSelectionRectangle = False
-        '
+DirectCast(Me.RadGridView1.TableElement, GridTableElement).ShowTranslucentSelectionRectangle = False
+
 ````
 
 {{endregion}} 

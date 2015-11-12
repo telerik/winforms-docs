@@ -22,57 +22,52 @@ The example below creates two __GridViewCommandColumns__. The first has __UseDe
 {{source=..\SamplesVB\GridView\Columns\GridViewCommandColumn1.vb region=addCommandColumn}} 
 
 ````C#
-        public GridViewCommandColumn1()
-        {
-            InitializeComponent();
+public GridViewCommandColumn1()
+{
+    InitializeComponent();
+    GridViewCommandColumn commandColumn = new GridViewCommandColumn();
+    commandColumn.Name = "CommandColumn";
+    commandColumn.UseDefaultText = false;
+    commandColumn.FieldName = "ProductName";
+    commandColumn.HeaderText = "Order";
+    radGridView1.MasterTemplate.Columns.Add(commandColumn);
+    GridViewCommandColumn commandColumn2 = new GridViewCommandColumn();
+    commandColumn2.Name = "CommandColumn2";
+    commandColumn2.UseDefaultText = true;
+    commandColumn2.DefaultText = "Order";
+    commandColumn2.FieldName = "ProductName";
+    commandColumn2.HeaderText = "Order";
+    radGridView1.MasterTemplate.Columns.Add(commandColumn2);
+    radGridView1.CommandCellClick += new CommandCellClickEventHandler(radGridView1_CommandCellClick);
+}
+void radGridView1_CommandCellClick(object sender, EventArgs e)
+{
+    MessageBox.Show("You ordered " + ((sender as GridCommandCellElement)).Value);
+}
 
-            GridViewCommandColumn commandColumn = new GridViewCommandColumn();
-            commandColumn.Name = "CommandColumn";
-            commandColumn.UseDefaultText = false;
-            commandColumn.FieldName = "ProductName";
-            commandColumn.HeaderText = "Order";
-            radGridView1.MasterTemplate.Columns.Add(commandColumn);
-
-            GridViewCommandColumn commandColumn2 = new GridViewCommandColumn();
-            commandColumn2.Name = "CommandColumn2";
-            commandColumn2.UseDefaultText = true;
-            commandColumn2.DefaultText = "Order";
-            commandColumn2.FieldName = "ProductName";
-            commandColumn2.HeaderText = "Order";
-            radGridView1.MasterTemplate.Columns.Add(commandColumn2);
-
-            radGridView1.CommandCellClick += new CommandCellClickEventHandler(radGridView1_CommandCellClick);
-        }
-
-        void radGridView1_CommandCellClick(object sender, EventArgs e)
-        {
-            MessageBox.Show("You ordered " + ((sender as GridCommandCellElement)).Value);
-        }
 ````
 ````VB.NET
-    Public Sub New()
-        InitializeComponent()
+Public Sub New()
+    InitializeComponent()
+    Dim commandColumn As New GridViewCommandColumn()
+    commandColumn.Name = "CommandColumn"
+    commandColumn.UseDefaultText = False
+    commandColumn.FieldName = "ProductName"
+    commandColumn.HeaderText = "Order"
+    RadGridView1.MasterTemplate.Columns.Add(commandColumn)
+    Dim commandColumn2 As New GridViewCommandColumn()
+    commandColumn2.Name = "CommandColumn2"
+    commandColumn2.UseDefaultText = True
+    commandColumn2.DefaultText = "Order"
+    commandColumn2.FieldName = "ProductName"
+    commandColumn2.HeaderText = "Order"
+    RadGridView1.MasterTemplate.Columns.Add(commandColumn2)
+    AddHandler RadGridView1.CommandCellClick, AddressOf radGridView1_CommandCellClick
+End Sub
+Sub radGridView1_CommandCellClick(ByVal sender As Object, ByVal e As EventArgs)
+    MessageBox.Show("You ordered " + ((TryCast(sender, GridCommandCellElement))).Value)
+End Sub
 
-        Dim commandColumn As New GridViewCommandColumn()
-        commandColumn.Name = "CommandColumn"
-        commandColumn.UseDefaultText = False
-        commandColumn.FieldName = "ProductName"
-        commandColumn.HeaderText = "Order"
-        RadGridView1.MasterTemplate.Columns.Add(commandColumn)
-        Dim commandColumn2 As New GridViewCommandColumn()
-        commandColumn2.Name = "CommandColumn2"
-        commandColumn2.UseDefaultText = True
-        commandColumn2.DefaultText = "Order"
-        commandColumn2.FieldName = "ProductName"
-        commandColumn2.HeaderText = "Order"
-        RadGridView1.MasterTemplate.Columns.Add(commandColumn2)
-        AddHandler RadGridView1.CommandCellClick, AddressOf radGridView1_CommandCellClick
-    End Sub
-
-    Sub radGridView1_CommandCellClick(ByVal sender As Object, ByVal e As EventArgs)
-        MessageBox.Show("You ordered " + ((TryCast(sender, GridCommandCellElement))).Value)
-    End Sub
-    '
 ````
 
 {{endregion}} 

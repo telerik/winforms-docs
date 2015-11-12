@@ -38,11 +38,12 @@ Before running export to HTML, you have to initialize the ExportToHTML class. Th
 {{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=exportToHtmlInitialization}} 
 
 ````C#
-            ExportToHTML exporter = new ExportToHTML(this.radGridView1);
+ExportToHTML exporter = new ExportToHTML(this.radGridView1);
+
 ````
 ````VB.NET
-        Dim exporter As ExportToHTML = New ExportToHTML(Me.RadGridView1)
-        '
+Dim exporter As ExportToHTML = New ExportToHTML(Me.RadGridView1)
+
 ````
 
 {{endregion}} 
@@ -55,11 +56,12 @@ __File extension__  This property allows for changing the default (*.htm) file e
 {{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingTheFileExtention}} 
 
 ````C#
-            exporter.FileExtension = "";
+exporter.FileExtension = "";
+
 ````
 ````VB.NET
-        exporter.FileExtension = ""
-        '
+exporter.FileExtension = ""
+
 ````
 
 {{endregion}} 
@@ -82,11 +84,12 @@ Please note that some browsers do not support hidden columns and if you open exp
 {{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingTheHiddenColumnOption}} 
 
 ````C#
-            exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;
+exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;
+
 ````
 ````VB.NET
-        exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
-        '
+exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
+
 ````
 
 {{endregion}} 
@@ -99,11 +102,12 @@ __Columns Width options__ There are three options for the column widths. First o
 {{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingFixedColumnsWidth}} 
 
 ````C#
-            exporter.FitWidthSize = 1000;
+exporter.FitWidthSize = 1000;
+
 ````
 ````VB.NET
-        exporter.FitWidthSize = 1000
-        '
+exporter.FitWidthSize = 1000
+
 ````
 
 {{endregion}} 
@@ -116,11 +120,12 @@ The third option is to set the column widths to be auto calculated depending on 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingAutoSizeColumns}} 
 
 ````C#
-            exporter.AutoSizeColumns = true;
+exporter.AutoSizeColumns = true;
+
 ````
 ````VB.NET
-        exporter.AutoSizeColumns = True
-        '
+exporter.AutoSizeColumns = True
+
 ````
 
 {{endregion}} 
@@ -145,11 +150,12 @@ __Exporting Visual Settings__ Using the ExportToHTML class allows you to export 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingExportVisualSettings}} 
 
 ````C#
-            exporter.ExportVisualSettings = true;
+exporter.ExportVisualSettings = true;
+
 ````
 ````VB.NET
-        exporter.ExportVisualSettings = True
-        '
+exporter.ExportVisualSettings = True
+
 ````
 
 {{endregion}} 
@@ -162,11 +168,12 @@ __HTML Table Caption__   You can specify the table caption through __TableCaptio
 {{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingTheSheetName}} 
 
 ````C#
-            exporter.TableCaption = "Table";
+exporter.TableCaption = "Table";
+
 ````
 ````VB.NET
-        exporter.TableCaption = "Table"
-        '
+exporter.TableCaption = "Table"
+
 ````
 
 {{endregion}} 
@@ -187,11 +194,12 @@ __Summaries export option__ You can use __SummariesExportOption__ property to sp
 {{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=settingSummariesExportOptions}} 
 
 ````C#
-            exporter.SummariesExportOption = SummariesOption.DoNotExport;
+exporter.SummariesExportOption = SummariesOption.DoNotExport;
+
 ````
 ````VB.NET
-        exporter.SummariesExportOption = SummariesOption.DoNotExport
-        '
+exporter.SummariesExportOption = SummariesOption.DoNotExport
+
 ````
 
 {{endregion}} 
@@ -210,13 +218,14 @@ Consider the code sample below:
 {{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=exportToHtmlFormat}} 
 
 ````C#
-            string fileName = "c:\\ExportedData.htm";
-            exporter.RunExport(fileName);
+string fileName = "c:\\ExportedData.htm";
+exporter.RunExport(fileName);
+
 ````
 ````VB.NET
-        Dim fileName As String = "c:\\ExportedData.htm"
-        exporter.RunExport(fileName)
-        '
+Dim fileName As String = "c:\\ExportedData.htm"
+exporter.RunExport(fileName)
+
 ````
 
 {{endregion}} 
@@ -231,23 +240,24 @@ __HTMLCellFormating event__ It gives access to a single cell’s html element th
 {{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=handlingHtmlCellFormattingEvent}} 
 
 ````C#
-        void exporter_HTMLCellFormatting(object sender, Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs e)
-        {
-            if (e.GridColumnIndex == 1 && e.GridRowInfoType == typeof(GridViewDataRowInfo))
-            {
-                e.HTMLCellElement.Value = "Test value";
-                e.HTMLCellElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Orange));
-            }
-        }
+void exporter_HTMLCellFormatting(object sender, Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs e)
+{
+    if (e.GridColumnIndex == 1 && e.GridRowInfoType == typeof(GridViewDataRowInfo))
+    {
+        e.HTMLCellElement.Value = "Test value";
+        e.HTMLCellElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Orange));
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub exporter_HTMLCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs)
-        If e.GridColumnIndex = 1 AndAlso e.GridRowInfoType.Equals(GetType(GridViewDataRowInfo)) Then
-            e.HTMLCellElement.Value = "Test value"
-            e.HTMLCellElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Orange))
-        End If
-    End Sub
-    '
+Private Sub exporter_HTMLCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs)
+    If e.GridColumnIndex = 1 AndAlso e.GridRowInfoType.Equals(GetType(GridViewDataRowInfo)) Then
+        e.HTMLCellElement.Value = "Test value"
+        e.HTMLCellElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Orange))
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -260,24 +270,25 @@ __HTMLTableCaptionFormatting event__ HTMLTableCaptionFormatting event can be use
 {{source=..\SamplesVB\GridView\ExportingData\ExportToHTML1.vb region=handlingHtmlTableCaptionFormattingEvent}} 
 
 ````C#
-        void exporter_HTMLTableCaptionFormatting(object sender, Telerik.WinControls.UI.Export.HTML.HTMLTableCaptionFormattingEventArgs e)
-        {
-            e.TableCaptionElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Red));
-            e.TableCaptionElement.Styles.Add("font-size", "200%");
-            e.TableCaptionElement.Styles.Add("color", ColorTranslator.ToHtml(Color.White));
-            e.TableCaptionElement.Styles.Add("font-weight", "bold");
-            e.CaptionText = "My Table Caption";
-        }
+void exporter_HTMLTableCaptionFormatting(object sender, Telerik.WinControls.UI.Export.HTML.HTMLTableCaptionFormattingEventArgs e)
+{
+    e.TableCaptionElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Red));
+    e.TableCaptionElement.Styles.Add("font-size", "200%");
+    e.TableCaptionElement.Styles.Add("color", ColorTranslator.ToHtml(Color.White));
+    e.TableCaptionElement.Styles.Add("font-weight", "bold");
+    e.CaptionText = "My Table Caption";
+}
+
 ````
 ````VB.NET
-    Private Sub exporter_HTMLTableCaptionFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.HTML.HTMLTableCaptionFormattingEventArgs)
-        e.TableCaptionElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Red))
-        e.TableCaptionElement.Styles.Add("font-size", "200%")
-        e.TableCaptionElement.Styles.Add("color", ColorTranslator.ToHtml(Color.White))
-        e.TableCaptionElement.Styles.Add("font-weight", "bold")
-        e.CaptionText = "My Table Caption"
-    End Sub
-    '
+Private Sub exporter_HTMLTableCaptionFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.HTML.HTMLTableCaptionFormattingEventArgs)
+    e.TableCaptionElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Red))
+    e.TableCaptionElement.Styles.Add("font-size", "200%")
+    e.TableCaptionElement.Styles.Add("color", ColorTranslator.ToHtml(Color.White))
+    e.TableCaptionElement.Styles.Add("font-weight", "bold")
+    e.CaptionText = "My Table Caption"
+End Sub
+
 ````
 
 {{endregion}} 

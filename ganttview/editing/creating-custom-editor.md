@@ -27,65 +27,60 @@ RadGanttView allows you to replace the standard editors with a custom editors. T
 {{source=..\SamplesVB\GanttView\Editing\CustomEditor.vb region=CustomTrackBarEditor}} 
 
 ````C#
-    public class GanttViewTrackBarEditor : BaseInputEditor
+public class GanttViewTrackBarEditor : BaseInputEditor
+{
+    public override object Value
     {
-        public override object Value
+        get
         {
-            get
+            RadTrackBarElement editor = (RadTrackBarElement)this.EditorElement;
+            return editor.Value;
+        }
+        set
+        {
+            RadTrackBarElement editor = (RadTrackBarElement)this.EditorElement;
+            if (value != null && value != DBNull.Value)
             {
-                RadTrackBarElement editor = (RadTrackBarElement)this.EditorElement;
-                return editor.Value;
+                editor.Value = Convert.ToInt32(value);
             }
-            set
+            else
             {
-                RadTrackBarElement editor = (RadTrackBarElement)this.EditorElement;
-                if (value != null && value != DBNull.Value)
-                {
-                    editor.Value = Convert.ToInt32(value);
-                }
-                else
-                {
-                    editor.Value = 0;
-                }
+                editor.Value = 0;
             }
-        }
-
-        public override void BeginEdit()
-        {
-            base.BeginEdit();
-
-            this.EditorElement.Focus();
-            ((RadTrackBarElement)this.EditorElement).ValueChanged += new EventHandler(TrackBarEditor_ValueChanged);
-        }
-
-        void TrackBarEditor_ValueChanged(object sender, EventArgs e)
-        {
-            this.OnValueChanged();
-        }
-
-        public override bool EndEdit()
-        {
-            ((RadTrackBarElement)this.EditorElement).ValueChanged -= TrackBarEditor_ValueChanged;
-            return base.EndEdit();
-        }
-
-        protected override RadElement CreateEditorElement()
-        {
-            RadTrackBarElement element = new RadTrackBarElement();
-            element.Minimum = 0;
-            element.Maximum = 100;
-            element.TickStyle = Telerik.WinControls.Enumerations.TickStyles.Both;
-            element.SmallTickFrequency = 10;
-            element.LargeTickFrequency = 0;
-            element.BodyElement.ScaleContainerElement.TrackBarLineElement.Margin = new Padding(0, 3, 0, 3);
-            return element;
-        }
-
-        public override Type DataType
-        {
-            get { return typeof(int); }
         }
     }
+    public override void BeginEdit()
+    {
+        base.BeginEdit();
+        this.EditorElement.Focus();
+        ((RadTrackBarElement)this.EditorElement).ValueChanged += new EventHandler(TrackBarEditor_ValueChanged);
+    }
+    void TrackBarEditor_ValueChanged(object sender, EventArgs e)
+    {
+        this.OnValueChanged();
+    }
+    public override bool EndEdit()
+    {
+        ((RadTrackBarElement)this.EditorElement).ValueChanged -= TrackBarEditor_ValueChanged;
+        return base.EndEdit();
+    }
+    protected override RadElement CreateEditorElement()
+    {
+        RadTrackBarElement element = new RadTrackBarElement();
+        element.Minimum = 0;
+        element.Maximum = 100;
+        element.TickStyle = Telerik.WinControls.Enumerations.TickStyles.Both;
+        element.SmallTickFrequency = 10;
+        element.LargeTickFrequency = 0;
+        element.BodyElement.ScaleContainerElement.TrackBarLineElement.Margin = new Padding(0, 3, 0, 3);
+        return element;
+    }
+    public override Type DataType
+    {
+        get { return typeof(int); }
+    }
+}
+
 ````
 ````VB.NET
 Public Class GanttViewTrackBarEditor
@@ -104,23 +99,18 @@ Public Class GanttViewTrackBarEditor
             End If
         End Set
     End Property
-
     Public Overrides Sub BeginEdit()
         MyBase.BeginEdit()
-
         Me.EditorElement.Focus()
         AddHandler DirectCast(Me.EditorElement, RadTrackBarElement).ValueChanged, AddressOf TrackBarEditor_ValueChanged
     End Sub
-
     Private Sub TrackBarEditor_ValueChanged(sender As Object, e As EventArgs)
         Me.OnValueChanged()
     End Sub
-
     Public Overrides Function EndEdit() As Boolean
         RemoveHandler DirectCast(Me.EditorElement, RadTrackBarElement).ValueChanged, AddressOf TrackBarEditor_ValueChanged
         Return MyBase.EndEdit()
     End Function
-
     Protected Overrides Function CreateEditorElement() As RadElement
         Dim element As New RadTrackBarElement()
         element.Minimum = 0
@@ -131,14 +121,13 @@ Public Class GanttViewTrackBarEditor
         element.BodyElement.ScaleContainerElement.TrackBarLineElement.Margin = New Padding(0, 3, 0, 3)
         Return element
     End Function
-
     Public Overrides ReadOnly Property DataType() As Type
         Get
             Return GetType(Integer)
         End Get
     End Property
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -157,21 +146,22 @@ In the __EditorRequired__ event we replace the default editor:
 {{source=..\SamplesVB\GanttView\Editing\CustomEditor.vb region=CustomEditorReplace}} 
 
 ````C#
-        private void GanttViewElement_EditorRequired(object sender, GanttViewEditorRequiredEventArgs e)
-        {
-            if (e.EditorType == typeof(BaseSpinEditor))
-            {
-                e.EditorType = typeof(GanttViewTrackBarEditor);
-            }
-        }
+private void GanttViewElement_EditorRequired(object sender, GanttViewEditorRequiredEventArgs e)
+{
+    if (e.EditorType == typeof(BaseSpinEditor))
+    {
+        e.EditorType = typeof(GanttViewTrackBarEditor);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub GanttViewElement_EditorRequired(sender As Object, e As GanttViewEditorRequiredEventArgs)
-        If (e.EditorType = GetType(BaseSpinEditor)) Then
-            e.EditorType = GetType(GanttViewTrackBarEditor)
-        End If
-    End Sub
-    '
+Private Sub GanttViewElement_EditorRequired(sender As Object, e As GanttViewEditorRequiredEventArgs)
+    If (e.EditorType = GetType(BaseSpinEditor)) Then
+        e.EditorType = GetType(GanttViewTrackBarEditor)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

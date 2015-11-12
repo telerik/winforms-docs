@@ -23,11 +23,12 @@ __RadGridView.Rows.AddNew()__ adds an empty row and allows the user to enter a v
 {{source=..\SamplesVB\GridView\Rows\AddingAndInsertingRows.vb region=addNewRow}} 
 
 ````C#
-            radGridView1.Rows.AddNew();
+radGridView1.Rows.AddNew();
+
 ````
 ````VB.NET
-        RadGridView1.Rows.AddNew()
-        '
+RadGridView1.Rows.AddNew()
+
 ````
 
 {{endregion}} 
@@ -41,11 +42,12 @@ __RadGridView.Rows.Add(value-for-first-column, value-for-second-column, value-fo
 {{source=..\SamplesVB\GridView\Rows\AddingAndInsertingRows.vb region=addRow}} 
 
 ````C#
-            radGridView1.Rows.Add("Adding New Row", 12.5, DateTime.Now, true);
+radGridView1.Rows.Add("Adding New Row", 12.5, DateTime.Now, true);
+
 ````
 ````VB.NET
-        RadGridView1.Rows.Add("Adding New Row", 12.5, DateTime.Now, True)
-        '
+RadGridView1.Rows.Add("Adding New Row", 12.5, DateTime.Now, True)
+
 ````
 
 {{endregion}} 
@@ -59,21 +61,22 @@ You can also add rows by creating an instance of __GridViewDataRowInfo__ and add
 {{source=..\SamplesVB\GridView\Rows\AddingAndInsertingRows.vb region=addRowWithRowInfo}} 
 
 ````C#
-            GridViewDataRowInfo rowInfo = new GridViewDataRowInfo(this.radGridView1.MasterView);
-            rowInfo.Cells[0].Value = "GridViewDataRowInfo";
-            rowInfo.Cells[1].Value = 11.4;
-            rowInfo.Cells[2].Value = DateTime.Now.AddDays(5);
-            rowInfo.Cells[3].Value = true;
-            radGridView1.Rows.Add(rowInfo);
+GridViewDataRowInfo rowInfo = new GridViewDataRowInfo(this.radGridView1.MasterView);
+rowInfo.Cells[0].Value = "GridViewDataRowInfo";
+rowInfo.Cells[1].Value = 11.4;
+rowInfo.Cells[2].Value = DateTime.Now.AddDays(5);
+rowInfo.Cells[3].Value = true;
+radGridView1.Rows.Add(rowInfo);
+
 ````
 ````VB.NET
-        Dim rowInfo As New GridViewDataRowInfo(Me.RadGridView1.MasterView)
-        rowInfo.Cells(0).Value = "GridViewDataRowInfo"
-        rowInfo.Cells(1).Value = 11.4
-        rowInfo.Cells(2).Value = DateTime.Now.AddDays(5)
-        rowInfo.Cells(3).Value = True
-        RadGridView1.Rows.Add(rowInfo)
-        '
+Dim rowInfo As New GridViewDataRowInfo(Me.RadGridView1.MasterView)
+rowInfo.Cells(0).Value = "GridViewDataRowInfo"
+rowInfo.Cells(1).Value = 11.4
+rowInfo.Cells(2).Value = DateTime.Now.AddDays(5)
+rowInfo.Cells(3).Value = True
+RadGridView1.Rows.Add(rowInfo)
+
 ````
 
 {{endregion}} 
@@ -89,19 +92,20 @@ Rows can be inserted at a specified position by using the __Insert__ method of t
 {{source=..\SamplesVB\GridView\Rows\AddingAndInsertingRows.vb region=insertRow}} 
 
 ````C#
-            GridViewDataRowInfo dataRowInfo = new GridViewDataRowInfo(this.radGridView1.MasterView);
-            dataRowInfo.Cells[0].Value = "Inserted Row";
-            dataRowInfo.Cells[1].Value = 1156.54;
-            dataRowInfo.Cells[2].Value = DateTime.Now.AddDays(14);
-            radGridView1.Rows.Insert(2, dataRowInfo);
+GridViewDataRowInfo dataRowInfo = new GridViewDataRowInfo(this.radGridView1.MasterView);
+dataRowInfo.Cells[0].Value = "Inserted Row";
+dataRowInfo.Cells[1].Value = 1156.54;
+dataRowInfo.Cells[2].Value = DateTime.Now.AddDays(14);
+radGridView1.Rows.Insert(2, dataRowInfo);
+
 ````
 ````VB.NET
-        Dim dataRowInfo As New GridViewDataRowInfo(Me.RadGridView1.MasterView)
-        rowInfo.Cells(0).Value = "Inserted Row"
-        rowInfo.Cells(1).Value = 1154.54
-        rowInfo.Cells(2).Value = DateTime.Now.AddDays(14)
-        RadGridView1.Rows.Insert(2, dataRowInfo)
-        '
+Dim dataRowInfo As New GridViewDataRowInfo(Me.RadGridView1.MasterView)
+rowInfo.Cells(0).Value = "Inserted Row"
+rowInfo.Cells(1).Value = 1154.54
+rowInfo.Cells(2).Value = DateTime.Now.AddDays(14)
+RadGridView1.Rows.Insert(2, dataRowInfo)
+
 ````
 
 {{endregion}} 

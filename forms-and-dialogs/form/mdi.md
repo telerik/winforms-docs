@@ -28,47 +28,45 @@ The following code snippet adds three __RadForm__instances to a MDI container an
 {{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=addingMDIChildFormsToAForm}} 
 
 ````C#
-            this.IsMdiContainer = true;
-             
-            RadForm form = new RadForm();
-            form.Text = "MDI Child 1";
-            form.MdiParent = this;
-            form.ThemeName = "Desert";
-            form.Show();
-             
-            form = new RadForm();
-            form.Text = "MDI Child 2";
-            form.MdiParent = this;
-            form.ThemeName = "Office2007Black";
-            form.Show();
-             
-            form = new RadForm();
-            form.Text = "MDI Child 3";
-            form.MdiParent = this;
-            form.ThemeName = "TelerikMetro";
-            form.Show();
+this.IsMdiContainer = true;
+ 
+RadForm form = new RadForm();
+form.Text = "MDI Child 1";
+form.MdiParent = this;
+form.ThemeName = "Desert";
+form.Show();
+ 
+form = new RadForm();
+form.Text = "MDI Child 2";
+form.MdiParent = this;
+form.ThemeName = "Office2007Black";
+form.Show();
+ 
+form = new RadForm();
+form.Text = "MDI Child 3";
+form.MdiParent = this;
+form.ThemeName = "TelerikMetro";
+form.Show();
+
 ````
 ````VB.NET
-        Me.IsMdiContainer = True
+Me.IsMdiContainer = True
+Dim form As New RadForm()
+form.Text = "MDI Child 1"
+form.MdiParent = Me
+form.ThemeName = "Desert"
+form.Show()
+form = New RadForm()
+form.Text = "MDI Child 2"
+form.MdiParent = Me
+form.ThemeName = "Office2007Black"
+form.Show()
+form = New RadForm()
+form.Text = "MDI Child 3"
+form.MdiParent = Me
+form.ThemeName = "TelerikMetro"
+form.Show()
 
-        Dim form As New RadForm()
-        form.Text = "MDI Child 1"
-        form.MdiParent = Me
-        form.ThemeName = "Desert"
-        form.Show()
-
-        form = New RadForm()
-        form.Text = "MDI Child 2"
-        form.MdiParent = Me
-        form.ThemeName = "Office2007Black"
-        form.Show()
-
-        form = New RadForm()
-        form.Text = "MDI Child 3"
-        form.MdiParent = Me
-        form.ThemeName = "TelerikMetro"
-        form.Show()
-        '
 ````
 
 {{endregion}} 

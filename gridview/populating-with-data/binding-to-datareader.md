@@ -20,19 +20,20 @@ To extract values from a data source using a __DataReader,__ use the GridViewTem
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToDataReader.vb region=usingADataReader}} 
 
 ````C#
-            OleDbConnection conn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\DataSources\\Nwind.mdb");
-            conn.Open();
-            OleDbCommand cmd = new OleDbCommand("Select TOP 5 * FROM Customers", conn);
-            OleDbDataReader reader = cmd.ExecuteReader();
-            radGridView1.MasterTemplate.LoadFrom(reader);
+OleDbConnection conn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\DataSources\\Nwind.mdb");
+conn.Open();
+OleDbCommand cmd = new OleDbCommand("Select TOP 5 * FROM Customers", conn);
+OleDbDataReader reader = cmd.ExecuteReader();
+radGridView1.MasterTemplate.LoadFrom(reader);
+
 ````
 ````VB.NET
-        Dim conn As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\DataSources\\Nwind.mdb")
-        conn.Open()
-        Dim cmd As New OleDbCommand("Select TOP 5 * FROM Customers", conn)
-        Dim reader As OleDbDataReader = cmd.ExecuteReader()
-        RadGridView1.MasterTemplate.LoadFrom(reader)
-        '
+Dim conn As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\DataSources\\Nwind.mdb")
+conn.Open()
+Dim cmd As New OleDbCommand("Select TOP 5 * FROM Customers", conn)
+Dim reader As OleDbDataReader = cmd.ExecuteReader()
+RadGridView1.MasterTemplate.LoadFrom(reader)
+
 ````
 
 {{endregion}} 

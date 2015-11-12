@@ -34,25 +34,26 @@ These features are not tightly coupled with the column declarations of the gr
 {{source=..\SamplesVB\GridView\PopulatingWithData\TipsWhenBindingToCustomCollections.vb region=addingColumnsToTheColumnsCollection}} 
 
 ````C#
-            radGridView1.MasterTemplate.AutoGenerateColumns = false;
-            radGridView1.MasterTemplate.Columns.Add(new GridViewTextBoxColumn("Name"));
-            radGridView1.MasterTemplate.Columns.Add(new GridViewTextBoxColumn("Attributes"));
-            radGridView1.MasterTemplate.Columns.Add(new GridViewTextBoxColumn("LastAccessTime"));
-            radGridView1.MasterTemplate.Columns.Add(new GridViewTextBoxColumn("CreationTime"));
-            DirectoryInfo directory = new DirectoryInfo("C:\\");
-            FileSystemInfo[] filesInDirectory = directory.GetFileSystemInfos();
-            radGridView1.DataSource = filesInDirectory;
+radGridView1.MasterTemplate.AutoGenerateColumns = false;
+radGridView1.MasterTemplate.Columns.Add(new GridViewTextBoxColumn("Name"));
+radGridView1.MasterTemplate.Columns.Add(new GridViewTextBoxColumn("Attributes"));
+radGridView1.MasterTemplate.Columns.Add(new GridViewTextBoxColumn("LastAccessTime"));
+radGridView1.MasterTemplate.Columns.Add(new GridViewTextBoxColumn("CreationTime"));
+DirectoryInfo directory = new DirectoryInfo("C:\\");
+FileSystemInfo[] filesInDirectory = directory.GetFileSystemInfos();
+radGridView1.DataSource = filesInDirectory;
+
 ````
 ````VB.NET
-        RadGridView1.MasterTemplate.AutoGenerateColumns = False
-        RadGridView1.MasterTemplate.Columns.Add(New GridViewTextBoxColumn("Name"))
-        RadGridView1.MasterTemplate.Columns.Add(New GridViewTextBoxColumn("Attributes"))
-        RadGridView1.MasterTemplate.Columns.Add(New GridViewTextBoxColumn("LastAccessTime"))
-        RadGridView1.MasterTemplate.Columns.Add(New GridViewTextBoxColumn("CreationTime"))
-        Dim directory As New DirectoryInfo("C:\")
-        Dim filesInDirectory As FileSystemInfo() = directory.GetFileSystemInfos()
-        RadGridView1.DataSource = filesInDirectory
-        '
+RadGridView1.MasterTemplate.AutoGenerateColumns = False
+RadGridView1.MasterTemplate.Columns.Add(New GridViewTextBoxColumn("Name"))
+RadGridView1.MasterTemplate.Columns.Add(New GridViewTextBoxColumn("Attributes"))
+RadGridView1.MasterTemplate.Columns.Add(New GridViewTextBoxColumn("LastAccessTime"))
+RadGridView1.MasterTemplate.Columns.Add(New GridViewTextBoxColumn("CreationTime"))
+Dim directory As New DirectoryInfo("C:\")
+Dim filesInDirectory As FileSystemInfo() = directory.GetFileSystemInfos()
+RadGridView1.DataSource = filesInDirectory
+
 ````
 
 {{endregion}} 

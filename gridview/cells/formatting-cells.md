@@ -33,27 +33,28 @@ __CellFormatting__ event is used to add formatting to grid *data* cells includin
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=cellFormattingExample1}} 
 
 ````C#
-        void radGridView1_CellFormatting1(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
-        {
-            if (e.CellElement.ColumnInfo.Name == "KBytes")
-            {
-                e.CellElement.ForeColor = Color.Red;
-            }
-            else
-            {
-                e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
-            }
-        }
+void radGridView1_CellFormatting1(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
+{
+    if (e.CellElement.ColumnInfo.Name == "KBytes")
+    {
+        e.CellElement.ForeColor = Color.Red;
+    }
+    else
+    {
+        e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
-        If e.CellElement.ColumnInfo.Name = "KBytes" Then
-            e.CellElement.ForeColor = Color.Red
-        Else
-            e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
+    If e.CellElement.ColumnInfo.Name = "KBytes" Then
+        e.CellElement.ForeColor = Color.Red
+    Else
+        e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -71,61 +72,62 @@ This is an advanced example of using *CellFormatting* event to highlight certain
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=cellFormattingExample2}} 
 
 ````C#
-        void radGridView1_CellFormatting2(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
+void radGridView1_CellFormatting2(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
+{
+    if (e.CellElement.ColumnInfo.HeaderText == "Id")
+    {
+        if (e.CellElement.RowInfo.Cells["BMP"].Value != null)
         {
-            if (e.CellElement.ColumnInfo.HeaderText == "Id")
+            if ((bool)e.CellElement.RowInfo.Cells["BMP"].Value == true)
             {
-                if (e.CellElement.RowInfo.Cells["BMP"].Value != null)
-                {
-                    if ((bool)e.CellElement.RowInfo.Cells["BMP"].Value == true)
-                    {
-                        e.CellElement.DrawFill = true;
-                        e.CellElement.ForeColor = Color.Blue;
-                        e.CellElement.NumberOfColors = 1;
-                        e.CellElement.BackColor = Color.Aqua;
-                    }
-                    else
-                    {
-                        e.CellElement.DrawFill = true;
-                        e.CellElement.ForeColor = Color.Yellow;
-                        e.CellElement.NumberOfColors = 1;
-                        e.CellElement.BackColor = Color.Green;
-                    }
-                }
+                e.CellElement.DrawFill = true;
+                e.CellElement.ForeColor = Color.Blue;
+                e.CellElement.NumberOfColors = 1;
+                e.CellElement.BackColor = Color.Aqua;
             }
             else
             {
-                e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
-                e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
-                e.CellElement.ResetValue(LightVisualElement.NumberOfColorsProperty, ValueResetFlags.Local);
-                e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
+                e.CellElement.DrawFill = true;
+                e.CellElement.ForeColor = Color.Yellow;
+                e.CellElement.NumberOfColors = 1;
+                e.CellElement.BackColor = Color.Green;
             }
         }
+    }
+    else
+    {
+        e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.NumberOfColorsProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_CellFormatting2(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
-        If e.CellElement.ColumnInfo.HeaderText = "Id" Then
-            If e.CellElement.RowInfo.Cells("BMP").Value IsNot Nothing Then
-                If CBool(e.CellElement.RowInfo.Cells("BMP").Value) = True Then
-                    e.CellElement.DrawFill = True
-                    e.CellElement.ForeColor = Color.Blue
-                    e.CellElement.NumberOfColors = 1
-                    e.CellElement.BackColor = Color.Aqua
-                Else
-                    e.CellElement.DrawFill = True
-                    e.CellElement.ForeColor = Color.Yellow
-                    e.CellElement.NumberOfColors = 1
-                    e.CellElement.BackColor = Color.Green
-                End If
+Private Sub RadGridView1_CellFormatting2(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
+    If e.CellElement.ColumnInfo.HeaderText = "Id" Then
+        If e.CellElement.RowInfo.Cells("BMP").Value IsNot Nothing Then
+            If CBool(e.CellElement.RowInfo.Cells("BMP").Value) = True Then
+                e.CellElement.DrawFill = True
+                e.CellElement.ForeColor = Color.Blue
+                e.CellElement.NumberOfColors = 1
+                e.CellElement.BackColor = Color.Aqua
+            Else
+                e.CellElement.DrawFill = True
+                e.CellElement.ForeColor = Color.Yellow
+                e.CellElement.NumberOfColors = 1
+                e.CellElement.BackColor = Color.Green
             End If
-        Else
-            e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
-            e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
-            e.CellElement.ResetValue(LightVisualElement.NumberOfColorsProperty, ValueResetFlags.Local)
-            e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
         End If
-    End Sub
-    '
+    Else
+        e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.NumberOfColorsProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -147,47 +149,45 @@ For example, to change the font of the header cells and the group cells use th
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=viewCellFormatting1}} 
 
 ````C#
-        Font newFont = new Font("Arial", 12f, FontStyle.Bold);
-        void radGridView1_ViewCellFormatting1(object sender, CellFormattingEventArgs e)
-        {
-            if (e.CellElement is GridHeaderCellElement || e.CellElement is GridGroupContentCellElement)
-            {
-                e.CellElement.Font = newFont;
-                e.CellElement.ForeColor = Color.Blue;
-            }
-            else
-            {
-                e.CellElement.ResetValue(LightVisualElement.FontProperty, ValueResetFlags.Local);
-                e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
-            }
+Font newFont = new Font("Arial", 12f, FontStyle.Bold);
+void radGridView1_ViewCellFormatting1(object sender, CellFormattingEventArgs e)
+{
+    if (e.CellElement is GridHeaderCellElement || e.CellElement is GridGroupContentCellElement)
+    {
+        e.CellElement.Font = newFont;
+        e.CellElement.ForeColor = Color.Blue;
+    }
+    else
+    {
+        e.CellElement.ResetValue(LightVisualElement.FontProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
+    }
+    //hiding the text from the filter cells
+    GridFilterCellElement filterCell = e.CellElement as GridFilterCellElement;
+    if (filterCell != null)
+    {
+        filterCell.FilterOperatorText.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+    }
+}
 
-            //hiding the text from the filter cells
-            GridFilterCellElement filterCell = e.CellElement as GridFilterCellElement;
-            if (filterCell != null)
-            {
-                filterCell.FilterOperatorText.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
-            }
-
-        }
 ````
 ````VB.NET
-    Dim newFont = New Font("Arial", 12.0F, FontStyle.Bold)
-    Private Sub RadGridView1_ViewCellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.ViewCellFormatting
-        If TypeOf e.CellElement Is GridHeaderCellElement OrElse TypeOf e.CellElement Is GridGroupContentCellElement Then
-            e.CellElement.Font = newFont
-            e.CellElement.ForeColor = Color.Blue
-        Else
-            e.CellElement.ResetValue(LightVisualElement.FontProperty, ValueResetFlags.Local)
-            e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
-        End If
+Dim newFont = New Font("Arial", 12.0F, FontStyle.Bold)
+Private Sub RadGridView1_ViewCellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.ViewCellFormatting
+    If TypeOf e.CellElement Is GridHeaderCellElement OrElse TypeOf e.CellElement Is GridGroupContentCellElement Then
+        e.CellElement.Font = newFont
+        e.CellElement.ForeColor = Color.Blue
+    Else
+        e.CellElement.ResetValue(LightVisualElement.FontProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
+    End If
+    'hiding the text from the filter cells
+    Dim filterCell As GridFilterCellElement = TryCast(e.CellElement, GridFilterCellElement)
+    If filterCell IsNot Nothing Then
+        filterCell.FilterOperatorText.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
+    End If
+End Sub
 
-        'hiding the text from the filter cells
-        Dim filterCell As GridFilterCellElement = TryCast(e.CellElement, GridFilterCellElement)
-        If filterCell IsNot Nothing Then
-            filterCell.FilterOperatorText.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -203,39 +203,40 @@ To modify the text alignment and the back color in the group rows use the follo
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=viewCellFormatting2}} 
 
 ````C#
-        void radGridView1_ViewCellFormatting2(object sender, CellFormattingEventArgs e)
-        {
-            if (e.CellElement.RowInfo is GridViewGroupRowInfo)
-            {
-                e.CellElement.DrawFill = true;
-                e.CellElement.BackColor = Color.Aquamarine;
-                e.CellElement.TextAlignment = ContentAlignment.MiddleRight;
-                e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
-            }
-            else
-            {
-                e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
-                e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
-                e.CellElement.ResetValue(LightVisualElement.TextAlignmentProperty, ValueResetFlags.Local);
-                e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
-            }
-        }
+void radGridView1_ViewCellFormatting2(object sender, CellFormattingEventArgs e)
+{
+    if (e.CellElement.RowInfo is GridViewGroupRowInfo)
+    {
+        e.CellElement.DrawFill = true;
+        e.CellElement.BackColor = Color.Aquamarine;
+        e.CellElement.TextAlignment = ContentAlignment.MiddleRight;
+        e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+    }
+    else
+    {
+        e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.TextAlignmentProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_ViewCellFormatting2(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.ViewCellFormatting
-        If TypeOf e.CellElement.RowInfo Is GridViewGroupRowInfo Then
-            e.CellElement.DrawFill = True
-            e.CellElement.BackColor = Color.Aquamarine
-            e.CellElement.TextAlignment = ContentAlignment.MiddleRight
-            e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-        Else
-            e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
-            e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
-            e.CellElement.ResetValue(LightVisualElement.TextAlignmentProperty, ValueResetFlags.Local)
-            e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_ViewCellFormatting2(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.ViewCellFormatting
+    If TypeOf e.CellElement.RowInfo Is GridViewGroupRowInfo Then
+        e.CellElement.DrawFill = True
+        e.CellElement.BackColor = Color.Aquamarine
+        e.CellElement.TextAlignment = ContentAlignment.MiddleRight
+        e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+    Else
+        e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.TextAlignmentProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -258,45 +259,44 @@ Let's say that you have a number of employees. Only one employee is Vice Preside
 {{source=..\SamplesVB\GridView\Cells\FormattingCellsButtons.vb region=buttonCell}} 
 
 ````C#
-        void radGridView1_CellFormatting(object sender, CellFormattingEventArgs e)
+void radGridView1_CellFormatting(object sender, CellFormattingEventArgs e)
+{
+    if (e.CellElement.ColumnInfo is GridViewCommandColumn)
+    {
+        // This is how we get the RadButtonElement instance from the cell
+        RadButtonElement button = (RadButtonElement)e.CellElement.Children[0];
+        if (e.CellElement.RowInfo.Cells["Title"].Value != null)
         {
-            if (e.CellElement.ColumnInfo is GridViewCommandColumn)
+            string title = e.CellElement.RowInfo.Cells["Title"].Value.ToString();
+            if (title == "Vice President, Sales")
             {
-                // This is how we get the RadButtonElement instance from the cell
-                RadButtonElement button = (RadButtonElement)e.CellElement.Children[0];
-
-                if (e.CellElement.RowInfo.Cells["Title"].Value != null)
-                {
-                    string title = e.CellElement.RowInfo.Cells["Title"].Value.ToString();
-                    if (title == "Vice President, Sales")
-                    {
-                        button.Enabled = false;
-                    }
-                    else
-                    {
-                        button.Enabled = true;
-                    }
-                }
+                button.Enabled = false;
+            }
+            else
+            {
+                button.Enabled = true;
             }
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radGridView1_CellFormatting(ByVal sender As Object, ByVal e As CellFormattingEventArgs) Handles RadGridView1.CellFormatting
-        If TypeOf e.CellElement.ColumnInfo Is GridViewCommandColumn Then
-            'This is how we get the RadButtonElement instance from the cell
-            Dim button As RadButtonElement = CType(e.CellElement.Children(0), RadButtonElement)
-
-            If e.CellElement.RowInfo.Cells("Title").Value IsNot Nothing Then
-                Dim title As String = e.CellElement.RowInfo.Cells("Title").Value.ToString()
-                If title = "Vice President, Sales" Then
-                    button.Enabled = False
-                Else
-                    button.Enabled = True
-                End If
+Private Sub radGridView1_CellFormatting(ByVal sender As Object, ByVal e As CellFormattingEventArgs) Handles RadGridView1.CellFormatting
+    If TypeOf e.CellElement.ColumnInfo Is GridViewCommandColumn Then
+        'This is how we get the RadButtonElement instance from the cell
+        Dim button As RadButtonElement = CType(e.CellElement.Children(0), RadButtonElement)
+        If e.CellElement.RowInfo.Cells("Title").Value IsNot Nothing Then
+            Dim title As String = e.CellElement.RowInfo.Cells("Title").Value.ToString()
+            If title = "Vice President, Sales" Then
+                button.Enabled = False
+            Else
+                button.Enabled = True
             End If
         End If
-    End Sub
-    '
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -318,98 +318,96 @@ When __RadGridView__ displays hierarchical data, you expand/collapse child level
 {{source=..\SamplesVB\GridView\Cells\HideChildTabs.vb region=HideTabs}} 
 
 ````C#
-        private void radGridView1_ViewCellFormatting(object sender, CellFormattingEventArgs e)
+private void radGridView1_ViewCellFormatting(object sender, CellFormattingEventArgs e)
+{
+    GridDetailViewCellElement cell = e.CellElement as GridDetailViewCellElement;
+    GridGroupExpanderCellElement expanderCell = e.CellElement as GridGroupExpanderCellElement;
+    if (expanderCell != null && e.CellElement.RowElement is GridDataRowElement)
+    {
+        GridViewHierarchyRowInfo hierarchyRow = (GridViewHierarchyRowInfo)expanderCell.RowInfo;
+        if (!IsExpandable(hierarchyRow))
         {
-            GridDetailViewCellElement cell = e.CellElement as GridDetailViewCellElement;
-            GridGroupExpanderCellElement expanderCell = e.CellElement as GridGroupExpanderCellElement;
-            if (expanderCell != null && e.CellElement.RowElement is GridDataRowElement)
+            expanderCell.Expander.Visibility = Telerik.WinControls.ElementVisibility.Hidden;
+        }
+        else
+        {
+            expanderCell.Expander.Visibility = Telerik.WinControls.ElementVisibility.Visible;
+        }
+    }
+    else if (cell != null)
+    {
+        GridViewHierarchyRowInfo hierarchyRow = (GridViewHierarchyRowInfo)((GridViewDetailsRowInfo)cell.RowInfo).Owner;
+        for (int i = 0; i < cell.PageViewElement.Items.Count; i++)
+        {
+            RadPageViewItem item = cell.PageViewElement.Items[i];
+            GridViewInfo viewInfo = hierarchyRow.Views[i];
+            item.Text = "Child Template " + i;
+            if (viewInfo.ChildRows.Count == 0)
             {
-                GridViewHierarchyRowInfo hierarchyRow = (GridViewHierarchyRowInfo)expanderCell.RowInfo;
-                if (!IsExpandable(hierarchyRow))
+                if (i == 0 && i < cell.PageViewElement.Items.Count - 1)
                 {
-                    expanderCell.Expander.Visibility = Telerik.WinControls.ElementVisibility.Hidden;
+                    cell.PageViewElement.Items[i + 1].IsSelected = true;
                 }
-                else
-                {
-                    expanderCell.Expander.Visibility = Telerik.WinControls.ElementVisibility.Visible;
-                }
+                item.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
             }
-            else if (cell != null)
+            else
             {
-                GridViewHierarchyRowInfo hierarchyRow = (GridViewHierarchyRowInfo)((GridViewDetailsRowInfo)cell.RowInfo).Owner;
-                for (int i = 0; i < cell.PageViewElement.Items.Count; i++)
-                {
-                    RadPageViewItem item = cell.PageViewElement.Items[i];
-                    GridViewInfo viewInfo = hierarchyRow.Views[i];
-                    item.Text = "Child Template " + i;
-                    if (viewInfo.ChildRows.Count == 0)
-                    {
-                        if (i == 0 && i < cell.PageViewElement.Items.Count - 1)
-                        {
-                            cell.PageViewElement.Items[i + 1].IsSelected = true;
-                        }
-                        item.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
-                    }
-                    else
-                    {
-                        item.Visibility = Telerik.WinControls.ElementVisibility.Visible;
-                    }
-                }
+                item.Visibility = Telerik.WinControls.ElementVisibility.Visible;
             }
         }
+    }
+}
+private bool IsExpandable(GridViewHierarchyRowInfo hierarchyRow)
+{
+    foreach (GridViewInfo view in hierarchyRow.Views)
+    {
+        if (view.ChildRows.Count > 0)
+        {
+            return true;
+        }
+    }
+    
+    return false;
+}
 
-        private bool IsExpandable(GridViewHierarchyRowInfo hierarchyRow)
-        {
-            foreach (GridViewInfo view in hierarchyRow.Views)
-            {
-                if (view.ChildRows.Count > 0)
-                {
-                    return true;
-                }
-            }
-            
-            return false;
-        }
 ````
 ````VB.NET
-    Private Sub radGridView1_ViewCellFormatting(sender As Object, e As CellFormattingEventArgs)
-        Dim cell As GridDetailViewCellElement = TryCast(e.CellElement, GridDetailViewCellElement)
-        Dim expanderCell As GridGroupExpanderCellElement = TryCast(e.CellElement, GridGroupExpanderCellElement)
-        If expanderCell IsNot Nothing AndAlso TypeOf e.CellElement.RowElement Is GridDataRowElement Then
-            Dim hierarchyRow As GridViewHierarchyRowInfo = DirectCast(expanderCell.RowInfo, GridViewHierarchyRowInfo)
-            If Not IsExpandable(hierarchyRow) Then
-                expanderCell.Expander.Visibility = Telerik.WinControls.ElementVisibility.Hidden
-            Else
-                expanderCell.Expander.Visibility = Telerik.WinControls.ElementVisibility.Visible
-            End If
-        ElseIf cell IsNot Nothing Then
-            Dim hierarchyRow As GridViewHierarchyRowInfo = DirectCast(DirectCast(cell.RowInfo, GridViewDetailsRowInfo).Owner, GridViewHierarchyRowInfo)
-            For i As Integer = 0 To cell.PageViewElement.Items.Count - 1
-                Dim item As RadPageViewItem = cell.PageViewElement.Items(i)
-                Dim viewInfo As GridViewInfo = hierarchyRow.Views(i)
-                item.Text = "Child Template " & i
-                If viewInfo.ChildRows.Count = 0 Then
-                    If i = 0 AndAlso i < cell.PageViewElement.Items.Count - 1 Then
-                        cell.PageViewElement.Items(i + 1).IsSelected = True
-                    End If
-                    item.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
-                Else
-                    item.Visibility = Telerik.WinControls.ElementVisibility.Visible
-                End If
-            Next
+Private Sub radGridView1_ViewCellFormatting(sender As Object, e As CellFormattingEventArgs)
+    Dim cell As GridDetailViewCellElement = TryCast(e.CellElement, GridDetailViewCellElement)
+    Dim expanderCell As GridGroupExpanderCellElement = TryCast(e.CellElement, GridGroupExpanderCellElement)
+    If expanderCell IsNot Nothing AndAlso TypeOf e.CellElement.RowElement Is GridDataRowElement Then
+        Dim hierarchyRow As GridViewHierarchyRowInfo = DirectCast(expanderCell.RowInfo, GridViewHierarchyRowInfo)
+        If Not IsExpandable(hierarchyRow) Then
+            expanderCell.Expander.Visibility = Telerik.WinControls.ElementVisibility.Hidden
+        Else
+            expanderCell.Expander.Visibility = Telerik.WinControls.ElementVisibility.Visible
         End If
-    End Sub
-
-    Private Function IsExpandable(hierarchyRow As GridViewHierarchyRowInfo) As Boolean
-        For Each view As GridViewInfo In hierarchyRow.Views
-            If view.ChildRows.Count > 0 Then
-                Return True
+    ElseIf cell IsNot Nothing Then
+        Dim hierarchyRow As GridViewHierarchyRowInfo = DirectCast(DirectCast(cell.RowInfo, GridViewDetailsRowInfo).Owner, GridViewHierarchyRowInfo)
+        For i As Integer = 0 To cell.PageViewElement.Items.Count - 1
+            Dim item As RadPageViewItem = cell.PageViewElement.Items(i)
+            Dim viewInfo As GridViewInfo = hierarchyRow.Views(i)
+            item.Text = "Child Template " & i
+            If viewInfo.ChildRows.Count = 0 Then
+                If i = 0 AndAlso i < cell.PageViewElement.Items.Count - 1 Then
+                    cell.PageViewElement.Items(i + 1).IsSelected = True
+                End If
+                item.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
+            Else
+                item.Visibility = Telerik.WinControls.ElementVisibility.Visible
             End If
         Next
+    End If
+End Sub
+Private Function IsExpandable(hierarchyRow As GridViewHierarchyRowInfo) As Boolean
+    For Each view As GridViewInfo In hierarchyRow.Views
+        If view.ChildRows.Count > 0 Then
+            Return True
+        End If
+    Next
+    Return False
+End Function
 
-        Return False
-    End Function
-    '
 ````
 
 {{endregion}} 
@@ -428,35 +426,36 @@ Sometimes you may need to format the cells on a specific user action, for exampl
 {{source=..\SamplesVB\GridView\Cells\FormattingCellsOnDemand.vb region=cellFormatting}} 
 
 ````C#
-        void radGridView1_CellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
-        {
-            if (e.CellElement.Text == this.radTextBox1.Text)
-            {
-                e.CellElement.DrawFill = true;
-                e.CellElement.BackColor = Color.Yellow;
-                e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
-            }
-            else
-            {
-                e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, Telerik.WinControls.ValueResetFlags.Local);
-                e.CellElement.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local);
-                e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
-            }
-        }
+void radGridView1_CellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
+{
+    if (e.CellElement.Text == this.radTextBox1.Text)
+    {
+        e.CellElement.DrawFill = true;
+        e.CellElement.BackColor = Color.Yellow;
+        e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+    }
+    else
+    {
+        e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, Telerik.WinControls.ValueResetFlags.Local);
+        e.CellElement.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
-        If e.CellElement.Text = Me.RadTextBox1.Text Then
-            e.CellElement.DrawFill = True
-            e.CellElement.BackColor = Color.Yellow
-            e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-        Else
-            e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, Telerik.WinControls.ValueResetFlags.Local)
-            e.CellElement.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local)
-            e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
+    If e.CellElement.Text = Me.RadTextBox1.Text Then
+        e.CellElement.DrawFill = True
+        e.CellElement.BackColor = Color.Yellow
+        e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+    Else
+        e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, Telerik.WinControls.ValueResetFlags.Local)
+        e.CellElement.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -467,16 +466,17 @@ Sometimes you may need to format the cells on a specific user action, for exampl
 {{source=..\SamplesVB\GridView\Cells\FormattingCellsOnDemand.vb region=buttonClick}} 
 
 ````C#
-        void searchButton_Click(object sender, EventArgs e)
-        {
-            this.radGridView1.TableElement.Update(GridUINotifyAction.StateChanged);
-        }
+void searchButton_Click(object sender, EventArgs e)
+{
+    this.radGridView1.TableElement.Update(GridUINotifyAction.StateChanged);
+}
+
 ````
 ````VB.NET
-    Private Sub searchButton_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles searchButton.Click
-        Me.RadGridView1.TableElement.Update(GridUINotifyAction.StateChanged)
-    End Sub
-    '
+Private Sub searchButton_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles searchButton.Click
+    Me.RadGridView1.TableElement.Update(GridUINotifyAction.StateChanged)
+End Sub
+
 ````
 
 {{endregion}} 
@@ -516,42 +516,36 @@ The example below shows how to customize the __Font__ and __BackColor__ of RadGr
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=CellStyleMethod}} 
 
 ````C#
-        Font myFont = new Font(new FontFamily("Calibri"), 12.0F, FontStyle.Bold);
+Font myFont = new Font(new FontFamily("Calibri"), 12.0F, FontStyle.Bold);
+private void StyleCell(GridViewCellInfo cell)
+{
+    cell.Style.Font = myFont;
+    cell.Style.CustomizeFill = true;
+    cell.Style.GradientStyle = GradientStyles.Solid;
+    cell.Style.BackColor = Color.FromArgb(162, 215, 255);
+}
 
-        private void StyleCell(GridViewCellInfo cell)
-        {
-            cell.Style.Font = myFont;
-            cell.Style.CustomizeFill = true;
-            cell.Style.GradientStyle = GradientStyles.Solid;
-            cell.Style.BackColor = Color.FromArgb(162, 215, 255);
-        }
 ````
 ````VB.NET
-    Private myFont As New Font(New FontFamily("Calibri"), 12.0F, FontStyle.Bold)
+Private myFont As New Font(New FontFamily("Calibri"), 12.0F, FontStyle.Bold)
+Private Sub StyleCell(cell As GridViewCellInfo)
+    cell.Style.Font = myFont
+    cell.Style.CustomizeFill = True
+    cell.Style.GradientStyle = GradientStyles.Solid
+    cell.Style.BackColor = Color.FromArgb(162, 215, 255)
+End Sub
+'#End Region
+Private Sub FormattingCells_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    'TODO: This line of code loads data into the 'NwindDataSet.Cars' table. You can move, or remove it, as needed.
+    Me.CarsTableAdapter.Fill(Me.NwindDataSet.Cars)
+    RadGridView1.Columns("Picture").Width = 80
+    RadGridView1.Rows(0).Height = 60
+    RadGridView1.Rows(1).Height = 60
+    RadGridView1.Rows(2).Height = 60
+    RadGridView1.Rows(3).Height = 60
+    '#region CellStyleMethodCall
+    Me.StyleCell(Me.RadGridView1.Rows(1).Cells(1))
 
-    Private Sub StyleCell(cell As GridViewCellInfo)
-        cell.Style.Font = myFont
-        cell.Style.CustomizeFill = True
-        cell.Style.GradientStyle = GradientStyles.Solid
-        cell.Style.BackColor = Color.FromArgb(162, 215, 255)
-    End Sub
-    '#End Region
-
-
-
-    Private Sub FormattingCells_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'NwindDataSet.Cars' table. You can move, or remove it, as needed.
-        Me.CarsTableAdapter.Fill(Me.NwindDataSet.Cars)
-
-        RadGridView1.Columns("Picture").Width = 80
-        RadGridView1.Rows(0).Height = 60
-        RadGridView1.Rows(1).Height = 60
-        RadGridView1.Rows(2).Height = 60
-        RadGridView1.Rows(3).Height = 60
-
-        '#region CellStyleMethodCall
-        Me.StyleCell(Me.RadGridView1.Rows(1).Cells(1))
-        '
 ````
 
 {{endregion}} 
@@ -562,11 +556,12 @@ Here is how to call this method of a certain cell:
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=CellStyleMethodCall}} 
 
 ````C#
-            this.StyleCell(this.radGridView1.Rows[1].Cells[1]);
+this.StyleCell(this.radGridView1.Rows[1].Cells[1]);
+
 ````
 ````VB.NET
-        Me.StyleCell(Me.RadGridView1.Rows(1).Cells(1))
-        '
+Me.StyleCell(Me.RadGridView1.Rows(1).Cells(1))
+
 ````
 
 {{endregion}} 

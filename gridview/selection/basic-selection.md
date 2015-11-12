@@ -25,40 +25,14 @@ By default RadGridView allows the user to select only one row. In this case the 
 {{source=..\SamplesVB\GridView\Selection\Selection1.vb region=basicRowSelection}} 
 
 ````C#
-            radGridView1.MultiSelect = false;
-            radGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect;
+radGridView1.MultiSelect = false;
+radGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect;
+
 ````
 ````VB.NET
-        RadGridView1.MultiSelect = False
-        RadGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect
-        '#End Region
+RadGridView1.MultiSelect = False
+RadGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect
 
-        '			#Region "basicCellSelection"
-        RadGridView1.MultiSelect = False
-        RadGridView1.SelectionMode = GridViewSelectionMode.CellSelect
-        '#End Region
-
-        '			#Region "collections"
-        Dim selectedRows As GridViewSelectedRowsCollection = RadGridView1.SelectedRows
-        Dim selectedCells As GridViewSelectedCellsCollection = RadGridView1.SelectedCells
-        '#End Region
-
-        '			#Region "currentRowCell"
-        'gets an instance of the current row
-        Dim row As GridViewRowInfo = RadGridView1.CurrentRow
-        'gets an instance of the current cell
-        Dim cell As GridDataCellElement = RadGridView1.CurrentCell
-        'gets or sets if the first row of radGridView1 is current or not
-        RadGridView1.Rows(0).IsCurrent = True
-        '#End Region
-
-        'gets or sets if the first cell of radGridView1 is current or not
-        'RadGridView1.Rows(0).Cells(0).IsCurrent = True
-
-        '#region multipleRowSelection
-        RadGridView1.MultiSelect = True
-        RadGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect
-        '
 ````
 
 {{endregion}} 
@@ -73,35 +47,14 @@ You can modify RadGridView to select single cells instead of rows by setting its
 {{source=..\SamplesVB\GridView\Selection\Selection1.vb region=basicCellSelection}} 
 
 ````C#
-            radGridView1.MultiSelect = false;
-            radGridView1.SelectionMode = GridViewSelectionMode.CellSelect;
+radGridView1.MultiSelect = false;
+radGridView1.SelectionMode = GridViewSelectionMode.CellSelect;
+
 ````
 ````VB.NET
-        RadGridView1.MultiSelect = False
-        RadGridView1.SelectionMode = GridViewSelectionMode.CellSelect
-        '#End Region
+RadGridView1.MultiSelect = False
+RadGridView1.SelectionMode = GridViewSelectionMode.CellSelect
 
-        '			#Region "collections"
-        Dim selectedRows As GridViewSelectedRowsCollection = RadGridView1.SelectedRows
-        Dim selectedCells As GridViewSelectedCellsCollection = RadGridView1.SelectedCells
-        '#End Region
-
-        '			#Region "currentRowCell"
-        'gets an instance of the current row
-        Dim row As GridViewRowInfo = RadGridView1.CurrentRow
-        'gets an instance of the current cell
-        Dim cell As GridDataCellElement = RadGridView1.CurrentCell
-        'gets or sets if the first row of radGridView1 is current or not
-        RadGridView1.Rows(0).IsCurrent = True
-        '#End Region
-
-        'gets or sets if the first cell of radGridView1 is current or not
-        'RadGridView1.Rows(0).Cells(0).IsCurrent = True
-
-        '#region multipleRowSelection
-        RadGridView1.MultiSelect = True
-        RadGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect
-        '
 ````
 
 {{endregion}} 
@@ -116,30 +69,14 @@ Once an item is selected (row or cell), you can find this item in the SelectedRo
 {{source=..\SamplesVB\GridView\Selection\Selection1.vb region=collections}} 
 
 ````C#
-            GridViewSelectedRowsCollection selectedRows = radGridView1.SelectedRows;
-            GridViewSelectedCellsCollection selectedCells = radGridView1.SelectedCells;
+GridViewSelectedRowsCollection selectedRows = radGridView1.SelectedRows;
+GridViewSelectedCellsCollection selectedCells = radGridView1.SelectedCells;
+
 ````
 ````VB.NET
-        Dim selectedRows As GridViewSelectedRowsCollection = RadGridView1.SelectedRows
-        Dim selectedCells As GridViewSelectedCellsCollection = RadGridView1.SelectedCells
-        '#End Region
+Dim selectedRows As GridViewSelectedRowsCollection = RadGridView1.SelectedRows
+Dim selectedCells As GridViewSelectedCellsCollection = RadGridView1.SelectedCells
 
-        '			#Region "currentRowCell"
-        'gets an instance of the current row
-        Dim row As GridViewRowInfo = RadGridView1.CurrentRow
-        'gets an instance of the current cell
-        Dim cell As GridDataCellElement = RadGridView1.CurrentCell
-        'gets or sets if the first row of radGridView1 is current or not
-        RadGridView1.Rows(0).IsCurrent = True
-        '#End Region
-
-        'gets or sets if the first cell of radGridView1 is current or not
-        'RadGridView1.Rows(0).Cells(0).IsCurrent = True
-
-        '#region multipleRowSelection
-        RadGridView1.MultiSelect = True
-        RadGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect
-        '
 ````
 
 {{endregion}} 
@@ -157,29 +94,22 @@ Once an item is selected, it automatically becomes current (when basic selection
 {{source=..\SamplesVB\GridView\Selection\Selection1.vb region=currentRowCell}} 
 
 ````C#
-            //gets an instance of the current row
-            GridViewRowInfo row = radGridView1.CurrentRow;
-            //gets an instance of the current cell
-            GridDataCellElement cell = radGridView1.CurrentCell;
-            //gets or sets if the first row of radGridView1 is current or not
-            radGridView1.Rows[0].IsCurrent = true;
+//gets an instance of the current row
+GridViewRowInfo row = radGridView1.CurrentRow;
+//gets an instance of the current cell
+GridDataCellElement cell = radGridView1.CurrentCell;
+//gets or sets if the first row of radGridView1 is current or not
+radGridView1.Rows[0].IsCurrent = true;
+
 ````
 ````VB.NET
-        'gets an instance of the current row
-        Dim row As GridViewRowInfo = RadGridView1.CurrentRow
-        'gets an instance of the current cell
-        Dim cell As GridDataCellElement = RadGridView1.CurrentCell
-        'gets or sets if the first row of radGridView1 is current or not
-        RadGridView1.Rows(0).IsCurrent = True
-        '#End Region
+'gets an instance of the current row
+Dim row As GridViewRowInfo = RadGridView1.CurrentRow
+'gets an instance of the current cell
+Dim cell As GridDataCellElement = RadGridView1.CurrentCell
+'gets or sets if the first row of radGridView1 is current or not
+RadGridView1.Rows(0).IsCurrent = True
 
-        'gets or sets if the first cell of radGridView1 is current or not
-        'RadGridView1.Rows(0).Cells(0).IsCurrent = True
-
-        '#region multipleRowSelection
-        RadGridView1.MultiSelect = True
-        RadGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect
-        '
 ````
 
 {{endregion}} 

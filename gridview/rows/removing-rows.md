@@ -20,11 +20,12 @@ In order to remove a single row from __RadGridView__, you should simply call the
 {{source=..\SamplesVB\GridView\Rows\RemovingRows.vb region=removeRow}} 
 
 ````C#
-            this.radGridView1.Rows.Remove(rowToRemove);
+this.radGridView1.Rows.Remove(rowToRemove);
+
 ````
 ````VB.NET
-        Me.RadGridView1.Rows.Remove(rowToRemove)
-        '
+Me.RadGridView1.Rows.Remove(rowToRemove)
+
 ````
 
 {{endregion}} 
@@ -35,11 +36,12 @@ If you want to remove a row at a specific position, call RemoveAt() method and p
 {{source=..\SamplesVB\GridView\Rows\RemovingRows.vb region=removeRowAt}} 
 
 ````C#
-            this.radGridView1.Rows.RemoveAt(0);
+this.radGridView1.Rows.RemoveAt(0);
+
 ````
 ````VB.NET
-        Me.RadGridView1.Rows.RemoveAt(0)
-        '
+Me.RadGridView1.Rows.RemoveAt(0)
+
 ````
 
 {{endregion}} 
@@ -53,11 +55,12 @@ As to removing all rows, make a loop and remove the rows with the RemoveAt() met
 {{source=..\SamplesVB\GridView\Rows\RemovingRows.vb region=callingUpdate}} 
 
 ````C#
-            this.carsTableAdapter.Update(this.nwindDataSet.Cars);
+this.carsTableAdapter.Update(this.nwindDataSet.Cars);
+
 ````
 ````VB.NET
-        Me.CarsTableAdapter.Update(Me.NwindDataSet.Cars)
-        '
+Me.CarsTableAdapter.Update(Me.NwindDataSet.Cars)
+
 ````
 
 {{endregion}} 
@@ -71,11 +74,12 @@ An alternative to removing all the rows would be to use the __Clear__ method of 
 {{source=..\SamplesVB\GridView\Rows\RemovingRows.vb region=clearRows}} 
 
 ````C#
-            this.radGridView1.Rows.Clear();
+this.radGridView1.Rows.Clear();
+
 ````
 ````VB.NET
-        Me.RadGridView1.Rows.Clear()
-        '
+Me.RadGridView1.Rows.Clear()
+
 ````
 
 {{endregion}} 

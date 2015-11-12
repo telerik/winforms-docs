@@ -30,11 +30,12 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 {{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=TimeRangeCustom}} 
 
 ````C#
-            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Custom;
+this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Custom;
+
 ````
 ````VB.NET
-        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Custom
-        '
+Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Custom
+
 ````
 
 {{endregion}} 
@@ -52,11 +53,12 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 {{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=CustomBehavior}} 
 
 ````C#
-            this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineBehavior = new DecadesGanttViewTimelineBehavior();
+this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineBehavior = new DecadesGanttViewTimelineBehavior();
+
 ````
 ````VB.NET
-        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineBehavior = New DecadesGanttViewTimelineBehavior()
-        '
+Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineBehavior = New DecadesGanttViewTimelineBehavior()
+
 ````
 
 {{endregion}} 
@@ -81,51 +83,48 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 {{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=AdjustedStartAndEnd}} 
 
 ````C#
-        public override DateTime AdjustedTimelineStart
+public override DateTime AdjustedTimelineStart
+{
+    get
+    {
+        if (this.GraphicalViewElement.TimelineRange != TimeRange.Custom)
         {
-            get
-            {
-                if (this.GraphicalViewElement.TimelineRange != TimeRange.Custom)
-                {
-                    return base.AdjustedTimelineStart;
-                }
-
-                return new DateTime(this.GraphicalViewElement.TimelineStart.Year, 1, 1);
-            }
+            return base.AdjustedTimelineStart;
         }
-
-        public override DateTime AdjustedTimelineEnd
+        return new DateTime(this.GraphicalViewElement.TimelineStart.Year, 1, 1);
+    }
+}
+public override DateTime AdjustedTimelineEnd
+{
+    get
+    {
+        if (this.GraphicalViewElement.TimelineRange != TimeRange.Custom)
         {
-            get
-            {
-                if (this.GraphicalViewElement.TimelineRange != TimeRange.Custom)
-                {
-                    return base.AdjustedTimelineEnd;
-                }
-
-                return new DateTime(this.GraphicalViewElement.TimelineEnd.Year + 1, 1, 1);
-            }
+            return base.AdjustedTimelineEnd;
         }
+        return new DateTime(this.GraphicalViewElement.TimelineEnd.Year + 1, 1, 1);
+    }
+}
+
 ````
 ````VB.NET
-    Public Overrides ReadOnly Property AdjustedTimelineStart() As DateTime
-        Get
-            If Me.GraphicalViewElement.TimelineRange <> TimeRange.[Custom] Then
-                Return MyBase.AdjustedTimelineStart
-            End If
-            Return New DateTime(Me.GraphicalViewElement.TimelineStart.Year, 1, 1)
-        End Get
-    End Property
+Public Overrides ReadOnly Property AdjustedTimelineStart() As DateTime
+    Get
+        If Me.GraphicalViewElement.TimelineRange <> TimeRange.[Custom] Then
+            Return MyBase.AdjustedTimelineStart
+        End If
+        Return New DateTime(Me.GraphicalViewElement.TimelineStart.Year, 1, 1)
+    End Get
+End Property
+Public Overrides ReadOnly Property AdjustedTimelineEnd As DateTime
+    Get
+        If Me.GraphicalViewElement.TimelineRange <> TimeRange.[Custom] Then
+            Return MyBase.AdjustedTimelineEnd
+        End If
+        Return New DateTime(Me.GraphicalViewElement.TimelineEnd.Year + 1, 1, 1)
+    End Get
+End Property
 
-    Public Overrides ReadOnly Property AdjustedTimelineEnd As DateTime
-        Get
-            If Me.GraphicalViewElement.TimelineRange <> TimeRange.[Custom] Then
-                Return MyBase.AdjustedTimelineEnd
-            End If
-            Return New DateTime(Me.GraphicalViewElement.TimelineEnd.Year + 1, 1, 1)
-        End Get
-    End Property
-    '
 ````
 
 {{endregion}} 
@@ -144,77 +143,69 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 {{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=GanttViewTimelineDataItems}} 
 
 ````C#
-        public override IList<GanttViewTimelineDataItem> BuildTimelineDataItems(TimeRange range)
+public override IList<GanttViewTimelineDataItem> BuildTimelineDataItems(TimeRange range)
+{
+    if (range != TimeRange.Custom)
+    {
+        return base.BuildTimelineDataItems(range);
+    }
+    return this.BuildTimelineDataItemsForDecadesRange();
+}
+public IList<GanttViewTimelineDataItem> BuildTimelineDataItemsForDecadesRange()
+{
+    List<GanttViewTimelineDataItem> result = new List<GanttViewTimelineDataItem>();
+    DateTime adjustedStart = this.AdjustedTimelineStart;
+    DateTime adjustedEnd = this.AdjustedTimelineEnd;
+    DateTime currentDate = adjustedStart.Date;
+    int currentYearNumber = currentDate.Year;
+    int newYearNumber = currentYearNumber;
+    GanttViewTimelineDataItem item = new GanttViewTimelineDataItem(currentDate.Date, currentDate.AddYears(1), this.GraphicalViewElement.TimelineRange, this.GraphicalViewElement.OnePixelTime);
+    result.Add(item);
+    while (currentDate < adjustedEnd)
+    {
+        item.End = currentDate.AddYears(1);
+        currentDate = currentDate.AddYears(1);
+        newYearNumber = currentDate.Year;
+        if (newYearNumber != currentYearNumber && newYearNumber % 10 == 0 && currentDate <= adjustedEnd)
         {
-            if (range != TimeRange.Custom)
-            {
-                return base.BuildTimelineDataItems(range);
-            }
-
-            return this.BuildTimelineDataItemsForDecadesRange();
-        }
-
-        public IList<GanttViewTimelineDataItem> BuildTimelineDataItemsForDecadesRange()
-        {
-            List<GanttViewTimelineDataItem> result = new List<GanttViewTimelineDataItem>();
-
-            DateTime adjustedStart = this.AdjustedTimelineStart;
-            DateTime adjustedEnd = this.AdjustedTimelineEnd;
-
-            DateTime currentDate = adjustedStart.Date;
-            int currentYearNumber = currentDate.Year;
-            int newYearNumber = currentYearNumber;
-            GanttViewTimelineDataItem item = new GanttViewTimelineDataItem(currentDate.Date, currentDate.AddYears(1), this.GraphicalViewElement.TimelineRange, this.GraphicalViewElement.OnePixelTime);
+            currentYearNumber = newYearNumber;
+            item = new GanttViewTimelineDataItem(currentDate, currentDate, this.GraphicalViewElement.TimelineRange, this.GraphicalViewElement.OnePixelTime);
             result.Add(item);
-
-            while (currentDate < adjustedEnd)
-            {
-                item.End = currentDate.AddYears(1);
-
-                currentDate = currentDate.AddYears(1);
-                newYearNumber = currentDate.Year;
-
-                if (newYearNumber != currentYearNumber && newYearNumber % 10 == 0 && currentDate <= adjustedEnd)
-                {
-                    currentYearNumber = newYearNumber;
-                    item = new GanttViewTimelineDataItem(currentDate, currentDate, this.GraphicalViewElement.TimelineRange, this.GraphicalViewElement.OnePixelTime);
-                    result.Add(item);
-                }
-            }
-
-            return result;
         }
+    }
+    return result;
+}
+
 ````
 ````VB.NET
-        Public Overrides Function BuildTimelineDataItems(range As TimeRange) As IList(Of GanttViewTimelineDataItem)
-        If range <> TimeRange.[Custom] Then
-            Return MyBase.BuildTimelineDataItems(range)
-        End If
-        Return Me.BuildTimelineDataItemsForDecadesRange()
-    End Function
-
-    Public Function BuildTimelineDataItemsForDecadesRange() As IList(Of GanttViewTimelineDataItem)
-        Dim result As New List(Of GanttViewTimelineDataItem)()
-        Dim adjustedStart As DateTime = Me.AdjustedTimelineStart
-        Dim adjustedEnd As DateTime = Me.AdjustedTimelineEnd
-        Dim currentDate As DateTime = adjustedStart.[Date]
-        Dim currentYearNumber As Integer = currentDate.Year
-        Dim newYearNumber As Integer = currentYearNumber
-        Dim item As New GanttViewTimelineDataItem(currentDate.[Date], currentDate.AddYears(1), Me.GraphicalViewElement.TimelineRange, Me.GraphicalViewElement.OnePixelTime)
+Public Overrides Function BuildTimelineDataItems(range As TimeRange) As IList(Of GanttViewTimelineDataItem)
+If range <> TimeRange.[Custom] Then
+    Return MyBase.BuildTimelineDataItems(range)
+End If
+Return Me.BuildTimelineDataItemsForDecadesRange()
+End Function
+Public Function BuildTimelineDataItemsForDecadesRange() As IList(Of GanttViewTimelineDataItem)
+Dim result As New List(Of GanttViewTimelineDataItem)()
+Dim adjustedStart As DateTime = Me.AdjustedTimelineStart
+Dim adjustedEnd As DateTime = Me.AdjustedTimelineEnd
+Dim currentDate As DateTime = adjustedStart.[Date]
+Dim currentYearNumber As Integer = currentDate.Year
+Dim newYearNumber As Integer = currentYearNumber
+Dim item As New GanttViewTimelineDataItem(currentDate.[Date], currentDate.AddYears(1), Me.GraphicalViewElement.TimelineRange, Me.GraphicalViewElement.OnePixelTime)
+result.Add(item)
+While currentDate < adjustedEnd
+    item.[End] = currentDate.AddYears(1)
+    currentDate = currentDate.AddYears(1)
+    newYearNumber = currentDate.Year
+    If newYearNumber <> currentYearNumber AndAlso newYearNumber Mod 10 = 0 AndAlso currentDate <= adjustedEnd Then
+        currentYearNumber = newYearNumber
+        item = New GanttViewTimelineDataItem(currentDate, currentDate, Me.GraphicalViewElement.TimelineRange, Me.GraphicalViewElement.OnePixelTime)
         result.Add(item)
-        While currentDate < adjustedEnd
-            item.[End] = currentDate.AddYears(1)
-            currentDate = currentDate.AddYears(1)
-            newYearNumber = currentDate.Year
-            If newYearNumber <> currentYearNumber AndAlso newYearNumber Mod 10 = 0 AndAlso currentDate <= adjustedEnd Then
-                currentYearNumber = newYearNumber
-                item = New GanttViewTimelineDataItem(currentDate, currentDate, Me.GraphicalViewElement.TimelineRange, Me.GraphicalViewElement.OnePixelTime)
-                result.Add(item)
-            End If
-        End While
-        Return result
-    End Function
-    '
+    End If
+End While
+Return result
+End Function
+
 ````
 
 {{endregion}} 
@@ -237,62 +228,57 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 {{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=GanttTimelineCellsInfo}} 
 
 ````C#
-        public override GanttTimelineCellsInfo GetTimelineCellInfoForItem(GanttViewTimelineDataItem item, TimeRange timeRange)
+public override GanttTimelineCellsInfo GetTimelineCellInfoForItem(GanttViewTimelineDataItem item, TimeRange timeRange)
+{
+    if (timeRange != TimeRange.Custom)
+    {
+        return base.GetTimelineCellInfoForItem(item, timeRange);
+    }
+    return this.GetTimelineCellInfoForDecadeRange(item);
+}
+public GanttTimelineCellsInfo GetTimelineCellInfoForDecadeRange(GanttViewTimelineDataItem item)
+{
+    int years = 10;
+    if (item.Start == this.AdjustedTimelineStart)
+    {
+        if (item.Start.Year % 10 > 0)
         {
-            if (timeRange != TimeRange.Custom)
-            {
-                return base.GetTimelineCellInfoForItem(item, timeRange);
-            }
-
-            return this.GetTimelineCellInfoForDecadeRange(item);
+            years = 10 - (item.Start.Year % 10);
         }
-
-        public GanttTimelineCellsInfo GetTimelineCellInfoForDecadeRange(GanttViewTimelineDataItem item)
+    }
+    if (item.End == this.AdjustedTimelineEnd)
+    {
+        if (item.End.Year % 10 > 0)
         {
-            int years = 10;
-
-            if (item.Start == this.AdjustedTimelineStart)
-            {
-                if (item.Start.Year % 10 > 0)
-                {
-                    years = 10 - (item.Start.Year % 10);
-                }
-            }
-
-            if (item.End == this.AdjustedTimelineEnd)
-            {
-                if (item.End.Year % 10 > 0)
-                {
-                    years = item.End.Year % 10;
-                }
-            }
-
-            return new GanttTimelineCellsInfo(years);
+            years = item.End.Year % 10;
         }
+    }
+    return new GanttTimelineCellsInfo(years);
+}
+
 ````
 ````VB.NET
-    Public Overrides Function GetTimelineCellInfoForItem(item As GanttViewTimelineDataItem, range As TimeRange) As GanttTimelineCellsInfo
-        If range <> TimeRange.[Custom] Then
-            Return MyBase.GetTimelineCellInfoForItem(item, range)
+Public Overrides Function GetTimelineCellInfoForItem(item As GanttViewTimelineDataItem, range As TimeRange) As GanttTimelineCellsInfo
+    If range <> TimeRange.[Custom] Then
+        Return MyBase.GetTimelineCellInfoForItem(item, range)
+    End If
+    Return Me.GetTimelineCellInfoForDecadeRange(item)
+End Function
+Public Function GetTimelineCellInfoForDecadeRange(item As GanttViewTimelineDataItem) As GanttTimelineCellsInfo
+    Dim years As Integer = 10
+    If item.Start = Me.AdjustedTimelineStart Then
+        If item.Start.Year Mod 10 > 0 Then
+            years = 10 - (item.Start.Year Mod 10)
         End If
-        Return Me.GetTimelineCellInfoForDecadeRange(item)
-    End Function
+    End If
+    If item.[End] = Me.AdjustedTimelineEnd Then
+        If item.[End].Year Mod 10 > 0 Then
+            years = item.[End].Year Mod 10
+        End If
+    End If
+    Return New GanttTimelineCellsInfo(years)
+End Function
 
-    Public Function GetTimelineCellInfoForDecadeRange(item As GanttViewTimelineDataItem) As GanttTimelineCellsInfo
-        Dim years As Integer = 10
-        If item.Start = Me.AdjustedTimelineStart Then
-            If item.Start.Year Mod 10 > 0 Then
-                years = 10 - (item.Start.Year Mod 10)
-            End If
-        End If
-        If item.[End] = Me.AdjustedTimelineEnd Then
-            If item.[End].Year Mod 10 > 0 Then
-                years = item.[End].Year Mod 10
-            End If
-        End If
-        Return New GanttTimelineCellsInfo(years)
-    End Function
-    '
 ````
 
 {{endregion}} 
@@ -311,45 +297,42 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 {{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=TimelineElementsText}} 
 
 ````C#
-        public override string GetTimelineTopElementText(GanttViewTimelineDataItem item)
-        {
-            if (item.Range != TimeRange.Custom)
-            {
-                return base.GetTimelineTopElementText(item);
-            }
+public override string GetTimelineTopElementText(GanttViewTimelineDataItem item)
+{
+    if (item.Range != TimeRange.Custom)
+    {
+        return base.GetTimelineTopElementText(item);
+    }
+    string format = "{0:yyyy} - {1:yyyy}";
+    return string.Format(System.Threading.Thread.CurrentThread.CurrentUICulture, format, item.Start, item.End.AddYears(-1));
+}
+public override string GetTimelineBottomElementText(GanttViewTimelineDataItem item, int index)
+{
+    if (item.Range != TimeRange.Custom)
+    {
+        return base.GetTimelineBottomElementText(item, index);
+    }
+    string format = "{0:yyyy}";
+    return string.Format(System.Threading.Thread.CurrentThread.CurrentCulture, format, new DateTime(item.Start.Year + index, 1, 1));
+}
 
-            string format = "{0:yyyy} - {1:yyyy}";
-            return string.Format(System.Threading.Thread.CurrentThread.CurrentUICulture, format, item.Start, item.End.AddYears(-1));
-        }
-
-        public override string GetTimelineBottomElementText(GanttViewTimelineDataItem item, int index)
-        {
-            if (item.Range != TimeRange.Custom)
-            {
-                return base.GetTimelineBottomElementText(item, index);
-            }
-
-            string format = "{0:yyyy}";
-            return string.Format(System.Threading.Thread.CurrentThread.CurrentCulture, format, new DateTime(item.Start.Year + index, 1, 1));
-        }
 ````
 ````VB.NET
-      Public Overrides Function GetTimelineTopElementText(item As GanttViewTimelineDataItem) As String
-        If item.Range <> TimeRange.[Custom] Then
-            Return MyBase.GetTimelineTopElementText(item)
-        End If
-        Dim format As String = "{0:yyyy} - {1:yyyy}"
-        Return String.Format(System.Threading.Thread.CurrentThread.CurrentUICulture, format, item.Start, item.[End].AddYears(-1))
-    End Function
+  Public Overrides Function GetTimelineTopElementText(item As GanttViewTimelineDataItem) As String
+    If item.Range <> TimeRange.[Custom] Then
+        Return MyBase.GetTimelineTopElementText(item)
+    End If
+    Dim format As String = "{0:yyyy} - {1:yyyy}"
+    Return String.Format(System.Threading.Thread.CurrentThread.CurrentUICulture, format, item.Start, item.[End].AddYears(-1))
+End Function
+Public Overrides Function GetTimelineBottomElementText(item As GanttViewTimelineDataItem, index As Integer) As String
+    If item.Range <> TimeRange.[Custom] Then
+        Return MyBase.GetTimelineBottomElementText(item, index)
+    End If
+    Dim format As String = "{0:yyyy}"
+    Return String.Format(System.Threading.Thread.CurrentThread.CurrentCulture, format, New DateTime(item.Start.Year + index, 1, 1))
+End Function
 
-    Public Overrides Function GetTimelineBottomElementText(item As GanttViewTimelineDataItem, index As Integer) As String
-        If item.Range <> TimeRange.[Custom] Then
-            Return MyBase.GetTimelineBottomElementText(item, index)
-        End If
-        Dim format As String = "{0:yyyy}"
-        Return String.Format(System.Threading.Thread.CurrentThread.CurrentCulture, format, New DateTime(item.Start.Year + index, 1, 1))
-    End Function
-    '
 ````
 
 {{endregion}} 

@@ -28,21 +28,20 @@ You can define the format of the group header row by using the __GroupDescriptor
 {{source=..\SamplesVB\GridView\Grouping\GroupAggregates.vb region=GroupAggregates}} 
 
 ````C#
-            GroupDescriptor descriptor = new GroupDescriptor();
-            descriptor.GroupNames.Add("Country", ListSortDirection.Ascending);
-            descriptor.Aggregates.Add("Count(Country)");
-            descriptor.Format = "{0}: {1} has {2} records in its group.";
+GroupDescriptor descriptor = new GroupDescriptor();
+descriptor.GroupNames.Add("Country", ListSortDirection.Ascending);
+descriptor.Aggregates.Add("Count(Country)");
+descriptor.Format = "{0}: {1} has {2} records in its group.";
+this.radGridView1.GroupDescriptors.Add(descriptor);
 
-            this.radGridView1.GroupDescriptors.Add(descriptor);
 ````
 ````VB.NET
-        Dim descriptor As New GroupDescriptor()
-        descriptor.GroupNames.Add("Country", ListSortDirection.Ascending)
-        descriptor.Aggregates.Add("Count(Country)")
-        descriptor.Format = "{0}: {1} has {2} records in its group."
+Dim descriptor As New GroupDescriptor()
+descriptor.GroupNames.Add("Country", ListSortDirection.Ascending)
+descriptor.Aggregates.Add("Count(Country)")
+descriptor.Format = "{0}: {1} has {2} records in its group."
+Me.RadGridView1.GroupDescriptors.Add(descriptor)
 
-        Me.RadGridView1.GroupDescriptors.Add(descriptor)
-        '
 ````
 
 {{endregion}} 
@@ -53,25 +52,24 @@ You can define the format of the group header row by using the __GroupDescriptor
 {{source=..\SamplesVB\GridView\Grouping\GroupAggregates1.vb region=GroupAggregates1}} 
 
 ````C#
-            GroupDescriptor descriptor = new GroupDescriptor();
-            descriptor.GroupNames.Add("ShipName", ListSortDirection.Ascending);
-            descriptor.Aggregates.Add("Count(ShipName)");
-            descriptor.Aggregates.Add("Max(Freight)");
-            descriptor.Aggregates.Add("Avg(Freight)");
-            descriptor.Format = "The ship {1} has {2} item(s) with maximum freight {3} and avarage freight of {4:c2} per ship.";
+GroupDescriptor descriptor = new GroupDescriptor();
+descriptor.GroupNames.Add("ShipName", ListSortDirection.Ascending);
+descriptor.Aggregates.Add("Count(ShipName)");
+descriptor.Aggregates.Add("Max(Freight)");
+descriptor.Aggregates.Add("Avg(Freight)");
+descriptor.Format = "The ship {1} has {2} item(s) with maximum freight {3} and avarage freight of {4:c2} per ship.";
+this.radGridView1.GroupDescriptors.Add(descriptor);
 
-            this.radGridView1.GroupDescriptors.Add(descriptor);
 ````
 ````VB.NET
-        Dim descriptor As New GroupDescriptor()
-        descriptor.GroupNames.Add("ShipName", ListSortDirection.Ascending)
-        descriptor.Aggregates.Add("Count(ShipName)")
-        descriptor.Aggregates.Add("Max(Freight)")
-        descriptor.Aggregates.Add("Avg(Freight)")
-        descriptor.Format = "The ship {1} has {2} item(s) with maximum freight {3} and avarage freight of {4:c2} per ship."
+Dim descriptor As New GroupDescriptor()
+descriptor.GroupNames.Add("ShipName", ListSortDirection.Ascending)
+descriptor.Aggregates.Add("Count(ShipName)")
+descriptor.Aggregates.Add("Max(Freight)")
+descriptor.Aggregates.Add("Avg(Freight)")
+descriptor.Format = "The ship {1} has {2} item(s) with maximum freight {3} and avarage freight of {4:c2} per ship."
+Me.RadGridView1.GroupDescriptors.Add(descriptor)
 
-        Me.RadGridView1.GroupDescriptors.Add(descriptor)
-        '
 ````
 
 {{endregion}} 

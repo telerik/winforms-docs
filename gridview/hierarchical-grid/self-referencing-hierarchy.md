@@ -31,83 +31,78 @@ In order to achieve the look of the RadGridView from the screenshot above, we ne
 {{source=..\SamplesVB\GridView\HierarchicalGrid\FileSystemItem.vb region=fileSystemItem}} 
 
 ````C#
-    public class FileSystemItem
+public class FileSystemItem
+{
+    int id;
+    string name;
+    DateTime creationTime;
+    int parentFolderId;
+    private string type;
+    public int Id
     {
-        int id;
-        string name;
-        DateTime creationTime;
-        int parentFolderId;
-        private string type;
-
-        public int Id
+        get
         {
-            get
-            {
-                return id;
-            }
-            set
-            {
-                id = value;
-            }
+            return id;
         }
-
-        public string FileSystemInfoType
+        set
         {
-            get
-            {
-                return type;
-            }
-            set
-            {
-                type = value;
-            }
-        }
-
-        public string Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
-
-        public DateTime CreationTime
-        {
-            get
-            {
-                return creationTime;
-            }
-            set
-            {
-                creationTime = value;
-            }
-        }
-
-        public int ParentFolderId
-        {
-            get
-            {
-                return parentFolderId;
-            }
-            set
-            {
-                parentFolderId = value;
-            }
-        }
-
-        public FileSystemItem(int id, string type, string name, DateTime creationTime, int parentFolderId)
-        {
-            this.id = id;
-            this.type = type;
-            this.name = name;
-            this.creationTime = creationTime;
-            this.parentFolderId = parentFolderId;
+            id = value;
         }
     }
+    public string FileSystemInfoType
+    {
+        get
+        {
+            return type;
+        }
+        set
+        {
+            type = value;
+        }
+    }
+    public string Name
+    {
+        get
+        {
+            return name;
+        }
+        set
+        {
+            name = value;
+        }
+    }
+    public DateTime CreationTime
+    {
+        get
+        {
+            return creationTime;
+        }
+        set
+        {
+            creationTime = value;
+        }
+    }
+    public int ParentFolderId
+    {
+        get
+        {
+            return parentFolderId;
+        }
+        set
+        {
+            parentFolderId = value;
+        }
+    }
+    public FileSystemItem(int id, string type, string name, DateTime creationTime, int parentFolderId)
+    {
+        this.id = id;
+        this.type = type;
+        this.name = name;
+        this.creationTime = creationTime;
+        this.parentFolderId = parentFolderId;
+    }
+}
+
 ````
 ````VB.NET
 Public Class FileSystemItem
@@ -115,9 +110,7 @@ Public Class FileSystemItem
     Private name_Renamed As String
     Private creationTime_Renamed As Date
     Private parentFolderId_Renamed As Integer
-
     Private type As String
-
     Public Property Id() As Integer
         Get
             Return id_Renamed
@@ -126,7 +119,6 @@ Public Class FileSystemItem
             id_Renamed = value
         End Set
     End Property
-
     Public Property FileSystemInfoType() As String
         Get
             Return type
@@ -135,7 +127,6 @@ Public Class FileSystemItem
             type = value
         End Set
     End Property
-
     Public Property Name() As String
         Get
             Return name_Renamed
@@ -144,7 +135,6 @@ Public Class FileSystemItem
             name_Renamed = value
         End Set
     End Property
-
     Public Property CreationTime() As Date
         Get
             Return creationTime_Renamed
@@ -153,7 +143,6 @@ Public Class FileSystemItem
             creationTime_Renamed = value
         End Set
     End Property
-
     Public Property ParentFolderId() As Integer
         Get
             Return parentFolderId_Renamed
@@ -162,7 +151,6 @@ Public Class FileSystemItem
             parentFolderId_Renamed = value
         End Set
     End Property
-
     Public Sub New(ByVal id As Integer, ByVal type As String, ByVal name As String, ByVal creationTime As Date, ByVal parentFolderId As Integer)
         Me.id_Renamed = id
         Me.type = type
@@ -171,7 +159,7 @@ Public Class FileSystemItem
         Me.parentFolderId_Renamed = parentFolderId
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -182,48 +170,45 @@ End Class
 {{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=fillingList}} 
 
 ````C#
-        BindingList<FileSystemItem> list = new BindingList<FileSystemItem>();
-        int fileFolderIndex = 0;
+BindingList<FileSystemItem> list = new BindingList<FileSystemItem>();
+int fileFolderIndex = 0;
+public void GetFilesAndFolders(string dir, int parentId)
+{
+    DirectoryInfo di = new DirectoryInfo(dir);
+    FileInfo[] rgFiles = di.GetFiles();
+    foreach (FileInfo fi in rgFiles)
+    {
+        fileFolderIndex++;
+        list.Add(new FileSystemItem(fileFolderIndex, "File", fi.Name, fi.CreationTime, parentId));
+    }
+    DirectoryInfo[] dirs = di.GetDirectories();
+    foreach (DirectoryInfo d in dirs)
+    {
+        fileFolderIndex++;
+        list.Add(new FileSystemItem(fileFolderIndex, "Folder", d.Name, d.CreationTime, parentId));
+        GetFilesAndFolders(d.FullName, fileFolderIndex);
+    }
+}
 
-        public void GetFilesAndFolders(string dir, int parentId)
-        {
-            DirectoryInfo di = new DirectoryInfo(dir);
-            FileInfo[] rgFiles = di.GetFiles();
-            foreach (FileInfo fi in rgFiles)
-            {
-                fileFolderIndex++;
-                list.Add(new FileSystemItem(fileFolderIndex, "File", fi.Name, fi.CreationTime, parentId));
-            }
-
-            DirectoryInfo[] dirs = di.GetDirectories();
-            foreach (DirectoryInfo d in dirs)
-            {
-                fileFolderIndex++;
-                list.Add(new FileSystemItem(fileFolderIndex, "Folder", d.Name, d.CreationTime, parentId));
-                GetFilesAndFolders(d.FullName, fileFolderIndex);
-            }
-        }
 ````
 ````VB.NET
-    Private list As New BindingList(Of FileSystemItem)()
-    Private fileFolderIndex As Integer = 0
+Private list As New BindingList(Of FileSystemItem)()
+Private fileFolderIndex As Integer = 0
+Public Sub GetFilesAndFolders(ByVal dir As String, ByVal parentId As Integer)
+    Dim di As New DirectoryInfo(dir)
+    Dim rgFiles() As FileInfo = di.GetFiles()
+    For Each fi As FileInfo In rgFiles
+        fileFolderIndex += 1
+        list.Add(New FileSystemItem(fileFolderIndex, "File", fi.Name, fi.CreationTime, parentId))
+    Next fi
+    Dim dirs() As DirectoryInfo = di.GetDirectories()
+    For Each d As DirectoryInfo In dirs
+        fileFolderIndex += 1
+        list.Add(New FileSystemItem(fileFolderIndex, "Folder", d.Name, d.CreationTime, parentId))
+        GetFilesAndFolders(d.FullName, fileFolderIndex)
+    Next d
+End Sub
 
-    Public Sub GetFilesAndFolders(ByVal dir As String, ByVal parentId As Integer)
-        Dim di As New DirectoryInfo(dir)
-        Dim rgFiles() As FileInfo = di.GetFiles()
-        For Each fi As FileInfo In rgFiles
-            fileFolderIndex += 1
-            list.Add(New FileSystemItem(fileFolderIndex, "File", fi.Name, fi.CreationTime, parentId))
-        Next fi
-
-        Dim dirs() As DirectoryInfo = di.GetDirectories()
-        For Each d As DirectoryInfo In dirs
-            fileFolderIndex += 1
-            list.Add(New FileSystemItem(fileFolderIndex, "Folder", d.Name, d.CreationTime, parentId))
-            GetFilesAndFolders(d.FullName, fileFolderIndex)
-        Next d
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -234,13 +219,14 @@ End Class
 {{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=addSelfReference}} 
 
 ````C#
-            this.radGridView1.Relations.AddSelfReference(this.radGridView1.MasterTemplate, "Id", "ParentFolderId");
-            this.radGridView1.DataSource = list;
+this.radGridView1.Relations.AddSelfReference(this.radGridView1.MasterTemplate, "Id", "ParentFolderId");
+this.radGridView1.DataSource = list;
+
 ````
 ````VB.NET
-        Me.RadGridView1.Relations.AddSelfReference(Me.RadGridView1.MasterTemplate, "Id", "ParentFolderId")
-        Me.RadGridView1.DataSource = list
-        '
+Me.RadGridView1.Relations.AddSelfReference(Me.RadGridView1.MasterTemplate, "Id", "ParentFolderId")
+Me.RadGridView1.DataSource = list
+
 ````
 
 {{endregion}} 
@@ -251,15 +237,16 @@ End Class
 {{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=hideColumns}} 
 
 ````C#
-            this.radGridView1.Columns["Id"].IsVisible = false;
-            this.radGridView1.Columns["ParentFolderId"].IsVisible = false;
-            this.radGridView1.Columns["FileSystemInfoType"].IsVisible = false;
+this.radGridView1.Columns["Id"].IsVisible = false;
+this.radGridView1.Columns["ParentFolderId"].IsVisible = false;
+this.radGridView1.Columns["FileSystemInfoType"].IsVisible = false;
+
 ````
 ````VB.NET
-        Me.RadGridView1.Columns("Id").IsVisible = False
-        Me.RadGridView1.Columns("ParentFolderId").IsVisible = False
-        Me.RadGridView1.Columns("FileSystemInfoType").IsVisible = False
-        '
+Me.RadGridView1.Columns("Id").IsVisible = False
+Me.RadGridView1.Columns("ParentFolderId").IsVisible = False
+Me.RadGridView1.Columns("FileSystemInfoType").IsVisible = False
+
 ````
 
 {{endregion}} 
@@ -270,77 +257,66 @@ End Class
 {{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=settingImagesToCells}} 
 
 ````C#
-
-        // Getting the images from the resources of the project
-        Image documentImage = SamplesCS.Properties.Resources.Document;
-        Image folderImage = SamplesCS.Properties.Resources.Folder;
-
-        void radGridView1_CellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
+// Getting the images from the resources of the project
+Image documentImage = SamplesCS.Properties.Resources.Document;
+Image folderImage = SamplesCS.Properties.Resources.Folder;
+void radGridView1_CellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
+{
+    GridDataCellElement dataCell = e.CellElement as GridDataCellElement;
+    if (dataCell.ColumnInfo.Name == "Name")
+    {
+        GridViewDataRowInfo dataRow = dataCell.RowInfo as GridViewDataRowInfo;
+        if (dataRow != null)
         {
-            GridDataCellElement dataCell = e.CellElement as GridDataCellElement;
-
-            if (dataCell.ColumnInfo.Name == "Name")
+            dataCell.ImageAlignment = ContentAlignment.MiddleLeft;
+            string valueType = Convert.ToString(dataRow.Cells["FileSystemInfoType"].Value).ToUpperInvariant();
+            if (valueType.Contains("FILE"))
             {
-                GridViewDataRowInfo dataRow = dataCell.RowInfo as GridViewDataRowInfo;
-                if (dataRow != null)
-                {
-                    dataCell.ImageAlignment = ContentAlignment.MiddleLeft;
-
-                    string valueType = Convert.ToString(dataRow.Cells["FileSystemInfoType"].Value).ToUpperInvariant();
-
-                    if (valueType.Contains("FILE"))
-                    {
-                        dataCell.Image = documentImage;
-                    }
-                    else
-                    {
-                        dataCell.Image = folderImage;
-                    }
-
-                    dataCell.TextImageRelation = TextImageRelation.ImageBeforeText;
-                }
+                dataCell.Image = documentImage;
             }
             else
             {
-                dataCell.ResetValue(LightVisualElement.ImageProperty, Telerik.WinControls.ValueResetFlags.Local);
-                dataCell.ResetValue(LightVisualElement.ImageAlignmentProperty, Telerik.WinControls.ValueResetFlags.Local);
-                dataCell.ResetValue(LightVisualElement.TextImageRelationProperty, Telerik.WinControls.ValueResetFlags.Local);
-                dataCell.ResetValue(LightVisualElement.ImageLayoutProperty, Telerik.WinControls.ValueResetFlags.Local);
+                dataCell.Image = folderImage;
             }
+            dataCell.TextImageRelation = TextImageRelation.ImageBeforeText;
         }
+    }
+    else
+    {
+        dataCell.ResetValue(LightVisualElement.ImageProperty, Telerik.WinControls.ValueResetFlags.Local);
+        dataCell.ResetValue(LightVisualElement.ImageAlignmentProperty, Telerik.WinControls.ValueResetFlags.Local);
+        dataCell.ResetValue(LightVisualElement.TextImageRelationProperty, Telerik.WinControls.ValueResetFlags.Local);
+        dataCell.ResetValue(LightVisualElement.ImageLayoutProperty, Telerik.WinControls.ValueResetFlags.Local);
+    }
+}
+
 ````
 ````VB.NET
-
-    ' Getting the images from the resources of the project
-    Private documentImage As Image = SamplesVB.My.Resources.Document
-    Private folderImage As Image = SamplesVB.My.Resources.Folder
-
-    Private Sub radGridView1_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs)
-        Dim dataCell As GridDataCellElement = TryCast(e.CellElement, GridDataCellElement)
-
-        If dataCell.ColumnInfo.Name = "Name" Then
-            Dim dataRow As GridViewDataRowInfo = TryCast(dataCell.RowInfo, GridViewDataRowInfo)
-            If dataRow IsNot Nothing Then
-                dataCell.ImageAlignment = ContentAlignment.MiddleLeft
-
-                Dim valueType As String = Convert.ToString(dataRow.Cells("FileSystemInfoType").Value).ToUpperInvariant()
-
-                If valueType.Contains("FILE") Then
-                    dataCell.Image = documentImage
-                Else
-                    dataCell.Image = folderImage
-                End If
-
-                dataCell.TextImageRelation = TextImageRelation.ImageBeforeText
+' Getting the images from the resources of the project
+Private documentImage As Image = SamplesVB.My.Resources.Document
+Private folderImage As Image = SamplesVB.My.Resources.Folder
+Private Sub radGridView1_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs)
+    Dim dataCell As GridDataCellElement = TryCast(e.CellElement, GridDataCellElement)
+    If dataCell.ColumnInfo.Name = "Name" Then
+        Dim dataRow As GridViewDataRowInfo = TryCast(dataCell.RowInfo, GridViewDataRowInfo)
+        If dataRow IsNot Nothing Then
+            dataCell.ImageAlignment = ContentAlignment.MiddleLeft
+            Dim valueType As String = Convert.ToString(dataRow.Cells("FileSystemInfoType").Value).ToUpperInvariant()
+            If valueType.Contains("FILE") Then
+                dataCell.Image = documentImage
+            Else
+                dataCell.Image = folderImage
             End If
-        Else
-            dataCell.ResetValue(LightVisualElement.ImageProperty, Telerik.WinControls.ValueResetFlags.Local)
-            dataCell.ResetValue(LightVisualElement.ImageAlignmentProperty, Telerik.WinControls.ValueResetFlags.Local)
-            dataCell.ResetValue(LightVisualElement.TextImageRelationProperty, Telerik.WinControls.ValueResetFlags.Local)
-            dataCell.ResetValue(LightVisualElement.ImageLayoutProperty, Telerik.WinControls.ValueResetFlags.Local)
+            dataCell.TextImageRelation = TextImageRelation.ImageBeforeText
         End If
-    End Sub
-    '
+    Else
+        dataCell.ResetValue(LightVisualElement.ImageProperty, Telerik.WinControls.ValueResetFlags.Local)
+        dataCell.ResetValue(LightVisualElement.ImageAlignmentProperty, Telerik.WinControls.ValueResetFlags.Local)
+        dataCell.ResetValue(LightVisualElement.TextImageRelationProperty, Telerik.WinControls.ValueResetFlags.Local)
+        dataCell.ResetValue(LightVisualElement.ImageLayoutProperty, Telerik.WinControls.ValueResetFlags.Local)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -353,34 +329,31 @@ It is possible to put the self-reference expander in any column by setting the _
 {{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=SelfReferenceExpanderColumn}} 
 
 ````C#
-            this.radGridView1.MasterTemplate.SelfReferenceExpanderColumn = this.radGridView1.Columns["ParentFolderId"];
+this.radGridView1.MasterTemplate.SelfReferenceExpanderColumn = this.radGridView1.Columns["ParentFolderId"];
+
 ````
 ````VB.NET
-        Me.RadGridView1.MasterTemplate.SelfReferenceExpanderColumn = Me.RadGridView1.Columns("ParentFolderId")
-        '#End Region
+Me.RadGridView1.MasterTemplate.SelfReferenceExpanderColumn = Me.RadGridView1.Columns("ParentFolderId")
+'#End Region
+End Sub
+'#region fillingList
+Private list As New BindingList(Of FileSystemItem)()
+Private fileFolderIndex As Integer = 0
+Public Sub GetFilesAndFolders(ByVal dir As String, ByVal parentId As Integer)
+Dim di As New DirectoryInfo(dir)
+Dim rgFiles() As FileInfo = di.GetFiles()
+For Each fi As FileInfo In rgFiles
+    fileFolderIndex += 1
+    list.Add(New FileSystemItem(fileFolderIndex, "File", fi.Name, fi.CreationTime, parentId))
+Next fi
+Dim dirs() As DirectoryInfo = di.GetDirectories()
+For Each d As DirectoryInfo In dirs
+    fileFolderIndex += 1
+    list.Add(New FileSystemItem(fileFolderIndex, "Folder", d.Name, d.CreationTime, parentId))
+    GetFilesAndFolders(d.FullName, fileFolderIndex)
+Next d
+End Sub
 
-    End Sub
-
-    '#region fillingList
-    Private list As New BindingList(Of FileSystemItem)()
-    Private fileFolderIndex As Integer = 0
-
-    Public Sub GetFilesAndFolders(ByVal dir As String, ByVal parentId As Integer)
-        Dim di As New DirectoryInfo(dir)
-        Dim rgFiles() As FileInfo = di.GetFiles()
-        For Each fi As FileInfo In rgFiles
-            fileFolderIndex += 1
-            list.Add(New FileSystemItem(fileFolderIndex, "File", fi.Name, fi.CreationTime, parentId))
-        Next fi
-
-        Dim dirs() As DirectoryInfo = di.GetDirectories()
-        For Each d As DirectoryInfo In dirs
-            fileFolderIndex += 1
-            list.Add(New FileSystemItem(fileFolderIndex, "Folder", d.Name, d.CreationTime, parentId))
-            GetFilesAndFolders(d.FullName, fileFolderIndex)
-        Next d
-    End Sub
-    '
 ````
 
 {{endregion}} 

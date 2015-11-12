@@ -33,29 +33,29 @@ RadMessageLocalizationProvider:
 {{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=LocalizationProvider}} 
 
 ````C#
-    public class MyRadMessageLocalizationProvider : RadMessageLocalizationProvider
+public class MyRadMessageLocalizationProvider : RadMessageLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
     {
-        public override string GetLocalizedString(string id)
+        switch (id)
         {
-            switch (id)
-            {
-                case RadMessageStringID.AbortButton: return "Abbruch";
-                case RadMessageStringID.CancelButton: return "Löschen";
-                case RadMessageStringID.IgnoreButton: return "Ignorieren";
-                case RadMessageStringID.NoButton: return "Nein";
-                case RadMessageStringID.OKButton: return "OK";
-                case RadMessageStringID.RetryButton: return "Wiederholung";
-                case RadMessageStringID.YesButton: return "Ja";
-                default:
-                    return base.GetLocalizedString(id);
-            }
+            case RadMessageStringID.AbortButton: return "Abbruch";
+            case RadMessageStringID.CancelButton: return "Löschen";
+            case RadMessageStringID.IgnoreButton: return "Ignorieren";
+            case RadMessageStringID.NoButton: return "Nein";
+            case RadMessageStringID.OKButton: return "OK";
+            case RadMessageStringID.RetryButton: return "Wiederholung";
+            case RadMessageStringID.YesButton: return "Ja";
+            default:
+                return base.GetLocalizedString(id);
         }
     }
+}
+
 ````
 ````VB.NET
 Public Class MyRadMessageLocalizationProvider
     Inherits RadMessageLocalizationProvider
-
     Public Overloads Overrides Function GetLocalizedString(ByVal id As String) As String
         Select Case id
             Case RadMessageStringID.AbortButton
@@ -77,7 +77,7 @@ Public Class MyRadMessageLocalizationProvider
         End Select
     End Function
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -97,11 +97,12 @@ End Class
 {{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=settingTheLocalizationProvider}} 
 
 ````C#
-            RadMessageLocalizationProvider.CurrentProvider = new MyRadMessageLocalizationProvider();
+RadMessageLocalizationProvider.CurrentProvider = new MyRadMessageLocalizationProvider();
+
 ````
 ````VB.NET
-        RadMessageLocalizationProvider.CurrentProvider = New MyRadMessageLocalizationProvider()
-        '
+RadMessageLocalizationProvider.CurrentProvider = New MyRadMessageLocalizationProvider()
+
 ````
 
 {{endregion}} 

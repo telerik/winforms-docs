@@ -30,25 +30,24 @@ The following sample demonstrates how to change the default font of a BaseTextBo
 {{source=..\SamplesVB\GanttView\Editing\CustomizingEditor.vb region=CustomizingEditor}} 
 
 ````C#
-        private void GanttViewElement_EditorInitialized(object sender, GanttViewItemEditorInitializedEventArgs e)
-        {
-            BaseTextBoxEditor editor = e.Editor as BaseTextBoxEditor;
+private void GanttViewElement_EditorInitialized(object sender, GanttViewItemEditorInitializedEventArgs e)
+{
+    BaseTextBoxEditor editor = e.Editor as BaseTextBoxEditor;
+    if (editor != null)
+    {
+        ((RadTextBoxElement)editor.EditorElement).Font = new Font(FontFamily.Families[12], 12, FontStyle.Bold);
+    }
+}
 
-            if (editor != null)
-            {
-                ((RadTextBoxElement)editor.EditorElement).Font = new Font(FontFamily.Families[12], 12, FontStyle.Bold);
-            }
-        }
 ````
 ````VB.NET
-    Private Sub GanttViewElement_EditorInitialized(sender As Object, e As GanttViewItemEditorInitializedEventArgs)
-        Dim editor As BaseTextBoxEditor = TryCast(e.Editor, BaseTextBoxEditor)
+Private Sub GanttViewElement_EditorInitialized(sender As Object, e As GanttViewItemEditorInitializedEventArgs)
+    Dim editor As BaseTextBoxEditor = TryCast(e.Editor, BaseTextBoxEditor)
+    If editor IsNot Nothing Then
+        DirectCast(editor.EditorElement, RadTextBoxElement).Font = New Font(FontFamily.Families(12), 12, FontStyle.Bold)
+    End If
+End Sub
 
-        If editor IsNot Nothing Then
-            DirectCast(editor.EditorElement, RadTextBoxElement).Font = New Font(FontFamily.Families(12), 12, FontStyle.Bold)
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 

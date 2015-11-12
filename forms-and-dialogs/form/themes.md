@@ -35,12 +35,13 @@ This section shows how to apply the Office2007Black theme to a __RadForm__ in th
 {{source=..\SamplesVB\Forms and Dialogs\Form1.Designer.vb region=radForm}} 
 
 ````C#
-    partial class Form1 : Telerik.WinControls.UI.RadForm
+partial class Form1 : Telerik.WinControls.UI.RadForm
+
 ````
 ````VB.NET
 Partial Class Form1
     Inherits Telerik.WinControls.UI.RadForm
-    '
+
 ````
 
 {{endregion}} 

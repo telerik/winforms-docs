@@ -40,19 +40,20 @@ The example below demonstrates the behavior of several of these properties:<br>!
 {{source=..\SamplesVB\GridView\Rows\GridViewRowInfo1.vb region=GridViewRowInfo}} 
 
 ````C#
-            GridViewRowInfo lastRow = radGridView1.Rows[radGridView1.Rows.Count - 1];
-            lastRow.EnsureVisible();
-            lastRow.IsSelected = true;
-            lastRow.Height = 100;
-            lastRow.AllowResize = false;
+GridViewRowInfo lastRow = radGridView1.Rows[radGridView1.Rows.Count - 1];
+lastRow.EnsureVisible();
+lastRow.IsSelected = true;
+lastRow.Height = 100;
+lastRow.AllowResize = false;
+
 ````
 ````VB.NET
-        Dim lastRow As GridViewRowInfo = RadGridView1.Rows(RadGridView1.Rows.Count - 1)
-        lastRow.EnsureVisible()
-        lastRow.IsSelected = True
-        lastRow.Height = 100
-        lastRow.AllowResize = False
-        '
+Dim lastRow As GridViewRowInfo = RadGridView1.Rows(RadGridView1.Rows.Count - 1)
+lastRow.EnsureVisible()
+lastRow.IsSelected = True
+lastRow.Height = 100
+lastRow.AllowResize = False
+
 ````
 
 {{endregion}} 

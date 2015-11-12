@@ -44,59 +44,18 @@ The following example demonstrates how to handle the __CustomGrouping__ event to
 {{source=..\SamplesVB\GridView\Grouping\CustomGrouping.vb region=usingCustomGrouping}} 
 
 ````C#
-        private void radGridView1_CustomGrouping(object sender, GridViewCustomGroupingEventArgs e)
-        {
-            string country = e.Row.Cells["Country"].Value.ToString();
-            switch (country)
-            {
-                case "USA":
-                    e.GroupKey = "1. USA";
-                    break;
-                case "Japan":
-                    e.GroupKey = "2. Japan";
-                    break;
-                case "Germany":
-                    e.GroupKey = "3. Germany";
-                    break;
-                default:
-                    e.GroupKey = "Other country";
-                    break;
-            }
-        }
+this.radGridView1.EnableCustomGrouping = true;
+this.radGridView1.CustomGrouping += new GridViewCustomGroupingEventHandler(radGridView1_CustomGrouping);
+GroupDescriptor descriptor = new GroupDescriptor("Country");
+this.radGridView1.GroupDescriptors.Add(descriptor);
+this.radGridView1.GroupSummaryEvaluate += new GroupSummaryEvaluateEventHandler(radGridView1_GroupSummaryEvaluate);
 
-        private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
-        {
-            if (e.Value == null)
-            {
-                e.FormatString = e.Group.Key.ToString();
-            }
-        }
 ````
 ````VB.NET
-    Private Sub RadGridView1_CustomGrouping(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCustomGroupingEventArgs) Handles RadGridView1.CustomGrouping
-        Dim country As String = e.Row.Cells("Country").Value.ToString()
-        Select Case country
-            Case "USA"
-                e.GroupKey = "1. USA"
-                Exit Select
-            Case "Japan"
-                e.GroupKey = "2. Japan"
-                Exit Select
-            Case "Germany"
-                e.GroupKey = "3. Germany"
-                Exit Select
-            Case Else
-                e.GroupKey = "Other country"
-                Exit Select
-        End Select
-    End Sub
+Me.RadGridView1.EnableCustomGrouping = True
+Dim descriptor As New GroupDescriptor("Country")
+Me.RadGridView1.GroupDescriptors.Add(descriptor)
 
-    Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
-        If e.Value Is Nothing Then
-            e.FormatString = e.Group.Key.ToString()
-        End If
-    End Sub
-        '
 ````
 
 {{endregion}} 
@@ -107,59 +66,58 @@ The following example demonstrates how to handle the __CustomGrouping__ event to
 {{source=..\SamplesVB\GridView\Grouping\CustomGrouping.vb region=usingCustomGrouping1}} 
 
 ````C#
-        private void radGridView1_CustomGrouping(object sender, GridViewCustomGroupingEventArgs e)
-        {
-            string country = e.Row.Cells["Country"].Value.ToString();
-            switch (country)
-            {
-                case "USA":
-                    e.GroupKey = "1. USA";
-                    break;
-                case "Japan":
-                    e.GroupKey = "2. Japan";
-                    break;
-                case "Germany":
-                    e.GroupKey = "3. Germany";
-                    break;
-                default:
-                    e.GroupKey = "Other country";
-                    break;
-            }
-        }
+private void radGridView1_CustomGrouping(object sender, GridViewCustomGroupingEventArgs e)
+{
+    string country = e.Row.Cells["Country"].Value.ToString();
+    switch (country)
+    {
+        case "USA":
+            e.GroupKey = "1. USA";
+            break;
+        case "Japan":
+            e.GroupKey = "2. Japan";
+            break;
+        case "Germany":
+            e.GroupKey = "3. Germany";
+            break;
+        default:
+            e.GroupKey = "Other country";
+            break;
+    }
+}
+private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
+{
+    if (e.Value == null)
+    {
+        e.FormatString = e.Group.Key.ToString();
+    }
+}
 
-        private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
-        {
-            if (e.Value == null)
-            {
-                e.FormatString = e.Group.Key.ToString();
-            }
-        }
 ````
 ````VB.NET
-    Private Sub RadGridView1_CustomGrouping(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCustomGroupingEventArgs) Handles RadGridView1.CustomGrouping
-        Dim country As String = e.Row.Cells("Country").Value.ToString()
-        Select Case country
-            Case "USA"
-                e.GroupKey = "1. USA"
-                Exit Select
-            Case "Japan"
-                e.GroupKey = "2. Japan"
-                Exit Select
-            Case "Germany"
-                e.GroupKey = "3. Germany"
-                Exit Select
-            Case Else
-                e.GroupKey = "Other country"
-                Exit Select
-        End Select
-    End Sub
+Private Sub RadGridView1_CustomGrouping(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCustomGroupingEventArgs) Handles RadGridView1.CustomGrouping
+    Dim country As String = e.Row.Cells("Country").Value.ToString()
+    Select Case country
+        Case "USA"
+            e.GroupKey = "1. USA"
+            Exit Select
+        Case "Japan"
+            e.GroupKey = "2. Japan"
+            Exit Select
+        Case "Germany"
+            e.GroupKey = "3. Germany"
+            Exit Select
+        Case Else
+            e.GroupKey = "Other country"
+            Exit Select
+    End Select
+End Sub
+Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
+    If e.Value Is Nothing Then
+        e.FormatString = e.Group.Key.ToString()
+    End If
+End Sub
 
-    Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
-        If e.Value Is Nothing Then
-            e.FormatString = e.Group.Key.ToString()
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -178,61 +136,58 @@ The following example demonstrates how to use a custom grouping mechanism in Rad
 {{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=usingGroupPredicate}} 
 
 ````C#
-        private object PerformGrouping(GridViewRowInfo row, int level)
-        {
-            string title = row.Cells["ContactTitle"].Value.ToString();
-            string groupKey;
-            if (title.StartsWith("Sales"))
-            {
-                groupKey = "1. Sales contacts";
-            }
-            else if (title.StartsWith("Marketing"))
-            {
-                groupKey = "2. Marketing contacts";
-            }
-            else if (title.StartsWith("Accounting"))
-            {
-                groupKey = "3. Accounting contacts";
-            }
-            else
-            {
-                groupKey = "Other contacts";
-            }
+private object PerformGrouping(GridViewRowInfo row, int level)
+{
+    string title = row.Cells["ContactTitle"].Value.ToString();
+    string groupKey;
+    if (title.StartsWith("Sales"))
+    {
+        groupKey = "1. Sales contacts";
+    }
+    else if (title.StartsWith("Marketing"))
+    {
+        groupKey = "2. Marketing contacts";
+    }
+    else if (title.StartsWith("Accounting"))
+    {
+        groupKey = "3. Accounting contacts";
+    }
+    else
+    {
+        groupKey = "Other contacts";
+    }
+    return groupKey;
+}
+private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
+{
+    if (e.Value == null)
+    {
+        e.FormatString = e.Group.Key.ToString();
+    }
+}
 
-            return groupKey;
-        }
-
-        private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
-        {
-            if (e.Value == null)
-            {
-                e.FormatString = e.Group.Key.ToString();
-            }
-        }
 ````
 ````VB.NET
-    Private Function PerformGrouping(ByVal row As GridViewRowInfo, ByVal level As Integer) As Object
-        Dim title As String = row.Cells("ContactTitle").Value.ToString()
-        Dim groupKey As String
-        If title.StartsWith("Sales") Then
-            groupKey = "1. Sales contacts"
-        ElseIf title.StartsWith("Marketing") Then
-            groupKey = "2. Marketing contacts"
-        ElseIf title.StartsWith("Accounting") Then
-            groupKey = "3. Accounting contacts"
-        Else
-            groupKey = "Other contacts"
-        End If
+Private Function PerformGrouping(ByVal row As GridViewRowInfo, ByVal level As Integer) As Object
+    Dim title As String = row.Cells("ContactTitle").Value.ToString()
+    Dim groupKey As String
+    If title.StartsWith("Sales") Then
+        groupKey = "1. Sales contacts"
+    ElseIf title.StartsWith("Marketing") Then
+        groupKey = "2. Marketing contacts"
+    ElseIf title.StartsWith("Accounting") Then
+        groupKey = "3. Accounting contacts"
+    Else
+        groupKey = "Other contacts"
+    End If
+    Return groupKey
+End Function
+Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
+    If e.Value Is Nothing Then
+        e.FormatString = e.Group.Key.ToString()
+    End If
+End Sub
 
-        Return groupKey
-    End Function
-
-    Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
-        If e.Value Is Nothing Then
-            e.FormatString = e.Group.Key.ToString()
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -242,61 +197,58 @@ The following example demonstrates how to use a custom grouping mechanism in Rad
 {{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=usingGroupPredicate1}} 
 
 ````C#
-        private object PerformGrouping(GridViewRowInfo row, int level)
-        {
-            string title = row.Cells["ContactTitle"].Value.ToString();
-            string groupKey;
-            if (title.StartsWith("Sales"))
-            {
-                groupKey = "1. Sales contacts";
-            }
-            else if (title.StartsWith("Marketing"))
-            {
-                groupKey = "2. Marketing contacts";
-            }
-            else if (title.StartsWith("Accounting"))
-            {
-                groupKey = "3. Accounting contacts";
-            }
-            else
-            {
-                groupKey = "Other contacts";
-            }
+private object PerformGrouping(GridViewRowInfo row, int level)
+{
+    string title = row.Cells["ContactTitle"].Value.ToString();
+    string groupKey;
+    if (title.StartsWith("Sales"))
+    {
+        groupKey = "1. Sales contacts";
+    }
+    else if (title.StartsWith("Marketing"))
+    {
+        groupKey = "2. Marketing contacts";
+    }
+    else if (title.StartsWith("Accounting"))
+    {
+        groupKey = "3. Accounting contacts";
+    }
+    else
+    {
+        groupKey = "Other contacts";
+    }
+    return groupKey;
+}
+private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
+{
+    if (e.Value == null)
+    {
+        e.FormatString = e.Group.Key.ToString();
+    }
+}
 
-            return groupKey;
-        }
-
-        private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
-        {
-            if (e.Value == null)
-            {
-                e.FormatString = e.Group.Key.ToString();
-            }
-        }
 ````
 ````VB.NET
-    Private Function PerformGrouping(ByVal row As GridViewRowInfo, ByVal level As Integer) As Object
-        Dim title As String = row.Cells("ContactTitle").Value.ToString()
-        Dim groupKey As String
-        If title.StartsWith("Sales") Then
-            groupKey = "1. Sales contacts"
-        ElseIf title.StartsWith("Marketing") Then
-            groupKey = "2. Marketing contacts"
-        ElseIf title.StartsWith("Accounting") Then
-            groupKey = "3. Accounting contacts"
-        Else
-            groupKey = "Other contacts"
-        End If
+Private Function PerformGrouping(ByVal row As GridViewRowInfo, ByVal level As Integer) As Object
+    Dim title As String = row.Cells("ContactTitle").Value.ToString()
+    Dim groupKey As String
+    If title.StartsWith("Sales") Then
+        groupKey = "1. Sales contacts"
+    ElseIf title.StartsWith("Marketing") Then
+        groupKey = "2. Marketing contacts"
+    ElseIf title.StartsWith("Accounting") Then
+        groupKey = "3. Accounting contacts"
+    Else
+        groupKey = "Other contacts"
+    End If
+    Return groupKey
+End Function
+Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
+    If e.Value Is Nothing Then
+        e.FormatString = e.Group.Key.ToString()
+    End If
+End Sub
 
-        Return groupKey
-    End Function
-
-    Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
-        If e.Value Is Nothing Then
-            e.FormatString = e.Group.Key.ToString()
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 

@@ -20,20 +20,17 @@ There are two events that are raised, when the data in the RadGridView is groupe
 {{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=eventHandlers}}
 
 ````C#
-        void radGridView1_GroupByChanging1(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
-        {
-            e.Cancel = true;
-        }
+void radGridView1_GroupByChanging1(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
+{
+    e.Cancel = true;
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_GroupByChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles RadGridView1.GroupByChanged
+Private Sub RadGridView1_GroupByChanging1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.GroupByChanging
+    e.Cancel = True
+End Sub
 
-    End Sub
-
-    Private Sub RadGridView1_GroupByChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.GroupByChanging
-
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -49,20 +46,17 @@ You are also able to cancel the grouping operation by setting the __Cancel__ pro
 {{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=cancelGrouping}} 
 {{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=cancelGrouping}} 
 ````C#
-        void radGridView1_GroupByChanging1(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
-        {
-            e.Cancel = true;
-        }
+void radGridView1_GroupByChanging1(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
+{
+    e.Cancel = true;
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_GroupByChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles RadGridView1.GroupByChanged
+Private Sub RadGridView1_GroupByChanging1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.GroupByChanging
+    e.Cancel = True
+End Sub
 
-    End Sub
-
-    Private Sub RadGridView1_GroupByChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.GroupByChanging
-
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -72,13 +66,12 @@ Since the __GroupDescriptors__ collection implements the __INotifyPropertyChange
 {{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=subscribeToCollectionChanged}} 
 {{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=subscribeToCollectionChanged}} 
 ````C#
-            radGridView1.GroupDescriptors.CollectionChanged += new Telerik.WinControls.Data.NotifyCollectionChangedEventHandler(GroupDescriptors_CollectionChanged);
+radGridView1.GroupDescriptors.CollectionChanged += new Telerik.WinControls.Data.NotifyCollectionChangedEventHandler(GroupDescriptors_CollectionChanged);
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_GroupByChanging1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.GroupByChanging
-        e.Cancel = True
-    End Sub
-    '
+AddHandler Me.RadGridView1.GroupDescriptors.CollectionChanged, AddressOf GroupDescriptors_CollectionChanged
+
 ````
 
 {{endregion}} 
@@ -88,14 +81,15 @@ Since the __GroupDescriptors__ collection implements the __INotifyPropertyChange
 {{source=..\SamplesVB\GridView\Grouping\GroupingEvents.vb region=CollectionChangedHandler}} 
 
 ````C#
-        void GroupDescriptors_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
-        {
+void GroupDescriptors_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
+{
+}
 
-        }
 ````
 ````VB.NET
-        AddHandler Me.RadGridView1.GroupDescriptors.CollectionChanged, AddressOf GroupDescriptors_CollectionChanged
-        '
+Private Sub GroupDescriptors_CollectionChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
+End Sub
+
 ````
 
 {{endregion}} 

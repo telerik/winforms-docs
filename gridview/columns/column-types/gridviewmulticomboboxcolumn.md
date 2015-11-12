@@ -25,25 +25,26 @@ First of all, we should bind the GridViewMultiComboBoxColumn:
 {{source=..\SamplesVB\GridView\Columns\GridViewMultiComboBoxColumn1.vb region=addColumn}} 
 
 ````C#
-            GridViewMultiComboBoxColumn col = new GridViewMultiComboBoxColumn();
-            col.DataSource = orderDetailsBindingSource;
-            col.DisplayMember = "Quantity";
-            col.ValueMember = "OrderID";
-            col.FieldName = "OrderID";
-            col.HeaderText = "Custom";
-            this.radGridView1.Columns.Add(col);
-            this.radGridView1.CellBeginEdit += new GridViewCellCancelEventHandler(radGridView1_CellBeginEdit);
+GridViewMultiComboBoxColumn col = new GridViewMultiComboBoxColumn();
+col.DataSource = orderDetailsBindingSource;
+col.DisplayMember = "Quantity";
+col.ValueMember = "OrderID";
+col.FieldName = "OrderID";
+col.HeaderText = "Custom";
+this.radGridView1.Columns.Add(col);
+this.radGridView1.CellBeginEdit += new GridViewCellCancelEventHandler(radGridView1_CellBeginEdit);
+
 ````
 ````VB.NET
-        Dim col As GridViewMultiComboBoxColumn = New GridViewMultiComboBoxColumn()
-        col.DataSource = orderDetailsBindingSource
-        col.DisplayMember = "Quantity"
-        col.ValueMember = "OrderID"
-        col.FieldName = "OrderID"
-        col.HeaderText = "Custom"
-        Me.RadGridView1.Columns.Add(col)
-        AddHandler RadGridView1.CellBeginEdit, AddressOf radGridView1_CellBeginEdit
-        '
+Dim col As GridViewMultiComboBoxColumn = New GridViewMultiComboBoxColumn()
+col.DataSource = orderDetailsBindingSource
+col.DisplayMember = "Quantity"
+col.ValueMember = "OrderID"
+col.FieldName = "OrderID"
+col.HeaderText = "Custom"
+Me.RadGridView1.Columns.Add(col)
+AddHandler RadGridView1.CellBeginEdit, AddressOf radGridView1_CellBeginEdit
+
 ````
 
 {{endregion}} 
@@ -61,38 +62,39 @@ Then, we make the necessary implementation in the CellBeginEdit event handler:#_
 {{source=..\SamplesVB\GridView\Columns\GridViewMultiComboBoxColumn1.vb region=setupTheEditor}} 
 
 ````C#
-        bool isColumnAdded;
-        void radGridView1_CellBeginEdit(object sender, GridViewCellCancelEventArgs e)
+bool isColumnAdded;
+void radGridView1_CellBeginEdit(object sender, GridViewCellCancelEventArgs e)
+{
+    if (this.radGridView1.CurrentColumn is GridViewMultiComboBoxColumn)
+    {
+        if (!isColumnAdded)
         {
-            if (this.radGridView1.CurrentColumn is GridViewMultiComboBoxColumn)
-            {
-                if (!isColumnAdded)
-                {
-                    isColumnAdded = true;
-                    RadMultiColumnComboBoxElement editor = (RadMultiColumnComboBoxElement)this.radGridView1.ActiveEditor;
-                    editor.EditorControl.MasterTemplate.AutoGenerateColumns = false;
-                    editor.EditorControl.Columns.Add(new GridViewTextBoxColumn("OrderID"));
-                    editor.EditorControl.Columns.Add(new GridViewTextBoxColumn("Quantity"));
-                    editor.AutoSizeDropDownToBestFit = true;
-                }
-            }
+            isColumnAdded = true;
+            RadMultiColumnComboBoxElement editor = (RadMultiColumnComboBoxElement)this.radGridView1.ActiveEditor;
+            editor.EditorControl.MasterTemplate.AutoGenerateColumns = false;
+            editor.EditorControl.Columns.Add(new GridViewTextBoxColumn("OrderID"));
+            editor.EditorControl.Columns.Add(new GridViewTextBoxColumn("Quantity"));
+            editor.AutoSizeDropDownToBestFit = true;
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private isColumnAdded As Boolean
-    Private Sub radGridView1_CellBeginEdit(ByVal sender As Object, ByVal e As GridViewCellCancelEventArgs)
-        If TypeOf Me.radGridView1.CurrentColumn Is GridViewMultiComboBoxColumn Then
-            If (Not isColumnAdded) Then
-                isColumnAdded = True
-                Dim editor As RadMultiColumnComboBoxElement = CType(Me.radGridView1.ActiveEditor, RadMultiColumnComboBoxElement)
-                editor.EditorControl.MasterTemplate.AutoGenerateColumns = False
-                editor.EditorControl.Columns.Add(New GridViewTextBoxColumn("OrderID"))
-                editor.EditorControl.Columns.Add(New GridViewTextBoxColumn("Quantity"))
-                editor.AutoSizeDropDownToBestFit = True
-            End If
+Private isColumnAdded As Boolean
+Private Sub radGridView1_CellBeginEdit(ByVal sender As Object, ByVal e As GridViewCellCancelEventArgs)
+    If TypeOf Me.radGridView1.CurrentColumn Is GridViewMultiComboBoxColumn Then
+        If (Not isColumnAdded) Then
+            isColumnAdded = True
+            Dim editor As RadMultiColumnComboBoxElement = CType(Me.radGridView1.ActiveEditor, RadMultiColumnComboBoxElement)
+            editor.EditorControl.MasterTemplate.AutoGenerateColumns = False
+            editor.EditorControl.Columns.Add(New GridViewTextBoxColumn("OrderID"))
+            editor.EditorControl.Columns.Add(New GridViewTextBoxColumn("Quantity"))
+            editor.AutoSizeDropDownToBestFit = True
         End If
-    End Sub
-    '
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

@@ -39,27 +39,28 @@ Let's assume that:
 {{source=..\SamplesVB\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.vb region=comboColumn}} 
 
 ````C#
-            GridViewComboBoxColumn categoriesColumn = new GridViewComboBoxColumn();
-            categoriesColumn.DisplayMember = "CategoryName";
-            categoriesColumn.ValueMember = "CategoryID";
-            categoriesColumn.FieldName = "CategoryID";
-            categoriesColumn.HeaderText = "Category";
-            categoriesColumn.DataSource = this.categoriesBindingSource;
-            categoriesColumn.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDown;
-            categoriesColumn.Width = 150;
-            this.radGridView1.Columns.Insert(4, categoriesColumn);
+GridViewComboBoxColumn categoriesColumn = new GridViewComboBoxColumn();
+categoriesColumn.DisplayMember = "CategoryName";
+categoriesColumn.ValueMember = "CategoryID";
+categoriesColumn.FieldName = "CategoryID";
+categoriesColumn.HeaderText = "Category";
+categoriesColumn.DataSource = this.categoriesBindingSource;
+categoriesColumn.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDown;
+categoriesColumn.Width = 150;
+this.radGridView1.Columns.Insert(4, categoriesColumn);
+
 ````
 ````VB.NET
-        Dim categoriesColumn As New GridViewComboBoxColumn()
-        categoriesColumn.DisplayMember = "CategoryName"
-        categoriesColumn.ValueMember = "CategoryID"
-        categoriesColumn.FieldName = "CategoryID"
-        categoriesColumn.HeaderText = "Category"
-        categoriesColumn.DataSource = Me.CategoriesBindingSource
-        categoriesColumn.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDown
-        categoriesColumn.Width = 150
-        Me.RadGridView1.Columns.Insert(4, categoriesColumn)
-        '
+Dim categoriesColumn As New GridViewComboBoxColumn()
+categoriesColumn.DisplayMember = "CategoryName"
+categoriesColumn.ValueMember = "CategoryID"
+categoriesColumn.FieldName = "CategoryID"
+categoriesColumn.HeaderText = "Category"
+categoriesColumn.DataSource = Me.CategoriesBindingSource
+categoriesColumn.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDown
+categoriesColumn.Width = 150
+Me.RadGridView1.Columns.Insert(4, categoriesColumn)
+
 ````
 
 {{endregion}} 
@@ -73,35 +74,34 @@ Let's assume that:
 {{source=..\SamplesVB\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.vb region=properties}} 
 
 ````C#
-        public NwindDataSet DataSet
-        {
-            get
-            {
-                return this.nwindDataSet;
-            }
-        }
+public NwindDataSet DataSet
+{
+    get
+    {
+        return this.nwindDataSet;
+    }
+}
+public CategoriesTableAdapter CategoriesTA
+{
+    get
+    {
+        return this.categoriesTableAdapter;
+    }
+}
 
-        public CategoriesTableAdapter CategoriesTA
-        {
-            get
-            {
-                return this.categoriesTableAdapter;
-            }
-        }
 ````
 ````VB.NET
-    Public ReadOnly Property DataSet() As NwindDataSet
-        Get
-            Return Me.NwindDataSet
-        End Get
-    End Property
+Public ReadOnly Property DataSet() As NwindDataSet
+    Get
+        Return Me.NwindDataSet
+    End Get
+End Property
+Public ReadOnly Property CategoriesTA() As CategoriesTableAdapter
+    Get
+        Return Me.CategoriesTableAdapter
+    End Get
+End Property
 
-    Public ReadOnly Property CategoriesTA() As CategoriesTableAdapter
-        Get
-            Return Me.CategoriesTableAdapter
-        End Get
-    End Property
-    '
 ````
 
 {{endregion}} 
@@ -120,64 +120,55 @@ We are going to replace the "TO DO" comment with the code snippets provided at 4
 {{source=..\SamplesVB\GridView\Editors\How-To\CustomDropDownEditor.vb region=checkValue}} 
 
 ````C#
-            GridComboBoxCellElement cellElement = this.OwnerElement as GridComboBoxCellElement;
+GridComboBoxCellElement cellElement = this.OwnerElement as GridComboBoxCellElement;
+RadGridView grid = cellElement.GridControl;
+AllowEnd_usersAddItemsComboBoxEditor f = (AllowEnd_usersAddItemsComboBoxEditor)grid.FindForm();
+// Checking if the typed value exists in the datasource of the column.
+NwindDataSet.CategoriesDataTable dt = f.DataSet.Categories;
+for (int i = 0; i < dt.Rows.Count; i++)
+{
+    if (dt.Rows[i]["CategoryName"].ToString() == ((RadDropDownListEditorElement)this.EditorElement).Text)
+    {
+        return base.EndEdit();
+    }
+}
 
-            RadGridView grid = cellElement.GridControl;
-            AllowEnd_usersAddItemsComboBoxEditor f = (AllowEnd_usersAddItemsComboBoxEditor)grid.FindForm();
-
-            // Checking if the typed value exists in the datasource of the column.
-            NwindDataSet.CategoriesDataTable dt = f.DataSet.Categories;
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                if (dt.Rows[i]["CategoryName"].ToString() == ((RadDropDownListEditorElement)this.EditorElement).Text)
-                {
-                    return base.EndEdit();
-                }
-            }
 ````
 ````VB.NET
-        Dim cellElement As GridComboBoxCellElement = TryCast(Me.OwnerElement, GridComboBoxCellElement)
-
-        Dim grid As RadGridView = cellElement.GridControl
-        Dim f As AllowEnd_usersAddItemsComboBoxEditor = CType(grid.FindForm(), AllowEnd_usersAddItemsComboBoxEditor)
-
-        ' Checking if the typed value exists in the datasource of the column.
-        Dim dt As NwindDataSet.CategoriesDataTable = f.DataSet.Categories
-        For i As Integer = 0 To dt.Rows.Count - 1
-            If dt.Rows(i)("CategoryName").ToString() = (CType(Me.EditorElement, RadDropDownListEditorElement)).Text Then
-                Return MyBase.EndEdit()
-            End If
-        Next i
-        '#End Region
-
-        '#Region "addValue"
-        ' An example of what we can do when we enter the custom text.
-        ' In this case we are adding a new data row in the underlying datasource of 
-        ' the combobox column and then in the CellEndEdit we are setting
-        ' the ID value of the newly created row to RadGridView.
-        Dim newCategoriesRow As NwindDataSet.CategoriesRow = dt.NewCategoriesRow()
-        newCategoriesRow.CategoryName = (CType(Me.EditorElement, RadDropDownListEditorElement)).Text
-        f.DataSet.Categories.Rows.Add(newCategoriesRow)
-
-        ' Updating the database. You can do it here at another place
-        ' you find suitable for this purpose, for example, on FormClosing.
-        f.CategoriesTA.Update(f.DataSet.Categories)
-
-        cellElement.Tag = newCategoriesRow.CategoryID
-
+Dim cellElement As GridComboBoxCellElement = TryCast(Me.OwnerElement, GridComboBoxCellElement)
+Dim grid As RadGridView = cellElement.GridControl
+Dim f As AllowEnd_usersAddItemsComboBoxEditor = CType(grid.FindForm(), AllowEnd_usersAddItemsComboBoxEditor)
+' Checking if the typed value exists in the datasource of the column.
+Dim dt As NwindDataSet.CategoriesDataTable = f.DataSet.Categories
+For i As Integer = 0 To dt.Rows.Count - 1
+    If dt.Rows(i)("CategoryName").ToString() = (CType(Me.EditorElement, RadDropDownListEditorElement)).Text Then
         Return MyBase.EndEdit()
-        '#End Region
-    End Function
-End Class
+    End If
+Next i
 '#End Region
+'#Region "addValue"
+' An example of what we can do when we enter the custom text.
+' In this case we are adding a new data row in the underlying datasource of 
+' the combobox column and then in the CellEndEdit we are setting
+' the ID value of the newly created row to RadGridView.
+Dim newCategoriesRow As NwindDataSet.CategoriesRow = dt.NewCategoriesRow()
+newCategoriesRow.CategoryName = (CType(Me.EditorElement, RadDropDownListEditorElement)).Text
+f.DataSet.Categories.Rows.Add(newCategoriesRow)
+' Updating the database. You can do it here at another place
+' you find suitable for this purpose, for example, on FormClosing.
+f.CategoriesTA.Update(f.DataSet.Categories)
+cellElement.Tag = newCategoriesRow.CategoryID
+Return MyBase.EndEdit()
+'#End Region
+End Function
+s
+gion
+e SamplesCS.GridView.Editors.How_To1
+'#region customEditorClass1
+Public Class CustomDropDownEditor
+Inherits RadDropDownListEditor
+Public Overrides Function EndEdit() As Boolean
 
-Namespace SamplesCS.GridView.Editors.How_To1
-    '#region customEditorClass1
-    Public Class CustomDropDownEditor
-        Inherits RadDropDownListEditor
-
-        Public Overrides Function EndEdit() As Boolean
-            '
 ````
 
 {{endregion}} 
@@ -191,50 +182,43 @@ Namespace SamplesCS.GridView.Editors.How_To1
 {{source=..\SamplesVB\GridView\Editors\How-To\CustomDropDownEditor.vb region=addValue}} 
 
 ````C#
-            // An example of what we can do when we enter the custom text.
-            // In this case we are adding a new data row in the underlying datasource of 
-            // the combobox column and then in the CellEndEdit we are setting
-            // the ID value of the newly created row to RadGridView.
-            NwindDataSet.CategoriesRow newCategoriesRow = dt.NewCategoriesRow();
-            newCategoriesRow.CategoryName = ((RadDropDownListEditorElement)this.EditorElement).Text;
-            f.DataSet.Categories.Rows.Add(newCategoriesRow);
+// An example of what we can do when we enter the custom text.
+// In this case we are adding a new data row in the underlying datasource of 
+// the combobox column and then in the CellEndEdit we are setting
+// the ID value of the newly created row to RadGridView.
+NwindDataSet.CategoriesRow newCategoriesRow = dt.NewCategoriesRow();
+newCategoriesRow.CategoryName = ((RadDropDownListEditorElement)this.EditorElement).Text;
+f.DataSet.Categories.Rows.Add(newCategoriesRow);
+// Updating the database. You can do it here at another place
+// you find suitable for this purpose, for example, on FormClosing.
+f.CategoriesTA.Update(f.DataSet.Categories);
+cellElement.Tag = newCategoriesRow.CategoryID;
+return base.EndEdit();
 
-            // Updating the database. You can do it here at another place
-            // you find suitable for this purpose, for example, on FormClosing.
-            f.CategoriesTA.Update(f.DataSet.Categories);
-
-            cellElement.Tag = newCategoriesRow.CategoryID;
-
-            return base.EndEdit();
 ````
 ````VB.NET
-        ' An example of what we can do when we enter the custom text.
-        ' In this case we are adding a new data row in the underlying datasource of 
-        ' the combobox column and then in the CellEndEdit we are setting
-        ' the ID value of the newly created row to RadGridView.
-        Dim newCategoriesRow As NwindDataSet.CategoriesRow = dt.NewCategoriesRow()
-        newCategoriesRow.CategoryName = (CType(Me.EditorElement, RadDropDownListEditorElement)).Text
-        f.DataSet.Categories.Rows.Add(newCategoriesRow)
-
-        ' Updating the database. You can do it here at another place
-        ' you find suitable for this purpose, for example, on FormClosing.
-        f.CategoriesTA.Update(f.DataSet.Categories)
-
-        cellElement.Tag = newCategoriesRow.CategoryID
-
-        Return MyBase.EndEdit()
-        '#End Region
-    End Function
-End Class
+' An example of what we can do when we enter the custom text.
+' In this case we are adding a new data row in the underlying datasource of 
+' the combobox column and then in the CellEndEdit we are setting
+' the ID value of the newly created row to RadGridView.
+Dim newCategoriesRow As NwindDataSet.CategoriesRow = dt.NewCategoriesRow()
+newCategoriesRow.CategoryName = (CType(Me.EditorElement, RadDropDownListEditorElement)).Text
+f.DataSet.Categories.Rows.Add(newCategoriesRow)
+' Updating the database. You can do it here at another place
+' you find suitable for this purpose, for example, on FormClosing.
+f.CategoriesTA.Update(f.DataSet.Categories)
+cellElement.Tag = newCategoriesRow.CategoryID
+Return MyBase.EndEdit()
 '#End Region
+End Function
+s
+gion
+e SamplesCS.GridView.Editors.How_To1
+'#region customEditorClass1
+Public Class CustomDropDownEditor
+Inherits RadDropDownListEditor
+Public Overrides Function EndEdit() As Boolean
 
-Namespace SamplesCS.GridView.Editors.How_To1
-    '#region customEditorClass1
-    Public Class CustomDropDownEditor
-        Inherits RadDropDownListEditor
-
-        Public Overrides Function EndEdit() As Boolean
-            '
 ````
 
 {{endregion}} 
@@ -248,23 +232,24 @@ Namespace SamplesCS.GridView.Editors.How_To1
 {{source=..\SamplesVB\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.vb region=cellEndEdit}} 
 
 ````C#
-        void radGridView1_CellEndEdit(object sender, GridViewCellEventArgs e)
-        {
-            if (this.radGridView1.CurrentCell.Tag != null)
-            {
-                this.radGridView1.CurrentCell.Value = this.radGridView1.CurrentCell.Tag;
-                this.radGridView1.CurrentCell.Tag = null;
-            }
-        }
+void radGridView1_CellEndEdit(object sender, GridViewCellEventArgs e)
+{
+    if (this.radGridView1.CurrentCell.Tag != null)
+    {
+        this.radGridView1.CurrentCell.Value = this.radGridView1.CurrentCell.Tag;
+        this.radGridView1.CurrentCell.Tag = null;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radGridView1_CellEndEdit(ByVal sender As Object, ByVal e As GridViewCellEventArgs)
-        If Me.RadGridView1.CurrentCell.Tag IsNot Nothing Then
-            Me.RadGridView1.CurrentCell.Value = Me.RadGridView1.CurrentCell.Tag
-            Me.RadGridView1.CurrentCell.Tag = Nothing
-        End If
-    End Sub
-    '
+Private Sub radGridView1_CellEndEdit(ByVal sender As Object, ByVal e As GridViewCellEventArgs)
+    If Me.RadGridView1.CurrentCell.Tag IsNot Nothing Then
+        Me.RadGridView1.CurrentCell.Value = Me.RadGridView1.CurrentCell.Tag
+        Me.RadGridView1.CurrentCell.Tag = Nothing
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -278,21 +263,22 @@ Namespace SamplesCS.GridView.Editors.How_To1
 {{source=..\SamplesVB\GridView\Editors\How-To\AllowEnd-usersAddItemsComboBoxEditor.vb region=editorRequired}} 
 
 ````C#
-        void radGridView1_EditorRequired(object sender, EditorRequiredEventArgs e)
-        {
-            if (e.EditorType == typeof(RadDropDownListEditor))
-            {
-                e.Editor = new CustomDropDownEditor();
-            }
-        }
+void radGridView1_EditorRequired(object sender, EditorRequiredEventArgs e)
+{
+    if (e.EditorType == typeof(RadDropDownListEditor))
+    {
+        e.Editor = new CustomDropDownEditor();
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radGridView1_EditorRequired(ByVal sender As Object, ByVal e As EditorRequiredEventArgs)
-        If e.EditorType Is GetType(RadDropDownListEditor) Then
-            e.Editor = New CustomDropDownEditor()
-        End If
-    End Sub
-    '
+Private Sub radGridView1_EditorRequired(ByVal sender As Object, ByVal e As EditorRequiredEventArgs)
+    If e.EditorType Is GetType(RadDropDownListEditor) Then
+        e.Editor = New CustomDropDownEditor()
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

@@ -27,31 +27,32 @@ The __GraphicalViewItemFormatting__ event allows you to change the style and loo
 {{source=..\SamplesVB\GanttView\Formatting\GraphicalViewItemFormatting.vb region=GraphicalViewItemFormatting}} 
 
 ````C#
-        private void radGanttView1_GraphicalViewItemFormatting(object sender, GanttViewGraphicalViewItemFormattingEventArgs e)
-        {
-            if (e.Item.Title.StartsWith("Select"))
-            {
-                e.ItemElement.TaskElement.BackColor = Color.Lime;
-                e.ItemElement.TaskElement.BackColor2 = Color.Yellow;
-            }
-            else
-            {
-                e.ItemElement.TaskElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-                e.ItemElement.TaskElement.ResetValue(LightVisualElement.BackColor2Property, Telerik.WinControls.ValueResetFlags.Local);
-            }
-        }
+private void radGanttView1_GraphicalViewItemFormatting(object sender, GanttViewGraphicalViewItemFormattingEventArgs e)
+{
+    if (e.Item.Title.StartsWith("Select"))
+    {
+        e.ItemElement.TaskElement.BackColor = Color.Lime;
+        e.ItemElement.TaskElement.BackColor2 = Color.Yellow;
+    }
+    else
+    {
+        e.ItemElement.TaskElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
+        e.ItemElement.TaskElement.ResetValue(LightVisualElement.BackColor2Property, Telerik.WinControls.ValueResetFlags.Local);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radGanttView1_GraphicalViewItemFormatting(sender As Object, e As GanttViewGraphicalViewItemFormattingEventArgs)
-        If (e.Item.Title.StartsWith("Select")) Then
-            e.ItemElement.TaskElement.BackColor = Color.Lime
-            e.ItemElement.TaskElement.BackColor2 = Color.Yellow
-        Else
-            e.ItemElement.TaskElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-            e.ItemElement.TaskElement.ResetValue(LightVisualElement.BackColor2Property, Telerik.WinControls.ValueResetFlags.Local)
-        End If
-    End Sub
-    '
+Private Sub radGanttView1_GraphicalViewItemFormatting(sender As Object, e As GanttViewGraphicalViewItemFormattingEventArgs)
+    If (e.Item.Title.StartsWith("Select")) Then
+        e.ItemElement.TaskElement.BackColor = Color.Lime
+        e.ItemElement.TaskElement.BackColor2 = Color.Yellow
+    Else
+        e.ItemElement.TaskElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
+        e.ItemElement.TaskElement.ResetValue(LightVisualElement.BackColor2Property, Telerik.WinControls.ValueResetFlags.Local)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

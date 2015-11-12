@@ -42,31 +42,22 @@ The following example demonstrates how to draw an image which appears exactly 12
 
 {{source=..\SamplesCS\GanttView\Formatting\CustomPainting.cs region=FormattingEventSubscribe1}} 
 {{source=..\SamplesCS\GanttView\Formatting\CustomPainting.cs region=FormattingPaintEvent1}} 
-{{source=..\SamplesVB\GanttView\Formatting\CustomPainting.vb region=FormattingEventSubscribe1}} 
-
-{{source=..\SamplesVB\GanttView\Formatting\CustomPainting.vb region=FormattingPaintEvent1}} 
-
 ````C#
-        private void radGanttView1_ItemPaint1(object sender, GanttViewItemPaintEventArgs e)
-        {
-            if (e.Element.Data.Items.Count == 0 && e.Element.Data.End - e.Element.Data.Start > new TimeSpan(12, 0, 0))
-            {
-                RectangleF rect = this.radGanttView1.GanttViewElement.GraphicalViewElement.GetDrawRectangle(e.Element.Data, e.Element.Data.End.AddHours(12));
-                rect.Width = rect.Height;
-                e.Graphics.DrawImage(prizeImage, rect);
-            }
-        }
+this.radGanttView1.EnableCustomPainting = true;
+this.radGanttView1.ItemPaint += radGanttView1_ItemPaint1;
+
 ````
 ````VB.NET
-    Private Sub radGanttView1_ItemPaint1(sender As Object, e As GanttViewItemPaintEventArgs)
-        If (e.Element.Data.Items.Count = 0 AndAlso e.Element.Data.End - e.Element.Data.Start > New TimeSpan(12, 0, 0)) Then
+private void radGanttView1_ItemPaint1(object sender, GanttViewItemPaintEventArgs e)
+{
+    if (e.Element.Data.Items.Count == 0 && e.Element.Data.End - e.Element.Data.Start > new TimeSpan(12, 0, 0))
+    {
+        RectangleF rect = this.radGanttView1.GanttViewElement.GraphicalViewElement.GetDrawRectangle(e.Element.Data, e.Element.Data.End.AddHours(12));
+        rect.Width = rect.Height;
+        e.Graphics.DrawImage(prizeImage, rect);
+    }
+}
 
-            Dim rect As RectangleF = Me.radGanttView1.GanttViewElement.GraphicalViewElement.GetDrawRectangle(e.Element.Data, e.Element.Data.End.AddHours(12))
-            rect.Width = rect.Height
-            e.Graphics.DrawImage(prizeImage, rect)
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -92,30 +83,21 @@ Another example demonstrating how to draw a colored rectangle which would be 10 
 
 {{source=..\SamplesCS\GanttView\Formatting\CustomPainting.cs region=FormattingEventSubscribe2}} 
 {{source=..\SamplesCS\GanttView\Formatting\CustomPainting.cs region=FormattingPaintEvent2}} 
-{{source=..\SamplesVB\GanttView\Formatting\CustomPainting.vb region=FormattingEventSubscribe2}} 
-
-{{source=..\SamplesVB\GanttView\Formatting\CustomPainting.vb region=FormattingPaintEvent2}} 
-
 ````C#
-        private void radGanttView1_ItemPaint2(object sender, GanttViewItemPaintEventArgs e)
-        {
-            if (e.Element.Data.Items.Count > 0)
-            {
-                DateTime start = e.Element.Data.Start.AddHours(-18);
-                RectangleF rect = this.radGanttView1.GanttViewElement.GraphicalViewElement.GetDrawRectangle(e.Element.Data, start, start.AddHours(10));
-                e.Graphics.FillRectangle(Brushes.LightBlue, rect);
-            }
-        }
+this.radGanttView1.ItemPaint += radGanttView1_ItemPaint2;
+
 ````
 ````VB.NET
-    Private Sub radGanttView1_ItemPaint2(sender As Object, e As GanttViewItemPaintEventArgs)
-        If (e.Element.Data.Items.Count > 0) Then
-            Dim start As DateTime = e.Element.Data.Start.AddHours(-18)
-            Dim rect As RectangleF = Me.radGanttView1.GanttViewElement.GraphicalViewElement.GetDrawRectangle(e.Element.Data, start, start.AddHours(10))
-            e.Graphics.FillRectangle(Brushes.LightBlue, rect)
-        End If
-    End Sub
-    '
+private void radGanttView1_ItemPaint2(object sender, GanttViewItemPaintEventArgs e)
+{
+    if (e.Element.Data.Items.Count > 0)
+    {
+        DateTime start = e.Element.Data.Start.AddHours(-18);
+        RectangleF rect = this.radGanttView1.GanttViewElement.GraphicalViewElement.GetDrawRectangle(e.Element.Data, start, start.AddHours(10));
+        e.Graphics.FillRectangle(Brushes.LightBlue, rect);
+    }
+}
+
 ````
 
 {{endregion}} 

@@ -22,29 +22,29 @@ Here is how to create and populate __GridViewHyperlinkColumn__:
 {{source=..\SamplesVB\GridView\Columns\GridViewHyperlinkColumn1.vb region=addHyperlinkColumn}} 
 
 ````C#
-            GridViewHyperlinkColumn column = new GridViewHyperlinkColumn("Hyperlink column");
-            this.radGridView1.Columns.Add(column);
+GridViewHyperlinkColumn column = new GridViewHyperlinkColumn("Hyperlink column");
+this.radGridView1.Columns.Add(column);
             
-            this.radGridView1.Rows.Add("http://www.telerik.com");
-            this.radGridView1.Rows.Add("http://www.microsoft.com");
-            this.radGridView1.Rows.Add("http://www.google.com");
-            this.radGridView1.Rows.Add("http://www.cnn.com");
-            this.radGridView1.Rows.Add("http://www.bbc.com");
-            this.radGridView1.Rows.Add("http://www.telerikwatch.com/");
-            this.radGridView1.Rows.Add("http://www.wikipedia.com");
+this.radGridView1.Rows.Add("http://www.telerik.com");
+this.radGridView1.Rows.Add("http://www.microsoft.com");
+this.radGridView1.Rows.Add("http://www.google.com");
+this.radGridView1.Rows.Add("http://www.cnn.com");
+this.radGridView1.Rows.Add("http://www.bbc.com");
+this.radGridView1.Rows.Add("http://www.telerikwatch.com/");
+this.radGridView1.Rows.Add("http://www.wikipedia.com");
+
 ````
 ````VB.NET
-        Dim column As New GridViewHyperlinkColumn("Hyperlink column")
-        Me.radGridView1.Columns.Add(column)
+Dim column As New GridViewHyperlinkColumn("Hyperlink column")
+Me.radGridView1.Columns.Add(column)
+Me.radGridView1.Rows.Add("http://www.telerik.com")
+Me.radGridView1.Rows.Add("http://www.microsoft.com")
+Me.radGridView1.Rows.Add("http://www.google.com")
+Me.radGridView1.Rows.Add("http://www.cnn.com")
+Me.radGridView1.Rows.Add("http://www.bbc.com")
+Me.radGridView1.Rows.Add("http://www.telerikwatch.com/")
+Me.radGridView1.Rows.Add("http://www.wikipedia.com")
 
-        Me.radGridView1.Rows.Add("http://www.telerik.com")
-        Me.radGridView1.Rows.Add("http://www.microsoft.com")
-        Me.radGridView1.Rows.Add("http://www.google.com")
-        Me.radGridView1.Rows.Add("http://www.cnn.com")
-        Me.radGridView1.Rows.Add("http://www.bbc.com")
-        Me.radGridView1.Rows.Add("http://www.telerikwatch.com/")
-        Me.radGridView1.Rows.Add("http://www.wikipedia.com")
-        '
 ````
 
 {{endregion}} 

@@ -24,11 +24,12 @@ Creating a simple expression:
 {{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=creatingSimpleSortingExpression}} 
 
 ````C#
-            this.radGridView1.SortDescriptors.Expression = "ShipName ASC";
+this.radGridView1.SortDescriptors.Expression = "ShipName ASC";
+
 ````
 ````VB.NET
-        Me.RadGridView1.SortDescriptors.Expression = "ShipName ASC"
-        '
+Me.RadGridView1.SortDescriptors.Expression = "ShipName ASC"
+
 ````
 
 {{endregion}} 
@@ -41,11 +42,12 @@ Sorting by two columns using expressions:
 {{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=sortingByTwoColumnsUsingExpression}} 
 
 ````C#
-            this.radGridView1.SortDescriptors.Expression = "ShipName ASC, Freight DESC";
+this.radGridView1.SortDescriptors.Expression = "ShipName ASC, Freight DESC";
+
 ````
 ````VB.NET
-        Me.RadGridView1.SortDescriptors.Expression = "ShipName ASC, Freight DESC"
-        '
+Me.RadGridView1.SortDescriptors.Expression = "ShipName ASC, Freight DESC"
+
 ````
 
 {{endregion}} 

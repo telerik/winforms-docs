@@ -27,42 +27,40 @@ The example below creates an __ArrayList__ of generic objects initialized with f
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToSimpleArrayClass}} 
 
 ````C#
-        public class ValueType<T>
-        {
-            T item;
+public class ValueType<T>
+{
+    T item;
+    public ValueType() { }
+    public ValueType(T item)
+    {
+        this.item = item;
+    }
+    public T ItemProperty
+    {
+        get { return this.item; }
+        set { this.item = value; }
+    }
+}
 
-            public ValueType() { }
-
-            public ValueType(T item)
-            {
-                this.item = item;
-            }
-
-            public T ItemProperty
-            {
-                get { return this.item; }
-                set { this.item = value; }
-            }
-        }
 ````
 ````VB.NET
-    Public Class ValueType(Of T)
-        Private item As T
-        Public Sub New()
-        End Sub
-        Public Sub New(ByVal item As T)
-            Me.item = item
-        End Sub
-        Public Property ItemProperty() As T
-            Get
-                Return Me.item
-            End Get
-            Set(ByVal value As T)
-                Me.item = value
-            End Set
-        End Property
-    End Class
-    '
+Public Class ValueType(Of T)
+    Private item As T
+    Public Sub New()
+    End Sub
+    Public Sub New(ByVal item As T)
+        Me.item = item
+    End Sub
+    Public Property ItemProperty() As T
+        Get
+            Return Me.item
+        End Get
+        Set(ByVal value As T)
+            Me.item = value
+        End Set
+    End Property
+End Class
+
 ````
 
 {{endregion}} 
@@ -71,23 +69,23 @@ The example below creates an __ArrayList__ of generic objects initialized with f
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToSimpleArray}} 
 
 ````C#
-            ArrayList list = new ArrayList();
-            for (int i = 0; i < 5; i++)
-            {
-                list.Add(new ValueType<string>("string " + (i + 1).ToString()));
-            }
+ArrayList list = new ArrayList();
+for (int i = 0; i < 5; i++)
+{
+    list.Add(new ValueType<string>("string " + (i + 1).ToString()));
+}
+this.radGridView1.DataSource = list;
 
-            this.radGridView1.DataSource = list;
 ````
 ````VB.NET
-        Dim list As New ArrayList()
-        Dim i As Integer = 0
-        While i < 5
-            list.Add(New ValueType(Of String)("string " + (i + 1).ToString()))
-            System.Math.Max(System.Threading.Interlocked.Increment(i), i - 1)
-        End While
-        Me.RadGridView1.DataSource = list
-        '
+Dim list As New ArrayList()
+Dim i As Integer = 0
+While i < 5
+    list.Add(New ValueType(Of String)("string " + (i + 1).ToString()))
+    System.Math.Max(System.Threading.Interlocked.Increment(i), i - 1)
+End While
+Me.RadGridView1.DataSource = list
+
 ````
 
 {{endregion}} 
@@ -106,53 +104,54 @@ The example below defines a "MyObject" class containing one integer and one stri
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToArrayOfObjectsClass}} 
 
 ````C#
-        public class MyObject
-        {
-            public MyObject(int myInt, string myString)
-            {
-                _myInt = myInt;
-                _myString = myString;
-            }
-            private int _myInt;
-            public int MyInt
-            {
-                get { return _myInt; }
-                set { _myInt = value; }
-            }
-            private string _myString;
-            public string MyString
-            {
-                get { return _myString; }
-                set { _myString = value; }
-            }
-        }
+public class MyObject
+{
+    public MyObject(int myInt, string myString)
+    {
+        _myInt = myInt;
+        _myString = myString;
+    }
+    private int _myInt;
+    public int MyInt
+    {
+        get { return _myInt; }
+        set { _myInt = value; }
+    }
+    private string _myString;
+    public string MyString
+    {
+        get { return _myString; }
+        set { _myString = value; }
+    }
+}
+
 ````
 ````VB.NET
-    Public Class MyObject
-        Public Sub New(ByVal myInt As Integer, ByVal myString As String)
-            _myInt = myInt
-            _myString = myString
-        End Sub
-        Private _myInt As Integer
-        Public Property MyInt() As Integer
-            Get
-                Return _myInt
-            End Get
-            Set(ByVal value As Integer)
-                _myInt = value
-            End Set
-        End Property
-        Private _myString As String
-        Public Property MyString() As String
-            Get
-                Return _myString
-            End Get
-            Set(ByVal value As String)
-                _myString = value
-            End Set
-        End Property
-    End Class
-    '
+Public Class MyObject
+    Public Sub New(ByVal myInt As Integer, ByVal myString As String)
+        _myInt = myInt
+        _myString = myString
+    End Sub
+    Private _myInt As Integer
+    Public Property MyInt() As Integer
+        Get
+            Return _myInt
+        End Get
+        Set(ByVal value As Integer)
+            _myInt = value
+        End Set
+    End Property
+    Private _myString As String
+    Public Property MyString() As String
+        Get
+            Return _myString
+        End Get
+        Set(ByVal value As String)
+            _myString = value
+        End Set
+    End Property
+End Class
+
 ````
 
 {{endregion}} 
@@ -161,13 +160,14 @@ The example below defines a "MyObject" class containing one integer and one stri
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToArrayOfObjects}} 
 
 ````C#
-            MyObject[] myArray = new MyObject[2] {new MyObject(1, "object one"), new MyObject(2, "object two") };
-            radGridView1.DataSource = myArray;
+MyObject[] myArray = new MyObject[2] {new MyObject(1, "object one"), new MyObject(2, "object two") };
+radGridView1.DataSource = myArray;
+
 ````
 ````VB.NET
-        Dim myArray As MyObject() = New MyObject(1) {New MyObject(1, "object one"), New MyObject(2, "object two")}
+Dim myArray As MyObject() = New MyObject(1) {New MyObject(1, "object one"), New MyObject(2, "object two")}
         RadGridView1.DataSource = myArray
-        '
+
 ````
 
 {{endregion}} 
@@ -188,14 +188,15 @@ The code below demonstrates how to use an __ArrayList__ for RadGridView structur
             arrayList.Add(new MyObject(2, "Object two") );
             arrayList.Add(new MyObject(3, "Object three") );
             radGridView1.DataSource = arrayList;
+
 ````
 ````VB.NET
-        Dim arrayList As New System.Collections.ArrayList()
-        arrayList.Add(New MyObject(1, "Object one"))
-        arrayList.Add(New MyObject(2, "Object two"))
-        arrayList.Add(New MyObject(3, "Object three"))
-        RadGridView1.DataSource = arrayList
-        '
+Dim arrayList As New System.Collections.ArrayList()
+arrayList.Add(New MyObject(1, "Object one"))
+arrayList.Add(New MyObject(2, "Object two"))
+arrayList.Add(New MyObject(3, "Object three"))
+RadGridView1.DataSource = arrayList
+
 ````
 
 {{endregion}} 

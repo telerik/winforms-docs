@@ -18,29 +18,28 @@ __GridViewColorColumn__ is auto-generated for __Color fields__ in the RadGridVie
 {{source=..\SamplesVB\GridView\Columns\GridViewColorColumn1.vb region=addColorColumn}} 
 
 ````C#
-            GridViewColorColumn column = new GridViewColorColumn("Color column");
-            this.radGridView1.Columns.Add(column);
+GridViewColorColumn column = new GridViewColorColumn("Color column");
+this.radGridView1.Columns.Add(column);
+this.radGridView1.Rows.Add("Red");
+this.radGridView1.Rows.Add("Orange");
+this.radGridView1.Rows.Add("Yellow");
+this.radGridView1.Rows.Add("Green");
+this.radGridView1.Rows.Add("Blue");
+this.radGridView1.Rows.Add("Indigo");
+this.radGridView1.Rows.Add("Violet");
 
-            this.radGridView1.Rows.Add("Red");
-            this.radGridView1.Rows.Add("Orange");
-            this.radGridView1.Rows.Add("Yellow");
-            this.radGridView1.Rows.Add("Green");
-            this.radGridView1.Rows.Add("Blue");
-            this.radGridView1.Rows.Add("Indigo");
-            this.radGridView1.Rows.Add("Violet");
 ````
 ````VB.NET
-        Dim column As New GridViewColorColumn("Color column")
-        Me.radGridView1.Columns.Add(column)
+Dim column As New GridViewColorColumn("Color column")
+Me.radGridView1.Columns.Add(column)
+Me.radGridView1.Rows.Add("Red")
+Me.radGridView1.Rows.Add("Orange")
+Me.radGridView1.Rows.Add("Yellow")
+Me.radGridView1.Rows.Add("Green")
+Me.radGridView1.Rows.Add("Blue")
+Me.radGridView1.Rows.Add("Indigo")
+Me.radGridView1.Rows.Add("Violet")
 
-        Me.radGridView1.Rows.Add("Red")
-        Me.radGridView1.Rows.Add("Orange")
-        Me.radGridView1.Rows.Add("Yellow")
-        Me.radGridView1.Rows.Add("Green")
-        Me.radGridView1.Rows.Add("Blue")
-        Me.radGridView1.Rows.Add("Indigo")
-        Me.radGridView1.Rows.Add("Violet")
-        '
 ````
 
 {{endregion}} 

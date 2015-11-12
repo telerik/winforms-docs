@@ -28,21 +28,22 @@ You can also directly access the two indicators:#_[C#]_
 {{source=..\SamplesVB\GanttView\TodayIndicator\TodayIndicator.vb region=IndicatorsAccess}} 
 
 ````C#
-            GanttViewTodayIndicatorElement todayIndicator = this.radGanttView1.GanttViewElement.GraphicalViewElement.TodayIndicatorElement;
-            todayIndicator.BackColor = Color.Red;
-            todayIndicator.BackColor2 = Color.Red;
-            GanttViewTimelineTodayIndicatorElement timelineTodayIndicator = this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineTodayIndicatorElement;
-            timelineTodayIndicator.BackColor = Color.Green;
-            timelineTodayIndicator.BackColor2 = Color.Green;
+GanttViewTodayIndicatorElement todayIndicator = this.radGanttView1.GanttViewElement.GraphicalViewElement.TodayIndicatorElement;
+todayIndicator.BackColor = Color.Red;
+todayIndicator.BackColor2 = Color.Red;
+GanttViewTimelineTodayIndicatorElement timelineTodayIndicator = this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineTodayIndicatorElement;
+timelineTodayIndicator.BackColor = Color.Green;
+timelineTodayIndicator.BackColor2 = Color.Green;
+
 ````
 ````VB.NET
-        Dim todayIndicator As GanttViewTodayIndicatorElement = Me.radGanttView1.GanttViewElement.GraphicalViewElement.TodayIndicatorElement
-        todayIndicator.BackColor = Color.Red
-        todayIndicator.BackColor2 = Color.Red
-        Dim timelineTodayIndicator As GanttViewTimelineTodayIndicatorElement = Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineTodayIndicatorElement
-        timelineTodayIndicator.BackColor = Color.Green
-        timelineTodayIndicator.BackColor2 = Color.Green
-        '
+Dim todayIndicator As GanttViewTodayIndicatorElement = Me.radGanttView1.GanttViewElement.GraphicalViewElement.TodayIndicatorElement
+todayIndicator.BackColor = Color.Red
+todayIndicator.BackColor2 = Color.Red
+Dim timelineTodayIndicator As GanttViewTimelineTodayIndicatorElement = Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineTodayIndicatorElement
+timelineTodayIndicator.BackColor = Color.Green
+timelineTodayIndicator.BackColor2 = Color.Green
+
 ````
 
 {{endregion}} 

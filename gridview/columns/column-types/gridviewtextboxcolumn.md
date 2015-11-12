@@ -24,23 +24,24 @@ When a user begins editing a cell, a textbox editor is provided to handle the us
 {{source=..\SamplesVB\GridView\Columns\GridViewTextBoxColumn1.vb region=addTextBoxColumn}} 
 
 ````C#
-            GridViewTextBoxColumn textBoxColumn = new GridViewTextBoxColumn();
-            textBoxColumn.Name = "TextBoxColumn";
-            textBoxColumn.HeaderText = "Product Name";
-            textBoxColumn.FieldName = "ProductName";
-            textBoxColumn.MaxLength = 50;
-            textBoxColumn.TextAlignment = ContentAlignment.BottomRight;
-            radGridView1.MasterTemplate.Columns.Add(textBoxColumn);
+GridViewTextBoxColumn textBoxColumn = new GridViewTextBoxColumn();
+textBoxColumn.Name = "TextBoxColumn";
+textBoxColumn.HeaderText = "Product Name";
+textBoxColumn.FieldName = "ProductName";
+textBoxColumn.MaxLength = 50;
+textBoxColumn.TextAlignment = ContentAlignment.BottomRight;
+radGridView1.MasterTemplate.Columns.Add(textBoxColumn);
+
 ````
 ````VB.NET
-        Dim textBoxColumn As New GridViewTextBoxColumn()
-        textBoxColumn.Name = "TextBoxColumn"
-        textBoxColumn.HeaderText = "Product Name"
-        textBoxColumn.FieldName = "ProductName"
-        textBoxColumn.MaxLength = 50
-        textBoxColumn.TextAlignment = ContentAlignment.BottomRight
-        RadGridView1.MasterTemplate.Columns.Add(textBoxColumn)
-        '
+Dim textBoxColumn As New GridViewTextBoxColumn()
+textBoxColumn.Name = "TextBoxColumn"
+textBoxColumn.HeaderText = "Product Name"
+textBoxColumn.FieldName = "ProductName"
+textBoxColumn.MaxLength = 50
+textBoxColumn.TextAlignment = ContentAlignment.BottomRight
+RadGridView1.MasterTemplate.Columns.Add(textBoxColumn)
+
 ````
 
 {{endregion}} 
@@ -56,11 +57,12 @@ GridViewTextBoxColumn editor - *RadTextBoxEditor* - supports character casing. T
 {{source=..\SamplesVB\GridView\Columns\GridViewTextBoxColumn1.vb region=characterCasting}} 
 
 ````C#
-            ((GridViewTextBoxColumn)this.radGridView1.Columns[0]).ColumnCharacterCasing = CharacterCasing.Upper;
+((GridViewTextBoxColumn)this.radGridView1.Columns[0]).ColumnCharacterCasing = CharacterCasing.Upper;
+
 ````
 ````VB.NET
-        DirectCast(Me.RadGridView1.Columns(0), GridViewTextBoxColumn).ColumnCharacterCasing = CharacterCasing.Upper
-        '
+DirectCast(Me.RadGridView1.Columns(0), GridViewTextBoxColumn).ColumnCharacterCasing = CharacterCasing.Upper
+
 ````
 
 {{endregion}} 

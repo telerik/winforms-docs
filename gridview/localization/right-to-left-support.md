@@ -20,11 +20,12 @@ You can present the content of your grid instance in a right-to-left direction b
 {{source=..\SamplesVB\GridView\Localization\Localization1.vb region=rtl}} 
 
 ````C#
-            this.radGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+this.radGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+
 ````
 ````VB.NET
-        Me.RadGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        '
+Me.RadGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+
 ````
 
 {{endregion}} 

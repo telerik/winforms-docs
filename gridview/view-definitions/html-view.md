@@ -24,27 +24,26 @@ To use an html view we should instantiate HtmlViewDefinition and add the desired
 {{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=addRowsAndCells}} 
 
 ````C#
-            HtmlViewDefinition view = new HtmlViewDefinition();
+HtmlViewDefinition view = new HtmlViewDefinition();
+view.RowTemplate.Rows.Add(new RowDefinition());
+view.RowTemplate.Rows.Add(new RowDefinition());
+view.RowTemplate.Rows[0].Cells.Add(new CellDefinition("CustomerID"));
+view.RowTemplate.Rows[0].Cells.Add(new CellDefinition("CompanyName"));
+view.RowTemplate.Rows[0].Cells.Add(new CellDefinition("City"));
+view.RowTemplate.Rows[0].Cells.Add(new CellDefinition("Country"));
+view.RowTemplate.Rows[1].Cells.Add(new CellDefinition("Phone"));
 
-            view.RowTemplate.Rows.Add(new RowDefinition());
-            view.RowTemplate.Rows.Add(new RowDefinition());
-            view.RowTemplate.Rows[0].Cells.Add(new CellDefinition("CustomerID"));
-            view.RowTemplate.Rows[0].Cells.Add(new CellDefinition("CompanyName"));
-            view.RowTemplate.Rows[0].Cells.Add(new CellDefinition("City"));
-            view.RowTemplate.Rows[0].Cells.Add(new CellDefinition("Country"));
-            view.RowTemplate.Rows[1].Cells.Add(new CellDefinition("Phone"));
 ````
 ````VB.NET
-        Dim view As New HtmlViewDefinition()
+Dim view As New HtmlViewDefinition()
+view.RowTemplate.Rows.Add(New RowDefinition())
+view.RowTemplate.Rows.Add(New RowDefinition())
+view.RowTemplate.Rows(0).Cells.Add(New CellDefinition("CustomerID"))
+view.RowTemplate.Rows(0).Cells.Add(New CellDefinition("CompanyName"))
+view.RowTemplate.Rows(0).Cells.Add(New CellDefinition("City"))
+view.RowTemplate.Rows(0).Cells.Add(New CellDefinition("Country"))
+view.RowTemplate.Rows(1).Cells.Add(New CellDefinition("Phone"))
 
-        view.RowTemplate.Rows.Add(New RowDefinition())
-        view.RowTemplate.Rows.Add(New RowDefinition())
-        view.RowTemplate.Rows(0).Cells.Add(New CellDefinition("CustomerID"))
-        view.RowTemplate.Rows(0).Cells.Add(New CellDefinition("CompanyName"))
-        view.RowTemplate.Rows(0).Cells.Add(New CellDefinition("City"))
-        view.RowTemplate.Rows(0).Cells.Add(New CellDefinition("Country"))
-        view.RowTemplate.Rows(1).Cells.Add(New CellDefinition("Phone"))
-        '
 ````
 
 {{endregion}} 
@@ -57,11 +56,12 @@ The __HtmlViewDefinition__ adds row and column spanning feature like in html tab
 {{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=setColSpan}} 
 
 ````C#
-            view.RowTemplate.Rows[1].Cells[0].ColSpan = 2;
+view.RowTemplate.Rows[1].Cells[0].ColSpan = 2;
+
 ````
 ````VB.NET
-        view.RowTemplate.Rows(1).Cells(0).ColSpan = 2
-        '
+view.RowTemplate.Rows(1).Cells(0).ColSpan = 2
+
 ````
 
 {{endregion}} 
@@ -74,13 +74,14 @@ The __RowSpan__ property sets the row spanning:
 {{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=setRowSpan}} 
 
 ````C#
-            view.RowTemplate.Rows[0].Cells[2].RowSpan = 2;
-            view.RowTemplate.Rows[0].Cells[3].RowSpan = 2;
+view.RowTemplate.Rows[0].Cells[2].RowSpan = 2;
+view.RowTemplate.Rows[0].Cells[3].RowSpan = 2;
+
 ````
 ````VB.NET
-        view.RowTemplate.Rows(0).Cells(2).RowSpan = 2
-        view.RowTemplate.Rows(0).Cells(3).RowSpan = 2
-        '
+view.RowTemplate.Rows(0).Cells(2).RowSpan = 2
+view.RowTemplate.Rows(0).Cells(3).RowSpan = 2
+
 ````
 
 {{endregion}} 
@@ -93,11 +94,12 @@ You have to set the __Height__ property of the __RowDefinition__ to change the r
 {{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=setRowHeight}} 
 
 ````C#
-            view.RowTemplate.Rows[0].Height = 40;
+view.RowTemplate.Rows[0].Height = 40;
+
 ````
 ````VB.NET
-        view.RowTemplate.Rows(0).Height = 40
-        '
+view.RowTemplate.Rows(0).Height = 40
+
 ````
 
 {{endregion}} 
@@ -125,11 +127,12 @@ Use the following code to load the definition
 {{source=..\SamplesCS\GridView\ViewDefinitions\HTMLView1.cs region=useHtmlTemplate}} 
 {{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=useHtmlTemplate}} 
 ````C#
-            radGridView1.ViewDefinition = view;
+view.RowTemplate.ReadXml(@"..\..\GridView\ViewDefinitions\myViewDefinition.htm");
+
 ````
 ````VB.NET
-        view.RowTemplate.ReadXml("..\..\GridView\ViewDefinitions\myViewDefinition.htm")
-        '
+view.RowTemplate.ReadXml("..\..\GridView\ViewDefinitions\myViewDefinition.htm")
+
 ````
 
 {{endregion}} 
@@ -139,14 +142,13 @@ At the end simply set the ViewDefinitions property of RadGridView to the newly c
 {{source=..\SamplesCS\GridView\ViewDefinitions\HTMLView1.cs region=useHtmlTemplate}} 
 {{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=useHtmlTemplate}} 
 
-{{source=..\SamplesCS\GridView\ViewDefinitions\HTMLView1.cs region=setTheViewDefinition}}
-{{source=..\SamplesCS\GridView\ViewDefinitions\HTMLView1.vb region=setTheViewDefinition}} 
 ````C#
-            radGridView1.ViewDefinition = view;
+view.RowTemplate.ReadXml(@"..\..\GridView\ViewDefinitions\myViewDefinition.htm");
+
 ````
 ````VB.NET
-        view.RowTemplate.ReadXml("..\..\GridView\ViewDefinitions\myViewDefinition.htm")
-        '
+view.RowTemplate.ReadXml("..\..\GridView\ViewDefinitions\myViewDefinition.htm")
+
 ````
 
 {{endregion}} 
@@ -159,14 +161,17 @@ Now load the data in the RadGridView
 {{source=..\SamplesCS\GridView\ViewDefinitions\HTMLView1.cs region=loadTheData}} 
 {{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=loadTheData}} 
 ````C#
-        private void HTMLView_Load(object sender, EventArgs e)
-        {
-            this.customersTableAdapter.Fill(this.nwindDataSet.Customers);
-        }
+private void HTMLView_Load(object sender, EventArgs e)
+{
+    this.customersTableAdapter.Fill(this.nwindDataSet.Customers);
+}
+
 ````
 ````VB.NET
-        RadGridView1.ViewDefinition = view
-        '
+Private Sub HTMLView1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Me.CustomersTableAdapter.Fill(Me.NwindDataSet.Customers)
+End Sub
+
 ````
 
 {{endregion}} 

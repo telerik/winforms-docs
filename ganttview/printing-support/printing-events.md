@@ -26,62 +26,62 @@ The following example demonstrates how you can use the __PrintContext__ property
 {{source=..\SamplesVB\GanttView\PrintingEvents\PrintingEvents.vb region=PrintFormatting}} 
 
 ````C#
+private void radGanttView1_PrintElementFormatting(object sender, GanttViewPrintElementFormattingEventArgs e)
+{
+    switch (e.PrintContext)
+    {
+        case GanttViewPrintElementContext.HeaderCell:
+            e.PrintElement.BackColor = Color.LightBlue;
+            break;
+        case GanttViewPrintElementContext.DataCell:
+            e.PrintElement.BorderColor = Color.Cyan;
+            break;
+        case GanttViewPrintElementContext.TaskElement:
+            e.PrintElement.ForeColor = Color.Green;
+            break;
+        case GanttViewPrintElementContext.SummaryTaskElement:
+            e.PrintElement.BorderColor = Color.Red;
+            break;
+        case GanttViewPrintElementContext.MilestoneElement:
+            e.PrintElement.BackColor = Color.Orange;
+            break;
+        case GanttViewPrintElementContext.TimelineUpperElement:
+            e.PrintElement.BackColor = Color.LightCoral;
+            break;
+        case GanttViewPrintElementContext.TimelineBottomElement:
+            e.PrintElement.BackColor = Color.LightGray;
+            break;
+    }
+}
 
-        private void radGanttView1_PrintElementFormatting(object sender, GanttViewPrintElementFormattingEventArgs e)
-        {
-            switch (e.PrintContext)
-            {
-                case GanttViewPrintElementContext.HeaderCell:
-                    e.PrintElement.BackColor = Color.LightBlue;
-                    break;
-                case GanttViewPrintElementContext.DataCell:
-                    e.PrintElement.BorderColor = Color.Cyan;
-                    break;
-                case GanttViewPrintElementContext.TaskElement:
-                    e.PrintElement.ForeColor = Color.Green;
-                    break;
-                case GanttViewPrintElementContext.SummaryTaskElement:
-                    e.PrintElement.BorderColor = Color.Red;
-                    break;
-                case GanttViewPrintElementContext.MilestoneElement:
-                    e.PrintElement.BackColor = Color.Orange;
-                    break;
-                case GanttViewPrintElementContext.TimelineUpperElement:
-                    e.PrintElement.BackColor = Color.LightCoral;
-                    break;
-                case GanttViewPrintElementContext.TimelineBottomElement:
-                    e.PrintElement.BackColor = Color.LightGray;
-                    break;
-            }
-        }
 ````
 ````VB.NET
-    Private Sub GanttViewPrintElementFormattingEventArgs(sender As Object, e As GanttViewPrintElementFormattingEventArgs)
-        Select Case e.PrintContext
-            Case GanttViewPrintElementContext.HeaderCell
-                e.PrintElement.BackColor = Color.LightBlue
-                Exit Select
-            Case GanttViewPrintElementContext.DataCell
-                e.PrintElement.BorderColor = Color.Cyan
-                Exit Select
-            Case GanttViewPrintElementContext.TaskElement
-                e.PrintElement.ForeColor = Color.Green
-                Exit Select
-            Case GanttViewPrintElementContext.SummaryTaskElement
-                e.PrintElement.BorderColor = Color.Red
-                Exit Select
-            Case GanttViewPrintElementContext.MilestoneElement
-                e.PrintElement.BackColor = Color.Orange
-                Exit Select
-            Case GanttViewPrintElementContext.TimelineUpperElement
-                e.PrintElement.BackColor = Color.LightCoral
-                Exit Select
-            Case GanttViewPrintElementContext.TimelineBottomElement
-                e.PrintElement.BackColor = Color.LightGray
-                Exit Select
-        End Select
-    End Sub
-    '
+Private Sub GanttViewPrintElementFormattingEventArgs(sender As Object, e As GanttViewPrintElementFormattingEventArgs)
+    Select Case e.PrintContext
+        Case GanttViewPrintElementContext.HeaderCell
+            e.PrintElement.BackColor = Color.LightBlue
+            Exit Select
+        Case GanttViewPrintElementContext.DataCell
+            e.PrintElement.BorderColor = Color.Cyan
+            Exit Select
+        Case GanttViewPrintElementContext.TaskElement
+            e.PrintElement.ForeColor = Color.Green
+            Exit Select
+        Case GanttViewPrintElementContext.SummaryTaskElement
+            e.PrintElement.BorderColor = Color.Red
+            Exit Select
+        Case GanttViewPrintElementContext.MilestoneElement
+            e.PrintElement.BackColor = Color.Orange
+            Exit Select
+        Case GanttViewPrintElementContext.TimelineUpperElement
+            e.PrintElement.BackColor = Color.LightCoral
+            Exit Select
+        Case GanttViewPrintElementContext.TimelineBottomElement
+            e.PrintElement.BackColor = Color.LightGray
+            Exit Select
+    End Select
+End Sub
+
 ````
 
 {{endregion}} 
@@ -102,32 +102,30 @@ This example demonstrates how you can paint the text of summary items next to th
 {{source=..\SamplesVB\GanttView\PrintingEvents\PrintingEvents.vb region=PrintPaint}} 
 
 ````C#
+private void radGanttView1_PrintElementPaint(object sender, GanttViewPrintElementPaintEventArgs e)
+{
+    if (e.PrintContext == GanttViewPrintElementContext.SummaryTaskElement)
+    {
+        GanttViewDataItem dataItem = e.DataContext as GanttViewDataItem;
+        SizeF textSize = e.Graphics.MeasureString(dataItem.Title, this.radGanttView1.Font);
+        RectangleF rect = new RectangleF(e.Rectangle.Right + 10, e.Rectangle.Y, textSize.Width, e.Rectangle.Height);
+        e.Graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
+        e.Graphics.DrawString(dataItem.Title, this.radGanttView1.Font, Brushes.Black, rect);
+    }
+}
 
-        private void radGanttView1_PrintElementPaint(object sender, GanttViewPrintElementPaintEventArgs e)
-        {
-            if (e.PrintContext == GanttViewPrintElementContext.SummaryTaskElement)
-            {
-                GanttViewDataItem dataItem = e.DataContext as GanttViewDataItem;
-
-                SizeF textSize = e.Graphics.MeasureString(dataItem.Title, this.radGanttView1.Font);
-                RectangleF rect = new RectangleF(e.Rectangle.Right + 10, e.Rectangle.Y, textSize.Width, e.Rectangle.Height);
-                e.Graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
-                e.Graphics.DrawString(dataItem.Title, this.radGanttView1.Font, Brushes.Black, rect);
-            }
-        }
 ````
 ````VB.NET
-    Private Sub radGanttView1_PrintElementPaint(sender As Object, e As GanttViewPrintElementPaintEventArgs)
-        If e.PrintContext = GanttViewPrintElementContext.SummaryTaskElement Then
-            Dim dataItem As GanttViewDataItem = TryCast(e.DataContext, GanttViewDataItem)
+Private Sub radGanttView1_PrintElementPaint(sender As Object, e As GanttViewPrintElementPaintEventArgs)
+    If e.PrintContext = GanttViewPrintElementContext.SummaryTaskElement Then
+        Dim dataItem As GanttViewDataItem = TryCast(e.DataContext, GanttViewDataItem)
+        Dim textSize As SizeF = e.Graphics.MeasureString(dataItem.Title, Me.radGanttView1.Font)
+        Dim rect As New RectangleF(e.Rectangle.Right + 10, e.Rectangle.Y, textSize.Width, e.Rectangle.Height)
+        e.Graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit
+        e.Graphics.DrawString(dataItem.Title, Me.radGanttView1.Font, Brushes.Black, rect)
+    End If
+End Sub
 
-            Dim textSize As SizeF = e.Graphics.MeasureString(dataItem.Title, Me.radGanttView1.Font)
-            Dim rect As New RectangleF(e.Rectangle.Right + 10, e.Rectangle.Y, textSize.Width, e.Rectangle.Height)
-            e.Graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit
-            e.Graphics.DrawString(dataItem.Title, Me.radGanttView1.Font, Brushes.Black, rect)
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 

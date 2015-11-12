@@ -16,26 +16,26 @@ You can iterate through grid rows using the __Rows__ collection of __GridViewRow
 {{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=iteratingRows}} 
 
 ````C#
-            GridViewRowInfo lastRow1 = radGridView1.Rows[radGridView1.Rows.Count - 1];
-            lastRow1.IsSelected = true;
+GridViewRowInfo lastRow1 = radGridView1.Rows[radGridView1.Rows.Count - 1];
+lastRow1.IsSelected = true;
+foreach (GridViewRowInfo rowInfo in radGridView1.Rows)
+{
+    if (rowInfo.IsSelected)
+    {
+        rowInfo.EnsureVisible();
+    }
+}
 
-            foreach (GridViewRowInfo rowInfo in radGridView1.Rows)
-            {
-                if (rowInfo.IsSelected)
-                {
-                    rowInfo.EnsureVisible();
-                }
-            }
 ````
 ````VB.NET
-        Dim lastRow As GridViewRowInfo = RadGridView1.Rows(RadGridView1.Rows.Count - 1)
-        lastRow.IsSelected = True
-        For Each rowInfo As GridViewRowInfo In RadGridView1.Rows
-            If rowInfo.IsSelected Then
-                rowInfo.EnsureVisible()
-            End If
-        Next
-        '
+Dim lastRow As GridViewRowInfo = RadGridView1.Rows(RadGridView1.Rows.Count - 1)
+lastRow.IsSelected = True
+For Each rowInfo As GridViewRowInfo In RadGridView1.Rows
+    If rowInfo.IsSelected Then
+        rowInfo.EnsureVisible()
+    End If
+Next
+
 ````
 
 {{endregion}} 
@@ -48,25 +48,26 @@ You could search for specific value in __RadGridView__ by iterating through the 
 {{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=findAGridRowByCellValue}} 
 
 ````C#
-            string searchedStr = "Picture 2";
-            for (int r = 0; r < radGridView1.RowCount; r++)
-            {
-                if (radGridView1.Rows[r].Cells["Picture Name"].Value.ToString().ToUpper().Equals(searchedStr.ToUpper()))
-                {
-                    MessageBox.Show("Found a match");
-                    //do something 
-                }
-            }
+string searchedStr = "Picture 2";
+for (int r = 0; r < radGridView1.RowCount; r++)
+{
+    if (radGridView1.Rows[r].Cells["Picture Name"].Value.ToString().ToUpper().Equals(searchedStr.ToUpper()))
+    {
+        MessageBox.Show("Found a match");
+        //do something 
+    }
+}
+
 ````
 ````VB.NET
-        Dim searchedStr As String = "Picture 2"
-        For row As Integer = 0 To RadGridView1.RowCount - 1
-            If RadGridView1.Rows(row).Cells("Picture Name").Value.ToString().ToUpper().Equals(searchedStr.ToUpper()) Then
-                'do something 
-                MessageBox.Show("Found a match")
-            End If
-        Next
-        '
+Dim searchedStr As String = "Picture 2"
+For row As Integer = 0 To RadGridView1.RowCount - 1
+    If RadGridView1.Rows(row).Cells("Picture Name").Value.ToString().ToUpper().Equals(searchedStr.ToUpper()) Then
+        'do something 
+        MessageBox.Show("Found a match")
+    End If
+Next
+
 ````
 
 {{endregion}} 
@@ -79,30 +80,29 @@ When you have a hierarchical grid with many templates you can use a recursive me
 {{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=hierarchy}} 
 
 ````C#
-        public void IterateAllRows(IEnumerable<GridViewRowInfo> rowsCollection)
+public void IterateAllRows(IEnumerable<GridViewRowInfo> rowsCollection)
+{
+    foreach (GridViewDataRowInfo row in rowsCollection)
+    {
+        Debug.WriteLine(row.Cells[0].Value);//This rows is used for demonstration only!
+        if (row.HasChildRows())
         {
-            foreach (GridViewDataRowInfo row in rowsCollection)
-            {
-                Debug.WriteLine(row.Cells[0].Value);//This rows is used for demonstration only!
-
-                if (row.HasChildRows())
-                {
-                    IterateAllRows(row.ChildRows);
-                }
-            }
-
+            IterateAllRows(row.ChildRows);
         }
+    }
+}
+
 ````
 ````VB.NET
-    Public Sub IterateAllRows(rowsCollection As IEnumerable(Of GridViewRowInfo))
-        For Each row As GridViewDataRowInfo In rowsCollection
-            Debug.WriteLine(row.Cells(0).Value)
+Public Sub IterateAllRows(rowsCollection As IEnumerable(Of GridViewRowInfo))
+    For Each row As GridViewDataRowInfo In rowsCollection
+        Debug.WriteLine(row.Cells(0).Value)
+        If row.HasChildRows() Then
+            IterateAllRows(row.ChildRows)
+        End If
+    Next
+End Sub
 
-            If row.HasChildRows() Then
-                IterateAllRows(row.ChildRows)
-            End If
-        Next
-        '
 ````
 
 {{endregion}} 

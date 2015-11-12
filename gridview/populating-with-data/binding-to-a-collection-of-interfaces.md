@@ -22,113 +22,100 @@ First, we will need to create a custom GridViewListSource:
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToCollectionOfInterfaces.vb region=GridCode}} 
 
 ````C#
-        public class MyGrid : RadGridView
+public class MyGrid : RadGridView
+{
+    protected override RadGridViewElement CreateGridViewElement()
+    {
+        return new MyGridViewElement();
+    }
+}
+public class MyGridViewElement : RadGridViewElement
+{
+    protected override MasterGridViewTemplate CreateTemplate()
+    {
+        return new MyMasterGridViewTemplate();
+    }
+    protected override Type ThemeEffectiveType
+    {
+        get
         {
-            protected override RadGridViewElement CreateGridViewElement()
-            {
-                return new MyGridViewElement();
-            }
+            return typeof(RadGridViewElement);
         }
-
-        public class MyGridViewElement : RadGridViewElement
+    }
+}
+public class MyMasterGridViewTemplate : MasterGridViewTemplate
+{
+    protected override GridViewListSource CreateListSource()
+    {
+        return new MyGridViewListSource(this);
+    }
+}
+public class MyGridViewListSource : GridViewListSource
+{
+    private GridViewTemplate template;
+    public MyGridViewListSource(GridViewTemplate template)
+        : base(template)
+    {
+        this.template = template;
+    }
+    public override GridViewRowInfo AddNew()
+    {
+        GridObj gridObj = new GridObj();
+        IList list = (this as ICurrencyManagerProvider).CurrencyManager.List;
+        list.Add(gridObj);
+        IDataItem dataItem = (this.template as IDataItemSource).NewItem();
+        if (this.IsDataBound)
         {
-            protected override MasterGridViewTemplate CreateTemplate()
-            {
-                return new MyMasterGridViewTemplate();
-            }
-
-            protected override Type ThemeEffectiveType
-            {
-                get
-                {
-                    return typeof(RadGridViewElement);
-                }
-            }
+            this.InitializeBoundRow((GridViewRowInfo)dataItem, gridObj);
         }
+        return dataItem as GridViewRowInfo;
+    }
+}
 
-        public class MyMasterGridViewTemplate : MasterGridViewTemplate
-        {
-            protected override GridViewListSource CreateListSource()
-            {
-                return new MyGridViewListSource(this);
-            }
-        }
-
-        public class MyGridViewListSource : GridViewListSource
-        {
-            private GridViewTemplate template;
-
-            public MyGridViewListSource(GridViewTemplate template)
-                : base(template)
-            {
-                this.template = template;
-            }
-
-            public override GridViewRowInfo AddNew()
-            {
-                GridObj gridObj = new GridObj();
-                IList list = (this as ICurrencyManagerProvider).CurrencyManager.List;
-                list.Add(gridObj);
-                IDataItem dataItem = (this.template as IDataItemSource).NewItem();
-                if (this.IsDataBound)
-                {
-                    this.InitializeBoundRow((GridViewRowInfo)dataItem, gridObj);
-                }
-
-                return dataItem as GridViewRowInfo;
-            }
-        }
 ````
 ````VB.NET
-    Public Class MyGrid
-        Inherits RadGridView
-        Protected Overrides Function CreateGridViewElement() As RadGridViewElement
-            Return New MyGridViewElement()
-        End Function
-    End Class
+Public Class MyGrid
+    Inherits RadGridView
+    Protected Overrides Function CreateGridViewElement() As RadGridViewElement
+        Return New MyGridViewElement()
+    End Function
+End Class
+Public Class MyGridViewElement
+    Inherits RadGridViewElement
+    Protected Overrides Function CreateTemplate() As MasterGridViewTemplate
+        Return New MyMasterGridViewTemplate()
+    End Function
+    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
+        Get
+            Return GetType(RadGridViewElement)
+        End Get
+    End Property
+End Class
+Public Class MyMasterGridViewTemplate
+    Inherits MasterGridViewTemplate
+    Protected Overrides Function CreateListSource() As GridViewListSource
+        Return New MyGridViewListSource(Me)
+    End Function
+End Class
+Public Class MyGridViewListSource
+    Inherits GridViewListSource
+    Private template As GridViewTemplate
+    Public Sub New(template As GridViewTemplate)
+        MyBase.New(template)
+        Me.template = template
+    End Sub
+    Public Overrides Function AddNew() As GridViewRowInfo
+        Dim gridObj As New GridObj()
+        Dim list As IList = TryCast(Me, ICurrencyManagerProvider).CurrencyManager.List
+        list.Add(gridObj)
+        Dim dataItem As IDataItem = TryCast(Me.template, IDataItemSource).NewItem()
+        If Me.IsDataBound Then
+            Me.InitializeBoundRow(DirectCast(dataItem, GridViewRowInfo), gridObj)
+        End If
+        Return TryCast(dataItem, GridViewRowInfo)
+    End Function
+End Class
 
-    Public Class MyGridViewElement
-        Inherits RadGridViewElement
-        Protected Overrides Function CreateTemplate() As MasterGridViewTemplate
-            Return New MyMasterGridViewTemplate()
-        End Function
-
-        Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-            Get
-                Return GetType(RadGridViewElement)
-            End Get
-        End Property
-    End Class
-
-    Public Class MyMasterGridViewTemplate
-        Inherits MasterGridViewTemplate
-        Protected Overrides Function CreateListSource() As GridViewListSource
-            Return New MyGridViewListSource(Me)
-        End Function
-    End Class
-
-    Public Class MyGridViewListSource
-        Inherits GridViewListSource
-        Private template As GridViewTemplate
-
-        Public Sub New(template As GridViewTemplate)
-            MyBase.New(template)
-            Me.template = template
-        End Sub
-
-        Public Overrides Function AddNew() As GridViewRowInfo
-            Dim gridObj As New GridObj()
-            Dim list As IList = TryCast(Me, ICurrencyManagerProvider).CurrencyManager.List
-            list.Add(gridObj)
-            Dim dataItem As IDataItem = TryCast(Me.template, IDataItemSource).NewItem()
-            If Me.IsDataBound Then
-                Me.InitializeBoundRow(DirectCast(dataItem, GridViewRowInfo), gridObj)
-            End If
-
-            Return TryCast(dataItem, GridViewRowInfo)
-        End Function
-    End Class
-    '
 ````
 
 {{endregion}} 
@@ -139,87 +126,74 @@ The GridObj type is a type, which inherits from the interface, which you have bo
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToCollectionOfInterfaces.vb region=ExampleCode}} 
 
 ````C#
-        public BindingToCollectionOfInterfaces()
-        {
-            InitializeComponent();
+public BindingToCollectionOfInterfaces()
+{
+    InitializeComponent();
+    MyGrid grid = new MyGrid();
+    this.Controls.Add(grid);
+    grid.Dock = DockStyle.Fill;
+    IEnumerable<IGridObj> dataSource = new BindingList<IGridObj>();
+    grid.DataSource = dataSource;
+    grid.AllowAddNewRow = true;
+}
+public interface IGridObj
+{
+    int Id { get; set; }
+    string Name { get; set; }
+}
+public class GridObj : IGridObj
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string RandomString { get; set; }
+}
 
-            MyGrid grid = new MyGrid();
-            this.Controls.Add(grid);
-            grid.Dock = DockStyle.Fill;
-
-            IEnumerable<IGridObj> dataSource = new BindingList<IGridObj>();
-
-            grid.DataSource = dataSource;
-            grid.AllowAddNewRow = true;
-        }
-
-        public interface IGridObj
-        {
-            int Id { get; set; }
-            string Name { get; set; }
-        }
-
-        public class GridObj : IGridObj
-        {
-            public int Id { get; set; }
-
-            public string Name { get; set; }
-
-            public string RandomString { get; set; }
-        }
 ````
 ````VB.NET
-    Public Sub New()
-        InitializeComponent()
+Public Sub New()
+    InitializeComponent()
+    Dim grid As New MyGrid()
+    Me.Controls.Add(grid)
+    grid.Dock = DockStyle.Fill
+    Dim dataSource As IEnumerable(Of IGridObj) = New BindingList(Of IGridObj)()
+    grid.DataSource = dataSource
+    grid.AllowAddNewRow = True
+End Sub
+Public Interface IGridObj
+    Property Id() As Integer
+    Property Name() As String
+End Interface
+Public Class GridObj
+    Implements IGridObj
+    Public Property Id() As Integer Implements BindingToCollectionOfInterfaces.IGridObj.Id
+        Get
+            Return m_Id
+        End Get
+        Set(value As Integer)
+            m_Id = value
+        End Set
+    End Property
+    Private m_Id As Integer
+    Public Property Name() As String Implements BindingToCollectionOfInterfaces.IGridObj.Name
+        Get
+            Return m_Name
+        End Get
+        Set(value As String)
+            m_Name = value
+        End Set
+    End Property
+    Private m_Name As String
+    Public Property RandomString() As String
+        Get
+            Return m_RandomString
+        End Get
+        Set(value As String)
+            m_RandomString = value
+        End Set
+    End Property
+    Private m_RandomString As String
+End Class
 
-        Dim grid As New MyGrid()
-        Me.Controls.Add(grid)
-        grid.Dock = DockStyle.Fill
-
-        Dim dataSource As IEnumerable(Of IGridObj) = New BindingList(Of IGridObj)()
-
-        grid.DataSource = dataSource
-        grid.AllowAddNewRow = True
-    End Sub
-
-    Public Interface IGridObj
-        Property Id() As Integer
-        Property Name() As String
-    End Interface
-
-    Public Class GridObj
-        Implements IGridObj
-        Public Property Id() As Integer Implements BindingToCollectionOfInterfaces.IGridObj.Id
-            Get
-                Return m_Id
-            End Get
-            Set(value As Integer)
-                m_Id = value
-            End Set
-        End Property
-        Private m_Id As Integer
-
-        Public Property Name() As String Implements BindingToCollectionOfInterfaces.IGridObj.Name
-            Get
-                Return m_Name
-            End Get
-            Set(value As String)
-                m_Name = value
-            End Set
-        End Property
-        Private m_Name As String
-
-        Public Property RandomString() As String
-            Get
-                Return m_RandomString
-            End Get
-            Set(value As String)
-                m_RandomString = value
-            End Set
-        End Property
-        Private m_RandomString As String
-    End Class
-    '
 ````
 
 {{endregion}} 

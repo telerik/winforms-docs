@@ -43,42 +43,41 @@ However, if you wish to prevent the creation of a column for it, use the __Syste
 {{source=..\SamplesVB\GridView\Columns\GeneratingColumns.vb region=autoGenerateColumns}} 
 
 ````C#
-        public GeneratingColumns()
-        {
-            InitializeComponent();
-            
-            BindingSource source = new BindingSource();
-            List<string> firstName = new List<string> { "John", "Jim", "Jason", "Barbara", "Ben", "Thomas", "Antonio"};
-            List<string> lastName = new List<string> { "Baumer", "Davidson", "Jones", "Jolie", "Pitt", "Ashword", "Moreno" };
-            for (int i = 0; i < 7; i++)
-            {
-                source.Add(new Employee(i, firstName[i], lastName[i], i + 20));
-            }
-            radGridView1.DataSource = source;
-        }
+public GeneratingColumns()
+{
+    InitializeComponent();
+    
+    BindingSource source = new BindingSource();
+    List<string> firstName = new List<string> { "John", "Jim", "Jason", "Barbara", "Ben", "Thomas", "Antonio"};
+    List<string> lastName = new List<string> { "Baumer", "Davidson", "Jones", "Jolie", "Pitt", "Ashword", "Moreno" };
+    for (int i = 0; i < 7; i++)
+    {
+        source.Add(new Employee(i, firstName[i], lastName[i], i + 20));
+    }
+    radGridView1.DataSource = source;
+}
+public class Employee
+{
+    public Employee(int id, string fn, string ln, int age)
+    {
+        this.EmployeeId = id;
+        this.FirstName = fn;
+        this.LastName = ln;
+        this.Age = age;
+    }
+    //the next attribute prevents the EmployeeId column from showing
+    [Browsable(false)]
+    public int EmployeeId { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int Age { get; set; }
+}
 
-        public class Employee
-        {
-            public Employee(int id, string fn, string ln, int age)
-            {
-                this.EmployeeId = id;
-                this.FirstName = fn;
-                this.LastName = ln;
-                this.Age = age;
-            }
-            //the next attribute prevents the EmployeeId column from showing
-            [Browsable(false)]
-            public int EmployeeId { get; set; }
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-            public int Age { get; set; }
-        }
 ````
 ````VB.NET
-    Public Sub New()
-        InitializeComponent()
-
-        Dim source As New BindingSource()
+Public Sub New()
+    InitializeComponent()
+    Dim source As New BindingSource()
 
         Dim firstName As String() = {"John", "Jim", "Jason", "Barbara", "Ben", "Thomas", "Antonio"}
         Dim lastName As String() = {"Baumer", "Davidson", "Jones", "Jolie", "Pitt", "Ashword", "Moreno"}
@@ -88,9 +87,8 @@ However, if you wish to prevent the creation of a column for it, use the __Syste
         Next
         RadGridView1.DataSource = source
 
-    End Sub
-
-    Public Class Employee
+End Sub
+Public Class Employee
         Public Sub New(ByVal id As Integer, ByVal fn As String, ByVal ln As String, ByVal age As Integer)
             Me.EmployeeId = id
             Me.FirstName = fn
@@ -137,7 +135,7 @@ However, if you wish to prevent the creation of a column for it, use the __Syste
         End Property
         Private m_Age As Integer
     End Class
-    '
+
 ````
 
 {{endregion}} 
@@ -162,29 +160,30 @@ Setting the __AutoGenerateColumns__ property to *false* allows the developer to 
 {{source=..\SamplesVB\GridView\Columns\GeneratingColumns2.vb region=manualColumnGeneration}} 
 
 ````C#
-            radGridView1.AutoGenerateColumns = false;
-            radGridView1.DataSource = categoriesBindingSource;
+radGridView1.AutoGenerateColumns = false;
+radGridView1.DataSource = categoriesBindingSource;
             
-            GridViewTextBoxColumn textBoxColumn = new GridViewTextBoxColumn();
-            textBoxColumn.Name = "TextBoxColumn";
-            textBoxColumn.HeaderText = "Product Description";
-            textBoxColumn.FieldName = "Description";
-            textBoxColumn.MaxLength = 50;
-            textBoxColumn.TextAlignment = ContentAlignment.BottomRight;
-            textBoxColumn.Width = 250;
-            radGridView1.MasterTemplate.Columns.Add(textBoxColumn);
-            GridViewComboBoxColumn categoryColumn = new GridViewComboBoxColumn();
-            categoryColumn.DataType = typeof(string);
-            categoryColumn.Name = "CategoryColumn";
-            categoryColumn.FieldName = "CategoryName";
-            categoryColumn.HeaderText = "Category";
-            categoryColumn.ValueMember = "CategoryID";
-            categoryColumn.DisplayMember = "CategoryName";
-            categoryColumn.Width = 150;
-            radGridView1.MasterTemplate.Columns.Add(categoryColumn);
+GridViewTextBoxColumn textBoxColumn = new GridViewTextBoxColumn();
+textBoxColumn.Name = "TextBoxColumn";
+textBoxColumn.HeaderText = "Product Description";
+textBoxColumn.FieldName = "Description";
+textBoxColumn.MaxLength = 50;
+textBoxColumn.TextAlignment = ContentAlignment.BottomRight;
+textBoxColumn.Width = 250;
+radGridView1.MasterTemplate.Columns.Add(textBoxColumn);
+GridViewComboBoxColumn categoryColumn = new GridViewComboBoxColumn();
+categoryColumn.DataType = typeof(string);
+categoryColumn.Name = "CategoryColumn";
+categoryColumn.FieldName = "CategoryName";
+categoryColumn.HeaderText = "Category";
+categoryColumn.ValueMember = "CategoryID";
+categoryColumn.DisplayMember = "CategoryName";
+categoryColumn.Width = 150;
+radGridView1.MasterTemplate.Columns.Add(categoryColumn);
+
 ````
 ````VB.NET
-        RadGridView1.AutoGenerateColumns = False
+RadGridView1.AutoGenerateColumns = False
         RadGridView1.DataSource = CategoriesBindingSource
 
         Dim textBoxColumn As New GridViewTextBoxColumn()
@@ -204,7 +203,7 @@ Setting the __AutoGenerateColumns__ property to *false* allows the developer to 
         categoryColumn.DisplayMember = "CategoryName"
         categoryColumn.Width = 150
         RadGridView1.MasterTemplate.Columns.Add(categoryColumn)
-        '
+
 ````
 
 {{endregion}} 

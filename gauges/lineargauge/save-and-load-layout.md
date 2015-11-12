@@ -32,13 +32,14 @@ You can save/load the layout in code as well.#_[C#] _
 {{source=..\SamplesVB\Gauges\LinearGauge\LinearGuageGettingStarted.vb region=code}} 
 
 ````C#
-            radLinearGauge1.SaveLayout("Layout.xml");
-            radLinearGauge1.LoadLayout("Layout.xml");
+radLinearGauge1.SaveLayout("Layout.xml");
+radLinearGauge1.LoadLayout("Layout.xml");
+
 ````
 ````VB.NET
-        radLinearGauge1.SaveLayout("Layout.xml")
-        radLinearGauge1.LoadLayout("Layout.xml")
-        '
+radLinearGauge1.SaveLayout("Layout.xml")
+radLinearGauge1.LoadLayout("Layout.xml")
+
 ````
 
 {{endregion}} 

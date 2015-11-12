@@ -55,27 +55,27 @@ This logical tree structure allows you to traverse down through the cell level u
 {{source=..\SamplesVB\GridView\Fundamentials\LogicalVsVisualStructure.vb region=iterateMasterGridViewTemplate}} 
 
 ````C#
-            foreach (GridViewRowInfo rowInfo in radGridView1.MasterTemplate.Rows)
-            {
-                foreach (GridViewCellInfo cellInfo in rowInfo.Cells)
-                {
-                    if (cellInfo.ColumnInfo.HeaderText == "Name")
-                    {
-                    cellInfo.Value = "TestName";
-                    }
-                }
-            }
+foreach (GridViewRowInfo rowInfo in radGridView1.MasterTemplate.Rows)
+{
+    foreach (GridViewCellInfo cellInfo in rowInfo.Cells)
+    {
+        if (cellInfo.ColumnInfo.HeaderText == "Name")
+        {
+        cellInfo.Value = "TestName";
+        }
+    }
+}
+
 ````
 ````VB.NET
+For Each rowInfo As GridViewRowInfo In RadGridView1.MasterTemplate.Rows
+    For Each cellInfo As GridViewCellInfo In rowInfo.Cells
+        If cellInfo.ColumnInfo.Name = "Name" Then
+            cellInfo.Value = "TestName"
+        End If
+    Next
+Next
 
-        For Each rowInfo As GridViewRowInfo In RadGridView1.MasterTemplate.Rows
-            For Each cellInfo As GridViewCellInfo In rowInfo.Cells
-                If cellInfo.ColumnInfo.Name = "Name" Then
-                    cellInfo.Value = "TestName"
-                End If
-            Next
-        Next
-        '
 ````
 
 {{endregion}} 
@@ -88,21 +88,22 @@ This logical tree structure allows you to traverse down through the cell level u
 {{source=..\SamplesVB\GridView\Fundamentials\LogicalVsVisualStructure.vb region=iterateChildTemplates}} 
 
 ````C#
-            foreach (GridViewTemplate childTemplate in radGridView1.MasterTemplate.Templates)
-            {
-                foreach (GridViewColumn column in childTemplate.Columns)
-                {
-                    column.HeaderTextAlignment = ContentAlignment.TopCenter;
-                }
-            }
+foreach (GridViewTemplate childTemplate in radGridView1.MasterTemplate.Templates)
+{
+    foreach (GridViewColumn column in childTemplate.Columns)
+    {
+        column.HeaderTextAlignment = ContentAlignment.TopCenter;
+    }
+}
+
 ````
 ````VB.NET
-        For Each childtemplate As GridViewTemplate In RadGridView1.MasterTemplate.Templates
-            For Each column As GridViewColumn In childtemplate.Columns
-                column.HeaderTextAlignment = ContentAlignment.TopCenter
-            Next
-        Next
-        '
+For Each childtemplate As GridViewTemplate In RadGridView1.MasterTemplate.Templates
+    For Each column As GridViewColumn In childtemplate.Columns
+        column.HeaderTextAlignment = ContentAlignment.TopCenter
+    Next
+Next
+
 ````
 
 {{endregion}} 
@@ -120,18 +121,19 @@ RadGridView has several events that allow you to access the visual elements of t
 {{source=..\SamplesVB\GridView\Fundamentials\LogicalVsVisualStructure.vb region=cellFormatting}} 
 
 ````C#
-        void radGridView1_CellFormatting(object sender, CellFormattingEventArgs e)
-        {
-            RadProgressBarElement element = new RadProgressBarElement();
-            e.CellElement.Children.Add(element);
-        }
+void radGridView1_CellFormatting(object sender, CellFormattingEventArgs e)
+{
+    RadProgressBarElement element = new RadProgressBarElement();
+    e.CellElement.Children.Add(element);
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
-        Dim element As New RadProgressBarElement()
-        e.CellElement.Children.Add(element)
-    End Sub
-    '
+Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
+    Dim element As New RadProgressBarElement()
+    e.CellElement.Children.Add(element)
+End Sub
+
 ````
 
 {{endregion}} 

@@ -24,21 +24,22 @@ The example below demonstrates how you can change the group header text of each 
 {{source=..\SamplesVB\GridView\Grouping\FormattingGroupHeaderRow.vb region=groupHeaderText}} 
 
 ````C#
-        void radGridView1_GroupSummaryEvaluate(object sender, Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs e)
-        {
-            if (e.SummaryItem.Name == "Country")
-            {
-                e.FormatString = String.Format("Group by country: {0}", e.Value);
-            }
-        }
+void radGridView1_GroupSummaryEvaluate(object sender, Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs e)
+{
+    if (e.SummaryItem.Name == "Country")
+    {
+        e.FormatString = String.Format("Group by country: {0}", e.Value);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
-        If e.SummaryItem.Name = "Country" Then
-            e.FormatString = [String].Format("Group by country: {0}", e.Value)
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
+    If e.SummaryItem.Name = "Country" Then
+        e.FormatString = [String].Format("Group by country: {0}", e.Value)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -54,37 +55,38 @@ The following example demonstrates formatting of group header which uses data fr
 {{source=..\SamplesVB\GridView\Grouping\FormattingGroupHeaderRow.vb region=formatGroupHeaderWhichUsersDataFromGroupRows}} 
 
 ````C#
-        void radGridView1_GroupSummaryEvaluate1(object sender, Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs e)
+void radGridView1_GroupSummaryEvaluate1(object sender, Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs e)
+{
+    if (e.SummaryItem.Name == "ContactTitle")
+    {
+        int count = e.Group.ItemCount;
+        int contactsInCanada = 0;
+        foreach (GridViewRowInfo row in e.Group)
         {
-            if (e.SummaryItem.Name == "ContactTitle")
+            if (row.Cells["Country"].Value.ToString() == "Canada")
             {
-                int count = e.Group.ItemCount;
-                int contactsInCanada = 0;
-                foreach (GridViewRowInfo row in e.Group)
-                {
-                    if (row.Cells["Country"].Value.ToString() == "Canada")
-                    {
-                        contactsInCanada++;
-                    }
-                }
-                e.FormatString = String.Format("There are {0} {1} and {2} of them is(are) from Canada.", count, e.Value, contactsInCanada);
+                contactsInCanada++;
             }
         }
+        e.FormatString = String.Format("There are {0} {1} and {2} of them is(are) from Canada.", count, e.Value, contactsInCanada);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_GroupSummaryEvaluate1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
-        If e.SummaryItem.Name = "ContactTitle" Then
-            Dim contactsCount As Integer = e.Group.ItemCount
-            Dim contactsInCanada As Integer = 0
-            For Each row As GridViewRowInfo In e.Group
-                If row.Cells("Country").Value.ToString() = "Canada" Then
-                    contactsInCanada += 1
-                End If
-            Next
-            e.FormatString = [String].Format("There are {0} {1} and {2} of them is(are) from France.", contactsCount, e.Value, contactsInCanada)
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_GroupSummaryEvaluate1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
+    If e.SummaryItem.Name = "ContactTitle" Then
+        Dim contactsCount As Integer = e.Group.ItemCount
+        Dim contactsInCanada As Integer = 0
+        For Each row As GridViewRowInfo In e.Group
+            If row.Cells("Country").Value.ToString() = "Canada" Then
+                contactsInCanada += 1
+            End If
+        Next
+        e.FormatString = [String].Format("There are {0} {1} and {2} of them is(are) from France.", contactsCount, e.Value, contactsInCanada)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

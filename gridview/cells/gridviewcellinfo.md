@@ -34,24 +34,25 @@ GridViewCellInfo also includes an __EnsureVisible()__ method that scrolls the ce
 {{source=..\SamplesVB\GridView\Cells\GridViewCellInfo1.vb region=GridViewCellInfo}} 
 
 ````C#
-            GridViewRowInfo lastRow = radGridView1.Rows[radGridView1.Rows.Count - 1];
-		    GridViewCellInfo cell = lastRow.Cells["BMP"];
-            lastRow.EnsureVisible();
-            if (cell.ColumnInfo.GetType() == typeof(GridViewCheckBoxColumn))
-            {
-                cell.Value = false;
-            }
-            cell.EnsureVisible();
+GridViewRowInfo lastRow = radGridView1.Rows[radGridView1.Rows.Count - 1];
+GridViewCellInfo cell = lastRow.Cells["BMP"];
+lastRow.EnsureVisible();
+if (cell.ColumnInfo.GetType() == typeof(GridViewCheckBoxColumn))
+{
+    cell.Value = false;
+}
+cell.EnsureVisible();
+
 ````
 ````VB.NET
-        Dim lastRow As GridViewRowInfo = RadGridView1.Rows(RadGridView1.Rows.Count - 1)
-        Dim cell As GridViewCellInfo = lastRow.Cells("BMP")
-        lastRow.EnsureVisible()
-        If cell.ColumnInfo.GetType().Equals(GetType(GridViewCheckBoxColumn)) Then
+Dim lastRow As GridViewRowInfo = RadGridView1.Rows(RadGridView1.Rows.Count - 1)
+Dim cell As GridViewCellInfo = lastRow.Cells("BMP")
+lastRow.EnsureVisible()
+If cell.ColumnInfo.GetType().Equals(GetType(GridViewCheckBoxColumn)) Then
             cell.Value = False
         End If
         cell.EnsureVisible()
-        '
+
 ````
 
 {{endregion}} 

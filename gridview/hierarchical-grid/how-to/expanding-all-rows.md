@@ -20,33 +20,34 @@ In order to expand all rows in __RadGridView__ you have to iterate through them 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=expandAllRows}} 
 
 ````C#
-        void ExpandAllRows(GridViewTemplate template, bool expanded)
+void ExpandAllRows(GridViewTemplate template, bool expanded)
+{
+    foreach (GridViewRowInfo row in template.Rows)
+    {
+        row.IsExpanded = true;
+    }
+    if (template.Templates.Count > 0)
+    {
+        foreach (GridViewTemplate childTemplate in template.Templates)
         {
-            foreach (GridViewRowInfo row in template.Rows)
-            {
-                row.IsExpanded = true;
-            }
-            if (template.Templates.Count > 0)
-            {
-                foreach (GridViewTemplate childTemplate in template.Templates)
-                {
-                    ExpandAllRows(childTemplate, true);
-                }
-            }
+            ExpandAllRows(childTemplate, true);
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub ExpandAllRows(ByVal template As GridViewTemplate, ByVal expanded As Boolean)
-        For Each row As GridViewRowInfo In template.Rows
-            row.IsExpanded = True
+Private Sub ExpandAllRows(ByVal template As GridViewTemplate, ByVal expanded As Boolean)
+    For Each row As GridViewRowInfo In template.Rows
+        row.IsExpanded = True
+    Next
+    If template.Templates.Count > 0 Then
+        For Each childTemplate As GridViewTemplate In template.Templates
+            ExpandAllRows(childTemplate, True)
         Next
-        If template.Templates.Count > 0 Then
-            For Each childTemplate As GridViewTemplate In template.Templates
-                ExpandAllRows(childTemplate, True)
-            Next
-        End If
-    End Sub
-    '
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

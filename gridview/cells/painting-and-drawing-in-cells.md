@@ -28,31 +28,29 @@ The following example demonstrates how to use the __CellPaint__ event to change 
 {{source=..\SamplesVB\GridView\Cells\PaintingAndDrawingInCells.vb region=paintingAndDrawingInCells}} 
 
 ````C#
-        void radGridView1_CellPaint(object sender, Telerik.WinControls.UI.GridViewCellPaintEventArgs e)
+void radGridView1_CellPaint(object sender, Telerik.WinControls.UI.GridViewCellPaintEventArgs e)
+{
+    GridDataCellElement dataCell = e.Cell as GridDataCellElement;
+    if (dataCell != null && dataCell.ColumnInfo.Name == "UnitPrice")
+    {
+        double value = Convert.ToDouble(dataCell.Value);
+        if (value == 0)
         {
-            GridDataCellElement dataCell = e.Cell as GridDataCellElement;
-
-            if (dataCell != null && dataCell.ColumnInfo.Name == "UnitPrice")
-            {
-                double value = Convert.ToDouble(dataCell.Value);
-                if (value == 0)
-                {
-                    return;
-                }
-
-                Brush brush = value < 20 ? Brushes.Red : Brushes.Green;
-                Size cellSize = e.Cell.Size;
-
-                using (Font font = new Font("Segoe UI", 17))
-                {
-                    e.Graphics.DrawString("*", font, brush, Point.Empty);
-                }
-            }
+            return;
         }
+        Brush brush = value < 20 ? Brushes.Red : Brushes.Green;
+        Size cellSize = e.Cell.Size;
+        using (Font font = new Font("Segoe UI", 17))
+        {
+            e.Graphics.DrawString("*", font, brush, Point.Empty);
+        }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_CellPaint(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellPaintEventArgs) Handles RadGridView1.CellPaint
-        Dim dataCell As GridDataCellElement = TryCast(e.Cell, GridDataCellElement)
+Private Sub RadGridView1_CellPaint(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellPaintEventArgs) Handles RadGridView1.CellPaint
+    Dim dataCell As GridDataCellElement = TryCast(e.Cell, GridDataCellElement)
 
         If dataCell IsNot Nothing AndAlso dataCell.ColumnInfo.Name = "UnitPrice" Then
             Dim value As Double = Convert.ToDouble(dataCell.Value)
@@ -67,7 +65,7 @@ The following example demonstrates how to use the __CellPaint__ event to change 
                 e.Graphics.DrawString("*", font, brush, Point.Empty)
             End Using
         End If
-        '
+
 ````
 
 {{endregion}} 

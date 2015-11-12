@@ -25,64 +25,63 @@ Here is a quick sample:
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=uiVirtualization}} 
 
 ````C#
-        void radGridView1_CellFormatting3(object sender, CellFormattingEventArgs e)
+void radGridView1_CellFormatting3(object sender, CellFormattingEventArgs e)
+{
+    if (e.CellElement.ColumnInfo.Name == "Picture Name")
+    {
+        if (e.CellElement.RowInfo.Cells["KBytes"].Value != null)
         {
-            if (e.CellElement.ColumnInfo.Name == "Picture Name")
+            if ((decimal)e.CellElement.RowInfo.Cells["KBytes"].Value > 30)
             {
-                if (e.CellElement.RowInfo.Cells["KBytes"].Value != null)
-                {
-                    if ((decimal)e.CellElement.RowInfo.Cells["KBytes"].Value > 30)
-                    {
-                        e.CellElement.DrawFill = true;
-                        e.CellElement.GradientStyle = GradientStyles.Solid;
-                        e.CellElement.BackColor = Color.Red;
-                        e.CellElement.BorderBoxStyle = BorderBoxStyle.SingleBorder;
-                    }
-                    else
-                    {
-                        ResetProperties(e.CellElement);
-                    }
-                }
+                e.CellElement.DrawFill = true;
+                e.CellElement.GradientStyle = GradientStyles.Solid;
+                e.CellElement.BackColor = Color.Red;
+                e.CellElement.BorderBoxStyle = BorderBoxStyle.SingleBorder;
             }
             else
             {
                 ResetProperties(e.CellElement);
             }
         }
+    }
+    else
+    {
+        ResetProperties(e.CellElement);
+    }
+}
+void ResetProperties(GridCellElement cell)
+{
+    cell.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
+    cell.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
+    cell.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local);
+    cell.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local);
+}
 
-        void ResetProperties(GridCellElement cell)
-        {
-            cell.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
-            cell.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
-            cell.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local);
-            cell.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local);
-        }
 ````
 ````VB.NET
-    Private Sub radGridView1_CellFormatting3(ByVal sender As Object, ByVal e As CellFormattingEventArgs) Handles RadGridView1.CellFormatting
-        If e.CellElement.ColumnInfo.Name = "Picture Name" Then
-            If e.CellElement.RowInfo.Cells("KBytes").Value IsNot Nothing Then
-                If CDec(e.CellElement.RowInfo.Cells("KBytes").Value) > 30 Then
-                    e.CellElement.DrawFill = True
-                    e.CellElement.GradientStyle = GradientStyles.Solid
-                    e.CellElement.BackColor = Color.Red
-                    e.CellElement.BorderBoxStyle = BorderBoxStyle.SingleBorder
-                Else
-                    ResetProperties(e.CellElement)
-                End If
+Private Sub radGridView1_CellFormatting3(ByVal sender As Object, ByVal e As CellFormattingEventArgs) Handles RadGridView1.CellFormatting
+    If e.CellElement.ColumnInfo.Name = "Picture Name" Then
+        If e.CellElement.RowInfo.Cells("KBytes").Value IsNot Nothing Then
+            If CDec(e.CellElement.RowInfo.Cells("KBytes").Value) > 30 Then
+                e.CellElement.DrawFill = True
+                e.CellElement.GradientStyle = GradientStyles.Solid
+                e.CellElement.BackColor = Color.Red
+                e.CellElement.BorderBoxStyle = BorderBoxStyle.SingleBorder
+            Else
+                ResetProperties(e.CellElement)
             End If
-        Else
-            ResetProperties(e.CellElement)
         End If
-    End Sub
+    Else
+        ResetProperties(e.CellElement)
+    End If
+End Sub
+Private Sub ResetProperties(ByVal cell As GridCellElement)
+    cell.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
+    cell.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
+    cell.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local)
+    cell.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local)
+End Sub
 
-    Private Sub ResetProperties(ByVal cell As GridCellElement)
-        cell.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
-        cell.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
-        cell.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local)
-        cell.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local)
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -100,34 +99,35 @@ Here is a quick sample:
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=uiVirtStyle}} 
 
 ````C#
-            for (int i = 0; i < this.radGridView1.Rows.Count; i++)
-            {
-                if (this.radGridView1.Rows[i].Cells["KBytes"].Value != null)
-                {
-                    if ((decimal)this.radGridView1.Rows[i].Cells["KBytes"].Value > 30)
-                    {
-                        this.radGridView1.Rows[i].Cells["Picture Name"].Style.CustomizeFill = true;
-                        this.radGridView1.Rows[i].Cells["Picture Name"].Style.CustomizeBorder = true;
-                        this.radGridView1.Rows[i].Cells["Picture Name"].Style.BackColor = Color.Red;
-                        this.radGridView1.Rows[i].Cells["Picture Name"].Style.BorderGradientStyle = GradientStyles.Solid;
-                        this.radGridView1.Rows[i].Cells["Picture Name"].Style.BorderBoxStyle = BorderBoxStyle.SingleBorder;
-                    }
-                }
-            }
+for (int i = 0; i < this.radGridView1.Rows.Count; i++)
+{
+    if (this.radGridView1.Rows[i].Cells["KBytes"].Value != null)
+    {
+        if ((decimal)this.radGridView1.Rows[i].Cells["KBytes"].Value > 30)
+        {
+            this.radGridView1.Rows[i].Cells["Picture Name"].Style.CustomizeFill = true;
+            this.radGridView1.Rows[i].Cells["Picture Name"].Style.CustomizeBorder = true;
+            this.radGridView1.Rows[i].Cells["Picture Name"].Style.BackColor = Color.Red;
+            this.radGridView1.Rows[i].Cells["Picture Name"].Style.BorderGradientStyle = GradientStyles.Solid;
+            this.radGridView1.Rows[i].Cells["Picture Name"].Style.BorderBoxStyle = BorderBoxStyle.SingleBorder;
+        }
+    }
+}
+
 ````
 ````VB.NET
-        For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
-            If Me.radGridView1.Rows(i).Cells("KBytes").Value IsNot Nothing Then
-                If CDec(Me.radGridView1.Rows(i).Cells("KBytes").Value) > 30 Then
-                    Me.radGridView1.Rows(i).Cells("Picture Name").Style.CustomizeFill = True
-                    Me.radGridView1.Rows(i).Cells("Picture Name").Style.CustomizeBorder = True
-                    Me.radGridView1.Rows(i).Cells("Picture Name").Style.BackColor = Color.Red
-                    Me.radGridView1.Rows(i).Cells("Picture Name").Style.BorderGradientStyle = GradientStyles.Solid
-                    Me.radGridView1.Rows(i).Cells("Picture Name").Style.BorderBoxStyle = BorderBoxStyle.SingleBorder
-                End If
-            End If
-        Next i
-        '
+For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
+    If Me.radGridView1.Rows(i).Cells("KBytes").Value IsNot Nothing Then
+        If CDec(Me.radGridView1.Rows(i).Cells("KBytes").Value) > 30 Then
+            Me.radGridView1.Rows(i).Cells("Picture Name").Style.CustomizeFill = True
+            Me.radGridView1.Rows(i).Cells("Picture Name").Style.CustomizeBorder = True
+            Me.radGridView1.Rows(i).Cells("Picture Name").Style.BackColor = Color.Red
+            Me.radGridView1.Rows(i).Cells("Picture Name").Style.BorderGradientStyle = GradientStyles.Solid
+            Me.radGridView1.Rows(i).Cells("Picture Name").Style.BorderBoxStyle = BorderBoxStyle.SingleBorder
+        End If
+    End If
+Next i
+
 ````
 
 {{endregion}} 
@@ -145,19 +145,20 @@ Here is a quick sample of how conditional formatting can be set by code:
 {{source=..\SamplesVB\GridView\Cells\ConditionalFormattingCells.vb region=conditionalFormattingCells}} 
 
 ````C#
-            ConditionalFormattingObject obj = new ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", false);
-            obj.CellBackColor = Color.SkyBlue;
-            obj.CellForeColor = Color.Red;
-            obj.TextAlignment = ContentAlignment.MiddleRight;
-            this.radGridView1.Columns["UnitPrice"].ConditionalFormattingObjectList.Add(obj);
+ConditionalFormattingObject obj = new ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", false);
+obj.CellBackColor = Color.SkyBlue;
+obj.CellForeColor = Color.Red;
+obj.TextAlignment = ContentAlignment.MiddleRight;
+this.radGridView1.Columns["UnitPrice"].ConditionalFormattingObjectList.Add(obj);
+
 ````
 ````VB.NET
-        Dim obj As New ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", False)
-        obj.CellBackColor = Color.SkyBlue
-        obj.CellForeColor = Color.Red
-        obj.TextAlignment = ContentAlignment.MiddleRight
-        Me.RadGridView1.Columns("UnitPrice").ConditionalFormattingObjectList.Add(obj)
-        '
+Dim obj As New ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", False)
+obj.CellBackColor = Color.SkyBlue
+obj.CellForeColor = Color.Red
+obj.TextAlignment = ContentAlignment.MiddleRight
+Me.RadGridView1.Columns("UnitPrice").ConditionalFormattingObjectList.Add(obj)
+
 ````
 
 {{endregion}} 

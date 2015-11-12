@@ -26,11 +26,12 @@ You can easily set the ThemeName of the RadMessageBox by calling the SetThemeNam
 {{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=SetThemeName}} 
 
 ````C#
-            RadMessageBox.SetThemeName("Desert");
+RadMessageBox.SetThemeName("Desert");
+
 ````
 ````VB.NET
-        RadMessageBox.SetThemeName("Desert")
-        '
+RadMessageBox.SetThemeName("Desert")
+
 ````
 
 {{endregion}} 
@@ -114,40 +115,39 @@ As of Q2 2014 __RadMessageBox__ supports details section. This section can be sh
 {{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=details}} 
 
 ````C#
-            RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore, "Details Text");
+RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore, "Details Text");
+
 ````
 ````VB.NET
-        RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore, "Details Text")
-        '#End Region
-    End Sub
-End Class
+RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore, "Details Text")
+'#End Region
+End Sub
+s
+ LocalizationProvider
+lass MyRadMessageLocalizationProvider
+Inherits RadMessageLocalizationProvider
+Public Overloads Overrides Function GetLocalizedString(ByVal id As String) As String
+Select Case id
+    Case RadMessageStringID.AbortButton
+        Return "Abbruch"
+    Case RadMessageStringID.CancelButton
+        Return "Löschen"
+    Case RadMessageStringID.IgnoreButton
+        Return "Ignorieren"
+    Case RadMessageStringID.NoButton
+        Return "Nein"
+    Case RadMessageStringID.OKButton
+        Return "OK"
+    Case RadMessageStringID.RetryButton
+        Return "Wiederholung"
+    Case RadMessageStringID.YesButton
+        Return "Ja"
+    Case Else
+        Return MyBase.GetLocalizedString(id)
+End Select
+End Function
+s
 
-'#region LocalizationProvider
-Public Class MyRadMessageLocalizationProvider
-    Inherits RadMessageLocalizationProvider
-
-    Public Overloads Overrides Function GetLocalizedString(ByVal id As String) As String
-        Select Case id
-            Case RadMessageStringID.AbortButton
-                Return "Abbruch"
-            Case RadMessageStringID.CancelButton
-                Return "Löschen"
-            Case RadMessageStringID.IgnoreButton
-                Return "Ignorieren"
-            Case RadMessageStringID.NoButton
-                Return "Nein"
-            Case RadMessageStringID.OKButton
-                Return "OK"
-            Case RadMessageStringID.RetryButton
-                Return "Wiederholung"
-            Case RadMessageStringID.YesButton
-                Return "Ja"
-            Case Else
-                Return MyBase.GetLocalizedString(id)
-        End Select
-    End Function
-End Class
-'
 ````
 
 {{endregion}} 

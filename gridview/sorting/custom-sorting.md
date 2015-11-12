@@ -40,15 +40,15 @@ The following example demonstrates how to handle the __CustomSorting__ event sor
 {{source=..\SamplesCS\GridView\Sorting\CustomSorting.cs region=usingCustomSorting}} 
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingCustomSorting}} 
 ````C#
-    this.radGridView1.EnableCustomSorting = true;
-    this.radGridView1.CustomSorting += new GridViewCustomSortingEventHandler(radGridView1_CustomSorting);
-    
-    this.radGridView1.Columns["Freight"].SortOrder = RadSortOrder.Ascending;
+this.radGridView1.EnableCustomSorting = true;
+this.radGridView1.CustomSorting += new GridViewCustomSortingEventHandler(radGridView1_CustomSorting);
+this.radGridView1.Columns["Freight"].SortOrder = RadSortOrder.Ascending;
+
 ````
 ````VB.NET
-     Me.RadGridView1.EnableCustomSorting = TrueRadGridView1.CustomSorting
-     Me.RadGridView1.Columns("Freight").SortOrder = RadSortOrder.Ascending
-    '
+Me.RadGridView1.EnableCustomSorting = True
+Me.RadGridView1.Columns("Freight").SortOrder = RadSortOrder.Ascending
+
 ````
 
 {{endregion}}
@@ -57,38 +57,38 @@ The following example demonstrates how to handle the __CustomSorting__ event sor
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingCustomSorting1}} 
 
 ````C#
-        private void radGridView1_CustomSorting(object sender, GridViewCustomSortingEventArgs e)
-        {
-            decimal row1Freight = (decimal)e.Row1.Cells["Freight"].Value;
-            decimal row2Freight = (decimal)e.Row2.Cells["Freight"].Value;
-            if (row1Freight > row2Freight)
-            {
-                e.SortResult = 1;
-            }
-            else if (row1Freight < row2Freight)
-            {
-                e.SortResult = -1;
-            }
-            else
-            {
-                e.SortResult = 0;
-            }
-        }
+private void radGridView1_CustomSorting(object sender, GridViewCustomSortingEventArgs e)
+{
+    decimal row1Freight = (decimal)e.Row1.Cells["Freight"].Value;
+    decimal row2Freight = (decimal)e.Row2.Cells["Freight"].Value;
+    if (row1Freight > row2Freight)
+    {
+        e.SortResult = 1;
+    }
+    else if (row1Freight < row2Freight)
+    {
+        e.SortResult = -1;
+    }
+    else
+    {
+        e.SortResult = 0;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_CustomSorting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCustomSortingEventArgs) Handles RadGridView1.CustomSorting
-        Dim row1Freight As Decimal = CDec(e.Row1.Cells("Freight").Value)
-        Dim row2Freight As Decimal = CDec(e.Row2.Cells("Freight").Value)
+Private Sub RadGridView1_CustomSorting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCustomSortingEventArgs) Handles RadGridView1.CustomSorting
+    Dim row1Freight As Decimal = CDec(e.Row1.Cells("Freight").Value)
+    Dim row2Freight As Decimal = CDec(e.Row2.Cells("Freight").Value)
+    If row1Freight > row2Freight Then
+        e.SortResult = 1
+    ElseIf row1Freight < row2Freight Then
+        e.SortResult = -1
+    Else
+        e.SortResult = 0
+    End If
+End Sub
 
-        If row1Freight > row2Freight Then
-            e.SortResult = 1
-        ElseIf row1Freight < row2Freight Then
-            e.SortResult = -1
-        Else
-            e.SortResult = 0
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -102,47 +102,14 @@ The following example demonstrates the usage of the __Handled__ property of the 
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting1.vb region=usingCustomSortingPlusHandled}} 
 
 ````C#
-        public class CustomComparer : IComparer<GridViewRowInfo>
-        {
-            public int Compare(GridViewRowInfo x, GridViewRowInfo y)
-            {
-                int row1ShipCityLenght = x.Cells["ShipCity"].Value.ToString().Length;
-                int row2ShipCityLenght = y.Cells["ShipCity"].Value.ToString().Length;
+this.radGridView1.Columns["ShipCity"].SortOrder = RadSortOrder.Ascending;
+this.radGridView1.MasterTemplate.SortComparer = new CustomComparer();
 
-                int result = 0;
-                if (row1ShipCityLenght > row2ShipCityLenght)
-                {
-                    result = 1;
-                }
-                else if (row1ShipCityLenght < row2ShipCityLenght)
-                {
-                    result = -1;
-                }
-
-                return result;
-            }
-        }
 ````
 ````VB.NET
-    Public Class CustomComparer
-        Implements IComparer(Of GridViewRowInfo)
+Me.RadGridView1.Columns("ShipCity").SortOrder = RadSortOrder.Ascending
+Me.RadGridView1.MasterTemplate.SortComparer = New CustomComparer()
 
-        Public Function Compare(ByVal x As GridViewRowInfo, ByVal y As GridViewRowInfo) As Integer Implements System.Collections.Generic.IComparer(Of Telerik.WinControls.UI.GridViewRowInfo).Compare
-            Dim row1ShipCityLenght As Integer = x.Cells("ShipCity").Value.ToString().Length
-            Dim row2ShipCityLenght As Integer = y.Cells("ShipCity").Value.ToString().Length
-
-            Dim result As Integer = 0
-            If row1ShipCityLenght > row2ShipCityLenght Then
-                result = 1
-            ElseIf row1ShipCityLenght < row2ShipCityLenght Then
-                result = -1
-            End If
-
-            Return result
-        End Function
-    End Class
-
-    '
 ````
 
 {{endregion}} 
@@ -151,50 +118,47 @@ The following example demonstrates the usage of the __Handled__ property of the 
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting1.vb region=usingCustomSortingPlusHandled1}} 
 
 ````C#
-        private void radGridView1_CustomSorting(object sender, GridViewCustomSortingEventArgs e)
-        {
-            decimal row1Freight = (decimal)e.Row1.Cells["Freight"].Value;
-            decimal row2Freight = (decimal)e.Row2.Cells["Freight"].Value;
+private void radGridView1_CustomSorting(object sender, GridViewCustomSortingEventArgs e)
+{
+    decimal row1Freight = (decimal)e.Row1.Cells["Freight"].Value;
+    decimal row2Freight = (decimal)e.Row2.Cells["Freight"].Value;
+    if (row1Freight < 0.33m || row2Freight < 0.33m)
+    {
+        e.Handled = false;
+        return;
+    }
+    if (row1Freight > row2Freight)
+    {
+        e.SortResult = 1;
+    }
+    else if (row1Freight < row2Freight)
+    {
+        e.SortResult = -1;
+    }
+    else
+    {
+        e.SortResult = 0;
+    }
+}
 
-            if (row1Freight < 0.33m || row2Freight < 0.33m)
-            {
-                e.Handled = false;
-                return;
-            }
-
-            if (row1Freight > row2Freight)
-            {
-                e.SortResult = 1;
-            }
-            else if (row1Freight < row2Freight)
-            {
-                e.SortResult = -1;
-            }
-            else
-            {
-                e.SortResult = 0;
-            }
-        }
 ````
 ````VB.NET
-    Private Sub RadGridView1_CustomSorting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCustomSortingEventArgs) Handles RadGridView1.CustomSorting
-        Dim row1Freight As Decimal = CDec(e.Row1.Cells("Freight").Value)
-        Dim row2Freight As Decimal = CDec(e.Row2.Cells("Freight").Value)
+Private Sub RadGridView1_CustomSorting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCustomSortingEventArgs) Handles RadGridView1.CustomSorting
+    Dim row1Freight As Decimal = CDec(e.Row1.Cells("Freight").Value)
+    Dim row2Freight As Decimal = CDec(e.Row2.Cells("Freight").Value)
+    If row1Freight < 0.33D OrElse row2Freight < 0.33D Then
+        e.Handled = False
+        Return
+    End If
+    If row1Freight > row2Freight Then
+        e.SortResult = 1
+    ElseIf row1Freight < row2Freight Then
+        e.SortResult = -1
+    Else
+        e.SortResult = 0
+    End If
+End Sub
 
-        If row1Freight < 0.33D OrElse row2Freight < 0.33D Then
-            e.Handled = False
-            Return
-        End If
-
-        If row1Freight > row2Freight Then
-            e.SortResult = 1
-        ElseIf row1Freight < row2Freight Then
-            e.SortResult = -1
-        Else
-            e.SortResult = 0
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -212,47 +176,14 @@ The following example demonstrates how to use a custom sorting mechanism in RadG
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingSortComparer}} 
 
 ````C#
-        public class CustomComparer : IComparer<GridViewRowInfo>
-        {
-            public int Compare(GridViewRowInfo x, GridViewRowInfo y)
-            {
-                int row1ShipCityLenght = x.Cells["ShipCity"].Value.ToString().Length;
-                int row2ShipCityLenght = y.Cells["ShipCity"].Value.ToString().Length;
+this.radGridView1.Columns["ShipCity"].SortOrder = RadSortOrder.Ascending;
+this.radGridView1.MasterTemplate.SortComparer = new CustomComparer();
 
-                int result = 0;
-                if (row1ShipCityLenght > row2ShipCityLenght)
-                {
-                    result = 1;
-                }
-                else if (row1ShipCityLenght < row2ShipCityLenght)
-                {
-                    result = -1;
-                }
-
-                return result;
-            }
-        }
 ````
 ````VB.NET
-    Public Class CustomComparer
-        Implements IComparer(Of GridViewRowInfo)
+Me.RadGridView1.Columns("ShipCity").SortOrder = RadSortOrder.Ascending
+Me.RadGridView1.MasterTemplate.SortComparer = New CustomComparer()
 
-        Public Function Compare(ByVal x As GridViewRowInfo, ByVal y As GridViewRowInfo) As Integer Implements System.Collections.Generic.IComparer(Of Telerik.WinControls.UI.GridViewRowInfo).Compare
-            Dim row1ShipCityLenght As Integer = x.Cells("ShipCity").Value.ToString().Length
-            Dim row2ShipCityLenght As Integer = y.Cells("ShipCity").Value.ToString().Length
-
-            Dim result As Integer = 0
-            If row1ShipCityLenght > row2ShipCityLenght Then
-                result = 1
-            ElseIf row1ShipCityLenght < row2ShipCityLenght Then
-                result = -1
-            End If
-
-            Return result
-        End Function
-    End Class
-
-    '
 ````
 
 {{endregion}} 
@@ -262,47 +193,14 @@ The following example demonstrates how to use a custom sorting mechanism in RadG
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingSortComparer1}} 
 
 ````C#
-        public class CustomComparer : IComparer<GridViewRowInfo>
-        {
-            public int Compare(GridViewRowInfo x, GridViewRowInfo y)
-            {
-                int row1ShipCityLenght = x.Cells["ShipCity"].Value.ToString().Length;
-                int row2ShipCityLenght = y.Cells["ShipCity"].Value.ToString().Length;
+this.radGridView1.Columns["ShipCity"].SortOrder = RadSortOrder.Ascending;
+this.radGridView1.MasterTemplate.SortComparer = new CustomComparer();
 
-                int result = 0;
-                if (row1ShipCityLenght > row2ShipCityLenght)
-                {
-                    result = 1;
-                }
-                else if (row1ShipCityLenght < row2ShipCityLenght)
-                {
-                    result = -1;
-                }
-
-                return result;
-            }
-        }
 ````
 ````VB.NET
-    Public Class CustomComparer
-        Implements IComparer(Of GridViewRowInfo)
+Me.RadGridView1.Columns("ShipCity").SortOrder = RadSortOrder.Ascending
+Me.RadGridView1.MasterTemplate.SortComparer = New CustomComparer()
 
-        Public Function Compare(ByVal x As GridViewRowInfo, ByVal y As GridViewRowInfo) As Integer Implements System.Collections.Generic.IComparer(Of Telerik.WinControls.UI.GridViewRowInfo).Compare
-            Dim row1ShipCityLenght As Integer = x.Cells("ShipCity").Value.ToString().Length
-            Dim row2ShipCityLenght As Integer = y.Cells("ShipCity").Value.ToString().Length
-
-            Dim result As Integer = 0
-            If row1ShipCityLenght > row2ShipCityLenght Then
-                result = 1
-            ElseIf row1ShipCityLenght < row2ShipCityLenght Then
-                result = -1
-            End If
-
-            Return result
-        End Function
-    End Class
-
-    '
 ````
 
 {{endregion}} 
@@ -319,56 +217,51 @@ You can use the custom sorting functionality to change the default sorting behav
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting2.vb region=SortByCustomCriteria}} 
 
 ````C#
-        void radGridView1_CustomSorting(object sender, Telerik.WinControls.UI.GridViewCustomSortingEventArgs e)
-        {   
-            int descriptorIndex = -1;
-
-            for (int i = 0; i < this.radGridView1.SortDescriptors.Count; i++)
+void radGridView1_CustomSorting(object sender, Telerik.WinControls.UI.GridViewCustomSortingEventArgs e)
+{   
+    int descriptorIndex = -1;
+    for (int i = 0; i < this.radGridView1.SortDescriptors.Count; i++)
+    {
+        if (radGridView1.SortDescriptors[i].PropertyName == "Customer")
+        {                 
+            descriptorIndex = i;
+            break;
+        }
+    }
+    if (descriptorIndex != -1)
+    {
+        string cellValue1 = e.Row1.Cells["Customer"].Value.ToString();
+        string cellValue2 = e.Row2.Cells["Customer"].Value.ToString();
+        int result = cellValue1.Length - cellValue2.Length;
+        if (result != 0)
+        {
+            if (this.radGridView1.SortDescriptors[descriptorIndex].Direction == ListSortDirection.Descending)
             {
-                if (radGridView1.SortDescriptors[i].PropertyName == "Customer")
-                {                 
-                    descriptorIndex = i;
-                    break;
-                }
-            }
-
-            if (descriptorIndex != -1)
-            {
-                string cellValue1 = e.Row1.Cells["Customer"].Value.ToString();
-                string cellValue2 = e.Row2.Cells["Customer"].Value.ToString();
-                int result = cellValue1.Length - cellValue2.Length;
-
-                if (result != 0)
-                {
-                    if (this.radGridView1.SortDescriptors[descriptorIndex].Direction == ListSortDirection.Descending)
-                    {
-                        result = -result;
-                    }
-                }
-                e.SortResult = result;
-            }
-            else
-            {
-                e.Handled = false;
+                result = -result;
             }
         }
+        e.SortResult = result;
+    }
+    else
+    {
+        e.Handled = false;
+    }
+}
+
 ````
 ````VB.NET
   Private Sub radGridView1_CustomSorting(sender As Object, e As Telerik.WinControls.UI.GridViewCustomSortingEventArgs)
         Dim descriptorIndex As Integer = -1
-
         For i As Integer = 0 To Me.radGridView1.SortDescriptors.Count - 1
             If radGridView1.SortDescriptors(i).PropertyName = "Customer" Then
                 descriptorIndex = i
                 Exit For
             End If
         Next
-
         If descriptorIndex <> -1 Then
             Dim cellValue1 As String = e.Row1.Cells("Customer").Value.ToString()
             Dim cellValue2 As String = e.Row2.Cells("Customer").Value.ToString()
             Dim result As Integer = cellValue1.Length - cellValue2.Length
-
             If result <> 0 Then
                 If Me.radGridView1.SortDescriptors(descriptorIndex).Direction = ListSortDirection.Descending Then
                     result = -result
@@ -379,7 +272,7 @@ You can use the custom sorting functionality to change the default sorting behav
             e.Handled = False
         End If
     End Sub
-    '
+
 ````
 
 {{endregion}} 

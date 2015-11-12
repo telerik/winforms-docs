@@ -24,32 +24,33 @@ Start by creating the context menu, initializing its items, and subscribing for 
 {{source=..\SamplesVB\GridView\ContextMenus\CustomContextMenus.vb region=creatingContextMenu}} 
 
 ````C#
-        private RadContextMenu contextMenu;
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            contextMenu = new RadContextMenu();
-            RadMenuItem menuItem1 = new RadMenuItem("Item 1");
-            menuItem1.ForeColor = Color.Red;
-            menuItem1.Click += new EventHandler(menuItem1_Click);
-            RadMenuItem menuItem2 = new RadMenuItem("Item 2");
-            menuItem2.Click += new EventHandler(menuItem2_Click);
-            contextMenu.Items.Add(menuItem1);
-            contextMenu.Items.Add(menuItem2);
-        }
+private RadContextMenu contextMenu;
+private void Form1_Load(object sender, EventArgs e)
+{
+    contextMenu = new RadContextMenu();
+    RadMenuItem menuItem1 = new RadMenuItem("Item 1");
+    menuItem1.ForeColor = Color.Red;
+    menuItem1.Click += new EventHandler(menuItem1_Click);
+    RadMenuItem menuItem2 = new RadMenuItem("Item 2");
+    menuItem2.Click += new EventHandler(menuItem2_Click);
+    contextMenu.Items.Add(menuItem1);
+    contextMenu.Items.Add(menuItem2);
+}
+
 ````
 ````VB.NET
-    Private contextMenu1 As RadContextMenu
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        contextMenu1 = New RadContextMenu()
-        Dim menuItem1 As New RadMenuItem("Item 1")
-        menuItem1.ForeColor = Color.Red
-        AddHandler menuItem1.Click, AddressOf rmi1_Click
-        Dim menuItem2 As New RadMenuItem("Item 2")
-        AddHandler menuItem2.Click, AddressOf rmi2_Click
-        contextMenu1.Items.Add(menuItem1)
-        contextMenu1.Items.Add(menuItem2)
-    End Sub
-    '
+Private contextMenu1 As RadContextMenu
+Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    contextMenu1 = New RadContextMenu()
+    Dim menuItem1 As New RadMenuItem("Item 1")
+    menuItem1.ForeColor = Color.Red
+    AddHandler menuItem1.Click, AddressOf rmi1_Click
+    Dim menuItem2 As New RadMenuItem("Item 2")
+    AddHandler menuItem2.Click, AddressOf rmi2_Click
+    contextMenu1.Items.Add(menuItem1)
+    contextMenu1.Items.Add(menuItem2)
+End Sub
+
 ````
 
 {{endregion}} 
@@ -63,16 +64,17 @@ Once the menu object has been initialized and populated with menu items, it is r
 {{source=..\SamplesVB\GridView\ContextMenus\CustomContextMenus.vb region=changeTheContextMenu}} 
 
 ````C#
-        void radGridView1_ContextMenuOpening(object sender, ContextMenuOpeningEventArgs e)
-        {
-            e.ContextMenu = contextMenu.DropDown;
-        }
+void radGridView1_ContextMenuOpening(object sender, ContextMenuOpeningEventArgs e)
+{
+    e.ContextMenu = contextMenu.DropDown;
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_ContextMenuOpening(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ContextMenuOpeningEventArgs) Handles RadGridView1.ContextMenuOpening
-        e.ContextMenu = contextMenu1.DropDown
-    End Sub
-    '
+Private Sub RadGridView1_ContextMenuOpening(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ContextMenuOpeningEventArgs) Handles RadGridView1.ContextMenuOpening
+    e.ContextMenu = contextMenu1.DropDown
+End Sub
+
 ````
 
 {{endregion}} 

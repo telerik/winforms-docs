@@ -22,48 +22,49 @@ All grid editors inherit from __BaseGridEditor__. So, you have to inherit from t
 {{source=..\SamplesVB\GridView\Editors\UsingCustomEditors.vb region=trackBarEditor}} 
 
 ````C#
-    public class TrackBarEditor : BaseGridEditor
+public class TrackBarEditor : BaseGridEditor
+{
+    public override object Value
     {
-        public override object Value
+        get
         {
-            get
+            TrackBarEditorElement editor = (TrackBarEditorElement)this.EditorElement;
+            return editor.Value;
+        }
+        set
+        {
+            TrackBarEditorElement editor = (TrackBarEditorElement)this.EditorElement;
+            if (value != null && value != DBNull.Value)
             {
-                TrackBarEditorElement editor = (TrackBarEditorElement)this.EditorElement;
-                return editor.Value;
+                editor.Value = Convert.ToInt32(value);
             }
-            set
+            else
             {
-                TrackBarEditorElement editor = (TrackBarEditorElement)this.EditorElement;
-                if (value != null && value != DBNull.Value)
-                {
-                    editor.Value = Convert.ToInt32(value);
-                }
-                else
-                {
-                    editor.Value = 0;
-                }
+                editor.Value = 0;
             }
-        }
-        public override void BeginEdit()
-        {
-            base.BeginEdit();
-            this.EditorElement.Focus();
-            ((TrackBarEditorElement)this.EditorElement).TrackPositionChanged += new EventHandler(TrackBarEditor_TrackPositionChanged);
-        }
-        public override bool EndEdit()
-        {
-            ((TrackBarEditorElement)this.EditorElement).TrackPositionChanged -= new EventHandler(TrackBarEditor_TrackPositionChanged);
-            return base.EndEdit();
-        }
-        void TrackBarEditor_TrackPositionChanged(object sender, EventArgs e)
-        {
-            OnValueChanged();
-        }
-        protected override RadElement CreateEditorElement()
-        {
-            return new TrackBarEditorElement();
         }
     }
+    public override void BeginEdit()
+    {
+        base.BeginEdit();
+        this.EditorElement.Focus();
+        ((TrackBarEditorElement)this.EditorElement).TrackPositionChanged += new EventHandler(TrackBarEditor_TrackPositionChanged);
+    }
+    public override bool EndEdit()
+    {
+        ((TrackBarEditorElement)this.EditorElement).TrackPositionChanged -= new EventHandler(TrackBarEditor_TrackPositionChanged);
+        return base.EndEdit();
+    }
+    void TrackBarEditor_TrackPositionChanged(object sender, EventArgs e)
+    {
+        OnValueChanged();
+    }
+    protected override RadElement CreateEditorElement()
+    {
+        return new TrackBarEditorElement();
+    }
+}
+
 ````
 ````VB.NET
 Public Class TrackBarEditor
@@ -98,7 +99,7 @@ Public Class TrackBarEditor
         Return New TrackBarEditorElement()
     End Function
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -114,40 +115,41 @@ We use the standard __RadTrackBar__ element in this example with some modificati
 {{source=..\SamplesVB\GridView\Editors\UsingCustomEditors.vb region=trackBarEditorElement}} 
 
 ````C#
-    public class TrackBarEditorElement : RadTrackBarElement
+public class TrackBarEditorElement : RadTrackBarElement
+{
+    public TrackBarEditorElement()
     {
-        public TrackBarEditorElement()
+        this.CanFocus = true;
+    }
+    public event EventHandler TrackPositionChanged;
+    protected override Type ThemeEffectiveType
+    {
+        get
         {
-            this.CanFocus = true;
-        }
-        public event EventHandler TrackPositionChanged;
-        protected override Type ThemeEffectiveType
-        {
-            get
-            {
-                return typeof(RadTrackBarElement);
-            }
-        }
-        protected override SizeF MeasureOverride(SizeF availableSize)
-        {
-            int desiredHeight = 30;
-            foreach (RadElement element in this.Children)
-            {
-                element.Measure(new SizeF(availableSize.Width, desiredHeight));
-            }
-            return new SizeF(1, desiredHeight);
-        }
-        protected override void OnPropertyChanged(RadPropertyChangedEventArgs e)
-        {
-            base.OnPropertyChanged(e);
-            if (e.Property == RadTrackBarItem.ValueProperty
-                && this.Parent != null
-                && this.TrackPositionChanged != null)
-            {
-                this.TrackPositionChanged(this, EventArgs.Empty);
-            }
+            return typeof(RadTrackBarElement);
         }
     }
+    protected override SizeF MeasureOverride(SizeF availableSize)
+    {
+        int desiredHeight = 30;
+        foreach (RadElement element in this.Children)
+        {
+            element.Measure(new SizeF(availableSize.Width, desiredHeight));
+        }
+        return new SizeF(1, desiredHeight);
+    }
+    protected override void OnPropertyChanged(RadPropertyChangedEventArgs e)
+    {
+        base.OnPropertyChanged(e);
+        if (e.Property == RadTrackBarItem.ValueProperty
+            && this.Parent != null
+            && this.TrackPositionChanged != null)
+        {
+            this.TrackPositionChanged(this, EventArgs.Empty);
+        }
+    }
+}
+
 ````
 ````VB.NET
 Public Class TrackBarEditorElement
@@ -175,7 +177,7 @@ Public Class TrackBarEditorElement
         End If
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -191,21 +193,22 @@ The __EditorRequired__ event is the correct place to replace the default editor:
 {{source=..\SamplesVB\GridView\Editors\UsingCustomEditors.vb region=changingTheEditor}} 
 
 ````C#
-        void radGridView1_EditorRequired(object sender, EditorRequiredEventArgs e)
-        {
-            if (e.EditorType == typeof(GridSpinEditor))
-            {
-                e.EditorType = typeof(TrackBarEditor);
-            }
-        }
+void radGridView1_EditorRequired(object sender, EditorRequiredEventArgs e)
+{
+    if (e.EditorType == typeof(GridSpinEditor))
+    {
+        e.EditorType = typeof(TrackBarEditor);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_EditorRequired(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.EditorRequiredEventArgs) Handles RadGridView1.EditorRequired
-        If e.EditorType Is GetType(GridSpinEditor) Then
-            e.EditorType = GetType(TrackBarEditor)
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_EditorRequired(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.EditorRequiredEventArgs) Handles RadGridView1.EditorRequired
+    If e.EditorType Is GetType(GridSpinEditor) Then
+        e.EditorType = GetType(TrackBarEditor)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

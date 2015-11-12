@@ -28,21 +28,22 @@ The RadGridView control includes FilterDescriptors property of the GridViewTempl
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=usingSimpleFilterDescriptor}} 
 
 ````C#
-            FilterDescriptor filter = new FilterDescriptor();
-            filter.PropertyName = "ProductName";
-            filter.Operator = FilterOperator.Contains;
-            filter.Value = "Qu";
-            filter.IsFilterEditor = true;
-            this.radGridView1.FilterDescriptors.Add(filter);
+FilterDescriptor filter = new FilterDescriptor();
+filter.PropertyName = "ProductName";
+filter.Operator = FilterOperator.Contains;
+filter.Value = "Qu";
+filter.IsFilterEditor = true;
+this.radGridView1.FilterDescriptors.Add(filter);
+
 ````
 ````VB.NET
-        Dim filter As New FilterDescriptor()
-        filter.PropertyName = "ProductName"
-        filter.[Operator] = FilterOperator.Contains
-        filter.Value = "Qu"
-        filter.IsFilterEditor = True
-        Me.RadGridView1.FilterDescriptors.Add(filter)
-        '
+Dim filter As New FilterDescriptor()
+filter.PropertyName = "ProductName"
+filter.[Operator] = FilterOperator.Contains
+filter.Value = "Qu"
+filter.IsFilterEditor = True
+Me.RadGridView1.FilterDescriptors.Add(filter)
+
 ````
 
 {{endregion}} 
@@ -68,19 +69,20 @@ Each data column (represented by [GridViewDataColumn](http://www.telerik.com/hel
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=assingingAFilterDescriptorObject}} 
 
 ````C#
-            FilterDescriptor filter1 = new FilterDescriptor();
-            filter1.Operator = FilterOperator.Contains;
-            filter1.Value = "Qu";
-            filter1.IsFilterEditor = true;
-            this.radGridView1.Columns["ProductName"].FilterDescriptor = filter1;
+FilterDescriptor filter1 = new FilterDescriptor();
+filter1.Operator = FilterOperator.Contains;
+filter1.Value = "Qu";
+filter1.IsFilterEditor = true;
+this.radGridView1.Columns["ProductName"].FilterDescriptor = filter1;
+
 ````
 ````VB.NET
-        Dim filter1 As New FilterDescriptor()
-        filter1.[Operator] = FilterOperator.Contains
-        filter1.Value = "Qu"
-        filter1.IsFilterEditor = True
-        Me.RadGridView1.Columns("ProductName").FilterDescriptor = filter1
-        '
+Dim filter1 As New FilterDescriptor()
+filter1.[Operator] = FilterOperator.Contains
+filter1.Value = "Qu"
+filter1.IsFilterEditor = True
+Me.RadGridView1.Columns("ProductName").FilterDescriptor = filter1
+
 ````
 
 {{endregion}} 
@@ -95,33 +97,34 @@ You can add filters to multiple columns by adding a FilterDescriptor for each on
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=settingMultipleFilters}} 
 
 ````C#
-            FilterDescriptor filterUnitsInStock = new FilterDescriptor();
-            filterUnitsInStock.PropertyName = "UnitsInStock";
-            filterUnitsInStock.Operator = FilterOperator.IsGreaterThan;
-            filterUnitsInStock.Value = 100;
-            filterUnitsInStock.IsFilterEditor = true;
-            this.radGridView1.FilterDescriptors.Add(filterUnitsInStock);
-            FilterDescriptor filterProductName = new FilterDescriptor();
-            filterProductName.PropertyName = "ProductName";
-            filterProductName.Operator = FilterOperator.StartsWith;
-            filterProductName.Value = "G";
-            filterProductName.IsFilterEditor = true;
-            this.radGridView1.FilterDescriptors.Add(filterProductName);
+FilterDescriptor filterUnitsInStock = new FilterDescriptor();
+filterUnitsInStock.PropertyName = "UnitsInStock";
+filterUnitsInStock.Operator = FilterOperator.IsGreaterThan;
+filterUnitsInStock.Value = 100;
+filterUnitsInStock.IsFilterEditor = true;
+this.radGridView1.FilterDescriptors.Add(filterUnitsInStock);
+FilterDescriptor filterProductName = new FilterDescriptor();
+filterProductName.PropertyName = "ProductName";
+filterProductName.Operator = FilterOperator.StartsWith;
+filterProductName.Value = "G";
+filterProductName.IsFilterEditor = true;
+this.radGridView1.FilterDescriptors.Add(filterProductName);
+
 ````
 ````VB.NET
-        Dim filterUnitsInStock As New FilterDescriptor()
-        filterUnitsInStock.PropertyName = "UnitsInStock"
-        filterUnitsInStock.[Operator] = FilterOperator.IsGreaterThan
-        filterUnitsInStock.Value = 100
-        filterUnitsInStock.IsFilterEditor = True
-        Me.RadGridView1.FilterDescriptors.Add(filterUnitsInStock)
-        Dim filterProductName As New FilterDescriptor()
-        filterProductName.PropertyName = "ProductName"
-        filterProductName.[Operator] = FilterOperator.StartsWith
-        filterProductName.Value = "G"
-        filterProductName.IsFilterEditor = True
-        Me.RadGridView1.FilterDescriptors.Add(filterProductName)
-        '
+Dim filterUnitsInStock As New FilterDescriptor()
+filterUnitsInStock.PropertyName = "UnitsInStock"
+filterUnitsInStock.[Operator] = FilterOperator.IsGreaterThan
+filterUnitsInStock.Value = 100
+filterUnitsInStock.IsFilterEditor = True
+Me.RadGridView1.FilterDescriptors.Add(filterUnitsInStock)
+Dim filterProductName As New FilterDescriptor()
+filterProductName.PropertyName = "ProductName"
+filterProductName.[Operator] = FilterOperator.StartsWith
+filterProductName.Value = "G"
+filterProductName.IsFilterEditor = True
+Me.RadGridView1.FilterDescriptors.Add(filterProductName)
+
 ````
 
 {{endregion}} 

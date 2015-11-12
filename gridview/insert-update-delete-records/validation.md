@@ -30,22 +30,23 @@ symbols greater than 10 characters long:
 {{source=..\SamplesVB\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.vb region=handlingValueChangingEvent}} 
 
 ````C#
-        void radGridView1_ValueChanging(object sender, Telerik.WinControls.UI.ValueChangingEventArgs e)
+void radGridView1_ValueChanging(object sender, Telerik.WinControls.UI.ValueChangingEventArgs e)
+{
+    if (e.NewValue.GetType() == typeof(string))
+    {
+        if (e.NewValue.ToString().Length > 10)
         {
-            if (e.NewValue.GetType() == typeof(string))
             {
-                if (e.NewValue.ToString().Length > 10)
-                {
-                    {
-                        e.Cancel = true;
-                    }
-                }
+                e.Cancel = true;
             }
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_ValueChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ValueChangingEventArgs) Handles RadGridView1.ValueChanging
-        If e.NewValue.GetType() Is GetType(String) Then
+Private Sub RadGridView1_ValueChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ValueChangingEventArgs) Handles RadGridView1.ValueChanging
+    If e.NewValue.GetType() Is GetType(String) Then
             If e.NewValue.ToString().Length > 10 Then
                 If True Then
                     e.Cancel = True
@@ -53,7 +54,7 @@ symbols greater than 10 characters long:
             End If
         End If
     End Sub
-    '
+
 ````
 
 {{endregion}} 

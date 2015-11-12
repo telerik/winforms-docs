@@ -38,32 +38,31 @@ __Modifying sorting behavior__ As you can see above, by default you can turn off
 {{source=..\SamplesVB\GridView\EndUserCapabilities\EUCapabilitiesSorting.vb region=sortChanging}} 
 
 ````C#
-        void radGridView1_SortChanging(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
+void radGridView1_SortChanging(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
+{
+    if (e.NewItems.Count > 0)
+    {
+        Telerik.WinControls.Data.SortDescriptor sort = (Telerik.WinControls.Data.SortDescriptor)e.NewItems[0];
+        if (sort.PropertyName == "ProductName" && this.radGridView1.Columns["ProductName"].SortOrder == Telerik.WinControls.UI.RadSortOrder.Descending)
         {
-            if (e.NewItems.Count > 0)
-            {
-                Telerik.WinControls.Data.SortDescriptor sort = (Telerik.WinControls.Data.SortDescriptor)e.NewItems[0];
-                if (sort.PropertyName == "ProductName" && this.radGridView1.Columns["ProductName"].SortOrder == Telerik.WinControls.UI.RadSortOrder.Descending)
-                {
-                    e.Cancel = true;
-
-                    this.radGridView1.Columns["ProductName"].SortOrder = Telerik.WinControls.UI.RadSortOrder.None;
-                }
-            }
+            e.Cancel = true;
+            this.radGridView1.Columns["ProductName"].SortOrder = Telerik.WinControls.UI.RadSortOrder.None;
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radGridView1_SortChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.SortChanging
-        If e.NewItems.Count > 0 Then
-            Dim sort As Telerik.WinControls.Data.SortDescriptor = CType(e.NewItems(0), Telerik.WinControls.Data.SortDescriptor)
-            If sort.PropertyName = "ProductName" AndAlso Me.RadGridView1.Columns("ProductName").SortOrder = Telerik.WinControls.UI.RadSortOrder.Descending Then
-                e.Cancel = True
-
-                Me.RadGridView1.Columns("ProductName").SortOrder = Telerik.WinControls.UI.RadSortOrder.None
-            End If
+Private Sub radGridView1_SortChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.SortChanging
+    If e.NewItems.Count > 0 Then
+        Dim sort As Telerik.WinControls.Data.SortDescriptor = CType(e.NewItems(0), Telerik.WinControls.Data.SortDescriptor)
+        If sort.PropertyName = "ProductName" AndAlso Me.RadGridView1.Columns("ProductName").SortOrder = Telerik.WinControls.UI.RadSortOrder.Descending Then
+            e.Cancel = True
+            Me.RadGridView1.Columns("ProductName").SortOrder = Telerik.WinControls.UI.RadSortOrder.None
         End If
-    End Sub
-    '
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

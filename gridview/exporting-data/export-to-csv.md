@@ -38,11 +38,12 @@ Before running export to CSV, you have to initialize the ExportToCSV class. The 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=exportToCsvInitialization}} 
 
 ````C#
-            ExportToCSV exporter = new ExportToCSV(this.radGridView1);
+ExportToCSV exporter = new ExportToCSV(this.radGridView1);
+
 ````
 ````VB.NET
-        Dim exporter As ExportToCSV = New ExportToCSV(Me.RadGridView1)
-        '
+Dim exporter As ExportToCSV = New ExportToCSV(Me.RadGridView1)
+
 ````
 
 {{endregion}} 
@@ -57,11 +58,12 @@ This property allows for changing the default (*.csv) file extension of the expo
 {{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=settingTheFileExtention}} 
 
 ````C#
-            exporter.FileExtension = "";
+exporter.FileExtension = "";
+
 ````
 ````VB.NET
-        exporter.FileExtension = ""
-        '
+exporter.FileExtension = ""
+
 ````
 
 {{endregion}} 
@@ -94,11 +96,12 @@ You can use __SummariesExportOption__ property to specify how to export summary 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=settingSummariesToExport}} 
 
 ````C#
-            exporter.SummariesExportOption = SummariesOption.DoNotExport;
+exporter.SummariesExportOption = SummariesOption.DoNotExport;
+
 ````
 ````VB.NET
-        exporter.SummariesExportOption = SummariesOption.DoNotExport
-        '
+exporter.SummariesExportOption = SummariesOption.DoNotExport
+
 ````
 
 {{endregion}} 
@@ -115,13 +118,14 @@ Exporting data to CSV file is done through the RunExport method of ExportToCSV o
 {{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=exportToCsvFormat}} 
 
 ````C#
-            string fileName = "C:\\ExportedData.csv";
-            exporter.RunExport(fileName);
+string fileName = "C:\\ExportedData.csv";
+exporter.RunExport(fileName);
+
 ````
 ````VB.NET
-        Dim fileName As String = "C:\\ExportedData.csv"
-        exporter.RunExport(fileName)
-        '
+Dim fileName As String = "C:\\ExportedData.csv"
+exporter.RunExport(fileName)
+
 ````
 
 {{endregion}} 
@@ -141,21 +145,22 @@ It gives access to a single cell’s element that allows you to replace the actu
 {{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=handlingTheCsvCellFormattingEvent}} 
 
 ````C#
-        void exporter_CSVCellFormatting(object sender, Telerik.WinControls.UI.Export.CSV.CSVCellFormattingEventArgs e)
-        {
-            if (e.GridColumnIndex == 1 && e.GridRowInfoType == typeof(GridViewDataRowInfo))
-            {
-                e.CSVCellElement.Value =  "test value";
-            }
-        }
+void exporter_CSVCellFormatting(object sender, Telerik.WinControls.UI.Export.CSV.CSVCellFormattingEventArgs e)
+{
+    if (e.GridColumnIndex == 1 && e.GridRowInfoType == typeof(GridViewDataRowInfo))
+    {
+        e.CSVCellElement.Value =  "test value";
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub exporter_CSVCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.CSV.CSVCellFormattingEventArgs)
-        If (e.GridColumnIndex = 1 AndAlso e.GridRowInfoType.Equals(GetType(GridViewDataRowInfo))) Then
-            e.CSVCellElement.Value = "test value"
-        End If
-    End Sub
-    '
+Private Sub exporter_CSVCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.CSV.CSVCellFormattingEventArgs)
+    If (e.GridColumnIndex = 1 AndAlso e.GridRowInfoType.Equals(GetType(GridViewDataRowInfo))) Then
+        e.CSVCellElement.Value = "test value"
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -173,16 +178,17 @@ It can be used together with the public method AddCustomCSVRow. It allows for ad
 {{source=..\SamplesVB\GridView\ExportingData\ExportToCSV1.vb region=handlingTheCsvTableCreatedevent}} 
 
 ````C#
-        void exporter_CSVTableCreated(object sender, Telerik.WinControls.UI.Export.CSV.CSVTableCreatedEventArgs e)
-        {
-            ((ExportToCSV)sender).AddCustomCSVRow(e.CSVTableElement, "MY TABLE CAPTION");
-        }
+void exporter_CSVTableCreated(object sender, Telerik.WinControls.UI.Export.CSV.CSVTableCreatedEventArgs e)
+{
+    ((ExportToCSV)sender).AddCustomCSVRow(e.CSVTableElement, "MY TABLE CAPTION");
+}
+
 ````
 ````VB.NET
-    Private Sub exporter_CSVTableCreated(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.CSV.CSVTableCreatedEventArgs)
-        DirectCast(sender, ExportToCSV).AddCustomCSVRow(e.CSVTableElement, "MY TABLE CAPTION")
-    End Sub
-    '
+Private Sub exporter_CSVTableCreated(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.CSV.CSVTableCreatedEventArgs)
+    DirectCast(sender, ExportToCSV).AddCustomCSVRow(e.CSVTableElement, "MY TABLE CAPTION")
+End Sub
+
 ````
 
 {{endregion}} 

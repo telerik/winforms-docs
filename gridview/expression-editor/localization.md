@@ -21,51 +21,50 @@ You can localize the UI elements of RadExpressionEditor by using a custom RadGri
 {{source=..\SamplesVB\GridView\ExpressionEditor\CustomLocalizationProvider.vb region=expressionEditorLocalization}} 
 
 ````C#
-    public class CustomLocalizationProvider : RadGridLocalizationProvider
+public class CustomLocalizationProvider : RadGridLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
     {
-        public override string GetLocalizedString(string id)
+        switch (id)
         {
-            switch (id)
-            {
-                case RadGridStringId.ExpressionMenuItem: return "Expression";
-                case RadGridStringId.ExpressionFormTitle: return "Expression Builder";
-                case RadGridStringId.ExpressionFormFunctions: return "Functions";
-                case RadGridStringId.ExpressionFormFunctionsText: return "Text";
-                case RadGridStringId.ExpressionFormFunctionsAggregate: return "Aggregate";
-                case RadGridStringId.ExpressionFormFunctionsDateTime: return "Date-Time";
-                case RadGridStringId.ExpressionFormFunctionsLogical: return "Logical";
-                case RadGridStringId.ExpressionFormFunctionsMath: return "Math";
-                case RadGridStringId.ExpressionFormFunctionsOther: return "Other";
-                case RadGridStringId.ExpressionFormOperators: return "Operators";
-                case RadGridStringId.ExpressionFormConstants: return "Constants";
-                case RadGridStringId.ExpressionFormFields: return "Fields";
-                case RadGridStringId.ExpressionFormDescription: return "Description";
-                case RadGridStringId.ExpressionFormResultPreview: return "Result preview";
-                case RadGridStringId.ExpressionFormTooltipPlus: return "Plus";
-                case RadGridStringId.ExpressionFormTooltipMinus: return "Minus";
-                case RadGridStringId.ExpressionFormTooltipMultiply: return "Multiply";
-                case RadGridStringId.ExpressionFormTooltipDivide: return "Divide";
-                case RadGridStringId.ExpressionFormTooltipModulo: return "Modulo";
-                case RadGridStringId.ExpressionFormTooltipEqual: return "Equal";
-                case RadGridStringId.ExpressionFormTooltipNotEqual: return "Not Equal";
-                case RadGridStringId.ExpressionFormTooltipLess: return "Less";
-                case RadGridStringId.ExpressionFormTooltipLessOrEqual: return "Less Or Equal";
-                case RadGridStringId.ExpressionFormTooltipGreaterOrEqual: return "Greater Or Equal";
-                case RadGridStringId.ExpressionFormTooltipGreater: return "Greater";
-                case RadGridStringId.ExpressionFormTooltipAnd: return "Logical \"AND\"";
-                case RadGridStringId.ExpressionFormTooltipOr: return "Logical \"OR\"";
-                case RadGridStringId.ExpressionFormTooltipNot: return "Logical \"NOT\"";
-                case RadGridStringId.ExpressionFormAndButton: return "And";
-                case RadGridStringId.ExpressionFormOrButton: return "Or";
-                case RadGridStringId.ExpressionFormNotButton: return "Not";
-                case RadGridStringId.ExpressionFormOKButton: return "OK";
-                case RadGridStringId.ExpressionFormCancelButton: return "Cancel";
-
-            }
-
-            return string.Empty;
+            case RadGridStringId.ExpressionMenuItem: return "Expression";
+            case RadGridStringId.ExpressionFormTitle: return "Expression Builder";
+            case RadGridStringId.ExpressionFormFunctions: return "Functions";
+            case RadGridStringId.ExpressionFormFunctionsText: return "Text";
+            case RadGridStringId.ExpressionFormFunctionsAggregate: return "Aggregate";
+            case RadGridStringId.ExpressionFormFunctionsDateTime: return "Date-Time";
+            case RadGridStringId.ExpressionFormFunctionsLogical: return "Logical";
+            case RadGridStringId.ExpressionFormFunctionsMath: return "Math";
+            case RadGridStringId.ExpressionFormFunctionsOther: return "Other";
+            case RadGridStringId.ExpressionFormOperators: return "Operators";
+            case RadGridStringId.ExpressionFormConstants: return "Constants";
+            case RadGridStringId.ExpressionFormFields: return "Fields";
+            case RadGridStringId.ExpressionFormDescription: return "Description";
+            case RadGridStringId.ExpressionFormResultPreview: return "Result preview";
+            case RadGridStringId.ExpressionFormTooltipPlus: return "Plus";
+            case RadGridStringId.ExpressionFormTooltipMinus: return "Minus";
+            case RadGridStringId.ExpressionFormTooltipMultiply: return "Multiply";
+            case RadGridStringId.ExpressionFormTooltipDivide: return "Divide";
+            case RadGridStringId.ExpressionFormTooltipModulo: return "Modulo";
+            case RadGridStringId.ExpressionFormTooltipEqual: return "Equal";
+            case RadGridStringId.ExpressionFormTooltipNotEqual: return "Not Equal";
+            case RadGridStringId.ExpressionFormTooltipLess: return "Less";
+            case RadGridStringId.ExpressionFormTooltipLessOrEqual: return "Less Or Equal";
+            case RadGridStringId.ExpressionFormTooltipGreaterOrEqual: return "Greater Or Equal";
+            case RadGridStringId.ExpressionFormTooltipGreater: return "Greater";
+            case RadGridStringId.ExpressionFormTooltipAnd: return "Logical \"AND\"";
+            case RadGridStringId.ExpressionFormTooltipOr: return "Logical \"OR\"";
+            case RadGridStringId.ExpressionFormTooltipNot: return "Logical \"NOT\"";
+            case RadGridStringId.ExpressionFormAndButton: return "And";
+            case RadGridStringId.ExpressionFormOrButton: return "Or";
+            case RadGridStringId.ExpressionFormNotButton: return "Not";
+            case RadGridStringId.ExpressionFormOKButton: return "OK";
+            case RadGridStringId.ExpressionFormCancelButton: return "Cancel";
         }
+        return string.Empty;
     }
+}
+
 ````
 ````VB.NET
 Public Class CustomLocalizationProvider
@@ -138,13 +137,11 @@ Public Class CustomLocalizationProvider
                 Return "OK"
             Case RadGridStringId.ExpressionFormCancelButton
                 Return "Cancel"
-
         End Select
-
         Return String.Empty
     End Function
 End Class
-'
+
 ````
 
 {{endregion}} 

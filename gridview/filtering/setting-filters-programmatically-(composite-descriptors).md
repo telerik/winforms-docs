@@ -22,19 +22,20 @@ To filter a single data field by multiple values, you have to use the __Composit
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=settingCompositeFilterDescriptors}} 
 
 ````C#
-            CompositeFilterDescriptor compositeFilter = new CompositeFilterDescriptor();
-            compositeFilter.FilterDescriptors.Add(new FilterDescriptor("UnitsInStock", FilterOperator.IsGreaterThan, 100));
-            compositeFilter.FilterDescriptors.Add(new FilterDescriptor("ProductName", FilterOperator.StartsWith, "G"));
-            compositeFilter.LogicalOperator = FilterLogicalOperator.And;
-            this.radGridView1.FilterDescriptors.Add(compositeFilter);
+CompositeFilterDescriptor compositeFilter = new CompositeFilterDescriptor();
+compositeFilter.FilterDescriptors.Add(new FilterDescriptor("UnitsInStock", FilterOperator.IsGreaterThan, 100));
+compositeFilter.FilterDescriptors.Add(new FilterDescriptor("ProductName", FilterOperator.StartsWith, "G"));
+compositeFilter.LogicalOperator = FilterLogicalOperator.And;
+this.radGridView1.FilterDescriptors.Add(compositeFilter);
+
 ````
 ````VB.NET
-        Dim compositeFilter As New CompositeFilterDescriptor()
-        compositeFilter.FilterDescriptors.Add(New FilterDescriptor("UnitsInStock", FilterOperator.IsGreaterThan, 100))
-        compositeFilter.FilterDescriptors.Add(New FilterDescriptor("ProductName", FilterOperator.StartsWith, "G"))
-        compositeFilter.LogicalOperator = FilterLogicalOperator.[And]
-        Me.RadGridView1.FilterDescriptors.Add(compositeFilter)
-        '
+Dim compositeFilter As New CompositeFilterDescriptor()
+compositeFilter.FilterDescriptors.Add(New FilterDescriptor("UnitsInStock", FilterOperator.IsGreaterThan, 100))
+compositeFilter.FilterDescriptors.Add(New FilterDescriptor("ProductName", FilterOperator.StartsWith, "G"))
+compositeFilter.LogicalOperator = FilterLogicalOperator.[And]
+Me.RadGridView1.FilterDescriptors.Add(compositeFilter)
+
 ````
 
 {{endregion}} 
@@ -53,29 +54,30 @@ The composite filters allow you to create more complex filtering expressions. Su
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=settingComplexCompositeFilterDescriptors}} 
 
 ````C#
-            CompositeFilterDescriptor compositeFilter1 = new CompositeFilterDescriptor();
-            compositeFilter1.FilterDescriptors.Add(new FilterDescriptor("UnitsInStock", FilterOperator.IsGreaterThan, 100));
-            compositeFilter1.FilterDescriptors.Add(new FilterDescriptor("ProductName", FilterOperator.StartsWith, "G"));
-            compositeFilter1.LogicalOperator = FilterLogicalOperator.Or;
-            FilterDescriptor filter2 = new FilterDescriptor("UnitsOnOrder", FilterOperator.IsEqualTo, 0);
-            CompositeFilterDescriptor filterDescriptor2 = new CompositeFilterDescriptor();
-            filterDescriptor2.FilterDescriptors.Add(compositeFilter);
-            filterDescriptor2.FilterDescriptors.Add(filter2);
-            filterDescriptor2.LogicalOperator = FilterLogicalOperator.And;
-            this.radGridView1.FilterDescriptors.Add(filterDescriptor2);
+CompositeFilterDescriptor compositeFilter1 = new CompositeFilterDescriptor();
+compositeFilter1.FilterDescriptors.Add(new FilterDescriptor("UnitsInStock", FilterOperator.IsGreaterThan, 100));
+compositeFilter1.FilterDescriptors.Add(new FilterDescriptor("ProductName", FilterOperator.StartsWith, "G"));
+compositeFilter1.LogicalOperator = FilterLogicalOperator.Or;
+FilterDescriptor filter2 = new FilterDescriptor("UnitsOnOrder", FilterOperator.IsEqualTo, 0);
+CompositeFilterDescriptor filterDescriptor2 = new CompositeFilterDescriptor();
+filterDescriptor2.FilterDescriptors.Add(compositeFilter);
+filterDescriptor2.FilterDescriptors.Add(filter2);
+filterDescriptor2.LogicalOperator = FilterLogicalOperator.And;
+this.radGridView1.FilterDescriptors.Add(filterDescriptor2);
+
 ````
 ````VB.NET
-        Dim compositeFilter1 As New CompositeFilterDescriptor()
-        compositeFilter1.FilterDescriptors.Add(New FilterDescriptor("UnitsInStock", FilterOperator.IsGreaterThan, 100))
-        compositeFilter1.FilterDescriptors.Add(New FilterDescriptor("ProductName", FilterOperator.StartsWith, "G"))
-        compositeFilter1.LogicalOperator = FilterLogicalOperator.[Or]
-        Dim filter2 As New FilterDescriptor("UnitsOnOrder", FilterOperator.IsEqualTo, 0)
-        Dim filterDescriptor2 As New CompositeFilterDescriptor()
-        filterDescriptor2.FilterDescriptors.Add(compositeFilter)
-        filterDescriptor2.FilterDescriptors.Add(filter2)
-        filterDescriptor2.LogicalOperator = FilterLogicalOperator.[And]
-        Me.RadGridView1.FilterDescriptors.Add(filterDescriptor2)
-        '
+Dim compositeFilter1 As New CompositeFilterDescriptor()
+compositeFilter1.FilterDescriptors.Add(New FilterDescriptor("UnitsInStock", FilterOperator.IsGreaterThan, 100))
+compositeFilter1.FilterDescriptors.Add(New FilterDescriptor("ProductName", FilterOperator.StartsWith, "G"))
+compositeFilter1.LogicalOperator = FilterLogicalOperator.[Or]
+Dim filter2 As New FilterDescriptor("UnitsOnOrder", FilterOperator.IsEqualTo, 0)
+Dim filterDescriptor2 As New CompositeFilterDescriptor()
+filterDescriptor2.FilterDescriptors.Add(compositeFilter)
+filterDescriptor2.FilterDescriptors.Add(filter2)
+filterDescriptor2.LogicalOperator = FilterLogicalOperator.[And]
+Me.RadGridView1.FilterDescriptors.Add(filterDescriptor2)
+
 ````
 
 {{endregion}} 

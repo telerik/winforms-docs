@@ -41,72 +41,71 @@ Below is a sample implementation of a custom localization provider, which return
 {{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=localization1}} 
 
 ````C#
-        public class CustomColorDialogLocalizationProvider : ColorDialogLocalizationProvider
+public class CustomColorDialogLocalizationProvider : ColorDialogLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
+    {
+        switch (id)
         {
-            public override string GetLocalizedString(string id)
-            {
-                switch (id)
-                {
-                    //localizing the static strings
-                    case ColorDialogStringId.ColorDialogProfessionalTab: return "Localized Professional";
-                    case ColorDialogStringId.ColorDialogWebTab: return "Localized Web";
-                    case ColorDialogStringId.ColorDialogSystemTab: return "Localized System";
-                    case ColorDialogStringId.ColorDialogBasicTab: return "Localized Basic";
-                    case ColorDialogStringId.ColorDialogAddCustomColorButton: return "Localized Add Custom Color";
-                    case ColorDialogStringId.ColorDialogOKButton: return "Localized OK";
-                    case ColorDialogStringId.ColorDialogCancelButton: return "Localized Cancel";
-                    case ColorDialogStringId.ColorDialogNewColorLabel: return "Localized New";
-                    case ColorDialogStringId.ColorDialogCurrentColorLabel: return "Localized Current";
-                    case ColorDialogStringId.ColorDialogCaption: return "Localized Color dialog";
-                    //you can also localize the names of the colors
-                    case "Black": return "Localized Black";
-                    case "Blue": return "Localized Blue";
-                    case "Aqua": return "Localized Aqua";
-                }
-
-                return base.GetLocalizedString(id);
-            }
+            //localizing the static strings
+            case ColorDialogStringId.ColorDialogProfessionalTab: return "Localized Professional";
+            case ColorDialogStringId.ColorDialogWebTab: return "Localized Web";
+            case ColorDialogStringId.ColorDialogSystemTab: return "Localized System";
+            case ColorDialogStringId.ColorDialogBasicTab: return "Localized Basic";
+            case ColorDialogStringId.ColorDialogAddCustomColorButton: return "Localized Add Custom Color";
+            case ColorDialogStringId.ColorDialogOKButton: return "Localized OK";
+            case ColorDialogStringId.ColorDialogCancelButton: return "Localized Cancel";
+            case ColorDialogStringId.ColorDialogNewColorLabel: return "Localized New";
+            case ColorDialogStringId.ColorDialogCurrentColorLabel: return "Localized Current";
+            case ColorDialogStringId.ColorDialogCaption: return "Localized Color dialog";
+            //you can also localize the names of the colors
+            case "Black": return "Localized Black";
+            case "Blue": return "Localized Blue";
+            case "Aqua": return "Localized Aqua";
         }
+        return base.GetLocalizedString(id);
+    }
+}
+
 ````
 ````VB.NET
-    Public Class CustomColorDialogLocalizationProvider
-        Inherits ColorDialogLocalizationProvider
-        Public Overrides Function GetLocalizedString(id As String) As String
-            Select Case id
-                'localizing the static strings
-                Case ColorDialogStringId.ColorDialogProfessionalTab
-                    Return "Localized Professional"
-                Case ColorDialogStringId.ColorDialogWebTab
-                    Return "Localized Web"
-                Case ColorDialogStringId.ColorDialogSystemTab
-                    Return "Localized System"
-                Case ColorDialogStringId.ColorDialogBasicTab
-                    Return "Localized Basic"
-                Case ColorDialogStringId.ColorDialogAddCustomColorButton
-                    Return "Localized Add Custom Color"
-                Case ColorDialogStringId.ColorDialogOKButton
-                    Return "Localized OK"
-                Case ColorDialogStringId.ColorDialogCancelButton
-                    Return "Localized Cancel"
-                Case ColorDialogStringId.ColorDialogNewColorLabel
-                    Return "Localized New"
-                Case ColorDialogStringId.ColorDialogCurrentColorLabel
-                    Return "Localized Current"
-                Case ColorDialogStringId.ColorDialogCaption
-                    Return "Localized Color dialog"
-                    'you can also localize the names of the colors
-                Case "Black"
-                    Return "Localized Black"
-                Case "Blue"
-                    Return "Localized Blue"
-                Case "Aqua"
-                    Return "Localized Aqua"
-            End Select
+Public Class CustomColorDialogLocalizationProvider
+    Inherits ColorDialogLocalizationProvider
+    Public Overrides Function GetLocalizedString(id As String) As String
+        Select Case id
+            'localizing the static strings
+            Case ColorDialogStringId.ColorDialogProfessionalTab
+                Return "Localized Professional"
+            Case ColorDialogStringId.ColorDialogWebTab
+                Return "Localized Web"
+            Case ColorDialogStringId.ColorDialogSystemTab
+                Return "Localized System"
+            Case ColorDialogStringId.ColorDialogBasicTab
+                Return "Localized Basic"
+            Case ColorDialogStringId.ColorDialogAddCustomColorButton
+                Return "Localized Add Custom Color"
+            Case ColorDialogStringId.ColorDialogOKButton
+                Return "Localized OK"
+            Case ColorDialogStringId.ColorDialogCancelButton
+                Return "Localized Cancel"
+            Case ColorDialogStringId.ColorDialogNewColorLabel
+                Return "Localized New"
+            Case ColorDialogStringId.ColorDialogCurrentColorLabel
+                Return "Localized Current"
+            Case ColorDialogStringId.ColorDialogCaption
+                Return "Localized Color dialog"
+                'you can also localize the names of the colors
+            Case "Black"
+                Return "Localized Black"
+            Case "Blue"
+                Return "Localized Blue"
+            Case "Aqua"
+                Return "Localized Aqua"
+        End Select
+        Return MyBase.GetLocalizedString(id)
+    End Function
+End Class
 
-            Return MyBase.GetLocalizedString(id)
-        End Function
-    End Class
-    '
 ````
 
 {{endregion}} 
@@ -125,11 +124,12 @@ To apply the custom localization provider, instantiate and assign it to the curr
 {{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=localization2}} 
 
 ````C#
-            ColorDialogLocalizationProvider.CurrentProvider = new CustomColorDialogLocalizationProvider();
+ColorDialogLocalizationProvider.CurrentProvider = new CustomColorDialogLocalizationProvider();
+
 ````
 ````VB.NET
-        ColorDialogLocalizationProvider.CurrentProvider = New CustomColorDialogLocalizationProvider()
-        '
+ColorDialogLocalizationProvider.CurrentProvider = New CustomColorDialogLocalizationProvider()
+
 ````
 
 {{endregion}} 

@@ -37,10 +37,11 @@ The following tutorial will show you a simple usage of RadMessageBox
 
 ````C#
 using Telerik.WinControls;
+
 ````
 ````VB.NET
 Imports Telerik.WinControls
-'
+
 ````
 
 {{endregion}} 
@@ -62,22 +63,22 @@ Imports Telerik.WinControls
 {{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=workingWithRadMessageBox}} 
 
 ````C#
-        private void radButton1_Click(object sender, EventArgs e)
-        {
-            RadMessageBox.SetThemeName("Desert");
-            
-            DialogResult ds = RadMessageBox.Show(this, "Are you sure?", "Title", MessageBoxButtons.YesNo, RadMessageIcon.Question);
-            this.Text = ds.ToString();
-        }
+private void radButton1_Click(object sender, EventArgs e)
+{
+    RadMessageBox.SetThemeName("Desert");
+    
+    DialogResult ds = RadMessageBox.Show(this, "Are you sure?", "Title", MessageBoxButtons.YesNo, RadMessageIcon.Question);
+    this.Text = ds.ToString();
+}
+
 ````
 ````VB.NET
-    Private Sub RadButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
-        RadMessageBox.SetThemeName("Desert")
+Private Sub RadButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
+    RadMessageBox.SetThemeName("Desert")
+    Dim ds As DialogResult = RadMessageBox.Show(Me, "Are you sure?", "Title", MessageBoxButtons.YesNo, RadMessageIcon.Question)
+    Me.Text = ds.ToString()
+End Sub
 
-        Dim ds As DialogResult = RadMessageBox.Show(Me, "Are you sure?", "Title", MessageBoxButtons.YesNo, RadMessageIcon.Question)
-        Me.Text = ds.ToString()
-    End Sub
-    '
 ````
 
 {{endregion}} 

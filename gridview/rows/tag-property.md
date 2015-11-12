@@ -19,12 +19,15 @@ Each row has a *Tag* property associated with it of type object where you can st
 {{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=assignTagProperty}} 
 {{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=assignTagProperty}} 
 
-````C# 
-            this.radGridView1.Rows[1].Tag = "Some tag";
+````C#
+ 
+this.radGridView1.Rows[1].Tag = "Some tag";
+
 ````
-````VB.NET 
-        Me.RadGridView1.Rows(1).Tag = "Some tag"
-        '
+````VB.NET
+ 
+Me.RadGridView1.Rows(1).Tag = "Some tag"
+
 ````
 
 {{endregion}} 
@@ -38,27 +41,28 @@ Setting the Tag property of cells in __CellFormatting__ event.
 {{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=setTagInCellFormatting}} 
 
 ````C#
-        void radGridView1_CellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
-        {
-            if (e.CellElement.RowIndex % 2 == 0)
-            {
-                e.CellElement.RowInfo.Tag = "Some tag";
-            }
-            else
-            {
-                e.CellElement.RowInfo.Tag = "Hide row";
-            }
-        }
+void radGridView1_CellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
+{
+    if (e.CellElement.RowIndex % 2 == 0)
+    {
+        e.CellElement.RowInfo.Tag = "Some tag";
+    }
+    else
+    {
+        e.CellElement.RowInfo.Tag = "Hide row";
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
-        If (e.CellElement.RowIndex Mod 2 = 0) Then
-            e.CellElement.RowInfo.Tag = "Some tag"
-        Else
-            e.CellElement.RowInfo.Tag = "Hide row"
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
+    If (e.CellElement.RowIndex Mod 2 = 0) Then
+        e.CellElement.RowInfo.Tag = "Some tag"
+    Else
+        e.CellElement.RowInfo.Tag = "Hide row"
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -72,21 +76,22 @@ The most natural place to use the tag is in some of the row/cell events. For exa
 {{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=hideRowsWithSpecifiedTag}} 
 
 ````C#
-        void radGridView1_CellFormatting1(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
-        {
-            if (e.CellElement.RowInfo.Tag is String && (string)e.CellElement.RowInfo.Tag == "Hide row")
-            {
-                e.CellElement.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
-            }
-        }
+void radGridView1_CellFormatting1(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
+{
+    if (e.CellElement.RowInfo.Tag is String && (string)e.CellElement.RowInfo.Tag == "Hide row")
+    {
+        e.CellElement.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
-        If TypeOf e.CellElement.RowInfo.Tag Is [String] AndAlso DirectCast(e.CellElement.RowInfo.Tag, String) = "Hide row" Then
+Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
+    If TypeOf e.CellElement.RowInfo.Tag Is [String] AndAlso DirectCast(e.CellElement.RowInfo.Tag, String) = "Hide row" Then
             e.CellElement.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
         End If
     End Sub
-    '
+
 ````
 
 {{endregion}} 

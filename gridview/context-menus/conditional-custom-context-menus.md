@@ -29,81 +29,80 @@ Start by creating the context menus, initializing its items, and subscribing to 
 {{source=..\SamplesVB\GridView\ContextMenus\ConditionalCustomContextMenus.vb region=creatingAndChangingContextMenus}} 
 
 ````C#
-        private RadContextMenu firstContextMenu = new RadContextMenu();
-        private RadContextMenu secondContextMenu = new RadContextMenu();    
-        void Form1_Load(object sender, EventArgs e)
-        {
-            radGridView1.MasterTemplate.BestFitColumns();
-            RadMenuItem firstContextMenuItem1 = new RadMenuItem("First menu - Item 1");
-            firstContextMenuItem1.ForeColor = Color.Red;
-            firstContextMenuItem1.Click += new EventHandler(firstContextMenuItem1_Click);
-            RadMenuItem firstContextMenuItem2 = new RadMenuItem("First menu - Item 2");
-            firstContextMenuItem2.Click += new EventHandler(firstContextMenuItem2_Click);
-            firstContextMenu.Items.Add(firstContextMenuItem1);
-            firstContextMenu.Items.Add(firstContextMenuItem2);
-            RadMenuItem secondContextMenuItem1 = new RadMenuItem("Second menu - Item 1");
-            secondContextMenuItem1.ForeColor = Color.LightBlue;
-            secondContextMenuItem1.Click += new EventHandler(secondContextMenuItem1_Click);
-            RadMenuItem secondContextMenuItem2 = new RadMenuItem("Second menu - Item 2");
-            secondContextMenuItem2.Click += new EventHandler(secondContextMenuItem2_Click);
-            secondContextMenu.Items.Add(secondContextMenuItem1);
-            secondContextMenu.Items.Add(secondContextMenuItem2);
-        }
+private RadContextMenu firstContextMenu = new RadContextMenu();
+private RadContextMenu secondContextMenu = new RadContextMenu();    
+void Form1_Load(object sender, EventArgs e)
+{
+    radGridView1.MasterTemplate.BestFitColumns();
+    RadMenuItem firstContextMenuItem1 = new RadMenuItem("First menu - Item 1");
+    firstContextMenuItem1.ForeColor = Color.Red;
+    firstContextMenuItem1.Click += new EventHandler(firstContextMenuItem1_Click);
+    RadMenuItem firstContextMenuItem2 = new RadMenuItem("First menu - Item 2");
+    firstContextMenuItem2.Click += new EventHandler(firstContextMenuItem2_Click);
+    firstContextMenu.Items.Add(firstContextMenuItem1);
+    firstContextMenu.Items.Add(firstContextMenuItem2);
+    RadMenuItem secondContextMenuItem1 = new RadMenuItem("Second menu - Item 1");
+    secondContextMenuItem1.ForeColor = Color.LightBlue;
+    secondContextMenuItem1.Click += new EventHandler(secondContextMenuItem1_Click);
+    RadMenuItem secondContextMenuItem2 = new RadMenuItem("Second menu - Item 2");
+    secondContextMenuItem2.Click += new EventHandler(secondContextMenuItem2_Click);
+    secondContextMenu.Items.Add(secondContextMenuItem1);
+    secondContextMenu.Items.Add(secondContextMenuItem2);
+}
+void radGridView1_ContextMenuOpening(object sender, ContextMenuOpeningEventArgs e)
+{
+    GridDataCellElement cell = e.ContextMenuProvider as GridDataCellElement;
+    if (cell == null)
+    {
+        return;
+    }
+    //set the first context menu to be displayed for cells in the second column   
+    if (cell.ColumnIndex == 1)
+    {
+        e.ContextMenu = firstContextMenu.DropDown;
+    }
+    //set the second context menu to be displayed for cells in the third column   
+    else if (cell.ColumnIndex == 2)
+    {
+        e.ContextMenu = secondContextMenu.DropDown;
+    }
+}
 
-        void radGridView1_ContextMenuOpening(object sender, ContextMenuOpeningEventArgs e)
-        {
-            GridDataCellElement cell = e.ContextMenuProvider as GridDataCellElement;
-            if (cell == null)
-            {
-                return;
-            }
-            //set the first context menu to be displayed for cells in the second column   
-            if (cell.ColumnIndex == 1)
-            {
-                e.ContextMenu = firstContextMenu.DropDown;
-            }
-            //set the second context menu to be displayed for cells in the third column   
-            else if (cell.ColumnIndex == 2)
-            {
-                e.ContextMenu = secondContextMenu.DropDown;
-            }
-        }
 ````
 ````VB.NET
-    Private firstContextMenu As New RadContextMenu()
-    Private secondContextMenu As New RadContextMenu()
-    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
-        RadGridView1.MasterTemplate.BestFitColumns()
-        Dim firstContextMenuItem1 As New RadMenuItem("First menu - Item 1")
-        firstContextMenuItem1.ForeColor = Color.Red
-        AddHandler firstContextMenuItem1.Click, AddressOf firstContextMenuItem1_Click
-        Dim firstContextMenuItem2 As New RadMenuItem("First menu - Item 2")
-        AddHandler firstContextMenuItem2.Click, AddressOf firstContextMenuItem2_Click
-        firstContextMenu.Items.Add(firstContextMenuItem1)
-        firstContextMenu.Items.Add(firstContextMenuItem2)
-        Dim secondContextMenuItem1 As New RadMenuItem("Second menu - Item 1")
-        secondContextMenuItem1.ForeColor = Color.LightBlue
-        AddHandler secondContextMenuItem1.Click, AddressOf secondContextMenuItem1_Click
-        Dim secondContextMenuItem2 As New RadMenuItem("Second menu - Item 2")
-        AddHandler secondContextMenuItem2.Click, AddressOf secondContextMenuItem2_Click
-        secondContextMenu.Items.Add(secondContextMenuItem1)
-        secondContextMenu.Items.Add(secondContextMenuItem2)
-    End Sub
+Private firstContextMenu As New RadContextMenu()
+Private secondContextMenu As New RadContextMenu()
+Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+    RadGridView1.MasterTemplate.BestFitColumns()
+    Dim firstContextMenuItem1 As New RadMenuItem("First menu - Item 1")
+    firstContextMenuItem1.ForeColor = Color.Red
+    AddHandler firstContextMenuItem1.Click, AddressOf firstContextMenuItem1_Click
+    Dim firstContextMenuItem2 As New RadMenuItem("First menu - Item 2")
+    AddHandler firstContextMenuItem2.Click, AddressOf firstContextMenuItem2_Click
+    firstContextMenu.Items.Add(firstContextMenuItem1)
+    firstContextMenu.Items.Add(firstContextMenuItem2)
+    Dim secondContextMenuItem1 As New RadMenuItem("Second menu - Item 1")
+    secondContextMenuItem1.ForeColor = Color.LightBlue
+    AddHandler secondContextMenuItem1.Click, AddressOf secondContextMenuItem1_Click
+    Dim secondContextMenuItem2 As New RadMenuItem("Second menu - Item 2")
+    AddHandler secondContextMenuItem2.Click, AddressOf secondContextMenuItem2_Click
+    secondContextMenu.Items.Add(secondContextMenuItem1)
+    secondContextMenu.Items.Add(secondContextMenuItem2)
+End Sub
+Private Sub RadGridView1_ContextMenuOpening(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ContextMenuOpeningEventArgs) Handles RadGridView1.ContextMenuOpening
+    Dim cell As GridDataCellElement = TryCast(e.ContextMenuProvider, GridDataCellElement)
+    If cell Is Nothing Then
+        Return
+    End If
+    'set the first context menu to be displayed for cells in the second column
+    If cell.ColumnIndex = 1 Then
+        e.ContextMenu = firstContextMenu.DropDown
+    ElseIf cell.ColumnIndex = 2 Then
+        'set the second context menu to be displayed for cells in the third column
+        e.ContextMenu = secondContextMenu.DropDown
+    End If
+End Sub
 
-    Private Sub RadGridView1_ContextMenuOpening(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ContextMenuOpeningEventArgs) Handles RadGridView1.ContextMenuOpening
-        Dim cell As GridDataCellElement = TryCast(e.ContextMenuProvider, GridDataCellElement)
-        If cell Is Nothing Then
-            Return
-        End If
-        'set the first context menu to be displayed for cells in the second column
-        If cell.ColumnIndex = 1 Then
-            e.ContextMenu = firstContextMenu.DropDown
-        ElseIf cell.ColumnIndex = 2 Then
-            'set the second context menu to be displayed for cells in the third column
-            e.ContextMenu = secondContextMenu.DropDown
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 

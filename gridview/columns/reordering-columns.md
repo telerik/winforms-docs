@@ -27,11 +27,12 @@ The RadGridView control supports column reordering by the user at run-time. The 
 {{source=..\SamplesVB\GridView\Columns\ReorderingColumns.vb region=allowReoder}} 
 
 ````C#
-            radGridView1.AllowColumnReorder = true;
+radGridView1.AllowColumnReorder = true;
+
 ````
 ````VB.NET
-        RadGridView1.AllowColumnReorder = True
-        '
+RadGridView1.AllowColumnReorder = True
+
 ````
 
 {{endregion}} 
@@ -52,13 +53,14 @@ In order to reorder columns in RadGridView programmatically you should use the *
 {{source=..\SamplesVB\GridView\Columns\ReorderingColumns.vb region=reorderColumns}} 
 
 ````C#
-            radGridView1.Columns.Move(5, 0);
-            radGridView1.Columns.Move(4, 1);
+radGridView1.Columns.Move(5, 0);
+radGridView1.Columns.Move(4, 1);
+
 ````
 ````VB.NET
-        RadGridView1.Columns.Move(5, 0)
-        RadGridView1.Columns.Move(4, 1)
-        '
+RadGridView1.Columns.Move(5, 0)
+RadGridView1.Columns.Move(4, 1)
+
 ````
 
 {{endregion}} 

@@ -28,28 +28,28 @@ The run-time code fills the categories and products data tables, sets the __Auto
 
 ````C#
         
-        private void BindingToHierarchicalGridAutomatically_Load(object sender, EventArgs e)
-        {
-            this.productsTableAdapter.Fill(this.nwindDataSet.Products);
-            this.categoriesTableAdapter.Fill(this.nwindDataSet.Categories);
-            radGridView1.AutoGenerateHierarchy = true;
-            radGridView1.DataSource = this.nwindDataSet;
-            radGridView1.DataMember = "Categories";
-        }
+private void BindingToHierarchicalGridAutomatically_Load(object sender, EventArgs e)
+{
+    this.productsTableAdapter.Fill(this.nwindDataSet.Products);
+    this.categoriesTableAdapter.Fill(this.nwindDataSet.Categories);
+    radGridView1.AutoGenerateHierarchy = true;
+    radGridView1.DataSource = this.nwindDataSet;
+    radGridView1.DataMember = "Categories";
+}
+
 ````
 ````VB.NET
-    Private Sub BindingToHierarchicalGridAutomatically_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'NwindDataSet.Order_Details' table. You can move, or remove it, as needed.
-        Me.Order_DetailsTableAdapter.Fill(Me.NwindDataSet.Order_Details)
-        'TODO: This line of code loads data into the 'NwindDataSet.Order_Details' table. You can move, or remove it, as needed.
+Private Sub BindingToHierarchicalGridAutomatically_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    'TODO: This line of code loads data into the 'NwindDataSet.Order_Details' table. You can move, or remove it, as needed.
+    Me.Order_DetailsTableAdapter.Fill(Me.NwindDataSet.Order_Details)
+    'TODO: This line of code loads data into the 'NwindDataSet.Order_Details' table. You can move, or remove it, as needed.
+    Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
+    Me.CategoriesTableAdapter.Fill(Me.NwindDataSet.Categories)
+    RadGridView1.AutoGenerateHierarchy = True
+    RadGridView1.DataSource = Me.NwindDataSet
+    RadGridView1.DataMember = "Categories"
+End Sub
 
-        Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
-        Me.CategoriesTableAdapter.Fill(Me.NwindDataSet.Categories)
-        RadGridView1.AutoGenerateHierarchy = True
-        RadGridView1.DataSource = Me.NwindDataSet
-        RadGridView1.DataMember = "Categories"
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -63,27 +63,26 @@ It is possible to auto generate Multi-level hierarchy as well. You should again 
 
 ````C#
         
-        public void Dummy()
-        { 
-            this.productsTableAdapter.Fill(this.nwindDataSet.Products);
-            this.categoriesTableAdapter.Fill(this.nwindDataSet.Categories);
-            this.order_DetailsTableAdapter.Fill(this.nwindDataSet.Order_Details);
-            radGridView1.DataSource = nwindDataSet;
-            radGridView1.DataMember = "Categories";
-            radGridView1.AutoGenerateHierarchy = true;
-        }
+public void Dummy()
+{ 
+    this.productsTableAdapter.Fill(this.nwindDataSet.Products);
+    this.categoriesTableAdapter.Fill(this.nwindDataSet.Categories);
+    this.order_DetailsTableAdapter.Fill(this.nwindDataSet.Order_Details);
+    radGridView1.DataSource = nwindDataSet;
+    radGridView1.DataMember = "Categories";
+    radGridView1.AutoGenerateHierarchy = true;
+}
+
 ````
 ````VB.NET
+Public Sub Dummy()
+    Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
+    Me.CategoriesTableAdapter.Fill(Me.NwindDataSet.Categories)
+    RadGridView1.DataSource = NwindDataSet
+    RadGridView1.DataMember = "Categories"
+    RadGridView1.AutoGenerateHierarchy = True
+End Sub
 
-    Public Sub Dummy()
-        Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
-        Me.CategoriesTableAdapter.Fill(Me.NwindDataSet.Categories)
-        RadGridView1.DataSource = NwindDataSet
-        RadGridView1.DataMember = "Categories"
-        RadGridView1.AutoGenerateHierarchy = True
-    End Sub
-
-    '
 ````
 
 {{endregion}} 

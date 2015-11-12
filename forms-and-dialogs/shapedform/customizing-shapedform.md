@@ -35,11 +35,12 @@ Almost all properties of Shaped form are the same as a standard Windows Form. Yo
 {{source=..\SamplesVB\Forms and Dialogs\ShapedForm1.vb region=ThemeName}} 
 
 ````C#
-            this.ThemeName = "Breeze";
+this.ThemeName = "Breeze";
+
 ````
 ````VB.NET
-        Me.ThemeName = "Breeze"
-        '
+Me.ThemeName = "Breeze"
+
 ````
 
 {{endregion}} 

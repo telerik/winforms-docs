@@ -45,11 +45,12 @@ Now our Models should be generated.
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=addDbContext}} 
 
 ````C#
-        NorthwindEntities dbContext = new NorthwindEntities();
+NorthwindEntities dbContext = new NorthwindEntities();
+
 ````
 ````VB.NET
-    Dim dbContext As New NorthwindEntities
-    '
+Dim dbContext As New NorthwindEntities
+
 ````
 
 {{endregion}} 
@@ -67,13 +68,14 @@ Now our Models should be generated.
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=addDataSource}} 
 
 ````C#
-            dbContext.Customers.Load();
-            this.radGridView1.DataSource = this.dbContext.Customers.Local.ToBindingList();
+dbContext.Customers.Load();
+this.radGridView1.DataSource = this.dbContext.Customers.Local.ToBindingList();
+
 ````
 ````VB.NET
-        dbContext.Customers.Load()
-        Me.radGridView1.DataSource = Me.dbContext.Customers.Local.ToBindingList()
-        '
+dbContext.Customers.Load()
+Me.radGridView1.DataSource = Me.dbContext.Customers.Local.ToBindingList()
+
 ````
 
 {{endregion}} 
@@ -91,33 +93,30 @@ These extension methods are located in the System.Data.Entity namespace. As the 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=addRelation}} 
 
 ````C#
-            dbContext.Orders.Load();
+dbContext.Orders.Load();
+GridViewTemplate template = new GridViewTemplate();
+template.DataSource = dbContext.Orders.Local.ToBindingList();
+this.radGridView1.MasterTemplate.Templates.Add(template);
+GridViewRelation relation = new GridViewRelation(this.radGridView1.MasterTemplate);
+relation.ChildTemplate = template;
+relation.RelationName = "CustomersToOrders";
+relation.ParentColumnNames.Add("CustomerId");
+relation.ChildColumnNames.Add("CustomerId");
+this.radGridView1.Relations.Add(relation);
 
-            GridViewTemplate template = new GridViewTemplate();
-            template.DataSource = dbContext.Orders.Local.ToBindingList();
-            this.radGridView1.MasterTemplate.Templates.Add(template);
-
-            GridViewRelation relation = new GridViewRelation(this.radGridView1.MasterTemplate);
-            relation.ChildTemplate = template;
-            relation.RelationName = "CustomersToOrders";
-            relation.ParentColumnNames.Add("CustomerId");
-            relation.ChildColumnNames.Add("CustomerId");
-            this.radGridView1.Relations.Add(relation);
 ````
 ````VB.NET
-        dbContext.Orders.Load()
+dbContext.Orders.Load()
+Dim template As New GridViewTemplate()
+template.DataSource = dbContext.Orders.Local.ToBindingList()
+Me.radGridView1.MasterTemplate.Templates.Add(template)
+Dim relation As New GridViewRelation(Me.radGridView1.MasterTemplate)
+relation.ChildTemplate = template
+relation.RelationName = "CustomersToOrders"
+relation.ParentColumnNames.Add("CustomerId")
+relation.ChildColumnNames.Add("CustomerId")
+Me.radGridView1.Relations.Add(relation)
 
-        Dim template As New GridViewTemplate()
-        template.DataSource = dbContext.Orders.Local.ToBindingList()
-        Me.radGridView1.MasterTemplate.Templates.Add(template)
-
-        Dim relation As New GridViewRelation(Me.radGridView1.MasterTemplate)
-        relation.ChildTemplate = template
-        relation.RelationName = "CustomersToOrders"
-        relation.ParentColumnNames.Add("CustomerId")
-        relation.ChildColumnNames.Add("CustomerId")
-        Me.radGridView1.Relations.Add(relation)
-        '
 ````
 
 {{endregion}} 
@@ -131,11 +130,12 @@ These extension methods are located in the System.Data.Entity namespace. As the 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=saveChanges}} 
 
 ````C#
-            this.dbContext.SaveChanges();
+this.dbContext.SaveChanges();
+
 ````
 ````VB.NET
-        Me.dbContext.SaveChanges()
-        '
+Me.dbContext.SaveChanges()
+
 ````
 
 {{endregion}} 

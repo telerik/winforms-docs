@@ -22,25 +22,26 @@ This idea is used in the code snippet below so that the backcolor of the cells l
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=example1}} 
 
 ````C#
-        void radGridView1_ViewCellFormatting(object sender, CellFormattingEventArgs e)
-        {
-            if (e.CellElement.ViewTemplate.Parent != null)
-            {
-                e.CellElement.BackColor = Color.Yellow;
-                e.CellElement.NumberOfColors = 1;
-                e.CellElement.DrawFill = true;
-            }
-        }
+void radGridView1_ViewCellFormatting(object sender, CellFormattingEventArgs e)
+{
+    if (e.CellElement.ViewTemplate.Parent != null)
+    {
+        e.CellElement.BackColor = Color.Yellow;
+        e.CellElement.NumberOfColors = 1;
+        e.CellElement.DrawFill = true;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_ViewCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.ViewCellFormatting
-        If e.CellElement.ViewTemplate.Parent IsNot Nothing Then
-            e.CellElement.BackColor = Color.Yellow
-            e.CellElement.NumberOfColors = 1
-            e.CellElement.DrawFill = True
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_ViewCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.ViewCellFormatting
+    If e.CellElement.ViewTemplate.Parent IsNot Nothing Then
+        e.CellElement.BackColor = Color.Yellow
+        e.CellElement.NumberOfColors = 1
+        e.CellElement.DrawFill = True
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -56,21 +57,22 @@ You can use the following code snippet to change the header height of the first 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=example2}} 
 
 ````C#
-        void radGridView1_ViewCellFormatting1(object sender, CellFormattingEventArgs e)
-        {
-            if (e.CellElement.ViewTemplate.Parent != null)
-            {
-                e.CellElement.TableElement.TableHeaderHeight = 100;
-            }
-        }
+void radGridView1_ViewCellFormatting1(object sender, CellFormattingEventArgs e)
+{
+    if (e.CellElement.ViewTemplate.Parent != null)
+    {
+        e.CellElement.TableElement.TableHeaderHeight = 100;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_ViewCellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.ViewCellFormatting
-        If e.CellElement.ViewTemplate.Parent IsNot Nothing Then
-            e.CellElement.TableElement.TableHeaderHeight = 100
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_ViewCellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.ViewCellFormatting
+    If e.CellElement.ViewTemplate.Parent IsNot Nothing Then
+        e.CellElement.TableElement.TableHeaderHeight = 100
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

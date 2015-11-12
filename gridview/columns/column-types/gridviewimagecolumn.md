@@ -32,21 +32,22 @@ Supported image formats are those supported by the Image class of .net framework
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=addImageColumn}} 
 
 ````C#
-            GridViewImageColumn imageColumn = new GridViewImageColumn();
-            imageColumn.Name = "ImageColumn";
-            imageColumn.FieldName = "Photo";
-            imageColumn.HeaderText = "Picture";
-            imageColumn.ImageLayout = ImageLayout.Zoom;           
-            radGridView1.MasterTemplate.Columns.Insert(4, imageColumn);
+GridViewImageColumn imageColumn = new GridViewImageColumn();
+imageColumn.Name = "ImageColumn";
+imageColumn.FieldName = "Photo";
+imageColumn.HeaderText = "Picture";
+imageColumn.ImageLayout = ImageLayout.Zoom;           
+radGridView1.MasterTemplate.Columns.Insert(4, imageColumn);
+
 ````
 ````VB.NET
-        Dim imageColumn As New GridViewImageColumn
-        imageColumn.Name = "ImageColumn"
-        imageColumn.FieldName = "Photo"
-        imageColumn.HeaderText = "Picture"
-        imageColumn.ImageLayout = ImageLayout.Zoom
-        RadGridView1.MasterTemplate.Columns.Add(imageColumn)
-        '
+Dim imageColumn As New GridViewImageColumn
+imageColumn.Name = "ImageColumn"
+imageColumn.FieldName = "Photo"
+imageColumn.HeaderText = "Picture"
+imageColumn.ImageLayout = ImageLayout.Zoom
+RadGridView1.MasterTemplate.Columns.Add(imageColumn)
+
 ````
 
 {{endregion}} 
@@ -67,13 +68,14 @@ GridViewImageColumn also implements resizing functionality where sizing is contr
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=none}} 
 
 ````C#
-            imageColumn.ImageLayout = ImageLayout.None;
-            imageColumn.ImageAlignment = ContentAlignment.BottomRight;
+imageColumn.ImageLayout = ImageLayout.None;
+imageColumn.ImageAlignment = ContentAlignment.BottomRight;
+
 ````
 ````VB.NET
-        imageColumn.ImageLayout = ImageLayout.None
-        imageColumn.ImageAlignment = ContentAlignment.BottomRight
-        '
+imageColumn.ImageLayout = ImageLayout.None
+imageColumn.ImageAlignment = ContentAlignment.BottomRight
+
 ````
 
 {{endregion}} 
@@ -88,11 +90,12 @@ GridViewImageColumn also implements resizing functionality where sizing is contr
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=tile}} 
 
 ````C#
-            imageColumn.ImageLayout = ImageLayout.Tile;
+imageColumn.ImageLayout = ImageLayout.Tile;
+
 ````
 ````VB.NET
-        imageColumn.ImageLayout = ImageLayout.Tile
-        '
+imageColumn.ImageLayout = ImageLayout.Tile
+
 ````
 
 {{endregion}} 
@@ -107,11 +110,12 @@ GridViewImageColumn also implements resizing functionality where sizing is contr
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=center}} 
 
 ````C#
-            imageColumn.ImageLayout = ImageLayout.Center;
+imageColumn.ImageLayout = ImageLayout.Center;
+
 ````
 ````VB.NET
-        imageColumn.ImageLayout = ImageLayout.Center
-        '
+imageColumn.ImageLayout = ImageLayout.Center
+
 ````
 
 {{endregion}} 
@@ -125,11 +129,12 @@ GridViewImageColumn also implements resizing functionality where sizing is contr
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=stretch}} 
 
 ````C#
-            imageColumn.ImageLayout = ImageLayout.Stretch;
+imageColumn.ImageLayout = ImageLayout.Stretch;
+
 ````
 ````VB.NET
-        imageColumn.ImageLayout = ImageLayout.Stretch
-        '
+imageColumn.ImageLayout = ImageLayout.Stretch
+
 ````
 
 {{endregion}} 
@@ -141,11 +146,12 @@ GridViewImageColumn also implements resizing functionality where sizing is contr
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=zoom}} 
 
 ````C#
-            imageColumn.ImageLayout = ImageLayout.Zoom;
+imageColumn.ImageLayout = ImageLayout.Zoom;
+
 ````
 ````VB.NET
-        imageColumn.ImageLayout = ImageLayout.Zoom
-        '
+imageColumn.ImageLayout = ImageLayout.Zoom
+
 ````
 
 {{endregion}} 

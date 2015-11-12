@@ -22,16 +22,17 @@ There are a vertical and a horizontal scroll bar objects for the vertical and h
 {{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=scrollBarValueChanged}} 
 
 ````C#
-        void VScrollBar_ValueChanged(object sender, EventArgs e)
-        {
-            Console.WriteLine(this.radGridView1.TableElement.VScrollBar.Value);
-        }
+void VScrollBar_ValueChanged(object sender, EventArgs e)
+{
+    Console.WriteLine(this.radGridView1.TableElement.VScrollBar.Value);
+}
+
 ````
 ````VB.NET
-    Sub VScrollBar_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-        Console.WriteLine(Me.RadGridView1.TableElement.VScrollBar.Value)
-    End Sub
-    '
+Sub VScrollBar_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+    Console.WriteLine(Me.RadGridView1.TableElement.VScrollBar.Value)
+End Sub
+
 ````
 
 {{endregion}} 

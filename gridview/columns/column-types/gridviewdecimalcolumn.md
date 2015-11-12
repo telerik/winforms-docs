@@ -18,21 +18,22 @@ __GridViewDecimalColumn__ allows decimal data to be displayed and edited. __Grid
 {{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=addingDecimalColumn}} 
 
 ````C#
-            GridViewDecimalColumn decimalColumn = new GridViewDecimalColumn();
-            decimalColumn.Name = "DecimalColumn";
-            decimalColumn.HeaderText = "Unit Price";
-            decimalColumn.FieldName = "UnitPrice";
-            decimalColumn.DecimalPlaces = 3;
-            radGridView1.MasterTemplate.Columns.Add(decimalColumn);
+GridViewDecimalColumn decimalColumn = new GridViewDecimalColumn();
+decimalColumn.Name = "DecimalColumn";
+decimalColumn.HeaderText = "Unit Price";
+decimalColumn.FieldName = "UnitPrice";
+decimalColumn.DecimalPlaces = 3;
+radGridView1.MasterTemplate.Columns.Add(decimalColumn);
+
 ````
 ````VB.NET
-        Dim decimalColumn As New GridViewDecimalColumn()
-        decimalColumn.Name = "DecimalColumn"
-        decimalColumn.HeaderText = "Unit Price"
-        decimalColumn.FieldName = "UnitPrice"
-        decimalColumn.DecimalPlaces = 3
-        RadGridView1.MasterTemplate.Columns.Add(decimalColumn)
-        '
+Dim decimalColumn As New GridViewDecimalColumn()
+decimalColumn.Name = "DecimalColumn"
+decimalColumn.HeaderText = "Unit Price"
+decimalColumn.FieldName = "UnitPrice"
+decimalColumn.DecimalPlaces = 3
+RadGridView1.MasterTemplate.Columns.Add(decimalColumn)
+
 ````
 
 {{endregion}} 
@@ -45,27 +46,27 @@ You may provide a default value using the following code:
 {{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=settingTheDefaultValue}} 
 
 ````C#
-        void radGridView1_CellEditorInitialized(object sender, GridViewCellEventArgs e)
+void radGridView1_CellEditorInitialized(object sender, GridViewCellEventArgs e)
+{
+    GridSpinEditor spinEditor = this.radGridView1.ActiveEditor as GridSpinEditor;
+    if (spinEditor != null)
+    {
+        if (spinEditor.Value == null)
         {
-            GridSpinEditor spinEditor = this.radGridView1.ActiveEditor as GridSpinEditor;
-            if (spinEditor != null)
-            {
-                if (spinEditor.Value == null)
-                {
-                    spinEditor.Value = 0.0;
-                }
-            }
+            spinEditor.Value = 0.0;
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs)
-        Dim spinEditor As GridSpinEditor = TryCast(Me.RadGridView1.ActiveEditor, GridSpinEditor)
+Private Sub RadGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs)
+    Dim spinEditor As GridSpinEditor = TryCast(Me.RadGridView1.ActiveEditor, GridSpinEditor)
+    If spinEditor IsNot Nothing Then
+        spinEditor.Value = 0
+    End If
+End Sub
 
-        If spinEditor IsNot Nothing Then
-            spinEditor.Value = 0
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -79,22 +80,22 @@ The code below demonstrates how you can disable the up and down arrow buttons. U
 {{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=ShowUpDownButtons}} 
 
 ````C#
-        void radGridView1_CellEditorInitialized1(object sender, GridViewCellEventArgs e)
-        {
-            GridSpinEditor spinEditor = this.radGridView1.ActiveEditor as GridSpinEditor;
+void radGridView1_CellEditorInitialized1(object sender, GridViewCellEventArgs e)
+{
+    GridSpinEditor spinEditor = this.radGridView1.ActiveEditor as GridSpinEditor;
+    ((GridSpinEditorElement)spinEditor.EditorElement).ShowUpDownButtons = false;
+}
 
-            ((GridSpinEditorElement)spinEditor.EditorElement).ShowUpDownButtons = false;
-        }
 ````
 ````VB.NET
-    Private Sub RadGridView1_CellEditorInitialized1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs)
-        Dim spinEditor As GridSpinEditor = TryCast(Me.RadGridView1.ActiveEditor, GridSpinEditor)
-        If spinEditor IsNot Nothing Then
-            Dim element As GridSpinEditorElement = spinEditor.EditorElement
-            element.ShowUpDownButtons = False
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_CellEditorInitialized1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs)
+    Dim spinEditor As GridSpinEditor = TryCast(Me.RadGridView1.ActiveEditor, GridSpinEditor)
+    If spinEditor IsNot Nothing Then
+        Dim element As GridSpinEditorElement = spinEditor.EditorElement
+        element.ShowUpDownButtons = False
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -115,11 +116,12 @@ You can define how many places after the decimal point the value in the spin edi
 {{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=decimalPlacesEditor}} 
 
 ````C#
-            decimalColumn.DecimalPlaces = 3;
+decimalColumn.DecimalPlaces = 3;
+
 ````
 ````VB.NET
-        decimalColumn.DecimalPlaces = 3
-        '
+decimalColumn.DecimalPlaces = 3
+
 ````
 
 {{endregion}} 
@@ -133,11 +135,12 @@ In order to define how the values should be displayed by the cellsof the GridVie
 {{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=decimalPlacesCell}} 
 
 ````C#
-            decimalColumn.FormatString = "{0:N2}";
+decimalColumn.FormatString = "{0:N2}";
+
 ````
 ````VB.NET
-        decimalColumn.FormatString = "{0:N2}"
-        '
+decimalColumn.FormatString = "{0:N2}"
+
 ````
 
 {{endregion}} 

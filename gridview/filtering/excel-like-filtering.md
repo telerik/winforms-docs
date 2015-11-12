@@ -26,15 +26,16 @@ Enabling the excel-like filtering is quite easy. You have to set the grid’s pr
 {{source=..\SamplesVB\GridView\Filtering\Excel-like Filtering.vb region=excel-like filtering}} 
 
 ````C#
-            this.radGridView1.EnableFiltering = true;
-            this.radGridView1.MasterTemplate.ShowHeaderCellButtons = true;
-            this.radGridView1.MasterTemplate.ShowFilteringRow = false;
+this.radGridView1.EnableFiltering = true;
+this.radGridView1.MasterTemplate.ShowHeaderCellButtons = true;
+this.radGridView1.MasterTemplate.ShowFilteringRow = false;
+
 ````
 ````VB.NET
-        Me.RadGridView1.EnableFiltering = True
-        Me.RadGridView1.MasterTemplate.ShowHeaderCellButtons = True
-        Me.RadGridView1.MasterTemplate.ShowFilteringRow = False
-        '
+Me.RadGridView1.EnableFiltering = True
+Me.RadGridView1.MasterTemplate.ShowHeaderCellButtons = True
+Me.RadGridView1.MasterTemplate.ShowFilteringRow = False
+
 ````
 
 {{endregion}} 
@@ -48,11 +49,12 @@ After enabling the Excel-like filtering feature, you may decide that you do not 
 {{source=..\SamplesVB\GridView\Filtering\Excel-like Filtering.vb region=allowFiltering}} 
 
 ````C#
-            this.radGridView1.Columns["ContactName"].AllowFiltering = false;
+this.radGridView1.Columns["ContactName"].AllowFiltering = false;
+
 ````
 ````VB.NET
-        Me.RadGridView1.Columns("ContactName").AllowFiltering = False
-        '
+Me.RadGridView1.Columns("ContactName").AllowFiltering = False
+
 ````
 
 {{endregion}} 
@@ -73,28 +75,26 @@ The following code demonstrates how to clear the default custom items, and how t
 {{source=..\SamplesVB\GridView\Filtering\Excel-like Filtering2.vb region=CalendarFilterPopup}} 
 
 ````C#
-        void radGridView1_FilterPopupRequired(object sender, Telerik.WinControls.UI.FilterPopupRequiredEventArgs e)
-        {
-            if (e.FilterPopup is RadDateFilterPopup)
-            {
-                RadDateFilterPopup popup = (RadDateFilterPopup)e.FilterPopup;
-                popup.ClearCustomMenuItems();
+void radGridView1_FilterPopupRequired(object sender, Telerik.WinControls.UI.FilterPopupRequiredEventArgs e)
+{
+    if (e.FilterPopup is RadDateFilterPopup)
+    {
+        RadDateFilterPopup popup = (RadDateFilterPopup)e.FilterPopup;
+        popup.ClearCustomMenuItems();
+        popup.AddCustomMenuItem("today", new DateFilterDescriptor(e.Column.Name, FilterOperator.IsEqualTo, DateTime.Today));
+    }
+}
 
-                popup.AddCustomMenuItem("today", new DateFilterDescriptor(e.Column.Name, FilterOperator.IsEqualTo, DateTime.Today));
-            }
-
-        }
 ````
 ````VB.NET
-    Private Sub radGridView1_FilterPopupRequired(sender As Object, e As Telerik.WinControls.UI.FilterPopupRequiredEventArgs) Handles RadGridView1.FilterPopupRequired
-        If TypeOf e.FilterPopup Is RadDateFilterPopup Then
-            Dim popup As RadDateFilterPopup = DirectCast(e.FilterPopup, RadDateFilterPopup)
-            popup.ClearCustomMenuItems()
+Private Sub radGridView1_FilterPopupRequired(sender As Object, e As Telerik.WinControls.UI.FilterPopupRequiredEventArgs) Handles RadGridView1.FilterPopupRequired
+    If TypeOf e.FilterPopup Is RadDateFilterPopup Then
+        Dim popup As RadDateFilterPopup = DirectCast(e.FilterPopup, RadDateFilterPopup)
+        popup.ClearCustomMenuItems()
+        popup.AddCustomMenuItem("today", New DateFilterDescriptor(e.Column.Name, FilterOperator.IsEqualTo, DateTime.Today))
+    End If
+End Sub
 
-            popup.AddCustomMenuItem("today", New DateFilterDescriptor(e.Column.Name, FilterOperator.IsEqualTo, DateTime.Today))
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -109,21 +109,22 @@ This popup allows easy and fast filtering based on simple list and one-click fil
 {{source=..\SamplesVB\GridView\Filtering\Excel-like Filtering2.vb region=SimpleListPopup}} 
 
 ````C#
-        void radGridView1_FilterPopupRequired1(object sender, Telerik.WinControls.UI.FilterPopupRequiredEventArgs e)
-        {
-            if (e.Column.Name == "ShipCountry")
-            {
-                e.FilterPopup = new RadSimpleListFilterPopup(e.Column);
-            }
-        }
+void radGridView1_FilterPopupRequired1(object sender, Telerik.WinControls.UI.FilterPopupRequiredEventArgs e)
+{
+    if (e.Column.Name == "ShipCountry")
+    {
+        e.FilterPopup = new RadSimpleListFilterPopup(e.Column);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radGridView1_FilterPopupRequired1(sender As Object, e As Telerik.WinControls.UI.FilterPopupRequiredEventArgs) Handles RadGridView1.FilterPopupRequired
-        If e.Column.Name = "ShipCountry" Then
-            e.FilterPopup = New RadSimpleListFilterPopup(e.Column)
-        End If
-    End Sub
-    '
+Private Sub radGridView1_FilterPopupRequired1(sender As Object, e As Telerik.WinControls.UI.FilterPopupRequiredEventArgs) Handles RadGridView1.FilterPopupRequired
+    If e.Column.Name = "ShipCountry" Then
+        e.FilterPopup = New RadSimpleListFilterPopup(e.Column)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -141,21 +142,22 @@ This pop allows representation of date values grouped by year and month in a lis
 {{source=..\SamplesVB\GridView\Filtering\Excel-like Filtering2.vb region=GroupedDatesPopup}} 
 
 ````C#
-        void radGridView1_FilterPopupRequired2(object sender, Telerik.WinControls.UI.FilterPopupRequiredEventArgs e)
-        {
-            if (e.Column.Name == "OrderDate")
-            {
-                e.FilterPopup = new RadListFilterPopup(e.Column, true);
-            }
-        }
+void radGridView1_FilterPopupRequired2(object sender, Telerik.WinControls.UI.FilterPopupRequiredEventArgs e)
+{
+    if (e.Column.Name == "OrderDate")
+    {
+        e.FilterPopup = new RadListFilterPopup(e.Column, true);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radGridView1_FilterPopupRequired2(sender As Object, e As Telerik.WinControls.UI.FilterPopupRequiredEventArgs) Handles RadGridView1.FilterPopupRequired
-        If e.Column.Name = "OrderDate" Then
-            e.FilterPopup = New RadListFilterPopup(e.Column, True)
-        End If
-    End Sub
-    '
+Private Sub radGridView1_FilterPopupRequired2(sender As Object, e As Telerik.WinControls.UI.FilterPopupRequiredEventArgs) Handles RadGridView1.FilterPopupRequired
+    If e.Column.Name = "OrderDate" Then
+        e.FilterPopup = New RadListFilterPopup(e.Column, True)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

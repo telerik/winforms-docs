@@ -24,19 +24,20 @@ The following code snippet demonstrates how the standard deviation of the *Con
 {{source=..\SamplesVB\GridView\Columns\CalculatedColumn.vb region=calculatedColumn}} 
 
 ````C#
-            GridViewDecimalColumn col = new GridViewDecimalColumn();
-            col.Name = "Calculated Column";
-            col.HeaderText = "Order value";
-            radGridView1.Columns.Add(col);
-            radGridView1.Columns["Calculated Column"].Expression = "UnitsOnOrder * UnitPrice";
+GridViewDecimalColumn col = new GridViewDecimalColumn();
+col.Name = "Calculated Column";
+col.HeaderText = "Order value";
+radGridView1.Columns.Add(col);
+radGridView1.Columns["Calculated Column"].Expression = "UnitsOnOrder * UnitPrice";
+
 ````
 ````VB.NET
-        Dim col = New GridViewDecimalColumn()
-        col.Name = "Calculated Column"
-        col.HeaderText = "Order value"
-        RadGridView1.Columns.Add(col)
-        RadGridView1.Columns("Calculated Column").Expression = "UnitsOnOrder * UnitPrice"
-        '
+Dim col = New GridViewDecimalColumn()
+col.Name = "Calculated Column"
+col.HeaderText = "Order value"
+RadGridView1.Columns.Add(col)
+RadGridView1.Columns("Calculated Column").Expression = "UnitsOnOrder * UnitPrice"
+
 ````
 
 {{endregion}} 

@@ -29,14 +29,15 @@ Columns in RadGridView can be pinned which will result in the pinned columns bei
 {{source=..\SamplesVB\GridView\Columns\PinningAndUnpinningColumns.vb region=pinningColumns}} 
 
 ````C#
-            radGridView1.Columns[2].IsPinned = true;
-            radGridView1.Columns["FirstName"].IsPinned = true;
+radGridView1.Columns[2].IsPinned = true;
+radGridView1.Columns["FirstName"].IsPinned = true;
+
 ````
 ````VB.NET
-        Me.RadGridView1.Columns(2).IsPinned = True
-        'or you can use
-        Me.RadGridView1.Columns("FirstName").IsPinned = True
-        '
+Me.RadGridView1.Columns(2).IsPinned = True
+'or you can use
+Me.RadGridView1.Columns("FirstName").IsPinned = True
+
 ````
 
 {{endregion}} 
@@ -61,15 +62,16 @@ Multiple column pinning is also possible. Simply set either the __IsPinned__ pro
 {{source=..\SamplesVB\GridView\Columns\PinningAndUnpinningColumns.vb region=pinMultipleColumns}} 
 
 ````C#
-            radGridView1.Columns["Photo"].PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left;
-            radGridView1.Columns["FirstName"].PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left;
-            radGridView1.Columns["LastName"].PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left;
+radGridView1.Columns["Photo"].PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left;
+radGridView1.Columns["FirstName"].PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left;
+radGridView1.Columns["LastName"].PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left;
+
 ````
 ````VB.NET
-        Me.RadGridView1.Columns("Photo").PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left
-        Me.RadGridView1.Columns("FirstName").PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left
-        Me.RadGridView1.Columns("LastName").PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left
-        '
+Me.RadGridView1.Columns("Photo").PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left
+Me.RadGridView1.Columns("FirstName").PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left
+Me.RadGridView1.Columns("LastName").PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left
+
 ````
 
 {{endregion}} 

@@ -20,29 +20,28 @@ __GridViewBrowseColumn__ is never auto-generated. The following code snippet dem
 {{source=..\SamplesVB\GridView\Columns\GridViewBrowseColumn1.vb region=addBrowseColumn}} 
 
 ````C#
-            GridViewBrowseColumn column = new GridViewBrowseColumn("Browse column");
-            this.radGridView1.Columns.Add(column);
+GridViewBrowseColumn column = new GridViewBrowseColumn("Browse column");
+this.radGridView1.Columns.Add(column);
+this.radGridView1.Rows.Add(@"C:\Music\Sting\If You Love Somebody Set Them Free.wav");
+this.radGridView1.Rows.Add(@"C:\Music\Sting\Russians.wav");
+this.radGridView1.Rows.Add(@"C:\Music\Sting\Fortress Around Your Heart.wav");
+this.radGridView1.Rows.Add(@"C:\Music\Sting\Love Is the Seventh Wave.wav");
+this.radGridView1.Rows.Add(@"C:\Music\Sheryl Crow\Run, Baby, Run.wav");
+this.radGridView1.Rows.Add(@"C:\Music\Sheryl Crow\Leaving Las Vegas.wav");
+this.radGridView1.Rows.Add(@"C:\Music\Sheryl Crow\Strong Enough.wav");
 
-            this.radGridView1.Rows.Add(@"C:\Music\Sting\If You Love Somebody Set Them Free.wav");
-            this.radGridView1.Rows.Add(@"C:\Music\Sting\Russians.wav");
-            this.radGridView1.Rows.Add(@"C:\Music\Sting\Fortress Around Your Heart.wav");
-            this.radGridView1.Rows.Add(@"C:\Music\Sting\Love Is the Seventh Wave.wav");
-            this.radGridView1.Rows.Add(@"C:\Music\Sheryl Crow\Run, Baby, Run.wav");
-            this.radGridView1.Rows.Add(@"C:\Music\Sheryl Crow\Leaving Las Vegas.wav");
-            this.radGridView1.Rows.Add(@"C:\Music\Sheryl Crow\Strong Enough.wav");
 ````
 ````VB.NET
-        Dim column As New GridViewBrowseColumn("Browse column")
-        Me.radGridView1.Columns.Add(column)
+Dim column As New GridViewBrowseColumn("Browse column")
+Me.radGridView1.Columns.Add(column)
+Me.radGridView1.Rows.Add("C:\Music\Sting\If You Love Somebody Set Them Free.wav")
+Me.radGridView1.Rows.Add("C:\Music\Sting\Russians.wav")
+Me.radGridView1.Rows.Add("C:\Music\Sting\Fortress Around Your Heart.wav")
+Me.radGridView1.Rows.Add("C:\Music\Sting\Love Is the Seventh Wave.wav")
+Me.radGridView1.Rows.Add("C:\Music\Sheryl Crow\Run, Baby, Run.wav")
+Me.radGridView1.Rows.Add("C:\Music\Sheryl Crow\Leaving Las Vegas.wav")
+Me.radGridView1.Rows.Add("C:\Music\Sheryl Crow\Strong Enough.wav")
 
-        Me.radGridView1.Rows.Add("C:\Music\Sting\If You Love Somebody Set Them Free.wav")
-        Me.radGridView1.Rows.Add("C:\Music\Sting\Russians.wav")
-        Me.radGridView1.Rows.Add("C:\Music\Sting\Fortress Around Your Heart.wav")
-        Me.radGridView1.Rows.Add("C:\Music\Sting\Love Is the Seventh Wave.wav")
-        Me.radGridView1.Rows.Add("C:\Music\Sheryl Crow\Run, Baby, Run.wav")
-        Me.radGridView1.Rows.Add("C:\Music\Sheryl Crow\Leaving Las Vegas.wav")
-        Me.radGridView1.Rows.Add("C:\Music\Sheryl Crow\Strong Enough.wav")
-        '
 ````
 
 {{endregion}} 

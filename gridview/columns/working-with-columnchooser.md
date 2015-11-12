@@ -29,11 +29,12 @@ __AllowColumnChooser__ - this property determines whether the Column Chooser is 
 {{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=AllowColumnChooser}} 
 
 ````C#
-            radGridView1.MasterTemplate.AllowColumnChooser = false;
+radGridView1.MasterTemplate.AllowColumnChooser = false;
+
 ````
 ````VB.NET
-        RadGridView1.MasterTemplate.AllowColumnChooser = False
-        '
+RadGridView1.MasterTemplate.AllowColumnChooser = False
+
 ````
 
 {{endregion}} 
@@ -53,11 +54,12 @@ __AllowHide__ – this property determines whether the column is allowed to be m
 {{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=AllowHide}} 
 
 ````C#
-            radGridView1.Columns["CategoryName"].AllowHide = false;
+radGridView1.Columns["CategoryName"].AllowHide = false;
+
 ````
 ````VB.NET
-        RadGridView1.Columns("CategoryName").AllowHide = False
-        '
+RadGridView1.Columns("CategoryName").AllowHide = False
+
 ````
 
 {{endregion}} 
@@ -77,11 +79,12 @@ __VisibleInColumnChooser__ – by setting this property for each column you dete
 {{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=VisibleInColumnChooser}} 
 
 ````C#
-            radGridView1.Columns["Picture"].VisibleInColumnChooser = false;
+radGridView1.Columns["Picture"].VisibleInColumnChooser = false;
+
 ````
 ````VB.NET
-        RadGridView1.Columns("Picture").VisibleInColumnChooser = False
-        '
+RadGridView1.Columns("Picture").VisibleInColumnChooser = False
+
 ````
 
 {{endregion}} 
@@ -100,13 +103,14 @@ In order to customize the Column Chooser you can access it directly from the ins
 {{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=customizeColumnChooser}} 
 
 ````C#
-            radGridView1.ColumnChooser.DesktopLocation = new Point(100,100);
-            radGridView1.ColumnChooser.Font = new Font("Segoe", 15, FontStyle.Bold);
+radGridView1.ColumnChooser.DesktopLocation = new Point(100,100);
+radGridView1.ColumnChooser.Font = new Font("Segoe", 15, FontStyle.Bold);
+
 ````
 ````VB.NET
-        RadGridView1.ColumnChooser.DesktopLocation = New Point(100, 100)
-        RadGridView1.ColumnChooser.Font = New Font("Segoe", 15, FontStyle.Bold)
-        '
+RadGridView1.ColumnChooser.DesktopLocation = New Point(100, 100)
+RadGridView1.ColumnChooser.Font = New Font("Segoe", 15, FontStyle.Bold)
+
 ````
 
 {{endregion}} 

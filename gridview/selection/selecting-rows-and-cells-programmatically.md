@@ -20,11 +20,12 @@ You can select a single row programmatically by setting its IsSelected property 
 {{source=..\SamplesVB\GridView\Selection\Selection1.vb region=isRowSelected}} 
 
 ````C#
-            radGridView1.Rows[2].IsSelected = true;
+radGridView1.Rows[2].IsSelected = true;
+
 ````
 ````VB.NET
-        RadGridView1.Rows(2).IsSelected = True
-        '
+RadGridView1.Rows(2).IsSelected = True
+
 ````
 
 {{endregion}} 
@@ -35,11 +36,12 @@ You can also select a single row by making it current:
 {{source=..\SamplesVB\GridView\Selection\Selection1.vb region=isRowCurrent}} 
 
 ````C#
-            radGridView1.Rows[2].IsCurrent = true;
+radGridView1.Rows[2].IsCurrent = true;
+
 ````
 ````VB.NET
-        RadGridView1.Rows(2).IsCurrent = True
-        '
+RadGridView1.Rows(2).IsCurrent = True
+
 ````
 
 {{endregion}} 
@@ -57,23 +59,24 @@ You can select multiple rows programmatically by setting their IsSelected proper
 {{source=..\SamplesVB\GridView\Selection\Selection1.vb region=selectMultipleRows}} 
 
 ````C#
-            radGridView1.ClearSelection();
-            radGridView1.MultiSelect = true;
-            radGridView1.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.FullRowSelect;
-            radGridView1.Rows[0].IsSelected = true;
-            radGridView1.Rows[4].IsSelected = true;
-            radGridView1.Rows[6].IsSelected = true;
-            radGridView1.Rows[9].IsSelected = true;
+radGridView1.ClearSelection();
+radGridView1.MultiSelect = true;
+radGridView1.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.FullRowSelect;
+radGridView1.Rows[0].IsSelected = true;
+radGridView1.Rows[4].IsSelected = true;
+radGridView1.Rows[6].IsSelected = true;
+radGridView1.Rows[9].IsSelected = true;
+
 ````
 ````VB.NET
-        RadGridView1.ClearSelection()
-        RadGridView1.MultiSelect = True
-        RadGridView1.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.FullRowSelect
-        RadGridView1.Rows(0).IsSelected = True
-        RadGridView1.Rows(4).IsSelected = True
-        RadGridView1.Rows(6).IsSelected = True
-        RadGridView1.Rows(9).IsSelected = True
-        '
+RadGridView1.ClearSelection()
+RadGridView1.MultiSelect = True
+RadGridView1.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.FullRowSelect
+RadGridView1.Rows(0).IsSelected = True
+RadGridView1.Rows(4).IsSelected = True
+RadGridView1.Rows(6).IsSelected = True
+RadGridView1.Rows(9).IsSelected = True
+
 ````
 
 {{endregion}} 
@@ -87,11 +90,12 @@ In this scenario all four rows are added to the SelectedRows collection of RadGr
 {{source=..\SamplesVB\GridView\Selection\Selection1.vb region=gettingSelectedRow}} 
 
 ````C#
-            GridViewRowInfo selectedRow = radGridView1.SelectedRows[0];
+GridViewRowInfo selectedRow = radGridView1.SelectedRows[0];
+
 ````
 ````VB.NET
-        Dim selectedRow As GridViewRowInfo = RadGridView1.SelectedRows(0)
-        '
+Dim selectedRow As GridViewRowInfo = RadGridView1.SelectedRows(0)
+
 ````
 
 {{endregion}} 
@@ -110,19 +114,20 @@ You can select cells that same way you select rows – by setting their IsSelect
 {{source=..\SamplesVB\GridView\Selection\Selection1.vb region=selectingCell}} 
 
 ````C#
-            radGridView1.ClearSelection();
-            radGridView1.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.CellSelect;
-            //here instead of a cell index you can specify the Name of the column as a string
-            //i.e. radGridView1.Rows[1].Cells[“Column 1”].IsSelected = true;
-            radGridView1.Rows[1].Cells[3].IsSelected = true;
+radGridView1.ClearSelection();
+radGridView1.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.CellSelect;
+//here instead of a cell index you can specify the Name of the column as a string
+//i.e. radGridView1.Rows[1].Cells[“Column 1”].IsSelected = true;
+radGridView1.Rows[1].Cells[3].IsSelected = true;
+
 ````
 ````VB.NET
-        RadGridView1.ClearSelection()
-        RadGridView1.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.CellSelect
-        'here instead of a cell index you can specify the Name of the column as a string
-        'i.e. radGridView1.Rows(1).Cells(“Column 1”).IsSelected = true
-        RadGridView1.Rows(1).Cells(3).IsSelected = True
-        '
+RadGridView1.ClearSelection()
+RadGridView1.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.CellSelect
+'here instead of a cell index you can specify the Name of the column as a string
+'i.e. radGridView1.Rows(1).Cells(“Column 1”).IsSelected = true
+RadGridView1.Rows(1).Cells(3).IsSelected = True
+
 ````
 
 {{endregion}} 
@@ -140,21 +145,22 @@ Selecting multiple cells programmatically is achieved by setting the IsSelected 
 {{source=..\SamplesVB\GridView\Selection\Selection1.vb region=selectMultipleCells}} 
 
 ````C#
-            radGridView1.MultiSelect = true;
-            radGridView1.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.CellSelect;
-            radGridView1.Rows[0].Cells[0].IsSelected = true;
-            radGridView1.Rows[3].Cells[4].IsSelected = true;
-            radGridView1.Rows[5].Cells[6].IsSelected = true;
-            radGridView1.Rows[6].Cells[8].IsSelected = true;
+radGridView1.MultiSelect = true;
+radGridView1.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.CellSelect;
+radGridView1.Rows[0].Cells[0].IsSelected = true;
+radGridView1.Rows[3].Cells[4].IsSelected = true;
+radGridView1.Rows[5].Cells[6].IsSelected = true;
+radGridView1.Rows[6].Cells[8].IsSelected = true;
+
 ````
 ````VB.NET
-        RadGridView1.MultiSelect = True
-        RadGridView1.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.CellSelect
-        RadGridView1.Rows(0).Cells(0).IsSelected = True
-        RadGridView1.Rows(3).Cells(4).IsSelected = True
-        RadGridView1.Rows(5).Cells(6).IsSelected = True
-        RadGridView1.Rows(6).Cells(8).IsSelected = True
-        '
+RadGridView1.MultiSelect = True
+RadGridView1.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.CellSelect
+RadGridView1.Rows(0).Cells(0).IsSelected = True
+RadGridView1.Rows(3).Cells(4).IsSelected = True
+RadGridView1.Rows(5).Cells(6).IsSelected = True
+RadGridView1.Rows(6).Cells(8).IsSelected = True
+
 ````
 
 {{endregion}} 
@@ -167,11 +173,12 @@ In this scenario all four cells will be added to the SelectedCells collection of
 {{source=..\SamplesVB\GridView\Selection\Selection1.vb region=gettingSelectedCell}} 
 
 ````C#
-            GridViewCellInfo selectedCell = radGridView1.SelectedCells[0];
+GridViewCellInfo selectedCell = radGridView1.SelectedCells[0];
+
 ````
 ````VB.NET
-        Dim selectedCell As GridViewCellInfo = RadGridView1.SelectedCells(0)
-        '
+Dim selectedCell As GridViewCellInfo = RadGridView1.SelectedCells(0)
+
 ````
 
 {{endregion}} 

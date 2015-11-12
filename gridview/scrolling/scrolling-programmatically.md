@@ -20,26 +20,24 @@ You can scroll programmatically using the following functions:
 {{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=ScrollTo}} 
 
 ````C#
-            this.radGridView1.TableElement.ScrollTo(5, 4);
+this.radGridView1.TableElement.ScrollTo(5, 4);
+
 ````
 ````VB.NET
-        Me.RadGridView1.TableElement.ScrollTo(5, 4)
-        '#End Region
+Me.RadGridView1.TableElement.ScrollTo(5, 4)
+'#End Region
+'#Region "Column"
+RadGridView1.TableElement.ScrollToColumn(3)
+'#End Region
+'#Region "Row"
+RadGridView1.TableElement.ScrollToRow(100)
+'#End Region
+End Sub
+'#region scrollBarValueChanged
+Sub VScrollBar_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+Console.WriteLine(Me.RadGridView1.TableElement.VScrollBar.Value)
+End Sub
 
-        '#Region "Column"
-        RadGridView1.TableElement.ScrollToColumn(3)
-        '#End Region
-
-        '#Region "Row"
-        RadGridView1.TableElement.ScrollToRow(100)
-        '#End Region
-    End Sub
-
-    '#region scrollBarValueChanged
-    Sub VScrollBar_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-        Console.WriteLine(Me.RadGridView1.TableElement.VScrollBar.Value)
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -51,22 +49,21 @@ You can scroll programmatically using the following functions:
 {{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=Column}} 
 
 ````C#
-            radGridView1.TableElement.ScrollToColumn(3);
+radGridView1.TableElement.ScrollToColumn(3);
+
 ````
 ````VB.NET
-        RadGridView1.TableElement.ScrollToColumn(3)
-        '#End Region
+RadGridView1.TableElement.ScrollToColumn(3)
+'#End Region
+'#Region "Row"
+RadGridView1.TableElement.ScrollToRow(100)
+'#End Region
+End Sub
+'#region scrollBarValueChanged
+Sub VScrollBar_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+Console.WriteLine(Me.RadGridView1.TableElement.VScrollBar.Value)
+End Sub
 
-        '#Region "Row"
-        RadGridView1.TableElement.ScrollToRow(100)
-        '#End Region
-    End Sub
-
-    '#region scrollBarValueChanged
-    Sub VScrollBar_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-        Console.WriteLine(Me.RadGridView1.TableElement.VScrollBar.Value)
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -78,18 +75,18 @@ You can scroll programmatically using the following functions:
 {{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=Row}} 
 
 ````C#
-            radGridView1.TableElement.ScrollToRow(100);
+radGridView1.TableElement.ScrollToRow(100);
+
 ````
 ````VB.NET
-        RadGridView1.TableElement.ScrollToRow(100)
-        '#End Region
-    End Sub
+RadGridView1.TableElement.ScrollToRow(100)
+'#End Region
+End Sub
+'#region scrollBarValueChanged
+Sub VScrollBar_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+Console.WriteLine(Me.RadGridView1.TableElement.VScrollBar.Value)
+End Sub
 
-    '#region scrollBarValueChanged
-    Sub VScrollBar_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-        Console.WriteLine(Me.RadGridView1.TableElement.VScrollBar.Value)
-    End Sub
-    '
 ````
 
 {{endregion}} 

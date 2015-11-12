@@ -85,23 +85,24 @@ The following tutorial demonstrates configuring __RadStatusStrip__
 {{source=..\SamplesVB\Forms And Dialogs\StatusStripGettingStarted.vb region=statusClick}} 
 
 ````C#
-        private void btnStatus_Click(object sender, EventArgs e)
-        {
-            if (radListControl1.SelectedIndex >= radListControl1.Items.Count - 1)
-                radListControl1.SelectedIndex = 0;
-            else
-                radListControl1.SelectedIndex += 1;
-        }
+private void btnStatus_Click(object sender, EventArgs e)
+{
+    if (radListControl1.SelectedIndex >= radListControl1.Items.Count - 1)
+        radListControl1.SelectedIndex = 0;
+    else
+        radListControl1.SelectedIndex += 1;
+}
+
 ````
 ````VB.NET
-    Private Sub btnStatus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnStatus.Click
-        If RadListControl1.SelectedIndex >= RadListControl1.Items.Count - 1 Then
-            RadListControl1.SelectedIndex = 0
-        Else
-            RadListControl1.SelectedIndex += 1
-        End If
-    End Sub
-    '
+Private Sub btnStatus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnStatus.Click
+    If RadListControl1.SelectedIndex >= RadListControl1.Items.Count - 1 Then
+        RadListControl1.SelectedIndex = 0
+    Else
+        RadListControl1.SelectedIndex += 1
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -162,43 +163,41 @@ The following tutorial demonstrates configuring __RadStatusStrip__
 {{source=..\SamplesVB\Forms And Dialogs\StatusStripGettingStarted.vb region=selectedIndexChanged}} 
 
 ````C#
-        void radListControl1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
-        {
-            RadListElement listControl = (sender as RadListElement);
-            RadListDataItem item = listControl.SelectedItem;
-            lblStatus.Text = item.Text;
-            imgStatus.Image = item.Image;
+void radListControl1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
+{
+    RadListElement listControl = (sender as RadListElement);
+    RadListDataItem item = listControl.SelectedItem;
+    lblStatus.Text = item.Text;
+    imgStatus.Image = item.Image;
+    pbStatus.Visibility = Telerik.WinControls.ElementVisibility.Visible;
+    for (int i = 0; i < 100; i++)
+    {
+        pbStatus.Value1 = i;
+        pbStatus.Text = item.Text + "...";
+        radStatusStrip1.Refresh();
+        Thread.Sleep(5);
+    }
+    pbStatus.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+}
 
-            pbStatus.Visibility = Telerik.WinControls.ElementVisibility.Visible;
-            for (int i = 0; i < 100; i++)
-            {
-                pbStatus.Value1 = i;
-                pbStatus.Text = item.Text + "...";
-                radStatusStrip1.Refresh();
-                Thread.Sleep(5);
-            }
-            pbStatus.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
-        }
 ````
 ````VB.NET
-    Private Sub RadListControl1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs) Handles RadListControl1.SelectedIndexChanged
-        Dim listControl As RadListElement = TryCast(sender, RadListElement)
-        Dim item As RadListDataItem = listControl.SelectedItem
-        lblStatus.Text = item.Text
-        imgStatus.Image = item.Image
-        pbStatus.Visibility = Telerik.WinControls.ElementVisibility.Visible
+Private Sub RadListControl1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs) Handles RadListControl1.SelectedIndexChanged
+    Dim listControl As RadListElement = TryCast(sender, RadListElement)
+    Dim item As RadListDataItem = listControl.SelectedItem
+    lblStatus.Text = item.Text
+    imgStatus.Image = item.Image
+    pbStatus.Visibility = Telerik.WinControls.ElementVisibility.Visible
+    Dim i As Integer = 0
+    While i < 100
+        pbStatus.Value1 = i
+        pbStatus.Text = item.Text + "..."
+        Thread.Sleep(5)
+        System.Math.Max(System.Threading.Interlocked.Increment(i), i - 1)
+    End While
+    pbStatus.Visibility = Telerik.WinControls.ElementVisibility.Hidden
+End Sub
 
-        Dim i As Integer = 0
-        While i < 100
-            pbStatus.Value1 = i
-            pbStatus.Text = item.Text + "..."
-            Thread.Sleep(5)
-            System.Math.Max(System.Threading.Interlocked.Increment(i), i - 1)
-        End While
-
-        pbStatus.Visibility = Telerik.WinControls.ElementVisibility.Hidden
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -219,11 +218,12 @@ The following tutorial demonstrates configuring __RadStatusStrip__
 ````C#
 using Telerik.WinControls.UI;
 using System.Threading;
+
 ````
 ````VB.NET
 Imports Telerik.WinControls.UI
 Imports System.Threading
-'
+
 ````
 
 {{endregion}} 

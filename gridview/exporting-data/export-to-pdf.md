@@ -38,11 +38,12 @@ Before running export to PDF, you have to initialize the __GridViewPdfExport__ c
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=InitializePdfExporter}} 
 
 ````C#
-            Telerik.WinControls.Export.GridViewPdfExport pdfExporter = new Telerik.WinControls.Export.GridViewPdfExport(this.radGridView1);
+Telerik.WinControls.Export.GridViewPdfExport pdfExporter = new Telerik.WinControls.Export.GridViewPdfExport(this.radGridView1);
+
 ````
 ````VB.NET
-        Dim pdfExporter As New Telerik.WinControls.Export.GridViewPdfExport(Me.RadGridView1)
-        '
+Dim pdfExporter As New Telerik.WinControls.Export.GridViewPdfExport(Me.RadGridView1)
+
 ````
 
 {{endregion}} 
@@ -57,11 +58,12 @@ The __FileExtension__ property allows you to change the default (*.pdf) file ext
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetFileExtension}} 
 
 ````C#
-            pdfExporter.FileExtension = ".pdf";
+pdfExporter.FileExtension = ".pdf";
+
 ````
 ````VB.NET
-        pdfExporter.FileExtension = ".pdf"
-        '
+pdfExporter.FileExtension = ".pdf"
+
 ````
 
 {{endregion}} 
@@ -83,11 +85,12 @@ __GridViewPdfExport__ uses the default enumeration of hidden column and row sett
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetHiddenPref}} 
 
 ````C#
-            pdfExporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;
+pdfExporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;
+
 ````
 ````VB.NET
-        pdfExporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
-        '
+pdfExporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
+
 ````
 
 {{endregion}} 
@@ -102,11 +105,12 @@ Bofore applying customizations to the headers and footers we need to enable them
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=ShowHeaderAndFooter}} 
 
 ````C#
-            pdfExporter.ShowHeaderAndFooter = true;
+pdfExporter.ShowHeaderAndFooter = true;
+
 ````
 ````VB.NET
-        pdfExporter.ShowHeaderAndFooter = True
-        '
+pdfExporter.ShowHeaderAndFooter = True
+
 ````
 
 {{endregion}} 
@@ -118,37 +122,36 @@ Bofore applying customizations to the headers and footers we need to enable them
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=CustomizeHeaderAndFooter}} 
 
 ````C#
-            pdfExporter.HeaderHeight = 30;
-            pdfExporter.HeaderFont = new Font("Arial", 22);
-            pdfExporter.Logo = System.Drawing.Image.FromFile(@"C:\MyLogo.png");
-            pdfExporter.LeftHeader = "[Logo]";
-            pdfExporter.MiddleHeader = "Middle header";
-            pdfExporter.RightHeader = "Right header";
-            pdfExporter.ReverseHeaderOnEvenPages = true;
+pdfExporter.HeaderHeight = 30;
+pdfExporter.HeaderFont = new Font("Arial", 22);
+pdfExporter.Logo = System.Drawing.Image.FromFile(@"C:\MyLogo.png");
+pdfExporter.LeftHeader = "[Logo]";
+pdfExporter.MiddleHeader = "Middle header";
+pdfExporter.RightHeader = "Right header";
+pdfExporter.ReverseHeaderOnEvenPages = true;
+pdfExporter.FooterHeight = 30;
+pdfExporter.FooterFont = new Font("Arial", 22);
+pdfExporter.LeftFooter = "Left footer";
+pdfExporter.MiddleFooter = "Middle footer";
+pdfExporter.RightFooter = "Right footer";
+pdfExporter.ReverseFooterOnEvenPages = true;
 
-            pdfExporter.FooterHeight = 30;
-            pdfExporter.FooterFont = new Font("Arial", 22);
-            pdfExporter.LeftFooter = "Left footer";
-            pdfExporter.MiddleFooter = "Middle footer";
-            pdfExporter.RightFooter = "Right footer";
-            pdfExporter.ReverseFooterOnEvenPages = true;
 ````
 ````VB.NET
-        pdfExporter.HeaderHeight = 30
-        pdfExporter.HeaderFont = New Font("Arial", 22)
-        pdfExporter.Logo = System.Drawing.Image.FromFile("C:\MyLogo.png")
-        pdfExporter.LeftHeader = "[Logo]"
-        pdfExporter.MiddleHeader = "Middle header"
-        pdfExporter.RightHeader = "Right header"
-        pdfExporter.ReverseHeaderOnEvenPages = True
+pdfExporter.HeaderHeight = 30
+pdfExporter.HeaderFont = New Font("Arial", 22)
+pdfExporter.Logo = System.Drawing.Image.FromFile("C:\MyLogo.png")
+pdfExporter.LeftHeader = "[Logo]"
+pdfExporter.MiddleHeader = "Middle header"
+pdfExporter.RightHeader = "Right header"
+pdfExporter.ReverseHeaderOnEvenPages = True
+pdfExporter.FooterHeight = 30
+pdfExporter.FooterFont = New Font("Arial", 22)
+pdfExporter.LeftFooter = "Left footer"
+pdfExporter.MiddleFooter = "Middle footer"
+pdfExporter.RightFooter = "Right footer"
+pdfExporter.ReverseFooterOnEvenPages = True
 
-        pdfExporter.FooterHeight = 30
-        pdfExporter.FooterFont = New Font("Arial", 22)
-        pdfExporter.LeftFooter = "Left footer"
-        pdfExporter.MiddleFooter = "Middle footer"
-        pdfExporter.RightFooter = "Right footer"
-        pdfExporter.ReverseFooterOnEvenPages = True
-        '
 ````
 
 {{endregion}} 
@@ -171,11 +174,12 @@ The __SummariesExportOption__ property to specifies how to export summary items.
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetSummaryItems}} 
 
 ````C#
-            pdfExporter.SummariesExportOption = SummariesOption.ExportAll;
+pdfExporter.SummariesExportOption = SummariesOption.ExportAll;
+
 ````
 ````VB.NET
-        pdfExporter.SummariesExportOption = SummariesOption.ExportAll
-        '
+pdfExporter.SummariesExportOption = SummariesOption.ExportAll
+
 ````
 
 {{endregion}} 
@@ -190,11 +194,12 @@ Use this property to make the grid fits to the PDF page width.
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetFitToPage}} 
 
 ````C#
-            pdfExporter.FitToPageWidth = true;
+pdfExporter.FitToPageWidth = true;
+
 ````
 ````VB.NET
-        pdfExporter.FitToPageWidth = True
-        '
+pdfExporter.FitToPageWidth = True
+
 ````
 
 {{endregion}} 
@@ -209,11 +214,12 @@ You can use __Scale__ to change the grid size on the pdf. For example if __Scale
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetScale}} 
 
 ````C#
-            pdfExporter.Scale = 1.2;
+pdfExporter.Scale = 1.2;
+
 ````
 ````VB.NET
-        pdfExporter.Scale = 1.2
-        '
+pdfExporter.Scale = 1.2
+
 ````
 
 {{endregion}} 
@@ -234,11 +240,12 @@ The __PDFExportSettings__ property supports various settings on PDF file level. 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=ExportSettings}} 
 
 ````C#
-            pdfExporter.ExportSettings.Description = "Document Description";
+pdfExporter.ExportSettings.Description = "Document Description";
+
 ````
 ````VB.NET
-        pdfExporter.ExportSettings.Description = "Document Description"
-        '
+pdfExporter.ExportSettings.Description = "Document Description"
+
 ````
 
 {{endregion}} 
@@ -255,13 +262,14 @@ Two methods are responsible for exporting data to PDF. Both receive as a paramet
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=RunExport}} 
 
 ````C#
-            string fileName = "c:\\ExportedData.pdf";
-            pdfExporter.RunExport(fileName);
+string fileName = "c:\\ExportedData.pdf";
+pdfExporter.RunExport(fileName);
+
 ````
 ````VB.NET
-        Dim fileName As String = "c:\ExportedData.pdf"
-        pdfExporter.RunExport(fileName)
-        '
+Dim fileName As String = "c:\ExportedData.pdf"
+pdfExporter.RunExport(fileName)
+
 ````
 
 {{endregion}} 
@@ -274,13 +282,14 @@ Two methods are responsible for exporting data to PDF. Both receive as a paramet
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=RunExportAsync}} 
 
 ````C#
-            string fileNameAsync = "c:\\ExportedDataAsync.pdf";
-            pdfExporter.RunExportAsync(fileNameAsync);
+string fileNameAsync = "c:\\ExportedDataAsync.pdf";
+pdfExporter.RunExportAsync(fileNameAsync);
+
 ````
 ````VB.NET
-        Dim fileNameAsync As String = "c:\ExportedDataAsync.pdf"
-        pdfExporter.RunExportAsync(fileNameAsync)
-        '
+Dim fileNameAsync As String = "c:\ExportedDataAsync.pdf"
+pdfExporter.RunExportAsync(fileNameAsync)
+
 ````
 
 {{endregion}} 
@@ -305,11 +314,12 @@ Before running export to PDF, you have to initialize the __ExportToPDF__ class. 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=exportToPdfInitialization}} 
 
 ````C#
-            ExportToPDF exporter = new ExportToPDF(this.radGridView1);
+ExportToPDF exporter = new ExportToPDF(this.radGridView1);
+
 ````
-````VB.NET       
-            Dim exporter As New ExportToPDF(Me.RadGridView1)
-        '
+````VB.NET
+Dim exporter As New ExportToPDF(Me.RadGridView1)
+
 ````
 
 {{endregion}} 
@@ -324,11 +334,12 @@ The __FileExtension__ property allows you to change the default (*.pdf) file ext
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingTheFileExtension}} 
 
 ````C#
-            exporter.FileExtension = "pdf";
+exporter.FileExtension = "pdf";
+
 ````
-````VB.NET        
-        exporter.FileExtension = "pdf"
-        '
+````VB.NET
+exporter.FileExtension = "pdf"
+
 ````
 
 {{endregion}} 
@@ -349,11 +360,12 @@ ExportToPDF uses the default enumeration of hidden column and row settings. You 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingTheHiddenColumnOption}} 
 
 ````C#
-            exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;
+exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;
+
 ````
-````VB.NET        
-         exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
-        '
+````VB.NET
+exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
+
 ````
 
 {{endregion}} 
@@ -368,11 +380,12 @@ Using the ExportToPDF class allows you to export the visual settings (themes) to
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingExportVisualSettings}} 
 
 ````C#
-            exporter.ExportVisualSettings = true;
+exporter.ExportVisualSettings = true;
+
 ````
-````VB.NET       
-         exporter.ExportVisualSettings = True
-        '
+````VB.NET
+exporter.ExportVisualSettings = True
+
 ````
 
 {{endregion}} 
@@ -387,11 +400,12 @@ You can add a page title which will be presented on every page of the PDF docume
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingThePageTitleProperty}} 
 
 ````C#
-            exporter.PageTitle = "Title";
+exporter.PageTitle = "Title";
+
 ````
-````VB.NET        
-         exporter.PageTitle = "Title"
-        '
+````VB.NET
+exporter.PageTitle = "Title"
+
 ````
 
 {{endregion}} 
@@ -414,11 +428,12 @@ You can use __SummariesExportOption__ property to specify how to export summary 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingSummariesExportOption}} 
 
 ````C#
-            exporter.SummariesExportOption = SummariesOption.ExportAll;
+exporter.SummariesExportOption = SummariesOption.ExportAll;
+
 ````
-````VB.NET       
-        exporter.SummariesExportOption = SummariesOption.ExportAll
-        '
+````VB.NET
+exporter.SummariesExportOption = SummariesOption.ExportAll
+
 ````
 
 {{endregion}}
@@ -433,11 +448,12 @@ Use this property to make the grid fits to the PDF page width.
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingFitToPageWidth}} 
 
 ````C#
-            exporter.FitToPageWidth = true;
+exporter.FitToPageWidth = true;
+
 ````
-````VB.NET        
-        exporter.FitToPageWidth = True
-        '
+````VB.NET
+exporter.FitToPageWidth = True
+
 ````
 
 {{endregion}} 
@@ -452,11 +468,12 @@ You can use __Scale__ to change the grid size on the pdf. For example if __Scale
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingScale}} 
 
 ````C#
-            exporter.Scale = 1.2f;
+exporter.Scale = 1.2f;
+
 ````
-````VB.NET        
-        exporter.Scale = 1.2F
-        '
+````VB.NET
+exporter.Scale = 1.2F
+
 ````
 
 {{endregion}} 
@@ -471,11 +488,12 @@ This property controls the thickness of the table border. The default value is 0
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=settingTableBorderTickness}} 
 
 ````C#
-            exporter.TableBorderThickness = 1;
+exporter.TableBorderThickness = 1;
+
 ````
-````VB.NET      
-        exporter.TableBorderThickness = 1
-        '
+````VB.NET
+exporter.TableBorderThickness = 1
+
 ````
 
 {{endregion}} 
@@ -516,13 +534,14 @@ The __PDFExportSettings__ property supports various settings on PDF file level. 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=pdfDocumentSettings}} 
 
 ````C#
-            exporter.PdfExportSettings.PageHeight = 210;
-            exporter.PdfExportSettings.PageWidth = 297;
+exporter.PdfExportSettings.PageHeight = 210;
+exporter.PdfExportSettings.PageWidth = 297;
+
 ````
 ````VB.NET
-        exporter.PdfExportSettings.PageHeight = 210
+exporter.PdfExportSettings.PageHeight = 210
         exporter.PdfExportSettings.PageWidth = 297
-        '
+
 ````
 
 {{endregion}} 
@@ -541,13 +560,14 @@ Consider the code sample below:
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=exportingToPdfFormat}} 
 
 ````C#
-            string fileName = "c:\\ExportedData.pdf";
-            exporter.RunExport(fileName);
+string fileName = "c:\\ExportedData.pdf";
+exporter.RunExport(fileName);
+
 ````
 ````VB.NET
-        Dim fileName As String = "c:\ExportedData.pdf"
+Dim fileName As String = "c:\ExportedData.pdf"
         exporter.RunExport(fileName)
-        '
+
 ````
 
 {{endregion}} 
@@ -562,23 +582,24 @@ __HTMLCellFormating__ event: Since the the export process first renders RadGrid
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=hanglingHtmlCellFormattingEvent}} 
 
 ````C#
-        void exporter_HTMLCellFormatting(object sender, Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs e)
-        {
-            if (e.GridColumnIndex == 1 && e.GridRowInfoType == typeof(GridViewDataRowInfo))
-            {
-                e.HTMLCellElement.Value = "Test value";
-                e.HTMLCellElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Orange));
-            }
-        }
+void exporter_HTMLCellFormatting(object sender, Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs e)
+{
+    if (e.GridColumnIndex == 1 && e.GridRowInfoType == typeof(GridViewDataRowInfo))
+    {
+        e.HTMLCellElement.Value = "Test value";
+        e.HTMLCellElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Orange));
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub exporter_HTMLCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs)
+Private Sub exporter_HTMLCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs)
         If e.GridColumnIndex = 1 AndAlso e.GridRowInfoType.Equals(GetType(GridViewDataRowInfo)) Then
             e.HTMLCellElement.Value = "Test value"
             e.HTMLCellElement.Styles.Add("background-color", ColorTranslator.ToHtml(Color.Orange))
         End If
     End Sub
-    '
+
 ````
 
 {{endregion}} 
@@ -591,20 +612,21 @@ ExportToPDF supports all left-to-right languages when the appropriate Unicode fo
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=htmlCellFormattingUnicode}} 
 
 ````C#
-        void pdfExporter_HTMLCellFormatting(object sender, HTMLCellFormattingEventArgs e)
-        {
-            //The following sets unicode font for every cell.  
-            e.HTMLCellElement.Styles.Remove("font-family");
-            e.HTMLCellElement.Styles.Add("font-family", "Arial Unicode MS");
-        }
+void pdfExporter_HTMLCellFormatting(object sender, HTMLCellFormattingEventArgs e)
+{
+    //The following sets unicode font for every cell.  
+    e.HTMLCellElement.Styles.Remove("font-family");
+    e.HTMLCellElement.Styles.Add("font-family", "Arial Unicode MS");
+}
+
 ````
 ````VB.NET
-    Private Sub pdfExporter_HTMLCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs)
-        'The following sets unicode font for every cell.  
-        e.HTMLCellElement.Styles.Remove("font-family")
-        e.HTMLCellElement.Styles.Add("font-family", "Arial Unicode MS")
-    End Sub
-    '
+Private Sub pdfExporter_HTMLCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.HTML.HTMLCellFormattingEventArgs)
+    'The following sets unicode font for every cell.  
+    e.HTMLCellElement.Styles.Remove("font-family")
+    e.HTMLCellElement.Styles.Add("font-family", "Arial Unicode MS")
+End Sub
+
 ````
 
 {{endregion}} 

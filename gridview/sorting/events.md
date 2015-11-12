@@ -20,25 +20,20 @@ There are two events that are raised when the data in the RadGridView is sorted.
 {{source=..\SamplesVB\GridView\Sorting\SortingEvents.vb region=SortingEvents}} 
 
 ````C#
-    void radGridView1_SortChanging(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
-    {
-    
-    }
-    
-    void radGridView1_SortChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
-    {
-    
-    }
+void radGridView1_SortChanging(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
+{
+}
+void radGridView1_SortChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
+{
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_SortChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.SortChanging
-    
-    End Sub
-    
-    Private Sub RadGridView1_SortChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles RadGridView1.SortChanged
-    
-    End Sub
-    '
+Private Sub RadGridView1_SortChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.SortChanging
+End Sub
+Private Sub RadGridView1_SortChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles RadGridView1.SortChanged
+End Sub
+
 ````
 
 {{endregion}}
@@ -54,16 +49,17 @@ You are also able to cancel the sorting operation by setting the __Cancel__ prop
 {{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=CancelSorting}} 
 {{source=..\SamplesVB\GridView\Sorting\SortingEvents.vb region=CancelSorting}} 
 ````C#
-    private void radGridView1_SortChanging1(object sender, GridViewCollectionChangingEventArgs e)
-    {
-        e.Cancel = true;
-    }
+private void radGridView1_SortChanging1(object sender, GridViewCollectionChangingEventArgs e)
+{
+    e.Cancel = true;
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_SortChanging1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.SortChanging
-        e.Cancel = True
-    End Sub
-    '
+Private Sub RadGridView1_SortChanging1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.SortChanging
+    e.Cancel = True
+End Sub
+
 ````
 
 {{endregion}} 
@@ -73,11 +69,12 @@ Since the __SortDescriptors__ collection implements the __INotifyPropertyChanged
 {{source=..\SamplesCS\GridView\Sorting\SortingEvents.cs region=CollectionChanged}} 
 {{source=..\SamplesVB\GridView\Sorting\SortingEvents.vb region=CollectionChanged}} 
 ````C#
-    this.radGridView1.SortDescriptors.CollectionChanged += new Telerik.WinControls.Data.NotifyCollectionChangedEventHandler(SortDescriptors_CollectionChanged);
+this.radGridView1.SortDescriptors.CollectionChanged += new Telerik.WinControls.Data.NotifyCollectionChangedEventHandler(SortDescriptors_CollectionChanged);
+
 ````
 ````VB.NET
-     AddHandler Me.RadGridView1.SortDescriptors.CollectionChanged, AddressOf SortDescriptors_CollectionChanged
-    '
+AddHandler Me.RadGridView1.SortDescriptors.CollectionChanged, AddressOf SortDescriptors_CollectionChanged
+
 ````
 
 {{endregion}} 
@@ -86,16 +83,16 @@ Since the __SortDescriptors__ collection implements the __INotifyPropertyChanged
 {{source=..\SamplesVB\GridView\Sorting\SortingEvents.vb region=CollectionChanged1}} 
 
 ````C#
-    void SortDescriptors_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
-    {
-        
-    }
+void SortDescriptors_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
+{
+    
+}
+
 ````
 ````VB.NET
-    Private Sub SortDescriptors_CollectionChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
-    
-    End Sub
-        '
+Private Sub SortDescriptors_CollectionChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
+End Sub
+
 ````
 
 {{endregion}} 

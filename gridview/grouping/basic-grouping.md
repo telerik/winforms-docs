@@ -32,15 +32,16 @@ The example below allows GroupDescriptors to be added programmatically, but doe
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=settingGroupingProperties}} 
 
 ````C#
-            this.radGridView1.MasterTemplate.EnableGrouping = true;
-            this.radGridView1.MasterTemplate.AllowDragToGroup = false;
-            this.radGridView1.MasterTemplate.AutoExpandGroups = true;
+this.radGridView1.MasterTemplate.EnableGrouping = true;
+this.radGridView1.MasterTemplate.AllowDragToGroup = false;
+this.radGridView1.MasterTemplate.AutoExpandGroups = true;
+
 ````
 ````VB.NET
-        Me.RadGridView1.MasterTemplate.EnableGrouping = True
-        Me.RadGridView1.MasterTemplate.AllowDragToGroup = False
-        Me.RadGridView1.MasterTemplate.AutoExpandGroups = True
-        '
+Me.RadGridView1.MasterTemplate.EnableGrouping = True
+Me.RadGridView1.MasterTemplate.AllowDragToGroup = False
+Me.RadGridView1.MasterTemplate.AutoExpandGroups = True
+
 ````
 
 {{endregion}} 
@@ -55,11 +56,12 @@ You can hide the GroupPanel using the following code:
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=hideTheGroupPanel}} 
 
 ````C#
-            this.radGridView1.ShowGroupPanel = false;
+this.radGridView1.ShowGroupPanel = false;
+
 ````
 ````VB.NET
-        Me.RadGridView1.ShowGroupPanel = False
-        '
+Me.RadGridView1.ShowGroupPanel = False
+
 ````
 
 {{endregion}} 
@@ -72,18 +74,17 @@ The __ShowGroupPanelScrollbars__ property indicates whether the group panel will
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=ShowGroupPanelScrollbars}} 
 
 ````C#
-            this.radGridView1.ShowGroupPanelScrollbars = true;
+this.radGridView1.ShowGroupPanelScrollbars = true;
+
 ````
 ````VB.NET
-        Me.RadGridView1.ShowGroupPanelScrollbars = True
-        '#End Region
+Me.RadGridView1.ShowGroupPanelScrollbars = True
+'#End Region
+'#region usingSimpleGroupDescriptor
+Dim descriptor As New GroupDescriptor()
+descriptor.GroupNames.Add("Country", ListSortDirection.Ascending)
+Me.RadGridView1.GroupDescriptors.Add(descriptor)
 
-
-        '#region usingSimpleGroupDescriptor
-        Dim descriptor As New GroupDescriptor()
-        descriptor.GroupNames.Add("Country", ListSortDirection.Ascending)
-        Me.RadGridView1.GroupDescriptors.Add(descriptor)
-        '
 ````
 
 {{endregion}} 

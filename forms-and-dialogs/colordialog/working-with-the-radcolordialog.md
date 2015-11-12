@@ -46,28 +46,28 @@ __CustomColors[]:__ This is a read-only array of Color objects.  You can query 
 {{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=enlistTheCustomColors}} 
 
 ````C#
-        private void radButton1_Click(object sender, EventArgs e)
-        {
-            StringBuilder sb = new StringBuilder();
-            foreach (Color color in radColorDialog1.CustomColors)
-            {
-                sb.Append(color.ToString());
-                sb.Append(System.Environment.NewLine);
-            }
-            MessageBox.Show(sb.ToString());
+private void radButton1_Click(object sender, EventArgs e)
+{
+    StringBuilder sb = new StringBuilder();
+    foreach (Color color in radColorDialog1.CustomColors)
+    {
+        sb.Append(color.ToString());
+        sb.Append(System.Environment.NewLine);
+    }
+    MessageBox.Show(sb.ToString());
+}
 
-        }
 ````
 ````VB.NET
-    Private Sub RadButton1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
-        Dim sb As New StringBuilder()
-        For Each color As Color In RadColorDialog1.CustomColors
-            sb.Append(color.ToString())
-            sb.Append(System.Environment.NewLine)
-        Next
-        MessageBox.Show(sb.ToString())
-    End Sub
-    '
+Private Sub RadButton1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
+    Dim sb As New StringBuilder()
+    For Each color As Color In RadColorDialog1.CustomColors
+        sb.Append(color.ToString())
+        sb.Append(System.Environment.NewLine)
+    Next
+    MessageBox.Show(sb.ToString())
+End Sub
+
 ````
 
 {{endregion}} 
@@ -89,18 +89,19 @@ In order go get the SelectedColor or the SelectedHlsColor you can use the follow
 {{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=getTheSelectedColors}} 
 
 ````C#
-            if (radColorDialog1.ShowDialog() == DialogResult.OK)
-            {
-                Color color = radColorDialog1.SelectedColor;
-                HslColor hslColor = radColorDialog1.SelectedHslColor;
-            }
+if (radColorDialog1.ShowDialog() == DialogResult.OK)
+{
+    Color color = radColorDialog1.SelectedColor;
+    HslColor hslColor = radColorDialog1.SelectedHslColor;
+}
+
 ````
 ````VB.NET
-        If RadColorDialog1.ShowDialog() = DialogResult.OK Then
-            Dim color As Color = RadColorDialog1.SelectedColor
-            Dim hslColor As Telerik.WinControls.HslColor = RadColorDialog1.SelectedHslColor
-        End If
-        '
+If RadColorDialog1.ShowDialog() = DialogResult.OK Then
+    Dim color As Color = RadColorDialog1.SelectedColor
+    Dim hslColor As Telerik.WinControls.HslColor = RadColorDialog1.SelectedHslColor
+End If
+
 ````
 
 {{endregion}} 

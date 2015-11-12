@@ -26,34 +26,35 @@ In order to remove an item, you need to make a loop iterating the __e.ContextMen
 {{source=..\SamplesVB\GridView\ContextMenus\ModifingTheDefaultContextMenu.vb region=removeContextMenuItem}} 
 
 ````C#
-        void radGridView1_ContextMenuOpening(object sender, Telerik.WinControls.UI.ContextMenuOpeningEventArgs e)
+void radGridView1_ContextMenuOpening(object sender, Telerik.WinControls.UI.ContextMenuOpeningEventArgs e)
+{
+    for (int i = 0; i < e.ContextMenu.Items.Count; i++)
+    {
+        if (e.ContextMenu.Items[i].Text == "Conditional Formatting")
         {
-            for (int i = 0; i < e.ContextMenu.Items.Count; i++)
-            {
-                if (e.ContextMenu.Items[i].Text == "Conditional Formatting")
-                {
-                    // hide the Conditional Formatting option from the header row context menu
-                    e.ContextMenu.Items[i].Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
-                    // hide the separator below the CF option
-                    e.ContextMenu.Items[i + 1].Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
-                }
-            }
+            // hide the Conditional Formatting option from the header row context menu
+            e.ContextMenu.Items[i].Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+            // hide the separator below the CF option
+            e.ContextMenu.Items[i + 1].Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_ContextMenuOpening(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ContextMenuOpeningEventArgs) Handles RadGridView1.ContextMenuOpening
-        Dim i As Integer = 0
-        Do While i < e.ContextMenu.Items.Count
-            If e.ContextMenu.Items(i).Text = "Conditional Formatting" Then
-                ' hide the Conditional Formatting option from the header row context menu
-                e.ContextMenu.Items(i).Visibility = Telerik.WinControls.ElementVisibility.Collapsed
-                ' hide the separator below the CF option
-                e.ContextMenu.Items(i + 1).Visibility = Telerik.WinControls.ElementVisibility.Collapsed
-            End If
-            i += 1
-        Loop
-    End Sub
-    '
+Private Sub RadGridView1_ContextMenuOpening(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ContextMenuOpeningEventArgs) Handles RadGridView1.ContextMenuOpening
+    Dim i As Integer = 0
+    Do While i < e.ContextMenu.Items.Count
+        If e.ContextMenu.Items(i).Text = "Conditional Formatting" Then
+            ' hide the Conditional Formatting option from the header row context menu
+            e.ContextMenu.Items(i).Visibility = Telerik.WinControls.ElementVisibility.Collapsed
+            ' hide the separator below the CF option
+            e.ContextMenu.Items(i + 1).Visibility = Telerik.WinControls.ElementVisibility.Collapsed
+        End If
+        i += 1
+    Loop
+End Sub
+
 ````
 
 {{endregion}} 
@@ -67,26 +68,25 @@ In order to add custom menu items to the default context menu, *you should creat
 {{source=..\SamplesVB\GridView\ContextMenus\ModifingTheDefaultContextMenu.vb region=addContextMenuOption}} 
 
 ````C#
-        void radGridView1_ContextMenuOpening1(object sender, Telerik.WinControls.UI.ContextMenuOpeningEventArgs e)
-        {
-            RadMenuItem customMenuItem = new RadMenuItem();
-            customMenuItem.Text = "Custom Data Operation";
-            RadMenuSeparatorItem separator = new RadMenuSeparatorItem();
-            e.ContextMenu.Items.Add(separator);
-            e.ContextMenu.Items.Add(customMenuItem);
-        }
+void radGridView1_ContextMenuOpening1(object sender, Telerik.WinControls.UI.ContextMenuOpeningEventArgs e)
+{
+    RadMenuItem customMenuItem = new RadMenuItem();
+    customMenuItem.Text = "Custom Data Operation";
+    RadMenuSeparatorItem separator = new RadMenuSeparatorItem();
+    e.ContextMenu.Items.Add(separator);
+    e.ContextMenu.Items.Add(customMenuItem);
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_ContextMenuOpening1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ContextMenuOpeningEventArgs) Handles RadGridView1.ContextMenuOpening
-        Dim customMenuItem As RadMenuItem = New RadMenuItem()
-        customMenuItem.Text = "Custom Data Operation"
+Private Sub RadGridView1_ContextMenuOpening1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ContextMenuOpeningEventArgs) Handles RadGridView1.ContextMenuOpening
+    Dim customMenuItem As RadMenuItem = New RadMenuItem()
+    customMenuItem.Text = "Custom Data Operation"
+    Dim separator As RadMenuSeparatorItem = New RadMenuSeparatorItem()
+    e.ContextMenu.Items.Add(separator)
+    e.ContextMenu.Items.Add(customMenuItem)
+End Sub
 
-        Dim separator As RadMenuSeparatorItem = New RadMenuSeparatorItem()
-
-        e.ContextMenu.Items.Add(separator)
-        e.ContextMenu.Items.Add(customMenuItem)
-    End Sub
-    '
 ````
 
 {{endregion}} 

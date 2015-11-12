@@ -50,13 +50,14 @@ To add a __ShapedForm__ to your project:
 {{source=..\SamplesVB\Forms and Dialogs\ShapedForm1.Designer.vb region=shapedForm}} 
 
 ````C#
-    partial class ShapedForm1 : Telerik.WinControls.UI.ShapedForm
+partial class ShapedForm1 : Telerik.WinControls.UI.ShapedForm
+
 ````
 ````VB.NET
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class ShapedForm1
     Inherits Telerik.WinControls.UI.ShapedForm
-    '
+
 ````
 
 {{endregion}} 

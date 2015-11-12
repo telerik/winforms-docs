@@ -30,24 +30,27 @@ The example creates an ObservableCollection of Person, initializes the collectio
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=SampleClass}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=SampleClass}} 
 
-````C#  
-    public class Person
+````C#
+  
+public class Person
+{
+    public string FirstName { get; set; }
+    
+    public string LastName { get; set; }
+    
+    public int Age { get; set; }
+    
+    public Person(string firstName, string lastName, int age)
     {
-        public string FirstName { get; set; }
-        
-        public string LastName { get; set; }
-        
-        public int Age { get; set; }
-        
-        public Person(string firstName, string lastName, int age)
-        {
-            this.FirstName = firstName;
-            this.LastName = lastName;
-            this.Age = age;
-        }
+        this.FirstName = firstName;
+        this.LastName = lastName;
+        this.Age = age;
     }
+}
+
 ````
-````VB.NET  
+````VB.NET
+  
 Public Class Person
     Public Property FirstName() As String
         Get
@@ -58,7 +61,6 @@ Public Class Person
         End Set
     End Property
     Private m_FirstName As String
-
     Public Property LastName() As String
         Get
             Return m_LastName
@@ -68,7 +70,6 @@ Public Class Person
         End Set
     End Property
     Private m_LastName As String
-
     Public Property Age() As Integer
         Get
             Return m_Age
@@ -78,14 +79,13 @@ Public Class Person
         End Set
     End Property
     Private m_Age As Integer
-
     Public Sub New(firstName As String, lastName As String, age As Integer)
         Me.FirstName = firstName
         Me.LastName = lastName
         Me.Age = age
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -96,28 +96,56 @@ End Class
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Collection}} 
 
 ````C#
-        private  System.Collections.ObjectModel.ObservableCollection<Person> people = new  System.Collections.ObjectModel.ObservableCollection<Person>();
+private  System.Collections.ObjectModel.ObservableCollection<Person> people = new  System.Collections.ObjectModel.ObservableCollection<Person>();
+private void IntilalizeCollection()
+{
+    people.Add(new Person("Johnathan", "Gartner", 45));
+    people.Add(new Person("Jeannine", "Richart", 25));
+    people.Add(new Person("Merry", "Sparacino", 15));
+    people.Add(new Person("Sandi", "Willman", 32));
+    people.Add(new Person("Damion", "Dagley", 51));
+}
 
-        private void IntilalizeCollection()
-        {
-            people.Add(new Person("Johnathan", "Gartner", 45));
-            people.Add(new Person("Jeannine", "Richart", 25));
-            people.Add(new Person("Merry", "Sparacino", 15));
-            people.Add(new Person("Sandi", "Willman", 32));
-            people.Add(new Person("Damion", "Dagley", 51));
-        }
 ````
 ````VB.NET
-    Private people As New System.Collections.ObjectModel.ObservableCollection(Of Person)()
+Private people As New System.Collections.ObjectModel.ObservableCollection(Of Person)()
+Private Sub IntilalizeCollection()
+    people.Add(New Person("Johnathan", "Gartner", 45))
+    people.Add(New Person("Jeannine", "Richart", 25))
+    people.Add(New Person("Merry", "Sparacino", 15))
+    people.Add(New Person("Sandi", "Willman", 32))
+    people.Add(New Person("Damion", "Dagley", 51))
+End Sub
+' #endregion
+Private radGridView1 As New RadGridView()
+Private Add As New RadButton()
+Private Remove As New RadButton()
+Private Move As New RadButton()
+Public Sub New()
+    InitializeComponent()
+   
+    radGridView1.Parent = Me
+    radGridView1.Location = New Point(10, 10)
+    radGridView1.MinimumSize = New Size(370, 500)
+    Me.radGridView1.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill
+    Add.Text = "Add"
+    Add.Parent = Me
+    Add.Location = New Point(400, 10)
+    AddHandler Add.Click, AddressOf Add_Click
+    Remove.Text = "Remove"
+    Remove.Parent = Me
+    Remove.Location = New Point(400, 110)
+    AddHandler Remove.Click, AddressOf Remove_Click
+    Move.Text = "Move"
+    Move.Parent = Me
+    Move.Location = New Point(400, 210)
+    AddHandler Move.Click, AddressOf Move_Click
+End Sub
+'#region Add
+Private Sub Add_Click(sender As Object, e As EventArgs)
+    people.Add(New Person("Damion", "Dagley", 51))
+End Sub
 
-    Private Sub IntilalizeCollection()
-        people.Add(New Person("Johnathan", "Gartner", 45))
-        people.Add(New Person("Jeannine", "Richart", 25))
-        people.Add(New Person("Merry", "Sparacino", 15))
-        people.Add(New Person("Sandi", "Willman", 32))
-        people.Add(New Person("Damion", "Dagley", 51))
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -128,16 +156,17 @@ End Class
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Add}} 
 
 ````C#
-        private void Add_Click(object sender, EventArgs e)
-        {
-            people.Add(new Person("Damion", "Dagley", 51));
-        }
+private void Add_Click(object sender, EventArgs e)
+{
+    people.Add(new Person("Damion", "Dagley", 51));
+}
+
 ````
 ````VB.NET
-    Private Sub Add_Click(sender As Object, e As EventArgs)
-        people.Add(New Person("Damion", "Dagley", 51))
-    End Sub
-    '
+Private Sub Add_Click(sender As Object, e As EventArgs)
+    people.Add(New Person("Damion", "Dagley", 51))
+End Sub
+
 ````
 
 {{endregion}} 
@@ -146,21 +175,22 @@ End Class
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Remove}} 
 
 ````C#
-        private void Remove_Click(object sender, EventArgs e)
-        {
-            if (people.Count > 0)
-            {
-                people.RemoveAt(0);
-            }
-        }
+private void Remove_Click(object sender, EventArgs e)
+{
+    if (people.Count > 0)
+    {
+        people.RemoveAt(0);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub Remove_Click(sender As Object, e As EventArgs)
-        If people.Count > 0 Then
-            people.RemoveAt(0)
-        End If
-    End Sub
-    '
+Private Sub Remove_Click(sender As Object, e As EventArgs)
+    If people.Count > 0 Then
+        people.RemoveAt(0)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -169,16 +199,17 @@ End Class
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Move}} 
 
 ````C#
-        private void Move_Click(object sender, EventArgs e)
-        {
-            people.Move(people.Count - 1, 0);
-        }
+private void Move_Click(object sender, EventArgs e)
+{
+    people.Move(people.Count - 1, 0);
+}
+
 ````
 ````VB.NET
-    Private Sub Move_Click(sender As Object, e As EventArgs)
-        people.Move(people.Count - 1, 0)
-    End Sub
-    '
+Private Sub Move_Click(sender As Object, e As EventArgs)
+    people.Move(people.Count - 1, 0)
+End Sub
+
 ````
 
 {{endregion}} 
@@ -192,18 +223,19 @@ End Class
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Binding}} 
 
 ````C#
-        private void BindingToObservableCollection_Load(object sender, EventArgs e)
-        {
-            IntilalizeCollection();
-            this.radGridView1.DataSource = people;
-        }
+private void BindingToObservableCollection_Load(object sender, EventArgs e)
+{
+    IntilalizeCollection();
+    this.radGridView1.DataSource = people;
+}
+
 ````
 ````VB.NET
-    Private Sub BindingToObservableCollection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        IntilalizeCollection()
-        Me.radGridView1.DataSource = people
-    End Sub
-    '
+Private Sub BindingToObservableCollection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    IntilalizeCollection()
+    Me.radGridView1.DataSource = people
+End Sub
+
 ````
 
 {{endregion}} 

@@ -20,21 +20,22 @@ __GridViewCheckBoxColumn__ displays and allows editing of boolean data. The valu
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=addCheckBoxColumn}} 
 
 ````C#
-            GridViewCheckBoxColumn checkBoxColumn = new GridViewCheckBoxColumn();
-            checkBoxColumn.DataType = typeof(int);
-            checkBoxColumn.Name = "DiscontinuedColumn";
-            checkBoxColumn.FieldName = "Discontinued";
-            checkBoxColumn.HeaderText = "Discontinued?";
-            radGridView1.MasterTemplate.Columns.Add(checkBoxColumn);
+GridViewCheckBoxColumn checkBoxColumn = new GridViewCheckBoxColumn();
+checkBoxColumn.DataType = typeof(int);
+checkBoxColumn.Name = "DiscontinuedColumn";
+checkBoxColumn.FieldName = "Discontinued";
+checkBoxColumn.HeaderText = "Discontinued?";
+radGridView1.MasterTemplate.Columns.Add(checkBoxColumn);
+
 ````
 ````VB.NET
-        Dim checkBoxColumn As New GridViewCheckBoxColumn()
-        checkBoxColumn.DataType = GetType(Integer)
-        checkBoxColumn.Name = "DiscontinuedColumn"
-        checkBoxColumn.FieldName = "Discontinued"
-        checkBoxColumn.HeaderText = "Discontinued?"
-        RadGridView1.MasterTemplate.Columns.Add(checkBoxColumn)
-        '
+Dim checkBoxColumn As New GridViewCheckBoxColumn()
+checkBoxColumn.DataType = GetType(Integer)
+checkBoxColumn.Name = "DiscontinuedColumn"
+checkBoxColumn.FieldName = "Discontinued"
+checkBoxColumn.HeaderText = "Discontinued?"
+RadGridView1.MasterTemplate.Columns.Add(checkBoxColumn)
+
 ````
 
 {{endregion}} 
@@ -45,34 +46,31 @@ The column has also a built-in functionality for checking all check boxes in it,
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=EnableHeaderCheckBox}} 
 
 ````C#
-            checkBoxColumn.EnableHeaderCheckBox = true;
+checkBoxColumn.EnableHeaderCheckBox = true;
+
 ````
 ````VB.NET
-        checkBoxColumn.EnableHeaderCheckBox = True
-        '#End Region
+checkBoxColumn.EnableHeaderCheckBox = True
+'#End Region
+'#Region "EditMode"
+checkBoxColumn.EditMode = EditMode.OnValueChange
+'#End Region
+AddHandler RadGridView1.HeaderCellToggleStateChanged, AddressOf radGridView1_HeaderCellToggleStateChanged
+End Sub
+"HeaderCellToggleStateChanged"
+Private Sub radGridView1_HeaderCellToggleStateChanged(sender As Object, e As GridViewHeaderCellEventArgs)
+Console.WriteLine(e.Column.Name)
+Console.WriteLine(e.State)
+End Sub
+ion
+'#region valueChanged
+Private Sub RadGridView1_ValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadGridView1.ValueChanged
+If TypeOf Me.RadGridView1.ActiveEditor Is RadCheckBoxEditor Then
+    Console.WriteLine(Me.RadGridView1.CurrentCell.RowIndex)
+    Console.WriteLine(Me.RadGridView1.ActiveEditor.Value)
+End If
+End Sub
 
-        '#Region "EditMode"
-        checkBoxColumn.EditMode = EditMode.OnValueChange
-        '#End Region
-
-        AddHandler RadGridView1.HeaderCellToggleStateChanged, AddressOf radGridView1_HeaderCellToggleStateChanged
-    End Sub
-
-#Region "HeaderCellToggleStateChanged"
-    Private Sub radGridView1_HeaderCellToggleStateChanged(sender As Object, e As GridViewHeaderCellEventArgs)
-        Console.WriteLine(e.Column.Name)
-        Console.WriteLine(e.State)
-    End Sub
-#End Region
-
-    '#region valueChanged
-    Private Sub RadGridView1_ValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadGridView1.ValueChanged
-        If TypeOf Me.RadGridView1.ActiveEditor Is RadCheckBoxEditor Then
-            Console.WriteLine(Me.RadGridView1.CurrentCell.RowIndex)
-            Console.WriteLine(Me.RadGridView1.ActiveEditor.Value)
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -88,23 +86,24 @@ __ValueChanged__ event can be used in particular about check box state change. Y
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=valueChanged}} 
 
 ````C#
-        void radGridView1_ValueChanged(object sender, EventArgs e)
-        {
-            if (this.radGridView1.ActiveEditor is RadCheckBoxEditor)
-            {
-                Console.WriteLine(this.radGridView1.CurrentCell.RowIndex);
-                Console.WriteLine(this.radGridView1.ActiveEditor.Value);
-            }
-        }
+void radGridView1_ValueChanged(object sender, EventArgs e)
+{
+    if (this.radGridView1.ActiveEditor is RadCheckBoxEditor)
+    {
+        Console.WriteLine(this.radGridView1.CurrentCell.RowIndex);
+        Console.WriteLine(this.radGridView1.ActiveEditor.Value);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_ValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadGridView1.ValueChanged
-        If TypeOf Me.RadGridView1.ActiveEditor Is RadCheckBoxEditor Then
-            Console.WriteLine(Me.RadGridView1.CurrentCell.RowIndex)
-            Console.WriteLine(Me.RadGridView1.ActiveEditor.Value)
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_ValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadGridView1.ValueChanged
+    If TypeOf Me.RadGridView1.ActiveEditor Is RadCheckBoxEditor Then
+        Console.WriteLine(Me.RadGridView1.CurrentCell.RowIndex)
+        Console.WriteLine(Me.RadGridView1.ActiveEditor.Value)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -120,27 +119,27 @@ To handle the toggle state change of the embedded check box in the header cell y
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=HeaderCellToggleStateChanged}} 
 
 ````C#
-        void radGridView1_HeaderCellToggleStateChanged(object sender, GridViewHeaderCellEventArgs e)
-        {
-            Console.WriteLine(e.Column.Name);
-            Console.WriteLine(e.State);
-        }
+void radGridView1_HeaderCellToggleStateChanged(object sender, GridViewHeaderCellEventArgs e)
+{
+    Console.WriteLine(e.Column.Name);
+    Console.WriteLine(e.State);
+}
+
 ````
 ````VB.NET
-    Private Sub radGridView1_HeaderCellToggleStateChanged(sender As Object, e As GridViewHeaderCellEventArgs)
-        Console.WriteLine(e.Column.Name)
-        Console.WriteLine(e.State)
-    End Sub
-#End Region
+Private Sub radGridView1_HeaderCellToggleStateChanged(sender As Object, e As GridViewHeaderCellEventArgs)
+    Console.WriteLine(e.Column.Name)
+    Console.WriteLine(e.State)
+End Sub
+ Region
+'#region valueChanged
+Private Sub RadGridView1_ValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadGridView1.ValueChanged
+    If TypeOf Me.RadGridView1.ActiveEditor Is RadCheckBoxEditor Then
+        Console.WriteLine(Me.RadGridView1.CurrentCell.RowIndex)
+        Console.WriteLine(Me.RadGridView1.ActiveEditor.Value)
+    End If
+End Sub
 
-    '#region valueChanged
-    Private Sub RadGridView1_ValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadGridView1.ValueChanged
-        If TypeOf Me.RadGridView1.ActiveEditor Is RadCheckBoxEditor Then
-            Console.WriteLine(Me.RadGridView1.CurrentCell.RowIndex)
-            Console.WriteLine(Me.RadGridView1.ActiveEditor.Value)
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -156,30 +155,28 @@ The __EditMode__ property controls when the value of the editor will be submitte
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=EditMode}} 
 
 ````C#
-            checkBoxColumn.EditMode = EditMode.OnValueChange;
+checkBoxColumn.EditMode = EditMode.OnValueChange;
+
 ````
 ````VB.NET
-        checkBoxColumn.EditMode = EditMode.OnValueChange
-        '#End Region
+checkBoxColumn.EditMode = EditMode.OnValueChange
+'#End Region
+AddHandler RadGridView1.HeaderCellToggleStateChanged, AddressOf radGridView1_HeaderCellToggleStateChanged
+End Sub
+"HeaderCellToggleStateChanged"
+Private Sub radGridView1_HeaderCellToggleStateChanged(sender As Object, e As GridViewHeaderCellEventArgs)
+Console.WriteLine(e.Column.Name)
+Console.WriteLine(e.State)
+End Sub
+ion
+'#region valueChanged
+Private Sub RadGridView1_ValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadGridView1.ValueChanged
+If TypeOf Me.RadGridView1.ActiveEditor Is RadCheckBoxEditor Then
+    Console.WriteLine(Me.RadGridView1.CurrentCell.RowIndex)
+    Console.WriteLine(Me.RadGridView1.ActiveEditor.Value)
+End If
+End Sub
 
-        AddHandler RadGridView1.HeaderCellToggleStateChanged, AddressOf radGridView1_HeaderCellToggleStateChanged
-    End Sub
-
-#Region "HeaderCellToggleStateChanged"
-    Private Sub radGridView1_HeaderCellToggleStateChanged(sender As Object, e As GridViewHeaderCellEventArgs)
-        Console.WriteLine(e.Column.Name)
-        Console.WriteLine(e.State)
-    End Sub
-#End Region
-
-    '#region valueChanged
-    Private Sub RadGridView1_ValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadGridView1.ValueChanged
-        If TypeOf Me.RadGridView1.ActiveEditor Is RadCheckBoxEditor Then
-            Console.WriteLine(Me.RadGridView1.CurrentCell.RowIndex)
-            Console.WriteLine(Me.RadGridView1.ActiveEditor.Value)
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 

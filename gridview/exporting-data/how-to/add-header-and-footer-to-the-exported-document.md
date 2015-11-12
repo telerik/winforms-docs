@@ -27,17 +27,18 @@ The [spread export]({%slug winforms/gridview/exporting-data/spread-export-%}) fu
 {{source=..\SamplesVB\GridView\ExportingData\HowTo\HeaderAndFooter.vb region=SetExporter}} 
 
 ````C#
-            GridViewSpreadExport spreadExporter = new GridViewSpreadExport(radGridView1);
-            SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
-            exportRenderer.WorkbookCreated += exportRenderer_WorkbookCreated;
-            spreadExporter.RunExport(@"C:\exportedFile.xlsx", exportRenderer);
+GridViewSpreadExport spreadExporter = new GridViewSpreadExport(radGridView1);
+SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
+exportRenderer.WorkbookCreated += exportRenderer_WorkbookCreated;
+spreadExporter.RunExport(@"C:\exportedFile.xlsx", exportRenderer);
+
 ````
 ````VB.NET
-        Dim spreadExporter As New GridViewSpreadExport(radGridView1)
-        Dim exportRenderer As New SpreadExportRenderer()
+Dim spreadExporter As New GridViewSpreadExport(radGridView1)
+Dim exportRenderer As New SpreadExportRenderer()
         AddHandler exportRenderer.WorkbookCreated, AddressOf exportRenderer_WorkbookCreated
-        spreadExporter.RunExport("C:\exportedFile.xlsx", exportRenderer)
-        '
+spreadExporter.RunExport("C:\exportedFile.xlsx", exportRenderer)
+
 ````
 
 {{endregion}} 
@@ -50,13 +51,14 @@ The [spread export]({%slug winforms/gridview/exporting-data/spread-export-%}) fu
 {{source=..\SamplesVB\GridView\ExportingData\HowTo\HeaderAndFooter.vb region=StlylesAndFormats}} 
 
 ````C#
-            PatternFill solidPatternFill = new PatternFill(PatternType.Solid, System.Windows.Media.Color.FromRgb(46, 204, 113), Colors.Transparent);
-            CellValueFormat textFormat = new CellValueFormat("@");
+PatternFill solidPatternFill = new PatternFill(PatternType.Solid, System.Windows.Media.Color.FromRgb(46, 204, 113), Colors.Transparent);
+CellValueFormat textFormat = new CellValueFormat("@");
+
 ````
 ````VB.NET
-        Dim solidPatternFill As New PatternFill(PatternType.Solid, System.Windows.Media.Color.FromRgb(46, 204, 113), Colors.Transparent)
-        Dim textFormat As New CellValueFormat("@")
-        '
+Dim solidPatternFill As New PatternFill(PatternType.Solid, System.Windows.Media.Color.FromRgb(46, 204, 113), Colors.Transparent)
+Dim textFormat As New CellValueFormat("@")
+
 ````
 
 {{endregion}} 
@@ -69,46 +71,39 @@ The [spread export]({%slug winforms/gridview/exporting-data/spread-export-%}) fu
 {{source=..\SamplesVB\GridView\ExportingData\HowTo\HeaderAndFooter.vb region=Header}} 
 
 ````C#
-            Worksheet worksheet = e.Workbook.Sheets[0] as Worksheet;
+Worksheet worksheet = e.Workbook.Sheets[0] as Worksheet;
+CellRange range = new CellRange(0, 0, 1, radGridView1.Columns.Count - 4);
+CellSelection header = worksheet.Cells[range];
+if (header.CanInsertOrRemove(range, ShiftType.Down))
+{
+    header.Insert(InsertShiftType.Down);
+}
+header.Merge();
+header.SetFormat(textFormat);
+header.SetHorizontalAlignment(RadHorizontalAlignment.Center);
+header.SetVerticalAlignment(RadVerticalAlignment.Center);
+header.SetFontFamily(new ThemableFontFamily("Rockwell"));
+header.SetFontSize(24);
+header.SetFill(solidPatternFill);
+header.SetValue("Nortwind Products Details");
 
-            CellRange range = new CellRange(0, 0, 1, radGridView1.Columns.Count - 4);
-            CellSelection header = worksheet.Cells[range];
-
-            if (header.CanInsertOrRemove(range, ShiftType.Down))
-            {
-                header.Insert(InsertShiftType.Down);
-            }
-
-            header.Merge();
-
-            header.SetFormat(textFormat);
-            header.SetHorizontalAlignment(RadHorizontalAlignment.Center);
-            header.SetVerticalAlignment(RadVerticalAlignment.Center);
-            header.SetFontFamily(new ThemableFontFamily("Rockwell"));
-            header.SetFontSize(24);
-            header.SetFill(solidPatternFill);
-            header.SetValue("Nortwind Products Details");
 ````
 ````VB.NET
-        Dim worksheet As Worksheet = TryCast(e.Workbook.Sheets(0), Worksheet)
+Dim worksheet As Worksheet = TryCast(e.Workbook.Sheets(0), Worksheet)
+Dim range As New CellRange(0, 0, 1, radGridView1.Columns.Count - 4)
+Dim header As CellSelection = worksheet.Cells(range)
+If header.CanInsertOrRemove(range, ShiftType.Down) Then
+    header.Insert(InsertShiftType.Down)
+End If
+header.Merge()
+header.SetFormat(textFormat)
+header.SetHorizontalAlignment(RadHorizontalAlignment.Center)
+header.SetVerticalAlignment(RadVerticalAlignment.Center)
+header.SetFontFamily(New ThemableFontFamily("Rockwell"))
+header.SetFontSize(24)
+header.SetFill(solidPatternFill)
+header.SetValue("Nortwind Products Details")
 
-        Dim range As New CellRange(0, 0, 1, radGridView1.Columns.Count - 4)
-        Dim header As CellSelection = worksheet.Cells(range)
-
-        If header.CanInsertOrRemove(range, ShiftType.Down) Then
-            header.Insert(InsertShiftType.Down)
-        End If
-
-        header.Merge()
-
-        header.SetFormat(textFormat)
-        header.SetHorizontalAlignment(RadHorizontalAlignment.Center)
-        header.SetVerticalAlignment(RadVerticalAlignment.Center)
-        header.SetFontFamily(New ThemableFontFamily("Rockwell"))
-        header.SetFontSize(24)
-        header.SetFill(solidPatternFill)
-        header.SetValue("Nortwind Products Details")
-        '
 ````
 
 {{endregion}} 
@@ -121,49 +116,42 @@ The [spread export]({%slug winforms/gridview/exporting-data/spread-export-%}) fu
 {{source=..\SamplesVB\GridView\ExportingData\HowTo\HeaderAndFooter.vb region=Footer}} 
 
 ````C#
-            CellSelection footerLeft = worksheet.Cells[radGridView1.RowCount + 4, 0];
+CellSelection footerLeft = worksheet.Cells[radGridView1.RowCount + 4, 0];
+footerLeft.SetFormat(textFormat);
+footerLeft.SetValue("Nortwind 2015");
+footerLeft.SetVerticalAlignment(RadVerticalAlignment.Center);
+footerLeft.SetFontFamily(new ThemableFontFamily("Rockwell"));
+footerLeft.SetFontSize(24);
+CellSelection footerRight = worksheet.Cells[radGridView1.RowCount + 4, radGridView1.Columns.Count - 1];
+footerRight.SetFormat(textFormat);
+footerRight.SetValue(DateTime.Now.ToShortDateString());
+footerRight.SetVerticalAlignment(RadVerticalAlignment.Center);
+footerRight.SetFontFamily(new ThemableFontFamily("Rockwell"));
+footerRight.SetFontSize(24);
+range = new CellRange(radGridView1.RowCount + 4, 0, radGridView1.RowCount + 4, radGridView1.Columns.Count - 1);
+CellSelection footer = worksheet.Cells[range];
+footer.SetFill(solidPatternFill);
+worksheet.Columns[worksheet.UsedCellRange].SetWidth(new ColumnWidth(130, false));
 
-            footerLeft.SetFormat(textFormat);
-            footerLeft.SetValue("Nortwind 2015");
-            footerLeft.SetVerticalAlignment(RadVerticalAlignment.Center);
-            footerLeft.SetFontFamily(new ThemableFontFamily("Rockwell"));
-            footerLeft.SetFontSize(24);
-
-            CellSelection footerRight = worksheet.Cells[radGridView1.RowCount + 4, radGridView1.Columns.Count - 1];
-            footerRight.SetFormat(textFormat);
-            footerRight.SetValue(DateTime.Now.ToShortDateString());
-            footerRight.SetVerticalAlignment(RadVerticalAlignment.Center);
-            footerRight.SetFontFamily(new ThemableFontFamily("Rockwell"));
-            footerRight.SetFontSize(24);
-
-            range = new CellRange(radGridView1.RowCount + 4, 0, radGridView1.RowCount + 4, radGridView1.Columns.Count - 1);
-            CellSelection footer = worksheet.Cells[range];
-            footer.SetFill(solidPatternFill);
-
-            worksheet.Columns[worksheet.UsedCellRange].SetWidth(new ColumnWidth(130, false));
 ````
 ````VB.NET
-        Dim footerLeft As CellSelection = worksheet.Cells(radGridView1.RowCount + 4, 0)
+Dim footerLeft As CellSelection = worksheet.Cells(radGridView1.RowCount + 4, 0)
+footerLeft.SetFormat(textFormat)
+footerLeft.SetValue("Nortwind 2015")
+footerLeft.SetVerticalAlignment(RadVerticalAlignment.Center)
+footerLeft.SetFontFamily(New ThemableFontFamily("Rockwell"))
+footerLeft.SetFontSize(24)
+Dim footerRight As CellSelection = worksheet.Cells(radGridView1.RowCount + 4, radGridView1.Columns.Count - 1)
+footerRight.SetFormat(textFormat)
+footerRight.SetValue(Date.Now.ToShortDateString())
+footerRight.SetVerticalAlignment(RadVerticalAlignment.Center)
+footerRight.SetFontFamily(New ThemableFontFamily("Rockwell"))
+footerRight.SetFontSize(24)
+range = New CellRange(radGridView1.RowCount + 4, 0, radGridView1.RowCount + 4, radGridView1.Columns.Count - 1)
+Dim footer As CellSelection = worksheet.Cells(range)
+footer.SetFill(solidPatternFill)
+worksheet.Columns(worksheet.UsedCellRange).SetWidth(New ColumnWidth(130, False))
 
-        footerLeft.SetFormat(textFormat)
-        footerLeft.SetValue("Nortwind 2015")
-        footerLeft.SetVerticalAlignment(RadVerticalAlignment.Center)
-        footerLeft.SetFontFamily(New ThemableFontFamily("Rockwell"))
-        footerLeft.SetFontSize(24)
-
-        Dim footerRight As CellSelection = worksheet.Cells(radGridView1.RowCount + 4, radGridView1.Columns.Count - 1)
-        footerRight.SetFormat(textFormat)
-        footerRight.SetValue(Date.Now.ToShortDateString())
-        footerRight.SetVerticalAlignment(RadVerticalAlignment.Center)
-        footerRight.SetFontFamily(New ThemableFontFamily("Rockwell"))
-        footerRight.SetFontSize(24)
-
-        range = New CellRange(radGridView1.RowCount + 4, 0, radGridView1.RowCount + 4, radGridView1.Columns.Count - 1)
-        Dim footer As CellSelection = worksheet.Cells(range)
-        footer.SetFill(solidPatternFill)
-
-        worksheet.Columns(worksheet.UsedCellRange).SetWidth(New ColumnWidth(130, False))
-        '
 ````
 
 {{endregion}} 

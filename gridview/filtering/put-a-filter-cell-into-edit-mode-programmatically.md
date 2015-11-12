@@ -22,11 +22,12 @@ You can easily put a filter cell into edit mode by code. You should simply call 
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=putFilterCellIntoEditModeProgramatically}} 
 
 ````C#
-            this.radGridView1.MasterView.TableFilteringRow.Cells[1].BeginEdit();
+this.radGridView1.MasterView.TableFilteringRow.Cells[1].BeginEdit();
+
 ````
 ````VB.NET
-        Me.RadGridView1.MasterView.TableFilteringRow.Cells(0).BeginEdit()
-        '
+Me.RadGridView1.MasterView.TableFilteringRow.Cells(0).BeginEdit()
+
 ````
 
 {{endregion}}

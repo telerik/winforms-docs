@@ -26,11 +26,12 @@ To enable sorting you need to set the EnableSorting property of the desired temp
 {{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=enableSorting}} 
 
 ````C#
-            this.radGridView1.MasterTemplate.EnableSorting = true;
+this.radGridView1.MasterTemplate.EnableSorting = true;
+
 ````
 ````VB.NET
-        Me.RadGridView1.MasterTemplate.EnableSorting = True
-        '
+Me.RadGridView1.MasterTemplate.EnableSorting = True
+
 ````
 
 {{endregion}} 
@@ -43,17 +44,18 @@ Here is how to create and add new SortDescriptor
 {{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=usingSortDescriptor}} 
 
 ````C#
-            SortDescriptor descriptor = new SortDescriptor();
-            descriptor.PropertyName = "ShipCountry";
-            descriptor.Direction = ListSortDirection.Ascending;
-            this.radGridView1.MasterTemplate.SortDescriptors.Add(descriptor);
+SortDescriptor descriptor = new SortDescriptor();
+descriptor.PropertyName = "ShipCountry";
+descriptor.Direction = ListSortDirection.Ascending;
+this.radGridView1.MasterTemplate.SortDescriptors.Add(descriptor);
+
 ````
 ````VB.NET
-        Dim descriptor As New SortDescriptor()
-        descriptor.PropertyName = "ShipCountry"
-        descriptor.Direction = ListSortDirection.Ascending
-        Me.RadGridView1.MasterTemplate.SortDescriptors.Add(descriptor)
-        '
+Dim descriptor As New SortDescriptor()
+descriptor.PropertyName = "ShipCountry"
+descriptor.Direction = ListSortDirection.Ascending
+Me.RadGridView1.MasterTemplate.SortDescriptors.Add(descriptor)
+
 ````
 
 {{endregion}} 
@@ -70,27 +72,26 @@ RadGridView supports sorting by one or more columns. Example of sorting by 2 col
 {{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=sortingByTwoOrMoreColumns}} 
 
 ````C#
-            SortDescriptor descriptorShipName = new SortDescriptor();
-            descriptorShipName.PropertyName = "ShipName";
-            descriptorShipName.Direction = ListSortDirection.Ascending;
-            SortDescriptor descriptorFreight = new SortDescriptor();
-            descriptorFreight.PropertyName = "Freight";
-            descriptorFreight.Direction = ListSortDirection.Descending;
-            this.radGridView1.SortDescriptors.Add(descriptorShipName);
-            this.radGridView1.SortDescriptors.Add(descriptorFreight);
+SortDescriptor descriptorShipName = new SortDescriptor();
+descriptorShipName.PropertyName = "ShipName";
+descriptorShipName.Direction = ListSortDirection.Ascending;
+SortDescriptor descriptorFreight = new SortDescriptor();
+descriptorFreight.PropertyName = "Freight";
+descriptorFreight.Direction = ListSortDirection.Descending;
+this.radGridView1.SortDescriptors.Add(descriptorShipName);
+this.radGridView1.SortDescriptors.Add(descriptorFreight);
+
 ````
 ````VB.NET
-        Dim descriptorShipName As New SortDescriptor()
-        descriptorShipName.PropertyName = "ShipName"
-        descriptorShipName.Direction = ListSortDirection.Ascending
+Dim descriptorShipName As New SortDescriptor()
+descriptorShipName.PropertyName = "ShipName"
+descriptorShipName.Direction = ListSortDirection.Ascending
+Dim descriptorFreight As New SortDescriptor()
+descriptorFreight.PropertyName = "Freight"
+descriptorFreight.Direction = ListSortDirection.Descending
+Me.RadGridView1.SortDescriptors.Add(descriptorShipName)
+Me.RadGridView1.SortDescriptors.Add(descriptorFreight)
 
-        Dim descriptorFreight As New SortDescriptor()
-        descriptorFreight.PropertyName = "Freight"
-        descriptorFreight.Direction = ListSortDirection.Descending
-
-        Me.RadGridView1.SortDescriptors.Add(descriptorShipName)
-        Me.RadGridView1.SortDescriptors.Add(descriptorFreight)
-        '
 ````
 
 {{endregion}} 

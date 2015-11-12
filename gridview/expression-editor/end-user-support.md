@@ -23,21 +23,22 @@ End-users can open the editor by navigating to a built-in menu item from the con
 {{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=enableExpressionEditor}} 
 
 ````C#
-            GridViewTextBoxColumn col = new GridViewTextBoxColumn();
-            col.Name = "expression";
-            col.HeaderText = "My Expression";
-            col.Width = 150;
-            col.EnableExpressionEditor = true;
-            this.radGridView1.Columns.Add(col);
+GridViewTextBoxColumn col = new GridViewTextBoxColumn();
+col.Name = "expression";
+col.HeaderText = "My Expression";
+col.Width = 150;
+col.EnableExpressionEditor = true;
+this.radGridView1.Columns.Add(col);
+
 ````
 ````VB.NET
-        Dim col As GridViewTextBoxColumn = New GridViewTextBoxColumn()
-        col.Name = "expression"
-        col.HeaderText = "My Expression"
-        col.Width = 150
-        col.EnableExpressionEditor = True
-        Me.RadGridView1.Columns.Add(col)
-        '
+Dim col As GridViewTextBoxColumn = New GridViewTextBoxColumn()
+col.Name = "expression"
+col.HeaderText = "My Expression"
+col.Width = 150
+col.EnableExpressionEditor = True
+Me.RadGridView1.Columns.Add(col)
+
 ````
 
 {{endregion}} 
@@ -50,11 +51,12 @@ The developer can show RadExpressionEditor on a custom user action, for example 
 {{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=expressionFormShow}} 
 
 ````C#
-            RadExpressionEditorForm.Show(this.radGridView1, this.radGridView1.Columns["expression"]);
+RadExpressionEditorForm.Show(this.radGridView1, this.radGridView1.Columns["expression"]);
+
 ````
 ````VB.NET
-        RadExpressionEditorForm.Show(Me.RadGridView1, Me.RadGridView1.Columns("expression"))
-        '
+RadExpressionEditorForm.Show(Me.RadGridView1, Me.RadGridView1.Columns("expression"))
+
 ````
 
 {{endregion}} 

@@ -26,11 +26,12 @@ Creating a simple expression:
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=creatingSimpleExpression}} 
 
 ````C#
-            this.radGridView1.GroupDescriptors.Expression = "Country ASC";
+this.radGridView1.GroupDescriptors.Expression = "Country ASC";
+
 ````
 ````VB.NET
-        Me.RadGridView1.GroupDescriptors.Expression = "Country ASC"
-        '
+Me.RadGridView1.GroupDescriptors.Expression = "Country ASC"
+
 ````
 
 {{endregion}} 
@@ -43,11 +44,12 @@ Grouping by two properties using an expression:
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=groupingByToColumnsUsingExpression}} 
 
 ````C#
-            this.radGridView1.GroupDescriptors.Expression = "Country, ContactTitle DESC";
+this.radGridView1.GroupDescriptors.Expression = "Country, ContactTitle DESC";
+
 ````
 ````VB.NET
-        Me.RadGridView1.GroupDescriptors.Expression = "Country, ContactTitle DESC"
-        '
+Me.RadGridView1.GroupDescriptors.Expression = "Country, ContactTitle DESC"
+
 ````
 
 {{endregion}}
@@ -60,11 +62,12 @@ Creating groups on two levels using an expression:
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=creatingGroupsOnTwoLevelsUsingExpression}} 
 
 ````C#
-            this.radGridView1.GroupDescriptors.Expression = "Country ASC; ContactTitle DESC";
+this.radGridView1.GroupDescriptors.Expression = "Country ASC; ContactTitle DESC";
+
 ````
 ````VB.NET
-        Me.RadGridView1.GroupDescriptors.Expression = "Country ASC; ContactTitle DESC"
-        '
+Me.RadGridView1.GroupDescriptors.Expression = "Country ASC; ContactTitle DESC"
+
 ````
 
 {{endregion}} 
@@ -77,11 +80,12 @@ Grouping by two properties on the first level and by one on the second:
 {{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=complexGrouping}} 
 
 ````C#
-            this.radGridView1.GroupDescriptors.Expression = "Country, ContactTitle ASC; City DESC";
+this.radGridView1.GroupDescriptors.Expression = "Country, ContactTitle ASC; City DESC";
+
 ````
 ````VB.NET
-        Me.RadGridView1.GroupDescriptors.Expression = "Country, ContactTitle ASC; City DESC"
-        '
+Me.RadGridView1.GroupDescriptors.Expression = "Country, ContactTitle ASC; City DESC"
+
 ````
 
 {{endregion}} 

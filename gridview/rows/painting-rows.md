@@ -20,11 +20,12 @@ __RowPaint__ event occurs when a row needs to be painted. If you want to allow t
 {{source=..\SamplesVB\GridView\Rows\RowPainting.vb region=enableCustomDrawing}} 
 
 ````C#
-            radGridView1.EnableCustomDrawing = true;
+radGridView1.EnableCustomDrawing = true;
+
 ````
 ````VB.NET
-        RadGridView1.EnableCustomDrawing = True
-        '
+RadGridView1.EnableCustomDrawing = True
+
 ````
 
 {{endregion}} 
@@ -38,46 +39,41 @@ The following code demonstrates how to use the __RowPaint__ event to set up the 
 {{source=..\SamplesVB\GridView\Rows\RowPainting.vb region=handlingRowPaint}} 
 
 ````C#
-        private void radGridView1_RowPaint(object sender, GridViewRowPaintEventArgs e)
+private void radGridView1_RowPaint(object sender, GridViewRowPaintEventArgs e)
+{
+    GridDataRowElement dataRow = e.Row as GridDataRowElement;
+    if (dataRow != null)
+    {
+        double value = Convert.ToDouble(dataRow.RowInfo.Cells["UnitsInStock"].Value);
+        if (value < 20)
         {
-            GridDataRowElement dataRow = e.Row as GridDataRowElement;
-
-            if (dataRow != null)
-            {
-                double value = Convert.ToDouble(dataRow.RowInfo.Cells["UnitsInStock"].Value);
-
-                if (value < 20)
-                {
-                    return;
-                }
-
-                Pen pen = value < 0 ? Pens.Purple : Pens.RoyalBlue;
-                Size rowSize = dataRow.Size;
-                rowSize.Height -= 6;
-                rowSize.Width -= 5;
-                e.Graphics.DrawRectangle(pen, new Rectangle(new Point(2, 2), rowSize));
-            }
+            return;
         }
+        Pen pen = value < 0 ? Pens.Purple : Pens.RoyalBlue;
+        Size rowSize = dataRow.Size;
+        rowSize.Height -= 6;
+        rowSize.Width -= 5;
+        e.Graphics.DrawRectangle(pen, new Rectangle(new Point(2, 2), rowSize));
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radGridView1_RowPaint(ByVal sender As Object, ByVal e As GridViewRowPaintEventArgs) Handles RadGridView1.RowPaint
-        Dim dataRow As GridDataRowElement = TryCast(e.Row, GridDataRowElement)
-
-        If dataRow IsNot Nothing Then
-            Dim value As Integer = Convert.ToInt32(dataRow.RowInfo.Cells("UnitsInStock").Value)
-
-            If value < 20 Then
-                Return
-            End If
-
-            Dim pen As Pen = If(value < 0, Pens.Purple, Pens.RoyalBlue)
-            Dim rowSize As Size = dataRow.Size
-            rowSize.Height -= 6
-            rowSize.Width -= 5
-            e.Graphics.DrawRectangle(pen, New Rectangle(New Point(2, 2), rowSize))
+Private Sub radGridView1_RowPaint(ByVal sender As Object, ByVal e As GridViewRowPaintEventArgs) Handles RadGridView1.RowPaint
+    Dim dataRow As GridDataRowElement = TryCast(e.Row, GridDataRowElement)
+    If dataRow IsNot Nothing Then
+        Dim value As Integer = Convert.ToInt32(dataRow.RowInfo.Cells("UnitsInStock").Value)
+        If value < 20 Then
+            Return
         End If
-    End Sub
-    '
+        Dim pen As Pen = If(value < 0, Pens.Purple, Pens.RoyalBlue)
+        Dim rowSize As Size = dataRow.Size
+        rowSize.Height -= 6
+        rowSize.Width -= 5
+        e.Graphics.DrawRectangle(pen, New Rectangle(New Point(2, 2), rowSize))
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

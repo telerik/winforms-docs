@@ -23,36 +23,36 @@ The code snippets below demonstrates changing the background color of rows, whic
 {{source=..\SamplesVB\GridView\Rows\FormattingRows.vb region=rowFormatting}} 
 
 ````C#
+private void radGridView1_RowFormatting(object sender, RowFormattingEventArgs e)
+{
+    if ((bool)e.RowElement.RowInfo.Cells["BMP"].Value == true)
+    {
+        e.RowElement.DrawFill = true;
+        e.RowElement.GradientStyle = GradientStyles.Solid;
+        e.RowElement.BackColor = Color.Aqua;
+    }
+    else
+    {
+        e.RowElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
+        e.RowElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
+        e.RowElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
+    }
+}
 
-        private void radGridView1_RowFormatting(object sender, RowFormattingEventArgs e)
-        {
-            if ((bool)e.RowElement.RowInfo.Cells["BMP"].Value == true)
-            {
-                e.RowElement.DrawFill = true;
-                e.RowElement.GradientStyle = GradientStyles.Solid;
-                e.RowElement.BackColor = Color.Aqua;
-            }
-            else
-            {
-                e.RowElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
-                e.RowElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
-                e.RowElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
-            }
-        }
 ````
 ````VB.NET
-    Private Sub RadGridView1_RowFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.RowFormattingEventArgs) Handles RadGridView1.RowFormatting
-        If e.RowElement.RowInfo.Cells("BMP").Value = True Then
-            e.RowElement.DrawFill = True
-            e.RowElement.GradientStyle = GradientStyles.Solid
-            e.RowElement.BackColor = Color.Aqua
-        Else
-            e.RowElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
-            e.RowElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
-            e.RowElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_RowFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.RowFormattingEventArgs) Handles RadGridView1.RowFormatting
+    If e.RowElement.RowInfo.Cells("BMP").Value = True Then
+        e.RowElement.DrawFill = True
+        e.RowElement.GradientStyle = GradientStyles.Solid
+        e.RowElement.BackColor = Color.Aqua
+    Else
+        e.RowElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
+        e.RowElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
+        e.RowElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -76,40 +76,41 @@ To customize the non-data rows (header row, new row, filtering row, etc) of RadG
 {{source=..\SamplesVB\GridView\Rows\FormattingRows.vb region=viewRowFormatting}} 
 
 ````C#
-        void radGridView1_ViewRowFormatting(object sender, RowFormattingEventArgs e)
-        {
-            Console.WriteLine(e.RowElement.GetType());
-            if (e.RowElement is GridTableHeaderRowElement)
-            {
-                e.RowElement.DrawFill = true;
-                e.RowElement.BackColor = Color.Navy;
-                e.RowElement.NumberOfColors = 1;
-                e.RowElement.ForeColor = Color.White;
-            }
-            else
-            {
-                e.RowElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
-                e.RowElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
-                e.RowElement.ResetValue(LightVisualElement.NumberOfColorsProperty, ValueResetFlags.Local);
-                e.RowElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
-            }
-        }
+void radGridView1_ViewRowFormatting(object sender, RowFormattingEventArgs e)
+{
+    Console.WriteLine(e.RowElement.GetType());
+    if (e.RowElement is GridTableHeaderRowElement)
+    {
+        e.RowElement.DrawFill = true;
+        e.RowElement.BackColor = Color.Navy;
+        e.RowElement.NumberOfColors = 1;
+        e.RowElement.ForeColor = Color.White;
+    }
+    else
+    {
+        e.RowElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
+        e.RowElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
+        e.RowElement.ResetValue(LightVisualElement.NumberOfColorsProperty, ValueResetFlags.Local);
+        e.RowElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_ViewRowFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.RowFormattingEventArgs) Handles RadGridView1.ViewRowFormatting
-        If TypeOf e.RowElement Is GridTableHeaderRowElement Then
-            e.RowElement.DrawFill = True
-            e.RowElement.BackColor = Color.Navy
-            e.RowElement.NumberOfColors = 1
-            e.RowElement.ForeColor = Color.White
-        Else
-            e.RowElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
-            e.RowElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
-            e.RowElement.ResetValue(LightVisualElement.NumberOfColorsProperty, ValueResetFlags.Local)
-            e.RowElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_ViewRowFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.RowFormattingEventArgs) Handles RadGridView1.ViewRowFormatting
+    If TypeOf e.RowElement Is GridTableHeaderRowElement Then
+        e.RowElement.DrawFill = True
+        e.RowElement.BackColor = Color.Navy
+        e.RowElement.NumberOfColors = 1
+        e.RowElement.ForeColor = Color.White
+    Else
+        e.RowElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
+        e.RowElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
+        e.RowElement.ResetValue(LightVisualElement.NumberOfColorsProperty, ValueResetFlags.Local)
+        e.RowElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

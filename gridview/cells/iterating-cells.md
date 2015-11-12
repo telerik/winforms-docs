@@ -18,29 +18,29 @@ You can iterate through the cells of each row using the __Cells__ collection of 
 {{source=..\SamplesVB\GridView\Cells\IteratingCells.vb region=iteratingCells}} 
 
 ````C#
-            foreach (GridViewRowInfo rowInfo in radGridView1.Rows)
-            {
-                foreach (GridViewCellInfo cellInfo in rowInfo.Cells)
-                {
-                    if ((cellInfo.ColumnInfo.Name == "Title")
-                        || (cellInfo.ColumnInfo.Name == "FirstName")
-                        || (cellInfo.ColumnInfo.Name == "LastName"))
-                    {
-                        cellInfo.Value = "Test Value";
-                    }
-                }
-            }
+foreach (GridViewRowInfo rowInfo in radGridView1.Rows)
+{
+    foreach (GridViewCellInfo cellInfo in rowInfo.Cells)
+    {
+        if ((cellInfo.ColumnInfo.Name == "Title")
+            || (cellInfo.ColumnInfo.Name == "FirstName")
+            || (cellInfo.ColumnInfo.Name == "LastName"))
+        {
+            cellInfo.Value = "Test Value";
+        }
+    }
+}
+
 ````
 ````VB.NET
-        For Each rowInfo As GridViewRowInfo In RadGridView1.Rows
-            For Each cellInfo As GridViewCellInfo In rowInfo.Cells
-                If (cellInfo.ColumnInfo.Name = "Title") OrElse (cellInfo.ColumnInfo.Name = "FirstName") OrElse (cellInfo.ColumnInfo.Name = "LastName") Then
+For Each rowInfo As GridViewRowInfo In RadGridView1.Rows
+    For Each cellInfo As GridViewCellInfo In rowInfo.Cells
+        If (cellInfo.ColumnInfo.Name = "Title") OrElse (cellInfo.ColumnInfo.Name = "FirstName") OrElse (cellInfo.ColumnInfo.Name = "LastName") Then
+            cellInfo.Value = "Test Value"
+        End If
+    Next
+Next
 
-                    cellInfo.Value = "Test Value"
-                End If
-            Next
-        Next
-        '
 ````
 
 {{endregion}} 

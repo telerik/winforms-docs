@@ -54,17 +54,18 @@ This example looks for the same condition as the [cell formatting example]({%slu
 {{source=..\SamplesVB\GridView\Rows\ConditionalFormattingRows.vb region=conditionalFormatting}} 
 
 ````C#
-            ConditionalFormattingObject obj = new ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", true);
-            obj.CellForeColor = Color.Red;
-            obj.RowBackColor = Color.SkyBlue;
-            this.radGridView1.Columns["UnitPrice"].ConditionalFormattingObjectList.Add(obj);
+ConditionalFormattingObject obj = new ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", true);
+obj.CellForeColor = Color.Red;
+obj.RowBackColor = Color.SkyBlue;
+this.radGridView1.Columns["UnitPrice"].ConditionalFormattingObjectList.Add(obj);
+
 ````
 ````VB.NET
-        Dim obj = New ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", True)
-        obj.CellForeColor = Color.Red
-        obj.RowBackColor = Color.SkyBlue
-        Me.RadGridView1.Columns("Unit Price").ConditionalFormattingObjectList.Add(obj)
-        '
+Dim obj = New ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", True)
+obj.CellForeColor = Color.Red
+obj.RowBackColor = Color.SkyBlue
+Me.RadGridView1.Columns("Unit Price").ConditionalFormattingObjectList.Add(obj)
+
 ````
 
 {{endregion}} 

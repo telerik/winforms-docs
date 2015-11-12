@@ -26,18 +26,19 @@ The __RadFormTitleBarElement__ is positioned on the top of the form and its defa
 {{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=accessingRadFormElements}} 
 
 ````C#
-        void Form1_Shown(object sender, EventArgs e)
-        {
-            this.FormElement.TitleBar.MaximizeButton.Enabled = false;
-            this.FormElement.TitleBar.MinimizeButton.Enabled = false;
-        }
+void Form1_Shown(object sender, EventArgs e)
+{
+    this.FormElement.TitleBar.MaximizeButton.Enabled = false;
+    this.FormElement.TitleBar.MinimizeButton.Enabled = false;
+}
+
 ````
 ````VB.NET
-    Private Sub Form1_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
-        Me.FormElement.TitleBar.MaximizeButton.Enabled = False
-        Me.FormElement.TitleBar.MinimizeButton.Enabled = False
-    End Sub
-    '
+Private Sub Form1_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
+    Me.FormElement.TitleBar.MaximizeButton.Enabled = False
+    Me.FormElement.TitleBar.MinimizeButton.Enabled = False
+End Sub
+
 ````
 
 {{endregion}} 
@@ -57,20 +58,21 @@ You can easily extend the __RadFormTitleBarElement__'s functionality by adding n
 {{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=addingNewButtonToTheTitleBar}} 
 
 ````C#
-        void Form1_Load(object sender, EventArgs e)
-        {
-            RadButtonElement buttonElement = new RadButtonElement();
-            buttonElement.Text = "TitleBar Button";
-            this.FormElement.TitleBar.Children[2].Children[0].Children.Insert(0, buttonElement);
-        }
+void Form1_Load(object sender, EventArgs e)
+{
+    RadButtonElement buttonElement = new RadButtonElement();
+    buttonElement.Text = "TitleBar Button";
+    this.FormElement.TitleBar.Children[2].Children[0].Children.Insert(0, buttonElement);
+}
+
 ````
 ````VB.NET
-    Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Dim buttonElement As New RadButtonElement()
-        buttonElement.Text = "TitleBar Button"
-        Me.FormElement.TitleBar.Children(2).Children(0).Children.Insert(0, buttonElement)
-    End Sub
-    '
+Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+    Dim buttonElement As New RadButtonElement()
+    buttonElement.Text = "TitleBar Button"
+    Me.FormElement.TitleBar.Children(2).Children(0).Children.Insert(0, buttonElement)
+End Sub
+
 ````
 
 {{endregion}} 
@@ -94,11 +96,12 @@ The __FormBorderPrimitive__represents the outer thin border that surrounds a __R
 {{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=accessingTheFormBorderPrimitive}} 
 
 ````C#
-            this.FormElement.Border.ForeColor = System.Drawing.Color.Green;
+this.FormElement.Border.ForeColor = System.Drawing.Color.Green;
+
 ````
 ````VB.NET
-        Me.FormElement.Border.ForeColor = System.Drawing.Color.Green
-        '
+Me.FormElement.Border.ForeColor = System.Drawing.Color.Green
+
 ````
 
 {{endregion}} 
@@ -124,11 +127,12 @@ The following code snippet demonstrates how to set the __BackColor__of the __For
 {{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=accessingTheFormImageBorderPrimitive}} 
 
 ````C#
-            this.FormElement.ImageBorder.BackColor = Color.Lime;
+this.FormElement.ImageBorder.BackColor = Color.Lime;
+
 ````
 ````VB.NET
-        Me.FormElement.ImageBorder.BackColor = Color.Lime
-        '
+Me.FormElement.ImageBorder.BackColor = Color.Lime
+
 ````
 
 {{endregion}} 

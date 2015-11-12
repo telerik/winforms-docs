@@ -20,19 +20,20 @@ Generally, you should not try to bind __RadGridView__ to a list of simple types.
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToGenericLists.vb region=bindingToListOfSimpleTypes}} 
 
 ````C#
-            List<string> list = new List<string>();
-            list.Add("One");
-            list.Add("Two");
-            list.Add("Three");
-            radGridView1.DataSource = list;
+List<string> list = new List<string>();
+list.Add("One");
+list.Add("Two");
+list.Add("Three");
+radGridView1.DataSource = list;
+
 ````
 ````VB.NET
-        Dim list As New List(Of String)()
-        list.Add("One")
-        list.Add("Two")
-        list.Add("Three")
-        RadGridView1.DataSource = list
-        '
+Dim list As New List(Of String)()
+list.Add("One")
+list.Add("Two")
+list.Add("Three")
+RadGridView1.DataSource = list
+
 ````
 
 {{endregion}} 
@@ -50,26 +51,27 @@ The example below defines a "MyObject" class containing one integer and one stri
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToGenericLists.vb region=objectClass}} 
 
 ````C#
-    public class MyObject
+public class MyObject
+{
+    public MyObject(int myInt, string myString)
     {
-        public MyObject(int myInt, string myString)
-        {
-            _myInt = myInt;
-            _myString = myString;
-        }
-        private int _myInt;
-        public int MyInt
-        {
-            get { return _myInt; }
-            set { _myInt = value; }
-        }
-        private string _myString;
-        public string MyString
-        {
-            get { return _myString; }
-            set { _myString = value; }
-        }
+        _myInt = myInt;
+        _myString = myString;
     }
+    private int _myInt;
+    public int MyInt
+    {
+        get { return _myInt; }
+        set { _myInt = value; }
+    }
+    private string _myString;
+    public string MyString
+    {
+        get { return _myString; }
+        set { _myString = value; }
+    }
+}
+
 ````
 ````VB.NET
 Public Class MyObject
@@ -96,7 +98,7 @@ Public Class MyObject
         End Set
     End Property
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -105,23 +107,24 @@ End Class
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToGenericLists.vb region=bindingtoObjectsOfSimpleType}} 
 
 ````C#
-            List<MyObject> myList = new List<MyObject>();
-            myList.Add(new MyObject(1, "Outdoor"));
-            myList.Add(new MyObject(2, "Hardware"));
-            myList.Add(new MyObject(3, "Tools"));
-            myList.Add(new MyObject(4, "Books"));
-            myList.Add(new MyObject(5, "Appliances"));
-            radGridView1.DataSource = myList;
+List<MyObject> myList = new List<MyObject>();
+myList.Add(new MyObject(1, "Outdoor"));
+myList.Add(new MyObject(2, "Hardware"));
+myList.Add(new MyObject(3, "Tools"));
+myList.Add(new MyObject(4, "Books"));
+myList.Add(new MyObject(5, "Appliances"));
+radGridView1.DataSource = myList;
+
 ````
 ````VB.NET
-        Dim myList As New List(Of MyObject)()
-        myList.Add(New MyObject(1, "Outdoor"))
-        myList.Add(New MyObject(2, "Hardware"))
-        myList.Add(New MyObject(3, "Tools"))
-        myList.Add(New MyObject(4, "Books"))
-        myList.Add(New MyObject(5, "Appliances"))
-        RadGridView1.DataSource = myList
-        '
+Dim myList As New List(Of MyObject)()
+myList.Add(New MyObject(1, "Outdoor"))
+myList.Add(New MyObject(2, "Hardware"))
+myList.Add(New MyObject(3, "Tools"))
+myList.Add(New MyObject(4, "Books"))
+myList.Add(New MyObject(5, "Appliances"))
+RadGridView1.DataSource = myList
+
 ````
 
 {{endregion}} 

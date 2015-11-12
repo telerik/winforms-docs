@@ -20,25 +20,26 @@ Two general approaches in adding new rows exist. The first one is to add rows di
 {{source=..\SamplesVB\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.vb region=addingToTheRowsCollection}} 
 
 ````C#
-            object[] row1 = new object[3];
-            row1[0] = 1;
-            row1[1] = "some text";
-            row1[2] = true;
-            // add first row
-            radGridView1.Rows.Add(row1);
-            // add second row
-            radGridView1.Rows.Add(2, "another text", false);
+object[] row1 = new object[3];
+row1[0] = 1;
+row1[1] = "some text";
+row1[2] = true;
+// add first row
+radGridView1.Rows.Add(row1);
+// add second row
+radGridView1.Rows.Add(2, "another text", false);
+
 ````
 ````VB.NET
-        Dim row1 As Object() = New Object(3) {}
-        row1(0) = 1
-        row1(1) = "some text"
-        row1(2) = True
-        ' add first row
-        RadGridView1.Rows.Add(row1)
-        ' add second row
-        RadGridView1.Rows.Add(2, "another text", False)
-        '
+Dim row1 As Object() = New Object(3) {}
+row1(0) = 1
+row1(1) = "some text"
+row1(2) = True
+' add first row
+RadGridView1.Rows.Add(row1)
+' add second row
+RadGridView1.Rows.Add(2, "another text", False)
+
 ````
 
 {{endregion}} 
@@ -55,13 +56,14 @@ Before the value is set __RadGridView.Validating__ event is fired. This event co
 {{source=..\SamplesVB\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.vb region=assigningACellValue}} 
 
 ````C#
-            radGridView1.Rows[0].Cells[0].Value = 4.3;
-            radGridView1.Rows[1].Cells["Column1"].Value = 114f;
+radGridView1.Rows[0].Cells[0].Value = 4.3;
+radGridView1.Rows[1].Cells["Column1"].Value = 114f;
+
 ````
 ````VB.NET
-        RadGridView1.Rows(0).Cells(0).Value = 4.3
-        RadGridView1.Rows(1).Cells("Column1").Value = 114.0F
-        '
+RadGridView1.Rows(0).Cells(0).Value = 4.3
+RadGridView1.Rows(1).Cells("Column1").Value = 114.0F
+
 ````
 
 {{endregion}} 
@@ -76,13 +78,14 @@ To delete row call __GridViewRowCollection__.__Remove__(GridViewRowInfo value) 
 {{source=..\SamplesVB\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.vb region=removingARowFromTheRowsCollection}} 
 
 ````C#
-            this.radGridView1.Rows.RemoveAt(1);
-            this.radGridView1.Rows.Remove(this.radGridView1.CurrentRow);
+this.radGridView1.Rows.RemoveAt(1);
+this.radGridView1.Rows.Remove(this.radGridView1.CurrentRow);
+
 ````
 ````VB.NET
-        Me.RadGridView1.Rows.RemoveAt(1)
-        Me.RadGridView1.Rows.Remove(Me.RadGridView1.CurrentRow)
-        '
+Me.RadGridView1.Rows.RemoveAt(1)
+Me.RadGridView1.Rows.Remove(Me.RadGridView1.CurrentRow)
+
 ````
 
 {{endregion}} 

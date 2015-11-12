@@ -32,24 +32,25 @@ The following sample demonstrates how to change the default border of __GridS
 {{source=..\SamplesVB\GridView\Editors\CustomizingEditorBehavior.vb region=customizingEditors}} 
 
 ````C#
-        void radGridView1_CellBeginEdit(object sender, Telerik.WinControls.UI.GridViewCellCancelEventArgs e)
-        {
-            GridSpinEditor editor = this.radGridView1.ActiveEditor as GridSpinEditor;
-            if (editor != null)
-            {
-                ((BorderPrimitive)editor.EditorElement.Children[1]).ForeColor = Color.Black;
-                
-            }
-        }
+void radGridView1_CellBeginEdit(object sender, Telerik.WinControls.UI.GridViewCellCancelEventArgs e)
+{
+    GridSpinEditor editor = this.radGridView1.ActiveEditor as GridSpinEditor;
+    if (editor != null)
+    {
+        ((BorderPrimitive)editor.EditorElement.Children[1]).ForeColor = Color.Black;
+        
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_CellBeginEdit(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellCancelEventArgs) Handles RadGridView1.CellBeginEdit
-        Dim editor As GridSpinEditor = TryCast(Me.RadGridView1.ActiveEditor, GridSpinEditor)
-        If editor IsNot Nothing Then
-            DirectCast(editor.EditorElement.Children(1), BorderPrimitive).ForeColor = Color.Black
-        End If
-    End Sub
-    '
+Private Sub RadGridView1_CellBeginEdit(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellCancelEventArgs) Handles RadGridView1.CellBeginEdit
+    Dim editor As GridSpinEditor = TryCast(Me.RadGridView1.ActiveEditor, GridSpinEditor)
+    If editor IsNot Nothing Then
+        DirectCast(editor.EditorElement.Children(1), BorderPrimitive).ForeColor = Color.Black
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

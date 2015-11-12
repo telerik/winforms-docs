@@ -18,11 +18,12 @@ __RadGridView__ offers a build-in search functionality available for both end us
 {{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=AllowSearchRow}} 
 
 ````C#
-            this.radGridView1.AllowSearchRow = true;
+this.radGridView1.AllowSearchRow = true;
+
 ````
 ````VB.NET
-        Me.RadGridView1.AllowSearchRow = True
-        '
+Me.RadGridView1.AllowSearchRow = True
+
 ````
 
 {{endregion}} 
@@ -50,11 +51,12 @@ To change the highlight color you should use the __HighlightColor__ property of 
 {{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=ChangeHighlightColor}} 
 
 ````C#
-            radGridView1.TableElement.SearchHighlightColor = Color.LightBlue;
+radGridView1.TableElement.SearchHighlightColor = Color.LightBlue;
+
 ````
 ````VB.NET
-        RadGridView1.TableElement.SearchHighlightColor = Color.LightBlue
-        '
+RadGridView1.TableElement.SearchHighlightColor = Color.LightBlue
+
 ````
 
 {{endregion}} 
@@ -68,11 +70,12 @@ You can also use the search functionality programmatically without showing the s
 {{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=GetSearchRow}} 
 
 ````C#
-            GridViewSearchRowInfo searchRow = this.radGridView1.MasterView.TableSearchRow;
+GridViewSearchRowInfo searchRow = this.radGridView1.MasterView.TableSearchRow;
+
 ````
 ````VB.NET
-        Dim searchRow As GridViewSearchRowInfo = Me.RadGridView1.MasterView.TableSearchRow
-        '
+Dim searchRow As GridViewSearchRowInfo = Me.RadGridView1.MasterView.TableSearchRow
+
 ````
 
 {{endregion}} 

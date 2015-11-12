@@ -35,11 +35,12 @@ Before running export to ExcelML, you have to initialize the ExportToExcelML cla
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=ExportToExcelMLInitialization}} 
 
 ````C#
-        ExportToExcelML exporter = new ExportToExcelML(this.radGridView1);
+ExportToExcelML exporter = new ExportToExcelML(this.radGridView1);
+
 ````
 ````VB.NET
-        Dim exporter As ExportToExcelML = New ExportToExcelML(Me.RadGridView1)
-        '
+Dim exporter As ExportToExcelML = New ExportToExcelML(Me.RadGridView1)
+
 ````
 
 {{endregion}} 
@@ -62,11 +63,12 @@ MS Excel does not support other ways of hiding a column different from setting i
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingTheHiddenColumnOption}} 
 
 ````C#
-            exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;
+exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;
+
 ````
 ````VB.NET
-        exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
-        '
+exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
+
 ````
 
 {{endregion}} 
@@ -83,11 +85,12 @@ You can enable exporting visual settings through the ExportVisualSettings proper
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=exportVisualSettings}} 
 
 ````C#
-            exporter.ExportVisualSettings = true;
+exporter.ExportVisualSettings = true;
+
 ````
 ````VB.NET
-        exporter.ExportVisualSettings = True
-        '
+exporter.ExportVisualSettings = True
+
 ````
 
 {{endregion}} 
@@ -106,11 +109,12 @@ RadGridView splits data on separate sheets if the number of rows is greater tha
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingMaximumNumberOfRows}} 
 
 ````C#
-            exporter.SheetMaxRows = ExcelMaxRows._1048576;
+exporter.SheetMaxRows = ExcelMaxRows._1048576;
+
 ````
 ````VB.NET
-        exporter.SheetMaxRows = ExcelMaxRows._1048576
-        '
+exporter.SheetMaxRows = ExcelMaxRows._1048576
+
 ````
 
 {{endregion}} 
@@ -123,11 +127,12 @@ __MS Excel Sheet Name__ You can specify the sheet name through __SheetName__ pro
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingTheSheetName}} 
 
 ````C#
-            exporter.SheetName = "Sheet";
+exporter.SheetName = "Sheet";
+
 ````
 ````VB.NET
-        exporter.SheetName = "Sheet"
-        '
+exporter.SheetName = "Sheet"
+
 ````
 
 {{endregion}} 
@@ -150,11 +155,12 @@ You can use __SummariesExportOption__ property to specify how to export summary 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingSumariesExportOption}} 
 
 ````C#
-            exporter.SummariesExportOption = SummariesOption.DoNotExport;
+exporter.SummariesExportOption = SummariesOption.DoNotExport;
+
 ````
 ````VB.NET
-        exporter.SummariesExportOption = SummariesOption.DoNotExport
-        '
+exporter.SummariesExportOption = SummariesOption.DoNotExport
+
 ````
 
 {{endregion}} 
@@ -173,13 +179,14 @@ Consider the code sample below:
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=runExport}} 
 
 ````C#
-            string fileName = "C:\\ExportedData123.xls";
-            exporter.RunExport(fileName);
+string fileName = "C:\\ExportedData123.xls";
+exporter.RunExport(fileName);
+
 ````
 ````VB.NET
-        Dim fileName As String = "C:\\ExportedData.xls"
-        exporter.RunExport(fileName)
-        '
+Dim fileName As String = "C:\\ExportedData.xls"
+exporter.RunExport(fileName)
+
 ````
 
 {{endregion}} 
@@ -196,13 +203,14 @@ Here is an example for a date time formatting:
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=formattingCodes}} 
 
 ````C#
-            this.radGridView1.Columns["Date"].ExcelExportType = DisplayFormatType.Custom;
-            this.radGridView1.Columns["Date"].ExcelExportFormatString = "yyyy.MMMM.dd hh:mm:ss AM/PM";
+this.radGridView1.Columns["Date"].ExcelExportType = DisplayFormatType.Custom;
+this.radGridView1.Columns["Date"].ExcelExportFormatString = "yyyy.MMMM.dd hh:mm:ss AM/PM";
+
 ````
 ````VB.NET
-        Me.RadGridView1.Columns("Date").ExcelExportType = DisplayFormatType.Custom
-        Me.RadGridView1.Columns("Date").ExcelExportFormatString = " yyyy.MMMM.dd hh:mm:ss AM/PM "
-        '
+Me.RadGridView1.Columns("Date").ExcelExportType = DisplayFormatType.Custom
+Me.RadGridView1.Columns("Date").ExcelExportFormatString = " yyyy.MMMM.dd hh:mm:ss AM/PM "
+
 ````
 
 {{endregion}} 
@@ -220,39 +228,40 @@ It gives an access to a single cell’s  __SingleStyleElement__ that allows you 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=ExcelCellFormatting}} 
 
 ````C#
-        void exporter_ExcelCellFormatting(object sender, Telerik.WinControls.UI.Export.ExcelML.ExcelCellFormattingEventArgs e)
-        {
-            if (e.GridRowInfoType == typeof(GridViewTableHeaderRowInfo))
-            {
-                BorderStyles border = new BorderStyles();
-                border.Color = Color.Black;
-                border.Weight = 2;
-                border.LineStyle = LineStyle.Continuous;
-                border.PositionType = PositionType.Bottom;
-                e.ExcelStyleElement.Borders.Add(border);
-            }
-            else if (e.GridRowIndex == 2 && e.GridColumnIndex == 1)
-            {
-                e.ExcelStyleElement.InteriorStyle.Color = Color.Yellow;
-                e.ExcelStyleElement.AlignmentElement.WrapText = true;
-            }
-        }
+void exporter_ExcelCellFormatting(object sender, Telerik.WinControls.UI.Export.ExcelML.ExcelCellFormattingEventArgs e)
+{
+    if (e.GridRowInfoType == typeof(GridViewTableHeaderRowInfo))
+    {
+        BorderStyles border = new BorderStyles();
+        border.Color = Color.Black;
+        border.Weight = 2;
+        border.LineStyle = LineStyle.Continuous;
+        border.PositionType = PositionType.Bottom;
+        e.ExcelStyleElement.Borders.Add(border);
+    }
+    else if (e.GridRowIndex == 2 && e.GridColumnIndex == 1)
+    {
+        e.ExcelStyleElement.InteriorStyle.Color = Color.Yellow;
+        e.ExcelStyleElement.AlignmentElement.WrapText = true;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub exporter_ExcelCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.ExcelML.ExcelCellFormattingEventArgs)
-        If e.GridRowInfoType Is GetType(GridViewTableHeaderRowInfo) Then
-            Dim border As BorderStyles = New BorderStyles()
-            border.Color = Color.Black
-            border.Weight = 2
-            border.LineStyle = LineStyle.Continuous
-            border.PositionType = PositionType.Bottom
-            e.ExcelStyleElement.Borders.Add(border)
-        ElseIf e.GridRowIndex = 2 AndAlso e.GridColumnIndex = 1 Then
-            e.ExcelStyleElement.InteriorStyle.Color = Color.Yellow
-            e.ExcelStyleElement.AlignmentElement.WrapText = True
-        End If
-    End Sub
-    '
+Private Sub exporter_ExcelCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.ExcelML.ExcelCellFormattingEventArgs)
+    If e.GridRowInfoType Is GetType(GridViewTableHeaderRowInfo) Then
+        Dim border As BorderStyles = New BorderStyles()
+        border.Color = Color.Black
+        border.Weight = 2
+        border.LineStyle = LineStyle.Continuous
+        border.PositionType = PositionType.Bottom
+        e.ExcelStyleElement.Borders.Add(border)
+    ElseIf e.GridRowIndex = 2 AndAlso e.GridColumnIndex = 1 Then
+        e.ExcelStyleElement.InteriorStyle.Color = Color.Yellow
+        e.ExcelStyleElement.AlignmentElement.WrapText = True
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -267,32 +276,33 @@ It can be used in together with the public method __AddCustomExcelRow__. It allo
 {{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=ExcelTableCreated}} 
 
 ````C#
-        void exporter_ExcelTableCreated(object sender, ExcelTableCreatedEventArgs e)
-        {
-            string headerText = "Custom added header text.";
-            SingleStyleElement style = ((ExportToExcelML)sender).AddCustomExcelRow(e.ExcelTableElement, 50, headerText);
-            style.FontStyle.Bold = true;
-            style.FontStyle.Size = 18;
-            style.FontStyle.Color = Color.White;
-            style.InteriorStyle.Color = Color.Red;
-            style.InteriorStyle.Pattern = InteriorPatternType.Solid;
-            style.AlignmentElement.HorizontalAlignment = HorizontalAlignmentType.Center;
-            style.AlignmentElement.VerticalAlignment = VerticalAlignmentType.Center;
-        }
+void exporter_ExcelTableCreated(object sender, ExcelTableCreatedEventArgs e)
+{
+    string headerText = "Custom added header text.";
+    SingleStyleElement style = ((ExportToExcelML)sender).AddCustomExcelRow(e.ExcelTableElement, 50, headerText);
+    style.FontStyle.Bold = true;
+    style.FontStyle.Size = 18;
+    style.FontStyle.Color = Color.White;
+    style.InteriorStyle.Color = Color.Red;
+    style.InteriorStyle.Pattern = InteriorPatternType.Solid;
+    style.AlignmentElement.HorizontalAlignment = HorizontalAlignmentType.Center;
+    style.AlignmentElement.VerticalAlignment = VerticalAlignmentType.Center;
+}
+
 ````
 ````VB.NET
-    Private Sub exporter_ExcelTableCreated(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.ExcelML.ExcelTableCreatedEventArgs)
-        Dim headerText As String = "Custom added header text."
-        Dim style As SingleStyleElement = (CType(sender, ExportToExcelML)).AddCustomExcelRow(e.ExcelTableElement, 50, headerText)
-        style.FontStyle.Bold = True
-        style.FontStyle.Size = 18
-        style.FontStyle.Color = Color.White
-        style.InteriorStyle.Color = Color.Red
-        style.InteriorStyle.Pattern = InteriorPatternType.Solid
-        style.AlignmentElement.HorizontalAlignment = HorizontalAlignmentType.Center
-        style.AlignmentElement.VerticalAlignment = VerticalAlignmentType.Center
-    End Sub
-    '
+Private Sub exporter_ExcelTableCreated(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.ExcelML.ExcelTableCreatedEventArgs)
+    Dim headerText As String = "Custom added header text."
+    Dim style As SingleStyleElement = (CType(sender, ExportToExcelML)).AddCustomExcelRow(e.ExcelTableElement, 50, headerText)
+    style.FontStyle.Bold = True
+    style.FontStyle.Size = 18
+    style.FontStyle.Color = Color.White
+    style.InteriorStyle.Color = Color.Red
+    style.InteriorStyle.Pattern = InteriorPatternType.Solid
+    style.AlignmentElement.HorizontalAlignment = HorizontalAlignmentType.Center
+    style.AlignmentElement.VerticalAlignment = VerticalAlignmentType.Center
+End Sub
+
 ````
 
 {{endregion}} 

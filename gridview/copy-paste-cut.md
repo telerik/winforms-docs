@@ -35,21 +35,22 @@ __RadGridView__ introduces __Copying__ event which occurs when the grid has prep
 
 ````C#
         
-        private void radGridView1_Copying(object sender, GridViewClipboardEventArgs e)
-        {
-            if (e.Format == DataFormats.Html)
-            {
-                e.Cancel = true;
-            }
-        }
+private void radGridView1_Copying(object sender, GridViewClipboardEventArgs e)
+{
+    if (e.Format == DataFormats.Html)
+    {
+        e.Cancel = true;
+    }
+}
+
 ````
 ````VB.NET
+Private Sub radGridView1_Copying(sender As Object, e As GridViewClipboardEventArgs)
+    If e.Format = DataFormats.Html Then
+        e.Cancel = True
+    End If
+End Sub
 
-    Private Sub radGridView1_Copying(sender As Object, e As GridViewClipboardEventArgs)
-        If e.Format = DataFormats.Html Then
-            e.Cancel = True
-        End If
-    End Sub
 ````
 
 {{endregion}} 
@@ -80,28 +81,29 @@ The following example demonstrates how to capitalize the copied string before in
 
 ````C#
         
-        private void radGridView1_Pasting(object sender, GridViewClipboardEventArgs e)
+private void radGridView1_Pasting(object sender, GridViewClipboardEventArgs e)
+{
+    if (Clipboard.ContainsData(DataFormats.Text))
+    {
+        string data = Clipboard.GetData(DataFormats.Text).ToString();
+        if (data != string.Empty)
         {
-            if (Clipboard.ContainsData(DataFormats.Text))
-            {
-                string data = Clipboard.GetData(DataFormats.Text).ToString();
-                if (data != string.Empty)
-                {
-                    Clipboard.SetData(DataFormats.Text, data.ToUpper());
-                }
-            }
+            Clipboard.SetData(DataFormats.Text, data.ToUpper());
         }
+    }
+}
+
 ````
 ````VB.NET
-
-    Private Sub radGridView1_Pasting(sender As Object, e As GridViewClipboardEventArgs)
-        If Clipboard.ContainsData(DataFormats.Text) Then
-            Dim data As String = Clipboard.GetData(DataFormats.Text).ToString()
-            If data <> String.Empty Then
-                Clipboard.SetData(DataFormats.Text, data.ToUpper())
-            End If
+Private Sub radGridView1_Pasting(sender As Object, e As GridViewClipboardEventArgs)
+    If Clipboard.ContainsData(DataFormats.Text) Then
+        Dim data As String = Clipboard.GetData(DataFormats.Text).ToString()
+        If data <> String.Empty Then
+            Clipboard.SetData(DataFormats.Text, data.ToUpper())
         End If
-    End Sub
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

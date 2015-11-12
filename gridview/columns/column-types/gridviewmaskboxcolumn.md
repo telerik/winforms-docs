@@ -24,29 +24,30 @@ You can set a *mask* to GridViewMaskBoxColumn using its __Mask__and __MaskType__
 {{source=..\SamplesVB\GridView\Columns\GridViewMaskBoxColumn1.vb region=addMaskBoxColumn}} 
 
 ````C#
-            GridViewMaskBoxColumn maskBoxColumn = new GridViewMaskBoxColumn();
-            maskBoxColumn.Name = "Price";
-            maskBoxColumn.FieldName = "UnitPrice";
-            maskBoxColumn.HeaderText = "Unit Price";
-            maskBoxColumn.MaskType = MaskType.Numeric;
-            maskBoxColumn.Mask = "C";
-            maskBoxColumn.TextAlignment = ContentAlignment.BottomRight;
-            maskBoxColumn.FormatString = "{0:C}";
-            maskBoxColumn.DataType = typeof(decimal);
-            radGridView1.MasterTemplate.Columns.Add(maskBoxColumn);
+GridViewMaskBoxColumn maskBoxColumn = new GridViewMaskBoxColumn();
+maskBoxColumn.Name = "Price";
+maskBoxColumn.FieldName = "UnitPrice";
+maskBoxColumn.HeaderText = "Unit Price";
+maskBoxColumn.MaskType = MaskType.Numeric;
+maskBoxColumn.Mask = "C";
+maskBoxColumn.TextAlignment = ContentAlignment.BottomRight;
+maskBoxColumn.FormatString = "{0:C}";
+maskBoxColumn.DataType = typeof(decimal);
+radGridView1.MasterTemplate.Columns.Add(maskBoxColumn);
+
 ````
 ````VB.NET
-        Dim maskBoxColumn As New GridViewMaskBoxColumn()
-        maskBoxColumn.Name = "Price"
-        maskBoxColumn.FieldName = "UnitPrice"
-        maskBoxColumn.HeaderText = "Unit Price"
-        maskBoxColumn.MaskType = MaskType.Numeric
-        maskBoxColumn.Mask = "C"
-        maskBoxColumn.TextAlignment = ContentAlignment.BottomRight
-        maskBoxColumn.FormatString = "{0:C}"
-        maskBoxColumn.DataType = GetType(Decimal)
-        RadGridView1.MasterTemplate.Columns.Add(maskBoxColumn)
-        '
+Dim maskBoxColumn As New GridViewMaskBoxColumn()
+maskBoxColumn.Name = "Price"
+maskBoxColumn.FieldName = "UnitPrice"
+maskBoxColumn.HeaderText = "Unit Price"
+maskBoxColumn.MaskType = MaskType.Numeric
+maskBoxColumn.Mask = "C"
+maskBoxColumn.TextAlignment = ContentAlignment.BottomRight
+maskBoxColumn.FormatString = "{0:C}"
+maskBoxColumn.DataType = GetType(Decimal)
+RadGridView1.MasterTemplate.Columns.Add(maskBoxColumn)
+
 ````
 
 {{endregion}} 

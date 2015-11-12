@@ -44,16 +44,18 @@ Here is a sample covering these properties:#_[C#] Formatting data_
 {{source=..\SamplesVB\GridView\Columns\DataFormatting1.vb region=dataFormatting}} 
 
 ````C#
-            GridViewDecimalColumn unitPriceColumn = this.radGridView1.Columns["UnitPrice"] as GridViewDecimalColumn;
-            unitPriceColumn.FormatString = "Price: {0:C}";
-            unitPriceColumn.FormatInfo = CultureInfo.CreateSpecificCulture("en-GB");
-            unitPriceColumn.NullValue = 0;
+GridViewDecimalColumn unitPriceColumn = this.radGridView1.Columns["UnitPrice"] as GridViewDecimalColumn;
+unitPriceColumn.FormatString = "Price: {0:C}";
+unitPriceColumn.FormatInfo = CultureInfo.CreateSpecificCulture("en-GB");
+unitPriceColumn.NullValue = 0;
+
 ````
-````VB.NET        Dim unitPriceColumn As GridViewDecimalColumn = TryCast(Me.RadGridView1.Columns("UnitPrice"), GridViewDecimalColumn)
+````VB.NET
+Dim unitPriceColumn As GridViewDecimalColumn = TryCast(Me.RadGridView1.Columns("UnitPrice"), GridViewDecimalColumn)
         unitPriceColumn.FormatString = "Price: {0:C}"
         unitPriceColumn.FormatInfo = CultureInfo.CreateSpecificCulture("en-GB")
         unitPriceColumn.NullValue = 0
-        '
+
 ````
 
 {{endregion}} 
@@ -81,15 +83,16 @@ The __TextAlignment__ property defines the text alignment for the column.
 {{source=..\SamplesVB\GridView\Columns\DataFormatting1.vb region=textProperties}} 
 
 ````C#
-            GridViewDataColumn productNameColumn = this.radGridView1.Columns["ProductName"];
-            productNameColumn.WrapText = true;
-            productNameColumn.TextAlignment = ContentAlignment.BottomRight;
+GridViewDataColumn productNameColumn = this.radGridView1.Columns["ProductName"];
+productNameColumn.WrapText = true;
+productNameColumn.TextAlignment = ContentAlignment.BottomRight;
+
 ````
 ````VB.NET
-        Dim productNameColumn = Me.RadGridView1.Columns("ProductName")
-        productNameColumn.WrapText = True
-        productNameColumn.TextAlignment = ContentAlignment.BottomRight
-        '
+Dim productNameColumn = Me.RadGridView1.Columns("ProductName")
+productNameColumn.WrapText = True
+productNameColumn.TextAlignment = ContentAlignment.BottomRight
+
 ````
 
 {{endregion}} 

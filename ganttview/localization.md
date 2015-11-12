@@ -36,29 +36,29 @@ Below is a sample implementation of an English localization provider:
 {{source=..\SamplesVB\GanttView\Localization\LocalizationProvider.vb region=LocalizationProvider}} 
 
 ````C#
-    public class MyEnglishGanttViewLocalizationProvider : GanttViewLocalizationProvider
+public class MyEnglishGanttViewLocalizationProvider : GanttViewLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
     {
-        public override string GetLocalizedString(string id)
+        switch (id)
         {
-            switch (id)
-            {
-                case GanttViewStringId.ContextMenuAdd:
-                    return "&Add";
-                case GanttViewStringId.ContextMenuAddChild:
-                    return "Add &Child";
-                case GanttViewStringId.ContextMenuAddSibling:
-                    return "Add &Sibling";
-                case GanttViewStringId.ContextMenuDelete:
-                    return "&Delete";
-                case GanttViewStringId.ContextMenuProgress:
-                    return "&Progress";
-                case "TimelineWeek":
-                    return "Week";
-            }
-
-            return string.Empty;
+            case GanttViewStringId.ContextMenuAdd:
+                return "&Add";
+            case GanttViewStringId.ContextMenuAddChild:
+                return "Add &Child";
+            case GanttViewStringId.ContextMenuAddSibling:
+                return "Add &Sibling";
+            case GanttViewStringId.ContextMenuDelete:
+                return "&Delete";
+            case GanttViewStringId.ContextMenuProgress:
+                return "&Progress";
+            case "TimelineWeek":
+                return "Week";
         }
+        return string.Empty;
     }
+}
+
 ````
 ````VB.NET
 Public Class MyEnglishGanttViewLocalizationProvider
@@ -78,11 +78,10 @@ Public Class MyEnglishGanttViewLocalizationProvider
             Case "TimelineWeek"
                 Return "Week"
         End Select
-
         Return String.Empty
     End Function
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -100,11 +99,12 @@ To apply the custom localization provider, instantiate and assign it to the curr
 {{source=..\SamplesVB\GanttView\Localization\LocalizationProvider.vb region=ApplyLocalizationProvider}} 
 
 ````C#
-            GanttViewLocalizationProvider.CurrentProvider = new MyEnglishGanttViewLocalizationProvider();
+GanttViewLocalizationProvider.CurrentProvider = new MyEnglishGanttViewLocalizationProvider();
+
 ````
 ````VB.NET
-        GanttViewLocalizationProvider.CurrentProvider = New MyEnglishGanttViewLocalizationProvider()
-        '
+GanttViewLocalizationProvider.CurrentProvider = New MyEnglishGanttViewLocalizationProvider()
+
 ````
 
 {{endregion}} 

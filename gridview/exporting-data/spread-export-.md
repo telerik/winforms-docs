@@ -26,16 +26,16 @@ To use the spread export functionality, an instance of the __GridViewSpreadExpor
 {{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=Export}} 
 
 ````C#
+GridViewSpreadExport spreadExporter = new GridViewSpreadExport(this.radGridView1);
+SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
+spreadExporter.RunExport("D:\\exportedFile.xlsx", exportRenderer);
 
-            GridViewSpreadExport spreadExporter = new GridViewSpreadExport(this.radGridView1);
-            spreadExporter.RunExport("D:\\exportedFile.xlsx");
 ````
 ````VB.NET
+Dim spreadExporter As GridViewSpreadExport = New GridViewSpreadExport(radGridView1)
+Dim exportRenderer As New SpreadExportRenderer()
+spreadExporter.RunExport("D:\exportedFile.xlsx", exportRenderer)
 
-            Dim spreadExporter As GridViewSpreadExport = New GridViewSpreadExport(radGridView1)
-            spreadExporter.RunExport("D:\exportedFile.xlsx")
-
-            '
 ````
 
 {{endregion}} 
@@ -140,65 +140,59 @@ Here is an example of formatting the exported grid:
 {{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=CellFormatting}} 
 
 ````C#
-
-        void spreadExporter_CellFormatting(object sender, Telerik.WinControls.Export.CellFormattingEventArgs e)
+void spreadExporter_CellFormatting(object sender, Telerik.WinControls.Export.CellFormattingEventArgs e)
+{
+    if (e.GridRowInfoType == typeof(GridViewTableHeaderRowInfo))
+    {
+        e.CellStyleInfo.Underline = true;
+        if (e.GridCellInfo.RowInfo.HierarchyLevel == 0)
         {
-            if (e.GridRowInfoType == typeof(GridViewTableHeaderRowInfo))
-            {
-                e.CellStyleInfo.Underline = true;
-
-                if (e.GridCellInfo.RowInfo.HierarchyLevel == 0)
-                {
-                    e.CellStyleInfo.BackColor = Color.DeepSkyBlue;
-                }
-                else if (e.GridCellInfo.RowInfo.HierarchyLevel == 1)
-                {
-                    e.CellStyleInfo.BackColor = Color.LightSkyBlue;
-                }
-            }
-
-            if (e.GridRowInfoType == typeof(GridViewHierarchyRowInfo))
-            {
-                if (e.GridCellInfo.RowInfo.HierarchyLevel == 0)
-                {
-                    e.CellStyleInfo.IsItalic = true;
-                    e.CellStyleInfo.FontSize = 12;
-                    e.CellStyleInfo.BackColor = Color.GreenYellow;
-                }
-                else if (e.GridCellInfo.RowInfo.HierarchyLevel == 1)
-                {
-                    e.CellStyleInfo.ForeColor = Color.DarkGreen;
-                    e.CellStyleInfo.BackColor = Color.LightGreen;
-                }
-            }
+            e.CellStyleInfo.BackColor = Color.DeepSkyBlue;
         }
+        else if (e.GridCellInfo.RowInfo.HierarchyLevel == 1)
+        {
+            e.CellStyleInfo.BackColor = Color.LightSkyBlue;
+        }
+    }
+    if (e.GridRowInfoType == typeof(GridViewHierarchyRowInfo))
+    {
+        if (e.GridCellInfo.RowInfo.HierarchyLevel == 0)
+        {
+            e.CellStyleInfo.IsItalic = true;
+            e.CellStyleInfo.FontSize = 12;
+            e.CellStyleInfo.BackColor = Color.GreenYellow;
+        }
+        else if (e.GridCellInfo.RowInfo.HierarchyLevel == 1)
+        {
+            e.CellStyleInfo.ForeColor = Color.DarkGreen;
+            e.CellStyleInfo.BackColor = Color.LightGreen;
+        }
+    }
+}
+
 ````
 ````VB.NET
+Private Sub spreadExporter_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.Export.CellFormattingEventArgs)
+    If e.GridRowInfoType Is GetType(GridViewTableHeaderRowInfo) Then
+        e.CellStyleInfo.Underline = True
+        If e.GridCellInfo.RowInfo.HierarchyLevel = 0 Then
+            e.CellStyleInfo.BackColor = Color.DeepSkyBlue
+        ElseIf e.GridCellInfo.RowInfo.HierarchyLevel = 1 Then
+            e.CellStyleInfo.BackColor = Color.LightSkyBlue
+        End If
+    End If
+    If e.GridRowInfoType Is GetType(GridViewHierarchyRowInfo) Then
+        If e.GridCellInfo.RowInfo.HierarchyLevel = 0 Then
+            e.CellStyleInfo.IsItalic = True
+            e.CellStyleInfo.FontSize = 12
+            e.CellStyleInfo.BackColor = Color.GreenYellow
+        ElseIf e.GridCellInfo.RowInfo.HierarchyLevel = 1 Then
+            e.CellStyleInfo.ForeColor = Color.DarkGreen
+            e.CellStyleInfo.BackColor = Color.LightGreen
+        End If
+    End If
+End Sub
 
-        Private Sub spreadExporter_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.Export.CellFormattingEventArgs)
-            If e.GridRowInfoType Is GetType(GridViewTableHeaderRowInfo) Then
-                e.CellStyleInfo.Underline = True
-
-                If e.GridCellInfo.RowInfo.HierarchyLevel = 0 Then
-                    e.CellStyleInfo.BackColor = Color.DeepSkyBlue
-                ElseIf e.GridCellInfo.RowInfo.HierarchyLevel = 1 Then
-                    e.CellStyleInfo.BackColor = Color.LightSkyBlue
-                End If
-            End If
-
-            If e.GridRowInfoType Is GetType(GridViewHierarchyRowInfo) Then
-                If e.GridCellInfo.RowInfo.HierarchyLevel = 0 Then
-                    e.CellStyleInfo.IsItalic = True
-                    e.CellStyleInfo.FontSize = 12
-                    e.CellStyleInfo.BackColor = Color.GreenYellow
-                ElseIf e.GridCellInfo.RowInfo.HierarchyLevel = 1 Then
-                    e.CellStyleInfo.ForeColor = Color.DarkGreen
-                    e.CellStyleInfo.BackColor = Color.LightGreen
-                End If
-            End If
-        End Sub
-
-        '
 ````
 
 {{endregion}} 
@@ -211,17 +205,18 @@ __WorkbookCreated__: This event is triggered on the __SpreadExportRenderer__ obj
 {{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=AttachRenderer}} 
 
 ````C#
-            GridViewSpreadExport spreadExporter = new GridViewSpreadExport(this.radGridView1);
-            SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
-            exportRenderer.WorkbookCreated += exportRenderer_WorkbookCreated;
-            spreadExporter.RunExport("D:\\exportedFile.xlsx", exportRenderer);
+GridViewSpreadExport spreadExporter = new GridViewSpreadExport(this.radGridView1);
+SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
+exportRenderer.WorkbookCreated += exportRenderer_WorkbookCreated;
+spreadExporter.RunExport("D:\\exportedFile.xlsx", exportRenderer);
+
 ````
 ````VB.NET
-            Dim spreadExporter As New GridViewSpreadExport(Me.radGridView1)
-            Dim exportRenderer As New SpreadExportRenderer()
-            AddHandler exportRenderer.WorkbookCreated, AddressOf exportRenderer_WorkbookCreated
-            spreadExporter.RunExport("D:\exportedFile.xlsx", exportRenderer)
-            '
+Dim spreadExporter As New GridViewSpreadExport(Me.radGridView1)
+Dim exportRenderer As New SpreadExportRenderer()
+AddHandler exportRenderer.WorkbookCreated, AddressOf exportRenderer_WorkbookCreated
+spreadExporter.RunExport("D:\exportedFile.xlsx", exportRenderer)
+
 ````
 
 {{endregion}} 
@@ -230,21 +225,19 @@ __WorkbookCreated__: This event is triggered on the __SpreadExportRenderer__ obj
 {{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=WorbookCreated}} 
 
 ````C#
+void exportRenderer_WorkbookCreated(object sender, WorkbookCreatedEventArgs e)
+{
+    Worksheet worksheet = (Worksheet)e.Workbook.Sheets[0];
+    worksheet.Columns[worksheet.UsedCellRange].AutoFitWidth();
+}
 
-        void exportRenderer_WorkbookCreated(object sender, WorkbookCreatedEventArgs e)
-        {
-            Worksheet worksheet = (Worksheet)e.Workbook.Sheets[0];
-            worksheet.Columns[worksheet.UsedCellRange].AutoFitWidth();
-        }
 ````
 ````VB.NET
+Private Sub exportRenderer_WorkbookCreated(ByVal sender As Object, ByVal e As WorkbookCreatedEventArgs)
+    Dim worksheet As Worksheet = CType(e.Workbook.Sheets(0), Worksheet)
+    worksheet.Columns(worksheet.UsedCellRange).AutoFitWidth()
+End Sub
 
-        Private Sub exportRenderer_WorkbookCreated(ByVal sender As Object, ByVal e As WorkbookCreatedEventArgs)
-            Dim worksheet As Worksheet = CType(e.Workbook.Sheets(0), Worksheet)
-            worksheet.Columns(worksheet.UsedCellRange).AutoFitWidth()
-        End Sub
-
-        '
 ````
 
 {{endregion}} 
@@ -287,64 +280,53 @@ This example will demonstrate how the async spread export feature can be combine
 {{source=..\SamplesVB\GridView\ExportingData\AsyncSpreadExport.vb region=BindAndDefineSettings}} 
 
 ````C#
-        public AsyncSpreadExport()
-        {
-            InitializeComponent();
+public AsyncSpreadExport()
+{
+    InitializeComponent();
+    this.BindGrid();
+    this.radProgressBar1.Minimum = 0;
+    this.radProgressBar1.Maximum = 100;
+    this.radProgressBar1.ShowProgressIndicators = true;
+    this.radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill;
+    this.btnExportAsync.Click += btnExportAsync_Click; 
+}
+private void BindGrid()
+{
+    DataTable dataTable = new DataTable();
+    dataTable.Columns.Add("Id", typeof(int));
+    dataTable.Columns.Add("Name", typeof(string));
+    dataTable.Columns.Add("IsValid", typeof(bool));
+    dataTable.Columns.Add("Date", typeof(DateTime));
+    for (int i = 0; i < 50000; i++)
+    {
+        dataTable.Rows.Add(i, "Name " + i, i % 2 == 0, DateTime.Now.AddDays(i));
+    }
+    this.radGridView1.DataSource = dataTable;
+}
 
-            this.BindGrid();
-
-            this.radProgressBar1.Minimum = 0;
-            this.radProgressBar1.Maximum = 100;
-            this.radProgressBar1.ShowProgressIndicators = true;
-
-            this.radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill;
-            this.btnExportAsync.Click += btnExportAsync_Click; 
-        }
-
-        private void BindGrid()
-        {
-            DataTable dataTable = new DataTable();
-            dataTable.Columns.Add("Id", typeof(int));
-            dataTable.Columns.Add("Name", typeof(string));
-            dataTable.Columns.Add("IsValid", typeof(bool));
-            dataTable.Columns.Add("Date", typeof(DateTime));
-
-            for (int i = 0; i < 50000; i++)
-            {
-                dataTable.Rows.Add(i, "Name " + i, i % 2 == 0, DateTime.Now.AddDays(i));
-            }
-
-            this.radGridView1.DataSource = dataTable;
-        }
 ````
 ````VB.NET
-    Public Sub New()
-        InitializeComponent()
+Public Sub New()
+    InitializeComponent()
+    Me.BindGrid()
+    Me.RadProgressBar1.Minimum = 0
+    Me.RadProgressBar1.Maximum = 100
+    Me.RadProgressBar1.ShowProgressIndicators = True
+    Me.RadGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
+    AddHandler Me.BtnExportAsync.Click, AddressOf BtnExportAsync_Click
+End Sub
+Private Sub BindGrid()
+    Dim dataTable As New DataTable()
+    dataTable.Columns.Add("Id", GetType(Integer))
+    dataTable.Columns.Add("Name", GetType(String))
+    dataTable.Columns.Add("IsValid", GetType(Boolean))
+    dataTable.Columns.Add("Date", GetType(DateTime))
+    For i As Integer = 0 To 49999
+        dataTable.Rows.Add(i, "Name " & i, i Mod 2 = 0, DateTime.Now.AddDays(i))
+    Next
+    Me.RadGridView1.DataSource = dataTable
+End Sub
 
-        Me.BindGrid()
-
-        Me.RadProgressBar1.Minimum = 0
-        Me.RadProgressBar1.Maximum = 100
-        Me.RadProgressBar1.ShowProgressIndicators = True
-
-        Me.RadGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
-        AddHandler Me.BtnExportAsync.Click, AddressOf BtnExportAsync_Click
-    End Sub
-
-    Private Sub BindGrid()
-        Dim dataTable As New DataTable()
-        dataTable.Columns.Add("Id", GetType(Integer))
-        dataTable.Columns.Add("Name", GetType(String))
-        dataTable.Columns.Add("IsValid", GetType(Boolean))
-        dataTable.Columns.Add("Date", GetType(DateTime))
-
-        For i As Integer = 0 To 49999
-            dataTable.Rows.Add(i, "Name " & i, i Mod 2 = 0, DateTime.Now.AddDays(i))
-        Next
-
-        Me.RadGridView1.DataSource = dataTable
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -355,22 +337,25 @@ This example will demonstrate how the async spread export feature can be combine
 {{source=..\SamplesVB\GridView\ExportingData\AsyncSpreadExport.vb region=ExportData}} 
 
 ````C#
-        private void btnExportAsync_Click(object sender, EventArgs e)
-        {
-            GridViewSpreadExport spreadExporter = new GridViewSpreadExport(this.radGridView1);
-            spreadExporter.AsyncExportProgressChanged += spreadExporter_AsyncExportProgressChanged;
-            spreadExporter.AsyncExportCompleted += spreadExporter_AsyncExportCompleted;
-            spreadExporter.RunExportAsync(@"..\..\exportedFile.xlsx");
-        }
+private void btnExportAsync_Click(object sender, EventArgs e)
+{
+    GridViewSpreadExport spreadExporter = new GridViewSpreadExport(this.radGridView1);
+    spreadExporter.AsyncExportProgressChanged += spreadExporter_AsyncExportProgressChanged;
+    spreadExporter.AsyncExportCompleted += spreadExporter_AsyncExportCompleted;
+    SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
+    spreadExporter.RunExportAsync(@"..\..\exportedFile.xlsx",exportRenderer);
+}
+
 ````
 ````VB.NET
-    Private Sub BtnExportAsync_Click(sender As Object, e As EventArgs)
-        Dim spreadExporter As New GridViewSpreadExport(Me.RadGridView1)
-        AddHandler spreadExporter.AsyncExportProgressChanged, AddressOf spreadExporter_AsyncExportProgressChanged
-        AddHandler spreadExporter.AsyncExportCompleted, AddressOf spreadExporter_AsyncExportCompleted
-        spreadExporter.RunExportAsync("..\..\exportedFile.xlsx")
-    End Sub
-    '
+Private Sub BtnExportAsync_Click(sender As Object, e As EventArgs)
+    Dim spreadExporter As New GridViewSpreadExport(Me.RadGridView1)
+    AddHandler spreadExporter.AsyncExportProgressChanged, AddressOf spreadExporter_AsyncExportProgressChanged
+    AddHandler spreadExporter.AsyncExportCompleted, AddressOf spreadExporter_AsyncExportCompleted
+    Dim exportRenderer As New SpreadExportRenderer()
+    spreadExporter.RunExportAsync("..\..\exportedFile.xlsx", exportRenderer)
+End Sub
+
 ````
 
 {{endregion}} 
@@ -384,27 +369,26 @@ This example will demonstrate how the async spread export feature can be combine
 {{source=..\SamplesVB\GridView\ExportingData\AsyncSpreadExport.vb region=ReportProgress}} 
 
 ````C#
-        private void spreadExporter_AsyncExportProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            this.radProgressBar1.Value1 = e.ProgressPercentage;
-        }
+private void spreadExporter_AsyncExportProgressChanged(object sender, ProgressChangedEventArgs e)
+{
+    this.radProgressBar1.Value1 = e.ProgressPercentage;
+}
+private void spreadExporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
+{
+    RadMessageBox.Show("Async Spread Export Completed!");
+    this.radProgressBar1.Value1 = 0;
+}
 
-        private void spreadExporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
-        {
-            RadMessageBox.Show("Async Spread Export Completed!");
-            this.radProgressBar1.Value1 = 0;
-        }
 ````
 ````VB.NET
-    Private Sub spreadExporter_AsyncExportProgressChanged(sender As Object, e As ProgressChangedEventArgs)
-        Me.RadProgressBar1.Value1 = e.ProgressPercentage
-    End Sub
+Private Sub spreadExporter_AsyncExportProgressChanged(sender As Object, e As ProgressChangedEventArgs)
+    Me.RadProgressBar1.Value1 = e.ProgressPercentage
+End Sub
+Private Sub spreadExporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
+    RadMessageBox.Show("Async Spread Export Completed!")
+    Me.RadProgressBar1.Value1 = 0
+End Sub
 
-    Private Sub spreadExporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
-        RadMessageBox.Show("Async Spread Export Completed!")
-        Me.RadProgressBar1.Value1 = 0
-    End Sub
-    '
 ````
 
 {{endregion}} 

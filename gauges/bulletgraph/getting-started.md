@@ -38,44 +38,43 @@ Once the control is added to the form you just need to synchronize the
 {{source=..\SamplesVB\Gauges\BulletGraphCode.vb region=test}} 
 
 ````C#
-        Timer timer;
-        Random rand;
+Timer timer;
+Random rand;
         
-        public BulletGraphCode()
-        {
-            InitializeComponent();
-            timer = new Timer();
-            rand = new Random();
-            timer.Interval = 1000;
-            timer.Tick += timer_Tick;
-            timer.Start();
+public BulletGraphCode()
+{
+    InitializeComponent();
+    timer = new Timer();
+    rand = new Random();
+    timer.Interval = 1000;
+    timer.Tick += timer_Tick;
+    timer.Start();
         
-
-        }
+}
      
-        void timer_Tick(object sender, EventArgs e)
-        {
-            radBulletGraph1.FeaturedMeasure = rand.Next(100);
-            radBulletGraph1.ComparativeMeasure = rand.Next(100);
-        }
+void timer_Tick(object sender, EventArgs e)
+{
+    radBulletGraph1.FeaturedMeasure = rand.Next(100);
+    radBulletGraph1.ComparativeMeasure = rand.Next(100);
+}
+
 ````
 ````VB.NET
-    Private timer As Timer
-    Private rand As Random
+Private timer As Timer
+Private rand As Random
+Public Sub New()
+    InitializeComponent()
+    timer = New Timer()
+    rand = New Random()
+    timer.Interval = 1000
+    AddHandler timer.Tick, AddressOf timer_Tick
+    timer.Start()
+End Sub
+Private Sub timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
+    radBulletGraph1.FeaturedMeasure = rand.Next(100)
+    radBulletGraph1.ComparativeMeasure = rand.Next(100)
+End Sub
 
-    Public Sub New()
-        InitializeComponent()
-        timer = New Timer()
-        rand = New Random()
-        timer.Interval = 1000
-        AddHandler timer.Tick, AddressOf timer_Tick
-        timer.Start()
-    End Sub
-
-    Private Sub timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
-        radBulletGraph1.FeaturedMeasure = rand.Next(100)
-        radBulletGraph1.ComparativeMeasure = rand.Next(100)
-    End Sub
 ````
 
 {{endregion}} 

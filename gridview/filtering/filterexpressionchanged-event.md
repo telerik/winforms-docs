@@ -22,16 +22,17 @@ This event is the only place in *RadGridView* API where you can access the fina
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=filterExpressionChangedEvent}} 
 
 ````C#
-        void radGridView1_FilterExpressionChanged(object sender, Telerik.WinControls.UI.FilterExpressionChangedEventArgs e)
-        {
-            e.FilterExpression = "(([ProductName] LIKE '%Qu%'))";
-        }
+void radGridView1_FilterExpressionChanged(object sender, Telerik.WinControls.UI.FilterExpressionChangedEventArgs e)
+{
+    e.FilterExpression = "(([ProductName] LIKE '%Qu%'))";
+}
+
 ````
 ````VB.NET
-    Private Sub RadGridView1_FilterExpressionChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.FilterExpressionChangedEventArgs)
-        e.FilterExpression = "(((ProductName) LIKE '%Qu%'))"
-    End Sub
-    '
+Private Sub RadGridView1_FilterExpressionChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.FilterExpressionChangedEventArgs)
+    e.FilterExpression = "(((ProductName) LIKE '%Qu%'))"
+End Sub
+
 ````
 
 {{endregion}} 

@@ -35,107 +35,90 @@ RadGridView exposes two collections that contains data rows:
 {{source=..\SamplesVB\GridView\Rows\RowsChildRows.vb region=addingColumn}} 
 
 ````C#
-            GridViewTextBoxColumn rowsIDColumn = new GridViewTextBoxColumn();
-            rowsIDColumn.HeaderText = "Rows IDs";
-            rowsIDColumn.Name = "RowsIDs";
-            this.radGridView1.Columns.Add(rowsIDColumn);
+GridViewTextBoxColumn rowsIDColumn = new GridViewTextBoxColumn();
+rowsIDColumn.HeaderText = "Rows IDs";
+rowsIDColumn.Name = "RowsIDs";
+this.radGridView1.Columns.Add(rowsIDColumn);
+GridViewTextBoxColumn childRowsIDColumn = new GridViewTextBoxColumn();
+childRowsIDColumn.HeaderText = "ChildRows IDs";
+childRowsIDColumn.Name = "ChildRowsIDs";
+this.radGridView1.Columns.Add(childRowsIDColumn);
 
-            GridViewTextBoxColumn childRowsIDColumn = new GridViewTextBoxColumn();
-            childRowsIDColumn.HeaderText = "ChildRows IDs";
-            childRowsIDColumn.Name = "ChildRowsIDs";
-            this.radGridView1.Columns.Add(childRowsIDColumn);
 ````
 ````VB.NET
-        Dim rowsIDColumn As New GridViewTextBoxColumn()
-        rowsIDColumn.HeaderText = "Rows IDs"
-        rowsIDColumn.Name = "RowsIDs"
-        Me.RadGridView1.Columns.Add(rowsIDColumn)
+Dim rowsIDColumn As New GridViewTextBoxColumn()
+rowsIDColumn.HeaderText = "Rows IDs"
+rowsIDColumn.Name = "RowsIDs"
+Me.RadGridView1.Columns.Add(rowsIDColumn)
+Dim childRowsIDColumn As New GridViewTextBoxColumn()
+childRowsIDColumn.HeaderText = "ChildRows IDs"
+childRowsIDColumn.Name = "ChildRowsIDs"
+Me.RadGridView1.Columns.Add(childRowsIDColumn)
+'#End Region
+rowsIDColumn.Width = 60
+rowsIDColumn.MinWidth = 60
+rowsIDColumn.MaxWidth = 60
+childRowsIDColumn.Width = 60
+childRowsIDColumn.MinWidth = 60
+childRowsIDColumn.MaxWidth = 60
+Me.RadGridView1.Columns("City").Width = 60
+Me.RadGridView1.Columns("City").MinWidth = 60
+Me.RadGridView1.Columns("City").MaxWidth = 60
+Me.RadGridView1.Columns("EmployeeID").MaxWidth = 50
+Me.RadGridView1.Columns("Title").Width = 140
+Me.RadGridView1.Columns("Title").MinWidth = 140
+Me.RadGridView1.Columns("Title").MaxWidth = 140
+Me.RadGridView1.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill
+End Sub
+'#Region "groupByChanged"
+Private Sub radGridView1_GroupByChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
+SetIDs()
+End Sub
+'#End Region
+'#Region "sortChanged"
+Private Sub radGridView1_SortChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
+SetIDs()
+End Sub
+'#End Region
+'#Region "filterChanged"
+Private Sub radGridView1_FilterChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
+SetIDs()
+End Sub
+'#End Region
+Private Sub RowsChildRows_Load(ByVal sender As Object, ByVal e As EventArgs)
+End Sub
+'#Region "fillingColumns"
+Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+SetIDs()
+End Sub
+Private Sub SetIDs()
+For i As Integer = 0 To Me.RadGridView1.Rows.Count - 1
+    Me.RadGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
+Next i
+For i As Integer = 0 To Me.RadGridView1.ChildRows.Count - 1
+    Me.RadGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+Next i
+End Sub
+'#End Region
+Public Class ChildRowsHelper
+Dim radGridView1 As RadGridView = New RadGridView()
+'#region updatedSet
+Private Sub SetIDs()
+    For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
+        Me.radGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
+    Next i
+    For i As Integer = 0 To Me.radGridView1.ChildRows.Count - 1
+        Me.radGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+        Dim groupRowInfo As GridViewGroupRowInfo = TryCast(Me.radGridView1.ChildRows(i), GridViewGroupRowInfo)
+        If groupRowInfo IsNot Nothing Then
+            groupRowInfo.HeaderText = groupRowInfo.HeaderText & " " & i.ToString()
+            For p As Integer = 0 To Me.radGridView1.ChildRows(i).ChildRows.Count - 1
+                Me.radGridView1.ChildRows(i).ChildRows(p).Cells("ChildRowsIDs").Value = p.ToString()
+            Next p
+        End If
+    Next i
+End Sub
 
-        Dim childRowsIDColumn As New GridViewTextBoxColumn()
-        childRowsIDColumn.HeaderText = "ChildRows IDs"
-        childRowsIDColumn.Name = "ChildRowsIDs"
-        Me.RadGridView1.Columns.Add(childRowsIDColumn)
-        '#End Region
-
-        rowsIDColumn.Width = 60
-        rowsIDColumn.MinWidth = 60
-        rowsIDColumn.MaxWidth = 60
-        childRowsIDColumn.Width = 60
-        childRowsIDColumn.MinWidth = 60
-        childRowsIDColumn.MaxWidth = 60
-        Me.RadGridView1.Columns("City").Width = 60
-        Me.RadGridView1.Columns("City").MinWidth = 60
-        Me.RadGridView1.Columns("City").MaxWidth = 60
-        Me.RadGridView1.Columns("EmployeeID").MaxWidth = 50
-        Me.RadGridView1.Columns("Title").Width = 140
-        Me.RadGridView1.Columns("Title").MinWidth = 140
-        Me.RadGridView1.Columns("Title").MaxWidth = 140
-
-        Me.RadGridView1.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill
-    End Sub
-
-    '#Region "groupByChanged"
-    Private Sub radGridView1_GroupByChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
-        SetIDs()
-    End Sub
-    '#End Region
-
-    '#Region "sortChanged"
-    Private Sub radGridView1_SortChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
-        SetIDs()
-    End Sub
-    '#End Region
-
-    '#Region "filterChanged"
-    Private Sub radGridView1_FilterChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
-        SetIDs()
-    End Sub
-    '#End Region
-
-    Private Sub RowsChildRows_Load(ByVal sender As Object, ByVal e As EventArgs)
-
-    End Sub
-
-    '#Region "fillingColumns"
-    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-        SetIDs()
-    End Sub
-
-    Private Sub SetIDs()
-        For i As Integer = 0 To Me.RadGridView1.Rows.Count - 1
-            Me.RadGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
-        Next i
-
-        For i As Integer = 0 To Me.RadGridView1.ChildRows.Count - 1
-            Me.RadGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
-        Next i
-    End Sub
-    '#End Region
-
-    Public Class ChildRowsHelper
-        Dim radGridView1 As RadGridView = New RadGridView()
-
-        '#region updatedSet
-        Private Sub SetIDs()
-
-            For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
-                Me.radGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
-            Next i
-
-            For i As Integer = 0 To Me.radGridView1.ChildRows.Count - 1
-                Me.radGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
-
-                Dim groupRowInfo As GridViewGroupRowInfo = TryCast(Me.radGridView1.ChildRows(i), GridViewGroupRowInfo)
-                If groupRowInfo IsNot Nothing Then
-                    groupRowInfo.HeaderText = groupRowInfo.HeaderText & " " & i.ToString()
-
-                    For p As Integer = 0 To Me.radGridView1.ChildRows(i).ChildRows.Count - 1
-                        Me.radGridView1.ChildRows(i).ChildRows(p).Cells("ChildRowsIDs").Value = p.ToString()
-                    Next p
-                End If
-            Next i
-        End Sub
-        '
 ````
 
 {{endregion}} 
@@ -149,64 +132,55 @@ RadGridView exposes two collections that contains data rows:
 {{source=..\SamplesVB\GridView\Rows\RowsChildRows.vb region=fillingColumns}} 
 
 ````C#
-        private void radButton1_Click(object sender, EventArgs e)
-        {
-            SetIDs();
-        }
+private void radButton1_Click(object sender, EventArgs e)
+{
+    SetIDs();
+}
+private void SetIDs()
+{
+    for (int i = 0; i < this.radGridView1.Rows.Count; i++)
+    {
+        this.radGridView1.Rows[i].Cells["RowsIDs"].Value = i.ToString();
+    }
+    for (int i = 0; i < this.radGridView1.ChildRows.Count; i++)
+    {
+        this.radGridView1.ChildRows[i].Cells["ChildRowsIDs"].Value = i.ToString();
+    }           
+}
 
-        private void SetIDs()
-        {
-            for (int i = 0; i < this.radGridView1.Rows.Count; i++)
-            {
-                this.radGridView1.Rows[i].Cells["RowsIDs"].Value = i.ToString();
-            }
-
-            for (int i = 0; i < this.radGridView1.ChildRows.Count; i++)
-            {
-                this.radGridView1.ChildRows[i].Cells["ChildRowsIDs"].Value = i.ToString();
-            }           
-        }
 ````
 ````VB.NET
-    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-        SetIDs()
-    End Sub
-
+Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    SetIDs()
+End Sub
+Private Sub SetIDs()
+    For i As Integer = 0 To Me.RadGridView1.Rows.Count - 1
+        Me.RadGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
+    Next i
+    For i As Integer = 0 To Me.RadGridView1.ChildRows.Count - 1
+        Me.RadGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+    Next i
+End Sub
+'#End Region
+Public Class ChildRowsHelper
+    Dim radGridView1 As RadGridView = New RadGridView()
+    '#region updatedSet
     Private Sub SetIDs()
-        For i As Integer = 0 To Me.RadGridView1.Rows.Count - 1
-            Me.RadGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
+        For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
+            Me.radGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
         Next i
-
-        For i As Integer = 0 To Me.RadGridView1.ChildRows.Count - 1
-            Me.RadGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+        For i As Integer = 0 To Me.radGridView1.ChildRows.Count - 1
+            Me.radGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+            Dim groupRowInfo As GridViewGroupRowInfo = TryCast(Me.radGridView1.ChildRows(i), GridViewGroupRowInfo)
+            If groupRowInfo IsNot Nothing Then
+                groupRowInfo.HeaderText = groupRowInfo.HeaderText & " " & i.ToString()
+                For p As Integer = 0 To Me.radGridView1.ChildRows(i).ChildRows.Count - 1
+                    Me.radGridView1.ChildRows(i).ChildRows(p).Cells("ChildRowsIDs").Value = p.ToString()
+                Next p
+            End If
         Next i
     End Sub
-    '#End Region
 
-    Public Class ChildRowsHelper
-        Dim radGridView1 As RadGridView = New RadGridView()
-
-        '#region updatedSet
-        Private Sub SetIDs()
-
-            For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
-                Me.radGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
-            Next i
-
-            For i As Integer = 0 To Me.radGridView1.ChildRows.Count - 1
-                Me.radGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
-
-                Dim groupRowInfo As GridViewGroupRowInfo = TryCast(Me.radGridView1.ChildRows(i), GridViewGroupRowInfo)
-                If groupRowInfo IsNot Nothing Then
-                    groupRowInfo.HeaderText = groupRowInfo.HeaderText & " " & i.ToString()
-
-                    For p As Integer = 0 To Me.radGridView1.ChildRows(i).ChildRows.Count - 1
-                        Me.radGridView1.ChildRows(i).ChildRows(p).Cells("ChildRowsIDs").Value = p.ToString()
-                    Next p
-                End If
-            Next i
-        End Sub
-        '
 ````
 
 {{endregion}} 
@@ -223,61 +197,51 @@ RadGridView exposes two collections that contains data rows:
 {{source=..\SamplesVB\GridView\Rows\RowsChildRows.vb region=filterChanged}} 
 
 ````C#
-        void radGridView1_FilterChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
-        {
-            SetIDs();
-        }
+void radGridView1_FilterChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
+{
+    SetIDs();
+}
+
 ````
 ````VB.NET
-    Private Sub radGridView1_FilterChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
-        SetIDs()
-    End Sub
-    '#End Region
-
-    Private Sub RowsChildRows_Load(ByVal sender As Object, ByVal e As EventArgs)
-
-    End Sub
-
-    '#Region "fillingColumns"
-    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-        SetIDs()
-    End Sub
-
+Private Sub radGridView1_FilterChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
+    SetIDs()
+End Sub
+'#End Region
+Private Sub RowsChildRows_Load(ByVal sender As Object, ByVal e As EventArgs)
+End Sub
+'#Region "fillingColumns"
+Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    SetIDs()
+End Sub
+Private Sub SetIDs()
+    For i As Integer = 0 To Me.RadGridView1.Rows.Count - 1
+        Me.RadGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
+    Next i
+    For i As Integer = 0 To Me.RadGridView1.ChildRows.Count - 1
+        Me.RadGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+    Next i
+End Sub
+'#End Region
+Public Class ChildRowsHelper
+    Dim radGridView1 As RadGridView = New RadGridView()
+    '#region updatedSet
     Private Sub SetIDs()
-        For i As Integer = 0 To Me.RadGridView1.Rows.Count - 1
-            Me.RadGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
+        For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
+            Me.radGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
         Next i
-
-        For i As Integer = 0 To Me.RadGridView1.ChildRows.Count - 1
-            Me.RadGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+        For i As Integer = 0 To Me.radGridView1.ChildRows.Count - 1
+            Me.radGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+            Dim groupRowInfo As GridViewGroupRowInfo = TryCast(Me.radGridView1.ChildRows(i), GridViewGroupRowInfo)
+            If groupRowInfo IsNot Nothing Then
+                groupRowInfo.HeaderText = groupRowInfo.HeaderText & " " & i.ToString()
+                For p As Integer = 0 To Me.radGridView1.ChildRows(i).ChildRows.Count - 1
+                    Me.radGridView1.ChildRows(i).ChildRows(p).Cells("ChildRowsIDs").Value = p.ToString()
+                Next p
+            End If
         Next i
     End Sub
-    '#End Region
 
-    Public Class ChildRowsHelper
-        Dim radGridView1 As RadGridView = New RadGridView()
-
-        '#region updatedSet
-        Private Sub SetIDs()
-
-            For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
-                Me.radGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
-            Next i
-
-            For i As Integer = 0 To Me.radGridView1.ChildRows.Count - 1
-                Me.radGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
-
-                Dim groupRowInfo As GridViewGroupRowInfo = TryCast(Me.radGridView1.ChildRows(i), GridViewGroupRowInfo)
-                If groupRowInfo IsNot Nothing Then
-                    groupRowInfo.HeaderText = groupRowInfo.HeaderText & " " & i.ToString()
-
-                    For p As Integer = 0 To Me.radGridView1.ChildRows(i).ChildRows.Count - 1
-                        Me.radGridView1.ChildRows(i).ChildRows(p).Cells("ChildRowsIDs").Value = p.ToString()
-                    Next p
-                End If
-            Next i
-        End Sub
-        '
 ````
 
 {{endregion}} 
@@ -294,67 +258,56 @@ RadGridView exposes two collections that contains data rows:
 {{source=..\SamplesVB\GridView\Rows\RowsChildRows.vb region=sortChanged}} 
 
 ````C#
-        void radGridView1_SortChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
-        {
-            SetIDs();
-        }
+void radGridView1_SortChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
+{
+    SetIDs();
+}
+
 ````
 ````VB.NET
-    Private Sub radGridView1_SortChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
-        SetIDs()
-    End Sub
-    '#End Region
-
-    '#Region "filterChanged"
-    Private Sub radGridView1_FilterChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
-        SetIDs()
-    End Sub
-    '#End Region
-
-    Private Sub RowsChildRows_Load(ByVal sender As Object, ByVal e As EventArgs)
-
-    End Sub
-
-    '#Region "fillingColumns"
-    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-        SetIDs()
-    End Sub
-
+Private Sub radGridView1_SortChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
+    SetIDs()
+End Sub
+'#End Region
+'#Region "filterChanged"
+Private Sub radGridView1_FilterChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
+    SetIDs()
+End Sub
+'#End Region
+Private Sub RowsChildRows_Load(ByVal sender As Object, ByVal e As EventArgs)
+End Sub
+'#Region "fillingColumns"
+Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    SetIDs()
+End Sub
+Private Sub SetIDs()
+    For i As Integer = 0 To Me.RadGridView1.Rows.Count - 1
+        Me.RadGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
+    Next i
+    For i As Integer = 0 To Me.RadGridView1.ChildRows.Count - 1
+        Me.RadGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+    Next i
+End Sub
+'#End Region
+Public Class ChildRowsHelper
+    Dim radGridView1 As RadGridView = New RadGridView()
+    '#region updatedSet
     Private Sub SetIDs()
-        For i As Integer = 0 To Me.RadGridView1.Rows.Count - 1
-            Me.RadGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
+        For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
+            Me.radGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
         Next i
-
-        For i As Integer = 0 To Me.RadGridView1.ChildRows.Count - 1
-            Me.RadGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+        For i As Integer = 0 To Me.radGridView1.ChildRows.Count - 1
+            Me.radGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+            Dim groupRowInfo As GridViewGroupRowInfo = TryCast(Me.radGridView1.ChildRows(i), GridViewGroupRowInfo)
+            If groupRowInfo IsNot Nothing Then
+                groupRowInfo.HeaderText = groupRowInfo.HeaderText & " " & i.ToString()
+                For p As Integer = 0 To Me.radGridView1.ChildRows(i).ChildRows.Count - 1
+                    Me.radGridView1.ChildRows(i).ChildRows(p).Cells("ChildRowsIDs").Value = p.ToString()
+                Next p
+            End If
         Next i
     End Sub
-    '#End Region
 
-    Public Class ChildRowsHelper
-        Dim radGridView1 As RadGridView = New RadGridView()
-
-        '#region updatedSet
-        Private Sub SetIDs()
-
-            For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
-                Me.radGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
-            Next i
-
-            For i As Integer = 0 To Me.radGridView1.ChildRows.Count - 1
-                Me.radGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
-
-                Dim groupRowInfo As GridViewGroupRowInfo = TryCast(Me.radGridView1.ChildRows(i), GridViewGroupRowInfo)
-                If groupRowInfo IsNot Nothing Then
-                    groupRowInfo.HeaderText = groupRowInfo.HeaderText & " " & i.ToString()
-
-                    For p As Integer = 0 To Me.radGridView1.ChildRows(i).ChildRows.Count - 1
-                        Me.radGridView1.ChildRows(i).ChildRows(p).Cells("ChildRowsIDs").Value = p.ToString()
-                    Next p
-                End If
-            Next i
-        End Sub
-        '
 ````
 
 {{endregion}} 
@@ -371,73 +324,61 @@ RadGridView exposes two collections that contains data rows:
 {{source=..\SamplesVB\GridView\Rows\RowsChildRows.vb region=groupByChanged}} 
 
 ````C#
-        void radGridView1_GroupByChanged(object sender, GridViewCollectionChangedEventArgs e)
-        {
-            SetIDs();
-        }
+void radGridView1_GroupByChanged(object sender, GridViewCollectionChangedEventArgs e)
+{
+    SetIDs();
+}
+
 ````
 ````VB.NET
-    Private Sub radGridView1_GroupByChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
-        SetIDs()
-    End Sub
-    '#End Region
-
-    '#Region "sortChanged"
-    Private Sub radGridView1_SortChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
-        SetIDs()
-    End Sub
-    '#End Region
-
-    '#Region "filterChanged"
-    Private Sub radGridView1_FilterChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
-        SetIDs()
-    End Sub
-    '#End Region
-
-    Private Sub RowsChildRows_Load(ByVal sender As Object, ByVal e As EventArgs)
-
-    End Sub
-
-    '#Region "fillingColumns"
-    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-        SetIDs()
-    End Sub
-
+Private Sub radGridView1_GroupByChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
+    SetIDs()
+End Sub
+'#End Region
+'#Region "sortChanged"
+Private Sub radGridView1_SortChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
+    SetIDs()
+End Sub
+'#End Region
+'#Region "filterChanged"
+Private Sub radGridView1_FilterChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
+    SetIDs()
+End Sub
+'#End Region
+Private Sub RowsChildRows_Load(ByVal sender As Object, ByVal e As EventArgs)
+End Sub
+'#Region "fillingColumns"
+Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    SetIDs()
+End Sub
+Private Sub SetIDs()
+    For i As Integer = 0 To Me.RadGridView1.Rows.Count - 1
+        Me.RadGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
+    Next i
+    For i As Integer = 0 To Me.RadGridView1.ChildRows.Count - 1
+        Me.RadGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+    Next i
+End Sub
+'#End Region
+Public Class ChildRowsHelper
+    Dim radGridView1 As RadGridView = New RadGridView()
+    '#region updatedSet
     Private Sub SetIDs()
-        For i As Integer = 0 To Me.RadGridView1.Rows.Count - 1
-            Me.RadGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
+        For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
+            Me.radGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
         Next i
-
-        For i As Integer = 0 To Me.RadGridView1.ChildRows.Count - 1
-            Me.RadGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+        For i As Integer = 0 To Me.radGridView1.ChildRows.Count - 1
+            Me.radGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+            Dim groupRowInfo As GridViewGroupRowInfo = TryCast(Me.radGridView1.ChildRows(i), GridViewGroupRowInfo)
+            If groupRowInfo IsNot Nothing Then
+                groupRowInfo.HeaderText = groupRowInfo.HeaderText & " " & i.ToString()
+                For p As Integer = 0 To Me.radGridView1.ChildRows(i).ChildRows.Count - 1
+                    Me.radGridView1.ChildRows(i).ChildRows(p).Cells("ChildRowsIDs").Value = p.ToString()
+                Next p
+            End If
         Next i
     End Sub
-    '#End Region
 
-    Public Class ChildRowsHelper
-        Dim radGridView1 As RadGridView = New RadGridView()
-
-        '#region updatedSet
-        Private Sub SetIDs()
-
-            For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
-                Me.radGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
-            Next i
-
-            For i As Integer = 0 To Me.radGridView1.ChildRows.Count - 1
-                Me.radGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
-
-                Dim groupRowInfo As GridViewGroupRowInfo = TryCast(Me.radGridView1.ChildRows(i), GridViewGroupRowInfo)
-                If groupRowInfo IsNot Nothing Then
-                    groupRowInfo.HeaderText = groupRowInfo.HeaderText & " " & i.ToString()
-
-                    For p As Integer = 0 To Me.radGridView1.ChildRows(i).ChildRows.Count - 1
-                        Me.radGridView1.ChildRows(i).ChildRows(p).Cells("ChildRowsIDs").Value = p.ToString()
-                    Next p
-                End If
-            Next i
-        End Sub
-        '
 ````
 
 {{endregion}} 
@@ -451,51 +392,45 @@ RadGridView exposes two collections that contains data rows:
 {{source=..\SamplesVB\GridView\Rows\RowsChildRows.vb region=updatedSet}} 
 
 ````C#
-            private void SetIDs()
+private void SetIDs()
+{
+    for (int i = 0; i < this.radGridView1.Rows.Count; i++)
+    {
+        this.radGridView1.Rows[i].Cells["RowsIDs"].Value = i.ToString();
+    }
+    for (int i = 0; i < this.radGridView1.ChildRows.Count; i++)
+    {
+        this.radGridView1.ChildRows[i].Cells["ChildRowsIDs"].Value = i.ToString();
+        GridViewGroupRowInfo groupRowInfo = this.radGridView1.ChildRows[i] as GridViewGroupRowInfo;
+        if (groupRowInfo != null)
+        {
+            groupRowInfo.HeaderText = groupRowInfo.HeaderText + " " + i.ToString();
+            for (int p = 0; p < this.radGridView1.ChildRows[i].ChildRows.Count; p++)
             {
-                for (int i = 0; i < this.radGridView1.Rows.Count; i++)
-                {
-                    this.radGridView1.Rows[i].Cells["RowsIDs"].Value = i.ToString();
-                }
-
-                for (int i = 0; i < this.radGridView1.ChildRows.Count; i++)
-                {
-                    this.radGridView1.ChildRows[i].Cells["ChildRowsIDs"].Value = i.ToString();
-
-                    GridViewGroupRowInfo groupRowInfo = this.radGridView1.ChildRows[i] as GridViewGroupRowInfo;
-                    if (groupRowInfo != null)
-                    {
-                        groupRowInfo.HeaderText = groupRowInfo.HeaderText + " " + i.ToString();
-
-                        for (int p = 0; p < this.radGridView1.ChildRows[i].ChildRows.Count; p++)
-                        {
-                            this.radGridView1.ChildRows[i].ChildRows[p].Cells["ChildRowsIDs"].Value = p.ToString();
-                        }
-                    }
-                }
+                this.radGridView1.ChildRows[i].ChildRows[p].Cells["ChildRowsIDs"].Value = p.ToString();
             }
+        }
+    }
+}
+
 ````
 ````VB.NET
-        Private Sub SetIDs()
+Private Sub SetIDs()
+    For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
+        Me.radGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
+    Next i
+    For i As Integer = 0 To Me.radGridView1.ChildRows.Count - 1
+        Me.radGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
+        Dim groupRowInfo As GridViewGroupRowInfo = TryCast(Me.radGridView1.ChildRows(i), GridViewGroupRowInfo)
+        If groupRowInfo IsNot Nothing Then
+            groupRowInfo.HeaderText = groupRowInfo.HeaderText & " " & i.ToString()
+            For p As Integer = 0 To Me.radGridView1.ChildRows(i).ChildRows.Count - 1
+                Me.radGridView1.ChildRows(i).ChildRows(p).Cells("ChildRowsIDs").Value = p.ToString()
+            Next p
+        End If
+    Next i
+End Sub
 
-            For i As Integer = 0 To Me.radGridView1.Rows.Count - 1
-                Me.radGridView1.Rows(i).Cells("RowsIDs").Value = i.ToString()
-            Next i
-
-            For i As Integer = 0 To Me.radGridView1.ChildRows.Count - 1
-                Me.radGridView1.ChildRows(i).Cells("ChildRowsIDs").Value = i.ToString()
-
-                Dim groupRowInfo As GridViewGroupRowInfo = TryCast(Me.radGridView1.ChildRows(i), GridViewGroupRowInfo)
-                If groupRowInfo IsNot Nothing Then
-                    groupRowInfo.HeaderText = groupRowInfo.HeaderText & " " & i.ToString()
-
-                    For p As Integer = 0 To Me.radGridView1.ChildRows(i).ChildRows.Count - 1
-                        Me.radGridView1.ChildRows(i).ChildRows(p).Cells("ChildRowsIDs").Value = p.ToString()
-                    Next p
-                End If
-            Next i
-        End Sub
-        '
 ````
 
 {{endregion}} 

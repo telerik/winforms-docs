@@ -23,68 +23,61 @@ For example if you are in GridViewTextBoxColumn, the editor for the cells in thi
 {{source=..\SamplesVB\GridView\Editors\HandlingEditorsEvents.vb region=HandlingEditorsEvents}} 
 
 ````C#
-        public HandlingEditorsEvents()
+public HandlingEditorsEvents()
+{
+    InitializeComponent();
+    radGridView1.CellEditorInitialized += new Telerik.WinControls.UI.GridViewCellEventHandler(radGridView1_CellEditorInitialized);
+}
+bool tbSubscribed = false;
+void radGridView1_CellEditorInitialized(object sender, Telerik.WinControls.UI.GridViewCellEventArgs e)
+{
+    RadTextBoxEditor tbEditor = this.radGridView1.ActiveEditor as RadTextBoxEditor;
+    if (tbEditor != null)
+    {
+        if (!tbSubscribed)
         {
-            InitializeComponent();
-            radGridView1.CellEditorInitialized += new Telerik.WinControls.UI.GridViewCellEventHandler(radGridView1_CellEditorInitialized);
+            tbSubscribed = true;
+            RadTextBoxEditorElement tbElement = (RadTextBoxEditorElement)tbEditor.EditorElement;
+            tbElement.KeyDown += new KeyEventHandler(tbElement_KeyDown);
         }
-
-        bool tbSubscribed = false;
-
-        void radGridView1_CellEditorInitialized(object sender, Telerik.WinControls.UI.GridViewCellEventArgs e)
+    }
+}
+void tbElement_KeyDown(object sender, KeyEventArgs e)
+{
+    if (e.Control)
+    {
+        if (e.KeyCode == Keys.L)
         {
-            RadTextBoxEditor tbEditor = this.radGridView1.ActiveEditor as RadTextBoxEditor;
-            if (tbEditor != null)
-            {
-                if (!tbSubscribed)
-                {
-                    tbSubscribed = true;
-                    RadTextBoxEditorElement tbElement = (RadTextBoxEditorElement)tbEditor.EditorElement;
-                    tbElement.KeyDown += new KeyEventHandler(tbElement_KeyDown);
-                }
-            }
+            ((RadTextBoxEditorElement)sender).Text = "Default text";
         }
+    }
+}
 
-        void tbElement_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Control)
-            {
-                if (e.KeyCode == Keys.L)
-                {
-                    ((RadTextBoxEditorElement)sender).Text = "Default text";
-                }
-            }
-        }
 ````
 ````VB.NET
-    Public Sub New()
-        InitializeComponent()
-
-        AddHandler RadGridView1.CellEditorInitialized, AddressOf radGridView1_CellEditorInitialized
-    End Sub
-
-
-    Private tbSubscribed As Boolean = False
-
-    Private Sub radGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs)
-        Dim tbEditor As RadTextBoxEditor = TryCast(Me.RadGridView1.ActiveEditor, RadTextBoxEditor)
-        If Not tbEditor Is Nothing Then
-            If (Not tbSubscribed) Then
-                tbSubscribed = True
-                Dim tbElement As RadTextBoxEditorElement = CType(tbEditor.EditorElement, RadTextBoxEditorElement)
-                AddHandler tbElement.KeyDown, AddressOf tbElement_KeyDown
-            End If
+Public Sub New()
+    InitializeComponent()
+    AddHandler RadGridView1.CellEditorInitialized, AddressOf radGridView1_CellEditorInitialized
+End Sub
+Private tbSubscribed As Boolean = False
+Private Sub radGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs)
+    Dim tbEditor As RadTextBoxEditor = TryCast(Me.RadGridView1.ActiveEditor, RadTextBoxEditor)
+    If Not tbEditor Is Nothing Then
+        If (Not tbSubscribed) Then
+            tbSubscribed = True
+            Dim tbElement As RadTextBoxEditorElement = CType(tbEditor.EditorElement, RadTextBoxEditorElement)
+            AddHandler tbElement.KeyDown, AddressOf tbElement_KeyDown
         End If
-    End Sub
-
-    Private Sub tbElement_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
-        If e.Control Then
-            If e.KeyCode = Keys.L Then
-                CType(sender, RadTextBoxEditorElement).Text = "Default text"
-            End If
+    End If
+End Sub
+Private Sub tbElement_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
+    If e.Control Then
+        If e.KeyCode = Keys.L Then
+            CType(sender, RadTextBoxEditorElement).Text = "Default text"
         End If
-    End Sub
-    '
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

@@ -29,14 +29,15 @@ The example below modifies the second cell of the first row and sets a value gre
 {{source=..\SamplesVB\GridView\Cells\AccessingCells.vb region=accessingCellsByIndex}} 
 
 ````C#
-            if ((decimal)radGridView1.Rows[0].Cells[5].Value > 10)
-                radGridView1.Rows[0].Cells[5].Value = 10;
+if ((decimal)radGridView1.Rows[0].Cells[5].Value > 10)
+    radGridView1.Rows[0].Cells[5].Value = 10;
+
 ````
 ````VB.NET
-        If DirectCast(RadGridView1.Rows(0).Cells(5).Value, Decimal) > 10 Then
-            RadGridView1.Rows(0).Cells(5).Value = 10
-        End If
-        '
+If DirectCast(RadGridView1.Rows(0).Cells(5).Value, Decimal) > 10 Then
+    RadGridView1.Rows(0).Cells(5).Value = 10
+End If
+
 ````
 
 {{endregion}} 
@@ -49,14 +50,15 @@ In this example we will change a cell value to 10 if it is greater than 10. In t
 {{source=..\SamplesVB\GridView\Cells\AccessingCells.vb region=accessingCellsByColumnName}} 
 
 ````C#
-            if ((decimal)radGridView1.Rows[0].Cells["UnitPrice"].Value > 10)
-                radGridView1.Rows[0].Cells["UnitPrice"].Value = 10;
+if ((decimal)radGridView1.Rows[0].Cells["UnitPrice"].Value > 10)
+    radGridView1.Rows[0].Cells["UnitPrice"].Value = 10;
+
 ````
 ````VB.NET
-        If DirectCast(RadGridView1.Rows(0).Cells("UnitPrice").Value, Decimal) > 10 Then
-            RadGridView1.Rows(0).Cells("UnitPrice").Value = 10
-        End If
-        '
+If DirectCast(RadGridView1.Rows(0).Cells("UnitPrice").Value, Decimal) > 10 Then
+    RadGridView1.Rows(0).Cells("UnitPrice").Value = 10
+End If
+
 ````
 
 {{endregion}} 
@@ -78,23 +80,24 @@ When assigning values to several cells subsequently, the RadGridView should be p
 {{source=..\SamplesVB\GridView\Cells\AccessingCells.vb region=updateCells}} 
 
 ````C#
-            radGridView1.TableElement.BeginUpdate();
-            radGridView1.Rows[0].Cells["UnitPrice"].Value = 10;
-            radGridView1.Rows[1].Cells["UnitPrice"].Value = 20;
-            radGridView1.Rows[2].Cells["UnitPrice"].Value = 30;
-            radGridView1.Rows[3].Cells["UnitPrice"].Value = 40;
-            radGridView1.Rows[4].Cells["UnitPrice"].Value = 50;
-            radGridView1.TableElement.EndUpdate();
+radGridView1.TableElement.BeginUpdate();
+radGridView1.Rows[0].Cells["UnitPrice"].Value = 10;
+radGridView1.Rows[1].Cells["UnitPrice"].Value = 20;
+radGridView1.Rows[2].Cells["UnitPrice"].Value = 30;
+radGridView1.Rows[3].Cells["UnitPrice"].Value = 40;
+radGridView1.Rows[4].Cells["UnitPrice"].Value = 50;
+radGridView1.TableElement.EndUpdate();
+
 ````
 ````VB.NET
-        Me.RadGridView1.TableElement.BeginUpdate()
-        RadGridView1.Rows(0).Cells("UnitPrice").Value = 10
-        RadGridView1.Rows(1).Cells("UnitPrice").Value = 20
-        RadGridView1.Rows(2).Cells("UnitPrice").Value = 30
-        RadGridView1.Rows(3).Cells("UnitPrice").Value = 40
-        RadGridView1.Rows(4).Cells("UnitPrice").Value = 50
-        Me.RadGridView1.TableElement.EndUpdate()
-        '
+Me.RadGridView1.TableElement.BeginUpdate()
+RadGridView1.Rows(0).Cells("UnitPrice").Value = 10
+RadGridView1.Rows(1).Cells("UnitPrice").Value = 20
+RadGridView1.Rows(2).Cells("UnitPrice").Value = 30
+RadGridView1.Rows(3).Cells("UnitPrice").Value = 40
+RadGridView1.Rows(4).Cells("UnitPrice").Value = 50
+Me.RadGridView1.TableElement.EndUpdate()
+
 ````
 
 {{endregion}} 

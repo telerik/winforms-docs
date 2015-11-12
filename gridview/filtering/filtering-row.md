@@ -24,11 +24,12 @@ You can hide the operator text of the filter cells by setting the __ShowFilterCe
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=filterOperatorText}} 
 
 ````C#
-            this.radGridView1.MasterTemplate.ShowFilterCellOperatorText = false;
+this.radGridView1.MasterTemplate.ShowFilterCellOperatorText = false;
+
 ````
 ````VB.NET
-        Me.RadGridView1.MasterTemplate.ShowFilterCellOperatorText = False
-        '
+Me.RadGridView1.MasterTemplate.ShowFilterCellOperatorText = False
+
 ````
 
 {{endregion}} 
@@ -43,11 +44,12 @@ You can also hide the entire __GridFilterRowElement__: 
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=hidingTheFilterRow}} 
 
 ````C#
-            this.radGridView1.ShowFilteringRow = false;
+this.radGridView1.ShowFilteringRow = false;
+
 ````
 ````VB.NET
-        Me.RadGridView1.ShowFilteringRow = False
-        '
+Me.RadGridView1.ShowFilteringRow = False
+
 ````
 
 {{endregion}} 

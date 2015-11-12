@@ -32,21 +32,20 @@ Here is an example of how to provide ids using the __ItemChildIdNeeded__ event. 
 {{source=..\SamplesVB\GanttView\WorkingWithData\AddingNewItems.vb region=AddingNewItems}} 
 
 ````C#
-        int integerIdCounter = 100;
+int integerIdCounter = 100;
+private void radGanttView1_ItemChildIdNeeded(object sender, GanttViewItemChildIdNeededEventArgs e)
+{
+    e.ChildId = this.integerIdCounter++;
+}
 
-        private void radGanttView1_ItemChildIdNeeded(object sender, GanttViewItemChildIdNeededEventArgs e)
-        {
-            e.ChildId = this.integerIdCounter++;
-        }
 ````
 ````VB.NET
-    Dim integerIdCounter As Integer = 100
+Dim integerIdCounter As Integer = 100
+Private Sub radGanttView1_ItemChildIdNeeded(sender As Object, e As GanttViewItemChildIdNeededEventArgs)
+    Me.integerIdCounter += 1
+    e.ChildId = Me.integerIdCounter
+End Sub
 
-    Private Sub radGanttView1_ItemChildIdNeeded(sender As Object, e As GanttViewItemChildIdNeededEventArgs)
-        Me.integerIdCounter += 1
-        e.ChildId = Me.integerIdCounter
-    End Sub
-    '
 ````
 
 {{endregion}} 

@@ -51,64 +51,58 @@ with __MockIntegerDataSource__ (the implementation of this data source can be fo
 {{source=..\SamplesVB\GridView\VirtualMode\VirtualMode1.vb region=virtualMode}} 
 
 ````C#
-        public VirtualMode1()
-        {
-            InitializeComponent();
-            this.radGridView1.EnableSorting = false;
-            this.radGridView1.EnableFiltering = false;
-            this.radGridView1.EnableGrouping = false;
+public VirtualMode1()
+{
+    InitializeComponent();
+    this.radGridView1.EnableSorting = false;
+    this.radGridView1.EnableFiltering = false;
+    this.radGridView1.EnableGrouping = false;
+    this.Load += new EventHandler(Form1_Load);
+}
+int COUNT = 100;
+MockIntegerDataSource dataSource;
+void Form1_Load(object sender, EventArgs e)
+{
+   dataSource = new MockIntegerDataSource(COUNT, COUNT);
+   this.radGridView1.CellValueNeeded += new GridViewCellValueEventHandler(radGridView1_CellValueNeeded);
+   this.radGridView1.CellValuePushed += new GridViewCellValueEventHandler(radGridView1_CellValuePushed);
+   radGridView1.VirtualMode = true;
+   radGridView1.ColumnCount = dataSource.Columns;
+   this.radGridView1.RowCount = dataSource.Rows;
+}
+void radGridView1_CellValuePushed(object sender, GridViewCellValueEventArgs e)
+{
+}
+void radGridView1_CellValueNeeded(object sender, GridViewCellValueEventArgs e)
+{
+    e.Value = this.dataSource.Source[e.RowIndex].Data[e.ColumnIndex];
+}
 
-            this.Load += new EventHandler(Form1_Load);
-        }
-
-        int COUNT = 100;
-        MockIntegerDataSource dataSource;
-
-        void Form1_Load(object sender, EventArgs e)
-        {
-           dataSource = new MockIntegerDataSource(COUNT, COUNT);
-           this.radGridView1.CellValueNeeded += new GridViewCellValueEventHandler(radGridView1_CellValueNeeded);
-           this.radGridView1.CellValuePushed += new GridViewCellValueEventHandler(radGridView1_CellValuePushed);
-           radGridView1.VirtualMode = true;
-           radGridView1.ColumnCount = dataSource.Columns;
-           this.radGridView1.RowCount = dataSource.Rows;
-        }
-
-        void radGridView1_CellValuePushed(object sender, GridViewCellValueEventArgs e)
-        {
-
-        }
-        void radGridView1_CellValueNeeded(object sender, GridViewCellValueEventArgs e)
-        {
-            e.Value = this.dataSource.Source[e.RowIndex].Data[e.ColumnIndex];
-        }
 ````
 ````VB.NET
-    Public Sub New()
-        InitializeComponent()
-        Me.RadGridView1.EnableSorting = False
-        Me.RadGridView1.EnableFiltering = False
-        Me.RadGridView1.EnableGrouping = False
-    End Sub
+Public Sub New()
+    InitializeComponent()
+    Me.RadGridView1.EnableSorting = False
+    Me.RadGridView1.EnableFiltering = False
+    Me.RadGridView1.EnableGrouping = False
+End Sub
+Dim COUNT As Integer = 100
+Dim dataSource As MockIntegerDataSource
+Protected Overloads Overrides Sub OnLoad(ByVal e As EventArgs)
+    MyBase.OnLoad(e)
+    Me.dataSource = New MockIntegerDataSource(COUNT, COUNT)
+    AddHandler Me.RadGridView1.CellValueNeeded, AddressOf radGridView1_CellValueNeeded
+    AddHandler Me.RadGridView1.CellValuePushed, AddressOf radGridView1_CellValuePushed
+    RadGridView1.VirtualMode = True
+    RadGridView1.ColumnCount = Me.dataSource.Columns
+    Me.RadGridView1.RowCount = Me.dataSource.Rows
+End Sub
+Sub radGridView1_CellValuePushed(ByVal sender As Object, ByVal e As GridViewCellValueEventArgs)
+End Sub
+Sub radGridView1_CellValueNeeded(ByVal sender As Object, ByVal e As GridViewCellValueEventArgs)
+    e.Value = Me.dataSource.Source(e.RowIndex).Data(e.ColumnIndex)
+End Sub
 
-    Dim COUNT As Integer = 100
-    Dim dataSource As MockIntegerDataSource
-    Protected Overloads Overrides Sub OnLoad(ByVal e As EventArgs)
-        MyBase.OnLoad(e)
-        Me.dataSource = New MockIntegerDataSource(COUNT, COUNT)
-        AddHandler Me.RadGridView1.CellValueNeeded, AddressOf radGridView1_CellValueNeeded
-        AddHandler Me.RadGridView1.CellValuePushed, AddressOf radGridView1_CellValuePushed
-        RadGridView1.VirtualMode = True
-        RadGridView1.ColumnCount = Me.dataSource.Columns
-        Me.RadGridView1.RowCount = Me.dataSource.Rows
-    End Sub
-
-    Sub radGridView1_CellValuePushed(ByVal sender As Object, ByVal e As GridViewCellValueEventArgs)
-    End Sub
-    Sub radGridView1_CellValueNeeded(ByVal sender As Object, ByVal e As GridViewCellValueEventArgs)
-        e.Value = Me.dataSource.Source(e.RowIndex).Data(e.ColumnIndex)
-    End Sub
-    '
 ````
 
 {{endregion}} 

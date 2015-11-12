@@ -63,19 +63,20 @@ The example below detects when a value in the second column "*UnitPrice*" has a 
 {{source=..\SamplesVB\GridView\Cells\ConditionalFormattingCells.vb region=conditionalFormattingCells}} 
 
 ````C#
-            ConditionalFormattingObject obj = new ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", false);
-            obj.CellBackColor = Color.SkyBlue;
-            obj.CellForeColor = Color.Red;
-            obj.TextAlignment = ContentAlignment.MiddleRight;
-            this.radGridView1.Columns["UnitPrice"].ConditionalFormattingObjectList.Add(obj);
+ConditionalFormattingObject obj = new ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", false);
+obj.CellBackColor = Color.SkyBlue;
+obj.CellForeColor = Color.Red;
+obj.TextAlignment = ContentAlignment.MiddleRight;
+this.radGridView1.Columns["UnitPrice"].ConditionalFormattingObjectList.Add(obj);
+
 ````
 ````VB.NET
-        Dim obj As New ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", False)
-        obj.CellBackColor = Color.SkyBlue
-        obj.CellForeColor = Color.Red
-        obj.TextAlignment = ContentAlignment.MiddleRight
-        Me.RadGridView1.Columns("UnitPrice").ConditionalFormattingObjectList.Add(obj)
-        '
+Dim obj As New ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", False)
+obj.CellBackColor = Color.SkyBlue
+obj.CellForeColor = Color.Red
+obj.TextAlignment = ContentAlignment.MiddleRight
+Me.RadGridView1.Columns("UnitPrice").ConditionalFormattingObjectList.Add(obj)
+
 ````
 
 {{endregion}} 
@@ -94,17 +95,18 @@ The example below detects when a value in the second column "*UnitPrice*" has a 
 {{source=..\SamplesVB\GridView\Cells\ConditionalFormattingCells.vb region=expression}} 
 
 ````C#
-            ExpressionFormattingObject obj = new ExpressionFormattingObject("MyCondition", "UnitPrice > 30", false);
-            obj.CellBackColor = Color.SkyBlue;
-            obj.CellForeColor = Color.Red;
-            this.radGridView1.Columns["ProductName"].ConditionalFormattingObjectList.Add(obj);
+ExpressionFormattingObject obj = new ExpressionFormattingObject("MyCondition", "UnitPrice > 30", false);
+obj.CellBackColor = Color.SkyBlue;
+obj.CellForeColor = Color.Red;
+this.radGridView1.Columns["ProductName"].ConditionalFormattingObjectList.Add(obj);
+
 ````
 ````VB.NET
-        Dim obj As New ExpressionFormattingObject("MyCondition", "UnitPrice > 30", False)
-        obj.CellBackColor = Color.SkyBlue
-        obj.CellForeColor = Color.Red
-        Me.RadGridView1.Columns("ProductName").ConditionalFormattingObjectList.Add(obj)
-        '
+Dim obj As New ExpressionFormattingObject("MyCondition", "UnitPrice > 30", False)
+obj.CellBackColor = Color.SkyBlue
+obj.CellForeColor = Color.Red
+Me.RadGridView1.Columns("ProductName").ConditionalFormattingObjectList.Add(obj)
+
 ````
 
 {{endregion}} 
@@ -122,17 +124,18 @@ To access and customize the dialog, you can use the  __ConditionalFormattingForm
 {{source=..\SamplesVB\GridView\Cells\ConditionalFormattingCells.vb region=expression}} 
 
 ````C#
-            ExpressionFormattingObject obj = new ExpressionFormattingObject("MyCondition", "UnitPrice > 30", false);
-            obj.CellBackColor = Color.SkyBlue;
-            obj.CellForeColor = Color.Red;
-            this.radGridView1.Columns["ProductName"].ConditionalFormattingObjectList.Add(obj);
+ExpressionFormattingObject obj = new ExpressionFormattingObject("MyCondition", "UnitPrice > 30", false);
+obj.CellBackColor = Color.SkyBlue;
+obj.CellForeColor = Color.Red;
+this.radGridView1.Columns["ProductName"].ConditionalFormattingObjectList.Add(obj);
+
 ````
 ````VB.NET
-        Dim obj As New ExpressionFormattingObject("MyCondition", "UnitPrice > 30", False)
-        obj.CellBackColor = Color.SkyBlue
-        obj.CellForeColor = Color.Red
-        Me.RadGridView1.Columns("ProductName").ConditionalFormattingObjectList.Add(obj)
-        '
+Dim obj As New ExpressionFormattingObject("MyCondition", "UnitPrice > 30", False)
+obj.CellBackColor = Color.SkyBlue
+obj.CellForeColor = Color.Red
+Me.RadGridView1.Columns("ProductName").ConditionalFormattingObjectList.Add(obj)
+
 ````
 
 {{endregion}} 

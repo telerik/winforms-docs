@@ -119,7 +119,45 @@ This xml file is used in the examples below:
 The DataSet created by ReadXml method for the *given xml above* contains 3 tables which you can avoid easily by skipping the second table and using the first and the third ones only. Note also that *Invoice_Id* and *Parts_Id* columns were added automatically to the tables by ReadXml method:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\CreatingHierarchyUsingXmlDataSource.cs region=CreatingHierarchyUsingXmlDataSource}} 
-{{source=..\SamplesVB\GridView\HierarchicalGrid\CreatingHierarchyUsingXmlDataSource.vb region=CreatingHierarchyUsingXmlDataSource}} 
+{{source=..\SamplesVB\GridView\HierarchicalGrid\CreatingHierarchyUsingXmlDataSource.vb region=CreatingHierarchyUsingXmlDataSource}}````C#
+void CreatingHierarchyUsingXmlDataSource_Load(object sender, EventArgs e)
+{
+    DataSet xmlDataSet = new DataSet();
+    xmlDataSet.ReadXml("..\\..\\GridView\\HierarchicalGrid\\hierarchicalGridXml.xml");
+    GridViewTemplate partsTemplate = new GridViewTemplate();
+    this.radGridView1.MasterTemplate.Templates.Add(partsTemplate);
+    GridViewRelation relation = new GridViewRelation(this.radGridView1.MasterTemplate);
+    relation.ChildTemplate = partsTemplate;
+    relation.RelationName = "Invoices_Parts";
+    relation.ParentColumnNames.Add("Invoice_Id");
+    relation.ChildColumnNames.Add("Parts_Id");
+    radGridView1.Relations.Add(relation);
+    this.radGridView1.DataSource = xmlDataSet.Tables[0];
+    partsTemplate.DataSource = xmlDataSet.Tables[2];
+    this.radGridView1.MasterTemplate.BestFitColumns();
+    this.radGridView1.MasterTemplate.Templates[0].BestFitColumns();
+}
+
+````
+````VB.NET
+Private Sub CreatingHierarchyUsingXmlDataSource_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Dim xmlDataSet As New DataSet()
+        xmlDataSet.ReadXml("..\..\GridView\HierarchicalGrid\hierarchicalGridXml.xml")
+        Dim partsTemplate As New GridViewTemplate()
+        Me.RadGridView1.MasterTemplate.Templates.Add(partsTemplate)
+        Dim relation As New GridViewRelation(Me.RadGridView1.MasterTemplate)
+        relation.ChildTemplate = partsTemplate
+        relation.RelationName = "Invoices_Parts"
+        relation.ParentColumnNames.Add("Invoice_Id")
+        relation.ChildColumnNames.Add("Parts_Id")
+        RadGridView1.Relations.Add(relation)
+        Me.RadGridView1.DataSource = xmlDataSet.Tables(0)
+        partsTemplate.DataSource = xmlDataSet.Tables(2)
+        Me.RadGridView1.MasterTemplate.BestFitColumns()
+        Me.RadGridView1.MasterTemplate.Templates(0).BestFitColumns()
+    End Sub
+
+```` 
 
 	
 {{endregion}} 

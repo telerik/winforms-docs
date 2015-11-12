@@ -26,11 +26,12 @@ In the case of RadScheduler we have implemented a component which implements the
 {{source=..\SamplesVB\GanttView\SchedulerIntegration\SchedulerIntegration.vb region=Integration}} 
 
 ````C#
-            this.radGanttView1.DataProvider = new GanttViewIntegrationProvider(this.radScheduler1);
+this.radGanttView1.DataProvider = new GanttViewIntegrationProvider(this.radScheduler1);
+
 ````
 ````VB.NET
-        Me.radGanttView1.DataProvider = New GanttViewIntegrationProvider(Me.radScheduler1)
-        '
+Me.radGanttView1.DataProvider = New GanttViewIntegrationProvider(Me.radScheduler1)
+
 ````
 
 {{endregion}} 
@@ -49,16 +50,17 @@ Two things you need to note. The first is that RadGanttView requires a unique id
 {{source=..\SamplesVB\GanttView\SchedulerIntegration\SchedulerIntegration.vb region=TrickyPart}} 
 
 ````C#
-        private void radGanttView1_ItemChildIdNeeded(object sender, GanttViewItemChildIdNeededEventArgs e)
-        {
-            e.ChildId = new EventId(Guid.NewGuid());
-        }
+private void radGanttView1_ItemChildIdNeeded(object sender, GanttViewItemChildIdNeededEventArgs e)
+{
+    e.ChildId = new EventId(Guid.NewGuid());
+}
+
 ````
 ````VB.NET
-    Private Sub radGanttView1_ItemChildIdNeeded(sender As Object, e As Telerik.WinControls.UI.GanttViewItemChildIdNeededEventArgs) Handles radGanttView1.ItemChildIdNeeded
-        e.ChildId = New EventId(Guid.NewGuid())
-    End Sub
-    '
+Private Sub radGanttView1_ItemChildIdNeeded(sender As Object, e As Telerik.WinControls.UI.GanttViewItemChildIdNeededEventArgs) Handles radGanttView1.ItemChildIdNeeded
+    e.ChildId = New EventId(Guid.NewGuid())
+End Sub
+
 ````
 
 {{endregion}} 
