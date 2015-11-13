@@ -18,7 +18,7 @@ The Telerik RadRibbonBar control has a very complex structure. You can add a var
 
 The Quick Access Toolbar is an area at the top of the Telerik RadRibbonBar, above the tabs:![ribbonbar-structure-of-radribbonbar 001](images/ribbonbar-structure-of-radribbonbar001.png)
 
-The Quick Access Toolbar can contain the same elements as the  [RadMenu]({%slug winforms/menus/menu%}):
+The Quick Access Toolbar can contain the same elements as the [RadMenu]({%slug winforms/menus/menu%}):
 
 * Menu items, displayed as either images, text, or both 
 
@@ -52,7 +52,7 @@ The drop-down arrow to the right of the tabs opens a menu listing all of the tab
 
 Contextual Tab Groups provide a way to organize related tabs. They are often used to group tabs that apply to a specific object in your application.![ribbonbar-structure-of-radribbonbar 001](images/ribbonbar-structure-of-radribbonbar001.png)
 
-In the screenshot above, __Appearance__and __Data__ are contextual tab groups. Their width indicates the tabs that they contain, so that the __Appearance__contextual tab group includes the __Formatting__ and __Layout__tabs, and the __Data__ contextual tab group includes the __Spelling__and __Insert__tabs. Color is also used to unify a contextual tab group with its contained __Ribbon Bar Groups__. The tabs that belong to contextual tab groups are always placed to the right of other tabs on the Telerik __RadRibbonBar__.
+In the screenshot above, __Appearance__ and __Data__ are contextual tab groups. Their width indicates the tabs that they contain, so that the __Appearance__ contextual tab group includes the __Formatting__ and __Layout__ tabs, and the __Data__ contextual tab group includes the __Spelling__ and __Insert__ tabs. Color is also used to unify a contextual tab group with its contained __Ribbon Bar Groups__. The tabs that belong to contextual tab groups are always placed to the right of other tabs on the Telerik __RadRibbonBar__.
 
 ## Ribbon Bar Groups
 
@@ -82,10 +82,8 @@ Elements are the individual functional pieces of the Telerik RadRibbonBar. Eleme
 
 ## Galleries
 
-A gallery is a special type of element that is designed to allow the user to select visually from among a number of choices.
-        A gallery may be displayed in either collapsed or expanded view.
+A gallery is a special type of element that is designed to allow the user to select visually from among a number of choices. A gallery may be displayed in either collapsed or expanded view.
 
-In its default collapsed view, a gallery shows a single row of choices, as well as up and down arrows for scrolling
-        to other rows of choices and a drop-down arrow for switching to expanded view.![ribbonbar-structure-of-radribbonbar 007](images/ribbonbar-structure-of-radribbonbar007.png)
+In its default collapsed view, a gallery shows a single row of choices, as well as up and down arrows for scrolling to other rows of choices and a drop-down arrow for switching to expanded view.![ribbonbar-structure-of-radribbonbar 007](images/ribbonbar-structure-of-radribbonbar007.png)
 
 In its expanded view, a gallery shows all of its choices at one time, a filter selection bar at the top, and tools at the bottom.![ribbonbar-structure-of-radribbonbar 008](images/ribbonbar-structure-of-radribbonbar008.png)

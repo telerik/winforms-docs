@@ -10,25 +10,17 @@ position: 0
 
 # Adding and Removing Tabs and RibbonBar Groups
 
-
-
 You can manipulate __RadRibbonBar__tabs and groups at run time by using the appropriate collections.
-      
 
 ## Adding a Tab
 
 To add a tab to __RadRibbonBar__, follow the four steps below:
-        
 
-1. Create a new __Telerik.WinControls.UI.RibbonTab__object and set its properties.
-            
+1. Create a new __Telerik.WinControls.UI.RibbonTab__ object and set its properties.
 
 1. Call the __Add__ method of the __RadRibbonBar.CommandTabs__ collection, passing the __Telerik.WinControls.UI.RibbonTab__object.
-            #_[C#] Adding a tab to RadRibbonBar_
 
-	
-
-
+#### Adding a tab to RadRibbonBar
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.cs region=addingATab}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.vb region=addingATab}} 
@@ -45,17 +37,11 @@ To add a tab to __RadRibbonBar__, follow the four steps below:
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 To add multiple tabs in a single operation, call __AddRange__ method of __RadRibbonBar.CommandTabs__ collection.
-        #_[C#] Adding multiple tabs to RadRibbonBar_
 
-	
-
-
+#### Adding multiple tabs to RadRibbonBar
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.cs region=addMultipleTabs}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.vb region=addMultipleTabs}} 
@@ -80,19 +66,13 @@ To add multiple tabs in a single operation, call __AddRange__ method of __RadRib
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Removing a Tab
 
 To remove a tab, call the __Remove__ method of the __CommandTabs__ collection, specifying the __RibbonTab__that you wish to remove:
-        #_[C#] Remove a tab from RadRibbonBar_
 
-	
-
-
+#### Remove a tab from RadRibbonBar
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.cs region=removingATab}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.vb region=removingATab}} 
@@ -107,17 +87,11 @@ To remove a tab, call the __Remove__ method of the __CommandTabs__ collection, s
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 To remove a tab by index, you can use __RemoveAt__ method:
-        #_[C#] Remove a tab by index_
 
-	
-
-
+#### Remove a tab by index
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.cs region=removeATabByTabIndex}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.vb region=removeATabByTabIndex}} 
@@ -130,10 +104,7 @@ To remove a tab by index, you can use __RemoveAt__ method:
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Adding a RibbonBar Group
 
@@ -143,11 +114,8 @@ To add a RibbonBar group to a tab, you follow the steps below:
             
 
 1. Call the __Add__ method of the __RadRibbonBar.CommandTab.Items__ collection, passing the __RadRibbonBarGroup__object.
-            #_[C#] Create and setup new RadRibbonBarGroup_
 
-	
-
-
+#### Create and setup new RadRibbonBarGroup
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.cs region=addingARibbonBarGroup}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.vb region=addingARibbonBarGroup}} 
@@ -164,17 +132,11 @@ To add a RibbonBar group to a tab, you follow the steps below:
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 To add multiple RibbonBar groups in a single operation, call the __AddRange__ method of __RadRibbonBar.CommandTab.Items__ collection:
-        #_[C#] Add multiple RadRibbonBarGroups_
 
-	
-
-
+#### Add multiple RadRibbonBarGroups
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.cs region=addingMultipleRibbonBarGroups}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.vb region=addingMultipleRibbonBarGroups}} 
@@ -201,19 +163,13 @@ To add multiple RibbonBar groups in a single operation, call the __AddRange__ me
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Removing a RibbonBar Group
 
 To remove a group, call the __Remove__ method of the __CommandTab.Items__ collection, specifying the __RadRibbonBarGroup__ that you wish to be removed:
-        #_[C#] Remove RadRibbonBarGroup_
 
-	
-
-
+#### Remove RadRibbonBarGroup
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.cs region=removeARibbonBarGroup}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.vb region=removeARibbonBarGroup}} 
@@ -228,17 +184,11 @@ To remove a group, call the __Remove__ method of the __CommandTab.Items__ collec
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 To remove a group by index, you can use the __RemoveAt__ method:
-        #_[C#] Remove RadRibbonBarGroup by index_
 
-	
-
-
+#### Remove RadRibbonBarGroup by index
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.cs region=removeAChunkByIndex}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingTabsAndRibbonBarGroups.vb region=removeAChunkByIndex}} 
@@ -251,7 +201,4 @@ To remove a group by index, you can use the __RemoveAt__ method:
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

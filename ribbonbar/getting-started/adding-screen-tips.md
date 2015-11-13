@@ -10,9 +10,7 @@ position: 12
 
 # Adding Screen Tips
 
-
-
-Screen tips give you a mechanism to provide extended tooltips for any element within a Telerik RadRibbonBar.![ribbonbar-adding-screen-tips 001](images/ribbonbar-adding-screen-tips001.png)
+Screen tips give you a mechanism to provide extended tooltips for any element within a Telerik RadRibbonBar.<br>![ribbonbar-adding-screen-tips 001](images/ribbonbar-adding-screen-tips001.png)
 
 ## Creating a Screen Tip
 
@@ -24,7 +22,7 @@ To create a screen tip, follow these steps:
 
 1. Select the __Telerik.WinControls.UI.RadOffice2007ScreenTipElement__ template.
 
-1. Use the embedded property sheet to customize the screen tip.![ribbonbar-adding-screen-tips 002](images/ribbonbar-adding-screen-tips002.png)
+1. Use the embedded property sheet to customize the screen tip.<br>![ribbonbar-adding-screen-tips 002](images/ribbonbar-adding-screen-tips002.png)
 
 ## Modifying a Screen Tip
 
@@ -36,22 +34,17 @@ To modify an existing screen tip, follow these steps:
 
 1. Click the ellipsis button in the __TipItems__ collection.
 
-1. Use the RadItems Collection Editor to change the properties of any part of the screen tip.![ribbonbar-adding-screen-tips 003](images/ribbonbar-adding-screen-tips003.png)
+1. Use the RadItems Collection Editor to change the properties of any part of the screen tip.<br>![ribbonbar-adding-screen-tips 003](images/ribbonbar-adding-screen-tips003.png)
 
 ## Adding Screen Tips Programmatically
 
 There are several options for Office 2007-like screen tips we introduced in 2008 Q3 for your convenience.
-		
-        
 
 To completely customize the screen tips appearance, its size, text wrapping, etc you may handle the ScreenTipNeeded event of any RadControl (RadRibbonBar, RadGridView, etc) and customize the screen tip provided by the event arguments, or even assign a new ScreenTip object to the corresponding item. 
-        
 
-## Using ScreenTipNeeded event(example 1):#_[C#] Adding screen tips programatically_
+## Using ScreenTipNeeded event(example 1):
 
-	
-
-
+#### Adding screen tips programatically
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=addingScreenTips}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=addingScreenTips}} 
@@ -94,16 +87,11 @@ To completely customize the screen tips appearance, its size, text wrapping, etc
     '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+## Using ScreenTipNeeded event(example 2):
 
-
-
-## Using ScreenTipNeeded event(example 2):#_[C#] Modifing screen tips_
-
-	
-
-
+#### Modifing screen tips
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=usingScreenTipEventExample2}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=usingScreenTipEventExample2}} 
@@ -149,16 +137,11 @@ To completely customize the screen tips appearance, its size, text wrapping, etc
     '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+The code sample below adds screen tips to two button elements in the __RadRibbonBar__:
 
-
-
-The code sample below adds screen tips to two button elements in the __RadRibbonBar__:#_[C#] Adding screen tips to button elements_
-
-	
-
-
+#### Adding screen tips to button elements
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=addScreenTipsToButtonElements}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=addScreenTipsToButtonElements}} 
@@ -186,11 +169,4 @@ The code sample below adds screen tips to two button elements in the __RadRibbo
         '
 ````
 
-{{endregion}} 
-
-
-
-
-
-
-
+{{endregion}}

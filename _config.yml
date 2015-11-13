@@ -530,6 +530,27 @@ navigation:
     ribbonbar:
         title: RibbonBar
         position: 37
+    ribbonbar/getting-started:
+        title: Getting Started
+        position: 1
+    ribbonbar/styling-radribbonbar:
+        title: Styling RadRibbonBar
+        position: 2
+    ribbonbar/programming-radribbonbar:
+        title: Programming RadRibbonBar
+        position: 3
+    ribbonbar/backstage-view:
+        title: Backstage View
+        position: 4
+    ribbonbar/end-user-capabilities:
+        title: End-User Capabilities
+        position: 5
+    ribbonbar/how-to:
+        title: How To
+        position: 6
+    ribbonbar/localization:
+        title: Localization
+        position: 7		
     richtextbox:
         title: RichTextBox (obsolote)
         position: 38

@@ -10,22 +10,15 @@ position: 4
 
 # Customizing the Application Menu
 
+The *Application Menu *is a menu that is displayed when you click on the *Office Button *in the upper left corner of __RadRibbonBar__: <br>![ribbonbar-programming-radribbonbar-customizing-the-application-menu 000](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu000.png)
 
-
-The *Application Menu *is a menu that is displayed when you click on the *Office Button *in the upper left corner of __RadRibbonBar__:
-      ![ribbonbar-programming-radribbonbar-customizing-the-application-menu 000](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu000.png)
-
-The *Application Menu *can contain the same elements as __RadMenu__. Please refer to RadMenu section of the documentation for further a more comprehensive information about __RadMenu__. In contrast to __RadMenu__, menu items can be arranged in two columns. 
-      
+The *Application Menu *can contain the same elements as __RadMenu__. Please refer to RadMenu section of the documentation for further a more comprehensive information about __RadMenu__. In contrast to __RadMenu__, menu items can be arranged in two columns.
 
 ## Assigning an Image to the Application Menu Office Button
 
 __RadRibbonBar.StartButtonImage__ property defines the image used in the Application Menu button. The following code assigns an image (The example assumes that the image is added to the Project Resources):
-        #_[C#] Assign image to start button_
 
-	
-
-
+#### Assign image to start button
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.cs region=assignImageToStartButton}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=assignImageToStartButton}} 
@@ -38,30 +31,23 @@ __RadRibbonBar.StartButtonImage__ property defines the image used in the Applica
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Adding Items to the Application Menu
 
 There are five types of items which you can add to the Application Menu:
 
-
-
-
-
+|   |   |
+|---|---|
 | __RadMenuItem__ |A standard menu item.|
 | __RadMenuButtonItem__ |A button menu item.|
 | __RadMenuHeaderItem__ |A header menu item.|
 | __RadMenuSeperatorItem__ |A separator.|
 | __RadMenuComboItem__ |A combobox menu item.|
 
-For example to create a new RadMenuItem and add it to the application menu use the following code: #_[C#] Creating and add new menu item_
+For example to create a new RadMenuItem and add it to the application menu use the following code:
 
-	
-
-
+#### Creating and add new menu item
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.cs region=addingItemsToTheApplicationMenu1}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=addingItemsToTheApplicationMenu1}} 
@@ -78,18 +64,11 @@ For example to create a new RadMenuItem and add it to the application menu use t
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Below is the method that is referred to by the handler of the Click event. 
 
-## #_[C#] Handle the menu item click event_
-
-	
-
-
+#### Handle the menu item click event
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.cs region=addingItemsToTheApplicationMenu2}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=addingItemsToTheApplicationMenu2}} 
@@ -107,19 +86,13 @@ For example to create a new RadMenuItem and add it to the application menu use t
     '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Adding Items to the Right Column
 
-To place items in the right column of the Application Menu use __RadRibbonBar.StartMenuRightColumnItems__ collection. This code adds a RadMenuItem to the right column. The __RadMenuItem.Enabled__property is set to false so that items will act as labels and clicks will be disallowed.
-          #_[C#] Adding items to the right column_
+To place items in the right column of the Application Menu use __RadRibbonBar.StartMenuRightColumnItems__ collection. This code adds a RadMenuItem to the right column. The __RadMenuItem.Enabled__ property is set to false so that items will act as labels and clicks will be disallowed. 
 
-	
-
-
+#### Adding items to the right column
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.cs region=addingItemsToTheRightColumn}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=addingItemsToTheRightColumn}} 
@@ -144,14 +117,10 @@ To place items in the right column of the Application Menu use __RadRibbonBar.St
 ## Adding Items with Sub Items
 
 To create a submenu under a menu item, add items to the __Items__ collection of the first __RadMenuItem__.
-        
 
 This code adds a new __RadMenuItem__, __mnuPrint__, to the Start Menu. Then another three __RadMenuItems__ are created and added to __mnuPrint.Items__. Those three items, which make up the submenu, will have their own event handlers for the user click events.
-           #_[C#] Adding menu items with sub items_
 
-	
-
-
+#### Adding menu items with sub items
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.cs region=addingItemsWithSubItems}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=addingItemsWithSubItems}} 
@@ -192,25 +161,11 @@ This code adds a new __RadMenuItem__, __mnuPrint__, to the Start Menu. Then an
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Wrapping items' text
 
-The ApplicationMenu of RadRibbonBar supports wrapping of the
-          main and description texts of its items in the right column. To enable it,
-          you should set the TextWrap property of the __Text__ and __Description__
-          parts of the menu items to true. In addition, you should set the MaxSize of these parts.
-          Finally, you can set the width of the right column to an appropriate value by the
-          ApplicationMenuRightColumnWidth property.
-          Let's say that we have the following RadMenuItems in the right column:
-           #_[C#]_
-
-	
-
-
+The ApplicationMenu of RadRibbonBar supports wrapping of the main and description texts of its items in the right column. To enable it, you should set the TextWrap property of the __Text__ and __Description__ parts of the menu items to true. In addition, you should set the MaxSize of these parts. Finally, you can set the width of the right column to an appropriate value by the ApplicationMenuRightColumnWidth property. Let's say that we have the following RadMenuItems in the right column:
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.cs region=menuItemsTexts}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=menuItemsTexts}} 
@@ -229,19 +184,11 @@ The ApplicationMenu of RadRibbonBar supports wrapping of the
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+By default, the menu will look like this:<br>![ribbonbar-programming-radribbonbar-customizing-the-application-menu 002](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu002.png)
 
-
-
-By default, the menu will look like this:![ribbonbar-programming-radribbonbar-customizing-the-application-menu 002](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu002.png)
-
-So, as mentioned above, we should set the TextWrap and MaxSize properties of the Text and
-          Description parts of the menu items:#_[C#]_
-
-	
-
-
+So, as mentioned above, we should set the TextWrap and MaxSize properties of the Text and Description parts of the menu items:
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.cs region=settingUpSizes}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=settingUpSizes}} 
@@ -266,12 +213,9 @@ So, as mentioned above, we should set the TextWrap and MaxSize properties of the
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-The result in this case will be:![ribbonbar-programming-radribbonbar-customizing-the-application-menu 001](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu001.png)
+The result in this case will be:<br>![ribbonbar-programming-radribbonbar-customizing-the-application-menu 001](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu001.png)
 
 ## Keyboard Support
 

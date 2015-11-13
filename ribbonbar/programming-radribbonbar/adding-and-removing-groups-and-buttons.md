@@ -10,17 +10,13 @@ position: 1
 
 # Adding and Removing Groups and Buttons
 
-
-
 You can manipulate groups and buttons of RadRibbonBar at run time by using the appropriate objects and collections.
 
 ## Adding a Button
 
-To add a button to a RibbonBar group of __RadRibbonBar__, create a new __RadButtonElement__ and add it to __RadRibbonBarGroup.Items__ collection:#_[C#] Add a button to RadRibbonBarGroup_
+To add a button to a RibbonBar group of __RadRibbonBar__, create a new __RadButtonElement__ and add it to __RadRibbonBarGroup.Items__ collection:
 
-	
-
-
+#### Add a button to RadRibbonBarGroup
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.cs region=addingAButton}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.vb region=addingAButton}} 
@@ -37,18 +33,11 @@ To add a button to a RibbonBar group of __RadRibbonBar__, create a new __RadButt
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+Like the other collections, you can add multiple buttons in a single operation by using the appropriate __AddRange__ method:
 
-
-
-## 
-
-Like the other collections, you can add multiple buttons in a single operation by using the appropriate __AddRange__ method:#_[C#] Add multiple buttons to RadRibbonBarGroup_
-
-	
-
-
+#### Add multiple buttons to RadRibbonBarGroup
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.cs region=addMultipleButtons}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.vb region=addMultipleButtons}} 
@@ -69,18 +58,13 @@ Like the other collections, you can add multiple buttons in a single operation b
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Removing a Button
 
-To remove a button, call the __Remove__ method of __RadRibbonBarGroup.Items__ collection, specifying the __RadButtonElement__ that you wish to be removed:#_[C#] Remove a button from RadRibbonBarGroup_
+To remove a button, call the __Remove__ method of __RadRibbonBarGroup.Items__ collection, specifying the __RadButtonElement__ that you wish to be removed:
 
-	
-
-
+#### Remove a button from RadRibbonBarGroup
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.cs region=removeAButton}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.vb region=removeAButton}} 
@@ -95,16 +79,11 @@ To remove a button, call the __Remove__ method of __RadRibbonBarGroup.Items__ co
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
+To remove a button by index, you can use the __RemoveAt__ method:
 
-
-
-To remove a button by index, you can use the __RemoveAt__ method:#_[C#] Remove a button from RadRibbonBarGroup by index_
-
-	
-
-
+#### Remove a button from RadRibbonBarGroup by index
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.cs region=removeAButtonByIndex}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.vb region=removeAButtonByIndex}} 
@@ -117,10 +96,7 @@ To remove a button by index, you can use the __RemoveAt__ method:#_[C#] Remove a
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Adding a Button Group with Buttons
 
@@ -128,18 +104,13 @@ To add a new button group with buttons to a RibbonBar group of __RadRibbonBar__,
 
 1. Create a new __RadRibbonBarButtonGroup__ object and set its properties. 
 
-
 1. Create a __RadButtonElement__ objects and set their properties. 
-
 
 1. Add the __RadButtonElement__ objects to the __RadButtonBarGroup.Items__ collection. 
 
+1. Add the __RadButtonBarGroup__ object to the __RadRibbonBarGroup.Items__ collection. 
 
-1. Add the __RadButtonBarGroup__ object to the __RadRibbonBarGroup.Items__ collection. #_[C#] Add button group with buttons_
-
-	
-
-
+#### Add button group with buttons
 
 {{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.cs region=addingButtonGroupWithButtons}} 
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\AddingAndRemovingGroupsAndButtons.vb region=addingButtonGroupWithButtons}} 
@@ -170,7 +141,4 @@ To add a new button group with buttons to a RibbonBar group of __RadRibbonBar__,
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

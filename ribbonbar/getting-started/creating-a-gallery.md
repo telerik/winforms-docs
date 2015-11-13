@@ -12,20 +12,13 @@ position: 11
 
 
 
-RadGalleryElement allows the user to choose among large number of visual items. In its default collapsed view,
-        a gallery shows a single row of its items, as well as an up arrow and a down arrow that scroll to other rows of items.
-        Special properties allow you to specify the number of visible rows and columns of items in the collapsed view.
-      ![ribbonbar-creating-a-gallery 001](images/ribbonbar-creating-a-gallery001.png)
+RadGalleryElement allows the user to choose among large number of visual items. In its default collapsed view, a gallery shows a single row of its items, as well as an up arrow and a down arrow that scroll to other rows of items. Special properties allow you to specify the number of visible rows and columns of items in the collapsed view. <br>![ribbonbar-creating-a-gallery 001](images/ribbonbar-creating-a-gallery001.png)
 
-The gallery also has a drop-down arrow which sets the element into expanded view. In this view the gallery shows a popup containing all of its items, organized in groups.![ribbonbar-creating-a-gallery 002](images/ribbonbar-creating-a-gallery002.png)
+The gallery also has a drop-down arrow which sets the element into expanded view. In this view the gallery shows a popup containing all of its items, organized in groups.<br>![ribbonbar-creating-a-gallery 002](images/ribbonbar-creating-a-gallery002.png)
 
 ## Creating a Gallery
 
-To create a gallery, first, select a RadRibbonbar group, click its smart tag, and choose the 
-          Edit Items option. When the *RadItem Collection Editor *pops up, 
-          click the arrow of the Add button and select the *RadGalleryElement* option. 
-          Click OK to save the changes and the gallery should appear in your ribbon group.
-        
+To create a gallery, first, select a RadRibbonbar group, click its smart tag, and choose the Edit Items option. When the *RadItem Collection Editor *pops up, click the arrow of the Add button and select the *RadGalleryElement* option. Click OK to save the changes and the gallery should appear in your ribbon group.
 
 ## Gallery properties
 
@@ -51,11 +44,7 @@ You can add items to the gallery at design-time using the following steps:
 
 1. Click the OK button to save the changes
 
-Alternatively, you can add the items at run-time. Here is a sample snippet:#_[C#] _
-
-	
-
-
+Alternatively, you can add the items at run-time. Here is a sample snippet:
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingAGallery.cs region=snippet1}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingAGallery.vb region=snippet1}} 
@@ -103,18 +92,9 @@ Alternatively, you can add the items at run-time. Here is a sample snippet:#_[C#
 
 {{endregion}} 
 
-
-
-
 ## Adding Groups
 
-Groups organize the items within a gallery into distinct sections. Groups are not visible when
-        	the gallery is in collapsed view. They appear in the gallery popup as blocks of items under 
-        	the same title. For example, in the screenshot above the Plain Tables and Built-In are the 
-        	titles of gallery groups. The Plain Tables group contains a single item and the Built-In group 
-        	contains plenty. The following screenshot has six groups: Black Items, Blue Items, Red Items, 
-        	Green Items, Purple Items, Orange Items.
-        ![ribbonbar-creating-a-gallery 003](images/ribbonbar-creating-a-gallery003.png)
+Groups organize the items within a gallery into distinct sections. Groups are not visible when the gallery is in collapsed view. They appear in the gallery popup as blocks of items under the same title. For example, in the screenshot above the Plain Tables and Built-In are the titles of gallery groups. The Plain Tables group contains a single item and the Built-In group contains plenty. The following screenshot has six groups: Black Items, Blue Items, Red Items, Green Items, Purple Items, Orange Items. <br>![ribbonbar-creating-a-gallery 003](images/ribbonbar-creating-a-gallery003.png)
 
 To add a group at design-time, please follow these steps:
 
@@ -128,18 +108,13 @@ To add a group at design-time, please follow these steps:
 
 1. Navigate to its Items property and click the ellipsis button 
 
-1. When the Items Collection Editor opens you can choose which RadGalleryItems to be associated with this group.
-            Each time you click Add, one of the items that you already created will be added to the group. Click Remove to exclude items from the group.
+1. When the Items Collection Editor opens you can choose which RadGalleryItems to be associated with this group. Each time you click Add, one of the items that you already created will be added to the group. Click Remove to exclude items from the group.
 
 1. Click OK to save the group items
 
 1. Click OK to save the group
 
-Alternatively, you can add the items at run-time. Here is a sample snippet:#_[C#] _
-
-	
-
-
+Alternatively, you can add the items at run-time. Here is a sample snippet:
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingAGallery.cs region=snippet2}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingAGallery.vb region=snippet2}} 
@@ -178,22 +153,11 @@ Alternatively, you can add the items at run-time. Here is a sample snippet:#_[C#
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Creating Filters
 
-A gallery filter is a set of groups. Filters appear as options of a drop-down list, 
-        	docked at the top of the gallery popup. They allow the user to choose the combination 
-        	of groups to be displayed in the popup. For example, the following screenshot contains 
-        	three filters. The All filter displays all groups; the Red, Orange and Green Items filter 
-        	shows the items in groups Red, Orange and Green; the Blue and Purple Items lists the items 
-        	in the Blue and Purple groups.
-        
-
-
+A gallery filter is a set of groups. Filters appear as options of a drop-down list, docked at the top of the gallery popup. They allow the user to choose the combination of groups to be displayed in the popup. For example, the following screenshot contains three filters. The All filter displays all groups; the Red, Orange and Green Items filter shows the items in groups Red, Orange and Green; the Blue and Purple Items lists the items in the Blue and Purple groups.
 
 |![ribbonbar-creating-a-gallery 004](images/ribbonbar-creating-a-gallery004.png)|![ribbonbar-creating-a-gallery 005](images/ribbonbar-creating-a-gallery005.png)|![ribbonbar-creating-a-gallery 006](images/ribbonbar-creating-a-gallery006.png)|
 
@@ -209,19 +173,13 @@ To create a filter, follow these steps:
 
 1. Navigate to the Items property of the RadGalleryGroupFilter, then click the ellipsis button
 
-1. When the Items Collection Editor opens you can choose which RadGalleryGroupItems to be associated with this filter.
-          Each time you click Add, one of the groups that you already created will be added to the filter. Click Remove to exclude groups from the filter.
-          Note that one group can be assigned to more than one filters
+1. When the Items Collection Editor opens you can choose which RadGalleryGroupItems to be associated with this filter. Each time you click Add, one of the groups that you already created will be added to the filter. Click Remove to exclude groups from the filter. Note that one group can be assigned to more than one filters
 
 1. Click OK to save the filter items
 
 1. Click OK to save the filter
 
-Alternatively, you can create a filter at run-time. Here is a sample snippet:#_[C#] _
-
-	
-
-
+Alternatively, you can create a filter at run-time. Here is a sample snippet:
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingAGallery.cs region=snippet3}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingAGallery.vb region=snippet3}} 
@@ -264,10 +222,7 @@ Alternatively, you can create a filter at run-time. Here is a sample snippet:#_[
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Creating Tools
 
@@ -279,18 +234,13 @@ To add a Tool at design-time please follow these steps:
 
 1. Go to the Properties window, navigate to the Tools property, and click the ellipsis button
 
-1. In the RadItem Collection Editor click the Add button to add an item. 
-            Currently, you can add a RadMenuItem, RadMenuButtonItem and RadMenuComboItem
+1. In the RadItem Collection Editor click the Add button to add an item. Currently, you can add a RadMenuItem, RadMenuButtonItem and RadMenuComboItem
 
 1. Use the Properties window to set the properties of the new tool
 
 1. Click OK to save the changes
 
-You can also create tools at run-time. Here is a sample snippet:#_[C#] _
-
-	
-
-
+You can also create tools at run-time. Here is a sample snippet:
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingAGallery.cs region=snippet4}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingAGallery.vb region=snippet4}} 
@@ -305,7 +255,4 @@ You can also create tools at run-time. Here is a sample snippet:#_[C#] _
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
