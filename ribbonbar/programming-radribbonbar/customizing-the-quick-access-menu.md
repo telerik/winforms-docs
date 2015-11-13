@@ -10,13 +10,13 @@ position: 5
 
 # Customizing the Quick Access Menu
 
-__Quick Access Toolbar__is an area of RadRibbonBar above the tabs:<br>![ribbonbar-programming-radribbonbar-customizing-the-quick-access-menu 001](images/ribbonbar-programming-radribbonbar-customizing-the-quick-access-menu001.png)
+__Quick Access Toolbar__ is an area of RadRibbonBar above the tabs:<br>![ribbonbar-programming-radribbonbar-customizing-the-quick-access-menu 001](images/ribbonbar-programming-radribbonbar-customizing-the-quick-access-menu001.png)
 
 __Quick Access Toolbar__ can contain the same elements as __RadMenu.__
 
 ## Adding Items to Quick Access Toolbar
 
-Add items to __Quick Access Toolbar__through __RadRibbonBar.QuickAccessToolBarItems__ collection.
+Add items to __Quick Access Toolbar__ through __RadRibbonBar.QuickAccessToolBarItems__ collection.
 
 This example adds two items. The first is a __RadMenuItem__. The __RadMenuItem__ will not change its display when the user hovers the mouse over it. If you would like that effect, use the custom  item,  __RadButtonElement__, instead. The second item added to the __Quick Access Toolbar__ is a __RadButtonElement__.
 
