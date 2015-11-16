@@ -31,149 +31,127 @@ In this article, you will learn how to use the __RadLayoutControl__. The example
 
 ````C#
     
-    public partial class GettingStartedForm : Telerik.WinControls.UI.RadForm
+public partial class GettingStartedForm : Telerik.WinControls.UI.RadForm
+{
+    public GettingStartedForm()
     {
-        public GettingStartedForm()
-        {
-            InitializeComponent();
-            
-            List<Employee> employees = new List<Employee>();
-            employees.Add(new Employee()
-            {
-                FirstName = "Sarah",
-                LastName = "Blake",
-                Occupation = "Supplied Manager",
-                StartingDate = new DateTime(2005, 04, 12),
-                IsMarried = true
-            });
-            employees.Add(new Employee()
-            {
-                FirstName = "Jane",
-                LastName = "Simpson",
-                Occupation = "Security",
-                StartingDate = new DateTime(2008, 12, 03),
-                IsMarried = true
-            });
-            employees.Add(new Employee()
-            {
-                FirstName = "John",
-                LastName = "Peterson",
-                Occupation = "Consultant",
-                StartingDate = new DateTime(2005, 04, 12),
-                IsMarried = false
-            });
-            employees.Add(new Employee()
-            {
-                FirstName = "Peter",
-                LastName = "Bush",
-                Occupation = "Cashier",
-                StartingDate = new DateTime(2005, 04, 12),
-                IsMarried = true
-            });
-            
-            BindingSource bindingSource1 = new BindingSource();
-            bindingSource1.DataSource = employees;
-            
-            radDataEntry1.DataSource = bindingSource1;
-            radListView1.DataSource = bindingSource1;
-            radListView1.DisplayMember = "FirstName";
-            radListView1.AllowEdit = false;
-            
-            this.radButton1.Click += radButton1_Click;
-
-            layoutControlItem1.DrawText = true;
-            layoutControlItem2.DrawText = true;
-
-            layoutControlItem1.TextProportionalSize = 0.05f;
-            layoutControlItem2.TextProportionalSize = 0.05f;
-
-            layoutControlItem1.TextPosition = LayoutItemTextPosition.Top;
-            layoutControlItem2.TextPosition = LayoutItemTextPosition.Top;
-
-            layoutControlItem1.TextAlignment = ContentAlignment.BottomLeft;
-            layoutControlItem2.TextAlignment = ContentAlignment.BottomLeft;
-
-            layoutControlItem1.Text = "Select Item";
-            layoutControlItem2.Text = "Change Item Properties";
-        }
+        InitializeComponent();
         
-        void radButton1_Click(object sender, EventArgs e)
+        List<Employee> employees = new List<Employee>();
+        employees.Add(new Employee()
         {
-            this.Close();
-        }
+            FirstName = "Sarah",
+            LastName = "Blake",
+            Occupation = "Supplied Manager",
+            StartingDate = new DateTime(2005, 04, 12),
+            IsMarried = true
+        });
+        employees.Add(new Employee()
+        {
+            FirstName = "Jane",
+            LastName = "Simpson",
+            Occupation = "Security",
+            StartingDate = new DateTime(2008, 12, 03),
+            IsMarried = true
+        });
+        employees.Add(new Employee()
+        {
+            FirstName = "John",
+            LastName = "Peterson",
+            Occupation = "Consultant",
+            StartingDate = new DateTime(2005, 04, 12),
+            IsMarried = false
+        });
+        employees.Add(new Employee()
+        {
+            FirstName = "Peter",
+            LastName = "Bush",
+            Occupation = "Cashier",
+            StartingDate = new DateTime(2005, 04, 12),
+            IsMarried = true
+        });
+        
+        BindingSource bindingSource1 = new BindingSource();
+        bindingSource1.DataSource = employees;
+        
+        radDataEntry1.DataSource = bindingSource1;
+        radListView1.DataSource = bindingSource1;
+        radListView1.DisplayMember = "FirstName";
+        radListView1.AllowEdit = false;
+        
+        this.radButton1.Click += radButton1_Click;
+        layoutControlItem1.DrawText = true;
+        layoutControlItem2.DrawText = true;
+        layoutControlItem1.TextProportionalSize = 0.05f;
+        layoutControlItem2.TextProportionalSize = 0.05f;
+        layoutControlItem1.TextPosition = LayoutItemTextPosition.Top;
+        layoutControlItem2.TextPosition = LayoutItemTextPosition.Top;
+        layoutControlItem1.TextAlignment = ContentAlignment.BottomLeft;
+        layoutControlItem2.TextAlignment = ContentAlignment.BottomLeft;
+        layoutControlItem1.Text = "Select Item";
+        layoutControlItem2.Text = "Change Item Properties";
     }
     
-    public class Employee
+    void radButton1_Click(object sender, EventArgs e)
     {
-        public string FirstName { get; set; }
-        
-        public string LastName { get; set; }
-        
-        public string Occupation { get; set; }
-        
-        public DateTime StartingDate { get; set; }
-        
-        public bool IsMarried { get; set; }
+        this.Close();
     }
+}
+    
+public class Employee
+{
+    public string FirstName { get; set; }
+    
+    public string LastName { get; set; }
+    
+    public string Occupation { get; set; }
+    
+    public DateTime StartingDate { get; set; }
+    
+    public bool IsMarried { get; set; }
+}
+
 ````
 ````VB.NET
-
 Partial Public Class GettingStartedForm1
     Inherits Telerik.WinControls.UI.RadForm
-
     Public Sub New()
         InitializeComponent()
-
         Dim employees As New List(Of EmployeeData)()
         employees.Add(New EmployeeData() With {.FirstName = "Sarah", .LastName = "Blake", .Occupation = "Supplied Manager", .StartingDate = New Date(2005, 4, 12), .IsMarried = True})
         employees.Add(New EmployeeData() With {.FirstName = "Jane", .LastName = "Simpson", .Occupation = "Security", .StartingDate = New Date(2008, 12, 3), .IsMarried = True})
         employees.Add(New EmployeeData() With {.FirstName = "John", .LastName = "Peterson", .Occupation = "Consultant", .StartingDate = New Date(2005, 4, 12), .IsMarried = False})
         employees.Add(New EmployeeData() With {.FirstName = "Peter", .LastName = "Bush", .Occupation = "Cashier", .StartingDate = New Date(2005, 4, 12), .IsMarried = True})
-
         Dim bindingSource1 As New BindingSource()
         bindingSource1.DataSource = employees
-
         radDataEntry1.DataSource = bindingSource1
         radListView1.DataSource = bindingSource1
         radListView1.DisplayMember = "FirstName"
         radListView1.AllowEdit = False
-
         AddHandler Me.radButton1.Click, AddressOf radButton1_Click
-
         layoutControlItem1.DrawText = True
         layoutControlItem2.DrawText = True
-
         layoutControlItem1.TextProportionalSize = 0.05F
         layoutControlItem2.TextProportionalSize = 0.05F
-
         layoutControlItem1.TextPosition = LayoutItemTextPosition.Top
         layoutControlItem2.TextPosition = LayoutItemTextPosition.Top
-
         layoutControlItem1.TextAlignment = ContentAlignment.BottomLeft
         layoutControlItem2.TextAlignment = ContentAlignment.BottomLeft
-
         layoutControlItem1.Text = "Select Item"
         layoutControlItem2.Text = "Change Item Properties"
     End Sub
-
     Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
         Me.Close()
     End Sub
 End Class
-
 Public Class EmployeeData
     Public Property FirstName() As String
-
     Public Property LastName() As String
-
     Public Property Occupation() As String
-
     Public Property StartingDate() As Date
-
     Public Property IsMarried() As Boolean
 End Class
 
-'
 ````
 
 {{endregion}} 

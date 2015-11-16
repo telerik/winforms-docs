@@ -22,11 +22,12 @@ RadListView allows filtering operations in all views. To enable filtering operat
 {{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=EnableFiltering}} 
 
 ````C#
-            radListView1.EnableFiltering = true;
+radListView1.EnableFiltering = true;
+
 ````
 ````VB.NET
-        RadListView1.EnableFiltering = True
-        '
+RadListView1.EnableFiltering = True
+
 ````
 
 {{endregion}} 
@@ -39,13 +40,14 @@ Once the filtering is enabled, we have to create a new __FilterDescriptor__ and 
 {{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=FilterDescriptor}} 
 
 ````C#
-            FilterDescriptor valueFilter = new FilterDescriptor("Value", FilterOperator.StartsWith, "Local");
-            radListView1.FilterDescriptors.Add(valueFilter);
+FilterDescriptor valueFilter = new FilterDescriptor("Value", FilterOperator.StartsWith, "Local");
+radListView1.FilterDescriptors.Add(valueFilter);
+
 ````
 ````VB.NET
-        Dim valueFilter As New FilterDescriptor("Value", FilterOperator.StartsWith, "Local")
-        RadListView1.FilterDescriptors.Add(valueFilter)
-        '
+Dim valueFilter As New FilterDescriptor("Value", FilterOperator.StartsWith, "Local")
+RadListView1.FilterDescriptors.Add(valueFilter)
+
 ````
 
 {{endregion}} 
@@ -60,13 +62,14 @@ When a column name is specified as __PropertyName__ of the filter descriptor, Ra
 {{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=FilterDescriptor1}} 
 
 ````C#
-            FilterDescriptor typeFilter = new FilterDescriptor("Type", FilterOperator.Contains, "Disk");
-            radListView1.FilterDescriptors.Add(typeFilter);
+FilterDescriptor typeFilter = new FilterDescriptor("Type", FilterOperator.Contains, "Disk");
+radListView1.FilterDescriptors.Add(typeFilter);
+
 ````
 ````VB.NET
-        Dim typeFilter As New FilterDescriptor("Type", FilterOperator.Contains, "Disk")
-        RadListView1.FilterDescriptors.Add(typeFilter)
-        '
+Dim typeFilter As New FilterDescriptor("Type", FilterOperator.Contains, "Disk")
+RadListView1.FilterDescriptors.Add(typeFilter)
+
 ````
 
 {{endregion}} 

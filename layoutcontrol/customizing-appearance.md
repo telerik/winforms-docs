@@ -25,13 +25,14 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__  propert
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=FillStroke}} 
 
 ````C#
-            radLayoutControl1.ContainerElement.PreviewRectangleFill = ColorTranslator.FromHtml("#008de7");
-            radLayoutControl1.ContainerElement.PreviewRectangleStroke = ColorTranslator.FromHtml("#e83737");
+radLayoutControl1.ContainerElement.PreviewRectangleFill = ColorTranslator.FromHtml("#008de7");
+radLayoutControl1.ContainerElement.PreviewRectangleStroke = ColorTranslator.FromHtml("#e83737");
+
 ````
 ````VB.NET
-        radLayoutControl1.ContainerElement.PreviewRectangleFill = ColorTranslator.FromHtml("#008de7")
-        radLayoutControl1.ContainerElement.PreviewRectangleStroke = ColorTranslator.FromHtml("#e83737")
-        '
+radLayoutControl1.ContainerElement.PreviewRectangleFill = ColorTranslator.FromHtml("#008de7")
+radLayoutControl1.ContainerElement.PreviewRectangleStroke = ColorTranslator.FromHtml("#e83737")
+
 ````
 
 {{endregion}} 
@@ -48,17 +49,18 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__  propert
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=LabelItem}} 
 
 ````C#
-            layoutControlLabelItem5.BackColor = ColorTranslator.FromHtml("#008de7");
-            layoutControlLabelItem5.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
-            layoutControlLabelItem5.DrawFill = true;
-            layoutControlLabelItem5.Font = new Font("Segoe Script", 16, FontStyle.Regular);
+layoutControlLabelItem5.BackColor = ColorTranslator.FromHtml("#008de7");
+layoutControlLabelItem5.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+layoutControlLabelItem5.DrawFill = true;
+layoutControlLabelItem5.Font = new Font("Segoe Script", 16, FontStyle.Regular);
+
 ````
 ````VB.NET
-        layoutControlLabelItem5.BackColor = ColorTranslator.FromHtml("#008de7")
-        layoutControlLabelItem5.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-        layoutControlLabelItem5.DrawFill = True
-        layoutControlLabelItem5.Font = New Font("Segoe Script", 16, FontStyle.Regular)
-        '
+layoutControlLabelItem5.BackColor = ColorTranslator.FromHtml("#008de7")
+layoutControlLabelItem5.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+layoutControlLabelItem5.DrawFill = True
+layoutControlLabelItem5.Font = New Font("Segoe Script", 16, FontStyle.Regular)
+
 ````
 
 {{endregion}} 
@@ -71,18 +73,18 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__  propert
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=Separator}} 
 
 ````C#
-            layoutControlSeparatorItem1.Thickness = 10;
-            layoutControlSeparatorItem1.DrawFill = true;
-            layoutControlSeparatorItem1.BackColor = ColorTranslator.FromHtml("#008de7");
-            layoutControlSeparatorItem1.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+layoutControlSeparatorItem1.Thickness = 10;
+layoutControlSeparatorItem1.DrawFill = true;
+layoutControlSeparatorItem1.BackColor = ColorTranslator.FromHtml("#008de7");
+layoutControlSeparatorItem1.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+
 ````
 ````VB.NET
-        layoutControlSeparatorItem1.Thickness = 10
-        layoutControlSeparatorItem1.DrawFill = True
-        layoutControlSeparatorItem1.BackColor = ColorTranslator.FromHtml("#008de7")
-        layoutControlSeparatorItem1.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+layoutControlSeparatorItem1.Thickness = 10
+layoutControlSeparatorItem1.DrawFill = True
+layoutControlSeparatorItem1.BackColor = ColorTranslator.FromHtml("#008de7")
+layoutControlSeparatorItem1.GradientStyle = Telerik.WinControls.GradientStyles.Solid
 
-        '
 ````
 
 {{endregion}} 
@@ -95,18 +97,18 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__  propert
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=Splitter}} 
 
 ````C#
-            layoutControlSplitterItem1.Thickness = 10;
-            layoutControlSplitterItem1.DrawFill = true;
-            layoutControlSplitterItem1.BackColor = ColorTranslator.FromHtml("#e83737");
-            layoutControlSplitterItem1.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+layoutControlSplitterItem1.Thickness = 10;
+layoutControlSplitterItem1.DrawFill = true;
+layoutControlSplitterItem1.BackColor = ColorTranslator.FromHtml("#e83737");
+layoutControlSplitterItem1.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+
 ````
 ````VB.NET
-        layoutControlSplitterItem1.Thickness = 10
-        layoutControlSplitterItem1.DrawFill = True
-        layoutControlSplitterItem1.BackColor = ColorTranslator.FromHtml("#e83737")
-        layoutControlSplitterItem1.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+layoutControlSplitterItem1.Thickness = 10
+layoutControlSplitterItem1.DrawFill = True
+layoutControlSplitterItem1.BackColor = ColorTranslator.FromHtml("#e83737")
+layoutControlSplitterItem1.GradientStyle = Telerik.WinControls.GradientStyles.Solid
 
-        '
 ````
 
 {{endregion}} 
@@ -119,22 +121,22 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__  propert
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=Group}} 
 
 ````C#
-            this.layoutControlGroupItem1.HeaderElement.Font = new Font("Segoe Script", 14, FontStyle.Regular);
-            this.layoutControlGroupItem1.HeaderElement.BackColor = ColorTranslator.FromHtml("#008de7");
-            this.layoutControlGroupItem1.HeaderElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
-            this.layoutControlGroupItem1.HeaderElement.HeaderButtonElement.DrawFill = false;
-            this.layoutControlGroupItem1.HeaderElement.HeaderButtonElement.DrawBorder = false;
-            this.layoutControlGroupItem1.ShowHeaderLine = false;
+this.layoutControlGroupItem1.HeaderElement.Font = new Font("Segoe Script", 14, FontStyle.Regular);
+this.layoutControlGroupItem1.HeaderElement.BackColor = ColorTranslator.FromHtml("#008de7");
+this.layoutControlGroupItem1.HeaderElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+this.layoutControlGroupItem1.HeaderElement.HeaderButtonElement.DrawFill = false;
+this.layoutControlGroupItem1.HeaderElement.HeaderButtonElement.DrawBorder = false;
+this.layoutControlGroupItem1.ShowHeaderLine = false;
+
 ````
 ````VB.NET
-        Me.layoutControlGroupItem1.HeaderElement.Font = New Font("Segoe Script", 14, FontStyle.Regular)
-        Me.layoutControlGroupItem1.HeaderElement.BackColor = ColorTranslator.FromHtml("#008de7")
-        Me.layoutControlGroupItem1.HeaderElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-        Me.layoutControlGroupItem1.HeaderElement.HeaderButtonElement.DrawFill = False
-        Me.layoutControlGroupItem1.HeaderElement.HeaderButtonElement.DrawBorder = False
-        Me.layoutControlGroupItem1.ShowHeaderLine = False
+Me.layoutControlGroupItem1.HeaderElement.Font = New Font("Segoe Script", 14, FontStyle.Regular)
+Me.layoutControlGroupItem1.HeaderElement.BackColor = ColorTranslator.FromHtml("#008de7")
+Me.layoutControlGroupItem1.HeaderElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+Me.layoutControlGroupItem1.HeaderElement.HeaderButtonElement.DrawFill = False
+Me.layoutControlGroupItem1.HeaderElement.HeaderButtonElement.DrawBorder = False
+Me.layoutControlGroupItem1.ShowHeaderLine = False
 
-        '
 ````
 
 {{endregion}} 
@@ -147,18 +149,18 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__  propert
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=Tab}} 
 
 ````C#
-            this.layoutControlTabbedGroup1.TabStrip.Font = new Font("Segoe Script", 14, FontStyle.Regular);
-            this.layoutControlTabbedGroup1.TabStrip.ItemFitMode = StripViewItemFitMode.Fill;
-            this.layoutControlTabbedGroup1.TabStrip.Items[0].ForeColor = ColorTranslator.FromHtml("#e83737");
-            this.layoutControlTabbedGroup1.TabStrip.Items[1].ForeColor = ColorTranslator.FromHtml("#008de7");
+this.layoutControlTabbedGroup1.TabStrip.Font = new Font("Segoe Script", 14, FontStyle.Regular);
+this.layoutControlTabbedGroup1.TabStrip.ItemFitMode = StripViewItemFitMode.Fill;
+this.layoutControlTabbedGroup1.TabStrip.Items[0].ForeColor = ColorTranslator.FromHtml("#e83737");
+this.layoutControlTabbedGroup1.TabStrip.Items[1].ForeColor = ColorTranslator.FromHtml("#008de7");
+
 ````
 ````VB.NET
-        Me.layoutControlTabbedGroup1.TabStrip.Font = New Font("Segoe Script", 14, FontStyle.Regular)
-        Me.layoutControlTabbedGroup1.TabStrip.ItemFitMode = StripViewItemFitMode.Fill
-        Me.layoutControlTabbedGroup1.TabStrip.Items(0).ForeColor = ColorTranslator.FromHtml("#e83737")
-        Me.layoutControlTabbedGroup1.TabStrip.Items(1).ForeColor = ColorTranslator.FromHtml("#008de7")
+Me.layoutControlTabbedGroup1.TabStrip.Font = New Font("Segoe Script", 14, FontStyle.Regular)
+Me.layoutControlTabbedGroup1.TabStrip.ItemFitMode = StripViewItemFitMode.Fill
+Me.layoutControlTabbedGroup1.TabStrip.Items(0).ForeColor = ColorTranslator.FromHtml("#e83737")
+Me.layoutControlTabbedGroup1.TabStrip.Items(1).ForeColor = ColorTranslator.FromHtml("#008de7")
 
-        '
 ````
 
 {{endregion}} 

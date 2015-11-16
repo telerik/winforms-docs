@@ -50,28 +50,26 @@ In order to use this approach you need to set the __ResolverTypesInCurrentAssemb
 {{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=ResolveTypesInCurrentAssembly}}
 
 ````C#
+static RedestributingTelerikRadControls()
+{
+    Telerik.WinControls.RadTypeResolver.Instance.ResolveTypesInCurrentAssembly = true;
+}
+public RedestributingTelerikRadControls()
+{
+    InitializeComponent();
+}
 
-      	static RedestributingTelerikRadControls()
-	        {
-	            Telerik.WinControls.RadTypeResolver.Instance.ResolveTypesInCurrentAssembly = true;
-	        }
-	
-	        public RedestributingTelerikRadControls()
-	        {
-	            InitializeComponent();
-	        }
 ````
 ````VB.NET
+Shared Sub New()
+    Telerik.WinControls.RadTypeResolver.Instance.ResolveTypesInCurrentAssembly = True
+End Sub
+Public Sub New()
+    ' This call is required by the designer.
+    InitializeComponent()
+    ' Add any initialization after the InitializeComponent() call.
+End Sub
 
-	    Shared Sub New()
-	        Telerik.WinControls.RadTypeResolver.Instance.ResolveTypesInCurrentAssembly = True
-	    End Sub
-	
-	    Public Sub New()
-	        ' This call is required by the designer.
-	        InitializeComponent()
-	        ' Add any initialization after the InitializeComponent() call.
-	    End Sub
 ````
 
 {{endregion}}
@@ -223,20 +221,22 @@ __Instructions__
 	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=CommentedIsValid}}
 
 	````C#
-	public static bool IsValid()
-	        {
-	            // Uncomment the following line
-	            // return ValidatePassPhrase();
-	            return true;
-	        }
-	````
-	````VB.NET
-	Public Shared Function IsValid() As Boolean
-	        ' Uncomment the following line
-	        ' return ValidatePassPhrase();
-	        Return True
-	    End Function
-	````
+public static bool IsValid()
+{
+    // Uncomment the following line
+    // return ValidatePassPhrase();
+    return true;
+}
+
+````
+````VB.NET
+Public Shared Function IsValid() As Boolean
+    ' Uncomment the following line
+    ' return ValidatePassPhrase();
+    Return True
+End Function
+
+````
 
 	{{endregion}}
 
@@ -247,18 +247,20 @@ __Instructions__
 	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=UnCommentedIsValid}}
 
 	````C#
-	public static bool IsValid()
-	        {
-	            // Uncomment the following line
-	            return ValidatePassPhrase();
-	        }
-	````
-	````VB.NET
-	Public Shared Function IsValid() As Boolean
-	        ' Uncomment the following line
-	        Return ValidatePassPhrase()
-	    End Function
-	````
+public static bool IsValid()
+{
+    // Uncomment the following line
+    return ValidatePassPhrase();
+}
+
+````
+````VB.NET
+Public Shared Function IsValid() As Boolean
+    ' Uncomment the following line
+    Return ValidatePassPhrase()
+End Function
+
+````
 
 	{{endregion}}
 
@@ -270,11 +272,13 @@ __Instructions__
 	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=AppNameBefore}}
 
 	````C#
-	internal const string ApplicationName = "MyApp";
-	````
-	````VB.NET
-	Friend Const ApplicationName As String = "MyApp"
-	````
+internal const string ApplicationName = "MyApp";
+
+````
+````VB.NET
+Friend Const ApplicationName As String = "MyApp"
+
+````
 
 	{{endregion}}
 
@@ -285,13 +289,13 @@ __Instructions__
 	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=AppNameAfter}}
 
 	````C#
+internal const string ApplicationName = "Sample Application Name v2.0 (tm)";
 
-		internal const string ApplicationName = "Sample Application Name v2.0 (tm)";
-	````
-	````VB.NET
+````
+````VB.NET
+Friend Const ApplicationName As String = "Sample Application Name v2.0 (tm)"
 
-			Friend Const ApplicationName As String = "Sample Application Name v2.0 (tm)"
-	````	
+````	
 
 	{{endregion}}
 

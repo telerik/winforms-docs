@@ -25,13 +25,14 @@ Enabling sorting on header click is done by setting both __EnableSorting__ and _
 {{source=..\SamplesVB\ListView\Features\ListViewSorting.vb region=EnableColumnSort}} 
 
 ````C#
-            radListView1.EnableSorting = true;
-            radListView1.EnableColumnSort = true;
+radListView1.EnableSorting = true;
+radListView1.EnableColumnSort = true;
+
 ````
 ````VB.NET
-        RadListView1.EnableColumnSort = True
-        RadListView1.EnableSorting = True
-        '
+RadListView1.EnableColumnSort = True
+RadListView1.EnableSorting = True
+
 ````
 
 {{endregion}} 
@@ -44,15 +45,16 @@ The following code demonstrates how to add __SortDescriptor__ to RadListView:
 {{source=..\SamplesVB\ListView\Features\ListViewSorting.vb region=SortDescriptor}} 
 
 ````C#
-            radListView1.EnableSorting = true;
-            SortDescriptor sort = new SortDescriptor("Free Space", ListSortDirection.Ascending);
-            radListView1.SortDescriptors.Add(sort);
+radListView1.EnableSorting = true;
+SortDescriptor sort = new SortDescriptor("Free Space", ListSortDirection.Ascending);
+radListView1.SortDescriptors.Add(sort);
+
 ````
 ````VB.NET
-        RadListView1.EnableSorting = True
-        Dim sort = New SortDescriptor("Free Space", ListSortDirection.Ascending)
-        RadListView1.SortDescriptors.Add(sort)
-        '
+RadListView1.EnableSorting = True
+Dim sort = New SortDescriptor("Free Space", ListSortDirection.Ascending)
+RadListView1.SortDescriptors.Add(sort)
+
 ````
 
 {{endregion}} 

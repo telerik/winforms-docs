@@ -28,46 +28,47 @@ Items appearance in __RadListView__ can be customized by making use of the __Vis
 
 ````C#
         
-        Font font = new Font("Consolas", 14, FontStyle.Bold);
+Font font = new Font("Consolas", 14, FontStyle.Bold);
         
-        void radListView1_VisualItemFormatting(object sender, Telerik.WinControls.UI.ListViewVisualItemEventArgs e)
-        {
-            if (e.VisualItem.Selected)
-            {
-                e.VisualItem.NumberOfColors = 1;
-                e.VisualItem.BackColor = Color.LightGreen;
-                e.VisualItem.ForeColor = Color.Red;
-                e.VisualItem.BorderColor = Color.Blue;
-                e.VisualItem.Font = font;
-            }
-            else
-            {
-                e.VisualItem.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local);
-                e.VisualItem.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-                e.VisualItem.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-                e.VisualItem.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-                e.VisualItem.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local);
-            }
-        }
+void radListView1_VisualItemFormatting(object sender, Telerik.WinControls.UI.ListViewVisualItemEventArgs e)
+{
+    if (e.VisualItem.Selected)
+    {
+        e.VisualItem.NumberOfColors = 1;
+        e.VisualItem.BackColor = Color.LightGreen;
+        e.VisualItem.ForeColor = Color.Red;
+        e.VisualItem.BorderColor = Color.Blue;
+        e.VisualItem.Font = font;
+    }
+    else
+    {
+        e.VisualItem.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local);
+        e.VisualItem.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
+        e.VisualItem.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local);
+        e.VisualItem.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local);
+        e.VisualItem.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local);
+    }
+}
+
 ````
 ````VB.NET
-    Private font As New Font("Consolas", 14, FontStyle.Bold)
-    Private Sub radListView1_VisualItemFormatting(sender As Object, e As Telerik.WinControls.UI.ListViewVisualItemEventArgs)
-        If e.VisualItem.Selected Then
-            e.VisualItem.NumberOfColors = 1
-            e.VisualItem.BackColor = Color.LightGreen
-            e.VisualItem.ForeColor = Color.Red
-            e.VisualItem.BorderColor = Color.Blue
-            e.VisualItem.Font = font
-        Else
-            e.VisualItem.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local)
-            e.VisualItem.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-            e.VisualItem.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-            e.VisualItem.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-            e.VisualItem.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local)
-        End If
-    End Sub
-    '
+Private font As New Font("Consolas", 14, FontStyle.Bold)
+Private Sub radListView1_VisualItemFormatting(sender As Object, e As Telerik.WinControls.UI.ListViewVisualItemEventArgs)
+    If e.VisualItem.Selected Then
+        e.VisualItem.NumberOfColors = 1
+        e.VisualItem.BackColor = Color.LightGreen
+        e.VisualItem.ForeColor = Color.Red
+        e.VisualItem.BorderColor = Color.Blue
+        e.VisualItem.Font = font
+    Else
+        e.VisualItem.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local)
+        e.VisualItem.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
+        e.VisualItem.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local)
+        e.VisualItem.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local)
+        e.VisualItem.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -89,71 +90,69 @@ Let’s assume that the __RadListView__ is bound to the *Products* table from th
 
 ````C#
         
-        private void ListViewFormattingItems_Load(object sender, EventArgs e)
-        {
-            this.productsTableAdapter.Fill(this.nwindDataSet.Products);
-            this.radListView1.DataSource = this.productsBindingSource;
-            this.radListView1.DisplayMember = "ProductName";
-            this.radListView1.ValueMember = "ProductID";     
-            this.radListView1.ViewType = ListViewType.DetailsView;  
-            this.radListView1.CellFormatting += radListView1_CellFormatting;
-        }
-
-        Font newFont = new Font("Arial", 12f, FontStyle.Bold);
+private void ListViewFormattingItems_Load(object sender, EventArgs e)
+{
+    this.productsTableAdapter.Fill(this.nwindDataSet.Products);
+    this.radListView1.DataSource = this.productsBindingSource;
+    this.radListView1.DisplayMember = "ProductName";
+    this.radListView1.ValueMember = "ProductID";     
+    this.radListView1.ViewType = ListViewType.DetailsView;  
+    this.radListView1.CellFormatting += radListView1_CellFormatting;
+}
+Font newFont = new Font("Arial", 12f, FontStyle.Bold);
         
-        private void radListView1_CellFormatting(object sender, ListViewCellFormattingEventArgs e)
+private void radListView1_CellFormatting(object sender, ListViewCellFormattingEventArgs e)
+{
+    DetailListViewDataCellElement cell = e.CellElement as DetailListViewDataCellElement;
+    if (cell != null)
+    {
+        DataRowView productRowView = cell.Row.DataBoundItem as DataRowView;
+        if (productRowView != null && (bool)productRowView.Row["Discontinued"] == true)
         {
-            DetailListViewDataCellElement cell = e.CellElement as DetailListViewDataCellElement;
-            if (cell != null)
-            {
-                DataRowView productRowView = cell.Row.DataBoundItem as DataRowView;
-                if (productRowView != null && (bool)productRowView.Row["Discontinued"] == true)
-                {
-                    e.CellElement.BackColor = Color.Yellow;
-                    e.CellElement.ForeColor = Color.Red;
-                    e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
-                    e.CellElement.Font = newFont;
-                }
-                else
-                { 
-                    e.CellElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-                    e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-                    e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, Telerik.WinControls.ValueResetFlags.Local);
-                    e.CellElement.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local);
-                }
-            }
+            e.CellElement.BackColor = Color.Yellow;
+            e.CellElement.ForeColor = Color.Red;
+            e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+            e.CellElement.Font = newFont;
         }
+        else
+        { 
+            e.CellElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
+            e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local);
+            e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, Telerik.WinControls.ValueResetFlags.Local);
+            e.CellElement.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local);
+        }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub FormattingItems_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
-        Me.RadListView1.DataSource = Me.ProductsBindingSource
-        Me.RadListView1.DisplayMember = "ProductName"
-        Me.RadListView1.ValueMember = "ProductID"
-        Me.RadListView1.ViewType = ListViewType.DetailsView
-        AddHandler Me.RadListView1.CellFormatting, AddressOf radListView1_CellFormatting
-    End Sub
-
-    Private newFont As New Font("Arial", 12.0F, FontStyle.Bold)
-
-    Private Sub radListView1_CellFormatting(sender As Object, e As ListViewCellFormattingEventArgs)
-        Dim cell As DetailListViewDataCellElement = TryCast(e.CellElement, DetailListViewDataCellElement)
-        If cell IsNot Nothing Then
-            Dim productRowView As DataRowView = TryCast(cell.Row.DataBoundItem, DataRowView)
-            If productRowView IsNot Nothing AndAlso CBool(productRowView.Row("Discontinued")) = True Then
-                e.CellElement.BackColor = Color.Yellow
-                e.CellElement.ForeColor = Color.Red
-                e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-                e.CellElement.Font = newFont
-            Else
-                e.CellElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-                e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-                e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, Telerik.WinControls.ValueResetFlags.Local)
-                e.CellElement.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local)
-            End If
+Private Sub FormattingItems_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
+    Me.RadListView1.DataSource = Me.ProductsBindingSource
+    Me.RadListView1.DisplayMember = "ProductName"
+    Me.RadListView1.ValueMember = "ProductID"
+    Me.RadListView1.ViewType = ListViewType.DetailsView
+    AddHandler Me.RadListView1.CellFormatting, AddressOf radListView1_CellFormatting
+End Sub
+Private newFont As New Font("Arial", 12.0F, FontStyle.Bold)
+Private Sub radListView1_CellFormatting(sender As Object, e As ListViewCellFormattingEventArgs)
+    Dim cell As DetailListViewDataCellElement = TryCast(e.CellElement, DetailListViewDataCellElement)
+    If cell IsNot Nothing Then
+        Dim productRowView As DataRowView = TryCast(cell.Row.DataBoundItem, DataRowView)
+        If productRowView IsNot Nothing AndAlso CBool(productRowView.Row("Discontinued")) = True Then
+            e.CellElement.BackColor = Color.Yellow
+            e.CellElement.ForeColor = Color.Red
+            e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+            e.CellElement.Font = newFont
+        Else
+            e.CellElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
+            e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local)
+            e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, Telerik.WinControls.ValueResetFlags.Local)
+            e.CellElement.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local)
         End If
-    End Sub
-    '
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
