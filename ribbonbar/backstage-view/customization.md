@@ -5,20 +5,12 @@ description: Customization
 slug: winforms/ribbonbar/overview/customization
 tags: customization
 published: True
-position: 2
+position: 3
 ---
 
 # Customization
 
-
-
-## 
-
-The appearance of the BackstageView can be customized by using one of the predefined themes: Control Default, Office2010Blue,
-        	Office2010Black, Office2010Silver themes, modifying one of them in the Visual Style Builder, or creating a custom one by using
-        	the [Visual Style Builder]({%slug winforms/tools/visual-style-builder%}).
-        	Additionally, appearance modifications can be introduced through code.
-        
+The appearance of the BackstageView can be customized by using one of the predefined themes: Control Default, Office2010Blue, Office2010Black, Office2010Silver themes, modifying one of them in the Visual Style Builder, or creating a custom one by using the [Visual Style Builder]({%slug winforms/tools/visual-style-builder%}). Additionally, appearance modifications can be introduced through code.
 
 The following image demonstrates the Backstage view Element tree, which can help you to access the desired elements.  ![ribbonbar-backstage-view-customization 001](images/ribbonbar-backstage-view-customization001.png)
 
@@ -35,11 +27,9 @@ The following image demonstrates the Backstage view Element tree, which can help
 
 * __BackstageContentPanelElement__ - the visual element representing the area where the pages are rendered
 
-Follows code snippet demonstrates how you can access the most used items in the control:#_[C#] Accessing BackstageView elements_
+Follows code snippet demonstrates how you can access the most used items in the control:
 
-	
-
-
+#### Accessing BackstageView elements
 
 {{source=..\SamplesCS\RibbonBar\BackstageView\RibbonBackstageView.cs region=accessElements}} 
 {{source=..\SamplesVB\RibbonBar\BackstageView\RibbonBackstageView.vb region=accessElements}} 
@@ -60,17 +50,11 @@ Follows code snippet demonstrates how you can access the most used items in the 
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 By accessing these elements, you can customize BackstageView. Here is an example on how to change the BackgroundImage of the content area:
-		#_[C#] Customizing the content area_
 
-	
-
-
+#### Customizing the content area
 
 {{source=..\SamplesCS\RibbonBar\BackstageView\RibbonBackstageView.cs region=changeContentAreaImage}} 
 {{source=..\SamplesVB\RibbonBar\BackstageView\RibbonBackstageView.vb region=changeContentAreaImage}} 
@@ -91,11 +75,7 @@ By accessing these elements, you can customize BackstageView. Here is an example
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 >note BackstageTabItems, BackstageItemsPanelElement and BackstageContentPanelElement use[RadImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})for most of the predefinied themes.
 >
-

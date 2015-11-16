@@ -10,15 +10,9 @@ position: 0
 
 # Set RadRibbonBar in titlebar mode
 
+In order to remove the tabstrip part of RadRibbonBar and leave only the titlebar part visible (together with the Start button, and QuickAccess menu), you need to set the following properties:
 
-
-## 
-
-In order to remove the tabstrip part of RadRibbonBar and leave only the titlebar part visible (together with the Start button, and QuickAccess menu), you need to set the following properties:#_[C#] Set the RibbonBar in TitleBar mode_
-
-	
-
-
+#### Set the RibbonBar in TitleBar mode
 
 {{source=..\SamplesCS\RibbonBar\HowTo\SetRadRibbonBarInTitleBarMode.cs region=setRadRibbonBarInTitleBarMode}} 
 {{source=..\SamplesVB\RibbonBar\HowTo\SetRadRibbonBarInTitleBarMode.vb region=setRadRibbonBarInTitleBarMode}} 
@@ -33,9 +27,6 @@ In order to remove the tabstrip part of RadRibbonBar and leave only the titlebar
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-The result is shown on the screenshot below:![ribbonbar-how-to-set-radribbonbar-in-titlebar-mode 001](images/ribbonbar-how-to-set-radribbonbar-in-titlebar-mode001.png)
+The result is shown on the screenshot below:<br>![ribbonbar-how-to-set-radribbonbar-in-titlebar-mode 001](images/ribbonbar-how-to-set-radribbonbar-in-titlebar-mode001.png)

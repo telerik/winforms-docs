@@ -10,18 +10,7 @@ position: 0
 
 # Localization
 
-
-
-## 
-
-RadRibbonBar provides the possibility to localize the strings of the Options and Exit buttons that
-          belong to the application menu. You just neet to set the __Text__ properties 
-          of the __OptionsButton__ and __ExitButton__:
-        #_[C#]_
-
-	
-
-
+RadRibbonBar provides the possibility to localize the strings of the Options and Exit buttons that belong to the application menu. You just neet to set the __Text__ properties of the __OptionsButton__ and __ExitButton__:
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=localize}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=localize}} 
@@ -37,18 +26,9 @@ RadRibbonBar provides the possibility to localize the strings of the Options and
         '
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-Additionally, you can customize the __QuickAccessToolbar__, drop down menu, by setting the
-          following properties of the __LocalizationSettings__ property of __RibbonBarElement__:
-        #_[C#]_
-
-	
-
-
+Additionally, you can customize the __QuickAccessToolbar__, drop down menu, by setting the following properties of the __LocalizationSettings__ property of __RibbonBarElement__:
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=localize2}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=localize2}} 
@@ -68,7 +48,4 @@ Additionally, you can customize the __QuickAccessToolbar__, drop down menu, by s
         '
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

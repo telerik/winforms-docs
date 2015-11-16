@@ -10,16 +10,7 @@ position: 1
 
 # Right-to-left support
 
-
-
-## 
-
-You can present the content of your ribbonbar instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*:                
-           #_[C#]_
-
-	
-
-
+You can present the content of your ribbonbar instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*:       
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=rtl}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=rtl}} 
@@ -34,6 +25,5 @@ You can present the content of your ribbonbar instance in a right-to-left direct
 ````
 
 {{endregion}} 
-
 
 ![ribbonbar-localization-rtl 001](images/ribbonbar-localization-rtl001.png)

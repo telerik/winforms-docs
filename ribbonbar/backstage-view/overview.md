@@ -5,23 +5,16 @@ description: Overview
 slug: winforms/ribbonbar/overview
 tags: overview
 published: True
-position: 3
+position: 0
 ---
 
-# RibbonBar Overview
-
-
+# BackStage View
 
 ## 
 
-Backstage View is the Office 2010 replacement of the Application Menu. It is a menu that covers the whole window area and contains buttons and tabs.
-          Each tab have a content area, which can be populated with any type of Controls.
-          To enable the Backstage View in RadRibbonBar change the __ApplicationMenuStyle__ property to *BackstageView*.
-        #_[C#] Enabling Backstage view_
+Backstage View is the Office 2010 replacement of the Application Menu. It is a menu that covers the whole window area and contains buttons and tabs. Each tab have a content area, which can be populated with any type of Controls. To enable the Backstage View in RadRibbonBar change the __ApplicationMenuStyle__ property to *BackstageView*.
 
-	
-
-
+#### Enabling Backstage view
 
 {{source=..\SamplesCS\RibbonBar\BackstageView\RibbonBackstageView.cs region=ApplicationMenuStyle}} 
 {{source=..\SamplesVB\RibbonBar\BackstageView\RibbonBackstageView.vb region=ApplicationMenuStyle}} 
@@ -35,6 +28,5 @@ Backstage View is the Office 2010 replacement of the Application Menu. It is a m
 ````
 
 {{endregion}} 
-
 
 ![ribbonbar-backstage-view-overview 001](images/ribbonbar-backstage-view-overview001.png)

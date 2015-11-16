@@ -10,7 +10,7 @@ position: 4
 
 # Customizing the Application Menu
 
-The *Application Menu *is a menu that is displayed when you click on the *Office Button *in the upper left corner of __RadRibbonBar__: <br>![ribbonbar-programming-radribbonbar-customizing-the-application-menu 000](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu000.png)
+The *Application Menu* is a menu that is displayed when you click on the *Office Button *in the upper left corner of __RadRibbonBar__: <br>![ribbonbar-programming-radribbonbar-customizing-the-application-menu 000](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu000.png)
 
 The *Application Menu *can contain the same elements as __RadMenu__. Please refer to RadMenu section of the documentation for further a more comprehensive information about __RadMenu__. In contrast to __RadMenu__, menu items can be arranged in two columns.
 
