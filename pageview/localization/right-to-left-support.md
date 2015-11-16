@@ -20,11 +20,12 @@ You can present the content of your pageview instance in a right-to-left directi
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=rtl}} 
 
 ````C#
-            this.radCommandBar1.RightToLeft = RightToLeft.Yes;
+this.radCommandBar1.RightToLeft = RightToLeft.Yes;
+
 ````
 ````VB.NET
-        Me.RadCommandBar1.RightToLeft = Windows.Forms.RightToLeft.Yes
-        '
+Me.RadCommandBar1.RightToLeft = Windows.Forms.RightToLeft.Yes
+
 ````
 
 {{endregion}} 

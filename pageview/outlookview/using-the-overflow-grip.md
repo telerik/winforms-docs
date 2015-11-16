@@ -24,22 +24,20 @@ As well as from the UI, the overflow grip can be used programmatically. To do so
 {{source=..\SamplesVB\PageView\OutlookView.vb region=programmingGrip}} 
 
 ````C#
+RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
+//Drags the sizing grip one item down.
+outlookElement.DragGripDown();
+//Drags the sizing grip one item up.
+outlookElement.DragGripUp();
 
-            RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
-            //Drags the sizing grip one item down.
-            outlookElement.DragGripDown();
-            //Drags the sizing grip one item up.
-            outlookElement.DragGripUp();
 ````
 ````VB.NET
+Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
+'Drags the sizing grip one item down.
+outlookElement.DragGripDown()
+'Drags the sizing grip one item up.
+outlookElement.DragGripUp()
 
-        Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
-        'Drags the sizing grip one item down.
-        outlookElement.DragGripDown()
-        'Drags the sizing grip one item up.
-        outlookElement.DragGripUp()
-
-        '
 ````
 
 {{endregion}} 
@@ -50,22 +48,20 @@ You can also use the HideItems/ShowItems methods to specify how many items will 
 {{source=..\SamplesVB\PageView\OutlookView.vb region=programmingGrip}} 
 
 ````C#
+RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
+//Drags the sizing grip three items down.
+outlookElement.HideItems(3);
+//Drags the sizing grip two items up.
+outlookElement.ShowItems(2);
 
-            RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
-            //Drags the sizing grip three items down.
-            outlookElement.HideItems(3);
-            //Drags the sizing grip two items up.
-            outlookElement.ShowItems(2);
 ````
 ````VB.NET
+Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
+'Drags the sizing grip one item down.
+outlookElement.DragGripDown()
+'Drags the sizing grip one item up.
+outlookElement.DragGripUp()
 
-        Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
-        'Drags the sizing grip one item down.
-        outlookElement.DragGripDown()
-        'Drags the sizing grip one item up.
-        outlookElement.DragGripUp()
-
-        '
 ````
 
 {{endregion}} 

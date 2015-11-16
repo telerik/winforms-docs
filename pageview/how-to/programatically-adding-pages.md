@@ -22,26 +22,24 @@ This help article will demonstrate __RadPageViewPages__can be added to __RadPage
 {{source=..\SamplesVB\PageView\HowTo.vb region=addingPages}} 
 
 ````C#
+            
+RadPageViewPage pageOne = new RadPageViewPage();
+pageOne.Text = "First Page";
+radPageView1.Pages.Add(pageOne);
+            
+RadPageViewPage pageTwo = new RadPageViewPage();
+pageTwo.Text = "Second Page";
+radPageView1.Pages.Add(pageTwo);
 
-            RadPageViewPage pageOne = new RadPageViewPage();
-            pageOne.Text = "First Page";
-            radPageView1.Pages.Add(pageOne);
-
-            RadPageViewPage pageTwo = new RadPageViewPage();
-            pageTwo.Text = "Second Page";
-            radPageView1.Pages.Add(pageTwo);
 ````
 ````VB.NET
+Dim pageOne As New RadPageViewPage()
+pageOne.Text = "First Page"
+radPageView1.Pages.Add(pageOne)
+Dim pageTwo As New RadPageViewPage()
+pageTwo.Text = "Second Page"
+radPageView1.Pages.Add(pageTwo)
 
-        Dim pageOne As New RadPageViewPage()
-        pageOne.Text = "First Page"
-        radPageView1.Pages.Add(pageOne)
-
-        Dim pageTwo As New RadPageViewPage()
-        pageTwo.Text = "Second Page"
-        radPageView1.Pages.Add(pageTwo)
-
-        '
 ````
 
 {{endregion}} 
@@ -56,18 +54,17 @@ Additionally adding other controls to a specified __RadPageViewPage__ programma
 {{source=..\SamplesVB\PageView\HowTo.vb region=addingControls}} 
 
 ````C#
+            
+RadButton button = new RadButton();
+button.Text = "My Button";
+pageOne.Controls.Add(button);
 
-            RadButton button = new RadButton();
-            button.Text = "My Button";
-            pageOne.Controls.Add(button);
 ````
 ````VB.NET
+Dim button As New RadButton()
+button.Text = "My Button"
+pageOne.Controls.Add(button)
 
-        Dim button As New RadButton()
-        button.Text = "My Button"
-        pageOne.Controls.Add(button)
-
-        '
 ````
 
 {{endregion}} 

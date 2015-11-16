@@ -36,56 +36,55 @@ You can bind the combobox control programmatically in your application code. The
 {{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=setUp}} 
 
 ````C#
-            
-        protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
-            
-            NwindDataSet nwindDataSet = new NwindDataSet();
-            CustomersTableAdapter customersTableAdapter = new CustomersTableAdapter();
-            customersTableAdapter.Fill(nwindDataSet.Customers);
-            this.radMultiColumnComboBox1.DataSource = nwindDataSet.Customers;
-            foreach (GridViewDataColumn column in
-                this.radMultiColumnComboBox1.MultiColumnComboBoxElement.Columns)
-            {
-                column.BestFit();
-            }
-        }
-            
-        void SetUpGrid()
-        {
-            RadGridView gridViewControl = this.radMultiColumnComboBox1.EditorControl;
-            gridViewControl.MasterTemplate.AutoGenerateColumns = false;
-            gridViewControl.Columns.Add(new GridViewTextBoxColumn("CustomerID"));
-            gridViewControl.Columns.Add(new GridViewTextBoxColumn("ContactName"));
-            gridViewControl.Columns.Add(new GridViewTextBoxColumn("ContactTitle"));
-            gridViewControl.Columns.Add(new GridViewTextBoxColumn("Country"));
-            gridViewControl.Columns.Add(new GridViewTextBoxColumn("Phone"));
-        }
+    
+protected override void OnLoad(EventArgs e)
+{
+    base.OnLoad(e);
+    
+    NwindDataSet nwindDataSet = new NwindDataSet();
+    CustomersTableAdapter customersTableAdapter = new CustomersTableAdapter();
+    customersTableAdapter.Fill(nwindDataSet.Customers);
+    this.radMultiColumnComboBox1.DataSource = nwindDataSet.Customers;
+    foreach (GridViewDataColumn column in
+        this.radMultiColumnComboBox1.MultiColumnComboBoxElement.Columns)
+    {
+        column.BestFit();
+    }
+}
+    
+void SetUpGrid()
+{
+    RadGridView gridViewControl = this.radMultiColumnComboBox1.EditorControl;
+    gridViewControl.MasterTemplate.AutoGenerateColumns = false;
+    gridViewControl.Columns.Add(new GridViewTextBoxColumn("CustomerID"));
+    gridViewControl.Columns.Add(new GridViewTextBoxColumn("ContactName"));
+    gridViewControl.Columns.Add(new GridViewTextBoxColumn("ContactTitle"));
+    gridViewControl.Columns.Add(new GridViewTextBoxColumn("Country"));
+    gridViewControl.Columns.Add(new GridViewTextBoxColumn("Phone"));
+}
+
 ````
 ````VB.NET
-    Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-        MyBase.OnLoad(e)
+Protected Overrides Sub OnLoad(ByVal e As EventArgs)
+    MyBase.OnLoad(e)
+    Dim nwindDataSet As New NwindDataSet()
+    Dim customersTableAdapter As New CustomersTableAdapter()
+    customersTableAdapter.Fill(nwindDataSet.Customers)
+    Me.RadMultiColumnComboBox1.DataSource = nwindDataSet.Customers
+    For Each column As GridViewDataColumn In Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.Columns
+        column.BestFit()
+    Next column
+End Sub
+Private Sub SetUpGrid()
+    Dim gridViewControl As RadGridView = Me.RadMultiColumnComboBox1.EditorControl
+    gridViewControl.MasterTemplate.AutoGenerateColumns = False
+    gridViewControl.Columns.Add(New GridViewTextBoxColumn("CustomerID"))
+    gridViewControl.Columns.Add(New GridViewTextBoxColumn("ContactName"))
+    gridViewControl.Columns.Add(New GridViewTextBoxColumn("ContactTitle"))
+    gridViewControl.Columns.Add(New GridViewTextBoxColumn("Country"))
+    gridViewControl.Columns.Add(New GridViewTextBoxColumn("Phone"))
+End Sub
 
-        Dim nwindDataSet As New NwindDataSet()
-        Dim customersTableAdapter As New CustomersTableAdapter()
-        customersTableAdapter.Fill(nwindDataSet.Customers)
-        Me.RadMultiColumnComboBox1.DataSource = nwindDataSet.Customers
-        For Each column As GridViewDataColumn In Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.Columns
-            column.BestFit()
-        Next column
-    End Sub
-
-    Private Sub SetUpGrid()
-        Dim gridViewControl As RadGridView = Me.RadMultiColumnComboBox1.EditorControl
-        gridViewControl.MasterTemplate.AutoGenerateColumns = False
-        gridViewControl.Columns.Add(New GridViewTextBoxColumn("CustomerID"))
-        gridViewControl.Columns.Add(New GridViewTextBoxColumn("ContactName"))
-        gridViewControl.Columns.Add(New GridViewTextBoxColumn("ContactTitle"))
-        gridViewControl.Columns.Add(New GridViewTextBoxColumn("Country"))
-        gridViewControl.Columns.Add(New GridViewTextBoxColumn("Phone"))
-    End Sub
-    '
 ````
 
 {{endregion}} 

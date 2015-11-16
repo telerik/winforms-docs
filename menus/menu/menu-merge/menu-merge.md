@@ -21,11 +21,12 @@ You can merge RadMenuItems by using the MergeMenu method of RadMenu. The param
 {{source=..\SamplesVB\Menus\Menu\MenuMerge.vb region=Merge}} 
 
 ````C#
-            radMenu1.MergeMenu(srcRadMenu2);
+radMenu1.MergeMenu(srcRadMenu2);
+
 ````
 ````VB.NET
-        radMenu1.MergeMenu(srcRadMenu2)
-        '
+radMenu1.MergeMenu(srcRadMenu2)
+
 ````
 
 {{endregion}} 

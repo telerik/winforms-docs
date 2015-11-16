@@ -24,13 +24,14 @@ The main property that controls the behavior of the tabs is the __ItemMode__ pro
 {{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeNone}} 
 
 ````C#
-            RadPageViewStripElement stripElement = this.pageView.ViewElement as RadPageViewStripElement;
-            stripElement.ItemFitMode = StripViewItemFitMode.None;
+RadPageViewStripElement stripElement = this.pageView.ViewElement as RadPageViewStripElement;
+stripElement.ItemFitMode = StripViewItemFitMode.None;
+
 ````
 ````VB.NET
-        Dim stripElement As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-        stripElement.ItemFitMode = StripViewItemFitMode.None
-        '
+Dim stripElement As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
+stripElement.ItemFitMode = StripViewItemFitMode.None
+
 ````
 
 {{endregion}} 
@@ -44,13 +45,14 @@ The main property that controls the behavior of the tabs is the __ItemMode__ pro
 {{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeShrink}} 
 
 ````C#
-            RadPageViewStripElement stripElement1 = this.pageView.ViewElement as RadPageViewStripElement;
-            stripElement1.ItemFitMode = StripViewItemFitMode.Shrink;
+RadPageViewStripElement stripElement1 = this.pageView.ViewElement as RadPageViewStripElement;
+stripElement1.ItemFitMode = StripViewItemFitMode.Shrink;
+
 ````
 ````VB.NET
-        Dim stripElement1 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-        stripElement1.ItemFitMode = StripViewItemFitMode.Shrink
-        '
+Dim stripElement1 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
+stripElement1.ItemFitMode = StripViewItemFitMode.Shrink
+
 ````
 
 {{endregion}} 
@@ -64,13 +66,14 @@ The main property that controls the behavior of the tabs is the __ItemMode__ pro
 {{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeFill}} 
 
 ````C#
-            RadPageViewStripElement stripElement2 = this.pageView.ViewElement as RadPageViewStripElement;
-            stripElement2.ItemFitMode = StripViewItemFitMode.Fill;
+RadPageViewStripElement stripElement2 = this.pageView.ViewElement as RadPageViewStripElement;
+stripElement2.ItemFitMode = StripViewItemFitMode.Fill;
+
 ````
 ````VB.NET
-        Dim stripElement2 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-        stripElement2.ItemFitMode = StripViewItemFitMode.Fill
-        '
+Dim stripElement2 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
+stripElement2.ItemFitMode = StripViewItemFitMode.Fill
+
 ````
 
 {{endregion}} 
@@ -85,13 +88,14 @@ The main property that controls the behavior of the tabs is the __ItemMode__ pro
 {{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeShrinkAndFill}} 
 
 ````C#
-            RadPageViewStripElement stripElement3 = this.pageView.ViewElement as RadPageViewStripElement;
-            stripElement3.ItemFitMode = StripViewItemFitMode.ShrinkAndFill;
+RadPageViewStripElement stripElement3 = this.pageView.ViewElement as RadPageViewStripElement;
+stripElement3.ItemFitMode = StripViewItemFitMode.ShrinkAndFill;
+
 ````
 ````VB.NET
-        Dim stripElement3 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-        stripElement3.ItemFitMode = StripViewItemFitMode.ShrinkAndFill
-        '
+Dim stripElement3 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
+stripElement3.ItemFitMode = StripViewItemFitMode.ShrinkAndFill
+
 ````
 
 {{endregion}} 
@@ -105,14 +109,15 @@ The main property that controls the behavior of the tabs is the __ItemMode__ pro
 {{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeFillHeight}} 
 
 ````C#
-            RadPageViewStripElement stripElement4 = this.pageView.ViewElement as RadPageViewStripElement;
-            stripElement4.ItemContainer.MinSize = new System.Drawing.Size(0, 50);
-            stripElement4.ItemFitMode = StripViewItemFitMode.FillHeight;
+RadPageViewStripElement stripElement4 = this.pageView.ViewElement as RadPageViewStripElement;
+stripElement4.ItemContainer.MinSize = new System.Drawing.Size(0, 50);
+stripElement4.ItemFitMode = StripViewItemFitMode.FillHeight;
+
 ````
 ````VB.NET
-        Dim stripElement4 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-        stripElement4.ItemContainer.MinSize = New System.Drawing.Size(0, 50)
-        '
+Dim stripElement4 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
+stripElement4.ItemContainer.MinSize = New System.Drawing.Size(0, 50)
+
 ````
 
 {{endregion}} 
@@ -126,30 +131,22 @@ The main property that controls the behavior of the tabs is the __ItemMode__ pro
 {{source=..\SamplesVB\PageView\PageViewMultiLine.vb region=PageViewMultiLineItemFitModeNone}} 
 
 ````C#
+this.pageView.ViewMode = PageViewMode.Strip;
+RadPageViewStripElement stripElement = this.pageView.ViewElement as RadPageViewStripElement;
+stripElement.ItemFitMode = StripViewItemFitMode.MultiLine;
+stripElement.MultiLineItemFitMode = MultiLineItemFitMode.None;
+this.radPageViewPage4.Item.Row = 2;
+this.radPageViewPage5.Item.Row = 3;
 
-            this.pageView.ViewMode = PageViewMode.Strip;
-
-            RadPageViewStripElement stripElement = this.pageView.ViewElement as RadPageViewStripElement;
-
-            stripElement.ItemFitMode = StripViewItemFitMode.MultiLine;
-            stripElement.MultiLineItemFitMode = MultiLineItemFitMode.None;
-
-            this.radPageViewPage4.Item.Row = 2;
-            this.radPageViewPage5.Item.Row = 3;
 ````
 ````VB.NET
+Me.pageView.ViewMode = PageViewMode.Strip
+Dim stripElement As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
+stripElement.ItemFitMode = StripViewItemFitMode.MultiLine
+stripElement.MultiLineItemFitMode = MultiLineItemFitMode.None
+Me.RadPageViewPage4.Item.Row = 2
+Me.RadPageViewPage5.Item.Row = 3
 
-        Me.pageView.ViewMode = PageViewMode.Strip
-
-        Dim stripElement As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-
-        stripElement.ItemFitMode = StripViewItemFitMode.MultiLine
-        stripElement.MultiLineItemFitMode = MultiLineItemFitMode.None
-
-        Me.RadPageViewPage4.Item.Row = 2
-        Me.RadPageViewPage5.Item.Row = 3
-
-        '
 ````
 
 {{endregion}} 
@@ -163,24 +160,18 @@ If the property is set to *Reflow*, the layout will automatically calculate thes
 {{source=..\SamplesVB\PageView\PageViewMultiLine.vb region=PageViewMultiLineItemFitModeReflow}} 
 
 ````C#
+this.pageView.ViewMode = PageViewMode.Strip;
+RadPageViewStripElement stripElement1 = this.pageView.ViewElement as RadPageViewStripElement;
+stripElement1.ItemFitMode = StripViewItemFitMode.MultiLine;
+stripElement1.MultiLineItemFitMode = MultiLineItemFitMode.Reflow;
 
-            this.pageView.ViewMode = PageViewMode.Strip;
-
-            RadPageViewStripElement stripElement1 = this.pageView.ViewElement as RadPageViewStripElement;
-
-            stripElement1.ItemFitMode = StripViewItemFitMode.MultiLine;
-            stripElement1.MultiLineItemFitMode = MultiLineItemFitMode.Reflow;
 ````
 ````VB.NET
+Me.pageView.ViewMode = PageViewMode.Strip
+Dim stripElement1 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
+stripElement1.ItemFitMode = StripViewItemFitMode.MultiLine
+stripElement1.MultiLineItemFitMode = MultiLineItemFitMode.Reflow
 
-        Me.pageView.ViewMode = PageViewMode.Strip
-
-        Dim stripElement1 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-
-        stripElement1.ItemFitMode = StripViewItemFitMode.MultiLine
-        stripElement1.MultiLineItemFitMode = MultiLineItemFitMode.Reflow
-
-        '
 ````
 
 {{endregion}} 

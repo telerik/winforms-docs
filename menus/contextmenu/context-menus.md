@@ -26,11 +26,12 @@ There are two ways to attach a context menu to a given control or portion of a c
 {{source=..\SamplesVB\Menus\ContextMenu\ContextMenu1.vb region=assignToTreeView}} 
 
 ````C#
-            radTreeView1.Nodes[0].ContextMenu = radContextMenu1;
+radTreeView1.Nodes[0].ContextMenu = radContextMenu1;
+
 ````
 ````VB.NET
-        RadTreeView1.Nodes(0).ContextMenu = RadContextMenu1
-        '
+RadTreeView1.Nodes(0).ContextMenu = RadContextMenu1
+
 ````
 
 {{endregion}} 
@@ -47,23 +48,24 @@ There are two ways to attach a context menu to a given control or portion of a c
 {{source=..\SamplesVB\Menus\ContextMenu\ContextMenu1.vb region=mouseDown}} 
 
 ````C#
-        void radCalendar1_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-            {
-                Point p = (sender as Control).PointToScreen(e.Location);
-                radContextMenu1.Show(p.X, p.Y);
-            }
-        }
+void radCalendar1_MouseDown(object sender, MouseEventArgs e)
+{
+    if (e.Button == MouseButtons.Right)
+    {
+        Point p = (sender as Control).PointToScreen(e.Location);
+        radContextMenu1.Show(p.X, p.Y);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radCalendar1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
-        If e.Button = MouseButtons.Right Then
-            Dim p As Point = (TryCast(sender, Control)).PointToScreen(e.Location)
-            RadContextMenu1.Show(p.X, p.Y)
-        End If
-    End Sub
-    '
+Private Sub radCalendar1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
+    If e.Button = MouseButtons.Right Then
+        Dim p As Point = (TryCast(sender, Control)).PointToScreen(e.Location)
+        RadContextMenu1.Show(p.X, p.Y)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

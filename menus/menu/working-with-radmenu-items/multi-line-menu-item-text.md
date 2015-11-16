@@ -24,13 +24,14 @@ In code use __Environment.NewLine__ to separate strings:
 {{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=multiline}} 
 
 ````C#
-            radMenuItem1.Text = "Bar Chart - " +
-             Environment.NewLine +
-             "Compare multiple series of data";
+radMenuItem1.Text = "Bar Chart - " +
+ Environment.NewLine +
+ "Compare multiple series of data";
+
 ````
 ````VB.NET
-        radMenuItem1.Text = "Bar Chart - " & Environment.NewLine & "Compare multiple series of data"
-        '
+radMenuItem1.Text = "Bar Chart - " & Environment.NewLine & "Compare multiple series of data"
+
 ````
 
 {{endregion}} 
@@ -43,11 +44,12 @@ The __AllItemsEqualHeight__ property controls whether the RadMenu allows some me
 {{source=..\SamplesVB\Menus\Menu\WorkingWithRadMenuItems\MultilineMenuItemText.vb region=Height}} 
 
 ````C#
-            radMenu1.AllItemsEqualHeight = true;
+radMenu1.AllItemsEqualHeight = true;
+
 ````
 ````VB.NET
-        radMenu1.AllItemsEqualHeight = True
-        '
+radMenu1.AllItemsEqualHeight = True
+
 ````
 
 {{endregion}} 

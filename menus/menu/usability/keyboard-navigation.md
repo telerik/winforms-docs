@@ -28,11 +28,12 @@ You can assign mnemonics to menu items. For example, you can use the __N__ key t
 {{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=mnemonics}} 
 
 ````C#
-            radMenuItem1.Text = "&New";
+radMenuItem1.Text = "&New";
+
 ````
 ````VB.NET
-        radMenuItem1.Text = "&New"
-        '
+radMenuItem1.Text = "&New"
+
 ````
 
 {{endregion}} 

@@ -26,11 +26,12 @@ The __AutoCompleteMode__ property controls the auto-complete behavior and can be
 {{source=..\SamplesVB\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.vb region=AutoCompleteMode.None}} 
 
 ````C#
-        this.radMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.None;
+this.radMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.None;
+
 ````
 ````VB.NET
-        Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.None
-        '
+Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.None
+
 ````
 
 {{endregion}} 
@@ -41,11 +42,12 @@ The __AutoCompleteMode__ property controls the auto-complete behavior and can be
 {{source=..\SamplesVB\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.vb region=AutoCompleteMode.Append}} 
 
 ````C#
-        this.radMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Append;
+this.radMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Append;
+
 ````
 ````VB.NET
-        Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Append
-        '
+Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Append
+
 ````
 
 {{endregion}} 
@@ -56,11 +58,12 @@ The __AutoCompleteMode__ property controls the auto-complete behavior and can be
 {{source=..\SamplesVB\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.vb region=AutoCompleteMode.Suggest}} 
 
 ````C#
-        this.radMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
+this.radMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
+
 ````
 ````VB.NET
-        Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest
-        '
+Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest
+
 ````
 
 {{endregion}}

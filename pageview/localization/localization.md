@@ -30,67 +30,64 @@ Below is a sample implementation of a custom localization provider, which return
 {{source=..\SamplesVB\PageView\Localization.vb region=localizationImpl}} 
 
 ````C#
-
-        public class MyEnglishRadPageViewLocalizationProvider : RadPageViewLocalizationProvider
+public class MyEnglishRadPageViewLocalizationProvider : RadPageViewLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
+    {
+        switch (id)
         {
-            public override string GetLocalizedString(string id)
-            {
-                switch (id)
-                {
-                    case RadPageViewStringId.CloseButtonTooltip:
-                        return "Close Selected Page";
-                    case RadPageViewStringId.ItemListButtonTooltip:
-                        return "Available Pages";
-                    case RadPageViewStringId.LeftScrollButtonTooltip:
-                        return "Scroll Strip Left";
-                    case RadPageViewStringId.RightScrollButtonTooltip:
-                        return "Scroll Strip Right";
-                    case RadPageViewStringId.ShowMoreButtonsItemCaption:
-                        return "Show More Buttons";
-                    case RadPageViewStringId.ShowFewerButtonsItemCaption:
-                        return "Show Fewer Buttons";
-                    case RadPageViewStringId.AddRemoveButtonsItemCaption:
-                        return "Add or Remove Buttons";
-                    case RadPageViewStringId.ItemCloseButtonTooltip:
-                        return "Close Page";
-                    case RadPageViewStringId.NewItemTooltipText:
-                        return "Add New Page";
-                }
-
-                return base.GetLocalizedString(id);
-            }
+            case RadPageViewStringId.CloseButtonTooltip:
+                return "Close Selected Page";
+            case RadPageViewStringId.ItemListButtonTooltip:
+                return "Available Pages";
+            case RadPageViewStringId.LeftScrollButtonTooltip:
+                return "Scroll Strip Left";
+            case RadPageViewStringId.RightScrollButtonTooltip:
+                return "Scroll Strip Right";
+            case RadPageViewStringId.ShowMoreButtonsItemCaption:
+                return "Show More Buttons";
+            case RadPageViewStringId.ShowFewerButtonsItemCaption:
+                return "Show Fewer Buttons";
+            case RadPageViewStringId.AddRemoveButtonsItemCaption:
+                return "Add or Remove Buttons";
+            case RadPageViewStringId.ItemCloseButtonTooltip:
+                return "Close Page";
+            case RadPageViewStringId.NewItemTooltipText:
+                return "Add New Page";
         }
+        return base.GetLocalizedString(id);
+    }
+}
+
 ````
 ````VB.NET
+Public Class MyEnglishRadPageViewLocalizationProvider
+    Inherits RadPageViewLocalizationProvider
+    Public Overrides Function GetLocalizedString(ByVal id As String) As String
+        Select Case id
+            Case RadPageViewStringId.CloseButtonTooltip
+                Return "Close Selected Page"
+            Case RadPageViewStringId.ItemListButtonTooltip
+                Return "Available Pages"
+            Case RadPageViewStringId.LeftScrollButtonTooltip
+                Return "Scroll Strip Left"
+            Case RadPageViewStringId.RightScrollButtonTooltip
+                Return "Scroll Strip Right"
+            Case RadPageViewStringId.ShowMoreButtonsItemCaption
+                Return "Show More Buttons"
+            Case RadPageViewStringId.ShowFewerButtonsItemCaption
+                Return "Show Fewer Buttons"
+            Case RadPageViewStringId.AddRemoveButtonsItemCaption
+                Return "Add or Remove Buttons"
+            Case RadPageViewStringId.ItemCloseButtonTooltip
+                Return "Close Page"
+            Case RadPageViewStringId.NewItemTooltipText
+                Return "Add New Page"
+        End Select
+        Return MyBase.GetLocalizedString(id)
+    End Function
+End Class
 
-    Public Class MyEnglishRadPageViewLocalizationProvider
-        Inherits RadPageViewLocalizationProvider
-        Public Overrides Function GetLocalizedString(ByVal id As String) As String
-            Select Case id
-                Case RadPageViewStringId.CloseButtonTooltip
-                    Return "Close Selected Page"
-                Case RadPageViewStringId.ItemListButtonTooltip
-                    Return "Available Pages"
-                Case RadPageViewStringId.LeftScrollButtonTooltip
-                    Return "Scroll Strip Left"
-                Case RadPageViewStringId.RightScrollButtonTooltip
-                    Return "Scroll Strip Right"
-                Case RadPageViewStringId.ShowMoreButtonsItemCaption
-                    Return "Show More Buttons"
-                Case RadPageViewStringId.ShowFewerButtonsItemCaption
-                    Return "Show Fewer Buttons"
-                Case RadPageViewStringId.AddRemoveButtonsItemCaption
-                    Return "Add or Remove Buttons"
-                Case RadPageViewStringId.ItemCloseButtonTooltip
-                    Return "Close Page"
-                Case RadPageViewStringId.NewItemTooltipText
-                    Return "Add New Page"
-            End Select
-            Return MyBase.GetLocalizedString(id)
-        End Function
-    End Class
-
-    '
 ````
 
 {{endregion}} 
@@ -103,14 +100,12 @@ To apply the custom localization provider, instantiate and assign it to the cur
 {{source=..\SamplesVB\PageView\Localization.vb region=localizationUsage}} 
 
 ````C#
+RadPageViewLocalizationProvider.CurrentProvider = new MyEnglishRadPageViewLocalizationProvider();
 
-            RadPageViewLocalizationProvider.CurrentProvider = new MyEnglishRadPageViewLocalizationProvider();
 ````
 ````VB.NET
+RadPageViewLocalizationProvider.CurrentProvider = New MyEnglishRadPageViewLocalizationProvider()
 
-        RadPageViewLocalizationProvider.CurrentProvider = New MyEnglishRadPageViewLocalizationProvider()
-
-        '
 ````
 
 {{endregion}}

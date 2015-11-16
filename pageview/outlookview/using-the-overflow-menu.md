@@ -24,22 +24,20 @@ As well as from the UI, you can check/uncheck items by using the RadPageViewOutl
 {{source=..\SamplesVB\PageView\OutlookView.vb region=programmingGrip}} 
 
 ````C#
+RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
+//Hide the first item
+outlookElement.UncheckItem(this.radPageViewPage1.Item as RadPageViewOutlookItem);
+//Show the first item again
+outlookElement.CheckItem(this.radPageViewPage1.Item as RadPageViewOutlookItem);
 
-            RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
-            //Hide the first item
-            outlookElement.UncheckItem(this.radPageViewPage1.Item as RadPageViewOutlookItem);
-            //Show the first item again
-            outlookElement.CheckItem(this.radPageViewPage1.Item as RadPageViewOutlookItem);
 ````
 ````VB.NET
+Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
+'Drags the sizing grip one item down.
+outlookElement.DragGripDown()
+'Drags the sizing grip one item up.
+outlookElement.DragGripUp()
 
-        Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
-        'Drags the sizing grip one item down.
-        outlookElement.DragGripDown()
-        'Drags the sizing grip one item up.
-        outlookElement.DragGripUp()
-
-        '
 ````
 
 {{endregion}} 

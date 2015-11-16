@@ -29,21 +29,20 @@ The sample code demonstrates how to start editing:
 
 ````C#
             
-            radPageView1.ViewElement.AllowEdit = true;
-            // set the SelectedPage - this page tab will be edited  
-            radPageView1.SelectedPage = radPageView1.Pages[1];
-            // this will start edit operation on the selected page tab
-            radPageView1.ViewElement.BeginEdit();
+radPageView1.ViewElement.AllowEdit = true;
+// set the SelectedPage - this page tab will be edited  
+radPageView1.SelectedPage = radPageView1.Pages[1];
+// this will start edit operation on the selected page tab
+radPageView1.ViewElement.BeginEdit();
+
 ````
 ````VB.NET
+RadPageView1.ViewElement.AllowEdit = True
+'set the SelectedPage - this page tab will be edited 
+RadPageView1.SelectedPage = RadPageView1.Pages(1)
+'this will start edit operation on the selected page tab
+RadPageView1.ViewElement.BeginEdit()
 
-        RadPageView1.ViewElement.AllowEdit = True
-        'set the SelectedPage - this page tab will be edited 
-        RadPageView1.SelectedPage = RadPageView1.Pages(1)
-        'this will start edit operation on the selected page tab
-        RadPageView1.ViewElement.BeginEdit()
-
-        '
 ````
 
 {{endregion}} 
@@ -74,13 +73,14 @@ The sample code below demonstrates how to forbid the user to clear the text in t
 
 ````C#
             
-            radPageView1.ViewElement.AllowEdit = true;
-            radPageView1.ViewElement.EditorInitialized += ViewElement_EditorInitialized;
+radPageView1.ViewElement.AllowEdit = true;
+radPageView1.ViewElement.EditorInitialized += ViewElement_EditorInitialized;
+
 ````
 ````VB.NET
-        RadPageView1.ViewElement.AllowEdit = True
-        AddHandler RadPageView1.ViewElement.EditorInitialized, AddressOf ViewElement_EditorInitialized
-        '
+RadPageView1.ViewElement.AllowEdit = True
+AddHandler RadPageView1.ViewElement.EditorInitialized, AddressOf ViewElement_EditorInitialized
+
 ````
 
 {{endregion}} 
@@ -89,56 +89,54 @@ The sample code below demonstrates how to forbid the user to clear the text in t
 {{source=..\SamplesVB\PageView\EditingRadPageViewElement\EditingRadPageViewElement.vb region=EditContinuation}} 
 
 ````C#
-        string text;
-        private void ViewElement_EditorInitialized(object sender, RadPageViewEditorEventArgs e)
-        {
-            radPageView1.ViewElement.ActiveEditor.Validating += ActiveEditor_Validating;
-            radPageView1.ViewElement.ActiveEditor.Validated += ActiveEditor_Validated;    
-            text = e.Value.ToString();
-        }
+string text;
+private void ViewElement_EditorInitialized(object sender, RadPageViewEditorEventArgs e)
+{
+    radPageView1.ViewElement.ActiveEditor.Validating += ActiveEditor_Validating;
+    radPageView1.ViewElement.ActiveEditor.Validated += ActiveEditor_Validated;    
+    text = e.Value.ToString();
+}
         
-        private void ActiveEditor_Validating(object sender, CancelEventArgs e)
-        {
-            RadPageViewElement.PageViewItemTextEditor editor =
-                sender as RadPageViewElement.PageViewItemTextEditor;
-            
-            if (editor != null && radPageView1.ViewElement.ActiveEditor.Value == string.Empty)
-            {
-                e.Cancel = true;
-                editor.Value = text;
-                RadMessageBox.Show("Page label can't be empty!", "Error", MessageBoxButtons.OK, RadMessageIcon.Error);
-            }
-        }    
+private void ActiveEditor_Validating(object sender, CancelEventArgs e)
+{
+    RadPageViewElement.PageViewItemTextEditor editor =
+        sender as RadPageViewElement.PageViewItemTextEditor;
+    
+    if (editor != null && radPageView1.ViewElement.ActiveEditor.Value == string.Empty)
+    {
+        e.Cancel = true;
+        editor.Value = text;
+        RadMessageBox.Show("Page label can't be empty!", "Error", MessageBoxButtons.OK, RadMessageIcon.Error);
+    }
+}    
         
-        private void ActiveEditor_Validated(object sender, EventArgs e)
-        {
-            RadMessageBox.Show("Page label has been successfully updated!", "Information", MessageBoxButtons.OK, RadMessageIcon.Info);
-            this.radPageView1.Cursor = Cursors.Arrow;
-        }
+private void ActiveEditor_Validated(object sender, EventArgs e)
+{
+    RadMessageBox.Show("Page label has been successfully updated!", "Information", MessageBoxButtons.OK, RadMessageIcon.Info);
+    this.radPageView1.Cursor = Cursors.Arrow;
+}
+
 ````
 ````VB.NET
-    Private pageText As String
-    Private Sub ViewElement_EditorInitialized(ByVal sender As Object, ByVal e As RadPageViewEditorEventArgs)
-        AddHandler radPageView1.ViewElement.ActiveEditor.Validating, AddressOf ActiveEditor_Validating
-        AddHandler radPageView1.ViewElement.ActiveEditor.Validated, AddressOf ActiveEditor_Validated
-        pageText = e.Value.ToString()
-    End Sub
+Private pageText As String
+Private Sub ViewElement_EditorInitialized(ByVal sender As Object, ByVal e As RadPageViewEditorEventArgs)
+    AddHandler radPageView1.ViewElement.ActiveEditor.Validating, AddressOf ActiveEditor_Validating
+    AddHandler radPageView1.ViewElement.ActiveEditor.Validated, AddressOf ActiveEditor_Validated
+    pageText = e.Value.ToString()
+End Sub
+Private Sub ActiveEditor_Validating(ByVal sender As Object, ByVal e As CancelEventArgs)
+    Dim editor As RadPageViewElement.PageViewItemTextEditor = TryCast(sender, RadPageViewElement.PageViewItemTextEditor)
+    If editor IsNot Nothing AndAlso radPageView1.ViewElement.ActiveEditor.Value = String.Empty Then
+        e.Cancel = True
+        editor.Value = pageText
+        RadMessageBox.Show("Page label can't be empty!", "Error", MessageBoxButtons.OK, RadMessageIcon.Error)
+    End If
+End Sub
+Private Sub ActiveEditor_Validated(ByVal sender As Object, ByVal e As EventArgs)
+    RadMessageBox.Show("Page label has been successfully updated!", "Information", MessageBoxButtons.OK, RadMessageIcon.Info)
+    Me.radPageView1.Cursor = Cursors.Arrow
+End Sub
 
-    Private Sub ActiveEditor_Validating(ByVal sender As Object, ByVal e As CancelEventArgs)
-        Dim editor As RadPageViewElement.PageViewItemTextEditor = TryCast(sender, RadPageViewElement.PageViewItemTextEditor)
-
-        If editor IsNot Nothing AndAlso radPageView1.ViewElement.ActiveEditor.Value = String.Empty Then
-            e.Cancel = True
-            editor.Value = pageText
-            RadMessageBox.Show("Page label can't be empty!", "Error", MessageBoxButtons.OK, RadMessageIcon.Error)
-        End If
-    End Sub
-
-    Private Sub ActiveEditor_Validated(ByVal sender As Object, ByVal e As EventArgs)
-        RadMessageBox.Show("Page label has been successfully updated!", "Information", MessageBoxButtons.OK, RadMessageIcon.Info)
-        Me.radPageView1.Cursor = Cursors.Arrow
-    End Sub
-    '
 ````
 
 {{endregion}}

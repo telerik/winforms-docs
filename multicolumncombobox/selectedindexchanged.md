@@ -20,21 +20,22 @@ __SelectedIndexChanged__ event fires when the index of the current list item cha
 {{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=selectedIndexChanged}} 
 
 ````C#
-            
-        void radMultiColumnComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string text;
-            text = string.Format("Row changed, current Name = {0}", radMultiColumnComboBox1.EditorControl.Rows[radMultiColumnComboBox1.SelectedIndex].Cells["ContactName"].Value);
-            radListControl1.Items.Add(text);
-        }
+    
+void radMultiColumnComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+{
+    string text;
+    text = string.Format("Row changed, current Name = {0}", radMultiColumnComboBox1.EditorControl.Rows[radMultiColumnComboBox1.SelectedIndex].Cells["ContactName"].Value);
+    radListControl1.Items.Add(text);
+}
+
 ````
 ````VB.NET
-    Private Sub radMultiColumnComboBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
-        Dim text As String
-        text = String.Format("Row changed, current Name = {0}", RadMultiColumnComboBox1.EditorControl.Rows(RadMultiColumnComboBox1.SelectedIndex).Cells("ContactName").Value)
-        RadListControl1.Items.Add(text)
-    End Sub
-    '
+Private Sub radMultiColumnComboBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
+    Dim text As String
+    text = String.Format("Row changed, current Name = {0}", RadMultiColumnComboBox1.EditorControl.Rows(RadMultiColumnComboBox1.SelectedIndex).Cells("ContactName").Value)
+    RadListControl1.Items.Add(text)
+End Sub
+
 ````
 
 {{endregion}} 

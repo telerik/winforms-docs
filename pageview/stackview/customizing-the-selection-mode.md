@@ -34,18 +34,14 @@ To set the selection mode you should use the *ItemSelectionMode* property of the
 {{source=..\SamplesVB\PageView\StackView.vb region=itemSelectionMode}} 
 
 ````C#
-
-            RadPageViewStackElement stackElement = this.radPageView1.ViewElement as RadPageViewStackElement;
-            stackElement.ItemSelectionMode = StackViewItemSelectionMode.ContentWithSelected;
+RadPageViewStackElement stackElement = this.radPageView1.ViewElement as RadPageViewStackElement;
+stackElement.ItemSelectionMode = StackViewItemSelectionMode.ContentWithSelected;
 
 ````
 ````VB.NET
+Dim stackElement As RadPageViewStackElement = TryCast(Me.radPageView1.ViewElement, RadPageViewStackElement)
+stackElement.ItemSelectionMode = StackViewItemSelectionMode.ContentWithSelected
 
-        Dim stackElement As RadPageViewStackElement = TryCast(Me.radPageView1.ViewElement, RadPageViewStackElement)
-        stackElement.ItemSelectionMode = StackViewItemSelectionMode.ContentWithSelected
-
-
-        '
 ````
 
 {{endregion}} 

@@ -44,24 +44,25 @@ To load the __RadDropDownList__with members of the __RadEasingType__ enumeration
 {{source=..\SamplesVB\Menus\Menu\AnimationEffects.vb region=easingTypes}} 
 
 ````C#
-            foreach (RadEasingType ret in Enum.GetValues(typeof(RadEasingType)))
-            {
-                RadListDataItem item = new RadListDataItem();
-                item.Text = ret.ToString("f");
-                item.Value = ret;
-                ddlAnimation.Items.Add(item);
-            }
-            ddlAnimation.SelectedIndex = 0;
+foreach (RadEasingType ret in Enum.GetValues(typeof(RadEasingType)))
+{
+    RadListDataItem item = new RadListDataItem();
+    item.Text = ret.ToString("f");
+    item.Value = ret;
+    ddlAnimation.Items.Add(item);
+}
+ddlAnimation.SelectedIndex = 0;
+
 ````
 ````VB.NET
-        For Each ret As RadEasingType In System.Enum.GetValues(GetType(RadEasingType))
-            Dim item As New RadListDataItem()
-            item.Text = ret.ToString("f")
-            item.Value = ret
-            ddlAnimation.Items.Add(item)
-        Next ret
-        ddlAnimation.SelectedIndex = 0
-        '
+For Each ret As RadEasingType In System.Enum.GetValues(GetType(RadEasingType))
+    Dim item As New RadListDataItem()
+    item.Text = ret.ToString("f")
+    item.Value = ret
+    ddlAnimation.Items.Add(item)
+Next ret
+ddlAnimation.SelectedIndex = 0
+
 ````
 
 {{endregion}} 
@@ -80,40 +81,37 @@ When the __RadDropDownList__ selection changes the __RadEasingType__ enumeration
 {{source=..\SamplesVB\Menus\Menu\AnimationEffects.vb region=eventHandlers}} 
 
 ````C#
-        void ddlAnimation_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
-        {
-            RadListDataItem item = (sender as RadDropDownListElement).SelectedItem as RadListDataItem;
-            radMenu1.DropDownAnimationEasing = (RadEasingType)item.Value;
-        }
+void ddlAnimation_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
+{
+    RadListDataItem item = (sender as RadDropDownListElement).SelectedItem as RadListDataItem;
+    radMenu1.DropDownAnimationEasing = (RadEasingType)item.Value;
+}
+void cbEnabled_ToggleStateChanged(object sender, StateChangedEventArgs args)
+{
+    radMenu1.DropDownAnimationEnabled = (sender as RadCheckBox).IsChecked;
+}
+void tbFrames_ValueChanged(object sender, EventArgs e)
+{
+    object trackBarValue = (sender as RadTrackBar).Value;
+    lblFrames.Text = "Frames: " + trackBarValue.ToString();
+    radMenu1.DropDownAnimationFrames = (int)trackBarValue;
+}
 
-        void cbEnabled_ToggleStateChanged(object sender, StateChangedEventArgs args)
-        {
-            radMenu1.DropDownAnimationEnabled = (sender as RadCheckBox).IsChecked;
-        }
-
-        void tbFrames_ValueChanged(object sender, EventArgs e)
-        {
-            object trackBarValue = (sender as RadTrackBar).Value;
-            lblFrames.Text = "Frames: " + trackBarValue.ToString();
-            radMenu1.DropDownAnimationFrames = (int)trackBarValue;
-        }
 ````
 ````VB.NET
-    Private Sub ddlAnimation_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-        Dim item As RadListDataItem = TryCast((TryCast(sender, RadDropDownListElement)).SelectedItem, RadListDataItem)
-        RadMenu1.DropDownAnimationEasing = CType(item.Value, RadEasingType)
-    End Sub
+Private Sub ddlAnimation_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
+    Dim item As RadListDataItem = TryCast((TryCast(sender, RadDropDownListElement)).SelectedItem, RadListDataItem)
+    RadMenu1.DropDownAnimationEasing = CType(item.Value, RadEasingType)
+End Sub
+Private Sub cbEnabled_ToggleStateChanged(ByVal sender As Object, ByVal e As StateChangedEventArgs)
+    RadMenu1.DropDownAnimationEnabled = (TryCast(sender, RadCheckBox)).IsChecked
+End Sub
+Private Sub tbFrames_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+    Dim trackBarValue As Object = (TryCast(sender, RadTrackBar)).Value
+    lblFrames.Text = "Frames: " & trackBarValue.ToString()
+    RadMenu1.DropDownAnimationFrames = CInt(Fix(trackBarValue))
+End Sub
 
-    Private Sub cbEnabled_ToggleStateChanged(ByVal sender As Object, ByVal e As StateChangedEventArgs)
-        RadMenu1.DropDownAnimationEnabled = (TryCast(sender, RadCheckBox)).IsChecked
-    End Sub
-
-    Private Sub tbFrames_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-        Dim trackBarValue As Object = (TryCast(sender, RadTrackBar)).Value
-        lblFrames.Text = "Frames: " & trackBarValue.ToString()
-        RadMenu1.DropDownAnimationFrames = CInt(Fix(trackBarValue))
-    End Sub
-    '
 ````
 
 {{endregion}} 

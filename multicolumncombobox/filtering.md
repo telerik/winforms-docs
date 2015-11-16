@@ -24,21 +24,22 @@ Filtering operation in __RadMultiColumnComboBox__ is controlled by the boolean
 
 ````C#
             
-            this.radMultiColumnComboBox1.AutoFilter = true;
-            this.radMultiColumnComboBox1.DisplayMember = "ContactName";
-            FilterDescriptor filter = new FilterDescriptor();
-            filter.PropertyName = this.radMultiColumnComboBox1.DisplayMember;
-            filter.Operator = FilterOperator.Contains;
-            this.radMultiColumnComboBox1.EditorControl.MasterTemplate.FilterDescriptors.Add(filter);
+this.radMultiColumnComboBox1.AutoFilter = true;
+this.radMultiColumnComboBox1.DisplayMember = "ContactName";
+FilterDescriptor filter = new FilterDescriptor();
+filter.PropertyName = this.radMultiColumnComboBox1.DisplayMember;
+filter.Operator = FilterOperator.Contains;
+this.radMultiColumnComboBox1.EditorControl.MasterTemplate.FilterDescriptors.Add(filter);
+
 ````
 ````VB.NET
-        Me.RadMultiColumnComboBox1.AutoFilter = True
-        Me.RadMultiColumnComboBox1.DisplayMember = "ContactName"
-        Dim filter As New FilterDescriptor()
-        filter.PropertyName = Me.RadMultiColumnComboBox1.DisplayMember
-        filter.Operator = FilterOperator.Contains
-        Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.FilterDescriptors.Add(filter)
-        '
+Me.RadMultiColumnComboBox1.AutoFilter = True
+Me.RadMultiColumnComboBox1.DisplayMember = "ContactName"
+Dim filter As New FilterDescriptor()
+filter.PropertyName = Me.RadMultiColumnComboBox1.DisplayMember
+filter.Operator = FilterOperator.Contains
+Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.FilterDescriptors.Add(filter)
+
 ````
 
 {{endregion}} 
@@ -53,29 +54,26 @@ You can filter data records by multiple values. For this purpose you have to use
 {{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=CompositeFilters}} 
 
 ````C#
-            this.radMultiColumnComboBox1.AutoFilter = true;
-            CompositeFilterDescriptor compositeFilter = new CompositeFilterDescriptor();           
-            FilterDescriptor prodName = new FilterDescriptor("ProductName", FilterOperator.Contains, "");
-            FilterDescriptor prodQuantity = new FilterDescriptor("QuantityPerUnit", FilterOperator.Contains, "");
-            compositeFilter.FilterDescriptors.Add(prodName);
-            compositeFilter.FilterDescriptors.Add(prodQuantity);
-            compositeFilter.LogicalOperator = FilterLogicalOperator.Or;
+this.radMultiColumnComboBox1.AutoFilter = true;
+CompositeFilterDescriptor compositeFilter = new CompositeFilterDescriptor();           
+FilterDescriptor prodName = new FilterDescriptor("ProductName", FilterOperator.Contains, "");
+FilterDescriptor prodQuantity = new FilterDescriptor("QuantityPerUnit", FilterOperator.Contains, "");
+compositeFilter.FilterDescriptors.Add(prodName);
+compositeFilter.FilterDescriptors.Add(prodQuantity);
+compositeFilter.LogicalOperator = FilterLogicalOperator.Or;
+this.radMultiColumnComboBox1.EditorControl.FilterDescriptors.Add(compositeFilter);
 
-            this.radMultiColumnComboBox1.EditorControl.FilterDescriptors.Add(compositeFilter);
 ````
 ````VB.NET
+Me.radMultiColumnComboBox1.AutoFilter = True
+Dim compositeFilter As New CompositeFilterDescriptor()
+Dim prodName As New FilterDescriptor("ProductName", FilterOperator.Contains, "")
+Dim prodQuantity As New FilterDescriptor("QuantityPerUnit", FilterOperator.Contains, "")
+compositeFilter.FilterDescriptors.Add(prodName)
+compositeFilter.FilterDescriptors.Add(prodQuantity)
+compositeFilter.LogicalOperator = FilterLogicalOperator.[Or]
+Me.radMultiColumnComboBox1.EditorControl.FilterDescriptors.Add(compositeFilter)
 
-        Me.radMultiColumnComboBox1.AutoFilter = True
-        Dim compositeFilter As New CompositeFilterDescriptor()
-        Dim prodName As New FilterDescriptor("ProductName", FilterOperator.Contains, "")
-        Dim prodQuantity As New FilterDescriptor("QuantityPerUnit", FilterOperator.Contains, "")
-        compositeFilter.FilterDescriptors.Add(prodName)
-        compositeFilter.FilterDescriptors.Add(prodQuantity)
-        compositeFilter.LogicalOperator = FilterLogicalOperator.[Or]
-
-        Me.radMultiColumnComboBox1.EditorControl.FilterDescriptors.Add(compositeFilter)
-
-        '
 ````
 
 {{endregion}} 

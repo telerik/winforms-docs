@@ -19,11 +19,12 @@ position: 1
 
 ````C#
             
-            this.radMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownWidth = 500;
+this.radMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownWidth = 500;
+
 ````
 ````VB.NET
-        Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownWidth = 500
-        '
+Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownWidth = 500
+
 ````
 
 {{endregion}} 
@@ -38,11 +39,12 @@ position: 1
 
 ````C#
             
-            this.radMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownHeight = 500;
+this.radMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownHeight = 500;
+
 ````
 ````VB.NET
-        Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownHeight = 500
-        '
+Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownHeight = 500
+
 ````
 
 {{endregion}} 
