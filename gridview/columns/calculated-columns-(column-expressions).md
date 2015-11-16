@@ -10,15 +10,11 @@ position: 8
 
 # Calculated Columns (Column Expressions)
 
-
-
 A calculated column is identified by an expression. The only condition necessary to make a regular column behave like a calculated column is to set an expression to it. 
 
-The following code snippet demonstrates how the standard deviation of the *Consumption *column can be computed for each month in the *Deviation *column.#_[C#] Creating a calculated column_
+The following code snippet demonstrates how the standard deviation of the *Consumption *column can be computed for each month in the *Deviation *column.
 
-	
-
-
+#### Creating a calculated column
 
 {{source=..\SamplesCS\GridView\Columns\CalculatedColumn.cs region=calculatedColumn}} 
 {{source=..\SamplesVB\GridView\Columns\CalculatedColumn.vb region=calculatedColumn}} 
@@ -42,7 +38,6 @@ RadGridView1.Columns("Calculated Column").Expression = "UnitsOnOrder * UnitPrice
 
 {{endregion}} 
 
-
 ![gridview-columns-calculated-columns-column-expressions 001](images/gridview-columns-calculated-columns-column-expressions001.png)
 
 ## Expressions
@@ -57,10 +52,7 @@ The wildcards % and * are supported for Text columns, but only at the beginning 
 
 __Example 1:__
 
-Country = 'USA'
-		Year >= 1999 And LastName LIKE 'A%'
-		Price * 0.2 + Freight
-		
+Country = 'USA' Year >= 1999 And LastName LIKE 'A%' Price * 0.2 + Freight
 
 Dates must be surrounded by the # character.
 
@@ -68,7 +60,7 @@ __Example 2:__
 
 HireDate  #2-1-2002#
 
-The expression parser does not recognize the __Enum__values unless you cast them to an actual value or type. 
+The expression parser does not recognize the __Enum__ values unless you cast them to an actual value or type. 
 
 Decimal values can be used as long as they are represented by a literal matching the current system locale.
 
@@ -83,5 +75,3 @@ __Example 3:__
 Refer to the following external resource about further information on the expressions syntax:
 
 [http://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression%28VS.80%29.aspx](http://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression%28VS.80%29.aspx)
-
-

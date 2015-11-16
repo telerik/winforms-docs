@@ -10,35 +10,22 @@ position: 7
 
 # Data Formatting
 
-
-
-## 
-
-
-
+|   |
+|---|
 |RELATED VIDEOS|
-|[Formatting Data In RadGridView for WinForms. ](http://tv.telerik.com/radtips/radgrid/formatting-data-in-radgridview)In this RadTip, John Kellar demonstrates how you can apply custom formatting to data within a RadGridView for Windows Forms. (Runtime: 09:14)|
+|[Formatting Data In RadGridView for WinForms. ](http://tv.telerik.com/radtips/radgrid/formatting-data-in-radgridview)<br>In this RadTip, John Kellar demonstrates how you can apply custom formatting to data within a RadGridView for Windows Forms. (Runtime: 09:14)|
 
-The [this documentation section]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%})
-          allows you to format the data displayed in it. You can control that by setting the __FormatString__,
-          __FormatInfo__ and __NullValue__ properties of the column.
-        
+The [this documentation section]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%}) allows you to format the data displayed in it. You can control that by setting the __FormatString__, __FormatInfo__ and __NullValue__ properties of the column.
 
-The __FormatString__ property determines how the cell values are formatted as strings. The property is applicable
-          with Microsoft Formatting Syntax. For more information, see the
-          [Formatting Overview chapter in MSDN.](http://msdn.microsoft.com/en-us/library/26etazsy.aspx)
+The __FormatString__ property determines how the cell values are formatted as strings. The property is applicable with Microsoft Formatting Syntax. For more information, see the [Formatting Overview chapter in MSDN.](http://msdn.microsoft.com/en-us/library/26etazsy.aspx)
 
 The __FormatInfo__ property provides the culture in which the string formatting is applied.
-        
 
 By setting the __NullValue__ property, you determine the value that appears if the cell value is null.
-        
 
-Here is a sample covering these properties:#_[C#] Formatting data_
+Here is a sample covering these properties:
 
-	
-
-
+#### Formatting data
 
 {{source=..\SamplesCS\GridView\Columns\DataFormatting1.cs region=dataFormatting}} 
 {{source=..\SamplesVB\GridView\Columns\DataFormatting1.vb region=dataFormatting}} 
@@ -58,26 +45,18 @@ Dim unitPriceColumn As GridViewDecimalColumn = TryCast(Me.RadGridView1.Columns("
 
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![gridview-columns-data-formatting 001](images/gridview-columns-data-formatting001.png)
-
-
 
 >note Note that the value of the NullValue property should be the same as its column data type.
 >
 
-
 The __WrapText__ property wraps text if the text is wider than the column width.
-        
 
 The __TextAlignment__ property defines the text alignment for the column.
-        #_[C#] Using the column text properties_
 
-	
-
-
+#### Using the column text properties
 
 {{source=..\SamplesCS\GridView\Columns\DataFormatting1.cs region=textProperties}} 
 {{source=..\SamplesVB\GridView\Columns\DataFormatting1.vb region=textProperties}} 
@@ -95,7 +74,4 @@ productNameColumn.TextAlignment = ContentAlignment.BottomRight
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

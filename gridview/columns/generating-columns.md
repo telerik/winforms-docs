@@ -10,34 +10,21 @@ position: 1
 
 # Generating Columns
 
-
-
 You can generate columns for RadGridView in two ways:
 
 * Automatically, according to the columns in the data source
 
 * Manually, with columns added by the user
 
-The two modes can be switched using the __AutoGenerateColumns__ property of a template of the RadGridView.
-  		 		The default value of the property is *true*, indicating the columns will be generated from the data source.
-  		 		If additional control is required at compile time over the columns to be shown in the grid, columns can be added manually. 
-  		 	
+The two modes can be switched using the __AutoGenerateColumns__ property of a template of the RadGridView. The default value of the property is *true*, indicating the columns will be generated from the data source. If additional control is required at compile time over the columns to be shown in the grid, columns can be added manually.
 
 ## Automatic Column Generation
 
-Auto-generation of columns means that when you set the __DataSource__ property of the RadGridView
-          control to a collection of employees for example, a separate column will be created for each one of the public properties
-          of your Employee object. This is the default behavior and it does not require any additional efforts from your side.
-          Just set the __DataSource__ of your RadGridView and you are ready.
-        
+Auto-generation of columns means that when you set the __DataSource__ property of the RadGridView  control to a collection of employees for example, a separate column will be created for each one of the public properties of your Employee object. This is the default behavior and it does not require any additional efforts from your side. Just set the __DataSource__ of your RadGridView and you are ready.
 
-However, if you wish to prevent the creation of a column for it, use the __System.ComponentModel.BrowsableAttribute__,
-          as it is shown in the sample below:
-        #_[C#] Automatic column generation_
+However, if you wish to prevent the creation of a column for it, use the __System.ComponentModel.BrowsableAttribute__, as it is shown in the sample below:
 
-	
-
-
+#### Automatic column generation
 
 {{source=..\SamplesCS\GridView\Columns\GeneratingColumns.cs region=autoGenerateColumns}} 
 {{source=..\SamplesVB\GridView\Columns\GeneratingColumns.vb region=autoGenerateColumns}} 
@@ -138,23 +125,15 @@ Public Class Employee
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-And here is the result:![gridview-auto-generate-columns 001](images/gridview-auto-generate-columns001.png)
+And here is the result:<br>![gridview-auto-generate-columns 001](images/gridview-auto-generate-columns001.png)
 
 ## Manual Column Generation 
 
-Setting the __AutoGenerateColumns__ property to *false* allows the developer to add unbound 
-		  		or bound columns from the data source. Columns are added to using the __Columns__ collection of a template. While the type
-		  		of auto-generated columns is strictly defined by the data layer, manually added columns are defined by the developer. When defining a column you 
-		  		are able to choose between [several column types]({%slug winforms/gridview/columns%})#_[C#] Adding Columns in Code at Run Time_
+Setting the __AutoGenerateColumns__ property to *false* allows the developer to add unbound or bound columns from the data source. Columns are added to using the __Columns__ collection of a template. While the type of auto-generated columns is strictly defined by the data layer, manually added columns are defined by the developer. When defining a column you are able to choose between [several column types]({%slug winforms/gridview/columns%})
 
-	
-
-
+#### Adding Columns in Code at Run Time
 
 {{source=..\SamplesCS\GridView\Columns\GeneratingColumns2.cs region=manualColumnGeneration}} 
 {{source=..\SamplesVB\GridView\Columns\GeneratingColumns2.vb region=manualColumnGeneration}} 
@@ -207,9 +186,6 @@ RadGridView1.AutoGenerateColumns = False
 ````
 
 {{endregion}} 
-
-
-
 
 # See Also
 

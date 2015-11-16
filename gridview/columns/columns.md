@@ -76,4 +76,3 @@ This chapter gives you detailed information about the RadGridView columns. The c
 * [Column text properties ]({%slug winforms/gridview/columns/data-formatting%})
   - __WrapText__: Wraps text if the text is wider than the column width.
   - __TextAlignment__: Defines the text alignment.
-            

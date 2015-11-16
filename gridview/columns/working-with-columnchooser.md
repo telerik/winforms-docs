@@ -10,20 +10,11 @@ position: 6
 
 # Working with ColumnChooser
 
-
-
-## 
-
 Listed below are the properties which control the behavior of the columns when used with the Column Chooser:
-      	
 
-__AllowColumnChooser__ - this property determines whether the Column Chooser is available in the template.
-      		By default this property is set to true for all templates
-      	#_[C#] Enable or Disable ColumnChooser_
+__AllowColumnChooser__ - this property determines whether the Column Chooser is available in the template. By default this property is set to true for all templates
 
-	
-
-
+#### Enable or Disable ColumnChooser
 
 {{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=AllowColumnChooser}} 
 {{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=AllowColumnChooser}} 
@@ -37,18 +28,11 @@ RadGridView1.MasterTemplate.AllowColumnChooser = False
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
+__AllowHide__ – this property determines whether the column is allowed to be moved to the Column Chooser. By default this property is set to true for all columns 
 
-
-
-__AllowHide__ – this property determines whether the column is allowed to be moved to the Column Chooser. 
-      		By default this property is set to true for all columns
-      	#_[C#] Determines if the specified column is allowed to be dragged to the column chooser dialog_
-
-	
-
-
+##### Determines if the specified column is allowed to be dragged to the column chooser dialog
 
 {{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=AllowHide}} 
 {{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=AllowHide}} 
@@ -62,18 +46,11 @@ RadGridView1.Columns("CategoryName").AllowHide = False
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
+__VisibleInColumnChooser__ – by setting this property for each column you determine whether the column will be visible in the Column Chooser when dragged to it. By default this property is set to true for all columns:
 
-
-
-__VisibleInColumnChooser__ – by setting this property for each column you determine whether the column will be visible in
-      		the Column Chooser when dragged to it. By default this property is set to true for all columns:
-      	#_[C#] Determines if the specified column is going to be visible in the column chooser dialog_
-
-	
-
-
+#### Determines if the specified column is going to be visible in the column chooser dialog
 
 {{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=VisibleInColumnChooser}} 
 {{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=VisibleInColumnChooser}} 
@@ -87,17 +64,11 @@ RadGridView1.Columns("Picture").VisibleInColumnChooser = False
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 In order to customize the Column Chooser you can access it directly from the instance of radGridView, as shown in the following example:
-      	#_[C#] Accessing and customizing the column chooser_
 
-	
-
-
+#### Accessing and customizing the column chooser
 
 {{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=customizeColumnChooser}} 
 {{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=customizeColumnChooser}} 
@@ -113,7 +84,4 @@ RadGridView1.ColumnChooser.Font = New Font("Segoe", 15, FontStyle.Bold)
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

@@ -10,29 +10,15 @@ position: 9
 
 # Converting Data Types
 
-
-
 ## Overview
 
-The GridViewDataColumn provides a unified way of converting incompatible value types to a type supported by the column instance. The standard 
-      	 	[.NET Framework TypeConverter subclasses](http://msdn.microsoft.com/en-us/library/system.componentmodel.typeconverter.aspx)
-      	 are used to convert values between data types.
-      	
+The GridViewDataColumn provides a unified way of converting incompatible value types to a type supported by the column instance. The standard [.NET Framework TypeConverter subclasses](http://msdn.microsoft.com/en-us/library/system.componentmodel.typeconverter.aspx) are used to convert values between data types.
 
-For instance, instead of using 
-      		[GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%})
-    		 to display char fields you want to use a 
-    		[GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%}),
-      		implement a custom Type Converter class which to determine how RadGridView recognizes this type. For more information, see.
-      		[How to: Implement a Type Converter in MSDN.](http://msdn.microsoft.com/en-us/library/ayybcxe5.aspx)
+For instance, instead of using [GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%}) to display char fields you want to use a [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%}), implement a custom Type Converter class which to determine how RadGridView recognizes this type. For more information, see. [How to: Implement a Type Converter in MSDN.](http://msdn.microsoft.com/en-us/library/ayybcxe5.aspx)
 
-As a quick example, let’s say that we want to convert char values Y and N to ToggleState values ToggleState.On and 
-      		ToggleState.Off. To do this we will need to implement the ToggelStateConverter class that converts these values:
-      	#_[C#] ToggleState converter_
+As a quick example, let’s say that we want to convert char values Y and N to ToggleState values ToggleState.On and ToggleState.Off. To do this we will need to implement the ToggelStateConverter class that converts these values:
 
-	
-
-
+#### ToggleState converter
 
 {{source=..\SamplesCS\GridView\Columns\ConvertingDataTypes.cs region=convertTypes}} 
 {{source=..\SamplesVB\GridView\Columns\ConvertingDataTypes.vb region=convertTypes}} 
@@ -121,10 +107,7 @@ End Class
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Applying Type Converters
 
@@ -132,11 +115,9 @@ There are two ways to apply converters to the RadGridView conversion layer:
 
 __Setting the DataTypeConverter property of the column__
 
-The first approach to apply type converters is to create the desired column and assign its DataTypeConverter property. This approach is handy when you using non-business objects (such as  DataTable) or your business objects’ properties  do not have TypeConverterAttribute applied.#_[C#] Applying TypeConverter_
+The first approach to apply type converters is to create the desired column and assign its DataTypeConverter property. This approach is handy when you using non-business objects (such as  DataTable) or your business objects’ properties  do not have TypeConverterAttribute applied.
 
-	
-
-
+#### Applying TypeConverter
 
 {{source=..\SamplesCS\GridView\Columns\ConvertingDataTypes.cs region=applyingTypeConverters}} 
 {{source=..\SamplesVB\GridView\Columns\ConvertingDataTypes.vb region=applyingTypeConverters}} 
@@ -160,18 +141,13 @@ End Sub
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 __Applying System.ComponentModel.TypeConverterAttribute to the incompatible property of the business object used as a data source__
 
-The second way to add type converters is to use the TypeConverterAttribute, which allows you to specify the TypeConverter for any property in your business object. When you set it as a data source for RadGridView, you create GridViewCheckBoxColumn instead of GridViewTextBoxColumn.  . This approach is handy when you are creating your own business objects with TypeConverter attribute applied.#_[C#] Custom class with TypeConverter attribute_
+The second way to add type converters is to use the TypeConverterAttribute, which allows you to specify the TypeConverter for any property in your business object. When you set it as a data source for RadGridView, you create GridViewCheckBoxColumn instead of GridViewTextBoxColumn.  . This approach is handy when you are creating your own business objects with TypeConverter attribute applied.
 
-	
-
-
+#### Custom class with TypeConverter attribute
 
 {{source=..\SamplesCS\GridView\Columns\ConvertingDataTypes.cs region=classProduct}} 
 {{source=..\SamplesVB\GridView\Columns\ConvertingDataTypes.vb region=classProduct}} 
@@ -265,22 +241,15 @@ End Class
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-The following screenshot shows the result:![gridview-columns-converting-data-types 001](images/gridview-columns-converting-data-types001.png)
+The following screenshot shows the result:<br>![gridview-columns-converting-data-types 001](images/gridview-columns-converting-data-types001.png)
 
 ## Handling Null Values
 
-The RadGridView’s conversation layer can handle null values. You can specify the default value that is committed to the source if the
-      cell value is changed to null. GridViewDataColumn’s __DataSourceNullValue__ property can be set using the following code snippet:
-    #_[C#] Handling null values_
+The RadGridView’s conversation layer can handle null values. You can specify the default value that is committed to the source if the cell value is changed to null. GridViewDataColumn’s __DataSourceNullValue__ property can be set using the following code snippet:
 
-	
-
-
+#### Handling null values
 
 {{source=..\SamplesCS\GridView\Columns\ConvertingDataTypes.cs region=handlingNullValues}} 
 {{source=..\SamplesVB\GridView\Columns\ConvertingDataTypes.vb region=handlingNullValues}} 
@@ -295,7 +264,4 @@ Me.RadGridView1.Columns("ProductName").DataSourceNullValue = "ENTER PRODUCT NAME
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

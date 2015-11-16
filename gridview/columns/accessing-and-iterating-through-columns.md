@@ -10,19 +10,13 @@ position: 2
 
 # Accessing and Iterating through Columns
 
-
-
 ## Accessing Columns
 
-You can access a column by name or index. Generally speaking, accessing the columns by name is the preferred approach because if the
-      		user reorders the columns the indexes would also change.
-      	
+You can access a column by name or index. Generally speaking, accessing the columns by name is the preferred approach because if the user reorders the columns the indexes would also change.
 
-For example, the code snippet below sets the width of an image column named "Picture" to 110: #_[C#] Accessing RadGridView columns_
+For example, the code snippet below sets the width of an image column named "Picture" to 110: 
 
-	
-
-
+#### Accessing RadGridView columns
 
 {{source=..\SamplesCS\GridView\Columns\AccessingAndIteratingThroughColumns.cs region=accessingColumns}} 
 {{source=..\SamplesVB\GridView\Columns\AccessingAndIteratingThroughColumns.vb region=accessingColumns}} 
@@ -36,21 +30,13 @@ DirectCast(Me.RadGridView1.Columns("Picture"), GridViewImageColumn).Width = 110
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Iterating through Columns
 
-You can iterate through grid columns by using the __Columns__ collection of GridViewColumn objects. The example below cycles
-	  		through the columns of the grid, it first determines if the column is a GridViewDataColumn type, and then sets each column’s HeaderText with 
-	  		the number of the current column:
-	  	#_[C#] Iterating through RadGridView columns_
+You can iterate through grid columns by using the __Columns__ collection of GridViewColumn objects. The example below cycles through the columns of the grid, it first determines if the column is a GridViewDataColumn type, and then sets each column’s HeaderText with the number of the current column:
 
-	
-
-
+#### Iterating through RadGridView columns
 
 {{source=..\SamplesCS\GridView\Columns\AccessingAndIteratingThroughColumns.cs region=iteratingColumns}} 
 {{source=..\SamplesVB\GridView\Columns\AccessingAndIteratingThroughColumns.vb region=iteratingColumns}} 
@@ -85,22 +71,15 @@ Next
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 The result from the code above is displayed on the following image:![gridview-columns-iterating-columns 001](images/gridview-columns-iterating-columns001.png)
 
 ## Iterating through Hierarchical Columns
 
-Iterating through hierarchical RadGridView is possible by iterating through the __Columns__’ collection of each RadGridView 
-	  		template (each template represents one level of hierarchy).
-	  	#_[C#] Iterating through hierarchical RadGridView columns_
+Iterating through hierarchical RadGridView is possible by iterating through the __Columns__’ collection of each RadGridView template (each template represents one level of hierarchy).
 
-	
-
-
+#### Iterating through hierarchical RadGridView columns
 
 {{source=..\SamplesCS\GridView\Columns\AccessingAndIteratingThroughColumns2.cs region=iterateColumnsInHierarchy}} 
 {{source=..\SamplesVB\GridView\Columns\AccessingAndIteratingThroughColumns2.vb region=iterateColumnsInHierarchy}} 
@@ -165,6 +144,5 @@ Public Function GetAllColumns(ByVal template As GridViewTemplate) As List(Of Gri
 ````
 
 {{endregion}} 
-
 
 ![gridview-columns-iterating-columns 002](images/gridview-columns-iterating-columns002.png)
