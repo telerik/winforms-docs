@@ -16,49 +16,47 @@ RadPivotGrid exposes two events which you can use to format the appearance and a
 {{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=Formatting}} 
 
 ````C#
-        private void radPivotGrid1_PrintElementFormatting(object sender, Telerik.WinControls.UI.PrintElementEventArgs e)
-        {
-            PivotCellPrintElement cell = e.PrintElement as PivotCellPrintElement;
-            if (cell != null && cell.Value != null && (Convert.ToDouble(cell.Value)) < 100)
-            {
-                cell.BackColor = Color.Red;
-            }
+private void radPivotGrid1_PrintElementFormatting(object sender, Telerik.WinControls.UI.PrintElementEventArgs e)
+{
+    PivotCellPrintElement cell = e.PrintElement as PivotCellPrintElement;
+    if (cell != null && cell.Value != null && (Convert.ToDouble(cell.Value)) < 100)
+    {
+        cell.BackColor = Color.Red;
+    }
+    if (cell != null && cell.Value != null && (Convert.ToDouble(cell.Value)) > 500)
+    {
+        cell.BackColor = Color.Green;
+    }
+}
+private void radPivotGrid1_PrintElementPaint(object sender, PrintElementPaintEventArgs e)
+{
+    PivotCellPrintElement cell = e.PrintElement as PivotCellPrintElement;
+    if (cell != null && cell.Value == null)
+    {
+        Brush b = new HatchBrush(HatchStyle.BackwardDiagonal, Color.LightGray, Color.Transparent);
+        e.Graphics.FillRectangle(b, e.Bounds);
+    }
+}
 
-            if (cell != null && cell.Value != null && (Convert.ToDouble(cell.Value)) > 500)
-            {
-                cell.BackColor = Color.Green;
-            }
-        }
-
-        private void radPivotGrid1_PrintElementPaint(object sender, PrintElementPaintEventArgs e)
-        {
-            PivotCellPrintElement cell = e.PrintElement as PivotCellPrintElement;
-            if (cell != null && cell.Value == null)
-            {
-                Brush b = new HatchBrush(HatchStyle.BackwardDiagonal, Color.LightGray, Color.Transparent);
-                e.Graphics.FillRectangle(b, e.Bounds);
-            }
-        }
 ````
 ````VB.NET
-    Private Sub radPivotGrid1_PrintElementFormatting(sender As Object, e As Telerik.WinControls.UI.PrintElementEventArgs)
-        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
-        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) < 100 Then
-            cell.BackColor = Color.Red
-        End If
+Private Sub radPivotGrid1_PrintElementFormatting(sender As Object, e As Telerik.WinControls.UI.PrintElementEventArgs)
+    Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
+    If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) < 100 Then
+        cell.BackColor = Color.Red
+    End If
+    If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) > 500 Then
+        cell.BackColor = Color.Green
+    End If
+End Sub
+Private Sub radPivotGrid1_PrintElementPaint(sender As Object, e As PrintElementPaintEventArgs)
+    Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
+    If cell IsNot Nothing AndAlso cell.Value Is Nothing Then
+        Dim b As Brush = New HatchBrush(HatchStyle.BackwardDiagonal, Color.LightGray, Color.Transparent)
+        e.Graphics.FillRectangle(b, e.Bounds)
+    End If
+End Sub
 
-        If cell IsNot Nothing AndAlso cell.Value IsNot Nothing AndAlso (Convert.ToDouble(cell.Value)) > 500 Then
-            cell.BackColor = Color.Green
-        End If
-    End Sub
-
-    Private Sub radPivotGrid1_PrintElementPaint(sender As Object, e As PrintElementPaintEventArgs)
-        Dim cell As PivotCellPrintElement = TryCast(e.PrintElement, PivotCellPrintElement)
-        If cell IsNot Nothing AndAlso cell.Value Is Nothing Then
-            Dim b As Brush = New HatchBrush(HatchStyle.BackwardDiagonal, Color.LightGray, Color.Transparent)
-            e.Graphics.FillRectangle(b, e.Bounds)
-        End If
-    End Sub
 ````
 
 {{endregion}} 

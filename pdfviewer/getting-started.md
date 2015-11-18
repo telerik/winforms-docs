@@ -33,16 +33,12 @@ There is also a property for the above setting which you can set in your code:
 {{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Modes}} 
 
 ````C#
+this.radPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection;
 
-            //this.radPdfViewer1.ReadingMode = ReadingMode.OnDemand;
-            this.radPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection;
 ````
 ````VB.NET
+Me.RadPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection
 
-        'Me.RadPdfViewer1.ReadingMode = ReadingMode.OnDemand
-        Me.RadPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection
-
-        '
 ````
 
 {{endregion}}
@@ -53,14 +49,12 @@ Loading a PDF document is done via the __LoadDocument__ method. It accepts eithe
 {{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Loading}} 
 
 ````C#
+this.radPdfViewer1.LoadDocument(Application.StartupPath + "\\PdfViewer\\Sample.pdf");
 
-            this.radPdfViewer1.LoadDocument(Application.StartupPath + "\\PdfViewer\\Sample.pdf");
 ````
 ````VB.NET
+Me.RadPdfViewer1.LoadDocument(Application.StartupPath & "\PdfViewer\Sample.pdf")
 
-        Me.RadPdfViewer1.LoadDocument(Application.StartupPath & "\PdfViewer\Sample.pdf")
-
-        '
 ````
 
 {{endregion}}
@@ -71,17 +65,22 @@ The calls above will start to load the specified document asynchronously. When t
 {{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=DocumentLoaded}} 
 
 ````C#
+void radPdfViewer1_DocumentLoaded(object sender, EventArgs e)
+{
+    RadMessageBox.Show("The document was loaded.");
+}
 
-        void radPdfViewer1_DocumentLoaded(object sender, EventArgs e)
-        {
-            RadMessageBox.Show("The document was loaded.");
-        }
 ````
 ````VB.NET
+Private Sub radPdfViewer1_DocumentLoaded(sender As Object, e As EventArgs)
+    RadMessageBox.Show("The document was loaded.")
+End Sub
+ Region
+Private Sub RadButton1_Click(sender As System.Object, e As System.EventArgs) Handles RadButton1.Click
+    '#Region "PrintMethods"
+    Me.RadPdfViewer1.Print()
+    Me.RadPdfViewer1.PrintPreview()
 
-    Private Sub radPdfViewer1_DocumentLoaded(sender As Object, e As EventArgs)
-        RadMessageBox.Show("The document was loaded.")
-    End Sub
 ````
 
 {{endregion}}
@@ -92,14 +91,12 @@ Respectively, to unload a document, you can use the __UnloadDocument__ method
 {{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Unloading}} 
 
 ````C#
+this.radPdfViewer1.UnloadDocument();
 
-            this.radPdfViewer1.UnloadDocument();
 ````
 ````VB.NET
+Me.RadPdfViewer1.UnloadDocument()
 
-        Me.RadPdfViewer1.UnloadDocument()
-
-        '
 ````
 
 {{endregion}}
@@ -112,14 +109,12 @@ You can also set this in your code by using the __AssociatedPdfViewer__ property
 {{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Navigator}} 
 
 ````C#
+this.radPdfViewerNavigator1.AssociatedViewer = this.radPdfViewer1;
 
-            this.radPdfViewerNavigator1.AssociatedViewer = this.radPdfViewer1;
 ````
 ````VB.NET
+Me.RadPdfViewerNavigator1.AssociatedViewer = Me.RadPdfViewer1
 
-        Me.RadPdfViewerNavigator1.AssociatedViewer = Me.RadPdfViewer1
-
-        '
 ````
 
 {{endregion}}

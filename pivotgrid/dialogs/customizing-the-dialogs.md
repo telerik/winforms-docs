@@ -20,14 +20,15 @@ To customize the dialogs in RadPivotGrid/RadPivotFieldList, you can either inher
 {{source=..\SamplesVB\PivotGrid\PivotGridDialogs.vb region=MyAggregateOptionsDialog}} 
 
 ````C#
-    class MyAggregateOptionsDialog : AggregateOptionsDialog
+class MyAggregateOptionsDialog : AggregateOptionsDialog
+{
+    public override void LoadSettings(Telerik.Pivot.Core.PropertyAggregateDescriptionBase aggregateDescription)
     {
-        public override void LoadSettings(Telerik.Pivot.Core.PropertyAggregateDescriptionBase aggregateDescription)
-        {
-            base.LoadSettings(aggregateDescription);
-            this.Text = "This is a custom dialog";
-        }
+        base.LoadSettings(aggregateDescription);
+        this.Text = "This is a custom dialog";
     }
+}
+
 ````
 ````VB.NET
 Class MyAggregateOptionsDialog
@@ -37,6 +38,7 @@ Class MyAggregateOptionsDialog
         Me.Text = "This is a custom dialog"
     End Sub
 End Class
+
 ````
 
 {{endregion}}
@@ -47,13 +49,14 @@ When RadPivotGrid and RadPivotFieldList need a dialog, they use the __PivotGridD
 {{source=..\SamplesVB\PivotGrid\PivotGridDialogs.vb region=MyDialogsFactory}} 
 
 ````C#
-    class MyDialogsFactory : PivotGridDialogsFactory
+class MyDialogsFactory : PivotGridDialogsFactory
+{
+    public override IAggregateOptionsDialog CreateAggregateOptionsDialog()
     {
-        public override IAggregateOptionsDialog CreateAggregateOptionsDialog()
-        {
-            return new MyAggregateOptionsDialog();
-        }
+        return new MyAggregateOptionsDialog();
     }
+}
+
 ````
 ````VB.NET
 Class MyDialogsFactory
@@ -62,6 +65,7 @@ Class MyDialogsFactory
         Return New MyAggregateOptionsDialog()
     End Function
 End Class
+
 ````
 
 {{endregion}}
@@ -72,13 +76,14 @@ Then, you need to assign it to RadPivotGrid and RadPivotFieldList:
 {{source=..\SamplesVB\PivotGrid\PivotGridDialogs.vb region=SetFactories}} 
 
 ````C#
-            this.radPivotGrid1.DialogsFactory = new MyDialogsFactory();
-            this.radPivotFieldList1.DialogsFactory = new MyDialogsFactory();
+this.radPivotGrid1.DialogsFactory = new MyDialogsFactory();
+this.radPivotFieldList1.DialogsFactory = new MyDialogsFactory();
+
 ````
 ````VB.NET
-        Me.radPivotGrid1.DialogsFactory = New MyDialogsFactory()
-        Me.radPivotFieldList1.DialogsFactory = New MyDialogsFactory()
-        '
+Me.radPivotGrid1.DialogsFactory = New MyDialogsFactory()
+Me.radPivotFieldList1.DialogsFactory = New MyDialogsFactory()
+
 ````
 
 {{endregion}} 

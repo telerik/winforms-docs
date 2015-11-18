@@ -22,78 +22,70 @@ Below is a sample implementation of an English localization provider:
 {{source=..\SamplesVB\PdfViewer\PdfLocalization.vb region=localization}} 
 
 ````C#
-    public class MyLocalizationProvider : PdfViewerLocalizationProvider
+public class MyLocalizationProvider : PdfViewerLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
     {
-        public override string GetLocalizedString(string id)
+        switch (id)
         {
-
-            switch (id)
-            {
-                case PdfViewerStringId.ContextMenuCopy:
-                    return "&Copy";
-                case PdfViewerStringId.ContextMenuSelectAll:
-                    return "Select &All";
-                case PdfViewerStringId.ContextMenuDeselectAll:
-                    return "&Deselect All";
-                case PdfViewerStringId.ContextMenuHand:
-                    return "&Hand";
-                case PdfViewerStringId.ContextMenuSelection:
-                    return "&Selection";
-                case PdfViewerStringId.ContextMenuPreviousPage:
-                    return "&Previous Page";
-                case PdfViewerStringId.ContextMenuNextPage:
-                    return "&Next Page";
-                case PdfViewerStringId.ContextMenuPrint:
-                    return "P&rint...";
-                case PdfViewerStringId.ContextMenuFind:
-                    return "&Find Next";
-
-                case PdfViewerStringId.NavigatorOpenButton:
-                    return "Open";
-                case PdfViewerStringId.NavigatorPrintButton:
-                    return "Print";
-
-                case PdfViewerStringId.NavigatorPreviousPageButton:
-                    return "Previous page";
-                case PdfViewerStringId.NavigatorNextPageButton:
-                    return "Next page";
-                case PdfViewerStringId.NavigatorCurrentPageTextBox:
-                    return "Current page";
-                case PdfViewerStringId.NavigatorTotalPagesLabel:
-                    return "Total pages";
-
-                case PdfViewerStringId.NavigatorZoomInButton:
-                    return "Zoom in";
-                case PdfViewerStringId.NavigatorZoomOutButton:
-                    return "Zoom out";
-                case PdfViewerStringId.NavigatorZoomDropDown:
-                    return "Zoom drop-down";
-
-                case PdfViewerStringId.NavigatorHandToolButton:
-                    return "Pan";
-                case PdfViewerStringId.NavigatorSelectToolButton:
-                    return "Selection";
-
-                case PdfViewerStringId.NavigatorFindNextButton:
-                    return "Find next";
-                case PdfViewerStringId.NavigatorFindPreviousButton:
-                    return "Find previous";
-                case PdfViewerStringId.NavigatorSearchTextBox:
-                    return "Search";
-
-                case PdfViewerStringId.NavigatorDefaultStrip:
-                    return "Default strip";
-            }
-            return base.GetLocalizedString(id);
+            case PdfViewerStringId.ContextMenuCopy:
+                return "&Copy";
+            case PdfViewerStringId.ContextMenuSelectAll:
+                return "Select &All";
+            case PdfViewerStringId.ContextMenuDeselectAll:
+                return "&Deselect All";
+            case PdfViewerStringId.ContextMenuHand:
+                return "&Hand";
+            case PdfViewerStringId.ContextMenuSelection:
+                return "&Selection";
+            case PdfViewerStringId.ContextMenuPreviousPage:
+                return "&Previous Page";
+            case PdfViewerStringId.ContextMenuNextPage:
+                return "&Next Page";
+            case PdfViewerStringId.ContextMenuPrint:
+                return "P&rint...";
+            case PdfViewerStringId.ContextMenuFind:
+                return "&Find Next";
+            case PdfViewerStringId.NavigatorOpenButton:
+                return "Open";
+            case PdfViewerStringId.NavigatorPrintButton:
+                return "Print";
+            case PdfViewerStringId.NavigatorPreviousPageButton:
+                return "Previous page";
+            case PdfViewerStringId.NavigatorNextPageButton:
+                return "Next page";
+            case PdfViewerStringId.NavigatorCurrentPageTextBox:
+                return "Current page";
+            case PdfViewerStringId.NavigatorTotalPagesLabel:
+                return "Total pages";
+            case PdfViewerStringId.NavigatorZoomInButton:
+                return "Zoom in";
+            case PdfViewerStringId.NavigatorZoomOutButton:
+                return "Zoom out";
+            case PdfViewerStringId.NavigatorZoomDropDown:
+                return "Zoom drop-down";
+            case PdfViewerStringId.NavigatorHandToolButton:
+                return "Pan";
+            case PdfViewerStringId.NavigatorSelectToolButton:
+                return "Selection";
+            case PdfViewerStringId.NavigatorFindNextButton:
+                return "Find next";
+            case PdfViewerStringId.NavigatorFindPreviousButton:
+                return "Find previous";
+            case PdfViewerStringId.NavigatorSearchTextBox:
+                return "Search";
+            case PdfViewerStringId.NavigatorDefaultStrip:
+                return "Default strip";
         }
+        return base.GetLocalizedString(id);
     }
+}
+
 ````
 ````VB.NET
 Public Class MyLocalizationProvider
     Inherits PdfViewerLocalizationProvider
-
     Public Overrides Function GetLocalizedString(ByVal id As String) As String
-
         Select Case id
             Case PdfViewerStringId.ContextMenuCopy
                 Return "&Copy"
@@ -113,12 +105,10 @@ Public Class MyLocalizationProvider
                 Return "P&rint..."
             Case PdfViewerStringId.ContextMenuFind
                 Return "&Find Next"
-
             Case PdfViewerStringId.NavigatorOpenButton
                 Return "Open"
             Case PdfViewerStringId.NavigatorPrintButton
                 Return "Print"
-
             Case PdfViewerStringId.NavigatorPreviousPageButton
                 Return "Previous page"
             Case PdfViewerStringId.NavigatorNextPageButton
@@ -127,33 +117,29 @@ Public Class MyLocalizationProvider
                 Return "Current page"
             Case PdfViewerStringId.NavigatorTotalPagesLabel
                 Return "Total pages"
-
             Case PdfViewerStringId.NavigatorZoomInButton
                 Return "Zoom in"
             Case PdfViewerStringId.NavigatorZoomOutButton
                 Return "Zoom out"
             Case PdfViewerStringId.NavigatorZoomDropDown
                 Return "Zoom drop-down"
-
             Case PdfViewerStringId.NavigatorHandToolButton
                 Return "Pan"
             Case PdfViewerStringId.NavigatorSelectToolButton
                 Return "Selection"
-
             Case PdfViewerStringId.NavigatorFindNextButton
                 Return "Find next"
             Case PdfViewerStringId.NavigatorFindPreviousButton
                 Return "Find previous"
             Case PdfViewerStringId.NavigatorSearchTextBox
                 Return "Search"
-
             Case PdfViewerStringId.NavigatorDefaultStrip
                 Return "Default strip"
         End Select
         Return MyBase.GetLocalizedString(id)
     End Function
 End Class
-'
+
 ````
 
 {{endregion}}
@@ -164,11 +150,12 @@ To apply the custom localization provider, instantiate and assign it to the curr
 {{source=..\SamplesVB\PdfViewer\PdfLocalization.vb region=change}} 
 
 ````C#
-            PdfViewerLocalizationProvider.CurrentProvider = new MyLocalizationProvider();
+PdfViewerLocalizationProvider.CurrentProvider = new MyLocalizationProvider();
+
 ````
 ````VB.NET
-        PdfViewerLocalizationProvider.CurrentProvider = New MyLocalizationProvider()
-        '
+PdfViewerLocalizationProvider.CurrentProvider = New MyLocalizationProvider()
+
 ````
 
 {{endregion}}

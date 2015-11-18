@@ -29,69 +29,59 @@ The first task is to decide what the calculation formula that you want to use is
 {{source=..\SamplesVB\PivotGrid\PivotGridCalculatedFields.vb region=CalculatedFieldClass}} 
 
 ````C#
-
-    public class CommissionCalculatedField : CalculatedField
+public class CommissionCalculatedField : CalculatedField
+{
+    private RequiredField extendPriceField;
+    public CommissionCalculatedField()
     {
-        private RequiredField extendPriceField;
-
-        public CommissionCalculatedField()
-        {
-            this.Name = "Commission";
-            this.extendPriceField = RequiredField.ForProperty("ExtendedPrice");
-        }
-
-        protected override IEnumerable<RequiredField> RequiredFields()
-        {
-            yield return this.extendPriceField;
-        }
-
-        protected override AggregateValue CalculateValue(IAggregateValues aggregateValues)
-        {
-            var aggregateValue = aggregateValues.GetAggregateValue(this.extendPriceField);
-            if (aggregateValue.IsError())
-            {
-                return aggregateValue;
-            }
-
-            double extendedPrice = aggregateValue.ConvertOrDefault<double>();
-            if (extendedPrice > 15000)
-            {
-                return new DoubleAggregateValue(extendedPrice * 0.1);
-            }
-
-            return null;
-        }
+        this.Name = "Commission";
+        this.extendPriceField = RequiredField.ForProperty("ExtendedPrice");
     }
+    protected override IEnumerable<RequiredField> RequiredFields()
+    {
+        yield return this.extendPriceField;
+    }
+    protected override AggregateValue CalculateValue(IAggregateValues aggregateValues)
+    {
+        var aggregateValue = aggregateValues.GetAggregateValue(this.extendPriceField);
+        if (aggregateValue.IsError())
+        {
+            return aggregateValue;
+        }
+        double extendedPrice = aggregateValue.ConvertOrDefault<double>();
+        if (extendedPrice > 15000)
+        {
+            return new DoubleAggregateValue(extendedPrice * 0.1);
+        }
+        return null;
+    }
+}
+
 ````
 ````VB.NET
 Public Class CommissionCalculatedField
     Inherits CalculatedField
     Private extendPriceField As RequiredField
-
     Public Sub New()
         Me.Name = "Commission"
         Me.extendPriceField = RequiredField.ForProperty("ExtendedPrice")
     End Sub
-
     Protected Overrides Function RequiredFields() As IEnumerable(Of RequiredField)
         Return New List(Of RequiredField) From {extendPriceField}
     End Function
-
     Protected Overrides Function CalculateValue(aggregateValues As IAggregateValues) As AggregateValue
         Dim aggregateValue = aggregateValues.GetAggregateValue(Me.extendPriceField)
         If aggregateValue.IsError() Then
             Return aggregateValue
         End If
-
         Dim extendedPrice As Double = aggregateValue.ConvertOrDefault(Of Double)()
         If extendedPrice > 15000 Then
             Return New DoubleAggregateValue(extendedPrice * 0.1)
         End If
-
         Return Nothing
     End Function
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -105,22 +95,21 @@ Now it is time to add a new instance of this class to the CalculatedFields colle
 {{source=..\SamplesVB\PivotGrid\PivotGridCalculatedFields.vb region=AddCalculatedField}} 
 
 ````C#
-          using (radPivotGrid1.PivotGridElement.DeferRefresh())
-          {
-              CommissionCalculatedField calculatedField = new CommissionCalculatedField();
-              calculatedField.Name = "Commission";
+  using (radPivotGrid1.PivotGridElement.DeferRefresh())
+  {
+      CommissionCalculatedField calculatedField = new CommissionCalculatedField();
+      calculatedField.Name = "Commission";
+      ((LocalDataSourceProvider)this.radPivotGrid1.DataProvider).CalculatedFields.Add(calculatedField);
+  }
 
-              ((LocalDataSourceProvider)this.radPivotGrid1.DataProvider).CalculatedFields.Add(calculatedField);
-          }
 ````
 ````VB.NET
-        Using radPivotGrid1.PivotGridElement.DeferRefresh()
-            Dim calculatedField As New CommissionCalculatedField()
-            calculatedField.Name = "Commission"
+Using radPivotGrid1.PivotGridElement.DeferRefresh()
+    Dim calculatedField As New CommissionCalculatedField()
+    calculatedField.Name = "Commission"
+    DirectCast(Me.radPivotGrid1.DataProvider, LocalDataSourceProvider).CalculatedFields.Add(calculatedField)
+End Using
 
-            DirectCast(Me.radPivotGrid1.DataProvider, LocalDataSourceProvider).CalculatedFields.Add(calculatedField)
-        End Using
-        '
 ````
 
 {{endregion}}

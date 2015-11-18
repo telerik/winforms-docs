@@ -17,34 +17,33 @@ To iterate thought the cells in __RadPivotGrid__ you should first retrieve all r
 
 ````C#
             
-            var rowGroups = radPivotGrid1.PivotGridElement.GetRowGroups();
-            var colGroups = radPivotGrid1.PivotGridElement.GetColumnGroups();
-            foreach (PivotGroupNode col in colGroups)
-            {
-                foreach (PivotGroupNode row in rowGroups)
-                {
-                    if (row.Group != null && col.Group != null)
-                    {
-                        var Value = this.radPivotGrid1.PivotGridElement.GetAggregateValue(row.Group, col.Group, false, false);
-                        Debug.WriteLine("Row = {0} , Column ={1}, Value ={2}", row.Name, col.Name, Value);
-                    }
-                }
-            }
+var rowGroups = radPivotGrid1.PivotGridElement.GetRowGroups();
+var colGroups = radPivotGrid1.PivotGridElement.GetColumnGroups();
+foreach (PivotGroupNode col in colGroups)
+{
+    foreach (PivotGroupNode row in rowGroups)
+    {
+        if (row.Group != null && col.Group != null)
+        {
+            var Value = this.radPivotGrid1.PivotGridElement.GetAggregateValue(row.Group, col.Group, false, false);
+            Debug.WriteLine("Row = {0} , Column ={1}, Value ={2}", row.Name, col.Name, Value);
+        }
+    }
+}
+
 ````
 ````VB.NET
+Dim rowGroups = radPivotGrid1.PivotGridElement.GetRowGroups()
+Dim colGroups = radPivotGrid1.PivotGridElement.GetColumnGroups()
+For Each col As PivotGroupNode In colGroups
+    For Each row As PivotGroupNode In rowGroups
+        If row.Group IsNot Nothing AndAlso col.Group IsNot Nothing Then
+            Dim Value = Me.radPivotGrid1.PivotGridElement.GetAggregateValue(row.Group, col.Group, False, False)
+            Debug.WriteLine("Row = {0} , Column ={1}, Value ={2}", row.Name, col.Name, Value)
+        End If
+    Next row
+Next col
 
-        Dim rowGroups = radPivotGrid1.PivotGridElement.GetRowGroups()
-        Dim colGroups = radPivotGrid1.PivotGridElement.GetColumnGroups()
-        For Each col As PivotGroupNode In colGroups
-            For Each row As PivotGroupNode In rowGroups
-                If row.Group IsNot Nothing AndAlso col.Group IsNot Nothing Then
-                    Dim Value = Me.radPivotGrid1.PivotGridElement.GetAggregateValue(row.Group, col.Group, False, False)
-                    Debug.WriteLine("Row = {0} , Column ={1}, Value ={2}", row.Name, col.Name, Value)
-                End If
-            Next row
-        Next col
-
-        '
 ````
 
 {{endregion}}
@@ -56,28 +55,26 @@ Using the above approach you can determine if a cell is selected or programmatic
 
 ````C#
                         
-                        // Print the values of the selected cells.
-                        if (radPivotGrid1.PivotGridElement.IsCellSelected(row, col))
-                        {
-                            var Value = this.radPivotGrid1.PivotGridElement.GetAggregateValue(row.Group, col.Group,false, false);
-                            Debug.WriteLine("Row = {0} , Column ={1}, Value ={2}", row.Name, col.Name, Value);
-                        }
+// Print the values of the selected cells.
+if (radPivotGrid1.PivotGridElement.IsCellSelected(row, col))
+{
+    var Value = this.radPivotGrid1.PivotGridElement.GetAggregateValue(row.Group, col.Group,false, false);
+    Debug.WriteLine("Row = {0} , Column ={1}, Value ={2}", row.Name, col.Name, Value);
+}
                         
-                        //Select cell in code
-                        radPivotGrid1.PivotGridElement.SelectCell(row, col, false, true);
+//Select cell in code
+radPivotGrid1.PivotGridElement.SelectCell(row, col, false, true);
+
 ````
 ````VB.NET
+' Print the values of the selected cells.
+If radPivotGrid1.PivotGridElement.IsCellSelected(row, col) Then
+    Dim Value = Me.radPivotGrid1.PivotGridElement.GetAggregateValue(row.Group, col.Group, False, False)
+    Debug.WriteLine("Row = {0} , Column ={1}, Value ={2}", row.Name, col.Name, Value)
+End If
+'Select cell in code
+radPivotGrid1.PivotGridElement.SelectCell(row, col, False, True)
 
-                    ' Print the values of the selected cells.
-                    If radPivotGrid1.PivotGridElement.IsCellSelected(row, col) Then
-                        Dim Value = Me.radPivotGrid1.PivotGridElement.GetAggregateValue(row.Group, col.Group, False, False)
-                        Debug.WriteLine("Row = {0} , Column ={1}, Value ={2}", row.Name, col.Name, Value)
-                    End If
-
-                    'Select cell in code
-                    radPivotGrid1.PivotGridElement.SelectCell(row, col, False, True)
-
-                    '
 ````
 
 {{endregion}}

@@ -24,33 +24,30 @@ To get started with the RadPropertyStore follow these three steps:
 {{source=..\SamplesVB\PropertyGrid\PropertyGridRadPropertyStore.vb region=RadPropertyStore}} 
 
 ````C#
-            PropertyStoreItem intItem = new PropertyStoreItem(typeof(int), "Integer", 1);
-            PropertyStoreItem floatItem = new PropertyStoreItem(typeof(float), "Float", 1f, "Property storing a floating point value.");
-            PropertyStoreItem stringItem = new PropertyStoreItem(typeof(string), "String", "telerik", "Property storing a string value", "Telerik");
-            PropertyStoreItem dockItem = new PropertyStoreItem(typeof(DockStyle), "Dock", DockStyle.Top, "Property containing DockStyle value", "Layout", false);
+PropertyStoreItem intItem = new PropertyStoreItem(typeof(int), "Integer", 1);
+PropertyStoreItem floatItem = new PropertyStoreItem(typeof(float), "Float", 1f, "Property storing a floating point value.");
+PropertyStoreItem stringItem = new PropertyStoreItem(typeof(string), "String", "telerik", "Property storing a string value", "Telerik");
+PropertyStoreItem dockItem = new PropertyStoreItem(typeof(DockStyle), "Dock", DockStyle.Top, "Property containing DockStyle value", "Layout", false);
+RadPropertyStore store = new RadPropertyStore();
+store.Add(intItem);
+store.Add(floatItem);
+store.Add(stringItem);
+store.Add(dockItem);
+this.radPropertyGrid1.SelectedObject = store;
 
-            RadPropertyStore store = new RadPropertyStore();
-            store.Add(intItem);
-            store.Add(floatItem);
-            store.Add(stringItem);
-            store.Add(dockItem);
-
-            this.radPropertyGrid1.SelectedObject = store;
 ````
 ````VB.NET
-        Dim intItem As New PropertyStoreItem(GetType(Integer), "Integer", 1)
-        Dim floatItem As New PropertyStoreItem(GetType(Single), "Float", 1.0F, "Property storing a floating point value.")
-        Dim stringItem As New PropertyStoreItem(GetType(String), "String", "telerik", "Property storing a string value", "Telerik")
-        Dim dockItem As New PropertyStoreItem(GetType(DockStyle), "Dock", DockStyle.Top, "Property containing DockStyle value", "Layout", False)
+Dim intItem As New PropertyStoreItem(GetType(Integer), "Integer", 1)
+Dim floatItem As New PropertyStoreItem(GetType(Single), "Float", 1.0F, "Property storing a floating point value.")
+Dim stringItem As New PropertyStoreItem(GetType(String), "String", "telerik", "Property storing a string value", "Telerik")
+Dim dockItem As New PropertyStoreItem(GetType(DockStyle), "Dock", DockStyle.Top, "Property containing DockStyle value", "Layout", False)
+Dim store As New RadPropertyStore
+store.Add(intItem)
+store.Add(floatItem)
+store.Add(stringItem)
+store.Add(dockItem)
+Me.RadPropertyGrid1.SelectedObject = store
 
-        Dim store As New RadPropertyStore
-        store.Add(intItem)
-        store.Add(floatItem)
-        store.Add(stringItem)
-        store.Add(dockItem)
-
-        Me.RadPropertyGrid1.SelectedObject = store
-        '
 ````
 
 {{endregion}}
@@ -65,17 +62,18 @@ You can then use the RadPropertyGrid to edit the PropertyStoreItems values as if
 {{source=..\SamplesVB\PropertyGrid\PropertyGridRadPropertyStore.vb region=modifyStore}} 
 
 ````C#
-            store["Integer"].Value = 100;
-            store["Dock"].Value = DockStyle.Fill;
-            store.RemoveAt(store.Count - 1);
-            store.Add(typeof(bool), "Boolean", true);
+store["Integer"].Value = 100;
+store["Dock"].Value = DockStyle.Fill;
+store.RemoveAt(store.Count - 1);
+store.Add(typeof(bool), "Boolean", true);
+
 ````
 ````VB.NET
-        store("Integer").Value = 100
-        store("Dock").Value = DockStyle.Fill
-        store.RemoveAt(store.Count - 1)
-        store.Add(GetType(Boolean), "Boolean", True)
-        '
+store("Integer").Value = 100
+store("Dock").Value = DockStyle.Fill
+store.RemoveAt(store.Count - 1)
+store.Add(GetType(Boolean), "Boolean", True)
+
 ````
 
 {{endregion}}

@@ -22,41 +22,39 @@ With __RadPivotGrid__ you are able to create different Groups that will be shown
 {{source=..\SamplesVB\PivotGrid\PivotGridCalculatedItems.vb region=CalculatedItemClasses}} 
 
 ````C#
-    public class MenAverageSales : CalculatedItem
+public class MenAverageSales : CalculatedItem
+{
+    protected override AggregateValue GetValue(IAggregateSummaryValues aggregateSummaryValues)
     {
-        protected override AggregateValue GetValue(IAggregateSummaryValues aggregateSummaryValues)
+        AggregateValue[] aggregateValues = {
+        aggregateSummaryValues.GetAggregateValue("Andrew Fuller"),
+        aggregateSummaryValues.GetAggregateValue("Michael Suyama"),
+        aggregateSummaryValues.GetAggregateValue("Robert King"),
+        aggregateSummaryValues.GetAggregateValue("Steven Buchanan")
+    };
+        if (aggregateValues.ContainsError())
         {
-            AggregateValue[] aggregateValues = {
-            aggregateSummaryValues.GetAggregateValue("Andrew Fuller"),
-            aggregateSummaryValues.GetAggregateValue("Michael Suyama"),
-            aggregateSummaryValues.GetAggregateValue("Robert King"),
-            aggregateSummaryValues.GetAggregateValue("Steven Buchanan")
-        };
-
-            if (aggregateValues.ContainsError())
-            {
-                return AggregateValue.ErrorAggregateValue;
-            }
-
-            double average = aggregateValues.Average(av => av.ConvertOrDefault<double>());
-            return new DoubleAggregateValue(average);
+            return AggregateValue.ErrorAggregateValue;
         }
+        double average = aggregateValues.Average(av => av.ConvertOrDefault<double>());
+        return new DoubleAggregateValue(average);
     }
+}
+
 ````
 ````VB.NET
 Public Class MenAverageSales
     Inherits CalculatedItem
     Protected Overrides Function GetValue(aggregateSummaryValues As IAggregateSummaryValues) As AggregateValue
         Dim aggregateValues As AggregateValue() = {aggregateSummaryValues.GetAggregateValue("Andrew Fuller"), aggregateSummaryValues.GetAggregateValue("Michael Suyama"), aggregateSummaryValues.GetAggregateValue("Robert King"), aggregateSummaryValues.GetAggregateValue("Steven Buchanan")}
-
         If aggregateValues.ContainsError() Then
             Return AggregateValue.ErrorAggregateValue
         End If
-
         Dim average As Double = aggregateValues.Average(Function(av) av.ConvertOrDefault(Of Double)())
         Return New DoubleAggregateValue(average)
     End Function
 End Class
+
 ````
 
 {{endregion}} 
@@ -67,23 +65,22 @@ As you can see the Calculated Item will show the average sales of four people. N
 {{source=..\SamplesVB\PivotGrid\PivotGridCalculatedItems.vb region=AddCalcItemWithoutSortOrder}} 
 
 ````C#
-            PropertyGroupDescription salesPersonGroupDescription = new PropertyGroupDescription();
-            salesPersonGroupDescription.PropertyName = "Salesperson";
+PropertyGroupDescription salesPersonGroupDescription = new PropertyGroupDescription();
+salesPersonGroupDescription.PropertyName = "Salesperson";
+MenAverageSales calculatedItem = new MenAverageSales();
+calculatedItem.GroupName = "Average Sales (Men)";
+salesPersonGroupDescription.CalculatedItems.Add(calculatedItem);
+localProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription);
 
-            MenAverageSales calculatedItem = new MenAverageSales();
-            calculatedItem.GroupName = "Average Sales (Men)";
-            salesPersonGroupDescription.CalculatedItems.Add(calculatedItem);
-            localProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription);
 ````
 ````VB.NET
-        Dim salesPersonGroupDescription As New PropertyGroupDescription()
-        salesPersonGroupDescription.PropertyName = "Salesperson"
+Dim salesPersonGroupDescription As New PropertyGroupDescription()
+salesPersonGroupDescription.PropertyName = "Salesperson"
+Dim calculatedItem As New MenAverageSales()
+calculatedItem.GroupName = "Average Sales (Men)"
+salesPersonGroupDescription.CalculatedItems.Add(calculatedItem)
+localProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription)
 
-        Dim calculatedItem As New MenAverageSales()
-        calculatedItem.GroupName = "Average Sales (Men)"
-        salesPersonGroupDescription.CalculatedItems.Add(calculatedItem)
-        localProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription)
-        '
 ````
 
 {{endregion}}
@@ -98,33 +95,33 @@ Calculated items can be added only to Group Descriptions. If you are using __Rad
 {{source=..\SamplesVB\PivotGrid\PivotGridCalculatedItems.vb region=localProvider_PrepareDescriptionForField}} 
 
 ````C#
-        void localProvider_PrepareDescriptionForField(object sender, PrepareDescriptionForFieldEventArgs e)
+void localProvider_PrepareDescriptionForField(object sender, PrepareDescriptionForFieldEventArgs e)
+{
+    if (e.DescriptionType == DataProviderDescriptionType.Group && e.FieldInfo.DisplayName == "Salesperson")
+    {
+        var description = e.Description as Telerik.Pivot.Core.PropertyGroupDescription;
+        if (description != null)
         {
-            if (e.DescriptionType == DataProviderDescriptionType.Group && e.FieldInfo.DisplayName == "Salesperson")
-            {
-                var description = e.Description as Telerik.Pivot.Core.PropertyGroupDescription;
-
-                if (description != null)
-                {
-                    var calculatedItem = new MenAverageSales();
-                    calculatedItem.GroupName = "Average Sales (Men)";
-                    description.CalculatedItems.Add(calculatedItem);
-                }
-            }
+            var calculatedItem = new MenAverageSales();
+            calculatedItem.GroupName = "Average Sales (Men)";
+            description.CalculatedItems.Add(calculatedItem);
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub localProvider_PrepareDescriptionForField(sender As Object, e As PrepareDescriptionForFieldEventArgs)
-        If e.DescriptionType = DataProviderDescriptionType.Group AndAlso e.FieldInfo.DisplayName = "Salesperson" Then
-            Dim description = TryCast(e.Description, Telerik.Pivot.Core.PropertyGroupDescription)
-
-            If description IsNot Nothing Then
-                Dim calculatedItem = New MenAverageSales()
-                calculatedItem.GroupName = "Average Sales (Men)"
-                description.CalculatedItems.Add(calculatedItem)
-            End If
+Private Sub localProvider_PrepareDescriptionForField(sender As Object, e As PrepareDescriptionForFieldEventArgs)
+    If e.DescriptionType = DataProviderDescriptionType.Group AndAlso e.FieldInfo.DisplayName = "Salesperson" Then
+        Dim description = TryCast(e.Description, Telerik.Pivot.Core.PropertyGroupDescription)
+        If description IsNot Nothing Then
+            Dim calculatedItem = New MenAverageSales()
+            calculatedItem.GroupName = "Average Sales (Men)"
+            description.CalculatedItems.Add(calculatedItem)
         End If
-    End Sub
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -137,45 +134,38 @@ If you have calculated items in both rows and columns group descriptions, you ha
 {{source=..\SamplesVB\PivotGrid\PivotGridCalculatedItems.vb region=AddCalcItemWithSortOrder}} 
 
 ````C#
-            PropertyGroupDescription salesPersonGroupDescription = new PropertyGroupDescription();
-            salesPersonGroupDescription.PropertyName = "Salesperson";
+PropertyGroupDescription salesPersonGroupDescription = new PropertyGroupDescription();
+salesPersonGroupDescription.PropertyName = "Salesperson";
+MenAverageSales menAvgSalesCalculatedItem  = new MenAverageSales();
+menAvgSalesCalculatedItem .GroupName = "Average Sales (Men)";
+menAvgSalesCalculatedItem .SolveOrder = 1;
+salesPersonGroupDescription.CalculatedItems.Add(menAvgSalesCalculatedItem);
+PropertyGroupDescription countryGroupDescription = new PropertyGroupDescription();
+countryGroupDescription.PropertyName = "Country";
+CA caCalculatedItem = new CA();
+caCalculatedItem.GroupName = "CA";
+caCalculatedItem.SolveOrder = 2;
+countryGroupDescription.CalculatedItems.Add(caCalculatedItem);
+localProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription);
+localProvider.RowGroupDescriptions.Add(countryGroupDescription);
 
-            MenAverageSales menAvgSalesCalculatedItem  = new MenAverageSales();
-            menAvgSalesCalculatedItem .GroupName = "Average Sales (Men)";
-            menAvgSalesCalculatedItem .SolveOrder = 1;
-            salesPersonGroupDescription.CalculatedItems.Add(menAvgSalesCalculatedItem);
-
-            PropertyGroupDescription countryGroupDescription = new PropertyGroupDescription();
-            countryGroupDescription.PropertyName = "Country";
-            CA caCalculatedItem = new CA();
-            caCalculatedItem.GroupName = "CA";
-            caCalculatedItem.SolveOrder = 2;
-            countryGroupDescription.CalculatedItems.Add(caCalculatedItem);
-
-
-            localProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription);
-            localProvider.RowGroupDescriptions.Add(countryGroupDescription);
 ````
 ````VB.NET
-        Dim salesPersonGroupDescription As New PropertyGroupDescription()
-        salesPersonGroupDescription.PropertyName = "Salesperson"
+Dim salesPersonGroupDescription As New PropertyGroupDescription()
+salesPersonGroupDescription.PropertyName = "Salesperson"
+Dim menAvgSalesCalculatedItem As New MenAverageSales()
+menAvgSalesCalculatedItem.GroupName = "Average Sales (Men)"
+menAvgSalesCalculatedItem.SolveOrder = 1
+salesPersonGroupDescription.CalculatedItems.Add(menAvgSalesCalculatedItem)
+Dim countryGroupDescription As New PropertyGroupDescription()
+countryGroupDescription.PropertyName = "Country"
+Dim caCalculatedItem As New CA()
+caCalculatedItem.GroupName = "CA"
+caCalculatedItem.SolveOrder = 2
+countryGroupDescription.CalculatedItems.Add(caCalculatedItem)
+localProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription)
+localProvider.RowGroupDescriptions.Add(countryGroupDescription)
 
-        Dim menAvgSalesCalculatedItem As New MenAverageSales()
-        menAvgSalesCalculatedItem.GroupName = "Average Sales (Men)"
-        menAvgSalesCalculatedItem.SolveOrder = 1
-        salesPersonGroupDescription.CalculatedItems.Add(menAvgSalesCalculatedItem)
-
-        Dim countryGroupDescription As New PropertyGroupDescription()
-        countryGroupDescription.PropertyName = "Country"
-        Dim caCalculatedItem As New CA()
-        caCalculatedItem.GroupName = "CA"
-        caCalculatedItem.SolveOrder = 2
-        countryGroupDescription.CalculatedItems.Add(caCalculatedItem)
-
-
-        localProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription)
-        localProvider.RowGroupDescriptions.Add(countryGroupDescription)
-        '
 ````
 
 {{endregion}}

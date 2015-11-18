@@ -33,11 +33,12 @@ __FixedContentEditor__ is always associated to a single __IContentRootElement__ 
 
 ````C#
             
-            FixedContentEditor editor = new FixedContentEditor(contentRootElement);
+FixedContentEditor editor = new FixedContentEditor(contentRootElement);
+
 ````
 ````VB.NET
-        Dim editor As FixedContentEditor = New FixedContentEditor(contentRootElement)
-        '
+Dim editor As FixedContentEditor = New FixedContentEditor(contentRootElement)
+
 ````
 
 {{endregion}}
@@ -53,11 +54,12 @@ __Example 2__ demonstrates how you can create а FixedContentEditor with specifi
 
 ````C#
         
-            FixedContentEditor editor = new FixedContentEditor(contentRootElement, initialPosition);
+FixedContentEditor editor = new FixedContentEditor(contentRootElement, initialPosition);
+
 ````
 ````VB.NET
-        Dim editor As FixedContentEditor = New FixedContentEditor(contentRootElement, initialPosition)
-        '
+Dim editor As FixedContentEditor = New FixedContentEditor(contentRootElement, initialPosition)
+
 ````
 
 {{endregion}}
@@ -77,11 +79,12 @@ Inserting а [TextFragment]({%slug winforms/pdfprocessing/model/textfragment%}) 
 
 ````C#
             
-            editor.DrawText("First text fragment.");
+editor.DrawText("First text fragment.");
+
 ````
 ````VB.NET
-        editor.DrawText("First text fragment.")
-        '
+editor.DrawText("First text fragment.")
+
 ````
 
 {{endregion}}
@@ -103,17 +106,18 @@ __Example 4__ shows how you can use the __Block__ object to draw a paragraph.
 
 ````C#
             
-            Block block = new Block();
-            block.InsertText("First sentence.");
-            block.InsertText("Second sentence.");
-            editor.DrawBlock(block);
+Block block = new Block();
+block.InsertText("First sentence.");
+block.InsertText("Second sentence.");
+editor.DrawBlock(block);
+
 ````
 ````VB.NET
-        Dim block As New Block()
-        block.InsertText("First sentence.")
-        block.InsertText("Second sentence.")
-        editor.DrawBlock(block)
-        '
+Dim block As New Block()
+block.InsertText("First sentence.")
+block.InsertText("Second sentence.")
+editor.DrawBlock(block)
+
 ````
 
 {{endregion}}
@@ -151,17 +155,17 @@ __Example 5__ shows how you can add an image created from a Stream.
 {{source=..\SamplesVB\PdfProcessing\Editing\PdfProcessingEditingFixedContentEditor.vb region=radpdfprocessing-editing-fixedcontenteditor_4}} 
 
 ````C#
+using (Stream stream = this.GetResourceStream("Telerik_logo.jpg"))
+{
+    editor.DrawImage(stream, new Size(118, 28));
+}
 
-            using (Stream stream = this.GetResourceStream("Telerik_logo.jpg"))
-            {
-                editor.DrawImage(stream, new Size(118, 28));
-            }
 ````
 ````VB.NET
-        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-            editor.DrawImage(stream, New Size(118, 28))
-        End Using
-        '
+Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
+    editor.DrawImage(stream, New Size(118, 28))
+End Using
+
 ````
 
 {{endregion}}
@@ -193,11 +197,12 @@ __Example 6__ shows how you can add an ellipse using one of FixedContentEditor's
 
 ````C#
             
-            editor.DrawEllipse(new Point(250, 70), 136, 48);
+editor.DrawEllipse(new Point(250, 70), 136, 48);
+
 ````
 ````VB.NET
-        editor.DrawEllipse(New Point(250, 70), 136, 48)
-        '
+editor.DrawEllipse(New Point(250, 70), 136, 48)
+
 ````
 
 {{endregion}}
@@ -223,29 +228,29 @@ When a new clipping is pushed, it is set as a clipping to the current clipping i
 
 ````C#
             
-            string visibleText = "The last word in this text is";
-            string text = string.Format("{0} clipped.", visibleText); //The last word in this text is clipped.
-            Block block = new Block();
-            block.InsertText(visibleText);
-            Size visisibleTextSize = block.Measure();
+string visibleText = "The last word in this text is";
+string text = string.Format("{0} clipped.", visibleText); //The last word in this text is clipped.
+Block block = new Block();
+block.InsertText(visibleText);
+Size visisibleTextSize = block.Measure();
             
-            using (editor.PushClipping(new Rect(new Point(0, 0), visisibleTextSize)))
-            {
-                editor.DrawText(text);
-            }
+using (editor.PushClipping(new Rect(new Point(0, 0), visisibleTextSize)))
+{
+    editor.DrawText(text);
+}
+
 ````
 ````VB.NET
-        Dim visibleText As String = "The last word in this text is"
-        Dim text As String = String.Format("{0} clipped.", visibleText)
-        'The last word in this text is clipped.
-        Dim block As New Block()
-        block.InsertText(visibleText)
-        Dim visisibleTextSize As Size = block.Measure()
+Dim visibleText As String = "The last word in this text is"
+Dim text As String = String.Format("{0} clipped.", visibleText)
+'The last word in this text is clipped.
+Dim block As New Block()
+block.InsertText(visibleText)
+Dim visisibleTextSize As Size = block.Measure()
+Using editor.PushClipping(New Rect(New Point(0, 0), visisibleTextSize))
+    editor.DrawText(text)
+End Using
 
-        Using editor.PushClipping(New Rect(New Point(0, 0), visisibleTextSize))
-            editor.DrawText(text)
-        End Using
-        '
 ````
 
 {{endregion}}
@@ -269,47 +274,44 @@ __Example 8__ generates a table and draws it in some fixed size.
 
 ````C#
             
-            Table table = new Table();
-            Border border = new Border();
-            table.DefaultCellProperties.Borders = new TableCellBorders(border, border, border, border);
-            table.DefaultCellProperties.Padding = new Thickness(10);
-            TableRow firstRow = table.Rows.AddTableRow();
-            firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell");
-            firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell");
-            firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell");
-            TableRow secondRow = table.Rows.AddTableRow();
-            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell");
-            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell");
-            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell");
+Table table = new Table();
+Border border = new Border();
+table.DefaultCellProperties.Borders = new TableCellBorders(border, border, border, border);
+table.DefaultCellProperties.Padding = new Thickness(10);
+TableRow firstRow = table.Rows.AddTableRow();
+firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell");
+firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell");
+firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell");
+TableRow secondRow = table.Rows.AddTableRow();
+secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell");
+secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell");
+secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell");
+RadFixedDocument document = new RadFixedDocument();
+RadFixedPage page = document.Pages.AddPage();
+FixedContentEditor editor = new FixedContentEditor(page);
+editor.Position.Translate(10, 10);
+editor.DrawTable(table, new Size(180, double.PositiveInfinity));
 
-            RadFixedDocument document = new RadFixedDocument();
-            RadFixedPage page = document.Pages.AddPage();
-            FixedContentEditor editor = new FixedContentEditor(page);
-            editor.Position.Translate(10, 10);
-            editor.DrawTable(table, new Size(180, double.PositiveInfinity));
 ````
 ````VB.NET
+Dim table As New Table()
+Dim border As New Border()
+table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
+table.DefaultCellProperties.Padding = New Thickness(10)
+Dim firstRow As TableRow = table.Rows.AddTableRow()
+firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
+firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
+firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell")
+Dim secondRow As TableRow = table.Rows.AddTableRow()
+secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell")
+secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell")
+secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell")
+Dim document As New RadFixedDocument()
+Dim page As RadFixedPage = document.Pages.AddPage()
+Dim editor As New FixedContentEditor(page)
+editor.Position.Translate(10, 10)
+editor.DrawTable(table, New Size(180, Double.PositiveInfinity))
 
-        Dim table As New Table()
-        Dim border As New Border()
-        table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-        table.DefaultCellProperties.Padding = New Thickness(10)
-        Dim firstRow As TableRow = table.Rows.AddTableRow()
-        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-        firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell")
-        Dim secondRow As TableRow = table.Rows.AddTableRow()
-        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell")
-        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell")
-        secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell")
-
-        Dim document As New RadFixedDocument()
-        Dim page As RadFixedPage = document.Pages.AddPage()
-        Dim editor As New FixedContentEditor(page)
-        editor.Position.Translate(10, 10)
-        editor.DrawTable(table, New Size(180, Double.PositiveInfinity))
-
-        '
 ````
 
 {{endregion}} 
@@ -332,24 +334,25 @@ The code in __Example 8__ shows how to manipulate the position of the inserted c
 
 ````C#
         
-            editor.Position.Scale(1.5, 0.5);
-            editor.Position.Rotate(10);
-            editor.DrawText("Image:");
-            editor.Position.Translate(0, 20);
-            using (Stream stream = this.GetResourceStream("Telerik_logo.jpg"))
-            {
-                editor.DrawImage(stream, new Size(118, 28));
-            }
+editor.Position.Scale(1.5, 0.5);
+editor.Position.Rotate(10);
+editor.DrawText("Image:");
+editor.Position.Translate(0, 20);
+using (Stream stream = this.GetResourceStream("Telerik_logo.jpg"))
+{
+    editor.DrawImage(stream, new Size(118, 28));
+}
+
 ````
 ````VB.NET
-        editor.Position.Scale(1.5, 0.5)
-        editor.Position.Rotate(10)
-        editor.DrawText("Image:")
-        editor.Position.Translate(0, 20)
-        Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
-            editor.DrawImage(stream, New Size(118, 28))
-        End Using
-        '
+editor.Position.Scale(1.5, 0.5)
+editor.Position.Rotate(10)
+editor.DrawText("Image:")
+editor.Position.Translate(0, 20)
+Using stream As Stream = Me.GetResourceStream("Telerik_logo.jpg")
+    editor.DrawImage(stream, New Size(118, 28))
+End Using
+
 ````
 
 {{endregion}}

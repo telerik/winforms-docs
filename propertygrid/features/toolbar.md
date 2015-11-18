@@ -18,11 +18,12 @@ RadPropertyGrid offers a toolbar with out of the box functionality, which appear
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=ToolbarVisible}} 
 
 ````C#
-            radPropertyGrid1.ToolbarVisible = true;
+radPropertyGrid1.ToolbarVisible = true;
+
 ````
 ````VB.NET
-        RadPropertyGrid1.ToolbarVisible = True
-        '
+RadPropertyGrid1.ToolbarVisible = True
+
 ````
 
 {{endregion}} 
@@ -37,13 +38,14 @@ You can set the predefined filter operator and property by making use of the fol
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=FilterProperties}} 
 
 ````C#
-            radPropertyGrid1.PropertyGridElement.ToolbarElement.FilterOperator = FilterOperator.Contains;
-            radPropertyGrid1.PropertyGridElement.ToolbarElement.FilterPropertyName = "Name";
+radPropertyGrid1.PropertyGridElement.ToolbarElement.FilterOperator = FilterOperator.Contains;
+radPropertyGrid1.PropertyGridElement.ToolbarElement.FilterPropertyName = "Name";
+
 ````
 ````VB.NET
-        RadPropertyGrid1.PropertyGridElement.ToolbarElement.FilterOperator = FilterOperator.Contains
-        RadPropertyGrid1.PropertyGridElement.ToolbarElement.FilterPropertyName = "Name"
-        '
+RadPropertyGrid1.PropertyGridElement.ToolbarElement.FilterOperator = FilterOperator.Contains
+RadPropertyGrid1.PropertyGridElement.ToolbarElement.FilterPropertyName = "Name"
+
 ````
 
 {{endregion}}
@@ -56,15 +58,16 @@ The toolbar consists of a __StackLayoutPanel__, which allow you to easily add ad
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=accessingItems}} 
 
 ````C#
-            RadTextBoxElement filterTextBox = radPropertyGrid1.PropertyGridElement.ToolbarElement.SearchTextBoxElement;
-            RadToggleButtonElement sortButton = radPropertyGrid1.PropertyGridElement.ToolbarElement.AlphabeticalToggleButton;
-            RadToggleButtonElement groupButton = radPropertyGrid1.PropertyGridElement.ToolbarElement.CategorizedToggleButton;
+RadTextBoxElement filterTextBox = radPropertyGrid1.PropertyGridElement.ToolbarElement.SearchTextBoxElement;
+RadToggleButtonElement sortButton = radPropertyGrid1.PropertyGridElement.ToolbarElement.AlphabeticalToggleButton;
+RadToggleButtonElement groupButton = radPropertyGrid1.PropertyGridElement.ToolbarElement.CategorizedToggleButton;
+
 ````
 ````VB.NET
-        Dim filterTextBox As RadTextBoxElement = RadPropertyGrid1.PropertyGridElement.ToolbarElement.SearchTextBoxElement
-        Dim sortButton As RadToggleButtonElement = RadPropertyGrid1.PropertyGridElement.ToolbarElement.AlphabeticalToggleButton
-        Dim groupButton As RadToggleButtonElement = RadPropertyGrid1.PropertyGridElement.ToolbarElement.CategorizedToggleButton
-        '
+Dim filterTextBox As RadTextBoxElement = RadPropertyGrid1.PropertyGridElement.ToolbarElement.SearchTextBoxElement
+Dim sortButton As RadToggleButtonElement = RadPropertyGrid1.PropertyGridElement.ToolbarElement.AlphabeticalToggleButton
+Dim groupButton As RadToggleButtonElement = RadPropertyGrid1.PropertyGridElement.ToolbarElement.CategorizedToggleButton
+
 ````
 
 {{endregion}}
@@ -77,19 +80,20 @@ If you want to add a new element in the toolbar, just add it to the __Children__
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=addElement}} 
 
 ````C#
-            RadButtonElement clearFiltering = new RadButtonElement();
-            clearFiltering.Text = "Clear";
-            clearFiltering.MinSize = new System.Drawing.Size(25, 22);
-            clearFiltering.StretchHorizontally = false;
-            radPropertyGrid1.PropertyGridElement.ToolbarElement.Children.Add(clearFiltering);
+RadButtonElement clearFiltering = new RadButtonElement();
+clearFiltering.Text = "Clear";
+clearFiltering.MinSize = new System.Drawing.Size(25, 22);
+clearFiltering.StretchHorizontally = false;
+radPropertyGrid1.PropertyGridElement.ToolbarElement.Children.Add(clearFiltering);
+
 ````
 ````VB.NET
-        Dim clearFiltering As New RadButtonElement()
-        clearFiltering.Text = "Clear"
-        clearFiltering.MinSize = New System.Drawing.Size(25, 22)
-        clearFiltering.StretchHorizontally = False
-        RadPropertyGrid1.PropertyGridElement.ToolbarElement.Children.Add(clearFiltering)
-        '
+Dim clearFiltering As New RadButtonElement()
+clearFiltering.Text = "Clear"
+clearFiltering.MinSize = New System.Drawing.Size(25, 22)
+clearFiltering.StretchHorizontally = False
+RadPropertyGrid1.PropertyGridElement.ToolbarElement.Children.Add(clearFiltering)
+
 ````
 
 {{endregion}}

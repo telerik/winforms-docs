@@ -20,13 +20,14 @@ Here is how to use this feature:
 {{source=..\SamplesVB\PropertyGrid\PropertyGridBindingToMultipleObjects.vb region=BindToMultipleObjects}} 
 
 ````C#
-            object[] objects = new object[] { this.radButton1, this.radTextBox1, this.radLabel1 };
-            this.radPropertyGrid1.SelectedObjects = objects;
+object[] objects = new object[] { this.radButton1, this.radTextBox1, this.radLabel1 };
+this.radPropertyGrid1.SelectedObjects = objects;
+
 ````
 ````VB.NET
-        Dim objects As Object() = New Object() {Me.RadButton1, Me.RadTextBox1, Me.RadLabel1}
-        Me.RadPropertyGrid1.SelectedObjects = objects
-        '
+Dim objects As Object() = New Object() {Me.RadButton1, Me.RadTextBox1, Me.RadLabel1}
+Me.RadPropertyGrid1.SelectedObjects = objects
+
 ````
 
 {{endregion}}

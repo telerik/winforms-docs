@@ -36,13 +36,14 @@ You can filter by the following criteria’s:
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridFiltering.vb region=Filtering}} 
 
 ````C#
-            FilterDescriptor filter = new FilterDescriptor("Name", FilterOperator.Contains, "size");
-            radPropertyGrid1.FilterDescriptors.Add(filter);
+FilterDescriptor filter = new FilterDescriptor("Name", FilterOperator.Contains, "size");
+radPropertyGrid1.FilterDescriptors.Add(filter);
+
 ````
 ````VB.NET
-        Dim filter = New FilterDescriptor("Name", FilterOperator.Contains, "size")
-        RadPropertyGrid1.FilterDescriptors.Add(filter)
-        '
+Dim filter = New FilterDescriptor("Name", FilterOperator.Contains, "size")
+RadPropertyGrid1.FilterDescriptors.Add(filter)
+
 ````
 
 {{endregion}}

@@ -39,15 +39,16 @@ __Example 1__ demonstrates how you can create an RgbColor and assign it as Fill 
 
 ````C#
             
-            RgbColor magenta = new RgbColor(255, 0, 255);
-            Path path = new Path();
-            path.Fill = magenta;
+RgbColor magenta = new RgbColor(255, 0, 255);
+Path path = new Path();
+path.Fill = magenta;
+
 ````
 ````VB.NET
-        Dim magenta As RgbColor = New RgbColor(255, 0, 255)
-        Dim path As Path = New Path()
-        path.Fill = magenta
-        '
+Dim magenta As RgbColor = New RgbColor(255, 0, 255)
+Dim path As Path = New Path()
+path.Fill = magenta
+
 ````
 
 {{endregion}} 
@@ -91,26 +92,24 @@ __Example 2__ shows hot to create a LinearGradient and assign it as the FillColo
 
 ````C#
             
-            FixedContentEditor containerEditor = new FixedContentEditor(container);
+FixedContentEditor containerEditor = new FixedContentEditor(container);
             
-            LinearGradient linearGradient = new LinearGradient(new Point(0, 0), new Point(30, 30));
-            linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 207, 0), 0));
-            linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 102, 204), 0));
+LinearGradient linearGradient = new LinearGradient(new Point(0, 0), new Point(30, 30));
+linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 207, 0), 0));
+linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 102, 204), 0));
             
-            containerEditor.GraphicProperties.FillColor = linearGradient;
-            containerEditor.DrawRectangle(new Rect(10, 10, 48, 29));
+containerEditor.GraphicProperties.FillColor = linearGradient;
+containerEditor.DrawRectangle(new Rect(10, 10, 48, 29));
+
 ````
 ````VB.NET
+Dim containerEditor As New FixedContentEditor(container)
+Dim linearGradient As New LinearGradient(New Point(0, 0), New Point(30, 30))
+linearGradient.GradientStops.Add(New GradientStop(New RgbColor(0, 207, 0), 0))
+linearGradient.GradientStops.Add(New GradientStop(New RgbColor(0, 102, 204), 0))
+containerEditor.GraphicProperties.FillColor = linearGradient
+containerEditor.DrawRectangle(New Rect(10, 10, 48, 29))
 
-        Dim containerEditor As New FixedContentEditor(container)
-
-        Dim linearGradient As New LinearGradient(New Point(0, 0), New Point(30, 30))
-        linearGradient.GradientStops.Add(New GradientStop(New RgbColor(0, 207, 0), 0))
-        linearGradient.GradientStops.Add(New GradientStop(New RgbColor(0, 102, 204), 0))
-
-        containerEditor.GraphicProperties.FillColor = linearGradient
-        containerEditor.DrawRectangle(New Rect(10, 10, 48, 29))
-        '
 ````
 
 {{endregion}}
@@ -160,29 +159,28 @@ Since the __TilingBase__ class implements the __IContentRootElement__ interface 
 
 ````C#
             
-            FixedContentEditor containerEditor = new FixedContentEditor(container);
+FixedContentEditor containerEditor = new FixedContentEditor(container);
             
-            Tiling tiling = new Tiling(new Rect(0, 0, 10, 10));
-            FixedContentEditor tilingEditor = new FixedContentEditor(tiling);
-            tilingEditor.GraphicProperties.IsStroked = false;
-            tilingEditor.GraphicProperties.FillColor = new RgbColor(128, 28, 43);
-            tilingEditor.DrawRectangle(new Rect(2, 2, 5, 7));
+Tiling tiling = new Tiling(new Rect(0, 0, 10, 10));
+FixedContentEditor tilingEditor = new FixedContentEditor(tiling);
+tilingEditor.GraphicProperties.IsStroked = false;
+tilingEditor.GraphicProperties.FillColor = new RgbColor(128, 28, 43);
+tilingEditor.DrawRectangle(new Rect(2, 2, 5, 7));
     
-            containerEditor.GraphicProperties.FillColor = tiling;
-            containerEditor.DrawCircle(new Point(30, 30), 20);
+containerEditor.GraphicProperties.FillColor = tiling;
+containerEditor.DrawCircle(new Point(30, 30), 20);
+
 ````
 ````VB.NET
-        Dim containerEditor As FixedContentEditor = New FixedContentEditor(container)
+Dim containerEditor As FixedContentEditor = New FixedContentEditor(container)
+Dim tiling As Tiling = New Tiling(New Rect(0, 0, 10, 10))
+Dim tilingEditor As FixedContentEditor = New FixedContentEditor(tiling)
+tilingEditor.GraphicProperties.IsStroked = False
+tilingEditor.GraphicProperties.FillColor = New RgbColor(128, 28, 43)
+tilingEditor.DrawRectangle(New Rect(2, 2, 5, 7))
+containerEditor.GraphicProperties.FillColor = tiling
+containerEditor.DrawCircle(New Point(30, 30), 20)
 
-        Dim tiling As Tiling = New Tiling(New Rect(0, 0, 10, 10))
-        Dim tilingEditor As FixedContentEditor = New FixedContentEditor(tiling)
-        tilingEditor.GraphicProperties.IsStroked = False
-        tilingEditor.GraphicProperties.FillColor = New RgbColor(128, 28, 43)
-        tilingEditor.DrawRectangle(New Rect(2, 2, 5, 7))
-
-        containerEditor.GraphicProperties.FillColor = tiling
-        containerEditor.DrawCircle(New Point(30, 30), 20)
-        '
 ````
 
 {{endregion}}

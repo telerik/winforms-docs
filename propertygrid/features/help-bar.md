@@ -22,11 +22,12 @@ RadPropertyGrid offers a help bar which reads and displays the name and content 
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridHelpBar.vb region=helpVisible}} 
 
 ````C#
-            radPropertyGrid1.HelpVisible = true;
+radPropertyGrid1.HelpVisible = true;
+
 ````
 ````VB.NET
-        RadPropertyGrid1.HelpVisible = True
-        '
+RadPropertyGrid1.HelpVisible = True
+
 ````
 
 {{endregion}} 

@@ -21,12 +21,13 @@ To enable this functionality a single property setting is needed:
 {{source=..\SamplesCS\PropertyGrid\PropertyGridKeyboardNavigation.cs region=KeyboardSearchEnabled}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridKeyboardNavigation.vb region=KeyboardSearchEnabled}} 
 
-````C#"
-            radPropertyGrid1.KeyboardSearchEnabled = true;
+````C#
+radPropertyGrid1.KeyboardSearchEnabled = true;
+
 ````
 ````VB.NET
-        radPropertyGrid1.KeyboardSearchEnabled = True
-        '
+radPropertyGrid1.KeyboardSearchEnabled = True
+
 ````
 
 {{endregion}}
@@ -37,11 +38,12 @@ Another property of interest is the __KeyboardSearchResetInterval__. It is used 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridKeyboardNavigation.vb region=KeyboardSearchResetInterval}} 
 
 ````C#
-            radPropertyGrid1.KeyboardSearchResetInterval = 200;
+radPropertyGrid1.KeyboardSearchResetInterval = 200;
+
 ````
 ````VB.NET
-        radPropertyGrid1.KeyboardSearchResetInterval = 200
-        '
+radPropertyGrid1.KeyboardSearchResetInterval = 200
+
 ````
 
 {{endregion}}

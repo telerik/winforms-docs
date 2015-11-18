@@ -18,11 +18,12 @@ The report filters are displayed as descriptor elements in the report filters ar
 {{source=..\SamplesVB\PivotGrid\Filtering\PivotGridReportFiltering.vb region=ShowFilterArea}} 
 
 ````C#
-            this.radPivotGrid1.ShowFilterArea = true;
+this.radPivotGrid1.ShowFilterArea = true;
+
 ````
 ````VB.NET
-        Me.radPivotGrid1.ShowFilterArea = True
-        '
+Me.radPivotGrid1.ShowFilterArea = True
+
 ````
 
 {{endregion}}
@@ -39,31 +40,26 @@ The contents of the FilterDescriptions collection can also be edited at runtime 
 {{source=..\SamplesVB\PivotGrid\Filtering\PivotGridReportFiltering.vb region=PropertyFilterDescription}} 
 
 ````C#
-            PropertyFilterDescription description = new PropertyFilterDescription(); 
-            ComparisonCondition condition = new ComparisonCondition();
+PropertyFilterDescription description = new PropertyFilterDescription(); 
+ComparisonCondition condition = new ComparisonCondition();
+condition.Condition = Comparison.Equals;
+condition.Than = "UK";
+description.PropertyName = "ShipCountry";
+description.Condition = condition;
+description.CustomName = "Country";
+this.radPivotGrid1.FilterDescriptions.Add(description);
 
-            condition.Condition = Comparison.Equals;
-            condition.Than = "UK";
-
-            description.PropertyName = "ShipCountry";
-            description.Condition = condition;
-            description.CustomName = "Country";
-
-            this.radPivotGrid1.FilterDescriptions.Add(description);
 ````
 ````VB.NET
-        Dim description As New PropertyFilterDescription()
-        Dim condition As New ComparisonCondition()
+Dim description As New PropertyFilterDescription()
+Dim condition As New ComparisonCondition()
+condition.Condition = Telerik.Pivot.Core.Filtering.Comparison.Equals
+condition.Than = "UK"
+description.PropertyName = "ShipCountry"
+description.Condition = condition
+description.CustomName = "Country"
+Me.radPivotGrid1.FilterDescriptions.Add(description)
 
-        condition.Condition = Telerik.Pivot.Core.Filtering.Comparison.Equals
-        condition.Than = "UK"
-
-        description.PropertyName = "ShipCountry"
-        description.Condition = condition
-        description.CustomName = "Country"
-
-        Me.radPivotGrid1.FilterDescriptions.Add(description)
-        '
 ````
 
 {{endregion}}
@@ -74,21 +70,20 @@ The __Condition__ property of the __PropertyFilterDescription__ holds the curren
 {{source=..\SamplesVB\PivotGrid\Filtering\PivotGridReportFiltering.vb region=SetCondition}} 
 
 ````C#
-            SetCondition setCondition = new SetCondition();
+SetCondition setCondition = new SetCondition();
+setCondition.Comparison = SetComparison.Includes;
+setCondition.Items.Add("UK");
+setCondition.Items.Add("Canada");
+setCondition.Items.Add("USA");
 
-            setCondition.Comparison = SetComparison.Includes;
-            setCondition.Items.Add("UK");
-            setCondition.Items.Add("Canada");
-            setCondition.Items.Add("USA");
 ````
 ````VB.NET
-        Dim setCondition As New SetCondition()
+Dim setCondition As New SetCondition()
+setCondition.Comparison = SetComparison.Includes
+setCondition.Items.Add("UK")
+setCondition.Items.Add("Canada")
+setCondition.Items.Add("USA")
 
-        setCondition.Comparison = SetComparison.Includes
-        setCondition.Items.Add("UK")
-        setCondition.Items.Add("Canada")
-        setCondition.Items.Add("USA")
-        '
 ````
 
 {{endregion}}

@@ -26,29 +26,28 @@ Below is a sample implementation of an English localization provider:
 {{source=..\SamplesVB\PropertyGrid\PropertyGridLocalization.vb region=localizationProvider}} 
 
 ````C#
-    public class MyEnglishPropertyGridLocalizationProvider : PropertyGridLocalizationProvider
+public class MyEnglishPropertyGridLocalizationProvider : PropertyGridLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
     {
-        public override string GetLocalizedString(string id)
+        switch (id)
         {
-            switch (id)
-            {
-                case PropertyGridStringId.ContextMenuReset: return "Reset";
-                case PropertyGridStringId.ContextMenuEdit: return "Edit";
-                case PropertyGridStringId.ContextMenuExpand: return "Expand";
-                case PropertyGridStringId.ContextMenuCollapse: return "Collapse";
-                case PropertyGridStringId.ContextMenuShowDescription: return "Show description";
-                case PropertyGridStringId.ContextMenuShowToolbar: return "Show toolbar";
-
-                case PropertyGridStringId.ContextMenuSort: return "Sorta";
-                case PropertyGridStringId.ContextMenuNoSort: return "No Sort";
-                case PropertyGridStringId.ContextMenuAlphabetical: return "Alphabetical";
-                case PropertyGridStringId.ContextMenuCategorized: return "Categorized";
-                case PropertyGridStringId.ContextMenuCategorizedAlphabetical: return "Categorized Alphabetical";
-            }
-
-            return base.GetLocalizedString(id);
+            case PropertyGridStringId.ContextMenuReset: return "Reset";
+            case PropertyGridStringId.ContextMenuEdit: return "Edit";
+            case PropertyGridStringId.ContextMenuExpand: return "Expand";
+            case PropertyGridStringId.ContextMenuCollapse: return "Collapse";
+            case PropertyGridStringId.ContextMenuShowDescription: return "Show description";
+            case PropertyGridStringId.ContextMenuShowToolbar: return "Show toolbar";
+            case PropertyGridStringId.ContextMenuSort: return "Sorta";
+            case PropertyGridStringId.ContextMenuNoSort: return "No Sort";
+            case PropertyGridStringId.ContextMenuAlphabetical: return "Alphabetical";
+            case PropertyGridStringId.ContextMenuCategorized: return "Categorized";
+            case PropertyGridStringId.ContextMenuCategorizedAlphabetical: return "Categorized Alphabetical";
         }
+        return base.GetLocalizedString(id);
     }
+}
+
 ````
 ````VB.NET
 Public Class MyEnglishPropertyGridLocalizationProvider
@@ -67,7 +66,6 @@ Public Class MyEnglishPropertyGridLocalizationProvider
                 Return "Show description"
             Case PropertyGridStringId.ContextMenuShowToolbar
                 Return "Show toolbar"
-
             Case PropertyGridStringId.ContextMenuSort
                 Return "Sort"
             Case PropertyGridStringId.ContextMenuNoSort
@@ -79,11 +77,10 @@ Public Class MyEnglishPropertyGridLocalizationProvider
             Case PropertyGridStringId.ContextMenuCategorizedAlphabetical
                 Return "Categorized Alphabetical"
         End Select
-
         Return MyBase.GetLocalizedString(id)
     End Function
 End Class
-'
+
 ````
 
 {{endregion}}
@@ -96,11 +93,12 @@ To apply the custom localization provider, instantiate and assign it to the curr
 {{source=..\SamplesVB\PropertyGrid\PropertyGridLocalization.vb region=changeLocalization}} 
 
 ````C#
-            PropertyGridLocalizationProvider.CurrentProvider = new MyEnglishPropertyGridLocalizationProvider();
+PropertyGridLocalizationProvider.CurrentProvider = new MyEnglishPropertyGridLocalizationProvider();
+
 ````
 ````VB.NET
-        PropertyGridLocalizationProvider.CurrentProvider = New MyEnglishPropertyGridLocalizationProvider()
-        '
+PropertyGridLocalizationProvider.CurrentProvider = New MyEnglishPropertyGridLocalizationProvider()
+
 ````
 
 {{endregion}}

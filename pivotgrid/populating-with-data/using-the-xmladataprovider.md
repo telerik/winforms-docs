@@ -49,25 +49,22 @@ To show data in RadPivotGrid and RadPivotFieldList we have to connect to OLAP Cu
 {{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingXmlaDataProvider.vb region=DefininingXmlaDataProvider}} 
 
 ````C#
-            XmlaDataProvider provider = new XmlaDataProvider();
-            XmlaConnectionSettings settings = new XmlaConnectionSettings();
+XmlaDataProvider provider = new XmlaDataProvider();
+XmlaConnectionSettings settings = new XmlaConnectionSettings();
+settings.Cube = "Adventure Works";
+settings.Database = "Adventure Works DW 2008R2";
+settings.ServerAddress = "http://demos.telerik.com/olap/msmdpump.dll";
+provider.ConnectionSettings = settings;
 
-            settings.Cube = "Adventure Works";
-            settings.Database = "Adventure Works DW 2008R2";
-            settings.ServerAddress = "http://demos.telerik.com/olap/msmdpump.dll";
-
-            provider.ConnectionSettings = settings;
 ````
 ````VB.NET
-        Dim provider As New XmlaDataProvider()
-        Dim settings As New XmlaConnectionSettings()
+Dim provider As New XmlaDataProvider()
+Dim settings As New XmlaConnectionSettings()
+settings.Cube = "Adventure Works"
+settings.Database = "Adventure Works DW 2008R2"
+settings.ServerAddress = "http://demos.telerik.com/olap/msmdpump.dll"
+provider.ConnectionSettings = settings
 
-        settings.Cube = "Adventure Works"
-        settings.Database = "Adventure Works DW 2008R2"
-        settings.ServerAddress = "http://demos.telerik.com/olap/msmdpump.dll"
-
-        provider.ConnectionSettings = settings
-        '
 ````
 
 {{endregion}}
@@ -102,45 +99,36 @@ Here is how to define these decriptors:
 {{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingXmlaDataProvider.vb region=DefiningDescriptors}} 
 
 ````C#
-            provider.BeginInit();
+provider.BeginInit();
+provider.RowGroupDescriptions.Add(new XmlaGroupDescription() { MemberName = "[Date].[Calendar Year]" });
+provider.RowGroupDescriptions.Add(new XmlaGroupDescription() { MemberName = "[Date].[Calendar Quarter of Year]" });
+provider.ColumnGroupDescriptions.Add(new XmlaGroupDescription() { MemberName = "[Promotion].[Promotion Category]" });
+provider.ColumnGroupDescriptions.Add(new XmlaGroupDescription() { MemberName = "[Product].[Category]" });
+provider.AggregateDescriptions.Add(new XmlaAggregateDescription() { MemberName = "[Measures].[Internet Order Quantity]" });
+provider.EndInit();
+this.radPivotGrid1.PivotGridElement.DataProvider = provider;
 
-            provider.RowGroupDescriptions.Add(new XmlaGroupDescription() { MemberName = "[Date].[Calendar Year]" });
-            provider.RowGroupDescriptions.Add(new XmlaGroupDescription() { MemberName = "[Date].[Calendar Quarter of Year]" });
-
-            provider.ColumnGroupDescriptions.Add(new XmlaGroupDescription() { MemberName = "[Promotion].[Promotion Category]" });
-            provider.ColumnGroupDescriptions.Add(new XmlaGroupDescription() { MemberName = "[Product].[Category]" });
-
-            provider.AggregateDescriptions.Add(new XmlaAggregateDescription() { MemberName = "[Measures].[Internet Order Quantity]" });
-
-            provider.EndInit();
-
-            this.radPivotGrid1.PivotGridElement.DataProvider = provider;
 ````
 ````VB.NET
-        provider.BeginInit()
+provider.BeginInit()
+provider.RowGroupDescriptions.Add(New XmlaGroupDescription() With { _
+ .MemberName = "[Date].[Calendar Year]" _
+})
+provider.RowGroupDescriptions.Add(New XmlaGroupDescription() With { _
+ .MemberName = "[Date].[Calendar Quarter of Year]" _
+})
+provider.ColumnGroupDescriptions.Add(New XmlaGroupDescription() With { _
+ .MemberName = "[Promotion].[Promotion Category]" _
+})
+provider.ColumnGroupDescriptions.Add(New XmlaGroupDescription() With { _
+ .MemberName = "[Product].[Category]" _
+})
+provider.AggregateDescriptions.Add(New XmlaAggregateDescription() With { _
+ .MemberName = "[Measures].[Internet Order Quantity]" _
+})
+provider.EndInit()
+Me.RadPivotGrid1.PivotGridElement.DataProvider = provider
 
-        provider.RowGroupDescriptions.Add(New XmlaGroupDescription() With { _
-         .MemberName = "[Date].[Calendar Year]" _
-        })
-        provider.RowGroupDescriptions.Add(New XmlaGroupDescription() With { _
-         .MemberName = "[Date].[Calendar Quarter of Year]" _
-        })
-
-        provider.ColumnGroupDescriptions.Add(New XmlaGroupDescription() With { _
-         .MemberName = "[Promotion].[Promotion Category]" _
-        })
-        provider.ColumnGroupDescriptions.Add(New XmlaGroupDescription() With { _
-         .MemberName = "[Product].[Category]" _
-        })
-
-        provider.AggregateDescriptions.Add(New XmlaAggregateDescription() With { _
-         .MemberName = "[Measures].[Internet Order Quantity]" _
-        })
-
-        provider.EndInit()
-
-        Me.RadPivotGrid1.PivotGridElement.DataProvider = provider
-        '
 ````
 
 {{endregion}}

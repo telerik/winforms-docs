@@ -20,69 +20,61 @@ For example, you may need to set specific text in the editor when the user press
 {{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridHandlingEditorsEvents.vb region=handlingEvents}} 
 
 ````C#
-        public PropertyGridHandlingEditorsEvents()
+public PropertyGridHandlingEditorsEvents()
+{
+    InitializeComponent();
+    this.radPropertyGrid1.EditorInitialized += new PropertyGridItemEditorInitializedEventHandler(radPropertyGrid1_EditorInitialized);
+}
+bool tbSubscribed = false;
+void radPropertyGrid1_EditorInitialized(object sender, PropertyGridItemEditorInitializedEventArgs e)
+{
+    PropertyGridTextBoxEditor editor = e.Editor as PropertyGridTextBoxEditor;
+    if (editor != null)
+    {
+        if (!tbSubscribed)
         {
-            InitializeComponent();
-
-            this.radPropertyGrid1.EditorInitialized += new PropertyGridItemEditorInitializedEventHandler(radPropertyGrid1_EditorInitialized);
+            tbSubscribed = true;
+            RadTextBoxElement tbElement = (RadTextBoxElement)editor.EditorElement;
+            tbElement.KeyDown += new KeyEventHandler(tbElement_KeyDown);
         }
-
-        bool tbSubscribed = false;
-
-        void radPropertyGrid1_EditorInitialized(object sender, PropertyGridItemEditorInitializedEventArgs e)
+    }
+}
+void tbElement_KeyDown(object sender, KeyEventArgs e)
+{
+    if (e.Control)
+    {
+        if (e.KeyCode == Keys.D)
         {
-            PropertyGridTextBoxEditor editor = e.Editor as PropertyGridTextBoxEditor;
-
-            if (editor != null)
-            {
-                if (!tbSubscribed)
-                {
-                    tbSubscribed = true;
-                    RadTextBoxElement tbElement = (RadTextBoxElement)editor.EditorElement;
-                    tbElement.KeyDown += new KeyEventHandler(tbElement_KeyDown);
-                }
-            }
+            ((RadTextBoxElement)sender).Text = "Default text";
         }
+    }
+}
 
-        void tbElement_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Control)
-            {
-                if (e.KeyCode == Keys.D)
-                {
-                    ((RadTextBoxElement)sender).Text = "Default text";
-                }
-            }
-        }
 ````
 ````VB.NET
-    Public Sub New()
-        InitializeComponent()
-        AddHandler RadPropertyGrid1.EditorInitialized, AddressOf radPropertyGrid1_EditorInitialized
-    End Sub
-
-    Private tbSubscribed As Boolean = False
-
-    Private Sub radPropertyGrid1_EditorInitialized(ByVal sender As Object, ByVal e As PropertyGridItemEditorInitializedEventArgs)
-        Dim editor As PropertyGridTextBoxEditor = TryCast(e.Editor, PropertyGridTextBoxEditor)
-
-        If Not editor Is Nothing Then
-            If (Not tbSubscribed) Then
-                tbSubscribed = True
-                Dim tbElement As RadTextBoxElement = CType(editor.EditorElement, RadTextBoxElement)
-                AddHandler tbElement.KeyDown, AddressOf tbElement_KeyDown
-            End If
+Public Sub New()
+    InitializeComponent()
+    AddHandler RadPropertyGrid1.EditorInitialized, AddressOf radPropertyGrid1_EditorInitialized
+End Sub
+Private tbSubscribed As Boolean = False
+Private Sub radPropertyGrid1_EditorInitialized(ByVal sender As Object, ByVal e As PropertyGridItemEditorInitializedEventArgs)
+    Dim editor As PropertyGridTextBoxEditor = TryCast(e.Editor, PropertyGridTextBoxEditor)
+    If Not editor Is Nothing Then
+        If (Not tbSubscribed) Then
+            tbSubscribed = True
+            Dim tbElement As RadTextBoxElement = CType(editor.EditorElement, RadTextBoxElement)
+            AddHandler tbElement.KeyDown, AddressOf tbElement_KeyDown
         End If
-    End Sub
-
-    Private Sub tbElement_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
-        If e.Control Then
-            If e.KeyCode = Keys.D Then
-                CType(sender, RadTextBoxElement).Text = "Default text"
-            End If
+    End If
+End Sub
+Private Sub tbElement_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
+    If e.Control Then
+        If e.KeyCode = Keys.D Then
+            CType(sender, RadTextBoxElement).Text = "Default text"
         End If
-    End Sub
-    '
+    End If
+End Sub
+
 ````
 
 {{endregion}}

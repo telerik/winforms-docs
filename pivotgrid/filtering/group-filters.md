@@ -18,11 +18,12 @@ Group filtering is enabled by default. To enable or disable it use the following
 {{source=..\SamplesVB\PivotGrid\Filtering\PivotGridGroupFiltering.vb region=AllowGroupFiltering}} 
 
 ````C#
-            this.radPivotGrid1.AllowGroupFiltering = true;
+this.radPivotGrid1.AllowGroupFiltering = true;
+
 ````
 ````VB.NET
-        Me.radPivotGrid1.AllowGroupFiltering = True
-        '
+Me.radPivotGrid1.AllowGroupFiltering = True
+
 ````
 
 {{endregion}}
@@ -37,26 +38,23 @@ Group filters can be applied to group descriptions by using their __GroupFilter_
 {{source=..\SamplesVB\PivotGrid\Filtering\PivotGridGroupFiltering.vb region=PropertyGroupDescription}} 
 
 ````C#
-            PropertyGroupDescriptionBase description = (PropertyGroupDescriptionBase)this.radPivotGrid1.RowGroupDescriptions[0];
-            LabelGroupFilter filter = new LabelGroupFilter();
-            ComparisonCondition condition = new ComparisonCondition();
+PropertyGroupDescriptionBase description = (PropertyGroupDescriptionBase)this.radPivotGrid1.RowGroupDescriptions[0];
+LabelGroupFilter filter = new LabelGroupFilter();
+ComparisonCondition condition = new ComparisonCondition();
+condition.Condition = Telerik.Pivot.Core.Filtering.Comparison.Equals;
+condition.Than = "UK"; 
+filter.Condition = condition; 
+description.GroupFilter = filter;
 
-            condition.Condition = Telerik.Pivot.Core.Filtering.Comparison.Equals;
-            condition.Than = "UK"; 
-
-            filter.Condition = condition; 
-            description.GroupFilter = filter;
 ````
 ````VB.NET
-        Dim description As PropertyGroupDescriptionBase = Me.radPivotGrid1.RowGroupDescriptions(0)
-        Dim filter As New LabelGroupFilter()
-        Dim condition As New ComparisonCondition()
+Dim description As PropertyGroupDescriptionBase = Me.radPivotGrid1.RowGroupDescriptions(0)
+Dim filter As New LabelGroupFilter()
+Dim condition As New ComparisonCondition()
+condition.Condition = Telerik.Pivot.Core.Filtering.Comparison.Equals
+condition.Than = "UK"
+filter.Condition = condition
 
-        condition.Condition = Telerik.Pivot.Core.Filtering.Comparison.Equals
-        condition.Than = "UK"
-
-        filter.Condition = condition
-        '
 ````
 
 {{endregion}}

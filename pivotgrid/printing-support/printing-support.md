@@ -20,13 +20,14 @@ The RadPivotGrid has two public methods available for printing – __Print()__ a
 {{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=Print}} 
 
 ````C#
-            this.radPivotGrid1.Print();
-            this.radPivotGrid1.Print(true);
+this.radPivotGrid1.Print();
+this.radPivotGrid1.Print(true);
+
 ````
 ````VB.NET
-        Me.radPivotGrid1.Print()
-        Me.radPivotGrid1.Print(True)
-        '
+Me.radPivotGrid1.Print()
+Me.radPivotGrid1.Print(True)
+
 ````
 
 {{endregion}}
@@ -39,11 +40,12 @@ The other available method is __PrintPreview()__. It opens a new RadPrintPreview
 {{source=..\SamplesVB\PivotGrid\PivotGridPrinting.vb region=PrintPreview}} 
 
 ````C#
-            this.radPivotGrid1.PrintPreview();
+this.radPivotGrid1.PrintPreview();
+
 ````
 ````VB.NET
-        Me.radPivotGrid1.PrintPreview()
-        '
+Me.radPivotGrid1.PrintPreview()
+
 ````
 
 {{endregion}} 

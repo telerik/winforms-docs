@@ -37,15 +37,16 @@ The sorting can be applied in the code behind or at runtime with the help of Rad
 {{source=..\SamplesVB\PivotGrid\PivotGridSorting.vb region=SortByGroupName}} 
 
 ````C#
-            PropertyGroupDescription propGroupDescription = (PropertyGroupDescription)this.radPivotGrid1.RowGroupDescriptions[0];
-            propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
-            this.radPivotGrid1.ReloadData();
+PropertyGroupDescription propGroupDescription = (PropertyGroupDescription)this.radPivotGrid1.RowGroupDescriptions[0];
+propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
+this.radPivotGrid1.ReloadData();
+
 ````
 ````VB.NET
-        Dim propGroupDescription As PropertyGroupDescription = DirectCast(Me.radPivotGrid1.RowGroupDescriptions(0), PropertyGroupDescription)
-        propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
-        Me.radPivotGrid1.ReloadData()
-        '
+Dim propGroupDescription As PropertyGroupDescription = DirectCast(Me.radPivotGrid1.RowGroupDescriptions(0), PropertyGroupDescription)
+propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
+Me.radPivotGrid1.ReloadData()
+
 ````
 
 {{endregion}}
@@ -56,19 +57,20 @@ The sorting can be applied in the code behind or at runtime with the help of Rad
 {{source=..\SamplesVB\PivotGrid\PivotGridSorting.vb region=SortGrandTotals}} 
 
 ````C#
-            PropertyGroupDescription propGroupDescription = (PropertyGroupDescription)this.radPivotGrid1.RowGroupDescriptions[0];
-            propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
-            propGroupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 0 };
-            this.radPivotGrid1.ReloadData();
+PropertyGroupDescription propGroupDescription = (PropertyGroupDescription)this.radPivotGrid1.RowGroupDescriptions[0];
+propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
+propGroupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 0 };
+this.radPivotGrid1.ReloadData();
+
 ````
 ````VB.NET
-        Dim propGroupDescription As PropertyGroupDescription = DirectCast(Me.radPivotGrid1.RowGroupDescriptions(0), PropertyGroupDescription)
-        propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
-        propGroupDescription.GroupComparer = New GrandTotalComparer() With { _
-         .AggregateIndex = 0 _
-        }
-        Me.radPivotGrid1.ReloadData()
-        '
+Dim propGroupDescription As PropertyGroupDescription = DirectCast(Me.radPivotGrid1.RowGroupDescriptions(0), PropertyGroupDescription)
+propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
+propGroupDescription.GroupComparer = New GrandTotalComparer() With { _
+ .AggregateIndex = 0 _
+}
+Me.radPivotGrid1.ReloadData()
+
 ````
 
 {{endregion}}

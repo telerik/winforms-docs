@@ -24,16 +24,14 @@ RadPdfViewer also exposes the two known methods which allow you to easily print 
 {{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=PrintMethods}} 
 
 ````C#
+this.radPdfViewer1.Print();
+this.radPdfViewer1.PrintPreview();
 
-            this.radPdfViewer1.Print();
-            this.radPdfViewer1.PrintPreview();
 ````
 ````VB.NET
+Me.RadPdfViewer1.Print()
+Me.RadPdfViewer1.PrintPreview()
 
-        Me.RadPdfViewer1.Print()
-        Me.RadPdfViewer1.PrintPreview()
-
-        '
 ````
 
 {{endregion}}

@@ -22,11 +22,12 @@ The following example will demonstrate the basic functionalities of RadPropertyG
 {{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=SelectedObject}} 
 
 ````C#
-            radPropertyGrid1.SelectedObject = new PropertyGridElement();
+radPropertyGrid1.SelectedObject = new PropertyGridElement();
+
 ````
 ````VB.NET
-        RadPropertyGrid1.SelectedObject = New PropertyGridElement()
-        '
+RadPropertyGrid1.SelectedObject = New PropertyGridElement()
+
 ````
 
 {{endregion}}
@@ -43,11 +44,12 @@ Next, we will add a predefined toolbox on the top of the control. This toolbox c
 {{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=ToolBarVisible}} 
 
 ````C#
-            radPropertyGrid1.ToolbarVisible = true;
+radPropertyGrid1.ToolbarVisible = true;
+
 ````
 ````VB.NET
-        RadPropertyGrid1.ToolbarVisible = True
-        '
+RadPropertyGrid1.ToolbarVisible = True
+
 ````
 
 {{endregion}}
@@ -57,7 +59,22 @@ Additionally, since the toolbox consists of a __StackLayoutPanel__, is supports 
 #### Add element to toolbox
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=AddElementToToolbox1}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=AddElementToToolbox1}}
+{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=AddElementToToolbox1}}````C#
+RadButtonElement clearFiltering = new RadButtonElement();
+clearFiltering.Text = "Clear";
+clearFiltering.MinSize = new System.Drawing.Size(25, 22);
+clearFiltering.StretchHorizontally = false;
+clearFiltering.Click += new EventHandler(clearFiltering_Click);
+
+````
+````VB.NET
+Dim clearFiltering = New RadButtonElement()
+clearFiltering.Text = "Clear"
+clearFiltering.MinSize = New System.Drawing.Size(25, 22)
+clearFiltering.StretchHorizontally = False
+AddHandler clearFiltering.Click, AddressOf clearFiltering_Click
+
+````
 
 
 
@@ -69,16 +86,17 @@ Additionally, since the toolbox consists of a __StackLayoutPanel__, is supports 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=AddElementToToolbox2}} 
 
 ````C#
-        void clearFiltering_Click(object sender, EventArgs e)
-        {
-            radPropertyGrid1.PropertyGridElement.ToolbarElement.SearchTextBoxElement.Text = "";
-        }
+void clearFiltering_Click(object sender, EventArgs e)
+{
+    radPropertyGrid1.PropertyGridElement.ToolbarElement.SearchTextBoxElement.Text = "";
+}
+
 ````
 ````VB.NET
-    Private Sub clearFiltering_Click(ByVal sender As Object, ByVal e As EventArgs)
-        RadPropertyGrid1.PropertyGridElement.ToolbarElement.SearchTextBoxElement.Text = ""
-    End Sub
-    '
+Private Sub clearFiltering_Click(ByVal sender As Object, ByVal e As EventArgs)
+    RadPropertyGrid1.PropertyGridElement.ToolbarElement.SearchTextBoxElement.Text = ""
+End Sub
+
 ````
 
 {{endregion}} 
@@ -97,11 +115,12 @@ By default, opening the editor for editing is done by double clicking the editor
 {{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=BeginEditMode}} 
 
 ````C#
-            radPropertyGrid1.BeginEditMode = RadPropertyGridBeginEditModes.BeginEditOnClick;
+radPropertyGrid1.BeginEditMode = RadPropertyGridBeginEditModes.BeginEditOnClick;
+
 ````
 ````VB.NET
-        RadPropertyGrid1.BeginEditMode = RadPropertyGridBeginEditModes.BeginEditOnClick
-        '
+RadPropertyGrid1.BeginEditMode = RadPropertyGridBeginEditModes.BeginEditOnClick
+
 ````
 
 {{endregion}}
@@ -122,11 +141,12 @@ To set the default sorting or grouping of the properties, just set the __Propert
 {{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=PropertySort}} 
 
 ````C#
-            radPropertyGrid1.PropertySort = PropertySort.Categorized;
+radPropertyGrid1.PropertySort = PropertySort.Categorized;
+
 ````
 ````VB.NET
-        RadPropertyGrid1.PropertySort = PropertySort.Categorized
-        '
+RadPropertyGrid1.PropertySort = PropertySort.Categorized
+
 ````
 
 {{endregion}}
@@ -139,11 +159,12 @@ You can control the sort order, by setting the __SortOrder__ property of the con
 {{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=SortOrder}} 
 
 ````C#
-            radPropertyGrid1.SortOrder = SortOrder.Ascending;
+radPropertyGrid1.SortOrder = SortOrder.Ascending;
+
 ````
 ````VB.NET
-        RadPropertyGrid1.SortOrder = SortOrder.Ascending
-        '
+RadPropertyGrid1.SortOrder = SortOrder.Ascending
+
 ````
 
 {{endregion}}

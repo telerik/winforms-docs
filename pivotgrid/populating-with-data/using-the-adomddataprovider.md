@@ -51,25 +51,22 @@ To show data in RadPivotGrid and RadPivotFieldList we have to connect to OLAP Cu
 {{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingAdomdDataProvider.vb region=DefininingAdomdDataProvider}} 
 
 ````C#
-            AdomdDataProvider provider = new AdomdDataProvider();
-            AdomdConnectionSettings settings = new AdomdConnectionSettings();
+AdomdDataProvider provider = new AdomdDataProvider();
+AdomdConnectionSettings settings = new AdomdConnectionSettings();
+settings.Cube = "Adventure Works";
+settings.Database = "Adventure Works DW 2008R2";
+settings.ConnectionString = "Data Source=http://demos.telerik.com/olap/msmdpump.dll;Catalog=Adventure Works DW 2008R2";
+provider.ConnectionSettings = settings;
 
-            settings.Cube = "Adventure Works";
-            settings.Database = "Adventure Works DW 2008R2";
-            settings.ConnectionString = "Data Source=http://demos.telerik.com/olap/msmdpump.dll;Catalog=Adventure Works DW 2008R2";
-
-            provider.ConnectionSettings = settings;
 ````
 ````VB.NET
-        Dim provider As New AdomdDataProvider()
-        Dim settings As New AdomdConnectionSettings()
+Dim provider As New AdomdDataProvider()
+Dim settings As New AdomdConnectionSettings()
+settings.Cube = "Adventure Works"
+settings.Database = "Adventure Works DW 2008R2"
+settings.ConnectionString = "Data Source=http://demos.telerik.com/olap/msmdpump.dll;Catalog=Adventure Works DW 2008R2"
+provider.ConnectionSettings = settings
 
-        settings.Cube = "Adventure Works"
-        settings.Database = "Adventure Works DW 2008R2"
-        settings.ConnectionString = "Data Source=http://demos.telerik.com/olap/msmdpump.dll;Catalog=Adventure Works DW 2008R2"
-
-        provider.ConnectionSettings = settings
-        '
 ````
 
 {{endregion}}
@@ -100,45 +97,36 @@ The AdomdAggregateDescription is used to define data that has to be aggregated a
 {{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingAdomdDataProvider.vb region=DefiningDescriptors}} 
 
 ````C#
-            provider.BeginInit();
+provider.BeginInit();
+provider.RowGroupDescriptions.Add(new AdomdGroupDescription() { MemberName = "[Date].[Calendar Year]" });
+provider.RowGroupDescriptions.Add(new AdomdGroupDescription() { MemberName = "[Date].[Calendar Quarter of Year]" });
+provider.ColumnGroupDescriptions.Add(new AdomdGroupDescription() { MemberName = "[Promotion].[Promotion Category]" });
+provider.ColumnGroupDescriptions.Add(new AdomdGroupDescription() { MemberName = "[Product].[Category]" });
+provider.AggregateDescriptions.Add(new AdomdAggregateDescription() { MemberName = "[Measures].[Internet Order Quantity]" });
+provider.EndInit();
+this.radPivotGrid1.PivotGridElement.DataProvider = provider;
 
-            provider.RowGroupDescriptions.Add(new AdomdGroupDescription() { MemberName = "[Date].[Calendar Year]" });
-            provider.RowGroupDescriptions.Add(new AdomdGroupDescription() { MemberName = "[Date].[Calendar Quarter of Year]" });
-
-            provider.ColumnGroupDescriptions.Add(new AdomdGroupDescription() { MemberName = "[Promotion].[Promotion Category]" });
-            provider.ColumnGroupDescriptions.Add(new AdomdGroupDescription() { MemberName = "[Product].[Category]" });
-
-            provider.AggregateDescriptions.Add(new AdomdAggregateDescription() { MemberName = "[Measures].[Internet Order Quantity]" });
-
-            provider.EndInit();
-
-            this.radPivotGrid1.PivotGridElement.DataProvider = provider;
 ````
 ````VB.NET
-        provider.BeginInit()
+provider.BeginInit()
+provider.RowGroupDescriptions.Add(New AdomdGroupDescription() With { _
+ .MemberName = "[Date].[Calendar Year]" _
+})
+provider.RowGroupDescriptions.Add(New AdomdGroupDescription() With { _
+ .MemberName = "[Date].[Calendar Quarter of Year]" _
+})
+provider.ColumnGroupDescriptions.Add(New AdomdGroupDescription() With { _
+ .MemberName = "[Promotion].[Promotion Category]" _
+})
+provider.ColumnGroupDescriptions.Add(New AdomdGroupDescription() With { _
+ .MemberName = "[Product].[Category]" _
+})
+provider.AggregateDescriptions.Add(New AdomdAggregateDescription() With { _
+ .MemberName = "[Measures].[Internet Order Quantity]" _
+})
+provider.EndInit()
+Me.RadPivotGrid1.PivotGridElement.DataProvider = provider
 
-        provider.RowGroupDescriptions.Add(New AdomdGroupDescription() With { _
-         .MemberName = "[Date].[Calendar Year]" _
-        })
-        provider.RowGroupDescriptions.Add(New AdomdGroupDescription() With { _
-         .MemberName = "[Date].[Calendar Quarter of Year]" _
-        })
-
-        provider.ColumnGroupDescriptions.Add(New AdomdGroupDescription() With { _
-         .MemberName = "[Promotion].[Promotion Category]" _
-        })
-        provider.ColumnGroupDescriptions.Add(New AdomdGroupDescription() With { _
-         .MemberName = "[Product].[Category]" _
-        })
-
-        provider.AggregateDescriptions.Add(New AdomdAggregateDescription() With { _
-         .MemberName = "[Measures].[Internet Order Quantity]" _
-        })
-
-        provider.EndInit()
-
-        Me.RadPivotGrid1.PivotGridElement.DataProvider = provider
-        '
 ````
 
 {{endregion}}

@@ -26,13 +26,14 @@ Additionally, you can tune the sort order by setting the __SortOrder__ property.
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridGrouping.vb region=PropertySort}} 
 
 ````C#
-            radPropertyGrid1.PropertySort = PropertySort.CategorizedAlphabetical;
-            radPropertyGrid1.SortOrder = SortOrder.Descending;
+radPropertyGrid1.PropertySort = PropertySort.CategorizedAlphabetical;
+radPropertyGrid1.SortOrder = SortOrder.Descending;
+
 ````
 ````VB.NET
-        RadPropertyGrid1.PropertySort = PropertySort.CategorizedAlphabetical
-        RadPropertyGrid1.SortOrder = SortOrder.Descending
-        '
+RadPropertyGrid1.PropertySort = PropertySort.CategorizedAlphabetical
+RadPropertyGrid1.SortOrder = SortOrder.Descending
+
 ````
 
 {{endregion}}
@@ -65,15 +66,16 @@ Here is an example of grouping by the formatted value:
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridGrouping.vb region=GroupDescriptor}} 
 
 ````C#
-            radPropertyGrid1.EnableGrouping = true;
-            GroupDescriptor group = new GroupDescriptor(new SortDescriptor[] { new SortDescriptor("FormattedValue", ListSortDirection.Ascending) });
-            radPropertyGrid1.GroupDescriptors.Add(group);
+radPropertyGrid1.EnableGrouping = true;
+GroupDescriptor group = new GroupDescriptor(new SortDescriptor[] { new SortDescriptor("FormattedValue", ListSortDirection.Ascending) });
+radPropertyGrid1.GroupDescriptors.Add(group);
+
 ````
 ````VB.NET
-        RadPropertyGrid1.EnableGrouping = True
-        Dim group = New GroupDescriptor(New SortDescriptor() {New SortDescriptor("FormattedValue", ListSortDirection.Ascending)})
-        RadPropertyGrid1.GroupDescriptors.Add(group)
-        '
+RadPropertyGrid1.EnableGrouping = True
+Dim group = New GroupDescriptor(New SortDescriptor() {New SortDescriptor("FormattedValue", ListSortDirection.Ascending)})
+RadPropertyGrid1.GroupDescriptors.Add(group)
+
 ````
 
 {{endregion}}

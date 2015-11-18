@@ -20,11 +20,12 @@ Before running export to ExcelML, you have to initialize the PivotExportToExcelM
 {{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=ExportToExcelIMLInitialization}} 
 
 ````C#
-            PivotExportToExcelML exporter = new PivotExportToExcelML(this.radPivotGrid1);
+PivotExportToExcelML exporter = new PivotExportToExcelML(this.radPivotGrid1);
+
 ````
 ````VB.NET
-        Dim exporter As PivotExportToExcelML = New PivotExportToExcelML(Me.radPivotGrid1)
-        '
+Dim exporter As PivotExportToExcelML = New PivotExportToExcelML(Me.radPivotGrid1)
+
 ````
 
 {{endregion}} 
@@ -37,11 +38,12 @@ Using the PivotExcelML method allows you to export the visual settings (themes) 
 {{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=SettingExportVisualSettings}} 
 
 ````C#
-            exporter.ExportVisualSettings = true;
+exporter.ExportVisualSettings = true;
+
 ````
 ````VB.NET
-        exporter.ExportVisualSettings = True
-        '
+exporter.ExportVisualSettings = True
+
 ````
 
 {{endregion}}
@@ -54,11 +56,12 @@ You can specify the sheet name through __SheetName__ property. If your data is l
 {{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=SettingTheSheetName}} 
 
 ````C#
-            exporter.SheetName = "Sheet";
+exporter.SheetName = "Sheet";
+
 ````
 ````VB.NET
-        exporter.SheetName = "Sheet"
-        '
+exporter.SheetName = "Sheet"
+
 ````
 
 {{endregion}} 
@@ -71,13 +74,14 @@ Exporting data to Excel is done through the __RunExport__ method of  __PivotExpo
 {{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=ExportToExcelInExcelMLFormat}} 
 
 ````C#
-            string fileName = "c:\\Sheet1.xls";
-            exporter.RunExport(fileName);
+string fileName = "c:\\Sheet1.xls";
+exporter.RunExport(fileName);
+
 ````
 ````VB.NET
-        Dim fileName As String = "c:\Sheet1.xls"
-        exporter.RunExport(fileName)
-        '
+Dim fileName As String = "c:\Sheet1.xls"
+exporter.RunExport(fileName)
+
 ````
 
 {{endregion}}
@@ -90,29 +94,30 @@ __ExcelCellFormating__ event: It gives an access to a single cell’s __SingleSt
 {{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=ExcelCellFormating}} 
 
 ````C#
-        void exporter_PivotExcelCellFormatting(object sender, Telerik.WinControls.UI.Export.ExcelPivotCellExportingEventArgs e)  
-        {   
-            if (e.ColumnIndex == 1 || e.ColumnIndex==2)//format the header columns
-            {
-                e.Cell.ForeColor = System.Drawing.Color.Red;                
-            }
-            else if (e.RowIndex == 1 )//format the header row
-            {
-                e.Cell.ForeColor = System.Drawing.Color.Green;
-            }
-        }
+void exporter_PivotExcelCellFormatting(object sender, Telerik.WinControls.UI.Export.ExcelPivotCellExportingEventArgs e)  
+{   
+    if (e.ColumnIndex == 1 || e.ColumnIndex==2)//format the header columns
+    {
+        e.Cell.ForeColor = System.Drawing.Color.Red;                
+    }
+    else if (e.RowIndex == 1 )//format the header row
+    {
+        e.Cell.ForeColor = System.Drawing.Color.Green;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub exporter_PivotExcelCellFormatting(sender As Object, e As Telerik.WinControls.UI.Export.ExcelPivotCellExportingEventArgs)
-        If e.ColumnIndex = 1 OrElse e.ColumnIndex = 2 Then
-            'format the header columns
-            e.Cell.ForeColor = System.Drawing.Color.Red
-        ElseIf e.RowIndex = 1 Then
-            'format the header row
-            e.Cell.ForeColor = System.Drawing.Color.Green
-        End If
-    End Sub
-    '
+Private Sub exporter_PivotExcelCellFormatting(sender As Object, e As Telerik.WinControls.UI.Export.ExcelPivotCellExportingEventArgs)
+    If e.ColumnIndex = 1 OrElse e.ColumnIndex = 2 Then
+        'format the header columns
+        e.Cell.ForeColor = System.Drawing.Color.Red
+    ElseIf e.RowIndex = 1 Then
+        'format the header row
+        e.Cell.ForeColor = System.Drawing.Color.Green
+    End If
+End Sub
+
 ````
 
 {{endregion}}
