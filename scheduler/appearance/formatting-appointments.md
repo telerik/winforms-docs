@@ -23,54 +23,56 @@ The code snippet below demonstrates how to change the font, fore color, border c
 {{source=..\SamplesVB\Scheduler\Appearance\FormattingAppointments.vb region=AppointmentFormatting}} 
 
 ````C#
-        Font font = new Font("Verdana", 10f, FontStyle.Bold);
-        private void radScheduler1_AppointmentFormatting(object sender, Telerik.WinControls.UI.SchedulerAppointmentEventArgs e)
-        {
-            if (e.AppointmentElement.Selected)
-            {
-                e.AppointmentElement.Font = font;
-                e.AppointmentElement.ForeColor = Color.Fuchsia;
-                e.AppointmentElement.TextAlignment = ContentAlignment.MiddleCenter;
-                e.AppointmentElement.UseDefaultPaint = true;
-                e.AppointmentElement.BorderColor = Color.Aqua;
-                e.AppointmentElement.BorderBoxStyle = BorderBoxStyle.SingleBorder;
-                e.AppointmentElement.BorderWidth = 3;
-            }
-            else
-            {
-                e.AppointmentElement.ResetValue(VisualElement.FontProperty, ValueResetFlags.Local); 
-                e.AppointmentElement.ResetValue(VisualElement.ForeColorProperty, ValueResetFlags.Local);
-                e.AppointmentElement.ResetValue(LightVisualElement.TextAlignmentProperty, ValueResetFlags.Local);
-                e.AppointmentElement.UseDefaultPaint = false;
-                e.AppointmentElement.ResetValue(LightVisualElement.BorderColorProperty, ValueResetFlags.Local);
-                e.AppointmentElement.ResetValue(LightVisualElement.BorderWidthProperty, ValueResetFlags.Local);
-                e.AppointmentElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local);
-            }
-        }
+        
+Font font = new Font("Verdana", 10f, FontStyle.Bold);
+    
+private void radScheduler1_AppointmentFormatting(object sender, Telerik.WinControls.UI.SchedulerAppointmentEventArgs e)
+{
+    if (e.AppointmentElement.Selected)
+    {
+        e.AppointmentElement.Font = font;
+        e.AppointmentElement.ForeColor = Color.Fuchsia;
+        e.AppointmentElement.TextAlignment = ContentAlignment.MiddleCenter;
+        e.AppointmentElement.UseDefaultPaint = true;
+        e.AppointmentElement.BorderColor = Color.Aqua;
+        e.AppointmentElement.BorderBoxStyle = BorderBoxStyle.SingleBorder;
+        e.AppointmentElement.BorderWidth = 3;
+    }
+    else
+    {
+        e.AppointmentElement.ResetValue(VisualElement.FontProperty, ValueResetFlags.Local); 
+        e.AppointmentElement.ResetValue(VisualElement.ForeColorProperty, ValueResetFlags.Local);
+        e.AppointmentElement.ResetValue(LightVisualElement.TextAlignmentProperty, ValueResetFlags.Local);
+        e.AppointmentElement.UseDefaultPaint = false;
+        e.AppointmentElement.ResetValue(LightVisualElement.BorderColorProperty, ValueResetFlags.Local);
+        e.AppointmentElement.ResetValue(LightVisualElement.BorderWidthProperty, ValueResetFlags.Local);
+        e.AppointmentElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local);
+    }
+}
+
 ````
 ````VB.NET
+Private font As New Font("Verdana", 10.0F, FontStyle.Bold)
+Private Sub RadScheduler1_AppointmentFormatting(sender As Object, e As Telerik.WinControls.UI.SchedulerAppointmentEventArgs) Handles RadScheduler1.AppointmentFormatting
+    If e.AppointmentElement.Selected Then
+        e.AppointmentElement.Font = font
+        e.AppointmentElement.ForeColor = Color.Fuchsia
+        e.AppointmentElement.TextAlignment = ContentAlignment.MiddleCenter
+        e.AppointmentElement.UseDefaultPaint = True
+        e.AppointmentElement.BorderColor = Color.Aqua
+        e.AppointmentElement.BorderBoxStyle = BorderBoxStyle.SingleBorder
+        e.AppointmentElement.BorderWidth = 3
+    Else
+        e.AppointmentElement.ResetValue(VisualElement.FontProperty, ValueResetFlags.Local)
+        e.AppointmentElement.ResetValue(VisualElement.ForeColorProperty, ValueResetFlags.Local)
+        e.AppointmentElement.ResetValue(LightVisualElement.TextAlignmentProperty, ValueResetFlags.Local)
+        e.AppointmentElement.UseDefaultPaint = False
+        e.AppointmentElement.ResetValue(LightVisualElement.BorderColorProperty, ValueResetFlags.Local)
+        e.AppointmentElement.ResetValue(LightVisualElement.BorderWidthProperty, ValueResetFlags.Local)
+        e.AppointmentElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local)
+    End If
+End Sub
 
-    Private font As New Font("Verdana", 10.0F, FontStyle.Bold)
-
-    Private Sub RadScheduler1_AppointmentFormatting(sender As Object, e As Telerik.WinControls.UI.SchedulerAppointmentEventArgs) Handles RadScheduler1.AppointmentFormatting
-        If e.AppointmentElement.Selected Then
-            e.AppointmentElement.Font = font
-            e.AppointmentElement.ForeColor = Color.Fuchsia
-            e.AppointmentElement.TextAlignment = ContentAlignment.MiddleCenter
-            e.AppointmentElement.UseDefaultPaint = True
-            e.AppointmentElement.BorderColor = Color.Aqua
-            e.AppointmentElement.BorderBoxStyle = BorderBoxStyle.SingleBorder
-            e.AppointmentElement.BorderWidth = 3
-        Else
-            e.AppointmentElement.ResetValue(VisualElement.FontProperty, ValueResetFlags.Local)
-            e.AppointmentElement.ResetValue(VisualElement.ForeColorProperty, ValueResetFlags.Local)
-            e.AppointmentElement.ResetValue(LightVisualElement.TextAlignmentProperty, ValueResetFlags.Local)
-            e.AppointmentElement.UseDefaultPaint = False
-            e.AppointmentElement.ResetValue(LightVisualElement.BorderColorProperty, ValueResetFlags.Local)
-            e.AppointmentElement.ResetValue(LightVisualElement.BorderWidthProperty, ValueResetFlags.Local)
-            e.AppointmentElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local)
-        End If
-    End Sub
 ````
 
 {{endregion}}
@@ -83,11 +85,12 @@ It is possible to change the appointments’ shape setting the SchedulerElement.
 
 ````C#
             
-             this.radScheduler1.SchedulerElement.AppointmentShape = new HeartShape();
+ this.radScheduler1.SchedulerElement.AppointmentShape = new HeartShape();
+
 ````
 ````VB.NET
-        Me.RadScheduler1.SchedulerElement.AppointmentShape = New HeartShape()
-        '
+Me.RadScheduler1.SchedulerElement.AppointmentShape = New HeartShape()
+
 ````
 
 {{endregion}} 

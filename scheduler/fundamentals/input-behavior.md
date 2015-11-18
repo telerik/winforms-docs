@@ -44,34 +44,33 @@ Every one of these methods can be overridden and the instance of the __Scheduler
 {{source=..\SamplesVB\Scheduler\Fundamentals\InputBehavior.vb region=Behavior}} 
 
 ````C#
-    public class MySchedulerInputBehavior : SchedulerInputBehavior
+public class MySchedulerInputBehavior : SchedulerInputBehavior
+{
+    public MySchedulerInputBehavior(RadScheduler scheduler)
+        : base(scheduler)
     {
-        public MySchedulerInputBehavior(RadScheduler scheduler)
-            : base(scheduler)
-        {
-        }
-
-        public override bool HandleKeyDown(KeyEventArgs args)
-        {
-            bool isControl = (args.Modifiers & Keys.Control) == Keys.Control;
-            IEvent selectedAppointment = this.Scheduler.SelectionBehavior.SelectedAppointment;
-            if (isControl && selectedAppointment != null)
-            {
-                if ((args.KeyData & Keys.Up) == Keys.Up)
-                {
-                    selectedAppointment.Start = selectedAppointment.Start.AddHours(-1);
-                    selectedAppointment.End = selectedAppointment.End.AddHours(-1);
-                }
-                else if ((args.KeyData & Keys.Down) == Keys.Down)
-                {
-                    selectedAppointment.Start = selectedAppointment.Start.AddHours(1);
-                    selectedAppointment.End = selectedAppointment.End.AddHours(1);
-                }
-            }
-
-            return base.HandleKeyDown(args);
-        }
     }
+    public override bool HandleKeyDown(KeyEventArgs args)
+    {
+        bool isControl = (args.Modifiers & Keys.Control) == Keys.Control;
+        IEvent selectedAppointment = this.Scheduler.SelectionBehavior.SelectedAppointment;
+        if (isControl && selectedAppointment != null)
+        {
+            if ((args.KeyData & Keys.Up) == Keys.Up)
+            {
+                selectedAppointment.Start = selectedAppointment.Start.AddHours(-1);
+                selectedAppointment.End = selectedAppointment.End.AddHours(-1);
+            }
+            else if ((args.KeyData & Keys.Down) == Keys.Down)
+            {
+                selectedAppointment.Start = selectedAppointment.Start.AddHours(1);
+                selectedAppointment.End = selectedAppointment.End.AddHours(1);
+            }
+        }
+        return base.HandleKeyDown(args);
+    }
+}
+
 ````
 ````VB.NET
 Public Class MySchedulerInputBehavior
@@ -79,7 +78,6 @@ Public Class MySchedulerInputBehavior
     Public Sub New(scheduler As RadScheduler)
         MyBase.New(scheduler)
     End Sub
-
     Public Overrides Function HandleKeyDown(args As KeyEventArgs) As Boolean
         Dim isControl As Boolean = (args.Modifiers And Keys.Control) = Keys.Control
         Dim selectedAppointment As IEvent = Me.Scheduler.SelectionBehavior.SelectedAppointment
@@ -92,11 +90,10 @@ Public Class MySchedulerInputBehavior
                 selectedAppointment.[End] = selectedAppointment.[End].AddHours(1)
             End If
         End If
-
         Return MyBase.HandleKeyDown(args)
     End Function
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -107,11 +104,12 @@ Now we need to assign this new input behavior to the __SchedulerInputBehavior__ 
 {{source=..\SamplesVB\Scheduler\Fundamentals\InputBehavior.vb region=SetBehavior}} 
 
 ````C#
-            scheduler.SchedulerInputBehavior = new MySchedulerInputBehavior(scheduler);
+scheduler.SchedulerInputBehavior = new MySchedulerInputBehavior(scheduler);
+
 ````
 ````VB.NET
-        scheduler.SchedulerInputBehavior = New MySchedulerInputBehavior(scheduler)
-        '
+scheduler.SchedulerInputBehavior = New MySchedulerInputBehavior(scheduler)
+
 ````
 
 {{endregion}} 

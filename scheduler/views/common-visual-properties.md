@@ -21,11 +21,12 @@ Exact Time Rendering increases readability of the appointments by rendering them
 {{source=..\SamplesVB\Scheduler\Views\CommonProperties.vb region=exactTimeRendering}} 
 
 ````C#
-            this.radScheduler1.EnableExactTimeRendering = true;
+this.radScheduler1.EnableExactTimeRendering = true;
+
 ````
 ````VB.NET
-        Me.RadScheduler1.EnableExactTimeRendering = True
-        '
+Me.RadScheduler1.EnableExactTimeRendering = True
+
 ````
 
 {{endregion}} 
@@ -41,11 +42,12 @@ When __AutoSizeAppointments__ is enabled, appointment elements will automaticall
 {{source=..\SamplesVB\Scheduler\Views\CommonProperties.vb region=autoSizeAppointments}} 
 
 ````C#
-            this.radScheduler1.AutoSizeAppointments = true;
+this.radScheduler1.AutoSizeAppointments = true;
+
 ````
 ````VB.NET
-        Me.RadScheduler1.AutoSizeAppointments = True
-        '
+Me.RadScheduler1.AutoSizeAppointments = True
+
 ````
 
 {{endregion}} 
@@ -61,13 +63,14 @@ When __AutoSizeAppointments__ is disabled, the appointments in Month and Timelin
 {{source=..\SamplesVB\Scheduler\Views\CommonProperties.vb region=appointmentsHeight}} 
 
 ````C#
-            ((SchedulerMonthViewElement)this.radScheduler1.ViewElement).AppointmentHeight = 50;
-            ((SchedulerTimelineViewElement)this.radScheduler1.ViewElement).AppointmentHeight = 50;
+((SchedulerMonthViewElement)this.radScheduler1.ViewElement).AppointmentHeight = 50;
+((SchedulerTimelineViewElement)this.radScheduler1.ViewElement).AppointmentHeight = 50;
+
 ````
 ````VB.NET
-        DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement).AppointmentHeight = 50
-        DirectCast(Me.RadScheduler1.ViewElement, SchedulerTimelineViewElement).AppointmentHeight = 50
-        '
+DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement).AppointmentHeight = 50
+DirectCast(Me.RadScheduler1.ViewElement, SchedulerTimelineViewElement).AppointmentHeight = 50
+
 ````
 
 {{endregion}} 
@@ -80,11 +83,12 @@ Using the __AppointmentsMargin__ property, you can specify the spacing between t
 {{source=..\SamplesVB\Scheduler\Views\CommonProperties.vb region=appointmentsMargin}} 
 
 ````C#
-            this.radScheduler1.ViewElement.AppointmentMargin = new Padding(5, 0, 10, 0);
+this.radScheduler1.ViewElement.AppointmentMargin = new Padding(5, 0, 10, 0);
+
 ````
 ````VB.NET
-        Me.RadScheduler1.ViewElement.AppointmentMargin = New Padding(5, 0, 10, 0)
-        '
+Me.RadScheduler1.ViewElement.AppointmentMargin = New Padding(5, 0, 10, 0)
+
 ````
 
 {{endregion}} 

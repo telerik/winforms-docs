@@ -24,34 +24,31 @@ The solution is to:
 {{source=..\SamplesVB\Scheduler\HowTo\LoadingData.vb region=propertyChanged}} 
 
 ````C#
-        public LoadingData()
-        {
-            InitializeComponent();
+public LoadingData()
+{
+    InitializeComponent();
+    this.radScheduler1.ActiveView.PropertyChanged += new PropertyChangedEventHandler(ActiveView_PropertyChanged);
+}
+void ActiveView_PropertyChanged(object sender, PropertyChangedEventArgs e)
+{
+    if (e.PropertyName == "StartDate")
+    {
+        //load the data here
+    }
+}
 
-            this.radScheduler1.ActiveView.PropertyChanged += new PropertyChangedEventHandler(ActiveView_PropertyChanged);
-        }
-
-        void ActiveView_PropertyChanged(object sender, PropertyChangedEventArgs e)
-        {
-            if (e.PropertyName == "StartDate")
-            {
-                //load the data here
-            }
-        }
 ````
 ````VB.NET
-    Public Sub New()
-        InitializeComponent()
+Public Sub New()
+    InitializeComponent()
+    AddHandler Me.RadScheduler1.ActiveView.PropertyChanged, AddressOf ActiveView_PropertyChanged
+End Sub
+Sub ActiveView_PropertyChanged(ByVal sender As Object, ByVal e As PropertyChangedEventArgs)
+    'load the data here
+    If e.PropertyName = "StartDate" Then
+    End If
+End Sub
 
-        AddHandler Me.RadScheduler1.ActiveView.PropertyChanged, AddressOf ActiveView_PropertyChanged
-    End Sub
-
-    Sub ActiveView_PropertyChanged(ByVal sender As Object, ByVal e As PropertyChangedEventArgs)
-        'load the data here
-        If e.PropertyName = "StartDate" Then
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}} 

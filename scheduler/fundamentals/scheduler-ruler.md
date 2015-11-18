@@ -22,11 +22,12 @@ The ruler can be accessed as follows:
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=GetRuller}} 
 
 ````C#
-            RulerPrimitive ruler = (this.scheduler.SchedulerElement.ViewElement as SchedulerDayViewElement).DataAreaElement.Ruler;
+RulerPrimitive ruler = (this.scheduler.SchedulerElement.ViewElement as SchedulerDayViewElement).DataAreaElement.Ruler;
+
 ````
 ````VB.NET
-        Dim ruler As RulerPrimitive = TryCast(Me.scheduler.SchedulerElement.ViewElement, SchedulerDayViewElement).DataAreaElement.Ruler
-        '
+Dim ruler As RulerPrimitive = TryCast(Me.scheduler.SchedulerElement.ViewElement, SchedulerDayViewElement).DataAreaElement.Ruler
+
 ````
 
 {{endregion}} 
@@ -40,11 +41,12 @@ The ruler can be accessed as follows:
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=TimePointerStyle}} 
 
 ````C#
-            ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow;
+ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow;
+
 ````
 ````VB.NET
-        ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-        '
+ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
+
 ````
 
 {{endregion}} 
@@ -57,13 +59,14 @@ The ruler can be accessed as follows:
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=StartEndScale}} 
 
 ````C#
-            ruler.StartScale = 2;
-            ruler.EndScale = 9;
+ruler.StartScale = 2;
+ruler.EndScale = 9;
+
 ````
 ````VB.NET
-        ruler.StartScale = 2
-        ruler.EndScale = 9
-        '
+ruler.StartScale = 2
+ruler.EndScale = 9
+
 ````
 
 {{endregion}} 
@@ -77,11 +80,12 @@ The ruler can be accessed as follows:
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=RangeFactor}} 
 
 ````C#
-            ruler.RangeFactor = ScaleRange.Hour;
+ruler.RangeFactor = ScaleRange.Hour;
+
 ````
 ````VB.NET
-        ruler.RangeFactor = ScaleRange.Hour
-        '
+ruler.RangeFactor = ScaleRange.Hour
+
 ````
 
 {{endregion}} 
@@ -95,13 +99,14 @@ The ruler can be accessed as follows:
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=CurrentTimePointerWidthAndColor}} 
 
 ````C#
-            ruler.CurrentTimePointerWidth = 10;
-            ruler.CurrentTimePointerColor = Color.Red;
+ruler.CurrentTimePointerWidth = 10;
+ruler.CurrentTimePointerColor = Color.Red;
+
 ````
 ````VB.NET
-        ruler.CurrentTimePointerWidth = 10
-        ruler.CurrentTimePointerColor = Color.Red
-        '
+ruler.CurrentTimePointerWidth = 10
+ruler.CurrentTimePointerColor = Color.Red
+
 ````
 
 {{endregion}} 
@@ -115,11 +120,12 @@ The ruler can be accessed as follows:
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=FormatStrings}} 
 
 ````C#
-            ruler.FormatStrings = new RulerFormatStrings("hh", "mm", "hh", "mm");
+ruler.FormatStrings = new RulerFormatStrings("hh", "mm", "hh", "mm");
+
 ````
 ````VB.NET
-        ruler.FormatStrings = New RulerFormatStrings("hh", "mm", "hh", "mm")
-        '
+ruler.FormatStrings = New RulerFormatStrings("hh", "mm", "hh", "mm")
+
 ````
 
 {{endregion}} 
@@ -131,10 +137,11 @@ The ruler can be accessed as follows:
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=RulerFormattingSubscribe}} 
 
 ````C#
-            this.scheduler.RulerTextFormatting += Scheduler_RulerTextFormatting;
+this.scheduler.RulerTextFormatting += Scheduler_RulerTextFormatting;
+
 ````
 ````VB.NET
-        '
+
 ````
 
 {{endregion}} 
@@ -144,20 +151,22 @@ The ruler can be accessed as follows:
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=RulerFormattingHandler}} 
 
 ````C#
-        void Scheduler_RulerTextFormatting(object sender, RulerTextFormattingEventArgs e)
-        {
-            if (e.Text.Length == 1)
-            {
-                e.Text = "0" + e.Text;
-            }
-        }
+void Scheduler_RulerTextFormatting(object sender, RulerTextFormattingEventArgs e)
+{
+    if (e.Text.Length == 1)
+    {
+        e.Text = "0" + e.Text;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub Scheduler_RulerTextFormatting(sender As Object, e As RulerTextFormattingEventArgs)
-        If e.Text.Length = 1 Then
-            e.Text = "0" & e.Text
-        End If
-    End Sub
+Private Sub Scheduler_RulerTextFormatting(sender As Object, e As RulerTextFormattingEventArgs)
+    If e.Text.Length = 1 Then
+        e.Text = "0" & e.Text
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -168,11 +177,12 @@ The ruler can be accessed as follows:
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=RulerWidth}} 
 
 ````C#
-            ruler.RulerWidth = 100;
+ruler.RulerWidth = 100;
+
 ````
 ````VB.NET
-        ruler.RulerWidth = 100
-        '
+ruler.RulerWidth = 100
+
 ````
 
 {{endregion}} 

@@ -36,45 +36,61 @@ Here is a step by step guide how to achieve that:
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.vb region=customAppEditForm}} 
 
 ````C#
-    public partial class CustomAppointmentEditForm : EditAppointmentDialog
+public partial class CustomAppointmentEditForm : EditAppointmentDialog
+{
+    public CustomAppointmentEditForm()
     {
-        public CustomAppointmentEditForm()
+        InitializeComponent();
+    }
+    protected override void LoadSettingsFromEvent(IEvent ev)
+    {
+        base.LoadSettingsFromEvent(ev);
+        AppointmentWithEmail appointmentWithEmail = ev as AppointmentWithEmail;
+        if (appointmentWithEmail != null)
         {
-            InitializeComponent();
-        }
-
-        protected override void LoadSettingsFromEvent(IEvent ev)
-        {
-            base.LoadSettingsFromEvent(ev);
-
-            AppointmentWithEmail appointmentWithEmail = ev as AppointmentWithEmail;
-            if (appointmentWithEmail != null)
-            {
-                this.txtEmail.Text = appointmentWithEmail.Email;
-            }
-        }
-
-        protected override void ApplySettingsToEvent(IEvent ev)
-        {
-            AppointmentWithEmail appointmentWithEmail = ev as AppointmentWithEmail;
-            if (appointmentWithEmail != null)
-            {
-                appointmentWithEmail.Email = this.txtEmail.Text;
-            }
-            base.ApplySettingsToEvent(ev);
-        }
-
-        protected override IEvent CreateNewEvent()
-        {
-            return new AppointmentWithEmail();
+            this.txtEmail.Text = appointmentWithEmail.Email;
         }
     }
+    protected override void ApplySettingsToEvent(IEvent ev)
+    {
+        AppointmentWithEmail appointmentWithEmail = ev as AppointmentWithEmail;
+        if (appointmentWithEmail != null)
+        {
+            appointmentWithEmail.Email = this.txtEmail.Text;
+        }
+        base.ApplySettingsToEvent(ev);
+    }
+    protected override IEvent CreateNewEvent()
+    {
+        return new AppointmentWithEmail();
+    }
+}
+
 ````
 ````VB.NET
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class CustomAppointmentEditForm
-    Inherits Telerik.WinControls.UI.Scheduler.Dialogs.EditAppointmentDialog
-    '
+Public Class CustomAppointmentEditForm
+    Public Sub New()
+        InitializeComponent()
+    End Sub
+    Protected Overrides Sub LoadSettingsFromEvent(ByVal ev As IEvent)
+        MyBase.LoadSettingsFromEvent(ev)
+        Dim appointmentWithEmail As AppointmentWithEmail = TryCast(ev, AppointmentWithEmail)
+        If appointmentWithEmail IsNot Nothing Then
+            Me.txtEmail.Text = appointmentWithEmail.Email
+        End If
+    End Sub
+    Protected Overrides Sub ApplySettingsToEvent(ByVal ev As IEvent)
+        Dim appointmentWithEmail As AppointmentWithEmail = TryCast(ev, AppointmentWithEmail)
+        If appointmentWithEmail IsNot Nothing Then
+            appointmentWithEmail.Email = Me.txtEmail.Text
+        End If
+        MyBase.ApplySettingsToEvent(ev)
+    End Sub
+    Protected Overrides Function CreateNewEvent() As IEvent
+        Return New AppointmentWithEmail()
+    End Function
+End Class
+
 ````
 
 {{endregion}} 
@@ -88,58 +104,39 @@ Partial Class CustomAppointmentEditForm
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.cs region=appWithMail}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.vb region=appWithMail}} 
 ````C#
-    public class AppointmentWithEmail : Appointment
+    
+public class AppointmentWithEmail : Appointment
+{
+    public AppointmentWithEmail() : base()
     {
-        public AppointmentWithEmail()
-            : base()
+    }
+    
+    protected override Event CreateOccurrenceInstance()
+    {
+        return new AppointmentWithEmail();
+    }
+    
+    private string email = string.Empty;
+    
+    public string Email
+    {
+        get
         {
+            return this.email;
         }
-        private string email = string.Empty;
-        public string Email
+        set
         {
-            get
+            if (this.email != value)
             {
-                return this.email;
-            }
-            set
-            {
-                if (this.email != value)
-                {
-                    this.email = value;
-                    this.OnPropertyChanged("Email");
-                }
+                this.email = value;
+                this.OnPropertyChanged("Email");
             }
         }
     }
+}
+
 ````
 ````VB.NET
-Public Class CustomAppointmentEditForm
-    Public Sub New()
-        InitializeComponent()
-    End Sub
-
-    Protected Overrides Sub LoadSettingsFromEvent(ByVal ev As IEvent)
-        MyBase.LoadSettingsFromEvent(ev)
-
-        Dim appointmentWithEmail As AppointmentWithEmail = TryCast(ev, AppointmentWithEmail)
-        If appointmentWithEmail IsNot Nothing Then
-            Me.txtEmail.Text = appointmentWithEmail.Email
-        End If
-    End Sub
-
-    Protected Overrides Sub ApplySettingsToEvent(ByVal ev As IEvent)
-        Dim appointmentWithEmail As AppointmentWithEmail = TryCast(ev, AppointmentWithEmail)
-        If appointmentWithEmail IsNot Nothing Then
-            appointmentWithEmail.Email = Me.txtEmail.Text
-        End If
-        MyBase.ApplySettingsToEvent(ev)
-    End Sub
-
-    Protected Overrides Function CreateNewEvent() As IEvent
-        Return New AppointmentWithEmail()
-    End Function
-End Class
-'
 ````
 
 {{endregion}} 
@@ -150,35 +147,27 @@ End Class
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.vb region=customAppFactory}} 
 
 ````C#
-    public class CustomAppointmentFactory : IAppointmentFactory
+    
+public class CustomAppointmentFactory : IAppointmentFactory
+{
+    #region IAppointmentFactory Members
+        
+    public IEvent CreateNewAppointment()
     {
-        #region IAppointmentFactory Members
-        public IEvent CreateNewAppointment()
-        {
-            return new AppointmentWithEmail();
-        }
+        return new AppointmentWithEmail();
+    }
+
 ````
 ````VB.NET
-Public Class AppointmentWithEmail
-    Inherits Appointment
-    Public Sub New()
-        MyBase.New()
-    End Sub
-
-    Private _email As String = String.Empty
-    Public Property Email() As String
-        Get
-            Return Me._email
-        End Get
-        Set(ByVal value As String)
-            If Me._email <> value Then
-                Me._email = value
-                Me.OnPropertyChanged("Email")
-            End If
-        End Set
-    End Property
+Public Class CustomAppointmentFactory
+Implements IAppointmentFactory
+    #Region "IAppointmentFactory Members"
+    Public Function CreateNewAppointment() As IEvent Implements IAppointmentFactory.CreateNewAppointment
+        Return New AppointmentWithEmail()
+    End Function
+    #End Region
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -189,27 +178,18 @@ End Class
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.vb region=showing}} 
 
 ````C#
-        CustomAppointmentEditForm appointmentDialog = null;
+CustomAppointmentEditForm appointmentDialog = null;
+void radScheduler1_AppointmentEditDialogShowing(object sender, AppointmentEditDialogShowingEventArgs e)
+{
+    if (this.appointmentDialog == null)
+    {
+        this.appointmentDialog = new CustomAppointmentEditForm();
+    }
+   e.AppointmentEditDialog = this.appointmentDialog;
+}
 
-        void radScheduler1_AppointmentEditDialogShowing(object sender, AppointmentEditDialogShowingEventArgs e)
-        {
-            if (this.appointmentDialog == null)
-            {
-                this.appointmentDialog = new CustomAppointmentEditForm();
-            }
-           e.AppointmentEditDialog = this.appointmentDialog;
-        }
 ````
 ````VB.NET
-Public Class CustomAppointmentFactory
-    Implements IAppointmentFactory
-#Region "IAppointmentFactory Members"
-    Public Function CreateNewAppointment() As IEvent Implements IAppointmentFactory.CreateNewAppointment
-        Return New AppointmentWithEmail()
-    End Function
-#End Region
-End Class
-'
 ````
 
 {{endregion}} 
@@ -220,18 +200,26 @@ End Class
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomField.vb region=showing}} 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomField.cs region=showing}} 
 ````C#
-            this.radScheduler1.AppointmentFactory = new CustomAppointmentFactory();
+Private appointmentDialog As CustomAppointmentEditForm = Nothing
+Private Sub radScheduler1_AppointmentEditDialogShowing(ByVal sender As Object, ByVal e As AppointmentEditDialogShowingEventArgs)
+    If Me.appointmentDialog Is Nothing Then
+        Me.appointmentDialog = New CustomAppointmentEditForm()
+    End If
+    e.AppointmentEditDialog = Me.appointmentDialog
+End Sub
+
 ````
 ````VB.NET
-    Private appointmentDialog As CustomAppointmentEditForm = Nothing
+CustomAppointmentEditForm appointmentDialog = null;
+void radScheduler1_AppointmentEditDialogShowing(object sender, AppointmentEditDialogShowingEventArgs e)
+{
+    if (this.appointmentDialog == null)
+    {
+        this.appointmentDialog = new CustomAppointmentEditForm();
+    }
+   e.AppointmentEditDialog = this.appointmentDialog;
+}
 
-    Private Sub radScheduler1_AppointmentEditDialogShowing(ByVal sender As Object, ByVal e As AppointmentEditDialogShowingEventArgs)
-        If Me.appointmentDialog Is Nothing Then
-            Me.appointmentDialog = New CustomAppointmentEditForm()
-        End If
-        e.AppointmentEditDialog = Me.appointmentDialog
-    End Sub
-    '
 ````
 
 {{endregion}} 

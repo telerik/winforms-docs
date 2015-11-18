@@ -32,11 +32,12 @@ The Timeline View can be set it to be the default view which the user sees:
 
 ````C#
             
-            this.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Timeline;
+this.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Timeline;
+
 ````
 ````VB.NET
-        Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Timeline
-        '
+Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Timeline
+
 ````
 
 {{endregion}} 
@@ -51,12 +52,12 @@ To get the instance to the Scheduler Timeline View from the RadScheduler object,
 {{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=timelineView}} 
 
 ````C#
+SchedulerTimelineView timelineView = this.radScheduler1.GetTimelineView();
 
-            SchedulerTimelineView timelineView = this.radScheduler1.GetTimelineView();
 ````
 ````VB.NET
-        Dim timelineView As SchedulerTimelineView = Me.RadScheduler1.GetTimelineView()
-        '
+Dim timelineView As SchedulerTimelineView = Me.RadScheduler1.GetTimelineView()
+
 ````
 
 {{endregion}} 
@@ -69,13 +70,16 @@ To get the instance to the Scheduler Timeline View from the RadScheduler object,
 {{source=..\SamplesCS\Scheduler\Views\TimelineView.cs region=activeView}} 
 {{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=activeView}} 
 
-````C#ype
+````C#
+ype
             
             this.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Timeline;
+
 ````
-````VB.NEType
+````VB.NET
+ype
         Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Timeline
-        '
+
 ````
 
 {{endregion}} 
@@ -95,15 +99,16 @@ The __StartDate__ property sets the first date that is shown in the timeline  _
 
 ````C#
             
-            this.radScheduler1.GetTimelineView().RangeStartDate = new DateTime(2010, 1, 20);
-            this.radScheduler1.GetTimelineView().RangeEndDate = new DateTime(2010, 2, 20);
-            this.radScheduler1.GetTimelineView().StartDate = new DateTime(2010, 2, 1);
+this.radScheduler1.GetTimelineView().RangeStartDate = new DateTime(2010, 1, 20);
+this.radScheduler1.GetTimelineView().RangeEndDate = new DateTime(2010, 2, 20);
+this.radScheduler1.GetTimelineView().StartDate = new DateTime(2010, 2, 1);
+
 ````
 ````VB.NET
-        Me.RadScheduler1.GetTimelineView().RangeStartDate = New Date(2010, 1, 20)
-        Me.RadScheduler1.GetTimelineView().RangeEndDate = New Date(2010, 2, 20)
-        Me.RadScheduler1.GetTimelineView().StartDate = New Date(2010, 2, 1)
-        '
+Me.RadScheduler1.GetTimelineView().RangeStartDate = New Date(2010, 1, 20)
+Me.RadScheduler1.GetTimelineView().RangeEndDate = New Date(2010, 2, 20)
+Me.RadScheduler1.GetTimelineView().StartDate = New Date(2010, 2, 1)
+
 ````
 
 {{endregion}} 
@@ -115,11 +120,16 @@ To get the duration between __RangeStartDate__ and __RangeEndDate__ you can use 
 
 ````C#
             
-            TimeSpan duration = timelineView.Duration;
+TimeSpan duration = timelineView.Duration;
+
 ````
 ````VB.NET
-        Dim duration As TimeSpan = timelineView.Duration
-        '
+Dim duration As TimeSpan = timelineView.Duration
+'			#End Region
+'#Region showTimescale
+Dim scale As Timescales = Timescales.Hours
+timelineView.ShowTimescale(scale)
+
 ````
 
 {{endregion}} 
@@ -147,13 +157,14 @@ To change the time scaling to HOUR, for example, you need to use the __ShowTimes
 
 ````C#
             
-            Timescales scale = Timescales.Hours;
-            timelineView.ShowTimescale(scale);
+Timescales scale = Timescales.Hours;
+timelineView.ShowTimescale(scale);
+
 ````
 ````VB.NET
-        Dim scale As Timescales = Timescales.Hours
-        timelineView.ShowTimescale(scale)
-        '
+Dim scale As Timescales = Timescales.Hours
+timelineView.ShowTimescale(scale)
+
 ````
 
 {{endregion}} 
@@ -167,15 +178,16 @@ To get the currently selected scale, use the __GetScaling__ method. After this y
 
 ````C#
             
-            SchedulerTimescale currentScaling = timelineView.GetScaling();
-            currentScaling.Format = "dd MMM";
-            currentScaling.DisplayedCellsCount = 8;
+SchedulerTimescale currentScaling = timelineView.GetScaling();
+currentScaling.Format = "dd MMM";
+currentScaling.DisplayedCellsCount = 8;
+
 ````
 ````VB.NET
-        Dim currentScaling As SchedulerTimescale = timelineView.GetScaling()
-        currentScaling.Format = "dd MMM"
-        currentScaling.DisplayedCellsCount = 8
-        '
+Dim currentScaling As SchedulerTimescale = timelineView.GetScaling()
+currentScaling.Format = "dd MMM"
+currentScaling.DisplayedCellsCount = 8
+
 ````
 
 {{endregion}} 
@@ -189,13 +201,14 @@ In TimelineView there are two scrollbars which stand for navigation between date
 
 ````C#
             
-            timelineView.ShowNavigationElement = false;
-            timelineView.ShowVerticalScrollBar = false;
+timelineView.ShowNavigationElement = false;
+timelineView.ShowVerticalScrollBar = false;
+
 ````
 ````VB.NET
-        timelineView.ShowNavigationElement = False
-        timelineView.ShowVerticalScrollBar = False
-        '
+timelineView.ShowNavigationElement = False
+timelineView.ShowVerticalScrollBar = False
+
 ````
 
 {{endregion}} 
@@ -208,14 +221,14 @@ The SchedulerTimelineViewElement allows you to specify different size for the di
 {{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=resizeColumns}} 
 
 ````C#
+SchedulerTimelineViewElement viewElement = (SchedulerTimelineViewElement)this.radScheduler1.ViewElement;
+viewElement.SetColumnWidth(1, 2);
 
-            SchedulerTimelineViewElement viewElement = (SchedulerTimelineViewElement)this.radScheduler1.ViewElement;
-            viewElement.SetColumnWidth(1, 2);
 ````
 ````VB.NET
-        Dim viewElement As SchedulerTimelineViewElement = CType(RadScheduler1.ViewElement, SchedulerTimelineViewElement)
-        viewElement.SetColumnWidth(1, 2)
-        '
+Dim viewElement As SchedulerTimelineViewElement = CType(RadScheduler1.ViewElement, SchedulerTimelineViewElement)
+viewElement.SetColumnWidth(1, 2)
+
 ````
 
 {{endregion}} 
@@ -228,14 +241,14 @@ TimelineView contains two header rows. The first one displays the date range of 
 {{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=headerSizing}} 
 
 ````C#
+viewElement.ColumnHeaderHeight = 70;
+viewElement.ViewHeaderHeight = 35;
 
-            viewElement.ColumnHeaderHeight = 70;
-            viewElement.ViewHeaderHeight = 35;
 ````
 ````VB.NET
-        viewElement.ColumnHeaderHeight = 70
-        viewElement.ViewHeaderHeight = 35
-        '
+viewElement.ColumnHeaderHeight = 70
+viewElement.ViewHeaderHeight = 35
+
 ````
 
 {{endregion}}

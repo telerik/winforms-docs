@@ -53,11 +53,12 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorViewModeEditor}} 
 
 ````C#
-            this.radScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.Editor;
+this.radScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.Editor;
+
 ````
 ````VB.NET
-        Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.Editor
-        '
+Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.Editor
+
 ````
 
 {{endregion}} 
@@ -71,11 +72,13 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorViewModeEditorDialog}} 
 
 ````C#
-            this.radScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.EditorDialog;
+            
+this.radScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.EditorDialog;
+
 ````
 ````VB.NET
-        Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.EditorDialog
-        '
+Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.EditorDialog
+
 ````
 
 {{endregion}} 
@@ -88,11 +91,13 @@ In-place editors provide a quick and easy way to edit a small number of the appo
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorViewModeEditorNone}} 
 
 ````C#
-            this.radScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.None;
+        
+this.radScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.None;
+
 ````
 ````VB.NET
-        Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.None
-        '
+Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.None
+
 ````
 
 {{endregion}} 
@@ -105,55 +110,48 @@ You are able to change the default editors in the EditorRequired event of the Ra
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\CustomSchedulerTextBoxEditor.vb region=customSchedulerTextBoxEditor}} 
 
 ````C#
-    public class CustomSchedulerTextBoxEditor : RadSchedulerTextBoxEditor
+public class CustomSchedulerTextBoxEditor : RadSchedulerTextBoxEditor
+{
+    public override void BeginEditorEdit(IEditorManager editorManager, IEvent appointment)
     {
-        public override void BeginEditorEdit(IEditorManager editorManager, IEvent appointment)
+        base.BeginEditorEdit(editorManager, appointment);
+        this.Value = this.Value = appointment.Description;
+    }
+    public override void Save()
+    {
+        if (this.appointment.Description == this.Value.ToString())
         {
-            base.BeginEditorEdit(editorManager, appointment);
-
-            this.Value = this.Value = appointment.Description;
+            return;
         }
-
-        public override void Save()
+        this.appointment.Description = this.Value.ToString();
+        if (this.appointment.MasterEvent != null &&
+            !this.appointment.MasterEvent.Exceptions.Contains(this.appointment))
         {
-            if (this.appointment.Description == this.Value.ToString())
-            {
-                return;
-            }
-
-            this.appointment.Description = this.Value.ToString();
-
-            if (this.appointment.MasterEvent != null &&
-                !this.appointment.MasterEvent.Exceptions.Contains(this.appointment))
-            {
-                this.appointment.MasterEvent.Exceptions.Add(this.appointment);
-            }
+            this.appointment.MasterEvent.Exceptions.Add(this.appointment);
         }
     }
+}
+
 ````
 ````VB.NET
 Public Class CustomSchedulerTextBoxEditor
     Inherits RadSchedulerTextBoxEditor
     Public Overrides Sub BeginEditorEdit(ByVal editorManager As IEditorManager, ByVal appointment As IEvent)
         MyBase.BeginEditorEdit(editorManager, appointment)
-
         Me.Value = appointment.Description
         Me.Value = Me.Value
     End Sub
-
     Public Overrides Sub Save()
         If Me.appointment.Description = Me.Value.ToString() Then
             Return
         End If
-
         Me.appointment.Description = Me.Value.ToString()
-
         If Me.appointment.MasterEvent IsNot Nothing AndAlso (Not Me.appointment.MasterEvent.Exceptions.Contains(Me.appointment)) Then
             Me.appointment.MasterEvent.Exceptions.Add(Me.appointment)
         End If
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -164,16 +162,18 @@ After creating the custom editor that edits Description property of the appointm
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorRequired}} 
 
 ````C#
-        void radScheduler1_EditorRequired(object sender, SchedulerEditorRequiredArgs e)
-        {
-            e.Editor = new CustomSchedulerTextBoxEditor();
-        }
+        
+void radScheduler1_EditorRequired(object sender, SchedulerEditorRequiredArgs e)
+{
+    e.Editor = new CustomSchedulerTextBoxEditor();
+}
+
 ````
 ````VB.NET
-    Private Sub radScheduler1_EditorRequired(ByVal sender As Object, ByVal e As SchedulerEditorRequiredArgs)
-        e.Editor = New CustomSchedulerTextBoxEditor()
-    End Sub
-    '
+Private Sub radScheduler1_EditorRequired(ByVal sender As Object, ByVal e As SchedulerEditorRequiredArgs)
+    e.Editor = New CustomSchedulerTextBoxEditor()
+End Sub
+
 ````
 
 {{endregion}} 

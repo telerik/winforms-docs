@@ -24,11 +24,14 @@ The Day View is the default RadScheduler view, but you can explicitly set it to 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=activeViewType}} 
 
 ````C#
+ype
             this.radScheduler1.ActiveViewType = SchedulerViewType.Day;
+
 ````
 ````VB.NET
+ype
         Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day
-        '
+
 ````
 
 {{endregion}} 
@@ -42,11 +45,12 @@ To get the instance to the SchedulerDayView from the RadScheduler object, either
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=getDayView}} 
 
 ````C#
-            SchedulerDayView dayView = this.radScheduler1.GetDayView();
+SchedulerDayView dayView = this.radScheduler1.GetDayView();
+
 ````
 ````VB.NET
-        Dim dayView As SchedulerDayView = Me.RadScheduler1.GetDayView()
-        '
+Dim dayView As SchedulerDayView = Me.RadScheduler1.GetDayView()
+
 ````
 
 {{endregion}} 
@@ -60,11 +64,14 @@ To get the instance to the SchedulerDayView from the RadScheduler object, either
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=activeView}} 
 
 ````C#
+ype
             this.radScheduler1.ActiveViewType = SchedulerViewType.Day;
+
 ````
 ````VB.NET
+ype
         Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day
-        '
+
 ````
 
 {{endregion}}
@@ -74,14 +81,14 @@ To get the instance to the SchedulerDayView from the RadScheduler object, either
 The Day View can show a predefined number of days through the __DayCount__ property. The default value is 3 days, whereas the minimum value is 1 day and the maximum is 10 days:
 
 {{source=..\SamplesCS\Scheduler\Views\DayView.cs region=dayCount}} 
-{{source=..\SamplesVB\Scheduler\Views\DayView.vb region=dayCount}} 
-
 ````C#
-            dayView.DayCount = 3;
+ype
+        Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day
+
 ````
 ````VB.NET
-        dayView.DayCount = 3
-        '
+dayView.DayCount = 3;
+
 ````
 
 {{endregion}} 
@@ -95,11 +102,12 @@ The work time hours is a predefined range of hours, which can be specified withi
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=workTime}} 
 
 ````C#
-            dayView.WorkTime = TimeInterval.DefaultWorkTime;
+dayView.WorkTime = TimeInterval.DefaultWorkTime;
+
 ````
 ````VB.NET
-        dayView.WorkTime = TimeInterval.DefaultWorkTime
-        '
+dayView.WorkTime = TimeInterval.DefaultWorkTime
+
 ````
 
 {{endregion}} 
@@ -115,14 +123,14 @@ Additionally, you can specify which week days are part of the working week. This
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=workWeek}} 
 
 ````C#
-            dayView.WorkWeekStart = DayOfWeek.Thursday;
-            dayView.WorkWeekEnd = DayOfWeek.Saturday;
+dayView.WorkWeekStart = DayOfWeek.Thursday;
+dayView.WorkWeekEnd = DayOfWeek.Saturday;
+
 ````
 ````VB.NET
-        dayView.WorkWeekStart = DayOfWeek.Thursday
-        dayView.WorkWeekEnd = DayOfWeek.Saturday
+dayView.WorkWeekStart = DayOfWeek.Thursday
+dayView.WorkWeekEnd = DayOfWeek.Saturday
 
-        '
 ````
 
 {{endregion}} 
@@ -135,11 +143,12 @@ Showing/hiding the day headers is done through the __ShowHeader__ property (the 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=showHeader}} 
 
 ````C#
-            dayView.ShowHeader = true;
+dayView.ShowHeader = true;
+
 ````
 ````VB.NET
-        dayView.ShowHeader = True
-        '
+dayView.ShowHeader = True
+
 ````
 
 {{endregion}} 
@@ -152,11 +161,12 @@ RadScheduler uses the [.NET Standard DateTime Format Strings](http://msdn.micros
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=headerFormat}} 
 
 ````C#
-            dayView.HeaderFormat = "MMMM dd";
+dayView.HeaderFormat = "MMMM dd";
+
 ````
 ````VB.NET
-        dayView.HeaderFormat = "MMMM dd"
-        '
+dayView.HeaderFormat = "MMMM dd"
+
 ````
 
 {{endregion}} 
@@ -185,11 +195,12 @@ The default __scale of the ruler__ can be set with a single property (__RangeFac
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=rangeFactor}} 
 
 ````C#
-            dayView.RangeFactor = ScaleRange.Hour;
+dayView.RangeFactor = ScaleRange.Hour;
+
 ````
 ````VB.NET
-        dayView.RangeFactor = ScaleRange.Hour
-        '
+dayView.RangeFactor = ScaleRange.Hour
+
 ````
 
 {{endregion}} 
@@ -202,11 +213,12 @@ The size of the ruler height (and row height respectively) is controlled by the 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=rulerScaleSize}} 
 
 ````C#
-            dayView.RulerScaleSize = 50;
+dayView.RulerScaleSize = 50;
+
 ````
 ````VB.NET
-        dayView.RulerScaleSize = 50
-        '
+dayView.RulerScaleSize = 50
+
 ````
 
 {{endregion}} 
@@ -219,19 +231,20 @@ You can control which hours are visible in the view by using __RulerStartScale__
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=rulerStartScale}} 
 
 ````C#
-            dayView.RangeFactor = ScaleRange.QuarterHour;
-            dayView.RulerStartScale = 9;
-            dayView.RulerStartScaleMinutes = 30;
-            dayView.RulerEndScale = 14; 
-            dayView.RulerEndScaleMinutes = 45;
+dayView.RangeFactor = ScaleRange.QuarterHour;
+dayView.RulerStartScale = 9;
+dayView.RulerStartScaleMinutes = 30;
+dayView.RulerEndScale = 14; 
+dayView.RulerEndScaleMinutes = 45;
+
 ````
 ````VB.NET
-        dayView.RangeFactor = ScaleRange.QuarterHour
-        dayView.RulerStartScale = 9
-        dayView.RulerStartScaleMinutes = 30
-        dayView.RulerEndScale = 14
-        dayView.RulerEndScaleMinutes = 45
-        '
+dayView.RangeFactor = ScaleRange.QuarterHour
+dayView.RulerStartScale = 9
+dayView.RulerStartScaleMinutes = 30
+dayView.RulerEndScale = 14
+dayView.RulerEndScaleMinutes = 45
+
 ````
 
 {{endregion}} 
@@ -248,15 +261,16 @@ The __RulerFormatStrings__ property changes the time format in the ruler between
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=12rulerTimeFormat}} 
 
 ````C#
-            dayView.RulerStartScale = 9;
-            dayView.RulerEndScale = 14;
-            dayView.RulerFormatStrings = new RulerFormatStrings("%h", "mm", "", "");
+dayView.RulerStartScale = 9;
+dayView.RulerEndScale = 14;
+dayView.RulerFormatStrings = new RulerFormatStrings("%h", "mm", "", "");
+
 ````
 ````VB.NET
-        dayView.RulerStartScale = 9
-        dayView.RulerEndScale = 14
-        dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
-        '
+dayView.RulerStartScale = 9
+dayView.RulerEndScale = 14
+dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
+
 ````
 
 {{endregion}} 
@@ -267,15 +281,16 @@ The __RulerFormatStrings__ property changes the time format in the ruler between
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=24rulerTimeFormat}} 
 
 ````C#
-            dayView.RulerStartScale = 9;
-            dayView.RulerEndScale = 14;
-            dayView.RulerFormatStrings = new RulerFormatStrings("%H", "mm", "", "");
+dayView.RulerStartScale = 9;
+dayView.RulerEndScale = 14;
+dayView.RulerFormatStrings = new RulerFormatStrings("%H", "mm", "", "");
+
 ````
 ````VB.NET
-        dayView.RulerStartScale = 9
-        dayView.RulerEndScale = 14
-        dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
-        '
+dayView.RulerStartScale = 9
+dayView.RulerEndScale = 14
+dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
+
 ````
 
 {{endregion}} 
@@ -288,11 +303,12 @@ To show and hide the ruler, use the __ShowRuler__ property:
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=showRuler}} 
 
 ````C#
-            dayView.ShowRuler = true;
+dayView.ShowRuler = true;
+
 ````
 ````VB.NET
-        dayView.ShowRuler = True
-        '
+dayView.ShowRuler = True
+
 ````
 
 {{endregion}} 
@@ -305,11 +321,12 @@ The width of the ruler is controlled from the __RulerWidth__ property, whereas t
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=rulerWidth}} 
 
 ````C#
-            dayView.RulerWidth = 40;
+dayView.RulerWidth = 40;
+
 ````
 ````VB.NET
-        dayView.RulerWidth = 40
-        '
+dayView.RulerWidth = 40
+
 ````
 
 {{endregion}} 
@@ -322,17 +339,18 @@ The current time pointer is a thin line on the ruler and on the today’s column
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=currentTimePointer}} 
 
 ````C#
-            SchedulerDayViewElement dayViewElement = (SchedulerDayViewElement)this.radScheduler1.ViewElement;
-            dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow;
-            dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3;
-            dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red;
+SchedulerDayViewElement dayViewElement = (SchedulerDayViewElement)this.radScheduler1.ViewElement;
+dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow;
+dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3;
+dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red;
+
 ````
 ````VB.NET
-        Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
-        dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
-        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
-        dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
-        '
+Dim dayViewElement As SchedulerDayViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerDayViewElement)
+dayViewElement.DataAreaElement.Ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
+dayViewElement.DataAreaElement.Ruler.CurrentTimePointerWidth = 3
+dayViewElement.DataAreaElement.Ruler.CurrentTimePointerColor = Color.Red
+
 ````
 
 {{endregion}} 
@@ -345,13 +363,14 @@ The AllDay area contains appointments that are either defined as AllDay appointm
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=allDayArea}} 
 
 ````C#
-            dayViewElement.AllDayHeaderElement.HeaderHeight = 50;
-            dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200;
+dayViewElement.AllDayHeaderElement.HeaderHeight = 50;
+dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200;
+
 ````
 ````VB.NET
-        dayViewElement.AllDayHeaderElement.HeaderHeight = 50
-        dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
-        '
+dayViewElement.AllDayHeaderElement.HeaderHeight = 50
+dayViewElement.AllDayHeaderElement.MaxHeaderHeight = 200
+
 ````
 
 {{endregion}}
@@ -364,11 +383,12 @@ The __SchedulerDayViewElement__ allows you to specify different size for the dif
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=resizeColumns}} 
 
 ````C#
-            dayViewElement.SetColumnWidth(2, 2);
+dayViewElement.SetColumnWidth(2, 2);
+
 ````
 ````VB.NET
-        dayViewElement.SetColumnWidth(2, 2)
-        '
+dayViewElement.SetColumnWidth(2, 2)
+
 ````
 
 {{endregion}} 

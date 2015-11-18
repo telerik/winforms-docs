@@ -25,11 +25,12 @@ If you want to group RadScheduler by resources you can use the GroupType proper
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=groupType}} 
 
 ````C#
-            this.radScheduler1.GroupType = GroupType.Resource;
+this.radScheduler1.GroupType = GroupType.Resource;
+
 ````
 ````VB.NET
-        Me.RadScheduler1.GroupType = GroupType.Resource
-        '
+Me.RadScheduler1.GroupType = GroupType.Resource
+
 ````
 
 {{endregion}} 
@@ -40,38 +41,33 @@ You can add/remove resources using the RadScheduler’s Resources collection. Th
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=addingResources}} 
 
 ````C#
-            Color[] colors = new Color[]{Color.LightBlue, Color.LightGreen, Color.LightYellow,
-               Color.Red, Color.Orange, Color.Pink, Color.Purple, Color.Peru, Color.PowderBlue};
+Color[] colors = new Color[]{Color.LightBlue, Color.LightGreen, Color.LightYellow,
+   Color.Red, Color.Orange, Color.Pink, Color.Purple, Color.Peru, Color.PowderBlue};
+string[] names = new string[]{"Alan Smith", "Anne Dodsworth",
+   "Boyan Mastoni", "Richard Duncan", "Maria Shnaider"};
+for (int i = 0; i < names.Length; i++)
+{
+    Resource resource = new Resource();
+    resource.Id = new EventId(i);
+    resource.Name = names[i];
+    resource.Color = colors[i];
+    resource.Image = this.imageList1.Images[i];
+    this.radScheduler1.Resources.Add(resource);
+}
 
-            string[] names = new string[]{"Alan Smith", "Anne Dodsworth",
-               "Boyan Mastoni", "Richard Duncan", "Maria Shnaider"};
-
-            for (int i = 0; i < names.Length; i++)
-            {
-                Resource resource = new Resource();
-                resource.Id = new EventId(i);
-                resource.Name = names[i];
-                resource.Color = colors[i];
-
-                resource.Image = this.imageList1.Images[i];
-                this.radScheduler1.Resources.Add(resource);
-            }
 ````
 ````VB.NET
-        Dim colors() As Color = {Color.LightBlue, Color.LightGreen, Color.LightYellow, Color.Red, Color.Orange, Color.Pink, Color.Purple, Color.Peru, Color.PowderBlue}
+Dim colors() As Color = {Color.LightBlue, Color.LightGreen, Color.LightYellow, Color.Red, Color.Orange, Color.Pink, Color.Purple, Color.Peru, Color.PowderBlue}
+Dim names() As String = {"Alan Smith", "Anne Dodsworth", "Boyan Mastoni", "Richard Duncan", "Maria Shnaider"}
+For i As Integer = 0 To names.Length - 1
+    Dim resource As New Telerik.WinControls.UI.Resource()
+    resource.Id = New EventId(i)
+    resource.Name = names(i)
+    resource.Color = colors(i)
+    resource.Image = Me.imageList1.Images(i)
+    Me.RadScheduler1.Resources.Add(resource)
+Next i
 
-        Dim names() As String = {"Alan Smith", "Anne Dodsworth", "Boyan Mastoni", "Richard Duncan", "Maria Shnaider"}
-
-        For i As Integer = 0 To names.Length - 1
-            Dim resource As New Telerik.WinControls.UI.Resource()
-            resource.Id = New EventId(i)
-            resource.Name = names(i)
-            resource.Color = colors(i)
-
-            resource.Image = Me.imageList1.Images(i)
-            Me.RadScheduler1.Resources.Add(resource)
-        Next i
-        '
 ````
 
 {{endregion}} 
@@ -84,11 +80,12 @@ You can use the SchedulerView’s ResourcesPerView property to change the number
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=getDayView}} 
 
 ````C#
-            this.radScheduler1.ActiveView.ResourcesPerView = 2;
+this.radScheduler1.ActiveView.ResourcesPerView = 2;
+
 ````
 ````VB.NET
-        Me.RadScheduler1.ActiveView.ResourcesPerView = 2
-        '
+Me.RadScheduler1.ActiveView.ResourcesPerView = 2
+
 ````
 
 {{endregion}} 
@@ -101,11 +98,12 @@ Navigating through resources To navigate to a specific resource you can use the 
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceNavigation}} 
 
 ````C#
-            ((SchedulerViewGroupedByResourceElementBase)this.radScheduler1.ViewElement).ResourceStartIndex = 2;
+((SchedulerViewGroupedByResourceElementBase)this.radScheduler1.ViewElement).ResourceStartIndex = 2;
+
 ````
 ````VB.NET
-        CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).ResourceStartIndex = 2
-        '
+CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).ResourceStartIndex = 2
+
 ````
 
 {{endregion}}
@@ -116,13 +114,14 @@ To track when the resource index is changed, you can use the ResourceStartIndexC
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceNavigationEvents}} 
 
 ````C#
-            this.radScheduler1.ResourceStartIndexChanging += radScheduler1_ResourceStartIndexChanging;
-            this.radScheduler1.ResourceStartIndexChanged += radScheduler1_ResourceStartIndexChanged;
+this.radScheduler1.ResourceStartIndexChanging += radScheduler1_ResourceStartIndexChanging;
+this.radScheduler1.ResourceStartIndexChanged += radScheduler1_ResourceStartIndexChanged;
+
 ````
 ````VB.NET
-        AddHandler Me.RadScheduler1.ResourceStartIndexChanging, AddressOf radScheduler1_ResourceStartIndexChanging
-        AddHandler Me.RadScheduler1.ResourceStartIndexChanged, AddressOf radScheduler1_ResourceStartIndexChanged
-        '
+AddHandler Me.RadScheduler1.ResourceStartIndexChanging, AddressOf radScheduler1_ResourceStartIndexChanging
+AddHandler Me.RadScheduler1.ResourceStartIndexChanged, AddressOf radScheduler1_ResourceStartIndexChanged
+
 ````
 
 {{endregion}}
@@ -131,30 +130,29 @@ To track when the resource index is changed, you can use the ResourceStartIndexC
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceNavigationHandlers}} 
 
 ````C#
-        void radScheduler1_ResourceStartIndexChanging(object sender, ResourceIndexChangingEventArgs e)
-        {
-            if (e.NewStartIndex > 5)
-            {
-                e.Cancel = true;
-            }
-        }
+void radScheduler1_ResourceStartIndexChanging(object sender, ResourceIndexChangingEventArgs e)
+{
+    if (e.NewStartIndex > 5)
+    {
+        e.Cancel = true;
+    }
+}
+void radScheduler1_ResourceStartIndexChanged(object sender, EventArgs e)
+{
+    RadMessageBox.Show("Resource Index has changed");
+}
 
-        void radScheduler1_ResourceStartIndexChanged(object sender, EventArgs e)
-        {
-            RadMessageBox.Show("Resource Index has changed");
-        }
 ````
 ````VB.NET
-    Private Sub radScheduler1_ResourceStartIndexChanging(sender As Object, e As ResourceIndexChangingEventArgs)
-        If e.NewStartIndex > 5 Then
-            e.Cancel = True
-        End If
-    End Sub
+Private Sub radScheduler1_ResourceStartIndexChanging(sender As Object, e As ResourceIndexChangingEventArgs)
+    If e.NewStartIndex > 5 Then
+        e.Cancel = True
+    End If
+End Sub
+Private Sub radScheduler1_ResourceStartIndexChanged(sender As Object, e As EventArgs)
+    RadMessageBox.Show("Resource Index has changed")
+End Sub
 
-    Private Sub radScheduler1_ResourceStartIndexChanged(sender As Object, e As EventArgs)
-        RadMessageBox.Show("Resource Index has changed")
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -167,11 +165,12 @@ RadScheduler allows you to specify different size for the different resources. T
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceResizing}} 
 
 ````C#
-            ((SchedulerViewGroupedByResourceElementBase)this.radScheduler1.ViewElement).SetResourceSize(1, 2);
+((SchedulerViewGroupedByResourceElementBase)this.radScheduler1.ViewElement).SetResourceSize(1, 2);
+
 ````
 ````VB.NET
-        CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).SetResourceSize(1, 2)
-        '
+CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).SetResourceSize(1, 2)
+
 ````
 
 {{endregion}} 

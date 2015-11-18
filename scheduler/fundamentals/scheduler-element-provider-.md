@@ -20,32 +20,30 @@ If you need to customize any of the  __RadSheduler__ elements you can use the __
 {{source=..\SamplesVB\Scheduler\Fundamentals\SchedulerElementProviderSample.vb region=SchedulerElementProvider}} 
 
 ````C#
-    public class MyElementProvider : SchedulerElementProvider
+public class MyElementProvider : SchedulerElementProvider
+{
+    public MyElementProvider(RadScheduler scheduler)
+        : base(scheduler)
     {
-        public MyElementProvider(RadScheduler scheduler)
-            : base(scheduler)
-        {
-        }
-
-        protected override T CreateElement<T>(SchedulerView view, object context)
-        {
-            if (typeof(T) == typeof(AppointmentElement))
-            {
-                return new MyAppointmentElement(this.Scheduler, view, (IEvent)context) as T;
-            }
-            if (typeof(T) == typeof(SchedulerCellElement))
-            {
-                return new MySchedulerCellElement(this.Scheduler, view) as T;
-            }
-
-            return base.CreateElement<T>(view, context);
-        }
-
-        public override RulerPrimitive CreateRulerPrimitive(DayViewAppointmentsArea area, SchedulerTimeZone timeZone)
-        {
-            return new MyRulerPrimitive(this.Scheduler, area);
-        }
     }
+    protected override T CreateElement<T>(SchedulerView view, object context)
+    {
+        if (typeof(T) == typeof(AppointmentElement))
+        {
+            return new MyAppointmentElement(this.Scheduler, view, (IEvent)context) as T;
+        }
+        if (typeof(T) == typeof(SchedulerCellElement))
+        {
+            return new MySchedulerCellElement(this.Scheduler, view) as T;
+        }
+        return base.CreateElement<T>(view, context);
+    }
+    public override RulerPrimitive CreateRulerPrimitive(DayViewAppointmentsArea area, SchedulerTimeZone timeZone)
+    {
+        return new MyRulerPrimitive(this.Scheduler, area);
+    }
+}
+
 ````
 ````VB.NET
 Public Class MyElementProvider
@@ -53,8 +51,6 @@ Public Class MyElementProvider
     Public Sub New(scheduler As RadScheduler)
         MyBase.New(scheduler)
     End Sub
-
-
     Protected Overrides Function CreateElement(Of T As SchedulerVisualElement)(view As SchedulerView, context As Object) As T
         If GetType(T) = GetType(AppointmentElement) Then
             Return TryCast(New MyAppointmentElement(Me.Scheduler, view, DirectCast(context, IEvent)), T)
@@ -62,15 +58,13 @@ Public Class MyElementProvider
         If GetType(T) = GetType(SchedulerCellElement) Then
             Return TryCast(New MySchedulerCellElement(Me.Scheduler, view), T)
         End If
-
         Return MyBase.CreateElement(Of T)(view, context)
     End Function
-
     Public Overrides Function CreateRulerPrimitive(area As DayViewAppointmentsArea, timeZone As SchedulerTimeZone) As RulerPrimitive
         Return New MyRulerPrimitive(Me.Scheduler, area)
     End Function
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -81,49 +75,45 @@ Your custom elements should be ancestors of the default ones. For example, you c
 {{source=..\SamplesVB\Scheduler\Fundamentals\SchedulerElementProviderSample.vb region=elements}} 
 
 ````C#
-    public class MySchedulerCellElement : SchedulerCellElement
+public class MySchedulerCellElement : SchedulerCellElement
+{
+    public MySchedulerCellElement(RadScheduler scheduler, SchedulerView view)
+        : base(scheduler, view)
     {
-        public MySchedulerCellElement(RadScheduler scheduler, SchedulerView view)
-            : base(scheduler, view)
-        {
-        }
-
-        protected override void InitializeFields()
-        {
-            base.InitializeFields();
-            this.BorderWidth = 2;
-            this.BackColor = ColorTranslator.FromHtml("#f5e020");
-            this.Text = "Text";
-        }
     }
-
-    public class MyAppointmentElement : AppointmentElement
+    protected override void InitializeFields()
     {
-        public MyAppointmentElement(RadScheduler scheduler, SchedulerView view, IEvent appointment)
-            : base(scheduler, view, appointment)
-        {
-        }
-
-        protected override void InitializeAppointment()
-        {
-            base.InitializeAppointment();
-
-            this.BackColor = ColorTranslator.FromHtml("#91c930");
-            this.BackColor2 = ColorTranslator.FromHtml("#51ab2e");
-            this.SelectedBorderColor = ColorTranslator.FromHtml("#005Bbc");
-        }
+        base.InitializeFields();
+        this.BorderWidth = 2;
+        this.BackColor = ColorTranslator.FromHtml("#f5e020");
+        this.Text = "Text";
     }
-
-    public class MyRulerPrimitive : RulerPrimitive
+}
+public class MyAppointmentElement : AppointmentElement
+{
+    public MyAppointmentElement(RadScheduler scheduler, SchedulerView view, IEvent appointment)
+        : base(scheduler, view, appointment)
     {
-        public MyRulerPrimitive(RadScheduler scheduler, DayViewAppointmentsArea area)
-            : base(scheduler, area)
-        {
-            this.BackColor = ColorTranslator.FromHtml("#91c930");
-            this.Font = new Font("Segoe Script", 12, FontStyle.Underline);
-            this.ForeColor = ColorTranslator.FromHtml("#bb2525");
-        }
     }
+    protected override void InitializeAppointment()
+    {
+        base.InitializeAppointment();
+        this.BackColor = ColorTranslator.FromHtml("#91c930");
+        this.BackColor2 = ColorTranslator.FromHtml("#51ab2e");
+        this.SelectedBorderColor = ColorTranslator.FromHtml("#005Bbc");
+    }
+}
+public class MyRulerPrimitive : RulerPrimitive
+{
+    public MyRulerPrimitive(RadScheduler scheduler, DayViewAppointmentsArea area)
+        : base(scheduler, area)
+    {
+        this.BackColor = ColorTranslator.FromHtml("#91c930");
+        this.Font = new Font("Segoe Script", 12, FontStyle.Underline);
+        this.ForeColor = ColorTranslator.FromHtml("#bb2525");
+    }
+}
+
 ````
 ````VB.NET
 Public Class MySchedulerCellElement
@@ -131,7 +121,6 @@ Public Class MySchedulerCellElement
     Public Sub New(scheduler As RadScheduler, view As SchedulerView)
         MyBase.New(scheduler, view)
     End Sub
-
     Protected Overrides Sub InitializeFields()
         MyBase.InitializeFields()
         Me.BorderWidth = 2
@@ -139,22 +128,18 @@ Public Class MySchedulerCellElement
         Me.Text = "Text"
     End Sub
 End Class
-
 Public Class MyAppointmentElement
     Inherits AppointmentElement
     Public Sub New(scheduler As RadScheduler, view As SchedulerView, appointment As IEvent)
         MyBase.New(scheduler, view, appointment)
     End Sub
-
     Protected Overrides Sub InitializeAppointment()
         MyBase.InitializeAppointment()
-
         Me.BackColor = ColorTranslator.FromHtml("#91c930")
         Me.BackColor2 = ColorTranslator.FromHtml("#51ab2e")
         Me.SelectedBorderColor = ColorTranslator.FromHtml("#005Bbc")
     End Sub
 End Class
-
 Public Class MyRulerPrimitive
     Inherits RulerPrimitive
     Public Sub New(scheduler As RadScheduler, area As DayViewAppointmentsArea)
@@ -164,7 +149,7 @@ Public Class MyRulerPrimitive
         Me.ForeColor = ColorTranslator.FromHtml("#bb2525")
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 

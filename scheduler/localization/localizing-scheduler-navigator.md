@@ -18,49 +18,49 @@ The __RadSchedulerNavigator__ control uses the __SchedulerNavigatorLocalizationP
 {{source=..\SamplesVB\Scheduler\Localization\CustomNavigatorLocalizationProvider.vb region=navigatorProvider}} 
 
 ````C#
-    public class CustomSchedulerNavigatorLocalizationProvider : SchedulerNavigatorLocalizationProvider
+public class CustomSchedulerNavigatorLocalizationProvider : SchedulerNavigatorLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
     {
-        public override string GetLocalizedString(string id)
+        switch (id)
         {
-            switch (id)
-            {
-                case SchedulerNavigatorStringId.DayViewButtonCaption:
-                    {
-                        return "Day View";
-                    }
-                case SchedulerNavigatorStringId.WeekViewButtonCaption:
-                    {
-                        return "Week View";
-                    }
-                case SchedulerNavigatorStringId.MonthViewButtonCaption:
-                    {
-                        return "Month View";
-                    }
-                case SchedulerNavigatorStringId.TimelineViewButtonCaption:
-                    {
-                        return "Timeline View";
-                    }
-                case SchedulerNavigatorStringId.ShowWeekendCheckboxCaption:
-                    {
-                        return "Show Weekend";
-                    }
-                case SchedulerNavigatorStringId.TodayButtonCaptionToday:
-                    {
-                        return "Today";
-                    }
-                case SchedulerNavigatorStringId.TodayButtonCaptionThisWeek:
-                    {
-                        return "This week";
-                    }
-                case SchedulerNavigatorStringId.TodayButtonCaptionThisMonth:
-                    {
-                        return "This month";
-                    }
-            }
-
-            return String.Empty;
+            case SchedulerNavigatorStringId.DayViewButtonCaption:
+                {
+                    return "Day View";
+                }
+            case SchedulerNavigatorStringId.WeekViewButtonCaption:
+                {
+                    return "Week View";
+                }
+            case SchedulerNavigatorStringId.MonthViewButtonCaption:
+                {
+                    return "Month View";
+                }
+            case SchedulerNavigatorStringId.TimelineViewButtonCaption:
+                {
+                    return "Timeline View";
+                }
+            case SchedulerNavigatorStringId.ShowWeekendCheckboxCaption:
+                {
+                    return "Show Weekend";
+                }
+            case SchedulerNavigatorStringId.TodayButtonCaptionToday:
+                {
+                    return "Today";
+                }
+            case SchedulerNavigatorStringId.TodayButtonCaptionThisWeek:
+                {
+                    return "This week";
+                }
+            case SchedulerNavigatorStringId.TodayButtonCaptionThisMonth:
+                {
+                    return "This month";
+                }
         }
+        return String.Empty;
     }
+}
+
 ````
 ````VB.NET
 Public Class CustomSchedulerNavigatorLocalizationProvider
@@ -84,11 +84,10 @@ Public Class CustomSchedulerNavigatorLocalizationProvider
             Case SchedulerNavigatorStringId.TodayButtonCaptionThisMonth
                 Return "This month"
         End Select
-
         Return String.Empty
     End Function
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -99,11 +98,12 @@ In order to utilize the new Localization Provider, you should create an instance
 {{source=..\SamplesVB\Scheduler\Localization\AssignProviders.vb region=assignNavigatorProvider}} 
 
 ````C#
-            SchedulerNavigatorLocalizationProvider.CurrentProvider = new CustomSchedulerNavigatorLocalizationProvider();
+SchedulerNavigatorLocalizationProvider.CurrentProvider = new CustomSchedulerNavigatorLocalizationProvider();
+
 ````
 ````VB.NET
-        SchedulerNavigatorLocalizationProvider.CurrentProvider = New CustomSchedulerNavigatorLocalizationProvider()
-        '
+SchedulerNavigatorLocalizationProvider.CurrentProvider = New CustomSchedulerNavigatorLocalizationProvider()
+
 ````
 
 {{endregion}}

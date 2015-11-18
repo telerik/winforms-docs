@@ -30,11 +30,12 @@ We provide an easy way to take all time zones from the Windows. To do this, you 
 {{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=getAllZones}} 
 
 ````C#
-            List<SchedulerTimeZone> allTimeZones = SchedulerTimeZone.GetSchedulerTimeZones();
+List<SchedulerTimeZone> allTimeZones = SchedulerTimeZone.GetSchedulerTimeZones();
+
 ````
 ````VB.NET
-        Dim allTimeZones As List(Of SchedulerTimeZone) = SchedulerTimeZone.GetSchedulerTimeZones()
-        '
+Dim allTimeZones As List(Of SchedulerTimeZone) = SchedulerTimeZone.GetSchedulerTimeZones()
+
 ````
 
 {{endregion}} 
@@ -53,11 +54,12 @@ All appointments in RadScheduler are stored/loaded according to the value of the
 {{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=creatingAppointment}} 
 
 ````C#
-            this.radScheduler1.Appointments.Add(new Appointment(DateTime.Now.Date.AddHours(1), new TimeSpan(1, 0, 0)));
+this.radScheduler1.Appointments.Add(new Appointment(DateTime.Now.Date.AddHours(1), new TimeSpan(1, 0, 0)));
+
 ````
 ````VB.NET
-        Me.RadScheduler1.Appointments.Add(New Appointment(Date.Now.Date.AddHours(1), New TimeSpan(1, 0, 0)))
-        '
+Me.RadScheduler1.Appointments.Add(New Appointment(Date.Now.Date.AddHours(1), New TimeSpan(1, 0, 0)))
+
 ````
 
 {{endregion}} 
@@ -72,13 +74,14 @@ All appointments in RadScheduler are stored/loaded according to the value of the
 {{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=systemTimeZone}} 
 
 ````C#
-            SchedulerTimeZone utcTimeZone = new SchedulerTimeZone(0, "UTC");
-            this.radScheduler1.SystemTimeZone = utcTimeZone;
+SchedulerTimeZone utcTimeZone = new SchedulerTimeZone(0, "UTC");
+this.radScheduler1.SystemTimeZone = utcTimeZone;
+
 ````
 ````VB.NET
-        Dim utcTimeZone As New SchedulerTimeZone(0, "UTC")
-        Me.RadScheduler1.SystemTimeZone = utcTimeZone
-        '
+Dim utcTimeZone As New SchedulerTimeZone(0, "UTC")
+Me.RadScheduler1.SystemTimeZone = utcTimeZone
+
 ````
 
 {{endregion}} 
@@ -101,11 +104,12 @@ All RadScheduler views have the property DefaultTimeZone. The active view of the
 {{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=creatingAppointment}} 
 
 ````C#
-            this.radScheduler1.Appointments.Add(new Appointment(DateTime.Now.Date.AddHours(1), new TimeSpan(1, 0, 0)));
+this.radScheduler1.Appointments.Add(new Appointment(DateTime.Now.Date.AddHours(1), new TimeSpan(1, 0, 0)));
+
 ````
 ````VB.NET
-        Me.RadScheduler1.Appointments.Add(New Appointment(Date.Now.Date.AddHours(1), New TimeSpan(1, 0, 0)))
-        '
+Me.RadScheduler1.Appointments.Add(New Appointment(Date.Now.Date.AddHours(1), New TimeSpan(1, 0, 0)))
+
 ````
 
 {{endregion}} 
@@ -121,13 +125,14 @@ All RadScheduler views have the property DefaultTimeZone. The active view of the
 {{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=defaultTimeZone}} 
 
 ````C#
-            SchedulerTimeZone utcPlusOneTimeZone = new SchedulerTimeZone(-60, "UTC + 1");
-            this.radScheduler1.GetDayView().DefaultTimeZone = utcPlusOneTimeZone;
+SchedulerTimeZone utcPlusOneTimeZone = new SchedulerTimeZone(-60, "UTC + 1");
+this.radScheduler1.GetDayView().DefaultTimeZone = utcPlusOneTimeZone;
+
 ````
 ````VB.NET
-        Dim utcPlusOneTimeZone As New SchedulerTimeZone(-60, "UTC + 1")
-        Me.RadScheduler1.GetDayView().DefaultTimeZone = utcPlusOneTimeZone
-        '
+Dim utcPlusOneTimeZone As New SchedulerTimeZone(-60, "UTC + 1")
+Me.RadScheduler1.GetDayView().DefaultTimeZone = utcPlusOneTimeZone
+
 ````
 
 {{endregion}} 
@@ -156,12 +161,62 @@ The way to handle this situation is to choose one time zone as the system time z
 This functionality can be achieved by setting the SystemTimeZone of RadScheduler. Let's say that the default time zone is "(UTC) Dublin, Edinburgh, Lisbon, London". We can get the time zone from the Windows registry and set it as SystemTimeZone as shown below:
 
 {{source=..\SamplesCS\Scheduler\Views\TimesZones.cs region=london}} 
-{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=london}} 
+{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=london}}````C#
+SchedulerTimeZone london = GetSpecificTimeZone("London", "London");              
+this.radScheduler1.SystemTimeZone = london;
+
+````
+````VB.NET
+Dim london As SchedulerTimeZone = GetSpecificTimeZone("London", "London")
+Me.RadScheduler1.SystemTimeZone = london
+
+```` 
 
 {{endregion}} 
 
 {{source=..\SamplesCS\Scheduler\Views\TimesZones.cs region=insertingTimeZones}} 
-{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=insertingTimeZones}} 
+{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=insertingTimeZones}}````C#
+SchedulerTimeZone newYork = GetSpecificTimeZone("Eastern Time", "New York");
+if (!newYork.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
+{
+    radScheduler1.GetDayView().TimeZones.Insert(0, newYork);
+}
+SchedulerTimeZone tokyo = GetSpecificTimeZone("Tokyo", "Tokyo");
+if (!tokyo.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
+{
+    radScheduler1.GetDayView().TimeZones.Insert(0, tokyo);
+}
+SchedulerTimeZone paris = GetSpecificTimeZone("Paris", "Paris");
+if (!paris.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
+{
+    radScheduler1.GetDayView().TimeZones.Insert(0, paris);
+}
+SchedulerTimeZone london = GetSpecificTimeZone("London", "London");
+if (!london.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
+{
+    radScheduler1.GetDayView().TimeZones.Insert(0, london);
+}
+
+````
+````VB.NET
+Dim newYork As SchedulerTimeZone = GetSpecificTimeZone("Eastern Time", "New York")
+If Not newYork.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
+    RadScheduler1.GetDayView().TimeZones.Insert(0, newYork)
+End If
+Dim tokyo As SchedulerTimeZone = GetSpecificTimeZone("Tokyo", "Tokyo")
+If Not tokyo.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
+    RadScheduler1.GetDayView().TimeZones.Insert(0, tokyo)
+End If
+Dim paris As SchedulerTimeZone = GetSpecificTimeZone("Paris", "Paris")
+If Not paris.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
+    RadScheduler1.GetDayView().TimeZones.Insert(0, paris)
+End If
+Dim london As SchedulerTimeZone = GetSpecificTimeZone("London", "London")
+If Not london.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
+    RadScheduler1.GetDayView().TimeZones.Insert(0, london)
+End If
+
+```` 
 
 {{endregion}} 
 
@@ -171,51 +226,46 @@ Further, we may want to show the four most commonly used time zones - Tokyo, New
 {{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=insertingTimeZones}} 
 
 ````C#
-            SchedulerTimeZone newYork = GetSpecificTimeZone("Eastern Time", "New York");
-            if (!newYork.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
-            {
-                radScheduler1.GetDayView().TimeZones.Insert(0, newYork);
-            }
+SchedulerTimeZone newYork = GetSpecificTimeZone("Eastern Time", "New York");
+if (!newYork.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
+{
+    radScheduler1.GetDayView().TimeZones.Insert(0, newYork);
+}
+SchedulerTimeZone tokyo = GetSpecificTimeZone("Tokyo", "Tokyo");
+if (!tokyo.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
+{
+    radScheduler1.GetDayView().TimeZones.Insert(0, tokyo);
+}
+SchedulerTimeZone paris = GetSpecificTimeZone("Paris", "Paris");
+if (!paris.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
+{
+    radScheduler1.GetDayView().TimeZones.Insert(0, paris);
+}
+SchedulerTimeZone london = GetSpecificTimeZone("London", "London");
+if (!london.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
+{
+    radScheduler1.GetDayView().TimeZones.Insert(0, london);
+}
 
-            SchedulerTimeZone tokyo = GetSpecificTimeZone("Tokyo", "Tokyo");
-            if (!tokyo.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
-            {
-                radScheduler1.GetDayView().TimeZones.Insert(0, tokyo);
-            }
-
-            SchedulerTimeZone paris = GetSpecificTimeZone("Paris", "Paris");
-            if (!paris.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
-            {
-                radScheduler1.GetDayView().TimeZones.Insert(0, paris);
-            }
-
-            SchedulerTimeZone london = GetSpecificTimeZone("London", "London");
-            if (!london.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
-            {
-                radScheduler1.GetDayView().TimeZones.Insert(0, london);
-            }
 ````
 ````VB.NET
-        Dim newYork As SchedulerTimeZone = GetSpecificTimeZone("Eastern Time", "New York")
-        If Not newYork.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
-            RadScheduler1.GetDayView().TimeZones.Insert(0, newYork)
-        End If
+Dim newYork As SchedulerTimeZone = GetSpecificTimeZone("Eastern Time", "New York")
+If Not newYork.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
+    RadScheduler1.GetDayView().TimeZones.Insert(0, newYork)
+End If
+Dim tokyo As SchedulerTimeZone = GetSpecificTimeZone("Tokyo", "Tokyo")
+If Not tokyo.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
+    RadScheduler1.GetDayView().TimeZones.Insert(0, tokyo)
+End If
+Dim paris As SchedulerTimeZone = GetSpecificTimeZone("Paris", "Paris")
+If Not paris.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
+    RadScheduler1.GetDayView().TimeZones.Insert(0, paris)
+End If
+Dim london As SchedulerTimeZone = GetSpecificTimeZone("London", "London")
+If Not london.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
+    RadScheduler1.GetDayView().TimeZones.Insert(0, london)
+End If
 
-        Dim tokyo As SchedulerTimeZone = GetSpecificTimeZone("Tokyo", "Tokyo")
-        If Not tokyo.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
-            RadScheduler1.GetDayView().TimeZones.Insert(0, tokyo)
-        End If
-
-        Dim paris As SchedulerTimeZone = GetSpecificTimeZone("Paris", "Paris")
-        If Not paris.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
-            RadScheduler1.GetDayView().TimeZones.Insert(0, paris)
-        End If
-
-        Dim london As SchedulerTimeZone = GetSpecificTimeZone("London", "London")
-        If Not london.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
-            RadScheduler1.GetDayView().TimeZones.Insert(0, london)
-        End If
-        '
 ````
 
 {{endregion}} 
@@ -225,7 +275,14 @@ It is important to Insert the zones, because this will make your local time zone
 Finally, set the RulerWidth property to an appropriate value to show the entire labels:
 
 {{source=..\SamplesCS\Scheduler\Views\TimesZones.cs region=rulerWidth}} 
-{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=rulerWidth}} 
+{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=rulerWidth}}````C#
+this.radScheduler1.GetDayView().RulerWidth = 50;
+
+````
+````VB.NET
+Me.RadScheduler1.GetDayView().RulerWidth = 50
+
+```` 
 
 {{endregion}} 
 

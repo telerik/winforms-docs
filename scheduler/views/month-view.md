@@ -29,12 +29,20 @@ The Week View can be set it to be the default view which the user sees:
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=activeViewType}} 
 
 ````C#
+this.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Month;
 
-            this.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Month;
 ````
 ````VB.NET
-        Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Month
-        '
+Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Month
+'			#End Region
+'#Region getMonthView
+Dim monthView As SchedulerMonthView = Me.RadScheduler1.GetMonthView()
+'			#End Region
+'#Region activeView
+If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Month Then
+    Dim activeMonthView As SchedulerMonthView = CType(Me.RadScheduler1.ActiveView, SchedulerMonthView)
+End If
+
 ````
 
 {{endregion}} 
@@ -50,11 +58,17 @@ To get the instance to the SchedulerMonthView from the RadScheduler object:
 
 ````C#
             
-            SchedulerMonthView monthView = this.radScheduler1.GetMonthView();
+SchedulerMonthView monthView = this.radScheduler1.GetMonthView();
+
 ````
 ````VB.NET
-        Dim monthView As SchedulerMonthView = Me.RadScheduler1.GetMonthView()
-        '
+Dim monthView As SchedulerMonthView = Me.RadScheduler1.GetMonthView()
+'			#End Region
+'#Region activeView
+If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Month Then
+    Dim activeMonthView As SchedulerMonthView = CType(Me.RadScheduler1.ActiveView, SchedulerMonthView)
+End If
+
 ````
 
 {{endregion}} 
@@ -67,12 +81,15 @@ By default the weekends are shown, but you can hide them by using the __ShowWee
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=showWeekend}} 
 
 ````C#
+monthView.ShowWeekend = false;
 
-            monthView.ShowWeekend = false;
 ````
 ````VB.NET
-        monthView.ShowWeekend = False
-        '
+monthView.ShowWeekend = False
+'			#End Region
+'#Region weekCount
+monthView.WeekCount = 5
+
 ````
 
 {{endregion}} 
@@ -82,13 +99,14 @@ You can also specify which days to be considered weekends. The WorkWeekStart and
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=workWeek}} 
 
 ````C#
-            monthView.WorkWeekStart = DayOfWeek.Tuesday;
-            monthView.WorkWeekEnd = DayOfWeek.Thursday;
+monthView.WorkWeekStart = DayOfWeek.Tuesday;
+monthView.WorkWeekEnd = DayOfWeek.Thursday;
+
 ````
 ````VB.NET
-        monthView.WorkWeekStart = DayOfWeek.Tuesday
-        monthView.WorkWeekEnd = DayOfWeek.Thursday
-        '
+monthView.WorkWeekStart = DayOfWeek.Tuesday
+monthView.WorkWeekEnd = DayOfWeek.Thursday
+
 ````
 
 {{endregion}} 
@@ -102,14 +120,14 @@ The work days determine the start and end days for the work week. All days outsi
 
 ````C#
             
-            monthView.WorkWeekStart = DayOfWeek.Wednesday;
-            monthView.WorkWeekEnd = DayOfWeek.Saturday;
+monthView.WorkWeekStart = DayOfWeek.Wednesday;
+monthView.WorkWeekEnd = DayOfWeek.Saturday;
+
 ````
 ````VB.NET
-        monthView.WorkWeekStart = DayOfWeek.Wednesday
-        monthView.WorkWeekEnd = DayOfWeek.Saturday
+monthView.WorkWeekStart = DayOfWeek.Wednesday
+monthView.WorkWeekEnd = DayOfWeek.Saturday
 
-        '
 ````
 
 {{endregion}} 
@@ -125,11 +143,12 @@ By default the Month view shows 3 weeks at a time, but this can be changed by 
 
 ````C#
             
-            monthView.WeekCount = 5;
+monthView.WeekCount = 5;
+
 ````
 ````VB.NET
-        monthView.WeekCount = 5
-        '
+monthView.WeekCount = 5
+
 ````
 
 {{endregion}} 
@@ -142,11 +161,12 @@ By default the Month view shows 3 weeks at a time, but this can be changed by 
 
 ````C#
             
-            int weekDaysCount = monthView.WeekDaysCount;
+int weekDaysCount = monthView.WeekDaysCount;
+
 ````
 ````VB.NET
-        Dim weekDaysCount As Integer = monthView.WeekDaysCount
-        '
+Dim weekDaysCount As Integer = monthView.WeekDaysCount
+
 ````
 
 {{endregion}} 
@@ -160,11 +180,12 @@ It is possible to indicate whether the month view should always display exactly 
 
 ````C#
             
-            monthView.ShowFullMonth = true;
+monthView.ShowFullMonth = true;
+
 ````
 ````VB.NET
-        monthView.ShowFullMonth = True
-        '
+monthView.ShowFullMonth = True
+
 ````
 
 {{endregion}} 
@@ -179,11 +200,12 @@ It is possible to indicate whether the month view should always display exactly 
 
 ````C#
         
-            monthView.ShowVerticalNavigator = false;
+monthView.ShowVerticalNavigator = false;
+
 ````
 ````VB.NET
-        monthView.ShowVerticalNavigator = False
-        '
+monthView.ShowVerticalNavigator = False
+
 ````
 
 {{endregion}} 
@@ -194,16 +216,14 @@ It is possible to indicate whether the month view should always display exactly 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=verticalNavigatorRange}} 
 
 ````C#
+monthView.RangeStartDate = new DateTime(2014, 6, 10);
+monthView.RangeEndDate = new DateTime(2014, 7, 20);
 
-            monthView.RangeStartDate = new DateTime(2014, 6, 10);
-            monthView.RangeEndDate = new DateTime(2014, 7, 20);
 ````
 ````VB.NET
+monthView.RangeStartDate = New DateTime(2014, 6, 10)
+monthView.RangeEndDate = New DateTime(2014, 7, 20)
 
-        monthView.RangeStartDate = New DateTime(2014, 6, 10)
-        monthView.RangeEndDate = New DateTime(2014, 7, 20)
-
-        '
 ````
 
 {{endregion}} 
@@ -219,14 +239,14 @@ The week (row) headers display the date range presented by the respective row. B
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=showWeeksHeader}} 
 
 ````C#
+monthView.ShowWeeksHeader = true;
+monthView.EnableWeeksHeader = false;
 
-            monthView.ShowWeeksHeader = true;
-            monthView.EnableWeeksHeader = false;
 ````
 ````VB.NET
-        monthView.ShowWeeksHeader = True
-        monthView.EnableWeeksHeader = True
-        '
+monthView.ShowWeeksHeader = True
+monthView.EnableWeeksHeader = True
+
 ````
 
 {{endregion}} 
@@ -239,11 +259,12 @@ RadScheduler uses the [.NET Standard DateTime Format Strings](http://msdn.micros
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=headerFormat}} 
 
 ````C#
-            radScheduler1.HeaderFormat = "MMMM dd";
+radScheduler1.HeaderFormat = "MMMM dd";
+
 ````
 ````VB.NET
-        RadScheduler1.HeaderFormat = "MMMM dd"
-        '
+RadScheduler1.HeaderFormat = "MMMM dd"
+
 ````
 
 {{endregion}}
@@ -257,11 +278,12 @@ You can set the __ShowFullMonth__ property to force the __SchedulerMonthView__ t
 
 ````C#
             
-            monthView.ShowFullMonth = true;
+monthView.ShowFullMonth = true;
+
 ````
 ````VB.NET
-        monthView.ShowFullMonth = True
-        '
+monthView.ShowFullMonth = True
+
 ````
 
 {{endregion}} 
@@ -274,15 +296,16 @@ The vertical scrollbar in MonthView allows for quick navigation in large date ra
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=verticalScrolling}} 
 
 ````C#
-            monthView.ShowVerticalNavigator = true;
-            monthView.RangeStartDate = DateTime.Today.AddYears(-1);
-            monthView.RangeEndDate = DateTime.Today.AddYears(1);
+monthView.ShowVerticalNavigator = true;
+monthView.RangeStartDate = DateTime.Today.AddYears(-1);
+monthView.RangeEndDate = DateTime.Today.AddYears(1);
+
 ````
 ````VB.NET
-        monthView.ShowVerticalNavigator = True
-        monthView.RangeStartDate = DateTime.Today.AddYears(-1)
-        monthView.RangeEndDate = DateTime.Today.AddYears(1)
-        '
+monthView.ShowVerticalNavigator = True
+monthView.RangeStartDate = DateTime.Today.AddYears(-1)
+monthView.RangeEndDate = DateTime.Today.AddYears(1)
+
 ````
 
 {{endregion}} 
@@ -295,15 +318,16 @@ RadScheduler handles the overflown cells in month view in two ways. The first on
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=columnRowResize}} 
 
 ````C#
-            SchedulerMonthViewElement monthViewElement = (SchedulerMonthViewElement)this.radScheduler1.ViewElement;
-            monthViewElement.SetRowHeight(1, 2);
-            monthViewElement.SetColumnWidth(1, 2);
+SchedulerMonthViewElement monthViewElement = (SchedulerMonthViewElement)this.radScheduler1.ViewElement;
+monthViewElement.SetRowHeight(1, 2);
+monthViewElement.SetColumnWidth(1, 2);
+
 ````
 ````VB.NET
-        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
-        monthViewElement.SetRowHeight(1, 2)
-        monthViewElement.SetColumnWidth(1, 2)
-        '
+Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+monthViewElement.SetRowHeight(1, 2)
+monthViewElement.SetColumnWidth(1, 2)
+
 ````
 
 {{endregion}} 
@@ -318,15 +342,16 @@ The __SchedulerMonthViewElement__ allows you to specify different size for the d
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=columnRowResize}} 
 
 ````C#
-            SchedulerMonthViewElement monthViewElement = (SchedulerMonthViewElement)this.radScheduler1.ViewElement;
-            monthViewElement.SetRowHeight(1, 2);
-            monthViewElement.SetColumnWidth(1, 2);
+SchedulerMonthViewElement monthViewElement = (SchedulerMonthViewElement)this.radScheduler1.ViewElement;
+monthViewElement.SetRowHeight(1, 2);
+monthViewElement.SetColumnWidth(1, 2);
+
 ````
 ````VB.NET
-        Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
-        monthViewElement.SetRowHeight(1, 2)
-        monthViewElement.SetColumnWidth(1, 2)
-        '
+Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
+monthViewElement.SetRowHeight(1, 2)
+monthViewElement.SetColumnWidth(1, 2)
+
 ````
 
 {{endregion}} 
@@ -341,13 +366,14 @@ The month view of RadScheduler contains two headers – the horizontal __MonthVi
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=headerResize}} 
 
 ````C#
-            monthViewElement.VerticalHeader.HeaderWidth = 50;
-            monthViewElement.Header.HeaderHeight = 50;
+monthViewElement.VerticalHeader.HeaderWidth = 50;
+monthViewElement.Header.HeaderHeight = 50;
+
 ````
 ````VB.NET
-        monthViewElement.VerticalHeader.HeaderWidth = 50
-        monthViewElement.Header.HeaderHeight = 50
-        '
+monthViewElement.VerticalHeader.HeaderWidth = 50
+monthViewElement.Header.HeaderHeight = 50
+
 ````
 
 {{endregion}} 

@@ -24,23 +24,24 @@ MultidayView shows multiple date-time intervals with appointments arranged one 
 {{source=..\SamplesVB\Scheduler\Views\MultiDayView.vb region=multiDay}} 
 
 ````C#
-            this.radScheduler1.ActiveViewType = SchedulerViewType.MultiDay;
-            //or
-            SchedulerMultiDayView multiDayView = new SchedulerMultiDayView();
-            DateTime startDate = DateTime.Today;
-            multiDayView.Intervals.Add(startDate, 2);
-            multiDayView.Intervals.Add(startDate.AddDays(4), 3);
-            this.radScheduler1.ActiveView = multiDayView;
+this.radScheduler1.ActiveViewType = SchedulerViewType.MultiDay;
+//or
+SchedulerMultiDayView multiDayView = new SchedulerMultiDayView();
+DateTime startDate = DateTime.Today;
+multiDayView.Intervals.Add(startDate, 2);
+multiDayView.Intervals.Add(startDate.AddDays(4), 3);
+this.radScheduler1.ActiveView = multiDayView;
+
 ````
 ````VB.NET
-        Me.RadScheduler1.ActiveViewType = SchedulerViewType.MultiDay
-        'or
-        Dim multiDayView As New SchedulerMultiDayView()
-        Dim startDate As Date = Date.Today
-        multiDayView.Intervals.Add(startDate, 2)
-        multiDayView.Intervals.Add(startDate.AddDays(4), 3)
-        Me.RadScheduler1.ActiveView = multiDayView
-        '
+Me.RadScheduler1.ActiveViewType = SchedulerViewType.MultiDay
+'or
+Dim multiDayView As New SchedulerMultiDayView()
+Dim startDate As Date = Date.Today
+multiDayView.Intervals.Add(startDate, 2)
+multiDayView.Intervals.Add(startDate.AddDays(4), 3)
+Me.RadScheduler1.ActiveView = multiDayView
+
 ````
 
 {{endregion}} 
@@ -53,15 +54,16 @@ MultidayView shows multiple date-time intervals with appointments arranged one 
 {{source=..\SamplesVB\Scheduler\Views\MultiDayView.vb region=interval}} 
 
 ````C#
-            DateTimeInterval interval = new DateTimeInterval();
-            interval.Duration = new TimeSpan(20, 5, 25);
-            multiDayView.GetAppointmentsInInterval(interval);
+DateTimeInterval interval = new DateTimeInterval();
+interval.Duration = new TimeSpan(20, 5, 25);
+multiDayView.GetAppointmentsInInterval(interval);
+
 ````
 ````VB.NET
-        Dim interval As New DateTimeInterval()
-        interval.Duration = New TimeSpan(20, 5, 25)
-        multiDayView.GetAppointmentsInInterval(interval)
-        '
+Dim interval As New DateTimeInterval()
+interval.Duration = New TimeSpan(20, 5, 25)
+multiDayView.GetAppointmentsInInterval(interval)
+
 ````
 
 {{endregion}} 

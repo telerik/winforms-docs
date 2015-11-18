@@ -22,80 +22,79 @@ To associate a field with a different type then the scheduler type, for example,
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=backgroundCallback}} 
 
 ````C#
-        object ConvertBackgrounIdToScheduler(object obj)
+object ConvertBackgrounIdToScheduler(object obj)
+{
+    if (!(obj is DBNull))
+    {
+        string appointmentBackground = (string)obj;
+        switch (appointmentBackground)
         {
-            if (!(obj is DBNull))
-            {
-                string appointmentBackground = (string)obj;
-                switch (appointmentBackground)
-                {
-                    case "Business":
-                        return AppointmentBackground.Business;
-                    case "Important":
-                        return AppointmentBackground.Important;
-                    case "MustAttend":
-                        return AppointmentBackground.MustAttend;
-                    case "PhoneCall":
-                        return AppointmentBackground.PhoneCall;
-                    //TO DO other backgrounds
-                }
-            }
-            return AppointmentBackground.None;
+            case "Business":
+                return AppointmentBackground.Business;
+            case "Important":
+                return AppointmentBackground.Important;
+            case "MustAttend":
+                return AppointmentBackground.MustAttend;
+            case "PhoneCall":
+                return AppointmentBackground.PhoneCall;
+            //TO DO other backgrounds
         }
+    }
+    return AppointmentBackground.None;
+}
+object ConvertBackgrounIdToDataSource(object obj)
+{
+    AppointmentBackground appointmentBackground = (AppointmentBackground)obj;
+    switch (appointmentBackground)
+    {
+        case AppointmentBackground.Business:
+            return "Business";
+        case AppointmentBackground.Important:
+            return "Important";
+        case AppointmentBackground.MustAttend:
+            return "MustAttend";
+        case AppointmentBackground.PhoneCall:
+            return "PhoneCall";
+        //TO DO other backgrounds
+    }
+    return "None";
+}
 
-        object ConvertBackgrounIdToDataSource(object obj)
-        {
-            AppointmentBackground appointmentBackground = (AppointmentBackground)obj;
-            switch (appointmentBackground)
-            {
-                case AppointmentBackground.Business:
-                    return "Business";
-                case AppointmentBackground.Important:
-                    return "Important";
-                case AppointmentBackground.MustAttend:
-                    return "MustAttend";
-                case AppointmentBackground.PhoneCall:
-                    return "PhoneCall";
-                //TO DO other backgrounds
-            }
-            return "None";
-        }
 ````
 ````VB.NET
-    Private Function ConvertBackgrounIdToScheduler(ByVal obj As Object) As Object
-        If Not (TypeOf obj Is DBNull) Then
-            Dim appointmentBackground As String = CStr(obj)
-            Select Case appointmentBackground
-                Case "Business"
-                    Return Telerik.WinControls.UI.AppointmentBackground.Business
-                Case "Important"
-                    Return Telerik.WinControls.UI.AppointmentBackground.Important
-                Case "MustAttend"
-                    Return Telerik.WinControls.UI.AppointmentBackground.MustAttend
-                Case "PhoneCall"
-                    Return Telerik.WinControls.UI.AppointmentBackground.PhoneCall
-                    'TO DO other backgrounds
-            End Select
-        End If
-        Return AppointmentBackground.None
-    End Function
-
-    Private Function ConvertBackgrounIdToDataSource(ByVal obj As Object) As Object
-        Dim appointmentBackground As AppointmentBackground = CType(obj, AppointmentBackground)
+Private Function ConvertBackgrounIdToScheduler(ByVal obj As Object) As Object
+    If Not (TypeOf obj Is DBNull) Then
+        Dim appointmentBackground As String = CStr(obj)
         Select Case appointmentBackground
-            Case appointmentBackground.Business
-                Return "Business"
-            Case appointmentBackground.Important
-                Return "Important"
-            Case appointmentBackground.MustAttend
-                Return "MustAttend"
-            Case appointmentBackground.PhoneCall
-                Return "PhoneCall"
+            Case "Business"
+                Return Telerik.WinControls.UI.AppointmentBackground.Business
+            Case "Important"
+                Return Telerik.WinControls.UI.AppointmentBackground.Important
+            Case "MustAttend"
+                Return Telerik.WinControls.UI.AppointmentBackground.MustAttend
+            Case "PhoneCall"
+                Return Telerik.WinControls.UI.AppointmentBackground.PhoneCall
                 'TO DO other backgrounds
         End Select
-        Return "None"
-    End Function
-    '
+    End If
+    Return AppointmentBackground.None
+End Function
+Private Function ConvertBackgrounIdToDataSource(ByVal obj As Object) As Object
+    Dim appointmentBackground As AppointmentBackground = CType(obj, AppointmentBackground)
+    Select Case appointmentBackground
+        Case appointmentBackground.Business
+            Return "Business"
+        Case appointmentBackground.Important
+            Return "Important"
+        Case appointmentBackground.MustAttend
+            Return "MustAttend"
+        Case appointmentBackground.PhoneCall
+            Return "PhoneCall"
+            'TO DO other backgrounds
+    End Select
+    Return "None"
+End Function
+
 ````
 
 {{endregion}} 
@@ -106,15 +105,16 @@ To associate a field with a different type then the scheduler type, for example,
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=background}} 
 
 ````C#
-            SchedulerMapping backgroundIdSchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("BackgroundId");
-            backgroundIdSchedulerMapping.ConvertToScheduler = new ConvertCallback(this.ConvertBackgrounIdToScheduler);
-            backgroundIdSchedulerMapping.ConvertToDataSource = new ConvertCallback(this.ConvertBackgrounIdToDataSource);
+SchedulerMapping backgroundIdSchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("BackgroundId");
+backgroundIdSchedulerMapping.ConvertToScheduler = new ConvertCallback(this.ConvertBackgrounIdToScheduler);
+backgroundIdSchedulerMapping.ConvertToDataSource = new ConvertCallback(this.ConvertBackgrounIdToDataSource);
+
 ````
 ````VB.NET
-        Dim backgroundIdSchedulerMapping As SchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("BackgroundId")
-        backgroundIdSchedulerMapping.ConvertToScheduler = New ConvertCallback(AddressOf Me.ConvertBackgrounIdToScheduler)
-        backgroundIdSchedulerMapping.ConvertToDataSource = New ConvertCallback(AddressOf Me.ConvertBackgrounIdToDataSource)
-        '
+Dim backgroundIdSchedulerMapping As SchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("BackgroundId")
+backgroundIdSchedulerMapping.ConvertToScheduler = New ConvertCallback(AddressOf Me.ConvertBackgrounIdToScheduler)
+backgroundIdSchedulerMapping.ConvertToDataSource = New ConvertCallback(AddressOf Me.ConvertBackgrounIdToDataSource)
+
 ````
 
 {{endregion}} 
@@ -129,23 +129,24 @@ If the database has fields that can be Null then you need to add converters for 
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=locationCallback}} 
 
 ````C#
-        object ConvertLocationToScheduler(object obj)
-        {
-            if (obj is DBNull)
-            {
-                return null;
-            }
-            return obj;
-        }
+object ConvertLocationToScheduler(object obj)
+{
+    if (obj is DBNull)
+    {
+        return null;
+    }
+    return obj;
+}
+
 ````
 ````VB.NET
-    Private Function ConvertLocationToScheduler(ByVal obj As Object) As Object
-        If TypeOf obj Is DBNull Then
-            Return Nothing
-        End If
-        Return obj
-    End Function
-    '
+Private Function ConvertLocationToScheduler(ByVal obj As Object) As Object
+    If TypeOf obj Is DBNull Then
+        Return Nothing
+    End If
+    Return obj
+End Function
+
 ````
 
 {{endregion}} 
@@ -156,17 +157,18 @@ If the database has fields that can be Null then you need to add converters for 
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=location}} 
 
 ````C#
-            AppointmentMappingInfo appointmentMappingInfo = new AppointmentMappingInfo();
-            appointmentMappingInfo.Location = "Location";
-            SchedulerMapping locationSchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("Location");
-            locationSchedulerMapping.ConvertToScheduler = new ConvertCallback(this.ConvertLocationToScheduler);
+AppointmentMappingInfo appointmentMappingInfo = new AppointmentMappingInfo();
+appointmentMappingInfo.Location = "Location";
+SchedulerMapping locationSchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("Location");
+locationSchedulerMapping.ConvertToScheduler = new ConvertCallback(this.ConvertLocationToScheduler);
+
 ````
 ````VB.NET
-        Dim appointmentMappingInfo As New AppointmentMappingInfo()
-        appointmentMappingInfo.Location = "Location"
-        Dim locationSchedulerMapping As SchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("Location")
-        locationSchedulerMapping.ConvertToScheduler = New ConvertCallback(AddressOf Me.ConvertLocationToScheduler)
-        '
+Dim appointmentMappingInfo As New AppointmentMappingInfo()
+appointmentMappingInfo.Location = "Location"
+Dim locationSchedulerMapping As SchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("Location")
+locationSchedulerMapping.ConvertToScheduler = New ConvertCallback(AddressOf Me.ConvertLocationToScheduler)
+
 ````
 
 {{endregion}} 
@@ -183,38 +185,37 @@ If Id is read only in the data set, then the Scheduler will rely on the way the 
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=NullFieldsInTheDataBase}} 
 
 ````C#
-        object ConvertUniqueIdToScheduler(object obj)
-        {
-            return new EventId(obj);
-        }
+object ConvertUniqueIdToScheduler(object obj)
+{
+    return new EventId(obj);
+}
+object ConvertUniqueIdToDataSource(object obj)
+{
+    EventId eventId = obj as EventId;
+    //if the appointment is added from the scheduler the eventId.KeyValue is Guid
+    if (eventId.KeyValue is Guid)
+    {
+        //return the value that is in your object/dataset
+    }
+    //if the appointment is loaded from an object/dataset the eventId.KeyValue is its representation in the object/datase
+    return eventId.KeyValue;
+}
 
-        object ConvertUniqueIdToDataSource(object obj)
-        {
-            EventId eventId = obj as EventId;
-            //if the appointment is added from the scheduler the eventId.KeyValue is Guid
-            if (eventId.KeyValue is Guid)
-            {
-                //return the value that is in your object/dataset
-            }
-            //if the appointment is loaded from an object/dataset the eventId.KeyValue is its representation in the object/datase
-            return eventId.KeyValue;
-        }
 ````
 ````VB.NET
-    Private Function ConvertUniqueIdToScheduler(ByVal obj As Object) As Object
-        Return New EventId(obj)
-    End Function
+Private Function ConvertUniqueIdToScheduler(ByVal obj As Object) As Object
+    Return New EventId(obj)
+End Function
+Private Function ConvertUniqueIdToDataSource(ByVal obj As Object) As Object
+    Dim eventId As EventId = TryCast(obj, EventId)
+    'if the appointment is added from the scheduler the eventId.KeyValue is Guid
+    If TypeOf eventId.KeyValue Is Guid Then
+        'return the value that is in your object/dataset
+    End If
+    'if the appointment is loaded from an object/dataset the eventId.KeyValue is its representation in the object/datase
+    Return eventId.KeyValue
+End Function
 
-    Private Function ConvertUniqueIdToDataSource(ByVal obj As Object) As Object
-        Dim eventId As EventId = TryCast(obj, EventId)
-        'if the appointment is added from the scheduler the eventId.KeyValue is Guid
-        If TypeOf eventId.KeyValue Is Guid Then
-            'return the value that is in your object/dataset
-        End If
-        'if the appointment is loaded from an object/dataset the eventId.KeyValue is its representation in the object/datase
-        Return eventId.KeyValue
-    End Function
-    '
 ````
 
 {{endregion}} 
@@ -225,15 +226,16 @@ If Id is read only in the data set, then the Scheduler will rely on the way the 
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=ApplyUniqueId}} 
 
 ````C#
-            SchedulerMapping uniqueIdSchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("UniqueId");
-            uniqueIdSchedulerMapping.ConvertToScheduler = new ConvertCallback(this.ConvertUniqueIdToScheduler);
-            uniqueIdSchedulerMapping.ConvertToDataSource = new ConvertCallback(this.ConvertUniqueIdToDataSource);
+SchedulerMapping uniqueIdSchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("UniqueId");
+uniqueIdSchedulerMapping.ConvertToScheduler = new ConvertCallback(this.ConvertUniqueIdToScheduler);
+uniqueIdSchedulerMapping.ConvertToDataSource = new ConvertCallback(this.ConvertUniqueIdToDataSource);
+
 ````
 ````VB.NET
-        Dim uniqueIdSchedulerMapping As SchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("UniqueId")
-        uniqueIdSchedulerMapping.ConvertToScheduler = New ConvertCallback(AddressOf Me.ConvertUniqueIdToScheduler)
-        uniqueIdSchedulerMapping.ConvertToDataSource = New ConvertCallback(AddressOf Me.ConvertUniqueIdToDataSource)
-        '
+Dim uniqueIdSchedulerMapping As SchedulerMapping = appointmentMappingInfo.FindBySchedulerProperty("UniqueId")
+uniqueIdSchedulerMapping.ConvertToScheduler = New ConvertCallback(AddressOf Me.ConvertUniqueIdToScheduler)
+uniqueIdSchedulerMapping.ConvertToDataSource = New ConvertCallback(AddressOf Me.ConvertUniqueIdToDataSource)
+
 ````
 
 {{endregion}} 

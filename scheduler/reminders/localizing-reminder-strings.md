@@ -27,94 +27,93 @@ Below is a sample implementation of an English localization provider:
 {{source=..\SamplesVB\Scheduler\Reminders\EnglishReminderLocalizationProvider.vb region=englishLocalizationProvider}} 
 
 ````C#
-    public class EnglishReminderLocalizationProvider : RadReminderLocalizationProvider
+public class EnglishReminderLocalizationProvider : RadReminderLocalizationProvider
+{
+    public override string GetLocalizedString(string id) 
     {
-        public override string GetLocalizedString(string id) 
+        switch (id)
         {
-            switch (id)
-            {
-                case RadReminderStringId.AlarmFormButtonDismiss:
-                    return "Dismiss";
-                case RadReminderStringId.AlarmFormButtonDismissAll:
-                    return "Dismiss All";
-                case RadReminderStringId.AlarmFormButtonOpenItem:
-                    return "Open Item";
-                case RadReminderStringId.AlarmFormButtonSnooze:
-                    return "Snooze";
-                case RadReminderStringId.AlarmFormColumnDueIn:
-                    return "Due in";
-                case RadReminderStringId.AlarmFormColumnSubject:
-                    return "Subject";
-                case RadReminderStringId.AlarmFormLabelSnooze:
-                    return "Click Snooze to be reminded again in:";
-                case RadReminderStringId.AlarmFormReminder:
-                    return "Reminder";
-                case RadReminderStringId.AlarmFormReminders:
-                    return "Reminders";
-                case RadReminderStringId.AlarmFormSnoozeOneMinute:
-                    return "1 minute";
-                case RadReminderStringId.AlarmFormSnoozeFiveMinutes:
-                    return "5 minutes";
-                case RadReminderStringId.AlarmFormSnoozeTenMinutes:
-                    return "10 minutes";
-                case RadReminderStringId.AlarmFormSnoozeFifteenMinutes:
-                    return "15 minutes";
-                case RadReminderStringId.AlarmFormSnoozeThirtyMinutes:
-                    return "30 minutes";
-                case RadReminderStringId.AlarmFormSnoozeOneHour:
-                    return "1 hour";
-                case RadReminderStringId.AlarmFormSnoozeTwoHours:
-                    return "2 hours";
-                case RadReminderStringId.AlarmFormSnoozeFourHours:
-                    return "4 hours";
-                case RadReminderStringId.AlarmFormSnoozeEightHours:
-                    return "8 hours";
-                case RadReminderStringId.AlarmFormSnoozeHalfDay:
-                    return "0.5 days";
-                case RadReminderStringId.AlarmFormSnoozeOneDay:
-                    return "1 day";
-                case RadReminderStringId.AlarmFormSnoozeTwoDays:
-                    return "2 days";
-                case RadReminderStringId.AlarmFormSnoozeThreeDays:
-                    return "3 days";
-                case RadReminderStringId.AlarmFormSnoozeFourDays:
-                    return "4 days";
-                case RadReminderStringId.AlarmFormSnoozeOneWeek:
-                    return "1 week";
-                case RadReminderStringId.AlarmFormSnoozeTwoWeeks:
-                    return "2 weeks";
-                case RadReminderStringId.DueInMinute:
-                    return "minute";
-                case RadReminderStringId.DueInMinutes:
-                    return "minutes";
-                case RadReminderStringId.DueInHour:
-                    return "hour";
-                case RadReminderStringId.DueInHours:
-                    return "hours";
-                case RadReminderStringId.DueInDay:
-                    return "day";
-                case RadReminderStringId.DueInDays:
-                    return "days";
-                case RadReminderStringId.DueInWeek:
-                    return "week";
-                case RadReminderStringId.DueInWeeks:
-                    return "weeks";
-                case RadReminderStringId.DueInNow:
-                    return "now";    
-                case RadReminderStringId.DueInOverdue:
-                    return "{0} overdue";
-                case RadReminderStringId.AlarmFormSelectMoreRemindObjects:
-                    return " reminders are selected.";
-            }
-
-            return string.Empty;
+            case RadReminderStringId.AlarmFormButtonDismiss:
+                return "Dismiss";
+            case RadReminderStringId.AlarmFormButtonDismissAll:
+                return "Dismiss All";
+            case RadReminderStringId.AlarmFormButtonOpenItem:
+                return "Open Item";
+            case RadReminderStringId.AlarmFormButtonSnooze:
+                return "Snooze";
+            case RadReminderStringId.AlarmFormColumnDueIn:
+                return "Due in";
+            case RadReminderStringId.AlarmFormColumnSubject:
+                return "Subject";
+            case RadReminderStringId.AlarmFormLabelSnooze:
+                return "Click Snooze to be reminded again in:";
+            case RadReminderStringId.AlarmFormReminder:
+                return "Reminder";
+            case RadReminderStringId.AlarmFormReminders:
+                return "Reminders";
+            case RadReminderStringId.AlarmFormSnoozeOneMinute:
+                return "1 minute";
+            case RadReminderStringId.AlarmFormSnoozeFiveMinutes:
+                return "5 minutes";
+            case RadReminderStringId.AlarmFormSnoozeTenMinutes:
+                return "10 minutes";
+            case RadReminderStringId.AlarmFormSnoozeFifteenMinutes:
+                return "15 minutes";
+            case RadReminderStringId.AlarmFormSnoozeThirtyMinutes:
+                return "30 minutes";
+            case RadReminderStringId.AlarmFormSnoozeOneHour:
+                return "1 hour";
+            case RadReminderStringId.AlarmFormSnoozeTwoHours:
+                return "2 hours";
+            case RadReminderStringId.AlarmFormSnoozeFourHours:
+                return "4 hours";
+            case RadReminderStringId.AlarmFormSnoozeEightHours:
+                return "8 hours";
+            case RadReminderStringId.AlarmFormSnoozeHalfDay:
+                return "0.5 days";
+            case RadReminderStringId.AlarmFormSnoozeOneDay:
+                return "1 day";
+            case RadReminderStringId.AlarmFormSnoozeTwoDays:
+                return "2 days";
+            case RadReminderStringId.AlarmFormSnoozeThreeDays:
+                return "3 days";
+            case RadReminderStringId.AlarmFormSnoozeFourDays:
+                return "4 days";
+            case RadReminderStringId.AlarmFormSnoozeOneWeek:
+                return "1 week";
+            case RadReminderStringId.AlarmFormSnoozeTwoWeeks:
+                return "2 weeks";
+            case RadReminderStringId.DueInMinute:
+                return "minute";
+            case RadReminderStringId.DueInMinutes:
+                return "minutes";
+            case RadReminderStringId.DueInHour:
+                return "hour";
+            case RadReminderStringId.DueInHours:
+                return "hours";
+            case RadReminderStringId.DueInDay:
+                return "day";
+            case RadReminderStringId.DueInDays:
+                return "days";
+            case RadReminderStringId.DueInWeek:
+                return "week";
+            case RadReminderStringId.DueInWeeks:
+                return "weeks";
+            case RadReminderStringId.DueInNow:
+                return "now";    
+            case RadReminderStringId.DueInOverdue:
+                return "{0} overdue";
+            case RadReminderStringId.AlarmFormSelectMoreRemindObjects:
+                return " reminders are selected.";
         }
+        return string.Empty;
     }
+}
+
 ````
 ````VB.NET
 Public Class EnglishReminderLocalizationProvider
     Inherits RadReminderLocalizationProvider
-
     Public Overrides Function GetLocalizedString(ByVal id As String) As String
         Select Case id
             Case RadReminderStringId.AlarmFormButtonDismiss
@@ -191,7 +190,7 @@ Public Class EnglishReminderLocalizationProvider
         Return MyBase.GetLocalizedString(id)
     End Function
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -202,11 +201,12 @@ To apply the custom localization provider, instantiate and assign it to the cur
 {{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=usingReminderLocalization}} 
 
 ````C#
-            RadReminderLocalizationProvider.CurrentProvider = new EnglishReminderLocalizationProvider();
+RadReminderLocalizationProvider.CurrentProvider = new EnglishReminderLocalizationProvider();
+
 ````
 ````VB.NET
-        RadReminderLocalizationProvider.CurrentProvider = New EnglishReminderLocalizationProvider()
-        '
+RadReminderLocalizationProvider.CurrentProvider = New EnglishReminderLocalizationProvider()
+
 ````
 
 {{endregion}} 

@@ -22,11 +22,12 @@ RadScheduler allows you to export appointments in the industry-standard ICalenda
 {{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=iCalExport}} 
 
 ````C#
-            string exportResult = this.radScheduler1.Export(new SchedulerICalendarExporter());
+string exportResult = this.radScheduler1.Export(new SchedulerICalendarExporter());
+
 ````
 ````VB.NET
-        Dim exportResult As String = Me.RadScheduler1.Export(New SchedulerICalendarExporter)
-        '
+Dim exportResult As String = Me.RadScheduler1.Export(New SchedulerICalendarExporter)
+
 ````
 
 {{endregion}} 
@@ -37,16 +38,17 @@ Another override of the __Export__ method allows writing the appointment data to
 {{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=iCalEFile}} 
 
 ````C#
-            using (FileStream stream = File.Create("schedule.ics"))
-            {
-                this.radScheduler1.Export(stream, new SchedulerICalendarExporter());
-            }
+using (FileStream stream = File.Create("schedule.ics"))
+{
+    this.radScheduler1.Export(stream, new SchedulerICalendarExporter());
+}
+
 ````
 ````VB.NET
-        Using stream As FileStream = File.Create("schedule.ics")
-            Me.RadScheduler1.Export(stream, New SchedulerICalendarExporter)
-        End Using
-        '
+Using stream As FileStream = File.Create("schedule.ics")
+    Me.RadScheduler1.Export(stream, New SchedulerICalendarExporter)
+End Using
+
 ````
 
 {{endregion}}

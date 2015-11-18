@@ -28,17 +28,18 @@ Use one of many overloads to build a new Appointment instance. The example below
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=creatingAppointment}} 
 
 ````C#
-            Appointment appointment = new Appointment(DateTime.Now, TimeSpan.FromMinutes(30), "Summary", "Description");
-            appointment.StatusId = 2;
-            appointment.BackgroundId = 6;
-            this.radScheduler1.Appointments.Add(appointment);
+Appointment appointment = new Appointment(DateTime.Now, TimeSpan.FromMinutes(30), "Summary", "Description");
+appointment.StatusId = 2;
+appointment.BackgroundId = 6;
+this.radScheduler1.Appointments.Add(appointment);
+
 ````
 ````VB.NET
-        Dim appointment As New Appointment(Date.Now, TimeSpan.FromMinutes(30), "Summary", "Description")
-        appointment.StatusId = 2
-        appointment.BackgroundId = 6
-        Me.RadScheduler1.Appointments.Add(appointment)
-        '
+Dim appointment As New Appointment(Date.Now, TimeSpan.FromMinutes(30), "Summary", "Description")
+appointment.StatusId = 2
+appointment.BackgroundId = 6
+Me.RadScheduler1.Appointments.Add(appointment)
+
 ````
 
 {{endregion}} 
@@ -68,11 +69,12 @@ Use one of many overloads to build a new Appointment instance. The example below
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=addStatus}} 
 
 ````C#
-            this.radScheduler1.Statuses.Add(new AppointmentStatusInfo(5, "test", Color.Purple, Color.Purple, AppointmentStatusFillType.Solid));
+this.radScheduler1.Statuses.Add(new AppointmentStatusInfo(5, "test", Color.Purple, Color.Purple, AppointmentStatusFillType.Solid));
+
 ````
 ````VB.NET
-        Me.RadScheduler1.Statuses.Add(New AppointmentStatusInfo(5, "test", Color.Purple, Color.Purple, AppointmentStatusFillType.Solid))
-        '
+Me.RadScheduler1.Statuses.Add(New AppointmentStatusInfo(5, "test", Color.Purple, Color.Purple, AppointmentStatusFillType.Solid))
+
 ````
 
 {{endregion}} 
@@ -113,11 +115,12 @@ Use one of many overloads to build a new Appointment instance. The example below
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=addBackground}} 
 
 ````C#
-            this.radScheduler1.Backgrounds.Add(new AppointmentBackgroundInfo(12, "test", Color.Purple));
+this.radScheduler1.Backgrounds.Add(new AppointmentBackgroundInfo(12, "test", Color.Purple));
+
 ````
 ````VB.NET
-        Me.RadScheduler1.Backgrounds.Add(New AppointmentBackgroundInfo(12, "test", Color.Purple))
-        '
+Me.RadScheduler1.Backgrounds.Add(New AppointmentBackgroundInfo(12, "test", Color.Purple))
+
 ````
 
 {{endregion}} 
@@ -140,11 +143,12 @@ Use one of many overloads to build a new Appointment instance. The example below
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=appointmentFormat}} 
 
 ````C#
-            this.radScheduler1.AppointmentTitleFormat = "{0} to {1}, {2} ({3})";
+this.radScheduler1.AppointmentTitleFormat = "{0} to {1}, {2} ({3})";
+
 ````
 ````VB.NET
-        Me.RadScheduler1.AppointmentTitleFormat = "{0} to {1}, {2} ({3})"
-        '
+Me.RadScheduler1.AppointmentTitleFormat = "{0} to {1}, {2} ({3})"
+
 ````
 
 {{endregion}} 
@@ -177,11 +181,12 @@ Here is a list with the different elements and their content:
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=toolTipText}} 
 
 ````C#
-            appointment.ToolTipText = "Some text";
+appointment.ToolTipText = "Some text";
+
 ````
 ````VB.NET
-        appointment.ToolTipText = "Some text"
-        '
+appointment.ToolTipText = "Some text"
+
 ````
 
 {{endregion}}

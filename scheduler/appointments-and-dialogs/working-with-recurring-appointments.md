@@ -40,11 +40,12 @@ One of several constructor overloads lets you set the start time, duration and n
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=addingRecRule}} 
 
 ````C#
-            radScheduler1.Appointments[0].RecurrenceRule = new HourlyRecurrenceRule(DateTime.Now, 2, 10);
+radScheduler1.Appointments[0].RecurrenceRule = new HourlyRecurrenceRule(DateTime.Now, 2, 10);
+
 ````
 ````VB.NET
-        RadScheduler1.Appointments(0).RecurrenceRule = New HourlyRecurrenceRule(Date.Now, 2, 10)
-        '
+RadScheduler1.Appointments(0).RecurrenceRule = New HourlyRecurrenceRule(Date.Now, 2, 10)
+
 ````
 
 {{endregion}} 
@@ -55,32 +56,31 @@ The Appointment __Occurrences__ property lets you iterate a list of __IEvent__ i
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=iterating}} 
 
 ````C#
-            // iterate all appointment occurrances
-            foreach (IEvent ev in recurringAppointment.Occurrences)
-            {
-                //...
-            }
-            // iterate only occurrances after 10am
-            IEnumerable<IEvent> occurrencesAfter10AM = recurringAppointment.GetOccurrences(
-             new DateTime(2008, 10, 1, 10, 0, 0), DateTime.Now);
+// iterate all appointment occurrances
+foreach (IEvent ev in recurringAppointment.Occurrences)
+{
+    //...
+}
+// iterate only occurrances after 10am
+IEnumerable<IEvent> occurrencesAfter10AM = recurringAppointment.GetOccurrences(
+ new DateTime(2008, 10, 1, 10, 0, 0), DateTime.Now);
+foreach (IEvent ev in occurrencesAfter10AM)
+{
+    //...
+}
 
-            foreach (IEvent ev in occurrencesAfter10AM)
-            {
-                //...
-            }
 ````
 ````VB.NET
-        ' iterate all appointment occurrances
-        For Each ev As IEvent In recurringAppointment.Occurrences
-            '...
-        Next ev
-        ' iterate only occurrances after 10am
-        Dim occurrencesAfter10AM As IEnumerable(Of IEvent) = recurringAppointment.GetOccurrences(New Date(2008, 10, 1, 10, 0, 0), Date.Now)
+' iterate all appointment occurrances
+For Each ev As IEvent In recurringAppointment.Occurrences
+    '...
+Next ev
+' iterate only occurrances after 10am
+Dim occurrencesAfter10AM As IEnumerable(Of IEvent) = recurringAppointment.GetOccurrences(New Date(2008, 10, 1, 10, 0, 0), Date.Now)
+For Each ev As IEvent In occurrencesAfter10AM
+    '...
+Next ev
 
-        For Each ev As IEvent In occurrencesAfter10AM
-            '...
-        Next ev
-        '
 ````
 
 {{endregion}} 
@@ -91,15 +91,16 @@ When the user changes a specific occurrence and not the entire series, an "Excep
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=addingExceptions}} 
 
 ````C#
-            myEvent.BackgroundId = (int)AppointmentBackground.Important;
-            myEvent.StatusId = (int)AppointmentStatus.Tentative;
-            myEvent.MasterEvent.Exceptions.Add(myEvent);
+myEvent.BackgroundId = (int)AppointmentBackground.Important;
+myEvent.StatusId = (int)AppointmentStatus.Tentative;
+myEvent.MasterEvent.Exceptions.Add(myEvent);
+
 ````
 ````VB.NET
-        myEvent.BackgroundId = CInt(Fix(AppointmentBackground.Important))
-        myEvent.StatusId = CInt(Fix(AppointmentStatus.Tentative))
-        myEvent.MasterEvent.Exceptions.Add(myEvent)
-        '
+myEvent.BackgroundId = CInt(Fix(AppointmentBackground.Important))
+myEvent.StatusId = CInt(Fix(AppointmentStatus.Tentative))
+myEvent.MasterEvent.Exceptions.Add(myEvent)
+
 ````
 
 {{endregion}} 
@@ -112,53 +113,44 @@ Here is an example using the __HourlyRecurrenceRule__ class:
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=console}} 
 
 ````C#
-            // Create a sample appointment that starts at 10/1/2008 3:30 AM and lasts half an hour.
-            Appointment recurringAppointment = new Appointment(new DateTime(2008, 10, 1, 3, 30, 0),
-                  TimeSpan.FromHours(1.0), "Appointment Subject");
+// Create a sample appointment that starts at 10/1/2008 3:30 AM and lasts half an hour.
+Appointment recurringAppointment = new Appointment(new DateTime(2008, 10, 1, 3, 30, 0),
+      TimeSpan.FromHours(1.0), "Appointment Subject");
+// Create a recurrence rule to repeat the appointment every 2 hours for 10 occurrences.
+HourlyRecurrenceRule rrule = new HourlyRecurrenceRule(recurringAppointment.Start, 2, 10);
+//Assign the hourly recurrence rule to the appointment
+recurringAppointment.RecurrenceRule = rrule;
+Console.WriteLine("The appointment recurrs at the following times");
+foreach (IEvent ev in recurringAppointment.Occurrences)
+{
+    Console.WriteLine("\t{0}", ev);
+}
+IEnumerable<IEvent> occurrencesAfter10AM = recurringAppointment.GetOccurrences(
+      new DateTime(2008, 10, 1, 10, 0, 0), DateTime.Now);
+Console.WriteLine("And here are the occurrences after 10 AM:");
+foreach (IEvent ev in occurrencesAfter10AM)
+{
+    Console.WriteLine("\t{0}", ev);
+}
 
-            // Create a recurrence rule to repeat the appointment every 2 hours for 10 occurrences.
-            HourlyRecurrenceRule rrule = new HourlyRecurrenceRule(recurringAppointment.Start, 2, 10);
-
-            //Assign the hourly recurrence rule to the appointment
-            recurringAppointment.RecurrenceRule = rrule;
-
-            Console.WriteLine("The appointment recurrs at the following times");
-            foreach (IEvent ev in recurringAppointment.Occurrences)
-            {
-                Console.WriteLine("\t{0}", ev);
-            }
-
-            IEnumerable<IEvent> occurrencesAfter10AM = recurringAppointment.GetOccurrences(
-                  new DateTime(2008, 10, 1, 10, 0, 0), DateTime.Now);
-
-            Console.WriteLine("And here are the occurrences after 10 AM:");
-            foreach (IEvent ev in occurrencesAfter10AM)
-            {
-                Console.WriteLine("\t{0}", ev);
-            }
 ````
 ````VB.NET
-        ' Create a sample appointment that starts at 10/1/2008 3:30 AM and lasts half an hour.
-        Dim recurringAppointment As New Appointment(New Date(2008, 10, 1, 3, 30, 0), TimeSpan.FromHours(1.0), "Appointment Subject")
+' Create a sample appointment that starts at 10/1/2008 3:30 AM and lasts half an hour.
+Dim recurringAppointment As New Appointment(New Date(2008, 10, 1, 3, 30, 0), TimeSpan.FromHours(1.0), "Appointment Subject")
+' Create a recurrence rule to repeat the appointment every 2 hours for 10 occurrences.
+Dim rrule As New HourlyRecurrenceRule(recurringAppointment.Start, 2, 10)
+'Assign the hourly recurrence rule to the appointment
+recurringAppointment.RecurrenceRule = rrule
+Console.WriteLine("The appointment recurrs at the following times")
+For Each ev As IEvent In recurringAppointment.Occurrences
+    Console.WriteLine(vbTab & "{0}", ev)
+Next ev
+Dim occurrencesAfter10AM As IEnumerable(Of IEvent) = recurringAppointment.GetOccurrences(New Date(2008, 10, 1, 10, 0, 0), Date.Now)
+Console.WriteLine("And here are the occurrences after 10 AM:")
+For Each ev As IEvent In occurrencesAfter10AM
+    Console.WriteLine(vbTab & "{0}", ev)
+Next ev
 
-        ' Create a recurrence rule to repeat the appointment every 2 hours for 10 occurrences.
-        Dim rrule As New HourlyRecurrenceRule(recurringAppointment.Start, 2, 10)
-
-        'Assign the hourly recurrence rule to the appointment
-        recurringAppointment.RecurrenceRule = rrule
-
-        Console.WriteLine("The appointment recurrs at the following times")
-        For Each ev As IEvent In recurringAppointment.Occurrences
-            Console.WriteLine(vbTab & "{0}", ev)
-        Next ev
-
-        Dim occurrencesAfter10AM As IEnumerable(Of IEvent) = recurringAppointment.GetOccurrences(New Date(2008, 10, 1, 10, 0, 0), Date.Now)
-
-        Console.WriteLine("And here are the occurrences after 10 AM:")
-        For Each ev As IEvent In occurrencesAfter10AM
-            Console.WriteLine(vbTab & "{0}", ev)
-        Next ev
-        '
 ````
 
 {{endregion}} 

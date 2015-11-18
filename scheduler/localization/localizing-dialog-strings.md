@@ -18,26 +18,27 @@ __RadScheduler__ has a built-in LocalizationProvider. You can use it in order to
 {{source=..\SamplesVB\Scheduler\Localization\LocAppointmentEditForm.vb region=localizeDialog}} 
 
 ````C#
-    public class LocAppointmentEditForm : EditAppointmentDialog
+public class LocAppointmentEditForm : EditAppointmentDialog
+{
+    protected override void LocalizeDialog(RadSchedulerLocalizationProvider localizationProvider)
     {
-        protected override void LocalizeDialog(RadSchedulerLocalizationProvider localizationProvider)
-        {
-            this.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogTitle);
-            this.labelSubject.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogSubject);
-            this.labelLocation.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogLocation);
-            this.labelBackground.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogBackground);
-            this.labelStartTime.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogStartTime);
-            this.labelEndTime.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogEndTime);
-            this.chkAllDay.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogAllDay);
-            this.labelResource.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogResource);
-            this.labelStatus.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogStatus);
-            this.buttonOK.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogOK);
-            this.buttonCancel.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogCancel);
-            this.buttonDelete.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogDelete);
-            this.buttonRecurrence.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogRecurrence);
-            this.radLabelReminder.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.Reminder);
-        }
+        this.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogTitle);
+        this.labelSubject.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogSubject);
+        this.labelLocation.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogLocation);
+        this.labelBackground.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogBackground);
+        this.labelStartTime.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogStartTime);
+        this.labelEndTime.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogEndTime);
+        this.chkAllDay.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogAllDay);
+        this.labelResource.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogResource);
+        this.labelStatus.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogStatus);
+        this.buttonOK.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogOK);
+        this.buttonCancel.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogCancel);
+        this.buttonDelete.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogDelete);
+        this.buttonRecurrence.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.AppointmentDialogRecurrence);
+        this.radLabelReminder.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.Reminder);
     }
+}
+
 ````
 ````VB.NET
 Public Class LocAppointmentEditForm
@@ -59,7 +60,7 @@ Public Class LocAppointmentEditForm
         Me.radLabelReminder.Text = localizationProvider.GetLocalizedString(RadSchedulerStringId.Reminder)
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 

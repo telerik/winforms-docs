@@ -29,29 +29,26 @@ In order to incorporate __RadSchedulerReminder__ in your application, please fol
 {{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=creating}} 
 
 ````C#
-            RadSchedulerReminder schedulerReminder = new RadSchedulerReminder();
+RadSchedulerReminder schedulerReminder = new RadSchedulerReminder();
+
 ````
 ````VB.NET
-        Dim schedulerReminder As New RadSchedulerReminder()
-        '			#End Region
+Dim schedulerReminder As New RadSchedulerReminder()
+'			#End Region
+'			#Region "associatedScheduler"
+schedulerReminder.AssociatedScheduler = Me.RadScheduler1
+'			#End Region
+'			#Region "interval"
+schedulerReminder.StartReminderInterval = Date.Now
+schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
+'			#End Region
+'#region reminder
+Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
+Dim dtEnd As DateTime = dtStart.AddHours(1)
+Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
+Me.RadScheduler1.Appointments.Add(appointment)
+appointment.Reminder = New TimeSpan(10000)
 
-        '			#Region "associatedScheduler"
-        schedulerReminder.AssociatedScheduler = Me.RadScheduler1
-        '			#End Region
-
-        '			#Region "interval"
-        schedulerReminder.StartReminderInterval = Date.Now
-        schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
-        '			#End Region
-        '#region reminder
-
-        Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
-        Dim dtEnd As DateTime = dtStart.AddHours(1)
-        Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
-        Me.RadScheduler1.Appointments.Add(appointment)
-
-        appointment.Reminder = New TimeSpan(10000)
-        '
 ````
 
 {{endregion}} 
@@ -62,25 +59,23 @@ In order to incorporate __RadSchedulerReminder__ in your application, please fol
 {{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=associatedScheduler}} 
 
 ````C#
-            schedulerReminder.AssociatedScheduler = this.radScheduler1;
+schedulerReminder.AssociatedScheduler = this.radScheduler1;
+
 ````
 ````VB.NET
-        schedulerReminder.AssociatedScheduler = Me.RadScheduler1
-        '			#End Region
+schedulerReminder.AssociatedScheduler = Me.RadScheduler1
+'			#End Region
+'			#Region "interval"
+schedulerReminder.StartReminderInterval = Date.Now
+schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
+'			#End Region
+'#region reminder
+Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
+Dim dtEnd As DateTime = dtStart.AddHours(1)
+Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
+Me.RadScheduler1.Appointments.Add(appointment)
+appointment.Reminder = New TimeSpan(10000)
 
-        '			#Region "interval"
-        schedulerReminder.StartReminderInterval = Date.Now
-        schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
-        '			#End Region
-        '#region reminder
-
-        Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
-        Dim dtEnd As DateTime = dtStart.AddHours(1)
-        Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
-        Me.RadScheduler1.Appointments.Add(appointment)
-
-        appointment.Reminder = New TimeSpan(10000)
-        '
 ````
 
 {{endregion}} 
@@ -91,22 +86,21 @@ In order to incorporate __RadSchedulerReminder__ in your application, please fol
 {{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=interval}} 
 
 ````C#
-            schedulerReminder.StartReminderInterval = DateTime.Now;
-            schedulerReminder.EndReminderInterval = DateTime.Now.AddDays(1);
+schedulerReminder.StartReminderInterval = DateTime.Now;
+schedulerReminder.EndReminderInterval = DateTime.Now.AddDays(1);
+
 ````
 ````VB.NET
-        schedulerReminder.StartReminderInterval = Date.Now
-        schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
-        '			#End Region
-        '#region reminder
+schedulerReminder.StartReminderInterval = Date.Now
+schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
+'			#End Region
+'#region reminder
+Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
+Dim dtEnd As DateTime = dtStart.AddHours(1)
+Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
+Me.RadScheduler1.Appointments.Add(appointment)
+appointment.Reminder = New TimeSpan(10000)
 
-        Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
-        Dim dtEnd As DateTime = dtStart.AddHours(1)
-        Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
-        Me.RadScheduler1.Appointments.Add(appointment)
-
-        appointment.Reminder = New TimeSpan(10000)
-        '
 ````
 
 {{endregion}} 
@@ -117,23 +111,21 @@ In order to incorporate __RadSchedulerReminder__ in your application, please fol
 {{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=reminder}} 
 
 ````C#
-
-            DateTime dtStart = DateTime.Now.AddMinutes(1);
-            DateTime dtEnd = dtStart.AddHours(1);
-            Appointment appointment = new Appointment(dtStart, dtEnd, "Appointment description");
-            this.radScheduler1.Appointments.Add(appointment);
+DateTime dtStart = DateTime.Now.AddMinutes(1);
+DateTime dtEnd = dtStart.AddHours(1);
+Appointment appointment = new Appointment(dtStart, dtEnd, "Appointment description");
+this.radScheduler1.Appointments.Add(appointment);
             
-            appointment.Reminder = new TimeSpan(10000);
+appointment.Reminder = new TimeSpan(10000);
+
 ````
 ````VB.NET
+Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
+Dim dtEnd As DateTime = dtStart.AddHours(1)
+Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
+Me.RadScheduler1.Appointments.Add(appointment)
+appointment.Reminder = New TimeSpan(10000)
 
-        Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
-        Dim dtEnd As DateTime = dtStart.AddHours(1)
-        Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
-        Me.RadScheduler1.Appointments.Add(appointment)
-
-        appointment.Reminder = New TimeSpan(10000)
-        '
 ````
 
 {{endregion}} 

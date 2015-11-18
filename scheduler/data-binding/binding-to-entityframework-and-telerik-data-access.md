@@ -28,10 +28,22 @@ Now, you need to create a form and add a RadScheduler, in this tutorial it is na
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=DbContext}} 
 
 ````C#
-        private SchedulerDataEntities1 dbContext = new SchedulerDataEntities1();
+private SchedulerDataEntities1 dbContext = new SchedulerDataEntities1();
+
 ````
 ````VB.NET
-    Private dbContext As New SchedulerDataEntities1()
+Private dbContext As New SchedulerDataEntities1()
+ Region
+Public Sub New()
+    InitializeComponent()
+    Me.scheduler = New RadScheduler()
+    Me.scheduler.Parent = Me
+    Me.scheduler.Dock = DockStyle.Fill
+    '#Region "Mappings"
+    Dim schedulerBindingSource As New SchedulerBindingDataSource()
+    Dim appointmentMappingInfo As New AppointmentMappingInfo()
+    Dim resourceMappingInfo As New ResourceMappingInfo()
+
 ````
 
 {{endregion}} 
@@ -42,15 +54,16 @@ Then, we will need a __SchedulerBindingDataSource__, __AppointmentMappingInfo__ 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=Mappings}} 
 
 ````C#
-            SchedulerBindingDataSource schedulerBindingSource = new SchedulerBindingDataSource();
-            AppointmentMappingInfo appointmentMappingInfo = new AppointmentMappingInfo();
-            ResourceMappingInfo resourceMappingInfo = new ResourceMappingInfo();
+SchedulerBindingDataSource schedulerBindingSource = new SchedulerBindingDataSource();
+AppointmentMappingInfo appointmentMappingInfo = new AppointmentMappingInfo();
+ResourceMappingInfo resourceMappingInfo = new ResourceMappingInfo();
+
 ````
 ````VB.NET
-        Dim schedulerBindingSource As New SchedulerBindingDataSource()
-        Dim appointmentMappingInfo As New AppointmentMappingInfo()
-        Dim resourceMappingInfo As New ResourceMappingInfo()
-        '
+Dim schedulerBindingSource As New SchedulerBindingDataSource()
+Dim appointmentMappingInfo As New AppointmentMappingInfo()
+Dim resourceMappingInfo As New ResourceMappingInfo()
+
 ````
 
 {{endregion}} 
@@ -63,63 +76,52 @@ Below you can see the code you need to use with *Entity Framework*:
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=EFCode}} 
 
 ````C#
-            dbContext.Appointments.Load();
-            dbContext.Resources.Load();
+dbContext.Appointments.Load();
+dbContext.Resources.Load();
+appointmentMappingInfo.BackgroundId = "BackgroundID";
+appointmentMappingInfo.Description = "Description";
+appointmentMappingInfo.End = "End";
+appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments";
+appointmentMappingInfo.Location = "Location";
+appointmentMappingInfo.MasterEventId = "ParentID";
+appointmentMappingInfo.RecurrenceRule = "RecurrenceRule";
+appointmentMappingInfo.ResourceId = "ID";
+appointmentMappingInfo.Resources = "Resources";
+appointmentMappingInfo.Start = "Start";
+appointmentMappingInfo.StatusId = "StatusID";
+appointmentMappingInfo.Summary = "Summary";
+appointmentMappingInfo.Visible = "Visible";
+schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo;
+resourceMappingInfo.Id = "ID";
+resourceMappingInfo.Name = "ResourceName";
+schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo;
+schedulerBindingSource.ResourceProvider.DataSource = dbContext.Resources.Local.ToBindingList();
+schedulerBindingSource.EventProvider.DataSource = dbContext.Appointments.Local.ToBindingList();
 
-            appointmentMappingInfo.BackgroundId = "BackgroundID";
-            appointmentMappingInfo.Description = "Description";
-            appointmentMappingInfo.End = "End";
-            appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments";
-            appointmentMappingInfo.Location = "Location";
-            appointmentMappingInfo.MasterEventId = "ParentID";
-            appointmentMappingInfo.RecurrenceRule = "RecurrenceRule";
-            appointmentMappingInfo.ResourceId = "ID";
-
-            appointmentMappingInfo.Resources = "Resources";
-
-            appointmentMappingInfo.Start = "Start";
-            appointmentMappingInfo.StatusId = "StatusID";
-            appointmentMappingInfo.Summary = "Summary";
-            appointmentMappingInfo.Visible = "Visible";
-
-            schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo;
-
-            resourceMappingInfo.Id = "ID";
-            resourceMappingInfo.Name = "ResourceName";
-            schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo;
-
-            schedulerBindingSource.ResourceProvider.DataSource = dbContext.Resources.Local.ToBindingList();
-            schedulerBindingSource.EventProvider.DataSource = dbContext.Appointments.Local.ToBindingList();
 ````
 ````VB.NET
-        dbContext.Appointments.Load()
-        dbContext.Resources.Load()
+dbContext.Appointments.Load()
+dbContext.Resources.Load()
+appointmentMappingInfo.BackgroundId = "BackgroundID"
+appointmentMappingInfo.Description = "Description"
+appointmentMappingInfo.[End] = "End"
+appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments"
+appointmentMappingInfo.Location = "Location"
+appointmentMappingInfo.MasterEventId = "ParentID"
+appointmentMappingInfo.RecurrenceRule = "RecurrenceRule"
+appointmentMappingInfo.ResourceId = "ID"
+appointmentMappingInfo.Resources = "Resources"
+appointmentMappingInfo.Start = "Start"
+appointmentMappingInfo.StatusId = "StatusID"
+appointmentMappingInfo.Summary = "Summary"
+appointmentMappingInfo.Visible = "Visible"
+schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo
+resourceMappingInfo.Id = "ID"
+resourceMappingInfo.Name = "ResourceName"
+schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo
+schedulerBindingSource.ResourceProvider.DataSource = dbContext.Resources.Local.ToBindingList()
+schedulerBindingSource.EventProvider.DataSource = dbContext.Appointments.Local.ToBindingList()
 
-        appointmentMappingInfo.BackgroundId = "BackgroundID"
-        appointmentMappingInfo.Description = "Description"
-        appointmentMappingInfo.[End] = "End"
-        appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments"
-        appointmentMappingInfo.Location = "Location"
-        appointmentMappingInfo.MasterEventId = "ParentID"
-        appointmentMappingInfo.RecurrenceRule = "RecurrenceRule"
-        appointmentMappingInfo.ResourceId = "ID"
-
-        appointmentMappingInfo.Resources = "Resources"
-
-        appointmentMappingInfo.Start = "Start"
-        appointmentMappingInfo.StatusId = "StatusID"
-        appointmentMappingInfo.Summary = "Summary"
-        appointmentMappingInfo.Visible = "Visible"
-
-        schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo
-
-        resourceMappingInfo.Id = "ID"
-        resourceMappingInfo.Name = "ResourceName"
-        schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo
-
-        schedulerBindingSource.ResourceProvider.DataSource = dbContext.Resources.Local.ToBindingList()
-        schedulerBindingSource.EventProvider.DataSource = dbContext.Appointments.Local.ToBindingList()
-        '
 ````
 
 {{endregion}} 
@@ -133,53 +135,50 @@ And the following code needs to be used with *Telerik Data Access*:
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=TDACode}} 
 
 ````C#
-            appointmentMappingInfo.BackgroundId = "BackgroundID";
-            appointmentMappingInfo.Description = "Description";
-            appointmentMappingInfo.End = "End";
-            appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments";
-            appointmentMappingInfo.Location = "Location";
-            appointmentMappingInfo.MasterEventId = "ParentID";
-            appointmentMappingInfo.RecurrenceRule = "RecurrenceRule";
-            appointmentMappingInfo.ResourceId = "ResourceID";
-            appointmentMappingInfo.Resources = "AppointmentsResources";
-            appointmentMappingInfo.Start = "Start";
-            appointmentMappingInfo.StatusId = "StatusID";
-            appointmentMappingInfo.Summary = "Summary";
-            appointmentMappingInfo.Visible = "Visible";
+appointmentMappingInfo.BackgroundId = "BackgroundID";
+appointmentMappingInfo.Description = "Description";
+appointmentMappingInfo.End = "End";
+appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments";
+appointmentMappingInfo.Location = "Location";
+appointmentMappingInfo.MasterEventId = "ParentID";
+appointmentMappingInfo.RecurrenceRule = "RecurrenceRule";
+appointmentMappingInfo.ResourceId = "ResourceID";
+appointmentMappingInfo.Resources = "AppointmentsResources";
+appointmentMappingInfo.Start = "Start";
+appointmentMappingInfo.StatusId = "StatusID";
+appointmentMappingInfo.Summary = "Summary";
+appointmentMappingInfo.Visible = "Visible";
             
-            this.schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo1;
+this.schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo1;
             
-            resourceMappingInfo.Id = "ID";
-            resourceMappingInfo.Name = "ResourceName";
-            schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo1;
+resourceMappingInfo.Id = "ID";
+resourceMappingInfo.Name = "ResourceName";
+schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo1;
+schedulerBindingDataSource.ResourceProvider.DataSource = entityContext.Resources.ToList();
+schedulerBindingDataSource.EventProvider.DataSource = entityContext.Appointments.ToList();
 
-            schedulerBindingDataSource.ResourceProvider.DataSource = entityContext.Resources.ToList();
-            schedulerBindingDataSource.EventProvider.DataSource = entityContext.Appointments.ToList();
 ````
 ````VB.NET
-        appointmentMappingInfo.BackgroundId = "BackgroundID"
-        appointmentMappingInfo.Description = "Description"
-        appointmentMappingInfo.[End] = "End"
-        appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments"
-        appointmentMappingInfo.Location = "Location"
-        appointmentMappingInfo.MasterEventId = "ParentID"
-        appointmentMappingInfo.RecurrenceRule = "RecurrenceRule"
-        appointmentMappingInfo.ResourceId = "ResourceID"
-        appointmentMappingInfo.Resources = "AppointmentsResources"
-        appointmentMappingInfo.Start = "Start"
-        appointmentMappingInfo.StatusId = "StatusID"
-        appointmentMappingInfo.Summary = "Summary"
-        appointmentMappingInfo.Visible = "Visible"
+appointmentMappingInfo.BackgroundId = "BackgroundID"
+appointmentMappingInfo.Description = "Description"
+appointmentMappingInfo.[End] = "End"
+appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments"
+appointmentMappingInfo.Location = "Location"
+appointmentMappingInfo.MasterEventId = "ParentID"
+appointmentMappingInfo.RecurrenceRule = "RecurrenceRule"
+appointmentMappingInfo.ResourceId = "ResourceID"
+appointmentMappingInfo.Resources = "AppointmentsResources"
+appointmentMappingInfo.Start = "Start"
+appointmentMappingInfo.StatusId = "StatusID"
+appointmentMappingInfo.Summary = "Summary"
+appointmentMappingInfo.Visible = "Visible"
+Me.schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo1
+resourceMappingInfo.Id = "ID"
+resourceMappingInfo.Name = "ResourceName"
+schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo1
+schedulerBindingDataSource.ResourceProvider.DataSource = entityContext.Resources.ToList()
+schedulerBindingDataSource.EventProvider.DataSource = entityContext.Appointments.ToList()
 
-        Me.schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo1
-
-        resourceMappingInfo.Id = "ID"
-        resourceMappingInfo.Name = "ResourceName"
-        schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo1
-
-        schedulerBindingDataSource.ResourceProvider.DataSource = entityContext.Resources.ToList()
-        schedulerBindingDataSource.EventProvider.DataSource = entityContext.Appointments.ToList()
-        '
 ````
 
 {{endregion}} 
@@ -190,12 +189,13 @@ The last step that you need to take in order to complete the binding process is 
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=DataSourceAndGroup}} 
 
 ````C#
-            this.scheduler.DataSource = schedulerBindingSource;
-            this.scheduler.GroupType = GroupType.Resource;
+this.scheduler.DataSource = schedulerBindingSource;
+this.scheduler.GroupType = GroupType.Resource;
+
 ````
 ````VB.NET
-        Me.scheduler.DataSource = schedulerBindingSource
-        '
+Me.scheduler.DataSource = schedulerBindingSource
+
 ````
 
 {{endregion}} 
@@ -206,17 +206,19 @@ Saving changes to the database happens when the __SaveChanges__ method of the Db
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=Closing}} 
 
 ````C#
-        protected override void OnClosing(CancelEventArgs e)
-        {
-            this.dbContext.SaveChanges();
-            base.OnClosing(e);
-        }
+protected override void OnClosing(CancelEventArgs e)
+{
+    this.dbContext.SaveChanges();
+    base.OnClosing(e);
+}
+
 ````
 ````VB.NET
-    Protected Overrides Sub OnClosing(e As CancelEventArgs)
-        Me.dbContext.SaveChanges()
-        MyBase.OnClosing(e)
-    End Sub
+Protected Overrides Sub OnClosing(e As CancelEventArgs)
+    Me.dbContext.SaveChanges()
+    MyBase.OnClosing(e)
+End Sub
+
 ````
 
 {{endregion}} 

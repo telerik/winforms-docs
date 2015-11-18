@@ -57,21 +57,22 @@ The default behavior of the  __RadScheduler__ selection can be modified programm
 
 ````C#
         
-        public class CustomSchedulerSelectionBehavior : SchedulerSelectionBehavior
-        {
-            public CustomSchedulerSelectionBehavior(RadScheduler scheduler) : base(scheduler)
-            {
-            }
-        }
+public class CustomSchedulerSelectionBehavior : SchedulerSelectionBehavior
+{
+    public CustomSchedulerSelectionBehavior(RadScheduler scheduler) : base(scheduler)
+    {
+    }
+}
+
 ````
 ````VB.NET
+Public Class CustomSchedulerSelectionBehavior
+Inherits SchedulerSelectionBehavior
+    Public Sub New(scheduler As RadScheduler)
+        MyBase.New(scheduler)
+    End Sub
+End Class
 
-    Public Class CustomSchedulerSelectionBehavior
-    Inherits SchedulerSelectionBehavior
-        Public Sub New(scheduler As RadScheduler)
-            MyBase.New(scheduler)
-        End Sub
-    End Class
 ````
 
 {{endregion}} 
@@ -83,27 +84,27 @@ The default behavior of the  __RadScheduler__ selection can be modified programm
 
 ````C#
             
-            public override void SelectAppointment(IEvent appointment, bool extend)
-            {
-                SchedulerDayView dayView = this.Scheduler.GetDayView();
-                
-                if (dayView.IsWorkTime(appointment.Start))
-                {
-                    return;
-                }
-                base.SelectAppointment(appointment, extend);
-            }
+public override void SelectAppointment(IEvent appointment, bool extend)
+{
+    SchedulerDayView dayView = this.Scheduler.GetDayView();
+    
+    if (dayView.IsWorkTime(appointment.Start))
+    {
+        return;
+    }
+    base.SelectAppointment(appointment, extend);
+}
+
 ````
 ````VB.NET
+Public Overrides Sub SelectAppointment(appointment As IEvent, extend As Boolean)
+    Dim dayView As SchedulerDayView = Me.Scheduler.GetDayView()
+    If dayView.IsWorkTime(appointment.Start) Then
+        Return
+    End If
+    MyBase.SelectAppointment(appointment, extend)
+End Sub
 
-        Public Overrides Sub SelectAppointment(appointment As IEvent, extend As Boolean)
-            Dim dayView As SchedulerDayView = Me.Scheduler.GetDayView()
-
-            If dayView.IsWorkTime(appointment.Start) Then
-                Return
-            End If
-            MyBase.SelectAppointment(appointment, extend)
-        End Sub
 ````
 
 {{endregion}} 
@@ -115,13 +116,12 @@ The default behavior of the  __RadScheduler__ selection can be modified programm
 
 ````C#
             
-            this.radScheduler1.SelectionBehavior = new CustomSchedulerSelectionBehavior(this.radScheduler1);
+this.radScheduler1.SelectionBehavior = new CustomSchedulerSelectionBehavior(this.radScheduler1);
+
 ````
 ````VB.NET
+Me.RadScheduler1.SelectionBehavior = New CustomSchedulerSelectionBehavior(Me.RadScheduler1)
 
-        Me.RadScheduler1.SelectionBehavior = New CustomSchedulerSelectionBehavior(Me.RadScheduler1)
-
-        '
 ````
 
 {{endregion}} 

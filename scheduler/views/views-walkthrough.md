@@ -45,48 +45,49 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 {{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=addingValues}} 
 
 ````C#
-            foreach (SchedulerViewType viewType in Enum.GetValues(typeof(SchedulerViewType)))
-            {
-                RadListDataItem item = new RadListDataItem();
-                item.Text = viewType.ToString();
-                item.Value = viewType;
-                ddlActiveViewType.Items.Add(item);
-            }
-            foreach (ScaleRange range in Enum.GetValues(typeof(ScaleRange)))
-            {
-                RadListDataItem item = new RadListDataItem();
-                item.Text = range.ToString();
-                item.Value = range;
-                ddlRange.Items.Add(item);
-            }
-            for (int i = 1; i < 10; i++)
-            {
-                RadListDataItem item = new RadListDataItem();
-                item.Text = i.ToString();
-                item.Value = i;
-                ddlCount.Items.Add(item);
-            }
+foreach (SchedulerViewType viewType in Enum.GetValues(typeof(SchedulerViewType)))
+{
+    RadListDataItem item = new RadListDataItem();
+    item.Text = viewType.ToString();
+    item.Value = viewType;
+    ddlActiveViewType.Items.Add(item);
+}
+foreach (ScaleRange range in Enum.GetValues(typeof(ScaleRange)))
+{
+    RadListDataItem item = new RadListDataItem();
+    item.Text = range.ToString();
+    item.Value = range;
+    ddlRange.Items.Add(item);
+}
+for (int i = 1; i < 10; i++)
+{
+    RadListDataItem item = new RadListDataItem();
+    item.Text = i.ToString();
+    item.Value = i;
+    ddlCount.Items.Add(item);
+}
+
 ````
 ````VB.NET
-        For Each viewType As SchedulerViewType In System.Enum.GetValues(GetType(SchedulerViewType))
-            Dim item As New RadListDataItem()
-            item.Text = viewType.ToString()
-            item.Value = viewType
-            ddlActiveViewType.Items.Add(item)
-        Next viewType
-        For Each range As ScaleRange In System.Enum.GetValues(GetType(ScaleRange))
-            Dim item As New RadListDataItem()
-            item.Text = range.ToString()
-            item.Value = range
-            ddlRange.Items.Add(item)
-        Next range
-        For i As Integer = 1 To 9
-            Dim item As New RadListDataItem()
-            item.Text = i.ToString()
-            item.Value = i
-            ddlCount.Items.Add(item)
-        Next i
-        '
+For Each viewType As SchedulerViewType In System.Enum.GetValues(GetType(SchedulerViewType))
+    Dim item As New RadListDataItem()
+    item.Text = viewType.ToString()
+    item.Value = viewType
+    ddlActiveViewType.Items.Add(item)
+Next viewType
+For Each range As ScaleRange In System.Enum.GetValues(GetType(ScaleRange))
+    Dim item As New RadListDataItem()
+    item.Text = range.ToString()
+    item.Value = range
+    ddlRange.Items.Add(item)
+Next range
+For i As Integer = 1 To 9
+    Dim item As New RadListDataItem()
+    item.Text = i.ToString()
+    item.Value = i
+    ddlCount.Items.Add(item)
+Next i
+
 ````
 
 {{endregion}} 
@@ -97,18 +98,19 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 {{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=selectedIndexChanged}} 
 
 ````C#
-        void ddlActiveViewType_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
-        {
-            RadDropDownListElement dropDownList = sender as RadDropDownListElement;
-            radScheduler1.ActiveViewType = (SchedulerViewType)(dropDownList.SelectedValue);
-        }
+void ddlActiveViewType_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
+{
+    RadDropDownListElement dropDownList = sender as RadDropDownListElement;
+    radScheduler1.ActiveViewType = (SchedulerViewType)(dropDownList.SelectedValue);
+}
+
 ````
 ````VB.NET
-    Private Sub ddlActiveViewType_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-        Dim dropDownList As RadDropDownListElement = TryCast(sender, RadDropDownListElement)
-        RadScheduler1.ActiveViewType = CType(dropDownList.SelectedValue, SchedulerViewType)
-    End Sub
-    '
+Private Sub ddlActiveViewType_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
+    Dim dropDownList As RadDropDownListElement = TryCast(sender, RadDropDownListElement)
+    RadScheduler1.ActiveViewType = CType(dropDownList.SelectedValue, SchedulerViewType)
+End Sub
+
 ````
 
 {{endregion}} 
@@ -119,41 +121,42 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 {{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=rangeChanged}} 
 
 ````C#
-        void ddlRange_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
-        {
-            RadDropDownListElement dropDownList = sender as RadDropDownListElement;
-            ScaleRange range = (ScaleRange)(dropDownList.SelectedValue);
-            // set the appropriate range factor based on the type of view
-            switch (radScheduler1.ActiveViewType)
-            {
-                case SchedulerViewType.Day:
-                    (radScheduler1.ActiveView as SchedulerDayView).RangeFactor = range;
-                    break;
-                case SchedulerViewType.MultiDay:
-                    (radScheduler1.ActiveView as SchedulerMultiDayView).RangeFactor = range;
-                    break;
-                case SchedulerViewType.Week:
-                case SchedulerViewType.WorkWeek:
-                    (radScheduler1.ActiveView as SchedulerWeekView).RangeFactor = range;
-                    break;
-            }
-        }
+void ddlRange_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
+{
+    RadDropDownListElement dropDownList = sender as RadDropDownListElement;
+    ScaleRange range = (ScaleRange)(dropDownList.SelectedValue);
+    // set the appropriate range factor based on the type of view
+    switch (radScheduler1.ActiveViewType)
+    {
+        case SchedulerViewType.Day:
+            (radScheduler1.ActiveView as SchedulerDayView).RangeFactor = range;
+            break;
+        case SchedulerViewType.MultiDay:
+            (radScheduler1.ActiveView as SchedulerMultiDayView).RangeFactor = range;
+            break;
+        case SchedulerViewType.Week:
+        case SchedulerViewType.WorkWeek:
+            (radScheduler1.ActiveView as SchedulerWeekView).RangeFactor = range;
+            break;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub ddlRange_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-        Dim dropDownList As RadDropDownListElement = TryCast(sender, RadDropDownListElement)
-        Dim range As ScaleRange = CType(dropDownList.SelectedValue, ScaleRange)
-        ' set the appropriate range factor based on the type of view
-        Select Case RadScheduler1.ActiveViewType
-            Case SchedulerViewType.Day
-                TryCast(RadScheduler1.ActiveView, SchedulerDayView).RangeFactor = range
-            Case SchedulerViewType.MultiDay
-                TryCast(RadScheduler1.ActiveView, SchedulerMultiDayView).RangeFactor = range
-            Case SchedulerViewType.Week, SchedulerViewType.WorkWeek
-                TryCast(RadScheduler1.ActiveView, SchedulerWeekView).RangeFactor = range
-        End Select
-    End Sub
-    '
+Private Sub ddlRange_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
+    Dim dropDownList As RadDropDownListElement = TryCast(sender, RadDropDownListElement)
+    Dim range As ScaleRange = CType(dropDownList.SelectedValue, ScaleRange)
+    ' set the appropriate range factor based on the type of view
+    Select Case RadScheduler1.ActiveViewType
+        Case SchedulerViewType.Day
+            TryCast(RadScheduler1.ActiveView, SchedulerDayView).RangeFactor = range
+        Case SchedulerViewType.MultiDay
+            TryCast(RadScheduler1.ActiveView, SchedulerMultiDayView).RangeFactor = range
+        Case SchedulerViewType.Week, SchedulerViewType.WorkWeek
+            TryCast(RadScheduler1.ActiveView, SchedulerWeekView).RangeFactor = range
+    End Select
+End Sub
+
 ````
 
 {{endregion}} 
@@ -164,40 +167,41 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 {{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=countChanged}} 
 
 ````C#
-        void ddlCount_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
-        {
-            RadDropDownListElement dropDownList = sender as RadDropDownListElement;
-            int count = (int)dropDownList.SelectedValue;
-            // set the Day or WeekCount based on the current view
-            switch (radScheduler1.ActiveViewType)
-            {
-                case SchedulerViewType.Day:
-                    (radScheduler1.ActiveView as SchedulerDayView).DayCount = count;
-                    break;
-                case SchedulerViewType.MultiDay:
-                    (radScheduler1.ActiveView as SchedulerMultiDayView).DayCount = count;
-                    break;
-                case SchedulerViewType.Month:
-                    (radScheduler1.ActiveView as SchedulerMonthView).WeekCount = count;
-                    break;
-            }
-        }
+void ddlCount_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
+{
+    RadDropDownListElement dropDownList = sender as RadDropDownListElement;
+    int count = (int)dropDownList.SelectedValue;
+    // set the Day or WeekCount based on the current view
+    switch (radScheduler1.ActiveViewType)
+    {
+        case SchedulerViewType.Day:
+            (radScheduler1.ActiveView as SchedulerDayView).DayCount = count;
+            break;
+        case SchedulerViewType.MultiDay:
+            (radScheduler1.ActiveView as SchedulerMultiDayView).DayCount = count;
+            break;
+        case SchedulerViewType.Month:
+            (radScheduler1.ActiveView as SchedulerMonthView).WeekCount = count;
+            break;
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub ddlCount_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-        Dim dropDownList As RadDropDownListElement = TryCast(sender, RadDropDownListElement)
-        Dim count As Integer = CInt(Fix(dropDownList.SelectedValue))
-        ' set the Day or WeekCount based on the current view
-        Select Case RadScheduler1.ActiveViewType
-            Case SchedulerViewType.Day
-                TryCast(RadScheduler1.ActiveView, SchedulerDayView).DayCount = count
-            Case SchedulerViewType.MultiDay
-                TryCast(RadScheduler1.ActiveView, SchedulerMultiDayView).DayCount = count
-            Case SchedulerViewType.Month
-                TryCast(RadScheduler1.ActiveView, SchedulerMonthView).WeekCount = count
-        End Select
-    End Sub
-    '
+Private Sub ddlCount_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
+    Dim dropDownList As RadDropDownListElement = TryCast(sender, RadDropDownListElement)
+    Dim count As Integer = CInt(Fix(dropDownList.SelectedValue))
+    ' set the Day or WeekCount based on the current view
+    Select Case RadScheduler1.ActiveViewType
+        Case SchedulerViewType.Day
+            TryCast(RadScheduler1.ActiveView, SchedulerDayView).DayCount = count
+        Case SchedulerViewType.MultiDay
+            TryCast(RadScheduler1.ActiveView, SchedulerMultiDayView).DayCount = count
+        Case SchedulerViewType.Month
+            TryCast(RadScheduler1.ActiveView, SchedulerMonthView).WeekCount = count
+    End Select
+End Sub
+
 ````
 
 {{endregion}} 
@@ -208,17 +212,18 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 {{source=..\SamplesVB\Scheduler\Views\ViewsWalkthrough.vb region=activeViewChanging}} 
 
 ````C#
-        void radScheduler1_ActiveViewChanging(object sender, SchedulerViewChangingEventArgs e)
-        {
-            lblStatus.Text = String.Format("Old: {0} New: {1}",
-            e.OldView.ViewType.ToString(), e.NewView.ViewType.ToString());
-        }
+void radScheduler1_ActiveViewChanging(object sender, SchedulerViewChangingEventArgs e)
+{
+    lblStatus.Text = String.Format("Old: {0} New: {1}",
+    e.OldView.ViewType.ToString(), e.NewView.ViewType.ToString());
+}
+
 ````
 ````VB.NET
-    Private Sub radScheduler1_ActiveViewChanging(ByVal sender As Object, ByVal e As SchedulerViewChangingEventArgs)
-        lblStatus.Text = String.Format("Old: {0} New: {1}", e.OldView.ViewType.ToString(), e.NewView.ViewType.ToString())
-    End Sub
-    '
+Private Sub radScheduler1_ActiveViewChanging(ByVal sender As Object, ByVal e As SchedulerViewChangingEventArgs)
+    lblStatus.Text = String.Format("Old: {0} New: {1}", e.OldView.ViewType.ToString(), e.NewView.ViewType.ToString())
+End Sub
+
 ````
 
 {{endregion}} 

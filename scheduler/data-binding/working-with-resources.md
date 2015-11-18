@@ -35,26 +35,27 @@ To add resources to RadScheduler's Resource drop down (visible in the appointmen
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithResources.vb region=loadResources}} 
 
 ````C#
-        private void LoadResources()
-        {
-            string[] descriptions = { "Conference Room 112", "Conference Room 113", "Meeting Hall A2" };
-            int count = 1;
-            foreach (string description in descriptions)
-            {
-                this.radScheduler1.Resources.Add(new Resource(count++, description));
-            }
-        }
+private void LoadResources()
+{
+    string[] descriptions = { "Conference Room 112", "Conference Room 113", "Meeting Hall A2" };
+    int count = 1;
+    foreach (string description in descriptions)
+    {
+        this.radScheduler1.Resources.Add(new Resource(count++, description));
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub LoadResources()
-        Dim descriptions() As String = {"Conference Room 112", "Conference Room 113", "Meeting Hall A2"}
-        Dim count As Integer = 1
-        For Each description As String In descriptions
-            Me.RadScheduler1.Resources.Add(New Telerik.WinControls.UI.Resource(count, description))
-            count += 1
-        Next description
-    End Sub
-    '
+Private Sub LoadResources()
+    Dim descriptions() As String = {"Conference Room 112", "Conference Room 113", "Meeting Hall A2"}
+    Dim count As Integer = 1
+    For Each description As String In descriptions
+        Me.RadScheduler1.Resources.Add(New Telerik.WinControls.UI.Resource(count, description))
+        count += 1
+    Next description
+End Sub
+
 ````
 
 {{endregion}} 

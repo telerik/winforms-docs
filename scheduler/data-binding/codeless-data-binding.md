@@ -101,21 +101,22 @@ This tutorial will show you how to bind RadScheduler from the Visual Studio desi
 {{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=codelessDatabinding}} 
 
 ````C#
-            AppointmentsTableAdapter appointmentsAdapter = new AppointmentsTableAdapter();
-            appointmentsAdapter.Fill(this.schedulerDataDataSet.Appointments);
-            ResourcesTableAdapter resourcesAdapter = new ResourcesTableAdapter();
-            resourcesAdapter.Fill(this.schedulerDataDataSet.Resources);
-            AppointmentsResourcesTableAdapter appointmentsResourcesAdapter = new AppointmentsResourcesTableAdapter();
-            appointmentsResourcesAdapter.Fill(this.schedulerDataDataSet.AppointmentsResources);
+AppointmentsTableAdapter appointmentsAdapter = new AppointmentsTableAdapter();
+appointmentsAdapter.Fill(this.schedulerDataDataSet.Appointments);
+ResourcesTableAdapter resourcesAdapter = new ResourcesTableAdapter();
+resourcesAdapter.Fill(this.schedulerDataDataSet.Resources);
+AppointmentsResourcesTableAdapter appointmentsResourcesAdapter = new AppointmentsResourcesTableAdapter();
+appointmentsResourcesAdapter.Fill(this.schedulerDataDataSet.AppointmentsResources);
+
 ````
 ````VB.NET
-        Dim appointmentsAdapter As New AppointmentsTableAdapter()
-        appointmentsAdapter.Fill(Me.SchedulerDataDataSet.Appointments)
-        Dim resourcesAdapter As New ResourcesTableAdapter()
-        resourcesAdapter.Fill(Me.SchedulerDataDataSet.Resources)
-        Dim appointmentsResourcesAdapter As New AppointmentsResourcesTableAdapter()
-        appointmentsResourcesAdapter.Fill(Me.SchedulerDataDataSet.AppointmentsResources)
-        '
+Dim appointmentsAdapter As New AppointmentsTableAdapter()
+appointmentsAdapter.Fill(Me.SchedulerDataDataSet.Appointments)
+Dim resourcesAdapter As New ResourcesTableAdapter()
+resourcesAdapter.Fill(Me.SchedulerDataDataSet.Resources)
+Dim appointmentsResourcesAdapter As New AppointmentsResourcesTableAdapter()
+appointmentsResourcesAdapter.Fill(Me.SchedulerDataDataSet.AppointmentsResources)
+
 ````
 
 {{endregion}} 
@@ -126,11 +127,12 @@ This tutorial will show you how to bind RadScheduler from the Visual Studio desi
 {{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=Rebind}} 
 
 ````C#
-            schedulerBindingDataSource1.Rebind();
+schedulerBindingDataSource1.Rebind();
+
 ````
 ````VB.NET
-        SchedulerBindingDataSource1.Rebind()
-        '
+SchedulerBindingDataSource1.Rebind()
+
 ````
 
 {{endregion}} 
