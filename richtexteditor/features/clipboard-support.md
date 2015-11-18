@@ -24,17 +24,16 @@ __RadRichTextEditor's__ API exposes a method and a command for each of the three
 
 ````C#
             
-            this.radRichTextEditor1.Copy();
-            this.radRichTextEditor1.Cut();
-            this.radRichTextEditor1.Paste();
+this.radRichTextEditor1.Copy();
+this.radRichTextEditor1.Cut();
+this.radRichTextEditor1.Paste();
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.Copy()
+Me.radRichTextEditor1.Cut()
+Me.radRichTextEditor1.Paste()
 
-        Me.radRichTextEditor1.Copy()
-        Me.radRichTextEditor1.Cut()
-        Me.radRichTextEditor1.Paste()
-
-        '
 ````
 
 {{endregion}}
@@ -61,25 +60,21 @@ For instance, here is how you can clear the default clipboard handlers and add o
 
 ````C#
             
-            ClipboardEx.ClipboardHandlers.Clear();
-
-            ClipboardHandler clipboardHandler = new ClipboardHandler();
-            clipboardHandler.ClipboardDataFormat = DataFormats.Text;
-            clipboardHandler.DocumentFormatProvider = new TxtFormatProvider();
+ClipboardEx.ClipboardHandlers.Clear();
+ClipboardHandler clipboardHandler = new ClipboardHandler();
+clipboardHandler.ClipboardDataFormat = DataFormats.Text;
+clipboardHandler.DocumentFormatProvider = new TxtFormatProvider();
     
-            ClipboardEx.ClipboardHandlers.Add(clipboardHandler);
+ClipboardEx.ClipboardHandlers.Add(clipboardHandler);
+
 ````
 ````VB.NET
+ClipboardEx.ClipboardHandlers.Clear()
+Dim clipboardHandler As New ClipboardHandler()
+clipboardHandler.ClipboardDataFormat = DataFormats.Text
+clipboardHandler.DocumentFormatProvider = New TxtFormatProvider()
+ClipboardEx.ClipboardHandlers.Add(clipboardHandler)
 
-        ClipboardEx.ClipboardHandlers.Clear()
-
-        Dim clipboardHandler As New ClipboardHandler()
-        clipboardHandler.ClipboardDataFormat = DataFormats.Text
-        clipboardHandler.DocumentFormatProvider = New TxtFormatProvider()
-
-        ClipboardEx.ClipboardHandlers.Add(clipboardHandler)
-
-        '
 ````
 
 {{endregion}} 

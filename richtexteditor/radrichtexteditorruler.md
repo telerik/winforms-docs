@@ -39,29 +39,29 @@ You can add the control in code as well. The following snippet demonstrates how 
 {{source=..\SamplesVB\RichTextEditor\RadRichTextEditorRulerCode.vb region=ruler}} 
 
 ````C#
-        void RadRichTextEditorRuler_Load(object sender, EventArgs e)
-        {
-            RadRichTextEditor radRichTextEditor1 = new RadRichTextEditor();
-            radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged;
+void RadRichTextEditorRuler_Load(object sender, EventArgs e)
+{
+    RadRichTextEditor radRichTextEditor1 = new RadRichTextEditor();
+    radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged;
+    RadRichTextEditorRuler documentRuler1 = new Telerik.WinControls.UI.RadRichTextEditorRuler();
+    documentRuler1.AssociatedRichTextBox = radRichTextEditor1;
+    documentRuler1.Dock = System.Windows.Forms.DockStyle.Fill;
+    documentRuler1.Controls.Add(radRichTextEditor1);
+    this.Controls.Add(documentRuler1);
+}
 
-            RadRichTextEditorRuler documentRuler1 = new Telerik.WinControls.UI.RadRichTextEditorRuler();
-            documentRuler1.AssociatedRichTextBox = radRichTextEditor1;
-            documentRuler1.Dock = System.Windows.Forms.DockStyle.Fill;
-            documentRuler1.Controls.Add(radRichTextEditor1);
-            this.Controls.Add(documentRuler1);
-        }
 ````
 ````VB.NET
-    Private Sub RadRichTextEditorRuler_Load(ByVal sender As Object, ByVal e As EventArgs)
-        Dim radRichTextEditor1 As New RadRichTextEditor()
-        radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged
+Private Sub RadRichTextEditorRuler_Load(ByVal sender As Object, ByVal e As EventArgs)
+    Dim radRichTextEditor1 As New RadRichTextEditor()
+    radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged
+    Dim documentRuler1 As RadRichTextEditorRuler = New Telerik.WinControls.UI.RadRichTextEditorRuler()
+    documentRuler1.AssociatedRichTextBox = radRichTextEditor1
+    documentRuler1.Dock = System.Windows.Forms.DockStyle.Fill
+    documentRuler1.Controls.Add(radRichTextEditor1)
+    Me.Controls.Add(documentRuler1)
+End Sub
 
-        Dim documentRuler1 As RadRichTextEditorRuler = New Telerik.WinControls.UI.RadRichTextEditorRuler()
-        documentRuler1.AssociatedRichTextBox = radRichTextEditor1
-        documentRuler1.Dock = System.Windows.Forms.DockStyle.Fill
-        documentRuler1.Controls.Add(radRichTextEditor1)
-        Me.Controls.Add(documentRuler1)
-    End Sub
 ````
 
 {{endregion}} 

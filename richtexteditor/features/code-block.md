@@ -47,23 +47,21 @@ Additionally, you can enable the display of line numbers and the alternating lin
 
 ````C#
             
-            string code = "this.IsCodeBlock = true;\nthis.IsCodeBlock = false;\nthis.IsCodeBlock = true;";
-            CodeFormattingSettings formattingSettings = new CodeFormattingSettings(CodeLanguages.CSharp);
-            formattingSettings.IsLineNumberingEnabled = true;
-            formattingSettings.IsAlternatingLinesEnabled = true;
+string code = "this.IsCodeBlock = true;\nthis.IsCodeBlock = false;\nthis.IsCodeBlock = true;";
+CodeFormattingSettings formattingSettings = new CodeFormattingSettings(CodeLanguages.CSharp);
+formattingSettings.IsLineNumberingEnabled = true;
+formattingSettings.IsAlternatingLinesEnabled = true;
             
-            this.radRichTextEditor1.InsertCodeBlock(code, formattingSettings);
+this.radRichTextEditor1.InsertCodeBlock(code, formattingSettings);
+
 ````
 ````VB.NET
+Dim code As String = "this.IsCodeBlock = true;" & ControlChars.Lf & "this.IsCodeBlock = false;" & ControlChars.Lf & "this.IsCodeBlock = true;"
+Dim formattingSettings As New CodeFormattingSettings(CodeLanguages.CSharp)
+formattingSettings.IsLineNumberingEnabled = True
+formattingSettings.IsAlternatingLinesEnabled = True
+Me.radRichTextEditor1.InsertCodeBlock(code, formattingSettings)
 
-        Dim code As String = "this.IsCodeBlock = true;" & ControlChars.Lf & "this.IsCodeBlock = false;" & ControlChars.Lf & "this.IsCodeBlock = true;"
-        Dim formattingSettings As New CodeFormattingSettings(CodeLanguages.CSharp)
-        formattingSettings.IsLineNumberingEnabled = True
-        formattingSettings.IsAlternatingLinesEnabled = True
-
-        Me.radRichTextEditor1.InsertCodeBlock(code, formattingSettings)
-
-        '
 ````
 
 {{endregion}} 
@@ -81,15 +79,14 @@ To remove the code block you can use the __DeleteCodeBlock()__ method of __RadRi
 
 ````C#
             
-            IEnumerable<CodeAnnotationRangeStart> markers = this.radRichTextEditor1.Document.GetAnnotationMarkersOfType<CodeAnnotationRangeStart>();
-            this.radRichTextEditor1.DeleteCodeBlock(markers.First());
+IEnumerable<CodeAnnotationRangeStart> markers = this.radRichTextEditor1.Document.GetAnnotationMarkersOfType<CodeAnnotationRangeStart>();
+this.radRichTextEditor1.DeleteCodeBlock(markers.First());
+
 ````
 ````VB.NET
+Dim markers As IEnumerable(Of CodeAnnotationRangeStart) = Me.radRichTextEditor1.Document.GetAnnotationMarkersOfType(Of CodeAnnotationRangeStart)()
+Me.radRichTextEditor1.DeleteCodeBlock(markers.First())
 
-        Dim markers As IEnumerable(Of CodeAnnotationRangeStart) = Me.radRichTextEditor1.Document.GetAnnotationMarkersOfType(Of CodeAnnotationRangeStart)()
-        Me.radRichTextEditor1.DeleteCodeBlock(markers.First())
-
-        '
 ````
 
 {{endregion}} 
@@ -114,23 +111,20 @@ You can also register or change which style will be used for which classificatio
 
 ````C#
             
-            StyleDefinition commentJS = new StyleDefinition("CommentJS", StyleType.Character);
-            commentJS.SpanProperties.ForeColor = Colors.Gray;
-            commentJS.IsCustom = false;
-            commentJS.IsPrimary = false;
+StyleDefinition commentJS = new StyleDefinition("CommentJS", StyleType.Character);
+commentJS.SpanProperties.ForeColor = Colors.Gray;
+commentJS.IsCustom = false;
+commentJS.IsPrimary = false;
+this.radRichTextEditor1.Document.CodeFormatter.RegisterClassificationType(ClassificationTypes.Comment, CodeLanguages.JavaScript, commentJS);
 
-            this.radRichTextEditor1.Document.CodeFormatter.RegisterClassificationType(ClassificationTypes.Comment, CodeLanguages.JavaScript, commentJS);
 ````
 ````VB.NET
+Dim commentJS As New StyleDefinition("CommentJS", StyleType.Character)
+commentJS.SpanProperties.ForeColor = Colors.Gray
+commentJS.IsCustom = False
+commentJS.IsPrimary = False
+Me.radRichTextEditor1.Document.CodeFormatter.RegisterClassificationType(ClassificationTypes.Comment, CodeLanguages.JavaScript, commentJS)
 
-        Dim commentJS As New StyleDefinition("CommentJS", StyleType.Character)
-        commentJS.SpanProperties.ForeColor = Colors.Gray
-        commentJS.IsCustom = False
-        commentJS.IsPrimary = False
-
-        Me.radRichTextEditor1.Document.CodeFormatter.RegisterClassificationType(ClassificationTypes.Comment, CodeLanguages.JavaScript, commentJS)
-
-        '
 ````
 
 {{endregion}} 

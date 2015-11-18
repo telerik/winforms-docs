@@ -35,13 +35,12 @@ When a __RadDocument__ instance was for some reason created from code – built 
 
 ````C#
             
-            RadDocumentEditor documentEditor = new RadDocumentEditor(this.radRichTextEditor1.Document);
+RadDocumentEditor documentEditor = new RadDocumentEditor(this.radRichTextEditor1.Document);
+
 ````
 ````VB.NET
+Dim documentEditor As New RadDocumentEditor(Me.radRichTextEditor1.Document)
 
-        Dim documentEditor As New RadDocumentEditor(Me.radRichTextEditor1.Document)
-
-        '
 ````
 
 {{endregion}} 
@@ -53,33 +52,29 @@ The newly created *documentEditor* instance now provides all capabilities that a
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentEditorCode.vb region=insert}} 
 
 ````C#
-                
-            documentEditor.BeginUndoGroup();
-                
-            if (documentEditor.Document.CaretPosition.IsPositionInsideTable)
-            {
-                documentEditor.InsertTableRow();
-                documentEditor.InsertTableRow();
-                documentEditor.InsertTableRow();
-                documentEditor.Document.Selection.Clear();
-            }
+    
+documentEditor.BeginUndoGroup();
+    
+if (documentEditor.Document.CaretPosition.IsPositionInsideTable)
+{
+    documentEditor.InsertTableRow();
+    documentEditor.InsertTableRow();
+    documentEditor.InsertTableRow();
+    documentEditor.Document.Selection.Clear();
+}
+documentEditor.EndUndoGroup("Insert three table rows");
 
-            documentEditor.EndUndoGroup("Insert three table rows");
 ````
 ````VB.NET
+documentEditor.BeginUndoGroup()
+If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
+    documentEditor.InsertTableRow()
+    documentEditor.InsertTableRow()
+    documentEditor.InsertTableRow()
+    documentEditor.Document.Selection.Clear()
+End If
+documentEditor.EndUndoGroup("Insert three table rows")
 
-        documentEditor.BeginUndoGroup()
-
-        If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
-            documentEditor.InsertTableRow()
-            documentEditor.InsertTableRow()
-            documentEditor.InsertTableRow()
-            documentEditor.Document.Selection.Clear()
-        End If
-
-        documentEditor.EndUndoGroup("Insert three table rows")
-
-        '
 ````
 
 {{endregion}} 
@@ -91,33 +86,28 @@ You can also cancel the execution of the undo group, and it won't be recorded in
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentEditorCode.vb region=cancel}} 
 
 ````C#
-                
-            documentEditor.BeginUndoGroup();
+    
+documentEditor.BeginUndoGroup();
+if (documentEditor.Document.CaretPosition.IsPositionInsideTable)
+{
+    documentEditor.InsertTableRow();
+    documentEditor.InsertTableRow();
+    documentEditor.InsertTableRow();
+    documentEditor.Document.Selection.Clear();
+}
+documentEditor.CancelUndoGroup();
 
-            if (documentEditor.Document.CaretPosition.IsPositionInsideTable)
-            {
-                documentEditor.InsertTableRow();
-                documentEditor.InsertTableRow();
-                documentEditor.InsertTableRow();
-                documentEditor.Document.Selection.Clear();
-            }
-
-            documentEditor.CancelUndoGroup();
 ````
 ````VB.NET
+documentEditor.BeginUndoGroup()
+If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
+    documentEditor.InsertTableRow()
+    documentEditor.InsertTableRow()
+    documentEditor.InsertTableRow()
+    documentEditor.Document.Selection.Clear()
+End If
+documentEditor.CancelUndoGroup()
 
-        documentEditor.BeginUndoGroup()
-
-        If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
-            documentEditor.InsertTableRow()
-            documentEditor.InsertTableRow()
-            documentEditor.InsertTableRow()
-            documentEditor.Document.Selection.Clear()
-        End If
-
-        documentEditor.CancelUndoGroup()
-
-        '
 ````
 
 {{endregion}} 

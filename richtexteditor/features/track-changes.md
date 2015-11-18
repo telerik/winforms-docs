@@ -31,14 +31,12 @@ You can activate change tracking through the __IsTrackChangesEnabled__ property 
 {{source=..\SamplesVB\RichTextEditor\Features\TrackChanges.vb region=enable}} 
 
 ````C#
+this.radRichTextEditor1.IsTrackChangesEnabled = true;
 
-            this.radRichTextEditor1.IsTrackChangesEnabled = true;
 ````
 ````VB.NET
+Me.radRichTextEditor1.IsTrackChangesEnabled = True
 
-        Me.radRichTextEditor1.IsTrackChangesEnabled = True
-
-        '
 ````
 
 {{endregion}} 
@@ -61,22 +59,20 @@ As you can see tracked changes are visualized inside the rich text box with diff
 {{source=..\SamplesVB\RichTextEditor\Features\TrackChanges.vb region=options}} 
 
 ````C#
+this.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Insert.Decoration = RevisionDecoration.ColorOnly;
+this.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Insert.ColorOptions = new RevisionColor(Color.Green);
+this.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Delete.Decoration = RevisionDecoration.Underline;
+this.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Delete.ColorOptions = new RevisionColor(Color.Orange);
+this.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.ChangedLinesDecorationColorOptions.ColorOptions = new RevisionColor(Color.Red);
 
-            this.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Insert.Decoration = RevisionDecoration.ColorOnly;
-            this.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Insert.ColorOptions = new RevisionColor(Color.Green);
-            this.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Delete.Decoration = RevisionDecoration.Underline;
-            this.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Delete.ColorOptions = new RevisionColor(Color.Orange);
-            this.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.ChangedLinesDecorationColorOptions.ColorOptions = new RevisionColor(Color.Red);
 ````
 ````VB.NET
+Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Insert.Decoration = RevisionDecoration.ColorOnly
+Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Insert.ColorOptions = New RevisionColor(Color.Green)
+Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Delete.Decoration = RevisionDecoration.Underline
+Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Delete.ColorOptions = New RevisionColor(Color.Orange)
+Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.ChangedLinesDecorationColorOptions.ColorOptions = New RevisionColor(Color.Red)
 
-        Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Insert.Decoration = RevisionDecoration.ColorOnly
-        Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Insert.ColorOptions = New RevisionColor(Color.Green)
-        Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Delete.Decoration = RevisionDecoration.Underline
-        Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.Delete.ColorOptions = New RevisionColor(Color.Orange)
-        Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.ChangedLinesDecorationColorOptions.ColorOptions = New RevisionColor(Color.Red)
-
-        '
 ````
 
 {{endregion}} 
@@ -94,14 +90,12 @@ All changes made while track changes are enabled are made on behalf of the curre
 {{source=..\SamplesVB\RichTextEditor\Features\TrackChanges.vb region=user}} 
 
 ````C#
+this.radRichTextEditor1.CurrentUser = new UserInfo("Group", "Boby", "Boby", "bobby@telerik.com");
 
-            this.radRichTextEditor1.CurrentUser = new UserInfo("Group", "Boby", "Boby", "bobby@telerik.com");
 ````
 ````VB.NET
+Me.radRichTextEditor1.CurrentUser = New UserInfo("Group", "Boby", "Boby", "bobby@telerik.com")
 
-        Me.radRichTextEditor1.CurrentUser = New UserInfo("Group", "Boby", "Boby", "bobby@telerik.com")
-
-        '
 ````
 
 {{endregion}} 
@@ -132,24 +126,22 @@ All revision have a RevisionInfo object associated to them, which contains infor
 {{source=..\SamplesVB\RichTextEditor\Features\TrackChanges.vb region=revision}} 
 
 ````C#
+Revision prev = document.GoToPreviousRevision();
+Revision next = document.GoToNextRevision();
+Revision getCurrent = document.GetCurrentRevision();
+Revision getPrev = document.GetPreviousRevision();
+Revision getNext = document.GetNextRevision();
+IEnumerable<Revision> all = document.GetAllRevisions();
 
-            Revision prev = document.GoToPreviousRevision();
-            Revision next = document.GoToNextRevision();
-            Revision getCurrent = document.GetCurrentRevision();
-            Revision getPrev = document.GetPreviousRevision();
-            Revision getNext = document.GetNextRevision();
-            IEnumerable<Revision> all = document.GetAllRevisions();
 ````
 ````VB.NET
+Dim prev As Revision = document.GoToPreviousRevision()
+Dim [next] As Revision = document.GoToNextRevision()
+Dim getCurrent As Revision = document.GetCurrentRevision()
+Dim getPrev As Revision = document.GetPreviousRevision()
+Dim getNext As Revision = document.GetNextRevision()
+Dim all As IEnumerable(Of Revision) = document.GetAllRevisions()
 
-        Dim prev As Revision = document.GoToPreviousRevision()
-        Dim [next] As Revision = document.GoToNextRevision()
-        Dim getCurrent As Revision = document.GetCurrentRevision()
-        Dim getPrev As Revision = document.GetPreviousRevision()
-        Dim getNext As Revision = document.GetNextRevision()
-        Dim all As IEnumerable(Of Revision) = document.GetAllRevisions()
-
-        '
 ````
 
 {{endregion}} 

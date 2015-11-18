@@ -25,28 +25,29 @@ The simplest scenario – finding a string in the content of the document can be
 {{source=..\SamplesVB\RichTextEditor\Features\Search.vb region=search}} 
 
 ````C#
-                
-        private void SelectAllMatches(string toSearch)
-        {
-            this.radRichTextEditor1.Document.Selection.Clear(); // this clears the selection before processing
-            Telerik.WinForms.Documents.TextSearch.DocumentTextSearch search = new Telerik.WinForms.Documents.TextSearch.DocumentTextSearch(this.radRichTextEditor1.Document);
-            foreach (var textRange in search.FindAll(toSearch))
-            {
-                this.radRichTextEditor1.Document.Selection.AddSelectionStart(textRange.StartPosition);
-                this.radRichTextEditor1.Document.Selection.AddSelectionEnd(textRange.EndPosition);
-            }
-        }
+        
+private void SelectAllMatches(string toSearch)
+{
+    this.radRichTextEditor1.Document.Selection.Clear(); // this clears the selection before processing
+    Telerik.WinForms.Documents.TextSearch.DocumentTextSearch search = new Telerik.WinForms.Documents.TextSearch.DocumentTextSearch(this.radRichTextEditor1.Document);
+    foreach (var textRange in search.FindAll(toSearch))
+    {
+        this.radRichTextEditor1.Document.Selection.AddSelectionStart(textRange.StartPosition);
+        this.radRichTextEditor1.Document.Selection.AddSelectionEnd(textRange.EndPosition);
+    }
+}
+
 ````
 ````VB.NET
+Private Sub SelectAllMatches(ByVal toSearch As String)
+    Me.radRichTextEditor1.Document.Selection.Clear() ' this clears the selection before processing
+    Dim search As New Telerik.WinForms.Documents.TextSearch.DocumentTextSearch(Me.radRichTextEditor1.Document)
+    For Each textRange In search.FindAll(toSearch)
+        Me.radRichTextEditor1.Document.Selection.AddSelectionStart(textRange.StartPosition)
+        Me.radRichTextEditor1.Document.Selection.AddSelectionEnd(textRange.EndPosition)
+    Next textRange
+End Sub
 
-    Private Sub SelectAllMatches(ByVal toSearch As String)
-        Me.radRichTextEditor1.Document.Selection.Clear() ' this clears the selection before processing
-        Dim search As New Telerik.WinForms.Documents.TextSearch.DocumentTextSearch(Me.radRichTextEditor1.Document)
-        For Each textRange In search.FindAll(toSearch)
-            Me.radRichTextEditor1.Document.Selection.AddSelectionStart(textRange.StartPosition)
-            Me.radRichTextEditor1.Document.Selection.AddSelectionEnd(textRange.EndPosition)
-        Next textRange
-    End Sub
 ````
 
 {{endregion}} 
@@ -60,16 +61,14 @@ You can use all kind of regular expressions, such as __"(asp|silverlight)\s*cont
 {{source=..\SamplesVB\RichTextEditor\Features\Search.vb region=regex}} 
 
 ````C#
-            string toSearch = "";
+string toSearch = "";
+toSearch = Regex.Escape(toSearch);
 
-            toSearch = Regex.Escape(toSearch);
 ````
 ````VB.NET
-        Dim toSearch As String = ""
+Dim toSearch As String = ""
+toSearch = Regex.Escape(toSearch)
 
-        toSearch = Regex.Escape(toSearch)
-
-        '
 ````
 
 {{endregion}} 
@@ -82,17 +81,16 @@ Selecting the results of the search is particularly useful, as most formatting c
 
 ````C#
             
-            this.radRichTextEditor1.ChangeTextHighlightColor(Telerik.WinControls.RichTextEditor.UI.Colors.LightGray);  // will highlight all selected words in LightGray
-            this.radRichTextEditor1.ChangeFontSize(Telerik.WinControls.RichTextBox.Model.Unit.PointToDip(32));   // will increase the font size of the words to 30 DIP
-            this.radRichTextEditor1.ChangeFontFamily(new Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS")); // will change the font family of the spans, containing these words.
+this.radRichTextEditor1.ChangeTextHighlightColor(Telerik.WinControls.RichTextEditor.UI.Colors.LightGray);  // will highlight all selected words in LightGray
+this.radRichTextEditor1.ChangeFontSize(Telerik.WinControls.RichTextBox.Model.Unit.PointToDip(32));   // will increase the font size of the words to 30 DIP
+this.radRichTextEditor1.ChangeFontFamily(new Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS")); // will change the font family of the spans, containing these words.
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.ChangeTextHighlightColor(Telerik.WinControls.RichTextEditor.UI.Colors.LightGray) ' will highlight all selected words in LightGray
+Me.radRichTextEditor1.ChangeFontSize(Telerik.WinControls.RichTextBox.Model.Unit.PointToDip(32)) ' will increase the font size of the words to 30 DIP
+Me.radRichTextEditor1.ChangeFontFamily(New Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS")) ' will change the font family of the spans, containing these words.
 
-        Me.radRichTextEditor1.ChangeTextHighlightColor(Telerik.WinControls.RichTextEditor.UI.Colors.LightGray) ' will highlight all selected words in LightGray
-        Me.radRichTextEditor1.ChangeFontSize(Telerik.WinControls.RichTextBox.Model.Unit.PointToDip(32)) ' will increase the font size of the words to 30 DIP
-        Me.radRichTextEditor1.ChangeFontFamily(New Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS")) ' will change the font family of the spans, containing these words.
-
-        '
 ````
 
 {{endregion}} 
@@ -104,13 +102,12 @@ Most of the time, you would like to remove the selection at the end of the opera
 
 ````C#
         
-            this.radRichTextEditor1.Document.Selection.Clear();
+this.radRichTextEditor1.Document.Selection.Clear();
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.Document.Selection.Clear()
 
-        Me.radRichTextEditor1.Document.Selection.Clear()
-
-        '
 ````
 
 {{endregion}} 
@@ -124,45 +121,46 @@ On a side note, the find and select functionality can be extended in order to im
 {{source=..\SamplesVB\RichTextEditor\Features\Search.vb region=allmatches}} 
 
 ````C#
-                
-        private void ReplaceAllMatches(string toSearch, string toReplaceWith)
-        {
-            this.radRichTextEditor1.Document.Selection.Clear(); // this clears the selection before processing
-            Telerik.WinForms.Documents.TextSearch.DocumentTextSearch search = new Telerik.WinForms.Documents.TextSearch.DocumentTextSearch(this.radRichTextEditor1.Document);
-            List<Telerik.WinForms.Documents.TextSearch.TextRange> rangesTrackingDocumentChanges = new List<Telerik.WinForms.Documents.TextSearch.TextRange>();
-            foreach (var textRange in search.FindAll(toSearch))
-            {
-                Telerik.WinForms.Documents.TextSearch.TextRange newRange = new Telerik.WinForms.Documents.TextSearch.TextRange(new Telerik.WinForms.Documents.DocumentPosition(textRange.StartPosition, true), new Telerik.WinForms.Documents.DocumentPosition(textRange.EndPosition, true));
-                rangesTrackingDocumentChanges.Add(newRange);
-            }
-            foreach (var textRange in rangesTrackingDocumentChanges)
-            {
-                this.radRichTextEditor1.Document.Selection.AddSelectionStart(textRange.StartPosition);
-                this.radRichTextEditor1.Document.Selection.AddSelectionEnd(textRange.EndPosition);
-                this.radRichTextEditor1.Insert(toReplaceWith);
-                textRange.StartPosition.Dispose();
-                textRange.EndPosition.Dispose();
-            }
-        }
+        
+private void ReplaceAllMatches(string toSearch, string toReplaceWith)
+{
+    this.radRichTextEditor1.Document.Selection.Clear(); // this clears the selection before processing
+    Telerik.WinForms.Documents.TextSearch.DocumentTextSearch search = new Telerik.WinForms.Documents.TextSearch.DocumentTextSearch(this.radRichTextEditor1.Document);
+    List<Telerik.WinForms.Documents.TextSearch.TextRange> rangesTrackingDocumentChanges = new List<Telerik.WinForms.Documents.TextSearch.TextRange>();
+    foreach (var textRange in search.FindAll(toSearch))
+    {
+        Telerik.WinForms.Documents.TextSearch.TextRange newRange = new Telerik.WinForms.Documents.TextSearch.TextRange(new Telerik.WinForms.Documents.DocumentPosition(textRange.StartPosition, true), new Telerik.WinForms.Documents.DocumentPosition(textRange.EndPosition, true));
+        rangesTrackingDocumentChanges.Add(newRange);
+    }
+    foreach (var textRange in rangesTrackingDocumentChanges)
+    {
+        this.radRichTextEditor1.Document.Selection.AddSelectionStart(textRange.StartPosition);
+        this.radRichTextEditor1.Document.Selection.AddSelectionEnd(textRange.EndPosition);
+        this.radRichTextEditor1.Insert(toReplaceWith);
+        textRange.StartPosition.Dispose();
+        textRange.EndPosition.Dispose();
+    }
+}
+
 ````
 ````VB.NET
+Private Sub ReplaceAllMatches(ByVal toSearch As String, ByVal toReplaceWith As String)
+    Me.radRichTextEditor1.Document.Selection.Clear() ' this clears the selection before processing
+    Dim search As New Telerik.WinForms.Documents.TextSearch.DocumentTextSearch(Me.radRichTextEditor1.Document)
+    Dim rangesTrackingDocumentChanges As New List(Of Telerik.WinForms.Documents.TextSearch.TextRange)()
+    For Each textRange In search.FindAll(toSearch)
+        Dim newRange As New Telerik.WinForms.Documents.TextSearch.TextRange(New Telerik.WinForms.Documents.DocumentPosition(textRange.StartPosition, True), New Telerik.WinForms.Documents.DocumentPosition(textRange.EndPosition, True))
+        rangesTrackingDocumentChanges.Add(newRange)
+    Next textRange
+    For Each textRange In rangesTrackingDocumentChanges
+        Me.radRichTextEditor1.Document.Selection.AddSelectionStart(textRange.StartPosition)
+        Me.radRichTextEditor1.Document.Selection.AddSelectionEnd(textRange.EndPosition)
+        Me.radRichTextEditor1.Insert(toReplaceWith)
+        textRange.StartPosition.Dispose()
+        textRange.EndPosition.Dispose()
+    Next textRange
+End Sub
 
-    Private Sub ReplaceAllMatches(ByVal toSearch As String, ByVal toReplaceWith As String)
-        Me.radRichTextEditor1.Document.Selection.Clear() ' this clears the selection before processing
-        Dim search As New Telerik.WinForms.Documents.TextSearch.DocumentTextSearch(Me.radRichTextEditor1.Document)
-        Dim rangesTrackingDocumentChanges As New List(Of Telerik.WinForms.Documents.TextSearch.TextRange)()
-        For Each textRange In search.FindAll(toSearch)
-            Dim newRange As New Telerik.WinForms.Documents.TextSearch.TextRange(New Telerik.WinForms.Documents.DocumentPosition(textRange.StartPosition, True), New Telerik.WinForms.Documents.DocumentPosition(textRange.EndPosition, True))
-            rangesTrackingDocumentChanges.Add(newRange)
-        Next textRange
-        For Each textRange In rangesTrackingDocumentChanges
-            Me.radRichTextEditor1.Document.Selection.AddSelectionStart(textRange.StartPosition)
-            Me.radRichTextEditor1.Document.Selection.AddSelectionEnd(textRange.EndPosition)
-            Me.radRichTextEditor1.Insert(toReplaceWith)
-            textRange.StartPosition.Dispose()
-            textRange.EndPosition.Dispose()
-        Next textRange
-    End Sub
 ````
 
 {{endregion}} 

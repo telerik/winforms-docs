@@ -93,11 +93,12 @@ Insert a page field:
 {{source=..\SamplesVB\RichTextEditor\Features\Fields.vb region=insert}} 
 
 ````C#
-            this.radRichTextEditor1.InsertField(new PageField());
+this.radRichTextEditor1.InsertField(new PageField());
+
 ````
 ````VB.NET
-        Me.radRichTextEditor1.InsertField(New PageField())
-        '
+Me.radRichTextEditor1.InsertField(New PageField())
+
 ````
 
 {{endregion}} 
@@ -111,11 +112,12 @@ Update a field:
 {{source=..\SamplesVB\RichTextEditor\Features\Fields.vb region=update}} 
 
 ````C#
-            this.radRichTextEditor1.UpdateField(new FieldRangeStart());
+this.radRichTextEditor1.UpdateField(new FieldRangeStart());
+
 ````
 ````VB.NET
-        Me.radRichTextEditor1.UpdateField(New FieldRangeStart())
-        '
+Me.radRichTextEditor1.UpdateField(New FieldRangeStart())
+
 ````
 
 {{endregion}} 
@@ -135,11 +137,12 @@ Priority can specified through the __FieldsUpdateManager__ static class. The fol
 {{source=..\SamplesVB\RichTextEditor\Features\Fields.vb region=register}} 
 
 ````C#
-            FieldsUpdateManager.RegisterFieldUpdatePriority(typeof(ReferenceField), 1000);
+FieldsUpdateManager.RegisterFieldUpdatePriority(typeof(ReferenceField), 1000);
+
 ````
 ````VB.NET
-        FieldsUpdateManager.RegisterFieldUpdatePriority(GetType(ReferenceField), 1000)
-        '
+FieldsUpdateManager.RegisterFieldUpdatePriority(GetType(ReferenceField), 1000)
+
 ````
 
 {{endregion}} 

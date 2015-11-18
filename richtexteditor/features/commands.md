@@ -21,39 +21,38 @@ Here is an example with a __RadToggleButton__ control.
 
 ````C#
         
-        private RadToggleButton boldButton;
+private RadToggleButton boldButton;
         
-        public Commands()
-        {
-            this.InitializeComponent();
-            this.boldButton = new RadToggleButton();
-            this.boldButton.Text = "Bold";
-            this.boldButton.Click += this.boldButton_Click;
-            this.boldButton.Location = new Point(10, 10);
-            this.Controls.Add(this.boldButton);
-        }
+public Commands()
+{
+    this.InitializeComponent();
+    this.boldButton = new RadToggleButton();
+    this.boldButton.Text = "Bold";
+    this.boldButton.Click += this.boldButton_Click;
+    this.boldButton.Location = new Point(10, 10);
+    this.Controls.Add(this.boldButton);
+}
         
-        private void boldButton_Click(object sender, EventArgs e)
-        {
-            this.radRichTextEditor1.Commands.ToggleBoldCommand.Execute();
-        }
+private void boldButton_Click(object sender, EventArgs e)
+{
+    this.radRichTextEditor1.Commands.ToggleBoldCommand.Execute();
+}
+
 ````
 ````VB.NET
+Private boldButton As RadToggleButton
+Public Sub New()
+    Me.InitializeComponent()
+    Me.boldButton = New RadToggleButton()
+    Me.boldButton.Text = "Bold"
+    AddHandler Me.boldButton.Click, AddressOf Me.boldButton_Click
+    Me.boldButton.Location = New Point(10, 10)
+    Me.Controls.Add(Me.boldButton)
+End Sub
+Private Sub boldButton_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Me.radRichTextEditor1.Commands.ToggleBoldCommand.Execute()
+End Sub
 
-    Private boldButton As RadToggleButton
-
-    Public Sub New()
-        Me.InitializeComponent()
-        Me.boldButton = New RadToggleButton()
-        Me.boldButton.Text = "Bold"
-        AddHandler Me.boldButton.Click, AddressOf Me.boldButton_Click
-        Me.boldButton.Location = New Point(10, 10)
-        Me.Controls.Add(Me.boldButton)
-    End Sub
-
-    Private Sub boldButton_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Me.radRichTextEditor1.Commands.ToggleBoldCommand.Execute()
-    End Sub
 ````
 
 {{endregion}} 
@@ -65,26 +64,26 @@ Now every time the button is clicked it will toggle the boldness of the current 
 {{source=..\SamplesVB\RichTextEditor\Features\Commands.vb region=event}} 
 
 ````C#
-            
-        private void Commands_Load(object sender, EventArgs e)
-        {
-            this.radRichTextEditor1.Commands.ToggleBoldCommand.ToggleStateChanged += this.ToggleBoldCommand_ToggleStateChanged;
-        }
-            
-        public void ToggleBoldCommand_ToggleStateChanged(object sender, StylePropertyChangedEventArgs<bool> e)
-        {
-            this.boldButton.IsChecked = e.NewValue;
-        }
+    
+private void Commands_Load(object sender, EventArgs e)
+{
+    this.radRichTextEditor1.Commands.ToggleBoldCommand.ToggleStateChanged += this.ToggleBoldCommand_ToggleStateChanged;
+}
+    
+public void ToggleBoldCommand_ToggleStateChanged(object sender, StylePropertyChangedEventArgs<bool> e)
+{
+    this.boldButton.IsChecked = e.NewValue;
+}
+
 ````
 ````VB.NET
+Private Sub Commands_Load(ByVal sender As Object, ByVal e As EventArgs)
+    AddHandler Me.radRichTextEditor1.Commands.ToggleBoldCommand.ToggleStateChanged, AddressOf Me.ToggleBoldCommand_ToggleStateChanged
+End Sub
+Public Sub ToggleBoldCommand_ToggleStateChanged(ByVal sender As Object, ByVal e As StylePropertyChangedEventArgs(Of Boolean))
+    Me.boldButton.IsChecked = e.NewValue
+End Sub
 
-    Private Sub Commands_Load(ByVal sender As Object, ByVal e As EventArgs)
-        AddHandler Me.radRichTextEditor1.Commands.ToggleBoldCommand.ToggleStateChanged, AddressOf Me.ToggleBoldCommand_ToggleStateChanged
-    End Sub
-
-    Public Sub ToggleBoldCommand_ToggleStateChanged(ByVal sender As Object, ByVal e As StylePropertyChangedEventArgs(Of Boolean))
-        Me.boldButton.IsChecked = e.NewValue
-    End Sub
 ````
 
 {{endregion}}

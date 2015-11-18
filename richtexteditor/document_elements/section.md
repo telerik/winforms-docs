@@ -38,15 +38,14 @@ For example, you can build a RadDocument from scratch and add Sections to it in 
 
 ````C#
             
-            Telerik.WinForms.Documents.Model.Section section = new Telerik.WinForms.Documents.Model.Section();
-            this.radRichTextEditor1.Document.Sections.Add(section);
+Telerik.WinForms.Documents.Model.Section section = new Telerik.WinForms.Documents.Model.Section();
+this.radRichTextEditor1.Document.Sections.Add(section);
+
 ````
 ````VB.NET
+Dim section As New Telerik.WinForms.Documents.Model.Section()
+Me.radRichTextEditor1.Document.Sections.Add(section)
 
-        Dim section As New Telerik.WinForms.Documents.Model.Section()
-        Me.radRichTextEditor1.Document.Sections.Add(section)
-
-        '
 ````
 
 {{endregion}} 
@@ -58,13 +57,12 @@ Splitting an already measured document into two sections at the current caret po
 
 ````C#
             
-            this.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage);
+this.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage);
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage)
 
-        Me.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage)
-
-        '
 ````
 
 {{endregion}} 
@@ -95,19 +93,17 @@ Here is a list of these properties:
 
 ````C#
             
-            section.PageMargin = new Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30);
+section.PageMargin = new Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30);
             
-            //When the section has already been added to the document
-            this.radRichTextEditor1.ChangeSectionPageMargin(new Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30));
+//When the section has already been added to the document
+this.radRichTextEditor1.ChangeSectionPageMargin(new Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30));
+
 ````
 ````VB.NET
+section.PageMargin = New Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30)
+'When the section has already been added to the document
+Me.radRichTextEditor1.ChangeSectionPageMargin(New Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30))
 
-        section.PageMargin = New Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30)
-
-        'When the section has already been added to the document
-        Me.radRichTextEditor1.ChangeSectionPageMargin(New Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30))
-
-        '
 ````
 
 {{endregion}} 
@@ -120,21 +116,19 @@ Here is a list of these properties:
 
 ````C#
             
-            //When creating a Section programmatically
-            section.PageOrientation = PageOrientation.Landscape;
+//When creating a Section programmatically
+section.PageOrientation = PageOrientation.Landscape;
             
-            //When the section has already been added to the document
-            this.radRichTextEditor1.ChangeSectionPageOrientation(PageOrientation.Landscape);
+//When the section has already been added to the document
+this.radRichTextEditor1.ChangeSectionPageOrientation(PageOrientation.Landscape);
+
 ````
 ````VB.NET
+'When creating a Section programmatically
+section.PageOrientation = PageOrientation.Landscape
+'When the section has already been added to the document
+Me.radRichTextEditor1.ChangeSectionPageOrientation(PageOrientation.Landscape)
 
-        'When creating a Section programmatically
-        section.PageOrientation = PageOrientation.Landscape
-
-        'When the section has already been added to the document
-        Me.radRichTextEditor1.ChangeSectionPageOrientation(PageOrientation.Landscape)
-
-        '
 ````
 
 {{endregion}} 
@@ -147,21 +141,19 @@ Here is a list of these properties:
 
 ````C#
             
-            //When creating a Section programmatically
-            section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4);
+//When creating a Section programmatically
+section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4);
             
-            //When the section has already been added to the document
-            this.radRichTextEditor1.ChangeSectionPageSize(PaperTypeConverter.ToSize(PaperTypes.A4));
+//When the section has already been added to the document
+this.radRichTextEditor1.ChangeSectionPageSize(PaperTypeConverter.ToSize(PaperTypes.A4));
+
 ````
 ````VB.NET
+'When creating a Section programmatically
+section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4)
+'When the section has already been added to the document
+Me.radRichTextEditor1.ChangeSectionPageSize(PaperTypeConverter.ToSize(PaperTypes.A4))
 
-        'When creating a Section programmatically
-        section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4)
-
-        'When the section has already been added to the document
-        Me.radRichTextEditor1.ChangeSectionPageSize(PaperTypeConverter.ToSize(PaperTypes.A4))
-
-        '
 ````
 
 {{endregion}} 
@@ -172,14 +164,12 @@ Here is a list of these properties:
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=body}} 
 
 ````C#
+Telerik.WinForms.Documents.Model.Header header = new Telerik.WinForms.Documents.Model.Header() { Body = radDocument, IsLinkedToPrevious = false };
 
-            Telerik.WinForms.Documents.Model.Header header = new Telerik.WinForms.Documents.Model.Header() { Body = radDocument, IsLinkedToPrevious = false };
 ````
 ````VB.NET
+Dim header As New Telerik.WinForms.Documents.Model.Header() With {.Body = radDocument, .IsLinkedToPrevious = False}
 
-        Dim header As New Telerik.WinForms.Documents.Model.Header() With {.Body = radDocument, .IsLinkedToPrevious = False}
-
-        '
 ````
 
 {{endregion}} 
@@ -193,14 +183,12 @@ All header/footer types are set identically.
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=header1}} 
 
 ````C#
+section.Headers.First = header;
 
-            section.Headers.First = header;
 ````
 ````VB.NET
+section.Headers.First = header
 
-        section.Headers.First = header
-
-        '
 ````
 
 {{endregion}} 
@@ -212,13 +200,12 @@ All header/footer types are set identically.
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=header2}} 
 
 ````C#
-            this.radRichTextEditor1.UpdateHeader(this.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header);
+this.radRichTextEditor1.UpdateHeader(this.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header);
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header)
 
-        Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header)
-
-        '
 ````
 
 {{endregion}} 
@@ -236,17 +223,16 @@ In a non-measured document:
 
 ````C#
             
-            Section section1 = new Section();
-            Paragraph paragraph = new Paragraph();
-            section1.Blocks.Add(paragraph);
+Section section1 = new Section();
+Paragraph paragraph = new Paragraph();
+section1.Blocks.Add(paragraph);
+
 ````
 ````VB.NET
+Dim section1 As New Section()
+Dim paragraph As New Paragraph()
+section1.Blocks.Add(paragraph)
 
-        Dim section1 As New Section()
-        Dim paragraph As New Paragraph()
-        section1.Blocks.Add(paragraph)
-
-        '
 ````
 
 {{endregion}} 
@@ -257,11 +243,12 @@ In a measured document:
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=add2}} 
 
 ````C#
-            this.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER);
+this.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER);
+
 ````
 ````VB.NET
-        Me.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER)
-        '
+Me.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER)
+
 ````
 
 {{endregion}}

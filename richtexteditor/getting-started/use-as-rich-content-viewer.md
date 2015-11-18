@@ -19,13 +19,12 @@ To use __RadRichTextEditor__ as a rich content viewer you have to disable the us
 
 ````C#
             
-            this.radRichTextEditor.IsReadOnly = true;
+this.radRichTextEditor.IsReadOnly = true;
+
 ````
 ````VB.NET
+Me.radRichTextEditor.IsReadOnly = True
 
-        Me.radRichTextEditor.IsReadOnly = True
-
-        '
 ````
 
 {{endregion}} 

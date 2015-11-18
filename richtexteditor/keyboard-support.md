@@ -58,23 +58,22 @@ Now these key shortcuts can be overridden and customized to the liking of the us
 {{source=..\SamplesVB\RichTextEditor\KeyboardSupport.vb region=input}} 
 
 ````C#
-        
-    public class MyInputBehavior : Telerik.WinForms.RichTextEditor.RichTextEditorInputBehavior
+    
+public class MyInputBehavior : Telerik.WinForms.RichTextEditor.RichTextEditorInputBehavior
+{
+    public MyInputBehavior(RadRichTextBox editor) : base(editor)
     {
-        public MyInputBehavior(RadRichTextBox editor) : base(editor)
-        {
-        }
-        protected override void PerformCopyOperation(System.Windows.Forms.KeyEventArgs e)
-        {
-            base.PerformCutOperation(e);
-        }      
     }
+    protected override void PerformCopyOperation(System.Windows.Forms.KeyEventArgs e)
+    {
+        base.PerformCutOperation(e);
+    }      
+}
+
 ````
 ````VB.NET
-
 Public Class MyInputBehavior
     Inherits Telerik.WinForms.RichTextEditor.RichTextEditorInputBehavior
-
     Public Sub New(ByVal editor As RadRichTextBox)
         MyBase.New(editor)
     End Sub
@@ -82,6 +81,7 @@ Public Class MyInputBehavior
         MyBase.PerformCutOperation(e)
     End Sub
 End Class
+
 ````
 
 {{endregion}} 
@@ -93,13 +93,12 @@ The default behavior can be changed like this:
 
 ````C#
             
-            radRichTextEditor1.InputHandler = new MyInputBehavior(radRichTextEditor1.RichTextBoxElement);
+radRichTextEditor1.InputHandler = new MyInputBehavior(radRichTextEditor1.RichTextBoxElement);
+
 ````
 ````VB.NET
+radRichTextEditor1.InputHandler = New MyInputBehavior(radRichTextEditor1.RichTextBoxElement)
 
-        radRichTextEditor1.InputHandler = New MyInputBehavior(radRichTextEditor1.RichTextBoxElement)
-
-        '
 ````
 
 {{endregion}} 
@@ -110,22 +109,23 @@ Another way to customize the control behavior is to use the __PreviewEditorKeyDo
 {{source=..\SamplesVB\RichTextEditor\KeyboardSupport.vb region=keyDown}} 
 
 ````C#
-            
-        void RichTextBoxElement_PreviewEditorKeyDown(object sender, PreviewEditorKeyEventArgs e)
-        {
-            if ((Keyboard.IsKeyDown(Key.LeftShift) || Keyboard.IsKeyDown(Key.RightShift)))
-            {
-                e.SuppressDefaultAction = true;
-            }
-        }
+    
+void RichTextBoxElement_PreviewEditorKeyDown(object sender, PreviewEditorKeyEventArgs e)
+{
+    if ((Keyboard.IsKeyDown(Key.LeftShift) || Keyboard.IsKeyDown(Key.RightShift)))
+    {
+        e.SuppressDefaultAction = true;
+    }
+}
+
 ````
 ````VB.NET
+Private Sub RichTextBoxElement_PreviewEditorKeyDown(ByVal sender As Object, ByVal e As PreviewEditorKeyEventArgs)
+    If (Keyboard.IsKeyDown(Key.LeftShift) OrElse Keyboard.IsKeyDown(Key.RightShift)) Then
+        e.SuppressDefaultAction = True
+    End If
+End Sub
 
-    Private Sub RichTextBoxElement_PreviewEditorKeyDown(ByVal sender As Object, ByVal e As PreviewEditorKeyEventArgs)
-        If (Keyboard.IsKeyDown(Key.LeftShift) OrElse Keyboard.IsKeyDown(Key.RightShift)) Then
-            e.SuppressDefaultAction = True
-        End If
-    End Sub
 ````
 
 {{endregion}} 

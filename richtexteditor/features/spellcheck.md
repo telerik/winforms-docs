@@ -52,21 +52,22 @@ Here is an example of a __RadDictionary__ loaded from a TDF file.
 {{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=load}} 
 
 ````C#
-            
-        private void LoadDictionary(Stream tdfFileStream)
-        {
-            RadDictionary dictionary = new RadDictionary();
-            dictionary.Load(tdfFileStream);
-            ((DocumentSpellChecker)this.radRichTextEditor1.SpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture);
-        }
+    
+private void LoadDictionary(Stream tdfFileStream)
+{
+    RadDictionary dictionary = new RadDictionary();
+    dictionary.Load(tdfFileStream);
+    ((DocumentSpellChecker)this.radRichTextEditor1.SpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture);
+}
+
 ````
 ````VB.NET
+Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
+    Dim dictionary As New RadDictionary()
+    dictionary.Load(tdfFileStream)
+    CType(Me.radRichTextEditor1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture)
+End Sub
 
-    Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
-        Dim dictionary As New RadDictionary()
-        dictionary.Load(tdfFileStream)
-        CType(Me.radRichTextEditor1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture)
-    End Sub
 ````
 
 {{endregion}} 
@@ -94,20 +95,21 @@ Here is an example of a such dictionary which adds the words in the "CustomDicti
 
 ````C#
         
-        private void CreateCustomDictionary()
-        {
-            RadIsolatedStorageCustomDictionary dictionary = new RadIsolatedStorageCustomDictionary(IsolatedStorageScope.Site, "CustomDictionary.txt");
-            DocumentSpellChecker spellchecker = new DocumentSpellChecker(dictionary);
-            this.radRichTextEditor1.SpellChecker = spellchecker;
-        }
+private void CreateCustomDictionary()
+{
+    RadIsolatedStorageCustomDictionary dictionary = new RadIsolatedStorageCustomDictionary(IsolatedStorageScope.Site, "CustomDictionary.txt");
+    DocumentSpellChecker spellchecker = new DocumentSpellChecker(dictionary);
+    this.radRichTextEditor1.SpellChecker = spellchecker;
+}
+
 ````
 ````VB.NET
+Private Sub CreateCustomDictionary()
+    Dim dictionary As New RadIsolatedStorageCustomDictionary(IsolatedStorageScope.Site, "CustomDictionary.txt")
+    Dim spellchecker As New DocumentSpellChecker(dictionary)
+    Me.radRichTextEditor1.SpellChecker = spellchecker
+End Sub
 
-    Private Sub CreateCustomDictionary()
-        Dim dictionary As New RadIsolatedStorageCustomDictionary(IsolatedStorageScope.Site, "CustomDictionary.txt")
-        Dim spellchecker As New DocumentSpellChecker(dictionary)
-        Me.radRichTextEditor1.SpellChecker = spellchecker
-    End Sub
 ````
 
 {{endregion}} 
@@ -134,13 +136,12 @@ Here is an example.
 
 ````C#
             
-            this.radRichTextEditor1.SpellChecker.AddWord("RadRichTextEditor", CultureInfo.InvariantCulture);
+this.radRichTextEditor1.SpellChecker.AddWord("RadRichTextEditor", CultureInfo.InvariantCulture);
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.SpellChecker.AddWord("RadRichTextEditor", CultureInfo.InvariantCulture)
 
-        Me.radRichTextEditor1.SpellChecker.AddWord("RadRichTextEditor", CultureInfo.InvariantCulture)
-
-        '
 ````
 
 {{endregion}} 
@@ -162,21 +163,22 @@ Here is an example.
 {{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=load}} 
 
 ````C#
-            
-        private void LoadDictionary(Stream tdfFileStream)
-        {
-            RadDictionary dictionary = new RadDictionary();
-            dictionary.Load(tdfFileStream);
-            ((DocumentSpellChecker)this.radRichTextEditor1.SpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture);
-        }
+    
+private void LoadDictionary(Stream tdfFileStream)
+{
+    RadDictionary dictionary = new RadDictionary();
+    dictionary.Load(tdfFileStream);
+    ((DocumentSpellChecker)this.radRichTextEditor1.SpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture);
+}
+
 ````
 ````VB.NET
+Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
+    Dim dictionary As New RadDictionary()
+    dictionary.Load(tdfFileStream)
+    CType(Me.radRichTextEditor1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture)
+End Sub
 
-    Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
-        Dim dictionary As New RadDictionary()
-        dictionary.Load(tdfFileStream)
-        CType(Me.radRichTextEditor1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture)
-    End Sub
 ````
 
 {{endregion}} 

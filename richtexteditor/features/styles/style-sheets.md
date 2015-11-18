@@ -34,29 +34,28 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
 
 ````C#
             
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Xaml Files|*.xaml";
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                using (var stream = ofd.OpenFile())
-                {
-                    Stylesheet stylesheet = XamlFormatProvider.LoadStylesheet(stream);
-                    stylesheet.ApplyStylesheetToDocument(this.radRichTextEditor1.Document);
-                }
-            }
+OpenFileDialog ofd = new OpenFileDialog();
+ofd.Filter = "Xaml Files|*.xaml";
+if (ofd.ShowDialog() == DialogResult.OK)
+{
+    using (var stream = ofd.OpenFile())
+    {
+        Stylesheet stylesheet = XamlFormatProvider.LoadStylesheet(stream);
+        stylesheet.ApplyStylesheetToDocument(this.radRichTextEditor1.Document);
+    }
+}
+
 ````
 ````VB.NET
+Dim ofd As New OpenFileDialog()
+ofd.Filter = "Xaml Files|*.xaml"
+If ofd.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+    Using stream = ofd.OpenFile()
+        Dim stylesheet As Stylesheet = XamlFormatProvider.LoadStylesheet(stream)
+        stylesheet.ApplyStylesheetToDocument(Me.radRichTextEditor1.Document)
+    End Using
+End If
 
-        Dim ofd As New OpenFileDialog()
-        ofd.Filter = "Xaml Files|*.xaml"
-        If ofd.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
-            Using stream = ofd.OpenFile()
-                Dim stylesheet As Stylesheet = XamlFormatProvider.LoadStylesheet(stream)
-                stylesheet.ApplyStylesheetToDocument(Me.radRichTextEditor1.Document)
-            End Using
-        End If
-
-        '
 ````
 
 {{endregion}} 
@@ -68,32 +67,31 @@ This is how you can save a style sheet with the __SaveStyleSheet__ method of __X
 {{source=..\SamplesVB\RichTextEditor\Features\StyleSheets.vb region=save}} 
 
 ````C#
-                
-            SaveFileDialog sfd = new SaveFileDialog();
-            sfd.Filter = "Xaml Files|*.xaml";
-            if (sfd.ShowDialog() == DialogResult.OK)
-            {
-                using (var stream = sfd.OpenFile())
-                {
-                    Stylesheet stylesheet = new Stylesheet();
-                    stylesheet.ExtractStylesheetFromDocument(this.radRichTextEditor1.Document);
-                    XamlFormatProvider.SaveStylesheet(stylesheet, stream);
-                }
-            }
+    
+SaveFileDialog sfd = new SaveFileDialog();
+sfd.Filter = "Xaml Files|*.xaml";
+if (sfd.ShowDialog() == DialogResult.OK)
+{
+    using (var stream = sfd.OpenFile())
+    {
+        Stylesheet stylesheet = new Stylesheet();
+        stylesheet.ExtractStylesheetFromDocument(this.radRichTextEditor1.Document);
+        XamlFormatProvider.SaveStylesheet(stylesheet, stream);
+    }
+}
+
 ````
 ````VB.NET
+Dim sfd As New SaveFileDialog()
+sfd.Filter = "Xaml Files|*.xaml"
+If sfd.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+    Using stream = sfd.OpenFile()
+        Dim stylesheet As New Stylesheet()
+        stylesheet.ExtractStylesheetFromDocument(Me.radRichTextEditor1.Document)
+        XamlFormatProvider.SaveStylesheet(stylesheet, stream)
+    End Using
+End If
 
-        Dim sfd As New SaveFileDialog()
-        sfd.Filter = "Xaml Files|*.xaml"
-        If sfd.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
-            Using stream = sfd.OpenFile()
-                Dim stylesheet As New Stylesheet()
-                stylesheet.ExtractStylesheetFromDocument(Me.radRichTextEditor1.Document)
-                XamlFormatProvider.SaveStylesheet(stylesheet, stream)
-            End Using
-        End If
-
-        '
 ````
 
 {{endregion}} 

@@ -84,19 +84,20 @@ The __CaptionDefinition__ class contains viable information for the creation of 
 {{source=..\SamplesVB\RichTextEditor\Features\Caption.vb region=insert1}} 
 
 ````C#
-            CaptionDefinition captionDefinition = new CaptionDefinition();
-            captionDefinition.Label = "testLabel";
-            captionDefinition.NumberingFormat = NumberingFormat.Arabic;
-            captionDefinition.SeparatorType = CaptionSeparatorType.Colon;
-            this.radRichTextEditor1.InsertCaption(captionDefinition, "captionText", true, true);
+CaptionDefinition captionDefinition = new CaptionDefinition();
+captionDefinition.Label = "testLabel";
+captionDefinition.NumberingFormat = NumberingFormat.Arabic;
+captionDefinition.SeparatorType = CaptionSeparatorType.Colon;
+this.radRichTextEditor1.InsertCaption(captionDefinition, "captionText", true, true);
+
 ````
 ````VB.NET
-        Dim captionDefinition As New CaptionDefinition()
-        captionDefinition.Label = "testLabel"
-        captionDefinition.NumberingFormat = NumberingFormat.Arabic
-        captionDefinition.SeparatorType = CaptionSeparatorType.Colon
-        Me.radRichTextEditor1.InsertCaption(captionDefinition, "captionText", True, True)
-        '
+Dim captionDefinition As New CaptionDefinition()
+captionDefinition.Label = "testLabel"
+captionDefinition.NumberingFormat = NumberingFormat.Arabic
+captionDefinition.SeparatorType = CaptionSeparatorType.Colon
+Me.radRichTextEditor1.InsertCaption(captionDefinition, "captionText", True, True)
+
 ````
 
 {{endregion}}
@@ -108,11 +109,12 @@ The __RadDocument__ contains the two default __CaptionDefinitions__ by default. 
 {{source=..\SamplesVB\RichTextEditor\Features\Caption.vb region=insert2}} 
 
 ````C#
-            this.radRichTextEditor1.InsertCaption(this.radRichTextEditor1.Document.CaptionDefinitions["Table"], "captionText", true, true);
+this.radRichTextEditor1.InsertCaption(this.radRichTextEditor1.Document.CaptionDefinitions["Table"], "captionText", true, true);
+
 ````
 ````VB.NET
-        Me.radRichTextEditor1.InsertCaption(Me.radRichTextEditor1.Document.CaptionDefinitions("Table"), "captionText", True, True)
-        '
+Me.radRichTextEditor1.InsertCaption(Me.radRichTextEditor1.Document.CaptionDefinitions("Table"), "captionText", True, True)
+
 ````
 
 {{endregion}} 

@@ -87,29 +87,27 @@ This is how a Character style can be defined and registered:
 
 ````C#
             
-            StyleDefinition charStyle = new StyleDefinition();
-            charStyle.Type = StyleType.Character;
-            charStyle.SpanProperties.FontFamily = new Telerik.WinControls.RichTextEditor.UI.FontFamily("Calibri");
-            charStyle.SpanProperties.FontSize = Unit.PointToDip(20);
-            charStyle.SpanProperties.ForeColor = Colors.Orange;
-            charStyle.DisplayName = "charStyle";
-            charStyle.Name = "charStyle";
+StyleDefinition charStyle = new StyleDefinition();
+charStyle.Type = StyleType.Character;
+charStyle.SpanProperties.FontFamily = new Telerik.WinControls.RichTextEditor.UI.FontFamily("Calibri");
+charStyle.SpanProperties.FontSize = Unit.PointToDip(20);
+charStyle.SpanProperties.ForeColor = Colors.Orange;
+charStyle.DisplayName = "charStyle";
+charStyle.Name = "charStyle";
             
-            this.radRichTextEditor1.Document.StyleRepository.Add(charStyle);
+this.radRichTextEditor1.Document.StyleRepository.Add(charStyle);
+
 ````
 ````VB.NET
+Dim charStyle As New StyleDefinition()
+charStyle.Type = StyleType.Character
+charStyle.SpanProperties.FontFamily = New Telerik.WinControls.RichTextEditor.UI.FontFamily("Calibri")
+charStyle.SpanProperties.FontSize = Unit.PointToDip(20)
+charStyle.SpanProperties.ForeColor = Colors.Orange
+charStyle.DisplayName = "charStyle"
+charStyle.Name = "charStyle"
+Me.radRichTextEditor1.Document.StyleRepository.Add(charStyle)
 
-        Dim charStyle As New StyleDefinition()
-        charStyle.Type = StyleType.Character
-        charStyle.SpanProperties.FontFamily = New Telerik.WinControls.RichTextEditor.UI.FontFamily("Calibri")
-        charStyle.SpanProperties.FontSize = Unit.PointToDip(20)
-        charStyle.SpanProperties.ForeColor = Colors.Orange
-        charStyle.DisplayName = "charStyle"
-        charStyle.Name = "charStyle"
-
-        Me.radRichTextEditor1.Document.StyleRepository.Add(charStyle)
-
-        '
 ````
 
 {{endregion}} 
@@ -126,14 +124,12 @@ A paragraph style can be defined as follows:
 {{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=paragraph}} 
 
 ````C#
+paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1);
 
-            paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1);
 ````
 ````VB.NET
+paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1)
 
-        paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1)
-
-        '
 ````
 
 {{endregion}} 
@@ -150,45 +146,42 @@ Linked styles should be used when both properties of Paragraph and Span should b
 
 ````C#
             
-            StyleDefinition linkedParagraphStyle = new StyleDefinition();
-            linkedParagraphStyle.Type = StyleType.Paragraph;
-            linkedParagraphStyle.ParagraphProperties.Background = Colors.Yellow;
-            linkedParagraphStyle.DisplayName = "linkedParagraphStyle";
-            linkedParagraphStyle.Name = "linkedParagraphStyle";
+StyleDefinition linkedParagraphStyle = new StyleDefinition();
+linkedParagraphStyle.Type = StyleType.Paragraph;
+linkedParagraphStyle.ParagraphProperties.Background = Colors.Yellow;
+linkedParagraphStyle.DisplayName = "linkedParagraphStyle";
+linkedParagraphStyle.Name = "linkedParagraphStyle";
             
-            StyleDefinition linkedCharStyle = new StyleDefinition();
-            linkedCharStyle.Type = StyleType.Character;
-            linkedCharStyle.SpanProperties.FontWeight = FontWeights.Bold;
-            linkedCharStyle.SpanProperties.FontSize = Unit.PointToDip(30);
-            linkedCharStyle.SpanProperties.ForeColor = Colors.Purple;
-            linkedCharStyle.DisplayName = "linkedCharStyle";
-            linkedCharStyle.Name = "linkedCharStyle";
-            linkedParagraphStyle.LinkedStyle = linkedCharStyle;
+StyleDefinition linkedCharStyle = new StyleDefinition();
+linkedCharStyle.Type = StyleType.Character;
+linkedCharStyle.SpanProperties.FontWeight = FontWeights.Bold;
+linkedCharStyle.SpanProperties.FontSize = Unit.PointToDip(30);
+linkedCharStyle.SpanProperties.ForeColor = Colors.Purple;
+linkedCharStyle.DisplayName = "linkedCharStyle";
+linkedCharStyle.Name = "linkedCharStyle";
+linkedParagraphStyle.LinkedStyle = linkedCharStyle;
             
-            this.radRichTextEditor1.Document.StyleRepository.Add(linkedParagraphStyle);
-            this.radRichTextEditor1.Document.StyleRepository.Add(linkedCharStyle);
+this.radRichTextEditor1.Document.StyleRepository.Add(linkedParagraphStyle);
+this.radRichTextEditor1.Document.StyleRepository.Add(linkedCharStyle);
+
 ````
 ````VB.NET
+Dim linkedParagraphStyle As New StyleDefinition()
+linkedParagraphStyle.Type = StyleType.Paragraph
+linkedParagraphStyle.ParagraphProperties.Background = Colors.Yellow
+linkedParagraphStyle.DisplayName = "linkedParagraphStyle"
+linkedParagraphStyle.Name = "linkedParagraphStyle"
+Dim linkedCharStyle As New StyleDefinition()
+linkedCharStyle.Type = StyleType.Character
+linkedCharStyle.SpanProperties.FontWeight = FontWeights.Bold
+linkedCharStyle.SpanProperties.FontSize = Unit.PointToDip(30)
+linkedCharStyle.SpanProperties.ForeColor = Colors.Purple
+linkedCharStyle.DisplayName = "linkedCharStyle"
+linkedCharStyle.Name = "linkedCharStyle"
+linkedParagraphStyle.LinkedStyle = linkedCharStyle
+Me.radRichTextEditor1.Document.StyleRepository.Add(linkedParagraphStyle)
+Me.radRichTextEditor1.Document.StyleRepository.Add(linkedCharStyle)
 
-        Dim linkedParagraphStyle As New StyleDefinition()
-        linkedParagraphStyle.Type = StyleType.Paragraph
-        linkedParagraphStyle.ParagraphProperties.Background = Colors.Yellow
-        linkedParagraphStyle.DisplayName = "linkedParagraphStyle"
-        linkedParagraphStyle.Name = "linkedParagraphStyle"
-
-        Dim linkedCharStyle As New StyleDefinition()
-        linkedCharStyle.Type = StyleType.Character
-        linkedCharStyle.SpanProperties.FontWeight = FontWeights.Bold
-        linkedCharStyle.SpanProperties.FontSize = Unit.PointToDip(30)
-        linkedCharStyle.SpanProperties.ForeColor = Colors.Purple
-        linkedCharStyle.DisplayName = "linkedCharStyle"
-        linkedCharStyle.Name = "linkedCharStyle"
-        linkedParagraphStyle.LinkedStyle = linkedCharStyle
-
-        Me.radRichTextEditor1.Document.StyleRepository.Add(linkedParagraphStyle)
-        Me.radRichTextEditor1.Document.StyleRepository.Add(linkedCharStyle)
-
-        '
 ````
 
 {{endregion}} 
@@ -217,13 +210,12 @@ For example, the following line will apply the "linkedParagraphStyle" to the cur
 
 ````C#
             
-            this.radRichTextEditor1.RichTextBoxElement.ChangeStyleName("linkedParagraphStyle");
+this.radRichTextEditor1.RichTextBoxElement.ChangeStyleName("linkedParagraphStyle");
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.RichTextBoxElement.ChangeStyleName("linkedParagraphStyle")
 
-        Me.radRichTextEditor1.RichTextBoxElement.ChangeStyleName("linkedParagraphStyle")
-
-        '
 ````
 
 {{endregion}} 
@@ -254,14 +246,12 @@ For example the __TableGrid__ style can be applied to a table as follows:
 {{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=table}} 
 
 ````C#
+table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName;
 
-            table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName;
 ````
 ````VB.NET
+table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName
 
-        table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName
-
-        '
 ````
 
 {{endregion}} 
@@ -273,14 +263,12 @@ And a paragraph can have __Heading 1__ style applied to it like this:
 {{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=paragraph}} 
 
 ````C#
+paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1);
 
-            paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1);
 ````
 ````VB.NET
+paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1)
 
-        paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1)
-
-        '
 ````
 
 {{endregion}} 

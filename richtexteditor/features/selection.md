@@ -44,24 +44,22 @@ Here is an example of how to select the current word.
 
 ````C#
             
-            DocumentPosition startPosition = this.radRichTextEditor1.Document.CaretPosition; //new DocumentPosition( this.radRichTextBox.Document );
-            DocumentPosition endPosition = new DocumentPosition(startPosition);
-            startPosition.MoveToCurrentWordStart();
-            endPosition.MoveToCurrentWordEnd();
-            this.radRichTextEditor1.Document.Selection.AddSelectionStart(startPosition);
-            this.radRichTextEditor1.Document.Selection.AddSelectionEnd(endPosition);
+DocumentPosition startPosition = this.radRichTextEditor1.Document.CaretPosition; //new DocumentPosition( this.radRichTextBox.Document );
+DocumentPosition endPosition = new DocumentPosition(startPosition);
+startPosition.MoveToCurrentWordStart();
+endPosition.MoveToCurrentWordEnd();
+this.radRichTextEditor1.Document.Selection.AddSelectionStart(startPosition);
+this.radRichTextEditor1.Document.Selection.AddSelectionEnd(endPosition);
+
 ````
 ````VB.NET
+Dim _startPosition As DocumentPosition = Me.radRichTextEditor1.Document.CaretPosition 'new DocumentPosition( this.radRichTextBox.Document );
+Dim endPosition As New DocumentPosition(_startPosition)
+_startPosition.MoveToCurrentWordStart()
+endPosition.MoveToCurrentWordEnd()
+Me.radRichTextEditor1.Document.Selection.AddSelectionStart(_startPosition)
+Me.radRichTextEditor1.Document.Selection.AddSelectionEnd(endPosition)
 
-
-        Dim _startPosition As DocumentPosition = Me.radRichTextEditor1.Document.CaretPosition 'new DocumentPosition( this.radRichTextBox.Document );
-        Dim endPosition As New DocumentPosition(_startPosition)
-        _startPosition.MoveToCurrentWordStart()
-        endPosition.MoveToCurrentWordEnd()
-        Me.radRichTextEditor1.Document.Selection.AddSelectionStart(_startPosition)
-        Me.radRichTextEditor1.Document.Selection.AddSelectionEnd(endPosition)
-
-        '
 ````
 
 {{endregion}} 
@@ -76,37 +74,36 @@ Here is an example of selecting each "RadRichTextEditor" word in the text. This 
 {{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=multiselect}} 
 
 ````C#
-                
-            DocumentPosition position = new DocumentPosition(this.radRichTextEditor1.Document);
-            do
-            {
-                //GetCurrentSpan().Text returns the word at the position
-                string word = position.GetCurrentSpanBox().Text;
-                if (word.Contains("RadRichTextBox"))
-                {
-                    DocumentPosition wordEndPosition = new DocumentPosition(position);
-                    wordEndPosition.MoveToCurrentWordEnd();
-                    this.radRichTextEditor1.Document.Selection.AddSelectionStart(position);
-                    this.radRichTextEditor1.Document.Selection.AddSelectionEnd(wordEndPosition);
-                }
-            }
-            while (position.MoveToNextWordStart());
+    
+DocumentPosition position = new DocumentPosition(this.radRichTextEditor1.Document);
+do
+{
+    //GetCurrentSpan().Text returns the word at the position
+    string word = position.GetCurrentSpanBox().Text;
+    if (word.Contains("RadRichTextBox"))
+    {
+        DocumentPosition wordEndPosition = new DocumentPosition(position);
+        wordEndPosition.MoveToCurrentWordEnd();
+        this.radRichTextEditor1.Document.Selection.AddSelectionStart(position);
+        this.radRichTextEditor1.Document.Selection.AddSelectionEnd(wordEndPosition);
+    }
+}
+while (position.MoveToNextWordStart());
+
 ````
 ````VB.NET
+Dim position As New DocumentPosition(Me.radRichTextEditor1.Document)
+Do
+    'GetCurrentSpan().Text returns the word at the position
+    Dim word As String = position.GetCurrentSpanBox().Text
+    If word.Contains("RadRichTextEditor") Then
+        Dim wordEndPosition As New DocumentPosition(position)
+        wordEndPosition.MoveToCurrentWordEnd()
+        Me.radRichTextEditor1.Document.Selection.AddSelectionStart(position)
+        Me.radRichTextEditor1.Document.Selection.AddSelectionEnd(wordEndPosition)
+    End If
+Loop While position.MoveToNextWordStart()
 
-        Dim position As New DocumentPosition(Me.radRichTextEditor1.Document)
-        Do
-            'GetCurrentSpan().Text returns the word at the position
-            Dim word As String = position.GetCurrentSpanBox().Text
-            If word.Contains("RadRichTextEditor") Then
-                Dim wordEndPosition As New DocumentPosition(position)
-                wordEndPosition.MoveToCurrentWordEnd()
-                Me.radRichTextEditor1.Document.Selection.AddSelectionStart(position)
-                Me.radRichTextEditor1.Document.Selection.AddSelectionEnd(wordEndPosition)
-            End If
-        Loop While position.MoveToNextWordStart()
-
-        '
 ````
 
 {{endregion}} 

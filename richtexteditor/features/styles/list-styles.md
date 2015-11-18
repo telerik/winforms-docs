@@ -58,39 +58,36 @@ Here as an example of creating a __ListStyle__ and a __DocumentList__ programmat
 {{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=listStyle}} 
 
 ````C#
-            ListStyle upperRomanHierarchical = new ListStyle();
-            upperRomanHierarchical.StyleLink = "Style1";
+ListStyle upperRomanHierarchical = new ListStyle();
+upperRomanHierarchical.StyleLink = "Style1";
+for (int i = 0; i < ListStyle.ListLevels; ++i)
+{
+    StringBuilder levelText = new StringBuilder();
+    for (int j = 0; j < i + 1; ++j)
+    {
+        levelText.Append("{" + j + "}.");
+    }
+    upperRomanHierarchical.Levels.Add(new ListLevelStyle()
+    {
+        StartingIndex = 1,
+        NumberingFormat = ListNumberingFormat.UpperRoman,
+        LevelText = levelText.ToString(),
+        Indent = 48 + i * 24
+    });
+}
 
-            for (int i = 0; i < ListStyle.ListLevels; ++i)
-            {
-                StringBuilder levelText = new StringBuilder();
-                for (int j = 0; j < i + 1; ++j)
-                {
-                    levelText.Append("{" + j + "}.");
-                }
-
-                upperRomanHierarchical.Levels.Add(new ListLevelStyle()
-                {
-                    StartingIndex = 1,
-                    NumberingFormat = ListNumberingFormat.UpperRoman,
-                    LevelText = levelText.ToString(),
-                    Indent = 48 + i * 24
-                });
-            }
 ````
 ````VB.NET
-        Dim upperRomanHierarchical As New ListStyle()
-        upperRomanHierarchical.StyleLink = "Style1"
+Dim upperRomanHierarchical As New ListStyle()
+upperRomanHierarchical.StyleLink = "Style1"
+For i As Integer = 0 To ListStyle.ListLevels - 1
+    Dim levelText As New StringBuilder()
+    For j As Integer = 0 To i
+        levelText.Append("{" & j & "}.")
+    Next j
+    upperRomanHierarchical.Levels.Add(New ListLevelStyle() With {.StartingIndex = 1, .NumberingFormat = ListNumberingFormat.UpperRoman, .LevelText = levelText.ToString(), .Indent = 48 + i * 24})
+Next i
 
-        For i As Integer = 0 To ListStyle.ListLevels - 1
-            Dim levelText As New StringBuilder()
-            For j As Integer = 0 To i
-                levelText.Append("{" & j & "}.")
-            Next j
-
-            upperRomanHierarchical.Levels.Add(New ListLevelStyle() With {.StartingIndex = 1, .NumberingFormat = ListNumberingFormat.UpperRoman, .LevelText = levelText.ToString(), .Indent = 48 + i * 24})
-        Next i
-        '
 ````
 
 {{endregion}} 
@@ -108,11 +105,12 @@ If you want to apply a style to a paragraph using the user interface you would m
 {{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=paragraph}} 
 
 ````C#
-            Paragraph paragraph = this.radRichTextEditor1.Document.CaretPosition.GetCurrentParagraphBox().AssociatedParagraph;
+Paragraph paragraph = this.radRichTextEditor1.Document.CaretPosition.GetCurrentParagraphBox().AssociatedParagraph;
+
 ````
 ````VB.NET
-        Dim paragraph As Paragraph = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentParagraphBox().AssociatedParagraph
-        '
+Dim paragraph As Paragraph = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentParagraphBox().AssociatedParagraph
+
 ````
 
 {{endregion}} 
@@ -126,13 +124,14 @@ As the logic of creating a custom list style is rather complex, the method __Add
 {{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=newStyle}} 
 
 ````C#
-            ListStyle newListStyle = this.radRichTextEditor1.Document.AddCustomListStyle(upperRomanHierarchical);
-            DocumentList documentList = new DocumentList(newListStyle, this.radRichTextEditor1.Document);
+ListStyle newListStyle = this.radRichTextEditor1.Document.AddCustomListStyle(upperRomanHierarchical);
+DocumentList documentList = new DocumentList(newListStyle, this.radRichTextEditor1.Document);
+
 ````
 ````VB.NET
-        Dim newListStyle As ListStyle = Me.radRichTextEditor1.Document.AddCustomListStyle(upperRomanHierarchical)
-        Dim documentList As New DocumentList(newListStyle, Me.radRichTextEditor1.Document)
-        '
+Dim newListStyle As ListStyle = Me.radRichTextEditor1.Document.AddCustomListStyle(upperRomanHierarchical)
+Dim documentList As New DocumentList(newListStyle, Me.radRichTextEditor1.Document)
+
 ````
 
 {{endregion}} 
@@ -145,11 +144,12 @@ Having the new __DocumentList__ all you have to do in order the paragraph to be 
 {{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=assing}} 
 
 ````C#
-            paragraph.ListId = documentList.ID;
+paragraph.ListId = documentList.ID;
+
 ````
 ````VB.NET
-        paragraph.ListId = documentList.ID
-        '
+paragraph.ListId = documentList.ID
+
 ````
 
 {{endregion}} 

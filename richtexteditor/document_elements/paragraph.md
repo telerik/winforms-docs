@@ -32,25 +32,23 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug winforms
 
 ````C#
             
-            Section section = new Section();
-            Paragraph paragraph = new Paragraph();          
-            section.Blocks.Add(paragraph);
-            RadDocument document = new RadDocument();
-            document.Sections.Add(section);
+Section section = new Section();
+Paragraph paragraph = new Paragraph();          
+section.Blocks.Add(paragraph);
+RadDocument document = new RadDocument();
+document.Sections.Add(section);
             
-            this.radRichTextEditor1.Document = document;
+this.radRichTextEditor1.Document = document;
+
 ````
 ````VB.NET
+Dim section As New Section()
+Dim paragraph As New Paragraph()    
+section.Blocks.Add(paragraph)
+Dim document As New RadDocument()
+document.Sections.Add(section)
+Me.radRichTextEditor1.Document = document
 
-        Dim section As New Section()
-        Dim paragraph As New Paragraph()    
-        section.Blocks.Add(paragraph)
-        Dim document As New RadDocument()
-        document.Sections.Add(section)
-
-        Me.radRichTextEditor1.Document = document
-
-        '
 ````
 
 {{endregion}} 
@@ -65,29 +63,27 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 
 ````C#
             
-            Section section = new Section();
-            Paragraph paragraph = new Paragraph();
-            Span span = new Span("Span declared in code-behind");
-            paragraph.Inlines.Add(span);
-            section.Blocks.Add(paragraph);
-            RadDocument document = new RadDocument();
-            document.Sections.Add(section);
+Section section = new Section();
+Paragraph paragraph = new Paragraph();
+Span span = new Span("Span declared in code-behind");
+paragraph.Inlines.Add(span);
+section.Blocks.Add(paragraph);
+RadDocument document = new RadDocument();
+document.Sections.Add(section);
     
-            this.radRichTextEditor1.Document = document;
+this.radRichTextEditor1.Document = document;
+
 ````
 ````VB.NET
+Dim section As New Section()
+Dim paragraph As New Paragraph()
+Dim span As New Span("Span declared in code-behind")
+paragraph.Inlines.Add(span)
+section.Blocks.Add(paragraph)
+Dim document As New RadDocument()
+document.Sections.Add(section)
+Me.radRichTextEditor1.Document = document
 
-        Dim section As New Section()
-        Dim paragraph As New Paragraph()
-        Dim span As New Span("Span declared in code-behind")
-        paragraph.Inlines.Add(span)
-        section.Blocks.Add(paragraph)
-        Dim document As New RadDocument()
-        document.Sections.Add(section)
-
-        Me.radRichTextEditor1.Document = document
-
-        '
 ````
 
 {{endregion}} 

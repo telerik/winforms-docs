@@ -115,11 +115,12 @@ Every bookmark has a unique name. So in order to insert a reference to a bookmar
 {{source=..\SamplesVB\RichTextEditor\Features\CrossReference.vb region=bookmark}} 
 
 ````C#
-            radRichTextEditor1.InsertCrossReferenceToBookmark("Bookmark Name", ReferenceContentType.EntireContent, false);
+radRichTextEditor1.InsertCrossReferenceToBookmark("Bookmark Name", ReferenceContentType.EntireContent, false);
+
 ````
 ````VB.NET
-        radRichTextEditor1.InsertCrossReferenceToBookmark("Bookmark Name", ReferenceContentType.EntireContent, False)
-        '
+radRichTextEditor1.InsertCrossReferenceToBookmark("Bookmark Name", ReferenceContentType.EntireContent, False)
+
 ````
 
 {{endregion}} 
@@ -131,7 +132,12 @@ __ReferenceContentType__ is an enumeration that has five values – __EntireCont
 You have to pass the paragraph (with heading style applied, of course) that you want to create a Reference to. The method signature is as follows:
 
 {{source=..\SamplesCS\RichTextEditor\Features\CrossReference.cs region=heading}} 
-{{source=..\SamplesVB\RichTextEditor\Features\CrossReference.vb region=heading}} 
+{{source=..\SamplesVB\RichTextEditor\Features\CrossReference.vb region=heading}}````C#
+radRichTextEditor1.InsertCrossReferenceToHeading(headingParagraph, ReferenceContentType.OnlyCaption, true);
+
+````
+````VB.NET
+```` 
 
 
 {{endregion}}
@@ -144,11 +150,12 @@ The method signature is:
 {{source=..\SamplesVB\RichTextEditor\Features\CrossReference.vb region=caption}} 
 
 ````C#
-            radRichTextEditor1.InsertCrossReferenceToCaption(captionParagraph, ReferenceContentType.OnlyLabelAndNumber,false);
+radRichTextEditor1.InsertCrossReferenceToCaption(captionParagraph, ReferenceContentType.OnlyLabelAndNumber,false);
+
 ````
 ````VB.NET
-        radRichTextEditor1.InsertCrossReferenceToCaption(captionParagraph, ReferenceContentType.OnlyLabelAndNumber, False)
-        '
+radRichTextEditor1.InsertCrossReferenceToCaption(captionParagraph, ReferenceContentType.OnlyLabelAndNumber, False)
+
 ````
 
 {{endregion}}

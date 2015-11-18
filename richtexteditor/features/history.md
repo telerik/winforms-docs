@@ -36,13 +36,12 @@ You can enable or disable the history for the __RadDocument__ via the __Enabled_
 
 ````C#
             
-            this.radRichTextEditor1.Document.History.IsEnabled = false;
+this.radRichTextEditor1.Document.History.IsEnabled = false;
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.Document.History.IsEnabled = False
 
-        Me.radRichTextEditor1.Document.History.IsEnabled = False
-
-        '
 ````
 
 {{endregion}} 
@@ -57,13 +56,12 @@ To clear the history you just have to call the __Clear()__ method of the __Docum
 
 ````C#
             
-            this.radRichTextEditor1.Document.History.Clear();
+this.radRichTextEditor1.Document.History.Clear();
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.Document.History.Clear()
 
-        Me.radRichTextEditor1.Document.History.Clear()
-
-        '
 ````
 
 {{endregion}} 
@@ -80,25 +78,24 @@ To undo and redo some actions, you can call the __Undo()__ and __Redo()__ method
 
 ````C#
         
-        private void UndoAction()
-        {
-            this.radRichTextEditor1.Undo();
-        }
+private void UndoAction()
+{
+    this.radRichTextEditor1.Undo();
+}
+private void RedoAction()
+{
+    this.radRichTextEditor1.Redo();
+}
 
-        private void RedoAction()
-        {
-            this.radRichTextEditor1.Redo();
-        }
 ````
 ````VB.NET
+Private Sub UndoAction()
+    Me.radRichTextEditor1.Undo()
+End Sub
+Private Sub RedoAction()
+    Me.radRichTextEditor1.Redo()
+End Sub
 
-    Private Sub UndoAction()
-        Me.radRichTextEditor1.Undo()
-    End Sub
-
-    Private Sub RedoAction()
-        Me.radRichTextEditor1.Redo()
-    End Sub
 ````
 
 {{endregion}} 
@@ -115,13 +112,12 @@ To change the history capacity you have to set the desired value of the __Depth_
 
 ````C#
         
-            this.radRichTextEditor1.Document.History.Depth = 500;
+this.radRichTextEditor1.Document.History.Depth = 500;
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.Document.History.Depth = 500
 
-        Me.radRichTextEditor1.Document.History.Depth = 500
-
-        '
 ````
 
 {{endregion}} 

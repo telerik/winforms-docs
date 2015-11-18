@@ -20,13 +20,12 @@ To change the default English localization provider you should use the __Current
 
 ````C#
             
-            RichTextBoxLocalizationProvider.CurrentProvider = RichTextBoxLocalizationProvider.FromFile(@"C:\RichTextBoxStrings.xml");
+RichTextBoxLocalizationProvider.CurrentProvider = RichTextBoxLocalizationProvider.FromFile(@"C:\RichTextBoxStrings.xml");
+
 ````
 ````VB.NET
+RichTextBoxLocalizationProvider.CurrentProvider = RichTextBoxLocalizationProvider.FromFile("C:\RichTextBoxStrings.xml")
 
-        RichTextBoxLocalizationProvider.CurrentProvider = RichTextBoxLocalizationProvider.FromFile("C:\RichTextBoxStrings.xml")
-
-        '
 ````
 
 {{endregion}} 
@@ -42,41 +41,40 @@ Another approach is to create a custom localization provider class which inherit
 
 ````C#
     
-    public class MyRichTextBoxLocalizationProvider : RichTextBoxLocalizationProvider
+public class MyRichTextBoxLocalizationProvider : RichTextBoxLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
     {
-        public override string GetLocalizedString(string id)
+        switch (id)
         {
-            switch (id)
-            {
-                case "Documents_FindReplaceDialog_FindNext":
-                    return "Weitersuchen";
-                case "Documents_FindReplaceDialog_Header":
-                    return "Suchen und Ersetzen";
-                case "Documents_FindReplaceDialog_Replace":
-                    return "Ersetzen";
-                case "Documents_FindReplaceDialog_ReplaceAll":
-                    return "Alle ersetzen";
-                case "Documents_FindReplaceDialog_ReplaceWith":
-                    return "Ersetzen durch";
-                case "Documents_FindReplaceDialog_TextToFind":
-                    return "Suchen nach";
-                case "Documents_FindReplaceDialog_RestartSearch":
-                    return "Zeigen unten die Multifunktionsleiste";
-                case "Documents_FindReplaceDialog_SearchedTextNotFound":
-                    return "Der Suchbegriff wurde nicht gefunden";
-                case "RibbonUI_BackstageButtonPrint":
-                    return "Druck";
-            }
-        
-            return base.GetLocalizedString(id);
+            case "Documents_FindReplaceDialog_FindNext":
+                return "Weitersuchen";
+            case "Documents_FindReplaceDialog_Header":
+                return "Suchen und Ersetzen";
+            case "Documents_FindReplaceDialog_Replace":
+                return "Ersetzen";
+            case "Documents_FindReplaceDialog_ReplaceAll":
+                return "Alle ersetzen";
+            case "Documents_FindReplaceDialog_ReplaceWith":
+                return "Ersetzen durch";
+            case "Documents_FindReplaceDialog_TextToFind":
+                return "Suchen nach";
+            case "Documents_FindReplaceDialog_RestartSearch":
+                return "Zeigen unten die Multifunktionsleiste";
+            case "Documents_FindReplaceDialog_SearchedTextNotFound":
+                return "Der Suchbegriff wurde nicht gefunden";
+            case "RibbonUI_BackstageButtonPrint":
+                return "Druck";
         }
+    
+        return base.GetLocalizedString(id);
     }
+}
+
 ````
 ````VB.NET
-
 Public Class MyRichTextBoxLocalizationProvider
     Inherits RichTextBoxLocalizationProvider
-
     Public Overrides Function GetLocalizedString(ByVal id As String) As String
         Select Case id
             Case "Documents_FindReplaceDialog_FindNext"
@@ -98,10 +96,10 @@ Public Class MyRichTextBoxLocalizationProvider
             Case "RibbonUI_BackstageButtonPrint"
                 Return "Druck"
         End Select
-
         Return MyBase.GetLocalizedString(id)
     End Function
 End Class
+
 ````
 
 {{endregion}} 
@@ -113,16 +111,15 @@ The following code snippet shows how you can use the new class:
 
 ````C#
             
-            RichTextBoxLocalizationProvider.CurrentProvider = new MyRichTextBoxLocalizationProvider();
+RichTextBoxLocalizationProvider.CurrentProvider = new MyRichTextBoxLocalizationProvider();
             
-            InitializeComponent();
+InitializeComponent();
+
 ````
 ````VB.NET
+RichTextBoxLocalizationProvider.CurrentProvider = New MyRichTextBoxLocalizationProvider()
+InitializeComponent()
 
-        RichTextBoxLocalizationProvider.CurrentProvider = New MyRichTextBoxLocalizationProvider()
-
-        InitializeComponent()
-        '
 ````
 
 {{endregion}} 

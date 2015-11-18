@@ -87,20 +87,18 @@ Footnotes and endnotes all contain the __Note__ class which defines the note bod
 {{source=..\SamplesVB\RichTextEditor\Features\FootnotesAndEndnotes.vb region=insert}} 
 
 ````C#
+radRichTextEditor1.InsertFootnote();
+radRichTextEditor1.InsertFootnote(new Note());
+radRichTextEditor1.InsertEndnote();
+radRichTextEditor1.InsertEndnote(new Note());
 
-            radRichTextEditor1.InsertFootnote();
-            radRichTextEditor1.InsertFootnote(new Note());
-            radRichTextEditor1.InsertEndnote();
-            radRichTextEditor1.InsertEndnote(new Note());
 ````
 ````VB.NET
+radRichTextEditor1.InsertFootnote()
+radRichTextEditor1.InsertFootnote(New Note())
+radRichTextEditor1.InsertEndnote()
+radRichTextEditor1.InsertEndnote(New Note())
 
-        radRichTextEditor1.InsertFootnote()
-        radRichTextEditor1.InsertFootnote(New Note())
-        radRichTextEditor1.InsertEndnote()
-        radRichTextEditor1.InsertEndnote(New Note())
-
-        '
 ````
 
 {{endregion}} 
@@ -112,20 +110,18 @@ There is a set of document styles that are used inside notes content. It is reco
 {{source=..\SamplesVB\RichTextEditor\Features\FootnotesAndEndnotes.vb region=static}} 
 
 ````C#
+Note note = Note.CreateCustomMarkFootnote("symbol");
+note = Note.CreateCustomMarkEndnote("symbol", new FontFamily("Arial"));
+note = Note.CreateDefaultFootnote();
+note = Note.CreateDefaultEndnote();
 
-            Note note = Note.CreateCustomMarkFootnote("symbol");
-            note = Note.CreateCustomMarkEndnote("symbol", new FontFamily("Arial"));
-            note = Note.CreateDefaultFootnote();
-            note = Note.CreateDefaultEndnote();
 ````
 ````VB.NET
+Dim note As Note = note.CreateCustomMarkFootnote("symbol")
+note = note.CreateCustomMarkEndnote("symbol", New FontFamily("Arial"))
+note = note.CreateDefaultFootnote()
+note = note.CreateDefaultEndnote()
 
-        Dim note As Note = note.CreateCustomMarkFootnote("symbol")
-        note = note.CreateCustomMarkEndnote("symbol", New FontFamily("Arial"))
-        note = note.CreateDefaultFootnote()
-        note = note.CreateDefaultEndnote()
-
-        '
 ````
 
 {{endregion}} 
@@ -136,16 +132,14 @@ Here is for example how to insert a footnote with a custom mark – dollar sign 
 {{source=..\SamplesVB\RichTextEditor\Features\FootnotesAndEndnotes.vb region=add}} 
 
 ````C#
+Note note1 = Note.CreateCustomMarkFootnote("$", new FontFamily("Calibri"));
+this.radRichTextEditor1.InsertFootnote(note1);
 
-            Note note1 = Note.CreateCustomMarkFootnote("$", new FontFamily("Calibri"));
-            this.radRichTextEditor1.InsertFootnote(note1);
 ````
 ````VB.NET
+Dim note1 As Note = note.CreateCustomMarkFootnote("$", New FontFamily("Calibri"))
+Me.radRichTextEditor1.InsertFootnote(note1)
 
-        Dim note1 As Note = note.CreateCustomMarkFootnote("$", New FontFamily("Calibri"))
-        Me.radRichTextEditor1.InsertFootnote(note1)
-
-        '
 ````
 
 {{endregion}} 
@@ -159,19 +153,18 @@ You can programmatically navigate the document caret position through the notes 
 
 ````C#
             
-            radRichTextEditor1.GoToNextFootnote();
-            radRichTextEditor1.GoToPreviousFootnote();
-            radRichTextEditor1.GoToNextEndnote();
-            radRichTextEditor1.GoToPreviousEndnote();
+radRichTextEditor1.GoToNextFootnote();
+radRichTextEditor1.GoToPreviousFootnote();
+radRichTextEditor1.GoToNextEndnote();
+radRichTextEditor1.GoToPreviousEndnote();
+
 ````
 ````VB.NET
+radRichTextEditor1.GoToNextFootnote()
+radRichTextEditor1.GoToPreviousFootnote()
+radRichTextEditor1.GoToNextEndnote()
+radRichTextEditor1.GoToPreviousEndnote()
 
-        radRichTextEditor1.GoToNextFootnote()
-        radRichTextEditor1.GoToPreviousFootnote()
-        radRichTextEditor1.GoToNextEndnote()
-        radRichTextEditor1.GoToPreviousEndnote()
-
-        '
 ````
 
 {{endregion}} 
@@ -183,23 +176,20 @@ You can use the __ScrollToNote()__ method to scroll the viewport so that a note 
 {{source=..\SamplesVB\RichTextEditor\Features\FootnotesAndEndnotes.vb region=range}} 
 
 ````C#
-
-            EndnoteRangeStart noteRangeStart = this.radRichTextEditor1.Document.EnumerateChildrenOfType<EndnoteRangeStart>().FirstOrDefault();
+EndnoteRangeStart noteRangeStart = this.radRichTextEditor1.Document.EnumerateChildrenOfType<EndnoteRangeStart>().FirstOrDefault();
             
-            if (noteRangeStart != null)
-            {
-                this.radRichTextEditor1.ScrollToNote(noteRangeStart.Note);
-            }
+if (noteRangeStart != null)
+{
+    this.radRichTextEditor1.ScrollToNote(noteRangeStart.Note);
+}
+
 ````
 ````VB.NET
+Dim noteRangeStart As EndnoteRangeStart = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of EndnoteRangeStart)().FirstOrDefault()
+If noteRangeStart IsNot Nothing Then
+    Me.radRichTextEditor1.ScrollToNote(noteRangeStart.Note)
+End If
 
-        Dim noteRangeStart As EndnoteRangeStart = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of EndnoteRangeStart)().FirstOrDefault()
-
-        If noteRangeStart IsNot Nothing Then
-            Me.radRichTextEditor1.ScrollToNote(noteRangeStart.Note)
-        End If
-
-        '
 ````
 
 {{endregion}} 

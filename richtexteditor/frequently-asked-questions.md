@@ -41,26 +41,26 @@ You can set these properties in code behind:
 
 ````C#
         
-        public void SetDefaultFontPropertiesToEditor(RadRichTextEditor editor)
-        {
-            editor.RichTextBoxElement.ChangeFontFamily(new Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS"));
-            editor.RichTextBoxElement.ChangeFontSize(Unit.PointToDip(12));
-            editor.RichTextBoxElement.ChangeFontStyle(Telerik.WinControls.RichTextEditor.UI.FontStyles.Italic);
-            editor.RichTextBoxElement.ChangeFontWeight(Telerik.WinControls.RichTextEditor.UI.FontWeights.Bold);
-            
-            editor.DocumentInheritsDefaultStyleSettings = true;
-        }
+public void SetDefaultFontPropertiesToEditor(RadRichTextEditor editor)
+{
+    editor.RichTextBoxElement.ChangeFontFamily(new Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS"));
+    editor.RichTextBoxElement.ChangeFontSize(Unit.PointToDip(12));
+    editor.RichTextBoxElement.ChangeFontStyle(Telerik.WinControls.RichTextEditor.UI.FontStyles.Italic);
+    editor.RichTextBoxElement.ChangeFontWeight(Telerik.WinControls.RichTextEditor.UI.FontWeights.Bold);
+    
+    editor.DocumentInheritsDefaultStyleSettings = true;
+}
+
 ````
 ````VB.NET
-    Public Sub SetDefaultFontPropertiesToEditor(ByVal editor As RadRichTextEditor)
-        editor.RichTextBoxElement.ChangeFontFamily(New Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS"))
-        editor.RichTextBoxElement.ChangeFontSize(Unit.PointToDip(12))
-        editor.RichTextBoxElement.ChangeFontStyle(Telerik.WinControls.RichTextEditor.UI.FontStyles.Italic)
-        editor.RichTextBoxElement.ChangeFontWeight(Telerik.WinControls.RichTextEditor.UI.FontWeights.Bold)
+Public Sub SetDefaultFontPropertiesToEditor(ByVal editor As RadRichTextEditor)
+    editor.RichTextBoxElement.ChangeFontFamily(New Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS"))
+    editor.RichTextBoxElement.ChangeFontSize(Unit.PointToDip(12))
+    editor.RichTextBoxElement.ChangeFontStyle(Telerik.WinControls.RichTextEditor.UI.FontStyles.Italic)
+    editor.RichTextBoxElement.ChangeFontWeight(Telerik.WinControls.RichTextEditor.UI.FontWeights.Bold)
+    editor.DocumentInheritsDefaultStyleSettings = True
+End Sub
 
-        editor.DocumentInheritsDefaultStyleSettings = True
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -90,18 +90,19 @@ You can read more about the use of format providers [here]({%slug winforms/richt
 
 ````C#
         
-        public string GetXAML(RadDocument document)
-        {
-            XamlFormatProvider provider = new XamlFormatProvider();
-            return provider.Export(document);
-        }
+public string GetXAML(RadDocument document)
+{
+    XamlFormatProvider provider = new XamlFormatProvider();
+    return provider.Export(document);
+}
+
 ````
 ````VB.NET
-    Public Function GetXAML(ByVal document As RadDocument) As String
-        Dim provider As New XamlFormatProvider()
-        Return provider.Export(document)
-    End Function
-    '
+Public Function GetXAML(ByVal document As RadDocument) As String
+    Dim provider As New XamlFormatProvider()
+    Return provider.Export(document)
+End Function
+
 ````
 
 {{endregion}} 
@@ -114,18 +115,19 @@ To get the text stripped of all formatting, you can use __TxtFormatProvider__. S
 
 ````C#
         
-        public RadDocument ImportHtml(string content)
-        {
-            HtmlFormatProvider provider = new HtmlFormatProvider();
-            return provider.Import(content);
-        }
+public RadDocument ImportHtml(string content)
+{
+    HtmlFormatProvider provider = new HtmlFormatProvider();
+    return provider.Import(content);
+}
+
 ````
 ````VB.NET
-    Public Function ImportHtml(ByVal content As String) As RadDocument
-        Dim provider As New HtmlFormatProvider()
-        Return provider.Import(content)
-    End Function
-    '
+Public Function ImportHtml(ByVal content As String) As RadDocument
+    Dim provider As New HtmlFormatProvider()
+    Return provider.Import(content)
+End Function
+
 ````
 
 {{endregion}} 
@@ -140,11 +142,12 @@ If you wish to preserve the initial content of the document and insert text at d
 
 ````C#
             
-            this.radRichTextEditor1.Insert(textToInsert);
+this.radRichTextEditor1.Insert(textToInsert);
+
 ````
 ````VB.NET
-        Me.radRichTextEditor1.Insert(textToInsert)
-        '
+Me.radRichTextEditor1.Insert(textToInsert)
+
 ````
 
 {{endregion}} 
@@ -161,12 +164,12 @@ If you are using a document in flow layout mode, the document respects the value
 
 ````C#
             
-            this.radRichTextEditor1.Padding = new Telerik.WinControls.RichTextEditor.UI.Thickness(0, 20, 100, 60);
+this.radRichTextEditor1.Padding = new Telerik.WinControls.RichTextEditor.UI.Thickness(0, 20, 100, 60);
+
 ````
 ````VB.NET
-        Me.radRichTextEditor1.Padding = New Telerik.WinControls.RichTextEditor.UI.Thickness(0, 20, 100, 60)
+Me.radRichTextEditor1.Padding = New Telerik.WinControls.RichTextEditor.UI.Thickness(0, 20, 100, 60)
 
-        '
 ````
 
 {{endregion}} 
@@ -178,13 +181,14 @@ With paged layout mode, you can set the margin of the document like this
 
 ````C#
             
-            this.radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged;
-            this.radRichTextEditor1.Document.SectionDefaultPageMargin = new Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60);
+this.radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged;
+this.radRichTextEditor1.Document.SectionDefaultPageMargin = new Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60);
+
 ````
 ````VB.NET
-        Me.radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged
-        Me.radRichTextEditor1.Document.SectionDefaultPageMargin = New Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60)
-        '
+Me.radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged
+Me.radRichTextEditor1.Document.SectionDefaultPageMargin = New Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60)
+
 ````
 
 {{endregion}} 
@@ -201,12 +205,12 @@ In order to change the margin of an already measured Section, you can use the fo
 {{source=..\SamplesVB\RichTextEditor\FAQ.vb region=margin2}} 
 
 ````C#
+radRichTextEditor1.Document.Sections.First.PageMargin = new Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60);
 
-            radRichTextEditor1.Document.Sections.First.PageMargin = new Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60);
 ````
 ````VB.NET
-        radRichTextEditor1.Document.Sections.First.PageMargin = New Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60)
-        '
+radRichTextEditor1.Document.Sections.First.PageMargin = New Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60)
+
 ````
 
 {{endregion}} 

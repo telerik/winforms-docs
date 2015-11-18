@@ -33,15 +33,13 @@ This topic will list the steps for creating such a custom field.
 {{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=define}} 
 
 ````C#
+public class CustomField : CodeBasedField
 
-    public class CustomField : CodeBasedField
 ````
 ````VB.NET
-
 Public Class CustomField
 Inherits CodeBasedField
 
-    '
 ````
 
 {{endregion}} 
@@ -53,27 +51,25 @@ Inherits CodeBasedField
 
 ````C#
         
-        private static readonly string FieldType = "CUSTOMFIELD";
-            
-        public override string FieldTypeName
-        {
-            get
-            {
-                return CustomField.FieldType;
-            }
-        }
+private static readonly string FieldType = "CUSTOMFIELD";
+    
+public override string FieldTypeName
+{
+    get
+    {
+        return CustomField.FieldType;
+    }
+}
+
 ````
 ````VB.NET
+Private Shared ReadOnly FieldType As String = "CUSTOMFIELD"
+Public Overrides ReadOnly Property FieldTypeName() As String
+    Get
+        Return CustomField.FieldType
+    End Get
+End Property
 
-    Private Shared ReadOnly FieldType As String = "CUSTOMFIELD"
-
-    Public Overrides ReadOnly Property FieldTypeName() As String
-        Get
-            Return CustomField.FieldType
-        End Get
-    End Property
-
-    '
 ````
 
 {{endregion}} 
@@ -86,19 +82,18 @@ The field type is shown when the field is in code mode, just after the opening c
 {{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=ctor}} 
 
 ````C#
-            
-        static CustomField()
-        {
-            CodeBasedFieldFactory.RegisterFieldType(CustomField.FieldType, () => new CustomField());
-        }
+    
+static CustomField()
+{
+    CodeBasedFieldFactory.RegisterFieldType(CustomField.FieldType, () => new CustomField());
+}
+
 ````
 ````VB.NET
+Shared Sub New()
+    CodeBasedFieldFactory.RegisterFieldType(CustomField.FieldType, Function() New CustomField())
+End Sub
 
-    Shared Sub New()
-        CodeBasedFieldFactory.RegisterFieldType(CustomField.FieldType, Function() New CustomField())
-    End Sub
-
-    '
 ````
 
 {{endregion}} 
@@ -111,19 +106,18 @@ The function passed as a second parameter essentially tells the document how it 
 {{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=create}} 
 
 ````C#
-            
-        public override Field CreateInstance()
-        {
-            return new CustomField();
-        }
+    
+public override Field CreateInstance()
+{
+    return new CustomField();
+}
+
 ````
 ````VB.NET
+Public Overrides Function CreateInstance() As Field
+    Return New CustomField()
+End Function
 
-    Public Overrides Function CreateInstance() As Field
-        Return New CustomField()
-    End Function
-
-    '
 ````
 
 {{endregion}}
@@ -143,14 +137,12 @@ If you would like to add some properties to this field, similar to the PropertyP
 
 ````C#
         
-        private readonly FieldProperty myProperty;
+private readonly FieldProperty myProperty;
+
 ````
 ````VB.NET
+Private ReadOnly _myProperty As FieldProperty
 
-
-    Private ReadOnly _myProperty As FieldProperty
-
-    '
 ````
 
 {{endregion}} 
@@ -162,43 +154,41 @@ If you would like to add some properties to this field, similar to the PropertyP
 
 ````C#
         
-        [XamlSerializable]
-        public string MyProperty
+[XamlSerializable]
+public string MyProperty
+{
+    get
+    {
+        return this.myProperty.GetValue();
+    }
+    set
+    {
+        if (!this.myProperty.IsNestedField && this.myProperty.GetValue() == value)
         {
-            get
-            {
-                return this.myProperty.GetValue();
-            }
-            set
-            {
-                if (!this.myProperty.IsNestedField && this.myProperty.GetValue() == value)
-                {
-                    return;
-                }
-            
-                this.myProperty.SetValue(value);
-                this.InvalidateCode();
-            }
+            return;
         }
+    
+        this.myProperty.SetValue(value);
+        this.InvalidateCode();
+    }
+}
+
 ````
 ````VB.NET
+<XamlSerializable>
+Public Property MyProperty() As String
+    Get
+        Return Me._myProperty.GetValue()
+    End Get
+    Set(ByVal value As String)
+        If (Not Me._myProperty.IsNestedField) AndAlso Me._myProperty.GetValue() = value Then
+            Return
+        End If
+        Me._myProperty.SetValue(value)
+        Me.InvalidateCode()
+    End Set
+End Property
 
-    <XamlSerializable>
-    Public Property MyProperty() As String
-        Get
-            Return Me._myProperty.GetValue()
-        End Get
-        Set(ByVal value As String)
-            If (Not Me._myProperty.IsNestedField) AndAlso Me._myProperty.GetValue() = value Then
-                Return
-            End If
-
-            Me._myProperty.SetValue(value)
-            Me.InvalidateCode()
-        End Set
-    End Property
-
-    '
 ````
 
 {{endregion}} 
@@ -212,13 +202,12 @@ The XamlSerializable attribute ensures that this property will be exported and i
 
 ````C#
         
-        public static readonly FieldPropertyDefinition MyPropertyProperty = new FieldPropertyDefinition("MyProperty");
+public static readonly FieldPropertyDefinition MyPropertyProperty = new FieldPropertyDefinition("MyProperty");
+
 ````
 ````VB.NET
+Public Shared ReadOnly MyPropertyProperty As New FieldPropertyDefinition("MyProperty")
 
-    Public Shared ReadOnly MyPropertyProperty As New FieldPropertyDefinition("MyProperty")
-
-    '
 ````
 
 {{endregion}} 
@@ -229,19 +218,18 @@ The XamlSerializable attribute ensures that this property will be exported and i
 {{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=ctor2}} 
 
 ````C#
-            
-        public CustomField()
-        {
-            this.myProperty = new FieldProperty(this, CustomField.MyPropertyProperty);
-        }
+    
+public CustomField()
+{
+    this.myProperty = new FieldProperty(this, CustomField.MyPropertyProperty);
+}
+
 ````
 ````VB.NET
+Public Sub New()
+    Me._myProperty = New FieldProperty(Me, CustomField.MyPropertyProperty)
+End Sub
 
-    Public Sub New()
-        Me._myProperty = New FieldProperty(Me, CustomField.MyPropertyProperty)
-    End Sub
-
-    '
 ````
 
 {{endregion}} 
@@ -252,21 +240,20 @@ The XamlSerializable attribute ensures that this property will be exported and i
 {{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=codeExpression}} 
 
 ````C#
-            
-        protected override void CopyPropertiesFromCodeExpression(FieldCodeExpression fieldCodeExpression)
-        {
-            base.CopyPropertiesFromCodeExpression(fieldCodeExpression);
-            this.myProperty.SetValue(fieldCodeExpression.FieldArgumentNode);
-        }
+    
+protected override void CopyPropertiesFromCodeExpression(FieldCodeExpression fieldCodeExpression)
+{
+    base.CopyPropertiesFromCodeExpression(fieldCodeExpression);
+    this.myProperty.SetValue(fieldCodeExpression.FieldArgumentNode);
+}
+
 ````
 ````VB.NET
+Protected Overrides Sub CopyPropertiesFromCodeExpression(ByVal fieldCodeExpression As FieldCodeExpression)
+    MyBase.CopyPropertiesFromCodeExpression(fieldCodeExpression)
+    Me._myProperty.SetValue(fieldCodeExpression.FieldArgumentNode)
+End Sub
 
-    Protected Overrides Sub CopyPropertiesFromCodeExpression(ByVal fieldCodeExpression As FieldCodeExpression)
-        MyBase.CopyPropertiesFromCodeExpression(fieldCodeExpression)
-        Me._myProperty.SetValue(fieldCodeExpression.FieldArgumentNode)
-    End Sub
-
-    '
 ````
 
 {{endregion}} 
@@ -278,21 +265,20 @@ This method is used when a field is created from field fragment.  This happens w
 {{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=build}} 
 
 ````C#
-            
-        protected override void BuildCodeOverride()
-        {
-            base.BuildCodeOverride();
-            this.CodeBuilder.SetFieldArgument(this.myProperty);
-        }
+    
+protected override void BuildCodeOverride()
+{
+    base.BuildCodeOverride();
+    this.CodeBuilder.SetFieldArgument(this.myProperty);
+}
+
 ````
 ````VB.NET
+Protected Overrides Sub BuildCodeOverride()
+    MyBase.BuildCodeOverride()
+    Me.CodeBuilder.SetFieldArgument(Me._myProperty)
+End Sub
 
-    Protected Overrides Sub BuildCodeOverride()
-        MyBase.BuildCodeOverride()
-        Me.CodeBuilder.SetFieldArgument(Me._myProperty)
-    End Sub
-
-    '
 ````
 
 {{endregion}} 
@@ -304,24 +290,22 @@ This method is invoked when the CodeFragment of the field is requested. In it, t
 {{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=copy}} 
 
 ````C#
-            
-        public override void CopyPropertiesFrom(Field fromField)
-        {
-            base.CopyPropertiesFrom(fromField);
-            CustomField customField = (CustomField)fromField;
-            this.myProperty.CopyPropertiesFrom(customField.myProperty);
-        }
+    
+public override void CopyPropertiesFrom(Field fromField)
+{
+    base.CopyPropertiesFrom(fromField);
+    CustomField customField = (CustomField)fromField;
+    this.myProperty.CopyPropertiesFrom(customField.myProperty);
+}
+
 ````
 ````VB.NET
+Public Overrides Sub CopyPropertiesFrom(ByVal fromField As Field)
+    MyBase.CopyPropertiesFrom(fromField)
+    Dim _customField As CustomField = CType(fromField, CustomField)
+    Me._myProperty.CopyPropertiesFrom(_customField._myProperty)
+End Sub
 
-    Public Overrides Sub CopyPropertiesFrom(ByVal fromField As Field)
-        MyBase.CopyPropertiesFrom(fromField)
-
-        Dim _customField As CustomField = CType(fromField, CustomField)
-        Me._myProperty.CopyPropertiesFrom(_customField._myProperty)
-    End Sub
-
-    '
 ````
 
 {{endregion}} 
@@ -334,19 +318,18 @@ As field ranges are copyable, this method must be overridden in order to ensure 
 {{source=..\SamplesVB\RichTextEditor\Features\CustomFields.vb region=fragment}} 
 
 ````C#
-            
-        protected override DocumentFragment GetResultFragment()
-        {
-            return DocumentFragment.CreateFromInline(new Span(this.MyProperty));
-        }
+    
+protected override DocumentFragment GetResultFragment()
+{
+    return DocumentFragment.CreateFromInline(new Span(this.MyProperty));
+}
+
 ````
 ````VB.NET
+Protected Overrides Function GetResultFragment() As DocumentFragment
+    Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))
+End Function
 
-    Protected Overrides Function GetResultFragment() As DocumentFragment
-        Return DocumentFragment.CreateFromInline(New Span(Me.MyProperty))
-    End Function
-
-    '
 ````
 
 {{endregion}} 

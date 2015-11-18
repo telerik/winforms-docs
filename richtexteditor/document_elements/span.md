@@ -30,23 +30,22 @@ The __Spans__ can be used only in the context of the [Paragraph]({%slug winforms
 
 ````C#
             
-            Section section = new Section();
-            Paragraph paragraph = new Paragraph();
-            Span span = new Span("Span declared in code-behind");
-            paragraph.Inlines.Add(span);
-            section.Blocks.Add(paragraph);
-            this.radRichTextEditor1.Document.Sections.Add(section);
+Section section = new Section();
+Paragraph paragraph = new Paragraph();
+Span span = new Span("Span declared in code-behind");
+paragraph.Inlines.Add(span);
+section.Blocks.Add(paragraph);
+this.radRichTextEditor1.Document.Sections.Add(section);
+
 ````
 ````VB.NET
+Dim section As New Section()
+Dim paragraph As New Paragraph()
+Dim span As New Span("Span declared in code-behind")
+paragraph.Inlines.Add(span)
+section.Blocks.Add(paragraph)
+Me.radRichTextEditor1.Document.Sections.Add(section)
 
-        Dim section As New Section()
-        Dim paragraph As New Paragraph()
-        Dim span As New Span("Span declared in code-behind")
-        paragraph.Inlines.Add(span)
-        section.Blocks.Add(paragraph)
-        Me.radRichTextEditor1.Document.Sections.Add(section)
-
-        '
 ````
 
 {{endregion}} 
@@ -61,23 +60,22 @@ To specify the text in the __Span__ you can use its __Text__ property.
 
 ````C#
             
-            Section section = new Section();
-            Paragraph paragraph = new Paragraph();
-            Span span = new Span("Span declared in code-behind");
-            paragraph.Inlines.Add(span);
-            section.Blocks.Add(paragraph);
-            this.radRichTextEditor1.Document.Sections.Add(section);
+Section section = new Section();
+Paragraph paragraph = new Paragraph();
+Span span = new Span("Span declared in code-behind");
+paragraph.Inlines.Add(span);
+section.Blocks.Add(paragraph);
+this.radRichTextEditor1.Document.Sections.Add(section);
+
 ````
 ````VB.NET
+Dim section As New Section()
+Dim paragraph As New Paragraph()
+Dim span As New Span("Span declared in code-behind")
+paragraph.Inlines.Add(span)
+section.Blocks.Add(paragraph)
+Me.radRichTextEditor1.Document.Sections.Add(section)
 
-        Dim section As New Section()
-        Dim paragraph As New Paragraph()
-        Dim span As New Span("Span declared in code-behind")
-        paragraph.Inlines.Add(span)
-        section.Blocks.Add(paragraph)
-        Me.radRichTextEditor1.Document.Sections.Add(section)
-
-        '
 ````
 
 {{endregion}} 

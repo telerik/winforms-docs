@@ -29,16 +29,18 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 {{source=..\SamplesVB\RichTextEditor\Upgrade.vb region=upgrade}} 
 
 ````C#
-        //old
-        private RadRichTextBox radRichTextBox1 = new RadRichTextBox();
-        //new
-        private RadRichTextEditor radRichTextEditor1 = new RadRichTextEditor();
+//old
+private RadRichTextBox radRichTextBox1 = new RadRichTextBox();
+//new
+private RadRichTextEditor radRichTextEditor1 = new RadRichTextEditor();
+
 ````
 ````VB.NET
-    'old
-    Private radRichTextBox1 As New RadRichTextBox()
-    'new
-    Private radRichTextEditor1 As New RadRichTextEditor()
+'old
+Private radRichTextBox1 As New RadRichTextBox()
+'new
+Private radRichTextEditor1 As New RadRichTextEditor()
+
 ````
 
 {{endregion}} 
@@ -67,13 +69,12 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 
 ````C#
             
-            radRichTextEditor1.ShowInsertHyperlinkDialog();
+radRichTextEditor1.ShowInsertHyperlinkDialog();
+
 ````
 ````VB.NET
+radRichTextEditor1.ShowInsertHyperlinkDialog()
 
-        radRichTextEditor1.ShowInsertHyperlinkDialog()
-
-        '
 ````
 
 {{endregion}} 
@@ -86,13 +87,12 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 
 ````C#
             
-            radRichTextEditor1.ShowInsertHyperlinkDialog();
+radRichTextEditor1.ShowInsertHyperlinkDialog();
+
 ````
 ````VB.NET
+radRichTextEditor1.ShowInsertHyperlinkDialog()
 
-        radRichTextEditor1.ShowInsertHyperlinkDialog()
-
-        '
 ````
 
 {{endregion}} 
@@ -105,13 +105,12 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 
 ````C#
             
-            radRichTextEditor1.InsertImage(stream, extension);
+radRichTextEditor1.InsertImage(stream, extension);
+
 ````
 ````VB.NET
+radRichTextEditor1.InsertImage(stream, extension)
 
-        radRichTextEditor1.InsertImage(stream, extension)
-
-        '
 ````
 
 {{endregion}} 
@@ -124,12 +123,12 @@ In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take 
 
 ````C#
             
-            radRichTextEditor1.ShowInsertTableDialog();
+radRichTextEditor1.ShowInsertTableDialog();
+
 ````
 ````VB.NET
-        radRichTextEditor1.ShowInsertTableDialog()
+radRichTextEditor1.ShowInsertTableDialog()
 
-        '
 ````
 
 {{endregion}} 

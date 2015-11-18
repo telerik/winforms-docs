@@ -37,37 +37,35 @@ You can add any element that derives from the RadElement class inside the __RadE
 
 ````C#
             
-            RadButtonElement button = new RadButtonElement();
-            button.Text = "My Button";
+RadButtonElement button = new RadButtonElement();
+button.Text = "My Button";
             
-            Section section = new Section();
-            Paragraph paragraph = new Paragraph();
-            InlineUIContainer container = new InlineUIContainer();
-            RadElementUIContainer radContainer = new RadElementUIContainer(button);
-            container.UiElement = radContainer;
-            container.Height = 25;
-            container.Width = 70;
-            paragraph.Inlines.Add(container);
-            section.Blocks.Add(paragraph);
-            this.radRichTextEditor1.Document.Sections.Add(section);
+Section section = new Section();
+Paragraph paragraph = new Paragraph();
+InlineUIContainer container = new InlineUIContainer();
+RadElementUIContainer radContainer = new RadElementUIContainer(button);
+container.UiElement = radContainer;
+container.Height = 25;
+container.Width = 70;
+paragraph.Inlines.Add(container);
+section.Blocks.Add(paragraph);
+this.radRichTextEditor1.Document.Sections.Add(section);
+
 ````
 ````VB.NET
+Dim button As New RadButtonElement()
+button.Text = "My Button"
+Dim section As New Section()
+Dim paragraph As New Paragraph()
+Dim container As New InlineUIContainer()
+Dim radContainer As New RadElementUIContainer(button)
+container.UiElement = radContainer
+container.Height = 25
+container.Width = 70
+paragraph.Inlines.Add(container)
+section.Blocks.Add(paragraph)
+Me.radRichTextEditor1.Document.Sections.Add(section)
 
-        Dim button As New RadButtonElement()
-        button.Text = "My Button"
-
-        Dim section As New Section()
-        Dim paragraph As New Paragraph()
-        Dim container As New InlineUIContainer()
-        Dim radContainer As New RadElementUIContainer(button)
-        container.UiElement = radContainer
-        container.Height = 25
-        container.Width = 70
-        paragraph.Inlines.Add(container)
-        section.Blocks.Add(paragraph)
-        Me.radRichTextEditor1.Document.Sections.Add(section)
-
-        '
 ````
 
 {{endregion}} 

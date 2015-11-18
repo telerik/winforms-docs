@@ -35,13 +35,12 @@ Here is an example of how to use the __CaretPosition__ property to get the curre
 
 ````C#
             
-            string currentSpanText = this.radRichTextEditor1.Document.CaretPosition.GetCurrentSpanBox().Text;
+string currentSpanText = this.radRichTextEditor1.Document.CaretPosition.GetCurrentSpanBox().Text;
+
 ````
 ````VB.NET
+Dim currentSpanText As String = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentSpanBox().Text
 
-        Dim currentSpanText As String = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentSpanBox().Text
-
-        '
 ````
 
 {{endregion}} 
@@ -56,15 +55,14 @@ An alternative of using the __CaretPosition__ property is to create an instance 
 
 ````C#
         
-            Telerik.WinForms.Documents.DocumentPosition position = new Telerik.WinForms.Documents.DocumentPosition(this.radRichTextEditor1.Document);
-            string currentSpanText1 = position.GetCurrentSpanBox().Text;
+Telerik.WinForms.Documents.DocumentPosition position = new Telerik.WinForms.Documents.DocumentPosition(this.radRichTextEditor1.Document);
+string currentSpanText1 = position.GetCurrentSpanBox().Text;
+
 ````
 ````VB.NET
+Dim position As New Telerik.WinForms.Documents.DocumentPosition(Me.radRichTextEditor1.Document)
+Dim currentSpanText1 As String = position.GetCurrentSpanBox().Text
 
-        Dim position As New Telerik.WinForms.Documents.DocumentPosition(Me.radRichTextEditor1.Document)
-        Dim currentSpanText1 As String = position.GetCurrentSpanBox().Text
-
-        '
 ````
 
 {{endregion}} 

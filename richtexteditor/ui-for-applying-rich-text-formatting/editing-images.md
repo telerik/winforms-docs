@@ -40,22 +40,23 @@ To remove the image adorner from your application you can create a new __UILayer
 {{source=..\SamplesVB\RichTextEditor\UI\EditingImages.vb region=layer}} 
 
 ````C#
-        public class CustomLayersBuilder : UILayersBuilder
-        {
-            protected override void BuildUILayersOverride(IUILayerContainer uiLayerContainer)
-            {
-                uiLayerContainer.UILayers.Remove("AdornerLayer");
-            }
-        }
+public class CustomLayersBuilder : UILayersBuilder
+{
+    protected override void BuildUILayersOverride(IUILayerContainer uiLayerContainer)
+    {
+        uiLayerContainer.UILayers.Remove("AdornerLayer");
+    }
+}
+
 ````
 ````VB.NET
-    Public Class CustomLayersBuilder
-        Inherits UILayersBuilder
+Public Class CustomLayersBuilder
+    Inherits UILayersBuilder
+    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
+        uiLayerContainer.UILayers.Remove("AdornerLayer")
+    End Sub
+End Class
 
-        Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-            uiLayerContainer.UILayers.Remove("AdornerLayer")
-        End Sub
-    End Class
 ````
 
 {{endregion}} 
@@ -66,15 +67,16 @@ Alternatively, you can disable the capabilities of the image adorner by accessin
 {{source=..\SamplesVB\RichTextEditor\UI\EditingImages.vb region=disable}} 
 
 ````C#
-            this.radRichTextEditor1.ImageSelectionAdornerSettings.CanDrag = false;
-            this.radRichTextEditor1.ImageSelectionAdornerSettings.CanResize = false;
-            this.radRichTextEditor1.ImageSelectionAdornerSettings.CanRotate = false;
+this.radRichTextEditor1.ImageSelectionAdornerSettings.CanDrag = false;
+this.radRichTextEditor1.ImageSelectionAdornerSettings.CanResize = false;
+this.radRichTextEditor1.ImageSelectionAdornerSettings.CanRotate = false;
+
 ````
 ````VB.NET
-        Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanDrag = False
-        Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanResize = False
-        Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanRotate = False
-        '
+Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanDrag = False
+Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanResize = False
+Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanRotate = False
+
 ````
 
 {{endregion}} 

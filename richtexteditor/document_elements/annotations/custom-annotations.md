@@ -44,23 +44,23 @@ The most common scenarios for the use of custom annotations is for associating s
 
 ````C#
         
-        protected override DocumentElement CreateNewElementInstance()
-        {
-            return new CustomAnnotationRangeStart();
-        }
+protected override DocumentElement CreateNewElementInstance()
+{
+    return new CustomAnnotationRangeStart();
+}
         
-        protected override void CopyContentFromOverride(DocumentElement fromElement)
-        {
-        }
+protected override void CopyContentFromOverride(DocumentElement fromElement)
+{
+}
+
 ````
 ````VB.NET
+Protected Overrides Function CreateNewElementInstance() As DocumentElement
+    Return New CustomAnnotationRangeStart()
+End Function
+Protected Overrides Sub CopyContentFromOverride(ByVal fromElement As DocumentElement)
+End Sub
 
-    Protected Overrides Function CreateNewElementInstance() As DocumentElement
-        Return New CustomAnnotationRangeStart()
-    End Function
-
-    Protected Overrides Sub CopyContentFromOverride(ByVal fromElement As DocumentElement)
-    End Sub
 ````
 
 {{endregion}} 
@@ -71,15 +71,17 @@ The most common scenarios for the use of custom annotations is for associating s
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=instance}} 
 
 ````C#
-        protected override AnnotationRangeStart CreateRangeStartInstance()
-        {
-            return new CustomAnnotationRangeStart();
-        }
+protected override AnnotationRangeStart CreateRangeStartInstance()
+{
+    return new CustomAnnotationRangeStart();
+}
+
 ````
 ````VB.NET
-    Protected Overrides Function CreateRangeStartInstance() As AnnotationRangeStart
-        Return New CustomAnnotationRangeStart()
-    End Function
+Protected Overrides Function CreateRangeStartInstance() As AnnotationRangeStart
+    Return New CustomAnnotationRangeStart()
+End Function
+
 ````
 
 {{endregion}} 
@@ -99,19 +101,19 @@ The behavior of the annotations when edited, copied and deleted is determined by
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=copy}} 
 
 ````C#
+protected override void CopyPropertiesFromOverride(DocumentElement fromElement)
+{
+    base.CopyPropertiesFromOverride(fromElement);
+    this.Name = ((CustomAnnotationRangeStart)fromElement).Name;
+}
 
-        protected override void CopyPropertiesFromOverride(DocumentElement fromElement)
-        {
-            base.CopyPropertiesFromOverride(fromElement);
-            this.Name = ((CustomAnnotationRangeStart)fromElement).Name;
-        }
 ````
 ````VB.NET
+Protected Overrides Sub CopyPropertiesFromOverride(ByVal fromElement As DocumentElement)
+    MyBase.CopyPropertiesFromOverride(fromElement)
+    Me.Name = CType(fromElement, CustomAnnotationRangeStart).Name
+End Sub
 
-    Protected Overrides Sub CopyPropertiesFromOverride(ByVal fromElement As DocumentElement)
-        MyBase.CopyPropertiesFromOverride(fromElement)
-        Me.Name = CType(fromElement, CustomAnnotationRangeStart).Name
-    End Sub
 ````
 
 {{endregion}} 
@@ -131,50 +133,49 @@ HyperlinkRangeStart:
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=delete}} 
 
 ````C#
-                
-        public override AnnotationMarkerDeleteBehavior DeleteBehavior
-        {
-            get
-            {
-                return AnnotationMarkerDeleteBehavior.SelectAnnotation;
-            }
-        }
-                
-        public override AnnotationMarkerDeleteBehavior BackspaceBehavior
-        {
-            get
-            {
-                return AnnotationMarkerDeleteBehavior.SelectAnnotation;
-            }
-        }
-                
-        public override AnnotationMarkerDeleteBehavior DeleteSelectedBehavior
-        {
-            get
-            {
-                return AnnotationMarkerDeleteBehavior.RemoveAnnotation;
-            }
-        }
+        
+public override AnnotationMarkerDeleteBehavior DeleteBehavior
+{
+    get
+    {
+        return AnnotationMarkerDeleteBehavior.SelectAnnotation;
+    }
+}
+        
+public override AnnotationMarkerDeleteBehavior BackspaceBehavior
+{
+    get
+    {
+        return AnnotationMarkerDeleteBehavior.SelectAnnotation;
+    }
+}
+        
+public override AnnotationMarkerDeleteBehavior DeleteSelectedBehavior
+{
+    get
+    {
+        return AnnotationMarkerDeleteBehavior.RemoveAnnotation;
+    }
+}
+
 ````
 ````VB.NET
+Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
+    Get
+        Return AnnotationMarkerDeleteBehavior.SelectAnnotation
+    End Get
+End Property
+Public Overrides ReadOnly Property BackspaceBehavior() As AnnotationMarkerDeleteBehavior
+    Get
+        Return AnnotationMarkerDeleteBehavior.SelectAnnotation
+    End Get
+End Property
+Public Overrides ReadOnly Property DeleteSelectedBehavior() As AnnotationMarkerDeleteBehavior
+    Get
+        Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
+    End Get
+End Property
 
-    Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
-        Get
-            Return AnnotationMarkerDeleteBehavior.SelectAnnotation
-        End Get
-    End Property
-
-    Public Overrides ReadOnly Property BackspaceBehavior() As AnnotationMarkerDeleteBehavior
-        Get
-            Return AnnotationMarkerDeleteBehavior.SelectAnnotation
-        End Get
-    End Property
-
-    Public Overrides ReadOnly Property DeleteSelectedBehavior() As AnnotationMarkerDeleteBehavior
-        Get
-            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-        End Get
-    End Property
 ````
 
 {{endregion}} 
@@ -186,49 +187,48 @@ HyperlinkRangeEnd:
 
 ````C#
         
-        public override AnnotationMarkerDeleteBehavior DeleteBehavior
-        {
-            get
-            {
-                return AnnotationMarkerDeleteBehavior.PreserveAnnotation;
-            }
-        }
+public override AnnotationMarkerDeleteBehavior DeleteBehavior
+{
+    get
+    {
+        return AnnotationMarkerDeleteBehavior.PreserveAnnotation;
+    }
+}
         
-        public override AnnotationMarkerDeleteBehavior BackspaceBehavior
-        {
-            get
-            {
-                return AnnotationMarkerDeleteBehavior.RemoveAnnotation;
-            }
-        }
+public override AnnotationMarkerDeleteBehavior BackspaceBehavior
+{
+    get
+    {
+        return AnnotationMarkerDeleteBehavior.RemoveAnnotation;
+    }
+}
     
-        public override AnnotationMarkerDeleteBehavior DeleteSelectedBehavior
-        {
-            get
-            {
-                return AnnotationMarkerDeleteBehavior.RemoveAnnotation;
-            }
-        }
+public override AnnotationMarkerDeleteBehavior DeleteSelectedBehavior
+{
+    get
+    {
+        return AnnotationMarkerDeleteBehavior.RemoveAnnotation;
+    }
+}
+
 ````
 ````VB.NET
+Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
+    Get
+        Return AnnotationMarkerDeleteBehavior.PreserveAnnotation
+    End Get
+End Property
+Public Overrides ReadOnly Property BackspaceBehavior() As AnnotationMarkerDeleteBehavior
+    Get
+        Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
+    End Get
+End Property
+Public Overrides ReadOnly Property DeleteSelectedBehavior() As AnnotationMarkerDeleteBehavior
+    Get
+        Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
+    End Get
+End Property
 
-    Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
-        Get
-            Return AnnotationMarkerDeleteBehavior.PreserveAnnotation
-        End Get
-    End Property
-
-    Public Overrides ReadOnly Property BackspaceBehavior() As AnnotationMarkerDeleteBehavior
-        Get
-            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-        End Get
-    End Property
-
-    Public Overrides ReadOnly Property DeleteSelectedBehavior() As AnnotationMarkerDeleteBehavior
-        Get
-            Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-        End Get
-    End Property
 ````
 
 {{endregion}} 
@@ -240,14 +240,15 @@ HyperlinkRangeEnd:
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=name}} 
 
 ````C#
-            
-        [XamlSerializable]
-        public string Name { get; set; }
+    
+[XamlSerializable]
+public string Name { get; set; }
+
 ````
 ````VB.NET
+<XamlSerializable>
+Public Property Name() As String
 
-    <XamlSerializable>
-    Public Property Name() As String
 ````
 
 {{endregion}} 

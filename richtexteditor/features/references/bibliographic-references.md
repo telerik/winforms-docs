@@ -81,21 +81,22 @@ This is how you can add a new source:
 {{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=init}} 
 
 ````C#
-            BibliographicSource bibliographicSource = new BibliographicSource("test");
-            bibliographicSource.Author = "authorTest";
-            bibliographicSource.Title = "titleTest";
-            bibliographicSource.Editor = "editorTest";
-            bibliographicSource.SourceType = BibliographicSourceType.Book;
-            this.radRichTextEditor1.Document.BibliographicSources.Add(bibliographicSource);
+BibliographicSource bibliographicSource = new BibliographicSource("test");
+bibliographicSource.Author = "authorTest";
+bibliographicSource.Title = "titleTest";
+bibliographicSource.Editor = "editorTest";
+bibliographicSource.SourceType = BibliographicSourceType.Book;
+this.radRichTextEditor1.Document.BibliographicSources.Add(bibliographicSource);
+
 ````
 ````VB.NET
-        Dim bibliographicSource As New BibliographicSource("test")
-        bibliographicSource.Author = "authorTest"
-        bibliographicSource.Title = "titleTest"
-        bibliographicSource.Editor = "editorTest"
-        bibliographicSource.SourceType = BibliographicSourceType.Book
-        Me.radRichTextEditor1.Document.BibliographicSources.Add(bibliographicSource)
-        '
+Dim bibliographicSource As New BibliographicSource("test")
+bibliographicSource.Author = "authorTest"
+bibliographicSource.Title = "titleTest"
+bibliographicSource.Editor = "editorTest"
+bibliographicSource.SourceType = BibliographicSourceType.Book
+Me.radRichTextEditor1.Document.BibliographicSources.Add(bibliographicSource)
+
 ````
 
 {{endregion}} 
@@ -110,27 +111,24 @@ To create a custom __BibliographicStyle__ you have to derive from __Bibliographi
 {{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=add}} 
 
 ````C#
-            APAFifthEditionStyle APAFifthEdition = new APAFifthEditionStyle();
-            this.radRichTextEditor1.Document.BibliographicStyles.Add(APAFifthEdition.Key, APAFifthEdition);
+APAFifthEditionStyle APAFifthEdition = new APAFifthEditionStyle();
+this.radRichTextEditor1.Document.BibliographicStyles.Add(APAFifthEdition.Key, APAFifthEdition);
+HarvardAnglia2008Style HarvardAnglia2008 = new HarvardAnglia2008Style();
+this.radRichTextEditor1.Document.BibliographicStyles.Add(HarvardAnglia2008.Key, HarvardAnglia2008);
+ISO690_FirstElementAndDateStyle ISO690_FirstElementAndDate =
+new ISO690_FirstElementAndDateStyle();
+this.radRichTextEditor1.Document.BibliographicStyles.Add(ISO690_FirstElementAndDate.Key,
+ISO690_FirstElementAndDate);
 
-            HarvardAnglia2008Style HarvardAnglia2008 = new HarvardAnglia2008Style();
-            this.radRichTextEditor1.Document.BibliographicStyles.Add(HarvardAnglia2008.Key, HarvardAnglia2008);
-
-            ISO690_FirstElementAndDateStyle ISO690_FirstElementAndDate =
-            new ISO690_FirstElementAndDateStyle();
-            this.radRichTextEditor1.Document.BibliographicStyles.Add(ISO690_FirstElementAndDate.Key,
-            ISO690_FirstElementAndDate);
 ````
 ````VB.NET
-        Dim APAFifthEdition As New APAFifthEditionStyle()
-        Me.radRichTextEditor1.Document.BibliographicStyles.Add(APAFifthEdition.Key, APAFifthEdition)
+Dim APAFifthEdition As New APAFifthEditionStyle()
+Me.radRichTextEditor1.Document.BibliographicStyles.Add(APAFifthEdition.Key, APAFifthEdition)
+Dim HarvardAnglia2008 As New HarvardAnglia2008Style()
+Me.radRichTextEditor1.Document.BibliographicStyles.Add(HarvardAnglia2008.Key, HarvardAnglia2008)
+Dim ISO690_FirstElementAndDate As New ISO690_FirstElementAndDateStyle()
+Me.radRichTextEditor1.Document.BibliographicStyles.Add(ISO690_FirstElementAndDate.Key, ISO690_FirstElementAndDate)
 
-        Dim HarvardAnglia2008 As New HarvardAnglia2008Style()
-        Me.radRichTextEditor1.Document.BibliographicStyles.Add(HarvardAnglia2008.Key, HarvardAnglia2008)
-
-        Dim ISO690_FirstElementAndDate As New ISO690_FirstElementAndDateStyle()
-        Me.radRichTextEditor1.Document.BibliographicStyles.Add(ISO690_FirstElementAndDate.Key, ISO690_FirstElementAndDate)
-        '
 ````
 
 {{endregion}} 
@@ -144,15 +142,16 @@ The Citation field is a field not different from every other field. You can use 
 {{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=citation}} 
 
 ````C#
-            CitationField citationField = new CitationField();
-            citationField.SourceName = "test";
-            this.radRichTextEditor1.Document.InsertField(citationField, FieldDisplayMode.Result);
+CitationField citationField = new CitationField();
+citationField.SourceName = "test";
+this.radRichTextEditor1.Document.InsertField(citationField, FieldDisplayMode.Result);
+
 ````
 ````VB.NET
-        Dim citationField As New CitationField()
-        citationField.SourceName = "test"
-        Me.radRichTextEditor1.Document.InsertField(citationField, FieldDisplayMode.Result)
-        '
+Dim citationField As New CitationField()
+citationField.SourceName = "test"
+Me.radRichTextEditor1.Document.InsertField(citationField, FieldDisplayMode.Result)
+
 ````
 
 {{endregion}} 
@@ -168,13 +167,14 @@ The Bibliography field is a field not different from every other field. You can 
 {{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=bibliography}} 
 
 ````C#
-            BibliographyField bibliographyField = new BibliographyField();
-            this.radRichTextEditor1.Document.InsertField(bibliographyField, FieldDisplayMode.Result);
+BibliographyField bibliographyField = new BibliographyField();
+this.radRichTextEditor1.Document.InsertField(bibliographyField, FieldDisplayMode.Result);
+
 ````
 ````VB.NET
-        Dim bibliographyField As New BibliographyField()
-        Me.radRichTextEditor1.Document.InsertField(bibliographyField, FieldDisplayMode.Result)
-        '
+Dim bibliographyField As New BibliographyField()
+Me.radRichTextEditor1.Document.InsertField(bibliographyField, FieldDisplayMode.Result)
+
 ````
 
 {{endregion}} 
@@ -189,11 +189,12 @@ There is a method called __ChangeBibliographicStyle()__ on __RadRichTextEditor__
 {{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=style}} 
 
 ````C#
-            this.radRichTextEditor1.ChangeBibliographicStyle(new HarvardAnglia2008Style());
+this.radRichTextEditor1.ChangeBibliographicStyle(new HarvardAnglia2008Style());
+
 ````
 ````VB.NET
-        Me.radRichTextEditor1.ChangeBibliographicStyle(New HarvardAnglia2008Style())
-        '
+Me.radRichTextEditor1.ChangeBibliographicStyle(New HarvardAnglia2008Style())
+
 ````
 
 {{endregion}} 

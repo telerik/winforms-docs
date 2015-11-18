@@ -28,62 +28,64 @@ The first one involves subscribing to the __Showing__ event of the default __Con
 {{source=..\SamplesVB\RichTextEditor\UI\ContextMenuCode.vb region=example}} 
 
 ````C#
-        public ContextMenuCode()
+public ContextMenuCode()
+{
+    InitializeComponent();
+    Telerik.WinControls.RichTextEditor.UI.ContextMenu contextMenu = (Telerik.WinControls.RichTextEditor.UI.ContextMenu)this.radRichTextEditor1.RichTextBoxElement.ContextMenu;
+    contextMenu.Showing += this.ContextMenu_Showing;
+}
+//In the event handler you can check the context relevant items and add some RadMenuItems if needed.
+private void ContextMenu_Showing(object sender, ContextMenuEventArgs e)
+{
+    // First check the context - if caret is in table, add our item
+    if (this.radRichTextEditor1.Document.CaretPosition.IsPositionInsideTable)
+    {
+        RadMenuItem makeCellYellowMenuItem = new RadMenuItem()
         {
-            InitializeComponent();
-            Telerik.WinControls.RichTextEditor.UI.ContextMenu contextMenu = (Telerik.WinControls.RichTextEditor.UI.ContextMenu)this.radRichTextEditor1.RichTextBoxElement.ContextMenu;
-            contextMenu.Showing += this.ContextMenu_Showing;
-        }
+            Text = "Make Cell Yellow"
+        };
+        makeCellYellowMenuItem.Click += makeCellYellowMenuItem_Click;
+        ContextMenuGroup customContextMenuGroup = new ContextMenuGroup();
+        customContextMenuGroup.Add(makeCellYellowMenuItem);
+        e.ContextMenuGroupCollection.Add(customContextMenuGroup);
+    }
+}
+void makeCellYellowMenuItem_Click(object sender, EventArgs e)
+{
+    TableCell currentCell = this.radRichTextEditor1.Document.CaretPosition.GetCurrentTableCellBox().AssociatedTableCell;
+    currentCell.Background = Colors.Yellow;
+    this.radRichTextEditor1.UpdateEditorLayout();
+}
 
-        //In the event handler you can check the context relevant items and add some RadMenuItems if needed.
-        private void ContextMenu_Showing(object sender, ContextMenuEventArgs e)
-        {
-            // First check the context - if caret is in table, add our item
-            if (this.radRichTextEditor1.Document.CaretPosition.IsPositionInsideTable)
-            {
-                RadMenuItem makeCellYellowMenuItem = new RadMenuItem()
-                {
-                    Text = "Make Cell Yellow"
-                };
-                makeCellYellowMenuItem.Click += makeCellYellowMenuItem_Click;
-                ContextMenuGroup customContextMenuGroup = new ContextMenuGroup();
-                customContextMenuGroup.Add(makeCellYellowMenuItem);
-                e.ContextMenuGroupCollection.Add(customContextMenuGroup);
-            }
-        }
-
-        void makeCellYellowMenuItem_Click(object sender, EventArgs e)
-        {
-            TableCell currentCell = this.radRichTextEditor1.Document.CaretPosition.GetCurrentTableCellBox().AssociatedTableCell;
-            currentCell.Background = Colors.Yellow;
-            this.radRichTextEditor1.UpdateEditorLayout();
-        }
 ````
 ````VB.NET
-    Public Sub New()
-        InitializeComponent()
+Public Sub New()
+    InitializeComponent()
+    Dim contextMenu1 As Telerik.WinControls.RichTextEditor.UI.ContextMenu = CType(Me.radRichTextEditor1.RichTextBoxElement.ContextMenu, Telerik.WinControls.RichTextEditor.UI.ContextMenu)
+    AddHandler contextMenu1.Showing, AddressOf Me.ContextMenu_Showing
+End Sub
+'In the event handler you can check the context relevant items and add some RadMenuItems if needed.
+Private Sub ContextMenu_Showing(ByVal sender As Object, ByVal e As ContextMenuEventArgs)
+    ' First check the context - if caret is in table, add our item
+    If Me.radRichTextEditor1.Document.CaretPosition.IsPositionInsideTable Then
+        Dim makeCellYellowMenuItem As New RadMenuItem() With {.Text = "Make Cell Yellow"}
+        AddHandler makeCellYellowMenuItem.Click, AddressOf makeCellYellowMenuItem_Click
+        Dim customContextMenuGroup As New ContextMenuGroup()
+        customContextMenuGroup.Add(makeCellYellowMenuItem)
+        e.ContextMenuGroupCollection.Add(customContextMenuGroup)
+    End If
+End Sub
+Private Sub makeCellYellowMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Dim currentCell As TableCell = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentTableCellBox().AssociatedTableCell
+    currentCell.Background = Colors.Yellow
+    Me.radRichTextEditor1.UpdateEditorLayout()
+End Sub
+ Region
+Public Sub temp()
+    '#Region "create"
+    Dim contextMenu1 As Telerik.WinControls.RichTextEditor.UI.ContextMenu = CType(Me.radRichTextEditor1.RichTextBoxElement.ContextMenu, Telerik.WinControls.RichTextEditor.UI.ContextMenu)
+    contextMenu1.ContentBuilder = New CustomContextMenuContentBuilder(Me.radRichTextEditor1)
 
-        Dim contextMenu1 As Telerik.WinControls.RichTextEditor.UI.ContextMenu = CType(Me.radRichTextEditor1.RichTextBoxElement.ContextMenu, Telerik.WinControls.RichTextEditor.UI.ContextMenu)
-        AddHandler contextMenu1.Showing, AddressOf Me.ContextMenu_Showing
-    End Sub
-
-    'In the event handler you can check the context relevant items and add some RadMenuItems if needed.
-    Private Sub ContextMenu_Showing(ByVal sender As Object, ByVal e As ContextMenuEventArgs)
-        ' First check the context - if caret is in table, add our item
-        If Me.radRichTextEditor1.Document.CaretPosition.IsPositionInsideTable Then
-            Dim makeCellYellowMenuItem As New RadMenuItem() With {.Text = "Make Cell Yellow"}
-            AddHandler makeCellYellowMenuItem.Click, AddressOf makeCellYellowMenuItem_Click
-            Dim customContextMenuGroup As New ContextMenuGroup()
-            customContextMenuGroup.Add(makeCellYellowMenuItem)
-            e.ContextMenuGroupCollection.Add(customContextMenuGroup)
-        End If
-    End Sub
-
-    Private Sub makeCellYellowMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Dim currentCell As TableCell = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentTableCellBox().AssociatedTableCell
-        currentCell.Background = Colors.Yellow
-        Me.radRichTextEditor1.UpdateEditorLayout()
-    End Sub
 ````
 
 {{endregion}} 
@@ -100,14 +102,14 @@ Now you can simply assign the instance of your class to the __ContentBuilder__ p
 {{source=..\SamplesVB\RichTextEditor\UI\ContextMenuCode.vb region=create}} 
 
 ````C#
-            Telerik.WinControls.RichTextEditor.UI.ContextMenu contextMenu = (Telerik.WinControls.RichTextEditor.UI.ContextMenu)this.radRichTextEditor1.RichTextBoxElement.ContextMenu;
-            contextMenu.ContentBuilder = new CustomContextMenuContentBuilder(this.radRichTextEditor1);
+Telerik.WinControls.RichTextEditor.UI.ContextMenu contextMenu = (Telerik.WinControls.RichTextEditor.UI.ContextMenu)this.radRichTextEditor1.RichTextBoxElement.ContextMenu;
+contextMenu.ContentBuilder = new CustomContextMenuContentBuilder(this.radRichTextEditor1);
+
 ````
 ````VB.NET
+Dim contextMenu1 As Telerik.WinControls.RichTextEditor.UI.ContextMenu = CType(Me.radRichTextEditor1.RichTextBoxElement.ContextMenu, Telerik.WinControls.RichTextEditor.UI.ContextMenu)
+contextMenu1.ContentBuilder = New CustomContextMenuContentBuilder(Me.radRichTextEditor1)
 
-        Dim contextMenu1 As Telerik.WinControls.RichTextEditor.UI.ContextMenu = CType(Me.radRichTextEditor1.RichTextBoxElement.ContextMenu, Telerik.WinControls.RichTextEditor.UI.ContextMenu)
-        contextMenu1.ContentBuilder = New CustomContextMenuContentBuilder(Me.radRichTextEditor1)
-        '
 ````
 
 {{endregion}} 

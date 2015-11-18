@@ -59,75 +59,71 @@ __HtmlExportSettings__ provide the following options:
 
 ````C#
             
-            HtmlExportSettings htmlExportSettings = new HtmlExportSettings();
-            htmlExportSettings.PropertiesToIgnore["span"].Add("color");
-            htmlExportSettings.PropertiesToIgnore["span"].Add("text-decoration");
-            htmlExportSettings.PropertiesToIgnore["span"].Add("font-weight");
-            htmlExportSettings.PropertiesToIgnore["span"].Add("font-style");
-            htmlExportSettings.PropertiesToIgnore["span"].Add("font-family");
-            htmlExportSettings.PropertiesToIgnore["span"].Add("font-size");
-            htmlExportSettings.PropertiesToIgnore["span"].Add("dir");
+HtmlExportSettings htmlExportSettings = new HtmlExportSettings();
+htmlExportSettings.PropertiesToIgnore["span"].Add("color");
+htmlExportSettings.PropertiesToIgnore["span"].Add("text-decoration");
+htmlExportSettings.PropertiesToIgnore["span"].Add("font-weight");
+htmlExportSettings.PropertiesToIgnore["span"].Add("font-style");
+htmlExportSettings.PropertiesToIgnore["span"].Add("font-family");
+htmlExportSettings.PropertiesToIgnore["span"].Add("font-size");
+htmlExportSettings.PropertiesToIgnore["span"].Add("dir");
             
-            htmlExportSettings.PropertiesToIgnore["p"].Add("margin-top");
-            htmlExportSettings.PropertiesToIgnore["p"].Add("margin-bottom");
-            htmlExportSettings.PropertiesToIgnore["p"].Add("margin-left");
-            htmlExportSettings.PropertiesToIgnore["p"].Add("margin-right");
-            htmlExportSettings.PropertiesToIgnore["p"].Add("line-height");
-            htmlExportSettings.PropertiesToIgnore["p"].Add("text-indent");
-            htmlExportSettings.PropertiesToIgnore["p"].Add("text-align");
-            htmlExportSettings.PropertiesToIgnore["p"].Add("direction");
+htmlExportSettings.PropertiesToIgnore["p"].Add("margin-top");
+htmlExportSettings.PropertiesToIgnore["p"].Add("margin-bottom");
+htmlExportSettings.PropertiesToIgnore["p"].Add("margin-left");
+htmlExportSettings.PropertiesToIgnore["p"].Add("margin-right");
+htmlExportSettings.PropertiesToIgnore["p"].Add("line-height");
+htmlExportSettings.PropertiesToIgnore["p"].Add("text-indent");
+htmlExportSettings.PropertiesToIgnore["p"].Add("text-align");
+htmlExportSettings.PropertiesToIgnore["p"].Add("direction");
             
-            htmlExportSettings.PropertiesToIgnore["table"].Add("border-top");
-            htmlExportSettings.PropertiesToIgnore["table"].Add("border-bottom");
-            htmlExportSettings.PropertiesToIgnore["table"].Add("border-left");
-            htmlExportSettings.PropertiesToIgnore["table"].Add("border-right");
-            htmlExportSettings.PropertiesToIgnore["table"].Add("table-layout");
-            htmlExportSettings.PropertiesToIgnore["table"].Add("margin-left");
-            htmlExportSettings.PropertiesToIgnore["table"].Add("border-spacing");
+htmlExportSettings.PropertiesToIgnore["table"].Add("border-top");
+htmlExportSettings.PropertiesToIgnore["table"].Add("border-bottom");
+htmlExportSettings.PropertiesToIgnore["table"].Add("border-left");
+htmlExportSettings.PropertiesToIgnore["table"].Add("border-right");
+htmlExportSettings.PropertiesToIgnore["table"].Add("table-layout");
+htmlExportSettings.PropertiesToIgnore["table"].Add("margin-left");
+htmlExportSettings.PropertiesToIgnore["table"].Add("border-spacing");
             
-            htmlExportSettings.PropertiesToIgnore["td"].Add("border-top");
-            htmlExportSettings.PropertiesToIgnore["td"].Add("border-bottom");
-            htmlExportSettings.PropertiesToIgnore["td"].Add("border-left");
-            htmlExportSettings.PropertiesToIgnore["td"].Add("border-right");
-            htmlExportSettings.PropertiesToIgnore["td"].Add("padding");
-            htmlExportSettings.PropertiesToIgnore["td"].Add("vertical-align");
+htmlExportSettings.PropertiesToIgnore["td"].Add("border-top");
+htmlExportSettings.PropertiesToIgnore["td"].Add("border-bottom");
+htmlExportSettings.PropertiesToIgnore["td"].Add("border-left");
+htmlExportSettings.PropertiesToIgnore["td"].Add("border-right");
+htmlExportSettings.PropertiesToIgnore["td"].Add("padding");
+htmlExportSettings.PropertiesToIgnore["td"].Add("vertical-align");
+
 ````
 ````VB.NET
+Dim htmlExportSettings As New HtmlExportSettings()
+htmlExportSettings.PropertiesToIgnore("span").Add("color")
+htmlExportSettings.PropertiesToIgnore("span").Add("text-decoration")
+htmlExportSettings.PropertiesToIgnore("span").Add("font-weight")
+htmlExportSettings.PropertiesToIgnore("span").Add("font-style")
+htmlExportSettings.PropertiesToIgnore("span").Add("font-family")
+htmlExportSettings.PropertiesToIgnore("span").Add("font-size")
+htmlExportSettings.PropertiesToIgnore("span").Add("dir")
+htmlExportSettings.PropertiesToIgnore("p").Add("margin-top")
+htmlExportSettings.PropertiesToIgnore("p").Add("margin-bottom")
+htmlExportSettings.PropertiesToIgnore("p").Add("margin-left")
+htmlExportSettings.PropertiesToIgnore("p").Add("margin-right")
+htmlExportSettings.PropertiesToIgnore("p").Add("line-height")
+htmlExportSettings.PropertiesToIgnore("p").Add("text-indent")
+htmlExportSettings.PropertiesToIgnore("p").Add("text-align")
+htmlExportSettings.PropertiesToIgnore("p").Add("direction")
+htmlExportSettings.PropertiesToIgnore("table").Add("border-top")
+htmlExportSettings.PropertiesToIgnore("table").Add("border-bottom")
+htmlExportSettings.PropertiesToIgnore("table").Add("border-left")
+htmlExportSettings.PropertiesToIgnore("table").Add("border-right")
+htmlExportSettings.PropertiesToIgnore("table").Add("table-layout")
+htmlExportSettings.PropertiesToIgnore("table").Add("margin-left")
+htmlExportSettings.PropertiesToIgnore("table").Add("border-spacing")
+htmlExportSettings.PropertiesToIgnore("td").Add("border-top")
+htmlExportSettings.PropertiesToIgnore("td").Add("border-bottom")
+htmlExportSettings.PropertiesToIgnore("td").Add("border-left")
+htmlExportSettings.PropertiesToIgnore("td").Add("border-right")
+htmlExportSettings.PropertiesToIgnore("td").Add("padding")
+htmlExportSettings.PropertiesToIgnore("td").Add("vertical-align")
 
-        Dim htmlExportSettings As New HtmlExportSettings()
-        htmlExportSettings.PropertiesToIgnore("span").Add("color")
-        htmlExportSettings.PropertiesToIgnore("span").Add("text-decoration")
-        htmlExportSettings.PropertiesToIgnore("span").Add("font-weight")
-        htmlExportSettings.PropertiesToIgnore("span").Add("font-style")
-        htmlExportSettings.PropertiesToIgnore("span").Add("font-family")
-        htmlExportSettings.PropertiesToIgnore("span").Add("font-size")
-        htmlExportSettings.PropertiesToIgnore("span").Add("dir")
-
-        htmlExportSettings.PropertiesToIgnore("p").Add("margin-top")
-        htmlExportSettings.PropertiesToIgnore("p").Add("margin-bottom")
-        htmlExportSettings.PropertiesToIgnore("p").Add("margin-left")
-        htmlExportSettings.PropertiesToIgnore("p").Add("margin-right")
-        htmlExportSettings.PropertiesToIgnore("p").Add("line-height")
-        htmlExportSettings.PropertiesToIgnore("p").Add("text-indent")
-        htmlExportSettings.PropertiesToIgnore("p").Add("text-align")
-        htmlExportSettings.PropertiesToIgnore("p").Add("direction")
-
-        htmlExportSettings.PropertiesToIgnore("table").Add("border-top")
-        htmlExportSettings.PropertiesToIgnore("table").Add("border-bottom")
-        htmlExportSettings.PropertiesToIgnore("table").Add("border-left")
-        htmlExportSettings.PropertiesToIgnore("table").Add("border-right")
-        htmlExportSettings.PropertiesToIgnore("table").Add("table-layout")
-        htmlExportSettings.PropertiesToIgnore("table").Add("margin-left")
-        htmlExportSettings.PropertiesToIgnore("table").Add("border-spacing")
-
-        htmlExportSettings.PropertiesToIgnore("td").Add("border-top")
-        htmlExportSettings.PropertiesToIgnore("td").Add("border-bottom")
-        htmlExportSettings.PropertiesToIgnore("td").Add("border-left")
-        htmlExportSettings.PropertiesToIgnore("td").Add("border-right")
-        htmlExportSettings.PropertiesToIgnore("td").Add("padding")
-        htmlExportSettings.PropertiesToIgnore("td").Add("vertical-align")
-
-        '
 ````
 
 {{endregion}} 
@@ -147,35 +143,32 @@ Here are some examples for using the settings in code-behind:
 {{source=..\SamplesVB\RichTextEditor\ImportExport\Settings.vb region=setup}} 
 
 ````C#
+public void SetupDefaultHtmlFormatProvider()
+{
+    //Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
+    HtmlFormatProvider htmlFormatProvider = DocumentFormatProvidersManager.GetProviderByExtension("html") as HtmlFormatProvider;
+    HtmlExportSettings htmlExportSettings = new HtmlExportSettings();
+    htmlExportSettings.DocumentExportLevel = DocumentExportLevel.Fragment;
+    htmlExportSettings.StylesExportMode = StylesExportMode.Inline;
+    htmlExportSettings.StyleRepositoryExportMode = StyleRepositoryExportMode.DontExportStyles;
+    htmlExportSettings.ExportFontStylesAsTags = true;
+   
+    htmlFormatProvider.ExportSettings = htmlExportSettings;
+}
 
-        public void SetupDefaultHtmlFormatProvider()
-        {
-            //Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
-            HtmlFormatProvider htmlFormatProvider = DocumentFormatProvidersManager.GetProviderByExtension("html") as HtmlFormatProvider;
-
-            HtmlExportSettings htmlExportSettings = new HtmlExportSettings();
-            htmlExportSettings.DocumentExportLevel = DocumentExportLevel.Fragment;
-            htmlExportSettings.StylesExportMode = StylesExportMode.Inline;
-            htmlExportSettings.StyleRepositoryExportMode = StyleRepositoryExportMode.DontExportStyles;
-            htmlExportSettings.ExportFontStylesAsTags = true;
-           
-            htmlFormatProvider.ExportSettings = htmlExportSettings;
-        }
 ````
 ````VB.NET
+Public Sub SetupDefaultHtmlFormatProvider()
+    'Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
+    Dim htmlFormatProvider As HtmlFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("html"), HtmlFormatProvider)
+    Dim htmlExportSettings As New HtmlExportSettings()
+    htmlExportSettings.DocumentExportLevel = DocumentExportLevel.Fragment
+    htmlExportSettings.StylesExportMode = StylesExportMode.Inline
+    htmlExportSettings.StyleRepositoryExportMode = StyleRepositoryExportMode.DontExportStyles
+    htmlExportSettings.ExportFontStylesAsTags = True
+    htmlFormatProvider.ExportSettings = htmlExportSettings
+End Sub
 
-    Public Sub SetupDefaultHtmlFormatProvider()
-        'Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
-        Dim htmlFormatProvider As HtmlFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("html"), HtmlFormatProvider)
-
-        Dim htmlExportSettings As New HtmlExportSettings()
-        htmlExportSettings.DocumentExportLevel = DocumentExportLevel.Fragment
-        htmlExportSettings.StylesExportMode = StylesExportMode.Inline
-        htmlExportSettings.StyleRepositoryExportMode = StyleRepositoryExportMode.DontExportStyles
-        htmlExportSettings.ExportFontStylesAsTags = True
-
-        htmlFormatProvider.ExportSettings = htmlExportSettings
-    End Sub
 ````
 
 {{endregion}} 
@@ -226,35 +219,36 @@ __RtfFormatProvider__ has __ImportSettings__, which provide an event - __FontSub
 {{source=..\SamplesVB\RichTextEditor\ImportExport\Settings.vb region=rtf}} 
 
 ````C#
-        void Settings_Load(object sender, EventArgs e)
-        {
-            RtfFormatProvider rtfFormatProvider = DocumentFormatProvidersManager.GetProviderByExtension("rtf") as RtfFormatProvider;
-            RtfImportSettings rtfImportSettings = new RtfImportSettings();
-            rtfImportSettings.FontSubstituting += rtfImportSettings_FontSubstituting;
-            rtfFormatProvider.ImportSettings = rtfImportSettings;
-        }
-            
-        public void rtfImportSettings_FontSubstituting(object sender, FontSubstitutingEventArgs e) 
-        { 
-            if (e.OriginalFontName.Equals("Cambria"))
-            {
-                e.SubstitutionFontFamily = new FontFamily("Calibri");
-            }
-        }
+void Settings_Load(object sender, EventArgs e)
+{
+    RtfFormatProvider rtfFormatProvider = DocumentFormatProvidersManager.GetProviderByExtension("rtf") as RtfFormatProvider;
+    RtfImportSettings rtfImportSettings = new RtfImportSettings();
+    rtfImportSettings.FontSubstituting += rtfImportSettings_FontSubstituting;
+    rtfFormatProvider.ImportSettings = rtfImportSettings;
+}
+    
+public void rtfImportSettings_FontSubstituting(object sender, FontSubstitutingEventArgs e) 
+{ 
+    if (e.OriginalFontName.Equals("Cambria"))
+    {
+        e.SubstitutionFontFamily = new FontFamily("Calibri");
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub Settings_Load(ByVal sender As Object, ByVal e As EventArgs)
-        Dim rtfFormatProvider As RtfFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("rtf"), RtfFormatProvider)
-        Dim rtfImportSettings As New RtfImportSettings()
-        AddHandler rtfImportSettings.FontSubstituting, AddressOf rtfImportSettings_FontSubstituting
-        rtfFormatProvider.ImportSettings = rtfImportSettings
-    End Sub
+Private Sub Settings_Load(ByVal sender As Object, ByVal e As EventArgs)
+    Dim rtfFormatProvider As RtfFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("rtf"), RtfFormatProvider)
+    Dim rtfImportSettings As New RtfImportSettings()
+    AddHandler rtfImportSettings.FontSubstituting, AddressOf rtfImportSettings_FontSubstituting
+    rtfFormatProvider.ImportSettings = rtfImportSettings
+End Sub
+Public Sub rtfImportSettings_FontSubstituting(ByVal sender As Object, ByVal e As FontSubstitutingEventArgs)
+    If e.OriginalFontName.Equals("Cambria") Then
+        e.SubstitutionFontFamily = New FontFamily("Calibri")
+    End If
+End Sub
 
-    Public Sub rtfImportSettings_FontSubstituting(ByVal sender As Object, ByVal e As FontSubstitutingEventArgs)
-        If e.OriginalFontName.Equals("Cambria") Then
-            e.SubstitutionFontFamily = New FontFamily("Calibri")
-        End If
-    End Sub
 ````
 
 {{endregion}} 
@@ -270,25 +264,25 @@ Here is an example how you can get a reference to the format provider used by th
 {{source=..\SamplesVB\RichTextEditor\ImportExport\Settings.vb region=docx}} 
 
 ````C#
-        public void SetupDefaultDocxFormatProvider()
-        {
-            //Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
-            DocxFormatProvider docxFormatProvider = DocumentFormatProvidersManager.GetProviderByExtension("docx") as DocxFormatProvider;
-            DocxExportSettings docxExportSettings = new DocxExportSettings();
-            docxExportSettings.FieldResultMode = FieldDisplayMode.DisplayName;
+public void SetupDefaultDocxFormatProvider()
+{
+    //Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
+    DocxFormatProvider docxFormatProvider = DocumentFormatProvidersManager.GetProviderByExtension("docx") as DocxFormatProvider;
+    DocxExportSettings docxExportSettings = new DocxExportSettings();
+    docxExportSettings.FieldResultMode = FieldDisplayMode.DisplayName;
+    docxFormatProvider.ExportSettings = docxExportSettings;
+}
 
-            docxFormatProvider.ExportSettings = docxExportSettings;
-        }
 ````
 ````VB.NET
-    Public Sub SetupDefaultDocxFormatProvider()
-        'Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
-        Dim docxFormatProvider As DocxFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("docx"), DocxFormatProvider)
-        Dim docxExportSettings As New DocxExportSettings()
-        docxExportSettings.FieldResultMode = FieldDisplayMode.DisplayName
+Public Sub SetupDefaultDocxFormatProvider()
+    'Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
+    Dim docxFormatProvider As DocxFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("docx"), DocxFormatProvider)
+    Dim docxExportSettings As New DocxExportSettings()
+    docxExportSettings.FieldResultMode = FieldDisplayMode.DisplayName
+    docxFormatProvider.ExportSettings = docxExportSettings
+End Sub
 
-        docxFormatProvider.ExportSettings = docxExportSettings
-    End Sub
 ````
 
 {{endregion}} 

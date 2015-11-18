@@ -31,15 +31,16 @@ Additionally to using the UI, you can print by taking advantage of the __Print()
 {{source=..\SamplesVB\RichTextEditor\Print.vb region=print}} 
 
 ````C#
-            this.radRichTextEditor1.Print();
-            //or
-            this.radRichTextEditor1.PrintPreview();
+this.radRichTextEditor1.Print();
+//or
+this.radRichTextEditor1.PrintPreview();
+
 ````
 ````VB.NET
-        Me.radRichTextEditor1.Print()
-        'or
-        Me.radRichTextEditor1.PrintPreview()
-        '
+Me.radRichTextEditor1.Print()
+'or
+Me.radRichTextEditor1.PrintPreview()
+
 ````
 
 {{endregion}} 

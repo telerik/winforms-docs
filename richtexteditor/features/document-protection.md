@@ -33,20 +33,19 @@ The users that will be able to edit the document and the groups they are in can 
 
 ````C#
             
-            this.radRichTextEditor1.Users = new PermissionInfoCollection()
-            {
-                PermissionInfo.CreateEveryonePermissionInfo(),
-                new PermissionInfo("jmiller", PermissionType.Individual, "James Miller"),
-                new PermissionInfo("jsmith", PermissionType.Individual, "John Smith"),
-                new PermissionInfo("rbrown", PermissionType.Individual, "Robert Brown"),
-                new PermissionInfo("Administrators", PermissionType.Group, "Administrators"),
-            };
+this.radRichTextEditor1.Users = new PermissionInfoCollection()
+{
+    PermissionInfo.CreateEveryonePermissionInfo(),
+    new PermissionInfo("jmiller", PermissionType.Individual, "James Miller"),
+    new PermissionInfo("jsmith", PermissionType.Individual, "John Smith"),
+    new PermissionInfo("rbrown", PermissionType.Individual, "Robert Brown"),
+    new PermissionInfo("Administrators", PermissionType.Group, "Administrators"),
+};
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.Users = New PermissionInfoCollection() From {PermissionInfo.CreateEveryonePermissionInfo(), New PermissionInfo("jmiller", PermissionType.Individual, "James Miller"), New PermissionInfo("jsmith", PermissionType.Individual, "John Smith"), New PermissionInfo("rbrown", PermissionType.Individual, "Robert Brown"), New PermissionInfo("Administrators", PermissionType.Group, "Administrators")}
 
-        Me.radRichTextEditor1.Users = New PermissionInfoCollection() From {PermissionInfo.CreateEveryonePermissionInfo(), New PermissionInfo("jmiller", PermissionType.Individual, "James Miller"), New PermissionInfo("jsmith", PermissionType.Individual, "John Smith"), New PermissionInfo("rbrown", PermissionType.Individual, "Robert Brown"), New PermissionInfo("Administrators", PermissionType.Group, "Administrators")}
-
-        '
 ````
 
 {{endregion}} 
@@ -64,13 +63,12 @@ The current user of the document is set using the __CurrentUser__ property of th
 
 ````C#
             
-            this.radRichTextEditor1.CurrentUser = new UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com");
+this.radRichTextEditor1.CurrentUser = new UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com");
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.CurrentUser = New UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com")
 
-        Me.radRichTextEditor1.CurrentUser = New UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com")
-
-        '
 ````
 
 {{endregion}} 
@@ -82,22 +80,21 @@ You can also create a collection with the UserInfos that will be interracting wi
 
 ````C#
             
-            List<UserInfo> CurrentUsers = new List<UserInfo>()
-            {
-                new UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com"),
-                new UserInfo("Administrators", "John Smith", "jsmith", "jsmith@example.com"),
-                new UserInfo("Administrators", "Robert Brown", "rbrown", "rbrown@example.com"),
-            };
+List<UserInfo> CurrentUsers = new List<UserInfo>()
+{
+    new UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com"),
+    new UserInfo("Administrators", "John Smith", "jsmith", "jsmith@example.com"),
+    new UserInfo("Administrators", "Robert Brown", "rbrown", "rbrown@example.com"),
+};
+
 ````
 ````VB.NET
+Dim CurrentUsers As New List(Of UserInfo)() From {
+    New UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com"),
+    New UserInfo("Administrators", "John Smith", "jsmith", "jsmith@example.com"),
+    New UserInfo("Administrators", "Robert Brown", "rbrown", "rbrown@example.com")
+}
 
-        Dim CurrentUsers As New List(Of UserInfo)() From {
-            New UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com"),
-            New UserInfo("Administrators", "John Smith", "jsmith", "jsmith@example.com"),
-            New UserInfo("Administrators", "Robert Brown", "rbrown", "rbrown@example.com")
-        }
-
-        '
 ````
 
 {{endregion}} 
@@ -109,19 +106,18 @@ You can declare a __RadDropDownList__ which will be used to change the current u
 
 ````C#
             
-            RadDropDownList dropdown1 = new RadDropDownList();
-            dropdown1.Location = new Point(10, 10);
-            this.Controls.Add(dropdown1);
-            dropdown1.SelectedIndexChanged += this.dropdown1_SelectedIndexChanged;
+RadDropDownList dropdown1 = new RadDropDownList();
+dropdown1.Location = new Point(10, 10);
+this.Controls.Add(dropdown1);
+dropdown1.SelectedIndexChanged += this.dropdown1_SelectedIndexChanged;
+
 ````
 ````VB.NET
+Dim dropdown1 As New RadDropDownList()
+dropdown1.Location = New Point(10, 10)
+Me.Controls.Add(dropdown1)
+AddHandler dropdown1.SelectedIndexChanged, AddressOf Me.dropdown1_SelectedIndexChanged
 
-        Dim dropdown1 As New RadDropDownList()
-        dropdown1.Location = New Point(10, 10)
-        Me.Controls.Add(dropdown1)
-        AddHandler dropdown1.SelectedIndexChanged, AddressOf Me.dropdown1_SelectedIndexChanged
-
-        '
 ````
 
 {{endregion}} 
@@ -133,15 +129,14 @@ and populate it like this:
 
 ````C#
             
-            dropdown1.DataSource = CurrentUsers;
-            dropdown1.DisplayMember = "Username";
+dropdown1.DataSource = CurrentUsers;
+dropdown1.DisplayMember = "Username";
+
 ````
 ````VB.NET
+dropdown1.DataSource = CurrentUsers
+dropdown1.DisplayMember = "Username"
 
-        dropdown1.DataSource = CurrentUsers
-        dropdown1.DisplayMember = "Username"
-
-        '
 ````
 
 {{endregion}} 
@@ -152,17 +147,17 @@ Then, when the selected item of the combo changes, the CurrentUser of the editor
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=combo3}} 
 
 ````C#
+private void dropdown1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
+{
+    this.radRichTextEditor1.CurrentUser = ((RadDropDownList)sender).SelectedValue as UserInfo;
+}
 
-        private void dropdown1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
-        {
-            this.radRichTextEditor1.CurrentUser = ((RadDropDownList)sender).SelectedValue as UserInfo;
-        }
 ````
 ````VB.NET
+Private Sub dropdown1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
+    Me.radRichTextEditor1.CurrentUser = TryCast(DirectCast(sender, RadDropDownList).SelectedValue, UserInfo)
+End Sub
 
-    Private Sub dropdown1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-        Me.radRichTextEditor1.CurrentUser = TryCast(DirectCast(sender, RadDropDownList).SelectedValue, UserInfo)
-    End Sub
 ````
 
 {{endregion}} 
@@ -185,13 +180,12 @@ It is also possible to toggle document protection in code-behind, without showin
 
 ````C#
             
-            this.radRichTextEditor1.Document.ProtectDocument(DocumentProtectionMode.ReadOnly, "password");
+this.radRichTextEditor1.Document.ProtectDocument(DocumentProtectionMode.ReadOnly, "password");
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.Document.ProtectDocument(DocumentProtectionMode.ReadOnly, "password")
 
-        Me.radRichTextEditor1.Document.ProtectDocument(DocumentProtectionMode.ReadOnly, "password")
-
-        '
 ````
 
 {{endregion}} 
@@ -203,13 +197,12 @@ The reverse operations can be executed like this:
 
 ````C#
         
-            this.radRichTextEditor1.Document.UnprotectDocument("password");
+this.radRichTextEditor1.Document.UnprotectDocument("password");
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.Document.UnprotectDocument("password")
 
-        Me.radRichTextEditor1.Document.UnprotectDocument("password")
-
-        '
 ````
 
 {{endregion}}
@@ -226,22 +219,20 @@ Here is an example:
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=permissions}} 
 
 ````C#
+PermissionRangeInfo info = new PermissionRangeInfo();
+info.Type = PermissionType.Individual;
+info.Name = this.radRichTextEditor1.CurrentUser.Username;
+List<PermissionRangeInfo> infos = new List<PermissionRangeInfo>() { info };
+this.radRichTextEditor1.InsertPermissionRange(infos);
 
-            PermissionRangeInfo info = new PermissionRangeInfo();
-            info.Type = PermissionType.Individual;
-            info.Name = this.radRichTextEditor1.CurrentUser.Username;
-            List<PermissionRangeInfo> infos = new List<PermissionRangeInfo>() { info };
-            this.radRichTextEditor1.InsertPermissionRange(infos);
 ````
 ````VB.NET
+Dim info As New PermissionRangeInfo()
+info.Type = PermissionType.Individual
+info.Name = Me.radRichTextEditor1.CurrentUser.Username
+Dim infos As New List(Of PermissionRangeInfo)() From {info}
+Me.radRichTextEditor1.InsertPermissionRange(infos)
 
-        Dim info As New PermissionRangeInfo()
-        info.Type = PermissionType.Individual
-        info.Name = Me.radRichTextEditor1.CurrentUser.Username
-        Dim infos As New List(Of PermissionRangeInfo)() From {info}
-        Me.radRichTextEditor1.InsertPermissionRange(infos)
-
-        '
 ````
 
 {{endregion}} 

@@ -23,16 +23,17 @@ Here is an example of a toggle button that upon checking should make the selecti
 
 ````C#
         
-        private void togglebutton_Click(object sender, EventArgs e)
-        {
-            this.radRichTextEditor.ToggleBold();
-        }
+private void togglebutton_Click(object sender, EventArgs e)
+{
+    this.radRichTextEditor.ToggleBold();
+}
+
 ````
 ````VB.NET
+Private Sub togglebutton_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Me.radRichTextEditor.ToggleBold()
+End Sub
 
-    Private Sub togglebutton_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Me.radRichTextEditor.ToggleBold()
-    End Sub
 ````
 
 {{endregion}} 
@@ -53,13 +54,12 @@ The following example inserts the word "text" at the CaretPosition.
 
 ````C#
             
-            this.radRichTextEditor.Insert("text");
+this.radRichTextEditor.Insert("text");
+
 ````
 ````VB.NET
+Me.radRichTextEditor.Insert("text")
 
-        Me.radRichTextEditor.Insert("text")
-
-        '
 ````
 
 {{endregion}} 
@@ -79,13 +79,12 @@ Both approaches can be used to insert content at the caret position with the __I
 
 ````C#
             
-            this.radRichTextEditor.InsertFragment(fragment);
+this.radRichTextEditor.InsertFragment(fragment);
+
 ````
 ````VB.NET
+Me.radRichTextEditor.InsertFragment(fragment)
 
-        Me.radRichTextEditor.InsertFragment(fragment)
-
-        '
 ````
 
 {{endregion}} 
@@ -98,14 +97,12 @@ If you create a fragment in this way, it will end with a new paragraph. This is 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=insert1}} 
 
 ````C#
+DocumentFragment fragmentFromDocument = new DocumentFragment(this.radRichTextEditor.Document);
 
-            DocumentFragment fragmentFromDocument = new DocumentFragment(this.radRichTextEditor.Document);
 ````
 ````VB.NET
+Dim fragmentFromDocument As New DocumentFragment(Me.radRichTextEditor.Document)
 
-        Dim fragmentFromDocument As New DocumentFragment(Me.radRichTextEditor.Document)
-
-        '
 ````
 
 {{endregion}} 
@@ -119,14 +116,12 @@ If you choose to use the document selection when creating a __DocumentFragment__
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=selection}} 
 
 ````C#
+DocumentFragment fragmentFromSelection = this.radRichTextEditor.Document.Selection.CopySelectedDocumentElements();
 
-            DocumentFragment fragmentFromSelection = this.radRichTextEditor.Document.Selection.CopySelectedDocumentElements();
 ````
 ````VB.NET
+Dim fragmentFromSelection As DocumentFragment = Me.radRichTextEditor.Document.Selection.CopySelectedDocumentElements()
 
-        Dim fragmentFromSelection As DocumentFragment = Me.radRichTextEditor.Document.Selection.CopySelectedDocumentElements()
-
-        '
 ````
 
 {{endregion}}

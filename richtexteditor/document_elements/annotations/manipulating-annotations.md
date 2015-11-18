@@ -39,18 +39,14 @@ By default all annotations are markup-only in the sense that they do not have an
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=contains}} 
 
 ````C#
+bool containsBookamrks = this.radRichTextEditor1.Document.ContainsAnnotationMarkersOfType<BookmarkRangeStart>();
+IEnumerable<BookmarkRangeStart> markers = this.radRichTextEditor1.Document.GetAnnotationMarkersOfType<BookmarkRangeStart>();
 
-            bool containsBookamrks = this.radRichTextEditor1.Document.ContainsAnnotationMarkersOfType<BookmarkRangeStart>();
-
-            IEnumerable<BookmarkRangeStart> markers = this.radRichTextEditor1.Document.GetAnnotationMarkersOfType<BookmarkRangeStart>();
 ````
 ````VB.NET
+Dim containsBookamrks As Boolean = Me.radRichTextEditor1.Document.ContainsAnnotationMarkersOfType(Of BookmarkRangeStart)()
+Dim markers As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetAnnotationMarkersOfType(Of BookmarkRangeStart)()
 
-        Dim containsBookamrks As Boolean = Me.radRichTextEditor1.Document.ContainsAnnotationMarkersOfType(Of BookmarkRangeStart)()
-
-        Dim markers As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetAnnotationMarkersOfType(Of BookmarkRangeStart)()
-
-        '
 ````
 
 {{endregion}} 
@@ -61,14 +57,12 @@ By default all annotations are markup-only in the sense that they do not have an
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=inline}} 
 
 ````C#
+Inline currentInline = this.radRichTextEditor1.Document.CaretPosition.GetCurrentInline();
 
-            Inline currentInline = this.radRichTextEditor1.Document.CaretPosition.GetCurrentInline();
 ````
 ````VB.NET
+Dim currentInline As Inline = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentInline()
 
-        Dim currentInline As Inline = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentInline()
-
-        '
 ````
 
 {{endregion}} 
@@ -79,18 +73,14 @@ and then, check if this inline is contained in a range using one of the methods 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=inRange}} 
 
 ````C#
+bool isInRange = this.radRichTextEditor1.Document.IsInAnnotationRange<BookmarkRangeStart>(inline);
+IEnumerable<BookmarkRangeStart> ranges = this.radRichTextEditor1.Document.GetContainingAnnotationRanges<BookmarkRangeStart>(inline);
 
-            bool isInRange = this.radRichTextEditor1.Document.IsInAnnotationRange<BookmarkRangeStart>(inline);
-
-            IEnumerable<BookmarkRangeStart> ranges = this.radRichTextEditor1.Document.GetContainingAnnotationRanges<BookmarkRangeStart>(inline);
 ````
 ````VB.NET
+Dim isInRange As Boolean = Me.radRichTextEditor1.Document.IsInAnnotationRange(Of BookmarkRangeStart)(inline)
+Dim ranges As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetContainingAnnotationRanges(Of BookmarkRangeStart)(inline)
 
-        Dim isInRange As Boolean = Me.radRichTextEditor1.Document.IsInAnnotationRange(Of BookmarkRangeStart)(inline)
-
-        Dim ranges As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetContainingAnnotationRanges(Of BookmarkRangeStart)(inline)
-
-        '
 ````
 
 {{endregion}} 
@@ -102,18 +92,14 @@ and then, check if this inline is contained in a range using one of the methods 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=inRange1}} 
 
 ````C#
+bool isInRange1 = this.radRichTextEditor1.Document.IsInAnnotationRange<BookmarkRangeStart>(inline, Filter, true);
+IEnumerable<BookmarkRangeStart> ranges1 = this.radRichTextEditor1.Document.GetContainingAnnotationRanges<BookmarkRangeStart>(inline, Filter, true);
 
-            bool isInRange1 = this.radRichTextEditor1.Document.IsInAnnotationRange<BookmarkRangeStart>(inline, Filter, true);
-
-            IEnumerable<BookmarkRangeStart> ranges1 = this.radRichTextEditor1.Document.GetContainingAnnotationRanges<BookmarkRangeStart>(inline, Filter, true);
 ````
 ````VB.NET
+Dim isInRange1 As Boolean = Me.radRichTextEditor1.Document.IsInAnnotationRange(Of BookmarkRangeStart)(inline, AddressOf Filter, True)
+Dim ranges1 As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetContainingAnnotationRanges(Of BookmarkRangeStart)(inline, AddressOf Filter, True)
 
-        Dim isInRange1 As Boolean = Me.radRichTextEditor1.Document.IsInAnnotationRange(Of BookmarkRangeStart)(inline, AddressOf Filter, True)
-
-        Dim ranges1 As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetContainingAnnotationRanges(Of BookmarkRangeStart)(inline, AddressOf Filter, True)
-
-        '
 ````
 
 {{endregion}} 
@@ -127,14 +113,12 @@ Annotations can be inserted in the document using the following method of [RadDo
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=insert}} 
 
 ````C#
+documentEditor.InsertAnnotationRange(new BookmarkRangeStart(), new BookmarkRangeEnd());
 
-            documentEditor.InsertAnnotationRange(new BookmarkRangeStart(), new BookmarkRangeEnd());
 ````
 ````VB.NET
+documentEditor.InsertAnnotationRange(New BookmarkRangeStart(), New BookmarkRangeEnd())
 
-        documentEditor.InsertAnnotationRange(New BookmarkRangeStart(), New BookmarkRangeEnd())
-
-        '
 ````
 
 {{endregion}} 
@@ -150,14 +134,12 @@ In order to delete an annotation, you need to obtain a reference to its range st
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=delete}} 
 
 ````C#
+documentEditor.DeleteAnnotationRange(start);
 
-            documentEditor.DeleteAnnotationRange(start);
 ````
 ````VB.NET
+documentEditor.DeleteAnnotationRange(start)
 
-        documentEditor.DeleteAnnotationRange(start)
-
-        '
 ````
 
 {{endregion}} 
@@ -168,16 +150,14 @@ Note that this method will remove the annotation, but will keep its contents. In
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=delete1}} 
 
 ````C#
+documentEditor.Document.Selection.SelectAnnotationRange(start);
+documentEditor.Delete(false);
 
-            documentEditor.Document.Selection.SelectAnnotationRange(start);
-            documentEditor.Delete(false);
 ````
 ````VB.NET
+documentEditor.Document.Selection.SelectAnnotationRange(start)
+documentEditor.Delete(False)
 
-        documentEditor.Document.Selection.SelectAnnotationRange(start)
-        documentEditor.Delete(False)
-
-        '
 ````
 
 {{endregion}} 
@@ -192,18 +172,16 @@ Some user scenarios require that there would be an easy way to split annotation 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=split}} 
 
 ````C#
+documentEditor.SplitAnnotationRange(start);
+//or
+documentEditor.SplitAnnotationRange(start, documentPosition);
 
-            documentEditor.SplitAnnotationRange(start);
-            //or
-            documentEditor.SplitAnnotationRange(start, documentPosition);
 ````
 ````VB.NET
+documentEditor.SplitAnnotationRange(start)
+'or
+documentEditor.SplitAnnotationRange(start, documentPosition)
 
-        documentEditor.SplitAnnotationRange(start)
-        'or
-        documentEditor.SplitAnnotationRange(start, documentPosition)
-
-        '
 ````
 
 {{endregion}} 

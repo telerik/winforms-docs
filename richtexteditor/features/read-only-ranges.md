@@ -36,13 +36,12 @@ When the document is measured (for example, shown in a __RadRichTextEditor__), y
 
 ````C#
             
-            this.radRichTextEditor1.InsertReadOnlyRange();
+this.radRichTextEditor1.InsertReadOnlyRange();
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.InsertReadOnlyRange()
 
-        Me.radRichTextEditor1.InsertReadOnlyRange()
-
-        '
 ````
 
 {{endregion}} 
@@ -57,49 +56,44 @@ As opposed to when inserting with one of the methods of __RadRichTextEditor__, w
 
 ````C#
             
-            RadDocument document = new RadDocument();
-            Section section = new Section();
-            Paragraph paragraph = new Paragraph();
-            Span span = new Span("Content prior range[");
-            Span span2 = new Span("]Content after range");
-            Span readOnlyContent = new Span("READ ONLY");
+RadDocument document = new RadDocument();
+Section section = new Section();
+Paragraph paragraph = new Paragraph();
+Span span = new Span("Content prior range[");
+Span span2 = new Span("]Content after range");
+Span readOnlyContent = new Span("READ ONLY");
+ReadOnlyRangeStart rangeStart = new ReadOnlyRangeStart();
+ReadOnlyRangeEnd rangeEnd = new ReadOnlyRangeEnd();
+rangeEnd.PairWithStart(rangeStart);
+            
+paragraph.Inlines.Add(span);
+paragraph.Inlines.Add(rangeStart);
+paragraph.Inlines.Add(readOnlyContent);
+paragraph.Inlines.Add(rangeEnd);
+paragraph.Inlines.Add(span2);
+            
+section.Blocks.Add(paragraph);
+document.Sections.Add(section);
 
-            ReadOnlyRangeStart rangeStart = new ReadOnlyRangeStart();
-            ReadOnlyRangeEnd rangeEnd = new ReadOnlyRangeEnd();
-            rangeEnd.PairWithStart(rangeStart);
-            
-            paragraph.Inlines.Add(span);
-            paragraph.Inlines.Add(rangeStart);
-            paragraph.Inlines.Add(readOnlyContent);
-            paragraph.Inlines.Add(rangeEnd);
-            paragraph.Inlines.Add(span2);
-            
-            section.Blocks.Add(paragraph);
-            document.Sections.Add(section);
 ````
 ````VB.NET
+Dim document As New RadDocument()
+Dim section As New Section()
+Dim paragraph As New Paragraph()
+Dim span As New Span("Content prior range[")
+Dim span2 As New Span("]Content after range")
+Dim readOnlyContent As New Span("READ ONLY")
+Dim rangeStart As New ReadOnlyRangeStart()
+Dim rangeEnd As New ReadOnlyRangeEnd()
+rangeEnd.PairWithStart(rangeStart)
+paragraph.Inlines.Add(span)
+paragraph.Inlines.Add(rangeStart)
+paragraph.Inlines.Add(readOnlyContent)
+paragraph.Inlines.Add(rangeEnd)
+paragraph.Inlines.Add(span2)
+section.Blocks.Add(paragraph)
+document.Sections.Add(section)
 
-        Dim document As New RadDocument()
-        Dim section As New Section()
-        Dim paragraph As New Paragraph()
-        Dim span As New Span("Content prior range[")
-        Dim span2 As New Span("]Content after range")
-        Dim readOnlyContent As New Span("READ ONLY")
-
-        Dim rangeStart As New ReadOnlyRangeStart()
-        Dim rangeEnd As New ReadOnlyRangeEnd()
-        rangeEnd.PairWithStart(rangeStart)
-
-        paragraph.Inlines.Add(span)
-        paragraph.Inlines.Add(rangeStart)
-        paragraph.Inlines.Add(readOnlyContent)
-        paragraph.Inlines.Add(rangeEnd)
-        paragraph.Inlines.Add(span2)
-
-        section.Blocks.Add(paragraph)
-        document.Sections.Add(section)
-
-        '
 ````
 
 {{endregion}} 
@@ -114,13 +108,12 @@ In order to remove a read only range, you should simply call the __DeleteReadOnl
 
 ````C#
             
-            this.radRichTextEditor1.DeleteReadOnlyRange();
+this.radRichTextEditor1.DeleteReadOnlyRange();
+
 ````
 ````VB.NET
+Me.radRichTextEditor1.DeleteReadOnlyRange()
 
-        Me.radRichTextEditor1.DeleteReadOnlyRange()
-
-        '
 ````
 
 {{endregion}} 
@@ -135,20 +128,19 @@ Additionally, if you can obtain a reference to a particular __ReadOnlyRangeStart
 
 ````C#
             
-            ReadOnlyRangeStart start = this.radRichTextEditor1.Document.EnumerateChildrenOfType<ReadOnlyRangeStart>().Where(x => x.Tag == "ReadOnly").FirstOrDefault();
-            if (start != null)
-            {
-                this.radRichTextEditor1.DeleteReadOnlyRange(start);
-            }
+ReadOnlyRangeStart start = this.radRichTextEditor1.Document.EnumerateChildrenOfType<ReadOnlyRangeStart>().Where(x => x.Tag == "ReadOnly").FirstOrDefault();
+if (start != null)
+{
+    this.radRichTextEditor1.DeleteReadOnlyRange(start);
+}
+
 ````
 ````VB.NET
+Dim start As ReadOnlyRangeStart = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of ReadOnlyRangeStart)().Where(Function(x) x.Tag = "ReadOnly").FirstOrDefault()
+If start IsNot Nothing Then
+    Me.radRichTextEditor1.DeleteReadOnlyRange(start)
+End If
 
-        Dim start As ReadOnlyRangeStart = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of ReadOnlyRangeStart)().Where(Function(x) x.Tag = "ReadOnly").FirstOrDefault()
-        If start IsNot Nothing Then
-            Me.radRichTextEditor1.DeleteReadOnlyRange(start)
-        End If
-
-        '
 ````
 
 {{endregion}} 
