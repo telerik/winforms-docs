@@ -43,13 +43,14 @@ To specify the text in the __Span__ you can use its __Text__ property.
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxSpan.vb region=AddTextToSpan}} 
 
 ````C#
-            Span mySpan = new Span();
-            mySpan.Text = "Thank you for choosing Telerik RadRichTextBox!";
+Span mySpan = new Span();
+mySpan.Text = "Thank you for choosing Telerik RadRichTextBox!";
+
 ````
 ````VB.NET
-        Dim mySpan As New Span()
-        mySpan.Text = "Thank you for choosing Telerik RadRichTextBox!"
-        '
+Dim mySpan As New Span()
+mySpan.Text = "Thank you for choosing Telerik RadRichTextBox!"
+
 ````
 
 {{endregion}}

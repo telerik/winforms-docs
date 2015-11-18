@@ -18,11 +18,12 @@ To make the RadRichTextBox read only, you have to set its __IsReadOnly__ propert
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxReadOnly.vb region=ReadOnly}} 
 
 ````C#
-            radRichTextBox1.IsReadOnly = true;
+radRichTextBox1.IsReadOnly = true;
+
 ````
 ````VB.NET
-        RadRichTextBox1.IsReadOnly = True
-        '
+RadRichTextBox1.IsReadOnly = True
+
 ````
 
 {{endregion}}

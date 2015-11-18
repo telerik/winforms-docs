@@ -16,12 +16,12 @@ You can present the content of your ribbonbar instance in a right-to-left direct
 {{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=rtl}} 
 
 ````C#
+this.radRibbonBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
-            this.radRibbonBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 ````
 ````VB.NET
-        Me.RadRibbonBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        '
+Me.RadRibbonBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+
 ````
 
 {{endregion}} 

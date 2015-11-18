@@ -16,14 +16,14 @@ RadRibbonBar provides the possibility to localize the strings of the Options and
 {{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=localize}} 
 
 ````C#
+radRibbonBar1.RibbonBarElement.OptionsButton.Text = "Options";
+radRibbonBar1.RibbonBarElement.ExitButton.Text = "Exit";
 
-            radRibbonBar1.RibbonBarElement.OptionsButton.Text = "Options";
-            radRibbonBar1.RibbonBarElement.ExitButton.Text = "Exit";
 ````
 ````VB.NET
-        RadRibbonBar1.RibbonBarElement.OptionsButton.Text = "Options"
-        RadRibbonBar1.RibbonBarElement.ExitButton.Text = "Exit"
-        '
+RadRibbonBar1.RibbonBarElement.OptionsButton.Text = "Options"
+RadRibbonBar1.RibbonBarElement.ExitButton.Text = "Exit"
+
 ````
 
 {{endregion}}
@@ -34,18 +34,18 @@ Additionally, you can customize the __QuickAccessToolbar__, drop down menu, by s
 {{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=localize2}} 
 
 ````C#
+radRibbonBar1.LocalizationSettings.ShowQuickAccessMenuBelowItemText = "ENG Show below the ribbon";
+radRibbonBar1.LocalizationSettings.MinimizeRibbonItemText = "ENG Minimize the ribbon";
+radRibbonBar1.LocalizationSettings.ShowQuickAccessMenuAboveItemText = "ENG Show above the ribbon";
+radRibbonBar1.LocalizationSettings.MaximizeRibbonItemText = "ENG Maximize the ribbon";
 
-            radRibbonBar1.LocalizationSettings.ShowQuickAccessMenuBelowItemText = "ENG Show below the ribbon";
-            radRibbonBar1.LocalizationSettings.MinimizeRibbonItemText = "ENG Minimize the ribbon";
-            radRibbonBar1.LocalizationSettings.ShowQuickAccessMenuAboveItemText = "ENG Show above the ribbon";
-            radRibbonBar1.LocalizationSettings.MaximizeRibbonItemText = "ENG Maximize the ribbon";
 ````
 ````VB.NET
-        RadRibbonBar1.LocalizationSettings.ShowQuickAccessMenuBelowItemText = "ENG Show below the ribbon"
-        RadRibbonBar1.LocalizationSettings.MinimizeRibbonItemText = "ENG Minimize the ribbon"
-        RadRibbonBar1.LocalizationSettings.ShowQuickAccessMenuAboveItemText = "ENG Show above the ribbon"
-        RadRibbonBar1.LocalizationSettings.MaximizeRibbonItemText = "ENG Maximize the ribbon"
-        '
+RadRibbonBar1.LocalizationSettings.ShowQuickAccessMenuBelowItemText = "ENG Show below the ribbon"
+RadRibbonBar1.LocalizationSettings.MinimizeRibbonItemText = "ENG Minimize the ribbon"
+RadRibbonBar1.LocalizationSettings.ShowQuickAccessMenuAboveItemText = "ENG Show above the ribbon"
+RadRibbonBar1.LocalizationSettings.MaximizeRibbonItemText = "ENG Maximize the ribbon"
+
 ````
 
 {{endregion}}

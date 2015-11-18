@@ -28,17 +28,19 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug winforms
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxParagraph.vb region=UseParagraphs}} 
 
 ````C#
-            Section section = new Section();
-            Paragraph paragraph = new Paragraph();
-            section.Blocks.Add(paragraph);
-            this.radRichTextBox1.Document.Sections.Add(section);
+Section section = new Section();
+Paragraph paragraph = new Paragraph();
+section.Blocks.Add(paragraph);
+this.radRichTextBox1.Document.Sections.Add(section);
+
 ````
-````VB.NET  
-        Dim section As New Section()
-        Dim paragraph As New Paragraph()
-        section.Blocks.Add(paragraph)
-        Me.RadRichTextBox1.Document.Sections.Add(section)
-        '
+````VB.NET
+  
+Dim section As New Section()
+Dim paragraph As New Paragraph()
+section.Blocks.Add(paragraph)
+Me.RadRichTextBox1.Document.Sections.Add(section)
+
 ````
 
 {{endregion}}
@@ -51,21 +53,22 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxParagraph.vb region=AddInlineElementsToParagraph}} 
 
 ````C#
-            Section sect = new Section();
-            Paragraph para = new Paragraph();
-            Span span = new Span("Span declared in code-behind");
-            para.Inlines.Add(span);
-            sect.Blocks.Add(para);
-            this.radRichTextBox1.Document.Sections.Add(sect);
+Section sect = new Section();
+Paragraph para = new Paragraph();
+Span span = new Span("Span declared in code-behind");
+para.Inlines.Add(span);
+sect.Blocks.Add(para);
+this.radRichTextBox1.Document.Sections.Add(sect);
+
 ````
 ````VB.NET
-        Dim sect As New Section()
-        Dim para As New Paragraph()
-        Dim span As New Span("Span declared in code-behind")
-        para.Inlines.Add(span)
-        sect.Blocks.Add(para)
-        Me.RadRichTextBox1.Document.Sections.Add(sect)
-        '
+Dim sect As New Section()
+Dim para As New Paragraph()
+Dim span As New Span("Span declared in code-behind")
+para.Inlines.Add(span)
+sect.Blocks.Add(para)
+Me.RadRichTextBox1.Document.Sections.Add(sect)
+
 ````
 
 {{endregion}}

@@ -35,16 +35,17 @@ For example, you have a button that makes the text bold:
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxWorkingWithRichTextBox.vb region=boldText}} 
 
 ````C#
-        private void boldButton_Click(object sender, EventArgs e)
-        {
-            radRichTextBox1.ToggleBold();
-        }
+private void boldButton_Click(object sender, EventArgs e)
+{
+    radRichTextBox1.ToggleBold();
+}
+
 ````
 ````VB.NET
-    Private Sub boldButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles boldButton.Click
-        RadRichTextBox1.ToggleBold()
-    End Sub
-    '
+Private Sub boldButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles boldButton.Click
+    RadRichTextBox1.ToggleBold()
+End Sub
+
 ````
 
 {{endregion}}
@@ -57,20 +58,21 @@ In the event handler for the __CurrentSpanStyleChanged__ you can do the followin
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxWorkingWithRichTextBox.vb region=CurrentSpanStyleChanged}} 
 
 ````C#
-        void radRichTextBox1_CurrentSpanStyleChanged(object sender, EventArgs e)
-        {
-            StyleDefinition style = this.radRichTextBox1.CurrentEditingStyle;
-            TextStyle fontWeight = (TextStyle)style.GetPropertyValue(Span.FontStyleProperty);
-            this.boldButton.IsChecked = fontWeight == TextStyle.Bold;
-        }
+void radRichTextBox1_CurrentSpanStyleChanged(object sender, EventArgs e)
+{
+    StyleDefinition style = this.radRichTextBox1.CurrentEditingStyle;
+    TextStyle fontWeight = (TextStyle)style.GetPropertyValue(Span.FontStyleProperty);
+    this.boldButton.IsChecked = fontWeight == TextStyle.Bold;
+}
+
 ````
 ````VB.NET
-    Private Sub radRichTextBox1_CurrentSpanStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
-        Dim style As StyleDefinition = Me.RadRichTextBox1.CurrentEditingStyle
-        Dim fontWeight As TextStyle = DirectCast(style.GetPropertyValue(Span.FontStyleProperty), TextStyle)
-        Me.boldButton.IsChecked = fontWeight = TextStyle.Bold
-    End Sub
-    '
+Private Sub radRichTextBox1_CurrentSpanStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
+    Dim style As StyleDefinition = Me.RadRichTextBox1.CurrentEditingStyle
+    Dim fontWeight As TextStyle = DirectCast(style.GetPropertyValue(Span.FontStyleProperty), TextStyle)
+    Me.boldButton.IsChecked = fontWeight = TextStyle.Bold
+End Sub
+
 ````
 
 {{endregion}}

@@ -28,27 +28,26 @@ In order to capture the click event of the items, add an event handler for anoth
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheQuickAccessMenu.vb region=addingItemsToQuickAccessToolBar}} 
 
 ````C#
-            RadMenuItem mnuQANew = new RadMenuItem();
-            mnuQANew.Click += new EventHandler(NewFile);
-            mnuQANew.Text = "Menu item: New File";
-            radRibbonBar1.QuickAccessToolBarItems.Add(mnuQANew);
+RadMenuItem mnuQANew = new RadMenuItem();
+mnuQANew.Click += new EventHandler(NewFile);
+mnuQANew.Text = "Menu item: New File";
+radRibbonBar1.QuickAccessToolBarItems.Add(mnuQANew);
+RadButtonElement mnuQAPrint = new RadButtonElement();
+mnuQAPrint.Click += new EventHandler(QuickPrint);
+mnuQAPrint.Text = "Menu item: Quick Print";
+radRibbonBar1.QuickAccessToolBarItems.Add(mnuQAPrint);
 
-            RadButtonElement mnuQAPrint = new RadButtonElement();
-            mnuQAPrint.Click += new EventHandler(QuickPrint);
-            mnuQAPrint.Text = "Menu item: Quick Print";
-            radRibbonBar1.QuickAccessToolBarItems.Add(mnuQAPrint);
 ````
 ````VB.NET
-        Dim mnuQANew As New RadMenuItem
-        AddHandler mnuQANew.Click, AddressOf NewFile
-        mnuQANew.Text = "Menu item: New File"
-        RadRibbonBar1.QuickAccessToolBarItems.Add(mnuQANew)
+Dim mnuQANew As New RadMenuItem
+AddHandler mnuQANew.Click, AddressOf NewFile
+mnuQANew.Text = "Menu item: New File"
+RadRibbonBar1.QuickAccessToolBarItems.Add(mnuQANew)
+Dim mnuQAPrint As New RadButtonElement
+AddHandler mnuQAPrint.Click, AddressOf QuickPrint
+mnuQAPrint.Text = "Menu item: Print"
+RadRibbonBar1.QuickAccessToolBarItems.Add(mnuQAPrint)
 
-        Dim mnuQAPrint As New RadButtonElement
-        AddHandler mnuQAPrint.Click, AddressOf QuickPrint
-        mnuQAPrint.Text = "Menu item: Print"
-        RadRibbonBar1.QuickAccessToolBarItems.Add(mnuQAPrint)
-        '
 ````
 
 {{endregion}}

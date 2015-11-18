@@ -41,18 +41,19 @@ __Export to String__
 {{source=..\SamplesVB\RichTextBox\Features\ImportExport\RichTextBoxImportExport.vb region=ExportToXAML}} 
 
 ````C#
-        public string ExportToXAML(RadDocument document)
-        {
-            XamlFormatProvider provider = new XamlFormatProvider();
-            return provider.Export(document);
-        }
+public string ExportToXAML(RadDocument document)
+{
+    XamlFormatProvider provider = new XamlFormatProvider();
+    return provider.Export(document);
+}
+
 ````
 ````VB.NET
-    Public Function ExportToXAML(ByVal document As RadDocument) As String
-        Dim provider As New XamlFormatProvider()
-        Return provider.Export(document)
-    End Function
-    '
+Public Function ExportToXAML(ByVal document As RadDocument) As String
+    Dim provider As New XamlFormatProvider()
+    Return provider.Export(document)
+End Function
+
 ````
 
 {{endregion}}
@@ -65,38 +66,39 @@ __Export to File__
 {{source=..\SamplesVB\RichTextBox\Features\ImportExport\RichTextBoxImportExport.vb region=ExportToDocx}} 
 
 ````C#
-        public void ExportToDocx(RadDocument document)
+public void ExportToDocx(RadDocument document)
+{
+    DocxFormatProvider provider = new DocxFormatProvider();
+    SaveFileDialog saveDialog = new SaveFileDialog();
+    saveDialog.DefaultExt = ".docx";
+    saveDialog.Filter = "Documents|*.docx";
+    DialogResult dialogResult = saveDialog.ShowDialog();
+    if (dialogResult == System.Windows.Forms.DialogResult.OK)
+    {
+        using (Stream output = saveDialog.OpenFile())
         {
-            DocxFormatProvider provider = new DocxFormatProvider();
-            SaveFileDialog saveDialog = new SaveFileDialog();
-            saveDialog.DefaultExt = ".docx";
-            saveDialog.Filter = "Documents|*.docx";
-            DialogResult dialogResult = saveDialog.ShowDialog();
-            if (dialogResult == System.Windows.Forms.DialogResult.OK)
-            {
-                using (Stream output = saveDialog.OpenFile())
-                {
-                    provider.Export(document, output);
-                    MessageBox.Show("Saved Successfuly!");
-                }
-            }
+            provider.Export(document, output);
+            MessageBox.Show("Saved Successfuly!");
         }
+    }
+}
+
 ````
 ````VB.NET
-    Public Sub ExportToDocx(ByVal document As RadDocument)
-        Dim provider As New DocxFormatProvider()
-        Dim saveDialog As New SaveFileDialog()
-        saveDialog.DefaultExt = ".docx"
-        saveDialog.Filter = "Documents|*.docx"
-        Dim dialogResult As DialogResult = saveDialog.ShowDialog()
-        If dialogResult = System.Windows.Forms.DialogResult.OK Then
-            Using output As Stream = saveDialog.OpenFile()
-                provider.Export(document, output)
-                MessageBox.Show("Saved Successfuly!")
-            End Using
-        End If
-    End Sub
-    '
+Public Sub ExportToDocx(ByVal document As RadDocument)
+    Dim provider As New DocxFormatProvider()
+    Dim saveDialog As New SaveFileDialog()
+    saveDialog.DefaultExt = ".docx"
+    saveDialog.Filter = "Documents|*.docx"
+    Dim dialogResult As DialogResult = saveDialog.ShowDialog()
+    If dialogResult = System.Windows.Forms.DialogResult.OK Then
+        Using output As Stream = saveDialog.OpenFile()
+            provider.Export(document, output)
+            MessageBox.Show("Saved Successfuly!")
+        End Using
+    End If
+End Sub
+
 ````
 
 {{endregion}}
@@ -109,18 +111,19 @@ __Import from String__
 {{source=..\SamplesVB\RichTextBox\Features\ImportExport\RichTextBoxImportExport.vb region=ImportXaml}} 
 
 ````C#
-        public RadDocument ImportXaml(string content)
-        {
-            XamlFormatProvider provider = new XamlFormatProvider();
-            return provider.Import(content);
-        }
+public RadDocument ImportXaml(string content)
+{
+    XamlFormatProvider provider = new XamlFormatProvider();
+    return provider.Import(content);
+}
+
 ````
 ````VB.NET
-    Public Function ImportXaml(ByVal content As String) As RadDocument
-        Dim provider As New XamlFormatProvider()
-        Return provider.Import(content)
-    End Function
-    '
+Public Function ImportXaml(ByVal content As String) As RadDocument
+    Dim provider As New XamlFormatProvider()
+    Return provider.Import(content)
+End Function
+
 ````
 
 {{endregion}} 
@@ -133,40 +136,41 @@ __Import from File__
 {{source=..\SamplesVB\RichTextBox\Features\ImportExport\RichTextBoxImportExport.vb region=ImportDocx}} 
 
 ````C#
-        public RadDocument ImportDocx()
+public RadDocument ImportDocx()
+{
+    RadDocument document = null;
+    IDocumentFormatProvider provider = new DocxFormatProvider();
+    OpenFileDialog openDialog = new OpenFileDialog();
+    openDialog.Filter = "Documents|*.docx";
+    openDialog.Multiselect = false;
+    DialogResult dialogResult = openDialog.ShowDialog();
+    if (dialogResult == System.Windows.Forms.DialogResult.OK)
+    {
+        using (FileStream stream = new FileStream(openDialog.FileName, FileMode.Open))
         {
-            RadDocument document = null;
-            IDocumentFormatProvider provider = new DocxFormatProvider();
-            OpenFileDialog openDialog = new OpenFileDialog();
-            openDialog.Filter = "Documents|*.docx";
-            openDialog.Multiselect = false;
-            DialogResult dialogResult = openDialog.ShowDialog();
-            if (dialogResult == System.Windows.Forms.DialogResult.OK)
-            {
-                using (FileStream stream = new FileStream(openDialog.FileName, FileMode.Open))
-                {
-                    document = provider.Import(stream);
-                }
-            }
-            return document;
+            document = provider.Import(stream);
         }
+    }
+    return document;
+}
+
 ````
 ````VB.NET
-    Public Function ImportDocx() As RadDocument
-        Dim document As RadDocument = Nothing
-        Dim provider As IDocumentFormatProvider = New DocxFormatProvider()
-        Dim openDialog As New OpenFileDialog()
-        openDialog.Filter = "Documents|*.docx"
-        openDialog.Multiselect = False
-        Dim dialogResult As DialogResult = openDialog.ShowDialog()
-        If dialogResult = System.Windows.Forms.DialogResult.OK Then
-            Using stream As New FileStream(openDialog.FileName, FileMode.Open)
-                document = provider.Import(stream)
-            End Using
-        End If
-        Return document
-    End Function
-    '
+Public Function ImportDocx() As RadDocument
+    Dim document As RadDocument = Nothing
+    Dim provider As IDocumentFormatProvider = New DocxFormatProvider()
+    Dim openDialog As New OpenFileDialog()
+    openDialog.Filter = "Documents|*.docx"
+    openDialog.Multiselect = False
+    Dim dialogResult As DialogResult = openDialog.ShowDialog()
+    If dialogResult = System.Windows.Forms.DialogResult.OK Then
+        Using stream As New FileStream(openDialog.FileName, FileMode.Open)
+            document = provider.Import(stream)
+        End Using
+    End If
+    Return document
+End Function
+
 ````
 
 {{endregion}}

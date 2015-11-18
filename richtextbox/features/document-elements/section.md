@@ -28,17 +28,18 @@ In order to add paragraphs you have to use the __Paragraphs__ collection of the 
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxSection.vb region=AddSection}} 
 
 ````C#
-            Section section = new Section();
-            Paragraph paragraph = new Paragraph();
-            section.Blocks.Add(paragraph);
-            this.radRichTextBox1.Document.Sections.Add(section);
+Section section = new Section();
+Paragraph paragraph = new Paragraph();
+section.Blocks.Add(paragraph);
+this.radRichTextBox1.Document.Sections.Add(section);
+
 ````
 ````VB.NET
-        Dim section As New Section()
-        Dim paragraph As New Paragraph()
-        section.Blocks.Add(paragraph)
-        Me.RadRichTextBox1.Document.Sections.Add(section)
-        '
+Dim section As New Section()
+Dim paragraph As New Paragraph()
+section.Blocks.Add(paragraph)
+Me.RadRichTextBox1.Document.Sections.Add(section)
+
 ````
 
 {{endregion}}

@@ -33,22 +33,23 @@ Here is an example of how to select the current word.
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSelection.vb region=selection}} 
 
 ````C#
-            DocumentPosition startPosition = this.radRichTextBox1.Document.CaretPosition; //new DocumentPosition( this.radRichTextBox.Document );
-            DocumentPosition endPosition = new DocumentPosition(startPosition);
-            startPosition.MoveToCurrentWordStart();
-            endPosition.MoveToCurrentWordEnd();
-            this.radRichTextBox1.Document.Selection.AddSelectionStart(startPosition);
-            this.radRichTextBox1.Document.Selection.AddSelectionEnd(endPosition);
+DocumentPosition startPosition = this.radRichTextBox1.Document.CaretPosition; //new DocumentPosition( this.radRichTextBox.Document );
+DocumentPosition endPosition = new DocumentPosition(startPosition);
+startPosition.MoveToCurrentWordStart();
+endPosition.MoveToCurrentWordEnd();
+this.radRichTextBox1.Document.Selection.AddSelectionStart(startPosition);
+this.radRichTextBox1.Document.Selection.AddSelectionEnd(endPosition);
+
 ````
 ````VB.NET
-        Dim startPosition As DocumentPosition = Me.RadRichTextBox1.Document.CaretPosition
-        'new DocumentPosition( this.radRichTextBox.Document );
-        Dim endPosition As New DocumentPosition(startPosition)
-        startPosition.MoveToCurrentWordStart()
-        endPosition.MoveToCurrentWordEnd()
-        Me.RadRichTextBox1.Document.Selection.AddSelectionStart(startPosition)
-        Me.RadRichTextBox1.Document.Selection.AddSelectionEnd(endPosition)
-        '
+Dim startPosition As DocumentPosition = Me.RadRichTextBox1.Document.CaretPosition
+'new DocumentPosition( this.radRichTextBox.Document );
+Dim endPosition As New DocumentPosition(startPosition)
+startPosition.MoveToCurrentWordStart()
+endPosition.MoveToCurrentWordEnd()
+Me.RadRichTextBox1.Document.Selection.AddSelectionStart(startPosition)
+Me.RadRichTextBox1.Document.Selection.AddSelectionEnd(endPosition)
+
 ````
 
 {{endregion}}
@@ -65,35 +66,35 @@ Here is an example of selecting each "RadRichTextBox" word in the text. This exa
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSelection.vb region=MultiSelection}} 
 
 ````C#
-            DocumentPosition position = new DocumentPosition( this.radRichTextBox1.Document );
-            do
-            {
-               //GetCurrentSpan().Text returns the word at the position
-               string word = position.GetCurrentSpanBox().Text;
-               if ( word.Contains( "RadRichTextBox" ))
-               {
-                   DocumentPosition wordEndPosition = new DocumentPosition( position );
-                   wordEndPosition.MoveToCurrentWordEnd();
-                   this.radRichTextBox1.Document.Selection.AddSelectionStart( position );
-                   this.radRichTextBox1.Document.Selection.AddSelectionEnd( wordEndPosition );
-               }
-            }
-            while (position.MoveToNextWordStart());
+DocumentPosition position = new DocumentPosition( this.radRichTextBox1.Document );
+do
+{
+   //GetCurrentSpan().Text returns the word at the position
+   string word = position.GetCurrentSpanBox().Text;
+   if ( word.Contains( "RadRichTextBox" ))
+   {
+       DocumentPosition wordEndPosition = new DocumentPosition( position );
+       wordEndPosition.MoveToCurrentWordEnd();
+       this.radRichTextBox1.Document.Selection.AddSelectionStart( position );
+       this.radRichTextBox1.Document.Selection.AddSelectionEnd( wordEndPosition );
+   }
+}
+while (position.MoveToNextWordStart());
+
 ````
 ````VB.NET
-        Dim position As New DocumentPosition(Me.RadRichTextBox1.Document)
-        Do
-            'GetCurrentSpan().Text returns the word at the position
-            Dim word As String = position.GetCurrentSpanBox().Text
-            If word.Contains("RadRichTextBox") Then
-                Dim wordEndPosition As New DocumentPosition(position)
-                wordEndPosition.MoveToCurrentWordEnd()
-                Me.RadRichTextBox1.Document.Selection.AddSelectionStart(position)
+Dim position As New DocumentPosition(Me.RadRichTextBox1.Document)
+Do
+    'GetCurrentSpan().Text returns the word at the position
+    Dim word As String = position.GetCurrentSpanBox().Text
+    If word.Contains("RadRichTextBox") Then
+        Dim wordEndPosition As New DocumentPosition(position)
+        wordEndPosition.MoveToCurrentWordEnd()
+        Me.RadRichTextBox1.Document.Selection.AddSelectionStart(position)
+        Me.RadRichTextBox1.Document.Selection.AddSelectionEnd(wordEndPosition)
+    End If
+Loop While position.MoveToNextWordStart()
 
-                Me.RadRichTextBox1.Document.Selection.AddSelectionEnd(wordEndPosition)
-            End If
-        Loop While position.MoveToNextWordStart()
-        '
 ````
 
 {{endregion}}

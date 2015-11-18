@@ -38,11 +38,12 @@ As you can see the text is still editable. To make it read only you have to set 
 {{source=..\SamplesVB\RichTextBox\RichTextBoxGettingStarted.vb region=ReadOnly}} 
 
 ````C#
-            radRichTextBox1.IsReadOnly = true;
+radRichTextBox1.IsReadOnly = true;
+
 ````
 ````VB.NET
-        RadRichTextBox1.IsReadOnly = True
-        '
+RadRichTextBox1.IsReadOnly = True
+
 ````
 
 {{endregion}}
@@ -55,34 +56,31 @@ If you want to allow the user to edit and format the content of the RadRichTextB
 {{source=..\SamplesVB\RichTextBox\RichTextBoxGettingStarted.vb region=BoldItalicUnderline}} 
 
 ````C#
-        private void boldButton_Click(object sender, EventArgs e)
-        {
-            this.radRichTextBox1.ToggleBold();
-        }
+private void boldButton_Click(object sender, EventArgs e)
+{
+    this.radRichTextBox1.ToggleBold();
+}
+private void italicButton_Click(object sender, EventArgs e)
+{
+    this.radRichTextBox1.ToggleItalic();
+}
+private void underlineButton_Click(object sender, EventArgs e)
+{
+    this.radRichTextBox1.ToggleUnderline();
+}
 
-        private void italicButton_Click(object sender, EventArgs e)
-        {
-            this.radRichTextBox1.ToggleItalic();
-        }
-
-        private void underlineButton_Click(object sender, EventArgs e)
-        {
-            this.radRichTextBox1.ToggleUnderline();
-        }
 ````
 ````VB.NET
-    Private Sub boldButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles boldButton.Click
-        Me.RadRichTextBox1.ToggleBold()
-    End Sub
+Private Sub boldButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles boldButton.Click
+    Me.RadRichTextBox1.ToggleBold()
+End Sub
+Private Sub italicButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles italicButton.Click
+    Me.RadRichTextBox1.ToggleItalic()
+End Sub
+Private Sub unserlineButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles underlineButton.Click
+    Me.RadRichTextBox1.ToggleUnderline()
+End Sub
 
-    Private Sub italicButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles italicButton.Click
-        Me.RadRichTextBox1.ToggleItalic()
-    End Sub
-
-    Private Sub unserlineButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles underlineButton.Click
-        Me.RadRichTextBox1.ToggleUnderline()
-    End Sub
-    '
 ````
 
 {{endregion}}
@@ -98,26 +96,27 @@ The UI should also response, when the caret is on a position where the text is m
 {{source=..\SamplesVB\RichTextBox\RichTextBoxGettingStarted.vb region=CurrentSpanStyleChanged}} 
 
 ````C#
-        void radRichTextBox1_CurrentSpanStyleChanged(object sender, EventArgs e)
-        {
-            StyleDefinition style = this.radRichTextBox1.CurrentEditingStyle;
-            TextStyle fontStyle = (TextStyle)style.GetPropertyValue(Span.FontStyleProperty);
-            UnderlineType underlineDecoration = (UnderlineType)style.GetPropertyValue(Span.UnderlineTypeProperty);
-            this.boldButton.IsChecked = fontStyle.HasFlag(TextStyle.Bold);
-            this.italicButton.IsChecked = fontStyle.HasFlag(TextStyle.Italic);
-            this.underlineButton.IsChecked = underlineDecoration != UnderlineType.None;
-        }
+void radRichTextBox1_CurrentSpanStyleChanged(object sender, EventArgs e)
+{
+    StyleDefinition style = this.radRichTextBox1.CurrentEditingStyle;
+    TextStyle fontStyle = (TextStyle)style.GetPropertyValue(Span.FontStyleProperty);
+    UnderlineType underlineDecoration = (UnderlineType)style.GetPropertyValue(Span.UnderlineTypeProperty);
+    this.boldButton.IsChecked = fontStyle.HasFlag(TextStyle.Bold);
+    this.italicButton.IsChecked = fontStyle.HasFlag(TextStyle.Italic);
+    this.underlineButton.IsChecked = underlineDecoration != UnderlineType.None;
+}
+
 ````
 ````VB.NET
-    Private Sub radRichTextBox1_CurrentSpanStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
-        Dim style As StyleDefinition = Me.RadRichTextBox1.CurrentEditingStyle
-        Dim fontStyle As TextStyle = DirectCast(style.GetPropertyValue(Span.FontStyleProperty), TextStyle)
-        Dim underlineDecoration As UnderlineType = DirectCast(style.GetPropertyValue(Span.UnderlineTypeProperty), UnderlineType)
-        Me.boldButton.IsChecked = fontStyle.HasFlag(TextStyle.Bold)
-        Me.italicButton.IsChecked = fontStyle.HasFlag(TextStyle.Italic)
-        Me.underlineButton.IsChecked = underlineDecoration <> UnderlineType.None
-    End Sub
-    '
+Private Sub radRichTextBox1_CurrentSpanStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
+    Dim style As StyleDefinition = Me.RadRichTextBox1.CurrentEditingStyle
+    Dim fontStyle As TextStyle = DirectCast(style.GetPropertyValue(Span.FontStyleProperty), TextStyle)
+    Dim underlineDecoration As UnderlineType = DirectCast(style.GetPropertyValue(Span.UnderlineTypeProperty), UnderlineType)
+    Me.boldButton.IsChecked = fontStyle.HasFlag(TextStyle.Bold)
+    Me.italicButton.IsChecked = fontStyle.HasFlag(TextStyle.Italic)
+    Me.underlineButton.IsChecked = underlineDecoration <> UnderlineType.None
+End Sub
+
 ````
 
 {{endregion}}

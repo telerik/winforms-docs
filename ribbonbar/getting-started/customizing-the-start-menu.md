@@ -74,11 +74,12 @@ You can easily set an Image to the __RadRibbonBar__ Start Menu by accessing the 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\CustomizingTheStartMenu.vb region=StartButtonImage}} 
 
 ````C#
-            this.radRibbonBar1.StartButtonImage = startMenuButtonImage;
+this.radRibbonBar1.StartButtonImage = startMenuButtonImage;
+
 ````
 ````VB.NET
-        Me.RadRibbonBar1.StartButtonImage = startMenuButtonImage
-        '
+Me.RadRibbonBar1.StartButtonImage = startMenuButtonImage
+
 ````
 
 {{endregion}}

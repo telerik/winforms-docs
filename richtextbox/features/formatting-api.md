@@ -22,16 +22,17 @@ Here is an example of a toggle button that upon checking should make the selecti
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxFormattingAPI.vb region=toggleBold}} 
 
 ````C#
-        private void boldButton_Click(object sender, EventArgs e)
-        {
-            radRichTextBox1.ToggleBold();
-        }
+private void boldButton_Click(object sender, EventArgs e)
+{
+    radRichTextBox1.ToggleBold();
+}
+
 ````
 ````VB.NET
-    Private Sub boldButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles boldButton.Click
-        RadRichTextBox1.ToggleBold()
-    End Sub
-    '
+Private Sub boldButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles boldButton.Click
+    RadRichTextBox1.ToggleBold()
+End Sub
+
 ````
 
 {{endregion}}

@@ -24,11 +24,12 @@ __RadRibbonBar.StartButtonImage__ property defines the image used in the Applica
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=assignImageToStartButton}} 
 
 ````C#
-            radRibbonBar1.StartButtonImage = new Bitmap("..\\..\\DataSources\\star.png");
+radRibbonBar1.StartButtonImage = new Bitmap("..\\..\\DataSources\\star.png");
+
 ````
 ````VB.NET
-        RadRibbonBar1.StartButtonImage = New Bitmap("..\\..\\DataSources\\star.png")
-        '
+RadRibbonBar1.StartButtonImage = New Bitmap("..\\..\\DataSources\\star.png")
+
 ````
 
 {{endregion}}
@@ -53,15 +54,16 @@ For example to create a new RadMenuItem and add it to the application menu use t
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=addingItemsToTheApplicationMenu1}} 
 
 ````C#
-            RadMenuItem mnuNew = new RadMenuItem("New File");
-            mnuNew.Click += new EventHandler(NewFile);
-            radRibbonBar1.StartMenuItems.Add(mnuNew);
+RadMenuItem mnuNew = new RadMenuItem("New File");
+mnuNew.Click += new EventHandler(NewFile);
+radRibbonBar1.StartMenuItems.Add(mnuNew);
+
 ````
 ````VB.NET
-        Dim mnuNew As New RadMenuItem("New File")
-        AddHandler mnuNew.Click, AddressOf NewFile
-        RadRibbonBar1.StartMenuItems.Add(mnuNew)
-        '
+Dim mnuNew As New RadMenuItem("New File")
+AddHandler mnuNew.Click, AddressOf NewFile
+RadRibbonBar1.StartMenuItems.Add(mnuNew)
+
 ````
 
 {{endregion}}
@@ -74,16 +76,17 @@ For example to create a new RadMenuItem and add it to the application menu use t
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=addingItemsToTheApplicationMenu2}} 
 
 ````C#
-        void NewFile(object sender, EventArgs e)
-        {
-            MessageBox.Show("New File code goes here"); 
-        }
+void NewFile(object sender, EventArgs e)
+{
+    MessageBox.Show("New File code goes here"); 
+}
+
 ````
 ````VB.NET
-    Private Sub NewFile(sender As Object, e As EventArgs)
-        MessageBox.Show("New File code goes here")
-    End Sub
-    '
+Private Sub NewFile(sender As Object, e As EventArgs)
+    MessageBox.Show("New File code goes here")
+End Sub
+
 ````
 
 {{endregion}}
@@ -98,15 +101,16 @@ To place items in the right column of the Application Menu use __RadRibbonBar.St
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=addingItemsToTheRightColumn}} 
 
 ````C#
-            RadMenuItem mnuRecentDocs = new RadMenuItem("Recent Documents");
-            mnuRecentDocs.Enabled = false;
-            radRibbonBar1.StartMenuRightColumnItems.Add(mnuRecentDocs);
+RadMenuItem mnuRecentDocs = new RadMenuItem("Recent Documents");
+mnuRecentDocs.Enabled = false;
+radRibbonBar1.StartMenuRightColumnItems.Add(mnuRecentDocs);
+
 ````
 ````VB.NET
-        Dim mnuRecentDocs As New RadMenuItem("Recent Documents")
-        mnuRecentDocs.Enabled = False
-        RadRibbonBar1.StartMenuRightColumnItems.Add(mnuRecentDocs)
-        '
+Dim mnuRecentDocs As New RadMenuItem("Recent Documents")
+mnuRecentDocs.Enabled = False
+RadRibbonBar1.StartMenuRightColumnItems.Add(mnuRecentDocs)
+
 ````
 
 {{endregion}} 
@@ -126,39 +130,34 @@ This code adds a new __RadMenuItem__, __mnuPrint__, to the Start Menu. Then an
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=addingItemsWithSubItems}} 
 
 ````C#
-            RadMenuItem mnuPrint = new RadMenuItem("Print");
-            //add Print menu item to the Start Menu 
-            radRibbonBar1.StartMenuItems.Add(mnuPrint);
+RadMenuItem mnuPrint = new RadMenuItem("Print");
+//add Print menu item to the Start Menu 
+radRibbonBar1.StartMenuItems.Add(mnuPrint);
+//Create Sub-Menu Items with event handlers
+RadMenuItem mnuPrintsubPrint = new RadMenuItem("Print");
+mnuPrintsubPrint.Click += new EventHandler(Print);
+RadMenuItem mnuPrintsubQuickPrint = new RadMenuItem("Quick Print");
+mnuPrintsubQuickPrint.Click += new EventHandler(QuickPrint);
+RadMenuItem mnuPrintsubPreview = new RadMenuItem("Print Preview");
+mnuPrintsubPreview.Click += new EventHandler(Preview);
+//add sub-menu items to start menu 
+mnuPrint.Items.AddRange(new RadMenuItem[] {mnuPrintsubPrint, mnuPrintsubQuickPrint, mnuPrintsubPreview});
 
-            //Create Sub-Menu Items with event handlers
-            RadMenuItem mnuPrintsubPrint = new RadMenuItem("Print");
-            mnuPrintsubPrint.Click += new EventHandler(Print);
-            RadMenuItem mnuPrintsubQuickPrint = new RadMenuItem("Quick Print");
-            mnuPrintsubQuickPrint.Click += new EventHandler(QuickPrint);
-            RadMenuItem mnuPrintsubPreview = new RadMenuItem("Print Preview");
-            mnuPrintsubPreview.Click += new EventHandler(Preview);
-
-            //add sub-menu items to start menu 
-            mnuPrint.Items.AddRange(new RadMenuItem[] {mnuPrintsubPrint, mnuPrintsubQuickPrint, mnuPrintsubPreview});
 ````
 ````VB.NET
-        Dim mnuPrint As New RadMenuItem("Print")
-        'add Print menu item to the Start Menu 
-        RadRibbonBar1.StartMenuItems.Add(mnuPrint)
+Dim mnuPrint As New RadMenuItem("Print")
+'add Print menu item to the Start Menu 
+RadRibbonBar1.StartMenuItems.Add(mnuPrint)
+'Create Sub-Menu Items with event handlers
+Dim mnuPrintsubPrint As New RadMenuItem("Print")
+AddHandler mnuPrintsubPrint.Click, AddressOf Print
+Dim mnuPrintsubQuickPrint As New RadMenuItem("Quick Print")
+AddHandler mnuPrintsubQuickPrint.Click, AddressOf QuickPrint
+Dim mnuPrintsubPreview As New RadMenuItem("Print Preview")
+AddHandler mnuPrintsubPreview.Click, AddressOf Preview
+'Add sub-menu items to the Print menu item 
+mnuPrint.Items.AddRange(New RadMenuItem() {mnuPrintsubPrint, mnuPrintsubQuickPrint, mnuPrintsubPreview})
 
-        'Create Sub-Menu Items with event handlers
-        Dim mnuPrintsubPrint As New RadMenuItem("Print")
-        AddHandler mnuPrintsubPrint.Click, AddressOf Print
-
-        Dim mnuPrintsubQuickPrint As New RadMenuItem("Quick Print")
-        AddHandler mnuPrintsubQuickPrint.Click, AddressOf QuickPrint
-
-        Dim mnuPrintsubPreview As New RadMenuItem("Print Preview")
-        AddHandler mnuPrintsubPreview.Click, AddressOf Preview
-
-        'Add sub-menu items to the Print menu item 
-        mnuPrint.Items.AddRange(New RadMenuItem() {mnuPrintsubPrint, mnuPrintsubQuickPrint, mnuPrintsubPreview})
-        '
 ````
 
 {{endregion}}
@@ -171,17 +170,16 @@ The ApplicationMenu of RadRibbonBar supports wrapping of the main and descriptio
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=menuItemsTexts}} 
 
 ````C#
-            this.LongNameFileMenuItem.Text = "This is a file with a veeeeeeeery veeeeery long name.png";
+this.LongNameFileMenuItem.Text = "This is a file with a veeeeeeeery veeeeery long name.png";
+this.UntitledFileMenuItem.DescriptionText = "C:\\Program Files (x86)\\Telerik\\RadControls for WinForms Q3 2012\\Resources\\Untitled.png";
+this.UntitledFileMenuItem.Text = "Untitled.png";
 
-            this.UntitledFileMenuItem.DescriptionText = "C:\\Program Files (x86)\\Telerik\\RadControls for WinForms Q3 2012\\Resources\\Untitled.png";
-            this.UntitledFileMenuItem.Text = "Untitled.png";
 ````
 ````VB.NET
-        Me.LongNameFileMenuItem.Text = "This is a file with a veeeeeeeery veeeeery long name.png"
+Me.LongNameFileMenuItem.Text = "This is a file with a veeeeeeeery veeeeery long name.png"
+Me.UntitledFileMenuItem.DescriptionText = "C:\\Program Files (x86)\\Telerik\\RadControls for WinForms Q3 2012\\Resources\\Untitled.png"
+Me.UntitledFileMenuItem.Text = "Untitled.png"
 
-        Me.UntitledFileMenuItem.DescriptionText = "C:\\Program Files (x86)\\Telerik\\RadControls for WinForms Q3 2012\\Resources\\Untitled.png"
-        Me.UntitledFileMenuItem.Text = "Untitled.png"
-        '
 ````
 
 {{endregion}}
@@ -194,23 +192,20 @@ So, as mentioned above, we should set the TextWrap and MaxSize properties of the
 {{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheApplicationMenu.vb region=settingUpSizes}} 
 
 ````C#
-            this.radRibbonBar1.RibbonBarElement.ApplicationMenuRightColumnWidth = 180;
+this.radRibbonBar1.RibbonBarElement.ApplicationMenuRightColumnWidth = 180;
+this.LongNameFileMenuItem.Layout.Text.TextWrap = true;
+this.LongNameFileMenuItem.Layout.Text.MaxSize = new Size(150, 0);
+this.UntitledFileMenuItem.Layout.Description.TextWrap = true;
+this.UntitledFileMenuItem.Layout.Description.MaxSize = new Size(150, 0);
 
-            this.LongNameFileMenuItem.Layout.Text.TextWrap = true;
-            this.LongNameFileMenuItem.Layout.Text.MaxSize = new Size(150, 0);
-
-            this.UntitledFileMenuItem.Layout.Description.TextWrap = true;
-            this.UntitledFileMenuItem.Layout.Description.MaxSize = new Size(150, 0);
 ````
 ````VB.NET
-        Me.RadRibbonBar1.RibbonBarElement.ApplicationMenuRightColumnWidth = 180
+Me.RadRibbonBar1.RibbonBarElement.ApplicationMenuRightColumnWidth = 180
+Me.LongNameFileMenuItem.Layout.Text.TextWrap = True
+Me.LongNameFileMenuItem.Layout.Text.MaxSize = New Size(150, 0)
+Me.UntitledFileMenuItem.Layout.Description.TextWrap = True
+Me.UntitledFileMenuItem.Layout.Description.MaxSize = New Size(150, 0)
 
-        Me.LongNameFileMenuItem.Layout.Text.TextWrap = True
-        Me.LongNameFileMenuItem.Layout.Text.MaxSize = New Size(150, 0)
-
-        Me.UntitledFileMenuItem.Layout.Description.TextWrap = True
-        Me.UntitledFileMenuItem.Layout.Description.MaxSize = New Size(150, 0)
-        '
 ````
 
 {{endregion}}

@@ -24,55 +24,46 @@ Building the user interface of the RadRichTextBox-enabled is pretty simple. You 
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxRibbonUI.vb region=ribbonui}} 
 
 ````C#
-        public RichTextBoxRibbonUI()
-        {
-            InitializeComponent();
+public RichTextBoxRibbonUI()
+{
+    InitializeComponent();
+    RibbonTab tabHome = new RibbonTab();
+    tabHome.Text = "Home";
+    this.radRibbonBar1.CommandTabs.Add(tabHome);
+    RadRibbonBarGroup grpFont = new RadRibbonBarGroup();
+    grpFont.Text = "Font";
+    tabHome.Items.Add(grpFont);
+    RadToggleButtonElement btnBold = new RadToggleButtonElement();
+    btnBold.Text = "Bold";
+    grpFont.Items.Add(btnBold);
+    btnBold.ToggleStateChanged += new StateChangedEventHandler(btnBold_ToggleStateChanged);
+}
+void btnBold_ToggleStateChanged(object sender, StateChangedEventArgs args)
+{
+    this.radRichTextBox1.ToggleBold();
+    this.radRichTextBox1.Focus();
+}
 
-            RibbonTab tabHome = new RibbonTab();
-            tabHome.Text = "Home";
-            this.radRibbonBar1.CommandTabs.Add(tabHome);
-
-            RadRibbonBarGroup grpFont = new RadRibbonBarGroup();
-            grpFont.Text = "Font";
-            tabHome.Items.Add(grpFont);
-
-            RadToggleButtonElement btnBold = new RadToggleButtonElement();
-            btnBold.Text = "Bold";
-            grpFont.Items.Add(btnBold);
-
-            btnBold.ToggleStateChanged += new StateChangedEventHandler(btnBold_ToggleStateChanged);
-        }
-
-        void btnBold_ToggleStateChanged(object sender, StateChangedEventArgs args)
-        {
-            this.radRichTextBox1.ToggleBold();
-            this.radRichTextBox1.Focus();
-        }
 ````
 ````VB.NET
-    Public Sub New()
-        InitializeComponent()
+Public Sub New()
+    InitializeComponent()
+    Dim tabHome As New RibbonTab()
+    tabHome.Text = "Home"
+    Me.radRibbonBar1.CommandTabs.Add(tabHome)
+    Dim grpFont As New RadRibbonBarGroup()
+    grpFont.Text = "Font"
+    tabHome.Items.Add(grpFont)
+    Dim btnBold As New RadToggleButtonElement()
+    btnBold.Text = "Bold"
+    grpFont.Items.Add(btnBold)
+    AddHandler btnBold.ToggleStateChanged, AddressOf btnBold_ToggleStateChanged
+End Sub
+Private Sub btnBold_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
+    Me.radRichTextBox1.ToggleBold()
+    Me.radRichTextBox1.Focus()
+End Sub
 
-        Dim tabHome As New RibbonTab()
-        tabHome.Text = "Home"
-        Me.radRibbonBar1.CommandTabs.Add(tabHome)
-
-        Dim grpFont As New RadRibbonBarGroup()
-        grpFont.Text = "Font"
-        tabHome.Items.Add(grpFont)
-
-        Dim btnBold As New RadToggleButtonElement()
-        btnBold.Text = "Bold"
-        grpFont.Items.Add(btnBold)
-
-        AddHandler btnBold.ToggleStateChanged, AddressOf btnBold_ToggleStateChanged
-    End Sub
-
-    Private Sub btnBold_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
-        Me.radRichTextBox1.ToggleBold()
-        Me.radRichTextBox1.Focus()
-    End Sub
-    '
 ````
 
 {{endregion}}

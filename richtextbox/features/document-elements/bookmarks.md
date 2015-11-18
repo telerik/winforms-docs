@@ -44,23 +44,25 @@ For example, you can keep a Dictionary<string, string> mapping each bookmark nam
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxBookmarks.vb region=ReplaceContentOfBookmark}} 
 
 ````C#
-        Dictionary<string, string> bookmarksToContent = new Dictionary<string, string>();
-        private void ReplaceContentOfBookmark(string bookmarkName)
-        {
-            BookmarkRangeStart bookmark = this.radRichTextBox1.Document.GetBookmarkByName(bookmarkName);
-            this.radRichTextBox1.Document.Selection.SelectAnnotationRange(bookmark);
-            this.radRichTextBox1.Document.Delete(false);
-            this.radRichTextBox1.Insert(bookmarksToContent[bookmarkName]);
-        }
+Dictionary<string, string> bookmarksToContent = new Dictionary<string, string>();
+private void ReplaceContentOfBookmark(string bookmarkName)
+{
+    BookmarkRangeStart bookmark = this.radRichTextBox1.Document.GetBookmarkByName(bookmarkName);
+    this.radRichTextBox1.Document.Selection.SelectAnnotationRange(bookmark);
+    this.radRichTextBox1.Document.Delete(false);
+    this.radRichTextBox1.Insert(bookmarksToContent[bookmarkName]);
+}
+
 ````
 ````VB.NET
-    Private bookmarksToContent As New Dictionary(Of String, String)()
-    Private Sub ReplaceContentOfBookmark(bookmarkName As String)
-        Dim bookmark As BookmarkRangeStart = Me.RadRichTextBox1.Document.GetBookmarkByName(bookmarkName)
-        Me.RadRichTextBox1.Document.Selection.SelectAnnotationRange(bookmark)
-        Me.RadRichTextBox1.Document.Delete(False)
-        Me.RadRichTextBox1.Insert(bookmarksToContent(bookmarkName))
-    End Sub
+Private bookmarksToContent As New Dictionary(Of String, String)()
+Private Sub ReplaceContentOfBookmark(bookmarkName As String)
+    Dim bookmark As BookmarkRangeStart = Me.RadRichTextBox1.Document.GetBookmarkByName(bookmarkName)
+    Me.RadRichTextBox1.Document.Selection.SelectAnnotationRange(bookmark)
+    Me.RadRichTextBox1.Document.Delete(False)
+    Me.RadRichTextBox1.Insert(bookmarksToContent(bookmarkName))
+End Sub
+
 ````
 
 {{endregion}}
@@ -71,46 +73,42 @@ If you want to preserve the bookmarks in the document and only change the text b
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxBookmarks.vb region=ChangeAllBookmarks}} 
 
 ````C#
-        private void ChangeAllBookmarks(RadRichTextBox radRichTextBox)
-        {
-            BookmarkRangeStart[] bookmarks = radRichTextBox.Document.GetAllBookmarks().ToArray<BookmarkRangeStart>();
-            DocumentPosition start = new DocumentPosition(radRichTextBox.Document);
-            DocumentPosition end = new DocumentPosition(radRichTextBox.Document);
-            foreach (BookmarkRangeStart item in bookmarks)
-            {
-                radRichTextBox.Document.GoToBookmark(item);
+private void ChangeAllBookmarks(RadRichTextBox radRichTextBox)
+{
+    BookmarkRangeStart[] bookmarks = radRichTextBox.Document.GetAllBookmarks().ToArray<BookmarkRangeStart>();
+    DocumentPosition start = new DocumentPosition(radRichTextBox.Document);
+    DocumentPosition end = new DocumentPosition(radRichTextBox.Document);
+    foreach (BookmarkRangeStart item in bookmarks)
+    {
+        radRichTextBox.Document.GoToBookmark(item);
+        start.MoveToInline(item.FirstLayoutBox as InlineLayoutBox, 0);
+        end.MoveToInline(item.End.FirstLayoutBox as InlineLayoutBox, 0);
+        start.MoveToNextInline();
+        radRichTextBox.Document.Selection.SetSelectionStart(start);
+        radRichTextBox.Document.Selection.AddSelectionEnd(end);
+        radRichTextBox.Delete(false);
+        radRichTextBox.Insert(bookmarksToContent[item.Name]);
+    }
+}
 
-                start.MoveToInline(item.FirstLayoutBox as InlineLayoutBox, 0);
-                end.MoveToInline(item.End.FirstLayoutBox as InlineLayoutBox, 0);
-                start.MoveToNextInline();
-                radRichTextBox.Document.Selection.SetSelectionStart(start);
-                radRichTextBox.Document.Selection.AddSelectionEnd(end);
-
-                radRichTextBox.Delete(false);
-
-                radRichTextBox.Insert(bookmarksToContent[item.Name]);
-            }
-        }
 ````
 ````VB.NET
-    Private Sub ChangeAllBookmarks(radRichTextBox As RadRichTextBox)
-        Dim bookmarks As BookmarkRangeStart() = radRichTextBox.Document.GetAllBookmarks().ToArray()
-        Dim start As New DocumentPosition(radRichTextBox.Document)
-        Dim [end] As New DocumentPosition(radRichTextBox.Document)
-        For Each item As BookmarkRangeStart In bookmarks
-            radRichTextBox.Document.GoToBookmark(item)
+Private Sub ChangeAllBookmarks(radRichTextBox As RadRichTextBox)
+    Dim bookmarks As BookmarkRangeStart() = radRichTextBox.Document.GetAllBookmarks().ToArray()
+    Dim start As New DocumentPosition(radRichTextBox.Document)
+    Dim [end] As New DocumentPosition(radRichTextBox.Document)
+    For Each item As BookmarkRangeStart In bookmarks
+        radRichTextBox.Document.GoToBookmark(item)
+        start.MoveToInline(TryCast(item.FirstLayoutBox, InlineLayoutBox), 0)
+        [end].MoveToInline(TryCast(item.[End].FirstLayoutBox, InlineLayoutBox), 0)
+        start.MoveToNextInline()
+        radRichTextBox.Document.Selection.SetSelectionStart(start)
+        radRichTextBox.Document.Selection.AddSelectionEnd([end])
+        radRichTextBox.Delete(False)
+        radRichTextBox.Insert(bookmarksToContent(item.Name))
+    Next
+End Sub
 
-            start.MoveToInline(TryCast(item.FirstLayoutBox, InlineLayoutBox), 0)
-            [end].MoveToInline(TryCast(item.[End].FirstLayoutBox, InlineLayoutBox), 0)
-            start.MoveToNextInline()
-            radRichTextBox.Document.Selection.SetSelectionStart(start)
-            radRichTextBox.Document.Selection.AddSelectionEnd([end])
-
-            radRichTextBox.Delete(False)
-
-            radRichTextBox.Insert(bookmarksToContent(item.Name))
-        Next
-    End Sub
 ````
 
 {{endregion}}

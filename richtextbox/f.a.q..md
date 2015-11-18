@@ -38,18 +38,19 @@ An example is illustrated below:
 {{source=..\SamplesVB\RichTextBox\RichTextBoxFAQ.vb region=GetXAML}} 
 
 ````C#
-        public string GetXAML(RadDocument document)
-        {
-            XamlFormatProvider provider = new XamlFormatProvider();
-            return provider.Export(document);
-        }
+public string GetXAML(RadDocument document)
+{
+    XamlFormatProvider provider = new XamlFormatProvider();
+    return provider.Export(document);
+}
+
 ````
 ````VB.NET
-    Public Function GetXAML(ByVal document As RadDocument) As String
-        Dim provider As New XamlFormatProvider()
-        Return provider.Export(document)
-    End Function
-    '
+Public Function GetXAML(ByVal document As RadDocument) As String
+    Dim provider As New XamlFormatProvider()
+    Return provider.Export(document)
+End Function
+
 ````
 
 {{endregion}}
@@ -64,18 +65,19 @@ Setting the content of RadRichTextBox can be done in the same manner, if you hav
 {{source=..\SamplesVB\RichTextBox\RichTextBoxFAQ.vb region=ImportHtml}} 
 
 ````C#
-        public RadDocument ImportHtml(string content)
-        {
-            HtmlFormatProvider provider = new HtmlFormatProvider();
-            return provider.Import(content);
-        }
+public RadDocument ImportHtml(string content)
+{
+    HtmlFormatProvider provider = new HtmlFormatProvider();
+    return provider.Import(content);
+}
+
 ````
 ````VB.NET
-    Public Function ImportHtml(ByVal content As String) As RadDocument
-        Dim provider As New HtmlFormatProvider()
-        Return provider.Import(content)
-    End Function
-    '
+Public Function ImportHtml(ByVal content As String) As RadDocument
+    Dim provider As New HtmlFormatProvider()
+    Return provider.Import(content)
+End Function
+
 ````
 
 {{endregion}}
@@ -95,11 +97,12 @@ Here are some examples:
 {{source=..\SamplesVB\RichTextBox\RichTextBoxFAQ.vb region=InsertTextInRadRichTextBox}} 
 
 ````C#
-            this.radRichTextBox1.Insert(textToInsert);
+this.radRichTextBox1.Insert(textToInsert);
+
 ````
 ````VB.NET
-        Me.RadRichTextBox1.Insert(textToInsert)
-        '
+Me.RadRichTextBox1.Insert(textToInsert)
+
 ````
 
 {{endregion}}
@@ -114,24 +117,25 @@ You can manipulate the caret position before invoking the insert method in order
 {{source=..\SamplesVB\RichTextBox\RichTextBoxFAQ.vb region=InsertTextInDocument}} 
 
 ````C#
-        private void InsertTextInDocument(string textToInsert)
-        {
-            StyleDefinition style = new StyleDefinition();
-            style.SetPropertyValue(Span.FontFamilyProperty, "Comic Sans MS");
-            style.SetPropertyValue(Span.FontSizeProperty, Unit.PointToDip(16));
-            style.SetPropertyValue(Span.ForeColorProperty, Color.Blue);
-            this.radRichTextBox1.Document.Insert(textToInsert, style);
-        }
+private void InsertTextInDocument(string textToInsert)
+{
+    StyleDefinition style = new StyleDefinition();
+    style.SetPropertyValue(Span.FontFamilyProperty, "Comic Sans MS");
+    style.SetPropertyValue(Span.FontSizeProperty, Unit.PointToDip(16));
+    style.SetPropertyValue(Span.ForeColorProperty, Color.Blue);
+    this.radRichTextBox1.Document.Insert(textToInsert, style);
+}
+
 ````
 ````VB.NET
-    Private Sub InsertTextInDocument(ByVal textToInsert As String)
-        Dim style As New StyleDefinition()
-        style.SetPropertyValue(Span.FontFamilyProperty, "Comic Sans MS")
-        style.SetPropertyValue(Span.FontSizeProperty, Unit.PointToDip(16))
-        style.SetPropertyValue(Span.ForeColorProperty, Color.Blue)
-        Me.RadRichTextBox1.Document.Insert(textToInsert, style)
-    End Sub
-    '
+Private Sub InsertTextInDocument(ByVal textToInsert As String)
+    Dim style As New StyleDefinition()
+    style.SetPropertyValue(Span.FontFamilyProperty, "Comic Sans MS")
+    style.SetPropertyValue(Span.FontSizeProperty, Unit.PointToDip(16))
+    style.SetPropertyValue(Span.ForeColorProperty, Color.Blue)
+    Me.RadRichTextBox1.Document.Insert(textToInsert, style)
+End Sub
+
 ````
 
 {{endregion}}
@@ -144,20 +148,21 @@ In case you wish to insert the text in the current editing style of the rich tex
 {{source=..\SamplesVB\RichTextBox\RichTextBoxFAQ.vb region=InsertTextInDocumentInCurrentSpanStyle}} 
 
 ````C#
-        private void InsertTextInDocumentInCurrentSpanStyle(string textToInsert)
-        {
-            StyleDefinition style = new StyleDefinition();
-            style.CopyPropertiesFrom(this.radRichTextBox1.CurrentEditingStyle);
-            this.radRichTextBox1.Document.Insert(textToInsert, style);
-        }
+private void InsertTextInDocumentInCurrentSpanStyle(string textToInsert)
+{
+    StyleDefinition style = new StyleDefinition();
+    style.CopyPropertiesFrom(this.radRichTextBox1.CurrentEditingStyle);
+    this.radRichTextBox1.Document.Insert(textToInsert, style);
+}
+
 ````
 ````VB.NET
-    Private Sub InsertTextInDocumentInCurrentSpanStyle(ByVal textToInsert As String)
-        Dim style As New StyleDefinition()
-        style.CopyPropertiesFrom(Me.radRichTextBox1.CurrentEditingStyle)
-        Me.radRichTextBox1.Document.Insert(textToInsert, style)
-    End Sub
-    '
+Private Sub InsertTextInDocumentInCurrentSpanStyle(ByVal textToInsert As String)
+    Dim style As New StyleDefinition()
+    style.CopyPropertiesFrom(Me.radRichTextBox1.CurrentEditingStyle)
+    Me.radRichTextBox1.Document.Insert(textToInsert, style)
+End Sub
+
 ````
 
 {{endregion}} 
@@ -175,13 +180,14 @@ With paged layout mode, you can set the margin of the document like this:
 {{source=..\SamplesVB\RichTextBox\RichTextBoxFAQ.vb region=SectionDefaultPageMargin}} 
 
 ````C#
-            radRichTextBox1.Document.LayoutMode = DocumentLayoutMode.Paged;
-            radRichTextBox1.Document.SectionDefaultPageMargin = new System.Windows.Forms.Padding(100);
+radRichTextBox1.Document.LayoutMode = DocumentLayoutMode.Paged;
+radRichTextBox1.Document.SectionDefaultPageMargin = new System.Windows.Forms.Padding(100);
+
 ````
 ````VB.NET
-        RadRichTextBox1.Document.LayoutMode = DocumentLayoutMode.Paged
-        RadRichTextBox1.Document.SectionDefaultPageMargin = New System.Windows.Forms.Padding(100)
-        '
+RadRichTextBox1.Document.LayoutMode = DocumentLayoutMode.Paged
+RadRichTextBox1.Document.SectionDefaultPageMargin = New System.Windows.Forms.Padding(100)
+
 ````
 
 {{endregion}}

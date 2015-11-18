@@ -30,35 +30,34 @@ For example, a link to our Telerik UI for WinForms demo page can be inserted in 
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=AddLinkToSite}} 
 
 ````C#
-            HyperlinkInfo info = new HyperlinkInfo()
-            {
-                NavigateUri = "http://www.telerik.com/support/demos/developer-tools-demos.aspx#WinForms",
-                Target = HyperlinkTargets.Blank,
-                IsAnchor = false
-            };
-            this.radRichTextBox1.InsertHyperlink(info, "RadControls for WinForms demos");
+HyperlinkInfo info = new HyperlinkInfo()
+{
+    NavigateUri = "http://www.telerik.com/support/demos/developer-tools-demos.aspx#WinForms",
+    Target = HyperlinkTargets.Blank,
+    IsAnchor = false
+};
+this.radRichTextBox1.InsertHyperlink(info, "RadControls for WinForms demos");
+
 ````
 ````VB.NET
-        Dim info As New HyperlinkInfo() With { _
-         .NavigateUri = "http://www.telerik.com/support/demos/developer-tools-demos.aspx#WinForms", _
-         .Target = HyperlinkTargets.Blank, _
-         .IsAnchor = False _
-        }
-        Me.RadRichTextBox1.InsertHyperlink(info, "RadControls for WinForms demos")
-        '#End Region
+Dim info As New HyperlinkInfo() With { _
+ .NavigateUri = "http://www.telerik.com/support/demos/developer-tools-demos.aspx#WinForms", _
+ .Target = HyperlinkTargets.Blank, _
+ .IsAnchor = False _
+}
+Me.RadRichTextBox1.InsertHyperlink(info, "RadControls for WinForms demos")
+'#End Region
+'#Region "AddLinkToBookmark"
+Dim hlInfo As New HyperlinkInfo() With { _
+ .NavigateUri = "bookmark1", _
+ .Target = HyperlinkTargets.Self, _
+ .IsAnchor = True _
+}
+Me.RadRichTextBox1.InsertHyperlink(hlInfo, "Link to Bookmark 1")
+'#End Region
+'#region RemoveHyperlink
+Me.RadRichTextBox1.RemoveHyperlink()
 
-        '#Region "AddLinkToBookmark"
-        Dim hlInfo As New HyperlinkInfo() With { _
-         .NavigateUri = "bookmark1", _
-         .Target = HyperlinkTargets.Self, _
-         .IsAnchor = True _
-        }
-        Me.RadRichTextBox1.InsertHyperlink(hlInfo, "Link to Bookmark 1")
-        '#End Region
-
-        '#region RemoveHyperlink
-        Me.RadRichTextBox1.RemoveHyperlink()
-        '
 ````
 
 {{endregion}}
@@ -69,26 +68,26 @@ A link to a bookmark is inserted by specifying the bookmark's name as NavigateUr
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=AddLinkToBookmark}} 
 
 ````C#
-            HyperlinkInfo hlInfo = new HyperlinkInfo()
-            {
-                NavigateUri = "bookmark1",
-                Target = HyperlinkTargets.Self,
-                IsAnchor = true
-            };
-            this.radRichTextBox1.InsertHyperlink(hlInfo, "Link to Bookmark 1");
+HyperlinkInfo hlInfo = new HyperlinkInfo()
+{
+    NavigateUri = "bookmark1",
+    Target = HyperlinkTargets.Self,
+    IsAnchor = true
+};
+this.radRichTextBox1.InsertHyperlink(hlInfo, "Link to Bookmark 1");
+
 ````
 ````VB.NET
-        Dim hlInfo As New HyperlinkInfo() With { _
-         .NavigateUri = "bookmark1", _
-         .Target = HyperlinkTargets.Self, _
-         .IsAnchor = True _
-        }
-        Me.RadRichTextBox1.InsertHyperlink(hlInfo, "Link to Bookmark 1")
-        '#End Region
+Dim hlInfo As New HyperlinkInfo() With { _
+ .NavigateUri = "bookmark1", _
+ .Target = HyperlinkTargets.Self, _
+ .IsAnchor = True _
+}
+Me.RadRichTextBox1.InsertHyperlink(hlInfo, "Link to Bookmark 1")
+'#End Region
+'#region RemoveHyperlink
+Me.RadRichTextBox1.RemoveHyperlink()
 
-        '#region RemoveHyperlink
-        Me.RadRichTextBox1.RemoveHyperlink()
-        '
 ````
 
 {{endregion}}
@@ -109,11 +108,12 @@ Removing a hyperlink (and keeping the part of the document that the hyperlink sp
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=RemoveHyperlink}} 
 
 ````C#
-            this.radRichTextBox1.RemoveHyperlink();
+this.radRichTextBox1.RemoveHyperlink();
+
 ````
 ````VB.NET
-        Me.RadRichTextBox1.RemoveHyperlink()
-        '
+Me.RadRichTextBox1.RemoveHyperlink()
+
 ````
 
 {{endregion}}
@@ -128,58 +128,59 @@ Here is an example that creates a document with a hyperlink spanning several par
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=HyperlinkRegionStartEnd}} 
 
 ````C#
-            HyperlinkRangeStart hyperlinkStart = new HyperlinkRangeStart();
-            HyperlinkRangeEnd hyperlinkEnd = new HyperlinkRangeEnd();
-            hyperlinkEnd.PairWithStart(hyperlinkStart);
-            HyperlinkInfo hyperlinkInfo = new HyperlinkInfo() { NavigateUri = "http://www.telerik.com", Target = HyperlinkTargets.Blank };
-            hyperlinkStart.HyperlinkInfo = hyperlinkInfo;
-            RadDocument document = new RadDocument();
-            Section section = new Section();
-            Paragraph paragraph = new Paragraph();
-            Span spanBefore = new Span("Text before the image ");
-            ImageInline image = new ImageInline(Resources.Desert);
-            image.Size = new Size(32, 32);
-            Span spanAfter = new Span(" and some text after the image");
-            paragraph.Inlines.Add(hyperlinkStart);
-            paragraph.Inlines.Add(spanBefore);
-            paragraph.Inlines.Add(image);
-            paragraph.Inlines.Add(spanAfter);
-            section.Blocks.Add(paragraph);
-            Paragraph anotherParagraph = new Paragraph();
-            anotherParagraph.Inlines.Add(new Span("Another paragraph here and still in hyperlink"));
-            anotherParagraph.Inlines.Add(hyperlinkEnd);
-            section.Blocks.Add(anotherParagraph);
-            document.Sections.Add(section);
-            this.radRichTextBox1.Document = document;
+HyperlinkRangeStart hyperlinkStart = new HyperlinkRangeStart();
+HyperlinkRangeEnd hyperlinkEnd = new HyperlinkRangeEnd();
+hyperlinkEnd.PairWithStart(hyperlinkStart);
+HyperlinkInfo hyperlinkInfo = new HyperlinkInfo() { NavigateUri = "http://www.telerik.com", Target = HyperlinkTargets.Blank };
+hyperlinkStart.HyperlinkInfo = hyperlinkInfo;
+RadDocument document = new RadDocument();
+Section section = new Section();
+Paragraph paragraph = new Paragraph();
+Span spanBefore = new Span("Text before the image ");
+ImageInline image = new ImageInline(Resources.Desert);
+image.Size = new Size(32, 32);
+Span spanAfter = new Span(" and some text after the image");
+paragraph.Inlines.Add(hyperlinkStart);
+paragraph.Inlines.Add(spanBefore);
+paragraph.Inlines.Add(image);
+paragraph.Inlines.Add(spanAfter);
+section.Blocks.Add(paragraph);
+Paragraph anotherParagraph = new Paragraph();
+anotherParagraph.Inlines.Add(new Span("Another paragraph here and still in hyperlink"));
+anotherParagraph.Inlines.Add(hyperlinkEnd);
+section.Blocks.Add(anotherParagraph);
+document.Sections.Add(section);
+this.radRichTextBox1.Document = document;
+
 ````
 ````VB.NET
-        Dim hyperlinkStart As New HyperlinkRangeStart()
-        Dim hyperlinkEnd As New HyperlinkRangeEnd()
-        hyperlinkEnd.PairWithStart(hyperlinkStart)
-        Dim hyperlinkInfo As New HyperlinkInfo() With { _
-         .NavigateUri = "http://www.telerik.com", _
-         .Target = HyperlinkTargets.Blank _
-        }
-        hyperlinkStart.HyperlinkInfo = hyperlinkInfo
-        Dim document As New RadDocument()
-        Dim section As New Section()
-        Dim paragraph As New Paragraph()
-        Dim spanBefore As New Span("Text before the image ")
-        Dim img As New ImageInline(My.Resources.Desert)
-        img.Size = New Drawing.Size(32, 32)
-        Dim spanAfter As New Span(" and some text after the image")
-        paragraph.Inlines.Add(hyperlinkStart)
-        paragraph.Inlines.Add(spanBefore)
-        paragraph.Inlines.Add(img)
-        paragraph.Inlines.Add(spanAfter)
-        section.Blocks.Add(paragraph)
-        Dim anotherParagraph As New Paragraph()
-        anotherParagraph.Inlines.Add(New Span("Another paragraph here and still in hyperlink"))
-        anotherParagraph.Inlines.Add(hyperlinkEnd)
-        section.Blocks.Add(anotherParagraph)
-        document.Sections.Add(section)
-        Me.RadRichTextBox1.Document = document
-        '
+Dim hyperlinkStart As New HyperlinkRangeStart()
+Dim hyperlinkEnd As New HyperlinkRangeEnd()
+hyperlinkEnd.PairWithStart(hyperlinkStart)
+Dim hyperlinkInfo As New HyperlinkInfo() With { _
+ .NavigateUri = "http://www.telerik.com", _
+ .Target = HyperlinkTargets.Blank _
+}
+hyperlinkStart.HyperlinkInfo = hyperlinkInfo
+Dim document As New RadDocument()
+Dim section As New Section()
+Dim paragraph As New Paragraph()
+Dim spanBefore As New Span("Text before the image ")
+Dim img As New ImageInline(My.Resources.Desert)
+img.Size = New Drawing.Size(32, 32)
+Dim spanAfter As New Span(" and some text after the image")
+paragraph.Inlines.Add(hyperlinkStart)
+paragraph.Inlines.Add(spanBefore)
+paragraph.Inlines.Add(img)
+paragraph.Inlines.Add(spanAfter)
+section.Blocks.Add(paragraph)
+Dim anotherParagraph As New Paragraph()
+anotherParagraph.Inlines.Add(New Span("Another paragraph here and still in hyperlink"))
+anotherParagraph.Inlines.Add(hyperlinkEnd)
+section.Blocks.Add(anotherParagraph)
+document.Sections.Add(section)
+Me.RadRichTextBox1.Document = document
+
 ````
 
 {{endregion}}
@@ -194,24 +195,25 @@ For instance, here is how you can delete all hyperlinks in the document and repl
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=RemoveHyperlinksAndReplaceThemWithText}} 
 
 ````C#
-            IEnumerable<HyperlinkRangeStart> links = this.radRichTextBox1.Document.EnumerateChildrenOfType<HyperlinkRangeStart>();
-            foreach (HyperlinkRangeStart link in links)
-            {
-                this.radRichTextBox1.Document.CaretPosition.MoveToInline(link.FirstLayoutBox as InlineLayoutBox, 0);
-                this.radRichTextBox1.Document.Selection.SelectAnnotationRange(link);
-                this.radRichTextBox1.Delete(false);
-                this.radRichTextBox1.Insert("Removed hyperlink");
-            }
+IEnumerable<HyperlinkRangeStart> links = this.radRichTextBox1.Document.EnumerateChildrenOfType<HyperlinkRangeStart>();
+foreach (HyperlinkRangeStart link in links)
+{
+    this.radRichTextBox1.Document.CaretPosition.MoveToInline(link.FirstLayoutBox as InlineLayoutBox, 0);
+    this.radRichTextBox1.Document.Selection.SelectAnnotationRange(link);
+    this.radRichTextBox1.Delete(false);
+    this.radRichTextBox1.Insert("Removed hyperlink");
+}
+
 ````
 ````VB.NET
-        Dim links As IEnumerable(Of HyperlinkRangeStart) = Me.RadRichTextBox1.Document.EnumerateChildrenOfType(Of HyperlinkRangeStart)()
-        For Each link As HyperlinkRangeStart In links
-            Me.RadRichTextBox1.Document.CaretPosition.MoveToInline(TryCast(link.FirstLayoutBox, InlineLayoutBox), 0)
-            Me.RadRichTextBox1.Document.Selection.SelectAnnotationRange(link)
-            Me.RadRichTextBox1.Delete(False)
-            Me.RadRichTextBox1.Insert("Removed hyperlink")
-        Next
-        '
+Dim links As IEnumerable(Of HyperlinkRangeStart) = Me.RadRichTextBox1.Document.EnumerateChildrenOfType(Of HyperlinkRangeStart)()
+For Each link As HyperlinkRangeStart In links
+    Me.RadRichTextBox1.Document.CaretPosition.MoveToInline(TryCast(link.FirstLayoutBox, InlineLayoutBox), 0)
+    Me.RadRichTextBox1.Document.Selection.SelectAnnotationRange(link)
+    Me.RadRichTextBox1.Delete(False)
+    Me.RadRichTextBox1.Insert("Removed hyperlink")
+Next
+
 ````
 
 {{endregion}}

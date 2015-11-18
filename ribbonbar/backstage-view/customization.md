@@ -35,19 +35,17 @@ Follows code snippet demonstrates how you can access the most used items in the 
 {{source=..\SamplesVB\RibbonBar\BackstageView\RibbonBackstageView.vb region=accessElements}} 
 
 ````C#
-            BackstageViewElement backstageViewElemet = radRibbonBarBackstageView1.BackstageElement;
+BackstageViewElement backstageViewElemet = radRibbonBarBackstageView1.BackstageElement;
             
-            BackstageItemsPanelElement itemsPanel = backstageViewElemet.ItemsPanelElement;
+BackstageItemsPanelElement itemsPanel = backstageViewElemet.ItemsPanelElement;
+BackstageContentPanelElement contentPanel = backstageViewElemet.ContentElement;
 
-            BackstageContentPanelElement contentPanel = backstageViewElemet.ContentElement;
 ````
 ````VB.NET
-        Dim backstageViewElemet = CType(RadRibbonBarBackstageView1.BackstageElement, BackstageViewElement)
+Dim backstageViewElemet = CType(RadRibbonBarBackstageView1.BackstageElement, BackstageViewElement)
+Dim itemsPanel = CType(backstageViewElemet.ItemsPanelElement, BackstageItemsPanelElement)
+Dim contentPanel = CType(backstageViewElemet.ContentElement, BackstageContentPanelElement)
 
-        Dim itemsPanel = CType(backstageViewElemet.ItemsPanelElement, BackstageItemsPanelElement)
-
-        Dim contentPanel = CType(backstageViewElemet.ContentElement, BackstageContentPanelElement)
-        '
 ````
 
 {{endregion}}
@@ -60,19 +58,20 @@ By accessing these elements, you can customize BackstageView. Here is an example
 {{source=..\SamplesVB\RibbonBar\BackstageView\RibbonBackstageView.vb region=changeContentAreaImage}} 
 
 ````C#
-            RadImageShape imageShape = new RadImageShape();
-            imageShape.Image = Image.FromFile(@"C:\MyFile.png");
-            //the next line of code defines how to strech the image (if necessary)
-            imageShape.Margins = new System.Windows.Forms.Padding(10,10,10,10);
-            radRibbonBarBackstageView1.BackstageElement.ContentElement.BackgroundShape = imageShape;
+RadImageShape imageShape = new RadImageShape();
+imageShape.Image = Image.FromFile(@"C:\MyFile.png");
+//the next line of code defines how to strech the image (if necessary)
+imageShape.Margins = new System.Windows.Forms.Padding(10,10,10,10);
+radRibbonBarBackstageView1.BackstageElement.ContentElement.BackgroundShape = imageShape;
+
 ````
 ````VB.NET
-        Dim imageShape As New RadImageShape()
-        imageShape.Image = Image.FromFile("C:\MyFile.png")
-        'the next line of code defines how to strech the image (if necessary)
-        imageShape.Margins = New System.Windows.Forms.Padding(10, 10, 10, 10)
-        RadRibbonBarBackstageView1.BackstageElement.ContentElement.BackgroundShape = imageShape
-        '
+Dim imageShape As New RadImageShape()
+imageShape.Image = Image.FromFile("C:\MyFile.png")
+'the next line of code defines how to strech the image (if necessary)
+imageShape.Margins = New System.Windows.Forms.Padding(10, 10, 10, 10)
+RadRibbonBarBackstageView1.BackstageElement.ContentElement.BackgroundShape = imageShape
+
 ````
 
 {{endregion}}

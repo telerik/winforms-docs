@@ -20,24 +20,25 @@ Here is an example of how to add an __InlineImage__ element in the code behind.
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxInnerImage.vb region=AddInlineImageViaCode}} 
 
 ````C#
-            Section section = new Section();
-            Paragraph paragraph = new Paragraph();
-            Size size = new Size(236, 50);
-            ImageInline image = new ImageInline(Resources.Desert, size);
-            paragraph.Inlines.Add(image);
-            section.Children.Add(paragraph);
-            this.radRichTextBox1.Document.Sections.Add(section);
+Section section = new Section();
+Paragraph paragraph = new Paragraph();
+Size size = new Size(236, 50);
+ImageInline image = new ImageInline(Resources.Desert, size);
+paragraph.Inlines.Add(image);
+section.Children.Add(paragraph);
+this.radRichTextBox1.Document.Sections.Add(section);
+
 ````
 ````VB.NET
-        Dim section As New Section()
-        Dim paragraph As New Paragraph()
-        Dim stream As IO.Stream = GetImage()
-        Dim size As New Drawing.Size(236, 50)
-        Dim image As New ImageInline(stream, size, "png")
-        paragraph.Inlines.Add(image)
-        section.Children.Add(paragraph)
-        Me.RadRichTextBox1.Document.Sections.Add(section)
-        '
+Dim section As New Section()
+Dim paragraph As New Paragraph()
+Dim stream As IO.Stream = GetImage()
+Dim size As New Drawing.Size(236, 50)
+Dim image As New ImageInline(stream, size, "png")
+paragraph.Inlines.Add(image)
+section.Children.Add(paragraph)
+Me.RadRichTextBox1.Document.Sections.Add(section)
+
 ````
 
 {{endregion}}
@@ -50,29 +51,30 @@ Here is an example of how to allow the user to select an image and add it to the
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxInnerImage.vb region=AddInlineImageViaUI}} 
 
 ````C#
-        private void imageButton_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openDialog = new OpenFileDialog();
-            openDialog.Filter = "Images|*.png";
-            openDialog.Multiselect = false;
-            if (openDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                Bitmap img = new Bitmap(openDialog.FileName);
-                this.radRichTextBox1.InsertImage(img);
-            }
-        }
+private void imageButton_Click(object sender, EventArgs e)
+{
+    OpenFileDialog openDialog = new OpenFileDialog();
+    openDialog.Filter = "Images|*.png";
+    openDialog.Multiselect = false;
+    if (openDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+    {
+        Bitmap img = new Bitmap(openDialog.FileName);
+        this.radRichTextBox1.InsertImage(img);
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub imageButton_Click(sender As System.Object, e As System.EventArgs) Handles imageButton.Click
-        Dim openDialog As New OpenFileDialog()
-        openDialog.Filter = "Images|*.png"
-        openDialog.Multiselect = False
-            If openDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
-                Dim img As New Bitmap(openDialog.FileName)
-            Me.RadRichTextBox1.InsertImage(img)
-        End If
-    End Sub
-    '
+Private Sub imageButton_Click(sender As System.Object, e As System.EventArgs) Handles imageButton.Click
+    Dim openDialog As New OpenFileDialog()
+    openDialog.Filter = "Images|*.png"
+    openDialog.Multiselect = False
+        If openDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Dim img As New Bitmap(openDialog.FileName)
+        Me.RadRichTextBox1.InsertImage(img)
+    End If
+End Sub
+
 ````
 
 {{endregion}}

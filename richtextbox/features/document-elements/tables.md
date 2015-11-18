@@ -23,73 +23,70 @@ Here is a simple example.
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxTables.vb region=AddTable}} 
 
 ````C#
-            Section section = new Section();
-            Table table = new Table();
+Section section = new Section();
+Table table = new Table();
+TableRow row1 = new TableRow();
+TableCell cell1 = new TableCell();
+Paragraph p1 = new Paragraph();
+Span s1 = new Span();
+s1.Text = "Cell 1";
+p1.Inlines.Add(s1);
+cell1.Blocks.Add(p1);
+row1.Cells.Add(cell1);
+TableCell cell2 = new TableCell();
+Paragraph p2 = new Paragraph();
+Span s2 = new Span();
+s2.Text = "Cell 2";
+p2.Inlines.Add(s2);
+cell2.Blocks.Add(p2);
+row1.Cells.Add(cell2);
+table.Rows.Add(row1);
+TableRow row2 = new TableRow();
+TableCell cell3 = new TableCell();
+cell3.ColumnSpan = 2;
+Paragraph p3 = new Paragraph();
+Span s3 = new Span();
+s3.Text = "Cell 3";
+p3.Inlines.Add(s3);
+cell3.Blocks.Add(p3);
+row2.Cells.Add(cell3);
+table.Rows.Add(row2);
+section.Blocks.Add(table);
+this.radRichTextBox1.Document.Sections.Add(section);
 
-            TableRow row1 = new TableRow();
-            TableCell cell1 = new TableCell();
-            Paragraph p1 = new Paragraph();
-            Span s1 = new Span();
-            s1.Text = "Cell 1";
-            p1.Inlines.Add(s1);
-            cell1.Blocks.Add(p1);
-            row1.Cells.Add(cell1);
-
-            TableCell cell2 = new TableCell();
-            Paragraph p2 = new Paragraph();
-            Span s2 = new Span();
-            s2.Text = "Cell 2";
-            p2.Inlines.Add(s2);
-            cell2.Blocks.Add(p2);
-            row1.Cells.Add(cell2);
-            table.Rows.Add(row1);
-
-            TableRow row2 = new TableRow();
-            TableCell cell3 = new TableCell();
-            cell3.ColumnSpan = 2;
-            Paragraph p3 = new Paragraph();
-            Span s3 = new Span();
-            s3.Text = "Cell 3";
-            p3.Inlines.Add(s3);
-            cell3.Blocks.Add(p3);
-            row2.Cells.Add(cell3);
-            table.Rows.Add(row2);
-            section.Blocks.Add(table);
-            this.radRichTextBox1.Document.Sections.Add(section);
 ````
 ````VB.NET
-        Dim _section As New Section()
-        Dim _table As New Table()
-        Dim row1 As New TableRow()
-        Dim cell1 As New TableCell()
-        Dim p1 As New Paragraph()
-        Dim s1 As New Span()
-        s1.Text = "Cell 1"
-        p1.Inlines.Add(s1)
-        cell1.Blocks.Add(p1)
-        row1.Cells.Add(cell1)
-        Dim cell2 As New TableCell()
-        Dim p2 As New Paragraph()
-        Dim s2 As New Span()
-        s2.Text = "Cell 2"
-        p2.Inlines.Add(s2)
-        cell2.Blocks.Add(p2)
-        row1.Cells.Add(cell2)
-        _table.Rows.Add(row1)
-        Dim row2 As New TableRow()
-        Dim cell3 As New TableCell()
-        cell3.ColumnSpan = 2
-        Dim p3 As New Paragraph()
-        Dim s3 As New Span()
-        s3.Text = "Cell 3"
-        p3.Inlines.Add(s3)
-        cell3.Blocks.Add(p3)
-        row2.Cells.Add(cell3)
-        _table.Rows.Add(row2)
-        _section.Blocks.Add(_table)
-        Me.RadRichTextBox1.Document.Sections.Add(_section)
+Dim _section As New Section()
+Dim _table As New Table()
+Dim row1 As New TableRow()
+Dim cell1 As New TableCell()
+Dim p1 As New Paragraph()
+Dim s1 As New Span()
+s1.Text = "Cell 1"
+p1.Inlines.Add(s1)
+cell1.Blocks.Add(p1)
+row1.Cells.Add(cell1)
+Dim cell2 As New TableCell()
+Dim p2 As New Paragraph()
+Dim s2 As New Span()
+s2.Text = "Cell 2"
+p2.Inlines.Add(s2)
+cell2.Blocks.Add(p2)
+row1.Cells.Add(cell2)
+_table.Rows.Add(row1)
+Dim row2 As New TableRow()
+Dim cell3 As New TableCell()
+cell3.ColumnSpan = 2
+Dim p3 As New Paragraph()
+Dim s3 As New Span()
+s3.Text = "Cell 3"
+p3.Inlines.Add(s3)
+cell3.Blocks.Add(p3)
+row2.Cells.Add(cell3)
+_table.Rows.Add(row2)
+_section.Blocks.Add(_table)
+Me.RadRichTextBox1.Document.Sections.Add(_section)
 
-        '
 ````
 
 {{endregion}}

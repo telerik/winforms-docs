@@ -38,20 +38,21 @@ Here is an example of a __WordDictionary__ loaded from a __TDF__ file.
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSpellCheck.vb region=LoadDictionary}} 
 
 ````C#
-        private void LoadDictionary(Stream tdfFileStream)
-        {
-            WordDictionary dictionary = new WordDictionary();
-            dictionary.Load(tdfFileStream);
-            ((DocumentSpellChecker)this.radRichTextBox1.SpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture);
-        }
+private void LoadDictionary(Stream tdfFileStream)
+{
+    WordDictionary dictionary = new WordDictionary();
+    dictionary.Load(tdfFileStream);
+    ((DocumentSpellChecker)this.radRichTextBox1.SpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture);
+}
+
 ````
 ````VB.NET
-    Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
-        Dim dictionary As New WordDictionary()
-        dictionary.Load(tdfFileStream)
-        CType(Me.RadRichTextBox1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture)
-    End Sub
-    '
+Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
+    Dim dictionary As New WordDictionary()
+    dictionary.Load(tdfFileStream)
+    CType(Me.RadRichTextBox1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture)
+End Sub
+
 ````
 
 {{endregion}}
@@ -73,11 +74,12 @@ Here is an example:
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSpellCheck.vb region=AddWord}} 
 
 ````C#
-            this.radRichTextBox1.SpellChecker.AddWord("RadRichTextBox", CultureInfo.InvariantCulture);
+this.radRichTextBox1.SpellChecker.AddWord("RadRichTextBox", CultureInfo.InvariantCulture);
+
 ````
 ````VB.NET
-        Me.RadRichTextBox1.SpellChecker.AddWord("RadRichTextBox", CultureInfo.InvariantCulture)
-        '
+Me.RadRichTextBox1.SpellChecker.AddWord("RadRichTextBox", CultureInfo.InvariantCulture)
+
 ````
 
 {{endregion}}
@@ -95,20 +97,21 @@ The spell checking component is designed to suit scenarios where different cultu
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSpellCheck.vb region=LoadDictionaryDE}} 
 
 ````C#
-        private void LoadDictionaryDE(Stream tdfFileStream)
-        {
-             WordDictionary dictionary = new WordDictionary();
-            dictionary.Load( tdfFileStream );
-            (( DocumentSpellChecker )this.radRichTextBox1.SpellChecker ).AddDictionary( dictionary, new CultureInfo( "de-DE" ));
-        }
+private void LoadDictionaryDE(Stream tdfFileStream)
+{
+     WordDictionary dictionary = new WordDictionary();
+    dictionary.Load( tdfFileStream );
+    (( DocumentSpellChecker )this.radRichTextBox1.SpellChecker ).AddDictionary( dictionary, new CultureInfo( "de-DE" ));
+}
+
 ````
 ````VB.NET
-    Private Sub LoadDictionaryDE(ByVal tdfFileStream As Stream)
-        Dim dictionary As New WordDictionary()
-        dictionary.Load(tdfFileStream)
-        CType(Me.RadRichTextBox1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, New CultureInfo("de-DE"))
-    End Sub
-    '
+Private Sub LoadDictionaryDE(ByVal tdfFileStream As Stream)
+    Dim dictionary As New WordDictionary()
+    dictionary.Load(tdfFileStream)
+    CType(Me.RadRichTextBox1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, New CultureInfo("de-DE"))
+End Sub
+
 ````
 
 {{endregion}}

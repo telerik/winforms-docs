@@ -20,16 +20,14 @@ Here are the most important properties for changing the control appearance and b
 {{source=..\SamplesVB\RangeSelector\RangeSelectorPropertiesAndEvents.vb region=StartEnd}} 
 
 ````C#
+this.radRangeSelector1.StartRange = 20;
+this.radRangeSelector1.EndRange = 50;
 
-            this.radRangeSelector1.StartRange = 20;
-            this.radRangeSelector1.EndRange = 50;
 ````
 ````VB.NET
+Me.radRangeSelector1.StartRange = 20
+Me.radRangeSelector1.EndRange = 50
 
-            Me.radRangeSelector1.StartRange = 20
-            Me.radRangeSelector1.EndRange = 50
-
-            '
 ````
 
 {{endregion}}
@@ -40,16 +38,14 @@ Here are the most important properties for changing the control appearance and b
 {{source=..\SamplesVB\RangeSelector\RangeSelectorPropertiesAndEvents.vb region=StartZoomEndZoom}} 
 
 ````C#
+this.radRangeSelector1.RangeSelectorViewZoomStart = 20;
+this.radRangeSelector1.RangeSelectorViewZoomEnd = 50;
 
-            this.radRangeSelector1.RangeSelectorViewZoomStart = 20;
-            this.radRangeSelector1.RangeSelectorViewZoomEnd = 50;
 ````
 ````VB.NET
+Me.radRangeSelector1.RangeSelectorViewZoomStart = 20
+Me.radRangeSelector1.RangeSelectorViewZoomEnd = 50
 
-            Me.radRangeSelector1.RangeSelectorViewZoomStart = 20
-            Me.radRangeSelector1.RangeSelectorViewZoomEnd = 50
-
-            '
 ````
 
 {{endregion}}
@@ -60,14 +56,12 @@ Here are the most important properties for changing the control appearance and b
 {{source=..\SamplesVB\RangeSelector\RangeSelectorPropertiesAndEvents.vb region=hideButtons}} 
 
 ````C#
+this.radRangeSelector1.ShowButtons = false;
 
-            this.radRangeSelector1.ShowButtons = false;
 ````
 ````VB.NET
+Me.radRangeSelector1.ShowButtons = False
 
-            Me.radRangeSelector1.ShowButtons = False
-
-            '
 ````
 
 {{endregion}}
@@ -78,12 +72,12 @@ Here are the most important properties for changing the control appearance and b
 {{source=..\SamplesVB\RangeSelector\RangeSelectorGettingStarted.vb region=set associatedControl}} 
 
 ````C#
+this.radRangeSelector1.AssociatedControl = this.radChartView1;
 
-            this.radRangeSelector1.AssociatedControl = this.radChartView1;
 ````
 ````VB.NET
-            Me.radRangeSelector1.AssociatedControl = Me.radChartView1
-            '
+Me.radRangeSelector1.AssociatedControl = Me.radChartView1
+
 ````
 
 {{endregion}}
@@ -97,14 +91,12 @@ If you want to associate only element whitout control you can use the following 
 {{source=..\SamplesVB\RangeSelector\RangeSelectorPropertiesAndEvents.vb region=set associatedElement}} 
 
 ````C#
+this.radRangeSelector1.RangeSelectorElement.AssociatedElement = new RangeSelectorViewElement(new RadChartElement());
 
-            this.radRangeSelector1.RangeSelectorElement.AssociatedElement = new RangeSelectorViewElement(new RadChartElement());
 ````
 ````VB.NET
+Me.radRangeSelector1.RangeSelectorElement.AssociatedElement = New RangeSelectorViewElement(New RadChartElement())
 
-            Me.radRangeSelector1.RangeSelectorElement.AssociatedElement = New RangeSelectorViewElement(New RadChartElement())
-
-            '
 ````
 
 {{endregion}} 
@@ -131,39 +123,37 @@ There are several events that you will find useful in the context of RadRangeSel
 {{source=..\SamplesVB\RangeSelector\RangeSelectorPropertiesAndEvents.vb region=ScaleInitializing}} 
 
 ````C#
+void radRangeSelector1_ScaleInitializing(object sender, ScaleInitializingEventArgs e)
+{
+    RangeSelectorChartScaleContainerElement scaleElement = e.ScaleElement as RangeSelectorChartScaleContainerElement;
+    if (scaleElement == null) 
+    { 
+        return; 
+    }
+    if (scaleElement.Title == "axe1")
+    {
+        e.Cancel = true;
+    }
+    else 
+    {
+        scaleElement.ScalePostion = ViewPosition.TopLeft;
+    }
+}
 
-        void radRangeSelector1_ScaleInitializing(object sender, ScaleInitializingEventArgs e)
-        {
-            RangeSelectorChartScaleContainerElement scaleElement = e.ScaleElement as RangeSelectorChartScaleContainerElement;
-            if (scaleElement == null) 
-            { 
-                return; 
-            }
-
-            if (scaleElement.Title == "axe1")
-            {
-                e.Cancel = true;
-            }
-            else 
-            {
-                scaleElement.ScalePostion = ViewPosition.TopLeft;
-            }
-        }
 ````
 ````VB.NET
+Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
+    Dim scaleElement As RangeSelectorChartScaleContainerElement = TryCast(e.ScaleElement, RangeSelectorChartScaleContainerElement)
+    If scaleElement Is Nothing Then
+        Return
+    End If
+    If scaleElement.Title = "axe1" Then
+        e.Cancel = True
+    Else
+        scaleElement.ScalePostion = ViewPosition.TopLeft
+    End If
+End Sub
 
-        Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
-            Dim scaleElement As RangeSelectorChartScaleContainerElement = TryCast(e.ScaleElement, RangeSelectorChartScaleContainerElement)
-            If scaleElement Is Nothing Then
-                Return
-            End If
-
-            If scaleElement.Title = "axe1" Then
-                e.Cancel = True
-            Else
-                scaleElement.ScalePostion = ViewPosition.TopLeft
-            End If
-        End Sub
 ````
 
 {{endregion}}

@@ -74,70 +74,67 @@ This tutorial is in three parts. First, you will create a Quick Access Toolbar 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingStartMenuQATAndShortcuts.vb region=OpenFileAndMakeTextBold}} 
 
 ````C#
-        private void radButtonElement1_Click(object sender, EventArgs e)
+private void radButtonElement1_Click(object sender, EventArgs e)
+{
+     OpenFileDialog dlg = new OpenFileDialog();
+       dlg.Filter = "*.txt,*.rtf|*.txt;*.rtf";
+       dlg.ShowDialog();
+       if (dlg.FileName != string.Empty)
+       {
+           OpenFile(dlg.FileName);
+       }
+}
+private void OpenFile(string fname)
+{
+    if (fname.EndsWith("txt"))
+    {
+        richTextBox1.LoadFile(fname, RichTextBoxStreamType.PlainText);
+    }
+    else
+    {
+        if (fname.EndsWith("rtf"))
         {
-             OpenFileDialog dlg = new OpenFileDialog();
-               dlg.Filter = "*.txt,*.rtf|*.txt;*.rtf";
-               dlg.ShowDialog();
-               if (dlg.FileName != string.Empty)
-               {
-                   OpenFile(dlg.FileName);
-               }
+            richTextBox1.LoadFile(fname, RichTextBoxStreamType.RichText);
         }
+    }
+}   
+private void radButtonElement2_Click(object sender, EventArgs e)
+{
+    if (richTextBox1.SelectionFont.Bold)
+    {
+        richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, FontStyle.Regular);
+    }
+    else
+    {
+        richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, FontStyle.Bold);
+    }
+}
 
-        private void OpenFile(string fname)
-        {
-            if (fname.EndsWith("txt"))
-            {
-                richTextBox1.LoadFile(fname, RichTextBoxStreamType.PlainText);
-            }
-            else
-            {
-                if (fname.EndsWith("rtf"))
-                {
-                    richTextBox1.LoadFile(fname, RichTextBoxStreamType.RichText);
-                }
-            }
-        }   
-
-        private void radButtonElement2_Click(object sender, EventArgs e)
-        {
-            if (richTextBox1.SelectionFont.Bold)
-            {
-                richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, FontStyle.Regular);
-            }
-            else
-            {
-                richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, FontStyle.Bold);
-            }
-        }
 ````
 ````VB.NET
-    Private Sub RadButtonElement1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButtonElement1.Click
-        Dim dlg As New OpenFileDialog
-        dlg.Filter = "*.txt,*.rtf|*.txt;*.rtf"
-        dlg.ShowDialog()
-        If dlg.FileName > "" Then
-            OpenFile(dlg.FileName)
-        End If
-    End Sub
+Private Sub RadButtonElement1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButtonElement1.Click
+    Dim dlg As New OpenFileDialog
+    dlg.Filter = "*.txt,*.rtf|*.txt;*.rtf"
+    dlg.ShowDialog()
+    If dlg.FileName > "" Then
+        OpenFile(dlg.FileName)
+    End If
+End Sub
+Private Sub OpenFile(ByVal fname As String)
+    If fname.EndsWith("txt") Then
+        RichTextBox1.LoadFile(fname, RichTextBoxStreamType.PlainText)
+    ElseIf fname.EndsWith("rtf") Then
+        RichTextBox1.LoadFile(fname, RichTextBoxStreamType.RichText)
+    End If
+End Sub
+Private Sub RadButtonElement2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButtonElement2.Click
+    If RichTextBox1.SelectionFont.Bold Then
+        RichTextBox1.SelectionFont = New Font(RichTextBox1.SelectionFont, RichTextBox1.SelectionFont.Style And Not FontStyle.Bold)
+    Else
+        RichTextBox1.SelectionFont = New Font(RichTextBox1.SelectionFont, RichTextBox1.SelectionFont.Style Or FontStyle.Bold)
+    End If
+End Sub
 
-    Private Sub OpenFile(ByVal fname As String)
-        If fname.EndsWith("txt") Then
-            RichTextBox1.LoadFile(fname, RichTextBoxStreamType.PlainText)
-        ElseIf fname.EndsWith("rtf") Then
-            RichTextBox1.LoadFile(fname, RichTextBoxStreamType.RichText)
-        End If
-    End Sub
-
-    Private Sub RadButtonElement2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButtonElement2.Click
-        If RichTextBox1.SelectionFont.Bold Then
-            RichTextBox1.SelectionFont = New Font(RichTextBox1.SelectionFont, RichTextBox1.SelectionFont.Style And Not FontStyle.Bold)
-        Else
-            RichTextBox1.SelectionFont = New Font(RichTextBox1.SelectionFont, RichTextBox1.SelectionFont.Style Or FontStyle.Bold)
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}}
@@ -230,36 +227,37 @@ If you would like to learn more about Application Settings, follow the __Learn m
 {{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingStartMenuQATAndShortcuts.vb region=modifiedOpenFile}} 
 
 ````C#
-        private void ModifiedOpenFile(string fname)
+private void ModifiedOpenFile(string fname)
+{
+    if (fname.EndsWith("txt"))
+    {
+        richTextBox1.LoadFile(fname, RichTextBoxStreamType.PlainText);
+        AddNewMostRecentFile(fname);
+    }
+    else
+    {
+        if (fname.EndsWith("rtf"))
         {
-            if (fname.EndsWith("txt"))
-            {
-                richTextBox1.LoadFile(fname, RichTextBoxStreamType.PlainText);
-                AddNewMostRecentFile(fname);
-            }
-            else
-            {
-                if (fname.EndsWith("rtf"))
-                {
-                    richTextBox1.LoadFile(fname, RichTextBoxStreamType.RichText);
-                    AddNewMostRecentFile(fname);
-                }
-            }
+            richTextBox1.LoadFile(fname, RichTextBoxStreamType.RichText);
+            AddNewMostRecentFile(fname);
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub ModifiedOpenFile(ByVal fname As String)
-        If fname.EndsWith("txt") Then
-            RichTextBox1.LoadFile(fname, RichTextBoxStreamType.PlainText)
+Private Sub ModifiedOpenFile(ByVal fname As String)
+    If fname.EndsWith("txt") Then
+        RichTextBox1.LoadFile(fname, RichTextBoxStreamType.PlainText)
+        AddNewMostRecentFile(fname)
+    Else
+        If fname.EndsWith("rtf") Then
+            RichTextBox1.LoadFile(fname, RichTextBoxStreamType.RichText)
             AddNewMostRecentFile(fname)
-        Else
-            If fname.EndsWith("rtf") Then
-                RichTextBox1.LoadFile(fname, RichTextBoxStreamType.RichText)
-                AddNewMostRecentFile(fname)
-            End If
         End If
-    End Sub
-    '
+    End If
+End Sub
+
 ````
 
 {{endregion}}
@@ -284,77 +282,72 @@ Note that __OpenfromMRU__ method will respond to the user clicking any of the th
 {{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingStartMenuQATAndShortcuts.vb region=addMostRecentOpenedFiles}} 
 
 ````C#
-        private void AddNewMostRecentFile(string newFile)
-        {
-            //last three files are stored in appliation settings: "File1","File2","File3" with File1 being the newest
-            //replace 3 with 2 and 2 with 1 and then add new to 1
-            Properties.Settings.Default.File3 = Properties.Settings.Default.File2;
-            Properties.Settings.Default.File2 = Properties.Settings.Default.File1;
-            Properties.Settings.Default.File1 = newFile;
-        }
+private void AddNewMostRecentFile(string newFile)
+{
+    //last three files are stored in appliation settings: "File1","File2","File3" with File1 being the newest
+    //replace 3 with 2 and 2 with 1 and then add new to 1
+    Properties.Settings.Default.File3 = Properties.Settings.Default.File2;
+    Properties.Settings.Default.File2 = Properties.Settings.Default.File1;
+    Properties.Settings.Default.File1 = newFile;
+}
+private void radMenuItem1_Click(object sender, EventArgs e)
+{
+    OpenFileDialog dlg = new OpenFileDialog();
+    dlg.Filter = "*.txt,*.rtf|*.txt;*.rtf";
+    dlg.ShowDialog();
+    if (dlg.FileName != string.Empty)
+    {
+        ModifiedOpenFile(dlg.FileName);
+    }
+}
+private void radMenuItem2_DropDownOpening(object sender, CancelEventArgs e)
+{
+    //dynamically populate MRU File list
+    //this example is not concerned about duplicates
+    radMenuItem3.Text = Properties.Settings.Default.File1;
+    radMenuItem4.Text = Properties.Settings.Default.File2;
+    radMenuItem5.Text = Properties.Settings.Default.File3;
+}
+private void OpenfromMRU(object sender, EventArgs e)
+{
+    Telerik.WinControls.UI.RadMenuItem filetoOpen = (Telerik.WinControls.UI.RadMenuItem)sender;
+    if (filetoOpen.Text != String.Empty)
+    {
+        ModifiedOpenFile(filetoOpen.Text);
+    }
+}
 
-        private void radMenuItem1_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog dlg = new OpenFileDialog();
-            dlg.Filter = "*.txt,*.rtf|*.txt;*.rtf";
-            dlg.ShowDialog();
-            if (dlg.FileName != string.Empty)
-            {
-                ModifiedOpenFile(dlg.FileName);
-            }
-        }
-
-        private void radMenuItem2_DropDownOpening(object sender, CancelEventArgs e)
-        {
-            //dynamically populate MRU File list
-            //this example is not concerned about duplicates
-            radMenuItem3.Text = Properties.Settings.Default.File1;
-            radMenuItem4.Text = Properties.Settings.Default.File2;
-            radMenuItem5.Text = Properties.Settings.Default.File3;
-        }
-
-        private void OpenfromMRU(object sender, EventArgs e)
-        {
-            Telerik.WinControls.UI.RadMenuItem filetoOpen = (Telerik.WinControls.UI.RadMenuItem)sender;
-            if (filetoOpen.Text != String.Empty)
-            {
-                ModifiedOpenFile(filetoOpen.Text);
-            }
-        }
 ````
 ````VB.NET
-    Private Sub AddNewMostRecentFile(ByVal newFile As String)
-        'last three files are stored in appliation settings: "File1","File2","File3" with File1 being the newest
-        'replace 3 with 2 and 2 with 1 and then add new to 1
-        My.Settings.File3 = My.Settings.File2
-        My.Settings.File2 = My.Settings.File1
-        My.Settings.File1 = newFile
-    End Sub
+Private Sub AddNewMostRecentFile(ByVal newFile As String)
+    'last three files are stored in appliation settings: "File1","File2","File3" with File1 being the newest
+    'replace 3 with 2 and 2 with 1 and then add new to 1
+    My.Settings.File3 = My.Settings.File2
+    My.Settings.File2 = My.Settings.File1
+    My.Settings.File1 = newFile
+End Sub
+Private Sub radMenuItem1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles RadMenuItem1.Click
+    Dim dlg As New OpenFileDialog()
+    dlg.Filter = "*.txt,*.rtf|*.txt;*.rtf"
+    dlg.ShowDialog()
+    If dlg.FileName <> String.Empty Then
+        ModifiedOpenFile(dlg.FileName)
+    End If
+End Sub
+Private Sub radMenuItem2_DropDownOpening(ByVal sender As Object, ByVal e As CancelEventArgs) Handles RadMenuItem2.DropDownOpening
+    'dynamically populate MRU File list
+    'this example is not concerned about duplicates
+    RadMenuItem3.Text = My.Settings.File1
+    RadMenuItem4.Text = My.Settings.File2
+    RadMenuItem5.Text = My.Settings.File3
+End Sub
+Private Sub OpenfromMRU(ByVal sender As Object, ByVal e As EventArgs) Handles RadMenuItem5.Click, RadMenuItem4.Click, RadMenuItem3.Click
+    Dim filetoOpen As Telerik.WinControls.UI.RadMenuItem = DirectCast(sender, Telerik.WinControls.UI.RadMenuItem)
+    If filetoOpen.Text <> [String].Empty Then
+        ModifiedOpenFile(filetoOpen.Text)
+    End If
+End Sub
 
-    Private Sub radMenuItem1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles RadMenuItem1.Click
-        Dim dlg As New OpenFileDialog()
-        dlg.Filter = "*.txt,*.rtf|*.txt;*.rtf"
-        dlg.ShowDialog()
-        If dlg.FileName <> String.Empty Then
-            ModifiedOpenFile(dlg.FileName)
-        End If
-    End Sub
-
-    Private Sub radMenuItem2_DropDownOpening(ByVal sender As Object, ByVal e As CancelEventArgs) Handles RadMenuItem2.DropDownOpening
-        'dynamically populate MRU File list
-        'this example is not concerned about duplicates
-        RadMenuItem3.Text = My.Settings.File1
-        RadMenuItem4.Text = My.Settings.File2
-        RadMenuItem5.Text = My.Settings.File3
-    End Sub
-
-    Private Sub OpenfromMRU(ByVal sender As Object, ByVal e As EventArgs) Handles RadMenuItem5.Click, RadMenuItem4.Click, RadMenuItem3.Click
-        Dim filetoOpen As Telerik.WinControls.UI.RadMenuItem = DirectCast(sender, Telerik.WinControls.UI.RadMenuItem)
-        If filetoOpen.Text <> [String].Empty Then
-            ModifiedOpenFile(filetoOpen.Text)
-        End If
-    End Sub
-    '
 ````
 
 {{endregion}}
@@ -387,13 +380,14 @@ The shorcut assignments is pretty simple. Just switch to the Code View of the fo
 {{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingStartMenuQATAndShortcuts.vb region=shortcuts}} 
 
 ````C#
-            radMenuItem1.Shortcuts.Add(new Telerik.WinControls.RadShortcut(Keys.Control, Keys.O));
-            radMenuItem2.Shortcuts.Add(new Telerik.WinControls.RadShortcut(Keys.Control, Keys.B));
+radMenuItem1.Shortcuts.Add(new Telerik.WinControls.RadShortcut(Keys.Control, Keys.O));
+radMenuItem2.Shortcuts.Add(new Telerik.WinControls.RadShortcut(Keys.Control, Keys.B));
+
 ````
 ````VB.NET
-        RadMenuItem1.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.O))
-        RadMenuItem2.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.B))
-        '
+RadMenuItem1.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.O))
+RadMenuItem2.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.B))
+
 ````
 
 {{endregion}}
