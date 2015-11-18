@@ -60,11 +60,13 @@ __Example 1__ demonstrates how you can use the RegisterFont() method.
 {{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsFonts.vb region=radpdfprocessing-concepts-fonts_0}} 
 
 ````C#
-            FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data);
+FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data);
+
 ````
 ````VB.NET
-        FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data)
-        '
+FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data)
+'
+
 ````
 
 {{endregion}}
@@ -80,13 +82,15 @@ __Example 2__ shows how to create a font using the FontsRepository.
 {{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsFonts.vb region=radpdfprocessing-concepts-fonts_1}} 
 
 ````C#
-            FontBase font;
-            bool success = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, out font);
+FontBase font;
+bool success = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, out font);
+
 ````
 ````VB.NET
-        Dim font As FontBase
-        Dim success As Boolean = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, font)
-        '
+Dim font As FontBase
+Dim success As Boolean = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, font)
+'
+
 ````
 
 {{endregion}}

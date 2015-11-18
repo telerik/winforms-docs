@@ -28,13 +28,15 @@ __Example 1__ shows how to initialize an Image object and add it to a previously
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImage.vb region=radpdfprocessing-model-image_0}} 
 
 ````C#
-            Telerik.Windows.Documents.Fixed.Model.Objects.Image image = new Telerik.Windows.Documents.Fixed.Model.Objects.Image();
-            container.Content.Add(image);
+Telerik.Windows.Documents.Fixed.Model.Objects.Image image = new Telerik.Windows.Documents.Fixed.Model.Objects.Image();
+container.Content.Add(image);
+
 ````
 ````VB.NET
-        Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = New Telerik.Windows.Documents.Fixed.Model.Objects.Image()
-        container.Content.Add(image)
-        '
+Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = New Telerik.Windows.Documents.Fixed.Model.Objects.Image()
+container.Content.Add(image)
+'
+
 ````
 
 {{endregion}} 
@@ -47,13 +49,15 @@ __Example 2__ demonstrates how to use one of the factory methods of the __Conten
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImage.vb region=radpdfprocessing-model-image_1}} 
 
 ````C#
-            Telerik.Windows.Documents.Fixed.Model.Objects.Image image = container.Content.AddImage();
-            Telerik.Windows.Documents.Fixed.Model.Objects.Image imageWithSource = container.Content.AddImage(imageSource);
+Telerik.Windows.Documents.Fixed.Model.Objects.Image image = container.Content.AddImage();
+Telerik.Windows.Documents.Fixed.Model.Objects.Image imageWithSource = container.Content.AddImage(imageSource);
+
 ````
 ````VB.NET
-        Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage()
-        Dim imageWithSource As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage(imageSource)
-        '
+Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage()
+Dim imageWithSource As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage(imageSource)
+'
+
 ````
 
 {{endregion}} 

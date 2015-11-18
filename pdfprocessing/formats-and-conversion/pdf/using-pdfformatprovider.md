@@ -32,18 +32,21 @@ __Example 1__ shows how to use PdfFormatProvider to import a PDF document form a
 {{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfUsingPdfFormatProvider.vb region=radpdfprocessing-formats-and-conversion-pdf-pdfformatprovider_0}} 
 
 ````C#
-            PdfFormatProvider provider = new PdfFormatProvider();
-            using (Stream input = File.OpenRead("Sample.pdf"))
-            {
-                RadFixedDocument document = provider.Import(input);
-            }
+PdfFormatProvider provider = new PdfFormatProvider();
+using (Stream stream = File.OpenRead("sample.pdf"))
+{
+    document = provider.Import(stream);
+    // Do your work with the document inside the using statement.
+}
+
 ````
 ````VB.NET
-        Dim provider As PdfFormatProvider = New PdfFormatProvider()
-        Using input As Stream = File.OpenRead("Sample.pdf")
-            Dim document As RadFixedDocument = provider.Import(input)
-        End Using
-        '
+Dim provider As New PdfFormatProvider()
+Using stream As Stream = File.OpenRead("sample.pdf")
+    ' Do your work with the document inside the using statement.
+    document = provider.Import(stream)
+End Using
+
 ````
 
 {{endregion}}
@@ -63,20 +66,23 @@ __Example 2__ shows how to use the __Export()__ method of PdfFormatProvider to e
 {{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Pdf\PdfProcessingFormatsAndConversionPdfUsingPdfFormatProvider.vb region=radpdfprocessing-formats-and-conversion-pdf-pdfformatprovider_1}} 
 
 ````C#
-            PdfFormatProvider provider = new PdfFormatProvider();
-            using (Stream output = File.OpenWrite("sample.pdf"))
-            {
-                RadFixedDocument document = CreateRadFixedDocument();
-                provider.Export(document, output);
-            }
+            
+PdfFormatProvider provider = new PdfFormatProvider();
+using (Stream output = File.OpenWrite("sample.pdf"))
+{
+    RadFixedDocument document = CreateRadFixedDocument();
+    provider.Export(document, output);
+}
+
 ````
 ````VB.NET
-        Dim provider As PdfFormatProvider = New PdfFormatProvider()
-        Using output As Stream = File.OpenWrite("sample.pdf")
-            Dim document As RadFixedDocument = CreateRadFixedDocument()
-            provider.Export(document, output)
-        End Using
-        '
+Dim provider As PdfFormatProvider = New PdfFormatProvider()
+Using output As Stream = File.OpenWrite("sample.pdf")
+    Dim document As RadFixedDocument = CreateRadFixedDocument()
+    provider.Export(document, output)
+End Using
+'
+
 ````
 
 {{endregion}}

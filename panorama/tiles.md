@@ -20,13 +20,14 @@ To set the location of a tile, set its __Column__ and __Row__ properties either 
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=SetTilePosition}} 
 
 ````C#
-            this.radTileElement1.Row = 1;
-            this.radTileElement1.Column = 0;
+this.radTileElement1.Row = 1;
+this.radTileElement1.Column = 0;
+
 ````
 ````VB.NET
-        Me.RadTileElement1.Row = 1
-        Me.RadTileElement1.Column = 0
-        '
+Me.RadTileElement1.Row = 1
+Me.RadTileElement1.Column = 0
+
 ````
 
 {{endregion}}
@@ -44,29 +45,26 @@ The __CellPadding__ property specifies the offset of the tile according to the b
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=Padding}} 
 
 ````C#
-            this.radTileElement1.RowSpan = 2;
-            this.radTileElement1.CellPadding = new Padding(5);
+this.radTileElement1.RowSpan = 2;
+this.radTileElement1.CellPadding = new Padding(5);
+this.radTileElement2.ColSpan = 2;
+this.radTileElement2.Column = 2;
+this.radTileElement2.CellPadding = new Padding(5);
+this.radTileElement3.Row = 1;
+this.radTileElement3.Column = 1;
+this.radTileElement3.CellPadding = new Padding(5);
 
-            this.radTileElement2.ColSpan = 2;
-            this.radTileElement2.Column = 2;
-            this.radTileElement2.CellPadding = new Padding(5);
-
-            this.radTileElement3.Row = 1;
-            this.radTileElement3.Column = 1;
-            this.radTileElement3.CellPadding = new Padding(5);
 ````
 ````VB.NET
-        Me.RadTileElement1.RowSpan = 2
-        Me.RadTileElement1.CellPadding = New Padding(5)
+Me.RadTileElement1.RowSpan = 2
+Me.RadTileElement1.CellPadding = New Padding(5)
+Me.RadTileElement2.ColSpan = 2
+Me.RadTileElement2.Column = 2
+Me.RadTileElement2.CellPadding = New Padding(5)
+Me.RadTileElement3.Row = 1
+Me.RadTileElement3.Column = 1
+Me.RadTileElement3.CellPadding = New Padding(5)
 
-        Me.RadTileElement2.ColSpan = 2
-        Me.RadTileElement2.Column = 2
-        Me.RadTileElement2.CellPadding = New Padding(5)
-
-        Me.RadTileElement3.Row = 1
-        Me.RadTileElement3.Column = 1
-        Me.RadTileElement3.CellPadding = New Padding(5)
-        '
 ````
 
 {{endregion}}
@@ -85,37 +83,38 @@ To change the content element, you can edit the contents of the tilesҠ__Items__
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=LiveTiles}} 
 
 ````C#
-            radLiveTileElement1.Items.Add(new LightVisualElement()
-            {
-                Text = "Movie Idea: Pirates of the Carribean"
-            });
-            radLiveTileElement1.Items.Add(new LightVisualElement()
-            {
-                Text = "Movie Idea: Inception"
-            });
-            radLiveTileElement1.Items.Add(new LightVisualElement()
-            {
-                Text = "Movie Idea: The Expendables"
-            });
-            radLiveTileElement1.Items.Add(new LightVisualElement()
-            {
-                Text = "Movie Idea: Harry Potter and the Deathly Hallows"
-            });
+radLiveTileElement1.Items.Add(new LightVisualElement()
+{
+    Text = "Movie Idea: Pirates of the Carribean"
+});
+radLiveTileElement1.Items.Add(new LightVisualElement()
+{
+    Text = "Movie Idea: Inception"
+});
+radLiveTileElement1.Items.Add(new LightVisualElement()
+{
+    Text = "Movie Idea: The Expendables"
+});
+radLiveTileElement1.Items.Add(new LightVisualElement()
+{
+    Text = "Movie Idea: Harry Potter and the Deathly Hallows"
+});
+
 ````
 ````VB.NET
-        RadLiveTileElement1.Items.Add(New LightVisualElement() With { _
-         .Text = "Movie Idea: Pirates of the Carribean" _
-        })
-        RadLiveTileElement1.Items.Add(New LightVisualElement() With { _
-         .Text = "Movie Idea: Inception" _
-        })
-        RadLiveTileElement1.Items.Add(New LightVisualElement() With { _
-         .Text = "Movie Idea: The Expendables" _
-        })
-        RadLiveTileElement1.Items.Add(New LightVisualElement() With { _
-         .Text = "Movie Idea: Harry Potter and the Deathly Hallows" _
-        })
-        '
+RadLiveTileElement1.Items.Add(New LightVisualElement() With { _
+ .Text = "Movie Idea: Pirates of the Carribean" _
+})
+RadLiveTileElement1.Items.Add(New LightVisualElement() With { _
+ .Text = "Movie Idea: Inception" _
+})
+RadLiveTileElement1.Items.Add(New LightVisualElement() With { _
+ .Text = "Movie Idea: The Expendables" _
+})
+RadLiveTileElement1.Items.Add(New LightVisualElement() With { _
+ .Text = "Movie Idea: Harry Potter and the Deathly Hallows" _
+})
+
 ````
 
 {{endregion}}
@@ -128,17 +127,18 @@ The following properties are responsible for controlling the behavior of the tra
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=AnimationProperties}} 
 
 ````C#
-            this.radLiveTileElement1.AnimationFrames = 15; //sets the number of frames in a transition
-            this.radLiveTileElement1.AnimationInterval = 30; //sets the interval between each frame in the transition in miliseconds
-            this.radLiveTileElement1.ContentChangeInterval = 7000; //sets the interval between each content change
-            this.radLiveTileElement1.TransitionType = ContentTransitionType.SlideUp; //sets the type of the transition animation
+this.radLiveTileElement1.AnimationFrames = 15; //sets the number of frames in a transition
+this.radLiveTileElement1.AnimationInterval = 30; //sets the interval between each frame in the transition in miliseconds
+this.radLiveTileElement1.ContentChangeInterval = 7000; //sets the interval between each content change
+this.radLiveTileElement1.TransitionType = ContentTransitionType.SlideUp; //sets the type of the transition animation
+
 ````
 ````VB.NET
-        Me.RadLiveTileElement1.AnimationFrames = 15 'sets the number of frames in a transition
-        Me.RadLiveTileElement1.AnimationInterval = 30 'sets the interval between each frame in the transition in miliseconds
-        Me.RadLiveTileElement1.ContentChangeInterval = 7000 'sets the interval between each content change
-        Me.RadLiveTileElement1.TransitionType = ContentTransitionType.SlideUp 'sets the type of the transition animation
-        '
+Me.RadLiveTileElement1.AnimationFrames = 15 'sets the number of frames in a transition
+Me.RadLiveTileElement1.AnimationInterval = 30 'sets the interval between each frame in the transition in miliseconds
+Me.RadLiveTileElement1.ContentChangeInterval = 7000 'sets the interval between each content change
+Me.RadLiveTileElement1.TransitionType = ContentTransitionType.SlideUp 'sets the type of the transition animation
+
 ````
 
 {{endregion}}

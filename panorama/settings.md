@@ -22,11 +22,12 @@ Tile can be reordered via Drag and Drop. To allow or disallow this, set the __Al
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=AllowDragDrop}} 
 
 ````C#
-            this.radPanorama1.AllowDragDrop = true;
+this.radPanorama1.AllowDragDrop = true;
+
 ````
 ````VB.NET
-        Me.RadPanorama1.AllowDragDrop = True
-        '
+Me.RadPanorama1.AllowDragDrop = True
+
 ````
 
 {{endregion}}
@@ -39,13 +40,14 @@ RadPanorama uses a fixed number of rows, but the control changes the number of c
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=RowAndCol}} 
 
 ````C#
-            this.radPanorama1.RowsCount = 5;
-            this.radPanorama1.MinimumColumns = 5;
+this.radPanorama1.RowsCount = 5;
+this.radPanorama1.MinimumColumns = 5;
+
 ````
 ````VB.NET
-        Me.RadPanorama1.RowsCount = 5
-        Me.RadPanorama1.MinimumColumns = 5
-        '
+Me.RadPanorama1.RowsCount = 5
+Me.RadPanorama1.MinimumColumns = 5
+
 ````
 
 {{endregion}}

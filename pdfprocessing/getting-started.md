@@ -46,13 +46,14 @@ The following .NET assemblies are required as well"
 {{source=..\SamplesVB\PdfProcessing\PdfProcessingGettingStarted.vb region=radpdfprocessing-getting-started_0}} 
 
 ````C#
-            RadFixedDocument document = new RadFixedDocument();
-            RadFixedPage page = document.Pages.AddPage();
+RadFixedDocument document = new RadFixedDocument();
+RadFixedPage page = document.Pages.AddPage();
+
 ````
 ````VB.NET
-        Dim document As RadFixedDocument = New RadFixedDocument()
-        Dim page As RadFixedPage = document.Pages.AddPage()
-        '
+Dim document As RadFixedDocument = New RadFixedDocument()
+Dim page As RadFixedPage = document.Pages.AddPage()
+
 ````
 
 {{endregion}} 
@@ -65,13 +66,14 @@ The page can then be edited through a [FixedContentEditor]({%slug winforms/pdfpr
 {{source=..\SamplesVB\PdfProcessing\PdfProcessingGettingStarted.vb region=radpdfprocessing-getting-started_1}} 
 
 ````C#
-            FixedContentEditor editor = new FixedContentEditor(page);
-            editor.DrawText("Hello RadPdfProcessing!");
+FixedContentEditor editor = new FixedContentEditor(page);
+editor.DrawText("Hello RadPdfProcessing!");
+
 ````
 ````VB.NET
-        Dim editor As FixedContentEditor = New FixedContentEditor(page)
-        editor.DrawText("Hello RadPdfProcessing!")
-        '
+Dim editor As FixedContentEditor = New FixedContentEditor(page)
+editor.DrawText("Hello RadPdfProcessing!")
+
 ````
 
 {{endregion}} 
@@ -86,18 +88,19 @@ Exporting to PDF format can be achieved with the __PdfFormatProvider__ class. __
 {{source=..\SamplesVB\PdfProcessing\PdfProcessingGettingStarted.vb region=radpdfprocessing-getting-started_2}} 
 
 ````C#
-            PdfFormatProvider provider = new PdfFormatProvider();
-            using (Stream output = File.OpenWrite("Hello.pdf"))
-            {
-                provider.Export(document, output);
-            }
+PdfFormatProvider provider = new PdfFormatProvider();
+using (Stream output = File.OpenWrite("Hello.pdf"))
+{
+    provider.Export(document, output);
+}
+
 ````
 ````VB.NET
-        Dim provider As PdfFormatProvider = New PdfFormatProvider()
-        Using output As Stream = File.OpenWrite("Hello.pdf")
-            provider.Export(document, output)
-        End Using
-        '
+Dim provider As PdfFormatProvider = New PdfFormatProvider()
+Using output As Stream = File.OpenWrite("Hello.pdf")
+    provider.Export(document, output)
+End Using
+
 ````
 
 {{endregion}} 

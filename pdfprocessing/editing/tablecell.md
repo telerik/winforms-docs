@@ -30,15 +30,16 @@ The code snippet in __Example 1__ shows how to create a table with a single row 
 {{source=..\SamplesVB\PdfProcessing\Editing\TableCell1.vb region=radpdfprocessing-editing-tablecell_0}} 
 
 ````C#
-            Table table = new Table();
-            TableRow firstRow = table.Rows.AddTableRow();
-            TableCell firstCell = firstRow.Cells.AddTableCell();
+Table table = new Table();
+TableRow firstRow = table.Rows.AddTableRow();
+TableCell firstCell = firstRow.Cells.AddTableCell();
+
 ````
 ````VB.NET
-        Dim table As New Table()
-        Dim firstRow As TableRow = table.Rows.AddTableRow()
-        Dim firstCell As TableCell = firstRow.Cells.AddTableCell()
-        '
+Dim table As New Table()
+Dim firstRow As TableRow = table.Rows.AddTableRow()
+Dim firstCell As TableCell = firstRow.Cells.AddTableCell()
+
 ````
 
 {{endregion}}
@@ -55,13 +56,14 @@ __Example 2__ shows how to create a cell with a single [Block]({%slug winforms/p
 {{source=..\SamplesVB\PdfProcessing\Editing\TableCell1.vb region=radpdfprocessing-editing-tablecell_1}} 
 
 ````C#
-            Block block = firstCell.Blocks.AddBlock();
-            block.InsertText("Text in the cell.");
+Block block = firstCell.Blocks.AddBlock();
+block.InsertText("Text in the cell.");
+
 ````
 ````VB.NET
-        Dim block As Block = firstCell.Blocks.AddBlock()
-        block.InsertText("Text in the cell.")
-        '
+Dim block As Block = firstCell.Blocks.AddBlock()
+block.InsertText("Text in the cell.")
+
 ````
 
 {{endregion}}
@@ -90,17 +92,18 @@ __Example 3__ demonstrates how to set locally the cell properties to a specific 
 {{source=..\SamplesVB\PdfProcessing\Editing\TableCell1.vb region=radpdfprocessing-editing-tablecell_2}} 
 
 ````C#
-            firstCell.RowSpan = 2;
-            firstCell.ColumnSpan = 2;
-            firstCell.Borders = new TableCellBorders(new Border(1, new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(150, 0, 0)));
-            firstCell.Background = new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 100, 100);
+firstCell.RowSpan = 2;
+firstCell.ColumnSpan = 2;
+firstCell.Borders = new TableCellBorders(new Border(1, new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(150, 0, 0)));
+firstCell.Background = new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 100, 100);
+
 ````
 ````VB.NET
-        firstCell.RowSpan = 2
-        firstCell.ColumnSpan = 2
-        firstCell.Borders = New TableCellBorders(New Border(1, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(150, 0, 0)))
-        firstCell.Background = New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 100, 100)
-        '
+firstCell.RowSpan = 2
+firstCell.ColumnSpan = 2
+firstCell.Borders = New TableCellBorders(New Border(1, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(150, 0, 0)))
+firstCell.Background = New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 100, 100)
+
 ````
 
 {{endregion}}

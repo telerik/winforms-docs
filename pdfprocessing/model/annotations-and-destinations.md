@@ -40,13 +40,15 @@ __Link__ exposes the following properties:
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelAnnotationsAndDestinations.vb region=radpdfprocessing-model-annotations-and-destinations_0}} 
 
 ````C#
-            Link linkWithDestination = new Link(destination);
-            page.Annotations.Add(linkWithDestination);
+Link linkWithDestination = new Link(destination);
+page.Annotations.Add(linkWithDestination);
+
 ````
 ````VB.NET
-        Dim linkWithDestination As Link = New Link(destination)
-        page.Annotations.Add(linkWithDestination)
-        '
+Dim linkWithDestination As Link = New Link(destination)
+page.Annotations.Add(linkWithDestination)
+'
+
 ````
 
 {{endregion}}
@@ -59,13 +61,15 @@ __Link__ exposes the following properties:
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelAnnotationsAndDestinations.vb region=radpdfprocessing-model-annotations-and-destinations_1}} 
 
 ````C#
-            Link linkWithAction = new Link(action);
-            page.Annotations.Add(linkWithAction);
+Link linkWithAction = new Link(action);
+page.Annotations.Add(linkWithAction);
+
 ````
 ````VB.NET
-        Dim linkWithAction As Link = New Link(action)
-        page.Annotations.Add(linkWithAction)
-        '
+Dim linkWithAction As Link = New Link(action)
+page.Annotations.Add(linkWithAction)
+'
+
 ````
 
 {{endregion}} 
@@ -109,25 +113,25 @@ __Example 3__ shows how you can create a Location object, associate it with a Li
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelAnnotationsAndDestinations.vb region=radpdfprocessing-model-annotations-and-destinations_2}} 
 
 ````C#
-            Location location = new Location();
-            location.Left = 225;
-            location.Top = 500;
-            location.Zoom = 4;
-            location.Page = secondPage;
+Location location = new Location();
+location.Left = 225;
+location.Top = 500;
+location.Zoom = 4;
+location.Page = secondPage;
+var link = firstPage.Annotations.AddLink(location);
+link.Rect = new Rect(10, 10, 50, 50);
 
-            var link = firstPage.Annotations.AddLink(location);
-            link.Rect = new Rect(10, 10, 50, 50);
 ````
 ````VB.NET
-        Dim location As Location = New Location()
-        location.Left = 225
-        location.Top = 500
-        location.Zoom = 4
-        location.Page = secondPage
+Dim location As Location = New Location()
+location.Left = 225
+location.Top = 500
+location.Zoom = 4
+location.Page = secondPage
+Dim link = firstPage.Annotations.AddLink(location)
+link.Rect = New Rect(10, 10, 50, 50)
+'
 
-        Dim link = firstPage.Annotations.AddLink(location)
-        link.Rect = New Rect(10, 10, 50, 50)
-        '
 ````
 
 {{endregion}} 
@@ -154,31 +158,27 @@ __Example 4__ demonstrates how to create an action of type __GoToAction__, assoc
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelAnnotationsAndDestinations.vb region=radpdfprocessing-model-annotations-and-destinations_3}} 
 
 ````C#
-            GoToAction goToAction = new GoToAction();
-            goToAction.Destination = location;
+GoToAction goToAction = new GoToAction();
+goToAction.Destination = location;
+var goToLink = firstPage.Annotations.AddLink(goToAction);
+goToLink.Rect = new Rect(10, 10, 50, 50);
+UriAction uriAction = new UriAction();
+uriAction.Uri = new Uri(@"http://www.telerik.com");
+var uriLink = firstPage.Annotations.AddLink(uriAction);
+uriLink.Rect = new Rect(70, 10, 50, 50);
 
-            var goToLink = firstPage.Annotations.AddLink(goToAction);
-            goToLink.Rect = new Rect(10, 10, 50, 50);
-
-            UriAction uriAction = new UriAction();
-            uriAction.Uri = new Uri(@"http://www.telerik.com");
-
-            var uriLink = firstPage.Annotations.AddLink(uriAction);
-            uriLink.Rect = new Rect(70, 10, 50, 50);
 ````
 ````VB.NET
-        Dim goToAction As GoToAction = New GoToAction()
-        goToAction.Destination = location
+Dim goToAction As GoToAction = New GoToAction()
+goToAction.Destination = location
+Dim goToLink = firstPage.Annotations.AddLink(goToAction)
+goToLink.Rect = New Rect(10, 10, 50, 50)
+Dim uriAction As UriAction = New UriAction()
+uriAction.Uri = New Uri("http://www.telerik.com")
+Dim uriLink = firstPage.Annotations.AddLink(uriAction)
+uriLink.Rect = New Rect(70, 10, 50, 50)
+'
 
-        Dim goToLink = firstPage.Annotations.AddLink(goToAction)
-        goToLink.Rect = New Rect(10, 10, 50, 50)
-
-        Dim uriAction As UriAction = New UriAction()
-        uriAction.Uri = New Uri("http://www.telerik.com")
-
-        Dim uriLink = firstPage.Annotations.AddLink(uriAction)
-        uriLink.Rect = New Rect(70, 10, 50, 50)
-        '
 ````
 
 {{endregion}} 

@@ -25,16 +25,17 @@ __Example 1__ illustrates how you can create an ImageSource using a __FileStream
 
 ````C#
             
-            using (FileStream source = File.Open(filename, FileMode.Open))
-            {
-                ImageSource imageSource = new ImageSource(source);
-            }
+using (FileStream source = File.Open(filename, FileMode.Open))
+{
+    ImageSource imageSource = new ImageSource(source);
+}
+
 ````
 ````VB.NET
-        Using source As FileStream = File.Open(filename, FileMode.Open)
-            Dim imageSource As New ImageSource(source)
-        End Using
-        '
+Using source As FileStream = File.Open(filename, FileMode.Open)
+    Dim imageSource As New ImageSource(source)
+End Using
+
 ````
 
 {{endregion}}
@@ -49,21 +50,21 @@ __RadPdfProcessing__ exposes an extension method allowing to convert every Bitma
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImageSource.vb region=radpdfprocessing-model-imagesource_1}} 
 
 ````C#
-            BitmapImage bitmap = new BitmapImage();
-            bitmap.BeginInit();
-            bitmap.UriSource = new Uri(filename, UriKind.RelativeOrAbsolute);
-            bitmap.EndInit();
-        
-            return bitmap.ToImageSource();
+            
+BitmapImage bitmap = new BitmapImage();
+bitmap.BeginInit();
+bitmap.UriSource = new Uri(filename, UriKind.RelativeOrAbsolute);
+bitmap.EndInit();
+return bitmap.ToImageSource();
+
 ````
 ````VB.NET
-        Dim bitmap As New BitmapImage()
-        bitmap.BeginInit()
-        bitmap.UriSource = New Uri(filename, UriKind.RelativeOrAbsolute)
-        bitmap.EndInit()
+Dim bitmap As New BitmapImage()
+bitmap.BeginInit()
+bitmap.UriSource = New Uri(filename, UriKind.RelativeOrAbsolute)
+bitmap.EndInit()
+Return bitmap.ToImageSource()
 
-        Return bitmap.ToImageSource()
-        '
 ````
 
 {{endregion}} 

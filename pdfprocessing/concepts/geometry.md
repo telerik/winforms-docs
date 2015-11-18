@@ -44,13 +44,15 @@ __Example 1__ shows hot to create a RectangleGeometry.
 {{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsGeometry.vb region=radpdfprocessing-concepts-geometry_0}} 
 
 ````C#
-            RectangleGeometry rectangleGeometry = new RectangleGeometry();
-            rectangleGeometry.Rect = new Rect(10, 5, 400, 300);
+RectangleGeometry rectangleGeometry = new RectangleGeometry();
+rectangleGeometry.Rect = new Rect(10, 5, 400, 300);
+
 ````
 ````VB.NET
-        Dim rectangleGeometry As RectangleGeometry = New RectangleGeometry()
-        rectangleGeometry.Rect = New Rect(10, 5, 400, 300)
-        '
+Dim rectangleGeometry As RectangleGeometry = New RectangleGeometry()
+rectangleGeometry.Rect = New Rect(10, 5, 400, 300)
+'
+
 ````
 
 {{endregion}}
@@ -75,29 +77,31 @@ __Example 2__ shows how to create a PathGeometry which consists of line segments
 {{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsGeometry.vb region=radpdfprocessing-concepts-geometry_1}} 
 
 ````C#
-            PathGeometry pathGeometry = new PathGeometry();
-            PathFigure pathFigure = pathGeometry.Figures.AddPathFigure();
-            pathFigure.StartPoint = new Point(5, 5);
-            LineSegment lineSegment = pathFigure.Segments.AddLineSegment();
-            lineSegment.Point = new Point(205, 5);
-            BezierSegment bezierSegment = pathFigure.Segments.AddBezierSegment();
-            bezierSegment.Point1 = new Point(105, 50);
-            bezierSegment.Point2 = new Point(130, 105);
-            bezierSegment.Point3 = new Point(100, 200);
-            pathFigure.IsClosed = true;
+PathGeometry pathGeometry = new PathGeometry();
+PathFigure pathFigure = pathGeometry.Figures.AddPathFigure();
+pathFigure.StartPoint = new Point(5, 5);
+LineSegment lineSegment = pathFigure.Segments.AddLineSegment();
+lineSegment.Point = new Point(205, 5);
+BezierSegment bezierSegment = pathFigure.Segments.AddBezierSegment();
+bezierSegment.Point1 = new Point(105, 50);
+bezierSegment.Point2 = new Point(130, 105);
+bezierSegment.Point3 = new Point(100, 200);
+pathFigure.IsClosed = true;
+
 ````
 ````VB.NET
-        Dim pathGeometry As PathGeometry = New PathGeometry()
-        Dim pathFigure As PathFigure = pathGeometry.Figures.AddPathFigure()
-        pathFigure.StartPoint = New Point(5, 5)
-        Dim lineSegment As LineSegment = pathFigure.Segments.AddLineSegment()
-        lineSegment.Point = New Point(205, 5)
-        Dim bezierSegment As BezierSegment = pathFigure.Segments.AddBezierSegment()
-        bezierSegment.Point1 = New Point(105, 50)
-        bezierSegment.Point2 = New Point(130, 105)
-        bezierSegment.Point3 = New Point(100, 200)
-        pathFigure.IsClosed = True
-        '
+Dim pathGeometry As PathGeometry = New PathGeometry()
+Dim pathFigure As PathFigure = pathGeometry.Figures.AddPathFigure()
+pathFigure.StartPoint = New Point(5, 5)
+Dim lineSegment As LineSegment = pathFigure.Segments.AddLineSegment()
+lineSegment.Point = New Point(205, 5)
+Dim bezierSegment As BezierSegment = pathFigure.Segments.AddBezierSegment()
+bezierSegment.Point1 = New Point(105, 50)
+bezierSegment.Point2 = New Point(130, 105)
+bezierSegment.Point3 = New Point(100, 200)
+pathFigure.IsClosed = True
+'
+
 ````
 
 {{endregion}}

@@ -28,15 +28,17 @@ __Example 1__ shows how you can create a Path, using a predefined Geometry to it
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelPath.vb region=radpdfprocessing-model-path_0}} 
 
 ````C#
-            Path path = new Path();
-            path.Geometry = geometry;
-            container.Content.Add(path);
+Path path = new Path();
+path.Geometry = geometry;
+container.Content.Add(path);
+
 ````
 ````VB.NET
-        Dim path As Path = New Path()
-        path.Geometry = geometry
-        container.Content.Add(path)
-        '
+Dim path As Path = New Path()
+path.Geometry = geometry
+container.Content.Add(path)
+'
+
 ````
 
 {{endregion}} 
@@ -49,13 +51,15 @@ __Example 2__ demonstrates how to use one of the factory methods of the __Conten
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelPath.vb region=radpdfprocessing-model-path_1}} 
 
 ````C#
-            Path path = container.Content.AddPath();
-            path.Geometry = geometry;
+Path path = container.Content.AddPath();
+path.Geometry = geometry;
+
 ````
 ````VB.NET
-        Dim path As Path = container.Content.AddPath()
-        path.Geometry = geometry
-        '
+Dim path As Path = container.Content.AddPath()
+path.Geometry = geometry
+'
+
 ````
 
 {{endregion}} 

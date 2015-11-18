@@ -20,14 +20,12 @@ __ExpandDirection__ - Indicates the direction of the expand animation. The colla
 {{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ExpandDirections1}} 
 
 ````C#
+this.radCollapsiblePanel1.ExpandDirection = RadDirection.Down;
 
-            this.radCollapsiblePanel1.ExpandDirection = RadDirection.Down;
 ````
 ````VB.NET
+Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Down
 
-        Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Down
-
-        '
 ````
 
 {{endregion}} 
@@ -39,14 +37,12 @@ __ExpandDirection__ - Indicates the direction of the expand animation. The colla
 {{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ExpandDirections2}} 
 
 ````C#
+this.radCollapsiblePanel1.ExpandDirection = RadDirection.Left;
 
-            this.radCollapsiblePanel1.ExpandDirection = RadDirection.Left;
 ````
 ````VB.NET
+Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Left
 
-        Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Left
-
-        '
 ````
 
 {{endregion}} 
@@ -58,14 +54,12 @@ __ExpandDirection__ - Indicates the direction of the expand animation. The colla
 {{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ExpandDirections3}} 
 
 ````C#
+this.radCollapsiblePanel1.ExpandDirection = RadDirection.Right;
 
-            this.radCollapsiblePanel1.ExpandDirection = RadDirection.Right;
 ````
 ````VB.NET
+Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Right
 
-        Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Right
-
-        '
 ````
 
 {{endregion}} 
@@ -77,14 +71,12 @@ __ExpandDirection__ - Indicates the direction of the expand animation. The colla
 {{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ExpandDirections4}} 
 
 ````C#
+this.radCollapsiblePanel1.ExpandDirection = RadDirection.Up;
 
-            this.radCollapsiblePanel1.ExpandDirection = RadDirection.Up;
 ````
 ````VB.NET
+Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Up
 
-        Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Up
-
-        '
 ````
 
 {{endregion}} 
@@ -98,14 +90,12 @@ __EnableAnimation__ - Indicates whether to use animation to expand or collapse t
 {{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=EnableAnimation}} 
 
 ````C#
+this.radCollapsiblePanel1.EnableAnimation = false;
 
-            this.radCollapsiblePanel1.EnableAnimation = false;
 ````
 ````VB.NET
+Me.RadCollapsiblePanel1.EnableAnimation = False
 
-        Me.RadCollapsiblePanel1.EnableAnimation = False
-
-        '
 ````
 
 {{endregion}}
@@ -116,14 +106,12 @@ __ContentSizingMode__ -  Indicates whether the controls container will resize to
 {{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ContentSizingMode1}} 
 
 ````C#
+this.radCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentWidth;
 
-            this.radCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentWidth;
 ````
 ````VB.NET
+Me.RadCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentWidth
 
-        Me.RadCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentWidth
-
-        '
 ````
 
 {{endregion}} 
@@ -135,14 +123,12 @@ __ContentSizingMode__ -  Indicates whether the controls container will resize to
 {{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ContentSizingMode2}} 
 
 ````C#
+this.radCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentHeight;
 
-            this.radCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentHeight;
 ````
 ````VB.NET
+Me.RadCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentHeight
 
-        Me.RadCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentHeight
-
-        '
 ````
 
 {{endregion}} 
@@ -153,14 +139,12 @@ __ContentSizingMode__ -  Indicates whether the controls container will resize to
 {{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ContentSizingMode3}} 
 
 ````C#
+this.radCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentWidth | CollapsiblePanelContentSizingMode.FitToContentHeight;
 
-            this.radCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentWidth | CollapsiblePanelContentSizingMode.FitToContentHeight;
 ````
 ````VB.NET
+Me.RadCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentWidth Or CollapsiblePanelContentSizingMode.FitToContentHeight
 
-        Me.RadCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentWidth Or CollapsiblePanelContentSizingMode.FitToContentHeight
-
-        '
 ````
 
 {{endregion}} 

@@ -26,13 +26,15 @@ __Example 1__ demonstrates how you can create a Clipping element and assign a __
 {{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsClipping.vb region=radpdfprocessing-concepts-clipping_0}} 
 
 ````C#
-            Clipping clipping = new Clipping();
-            clipping.Clip = new RectangleGeometry(new Rect(5, 5, 50, 50));
+Clipping clipping = new Clipping();
+clipping.Clip = new RectangleGeometry(new Rect(5, 5, 50, 50));
+
 ````
 ````VB.NET
-        Dim clipping As Telerik.Windows.Documents.Fixed.Model.Clipping = New Telerik.Windows.Documents.Fixed.Model.Clipping()
-        clipping.Clip = New RectangleGeometry(New Rect(5, 5, 50, 50))
-        '
+Dim clipping As Telerik.Windows.Documents.Fixed.Model.Clipping = New Telerik.Windows.Documents.Fixed.Model.Clipping()
+clipping.Clip = New RectangleGeometry(New Rect(5, 5, 50, 50))
+'
+
 ````
 
 {{endregion}}
@@ -49,13 +51,15 @@ __Example 2__ demonstrates how to clip an image using the Clipping created in __
 {{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsClipping.vb region=radpdfprocessing-concepts-clipping_1}} 
 
 ````C#
-            Telerik.Windows.Documents.Fixed.Model.Objects.Image image = container.Content.AddImage(imageSource);
-            image.Clipping = clipping;
+Telerik.Windows.Documents.Fixed.Model.Objects.Image image = container.Content.AddImage(imageSource);
+image.Clipping = clipping;
+
 ````
 ````VB.NET
-        Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage(imageSource)
-        image.Clipping = clipping
-        '
+Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage(imageSource)
+image.Clipping = clipping
+'
+
 ````
 
 {{endregion}} 

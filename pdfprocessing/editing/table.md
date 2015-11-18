@@ -36,31 +36,29 @@ __Example 1__ shows how to generate a simple table with two rows and three colum
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_0}} 
 
 ````C#
-            Table table = new Table();
+Table table = new Table();
          
-            TableRow firstRow = table.Rows.AddTableRow();
-            firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell11");
-            firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell12");
-            firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell13");
+TableRow firstRow = table.Rows.AddTableRow();
+firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell11");
+firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell12");
+firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell13");
+TableRow secondRow = table.Rows.AddTableRow();
+secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell21");
+secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell22");
+secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell23");
 
-            TableRow secondRow = table.Rows.AddTableRow();
-            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell21");
-            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell22");
-            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell23");
 ````
 ````VB.NET
-            Dim table As New Table()
+Dim table As New Table()
+Dim firstRow As TableRow = table.Rows.AddTableRow()
+firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell11")
+firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell12")
+firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell13")
+Dim secondRow As TableRow = table.Rows.AddTableRow()
+secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell21")
+secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell22")
+secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell23")
 
-            Dim firstRow As TableRow = table.Rows.AddTableRow()
-            firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell11")
-            firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell12")
-            firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell13")
-
-            Dim secondRow As TableRow = table.Rows.AddTableRow()
-            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell21")
-            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell22")
-            secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("cell23")
-            '
 ````
 
 {{endregion}}
@@ -95,39 +93,36 @@ __Еxample 2__ shows how to use the __DefaultCellProperties__ of a table
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_1}} 
 
 ````C#
-            Table table = new Table();
-            Border redBorder = new Border(2, new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0));
-            table.DefaultCellProperties.Borders = new Telerik.Windows.Documents.Fixed.Model.Editing.Tables.TableCellBorders(redBorder);
-            table.DefaultCellProperties.Padding = new System.Windows.Thickness(20, 10, 20, 10);
-            table.DefaultCellProperties.Background = new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 255, 0);
+Table table = new Table();
+Border redBorder = new Border(2, new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0));
+table.DefaultCellProperties.Borders = new Telerik.Windows.Documents.Fixed.Model.Editing.Tables.TableCellBorders(redBorder);
+table.DefaultCellProperties.Padding = new System.Windows.Thickness(20, 10, 20, 10);
+table.DefaultCellProperties.Background = new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 255, 0);
+TableRow firstRow = table.Rows.AddTableRow();
+firstRow.Cells.AddTableCell();
+firstRow.Cells.AddTableCell();
+firstRow.Cells.AddTableCell();
+TableRow secondRow = table.Rows.AddTableRow();
+secondRow.Cells.AddTableCell();
+secondRow.Cells.AddTableCell();
+secondRow.Cells.AddTableCell();
 
-            TableRow firstRow = table.Rows.AddTableRow();
-            firstRow.Cells.AddTableCell();
-            firstRow.Cells.AddTableCell();
-            firstRow.Cells.AddTableCell();
-
-            TableRow secondRow = table.Rows.AddTableRow();
-            secondRow.Cells.AddTableCell();
-            secondRow.Cells.AddTableCell();
-            secondRow.Cells.AddTableCell();
 ````
 ````VB.NET
-            Dim table As New Table()
-            Dim redBorder As New Border(2, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0))
-            table.DefaultCellProperties.Borders = New Telerik.Windows.Documents.Fixed.Model.Editing.Tables.TableCellBorders(redBorder)
-            table.DefaultCellProperties.Padding = New System.Windows.Thickness(20, 10, 20, 10)
-            table.DefaultCellProperties.Background = New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 255, 0)
+Dim table As New Table()
+Dim redBorder As New Border(2, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0))
+table.DefaultCellProperties.Borders = New Telerik.Windows.Documents.Fixed.Model.Editing.Tables.TableCellBorders(redBorder)
+table.DefaultCellProperties.Padding = New System.Windows.Thickness(20, 10, 20, 10)
+table.DefaultCellProperties.Background = New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 255, 0)
+Dim firstRow As TableRow = table.Rows.AddTableRow()
+firstRow.Cells.AddTableCell()
+firstRow.Cells.AddTableCell()
+firstRow.Cells.AddTableCell()
+Dim secondRow As TableRow = table.Rows.AddTableRow()
+secondRow.Cells.AddTableCell()
+secondRow.Cells.AddTableCell()
+secondRow.Cells.AddTableCell()
 
-            Dim firstRow As TableRow = table.Rows.AddTableRow()
-            firstRow.Cells.AddTableCell()
-            firstRow.Cells.AddTableCell()
-            firstRow.Cells.AddTableCell()
-
-            Dim secondRow As TableRow = table.Rows.AddTableRow()
-            secondRow.Cells.AddTableCell()
-            secondRow.Cells.AddTableCell()
-            secondRow.Cells.AddTableCell()
-            '
 ````
 
 {{endregion}}
@@ -162,17 +157,18 @@ The next example aims to demonstrate how border calculations occur with differen
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_2}} 
 
 ````C#
-            Table table = new Table();
-            table.DefaultCellProperties.Padding = new System.Windows.Thickness(10, 6, 10, 6);
-            Border redBorder = new Border(10, new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0));
-            table.Borders = new TableBorders(redBorder);
+Table table = new Table();
+table.DefaultCellProperties.Padding = new System.Windows.Thickness(10, 6, 10, 6);
+Border redBorder = new Border(10, new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0));
+table.Borders = new TableBorders(redBorder);
+
 ````
 ````VB.NET
-            Dim table As New Table()
-            table.DefaultCellProperties.Padding = New System.Windows.Thickness(10, 6, 10, 6)
-            Dim redBorder As New Border(10, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0))
-            table.Borders = New TableBorders(redBorder)
-            '
+Dim table As New Table()
+table.DefaultCellProperties.Padding = New System.Windows.Thickness(10, 6, 10, 6)
+Dim redBorder As New Border(10, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(255, 0, 0))
+table.Borders = New TableBorders(redBorder)
+
 ````
 
 {{endregion}}
@@ -185,31 +181,28 @@ __Example 4__ adds a single row with two cells to the table from __Example 3__. 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_3}} 
 
 ````C#
-            TableRow tableRow = table.Rows.AddTableRow();
+TableRow tableRow = table.Rows.AddTableRow();
+TableCell firstCell = tableRow.Cells.AddTableCell();
+Border greenBorder = new Border(5, new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 255, 0));
+firstCell.Borders = new TableCellBorders(greenBorder, greenBorder, greenBorder, greenBorder);
+firstCell.Blocks.AddBlock().InsertText("green bordered cell");
+TableCell secondCell = tableRow.Cells.AddTableCell();
+Border blueBorder = new Border(3, new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 0, 255));
+secondCell.Borders = new TableCellBorders(blueBorder, blueBorder, blueBorder, blueBorder);
+secondCell.Blocks.AddBlock().InsertText("blue bordered cell");
 
-            TableCell firstCell = tableRow.Cells.AddTableCell();
-            Border greenBorder = new Border(5, new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 255, 0));
-            firstCell.Borders = new TableCellBorders(greenBorder, greenBorder, greenBorder, greenBorder);
-            firstCell.Blocks.AddBlock().InsertText("green bordered cell");
-
-            TableCell secondCell = tableRow.Cells.AddTableCell();
-            Border blueBorder = new Border(3, new Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 0, 255));
-            secondCell.Borders = new TableCellBorders(blueBorder, blueBorder, blueBorder, blueBorder);
-            secondCell.Blocks.AddBlock().InsertText("blue bordered cell");
 ````
 ````VB.NET
-            Dim tableRow As TableRow = table.Rows.AddTableRow()
+Dim tableRow As TableRow = table.Rows.AddTableRow()
+Dim firstCell As TableCell = tableRow.Cells.AddTableCell()
+Dim greenBorder As New Border(5, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 255, 0))
+firstCell.Borders = New TableCellBorders(greenBorder, greenBorder, greenBorder, greenBorder)
+firstCell.Blocks.AddBlock().InsertText("green bordered cell")
+Dim secondCell As TableCell = tableRow.Cells.AddTableCell()
+Dim blueBorder As New Border(3, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 0, 255))
+secondCell.Borders = New TableCellBorders(blueBorder, blueBorder, blueBorder, blueBorder)
+secondCell.Blocks.AddBlock().InsertText("blue bordered cell")
 
-            Dim firstCell As TableCell = tableRow.Cells.AddTableCell()
-            Dim greenBorder As New Border(5, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 255, 0))
-            firstCell.Borders = New TableCellBorders(greenBorder, greenBorder, greenBorder, greenBorder)
-            firstCell.Blocks.AddBlock().InsertText("green bordered cell")
-
-            Dim secondCell As TableCell = tableRow.Cells.AddTableCell()
-            Dim blueBorder As New Border(3, New Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor(0, 0, 255))
-            secondCell.Borders = New TableCellBorders(blueBorder, blueBorder, blueBorder, blueBorder)
-            secondCell.Blocks.AddBlock().InsertText("blue bordered cell")
-            '
 ````
 
 {{endregion}}
@@ -222,11 +215,12 @@ __Figure 3__ shows the table from Example 3 and 4 with BorderCollapse property s
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_4}} 
 
 ````C#
-            table.BorderCollapse = BorderCollapse.Collapse;
+table.BorderCollapse = BorderCollapse.Collapse;
+
 ````
 ````VB.NET
-            table.BorderCollapse = BorderCollapse.Collapse
-            '
+table.BorderCollapse = BorderCollapse.Collapse
+
 ````
 
 {{endregion}} 
@@ -245,11 +239,12 @@ __Figure 4__ shows the same table with BorderCollapse property set to Separate -
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_5}} 
 
 ````C#
-            table.BorderCollapse = BorderCollapse.Separate;
+table.BorderCollapse = BorderCollapse.Separate;
+
 ````
 ````VB.NET
-            table.BorderCollapse = BorderCollapse.Separate
-            '
+table.BorderCollapse = BorderCollapse.Separate
+
 ````
 
 {{endregion}} 
@@ -276,33 +271,28 @@ __Example 7__ generates a simple table with two cells.
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_6}} 
 
 ````C#
-            Table table = new Table();
+Table table = new Table();
+Border border = new Border();
+table.Borders = new TableBorders(border);
+table.DefaultCellProperties.Borders = new TableCellBorders(border, border, border, border);
+table.BorderSpacing = 5;
+table.BorderCollapse = BorderCollapse.Separate;
+TableRow row = table.Rows.AddTableRow();
+row.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell");
+row.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell");
 
-            Border border = new Border();
-            table.Borders = new TableBorders(border);
-            table.DefaultCellProperties.Borders = new TableCellBorders(border, border, border, border);
-
-            table.BorderSpacing = 5;
-            table.BorderCollapse = BorderCollapse.Separate;
-
-            TableRow row = table.Rows.AddTableRow();
-            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell");
-            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell");
 ````
 ````VB.NET
-            Dim table As New Table()
+Dim table As New Table()
+Dim border As New Border()
+table.Borders = New TableBorders(border)
+table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
+table.BorderSpacing = 5
+table.BorderCollapse = BorderCollapse.Separate
+Dim row As TableRow = table.Rows.AddTableRow()
+row.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
+row.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
 
-            Dim border As New Border()
-            table.Borders = New TableBorders(border)
-            table.DefaultCellProperties.Borders = New TableCellBorders(border, border, border, border)
-
-            table.BorderSpacing = 5
-            table.BorderCollapse = BorderCollapse.Separate
-
-            Dim row As TableRow = table.Rows.AddTableRow()
-            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell")
-            row.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell")
-            '
 ````
 
 {{endregion}}
@@ -315,15 +305,16 @@ __Example 8__ inserts the table from __Example 7__ in a RadFixedDocumentEditor a
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_7}} 
 
 ````C#
-            RadFixedDocumentEditor editor = new RadFixedDocumentEditor(document);         
-            table.LayoutType = Telerik.Windows.Documents.Fixed.Model.Editing.Flow.TableLayoutType.AutoFit;
-            editor.InsertTable(table);
+RadFixedDocumentEditor editor = new RadFixedDocumentEditor(document);         
+table.LayoutType = Telerik.Windows.Documents.Fixed.Model.Editing.Flow.TableLayoutType.AutoFit;
+editor.InsertTable(table);
+
 ````
 ````VB.NET
-        Dim editor As New RadFixedDocumentEditor(document)
-        table.LayoutType = Flow.TableLayoutType.AutoFit
-        editor.InsertTable(table)
-            '
+Dim editor As New RadFixedDocumentEditor(document)
+table.LayoutType = Flow.TableLayoutType.AutoFit
+editor.InsertTable(table)
+
 ````
 
 {{endregion}}
@@ -341,14 +332,16 @@ Specifying FixedWidth layout option produces different results.
 {{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_8}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_8}} 
 
-````C#     
-            table.LayoutType = Telerik.Windows.Documents.Fixed.Model.Editing.Flow.TableLayoutType.FixedWidth;
-            editor.InsertTable(table);
+````C#
+     
+table.LayoutType = Telerik.Windows.Documents.Fixed.Model.Editing.Flow.TableLayoutType.FixedWidth;
+editor.InsertTable(table);
+
 ````
 ````VB.NET
-        table.LayoutType = Flow.TableLayoutType.FixedWidth
-        editor.InsertTable(table)
-            '
+table.LayoutType = Flow.TableLayoutType.FixedWidth
+editor.InsertTable(table)
+
 ````
 
 {{endregion}}
@@ -372,27 +365,24 @@ __Example 10__ shows how to draw a rotated table with the help of FixedContentEd
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_9}} 
 
 ````C#
-            Table table = GenerateSampleTable();
+Table table = GenerateSampleTable();
+Telerik.Windows.Documents.Fixed.Model.RadFixedDocument document = new Telerik.Windows.Documents.Fixed.Model.RadFixedDocument();
+Telerik.Windows.Documents.Fixed.Model.RadFixedPage page = document.Pages.AddPage();
+FixedContentEditor editor = new FixedContentEditor(page, new Telerik.Windows.Documents.Fixed.Model.Data.SimplePosition());
+editor.Position.Translate(10, 100);
+editor.Position.Rotate(-45);
+editor.DrawTable(table);
 
-            Telerik.Windows.Documents.Fixed.Model.RadFixedDocument document = new Telerik.Windows.Documents.Fixed.Model.RadFixedDocument();
-            Telerik.Windows.Documents.Fixed.Model.RadFixedPage page = document.Pages.AddPage();
-            FixedContentEditor editor = new FixedContentEditor(page, new Telerik.Windows.Documents.Fixed.Model.Data.SimplePosition());
-
-            editor.Position.Translate(10, 100);
-            editor.Position.Rotate(-45);
-            editor.DrawTable(table);
 ````
 ````VB.NET
-            Dim table As Table = GenerateSampleTable()
+Dim table As Table = GenerateSampleTable()
+Dim document As New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument()
+Dim page As Telerik.Windows.Documents.Fixed.Model.RadFixedPage = document.Pages.AddPage()
+Dim editor As New FixedContentEditor(page, New Telerik.Windows.Documents.Fixed.Model.Data.SimplePosition())
+editor.Position.Translate(10, 100)
+editor.Position.Rotate(-45)
+editor.DrawTable(table)
 
-            Dim document As New Telerik.Windows.Documents.Fixed.Model.RadFixedDocument()
-            Dim page As Telerik.Windows.Documents.Fixed.Model.RadFixedPage = document.Pages.AddPage()
-            Dim editor As New FixedContentEditor(page, New Telerik.Windows.Documents.Fixed.Model.Data.SimplePosition())
-
-            editor.Position.Translate(10, 100)
-            editor.Position.Rotate(-45)
-            editor.DrawTable(table)
-            '
 ````
 
 {{endregion}}

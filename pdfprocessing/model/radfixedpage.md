@@ -40,15 +40,16 @@ __Example 1__ demonstrates how to create a new __RadFixedPage__ instance and add
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedPage.vb region=radpdfprocessing-model-radfixedpage_0}} 
 
 ````C#
-            RadFixedDocument document = new RadFixedDocument();
-            RadFixedPage page = new RadFixedPage();
-            document.Pages.Add(page);
+RadFixedDocument document = new RadFixedDocument();
+RadFixedPage page = new RadFixedPage();
+document.Pages.Add(page);
+
 ````
 ````VB.NET
-        Dim document As RadFixedDocument = New RadFixedDocument()
-        Dim page As RadFixedPage = New RadFixedPage()
-        document.Pages.Add(page)
-        '
+Dim document As RadFixedDocument = New RadFixedDocument()
+Dim page As RadFixedPage = New RadFixedPage()
+document.Pages.Add(page)
+
 ````
 
 {{endregion}}
@@ -69,13 +70,14 @@ __Example 2__ shows how to add a previously created ContentElement in a __RadFix
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedPage.vb region=radpdfprocessing-model-radfixedpage_1}} 
 
 ````C#
-            RadFixedPage page = new RadFixedPage();
-            page.Content.Add(contentElement);
+RadFixedPage page = new RadFixedPage();
+page.Content.Add(contentElement);
+
 ````
 ````VB.NET
-        Dim page As RadFixedPage = New RadFixedPage()
-        page.Content.Add(contentElement)
-        '
+Dim page As RadFixedPage = New RadFixedPage()
+page.Content.Add(contentElement)
+
 ````
 
 {{endregion}} 
@@ -94,13 +96,14 @@ __Example 3__ shows how to add a previously created annotation in a __RadFixedPa
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedPage.vb region=radpdfprocessing-model-radfixedpage_2}} 
 
 ````C#
-            RadFixedPage page = new RadFixedPage();
-            page.Annotations.Add(annotation);
+RadFixedPage page = new RadFixedPage();
+page.Annotations.Add(annotation);
+
 ````
 ````VB.NET
-        Dim page As RadFixedPage = New RadFixedPage()
-        page.Annotations.Add(annotation)
-        '
+Dim page As RadFixedPage = New RadFixedPage()
+page.Annotations.Add(annotation)
+
 ````
 
 {{endregion}} 
@@ -119,15 +122,16 @@ __Example 4__ shows how you can change the __Rotation__ and __Size__ properties 
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedPage.vb region=radpdfprocessing-model-radfixedpage_3}} 
 
 ````C#
-            RadFixedPage page = new RadFixedPage();
-            page.Rotation = Rotation.Rotate270;
-            page.Size = new System.Windows.Size(792, 1128);
+RadFixedPage page = new RadFixedPage();
+page.Rotation = Rotation.Rotate270;
+page.Size = new System.Windows.Size(792, 1128);
+
 ````
 ````VB.NET
-        Dim page As RadFixedPage = New RadFixedPage()
-        page.Rotation = Rotation.Rotate270
-        page.Size = New System.Windows.Size(792, 1128)
-        '
+Dim page As RadFixedPage = New RadFixedPage()
+page.Rotation = Rotation.Rotate270
+page.Size = New System.Windows.Size(792, 1128)
+
 ````
 
 {{endregion}} 

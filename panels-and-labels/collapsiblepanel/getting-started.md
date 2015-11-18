@@ -38,26 +38,24 @@ And this is how it will look if the panel is expanded <br>![panels-and-labels-co
 {{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ExpandCollapseHandlers}} 
 
 ````C#
+void radCollapsiblePanel1_Collapsed(object sender, EventArgs e)
+{
+    this.radCollapsiblePanel1.HeaderText = "Show Grid";
+}
+void radCollapsiblePanel1_Expanded(object sender, EventArgs e)
+{
+    this.radCollapsiblePanel1.HeaderText = "Hide Grid";
+}
 
-        void radCollapsiblePanel1_Collapsed(object sender, EventArgs e)
-        {
-            this.radCollapsiblePanel1.HeaderText = "Show Grid";
-        }
-
-        void radCollapsiblePanel1_Expanded(object sender, EventArgs e)
-        {
-            this.radCollapsiblePanel1.HeaderText = "Hide Grid";
-        }
 ````
 ````VB.NET
-    Private Sub radCollapsiblePanel1_Collapsed(sender As Object, e As EventArgs)
-        Me.RadCollapsiblePanel1.HeaderText = "Show Grid"
-    End Sub
+Private Sub radCollapsiblePanel1_Collapsed(sender As Object, e As EventArgs)
+    Me.RadCollapsiblePanel1.HeaderText = "Show Grid"
+End Sub
+Private Sub radCollapsiblePanel1_Expanded(sender As Object, e As EventArgs)
+    Me.RadCollapsiblePanel1.HeaderText = "Hide Grid"
+End Sub
 
-    Private Sub radCollapsiblePanel1_Expanded(sender As Object, e As EventArgs)
-        Me.RadCollapsiblePanel1.HeaderText = "Hide Grid"
-    End Sub
-    '
 ````
 
 {{endregion}} 

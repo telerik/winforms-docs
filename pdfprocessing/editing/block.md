@@ -26,13 +26,14 @@ Inserting [TextFragments]({%slug winforms/pdfprocessing/model/textfragment%}) is
 {{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_0}} 
 
 ````C#
-            Block block = new Block();
-            block.InsertText("Text");
+Block block = new Block();
+block.InsertText("Text");
+
 ````
 ````VB.NET
-            Dim block As New Block()
-            block.InsertText("Text")
-            '
+Dim block As New Block()
+block.InsertText("Text")
+
 ````
 
 {{endregion}} 
@@ -45,11 +46,12 @@ __Example 2__ demonstrates how to insert text with a specific font family.
 {{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_1}} 
 
 ````C#
-            block.InsertText(new System.Windows.Media.FontFamily("Arial"), "Text");
+block.InsertText(new System.Windows.Media.FontFamily("Arial"), "Text");
+
 ````
 ````VB.NET
-            block.InsertText(New System.Windows.Media.FontFamily("Arial"), "Text")
-            '
+block.InsertText(New System.Windows.Media.FontFamily("Arial"), "Text")
+
 ````
 
 {{endregion}}
@@ -64,11 +66,12 @@ Inserting a line break results in the next element starting on a new line. The a
 {{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_3}} 
 
 ````C#
-            block.InsertLineBreak();
+block.InsertLineBreak();
+
 ````
 ````VB.NET
-            block.InsertLineBreak()
-            '
+block.InsertLineBreak()
+
 ````
 
 {{endregion}}
@@ -165,13 +168,14 @@ __Example 4__ demonstrates how to draw a block.
 {{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_4}} 
 
 ````C#
-            System.Windows.Rect boundingRect = new System.Windows.Rect(new System.Windows.Point(0, 0), new System.Windows.Size(200, 300));
-            block.Draw(fixedContentEditor, boundingRect);
+System.Windows.Rect boundingRect = new System.Windows.Rect(new System.Windows.Point(0, 0), new System.Windows.Size(200, 300));
+block.Draw(fixedContentEditor, boundingRect);
+
 ````
 ````VB.NET
-            Dim boundingRect As New System.Windows.Rect(New System.Windows.Point(0, 0), New System.Windows.Size(200, 300))
-            block.Draw(fixedContentEditor, boundingRect)
-            '
+Dim boundingRect As New System.Windows.Rect(New System.Windows.Point(0, 0), New System.Windows.Size(200, 300))
+block.Draw(fixedContentEditor, boundingRect)
+
 ````
 
 {{endregion}}
@@ -194,15 +198,16 @@ __Example 5__ creates a Block with text "Hello RadPdfProcessing!" and measures i
 {{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_5}} 
 
 ````C#
-            Block block = new Block();
-            block.InsertText("Hello RadPdfProcessing!");
-            System.Windows.Size size = block.Measure();
+Block block = new Block();
+block.InsertText("Hello RadPdfProcessing!");
+System.Windows.Size size = block.Measure();
+
 ````
 ````VB.NET
-            Dim block As New Block()
-            block.InsertText("Hello RadPdfProcessing!")
-            Dim size As System.Windows.Size = block.Measure()
-            '
+Dim block As New Block()
+block.InsertText("Hello RadPdfProcessing!")
+Dim size As System.Windows.Size = block.Measure()
+
 ````
 
 {{endregion}}
@@ -219,15 +224,16 @@ The code in __Example 6__ splits a block in two. The first will contains text "H
 {{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_5}} 
 
 ````C#
-            Block block = new Block();
-            block.InsertText("Hello RadPdfProcessing!");
-            System.Windows.Size size = block.Measure();
+Block block = new Block();
+block.InsertText("Hello RadPdfProcessing!");
+System.Windows.Size size = block.Measure();
+
 ````
 ````VB.NET
-            Dim block As New Block()
-            block.InsertText("Hello RadPdfProcessing!")
-            Dim size As System.Windows.Size = block.Measure()
-            '
+Dim block As New Block()
+block.InsertText("Hello RadPdfProcessing!")
+Dim size As System.Windows.Size = block.Measure()
+
 ````
 
 {{endregion}}

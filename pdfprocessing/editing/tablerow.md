@@ -28,13 +28,14 @@ The code snippet in __Example 1__ shows how to create a table and add a single r
 {{source=..\SamplesVB\PdfProcessing\Editing\TableRow1.vb region=radpdfprocessing-editing-tablerow_0}} 
 
 ````C#
-            Table table = new Table();
-            TableRow tableRow = table.Rows.AddTableRow();
+Table table = new Table();
+TableRow tableRow = table.Rows.AddTableRow();
+
 ````
 ````VB.NET
-        Dim table As New Table()
-        Dim tableRow As TableRow = table.Rows.AddTableRow()
-        '
+Dim table As New Table()
+Dim tableRow As TableRow = table.Rows.AddTableRow()
+
 ````
 
 {{endregion}} 
@@ -51,15 +52,16 @@ __Example 2__ shows how to add two cells in a row and get the cells count.
 {{source=..\SamplesVB\PdfProcessing\Editing\TableRow1.vb region=radpdfprocessing-editing-tablerow_1}} 
 
 ````C#
-            TableCell firstCell = tableRow.Cells.AddTableCell();
-            TableCell secondCell = tableRow.Cells.AddTableCell();
-            int cellsInRowCount = tableRow.Cells.Count;
+TableCell firstCell = tableRow.Cells.AddTableCell();
+TableCell secondCell = tableRow.Cells.AddTableCell();
+int cellsInRowCount = tableRow.Cells.Count;
+
 ````
 ````VB.NET
-        Dim firstCell As TableCell = tableRow.Cells.AddTableCell()
-        Dim secondCell As TableCell = tableRow.Cells.AddTableCell()
-        Dim cellsInRowCount As Integer = tableRow.Cells.Count
-        '
+Dim firstCell As TableCell = tableRow.Cells.AddTableCell()
+Dim secondCell As TableCell = tableRow.Cells.AddTableCell()
+Dim cellsInRowCount As Integer = tableRow.Cells.Count
+
 ````
 
 {{endregion}}

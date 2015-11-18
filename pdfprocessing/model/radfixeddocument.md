@@ -40,11 +40,13 @@ __Example 1__ shows how you can create a new __RadFixedDocument__ instance.
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_0}} 
 
 ````C#
-            RadFixedDocument document = new RadFixedDocument();
+            
+RadFixedDocument document = new RadFixedDocument();
+
 ````
 ````VB.NET
-        Dim document As RadFixedDocument = New RadFixedDocument()
-        '
+Dim document As RadFixedDocument = New RadFixedDocument()
+
 ````
 
 {{endregion}}
@@ -61,11 +63,13 @@ __Example 2__ adds a page to the document created in __Example 1__.
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_1}} 
 
 ````C#
-            RadFixedPage page = document.Pages.AddPage();
+        
+RadFixedPage page = document.Pages.AddPage();
+
 ````
 ````VB.NET
-        Dim page As RadFixedPage = document.Pages.AddPage()
-        '
+Dim page As RadFixedPage = document.Pages.AddPage()
+
 ````
 
 {{endregion}} 
@@ -80,13 +84,14 @@ __Example 3__ creates a page and adds it to the document created in __Example 1_
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=radpdfprocessing-model-radfixeddocument_2}} 
 
 ````C#
-            RadFixedPage page = new RadFixedPage();
-            document.Pages.Add(page);
+RadFixedPage page = new RadFixedPage();
+document.Pages.Add(page);
+
 ````
 ````VB.NET
-        Dim page As RadFixedPage = New RadFixedPage()
-        document.Pages.Add(page)
-        '
+Dim page As RadFixedPage = New RadFixedPage()
+document.Pages.Add(page)
+
 ````
 
 {{endregion}}
@@ -107,15 +112,16 @@ __RadFixedDocument__ exposes a __DocumentInfo__ property of type __RadFixedDocum
 {{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelRadFixedDocument.vb region=DocInfo}} 
 
 ````C#
-            document.DocumentInfo.Author = "Jane Doe";
-            document.DocumentInfo.Title = "RadFixedDocument";
-            document.DocumentInfo.Description = "This document is intended to explain the RadFixedDocument class from the RadPdfProcessing library";
+document.DocumentInfo.Author = "Jane Doe";
+document.DocumentInfo.Title = "RadFixedDocument";
+document.DocumentInfo.Description = "This document is intended to explain the RadFixedDocument class from the RadPdfProcessing library";
+
 ````
 ````VB.NET
-        document.DocumentInfo.Author = "Jane Doe"
-        document.DocumentInfo.Title = "RadFixedDocument"
-        document.DocumentInfo.Description = "This document is intended to explain the RadFixedDocument class from the RadPdfProcessing library"
-        '
+document.DocumentInfo.Author = "Jane Doe"
+document.DocumentInfo.Title = "RadFixedDocument"
+document.DocumentInfo.Description = "This document is intended to explain the RadFixedDocument class from the RadPdfProcessing library"
+
 ````
 
 {{endregion}}
