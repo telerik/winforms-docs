@@ -5,12 +5,11 @@ description: Localization
 slug: winforms/editors/time-picker/localization
 tags: localization
 published: True
-position: 3
+position: 4
 ---
 
 # Localization
-
-
+ 
 
 ## 
 
@@ -20,13 +19,11 @@ To localize RadTimePicker to display control text and messages in a specific lan
 
 * Start by creating a descendant of the __RadTimePickerLocalizationProvider__class. 
 
-* Override the __GetLocalizedString(string id)__method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__method in the __default__clause of the __switch__statement in the example. 
+* Override the __GetLocalizedString(string id)__ method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the __default__ clause of the __switch__ statement in the example. 
 
-Below is a sample implementation of an English localization provider:#_[C#] Localizing RadTimePicker Strings_
+Below is a sample implementation of an English localization provider:
 
-	
-
-
+#### Localizing RadTimePicker Strings 
 
 {{source=..\SamplesCS\Editors\TimePicker1.cs region=LocalizationProvider}} 
 {{source=..\SamplesVB\Editors\TimePicker1.vb region=LocalizationProvider}} 
@@ -67,15 +64,11 @@ End Class
 ````
 
 {{endregion}} 
+ 
 
+To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
-
-
-To apply the custom localization provider, instantiate and assign it to the current localization provider: #_[C#] Assigning the Current Localization Provider_
-
-	
-
-
+####Assigning the Current Localization Provider 
 
 {{source=..\SamplesCS\Editors\TimePicker1.cs region=settingTheLocalizationProvider}} 
 {{source=..\SamplesVB\Editors\TimePicker1.vb region=settingTheLocalizationProvider}} 
@@ -90,8 +83,6 @@ RadTimePickerLocalizationProvider.CurrentProvider = New MyTimePickerLocalization
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 The code provided above illustrates the approach to be used to localize the __RadTimePicker__ and is not intended as a full translation.

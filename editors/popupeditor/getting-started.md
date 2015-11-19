@@ -14,9 +14,7 @@ position: 0
 
 ## 
 
-This article shows how you can start using __RadPopupEditor__. 
-        Go ahead and add __RadPoupEditor__ and __RadPoupContainer__ to a form. 
-        The result should look like in Figure 1.
+This article shows how you can start using __RadPopupEditor__. Go ahead and add __RadPoupEditor__ and __RadPoupContainer__ to a form. The result should look like in Figure 1.
       
 >caption Figure 1: RadPopupEditor and RadPoupCintainer at design time.
 
@@ -29,11 +27,8 @@ Add three text boxes, four labels and two buttons to the __RadPopupContainer__. 
 ![eidtors-popupeditor-getting-started 002](images/eidtors-popupeditor-getting-started002.png)
 
 Add __Click__ event handlers for the both buttons and then use the following code in them:
-        #_[C#] Buttons event handlers_
 
-	
-
-
+#### Buttons event handlers 
 
 {{source=..\SamplesCS\Editors\PopupEditor\PopupEditorCode.cs region=EventHandlers}} 
 {{source=..\SamplesVB\Editors\PopupEditor\PopupEditorCode.vb region=EventHandlers}} 

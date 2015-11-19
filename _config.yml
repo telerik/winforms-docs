@@ -275,6 +275,30 @@ navigation:
     forms-and-dialogs:
         title: Forms and Dialogs
         position: 21
+    forms-and-dialogs/form:
+        title: Form
+        position: 1
+    forms-and-dialogs/ribbonform:
+        title: RibbonForm
+        position: 2
+    forms-and-dialogs/shapedform:
+        title: ShapedForm
+        position: 3
+    forms-and-dialogs/colordialog:
+        title: ColorDialog
+        position: 4
+    forms-and-dialogs/messagebox:
+        title:  MessageBox
+        position: 5
+    forms-and-dialogs/statusstrip:
+        title:  StatisStrip
+        position: 6
+    forms-and-dialogs/templates:
+        title:  Templates
+        position: 7
+    forms-and-dialogs/radtitlebar:
+        title:  RadTitleBar
+        position: 8
     ganttview:
         title: GanttView
         position: 22

@@ -16,8 +16,7 @@ This article describes the most commonly used properties, events and methods.
 
 ## Properties
 
-* __AssociatedControl:__ this property should be used for assigning of the __RadPopupContainer__ that will be 
-              visible in the drop down.
+* __AssociatedControl:__ this property should be used for assigning of the __RadPopupContainer__ that will be visible in the drop down.
             
 
 * __DropDownMinSize:__ Gets or sets the popup minimum size.
@@ -80,14 +79,9 @@ This article describes the most commonly used properties, events and methods.
         Methods
       
 
-* __ClosePopup:__ This method can be used for closing the popup, it has two overrides. 
-              The first one does not take any parameters. The second is taking __RadPopupCloseReason__ as parameter. 
-              The specified reason will be passed as an argument to the closing events. The method can be used as follows:
-            #_[C#] Close Popup_
+* __ClosePopup:__ This method can be used for closing the popup, it has two overrides. The first one does not take any parameters. The second is taking __RadPopupCloseReason__ as parameter. The specified reason will be passed as an argument to the closing events. The method can be used as follows:
 
-	
-
-
+#### Close Popup 
 
 {{source=..\SamplesCS\Editors\PopupEditor\PopupEditorCode.cs region=close}} 
 {{source=..\SamplesVB\Editors\PopupEditor\PopupEditorCode.vb region=close}} 
@@ -102,15 +96,10 @@ radPopupEditor1.PopupEditorElement.ClosePopup(RadPopupCloseReason.CloseCalled)
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 * __ShowPopup:__ This method can be used for programmatically showing the popup.
-            #_[C#] Show Popup_
 
-	
-
+#### Show Popup 
 
 
 {{source=..\SamplesCS\Editors\PopupEditor\PopupEditorCode.cs region=show}} 
@@ -126,9 +115,7 @@ radPopupEditor1.PopupEditorElement.ShowPopup()
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 # See Also
 
