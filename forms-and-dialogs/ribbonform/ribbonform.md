@@ -1,11 +1,11 @@
 ---
-title: RibbonForm
+title: Overview
 page_title: RibbonForm | UI for WinForms Documentation
 description: RibbonForm
 slug: winforms/forms-and-dialogs/ribbonform
 tags: ribbonform
 published: True
-position: 2
+position: 0
 ---
 
 # RibbonForm

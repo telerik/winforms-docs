@@ -5,7 +5,7 @@ description: Localization
 slug: winforms/forms-and-dialogs/messagebox/localization
 tags: localization
 published: True
-position: 2
+position: 3
 ---
 
 # Localization
@@ -14,20 +14,11 @@ position: 2
 
 ## 
 
-RadMessageBox provides localization of its buttons text via
-RadMessageLocalizationProvider:
+RadMessageBox provides localization of its buttons text via RadMessageLocalizationProvider:
 
-1. Start by creating a descendant of the RadGridLocalizationSettings
-				    class. Then override the GetLocalizedString(string id) method, and, in its
-				    implementation, provide a translation for the label and user messages. If
-				    one is not provided, the default value will be returned - this is
-				    guaranteed by the call to the base GetLocalizedString method in the default
-				    clause of the switch statement. 
-          	#_[C#] Creating a custom localization provider_
+1\. Start by creating a descendant of the RadGridLocalizationSettings class. Then override the GetLocalizedString(string id) method, and, in its implementation, provide a translation for the label and user messages. If one is not provided, the default value will be returned - this is guaranteed by the call to the base GetLocalizedString method in the default clause of the switch statement. 
 
-	
-
-
+#### Creating a custom localization provider 
 
 {{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=LocalizationProvider}} 
 {{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=LocalizationProvider}} 
@@ -81,17 +72,10 @@ End Class
 ````
 
 {{endregion}} 
+ 
+2\. To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
-
-
-
-1.  
-          To apply the custom localization provider, instantiate and assign it to the current localization provider:
-      		#_[C#] Setting the custom localization provider to RadMessageBox_
-
-	
-
-
+#### Setting the custom localization provider to RadMessageBox 
 
 {{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=settingTheLocalizationProvider}} 
 {{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=settingTheLocalizationProvider}} 

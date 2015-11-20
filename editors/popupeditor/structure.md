@@ -5,7 +5,7 @@ description: Structure
 slug: winforms/editors/popupeditor/structure
 tags: structure
 published: True
-position: 1
+position: 2
 ---
 
 # Structure

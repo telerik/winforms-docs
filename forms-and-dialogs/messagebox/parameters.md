@@ -5,22 +5,17 @@ description: Parameters
 slug: winforms/forms-and-dialogs/messagebox/parameters
 tags: parameters
 published: True
-position: 1
+position: 2
 ---
 
 # Parameters
 
-
-
+ 
 ## SetThemeName method
 
-You can easily set the ThemeName of the RadMessageBox by calling the SetThemeName parameter,
-          passing the theme name string:
-        #_[C#] Setting a theme in RadMessageBox_
+You can easily set the ThemeName of the RadMessageBox by calling the SetThemeName parameter, passing the theme name string:
 
-	
-
-
+#### Setting a theme in RadMessageBox 
 
 {{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=SetThemeName}} 
 {{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=SetThemeName}} 
@@ -37,12 +32,9 @@ RadMessageBox.SetThemeName("Desert")
 {{endregion}} 
 
 
-
-
 ## Show method
 
-The Show method displays a RadMessageBox. It returns a DialogResult value and has a couple of overloads to suit to your needs.
-        For a list of all methods see the API Reference section. Show method could accept the following parameters:
+The Show method displays a RadMessageBox. It returns a DialogResult value and has a couple of overloads to suit to your needs. For a list of all methods see the API Reference section. Show method could accept the following parameters:
 
 * __Parent__ - An implementation of System.Windows.Forms.IWin32Window that will own the RadMessageBox.
             
@@ -68,8 +60,7 @@ The Show method displays a RadMessageBox. It returns a DialogResult value and ha
 
 * YesNoCancel
 
-* __Icon__ - One of the RadMessageIcon enumeration values that
-              specifies which icon to display in the message box or a custom Bitmap icon that will be displayed:
+* __Icon__ - One of the RadMessageIcon enumeration values that specifies which icon to display in the message box or a custom Bitmap icon that will be displayed:
             
 
 * RadMessageIcon.None
@@ -82,9 +73,7 @@ The Show method displays a RadMessageBox. It returns a DialogResult value and ha
 
 * RadMessageIcon.Error
 
-* __defaultBtn__ - One of the MessageBoxDefaultButton enumeration values
-              the specifies the default button for the message box:
-            
+* __defaultBtn__ - One of the MessageBoxDefaultButton enumeration values the specifies the default button for the message box:            
 
 * MessageBoxDefaultButton.Button1
 
@@ -103,14 +92,8 @@ The Show method displays a RadMessageBox. It returns a DialogResult value and ha
 
 ## Details Section
 
-As of Q2 2014 __RadMessageBox__ supports details section. This section can be shown by just specifying the details text in the 
-          Show method parameters:
-        #_[C#]_
-
-	
-
-
-
+As of Q2 2014 __RadMessageBox__ supports details section. This section can be shown by just specifying the details text in the  Show method parameters:
+  
 {{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=details}} 
 {{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=details}} 
 
@@ -120,40 +103,12 @@ RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore
 ````
 ````VB.NET
 RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore, "Details Text")
-'#End Region
-End Sub
-s
- LocalizationProvider
-lass MyRadMessageLocalizationProvider
-Inherits RadMessageLocalizationProvider
-Public Overloads Overrides Function GetLocalizedString(ByVal id As String) As String
-Select Case id
-    Case RadMessageStringID.AbortButton
-        Return "Abbruch"
-    Case RadMessageStringID.CancelButton
-        Return "Löschen"
-    Case RadMessageStringID.IgnoreButton
-        Return "Ignorieren"
-    Case RadMessageStringID.NoButton
-        Return "Nein"
-    Case RadMessageStringID.OKButton
-        Return "OK"
-    Case RadMessageStringID.RetryButton
-        Return "Wiederholung"
-    Case RadMessageStringID.YesButton
-        Return "Ja"
-    Case Else
-        Return MyBase.GetLocalizedString(id)
-End Select
-End Function
-s
 
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 The result looks like this:
-        ![forms-and-dialogs-messagebox-parameters 001](images/forms-and-dialogs-messagebox-parameters001.png)
+        
+![forms-and-dialogs-messagebox-parameters 001](images/forms-and-dialogs-messagebox-parameters001.png)

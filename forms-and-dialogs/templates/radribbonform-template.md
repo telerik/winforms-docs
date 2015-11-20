@@ -5,7 +5,7 @@ description: RadRibbonForm Template
 slug: winforms/forms-and-dialogs/templates/radribbonform-template
 tags: radribbonform,template
 published: True
-position: 0
+position: 1
 ---
 
 # RadRibbonForm Template
@@ -14,7 +14,6 @@ position: 0
 
 ## 
 
-RadRibbonForm comes pre-configured with a RadRibbonBar and a RadStatusStrip so that you don't have to
-		spend time setting up this first layer of the UI.
+RadRibbonForm comes pre-configured with a RadRibbonBar and a RadStatusStrip so that you don't have to spend time setting up this first layer of the UI.
 
 ![forms-and-dialogs-templates-radribbonform-overview 001](images/forms-and-dialogs-templates-radribbonform-overview001.png)

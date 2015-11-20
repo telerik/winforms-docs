@@ -5,7 +5,7 @@ description: Customize Elements
 slug: winforms/editors/popupeditor/customize-elements
 tags: customize,elements
 published: True
-position: 5
+position: 6
 ---
 
 # Customize Elements

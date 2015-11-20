@@ -5,7 +5,7 @@ description: Getting Started
 slug: winforms/forms-and-dialogs/shapedform/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
@@ -16,35 +16,30 @@ position: 0
 
 To add a __ShapedForm__ to your project: 
 
-1. Create a new Windows Application in Visual Studio.
+1\. Create a new Windows Application in Visual Studio.
 
-1. 
-          	Make sure your project includes a reference to __Telerik.WinControls__and __Telerik.WinControls.UI__ libraries.
+2\. Make sure your project includes a reference to __Telerik.WinControls__and __Telerik.WinControls.UI__ libraries.
 			
 
 >note You can add these references automatically by adding any RadControl to the form.
 >
 
 
-1. Right-click the default form and select __View Code__.
+3\. Right-click the default form and select __View Code__.
 
-1. __If you are working in C#:__Change the declaration of the form so that it derives from the __Telerik.WinControls.UI.ShapedForm__ class.
-      			#_[C#] Changing WinForms form to Telerik ShapedForm_
+4\. __If you are working in C#:__ Change the declaration of the form so that it derives from the __Telerik.WinControls.UI.ShapedForm__ class.
 
-	
+5\. __If you are working in Visual Basic:__
 
+6\. Click the __Show All Files__ button in Solution Explorer.
 
+7\. Expand the Form1.vb node in Solution Explorer. 
 
-1. __If you are working in Visual Basic:__
+8\. Open the Form1.Designer.vb file by double-clicking it.
 
-1. Click the __Show All Files__ button in Solution Explorer.
-
-1. Expand the Form1.vb node in Solution Explorer. 
-
-1. Open the Form1.Designer.vb file by double-clicking it.
-
-1. Change the declaration in the Form1.Designer.vb file so that it derives from the __Telerik.WinControls.UI.ShapedForm__ class: 
+9\. Change the declaration in the Form1.Designer.vb file so that it derives from the __Telerik.WinControls.UI.ShapedForm__ class: 
       			
+#### Changing WinForms form to Telerik ShapedForm 
 
 {{source=..\SamplesCS\Forms and Dialogs\ShapedForm1.Designer.cs region=shapedForm}} 
 {{source=..\SamplesVB\Forms and Dialogs\ShapedForm1.Designer.vb region=shapedForm}} 
@@ -62,9 +57,6 @@ Partial Class ShapedForm1
 
 {{endregion}} 
 
+10\. Return to the design view of the form. Visual Studio will repaint the form without a title bar, indicating that it is now being derived from the __ShapedForm__ class.
 
-
-
-1. Return to the design view of the form. Visual Studio will repaint the form without a title bar, indicating that it is now being derived from the __ShapedForm__ class.
-
-1. Press __F5__ to run the project.
+11\. Press __F5__ to run the project.

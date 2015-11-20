@@ -5,32 +5,24 @@ description: Getting Started
 slug: winforms/forms-and-dialogs/messagebox/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
-
-
-
+ 
 ## 
 
 The following tutorial will show you a simple usage of RadMessageBox
 
 
 
-1. Create a new Windows Application in Visual Studio
+1\. Create a new Windows Application in Visual Studio
 
-1. Drag and drop a RadButton on the form.
+2\. Drag and drop a RadButton on the form.
 
-1. Subscribe to the Click event of this RadButton.
+3\. Subscribe to the Click event of this RadButton.
 
-1. 
-          	Make sure that you import/use the following namespaces
-          	 #_[C#] Adding namespace_
-
-	
-
-
+4\. Make sure that you import/use the following namespaces 
 
 {{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=namespace}} 
 {{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=namespace}} 
@@ -45,19 +37,11 @@ Imports Telerik.WinControls
 ````
 
 {{endregion}} 
+ 
 
+5\. In the RadButton.Click event handler, first set the theme of the RadMessageBox and then call its static Show method of the RadMessageBox class, passing the appropriate parameters. Set the RadMessageBox.Show method to a DialogResult variable: 
 
-
-
-1. In the RadButton.Click event handler, first set the theme of the
-				    RadMessageBox and then call its static Show method of the RadMessageBox
-				    class, passing the appropriate parameters. Set the RadMessageBox.Show
-				    method to a DialogResult variable: 
-      		#_[C#] Setting a theme and showing RadMessageBox_
-
-	
-
-
+#### Setting a theme and showing RadMessageBox 
 
 {{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=workingWithRadMessageBox}} 
 {{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=workingWithRadMessageBox}} 
@@ -83,10 +67,8 @@ End Sub
 
 {{endregion}} 
 
-
-
-
-1. The result RadMessageBox is shown below:
-    ![forms-and-dialogs-messagebox-getting-started 001](images/forms-and-dialogs-messagebox-getting-started001.png)
+6\. The result RadMessageBox is shown below:
+    
+![forms-and-dialogs-messagebox-getting-started 001](images/forms-and-dialogs-messagebox-getting-started001.png)
 
 

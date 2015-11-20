@@ -5,7 +5,7 @@ description: Properties, Events and Methods
 slug: winforms/editors/popupeditor/properties,-events-and-methods
 tags: properties,,events,and,methods
 published: True
-position: 3
+position: 4
 ---
 
 # Properties, Events and Methods

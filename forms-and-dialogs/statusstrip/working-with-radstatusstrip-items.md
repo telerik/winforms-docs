@@ -5,13 +5,12 @@ description: Working With RadStatusStrip Items
 slug: winforms/forms-and-dialogs/statusstrip/working-with-radstatusstrip-items
 tags: working,with,radstatusstrip,items
 published: True
-position: 2
+position: 3
 ---
 
 # Working With RadStatusStrip Items
 
-
-
+ 
 ## Item Element Types
 
 The following element types can be added to the RadStatusStrip Items collection:
@@ -36,13 +35,13 @@ The following element types can be added to the RadStatusStrip Items collection:
 
 ## Adding Items At Design-Time
 
-There are several alternatives for adding and editing the __RadStatusStrip Items__collection in the designer:
+There are several alternatives for adding and editing the __RadStatusStrip Items__ collection in the designer:
 
-* Click on the "Type here" label and edit directly. When you're done, click __Enter__to save your changes. Click __Esc__to abandon changes.
+* Click on the "Type here" label and edit directly. When you're done, click __Enter__ to save your changes. Click __Esc__ to abandon changes.
 
 ![forms-and-dialogs-statusstrip-working-with-radstatusstrip-items 001](images/forms-and-dialogs-statusstrip-working-with-radstatusstrip-items001.png)
 
-* Open the __Smart Tag__and select __Edit Items__to open the __Rad Items Collection Editor__.
+* Open the __Smart Tag__ and select __Edit Items__ to open the __Rad Items Collection Editor__.
 
 * From the Properties Editor select the __Items__ property ellipses to open the __Rad Items Collection Editor__.
 
@@ -50,11 +49,9 @@ There are several alternatives for adding and editing the __RadStatusStrip Items
 
 Add items at runtime by creating __RadElement__ instances and adding them to the __RadStatusStrip__ Items collection. The example below demonstrates creating and adding __RadLabelElement__, __RadButtonElement__, __RadRepeatButtonElement__, __RadToolBarSeparatorElement__ and __RadProgressBarElement__.
 
-![forms-and-dialogs-statusstrip-working-with-radstatusstrip-items 002](images/forms-and-dialogs-statusstrip-working-with-radstatusstrip-items002.png)#_[C#] Adding elements to RadStatusStrip_
+![forms-and-dialogs-statusstrip-working-with-radstatusstrip-items 002](images/forms-and-dialogs-statusstrip-working-with-radstatusstrip-items002.png)
 
-	
-
-
+#### Adding elements to RadStatusStrip 
 
 {{source=..\SamplesCS\Forms and Dialogs\StatusStrip1.cs region=addingElementsToRadStatusStrip}} 
 {{source=..\SamplesVB\Forms and Dialogs\StatusStrip1.vb region=addingElementsToRadStatusStrip}} 

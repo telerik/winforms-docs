@@ -5,20 +5,16 @@ description: Detecting when the User Drags the RadTitleBar
 slug: winforms/forms-and-dialogs/radtitlebar/detecting-when-the-user-drags-the-radtitlebar
 tags: detecting,when,the,user,drags,the,radtitlebar
 published: True
-position: 0
+position: 1
 ---
 
 # Detecting when the User Drags the RadTitleBar
-
-
-
+ 
 ## 
 
-The following example, demonstrates how to detect when the user drags the title bar and to how to get its coordinates:#_[C#] Detecting when the TitleBar is dragged_
+The following example, demonstrates how to detect when the user drags the title bar and to how to get its coordinates:
 
-	
-
-
+#### Detecting when the TitleBar is dragged 
 
 {{source=..\SamplesCS\Forms and Dialogs\ShapedForm1.cs region=detectTitleBarDragging}} 
 {{source=..\SamplesVB\Forms and Dialogs\ShapedForm1.vb region=detectTitleBarDragging}} 

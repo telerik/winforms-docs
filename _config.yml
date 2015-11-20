@@ -302,6 +302,33 @@ navigation:
     ganttview:
         title: GanttView
         position: 22
+    ganttview/structure:
+        title: Structure
+        position: 1
+    ganttview/working-with-data:
+        title: Working with Data
+        position: 2
+    ganttview/design-time:
+        title: Design time
+        position: 3
+    ganttview/context-menu:
+        title: Context Menu
+        position: 4
+    ganttview/formatting:
+        title: Formatting
+        position: 5
+    ganttview/editing:
+        title: Editing
+        position: 6
+    ganttview/usability:
+        title: Usability
+        position: 7
+    ganttview/printing-support:
+        title: Printing Support
+        position: 8
+    ganttview/timeline:
+        title: Timeline
+        position: 9
     gauges:
         title: Gauges
         position: 23

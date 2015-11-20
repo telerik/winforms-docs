@@ -5,7 +5,7 @@ description: Design Time
 slug: winforms/editors/popupeditor/design-time
 tags: design,time
 published: True
-position: 2
+position: 3
 ---
 
 # Design Time

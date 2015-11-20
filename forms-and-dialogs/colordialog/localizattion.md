@@ -5,7 +5,7 @@ description: Localizattion
 slug: winforms/forms-and-dialogs/colordialog/localizattion
 tags: localizattion
 published: True
-position: 3
+position: 4
 ---
 
 # Localizattion
@@ -16,26 +16,18 @@ position: 3
 
 To localize RadColorDialog form to display text and messages in a specific language:
 
-* All required classes for localization are defined in 
-		  		__Telerik.WinControls.UI.Localization__ namespace.
+* All required classes for localization are defined in __Telerik.WinControls.UI.Localization__ namespace.
 		  	
 
 * Start by creating a descendant of the __ColorDialogLocalizationProvider__ class.
 		  	
 
-* Override the __GetLocalizedString(string id)__ method and provide a
-		  		translation for the label and user messages. If a translation is not provided, the default
-		  		value will be returned. This behavior is guaranteed by the call to the base 
-		  		__GetLocalizedString__ method in the __default__ 
-		  		clause of the __switch__ statement in the example.
+* Override the __GetLocalizedString(string id)__ method and provide a translation for the label and user messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the __default__ clause of the __switch__ statement in the example.
 		  	
 
 Below is a sample implementation of a custom localization provider, which returns translations of the default values:
-		#_[C#] Localizing RadColorDialog strings_
 
-	
-
-
+#### Localizing RadColorDialog strings 
 
 {{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=localization1}} 
 {{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=localization1}} 
@@ -109,16 +101,11 @@ End Class
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
-		#_[C#] Using the custom localization provider_
 
-	
-
-
+#### Using the custom localization provider 
 
 {{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=localization2}} 
 {{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=localization2}} 
@@ -133,10 +120,7 @@ ColorDialogLocalizationProvider.CurrentProvider = New CustomColorDialogLocalizat
 ````
 
 {{endregion}} 
+ 
 
-
-
-
-The code provided above illustrates the approach to be used to localize the 
-        	__RadColorDialog__ and is not intended as a full translation.
+The code provided above illustrates the approach to be used to localize the __RadColorDialog__ and is not intended as a full translation.
         

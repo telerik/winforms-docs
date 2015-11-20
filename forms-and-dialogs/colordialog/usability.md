@@ -5,16 +5,14 @@ description: Usability
 slug: winforms/forms-and-dialogs/colordialog/usability
 tags: usability
 published: True
-position: 0
+position: 1
 ---
 
 # Usability
-
-
-
+ 
 ## 
 
-The __Color Dialog__ provides multiple ways to select a color using the __Basic__, __System__, __Web__ or __Professional__ color tabs of the dialog. After selecting a color in the dialog, click the __OK__ button to retain your choice or the __Cancel__button to leave the previous color.
+The __Color Dialog__ provides multiple ways to select a color using the __Basic__, __System__, __Web__ or __Professional__ color tabs of the dialog. After selecting a color in the dialog, click the __OK__ button to retain your choice or the __Cancel__ button to leave the previous color.
 
 * __Basic__ tab lets you choose one a predefined color from a honeycomb interface where you click a colored cell to choose the color. 
 
@@ -27,14 +25,12 @@ The __Color Dialog__ provides multiple ways to select a color using the __Basic_
 
 * __Professional__ tab provides the greatest flexibility in selecting or tailoring the exact color you require. Left click the mouse in the gradient area on the left to select a specific shade of color. Click on the rainbow bar in the middle to select a color. 
 
-The edit areas to the top right of the rainbow bar control __H__ue, __S__aturation and __L__uminance. Hue is represented as a color selected from the rainbow bar. Saturation is the amount of color from 0 to 100 and is represented in the gradient area going from left to right. Luminance can be 0 to 100 and represents the span from black, through the chosen hue to white. 
+The edit areas to the top right of the rainbow bar control __H__ ue, __S__ aturation and __L__ uminance. Hue is represented as a color selected from the rainbow bar. Saturation is the amount of color from 0 to 100 and is represented in the gradient area going from left to right. Luminance can be 0 to 100 and represents the span from black, through the chosen hue to white. 
 
-Under Hue, Saturation and Luminance are the edits for __A__lpha, __R__ed, __G__reen and __B__lue. Alpha represents the amount of transparency the color has where a value of zero would allow anything covered by the color to show through and the maximum value, 255, would completely hide anything covered by the color. R/G/B represent the Red, Green and Blue components of the color using values from 0 to 255.
-
-
-
-
-
+Under Hue, Saturation and Luminance are the edits for __A__ lpha, __R__ ed, __G__ reen and __B__ lue. Alpha represents the amount of transparency the color has where a value of zero would allow anything covered by the color to show through and the maximum value, 255, would completely hide anything covered by the color. R/G/B represent the Red, Green and Blue components of the color using values from 0 to 255.
+ 
+|||
+|----|----|
 |![forms-and-dialogs-colordialog-usability 001](images/forms-and-dialogs-colordialog-usability001.png)|![forms-and-dialogs-colordialog-usability 002](images/forms-and-dialogs-colordialog-usability002.png)|
 |![forms-and-dialogs-colordialog-usability 003](images/forms-and-dialogs-colordialog-usability003.png)|![forms-and-dialogs-colordialog-usability 004](images/forms-and-dialogs-colordialog-usability004.png)|
 

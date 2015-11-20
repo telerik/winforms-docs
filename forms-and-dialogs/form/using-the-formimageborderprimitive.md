@@ -39,7 +39,7 @@ The following picture shows the positions at which the images appear:
 
 The __LeftTexture__, __BottomTexture__ and __RightTexture__ are drawn as textures between the __TopLeftEnd__ and __BottomLeftCorner__, __BottomLeftCorner__ and __BottomRightCorner__, __BottomRightCorner__ and __TopRightEnd__ respectively. The __TopLeftEnd__ and the __TopRightEnd__ images are used to define a smooth transition between the image border and the __RadFormTitleBarElement__. The __BottomLeftCorner__ and __BottomRightCorner__ properties are used to set the images which are drawn in the corners of the form's border.
 
-It is important to know that setting one of the following properties does not cause any parts of the __FormImageBorderPrimitive__to be drawn:
+It is important to know that setting one of the following properties does not cause any parts of the __FormImageBorderPrimitive__ to be drawn:
 
 * TopLeftEnd
 

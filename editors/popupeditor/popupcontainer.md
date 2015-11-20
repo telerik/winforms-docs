@@ -5,7 +5,7 @@ description: PopupContainer
 slug: winforms/editors/popupeditor/popupcontainer
 tags: popupcontainer
 published: True
-position: 4
+position: 5
 ---
 
 # PopupContainer
@@ -14,9 +14,7 @@ position: 4
 
 ## 
 
-__RadPopupContainer__ is a simple scrollable panel which is used with __RadPopupEditor__.
-          It allows you to build your layout at design time. Once this is done,
-          you can just associate the panel with the __RadPopupEditor__.
+__RadPopupContainer__ is a simple scrollable panel which is used with __RadPopupEditor__. It allows you to build your layout at design time. Once this is done, you can just associate the panel with the __RadPopupEditor__.
         
 >caption Figure 1: RadPopupContainer.
 

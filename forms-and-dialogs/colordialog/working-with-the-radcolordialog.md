@@ -5,42 +5,48 @@ description: Working with the RadColorDialog
 slug: winforms/forms-and-dialogs/colordialog/working-with-the-radcolordialog
 tags: working,with,the,radcolordialog
 published: True
-position: 2
+position: 3
 ---
 
 # Working with the RadColorDialog
-
-
-
+ 
 ## Properties
 
 The significant properties unique to __RadColorDialog__ are:
 
-__ActiveMode__: Determines the currently selected tab.  Valid enumeration values from __Telerik.WinControls.ColorPickerActiveMode__are __Basic__, __System__, __Web__, __Professional__.
+__ActiveMode__: Determines the currently selected tab.  Valid enumeration values from __Telerik.WinControls.ColorPickerActiveMode__ are __Basic__, __System__, __Web__, __Professional__.
 
-__AllowColorPickFromScreen__: When true (the default) the "eye dropper" tool is displayed.![forms-and-dialogs-colordialog-working-with-the-radcolordialog 001](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog001.png)
+__AllowColorPickFromScreen__: When true (the default) the "eye dropper" tool is displayed.
 
-__AllowColorSaving__: Toggles the "Add a custom color" button visibility.![forms-and-dialogs-colordialog-working-with-the-radcolordialog 002](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog002.png)
+![forms-and-dialogs-colordialog-working-with-the-radcolordialog 001](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog001.png)
+
+__AllowColorSaving__: Toggles the "Add a custom color" button visibility.
+
+![forms-and-dialogs-colordialog-working-with-the-radcolordialog 002](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog002.png)
 
 __BackColor__: The background color of the color selector as a whole. You can also set this color to be Transparent to have it blend in with your other UI elements.
 
 __ForeColor__: The color for labels and text entry.
 
-__SelectedColor:__In the figure below the __SelectedColor__ is labeled as "New".
+__SelectedColor:__ In the figure below the __SelectedColor__ is labeled as "New".
 
-__OldColor:__In the figure below the __OldColor__ is labeled as "Current".![forms-and-dialogs-colordialog-working-with-the-radcolordialog 003](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog003.png)
+__OldColor:__ In the figure below the __OldColor__ is labeled as "Current".
+
+![forms-and-dialogs-colordialog-working-with-the-radcolordialog 003](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog003.png)
 
 __ShowBasicColors, ShowSystemColors, ShowWebColors, ShowProfessionalColors__: If true (the default) the corresponding Basic, System, Web and Professional tabs are displayed.
 
 __AllowEditHEXValue:__ If true (the default) enables hexadecimal entry of color values.
 
-__ShowHEXColorValue__: If true (the default) displays the hexadecimal entry of color values.![forms-and-dialogs-colordialog-working-with-the-radcolordialog 004](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog004.png)
+__ShowHEXColorValue__: If true (the default) displays the hexadecimal entry of color values.
 
-__CustomColors[]:__ This is a read-only array of Color objects.  You can query the contents of the custom colors displayed along the bottom of the selector.![forms-and-dialogs-colordialog-working-with-the-radcolordialog 005](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog005.png)#_[C#] Enlist the current custom colors in RadColorDialog_
+![forms-and-dialogs-colordialog-working-with-the-radcolordialog 004](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog004.png)
 
-	
+__CustomColors[]:__ This is a read-only array of Color objects.  You can query the contents of the custom colors displayed along the bottom of the selector.
 
+![forms-and-dialogs-colordialog-working-with-the-radcolordialog 005](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog005.png)
 
+#### Enlist the current custom colors in RadColorDialog 
 
 {{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=enlistTheCustomColors}} 
 {{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=enlistTheCustomColors}} 
@@ -71,19 +77,15 @@ End Sub
 ````
 
 {{endregion}} 
+ 
 
-
-
-
-__Localization/Internationalization Properties:__The text values of the __RadColorDialog__ can be customized for easy localization including properties __AddNewColorButtonText__, __BasicTabHeading__, __SystemTabHeading__, __WebTabHeading__, __ProfessionalTabHeading__, __SelectedColorLabelHeading__and __OldColorLabelHeading__.
+__Localization/Internationalization Properties:__ The text values of the __RadColorDialog__ can be customized for easy localization including properties __AddNewColorButtonText__, __BasicTabHeading__, __SystemTabHeading__, __WebTabHeading__, __ProfessionalTabHeading__, __SelectedColorLabelHeading__ and __OldColorLabelHeading__.
 
 ## Getting the selected colors
 
-In order go get the SelectedColor or the SelectedHlsColor you can use the following code snippet:#_[C#] Enlist the current custom colors in RadColorDialog_
+In order go get the SelectedColor or the SelectedHlsColor you can use the following code snippet:
 
-	
-
-
+#### Enlist the current custom colors in RadColorDialog 
 
 {{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=getTheSelectedColors}} 
 {{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=getTheSelectedColors}} 
