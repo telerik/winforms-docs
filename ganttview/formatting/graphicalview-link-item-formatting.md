@@ -10,16 +10,9 @@ position: 4
 
 # GraphicalView Link Item formatting
 
-
-
-__RadGanttView__ allows formatting of individual links through the __GraphicalViewLinkItemFormatting__ event. 
-      The following example demonstrates how to format links based on their type.
-
-## #_[C#] _
-
-	
-
-
+ 
+__RadGanttView__ allows formatting of individual links through the __GraphicalViewLinkItemFormatting__ event. The following example demonstrates how to format links based on their type.
+ 
 
 {{source=..\SamplesCS\GanttView\Formatting\GraphicalViewLinkItemFormatting.cs region=GraphicalViewLinkItemFormatting}} 
 {{source=..\SamplesVB\GanttView\Formatting\GraphicalViewLinkItemFormatting.vb region=GraphicalViewLinkItemFormatting}} 

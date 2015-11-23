@@ -12,7 +12,9 @@ position: 1
 
 
 
-There are total of three item types: summary item, task item and milestone item.![ganttview-structure-item-types 001](images/ganttview-structure-item-types001.png)
+There are total of three item types: summary item, task item and milestone item.
+
+![ganttview-structure-item-types 001](images/ganttview-structure-item-types001.png)
 
 ## Summary item
 

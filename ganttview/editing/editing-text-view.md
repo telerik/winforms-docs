@@ -9,11 +9,8 @@ position: 0
 ---
 
 # Editing text view
-
-
-
-## 
-        Methods and properties
+ 
+##  Methods and properties
       
 
 The editing process in the text view of RadGanttView goes through a similar lifecycle as other controls using our editors system.
@@ -37,16 +34,12 @@ There are three main methods that can be used to control the editing and two pro
 * __ActiveEditor__ – Gets the editor instance if an editor is opened.
             
 
-You can configure RadGanttView so that items enter edit mode directly when the item is selected or when users press 
-          __F2, Space or Enter__ or click for a second time on the item without triggering a double click event. 
-          The __BeginEditMode__ property of RadGanttViewElement controls this behavior.
+You can configure RadGanttView so that items enter edit mode directly when the item is selected or when users press __F2, Space or Enter__ or click for a second time on the item without triggering a double click event. The __BeginEditMode__ property of RadGanttViewElement controls this behavior.
         
 
 ## Built-in editors
 
-There are several build-in editors which are used for editing different data types. These editors can be
-          customized or can be replaced by custom editors all together. Here is a list of the build-in editors and the
-          data types they are used for:
+There are several build-in editors which are used for editing different data types. These editors can be customized or can be replaced by custom editors all together. Here is a list of the build-in editors and the data types they are used for:
         
 
 * __BaseSpinEditor__ – Used for editing numeric types.

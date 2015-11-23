@@ -9,18 +9,13 @@ position: 0
 ---
 
 # Printing Events
-
-
+ 
 
 You can customize the print output through the __PrintElementFormatting__ and __PrintElementPaint__ events. __PrintElementFormatting__ provides you with a print element which has style properties available so you can customize it as you see fit. The __PrintElementPaint__ gives you direct access to the graphical context and allows you to directly draw to the print output. 
 
 ## PrintElementFormatting
 
-The following example demonstrates how you can use the __PrintContext__ property to determine what element is being printed and to change the styling accordingly.#_[C#]_
-
-	
-
-
+The following example demonstrates how you can use the __PrintContext__ property to determine what element is being printed and to change the styling accordingly. 
 
 {{source=..\SamplesCS\GanttView\PrintingEvents\PrintingEvents.cs region=PrintFormatting}} 
 {{source=..\SamplesVB\GanttView\PrintingEvents\PrintingEvents.vb region=PrintFormatting}} 
@@ -92,12 +87,7 @@ End Sub
 ## PrintElementPaint
 
 This example demonstrates how you can paint the text of summary items next to the printed graphical representation.
-        #_[C#]_
-
-	
-
-
-
+         
 {{source=..\SamplesCS\GanttView\PrintingEvents\PrintingEvents.cs region=PrintPaint}} 
 {{source=..\SamplesVB\GanttView\PrintingEvents\PrintingEvents.vb region=PrintPaint}} 
 

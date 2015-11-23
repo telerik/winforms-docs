@@ -9,19 +9,11 @@ position: 2
 ---
 
 # Timeline item formatting
-
-
-
+ 
 ## 
 
-The RadGanttView __TimelineItemFormatting__event allows you to format the style and look of the items in the timeline 
-          container. The following example demonstrates how to make the timeline appear as a checkered flag.
-        #_[C#] _
-
-	
-
-
-
+The RadGanttView __TimelineItemFormatting__ event allows you to format the style and look of the items in the timeline container. The following example demonstrates how to make the timeline appear as a checkered flag.
+         
 {{source=..\SamplesCS\GanttView\Formatting\TimelineItemFormatting.cs region=TimelineItemFormatting}} 
 {{source=..\SamplesVB\GanttView\Formatting\TimelineItemFormatting.vb region=TimelineItemFormatting}} 
 

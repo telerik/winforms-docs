@@ -10,12 +10,10 @@ position: 2
 
 # Modifying context menu
 
-
-
+ 
 ## 
 
-When a context menu in RadGanttView is about to be opened the __ContextMenuOpening__ event is fired. This event allows you to
-          customize the items show in the context menu.
+When a context menu in RadGanttView is about to be opened the __ContextMenuOpening__ event is fired. This event allows you to customize the items show in the context menu.
         
 
 The event arguments have the following properties:
@@ -30,12 +28,7 @@ The event arguments have the following properties:
             
 
 Here is an example which demonstrates how to change the progress step of the default context menu.
-        #_[C#] _
-
-	
-
-
-
+         
 {{source=..\SamplesCS\GanttView\ContextMenus\ModifyingContextMenu.cs region=ModifyingContextMenu}} 
 {{source=..\SamplesVB\GanttView\ContextMenus\ModifyingContextMenu.vb region=ModifyingContextMenu}} 
 

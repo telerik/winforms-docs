@@ -10,19 +10,22 @@ position: 7
 
 # Printing Support
 
+ 
+RadGanttView provides options to print its content using a RadPrintDocument. When printed the whole gantt view is “chopped” into page-size pieces. Each piece is printed on a separate page.
 
-
-RadGanttView provides options to print its content using a RadPrintDocument. When printed the whole gantt view is “chopped” into page-size pieces. Each piece is printed on a separate page.![ganttview-printing-support 001](images/ganttview-printing-support001.png)
+![ganttview-printing-support 001](images/ganttview-printing-support001.png)
 
 ## 
 
 RadGanttView allows you to choose from two flow types for the pages:
 
 1. Row-major order
-            ![ganttview-printing-support 002](images/ganttview-printing-support002.png)
+            
+	![ganttview-printing-support 002](images/ganttview-printing-support002.png)
 
 1. Column-major order
-            ![ganttview-printing-support 003](images/ganttview-printing-support003.png)
+            
+	![ganttview-printing-support 003](images/ganttview-printing-support003.png)
 
 Other options include:
 

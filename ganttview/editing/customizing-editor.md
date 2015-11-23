@@ -14,18 +14,11 @@ position: 2
 
 ## 
 
-The appearance and behavior of property grid editors can be changed programmatically. This can be done in the 
-          __EditorInitialized__event. __EditorInitialized__ is fired when the editor 
-          is created and initialized with a predefined set of properties.
+The appearance and behavior of property grid editors can be changed programmatically. This can be done in the __EditorInitialized__ event. __EditorInitialized__ is fired when the editor is created and initialized with a predefined set of properties.
         
 
 The following sample demonstrates how to change the default font of a BaseTextBoxEditor in RadGanttView:
-        #_[C#] _
-
-	
-
-
-
+         
 {{source=..\SamplesCS\GanttView\Editing\CustomizingEditor.cs region=CustomizingEditor}} 
 {{source=..\SamplesVB\GanttView\Editing\CustomizingEditor.vb region=CustomizingEditor}} 
 

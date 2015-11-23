@@ -9,19 +9,11 @@ position: 5
 ---
 
 # Importing XML from MS Project
-
-
-
+ 
 ## 
 
-Although RadGanttView does not support direct binding or importing of MS Project files we have prepared a class that would help 
-          you import an MS Project saved as xml into RadGanttView.
-        #_[C#] _
-
-	
-
-
-
+Although RadGanttView does not support direct binding or importing of MS Project files we have prepared a class that would help you import an MS Project saved as xml into RadGanttView.
+        
 {{source=..\SamplesCS\GanttView\WorkingWithData\ImportXmlFromMsProject.cs region=MsProjectImport}} 
 {{source=..\SamplesVB\GanttView\WorkingWithData\ImportXmlFromMsProject.vb region=MsProjectImport}} 
 
@@ -298,16 +290,9 @@ End Class
 ````
 
 {{endregion}} 
+ 
 
-
-
-
-After you have this code in your project you can load the data from the xml into RadGanttView with the following code:
-        #_[C#] _
-
-	
-
-
+After you have this code in your project you can load the data from the xml into RadGanttView with the following code: 
 
 {{source=..\SamplesCS\GanttView\WorkingWithData\ImportXmlFromMsProject.cs region=ImportXmlIntoGanttView}} 
 {{source=..\SamplesVB\GanttView\WorkingWithData\ImportXmlFromMsProject.vb region=ImportXmlIntoGanttView}} 

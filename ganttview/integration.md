@@ -10,17 +10,12 @@ position: 9
 
 # Integration
 
-
-
+ 
 This example will demonstrate how RadGanttView integrates with RadScheduler, allowing you to show the appointments from RadScheduler in RadGanttView. Editing any data in one control is immediately reflected in the other. he integration can be achieved with any control/component out there. The only condition is that the control/component implements the IGanttViewDataProvider interface. Then you assign an instance of the type that implements the interface to the DataProvider property of RadGanttView and you are good to go.
 
 ## Integration with RadScheduler
 
-In the case of RadScheduler we have implemented a component which implements the interface and allows for two way notifications between the controls. Here is how to use it:#_[C#]_
-
-	
-
-
+In the case of RadScheduler we have implemented a component which implements the interface and allows for two way notifications between the controls. Here is how to use it: 
 
 {{source=..\SamplesCS\GanttView\SchedulerIntegration\SchedulerIntegration.cs region=Integration}} 
 {{source=..\SamplesVB\GanttView\SchedulerIntegration\SchedulerIntegration.vb region=Integration}} 
@@ -35,16 +30,10 @@ Me.radGanttView1.DataProvider = New GanttViewIntegrationProvider(Me.radScheduler
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 Two things you need to note. The first is that RadGanttView requires a unique id for each item it has. You can read more on how to provide such an id in the section on ["Adding new items"]({%slug winforms/ganttview-/working-with-data/adding-new-items%}). The other thing you need to be aware is the ids RadScheduler assigns to its appointments. They are of type EventId and need a Guid when constructed. Summing these two together gives the following code:   
-        #_[C#]_
-
-	
-
-
+         
 
 {{source=..\SamplesCS\GanttView\SchedulerIntegration\SchedulerIntegration.cs region=TrickyPart}} 
 {{source=..\SamplesVB\GanttView\SchedulerIntegration\SchedulerIntegration.vb region=TrickyPart}} 

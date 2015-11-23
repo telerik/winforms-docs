@@ -15,7 +15,8 @@ position: 2
 ## 
 
 The GanttViewDataItem Collection Editor allows you to add tasks to the gantt view in design time.
-        ![ganttview-designtime-adding-items 001](images/ganttview-designtime-adding-items001.png)
+        
+![ganttview-designtime-adding-items 001](images/ganttview-designtime-adding-items001.png)
 
 The more important properties of the column you need to set up are:
 

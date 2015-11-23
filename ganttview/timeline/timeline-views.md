@@ -12,22 +12,14 @@ position: 0
 
 
 
-__RadGanttView__ offers a number of built-in timeline views which allow you to show the timeline in different scales.
-      It is reasonable to change the timeline view when the user zooms in or out. This will give the users a precise measurement
-      of time in every zoom level. 
+__RadGanttView__ offers a number of built-in timeline views which allow you to show the timeline in different scales. It is reasonable to change the timeline view when the user zooms in or out. This will give the users a precise measurement of time in every zoom level. 
 
 ## 
 
-All built-in views can be found in the *TimeRange* enumeration. Here are the different views offered by
-          __RadGanttView__ out-of-the-box:
+All built-in views can be found in the *TimeRange* enumeration. Here are the different views offered by __RadGanttView__ out-of-the-box:
         
 
-* *TimeRange.Week *– Each element of the upper row represents one week. The elements on the lower row represent days.
-            #_[C#]_
-
-	
-
-
+* *TimeRange.Week * – Each element of the upper row represents one week. The elements on the lower row represent days. 
 
 {{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeWeek}} 
 {{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeWeek}} 
@@ -46,11 +38,7 @@ Me.RadGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 
 ![ganttview-timeline-timeline-views 001](images/ganttview-timeline-timeline-views001.png)
 
-* *TimeRange.Month *– Each element of the upper row represents one month. The elements on the lower row represent days.#_[C#]_
-
-	
-
-
+* *TimeRange.Month * – Each element of the upper row represents one month. The elements on the lower row represent days. 
 
 {{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeMonth}} 
 {{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeMonth}} 
@@ -69,12 +57,8 @@ Me.RadGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 
 ![ganttview-timeline-timeline-views 002](images/ganttview-timeline-timeline-views002.png)
 
-* *TimeRange.Year *– Each element of the upper row represents one year. The elements on the lower row represent months.
-            #_[C#]_
-
-	
-
-
+* *TimeRange.Year * – Each element of the upper row represents one year. The elements on the lower row represent months.
+          
 
 {{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeYear}} 
 {{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeYear}} 
@@ -93,11 +77,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 
 ![ganttview-timeline-timeline-views 003](images/ganttview-timeline-timeline-views003.png)
 
-* *TimeRange.YearHalves *– Each element of the upper row represents one year. The elements on the lower row represent half year periods (roughly six months).
-            #_[C#]_
-
-	
-
+* *TimeRange.YearHalves * – Each element of the upper row represents one year. The elements on the lower row represent half year periods (roughly six months). 
 
 
 {{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeYearHalves}} 
@@ -117,12 +97,8 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 
 ![ganttview-timeline-timeline-views 004](images/ganttview-timeline-timeline-views004.png)
 
-* *TimeRange.YearQuarters *– Each element of the upper row represents one year. The elements on the lower row represent quarter year periods (roughly three months).
-            #_[C#]_
-
-	
-
-
+* *TimeRange.YearQuarters * – Each element of the upper row represents one year. The elements on the lower row represent quarter year periods (roughly three months).
+             
 
 {{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeYearQuarters}} 
 {{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeYearQuarters}} 
@@ -141,12 +117,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 
 ![ganttview-timeline-timeline-views 005](images/ganttview-timeline-timeline-views005.png)
 
-* *TimeRange.Day *– Each element of the upper row represents one day. The elements on the lower row represent hours.
-            #_[C#]_
-
-	
-
-
+* *TimeRange.Day * – Each element of the upper row represents one day. The elements on the lower row represent hours. 
 
 {{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeDay}} 
 {{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeDay}} 
@@ -165,13 +136,8 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 
 ![ganttview-timeline-timeline-views 006](images/ganttview-timeline-timeline-views006.png)
 
-* *TimeRange.DayHalfHours *– Each element of the upper row represents one day. The elements on the lower row represent half hours (30 minutes period).
-            #_[C#]_
-
-	
-
-
-
+* *TimeRange.DayHalfHours * – Each element of the upper row represents one day. The elements on the lower row represent half hours (30 minutes period).
+             
 {{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeDayHalfHours}} 
 {{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeDayHalfHours}} 
 
@@ -189,12 +155,8 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 
 ![ganttview-timeline-timeline-views 007](images/ganttview-timeline-timeline-views007.png)
 
-* *TimeRange.DayQuarterHours *– Each element of the upper row represents one day. The elements on the lower row represent quarter hours (15 minutes period).
-            #_[C#]_
-
-	
-
-
+* *TimeRange.DayQuarterHours * – Each element of the upper row represents one day. The elements on the lower row represent quarter hours (15 minutes period).
+            
 
 {{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeDayQuarterHours}} 
 {{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeDayQuarterHours}} 
@@ -213,12 +175,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 
 ![ganttview-timeline-timeline-views 008](images/ganttview-timeline-timeline-views008.png)
 
-* *TimeRange.Hour *– Each element of the upper row represents one hour. The elements on the lower row represent minutes.
-            #_[C#]_
-
-	
-
-
+* *TimeRange.Hour * – Each element of the upper row represents one hour. The elements on the lower row represent minutes. 
 
 {{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeHour}} 
 {{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeHour}} 

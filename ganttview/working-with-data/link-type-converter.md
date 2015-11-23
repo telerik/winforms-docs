@@ -9,14 +9,10 @@ position: 4
 ---
 
 # Link type converter
-
-
-
+ 
 ## 
 
-When binding RadGanttView there are a number of possible formats for storing data. For most of the standard .NET types used in gantt view 
-          (int, string, DateTime, decimal) there are built-in converters to help you when binding. For the types of the link, you have to convert your data to the
-          TasksLinkType enumeration. To help you achieve this we have provided a basic implementation to convert integer data to the enumeration. Here is the mapping:
+When binding RadGanttView there are a number of possible formats for storing data. For most of the standard .NET types used in gantt view (int, string, DateTime, decimal) there are built-in converters to help you when binding. For the types of the link, you have to convert your data to the TasksLinkType enumeration. To help you achieve this we have provided a basic implementation to convert integer data to the enumeration. Here is the mapping:
         
 
 * 0 translates to TasksLinkType.FinishToFinish
@@ -31,9 +27,7 @@ When binding RadGanttView there are a number of possible formats for storing dat
 * 3 translates to TasksLinkType. StartToStart
             
 
-This will work fine if your mapping is the same but if you store your link types in a different format or the integer values are in different 
-          order you can create your own __LinkTypeConverter__ deriving from the default one. In the following examples we will create 
-          one that will convert from/to string for the following mapping:
+This will work fine if your mapping is the same but if you store your link types in a different format or the integer values are in different order you can create your own __LinkTypeConverter__ deriving from the default one. In the following examples we will create one that will convert from/to string for the following mapping:
         
 
 * “FF” translates to TasksLinkType.FinishToFinish
@@ -46,11 +40,7 @@ This will work fine if your mapping is the same but if you store your link types
             
 
 * “SS” translates to TasksLinkType. StartToStart
-            #_[C#] _
-
-	
-
-
+            
 
 {{source=..\SamplesCS\GanttView\WorkingWithData\LinkTypeConverterExample.cs region=CustomLinkTypeConverter}} 
 {{source=..\SamplesVB\GanttView\WorkingWithData\LinkTypeConverterExample.vb region=CustomLinkTypeConverter}} 
@@ -128,16 +118,9 @@ End Class
 
 {{endregion}} 
 
-
-
-
+ 
 Now to use the converter you should assign it to the LinkTypeConverter property of RadGanttView.
-        #_[C#] _
-
-	
-
-
-
+         
 {{source=..\SamplesCS\GanttView\WorkingWithData\LinkTypeConverterExample.cs region=AssignLinkTypeConverter}} 
 {{source=..\SamplesVB\GanttView\WorkingWithData\LinkTypeConverterExample.vb region=AssignLinkTypeConverter}} 
 

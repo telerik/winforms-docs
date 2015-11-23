@@ -10,12 +10,12 @@ position: 0
 
 # Smart Tag
 
-
-
+ 
 ## 
 
 The Smart Tag for RadGanttView lets you quickly access common tasks involved with customizing RadGanttView elements, data binding and customizing its appearance through themes.
-        ![ganttview-designtime-smart-tag 001](images/ganttview-designtime-smart-tag001.png)
+        
+![ganttview-designtime-smart-tag 001](images/ganttview-designtime-smart-tag001.png)
 
 * __New Theme Manager:__ Adds a new RadThemeManager component to the form.
             
@@ -32,8 +32,7 @@ The Smart Tag for RadGanttView lets you quickly access common tasks involved wit
 * __Edit Columns:__ Opens a dialog that displays GanttViewTextViewColumn Collection Editor. This editor lets you add columns to the gantt view.
             
 
-* __Data Binding:__ In this section you can setup the data binding of the control. The different members are covered in details in the 
-              [data binding basics article.]({%slug winforms/ganttview-/working-with-data/data-binding-basics%})
+* __Data Binding:__ In this section you can setup the data binding of the control. The different members are covered in details in the [data binding basics article.]({%slug winforms/ganttview-/working-with-data/data-binding-basics%})
 
 * __Learning Center:__ Navigate to the Telerik help, code library projects or support forum.
             

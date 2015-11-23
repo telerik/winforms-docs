@@ -14,15 +14,8 @@ position: 1
 
 ## 
 
-RadGanttView allows you to assign an individual context menu on each data item. This context menu is with higher priority
-          than the default context menu so if you have assigned such a context menu it will be displayed even if you have not disabled the
-          default context menu.
-        #_[C#] _
-
-	
-
-
-
+RadGanttView allows you to assign an individual context menu on each data item. This context menu is with higher priority than the default context menu so if you have assigned such a context menu it will be displayed even if you have not disabled the default context menu.
+       
 {{source=..\SamplesCS\GanttView\ContextMenus\ItemContextMenu.cs region=ItemContextMenu}} 
 {{source=..\SamplesVB\GanttView\ContextMenus\ItemContextMenu.vb region=ItemContextMenu}} 
 

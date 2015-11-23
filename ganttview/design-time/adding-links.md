@@ -15,7 +15,8 @@ position: 3
 ## 
 
 The GanttViewLinkDataItem Collection Editor allows you to add links (dependences) between the items in the gantt view in design time.
-        ![ganttview-designtime-adding-links 001](images/ganttview-designtime-adding-links001.png)
+        
+![ganttview-designtime-adding-links 001](images/ganttview-designtime-adding-links001.png)
 
 The more important properties of the column you need to set up are:
 

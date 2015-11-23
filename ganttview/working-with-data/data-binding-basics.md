@@ -14,8 +14,7 @@ position: 0
 
 ## 
 
-RadGanttView binds to any object that implements IList, IListSource or IBindingList. This includes generic lists and BindingSource for example.
-          To make data binding work, minimally you must assign the DataSource property of RadGanttView and the member properties explained below.
+RadGanttView binds to any object that implements IList, IListSource or IBindingList. This includes generic lists and BindingSource for example. To make data binding work, minimally you must assign the DataSource property of RadGanttView and the member properties explained below.
         
 
 __TaskDataMember__ – Set this to the filed that holds the collection of data that will be used to populate the tasks.
@@ -51,7 +50,7 @@ __LinkEndMember **__ – Set this to the name of the field that will be used as 
 __LinkTypeMember **__ – Set this to the name of the field that will be used to define the type of a link.
         
 
->note * - Marks the members that are the bare minimum to show a gantt with tasks.
+>note \* - Marks the members that are the bare minimum to show a gantt with tasks.
 >** - Marks the members that are required to show links.
 >
 
@@ -59,13 +58,8 @@ __LinkTypeMember **__ – Set this to the name of the field that will be used to
 The following example demonstrates a sample data with all the code needed to bind and show this data in RadGanttView:
         
 
-1. First we define the schema of the data.
-            #_[C#] _
-
-	
-
-
-
+1\. First we define the schema of the data.
+            
 {{source=..\SamplesCS\GanttView\WorkingWithData\DataBindingBasics.cs region=DataSchema}} 
 {{source=..\SamplesVB\GanttView\WorkingWithData\DataBindingBasics.vb region=DataSchema}} 
 
@@ -105,17 +99,10 @@ data.Tables.Add(links)
 ````
 
 {{endregion}} 
+ 
 
-
-
-
-1. We populate some sample data.
-            #_[C#] _
-
-	
-
-
-
+2\. We populate some sample data.
+ 
 {{source=..\SamplesCS\GanttView\WorkingWithData\DataBindingBasics.cs region=SampleData}} 
 {{source=..\SamplesVB\GanttView\WorkingWithData\DataBindingBasics.vb region=SampleData}} 
 
@@ -139,16 +126,9 @@ links.Rows.Add(3, 4, 1)
 ````
 
 {{endregion}} 
-
-
-
-
-1. We setup and bind RadGanttView to the data
-            #_[C#] _
-
-	
-
-
+ 
+3\. We setup and bind RadGanttView to the data
+           
 
 {{source=..\SamplesCS\GanttView\WorkingWithData\DataBindingBasics.cs region=SetupAndBinding}} 
 {{source=..\SamplesVB\GanttView\WorkingWithData\DataBindingBasics.vb region=SetupAndBinding}} 

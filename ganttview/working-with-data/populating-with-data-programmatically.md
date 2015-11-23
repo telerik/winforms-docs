@@ -9,22 +9,11 @@ position: 2
 ---
 
 # Populating with Data Programmatically
-
-
-
-
-
+ 
 ## 
 
-RadGanttview supports unbound mode as well, which means that you can manually populate it with the Summary items, 
-          Task items and Milestone items (if needed). Then just set up the links between tasks and you have your gantt setup.
-          The following example starts by setting the desired start and end range of the graphical element and then we are 
-          adding a few task items with sub items. At the end we are adding the links between the items.
-        #_[C#]_
-
-	
-
-
+RadGanttview supports unbound mode as well, which means that you can manually populate it with the Summary items, Task items and Milestone items (if needed). Then just set up the links between tasks and you have your gantt setup. The following example starts by setting the desired start and end range of the graphical element and then we are adding a few task items with sub items. At the end we are adding the links between the items.
+        
 
 {{source=..\SamplesCS\GanttView\WorkingWithData\PopulatingWithDataProgrammatically.cs region=PopulateData}} 
 {{source=..\SamplesVB\GanttView\WorkingWithData\PopulatingWithDataProgrammatically.vb region=PopulateData}} 
@@ -181,14 +170,7 @@ Me.RadGanttView1.Links.Add(link3)
 
 ![ganttview-working-with-data-populating-with-data-programmatically 001](images/ganttview-working-with-data-populating-with-data-programmatically001.png)
 
-Now we can just add the desired columns to be displayed in GanttViewTextViewElement. During the column initialization 
-          we will pass a string to specify the FieldName so the column will know which fields of the tasks to display. In addition
-          this string will also be used as header text.
-        #_[C#]_
-
-	
-
-
+Now we can just add the desired columns to be displayed in GanttViewTextViewElement. During the column initialization we will pass a string to specify the FieldName so the column will know which fields of the tasks to display. In addition this string will also be used as header text.
 
 {{source=..\SamplesCS\GanttView\WorkingWithData\PopulatingWithDataProgrammatically.cs region=AddColumns}} 
 {{source=..\SamplesVB\GanttView\WorkingWithData\PopulatingWithDataProgrammatically.vb region=AddColumns}} 

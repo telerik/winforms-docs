@@ -9,20 +9,16 @@ position: 10
 ---
 
 # Today Indicator
+ 
+The today indicator represents the current date and time in the graphical view of RadGanttView. There are two indicators you can show. One is positioned over the timeline and the other is directly over the graphical view. 
 
-
-
-The today indicator represents the current date and time in the graphical view of RadGanttView. There are two indicators you can show. One is positioned over the timeline and the other is directly over the graphical view. ![ganttview-today-indicator 001](images/ganttview-today-indicator001.png)
+![ganttview-today-indicator 001](images/ganttview-today-indicator001.png)
 
 ## 
 
 You can control which one is visible through the __ShowTodayIndicator__ and the __ShowTimelineTodayIndicator__ properties.
 
-You can also directly access the two indicators:#_[C#]_
-
-	
-
-
+You can also directly access the two indicators: 
 
 {{source=..\SamplesCS\GanttView\TodayIndicator\TodayIndicator.cs region=IndicatorsAccess}} 
 {{source=..\SamplesVB\GanttView\TodayIndicator\TodayIndicator.vb region=IndicatorsAccess}} 

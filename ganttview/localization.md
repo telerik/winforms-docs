@@ -9,9 +9,7 @@ position: 11
 ---
 
 # Localization
-
-
-
+ 
 ## 
 
 To localize RadGanttView to display control text and messages in a specific language:
@@ -20,17 +18,11 @@ To localize RadGanttView to display control text and messages in a specific lang
 1. Start by creating a descendant of the GanttViewLocalizationProvider class.
             
 
-1. Override the __GetLocalizedString(string id)__ method and provide a translation for the texts.
-              If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the
-              __base GetLocalizedString__method in the default clause of the switch statement in the example.
+1. Override the __GetLocalizedString(string id)__ method and provide a translation for the texts. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the __base GetLocalizedString__ method in the default clause of the switch statement in the example.
             
 
 Below is a sample implementation of an English localization provider:
-        #_[C#] _
-
-	
-
-
+        
 
 {{source=..\SamplesCS\GanttView\Localization\LocalizationProvider.cs region=LocalizationProvider}} 
 {{source=..\SamplesVB\GanttView\Localization\LocalizationProvider.vb region=LocalizationProvider}} 
@@ -85,15 +77,9 @@ End Class
 ````
 
 {{endregion}} 
+ 
 
-
-
-
-To apply the custom localization provider, instantiate and assign it to the current localization provider:#_[C#] _
-
-	
-
-
+To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
 {{source=..\SamplesCS\GanttView\Localization\LocalizationProvider.cs region=ApplyLocalizationProvider}} 
 {{source=..\SamplesVB\GanttView\Localization\LocalizationProvider.vb region=ApplyLocalizationProvider}} 
