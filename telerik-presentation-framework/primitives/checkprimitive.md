@@ -22,28 +22,28 @@ The __CheckPrimitive__ is painted as three sets of angled lines and is colored u
 {{source=..\SamplesVB\TPF\Primitives\CheckPrimitive1\MyCheckPrimitiveElement.vb region=myCheckPrimitiveElement}} 
 
 ````C#
-    public class MyCheckPrimitiveElement : RadElement
+public class MyCheckPrimitiveElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
-        {
-            BorderPrimitive borderPrimitive = new BorderPrimitive();
-            borderPrimitive.BoxStyle = BorderBoxStyle.SingleBorder;
-            borderPrimitive.Width = 1;
-            borderPrimitive.GradientStyle = GradientStyles.Solid;
-            borderPrimitive.MinSize = new Size(100, 100);
-            borderPrimitive.ForeColor = Color.Blue;
-            CheckPrimitive checkPrimitive = new CheckPrimitive();
-            checkPrimitive.ForeColor = Color.Red;
-            CheckPrimitive checkPrimitive2 = new CheckPrimitive();
-            checkPrimitive2.ForeColor = Color.Green;
-            checkPrimitive2.ScaleTransform = new SizeF(5F, 5F);
-            this.Children.Add(borderPrimitive);
-            this.Children.Add(checkPrimitive);
-            this.Children.Add(checkPrimitive2);
-
-            base.CreateChildElements();
-        }
+        BorderPrimitive borderPrimitive = new BorderPrimitive();
+        borderPrimitive.BoxStyle = BorderBoxStyle.SingleBorder;
+        borderPrimitive.Width = 1;
+        borderPrimitive.GradientStyle = GradientStyles.Solid;
+        borderPrimitive.MinSize = new Size(100, 100);
+        borderPrimitive.ForeColor = Color.Blue;
+        CheckPrimitive checkPrimitive = new CheckPrimitive();
+        checkPrimitive.ForeColor = Color.Red;
+        CheckPrimitive checkPrimitive2 = new CheckPrimitive();
+        checkPrimitive2.ForeColor = Color.Green;
+        checkPrimitive2.ScaleTransform = new SizeF(5F, 5F);
+        this.Children.Add(borderPrimitive);
+        this.Children.Add(checkPrimitive);
+        this.Children.Add(checkPrimitive2);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class MyCheckPrimitiveElement
@@ -63,11 +63,10 @@ Public Class MyCheckPrimitiveElement
         Me.Children.Add(borderPrimitive)
         Me.Children.Add(checkPrimitive)
         Me.Children.Add(checkPrimitive2)
-
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}

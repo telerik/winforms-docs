@@ -19,25 +19,26 @@ position: 0
 {{source=..\SamplesVB\TPF\Events.vb region=onMouseEnter}} 
 
 ````C#
-        protected override void OnMouseEnter(EventArgs e)
-        {
-            if (!DisableMouseEvents)
-            {
-                this.RootElement.IsMouseOver = true;
-                this.RootElement.IsMouseOverElement = true;
-            }
-            base.OnMouseEnter(e);
-        }
+protected override void OnMouseEnter(EventArgs e)
+{
+    if (!DisableMouseEvents)
+    {
+        this.RootElement.IsMouseOver = true;
+        this.RootElement.IsMouseOverElement = true;
+    }
+    base.OnMouseEnter(e);
+}
+
 ````
 ````VB.NET
-    Protected Overrides Sub OnMouseEnter(ByVal e As EventArgs)
-        If Not DisableMouseEvents Then
-            Me.RootElement.IsMouseOver = True
-            Me.RootElement.IsMouseOverElement = True
-        End If
-        MyBase.OnMouseEnter(e)       
-    End Sub
-    '
+Protected Overrides Sub OnMouseEnter(ByVal e As EventArgs)
+    If Not DisableMouseEvents Then
+        Me.RootElement.IsMouseOver = True
+        Me.RootElement.IsMouseOverElement = True
+    End If
+    MyBase.OnMouseEnter(e)       
+End Sub
+
 ````
 
 {{endregion}}

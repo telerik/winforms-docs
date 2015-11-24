@@ -138,73 +138,64 @@ The following example will show you how to make a simple image gallery with thre
 {{source=..\SamplesVB\TPF\Primitives\LightVisualElement1\MyLightVisualElement.vb region=MyLightVisualElement}} 
 
 ````C#
-    public class MyLightVisualElement : RadElement
+public class MyLightVisualElement : RadElement
+{
+    private DockLayoutPanel mainPanel;
+    private LightVisualElement leftButtonElement;
+    private LightVisualElement rightButtonElement;
+    private LightVisualElement currentImageElement;
+    private Image[] images;
+    protected override void CreateChildElements()
     {
-        private DockLayoutPanel mainPanel;
-        private LightVisualElement leftButtonElement;
-        private LightVisualElement rightButtonElement;
-        private LightVisualElement currentImageElement;
-        private Image[] images;
-
-        protected override void CreateChildElements()
+        this.mainPanel = new DockLayoutPanel();
+        this.mainPanel.LastChildFill = true;
+        this.Children.Add(this.mainPanel);
+        this.leftButtonElement = new LightVisualElement();
+        this.leftButtonElement.Text = "<--";
+        this.leftButtonElement.DrawBorder = true;
+        this.mainPanel.Children.Add(this.leftButtonElement);
+        DockLayoutPanel.SetDock(this.leftButtonElement, Telerik.WinControls.Layouts.Dock.Left);
+        this.leftButtonElement.Click += leftButtonElement_Click;
+        this.rightButtonElement = new LightVisualElement();
+        this.rightButtonElement.Text = "-->";
+        this.rightButtonElement.DrawFill = true;
+        this.rightButtonElement.BackColor = Color.Green;
+        this.mainPanel.Children.Add(this.rightButtonElement);
+        DockLayoutPanel.SetDock(this.rightButtonElement, Telerik.WinControls.Layouts.Dock.Right);
+        this.rightButtonElement.Click += rightButtonElement_Click;
+        this.currentImageElement = new LightVisualElement();
+        this.mainPanel.Children.Add(this.currentImageElement);
+        string imageFilesDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+        string[] imageFiles = Directory.GetFiles(imageFilesDirectory, "*.jpg");
+        this.images = new Image[imageFiles.Length];
+        for (int i = 0; i < imageFiles.Length; i++)
         {
-            this.mainPanel = new DockLayoutPanel();
-            this.mainPanel.LastChildFill = true;
-            this.Children.Add(this.mainPanel);
-
-            this.leftButtonElement = new LightVisualElement();
-            this.leftButtonElement.Text = "<--";
-            this.leftButtonElement.DrawBorder = true;
-            this.mainPanel.Children.Add(this.leftButtonElement);
-            DockLayoutPanel.SetDock(this.leftButtonElement, Telerik.WinControls.Layouts.Dock.Left);
-            this.leftButtonElement.Click += leftButtonElement_Click;
-
-            this.rightButtonElement = new LightVisualElement();
-            this.rightButtonElement.Text = "-->";
-            this.rightButtonElement.DrawFill = true;
-            this.rightButtonElement.BackColor = Color.Green;
-            this.mainPanel.Children.Add(this.rightButtonElement);
-            DockLayoutPanel.SetDock(this.rightButtonElement, Telerik.WinControls.Layouts.Dock.Right);
-            this.rightButtonElement.Click += rightButtonElement_Click;
-
-            this.currentImageElement = new LightVisualElement();
-            this.mainPanel.Children.Add(this.currentImageElement);
-
-            string imageFilesDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
-            string[] imageFiles = Directory.GetFiles(imageFilesDirectory, "*.jpg");
-            this.images = new Image[imageFiles.Length];
-
-            for (int i = 0; i < imageFiles.Length; i++)
-            {
-                this.images[i] = new Bitmap(Image.FromFile(imageFiles[i]), new Size(300, 100));
-            }
-
-            if (this.images.Length >= 0)
-            {
-                this.currentImageElement.Image = this.images[0];
-            }
-
-            base.CreateChildElements();
+            this.images[i] = new Bitmap(Image.FromFile(imageFiles[i]), new Size(300, 100));
         }
-
-        private void rightButtonElement_Click(object sender, EventArgs e)
+        if (this.images.Length >= 0)
         {
-            int currentImageIndex = Array.IndexOf(this.images, this.currentImageElement.Image);
-            if (++currentImageIndex <= this.images.Length - 1)
-            {
-                this.currentImageElement.Image = this.images[currentImageIndex];
-            }
+            this.currentImageElement.Image = this.images[0];
         }
-
-        private void leftButtonElement_Click(object sender, EventArgs e)
+        base.CreateChildElements();
+    }
+    private void rightButtonElement_Click(object sender, EventArgs e)
+    {
+        int currentImageIndex = Array.IndexOf(this.images, this.currentImageElement.Image);
+        if (++currentImageIndex <= this.images.Length - 1)
         {
-            int currentImageIndex = Array.IndexOf(this.images, this.currentImageElement.Image);
-            if (--currentImageIndex >= 0)
-            {
-                this.currentImageElement.Image = this.images[currentImageIndex];
-            }
+            this.currentImageElement.Image = this.images[currentImageIndex];
         }
     }
+    private void leftButtonElement_Click(object sender, EventArgs e)
+    {
+        int currentImageIndex = Array.IndexOf(this.images, this.currentImageElement.Image);
+        if (--currentImageIndex >= 0)
+        {
+            this.currentImageElement.Image = this.images[currentImageIndex];
+        }
+    }
+}
+
 ````
 ````VB.NET
 Public Class MyLightVisualElement
@@ -214,19 +205,16 @@ Public Class MyLightVisualElement
     Private rightButtonElement As LightVisualElement
     Private currentImageElement As LightVisualElement
     Private images() As System.Drawing.Image
-
     Protected Overrides Sub CreateChildElements()
         Me.mainPanel = New DockLayoutPanel()
         Me.mainPanel.LastChildFill = True
         Me.Children.Add(Me.mainPanel)
-
         Me.leftButtonElement = New LightVisualElement()
         Me.leftButtonElement.Text = "<--"
         Me.leftButtonElement.DrawBorder = True
         Me.mainPanel.Children.Add(Me.leftButtonElement)
         DockLayoutPanel.SetDock(Me.leftButtonElement, Telerik.WinControls.Layouts.Dock.Left)
         AddHandler Me.leftButtonElement.Click, AddressOf leftButtonElement_Click
-
         Me.rightButtonElement = New LightVisualElement()
         Me.rightButtonElement.Text = "-->"
         Me.rightButtonElement.DrawFill = True
@@ -234,32 +222,25 @@ Public Class MyLightVisualElement
         Me.mainPanel.Children.Add(Me.rightButtonElement)
         DockLayoutPanel.SetDock(Me.rightButtonElement, Telerik.WinControls.Layouts.Dock.Right)
         AddHandler Me.rightButtonElement.Click, AddressOf rightButtonElement_Click
-
         Me.currentImageElement = New LightVisualElement()
         Me.mainPanel.Children.Add(Me.currentImageElement)
-
         Dim imageFilesDirectory As String = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures)
         Dim imageFiles As String() = Directory.GetFiles(imageFilesDirectory, "*.jpg")
         ReDim images(imageFiles.Length - 1)
-
         For i As Integer = 0 To imageFiles.Length - 1
             Me.images(i) = New System.Drawing.Bitmap(System.Drawing.Image.FromFile(imageFiles(i)), New System.Drawing.Size(300, 100))
         Next
-
         If Me.images.Length >= 0 Then
             Me.currentImageElement.Image = Me.images(0)
         End If
-
         MyBase.CreateChildElements()
     End Sub
-
     Private Sub rightButtonElement_Click(sender As Object, e As EventArgs)
         Dim currentImageIndex As Integer = Array.IndexOf(Me.images, Me.currentImageElement.Image)
         If System.Threading.Interlocked.Increment(currentImageIndex) <= Me.images.Length - 1 Then
             Me.currentImageElement.Image = Me.images(currentImageIndex)
         End If
     End Sub
-
     Private Sub leftButtonElement_Click(sender As Object, e As EventArgs)
         Dim currentImageIndex As Integer = Array.IndexOf(Me.images, Me.currentImageElement.Image)
         If System.Threading.Interlocked.Decrement(currentImageIndex) >= 0 Then
@@ -267,7 +248,7 @@ Public Class MyLightVisualElement
         End If
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}

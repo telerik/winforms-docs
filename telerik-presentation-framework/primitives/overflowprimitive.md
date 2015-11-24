@@ -20,17 +20,18 @@ The OverflowPrimitive is a visual indicator and button that more choices are av
 {{source=..\SamplesVB\TPF\Primitives\OverflowPrimitive1\MyOverflowPrimitiveElement.vb region=myOverflowPrimitiveElement}} 
 
 ````C#
-    public class MyOverflowPrimitiveElement : RadElement
+public class MyOverflowPrimitiveElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
-        {
-            OverflowPrimitive overflowPrimitive = new OverflowPrimitive(ArrowDirection.Down);
-            overflowPrimitive.MinSize = new Size(30, 30);
-            overflowPrimitive.ForeColor = Color.Blue;
-            this.Children.Add(overflowPrimitive);
-            base.CreateChildElements();
-        }
+        OverflowPrimitive overflowPrimitive = new OverflowPrimitive(ArrowDirection.Down);
+        overflowPrimitive.MinSize = new Size(30, 30);
+        overflowPrimitive.ForeColor = Color.Blue;
+        this.Children.Add(overflowPrimitive);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class MyOverflowPrimitiveElement
@@ -43,7 +44,7 @@ Public Class MyOverflowPrimitiveElement
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}

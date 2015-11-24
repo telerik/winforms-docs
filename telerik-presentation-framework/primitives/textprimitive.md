@@ -39,24 +39,25 @@ Use the __TextPrimitive__ class whenever you need to display text as part of ren
 {{source=..\SamplesVB\TPF\Primitives\TextPrimitive1\MyTextPrimitiveElement.vb region=myTextPrimitiveElement}} 
 
 ````C#
-    public class MyTextPrimitiveElement : RadElement
+public class MyTextPrimitiveElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
-        {
-            TextPrimitive textPrimitive = new TextPrimitive();
-            textPrimitive.Class = "MyTextPrimtiveClass";
-            textPrimitive.Font = new Font("Arial", 9F, FontStyle.Bold);
-            textPrimitive.ForeColor = Color.Blue;
-            textPrimitive.TextAlignment = ContentAlignment.BottomLeft;
-            textPrimitive.TextWrap = true;
-            textPrimitive.Shadow =
-                new Telerik.WinControls.Paint.ShadowSettings(new Point(2, 2), Color.LightGray);
-            textPrimitive.Text = "This is a text primitive example that will be clipped " +
-                "according to the TextFormatFlags settings and MaxSize";
-            this.Children.Add(textPrimitive);
-            base.CreateChildElements();
-        }
+        TextPrimitive textPrimitive = new TextPrimitive();
+        textPrimitive.Class = "MyTextPrimtiveClass";
+        textPrimitive.Font = new Font("Arial", 9F, FontStyle.Bold);
+        textPrimitive.ForeColor = Color.Blue;
+        textPrimitive.TextAlignment = ContentAlignment.BottomLeft;
+        textPrimitive.TextWrap = true;
+        textPrimitive.Shadow =
+            new Telerik.WinControls.Paint.ShadowSettings(new Point(2, 2), Color.LightGray);
+        textPrimitive.Text = "This is a text primitive example that will be clipped " +
+            "according to the TextFormatFlags settings and MaxSize";
+        this.Children.Add(textPrimitive);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class MyTextPrimitiveElement
@@ -74,7 +75,7 @@ Public Class MyTextPrimitiveElement
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}

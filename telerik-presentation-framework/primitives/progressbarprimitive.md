@@ -22,33 +22,34 @@ ProgressBarPrimitive is a specialized descendant of [FillPrimitive]({%slug winfo
 {{source=..\SamplesVB\TPF\Primitives\ProgressBarPrimitive1\MyProgressBarPrimitiveElement.vb region=myProgressBarPrimitiveElement}} 
 
 ````C#
-    public class MyProgressBarPrimitiveElement : RadElement
+public class MyProgressBarPrimitiveElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
-        {
-            BorderPrimitive borderPrimitive = new BorderPrimitive();
-            borderPrimitive.BoxStyle = BorderBoxStyle.OuterInnerBorders;
-            borderPrimitive.GradientStyle = GradientStyles.Solid;
-            borderPrimitive.ForeColor = Color.Blue;
-            borderPrimitive.InnerColor = Color.LightSkyBlue;  
-            ProgressBarPrimitive progressBarPrimitive = new ProgressBarPrimitive();
-            progressBarPrimitive.GradientStyle = GradientStyles.Linear;
-            progressBarPrimitive.NumberOfColors = 4;
-            progressBarPrimitive.Orientation = ProgressOrientation.Left;
-            progressBarPrimitive.Value1 = 20;
-            progressBarPrimitive.Value2 = 70;
-            progressBarPrimitive.Minimum = 1;
-            progressBarPrimitive.Maximum = 100;
-            progressBarPrimitive.BackColor = Color.Aqua;
-            progressBarPrimitive.BackColor2 = Color.Blue;
-            progressBarPrimitive.BackColor3 = Color.SkyBlue;
-            progressBarPrimitive.BackColor4 = Color.LightSkyBlue;
-            borderPrimitive.ZIndex = 1;
-            this.Children.Add(borderPrimitive);
-            this.Children.Add(progressBarPrimitive);
-            base.CreateChildElements();
-        }
+        BorderPrimitive borderPrimitive = new BorderPrimitive();
+        borderPrimitive.BoxStyle = BorderBoxStyle.OuterInnerBorders;
+        borderPrimitive.GradientStyle = GradientStyles.Solid;
+        borderPrimitive.ForeColor = Color.Blue;
+        borderPrimitive.InnerColor = Color.LightSkyBlue;  
+        ProgressBarPrimitive progressBarPrimitive = new ProgressBarPrimitive();
+        progressBarPrimitive.GradientStyle = GradientStyles.Linear;
+        progressBarPrimitive.NumberOfColors = 4;
+        progressBarPrimitive.Orientation = ProgressOrientation.Left;
+        progressBarPrimitive.Value1 = 20;
+        progressBarPrimitive.Value2 = 70;
+        progressBarPrimitive.Minimum = 1;
+        progressBarPrimitive.Maximum = 100;
+        progressBarPrimitive.BackColor = Color.Aqua;
+        progressBarPrimitive.BackColor2 = Color.Blue;
+        progressBarPrimitive.BackColor3 = Color.SkyBlue;
+        progressBarPrimitive.BackColor4 = Color.LightSkyBlue;
+        borderPrimitive.ZIndex = 1;
+        this.Children.Add(borderPrimitive);
+        this.Children.Add(progressBarPrimitive);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class MyProgressBarPrimitiveElement
@@ -77,7 +78,7 @@ Public Class MyProgressBarPrimitiveElement
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}

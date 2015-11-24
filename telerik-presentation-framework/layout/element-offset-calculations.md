@@ -52,17 +52,18 @@ The example below shows a FillPrimitive where the PositionOffset if 5 pixels dow
 {{source=..\SamplesVB\TPF\Layouts\CascadeLayoutPanel.vb region=positionOffset}} 
 
 ````C#
-            FillPrimitive rectanglePrimitive = new FillPrimitive();
-            rectanglePrimitive.ForeColor = Color.Red;
-            rectanglePrimitive.MinSize = new Size(20, 20);
-            rectanglePrimitive.PositionOffset = new SizeF(5, 5);
+FillPrimitive rectanglePrimitive = new FillPrimitive();
+rectanglePrimitive.ForeColor = Color.Red;
+rectanglePrimitive.MinSize = new Size(20, 20);
+rectanglePrimitive.PositionOffset = new SizeF(5, 5);
+
 ````
 ````VB.NET
-        Dim rectanglePrimitive As New FillPrimitive()
-        rectanglePrimitive.ForeColor = Color.Red
-        rectanglePrimitive.MinSize = New Size(20, 20)
-        rectanglePrimitive.PositionOffset = New SizeF(5, 5)
-        '
+Dim rectanglePrimitive As New FillPrimitive()
+rectanglePrimitive.ForeColor = Color.Red
+rectanglePrimitive.MinSize = New Size(20, 20)
+rectanglePrimitive.PositionOffset = New SizeF(5, 5)
+
 ````
 
 {{endregion}}

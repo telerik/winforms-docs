@@ -37,13 +37,14 @@ To enable or disable a gesture,use the __EnableGesture__ and __DisableGesture__ 
 {{source=..\SamplesVB\TPF\Touch\TouchGesturesForm.vb region=callingMethods}} 
 
 ````C#
-            this.radButton1.EnableGesture(GestureType.All);
-            this.radButton1.DisableGesture(GestureType.Zoom);
+this.radButton1.EnableGesture(GestureType.All);
+this.radButton1.DisableGesture(GestureType.Zoom);
+
 ````
 ````VB.NET
-        Me.radButton1.EnableGesture(GestureType.All)
-        Me.radButton1.DisableGesture(GestureType.Zoom)
-        '
+Me.radButton1.EnableGesture(GestureType.All)
+Me.radButton1.DisableGesture(GestureType.Zoom)
+
 ````
 
 {{endregion}} 
@@ -102,55 +103,48 @@ The following example will demonstrate how we can use this functionality to drag
 {{source=..\SamplesVB\TPF\Touch\CustomPanel.vb region=touchPanel}} 
 
 ````C#
-    public class CustomPanel : RadControl
+public class CustomPanel : RadControl
+{
+    public class CustomPanelLayout : Telerik.WinControls.Layouts.LayoutPanel
     {
-        public class CustomPanelLayout : Telerik.WinControls.Layouts.LayoutPanel
-        {
-        }
-
-        public CustomPanel()
-        {
-            this.EnableGesture(GestureType.All);
-        }
-
-        CustomPanelLayout m_layout;
-        RadButtonElement button;
-
-        protected override void CreateChildItems(RadElement parent)
-        {
-            base.CreateChildItems(parent);
-            m_layout = new CustomPanelLayout();
-            parent.Children.Add(m_layout);
-
-            button = new RadButtonElement();
-            button.AutoSize = false;
-            button.Size = new Size(100, 100);
-            button.Location = new Point(100, 100);
-            button.Text = "RadButtonElement";
-            this.m_layout.Children.Add(button);
-
-            button.PanGesture += new PanGestureEventHandler(button_PanGesture);
-            button.ZoomGesture += new ZoomGestureEventHandler(button_ZoomGesture);
-            button.RotateGesture += new RotateGestureEventHandler(button_RotateGesture);
-        }
-
-        void button_RotateGesture(object sender, RotateGestureEventArgs e)
-        {
-            button.AngleTransform -= (float)(e.Angle * 180D / Math.PI);
-        }
-
-        void button_ZoomGesture(object sender, ZoomGestureEventArgs e)
-        {
-            button.ScaleTransform = new SizeF(
-                (float)(button.ScaleTransform.Width * e.ZoomFactor),
-                (float)(button.ScaleTransform.Height * e.ZoomFactor));
-        }
-
-        void button_PanGesture(object sender, PanGestureEventArgs e)
-        {
-            button.Location = new Point(button.Location.X + e.Offset.Width, button.Location.Y + e.Offset.Height);
-        }
     }
+    public CustomPanel()
+    {
+        this.EnableGesture(GestureType.All);
+    }
+    CustomPanelLayout m_layout;
+    RadButtonElement button;
+    protected override void CreateChildItems(RadElement parent)
+    {
+        base.CreateChildItems(parent);
+        m_layout = new CustomPanelLayout();
+        parent.Children.Add(m_layout);
+        button = new RadButtonElement();
+        button.AutoSize = false;
+        button.Size = new Size(100, 100);
+        button.Location = new Point(100, 100);
+        button.Text = "RadButtonElement";
+        this.m_layout.Children.Add(button);
+        button.PanGesture += new PanGestureEventHandler(button_PanGesture);
+        button.ZoomGesture += new ZoomGestureEventHandler(button_ZoomGesture);
+        button.RotateGesture += new RotateGestureEventHandler(button_RotateGesture);
+    }
+    void button_RotateGesture(object sender, RotateGestureEventArgs e)
+    {
+        button.AngleTransform -= (float)(e.Angle * 180D / Math.PI);
+    }
+    void button_ZoomGesture(object sender, ZoomGestureEventArgs e)
+    {
+        button.ScaleTransform = new SizeF(
+            (float)(button.ScaleTransform.Width * e.ZoomFactor),
+            (float)(button.ScaleTransform.Height * e.ZoomFactor));
+    }
+    void button_PanGesture(object sender, PanGestureEventArgs e)
+    {
+        button.Location = new Point(button.Location.X + e.Offset.Width, button.Location.Y + e.Offset.Height);
+    }
+}
+
 ````
 ````VB.NET
 Public Class CustomPanel
@@ -158,44 +152,36 @@ Public Class CustomPanel
     Public Class CustomPanelLayout
         Inherits Telerik.WinControls.Layouts.LayoutPanel
     End Class
-
     Public Sub New()
         Me.EnableGesture(GestureType.All)
     End Sub
-
     Private m_layout As CustomPanelLayout
     Private button As RadButtonElement
-
     Protected Overrides Sub CreateChildItems(ByVal parent As RadElement)
         MyBase.CreateChildItems(parent)
         m_layout = New CustomPanelLayout()
         parent.Children.Add(m_layout)
-
         button = New RadButtonElement()
         button.AutoSize = False
         button.Size = New Size(100, 100)
         button.Location = New Point(100, 100)
         button.Text = "RadButtonElement"
         Me.m_layout.Children.Add(button)
-
         AddHandler button.PanGesture, AddressOf button_PanGesture
         AddHandler button.ZoomGesture, AddressOf button_ZoomGesture
         AddHandler button.RotateGesture, AddressOf button_RotateGesture
     End Sub
-
     Private Sub button_RotateGesture(ByVal sender As Object, ByVal e As RotateGestureEventArgs)
         button.AngleTransform -= CSng(e.Angle * 180.0R / Math.PI)
     End Sub
-
     Private Sub button_ZoomGesture(ByVal sender As Object, ByVal e As ZoomGestureEventArgs)
         button.ScaleTransform = New SizeF(CSng(button.ScaleTransform.Width * e.ZoomFactor), CSng(button.ScaleTransform.Height * e.ZoomFactor))
     End Sub
-
     Private Sub button_PanGesture(ByVal sender As Object, ByVal e As PanGestureEventArgs)
         button.Location = New Point(button.Location.X + e.Offset.Width, button.Location.Y + e.Offset.Height)
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 

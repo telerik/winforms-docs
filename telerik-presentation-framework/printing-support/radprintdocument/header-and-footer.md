@@ -62,51 +62,44 @@ Is an example demonstrating how to customize the header and footer:
 {{source=..\SamplesVB\TPF\Printing support\RadPrintDocument1.vb region=HeaderAndFooter}} 
 
 ````C#
-            RadPrintDocument document = new RadPrintDocument();
+RadPrintDocument document = new RadPrintDocument();
+document.HeaderHeight = 30;
+document.HeaderFont = new Font("Arial", 22);
+document.Logo = System.Drawing.Image.FromFile(@"C:\MyLogo.png");
+document.LeftHeader = "[Logo]";
+document.MiddleHeader = "Middle header";
+document.RightHeader = "Right header";
+document.ReverseHeaderOnEvenPages = true;
+document.FooterHeight = 30;
+document.FooterFont = new Font("Arial", 22);
+document.LeftFooter = "Left footer";
+document.MiddleFooter = "Middle footer";
+document.RightFooter = "Right footer";
+document.ReverseFooterOnEvenPages = true;
+document.AssociatedObject = this.radGridView1;
+RadPrintPreviewDialog dialog = new RadPrintPreviewDialog(document);
+dialog.Show();
 
-            document.HeaderHeight = 30;
-            document.HeaderFont = new Font("Arial", 22);
-            document.Logo = System.Drawing.Image.FromFile(@"C:\MyLogo.png");
-            document.LeftHeader = "[Logo]";
-            document.MiddleHeader = "Middle header";
-            document.RightHeader = "Right header";
-            document.ReverseHeaderOnEvenPages = true;
-
-            document.FooterHeight = 30;
-            document.FooterFont = new Font("Arial", 22);
-            document.LeftFooter = "Left footer";
-            document.MiddleFooter = "Middle footer";
-            document.RightFooter = "Right footer";
-            document.ReverseFooterOnEvenPages = true;
-
-            document.AssociatedObject = this.radGridView1;
-
-            RadPrintPreviewDialog dialog = new RadPrintPreviewDialog(document);
-            dialog.Show();
 ````
 ````VB.NET
-        Dim document As New RadPrintDocument()
+Dim document As New RadPrintDocument()
+document.HeaderHeight = 30
+document.HeaderFont = New Drawing.Font("Arial", 22)
+document.Logo = System.Drawing.Image.FromFile("C:\MyLogo.png")
+document.LeftHeader = "[Logo]"
+document.MiddleHeader = "Middle header"
+document.RightHeader = "Right header"
+document.ReverseHeaderOnEvenPages = True
+document.FooterHeight = 30
+document.FooterFont = New Drawing.Font("Arial", 22)
+document.LeftFooter = "Left footer"
+document.MiddleFooter = "Middle footer"
+document.RightFooter = "Right footer"
+document.ReverseFooterOnEvenPages = True
+document.AssociatedObject = Me.RadGridView1
+Dim dialog As New RadPrintPreviewDialog(document)
+dialog.Show()
 
-        document.HeaderHeight = 30
-        document.HeaderFont = New Drawing.Font("Arial", 22)
-        document.Logo = System.Drawing.Image.FromFile("C:\MyLogo.png")
-        document.LeftHeader = "[Logo]"
-        document.MiddleHeader = "Middle header"
-        document.RightHeader = "Right header"
-        document.ReverseHeaderOnEvenPages = True
-
-        document.FooterHeight = 30
-        document.FooterFont = New Drawing.Font("Arial", 22)
-        document.LeftFooter = "Left footer"
-        document.MiddleFooter = "Middle footer"
-        document.RightFooter = "Right footer"
-        document.ReverseFooterOnEvenPages = True
-
-        document.AssociatedObject = Me.RadGridView1
-
-        Dim dialog As New RadPrintPreviewDialog(document)
-        dialog.Show()
-        '
 ````
 
 {{endregion}} 
@@ -138,13 +131,14 @@ Here is a sample:
 {{source=..\SamplesVB\TPF\Printing support\RadPrintDocument1.vb region=SpecialStrings}} 
 
 ````C#
-            RadPrintDocument document = new RadPrintDocument();
-            document.MiddleHeader = "Page [Page #] of [Total Pages]. Printed on [Date Printed] [Time Printed].";
+RadPrintDocument document = new RadPrintDocument();
+document.MiddleHeader = "Page [Page #] of [Total Pages]. Printed on [Date Printed] [Time Printed].";
+
 ````
 ````VB.NET
-        Dim document As New RadPrintDocument()
-        document.MiddleHeader = "Page [Page #] of [Total Pages]. Printed on [Date Printed] [Time Printed]."
-        '
+Dim document As New RadPrintDocument()
+document.MiddleHeader = "Page [Page #] of [Total Pages]. Printed on [Date Printed] [Time Printed]."
+
 ````
 
 {{endregion}} 

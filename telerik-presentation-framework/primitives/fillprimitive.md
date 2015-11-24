@@ -61,43 +61,43 @@ The example below iterates the GradientStyles enumeration and creates a FillPrim
 {{source=..\SamplesVB\TPF\Primitives\FillPrimitive1\MyFillPrimitiveElement.vb region=myFillPrimitiveElement}} 
 
 ````C#
-    public class MyFillPrimitiveElement : RadElement
+public class MyFillPrimitiveElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
+        Array gradientStyleValues = Enum.GetValues(typeof(GradientStyles));
+        StackLayoutPanel layoutPanel = new StackLayoutPanel();
+        layoutPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
+        foreach (GradientStyles gradientStyle in gradientStyleValues)
         {
-            Array gradientStyleValues = Enum.GetValues(typeof(GradientStyles));
-            StackLayoutPanel layoutPanel = new StackLayoutPanel();
-            layoutPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-
-            foreach (GradientStyles gradientStyle in gradientStyleValues)
-            {
-                StackLayoutPanel panel = new StackLayoutPanel();
-                panel.Orientation = System.Windows.Forms.Orientation.Vertical;
-                panel.MinSize = new Size(80, 80);
-                panel.Margin = new System.Windows.Forms.Padding(3);
-                FillPrimitive fillPrimitive = new FillPrimitive();
-                fillPrimitive.NumberOfColors = 4;
-                fillPrimitive.GradientStyle = gradientStyle;
-                fillPrimitive.GradientAngle = 90;
-                fillPrimitive.GradientPercentage = 0.18F;
-                fillPrimitive.GradientPercentage2 = 0.57F;
-                fillPrimitive.BackColor = Color.FromArgb(0, 79, 191);
-                fillPrimitive.BackColor2 = Color.FromArgb(0, 94, 199);
-                fillPrimitive.BackColor3 = Color.FromArgb(121, 200, 251);
-                fillPrimitive.BackColor4 = Color.FromArgb(206, 243, 255);
-                fillPrimitive.MinSize = new Size(75, 75);
-                panel.Children.Add(fillPrimitive);
-                TextPrimitive textPrimitive = new TextPrimitive();
-                textPrimitive.Text = gradientStyle.ToString("g");
-                textPrimitive.ForeColor = Color.Black;
-                textPrimitive.Font = new Font(textPrimitive.Font.FontFamily, 9.25f, FontStyle.Bold);
-                panel.Children.Add(textPrimitive);
-                layoutPanel.Children.Add(panel);
-            }
-            this.Children.Add(layoutPanel);
-            base.CreateChildElements();
+            StackLayoutPanel panel = new StackLayoutPanel();
+            panel.Orientation = System.Windows.Forms.Orientation.Vertical;
+            panel.MinSize = new Size(80, 80);
+            panel.Margin = new System.Windows.Forms.Padding(3);
+            FillPrimitive fillPrimitive = new FillPrimitive();
+            fillPrimitive.NumberOfColors = 4;
+            fillPrimitive.GradientStyle = gradientStyle;
+            fillPrimitive.GradientAngle = 90;
+            fillPrimitive.GradientPercentage = 0.18F;
+            fillPrimitive.GradientPercentage2 = 0.57F;
+            fillPrimitive.BackColor = Color.FromArgb(0, 79, 191);
+            fillPrimitive.BackColor2 = Color.FromArgb(0, 94, 199);
+            fillPrimitive.BackColor3 = Color.FromArgb(121, 200, 251);
+            fillPrimitive.BackColor4 = Color.FromArgb(206, 243, 255);
+            fillPrimitive.MinSize = new Size(75, 75);
+            panel.Children.Add(fillPrimitive);
+            TextPrimitive textPrimitive = new TextPrimitive();
+            textPrimitive.Text = gradientStyle.ToString("g");
+            textPrimitive.ForeColor = Color.Black;
+            textPrimitive.Font = new Font(textPrimitive.Font.FontFamily, 9.25f, FontStyle.Bold);
+            panel.Children.Add(textPrimitive);
+            layoutPanel.Children.Add(panel);
         }
+        this.Children.Add(layoutPanel);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class MyFillPrimitiveElement
@@ -106,7 +106,6 @@ Public Class MyFillPrimitiveElement
         Dim gradientStyleValues As Array = System.Enum.GetValues(GetType(GradientStyles))
         Dim layoutPanel As New StackLayoutPanel()
         layoutPanel.Orientation = System.Windows.Forms.Orientation.Horizontal
-
         For Each gradientStyle As GradientStyles In gradientStyleValues
             Dim panel As New StackLayoutPanel()
             panel.Orientation = System.Windows.Forms.Orientation.Vertical
@@ -135,7 +134,7 @@ Public Class MyFillPrimitiveElement
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}

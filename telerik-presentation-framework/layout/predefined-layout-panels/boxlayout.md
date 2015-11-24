@@ -31,42 +31,37 @@ Here is how to create a element with BoxLayout and set the Proportion:
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.vb region=myBoxLayoutPanelElement}} 
 
 ````C#
-    public class MyBoxLayoutPanelElement : RadElement
+public class MyBoxLayoutPanelElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
-        {
-            BoxLayout boxPanel = new BoxLayout();
+        BoxLayout boxPanel = new BoxLayout();
+        RadButtonElement button1 = new RadButtonElement("25%");
+        BoxLayout.SetProportion(button1, 1f);
+        RadButtonElement button2 = new RadButtonElement("75%");
+        BoxLayout.SetProportion(button2, 3f);
+        boxPanel.Children.Add(button1);
+        boxPanel.Children.Add(button2);
+        this.Children.Add(boxPanel);
+        base.CreateChildElements();
+    }
 
-            RadButtonElement button1 = new RadButtonElement("25%");
-            BoxLayout.SetProportion(button1, 1f);
-            RadButtonElement button2 = new RadButtonElement("75%");
-            BoxLayout.SetProportion(button2, 3f);
-
-            boxPanel.Children.Add(button1);
-            boxPanel.Children.Add(button2);
-
-            this.Children.Add(boxPanel);
-            base.CreateChildElements();
-        }
 ````
 ````VB.NET
 Public Class MyBoxLayoutPanelElement
     Inherits RadElement
     Protected Overrides Sub CreateChildElements()
         Dim boxPanel As New BoxLayout()
-
         Dim button1 As New RadButtonElement("25%")
         BoxLayout.SetProportion(button1, 1.0F)
         Dim button2 As New RadButtonElement("75%")
         BoxLayout.SetProportion(button2, 3.0F)
-
         boxPanel.Children.Add(button1)
         boxPanel.Children.Add(button2)
-
         Me.Children.Add(boxPanel)
         MyBase.CreateChildElements()
     End Sub
-    '
+
 ````
 
 {{endregion}} 
@@ -79,25 +74,25 @@ And here is how to embed this element in a class:
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.vb region=boxLayoutClass}} 
 
 ````C#
-    public class MyBoxLayoutPanelControl : RadControl
+public class MyBoxLayoutPanelControl : RadControl
+{
+    protected override void CreateChildItems(RadElement parent)
     {
-        protected override void CreateChildItems(RadElement parent)
-        {
-            base.CreateChildItems(parent);
-            parent.Children.Add(new MyBoxLayoutPanelElement());
-        }
+        base.CreateChildItems(parent);
+        parent.Children.Add(new MyBoxLayoutPanelElement());
     }
+}
+
 ````
 ````VB.NET
 Class MyBoxLayoutPanelControl
     Inherits RadControl
-
     Protected Overrides Sub CreateChildItems(parent As RadElement)
         MyBase.CreateChildItems(parent)
         parent.Children.Add(New MyBoxLayoutPanelElement())
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -116,11 +111,12 @@ To arrange the elements in the panel vertically set the __Orientation__ of the B
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.vb region=orientation}} 
 
 ````C#
-            boxPanel.Orientation = Orientation.Vertical;
+boxPanel.Orientation = Orientation.Vertical;
+
 ````
 ````VB.NET
-        boxPanel.Orientation = Orientation.Vertical
-        '
+boxPanel.Orientation = Orientation.Vertical
+
 ````
 
 {{endregion}} 
@@ -137,40 +133,34 @@ For example, two if RadButtonElements, one *First* and the other *Last*, are add
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyBoxLayoutPanelElement.vb region=position1}} 
 
 ````C#
-            BoxLayout boxPanel = new BoxLayout();
+BoxLayout boxPanel = new BoxLayout();
+RadButtonElement button1 = new RadButtonElement("left");
+button1.StretchHorizontally = false;
+button1.SetValue(BoxLayout.StripPositionProperty, BoxLayout.StripPosition.First);
+button1.Size = new System.Drawing.Size(20, 20);
+RadButtonElement button2 = new RadButtonElement("right");
+button2.SetValue(BoxLayout.StripPositionProperty, BoxLayout.StripPosition.Last);
+button2.StretchHorizontally = false;
+button2.Size = new System.Drawing.Size(20, 20);
+boxPanel.Orientation = Orientation.Horizontal;
+boxPanel.Children.Add(button1);
+boxPanel.Children.Add(button2);
 
-            RadButtonElement button1 = new RadButtonElement("left");
-            button1.StretchHorizontally = false;
-            button1.SetValue(BoxLayout.StripPositionProperty, BoxLayout.StripPosition.First);
-            button1.Size = new System.Drawing.Size(20, 20);
-
-            RadButtonElement button2 = new RadButtonElement("right");
-            button2.SetValue(BoxLayout.StripPositionProperty, BoxLayout.StripPosition.Last);
-            button2.StretchHorizontally = false;
-            button2.Size = new System.Drawing.Size(20, 20);
-
-            boxPanel.Orientation = Orientation.Horizontal;
-            boxPanel.Children.Add(button1);
-            boxPanel.Children.Add(button2);
 ````
 ````VB.NET
+Dim boxPanel As New BoxLayout()
+Dim button1 As New RadButtonElement("left")
+button1.StretchHorizontally = False
+button1.SetValue(BoxLayout.StripPositionProperty, BoxLayout.StripPosition.First)
+button1.Size = New System.Drawing.Size(20, 20)
+Dim button2 As New RadButtonElement("right")
+button2.SetValue(BoxLayout.StripPositionProperty, BoxLayout.StripPosition.Last)
+button2.StretchHorizontally = False
+button2.Size = New System.Drawing.Size(20, 20)
+boxPanel.Orientation = Orientation.Horizontal
+boxPanel.Children.Add(button1)
+boxPanel.Children.Add(button2)
 
-        Dim boxPanel As New BoxLayout()
-
-        Dim button1 As New RadButtonElement("left")
-        button1.StretchHorizontally = False
-        button1.SetValue(BoxLayout.StripPositionProperty, BoxLayout.StripPosition.First)
-        button1.Size = New System.Drawing.Size(20, 20)
-
-        Dim button2 As New RadButtonElement("right")
-        button2.SetValue(BoxLayout.StripPositionProperty, BoxLayout.StripPosition.Last)
-        button2.StretchHorizontally = False
-        button2.Size = New System.Drawing.Size(20, 20)
-
-        boxPanel.Orientation = Orientation.Horizontal
-        boxPanel.Children.Add(button1)
-        boxPanel.Children.Add(button2)
-        '
 ````
 
 {{endregion}} 

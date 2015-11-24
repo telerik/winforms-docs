@@ -23,19 +23,20 @@ To get the watermark to show you have to set it up using the __Watermark__ prope
 {{source=..\SamplesVB\TPF\Printing support\RadPrintDocument1.vb region=Watermark}} 
 
 ````C#
-            RadPrintDocument document = new RadPrintDocument();
-            document.Watermark.Text = "Watermark";
-            document.Watermark.TextHOffset = 0;
-            document.Watermark.TextVOffset = 950;
-            document.Watermark.TextAngle = 300;
+RadPrintDocument document = new RadPrintDocument();
+document.Watermark.Text = "Watermark";
+document.Watermark.TextHOffset = 0;
+document.Watermark.TextVOffset = 950;
+document.Watermark.TextAngle = 300;
+
 ````
 ````VB.NET
-        Dim document As New RadPrintDocument()
-        document.Watermark.Text = "Watermark"
-        document.Watermark.TextHOffset = 0
-        document.Watermark.TextVOffset = 950
-        document.Watermark.TextAngle = 300
-        '
+Dim document As New RadPrintDocument()
+document.Watermark.Text = "Watermark"
+document.Watermark.TextHOffset = 0
+document.Watermark.TextVOffset = 950
+document.Watermark.TextAngle = 300
+
 ````
 
 {{endregion}} 

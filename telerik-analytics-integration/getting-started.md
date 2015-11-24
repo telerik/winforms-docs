@@ -53,11 +53,13 @@ This is all that is necessary to start monitoring your application. By default t
 {{source=..\SamplesVB\Eqatec\Eqatec.vb region=disable}} 
 
 ````C#
-            this.radButton1.EnableAnalytics = false;
+this.radButton1.EnableAnalytics = false;
+
 ````
 ````VB.NET
-        Me.RadButton1.EnableAnalytics = False
-        '
+Me.RadButton1.EnableAnalytics = False
+'
+
 ````
 
 {{endregion}} 

@@ -26,22 +26,23 @@ FocusPrimitive supplies user interface cues that an element has received focus. 
 {{source=..\SamplesVB\TPF\Primitives\FocusPrimitive1\MyFocusPrimitiveElement.vb region=myFocusPrimitiveElement}} 
 
 ````C#
-    public class MyFocusPrimitiveElement : RadElement
+public class MyFocusPrimitiveElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
-        {
-            BorderPrimitive borderPrimitive = new BorderPrimitive();
-            borderPrimitive.Class = "MyBorderPrimtiveClass";
-            borderPrimitive.BoxStyle = BorderBoxStyle.SingleBorder;
-            borderPrimitive.Width = 3;
-            borderPrimitive.ForeColor = Color.Red;
-            borderPrimitive.GradientStyle = GradientStyles.Solid;
-            FocusPrimitive focusPrimitive = new FocusPrimitive(borderPrimitive);
-            this.Children.Add(borderPrimitive);
-            this.Children.Add(focusPrimitive);
-            base.CreateChildElements();
-        }
+        BorderPrimitive borderPrimitive = new BorderPrimitive();
+        borderPrimitive.Class = "MyBorderPrimtiveClass";
+        borderPrimitive.BoxStyle = BorderBoxStyle.SingleBorder;
+        borderPrimitive.Width = 3;
+        borderPrimitive.ForeColor = Color.Red;
+        borderPrimitive.GradientStyle = GradientStyles.Solid;
+        FocusPrimitive focusPrimitive = new FocusPrimitive(borderPrimitive);
+        this.Children.Add(borderPrimitive);
+        this.Children.Add(focusPrimitive);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class MyFocusPrimitiveElement
@@ -59,7 +60,7 @@ Public Class MyFocusPrimitiveElement
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}

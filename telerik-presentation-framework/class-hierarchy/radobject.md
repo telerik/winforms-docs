@@ -35,41 +35,41 @@ __GetValue__ and __SetValue__ methods are used for getting and setting *local *v
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=MyRadObject}} 
 
 ````C#
-    internal class MyRadObject : RadObject
+internal class MyRadObject : RadObject
+{
+    public static readonly RadProperty HeightProperty =
+    RadProperty.Register("Height",
+    typeof(int),
+    typeof(MyRadObject),
+    new RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange | ElementPropertyOptions.AffectsMeasure));
+    public int Height
     {
-        public static readonly RadProperty HeightProperty =
-        RadProperty.Register("Height",
-        typeof(int),
-        typeof(MyRadObject),
-        new RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange | ElementPropertyOptions.AffectsMeasure));
-
-        public int Height
+        get
         {
-            get
-            {
-                return (int)this.GetValue(HeightProperty);
-            }
-            set
-            {
-                this.SetValue(HeightProperty, value);
-            }
+            return (int)this.GetValue(HeightProperty);
+        }
+        set
+        {
+            this.SetValue(HeightProperty, value);
         }
     }
+}
+
 ````
 ````VB.NET
-    Friend Class MyRadObject
-        Inherits RadObject
-        Public Shared ReadOnly HeightProperty As RadProperty = RadProperty.Register("Height", GetType(Integer), GetType(MyRadObject), New RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange Or ElementPropertyOptions.AffectsMeasure))
+Friend Class MyRadObject
+    Inherits RadObject
+    Public Shared ReadOnly HeightProperty As RadProperty = RadProperty.Register("Height", GetType(Integer), GetType(MyRadObject), New RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange Or ElementPropertyOptions.AffectsMeasure))
+    Public Property Height() As Integer
+        Get
+            Return CInt(Me.GetValue(HeightProperty))
+        End Get
+        Set(value As Integer)
+            Me.SetValue(HeightProperty, value)
+        End Set
+    End Property
+End Class
 
-        Public Property Height() As Integer
-            Get
-                Return CInt(Me.GetValue(HeightProperty))
-            End Get
-            Set(value As Integer)
-                Me.SetValue(HeightProperty, value)
-            End Set
-        End Property
-    End Class
 ````
 
 {{endregion}} 
@@ -84,11 +84,12 @@ The code snippet below reset the value of the *HeightProperty *declared in *MyRa
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=ResetValue}} 
 
 ````C#
-            radObject.ResetValue(MyRadObject.HeightProperty);
+radObject.ResetValue(MyRadObject.HeightProperty);
+
 ````
 ````VB.NET
-            radObject.ResetValue(MyRadObject.HeightProperty)
-            '
+radObject.ResetValue(MyRadObject.HeightProperty)
+
 ````
 
 {{endregion}} 
@@ -99,33 +100,35 @@ You can pass a second parameter to the __ResetValue__method to specify a reset f
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=ValueResetFlags}} 
 
 ````C#
-    [Flags]
-    public enum ValueResetFlags
-    {
-        None = 0,
-        Inherited = 1,
-        Binding = Inherited << 1,
-        TwoWayBindingLocal = Binding << 1,
-        Style = TwoWayBindingLocal << 1,
-        Animation = Style << 1,
-        Local = Animation << 1,
-        DefaultValueOverride = Local << 1,
-        All = Inherited | Binding | TwoWayBindingLocal | Style | Animation | Local | DefaultValueOverride
-    }
+[Flags]
+public enum ValueResetFlags
+{
+    None = 0,
+    Inherited = 1,
+    Binding = Inherited << 1,
+    TwoWayBindingLocal = Binding << 1,
+    Style = TwoWayBindingLocal << 1,
+    Animation = Style << 1,
+    Local = Animation << 1,
+    DefaultValueOverride = Local << 1,
+    All = Inherited | Binding | TwoWayBindingLocal | Style | Animation | Local | DefaultValueOverride
+}
+
 ````
 ````VB.NET
-    <Flags> _
-    Public Enum ValueResetFlags
-        None = 0
-        Inherited = 1
-        Binding = Inherited << 1
-        TwoWayBindingLocal = Binding << 1
-        Style = TwoWayBindingLocal << 1
-        Animation = Style << 1
-        Local = Animation << 1
-        DefaultValueOverride = Local << 1
-        All = Inherited Or Binding Or TwoWayBindingLocal Or Style Or Animation Or Local Or DefaultValueOverride
-    End Enum
+<Flags> _
+Public Enum ValueResetFlags
+    None = 0
+    Inherited = 1
+    Binding = Inherited << 1
+    TwoWayBindingLocal = Binding << 1
+    Style = TwoWayBindingLocal << 1
+    Animation = Style << 1
+    Local = Animation << 1
+    DefaultValueOverride = Local << 1
+    All = Inherited Or Binding Or TwoWayBindingLocal Or Style Or Animation Or Local Or DefaultValueOverride
+End Enum
+
 ````
 
 {{endregion}} 
@@ -138,11 +141,12 @@ Re-evaluates the property specified as a parameter. In the example below, the He
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=UpdateValue}} 
 
 ````C#
-            radObject.UpdateValue(MyRadObject.HeightProperty);
+radObject.UpdateValue(MyRadObject.HeightProperty);
+
 ````
 ````VB.NET
-            radObject.UpdateValue(MyRadObject.HeightProperty)
-            '
+radObject.UpdateValue(MyRadObject.HeightProperty)
+
 ````
 
 {{endregion}} 
@@ -155,85 +159,87 @@ The value source is the reason for the current value. __GetValueSource__method r
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=ValueSource}} 
 
 ````C#
-    public enum ValueSource : short
-    {
-        /// <summary>
-        /// Indicates that the reason is unknown.
-        /// </summary>
-        Unknown = 0,
-        /// <summary>
-        /// Indicates that the default value is set.
-        /// </summary>
-        DefaultValue,
-        /// <summary>
-        /// Indicates that the property changed is inherited.
-        /// </summary>
-        Inherited,
-        /// <summary>
-        /// An overriden default value, has higher priority than Default and Inherited source.
-        /// </summary>
-        DefaultValueOverride,
-        /// <summary>
-        /// Indicates that the reason for the property change is an applied theme.
-        /// </summary>
-        Style,
-        /// <summary>
-        /// Value is set locally through a CLR property setter.
-        /// </summary>
-        Local,
-        /// <summary>
-        /// Indicates that the reason for the property change is data binding.
-        /// </summary>
-        PropertyBinding,
-        /// <summary>
-        /// A value is applied through two-way binding.
-        /// </summary>
-        LocalFromBinding,
-        /// <summary>
-        /// Indicates that the reason for the property change is an animation effect.
-        /// </summary>
-        Animation,
-    }
+public enum ValueSource : short
+{
+    /// <summary>
+    /// Indicates that the reason is unknown.
+    /// </summary>
+    Unknown = 0,
+    /// <summary>
+    /// Indicates that the default value is set.
+    /// </summary>
+    DefaultValue,
+    /// <summary>
+    /// Indicates that the property changed is inherited.
+    /// </summary>
+    Inherited,
+    /// <summary>
+    /// An overriden default value, has higher priority than Default and Inherited source.
+    /// </summary>
+    DefaultValueOverride,
+    /// <summary>
+    /// Indicates that the reason for the property change is an applied theme.
+    /// </summary>
+    Style,
+    /// <summary>
+    /// Value is set locally through a CLR property setter.
+    /// </summary>
+    Local,
+    /// <summary>
+    /// Indicates that the reason for the property change is data binding.
+    /// </summary>
+    PropertyBinding,
+    /// <summary>
+    /// A value is applied through two-way binding.
+    /// </summary>
+    LocalFromBinding,
+    /// <summary>
+    /// Indicates that the reason for the property change is an animation effect.
+    /// </summary>
+    Animation,
+}
+
 ````
 ````VB.NET
-    Public Enum ValueSource As Short
-        ''' <summary>
-        ''' Indicates that the reason is unknown.
-        ''' </summary>
-        Unknown = 0
-        ''' <summary>
-        ''' Indicates that the default value is set.
-        ''' </summary>
-        DefaultValue
-        ''' <summary>
-        ''' Indicates that the property changed is inherited.
-        ''' </summary>
-        Inherited
-        ''' <summary>
-        ''' An overriden default value, has higher priority than Default and Inherited source.
-        ''' </summary>
-        DefaultValueOverride
-        ''' <summary>
-        ''' Indicates that the reason for the property change is an applied theme.
-        ''' </summary>
-        Style
-        ''' <summary>
-        ''' Value is set locally through a CLR property setter.
-        ''' </summary>
-        Local
-        ''' <summary>
-        ''' Indicates that the reason for the property change is data binding.
-        ''' </summary>
-        PropertyBinding
-        ''' <summary>
-        ''' A value is applied through two-way binding.
-        ''' </summary>
-        LocalFromBinding
-        ''' <summary>
-        ''' Indicates that the reason for the property change is an animation effect.
-        ''' </summary>
-        Animation
-    End Enum
+Public Enum ValueSource As Short
+    ''' <summary>
+    ''' Indicates that the reason is unknown.
+    ''' </summary>
+    Unknown = 0
+    ''' <summary>
+    ''' Indicates that the default value is set.
+    ''' </summary>
+    DefaultValue
+    ''' <summary>
+    ''' Indicates that the property changed is inherited.
+    ''' </summary>
+    Inherited
+    ''' <summary>
+    ''' An overriden default value, has higher priority than Default and Inherited source.
+    ''' </summary>
+    DefaultValueOverride
+    ''' <summary>
+    ''' Indicates that the reason for the property change is an applied theme.
+    ''' </summary>
+    Style
+    ''' <summary>
+    ''' Value is set locally through a CLR property setter.
+    ''' </summary>
+    Local
+    ''' <summary>
+    ''' Indicates that the reason for the property change is data binding.
+    ''' </summary>
+    PropertyBinding
+    ''' <summary>
+    ''' A value is applied through two-way binding.
+    ''' </summary>
+    LocalFromBinding
+    ''' <summary>
+    ''' Indicates that the reason for the property change is an animation effect.
+    ''' </summary>
+    Animation
+End Enum
+
 ````
 
 {{endregion}} 
@@ -246,16 +252,17 @@ Properties can be bound to other properties either one-way or two-way. The code 
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=BindingProperties}} 
 
 ````C#
-            MyRadObject radObject1 = new MyRadObject();
-            MyRadObject radObject2 = new MyRadObject();
-            radObject2.BindProperty(MyRadObject.HeightProperty, radObject1,
-            MyRadObject.HeightProperty, PropertyBindingOptions.OneWay);
+MyRadObject radObject1 = new MyRadObject();
+MyRadObject radObject2 = new MyRadObject();
+radObject2.BindProperty(MyRadObject.HeightProperty, radObject1,
+MyRadObject.HeightProperty, PropertyBindingOptions.OneWay);
+
 ````
 ````VB.NET
-            Dim radObject1 As New MyRadObject()
-            Dim radObject2 As New MyRadObject()
-            radObject2.BindProperty(MyRadObject.HeightProperty, radObject1, MyRadObject.HeightProperty, PropertyBindingOptions.OneWay)
-            '
+Dim radObject1 As New MyRadObject()
+Dim radObject2 As New MyRadObject()
+radObject2.BindProperty(MyRadObject.HeightProperty, radObject1, MyRadObject.HeightProperty, PropertyBindingOptions.OneWay)
+
 ````
 
 {{endregion}} 
@@ -284,25 +291,25 @@ You need to override *CoerceValue *method:
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=Coercion}} 
 
 ````C#
-        protected override object CoerceValue(RadPropertyValue propVal, object baseValue)
-        {
-            if (useCoercion && propVal.Property == MyRadObject.HeightProperty)
-            {
-                return 105; //coerce value which for the example sake is integer
-            }
+protected override object CoerceValue(RadPropertyValue propVal, object baseValue)
+{
+    if (useCoercion && propVal.Property == MyRadObject.HeightProperty)
+    {
+        return 105; //coerce value which for the example sake is integer
+    }
+    return base.CoerceValue(propVal, baseValue);
+}
 
-            return base.CoerceValue(propVal, baseValue);
-        }
 ````
 ````VB.NET
-        Protected Overrides Function CoerceValue(propVal As RadPropertyValue, baseValue As Object) As Object
-            If useCoercion AndAlso propVal.Property.Equals(MyRadObject.HeightProperty) Then
-                'coerce value which for the example sake is integer
-                Return 105
-            End If
+Protected Overrides Function CoerceValue(propVal As RadPropertyValue, baseValue As Object) As Object
+    If useCoercion AndAlso propVal.Property.Equals(MyRadObject.HeightProperty) Then
+        'coerce value which for the example sake is integer
+        Return 105
+    End If
+    Return MyBase.CoerceValue(propVal, baseValue)
+End Function
 
-            Return MyBase.CoerceValue(propVal, baseValue)
-        End Function
 ````
 
 {{endregion}} 
@@ -326,41 +333,41 @@ Local values are set and get using __SetValue__and __GetValue__methods:
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=MyRadObject}} 
 
 ````C#
-    internal class MyRadObject : RadObject
+internal class MyRadObject : RadObject
+{
+    public static readonly RadProperty HeightProperty =
+    RadProperty.Register("Height",
+    typeof(int),
+    typeof(MyRadObject),
+    new RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange | ElementPropertyOptions.AffectsMeasure));
+    public int Height
     {
-        public static readonly RadProperty HeightProperty =
-        RadProperty.Register("Height",
-        typeof(int),
-        typeof(MyRadObject),
-        new RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange | ElementPropertyOptions.AffectsMeasure));
-
-        public int Height
+        get
         {
-            get
-            {
-                return (int)this.GetValue(HeightProperty);
-            }
-            set
-            {
-                this.SetValue(HeightProperty, value);
-            }
+            return (int)this.GetValue(HeightProperty);
+        }
+        set
+        {
+            this.SetValue(HeightProperty, value);
         }
     }
+}
+
 ````
 ````VB.NET
-    Friend Class MyRadObject
-        Inherits RadObject
-        Public Shared ReadOnly HeightProperty As RadProperty = RadProperty.Register("Height", GetType(Integer), GetType(MyRadObject), New RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange Or ElementPropertyOptions.AffectsMeasure))
+Friend Class MyRadObject
+    Inherits RadObject
+    Public Shared ReadOnly HeightProperty As RadProperty = RadProperty.Register("Height", GetType(Integer), GetType(MyRadObject), New RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange Or ElementPropertyOptions.AffectsMeasure))
+    Public Property Height() As Integer
+        Get
+            Return CInt(Me.GetValue(HeightProperty))
+        End Get
+        Set(value As Integer)
+            Me.SetValue(HeightProperty, value)
+        End Set
+    End Property
+End Class
 
-        Public Property Height() As Integer
-            Get
-                Return CInt(Me.GetValue(HeightProperty))
-            End Get
-            Set(value As Integer)
-                Me.SetValue(HeightProperty, value)
-            End Set
-        End Property
-    End Class
 ````
 
 {{endregion}} 
@@ -373,14 +380,16 @@ When you define a dependency property, you create a RadElementPropertyMetadata w
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=DefaultValueProp}} 
 
 ````C#
-        public static readonly RadProperty HeightProperty =
-            RadProperty.Register("Height",
-            typeof(int),
-            typeof(MyRadObject),
-            new RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange | ElementPropertyOptions.AffectsMeasure));
+public static readonly RadProperty HeightProperty =
+    RadProperty.Register("Height",
+    typeof(int),
+    typeof(MyRadObject),
+    new RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange | ElementPropertyOptions.AffectsMeasure));
+
 ````
 ````VB.NET
-        Public Shared ReadOnly HeightProperty As RadProperty = RadProperty.Register("Height", GetType(Integer), GetType(MyRadObject), New RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange Or ElementPropertyOptions.AffectsMeasure))
+Public Shared ReadOnly HeightProperty As RadProperty = RadProperty.Register("Height", GetType(Integer), GetType(MyRadObject), New RadElementPropertyMetadata(1, ElementPropertyOptions.AffectsArrange Or ElementPropertyOptions.AffectsMeasure))
+
 ````
 
 {{endregion}} 
@@ -391,24 +400,24 @@ In some rare cases, you might want to override the __GetDefaultValue__and specif
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=DefaultValueMethod}} 
 
 ````C#
-        protected override object GetDefaultValue(RadPropertyValue propVal, object baseDefaultValue)
-        {
-            if (propVal.Property == MyRadObject.HeightProperty)
-            {
-                return 2;
-            }
+protected override object GetDefaultValue(RadPropertyValue propVal, object baseDefaultValue)
+{
+    if (propVal.Property == MyRadObject.HeightProperty)
+    {
+        return 2;
+    }
+    return base.GetDefaultValue(propVal, baseDefaultValue);
+}
 
-            return base.GetDefaultValue(propVal, baseDefaultValue);
-        }
 ````
 ````VB.NET
-        Protected Overrides Function GetDefaultValue(propVal As RadPropertyValue, baseDefaultValue As Object) As Object
-            If propVal.Property.Equals(MyRadObject.HeightProperty) Then
-                Return 2
-            End If
+Protected Overrides Function GetDefaultValue(propVal As RadPropertyValue, baseDefaultValue As Object) As Object
+    If propVal.Property.Equals(MyRadObject.HeightProperty) Then
+        Return 2
+    End If
+    Return MyBase.GetDefaultValue(propVal, baseDefaultValue)
+End Function
 
-            Return MyBase.GetDefaultValue(propVal, baseDefaultValue)
-        End Function
 ````
 
 {{endregion}}

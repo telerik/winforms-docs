@@ -22,15 +22,16 @@ By using RadPrintPreviewDialog you can preview how the RadPrintDocument will app
 {{source=..\SamplesVB\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.vb region=CreateAndShow1}} 
 
 ````C#
-            RadPrintPreviewDialog dialog = new RadPrintPreviewDialog();
-            dialog.Document = this.radPrintDocument1;
-            dialog.ShowDialog();
+RadPrintPreviewDialog dialog = new RadPrintPreviewDialog();
+dialog.Document = this.radPrintDocument1;
+dialog.ShowDialog();
+
 ````
 ````VB.NET
-        Dim dialog As New RadPrintPreviewDialog
-        dialog.Document = Me.RadPrintDocument1
-        dialog.ShowDialog()
-        '
+Dim dialog As New RadPrintPreviewDialog
+dialog.Document = Me.RadPrintDocument1
+dialog.ShowDialog()
+
 ````
 
 {{endregion}} 
@@ -41,13 +42,14 @@ You can also pass the RadPrintDocument to the RadPrintPreviewDialog via its cons
 {{source=..\SamplesVB\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.vb region=CreateAndShow2}} 
 
 ````C#
-            RadPrintPreviewDialog printPreviewDialog = new RadPrintPreviewDialog(this.radPrintDocument1);
-            printPreviewDialog.ShowDialog();
+RadPrintPreviewDialog printPreviewDialog = new RadPrintPreviewDialog(this.radPrintDocument1);
+printPreviewDialog.ShowDialog();
+
 ````
 ````VB.NET
-        Dim printPreviewDialog As New RadPrintPreviewDialog(Me.RadPrintDocument1)
-        printPreviewDialog.ShowDialog()
-        '
+Dim printPreviewDialog As New RadPrintPreviewDialog(Me.RadPrintDocument1)
+printPreviewDialog.ShowDialog()
+
 ````
 
 {{endregion}} 
@@ -58,13 +60,14 @@ The User Interface of RadPrintPreviewDialog is built on top of RadMenu and RadCo
 {{source=..\SamplesVB\TPF\Printing support\End-user functionality\RadPrintPreviewDialog1.vb region=ShowHideMenuAndCommandBar}} 
 
 ````C#
-            dialog.ToolMenu.Visible = true;
-            dialog.ToolCommandBar.Visible = false;
+dialog.ToolMenu.Visible = true;
+dialog.ToolCommandBar.Visible = false;
+
 ````
 ````VB.NET
-        dialog.ToolMenu.Visible = True
-        dialog.ToolCommandBar.Visible = False
-        '
+dialog.ToolMenu.Visible = True
+dialog.ToolCommandBar.Visible = False
+
 ````
 
 {{endregion}} 

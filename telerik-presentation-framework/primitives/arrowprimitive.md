@@ -24,28 +24,29 @@ Creating an ArrowPrimitive
 {{source=..\SamplesVB\TPF\Primitives\ArrowPrimitive1\MyArrowPrimitiveElement.vb region=myArrowPrimitiveElement}} 
 
 ````C#
-    public class MyArrowPrimitiveElement : RadElement
+public class MyArrowPrimitiveElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
-        {
-            BorderPrimitive borderPrimitive = new BorderPrimitive();
-            borderPrimitive.BoxStyle = BorderBoxStyle.OuterInnerBorders;
-            borderPrimitive.Width = 1;
-            borderPrimitive.GradientStyle = GradientStyles.Solid;
-            borderPrimitive.ForeColor = Color.Blue;
-            borderPrimitive.InnerColor = Color.Red;
-            borderPrimitive.ZIndex = 1;
-            ArrowPrimitive arrowPrimitive = new ArrowPrimitive();
-            arrowPrimitive.Margin = new System.Windows.Forms.Padding(15);
-            arrowPrimitive.StretchHorizontally = true;
-            arrowPrimitive.StretchVertically = true;
-            arrowPrimitive.Direction = ArrowDirection.Right;
-            arrowPrimitive.ForeColor = Color.Blue;
-            this.Children.Add(borderPrimitive);
-            this.Children.Add(arrowPrimitive);
-            base.CreateChildElements();
-        }
+        BorderPrimitive borderPrimitive = new BorderPrimitive();
+        borderPrimitive.BoxStyle = BorderBoxStyle.OuterInnerBorders;
+        borderPrimitive.Width = 1;
+        borderPrimitive.GradientStyle = GradientStyles.Solid;
+        borderPrimitive.ForeColor = Color.Blue;
+        borderPrimitive.InnerColor = Color.Red;
+        borderPrimitive.ZIndex = 1;
+        ArrowPrimitive arrowPrimitive = new ArrowPrimitive();
+        arrowPrimitive.Margin = new System.Windows.Forms.Padding(15);
+        arrowPrimitive.StretchHorizontally = true;
+        arrowPrimitive.StretchVertically = true;
+        arrowPrimitive.Direction = ArrowDirection.Right;
+        arrowPrimitive.ForeColor = Color.Blue;
+        this.Children.Add(borderPrimitive);
+        this.Children.Add(arrowPrimitive);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class MyArrowPrimitiveElement
@@ -69,7 +70,7 @@ Public Class MyArrowPrimitiveElement
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}

@@ -16,19 +16,18 @@ The watermark preview dialog allows the user to set up the watermark of the asso
 {{source=..\SamplesVB\TPF\Printing support\End-user functionality\WatermarkPreviewDialog1.vb region=WaterMark}} 
 
 ````C#
-            RadPrintDocument document = new RadPrintDocument();
-            document.AssociatedObject = this.radGridView1;
+RadPrintDocument document = new RadPrintDocument();
+document.AssociatedObject = this.radGridView1;
+WatermarkPreviewDialog dialog = new WatermarkPreviewDialog(document);
+dialog.ShowDialog();
 
-            WatermarkPreviewDialog dialog = new WatermarkPreviewDialog(document);
-            dialog.ShowDialog();
 ````
 ````VB.NET
-        Dim document As New RadPrintDocument()
-        document.AssociatedObject = Me.RadGridView1
+Dim document As New RadPrintDocument()
+document.AssociatedObject = Me.RadGridView1
+Dim dialog As New WatermarkPreviewDialog(document)
+dialog.ShowDialog()
 
-        Dim dialog As New WatermarkPreviewDialog(document)
-        dialog.ShowDialog()
-        '
 ````
 
 {{endregion}} 

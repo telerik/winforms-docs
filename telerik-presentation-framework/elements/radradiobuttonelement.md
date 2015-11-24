@@ -20,17 +20,18 @@ __RadRadioButtonlElement__ contains the logic and user interface for a single Ra
 {{source=..\SamplesVB\TPF\Elements\MyRadioButtonControl.vb region=myRadioButtonControl}} 
 
 ````C#
-    public class MyRadioButtonControl : RadControl
+public class MyRadioButtonControl : RadControl
+{
+    protected override void CreateChildItems(RadElement parent)
     {
-        protected override void CreateChildItems(RadElement parent)
-        {
-            RadRadioButtonElement radRadioButtonElement = new RadRadioButtonElement();
-            radRadioButtonElement.ToggleState = ToggleState.On;
-            radRadioButtonElement.RadioCheckAlignment = ContentAlignment.BottomRight;
-            this.RootElement.Children.Add(radRadioButtonElement);
-            base.CreateChildItems(parent);
-        }
+        RadRadioButtonElement radRadioButtonElement = new RadRadioButtonElement();
+        radRadioButtonElement.ToggleState = ToggleState.On;
+        radRadioButtonElement.RadioCheckAlignment = ContentAlignment.BottomRight;
+        this.RootElement.Children.Add(radRadioButtonElement);
+        base.CreateChildItems(parent);
     }
+}
+
 ````
 ````VB.NET
 Public Class MyRadioButtonControl
@@ -43,7 +44,7 @@ Public Class MyRadioButtonControl
         MyBase.CreateChildItems(parent)
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}

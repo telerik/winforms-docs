@@ -143,11 +143,12 @@ The following code snippet will produce the result shown in the screen-shot belo
 
 ````C#
             
-            this.radLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text";
+this.radLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text";
+
 ````
 ````VB.NET
-        Me.RadLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text"
-        '
+Me.RadLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text"
+
 ````
 
 {{endregion}} 
@@ -160,16 +161,17 @@ By using the HTML-like text formatting functionality, the __RadLabel__ can displ
 {{source=..\SamplesVB\TPF\HTMLFormatting.vb region=Hyperlinks}} 
 
 ````C#
-                                  
-            this.radLabel1.Text = "<html><size=12><a href=www.telerik.com>Telerik</a>" + Environment.NewLine +
-                                  "<a href=www.telerik.com/help/winforms>Documentation</a> " + Environment.NewLine +
-                                  "<a href=www.telerik.com/forums/winforms>Forum</a> ";
+                      
+this.radLabel1.Text = "<html><size=12><a href=www.telerik.com>Telerik</a>" + Environment.NewLine +
+                      "<a href=www.telerik.com/help/winforms>Documentation</a> " + Environment.NewLine +
+                      "<a href=www.telerik.com/forums/winforms>Forum</a> ";
+
 ````
 ````VB.NET
-        Me.RadLabel1.Text = "<html><size=12><a href=www.telerik.com>Telerik</a>" & Environment.NewLine & _
-        "<a href=www.telerik.com/help/winforms>Documentation</a> " & Environment.NewLine & _
-        "<a href=www.telerik.com/forums/winforms>Forum</a> "
-        '
+Me.RadLabel1.Text = "<html><size=12><a href=www.telerik.com>Telerik</a>" & Environment.NewLine & _
+"<a href=www.telerik.com/help/winforms>Documentation</a> " & Environment.NewLine & _
+"<a href=www.telerik.com/forums/winforms>Forum</a> "
+
 ````
 
 {{endregion}} 
@@ -183,69 +185,66 @@ It is possible to detect which link among several ones is clicked within the __R
 
 ````C#
         
-        private void RadLabel1_MouseDown(object sender, MouseEventArgs e)
-        {
-            TextPrimitiveHtmlImpl text = this.radLabel1.LabelElement.LabelText.Impl as TextPrimitiveHtmlImpl;
-            FormattedTextBlock textBlock = text.TextBlock;
-            FormattedText clickedLink = IsMouseOverBlock(textBlock, e);
-            if (clickedLink != null)
-            {
-                MessageBox.Show(clickedLink.Text + " pressed");
-            }
-        }
+private void RadLabel1_MouseDown(object sender, MouseEventArgs e)
+{
+    TextPrimitiveHtmlImpl text = this.radLabel1.LabelElement.LabelText.Impl as TextPrimitiveHtmlImpl;
+    FormattedTextBlock textBlock = text.TextBlock;
+    FormattedText clickedLink = IsMouseOverBlock(textBlock, e);
+    if (clickedLink != null)
+    {
+        MessageBox.Show(clickedLink.Text + " pressed");
+    }
+}
         
-        private FormattedText IsMouseOverBlock(FormattedTextBlock textBlock, MouseEventArgs e)
+private FormattedText IsMouseOverBlock(FormattedTextBlock textBlock, MouseEventArgs e)
+{
+    Point elementAtPoint = this.radLabel1.LabelElement.PointFromControl(e.Location);
+    int linesCount = textBlock.Lines.Count;
+    for (int i = 0; i <= linesCount - 1; i++)
+    {
+        TextLine textLine = textBlock.Lines[i];
+        int textLineCount = textLine.List.Count;
+        for (int j = 0; j <= textLineCount - 1; j++)
         {
-            Point elementAtPoint = this.radLabel1.LabelElement.PointFromControl(e.Location);
-            int linesCount = textBlock.Lines.Count;
-            for (int i = 0; i <= linesCount - 1; i++)
+            FormattedText formattedText = textLine.List[j];
+            if (formattedText.DrawingRectangle.Contains(elementAtPoint))
             {
-                TextLine textLine = textBlock.Lines[i];
-                int textLineCount = textLine.List.Count;
-                for (int j = 0; j <= textLineCount - 1; j++)
-                {
-                    FormattedText formattedText = textLine.List[j];
-                    if (formattedText.DrawingRectangle.Contains(elementAtPoint))
-                    {
-                        //found link under mouse
-                        return formattedText;
-                    }
-                }
+                //found link under mouse
+                return formattedText;
             }
-            
-            return null;
         }
+    }
+    
+    return null;
+}
+
 ````
 ````VB.NET
-
-    Private Sub RadLabel1_MouseDown(sender As Object, e As MouseEventArgs)
-        Dim text As TextPrimitiveHtmlImpl = TryCast(Me.RadLabel1.LabelElement.LabelText.Impl, TextPrimitiveHtmlImpl)
-        Dim textBlock As FormattedTextBlock = text.TextBlock
-        Dim clickedLink As FormattedText = IsMouseOverBlock(textBlock, e)
-        If clickedLink IsNot Nothing Then
-            MessageBox.Show(clickedLink.Text + " pressed")
-        End If
-    End Sub
-
-    Private Function IsMouseOverBlock(textBlock As FormattedTextBlock, e As MouseEventArgs) As FormattedText
-        Dim elementAtPoint As Point = Me.RadLabel1.LabelElement.PointFromControl(e.Location)
-        Dim linesCount As Integer = textBlock.Lines.Count
-        For i As Integer = 0 To linesCount - 1
-            Dim textLine As TextLine = textBlock.Lines(i)
-            Dim textLineCount As Integer = textLine.List.Count
-            For j As Integer = 0 To textLineCount - 1
-                Dim formattedText As FormattedText = textLine.List(j)
-                If formattedText.DrawingRectangle.Contains(elementAtPoint) Then
-                    'found link under mouse
-                    Return formattedText
-                End If
-            Next
+Private Sub RadLabel1_MouseDown(sender As Object, e As MouseEventArgs)
+    Dim text As TextPrimitiveHtmlImpl = TryCast(Me.RadLabel1.LabelElement.LabelText.Impl, TextPrimitiveHtmlImpl)
+    Dim textBlock As FormattedTextBlock = text.TextBlock
+    Dim clickedLink As FormattedText = IsMouseOverBlock(textBlock, e)
+    If clickedLink IsNot Nothing Then
+        MessageBox.Show(clickedLink.Text + " pressed")
+    End If
+End Sub
+Private Function IsMouseOverBlock(textBlock As FormattedTextBlock, e As MouseEventArgs) As FormattedText
+    Dim elementAtPoint As Point = Me.RadLabel1.LabelElement.PointFromControl(e.Location)
+    Dim linesCount As Integer = textBlock.Lines.Count
+    For i As Integer = 0 To linesCount - 1
+        Dim textLine As TextLine = textBlock.Lines(i)
+        Dim textLineCount As Integer = textLine.List.Count
+        For j As Integer = 0 To textLineCount - 1
+            Dim formattedText As FormattedText = textLine.List(j)
+            If formattedText.DrawingRectangle.Contains(elementAtPoint) Then
+                'found link under mouse
+                Return formattedText
+            End If
         Next
+    Next
+    Return Nothing
+End Function
 
-        Return Nothing
-    End Function
-
-    '
 ````
 
 {{endregion}}

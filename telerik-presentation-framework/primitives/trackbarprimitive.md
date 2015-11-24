@@ -24,22 +24,23 @@ TrackBarPrimitive provides the basic visual layout of a trackbar background.  Ty
 {{source=..\SamplesVB\TPF\Primitives\TrackBarPrimitive1\MyTrackBarPrimitiveElement.vb region=myTrackBarPrimitiveElement}} 
 
 ````C#
-    public class MyTrackBarPrimitiveElement : RadElement
-    {
-        protected override void CreateChildElements()
-        {        
-            TrackBarPrimitive trackBarPrimitive = new TrackBarPrimitive();
-            trackBarPrimitive.ForeColor = Color.Blue;
-            trackBarPrimitive.BackColor = Color.SkyBlue;
-            trackBarPrimitive.TickColor = Color.Green;
-            trackBarPrimitive.ThumbWidth = 5;
-            trackBarPrimitive.ShowSlideArea = true;
-            trackBarPrimitive.TickStyle = Telerik.WinControls.Enumerations.TickStyles.Both;
-            trackBarPrimitive.TrackBarOrientation = Orientation.Horizontal;
-            this.Children.Add(trackBarPrimitive);
-            base.CreateChildElements();
-        }
+public class MyTrackBarPrimitiveElement : RadElement
+{
+    protected override void CreateChildElements()
+    {        
+        TrackBarPrimitive trackBarPrimitive = new TrackBarPrimitive();
+        trackBarPrimitive.ForeColor = Color.Blue;
+        trackBarPrimitive.BackColor = Color.SkyBlue;
+        trackBarPrimitive.TickColor = Color.Green;
+        trackBarPrimitive.ThumbWidth = 5;
+        trackBarPrimitive.ShowSlideArea = true;
+        trackBarPrimitive.TickStyle = Telerik.WinControls.Enumerations.TickStyles.Both;
+        trackBarPrimitive.TrackBarOrientation = Orientation.Horizontal;
+        this.Children.Add(trackBarPrimitive);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class MyTrackBarPrimitiveElement
@@ -57,7 +58,7 @@ Public Class MyTrackBarPrimitiveElement
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}

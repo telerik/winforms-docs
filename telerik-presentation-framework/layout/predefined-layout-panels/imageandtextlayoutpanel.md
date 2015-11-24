@@ -128,59 +128,50 @@ As mentioned at the beginning of the article, ImageAndTextLayoutPanel defines th
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\ImageAndTextLayoutPanelElement.vb region=imageAndTextElement}} 
 
 ````C#
-    public class ImageAndTextLayoutPanelElement : RadElement
+public class ImageAndTextLayoutPanelElement : RadElement
+{
+    TextPrimitive textPrim;
+    ImagePrimitive imagePrim;
+    ImageAndTextLayoutPanel imgTxtLayoutPanel;
+    BorderPrimitive borderPrim;
+    protected override void CreateChildElements()
     {
-        TextPrimitive textPrim;
-        ImagePrimitive imagePrim;
-        ImageAndTextLayoutPanel imgTxtLayoutPanel;
-
-        BorderPrimitive borderPrim;
-
-        protected override void CreateChildElements()
+        base.CreateChildElements();
+        this.textPrim = new TextPrimitive();
+        this.imagePrim = new ImagePrimitive();
+        this.imgTxtLayoutPanel = new ImageAndTextLayoutPanel();
+        this.imagePrim.SetValue(ImageAndTextLayoutPanel.IsImagePrimitiveProperty, true);
+        this.textPrim.SetValue(ImageAndTextLayoutPanel.IsTextPrimitiveProperty, true);
+        this.imgTxtLayoutPanel.Children.Add(this.imagePrim);
+        this.imgTxtLayoutPanel.Children.Add(this.textPrim);
+        this.Children.Add(this.imgTxtLayoutPanel);
+        borderPrim = new BorderPrimitive();
+        borderPrim.ForeColor = Color.Red;
+        this.Children.Add(borderPrim);
+    }
+    public ImageAndTextLayoutPanel LayoutPanel
+    {
+        get
         {
-            base.CreateChildElements();
-
-            this.textPrim = new TextPrimitive();
-            this.imagePrim = new ImagePrimitive();
-            this.imgTxtLayoutPanel = new ImageAndTextLayoutPanel();
-
-            this.imagePrim.SetValue(ImageAndTextLayoutPanel.IsImagePrimitiveProperty, true);
-            this.textPrim.SetValue(ImageAndTextLayoutPanel.IsTextPrimitiveProperty, true);
-
-            this.imgTxtLayoutPanel.Children.Add(this.imagePrim);
-            this.imgTxtLayoutPanel.Children.Add(this.textPrim);
-
-            this.Children.Add(this.imgTxtLayoutPanel);
-
-            borderPrim = new BorderPrimitive();
-            borderPrim.ForeColor = Color.Red;
-            this.Children.Add(borderPrim);
-        }
-
-        public ImageAndTextLayoutPanel LayoutPanel
-        {
-            get
-            {
-                return this.imgTxtLayoutPanel;
-            }
-        }
-
-        public TextPrimitive TextElement
-        {
-            get
-            {
-                return this.textPrim;
-            }
-        }
-
-        public ImagePrimitive ImageElement
-        {
-            get
-            {
-                return this.imagePrim;
-            }
+            return this.imgTxtLayoutPanel;
         }
     }
+    public TextPrimitive TextElement
+    {
+        get
+        {
+            return this.textPrim;
+        }
+    }
+    public ImagePrimitive ImageElement
+    {
+        get
+        {
+            return this.imagePrim;
+        }
+    }
+}
+
 ````
 ````VB.NET
 Public Class ImageAndTextLayoutPanelElement
@@ -188,48 +179,38 @@ Public Class ImageAndTextLayoutPanelElement
     Private textPrim As TextPrimitive
     Private imagePrim As ImagePrimitive
     Private imgTxtLayoutPanel As ImageAndTextLayoutPanel
-
     Private borderPrim As BorderPrimitive
-
     Protected Overrides Sub CreateChildElements()
         MyBase.CreateChildElements()
-
         Me.textPrim = New TextPrimitive()
         Me.imagePrim = New ImagePrimitive()
         Me.imgTxtLayoutPanel = New ImageAndTextLayoutPanel()
-
         Me.imagePrim.SetValue(ImageAndTextLayoutPanel.IsImagePrimitiveProperty, True)
         Me.textPrim.SetValue(ImageAndTextLayoutPanel.IsTextPrimitiveProperty, True)
-
         Me.imgTxtLayoutPanel.Children.Add(Me.imagePrim)
         Me.imgTxtLayoutPanel.Children.Add(Me.textPrim)
-
         Me.Children.Add(Me.imgTxtLayoutPanel)
-
         borderPrim = New BorderPrimitive()
         borderPrim.ForeColor = Color.Red
         Me.Children.Add(borderPrim)
     End Sub
-
     Public ReadOnly Property LayoutPanel() As ImageAndTextLayoutPanel
         Get
             Return Me.imgTxtLayoutPanel
         End Get
     End Property
-
     Public ReadOnly Property TextElement() As TextPrimitive
         Get
             Return Me.textPrim
         End Get
     End Property
-
     Public ReadOnly Property ImageElement() As ImagePrimitive
         Get
             Return Me.imagePrim
         End Get
     End Property
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -240,70 +221,62 @@ End Class
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\ImageAndTextLayoutPanelElement.vb region=imageAndTextControl}} 
 
 ````C#
-    [ToolboxItem(true)]
-    public class ImageAndTextLayoutPanelControl : RadControl
+[ToolboxItem(true)]
+public class ImageAndTextLayoutPanelControl : RadControl
+{
+    private ImageAndTextLayoutPanelElement mainElement;
+    public ImageAndTextLayoutPanelControl()
     {
-        private ImageAndTextLayoutPanelElement mainElement;
-
-        public ImageAndTextLayoutPanelControl()
+        this.AutoSize = true;
+    }
+    public ImageAndTextLayoutPanelElement MainElement
+    {
+        get
         {
-            this.AutoSize = true;
-        }
-
-        public ImageAndTextLayoutPanelElement MainElement
-        {
-            get
-            {
-                return this.mainElement;
-            }
-        }
-
-        protected override Size DefaultSize
-        {
-            get
-            {
-                return new Size(160, 80);
-            }
-        }
-
-        protected override void CreateChildItems(RadElement parent)
-        {
-            this.mainElement = new ImageAndTextLayoutPanelElement();
-            this.RootElement.Children.Add(mainElement);
-            base.CreateChildItems(parent);
+            return this.mainElement;
         }
     }
+    protected override Size DefaultSize
+    {
+        get
+        {
+            return new Size(160, 80);
+        }
+    }
+    protected override void CreateChildItems(RadElement parent)
+    {
+        this.mainElement = new ImageAndTextLayoutPanelElement();
+        this.RootElement.Children.Add(mainElement);
+        base.CreateChildItems(parent);
+    }
+}
+
 ````
 ````VB.NET
 <ToolboxItem(True)>
 Public Class ImageAndTextLayoutPanelControl
     Inherits RadControl
-
     Private _mainElement As ImageAndTextLayoutPanelElement
-
     Public Sub New()
         Me.AutoSize = True
     End Sub
-
     Public ReadOnly Property MainElement() As ImageAndTextLayoutPanelElement
         Get
             Return Me._mainElement
         End Get
     End Property
-
     Protected Overrides ReadOnly Property DefaultSize() As Size
         Get
             Return New Size(160, 80)
         End Get
     End Property
-
     Protected Overrides Sub CreateChildItems(ByVal parent As RadElement)
         Me._mainElement = New ImageAndTextLayoutPanelElement()
         Me.RootElement.Children.Add(_mainElement)
         MyBase.CreateChildItems(parent)
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 

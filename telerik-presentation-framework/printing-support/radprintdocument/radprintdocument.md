@@ -17,25 +17,20 @@ RadPrintDocument is used to send output to a printer. The RadPrintDocument can b
 {{source=..\SamplesVB\TPF\Printing support\RadPrintDocument1.vb region=print}} 
 
 ````C#
-            RadPrintDocument document = new RadPrintDocument();
+RadPrintDocument document = new RadPrintDocument();
+document.DefaultPageSettings.Landscape = true;
+document.DefaultPageSettings.PrinterSettings.Copies = 2;
+document.AssociatedObject = this.radGridView1;
+document.Print();
 
-            document.DefaultPageSettings.Landscape = true;
-            document.DefaultPageSettings.PrinterSettings.Copies = 2;
-
-            document.AssociatedObject = this.radGridView1;
-
-            document.Print();
 ````
 ````VB.NET
-        Dim document As New RadPrintDocument()
+Dim document As New RadPrintDocument()
+document.DefaultPageSettings.Landscape = True
+document.DefaultPageSettings.PrinterSettings.Copies = 2
+document.AssociatedObject = Me.RadGridView1
+document.Print()
 
-        document.DefaultPageSettings.Landscape = True
-        document.DefaultPageSettings.PrinterSettings.Copies = 2
-
-        document.AssociatedObject = Me.RadGridView1
-
-        document.Print()
-        '
 ````
 
 {{endregion}} 

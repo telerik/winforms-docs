@@ -35,35 +35,35 @@ The example below loads a series of images from a directory and creates an Image
 {{source=..\SamplesVB\TPF\Primitives\ImagePrimitive1\MyImagePrimitiveElement.vb region=myImagePrimitiveElement}} 
 
 ````C#
-    public class MyImagePrimitiveElement : RadElement
+public class MyImagePrimitiveElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
+        WrapLayoutPanel layoutPanel = new WrapLayoutPanel();
+        layoutPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
+        string myPicturesPath = @"C:\Users\Public\Pictures\Sample Pictures";
+        string[] files = Directory.GetFiles(myPicturesPath, "*.jpg");
+        foreach (string path in files)
         {
-            WrapLayoutPanel layoutPanel = new WrapLayoutPanel();
-            layoutPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            string myPicturesPath = @"C:\Users\Public\Pictures\Sample Pictures";
-            string[] files = Directory.GetFiles(myPicturesPath, "*.jpg");
-            foreach (string path in files)
-            {
-                StackLayoutPanel panel = new StackLayoutPanel();
-                panel.Orientation = System.Windows.Forms.Orientation.Vertical;
-                panel.Margin = new System.Windows.Forms.Padding(3);
-                ImagePrimitive imagePrimitive = new ImagePrimitive();
-                imagePrimitive.Image = Image.FromFile(path).GetThumbnailImage(110, 85, null, IntPtr.Zero);
-                imagePrimitive.MinSize = new Size(100, 85);
-                panel.Children.Add(imagePrimitive);
-                TextPrimitive textPrimitive = new TextPrimitive();
-                textPrimitive.Font = new Font(textPrimitive.Font.FontFamily, 9.25f, FontStyle.Bold);
-                textPrimitive.Text = Path.GetFileName(path);
-                textPrimitive.ForeColor = Color.DarkGray;
-                panel.Children.Add(textPrimitive);
-
-                layoutPanel.Children.Add(panel);
-            }
-            this.Children.Add(layoutPanel);
-            base.CreateChildElements();
+            StackLayoutPanel panel = new StackLayoutPanel();
+            panel.Orientation = System.Windows.Forms.Orientation.Vertical;
+            panel.Margin = new System.Windows.Forms.Padding(3);
+            ImagePrimitive imagePrimitive = new ImagePrimitive();
+            imagePrimitive.Image = Image.FromFile(path).GetThumbnailImage(110, 85, null, IntPtr.Zero);
+            imagePrimitive.MinSize = new Size(100, 85);
+            panel.Children.Add(imagePrimitive);
+            TextPrimitive textPrimitive = new TextPrimitive();
+            textPrimitive.Font = new Font(textPrimitive.Font.FontFamily, 9.25f, FontStyle.Bold);
+            textPrimitive.Text = Path.GetFileName(path);
+            textPrimitive.ForeColor = Color.DarkGray;
+            panel.Children.Add(textPrimitive);
+            layoutPanel.Children.Add(panel);
         }
+        this.Children.Add(layoutPanel);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class MyImagePrimitiveElement
@@ -86,14 +86,13 @@ Public Class MyImagePrimitiveElement
             textPrimitive.Text = System.IO.Path.GetFileName(path)
             textPrimitive.ForeColor = Color.DarkGray
             panel.Children.Add(textPrimitive)
-
             layoutPanel.Children.Add(panel)
         Next path
         Me.Children.Add(layoutPanel)
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}

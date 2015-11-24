@@ -21,15 +21,17 @@ Optionally RadPropertyMetadata can have handlers for property changes and proper
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadPropertyMetadataForm.vb region=Metadata}} 
 
 ````C#
-        public static RadProperty AngleTransformProperty =
-            RadProperty.Register("AngleTransform", typeof(float), typeof(RadElement),
-            new RadElementPropertyMetadata(0f, 
-                ElementPropertyOptions.AffectsLayout 
-                | ElementPropertyOptions.InvalidatesLayout
-                | ElementPropertyOptions.AffectsMeasure));
+public static RadProperty AngleTransformProperty =
+    RadProperty.Register("AngleTransform", typeof(float), typeof(RadElement),
+    new RadElementPropertyMetadata(0f, 
+        ElementPropertyOptions.AffectsLayout 
+        | ElementPropertyOptions.InvalidatesLayout
+        | ElementPropertyOptions.AffectsMeasure));
+
 ````
 ````VB.NET
-    Public Shared AngleTransformProperty As RadProperty = RadProperty.Register("AngleTransform", GetType(Single), GetType(RadElement), New RadElementPropertyMetadata(0.0F, ElementPropertyOptions.AffectsLayout Or ElementPropertyOptions.InvalidatesLayout Or ElementPropertyOptions.AffectsMeasure))
+Public Shared AngleTransformProperty As RadProperty = RadProperty.Register("AngleTransform", GetType(Single), GetType(RadElement), New RadElementPropertyMetadata(0.0F, ElementPropertyOptions.AffectsLayout Or ElementPropertyOptions.InvalidatesLayout Or ElementPropertyOptions.AffectsMeasure))
+
 ````
 
 {{endregion}}

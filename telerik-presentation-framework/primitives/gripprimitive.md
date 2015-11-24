@@ -20,27 +20,28 @@ GripPrimitive displays a vertical row of dots as a visual cue to users that this
 {{source=..\SamplesVB\TPF\Primitives\GripPrimitive1\MyGripPrimitiveElement.vb region=myGripPrimitiveElement}} 
 
 ````C#
-    public class MyGripPrimitiveElement : RadElement
+public class MyGripPrimitiveElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
-        {
-            FillPrimitive fillPrimitive = new FillPrimitive();
-            fillPrimitive.GradientStyle = GradientStyles.OfficeGlassRect;
-            fillPrimitive.NumberOfColors = 4;
-            fillPrimitive.BackColor = Color.Blue;
-            fillPrimitive.BackColor2 = Color.LightBlue;
-            fillPrimitive.BackColor3 = Color.SkyBlue;
-            fillPrimitive.BackColor4 = Color.PaleTurquoise;
-            GripPrimitive gripPrimitive = new GripPrimitive();
-            gripPrimitive.MinSize = new Size(100, 100);
-            gripPrimitive.PositionOffset = new SizeF(5, 0);
-            gripPrimitive.BackColor = Color.DarkBlue;
-            gripPrimitive.BackColor2 = Color.Blue;
-            this.Children.Add(fillPrimitive);
-            this.Children.Add(gripPrimitive);
-            base.CreateChildElements();
-        }
+        FillPrimitive fillPrimitive = new FillPrimitive();
+        fillPrimitive.GradientStyle = GradientStyles.OfficeGlassRect;
+        fillPrimitive.NumberOfColors = 4;
+        fillPrimitive.BackColor = Color.Blue;
+        fillPrimitive.BackColor2 = Color.LightBlue;
+        fillPrimitive.BackColor3 = Color.SkyBlue;
+        fillPrimitive.BackColor4 = Color.PaleTurquoise;
+        GripPrimitive gripPrimitive = new GripPrimitive();
+        gripPrimitive.MinSize = new Size(100, 100);
+        gripPrimitive.PositionOffset = new SizeF(5, 0);
+        gripPrimitive.BackColor = Color.DarkBlue;
+        gripPrimitive.BackColor2 = Color.Blue;
+        this.Children.Add(fillPrimitive);
+        this.Children.Add(gripPrimitive);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class MyGripPrimitiveElement
@@ -63,7 +64,7 @@ Public Class MyGripPrimitiveElement
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 

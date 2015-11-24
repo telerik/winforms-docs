@@ -38,31 +38,32 @@ Margin is the area outside an element. Margin affects the spacing between eleme
 {{source=..\SamplesVB\TPF\Layouts\LayoutStructure.vb region=layoutStructure}} 
 
 ````C#
-    public class LayoutStructure : RadElement
+public class LayoutStructure : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
-        {
-            StackLayoutPanel layoutPanel = new StackLayoutPanel();
-            RadTextBoxElement text1 = new RadTextBoxElement();
-            text1.ForeColor = Color.Red;
-            text1.ShowBorder = true;
-            text1.MinSize = new Size(60, 0);
-            text1.Text = "Element 1";
-            // Add twenty pixel margin
-            text1.Margin = new Padding(20);
-            RadTextBoxElement text2 = new RadTextBoxElement();
-            text2.ForeColor = Color.Blue;
-            text2.ShowBorder = true;
-            text2.MinSize = new Size(60, 0);
-            text2.Text = "Element 2";
-            // Add twenty pixel margin
-            text2.Margin = new Padding(20);
-            layoutPanel.Children.Add(text1);
-            layoutPanel.Children.Add(text2);
-            this.Children.Add(layoutPanel);
-            base.CreateChildElements();
-        }
+        StackLayoutPanel layoutPanel = new StackLayoutPanel();
+        RadTextBoxElement text1 = new RadTextBoxElement();
+        text1.ForeColor = Color.Red;
+        text1.ShowBorder = true;
+        text1.MinSize = new Size(60, 0);
+        text1.Text = "Element 1";
+        // Add twenty pixel margin
+        text1.Margin = new Padding(20);
+        RadTextBoxElement text2 = new RadTextBoxElement();
+        text2.ForeColor = Color.Blue;
+        text2.ShowBorder = true;
+        text2.MinSize = new Size(60, 0);
+        text2.Text = "Element 2";
+        // Add twenty pixel margin
+        text2.Margin = new Padding(20);
+        layoutPanel.Children.Add(text1);
+        layoutPanel.Children.Add(text2);
+        this.Children.Add(layoutPanel);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class LayoutStructure
@@ -89,7 +90,7 @@ Public Class LayoutStructure
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}

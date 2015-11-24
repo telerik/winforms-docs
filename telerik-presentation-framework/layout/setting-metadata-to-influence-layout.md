@@ -30,13 +30,14 @@ The example code below shows a __RightToLeft__ dependency property with the __Af
 {{source=..\SamplesVB\TPF\Layouts\CascadeLayoutPanel.vb region=addingMetadata}} 
 
 ````C#
-        public static RadProperty RTLProperty = RadProperty.Register(
-            "RTL", typeof(bool), typeof(BoxLayout), new RadElementPropertyMetadata(
-            false, ElementPropertyOptions.AffectsLayout | ElementPropertyOptions.InvalidatesLayout));
+public static RadProperty RTLProperty = RadProperty.Register(
+    "RTL", typeof(bool), typeof(BoxLayout), new RadElementPropertyMetadata(
+    false, ElementPropertyOptions.AffectsLayout | ElementPropertyOptions.InvalidatesLayout));
+
 ````
 ````VB.NET
-    Public Shared RTLProperty As RadProperty = RadProperty.Register("RTL", GetType(Boolean), GetType(BoxLayout), New RadElementPropertyMetadata(False, ElementPropertyOptions.AffectsLayout Or ElementPropertyOptions.InvalidatesLayout))
-    '
+Public Shared RTLProperty As RadProperty = RadProperty.Register("RTL", GetType(Boolean), GetType(BoxLayout), New RadElementPropertyMetadata(False, ElementPropertyOptions.AffectsLayout Or ElementPropertyOptions.InvalidatesLayout))
+
 ````
 
 {{endregion}} 

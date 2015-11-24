@@ -22,73 +22,64 @@ The example below registers a new IsDefaultButtonProperty, wraps the dependency 
 {{source=..\SamplesVB\TPF\DependencyProperties.vb region=property}} 
 
 ````C#
-    public class MyButtonElement : RadButtonElement
+public class MyButtonElement : RadButtonElement
+{
+    public static RadProperty IsDefaultButtonProperty;
+    public MyButtonElement()
     {
-        public static RadProperty IsDefaultButtonProperty;
-
-        public MyButtonElement()
+        IsDefaultButtonProperty = RadProperty.Register("IsDefaultButton", typeof(bool), typeof(MyButtonElement),
+            new RadElementPropertyMetadata(false, ElementPropertyOptions.None, new PropertyChangedCallback(OnIsDefaultButtonPropertyChanged)));
+    }
+    public bool IsDefaultButton
+    {
+        get
         {
-            IsDefaultButtonProperty = RadProperty.Register("IsDefaultButton", typeof(bool), typeof(MyButtonElement),
-                new RadElementPropertyMetadata(false, ElementPropertyOptions.None, new PropertyChangedCallback(OnIsDefaultButtonPropertyChanged)));
+            return (bool)this.GetValue(IsDefaultButtonProperty);
         }
-
-        public bool IsDefaultButton
+        set
         {
-            get
-            {
-                return (bool)this.GetValue(IsDefaultButtonProperty);
-            }
-
-            set
-            {
-                this.SetValue(IsDefaultButtonProperty, value);
-            }
-        }
-
-        protected override Type ThemeEffectiveType
-        {
-            get
-            {
-                return typeof(RadButtonElement);
-            }
-        }
-
-        private static void OnIsDefaultButtonPropertyChanged(RadObject obj, RadPropertyChangedEventArgs e)
-        {
-            Console.WriteLine("OnIsDefaultButtonChanged");
+            this.SetValue(IsDefaultButtonProperty, value);
         }
     }
+    protected override Type ThemeEffectiveType
+    {
+        get
+        {
+            return typeof(RadButtonElement);
+        }
+    }
+    private static void OnIsDefaultButtonPropertyChanged(RadObject obj, RadPropertyChangedEventArgs e)
+    {
+        Console.WriteLine("OnIsDefaultButtonChanged");
+    }
+}
+
 ````
 ````VB.NET
-    Public Class MyButtonElement
-        Inherits RadButtonElement
-        Public Shared IsDefaultButtonProperty As RadProperty
+Public Class MyButtonElement
+    Inherits RadButtonElement
+    Public Shared IsDefaultButtonProperty As RadProperty
+    Public Sub New()
+        IsDefaultButtonProperty = RadProperty.Register("IsDefaultButton", GetType(Boolean), GetType(MyButtonElement), New RadElementPropertyMetadata(False, ElementPropertyOptions.None, New Telerik.WinControls.PropertyChangedCallback(AddressOf OnIsDefaultButtonPropertyChanged)))
+    End Sub
+    Public Property IsDefaultButton() As Boolean
+        Get
+            Return CBool(Me.GetValue(IsDefaultButtonProperty))
+        End Get
+        Set(value As Boolean)
+            Me.SetValue(IsDefaultButtonProperty, value)
+        End Set
+    End Property
+    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
+        Get
+            Return GetType(RadButtonElement)
+        End Get
+    End Property
+    Private Shared Sub OnIsDefaultButtonPropertyChanged(obj As RadObject, e As RadPropertyChangedEventArgs)
+        Console.WriteLine("OnIsDefaultButtonChanged")
+    End Sub
+End Class
 
-        Public Sub New()
-            IsDefaultButtonProperty = RadProperty.Register("IsDefaultButton", GetType(Boolean), GetType(MyButtonElement), New RadElementPropertyMetadata(False, ElementPropertyOptions.None, New Telerik.WinControls.PropertyChangedCallback(AddressOf OnIsDefaultButtonPropertyChanged)))
-        End Sub
-
-        Public Property IsDefaultButton() As Boolean
-            Get
-                Return CBool(Me.GetValue(IsDefaultButtonProperty))
-            End Get
-
-            Set(value As Boolean)
-                Me.SetValue(IsDefaultButtonProperty, value)
-            End Set
-        End Property
-
-        Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-            Get
-                Return GetType(RadButtonElement)
-            End Get
-        End Property
-
-        Private Shared Sub OnIsDefaultButtonPropertyChanged(obj As RadObject, e As RadPropertyChangedEventArgs)
-            Console.WriteLine("OnIsDefaultButtonChanged")
-        End Sub
-    End Class
-    '
 ````
 
 {{endregion}}

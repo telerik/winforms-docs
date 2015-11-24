@@ -22,35 +22,35 @@ The static RadProperty __Register()__ method creates an instance of a RadPropert
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadPropertyForm.vb region=RadProperty}} 
 
 ````C#
-        public static RadProperty PhoneProperty = RadProperty.Register(
-            "Phone",
-            typeof(string),
-            typeof(BusinessCardElement),
-            new RadElementPropertyMetadata("", ElementPropertyOptions.None));
+public static RadProperty PhoneProperty = RadProperty.Register(
+    "Phone",
+    typeof(string),
+    typeof(BusinessCardElement),
+    new RadElementPropertyMetadata("", ElementPropertyOptions.None));
+public string Phone
+{
+    get
+    {
+        return (string)this.GetValue(PhoneProperty);
+    }
+    set
+    {
+        this.SetValue(PhoneProperty, value);
+    }
+}
 
-        public string Phone
-        {
-            get
-            {
-                return (string)this.GetValue(PhoneProperty);
-            }
-            set
-            {
-                this.SetValue(PhoneProperty, value);
-            }
-        }
 ````
 ````VB.NET
-    Public Shared PhoneProperty As RadProperty = RadProperty.Register("Phone", GetType(String), GetType(BusinessCardElement), New RadElementPropertyMetadata("", ElementPropertyOptions.None))
+Public Shared PhoneProperty As RadProperty = RadProperty.Register("Phone", GetType(String), GetType(BusinessCardElement), New RadElementPropertyMetadata("", ElementPropertyOptions.None))
+Public Property Phone() As String
+    Get
+        Return DirectCast(Me.GetValue(PhoneProperty), String)
+    End Get
+    Set(value As String)
+        Me.SetValue(PhoneProperty, value)
+    End Set
+End Property
 
-    Public Property Phone() As String
-        Get
-            Return DirectCast(Me.GetValue(PhoneProperty), String)
-        End Get
-        Set(value As String)
-            Me.SetValue(PhoneProperty, value)
-        End Set
-    End Property
 ````
 
 {{endregion}}

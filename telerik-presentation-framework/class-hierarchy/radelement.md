@@ -53,44 +53,44 @@ Behaviors are a mechanism that trigger actions when specific properties are chan
 
 ````C#
         
-        public class ItemSelectedBehavior : PropertyChangeBehavior
-        {
-                RadPageViewItem pageViewItem;
-                Color backColor;
-            
-                public ItemSelectedBehavior(RadPageViewItem tabStrip, Color backColor) : base(RadPageViewItem.IsSelectedProperty)
-                {
-                        this.pageViewItem = tabStrip;
-                        this.backColor = backColor;
-                }
-            
-            public override void OnPropertyChange(Telerik.WinControls.RadElement element, RadPropertyChangedEventArgs e)
-            {
-                if ((bool)e.NewValue == true)
-                        {
-                        this.pageViewItem.BackColor = backColor;
-                        }
-            }
-        }
+public class ItemSelectedBehavior : PropertyChangeBehavior
+{
+        RadPageViewItem pageViewItem;
+        Color backColor;
+    
+        public ItemSelectedBehavior(RadPageViewItem tabStrip, Color backColor) : base(RadPageViewItem.IsSelectedProperty)
+        {
+                this.pageViewItem = tabStrip;
+                this.backColor = backColor;
+        }
+    
+    public override void OnPropertyChange(Telerik.WinControls.RadElement element, RadPropertyChangedEventArgs e)
+    {
+        if ((bool)e.NewValue == true)
+                {
+                this.pageViewItem.BackColor = backColor;
+                }
+    }
+}
+
 ````
 ````VB.NET
-    Public Class ItemSelectedBehavior
-        Inherits PropertyChangeBehavior
-        Private pageViewItem As RadPageViewItem
-        Private backColor As Color
+Public Class ItemSelectedBehavior
+    Inherits PropertyChangeBehavior
+    Private pageViewItem As RadPageViewItem
+    Private backColor As Color
+    Public Sub New(tabStrip As RadPageViewItem, backColor As Color)
+        MyBase.New(RadPageViewItem.IsSelectedProperty)
+        Me.pageViewItem = tabStrip
+        Me.backColor = backColor
+    End Sub
+    Public Overrides Sub OnPropertyChange(element As Telerik.WinControls.RadElement, e As RadPropertyChangedEventArgs)
+        If CBool(e.NewValue) = True Then
+            Me.pageViewItem.BackColor = backColor
+        End If
+    End Sub
+End Class
 
-        Public Sub New(tabStrip As RadPageViewItem, backColor As Color)
-            MyBase.New(RadPageViewItem.IsSelectedProperty)
-            Me.pageViewItem = tabStrip
-            Me.backColor = backColor
-        End Sub
-
-        Public Overrides Sub OnPropertyChange(element As Telerik.WinControls.RadElement, e As RadPropertyChangedEventArgs)
-            If CBool(e.NewValue) = True Then
-                Me.pageViewItem.BackColor = backColor
-            End If
-        End Sub
-    End Class
 ````
 
 {{endregion}} 

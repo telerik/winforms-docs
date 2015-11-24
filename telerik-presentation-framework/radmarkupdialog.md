@@ -30,20 +30,21 @@ To start the editor at Run Time, create a new instance of the dialog and use *Sh
 {{source=..\SamplesVB\TPF\RadMarkupDialogForm.vb region=DialogGetValue}} 
 
 ````C#
-            RadMarkupDialog dialog = new RadMarkupDialog();
-            DialogResult result = dialog.ShowDialog();
-            if (result == DialogResult.OK)
-            {
-                MessageBox.Show(dialog.Value);
-            }
+RadMarkupDialog dialog = new RadMarkupDialog();
+DialogResult result = dialog.ShowDialog();
+if (result == DialogResult.OK)
+{
+    MessageBox.Show(dialog.Value);
+}
+
 ````
 ````VB.NET
-        Dim dialog As New RadMarkupDialog()
-        Dim result As DialogResult = dialog.ShowDialog()
-        If result = DialogResult.OK Then
-            MessageBox.Show(dialog.Value)
-        End If
-        '
+Dim dialog As New RadMarkupDialog()
+Dim result As DialogResult = dialog.ShowDialog()
+If result = DialogResult.OK Then
+    MessageBox.Show(dialog.Value)
+End If
+
 ````
 
 {{endregion}} 
@@ -61,15 +62,16 @@ The *Value* property can be set to the RadMarkupDialog before it is shown which 
 {{source=..\SamplesVB\TPF\RadMarkupDialogForm.vb region=DialogSetValue}} 
 
 ````C#
-            RadMarkupDialog dialog = new RadMarkupDialog();
-            dialog.Value = "Initial";
-            dialog.ShowDialog();
+RadMarkupDialog dialog = new RadMarkupDialog();
+dialog.Value = "Initial";
+dialog.ShowDialog();
+
 ````
 ````VB.NET
-        Dim dialog As New RadMarkupDialog()
-        dialog.Value = "Initial"
-        dialog.ShowDialog()
-        '
+Dim dialog As New RadMarkupDialog()
+dialog.Value = "Initial"
+dialog.ShowDialog()
+
 ````
 
 {{endregion}} 
@@ -80,15 +82,16 @@ You can also set the default font size and name before showing the dialog using 
 {{source=..\SamplesVB\TPF\RadMarkupDialogForm.vb region=DialogSetFont}} 
 
 ````C#
-            RadMarkupDialog dialog = new RadMarkupDialog();
-            dialog.DefaultFont = SystemFonts.DefaultFont;
-            dialog.ShowDialog();
+RadMarkupDialog dialog = new RadMarkupDialog();
+dialog.DefaultFont = SystemFonts.DefaultFont;
+dialog.ShowDialog();
+
 ````
 ````VB.NET
-        Dim dialog As New RadMarkupDialog()
-        dialog.DefaultFont = SystemFonts.DefaultFont
-        dialog.ShowDialog()
-        '
+Dim dialog As New RadMarkupDialog()
+dialog.DefaultFont = SystemFonts.DefaultFont
+dialog.ShowDialog()
+
 ````
 
 {{endregion}} 

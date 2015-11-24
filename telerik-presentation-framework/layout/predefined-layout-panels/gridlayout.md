@@ -33,97 +33,81 @@ Here is a sample:
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyGridLayoutPanelElement.vb region=GridLayout}} 
 
 ````C#
-    public class MyGridLayoutControl : RadControl
+public class MyGridLayoutControl : RadControl
+{
+    protected override void CreateChildItems(RadElement parent)
     {
-        protected override void CreateChildItems(RadElement parent)
-        {
-            base.CreateChildItems(parent);
-            parent.Children.Add(new MyGridLayoutPanelElement());
-        }
+        base.CreateChildItems(parent);
+        parent.Children.Add(new MyGridLayoutPanelElement());
     }
-
-    class MyGridLayoutPanelElement : RadElement
+}
+class MyGridLayoutPanelElement : RadElement
+{
+    GridLayout layoutPanel;
+    protected override void CreateChildElements()
     {
-        GridLayout layoutPanel;
-
-        protected override void CreateChildElements()
+        layoutPanel = new GridLayout();
+        layoutPanel.StretchHorizontally = layoutPanel.StretchVertically = false;
+        layoutPanel.Columns.Clear();
+        layoutPanel.Rows.Clear();
+        layoutPanel.Columns.Add(new GridLayoutColumn() { SizingType = GridLayoutSizingType.Auto });
+        layoutPanel.Columns.Add(new GridLayoutColumn() { SizingType = GridLayoutSizingType.Proportional, ProportionalWidthWeight = 5 });
+        layoutPanel.Columns.Add(new GridLayoutColumn() { SizingType = GridLayoutSizingType.Proportional, ProportionalWidthWeight = 7 });
+        layoutPanel.Columns.Add(new GridLayoutColumn() { SizingType = GridLayoutSizingType.Fixed, FixedWidth = 150 });
+        layoutPanel.Rows.Add(new GridLayoutRow() { SizingType = GridLayoutSizingType.Proportional, ProportionalHeightWeight = 3 });
+        layoutPanel.Rows.Add(new GridLayoutRow() { SizingType = GridLayoutSizingType.Proportional, ProportionalHeightWeight = 7 });
+        layoutPanel.Rows.Add(new GridLayoutRow() { SizingType = GridLayoutSizingType.Fixed, FixedHeight = 150 });
+        for (int i = 0; i < 12; i++)
         {
-            layoutPanel = new GridLayout();
-            layoutPanel.StretchHorizontally = layoutPanel.StretchVertically = false;
-
-            layoutPanel.Columns.Clear();
-            layoutPanel.Rows.Clear();
-
-            layoutPanel.Columns.Add(new GridLayoutColumn() { SizingType = GridLayoutSizingType.Auto });
-            layoutPanel.Columns.Add(new GridLayoutColumn() { SizingType = GridLayoutSizingType.Proportional, ProportionalWidthWeight = 5 });
-            layoutPanel.Columns.Add(new GridLayoutColumn() { SizingType = GridLayoutSizingType.Proportional, ProportionalWidthWeight = 7 });
-            layoutPanel.Columns.Add(new GridLayoutColumn() { SizingType = GridLayoutSizingType.Fixed, FixedWidth = 150 });
-
-            layoutPanel.Rows.Add(new GridLayoutRow() { SizingType = GridLayoutSizingType.Proportional, ProportionalHeightWeight = 3 });
-            layoutPanel.Rows.Add(new GridLayoutRow() { SizingType = GridLayoutSizingType.Proportional, ProportionalHeightWeight = 7 });
-            layoutPanel.Rows.Add(new GridLayoutRow() { SizingType = GridLayoutSizingType.Fixed, FixedHeight = 150 });
-
-            for (int i = 0; i < 12; i++)
+            if (i == 7) continue;
+            RadElement child = GetTextBoxElement(i);
+            child.SetValue(GridLayout.RowIndexProperty, i % 3);
+            child.SetValue(GridLayout.ColumnIndexProperty, (i / 3));
+            if (i == 4)
             {
-                if (i == 7) continue;
-                RadElement child = GetTextBoxElement(i);
-                child.SetValue(GridLayout.RowIndexProperty, i % 3);
-                child.SetValue(GridLayout.ColumnIndexProperty, (i / 3));
-                if (i == 4)
-                {
-                    child.SetValue(GridLayout.ColSpanProperty, 2);
-                }
-
-                layoutPanel.Children.Add(child);
+                child.SetValue(GridLayout.ColSpanProperty, 2);
             }
-
-            this.Children.Add(layoutPanel);
-            base.CreateChildElements();
+            layoutPanel.Children.Add(child);
         }
-
-        private RadElement GetTextBoxElement(int count)
-        {
-            RadButtonElement result = new RadButtonElement();
-            result.ShowBorder = true;
-            result.Text = "Button" + count.ToString();
-            result.StretchHorizontally = true;
-            result.StretchVertically = true;
-            return result;
-        }
+        this.Children.Add(layoutPanel);
+        base.CreateChildElements();
     }
+    private RadElement GetTextBoxElement(int count)
+    {
+        RadButtonElement result = new RadButtonElement();
+        result.ShowBorder = true;
+        result.Text = "Button" + count.ToString();
+        result.StretchHorizontally = true;
+        result.StretchVertically = true;
+        return result;
+    }
+}
+
 ````
 ````VB.NET
 Public Class MyGridLayoutControl
     Inherits RadControl
-
     Protected Overrides Sub CreateChildItems(parent As RadElement)
         MyBase.CreateChildItems(parent)
         parent.Children.Add(New MyGridLayoutPanelElement())
     End Sub
 End Class
-
 Class MyGridLayoutPanelElement
     Inherits RadElement
-
     Private layoutPanel As GridLayout
-
     Protected Overrides Sub CreateChildElements()
         layoutPanel = New GridLayout()
         layoutPanel.StretchHorizontally = False
         layoutPanel.StretchVertically = False
-
         layoutPanel.Columns.Clear()
         layoutPanel.Rows.Clear()
-
         layoutPanel.Columns.Add(New GridLayoutColumn() With {.SizingType = GridLayoutSizingType.Auto})
         layoutPanel.Columns.Add(New GridLayoutColumn() With {.SizingType = GridLayoutSizingType.Proportional, .ProportionalWidthWeight = 5})
         layoutPanel.Columns.Add(New GridLayoutColumn() With {.SizingType = GridLayoutSizingType.Proportional, .ProportionalWidthWeight = 7})
         layoutPanel.Columns.Add(New GridLayoutColumn() With {.SizingType = GridLayoutSizingType.Fixed, .FixedWidth = 150})
-
         layoutPanel.Rows.Add(New GridLayoutRow() With {.SizingType = GridLayoutSizingType.Proportional, .ProportionalHeightWeight = 3})
         layoutPanel.Rows.Add(New GridLayoutRow() With {.SizingType = GridLayoutSizingType.Proportional, .ProportionalHeightWeight = 7})
         layoutPanel.Rows.Add(New GridLayoutRow() With {.SizingType = GridLayoutSizingType.Fixed, .FixedHeight = 150})
-
         For i As Integer = 0 To 11
             If i = 7 Then
                 Continue For
@@ -131,18 +115,14 @@ Class MyGridLayoutPanelElement
             Dim child As RadElement = GetTextBoxElement(i)
             child.SetValue(GridLayout.RowIndexProperty, i Mod 3)
             child.SetValue(GridLayout.ColumnIndexProperty, CInt(Fix(i / 3)))
-
             If i = 4 Then
                 child.SetValue(GridLayout.ColSpanProperty, 2)
             End If
-
             layoutPanel.Children.Add(child)
         Next
-
         Me.Children.Add(layoutPanel)
         MyBase.CreateChildElements()
     End Sub
-
     Private Function GetTextBoxElement(count As Integer) As RadElement
         Dim result As New RadButtonElement()
         result.ShowBorder = True
@@ -153,8 +133,6 @@ Class MyGridLayoutPanelElement
     End Function
 End Class
 
-
-'
 ````
 
 {{endregion}}

@@ -22,42 +22,43 @@ __LinePrimitive__ is actually a variation of a filled rectangle. The shadow of t
 {{source=..\SamplesVB\TPF\Primitives\LinePrimitive1\MyLinePrimitiveElement.vb region=myLinePrimitiveElement}} 
 
 ````C#
-    public class MyLinePrimitiveElement : RadElement
+public class MyLinePrimitiveElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
+        StackLayoutPanel layoutPanel = new StackLayoutPanel();
+        layoutPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
+        Array gradientStyleValues = Enum.GetValues(typeof(GradientStyles));
+        foreach (GradientStyles gradientStyle in gradientStyleValues)
         {
-            StackLayoutPanel layoutPanel = new StackLayoutPanel();
-            layoutPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            Array gradientStyleValues = Enum.GetValues(typeof(GradientStyles));
-            foreach (GradientStyles gradientStyle in gradientStyleValues)
-            {
-                StackLayoutPanel panel = new StackLayoutPanel();
-                panel.Orientation = System.Windows.Forms.Orientation.Vertical;
-                panel.Margin = new System.Windows.Forms.Padding(3);
-                panel.MinSize = new Size(60, 0);
-                LinePrimitive linePrimitive = new LinePrimitive();
-                linePrimitive.NumberOfColors = 4;
-                linePrimitive.GradientStyle = gradientStyle;
-                linePrimitive.BackColor = Color.Blue;
-                linePrimitive.BackColor2 = Color.SkyBlue;
-                linePrimitive.BackColor3 = Color.Lime;
-                linePrimitive.BackColor4 = Color.Green;
-                linePrimitive.LineWidth = 10;
-                linePrimitive.AngleTransform = 45;
-                linePrimitive.MinSize = new Size(40, 30);
-                panel.Children.Add(linePrimitive);
-                TextPrimitive textPrimitive = new TextPrimitive();
-                textPrimitive.Text = gradientStyle.ToString("g");
-                textPrimitive.Font = new Font(textPrimitive.Font, FontStyle.Bold);
-                textPrimitive.ForeColor = Color.Black;
-                textPrimitive.Margin = new System.Windows.Forms.Padding(15, 0, 0, 0);
-                panel.Children.Add(textPrimitive);
-                layoutPanel.Children.Add(panel);
-            }
-            this.Children.Add(layoutPanel);
-            base.CreateChildElements();
+            StackLayoutPanel panel = new StackLayoutPanel();
+            panel.Orientation = System.Windows.Forms.Orientation.Vertical;
+            panel.Margin = new System.Windows.Forms.Padding(3);
+            panel.MinSize = new Size(60, 0);
+            LinePrimitive linePrimitive = new LinePrimitive();
+            linePrimitive.NumberOfColors = 4;
+            linePrimitive.GradientStyle = gradientStyle;
+            linePrimitive.BackColor = Color.Blue;
+            linePrimitive.BackColor2 = Color.SkyBlue;
+            linePrimitive.BackColor3 = Color.Lime;
+            linePrimitive.BackColor4 = Color.Green;
+            linePrimitive.LineWidth = 10;
+            linePrimitive.AngleTransform = 45;
+            linePrimitive.MinSize = new Size(40, 30);
+            panel.Children.Add(linePrimitive);
+            TextPrimitive textPrimitive = new TextPrimitive();
+            textPrimitive.Text = gradientStyle.ToString("g");
+            textPrimitive.Font = new Font(textPrimitive.Font, FontStyle.Bold);
+            textPrimitive.ForeColor = Color.Black;
+            textPrimitive.Margin = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            panel.Children.Add(textPrimitive);
+            layoutPanel.Children.Add(panel);
         }
+        this.Children.Add(layoutPanel);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class MyLinePrimitiveElement
@@ -94,7 +95,7 @@ Public Class MyLinePrimitiveElement
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}

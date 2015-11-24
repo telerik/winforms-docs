@@ -20,31 +20,31 @@ When you inherit from a __RadControl__ (or any __RadControl__ descendant), the o
 
 ````C#
         
-        public class RadCustomButton : RadButton  
+public class RadCustomButton : RadButton  
+{ 
+    public override string ThemeClassName  
+    { 
+        get 
         { 
-            public override string ThemeClassName  
-            { 
-                get 
-                { 
-                    return typeof(RadButton).FullName;  
-                }
-            }
+            return typeof(RadButton).FullName;  
         }
+    }
+}
+
 ````
 ````VB.NET
+Public Class RadCustomButton
+    Inherits RadButton
+    Public Overrides Property ThemeClassName As String
+        Get
+            Return GetType(RadButton).FullName
+        End Get
+        Set(value As String)
+            MyBase.ThemeClassName = value
+        End Set
+    End Property
+End Class
 
-    Public Class RadCustomButton
-        Inherits RadButton
-
-        Public Overrides Property ThemeClassName As String
-            Get
-                Return GetType(RadButton).FullName
-            End Get
-            Set(value As String)
-                MyBase.ThemeClassName = value
-            End Set
-        End Property
-    End Class
 ````
 
 {{endregion}} 
@@ -60,27 +60,28 @@ When you inherit from a __RadElement__ descendant (for example __RadButtonElemen
 
 ````C#
         
-        public class MyRadButtonElement : RadButtonElement     
+public class MyRadButtonElement : RadButtonElement     
+{ 
+    protected override Type ThemeEffectiveType     
+    { 
+        get    
         { 
-            protected override Type ThemeEffectiveType     
-            { 
-                get    
-                { 
-                    return typeof(RadButtonElement);     
-                }
-            }
+            return typeof(RadButtonElement);     
         }
+    }
+}
+
 ````
 ````VB.NET
+Public Class MyRadButtonElement
+Inherits RadButtonElement
+    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
+        Get
+            Return GetType(RadButtonElement)
+        End Get
+    End Property
+End Class
 
-    Public Class MyRadButtonElement
-    Inherits RadButtonElement
-        Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-            Get
-                Return GetType(RadButtonElement)
-            End Get
-        End Property
-    End Class
 ````
 
 {{endregion}}

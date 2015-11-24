@@ -26,41 +26,41 @@ To create a custom layout class, create a __LayoutPanel__ descendant class and o
 {{source=..\SamplesVB\TPF\Layouts\CascadeLayoutPanel.vb region=cascadeLayoutPanel}} 
 
 ````C#
-    public class CascadeLayoutPanel : LayoutPanel
+public class CascadeLayoutPanel : LayoutPanel
+{
+    protected override SizeF MeasureOverride(SizeF availableSize)
     {
-        protected override SizeF MeasureOverride(SizeF availableSize)
+        SizeF totalSize = SizeF.Empty;
+        for (int i = 0; i < this.Children.Count; ++i)
         {
-            SizeF totalSize = SizeF.Empty;
-            for (int i = 0; i < this.Children.Count; ++i)
+            RadElement child = this.Children[i];
+            if (child != null)
             {
-                RadElement child = this.Children[i];
-                if (child != null)
-                {
-                    child.Measure(availableSize);
-                    totalSize.Width += child.DesiredSize.Width;
-                    totalSize.Height += child.DesiredSize.Height;
-                }
+                child.Measure(availableSize);
+                totalSize.Width += child.DesiredSize.Width;
+                totalSize.Height += child.DesiredSize.Height;
             }
-            return totalSize;
         }
-
-        protected override SizeF ArrangeOverride(SizeF finalSize)
-        {
-            PointF leftTopCorner = new Point();
-            for (int i = 0; i < this.Children.Count; ++i)
-            {
-                RadElement child = this.Children[i];
-                if (child != null)
-                {
-                    child.Arrange(new RectangleF(leftTopCorner,
-                        new SizeF(child.DesiredSize.Width, child.DesiredSize.Height)));
-                    leftTopCorner.X += child.DesiredSize.Width;
-                    leftTopCorner.Y += child.DesiredSize.Height;
-                }
-            }
-            return finalSize;
-        }
+        return totalSize;
     }
+    protected override SizeF ArrangeOverride(SizeF finalSize)
+    {
+        PointF leftTopCorner = new Point();
+        for (int i = 0; i < this.Children.Count; ++i)
+        {
+            RadElement child = this.Children[i];
+            if (child != null)
+            {
+                child.Arrange(new RectangleF(leftTopCorner,
+                    new SizeF(child.DesiredSize.Width, child.DesiredSize.Height)));
+                leftTopCorner.X += child.DesiredSize.Width;
+                leftTopCorner.Y += child.DesiredSize.Height;
+            }
+        }
+        return finalSize;
+    }
+}
+
 ````
 ````VB.NET
 Public Class CascadeLayoutPanel
@@ -77,7 +77,6 @@ Public Class CascadeLayoutPanel
         Next i
         Return totalSize
     End Function
-
     Protected Overrides Function ArrangeOverride(ByVal finalSize As SizeF) As SizeF
         Dim leftTopCorner As PointF = New Point()
         For i As Integer = 0 To Me.Children.Count - 1
@@ -91,7 +90,7 @@ Public Class CascadeLayoutPanel
         Return finalSize
     End Function
 End Class
-'
+
 ````
 
 {{endregion}}

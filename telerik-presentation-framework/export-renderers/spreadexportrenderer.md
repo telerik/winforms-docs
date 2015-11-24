@@ -24,20 +24,21 @@ The following example shows how you can subscribe to the event and use it to bes
 
 ````C#
           
-            SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
-            exportRenderer.WorkbookCreated += exportRenderer_WorkbookCreated;
+SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
+exportRenderer.WorkbookCreated += exportRenderer_WorkbookCreated;
+
 ````
 ````VB.NET
-        Dim exportRenderer As New SpreadExportRenderer()
-        AddHandler exportRenderer.WorkbookCreated, AddressOf exportRenderer_WorkbookCreated
-        '#End Region
-    End Sub
-    '#region WorbookCreated
-    Private Sub exportRenderer_WorkbookCreated(ByVal sender As Object, ByVal e As WorkbookCreatedEventArgs)
-        Dim worksheet As Worksheet = CType(e.Workbook.Sheets(0), Worksheet)
-        worksheet.Columns(worksheet.UsedCellRange).AutoFitWidth()
-    End Sub
-    '
+Dim exportRenderer As New SpreadExportRenderer()
+AddHandler exportRenderer.WorkbookCreated, AddressOf exportRenderer_WorkbookCreated
+'#End Region
+End Sub
+'#region WorbookCreated
+Private Sub exportRenderer_WorkbookCreated(ByVal sender As Object, ByVal e As WorkbookCreatedEventArgs)
+Dim worksheet As Worksheet = CType(e.Workbook.Sheets(0), Worksheet)
+worksheet.Columns(worksheet.UsedCellRange).AutoFitWidth()
+End Sub
+
 ````
 
 {{endregion}} 
@@ -46,18 +47,19 @@ The following example shows how you can subscribe to the event and use it to bes
 {{source=..\SamplesVB\TPF\ExportData\SpreadExportRendererCode.vb region=WorbookCreated}} 
 
 ````C#
-        void exportRenderer_WorkbookCreated(object sender, WorkbookCreatedEventArgs e)
-        {
-            Worksheet worksheet = (Worksheet)e.Workbook.Sheets[0];
-            worksheet.Columns[worksheet.UsedCellRange].AutoFitWidth();
-        }
+void exportRenderer_WorkbookCreated(object sender, WorkbookCreatedEventArgs e)
+{
+    Worksheet worksheet = (Worksheet)e.Workbook.Sheets[0];
+    worksheet.Columns[worksheet.UsedCellRange].AutoFitWidth();
+}
+
 ````
 ````VB.NET
-    Private Sub exportRenderer_WorkbookCreated(ByVal sender As Object, ByVal e As WorkbookCreatedEventArgs)
-        Dim worksheet As Worksheet = CType(e.Workbook.Sheets(0), Worksheet)
-        worksheet.Columns(worksheet.UsedCellRange).AutoFitWidth()
-    End Sub
-    '
+Private Sub exportRenderer_WorkbookCreated(ByVal sender As Object, ByVal e As WorkbookCreatedEventArgs)
+    Dim worksheet As Worksheet = CType(e.Workbook.Sheets(0), Worksheet)
+    worksheet.Columns(worksheet.UsedCellRange).AutoFitWidth()
+End Sub
+
 ````
 
 {{endregion}} 

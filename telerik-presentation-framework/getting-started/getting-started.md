@@ -47,63 +47,59 @@ The example control will contain a filled area and a centered text primitive. 
 {{source=..\SamplesVB\TPF\GettingStarted\MyPanelElement.vb region=myPanelElement}} 
 
 ````C#
-    public class MyPanelElement : RadElement
+public class MyPanelElement : RadElement
+{
+    TextPrimitive text;
+    FillPrimitive background;
+    Timer updateTime;
+    protected override void CreateChildElements()
     {
-        TextPrimitive text;
-        FillPrimitive background;
-        Timer updateTime;
-
-        protected override void CreateChildElements()
+        base.CreateChildElements();
+        this.text = new TextPrimitive();
+        this.text.ZIndex = 2;
+        this.text.Margin = new Padding(39, 45, 0, 0);
+        this.text.BindProperty(TextPrimitive.TextProperty, this,
+        MyPanelElement.CurrentTimeProperty, PropertyBindingOptions.OneWay);
+        this.background = new FillPrimitive();
+        this.background.GradientStyle = GradientStyles.OfficeGlass;
+        this.Children.Add(this.text);
+        this.Children.Add(this.background);
+        updateTime = new Timer();
+        updateTime.Interval = 100;
+        updateTime.Tick += new EventHandler(updateTime_Tick);
+        updateTime.Start();
+    }
+    bool active = true;
+    public bool Active
+    {
+        get { return active; }
+        set
         {
-            base.CreateChildElements();
-            this.text = new TextPrimitive();
-            this.text.ZIndex = 2;
-            this.text.Margin = new Padding(39, 45, 0, 0);
-            this.text.BindProperty(TextPrimitive.TextProperty, this,
-            MyPanelElement.CurrentTimeProperty, PropertyBindingOptions.OneWay);
-            this.background = new FillPrimitive();
-            this.background.GradientStyle = GradientStyles.OfficeGlass;
-            this.Children.Add(this.text);
-            this.Children.Add(this.background);
-            updateTime = new Timer();
-            updateTime.Interval = 100;
-            updateTime.Tick += new EventHandler(updateTime_Tick);
-            updateTime.Start();
-        }
-
-        bool active = true;
-
-        public bool Active
-        {
-            get { return active; }
-            set
+            active = value;
+            if (!value)
             {
-                active = value;
-                if (!value)
-                {
-                    this.updateTime.Stop();
-                }
-                else
-                {
-                    this.updateTime.Start();
-                }
+                this.updateTime.Stop();
+            }
+            else
+            {
+                this.updateTime.Start();
             }
         }
-        void updateTime_Tick(object sender, EventArgs e)
-        {
-            this.SetValue(CurrentTimeProperty, DateTime.Now.ToString());
-        }
-
-        public static RadProperty CurrentTimeProperty = 
-            RadProperty.Register("CurrentTimeProperty", typeof(string), typeof(MyPanelElement),
-        new RadElementPropertyMetadata(null, ElementPropertyOptions.AffectsDisplay));
-
-        public string CurrentTime
-        {
-            get { return (string)this.GetValue(CurrentTimeProperty); }
-            set { this.SetValue(CurrentTimeProperty, value); }
-        }
     }
+    void updateTime_Tick(object sender, EventArgs e)
+    {
+        this.SetValue(CurrentTimeProperty, DateTime.Now.ToString());
+    }
+    public static RadProperty CurrentTimeProperty = 
+        RadProperty.Register("CurrentTimeProperty", typeof(string), typeof(MyPanelElement),
+    new RadElementPropertyMetadata(null, ElementPropertyOptions.AffectsDisplay));
+    public string CurrentTime
+    {
+        get { return (string)this.GetValue(CurrentTimeProperty); }
+        set { this.SetValue(CurrentTimeProperty, value); }
+    }
+}
+
 ````
 ````VB.NET
 Public Class MyPanelElement
@@ -140,7 +136,6 @@ Public Class MyPanelElement
             End If
         End Set
     End Property
-
     Sub updateTime_Tick(ByVal sender As Object, ByVal e As EventArgs)
         Me.SetValue(CurrentTimeProperty, DateTime.Now.ToString())
     End Sub
@@ -154,7 +149,7 @@ Public Class MyPanelElement
         End Set
     End Property
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -177,51 +172,47 @@ End Class
 {{source=..\SamplesVB\TPF\GettingStarted\MyPanel.vb region=myPanel}} 
 
 ````C#
-    [ToolboxItem(true)]
-    public class MyPanel : RadControl
+[ToolboxItem(true)]
+public class MyPanel : RadControl
+{
+    private MyPanelElement panelElement;
+    public MyPanel()
     {
-        private MyPanelElement panelElement;
-
-        public MyPanel()
+        this.AutoSize = true;
+    }
+    public MyPanelElement PanelElement
+    {
+        get
         {
-            this.AutoSize = true;
-        }
-
-        public MyPanelElement PanelElement
-        {
-            get
-            {
-                return this.panelElement;
-            }
-        }
-
-        public bool Active
-        {
-            get
-            {
-                return this.panelElement.Active;
-            }
-            set
-            {
-                this.panelElement.Active = value;
-            }
-        }
-
-        protected override Size DefaultSize
-        {
-            get
-            {
-                return new Size(200, 100);
-            }
-        }
-
-        protected override void CreateChildItems(RadElement parent)
-        {
-            this.panelElement = new MyPanelElement();
-            this.RootElement.Children.Add(panelElement);
-            base.CreateChildItems(parent);
+            return this.panelElement;
         }
     }
+    public bool Active
+    {
+        get
+        {
+            return this.panelElement.Active;
+        }
+        set
+        {
+            this.panelElement.Active = value;
+        }
+    }
+    protected override Size DefaultSize
+    {
+        get
+        {
+            return new Size(200, 100);
+        }
+    }
+    protected override void CreateChildItems(RadElement parent)
+    {
+        this.panelElement = new MyPanelElement();
+        this.RootElement.Children.Add(panelElement);
+        base.CreateChildItems(parent);
+    }
+}
+
 ````
 ````VB.NET
 <ToolboxItem(True)> _
@@ -255,7 +246,7 @@ Public Class MyPanel
         MyBase.CreateChildItems(parent)
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 

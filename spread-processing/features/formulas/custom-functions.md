@@ -46,11 +46,13 @@ __Example 1__ shows how to register a function class ArgumentsFunction, inherito
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_0}} 
 
 ````C#
-            FunctionManager.RegisterFunction(new ArgumentsFunction());
+            
+FunctionManager.RegisterFunction(new ArgumentsFunction());
+
 ````
 ````VB.NET
-        FunctionManager.RegisterFunction(New ArgumentsFunction())
-        '
+FunctionManager.RegisterFunction(New ArgumentsFunction())
+
 ````
 
 {{endregion}} 
@@ -128,16 +130,19 @@ __Example 2__ creates an instance of ArgumentConversionRules:
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_1}} 
 
 ````C#
-        public static readonly ArgumentConversionRules BoolFunctionConversion = new ArgumentConversionRules(
-                    emptyIndirectArgument: ArgumentInterpretation.Ignore,
-                    textNumberDirectArgument: ArgumentInterpretation.TreatAsError,
-                    textNumberIndirectArgument: ArgumentInterpretation.Ignore,
-                    nonTextNumberDirectArgument: ArgumentInterpretation.TreatAsError,
-                    nonTextNumberIndirectArgument: ArgumentInterpretation.Ignore,
-                    arrayArgument: ArrayArgumentInterpretation.UseAllElements);
+    
+public static readonly ArgumentConversionRules BoolFunctionConversion = new ArgumentConversionRules(
+    emptyIndirectArgument: ArgumentInterpretation.Ignore,
+    textNumberDirectArgument: ArgumentInterpretation.TreatAsError,
+    textNumberIndirectArgument: ArgumentInterpretation.Ignore,
+    nonTextNumberDirectArgument: ArgumentInterpretation.TreatAsError,
+    nonTextNumberIndirectArgument: ArgumentInterpretation.Ignore,
+    arrayArgument: ArrayArgumentInterpretation.UseAllElements);
+
 ````
 ````VB.NET
-    Public Shared ReadOnly BoolFunctionConversion As New ArgumentConversionRules(emptyIndirectArgument:=ArgumentInterpretation.Ignore, textNumberDirectArgument:=ArgumentInterpretation.TreatAsError, textNumberIndirectArgument:=ArgumentInterpretation.Ignore, nonTextNumberDirectArgument:=ArgumentInterpretation.TreatAsError, nonTextNumberIndirectArgument:=ArgumentInterpretation.Ignore, arrayArgument:=ArrayArgumentInterpretation.UseAllElements)
+Public Shared ReadOnly BoolFunctionConversion As New ArgumentConversionRules(emptyIndirectArgument:=ArgumentInterpretation.Ignore, textNumberDirectArgument:=ArgumentInterpretation.TreatAsError, textNumberIndirectArgument:=ArgumentInterpretation.Ignore, nonTextNumberDirectArgument:=ArgumentInterpretation.TreatAsError, nonTextNumberIndirectArgument:=ArgumentInterpretation.Ignore, arrayArgument:=ArrayArgumentInterpretation.UseAllElements)
+
 ````
 
 {{endregion}} 
@@ -201,35 +206,32 @@ __Example 3__ shows how to create an instance of FunctionInfo class.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_2}} 
 
 ````C#
-            string functionName = "ADD";
+            
+string functionName = "ADD";
+            
+string description = "Adds all the numbers in range of cells.";
+    
+IEnumerable<ArgumentInfo> requiredArguments = new ArgumentInfo[]
+{
+    new ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number),
+};
+    
+IEnumerable<ArgumentInfo> optionalArguments = new ArgumentInfo[]
+{
+    new ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number),
+};
+        
+FunctionInfo sumFunctionInfo = new FunctionInfo(functionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, true);
 
-            string description = "Adds all the numbers in range of cells.";
-
-            IEnumerable<ArgumentInfo> requiredArguments = new ArgumentInfo[]
-	        {
-		        new ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number),
-	        };
-
-            IEnumerable<ArgumentInfo> optionalArguments = new ArgumentInfo[]
-	        {
-		        new ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number),
-	        };
-
-            FunctionInfo sumFunctionInfo = new FunctionInfo(functionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, true);
 ````
 ````VB.NET
-        Dim functionName As String = "ADD"
+Dim functionName As String = "ADD"
+Dim description As String = "Adds all the numbers in range of cells."
+Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
+Dim sumFunctionInfo As New FunctionInfo(functionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, _
+                                        True)
 
-        Dim description As String = "Adds all the numbers in range of cells."
-
-        Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
-
-        Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number)}
-
-        Dim sumFunctionInfo As New FunctionInfo(functionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, _
-            True)
-
-        '
 ````
 
 {{endregion}} 
@@ -250,88 +252,81 @@ __Example 4__ shows how to create the 'ARGUMENTS' function.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_3}} 
 
 ````C#
-
-        public class Arguments : FunctionBase
+    
+public class Arguments : FunctionBase
+{
+    public static readonly string FunctionName = "ARGUMENTS";
+    private static readonly FunctionInfo Info;
+        
+    public override string Name
+    {
+        get
         {
-            public static readonly string FunctionName = "ARGUMENTS";
-            private static readonly FunctionInfo Info;
-
-            public override string Name
-            {
-                get
-                {
-                    return FunctionName;
-                }
-            }
-
-            public override FunctionInfo FunctionInfo
-            {
-                get
-                {
-                    return Info;
-                }
-            }
-
-            static Arguments()
-            {
-                string description = "Returns number of used arguments.";
-
-                IEnumerable<ArgumentInfo> requiredArguments = new ArgumentInfo[]
-		{
-			new ArgumentInfo("First", "First argument.", ArgumentType.Any),
-			new ArgumentInfo("Second", "Second argument.", ArgumentType.Any),
-			new ArgumentInfo("Third", "Third argument.", ArgumentType.Any),
-		};
-
-                IEnumerable<ArgumentInfo> optionalArguments = new ArgumentInfo[]
-		{
-			new ArgumentInfo("First", "First argument.", ArgumentType.Any),
-			new ArgumentInfo("Second", "Second argument.", ArgumentType.Any),
-			new ArgumentInfo("Third", "Third argument.", ArgumentType.Any),
-		};
-
-                Info = new FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount: 3);
-            }
-
-            protected override RadExpression EvaluateOverride(RadExpression[] arguments)
-            {
-                return new NumberExpression(arguments.Length);
-            }
+            return FunctionName;
         }
+    }
+        
+    public override FunctionInfo FunctionInfo
+    {
+        get
+        {
+            return Info;
+        }
+    }
+    static Arguments()
+    {
+        string description = "Returns number of used arguments.";
+            
+        IEnumerable<ArgumentInfo> requiredArguments = new ArgumentInfo[]
+        {
+            new ArgumentInfo("First", "First argument.", ArgumentType.Any),
+            new ArgumentInfo("Second", "Second argument.", ArgumentType.Any),
+            new ArgumentInfo("Third", "Third argument.", ArgumentType.Any),
+        };
+            
+        IEnumerable<ArgumentInfo> optionalArguments = new ArgumentInfo[]
+        {
+            new ArgumentInfo("First", "First argument.", ArgumentType.Any),
+            new ArgumentInfo("Second", "Second argument.", ArgumentType.Any),
+            new ArgumentInfo("Third", "Third argument.", ArgumentType.Any),
+        };
+    
+        Info = new FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount: 3);
+    }
+    
+    protected override RadExpression EvaluateOverride(RadExpression[] arguments)
+    {
+        return new NumberExpression(arguments.Length);
+    }
+}
+
 ````
 ````VB.NET
+Public Class Arguments
+    Inherits FunctionBase
+    Public Shared ReadOnly FunctionName As String = "ARGUMENTS"
+    Private Shared ReadOnly Info As FunctionInfo
+    Public Overrides ReadOnly Property Name() As String
+        Get
+            Return FunctionName
+        End Get
+    End Property
+    Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+        Get
+            Return Info
+        End Get
+    End Property
+    Shared Sub New()
+        Dim description As String = "Returns number of used arguments."
+        Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("First", "First argument.", ArgumentType.Any), New ArgumentInfo("Second", "Second argument.", ArgumentType.Any), New ArgumentInfo("Third", "Third argument.", ArgumentType.Any)}
+        Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("First", "First argument.", ArgumentType.Any), New ArgumentInfo("Second", "Second argument.", ArgumentType.Any), New ArgumentInfo("Third", "Third argument.", ArgumentType.Any)}
+        Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount:=3)
+    End Sub
+    Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
+        Return New NumberExpression(arguments.Length)
+    End Function
+End Class
 
-    Public Class Arguments
-        Inherits FunctionBase
-        Public Shared ReadOnly FunctionName As String = "ARGUMENTS"
-        Private Shared ReadOnly Info As FunctionInfo
-
-        Public Overrides ReadOnly Property Name() As String
-            Get
-                Return FunctionName
-            End Get
-        End Property
-
-        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
-            Get
-                Return Info
-            End Get
-        End Property
-
-        Shared Sub New()
-            Dim description As String = "Returns number of used arguments."
-
-            Dim requiredArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("First", "First argument.", ArgumentType.Any), New ArgumentInfo("Second", "Second argument.", ArgumentType.Any), New ArgumentInfo("Third", "Third argument.", ArgumentType.Any)}
-
-            Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("First", "First argument.", ArgumentType.Any), New ArgumentInfo("Second", "Second argument.", ArgumentType.Any), New ArgumentInfo("Third", "Third argument.", ArgumentType.Any)}
-
-            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount:=3)
-        End Sub
-
-        Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
-            Return New NumberExpression(arguments.Length)
-        End Function
-    End Class
 ````
 
 {{endregion}} 
@@ -347,68 +342,66 @@ __Example 5__ shows how to create the 'E' function.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_4}} 
 
 ````C#
-        public class E : FunctionBase
+    
+public class E : FunctionBase
+{
+    public static readonly string FunctionName = "E";
+    private static readonly FunctionInfo Info;
+        
+    public override string Name
+    {
+        get
         {
-            public static readonly string FunctionName = "E";
-            private static readonly FunctionInfo Info;
-
-            public override string Name
-            {
-                get
-                {
-                    return FunctionName;
-                }
-            }
-
-            public override FunctionInfo FunctionInfo
-            {
-                get
-                {
-                    return Info;
-                }
-            }
-
-            static E()
-            {
-                string description = "Returns the Napier's constant.";
-
-                Info = new FunctionInfo(FunctionName, FunctionCategory.MathTrig, description);
-            }
-
-            protected override RadExpression EvaluateOverride(RadExpression[] arguments)
-            {
-                return NumberExpression.E;
-            }
+            return FunctionName;
         }
+    }
+        
+    public override FunctionInfo FunctionInfo
+    {
+        get
+        {
+            return Info;
+        }
+    }
+        
+    static E()
+    {
+        string description = "Returns the Napier's constant.";
+    
+        Info = new FunctionInfo(FunctionName, FunctionCategory.MathTrig, description);
+    }
+    
+    protected override RadExpression EvaluateOverride(RadExpression[] arguments)
+    {
+        return NumberExpression.E;
+    }
+}
+
 ````
 ````VB.NET
-    Public Class E
-        Inherits FunctionBase
-        Public Shared ReadOnly FunctionName As String = "E"
-        Private Shared ReadOnly Info As FunctionInfo
+Public Class E
+    Inherits FunctionBase
+    Public Shared ReadOnly FunctionName As String = "E"
+    Private Shared ReadOnly Info As FunctionInfo
+    Public Overrides ReadOnly Property Name() As String
+        Get
+            Return FunctionName
+        End Get
+    End Property
+    Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
+        Get
+            Return Info
+        End Get
+    End Property
+    Shared Sub New()
+        Dim description As String = "Returns the Napier's constant."
+        Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description)
+    End Sub
+    Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
+        Return NumberExpression.E
+    End Function
+End Class
 
-        Public Overrides ReadOnly Property Name() As String
-            Get
-                Return FunctionName
-            End Get
-        End Property
-
-        Public Overrides ReadOnly Property FunctionInfo() As FunctionInfo
-            Get
-                Return Info
-            End Get
-        End Property
-
-        Shared Sub New()
-            Dim description As String = "Returns the Napier's constant."
-
-            Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description)
-        End Sub
-
-        Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
-            Return NumberExpression.E
-        End Function
-    End Class
 ````
 
 {{endregion}} 

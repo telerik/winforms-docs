@@ -24,32 +24,32 @@ With this example we create a RadElement which contains a StackLayoutPanel. The 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyStackLayoutPanelElement.vb region=myStackLayoutPanelElement}} 
 
 ````C#
-    public class MyStackLayoutPanelElement : RadElement
+public class MyStackLayoutPanelElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
+        StackLayoutPanel layoutPanel = new StackLayoutPanel();
+        layoutPanel.Orientation = Orientation.Vertical;
+        for (int i = 0; i < 10; i++)
         {
-            StackLayoutPanel layoutPanel = new StackLayoutPanel();
-            layoutPanel.Orientation = Orientation.Vertical;
-            for (int i = 0; i < 10; i++)
-            {
-                layoutPanel.Children.Add(GetTextBoxElement(i));
-            }
-            this.Children.Add(layoutPanel);
-            base.CreateChildElements();
+            layoutPanel.Children.Add(GetTextBoxElement(i));
         }
-
-        private RadTextBoxElement GetTextBoxElement(int count)
-        {
-            RadTextBoxElement result = new RadTextBoxElement();
-            result.ShowBorder = true;
-            result.Text = "Element" + count.ToString();
-            result.Class = "MyTextBoxElement";
-            result.StretchHorizontally = false;
-            result.StretchVertically = false;
-            result.MinSize = new Size(100, 17);
-            return result;
-        }
+        this.Children.Add(layoutPanel);
+        base.CreateChildElements();
     }
+    private RadTextBoxElement GetTextBoxElement(int count)
+    {
+        RadTextBoxElement result = new RadTextBoxElement();
+        result.ShowBorder = true;
+        result.Text = "Element" + count.ToString();
+        result.Class = "MyTextBoxElement";
+        result.StretchHorizontally = false;
+        result.StretchVertically = false;
+        result.MinSize = new Size(100, 17);
+        return result;
+    }
+}
+
 ````
 ````VB.NET
 Public Class MyStackLayoutPanelElement
@@ -63,7 +63,6 @@ Public Class MyStackLayoutPanelElement
         Me.Children.Add(layoutPanel)
         MyBase.CreateChildElements()
     End Sub
-
     Private Function GetTextBoxElement(ByVal count As Integer) As RadTextBoxElement
         Dim result As New RadTextBoxElement()
         result.ShowBorder = True
@@ -75,7 +74,7 @@ Public Class MyStackLayoutPanelElement
         Return result
     End Function
 End Class
-'
+
 ````
 
 {{endregion}}

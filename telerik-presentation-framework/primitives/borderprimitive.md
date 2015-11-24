@@ -26,20 +26,21 @@ All four sides of the border are drawn with the same properties except color. Co
 {{source=..\SamplesVB\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveSElement.vb region=myBorderPrimitiveSElement}} 
 
 ````C#
-    public class MyBorderPrimitiveSElement : RadElement
+public class MyBorderPrimitiveSElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
-        {
-            BorderPrimitive borderPrimitive = new BorderPrimitive();
-            borderPrimitive.Class = "MyBorderPrimtiveClass";
-            borderPrimitive.BoxStyle = BorderBoxStyle.SingleBorder;
-            borderPrimitive.Width = 3;
-            borderPrimitive.ForeColor = Color.Red;
-            borderPrimitive.GradientStyle = GradientStyles.Solid;
-            this.Children.Add(borderPrimitive);
-            base.CreateChildElements();
-        }
+        BorderPrimitive borderPrimitive = new BorderPrimitive();
+        borderPrimitive.Class = "MyBorderPrimtiveClass";
+        borderPrimitive.BoxStyle = BorderBoxStyle.SingleBorder;
+        borderPrimitive.Width = 3;
+        borderPrimitive.ForeColor = Color.Red;
+        borderPrimitive.GradientStyle = GradientStyles.Solid;
+        this.Children.Add(borderPrimitive);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class MyBorderPrimitiveSElement
@@ -55,7 +56,7 @@ Public Class MyBorderPrimitiveSElement
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -72,25 +73,26 @@ Each side of the border can be tailored individually. __ForeColor__ , __Width__ 
 {{source=..\SamplesVB\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveFBElement.vb region=myBorderPrimitiveFBElement}} 
 
 ````C#
-    public class MyBorderPrimitiveFBElement : RadElement
+public class MyBorderPrimitiveFBElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
-        {
-            BorderPrimitive borderPrimitive = new BorderPrimitive();
-            borderPrimitive.Class = "MyBorderPrimtiveClass";
-            borderPrimitive.BoxStyle = BorderBoxStyle.FourBorders;
-            borderPrimitive.LeftWidth = 3;
-            borderPrimitive.LeftColor = Color.Blue;
-            borderPrimitive.BottomWidth = 3;
-            borderPrimitive.BottomColor = Color.Blue;
-            borderPrimitive.RightWidth = 1;
-            borderPrimitive.RightColor = Color.Red;
-            borderPrimitive.TopWidth = 1;
-            borderPrimitive.TopColor = Color.Red;
-            this.Children.Add(borderPrimitive);
-            base.CreateChildElements();
-        }
+        BorderPrimitive borderPrimitive = new BorderPrimitive();
+        borderPrimitive.Class = "MyBorderPrimtiveClass";
+        borderPrimitive.BoxStyle = BorderBoxStyle.FourBorders;
+        borderPrimitive.LeftWidth = 3;
+        borderPrimitive.LeftColor = Color.Blue;
+        borderPrimitive.BottomWidth = 3;
+        borderPrimitive.BottomColor = Color.Blue;
+        borderPrimitive.RightWidth = 1;
+        borderPrimitive.RightColor = Color.Red;
+        borderPrimitive.TopWidth = 1;
+        borderPrimitive.TopColor = Color.Red;
+        this.Children.Add(borderPrimitive);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class MyBorderPrimitiveFBElement
@@ -111,7 +113,7 @@ Public Class MyBorderPrimitiveFBElement
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -126,27 +128,28 @@ End Class
 {{source=..\SamplesVB\TPF\Primitives\BorderPrimitive1\MyBorderPrimitiveOIElement.vb region=myBorderPrimitiveOIElement}} 
 
 ````C#
-    public class MyBorderPrimitiveOIElement : RadElement
+public class MyBorderPrimitiveOIElement : RadElement
+{
+    protected override void CreateChildElements()
     {
-        protected override void CreateChildElements()
-        {
-            BorderPrimitive borderPrimitive = new BorderPrimitive();
-            borderPrimitive.Class = "MyBorderPrimtiveClass";
-            borderPrimitive.BoxStyle = BorderBoxStyle.OuterInnerBorders;
-            borderPrimitive.Width = 1;
-            borderPrimitive.GradientStyle = GradientStyles.Linear;
-            borderPrimitive.ForeColor = Color.DarkBlue;
-            borderPrimitive.ForeColor2 = Color.Blue;
-            borderPrimitive.ForeColor3 = Color.Green;
-            borderPrimitive.ForeColor4 = Color.DarkGreen;
-            borderPrimitive.InnerColor = Color.LightBlue;
-            borderPrimitive.InnerColor2 = Color.SkyBlue;
-            borderPrimitive.InnerColor3 = Color.LightGreen;
-            borderPrimitive.InnerColor4 = Color.LightSkyBlue;
-            this.Children.Add(borderPrimitive);
-            base.CreateChildElements();
-        }
+        BorderPrimitive borderPrimitive = new BorderPrimitive();
+        borderPrimitive.Class = "MyBorderPrimtiveClass";
+        borderPrimitive.BoxStyle = BorderBoxStyle.OuterInnerBorders;
+        borderPrimitive.Width = 1;
+        borderPrimitive.GradientStyle = GradientStyles.Linear;
+        borderPrimitive.ForeColor = Color.DarkBlue;
+        borderPrimitive.ForeColor2 = Color.Blue;
+        borderPrimitive.ForeColor3 = Color.Green;
+        borderPrimitive.ForeColor4 = Color.DarkGreen;
+        borderPrimitive.InnerColor = Color.LightBlue;
+        borderPrimitive.InnerColor2 = Color.SkyBlue;
+        borderPrimitive.InnerColor3 = Color.LightGreen;
+        borderPrimitive.InnerColor4 = Color.LightSkyBlue;
+        this.Children.Add(borderPrimitive);
+        base.CreateChildElements();
     }
+}
+
 ````
 ````VB.NET
 Public Class MyBorderPrimitiveOIElement
@@ -169,7 +172,7 @@ Public Class MyBorderPrimitiveOIElement
         MyBase.CreateChildElements()
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}

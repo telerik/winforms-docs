@@ -20,22 +20,23 @@ RadTrackBarElement contains the logic and user interface for RadTrackBar.
 {{source=..\SamplesVB\TPF\Elements\MyTrackBarControl.vb region=myTrackBarControl}} 
 
 ````C#
-    public class MyTrackBarControl : RadControl
+public class MyTrackBarControl : RadControl
+{
+    protected override void CreateChildItems(RadElement parent)
     {
-        protected override void CreateChildItems(RadElement parent)
-        {
-            RadTrackBarElement radTrackBarElement = new RadTrackBarElement();
-            radTrackBarElement.ForeColor = Color.SkyBlue;
-            radTrackBarElement.TickColor = Color.Blue;
-            radTrackBarElement.BackColor = Color.LightSteelBlue;
-            radTrackBarElement.Minimum = 1;
-            radTrackBarElement.Maximum = 100;
-            radTrackBarElement.TickFrequency = 10;
-            radTrackBarElement.Value = 20;
-            this.RootElement.Children.Add(radTrackBarElement);
-            base.CreateChildItems(parent);
-        }
+        RadTrackBarElement radTrackBarElement = new RadTrackBarElement();
+        radTrackBarElement.ForeColor = Color.SkyBlue;
+        radTrackBarElement.TickColor = Color.Blue;
+        radTrackBarElement.BackColor = Color.LightSteelBlue;
+        radTrackBarElement.Minimum = 1;
+        radTrackBarElement.Maximum = 100;
+        radTrackBarElement.TickFrequency = 10;
+        radTrackBarElement.Value = 20;
+        this.RootElement.Children.Add(radTrackBarElement);
+        base.CreateChildItems(parent);
     }
+}
+
 ````
 ````VB.NET
 Public Class MyTrackBarControl
@@ -53,7 +54,7 @@ Public Class MyTrackBarControl
         MyBase.CreateChildItems(parent)
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}}
