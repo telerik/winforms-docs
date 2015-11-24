@@ -28,15 +28,16 @@ In order to enable this functionality you should set the __AutoSpellCheckControl
 {{source=..\SamplesVB\SpellChecker\SpellCheckAsYouType.vb region=AutoSpellCheckControl}} 
 
 ````C#
-            this.radSpellChecker1.AutoSpellCheckControl = this.textBox1;
-            this.radSpellChecker2.AutoSpellCheckControl = this.radTextBox1;
-            this.radSpellChecker3.AutoSpellCheckControl = this.radTextBoxControl1;
+this.radSpellChecker1.AutoSpellCheckControl = this.textBox1;
+this.radSpellChecker2.AutoSpellCheckControl = this.radTextBox1;
+this.radSpellChecker3.AutoSpellCheckControl = this.radTextBoxControl1;
+
 ````
 ````VB.NET
-        Me.RadSpellChecker1.AutoSpellCheckControl = Me.TextBox1
-        Me.RadSpellChecker2.AutoSpellCheckControl = Me.RadTextBox1
-        Me.RadSpellChecker3.AutoSpellCheckControl = Me.RadTextBoxControl1
-        '
+Me.RadSpellChecker1.AutoSpellCheckControl = Me.TextBox1
+Me.RadSpellChecker2.AutoSpellCheckControl = Me.RadTextBox1
+Me.RadSpellChecker3.AutoSpellCheckControl = Me.RadTextBoxControl1
+
 ````
 
 {{endregion}} 

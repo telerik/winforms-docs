@@ -30,11 +30,12 @@ property to *WordByWord*:
 {{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=wordByWord}} 
 
 ````C#
-            this.radSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordByWord;
+this.radSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordByWord;
+
 ````
 ````VB.NET
-        Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordByWord
-        '
+Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordByWord
+
 ````
 
 {{endregion}} 
@@ -60,11 +61,12 @@ __Check All Words at Once__  To do this kind of check, you should set the __Spel
 {{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=allAtOnce}} 
 
 ````C#
-            this.radSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.AllAtOnce;
+this.radSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.AllAtOnce;
+
 ````
 ````VB.NET
-        Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.AllAtOnce
-        '
+Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.AllAtOnce
+
 ````
 
 {{endregion}} 

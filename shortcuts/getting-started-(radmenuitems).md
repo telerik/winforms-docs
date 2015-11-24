@@ -30,25 +30,24 @@ position: 1
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=handlingClickEvent}} 
 
 ````C#
-        void radMenuItem1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("New");
-        }
+void radMenuItem1_Click(object sender, EventArgs e)
+{
+    MessageBox.Show("New");
+}
+void radMenuItem2_Click(object sender, EventArgs e)
+{
+    MessageBox.Show("File");
+}
 
-        void radMenuItem2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("File");
-        }
 ````
 ````VB.NET
-    Private Sub radMenuItem1_Click(ByVal sender As Object, ByVal e As EventArgs)
-        MessageBox.Show("New")
-    End Sub
+Private Sub radMenuItem1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    MessageBox.Show("New")
+End Sub
+Private Sub radMenuItem2_Click(ByVal sender As Object, ByVal e As EventArgs)
+    MessageBox.Show("File")
+End Sub
 
-    Private Sub radMenuItem2_Click(ByVal sender As Object, ByVal e As EventArgs)
-        MessageBox.Show("File")
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -59,13 +58,14 @@ position: 1
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=menuShortcuts}} 
 
 ````C#
-            this.radMenuItem1.Shortcuts.Add(new RadShortcut(Keys.Control, Keys.N));
-            this.radMenuItem2.Shortcuts.Add(new RadShortcut(Keys.Shift, Keys.F, Keys.K));
+this.radMenuItem1.Shortcuts.Add(new RadShortcut(Keys.Control, Keys.N));
+this.radMenuItem2.Shortcuts.Add(new RadShortcut(Keys.Shift, Keys.F, Keys.K));
+
 ````
 ````VB.NET
-        Me.RadMenuItem1.Shortcuts.Add(New RadShortcut(Keys.Control, Keys.N))
-        Me.RadMenuItem2.Shortcuts.Add(New RadShortcut(Keys.Shift, Keys.F, Keys.K))
-        '
+Me.RadMenuItem1.Shortcuts.Add(New RadShortcut(Keys.Control, Keys.N))
+Me.RadMenuItem2.Shortcuts.Add(New RadShortcut(Keys.Shift, Keys.F, Keys.K))
+
 ````
 
 {{endregion}} 
@@ -81,11 +81,12 @@ Interesting functionality to mention is the ability to set your own custom text 
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=SetHintText}} 
 
 ````C#
-            radMenuItem2.HintText = "Custom Text";
+radMenuItem2.HintText = "Custom Text";
+
 ````
 ````VB.NET
-        RadMenuItem2.HintText = "Custom Text"
-        '
+RadMenuItem2.HintText = "Custom Text"
+
 ````
 
 {{endregion}} 

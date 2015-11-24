@@ -26,39 +26,39 @@ Below is a sample implementation of an English localization provider:
 {{source=..\SamplesVB\SpellChecker\SpellCheckerLocalization.vb region=myEnglishLocalizationProvider}} 
 
 ````C#
-    class MyEnglishSpellCheckerLocalizationProvider : RadSpellCheckerLocalizationProvider
+class MyEnglishSpellCheckerLocalizationProvider : RadSpellCheckerLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
     {
-        public override string GetLocalizedString(string id)
+        switch (id)
         {
-            switch (id)
-            {
-                case RadSpellCheckerStringId.Title:
-                    return "Spell Checking";
-                case RadSpellCheckerStringId.OK:
-                    return "OK";
-                case RadSpellCheckerStringId.Cancel:
-                    return "Cancel";
-                case RadSpellCheckerStringId.Close:
-                    return "Close";
-                case RadSpellCheckerStringId.Change:
-                    return "Change";
-                case RadSpellCheckerStringId.Complete:
-                    return "The spelling check is complete.";
-                case RadSpellCheckerStringId.AddToDictionary:
-                    return "Add to Dictionary";
-                case RadSpellCheckerStringId.IngoreAll:
-                    return "Ignore All";
-                case RadSpellCheckerStringId.Suggestions:
-                    return "Suggestions:";
-                case RadSpellCheckerStringId.ChangeTo:
-                    return "Change To:";
-                case RadSpellCheckerStringId.NotInDictionary:
-                    return "Not in Dicitionary:";
-            }
-
-            return null;
+            case RadSpellCheckerStringId.Title:
+                return "Spell Checking";
+            case RadSpellCheckerStringId.OK:
+                return "OK";
+            case RadSpellCheckerStringId.Cancel:
+                return "Cancel";
+            case RadSpellCheckerStringId.Close:
+                return "Close";
+            case RadSpellCheckerStringId.Change:
+                return "Change";
+            case RadSpellCheckerStringId.Complete:
+                return "The spelling check is complete.";
+            case RadSpellCheckerStringId.AddToDictionary:
+                return "Add to Dictionary";
+            case RadSpellCheckerStringId.IngoreAll:
+                return "Ignore All";
+            case RadSpellCheckerStringId.Suggestions:
+                return "Suggestions:";
+            case RadSpellCheckerStringId.ChangeTo:
+                return "Change To:";
+            case RadSpellCheckerStringId.NotInDictionary:
+                return "Not in Dicitionary:";
         }
+        return null;
     }
+}
+
 ````
 ````VB.NET
 Class MyEnglishSpellCheckerLocalizationProvider
@@ -88,10 +88,10 @@ Class MyEnglishSpellCheckerLocalizationProvider
             Case RadSpellCheckerStringId.NotInDictionary
                 Return "Not in Dicitionary:"
         End Select
-
         Return Nothing
     End Function
 End Class
+
 ````
 
 {{endregion}} 
@@ -104,11 +104,12 @@ To apply the custom localization provider, instantiate and assign it to the cur
 {{source=..\SamplesVB\SpellChecker\SpellCheckerLocalization.vb region=localizeSpellChecker}} 
 
 ````C#
-            RadSpellCheckerLocalizationProvider.CurrentProvider = new MyEnglishSpellCheckerLocalizationProvider();
+RadSpellCheckerLocalizationProvider.CurrentProvider = new MyEnglishSpellCheckerLocalizationProvider();
+
 ````
 ````VB.NET
-        RadSpellCheckerLocalizationProvider.CurrentProvider = New MyEnglishSpellCheckerLocalizationProvider()
-        '
+RadSpellCheckerLocalizationProvider.CurrentProvider = New MyEnglishSpellCheckerLocalizationProvider()
+
 ````
 
 {{endregion}} 

@@ -31,16 +31,17 @@ RadSpellChecker comes with one predefined dictionary which checks the English la
 {{source=..\SamplesVB\SpellChecker\GermanDictionary.vb region=germanDictionary}} 
 
 ````C#
-    public class GermanDictionary : WordDictionary
+public class GermanDictionary : WordDictionary
+{
+    protected override void EnsureDictionaryLoadedOverride()
     {
-        protected override void EnsureDictionaryLoadedOverride()
+        using (MemoryStream ms = new MemoryStream(SamplesCS.Properties.Resources.de_DE))
         {
-            using (MemoryStream ms = new MemoryStream(SamplesCS.Properties.Resources.de_DE))
-            {
-                this.Load(ms);
-            }
+            this.Load(ms);
         }
     }
+}
+
 ````
 ````VB.NET
 Public Class GermanDictionary
@@ -51,7 +52,7 @@ Public Class GermanDictionary
         End Using
     End Sub
 End Class
-'
+
 ````
 
 {{endregion}} 
@@ -62,11 +63,12 @@ End Class
 {{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=defineCulture}} 
 
 ````C#
-        private static readonly CultureInfo GermanCulture = CultureInfo.GetCultureInfo("de-DE");
+private static readonly CultureInfo GermanCulture = CultureInfo.GetCultureInfo("de-DE");
+
 ````
 ````VB.NET
-    Friend Shared GermanCulture As CultureInfo = CultureInfo.GetCultureInfo("de-DE")
-    '
+Friend Shared GermanCulture As CultureInfo = CultureInfo.GetCultureInfo("de-DE")
+
 ````
 
 {{endregion}}
@@ -77,15 +79,16 @@ End Class
 {{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=addingDictionary}} 
 
 ````C#
-            IControlSpellChecker textBoxControlSpellChecker = this.radSpellChecker1.GetControlSpellChecker(typeof(RadTextBox));
-            DocumentSpellChecker documentSpellChecker = textBoxControlSpellChecker.SpellChecker as DocumentSpellChecker;
-            documentSpellChecker.AddDictionary(new GermanDictionary(), GermanCulture);
+IControlSpellChecker textBoxControlSpellChecker = this.radSpellChecker1.GetControlSpellChecker(typeof(RadTextBox));
+DocumentSpellChecker documentSpellChecker = textBoxControlSpellChecker.SpellChecker as DocumentSpellChecker;
+documentSpellChecker.AddDictionary(new GermanDictionary(), GermanCulture);
+
 ````
 ````VB.NET
-        Dim textBoxControlSpellChecker As IControlSpellChecker = Me.radSpellChecker1.GetControlSpellChecker(GetType(RadTextBox))
-        Dim documentSpellChecker As DocumentSpellChecker = TryCast(textBoxControlSpellChecker.SpellChecker, DocumentSpellChecker)
-        documentSpellChecker.AddDictionary(New GermanDictionary(), GermanCulture)
-        '
+Dim textBoxControlSpellChecker As IControlSpellChecker = Me.radSpellChecker1.GetControlSpellChecker(GetType(RadTextBox))
+Dim documentSpellChecker As DocumentSpellChecker = TryCast(textBoxControlSpellChecker.SpellChecker, DocumentSpellChecker)
+documentSpellChecker.AddDictionary(New GermanDictionary(), GermanCulture)
+
 ````
 
 {{endregion}} 
@@ -96,11 +99,12 @@ End Class
 {{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=settingCulture}} 
 
 ````C#
-            documentSpellChecker.SpellCheckingCulture = GermanCulture;
+documentSpellChecker.SpellCheckingCulture = GermanCulture;
+
 ````
 ````VB.NET
-        documentSpellChecker.SpellCheckingCulture = GermanCulture
-        '
+documentSpellChecker.SpellCheckingCulture = GermanCulture
+
 ````
 
 {{endregion}} 

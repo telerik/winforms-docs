@@ -33,11 +33,12 @@ check a simple text-editing control - RadTextBox.
 {{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=settingText}} 
 
 ````C#
-            this.radTextBox1.Text = "The quik broun foxx jumpd ovur lasy dog";
+this.radTextBox1.Text = "The quik broun foxx jumpd ovur lasy dog";
+
 ````
 ````VB.NET
-        Me.RadTextBox1.Text = "The quik broun foxx jumpd ovur lasy dog"
-        '
+Me.RadTextBox1.Text = "The quik broun foxx jumpd ovur lasy dog"
+
 ````
 
 {{endregion}} 
@@ -49,16 +50,17 @@ check a simple text-editing control - RadTextBox.
 {{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=callingCheck}} 
 
 ````C#
-        private void radButton1_Click(object sender, EventArgs e)
-        {
-            this.radSpellChecker1.Check(this.radTextBox1);
-        }
+private void radButton1_Click(object sender, EventArgs e)
+{
+    this.radSpellChecker1.Check(this.radTextBox1);
+}
+
 ````
 ````VB.NET
-    Private Sub RadButton1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadButton1.Click
-        Me.RadSpellChecker1.Check(Me.RadTextBox1)
-    End Sub
-    '
+Private Sub RadButton1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadButton1.Click
+    Me.RadSpellChecker1.Check(Me.RadTextBox1)
+End Sub
+
 ````
 
 {{endregion}} 
