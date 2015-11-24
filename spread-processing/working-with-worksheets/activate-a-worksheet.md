@@ -24,39 +24,32 @@ __Example 1__ creates a new workbook from scratch and subscribes to its __Active
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingActivateAWorksheet.vb region=radspreadprocessing-working-with-worksheets-activate-worksheet_0}} 
 
 ````C#
-        public void ActivateWorksheetDemo()
-        {
-            Workbook workbook = new Workbook();
+public void ActivateWorksheetDemo()
+{
+    Workbook workbook = new Workbook();
+    workbook.ActiveSheetChanged += this.Workbook_ActiveSheetChanged;
+    workbook.Worksheets.Add();
+    workbook.Worksheets.Add();
+    workbook.ActiveWorksheet = workbook.Worksheets[1];
+}
+private void Workbook_ActiveSheetChanged(object sender, EventArgs e)
+{
+    // the active worksheet is changed
+}
 
-            workbook.ActiveSheetChanged += this.Workbook_ActiveSheetChanged;
-
-            workbook.Worksheets.Add();
-            workbook.Worksheets.Add();
-
-            workbook.ActiveWorksheet = workbook.Worksheets[1];
-        }
-
-        private void Workbook_ActiveSheetChanged(object sender, EventArgs e)
-        {
-            // the active worksheet is changed
-        }
 ````
 ````VB.NET
-    Public Sub ActivateWorksheetDemo()
-        Dim workbook As New Workbook()
+Public Sub ActivateWorksheetDemo()
+    Dim workbook As New Workbook()
+    AddHandler workbook.ActiveSheetChanged, AddressOf Me.Workbook_ActiveSheetChanged
+    workbook.Worksheets.Add()
+    workbook.Worksheets.Add()
+    workbook.ActiveWorksheet = workbook.Worksheets(1)
+End Sub
+Private Sub Workbook_ActiveSheetChanged(sender As Object, e As EventArgs)
+    ' the active worksheet is changed
+End Sub
 
-        AddHandler workbook.ActiveSheetChanged, AddressOf Me.Workbook_ActiveSheetChanged
-
-        workbook.Worksheets.Add()
-        workbook.Worksheets.Add()
-
-        workbook.ActiveWorksheet = workbook.Worksheets(1)
-    End Sub
-
-    Private Sub Workbook_ActiveSheetChanged(sender As Object, e As EventArgs)
-        ' the active worksheet is changed
-    End Sub
-    '
 ````
 
 {{endregion}} 

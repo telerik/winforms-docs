@@ -35,7 +35,17 @@ The following example shows how to export the Entire Workbook without ignoring t
 
 	
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingPdfSettings.cs region=radspreadprocessing-formats-and-conversion-pdf-settings_0}} 
-{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingPdfSettings.vb region=radspreadprocessing-formats-and-conversion-pdf-settings_0}} 
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingPdfSettings.vb region=radspreadprocessing-formats-and-conversion-pdf-settings_0}}````C#
+                
+PdfFormatProvider provider = new PdfFormatProvider();
+provider.ExportSettings = new PdfExportSettings(ExportWhat.EntireWorkbook, false);
+
+````
+````VB.NET
+Dim provider As New PdfFormatProvider()
+provider.ExportSettings = New PdfExportSettings(ExportWhat.EntireWorkbook, False)
+
+```` 
 
 {{endregion}} 
 
@@ -45,7 +55,24 @@ The following example shows how to export only two selected ranges from the acti
 #### Example 2: Export range
 
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingPdfSettings.cs region=radspreadprocessing-formats-and-conversion-pdf-settings_1}} 
-{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingPdfSettings.vb region=radspreadprocessing-formats-and-conversion-pdf-settings_1}} 
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingPdfSettings.vb region=radspreadprocessing-formats-and-conversion-pdf-settings_1}}````C#
+    
+CellRange[] rangesToExport = new CellRange[]
+{
+    new CellRange(2, 3, 10, 15),
+    new CellRange(4, 5, 8, 20)
+};
+                
+PdfFormatProvider provider = new PdfFormatProvider();
+provider.ExportSettings = new PdfExportSettings(rangesToExport);
+
+````
+````VB.NET
+Dim rangesToExport As CellRange() = New CellRange() {New CellRange(2, 3, 10, 15), New CellRange(4, 5, 8, 20)}
+Dim provider As New PdfFormatProvider()
+provider.ExportSettings = New PdfExportSettings(rangesToExport)
+
+```` 
 
 {{endregion}} 
 
@@ -59,6 +86,21 @@ Another export option is to specify settings specific to the PDF format to the e
 #### Example 3: Export PDF/A Compliant Document
 
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingPdfSettings.cs region=radspreadprocessing-formats-and-conversion-pdf-settings_2}} 
-{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingPdfSettings.vb region=radspreadprocessing-formats-and-conversion-pdf-settings_2}} 
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingPdfSettings.vb region=radspreadprocessing-formats-and-conversion-pdf-settings_2}}````C#
+PdfFormatProvider provider = new PdfFormatProvider();
+                
+Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export.PdfExportSettings fileSettings = new Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export.PdfExportSettings();
+fileSettings.ComplianceLevel = Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export.PdfComplianceLevel.PdfA2B;
+    
+provider.ExportSettings.PdfFileSettings = fileSettings;
+
+````
+````VB.NET
+Dim provider As New PdfFormatProvider()
+Dim fileSettings As New Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export.PdfExportSettings()
+fileSettings.ComplianceLevel = Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export.PdfComplianceLevel.PdfA2B
+provider.ExportSettings.PdfFileSettings = fileSettings
+
+```` 
 
 {{endregion}} 

@@ -32,18 +32,16 @@ __Example 1__ illustrates how to create a workbook from scratch and protect it u
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorkbookProtection.vb region=radspreadprocessing-features-protection-workbook_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add();
+workbook.Protect("telerik");
 
-            workbook.Protect("telerik");
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+workbook.Worksheets.Add()
+workbook.Protect("telerik")
 
-        workbook.Protect("telerik")
-
-        '
 ````
 
 {{endregion}} 
@@ -61,22 +59,18 @@ __Example 2__ demonstrates how to unprotect a workbook:
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorkbookProtection.vb region=radspreadprocessing-features-protection-workbook_1}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add();
+workbook.Protect("telerik");
+workbook.Unprotect("telerik");
 
-            workbook.Protect("telerik");
-
-            workbook.Unprotect("telerik");
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+workbook.Worksheets.Add()
+workbook.Protect("telerik")
+workbook.Unprotect("telerik")
 
-        workbook.Protect("telerik")
-
-        workbook.Unprotect("telerik")
-
-        '
 ````
 
 {{endregion}} 

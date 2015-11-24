@@ -60,36 +60,36 @@ __Example 1__ demonstrates how to create a __ThemeColorScheme__ object. Note tha
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_0}} 
 
 ````C#
-            ThemeColorScheme colorScheme = new ThemeColorScheme(
-                "Mine",
-                Colors.Black,     // background 1
-                Colors.Blue,      // text 1
-                Colors.Brown,     // background 2
-                Colors.Cyan,      // text 2
-                Colors.DarkGray,  // accent 1
-                Colors.Gray,      // accent 2
-                Colors.Green,     // accent 3
-                Colors.LightGray, // accent 4
-                Colors.Magenta,   // accent 5
-                Colors.Orange,    // accent 6
-                Colors.Purple,    // hyperlink
-                Colors.Red);      // followedHyperlink
+ThemeColorScheme colorScheme = new ThemeColorScheme(
+    "Mine",
+    Colors.Black,     // background 1
+    Colors.Blue,      // text 1
+    Colors.Brown,     // background 2
+    Colors.Cyan,      // text 2
+    Colors.DarkGray,  // accent 1
+    Colors.Gray,      // accent 2
+    Colors.Green,     // accent 3
+    Colors.LightGray, // accent 4
+    Colors.Magenta,   // accent 5
+    Colors.Orange,    // accent 6
+    Colors.Purple,    // hyperlink
+    Colors.Red);      // followedHyperlink
+
 ````
 ````VB.NET
+Dim colorScheme As New ThemeColorScheme("Mine", Colors.Black, _
+                                                Colors.Blue, _
+                                                Colors.Brown, _
+                                                Colors.Cyan, _
+                                                Colors.DarkGray, _
+                                                Colors.Gray, _
+                                                Colors.Green, _
+                                                Colors.LightGray, _
+                                                Colors.Magenta, _
+                                                Colors.Orange, _
+                                                Colors.Purple, _
+                                                Colors.Red)
 
-        Dim colorScheme As New ThemeColorScheme("Mine", Colors.Black, _
-                                                        Colors.Blue, _
-                                                        Colors.Brown, _
-                                                        Colors.Cyan, _
-                                                        Colors.DarkGray, _
-                                                        Colors.Gray, _
-                                                        Colors.Green, _
-                                                        Colors.LightGray, _
-                                                        Colors.Magenta, _
-                                                        Colors.Orange, _
-                                                        Colors.Purple, _
-                                                        Colors.Red)
-        '
 ````
 
 {{endregion}} 
@@ -116,11 +116,12 @@ __Example 2__ shows how you can create a ThemableColor:
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_1}} 
 
 ````C#
-            ThemableColor themableColor = new ThemableColor(ThemeColorType.Accent1);
+ThemableColor themableColor = new ThemableColor(ThemeColorType.Accent1);
+
 ````
 ````VB.NET
-        Dim themableColor As New ThemableColor(ThemeColorType.Accent1)
-        '
+Dim themableColor As New ThemableColor(ThemeColorType.Accent1)
+
 ````
 
 {{endregion}} 
@@ -143,16 +144,17 @@ __Example 3__ illustrates how to create a __ThemeFontScheme__ object.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_2}} 
 
 ````C#
-            ThemeFontScheme fontScheme = new ThemeFontScheme(
-                "Mine",
-                "Times New Roman",  // latinMajor
-                "Arial");           // latinMinor
+ThemeFontScheme fontScheme = new ThemeFontScheme(
+    "Mine",
+    "Times New Roman",  // latinMajor
+    "Arial");           // latinMinor
+
 ````
 ````VB.NET
-        ' latinMajor
-        Dim fontScheme As New ThemeFontScheme("Mine", "Times New Roman", "Arial")
-        ' latinMinor
-        '
+' latinMajor
+Dim fontScheme As New ThemeFontScheme("Mine", "Times New Roman", "Arial")
+' latinMinor
+
 ````
 
 {{endregion}} 
@@ -174,11 +176,12 @@ __Example 4__ shows how to create a ThemableFontFamily.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_3}} 
 
 ````C#
-            ThemableFontFamily themableFont = new ThemableFontFamily(ThemeFontType.Major);
+ThemableFontFamily themableFont = new ThemableFontFamily(ThemeFontType.Major);
+
 ````
 ````VB.NET
-        Dim themableFont As New ThemableFontFamily(ThemeFontType.Major)
-        '
+Dim themableFont As New ThemableFontFamily(ThemeFontType.Major)
+
 ````
 
 {{endregion}} 
@@ -195,11 +198,12 @@ __Example 5__ demonstrates how to use create a DocumentTheme using the color sch
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_4}} 
 
 ````C#
-            DocumentTheme theme = new DocumentTheme("Mine", colorScheme, fontScheme);
+DocumentTheme theme = new DocumentTheme("Mine", colorScheme, fontScheme);
+
 ````
 ````VB.NET
-        Dim theme As New DocumentTheme("Mine", colorScheme, fontScheme)
-        '
+Dim theme As New DocumentTheme("Mine", colorScheme, fontScheme)
+
 ````
 
 {{endregion}} 
@@ -215,11 +219,12 @@ __Example 6__ shows how you can create a document theme using the predefined col
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_5}} 
 
 ````C#
-            DocumentTheme theme = new DocumentTheme("From predefined schemes", PredefinedThemeSchemes.ColorSchemes[0], PredefinedThemeSchemes.FontSchemes[5]);
+DocumentTheme theme = new DocumentTheme("From predefined schemes", PredefinedThemeSchemes.ColorSchemes[0], PredefinedThemeSchemes.FontSchemes[5]);
+
 ````
 ````VB.NET
-        Dim theme1 As New DocumentTheme("From Predefined schemes", PredefinedThemeSchemes.ColorSchemes(0), PredefinedThemeSchemes.FontSchemes(5))
-        '
+Dim theme1 As New DocumentTheme("From Predefined schemes", PredefinedThemeSchemes.ColorSchemes(0), PredefinedThemeSchemes.FontSchemes(5))
+
 ````
 
 {{endregion}} 
@@ -234,15 +239,16 @@ __Example 7__ changes the theme of a newly created workbook.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_6}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            workbook.Worksheets.Add();
-            workbook.Theme = theme;
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add();
+workbook.Theme = theme;
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        workbook.Worksheets.Add()
-        workbook.Theme = theme
-        '
+Dim workbook As New Workbook()
+workbook.Worksheets.Add()
+workbook.Theme = theme
+
 ````
 
 {{endregion}} 
@@ -257,13 +263,14 @@ In order to get the actual value from __ThemableColor__ or __ThemableFontFamily_
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_7}} 
 
 ````C#
-            Color actualColor = themableColor.GetActualValue(theme);
-            // the actual color is the same as Accent1 color of the colorScheme
+Color actualColor = themableColor.GetActualValue(theme);
+// the actual color is the same as Accent1 color of the colorScheme
+
 ````
 ````VB.NET
-        Dim actualColor As Color = themableColor.GetActualValue(theme)
-        ' the actual color is the same as Accent1 color of the colorScheme
-        '
+Dim actualColor As Color = themableColor.GetActualValue(theme)
+' the actual color is the same as Accent1 color of the colorScheme
+
 ````
 
 {{endregion}} 
@@ -275,13 +282,14 @@ In order to get the actual value from __ThemableColor__ or __ThemableFontFamily_
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingDocumentThemes.vb region=radspreadprocessing-features-styling-document-themes_8}} 
 
 ````C#
-            var actualFont = themableFont.GetActualValue(theme);
-            // the actualFont is the same as the Major font of the fontScheme
+var actualFont = themableFont.GetActualValue(theme);
+// the actualFont is the same as the Major font of the fontScheme
+
 ````
 ````VB.NET
-        Dim actualFont = themableFont.GetActualValue(theme)
-        ' the actualFont is the same as the Major font of the fontScheme
-        '
+Dim actualFont = themableFont.GetActualValue(theme)
+' the actualFont is the same as the Major font of the fontScheme
+
 ````
 
 {{endregion}} 

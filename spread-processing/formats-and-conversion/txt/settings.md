@@ -34,7 +34,20 @@ __Example 1__ shows how to create and specify particular setting to a TxtFormatP
 #### Example 1: Use TxtSettings
 
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingTxtSettings.cs region=radspreadprocessing-formats-and-conversion-Txt-settings_0}} 
-{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingTxtSettings.vb region=radspreadprocessing-formats-and-conversion-Txt-settings_0}} 
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingTxtSettings.vb region=radspreadprocessing-formats-and-conversion-Txt-settings_0}}````C#
+TxtFormatProvider provider = new TxtFormatProvider();
+provider.Settings.Delimiter = ';';
+provider.Settings.Quote = '^';
+provider.Settings.HasHeaderRow = true;
+
+````
+````VB.NET
+Dim provider As New TxtFormatProvider()
+provider.Settings.Delimiter = ";"c
+provider.Settings.Quote = "^"c
+provider.Settings.HasHeaderRow = True
+
+```` 
 
 
 {{endregion}} 

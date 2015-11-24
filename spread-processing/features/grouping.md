@@ -47,21 +47,21 @@ There are two available options when grouping. The first option is to simply ass
 
 ````C#
             
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
             
-            worksheet.Columns[0].SetOutlineLevel(1);
-            worksheet.Columns[1, 2].SetOutlineLevel(2);
-            worksheet.Columns[3].SetOutlineLevel(1);
+worksheet.Columns[0].SetOutlineLevel(1);
+worksheet.Columns[1, 2].SetOutlineLevel(2);
+worksheet.Columns[3].SetOutlineLevel(1);
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Columns(0).SetOutlineLevel(1)
+worksheet.Columns(1, 2).SetOutlineLevel(2)
+worksheet.Columns(3).SetOutlineLevel(1)
 
-        worksheet.Columns(0).SetOutlineLevel(1)
-        worksheet.Columns(1, 2).SetOutlineLevel(2)
-        worksheet.Columns(3).SetOutlineLevel(1)
-        '
 ````
 
 {{endregion}} 
@@ -74,20 +74,19 @@ The other option is to use the Group method exposed by the row/column selection 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.vb region=radspreadprocessing-features-grouping_1}} 
 
 ````C#
-
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
             
-            worksheet.Columns[0, 3].Group();
-            worksheet.Columns[1, 2].Group();
+worksheet.Columns[0, 3].Group();
+worksheet.Columns[1, 2].Group();
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Columns(0, 3).Group()
+worksheet.Columns(1, 2).Group()
 
-        worksheet.Columns(0, 3).Group()
-        worksheet.Columns(1, 2).Group()
-        '
 ````
 
 {{endregion}} 
@@ -115,14 +114,14 @@ The following code snippets exemplify the two approaches to make these changes i
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingGrouping.vb region=radspreadprocessing-features-grouping_2}} 
 
 ````C#
+worksheet.Rows[0, 1].ClearOutlineLevel();
+worksheet.Rows[4, 6].SetOutlineLevel(1);
 
-            worksheet.Rows[0, 1].ClearOutlineLevel();
-            worksheet.Rows[4, 6].SetOutlineLevel(1);
 ````
 ````VB.NET
-        worksheet.Rows(0, 1).ClearOutlineLevel()
-        worksheet.Rows(4, 6).SetOutlineLevel(1)
-        '
+worksheet.Rows(0, 1).ClearOutlineLevel()
+worksheet.Rows(4, 6).SetOutlineLevel(1)
+
 ````
 
 {{endregion}} 
@@ -136,13 +135,14 @@ You can achieve the same result with the code in __Example 4__:
 
 ````C#
         
-            worksheet.Rows[0, 1].Ungroup();
-            worksheet.Rows[4, 6].Ungroup();
+worksheet.Rows[0, 1].Ungroup();
+worksheet.Rows[4, 6].Ungroup();
+
 ````
 ````VB.NET
-        worksheet.Rows(0, 1).Ungroup()
-        worksheet.Rows(4, 6).Ungroup()
-        '
+worksheet.Rows(0, 1).Ungroup()
+worksheet.Rows(4, 6).Ungroup()
+
 ````
 
 {{endregion}} 
@@ -158,13 +158,14 @@ You can get the outline level of a row/column or a group of rows/columns using t
 
 ````C#
     
-            RangePropertyValue<int> outlineLevelRangeValue = worksheet.Rows[0, 1].GetOutlineLevel();
-            int outLineLevel = outlineLevelRangeValue.Value;
+RangePropertyValue<int> outlineLevelRangeValue = worksheet.Rows[0, 1].GetOutlineLevel();
+int outLineLevel = outlineLevelRangeValue.Value;
+
 ````
 ````VB.NET
-        Dim outlineLevelRangeValue As RangePropertyValue(Of Integer) = worksheet.Rows(0, 1).GetOutlineLevel()
-        Dim outLineLevel As Integer = outlineLevelRangeValue.Value
-        '
+Dim outlineLevelRangeValue As RangePropertyValue(Of Integer) = worksheet.Rows(0, 1).GetOutlineLevel()
+Dim outLineLevel As Integer = outlineLevelRangeValue.Value
+
 ````
 
 {{endregion}} 

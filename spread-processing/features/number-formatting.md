@@ -92,35 +92,31 @@ __Exam0ple 1__ demonstrates how to apply scientific format to cell *A1* and perc
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingNumberFormatting.vb region=radspreadprocessing-features-number-formats_0}} 
 
 ````C#
-        public void ApplyFormat()
-        {
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+public void ApplyFormat()
+{
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    CellSelection cellSelectionA1 = worksheet.Cells[new CellIndex(0, 0)];
+    CellValueFormat scientificFormat = new CellValueFormat("0.00E+00");
+    cellSelectionA1.SetFormat(scientificFormat);
+    CellSelection cellSelectionA2B3 = worksheet.Cells[new CellRange(new CellIndex(1, 0), new CellIndex(2, 1))];
+    CellValueFormat percentageFormat = new CellValueFormat("0.00%");
+    cellSelectionA2B3.SetFormat(percentageFormat);
+}
 
-            CellSelection cellSelectionA1 = worksheet.Cells[new CellIndex(0, 0)];
-            CellValueFormat scientificFormat = new CellValueFormat("0.00E+00");
-            cellSelectionA1.SetFormat(scientificFormat);
-
-            CellSelection cellSelectionA2B3 = worksheet.Cells[new CellRange(new CellIndex(1, 0), new CellIndex(2, 1))];
-            CellValueFormat percentageFormat = new CellValueFormat("0.00%");
-            cellSelectionA2B3.SetFormat(percentageFormat);
-        }
 ````
 ````VB.NET
-    Public Sub ApplyFormat()
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Public Sub ApplyFormat()
+    Dim workbook As New Workbook()
+    Dim worksheet As Worksheet = workbook.Worksheets.Add()
+    Dim cellSelectionA1 As CellSelection = worksheet.Cells(New CellIndex(0, 0))
+    Dim scientificFormat As New CellValueFormat("0.00E+00")
+    cellSelectionA1.SetFormat(scientificFormat)
+    Dim cellSelectionA2B3 As CellSelection = worksheet.Cells(New CellRange(New CellIndex(1, 0), New CellIndex(2, 1)))
+    Dim percentageFormat As New CellValueFormat("0.00%")
+    cellSelectionA2B3.SetFormat(percentageFormat)
+End Sub
 
-        Dim cellSelectionA1 As CellSelection = worksheet.Cells(New CellIndex(0, 0))
-        Dim scientificFormat As New CellValueFormat("0.00E+00")
-        cellSelectionA1.SetFormat(scientificFormat)
-
-        Dim cellSelectionA2B3 As CellSelection = worksheet.Cells(New CellRange(New CellIndex(1, 0), New CellIndex(2, 1)))
-        Dim percentageFormat As New CellValueFormat("0.00%")
-        cellSelectionA2B3.SetFormat(percentageFormat)
-    End Sub
-
-    '
 ````
 
 {{endregion}} 
@@ -140,30 +136,27 @@ __Example 2__ demonstrates how to get the __Number__ format of cell *A1* and cel
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingNumberFormatting.vb region=radspreadprocessing-features-number-formats_1}} 
 
 ````C#
-        public void GetFormat()
-        {
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+public void GetFormat()
+{
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    CellSelection cellSelectionA1 = worksheet.Cells[new CellIndex(0, 0)];
+    CellSelection cellSelectionA2B3 = worksheet.Cells[new CellRange(new CellIndex(1, 0), new CellIndex(2, 1))];
+    CellValueFormat cellSelectioA1Format = cellSelectionA1.GetFormat().Value;
+    CellValueFormat cellSelectioA2Format = cellSelectionA2B3.GetFormat().Value;
+}
 
-            CellSelection cellSelectionA1 = worksheet.Cells[new CellIndex(0, 0)];
-            CellSelection cellSelectionA2B3 = worksheet.Cells[new CellRange(new CellIndex(1, 0), new CellIndex(2, 1))];
-
-            CellValueFormat cellSelectioA1Format = cellSelectionA1.GetFormat().Value;
-            CellValueFormat cellSelectioA2Format = cellSelectionA2B3.GetFormat().Value;
-        }
 ````
 ````VB.NET
-    Public Sub GetFormat()
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Public Sub GetFormat()
+    Dim workbook As New Workbook()
+    Dim worksheet As Worksheet = workbook.Worksheets.Add()
+    Dim cellSelectionA1 As CellSelection = worksheet.Cells(New CellIndex(0, 0))
+    Dim cellSelectionA2B3 As CellSelection = worksheet.Cells(New CellRange(New CellIndex(1, 0), New CellIndex(2, 1)))
+    Dim cellSelectioA1Format As CellValueFormat = cellSelectionA1.GetFormat().Value
+    Dim cellSelectioA2Format As CellValueFormat = cellSelectionA2B3.GetFormat().Value
+End Sub
 
-        Dim cellSelectionA1 As CellSelection = worksheet.Cells(New CellIndex(0, 0))
-        Dim cellSelectionA2B3 As CellSelection = worksheet.Cells(New CellRange(New CellIndex(1, 0), New CellIndex(2, 1)))
-
-        Dim cellSelectioA1Format As CellValueFormat = cellSelectionA1.GetFormat().Value
-        Dim cellSelectioA2Format As CellValueFormat = cellSelectionA2B3.GetFormat().Value
-    End Sub
-    '
 ````
 
 {{endregion}}

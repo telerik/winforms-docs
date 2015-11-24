@@ -53,50 +53,43 @@ __Example 1__ creates a new workbook with two empty worksheets and assigns sampl
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFindAndReplace.vb region=radspreadprocessing-features-find-and-replace_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet1 = workbook.Worksheets.Add();
-            Worksheet worksheet2 = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet1 = workbook.Worksheets.Add();
+Worksheet worksheet2 = workbook.Worksheets.Add();
+worksheet1.Cells[1, 1].SetValue("SUMMARY");
+worksheet1.Cells[1, 2].SetValue("=SUM(5, 6)");
+worksheet2.Cells[2, 2].SetValue("=SUM(4, 4)");
+worksheet2.Cells[2, 3].SetValue("SUM");
+FindOptions options = new FindOptions()
+{
+    StartCell = new WorksheetCellIndex(worksheet1, 0, 0),
+    FindBy = FindBy.Rows,
+    FindIn = FindInContentType.Formulas,
+    FindWhat = "SUM",
+    FindWithin = FindWithin.Workbook,
+};
+FindResult findResult = workbook.Find(options);
+IEnumerable<FindResult> findResults = workbook.FindAll(options);
 
-            worksheet1.Cells[1, 1].SetValue("SUMMARY");
-            worksheet1.Cells[1, 2].SetValue("=SUM(5, 6)");
-
-            worksheet2.Cells[2, 2].SetValue("=SUM(4, 4)");
-            worksheet2.Cells[2, 3].SetValue("SUM");
-
-            FindOptions options = new FindOptions()
-            {
-                StartCell = new WorksheetCellIndex(worksheet1, 0, 0),
-                FindBy = FindBy.Rows,
-                FindIn = FindInContentType.Formulas,
-                FindWhat = "SUM",
-                FindWithin = FindWithin.Workbook,
-            };
-
-            FindResult findResult = workbook.Find(options);
-            IEnumerable<FindResult> findResults = workbook.FindAll(options);
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet1 As Worksheet = workbook.Worksheets.Add()
-        Dim worksheet2 As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet1 As Worksheet = workbook.Worksheets.Add()
+Dim worksheet2 As Worksheet = workbook.Worksheets.Add()
+worksheet1.Cells(1, 1).SetValue("SUMMARY")
+worksheet1.Cells(1, 2).SetValue("=SUM(5, 6)")
+worksheet2.Cells(2, 2).SetValue("=SUM(4, 4)")
+worksheet2.Cells(2, 3).SetValue("SUM")
+Dim options As New FindOptions() With { _
+     .StartCell = New WorksheetCellIndex(worksheet1, 0, 0), _
+    .FindBy = FindBy.Rows, _
+    .FindIn = FindInContentType.Formulas, _
+    .FindWhat = "SUM", _
+    .FindWithin = FindWithin.Workbook _
+}
+Dim findResult As FindResult = workbook.Find(options)
+Dim findResults As IEnumerable(Of FindResult) = workbook.FindAll(options)
 
-        worksheet1.Cells(1, 1).SetValue("SUMMARY")
-        worksheet1.Cells(1, 2).SetValue("=SUM(5, 6)")
-
-        worksheet2.Cells(2, 2).SetValue("=SUM(4, 4)")
-        worksheet2.Cells(2, 3).SetValue("SUM")
-
-        Dim options As New FindOptions() With { _
-             .StartCell = New WorksheetCellIndex(worksheet1, 0, 0), _
-            .FindBy = FindBy.Rows, _
-            .FindIn = FindInContentType.Formulas, _
-            .FindWhat = "SUM", _
-            .FindWithin = FindWithin.Workbook _
-        }
-
-        Dim findResult As FindResult = workbook.Find(options)
-        Dim findResults As IEnumerable(Of FindResult) = workbook.FindAll(options)
-        '
 ````
 
 {{endregion}} 
@@ -115,67 +108,54 @@ __Example 2__ creates a workbook from scratch with two empty worksheet and adds 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFindAndReplace.vb region=radspreadprocessing-features-find-and-replace_1}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet1 = workbook.Worksheets.Add();
-            Worksheet worksheet2 = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet1 = workbook.Worksheets.Add();
+Worksheet worksheet2 = workbook.Worksheets.Add();
+worksheet1.Cells[1, 1].SetValue("SUMMARY");
+worksheet1.Cells[1, 2].SetValue("=SUM(5, 6)");
+worksheet2.Cells[2, 2].SetValue("=SUM(4, 4)");
+worksheet2.Cells[2, 3].SetValue("SUM");
+ReplaceOptions options = new ReplaceOptions()
+{
+    StartCell = new WorksheetCellIndex(worksheet1, 0, 0),
+    FindBy = FindBy.Rows,
+    FindIn = FindInContentType.Formulas,
+    FindWhat = "SUM",
+    ReplaceWith = "Test",
+    FindWithin = FindWithin.Workbook,
+};
+var findResult = workbook.Find(options);
+options.StartCell = findResult.FoundCell;
+if (workbook.Replace(options))
+{
+    RadMessageBox.Show("Replace was successful!");
+}
+workbook.ReplaceAll(options);
 
-            worksheet1.Cells[1, 1].SetValue("SUMMARY");
-            worksheet1.Cells[1, 2].SetValue("=SUM(5, 6)");
-
-            worksheet2.Cells[2, 2].SetValue("=SUM(4, 4)");
-            worksheet2.Cells[2, 3].SetValue("SUM");
-
-            ReplaceOptions options = new ReplaceOptions()
-            {
-                StartCell = new WorksheetCellIndex(worksheet1, 0, 0),
-                FindBy = FindBy.Rows,
-                FindIn = FindInContentType.Formulas,
-                FindWhat = "SUM",
-                ReplaceWith = "Test",
-                FindWithin = FindWithin.Workbook,
-            };
-
-            var findResult = workbook.Find(options);
-
-            options.StartCell = findResult.FoundCell;
-
-            if (workbook.Replace(options))
-            {
-                RadMessageBox.Show("Replace was successful!");
-            }
-
-            workbook.ReplaceAll(options);
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet1 As Worksheet = workbook.Worksheets.Add()
-        Dim worksheet2 As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet1 As Worksheet = workbook.Worksheets.Add()
+Dim worksheet2 As Worksheet = workbook.Worksheets.Add()
+worksheet1.Cells(1, 1).SetValue("SUMMARY")
+worksheet1.Cells(1, 2).SetValue("=SUM(5, 6)")
+worksheet2.Cells(2, 2).SetValue("=SUM(4, 4)")
+worksheet2.Cells(2, 3).SetValue("SUM")
+Dim options As New ReplaceOptions() With { _
+    .StartCell = New WorksheetCellIndex(worksheet1, 0, 0), _
+    .FindBy = FindBy.Rows, _
+    .FindIn = FindInContentType.Formulas, _
+    .FindWhat = "SUM", _
+    .ReplaceWith = "Test", _
+    .FindWithin = FindWithin.Workbook _
+}
+Dim findResult = workbook.Find(options)
+options.StartCell = findResult.FoundCell
+If workbook.Replace(options) Then
+    RadMessageBox.Show("Replace was successful!")
+End If
+workbook.ReplaceAll(options)
 
-        worksheet1.Cells(1, 1).SetValue("SUMMARY")
-        worksheet1.Cells(1, 2).SetValue("=SUM(5, 6)")
-
-        worksheet2.Cells(2, 2).SetValue("=SUM(4, 4)")
-        worksheet2.Cells(2, 3).SetValue("SUM")
-
-        Dim options As New ReplaceOptions() With { _
-            .StartCell = New WorksheetCellIndex(worksheet1, 0, 0), _
-            .FindBy = FindBy.Rows, _
-            .FindIn = FindInContentType.Formulas, _
-            .FindWhat = "SUM", _
-            .ReplaceWith = "Test", _
-            .FindWithin = FindWithin.Workbook _
-        }
-
-        Dim findResult = workbook.Find(options)
-
-        options.StartCell = findResult.FoundCell
-
-        If workbook.Replace(options) Then
-            RadMessageBox.Show("Replace was successful!")
-        End If
-
-        workbook.ReplaceAll(options)
-        '
 ````
 
 {{endregion}} 

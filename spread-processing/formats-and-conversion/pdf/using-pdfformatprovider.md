@@ -44,20 +44,21 @@ __Example 1__ shows how to use __PdfFormatProvider__ to export a Workbook to a f
 
 ````C#
                 
-                PdfFormatProvider pdfFormatProvider = new PdfFormatProvider();
-                using (Stream output = GetFileStream())
-                {
-                    Workbook workbook = CreateSampleWorkbook();
-                    pdfFormatProvider.Export(workbook, output);
-                }
+PdfFormatProvider pdfFormatProvider = new PdfFormatProvider();
+using (Stream output = GetFileStream())
+{
+    Workbook workbook = CreateSampleWorkbook();
+    pdfFormatProvider.Export(workbook, output);
+}
+
 ````
 ````VB.NET
-            Dim pdfFormatProvider As New PdfFormatProvider()
-            Using output As Stream = GetFileStream()
-                Dim workbook As Workbook = CreateSampleWorkbook()
-                pdfFormatProvider.Export(workbook, output)
-            End Using
-            '
+Dim pdfFormatProvider As New PdfFormatProvider()
+Using output As Stream = GetFileStream()
+    Dim workbook As Workbook = CreateSampleWorkbook()
+    pdfFormatProvider.Export(workbook, output)
+End Using
+
 ````
 
 {{endregion}} 
@@ -67,7 +68,24 @@ The result from the export method is a document that can be opened in any applic
 #### Example 2: Export to RadFixedDocument
 
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingUsingPdfFormatProvider.cs region=radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider_0}} 
-{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingUsingPdfFormatProvider.vb region=radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider_0}} 
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\PDF\RadSpreadProcessingUsingPdfFormatProvider.vb region=radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider_0}}````C#
+                
+PdfFormatProvider pdfFormatProvider = new PdfFormatProvider();
+using (Stream output = GetFileStream())
+{
+    Workbook workbook = CreateSampleWorkbook();
+    pdfFormatProvider.Export(workbook, output);
+}
+
+````
+````VB.NET
+Dim pdfFormatProvider As New PdfFormatProvider()
+Using output As Stream = GetFileStream()
+    Dim workbook As Workbook = CreateSampleWorkbook()
+    pdfFormatProvider.Export(workbook, output)
+End Using
+
+```` 
 
 {{endregion}} 
 

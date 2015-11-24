@@ -98,11 +98,12 @@ __Example 1__ shows how to create a __ValuesSortCondition__.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_0}} 
 
 ````C#
-            ValuesSortCondition condition = new ValuesSortCondition(0, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
+ValuesSortCondition condition = new ValuesSortCondition(0, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
+
 ````
 ````VB.NET
-        Dim condition As New ValuesSortCondition(0, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
-        '
+Dim condition As New ValuesSortCondition(0, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
+
 ````
 
 {{endregion}} 
@@ -125,11 +126,12 @@ __Example 2__ shows how to create a CustomValuesSortCondition.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_1}} 
 
 ````C#
-            CustomValuesSortCondition condition = new CustomValuesSortCondition(0, new string[] { "regular", "1 day", "2 days", "express" }, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
+CustomValuesSortCondition condition = new CustomValuesSortCondition(0, new string[] { "regular", "1 day", "2 days", "express" }, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
+
 ````
 ````VB.NET
-        Dim condition As New CustomValuesSortCondition(0, New String() {"regular", "1 day", "2 days", "express"}, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
-        '
+Dim condition As New CustomValuesSortCondition(0, New String() {"regular", "1 day", "2 days", "express"}, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
+
 ````
 
 {{endregion}} 
@@ -151,11 +153,12 @@ __Example 3__ demonstrates how to create a __ForeColorSortCondition__. This cond
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_2}} 
 
 ````C#
-            ForeColorSortCondition condition = new ForeColorSortCondition(0, new ThemableColor(Colors.Red), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
+ForeColorSortCondition condition = new ForeColorSortCondition(0, new ThemableColor(Colors.Red), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
+
 ````
 ````VB.NET
-        Dim condition As New ForeColorSortCondition(0, New ThemableColor(Colors.Red), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
-        '
+Dim condition As New ForeColorSortCondition(0, New ThemableColor(Colors.Red), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
+
 ````
 
 {{endregion}} 
@@ -173,11 +176,12 @@ __Example 4__ shows how to create a __FillColorSortCondition__.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_3}} 
 
 ````C#
-            FillColorSortCondition condition = new FillColorSortCondition(0, PatternFill.CreateSolidFill(Color.FromRgb(181, 18, 27)), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
+FillColorSortCondition condition = new FillColorSortCondition(0, PatternFill.CreateSolidFill(Color.FromRgb(181, 18, 27)), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
+
 ````
 ````VB.NET
-        Dim condition As New FillColorSortCondition(0, PatternFill.CreateSolidFill(Color.FromRgb(181, 18, 27)), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
-        '
+Dim condition As New FillColorSortCondition(0, PatternFill.CreateSolidFill(Color.FromRgb(181, 18, 27)), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
+
 ````
 
 {{endregion}} 
@@ -203,19 +207,18 @@ __Example 5__ shows how to create three sorting conditions.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_4}} 
 
 ````C#
-            Worksheet worksheet = workbook.ActiveWorksheet;
+Worksheet worksheet = workbook.ActiveWorksheet;
+CustomValuesSortCondition condition1 = new CustomValuesSortCondition(5, new string[] { "regular", "1 day", "2 days", "express" }, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
+FillColorSortCondition condition2 = new FillColorSortCondition(7, PatternFill.CreateSolidFill(Color.FromRgb(181, 18, 27)), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
+FillColorSortCondition condition3 = new FillColorSortCondition(7, PatternFill.CreateSolidFill(Color.FromRgb(94, 151, 50)), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
 
-            CustomValuesSortCondition condition1 = new CustomValuesSortCondition(5, new string[] { "regular", "1 day", "2 days", "express" }, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
-            FillColorSortCondition condition2 = new FillColorSortCondition(7, PatternFill.CreateSolidFill(Color.FromRgb(181, 18, 27)), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
-            FillColorSortCondition condition3 = new FillColorSortCondition(7, PatternFill.CreateSolidFill(Color.FromRgb(94, 151, 50)), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending);
 ````
 ````VB.NET
-        Dim worksheet As Worksheet = workbook.ActiveWorksheet
+Dim worksheet As Worksheet = workbook.ActiveWorksheet
+Dim condition1 As New CustomValuesSortCondition(5, New String() {"regular", "1 day", "2 days", "express"}, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
+Dim condition2 As New FillColorSortCondition(7, PatternFill.CreateSolidFill(Color.FromRgb(181, 18, 27)), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
+Dim condition3 As New FillColorSortCondition(7, PatternFill.CreateSolidFill(Color.FromRgb(94, 151, 50)), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
 
-        Dim condition1 As New CustomValuesSortCondition(5, New String() {"regular", "1 day", "2 days", "express"}, Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
-        Dim condition2 As New FillColorSortCondition(7, PatternFill.CreateSolidFill(Color.FromRgb(181, 18, 27)), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
-        Dim condition3 As New FillColorSortCondition(7, PatternFill.CreateSolidFill(Color.FromRgb(94, 151, 50)), Telerik.Windows.Documents.Spreadsheet.Model.Sorting.SortOrder.Ascending)
-        '
 ````
 
 {{endregion}} 
@@ -228,11 +231,12 @@ Further, __Example 6__ shows how to apply the sorting conditions through the __S
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_5}} 
 
 ````C#
-            worksheet.SortState.Set(new CellRange(3, 0, 17, 7), condition1, condition2, condition3);
+worksheet.SortState.Set(new CellRange(3, 0, 17, 7), condition1, condition2, condition3);
+
 ````
 ````VB.NET
-        worksheet.SortState.[Set](New CellRange(3, 0, 17, 7), condition1, condition2, condition3)
-        '
+worksheet.SortState.[Set](New CellRange(3, 0, 17, 7), condition1, condition2, condition3)
+
 ````
 
 {{endregion}} 
@@ -245,11 +249,12 @@ Alternatively, __Example 7__ shows how to apply the sorting conditions through t
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_6}} 
 
 ````C#
-            worksheet.Cells[3, 0, 17, 7].Sort(condition1, condition2, condition3);
+worksheet.Cells[3, 0, 17, 7].Sort(condition1, condition2, condition3);
+
 ````
 ````VB.NET
-        worksheet.Cells(3, 0, 17, 7).Sort(condition1, condition2, condition3)
-        '
+worksheet.Cells(3, 0, 17, 7).Sort(condition1, condition2, condition3)
+
 ````
 
 {{endregion}} 
@@ -273,11 +278,12 @@ __Example 8__ shows how to celar the sorting.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingSorting.vb region=radspreadprocessing-features-sorting_7}} 
 
 ````C#
-            worksheet.SortState.Clear();
+worksheet.SortState.Clear();
+
 ````
 ````VB.NET
-        worksheet.SortState.Clear()
-        '
+worksheet.SortState.Clear()
+
 ````
 
 {{endregion}} 

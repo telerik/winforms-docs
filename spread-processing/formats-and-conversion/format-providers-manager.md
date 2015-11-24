@@ -34,13 +34,12 @@ The __WorkbookFormatProvidersManager__ class contains two methods that allow you
 
 ````C#
             
-            WorkbookFormatProvidersManager.RegisterFormatProvider(new XlsxFormatProvider());
+WorkbookFormatProvidersManager.RegisterFormatProvider(new XlsxFormatProvider());
+
 ````
 ````VB.NET
+WorkbookFormatProvidersManager.RegisterFormatProvider(New XlsxFormatProvider())
 
-        WorkbookFormatProvidersManager.RegisterFormatProvider(New XlsxFormatProvider())
-
-        '
 ````
 
 {{endregion}} 
@@ -52,20 +51,19 @@ You can also unregister format providers using the UnregisterFormatProvider() me
 
 ````C#
             
-            IWorkbookFormatProvider provider = WorkbookFormatProvidersManager.GetProviderByName("TxtFormatProvider");
-            if (provider != null)
-            {
-                WorkbookFormatProvidersManager.UnregisterFormatProvider(provider);
-            }
+IWorkbookFormatProvider provider = WorkbookFormatProvidersManager.GetProviderByName("TxtFormatProvider");
+if (provider != null)
+{
+    WorkbookFormatProvidersManager.UnregisterFormatProvider(provider);
+}
+
 ````
 ````VB.NET
+Dim provider As IWorkbookFormatProvider = WorkbookFormatProvidersManager.GetProviderByName("TxtFormatProvider")
+If provider IsNot Nothing Then
+    WorkbookFormatProvidersManager.UnregisterFormatProvider(provider)
+End If
 
-        Dim provider As IWorkbookFormatProvider = WorkbookFormatProvidersManager.GetProviderByName("TxtFormatProvider")
-        If provider IsNot Nothing Then
-            WorkbookFormatProvidersManager.UnregisterFormatProvider(provider)
-        End If
-
-        '
 ````
 
 {{endregion}} 
@@ -80,41 +78,40 @@ The following example demonstrates how to present the user with an OpenFileDialo
 {{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.vb region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_2}} 
 
 ````C#
-                
-            Workbook workbook;
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                try
-                {
-                    string extension = Path.GetExtension(openFileDialog.FileName);
-                    using (Stream input = openFileDialog.OpenFile())
-                    {
-                        workbook = WorkbookFormatProvidersManager.Import(extension, input);
-                    }
-                }
-                catch (IOException ex)
-                {
-                    throw new IOException("The file cannot be opened. It might be locked by another application.", ex);
-                }
-            }
+    
+Workbook workbook;
+OpenFileDialog openFileDialog = new OpenFileDialog();
+if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+{
+    try
+    {
+        string extension = Path.GetExtension(openFileDialog.FileName);
+        using (Stream input = openFileDialog.OpenFile())
+        {
+            workbook = WorkbookFormatProvidersManager.Import(extension, input);
+        }
+    }
+    catch (IOException ex)
+    {
+        throw new IOException("The file cannot be opened. It might be locked by another application.", ex);
+    }
+}
+
 ````
 ````VB.NET
+Dim workbook As Workbook
+Dim openFileDialog As New OpenFileDialog()
+If openFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+    Try
+        Dim extension As String = Path.GetExtension(openFileDialog.FileName)
+        Using input As Stream = openFileDialog.OpenFile()
+            workbook = WorkbookFormatProvidersManager.Import(extension, input)
+        End Using
+    Catch ex As IOException
+        Throw New IOException("The file cannot be opened. It might be locked by another application.", ex)
+    End Try
+End If
 
-        Dim workbook As Workbook
-        Dim openFileDialog As New OpenFileDialog()
-        If openFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
-            Try
-                Dim extension As String = Path.GetExtension(openFileDialog.FileName)
-                Using input As Stream = openFileDialog.OpenFile()
-                    workbook = WorkbookFormatProvidersManager.Import(extension, input)
-                End Using
-            Catch ex As IOException
-                Throw New IOException("The file cannot be opened. It might be locked by another application.", ex)
-            End Try
-        End If
-
-        '
 ````
 
 {{endregion}} 
@@ -132,30 +129,28 @@ The next example illustrates how to use the __Export()__ method to save a file. 
 {{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.vb region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_3}} 
 
 ````C#
-                
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-                    
-            if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                string extension = Path.GetExtension(saveFileDialog.FileName);
-                using (Stream output = saveFileDialog.OpenFile())
-                {
-                    WorkbookFormatProvidersManager.Export(workbook, extension, output);
-                }
-            }
+    
+SaveFileDialog saveFileDialog = new SaveFileDialog();
+        
+if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+{
+    string extension = Path.GetExtension(saveFileDialog.FileName);
+    using (Stream output = saveFileDialog.OpenFile())
+    {
+        WorkbookFormatProvidersManager.Export(workbook, extension, output);
+    }
+}
+
 ````
 ````VB.NET
+Dim saveFileDialog As New SaveFileDialog()
+If saveFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+    Dim extension As String = Path.GetExtension(saveFileDialog.FileName)
+    Using output As Stream = saveFileDialog.OpenFile()
+        WorkbookFormatProvidersManager.Export(workbook, extension, output)
+    End Using
+End If
 
-        Dim saveFileDialog As New SaveFileDialog()
-
-        If saveFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
-            Dim extension As String = Path.GetExtension(saveFileDialog.FileName)
-            Using output As Stream = saveFileDialog.OpenFile()
-                WorkbookFormatProvidersManager.Export(workbook, extension, output)
-            End Using
-        End If
-
-        '
 ````
 
 {{endregion}} 

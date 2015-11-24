@@ -33,31 +33,25 @@ The __CellSelection__ class exposes an __Insert()__ method that takes one argume
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingInsertAndRemoveCells.vb region=radspreadprocessing-working-with-cells-insert-remove-cells_0}} 
 
 ````C#
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+CellRange range = new CellRange(1, 1, 10, 10);
+CellSelection selection = worksheet.Cells[range];
+if (selection.CanInsertOrRemove(range, ShiftType.Right))
+{
+    selection.Insert(InsertShiftType.Right);
+}
 
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-
-            CellRange range = new CellRange(1, 1, 10, 10);
-            CellSelection selection = worksheet.Cells[range];
-
-            if (selection.CanInsertOrRemove(range, ShiftType.Right))
-            {
-                selection.Insert(InsertShiftType.Right);
-            }
 ````
 ````VB.NET
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim range As New CellRange(1, 1, 10, 10)
+Dim selection As CellSelection = worksheet.Cells(range)
+If selection.CanInsertOrRemove(range, ShiftType.Right) Then
+    selection.Insert(InsertShiftType.Right)
+End If
 
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-
-        Dim range As New CellRange(1, 1, 10, 10)
-        Dim selection As CellSelection = worksheet.Cells(range)
-
-        If selection.CanInsertOrRemove(range, ShiftType.Right) Then
-            selection.Insert(InsertShiftType.Right)
-        End If
-
-        '
 ````
 
 {{endregion}} 
@@ -78,31 +72,25 @@ The __CellSelection__ class exposes a __Remove()__ method that takes one argumen
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingInsertAndRemoveCells.vb region=radspreadprocessing-working-with-cells-insert-remove-cells_1}} 
 
 ````C#
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+CellRange range = new CellRange(1, 1, 10, 10);
+CellSelection selection = worksheet.Cells[range];
+if (selection.CanInsertOrRemove(range, ShiftType.Up))
+{
+    selection.Remove(RemoveShiftType.Up);
+}
 
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-
-            CellRange range = new CellRange(1, 1, 10, 10);
-            CellSelection selection = worksheet.Cells[range];
-
-            if (selection.CanInsertOrRemove(range, ShiftType.Up))
-            {
-                selection.Remove(RemoveShiftType.Up);
-            }
 ````
 ````VB.NET
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim range As New CellRange(1, 1, 10, 10)
+Dim selection As CellSelection = worksheet.Cells(range)
+If selection.CanInsertOrRemove(range, ShiftType.Up) Then
+    selection.Remove(RemoveShiftType.Up)
+End If
 
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-
-        Dim range As New CellRange(1, 1, 10, 10)
-        Dim selection As CellSelection = worksheet.Cells(range)
-
-        If selection.CanInsertOrRemove(range, ShiftType.Up) Then
-            selection.Remove(RemoveShiftType.Up)
-        End If
-
-        '
 ````
 
 {{endregion}}

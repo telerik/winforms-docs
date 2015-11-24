@@ -28,7 +28,32 @@ __Example 1__ shows how to import an xlsx file using a FileStream. The code assu
 
 #### Example 1: Import Xlsx File
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Xlsx\RadSpreadProcessingUsingXlsxFormatProvider.cs region=radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_0}} 
-{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Xlsx\RadSpreadProcessingUsingXlsxFormatProvider.vb region=radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_0}} 
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Xlsx\RadSpreadProcessingUsingXlsxFormatProvider.vb region=radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_0}}````C#
+string fileName = "SampleFile.xlsx";
+if (!File.Exists(fileName))
+{
+    throw new FileNotFoundException(String.Format("File {0} was not found!", fileName));
+}
+Workbook workbook;
+IWorkbookFormatProvider formatProvider = new XlsxFormatProvider();
+using (FileStream input = new FileStream(fileName, FileMode.Open))
+{
+    workbook = formatProvider.Import(input);
+}
+
+````
+````VB.NET
+Dim fileName As String = "SampleFile.xlsx"
+If Not File.Exists(fileName) Then
+    Throw New FileNotFoundException([String].Format("File {0} was not found!", fileName))
+End If
+Dim workbook As Workbook
+Dim formatProvider As IWorkbookFormatProvider = New XlsxFormatProvider()
+Using input As New FileStream(fileName, FileMode.Open)
+    workbook = formatProvider.Import(input)
+End Using
+
+```` 
 
 {{endregion}} 
 ## Export
@@ -39,7 +64,27 @@ __Example 2__ demonstrates how to export an existing Workbook to an xlsx file. T
 
 
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Xlsx\RadSpreadProcessingUsingXlsxFormatProvider.cs region=radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_1}} 
-{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Xlsx\RadSpreadProcessingUsingXlsxFormatProvider.vb region=radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_1}} 
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Xlsx\RadSpreadProcessingUsingXlsxFormatProvider.vb region=radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider_1}}````C#
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add();
+string fileName = "SampleFile.xlsx";
+IWorkbookFormatProvider formatProvider = new XlsxFormatProvider();
+using (FileStream output = new FileStream(fileName, FileMode.Create))
+{
+    formatProvider.Export(workbook, output);
+}
+
+````
+````VB.NET
+Dim workbook As New Workbook()
+workbook.Worksheets.Add()
+Dim fileName As String = "SampleFile.xlsx"
+Dim formatProvider As IWorkbookFormatProvider = New XlsxFormatProvider()
+Using output As New FileStream(fileName, FileMode.Create)
+    formatProvider.Export(workbook, output)
+End Using
+
+```` 
 
 {{endregion}} 
 

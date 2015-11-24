@@ -32,13 +32,14 @@ __Example 1__ enables the history of a workbook.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHistory.vb region=radspreadprocessing-features-history_2}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            workbook.History.IsEnabled = false;
+Workbook workbook = new Workbook();
+workbook.History.IsEnabled = false;
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        workbook.History.IsEnabled = False
-        '
+Dim workbook As New Workbook()
+workbook.History.IsEnabled = False
+
 ````
 
 {{endregion}} 
@@ -59,27 +60,24 @@ __Example 2__ creates a new workbook with a single worksheet and sets the value 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHistory.vb region=radspreadprocessing-features-history_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();        
-            Worksheet worksheet = workbook.Worksheets.Add(); 
-            workbook.History.IsEnabled = true;
+Workbook workbook = new Workbook();        
+Worksheet worksheet = workbook.Worksheets.Add(); 
+workbook.History.IsEnabled = true;
+worksheet.Cells[0, 0].SetValue("First cell value");
+worksheet.Cells[0, 0].SetValue("Second cell value");
+workbook.History.Undo();
+workbook.History.Redo();
 
-            worksheet.Cells[0, 0].SetValue("First cell value");
-            worksheet.Cells[0, 0].SetValue("Second cell value");
-
-            workbook.History.Undo();
-            workbook.History.Redo();
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        workbook.History.IsEnabled = True
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+workbook.History.IsEnabled = True
+worksheet.Cells(0, 0).SetValue("First cell value")
+worksheet.Cells(0, 0).SetValue("Second cell value")
+workbook.History.Undo()
+workbook.History.Redo()
 
-        worksheet.Cells(0, 0).SetValue("First cell value")
-        worksheet.Cells(0, 0).SetValue("Second cell value")
-
-        workbook.History.Undo()
-        workbook.History.Redo()
-        '
 ````
 
 {{endregion}} 
@@ -96,35 +94,28 @@ __Example 3__ demonstrates how to create an undo group:
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHistory.vb region=radspreadprocessing-features-history_1}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            workbook.History.IsEnabled = true;
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+workbook.History.IsEnabled = true;
+workbook.History.BeginUndoGroup();
+worksheet.Cells[0, 0].SetValue(15);
+worksheet.Cells[0, 0].SetFormat(new CellValueFormat("0.00"));
+workbook.History.EndUndoGroup();
+workbook.History.Undo();
+workbook.History.Redo();
 
-            workbook.History.BeginUndoGroup();
-
-            worksheet.Cells[0, 0].SetValue(15);
-            worksheet.Cells[0, 0].SetFormat(new CellValueFormat("0.00"));
-
-            workbook.History.EndUndoGroup();
-
-            workbook.History.Undo();
-            workbook.History.Redo();
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        workbook.History.IsEnabled = True
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+workbook.History.IsEnabled = True
+workbook.History.BeginUndoGroup()
+worksheet.Cells(0, 0).SetValue(15)
+worksheet.Cells(0, 0).SetFormat(New CellValueFormat("0.00"))
+workbook.History.EndUndoGroup()
+workbook.History.Undo()
+workbook.History.Redo()
 
-        workbook.History.BeginUndoGroup()
-
-        worksheet.Cells(0, 0).SetValue(15)
-        worksheet.Cells(0, 0).SetFormat(New CellValueFormat("0.00"))
-
-        workbook.History.EndUndoGroup()
-
-        workbook.History.Undo()
-        workbook.History.Redo()
-        '
 ````
 
 {{endregion}} 
@@ -141,13 +132,14 @@ __Example 4__ clears the history of a workbook.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHistory.vb region=radspreadprocessing-features-history_3}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            workbook.History.Clear();
+Workbook workbook = new Workbook();
+workbook.History.Clear();
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        workbook.History.Clear()
-        '
+Dim workbook As New Workbook()
+workbook.History.Clear()
+
 ````
 
 {{endregion}}

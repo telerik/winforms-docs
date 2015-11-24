@@ -28,13 +28,14 @@ The fact that the document model of __RadSpreadsheet__ is completely decoupled f
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorkbooks\RadSpreadProcessingCreateOpenAndSaveWorkbooks.vb region=radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        '
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+
 ````
 
 {{endregion}} 
@@ -49,28 +50,25 @@ __RadSpreadsheet__ document model allows you to easily import a workbook from a 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorkbooks\RadSpreadProcessingCreateOpenAndSaveWorkbooks.vb region=radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_1}} 
 
 ````C#
-            const string FilePath = @"http://localhost:54352/Resourses/SampleFile.xlsx";
-            WebClient webClient = new WebClient();
+const string FilePath = @"http://localhost:54352/Resourses/SampleFile.xlsx";
+WebClient webClient = new WebClient();
+webClient.OpenReadCompleted += (sender, eventArgs) =>
+{
+    XlsxFormatProvider formatProvider = new XlsxFormatProvider();
+    Workbook workbook = formatProvider.Import(eventArgs.Result);
+};
+webClient.OpenReadAsync(new Uri(FilePath));
 
-            webClient.OpenReadCompleted += (sender, eventArgs) =>
-            {
-                XlsxFormatProvider formatProvider = new XlsxFormatProvider();
-                Workbook workbook = formatProvider.Import(eventArgs.Result);
-            };
-
-            webClient.OpenReadAsync(new Uri(FilePath));
 ````
 ````VB.NET
-        Const FilePath As String = "http://localhost:54352/Resourses/SampleFile.xlsx"
-        Dim webClient As New WebClient()
+Const FilePath As String = "http://localhost:54352/Resourses/SampleFile.xlsx"
+Dim webClient As New WebClient()
+AddHandler webClient.OpenReadCompleted, Sub(sender, eventArgs)
+                                            Dim formatProvider As New XlsxFormatProvider()
+                                            Dim workbook As Workbook = formatProvider.Import(eventArgs.Result)
+                                        End Sub
+webClient.OpenReadAsync(New Uri(FilePath))
 
-        AddHandler webClient.OpenReadCompleted, Sub(sender, eventArgs)
-                                                    Dim formatProvider As New XlsxFormatProvider()
-                                                    Dim workbook As Workbook = formatProvider.Import(eventArgs.Result)
-                                                End Sub
-
-        webClient.OpenReadAsync(New Uri(FilePath))
-        '
 ````
 
 {{endregion}} 
@@ -88,28 +86,25 @@ __RadSpreadsheet__ also allows you to save a workbook into a csv, txt and xlsx f
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorkbooks\RadSpreadProcessingCreateOpenAndSaveWorkbooks.vb region=radspreadprocessing-working-with-workbooks-create-open-and-save-workbooks_3}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add();
+string fileName = "SampleFile.csv";
+IWorkbookFormatProvider formatProvider = new CsvFormatProvider();
+using (FileStream output = new FileStream(fileName, FileMode.Create))
+{
+    formatProvider.Export(workbook, output);
+}
 
-            string fileName = "SampleFile.csv";
-            IWorkbookFormatProvider formatProvider = new CsvFormatProvider();
-
-            using (FileStream output = new FileStream(fileName, FileMode.Create))
-            {
-                formatProvider.Export(workbook, output);
-            }
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+workbook.Worksheets.Add()
+Dim fileName As String = "SampleFile.csv"
+Dim formatProvider As IWorkbookFormatProvider = New CsvFormatProvider()
+Using output As New FileStream(fileName, FileMode.Create)
+    formatProvider.Export(workbook, output)
+End Using
 
-        Dim fileName As String = "SampleFile.csv"
-        Dim formatProvider As IWorkbookFormatProvider = New CsvFormatProvider()
-
-        Using output As New FileStream(fileName, FileMode.Create)
-            formatProvider.Export(workbook, output)
-        End Using
-        '
 ````
 
 {{endregion}} 

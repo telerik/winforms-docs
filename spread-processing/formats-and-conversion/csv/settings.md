@@ -38,7 +38,21 @@ __Example 1__ shows how to create and specify particular setting to a CsvFormatP
 
 	
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingCsvSettings.cs region=radspreadprocessing-formats-and-conversion-csv-settings_0}} 
-{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingCsvSettings.vb region=radspreadprocessing-formats-and-conversion-csv-settings_0}} 
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingCsvSettings.vb region=radspreadprocessing-formats-and-conversion-csv-settings_0}}````C#
+CsvFormatProvider provider = new CsvFormatProvider();
+provider.Settings.Delimiter = ';';
+provider.Settings.Quote = '^';
+provider.Settings.HasHeaderRow = true;
+provider.Settings.Encoding = new ASCIIEncoding();
+
+````
+````VB.NET
+Dim provider As New CsvFormatProvider()
+provider.Settings.Delimiter = ";"c
+provider.Settings.Quote = "^"c
+provider.Settings.HasHeaderRow = True
+
+```` 
 
 
 {{endregion}} 

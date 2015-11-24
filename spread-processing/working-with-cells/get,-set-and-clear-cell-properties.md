@@ -37,15 +37,16 @@ __Example 1__ creates a selection for cells in the range A1:F6.
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            CellSelection selection = worksheet.Cells[0, 0, 5, 5];
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+CellSelection selection = worksheet.Cells[0, 0, 5, 5];
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        Dim selection As CellSelection = worksheet.Cells(0, 0, 5, 5)
-        '
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim selection As CellSelection = worksheet.Cells(0, 0, 5, 5)
+
 ````
 
 {{endregion}} 
@@ -109,23 +110,22 @@ __Example 2__ illustrates how to use these methods on the region A1:F6:
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_1}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            CellSelection selection = worksheet.Cells[0, 0, 5, 5];
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+CellSelection selection = worksheet.Cells[0, 0, 5, 5];
+selection.SetIsBold(true);
+bool isBold = selection.GetIsBold().Value;
+selection.ClearIsBold();
 
-            selection.SetIsBold(true);
-            bool isBold = selection.GetIsBold().Value;
-            selection.ClearIsBold();
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        Dim selection As CellSelection = worksheet.Cells(0, 0, 5, 5)
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim selection As CellSelection = worksheet.Cells(0, 0, 5, 5)
+selection.SetIsBold(True)
+Dim isBold As Boolean = selection.GetIsBold().Value
+selection.ClearIsBold()
 
-        selection.SetIsBold(True)
-        Dim isBold As Boolean = selection.GetIsBold().Value
-        selection.ClearIsBold()
-        '
 ````
 
 {{endregion}}
@@ -146,19 +146,18 @@ __Example 3__ illustrates who to retrieve the value of cell B2:
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_7}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            CellSelection selection = worksheet.Cells[1, 1];
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+CellSelection selection = worksheet.Cells[1, 1];
+ICellValue cellValue = selection.GetValue().Value;
 
-            ICellValue cellValue = selection.GetValue().Value;
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        Dim selection As CellSelection = worksheet.Cells(1, 1)
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim selection As CellSelection = worksheet.Cells(1, 1)
+Dim cellValue As ICellValue = selection.GetValue().Value
 
-        Dim cellValue As ICellValue = selection.GetValue().Value
-        '
 ````
 
 {{endregion}} 
@@ -173,39 +172,32 @@ __Example 4__ demonstrates how to set the value of a given selection.
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_2}} 
 
 ````C#
-            // set DateTime value
-            selection.SetValue(DateTime.Now);
+// set DateTime value
+selection.SetValue(DateTime.Now);
+// set double value
+selection.SetValue(51.345);
+// set ICellValue
+ICellValue value = worksheet.Cells[5, 5].GetValue().Value;
+selection.SetValue(value);
+// set string value
+selection.SetValue("Total");
+// set formula value
+selection.SetValue("=C1+C10");
 
-            // set double value
-            selection.SetValue(51.345);
-
-            // set ICellValue
-            ICellValue value = worksheet.Cells[5, 5].GetValue().Value;
-            selection.SetValue(value);
-
-            // set string value
-            selection.SetValue("Total");
-
-            // set formula value
-            selection.SetValue("=C1+C10");
 ````
 ````VB.NET
-        ' set DateTime value
-        selection.SetValue(DateTime.Now)
+' set DateTime value
+selection.SetValue(DateTime.Now)
+' set double value
+selection.SetValue(51.345)
+' set ICellValue
+Dim value As ICellValue = worksheet.Cells(5, 5).GetValue().Value
+selection.SetValue(value)
+' set string value
+selection.SetValue("Total")
+' set formula value
+selection.SetValue("=C1+C10")
 
-        ' set double value
-        selection.SetValue(51.345)
-
-        ' set ICellValue
-        Dim value As ICellValue = worksheet.Cells(5, 5).GetValue().Value
-        selection.SetValue(value)
-
-        ' set string value
-        selection.SetValue("Total")
-
-        ' set formula value
-        selection.SetValue("=C1+C10")
-        '
 ````
 
 {{endregion}} 
@@ -223,47 +215,41 @@ __Example 5__ demonstrates how to set the value of the Borders of the regions B2
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_3}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            ThemableColor purple = new ThemableColor(Color.FromRgb(155, 89, 182));
-            ThemableColor darkBlue = new ThemableColor(Color.FromRgb(44, 62, 80));
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+ThemableColor purple = new ThemableColor(Color.FromRgb(155, 89, 182));
+ThemableColor darkBlue = new ThemableColor(Color.FromRgb(44, 62, 80));
+CellBorders purpleBorders = new CellBorders(new CellBorder(CellBorderStyle.Dotted, purple));
+worksheet.Cells[1, 1, 2, 2].SetBorders(purpleBorders);
+CellBorders darkBlueBorders = new CellBorders(
+    new CellBorder(CellBorderStyle.Medium, darkBlue),   // Left border
+    new CellBorder(CellBorderStyle.Medium, darkBlue),   // Top border
+    new CellBorder(CellBorderStyle.Medium, darkBlue),   // Right border
+    new CellBorder(CellBorderStyle.Medium, darkBlue),   // Bottom border
+    new CellBorder(CellBorderStyle.Thin, purple),       // Inside horizontal border
+    new CellBorder(CellBorderStyle.Thin, purple),       // Inside vertical border
+    new CellBorder(CellBorderStyle.None, darkBlue),     // Diagonal up border
+    new CellBorder(CellBorderStyle.None, darkBlue));    // Diagonal down border
+worksheet.Cells[1, 4, 2, 5].SetBorders(darkBlueBorders);
 
-            CellBorders purpleBorders = new CellBorders(new CellBorder(CellBorderStyle.Dotted, purple));
-            worksheet.Cells[1, 1, 2, 2].SetBorders(purpleBorders);
-
-            CellBorders darkBlueBorders = new CellBorders(
-                new CellBorder(CellBorderStyle.Medium, darkBlue),   // Left border
-                new CellBorder(CellBorderStyle.Medium, darkBlue),   // Top border
-                new CellBorder(CellBorderStyle.Medium, darkBlue),   // Right border
-                new CellBorder(CellBorderStyle.Medium, darkBlue),   // Bottom border
-                new CellBorder(CellBorderStyle.Thin, purple),       // Inside horizontal border
-                new CellBorder(CellBorderStyle.Thin, purple),       // Inside vertical border
-                new CellBorder(CellBorderStyle.None, darkBlue),     // Diagonal up border
-                new CellBorder(CellBorderStyle.None, darkBlue));    // Diagonal down border
-
-            worksheet.Cells[1, 4, 2, 5].SetBorders(darkBlueBorders);
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        Dim purple As New ThemableColor(Color.FromRgb(155, 89, 182))
-        Dim darkBlue As New ThemableColor(Color.FromRgb(44, 62, 80))
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim purple As New ThemableColor(Color.FromRgb(155, 89, 182))
+Dim darkBlue As New ThemableColor(Color.FromRgb(44, 62, 80))
+Dim purpleBorders As New CellBorders(New CellBorder(CellBorderStyle.Dotted, purple))
+worksheet.Cells(1, 1, 2, 2).SetBorders(purpleBorders)
+Dim darkBlueBorders As New CellBorders(New CellBorder(CellBorderStyle.Medium, darkBlue), _
+                                       New CellBorder(CellBorderStyle.Medium, darkBlue), _
+                                       New CellBorder(CellBorderStyle.Medium, darkBlue), _
+                                       New CellBorder(CellBorderStyle.Medium, darkBlue), _
+                                       New CellBorder(CellBorderStyle.Thin, purple), _
+                                       New CellBorder(CellBorderStyle.Thin, purple), _
+                                       New CellBorder(CellBorderStyle.None, darkBlue), _
+                                       New CellBorder(CellBorderStyle.None, darkBlue))
+worksheet.Cells(1, 4, 2, 5).SetBorders(darkBlueBorders)
 
-        Dim purpleBorders As New CellBorders(New CellBorder(CellBorderStyle.Dotted, purple))
-        worksheet.Cells(1, 1, 2, 2).SetBorders(purpleBorders)
-
-
-        Dim darkBlueBorders As New CellBorders(New CellBorder(CellBorderStyle.Medium, darkBlue), _
-                                               New CellBorder(CellBorderStyle.Medium, darkBlue), _
-                                               New CellBorder(CellBorderStyle.Medium, darkBlue), _
-                                               New CellBorder(CellBorderStyle.Medium, darkBlue), _
-                                               New CellBorder(CellBorderStyle.Thin, purple), _
-                                               New CellBorder(CellBorderStyle.Thin, purple), _
-                                               New CellBorder(CellBorderStyle.None, darkBlue), _
-                                               New CellBorder(CellBorderStyle.None, darkBlue))
-
-        worksheet.Cells(1, 4, 2, 5).SetBorders(darkBlueBorders)
-        '
 ````
 
 {{endregion}} 
@@ -288,25 +274,22 @@ __Example 6__ creates two PatternFill objects with a DiagonalStripe and Solid Pa
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_4}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+PatternFill diagonalStripePatternFill = new PatternFill(PatternType.DiagonalStripe, Color.FromRgb(231, 76, 60), Color.FromRgb(241, 196, 15));
+worksheet.Cells[0, 0, 0, 5].SetFill(diagonalStripePatternFill);
+PatternFill solidPatternFill = new PatternFill(PatternType.Solid, Color.FromRgb(46, 204, 113), Colors.Transparent);
+worksheet.Cells[1, 0, 5, 5].SetFill(solidPatternFill);
 
-            PatternFill diagonalStripePatternFill = new PatternFill(PatternType.DiagonalStripe, Color.FromRgb(231, 76, 60), Color.FromRgb(241, 196, 15));
-            worksheet.Cells[0, 0, 0, 5].SetFill(diagonalStripePatternFill);
-
-            PatternFill solidPatternFill = new PatternFill(PatternType.Solid, Color.FromRgb(46, 204, 113), Colors.Transparent);
-            worksheet.Cells[1, 0, 5, 5].SetFill(solidPatternFill);
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim diagonalStripePatternFill As New PatternFill(PatternType.DiagonalStripe, Color.FromRgb(231, 76, 60), Color.FromRgb(241, 196, 15))
+worksheet.Cells(0, 0, 0, 5).SetFill(diagonalStripePatternFill)
+Dim solidPatternFill As New PatternFill(PatternType.Solid, Color.FromRgb(46, 204, 113), Colors.Transparent)
+worksheet.Cells(1, 0, 5, 5).SetFill(solidPatternFill)
 
-        Dim diagonalStripePatternFill As New PatternFill(PatternType.DiagonalStripe, Color.FromRgb(231, 76, 60), Color.FromRgb(241, 196, 15))
-        worksheet.Cells(0, 0, 0, 5).SetFill(diagonalStripePatternFill)
-
-        Dim solidPatternFill As New PatternFill(PatternType.Solid, Color.FromRgb(46, 204, 113), Colors.Transparent)
-        worksheet.Cells(1, 0, 5, 5).SetFill(solidPatternFill)
-        '
 ````
 
 {{endregion}} 
@@ -331,21 +314,20 @@ __Example 7__ assigns the region A1:F1 a smooth horizontal green gradient.
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_5}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            worksheet.Rows[0].SetHeight(new RowHeight(50, true));
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Rows[0].SetHeight(new RowHeight(50, true));
+GradientFill greenGradientFill = new GradientFill(GradientType.Horizontal, Color.FromRgb(46, 204, 113), Color.FromRgb(0, 134, 56));
+worksheet.Cells[0, 0, 0, 5].SetFill(greenGradientFill);
 
-            GradientFill greenGradientFill = new GradientFill(GradientType.Horizontal, Color.FromRgb(46, 204, 113), Color.FromRgb(0, 134, 56));
-            worksheet.Cells[0, 0, 0, 5].SetFill(greenGradientFill);
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        worksheet.Rows(0).SetHeight(New RowHeight(50, True))
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Rows(0).SetHeight(New RowHeight(50, True))
+Dim greenGradientFill As New GradientFill(GradientType.Horizontal, Color.FromRgb(46, 204, 113), Color.FromRgb(0, 134, 56))
+worksheet.Cells(0, 0, 0, 5).SetFill(greenGradientFill)
 
-        Dim greenGradientFill As New GradientFill(GradientType.Horizontal, Color.FromRgb(46, 204, 113), Color.FromRgb(0, 134, 56))
-        worksheet.Cells(0, 0, 0, 5).SetFill(greenGradientFill)
-        '
 ````
 
 {{endregion}} 
@@ -372,21 +354,20 @@ __Example 8__ snippet shows how to use those methods:
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingGetSetAndClearCellProperties.vb region=radspreadprocessing-working-with-cells-get-set-clear-properties_6}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            CellSelection selection = worksheet.Cells[0, 0, 5, 5];
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+CellSelection selection = worksheet.Cells[0, 0, 5, 5];
+selection.IncreaseIndent();
+selection.DecreaseIndent();
 
-            selection.IncreaseIndent();
-            selection.DecreaseIndent();
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        Dim selection As CellSelection = worksheet.Cells(0, 0, 5, 5)
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim selection As CellSelection = worksheet.Cells(0, 0, 5, 5)
+selection.IncreaseIndent()
+selection.DecreaseIndent()
 
-        selection.IncreaseIndent()
-        selection.DecreaseIndent()
-        '
 ````
 
 {{endregion}} 

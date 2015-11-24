@@ -23,25 +23,22 @@ __Example 1__ illustrates how to retrieve worksheets that have already been adde
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingIterateThroughWorksheets.vb region=radspreadprocessing-working-with-worksheets-iterate-through-worksheets_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
+Workbook workbook = new Workbook();
+WorksheetCollection worksheets = workbook.Worksheets;
+worksheets.Add();
+worksheets.Add();
+Worksheet firstWorksheet = worksheets[0];
+Worksheet secondWorksheet = worksheets["Sheet2"];
 
-            WorksheetCollection worksheets = workbook.Worksheets;
-            worksheets.Add();
-            worksheets.Add();
-
-            Worksheet firstWorksheet = worksheets[0];
-            Worksheet secondWorksheet = worksheets["Sheet2"];
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
+Dim workbook As New Workbook()
+Dim worksheets As WorksheetCollection = workbook.Worksheets
+worksheets.Add()
+worksheets.Add()
+Dim firstWorksheet As Worksheet = worksheets(0)
+Dim secondWorksheet As Worksheet = worksheets("Sheet2")
 
-        Dim worksheets As WorksheetCollection = workbook.Worksheets
-        worksheets.Add()
-        worksheets.Add()
-
-        Dim firstWorksheet As Worksheet = worksheets(0)
-        Dim secondWorksheet As Worksheet = worksheets("Sheet2")
-        '
 ````
 
 {{endregion}} 
@@ -54,42 +51,37 @@ __Example 2__ creates a new workbook with three worksheets. The code further ite
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingIterateThroughWorksheets.vb region=radspreadprocessing-working-with-worksheets-iterate-through-worksheets_1}} 
 
 ````C#
-            Workbook workbook = new Workbook();
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add();
+workbook.Worksheets.Add();
+workbook.Worksheets.Add();
+ThemableColor foregroundColor = new ThemableColor(Colors.Red);
+Color backgroundColor = Colors.Green;
+IFill backgroundFill = new PatternFill(PatternType.Solid, backgroundColor, backgroundColor);
+foreach (Worksheet worksheet in workbook.Worksheets)
+{
+    CellSelection cell = worksheet.Cells[0, 0];
+    cell.SetValue("The name of this worksheet is: " + worksheet.Name);
+    cell.SetForeColor(foregroundColor);
+    cell.SetFill(backgroundFill);
+}
 
-            workbook.Worksheets.Add();
-            workbook.Worksheets.Add();
-            workbook.Worksheets.Add();
-
-            ThemableColor foregroundColor = new ThemableColor(Colors.Red);
-            Color backgroundColor = Colors.Green;
-            IFill backgroundFill = new PatternFill(PatternType.Solid, backgroundColor, backgroundColor);
-
-            foreach (Worksheet worksheet in workbook.Worksheets)
-            {
-                CellSelection cell = worksheet.Cells[0, 0];
-                cell.SetValue("The name of this worksheet is: " + worksheet.Name);
-                cell.SetForeColor(foregroundColor);
-                cell.SetFill(backgroundFill);
-            }
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
+Dim workbook As New Workbook()
+For i As Integer = 0 To 9
+    workbook.Worksheets.Add()
+Next
+Dim foregroundColor As New ThemableColor(Colors.Red)
+Dim backgroundColor As Color = Colors.Green
+Dim backgroundFill As IFill = New PatternFill(PatternType.Solid, backgroundColor, backgroundColor)
+For Each worksheet As Worksheet In workbook.Worksheets
+    Dim cell As CellSelection = worksheet.Cells(0, 0)
+    cell.SetValue("The name of this worksheet is: " + worksheet.Name)
+    cell.SetForeColor(foregroundColor)
+    cell.SetFill(backgroundFill)
+Next
 
-        For i As Integer = 0 To 9
-            workbook.Worksheets.Add()
-        Next
-
-        Dim foregroundColor As New ThemableColor(Colors.Red)
-        Dim backgroundColor As Color = Colors.Green
-        Dim backgroundFill As IFill = New PatternFill(PatternType.Solid, backgroundColor, backgroundColor)
-
-        For Each worksheet As Worksheet In workbook.Worksheets
-            Dim cell As CellSelection = worksheet.Cells(0, 0)
-            cell.SetValue("The name of this worksheet is: " + worksheet.Name)
-            cell.SetForeColor(foregroundColor)
-            cell.SetFill(backgroundFill)
-        Next
-        '
 ````
 
 {{endregion}}

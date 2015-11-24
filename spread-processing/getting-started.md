@@ -76,13 +76,14 @@ __Example 1__ shows how you can create a workbook and add a new worksheet to it.
 {{source=..\SamplesVB\RadSpreadProcessing\RadSpreadProcessingGettingStarted.vb region=radspreadprocessing-getting-started_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        '
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+
 ````
 
 {{endregion}} 
@@ -95,13 +96,14 @@ You can then create a [CellSelection]({%slug winforms/spread-processing/working-
 {{source=..\SamplesVB\RadSpreadProcessing\RadSpreadProcessingGettingStarted.vb region=radspreadprocessing-getting-started_1}} 
 
 ````C#
-            CellSelection selection = worksheet.Cells[1, 1]; //B2 cell
-            selection.SetValue("Hello RadSpreadProcessing");
+CellSelection selection = worksheet.Cells[1, 1]; //B2 cell
+selection.SetValue("Hello RadSpreadProcessing");
+
 ````
 ````VB.NET
-        Dim selection As CellSelection = worksheet.Cells(1, 1) 'B2 cell
-        selection.SetValue("Hello RadSpreadProcessing")
-        '
+Dim selection As CellSelection = worksheet.Cells(1, 1) 'B2 cell
+selection.SetValue("Hello RadSpreadProcessing")
+
 ````
 
 {{endregion}} 
@@ -117,22 +119,21 @@ The __RadSpreadProcessing__ library supports a variety of formats to which you c
 {{source=..\SamplesVB\RadSpreadProcessing\RadSpreadProcessingGettingStarted.vb region=radspreadprocessing-getting-started_2}} 
 
 ````C#
-            string fileName = "SampleFile.xlsx";
-            IWorkbookFormatProvider formatProvider = new XlsxFormatProvider();
+string fileName = "SampleFile.xlsx";
+IWorkbookFormatProvider formatProvider = new XlsxFormatProvider();
+using (FileStream output = new FileStream(fileName, FileMode.Create))
+{
+    formatProvider.Export(workbook, output);
+}
 
-            using (FileStream output = new FileStream(fileName, FileMode.Create))
-            {
-                formatProvider.Export(workbook, output);
-            }
 ````
 ````VB.NET
-        Dim fileName As String = "SampleFile.xlsx"
-        Dim formatProvider As IWorkbookFormatProvider = New XlsxFormatProvider()
+Dim fileName As String = "SampleFile.xlsx"
+Dim formatProvider As IWorkbookFormatProvider = New XlsxFormatProvider()
+Using output As New FileStream(fileName, FileMode.Create)
+    formatProvider.Export(workbook, output)
+End Using
 
-        Using output As New FileStream(fileName, FileMode.Create)
-            formatProvider.Export(workbook, output)
-        End Using
-        '
 ````
 
 {{endregion}} 

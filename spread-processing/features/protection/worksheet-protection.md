@@ -29,21 +29,18 @@ __Example 1__ sets the __IsLocked__ property of cell A1 to false and protects th
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.vb region=radspreadprocessing-features-protection-worksheet_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetIsLocked(false);
+worksheet.Protect("telerik", WorksheetProtectionOptions.Default);
 
-            worksheet.Cells[0, 0].SetIsLocked(false);
-
-            worksheet.Protect("telerik", WorksheetProtectionOptions.Default);
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetIsLocked(False)
+worksheet.Protect("telerik", WorksheetProtectionOptions.[Default])
 
-        worksheet.Cells(0, 0).SetIsLocked(False)
-
-        worksheet.Protect("telerik", WorksheetProtectionOptions.[Default])
-        '
 ````
 
 {{endregion}} 
@@ -62,19 +59,18 @@ __Example 2__ demonstrates how to unprotect a worksheet:
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.vb region=radspreadprocessing-features-protection-worksheet_1}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            worksheet.Protect("telerik", WorksheetProtectionOptions.Default);
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Protect("telerik", WorksheetProtectionOptions.Default);
+worksheet.Unprotect("telerik");
 
-            worksheet.Unprotect("telerik");
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        worksheet.Protect("telerik", WorksheetProtectionOptions.[Default])
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Protect("telerik", WorksheetProtectionOptions.[Default])
+worksheet.Unprotect("telerik")
 
-        worksheet.Unprotect("telerik")
-        '
 ````
 
 {{endregion}} 
@@ -95,17 +91,18 @@ __Example 3__ demonstrates how to protect a worksheet using WorksheetProtectionO
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Protection\RadSpreadProcessingWorksheetProtection.vb region=radspreadprocessing-features-protection-worksheet_2}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            WorksheetProtectionOptions options = new WorksheetProtectionOptions(allowInsertRows: true, allowDeleteRows: true);
-            worksheet.Protect("telerik", options);
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+WorksheetProtectionOptions options = new WorksheetProtectionOptions(allowInsertRows: true, allowDeleteRows: true);
+worksheet.Protect("telerik", options);
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        Dim options As New WorksheetProtectionOptions(allowInsertRows:=True, allowDeleteRows:=True)
-        worksheet.Protect("telerik", options)
-        '
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim options As New WorksheetProtectionOptions(allowInsertRows:=True, allowDeleteRows:=True)
+worksheet.Protect("telerik", options)
+
 ````
 
 {{endregion}} 

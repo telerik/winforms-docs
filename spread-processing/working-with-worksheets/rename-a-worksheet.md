@@ -34,15 +34,16 @@ __Example 1__ creates a new workbook, adds a single worksheet to it and renames 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingRenameAWorksheet.vb region=radspreadprocessing-working-with-worksheets-rename-worksheet_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            worksheet.Name = "Sam's Worksheet";
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Name = "Sam's Worksheet";
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        worksheet.Name = "Sam's Worksheet"
-        '
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Name = "Sam's Worksheet"
+
 ````
 
 {{endregion}} 
@@ -55,40 +56,35 @@ __Example 2__ creates a new workbook and adds two worksheets to it. The snippet 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingRenameAWorksheet.vb region=radspreadprocessing-working-with-worksheets-rename-worksheet_1}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            workbook.Worksheets.Add();
-            workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add();
+workbook.Worksheets.Add();
+string newWorksheetName = "July's Worksheet";
+int indexOfWorksheetToRename = 0;
+int index = workbook.Worksheets.IndexOf(newWorksheetName);
+if (index == -1 || index == indexOfWorksheetToRename)
+{
+    workbook.Worksheets[indexOfWorksheetToRename].Name = newWorksheetName;
+}
+else
+{
+    // There already exists worksheet with this name
+}
 
-            string newWorksheetName = "July's Worksheet";
-            int indexOfWorksheetToRename = 0;
-
-            int index = workbook.Worksheets.IndexOf(newWorksheetName);
-
-            if (index == -1 || index == indexOfWorksheetToRename)
-            {
-                workbook.Worksheets[indexOfWorksheetToRename].Name = newWorksheetName;
-            }
-            else
-            {
-                // There already exists worksheet with this name
-            }
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        workbook.Worksheets.Add()
-        workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+workbook.Worksheets.Add()
+workbook.Worksheets.Add()
+Dim newWorksheetName As String = "July's Worksheet"
+Dim indexOfWorksheetToRename As Integer = 0
+Dim index As Integer = workbook.Worksheets.IndexOf(newWorksheetName)
+If index = -1 OrElse index = indexOfWorksheetToRename Then
+    workbook.Worksheets(indexOfWorksheetToRename).Name = newWorksheetName
+Else
+    ' There already exists worksheet with this name
+End If
 
-        Dim newWorksheetName As String = "July's Worksheet"
-        Dim indexOfWorksheetToRename As Integer = 0
-
-        Dim index As Integer = workbook.Worksheets.IndexOf(newWorksheetName)
-
-        If index = -1 OrElse index = indexOfWorksheetToRename Then
-            workbook.Worksheets(indexOfWorksheetToRename).Name = newWorksheetName
-        Else
-            ' There already exists worksheet with this name
-        End If
-        '
 ````
 
 {{endregion}}

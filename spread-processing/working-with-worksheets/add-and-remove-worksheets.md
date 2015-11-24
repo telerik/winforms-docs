@@ -29,13 +29,14 @@ __Example 1__ creates a workbook from scratch and adds a single worksheet to it.
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingAddAndRemoveWorksheets.vb region=radspreadprocessing-working-with-worksheets-add-remove-worksheets_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet newWorksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet newWorksheet = workbook.Worksheets.Add();
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim newWorksheet As Worksheet = workbook.Worksheets.Add()
-        '
+Dim workbook As New Workbook()
+Dim newWorksheet As Worksheet = workbook.Worksheets.Add()
+
 ````
 
 {{endregion}} 
@@ -55,28 +56,28 @@ __Example 2__ creates a workbook and adds four worksheets. All worksheets are wi
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithWorksheets\RadSpreadProcessingAddAndRemoveWorksheets.vb region=radspreadprocessing-working-with-worksheets-add-remove-worksheets_1}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            workbook.Worksheets.Add(); // Sheet1
-            Worksheet secondWorksheet = workbook.Worksheets.Add(); // Sheet2
-            workbook.Worksheets.Add(); // Sheet3
-            workbook.Worksheets.Add(); // Sheet4
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add(); // Sheet1
+Worksheet secondWorksheet = workbook.Worksheets.Add(); // Sheet2
+workbook.Worksheets.Add(); // Sheet3
+workbook.Worksheets.Add(); // Sheet4
+workbook.Worksheets.RemoveAt(3); // Removed Sheet4
+workbook.Worksheets.Remove("Sheet1"); // Removed Sheet1
+workbook.Worksheets.Remove(secondWorksheet); // Removed Sheet2
+// the only worksheet left is Sheet3
 
-            workbook.Worksheets.RemoveAt(3); // Removed Sheet4
-            workbook.Worksheets.Remove("Sheet1"); // Removed Sheet1
-            workbook.Worksheets.Remove(secondWorksheet); // Removed Sheet2
-            // the only worksheet left is Sheet3
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        workbook.Worksheets.Add() ' Sheet1
-        Dim secondWorksheet As Worksheet = workbook.Worksheets.Add() ' Sheet2
-        workbook.Worksheets.Add() ' Sheet3
-        workbook.Worksheets.Add() ' Sheet4
-        workbook.Worksheets.RemoveAt(3) ' Removed Sheet4
-        workbook.Worksheets.Remove("Sheet1") ' Removed Sheet1
-        workbook.Worksheets.Remove(secondWorksheet) ' Removed Sheet2
-        ' the only worksheet left is Sheet3
-        '
+Dim workbook As New Workbook()
+workbook.Worksheets.Add() ' Sheet1
+Dim secondWorksheet As Worksheet = workbook.Worksheets.Add() ' Sheet2
+workbook.Worksheets.Add() ' Sheet3
+workbook.Worksheets.Add() ' Sheet4
+workbook.Worksheets.RemoveAt(3) ' Removed Sheet4
+workbook.Worksheets.Remove("Sheet1") ' Removed Sheet1
+workbook.Worksheets.Remove(secondWorksheet) ' Removed Sheet2
+' the only worksheet left is Sheet3
+
 ````
 
 {{endregion}}

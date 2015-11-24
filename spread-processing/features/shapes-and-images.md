@@ -101,13 +101,12 @@ In order to create an instance of __FloatingImage__ you need the worksheet in wh
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_0}} 
 
 ````C#
+FloatingImage image = new FloatingImage(worksheet, new CellIndex(7, 1), 35, 10);
 
-            FloatingImage image = new FloatingImage(worksheet, new CellIndex(7, 1), 35, 10);
 ````
 ````VB.NET
-        Dim image As New FloatingImage(worksheet, New CellIndex(7, 1), 35, 10)
+Dim image As New FloatingImage(worksheet, New CellIndex(7, 1), 35, 10)
 
-        '
 ````
 
 {{endregion}} 
@@ -121,30 +120,27 @@ The next step is to configure the other properties of the image as needed.
 
 ````C#
             
-            FileStream stream = File.Open(filePath, FileMode.Open);
-                
-            using (stream)
-            {
-                image.ImageSource = new Telerik.Windows.Documents.Media.ImageSource(stream, "jpg");
-            }
+FileStream stream = File.Open(filePath, FileMode.Open);
+    
+using (stream)
+{
+    image.ImageSource = new Telerik.Windows.Documents.Media.ImageSource(stream, "jpg");
+}
             
-            image.Width = 330;
-            image.Height = 45;
-            image.RotationAngle = 20;
+image.Width = 330;
+image.Height = 45;
+image.RotationAngle = 20;
+
 ````
 ````VB.NET
-        Dim stream As FileStream = File.Open(filePath, FileMode.Open)
+Dim stream As FileStream = File.Open(filePath, FileMode.Open)
+Using stream
+    image.ImageSource = New Telerik.Windows.Documents.Media.ImageSource(stream, "jpg")
+End Using
+image.Width = 330
+image.Height = 45
+image.RotationAngle = 20
 
-        Using stream
-            image.ImageSource = New Telerik.Windows.Documents.Media.ImageSource(stream, "jpg")
-        End Using
-
-        image.Width = 330
-        image.Height = 45
-        image.RotationAngle = 20
-
-
-        '
 ````
 
 {{endregion}} 
@@ -157,13 +153,12 @@ Insert the image into the collection of shapes of the worksheet.  Note that the 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_02}} 
 
 ````C#
+worksheet.Shapes.Add(image);
 
-            worksheet.Shapes.Add(image);
 ````
 ````VB.NET
-        worksheet.Shapes.Add(image)
+worksheet.Shapes.Add(image)
 
-        '
 ````
 
 {{endregion}} 
@@ -182,12 +177,12 @@ __Example 4__ demonstrates how you can remove the image added in __Example 3__.
 
 ````C#
             
-            worksheet.Shapes.Remove(image);
+worksheet.Shapes.Remove(image);
+
 ````
 ````VB.NET
-        worksheet.Shapes.Remove(image)
+worksheet.Shapes.Remove(image)
 
-        '
 ````
 
 {{endregion}} 
@@ -205,17 +200,16 @@ After the initial values of the properties of the shapes have been assigned, the
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_04}} 
 
 ````C#
+image.CellIndex = new CellIndex(4, 5);
+image.OffsetX = 10;
+image.OffsetY = 10;
 
-            image.CellIndex = new CellIndex(4, 5);
-            image.OffsetX = 10;
-            image.OffsetY = 10;
 ````
 ````VB.NET
-        image.CellIndex = New CellIndex(4, 5)
-        image.OffsetX = 10
-        image.OffsetY = 10
+image.CellIndex = New CellIndex(4, 5)
+image.OffsetX = 10
+image.OffsetY = 10
 
-        '
 ````
 
 {{endregion}} 
@@ -229,14 +223,14 @@ After the initial values of the properties of the shapes have been assigned, the
 
 ````C#
             
-            image.Width -= 50;
-            image.Height += 50;
+image.Width -= 50;
+image.Height += 50;
+
 ````
 ````VB.NET
-        image.Width -= 50
-        image.Height += 50
+image.Width -= 50
+image.Height += 50
 
-        '
 ````
 
 {{endregion}} 
@@ -255,16 +249,14 @@ The Width and Height properties do not take the LockAspectRatio property into ac
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingShapesAndImages.vb region=radspreadprocessing-features-shapes-and-images_08}} 
 
 ````C#
+image.SetWidth(false, 330);
+image.SetHeight(true, 45);
 
-            image.SetWidth(false, 330);
-            image.SetHeight(true, 45);
 ````
 ````VB.NET
+image.SetWidth(False, 330)
+image.SetHeight(True, 45)
 
-        image.SetWidth(False, 330)
-        image.SetHeight(True, 45)
-
-        '
 ````
 
 {{endregion}} 
@@ -280,12 +272,12 @@ These two methods will be further explained in the next section.
 
 ````C#
             
-            image.RotationAngle = 40;
+image.RotationAngle = 40;
+
 ````
 ````VB.NET
-        image.RotationAngle = 40
+image.RotationAngle = 40
 
-        '
 ````
 
 {{endregion}} 
@@ -303,12 +295,12 @@ The rotation angle of the shape can affect the __CellIndexM__ property and the o
 
 ````C#
         
-            image.IsHorizontallyFlipped = true;
+image.IsHorizontallyFlipped = true;
+
 ````
 ````VB.NET
-        image.IsHorizontallyFlipped = True
+image.IsHorizontallyFlipped = True
 
-        '
 ````
 
 {{endregion}} 

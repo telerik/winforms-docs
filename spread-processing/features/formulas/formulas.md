@@ -40,15 +40,16 @@ __Example 1__ creates a workbook from scratch and adds a worksheet. Further, the
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingFormulas.vb region=radspreadprocessing-features-formulas_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            workbook.Worksheets.Add();
-            workbook.ActiveWorksheet.Cells[0, 0].SetValue("=3+4");
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add();
+workbook.ActiveWorksheet.Cells[0, 0].SetValue("=3+4");
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        workbook.Worksheets.Add()
-        workbook.ActiveWorksheet.Cells(0, 0).SetValue("=3+4")
-        '
+Dim workbook As New Workbook()
+workbook.Worksheets.Add()
+workbook.ActiveWorksheet.Cells(0, 0).SetValue("=3+4")
+
 ````
 
 {{endregion}} 
@@ -64,46 +65,39 @@ A closer look at the value of cell A1 will reveal that the two methods __GetValu
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingFormulas.vb region=radspreadprocessing-features-formulas_1}} 
 
 ````C#
-            FormulaCellValue formulaCellValue = workbook.ActiveWorksheet.Cells[0, 0].GetValue().Value as FormulaCellValue;
-            if (formulaCellValue != null)
-            {
-                RadExpression expression = formulaCellValue.Value;
-                //expression is AdditionExpression with operands 3 and 4
+FormulaCellValue formulaCellValue = workbook.ActiveWorksheet.Cells[0, 0].GetValue().Value as FormulaCellValue;
+if (formulaCellValue != null)
+{
+    RadExpression expression = formulaCellValue.Value;
+    //expression is AdditionExpression with operands 3 and 4
+    CellValueFormat format = workbook.ActiveWorksheet.Cells[0, 0].GetFormat().Value;
+    string valueAsString = formulaCellValue.GetValueAsString(format);
+    //valueAsString = "=3+4"
+    string resultValueAsString = formulaCellValue.GetResultValueAsString(format);
+    //resultAsString = "7"
+    CellValueType valueType = formulaCellValue.ValueType;
+    //valueType = Formula
+    CellValueType resultValueType = formulaCellValue.ResultValueType;
+    //resultValueType = Number
+}
 
-                CellValueFormat format = workbook.ActiveWorksheet.Cells[0, 0].GetFormat().Value;
-                string valueAsString = formulaCellValue.GetValueAsString(format);
-                //valueAsString = "=3+4"
-
-                string resultValueAsString = formulaCellValue.GetResultValueAsString(format);
-                //resultAsString = "7"
-
-                CellValueType valueType = formulaCellValue.ValueType;
-                //valueType = Formula
-
-                CellValueType resultValueType = formulaCellValue.ResultValueType;
-                //resultValueType = Number
-            }
 ````
 ````VB.NET
-        Dim formulaCellValue As FormulaCellValue = TryCast(workbook.ActiveWorksheet.Cells(0, 0).GetValue().Value, FormulaCellValue)
-        If formulaCellValue IsNot Nothing Then
-            Dim expression As RadExpression = formulaCellValue.Value
-            'expression is AdditionExpression with operands 3 and 4
+Dim formulaCellValue As FormulaCellValue = TryCast(workbook.ActiveWorksheet.Cells(0, 0).GetValue().Value, FormulaCellValue)
+If formulaCellValue IsNot Nothing Then
+    Dim expression As RadExpression = formulaCellValue.Value
+    'expression is AdditionExpression with operands 3 and 4
+    Dim format As CellValueFormat = workbook.ActiveWorksheet.Cells(0, 0).GetFormat().Value
+    Dim valueAsString As String = formulaCellValue.GetValueAsString(format)
+    'valueAsString = "=3+4"
+    Dim resultValueAsString As String = formulaCellValue.GetResultValueAsString(format)
+    'resultAsString = "7"
+    Dim valueType As CellValueType = formulaCellValue.ValueType
+    'valueType = Formula
+    'resultValueType = Number
+    Dim resultValueType As CellValueType = formulaCellValue.ResultValueType
+End If
 
-            Dim format As CellValueFormat = workbook.ActiveWorksheet.Cells(0, 0).GetFormat().Value
-            Dim valueAsString As String = formulaCellValue.GetValueAsString(format)
-            'valueAsString = "=3+4"
-
-            Dim resultValueAsString As String = formulaCellValue.GetResultValueAsString(format)
-            'resultAsString = "7"
-
-            Dim valueType As CellValueType = formulaCellValue.ValueType
-            'valueType = Formula
-
-            'resultValueType = Number
-            Dim resultValueType As CellValueType = formulaCellValue.ResultValueType
-        End If
-        '
 ````
 
 {{endregion}} 

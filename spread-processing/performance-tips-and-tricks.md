@@ -42,19 +42,18 @@ Internally there are many mechanisms used to lower the number of calculations, b
 
 ````C#
             
-            Workbook workbook = new Workbook();
-            workbook.SuspendLayoutUpdate();
-            // The code which generates the document
-            workbook.ResumeLayoutUpdate();
+Workbook workbook = new Workbook();
+workbook.SuspendLayoutUpdate();
+// The code which generates the document
+workbook.ResumeLayoutUpdate();
+
 ````
 ````VB.NET
+Dim workbook As New Workbook()
+workbook.SuspendLayoutUpdate()
+' The code which generates the document
+workbook.ResumeLayoutUpdate()
 
-        Dim workbook As New Workbook()
-        workbook.SuspendLayoutUpdate()
-        ' The code which generates the document
-        workbook.ResumeLayoutUpdate()
-
-        '
 ````
 
 {{endregion}} 
@@ -68,22 +67,20 @@ Note that if an exception is thrown between the two method calls, the resuming o
 
 ````C#
             
-            Workbook workbook = new Workbook();
-            using (new UpdateScope(workbook.SuspendLayoutUpdate, workbook.ResumeLayoutUpdate))
-            {
-                // The code which generates the document
-            }
+Workbook workbook = new Workbook();
+using (new UpdateScope(workbook.SuspendLayoutUpdate, workbook.ResumeLayoutUpdate))
+{
+    // The code which generates the document
+}
+
 ````
 ````VB.NET
+Dim workbook As New Workbook()
+Dim updateScope = New UpdateScope(AddressOf workbook.SuspendLayoutUpdate, AddressOf workbook.ResumeLayoutUpdate)
+Using updateScope
+' The code which generates the document
+End Using
 
-        Dim workbook As New Workbook()
-
-        Dim updateScope = New UpdateScope(AddressOf workbook.SuspendLayoutUpdate, AddressOf workbook.ResumeLayoutUpdate)
-        Using updateScope
-        ' The code which generates the document
-        End Using
-
-        '
 ````
 
 {{endregion}} 
@@ -99,19 +96,18 @@ Preserving information about the steps in the undo stack is usually not a time c
 
 ````C#
             
-            Workbook workbook = new Workbook();
-            workbook.History.BeginUndoGroup();
-            // The code which generates the document
-            workbook.History.EndUndoGroup();
+Workbook workbook = new Workbook();
+workbook.History.BeginUndoGroup();
+// The code which generates the document
+workbook.History.EndUndoGroup();
+
 ````
 ````VB.NET
+Dim workbook As New Workbook()
+workbook.History.BeginUndoGroup()
+' The code which generates the document
+workbook.History.EndUndoGroup()
 
-        Dim workbook As New Workbook()
-        workbook.History.BeginUndoGroup()
-        ' The code which generates the document
-        workbook.History.EndUndoGroup()
-
-        '
 ````
 
 {{endregion}} 
@@ -125,21 +121,20 @@ Note that if an exception is thrown between the two method calls, the ending of 
 
 ````C#
         
-            Workbook workbook = new Workbook();
-            using (new UpdateScope(workbook.History.BeginUndoGroup, workbook.History.EndUndoGroup))
-            {
-                // The code which generates the document
-            }
+Workbook workbook = new Workbook();
+using (new UpdateScope(workbook.History.BeginUndoGroup, workbook.History.EndUndoGroup))
+{
+    // The code which generates the document
+}
+
 ````
 ````VB.NET
+Dim workbook As New Workbook()
+Dim updateScope = New UpdateScope(AddressOf workbook.History.BeginUndoGroup, AddressOf workbook.History.EndUndoGroup)
+Using updateScope
+' The code which generates the document
+End Using
 
-        Dim workbook As New Workbook()
-        Dim updateScope = New UpdateScope(AddressOf workbook.History.BeginUndoGroup, AddressOf workbook.History.EndUndoGroup)
-        Using updateScope
-        ' The code which generates the document
-        End Using
-
-        '
 ````
 
 {{endregion}} 
@@ -155,17 +150,16 @@ As you already know from the [Reduce the Number of Undo Steps section](#reduce-t
 
 ````C#
             
-            workbook.History.IsEnabled = false;
-            // The code which generates the document
-            workbook.History.IsEnabled = true;
+workbook.History.IsEnabled = false;
+// The code which generates the document
+workbook.History.IsEnabled = true;
+
 ````
 ````VB.NET
+workbook.History.IsEnabled = False
+' The code which generates the document
+workbook.History.IsEnabled = True
 
-        workbook.History.IsEnabled = False
-        ' The code which generates the document
-        workbook.History.IsEnabled = True
-
-        '
 ````
 
 {{endregion}} 
@@ -178,26 +172,23 @@ If an exception is thrown before enabling the history, it will not be enabled an
 {{source=..\SamplesVB\RadSpreadProcessing\SpreadProcessingPerformance.vb region=radspreadprocessing-performance_5}} 
 
 ````C#
+using (new UpdateScope(
+    () => { workbook.History.IsEnabled = false; },
+    () => { workbook.History.IsEnabled = true; }))
+{
+    // The code which generates the document
+}
 
-            using (new UpdateScope(
-                () => { workbook.History.IsEnabled = false; },
-                () => { workbook.History.IsEnabled = true; }))
-            {
-                // The code which generates the document
-            }
 ````
 ````VB.NET
+Using New UpdateScope(Function()
+                          workbook.History.IsEnabled = False
+                      End Function, Function()
+                                        workbook.History.IsEnabled = True
+                                        ' The code which generates the document
+                                    End Function)
+End Using
 
-Using New UpdateScope(Function() workbook.History.IsEnabled = False
-
-                              End Function, Function()
-                                                workbook.History.IsEnabled = True
-
-                                                ' The code which generates the document
-                                            End Function)
-        End Using
-
-        '
 ````
 
 {{endregion}} 

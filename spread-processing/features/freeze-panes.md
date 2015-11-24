@@ -80,15 +80,16 @@ In order to describe fully the state of the frozen panes the following need to b
 
 ````C#
             
-            CellIndex fixedPaneTopLeftCellIndex = new CellIndex(2, 2);
-            CellIndex scrollableTopLeftCellIndex = new CellIndex(5, 8);
-            workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 1, 4, scrollableTopLeftCellIndex);
+CellIndex fixedPaneTopLeftCellIndex = new CellIndex(2, 2);
+CellIndex scrollableTopLeftCellIndex = new CellIndex(5, 8);
+workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 1, 4, scrollableTopLeftCellIndex);
+
 ````
 ````VB.NET
-        Dim fixedPaneTopLeftCellIndex As New CellIndex(2, 2)
-        Dim scrollableTopLeftCellIndex As New CellIndex(5, 8)
-        workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 1, 4, scrollableTopLeftCellIndex)
-        '
+Dim fixedPaneTopLeftCellIndex As New CellIndex(2, 2)
+Dim scrollableTopLeftCellIndex As New CellIndex(5, 8)
+workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 1, 4, scrollableTopLeftCellIndex)
+
 ````
 
 {{endregion}} 
@@ -100,15 +101,14 @@ In order to describe fully the state of the frozen panes the following need to b
 
 ````C#
             
-            CellIndex fixedPaneTopLeftCellIndex = new CellIndex(2, 2);
-            workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 0, 4);
+CellIndex fixedPaneTopLeftCellIndex = new CellIndex(2, 2);
+workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 0, 4);
+
 ````
 ````VB.NET
+Dim fixedPaneTopLeftCellIndex As New CellIndex(2, 2)
+workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 0, 4)
 
-        Dim fixedPaneTopLeftCellIndex As New CellIndex(2, 2)
-        workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 0, 4)
-
-        '
 ````
 {{endregion}} 
 
@@ -131,17 +131,16 @@ This code will result in the following:![spreadprocessing-features-freeze-panes 
 
 ````C#
             
-            CellIndex scrollableTopLeftCellIndex = new CellIndex(5, 8);
-            Pane pane = new Pane(scrollableTopLeftCellIndex, 4, 1, ViewportPaneType.Scrollable);
-            workbook.ActiveWorksheet.ViewState.Pane = pane;
+CellIndex scrollableTopLeftCellIndex = new CellIndex(5, 8);
+Pane pane = new Pane(scrollableTopLeftCellIndex, 4, 1, ViewportPaneType.Scrollable);
+workbook.ActiveWorksheet.ViewState.Pane = pane;
+
 ````
 ````VB.NET
+Dim scrollableTopLeftCellIndex As New CellIndex(5, 8)
+Dim pane As New Pane(scrollableTopLeftCellIndex, 4, 1, ViewportPaneType.Scrollable)
+workbook.ActiveWorksheet.ViewState.Pane = pane
 
-        Dim scrollableTopLeftCellIndex As New CellIndex(5, 8)
-        Dim pane As New Pane(scrollableTopLeftCellIndex, 4, 1, ViewportPaneType.Scrollable)
-        workbook.ActiveWorksheet.ViewState.Pane = pane
-
-        '
 ````
 
 {{endregion}} 
@@ -158,13 +157,12 @@ In order to unfreeze the panes of the worksheet you need to use the same methods
 
 ````C#
         
-            workbook.ActiveWorksheet.ViewState.FreezePanes(0, 0);
+workbook.ActiveWorksheet.ViewState.FreezePanes(0, 0);
+
 ````
 ````VB.NET
+workbook.ActiveWorksheet.ViewState.FreezePanes(0, 0)
 
-        workbook.ActiveWorksheet.ViewState.FreezePanes(0, 0)
-
-        '
 ````
 
 {{endregion}} 
@@ -176,13 +174,12 @@ Another option is to set the Pane property of the ViewState to null.
 
 ````C#
         
-            workbook.ActiveWorksheet.ViewState.Pane = null;
+workbook.ActiveWorksheet.ViewState.Pane = null;
+
 ````
 ````VB.NET
+workbook.ActiveWorksheet.ViewState.Pane = Nothing
 
-        workbook.ActiveWorksheet.ViewState.Pane = Nothing
-
-        '
 ````
 
 {{endregion}} 

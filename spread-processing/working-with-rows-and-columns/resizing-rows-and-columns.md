@@ -43,21 +43,20 @@ __Example 1__ shows how to retrieve and change the height of several rows.
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-resizing_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+RowSelection rowSelection = worksheet.Rows[5, 7];
+double rowsHeight = rowSelection.GetHeight().Value.Value;
+rowSelection.SetHeight(new RowHeight(rowsHeight + 50, true));
 
-            RowSelection rowSelection = worksheet.Rows[5, 7];
-            double rowsHeight = rowSelection.GetHeight().Value.Value;
-            rowSelection.SetHeight(new RowHeight(rowsHeight + 50, true));
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim rowSelection As RowSelection = worksheet.Rows(5, 7)
+Dim rowsHeight As Double = rowSelection.GetHeight().Value.Value
+rowSelection.SetHeight(New RowHeight(rowsHeight + 50, True))
 
-        Dim rowSelection As RowSelection = worksheet.Rows(5, 7)
-        Dim rowsHeight As Double = rowSelection.GetHeight().Value.Value
-        rowSelection.SetHeight(New RowHeight(rowsHeight + 50, True))
-        '
 ````
 
 {{endregion}} 
@@ -72,19 +71,18 @@ Example 2: Fit height of rows
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-resizing_1}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+RowSelection rowSelection = worksheet.Rows[5, 7];
+rowSelection.AutoFitHeight();
 
-            RowSelection rowSelection = worksheet.Rows[5, 7];
-            rowSelection.AutoFitHeight();
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim rowSelection As RowSelection = worksheet.Rows(5, 7)
+rowSelection.AutoFitHeight()
 
-        Dim rowSelection As RowSelection = worksheet.Rows(5, 7)
-        rowSelection.AutoFitHeight()
-        '
 ````
 
 {{endregion}} 
@@ -111,21 +109,20 @@ __Example 3__ shows how to retrieve and change the width of several columns.
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-resizing_2}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+ColumnSelection columnSelection = worksheet.Columns[5, 7];
+double columnWidth = columnSelection.GetWidth().Value.Value;
+columnSelection.SetWidth(new ColumnWidth(columnWidth + 50, true));
 
-            ColumnSelection columnSelection = worksheet.Columns[5, 7];
-            double columnWidth = columnSelection.GetWidth().Value.Value;
-            columnSelection.SetWidth(new ColumnWidth(columnWidth + 50, true));
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
+Dim columnWidth As Double = columnSelection.GetWidth().Value.Value
+columnSelection.SetWidth(New ColumnWidth(columnWidth + 50, True))
 
-        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
-        Dim columnWidth As Double = columnSelection.GetWidth().Value.Value
-        columnSelection.SetWidth(New ColumnWidth(columnWidth + 50, True))
-        '
 ````
 
 {{endregion}} 
@@ -140,19 +137,18 @@ The autofit feature offers a handy approach for resizing multiple columns, so th
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-resizing_3}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+ColumnSelection columnSelection = worksheet.Columns[5, 7];
+columnSelection.AutoFitWidth();
 
-            ColumnSelection columnSelection = worksheet.Columns[5, 7];
-            columnSelection.AutoFitWidth();
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
+columnSelection.AutoFitWidth()
 
-        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
-        columnSelection.AutoFitWidth()
-        '
 ````
 
 {{endregion}} 
@@ -165,19 +161,18 @@ Another way to auto fit column widths is to use the __ExpandToFitNumberValuesWid
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingResizingRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-resizing_4}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+ColumnSelection columnSelection = worksheet.Columns[5, 7];
+columnSelection.ExpandToFitNumberValuesWidth();
 
-            ColumnSelection columnSelection = worksheet.Columns[5, 7];
-            columnSelection.ExpandToFitNumberValuesWidth();
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
+columnSelection.ExpandToFitNumberValuesWidth()
 
-        Dim columnSelection As ColumnSelection = worksheet.Columns(5, 7)
-        columnSelection.ExpandToFitNumberValuesWidth()
-        '
 ````
 
 {{endregion}}

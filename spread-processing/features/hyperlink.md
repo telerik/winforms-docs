@@ -48,11 +48,12 @@ __Example 1__ creates a hyperlink to a web address.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_0}} 
 
 ````C#
-            HyperlinkInfo webAddres = HyperlinkInfo.CreateHyperlink("http://telerik.com", "Telerik");
+HyperlinkInfo webAddres = HyperlinkInfo.CreateHyperlink("http://telerik.com", "Telerik");
+
 ````
 ````VB.NET
-        Dim webAddres As HyperlinkInfo = HyperlinkInfo.CreateHyperlink("http://google.com", "Google")
-        '
+Dim webAddres As HyperlinkInfo = HyperlinkInfo.CreateHyperlink("http://google.com", "Google")
+
 ````
 
 {{endregion}} 
@@ -65,11 +66,12 @@ __Example 2__ creates a hyperlink to a cell range somewhere in the document.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_1}} 
 
 ````C#
-            HyperlinkInfo inDocument = HyperlinkInfo.CreateInDocumentHyperlink("A1:B3", "Go to A1:B3");
+HyperlinkInfo inDocument = HyperlinkInfo.CreateInDocumentHyperlink("A1:B3", "Go to A1:B3");
+
 ````
 ````VB.NET
-        Dim inDocument As HyperlinkInfo = HyperlinkInfo.CreateInDocumentHyperlink("A1:B3", "Go to A1:B3")
-        '
+Dim inDocument As HyperlinkInfo = HyperlinkInfo.CreateInDocumentHyperlink("A1:B3", "Go to A1:B3")
+
 ````
 
 {{endregion}} 
@@ -82,11 +84,12 @@ __Example 3__ create a hyperlink to an email address.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_2}} 
 
 ````C#
-            HyperlinkInfo mailto = HyperlinkInfo.CreateMailtoHyperlink("someOne@someCompany.com", "someSubject", "Mail to someOne");
+HyperlinkInfo mailto = HyperlinkInfo.CreateMailtoHyperlink("someOne@someCompany.com", "someSubject", "Mail to someOne");
+
 ````
 ````VB.NET
-        Dim mailto As HyperlinkInfo = HyperlinkInfo.CreateMailtoHyperlink("someOne@someCompany.com", "someSubject", "Mail to someOne")
-        '
+Dim mailto As HyperlinkInfo = HyperlinkInfo.CreateMailtoHyperlink("someOne@someCompany.com", "someSubject", "Mail to someOne")
+
 ````
 
 {{endregion}} 
@@ -103,13 +106,14 @@ __Example 4__ assigns the hyperlink created in __Example 1__ to A1:
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_3}} 
 
 ````C#
-            CellIndex a1Index = new CellIndex(0, 0);
-            SpreadsheetHyperlink spreadsheetHyperlink = worksheet.Hyperlinks.Add(a1Index, webAddres);
+CellIndex a1Index = new CellIndex(0, 0);
+SpreadsheetHyperlink spreadsheetHyperlink = worksheet.Hyperlinks.Add(a1Index, webAddres);
+
 ````
 ````VB.NET
-        Dim a1Index As New CellIndex(0, 0)
-        Dim spreadsheetHyperlink As SpreadsheetHyperlink = worksheet.Hyperlinks.Add(a1Index, webAddres)
-        '
+Dim a1Index As New CellIndex(0, 0)
+Dim spreadsheetHyperlink As SpreadsheetHyperlink = worksheet.Hyperlinks.Add(a1Index, webAddres)
+
 ````
 
 {{endregion}} 
@@ -125,15 +129,16 @@ __Example 5__ defines two indexes and then a cell range out of those indexes.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_4}} 
 
 ````C#
-            CellIndex a1Index = new CellIndex(0, 0);
-            CellIndex b3Index = new CellIndex(2, 1);
-            CellRange a1b3Range = new CellRange(a1Index, b3Index);
+CellIndex a1Index = new CellIndex(0, 0);
+CellIndex b3Index = new CellIndex(2, 1);
+CellRange a1b3Range = new CellRange(a1Index, b3Index);
+
 ````
 ````VB.NET
-        Dim a1Index As New CellIndex(0, 0)
-        Dim b3Index As New CellIndex(2, 1)
-        Dim a1b3Range As New CellRange(a1Index, b3Index)
-        '
+Dim a1Index As New CellIndex(0, 0)
+Dim b3Index As New CellIndex(2, 1)
+Dim a1b3Range As New CellRange(a1Index, b3Index)
+
 ````
 
 {{endregion}} 
@@ -146,11 +151,12 @@ __Example 5__ defines two indexes and then a cell range out of those indexes.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_5}} 
 
 ````C#
-            IEnumerable<SpreadsheetHyperlink> containingHyperlinks = worksheet.Hyperlinks.GetContainingHyperlinks(a1b3Range);
+IEnumerable<SpreadsheetHyperlink> containingHyperlinks = worksheet.Hyperlinks.GetContainingHyperlinks(a1b3Range);
+
 ````
 ````VB.NET
-        Dim containingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetContainingHyperlinks(a1b3Range)
-        '
+Dim containingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetContainingHyperlinks(a1b3Range)
+
 ````
 
 {{endregion}} 
@@ -166,11 +172,12 @@ __Example 5__ defines two indexes and then a cell range out of those indexes.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_6}} 
 
 ````C#
-            IEnumerable<SpreadsheetHyperlink> intersectingHyperlinks = worksheet.Hyperlinks.GetIntersectingHyperlinks(a1b3Range);
+IEnumerable<SpreadsheetHyperlink> intersectingHyperlinks = worksheet.Hyperlinks.GetIntersectingHyperlinks(a1b3Range);
+
 ````
 ````VB.NET
-        Dim intersectingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetIntersectingHyperlinks(a1b3Range)
-        '
+Dim intersectingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hyperlinks.GetIntersectingHyperlinks(a1b3Range)
+
 ````
 
 {{endregion}} 
@@ -183,11 +190,12 @@ __Example 5__ defines two indexes and then a cell range out of those indexes.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_7}} 
 
 ````C#
-            bool canGetHyperlink = worksheet.Hyperlinks.TryGetHyperlink(a1Index, out spreadsheetHyperlink);
+bool canGetHyperlink = worksheet.Hyperlinks.TryGetHyperlink(a1Index, out spreadsheetHyperlink);
+
 ````
 ````VB.NET
-        Dim canGetHyperlink As Boolean = worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1)
-        '
+Dim canGetHyperlink As Boolean = worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1)
+
 ````
 
 {{endregion}} 
@@ -203,11 +211,12 @@ __Example 5__ defines two indexes and then a cell range out of those indexes.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_8}} 
 
 ````C#
-            bool canGetHyperlinkExact = worksheet.Hyperlinks.TryGetHyperlinkExact(a1b3Range, out spreadsheetHyperlink);
+bool canGetHyperlinkExact = worksheet.Hyperlinks.TryGetHyperlinkExact(a1b3Range, out spreadsheetHyperlink);
+
 ````
 ````VB.NET
-        Dim canGetHyperlinkExact As Boolean = worksheet1.Hyperlinks.TryGetHyperlinkExact(a1b3Range, spreadsheetHyperlink1)
-        '
+Dim canGetHyperlinkExact As Boolean = worksheet1.Hyperlinks.TryGetHyperlinkExact(a1b3Range, spreadsheetHyperlink1)
+
 ````
 
 {{endregion}} 
@@ -224,18 +233,19 @@ __Example 10__ removes a hyperlink.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingHyperlink.vb region=radspreadprocessing-features-hyperlink_9}} 
 
 ````C#
-            SpreadsheetHyperlink spreadsheetHyperlink;
-            if (worksheet.Hyperlinks.TryGetHyperlink(a1Index, out spreadsheetHyperlink))
-            {
-                worksheet.Hyperlinks.Remove(spreadsheetHyperlink);
-            }
+SpreadsheetHyperlink spreadsheetHyperlink;
+if (worksheet.Hyperlinks.TryGetHyperlink(a1Index, out spreadsheetHyperlink))
+{
+    worksheet.Hyperlinks.Remove(spreadsheetHyperlink);
+}
+
 ````
 ````VB.NET
-        Dim spreadsheetHyperlink1 As SpreadsheetHyperlink
-        If worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1) Then
-            worksheet1.Hyperlinks.Remove(spreadsheetHyperlink1)
-        End If
-        '
+Dim spreadsheetHyperlink1 As SpreadsheetHyperlink
+If worksheet1.Hyperlinks.TryGetHyperlink(a1Index, spreadsheetHyperlink1) Then
+    worksheet1.Hyperlinks.Remove(spreadsheetHyperlink1)
+End If
+
 ````
 
 {{endregion}}

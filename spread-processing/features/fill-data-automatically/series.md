@@ -50,28 +50,22 @@ __Example 1__ creates a new worksheet that has the value *1* in cell *A1* and *3
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_0}} 
 
 ````C#
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue(1);
+worksheet.Cells[0, 1].SetValue(3);
+CellRange range = new CellRange(0, 0, 0, 5);
+worksheet.Cells[range].FillDataSeriesLinear(CellOrientation.Horizontal, 2);
 
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-
-            worksheet.Cells[0, 0].SetValue(1);
-            worksheet.Cells[0, 1].SetValue(3);
-
-            CellRange range = new CellRange(0, 0, 0, 5);
-            worksheet.Cells[range].FillDataSeriesLinear(CellOrientation.Horizontal, 2);
 ````
 ````VB.NET
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue(1)
+worksheet.Cells(0, 1).SetValue(3)
+Dim range As New CellRange(0, 0, 0, 5)
+worksheet.Cells(range).FillDataSeriesLinear(CellOrientation.Horizontal, 2)
 
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-
-        worksheet.Cells(0, 0).SetValue(1)
-        worksheet.Cells(0, 1).SetValue(3)
-
-        Dim range As New CellRange(0, 0, 0, 5)
-        worksheet.Cells(range).FillDataSeriesLinear(CellOrientation.Horizontal, 2)
-
-        '
 ````
 
 {{endregion}} 
@@ -95,34 +89,28 @@ __Example 2__ shows how to use __FillDataSeriesLinearTrend()__ to continue serie
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_1}} 
 
 ````C#
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue(1);
+worksheet.Cells[0, 1].SetValue(8);
+worksheet.Cells[0, 2].SetValue(3);
+worksheet.Cells[0, 3].SetValue(10);
+worksheet.Cells[0, 4].SetValue(5);
+CellRange range = new CellRange(0, 0, 0, 9);
+worksheet.Cells[range].FillDataSeriesLinearTrend(CellOrientation.Horizontal);
 
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-
-            worksheet.Cells[0, 0].SetValue(1);
-            worksheet.Cells[0, 1].SetValue(8);
-            worksheet.Cells[0, 2].SetValue(3);
-            worksheet.Cells[0, 3].SetValue(10);
-            worksheet.Cells[0, 4].SetValue(5);
-
-            CellRange range = new CellRange(0, 0, 0, 9);
-            worksheet.Cells[range].FillDataSeriesLinearTrend(CellOrientation.Horizontal);
 ````
 ````VB.NET
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue(1)
+worksheet.Cells(0, 1).SetValue(8)
+worksheet.Cells(0, 2).SetValue(3)
+worksheet.Cells(0, 3).SetValue(10)
+worksheet.Cells(0, 4).SetValue(5)
+Dim range As New CellRange(0, 0, 0, 9)
+worksheet.Cells(range).FillDataSeriesLinearTrend(CellOrientation.Horizontal)
 
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-
-        worksheet.Cells(0, 0).SetValue(1)
-        worksheet.Cells(0, 1).SetValue(8)
-        worksheet.Cells(0, 2).SetValue(3)
-        worksheet.Cells(0, 3).SetValue(10)
-        worksheet.Cells(0, 4).SetValue(5)
-
-        Dim range As New CellRange(0, 0, 0, 9)
-        worksheet.Cells(range).FillDataSeriesLinearTrend(CellOrientation.Horizontal)
-
-        '
 ````
 
 {{endregion}}
@@ -152,28 +140,22 @@ __Example 3__ shows how to use the __FillDataSeriesExponential()__ method to con
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_2}} 
 
 ````C#
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue(1);
+worksheet.Cells[0, 1].SetValue(3);
+CellRange range = new CellRange(0, 0, 0, 5);
+worksheet.Cells[range].FillDataSeriesExponential(CellOrientation.Horizontal, 4);
 
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-
-            worksheet.Cells[0, 0].SetValue(1);
-            worksheet.Cells[0, 1].SetValue(3);
-
-            CellRange range = new CellRange(0, 0, 0, 5);
-            worksheet.Cells[range].FillDataSeriesExponential(CellOrientation.Horizontal, 4);
 ````
 ````VB.NET
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue(1)
+worksheet.Cells(0, 1).SetValue(3)
+Dim range As New CellRange(0, 0, 0, 5)
+worksheet.Cells(range).FillDataSeriesExponential(CellOrientation.Horizontal, 4)
 
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-
-        worksheet.Cells(0, 0).SetValue(1)
-        worksheet.Cells(0, 1).SetValue(3)
-
-        Dim range As New CellRange(0, 0, 0, 5)
-        worksheet.Cells(range).FillDataSeriesExponential(CellOrientation.Horizontal, 4)
-
-        '
 ````
 
 {{endregion}}
@@ -197,32 +179,26 @@ __Example 4__ shows how to use the __FillDataSeriesLinearTrend()__ method to con
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_3}} 
 
 ````C#
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue(1);
+worksheet.Cells[0, 1].SetValue(5);
+worksheet.Cells[0, 2].SetValue(2);
+worksheet.Cells[0, 3].SetValue(9);
+CellRange range = new CellRange(0, 0, 0, 5);
+worksheet.Cells[range].FillDataSeriesExponentialTrend(CellOrientation.Horizontal);
 
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-
-            worksheet.Cells[0, 0].SetValue(1);
-            worksheet.Cells[0, 1].SetValue(5);
-            worksheet.Cells[0, 2].SetValue(2);
-            worksheet.Cells[0, 3].SetValue(9);
-
-            CellRange range = new CellRange(0, 0, 0, 5);
-            worksheet.Cells[range].FillDataSeriesExponentialTrend(CellOrientation.Horizontal);
 ````
 ````VB.NET
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue(1)
+worksheet.Cells(0, 1).SetValue(5)
+worksheet.Cells(0, 2).SetValue(2)
+worksheet.Cells(0, 3).SetValue(9)
+Dim range As New CellRange(0, 0, 0, 5)
+worksheet.Cells(range).FillDataSeriesExponentialTrend(CellOrientation.Horizontal)
 
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-
-        worksheet.Cells(0, 0).SetValue(1)
-        worksheet.Cells(0, 1).SetValue(5)
-        worksheet.Cells(0, 2).SetValue(2)
-        worksheet.Cells(0, 3).SetValue(9)
-
-        Dim range As New CellRange(0, 0, 0, 5)
-        worksheet.Cells(range).FillDataSeriesExponentialTrend(CellOrientation.Horizontal)
-
-        '
 ````
 
 {{endregion}} 
@@ -252,26 +228,20 @@ __Example 5__ shows how to construct series that use *5/28/2013* as a starting p
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_4}} 
 
 ````C#
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue(new DateTime(2013, 5, 28));
+CellRange range = new CellRange(0, 0, 0, 9);
+worksheet.Cells[range].FillDataSeriesDate(CellOrientation.Horizontal, DateUnitType.Weekday, 2);
 
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-
-            worksheet.Cells[0, 0].SetValue(new DateTime(2013, 5, 28));
-
-            CellRange range = new CellRange(0, 0, 0, 9);
-            worksheet.Cells[range].FillDataSeriesDate(CellOrientation.Horizontal, DateUnitType.Weekday, 2);
 ````
 ````VB.NET
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue(New DateTime(2013, 5, 28))
+Dim range As New CellRange(0, 0, 0, 9)
+worksheet.Cells(range).FillDataSeriesDate(CellOrientation.Horizontal, DateUnitType.Weekday, 2)
 
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-
-        worksheet.Cells(0, 0).SetValue(New DateTime(2013, 5, 28))
-
-        Dim range As New CellRange(0, 0, 0, 9)
-        worksheet.Cells(range).FillDataSeriesDate(CellOrientation.Horizontal, DateUnitType.Weekday, 2)
-
-        '
 ````
 
 {{endregion}} 
@@ -320,26 +290,20 @@ __Example 6__ shows how to use the __FillDataSeriesAuto()__ method for initial v
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_5}} 
 
 ````C#
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue("1st");
+CellRange range = new CellRange(0, 0, 0, 5);
+worksheet.Cells[range].FillDataSeriesAuto(CellOrientation.Horizontal, true);
 
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-
-            worksheet.Cells[0, 0].SetValue("1st");
-
-            CellRange range = new CellRange(0, 0, 0, 5);
-            worksheet.Cells[range].FillDataSeriesAuto(CellOrientation.Horizontal, true);
 ````
 ````VB.NET
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue("1st")
+Dim range As New CellRange(0, 0, 0, 5)
+worksheet.Cells(range).FillDataSeriesAuto(CellOrientation.Horizontal, True)
 
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-
-        worksheet.Cells(0, 0).SetValue("1st")
-
-        Dim range As New CellRange(0, 0, 0, 5)
-        worksheet.Cells(range).FillDataSeriesAuto(CellOrientation.Horizontal, True)
-
-        '
 ````
 
 {{endregion}} 
@@ -358,26 +322,20 @@ __Example 7__ that demonstrates the behavior of the __FillDataSeriesAuto()__ met
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingSeries.vb region=radspreadprocessing-features-fill-data-automatically-series_6}} 
 
 ````C#
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 5].SetValue("6th");
+CellRange range = new CellRange(0, 5, 0, 0);
+worksheet.Cells[range].FillDataSeriesAuto(CellOrientation.Horizontal, true);
 
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-
-            worksheet.Cells[0, 5].SetValue("6th");
-
-            CellRange range = new CellRange(0, 5, 0, 0);
-            worksheet.Cells[range].FillDataSeriesAuto(CellOrientation.Horizontal, true);
 ````
 ````VB.NET
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 5).SetValue("6th")
+Dim range As New CellRange(0, 5, 0, 0)
+worksheet.Cells(range).FillDataSeriesAuto(CellOrientation.Horizontal, True)
 
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-
-        worksheet.Cells(0, 5).SetValue("6th")
-
-        Dim range As New CellRange(0, 5, 0, 0)
-        worksheet.Cells(range).FillDataSeriesAuto(CellOrientation.Horizontal, True)
-
-        '
 ````
 
 {{endregion}}

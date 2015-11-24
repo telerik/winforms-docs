@@ -152,21 +152,22 @@ __Example 1__ shows hot to create any value validation rule and set it to a cell
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_0}} 
 
 ````C#
-            AnyValueDataValidationRuleContext context = new AnyValueDataValidationRuleContext();
-            context.InputMessageContent = "Sample input message content";
-            context.InputMessageTitle = "Sample input message title";
-            AnyValueDataValidationRule rule = new AnyValueDataValidationRule(context);
+            
+AnyValueDataValidationRuleContext context = new AnyValueDataValidationRuleContext();
+context.InputMessageContent = "Sample input message content";
+context.InputMessageTitle = "Sample input message title";
+AnyValueDataValidationRule rule = new AnyValueDataValidationRule(context);
+            
+worksheet.Cells[0, 0].SetDataValidationRule(rule);
 
-            worksheet.Cells[0, 0].SetDataValidationRule(rule);
 ````
 ````VB.NET
-        Dim context As New AnyValueDataValidationRuleContext()
-        context.InputMessageContent = "Sample input message content"
-        context.InputMessageTitle = "Sample input message title"
-        Dim rule As New AnyValueDataValidationRule(context)
+Dim context As New AnyValueDataValidationRuleContext()
+context.InputMessageContent = "Sample input message content"
+context.InputMessageTitle = "Sample input message title"
+Dim rule As New AnyValueDataValidationRule(context)
+worksheet.Cells(0, 0).SetDataValidationRule(rule)
 
-        worksheet.Cells(0, 0).SetDataValidationRule(rule)
-        '
 ````
 
 {{endregion}} 
@@ -190,41 +191,40 @@ The code snippet in __Example 2__ shows how to create a whole number data valida
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_1}} 
 
 ````C#
-            CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+            
+CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+            
+NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
+context.InputMessageTitle = "Restricted input";
+context.InputMessageContent = "The input is restricted to whole number values between 0 and 100";
+context.ErrorStyle = ErrorStyle.Stop;
+context.ErrorAlertTitle = "Wrong value";
+context.ErrorAlertContent = "The entered value is not valid. Allowed values are in the range between 0 and 100!";
+context.IgnoreBlank = false;
+context.ComparisonOperator = ComparisonOperator.Between;
+context.Argument1 = "0";
+context.Argument2 = "100";
+            
+WholeNumberDataValidationRule rule = new WholeNumberDataValidationRule(context);
+        
+worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 
-            NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
-            context.InputMessageTitle = "Restricted input";
-            context.InputMessageContent = "The input is restricted to whole number values between 0 and 100";
-            context.ErrorStyle = ErrorStyle.Stop;
-            context.ErrorAlertTitle = "Wrong value";
-            context.ErrorAlertContent = "The entered value is not valid. Allowed values are in the range between 0 and 100!";
-            context.IgnoreBlank = false;
-            context.ComparisonOperator = ComparisonOperator.Between;
-            context.Argument1 = "0";
-            context.Argument2 = "100";
-
-            WholeNumberDataValidationRule rule = new WholeNumberDataValidationRule(context);
-
-            worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 ````
 ````VB.NET
-        Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
+Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
+Dim context As New NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
+context.InputMessageTitle = "Restricted input"
+context.InputMessageContent = "The input is restricted to whole number values between 0 and 100"
+context.ErrorStyle = ErrorStyle.[Stop]
+context.ErrorAlertTitle = "Wrong value"
+context.ErrorAlertContent = "The entered value is not valid. Allowed values are in the range between 0 and 100!"
+context.IgnoreBlank = False
+context.ComparisonOperator = ComparisonOperator.Between
+context.Argument1 = "0"
+context.Argument2 = "100"
+Dim rule As New WholeNumberDataValidationRule(context)
+worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
 
-        Dim context As New NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
-        context.InputMessageTitle = "Restricted input"
-        context.InputMessageContent = "The input is restricted to whole number values between 0 and 100"
-        context.ErrorStyle = ErrorStyle.[Stop]
-        context.ErrorAlertTitle = "Wrong value"
-        context.ErrorAlertContent = "The entered value is not valid. Allowed values are in the range between 0 and 100!"
-        context.IgnoreBlank = False
-        context.ComparisonOperator = ComparisonOperator.Between
-        context.Argument1 = "0"
-        context.Argument2 = "100"
-
-        Dim rule As New WholeNumberDataValidationRule(context)
-
-        worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
-        '
 ````
 
 {{endregion}} 
@@ -249,37 +249,36 @@ The code snippet in __Example 3__ shows how to create a whole number data valida
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_2}} 
 
 ````C#
-            CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+            
+CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+            
+NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
+context.InputMessageTitle = "Restricted input";
+context.InputMessageContent = "The input is restricted to whole number values greater than 100";
+context.ErrorStyle = ErrorStyle.Stop;
+context.ErrorAlertTitle = "Wrong value";
+context.ErrorAlertContent = "The entered value is not valid. Allowed values are all whole number values greater than 100!";
+context.ComparisonOperator = ComparisonOperator.GreaterThan;
+context.Argument1 = "100";
+        
+WholeNumberDataValidationRule rule = new WholeNumberDataValidationRule(context);
+        
+worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 
-            NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
-            context.InputMessageTitle = "Restricted input";
-            context.InputMessageContent = "The input is restricted to whole number values greater than 100";
-            context.ErrorStyle = ErrorStyle.Stop;
-            context.ErrorAlertTitle = "Wrong value";
-            context.ErrorAlertContent = "The entered value is not valid. Allowed values are all whole number values greater than 100!";
-            context.ComparisonOperator = ComparisonOperator.GreaterThan;
-            context.Argument1 = "100";
-
-            WholeNumberDataValidationRule rule = new WholeNumberDataValidationRule(context);
-
-            worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 ````
 ````VB.NET
-        Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
+Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
+Dim context As New NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
+context.InputMessageTitle = "Restricted input"
+context.InputMessageContent = "The input is restricted to whole number values greater than 100"
+context.ErrorStyle = ErrorStyle.[Stop]
+context.ErrorAlertTitle = "Wrong value"
+context.ErrorAlertContent = "The entered value is not valid. Allowed values are all whole number values greater than 100!"
+context.ComparisonOperator = ComparisonOperator.GreaterThan
+context.Argument1 = "100"
+Dim rule As New WholeNumberDataValidationRule(context)
+worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
 
-        Dim context As New NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
-        context.InputMessageTitle = "Restricted input"
-        context.InputMessageContent = "The input is restricted to whole number values greater than 100"
-        context.ErrorStyle = ErrorStyle.[Stop]
-        context.ErrorAlertTitle = "Wrong value"
-        context.ErrorAlertContent = "The entered value is not valid. Allowed values are all whole number values greater than 100!"
-        context.ComparisonOperator = ComparisonOperator.GreaterThan
-        context.Argument1 = "100"
-
-        Dim rule As New WholeNumberDataValidationRule(context)
-
-        worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
-        '
 ````
 
 {{endregion}} 
@@ -292,47 +291,44 @@ You are allowed to enter any valid [formula]({%slug winforms/spread-processing/f
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_3}} 
 
 ````C#
-            // The value of A1
-            worksheet.Cells[0, 0].SetValue(60);
-            // The value of B1
-            worksheet.Cells[0, 1].SetValue(40);
+// The value of A1
+worksheet.Cells[0, 0].SetValue(60);
+// The value of B1
+worksheet.Cells[0, 1].SetValue(40);
+            
+CellIndex dataValidationRuleCellIndex = new CellIndex(1, 0);
+            
+NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
+context.InputMessageTitle = "Restricted input";
+context.InputMessageContent = "The input is restricted to whole number values greater than 100";
+context.ErrorStyle = ErrorStyle.Warning;
+context.ErrorAlertTitle = "Wrong value";
+context.ErrorAlertContent = "The entered value is not valid. Allowed values are all whole number values greater than 100!";
+context.ComparisonOperator = ComparisonOperator.LessThan;
+context.Argument1 = "=Sum(A1+B1)";
+        
+WholeNumberDataValidationRule rule = new WholeNumberDataValidationRule(context);
+            
+worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 
-            CellIndex dataValidationRuleCellIndex = new CellIndex(1, 0);
-
-            NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
-            context.InputMessageTitle = "Restricted input";
-            context.InputMessageContent = "The input is restricted to whole number values greater than 100";
-            context.ErrorStyle = ErrorStyle.Warning;
-            context.ErrorAlertTitle = "Wrong value";
-            context.ErrorAlertContent = "The entered value is not valid. Allowed values are all whole number values greater than 100!";
-            context.ComparisonOperator = ComparisonOperator.LessThan;
-            context.Argument1 = "=Sum(A1+B1)";
-
-            WholeNumberDataValidationRule rule = new WholeNumberDataValidationRule(context);
-
-            worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 ````
 ````VB.NET
-        ' The value of A1
-        worksheet.Cells(0, 0).SetValue(60)
-        ' The value of B1
-        worksheet.Cells(0, 1).SetValue(40)
+' The value of A1
+worksheet.Cells(0, 0).SetValue(60)
+' The value of B1
+worksheet.Cells(0, 1).SetValue(40)
+Dim dataValidationRuleCellIndex As New CellIndex(1, 0)
+Dim context As New NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
+context.InputMessageTitle = "Restricted input"
+context.InputMessageContent = "The input is restricted to whole number values greater than 100"
+context.ErrorStyle = ErrorStyle.Warning
+context.ErrorAlertTitle = "Wrong value"
+context.ErrorAlertContent = "The entered value is not valid. Allowed values are all whole number values greater than 100!"
+context.ComparisonOperator = ComparisonOperator.LessThan
+context.Argument1 = "=Sum(A1+B1)"
+Dim rule As New WholeNumberDataValidationRule(context)
+worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
 
-        Dim dataValidationRuleCellIndex As New CellIndex(1, 0)
-
-        Dim context As New NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
-        context.InputMessageTitle = "Restricted input"
-        context.InputMessageContent = "The input is restricted to whole number values greater than 100"
-        context.ErrorStyle = ErrorStyle.Warning
-        context.ErrorAlertTitle = "Wrong value"
-        context.ErrorAlertContent = "The entered value is not valid. Allowed values are all whole number values greater than 100!"
-        context.ComparisonOperator = ComparisonOperator.LessThan
-        context.Argument1 = "=Sum(A1+B1)"
-
-        Dim rule As New WholeNumberDataValidationRule(context)
-
-        worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
-        '
 ````
 
 {{endregion}} 
@@ -357,39 +353,37 @@ __Example 5__ demonstrates how to create a decimal data validation rule that res
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_4}} 
 
 ````C#
-            CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+            
+CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+            
+NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(this.worksheet, dataValidationRuleCellIndex);
+context.InputMessageTitle = "Restricted input";
+context.InputMessageContent = "The input is restricted to decimal number values out of the range between 0 and 100";
+context.ErrorStyle = ErrorStyle.Stop;
+context.ErrorAlertTitle = "Wrong value";
+context.ErrorAlertContent = "The entered value is not valid. Allowed values are all decimal number values out of the range between 0 and 100!";
+context.ComparisonOperator = ComparisonOperator.Between;
+context.Argument1 = "0";
+context.Argument2 = "100";
+            
+DecimalDataValidationRule rule = new DecimalDataValidationRule(context);
+this.worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 
-            NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(this.worksheet, dataValidationRuleCellIndex);
-            context.InputMessageTitle = "Restricted input";
-            context.InputMessageContent = "The input is restricted to decimal number values out of the range between 0 and 100";
-            context.ErrorStyle = ErrorStyle.Stop;
-            context.ErrorAlertTitle = "Wrong value";
-            context.ErrorAlertContent = "The entered value is not valid. Allowed values are all decimal number values out of the range between 0 and 100!";
-            context.ComparisonOperator = ComparisonOperator.Between;
-            context.Argument1 = "0";
-            context.Argument2 = "100";
-
-            DecimalDataValidationRule rule = new DecimalDataValidationRule(context);
-
-            this.worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 ````
 ````VB.NET
-        Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
+Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
+Dim context As New NumberDataValidationRuleContext(Me.worksheet, dataValidationRuleCellIndex)
+context.InputMessageTitle = "Restricted input"
+context.InputMessageContent = "The input is restricted to decimal number values out of the range between 0 and 100"
+context.ErrorStyle = ErrorStyle.[Stop]
+context.ErrorAlertTitle = "Wrong value"
+context.ErrorAlertContent = "The entered value is not valid. Allowed values are all decimal number values out of the range between 0 and 100!"
+context.ComparisonOperator = ComparisonOperator.Between
+context.Argument1 = "0"
+context.Argument2 = "100"
+Dim rule As New DecimalDataValidationRule(context)
+Me.worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
 
-        Dim context As New NumberDataValidationRuleContext(Me.worksheet, dataValidationRuleCellIndex)
-        context.InputMessageTitle = "Restricted input"
-        context.InputMessageContent = "The input is restricted to decimal number values out of the range between 0 and 100"
-        context.ErrorStyle = ErrorStyle.[Stop]
-        context.ErrorAlertTitle = "Wrong value"
-        context.ErrorAlertContent = "The entered value is not valid. Allowed values are all decimal number values out of the range between 0 and 100!"
-        context.ComparisonOperator = ComparisonOperator.Between
-        context.Argument1 = "0"
-        context.Argument2 = "100"
-
-        Dim rule As New DecimalDataValidationRule(context)
-
-        Me.worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
-        '
 ````
 
 {{endregion}} 
@@ -406,37 +400,33 @@ __Example 6__ shows the creation of a list data validation rule that restricts t
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_5}} 
 
 ````C#
-            CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+ListDataValidationRuleContext context = new ListDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
+context.InputMessageTitle = "Restricted input";
+context.InputMessageContent = "The input is restricted to the week days.";
+context.ErrorStyle = ErrorStyle.Stop;
+context.ErrorAlertTitle = "Wrong value";
+context.ErrorAlertContent = "The entered value is not valid. Allowed values are the week days!";
+context.InCellDropdown = true;
+context.Argument1 = "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday";
+ListDataValidationRule rule = new ListDataValidationRule(context);
+            
+worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 
-            ListDataValidationRuleContext context = new ListDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
-            context.InputMessageTitle = "Restricted input";
-            context.InputMessageContent = "The input is restricted to the week days.";
-            context.ErrorStyle = ErrorStyle.Stop;
-            context.ErrorAlertTitle = "Wrong value";
-            context.ErrorAlertContent = "The entered value is not valid. Allowed values are the week days!";
-            context.InCellDropdown = true;
-            context.Argument1 = "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday";
-
-            ListDataValidationRule rule = new ListDataValidationRule(context);
-
-            worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 ````
 ````VB.NET
-        Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
+Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
+Dim context As New ListDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
+context.InputMessageTitle = "Restricted input"
+context.InputMessageContent = "The input is restricted to the week days."
+context.ErrorStyle = ErrorStyle.[Stop]
+context.ErrorAlertTitle = "Wrong value"
+context.ErrorAlertContent = "The entered value is not valid. Allowed values are the week days!"
+context.InCellDropdown = True
+context.Argument1 = "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday"
+Dim rule As New ListDataValidationRule(context)
+worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
 
-        Dim context As New ListDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
-        context.InputMessageTitle = "Restricted input"
-        context.InputMessageContent = "The input is restricted to the week days."
-        context.ErrorStyle = ErrorStyle.[Stop]
-        context.ErrorAlertTitle = "Wrong value"
-        context.ErrorAlertContent = "The entered value is not valid. Allowed values are the week days!"
-        context.InCellDropdown = True
-        context.Argument1 = "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday"
-
-        Dim rule As New ListDataValidationRule(context)
-
-        worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
-        '
 ````
 
 {{endregion}} 
@@ -460,39 +450,38 @@ __Example 7__ shows how to restrict the user input to the dates in the range bet
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_6}} 
 
 ````C#
-            CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+            
+CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+            
+NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
+context.InputMessageTitle = "Restricted input";
+context.InputMessageContent = "The input is restricted to dates in the range from 12 February 2013 to 22 May 2017.";
+context.ErrorStyle = ErrorStyle.Stop;
+context.ErrorAlertTitle = "Wrong value";
+context.ErrorAlertContent = "The entered value is not valid. Allowed values are all dates between 12 February 2013 and 22 May 2017";
+context.ComparisonOperator = ComparisonOperator.Between;
+context.Argument1 = new DateTime(2013, 2, 12).ToShortDateString();
+context.Argument2 = new DateTime(2017, 5, 22).ToShortDateString();
+            
+DateDataValidationRule rule = new DateDataValidationRule(context);
+            
+worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 
-            NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
-            context.InputMessageTitle = "Restricted input";
-            context.InputMessageContent = "The input is restricted to dates in the range from 12 February 2013 to 22 May 2017.";
-            context.ErrorStyle = ErrorStyle.Stop;
-            context.ErrorAlertTitle = "Wrong value";
-            context.ErrorAlertContent = "The entered value is not valid. Allowed values are all dates between 12 February 2013 and 22 May 2017";
-            context.ComparisonOperator = ComparisonOperator.Between;
-            context.Argument1 = new DateTime(2013, 2, 12).ToShortDateString();
-            context.Argument2 = new DateTime(2017, 5, 22).ToShortDateString();
-
-            DateDataValidationRule rule = new DateDataValidationRule(context);
-
-            worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 ````
 ````VB.NET
-        Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
+Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
+Dim context As New NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
+context.InputMessageTitle = "Restricted input"
+context.InputMessageContent = "The input is restricted to dates in the range from 12 February 2013 to 22 May 2017."
+context.ErrorStyle = ErrorStyle.[Stop]
+context.ErrorAlertTitle = "Wrong value"
+context.ErrorAlertContent = "The entered value is not valid. Allowed values are all dates between 12 February 2013 and 22 May 2017"
+context.ComparisonOperator = ComparisonOperator.Between
+context.Argument1 = New DateTime(2013, 2, 12).ToShortDateString()
+context.Argument2 = New DateTime(2017, 5, 22).ToShortDateString()
+Dim rule As New DateDataValidationRule(context)
+worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
 
-        Dim context As New NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
-        context.InputMessageTitle = "Restricted input"
-        context.InputMessageContent = "The input is restricted to dates in the range from 12 February 2013 to 22 May 2017."
-        context.ErrorStyle = ErrorStyle.[Stop]
-        context.ErrorAlertTitle = "Wrong value"
-        context.ErrorAlertContent = "The entered value is not valid. Allowed values are all dates between 12 February 2013 and 22 May 2017"
-        context.ComparisonOperator = ComparisonOperator.Between
-        context.Argument1 = New DateTime(2013, 2, 12).ToShortDateString()
-        context.Argument2 = New DateTime(2017, 5, 22).ToShortDateString()
-
-        Dim rule As New DateDataValidationRule(context)
-
-        worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
-        '
 ````
 
 {{endregion}}
@@ -509,39 +498,38 @@ The code snippet in __Example 8__ shows how to restrict the user input to the ra
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_7}} 
 
 ````C#
-            CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+            
+CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+        
+NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(this.worksheet, dataValidationRuleCellIndex);
+context.InputMessageTitle = "Restricted input";
+context.InputMessageContent = "The input is restricted to times in the range from 10:25 AM to 3:45 PM.";
+context.ErrorStyle = ErrorStyle.Stop;
+context.ErrorAlertTitle = "Wrong value";
+context.ErrorAlertContent = "The entered value is not valid. Allowed values are all times between 10:25 AM to 3:45 PM.";
+context.ComparisonOperator = ComparisonOperator.Between;
+context.Argument1 = new DateTime(2015, 2, 2, 10, 25, 0).ToShortTimeString();
+context.Argument2 = new DateTime(2015, 2, 2, 15, 45, 0).ToShortTimeString();
+            
+TimeDataValidationRule rule = new TimeDataValidationRule(context);
+            
+this.worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 
-            NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(this.worksheet, dataValidationRuleCellIndex);
-            context.InputMessageTitle = "Restricted input";
-            context.InputMessageContent = "The input is restricted to times in the range from 10:25 AM to 3:45 PM.";
-            context.ErrorStyle = ErrorStyle.Stop;
-            context.ErrorAlertTitle = "Wrong value";
-            context.ErrorAlertContent = "The entered value is not valid. Allowed values are all times between 10:25 AM to 3:45 PM.";
-            context.ComparisonOperator = ComparisonOperator.Between;
-            context.Argument1 = new DateTime(2015, 2, 2, 10, 25, 0).ToShortTimeString();
-            context.Argument2 = new DateTime(2015, 2, 2, 15, 45, 0).ToShortTimeString();
-
-            TimeDataValidationRule rule = new TimeDataValidationRule(context);
-
-            this.worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 ````
 ````VB.NET
-        Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
+Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
+Dim context As New NumberDataValidationRuleContext(Me.worksheet, dataValidationRuleCellIndex)
+context.InputMessageTitle = "Restricted input"
+context.InputMessageContent = "The input is restricted to times in the range from 10:25 AM to 3:45 PM."
+context.ErrorStyle = ErrorStyle.[Stop]
+context.ErrorAlertTitle = "Wrong value"
+context.ErrorAlertContent = "The entered value is not valid. Allowed values are all times between 10:25 AM to 3:45 PM."
+context.ComparisonOperator = ComparisonOperator.Between
+context.Argument1 = New DateTime(2015, 2, 2, 10, 25, 0).ToShortTimeString()
+context.Argument2 = New DateTime(2015, 2, 2, 15, 45, 0).ToShortTimeString()
+Dim rule As New TimeDataValidationRule(context)
+Me.worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
 
-        Dim context As New NumberDataValidationRuleContext(Me.worksheet, dataValidationRuleCellIndex)
-        context.InputMessageTitle = "Restricted input"
-        context.InputMessageContent = "The input is restricted to times in the range from 10:25 AM to 3:45 PM."
-        context.ErrorStyle = ErrorStyle.[Stop]
-        context.ErrorAlertTitle = "Wrong value"
-        context.ErrorAlertContent = "The entered value is not valid. Allowed values are all times between 10:25 AM to 3:45 PM."
-        context.ComparisonOperator = ComparisonOperator.Between
-        context.Argument1 = New DateTime(2015, 2, 2, 10, 25, 0).ToShortTimeString()
-        context.Argument2 = New DateTime(2015, 2, 2, 15, 45, 0).ToShortTimeString()
-
-        Dim rule As New TimeDataValidationRule(context)
-
-        Me.worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
-        '
 ````
 
 {{endregion}} 
@@ -558,39 +546,37 @@ __Example 9__ shows how to restrict the user input to text with length between 5
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_8}} 
 
 ````C#
-            CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+        
+CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+        
+NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
+context.InputMessageTitle = "Restricted input";
+context.InputMessageContent = "The input is restricted to text with length between 5 and 10 symbols";
+context.ErrorStyle = ErrorStyle.Stop;
+context.ErrorAlertTitle = "Wrong value";
+context.ErrorAlertContent = "The entered value is not valid. It is allowed to enter only text with length between 5 and 10 symbols.";
+context.ComparisonOperator = ComparisonOperator.Between;
+context.Argument1 = "5";
+context.Argument2 = "10";
+            
+TextLengthDataValidationRule rule = new TextLengthDataValidationRule(context);
+worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 
-            NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
-            context.InputMessageTitle = "Restricted input";
-            context.InputMessageContent = "The input is restricted to text with length between 5 and 10 symbols";
-            context.ErrorStyle = ErrorStyle.Stop;
-            context.ErrorAlertTitle = "Wrong value";
-            context.ErrorAlertContent = "The entered value is not valid. It is allowed to enter only text with length between 5 and 10 symbols.";
-            context.ComparisonOperator = ComparisonOperator.Between;
-            context.Argument1 = "5";
-            context.Argument2 = "10";
-
-            TextLengthDataValidationRule rule = new TextLengthDataValidationRule(context);
-
-            worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 ````
 ````VB.NET
-        Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
+Dim dataValidationRuleCellIndex As New CellIndex(0, 0)
+Dim context As New NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
+context.InputMessageTitle = "Restricted input"
+context.InputMessageContent = "The input is restricted to text with length between 5 and 10 symbols"
+context.ErrorStyle = ErrorStyle.[Stop]
+context.ErrorAlertTitle = "Wrong value"
+context.ErrorAlertContent = "The entered value is not valid. It is allowed to enter only text with length between 5 and 10 symbols."
+context.ComparisonOperator = ComparisonOperator.Between
+context.Argument1 = "5"
+context.Argument2 = "10"
+Dim rule As New TextLengthDataValidationRule(context)
+worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
 
-        Dim context As New NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
-        context.InputMessageTitle = "Restricted input"
-        context.InputMessageContent = "The input is restricted to text with length between 5 and 10 symbols"
-        context.ErrorStyle = ErrorStyle.[Stop]
-        context.ErrorAlertTitle = "Wrong value"
-        context.ErrorAlertContent = "The entered value is not valid. It is allowed to enter only text with length between 5 and 10 symbols."
-        context.ComparisonOperator = ComparisonOperator.Between
-        context.Argument1 = "5"
-        context.Argument2 = "10"
-
-        Dim rule As New TextLengthDataValidationRule(context)
-
-        worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
-        '
 ````
 
 {{endregion}} 
@@ -607,35 +593,34 @@ The code snippet in __Example 10__ shows how to restrict the user input to value
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_9}} 
 
 ````C#
-            CellIndex dataValidationRuleCellIndex = new CellIndex(1, 0);
+            
+CellIndex dataValidationRuleCellIndex = new CellIndex(1, 0);
+            
+SingleArgumentDataValidationRuleContext context = new SingleArgumentDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
+context.InputMessageTitle = "Restricted input";
+context.InputMessageContent = "The input is restricted to values that are greater or equal to the sum of the values in the cells A1 and B1.";
+context.ErrorStyle = ErrorStyle.Stop;
+context.ErrorAlertTitle = "Wrong value";
+context.ErrorAlertContent = "The entered value is not valid. It is allowed to enter only values that are greater or equal to the sum of the values in the cells A1 and B1";
+context.Argument1 = "=A2=Sum(A1, B1)";
+        
+CustomDataValidationRule rule = new CustomDataValidationRule(context);
+        
+worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 
-            SingleArgumentDataValidationRuleContext context = new SingleArgumentDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
-            context.InputMessageTitle = "Restricted input";
-            context.InputMessageContent = "The input is restricted to values that are greater or equal to the sum of the values in the cells A1 and B1.";
-            context.ErrorStyle = ErrorStyle.Stop;
-            context.ErrorAlertTitle = "Wrong value";
-            context.ErrorAlertContent = "The entered value is not valid. It is allowed to enter only values that are greater or equal to the sum of the values in the cells A1 and B1";
-            context.Argument1 = "=A2=Sum(A1, B1)";
-
-            CustomDataValidationRule rule = new CustomDataValidationRule(context);
-
-            worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 ````
 ````VB.NET
-        Dim dataValidationRuleCellIndex As New CellIndex(1, 0)
+Dim dataValidationRuleCellIndex As New CellIndex(1, 0)
+Dim context As New SingleArgumentDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
+context.InputMessageTitle = "Restricted input"
+context.InputMessageContent = "The input is restricted to values that are greater or equal to the sum of the values in the cells A1 and B1."
+context.ErrorStyle = ErrorStyle.[Stop]
+context.ErrorAlertTitle = "Wrong value"
+context.ErrorAlertContent = "The entered value is not valid. It is allowed to enter only values that are greater or equal to the sum of the values in the cells A1 and B1"
+context.Argument1 = "=A2=Sum(A1, B1)"
+Dim rule As New CustomDataValidationRule(context)
+worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
 
-        Dim context As New SingleArgumentDataValidationRuleContext(worksheet, dataValidationRuleCellIndex)
-        context.InputMessageTitle = "Restricted input"
-        context.InputMessageContent = "The input is restricted to values that are greater or equal to the sum of the values in the cells A1 and B1."
-        context.ErrorStyle = ErrorStyle.[Stop]
-        context.ErrorAlertTitle = "Wrong value"
-        context.ErrorAlertContent = "The entered value is not valid. It is allowed to enter only values that are greater or equal to the sum of the values in the cells A1 and B1"
-        context.Argument1 = "=A2=Sum(A1, B1)"
-
-        Dim rule As New CustomDataValidationRule(context)
-
-        worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
-        '
 ````
 
 {{endregion}} 
@@ -652,20 +637,22 @@ __Example 11__ demonstrates how to evaluate a rule using the __Evaluate()__ meth
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingDataValidation.vb region=radspreadprocessing-features-data-validation_10}} 
 
 ````C#
-            IEnumerable<string> stringItems = new List<string>() { "test", "1%", "1.0" };
-            IEnumerable<DateGroupItem> dateItems = new List<DateGroupItem>()
-            { 
-                new DateGroupItem(2013),
-                new DateGroupItem(2014, 3)
-            };
+            
+IEnumerable<string> stringItems = new List<string>() { "test", "1%", "1.0" };
+IEnumerable<DateGroupItem> dateItems = new List<DateGroupItem>()
+{
+    new DateGroupItem(2013),
+    new DateGroupItem(2014, 3)
+};
+            
+ValuesCollectionFilter filter = new ValuesCollectionFilter(0, stringItems, dateItems, true);
 
-            ValuesCollectionFilter filter = new ValuesCollectionFilter(0, stringItems, dateItems, true);
 ````
 ````VB.NET
-        Dim stringItems As IEnumerable(Of String) = New List(Of String)() From {"test", "1%", "1.0"}
-        Dim dateItems As IEnumerable(Of DateGroupItem) = New List(Of DateGroupItem)() From {New DateGroupItem(2013), New DateGroupItem(2014, 3)}
-        Dim filter As New ValuesCollectionFilter(0, stringItems, dateItems, True)
-        '
+Dim stringItems As IEnumerable(Of String) = New List(Of String)() From {"test", "1%", "1.0"}
+Dim dateItems As IEnumerable(Of DateGroupItem) = New List(Of DateGroupItem)() From {New DateGroupItem(2013), New DateGroupItem(2014, 3)}
+Dim filter As New ValuesCollectionFilter(0, stringItems, dateItems, True)
+
 ````
 
 {{endregion}} 

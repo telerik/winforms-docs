@@ -103,15 +103,16 @@ __Example 1__ shows what including the __Number__ group looks like.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.vb region=radspreadprocessing-features-styling-cell-styles_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            CellStyle tempStyle = workbook.Styles["Bad"];
-            tempStyle.IncludeNumber = true;
+Workbook workbook = new Workbook();
+CellStyle tempStyle = workbook.Styles["Bad"];
+tempStyle.IncludeNumber = true;
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim tempStyle As CellStyle = workbook.Styles("Bad")
-        tempStyle.IncludeNumber = True
-        '
+Dim workbook As New Workbook()
+Dim tempStyle As CellStyle = workbook.Styles("Bad")
+tempStyle.IncludeNumber = True
+
 ````
 
 {{endregion}} 
@@ -132,61 +133,46 @@ __Example 2__ creates a new style and applies it to cell *A1*.
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.vb region=radspreadprocessing-features-styling-cell-styles_1}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add();
+CellStyle cellStyle = workbook.Styles.Add("My style", CellStyleCategory.Custom);
+cellStyle.BeginUpdate();
+CellBorder border = new CellBorder(CellBorderStyle.DashDotDot, new ThemableColor(Colors.Red));
+cellStyle.LeftBorder = border;
+cellStyle.TopBorder = border;
+cellStyle.RightBorder = border;
+cellStyle.BottomBorder = border;
+ThemableColor patternColor = new ThemableColor(ThemeColorType.Accent1);
+ThemableColor backgroundColor = new ThemableColor(ThemeColorType.Accent5, ColorShadeType.Shade2);
+IFill fill = new PatternFill(PatternType.Gray75Percent, patternColor, backgroundColor);
+cellStyle.Fill = fill;
+cellStyle.HorizontalAlignment = RadHorizontalAlignment.Left;
+cellStyle.VerticalAlignment = RadVerticalAlignment.Center;
+cellStyle.EndUpdate();
+workbook.ActiveWorksheet.Cells[0, 0].SetStyleName("My style");
 
-            CellStyle cellStyle = workbook.Styles.Add("My style", CellStyleCategory.Custom);
-
-            cellStyle.BeginUpdate();
-
-            CellBorder border = new CellBorder(CellBorderStyle.DashDotDot, new ThemableColor(Colors.Red));
-            cellStyle.LeftBorder = border;
-            cellStyle.TopBorder = border;
-            cellStyle.RightBorder = border;
-            cellStyle.BottomBorder = border;
-
-            ThemableColor patternColor = new ThemableColor(ThemeColorType.Accent1);
-            ThemableColor backgroundColor = new ThemableColor(ThemeColorType.Accent5, ColorShadeType.Shade2);
-            IFill fill = new PatternFill(PatternType.Gray75Percent, patternColor, backgroundColor);
-            cellStyle.Fill = fill;
-
-            cellStyle.HorizontalAlignment = RadHorizontalAlignment.Left;
-            cellStyle.VerticalAlignment = RadVerticalAlignment.Center;
-
-            cellStyle.EndUpdate();
-
-            workbook.ActiveWorksheet.Cells[0, 0].SetStyleName("My style");
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+workbook.Worksheets.Add()
+Dim cellStyle As CellStyle = workbook.Styles.Add("My style", CellStyleCategory.[Custom])
+cellStyle.BeginUpdate()
+Dim border As New CellBorder(CellBorderStyle.DashDotDot, New ThemableColor(Colors.Red))
+cellStyle.LeftBorder = border
+cellStyle.TopBorder = border
+cellStyle.RightBorder = border
+cellStyle.BottomBorder = border
+Dim patternColor As New ThemableColor(ThemeColorType.Accent1)
+Dim shadeType As System.Nullable(Of ColorShadeType)
+shadeType = ColorShadeType.Shade2
+Dim backgroundColor As New ThemableColor(ThemeColorType.Accent5, shadeType)
+Dim fill As IFill = New PatternFill(PatternType.Gray75Percent, patternColor, backgroundColor)
+cellStyle.Fill = fill
+cellStyle.HorizontalAlignment = RadHorizontalAlignment.Left
+cellStyle.VerticalAlignment = RadVerticalAlignment.Center
+cellStyle.EndUpdate()
+workbook.ActiveWorksheet.Cells(0, 0).SetStyleName("My style")
 
-        Dim cellStyle As CellStyle = workbook.Styles.Add("My style", CellStyleCategory.[Custom])
-
-        cellStyle.BeginUpdate()
-
-        Dim border As New CellBorder(CellBorderStyle.DashDotDot, New ThemableColor(Colors.Red))
-        cellStyle.LeftBorder = border
-        cellStyle.TopBorder = border
-        cellStyle.RightBorder = border
-        cellStyle.BottomBorder = border
-
-        Dim patternColor As New ThemableColor(ThemeColorType.Accent1)
-
-        Dim shadeType As System.Nullable(Of ColorShadeType)
-        shadeType = ColorShadeType.Shade2
-        Dim backgroundColor As New ThemableColor(ThemeColorType.Accent5, shadeType)
-
-        Dim fill As IFill = New PatternFill(PatternType.Gray75Percent, patternColor, backgroundColor)
-        cellStyle.Fill = fill
-
-        cellStyle.HorizontalAlignment = RadHorizontalAlignment.Left
-        cellStyle.VerticalAlignment = RadVerticalAlignment.Center
-
-        cellStyle.EndUpdate()
-
-        workbook.ActiveWorksheet.Cells(0, 0).SetStyleName("My style")
-        '
 ````
 
 {{endregion}} 
@@ -204,33 +190,26 @@ __Example 3__ obtains the Bad style from the styles collection of a workbook and
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.vb region=radspreadprocessing-features-styling-cell-styles_2}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add();
+CellStyle style = workbook.Styles["Bad"];
+style.BeginUpdate();
+style.Fill = new PatternFill(PatternType.DiagonalCrosshatch, Colors.Red, Colors.Transparent);
+style.FontSize = UnitHelper.PointToDip(20);
+style.ForeColor = new ThemableColor(Colors.Black);
+style.EndUpdate();
 
-            CellStyle style = workbook.Styles["Bad"];
-
-            style.BeginUpdate();
-
-            style.Fill = new PatternFill(PatternType.DiagonalCrosshatch, Colors.Red, Colors.Transparent);
-            style.FontSize = UnitHelper.PointToDip(20);
-            style.ForeColor = new ThemableColor(Colors.Black);
-
-            style.EndUpdate();
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+workbook.Worksheets.Add()
+Dim style As CellStyle = workbook.Styles("Bad")
+style.BeginUpdate()
+style.Fill = New PatternFill(PatternType.DiagonalCrosshatch, Colors.Red, Colors.Transparent)
+style.FontSize = UnitHelper.PointToDip(20)
+style.ForeColor = New ThemableColor(Colors.Black)
+style.EndUpdate()
 
-        Dim style As CellStyle = workbook.Styles("Bad")
-
-        style.BeginUpdate()
-
-        style.Fill = New PatternFill(PatternType.DiagonalCrosshatch, Colors.Red, Colors.Transparent)
-        style.FontSize = UnitHelper.PointToDip(20)
-        style.ForeColor = New ThemableColor(Colors.Black)
-
-        style.EndUpdate()
-        '
 ````
 
 {{endregion}} 

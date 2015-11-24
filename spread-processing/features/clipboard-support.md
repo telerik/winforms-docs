@@ -24,33 +24,30 @@ __Example 1__ creates a new workbook with a single worksheet and assigns some sa
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingClipboardSupport.vb region=radspreadprocessing-features-clipboard-support_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue("Product");
+worksheet.Cells[1, 0].SetValue("Service");
+worksheet.Cells[0, 1].SetValue(17.4);
+worksheet.Cells[1, 1].SetValue(12.9);
+worksheet.Cells[2, 0].SetValue("Total");
+worksheet.Cells[2, 1].SetValue("=SUM(A1:B1)");
+CellRange copiedCellRange = new CellRange(0, 0, 2, 1);
+WorksheetFragment worksheetFragment = worksheet.Cells[copiedCellRange].Copy();
 
-            worksheet.Cells[0, 0].SetValue("Product");
-            worksheet.Cells[1, 0].SetValue("Service");
-            worksheet.Cells[0, 1].SetValue(17.4);
-            worksheet.Cells[1, 1].SetValue(12.9);
-            worksheet.Cells[2, 0].SetValue("Total");
-            worksheet.Cells[2, 1].SetValue("=SUM(A1:B1)");
-
-            CellRange copiedCellRange = new CellRange(0, 0, 2, 1);
-            WorksheetFragment worksheetFragment = worksheet.Cells[copiedCellRange].Copy();
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue("Product")
+worksheet.Cells(1, 0).SetValue("Service")
+worksheet.Cells(0, 1).SetValue(17.4)
+worksheet.Cells(1, 1).SetValue(12.9)
+worksheet.Cells(2, 0).SetValue("Total")
+worksheet.Cells(2, 1).SetValue("=SUM(A1:B1)")
+Dim copiedCellRange As New CellRange(0, 0, 2, 1)
+Dim worksheetFragment As WorksheetFragment = worksheet.Cells(copiedCellRange).Copy()
 
-        worksheet.Cells(0, 0).SetValue("Product")
-        worksheet.Cells(1, 0).SetValue("Service")
-        worksheet.Cells(0, 1).SetValue(17.4)
-        worksheet.Cells(1, 1).SetValue(12.9)
-        worksheet.Cells(2, 0).SetValue("Total")
-        worksheet.Cells(2, 1).SetValue("=SUM(A1:B1)")
-
-        Dim copiedCellRange As New CellRange(0, 0, 2, 1)
-        Dim worksheetFragment As WorksheetFragment = worksheet.Cells(copiedCellRange).Copy()
-        '
 ````
 
 {{endregion}} 
@@ -88,29 +85,25 @@ __Example 2__ creates a new workbook with an empty worksheet. Further, the examp
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingClipboardSupport.vb region=radspreadprocessing-features-clipboard-support_1}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue("=CONCATENATE(\"Rad\", \"Spreadsheet\")");
+worksheet.Cells[0, 0].SetForeColor(new ThemableColor(Colors.Green));
+WorksheetFragment worksheetFragment = worksheet.Cells[0, 0].Copy();
+PasteOptions pasteOptions = new PasteOptions(PasteType.All);
+worksheet.Cells[1, 0].Paste(worksheetFragment, pasteOptions);
 
-            worksheet.Cells[0, 0].SetValue("=CONCATENATE(\"Rad\", \"Spreadsheet\")");
-            worksheet.Cells[0, 0].SetForeColor(new ThemableColor(Colors.Green));
-
-            WorksheetFragment worksheetFragment = worksheet.Cells[0, 0].Copy();
-
-            PasteOptions pasteOptions = new PasteOptions(PasteType.All);
-            worksheet.Cells[1, 0].Paste(worksheetFragment, pasteOptions);
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-
-        worksheet.Cells(0, 0).SetValue("=CONCATENATE(""Rad"", ""Spreadsheet"")")
-        worksheet.Cells(0, 0).SetForeColor(New ThemableColor(Colors.Green))
-
-        Dim worksheetFragment As WorksheetFragment = worksheet.Cells(0, 0).Copy()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue("=CONCATENATE(""Rad"", ""Spreadsheet"")")
+worksheet.Cells(0, 0).SetForeColor(New ThemableColor(Colors.Green))
+Dim worksheetFragment As WorksheetFragment = worksheet.Cells(0, 0).Copy()
         
-        Dim pasteOptions As New PasteOptions(PasteType.All)
-        worksheet.Cells(1, 0).Paste(worksheetFragment, pasteOptions)
-        '
+Dim pasteOptions As New PasteOptions(PasteType.All)
+worksheet.Cells(1, 0).Paste(worksheetFragment, pasteOptions)
+
 ````
 
 {{endregion}} 
@@ -123,13 +116,14 @@ Using different __PasteType__, however, produces different output. __Example 3__
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingClipboardSupport.vb region=radspreadprocessing-features-clipboard-support_2}} 
 
 ````C#
-            PasteOptions pasteOptionsValues = new PasteOptions(PasteType.Values);
-            worksheet.Cells[2, 0].Paste(worksheetFragment, pasteOptionsValues);
+PasteOptions pasteOptionsValues = new PasteOptions(PasteType.Values);
+worksheet.Cells[2, 0].Paste(worksheetFragment, pasteOptionsValues);
+
 ````
 ````VB.NET
-        Dim pasteOptionsValues As New PasteOptions(PasteType.Values)
-        worksheet.Cells(2, 0).Paste(worksheetFragment, pasteOptionsValues)
-        '
+Dim pasteOptionsValues As New PasteOptions(PasteType.Values)
+worksheet.Cells(2, 0).Paste(worksheetFragment, pasteOptionsValues)
+
 ````
 
 {{endregion}} 
@@ -145,13 +139,14 @@ __Example 4__ combines the Value and Formats paste types and preserves both the 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingClipboardSupport.vb region=radspreadprocessing-features-clipboard-support_3}} 
 
 ````C#
-            PasteOptions valuesAndFormatting = new PasteOptions(PasteType.Formulas | PasteType.Formats);
-            worksheet.Cells[3, 0].Paste(worksheetFragment, valuesAndFormatting);
+PasteOptions valuesAndFormatting = new PasteOptions(PasteType.Formulas | PasteType.Formats);
+worksheet.Cells[3, 0].Paste(worksheetFragment, valuesAndFormatting);
+
 ````
 ````VB.NET
-        Dim valuesAndFormatting As New PasteOptions(PasteType.Formulas Or PasteType.Formats)
-        worksheet.Cells(3, 0).Paste(worksheetFragment, valuesAndFormatting)
-        '
+Dim valuesAndFormatting As New PasteOptions(PasteType.Formulas Or PasteType.Formats)
+worksheet.Cells(3, 0).Paste(worksheetFragment, valuesAndFormatting)
+
 ````
 
 {{endregion}} 

@@ -63,21 +63,21 @@ In order to fit the print content better we use the Worksheet's page setup and c
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.vb region=radspreadprocessing-features-worksheetpagesetup_0}} 
 
 ````C#
-            WorksheetPageSetup pageSetup = workbook.ActiveWorksheet.WorksheetPageSetup;
+WorksheetPageSetup pageSetup = workbook.ActiveWorksheet.WorksheetPageSetup;
             
-            pageSetup.PaperType = PaperTypes.A4;
-            pageSetup.PageOrientation = PageOrientation.Landscape;
-            pageSetup.ScaleFactor = new Size(0.9, 0.9);
-            pageSetup.CenterHorizontally = true;
+pageSetup.PaperType = PaperTypes.A4;
+pageSetup.PageOrientation = PageOrientation.Landscape;
+pageSetup.ScaleFactor = new Size(0.9, 0.9);
+pageSetup.CenterHorizontally = true;
+
 ````
 ````VB.NET
-        Dim pageSetup As WorksheetPageSetup = workbook.ActiveWorksheet.WorksheetPageSetup
+Dim pageSetup As WorksheetPageSetup = workbook.ActiveWorksheet.WorksheetPageSetup
+pageSetup.PaperType = PaperTypes.A4
+pageSetup.PageOrientation = PageOrientation.Landscape
+pageSetup.ScaleFactor = New Size(0.9, 0.9)
+pageSetup.CenterHorizontally = True
 
-        pageSetup.PaperType = PaperTypes.A4
-        pageSetup.PageOrientation = PageOrientation.Landscape
-        pageSetup.ScaleFactor = New Size(0.9, 0.9)
-        pageSetup.CenterHorizontally = True
-        '
 ````
 
 {{endregion}} 
@@ -116,19 +116,18 @@ The example shown in __Figures 3__ demonstrates how to use Worksheet's print are
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.vb region=radspreadprocessing-features-worksheetpagesetup_1}} 
 
 ````C#
-            PrintArea printArea = workbook.ActiveWorksheet.WorksheetPageSetup.PrintArea;
+PrintArea printArea = workbook.ActiveWorksheet.WorksheetPageSetup.PrintArea;
+printArea.SetPrintArea(new CellRange[]
+{
+    new CellRange(0, 0, 4, 8),
+    new CellRange(1, 1, 25, 3)
+});
 
-            printArea.SetPrintArea(new CellRange[]
-            {
-                new CellRange(0, 0, 4, 8),
-                new CellRange(1, 1, 25, 3)
-            });
 ````
 ````VB.NET
-        Dim printArea As PrintArea = workbook.ActiveWorksheet.WorksheetPageSetup.PrintArea
+Dim printArea As PrintArea = workbook.ActiveWorksheet.WorksheetPageSetup.PrintArea
+printArea.SetPrintArea(New CellRange() {New CellRange(0, 0, 4, 8), New CellRange(1, 1, 25, 3)})
 
-        printArea.SetPrintArea(New CellRange() {New CellRange(0, 0, 4, 8), New CellRange(1, 1, 25, 3)})
-        '
 ````
 
 {{endregion}} 
@@ -183,27 +182,26 @@ In order to separate semantically-correct the print data onto several pages we a
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingWorksheetPageSetup.vb region=radspreadprocessing-features-worksheetpagesetup_2}} 
 
 ````C#
-            PageBreaks pageBreaks = workbook.ActiveWorksheet.WorksheetPageSetup.PageBreaks;
+PageBreaks pageBreaks = workbook.ActiveWorksheet.WorksheetPageSetup.PageBreaks;
+pageBreaks.TryInsertHorizontalPageBreak(5, 0);
+pageBreaks.TryInsertHorizontalPageBreak(8, 0);
+pageBreaks.TryInsertHorizontalPageBreak(11, 0);
+pageBreaks.TryInsertHorizontalPageBreak(14, 0);
+pageBreaks.TryInsertHorizontalPageBreak(17, 0);
+pageBreaks.TryInsertHorizontalPageBreak(20, 0);
+pageBreaks.TryInsertHorizontalPageBreak(23, 0);
 
-            pageBreaks.TryInsertHorizontalPageBreak(5, 0);
-            pageBreaks.TryInsertHorizontalPageBreak(8, 0);
-            pageBreaks.TryInsertHorizontalPageBreak(11, 0);
-            pageBreaks.TryInsertHorizontalPageBreak(14, 0);
-            pageBreaks.TryInsertHorizontalPageBreak(17, 0);
-            pageBreaks.TryInsertHorizontalPageBreak(20, 0);
-            pageBreaks.TryInsertHorizontalPageBreak(23, 0);
 ````
 ````VB.NET
-        Dim pageBreaks As PageBreaks = workbook.ActiveWorksheet.WorksheetPageSetup.PageBreaks
+Dim pageBreaks As PageBreaks = workbook.ActiveWorksheet.WorksheetPageSetup.PageBreaks
+pageBreaks.TryInsertHorizontalPageBreak(5, 0)
+pageBreaks.TryInsertHorizontalPageBreak(8, 0)
+pageBreaks.TryInsertHorizontalPageBreak(11, 0)
+pageBreaks.TryInsertHorizontalPageBreak(14, 0)
+pageBreaks.TryInsertHorizontalPageBreak(17, 0)
+pageBreaks.TryInsertHorizontalPageBreak(20, 0)
+pageBreaks.TryInsertHorizontalPageBreak(23, 0)
 
-        pageBreaks.TryInsertHorizontalPageBreak(5, 0)
-        pageBreaks.TryInsertHorizontalPageBreak(8, 0)
-        pageBreaks.TryInsertHorizontalPageBreak(11, 0)
-        pageBreaks.TryInsertHorizontalPageBreak(14, 0)
-        pageBreaks.TryInsertHorizontalPageBreak(17, 0)
-        pageBreaks.TryInsertHorizontalPageBreak(20, 0)
-        pageBreaks.TryInsertHorizontalPageBreak(23, 0)
-        '
 ````
 
 {{endregion}} 

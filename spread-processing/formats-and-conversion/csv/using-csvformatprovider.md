@@ -25,7 +25,32 @@ __Example 1__ shows how to import a CSV file using a __FileStream__. The code as
 #### Example 1: Import CSV File
 
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingUsingCsvFormatProvider.cs region=radspreadprocessing-formats-and-conversion-csv-csvformatprovider_0}} 
-{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingUsingCsvFormatProvider.vb region=radspreadprocessing-formats-and-conversion-csv-csvformatprovider_0}} 
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingUsingCsvFormatProvider.vb region=radspreadprocessing-formats-and-conversion-csv-csvformatprovider_0}}````C#
+string fileName = "FileName.csv";
+if (!File.Exists(fileName))
+{
+    throw new FileNotFoundException(String.Format("File {0} was not found!", fileName));
+}
+Workbook workbook;
+IWorkbookFormatProvider formatProvider = new CsvFormatProvider();
+using (FileStream input = new FileStream(fileName, FileMode.Open))
+{
+    workbook = formatProvider.Import(input);
+}
+
+````
+````VB.NET
+Dim fileName As String = "FileName.csv"
+If Not File.Exists(fileName) Then
+    Throw New FileNotFoundException([String].Format("File {0} was not found!", fileName))
+End If
+Dim workbook As Workbook
+Dim formatProvider As IWorkbookFormatProvider = New CsvFormatProvider()
+Using input As New FileStream(fileName, FileMode.Open)
+    workbook = formatProvider.Import(input)
+End Using
+
+```` 
 
 
 {{endregion}} 
@@ -35,7 +60,27 @@ __Example 1__ shows how to import a CSV file using a __FileStream__. The code as
 __Example 2__ demonstrates how to export an existing Workbook to a CSV file. The snippet creates a new workbook with a single worksheet. Further, it creates a __CsvFormatProvider__ and invokes its __Export()__ method:
       
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingUsingCsvFormatProvider.cs region=radspreadprocessing-formats-and-conversion-csv-csvformatprovider_1}} 
-{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingUsingCsvFormatProvider.vb region=radspreadprocessing-formats-and-conversion-csv-csvformatprovider_1}} 
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Csv\RadSpreadProcessingUsingCsvFormatProvider.vb region=radspreadprocessing-formats-and-conversion-csv-csvformatprovider_1}}````C#
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add();
+string fileName = "SampleFile.csv";
+IWorkbookFormatProvider formatProvider = new CsvFormatProvider();
+using (FileStream output = new FileStream(fileName, FileMode.Create))
+{
+    formatProvider.Export(workbook, output);
+}
+
+````
+````VB.NET
+Dim workbook As New Workbook()
+workbook.Worksheets.Add()
+Dim fileName As String = "SampleFile.csv"
+Dim formatProvider As IWorkbookFormatProvider = New CsvFormatProvider()
+Using output As New FileStream(fileName, FileMode.Create)
+    formatProvider.Export(workbook, output)
+End Using
+
+```` 
 
 
 {{endregion}} 

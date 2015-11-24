@@ -50,17 +50,16 @@ The SetValue() method has multiple overloads that allow you to pass a double, a 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_16}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue("Total");
 
-            worksheet.Cells[0, 0].SetValue("Total");
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue("Total")
 
-        worksheet.Cells(0, 0).SetValue("Total")
-        '
 ````
 
 {{endregion}} 
@@ -73,19 +72,18 @@ Another option for setting the cell value is to use the Create() method of the C
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_5}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+ICellValue value = CellValueFactory.Create(3.14);
+worksheet.Cells[0, 0].SetValue(value);
 
-            ICellValue value = CellValueFactory.Create(3.14);
-            worksheet.Cells[0, 0].SetValue(value);
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim value As ICellValue = CellValueFactory.Create(3.14)
+worksheet.Cells(0, 0).SetValue(value)
 
-        Dim value As ICellValue = CellValueFactory.Create(3.14)
-        worksheet.Cells(0, 0).SetValue(value)
-        '
 ````
 
 {{endregion}} 
@@ -98,13 +96,14 @@ If you now retrieve the Value of cell A1, the GetValue() method will return an i
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_17}} 
 
 ````C#
-            RangePropertyValue<ICellValue> rangeValue = worksheet.Cells[0, 0].GetValue();
-            ICellValue value = rangeValue.Value;
+RangePropertyValue<ICellValue> rangeValue = worksheet.Cells[0, 0].GetValue();
+ICellValue value = rangeValue.Value;
+
 ````
 ````VB.NET
-        Dim rangeValue As RangePropertyValue(Of ICellValue) = worksheet.Cells(0, 0).GetValue()
-        Dim value As ICellValue = rangeValue.Value
-        '
+Dim rangeValue As RangePropertyValue(Of ICellValue) = worksheet.Cells(0, 0).GetValue()
+Dim value As ICellValue = rangeValue.Value
+
 ````
 
 {{endregion}} 
@@ -133,15 +132,16 @@ If a cell already contains another value, you can set an empty value for it usin
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_1}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            worksheet.Cells[0, 0].ClearValue();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].ClearValue();
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        worksheet.Cells(0, 0).ClearValue()
-        '
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).ClearValue()
+
 ````
 
 {{endregion}} 
@@ -157,17 +157,18 @@ As its name suggests, the __BooleanCellValue__ type contains a value of type boo
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_2}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            worksheet.Cells[0, 0].SetValue(true);
-            worksheet.Cells[0, 1].SetValue(false);
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue(true);
+worksheet.Cells[0, 1].SetValue(false);
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        worksheet.Cells(0, 0).SetValue(True)
-        worksheet.Cells(0, 1).SetValue(False)
-        '
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue(True)
+worksheet.Cells(0, 1).SetValue(False)
+
 ````
 
 {{endregion}} 
@@ -181,21 +182,22 @@ Another way to assign cells Boolean values is through using the static __Create(
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_3}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            ICellValue booleanCellValueTrue = CellValueFactory.Create(true);
-            ICellValue booleanCellValueFalse = CellValueFactory.Create(false);
-            worksheet.Cells[0, 0].SetValue(booleanCellValueTrue);
-            worksheet.Cells[0, 1].SetValue(booleanCellValueFalse);
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+ICellValue booleanCellValueTrue = CellValueFactory.Create(true);
+ICellValue booleanCellValueFalse = CellValueFactory.Create(false);
+worksheet.Cells[0, 0].SetValue(booleanCellValueTrue);
+worksheet.Cells[0, 1].SetValue(booleanCellValueFalse);
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        Dim booleanCellValueTrue As ICellValue = CellValueFactory.Create(True)
-        Dim booleanCellValueFalse As ICellValue = CellValueFactory.Create(False)
-        worksheet.Cells(0, 0).SetValue(booleanCellValueTrue)
-        worksheet.Cells(0, 1).SetValue(booleanCellValueFalse)
-        '
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim booleanCellValueTrue As ICellValue = CellValueFactory.Create(True)
+Dim booleanCellValueFalse As ICellValue = CellValueFactory.Create(False)
+worksheet.Cells(0, 0).SetValue(booleanCellValueTrue)
+worksheet.Cells(0, 1).SetValue(booleanCellValueFalse)
+
 ````
 
 {{endregion}} 
@@ -213,15 +215,16 @@ The __SetValue()__ method has several overloads that produce a NumberCellValue. 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_4}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            worksheet.Cells[0, 0].SetValue("1.23");
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue("1.23");
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        worksheet.Cells(0, 0).SetValue("1.23")
-        '
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue("1.23")
+
 ````
 
 {{endregion}} 
@@ -236,15 +239,16 @@ __Example 8__ sets the value of cell A1 to 6 October 1987 (in culture "en-US"). 
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_8}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            worksheet.Cells[0, 0].SetValue("10/06/1987");
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue("10/06/1987");
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        worksheet.Cells(0, 0).SetValue("10/06/1987")
-        '
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue("10/06/1987")
+
 ````
 
 {{endregion}} 
@@ -270,15 +274,16 @@ You can set a FormulaCellValue through the SetValue() method by passing a string
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_13}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            worksheet.Cells[0, 0].SetValue("=A2");
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue("=A2");
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        worksheet.Cells(0, 0).SetValue("=A2")
-        '
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue("=A2")
+
 ````
 
 {{endregion}} 
@@ -295,15 +300,16 @@ An expression can also contain a predefined function that performs a given calcu
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_14}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            worksheet.Cells[0, 0].SetValue("=SUM(A2, 3)");
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue("=SUM(A2, 3)");
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        worksheet.Cells(0, 0).SetValue("=SUM(A2, 3)")
-        '
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue("=SUM(A2, 3)")
+
 ````
 
 {{endregion}} 
@@ -317,25 +323,24 @@ Another way of setting a FormulaCellValue is passing an __ICellValue__ object to
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_18}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            CellIndex cellIndex = new CellIndex(0, 0);
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+CellIndex cellIndex = new CellIndex(0, 0);
+ICellValue cellValue;
+CellValueFormat newFormatValue;
+CellValueFactory.Create("=A2 + B2", worksheet, cellIndex, CellValueFormat.GeneralFormat, out cellValue, out newFormatValue);
+worksheet.Cells[cellIndex].SetValue(cellValue);
 
-            ICellValue cellValue;
-            CellValueFormat newFormatValue;
-            CellValueFactory.Create("=A2 + B2", worksheet, cellIndex, CellValueFormat.GeneralFormat, out cellValue, out newFormatValue);
-            worksheet.Cells[cellIndex].SetValue(cellValue);
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        Dim cellIndex As New CellIndex(0, 0)
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim cellIndex As New CellIndex(0, 0)
+Dim cellValue As ICellValue
+Dim newFormatValue As CellValueFormat
+CellValueFactory.Create("=A2 + B2", worksheet, cellIndex, CellValueFormat.GeneralFormat, cellValue, newFormatValue)
+worksheet.Cells(cellIndex).SetValue(cellValue)
 
-        Dim cellValue As ICellValue
-        Dim newFormatValue As CellValueFormat
-        CellValueFactory.Create("=A2 + B2", worksheet, cellIndex, CellValueFormat.GeneralFormat, cellValue, newFormatValue)
-        worksheet.Cells(cellIndex).SetValue(cellValue)
-        '
 ````
 
 {{endregion}} 
@@ -348,19 +353,18 @@ Using the __SetValue()__ method executes internal checks for the current cell va
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=example12}} 
 
 ````C#
-            Workbook workbook = new Workbook();	
-            Worksheet worksheet = workbook.Worksheets.Add();
-	        CellIndex cellIndex = new CellIndex(0, 0);
+Workbook workbook = new Workbook();	
+Worksheet worksheet = workbook.Worksheets.Add();
+CellIndex cellIndex = new CellIndex(0, 0);
+worksheet.Cells[cellIndex].SetValueAsFormula("=B1+B2");
 
-            worksheet.Cells[cellIndex].SetValueAsFormula("=B1+B2");
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        Dim cellIndex As New CellIndex(0, 0)
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim cellIndex As New CellIndex(0, 0)
+worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
 
-        worksheet.Cells(cellIndex).SetValueAsFormula("=B1+B2")
-        '
 ````
 
 {{endregion}} 
@@ -377,15 +381,16 @@ You can set a TextCellValue using the __SetValue(string)__ method. Note that bef
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_19}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            worksheet.Cells[0, 0].SetValue("some text");
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetValue("some text");
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        worksheet.Cells(0, 0).SetValue("some text")
-        '
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue("some text")
+
 ````
 
 {{endregion}} 
@@ -400,17 +405,18 @@ __Example 14__ enters the string "=1+2" into a cell, however, because of the app
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_20}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            worksheet.Cells[0, 0].SetFormat(new CellValueFormat("@"));
-            worksheet.Cells[0, 0].SetValue("=1+2");
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+worksheet.Cells[0, 0].SetFormat(new CellValueFormat("@"));
+worksheet.Cells[0, 0].SetValue("=1+2");
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        worksheet.Cells(0, 0).SetFormat(New CellValueFormat("@"))
-        worksheet.Cells(0, 0).SetValue("=1+2")
-        '
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetFormat(New CellValueFormat("@"))
+worksheet.Cells(0, 0).SetValue("=1+2")
+
 ````
 
 {{endregion}} 
@@ -423,25 +429,24 @@ The same result could be achieved using the __Create()__ method of the __CellVal
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=radspreadprocessing-working-with-cells-cell-value-types_21}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
-            CellIndex cellIndex = new CellIndex(0, 0);
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+CellIndex cellIndex = new CellIndex(0, 0);
+ICellValue cellValue;
+CellValueFormat newFormatValue;
+CellValueFactory.Create("=1 + 2", worksheet, cellIndex, new CellValueFormat("@"), out cellValue, out newFormatValue);
+worksheet.Cells[cellIndex].SetValue(cellValue);
 
-            ICellValue cellValue;
-            CellValueFormat newFormatValue;
-            CellValueFactory.Create("=1 + 2", worksheet, cellIndex, new CellValueFormat("@"), out cellValue, out newFormatValue);
-            worksheet.Cells[cellIndex].SetValue(cellValue);
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        Dim cellIndex As New CellIndex(0, 0)
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim cellIndex As New CellIndex(0, 0)
+Dim cellValue As ICellValue
+Dim newFormatValue As CellValueFormat
+CellValueFactory.Create("=1 + 2", worksheet, cellIndex, New CellValueFormat("@"), cellValue, newFormatValue)
+worksheet.Cells(cellIndex).SetValue(cellValue)
 
-        Dim cellValue As ICellValue
-        Dim newFormatValue As CellValueFormat
-        CellValueFactory.Create("=1 + 2", worksheet, cellIndex, New CellValueFormat("@"), cellValue, newFormatValue)
-        worksheet.Cells(cellIndex).SetValue(cellValue)
-        '
 ````
 
 {{endregion}} 
@@ -454,19 +459,19 @@ If you are sure that the value is a string and need to create a text cell value,
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithCells\RadSpreadProcessingCellValueTypes.vb region=example16}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-        	Worksheet worksheet = workbook.Worksheets.Add();
-        	CellIndex cellIndex = new CellIndex(0, 0);
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+CellIndex cellIndex = new CellIndex(0, 0);
         	
-        	worksheet.Cells[cellIndex].SetValueAsText("This is most certainly a text.");
+worksheet.Cells[cellIndex].SetValueAsText("This is most certainly a text.");
+
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
-        Dim cellIndex As New CellIndex(0, 0)
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim cellIndex As New CellIndex(0, 0)
+worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
 
-        worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
-        '
 ````
 
 {{endregion}} 

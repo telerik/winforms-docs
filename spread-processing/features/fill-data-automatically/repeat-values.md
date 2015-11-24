@@ -37,30 +37,27 @@ __Example 1__ illustrates how the contents of column *A* can be copied to the re
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingRepeatValues.vb region=radspreadprocessing-features-fill-data-automatically-repeat-values_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            workbook.Worksheets.Add();
-            Worksheet activeWorksheet = workbook.ActiveWorksheet;
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add();
+Worksheet activeWorksheet = workbook.ActiveWorksheet;
+activeWorksheet.Cells[0, 0].SetValue(5);
+activeWorksheet.Cells[1, 0].SetValue(8);
+activeWorksheet.Cells[2, 0].SetValue(13);
+activeWorksheet.Cells[3, 0].SetValue(21);
+CellRange range = new CellRange(0, 0, 3, 3);
+activeWorksheet.Cells[range].FillData(FillDirection.Right);
 
-            activeWorksheet.Cells[0, 0].SetValue(5);
-            activeWorksheet.Cells[1, 0].SetValue(8);
-            activeWorksheet.Cells[2, 0].SetValue(13);
-            activeWorksheet.Cells[3, 0].SetValue(21);
-
-            CellRange range = new CellRange(0, 0, 3, 3);
-            activeWorksheet.Cells[range].FillData(FillDirection.Right);
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(0, 0).SetValue(5)
+worksheet.Cells(1, 0).SetValue(8)
+worksheet.Cells(2, 0).SetValue(13)
+worksheet.Cells(3, 0).SetValue(21)
+Dim range As New CellRange(0, 0, 3, 3)
+worksheet.Cells(range).FillData(FillDirection.Right)
 
-        worksheet.Cells(0, 0).SetValue(5)
-        worksheet.Cells(1, 0).SetValue(8)
-        worksheet.Cells(2, 0).SetValue(13)
-        worksheet.Cells(3, 0).SetValue(21)
-
-        Dim range As New CellRange(0, 0, 3, 3)
-        worksheet.Cells(range).FillData(FillDirection.Right)
-        '
 ````
 
 {{endregion}} 
@@ -82,28 +79,25 @@ __Example 2__ invokes the __FillData()__ method with __FillDirection Down__ for 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\FillDataAutomatically\RadSpreadProcessingRepeatValues.vb region=radspreadprocessing-features-fill-data-automatically-repeat-values_1}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            workbook.Worksheets.Add();
-            Worksheet activeWorksheet = workbook.ActiveWorksheet;
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add();
+Worksheet activeWorksheet = workbook.ActiveWorksheet;
+activeWorksheet.Cells[1, 1].SetValue(34);
+activeWorksheet.Cells[1, 2].SetValue(55);
+activeWorksheet.Cells[1, 3].SetValue(89);
+CellRange range = new CellRange(1, 1, 3, 3);
+activeWorksheet.Cells[range].FillData(FillDirection.Down);
 
-            activeWorksheet.Cells[1, 1].SetValue(34);
-            activeWorksheet.Cells[1, 2].SetValue(55);
-            activeWorksheet.Cells[1, 3].SetValue(89);
-
-            CellRange range = new CellRange(1, 1, 3, 3);
-            activeWorksheet.Cells[range].FillData(FillDirection.Down);
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+worksheet.Cells(1, 1).SetValue(34)
+worksheet.Cells(1, 2).SetValue(55)
+worksheet.Cells(1, 3).SetValue(89)
+Dim range As New CellRange(1, 1, 3, 3)
+worksheet.Cells(range).FillData(FillDirection.Down)
 
-        worksheet.Cells(1, 1).SetValue(34)
-        worksheet.Cells(1, 2).SetValue(55)
-        worksheet.Cells(1, 3).SetValue(89)
-
-        Dim range As New CellRange(1, 1, 3, 3)
-        worksheet.Cells(range).FillData(FillDirection.Down)
-        '
 ````
 
 {{endregion}} 

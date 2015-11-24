@@ -33,30 +33,27 @@ Example 1: Insert rows
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingInsertAndRemoveRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-insert-and-remove_0}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+int index = 2;
+int itemCount = 3;
+if (worksheet.Rows.CanInsert(index, itemCount))
+{
+    RowSelection selection = worksheet.Rows[index, index + itemCount];
+    selection.Insert();
+}
 
-            int index = 2;
-            int itemCount = 3;
-
-            if (worksheet.Rows.CanInsert(index, itemCount))
-            {
-                RowSelection selection = worksheet.Rows[index, index + itemCount];
-                selection.Insert();
-            }
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim index As Integer = 2
+Dim itemCount As Integer = 3
+If worksheet.Rows.CanInsert(index, itemCount) Then
+    Dim selection As RowSelection = worksheet.Rows(index, index + itemCount)
+    selection.Insert()
+End If
 
-        Dim index As Integer = 2
-        Dim itemCount As Integer = 3
-
-        If worksheet.Rows.CanInsert(index, itemCount) Then
-            Dim selection As RowSelection = worksheet.Rows(index, index + itemCount)
-            selection.Insert()
-        End If
-        '
 ````
 
 {{endregion}}
@@ -74,25 +71,22 @@ The __RowSelection__ class exposes a __Remove()__ method that performs the remov
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingInsertAndRemoveRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-insert-and-remove_1}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+int index = 2;
+int itemCount = 3;
+RowSelection selection = worksheet.Rows[index, index + itemCount];
+selection.Remove();
 
-            int index = 2;
-            int itemCount = 3;
-
-            RowSelection selection = worksheet.Rows[index, index + itemCount];
-            selection.Remove();
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim index As Integer = 2
+Dim itemCount As Integer = 3
+Dim selection As RowSelection = worksheet.Rows(index, index + itemCount)
+selection.Remove()
 
-        Dim index As Integer = 2
-        Dim itemCount As Integer = 3
-
-        Dim selection As RowSelection = worksheet.Rows(index, index + itemCount)
-        selection.Remove()
-        '
 ````
 
 {{endregion}} 
@@ -110,30 +104,27 @@ The __ColumnSelection__ class exposes __CanInsert()__ and __Insert()__ methods t
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingInsertAndRemoveRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-insert-and-remove_2}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+int index = 2;
+int itemCount = 3;
+if (worksheet.Columns.CanInsert(index, itemCount))
+{
+    ColumnSelection selection = worksheet.Columns[index, index + itemCount];
+    selection.Insert();
+}
 
-            int index = 2;
-            int itemCount = 3;
-
-            if (worksheet.Columns.CanInsert(index, itemCount))
-            {
-                ColumnSelection selection = worksheet.Columns[index, index + itemCount];
-                selection.Insert();
-            }
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim index As Integer = 2
+Dim itemCount As Integer = 3
+If worksheet.Columns.CanInsert(index, itemCount) Then
+    Dim selection As ColumnSelection = worksheet.Columns(index, index + itemCount)
+    selection.Insert()
+End If
 
-        Dim index As Integer = 2
-        Dim itemCount As Integer = 3
-
-        If worksheet.Columns.CanInsert(index, itemCount) Then
-            Dim selection As ColumnSelection = worksheet.Columns(index, index + itemCount)
-            selection.Insert()
-        End If
-        '
 ````
 
 {{endregion}} 
@@ -151,25 +142,22 @@ The __ColumnSelection__ class exposes a __Remove()__ method that executes the re
 {{source=..\SamplesVB\RadSpreadProcessing\WorkingWithRowsAndColumns\RadSpreadProcessingInsertAndRemoveRowsAndColumns.vb region=radspreadprocessing-working-with-rows-and-columns-insert-and-remove_3}} 
 
 ````C#
-            Workbook workbook = new Workbook();
-            Worksheet worksheet = workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+Worksheet worksheet = workbook.Worksheets.Add();
+int index = 2;
+int itemCount = 3;
+ColumnSelection selection = worksheet.Columns[index, index + itemCount];
+selection.Remove();
 
-            int index = 2;
-            int itemCount = 3;
-
-            ColumnSelection selection = worksheet.Columns[index, index + itemCount];
-            selection.Remove();
 ````
 ````VB.NET
-        Dim workbook As New Workbook()
-        Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim workbook As New Workbook()
+Dim worksheet As Worksheet = workbook.Worksheets.Add()
+Dim index As Integer = 2
+Dim itemCount As Integer = 3
+Dim selection As ColumnSelection = worksheet.Columns(index, index + itemCount)
+selection.Remove()
 
-        Dim index As Integer = 2
-        Dim itemCount As Integer = 3
-
-        Dim selection As ColumnSelection = worksheet.Columns(index, index + itemCount)
-        selection.Remove()
-        '
 ````
 
 {{endregion}}
