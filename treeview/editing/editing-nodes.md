@@ -22,41 +22,20 @@ The sample code below shows how to start editing using the API:
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=editing}} 
 
 ````C#
-            radTreeView1.AllowEdit = true;
-            // set the SelectedNode - this node will be edited  
-            radTreeView1.SelectedNode = radTreeView1.Nodes[0];
-            // this will start edit on selected node
-            radTreeView1.BeginEdit();
+radTreeView1.AllowEdit = true;
+// set the SelectedNode - this node will be edited  
+radTreeView1.SelectedNode = radTreeView1.Nodes[0];
+// this will start edit on selected node
+radTreeView1.BeginEdit();
+
 ````
 ````VB.NET
-        RadTreeView1.AllowEdit = True
-        ' set the SelectedNode - this node will be edited  
-        RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
-        ' this will start edit on selected node
-        RadTreeView1.BeginEdit()
-        '#End Region
+RadTreeView1.AllowEdit = True
+' set the SelectedNode - this node will be edited  
+RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
+' this will start edit on selected node
+RadTreeView1.BeginEdit()
 
-        '#Region selectedNode
-        RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
-        '#End Region
-
-        '#Region selectMultiNodes
-        RadTreeView1.MultiSelect = True
-        Dim Node1 As New RadTreeNode("Inbox")
-        Dim Node2 As New RadTreeNode("Deleted Items")
-        Dim Node3 As New RadTreeNode("Outbox")
-        Dim Node4 As New RadTreeNode("Sent")
-        RadTreeView1.Nodes.Add(Node1)
-        RadTreeView1.Nodes.Add(Node2)
-        RadTreeView1.Nodes.Add(Node3)
-        RadTreeView1.Nodes.Add(Node4)
-        Node3.Selected = True
-        Node4.Selected = True
-        '#End Region
-
-        '#region filter
-        Me.RadTreeView1.Filter = "new"
-        '
 ````
 
 {{endregion}} 

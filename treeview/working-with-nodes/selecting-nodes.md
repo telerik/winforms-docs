@@ -25,22 +25,6 @@ radTreeView1.SelectedNode = radTreeView1.Nodes[0];
 ````
 ````VB.NET
 RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
-'#End Region
-'#Region selectMultiNodes
-RadTreeView1.MultiSelect = True
-Dim Node1 As New RadTreeNode("Inbox")
-Dim Node2 As New RadTreeNode("Deleted Items")
-Dim Node3 As New RadTreeNode("Outbox")
-Dim Node4 As New RadTreeNode("Sent")
-RadTreeView1.Nodes.Add(Node1)
-RadTreeView1.Nodes.Add(Node2)
-RadTreeView1.Nodes.Add(Node3)
-RadTreeView1.Nodes.Add(Node4)
-Node3.Selected = True
-Node4.Selected = True
-'#End Region
-'#region filter
-Me.RadTreeView1.Filter = "new"
 
 ````
 
@@ -90,9 +74,6 @@ RadTreeView1.Nodes.Add(Node3)
 RadTreeView1.Nodes.Add(Node4)
 Node3.Selected = True
 Node4.Selected = True
-'#End Region
-'#region filter
-Me.RadTreeView1.Filter = "new"
 
 ````
 

@@ -136,11 +136,12 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 {{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=LoadPackageResource}} 
 
 ````C#
-            ThemeResolutionService.LoadPackageResource("SamplesCS.CustomTheme.tssp");
+ThemeResolutionService.LoadPackageResource("SamplesCS.CustomTheme.tssp");
+
 ````
 ````VB.NET
-        ThemeResolutionService.LoadPackageResource("SamplesVB.CustomTheme.tssp")
-        '
+ThemeResolutionService.LoadPackageResource("SamplesVB.CustomTheme.tssp")
+
 ````
 
 {{endregion}} 
@@ -153,11 +154,12 @@ ThemeResolutionService exposes two methods that allow you to load a theme packag
 {{source=..\SamplesVB\Themes\UsingCustomThemes.vb region=LoadPackageFile}} 
 
 ````C#
-            ThemeResolutionService.LoadPackageFile(@"C:\CustomTheme.tssp");
+ThemeResolutionService.LoadPackageFile(@"C:\CustomTheme.tssp");
+
 ````
 ````VB.NET
-        ThemeResolutionService.LoadPackageFile("C:\CustomTheme.tssp")
-        '
+ThemeResolutionService.LoadPackageFile("C:\CustomTheme.tssp")
+
 ````
 
 {{endregion}} 

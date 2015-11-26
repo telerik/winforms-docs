@@ -60,7 +60,7 @@ public class CustomRadTreeViewEditorElement : BaseTextBoxEditorElement
 ````
 ````VB.NET
 Public Class CustomRadTreeViewEditorElement
-    Inherits BaseTextBoxEditorElement
+Inherits BaseTextBoxEditorElement
     Private m_dropDownList As RadDropDownListElement
     Private dockPanel As DockLayoutPanel
     Public ReadOnly Property DropDownList() As RadDropDownListElement
@@ -134,7 +134,7 @@ public class CustomRadTreeViewEditor : BaseTextBoxEditor
 ````
 ````VB.NET
 Public Class CustomRadTreeViewEditor
-    Inherits BaseTextBoxEditor
+Inherits BaseTextBoxEditor
     Protected Overrides Function CreateEditorElement() As RadElement
         Return New CustomRadTreeViewEditorElement()
     End Function

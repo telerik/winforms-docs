@@ -36,9 +36,6 @@ ThemeResolutionService.LoadPackageResource("SamplesCS.CustomTheme.tssp");
 ````
 ````VB.NET
 ThemeResolutionService.LoadPackageResource("SamplesVB.CustomTheme.tssp")
-' #endregion
-'#region LoadPackageFile
-ThemeResolutionService.LoadPackageFile("C:\CustomTheme.tssp")
 
 ````
 
@@ -116,7 +113,6 @@ For Each button As RadButton In Me.Controls
         button.ThemeName = "CustomTheme"
     End If
 Next
-'
 
 ````
 

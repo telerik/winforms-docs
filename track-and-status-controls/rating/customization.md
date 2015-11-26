@@ -88,7 +88,6 @@ For i As Integer = 0 To 4
     myShape.SelectedValueElement.Fill.GradientStyle = GradientStyles.Solid
     Me.RadRating1.Items.Add(myShape)
 Next
-'
 
 ````
 
@@ -129,7 +128,7 @@ public class CustomShape : ElementShape
 ````
 ````VB.NET
 Public Class CustomShapeElement
-    Inherits RatingVisualElement
+Inherits RatingVisualElement
     Protected Overrides Function GetShape() As ElementShape
         Return New CustomShape()
     End Function
@@ -140,7 +139,7 @@ Public Class CustomShapeElement
     End Property
 End Class
 Public Class CustomShape
-    Inherits ElementShape
+Inherits ElementShape
     Public Overrides Function CreatePath(bounds As Rectangle) As GraphicsPath
         Dim path As New GraphicsPath()
         path.AddEllipse(bounds)

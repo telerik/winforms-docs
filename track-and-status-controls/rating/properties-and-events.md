@@ -18,12 +18,12 @@ position: 4
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=ShowItemToolTips}} 
 
 ````C#
+this.radRating1.ShowItemToolTips = false;
 
-            this.radRating1.ShowItemToolTips = false;
 ````
 ````VB.NET
-        Me.RadRating1.ShowItemToolTips = False
-        '
+Me.RadRating1.ShowItemToolTips = False
+
 ````
 
 {{endregion}} 
@@ -38,12 +38,15 @@ position: 4
 
 ````C#
             
-            this.radRating1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+this.radRating1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+
 ````
 ````VB.NET
+Me.RadRating1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+' #End Region
+'#Region "Direction"
+Me.RadRating1.Direction = RatingDirection.Reversed
 
-        Me.RadRating1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        '
 ````
 
 {{endregion}} 
@@ -58,11 +61,12 @@ position: 4
 
 ````C#
             
-            this.radRating1.Direction = RatingDirection.Reversed;
+this.radRating1.Direction = RatingDirection.Reversed;
+
 ````
 ````VB.NET
-        Me.RadRating1.Direction = RatingDirection.Reversed
-        '
+Me.RadRating1.Direction = RatingDirection.Reversed
+
 ````
 
 {{endregion}} 
@@ -77,15 +81,14 @@ position: 4
 
 ````C#
             
-            this.radRating1.Orientation = Orientation.Vertical;
-            this.radRating1.AutoSize = true;
+this.radRating1.Orientation = Orientation.Vertical;
+this.radRating1.AutoSize = true;
+
 ````
 ````VB.NET
+Me.RadRating1.Orientation = Orientation.Vertical
+Me.RadRating1.AutoSize = True
 
-        Me.RadRating1.Orientation = Orientation.Vertical
-        Me.RadRating1.AutoSize = True
-
-        '
 ````
 
 {{endregion}} 
@@ -100,15 +103,16 @@ position: 4
 
 ````C#
             
-            this.radRating1.Caption = "Rate the movie";
-            this.radRating1.Description = "Description";
-            this.radRating1.Subcaption = "SubCaption";
+this.radRating1.Caption = "Rate the movie";
+this.radRating1.Description = "Description";
+this.radRating1.Subcaption = "SubCaption";
+
 ````
 ````VB.NET
-        Me.RadRating1.Caption = "Rate the movie"
-        Me.RadRating1.Description = "Description"
-        Me.RadRating1.Subcaption = "SubCaption"
-        '
+Me.RadRating1.Caption = "Rate the movie"
+Me.RadRating1.Description = "Description"
+Me.RadRating1.Subcaption = "SubCaption"
+
 ````
 
 {{endregion}} 
@@ -123,13 +127,12 @@ position: 4
 
 ````C#
             
-            this.radRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.Precise;
+this.radRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.Precise;
+
 ````
 ````VB.NET
+Me.RadRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.Precise
 
-        Me.RadRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.Precise
-
-        '
 ````
 
 {{endregion}} 
@@ -141,14 +144,12 @@ position: 4
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=SelectionHalfItem}} 
 
 ````C#
+this.radRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.HalfItem;
 
-            this.radRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.HalfItem;
 ````
 ````VB.NET
+Me.RadRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.HalfItem
 
-        Me.RadRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.HalfItem
-
-        '
 ````
 
 {{endregion}} 
@@ -160,14 +161,12 @@ position: 4
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=SelectionFullItem}} 
 
 ````C#
+this.radRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.FullItem;
 
-            this.radRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.FullItem;
 ````
 ````VB.NET
+Me.RadRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.FullItem
 
-        Me.RadRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.FullItem
-
-        '
 ````
 
 {{endregion}} 
@@ -182,13 +181,14 @@ position: 4
 
 ````C#
             
-            this.radRating1.Minimum = 10;
-            this.radRating1.Maximum = 40;
+this.radRating1.Minimum = 10;
+this.radRating1.Maximum = 40;
+
 ````
 ````VB.NET
-        Me.RadRating1.Minimum = 10
-        Me.RadRating1.Maximum = 40
-        '
+Me.RadRating1.Minimum = 10
+Me.RadRating1.Maximum = 40
+
 ````
 
 {{endregion}} 
@@ -201,13 +201,12 @@ position: 4
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Value}} 
 
 ````C#
+this.radRating1.Value = 43.4;
 
-            this.radRating1.Value = 43.4;
 ````
 ````VB.NET
+Me.RadRating1.Value = 43.4
 
-        Me.RadRating1.Value = 43.4
-        '
 ````
 
 {{endregion}} 
