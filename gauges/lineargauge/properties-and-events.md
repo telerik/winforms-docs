@@ -5,7 +5,7 @@ description: Properties and Events
 slug: winforms/gauges/lineargauge/properties-and-events
 tags: properties,and,events
 published: True
-position: 4
+position: 5
 ---
 
 # Properties and Events
@@ -20,19 +20,13 @@ position: 4
 
 * __RangeEnd:__ Indicates the end value – the maximum value that will be displayed.
 
-* __Vertical:__ This is a Boolean property which gets/set the orientation of the gauge. This property should be set before 
-            the control is added to the controls collection.
+* __Vertical:__ This is a Boolean property which gets/set the orientation of the gauge. This property should be set before the control is added to the controls collection.
 
 * __Items__ – this property allows you to access the items collection and add/remove elements.
 
 ## Events
 
-The __ValueChanged__ event fires when the __Value__ of the control is changed.
-        For example you can use this event to alert the user that the current value is close to the maximum:#_[C#] _
-
-	
-
-
+The __ValueChanged__ event fires when the __Value__ of the control is changed. For example you can use this event to alert the user that the current value is close to the maximum: 
 
 {{source=..\SamplesCS\Gauges\LinearGauge\LinearGuageGettingStarted.cs region=value}} 
 {{source=..\SamplesVB\Gauges\LinearGauge\LinearGuageGettingStarted.vb region=value}} 

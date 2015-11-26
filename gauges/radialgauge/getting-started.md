@@ -5,7 +5,7 @@ description: Getting started
 slug: winforms/gauges/radialgauge/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 2
 ---
 
 # Getting started
@@ -14,22 +14,23 @@ position: 1
 
 ## Loading predefined gauges
 
-When you drag a __RadRadialGauge__ from the Toolbox and drop it onto the form, the gauge gallery will offer you to pick up the desired type:![radialgauge-getting-started 001](images/radialgauge-getting-started001.png)
+When you drag a __RadRadialGauge__ from the Toolbox and drop it onto the form, the gauge gallery will offer you to pick up the desired type:
+
+![radialgauge-getting-started 001](images/radialgauge-getting-started001.png)
 
 >note If you do not choose a gauge's style and just close the gallery, an empty __RadRadialGauge__ will be created.
 >
 
 
-You can change the gauge's style via the Smart tag's option * Open Gallery* as well.![radialgauge-getting-started 002](images/radialgauge-getting-started002.png)
+You can change the gauge's style via the Smart tag's option *Open Gallery* as well.
+
+![radialgauge-getting-started 002](images/radialgauge-getting-started002.png)
 
 ## Adding items programmatically
 
-You can create your own gauge's style programmatically from the scratch by adding the desired labels, ticks, needles, arcs to the 
-          RadRadialGauge.__Items__ collection. Here is a sample code snippet:
-        ![radialgauge-getting-started 003](images/radialgauge-getting-started003.png)#_[C#]_
-
-	
-
+You can create your own gauge's style programmatically from the scratch by adding the desired labels, ticks, needles, arcs to the RadRadialGauge.__Items__ collection. Here is a sample code snippet:
+        
+![radialgauge-getting-started 003](images/radialgauge-getting-started003.png) 
 
 
 {{source=..\SamplesCS\Gauges\RadialGauge\RadialGaugeGettingStarted.cs region=AddItemsProgrammatically}} 
@@ -91,18 +92,12 @@ radRadialGauge1.Items.Add(arc)
 
 {{endregion}} 
 
-
-
-
+ 
 ## Adding additional elements
 
-Drag a __RadRadialGauge__ from the Toolbox and drop it onto the form. The gauge gallery will offer you to pick up the desired type. Select the first gauge type.
-          Now, we will customize the gauge in order to obtain the result illustrated on the screen-shot below:
-        ![radialgauge-getting-started 004](images/radialgauge-getting-started004.gif)#_[C#]_
-
-	
-
-
+Drag a __RadRadialGauge__ from the Toolbox and drop it onto the form. The gauge gallery will offer you to pick up the desired type. Select the first gauge type. Now, we will customize the gauge in order to obtain the result illustrated on the screen-shot below:
+        
+![radialgauge-getting-started 004](images/radialgauge-getting-started004.gif) 
 
 {{source=..\SamplesCS\Gauges\RadialGauge\RadialGaugeGettingStarted.cs region=AdvancedExample}} 
 {{source=..\SamplesVB\Gauges\RadialGauge\RadialGaugeGettingStarted.vb region=AdvancedExample}} 
@@ -296,20 +291,12 @@ End Sub
 
 {{endregion}} 
 
-
-
-
+ 
 ## Clock example
 
-The following code snippet is purposed to demonstrate how to create a simple clock. For this purpose we will add the necessary clock's elements to the 
-          RadRadialGauge.__Items__ collection. Afterwards, we need to drag a timer from the Toolbox and drop it onto the form.
-          Set the timer's __Interval__ property to *1000*. Subscribe to its __Tick__
-          event where we should  update the time.
-        ![radialgauge-getting-started 005](images/radialgauge-getting-started005.gif)#_[C#]_
-
-	
-
-
+The following code snippet is purposed to demonstrate how to create a simple clock. For this purpose we will add the necessary clock's elements to the RadRadialGauge.__Items__ collection. Afterwards, we need to drag a timer from the Toolbox and drop it onto the form. Set the timer's __Interval__ property to *1000*. Subscribe to its __Tick__ event where we should  update the time.
+        
+![radialgauge-getting-started 005](images/radialgauge-getting-started005.gif) 
 
 {{source=..\SamplesCS\Gauges\RadialGauge\RadialGaugeGettingStarted.cs region=Clock}} 
 {{source=..\SamplesVB\Gauges\RadialGauge\RadialGaugeGettingStarted.vb region=Clock}} 

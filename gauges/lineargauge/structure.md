@@ -5,7 +5,7 @@ description: Structure
 slug: winforms/gauges/lineargauge/structure
 tags: structure
 published: True
-position: 2
+position: 3
 ---
 
 # Structure

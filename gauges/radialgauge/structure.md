@@ -5,16 +5,16 @@ description: Structure
 slug: winforms/gauges/radialgauge/structure
 tags: structure
 published: True
-position: 0
+position: 1
 ---
 
 # Structure
 
-
-
 ## 
 
-The main elements of the structure of __RadRadialGauge__ are displayed below:![radialgauge-structure 001](images/radialgauge-structure001.png)
+The main elements of the structure of __RadRadialGauge__ are displayed below:
+
+![radialgauge-structure 001](images/radialgauge-structure001.png)
 
 1. RadialGaugeArc
 

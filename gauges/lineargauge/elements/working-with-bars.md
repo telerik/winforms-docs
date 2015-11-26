@@ -16,9 +16,9 @@ This element represents a bar that can be used for indicating a specific value o
 
 ## Design Time
 
-The bar has start and end values and they can be tied to the gauge or can have static values. 
-        The bellow image shows two bars and the smart tag for the first one. As you can see the most important properties can be set 
-        directly in the smart tag.![lineargauge-elements-working-with-bars 001](images/lineargauge-elements-working-with-bars001.png)
+The bar has start and end values and they can be tied to the gauge or can have static values. The bellow image shows two bars and the smart tag for the first one. As you can see the most important properties can be set directly in the smart tag.
+
+![lineargauge-elements-working-with-bars 001](images/lineargauge-elements-working-with-bars001.png)
 
 ## Properties
 
@@ -28,17 +28,16 @@ The bar has start and end values and they can be tied to the gauge or can have s
 * __RangeEnd:__ Indicates the end value of the bar.
             
 
-* __Width__,  __Width2:__ These properties represent the top and bottom 
-              (left or right if the element is placed horizontally) width values.
-              These properties allow you to create triangle or trapezoid bars.
-            ![lineargauge-elements-working-with-bars 002](images/lineargauge-elements-working-with-bars002.png)
+* __Width__,  __Width2:__ These properties represent the top and bottom (left or right if the element is placed horizontally) width values. These properties allow you to create triangle or trapezoid bars.
+            
+![lineargauge-elements-working-with-bars 002](images/lineargauge-elements-working-with-bars002.png)
 
 * __Offset:__ – specifies how far to the left/bottom the control is shifted.
             
 
-* __BackColor__,  __BackColor2:__ By default the bar has linear gradient 
-              background and these properties allow you to set its colors.
-            ![lineargauge-elements-working-with-bars 003](images/lineargauge-elements-working-with-bars003.png)
+* __BackColor__,  __BackColor2:__ By default the bar has linear gradient background and these properties allow you to set its colors.
+            
+![lineargauge-elements-working-with-bars 003](images/lineargauge-elements-working-with-bars003.png)
 
 * __IsTopToBottom:__ Specifies the orientation of the bar.
             

@@ -9,15 +9,15 @@ position: 2
 ---
 
 # Working with Ticks
-
-
-
+ 
 The __RadLienarGaugeTicks__ element gives you the ability to easily show a scale.
      
 
 ## Design Time
 
-The properties can be set directly in the smart tag window.![lineargauge-elements-working-with-ticks 001](images/lineargauge-elements-working-with-ticks001.png)
+The properties can be set directly in the smart tag window.
+
+![lineargauge-elements-working-with-ticks 001](images/lineargauge-elements-working-with-ticks001.png)
 
 ## Properties
 

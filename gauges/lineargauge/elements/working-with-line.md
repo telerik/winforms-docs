@@ -16,8 +16,9 @@ This element represents single line which can be used with the ticks.
 
 ## Design Time
 
-The following image shows the smart tag of the gauge control when the line is selected.
-        You can change the line properties directly in the smart tag window.![lineargauge-elements-working-with-lines 001](images/lineargauge-elements-working-with-lines001.png)
+The following image shows the smart tag of the gauge control when the line is selected. You can change the line properties directly in the smart tag window.
+
+![lineargauge-elements-working-with-lines 001](images/lineargauge-elements-working-with-lines001.png)
 
 ## Properties
 
@@ -36,6 +37,5 @@ The following image shows the smart tag of the gauge control when the line is se
 * __BackColor:__ This property allows you to specify the color of the line.
             
 
-* __BindStartRange__, __BindEndRange:__ These properties allow you to bind the start/end ranges of 
-              the line to the ones of the gauge.
+* __BindStartRange__, __BindEndRange:__ These properties allow you to bind the start/end ranges of the line to the ones of the gauge.
             

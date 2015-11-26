@@ -16,8 +16,9 @@ __LinearGaugeNeedleIndicator__ is a scale indicator that points to a value.
 
 ## Design Time
 
-The following image shows the smart tag of the gauge control when the needle is selected. 
-        You can change the line properties directly in the smart tag window.![lineargauge-elements-working-with-needle 001](images/lineargauge-elements-working-with-needle001.png)
+The following image shows the smart tag of the gauge control when the needle is selected. You can change the line properties directly in the smart tag window.
+
+![lineargauge-elements-working-with-needle 001](images/lineargauge-elements-working-with-needle001.png)
 
 ## Properties
 
@@ -54,9 +55,7 @@ The following image shows the smart tag of the gauge control when the needle is 
 * __DrawValue__ – specifies if the label should be drawn.
             
 
-* __LengthPerecentage__ – controls the length of the entire needle. 
-              The element is sized according to its center which means that if the value of this property is set to 50 the needle length will
-              equal the control width or height.
+* __LengthPerecentage__ – controls the length of the entire needle. The element is sized according to its center which means that if the value of this property is set to 50 the needle length will equal the control width or height.
             
 
 * __Direction__ – specifies the needles direction.

@@ -332,6 +332,21 @@ navigation:
     gauges:
         title: Gauges
         position: 23
+    gauges/bulletgraph:
+        title: BulletGraph
+        position: 0
+    gauges/lineargauge:
+        title: LinearGauge
+        position: 1
+    gauges/lineargauge/elements:
+        title: Elements
+        position: 4
+    gauges/radialgauge:
+        title: RadialGauge
+        position: 2
+    gauges/radialgauge/understanding-gauge-elements:
+        title: Understanding gauge elements
+        position: 4
     gridview:
         title: GridView
         position: 24

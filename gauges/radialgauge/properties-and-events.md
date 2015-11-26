@@ -5,7 +5,7 @@ description: Properties and events
 slug: winforms/gauges/radialgauge/properties-and-events
 tags: properties,and,events
 published: True
-position: 4
+position: 5
 ---
 
 # Properties and events
@@ -17,38 +17,33 @@ position: 4
 * __Value__ - specifies the gauge's value.
             
 
-* __RangeStart__ - specifies the gauge's start. On the picture below, the __RangeStart__
-              is *0*.
-            ![radialgauge-properties-and-events 001](images/radialgauge-properties-and-events001.png)
+* __RangeStart__ - specifies the gauge's start. On the picture below, the __RangeStart__ is *0*.
+            
+![radialgauge-properties-and-events 001](images/radialgauge-properties-and-events001.png)
 
-* __RangeEnd__ - specifies the gauge's end. On the picture above, the __RangeEnd__
-              is *100*.
+* __RangeEnd__ - specifies the gauge's end. On the picture above, the __RangeEnd__ is *100*.
             
 
-* __StartAngle__ - determines the starting angle of the arc. On the following screen shot the
-              __StartAngle__ is *90*.
-            ![radialgauge-properties-and-events 002](images/radialgauge-properties-and-events002.png)
+* __StartAngle__ - determines the starting angle of the arc. On the following screen shot the __StartAngle__ is *90*.
+            
+![radialgauge-properties-and-events 002](images/radialgauge-properties-and-events002.png)
 
-* __SweepAngle__ - determines the angle value starting from the __StartAngle__ to
-              draw an arc in clockwise direction. On the picture above the  __SweepAngle__ is *270*.
+* __SweepAngle__ - determines the angle value starting from the __StartAngle__ to draw an arc in clockwise direction. On the picture above the  __SweepAngle__ is *270*.
             
 
 * __CenterOffsetX__ - controls the __RadRadialGauge__'s offset in horizontal direction.
-            ![radialgauge-properties-and-events 003](images/radialgauge-properties-and-events003.png)
+            
+![radialgauge-properties-and-events 003](images/radialgauge-properties-and-events003.png)
 
 * __CenterOffsetY__ - controls the __RadRadialGauge__'s offset in vertical direction.
-            ![radialgauge-properties-and-events 004](images/radialgauge-properties-and-events004.png)
+            
+![radialgauge-properties-and-events 004](images/radialgauge-properties-and-events004.png)
 
 ## Events
 
-The __ValueChanged__ event fires when the value is modified. You can perform changes to the gauge's elements
-         in order to indicate low/high values. The following code snippet demonstrates how to color the needle and the single label in red color,
-         when the RadRadialGauge.__Value__ gets greater than *120*.
-        ![radialgauge-properties-and-events 005](images/radialgauge-properties-and-events005.gif)#_[C#]_
-
-	
-
-
+The __ValueChanged__ event fires when the value is modified. You can perform changes to the gauge's elements in order to indicate low/high values. The following code snippet demonstrates how to color the needle and the single label in red color, when the RadRadialGauge.__Value__ gets greater than *120*.
+        
+![radialgauge-properties-and-events 005](images/radialgauge-properties-and-events005.gif) 
 
 {{source=..\SamplesCS\Gauges\RadialGauge\RadialGaugePropertiesAndEvents.cs region=ValueChanged}} 
 {{source=..\SamplesVB\Gauges\RadialGauge\RadialGaugePropertiesAndEvents.vb region=ValueChanged}} 

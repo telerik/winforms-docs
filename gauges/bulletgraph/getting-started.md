@@ -5,7 +5,7 @@ description: Getting Started
 slug: winforms/gauges/bulletgraph/getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
@@ -14,26 +14,20 @@ position: 0
 
 ## 
 
-When you drag a __RadBulletGraph__ from the Toolbox and drop it onto the form, the gauge gallery
-          will offer you to pick up the desired type:
-        ![bulletgraph-getting-started 001](images/bulletgraph-getting-started001.png)
+When you drag a __RadBulletGraph__ from the Toolbox and drop it onto the form, the gauge gallery will offer you to pick up the desired type:
+        
+![bulletgraph-getting-started 001](images/bulletgraph-getting-started001.png)
 
 >note If you do not choose a gauge's style and just close the gallery, an empty __RadBulletGraph__ will be created.
 >
 
 
 You can change the gauge's style via the Smart tag's option Open Gallery as well.
-        ![bulletgraph-getting-started 002](images/bulletgraph-getting-started002.png)
+        
+![bulletgraph-getting-started 002](images/bulletgraph-getting-started002.png)
 
-Once the control is added to the form you just need to synchronize the
-          __FeaturedMeasure__ and __ComparativeMeasure__ values with your business logic values.
-          For example you can see how the controls work with the following code:          
-        #_[C#]_
-
-	
-
-
-
+Once the control is added to the form you just need to synchronize the __FeaturedMeasure__ and __ComparativeMeasure__ values with your business logic values. For example you can see how the controls work with the following code:          
+        
 {{source=..\SamplesCS\Gauges\BulletGraphCode.cs region=test}} 
 {{source=..\SamplesVB\Gauges\BulletGraphCode.vb region=test}} 
 
@@ -78,11 +72,8 @@ End Sub
 ````
 
 {{endregion}} 
+ 
 
-
-
-
->important Please note that when you select the style all events will be automatically created and you can directly access them. 
-          You can create the control in code as well. More information is available in the following article:[Getting Started]({%slug winforms/gauges/lineargauge/getting-started%})
+>important Please note that when you select the style all events will be automatically created and you can directly access them. You can create the control in code as well. More information is available in the following article:[Getting Started]({%slug winforms/gauges/lineargauge/getting-started%})
 >
 
