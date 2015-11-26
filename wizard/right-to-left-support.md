@@ -22,17 +22,16 @@ You can enable the RightToLeft functionality, by setting the __RightToLeft__ pro
 {{source=..\SamplesVB\Wizard\WizardStructure.vb region=RTL}} 
 
 ````C#
-            this.radWizard1.RightToLeft = RightToLeft.Yes;
+this.radWizard1.RightToLeft = RightToLeft.Yes;
+this.radLabel1.RightToLeft = RightToLeft.Yes;
+this.radLabel1.Text = "Welcome page of RadWizard in RightToLeft mode.";
 
-            this.radLabel1.RightToLeft = RightToLeft.Yes;
-            this.radLabel1.Text = "Welcome page of RadWizard in RightToLeft mode.";
 ````
 ````VB.NET
-        RadWizard1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+RadWizard1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+RadLabel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+RadLabel1.Text = "Welcome page of RadWizard in RightToLeft mode."
 
-        RadLabel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        RadLabel1.Text = "Welcome page of RadWizard in RightToLeft mode."
-        '
 ````
 
 {{endregion}} 

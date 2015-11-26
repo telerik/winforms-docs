@@ -41,22 +41,21 @@ Headers of all __HeaderFooterType__ types can be created using the following cod
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingHeadersAndFooters.vb region=radwordsprocessing-model-headers-footers_0}} 
 
 ````C#
-            RadFlowDocument document = new RadFlowDocument();
-            document.Sections.AddSection();
+RadFlowDocument document = new RadFlowDocument();
+document.Sections.AddSection();
+document.Sections.First().Headers.Add(); // Creates the default Header.
+document.Sections.First().Headers.Add(HeaderFooterType.First);
+document.Sections.First().Headers.Add(HeaderFooterType.Even);
 
-            document.Sections.First().Headers.Add(); // Creates the default Header.
-            document.Sections.First().Headers.Add(HeaderFooterType.First);
-            document.Sections.First().Headers.Add(HeaderFooterType.Even);
 ````
 ````VB.NET
-            Dim document As New RadFlowDocument()
-            document.Sections.AddSection()
+Dim document As New RadFlowDocument()
+document.Sections.AddSection()
+document.Sections.First().Headers.Add()
+' Creates the default Header.
+document.Sections.First().Headers.Add(HeaderFooterType.First)
+document.Sections.First().Headers.Add(HeaderFooterType.Even)
 
-            document.Sections.First().Headers.Add()
-            ' Creates the default Header.
-            document.Sections.First().Headers.Add(HeaderFooterType.First)
-            document.Sections.First().Headers.Add(HeaderFooterType.Even)
-            '
 ````
 
 {{endregion}} 
@@ -67,22 +66,21 @@ Footers can be created using the code snippet below:
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingHeadersAndFooters.vb region=radwordsprocessing-model-headers-footers_1}} 
 
 ````C#
-            RadFlowDocument document = new RadFlowDocument();
-            document.Sections.AddSection();
+RadFlowDocument document = new RadFlowDocument();
+document.Sections.AddSection();
+document.Sections.First().Footers.Add(); // Creates the default Footer.
+document.Sections.First().Footers.Add(HeaderFooterType.First);
+document.Sections.First().Footers.Add(HeaderFooterType.Even);
 
-            document.Sections.First().Footers.Add(); // Creates the default Footer.
-            document.Sections.First().Footers.Add(HeaderFooterType.First);
-            document.Sections.First().Footers.Add(HeaderFooterType.Even);
 ````
 ````VB.NET
-            Dim document As New RadFlowDocument()
-            document.Sections.AddSection()
+Dim document As New RadFlowDocument()
+document.Sections.AddSection()
+document.Sections.First().Footers.Add()
+' Creates the default Footer.
+document.Sections.First().Footers.Add(HeaderFooterType.First)
+document.Sections.First().Footers.Add(HeaderFooterType.Even)
 
-            document.Sections.First().Footers.Add()
-            ' Creates the default Footer.
-            document.Sections.First().Footers.Add(HeaderFooterType.First)
-            document.Sections.First().Footers.Add(HeaderFooterType.Even)
-            '
 ````
 
 {{endregion}} 
@@ -99,11 +97,12 @@ You can obtain the Headers and Footers in a Section through the __Default__, __E
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingHeadersAndFooters.vb region=radwordsprocessing-model-headers-footers_2}} 
 
 ````C#
-            Header defaultHeader = section.Headers.Default;
+Header defaultHeader = section.Headers.Default;
+
 ````
 ````VB.NET
-            Dim defaultHeader As Header = section.Headers.[Default]
-            '
+Dim defaultHeader As Header = section.Headers.[Default]
+
 ````
 
 {{endregion}} 
@@ -114,11 +113,12 @@ Similarly to the Header, the Footer element can be obtained as follows:
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingHeadersAndFooters.vb region=radwordsprocessing-model-headers-footers_3}} 
 
 ````C#
-            Footer defaultFooter = section.Footers.Default;
+Footer defaultFooter = section.Footers.Default;
+
 ````
 ````VB.NET
-            Dim defaultFooter As Footer = section.Footers.[Default]
-            '
+Dim defaultFooter As Footer = section.Footers.[Default]
+
 ````
 
 {{endregion}}
@@ -132,35 +132,32 @@ The following code snippet demonstrates how to add different headers for odd and
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingHeadersAndFooters.vb region=radwordsprocessing-model-headers-footers_4}} 
 
 ````C#
-            RadFlowDocument document = new RadFlowDocument();
-            document.Sections.AddSection();
-            document.HasDifferentEvenOddPageHeadersFooters = true;
+RadFlowDocument document = new RadFlowDocument();
+document.Sections.AddSection();
+document.HasDifferentEvenOddPageHeadersFooters = true;
+Header defaultHeader = document.Sections.First().Headers.Add();
+Paragraph defaultHeaderParagraph = defaultHeader.Blocks.AddParagraph();
+defaultHeaderParagraph.TextAlignment = Alignment.Right;
+defaultHeaderParagraph.Inlines.AddRun("This is a sample odd page header.");
+Header evenHeader = document.Sections.First().Headers.Add(HeaderFooterType.Even);
+Paragraph evenHeaderParagraph = evenHeader.Blocks.AddParagraph();
+evenHeaderParagraph.TextAlignment = Alignment.Left;
+evenHeaderParagraph.Inlines.AddRun("This is a sample even page header.");
 
-            Header defaultHeader = document.Sections.First().Headers.Add();
-            Paragraph defaultHeaderParagraph = defaultHeader.Blocks.AddParagraph();
-            defaultHeaderParagraph.TextAlignment = Alignment.Right;
-            defaultHeaderParagraph.Inlines.AddRun("This is a sample odd page header.");
-
-            Header evenHeader = document.Sections.First().Headers.Add(HeaderFooterType.Even);
-            Paragraph evenHeaderParagraph = evenHeader.Blocks.AddParagraph();
-            evenHeaderParagraph.TextAlignment = Alignment.Left;
-            evenHeaderParagraph.Inlines.AddRun("This is a sample even page header.");
 ````
 ````VB.NET
-            Dim document As New RadFlowDocument()
-            document.Sections.AddSection()
-            document.HasDifferentEvenOddPageHeadersFooters = True
+Dim document As New RadFlowDocument()
+document.Sections.AddSection()
+document.HasDifferentEvenOddPageHeadersFooters = True
+Dim defaultHeader As Header = document.Sections.First().Headers.Add()
+Dim defaultHeaderParagraph As Paragraph = defaultHeader.Blocks.AddParagraph()
+defaultHeaderParagraph.TextAlignment = Alignment.Right
+defaultHeaderParagraph.Inlines.AddRun("This is a sample odd page header.")
+Dim evenHeader As Header = document.Sections.First().Headers.Add(HeaderFooterType.Even)
+Dim evenHeaderParagraph As Paragraph = evenHeader.Blocks.AddParagraph()
+evenHeaderParagraph.TextAlignment = Alignment.Left
+evenHeaderParagraph.Inlines.AddRun("This is a sample even page header.")
 
-            Dim defaultHeader As Header = document.Sections.First().Headers.Add()
-            Dim defaultHeaderParagraph As Paragraph = defaultHeader.Blocks.AddParagraph()
-            defaultHeaderParagraph.TextAlignment = Alignment.Right
-            defaultHeaderParagraph.Inlines.AddRun("This is a sample odd page header.")
-
-            Dim evenHeader As Header = document.Sections.First().Headers.Add(HeaderFooterType.Even)
-            Dim evenHeaderParagraph As Paragraph = evenHeader.Blocks.AddParagraph()
-            evenHeaderParagraph.TextAlignment = Alignment.Left
-            evenHeaderParagraph.Inlines.AddRun("This is a sample even page header.")
-            '
 ````
 
 {{endregion}} 

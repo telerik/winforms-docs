@@ -52,39 +52,36 @@ __Example 1__ shows how you can create and apply specific import settings.
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-html-settings_0}} 
 
 ````C#
-            HtmlFormatProvider provider = new HtmlFormatProvider();
-            HtmlImportSettings importSettings = new HtmlImportSettings();
+            
+HtmlFormatProvider provider = new HtmlFormatProvider();
+HtmlImportSettings importSettings = new HtmlImportSettings();
+            
+importSettings.GenericFonts.Serif = new ThemableFontFamily("Baskerville");
+            
+byte[] data = this.GetImageData();
+provider.ImportSettings.LoadFromUri += (s, e) =>
+{
+    if (e.Uri == "test.jpg")
+    {
+        e.SetData(data);
+    }
+};
+            
+provider.ImportSettings = importSettings;
 
-            importSettings.GenericFonts.Serif = new ThemableFontFamily("Baskerville");
-
-            byte[] data = this.GetImageData();
-            provider.ImportSettings.LoadFromUri += (s, e) =>
-            {
-                if (e.Uri == "test.jpg")
-                {
-                    e.SetData(data);
-                }
-            };
-
-            provider.ImportSettings = importSettings;
 ````
 ````VB.NET
-            Dim provider As New HtmlFormatProvider()
-            Dim importSettings As New HtmlImportSettings()
+Dim provider As New HtmlFormatProvider()
+Dim importSettings As New HtmlImportSettings()
+importSettings.GenericFonts.Serif = New ThemableFontFamily("Baskerville")
+Dim data As Byte() = Me.GetImageData()
+AddHandler provider.ImportSettings.LoadFromUri, Sub(s, e)
+                                                    e.SetData(data)
+                                                    If e.Uri = "test.jpg" Then
+                                                    End If
+                                                End Sub
+provider.ImportSettings = importSettings
 
-            importSettings.GenericFonts.Serif = New ThemableFontFamily("Baskerville")
-
-            Dim data As Byte() = Me.GetImageData()
-        AddHandler provider.ImportSettings.LoadFromUri, Sub(s, e)
-                                                            e.SetData(data)
-                                                            If e.Uri = "test.jpg" Then
-                                                            End If
-
-                                                        End Sub
-
-            provider.ImportSettings = importSettings
-
-            '
 ````
 
 {{endregion}} 
@@ -175,37 +172,43 @@ __Example 2__ demonstrates how you can create export settings.
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-html-settings_1}} 
 
 ````C#
-            HtmlFormatProvider provider = new HtmlFormatProvider();
-            HtmlExportSettings exportSettings = new HtmlExportSettings();
+HtmlFormatProvider provider = new HtmlFormatProvider();
+HtmlExportSettings exportSettings = new HtmlExportSettings();
+            
+byte[] data = null;
+exportSettings.BordersMinimalThickness = 1;
+exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment;
+exportSettings.IndentDocument = true;
+exportSettings.ImageExporting += (s, e) =>
+{
+    e.Source = "test.jpg";
+    data = e.Image.ImageSource.Data;
+    e.Handled = true;
+    e.Title = "Test image";
+    e.ExportSize = true;
+    e.AlternativeText = "You will see this text if the image is not loaded";               
+};
+        
+provider.ExportSettings = exportSettings;
 
-            byte[] data = null;
-            exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment;
-            exportSettings.IndentDocument = true;
-            exportSettings.ImageExporting += (s, e) =>
-            {
-                e.Source = "test.jpg";
-                data = e.Image.ImageSource.Data;
-                e.Handled = true;
-            };
-
-            provider.ExportSettings = exportSettings;
 ````
 ````VB.NET
-            Dim provider As New HtmlFormatProvider()
-            Dim exportSettings As New HtmlExportSettings()
+Dim provider As New HtmlFormatProvider()
+Dim exportSettings As New HtmlExportSettings()
+Dim data As Byte() = Nothing
+exportSettings.BordersMinimalThickness = 1
+exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment
+exportSettings.IndentDocument = True
+AddHandler exportSettings.ImageExporting, Sub(s, e)
+                                              e.Source = "test.jpg"
+                                              data = e.Image.ImageSource.Data
+                                              e.Handled = True
+                                              e.Title = "Test image"
+                                              e.ExportSize = True
+                                              e.AlternativeText = "You will see this text if the image is not loaded"
+                                          End Sub
+provider.ExportSettings = exportSettings
 
-            Dim data As Byte() = Nothing
-            exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment
-            exportSettings.IndentDocument = True
-        AddHandler exportSettings.ImageExporting, Sub(s, e)
-                                                      e.Source = "test.jpg"
-                                                      data = e.Image.ImageSource.Data
-                                                      e.Handled = True
-
-                                                  End Sub
-
-            provider.ExportSettings = exportSettings
-            '
 ````
 
 {{endregion}} 

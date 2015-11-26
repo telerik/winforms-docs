@@ -21,22 +21,23 @@ The following code snippet opens a ZIP archive in update mode using __ZipArchive
 
 ````C#
             
-            using (Stream stream = File.Open("test.zip", FileMode.Open))
-            {
-                using (archive = new ZipArchive(stream, ZipArchiveMode.Update, false, null))
-                {
-                    // Display the list of the files in the selected zip file using the ZipArchive.Entries property.
-                }
-            }
+using (Stream stream = File.Open("test.zip", FileMode.Open))
+{
+    using (archive = new ZipArchive(stream, ZipArchiveMode.Update, false, null))
+    {
+        // Display the list of the files in the selected zip file using the ZipArchive.Entries property.
+    }
+}
+
 ````
 ````VB.NET
-        Using stream As Stream = File.Open("test.zip", FileMode.Open)
-            archive = New ZipArchive(stream, ZipArchiveMode.Update, False, Nothing)
-            Using archive
-                ' Display the list of the files in the selected zip file using the ZipArchive.Entries property.
-            End Using
-        End Using
-        '
+Using stream As Stream = File.Open("test.zip", FileMode.Open)
+    archive = New ZipArchive(stream, ZipArchiveMode.Update, False, Nothing)
+    Using archive
+        ' Display the list of the files in the selected zip file using the ZipArchive.Entries property.
+    End Using
+End Using
+
 ````
 
 {{endregion}} 
@@ -60,21 +61,22 @@ In order to add a new entry into the ZIP archive you should perform the followin
 {{source=..\SamplesVB\ZipLibrary\UpdateZipArchive.vb region=flush}} 
 
 ````C#
-                
-            using (ZipArchiveEntry entry = archive.CreateEntry("text.txt"))
-            {
-                StreamWriter writer = new StreamWriter(entry.Open());
-                writer.WriteLine("Hello world!");
-                writer.Flush();
-            }
+    
+using (ZipArchiveEntry entry = archive.CreateEntry("text.txt"))
+{
+    StreamWriter writer = new StreamWriter(entry.Open());
+    writer.WriteLine("Hello world!");
+    writer.Flush();
+}
+
 ````
 ````VB.NET
-        Using entry As ZipArchiveEntry = archive.CreateEntry("text.txt")
-            Dim writer As New StreamWriter(entry.Open())
-            writer.WriteLine("Hello world!")
-            writer.Flush()
-        End Using
-        '
+Using entry As ZipArchiveEntry = archive.CreateEntry("text.txt")
+    Dim writer As New StreamWriter(entry.Open())
+    writer.WriteLine("Hello world!")
+    writer.Flush()
+End Using
+
 ````
 
 {{endregion}} 
@@ -94,18 +96,19 @@ The following code snippet obtains an entry and deletes it from the ZIP archive 
 
 ````C#
             
-            ZipArchiveEntry entry2 = archive.GetEntry("text.txt");
-            if (entry2 != null)
-            {
-                entry2.Delete();
-            }
+ZipArchiveEntry entry2 = archive.GetEntry("text.txt");
+if (entry2 != null)
+{
+    entry2.Delete();
+}
+
 ````
 ````VB.NET
-        Dim entry2 As ZipArchiveEntry = archive.GetEntry("text.txt")
-        If entry2 IsNot Nothing Then
-            entry2.Delete()
-        End If
-        '
+Dim entry2 As ZipArchiveEntry = archive.GetEntry("text.txt")
+If entry2 IsNot Nothing Then
+    entry2.Delete()
+End If
+
 ````
 
 {{endregion}} 
@@ -127,33 +130,32 @@ In order to update an existing entry in the ZIP archive you should perform the f
 {{source=..\SamplesVB\ZipLibrary\UpdateZipArchive.vb region=entry}} 
 
 ````C#
-                
-            ZipArchiveEntry entry1 = archive.GetEntry("text.txt");
-            if (entry1 != null)
-            {
-                Stream entryStream = entry1.Open();
-                StreamReader reader = new StreamReader(entryStream);
-                string content = reader.ReadToEnd();
+    
+ZipArchiveEntry entry1 = archive.GetEntry("text.txt");
+if (entry1 != null)
+{
+    Stream entryStream = entry1.Open();
+    StreamReader reader = new StreamReader(entryStream);
+    string content = reader.ReadToEnd();
+    entryStream.Seek(0, SeekOrigin.End);
+    StreamWriter writer = new StreamWriter(entryStream);
+    writer.WriteLine("Updated line.");
+    writer.Flush();
+}
 
-                entryStream.Seek(0, SeekOrigin.End);
-                StreamWriter writer = new StreamWriter(entryStream);
-                writer.WriteLine("Updated line.");
-                writer.Flush();
-            }
 ````
 ````VB.NET
-        Dim entry1 As ZipArchiveEntry = archive.GetEntry("text.txt")
-        If entry1 IsNot Nothing Then
-            Dim entryStream As Stream = entry1.Open()
-            Dim reader As New StreamReader(entryStream)
-            Dim content As String = reader.ReadToEnd()
+Dim entry1 As ZipArchiveEntry = archive.GetEntry("text.txt")
+If entry1 IsNot Nothing Then
+    Dim entryStream As Stream = entry1.Open()
+    Dim reader As New StreamReader(entryStream)
+    Dim content As String = reader.ReadToEnd()
+    entryStream.Seek(0, SeekOrigin.End)
+    Dim writer As New StreamWriter(entryStream)
+    writer.WriteLine("Updated line.")
+    writer.Flush()
+End If
 
-            entryStream.Seek(0, SeekOrigin.End)
-            Dim writer As New StreamWriter(entryStream)
-            writer.WriteLine("Updated line.")
-            writer.Flush()
-        End If
-        '
 ````
 
 {{endregion}} 

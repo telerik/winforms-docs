@@ -31,15 +31,16 @@ __Example 1__ demonstrates how to create DeflateSettings.
 {{source=..\SamplesVB\ZipLibrary\CompressionSettings.vb region=default}} 
 
 ````C#
-            DeflateSettings compressionSettings = new DeflateSettings();
-            compressionSettings.CompressionLevel = CompressionLevel.Best;
-            compressionSettings.HeaderType = CompressedStreamHeader.ZLib;
+DeflateSettings compressionSettings = new DeflateSettings();
+compressionSettings.CompressionLevel = CompressionLevel.Best;
+compressionSettings.HeaderType = CompressedStreamHeader.ZLib;
+
 ````
 ````VB.NET
-        Dim compressionSettings As New DeflateSettings()
-        compressionSettings.CompressionLevel = CompressionLevel.Best
-        compressionSettings.HeaderType = CompressedStreamHeader.ZLib
-        '
+Dim compressionSettings As New DeflateSettings()
+compressionSettings.CompressionLevel = CompressionLevel.Best
+compressionSettings.HeaderType = CompressedStreamHeader.ZLib
+
 ````
 
 {{endregion}} 
@@ -69,23 +70,24 @@ The configurable parameters of the __LzmaSettings__ class are as follows:
 {{source=..\SamplesVB\ZipLibrary\CompressionSettings.vb region=lzma}} 
 
 ````C#
-            LzmaSettings compressionSettings1 = new LzmaSettings();
-            compressionSettings1.DictionarySize = 23;
-            compressionSettings1.FastBytes = 32;
-            compressionSettings1.LiteralContextBits = 3;
-            compressionSettings1.LiteralPositionBits = 3;
-            compressionSettings1.MatchFinderType = LzmaMatchFinderType.BT4;
-            compressionSettings1.PositionStateBits = 2;
+LzmaSettings compressionSettings1 = new LzmaSettings();
+compressionSettings1.DictionarySize = 23;
+compressionSettings1.FastBytes = 32;
+compressionSettings1.LiteralContextBits = 3;
+compressionSettings1.LiteralPositionBits = 3;
+compressionSettings1.MatchFinderType = LzmaMatchFinderType.BT4;
+compressionSettings1.PositionStateBits = 2;
+
 ````
 ````VB.NET
-        Dim compressionSettings1 As New LzmaSettings()
-        compressionSettings1.DictionarySize = 23
-        compressionSettings1.FastBytes = 32
-        compressionSettings1.LiteralContextBits = 3
-        compressionSettings1.LiteralPositionBits = 3
-        compressionSettings1.MatchFinderType = LzmaMatchFinderType.BT4
-        compressionSettings1.PositionStateBits = 2
-        '
+Dim compressionSettings1 As New LzmaSettings()
+compressionSettings1.DictionarySize = 23
+compressionSettings1.FastBytes = 32
+compressionSettings1.LiteralContextBits = 3
+compressionSettings1.LiteralPositionBits = 3
+compressionSettings1.MatchFinderType = LzmaMatchFinderType.BT4
+compressionSettings1.PositionStateBits = 2
+
 ````
 
 {{endregion}}
@@ -98,11 +100,12 @@ Store settings are used to just store the data using no compression.
 {{source=..\SamplesVB\ZipLibrary\CompressionSettings.vb region=settings}} 
 
 ````C#
-            StoreSettings compressionSettings2 = new StoreSettings();
+StoreSettings compressionSettings2 = new StoreSettings();
+
 ````
 ````VB.NET
-        Dim compressionSettings2 As New StoreSettings()
-        '
+Dim compressionSettings2 As New StoreSettings()
+
 ````
 
 {{endregion}} 

@@ -31,34 +31,35 @@ __Example 1__: Create a password-protected ZIP archive:
 
 ````C#
             
-            using (Stream stream = File.Open("test.zip", FileMode.Create))
-            {
-                DefaultEncryptionSettings encryptionSettings = new DefaultEncryptionSettings();
-                encryptionSettings.Password = "password";
-                using (ZipArchive archive = new ZipArchive(stream, ZipArchiveMode.Create, false, null, null, encryptionSettings))
-                {
-                    using (ZipArchiveEntry entry = archive.CreateEntry("text.txt"))
-                    {
-                        StreamWriter writer = new StreamWriter(entry.Open());
-                        writer.WriteLine("Hello world!");
-                        writer.Flush();
-                    }
-                }
-            }
+using (Stream stream = File.Open("test.zip", FileMode.Create))
+{
+    DefaultEncryptionSettings encryptionSettings = new DefaultEncryptionSettings();
+    encryptionSettings.Password = "password";
+    using (ZipArchive archive = new ZipArchive(stream, ZipArchiveMode.Create, false, null, null, encryptionSettings))
+    {
+        using (ZipArchiveEntry entry = archive.CreateEntry("text.txt"))
+        {
+            StreamWriter writer = new StreamWriter(entry.Open());
+            writer.WriteLine("Hello world!");
+            writer.Flush();
+        }
+    }
+}
+
 ````
 ````VB.NET
-        Using stream As Stream = File.Open("test.zip", FileMode.Create)
-            Dim encryptionSettings As New DefaultEncryptionSettings()
-            encryptionSettings.Password = "password"
-            Using archive As New ZipArchive(stream, ZipArchiveMode.Create, False, Nothing, Nothing, encryptionSettings)
-                Using entry As ZipArchiveEntry = archive.CreateEntry("text.txt")
-                    Dim writer As New StreamWriter(entry.Open())
-                    writer.WriteLine("Hello world!")
-                    writer.Flush()
-                End Using
-            End Using
+Using stream As Stream = File.Open("test.zip", FileMode.Create)
+    Dim encryptionSettings As New DefaultEncryptionSettings()
+    encryptionSettings.Password = "password"
+    Using archive As New ZipArchive(stream, ZipArchiveMode.Create, False, Nothing, Nothing, encryptionSettings)
+        Using entry As ZipArchiveEntry = archive.CreateEntry("text.txt")
+            Dim writer As New StreamWriter(entry.Open())
+            writer.WriteLine("Hello world!")
+            writer.Flush()
         End Using
-        '
+    End Using
+End Using
+
 ````
 
 {{endregion}} 
@@ -76,29 +77,29 @@ __Example 2__: Open and read a password-protected ZIP archive.
 {{source=..\SamplesVB\ZipLibrary\ProtectArchive.vb region=read}} 
 
 ````C#
-                
-            using (Stream stream = File.Open("test.zip", FileMode.Open))
-            {
-                DefaultEncryptionSettings encryptionSettings = new DefaultEncryptionSettings();
-                encryptionSettings.Password = "password";
-                using (ZipArchive archive = new ZipArchive(stream, ZipArchiveMode.Read, false, null, null, encryptionSettings))
-                {
-                    {
-                        // Display the list of the files in the selected zip file using the ZipArchive.Entries property. 
-                    }
-                }
-            }
+    
+using (Stream stream = File.Open("test.zip", FileMode.Open))
+{
+    DefaultEncryptionSettings encryptionSettings = new DefaultEncryptionSettings();
+    encryptionSettings.Password = "password";
+    using (ZipArchive archive = new ZipArchive(stream, ZipArchiveMode.Read, false, null, null, encryptionSettings))
+    {
+        {
+            // Display the list of the files in the selected zip file using the ZipArchive.Entries property. 
+        }
+    }
+}
+
 ````
 ````VB.NET
-        Using stream As Stream = File.Open("test.zip", FileMode.Open)
-            Dim encryptionSettings As New DefaultEncryptionSettings()
-            encryptionSettings.Password = "password"
-            Using archive As New ZipArchive(stream, ZipArchiveMode.Read, False, Nothing, Nothing, encryptionSettings)
-                ' Display the list of the files in the selected zip file using the ZipArchive.Entries property. 
-            End Using
+Using stream As Stream = File.Open("test.zip", FileMode.Open)
+    Dim encryptionSettings As New DefaultEncryptionSettings()
+    encryptionSettings.Password = "password"
+    Using archive As New ZipArchive(stream, ZipArchiveMode.Read, False, Nothing, Nothing, encryptionSettings)
+        ' Display the list of the files in the selected zip file using the ZipArchive.Entries property. 
+    End Using
+End Using
 
-        End Using
-        '
 ````
 
 {{endregion}} 

@@ -27,13 +27,14 @@ You can use the following code snippet to create a __Section__ element and add i
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_0}} 
 
 ````C#
-            Telerik.Windows.Documents.Flow.Model.Section section = new Telerik.Windows.Documents.Flow.Model.Section(document);
-            document.Sections.Add(section);
+Telerik.Windows.Documents.Flow.Model.Section section = new Telerik.Windows.Documents.Flow.Model.Section(document);
+document.Sections.Add(section);
+
 ````
 ````VB.NET
-            Dim section As New Telerik.Windows.Documents.Flow.Model.Section(document)
-            document.Sections.Add(section)
-            '
+Dim section As New Telerik.Windows.Documents.Flow.Model.Section(document)
+document.Sections.Add(section)
+
 ````
 
 {{endregion}} 
@@ -44,11 +45,12 @@ You can also use the __AddSection()__ method of the __Sections__ collection of a
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_1}} 
 
 ````C#
-            Telerik.Windows.Documents.Flow.Model.Section section = document.Sections.AddSection();
+Telerik.Windows.Documents.Flow.Model.Section section = document.Sections.AddSection();
+
 ````
 ````VB.NET
-            Dim section As Telerik.Windows.Documents.Flow.Model.Section = document.Sections.AddSection()
-            '
+Dim section As Telerik.Windows.Documents.Flow.Model.Section = document.Sections.AddSection()
+
 ````
 
 {{endregion}} 
@@ -63,11 +65,12 @@ The __Section__ exposes several properties that allow you to customize the layou
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_2}} 
 
 ````C#
-            section.PageMargins = new Telerik.Windows.Documents.Primitives.Padding(10, 10, 5, 5);
+section.PageMargins = new Telerik.Windows.Documents.Primitives.Padding(10, 10, 5, 5);
+
 ````
 ````VB.NET
-            section.PageMargins = New Telerik.Windows.Documents.Primitives.Padding(10, 10, 5, 5)
-            '
+section.PageMargins = New Telerik.Windows.Documents.Primitives.Padding(10, 10, 5, 5)
+
 ````
 
 {{endregion}} 
@@ -78,11 +81,12 @@ The __Section__ exposes several properties that allow you to customize the layou
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_3}} 
 
 ````C#
-            section.PageOrientation = PageOrientation.Landscape;
+section.PageOrientation = PageOrientation.Landscape;
+
 ````
 ````VB.NET
-            section.PageOrientation = PageOrientation.Landscape
-            '
+section.PageOrientation = PageOrientation.Landscape
+
 ````
 
 {{endregion}} 
@@ -93,11 +97,12 @@ The __Section__ exposes several properties that allow you to customize the layou
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_4}} 
 
 ````C#
-            section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4);
+section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4);
+
 ````
 ````VB.NET
-            section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4)
-            '
+section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4)
+
 ````
 
 {{endregion}}
@@ -108,17 +113,18 @@ The __Section__ exposes several properties that allow you to customize the layou
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_5}} 
 
 ````C#
-            Telerik.Windows.Documents.Flow.Model.Header header = section.Headers.Add();
-            Telerik.Windows.Documents.Flow.Model.Paragraph paragraph = header.Blocks.AddParagraph();
-            paragraph.TextAlignment = Alignment.Right;
-            paragraph.Inlines.AddRun("This is a sample header.");
+Telerik.Windows.Documents.Flow.Model.Header header = section.Headers.Add();
+Telerik.Windows.Documents.Flow.Model.Paragraph paragraph = header.Blocks.AddParagraph();
+paragraph.TextAlignment = Alignment.Right;
+paragraph.Inlines.AddRun("This is a sample header.");
+
 ````
 ````VB.NET
-            Dim header As Telerik.Windows.Documents.Flow.Model.Header = section.Headers.Add()
-            Dim paragraph As Telerik.Windows.Documents.Flow.Model.Paragraph = header.Blocks.AddParagraph()
-            paragraph.TextAlignment = Alignment.Right
-            paragraph.Inlines.AddRun("This is a sample header.")
-            '
+Dim header As Telerik.Windows.Documents.Flow.Model.Header = section.Headers.Add()
+Dim paragraph As Telerik.Windows.Documents.Flow.Model.Paragraph = header.Blocks.AddParagraph()
+paragraph.TextAlignment = Alignment.Right
+paragraph.Inlines.AddRun("This is a sample header.")
+
 ````
 
 {{endregion}} 
@@ -185,13 +191,14 @@ Section derives [BlockContainerBase](http://www.telerik.com/help/winforms/allmem
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_6}} 
 
 ````C#
-            Telerik.Windows.Documents.Flow.Model.Paragraph paragraph = section.Blocks.AddParagraph();
-            Telerik.Windows.Documents.Flow.Model.Table table = section.Blocks.AddTable();
+Telerik.Windows.Documents.Flow.Model.Paragraph paragraph = section.Blocks.AddParagraph();
+Telerik.Windows.Documents.Flow.Model.Table table = section.Blocks.AddTable();
+
 ````
 ````VB.NET
-            Dim paragraph As Telerik.Windows.Documents.Flow.Model.Paragraph = section.Blocks.AddParagraph()
-            Dim table As Telerik.Windows.Documents.Flow.Model.Table = section.Blocks.AddTable()
-            '
+Dim paragraph As Telerik.Windows.Documents.Flow.Model.Paragraph = section.Blocks.AddParagraph()
+Dim table As Telerik.Windows.Documents.Flow.Model.Table = section.Blocks.AddTable()
+
 ````
 
 {{endregion}} 
@@ -204,11 +211,12 @@ The __Section__ can be rotated in order to visualize its pages in Portrait or La
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_7}} 
 
 ````C#
-            section.Rotate(PageOrientation.Landscape);
+section.Rotate(PageOrientation.Landscape);
+
 ````
 ````VB.NET
-        section.Rotate(PageOrientation.Landscape)
-        '
+section.Rotate(PageOrientation.Landscape)
+
 ````
 
 {{endregion}} 

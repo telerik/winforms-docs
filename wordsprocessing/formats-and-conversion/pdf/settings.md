@@ -32,32 +32,27 @@ __Example 1__ demonstrates how to export a __RadFlowDocument__ instance to PDF a
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingPdfSettings.vb region=radwordsprocessing-formats-and-conversion-pdf-settings_0}} 
 
 ````C#
+Telerik.Windows.Documents.Flow.FormatProviders.Pdf.PdfFormatProvider provider = new Telerik.Windows.Documents.Flow.FormatProviders.Pdf.PdfFormatProvider();
+Telerik.Windows.Documents.Flow.FormatProviders.Pdf.Export.PdfExportSettings settings = new Telerik.Windows.Documents.Flow.FormatProviders.Pdf.Export.PdfExportSettings();
+settings.ComplianceLevel = Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export.PdfComplianceLevel.PdfA2B;
+provider.ExportSettings = settings;
+using (Stream output = File.OpenWrite("sample.pdf"))
+{
+    Telerik.Windows.Documents.Flow.Model.RadFlowDocument document = CreateRadFlowDocument();
+    provider.Export(document, output);
+}
 
-            Telerik.Windows.Documents.Flow.FormatProviders.Pdf.PdfFormatProvider provider = new Telerik.Windows.Documents.Flow.FormatProviders.Pdf.PdfFormatProvider();
-            Telerik.Windows.Documents.Flow.FormatProviders.Pdf.Export.PdfExportSettings settings = new Telerik.Windows.Documents.Flow.FormatProviders.Pdf.Export.PdfExportSettings();
-            settings.ComplianceLevel = Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export.PdfComplianceLevel.PdfA2B;
-
-            provider.ExportSettings = settings;
-
-            using (Stream output = File.OpenWrite("sample.pdf"))
-            {
-                Telerik.Windows.Documents.Flow.Model.RadFlowDocument document = CreateRadFlowDocument();
-                provider.Export(document, output);
-            }
 ````
 ````VB.NET
+Dim provider As New Telerik.Windows.Documents.Flow.FormatProviders.Pdf.PdfFormatProvider()
+Dim settings As New Telerik.Windows.Documents.Flow.FormatProviders.Pdf.Export.PdfExportSettings()
+settings.ComplianceLevel = Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export.PdfComplianceLevel.PdfA2B
+provider.ExportSettings = settings
+Using output As Stream = File.OpenWrite("sample.pdf")
+    Dim document As Telerik.Windows.Documents.Flow.Model.RadFlowDocument = CreateRadFlowDocument()
+    provider.Export(document, output)
+End Using
 
-        Dim provider As New Telerik.Windows.Documents.Flow.FormatProviders.Pdf.PdfFormatProvider()
-        Dim settings As New Telerik.Windows.Documents.Flow.FormatProviders.Pdf.Export.PdfExportSettings()
-        settings.ComplianceLevel = Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export.PdfComplianceLevel.PdfA2B
-
-        provider.ExportSettings = settings
-
-        Using output As Stream = File.OpenWrite("sample.pdf")
-            Dim document As Telerik.Windows.Documents.Flow.Model.RadFlowDocument = CreateRadFlowDocument()
-            provider.Export(document, output)
-        End Using
-        '
 ````
 
 {{endregion}} 
@@ -81,11 +76,12 @@ __Example 2__ shows how to register a custom *ChineseCountingConverter* class in
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingPdfSettings.vb region=radwordsprocessing-formats-and-conversion-pdf-settings_1}} 
 
 ````C#
-            provider.ExportSettings.ExtensibilityManager.RegisterNumberingStyleConverter(Telerik.Windows.Documents.Flow.Model.Lists.NumberingStyle.ChineseCounting, new ChineseCountingConverter());
+provider.ExportSettings.ExtensibilityManager.RegisterNumberingStyleConverter(Telerik.Windows.Documents.Flow.Model.Lists.NumberingStyle.ChineseCounting, new ChineseCountingConverter());
+
 ````
 ````VB.NET
-        provider.ExportSettings.ExtensibilityManager.RegisterNumberingStyleConverter(Telerik.Windows.Documents.Flow.Model.Lists.NumberingStyle.ChineseCounting, New ChineseCountingConverter())
-        '
+provider.ExportSettings.ExtensibilityManager.RegisterNumberingStyleConverter(Telerik.Windows.Documents.Flow.Model.Lists.NumberingStyle.ChineseCounting, New ChineseCountingConverter())
+
 ````
 
 {{endregion}} 

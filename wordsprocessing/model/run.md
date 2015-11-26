@@ -24,14 +24,14 @@ The following code snippet creates a __Run__ elements and adds it to a [Paragrap
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRun.vb region=radwordsprocessing-model-run_0}} 
 
 ````C#
-            Run run = new Run(document);
-            paragraph.Inlines.Add(run);
+Run run = new Run(document);
+paragraph.Inlines.Add(run);
+
 ````
 ````VB.NET
-            Dim run As New Run(document)
-            paragraph.Inlines.Add(run)
+Dim run As New Run(document)
+paragraph.Inlines.Add(run)
 
-            '
 ````
 
 {{endregion}} 
@@ -45,13 +45,14 @@ You can add a run at a specific index in the __Inlines__ collection of a paragra
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRun.vb region=radwordsprocessing-model-run_1}} 
 
 ````C#
-            Run run = new Run(document);
-            paragraph.Inlines.Insert(0, run);
+Run run = new Run(document);
+paragraph.Inlines.Insert(0, run);
+
 ````
 ````VB.NET
-            Dim run As New Run(document)
-            paragraph.Inlines.Insert(0, run)
-            '
+Dim run As New Run(document)
+paragraph.Inlines.Insert(0, run)
+
 ````
 
 {{endregion}} 
@@ -62,19 +63,18 @@ You can also use the __AddRun()__ method of the __Inlines__ collection of a para
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRun.vb region=radwordsprocessing-model-run_2}} 
 
 ````C#
-            // Adds an empty run.
-            Run run1 = paragraph.Inlines.AddRun();
+// Adds an empty run.
+Run run1 = paragraph.Inlines.AddRun();
+// Adds a run and set the text to the text property.
+Run run2 = paragraph.Inlines.AddRun("The text.");
 
-            // Adds a run and set the text to the text property.
-            Run run2 = paragraph.Inlines.AddRun("The text.");
 ````
 ````VB.NET
-            ' Adds an empty run.
-            Dim run1 As Run = paragraph.Inlines.AddRun()
+' Adds an empty run.
+Dim run1 As Run = paragraph.Inlines.AddRun()
+' Adds a run and set the text to the text property.
+Dim run2 As Run = paragraph.Inlines.AddRun("The text.")
 
-            ' Adds a run and set the text to the text property.
-            Dim run2 As Run = paragraph.Inlines.AddRun("The text.")
-            '
 ````
 
 {{endregion}}
@@ -85,23 +85,20 @@ Inserting text in the document can also be achieved with the [](6a2a5fb7-6df2-48
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRun.vb region=radwordsprocessing-model-run_3}} 
 
 ````C#
-            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+// Adds new run to the document
+Run run1 = editor.InsertText("First run ");
+// Adds new run and starts new paragraph
+Run run2 = editor.InsertLine("Second run");
 
-            // Adds new run to the document
-            Run run1 = editor.InsertText("First run ");
-
-            // Adds new run and starts new paragraph
-            Run run2 = editor.InsertLine("Second run");
 ````
 ````VB.NET
-            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+' Adds new run to the document
+Dim run1 As Run = editor.InsertText("First run ")
+' Adds new run and starts new paragraph
+Dim run2 As Run = editor.InsertLine("Second run")
 
-            ' Adds new run to the document
-            Dim run1 As Run = editor.InsertText("First run ")
-
-            ' Adds new run and starts new paragraph
-            Dim run2 As Run = editor.InsertLine("Second run")
-            '
 ````
 
 {{endregion}}

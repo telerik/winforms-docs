@@ -41,15 +41,16 @@ Here is how to create a document with a single __Date__ field using __RadFlowDoc
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_0}} 
 
 ````C#
-            RadFlowDocument document = new RadFlowDocument();
-            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
-            editor.InsertField("DATE", "10/11/2012");
+RadFlowDocument document = new RadFlowDocument();
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
+editor.InsertField("DATE", "10/11/2012");
+
 ````
 ````VB.NET
-        Dim document As New RadFlowDocument()
-        Dim editor As New RadFlowDocumentEditor(document)
-        editor.InsertField("DATE", "10/11/2012")
-        '
+Dim document As New RadFlowDocument()
+Dim editor As New RadFlowDocumentEditor(document)
+editor.InsertField("DATE", "10/11/2012")
+
 ````
 
 {{endregion}} 
@@ -60,35 +61,32 @@ You can also create and insert all the parts of the field manually by creating a
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_1}} 
 
 ````C#
-            // Create a document with paragraph            
-            RadFlowDocument document = new RadFlowDocument();
-            Paragraph paragraph = document.Sections.AddSection().Blocks.AddParagraph();
+// Create a document with paragraph            
+RadFlowDocument document = new RadFlowDocument();
+Paragraph paragraph = document.Sections.AddSection().Blocks.AddParagraph();
+// Create the field info
+FieldInfo field = new FieldInfo(document);
+// Create and add all the inlines to the paragraph.
+paragraph.Inlines.Add(field.Start);
+paragraph.Inlines.AddRun("AUTHOR");
+paragraph.Inlines.Add(field.Separator);
+paragraph.Inlines.AddRun("John Doe");
+paragraph.Inlines.Add(field.End);
 
-            // Create the field info
-            FieldInfo field = new FieldInfo(document);
-
-            // Create and add all the inlines to the paragraph.
-            paragraph.Inlines.Add(field.Start);
-            paragraph.Inlines.AddRun("AUTHOR");
-            paragraph.Inlines.Add(field.Separator);
-            paragraph.Inlines.AddRun("John Doe");
-            paragraph.Inlines.Add(field.End);
 ````
 ````VB.NET
-        ' Create a document with paragraph 
-        Dim document As New RadFlowDocument()
-        Dim paragraph As Paragraph = document.Sections.AddSection().Blocks.AddParagraph()
+' Create a document with paragraph 
+Dim document As New RadFlowDocument()
+Dim paragraph As Paragraph = document.Sections.AddSection().Blocks.AddParagraph()
+' Create the field info
+Dim field As New FieldInfo(document)
+' Create and add all the inlines to the paragraph.
+paragraph.Inlines.Add(field.Start)
+paragraph.Inlines.AddRun("AUTHOR")
+paragraph.Inlines.Add(field.Separator)
+paragraph.Inlines.AddRun("John Doe")
+paragraph.Inlines.Add(field.[End])
 
-        ' Create the field info
-        Dim field As New FieldInfo(document)
-
-        ' Create and add all the inlines to the paragraph.
-        paragraph.Inlines.Add(field.Start)
-        paragraph.Inlines.AddRun("AUTHOR")
-        paragraph.Inlines.Add(field.Separator)
-        paragraph.Inlines.AddRun("John Doe")
-        paragraph.Inlines.Add(field.[End])
-        '
 ````
 
 {{endregion}} 

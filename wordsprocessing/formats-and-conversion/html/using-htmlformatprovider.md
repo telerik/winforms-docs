@@ -34,18 +34,19 @@ __Example 1__ shows how to use HtmlFormatProvider to import an HTML document fro
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.vb region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_0}} 
 
 ````C#
-            using (Stream input = File.Create(@"Sample.html"))
-            {
-                HtmlFormatProvider provider = new HtmlFormatProvider();
-                RadFlowDocument document = provider.Import(input);
-            }
+using (Stream input = File.Create(@"Sample.html"))
+{
+    HtmlFormatProvider provider = new HtmlFormatProvider();
+    RadFlowDocument document = provider.Import(input);
+}
+
 ````
 ````VB.NET
-            Using input As Stream = File.Create("Sample.html")
-                Dim provider As New HtmlFormatProvider()
-                Dim document As RadFlowDocument = provider.Import(input)
-            End Using
-            '
+Using input As Stream = File.Create("Sample.html")
+    Dim provider As New HtmlFormatProvider()
+    Dim document As RadFlowDocument = provider.Import(input)
+End Using
+
 ````
 
 {{endregion}} 
@@ -61,15 +62,16 @@ __Example 2__ shows how you can import an HTML string.
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.vb region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_1}} 
 
 ````C#
-            string html = "<p>hello world!</p>";
-            HtmlFormatProvider provider = new HtmlFormatProvider();
-            RadFlowDocument document = provider.Import(html);
+string html = "<p>hello world!</p>";
+HtmlFormatProvider provider = new HtmlFormatProvider();
+RadFlowDocument document = provider.Import(html);
+
 ````
 ````VB.NET
-            Dim html As String = "<p>hello world!</p>"
-            Dim provider As New HtmlFormatProvider()
-            Dim document As RadFlowDocument = provider.Import(html)
-            '
+Dim html As String = "<p>hello world!</p>"
+Dim provider As New HtmlFormatProvider()
+Dim document As RadFlowDocument = provider.Import(html)
+
 ````
 
 {{endregion}} 
@@ -90,20 +92,21 @@ __Example 3__ shows how to use the HtmlFormatProvider to export an instance of R
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.vb region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_2}} 
 
 ````C#
-            HtmlFormatProvider provider = new HtmlFormatProvider();
-            using (Stream output = File.Create("Sample.html"))
-            {
-                RadFlowDocument document = CreateRadFlowDocument();
-                provider.Export(document, output);
-            }
+HtmlFormatProvider provider = new HtmlFormatProvider();
+using (Stream output = File.Create("Sample.html"))
+{
+    RadFlowDocument document = CreateRadFlowDocument();
+    provider.Export(document, output);
+}
+
 ````
 ````VB.NET
-            Dim provider As New HtmlFormatProvider()
-            Using output As Stream = File.Create("Sample.html")
-                Dim document As RadFlowDocument = CreateRadFlowDocument()
-                provider.Export(document, output)
-            End Using
-            '
+Dim provider As New HtmlFormatProvider()
+Using output As Stream = File.Create("Sample.html")
+    Dim document As RadFlowDocument = CreateRadFlowDocument()
+    provider.Export(document, output)
+End Using
+
 ````
 
 {{endregion}} 
@@ -119,15 +122,16 @@ You can also export the document to a string variable like shown in __Example 4_
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Html\WordsProcessingUsingHtmlFormatProvider.vb region=radwordsprocessing-formats-and-conversion-html-htmlformatprovider_3}} 
 
 ````C#
-            RadFlowDocument document = CreateRadFlowDocument();
-            HtmlFormatProvider provider = new HtmlFormatProvider();
-            string html = provider.Export(document);
+RadFlowDocument document = CreateRadFlowDocument();
+HtmlFormatProvider provider = new HtmlFormatProvider();
+string html = provider.Export(document);
+
 ````
 ````VB.NET
-            Dim document As RadFlowDocument = CreateRadFlowDocument()
-            Dim provider As New HtmlFormatProvider()
-            Dim html As String = provider.Export(document)
-            '
+Dim document As RadFlowDocument = CreateRadFlowDocument()
+Dim provider As New HtmlFormatProvider()
+Dim html As String = provider.Export(document)
+
 ````
 
 {{endregion}}

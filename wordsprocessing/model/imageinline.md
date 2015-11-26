@@ -24,13 +24,14 @@ You can use the following code snippet to create an ImageInline and add it to a 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_0}} 
 
 ````C#
-            ImageInline imageInline = new ImageInline(document);
-            paragraph.Inlines.Add(imageInline);
+ImageInline imageInline = new ImageInline(document);
+paragraph.Inlines.Add(imageInline);
+
 ````
 ````VB.NET
-        Dim imageInline As New ImageInline(document)
-        paragraph.Inlines.Add(imageInline)
-        '
+Dim imageInline As New ImageInline(document)
+paragraph.Inlines.Add(imageInline)
+
 ````
 
 {{endregion}}
@@ -44,13 +45,14 @@ You can add an image at a specific index in the __Inlines__ collection of a para
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_1}} 
 
 ````C#
-            ImageInline imageInline = new ImageInline(document);
-            paragraph.Inlines.Insert(0, imageInline);
+ImageInline imageInline = new ImageInline(document);
+paragraph.Inlines.Insert(0, imageInline);
+
 ````
 ````VB.NET
-        Dim imageInline As New ImageInline(document)
-        paragraph.Inlines.Insert(0, imageInline)
-        '
+Dim imageInline As New ImageInline(document)
+paragraph.Inlines.Insert(0, imageInline)
+
 ````
 
 {{endregion}} 
@@ -61,11 +63,12 @@ You can also use the __AddImageInline()__ method of the __Inlines__ collection o
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_2}} 
 
 ````C#
-            ImageInline imageInline = paragraph.Inlines.AddImageInline();
+ImageInline imageInline = paragraph.Inlines.AddImageInline();
+
 ````
 ````VB.NET
-        Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
-        '
+Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
+
 ````
 
 {{endregion}} 
@@ -76,22 +79,22 @@ Inserting __ImageInline__ element in RadFlowDocument can also be achieved with[R
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingImageInline.vb region=radwordsprocessing-model-imageinline_3}} 
 
 ````C#
-            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
            
-            using (MemoryStream ms = new MemoryStream())
-            {
-                System.Drawing.Image.FromFile(@"C:\img\delete.png").Save(ms, System.Drawing.Imaging.ImageFormat.Png);     
-                editor.InsertImageInline(ms, "png", new Size(118, 28));
-            }
+using (MemoryStream ms = new MemoryStream())
+{
+    System.Drawing.Image.FromFile(@"C:\img\delete.png").Save(ms, System.Drawing.Imaging.ImageFormat.Png);     
+    editor.InsertImageInline(ms, "png", new Size(118, 28));
+}
+
 ````
 ````VB.NET
-        Dim editor As New RadFlowDocumentEditor(document)
+Dim editor As New RadFlowDocumentEditor(document)
+Using ms As New MemoryStream()
+    Image.FromFile("C:\img\delete.png").Save(ms, System.Drawing.Imaging.ImageFormat.Png)
+    editor.InsertImageInline(ms, "png", New System.Windows.Size(118, 28))
+End Using
 
-        Using ms As New MemoryStream()
-            Image.FromFile("C:\img\delete.png").Save(ms, System.Drawing.Imaging.ImageFormat.Png)
-            editor.InsertImageInline(ms, "png", New System.Windows.Size(118, 28))
-        End Using
-        '
 ````
 
 {{endregion}} 

@@ -29,17 +29,18 @@ The following code snippet shows how you can create and specify particular expor
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-rtf-settings_0}} 
 
 ````C#
-            RtfFormatProvider provider = new RtfFormatProvider();
-            RtfExportSettings exportSettings = new RtfExportSettings();
-            exportSettings.ExportImagesInCompatibilityMode = true;
-            provider.ExportSettings = exportSettings;
+RtfFormatProvider provider = new RtfFormatProvider();
+RtfExportSettings exportSettings = new RtfExportSettings();
+exportSettings.ExportImagesInCompatibilityMode = true;
+provider.ExportSettings = exportSettings;
+
 ````
 ````VB.NET
-            Dim provider As New RtfFormatProvider()
-            Dim exportSettings As New RtfExportSettings()
-            exportSettings.ExportImagesInCompatibilityMode = True
-            provider.ExportSettings = exportSettings
-            '
+Dim provider As New RtfFormatProvider()
+Dim exportSettings As New RtfExportSettings()
+exportSettings.ExportImagesInCompatibilityMode = True
+provider.ExportSettings = exportSettings
+
 ````
 
 {{endregion}}

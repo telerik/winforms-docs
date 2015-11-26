@@ -31,22 +31,20 @@ The following code snippet creates and inserts a Table to a Section.
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_0}} 
 
 ````C#
-            Table emptyTable = new Table(document); // Table object with 0 rows and 0 columns.
-            section.Blocks.Add(emptyTable);
+Table emptyTable = new Table(document); // Table object with 0 rows and 0 columns.
+section.Blocks.Add(emptyTable);
+Table table = new Table(document, 10, 5); // Table object with 10 rows and 5 columns.
+section.Blocks.Add(table);
 
-            Table table = new Table(document, 10, 5); // Table object with 10 rows and 5 columns.
-            section.Blocks.Add(table);
 ````
 ````VB.NET
-            Dim emptyTable As New Table(document)
-            ' Table object with 0 rows and 0 columns.
-            section.Blocks.Add(emptyTable)
+Dim emptyTable As New Table(document)
+' Table object with 0 rows and 0 columns.
+section.Blocks.Add(emptyTable)
+Dim table As New Table(document, 10, 5)
+' Table object with 10 rows and 5 columns.
+section.Blocks.Add(table)
 
-            Dim table As New Table(document, 10, 5)
-            ' Table object with 10 rows and 5 columns.
-        section.Blocks.Add(table)
-
-            '
 ````
 
 {{endregion}} 
@@ -60,13 +58,14 @@ You can add a table at a specific index in the __Blocks__ collection of a __Bloc
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_1}} 
 
 ````C#
-            Table table = new Table(document, 10, 5);
-            section.Blocks.Insert(0, table);
+Table table = new Table(document, 10, 5);
+section.Blocks.Insert(0, table);
+
 ````
 ````VB.NET
-            Dim table As New Table(document, 10, 5)
-            section.Blocks.Insert(0, table)
-            '
+Dim table As New Table(document, 10, 5)
+section.Blocks.Insert(0, table)
+
 ````
 
 {{endregion}} 
@@ -77,11 +76,12 @@ You can also use the __AddTable()__ method of the __Blocks__ collection of a __B
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_2}} 
 
 ````C#
-            Table table = section.Blocks.AddTable();
+Table table = section.Blocks.AddTable();
+
 ````
 ````VB.NET
-            Dim table As Table = section.Blocks.AddTable()
-            '
+Dim table As Table = section.Blocks.AddTable()
+
 ````
 
 {{endregion}} 
@@ -92,13 +92,14 @@ Inserting a new Table in the document can also be achieved with the [RadFlowDocu
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_3}} 
 
 ````C#
-            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
-            Table table = editor.InsertTable(5, 3);
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+Table table = editor.InsertTable(5, 3);
+
 ````
 ````VB.NET
-            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-            Dim table As Table = editor.InsertTable(5, 3)
-            '
+Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+Dim table As Table = editor.InsertTable(5, 3)
+
 ````
 
 {{endregion}} 
@@ -177,47 +178,40 @@ The following code snippet demonstrates how to add a __Table__ with 5 rows and 1
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTable.vb region=radwordsprocessing-model-table_4}} 
 
 ````C#
-            RadFlowDocument document = new RadFlowDocument();
+RadFlowDocument document = new RadFlowDocument();
+Table table = document.Sections.AddSection().Blocks.AddTable();
+document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId);
+table.StyleId = BuiltInStyleNames.TableGridStyleId;
+ThemableColor cellBackground = new ThemableColor(Colors.Beige);
+for (int i = 0; i < 5; i++)
+{
+    TableRow row = table.Rows.AddTableRow();
+    for (int j = 0; j < 10; j++)
+    {
+        TableCell cell = row.Cells.AddTableCell();
+        cell.Blocks.AddParagraph().Inlines.AddRun(string.Format("Cell {0}, {1}", i, j));
+        cell.Shading.BackgroundColor = cellBackground;
+        cell.PreferredWidth = new TableWidthUnit(50);
+    }
+}
 
-            Table table = document.Sections.AddSection().Blocks.AddTable();
-            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId);
-            table.StyleId = BuiltInStyleNames.TableGridStyleId;
-
-            ThemableColor cellBackground = new ThemableColor(Colors.Beige);
-
-            for (int i = 0; i < 5; i++)
-            {
-                TableRow row = table.Rows.AddTableRow();
-
-                for (int j = 0; j < 10; j++)
-                {
-                    TableCell cell = row.Cells.AddTableCell();
-                    cell.Blocks.AddParagraph().Inlines.AddRun(string.Format("Cell {0}, {1}", i, j));
-                    cell.Shading.BackgroundColor = cellBackground;
-                    cell.PreferredWidth = new TableWidthUnit(50);
-                }
-            }
 ````
 ````VB.NET
-            Dim document As New RadFlowDocument()
+Dim document As New RadFlowDocument()
+Dim table As Table = document.Sections.AddSection().Blocks.AddTable()
+document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
+table.StyleId = BuiltInStyleNames.TableGridStyleId
+Dim cellBackground As New ThemableColor(Colors.Beige)
+For i As Integer = 0 To 4
+    Dim row As TableRow = table.Rows.AddTableRow()
+    For j As Integer = 0 To 9
+        Dim cell As TableCell = row.Cells.AddTableCell()
+        cell.Blocks.AddParagraph().Inlines.AddRun(String.Format("Cell {0}, {1}", i, j))
+        cell.Shading.BackgroundColor = cellBackground
+        cell.PreferredWidth = New TableWidthUnit(50)
+    Next
+Next
 
-            Dim table As Table = document.Sections.AddSection().Blocks.AddTable()
-            document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId)
-        table.StyleId = BuiltInStyleNames.TableGridStyleId
-
-            Dim cellBackground As New ThemableColor(Colors.Beige)
-
-            For i As Integer = 0 To 4
-                Dim row As TableRow = table.Rows.AddTableRow()
-
-                For j As Integer = 0 To 9
-                    Dim cell As TableCell = row.Cells.AddTableCell()
-                    cell.Blocks.AddParagraph().Inlines.AddRun(String.Format("Cell {0}, {1}", i, j))
-                    cell.Shading.BackgroundColor = cellBackground
-                    cell.PreferredWidth = New TableWidthUnit(50)
-                Next
-            Next
-            '
 ````
 
 {{endregion}} 

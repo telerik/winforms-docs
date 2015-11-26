@@ -53,16 +53,17 @@ You can create a compressed stream by initializing new instance of the __Compres
 
 ````C#
             
-            using (CompressedStream compressedStream = new CompressedStream(outputStream, StreamOperationMode.Write, new DeflateSettings()))
-            {
-                // write to compressed stream
-            }
+using (CompressedStream compressedStream = new CompressedStream(outputStream, StreamOperationMode.Write, new DeflateSettings()))
+{
+    // write to compressed stream
+}
+
 ````
 ````VB.NET
-        Using compressedStream As New CompressedStream(outputStream, StreamOperationMode.Write, New DeflateSettings())
-            ' write to compressed stream
-        End Using
-        '
+Using compressedStream As New CompressedStream(outputStream, StreamOperationMode.Write, New DeflateSettings())
+    ' write to compressed stream
+End Using
+
 ````
 
 {{endregion}} 
@@ -74,18 +75,19 @@ If you want to compress a specific stream (*inputStream*), you need to copy it t
 
 ````C#
             
-            using (CompressedStream compressedStream = new CompressedStream(outputStream, StreamOperationMode.Write, new DeflateSettings()))
-            {
-                inputStream.CopyTo(compressedStream);
-                compressedStream.Flush();
-            }
+using (CompressedStream compressedStream = new CompressedStream(outputStream, StreamOperationMode.Write, new DeflateSettings()))
+{
+    inputStream.CopyTo(compressedStream);
+    compressedStream.Flush();
+}
+
 ````
 ````VB.NET
-        Using compressedStream As New CompressedStream(outputStream, StreamOperationMode.Write, New DeflateSettings())
-            inputStream.CopyTo(compressedStream)
-            compressedStream.Flush()
-        End Using
-        '
+Using compressedStream As New CompressedStream(outputStream, StreamOperationMode.Write, New DeflateSettings())
+    inputStream.CopyTo(compressedStream)
+    compressedStream.Flush()
+End Using
+
 ````
 
 {{endregion}} 
@@ -99,16 +101,17 @@ Decompressing a stream is just as simple as compressing it. All you need to do i
 
 ````C#
     
-            using (CompressedStream compressedStream = new CompressedStream(inputStream, StreamOperationMode.Read, new DeflateSettings()))
-            {
-                compressedStream.CopyTo(outputStream);
-            }
+using (CompressedStream compressedStream = new CompressedStream(inputStream, StreamOperationMode.Read, new DeflateSettings()))
+{
+    compressedStream.CopyTo(outputStream);
+}
+
 ````
 ````VB.NET
-        Using compressedStream As New CompressedStream(inputStream, StreamOperationMode.Read, New DeflateSettings())
-            compressedStream.CopyTo(outputStream)
-        End Using
-        '
+Using compressedStream As New CompressedStream(inputStream, StreamOperationMode.Read, New DeflateSettings())
+    compressedStream.CopyTo(outputStream)
+End Using
+
 ````
 
 {{endregion}} 

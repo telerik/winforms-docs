@@ -87,13 +87,14 @@ Here is example for equivalent getting of a value with CLR property and style pr
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_0}} 
 
 ````C#
-            bool keepOnOnePageActualValueShorthand = paragraph.KeepOnOnePage;
-            bool keepOnOnePageActualValue = paragraph.Properties.KeepOnOnePage.GetActualValue().Value;
+bool keepOnOnePageActualValueShorthand = paragraph.KeepOnOnePage;
+bool keepOnOnePageActualValue = paragraph.Properties.KeepOnOnePage.GetActualValue().Value;
+
 ````
 ````VB.NET
-            Dim keepOnOnePageActualValueShorthand As Boolean = paragraph.KeepOnOnePage
-            Dim keepOnOnePageActualValue As Boolean = paragraph.Properties.KeepOnOnePage.GetActualValue().Value
-            '
+Dim keepOnOnePageActualValueShorthand As Boolean = paragraph.KeepOnOnePage
+Dim keepOnOnePageActualValue As Boolean = paragraph.Properties.KeepOnOnePage.GetActualValue().Value
+
 ````
 
 {{endregion}}
@@ -104,13 +105,14 @@ Here is example for equivalent setting of a value with CLR property and style pr
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_1}} 
 
 ````C#
-            paragraph.KeepOnOnePage = true;
-            paragraph.Properties.KeepOnOnePage.LocalValue = true;
+paragraph.KeepOnOnePage = true;
+paragraph.Properties.KeepOnOnePage.LocalValue = true;
+
 ````
 ````VB.NET
-            paragraph.KeepOnOnePage = True
-            paragraph.Properties.KeepOnOnePage.LocalValue = True
-            '
+paragraph.KeepOnOnePage = True
+paragraph.Properties.KeepOnOnePage.LocalValue = True
+
 ````
 
 {{endregion}} 
@@ -125,11 +127,12 @@ Here is a code snippet illustrating how to get the local value of a style proper
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_2}} 
 
 ````C#
-            bool? keepOnOnePage = style.ParagraphProperties.KeepOnOnePage.LocalValue;
+bool? keepOnOnePage = style.ParagraphProperties.KeepOnOnePage.LocalValue;
+
 ````
 ````VB.NET
-            Dim keepOnOnePage As System.Nullable(Of Boolean) = style.ParagraphProperties.KeepOnOnePage.LocalValue
-            '
+Dim keepOnOnePage As System.Nullable(Of Boolean) = style.ParagraphProperties.KeepOnOnePage.LocalValue
+
 ````
 
 {{endregion}} 
@@ -140,11 +143,12 @@ Here is a code snippet illustrating how to get the actual value of style propert
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_3}} 
 
 ````C#
-            bool keepOnOnePage = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value;
+bool keepOnOnePage = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value;
+
 ````
 ````VB.NET
-            Dim keepOnOnePage As Boolean = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value
-            '
+Dim keepOnOnePage As Boolean = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value
+
 ````
 
 {{endregion}} 
@@ -159,11 +163,12 @@ The following code snippet illustrates how to get the default value for a style 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingStyleProperties.vb region=radwordsprocessing-concepts-style-properties_4}} 
 
 ````C#
-            bool keepOnOnePageDefaultValue = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value;
+bool keepOnOnePageDefaultValue = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value;
+
 ````
 ````VB.NET
-            Dim keepOnOnePageDefaultValue As Boolean = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value
-            '
+Dim keepOnOnePageDefaultValue As Boolean = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value
+
 ````
 
 {{endregion}} 

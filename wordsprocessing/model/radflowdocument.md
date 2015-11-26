@@ -25,11 +25,12 @@ The following code snippet shows how you can create a new __RadFlowDocument__:
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_0}} 
 
 ````C#
-            RadFlowDocument document = new RadFlowDocument();
+RadFlowDocument document = new RadFlowDocument();
+
 ````
 ````VB.NET
-        Dim document As New RadFlowDocument()
-        '
+Dim document As New RadFlowDocument()
+
 ````
 
 {{endregion}} 
@@ -62,13 +63,14 @@ You can create a __RadFlowDocument__ from scratch and add Sections to it as foll
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_1}} 
 
 ````C#
-            RadFlowDocument document = new RadFlowDocument();
-            document.Sections.AddSection();
+RadFlowDocument document = new RadFlowDocument();
+document.Sections.AddSection();
+
 ````
 ````VB.NET
-        Dim document As New RadFlowDocument()
-        document.Sections.AddSection()
-        '
+Dim document As New RadFlowDocument()
+document.Sections.AddSection()
+
 ````
 
 {{endregion}} 
@@ -81,11 +83,12 @@ Alternatively, you could create a section by passing to its constructor the docu
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_2}} 
 
 ````C#
-            Section section = new Section(document);
+Section section = new Section(document);
+
 ````
 ````VB.NET
-        Dim section As New Section(document)
-        '
+Dim section As New Section(document)
+
 ````
 
 {{endregion}} 
@@ -98,11 +101,12 @@ You can merge a __RadFlowDocument__ within another document by using the __Merge
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_3}} 
 
 ````C#
-            document.Merge(sourceDocument);
+document.Merge(sourceDocument);
+
 ````
 ````VB.NET
-        document.Merge(sourceDocument)
-        '
+document.Merge(sourceDocument)
+
 ````
 
 {{endregion}}
@@ -121,17 +125,16 @@ Additionally, you have the opportunity to specify the __MergeOptions__ which con
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_4}} 
 
 ````C#
-            MergeOptions mergeOptions = new MergeOptions();
-            mergeOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle;
+MergeOptions mergeOptions = new MergeOptions();
+mergeOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle;
+document.Merge(sourceDocument, mergeOptions);
 
-            document.Merge(sourceDocument, mergeOptions);
 ````
 ````VB.NET
-        Dim mergeOptions As New MergeOptions()
-        mergeOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle
+Dim mergeOptions As New MergeOptions()
+mergeOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle
+document.Merge(sourceDocument, mergeOptions)
 
-        document.Merge(sourceDocument, mergeOptions)
-        '
 ````
 
 {{endregion}} 
@@ -146,11 +149,12 @@ The next snippet shows how all fields in a document can be updated simultaneousl
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingRadFlowDocument.vb region=radwordsprocessing-model-radflowdocument_5}} 
 
 ````C#
-            document.UpdateFields();
+document.UpdateFields();
+
 ````
 ````VB.NET
-        document.UpdateFields()
-        '
+document.UpdateFields()
+
 ````
 
 {{endregion}} 

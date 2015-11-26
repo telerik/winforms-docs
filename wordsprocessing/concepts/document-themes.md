@@ -61,38 +61,39 @@ The following sample demonstrates how to create a __ThemeColorScheme__ object. N
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_0}} 
 
 ````C#
-            ThemeColorScheme colorScheme = new ThemeColorScheme(
-                "Mine",
-                Colors.Black,     // background 1
-                Colors.Blue,      // text 1
-                Colors.Brown,     // background 2
-                Colors.Cyan,      // text 2
-                Colors.DarkGray,  // accent 1
-                Colors.Gray,      // accent 2
-                Colors.Green,     // accent 3
-                Colors.LightGray, // accent 4
-                Colors.Magenta,   // accent 5
-                Colors.Orange,    // accent 6
-                Colors.Purple,    // hyperlink
-                Colors.Red);      // followedHyperlink
+ThemeColorScheme colorScheme = new ThemeColorScheme(
+    "Mine",
+    Colors.Black,     // background 1
+    Colors.Blue,      // text 1
+    Colors.Brown,     // background 2
+    Colors.Cyan,      // text 2
+    Colors.DarkGray,  // accent 1
+    Colors.Gray,      // accent 2
+    Colors.Green,     // accent 3
+    Colors.LightGray, // accent 4
+    Colors.Magenta,   // accent 5
+    Colors.Orange,    // accent 6
+    Colors.Purple,    // hyperlink
+    Colors.Red);      // followedHyperlink
+
 ````
 ````VB.NET
-        ' background 1
-        ' text 1
-        ' background 2
-        ' text 2
-        ' accent 1
-        ' accent 2
-        ' accent 3
-        ' accent 4
-        ' accent 5
-        ' accent 6
-        ' hyperlink
-        Dim colorScheme As New ThemeColorScheme("Mine", Colors.Black, Colors.Blue, Colors.Brown, Colors.Cyan, Colors.DarkGray, _
-            Colors.Gray, Colors.Green, Colors.LightGray, Colors.Magenta, Colors.Orange, Colors.Purple, _
-            Colors.Red)
-        ' followedHyperlink
-        '
+' background 1
+' text 1
+' background 2
+' text 2
+' accent 1
+' accent 2
+' accent 3
+' accent 4
+' accent 5
+' accent 6
+' hyperlink
+Dim colorScheme As New ThemeColorScheme("Mine", Colors.Black, Colors.Blue, Colors.Brown, Colors.Cyan, Colors.DarkGray, _
+    Colors.Gray, Colors.Green, Colors.LightGray, Colors.Magenta, Colors.Orange, Colors.Purple, _
+    Colors.Red)
+' followedHyperlink
+
 ````
 
 {{endregion}}
@@ -121,11 +122,12 @@ In order to create colors that depend on the current document theme, you need to
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_1}} 
 
 ````C#
-            ThemableColor themableColor = new ThemableColor(ThemeColorType.Accent1);
+ThemableColor themableColor = new ThemableColor(ThemeColorType.Accent1);
+
 ````
 ````VB.NET
-        Dim themableColor As New ThemableColor(ThemeColorType.Accent1)
-        '
+Dim themableColor As New ThemableColor(ThemeColorType.Accent1)
+
 ````
 
 {{endregion}}
@@ -144,16 +146,17 @@ The next snippet illustrates how to create a __ThemeFontScheme__ object. A name 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_2}} 
 
 ````C#
-            ThemeFontScheme fontScheme = new ThemeFontScheme(
-                "Mine",
-                "Times New Roman",   // Major
-                "Arial");		   // Minor
+ThemeFontScheme fontScheme = new ThemeFontScheme(
+    "Mine",
+    "Times New Roman",   // Major
+    "Arial");		   // Minor
+
 ````
 ````VB.NET
-        ' Major
-        Dim fontScheme As New ThemeFontScheme("Mine", "Times New Roman", "Arial")
-        ' Minor
-        '
+' Major
+Dim fontScheme As New ThemeFontScheme("Mine", "Times New Roman", "Arial")
+' Minor
+
 ````
 
 {{endregion}} 
@@ -173,11 +176,12 @@ When you need to create font that depends on the current document theme, you nee
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_3}} 
 
 ````C#
-            ThemableFontFamily themableFont = new ThemableFontFamily(ThemeFontType.Major);
+ThemableFontFamily themableFont = new ThemableFontFamily(ThemeFontType.Major);
+
 ````
 ````VB.NET
-        Dim themableFont As New ThemableFontFamily(ThemeFontType.Major)
-        '
+Dim themableFont As New ThemableFontFamily(ThemeFontType.Major)
+
 ````
 
 {{endregion}} 
@@ -190,11 +194,12 @@ Now that you have a color and a font schemes, you can create a new __DocumentThe
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_4}} 
 
 ````C#
-            DocumentTheme theme = new DocumentTheme("Mine", colorScheme, fontScheme);
+DocumentTheme theme = new DocumentTheme("Mine", colorScheme, fontScheme);
+
 ````
 ````VB.NET
-        Dim theme As New DocumentTheme("Mine", colorScheme, fontScheme)
-        '
+Dim theme As New DocumentTheme("Mine", colorScheme, fontScheme)
+
 ````
 
 {{endregion}} 
@@ -205,11 +210,12 @@ There are a number of predefined color and font schemes. You can find them in a 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_5}} 
 
 ````C#
-            DocumentTheme theme1 = new DocumentTheme("From Predefined schemes", PredefinedThemeSchemes.ColorSchemes[0], PredefinedThemeSchemes.FontSchemes[5]);
+DocumentTheme theme1 = new DocumentTheme("From Predefined schemes", PredefinedThemeSchemes.ColorSchemes[0], PredefinedThemeSchemes.FontSchemes[5]);
+
 ````
 ````VB.NET
-        Dim theme1 As New DocumentTheme("From Predefined schemes", PredefinedThemeSchemes.ColorSchemes(0), PredefinedThemeSchemes.FontSchemes(5))
-        '
+Dim theme1 As New DocumentTheme("From Predefined schemes", PredefinedThemeSchemes.ColorSchemes(0), PredefinedThemeSchemes.FontSchemes(5))
+
 ````
 
 {{endregion}}
@@ -220,13 +226,14 @@ Changing the current document theme is as easy as setting a single property:
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_6}} 
 
 ````C#
-            RadFlowDocument document = new RadFlowDocument();
-            document.Theme = theme;
+RadFlowDocument document = new RadFlowDocument();
+document.Theme = theme;
+
 ````
 ````VB.NET
-        Dim document As New RadFlowDocument()
-        document.Theme = theme
-        '
+Dim document As New RadFlowDocument()
+document.Theme = theme
+
 ````
 
 {{endregion}} 
@@ -237,20 +244,15 @@ In order to get the actual value from __ThemableColor__ or __ThemableFontFamily_
 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingDocumentThemes.cs region=radwordsprocessing-concepts-document-themes_7}} 
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingDocumentThemes.cs region=radwordsprocessing-concepts-document-themes_8}} 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_7}} 
-
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentThemes.vb region=radwordsprocessing-concepts-document-themes_8}} 
-
 ````C#
-            var actualFont = themableFont.GetActualValue(theme);
+Color actualColor = themableColor.GetActualValue(theme);
+// the actual color is the same as Accent1 color of the colorScheme
 
-            // the actualFont is the same as the Major font of the fontScheme
 ````
 ````VB.NET
-        Dim actualFont = themableFont.GetActualValue(theme)
+var actualFont = themableFont.GetActualValue(theme);
+// the actualFont is the same as the Major font of the fontScheme
 
-        ' the actualFont is the same as the Major font of the fontScheme
-        '
 ````
 
 {{endregion}} 

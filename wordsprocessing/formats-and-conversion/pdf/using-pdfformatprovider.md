@@ -47,21 +47,23 @@ The result from the method is a document that can be opened in any application t
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingUsingPdfFormatProvider.cs region=radwordsprocessing-formats-and-conversion-pdf-pdfformatprovider_0}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingUsingPdfFormatProvider.vb region=radwordsprocessing-formats-and-conversion-pdf-pdfformatprovider_0}} 
 
-{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingUsingPdfFormatProvider.cs region=example2}} 
-{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Pdf\WordsProcessingUsingPdfFormatProvider.vb region=example2}} 
-
 ````C#
-            RadFlowDocument document = CreateRadFlowDocument();
             
-            PdfFormatProvider provider = new PdfFormatProvider();
-            Telerik.Windows.Documents.Fixed.Model.RadFixedDocument fixedDocument = provider.ExportToFixedDocument(document);
+Telerik.Windows.Documents.Flow.FormatProviders.Pdf.PdfFormatProvider provider = new Telerik.Windows.Documents.Flow.FormatProviders.Pdf.PdfFormatProvider();
+using (Stream output = File.OpenWrite("sample.pdf"))
+{
+    Telerik.Windows.Documents.Flow.Model.RadFlowDocument document = CreateRadFlowDocument();
+    provider.Export(document, output);
+}
+
 ````
 ````VB.NET
-        Dim document As RadFlowDocument = CreateRadFlowDocument()
+Dim provider As New Telerik.Windows.Documents.Flow.FormatProviders.Pdf.PdfFormatProvider()
+Using output As Stream = File.OpenWrite("sample.pdf")
+    Dim document As Telerik.Windows.Documents.Flow.Model.RadFlowDocument = CreateRadFlowDocument()
+    provider.Export(document, output)
+End Using
 
-        Dim provider As New PdfFormatProvider()
-        Dim fixedDocument As RadFixedDocument = provider.ExportToFixedDocument(document)
-        '
 ````
 
 {{endregion}} 

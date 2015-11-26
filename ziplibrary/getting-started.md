@@ -31,21 +31,22 @@ The following code snippet demonstrates how to open existing Zip archive using t
 
 ````C#
             
-            using (Stream stream = File.Open("test.zip", FileMode.Open))
-            {
-                using (ZipArchive archive = new ZipArchive(stream))
-                {
-                    // Display the list of the files in the selected zip file using the ZipArchive.Entries property.
-                }
-            }
+using (Stream stream = File.Open("test.zip", FileMode.Open))
+{
+    using (ZipArchive archive = new ZipArchive(stream))
+    {
+        // Display the list of the files in the selected zip file using the ZipArchive.Entries property.
+    }
+}
+
 ````
 ````VB.NET
-        Using stream As Stream = File.Open("test.zip", FileMode.Open)
-            Using archive As New ZipArchive(stream)
-                ' Display the list of the files in the selected zip file using the ZipArchive.Entries property.
-            End Using
-        End Using
-        '
+Using stream As Stream = File.Open("test.zip", FileMode.Open)
+    Using archive As New ZipArchive(stream)
+        ' Display the list of the files in the selected zip file using the ZipArchive.Entries property.
+    End Using
+End Using
+
 ````
 
 {{endregion}} 
@@ -61,31 +62,32 @@ The example below shows how to create a new Zip archive using the __ZipArchive__
 {{source=..\SamplesVB\ZipLibrary\GettingStartedZipCode.vb region=create}} 
 
 ````C#
-                
-            using (Stream stream = File.Open("test.zip", FileMode.Create))
-            {
-                using (ZipArchive archive = new ZipArchive(stream, ZipArchiveMode.Create, false, null))
-                {
-                    using (ZipArchiveEntry entry = archive.CreateEntry("text.txt"))
-                    {
-                        StreamWriter writer = new StreamWriter(entry.Open());
-                        writer.WriteLine("Hello world!");
-                        writer.Flush();
-                    }
-                }
-            }
+    
+using (Stream stream = File.Open("test.zip", FileMode.Create))
+{
+    using (ZipArchive archive = new ZipArchive(stream, ZipArchiveMode.Create, false, null))
+    {
+        using (ZipArchiveEntry entry = archive.CreateEntry("text.txt"))
+        {
+            StreamWriter writer = new StreamWriter(entry.Open());
+            writer.WriteLine("Hello world!");
+            writer.Flush();
+        }
+    }
+}
+
 ````
 ````VB.NET
-        Using stream As Stream = File.Open("test.zip", FileMode.Create)
-            Using archive As New ZipArchive(stream, ZipArchiveMode.Create, False, Nothing)
-                Using entry As ZipArchiveEntry = archive.CreateEntry("text.txt")
-                    Dim writer As New StreamWriter(entry.Open())
-                    writer.WriteLine("Hello world!")
-                    writer.Flush()
-                End Using
-            End Using
+Using stream As Stream = File.Open("test.zip", FileMode.Create)
+    Using archive As New ZipArchive(stream, ZipArchiveMode.Create, False, Nothing)
+        Using entry As ZipArchiveEntry = archive.CreateEntry("text.txt")
+            Dim writer As New StreamWriter(entry.Open())
+            writer.WriteLine("Hello world!")
+            writer.Flush()
         End Using
-        '
+    End Using
+End Using
+
 ````
 
 {{endregion}} 

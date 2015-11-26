@@ -94,40 +94,6 @@ End Sub
 Private Sub RadTreeView1_NodeAdded(sender As Object, e As RadTreeViewEventArgs) Handles RadTreeView1.NodeAdded
     RadMessageBox.Show("Node {" + e.Node.Text + "} was added")
 End Sub
- Region
-ion "NodeRemoving"
-Private Sub RadTreeView1_NodeRemoving(sender As Object, e As RadTreeViewCancelEventArgs) Handles RadTreeView1.NodeRemoving
-    If e.Node.Text.Contains("Unremovable") Then
-        e.Cancel = True
-    End If
-End Sub
-Private Sub RadTreeView1_NodeRemoved(sender As Object, e As RadTreeViewEventArgs) Handles RadTreeView1.NodeRemoved
-    RadMessageBox.Show("Node {" + e.Node.Text + "} was removed")
-End Sub
- Region
-Private Sub InsertingNodes()
-    '#Region insertingNodes
-    ' Create two parent nodes
-    Dim parentNode1 As New RadTreeNode("First Parent")
-    Dim parentNode2 As New RadTreeNode("Second Parent")
-    ' Add the parent nodes to tree view's nodes collection
-    Me.RadTreeView1.Nodes.Add(parentNode1)
-    Me.RadTreeView1.Nodes.Add(parentNode2)
-    ' Create child nodes
-    Dim childNode As New RadTreeNode("Child Node")
-    Dim childNode2 As New RadTreeNode("Child Node2")
-    Dim childNode3 As New RadTreeNode("Child Node3")
-    Dim childNode4 As New RadTreeNode("Child Node4")
-    Dim childNode5 As New RadTreeNode("Child Node5")
-    ' Add a single child node to the parentNode1 nodes collection and
-    ' multiple nodes to the parentNode2 nodes collection
-    parentNode1.Nodes.Add(childNode)
-    parentNode2.Nodes.Add(childNode2)
-    parentNode2.Nodes.Add(childNode3)
-    parentNode2.Nodes.Add(childNode4)
-    parentNode2.Nodes.Add(childNode5)
-    ' Insert the childNode instance to the parentNode2 nodes collection
-    parentNode2.Nodes.Insert(1, childNode)
 
 ````
 
@@ -190,30 +156,6 @@ End Sub
 Private Sub RadTreeView1_NodeRemoved(sender As Object, e As RadTreeViewEventArgs) Handles RadTreeView1.NodeRemoved
     RadMessageBox.Show("Node {" + e.Node.Text + "} was removed")
 End Sub
- Region
-Private Sub InsertingNodes()
-    '#Region insertingNodes
-    ' Create two parent nodes
-    Dim parentNode1 As New RadTreeNode("First Parent")
-    Dim parentNode2 As New RadTreeNode("Second Parent")
-    ' Add the parent nodes to tree view's nodes collection
-    Me.RadTreeView1.Nodes.Add(parentNode1)
-    Me.RadTreeView1.Nodes.Add(parentNode2)
-    ' Create child nodes
-    Dim childNode As New RadTreeNode("Child Node")
-    Dim childNode2 As New RadTreeNode("Child Node2")
-    Dim childNode3 As New RadTreeNode("Child Node3")
-    Dim childNode4 As New RadTreeNode("Child Node4")
-    Dim childNode5 As New RadTreeNode("Child Node5")
-    ' Add a single child node to the parentNode1 nodes collection and
-    ' multiple nodes to the parentNode2 nodes collection
-    parentNode1.Nodes.Add(childNode)
-    parentNode2.Nodes.Add(childNode2)
-    parentNode2.Nodes.Add(childNode3)
-    parentNode2.Nodes.Add(childNode4)
-    parentNode2.Nodes.Add(childNode5)
-    ' Insert the childNode instance to the parentNode2 nodes collection
-    parentNode2.Nodes.Insert(1, childNode)
 
 ````
 

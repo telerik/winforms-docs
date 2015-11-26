@@ -31,13 +31,14 @@ The following code snippet creates and inserts a Paragraph to a Section.
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_0}} 
 
 ````C#
-            Paragraph paragraph = new Paragraph(document);
-            section.Blocks.Add(paragraph);
+Paragraph paragraph = new Paragraph(document);
+section.Blocks.Add(paragraph);
+
 ````
 ````VB.NET
-            Dim paragraph As New Paragraph(document)
-            section.Blocks.Add(paragraph)
-            '
+Dim paragraph As New Paragraph(document)
+section.Blocks.Add(paragraph)
+
 ````
 
 {{endregion}} 
@@ -52,13 +53,14 @@ You can add a paragraph at a specific index in the __Blocks__ collection of a __
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_1}} 
 
 ````C#
-            Paragraph paragraph = new Paragraph(document);
-            section.Blocks.Insert(0, paragraph);
+Paragraph paragraph = new Paragraph(document);
+section.Blocks.Insert(0, paragraph);
+
 ````
 ````VB.NET
-            Dim paragraph As New Paragraph(document)
-            section.Blocks.Insert(0, paragraph)
-            '
+Dim paragraph As New Paragraph(document)
+section.Blocks.Insert(0, paragraph)
+
 ````
 
 {{endregion}} 
@@ -70,11 +72,12 @@ You can also use the __AddParagraph()__ method of the __Blocks__ collection of a
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_2}} 
 
 ````C#
-            Paragraph paragraph = section.Blocks.AddParagraph();
+Paragraph paragraph = section.Blocks.AddParagraph();
+
 ````
 ````VB.NET
-            Dim paragraph As Paragraph = section.Blocks.AddParagraph()
-            '
+Dim paragraph As Paragraph = section.Blocks.AddParagraph()
+
 ````
 
 {{endregion}} 
@@ -85,13 +88,14 @@ Inserting a new Paragraph in the document can also be achieved with the [RadFlow
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_3}} 
 
 ````C#
-            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
-            Paragraph paragraph = editor.InsertParagraph();
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+Paragraph paragraph = editor.InsertParagraph();
+
 ````
 ````VB.NET
-            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-            Dim paragraph As Paragraph = editor.InsertParagraph()
-            '
+Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+Dim paragraph As Paragraph = editor.InsertParagraph()
+
 ````
 
 {{endregion}} 
@@ -161,11 +165,12 @@ The following code snippet adds a run to an existing paragraph:
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_4}} 
 
 ````C#
-            Run run = paragraph.Inlines.AddRun();
+Run run = paragraph.Inlines.AddRun();
+
 ````
 ````VB.NET
-            Dim run As Run = paragraph.Inlines.AddRun()
-            '
+Dim run As Run = paragraph.Inlines.AddRun()
+
 ````
 
 {{endregion}} 
@@ -180,11 +185,12 @@ The following code snippet adds an inline image to an existing paragraph:
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_5}} 
 
 ````C#
-            ImageInline imageInline = paragraph.Inlines.AddImageInline();
+ImageInline imageInline = paragraph.Inlines.AddImageInline();
+
 ````
 ````VB.NET
-            Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
-            '
+Dim imageInline As ImageInline = paragraph.Inlines.AddImageInline()
+
 ````
 
 {{endregion}} 
@@ -199,11 +205,12 @@ The following code snippet adds a floating image to an existing paragraph:
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingParagraph.vb region=radwordsprocessing-model-paragraph_6}} 
 
 ````C#
-            FloatingImage floatingImage = paragraph.Inlines.AddFloatingImage();
+FloatingImage floatingImage = paragraph.Inlines.AddFloatingImage();
+
 ````
 ````VB.NET
-            Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
-            '
+Dim floatingImage As FloatingImage = paragraph.Inlines.AddFloatingImage()
+
 ````
 
 {{endregion}} 

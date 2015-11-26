@@ -26,13 +26,14 @@ You can use the following code snippet to create a __TableCell__ and add it in a
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_0}} 
 
 ````C#
-            TableCell cell = new TableCell(document);
-            row.Cells.Add(cell);
+TableCell cell = new TableCell(document);
+row.Cells.Add(cell);
+
 ````
 ````VB.NET
-            Dim cell As New TableCell(document)
-            row.Cells.Add(cell)
-            '
+Dim cell As New TableCell(document)
+row.Cells.Add(cell)
+
 ````
 
 {{endregion}} 
@@ -43,13 +44,14 @@ To create a __TableCell__ and add it in the document tree in the same time, you 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_1}} 
 
 ````C#
-            TableRow row = table.Rows.AddTableRow();
-            TableCell cell = row.Cells.AddTableCell();
+TableRow row = table.Rows.AddTableRow();
+TableCell cell = row.Cells.AddTableCell();
+
 ````
 ````VB.NET
-            Dim row As TableRow = table.Rows.AddTableRow()
-            Dim cell As TableCell = row.Cells.AddTableCell()
-            '
+Dim row As TableRow = table.Rows.AddTableRow()
+Dim cell As TableCell = row.Cells.AddTableCell()
+
 ````
 
 {{endregion}}
@@ -120,11 +122,12 @@ The following code snippet demonstrates how to add a __Paragraph__ to a __TableC
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableCell.vb region=radwordsprocessing-model-tablecell_2}} 
 
 ````C#
-            Paragraph paragraph = cell.Blocks.AddParagraph();
+Paragraph paragraph = cell.Blocks.AddParagraph();
+
 ````
 ````VB.NET
-            Dim paragraph As Paragraph = cell.Blocks.AddParagraph()
-            '
+Dim paragraph As Paragraph = cell.Blocks.AddParagraph()
+
 ````
 
 {{endregion}} 

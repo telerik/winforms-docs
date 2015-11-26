@@ -31,18 +31,19 @@ The following code snippet shows how to use __RtfFormatProvider__ to import an R
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingUsingrtfFormatProvider.vb region=radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_0}} 
 
 ````C#
-            RtfFormatProvider provider = new RtfFormatProvider();
-            using (Stream input = File.OpenRead("Sample.rtf"))
-            {
-                RadFlowDocument document = provider.Import(input);
-            }
+RtfFormatProvider provider = new RtfFormatProvider();
+using (Stream input = File.OpenRead("Sample.rtf"))
+{
+    RadFlowDocument document = provider.Import(input);
+}
+
 ````
 ````VB.NET
-            Dim provider As New RtfFormatProvider()
-            Using input As Stream = File.OpenRead("Sample.rtf")
-                Dim document As RadFlowDocument = provider.Import(input)
-            End Using
-            '
+Dim provider As New RtfFormatProvider()
+Using input As Stream = File.OpenRead("Sample.rtf")
+    Dim document As RadFlowDocument = provider.Import(input)
+End Using
+
 ````
 
 {{endregion}} 
@@ -53,13 +54,14 @@ And here is how you can import a document from string containing the RTF documen
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingUsingrtfFormatProvider.vb region=radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_1}} 
 
 ````C#
-            RtfFormatProvider provider = new RtfFormatProvider();
-            RadFlowDocument document = provider.Import(input);
+RtfFormatProvider provider = new RtfFormatProvider();
+RadFlowDocument document = provider.Import(input);
+
 ````
 ````VB.NET
-            Dim provider As New RtfFormatProvider()
-            Dim document As RadFlowDocument = provider.Import(input)
-            '
+Dim provider As New RtfFormatProvider()
+Dim document As RadFlowDocument = provider.Import(input)
+
 ````
 
 {{endregion}} 
@@ -76,20 +78,21 @@ The following snippet shows how to use __RtfFormatProvider__ to export __RadFlow
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingUsingrtfFormatProvider.vb region=radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_2}} 
 
 ````C#
-            RtfFormatProvider provider = new RtfFormatProvider();
-            using (Stream output = File.Create("sample.rtf"))
-            {
-                RadFlowDocument document = CreateRadFlowDocument();
-                provider.Export(document, output);
-            }
+RtfFormatProvider provider = new RtfFormatProvider();
+using (Stream output = File.Create("sample.rtf"))
+{
+    RadFlowDocument document = CreateRadFlowDocument();
+    provider.Export(document, output);
+}
+
 ````
 ````VB.NET
-            Dim provider As New RtfFormatProvider()
-            Using output As Stream = File.Create("sample.rtf")
-                Dim document As RadFlowDocument = CreateRadFlowDocument()
-                provider.Export(document, output)
-            End Using
-            '
+Dim provider As New RtfFormatProvider()
+Using output As Stream = File.Create("sample.rtf")
+    Dim document As RadFlowDocument = CreateRadFlowDocument()
+    provider.Export(document, output)
+End Using
+
 ````
 
 {{endregion}} 
@@ -100,15 +103,16 @@ You can also export the document to a string and preserve it in a database.
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Rtf\WordsProcessingUsingrtfFormatProvider.vb region=radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_3}} 
 
 ````C#
-            RtfFormatProvider provider = new RtfFormatProvider();
-            RadFlowDocument document = CreateRadFlowDocument();
-            string output = provider.Export(document);
+RtfFormatProvider provider = new RtfFormatProvider();
+RadFlowDocument document = CreateRadFlowDocument();
+string output = provider.Export(document);
+
 ````
 ````VB.NET
-            Dim provider As New RtfFormatProvider()
-            Dim document As RadFlowDocument = CreateRadFlowDocument()
-            Dim output As String = provider.Export(document)
-            '
+Dim provider As New RtfFormatProvider()
+Dim document As RadFlowDocument = CreateRadFlowDocument()
+Dim output As String = provider.Export(document)
+
 ````
 
 {{endregion}} 

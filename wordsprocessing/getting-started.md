@@ -51,15 +51,16 @@ Here is how to create a [RadFlowDocument]({%slug winforms/wordsprocessing/model/
 {{source=..\SamplesVB\WordsProcessing\WordsProcessingGettingStarted.vb region=radwordsprocessing-getting-started_0}} 
 
 ````C#
-            RadFlowDocument document = new RadFlowDocument();
-            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
-            editor.InsertText("Hello world!");
+RadFlowDocument document = new RadFlowDocument();
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
+editor.InsertText("Hello world!");
+
 ````
 ````VB.NET
-            Dim document As New RadFlowDocument()
-            Dim editor As New RadFlowDocumentEditor(document)
-            editor.InsertText("Hello world!")
-            '
+Dim document As New RadFlowDocument()
+Dim editor As New RadFlowDocumentEditor(document)
+editor.InsertText("Hello world!")
+
 ````
 
 {{endregion}} 
@@ -81,18 +82,19 @@ Exporting the document to Docx file can be achieved with the [DocxFormatProvider
 {{source=..\SamplesVB\WordsProcessing\WordsProcessingGettingStarted.vb region=radwordsprocessing-getting-started_1}} 
 
 ````C#
-            using (Stream output = new FileStream("output.docx", FileMode.OpenOrCreate))
-            {
-                DocxFormatProvider provider = new DocxFormatProvider();
-                provider.Export(document, output);
-            }
+using (Stream output = new FileStream("output.docx", FileMode.OpenOrCreate))
+{
+    DocxFormatProvider provider = new DocxFormatProvider();
+    provider.Export(document, output);
+}
+
 ````
 ````VB.NET
-            Using output As Stream = New FileStream("output.docx", FileMode.OpenOrCreate)
-                Dim provider As New DocxFormatProvider()
-                provider.Export(document, output)
-            End Using
-            '
+Using output As Stream = New FileStream("output.docx", FileMode.OpenOrCreate)
+    Dim provider As New DocxFormatProvider()
+    provider.Export(document, output)
+End Using
+
 ````
 
 {{endregion}}

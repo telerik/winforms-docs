@@ -101,11 +101,12 @@ __Example 1__ adds a default bulleted list to a predefined RadFlowDocument.
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_0}} 
 
 ````C#
-            List list = document.Lists.Add(ListTemplateType.BulletDefault);
+List list = document.Lists.Add(ListTemplateType.BulletDefault);
+
 ````
 ````VB.NET
-            Dim list As List = document.Lists.Add(ListTemplateType.BulletDefault)
-            '
+Dim list As List = document.Lists.Add(ListTemplateType.BulletDefault)
+
 ````
 
 {{endregion}} 
@@ -123,13 +124,14 @@ The next tutorial will get you through the creation of a list.
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_1}} 
 
 ````C#
-            RadFlowDocument document = new RadFlowDocument();
-            Section section = document.Sections.AddSection();
+RadFlowDocument document = new RadFlowDocument();
+Section section = document.Sections.AddSection();
+
 ````
 ````VB.NET
-            Dim document As New RadFlowDocument()
-            Dim section As Section = document.Sections.AddSection()
-            '
+Dim document As New RadFlowDocument()
+Dim section As Section = document.Sections.AddSection()
+
 ````
 
 {{endregion}} 
@@ -145,14 +147,15 @@ The next tutorial will get you through the creation of a list.
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_2}} 
 
 ````C#
-            List list = new List();
-            document.Lists.Add(list); // Adding the list in the document.
+List list = new List();
+document.Lists.Add(list); // Adding the list in the document.
+
 ````
 ````VB.NET
-        Dim list As New List()
-            document.Lists.Add(list)
-            ' Adding the list in the document.
-            '
+Dim list As New List()
+    document.Lists.Add(list)
+    ' Adding the list in the document.
+
 ````
 
 {{endregion}} 
@@ -167,11 +170,12 @@ In this case the default __HybridMultilevel__ type of list would be created.
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_3}} 
 
 ````C#
-            for (int level = 0; level < list.Levels.Count; ++level)
+for (int level = 0; level < list.Levels.Count; ++level)
+
 ````
 ````VB.NET
-            For level As Integer = 0 To list.Levels.Count - 1
-                '
+For level As Integer = 0 To list.Levels.Count - 1
+
 ````
 
 {{endregion}} 
@@ -184,26 +188,25 @@ In this case the default __HybridMultilevel__ type of list would be created.
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_4}} 
 
 ````C#
-                bool isEven = (level % 2) == 0;
+bool isEven = (level % 2) == 0;
+list.Levels[level].StartIndex = 1;
+// We set Decimal numbering style to a list level if it is even level, otherwise Bullet.
+list.Levels[level].NumberingStyle = isEven ? NumberingStyle.Decimal : NumberingStyle.Bullet;
+// Accordingly to the above rule, we set the corresponding NumberTextFormat.
+list.Levels[level].NumberTextFormat = isEven ? "%" + (level + 1) + "." : "o";
+// Set the desired indentation of the ListLevel can be done through its ParagraphProperties:
+list.Levels[level].ParagraphProperties.LeftIndent.LocalValue = 48 + (level * 24);
 
-                list.Levels[level].StartIndex = 1;
-                // We set Decimal numbering style to a list level if it is even level, otherwise Bullet.
-                list.Levels[level].NumberingStyle = isEven ? NumberingStyle.Decimal : NumberingStyle.Bullet;
-                // Accordingly to the above rule, we set the corresponding NumberTextFormat.
-                list.Levels[level].NumberTextFormat = isEven ? "%" + (level + 1) + "." : "o";
-                // Set the desired indentation of the ListLevel can be done through its ParagraphProperties:
-                list.Levels[level].ParagraphProperties.LeftIndent.LocalValue = 48 + (level * 24);
 ````
 ````VB.NET
-                Dim isEven As Boolean = (level Mod 2) = 0
+Dim isEven As Boolean = (level Mod 2) = 0
+list.Levels(level).StartIndex = 1
+' We set Decimal numbering style to a list level if it is even level, otherwise Bullet.
+list.Levels(level).NumberingStyle = If(isEven, NumberingStyle.[Decimal], NumberingStyle.Bullet)
+' Accordingly to the above rule, we set the corresponding NumberTextFormat.
+list.Levels(level).NumberTextFormat = If(isEven, "%" + (level + 1) + ".", "o")
+' Set the desired indentation of the ListLevel can be done through its ParagraphProperties:
 
-                list.Levels(level).StartIndex = 1
-                ' We set Decimal numbering style to a list level if it is even level, otherwise Bullet.
-                list.Levels(level).NumberingStyle = If(isEven, NumberingStyle.[Decimal], NumberingStyle.Bullet)
-                ' Accordingly to the above rule, we set the corresponding NumberTextFormat.
-                list.Levels(level).NumberTextFormat = If(isEven, "%" + (level + 1) + ".", "o")
-                ' Set the desired indentation of the ListLevel can be done through its ParagraphProperties:
-                '
 ````
 
 {{endregion}} 
@@ -225,22 +228,23 @@ __Example 2__ demonstrates how you can apply the list created in Steps 1-4 above
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingLists.vb region=radwordsprocessing-concepts-lists_5}} 
 
 ````C#
-            for (int level = 0; level < list.Levels.Count; level++)
-            {
-                Paragraph paragrah = section.Blocks.AddParagraph();
-                paragrah.Inlines.AddRun(string.Format("ListLevel: {0}", level + 1));
-                paragrah.ListId = list.Id;
-                paragrah.ListLevel = level;
-            }
+for (int level = 0; level < list.Levels.Count; level++)
+{
+    Paragraph paragrah = section.Blocks.AddParagraph();
+    paragrah.Inlines.AddRun(string.Format("ListLevel: {0}", level + 1));
+    paragrah.ListId = list.Id;
+    paragrah.ListLevel = level;
+}
+
 ````
 ````VB.NET
-            For level As Integer = 0 To list.Levels.Count - 1
-                Dim paragrah As Paragraph = section.Blocks.AddParagraph()
-                paragrah.Inlines.AddRun(String.Format("ListLevel: {0}", level + 1))
-                paragrah.ListId = list.Id
-                paragrah.ListLevel = level
-            Next
-            '
+For level As Integer = 0 To list.Levels.Count - 1
+    Dim paragrah As Paragraph = section.Blocks.AddParagraph()
+    paragrah.Inlines.AddRun(String.Format("ListLevel: {0}", level + 1))
+    paragrah.ListId = list.Id
+    paragrah.ListLevel = level
+Next
+
 ````
 
 {{endregion}} 

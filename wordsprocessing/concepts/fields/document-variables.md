@@ -21,15 +21,16 @@ Document variables provide a mechanism to store information in the document in a
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentVariables.vb region=document}} 
 
 ````C#
-            RadFlowDocument document = new RadFlowDocument();
-            document.DocumentVariables["Job"] = "Software Engineer";
-            document.DocumentVariables.Add("Name", "Nancy Davolio");
+RadFlowDocument document = new RadFlowDocument();
+document.DocumentVariables["Job"] = "Software Engineer";
+document.DocumentVariables.Add("Name", "Nancy Davolio");
+
 ````
 ````VB.NET
-        Dim document As New RadFlowDocument()
-        document.DocumentVariables("Job") = "Software Engineer"
-        document.DocumentVariables.Add("Name", "Nancy Davolio")
-        '
+Dim document As New RadFlowDocument()
+document.DocumentVariables("Job") = "Software Engineer"
+document.DocumentVariables.Add("Name", "Nancy Davolio")
+
 ````
 
 {{endregion}} 
@@ -45,11 +46,12 @@ Removing defined variables can be achieved by using the __Remove()__ method of t
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingDocumentVariables.vb region=remove}} 
 
 ````C#
-            document.DocumentVariables.Remove("Job");
+document.DocumentVariables.Remove("Job");
+
 ````
 ````VB.NET
-        document.DocumentVariables.Remove("Job")
-        '
+document.DocumentVariables.Remove("Job")
+
 ````
 
 {{endregion}} 

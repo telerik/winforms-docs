@@ -26,19 +26,21 @@ __RadWordsProcessing__ allows you to merge two __RadFlowDocument__ instance usin
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingCloneAndMerge.vb region=radwordsprocessing-editing-clone-and-merge_0}} 
 
 ````C#
-            RadFlowDocument target = new RadFlowDocument();
-            RadFlowDocument source = new RadFlowDocument();
-            //...
-            // target will contain merged content and styles.
-            target.Merge(source);
+            
+RadFlowDocument target = new RadFlowDocument();
+RadFlowDocument source = new RadFlowDocument();
+//...
+// target will contain merged content and styles.
+target.Merge(source);
+
 ````
 ````VB.NET
-            Dim target As New RadFlowDocument()
-            Dim source As New RadFlowDocument()
-            '...
-            ' target will contain merged content and styles.
-            target.Merge(source)
-            '
+Dim target As New RadFlowDocument()
+Dim source As New RadFlowDocument()
+'...
+' target will contain merged content and styles.
+target.Merge(source)
+
 ````
 
 {{endregion}} 
@@ -73,24 +75,26 @@ The following snippet shows how to merge documents by specifying the used __Merg
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingCloneAndMerge.vb region=radwordsprocessing-editing-clone-and-merge_1}} 
 
 ````C#
-            RadFlowDocument target = new RadFlowDocument();
-            RadFlowDocument source = new RadFlowDocument();
-            //...
-            MergeOptions mergeOptions = new MergeOptions()
-            {
-                ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle
-            };
-            target.Merge(source, mergeOptions);
+            
+RadFlowDocument target = new RadFlowDocument();
+RadFlowDocument source = new RadFlowDocument();
+//...
+MergeOptions mergeOptions = new MergeOptions()
+{
+    ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle
+};
+target.Merge(source, mergeOptions);
+
 ````
 ````VB.NET
-            Dim target As New RadFlowDocument()
-            Dim source As New RadFlowDocument()
-            '...
-        Dim mergeOptions As New MergeOptions() With { _
-             .ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle _
-        }
-            target.Merge(source, mergeOptions)
-            '
+Dim target As New RadFlowDocument()
+Dim source As New RadFlowDocument()
+'...
+Dim mergeOptions As New MergeOptions() With { _
+    .ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.RenameSourceStyle _
+}
+target.Merge(source, mergeOptions)
+
 ````
 
 {{endregion}} 
@@ -103,11 +107,13 @@ __RadFlowDocument__ provides __Clone()__ method, which creates deep copy of the 
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingCloneAndMerge.vb region=radwordsprocessing-editing-clone-and-merge_2}} 
 
 ````C#
-            RadFlowDocument clonedDocument = document.Clone();
+        
+RadFlowDocument clonedDocument = document.Clone();
+
 ````
 ````VB.NET
-            Dim clonedDocument As RadFlowDocument = document.Clone()
-            '
+Dim clonedDocument As RadFlowDocument = document.Clone()
+
 ````
 
 {{endregion}}
@@ -148,11 +154,13 @@ __Clone()__ method has two overloads:
 {{source=..\SamplesVB\WordsProcessing\Editing\WordsProcessingCloneAndMerge.vb region=radwordsprocessing-editing-clone-and-merge_3}} 
 
 ````C#
-            Section clonedSection = section.Clone(radFlowDocument);
+            
+Section clonedSection = section.Clone(radFlowDocument);
+
 ````
 ````VB.NET
-            Dim clonedSection As Section = section.Clone(radFlowDocument)
-            '
+Dim clonedSection As Section = section.Clone(radFlowDocument)
+
 ````
 
 {{endregion}}

@@ -30,17 +30,18 @@ __Example 1__ shows how to create a __Bookmark__ and add its BookmarkRangeStart 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBookmark.vb region=radwordsprocessing-model-bookmark_0}} 
 
 ````C#
-            Bookmark bookmark = new Bookmark(document, "MyBookmark");
-            paragraph.Inlines.Add(bookmark.BookmarkRangeStart);
-            paragraph.Inlines.AddRun("text");
-            paragraph.Inlines.Add(bookmark.BookmarkRangeEnd);
+Bookmark bookmark = new Bookmark(document, "MyBookmark");
+paragraph.Inlines.Add(bookmark.BookmarkRangeStart);
+paragraph.Inlines.AddRun("text");
+paragraph.Inlines.Add(bookmark.BookmarkRangeEnd);
+
 ````
 ````VB.NET
-            Dim bookmark As New Bookmark(document, "MyBookmark")
-            paragraph.Inlines.Add(bookmark.BookmarkRangeStart)
-            paragraph.Inlines.AddRun("text")
-            paragraph.Inlines.Add(bookmark.BookmarkRangeEnd)
-            '
+Dim bookmark As New Bookmark(document, "MyBookmark")
+paragraph.Inlines.Add(bookmark.BookmarkRangeStart)
+paragraph.Inlines.AddRun("text")
+paragraph.Inlines.Add(bookmark.BookmarkRangeEnd)
+
 ````
 
 {{endregion}} 
@@ -55,13 +56,14 @@ Inserting a __Bookmark__ in the document can also be done with through the [RadF
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBookmark.vb region=radwordsprocessing-model-bookmark_1}} 
 
 ````C#
-            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
-            Bookmark bookmark = editor.InsertBookmark("MyBookmark");
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+Bookmark bookmark = editor.InsertBookmark("MyBookmark");
+
 ````
 ````VB.NET
-            Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-            Dim bookmark As Bookmark = editor.InsertBookmark("MyBookmark")
-            '
+Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+Dim bookmark As Bookmark = editor.InsertBookmark("MyBookmark")
+
 ````
 
 {{endregion}} 
@@ -81,11 +83,12 @@ __Example 3__ demonstrates how you can delete the bookmark created in __Example 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingBookmark.vb region=radwordsprocessing-model-bookmark_2}} 
 
 ````C#
-            editor.DeleteBookmark("MyBookmark");
+editor.DeleteBookmark("MyBookmark");
+
 ````
 ````VB.NET
-            editor.DeleteBookmark("MyBookmark")
-            '
+editor.DeleteBookmark("MyBookmark")
+
 ````
 
 {{endregion}} 

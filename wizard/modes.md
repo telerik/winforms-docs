@@ -20,11 +20,12 @@ __RadWizard__ supports both* Wizard 97* and* Wizard Aero* specifications..	You c
 {{source=..\SamplesVB\Wizard\Modes.vb region=settingMode}} 
 
 ````C#
-            this.radWizard1.Mode = WizardMode.Wizard97;
+this.radWizard1.Mode = WizardMode.Wizard97;
+
 ````
 ````VB.NET
-        Me.RadWizard1.Mode = WizardMode.Wizard97
-        '
+Me.RadWizard1.Mode = WizardMode.Wizard97
+
 ````
 
 {{endregion}} 
@@ -39,13 +40,14 @@ The __Aero style__ of __Wizard Aero mode__ can be enabled (for Windows Vista and
 {{source=..\SamplesVB\Wizard\Modes.vb region=EnableAeroStyle}} 
 
 ````C#
-            this.radWizard1.Mode = WizardMode.Aero;
-            this.radWizard1.EnableAeroStyle = true;
+this.radWizard1.Mode = WizardMode.Aero;
+this.radWizard1.EnableAeroStyle = true;
+
 ````
 ````VB.NET
-        Me.RadWizard1.Mode = WizardMode.Aero
-        Me.RadWizard1.EnableAeroStyle = True
-        '
+Me.RadWizard1.Mode = WizardMode.Aero
+Me.RadWizard1.EnableAeroStyle = True
+
 ````
 
 {{endregion}} 
@@ -58,13 +60,14 @@ The __Aero style__ of __Wizard Aero mode__ can be enabled (for Windows Vista and
 {{source=..\SamplesVB\Wizard\Modes.vb region=disableAeroStyle}} 
 
 ````C#
-            this.radWizard1.Mode = WizardMode.Aero;
-            this.radWizard1.EnableAeroStyle = false;
+this.radWizard1.Mode = WizardMode.Aero;
+this.radWizard1.EnableAeroStyle = false;
+
 ````
 ````VB.NET
-        Me.RadWizard1.Mode = WizardMode.Aero
-        Me.RadWizard1.EnableAeroStyle = False
-        '
+Me.RadWizard1.Mode = WizardMode.Aero
+Me.RadWizard1.EnableAeroStyle = False
+
 ````
 
 {{endregion}} 

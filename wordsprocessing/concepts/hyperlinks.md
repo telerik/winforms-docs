@@ -37,11 +37,12 @@ The suggested way to insert hyperlink is by using [RadFlowDocumentEditor]({%slug
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingHyperlink.vb region=radwordsprocessing-concepts-hyperlinks_0}} 
 
 ````C#
-            editor.InsertHyperlink("telerik", "http://www.telerik.com", false, "Telerik site");
+editor.InsertHyperlink("telerik", "http://www.telerik.com", false, "Telerik site");
+
 ````
 ````VB.NET
-        editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
-        '
+editor.InsertHyperlink("telerik", "http://www.telerik.com", False, "Telerik site")
+
 ````
 
 {{endregion}} 

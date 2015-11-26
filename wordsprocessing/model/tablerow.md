@@ -26,13 +26,14 @@ You can use the following code snippet to create a __TableRow__ and add it in a 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableRow.vb region=radwordsprocessing-model-tablerow_0}} 
 
 ````C#
-            TableRow row = new TableRow(document);
-            table.Rows.Add(row);
+TableRow row = new TableRow(document);
+table.Rows.Add(row);
+
 ````
 ````VB.NET
-            Dim row As New TableRow(document)
-            table.Rows.Add(row)
-            '
+Dim row As New TableRow(document)
+table.Rows.Add(row)
+
 ````
 
 {{endregion}} 
@@ -44,11 +45,12 @@ In order to create a __TableRow__ and add it in the document tree in the same ti
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableRow.vb region=radwordsprocessing-model-tablerow_1}} 
 
 ````C#
-            TableRow row = table.Rows.AddTableRow();
+TableRow row = table.Rows.AddTableRow();
+
 ````
 ````VB.NET
-            Dim row As TableRow = table.Rows.AddTableRow()
-            '
+Dim row As TableRow = table.Rows.AddTableRow()
+
 ````
 
 {{endregion}} 
@@ -88,24 +90,23 @@ The following code snippet shows how to add a number of __TableCell__ elements i
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingTableRow.vb region=radwordsprocessing-model-tablerow_2}} 
 
 ````C#
-            TableRow row = table.Rows.AddTableRow();
+TableRow row = table.Rows.AddTableRow();
+for (int i = 0; i < row.Table.GridColumnsCount; i++)
+{
+    TableCell cell = row.Cells.AddTableCell();
+    cell.Blocks.AddParagraph().Inlines.AddRun(string.Format("Cell 0, {0}", i));
+    cell.PreferredWidth = new TableWidthUnit(50);
+}
 
-            for (int i = 0; i < row.Table.GridColumnsCount; i++)
-            {
-                TableCell cell = row.Cells.AddTableCell();
-                cell.Blocks.AddParagraph().Inlines.AddRun(string.Format("Cell 0, {0}", i));
-                cell.PreferredWidth = new TableWidthUnit(50);
-            }
 ````
 ````VB.NET
-            Dim row As TableRow = table.Rows.AddTableRow()
+Dim row As TableRow = table.Rows.AddTableRow()
+For i As Integer = 0 To row.Table.GridColumnsCount - 1
+    Dim cell As TableCell = row.Cells.AddTableCell()
+    cell.Blocks.AddParagraph().Inlines.AddRun(String.Format("Cell 0, {0}", i))
+    cell.PreferredWidth = New TableWidthUnit(50)
+Next
 
-            For i As Integer = 0 To row.Table.GridColumnsCount - 1
-                Dim cell As TableCell = row.Cells.AddTableCell()
-                cell.Blocks.AddParagraph().Inlines.AddRun(String.Format("Cell 0, {0}", i))
-                cell.PreferredWidth = New TableWidthUnit(50)
-            Next
-            '
 ````
 
 {{endregion}} 
