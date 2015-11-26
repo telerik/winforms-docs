@@ -32,46 +32,45 @@ The purpose of the example that follows is to demonstrate how you can show diffe
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\NodeFormatting.vb region=nodeFormatting}} 
 
 ````C#
-        Bitmap folderOpen = SamplesCS.Properties.Resources.folder_open;
-        Bitmap folderClose = SamplesCS.Properties.Resources.folder_close;
-        Bitmap file = SamplesCS.Properties.Resources.file;
-
-        void radTreeView1_NodeFormatting(object sender, TreeNodeFormattingEventArgs e)
+Bitmap folderOpen = SamplesCS.Properties.Resources.folder_open;
+Bitmap folderClose = SamplesCS.Properties.Resources.folder_close;
+Bitmap file = SamplesCS.Properties.Resources.file;
+void radTreeView1_NodeFormatting(object sender, TreeNodeFormattingEventArgs e)
+{
+    if (e.Node.Nodes.Count > 0)
+    {
+        if (e.Node.Expanded)
         {
-            if (e.Node.Nodes.Count > 0)
-            {
-                if (e.Node.Expanded)
-                {
-                    e.NodeElement.ImageElement.Image = folderOpen;
-                }
-                else
-                {
-                    e.NodeElement.ImageElement.Image = folderClose;
-                }
-            }
-            else
-            {
-                e.NodeElement.ImageElement.Image = file;
-            }
+            e.NodeElement.ImageElement.Image = folderOpen;
         }
+        else
+        {
+            e.NodeElement.ImageElement.Image = folderClose;
+        }
+    }
+    else
+    {
+        e.NodeElement.ImageElement.Image = file;
+    }
+}
+
 ````
 ````VB.NET
-    Private folderOpen As Bitmap = My.Resources.folder_open
-    Private folderClose As Bitmap = My.Resources.folder_close
-    Private file As Bitmap = My.Resources.file
-
-    Private Sub radTreeView1_NodeFormatting(ByVal sender As Object, ByVal e As TreeNodeFormattingEventArgs)
-        If e.Node.Nodes.Count > 0 Then
-            If e.Node.Expanded Then
-                e.NodeElement.ImageElement.Image = folderOpen
-            Else
-                e.NodeElement.ImageElement.Image = folderClose
-            End If
+Private folderOpen As Bitmap = My.Resources.folder_open
+Private folderClose As Bitmap = My.Resources.folder_close
+Private file As Bitmap = My.Resources.file
+Private Sub radTreeView1_NodeFormatting(ByVal sender As Object, ByVal e As TreeNodeFormattingEventArgs)
+    If e.Node.Nodes.Count > 0 Then
+        If e.Node.Expanded Then
+            e.NodeElement.ImageElement.Image = folderOpen
         Else
-            e.NodeElement.ImageElement.Image = file
+            e.NodeElement.ImageElement.Image = folderClose
         End If
-    End Sub
-    '
+    Else
+        e.NodeElement.ImageElement.Image = file
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

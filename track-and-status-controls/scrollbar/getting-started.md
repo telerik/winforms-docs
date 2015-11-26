@@ -33,24 +33,25 @@ The next step is to add controls to the second RadPanel (the controls which are 
 {{source=..\SamplesVB\TrackAndStatus\ScrollBar\ScrollGettingStarted.vb region=buttons}} 
 
 ````C#
-            for (int i = 1; i < 15; i++)
-            {
-                RadButton button = new RadButton();
-                button.Location = new Point(30, i * 30 + 5 * i);
-                button.Size = new Size(70, 30);
-                button.Text = "RadButton" + i.ToString();
-                this.radPanel2.Controls.Add(button);
-            }
+for (int i = 1; i < 15; i++)
+{
+    RadButton button = new RadButton();
+    button.Location = new Point(30, i * 30 + 5 * i);
+    button.Size = new Size(70, 30);
+    button.Text = "RadButton" + i.ToString();
+    this.radPanel2.Controls.Add(button);
+}
+
 ````
 ````VB.NET
-        For i As Integer = 1 To 14
-            Dim button As New RadButton()
-            button.Location = New Point(30, i * 30 + 5 * i)
-            button.Size = New Size(70, 30)
-            button.Text = "RadButton" & i.ToString()
-            Me.RadPanel2.Controls.Add(button)
-        Next i
-        '
+For i As Integer = 1 To 14
+    Dim button As New RadButton()
+    button.Location = New Point(30, i * 30 + 5 * i)
+    button.Size = New Size(70, 30)
+    button.Text = "RadButton" & i.ToString()
+    Me.RadPanel2.Controls.Add(button)
+Next i
+
 ````
 
 {{endregion}} 
@@ -67,16 +68,17 @@ Then subscribe to the Scroll event of the vertical scrollbar and assign its nega
 {{source=..\SamplesVB\TrackAndStatus\ScrollBar\ScrollGettingStarted.vb region=scroll}} 
 
 ````C#
-        void radVScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-            this.radPanel2.Top = -this.radVScrollBar1.Value;
-        }
+void radVScrollBar1_Scroll(object sender, ScrollEventArgs e)
+{
+    this.radPanel2.Top = -this.radVScrollBar1.Value;
+}
+
 ````
 ````VB.NET
-    Private Sub radVScrollBar1_Scroll(ByVal sender As Object, ByVal e As ScrollEventArgs)
-        Me.RadPanel2.Top = -Me.RadVScrollBar1.Value
-    End Sub
-    '
+Private Sub radVScrollBar1_Scroll(ByVal sender As Object, ByVal e As ScrollEventArgs)
+    Me.RadPanel2.Top = -Me.RadVScrollBar1.Value
+End Sub
+
 ````
 
 {{endregion}} 
@@ -89,11 +91,12 @@ The last required step is to set the __Maximum__ property of the scrollbar to re
 {{source=..\SamplesVB\TrackAndStatus\ScrollBar\ScrollGettingStarted.vb region=maximum}} 
 
 ````C#
-            this.radVScrollBar1.Maximum = this.radPanel2.Size.Height - this.radPanel1.Size.Height;
+this.radVScrollBar1.Maximum = this.radPanel2.Size.Height - this.radPanel1.Size.Height;
+
 ````
 ````VB.NET
-        Me.RadVScrollBar1.Maximum = Me.RadPanel2.Size.Height - Me.RadPanel1.Size.Height
-        '
+Me.RadVScrollBar1.Maximum = Me.RadPanel2.Size.Height - Me.RadPanel1.Size.Height
+
 ````
 
 {{endregion}} 

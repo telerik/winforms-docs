@@ -47,15 +47,15 @@ To enable this functionality a single property setting is needed:
 {{source=..\SamplesVB\TreeView\Usability1\TreeViewUsabilityKeyboardNavigation.vb region=KeyboardSearchEnabled}} 
 
 ````C#
-            radTreeView1.KeyboardSearchEnabled = true;
+radTreeView1.KeyboardSearchEnabled = true;
+
 ````
 ````VB.NET
-        radTreeView1.KeyboardSearchEnabled = True
-        '#End Region
+radTreeView1.KeyboardSearchEnabled = True
+'#End Region
+'#region KeyboardSearchResetInterval
+radTreeView1.KeyboardSearchResetInterval = 500
 
-        '#region KeyboardSearchResetInterval
-        radTreeView1.KeyboardSearchResetInterval = 500
-        '
 ````
 
 {{endregion}} 
@@ -66,11 +66,12 @@ Another property of interest is the __KeyboardSearchResetInterval__. It is used 
 {{source=..\SamplesVB\TreeView\Usability1\TreeViewUsabilityKeyboardNavigation.vb region=KeyboardSearchResetInterval}} 
 
 ````C#
-            radTreeView1.TreeViewElement.KeyboardSearchResetInterval = 500;
+radTreeView1.TreeViewElement.KeyboardSearchResetInterval = 500;
+
 ````
 ````VB.NET
-        radTreeView1.KeyboardSearchResetInterval = 500
-        '
+radTreeView1.KeyboardSearchResetInterval = 500
+
 ````
 
 {{endregion}}

@@ -18,18 +18,19 @@ To start the Control Spy, create and display a new instance of the __RadControlS
 {{source=..\SamplesVB\Tools\Spy\UsingTheControlSpy.vb region=usingRadControlSpy}} 
 
 ````C#
-        private void radButton1_Click(object sender, EventArgs e)
-        {
-            RadControlSpyForm spyForm = new RadControlSpyForm();
-            spyForm.Show();
-        }
+private void radButton1_Click(object sender, EventArgs e)
+{
+    RadControlSpyForm spyForm = new RadControlSpyForm();
+    spyForm.Show();
+}
+
 ````
 ````VB.NET
-    Private Sub RadButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
-        Dim spyForm As New RadControlSpyForm()
-        spyForm.Show()
-    End Sub
-    '
+Private Sub RadButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
+    Dim spyForm As New RadControlSpyForm()
+    spyForm.Show()
+End Sub
+
 ````
 
 {{endregion}}

@@ -20,29 +20,28 @@ To select a node use the __Selected__ property of __RadTreeNode__. The following
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=selectedNode}} 
 
 ````C#
-            radTreeView1.SelectedNode = radTreeView1.Nodes[0];
+radTreeView1.SelectedNode = radTreeView1.Nodes[0];
+
 ````
 ````VB.NET
-        RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
-        '#End Region
+RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
+'#End Region
+'#Region selectMultiNodes
+RadTreeView1.MultiSelect = True
+Dim Node1 As New RadTreeNode("Inbox")
+Dim Node2 As New RadTreeNode("Deleted Items")
+Dim Node3 As New RadTreeNode("Outbox")
+Dim Node4 As New RadTreeNode("Sent")
+RadTreeView1.Nodes.Add(Node1)
+RadTreeView1.Nodes.Add(Node2)
+RadTreeView1.Nodes.Add(Node3)
+RadTreeView1.Nodes.Add(Node4)
+Node3.Selected = True
+Node4.Selected = True
+'#End Region
+'#region filter
+Me.RadTreeView1.Filter = "new"
 
-        '#Region selectMultiNodes
-        RadTreeView1.MultiSelect = True
-        Dim Node1 As New RadTreeNode("Inbox")
-        Dim Node2 As New RadTreeNode("Deleted Items")
-        Dim Node3 As New RadTreeNode("Outbox")
-        Dim Node4 As New RadTreeNode("Sent")
-        RadTreeView1.Nodes.Add(Node1)
-        RadTreeView1.Nodes.Add(Node2)
-        RadTreeView1.Nodes.Add(Node3)
-        RadTreeView1.Nodes.Add(Node4)
-        Node3.Selected = True
-        Node4.Selected = True
-        '#End Region
-
-        '#region filter
-        Me.RadTreeView1.Filter = "new"
-        '
 ````
 
 {{endregion}} 
@@ -66,35 +65,35 @@ To select multiple nodes through the API, just set the Selected property of the 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=selectMultiNodes}} 
 
 ````C#
-            radTreeView1.MultiSelect = true;
-            RadTreeNode Node1 = new RadTreeNode("Inbox");
-            RadTreeNode Node2 = new RadTreeNode("Deleted Items");
-            RadTreeNode Node3 = new RadTreeNode("Outbox");
-            RadTreeNode Node4 = new RadTreeNode("Sent");
-            radTreeView1.Nodes.Add(Node1);
-            radTreeView1.Nodes.Add(Node2);
-            radTreeView1.Nodes.Add(Node3);
-            radTreeView1.Nodes.Add(Node4);
-            Node3.Selected = true;
-            Node4.Selected = true;
+radTreeView1.MultiSelect = true;
+RadTreeNode Node1 = new RadTreeNode("Inbox");
+RadTreeNode Node2 = new RadTreeNode("Deleted Items");
+RadTreeNode Node3 = new RadTreeNode("Outbox");
+RadTreeNode Node4 = new RadTreeNode("Sent");
+radTreeView1.Nodes.Add(Node1);
+radTreeView1.Nodes.Add(Node2);
+radTreeView1.Nodes.Add(Node3);
+radTreeView1.Nodes.Add(Node4);
+Node3.Selected = true;
+Node4.Selected = true;
+
 ````
 ````VB.NET
-        RadTreeView1.MultiSelect = True
-        Dim Node1 As New RadTreeNode("Inbox")
-        Dim Node2 As New RadTreeNode("Deleted Items")
-        Dim Node3 As New RadTreeNode("Outbox")
-        Dim Node4 As New RadTreeNode("Sent")
-        RadTreeView1.Nodes.Add(Node1)
-        RadTreeView1.Nodes.Add(Node2)
-        RadTreeView1.Nodes.Add(Node3)
-        RadTreeView1.Nodes.Add(Node4)
-        Node3.Selected = True
-        Node4.Selected = True
-        '#End Region
+RadTreeView1.MultiSelect = True
+Dim Node1 As New RadTreeNode("Inbox")
+Dim Node2 As New RadTreeNode("Deleted Items")
+Dim Node3 As New RadTreeNode("Outbox")
+Dim Node4 As New RadTreeNode("Sent")
+RadTreeView1.Nodes.Add(Node1)
+RadTreeView1.Nodes.Add(Node2)
+RadTreeView1.Nodes.Add(Node3)
+RadTreeView1.Nodes.Add(Node4)
+Node3.Selected = True
+Node4.Selected = True
+'#End Region
+'#region filter
+Me.RadTreeView1.Filter = "new"
 
-        '#region filter
-        Me.RadTreeView1.Filter = "new"
-        '
 ````
 
 {{endregion}}

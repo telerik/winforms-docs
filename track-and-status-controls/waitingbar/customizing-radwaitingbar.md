@@ -22,17 +22,18 @@ The text of RadWaitingBar is not displayed by default. To show the text, set the
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=text}} 
 
 ````C#
-            this.radWaitingBar1.ShowText = true;
-            this.radWaitingBar1.Text = "Waiting...";
-            this.radWaitingBar1.WaitingBarElement.TextElement.AngleTransform = 180;
-            this.radWaitingBar1.WaitingBarElement.TextElement.TextAlignment = ContentAlignment.MiddleLeft;
+this.radWaitingBar1.ShowText = true;
+this.radWaitingBar1.Text = "Waiting...";
+this.radWaitingBar1.WaitingBarElement.TextElement.AngleTransform = 180;
+this.radWaitingBar1.WaitingBarElement.TextElement.TextAlignment = ContentAlignment.MiddleLeft;
+
 ````
 ````VB.NET
-        Me.RadWaitingBar1.ShowText = True
-        Me.RadWaitingBar1.Text = "Waiting..."
-        Me.RadWaitingBar1.WaitingBarElement.TextElement.AngleTransform = 180
-        Me.RadWaitingBar1.WaitingBarElement.TextElement.TextAlignment = ContentAlignment.MiddleLeft
-        '
+Me.RadWaitingBar1.ShowText = True
+Me.RadWaitingBar1.Text = "Waiting..."
+Me.RadWaitingBar1.WaitingBarElement.TextElement.AngleTransform = 180
+Me.RadWaitingBar1.WaitingBarElement.TextElement.TextAlignment = ContentAlignment.MiddleLeft
+
 ````
 
 {{endregion}} 
@@ -47,27 +48,28 @@ To set the RadWaitingBar in dash style set the __WaitingStyle__ property to __Da
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=dash}} 
 
 ````C#
-            this.radWaitingBar1.WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.Dash;
-            WaitingBarSeparatorElement dash = this.radWaitingBar1.WaitingBarElement.SeparatorElement;
-            dash.NumberOfColors = 2;
-            dash.BackColor = Color.Orange;
-            dash.BackColor2 = Color.Yellow;
-            dash.SweepAngle = 45;
-            dash.StepWidth = 15;
-            dash.SeparatorWidth = 10;
-            dash.GradientPercentage = 0.25f;
+this.radWaitingBar1.WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.Dash;
+WaitingBarSeparatorElement dash = this.radWaitingBar1.WaitingBarElement.SeparatorElement;
+dash.NumberOfColors = 2;
+dash.BackColor = Color.Orange;
+dash.BackColor2 = Color.Yellow;
+dash.SweepAngle = 45;
+dash.StepWidth = 15;
+dash.SeparatorWidth = 10;
+dash.GradientPercentage = 0.25f;
+
 ````
 ````VB.NET
-        Me.RadWaitingBar1.WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.Dash
-        Dim dash As WaitingBarSeparatorElement = Me.RadWaitingBar1.WaitingBarElement.SeparatorElement
-        dash.NumberOfColors = 2
-        dash.BackColor = Color.Orange
-        dash.BackColor2 = Color.Yellow
-        dash.SweepAngle = 45
-        dash.StepWidth = 15
-        dash.SeparatorWidth = 10
-        dash.GradientPercentage = 0.25F
-        '
+Me.RadWaitingBar1.WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.Dash
+Dim dash As WaitingBarSeparatorElement = Me.RadWaitingBar1.WaitingBarElement.SeparatorElement
+dash.NumberOfColors = 2
+dash.BackColor = Color.Orange
+dash.BackColor2 = Color.Yellow
+dash.SweepAngle = 45
+dash.StepWidth = 15
+dash.SeparatorWidth = 10
+dash.GradientPercentage = 0.25F
+
 ````
 
 {{endregion}} 
@@ -82,59 +84,54 @@ The waiting indicators also support dash style. To customize the appearance of t
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=waitingIndicators}} 
 
 ````C#
-            this.radWaitingBar1.WaitingBarElement.Indicators[0].BackColor = Color.LightGreen;
-            this.radWaitingBar1.WaitingBarElement.Indicators[0].NumberOfColors = 1;
-            this.radWaitingBar1.WaitingBarElement.Indicators[1].BackColor = Color.LightGreen;
-            this.radWaitingBar1.WaitingBarElement.Indicators[1].NumberOfColors = 1;
-            WaitingBarSeparatorElement separator = this.radWaitingBar1.WaitingBarElement.Indicators[0].SeparatorElement;
-            WaitingBarSeparatorElement helpSeparator = this.radWaitingBar1.WaitingBarElement.Indicators[1].SeparatorElement;
+this.radWaitingBar1.WaitingBarElement.Indicators[0].BackColor = Color.LightGreen;
+this.radWaitingBar1.WaitingBarElement.Indicators[0].NumberOfColors = 1;
+this.radWaitingBar1.WaitingBarElement.Indicators[1].BackColor = Color.LightGreen;
+this.radWaitingBar1.WaitingBarElement.Indicators[1].NumberOfColors = 1;
+WaitingBarSeparatorElement separator = this.radWaitingBar1.WaitingBarElement.Indicators[0].SeparatorElement;
+WaitingBarSeparatorElement helpSeparator = this.radWaitingBar1.WaitingBarElement.Indicators[1].SeparatorElement;
+separator.Dash = true;
+helpSeparator.Dash = true;
+separator.NumberOfColors = 2;
+separator.BackColor = Color.Orange;
+separator.BackColor2 = Color.Yellow;
+separator.SweepAngle = 45;
+separator.StepWidth = 15;
+separator.SeparatorWidth = 10;
+separator.GradientPercentage = 0.25f;
+helpSeparator.NumberOfColors = 2;
+helpSeparator.BackColor = Color.Orange;
+helpSeparator.BackColor2 = Color.Yellow;
+helpSeparator.SweepAngle = 45;
+helpSeparator.StepWidth = 15;
+helpSeparator.SeparatorWidth = 10;
+helpSeparator.GradientPercentage = 0.25f;
 
-            separator.Dash = true;
-            helpSeparator.Dash = true;
-
-            separator.NumberOfColors = 2;
-            separator.BackColor = Color.Orange;
-            separator.BackColor2 = Color.Yellow;
-            separator.SweepAngle = 45;
-            separator.StepWidth = 15;
-            separator.SeparatorWidth = 10;
-            separator.GradientPercentage = 0.25f;
-
-            helpSeparator.NumberOfColors = 2;
-            helpSeparator.BackColor = Color.Orange;
-            helpSeparator.BackColor2 = Color.Yellow;
-            helpSeparator.SweepAngle = 45;
-            helpSeparator.StepWidth = 15;
-            helpSeparator.SeparatorWidth = 10;
-            helpSeparator.GradientPercentage = 0.25f;
 ````
 ````VB.NET
-        Me.RadWaitingBar1.WaitingBarElement.Indicators(0).BackColor = Color.LightGreen
-        Me.RadWaitingBar1.WaitingBarElement.Indicators(0).NumberOfColors = 1
-        Me.RadWaitingBar1.WaitingBarElement.Indicators(1).BackColor = Color.LightGreen
-        Me.RadWaitingBar1.WaitingBarElement.Indicators(1).NumberOfColors = 1
-        Dim separator As WaitingBarSeparatorElement = Me.RadWaitingBar1.WaitingBarElement.Indicators(0).SeparatorElement
-        Dim helpSeparator As WaitingBarSeparatorElement = Me.RadWaitingBar1.WaitingBarElement.Indicators(1).SeparatorElement
+Me.RadWaitingBar1.WaitingBarElement.Indicators(0).BackColor = Color.LightGreen
+Me.RadWaitingBar1.WaitingBarElement.Indicators(0).NumberOfColors = 1
+Me.RadWaitingBar1.WaitingBarElement.Indicators(1).BackColor = Color.LightGreen
+Me.RadWaitingBar1.WaitingBarElement.Indicators(1).NumberOfColors = 1
+Dim separator As WaitingBarSeparatorElement = Me.RadWaitingBar1.WaitingBarElement.Indicators(0).SeparatorElement
+Dim helpSeparator As WaitingBarSeparatorElement = Me.RadWaitingBar1.WaitingBarElement.Indicators(1).SeparatorElement
+separator.Dash = True
+helpSeparator.Dash = True
+separator.NumberOfColors = 2
+separator.BackColor = Color.Orange
+separator.BackColor2 = Color.Yellow
+separator.SweepAngle = 45
+separator.StepWidth = 15
+separator.SeparatorWidth = 10
+separator.GradientPercentage = 0.25F
+helpSeparator.NumberOfColors = 2
+helpSeparator.BackColor = Color.Orange
+helpSeparator.BackColor2 = Color.Yellow
+helpSeparator.SweepAngle = 45
+helpSeparator.StepWidth = 15
+helpSeparator.SeparatorWidth = 10
+helpSeparator.GradientPercentage = 0.25F
 
-        separator.Dash = True
-        helpSeparator.Dash = True
-
-        separator.NumberOfColors = 2
-        separator.BackColor = Color.Orange
-        separator.BackColor2 = Color.Yellow
-        separator.SweepAngle = 45
-        separator.StepWidth = 15
-        separator.SeparatorWidth = 10
-        separator.GradientPercentage = 0.25F
-
-        helpSeparator.NumberOfColors = 2
-        helpSeparator.BackColor = Color.Orange
-        helpSeparator.BackColor2 = Color.Yellow
-        helpSeparator.SweepAngle = 45
-        helpSeparator.StepWidth = 15
-        helpSeparator.SeparatorWidth = 10
-        helpSeparator.GradientPercentage = 0.25F
-        '
 ````
 
 {{endregion}} 
@@ -149,19 +146,20 @@ Different shapes can be applied to both the WaitingBarElement and the waiting in
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=shape}} 
 
 ````C#
-            Telerik.WinControls.EllipseShape shape = new Telerik.WinControls.EllipseShape();
-            this.radWaitingBar1.WaitingBarElement.Shape = shape;
-            this.radWaitingBar1.WaitingBarElement.ContentElement.Shape = shape;
-            this.radWaitingBar1.WaitingBarElement.Indicators[0].Shape = shape;
-            this.radWaitingBar1.WaitingBarElement.Indicators[1].Shape = shape;
+Telerik.WinControls.EllipseShape shape = new Telerik.WinControls.EllipseShape();
+this.radWaitingBar1.WaitingBarElement.Shape = shape;
+this.radWaitingBar1.WaitingBarElement.ContentElement.Shape = shape;
+this.radWaitingBar1.WaitingBarElement.Indicators[0].Shape = shape;
+this.radWaitingBar1.WaitingBarElement.Indicators[1].Shape = shape;
+
 ````
 ````VB.NET
-        Dim shape As New Telerik.WinControls.EllipseShape()
-        Me.RadWaitingBar1.WaitingBarElement.Shape = shape
-        Me.RadWaitingBar1.WaitingBarElement.ContentElement.Shape = shape
-        Me.RadWaitingBar1.WaitingBarElement.Indicators(0).Shape = shape
-        Me.RadWaitingBar1.WaitingBarElement.Indicators(1).Shape = shape
-        '
+Dim shape As New Telerik.WinControls.EllipseShape()
+Me.RadWaitingBar1.WaitingBarElement.Shape = shape
+Me.RadWaitingBar1.WaitingBarElement.ContentElement.Shape = shape
+Me.RadWaitingBar1.WaitingBarElement.Indicators(0).Shape = shape
+Me.RadWaitingBar1.WaitingBarElement.Indicators(1).Shape = shape
+
 ````
 
 {{endregion}} 

@@ -17,11 +17,12 @@ You can present the content of your treeview instance in a right-to-left directi
 {{source=..\SamplesVB\TreeView\TreeLocalization.vb region=rtl}} 
 
 ````C#
-            this.radTreeView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+this.radTreeView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+
 ````
 ````VB.NET
-        Me.RadTreeView1.RightToLeft = Windows.Forms.RightToLeft.Yes
-        '
+Me.RadTreeView1.RightToLeft = Windows.Forms.RightToLeft.Yes
+
 ````
 
 {{endregion}} 

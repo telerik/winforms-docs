@@ -34,21 +34,21 @@ Before using the following code snippets, please make sure that you have added t
 {{source=..\SamplesVB\Themes\UsingDefaultThemes.vb region=usingDefaultThemes}} 
 
 ````C#
-        protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
+protected override void OnLoad(EventArgs e)
+{
+    base.OnLoad(e);
+    Office2007SilverTheme theme = new Office2007SilverTheme();
+    ThemeResolutionService.ApplicationThemeName = "Office2007Silver";
+}
 
-            Office2007SilverTheme theme = new Office2007SilverTheme();
-            ThemeResolutionService.ApplicationThemeName = "Office2007Silver";
-        }
 ````
 ````VB.NET
-    Protected Overrides Sub OnLoad(e As EventArgs)
-        MyBase.OnLoad(e)
+Protected Overrides Sub OnLoad(e As EventArgs)
+    MyBase.OnLoad(e)
+    Dim theme As New Office2007SilverTheme()
+    ThemeResolutionService.ApplicationThemeName = "Office2007Silver"
+End Sub
 
-        Dim theme As New Office2007SilverTheme()
-        ThemeResolutionService.ApplicationThemeName = "Office2007Silver"
-    End Sub
 ````
 
 {{endregion}}

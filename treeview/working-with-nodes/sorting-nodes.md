@@ -29,11 +29,12 @@ and we set the SortOrder property as shown below:
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=sort}} 
 
 ````C#
-            this.radTreeView1.SortOrder = SortOrder.Ascending;
+this.radTreeView1.SortOrder = SortOrder.Ascending;
+
 ````
 ````VB.NET
-        Me.RadTreeView1.SortOrder = SortOrder.Ascending
-        '
+Me.RadTreeView1.SortOrder = SortOrder.Ascending
+
 ````
 
 {{endregion}} 

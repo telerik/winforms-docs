@@ -32,29 +32,30 @@ Timer control.
 {{source=..\SamplesVB\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=tick}} 
 
 ````C#
-        int ticks = 0;
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            ticks++;
-            radProgressBar1.Value1 = ticks;
-            if (ticks == 100)
-            {
-                timer1.Enabled = false;
-                ticks = 0;
-            }
-        }
+int ticks = 0;
+private void timer1_Tick(object sender, EventArgs e)
+{
+    ticks++;
+    radProgressBar1.Value1 = ticks;
+    if (ticks == 100)
+    {
+        timer1.Enabled = false;
+        ticks = 0;
+    }
+}
+
 ````
 ````VB.NET
-    Private ticks As Integer = 0
-    Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs)
-        ticks += 1
-        RadProgressBar1.Value1 = ticks
-        If ticks = 100 Then
-            Timer1.Enabled = False
-            ticks = 0
-        End If
-    End Sub
-    '
+Private ticks As Integer = 0
+Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs)
+    ticks += 1
+    RadProgressBar1.Value1 = ticks
+    If ticks = 100 Then
+        Timer1.Enabled = False
+        ticks = 0
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -73,16 +74,17 @@ Timer control.
 {{source=..\SamplesVB\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=click}} 
 
 ````C#
-        void radButton1_Click(object sender, EventArgs e)
-        {
-            timer1.Enabled = true;
-        }
+void radButton1_Click(object sender, EventArgs e)
+{
+    timer1.Enabled = true;
+}
+
 ````
 ````VB.NET
-    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Timer1.Enabled = True
-    End Sub
-    '
+Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Timer1.Enabled = True
+End Sub
+
 ````
 
 {{endregion}} 

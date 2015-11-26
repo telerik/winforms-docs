@@ -29,41 +29,36 @@ This article demonstrates how to isolate a theme in a separate class library pro
 {{source=..\SamplesVB\Themes\AdvancedTopics\AddingCustomRedistributableThemesToYourApplication\CustomTheme.vb region=creatingThemeComponent}} 
 
 ````C#
-    public class CustomTheme : RadThemeComponentBase
+public class CustomTheme : RadThemeComponentBase
+{
+    static bool loaded;
+    public CustomTheme()
     {
-        static bool loaded;
-
-        public CustomTheme()
+        ThemeRepository.RegisterTheme(this);
+    }
+    public override void Load()
+    {
+        if (!loaded || this.IsDesignMode)
         {
-            ThemeRepository.RegisterTheme(this);
-        }
-
-        public override void Load()
-        {
-            if (!loaded || this.IsDesignMode)
-            {
-                loaded = true;
-                Assembly resourceAssembly = typeof(CustomTheme).Assembly;
-                this.LoadResource(resourceAssembly, "ProjectDefaultNamespace.ContainingFolderName.CustomTheme.tssp");
-            }
-        }
-
-        public override string ThemeName
-        {
-            get { return "CustomTheme"; }
+            loaded = true;
+            Assembly resourceAssembly = typeof(CustomTheme).Assembly;
+            this.LoadResource(resourceAssembly, "ProjectDefaultNamespace.ContainingFolderName.CustomTheme.tssp");
         }
     }
+    public override string ThemeName
+    {
+        get { return "CustomTheme"; }
+    }
+}
+
 ````
 ````VB.NET
 Public Class CustomTheme
     Inherits RadThemeComponentBase
-
     Shared loaded As Boolean
-
     Public Sub New()
         ThemeRepository.RegisterTheme(Me)
     End Sub
-
     Public Overrides Sub Load()
         If Not loaded OrElse Me.IsDesignMode Then
             loaded = True
@@ -71,14 +66,13 @@ Public Class CustomTheme
             Me.LoadResource(resourceAssembly, "ProjectDefaultNamespace.ContainingFolderName.CustomTheme.tssp")
         End If
     End Sub
-
     Public Overrides ReadOnly Property ThemeName() As String
         Get
             Return "CustomTheme"
         End Get
     End Property
 End Class
-'
+
 ````
 
 {{endregion}} 

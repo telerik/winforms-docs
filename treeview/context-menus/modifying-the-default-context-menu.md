@@ -80,51 +80,48 @@ Following our requirements, we prepare the this implementation:
 {{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=removingItems}} 
 
 ````C#
-        void radTreeView1_ContextMenuOpening1(object sender, Telerik.WinControls.UI.TreeViewContextMenuOpeningEventArgs e)
+void radTreeView1_ContextMenuOpening1(object sender, Telerik.WinControls.UI.TreeViewContextMenuOpeningEventArgs e)
+{
+    DataRowView rowView = (DataRowView)e.Node.DataBoundItem;
+    DataRow row = rowView.Row;
+    for (int i = e.Menu.Items.Count - 1; i >= 0; i--)
+    {
+        if (e.Menu.Items[i].Name == "Delete")
         {
-            DataRowView rowView = (DataRowView)e.Node.DataBoundItem;
-            DataRow row = rowView.Row;
-
-            for (int i = e.Menu.Items.Count - 1; i >= 0; i--)
+            if ((bool)row.ItemArray[2] == true)
             {
-                if (e.Menu.Items[i].Name == "Delete")
-                {
-                    if ((bool)row.ItemArray[2] == true)
-                    {
-                        e.Menu.Items.Remove(e.Menu.Items[i]);
-                    }
-                }
-
-                if (e.Menu.Items[i].Name == "New")
-                {
-                    if (e.Node.Level == 0)
-                    {
-                        e.Menu.Items.Remove(e.Menu.Items[i]);
-                    }
-                }
-            }         
+                e.Menu.Items.Remove(e.Menu.Items[i]);
+            }
         }
+        if (e.Menu.Items[i].Name == "New")
+        {
+            if (e.Node.Level == 0)
+            {
+                e.Menu.Items.Remove(e.Menu.Items[i]);
+            }
+        }
+    }         
+}
+
 ````
 ````VB.NET
-    Private Sub radTreeView1_ContextMenuOpening1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.TreeViewContextMenuOpeningEventArgs)
-        Dim rowView As DataRowView = CType(e.Node.DataBoundItem, DataRowView)
-        Dim row As DataRow = rowView.Row
-
-        For i As Integer = e.Menu.Items.Count - 1 To 0 Step -1
-            If e.Menu.Items(i).Name = "Delete" Then
-                If CBool(row.ItemArray(2)) = True Then
-                    e.Menu.Items.Remove(e.Menu.Items(i))
-                End If
+Private Sub radTreeView1_ContextMenuOpening1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.TreeViewContextMenuOpeningEventArgs)
+    Dim rowView As DataRowView = CType(e.Node.DataBoundItem, DataRowView)
+    Dim row As DataRow = rowView.Row
+    For i As Integer = e.Menu.Items.Count - 1 To 0 Step -1
+        If e.Menu.Items(i).Name = "Delete" Then
+            If CBool(row.ItemArray(2)) = True Then
+                e.Menu.Items.Remove(e.Menu.Items(i))
             End If
-
-            If e.Menu.Items(i).Name = "New" Then
-                If e.Node.Level = 0 Then
-                    e.Menu.Items.Remove(e.Menu.Items(i))
-                End If
+        End If
+        If e.Menu.Items(i).Name = "New" Then
+            If e.Node.Level = 0 Then
+                e.Menu.Items.Remove(e.Menu.Items(i))
             End If
-        Next i
-    End Sub
-    '
+        End If
+    Next i
+End Sub
+
 ````
 
 {{endregion}} 

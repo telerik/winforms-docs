@@ -22,22 +22,20 @@ The following example demonstrates how to search for a single node by its text a
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=find}} 
 
 ````C#
-            RadTreeNode resultOfSearch = radTreeView1.Find("Child Node");
+RadTreeNode resultOfSearch = radTreeView1.Find("Child Node");
             
-            Predicate<RadTreeNode> match = new Predicate<RadTreeNode>(delegate(RadTreeNode node)
-            {
-                return node.Tag != null ? true : false;
-            });
+Predicate<RadTreeNode> match = new Predicate<RadTreeNode>(delegate(RadTreeNode node)
+{
+    return node.Tag != null ? true : false;
+});
+RadTreeNode[] result = radTreeView1.FindNodes(match);
 
-            RadTreeNode[] result = radTreeView1.FindNodes(match);
 ````
 ````VB.NET
-        Dim resultOfSearch As RadTreeNode = RadTreeView1.Find("Child Node")
+Dim resultOfSearch As RadTreeNode = RadTreeView1.Find("Child Node")
+Dim match As New Predicate(Of RadTreeNode)(Function(node As RadTreeNode) If(node.Tag IsNot Nothing, True, False))
+Dim result As RadTreeNode() = RadTreeView1.FindNodes(match)
 
-        Dim match As New Predicate(Of RadTreeNode)(Function(node As RadTreeNode) If(node.Tag IsNot Nothing, True, False))
-
-        Dim result As RadTreeNode() = RadTreeView1.FindNodes(match)
-        '
 ````
 
 {{endregion}}

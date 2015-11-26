@@ -30,13 +30,14 @@ These are new IElementSelector implementations, which, much like in the CSS styl
 {{source=..\SamplesVB\Tools\VisualStyleBuilder\Overview\Concepts.vb region=VisualStateSelector}} 
 
 ````C#
-            VisualStateSelector stateSelector = new VisualStateSelector("RadButtonElement");
-            stateSelector.ChildSelector = new TypeSelector(typeof(FillPrimitive));
+VisualStateSelector stateSelector = new VisualStateSelector("RadButtonElement");
+stateSelector.ChildSelector = new TypeSelector(typeof(FillPrimitive));
+
 ````
 ````VB.NET
-        Dim stateSelector = New VisualStateSelector("RadButtonElement")
-        stateSelector.ChildSelector = New TypeSelector(GetType(FillPrimitive))
-        '
+Dim stateSelector = New VisualStateSelector("RadButtonElement")
+stateSelector.ChildSelector = New TypeSelector(GetType(FillPrimitive))
+
 ````
 
 {{endregion}} 

@@ -25,11 +25,12 @@ You can watch the video [Telerik UI for WinForms Theme](http://tv.telerik.com/wi
 {{source=..\SamplesVB\Themes\UsingADefaultThemeForEntireApplication.vb region=setAThemeForEntireApplication}} 
 
 ````C#
-            ThemeResolutionService.ApplicationThemeName = "Office2007Black";
+ThemeResolutionService.ApplicationThemeName = "Office2007Black";
+
 ````
 ````VB.NET
-        ThemeResolutionService.ApplicationThemeName = "Office2007Black"
-        '
+ThemeResolutionService.ApplicationThemeName = "Office2007Black"
+
 ````
 
 {{endregion}} 
@@ -51,17 +52,16 @@ This property indicates how the theme will be set to the control. If it is set t
 {{source=..\SamplesVB\Themes\UsingADefaultThemeForEntireApplication.vb region=setThemeForSpesificControl}} 
 
 ````C#
-            ThemeResolutionService.ApplicationThemeName = "Office2010Blue";
+ThemeResolutionService.ApplicationThemeName = "Office2010Blue";
+radGridView1.ElementTree.EnableApplicationThemeName = false;
+radGridView1.ThemeName = "Office2010Silver";
 
-            radGridView1.ElementTree.EnableApplicationThemeName = false;
-            radGridView1.ThemeName = "Office2010Silver";
 ````
 ````VB.NET
-        ThemeResolutionService.ApplicationThemeName = "Office2010Blue"
+ThemeResolutionService.ApplicationThemeName = "Office2010Blue"
+RadGridView1.ElementTree.EnableApplicationThemeName = False
+RadGridView1.ThemeName = "Office2010Silver"
 
-        RadGridView1.ElementTree.EnableApplicationThemeName = False
-        RadGridView1.ThemeName = "Office2010Silver"
-        '
 ````
 
 {{endregion}} 

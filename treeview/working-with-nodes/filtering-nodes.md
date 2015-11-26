@@ -23,11 +23,12 @@ and we set the Filter property as shown below:
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=filter}} 
 
 ````C#
-            this.radTreeView1.Filter = "new";
+this.radTreeView1.Filter = "new";
+
 ````
 ````VB.NET
-        Me.RadTreeView1.Filter = "new"
-        '
+Me.RadTreeView1.Filter = "new"
+
 ````
 
 {{endregion}} 

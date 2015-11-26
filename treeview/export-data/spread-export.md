@@ -51,17 +51,16 @@ You should pass an instance of a [SpreadExportRenderer]({%slug winforms/telerik-
 {{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=Export}} 
 
 ````C#
-            TreeViewSpreadExport exporter = new TreeViewSpreadExport(this.radTreeView1);
-            SpreadExportRenderer renderer = new SpreadExportRenderer();
+TreeViewSpreadExport exporter = new TreeViewSpreadExport(this.radTreeView1);
+SpreadExportRenderer renderer = new SpreadExportRenderer();
+exporter.RunExport(@"C:\ExportedFile.xlsx", renderer);
 
-            exporter.RunExport(@"C:\ExportedFile.xlsx", renderer);
 ````
 ````VB.NET
-        Dim exporter As New TreeViewSpreadExport(Me.radListView1)
-        Dim renderer As New SpreadExportRenderer()
+Dim exporter As New TreeViewSpreadExport(Me.radListView1)
+Dim renderer As New SpreadExportRenderer()
+exporter.RunExport("C:\ExportedFile.xlsx", renderer)
 
-        exporter.RunExport("C:\ExportedFile.xlsx", renderer)
-        '
 ````
 
 {{endregion}} 
@@ -123,19 +122,19 @@ You should pass an instance of a [SpreadExportRenderer]({%slug winforms/telerik-
 {{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=Formatting}} 
 
 ````C#
-        void exporter_CellFormatting(object sender, TreeViewSpreadExportCellFormattingEventArgs e)
-        {
-            e.ExportCell.BackColor = ColorTranslator.FromHtml("#F4FFEC");
-            e.ExportCell.Font = new Font("Consolas", 10, FontStyle.Underline);
+void exporter_CellFormatting(object sender, TreeViewSpreadExportCellFormattingEventArgs e)
+{
+    e.ExportCell.BackColor = ColorTranslator.FromHtml("#F4FFEC");
+    e.ExportCell.Font = new Font("Consolas", 10, FontStyle.Underline);
+}
 
-        }
 ````
 ````VB.NET
-    Private Sub exporter_CellFormatting(ByVal sender As Object, ByVal e As TreeViewSpreadExportCellFormattingEventArgs)
-        e.ExportCell.BackColor = ColorTranslator.FromHtml("#F4FFEC")
-        e.ExportCell.Font = New Font("Consolas", 10, FontStyle.Underline)
+Private Sub exporter_CellFormatting(ByVal sender As Object, ByVal e As TreeViewSpreadExportCellFormattingEventArgs)
+    e.ExportCell.BackColor = ColorTranslator.FromHtml("#F4FFEC")
+    e.ExportCell.Font = New Font("Consolas", 10, FontStyle.Underline)
+End Sub
 
-    End Sub
 ````
 
 {{endregion}}
@@ -167,23 +166,25 @@ The following example will demonstrate how the async spread export feature can b
 {{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=AsyncExport}} 
 
 ````C#
-        private void btnExportAsync_Click(object sender, EventArgs e)
-        {
-            TreeViewSpreadExport spreadExporter = new TreeViewSpreadExport(this.radTreeView1);
-            spreadExporter.AsyncExportProgressChanged += spreadExporter_AsyncExportProgressChanged;
-            spreadExporter.AsyncExportCompleted += spreadExporter_AsyncExportCompleted;
-            SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
-            spreadExporter.RunExportAsync(@"..\..\ExportedFile.xlsx", exportRenderer);
-        }
+private void btnExportAsync_Click(object sender, EventArgs e)
+{
+    TreeViewSpreadExport spreadExporter = new TreeViewSpreadExport(this.radTreeView1);
+    spreadExporter.AsyncExportProgressChanged += spreadExporter_AsyncExportProgressChanged;
+    spreadExporter.AsyncExportCompleted += spreadExporter_AsyncExportCompleted;
+    SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
+    spreadExporter.RunExportAsync(@"..\..\ExportedFile.xlsx", exportRenderer);
+}
+
 ````
 ````VB.NET
-    Private Sub btnExportAsync_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Dim spreadExporter As New TreeViewSpreadExport(Me.radListView1)
-        AddHandler spreadExporter.AsyncExportProgressChanged, AddressOf spreadExporter_AsyncExportProgressChanged
-        AddHandler spreadExporter.AsyncExportCompleted, AddressOf spreadExporter_AsyncExportCompleted
-        Dim exportRenderer As New SpreadExportRenderer()
-        spreadExporter.RunExportAsync("..\..\ExportedFile.xlsx", exportRenderer)
-    End Sub
+Private Sub btnExportAsync_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Dim spreadExporter As New TreeViewSpreadExport(Me.radListView1)
+    AddHandler spreadExporter.AsyncExportProgressChanged, AddressOf spreadExporter_AsyncExportProgressChanged
+    AddHandler spreadExporter.AsyncExportCompleted, AddressOf spreadExporter_AsyncExportCompleted
+    Dim exportRenderer As New SpreadExportRenderer()
+    spreadExporter.RunExportAsync("..\..\ExportedFile.xlsx", exportRenderer)
+End Sub
+
 ````
 
 {{endregion}} 
@@ -194,26 +195,26 @@ The following example will demonstrate how the async spread export feature can b
 {{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=ReportProgress}} 
 
 ````C#
-        private void spreadExporter_AsyncExportProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            this.radProgressBar1.Value1 = e.ProgressPercentage;
-        }
+private void spreadExporter_AsyncExportProgressChanged(object sender, ProgressChangedEventArgs e)
+{
+    this.radProgressBar1.Value1 = e.ProgressPercentage;
+}
+private void spreadExporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
+{
+    RadMessageBox.Show("Async Spread Export Completed!");
+    this.radProgressBar1.Value1 = 0;
+}
 
-        private void spreadExporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
-        {
-            RadMessageBox.Show("Async Spread Export Completed!");
-            this.radProgressBar1.Value1 = 0;
-        }
 ````
 ````VB.NET
-    Private Sub spreadExporter_AsyncExportProgressChanged(ByVal sender As Object, ByVal e As ProgressChangedEventArgs)
-        Me.radProgressBar1.Value1 = e.ProgressPercentage
-    End Sub
+Private Sub spreadExporter_AsyncExportProgressChanged(ByVal sender As Object, ByVal e As ProgressChangedEventArgs)
+    Me.radProgressBar1.Value1 = e.ProgressPercentage
+End Sub
+Private Sub spreadExporter_AsyncExportCompleted(ByVal sender As Object, ByVal e As AsyncCompletedEventArgs)
+    RadMessageBox.Show("Async Spread Export Completed!")
+    Me.radProgressBar1.Value1 = 0
+End Sub
 
-    Private Sub spreadExporter_AsyncExportCompleted(ByVal sender As Object, ByVal e As AsyncCompletedEventArgs)
-        RadMessageBox.Show("Async Spread Export Completed!")
-        Me.radProgressBar1.Value1 = 0
-    End Sub
 ````
 
 {{endregion}} 

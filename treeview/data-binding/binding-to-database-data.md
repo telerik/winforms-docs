@@ -64,19 +64,20 @@ The purpose of this example is to demonstrate how to bind to database data.
 {{source=..\SamplesVB\TreeView\DataBinding\BindingToDatabaseData.vb region=database}} 
 
 ````C#
-            this.radTreeView1.DataSource = this.artistsBindingSource;
-            this.radTreeView1.DisplayMember = "ArtistName";
-            this.radTreeView1.ValueMember = "ArtistID";
-            this.radTreeView1.RelationBindings.Add(new RelationBinding(this.albumsBindingSource, "AlbumName", "ArtistID", "ArtistID", "AlbumID"));
-            this.radTreeView1.RelationBindings.Add(new RelationBinding(this.songsBindingSource, "SongName", "AlbumID", "AlbumID", "SongID"));
+this.radTreeView1.DataSource = this.artistsBindingSource;
+this.radTreeView1.DisplayMember = "ArtistName";
+this.radTreeView1.ValueMember = "ArtistID";
+this.radTreeView1.RelationBindings.Add(new RelationBinding(this.albumsBindingSource, "AlbumName", "ArtistID", "ArtistID", "AlbumID"));
+this.radTreeView1.RelationBindings.Add(new RelationBinding(this.songsBindingSource, "SongName", "AlbumID", "AlbumID", "SongID"));
+
 ````
 ````VB.NET
-        Me.RadTreeView1.DataSource = Me.ArtistsBindingSource
-        Me.RadTreeView1.DisplayMember = "ArtistName"
-        Me.RadTreeView1.ValueMember = "ArtistID"
-        Me.RadTreeView1.RelationBindings.Add(New RelationBinding(Me.AlbumsBindingSource, "AlbumName", "ArtistID", "ArtistID", "AlbumID"))
-        Me.RadTreeView1.RelationBindings.Add(New RelationBinding(Me.SongsBindingSource, "SongName", "AlbumID", "AlbumID", "SongID"))
-        '
+Me.RadTreeView1.DataSource = Me.ArtistsBindingSource
+Me.RadTreeView1.DisplayMember = "ArtistName"
+Me.RadTreeView1.ValueMember = "ArtistID"
+Me.RadTreeView1.RelationBindings.Add(New RelationBinding(Me.AlbumsBindingSource, "AlbumName", "ArtistID", "ArtistID", "AlbumID"))
+Me.RadTreeView1.RelationBindings.Add(New RelationBinding(Me.SongsBindingSource, "SongName", "AlbumID", "AlbumID", "SongID"))
+
 ````
 
 {{endregion}}

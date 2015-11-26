@@ -38,31 +38,32 @@ This tutorial illustrates how to start and stop the animation of RadWaitingBar.
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\WaitingGettingStarted.vb region=click}} 
 
 ````C#
-        private void radButton1_Click(object sender, EventArgs e)
-        {
-            if (radWaitingBar1.IsWaiting)
-            {
-                radWaitingBar1.StopWaiting();
-                this.radButton1.Text = "Start";
-            }
-            else
-            {
-                radWaitingBar1.StartWaiting();
-                this.radButton1.Text = "Stop";
-            }
-        }
+private void radButton1_Click(object sender, EventArgs e)
+{
+    if (radWaitingBar1.IsWaiting)
+    {
+        radWaitingBar1.StopWaiting();
+        this.radButton1.Text = "Start";
+    }
+    else
+    {
+        radWaitingBar1.StartWaiting();
+        this.radButton1.Text = "Stop";
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-        If RadWaitingBar1.IsWaiting Then
-            RadWaitingBar1.StopWaiting()
-            Me.RadButton1.Text = "Start"
-        Else
-            RadWaitingBar1.StartWaiting()
-            Me.RadButton1.Text = "Stop"
-        End If
-    End Sub
-    '
+Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    If RadWaitingBar1.IsWaiting Then
+        RadWaitingBar1.StopWaiting()
+        Me.RadButton1.Text = "Start"
+    Else
+        RadWaitingBar1.StartWaiting()
+        Me.RadButton1.Text = "Stop"
+    End If
+End Sub
+
 ````
 
 {{endregion}} 

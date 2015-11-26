@@ -36,29 +36,30 @@ __RadTreeView__ the supports option trees that allows radio buttons and check b
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=optionList}} 
 
 ````C#
-            RadTreeNode Node1 = new RadTreeNode("Node1");
-            Node1.Expanded = true;
-            Node1.CheckType = CheckType.RadioButton;
-            RadTreeNode Node2 = new RadTreeNode("Node2");
-            RadTreeNode Node3 = new RadTreeNode("Node3");
-            RadTreeNode Node4 = new RadTreeNode("Node4");
-            radTreeView1.Nodes.Add(Node1);
-            radTreeView1.Nodes.Add(Node2);
-            Node1.Nodes.Add(Node3);
-            Node1.Nodes.Add(Node4);
+RadTreeNode Node1 = new RadTreeNode("Node1");
+Node1.Expanded = true;
+Node1.CheckType = CheckType.RadioButton;
+RadTreeNode Node2 = new RadTreeNode("Node2");
+RadTreeNode Node3 = new RadTreeNode("Node3");
+RadTreeNode Node4 = new RadTreeNode("Node4");
+radTreeView1.Nodes.Add(Node1);
+radTreeView1.Nodes.Add(Node2);
+Node1.Nodes.Add(Node3);
+Node1.Nodes.Add(Node4);
+
 ````
 ````VB.NET
-        Dim Node1 As New RadTreeNode("Node1")
-        Node1.Expanded = True
-        Node1.CheckType = ChildListType.OptionList
-        Dim Node2 As New RadTreeNode("Node2")
-        Dim Node3 As New RadTreeNode("Node3")
-        Dim Node4 As New RadTreeNode("Node4")
-        RadTreeView1.Nodes.Add(Node1)
-        RadTreeView1.Nodes.Add(Node2)
-        Node1.Nodes.Add(Node3)
-        Node1.Nodes.Add(Node4)
-        '
+Dim Node1 As New RadTreeNode("Node1")
+Node1.Expanded = True
+Node1.CheckType = ChildListType.OptionList
+Dim Node2 As New RadTreeNode("Node2")
+Dim Node3 As New RadTreeNode("Node3")
+Dim Node4 As New RadTreeNode("Node4")
+RadTreeView1.Nodes.Add(Node1)
+RadTreeView1.Nodes.Add(Node2)
+Node1.Nodes.Add(Node3)
+Node1.Nodes.Add(Node4)
+
 ````
 
 {{endregion}}

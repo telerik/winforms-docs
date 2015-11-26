@@ -46,11 +46,12 @@ The default context menu is not enabled by default and if you right-click a node
 {{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=defaultMenu}} 
 
 ````C#
-            this.radTreeView1.AllowDefaultContextMenu = true;
+this.radTreeView1.AllowDefaultContextMenu = true;
+
 ````
 ````VB.NET
-        Me.RadTreeView1.AllowDefaultContextMenu = True
-        '
+Me.RadTreeView1.AllowDefaultContextMenu = True
+
 ````
 
 {{endregion}} 
@@ -68,11 +69,12 @@ To enable the New item, you should set the __AllowAdd__ property to *true*:
 {{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowAdd}} 
 
 ````C#
-            this.radTreeView1.AllowAdd = true;
+this.radTreeView1.AllowAdd = true;
+
 ````
 ````VB.NET
-        Me.RadTreeView1.AllowAdd = True
-        '
+Me.RadTreeView1.AllowAdd = True
+
 ````
 
 {{endregion}} 
@@ -86,11 +88,12 @@ __Enabling the Edit item__: To enable the Edit item, you should set the __AllowE
 {{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowEdit}} 
 
 ````C#
-            this.radTreeView1.AllowEdit = true;
+this.radTreeView1.AllowEdit = true;
+
 ````
 ````VB.NET
-        Me.RadTreeView1.AllowEdit = True
-        '
+Me.RadTreeView1.AllowEdit = True
+
 ````
 
 {{endregion}} 
@@ -103,11 +106,12 @@ __Enabling the Delete item__: To enable the Delete item, you should set the __Al
 {{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowRemove}} 
 
 ````C#
-            this.radTreeView1.AllowRemove = true;
+this.radTreeView1.AllowRemove = true;
+
 ````
 ````VB.NET
-        Me.RadTreeView1.AllowRemove = True
-        '
+Me.RadTreeView1.AllowRemove = True
+
 ````
 
 {{endregion}} 

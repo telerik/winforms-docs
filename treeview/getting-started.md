@@ -63,36 +63,34 @@ The following tutorial will help you get started working with the __RadTreeView_
 
 ````C#
             
-            RadTreeNode node = radTreeView1.Nodes["Email Contacts"].Nodes.Add("Bob Tony");
-            node.Selected = true;
+RadTreeNode node = radTreeView1.Nodes["Email Contacts"].Nodes.Add("Bob Tony");
+node.Selected = true;
             
-            radTreeView1.Nodes["Email Contacts"].Nodes.Add("Sue Winchell");
-            radTreeView1.Nodes["Email Contacts"].Nodes.Add("Lui Sang");
-            radTreeView1.Nodes["Lists"].Nodes.Add("Priorities");
-            radTreeView1.Nodes["Lists"].Nodes.Add("Opportunities");
-            radTreeView1.Nodes["Lists"].Nodes.Add("Issues");
+radTreeView1.Nodes["Email Contacts"].Nodes.Add("Sue Winchell");
+radTreeView1.Nodes["Email Contacts"].Nodes.Add("Lui Sang");
+radTreeView1.Nodes["Lists"].Nodes.Add("Priorities");
+radTreeView1.Nodes["Lists"].Nodes.Add("Opportunities");
+radTreeView1.Nodes["Lists"].Nodes.Add("Issues");
             
-            node = radTreeView1.Nodes["Reports"].Nodes.Add("June Sales");
-            node = radTreeView1.Nodes["Reports"].Nodes.Add("July Sales");
-            node = radTreeView1.Nodes["Reports"].Nodes.Add("First Quarter Summary");
-            node = radTreeView1.Nodes["Reports"].Nodes.Add("Second Quarter Summary");
+node = radTreeView1.Nodes["Reports"].Nodes.Add("June Sales");
+node = radTreeView1.Nodes["Reports"].Nodes.Add("July Sales");
+node = radTreeView1.Nodes["Reports"].Nodes.Add("First Quarter Summary");
+node = radTreeView1.Nodes["Reports"].Nodes.Add("Second Quarter Summary");
+
 ````
 ````VB.NET
-        Dim node As RadTreeNode = RadTreeView1.Nodes("Email Contacts").Nodes.Add("Bob Tony")
-        node.Selected = True
+Dim node As RadTreeNode = RadTreeView1.Nodes("Email Contacts").Nodes.Add("Bob Tony")
+node.Selected = True
+RadTreeView1.Nodes("Email Contacts").Nodes.Add("Sue Winchell")
+RadTreeView1.Nodes("Email Contacts").Nodes.Add("Lui Sang")
+RadTreeView1.Nodes("Lists").Nodes.Add("Priorities")
+RadTreeView1.Nodes("Lists").Nodes.Add("Opportunities")
+RadTreeView1.Nodes("Lists").Nodes.Add("Issues")
+node = RadTreeView1.Nodes("Reports").Nodes.Add("June Sales")
+node = RadTreeView1.Nodes("Reports").Nodes.Add("July Sales")
+node = RadTreeView1.Nodes("Reports").Nodes.Add("First Quarter Summary")
+node = RadTreeView1.Nodes("Reports").Nodes.Add("Second Quarter Summary")
 
-        RadTreeView1.Nodes("Email Contacts").Nodes.Add("Sue Winchell")
-        RadTreeView1.Nodes("Email Contacts").Nodes.Add("Lui Sang")
-        RadTreeView1.Nodes("Lists").Nodes.Add("Priorities")
-        RadTreeView1.Nodes("Lists").Nodes.Add("Opportunities")
-        RadTreeView1.Nodes("Lists").Nodes.Add("Issues")
-
-        node = RadTreeView1.Nodes("Reports").Nodes.Add("June Sales")
-        node = RadTreeView1.Nodes("Reports").Nodes.Add("July Sales")
-        node = RadTreeView1.Nodes("Reports").Nodes.Add("First Quarter Summary")
-        node = RadTreeView1.Nodes("Reports").Nodes.Add("Second Quarter Summary")
-
-        '
 ````
 
 {{endregion}} 

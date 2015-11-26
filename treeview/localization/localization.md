@@ -31,46 +31,45 @@ Below is a sample implementation of an English localization provider:
 {{source=..\SamplesVB\TreeView\MyEnglishTreeViewLocalizationProvider.vb region=provider}} 
 
 ````C#
-    public class MyEnglishTreeViewLocalizationProvider : TreeViewLocalizationProvider
+public class MyEnglishTreeViewLocalizationProvider : TreeViewLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
     {
-        public override string GetLocalizedString(string id)
+        switch (id)
         {
-            switch (id)
-            {
-                case TreeViewStringId.ContextMenuCollapse:
-                    return "Collapse11";
-                case TreeViewStringId.ContextMenuDelete:
-                    return "Delete11";
-                case TreeViewStringId.ContextMenuEdit:
-                    return "Edit11";
-                case TreeViewStringId.ContextMenuExpand:
-                    return "Expand11";
-                case TreeViewStringId.ContextMenuNew:
-                    return "New11";
-            }
-
-            return "";
+            case TreeViewStringId.ContextMenuCollapse:
+                return "Collapse11";
+            case TreeViewStringId.ContextMenuDelete:
+                return "Delete11";
+            case TreeViewStringId.ContextMenuEdit:
+                return "Edit11";
+            case TreeViewStringId.ContextMenuExpand:
+                return "Expand11";
+            case TreeViewStringId.ContextMenuNew:
+                return "New11";
         }
+        return "";
     }
+}
+
 ````
 ````VB.NET
-    Public Overrides Function GetLocalizedString(ByVal id As String) As String
-        Select Case id
-            Case TreeViewStringId.ContextMenuCollapse
-                Return "Collapse"
-            Case TreeViewStringId.ContextMenuDelete
-                Return "Delete"
-            Case TreeViewStringId.ContextMenuEdit
-                Return "Edit"
-            Case TreeViewStringId.ContextMenuExpand
-                Return "Expand"
-            Case TreeViewStringId.ContextMenuNew
-                Return "New"
-        End Select
+Public Overrides Function GetLocalizedString(ByVal id As String) As String
+    Select Case id
+        Case TreeViewStringId.ContextMenuCollapse
+            Return "Collapse"
+        Case TreeViewStringId.ContextMenuDelete
+            Return "Delete"
+        Case TreeViewStringId.ContextMenuEdit
+            Return "Edit"
+        Case TreeViewStringId.ContextMenuExpand
+            Return "Expand"
+        Case TreeViewStringId.ContextMenuNew
+            Return "New"
+    End Select
+    Return String.Empty
+End Function
 
-        Return String.Empty
-    End Function
-    '
 ````
 
 {{endregion}} 
@@ -83,11 +82,12 @@ To apply the custom localization provider, instantiate and assign it to the cur
 {{source=..\SamplesVB\TreeView\TreeLocalization.vb region=localization}} 
 
 ````C#
-            TreeViewLocalizationProvider.CurrentProvider = new MyEnglishTreeViewLocalizationProvider();
+TreeViewLocalizationProvider.CurrentProvider = new MyEnglishTreeViewLocalizationProvider();
+
 ````
 ````VB.NET
-        TreeViewLocalizationProvider.CurrentProvider = New MyEnglishTreeViewLocalizationProvider()
-        '
+TreeViewLocalizationProvider.CurrentProvider = New MyEnglishTreeViewLocalizationProvider()
+
 ````
 
 {{endregion}} 

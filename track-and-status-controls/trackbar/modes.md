@@ -27,15 +27,16 @@ In this mode RadTrackBar looks like RadTrackBar in SingleThumb mode, but it can 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=TrackBarModeStartFromTheBeginning}} 
 
 ````C#
-            this.radTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.StartFromTheBeginning;
-            this.radTrackBar1.Ranges.Add(new TrackBarRange(0, 5, "MyRange1"));
-            this.radTrackBar1.Ranges.Add(new TrackBarRange(0, 15, "MyRange2"));
+this.radTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.StartFromTheBeginning;
+this.radTrackBar1.Ranges.Add(new TrackBarRange(0, 5, "MyRange1"));
+this.radTrackBar1.Ranges.Add(new TrackBarRange(0, 15, "MyRange2"));
+
 ````
 ````VB.NET
-        Me.RadTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.StartFromTheBeginning
-        Me.RadTrackBar1.Ranges.Add(New TrackBarRange(0, 5, "MyRange1"))
-        Me.RadTrackBar1.Ranges.Add(New TrackBarRange(0, 15, "MyRange2"))
-        '
+Me.RadTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.StartFromTheBeginning
+Me.RadTrackBar1.Ranges.Add(New TrackBarRange(0, 5, "MyRange1"))
+Me.RadTrackBar1.Ranges.Add(New TrackBarRange(0, 15, "MyRange2"))
+
 ````
 
 {{endregion}} 
@@ -49,12 +50,13 @@ In order to access the values of the thumbs in this mode you should go through t
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=accessValuesStartFromTheBeginningMode}} 
 
 ````C#
-            float fitstRangeValue = this.radTrackBar1.Ranges[0].End;
-            float secondRangeValue = this.radTrackBar1.Ranges[1].End;
+float fitstRangeValue = this.radTrackBar1.Ranges[0].End;
+float secondRangeValue = this.radTrackBar1.Ranges[1].End;
+
 ````
 ````VB.NET
-        Dim fitstRangeValue As Single = Me.RadTrackBar1.Ranges(0).[End]
-        '
+Dim fitstRangeValue As Single = Me.RadTrackBar1.Ranges(0).[End]
+
 ````
 
 {{endregion}} 
@@ -65,34 +67,34 @@ To receive notification when the Value is changed in this mode, you should use t
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=Ranges_CollectionChangedEvent}} 
 
 ````C#
-        void Ranges_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
+void Ranges_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
+{
+    if (e.Action == Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged) 
+    {
+        foreach (object item in e.NewItems)
         {
-            if (e.Action == Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged) 
+            TrackBarRange range = item as TrackBarRange;
+            if (range != null)
             {
-                foreach (object item in e.NewItems)
-                {
-                    TrackBarRange range = item as TrackBarRange;
-                    if (range != null)
-                    {
-                        Console.WriteLine("Range {0} value {1}",range.Text, range.End);
-                    }
-                }
-
+                Console.WriteLine("Range {0} value {1}",range.Text, range.End);
             }
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub Ranges_CollectionChanged(sender As Object, e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
-        If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
-            For Each item As Object In e.NewItems
-                Dim range As TrackBarRange = TryCast(item, TrackBarRange)
-                If range IsNot Nothing Then
-                    Console.WriteLine("Range {0} value {1}", range.Text, range.[End])
-                End If
+Private Sub Ranges_CollectionChanged(sender As Object, e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
+    If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
+        For Each item As Object In e.NewItems
+            Dim range As TrackBarRange = TryCast(item, TrackBarRange)
+            If range IsNot Nothing Then
+                Console.WriteLine("Range {0} value {1}", range.Text, range.[End])
+            End If
+        Next
+    End If
+End Sub
 
-            Next
-        End If
-    End Sub
 ````
 
 {{endregion}} 
@@ -105,17 +107,18 @@ This mode allows you to define one or more __Ranges__ with __Start__ and __End__
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=TrackBarModeRange}} 
 
 ````C#
-            this.radTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.Range;
-            this.radTrackBar1.Ranges[0].Start = 2;
-            this.radTrackBar1.Ranges[0].End = 5;
-            this.radTrackBar1.Ranges.Add(new TrackBarRange(10, 15));
+this.radTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.Range;
+this.radTrackBar1.Ranges[0].Start = 2;
+this.radTrackBar1.Ranges[0].End = 5;
+this.radTrackBar1.Ranges.Add(new TrackBarRange(10, 15));
+
 ````
 ````VB.NET
-        Me.RadTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.Range
-        Me.RadTrackBar1.Ranges(0).Start = 2
-        Me.RadTrackBar1.Ranges(0).[End] = 5
-        Me.RadTrackBar1.Ranges.Add(New TrackBarRange(10, 15))
-        '
+Me.RadTrackBar1.TrackBarMode = Telerik.WinControls.UI.TrackBarRangeMode.Range
+Me.RadTrackBar1.Ranges(0).Start = 2
+Me.RadTrackBar1.Ranges(0).[End] = 5
+Me.RadTrackBar1.Ranges.Add(New TrackBarRange(10, 15))
+
 ````
 
 {{endregion}} 
@@ -128,34 +131,34 @@ To receive notification when the Value is changed in this mode, you should use t
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=Ranges_CollectionChangedEvent}} 
 
 ````C#
-        void Ranges_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
+void Ranges_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
+{
+    if (e.Action == Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged) 
+    {
+        foreach (object item in e.NewItems)
         {
-            if (e.Action == Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged) 
+            TrackBarRange range = item as TrackBarRange;
+            if (range != null)
             {
-                foreach (object item in e.NewItems)
-                {
-                    TrackBarRange range = item as TrackBarRange;
-                    if (range != null)
-                    {
-                        Console.WriteLine("Range {0} value {1}",range.Text, range.End);
-                    }
-                }
-
+                Console.WriteLine("Range {0} value {1}",range.Text, range.End);
             }
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub Ranges_CollectionChanged(sender As Object, e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
-        If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
-            For Each item As Object In e.NewItems
-                Dim range As TrackBarRange = TryCast(item, TrackBarRange)
-                If range IsNot Nothing Then
-                    Console.WriteLine("Range {0} value {1}", range.Text, range.[End])
-                End If
+Private Sub Ranges_CollectionChanged(sender As Object, e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
+    If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
+        For Each item As Object In e.NewItems
+            Dim range As TrackBarRange = TryCast(item, TrackBarRange)
+            If range IsNot Nothing Then
+                Console.WriteLine("Range {0} value {1}", range.Text, range.[End])
+            End If
+        Next
+    End If
+End Sub
 
-            Next
-        End If
-    End Sub
 ````
 
 {{endregion}} 

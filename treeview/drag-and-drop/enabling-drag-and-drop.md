@@ -59,81 +59,72 @@ To implement this functionality:
 {{source=..\SamplesVB\TreeView\DragAndDrop\EnablingDragAndDrop.vb region=dragDrop}} 
 
 ````C#
-        public EnablingDragAndDrop()
-        {
-            InitializeComponent();
+public EnablingDragAndDrop()
+{
+    InitializeComponent();
+    radTextBox1.TextBoxElement.TextBoxItem.HostedControl.MouseDown +=new MouseEventHandler(textBox1_MouseDown);
+    radTreeView1.DragEnter+=new DragEventHandler(radTreeView_DragEnter);
+    radTreeView1.DragDrop+=new DragEventHandler(radTreeView_DragDrop);
+    radTreeView1.AllowDrop = true;
+    this.radTextBox1.AllowDrop = true;
+}
+private void textBox1_MouseDown(object sender, MouseEventArgs e)
+{
+    this.radTextBox1.DoDragDrop(this.radTextBox1.Text, DragDropEffects.Copy | DragDropEffects.Move);
+}
+private void radTreeView_DragEnter(object sender, DragEventArgs e)
+{
+    if (e.Data.GetDataPresent(DataFormats.Text))
+    {
+        e.Effect = DragDropEffects.Copy;
+    }
+    else
+    {
+        e.Effect = DragDropEffects.None;
+    }
+}
+private void radTreeView_DragDrop(object sender, DragEventArgs e)
+{
+    Point p = radTreeView1.PointToClient(new Point(e.X, e.Y));
+    RadTreeNode hoverNode = radTreeView1.GetNodeAt(p.X, p.Y);
+    if (hoverNode == null)
+    {
+        radTreeView1.Nodes.Add(e.Data.GetData(DataFormats.Text).ToString());
+        return;
+    }
+    hoverNode.Nodes.Add(e.Data.GetData(DataFormats.Text).ToString());
+}
 
-            radTextBox1.TextBoxElement.TextBoxItem.HostedControl.MouseDown +=new MouseEventHandler(textBox1_MouseDown);
-            radTreeView1.DragEnter+=new DragEventHandler(radTreeView_DragEnter);
-            radTreeView1.DragDrop+=new DragEventHandler(radTreeView_DragDrop);
-
-            radTreeView1.AllowDrop = true;
-            this.radTextBox1.AllowDrop = true;
-        }
-
-        private void textBox1_MouseDown(object sender, MouseEventArgs e)
-        {
-            this.radTextBox1.DoDragDrop(this.radTextBox1.Text, DragDropEffects.Copy | DragDropEffects.Move);
-        }
-
-        private void radTreeView_DragEnter(object sender, DragEventArgs e)
-        {
-            if (e.Data.GetDataPresent(DataFormats.Text))
-            {
-                e.Effect = DragDropEffects.Copy;
-            }
-            else
-            {
-                e.Effect = DragDropEffects.None;
-            }
-        }
-
-        private void radTreeView_DragDrop(object sender, DragEventArgs e)
-        {
-            Point p = radTreeView1.PointToClient(new Point(e.X, e.Y));
-            RadTreeNode hoverNode = radTreeView1.GetNodeAt(p.X, p.Y);
-            if (hoverNode == null)
-            {
-                radTreeView1.Nodes.Add(e.Data.GetData(DataFormats.Text).ToString());
-                return;
-            }
-            hoverNode.Nodes.Add(e.Data.GetData(DataFormats.Text).ToString());
-        }
 ````
 ````VB.NET
-    Public Sub New()
-        InitializeComponent()
+Public Sub New()
+    InitializeComponent()
+    AddHandler RadTextBox1.TextBoxElement.TextBoxItem.HostedControl.MouseDown, AddressOf textBox1_MouseDown
+    AddHandler RadTreeView1.DragEnter, AddressOf radTreeView_DragEnter
+    AddHandler RadTreeView1.DragDrop, AddressOf radTreeView_DragDrop
+    RadTreeView1.AllowDrop = True
+    Me.RadTextBox1.AllowDrop = True
+End Sub
+Private Sub textBox1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
+    Me.RadTextBox1.DoDragDrop(Me.RadTextBox1.Text, DragDropEffects.Copy Or DragDropEffects.Move)
+End Sub
+Private Sub radTreeView_DragEnter(ByVal sender As Object, ByVal e As DragEventArgs)
+    If e.Data.GetDataPresent(DataFormats.Text) Then
+        e.Effect = DragDropEffects.Copy
+    Else
+        e.Effect = DragDropEffects.None
+    End If
+End Sub
+Private Sub radTreeView_DragDrop(ByVal sender As Object, ByVal e As DragEventArgs)
+    Dim p As Point = RadTreeView1.PointToClient(New Point(e.X, e.Y))
+    Dim hoverNode As RadTreeNode = RadTreeView1.GetNodeAt(p.X, p.Y)
+    If hoverNode Is Nothing Then
+        RadTreeView1.Nodes.Add(e.Data.GetData(DataFormats.Text).ToString())
+        Return
+    End If
+    hoverNode.Nodes.Add(e.Data.GetData(DataFormats.Text).ToString())
+End Sub
 
-        AddHandler RadTextBox1.TextBoxElement.TextBoxItem.HostedControl.MouseDown, AddressOf textBox1_MouseDown
-        AddHandler RadTreeView1.DragEnter, AddressOf radTreeView_DragEnter
-        AddHandler RadTreeView1.DragDrop, AddressOf radTreeView_DragDrop
-
-        RadTreeView1.AllowDrop = True
-        Me.RadTextBox1.AllowDrop = True
-    End Sub
-
-    Private Sub textBox1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
-        Me.RadTextBox1.DoDragDrop(Me.RadTextBox1.Text, DragDropEffects.Copy Or DragDropEffects.Move)
-    End Sub
-
-    Private Sub radTreeView_DragEnter(ByVal sender As Object, ByVal e As DragEventArgs)
-        If e.Data.GetDataPresent(DataFormats.Text) Then
-            e.Effect = DragDropEffects.Copy
-        Else
-            e.Effect = DragDropEffects.None
-        End If
-    End Sub
-
-    Private Sub radTreeView_DragDrop(ByVal sender As Object, ByVal e As DragEventArgs)
-        Dim p As Point = RadTreeView1.PointToClient(New Point(e.X, e.Y))
-        Dim hoverNode As RadTreeNode = RadTreeView1.GetNodeAt(p.X, p.Y)
-        If hoverNode Is Nothing Then
-            RadTreeView1.Nodes.Add(e.Data.GetData(DataFormats.Text).ToString())
-            Return
-        End If
-        hoverNode.Nodes.Add(e.Data.GetData(DataFormats.Text).ToString())
-    End Sub
-    '
 ````
 
 {{endregion}}

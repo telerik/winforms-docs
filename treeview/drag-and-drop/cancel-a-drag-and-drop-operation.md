@@ -28,11 +28,12 @@ You can interrupt a drag and drop operation by setting the __AllowDrop__ propert
 
 ````C#
             
-            radTreeView1.Nodes[0].AllowDrop = false;
+radTreeView1.Nodes[0].AllowDrop = false;
+
 ````
 ````VB.NET
-        RadTreeView1.Nodes(0).AllowDrop = False
-        '
+RadTreeView1.Nodes(0).AllowDrop = False
+
 ````
 
 {{endregion}} 
@@ -45,40 +46,36 @@ You can interrupt a drag and drop operation by setting the __AllowDrop__ propert
 {{source=..\SamplesVB\TreeView\DragAndDrop\CancelDragAndDropOperation.vb region=Tag}} 
 
 ````C#
-
-            int count = 0;
+int count = 0;
             
-            for (int i = 0; i < 10; i++)
-            {
-                RadTreeNode parentNode = new RadTreeNode("Parent Node" + i);              
-                parentNode.AllowDrop = false;
-
-                for (int j = 0; j < 3; j++)
-                {
-                    RadTreeNode childNode = new RadTreeNode("Child Node" + count++);
-                    
-                    parentNode.Nodes.Add(childNode);
-                }
+for (int i = 0; i < 10; i++)
+{
+    RadTreeNode parentNode = new RadTreeNode("Parent Node" + i);              
+    parentNode.AllowDrop = false;
+    for (int j = 0; j < 3; j++)
+    {
+        RadTreeNode childNode = new RadTreeNode("Child Node" + count++);
+        
+        parentNode.Nodes.Add(childNode);
+    }
             
-                radTreeView1.Nodes.Add(parentNode);
-            }
+    radTreeView1.Nodes.Add(parentNode);
+}
+
 ````
 ````VB.NET
-        Dim count As Integer = 0
+Dim count As Integer = 0
+For i As Integer = 0 To 9
+    Dim parentNode As New RadTreeNode("Parent Node" & i)        
+    parentNode.AllowDrop = False
+    For j As Integer = 0 To 2
+        Dim childNode As New RadTreeNode("Child Node" & count)
+        count = count + 1
+        parentNode.Nodes.Add(childNode)
+    Next
+    RadTreeView1.Nodes.Add(parentNode)
+Next
 
-        For i As Integer = 0 To 9
-            Dim parentNode As New RadTreeNode("Parent Node" & i)        
-            parentNode.AllowDrop = False
-
-            For j As Integer = 0 To 2
-                Dim childNode As New RadTreeNode("Child Node" & count)
-                count = count + 1
-                parentNode.Nodes.Add(childNode)
-            Next
-
-            RadTreeView1.Nodes.Add(parentNode)
-        Next
-        '
 ````
 
 {{endregion}} 
@@ -90,23 +87,30 @@ You can interrupt a drag and drop operation by setting the __AllowDrop__ propert
 {{source=..\SamplesVB\TreeView\DragAndDrop\CancelDragAndDropOperation.vb region=DragEnding}} 
 
 ````C#
-            
-        void radTreeView1_DragEnding(object sender, RadTreeViewDragCancelEventArgs e)
-        {
-            if (e.TargetNode.Level != e.Node.Level)
-            {
-                e.Cancel = true;
-                RadMessageBox.Show("Only nodes from the same level can be dropped here.");
-            }
-        }
+    
+void radTreeView1_DragEnding(object sender, RadTreeViewDragCancelEventArgs e)
+{
+    if (e.TargetNode.Level != e.Node.Level)
+    {
+        e.Cancel = true;
+        RadMessageBox.Show("Only nodes from the same level can be dropped here.");
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub radTreeView1_DragEnding(sender As Object, e As RadTreeViewDragCancelEventArgs)
-        If e.TargetNode.Level <> e.Node.Level Then
-            e.Cancel = True
-            RadMessageBox.Show("Only nodes from the same level can be dropped here.")
-        End If
-    End Sub
+Private Sub radTreeView1_DragEnding(sender As Object, e As RadTreeViewDragCancelEventArgs)
+    If e.TargetNode.Level <> e.Node.Level Then
+        e.Cancel = True
+        RadMessageBox.Show("Only nodes from the same level can be dropped here.")
+    End If
+End Sub
+#End Region
+    
+Private Sub Cancel_Drag_and_Drop_operation_Load(sender As Object, e As EventArgs)
+    '#Region "AllowDrop"
+    RadTreeView1.Nodes(0).AllowDrop = False
+
 ````
 
 {{endregion}} 
@@ -119,18 +123,32 @@ The default behavior of __RadTreeView__ when a node is dragged over a collapsed 
 {{source=..\SamplesVB\TreeView\DragAndDrop\CancelDragAndDropOperation.vb region=AutoExpansion}} 
 
 ````C#
-                                 
-        void radTreeView1_NodeExpandedChanging(object sender, RadTreeViewCancelEventArgs e)
-        {
-            e.Cancel = radTreeView1.TreeViewElement.DragDropService.State == RadServiceState.Working;
-        }
+                         
+void radTreeView1_NodeExpandedChanging(object sender, RadTreeViewCancelEventArgs e)
+{
+    e.Cancel = radTreeView1.TreeViewElement.DragDropService.State == RadServiceState.Working;
+}
+
 ````
 ````VB.NET
    
+Private Sub radTreeView1_NodeExpandedChanging(sender As Object, e As RadTreeViewCancelEventArgs)
+    e.Cancel = RadTreeView1.TreeViewElement.DragDropService.State = RadServiceState.Working
+End Sub
+#End Region
+#Region "DragEnding"
+Private Sub radTreeView1_DragEnding(sender As Object, e As RadTreeViewDragCancelEventArgs)
+    If e.TargetNode.Level <> e.Node.Level Then
+        e.Cancel = True
+        RadMessageBox.Show("Only nodes from the same level can be dropped here.")
+    End If
+End Sub
+#End Region
+    
+Private Sub Cancel_Drag_and_Drop_operation_Load(sender As Object, e As EventArgs)
+    '#Region "AllowDrop"
+    RadTreeView1.Nodes(0).AllowDrop = False
 
-    Private Sub radTreeView1_NodeExpandedChanging(sender As Object, e As RadTreeViewCancelEventArgs)
-        e.Cancel = RadTreeView1.TreeViewElement.DragDropService.State = RadServiceState.Working
-    End Sub
 ````
 
 {{endregion}}
