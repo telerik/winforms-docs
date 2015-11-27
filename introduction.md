@@ -152,9 +152,9 @@ Telerik UI for WinForms includes over 110 UI controls that you can use to easily
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Why choose Telerik UI for WinForms](http://tv.telerik.com/watch/winforms/radcontrols-for-winforms-product-video-q3-2010)See how you can easily build unique and visually stunning Line of Business Windows Forms applications with Telerik UI for WinForms. Boasting a well-designed architecture and CAB support, Telerik UI for WinForms are perfectly suited for your Enterprise desktop development.|![overview-video 001](images/overview-video001.png)|
+|[Why choose Telerik UI for WinForms](http://tv.telerik.com/watch/winforms/radcontrols-for-winforms-product-video-q3-2010) See how you can easily build unique and visually stunning Line of Business Windows Forms applications with Telerik UI for WinForms. Boasting a well-designed architecture and CAB support, Telerik UI for WinForms are perfectly suited for your Enterprise desktop development.|![overview-video 001](images/overview-video001.png)|
 
 
-| Revision Date | 07/29/2015 |
+| Revision Date | 11/30/2015 |
 | ------ | ------ |
 |||

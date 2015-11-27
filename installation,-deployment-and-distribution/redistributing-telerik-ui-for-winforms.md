@@ -10,33 +10,32 @@ position: 5
 
 # Redistributing Telerik UI for WinForms
 
-
-
-A purchased license of the Telerik UI for WinForms suite includes a run time royalty-free license to redistribute the controls in your own solutions. You can freely use and redistribute all of the products in the suite to build your own solutions, and your end users are not required to purchase their own licenses for the controls.
+The Telerik UI for WinForms suite includes a limited run time royalty-free license to redistribute the controls in your own solutions subject to the License Agreement. You can use the components in the suite to build your own solutions, and redistribute your solutions to and your end users who are not required to purchase a license from Telerik to access your solution.
 
 ## Examples of Permitted Uses
 
 * Windows Forms applications for internal company use.
             
+* Commercial WinForms applications deployed to Your end users. __In this case, you may deploy the Telerik assemblies together with your application with the sole exception of the Telerik.WinControls.UI.Design.dll assembly. The Telerik.WinControls.UI.Design.dll assembly may not be deployed to end-users under any circumstance__.
 
-* Commercial Windows Forms applications deployed for end users by Telerik customers. __In this case, make sure to protect Telerik's intellectual property by using one of the methods below (ILMerge to merge the Telerik WinForms assemblies with the executable file (this does not apply to the Document processing assemblies, see below) of your application__ OR __build the Telerik.WinControls.dll assembly from source code)__
-
-* Shrink-wrapped software in which the Telerik UI for WinForms are integrated. __In this case, make sure to protect Telerik's intellectual property by using one of the methods below (ILMerge to merge the Telerik WinForms assemblies with the executable file of your application (this does not apply to the Document processing assemblies, see below)__ OR __building the Telerik.WinControls.dll assembly from source code)__
+* WinForms applications that offer a trial or free version of Your application. __If offering a free or trial version of Your Integrated Product, redistribution of the assemblies is not permitted. You are required to protect all Telerik assemblies by using one of the methods below (ILMerge to merge the Telerik WinForms assemblies with the executable file (this does not apply to the Document processing assemblies, see below) of your application OR build the Telerik.WinControls.dll assembly from source code using one of the approaches described below)__
 
 ## Examples of Uses that Require Discussion
 
 * Products that expose the design-time functionality of the Telerik RadControls or the VisualStyleBuilder.
             
-
 * Products that do not add significant functionality to the Telerik RadControls.
             
-
 * Open source products.
 
-For further details, please refer to the [license agreement]({%slug winforms/licensing/license-agreement%}), or send e-mail to <a href="mailto:sales@telerik.com?subject=Redistributing Telerik UI for WinForms">sales@telerik.com</a> to discuss your planned use of the controls.
+For additional usage requirements, development restrictions and, defined term definitions, please refer to the WinForms [license agreement]({%slug winforms/licensing/license-agreement%}).  For uses that require additional review, please send e-mail to <a href="mailto:sales@telerik.com?subject=Redistributing Telerik UI for WinForms">sales@telerik.com</a> to discuss your planned use of the controls.
         
 
 ## ILMerge Telerik WinForms assemblies
+
+|RELATED VIDEOS||
+|----|----|
+|[ILMerge](http://www.telerik.com/videos/winforms/ilmerge) This video demonstrates how to merge your application exe with the Telerik assemblies, so they cannot be reused. (Runtime: 1:57)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows015.png)|
 
 When you deploy your application, you may prefer to do it as a single executable rather than an executable referencing many external assemblies. In this case, you need to ILMerge the assemblies with the executable. Here is a link to MSDN from where you can download the ILMerge executable: [Download ILMerge](http://www.microsoft.com/download/en/details.aspx?id=17630)
 
@@ -107,6 +106,10 @@ The MergedApplicationExecutable.exe is now a stand-alone application executable 
 
 ## Building the Telerik assembles from source code - using the OemAssemblyName
 
+|RELATED VIDEOS||
+|----|----|
+|[Redistribute OEM](http://www.telerik.com/videos/winforms/redistribute-oem) This video demonstrates how to build the Telerik assemblies, so they are locked to your application and cannot be reused outside of it. (Runtime: 5:49)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows016.png)|
+
 This method requires modifications to the source files, which are distributed as part of the Subscription license. If you have purchased a Subscription license for Telerik UI for WinForms, and would like to explore this method, the following information will allow you to do so.
         
 
@@ -151,6 +154,10 @@ Once you finish these steps, and if you or someone else tries to use that assemb
 ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 005](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows005.png)
 
 ## Building the Telerik assembles from source code - using the OemPublicKeyToken
+
+|RELATED VIDEOS||
+|----|----|
+|[Redistribute OEMKEY](http://www.telerik.com/videos/winforms/redistribute-oemkey) This video demonstrates how to build the Telerik assemblies, so they are locked to your application public token key and cannot be reused outside of it. (Runtime: 7:19)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows017.png)|
 
 This section demonstrates how to deploy a project with a public token key. We will assume that you have downloaded and extracted your source code distribution in C:\Telerik UI for WinForms Source\RadControlsVS2010.sln:
         
@@ -209,18 +216,18 @@ In order to include the Telerik Document Processing libraries in your applicatio
 
 __Instructions__
 
-1. Open C:\WinFormsDPLSource\Documents\Core\Core\Licensing\AssemblyProtection.cs in a text editor (notepad, Visual Studio, etc.)
+1\. Open C:\WinFormsDPLSource\Documents\Core\Core\Licensing\AssemblyProtection.cs in a text editor (notepad, Visual Studio, etc.)
             
 
-1. Uncomment the following line:
+2\. Uncomment the following line:
             
 
-	Before:
+Before:
 
-	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=CommentedIsValid}}
-	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=CommentedIsValid}}
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=CommentedIsValid}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=CommentedIsValid}}
 
-	````C#
+````C#
 public static bool IsValid()
 {
     // Uncomment the following line
@@ -238,15 +245,15 @@ End Function
 
 ````
 
-	{{endregion}}
+{{endregion}}
 
 
-	After:
+After:
 
-	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=UnCommentedIsValid}}
-	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=UnCommentedIsValid}}
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=UnCommentedIsValid}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=UnCommentedIsValid}}
 
-	````C#
+````C#
 public static bool IsValid()
 {
     // Uncomment the following line
@@ -262,16 +269,16 @@ End Function
 
 ````
 
-	{{endregion}}
+{{endregion}}
 
-1. Change the ApplicationName constant to match the name of your application:
+3\. Change the ApplicationName constant to match the name of your application:
 
-	Before:
+Before:
 
-	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=AppNameBefore}}
-	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=AppNameBefore}}
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.cs region=AppNameBefore}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls.vb region=AppNameBefore}}
 
-	````C#
+````C#
 internal const string ApplicationName = "MyApp";
 
 ````
@@ -280,15 +287,15 @@ Friend Const ApplicationName As String = "MyApp"
 
 ````
 
-	{{endregion}}
+{{endregion}}
 
 
-	After:
+After:
 
-	{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=AppNameAfter}}
-	{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=AppNameAfter}}
+{{source=..\SamplesCS\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.cs region=AppNameAfter}}
+{{source=..\SamplesVB\InstallationDeploymentAndDistribution\RedestributingTelerikRadControls2.vb region=AppNameAfter}}
 
-	````C#
+````C#
 internal const string ApplicationName = "Sample Application Name v2.0 (tm)";
 
 ````
@@ -297,20 +304,19 @@ Friend Const ApplicationName As String = "Sample Application Name v2.0 (tm)"
 
 ````	
 
-	{{endregion}}
+{{endregion}}
 
-1. Save __AssemblyProtection.cs__ and rebuild.
+4\. Save __AssemblyProtection.cs__ and rebuild.
             
 
-1. In your application replace the existing references to the Telerik assemblies with the ones built from the source code.
+5\. In your application replace the existing references to the Telerik assemblies with the ones built from the source code.
 
-1. If you run the application now you should get an exception with message “This version of Telerik UI for WinForms is licensed only for use by Sample Application Name v2.0 (tm)”. Note that “Sample Application Name v2.0 (tm)” will be replaced with the value of the ApplicationName constant.
+6\. If you run the application now you should get an exception with message “This version of Telerik UI for WinForms is licensed only for use by Sample Application Name v2.0 (tm)”. Note that “Sample Application Name v2.0 (tm)” will be replaced with the value of the ApplicationName constant.
             
 
 ## Using the images from the suite in your solutions
 
-When you install the suite together with the installation we deploy a few different kinds of images
-          - some come with the controls, others with the examples, with themes, etc. Following you can find information on which images can be reused in your applications and how this can be done.
+When you install the suite together with the installation we deploy a few different kinds of images - some come with the controls, others with the examples, with themes, etc. Following you can find information on which images can be reused in your applications and how this can be done.
         
 
 * Images displayed in the examples __may not__ be used/reused at all by our Licensees.
@@ -747,7 +753,12 @@ Telerik.WinControls.Themes.VisualStudio2012Light.dll</td></tr><tr><td>
 
 <b>Windows8</b></td><td>
 
-Telerik.WinControls.Themes.Windows8.dll</td></tr></table>
+Telerik.WinControls.Themes.Windows8.dll</td></tr>
+<tr><td>RadToggleSwitch</td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td>RadLayoutControl</td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td>RadPopupEditor</td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td>RadDataLayout</td><td>Telerik.WinControls.UI.dll</td></tr>
+</table>
 
 You can find all these assemblies in the __/bin__ folder of your installation.
         

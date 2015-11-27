@@ -12,7 +12,7 @@ position: 2
 
 Use the code below to open the drop-down menu using shortcuts(*Please refer to the help section about adding shortcuts to controls for adding the shortcut itself*):
 
-__[C#] Adding sub items__
+#### Adding sub items 
 
 {{source=..\SamplesCS\Buttons\DropDownButton.cs region=keyShortcuts}} 
 {{source=..\SamplesVB\Buttons\DropDownButton.vb region=keyShortcuts}} 

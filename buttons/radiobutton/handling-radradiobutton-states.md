@@ -21,9 +21,7 @@ The __ToggleState__ property is responsible for setting the state of RadRadioBu
 
 You can handle the __ToggleStateChanged__ event of __RadRadioButton__ to take action when the user toggles the button. The event handler is passed a __StateChangedEventArgs__ parameter that includes a __ToggleState__ member.
       
-__Handling ToggleStateChanged event__
-
-
+#### Handling ToggleStateChanged event 
 
 {{source=..\SamplesCS\Buttons\RadioButton.cs region=handlingToggleStateChangedWithArgs}} 
 {{source=..\SamplesVB\Buttons\RadioButton.vb region=handlingToggleStateChangedWithArgs}} 
@@ -46,9 +44,7 @@ End Sub
 
 You can also handle the __ToggleStateChanging__ event. This event provides an opportunity to cancel the toggle state change. The __StateChangingEventArgs__ passed as a parameter to the event handler have NewValue and OldValue ToggleState members and a Boolean Cancel member.  __NewValue__ holds the value of __ToggleState__ that will be applied when the event is completed without being canceled. __OldValue__ holds the value of __ToggleState__ at the time the state change was initiated. __Canceled__ controls which value of __ToggleState__ is applied when the event completes. The default is __false__. Setting __Cancel__ to __true__ will prevent __ToggleStateChanged__ from firing and will leave the __ToggleState__ value as it was prior to the event.  In the example below the StateChangedEvent does not fire.
        
-__[C#] Handling ToggleStateChanging event__
-
-
+#### Handling ToggleStateChanging event 
 
 {{source=..\SamplesCS\Buttons\RadioButton.cs region=StateChanging}} 
 {{source=..\SamplesVB\Buttons\RadioButton.vb region=StateChanging}} 

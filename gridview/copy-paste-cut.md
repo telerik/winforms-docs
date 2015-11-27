@@ -2,7 +2,7 @@
 title: Copy/Paste/Cut
 page_title: Copy/Paste/Cut | UI for WinForms Documentation
 description: Copy/Paste/Cut
-slug: winforms/gridview
+slug: winforms/gridview/cut-copy-paste
 tags: copy/paste/cut
 published: True
 position: 11

@@ -22,8 +22,7 @@ The __ToggleState__ property is responsible for getting or setting the state of 
 You can handle the __ToggleStateChanged__ event of __RadToggleButton__ to take action when the user toggles the button. The event handler is passed a __StateChangedEventArgs__ parameter that includes a __ToggleState__ member.
         
 
-__Handling the ToggleStateChanged event__
-
+#### Handling the ToggleStateChanged event 
 
 {{source=..\SamplesCS\Buttons\ToggleButton.cs region=handlingToggleStateChanged}} 
 {{source=..\SamplesVB\Buttons\ToggleButton.vb region=handlingToggleStateChanged}} 
@@ -49,7 +48,7 @@ You can also handle the __ToggleStateChanging__ event. This event provides an op
 
 The example below allows a __RadToggleButton__ to toggle only when a second __RadToggleButton__ is off. If the second button toggle state is __On__ and the __NewValue__ is __On__, then the toggle is canceled. The __ToggleStateChanged__ event only fires and changes the __Text__ property when __ToggleStateChangiing__ does not cancel.
        
-__Handling the ToggleStateChanging event__
+#### Handling the ToggleStateChanging event 
 
 {{source=..\SamplesCS\Buttons\ToggleButton.cs region=handlingToggleStateChanging}} 
 {{source=..\SamplesVB\Buttons\ToggleButton.vb region=handlingToggleStateChanging}} 

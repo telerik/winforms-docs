@@ -32,7 +32,7 @@ Clicking the __Get Now__ button starts the Latest Version Acquirer tool, prompti
 You can check the additional information about the release by clicking the Release Notes link. This will start a browser, navigated to a page with the release notes related to the specific version.
         
 
-You can use the __Save my password__checkbox to save having to enter your Telerik credentials multiple times. The persistence is done in a secure manner and credentials are saved in a per-user context. This way other users on the machine that do not have access to your user data from downloading through your account.
+You can use the __Save my password__ checkbox to save having to enter your Telerik credentials multiple times. The persistence is done in a secure manner and credentials are saved in a per-user context. This way other users on the machine that do not have access to your user data from downloading through your account.
         
 
 If your subscription has expired, you could either proceed with downloading a trial distribution  or you could renew it and initiate the download again.

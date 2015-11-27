@@ -26,7 +26,7 @@ Thus these Telerik assemblies will be copied to your *Release/Bin*, *Debug/Bin* 
 
 ### GAC
 
-As noted above, Telerik assemblies are installed in the GAC by Telerik installer on the developer machines. You may choose to insert Telerik assemblies in the GAC of your client machines too by following the instructions in the <a href="installation-deployment-and-distribution-add-remove-radcontrols-to-the-global-assembly-cache-(gac)">Add/Remove RadControls to the Global Assembly Cache (GAC)</a> section. 
+As noted above, Telerik assemblies are installed in the GAC by Telerik installer on the developer machines. You may choose to insert Telerik assemblies in the GAC of your client machines too by following the instructions in the [Add/Remove RadControls to the Global Assembly Cache (GAC)]({%slug winforms/installation,-deployment-and-distribution/application-deploymentadd-remove-radcontrols-to-the-global-assembly-cache-(gac)%}) section. 
               
 
 >Please do not use Telerik installer to install Telerik assemblies in the GACs of your clients' machines. Telerik installer should be used only for the developers' machines.
@@ -485,4 +485,10 @@ Telerik.WinControls.Themes.VisualStudio2012Light.dll</td></tr><tr><td>
 
 <b>Windows8</b></td><td>
 
-Telerik.WinControls.Themes.Windows8.dll</td></tr></table>
+Telerik.WinControls.Themes.Windows8.dll</td></tr>
+
+<tr><td>RadToggleSwitch</td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td>RadLayoutControl</td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td>RadPopupEditor</td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td>RadDataLayout</td><td>Telerik.WinControls.UI.dll</td></tr>
+</table>

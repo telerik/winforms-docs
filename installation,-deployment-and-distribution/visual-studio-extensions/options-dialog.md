@@ -58,7 +58,7 @@ All settings under the WinForms category affect only the Telerik UI for WinForms
 
 Configures the path where the extensions look for and store distributions.
 
-> You can benefit subscription reminders only if you have saved your credentials in the[Latest Version Acquirer tool.]({%slug winforms/installation,-deployment-and-distribution/visual-studio-extensions/automatic-latest-version-retrieval%})
+> You can benefit subscription reminders only if you have saved your credentials in the [Latest Version Acquirer tool.]({%slug winforms/installation,-deployment-and-distribution/visual-studio-extensions/automatic-latest-version-retrieval%})
 >
 
 

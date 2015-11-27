@@ -10,7 +10,7 @@ position: 3
 
 # Adding RadControls to Visual Studio Toolbox
 
-Telerik UI for WinForms are automatically added to Visual Studio 2005/2008/2010/2012 Toolbox <a href="/installation,-deployment-and-distribution/installation-deployment-and-distribution-installing-on-your-computer">during installation</a>. If however they do not appear in the toolbox after the installation, you can do this manually. There are two ways to manually add Telerik UI for WinForms to the Toolbox in your Visual Studio.
+Telerik UI for WinForms are automatically added to Visual Studio 2005/2008/2010/2012 Toolbox [during installation]({%slug winforms/installation,-deployment-and-distribution/installing-on-your-computer%}). If however they do not appear in the toolbox after the installation, you can do this manually. There are two ways to manually add Telerik UI for WinForms to the Toolbox in your Visual Studio.
       
 ## Using the Visual Studio menus
 

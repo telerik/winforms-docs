@@ -9,8 +9,7 @@ position: 1
 ---
 
 # Getting Started
-
-
+ 
 
 ## 
 
@@ -23,7 +22,7 @@ You can add a __RadToggleSwitch__ to your form either at design time or at run t
 * Adding __RadToggleSwitch__ programmatically: create a new instance of __RadToggleSwitch__ and add it to the Form.__Controls__ collection:
             
 
-__Adding RadToggleSwitch programmatically__
+#### Adding RadToggleSwitch programmatically 
 
 
 {{source=..\SamplesCS\Buttons\ToggleSwitch.cs region=AddProgrammatically}} 

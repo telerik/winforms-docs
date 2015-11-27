@@ -36,7 +36,7 @@ In the property grid you will find many of the standard control properties, incl
 
 You can also add __RadDropDownButton__ items in code at Run Time. The following example code illustrates how to programmatically add a __RadMenuItem__ to your button.
 
-__[C#] Adding RadDropDownButton items__
+#### Adding RadDropDownButton items 
 
 
 {{source=..\SamplesCS\Buttons\DropDownButton.cs region=creatingMenuItem}} 
@@ -74,7 +74,7 @@ End Sub
 
 Similarly, you can create item hierarchies in code by adding new __RadMenuItem__ objects to the __Items__ collection of your existing __RadMenuItem__.
 
-__[C#] Adding sub items__
+#### Adding sub items
 
 {{source=..\SamplesCS\Buttons\DropDownButton1.cs region=itemsHierarchy}} 
 {{source=..\SamplesVB\Buttons\DropDownButton1.vb region=itemsHierarchy}} 
@@ -123,9 +123,7 @@ End Namespace
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 ## Displaying Images with Items
 

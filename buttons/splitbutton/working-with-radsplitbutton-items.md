@@ -38,7 +38,7 @@ In the property grid you will find many of the standard control properties, incl
 
 You can also add items to RadSplitButton in code at run time. The following example code illustrates programmatically adding a __RadMenuItem__ to your button.
 
-__Adding a RadMenuItem__
+#### Adding a RadMenuItem 
 
 {{source=..\SamplesCS\Buttons\SplitButton.cs region=items}} 
 {{source=..\SamplesVB\Buttons\SplitButton.vb region=items}} 
@@ -71,15 +71,10 @@ End Sub
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 Create item hierarchies in code by adding new __RadMenuItem__ objects to the __Items__ collection of your existing __RadMenuItem__.
 
-__Adding a sub item__
-
-
+#### Adding a sub item 
 
 {{source=..\SamplesCS\Buttons\SplitButton1.cs region=subitems}} 
 {{source=..\SamplesVB\Buttons\SplitButton1.vb region=subitems}} 
@@ -115,10 +110,7 @@ End Sub
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 ## Displaying Images with Items
 
 You can display images as well as text on your menu items.
@@ -139,8 +131,7 @@ To handle the __Click__ event of RadMenuItems on the drop down menu, locate the
 
 The default item is the item whose __Click__ event is triggered by the user pressing the button, instead of choosing from the menu. The DefaultItem can be assigned in code: 
 
-__Assigning the default item__
-
+#### Assigning the default item 
 
 {{source=..\SamplesCS\Buttons\SplitButton1.cs region=mainItem}} 
 {{source=..\SamplesVB\Buttons\SplitButton1.vb region=mainItem}} 

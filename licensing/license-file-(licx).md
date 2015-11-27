@@ -12,10 +12,7 @@ position: 1
 
 
 
-As of __Q1 2015__, the __Telerik UI for WinForms__ suite
-        uses the standard .NET licensing mechanism, which means that using the controls in design-time
-        causes Visual Studio to add a __license.licx__ file to the solution.
-        This file is used only in design-mode and is not needed for deployment.
+As of __Q1 2015__, the __Telerik UI for WinForms__ suite uses the standard .NET licensing mechanism, which means that using the controls in design-time causes Visual Studio to add a __license.licx__ file to the solution. This file is used only in design-mode and is not needed for deployment.
       
 
 The purpose of the license file is to:
@@ -36,9 +33,7 @@ Having this license file is not expected to bring any performance/compilation is
 In case your project build fails with errors pointing to the license file, you can delete it and rebuild.
       
 
-If you are working under source control, once the file is created it will be detected as a change by your source control system. 
-      We would suggest that you check-in this file initially. Then, when it is checked out again during your work, it is up to you to decide whether to
-      check it in, or discard the changes.
+If you are working under source control, once the file is created it will be detected as a change by your source control system. We would suggest that you check-in this file initially. Then, when it is checked out again during your work, it is up to you to decide whether to check it in, or discard the changes.
       
 
 ## 
