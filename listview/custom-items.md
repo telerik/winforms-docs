@@ -5,7 +5,7 @@ description: Custom items
 slug: winforms/listview/custom-items
 tags: custom,items
 published: True
-position: 10
+position: 11
 ---
 
 # Custom items

@@ -5,7 +5,7 @@ description: Touch Support
 slug: winforms/listview/touch-support
 tags: touch,support
 published: True
-position: 12
+position: 13
 ---
 
 # Touch Support

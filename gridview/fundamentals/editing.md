@@ -5,7 +5,7 @@ description: Editing
 slug: winforms/gridview/fundamentals/editing
 tags: editing
 published: True
-position: 8
+position: 9
 ---
 
 # Editing

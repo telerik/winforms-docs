@@ -105,4 +105,27 @@ __Table 1.__
 The search mechanism of __RadGridView__ searches in group rows as well as data rows. Since there are no cells respectively columns in group rows the __ColumnInfo__ property of the __GridSearchResultCellInfo__ will be null for group rows.
 
 If you start a search operation before a previous one is complete the old one will be stopped and the new one will be started immediately. If a search operation successfully finishes the results from it are cached for subsequent searches.
-        
+
+## Suspend the search operation
+
+You can suspend/resume the search temporarily by using the __SuspendSearch__ and __ResumeSearch__ methods. The __IsSearchSuspended__ indicates if the search is currently suspended.
+
+Example 1 demonstrates how you can suspend the search.
+
+{{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=Suspend}} 
+{{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=Suspend}} 
+
+````C#
+radGridView1.MasterView.TableSearchRow.SuspendSearch();
+
+radGridView1.MasterView.TableSearchRow.ResumeSearch();
+
+````
+````VB.NET
+RadGridView1.MasterView.TableSearchRow.SuspendSearch()
+
+RadGridView1.MasterView.TableSearchRow.ResumeSearch()
+
+````
+
+{{endregion}}

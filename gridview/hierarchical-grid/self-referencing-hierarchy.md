@@ -358,5 +358,8 @@ End Sub
 
 {{endregion}} 
 
+>note You can use the __TableElement.ShowSelfReferenceLines__ property to show lines that are connecting the parent/child rows.
+>
+
 
 

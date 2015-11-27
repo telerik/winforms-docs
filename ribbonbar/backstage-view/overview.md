@@ -1,7 +1,7 @@
 ---
-title: RibbonBar Overview
-page_title: Overview | UI for WinForms Documentation
-description: Overview
+title: Backstage View
+page_title: Backstage View | UI for WinForms Documentation
+description: Backstage View
 slug: winforms/ribbonbar/overview
 tags: overview
 published: True

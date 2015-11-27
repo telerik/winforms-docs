@@ -5,7 +5,7 @@ description: Binding the Grid
 slug: winforms/gridview/fundamentals/binding-the-grid
 tags: binding,the,grid
 published: True
-position: 5
+position: 6
 ---
 
 # Binding the Grid

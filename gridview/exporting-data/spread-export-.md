@@ -10,12 +10,28 @@ position: 1
 
 # Spread export 
 
+__GridViewSpreadExport__ utilizes our [RadSpreadProcessing]({%slug winforms/spread-processing%}) libraries to export the contents of __RadGridView__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the SpreadExport abilities and will demonstrate how to use it.
 
+* [Exporting Data](#exporting-data)
 
-__GridViewSpreadExport__ utilizes our [RadSpreadProcessing]({%slug winforms/spread-processing%}) libraries to export the contents of __RadGridView__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the SpreadExport abilities and will demonstrate how to use it. Here is how the following grid, looks when exported.<br>![gridview-exporting-data-spread-export 001](images/gridview-exporting-data-spread-export001.png)![gridview-exporting-data-spread-export 002](images/gridview-exporting-data-spread-export002.png)
+* [Exporting Grouped Data](#exporting-grouped-data)
+
+* [Async Spread Export](#async-spread-export)
+
+Here is how the following grid, looks when exported.<br>![gridview-exporting-data-spread-export 001](images/gridview-exporting-data-spread-export001.png)![gridview-exporting-data-spread-export 002](images/gridview-exporting-data-spread-export002.png)
 
 >note The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
 * Telerik.WinControls.TelerikExport
+>
+
+>important Since this functionality is using the [RadSpreadProcessingLibrary]({%slug winforms/spread-processing%}) you need to reference the following assemblies as well:
+* Telerik.Windows.Documents.Core
+* Telerik.Windows.Documents.Fixed
+* Telerik.Windows.Documents.Spreadsheet
+* Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml
+* Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf
+* Telerik.Windows.Maths
+* Telerik.Windows.Zip
 >
 
 ## Exporting
@@ -117,6 +133,8 @@ __FileExportMode__: This property determines whether the data will be exported i
 * *NewSheetInExistingFile*: This option will create a new sheet in an already existing file.
 
 * *CreateOrOverrideFile*: Creates new or overrides an existing file.
+
+* __ExportViewDefinition:__  Gets or sets a value indicating whether to export the [view definition.]({%slug winforms/gridview/view-definitions/overview%})
 
 ## Events
 
@@ -247,6 +265,35 @@ End Sub
 __ChildViewExporting__ - this event is used to specify which child view to be exported, for each exported row, during the export. Will be triggered only when the __ChildViewExportMode__ is set to *SelectViewToExport*. The event arguments provide the __ParentRow__ which active view should be set via the __ActiveViewIndex__ property.
 
 __ExportCompleted__: This event is triggered when the export operation completes.
+
+## Exporting Grouped Data
+
+__RadGridView__ can export its grouped content by simply setting the __ExportChildRowsGrouped__ property of the __GridViewSpreadExport__ object to *true*.
+>caption Fig.2 Exporting Grouped Data
+
+![gridview-exporting-data-spread-export 005](images/gridview-exporting-data-spread-export005.png)
+
+#### Exporting Grouped Data
+
+{{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=ExportingGroupedData}} 
+{{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=ExportingGroupedData}} 
+
+````C#
+GridViewSpreadExport spreadExporter = new GridViewSpreadExport(this.radGridView1);
+spreadExporter.ExportChildRowsGrouped = true;
+SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
+spreadExporter.RunExport(@"..\..\exportedFile.xlsx",exportRenderer);
+
+````
+````VB.NET
+Dim spreadExporter As New GridViewSpreadExport(Me.radGridView1)
+spreadExporter.ExportChildRowsGrouped = True
+Dim exportRenderer As New SpreadExportRenderer()
+spreadExporter.RunExport("..\..\exportedFile.xlsx", exportRenderer)
+
+````
+
+{{endregion}} 
 
 ## Async Spread Export
 

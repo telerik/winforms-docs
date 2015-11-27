@@ -5,7 +5,7 @@ description: Printing support
 slug: winforms/pdfviewer/printing-support
 tags: printing,support
 published: True
-position: 6
+position: 7
 ---
 
 # Printing support

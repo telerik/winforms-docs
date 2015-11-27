@@ -5,7 +5,7 @@ description: Creating Hierarchical Grids
 slug: winforms/gridview/fundamentals/creating-hierarchical-grids
 tags: creating,hierarchical,grids
 published: True
-position: 6
+position: 7
 ---
 
 # Creating Hierarchical Grids

@@ -5,7 +5,7 @@ description: New Item
 slug: winforms/pageview/stripview/new-item
 tags: new,item
 published: True
-position: 2
+position: 3
 ---
 
 # New Item

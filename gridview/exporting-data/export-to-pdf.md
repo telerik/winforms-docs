@@ -21,9 +21,9 @@ __RadGridView__ can export its contents to PDF using two separate mecahnisms.
 
 * The __ExportToPdf__ object on the other hand first renders __RadGridView__ as an XHTML table and the export process will convert that table to a PDF document. That said, Export to PDF supports all of the ExportToHTML settings, but it also adds some PDF specific ones.
 
->note The PDF export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
-* Telerik.WinControls.Data
-* Telerik.WinControls.UI.Export>
+>note The __GridViewPdfExport__ functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in __TelerikExport__ :
+* Telerik.WinControls.Export>The __ExportToPdf__ functionality is located in the __TelerikData.dll__ assembly. <br>You need to include the following amespace in order to access the types contained in __TelerikData__ :
+* Telerik.WinControls.UI.Export
 >
 
 ## Exporting Data using GridViewPdfExport object
@@ -225,6 +225,46 @@ pdfExporter.Scale = 1.2
 {{endregion}} 
 
 __PDF Export Settings__ 
+
+The __PDFExportSettings__ property supports various settings on PDF file level. You can set the following:
+
+* Author
+
+* Title
+
+* Description
+
+####  Using export settings
+
+{{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=ExportSettings}} 
+{{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=ExportSettings}} 
+
+````C#
+pdfExporter.ExportSettings.Description = "Document Description";
+
+````
+````VB.NET
+pdfExporter.ExportSettings.Description = "Document Description"
+
+````
+
+{{endregion}} 
+
+__ExportViewDefinition__
+
+Gets or sets a value indicating whether to export the [view definition.]({%slug winforms/gridview/view-definitions/overview%})
+
+__ChildViewExportMode__: Defines which child view of a hierarchy row to be exported. Available modes are:
+
+* *ExportFirstView*: The exporter exports the first view.
+
+* *ExportCurrentlyActiveView*: The exporter exports the view that is active in the grid.
+
+* *ExportAllViews*: All child views are exported.
+
+* *SelectViewToExport*: In this mode the __ChildViewExporing__ event is fired. The event allows to choose the view to export in row by row basis.
+
+__PDF Export Settings__
 
 The __PDFExportSettings__ property supports various settings on PDF file level. You can set the following:
 

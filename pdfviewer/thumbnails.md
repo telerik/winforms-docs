@@ -5,7 +5,7 @@ description: Thumbnails
 slug: winforms/pdfviewer/thumbnails
 tags: thumbnails
 published: True
-position: 8
+position: 10
 ---
 
 # Thumbnails

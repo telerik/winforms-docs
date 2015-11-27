@@ -5,7 +5,7 @@ description: Fitting Items
 slug: winforms/pageview/stripview/fitting-items
 tags: fitting,items
 published: True
-position: 3
+position: 4
 ---
 
 # Fitting Items

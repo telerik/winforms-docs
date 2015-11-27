@@ -5,7 +5,7 @@ description: UI Virtualization
 slug: winforms/gridview/fundamentals/ui-virtualization
 tags: ui,virtualization
 published: True
-position: 9
+position: 10
 ---
 
 # UI Virtualization

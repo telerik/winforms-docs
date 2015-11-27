@@ -5,7 +5,7 @@ description: Localization
 slug: winforms/pdfviewer/localization
 tags: localization
 published: True
-position: 9
+position: 11
 ---
 
 # Localization

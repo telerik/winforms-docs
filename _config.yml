@@ -452,6 +452,9 @@ navigation:
     listview/drag-and-drop:
         title: Drag and Drop
         position: 7
+    listview/export-data:
+        title: Export Data
+        position: 10
     menus:
         title: Menus
         position: 27
