@@ -5,7 +5,7 @@ description: Custom Tiles
 slug: winforms/panorama/custom-tiles
 tags: custom,tiles
 published: True
-position: 7
+position: 8
 ---
 
 # Custom Tiles
