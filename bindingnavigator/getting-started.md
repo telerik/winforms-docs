@@ -9,9 +9,7 @@ position: 1
 ---
 
 # Getting Started
-
-
-
+ 
 __RadBindingNavigator__ extends [RadCommandBar]({%slug winforms/commandbar%}) control, so most of its ways for customization at runtime and design time will be valid here as well. __RadBindingNavigator__ displays two sets of buttons separated into two __CommandBarStripElement__ according to the purpose of their commands: Navigation and Editing.
         
 
@@ -38,10 +36,10 @@ Adding a __RadBindingNavigator__ control to a form and binding it to a data sour
 
 ## How does it work?
 
-1. The following tutorial will demonstrate how to get __RadBindingNaviagator__ up and running: Place __RadBindingNaviagator__ control and BindingSource component on a form.
+1\. The following tutorial will demonstrate how to get __RadBindingNaviagator__ up and running: Place __RadBindingNaviagator__ control and BindingSource component on a form.
             
 
-1. Setup the DataSource property of the BindingSource and the BindingSource property of __RadBindingNaviagator__:
+2\. Setup the DataSource property of the BindingSource and the BindingSource property of __RadBindingNaviagator__:
           
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadBindingNavigatorForm.cs region=radBindingNavigator1}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadBindingNavigatorForm.vb region=radBindingNavigator1}} 
@@ -68,7 +66,7 @@ Me.radBindingNavigator1.BindingSource = Me.bindingSource1
 
 {{endregion}} 
 
-1. Press F5 to run the project and you should see the following:
+3\. Press F5 to run the project and you should see the following:
 
 ![bindingnavigator-overview-gettingstarted 001](images/bindingnavigator-overview-gettingstarted001.png)
 
