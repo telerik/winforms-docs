@@ -25,21 +25,18 @@ Here is how the following RadTreeView, looks when it is exported.
 ![treeview-export-data-spread-export 002](images/treeview-export-data-spread-export002.png)
 
 >note The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
+* Telerik.WinControls.TelerikExport
 >
-* Telerik.WinControls.TelerikExport>
 
-
->important Since this functionality is using the[RadSpreadProcessingLibrary]({%slug winforms/spread-processing%})you need to
-          reference the following assemblies as well:
->
+>important Since this functionality is using the[RadSpreadProcessingLibrary]({%slug winforms/spread-processing%})you need to reference the following assemblies as well:
 * Telerik.Windows.Documents.Core
 * Telerik.Windows.Documents.Fixed
 * Telerik.Windows.Documents.Spreadsheet
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf
 * Telerik.Windows.Maths
-* Telerik.Windows.Zip>
-
+* Telerik.Windows.Zip
+>
 
 ## Exporting Data
 
@@ -75,10 +72,10 @@ exporter.RunExport("C:\ExportedFile.xlsx", renderer)
 * __SheetMaxRows__: Тhe exporter splits the data on separate sheets if the number of rows is greater than the Excel maximum. You can control the maximum number of rows through this __SheetMaxRows__  property. Available options are:
             
 
-* __1048576__: Max rows for Excel 2007 and above
+  * __1048576__: Max rows for Excel 2007 and above
                 
 
-* __65536 (default)__: Max rows for previous versions of Excel. This is the default setting.
+  * __65536 (default)__: Max rows for previous versions of Excel. This is the default setting.
                 
 
 * __SheetName__: Defines the sheet name of the sheet to export to. If your data is large enough to be split on more than one sheets, then the export method adds index to the names of the next sheets.
@@ -87,10 +84,10 @@ exporter.RunExport("C:\ExportedFile.xlsx", renderer)
 * __FileExportMode__: This property determines whether the data will be exported into an existing or a new file. If new is chosen and such exists it will be overridden. Available options are:
             
 
-* __NewSheetInExistingFile__: This option will create a new sheet in an already existing file.
+  * __NewSheetInExistingFile__: This option will create a new sheet in an already existing file.
                 
 
-* __CreateOrOverrideFile:__ Creates new or overrides an existing file.
+  * __CreateOrOverrideFile:__ Creates new or overrides an existing file.
                 
 
 * __ExportImages:__ Gets or sets a value indicating whether to export images.
@@ -110,13 +107,13 @@ exporter.RunExport("C:\ExportedFile.xlsx", renderer)
 * __CellFormatting__: This event is used to format the cells to be exported. The event arguments provide:
             
 
-* __TreeNode__: Gives you access to the currently exported node.
+  * __TreeNode__: Gives you access to the currently exported node.
                 
 
-* __ExportCell__: Allows you to set the styles of the exported cell.
+  * __ExportCell__: Allows you to set the styles of the exported cell.
                 
 
-* __RowIndex__: The index of the currently exported row. Here is an example of formatting the exported TreeView: 
+  * __RowIndex__: The index of the currently exported row. Here is an example of formatting the exported TreeView: 
 
 {{source=..\SamplesCS\TreeView\SpreadExportCode.cs region=Formatting}} 
 {{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=Formatting}} 

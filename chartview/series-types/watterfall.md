@@ -5,7 +5,7 @@ description: Watterfall
 slug: winforms/chartview-/series-types/watterfall
 tags: watterfall
 published: True
-position: 17
+position: 18
 ---
 
 # Watterfall

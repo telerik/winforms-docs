@@ -5,7 +5,7 @@ description: Scatter
 slug: winforms/chartview-/series-types/scatter
 tags: scatter
 published: True
-position: 4
+position: 5
 ---
 
 # Scatter

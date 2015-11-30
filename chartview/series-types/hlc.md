@@ -5,7 +5,7 @@ description: Hlc
 slug: winforms/chartview-/series-types/hlc
 tags: hlc
 published: True
-position: 14
+position: 15
 ---
 
 # Hlc

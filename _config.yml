@@ -115,7 +115,7 @@ navigation:
         position: 0		
     chartview/series-types/indicators:
         title: Indicators
-        position: 19
+        position: 20
     chartview/series-types/indicators/indicators:
         title: Overview
         position: 0

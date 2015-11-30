@@ -5,7 +5,7 @@ description: Donut
 slug: winforms/chartview-/series-types/donut
 tags: donut
 published: True
-position: 10
+position: 11
 ---
 
 # Donut

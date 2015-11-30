@@ -12,7 +12,7 @@ position: 4
 
 ## 
 
-The SchedulerPrintSettingsDialog allows the end user to edit the print style settings of RadScheduler, settings of the printed paper and the header and footer of the printed document. It inherits from [RadPrintSettingsDialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-settings-dialog%})adding some specific to RadScheduler settings to the first tab. The other two tabs,namely __Paper__ and __Header/Footer__, are described in the [RadPrintSettingsDialog article.]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-settings-dialog%})
+The SchedulerPrintSettingsDialog allows the end user to edit the print style settings of RadScheduler, settings of the printed paper and the header and footer of the printed document. It inherits from [RadPrintSettingsDialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-settings-dialog%}) adding some specific to RadScheduler settings to the first tab. The other two tabs,namely __Paper__ and __Header/Footer__, are described in the [RadPrintSettingsDialog article.]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-settings-dialog%})
 
 ![scheduler-end-user-functionality-print-support](images/scheduler-end-user-functionality-print-support.png)
 

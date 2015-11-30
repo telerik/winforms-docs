@@ -5,7 +5,7 @@ description: Stepline
 slug: winforms/chartview-/series-types/stepline
 tags: stepline
 published: True
-position: 3
+position: 4
 ---
 
 # Stepline

@@ -5,7 +5,7 @@ description: ScatterLine
 slug: winforms/chartview-/series-types/scatterline
 tags: scatterline
 published: True
-position: 6
+position: 7
 ---
 
 # ScatterLine

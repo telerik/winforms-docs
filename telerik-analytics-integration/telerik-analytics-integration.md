@@ -105,40 +105,50 @@ Currently only few controls support analytics out of the box. Note that only use
 | ------ | ------ |
 |ColorPicker|SelectionChanged|
 |RadAutocompleteBox|InsertText|
-|RadBindingNavigator|MoveToFirst, 
-MoveToPrevious, MoveToNext, MoveToLast|
+|RadBindingNavigator|MoveToFirst, MoveToPrevious, MoveToNext, MoveToLast|
 |RadButton|Click|
+|RadBulletGraph|ValueChanged|
 |RadCalendar|SelectionChaned, Navigation, ViewChanged|
 |RadCarousel|Selection|
 |RadChartView|Zoom, Pan, SelectionChanged|
+|RadCheckedDropDownList|Checked, Popup open close|
 |RadCollapsiblePanel|Expand, Collapse|
 |RadColorBox|SelectionChanged|
-|RadContextMenu|Open, Close,Click (RadContextMenu.DropDown)|
+|RadContextMenu|Open, Close, Click (RadContextMenu.DropDown)|
 |RadDataEntry|Editing, Insert/Delete, MoveToFirst, MoveToPrevious, MoveToNext, MoveToLast|
+|RadDataLayout|Customize open, Item rearrange (via drag and drop, resize or context menu)|
 |RadDateTimePicker|ValueChanged|
-|RadDock|Save layout, Load layout, Float a pane, Dock a pane, Add window,  Remove window|
+|RadDiagram|Move, Resize, Add, Delete|
+|RadDock|Save layout, Load layout, Float a pane, Dock a pane, Add window, Remove window|
 |RadDropDownButton|DropDownOpened, DropDownClosed|
-|RadDropdownList|SelectionChanged, DropDownOpened, DropDownClosed|
+|RadDropdownList|SelectionChanged,  DropDownOpened, DropDownClosed|
 |RadForm|SelectionChanged, DropDownOpened, DropDownClosed|
 |RadGanttView|Collapse task, Expand task, Edit task, Selected task|
-|RadGridView|MoveToFirst, MoveToPrevious, MoveToNext, MoveToLast,|
-|RadGridView - Paging|MoveToFirst, MoveToPrevious, MoveToNext,  MoveToLast|
+|RadGridView|MoveToFirst, MoveToPrevious, MoveToNext,  MoveToLast,|
+|RadGridView - Paging|MoveToFirst, MoveToPrevious, MoveToNext, MoveToLast|
+|RadLayoutControl|Customize open, Item rearrange (via drag and drop, resize or context menu)|
+|RadLinearGauge|ValueChanged|
 |RadListControl|SelectionChanged|
 |RadMasketEditBox|SelectionChanged|
 |RadMenu|Click|
-|RadPageView - ExplorerBar|Expand,  Collapse,   SelectionChanged|
-|RadPageView - Outlook|Expand, Collapse, SelectionChanged|
+|RadPageView - ExplorerBar|Expand, Collapse, SelectionChanged| Collapse, SelectionChanged|
 |RadPageView - Strip|SelectionChanged|
 |RadPanorama|Reordering, Scrolling|
-|RadPdfViewer|Load Document,   Print, Print Preview|
-|RadPivotGrid|Begin refresh,  Complete refresh, Expand group header,  Collapse group header, DragDrop field, Export|
+|RadPdfViewer|Load Document, Print, Print Preview|
+|RadPivotGrid|Begin refresh, Complete refresh, Expand group header, Collapse group header, DragDrop field, Export|
+|RadPopupEditor|Popup open close|
 |RadPropertyGrid|Sorting, Grouping, Editing, Searching, Expanding Groups, Expanding nested definition|
+|RadRadialGauge|ValueChanged|
 |RadRadioButton|Checked, Unchecked|
 |RadRibbonBar|SelectionChanged|
 |RadRichTextBox|Open Document, Save Document|
-|RadScheduler|ViewChanged, Import, Export, Editing, Creating, DragAndDrop,  Resize, ShowDialog|
+|RadRichTextEditor|New, Open, Save, Print, PrintPreview|
+|RadScheduler|ViewChanged, Import, Export, Editing, Creating, DragAndDrop, Resize, ShowDialog|
 |RadSpinEditor|SelectionChanged|
-|RadToggleButton|Checked, Unchecked|
+|RadTimePicker|ValueChanged|
+|RadToggleButton|Checked,  Unchecked|
+|RadToggleSwitch|Checked, Unchecked|
 |RadTrackBar|SelectionChanged|
 |RadTreeView|SelectExpand, Collapse, SelectionChanged, Edit, RemoveionChanged|
 |RadWaitingBar|StartWaiting, EndWaiting|
+|Exporting features in controls|All export providers(including async exports) - when export operation is completed|

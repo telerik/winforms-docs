@@ -5,7 +5,7 @@ description: Radar
 slug: winforms/chartview-/series-types/radar
 tags: radar
 published: True
-position: 12
+position: 13
 ---
 
 # Radar

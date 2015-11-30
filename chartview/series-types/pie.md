@@ -5,7 +5,7 @@ description: Pie
 slug: winforms/chartview-/series-types/pie
 tags: pie
 published: True
-position: 9
+position: 10
 ---
 
 # Pie

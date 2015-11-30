@@ -5,7 +5,7 @@ description: Bubble
 slug: winforms/chartview-/series-types/bubble
 tags: bubble
 published: True
-position: 8
+position: 9
 ---
 
 # Bubble

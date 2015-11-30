@@ -24,15 +24,33 @@ The complete list of the predefined __CultureInfo__ names and identifiers can 
 
 The table below is a sample list of the names and identifiers found in the CultureInfo class.
 
-
 | Culture Name | Culture Identifier | Language-Country/Region |
-| ------ | ------ | ------ |
+| ------- | ------- | ------- |
 |bg-BG|0x0402|Bulgarian - Bulgaria|
 |en-GB|0x0809|English - United Kingdom|
 |fr-FR|0x040C|French - France|
 |es-ES|0x0C0A|Spanish - Spain|
+|ar-SA|0x0401|Arabic - Saudi Arabia|
+|fa-IR|0x0429|Farsi - Iran|
+|ps-AF|0x0463|Pashto - Afghanistan|
 
+>caption Fig.1 Setting Arabic Culture
 
+![editors-datetimepicker-internationalization-cultureinfo-and-regioninfo-basics 001](images/editors-datetimepicker-internationalization-cultureinfo-and-regioninfo-basics001.png)
+
+{{source=..\SamplesCS\Calendar\Calendar1.cs region=SetPashtoCulture}} 
+{{source=..\SamplesVB\Calendar\Calendar1.vb region=SetPashtoCulture}} 
+
+````C#
+this.radDateTimePicker1.Culture = new System.Globalization.CultureInfo("ar-SA");
+
+````
+````VB.NET
+Me.RadDateTimePicker1.Culture = New System.Globalization.CultureInfo("ar-SA")
+
+````
+
+{{endregion}}
 
 ## RegionInfo
 

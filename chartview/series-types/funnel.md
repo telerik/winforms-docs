@@ -5,7 +5,7 @@ description: Funnel
 slug: winforms/chartview-/series-types/funnel
 tags: funnel
 published: True
-position: 16
+position: 17
 ---
 
 # Funnel

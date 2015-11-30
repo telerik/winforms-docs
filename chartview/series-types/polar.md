@@ -5,7 +5,7 @@ description: Polar
 slug: winforms/chartview-/series-types/polar
 tags: polar
 published: True
-position: 11
+position: 12
 ---
 
 # Polar

@@ -5,7 +5,7 @@ description: Bezier
 slug: winforms/chartview-/series-types/bezier
 tags: bezier
 published: True
-position: 7
+position: 8
 ---
 
 # Bezier

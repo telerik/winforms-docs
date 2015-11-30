@@ -5,7 +5,7 @@ description: Range and RangeBar
 slug: winforms/chartview-/series-types/range-and-rangebar
 tags: range,and,rangebar
 published: True
-position: 15
+position: 16
 ---
 
 # Range and RangeBar

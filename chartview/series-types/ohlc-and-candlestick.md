@@ -5,7 +5,7 @@ description: Ohlc and Candlestick
 slug: winforms/chartview-/series-types/ohlc-and-candlestick
 tags: ohlc,and,candlestick
 published: True
-position: 13
+position: 14
 ---
 
 # Ohlc and Candlestick

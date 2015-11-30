@@ -5,7 +5,7 @@ description: ScatterArea
 slug: winforms/chartview-/series-types/scatterarea
 tags: scatterarea
 published: True
-position: 5
+position: 6
 ---
 
 # ScatterArea

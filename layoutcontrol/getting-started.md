@@ -12,7 +12,7 @@ position: 1
 
 
 
-In this article, you will learn how to use the __RadLayoutControl__. The example below shows how you can create a layout that will fill the entire form and will be resized along with it.
+In this article, you will learn how to use __RadLayoutControl__. The example below shows how you can create a layout that will fill the entire form and will be resized along with it.
 
 ## 
 
