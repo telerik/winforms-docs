@@ -164,9 +164,12 @@ navigation:
     dataentry/how-to:
         title: How To
         position: 7
+    datalayout:
+        title: DataLayout
+        position: 16
     diagram:
         title: Diagram
-        position: 16
+        position: 17
     diagram/diagram-items:
         title: Diagram Items
         position: 8
@@ -187,7 +190,7 @@ navigation:
         position: 14
     dock:
         title: Dock
-        position: 17
+        position: 18
     dock/architecture-and-features:
         title: Architecture and Features
         position: 2
@@ -208,10 +211,10 @@ navigation:
         position: 7
     desktopalert:
         title: DesktopAlert
-        position: 18
+        position: 19
     dropdown,-listcontrol-and-checkeddropdownlist:
         title: DropDown and ListControl
-        position: 19
+        position: 20
     dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist:
         title: DropDownList
         position: 1
@@ -232,7 +235,7 @@ navigation:
         position: 7
     editors:
         title: Editors
-        position: 20		
+        position: 21		
     editors/autocompletebox:
         title: AutoCompleteBox
         position: 0		
@@ -274,7 +277,7 @@ navigation:
         position: 10
     forms-and-dialogs:
         title: Forms and Dialogs
-        position: 21
+        position: 22
     forms-and-dialogs/form:
         title: Form
         position: 1
@@ -301,7 +304,7 @@ navigation:
         position: 8
     ganttview:
         title: GanttView
-        position: 22
+        position: 23
     ganttview/structure:
         title: Structure
         position: 1
@@ -331,7 +334,7 @@ navigation:
         position: 9
     gauges:
         title: Gauges
-        position: 23
+        position: 24
     gauges/bulletgraph:
         title: BulletGraph
         position: 0
@@ -349,7 +352,7 @@ navigation:
         position: 4
     gridview:
         title: GridView
-        position: 24
+        position: 25
     gridview/fundamentals:
         title: Fundamentals
         position: 2
@@ -439,10 +442,10 @@ navigation:
         position: 27
     layoutcontrol:
         title: LayoutControl
-        position: 25
+        position: 26
     listview:
         title: ListView
-        position: 26
+        position: 27
     listview/working-with-design-time:
         title: Working with design time
         position: 3
@@ -457,7 +460,7 @@ navigation:
         position: 10
     menus:
         title: Menus
-        position: 27
+        position: 28
     menus/menu:
         title: Menu
         position: 0
@@ -481,13 +484,13 @@ navigation:
         position: 6
     multicolumncombobox:
         title: MultiColumnComboBox
-        position: 28
+        position: 29
     multicolumncombobox/styling-and-appearance:
         title: Styling and Appearance
         position: 6		
     pageview:
         title: PageView
-        position: 29
+        position: 30
     pageview/stripview:
         title: StripView
         position: 4
@@ -511,7 +514,7 @@ navigation:
         position: 10		
     panels-and-labels:
         title: Panels and Labels
-        position: 30
+        position: 31
     panels-and-labels/groupbox:
         title: GroupBox
         position: 0
@@ -529,10 +532,10 @@ navigation:
         position: 4		
     panorama:
         title: Panorama
-        position: 31
+        position: 32
     pdfprocessing:
         title: PdfProcessing 
-        position: 32
+        position: 33
     pdfprocessing/changes-and-backward-compatibility:
         title: Changes and Backward Compatibility 
         position: 1
@@ -556,13 +559,13 @@ navigation:
         position: 7		
     pdfviewer:
         title: PdfViewer
-        position: 33
+        position: 34
     pdfviewer/text:
         title: Text
         position: 5		
     pivotgrid:
         title: PivotGrid 
-        position: 34
+        position: 35
     pivotgrid/populating-with-data:
         title: Populating with Data
         position: 3
@@ -583,7 +586,7 @@ navigation:
         position: 22		
     propertygrid:
         title: PropertyGrid
-        position: 35
+        position: 36
     propertygrid/editors:
         title: Editors
         position: 10
@@ -595,10 +598,10 @@ navigation:
         position: 13		
     rangeselector:
         title: RangeSelector
-        position: 36
+        position: 37
     ribbonbar:
         title: RibbonBar
-        position: 37
+        position: 38
     ribbonbar/getting-started:
         title: Getting Started
         position: 1
@@ -622,7 +625,7 @@ navigation:
         position: 7		
     richtextbox:
         title: RichTextBox (obsolote)
-        position: 38
+        position: 39
     richtextbox/features:
         title: Features
         position: 3
@@ -635,7 +638,7 @@ navigation:
     richtexteditor:		
     richtexteditor:
         title: RichTextEditor
-        position: 39  		
+        position: 40  		
     richtexteditor/getting-started:
         title: Getting Started
         position: 2   
@@ -668,10 +671,10 @@ navigation:
         postion: 14
     rotator:
         title: Rotator
-        position: 40
+        position: 41
     scheduler:
         title: Scheduler
-        position: 41
+        position: 42
     scheduler/appointments-and-dialogs:
         title: Appointments and dialogs
         position: 1
@@ -716,16 +719,16 @@ navigation:
         position: 14
     shortcuts:
         title: Shortcuts
-        position: 42
+        position: 43
     spellchecker:
         title: SpellChecker
-        position: 43
+        position: 44
     splitcontainer:
         title: SplitContainer
-        position: 44
+        position: 45
     spread-processing:
         title: SpreadProcessing
-        position: 45
+        position: 46
     spread-processing/changes-and-backward-compatibility:
         title: Changes and Backward Compatibility
         position: 2
@@ -773,7 +776,7 @@ navigation:
         position: 3
     track-and-status-controls:
         title: Track and Status controls
-        position: 46
+        position: 47
     track-and-status-controls/progressbar:
         title: ProgressBar
         position: 0
@@ -791,7 +794,7 @@ navigation:
         position: 5
     treeview:
         title: TreeView
-        position: 47
+        position: 48
     treeview/design-time:
         title: Design-Time
         position: 2
@@ -827,10 +830,10 @@ navigation:
         position: 12
     wizard:
         title: Wizzard
-        position: 48
+        position: 49
     wordsprocessing:
         title: WordsProcessing
-        position: 49
+        position: 50
     wordsprocessing/changes-and-backward-compatibility:
         title: Changes and Backward Compatibility
         position: 2
@@ -866,24 +869,24 @@ navigation:
         position: 0
     ziplibrary:
         title: ZipLibrary
-        position: 50
+        position: 51
     ziplibrary/features:
         title: Features
     telerik-cab-enabling-kit:
         title: Telerik Cab Enabling Kit
-        position: 51
+        position: 52
     telerik-cab-enabling-kit/getting-started:
         title: Getting Started
         position: 3
     telerik-cab-enabling-kit/telerik-cab-enabling-kit:
         title: Telerik Cab Enabling Kit
-        position: 51
+        position: 4
     codedui:
         title: CodedUI 
-        position: 52
+        position: 53
     telerik-presentation-framework:
         title: Telerik Presentation Framework
-        position: 53
+        position: 54
     telerik-presentation-framework/overview:
         title: Overview
         position: 0
@@ -925,14 +928,14 @@ navigation:
         position: 19
     themes:
         title: Themes
-        position: 54
+        position: 55
     themes/advanced-topics:
         title: Advanced Topics
     themes/advanced-topics/adding-custom-redistributable-themes-to-your-application:
         title: Adding Custom Redistributable Themes to your Application
     tools:
         title: Tools
-        position: 55
+        position: 56
     tools/controlspy:
         title: ControlSpy
         position: 0
@@ -956,10 +959,10 @@ navigation:
         position: 3
     telerik-analytics-integration:
         title: Telerik Analytics Intergration
-        position: 56
+        position: 57
     for-more-help:
         title: For More Help
-        position: 57
+        position: 58
     
 ## Api Reference End
 ## The application virtual path
