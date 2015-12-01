@@ -52,18 +52,4 @@ Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Append
 
 {{endregion}} 
 
-* __Suggest__: As the user types an entry into the text box, the drop-down portion of the control is shown and the displayed items are filtered according to the entered text. This property is the same as the Filter property <br>![multicolumncombobox-autocomplete 003](images/multicolumncombobox-autocomplete003.png)
-
-{{source=..\SamplesCS\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.cs region=AutoCompleteMode.Suggest}} 
-{{source=..\SamplesVB\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.vb region=AutoCompleteMode.Suggest}} 
-
-````C#
-this.radMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
-
-````
-````VB.NET
-Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest
-
-````
-
-{{endregion}}
+* __Suggest__: The following article shows how this functinality can be achieved: [Auto Filter]({%slug winforms/multicolumncombobox/filtering%})
