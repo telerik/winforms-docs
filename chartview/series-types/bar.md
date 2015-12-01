@@ -72,7 +72,7 @@ BarSeries could be customized using the following properties:
 * __CombineMode__ – a common property for all categorical series, which introduces a mechanism for combining data points that reside in different series but have the same category. The combine mode can be __None__, __Cluster__, __Stack__ and __Stack100__. __None__ means that the series will be plotted independently of each other, so that they are overlapping. __Cluster__ displays data points in the same category  huddled close together. __Stack__ plots the points on top of each other and __Stack100__ will display the value as percent. The combine mode is best described by a picture (Left - Stack, Right – Stack100): ![chartview-series-types-bar 002](images/chartview-series-types-bar002.png)
 
 * __GapLength__ – a property exposed by both __CategoricalAxis__ and __DateTimeContinuousAxis__, which controls the distance between bar groups as percent. Note that the value should be between 0 and 1, where a value of 0 means that a bar would take the entire space between two ticks, while a value of 1 means the bar will have zero width as all the space should appear as gap. Here is how to set the GapLength: 
-* 
+
 {{source=..\SamplesCS\ChartView\Series\BarSeriesForm.cs region=gapLength}} 
 {{source=..\SamplesVB\ChartView\Series\BarSeriesForm.vb region=gapLength}} 
 

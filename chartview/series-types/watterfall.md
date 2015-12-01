@@ -1,5 +1,5 @@
 ---
-title: Watterfall
+title: Waterfall
 page_title: Watterfall | UI for WinForms Documentation
 description: Watterfall
 slug: winforms/chartview-/series-types/watterfall
@@ -8,7 +8,7 @@ published: True
 position: 18
 ---
 
-# Watterfall
+# Waterfall
  
 
 ## 

@@ -35,6 +35,7 @@ The article provides a brief description and a list of the important properties 
 
 * __Kaufman Adaptive Moving Average (KAMA)__ uses three parameters to calculate its value: __Period__, __SlowPeriod__ and __FastPeriod__. The formula of the indicator is:
             
+![](images/chartview-series-types-indicators-supported-indicators001.png)
 
 ## Momentum Indicators
       
@@ -82,6 +83,9 @@ The article provides a brief description and a list of the important properties 
 1. Calculate the difference between current EMA3 and previous EMA3 value in that final smoothed series
 
 * __Relative Momentum Index (RMI)__ was created by modifying the __Relative Strength Indicator (RSI)__. The changed formula is RMI = RM / (1 + RM)Where RM = average up momentum (over N-period) / average down momentum (over N-period)
+
+![](images/chartview-series-types-indicators-supported-indicators002.png)
+
 
 * __Momentum indicator__ is designed to identify the speed of price movement. RadChartView uses the following formula to calculate the Momentum values: M = (CurrentPrice – NPrice) * 100, where NPrice is the closing price N days ago
 

@@ -17,7 +17,7 @@ Labels are displayed for each:
 * *Chart axis* to describe the category of values along the axis.  For example "Products", "Risk Factors", time periods or geographic areas. 
 
 
-* *Chart axis item *to describe the specific value or category for that item.chart-undestanding-radchart-elements-axis-labels
+* *Chart axis item* to describe the specific value or category for that item.chart-undestanding-radchart-elements-axis-labels
 
 ## Formatting Axis Labels
 

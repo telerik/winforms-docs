@@ -130,6 +130,9 @@ dataSource.Add(new ClosingPriceObject(7, DateTime.Now.AddDays(8)));
 
 {{endregion}}  
 
+![](images/chartview-series-types-indicators-custom-indicators001.png)
+
+
 ## Moving Average Envelopes (MAE) 
 
 __Moving Average Envelopes (MAE)__ is a slightly more complex indicator as it contains two bands, frequently referred to as __Envelopes__. The indicator uses __Simple Moving Average__ as a starting point and shifts its two bands upwards and downwards to form the envelopes above and below the moving average. The percentage formula used to calculate the envelopes is:
@@ -481,4 +484,5 @@ this.radChartView1.Axes[0].LabelFormat = "{0:dd}";
 {{endregion}} 
 
 
+![](images/chartview-series-types-indicators-custom-indicators002.png)
 

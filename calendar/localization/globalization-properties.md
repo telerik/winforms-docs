@@ -18,7 +18,7 @@ The __Culture__ property can be set using the drop down list in the Properties 
 
 ![calendar-localization-globalization-properties 001](images/calendar-localization-globalization-properties001.png)
 
-__Setting CultureInfo in code__
+#### Setting CultureInfo in code 
 
 
 {{source=..\SamplesCS\Calendar\ColumnRowHeaders.cs region=globalization}} 

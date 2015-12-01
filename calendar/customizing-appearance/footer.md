@@ -21,11 +21,9 @@ By default the footer contains a string showing the current date and time and tw
 
 * __ShowFooter__ - gets or sets whether RadCalendar will display its footer/status bar area 
 
-* __TodayButton__ - gets an instance of RadButtonElement representing the Today button in the footer. #_[C#] Using the Today button_
+* __TodayButton__ - gets an instance of RadButtonElement representing the Today button in the footer. 
 
-	
-
-
+#### Using the Today butto
 
 {{source=..\SamplesCS\Calendar\Calendar1.cs region=usingTodayButton}} 
 {{source=..\SamplesVB\Calendar\Calendar1.vb region=usingTodayButton}} 
@@ -42,10 +40,7 @@ RadCalendar1.TodayButton.Image = ImageList1.Images(0)
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 * __ClearButton__ - gets an instance of RadButtonElement representing the Clear button in the footer.
 
 

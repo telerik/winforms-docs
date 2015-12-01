@@ -10,10 +10,9 @@ position: 2
 
 # Important Events
  
-
 <table>
 <th>Event</th><th>Description</th>
-<tr><td> __ElementRender__ </td><td>
+<tr><td> <b>ElementRender</b> </td><td>
 The event handler receives an argument of type RenderElementEventArgs containing data related to this event. The following RenderElementEventArgs properties provide information specific to this event.
 <table>
 <th>Property</th><th>Description</th>

@@ -31,11 +31,10 @@ The figure above shows a more complex chart than the [minimal example of program
 
 * Fill the plot area background with a gradient color.
 
-* Set axis line and label appearance.#_[C#] Extended example_
-
-	
+* Set axis line and label appearance.
 
 
+#### Extended example 
 
 {{source=..\SamplesCS\Chart\CreatingRadChartProgrammaticaly2.cs region=extendedExample}} 
 {{source=..\SamplesVB\Chart\CreatingRadChartProgrammaticaly2.vb region=extendedExample}} 

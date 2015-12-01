@@ -17,7 +17,7 @@ In the example below a __PictureBox__ control is created and assigned an image f
 
 ![calendar-customizing-appearance-using-templates 001](images/calendar-customizing-appearance-using-templates001.png)
 
-__Assigning a TemplateItem__
+#### Assigning a TemplateItem 
 
 
 {{source=..\SamplesCS\Calendar\Calendar1.cs region=templateItem}} 
